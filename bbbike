@@ -652,7 +652,7 @@ if ($lowmem) {
 #mymstat("after getopt processing");
 ## DEBUG_END
 
-my %skip_features;
+use vars qw(%skip_features);
 use vars qw($city_obj $dataset_title);
 if (!defined $city && !defined $datadir) {
     $city = "Berlin";
@@ -17323,17 +17323,25 @@ sub make_net {
 		push @net_source_abk, 'l';
 	    }
 	    if ($str_obj{'s'}) {
+		my %s_restrict = %{$str_restrict{'s'}};
+		if ($net_type eq 's-car') {
+		    $str_obj{'sBAB'} = Strassen->new($str_file{'sBAB'})
+			if !$str_obj{'sBAB'};
+		    push @net_source,     $str_obj{'sBAB'};
+		    push @net_source_abk, 'sBAB';
+		    $s_restrict{'NN'} = 0;
+		}
 		my $is_restricted = 0;
 #XXX use new_copy_restricted
-		foreach (keys %{$str_restrict{'s'}}) {
-		    if ($str_restrict{'s'}->{$_} == 0 &&
-			$str_restrict{'s'} ne 'P') { # Plätze
+		foreach (keys %s_restrict) {
+		    if ($s_restrict{$_} == 0 &&
+			$s_restrict{$_} ne 'P') { # Plätze
 			$is_restricted = 1;
 			last;
 		    }
 		}
 		if ($is_restricted) {
-		    my $restr_str = new Strassen;
+		    my $restr_str = Strassen->new;
 		    # XXX Copy at least the map global directive
 		    if ($str_obj{'s'}->{GlobalDirectives}{map}) {
 			@{ $restr_str->{GlobalDirectives}{map} } = @{ $str_obj{'s'}->{GlobalDirectives}{map} };
@@ -17343,11 +17351,11 @@ sub make_net {
 			my $ret = $str_obj{'s'}->next;
 			last if !@{$ret->[Strassen::COORDS]};
 			my($cat) = $ret->[Strassen::CAT] =~ m{^([^:]+)}; # strip attributes
-			next if !$str_restrict{'s'}->{$cat};
+			next if !$s_restrict{$cat};
 			$restr_str->push($ret);
 		    }
 		    $restr_str->{File} = $str_obj{'s'}->file;
-		    $restr_str->{Id}   = $str_obj{'s'}->id . "_restr_" . join("_", keys %{$str_restrict{'s'}});
+		    $restr_str->{Id}   = $str_obj{'s'}->id . "_restr_" . join("_", grep { $s_restrict{$_} } keys %s_restrict);
 		    push @net_source,     $restr_str;
 		    push @net_source_abk, 's';
 		} else {
@@ -17412,7 +17420,7 @@ sub make_net {
 			   UseCache => 0,
 			  );
 
-	    if ($net_type eq "s") {
+	    if ($net_type eq 's' || $net_type eq 's-car') {
 		my @sperre_type;
 		foreach ('einbahn', 'einbahn-strict', 'sperre', 'tragen', 'wegfuehrung') {
 		    push @sperre_type, $_ if $sperre{$_};
@@ -17422,6 +17430,12 @@ sub make_net {
 			$net->make_sperre($sperre_file,
 					   Type => \@sperre_type);
 		    }; warn $@ if $@;
+		    if ($net_type eq 's-car') {
+			eval {
+			    $net->make_sperre("$datadir/gesperrt_car",
+					      Type => \@sperre_type);
+			}; warn $@ if $@;
+		    }
 		}
 		if ($sperre{'Q3'}) {
 		    eval {
@@ -17652,7 +17666,8 @@ sub set_coords_str {
     if ($tags[0] eq 'p' or $tags[0] eq 'pp' or $tags[0] =~ /^lsa/) {
 	$tags[1];
     } elsif ($tags[0] =~ /^[sSlL]$/ ||
-	     $add_net{fz} && $tags[0] eq 'fz'
+	     $add_net{fz} && $tags[0] eq 'fz' ||
+	     ($net_type eq 's-car' && $tags[0] eq 'sBAB')
 	     # XXX weitere Ausnahmen für $add_net{is} etc. definieren
 	    ) {
 	my($pos, @points) = nearest_line_points_mouse($c, @tags);
@@ -17667,7 +17682,9 @@ sub set_coords_str {
 	my($x, $y) = @{$points[0]};
 	Route::_coord_as_string([$x,$y]);
     } else {
-	my($item, @tags) = find_below($c, qw/s l p pp lsa/);
+	my @accept_tags = qw(s l p pp lsa);
+	if ($net_type eq 's-car') { push @accept_tags, 'sBAB' }
+	my($item, @tags) = find_below($c, @accept_tags);
 	return if !defined $item;
 	set_coords($c, @tags); # hoffentlich keine Endlosrekursion...
 	#die "Tag [@tags] ist weder p, pp, s noch l sollte nicht vorkommen!";
@@ -17773,7 +17790,7 @@ sub user_edit_street {
 	make_net();
     }
     status_message("Can't make net", "die") if !$net;
-    my(@click_items) = ($net_type eq 's'
+    my(@click_items) = ($net_type eq 's' || $net_type eq 's-car'
 			? qw(s l fz)
 			: ($net_type =~ /^(r|us|rus)$/
 			   ? map { $_ eq 's' ? 'b' : $_ } split //, $net_type
@@ -17783,8 +17800,11 @@ sub user_edit_street {
 			     )
 			  )
 		       );
-    if ($net_type eq 's' && $use_faehre) {
+    if (($net_type eq 's' || $net_type eq 's-car') && $use_faehre) {
 	push @click_items, "e";
+    }
+    if ($net_type eq 's-car') {
+	push @click_items, 'sBAB'; # XXX check!
     }
     my($item, @tags) = find_below($c, @click_items);
     if (defined $item) {
@@ -18039,7 +18059,7 @@ sub search_route_mouse {
 	$search_route_flag = 'start';
 
 	if (!$lowmem) {
-	    if ($net_type eq "s") {
+	    if ($net_type eq 's' || $net_type eq 's-car') {
 		if (!$net and ($str_draw{'s'} || $str_draw{'l'})) {
 		    make_net();
 		}
@@ -18566,6 +18586,10 @@ die "too many loops, please report, line " . __LINE__ if ($safe_loop++ > 100);
 	    }
 	} elsif ($net_type eq 'wr') {
 	    if ($tags[0] eq 'wr') {
+		return nearest_line_points($x, $y, @tags); # XXX
+	    }
+	} elsif ($net_type eq 's-car') {
+	    if (($tags[0] =~ /^[sSlL]$/ || $tags[0] eq 'sBAB') && !grep { /^[sSlL]-label/ || /^sBAB-label/ } @tags) {
 		return nearest_line_points($x, $y, @tags); # XXX
 	    }
 	} else {

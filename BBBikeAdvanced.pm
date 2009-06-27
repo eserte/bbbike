@@ -1557,10 +1557,11 @@ sub add_search_net_menu_entries {
     $sbm->cascade(-label => M"Netz ändern");
     my $nsbm = $sbm->Menu(-title => M"Netz ändern");
     $sbm->entryconfigure('last', -menu => $nsbm);
-    foreach my $def ([M"Straßen",  's'],
-		     [M"U/S-Bahn", 'us'],
-		     [M"R-Bahn", 'r'],
-		     [M"Gesamtes Bahnnetz", 'rus'],
+    foreach my $def ([M"Straßen (Fahrrad)",  's'],
+		     ($devel_host ? [M"Straßen (Auto)", 's-car'] : ()),
+		     (!$skip_features{'u-bahn'} || !$skip_features{'s-bahn'} ? [M"U/S-Bahn", 'us'] : ()),
+		     (!$skip_features{'r-bahn'} ? [M"R-Bahn", 'r'] : ()),
+		     (!$skip_features{'u-bahn'} || !$skip_features{'s-bahn'} || !$skip_features{'r-bahn'} ? [M"Gesamtes Bahnnetz", 'rus'] : ()),
 		     [M"Wasserrouten", 'wr'],
 		     [M"Custom", 'custom'],
 		    ) {
@@ -1579,6 +1580,8 @@ sub add_search_net_menu_entries {
 		       -variable => \$add_net{custom},
 		       -command => \&change_net_type,
 		      );
+    # XXX check whether this is significant in any way, and if not:
+    # delete! Also change_net_type has to be amended, maybe.
     if ($devel_host) {
 	$nsbm->checkbutton(-label => M"Add IS data",
 			   -variable => \$add_net{is},
