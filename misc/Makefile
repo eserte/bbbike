@@ -144,7 +144,9 @@ dalmatia-test:	dalmatia-test-osm2bbd \
 		dalmatia-test-osm2bbd-postprocess2
 
 dalmatia-test-osm2bbd:
-	${MISCSRCDIR}/osm2bbd -map bbbike -country hr -o /tmp/data_dalmatien download/osm/dalmatien -nosplitlonglines -experiment coastline_hack -f
+	${MISCSRCDIR}/osm2bbd -map bbbike -country hr -o /tmp/data_dalmatien download/osm/dalmatien -f \
+	    -nosplitlonglines -experiment coastline_hack \
+	    -experiment polar_coord_hack
 
 dalmatia-test-osm2bbd-postprocess1:
 	${MISCSRCDIR}/osm2bbd-postprocess /tmp/data_dalmatien -only-coastline-hack -coastline-hack-anchor sw
