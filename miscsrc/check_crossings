@@ -26,6 +26,7 @@ use Object::Iterate qw(iterate);
 use Getopt::Long;
 
 my $outfile;
+my $encoding;
 my $against;
 my $v;
 my $v_if_interactive;
@@ -33,6 +34,7 @@ my @ignore_rx;
 my $autoflush;
 my $included_brunnels;
 if (!GetOptions("o=s" => \$outfile,
+		"encoding=s" => \$encoding,
 		"against=s" => \$against,
 		"included-brunnels!" => \$included_brunnels,
 		"v" => \$v,
@@ -49,6 +51,7 @@ if (!GetOptions("o=s" => \$outfile,
 	       )) {
     die <<EOF;
 usage: $0 [-v | -v-if-interactive] [-autoflush] [-o outfile]
+        [-encoding encoding]
 	[-ignore name,name,...] [-ignorerx namerx,namerx,...]
 	[-against file | -included-brunnels] strassen ...
 EOF
@@ -78,6 +81,7 @@ if (@files == 1) {
 $s->make_grid(Exact => 1, UseCache => 1);
 
 my $brunnel;
+my $brunnel_use_cache;
 if ($included_brunnels) {
     $brunnel = Strassen->new;
     $s->init;
@@ -88,12 +92,16 @@ if ($included_brunnels) {
 	    $brunnel->push([$r->[Strassen::NAME], $r->[Strassen::COORDS], $1]);
 	}
     }
+    $brunnel_use_cache = 0;
 } else {
     my $brunnelfile = $against || "brunnels";
     $brunnel = Strassen->new($brunnelfile);
+    $brunnel_use_cache = 1;
 }
-my $brunnelcr = $brunnel->all_crossings(RetType => "hashpos", UseCache => 1,
-					Kurvenpunkte => 1);
+my $brunnelcr = $brunnel->all_crossings(RetType => "hashpos",
+					UseCache => $brunnel_use_cache,
+					Kurvenpunkte => 1,
+				       );
 
 my %seen;
 
@@ -102,6 +110,12 @@ if ($outfile) {
     open($outfh, ">$outfile") or die "Can't write to $outfile: $!";
     if ($autoflush) {
 	select $outfh; $| = 1; select STDOUT;
+    }
+    if ($encoding) {
+	print $outfh "#: #: -*- coding: $encoding -*-\n";
+	print $outfh "#:encoding: $encoding\n";
+	print $outfh "#:\n";
+	binmode $outfh, ":encoding($encoding)";
     }
 }
 
