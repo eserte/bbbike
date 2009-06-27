@@ -37,6 +37,11 @@ if (SORTED_TAGS) {
     require Tie::IxHash;
 }
 
+# Same as in Strassen::Core, which is coincidence.
+use constant STRASSEN_NAME   => 0;
+use constant STRASSEN_COORDS => 1;
+use constant STRASSEN_CAT    => 2;
+
 my $o;
 my $f;
 my $v;
@@ -1179,7 +1184,7 @@ for my $osm_file (@osm_files) {
 }
 
 resolve_node_fallback();
-sort_by_population();
+sort_by_population_and_category();
 
 ######################################################################
 # OUTPUT
@@ -1329,13 +1334,14 @@ sub normalize_name_sbahnhof {
     $name;
 }
 
-sub sort_by_population {
+sub sort_by_population_and_category {
     @{$out{"orte"}} = map {
 	$_->[1]
     } sort {
-	$b->[0] <=> $a->[0]
+	(defined $b->[0] && defined $a->[0] && $b->[0] <=> $a->[0]) ||
+	    $b->[1][STRASSEN_CAT] <=> $a->[1][STRASSEN_CAT]
     } map {
-	[$place_to_population{$_->[1][0]} || 0, $_]
+	[$place_to_population{$_->[1][STRASSEN_NAME]} || undef, $_]
     } @{$out{"orte"}};
 }
 
