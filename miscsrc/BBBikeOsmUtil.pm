@@ -352,7 +352,7 @@ sub plot_osm_files {
 		my @tags = ((exists $tag{name} ? $tag{name}.' ' : '') . $tags, $uninteresting_tags, 'osm', 'osm-way-' . $id);
 		my $is_area = (exists $tag{'area'} ? $tag{'area'} eq 'yes' :
 			       exists $tag{'landuse'} ? 1 :
-			       $nodes[0] eq $nodes[-1]
+			       $nodes[0] eq $nodes[-1] && ($tag{'junction'}||'') ne 'roundabout'
 			      );
 		if ($is_area) {
 		    my $light_color = '#a0b0a0';
