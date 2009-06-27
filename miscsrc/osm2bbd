@@ -910,7 +910,7 @@ for my $osm_file (@osm_files) {
 		    $unhandled{"highway=$highway_cat"}++;
 		}
 		my $oneway = $tag{'oneway'};
-		if ($oneway && !$is_motorway) {
+		if ($oneway) {
 		    my $reversed = 1;
 		    # Special case -1, see
 		    # http://wiki.openstreetmap.org/index.php/Key:oneway
@@ -919,7 +919,7 @@ for my $osm_file (@osm_files) {
 			$reversed = 0;
 		    }
 		    if ($oneway =~ m{^(?:yes|true)$}) {
-			if (exists $tag{'bicycle'} && $tag{'bicycle'} eq 'opposite') { # seen in Würzburg, Äußere Pleich, but no documentation/discussion for it
+			if ($is_motorway || (exists $tag{'bicycle'} && $tag{'bicycle'} eq 'opposite')) { # seen in Würzburg, Äußere Pleich, but no documentation/discussion for it
 			    push @or, ['gesperrt_car', '1', reversed => $reversed];
 			} else {
 			    if ($highway_cat eq 'cycleway') {
