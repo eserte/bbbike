@@ -24,7 +24,7 @@ use Getopt::Long;
 use XML::LibXML::Reader;
 
 sub usage {
-    die "usage: $0 osmfile ...\n";
+    die "usage: $0 [-o indexfile] osmfile ...\n";
 }
 
 sub open_osm {
@@ -81,16 +81,40 @@ sub set_info_handler {
     };
 }
 
-GetOptions() or usage;
+my $index_file;
+my $dbfiletype;
+GetOptions("o=s" => \$index_file,
+	   "dbfiletype=s" => \$dbfiletype,
+	  )
+    or usage;
 
-my $index_dir = "$ENV{HOME}/.bbbike/cache";
-if (!-d $index_dir) {
-    die "Please create directory '$index_dir' manually";
+if (!defined $index_file) {
+    my $index_dir = "$ENV{HOME}/.bbbike/cache";
+    if (!-d $index_dir) {
+	die "Please create directory '$index_dir' manually";
+    }
+    $index_file = $index_dir . '/osm_nodes_lonlat.db';
 }
-my $index_file = $index_dir . '/osm_nodes_lonlat.db' . ($DB_File::db_version eq '' || $DB_File::db_version <= 1 ? '' : int($DB_File::db_version));
 
-tie my %nodes_lonlat, 'DB_File', $index_file, O_RDWR|O_CREAT, 0644
-    or die "Cannot tie '$index_file': $!";
+my @tie_args;
+if (!$dbfiletype) { $dbfiletype = 'DB_HASH' }
+if ($dbfiletype eq 'DB_BTREE') {
+    @tie_args = ('DB_File', $index_file."_btree", O_RDWR|O_CREAT, 0644, $DB_BTREE);
+} elsif ($dbfiletype eq 'DB_HASH') {
+    @tie_args = ('DB_File', $index_file, O_RDWR|O_CREAT, 0644, $DB_BTREE);
+} else {
+    die "Unhandled -dbfiletype $dbfiletype";
+}
+
+if ($tie_args[0] eq 'DB_File') {
+    # amend filename, maybe
+    if ($DB_File::db_version ne '' && $DB_File::db_version > 1) {
+	$tie_args[1] .= int($DB_File::db_version);
+    }
+}
+
+tie my %nodes_lonlat, $tie_args[0], @tie_args[1..$#tie_args]
+    or die "Cannot tie @tie_args: $!";
 
 my @orig_osm_files = @ARGV;
 my @osm_files;
@@ -124,7 +148,65 @@ cache_osm_nodes - create a node id to lon/lat cache from osm data
 
 =head1 SYNOPSIS
 
-    ./cache_osm_nodes osmfile ...
+    ./cache_osm_nodes [-o indexfile] osmfile ...
+
+=head1 DESCRIPTION
+
+Create a cached mapping from osm node ids to lon/lat for the named osm
+files. This command can be run multiple times; the cached mapping will
+grow larger or replace existing node ids, if necessary. Note that
+there's no means to delete outdated node ids.
+
+Normally, the cache file is created in the F<.bbbike/cache>
+subdirectory of the user's home directory. This subdirectory needs to
+be created manually, if it does not exist already. An alternative
+location for the cache file may be specified with the C<-o> option.
+Note that the cache filename will be get additional suffixes depending
+on the berkeley db version and the db file type used.
+
+=head1 BENCHMARKS
+
+The following are benchmarks on a 1.73 GHz Pentium system running
+Debian/lenny (perl 5.10.0, DB_File 1.816_1, libdb4.7, default db file
+type is $DB_HASH). The test osm files for dalmatia contain 118211
+nodes, the resulting cache file is about 10MB:
+
+    $ time ./miscsrc/cache_osm_nodes -o /tmp/testcache ~/src/bbbike/misc/download/osm/dalmatien 
+    ./miscsrc/cache_osm_nodes -o /tmp/testcache   18.34s user 1.79s system 90% cpu 22.271 total
+
+Rerun the same command on the existing cache, twice:
+
+    ./miscsrc/cache_osm_nodes -o /tmp/testcache   18.10s user 1.68s system 94% cpu 20.906 total
+    ./miscsrc/cache_osm_nodes -o /tmp/testcache   17.84s user 1.98s system 94% cpu 21.031 total
+
+Now a larger set of osm files in a separate cache: berlin, containing
+428870 nodes, the resulting cache file being about 39MB:
+
+    $ time ./miscsrc/cache_osm_nodes -o /tmp/testcache2 ~/src/bbbike/misc/download/osm/berlin  
+    ./miscsrc/cache_osm_nodes -o /tmp/testcache2   60.08s user 6.17s system 89% cpu 1:13.98 total
+
+And a even larger set (brandenburg, 1565392 nodes), now from a
+bzipped2 osm file instead of multiple tiles (which costs time because
+of the decompression, but also wins time because every node exists
+exactly once). The resulting cache file is about 85MB:
+
+    $ time ./miscsrc/cache_osm_nodes -o /tmp/testcache3 ~/src/bbbike/misc/download/osm/brandenburg.osm.bz2 
+    ./miscsrc/cache_osm_nodes -o /tmp/testcache3   95.73s user 13.57s system 95% cpu 1:54.25 total
+
+Now the same tests with $DB_BTREE:
+
+    $ time ./miscsrc/cache_osm_nodes -o /tmp/testcache4 -dbfiletype DB_BTREE ~/src/bbbike/misc/download/osm/dalmatien
+    ./miscsrc/cache_osm_nodes -o /tmp/testcache4 -dbfiletype DB_BTREE   17.56s user 0.31s system 93% cpu 19.052 total
+    $ time ./miscsrc/cache_osm_nodes -o /tmp/testcache4 -dbfiletype DB_BTREE ~/src/bbbike/misc/download/osm/dalmatien
+    ./miscsrc/cache_osm_nodes -o /tmp/testcache4 -dbfiletype DB_BTREE   17.23s user 0.39s system 94% cpu 18.653 total
+
+    $ time ./miscsrc/cache_osm_nodes -o /tmp/testcache5 -dbfiletype DB_BTREE ~/src/bbbike/misc/download/osm/berlin  
+    ./miscsrc/cache_osm_nodes -o /tmp/testcache5 -dbfiletype DB_BTREE   56.33s user 1.46s system 91% cpu 1:03.12 total
+
+    $ time ./miscsrc/cache_osm_nodes -o /tmp/testcache6 -dbfiletype DB_BTREE ~/src/bbbike/misc/download/osm/brandenburg.osm.bz2 
+    ./miscsrc/cache_osm_nodes -o /tmp/testcache6 -dbfiletype DB_BTREE   91.11s user 2.45s system 97% cpu 1:36.38 total
+
+Surprisingly, DB_BTREE seems to be somewhat better.
 
 =head1 SEE ALSO
 
