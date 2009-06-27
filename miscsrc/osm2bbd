@@ -279,6 +279,17 @@ my $do_tourism = sub {
     @or;
 };
 
+my $do_fixme = sub {
+    my($tagref) = @_;
+    my @or;
+    if (exists $tagref->{fixme}) {
+	push @or, ['fragezeichen', '?', name => $tagref->{fixme}];
+    } elsif (exists $tagref->{note} && $tagref->{note} =~ m{^fixme\s*(.*)}i) {
+	push @or, ['fragezeichen', '?', name => $1];
+    }
+    @or;
+};
+
 my $do_unhandled = sub {
     my($name_ref, $tagref) = @_;
 
@@ -589,6 +600,8 @@ for my $osm_file (@osm_files) {
 		    push @or, ["_unhandled", "X"];
 		}
 	    }
+
+	    push @or, $do_fixme->(\%tag);
 
 	    for my $or (@or) {
 		my($out_file, $cat, %args) = @$or;
@@ -1118,13 +1131,14 @@ for my $osm_file (@osm_files) {
 		add_underline(\@or, "_power", "X");
 	    }
 
-
 	    if (!@or && !$ignore_unhandled && !$ignore_underline) {
 		$do_unhandled->(\$name, \%tag);
 		if ($name ne "") {
 		    push @or, ["_unhandled", "X"];
 		}
 	    }
+
+	    push @or, $do_fixme->(\%tag);
 
 	    for my $or (@or) {
 		my($out_file, $cat, %args) = @$or;
