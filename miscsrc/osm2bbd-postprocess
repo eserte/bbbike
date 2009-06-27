@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: osm2bbd-postprocess,v 1.22 2009/06/09 20:10:43 eserte Exp $
+# $Id: osm2bbd-postprocess,v 1.23 2009/06/27 15:32:33 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2009 Slaven Rezic. All rights reserved.
@@ -31,11 +31,13 @@ my @targets = ('wasserstrassen_lowres',
 	       'inaccessible_streets',
 	       #'make_long_streets',
 	       'mount',
+	       'coastline_hack',
 	      );
 # Targets run by default (exclude obscure ones here)
 my @run_targets =
     grep { !m{^(
 		  mount
+	      |   coastline_hack
 	      )$}x
 	  }
     @targets;
@@ -52,6 +54,9 @@ sub usage (;$) {
     } @targets) . "\tdatadir\n";
 }
 
+# XXX should be generalized, or not be necessary
+my $coastline_hack_anchor;
+
 my $debug = 1;
 my $force;
 GetOptions(
@@ -60,9 +65,11 @@ GetOptions(
 	       ("skip-$optname" => \$skip_target{$_},
 		"only-$optname" => \$only_target{$_},
 	       );
-	   } @targets), 
+	   } @targets),
 	   "debug=i" => \$debug,
 	   "force!" => \$force,
+	   # XXX
+	   "coastline-hack-anchor=s" => \$coastline_hack_anchor,
 	  )
     or usage;
 
@@ -213,6 +220,89 @@ sub target_mount {
     rename "$datadir/mount~", "$datadir/mount"
 	or die "Can't rename mount~ to mount in $datadir: $!";
 }
+
+sub target_coastline_hack {
+    if (!-e "$datadir/_coastline") {
+	print STDERR "No _coastline file available, coastline hack not applicable...\n";
+	return;
+    }
+
+    if (!$coastline_hack_anchor) {
+	print STDERR "Please set -coastline-hack-anchor option!\n";
+	return;
+    }
+
+    my @add_coastline;
+    {
+	my $meta = _load_meta();
+	my $bbox = $meta->{bbox} or die "Unexpected: no bbox found in meta.yml!";
+	if      ($coastline_hack_anchor eq 'nw') {
+	    push @add_coastline, "$bbox->[0],$bbox->[3]";
+	} elsif ($coastline_hack_anchor eq 'n') {
+	    push @add_coastline, "$bbox->[0],$bbox->[3]", "$bbox->[2],$bbox->[3]"; # XXX order?
+	} elsif ($coastline_hack_anchor eq 'ne') {
+	    push @add_coastline, "$bbox->[2],$bbox->[3]";
+	} elsif ($coastline_hack_anchor eq 'w') {
+	    push @add_coastline, "$bbox->[0],$bbox->[1]", "$bbox->[0],$bbox->[3]"; # XXX order?
+	} elsif ($coastline_hack_anchor eq 'e') {
+	    push @add_coastline, "$bbox->[2],$bbox->[1]", "$bbox->[2],$bbox->[3]"; # XXX order?
+	} elsif ($coastline_hack_anchor eq 'sw') {
+	    push @add_coastline, "$bbox->[0],$bbox->[1]";
+	} elsif ($coastline_hack_anchor eq 's') {
+	    push @add_coastline, "$bbox->[0],$bbox->[1]", "$bbox->[2],$bbox->[1]"; # XXX order?
+	} elsif ($coastline_hack_anchor eq 'se') {
+	    push @add_coastline, "$bbox->[2],$bbox->[1]";
+	} else {
+	    die "Invalid or missing value for -coastline-hack-anchor (must be a Himmelsrichtung)"; # XXX english word?
+	}
+    }
+
+    # XXX there should be some global directive indicating this...
+    print STDERR <<EOF;
+No up-to-date detection currently possible. It is possible that the
+coastline hack was already applied. Still continue? (y/N) 
+EOF
+    my $yn = <STDIN>;
+    return if $yn !~ m{^y}i;
+
+
+    my @cmd = ("$FindBin::RealBin/combine_streets.pl",
+	       "-closedpolygon",
+	       "$datadir/_coastline",
+	      );
+    my @lines;
+    if ($debug >= 2) {
+	print STDERR "Running '@cmd'...\n";
+    }
+    open my $fh, "-|", @cmd
+	or die "While running @cmd: $!";
+    while(<$fh>) {
+	push @lines, $_;
+    }
+    close $fh
+	or die "Problem while running @cmd: $!";
+    @lines = sort { length($b) <=> length($a) } @lines;
+    # XXX assume first one is the sea, and others are islands
+    open my $ofh, ">>", "$datadir/wasserstrassen"
+	or die "Can't append to $datadir/wasserstrassen: $!";
+    binmode $ofh; # combine_streets.pl output is binary
+    print $ofh "# now follows the coastline hack data...\n";
+    for (@lines[1..$#lines]) {
+	s{\tW}{\tF:I};
+	print $ofh $_;
+    }
+    {
+	chomp $lines[0];
+	$lines[0] .= " @add_coastline"; # XXX see above, possible order problem...
+	$lines[0] =~ s{\tW}{\tF:W};
+	$lines[0] .= "\n";
+	print $ofh $lines[0];
+    }
+    close $ofh
+	or die "While appending to $datadir/wasserstrassen: $!";
+}
+
+######################################################################
 
 sub _load_meta {
     # assume to be in the right directory

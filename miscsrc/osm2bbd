@@ -57,7 +57,7 @@ my $splitlonglines = 1; # XXX this may change once BBBikeXS has no length restri
 my $xmlparser;
 
 my %experiments;
-my %known_experiments = map {($_,1)} qw(add_postal_code);
+my %known_experiments = map {($_,1)} qw(add_postal_code coastline_hack);
 
 sub usage () {
     <<EOF;
@@ -982,8 +982,13 @@ for my $osm_file (@osm_files) {
 			push @or, ["wasserstrassen", "F:I"];
 		    }
 		} elsif ($natural eq 'coastline') {
-		    push @or, ["wasserstrassen", "W"]; # XXX This should be fixed!
-		    warn_once("Found natural=coastline, sorry cannot use it, fallback to line plotting...\n");
+		    if ($experiments{coastline_hack}) {
+			push @or, ["_coastline", "W"];
+			warn_once("Moving natural=coastline into _coastline file, for proceeding with the coastline hack...\n");
+		    } else {
+			push @or, ["wasserstrassen", "W"]; # XXX This should be fixed!
+			warn_once("Found natural=coastline, sorry cannot use it, fallback to line plotting...\n");
+		    }
 		} else {
 		    $unhandled{"natural=$natural"}++;
 		}
