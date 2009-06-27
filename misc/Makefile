@@ -4,7 +4,7 @@
 
 PERL=			perl
 
-BBBIKEDIR?=		..
+BBBIKEDIR?=		${.CURDIR}/..
 MISCSRCDIR?=		${BBBIKEDIR}/miscsrc
 DATADIR?=		${BBBIKEDIR}/data
 CONVERT2HAFAS=		${MISCSRCDIR}/convert2hafas
@@ -73,7 +73,9 @@ GERMANY_STATES_RULES=	${GERMANY_STATES:S/^/download-/:S/$/.osm.bz2/}
 EUROPE_COUNTRIES=	germany croatia
 EUROPE_COUNTRIES_RULES=	${EUROPE_COUNTRIES:S/^/download-/:S/$/.osm.bz2/}
 
-osm-download-all:	${GERMANY_STATES_RULES} ${EUROPE_COUNTRIES_RULES}
+osm-download-all:	osm-download-geofabrik reload-tiled-berlin
+
+osm-download-geofabrik:	${GERMANY_STATES_RULES} ${EUROPE_COUNTRIES_RULES}
 
 .for land in ${GERMANY_STATES}
 download-${land}.osm.bz2:
