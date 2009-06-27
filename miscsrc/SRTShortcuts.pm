@@ -247,12 +247,12 @@ sub add_button {
 	      ],
 	      [Cascade => 'OSM', -menuitems =>
 	       [
-		[Button => "Display (and refresh) downloaded OSM Berlin",
+		[Button => "Display (and refresh) downloaded OSM tiles",
 		 -command => sub {
 		     _require_BBBikeOsmUtil();
 		     BBBikeOsmUtil::mirror_and_plot_visible_area();
 		 }],
-		[Button => "Display (without refresh) downloaded OSM Berlin",
+		[Button => "Display (without refresh) downloaded OSM tiles",
 		 -command => sub {
 		     _require_BBBikeOsmUtil();
 		     BBBikeOsmUtil::plot_visible_area();
