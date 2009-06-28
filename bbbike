@@ -652,7 +652,6 @@ if ($lowmem) {
 #mymstat("after getopt processing");
 ## DEBUG_END
 
-use vars qw(%skip_features);
 use vars qw($city_obj $dataset_title);
 if (!defined $city && !defined $datadir) {
     $city = "Berlin";
