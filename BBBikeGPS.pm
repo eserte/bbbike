@@ -554,7 +554,7 @@ sub BBBikeGPS::get_symbol_to_img {
     {
 	my @gmicons;
 	for my $candidate ("/usr/share/gpsman/gmicons", # Debian default
-			   "/usr/local/share/gpsman/gmicons", # XXX check the FreeBSD location
+			   "/usr/local/share/gpsman/gmsrc/gmicons", # the FreeBSD location
 			  ) {
 	    if (-d $candidate) {
 		@gmicons = File::Glob::bsd_glob("$candidate/*15x15.gif");
