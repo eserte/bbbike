@@ -1509,7 +1509,13 @@ ${PERSISTENTTMPDIR}/crossings_gewaesser_ignore.bbd:	\
 ## Einzeiler zum Extrahieren einer Postleitzahl:
 # perl -F'\|' -nale '$F[2] == 12489 and $F[3] and print "$F[0] $F[1]\tX $F[3]"' Berlin.coords.data > /tmp/12489.bbd
 
+.ifdef .FreeBSD
 check-coords.data:	check-Berlin.coords.data check-Potsdam.coords.data
+.else
+check-coords.data:
+	@echo '*** check-coords.data target is only active under FreeBSD,'
+	@echo '*** because of incompatible locale definitions'
+.endif
 
 .for city in Berlin Potsdam
 check-$(city).coords.data:	.check_$(city)_coords_data
