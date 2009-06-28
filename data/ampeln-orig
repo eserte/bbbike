@@ -51,6 +51,7 @@
 	X 8578,10672
 	X 8336,10829
 	X 7980,11070
+#: XXX_prog: in Ost-West-Richtung lange Wartezeiten, weil auf zwei Ampeln gewartet werden muss (bei Beachten der Benutzungsplicht)
 	X 8000,11137
 	X 7820,10768
 	X 8947,10956
@@ -651,6 +652,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 5004,9842
 	X 4151,10026
 	X 13277,8211
+#: note: möglicherweise nur während der Schulzeit eingeschaltet
 	X 14758,7373
 	X 15229,7785
 	X 15557,7388
@@ -963,7 +965,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 3711,13202
 	X 3967,13211
 	X 4382,13232
-	X 5619,12745
+	X 5601,12756
 	X 7602,17399
 	X 7350,18262
 	X 7832,20219
@@ -1087,7 +1089,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 7764,13236
 	X 9571,13590
 	X 9268,11590
-	X 5636,13119
+	X 5622,13115
 	X 6661,13130
 	X 12046,16568
 	X 12986,23392
@@ -1723,6 +1725,7 @@ S-Bahn und Regionalbahn	B 21562,12088
 #: by: Joern (js):
 	F 11593,15051
 	X 5421,8337
+#: XXX_prog: lange Wartezeiten für Radfahrer (zwei Umläufe)
 	X 8241,11024
 #: XXX eigentlich zwei Fußgängerampeln in ca. 50-100m Abstand
 	F 5829,10964
@@ -1808,7 +1811,6 @@ UBB, halbstündlich	B 51270,179246
 	B 48147,70935
 	B 2519,62026
 	B -8016,54305
-	B
 	B -34333,-26828
 	B -32833,-25250
 #: by: Message-ID: <2re0fqF1987v6U1@uni-berlin.de>
@@ -2432,6 +2434,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	B 56315,83428
 	B 59937,36197
 	B 26057,-6241
+	X 18777,-1298
 ################################################################################
 # note: Potsdam vvv
 #: by: http://www.potsdam.de/cms/beitrag/10044614/620526/

@@ -4341,7 +4341,7 @@ EOF
        source_id => 'LMS_1146113785841',
        data  => <<EOF,
 userdel	2 9098,12687 9209,12795
-userdel	2 9283,12856 9209,12795
+userdel	2 9280,12883 9209,12795
 EOF
      },
      { from  => 1146693600, # 2006-05-04 00:00
@@ -6639,7 +6639,7 @@ EOF
        text  => 'L 086 Groß Kreutz-Schmergow Bahnübergang in der OL Groß Kreutz Instandsetzungsarbeiten Vollsperrung 13.11.2006-14.11.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork -31993,-726 -32143,-211 -32163,-143
+userdel	2::inwork -31993,-726 -32143,-211 -32153,-176
 EOF
      },
      { from  => 1163480400, # 2006-11-14 06:00
@@ -6896,7 +6896,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_004454',
        data  => <<EOF,
-userdel	2::temp 9106,12795 8870,12647
+userdel	2::temp 9106,12795 9056,12743 8870,12647
 EOF
      },
      { from  => 1168898272, # 2007-01-15 22:57
@@ -7346,7 +7346,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: last_checked: 2009-05-27
-userdel	q4::inwork 9209,12795 9283,12856
+userdel	q4::inwork 9209,12795 9280,12883
 EOF
      },
      { from  => 1174068872, # 2007-03-16 19:14
@@ -8094,7 +8094,7 @@ EOF
        text  => 'K 6908 Ferch-B 1 Geltow zw. B 1 und Fercher Str. in Petzow G 8 - Gipfel Vollsperrung 17.05.2007-19.05.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::temp -20281,-6915 -19858,-6458
+userdel	2::temp -20281,-6915 -20051,-6631 -19760,-6450
 EOF
      },
      { from  => undef, # 
@@ -9093,7 +9093,7 @@ EOF
        text  => 'L 086 B 1 Groß Kreutz-Schmergow OD Groß Kreutz Kanal- und Straßenbau Vollsperrung 19.07.2007-03.08.2007 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork -32163,-143 -32143,-211 -31993,-726 -31991,-1024
+userdel	q4::inwork -32153,-176 -32143,-211 -31993,-726 -31991,-1024
 EOF
      },
      { from  => undef, # 
@@ -9994,7 +9994,7 @@ EOF
        text  => 'L 073 Baruth-Stülpe zw. Paplitz und Lynow Deckeninstandsetzung Vollsperrung 08.10.2007-28.10.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 10970,-39919 11561,-39875 11814,-39896 12751,-39434 13114,-39180 13618,-39476 13914,-39770 15241,-39692
+userdel	2::inwork 10970,-39919 11561,-39875 11814,-39896 12751,-39434 13114,-39180 13618,-39476 13914,-39770 15361,-39713
 EOF
      },
      { from  => 1193776679, # 2007-10-30 21:37
@@ -11783,8 +11783,8 @@ userdel auto	3 6494,10542 6532,10529 6494,10440
 userdel auto	3 7747,11075 7980,11070 8104,11037 8205,10979
 userdel auto	3 6918,10854 6824,10904 6681,10959
 userdel auto	3 9465,12460 9475,12365 9487,12263
-userdel auto	3 7118,11209 6880,11110 6841,11114
-userdel auto	3 6841,11114 6880,11110 7118,11209
+userdel auto	3 7115,11220 6880,11110 6841,11114
+userdel auto	3 6841,11114 6880,11110 7115,11220
 userdel auto	3 7698,10147 7579,10183 7539,9970
 userdel auto	3 7384,10127 7413,10244 7429,10366
 userdel auto	3 7003,10513 7033,10396 7291,10506
@@ -12073,7 +12073,7 @@ EOF
        text  => 'B 115 Baruth - Jüterbog OD Baruth, Kreisverkehr Sanierungsarbeiten Vollsperrung 22.07.2008-30.08.2008 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 18138,-39957 18019,-40241
+userdel	q4::inwork 18138,-39957 18103,-40046 18129,-40122 18110,-40310
 EOF
      },
      { from  => 1216755974, # 2008-07-22 21:46
@@ -13323,7 +13323,7 @@ userdel	q4::inwork 8536,11063 8483,10900
 EOF
      },
      { from  => 1244065177, # 2009-06-03 23:39
-       until => 1246399199, # 2009-06-30 23:59
+       until => 1246208296, # 2009-06-30 23:59 1246399199
        text  => 'Lückstr. (Lichtenberg) Richtung Nöldnerstr. zwischen Giselastr. und Nöldnerplatz Baustelle, Fahrtrichtung gesperrt; sowie Einbahnstraßenregelungen in der Giselastr. und Stadthausstr. (bis Ende 06.2009)',
        type  => 'handicap',
        source_id => 'IM_011767',
@@ -13368,8 +13368,8 @@ userdel	q4::inwork 2947,56408 2775,56089 2034,55227
 EOF
      },
      { from  => 1237071600, # 2009-03-15 00:00
-       until => 1245880800, # 2009-06-25 00:00
-       text  => 'B 198 Polßen - Gramzow OD Meichow grundhafter Straßenbau Vollsperrung 16.03.2009-24.06.2009 ',
+       until => 1251669600, # 2009-08-31 00:00
+       text  => 'B 198 Polßen - Gramzow OD Meichow grundhafter Straßenbau Vollsperrung 16.03.2009-30.08.2009 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork 48310,87199 48468,87288 48550,87381 48624,87416
@@ -13524,7 +13524,7 @@ EOF
        text  => 'L 412 Bad Saarow - Alt Golm OD Neu Golm Kanal- und Straßenbau Vollsperrung 26.03.2009-31.12.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 57976,-10623 57656,-10684 57418,-10618 56989,-10997
+userdel	q4::inwork 58018,-10573 57882,-10535 57752,-10566 57479,-10535 57371,-10550 57225,-10700
 EOF
      },
      { from  => undef, # 
@@ -13897,7 +13897,7 @@ EOF
        text  => 'L 712 Kemlitz-Paplitz zw. B115 und Paplitz, bei Baruth Straßenbau Vollsperrung 13.05.2009-29.05.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 15938,-42195 16017,-39838 15876,-39330
+userdel	2::inwork 15977,-42207 16047,-39802 15949,-39449
 EOF
      },
      { from  => 1241301600, # 2009-05-03 00:00
@@ -14127,8 +14127,8 @@ userdel	q4::inwork -54249,73343 -54091,72917 -54034,72687
 EOF
      },
      { from  => 1243116000, # 2009-05-24 00:00
-       until => 1248127200, # 2009-07-21 00:00
-       text  => 'L 014 Kyritz - Wittstock OD Herzsprung grundhafter Straßenausbau Vollsperrung 25.05.2009-20.07.2009 ',
+       until => 1246312800, # 2009-06-30 00:00
+       text  => 'L 014 Kyritz - Wittstock OD Herzsprung grundhafter Straßenausbau Vollsperrung 25.05.2009-29.06.2009 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork -54338,71670 -54116,72465
@@ -14429,9 +14429,9 @@ userdel	2::temp 22111,4562 22093,4499 22076,4422
 userdel	2::temp 22071,4501 22057,4531 22043,4562 22147,4831 22196,4847 22175,4730 22138,4661 22111,4562 22162,4546 22214,4548 22312,4593 22355,4660 22383,4703
 EOF
      },
-     { from  => 1244786167, # 2009-06-12 07:56
-       until => 1245880800, # 2009-06-25 00:00
-       text  => 'Damerowstr./Breite Str. (Pankow) Richtung Schönholzer Str. nach Mendelstr. Baustelle, Fahrtrichtung gesperrt (bis ca. 24.06.2009)',
+     { from  => 1246207038, # 2009-06-28 18:37
+       until => 1246485599, # 2009-07-01 23:59
+       text  => 'Damerowstr. / Breite Str. (Pankow) Richtung Schönholzer Str. nach Mendelstr. Baustelle, Fahrtrichtung gesperrt (bis Anfang 07.2009)',
        type  => 'handicap',
        source_id => 'IM_013029',
        data  => <<EOF,
@@ -14476,6 +14476,148 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp 62010,-62330 62522,-62647
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Köbisstr.: Zugang zum Reichpietschufer wegen Bauarbeiten nicht möglich',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: last_checked: 2009-06-28
+userdel	2::inwork 7160,11225 6851,11346
+EOF
+     },
+     { from  => 1246206950, # 2009-06-28 18:35
+       until => 1247241600, # 2009-07-10 18:00
+       text  => 'Charlottenstr. (Mitte) in beiden Richtungen zwischen Taubenstr.. und Jägerstr. sowie Gendarmenmarkt: Classic Open Air, Straßen vollständig gesperrt (bis 10.07.09, 18 Uhr) ',
+       type  => 'gesperrt',
+       source_id => 'IM_012983',
+       data  => <<EOF,
+userdel	2::temp 9663,11927 9526,11911 9516,12010 9651,12020
+EOF
+     },
+     { from  => 1246207852, # 2009-06-28 18:50
+       until => 1247695199, # 2009-07-15 23:59
+       text  => 'Berliner Str. (Pankow) stadtauswärts zwischen Am Wasserturm und Romain-Rolland-Str. Baustelle, Fahrtrichtung gesperrt, bis Mitte 07.2009',
+       type  => 'handicap',
+       source_id => 'IM_013096',
+       data  => <<EOF,
+userdel	q4::inwork; 12479,17811 12736,17998
+EOF
+     },
+     { from  => 1246207933, # 2009-06-28 18:52
+       until => 1304200799, # 2011-04-30 23:59
+       text  => 'Kastanienallee (Rosenthal) Richtung Dietzgenstr. zwischen Hauptstr. und Friedrich-Engels-Str. Baustelle, Fahrtrichtung gesperrt (bis 04.2011)',
+       type  => 'handicap',
+       source_id => 'IM_013223',
+       data  => <<EOF,
+userdel	q4::inwork; 7992,20515 8344,20548 8411,20554 8481,20561 8543,20567 8717,20584 8900,20601
+EOF
+     },
+     { from  => 1246208018, # 2009-06-28 18:53
+       until => 1247695199, # 2009-07-15 23:59
+       text  => 'Romain-Rolland-Str. (Heinersdorf) in beiden Richtungen zwischen Rothenbachstr. und Neukirchstr. Baustelle, Straße vollständig gesperrt (bis Mitte 07.2009)',
+       type  => 'handicap',
+       source_id => 'IM_013086',
+       data  => <<EOF,
+userdel	q4::inwork 12562,18483 12570,18351 12575,18275
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Dammweg Richtung Köpenicker Landstr. gesperrt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: last_checked: 2009-06-27
+userdel	q4::inwork; 15698,8191 15561,8072
+EOF
+     },
+     { from  => 1245535200, # 2009-06-21 00:00
+       until => 1247349600, # 2009-07-12 00:00
+       text  => 'B 198 zw. Kerkow u. Greiffenberg Deckenerneuerung Vollsperrung 22.06.2009-11.07.2009 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 48951,71593 48164,72815 47908,73136 47297,73550 47223,73677 46875,75023 46704,75833
+EOF
+     },
+     { from  => 1245535200, # 2009-06-21 00:00
+       until => 1252188000, # 2009-09-06 00:00
+       text  => 'K 6722 B246, Bornow - Groß Rietz zw. Bornow und Birkholz Straßenneubau Vollsperrung 22.06.2009-05.09.2009 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 64933,-24619 64924,-23029
+EOF
+     },
+     { from  => 1246140000, # 2009-06-28 00:00
+       until => 1247954400, # 2009-07-19 00:00
+       text  => 'L 014 Kyritz - Wittstock OD Herzsprung grundhafter Straßenausbau Vollsperrung 29.06.2009-18.07.2009 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork -54338,71670 -54116,72465
+EOF
+     },
+     { from  => 1246572000, # 2009-07-03 00:00
+       until => 1246831200, # 2009-07-06 00:00
+       text  => 'L 026 Wollschow - Prenzlau OD Brüssow 750 Jahre Brüssow Vollsperrung 04.07.2009-05.07.2009 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::temp 57672,111590 57565,111511 57477,111392
+EOF
+     },
+     { from  => 1245794400, # 2009-06-24 00:00
+       until => 1247263200, # 2009-07-11 00:00
+       text  => 'L 073 Baruth - Luckenwalde zw. OA Baruth u. OE Paplitz Fahrbahnsanierung Vollsperrung 25.06.2009-10.07.2009 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 17455,-39733 16994,-39479 16400,-39456
+EOF
+     },
+     { from  => 1246485600, # 2009-07-02 00:00
+       until => 1246917600, # 2009-07-07 00:00
+       text  => 'L 086 Bahnhofstraße OD Groß Kreutz, Bahnübergang Gleisbauarbeiten Vollsperrung 03.07.2009-06.07.2009 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -31993,-726 -32143,-211
+EOF
+     },
+     { from  => 1251064800, # 2009-08-24 00:00
+       until => 1251324000, # 2009-08-27 00:00
+       text  => 'L 086 Bahnhofstraße OD Groß Kreutz, Bahnübergang Gleisbauarbeiten Vollsperrung 25.08.2009-26.08.2009 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -31993,-726 -32143,-211 -32153,-176
+EOF
+     },
+     { from  => 1245708000, # 2009-06-23 00:00
+       until => 1253311200, # 2009-09-19 00:00
+       text  => 'L 144 Herzsprung - Blumenthal OD Herzsprung grundhafter Straßenausbau Vollsperrung 24.06.2009-18.09.2009 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork -54665,72030 -54116,72465
+EOF
+     },
+     { from  => 1246572000, # 2009-07-03 00:00
+       until => 1246831200, # 2009-07-06 00:00
+       text  => 'L 251 Frauenhagen - Brüssow OD Brüssow 750 Jahre Brüssow Vollsperrung 04.07.2009-05.07.2009 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::temp 57568,111045 57559,111267 57445,111340 57391,111374 57405,111424
+EOF
+     },
+     { from  => 1245621600, # 2009-06-22 00:00
+       until => 1247263200, # 2009-07-11 00:00
+       text  => 'L 303 Umgehungsstr. OD Eggersdorf, zw. K.-Liebknecht-Str. u. Landhausstr. Straßenbauarbeiten Vollsperrung 23.06.2009-10.07.2009 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 39052,15115 38771,14926
+EOF
+     },
+     { from  => 1245708000, # 2009-06-23 00:00
+       until => 1251496800, # 2009-08-29 00:00
+       text  => 'L 412 Bad Saarow - Alt Golm OD Neu Golm, Abzw. Fürstenwalder Str. Kanal- und Straßenbau Vollsperrung 24.06.2009-28.08.2009 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 57479,-10535 57752,-10566 57882,-10535
 EOF
      },
     );

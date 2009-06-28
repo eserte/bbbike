@@ -2,6 +2,7 @@
 #: title: Sonstige Behinderungen (Berlin)
 #: version: $Id: handicap_s-orig,v 4.174 2008/12/31 17:36:28 eserte Exp eserte $
 #: note: XXX_* categorization done 2008-01-26
+#: note: "Parkweg" sollte hier vielleicht nicht verwendet werden, sondern nur in qualitaet_s-orig? Oder wenigstens die gleichen Wege nicht in beiden Dateien so benannt werden? Oder wenigstens beim Ausgeben der Routenliste doppelte ausfiltern?
 #:
 Hauptstr. (Friedrichshain-Kreuzberg) in beiden Richtungen zwischen Markgrafendamm und untere Kynaststr. Baustelle, Radfahrer können nur langsam passieren bzw. müssen schieben	q4::inwork 14906,10820 14794,10844 14717,10855
 Wuhlewanderweg: steiler Anstieg, Fußgänger	q4; 21998,12204 21970,12153
@@ -45,8 +46,8 @@ Görlitzer Park: Parkweg, Fußgänger	q2 12817,9964 12855,10035 12869,10071 12904,1
 Görlitzer Park, Rondell: Parkweg, Fußgänger	q2 12802,10097 12737,10051 12690,10062 12659,10119 12680,10168 12712,10192 12761,10195 12801,10146 12802,10097
 Görlitzer Park: eng, Kurven, Fußgänger	q2 12507,10130 12509,10189 12559,10220
 Görlitzer Park: Parkweg, Fußgänger	q2 12559,10220 12611,10299
-Tiergartenufer: Parkweg, Fußgänger	q1 6128,11500 5976,11603 5835,11768 5711,11841 5566,11860
-(Lichtensteinallee - Tiergartenufer): Parkweg, Fußgänger	q1 6309,11443 6128,11500
+Tiergartenufer: Parkweg, Fußgänger	q1 6186,11466 6079,11524 5940,11616 5903,11683 5835,11768 5711,11841 5566,11860
+(Lichtensteinallee - Tiergartenufer): Parkweg, Fußgänger	q1 6309,11443 6186,11466
 Tiergarten: Parkweg, Fußgänger	q2 5666,11362 5727,11573 5758,11630 5780,11622 5802,11672 5831,11697 5818,11722 5835,11768 5870,11842 5890,11865 5901,11902
 Fasanerieallee: Parkweg	q1 6435,11606 6459,11638 6540,11754 6685,11954
 Große Sternallee: Parkweg	q1 6809,11979 7073,11798 7163,11738 7382,11588 7504,11512
@@ -83,7 +84,7 @@ Schwedter Str. (Mauerpark): Park, Fußgänger	q2 10336,14975 10238,15316 10186,154
 (Fußweg am Griesinger-Krankenhaus): Fußgänger	q1 21935,12160 21930,12185 21615,12326 21367,12437 21268,12481 21222,12501
 (Fußgängerbrücke Ostkreuz): Fußgänger	q3 14798,10985 14787,10972 14764,10877 14794,10844
 Marheinekeplatz: Fußgänger, Brunnen	q3 9892,9286 9880,9233
-(Uferweg am Urbanhafen): Fußgänger	q1 11177,9935 11052,9935 10923,9925 10602,10006 10522,10056 10500,10081
+(Uferweg am Urbanhafen): Fußgänger	q1 11177,9935 11052,9935 10914,9925 10602,10006 10522,10056 10500,10081
 Bahnhofsgebäude	q4 7854,7572 7934,7621
 Treppe oder Rampe	q4 7934,7621 7959,7609
 Marx-Engels-Forum: Fußgänger, eigentlich Schiebestrecke	q2 10300,12587 10355,12551 10411,12471 10422,12395
@@ -138,7 +139,7 @@ Volkspark Wilmersdorf: kombinierter Rad- und Fußweg	q1 5481,8506 5417,8519 5347,
 (zur Thomas-Dehler-Str.): Fußgänger, Bordsteine	q4 6654,11460 6716,11439
 Ernststr.: Fußgänger	q2 2497,19503 2700,19527
 (S-Bahnunterführung Wartenberg): Fußgänger, Rampen	q2 16923,18650 16990,18694 17114,18775
-Am Kupfergraben: am Wochenende Flohmarkt	q3 9754,12775 9661,12876 9614,12893 9529,12925
+Am Kupfergraben: am Wochenende Flohmarkt	q3 9754,12775 9661,12876 9618,12907 9529,12925
 Bernburger Treppe: Rampe	q3 8536,11063 8454,11086
 Virchowstr. (Volkspark Friedrichshain): Fußgänger	q1 12897,13402 12771,13603 12707,13706
 (Buckower Ring - Cecilienstr.): Fußgänger	q1 21874,13543 21931,13724
@@ -159,8 +160,8 @@ Fuggerstr.: Gehweg	q2 6128,10319 6020,10351
 Pfalzburger Str.: Gehweg	q2 4905,10069 4909,10119
 Ludwigkirchplatz: Gehweg	q2 4905,10069 4863,10077
 (Tilla-Durieux-Park): Fußgänger	q2 8467,11125 8410,11143
-(Rad- und Wanderweg an Spree und Landwehrkanal): Fußgänger, teilweise eng	q2 3288,12700 3383,12720 3582,12704 3763,12624 3888,12618 4131,12641 4340,12578 4529,12570 4642,12491 4829,12357 5045,12243 5147,12164 5261,12004 5361,11910
-Spreeufer: Fußgänger, besonders an schönen Tagen	q2 10171,12769 10105,12855 9977,12912 9935,12939 9910,12938 9714,12995
+(Rad- und Wanderweg an Spree und Landwehrkanal): Fußgänger, teilweise eng	q2 3358,12718 3396,12741 3476,12735 3582,12704 3763,12624 3888,12618 4131,12641 4340,12578 4529,12570 4642,12491 4829,12357 5045,12243 5147,12164 5261,12004 5361,11910
+Spreeufer: Fußgänger, besonders an schönen Tagen	q2 10171,12769 10105,12855 9977,12912 9944,12921 9930,12947 9900,12942 9714,12995
 Spreeufer: Fußgänger	q1 9707,12974 9557,12992 9533,12994 9508,12991 9271,12952
 Henriette-Herz-Platz: Straßenbahn	q2 10132,12941 10255,12959 10371,13006
 Monbijoupark - Henriette-Herz-Platz: Fußgänger	q1 9977,12912 10132,12941
@@ -209,8 +210,8 @@ Am Teltowkanal: kurverreich und recht eng	q1 3743,1385 3695,1308 3619,1207 3458,
 Körnerpark: Fußgänger, Bordsteine	q3 12703,7370 12722,7261
 Fregestr. zur Feuerbachstr.: Gehweg, Fußgänger	q2 5618,6388 5582,6360
 Weisestr.: Bordsteine	q3 11767,8330 11770,8292
-Helgoländer Ufer - Stromstr.: Fußgänger	q2 6531,12898 6526,12934 6271,12985 6278,13053 6183,13083
-Bundesratufer: Rampe, Fußgänger	q2 6165,12985 6131,12978
+Helgoländer Ufer - Stromstr.: Fußgänger	q2 6551,12901 6535,12934 6271,12985 6278,13053 6183,13083
+Bundesratufer: Rampe, Fußgänger	q2 6165,12985 6106,12989
 Lehmbruckstr.: Bordsteine	q3 13678,10685 13690,10715
 (Stadtpark Steglitz): Fußgänger	q1 5838,4454 5931,4659 6018,4850
 Barsekowstr.: Fußgänger	q1 5344,4672 5417,4647 5476,4626 5589,4617
@@ -258,6 +259,7 @@ Beruner Str.: Rampen, Fußgänger, U-Bahn-Ausgang	q3 20143,10731 20215,10554
 (Parkweg Spreebogenpark): besonders an Wochenenden tagsüber sehr viele Fußgänger	q2 8017,12826 8021,12839 8046,12870 8072,12902 8116,12938 8168,12945 8235,12945 8275,12936 8341,12911 8417,12846
 Spreeuferweg: besonders an Wochenenden tagsüber viele Fußgänger	q1 7904,12803 7945,12878 7966,12913 8044,12989 8159,13032
 Spreeuferweg: besonders an Wochenenden tagsüber viele Fußgänger	q1 8277,13032 8315,13005 8401,12973 8464,12919 8498,12870 8529,12757 8566,12661 8587,12642 8635,12629 8754,12622
+Spreeuferweg: besonders an Wochenenden tagsüber viele Fußgänger	q1 8635,12629 8709,12605 8756,12608
 Helenenhof: enge Tore, Fußgänger	q3 14495,11261 14395,11356
 Färberstr. - Uferweg: sehr eng	q2 21675,4989 21665,5035 21684,5079
 Uferweg, Mentzelpark: Fußgänger	q1 21487,5425 21600,5221 21684,5079 21735,5003 21821,4918 21845,4875
@@ -371,8 +373,8 @@ Teltowkanalpromenade: eng, nicht anhängertauglich	q2 2079,-12 1924,-188 1593,-31
 Bennigsenstr.: enge Straße	q1 5807,7771 5957,7765 6225,7776
 Perelsplatz: Fußgänger, Park	q2 5809,7712 5636,7709
 Gustav-Rickelt-Weg: eng, Fußgänger	q2 4226,6712 4223,6796 4206,6820
-Unterführung unter der Stromstr.: Fußgänger, eng	q2 6218,12975 6180,12962
-nördliches Spreeufer: drei niedrige Stufen, Fußgänger	q2 6180,12962 6121,12955
+Unterführung unter der Stromstr.: Fußgänger, eng	q2 6218,12975 6180,12972
+nördliches Spreeufer: drei niedrige Stufen, Fußgänger	q2 6180,12972 6102,12960 6064,12950
 Wustermarker Str.: Fußgänger, Bordsteine	q2 -4750,14393 -4678,14382
 Firlstr.: zwei Bodenschwellen	q1 18574,6401 18623,6523
 Waldesruher Str.: parkende Autos	q1; 24910,7896 24923,7903 25047,8086
@@ -449,6 +451,13 @@ Kleine Hege: sehr eng	q3 22334,4383 22382,4361
 Schmaler Weg: eng, Fußgängerweg nicht für Radfahrer freigegeben, ggfs. schieben	q3 25571,5829 25442,5813 25294,5761
 (Bölschestr. - Scharnweberstr.): eng, Fußgängerweg nicht für Radfahrer freigegeben, ggfs. schieben	q3 25524,5011 25729,5002
 Rosmarienstr.: Fußgängerzone, ggfs. schieben	q3 9369,12253 9487,12263
+Uferweg: Fußgänger	q1 3444,12804 3510,12809
+Uferweg: Fußgänger, enge Kurven	q2 3510,12809 3547,12864 3572,12866 3559,12793
+Uferweg: Fußgänger	q1 3559,12793 3641,12753 3747,12679
+Uferweg: Fußgänger, Biergarten	q3 3747,12679 3862,12675
+Uferweg: Fußgänger	q1 3862,12675 3938,12687 4147,12699 4206,12691 4242,12684
+(Neues Ufer - Kaiserin-Augusta-Allee): Fußgänger	q1 4456,12918 4514,12936 4581,13066 4576,13115 4547,13139 4561,13233
+Bundesratufer: Fußgänger	q2 5938,12848 5922,12765
 Ebersstr.: Schüler	q2 7245,8583 7292,8631
 Straße 103 (Niederschönhausen): enge Straße 	q1 10914,20065 11051,19789
 An der Heilandsweide: Fußgänger	q1 8203,1194 8305,1148 8492,1050 8539,1025 8687,950
@@ -481,7 +490,7 @@ Friedrichstr. (Lichterfelde): Fuß- und Radweg	q1 2890,3561 2712,3602
 Rampen	q3 1610,13380 1551,13377
 (Krankenhausgelände): eher schmaler Gehweg	q1 2688,12701 2555,12686
 (Schloßpark Charlottenburg, westlicher Weg): Fußgänger	q1 2858,13583 2775,13479 2659,13425 2602,13418 2625,13229 2688,12701 2717,12463
-(Uferweg): teilweise relativ schmal, Fußgänger	q1 5185,13078 5148,13062 4940,13168 4742,13157 4751,13245
+(Uferweg): teilweise relativ schmal, Fußgänger	q1 5185,13078 5144,13075 5076,13116 4940,13168 4742,13157 4751,13245
 Sparrstr. - Triftstr.: Gehweg	q1 7303,15173 7241,15293
 (Max-Lingner-Str. - Maximilianstr.): schmaler Fußweg und Parkplatz	q2 11107,17340 10906,17331
 (Seecktstr. - Wilhelmstr.): breiter Gehweg	q0 -4017,13167 -3886,13120
@@ -571,7 +580,7 @@ Hüttenweg: keine abgesenkten Bordsteine an der Kreuzung "Auf dem Grat"	q1 1964,5
 (Südpark): Fußgänger	q1 -3707,11693 -3712,11714 -3732,11772 -3826,11901 -3883,12053 -3985,12056 -4040,12050
 (Südpark): Fußgänger	q1 -4009,11789 -4004,11814 -4070,12006 -4040,12050 -4085,12081 -4117,12199 -4169,12368
 (Glühwürmchenweg - Pionierstr.): Wohngebiet	q1 -5960,16441 -6018,16250
-Schloßpark Charlottenburg: Fußgänger	q1 3288,12700 3263,12720 3127,12793 3055,12973 2997,13402 2950,13552
+Schloßpark Charlottenburg: Fußgänger	q1 3296,12719 3231,12749 3127,12793 3055,12973 2997,13402 2950,13552
 Spreeweg: eng und unübersichtlich	q2 2950,13552 2922,13594 2859,13686 2777,13712 2568,13662 2260,13540
 Lefèvrestr.: enge Straße	q1 4987,6902 4993,6812 5034,6745 5137,6651 5215,6643 5372,6663
 (Paul-Löbe-Allee - südl. Spreeufer): Gäste des Biergartens des HDKDW	q4 7741,12581 7670,12576
@@ -593,7 +602,7 @@ Kamminer Str.: unübersichtliche Kreuzungen, parkende PKWs	q1 3248,12954 3292,131
 (Kolonieweg a. d. Forkenbeckstr.): Fußgänger, teilweise eng 	q3 3218,8233 3230,8194 3635,8099 3709,8082 3753,8073 3779,8105
 Claire-Waldoff-Weg: Fußgänger	q2 3635,8099 3596,7550
 Bissingzeile: Einspurig, eng bei Gegenverkehr	q1 7959,10910 8113,10786
-(Volkspark Friedrichshain, parallel zur Friedenstr.): Fußgänger	q1 12386,13085 12387,13107 12344,13157 12194,13307 12148,13348 12088,13403 12005,13481 11943,13545 11857,13596 11823,13610 11785,13625
+(Volkspark Friedrichshain, parallel zur Friedenstr.): Fußgänger	q1 12386,13085 12387,13107 12344,13157 12248,13254 12194,13307 12148,13348 12088,13403 12005,13481 11943,13545 11857,13596 11823,13610 11785,13625
 (Weydemeyerstr.): Fußgänger	q1 11900,12754 11837,12780 11824,12749
 (Weydemeyerstr.): Fußgänger	q1 11933,12701 11971,12785 11926,12807
 (Karl-Marx-Allee): Fußgänger, Bordsteine	q1 11584,12863 11600,12857 11622,12850 11725,12809
@@ -689,7 +698,7 @@ Vineta Platz: Fußgänger	q2 9942,14936 10029,14974 10111,15018
 Vineta Platz: Fußgänger	q2 9904,15014 9988,15057 10071,15096
 Ruppiner Str.: Fußgänger	q1 9904,15014 9918,14986 9942,14936
 Swinemünder Str.: Fußgänger	q1 10085,14863 10029,14974 9988,15057 9929,15174 9853,15333 9734,15579
-(Unterführung Schloßbrücke): Fußgänger, teilweise eng	q2 3383,12720 3326,12730 3263,12720
+(Unterführung Schloßbrücke): Fußgänger, teilweise eng	q2 3396,12741 3326,12730 3231,12749
 Sesenheimer Str.: Fußgänger, Bordsteine	q2 3866,11473 3874,11380
 (südliches Spreeufer): Fußgänger	q2 5186,12843 5173,12973 5128,13012 4973,13083 4837,13091 4733,13076 4711,13055 4644,13003 4627,12951 4599,12789 4759,12681
 (Heisenbergstr. - südliches Spreeufer): Fußgänger	q2 5065,13010 5128,13012
@@ -711,8 +720,8 @@ Südtorweg: Fußgänger (nur bei Veranstaltungen ein Problem)	q1 -503,11782 -750,11
 Rossiter Weg: Fußgänger (nur bei Veranstaltungen ein Problem)	q0 -107,12220 -122,12197 -212,12126 -272,12039
 (Fußgängertunnel S-Bhf Jungfernheide): Fußgänger	q3 3320,13796 3365,13695
 (Olbestr. - Lamberstr.): Fußgänger	q2 3292,13622 3304,13685 3365,13695
-(Goslaer Ufer - Am Bahnhof Jungfernheide): Fußgänger	q1 4195,13695 4156,13914 4151,13961 4076,14203 4011,14245
-(Lise-Meitner-Str. - Goslaer Ufer): Fußgänger	q1 4011,14245 3957,14229
+(Goslarer Ufer - Am Bahnhof Jungfernheide): Fußgänger	q1 4195,13695 4156,13914 4151,13961 4076,14203 4011,14245
+(Lise-Meitner-Str. - Goslarer Ufer): Fußgänger	q1 4011,14245 3957,14229
 (Verlängerung der Ilsenburger Str. (Charlottenburg)): Fußgänger	q2 3981,13292 3975,13448
 (Schwarzer Weg): Fußgänger	q2 4255,13222 4185,13386 4081,13418 3975,13448 3797,13499
 (Dahlienweg): Fußgänger	q2 3797,13499 3795,13541 3796,13575
@@ -722,11 +731,11 @@ Eosanderstr.: Fußgänger	q1 3345,12580 3272,12581
 Siemenssteg: Fußgänger, schmal	q2 4129,12619 4128,12637 4124,12706 4124,12721
 (Müllerstr. - Gerichtstr.): Fußgänger	q2 7611,15286 7723,15417
 (südliches Spreeufer): Fußgänger	q2 5579,12231 5737,12281 5804,12362 5962,12553 6029,12693 6078,12848 6123,12887 6182,12900
-(nördliches Spreeufer): Fußgänger	q1 6131,12978 6121,12955 6039,12923 5964,12810 5909,12602 5896,12590 5876,12585
-(nördliches Spreeufer): Fußgänger	q2 6271,12985 6218,12975 6200,12971 6165,12985
-(nördliches Spreeufer): Fußgänger	q1 5876,12585 5876,12553 5825,12473 5765,12395 5717,12337 5667,12287
-(nördliches Spreeufer): Fußgänger	q2 5667,12287 5596,12273 5475,12315 5371,12462 5369,12529
-(nördliches Spreeufer): Fußgänger	q1 5369,12529 5356,12640 5348,12789 5346,12845 5298,12910
+(nördliches Spreeufer): Fußgänger	q1 6106,12989 6064,12950 6019,12923 5962,12854 5921,12663 5890,12602 5869,12591
+(nördliches Spreeufer): Fußgänger	q2 6271,12985 6218,12975 6190,12978 6165,12985
+(nördliches Spreeufer): Fußgänger	q1 5869,12591 5868,12566 5806,12487 5746,12413 5683,12342 5661,12323 5607,12307
+(nördliches Spreeufer): Fußgänger	q2 5607,12307 5550,12305 5484,12320 5411,12380 5362,12469 5356,12494 5372,12538
+(nördliches Spreeufer): Fußgänger	q1 5354,12552 5366,12665 5362,12787 5346,12845 5298,12910
 Machandelweg: Fußgänger, schmal	q2 -248,12718 -217,12778 -185,12822
 Merowingerweg: Fußgänger, schmal	q2 1041,11169 1065,11216
 Wandalenallee: Fußgänger	q1 736,11206 711,11199

@@ -6,7 +6,7 @@
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9865,10227 9825,10206 9687,10180 9599,10175 9416,10196
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9368,10211 9145,10290 8804,10303 8724,10327 8661,10377 8634,10426 8525,10626 8430,10710
 Kanalstraßen Südufer, von Westen bis Flottwellstr.	1 8336,10829 8205,10979 8104,11037 7980,11070 7747,11075 7579,11032 7461,11051 7248,11143 7002,11034
-Kanalstraßen Nordufer	1 6880,11110 7118,11209 7160,11225 7251,11202 7333,11179 7595,11086 7687,11096 7873,11142 8000,11137 8102,11099 8241,11024
+Kanalstraßen Nordufer	1 6880,11110 7115,11220 7160,11225 7251,11202 7333,11179 7419,11137 7492,11111 7595,11086 7690,11108 7873,11142 8000,11137 8102,11099 8241,11024
 Kanalstraßen Nordufer	1 8241,11024 8261,11015 8342,10916 8380,10865 8443,10777 8578,10672 8701,10428 8771,10381 8824,10366 8953,10366 9028,10371 9154,10348 9239,10313 9404,10250 9492,10226 9593,10238 9873,10285
 Gitschiner Str.	1 9873,10285 9948,10280
 Gitschiner Str.	1 9948,10280 9865,10227
@@ -1159,12 +1159,12 @@ Mittelstreifen (nicht unpassierbar, aber unbequem)	3nocross::ignrte 11632,8302 1
 Flughafenstr. -> Weisestr.: Mittelstreifen (nicht unpassierbar, aber unbequem)	3::igndisp 11898,8362 11767,8330 11770,8292
 Weisestr. -> Flughafenstr.: Mittelstreifen (nicht unpassierbar, aber unbequem)	3::igndisp 11770,8292 11767,8330 11632,8302
 unpassierbarer Mittelstreifen	3nocross::ignrte 6183,13083 6165,12985 6156,12918 6150,12875
-nördliches Spreeufer -> Stromstr.: unpassierbarer Mittelstreifen	3::igndisp 6200,12971 6165,12985 6156,12918
-nördliches Spreeufer -> Bundesratufer: unpassierbarer Mittelstreifen	3::igndisp 6200,12971 6165,12985 6131,12978
-Stromstr. -> Bundesratufer: unpassierbarer Mittelstreifen	3::igndisp 6156,12918 6165,12985 6131,12978
-Bundesratufer -> nördliches Spreeufer: unpassierbarer Mittelstreifen	3::igndisp 6131,12978 6165,12985 6200,12971
-Bundesratufer -> Stromstr.: unpassierbarer Mittelstreifen	3::igndisp 6131,12978 6165,12985 6183,13083
-Stromstr. -> nördliches Spreeufer: unpassierbarer Mittelstreifen	3::igndisp 6183,13083 6165,12985 6200,12971
+Bundesratufer -> nördliches Spreeufer: unpassierbarer Mittelstreifen	3::igndisp 6106,12989 6165,12985 6190,12978
+Bundesratufer -> Stromstr.: unpassierbarer Mittelstreifen	3::igndisp 6106,12989 6165,12985 6183,13083
+Stromstr. -> Bundesratufer: unpassierbarer Mittelstreifen	3::igndisp 6156,12918 6165,12985 6106,12989
+nördliches Spreeufer -> Bundesratufer: unpassierbarer Mittelstreifen	3::igndisp 6190,12978 6165,12985 6106,12989
+nördliches Spreeufer -> Stromstr.: unpassierbarer Mittelstreifen	3::igndisp 6190,12978 6165,12985 6156,12918
+Stromstr. -> nördliches Spreeufer: unpassierbarer Mittelstreifen	3::igndisp 6183,13083 6165,12985 6190,12978
 Linksabbiegen verboten	3nocross::ignrte 20109,16305 20219,16523 20339,16752
 Alfred-Döblin-Str. -> Märkische Allee: Linksabbiegen verboten	3::igndisp 20286,16494 20219,16523 20109,16305
 Märkische Allee -> Alfred-Döblin-Str.: Linksabbiegen verboten	3::igndisp 20339,16752 20219,16523 20286,16494
@@ -1332,7 +1332,7 @@ tragen (flache Treppe, wenige Stufen)	0:10:-193 6530,6786
 tragen (ca. 10 Stufen)	0:20 26407,161781 26395,161793
 tragen (Treppe oder steile Kinderwagenrampe)	0:30:55 2956,24373
 tragen (Treppe)	0:30 2827,23059 2854,23062 2886,23045
-tragen (Treppe)	0:30:-173 8773,10399
+tragen (ca. 30 Stufen)	0:30:-173 8773,10399
 tragen (Treppe)	0:30:-14 -18702,4551
 tragen (Treppe)	0:20:-195 -12681,-1726
 tragen (ca. 30 Stufen)	0:30:-246 -13802,-1856
@@ -1425,6 +1425,8 @@ tragen (Treppe, ca. 50 Stufen)	0:50:2 -6934,14291
 tragen (Treppe)	0:30:-237 20673,7260
 tragen (Treppe, ca. 6 Stufen)	0:15:-222 15488,8508
 tragen (Treppe, 50 Stufen)	0:50:-151 -12328,1941
+tragen (Treppe, 18 Stufen)	0:18:-72 8709,12605
+tragen (Treppe)	0:30 6016,12939 6017,12931 6019,12923
 Drängelgitter, für Anhänger nicht passierbar	BNP:5:-206 2009,3362
 Drängelgitter, für Anhänger nicht passierbar	BNP:5:-211 1980,3409
 Schwingtor	BNP:5:-153 15054,10168
@@ -1731,7 +1733,7 @@ Hohenzollerndamm -> Kronberger Str.: Mittlestreifen wg. Leitplanke nicht zu quer
 Mittelstreifen schlecht zu queren	3nocross::ignrte 2116,7740 2094,7719 2036,7653
 Königsmarckstr. -> Hohenzollerndamm: Mittelstreifen schlecht zu queren	3::igndisp 1971,7738 2094,7719 2116,7740
 Hohenzollerndamm -> Königsmarckstr.: Mittelstreifen schlecht zu queren	3::igndisp 2036,7653 2094,7719 1971,7738
-Am Zirkus	1 9226,12909 9192,13032 9145,13020 9118,13070
+Am Zirkus	1 9239,12923 9170,13031 9145,13020 9118,13070
 Adele-Schreiber-Krieger-Str.	1s 8737,12757 8596,12748
 Virchowweg: schmale Toreinfahrt, Fußgänger und Bordstein	0:10:86 8548,13577
 tragen (ca. 20 Stufen)	0:45:-98 8536,12758
@@ -1752,7 +1754,7 @@ Heerstr. -> Enger St.: Heerstr.	3::igndisp -4063,11805 -4278,11873 -4298,11769
 tragen/schieben (40 Stufen, Rampe)	0:120 -4768,11016 -4836,11028
 Theodor-Heuss-Weg	1s 9197,14562 9081,14363
 tragen / schieben (Treppe 10 Stufen oder wilder Weg)	0:40:-150 9223,14608
-Tor	BNP:5:-260 3326,12730
+Tor	BNP:5:81 3326,12730
 Herderstr. (Charlottenburg)	1 4451,11558 4435,11343
 tragen (Treppe, 14 Stufen)	0:30:81 7931,12876
 Joachim-Karnatz-Allee	1 7142,12584 7131,12615
@@ -1806,7 +1808,7 @@ Gottfried-Keller-Str.	1 1697,11911 1792,11889
 tragen (5 Stufen)	0:20:-182 3795,13541
 Schranke	BNP:5:-170 3981,13292
 Tor (meist offen, sonst Fußgängerweg nehmen)	BNP:5:75 3822,14195
-Wiebestr.: (Privatweg)	2 4547,13232 4490,12990
+Wiebestr.: (Privatweg)	2 4527,13232 4495,13107
 queren nur mit tragen möglich	3nocross::ignrte 3034,12502 3189,12519 3280,12512
 Nithackstr. -> Spandauer Damm: queren nur mit tragen möglich	3::igndisp 3204,12416 3189,12519 3034,12502
 Spandauer Damm -> Nithackstr.: queren nur mit tragen möglich	3::igndisp 3280,12512 3189,12519 3204,12416
@@ -1823,9 +1825,9 @@ Saldernstr. -> Riehlstr.: queren schlecht möglich	3::igndisp 2405,11587 2390,114
 Saldernstr. -> Kaiserdamm: queren schlecht möglich	3::igndisp 2405,11587 2390,11468 2612,11491
 Kaiserdamm -> Saldernstr.: queren schlecht möglich	3::igndisp 2282,11463 2390,11468 2405,11587
 Kaiserdamm -> Riehlstr.: queren schlecht möglich	3::igndisp 2612,11491 2390,11468 2393,11381
-tragen, schieben (3 x 9 Stufen, schmale Rampe)	0:30:77 6200,12971
-tragen (30 Stufen)	0:45:47 5896,12590
-mehrere einzelne Stufen	0:20:39 5717,12337
+tragen, schieben (3 x 9 Stufen, schmale Rampe)	0:30:-263 6190,12978
+tragen (30 Stufen)	0:45:26 5890,12602
+tragen (12 Stufen)	0:20:41 5683,12342
 Karolingerplatz	1 1278,11087 1181,11136
 Karolingerplatz	1 1209,11212 1315,11179
 Ubierstr.	1 1315,11179 1278,11087
