@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: osm2bbd-postprocess,v 1.33 2009/06/29 21:16:14 eserte Exp $
+# $Id: osm2bbd-postprocess,v 1.34 2009/06/29 21:16:22 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2009 Slaven Rezic. All rights reserved.
@@ -253,14 +253,42 @@ sub target_coastline_hack {
 	return;
     }
 
+    # check if coastline hack was already applied
+    {
+	my $do_truncate_at_pos;
+
+	{
+	    open my $fh, "$datadir/wasserstrassen"
+		or do {
+		    warn "'wasserstrassen' cannot be opened ($!), cannot apply coastline hack...\n";
+		    return;
+		};
+	    my $last_pos = 0;
+	    while(<$fh>) {
+		if (m{^#: section coastline_hack vvv}) {
+		    if (!$force) {
+			print STDERR "up-to-date";
+			return;
+		    } else {
+			$do_truncate_at_pos = $last_pos;
+			last;
+		    }
+		}
+		$last_pos = tell $fh;
+	    }
+	    close $fh; # explicitely close, don't rely on scope exit
+	}
+
+	# Don't use "truncate $fh" for compatibility with Win32.
+	if (defined $do_truncate_at_pos) {
+	    truncate "$datadir/wasserstrassen", $do_truncate_at_pos
+		or die "Cannot truncate '$datadir/wasserstrassen' to position $do_truncate_at_pos: $!";
+	}
+    }
+
     my $meta = eval { _load_meta() };
     if (!$meta) {
 	print STDERR "Cannot apply coastline hack without meta file.\n";
-	return;
-    }
-
-    if (!$force && $meta->{applied_postprocessing}{coastline_hack}) {
-	print STDERR "up-to-date";
 	return;
     }
 
@@ -310,7 +338,7 @@ sub target_coastline_hack {
     open my $ofh, ">>", "$datadir/wasserstrassen"
 	or die "Can't append to $datadir/wasserstrassen: $!";
     binmode $ofh; # combine_streets.pl output is binary
-    print $ofh "# now follows the coastline hack data...\n";
+    print $ofh "#: section coastline_hack vvv\n";
     for (@lines[1..$#lines]) {
 	s{\tW}{\tF:I};
 	print $ofh $_;
@@ -322,11 +350,9 @@ sub target_coastline_hack {
 	$lines[0] .= "\n";
 	print $ofh $lines[0];
     }
+    print $ofh "#: section ^^^^^^^^^^^^^^^^^^\n";
     close $ofh
-	or die "While appending to $datadir/wasserstrassen: $!";
-
-    $meta->{applied_postprocessing}{coastline_hack} = 1;
-    _write_meta($meta);
+	or die "While appending coastline_hack to $datadir/wasserstrassen: $!";
 
     if (!$targets_to_run{'wasserstrassen_lowres'}) {
 	print STDERR <<EOF;
