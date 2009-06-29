@@ -639,7 +639,7 @@ Mittelbuschweg: Kopfsteinpflaster	Q2 13500,7018 13484,7140 13575,7200 13693,7228
 Welserstr.: Kopfsteinpflaster	Q2 6217,10099 6256,10309 6265,10359
 Kieler Str. (Mitte): Kopfsteinpflaster	Q2 8054,14257 7967,14200
 (Uferweg Plötzensee): Parkweg	Q2 5618,14981 5518,15236 5291,15424 5050,15643 5084,15415 5018,15228
-Kruppstr.: Kopfsteinpflaster	Q2 7351,14120 6923,13887 6895,13871 6833,13837
+Kruppstr.: Kopfsteinpflaster	Q2 7327,14130 6917,13917 6890,13900 6817,13862
 Weg 7: Asphalt	Q0 17039,7685 17297,7752 17527,7812
 Futranplatz: Kopfsteinpflaster	Q2 22377,4836 22439,4838
 Schierker Str.: Kopfsteinpflaster	Q2 12259,7164 12421,7197 12613,7236 12722,7261 12843,7290 12908,7305 13003,7316 13034,7319
@@ -745,7 +745,7 @@ Zum Seddinsee: teils schlechter Waldweg	Q3 30839,106 30859,-6 30778,-326
 Melchiorstr.: mäßiger Asphalt	Q1 11921,11185 11726,11265
 Melchiorstr.: mäßiger Asphalt	Q1; 11726,11265 11542,11342
 Hansaufer: Kopfsteinpflaster	Q2 5869,12591 5797,12494 5740,12419
-Unionstr: Kopfsteinpflaster	Q2 5773,14096 5943,14049
+Unionstr: Kopfsteinpflaster	Q2 5782,14067 5943,14049
 Bremer Str.: Kopfsteinpflaster	Q2 5956,14168 5943,14049
 Bremer Str.: einige Stellen mit Kopfsteinpflaster	Q1 5943,14049 5907,13746 5882,13548
 Bremer Str.: Asphalt	Q0 5882,13548 5868,13441 5857,13342
@@ -3076,7 +3076,7 @@ Canovastr.: Asphalt	Q0 6104,6258 6198,6270 6305,6287 6323,6270
 Wiclefstr.: Kopfsteinpflaster	Q2 5231,13843 5417,13817 5609,13790 5743,13772 5907,13746 6005,13734 6095,13724
 #: note: laut anonymen Eintrag "Beton Q1"
 Buchstr.: Asphalt	Q0 6599,14735 6445,14893
-Stephanstr. (Tiergarten): Kopfsteinpflaster	Q2 6226,13951 6380,14058 6492,14142 6677,14219 6956,14288 6992,14251
+Stephanstr. (Tiergarten): Kopfsteinpflaster	Q2 6226,13951 6394,14085 6487,14156 6677,14219 6956,14288 6992,14251
 Holsteiner Ufer: Kopfsteinpflaster, OK	Q1 6182,12900 6354,12870 6452,12828 6580,12775
 Holsteiner Ufer: mäßiges Kopfsteinpflaster	Q2 6580,12775 6690,12637
 #: note: die ADFC-Karte sagt hierzu: mäßig geeignet
@@ -3205,7 +3205,7 @@ Bartschiner Str.: schlechtes Kopfsteinpflaster	Q3 16878,859 16925,631 16946,487 
 #: by: ^^^
 #: by: rjoop (Korrektur, alter Eintrag war von Sascha M. Krause, schlechtes Kopfsteinpflaster, "Moabiter Kissen"): vvv
 Oldenburger Str.: Asphalt, "Moabiter Kissen"	Q1 5705,13359 5725,13566
-Oldenburger Str.: mäßiges Kopfsteinpflaster	Q2 5725,13566 5743,13772 5773,14096
+Oldenburger Str.: mäßiges Kopfsteinpflaster	Q2 5725,13566 5743,13772 5782,14067 5787,14102
 #: by: ^^^
 #: by: Sebastian Kröger/Andreas Mühlhausen
 Anton-Saefkow-Str.: Asphalt mit Löchern und Kanten	Q2 12536,14827 12723,14714 12782,14676 12885,14616 13013,14523
@@ -8742,10 +8742,10 @@ Am Friedrichshain: Asphalt	Q2 12038,13685 12022,13755 12126,13893
 Vopeliuspfad: Kopfsteipflaster	Q2 1318,3009 1208,3211
 (Parkweg Dreipfuhlpark): Asphalt mit Löchern	Q1 1608,4313 1548,4168 1524,4054 1520,4006 1523,3904 1536,3780
 Westhafenstr.: Kopfsteinpflaster	Q2 6293,14625 6083,14564
-Salzwedeler Str.: Kopfsteinpflaster	Q2 6267,14184 6380,14058
-Havelberger Str.: Kopfsteinpflaster	Q2 6476,14277 6492,14142
-Havelberger Str.: Asphalt mit gepflasterten Bodenschwellen	Q1 6492,14142 6504,14043 6518,13859
-Stendaler Str. (Tiergarten): Asphalt mit gepflasterten Bodenschwellen	Q1 6719,14047 6504,14043
+Salzwedeler Str.: Kopfsteinpflaster	Q2 6267,14184 6394,14085
+Havelberger Str.: Kopfsteinpflaster	Q2 6476,14277 6487,14156
+Havelberger Str.: Asphalt mit gepflasterten Bodenschwellen	Q1 6487,14156 6489,14071 6494,13861
+Stendaler Str. (Tiergarten): Asphalt mit gepflasterten Bodenschwellen	Q1 6719,14047 6489,14071
 Otto-Dix-Str.: Asphalt und Kopfsteipflasterabschnitte	Q1 7207,13118 7370,13204 7496,13272
 Lesser-Ury-Weg: Asphalt und Kopfsteipflasterabschnitte	Q1 7567,13143 7496,13272 7419,13416
 Claire-Waldoff-Promenade: Asphalt und Kopfsteipflasterabschnitte	Q1 7440,13073 7370,13204 7295,13346
@@ -8931,8 +8931,8 @@ Gartenplatz: Asphalt	Q0 8870,14637 8953,14758
 Ravenéstr.: Kopfsteinpflaster	Q2 8232,15220 8016,15221
 (Schulzendorfer - Schönwalder Str.): Verbundsteine	Q1 8248,14900 8266,15134
 Döberitzer Str.: Kopfsteinpflaster	Q3 7981,13722 7872,13685
-Dreysestr: Kopfsteinpflaster mit Bodenschwellen	Q2 6976,13563 6897,13551 6803,13537 6715,13525
-Bandelstr.: Kopfsteinpflaster mit Bodenschwellen	Q2 6739,13328 6715,13525 6686,13746
+Dreysestr: Kopfsteinpflaster mit Bodenschwellen	Q2 6976,13563 6897,13551 6783,13551 6687,13545
+Bandelstr.: Kopfsteinpflaster mit Bodenschwellen	Q2 6694,13327 6687,13545 6686,13746
 Bugenhagenstr.: Asphalt mit Kopfsteinpflasterbodenschwellen	Q2 6235,13517 6104,13522 6008,13529
 Bugenhagenstr.: Kopfsteinpflaster	Q2 6008,13529 5964,13535 5882,13548
 Waldenserstr.: Kopfsteinpflaster mit Bodenschwellen	Q2 5882,13548 5725,13566 5580,13587 5390,13616
