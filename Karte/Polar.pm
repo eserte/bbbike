@@ -219,3 +219,19 @@ sub trim_accuracy {
 $obj = new Karte::Polar;
 
 1;
+
+__END__
+
+=head1 NAME
+
+Karte::Polar - convert between BBBike and WGS84 coordinates
+
+=head1 SYNOPSIS
+
+See L<Karte>.
+
+=head1 AUTHOR
+
+Slaven Rezic.
+
+=cut

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: osm2bbd-postprocess,v 1.34 2009/06/29 21:16:22 eserte Exp $
+# $Id: osm2bbd-postprocess,v 1.35 2009/06/30 22:13:10 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2009 Slaven Rezic. All rights reserved.
@@ -473,3 +473,36 @@ sub _get_largest_city {
 		    }, UseLocalDirectives => 0);
     $max;
 }
+
+__END__
+
+=head1 NAME
+
+osm2bbd-postprocess - do additional postprocessing of the osm2bbd result
+
+=head1 SYNOPSIS
+
+    osm2bbd-postprocess [--debug=0..3] [-force] [options] datadirectory
+
+=head1 DESCRIPTION
+
+Do additional postprocessing of the result of a L<osm2bbd> run. If no
+further options are given, then some default postprocessing tasks will
+be run. Usually C<osm2bbd-postprocess> can determine that a
+postprocessing task was already run and won't do it again unless the
+C<-force> option is given.
+
+Run C<osm2bbd-postprocess --help> to see a list of all options and all
+tasks.
+
+The C<coastline-hack> task needs the additional option
+C<-coastline-hack-anchor> with any cardinal direction (e.g. C<n>,
+C<nw> etc.) for the direction of the "open sea".
+
+=head1 AUTHOR
+
+Slaven Rezic
+
+=head1 SEE ALSO
+
+L<osm2bbd>

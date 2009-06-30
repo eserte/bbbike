@@ -276,3 +276,33 @@ sub save_pwd (&) {
 # REPO END
 
 __END__
+
+=head1 NAME
+
+downloadosm - download data from openstreetmap
+
+=head1 SYNOPSIS
+
+    downloadosm -o directory x0 y0 x1 y1
+    downloadosm -reload existing.osm
+
+=head1 DESCRIPTION
+
+downloadosm downloads osm tiles.
+
+With the first form a bounding box (x=longitude, y=latitude) has to be
+specified and an output directory for the downloaded tiles.
+
+With the second form existing osm files may be refreshed. The bounding
+box of the osm file is determined from the filename (which includes
+the tile bbox).
+
+Run C<downloadosm --help> for more options.
+
+=head1 AUTHOR
+
+Slaven Rezic
+
+=head1 SEE ALSO
+
+L<osm2bbd>.

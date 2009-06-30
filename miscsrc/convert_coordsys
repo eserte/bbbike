@@ -79,3 +79,29 @@ EOF
 }
 
 __END__
+
+=head1 NAME
+
+convert_coordsys - convert bbd files between coordinate systems
+
+=head1 SYNOPSIS
+
+   convert_coordsys [-addx x] [-addy y] fromcoordsys [tocoordsys] < bbdin > bbdout
+
+=head1 DESCRIPTION
+
+Convert bbd files between coordinate systems. Popular values for
+from/tocoordsys are C<standard> (the old standard BBBike coordinates,
+just meters to north and east), and C<polar> (WGS84 coordinates in DDD
+format).
+
+=head1 AUTHOR
+
+Slaven Rezic
+
+=head1 SEE ALSO
+
+L<Karte>.
+
+=cut
+
