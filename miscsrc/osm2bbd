@@ -88,6 +88,7 @@ usage: $0 [-v] [-f] [-encoding enc] [-center lon,lat] [-map bbbike [-centerdelta
                   supported languages)
 -ignore-unhandled do not create the _unhandled layer
 -ignore-underline do not create any of the "_*" layers
+-experiment ...   Turn on experimental features (may be given multiple times).
 osmfile ...       Files downloaded by downloadosm,
                   or directory containing .osm files
 EOF
@@ -1587,10 +1588,12 @@ sub open_osm {
     my $fh;
     if ($osm_file =~ m{\.gz$}) {
 	if (!eval { require PerlIO::gzip; 1 }) {
-	    die "No support for gzipped osm files, PerlIO::gzip is missing.\n";
+	    open $fh, '-|', 'zcat', $osm_file
+		or die "Can't run zcat on $osm_file: $!";
+	} else {
+	    open $fh, "<:gzip", $osm_file
+		or die "Can't open file $osm_file: $!";
 	}
-	open $fh, "<:gzip", $osm_file
-	    or die "Can't open file $osm_file: $!";
     } elsif ($osm_file =~ m{\.bz2$}) {
 ## See https://rt.cpan.org/Ticket/Display.html?id=42241
 # 	if (!eval { require PerlIO::via::Bzip2; 1 }) {
@@ -1719,7 +1722,7 @@ osm2bbd - convert OpenStreetMap data for BBBike
 
 =head1 SYNOPSIS
 
-    ./downloadosm [options] -o /path/to/output lonmin latmin lonmax latmax
+    ./osm2bbd [options] -o /path/to/output /path/to/osm/files
 
 =head1 HOWTO
 
@@ -1738,7 +1741,11 @@ Berlin, use
     ./miscsrc/downloadosm -o misc/download/osm/berlin 13.010982 52.337651 13.761388 52.675354
 
 With a standard DSL connection, this last about 1:30 hours, totalling
-220 MB of data (as of July 2008, in Januar 2009, it was nearly 400 MB).
+220 MB of data (as of July 2008, in Januar 2009, it was nearly 400
+MB). Note that it's fine to use also larger osm files (i.e. in the
+size of a German state), e.g. the prepared files from
+L<http://download.geofabrik.de>. Gzipped and bzipped osm files are fine,
+but need C<zcat> resp. C<bunzip2> installed.
 
 Now convert the OSM data into a BBBike-readable format. This should
 take 5 minutes or so (Athlon64, i386-freebsd) for the above dataset.
@@ -1801,6 +1808,38 @@ Currently there's only special handling for C<de>: motorways get
 translated from "AI<number>" to "BABI<number>" to for handling with
 BBBike.
 
+=head1 EXPERIMENTS
+
+The C<-experimental> switch turns experimental features on. Currently
+are defined:
+
+=over
+
+=item C<add_postal_code>
+
+Add the postal code (if available) to every street name. This helps in
+cases when street names are ambigous (because the area is large enough
+to cover multiple cities, or if the same street name exists multiple
+times in the same city).
+
+=item C<coastline_hack>
+
+Prepare for better coastline handling. This needs additional support
+from L<osm2bbd-postprocess>. See the C<-only-coastline-hack> and
+C<-coastline-hack-anchor> options there.
+
+=item C<polar_coord_hack>
+
+Turn the polar coordinates hack on. This would create a rewritten
+version of the module L<Karte::Polar>, which is adapted to the central
+latitude of the processed region. This means distance calculation is
+still not perfect, but far better for regions far away from the
+reference latitude of BBBike (which is 52.5°, the latitude of Berlin).
+Currently only the Perl/Tk version has support to use this hack;
+C<bbbike.cgi> currently does not.
+
+=back
+
 =head1 IMPLEMENTATION NOTES
 
 There are two parsing modes, which can be switched by using the
@@ -1822,7 +1861,8 @@ F<radwege_exact>. In the long run, F<radwege> should be completely
 replaced by F<radwege_exact>.
 
 =item * BBBike should be fixed to handle normal WGS84 coordinates for
-everything.
+everything. Currently the best we get is the C<polar_coord_hack>
+mentioned in L</EXPERIMENTS>.
 
 =item * Tunnel mound optimization needed! Problem visible in
 Nord-Süd-Tunnel. Possible implementation: remember the end points with
