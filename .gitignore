@@ -1,7 +1,8 @@
+# ignore all non-Berlin data directories
+/.prove
 /Makefile
 /Makefile.old
 /blib
 /cache/
-/tmp/
-# ignore all non-Berlin data directories
 /data_*
+/tmp/
