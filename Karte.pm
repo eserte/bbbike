@@ -344,5 +344,13 @@ For a list of all possible maps use
 
     keys(%Karte::map)
 
+=head1 AUTHOR
+
+Slaven Rezic
+
+=head1 SEE ALSO
+
+L<convert_coordsys>
+
 =cut
 
