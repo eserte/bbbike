@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgihead2.t,v 1.25 2009/02/02 22:56:29 eserte Exp $
+# $Id: cgihead2.t,v 1.26 2009/06/30 21:03:48 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -131,7 +131,7 @@ sub check_url {
  SKIP: {
 	my $no_tests = 2;
 	skip("No internet available", $no_tests)
-	    if ($resp->code == 500 && $resp->message =~ /Bad hostname|No route to host/i);
+	    if ($resp->code == 500 && $resp->message =~ /No route to host/i); # 'Bad hostname' was part of this regexp, but this mask a real test failure!
 	#warn $resp->content;
 	ok($resp->is_success, "Successful request of $url")
 	    or diag $resp->status_line . " " . $resp->content;
