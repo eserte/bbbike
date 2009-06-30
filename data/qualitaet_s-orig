@@ -2373,7 +2373,8 @@ Wildmeisterdamm: Asphalt	Q0 13534,2204 13462,2186 13176,2106 13104,2143
 Steinträgerweg: Beton	Q0 13023,2093 12987,2220 12971,2297
 Rohrlegerweg: Beton	Q0 12738,2162 12864,2191 12987,2220 13103,2271
 Mondsteinpfad: Gehwegplatten	Q1 11181,1884 11182,1976
-Grünsteinweg: Beton	Q0 10859,2033 10868,2120
+#: correction_by: alex-z (Beton -> Asphalt)
+Grünsteinweg: Asphalt	Q0 10859,2033 10868,2120
 #: correction_of: anonymous (was: "Beton")
 Birnhornweg: guter Asphalt	Q0 9281,1790 9342,1818 9470,1863 9585,1899 9731,1956 9876,2007 10024,2059
 Rätikonweg: Beton	Q0 9671,2145 9731,1956 9805,1711 9821,1692
@@ -2529,7 +2530,7 @@ Voltastr.: Kopfsteinpflaster	Q2 9041,14896 9206,14987 9361,15066 9566,15188
 Zechliner Str.: Asphalt	Q0 16310,14378 16284,14601 16537,14635 16534,14740
 Buschiner Str.: Asphalt	Q0 20160,13287 20263,13271 20364,13255 20482,13241 20600,13232 20746,13209
 Stangeweg: Beton	Q0 21407,16257 21473,16238 21534,16188 21598,16055
-Anemonenstr.: asphaltiert	Q0 23439,4420 23809,4533 23934,4661
+Anemonenstr.: asphaltiert	Q0 23439,4420 23651,4467 23809,4533 23934,4661
 Sella-Hasse-Str.: Asphalt	Q0 20901,16916 20843,16829 20771,16690 20948,16612
 Eisfalterweg: Asphalt	Q0 21518,11051 21640,11107
 #: corrected_by: srt (Asphalt Q0 -> Verbundsteinpflaster Q0-)
@@ -2616,6 +2617,7 @@ Zitadelle: Kopfsteinpflaster	Q2- -2646,14525 -2668,14635 -2704,14748 -2735,14848
 Behnitz: Kopfsteinpflaster	Q2 -2951,14617 -2993,14568 -3014,14559
 ######################################################################
 #: by: anonymous vvv
+Bodmerstr.: Beton	Q0 10258,-1474 10099,-1482
 Natalissteig: guter Asphalt	Q0 1226,14714 1223,14824 1202,14935
 Sangestr.: guter Beton	Q0 3954,20574 4147,20642 4259,20673
 Schlierbacher Weg: mäßiger Beton	Q1- 10734,1178 10685,1159 10450,1202 10453,1242 10440,1283
@@ -8528,6 +8530,11 @@ Treiberpfad: guter Beton	Q0 3896,22307 3810,22231 3766,22165
 #: by: ^^^
 #: by: Stefan Kohte:
 (Mauerweg im Landschaftspark Rudower Höhe): Asphalt	Q0+ 18256,-309 18393,-164 18515,19 18608,232 18709,601 18735,832 18737,1049 18716,1249 18701,1344 18673,1487 18649,1600 18594,1727 18580,2121
+#: by: alex-z:
+Muttlerweg: guter Beton	Q0 10612,2675 10603,2626 10716,2597
+#: by: alex-z:
+#: note: den Rest des Grünsteinwegs siehe oben
+Grünsteinweg: guter Asphalt	Q0 10868,2120 10886,2167 10907,2207 10938,2296
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206
