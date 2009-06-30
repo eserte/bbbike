@@ -7,6 +7,9 @@
 
 use strict;
 
+use FindBin;
+use lib "$FindBin::RealBin/..";
+
 use Cwd qw(realpath);
 use File::Basename qw(dirname);
 
@@ -26,6 +29,6 @@ use_ok 'BBBikeUtil', 'bbbike_root';
 
 my $bbbike_root = bbbike_root();
 ok(-d $bbbike_root, 'Got a bbbike root directory');
-is(realpath(dirname(dirname($0))), $bbbike_root, "Expected value for bbbike root (t is subdirectory)");
+is($bbbike_root, realpath(dirname(dirname(realpath($0)))), "Expected value for bbbike root (t is subdirectory)");
 
 __END__
