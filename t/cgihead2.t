@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgihead2.t,v 1.26 2009/06/30 21:03:48 eserte Exp $
+# $Id: cgihead2.t,v 1.27 2009/06/30 21:03:58 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -30,6 +30,11 @@ BEGIN {
 }
 
 use constant MSDOS_MIME_TYPE => qr{^application/(octet-stream|x-msdos-program|x-msdownload)$};
+
+{
+    use POSIX qw(strftime);
+    use constant TODO_ADFC_ERRORS => "2009-07-31T12:00:00" gt strftime("%FT%T", localtime) && 'Redirects on adfc server do not work';
+}
 
 my @var;
 push @var, (qw(
@@ -86,6 +91,7 @@ $ua->agent('BBBike-Test/1.0');
 $ENV{FTP_PASSIVE} = 1;
 
 for my $url (@compat_urls) {
+    local $TODO = TODO_ADFC_ERRORS;
     check_url($url);
 }
 
