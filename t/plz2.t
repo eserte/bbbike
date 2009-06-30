@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: plz2.t,v 1.2 2003/06/23 22:04:48 eserte Exp $
+# $Id: plz2.t,v 1.3 2009/06/30 21:03:24 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -22,9 +22,9 @@ BEGIN {
     }
 }
 
-BEGIN { plan tests => 5 }
+BEGIN { plan tests => 6 }
 
-my $plz = new PLZ;
+my $plz = PLZ->new;
 
 {
     my $nok = 0;
@@ -84,6 +84,7 @@ my $plz = new PLZ;
     ok(exists $h->{"Dudenstr."});
     ok(!exists $h->{"non-existing street"});
     open(D, $plz->{File}) or die $!;
+    ok(exists $h->{'Heerstr.'});
     seek(D, $h->{"Heerstr."}, 0);
     my $s = <D>;
     ok($s =~ /^Heerstr/);
