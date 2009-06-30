@@ -39,6 +39,7 @@ $PLZ_BASE_FILE = "Berlin.coords.data" if !defined $PLZ_BASE_FILE;
 # XXX use BBBikeUtil::bbbike_root().'/data'!!!
 @plzfile =
   ((map { "$_/$PLZ_BASE_FILE" } @Strassen::datadirs),
+   BBBikeUtil::bbbike_root().'/data/'.$PLZ_BASE_FILE,
    (map { ("$_/$PLZ_BASE_FILE", "$_/data/$PLZ_BASE_FILE") } @INC),
    (map { ("$_/berlinco.dat",
 	   "$_/Berlin.data",        "$_/data/Berlin.data") } @INC),
