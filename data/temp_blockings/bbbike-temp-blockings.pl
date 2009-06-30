@@ -14523,9 +14523,9 @@ EOF
 userdel	q4::inwork 12562,18483 12570,18351 12575,18275
 EOF
      },
-     { from  => undef, # 
-       until => undef, # XXX
-       text  => 'Dammweg Richtung Köpenicker Landstr. gesperrt',
+     { from  => 1246398622, # 2009-06-30 23:50
+       until => 1247695199, # 2009-07-15 23:59
+       text  => 'Dammweg Richtung Köpenicker Landstr. gesperrt (bis Mitte Juli 2009)',
        type  => 'handicap',
        data  => <<EOF,
 #: last_checked: 2009-06-27
@@ -14618,6 +14618,24 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork 57479,-10535 57752,-10566 57882,-10535
+EOF
+     },
+     { from  => 1246399200, # 2009-07-01 00:00
+       until => 1247090399, # 2009-07-08 23:59
+       text  => 'Markgrafenstr. (Mitte) in beiden Richtungen zwischen Jägerstr. und Taubenstr. Veranstaltung, gesperrt. Die Markgrafenstr. ist außerdem zw. Französische Str. und Mohrenstr. vom 02.07.-08.07.09 tägl. 17-01 Uhr gesperrt.',
+       type  => 'gesperrt',
+       source_id => 'IM_013316',
+       data  => <<EOF,
+userdel	2::temp 9636,12126 9651,12020 9663,11927 9672,11833
+EOF
+     },
+     { from  => 1246398785, # 2009-06-30 23:53
+       until => 1247695199, # 2009-07-15 23:59
+       text  => 'Späthstr. (Treptow) Richtung A113 zwischen Königsheideweg und Britzer Allee Baustelle, Fahrtrichtung gesperrt (bis Mitte 07.2009)',
+       type  => 'gesperrt',
+       source_id => 'IM_013302',
+       data  => <<EOF,
+userdel	1::inwork 15382,5687 15183,5480
 EOF
      },
     );

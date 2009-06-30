@@ -1103,15 +1103,7 @@ userdel	q4::inwork 8389,11378 8374,11479
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1246312800,
-         'text' => 'L 014 Kyritz - Wittstock OD Herzsprung grundhafter Straßenausbau Vollsperrung 25.05.2009-29.06.2009 ',
-         'from' => 1243116000,
-         'id' => 1667,
-         'data' => 'userdel	q4::inwork -54338,71670 -54116,72465
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1364,9 +1356,9 @@ userdel	2::inwork 7160,11225 6851,11346
          'type' => 'handicap'
        },
        {
-         'until' => undef,
-         'text' => 'Dammweg Richtung Köpenicker Landstr. gesperrt',
-         'from' => undef,
+         'until' => 1247695199,
+         'text' => 'Dammweg Richtung Köpenicker Landstr. gesperrt (bis Mitte Juli 2009)',
+         'from' => 1246398622,
          'id' => 1714,
          'data' => '#: last_checked: 2009-06-27
 userdel	q4::inwork; 15698,8191 15561,8072
@@ -1471,6 +1463,26 @@ userdel	q4::inwork; 15698,8191 15561,8072
          'data' => 'userdel	q4::inwork 57479,-10535 57752,-10566 57882,-10535
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_013316',
+         'until' => 1247090399,
+         'text' => 'Markgrafenstr. (Mitte) in beiden Richtungen zwischen Jägerstr. und Taubenstr. Veranstaltung, gesperrt. Die Markgrafenstr. ist außerdem zw. Französische Str. und Mohrenstr. vom 02.07.-08.07.09 tägl. 17-01 Uhr gesperrt.',
+         'from' => 1246399200,
+         'id' => 1726,
+         'data' => 'userdel	2::temp 9636,12126 9651,12020 9663,11927 9672,11833
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_013302',
+         'until' => 1247695199,
+         'text' => 'Späthstr. (Treptow) Richtung A113 zwischen Königsheideweg und Britzer Allee Baustelle, Fahrtrichtung gesperrt (bis Mitte 07.2009)',
+         'from' => 1246398785,
+         'id' => 1727,
+         'data' => 'userdel	1::inwork 15382,5687 15183,5480
+',
+         'type' => 'gesperrt'
        }
      
 );
