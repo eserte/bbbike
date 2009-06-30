@@ -50,10 +50,20 @@ use constant CAKE => atan2(1,1)/2;
      'ne' => 'se',
      'sw' => 'nw',
      'nw' => 'sw',
-     'se' => 'ne');
+     'se' => 'ne',
+     'nne' => 'sse',
+     'ene' => 'ese',
+     'ese' => 'ene',
+     'sse' => 'nne',
+     'ssw' => 'nnw',
+     'wsw' => 'wnw',
+     'wnw' => 'wsw',
+     'nnw' => 'ssw',
+    );
 sub opposite_direction { $opposite{$_[0]} }
 
 # to translate between y-up and y-down coordinate systems
+# XXX what's the difference between %opposite and %canvas_translation --- seems to be the same!
 %canvas_translation =
     ('n' => 's',
      'e' => 'e',
@@ -62,20 +72,37 @@ sub opposite_direction { $opposite{$_[0]} }
      'ne' => 'se',
      'sw' => 'nw',
      'nw' => 'sw',
-     'se' => 'ne');
+     'se' => 'ne',
+     'nne' => 'sse',
+     'ene' => 'ese',
+     'ese' => 'ene',
+     'sse' => 'nne',
+     'ssw' => 'nnw',
+     'wsw' => 'wnw',
+     'wnw' => 'wsw',
+     'nnw' => 'ssw',
+    );
 sub canvas_translation { $canvas_translation{$_[0]} }
 
 sub init_wind {
-    #        Windrichtung  y   x
-    %wind_dir = ('n'  => [ 1,  0],
-		 'ne' => [ 1,  1],
-		 'e'  => [ 0,  1],
-		 'se' => [-1,  1],
-		 's'  => [-1,  0],
-		 'sw' => [-1, -1],
-		 'w'  => [ 0, -1],
-		 'nw' => [ 1, -1],
-		 ''   => [ 0,  0],
+    #        Windrichtung   y     x
+    %wind_dir = ('n'   => [ 1,    0],
+		 'nne' => [ 1,    0.5],
+		 'ne'  => [ 1,    1],
+		 'ene' => [ 0.5,  1],
+		 'e'   => [ 0,    1],
+		 'ese' => [-0.5,  1],
+		 'se'  => [-1,    1],
+		 'sse' => [-1,    0.5],
+		 's'   => [-1,    0],
+		 'ssw' => [-1,   -0.5],
+		 'sw'  => [-1,   -1],
+		 'wsw' => [-0.5, -1],
+		 'w'   => [ 0,   -1],
+		 'wnw' => [ 0.5  -1],
+		 'nw'  => [ 1,   -1],
+		 'nnw' => [ 1,   -0.5],
+		 ''    => [ 0,    0],
 		);
 }
 
@@ -165,14 +192,22 @@ sub line_to_canvas_direction {
 sub localize_direction {
     my($dir, $lang) = @_;
     if ($lang eq 'de') {
-	$dir = { "N" => "Norden",
-		 "NE" => "Nordosten",
-		 "NW" => "Nordwesten",
-		 "E" => "Osten",
-		 "S" => "Süden",
-		 "SE" => "Südosten",
-		 "SW" => "Südwesten",
-		 "W" => "Westen",
+	$dir = { 'N'   => 'Norden',
+		 'NNE' => 'Nordnordosten',
+		 'NE'  => 'Nordosten',
+		 'ENE' => 'Ostnordosten',
+		 'E'   => 'Osten',
+		 'ESE' => 'Ostsüdosten',
+		 'SE'  => 'Südosten',
+		 'SSE' => 'Südsüdosten',
+		 'S'   => 'Süden',
+		 'SSW' => 'Südsüdwesten',
+		 'SW'  => 'Südwesten',
+		 'WSW' => 'Westsüdwesten',
+		 'W'   => 'Westen',
+		 'WNW' => 'Westnordwesten',
+		 'NW'  => 'Nordwesten',
+		 'NNW' => 'Nordnordwesten',
 	       }->{uc($dir)};
     }
     $dir;
