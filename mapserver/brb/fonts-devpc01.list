@@ -1,6 +1,8 @@
 # This font does not have a unicode arrow:
 #lucida	/usr/X11R6/lib/X11/fonts/TTF/luxisr.ttf
 # This has:
-lucida	/usr/java/jdk1.3.1_09/jre/lib/fonts/LucidaSansRegular.ttf
+#lucida	/usr/java/jdk1.3.1_09/jre/lib/fonts/LucidaSansRegular.ttf
+lucida /usr/lib/jvm/java-1.5.0-sun-1.5.0.16/jre/lib/fonts/LucidaSansRegular.ttf
 #street	/usr/X11R6/lib/X11/fonts/oo/hecl____.pfb
-street	/usr/X11R6/lib/X11/fonts/TTF/luxisr.ttf
+#street	/usr/X11R6/lib/X11/fonts/TTF/luxisr.ttf
+street /usr/share/fonts/truetype/ttf-xfree86-nonfree/luxisr.ttf
