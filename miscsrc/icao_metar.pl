@@ -160,19 +160,36 @@ sub format_wettermeldung {
     $l[4]++;
     $l[5]+=1900;
 
+    my $wind_max = '';
+    if (defined $m->WIND_GUST_KTS && $m->WIND_GUST_KTS ne '') {
+	$wind_max = sprintf "%.1f", kts_to_ms($m->WIND_GUST_KTS);
+    } elsif (defined $m->WIND_GUST_MPH && $m->WIND_GUST_KTS ne '') {
+	$wind_max = sprintf "%.1f", mph_to_ms($m->WIND_GUST_MPH);
+    }
+
+    my $wind_avg = '';
+    if (defined $m->WIND_KTS && $m->WIND_KTS ne '') {
+	$wind_avg = sprintf "%.1f", kts_to_ms($m->WIND_KTS);
+    } elsif (defined $m->WIND_MPH && $m->WIND_MPH ne '') {
+	$wind_avg = sprintf "%.1f", mph_to_ms($m->WIND_MPH);
+    }
+
     join('|',
 	 $l[3].".".$l[4].".".$l[5],
 	 $l[2].".".$l[1],
 	 $m->TEMP_C+0,
 	 $m->ALT_HP+0,
 	 $m->WIND_DIR_ABB,
-	 sprintf("%.1f", $m->WIND_MS), # XXX is this max or avg?
+	 $wind_max,
 	 "", # XXX humidity is missing, calculate from dew point?
-	 "", # XXX wind avg?
+	 $wind_avg,
 	 "", # XXX precipitation HOURLY_PRECIP?
 	 join(", ", @{$m->WEATHER}, @{$m->SKY}),
 	);
 }
+
+sub kts_to_ms { $_[0] / 1.852    / 3.6 }
+sub mph_to_ms { $_[0] / 1.609344 / 3.6 }
 
 __END__
 
