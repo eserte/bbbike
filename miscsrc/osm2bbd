@@ -354,7 +354,7 @@ if ($map) {
 	} else {
 	    my($min_lat, $max_lat);
 	    # XXX taken from BBBikeOsmUtil.pm
-	    my $osm_download_file_qr = qr{/download_(\d+\.\d+),(\d+\.\d+),(\d+\.\d+),(\d+\.\d+)\.osm(?:\.gz|\.bz2)?$}; # XXX no support for south and west
+	    my $osm_download_file_qr = qr{/download_(-?\d+\.\d+),(-?\d+\.\d+),(-?\d+\.\d+),(-?\d+\.\d+)\.osm(?:\.gz|\.bz2)?$};
 	    # XXX it would be better to read the bboxes of all XML files
 	    for my $osm_file (@osm_files) {
 		if ($osm_file =~ $osm_download_file_qr) {

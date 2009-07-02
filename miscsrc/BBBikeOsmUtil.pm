@@ -31,7 +31,7 @@ use VectorUtil qw(enclosed_rectangle intersect_rectangles normalize_rectangle);
 use vars qw($UNINTERESTING_TAGS);
 $UNINTERESTING_TAGS = qr{^(name|created_by|source|url)$};
 
-my $osm_download_file_qr = qr{/download_(\d+\.\d+),(\d+\.\d+),(\d+\.\d+),(\d+\.\d+)\.osm(?:\.gz|\.bz2)?$}; # XXX no support for south and west
+my $osm_download_file_qr = qr{/download_(-?\d+\.\d+),(-?\d+\.\d+),(-?\d+\.\d+),(-?\d+\.\d+)\.osm(?:\.gz|\.bz2)?$};
 
 use vars qw($OSM_API_URL $OSM_FALLBACK_API_URL);
 #$OSM_API_URL = "http://www.openstreetmap.org/api/0.5";
