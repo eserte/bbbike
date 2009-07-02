@@ -611,15 +611,7 @@ userdel	2::temp 9915,12417 9926,12368
        undef,
        undef,
        undef,
-       {
-         'until' => 1246399200,
-         'text' => 'B 273 A 11 - Wandlitz zw. Abzw. Bernau und Wandlitz Rückau u. Erneuerung B273 Vollsperrung 18.08.2008-30.06.2009 ',
-         'from' => 1218924000,
-         'id' => 1446,
-         'data' => 'userdel	2::inwork 16953,35907 16647,36127 16132,36512 15491,37176 15385,37268 15253,37443 14909,37400 14477,37252 13556,37493
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -793,8 +785,8 @@ userdel	1::inwork 10614,19907 10742,19632
          'text' => 'Reichenberger Str., Einbahnstraße Richtung Kottbusser Tor',
          'from' => undef,
          'id' => 1563,
-         'data' => '#: last_checked: 2009-05-26
-#: check_frequency: 7d
+         'data' => '#: last_checked: 2009-07-01
+#: check_frequency: 14d
 userdel	1::inwork 12229,10014 12398,9938 12556,9862
 ',
          'type' => 'gesperrt'
@@ -852,15 +844,7 @@ userdel	1::inwork 12229,10014 12398,9938 12556,9862
        undef,
        undef,
        undef,
-       {
-         'until' => 1246399200,
-         'text' => 'L 015 Fürstenberg - Menz zw. Fürstenberg und Abzw. Altglobsow Straßenbau Vollsperrung 09.03.2009-30.06.2009 ',
-         'from' => 1236466800,
-         'id' => 1584,
-         'data' => 'userdel	2::inwork -9850,84800 -10085,84390 -10054,84256 -10109,84134 -10281,83899 -10516,83471 -11849,81547
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
