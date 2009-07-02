@@ -155,3 +155,15 @@ dalmatia-test-osm2bbd-postprocess1:
 
 dalmatia-test-osm2bbd-postprocess2:
 	${MISCSRCDIR}/osm2bbd-postprocess /tmp/data_dalmatien -dataset-title Dalmatia
+
+######################################################################
+# Testing for berlin
+berlin-test:	berlin-test-osm2bbd \
+		berlin-test-osm2bbd-postprocess2
+
+berlin-test-osm2bbd:
+	${MISCSRCDIR}/osm2bbd -map bbbike -country de -o /tmp/data_berlin download/osm/berlin -f \
+	    -experiment polar_coord_hack
+
+berlin-test-osm2bbd-postprocess2:
+	${MISCSRCDIR}/osm2bbd-postprocess /tmp/data_berlin
