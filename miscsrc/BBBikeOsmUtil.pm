@@ -184,9 +184,10 @@ sub osm_files_in_grid {
     my($x0,$y0,$x1,$y1) = @_;
 
     my $osm_download_dir = dirname(dirname(realpath(__FILE__))) . "/misc/download/osm";
-    my @osm_files = bsd_glob("$osm_download_dir/*/download_*.osm*");
+    my $berlin_dir = "$osm_download_dir/berlin";
+    my @osm_files = bsd_glob("$berlin_dir/download_*.osm*");
     if (!@osm_files) {
-	die "No osm tiles in $osm_download_dir found. Did you run downloadosm?\n";
+	die "No osm tiles in $berlin_dir found. Did you run downloadosm?\n";
     }
 
     my @res_files;
