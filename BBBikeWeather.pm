@@ -318,14 +318,14 @@ EOF
 sub BBBikeWeather::parse_wetterline {
     my($wetterline, $source) = @_;
     my $fullwetter = $wetter_full{$source};
-    my $wind_is_in_m_s = $fullwetter || $source eq 'wetterkarte';
+    my $wind_is_in_m_s = $fullwetter || $source eq 'wetterkarte' || $source =~ m{^metar};
     my(@wetterline) = split(/\|/, $wetterline);
     $wetterline[$wettermeldung2::FIELD_WIND_DIR] = lc($wetterline[$wettermeldung2::FIELD_WIND_DIR]);
     if (!exists $BBBikeCalc::wind_dir{$wetterline[$wettermeldung2::FIELD_WIND_DIR]}) {
 	$wind = 0;
 	die "Can't parse wind direction ($wetterline[$wettermeldung2::FIELD_WIND_DIR]) from " . join("|", @wetterline);
     }
-    if ($wetterline[$wettermeldung2::FIELD_WIND_MAX] !~ /^[\d\.]+$/) {
+    if ($source !~ m{^metar}i && $wetterline[$wettermeldung2::FIELD_WIND_MAX] !~ /^[\d\.]+$/) {
 	$wind = 0;
 	die "Can't parse max wind speed ($wetterline[$wettermeldung2::FIELD_WIND_MAX]) from " . join("|", @wetterline);
     }
@@ -363,8 +363,8 @@ sub BBBikeWeather::analyze_wind {
     }
     $act_value{Windlabel} = M("Wind")." ".($winddate ne "" ? "($winddate)" : "");
     $act_value{Wind} = "\U$winddir\E,  $wind_v m/s";
-    if (defined $wind_v_max) {
-	$act_value{Wind} .= " ($wind_v_max m/s)";
+    if (defined $wind_v_max && $wind_v_max ne '') {
+	$act_value{Wind} .= " (max: $wind_v_max m/s)";
     }
     $wind = 1;
 }
