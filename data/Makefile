@@ -147,14 +147,14 @@ slow-checks:	check-categories \
 		check-coords.data \
 		persistent-tmp
 
-persistent-tmp:	${PERSISTENTTMPDIR}/projektierte_radstreifen.bbd \
-		${PERSISTENTTMPDIR}/.check_fragezeichen-outdoor-nextcheck.bbd \
+persistent-tmp:	${PERSISTENTTMPDIR}/.check_fragezeichen-outdoor-nextcheck.bbd \
 		${PERSISTENTTMPDIR}/fragezeichen-outdoor-nextcheck.bbd \
 		${PERSISTENTTMPDIR}/.check_fragezeichen-indoor-nextcheck.bbd \
 		${PERSISTENTTMPDIR}/fragezeichen-indoor-nextcheck.bbd \
 		${PERSISTENTTMPDIR}/.check_fragezeichen-nextcheck.bbd \
 		${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd \
 		${PERSISTENTTMPDIR}/strassen_in_planung.bbd \
+		${PERSISTENTTMPDIR}/projektierte_radstreifen.bbd \
 		${PERSISTENTTMPDIR}/all-upload-fragezeichen.wpt \
 		${PERSISTENTTMPDIR}/my-upload-fragezeichen.wpt \
 		${PERSISTENTTMPDIR}/Berlin.coords.bbd \
