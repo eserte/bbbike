@@ -39,10 +39,19 @@ $OSM_API_URL = "http://www.openstreetmap.org/api/0.6";
 $OSM_FALLBACK_API_URL = "http://www.informationfreeway.org/api/0.6";
 
 use vars qw($MAPNIKPLUS_MAS $ALLICONS_QRC $USE_MERKAARTOR_ICONS %ICON_NAME_TO_PHOTO);
-# XXX only for FreeBSD
-$MAPNIKPLUS_MAS = "/usr/ports/astro/merkaartor/work/merkaartor-0.13.2/Styles/MapnikPlus.mas";
-$ALLICONS_QRC = "/usr/ports/astro/merkaartor/work/merkaartor-0.13.2/Icons/AllIcons.qrc";
-$USE_MERKAARTOR_ICONS = -r $MAPNIKPLUS_MAS && -r $ALLICONS_QRC;
+for my $merkaartor_work_dir ("$ENV{HOME}/work/merkaartor", # use 'svn co http://svn.openstreetmap.org/applications/editors/merkaartor/' in ~/work
+			     "$ENV{HOME}/work2/merkaartor",
+			     "/usr/ports/astro/merkaartor/work/merkaartor-0.13.2", # for FreeBSD port
+			    ) {
+    my $candidate_MAPNIKPLUS_MAS = "$merkaartor_work_dir/Styles/MapnikPlus.mas";
+    my $candidate_ALLICONS_QRC   = "$merkaartor_work_dir/Icons/AllIcons.qrc";
+    if (-r $candidate_MAPNIKPLUS_MAS && -r $candidate_ALLICONS_QRC) {
+	$MAPNIKPLUS_MAS = $candidate_MAPNIKPLUS_MAS;
+	$ALLICONS_QRC   = $candidate_ALLICONS_QRC;
+	$USE_MERKAARTOR_ICONS = 1;
+	last;
+    }
+}
 
 sub register {
     _create_images();
