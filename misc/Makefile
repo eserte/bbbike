@@ -140,6 +140,21 @@ data_berlin_osm_bbbike_untiled:
 	${MISCSRCDIR}/osm2bbd-postprocess ../data_berlin_osm_bbbike
 
 ######################################################################
+# Various downloads
+
+download-tiled-uckermark:
+	cd download/osm && mkdir -p uckermark && cd uckermark && \
+	    ${MISCSRCDIR}/downloadosm 13.19 53.47 14.48 52.94 -o .
+
+download-tiled-usedom:
+	cd download/osm && mkdir -p usedom && cd usedom && \
+	    ${MISCSRCDIR}/downloadosm 13.67 54.18 14.43 53.72 -o .
+
+download-tiled-potsdam:
+	cd download/osm && mkdir -p potsdam && cd potsdam && \
+	    ${MISCSRCDIR}/downloadosm 12.91 52.50 13.19 52.32 -o .
+
+######################################################################
 # Testing for dalmatia
 dalmatia-test:	dalmatia-test-osm2bbd \
 		dalmatia-test-osm2bbd-postprocess1 \
