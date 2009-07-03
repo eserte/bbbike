@@ -11,9 +11,6 @@
 # WWW:  http://www.rezic.de/eserte/
 #
 
-# XXX TODO UNFINISHED!
-# TODO: parse selector
-
 package MerkaartorMas;
 
 use strict;
@@ -24,6 +21,8 @@ use Cwd qw(realpath);
 use QtQrc;
 use XML::LibXML;
 
+# XXX Can only do simple attribute matches. In the future, the full
+# selector expression will be supported.
 sub parse_icons_from_mas {
     my($mas_file, $qrc_file) = @_;
 
@@ -32,6 +31,8 @@ sub parse_icons_from_mas {
     my $p = XML::LibXML->new;
     my $doc = $p->parse_file($mas_file);
     my $root = $doc->documentElement;
+
+    my %match_to_icon;
 
     for my $painter_node ($root->findnodes('/mapStyle/painter[@icon]')) {
 	my $icon = $painter_node->getAttribute('icon');
@@ -43,8 +44,28 @@ sub parse_icons_from_mas {
 	    warn "Cannot find file for resource icon '$res_icon', skipping...\n";
 	    next;
 	}
-	warn $res_icon . ' -> ' . $res2file->{$res_icon} . "\n";
+	my $selector_expr = $painter_node->findvalue('./selector/@expr');
+	if (!$selector_expr) {
+	    warn "No selector expression, skipping...\n";
+	}
+	my($match_attr, @match_vals);
+	if      ($selector_expr =~ m{^\[(.*?)\]\s+is\s+(\S+)$}) {
+	    $match_attr = $1;
+	    @match_vals = $2;
+	} elsif ($selector_expr =~ m{^\[(.*?)\]\s+isoneof\s+\(\s*(.*?)\s*\)$}) {
+	    $match_attr = $1;
+	    @match_vals = split /\s*,\s*/, $2;
+	} else {
+	    warn "NYI: selector expression '$selector_expr', skipping...\n";
+	    next;
+	}
+
+	for my $val (@match_vals) {
+	    $match_to_icon{"$match_attr:$val"} = $res2file->{$res_icon};
+	}
     }
+
+    \%match_to_icon;
 }
 
 1;

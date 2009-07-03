@@ -38,6 +38,12 @@ use vars qw($OSM_API_URL $OSM_FALLBACK_API_URL);
 $OSM_API_URL = "http://www.openstreetmap.org/api/0.6";
 $OSM_FALLBACK_API_URL = "http://www.informationfreeway.org/api/0.6";
 
+use vars qw($MAPNIKPLUS_MAS $ALLICONS_QRC $USE_MERKAARTOR_ICONS %ICON_NAME_TO_PHOTO);
+# XXX only for FreeBSD
+$MAPNIKPLUS_MAS = "/usr/ports/astro/merkaartor/work/merkaartor-0.13.2/Styles/MapnikPlus.mas";
+$ALLICONS_QRC = "/usr/ports/astro/merkaartor/work/merkaartor-0.13.2/Icons/AllIcons.qrc";
+$USE_MERKAARTOR_ICONS = -r $MAPNIKPLUS_MAS && -r $ALLICONS_QRC;
+
 sub register {
     _create_images();
 }
@@ -263,6 +269,12 @@ sub plot_osm_files {
 	Hooks::get_hooks("after_new_layer")->execute;
     }
 
+    my $node_attr_to_icon = {};
+    if ($USE_MERKAARTOR_ICONS) {
+	require MerkaartorMas;
+	$node_attr_to_icon = MerkaartorMas::parse_icons_from_mas($MAPNIKPLUS_MAS, $ALLICONS_QRC);
+    }
+
     my %node2ll;
     for my $osm_file (@$osm_files) {
 	my $root = XML::LibXML->new->parse_file($osm_file)->documentElement;
@@ -287,12 +299,37 @@ sub plot_osm_files {
 					      "timestamp=" . $node->getAttribute("timestamp"),
 					      (map { "$_=$tag{$_}" } keys %tag)
 					     );
-		$c->createLine($cx,$cy,$cx,$cy,
-			       -fill => '#800000',
-			       -width => 4,
-			       -capstyle => $main::capstyle_round,
-			       -tags => [$osm_layer, $tag{name}||$tag{amenity}, $uninteresting_tags, 'osm', 'osm-node-' . $id],
-			      );
+		my $photo;
+		if ($USE_MERKAARTOR_ICONS) {
+		    my $photo_file;
+		    for my $tag_key (keys %tag) {
+			my $match_key = $tag_key . ':' . $tag{$tag_key};
+			if (exists $node_attr_to_icon->{$match_key}) {
+			    $photo_file = $node_attr_to_icon->{$match_key};
+			    last;
+			}
+		    }
+		    if ($photo_file) {
+			if (!exists $ICON_NAME_TO_PHOTO{$photo_file}) {
+			    $ICON_NAME_TO_PHOTO{$photo_file} = main::load_photo($main::top, $photo_file);
+			}
+			$photo = $ICON_NAME_TO_PHOTO{$photo_file};
+		    }
+		}
+		my @tags = ($osm_layer, $tag{name}||$tag{amenity}, $uninteresting_tags, 'osm', 'osm-node-' . $id);
+		if ($photo) {
+		    $c->createImage($cx,$cy,
+				    -image => $photo,
+				    -tags => [@tags],
+				   );
+		} else {
+		    $c->createLine($cx,$cy,$cx,$cy,
+				   -fill => '#800000',
+				   -width => 4,
+				   -capstyle => $main::capstyle_round,
+				   -tags => [@tags],
+				  );
+		}
 	    }
 	}
     }
