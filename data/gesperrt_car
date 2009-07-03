@@ -798,7 +798,7 @@ Am Berlin Museum -> Lindenstr.: Betonblöcke (aber für Radfahrer passierbar)	3::i
 Lindenstr. -> Am Berlin Museum: Betonblöcke (aber für Radfahrer passierbar)	3::igndisp 9935,11067 9829,10830 10025,10755
 Treptower Str.	1 13376,7970 13459,8072
 Alte Schönhauser Str.	1 10718,13625 10746,13673
-Knoten Märkische Allee	1 19979,11774 20026,11759 20115,11730
+Knoten Märkische Allee	1 19979,11774 20025,11747 20114,11719
 Hugo-Heimann-Str.	1 14120,1991 14165,2106 14229,2177 14453,2087 14587,2032
 Albulaweg	1 10541,1889 10486,1908
 Kätchenweg	2 -7020,-1275 -6975,-1250
@@ -810,6 +810,8 @@ An der Wuhlheide -> Verl. Rathenaustr.: Mittelstreifen	3::igndisp 19245,6379 192
 Kiautschoustr.	1 7020,14897 7199,14978
 Rochstr.: Barriere	3 10418,12922 10535,13006 10571,13034
 Rochstr.: Barriere	3 10571,13034 10535,13006 10418,12922
+Mittelstreifen	3nocross::ignrte 7936,12906 7948,12918 8039,13009
+Ella-Trebe-Str. -> Rahel-Hirsch-Str.: Mittelstreifen	3::igndisp 7941,13014 7948,12918 8039,13009
 verboten	3nocross::ignrte -12666,-1311 -12549,-1277 -12552,-1233
 Französische Str. -> Joliot-Curie-Str.: verboten	3::igndisp -12552,-1233 -12549,-1277 -12542,-1305
 Französische Str. -> Am Kanal: verboten	3::igndisp -12552,-1233 -12549,-1277 -12317,-1212

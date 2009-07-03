@@ -1049,7 +1049,7 @@ userdel	2::temp -8087,-1453 -8151,-1470 -8306,-1454
          'text' => 'Varian-Fry-Str.: Baustelle, Fahrbahn gesperrt',
          'from' => undef,
          'id' => 1657,
-         'data' => '#: last_checked: 2009-05-16
+         'data' => '#: last_checked: 2009-07-02 by rjoop
 userdel	q4::inwork 8389,11378 8374,11479
 ',
          'type' => 'handicap'
@@ -1185,16 +1185,7 @@ userdel	q4::inwork 9126,12413 9345,12443
          'type' => 'handicap'
        },
        undef,
-       {
-         'source_id' => 'IM_012890',
-         'until' => 1246485599,
-         'text' => 'Bahnhofstr. (Pankow) in beiden Richtungen zwischen Mönchmühler Str. und Bahnübergang Baustelle, Straße vollständig gesperrt (bis Anfang 07.2009)',
-         'from' => 1244065266,
-         'id' => 1688,
-         'data' => 'userdel	q4::inwork 8626,23432 8803,23478 8909,23506
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'IM_009958',
          'until' => 1249077599,
@@ -1250,16 +1241,7 @@ userdel	q4::inwork 9126,12413 9345,12443
        },
        undef,
        undef,
-       {
-         'source_id' => 'IM_013029',
-         'until' => 1246485599,
-         'text' => 'Damerowstr. / Breite Str. (Pankow) Richtung Schönholzer Str. nach Mendelstr. Baustelle, Fahrtrichtung gesperrt (bis Anfang 07.2009)',
-         'from' => 1246207038,
-         'id' => 1703,
-         'data' => 'userdel	q4::inwork; 11357,18598 11204,18545 11025,18531
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1272664800,
          'text' => 'K 6422 Eggersdorfer Str. OL Petershagen, zw. Gravenhainstr. u. Johannesstr. Straßenausbau Vollsperrung 15.06.2009-30.04.2010 ',

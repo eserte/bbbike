@@ -557,7 +557,7 @@ Rigaer Str.: Kopfsteinpflaster	Q2 14133,12482 14266,12446 14451,12396 14538,1237
 Thaerstr.: Kopfsteinpflaster	Q2 13761,12690 13844,12900
 Diesterwegstr.: Kopfsteinpflaster	Q2 12078,15160 11968,14950 11879,14771
 Straﬂmannstr.: Kopfsteinpflaster	Q2 13537,13003 13756,13103
-Niederkirchnerstr.: Kopfsteinpflaster	Q2 8739,11228 9162,11286
+Niederkirchnerstr.: Kopfsteinpflaster	Q2 8720,11226 9162,11286
 Johanniterstr.: Asphalt	Q0 9837,10117 9914,10101
 Johanniterstr.: Kopfsteinpflaster	Q2 9914,10101 10066,10071 10251,9979
 Wilmsstr.: Kopfsteinpflaster	Q2 10251,9979 10424,9958
@@ -619,7 +619,7 @@ Hochspannungsweg: fester feiner Kies bzw. Verbundsteine	Q1 12648,2494 12390,2379
 Hochspannungsweg: Asphalt	Q0 11747,2091 11626,2037 11373,1925 11343,1937
 Alt-Lichtenrade: gutes Kopfsteinpflaster	Q1 11162,-1273 11162,-1336 11068,-1574 11043,-1653 11081,-1939 11119,-1992
 Pasinger Str.: Kopfsteinpflaster	Q2 12052,-2250 12073,-2296 11996,-2476 11909,-2531 11760,-2575 11523,-2617 11360,-2648
-Weg am Tempodrom: Parkweg	Q1 8939,10657 8854,10712 8790,10706 8722,10783
+Weg am Tempodrom: Parkweg	Q1 8939,10657 8854,10712 8798,10678 8738,10704 8700,10766
 Zum Hundsteinweg: fester Sandweg	Q1 10661,2790 10775,2765
 Tauernallee - Wildspitzweg: fester Sandweg	Q1 10716,2597 10775,2765 10864,3157
 Sangerhauser Weg: Verbundsteine	Q1 10748,2412 10933,2606 10934,2670 11025,2766 11190,2930
@@ -763,7 +763,7 @@ Kleine Lindenstr.: holpriger Fahrweg	Q2 21531,-1140 21459,-1086 21306,-975
 Hundsfelder Str.: Kopfsteinpflaster, OK	Q1 21306,-975 21393,-871
 Hundsfelder Str.: enger Pfad	Q3 21393,-871 21681,-589 21889,-310
 Parchwitzer Str.: teilweise Kopfsteinpflaster auf der Fahrbahn	Q2 21497,-955 21393,-871 21291,-767
-Wulkower Str.: holpriger Fahrweg	Q2 21009,10135 21015,10284 21017,10423 21021,10583 21026,10833 21031,11042
+Wulkower Str.: holpriger Fahrweg	Q2 21009,10135 21015,10284 21017,10423 21021,10583 21025,10815 21032,11033
 Dornacher Str.: holpriger Fahrweg	Q2 20947,10137 20947,9999
 Dornacher Str.: Asphalt	Q0 20947,9999 20948,9847
 Buchenhainer Str.: holpriger Fahrweg	Q2 21164,8243 21329,8222
@@ -933,7 +933,7 @@ Im Fischtal: Kopfsteinpflaster, OK	Q1 798,4766 723,4572
 Ihnestr.: m‰ﬂiges Kopfsteinpflaster	Q2 1861,4564 1817,4462 1761,4255 1740,4176 1691,3990 1664,3907
 Spilstr.: Kopfsteinpflaster, OK	Q1 3836,6550 3826,6656 3865,6758
 (zur Weiﬂenhˆher Str.): Feldweg	Q2 19726,11743 19750,11730 19827,11686 19881,11591
-Biesdorfer Friedhofsweg: Kopfsteinpflaster, Ausweichen auf Gehweg mˆglich	Q2 21313,11531 21514,11796
+Biesdorfer Friedhofsweg: Kopfsteinpflaster, Ausweichen auf Gehweg mˆglich	Q2 21311,11528 21514,11796
 (an der U-Bahn): Schotterweg, meist OK	Q2 21514,11796 21775,11989 21914,12019
 Walsheimer Str.: Kopfsteinpflaster, teils m‰ﬂig, teils OK	Q2 21352,11701 21550,11939
 Zum Forsthaus: Schotterweg, OK	Q1 21765,13069 21812,13235
@@ -1605,8 +1605,8 @@ Goltzstr.: schlechtes Kopfsteinpflaster	Q3 10642,-2371 10563,-2432 10447,-2518 1
 Beethovenstr.: kleinteiliges Kopfsteinpflaster, uneben	Q2 10155,-2739 10219,-2895 10272,-3027 10323,-3150
 Marie-Curie-Str.: Asphalt	Q0 16735,10668 16864,10932 16967,11162 17070,11375 17208,11658
 Debenzer Str.: Asphalt	Q0 20143,10731 20426,10854 20578,10949
-Wilhelmsbr¸cker Str.: Asphalt	Q0 20519,11152 20370,11168
-Brachfelder Str.: Asphalt	Q0 20370,11168 20356,11020 20426,10854
+Wilhelmsbr¸cker Str.: Asphalt	Q0 20510,11162 20370,11168
+Brachfelder Str.: Asphalt	Q0 20370,11168 20365,11025 20364,10970 20426,10854
 Gladauer Weg: Asphalt	Q0 20351,11473 20346,11337 20342,11250 20370,11168
 Langer Weg: fester Sand, 20 km/h und mehr mˆglich	Q2 20682,9842 20690,9546
 Langer Weg: Schotter, 20 km/h und mehr mˆglich	Q2 20690,9546 20686,9297 20681,8963 20676,8685
@@ -2320,8 +2320,8 @@ Hinter der Post: unbefestigte Straﬂe	Q2 20542,11941 20532,11830
 Beethovenstr. (Biesdorf): unbefestigte Straﬂe	Q2 19971,11872 20005,11872
 Beethovenstr. (Biesdorf): Asphalt	Q0 20005,11872 20169,11852 20383,11837
 Beethovenstr. (Biesdorf): schlechter Asphalt	Q2 20448,11839 20532,11830 20587,11824
-Braunsdorfstr.: Asphalt	Q0 20383,11922 20383,11837 20368,11711
-Mozartstr. (Biesdorf): Asphalt	Q0 20160,11727 20169,11852 20173,11971 20180,12064
+Braunsdorfstr.: Asphalt	Q0 20383,11922 20383,11837 20375,11694
+Mozartstr. (Biesdorf): Asphalt	Q0 20161,11715 20169,11852 20173,11971 20180,12064
 Waldbacher Weg: Asphalt	Q0 19661,11746 19631,11899 19642,11998 19706,12086 19909,12097 20026,12088
 Waldbacher Weg: Wechsel zwischen Asphalt und unbefestigten Abschnitten	Q1 20026,12088 20180,12064 20302,12056
 Haydnstr. (Biesdorf): Asphalt	Q0 19995,11795 20005,11872 20016,11980 20026,12088
@@ -2428,6 +2428,7 @@ Altkanzlerstr.: Verbundsteinpflaster	Q1 -151,4228 -222,4300 -274,4346
 Dora-Benjamin-Park: Verbundsteinpflaster, "Moabiter Kissen"	Q1 14705,10149 14621,10062 14599,10039
 Dora-Benjamin-Park: Verbundsteinpflaster, "Moabiter Kissen"	Q1 14621,10062 14702,10020 14788,9976
 Dora-Benjamin-Park: Verbundsteinpflaster, "Moabiter Kissen"	Q1 14747,10108 14702,10020
+Dora-Benjamin-Park: Verbundsteinpflaster	Q1 14788,9976 14817,10031
 Balatonstr.: m‰ﬂiger Beton	Q1- 17475,10442 17741,10386 17915,10350 17946,10344
 (Balatonstr. - Sewanstr.): Beton	Q1 17741,10386 17705,10232 17624,10249 17605,10199
 Rienzistr.: Kopfsteinpflaster	Q2 17898,9564 18121,9488
@@ -3533,8 +3534,8 @@ Am Eichgarten: gut befahrbar	Q0 6224,4307 6144,4315 6006,4327
 Seecktstr.: Asphalt	Q0 -4299,13304 -4017,13167
 #: by: Reinhard Schinkel: vvv
 # alle Straﬂen in der Gegend sind asphaltiert
-Budsiner Str.: asphaltiert	Q0 19790,11445 20126,11356
-Schlochauer Str.: asphaltiert	Q0 19778,11260 19790,11445 19810,11585 19881,11591
+Budsiner Str.: asphaltiert	Q0 19805,11441 20140,11343
+Schlochauer Str.: asphaltiert	Q0 19789,11151 19805,11441 19810,11585 19881,11591
 #: by: ^^^
 #: by: Dieter Wolf: vvv
 Arnold-Zweig-Str.: Asphalt	Q0 11870,17522 11729,17499 11604,17478 11492,17460 11243,17421 11100,17396
@@ -6638,7 +6639,7 @@ Marie-Vˆgtlin-Weg: Asphalt	Q0 3560,2462 3553,2280 3551,2212
 #: by: Barbara Praetorius:
 Bruno-Walter-Str.: Asphalt	Q0 5510,2883 5604,2832 5794,3039 5853,3050
 #: by: Sabine (myps...):
-Am Weidenbruch: loser Sandweg	Q3 20879,10834 20872,10591
+Am Weidenbruch: loser Sandweg	Q3 20879,10820 20872,10591
 #: by: Beate Voigt: vvv
 #: corrected_by: srt (Verbundsteinpflaster -> Kleinkopfsteinpflaster, Q1- -> Q2)
 Siegfried-Baruch-Weg: m‰ﬂiges Kleinkopfsteinpflaster	Q2 7868,19692 8030,19762

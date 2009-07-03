@@ -64,8 +64,8 @@ Alt-Mariendorf (Nord)	1 9731,3889 9934,3802
 Alt-Mariendorf (Süd)	1 9934,3802 9751,3769 9440,3665 9391,3651 9215,3599 9131,3571 8955,3521
 Knoten Märkische Allee	1 19726,11743 19785,11760 19849,11779 19890,11830 19918,11891
 Knoten Märkische Allee	1 19918,11891 19979,11774
-Knoten Märkische Allee	1 20115,11730 20026,11663
-Knoten Märkische Allee	1 20026,11663 20018,11698 19985,11739
+Knoten Märkische Allee	1 20114,11719 20026,11663
+Knoten Märkische Allee	1 20026,11663 20018,11698 19985,11727
 Gensinger Str./Alt-Friedrichsfelde	1 18853,11780 19064,11805 19142,11804 19389,11761
 #Altstadt Köpenick	1 22740,4415 22542,4485 22495,4523 22458,4565 22426,4609 22395,4678 22383,4703
 #Altstadt Köpenick (2s gibt es als Kategorie noch nicht)	2s 22383,4703 22381,4752
@@ -615,6 +615,8 @@ Schulstr. (Tegel)	1 1953,20149 1794,20110
 #: add_fragezeichen: Ist der Natalissteig eine Einbahnstraße? Wenn ja, gilt die Einbahnstraßenregelung nur für Autofahrer oder auch für Radfahrer?
 Natalissteig	1 1202,14935 1223,14824 1226,14714
 Straße 12 (Neukölln): gesperrt für Fahrzeuge aller Art (außer BAB-Versorgung)	2 13883,6682 13881,6634 13915,6592
+Alt-Biesdorf	1 20375,11694 20435,11698 20575,11698 21108,11628
+Alt-Biesdorf	1 21108,11628 20963,11618 20549,11659 20375,11694
 ######################################################################
 #
 # Potsdam
@@ -913,7 +915,7 @@ Wisbyer Str.: Straßenbahn	3nocross 11887,16320 12026,16247 12091,16209
 Wisbyer Str.: Straßenbahn	3nocross 11542,16384 11632,16373 11688,16365
 Wisbyer Str.: Straßenbahn	3nocross 11397,16405 11448,16398 11470,16393 11542,16384
 Alt-Friedrichsfelde: nicht passierbarer Mittelstreifen	3nocross 17240,11791 17440,11774 17497,11769 17746,11748 17966,11730 18098,11720 18220,11710
-Alt-Friedrichsfelde: nicht passierbarer Mittelstreifen	3nocross 18626,11742 18853,11780 19004,11780 19389,11761 19661,11746 19726,11743 19904,11745 19985,11739 20115,11730 20160,11727 20368,11711
+Alt-Friedrichsfelde: nicht passierbarer Mittelstreifen	3nocross 18626,11742 18853,11780 19004,11780 19389,11761 19661,11746 19726,11743 19907,11734 19985,11727 20114,11719 20161,11715 20375,11694
 Alt-Friedrichsfelde: Straßentunnelrampe	3nocross 18220,11710 18555,11724 18626,11742
 Lewishamstr.: abgesperrter Mittelstreifen	3nocross 3592,10869 3631,10784 3644,10759
 Lewishamstr: Straßentunnelrampe	3nocross 3644,10759 3739,10576 3771,10511 3813,10435
@@ -999,7 +1001,7 @@ Klingelhöferstr.: Mittelstreifen	3 6880,11110 6851,11346 6692,11365
 Raoul-Wallenberg-Str.: Straßenbahntrasse	3nocross 21158,15885 21220,15741 21235,15641
 Blumberger Damm: Mittelstreifen	3nocross 21599,15213 21626,15357 21647,15496
 #: note: Luftbild:
-Blumberger Damm: Mittelstreifen	3nocross 21150,11925 21135,11799 21106,11651
+Blumberger Damm: Mittelstreifen	3nocross 21150,11925 21135,11799 21108,11628
 Rudower Chaussee: Mittelstreifen	3nocross 19206,2848 19242,2876 19324,2939
 Adlergestell: Mittelstreifen	3nocross 20565,2754 20289,3033 20207,3115 20064,3278
 Sachsendamm: Mittelstreifen mit Geländer	3nocross 6935,8208 7005,8150 7087,8066
@@ -1316,8 +1318,10 @@ Schranke, kann auch mit Anhänger umfahren werden	BNP:1 49137,24422
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
-#: last_checked: 2009-05-08:
+#: last_checked: 2009-07-02: vvv
 Dora-Benjamin-Park - Uferweg: Zugang ist noch gesperrt	2:inwork 14621,10062 14599,10039
+Dora-Benjamin-Park: Straße ist noch gesperrt	2:inwork 14621,10062 14705,10149
+#: last_checked ^^^
 #: last_checked: 2009-05-09 vvv
 #: next_check: 2009-09-01 vvv
 Vicki-Baum-Str.: noch in Bau, gesperrt	2:inwork 15990,10185 15894,10251

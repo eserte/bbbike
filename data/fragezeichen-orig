@@ -198,10 +198,6 @@ Zur Eisackstr.: ist sogar ausgeschildert, sollte vielleicht aufgenommen werden	?
 Rheinstr.: beginnt bereits hier, aber nur in Richtung Süden	? 5928,7370 5902,7334
 Hauptstr.: beginnt bereits hier, aber nur in Richtung Norden	? 5855,7272 5902,7334
 #: XXX_prog: ^^^
-#: last_checked: 2009-05-08: vvv
-Straße im Bau, Straßenname (auch Dora-Benjamin-Park?), auch Verbundsteinpflaster, auch verkehrsberuhigt?	?::inwork 14817,10031 14788,9976
-Dora-Benjamin-Park: zurzeit noch gesperrt	?::inwork 14705,10149 14621,10062
-#: last_checked ^^^
 #: XXX_prog:
 Gleichberechtigte Kreuzung (trotz H/N)	? -7191,-1023
 #: XXX_prog: allerdings wäre es interessant, wenn das auch beim Routing berücksichtigt werden könnte (vgl. Mail von Germar)
@@ -209,7 +205,7 @@ Schorlemerallee: Kandidat für "relativ wenig Kfz-Verkehr?"	? 3836,6550 3664,6523
 #: XXX_prog: allerdings vielleicht nur zeitlich relevant (Berufsverkehr)? Benötigt eh' eine Art von cat=3 mit Zeitverlust
 Zeitverlust beim Überqueren der Charlottenstraße	? -3057,14302 -3135,14183 -3275,14114
 #: XXX_prog:
-Radweg auf Alt-Biesdorf hier verschwenkt	? 20115,11730 20026,11759
+Radweg auf Alt-Biesdorf hier verschwenkt	? 20114,11719 20025,11747
 #: XXX_prog:
 Weitere Radwegverschwnekungen, siehe Track vom 25. April 2009	? 19389,11761 19004,11780
 #: last_checked: 2009-04-25
@@ -432,8 +428,6 @@ Heimgartenstraße: Asphalt, Q0	? 23537,4238 23657,4255 23880,4280 24107,4309
 Männertreuweg: guter Asphalt, Q0 (wobei es im Luftbild eher wie Beton aussieht), eng, parkende Autos (q1); existiert eine Verbindung zum Weg zum Teltowkanal?	? 16631,3292 16599,3316 16473,3417 16340,3517
 #: by: Ludwig Ortmann:
 Sonnenhag/Kleinmachnow: mäßiger Beton,Q1	? -833,1406 -789,1220 -758,1098
-#: by: anonymous:
-Erich-Pommer-Str: guter Beton, Q0	? -7464,-4407 -7321,-4247
 #: by: Wilde (thwila) 
 Schwarzkoppenstr.: Beton, Q0	? 19843,357 19937,246
 #: by: anonymous:
@@ -3560,3 +3554,14 @@ Unionstr.: Ist die Verbindung zwischen Siemensstr. und Oldenburger Str. für Radf
 Stendaler Platz: Ist die Verbindung zwischen Salzwedeler Str. und Stendaler Str. für Radfahrer befahrbar? Qualität?	? 6394,14085 6489,14071
 #: XXX laut anonymous "Kopfsteinpflaster", aber ohne weitere Kategorisierung:
 Hirseländerweg: Qualität?	? 28301,1467 28327,1525 28369,1616 28502,1827 28557,1907 28640,2015 28695,2093 28717,2121 28829,2269 28916,2333 28993,2391 29070,2446 29192,2543
+Tychyer Str.: Qualität?	? 21398,11482 21305,11363
+Lauinger Str.: Qualität?	? 21537,11256 21305,11363 21221,11398
+Gartenstr. (Biesdorf): Qualität?	? 21138,11271 21162,11287 21192,11324 21217,11328
+Gartenstr. - Tychyer Str.: Qualität? Nachts beleuchtet?	? 21217,11328 21255,11314 21286,11319 21305,11363
+Arno-Philippsthal-Str.: Qualität?	? 20640,11469 20636,11342
+Minsker Str.: Qualität?	? 20828,11466 20820,11328 20817,11252 20834,11150
+Haltoner Str.: Qualität?	? 20536,11022 20602,11050 20659,11076 20719,11101 20834,11150 20968,11203
+Stachelbartweg: Qualität?	? 20713,10982 20659,11076 20645,11127 20646,11237
+Wettersternweg: Qualität?	? 20719,11101 20708,11145 20710,11234
+Rauhkopfweg: Qualität?	? 20602,11050 20582,11120 20580,11169 20585,11240
+Brandorfer Weg: Qualität?	? 20536,11022 20524,11016 20365,11025

@@ -50,8 +50,8 @@ Alt-Mariendorf (Nord)	1 9731,3889 9934,3802
 Alt-Mariendorf (S¸d)	1 9934,3802 9751,3769 9440,3665 9391,3651 9215,3599 9131,3571 8955,3521
 Knoten M‰rkische Allee	1 19726,11743 19785,11760 19849,11779 19890,11830 19918,11891
 Knoten M‰rkische Allee	1 19918,11891 19979,11774
-Knoten M‰rkische Allee	1 20115,11730 20026,11663
-Knoten M‰rkische Allee	1 20026,11663 20018,11698 19985,11739
+Knoten M‰rkische Allee	1 20114,11719 20026,11663
+Knoten M‰rkische Allee	1 20026,11663 20018,11698 19985,11727
 Gensinger Str./Alt-Friedrichsfelde	1 18853,11780 19064,11805 19142,11804 19389,11761
 Altstadt Kˆpenick	1 22377,4836 22381,4752
 Altstadt Kˆpenick	1 22445,4758 22439,4838
@@ -488,6 +488,8 @@ Georgenstr.	1 9313,12662 9108,12635
 Schulstr. (Tegel)	1 1953,20149 1794,20110
 Natalissteig	1 1202,14935 1223,14824 1226,14714
 Straﬂe 12 (Neukˆlln): gesperrt f¸r Fahrzeuge aller Art (auﬂer BAB-Versorgung)	2 13883,6682 13881,6634 13915,6592
+Alt-Biesdorf	1 20375,11694 20435,11698 20575,11698 21108,11628
+Alt-Biesdorf	1 21108,11628 20963,11618 20549,11659 20375,11694
 Am Neuen Garten	1 -12166,1384 -12212,1201 -12276,831 -12302,718 -12323,635 -12332,585 -12582,127
 Leistikowstr.	1 -12512,810 -12302,718
 Hochstraﬂe	3nocross::ignrte -11399,-1339 -11461,-1424 -11540,-1543
@@ -1013,24 +1015,24 @@ Robert-Uhrig-Str. -> Fuﬂg‰ngerbr¸cke: nicht passierbarer Mittelstreifen	3::igndi
 Robert-Uhrig-Str. -> Alt-Friedrichsfelde: nicht passierbarer Mittelstreifen	3::igndisp 17745,11711 17746,11748 17497,11769
 Alt-Friedrichsfelde -> Fuﬂg‰ngerbr¸cke: nicht passierbarer Mittelstreifen	3::igndisp 17497,11769 17746,11748 17757,11761
 Alt-Friedrichsfelde -> Robert-Uhrig-Str.: nicht passierbarer Mittelstreifen	3::igndisp 17966,11730 17746,11748 17745,11711
-nicht passierbarer Mittelstreifen	3nocross::ignrte 18626,11742 18853,11780 19004,11780 19389,11761 19661,11746 19726,11743 19904,11745 19985,11739 20115,11730 20160,11727 20368,11711
+nicht passierbarer Mittelstreifen	3nocross::ignrte 18626,11742 18853,11780 19004,11780 19389,11761 19661,11746 19726,11743 19907,11734 19985,11727 20114,11719 20161,11715 20375,11694
 Gensinger Str. -> Alt-Friedrichsfelde: nicht passierbarer Mittelstreifen	3::igndisp 19064,11805 18853,11780 19004,11780
 Gensinger Str. -> Alt-Friedrichsfelde: nicht passierbarer Mittelstreifen	3::igndisp 19005,11767 19004,11780 18853,11780
 Alt-Friedrichsfelde -> Gensinger Str.: nicht passierbarer Mittelstreifen	3::igndisp 19389,11761 19004,11780 19005,11767
 Alt-Friedrichsfelde -> Gensinger Str.: nicht passierbarer Mittelstreifen	3::igndisp 19004,11780 19389,11761 19142,11804
 Waldbacher Weg -> Alt-Friedrichsfelde: nicht passierbarer Mittelstreifen	3::igndisp 19631,11899 19661,11746 19726,11743
 Alt-Friedrichsfelde -> Waldbacher Weg: nicht passierbarer Mittelstreifen	3::igndisp 19389,11761 19661,11746 19631,11899
-Alt-Friedrichsfelde -> zur Weiﬂenhˆher Str.: nicht passierbarer Mittelstreifen	3::igndisp 19904,11745 19726,11743 19750,11730
 zur Weiﬂenhˆher Str. -> Alt-Friedrichsfelde: nicht passierbarer Mittelstreifen	3::igndisp 19750,11730 19726,11743 19661,11746
-M‰rkische Allee -> Alt-Friedrichsfelde: nicht passierbarer Mittelstreifen	3::igndisp 19785,11760 19726,11743 19904,11745
+Alt-Friedrichsfelde -> zur Weiﬂenhˆher Str.: nicht passierbarer Mittelstreifen	3::igndisp 19907,11734 19726,11743 19750,11730
 M‰rkische Allee -> zur Weiﬂenhˆher Str.: nicht passierbarer Mittelstreifen	3::igndisp 19785,11760 19726,11743 19750,11730
-Alt-Biesdorf -> M‰rkische Allee: nicht passierbarer Mittelstreifen	3::igndisp 20115,11730 19985,11739 20018,11698
-M‰rkische Allee -> Alt-Biesdorf: nicht passierbarer Mittelstreifen	3::igndisp 20026,11759 20115,11730 20160,11727
-Alt-Biesdorf -> M‰rkische Allee: nicht passierbarer Mittelstreifen	3::igndisp 19985,11739 20115,11730 20026,11759
-M‰rkische Allee -> M‰rkische Allee: nicht passierbarer Mittelstreifen	3::igndisp 20026,11663 20115,11730 20026,11759
-M‰rkische Allee -> Alt-Biesdorf: nicht passierbarer Mittelstreifen	3::igndisp 20026,11663 20115,11730 19985,11739
-Alt-Biesdorf -> Mozartstr.: nicht passierbarer Mittelstreifen	3::igndisp 20115,11730 20160,11727 20169,11852
-Mozartstr. -> Alt-Biesdorf: nicht passierbarer Mittelstreifen	3::igndisp 20169,11852 20160,11727 20368,11711
+M‰rkische Allee -> Alt-Friedrichsfelde: nicht passierbarer Mittelstreifen	3::igndisp 19785,11760 19726,11743 19907,11734
+Alt-Biesdorf -> M‰rkische Allee: nicht passierbarer Mittelstreifen	3::igndisp 20114,11719 19985,11727 20018,11698
+Alt-Biesdorf -> M‰rkische Allee: nicht passierbarer Mittelstreifen	3::igndisp 19985,11727 20114,11719 20025,11747
+M‰rkische Allee -> Alt-Biesdorf: nicht passierbarer Mittelstreifen	3::igndisp 20025,11747 20114,11719 20161,11715
+M‰rkische Allee -> Alt-Biesdorf: nicht passierbarer Mittelstreifen	3::igndisp 20026,11663 20114,11719 19985,11727
+M‰rkische Allee -> M‰rkische Allee: nicht passierbarer Mittelstreifen	3::igndisp 20026,11663 20114,11719 20025,11747
+Mozartstr. -> Alt-Biesdorf: nicht passierbarer Mittelstreifen	3::igndisp 20169,11852 20161,11715 20375,11694
+Alt-Biesdorf -> Mozartstr.: nicht passierbarer Mittelstreifen	3::igndisp 20114,11719 20161,11715 20169,11852
 Straﬂentunnelrampe	3nocross::ignrte 18220,11710 18555,11724 18626,11742
 Alt-Friedrichsfelde -> Charlottenstr.: Straﬂentunnelrampe	3::igndisp 18626,11742 18555,11724 18556,11688
 Charlottenstr. -> Alt-Friedrichsfelde: Straﬂentunnelrampe	3::igndisp 18556,11688 18555,11724 18220,11710
@@ -1293,7 +1295,7 @@ Schˆnagelstr. -> Raoul-Wallenberg-Str.: Straﬂenbahntrasse	3::igndisp 21602,15908
 Mittelstreifen	3nocross::ignrte 21599,15213 21626,15357 21647,15496
 Krummenseer Str. -> Blumberger Damm: Mittelstreifen	3::igndisp 21657,15352 21626,15357 21599,15213
 Blumberger Damm -> Krummenseer Str.: Mittelstreifen	3::igndisp 21647,15496 21626,15357 21657,15352
-Mittelstreifen	3nocross::ignrte 21150,11925 21135,11799 21106,11651
+Mittelstreifen	3nocross::ignrte 21150,11925 21135,11799 21108,11628
 Mittelstreifen	3nocross::ignrte 19206,2848 19242,2876 19324,2939
 Rudower Chaussee -> Brook-Taylor-Str.: Mittelstreifen	3::igndisp 19206,2848 19242,2876 19215,2906
 Brook-Taylor-Str. -> Rudower Chaussee: Mittelstreifen	3::igndisp 19215,2906 19242,2876 19324,2939
@@ -1530,6 +1532,7 @@ Dr‰ngelgitter	BNP:3:-158 63740,42840
 Dr‰ngelgitter	BNP:3:-157 63721,42792
 Schranke, kann auch mit Anh‰nger umfahren werden	BNP:1:-170 49137,24422
 Dora-Benjamin-Park - Uferweg: Zugang ist noch gesperrt	2:inwork 14621,10062 14599,10039
+Dora-Benjamin-Park: Straﬂe ist noch gesperrt	2:inwork 14621,10062 14705,10149
 Vicki-Baum-Str.: noch in Bau, gesperrt	2:inwork 15990,10185 15894,10251
 Vicki-Baum-Str.: noch in Bau, gesperrt	2:inwork 15823,10300 15753,10353 15688,10400
 Alice-und-Hella-Hirsch-Ring: noch in Bau, gesperrt	2:inwork 15788,10252 15823,10300
