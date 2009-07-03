@@ -60,11 +60,12 @@ my $n;
 my $o;
 my $xstep = 0.01;
 my $ystep = 0.01;
+my $do_round;
 
 sub usage () {
     die <<EOF;
-usage: $0 -o directory x0 y0 x1 y1
-       $0 -reload existing.osm ...
+usage: $0 [options] -o directory -- x0 y0 x1 y1
+       $0 [options] -reload existing.osm ...
 
 First form:  specify a bbox (four parameters, x0 y0 x1 y1)
 Second form: refresh existing osm files downloaded with this tool
@@ -75,6 +76,7 @@ Second form: refresh existing osm files downloaded with this tool
 -xstep x:  set steps on the x axis (default=$xstep)
 -ystep y:  set steps on the y axis (default=$ystep)
 -step  xy: set steps for both the x and y axis
+-round:    make sure bbox is rounded to 1/100 degree
 
 With -reload:
 -minage days: download only files which are older than days days
@@ -82,7 +84,7 @@ With -reload:
               restarted
 
 For all of Berlin use:
-    $0 13.010982 52.337651 13.761388 52.675354
+    $0 -o destdir 13.01 52.33 13.77 52.68
 EOF
 }
 
@@ -96,6 +98,7 @@ GetOptions("reload!" => \$do_reload,
 	   "step=f" => sub {
 	       $xstep = $ystep = $_[1];
 	   },
+	   "round!" => \$do_round,
 	  )
     or usage;
 my @reload;
@@ -164,6 +167,34 @@ if (@reload) {
 
     ($x1,$x2) = ($x2,$x1) if $x1 > $x2;
     ($y1,$y2) = ($y2,$y1) if $y1 > $y2;
+
+    if ($do_round) {
+	my $up = sub {
+	    my $dir = $_[1];
+	    if ($_[0] =~ m{\.\d\d.*[1-9]}) {
+		$_[0] += ($dir * 0.01);
+		$_[0] =~ s{(\.\d\d).*}{$1};
+	    }
+	};
+	my $down = sub {
+	    $_[0] =~ s{(\.\d\d).*}{$1};
+	};
+
+	for ($x1, $y1) {
+	    if ($_ >= 0) {
+		$down->($_);
+	    } else {
+		$up->($_, -1);
+	    }
+	}
+	for ($x2, $y2) {
+	    if ($_ >= 0) {
+		$up->($_, +1);
+	    } else {
+		$down->($_);
+	    }
+	}
+    }
 
     use constant FIXPOINTS => 6;
     my $xstep_fix = FixPoint->new($xstep, FIXPOINTS);
@@ -283,7 +314,7 @@ downloadosm - download data from openstreetmap
 
 =head1 SYNOPSIS
 
-    downloadosm -o directory x0 y0 x1 y1
+    downloadosm -o directory -- x0 y0 x1 y1
     downloadosm -reload existing.osm
 
 =head1 DESCRIPTION
