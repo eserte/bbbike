@@ -11,7 +11,7 @@
 # WWW:  http://www.rezic.de/eserte/
 #
 
-package QtParseQrc;
+package QtQrc;
 
 use strict;
 use vars qw($VERSION);
@@ -48,11 +48,11 @@ __END__
 
 =head1 NAME
 
-QtParseQrc - parse qrc files
+QtQrc - parse qrc files
 
 =head1 SYNOPSIS
 
-    perl -MData::Dumper -MQtParseQrc -e 'warn Dumper(QtParseQrc::get_qrc_res2file(shift))' /usr/ports/astro/merkaartor/work/merkaartor-0.13.2/Icons/AllIcons.qrc
+    perl -MData::Dumper -MQtQrc -e 'warn Dumper(QtQrc::get_qrc_res2file(shift))' /usr/ports/astro/merkaartor/work/merkaartor-0.13.2/Icons/AllIcons.qrc
 
 =cut
 
