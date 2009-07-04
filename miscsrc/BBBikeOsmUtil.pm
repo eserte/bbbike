@@ -42,6 +42,11 @@ $OSM_FALLBACK_API_URL = "http://www.informationfreeway.org/api/0.6";
 
 use vars qw($MERKAARTOR_MAS_BASE $MERKAARTOR_MAS $ALLICONS_QRC $USE_MERKAARTOR_ICONS %ICON_NAME_TO_PHOTO);
 
+use constant XSTEP => 0.1;
+use constant YSTEP => 0.1;
+use constant MARGIN_X => 0.11; # MARGIN... needs to be larger than ...STEP
+use constant MARGIN_Y => 0.11;
+
 sub register {
     _create_images();
     _find_merkaartor_data();
@@ -134,7 +139,7 @@ sub mirror_and_plot_visible_area_constrained {
     my @elsewhere_tiles;
 
     open my $fh, "-|",
-	$^X, bbbike_root() . "/miscsrc/downloadosm", "-xstep", "0.1", "-ystep", "0.1", "-round", "-report", "-o", $berlin_dir, $x0,$y0,$x1,$y1
+	$^X, bbbike_root() . "/miscsrc/downloadosm", "-xstep", XSTEP, "-ystep", YSTEP, "-round", "-report", "-o", $berlin_dir, $x0,$y0,$x1,$y1
 	    or die "Can't run downloadosm: $!";
     while(<$fh>) {
 	chomp;
@@ -145,6 +150,9 @@ sub mirror_and_plot_visible_area_constrained {
 	    push @elsewhere_tiles, "$elsewhere_dir/$file";
 	}
     }
+
+require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([$x0,$y0,$x1,$y1],[qw()])->Indent(1)->Useqq(1)->Dump; # XXX
+require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([\@berlin_tiles, \@elsewhere_tiles],[qw(berlin elsewhere)])->Indent(1)->Useqq(1)->Dump; # XXX
 
     mirror_and_plot_osm_files(@berlin_tiles, @elsewhere_tiles);
 }
@@ -542,8 +550,6 @@ sub _draw_cover_grids {
     return if !@cover_grids;
     _sort_cover_grids();
     use List::Util qw(reduce);
-    use constant MARGIN_X => 0.05;
-    use constant MARGIN_Y => 0.05;
     my $max_y = (reduce { $a->[1] > $b->[1] ? $a : $b } @cover_grids)->[1] + MARGIN_Y;
     my $min_y = (reduce { $a->[3] < $b->[3] ? $a : $b } @cover_grids)->[3] - MARGIN_Y;
     my @c = ([$cover_grids[0]->[0] - MARGIN_X,
@@ -676,8 +682,6 @@ sub _best_merkaartor_work_dir {
 }
 
 sub _find_merkaartor_data {
-    cleanup_photos();
-
     my $merkaartor_work_dir = _best_merkaartor_work_dir();
     if (!$merkaartor_work_dir) {
 	warn "No Merkaartor source directory found, cannot use Merkaartor icons...\n";
