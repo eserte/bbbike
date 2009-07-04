@@ -447,9 +447,15 @@ sub plot_osm_files {
 			$dark_color = '#6060a0';
 		    } elsif (exists $tag{'landuse'} && $tag{'landuse'} eq 'farm') {
 			$light_color = '#b2aa5f';
-		    } elsif (exists $tag{'building'} && $tag{'building'} eq 'yes') {
+		    } elsif (exists $tag{'landuse'} && $tag{'landuse'} eq 'grass') {
+			$light_color = '#b2b75f';
+		    } elsif (exists $tag{'landuse'} && $tag{'landuse'} eq 'residential') {
+			$light_color = '#b99a68';
+		    } elsif (exists $tag{'landuse'} && $tag{'landuse'} =~ m{^(?:industrial|commercial)$}) {
 			$light_color = '#b0a0b0';
 			$dark_color = '#a060a0';
+		    } elsif (exists $tag{'building'} && $tag{'building'} eq 'yes') {
+			$light_color = '#b98a68';
 		    } elsif ((exists $tag{'amenity'} && $tag{'amenity'} eq 'parking') ||
 			     (exists $tag{'highway'})
 			    ) {
