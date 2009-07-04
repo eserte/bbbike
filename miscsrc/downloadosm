@@ -229,11 +229,13 @@ sub download_osm_tile {
     my $dest = "download_$x,$y,$xend,$yend.osm";
     if ($do_report) {
 	if (-s "$dest.bz2") {
-	    print "$dest.bz2 $url\n";
+	    print "$dest.bz2\t$url\t1\n";
 	} elsif (-s "$dest.gz") {
-	    print "$dest.gz $url\n";
+	    print "$dest.gz\t$url\t1\n";
+	} elsif (-s $dest) {
+	    print "$dest\t$url\t1\n";
 	} else {
-	    print "$dest $url\n";
+	    print "$dest\t$url\t0\n";
 	}
 	return;
     }
