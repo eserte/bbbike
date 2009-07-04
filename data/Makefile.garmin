@@ -146,7 +146,8 @@ GMAPSUPP_SRC=	${PERSISTENTTMPDIR}/bbbike_routable.img \
 		${PERSISTENTTMPDIR}/leipzig_osm.img \
 		${PERSISTENTTMPDIR}/hessen_osm.img \
 		${PERSISTENTTMPDIR}/croatia_osm.img \
-		${PERSISTENTTMPDIR}/dalmatia_osm.img
+		${PERSISTENTTMPDIR}/dalmatia_osm.img \
+		${PERSISTENTTMPDIR}/barnim_osm.img
 
 ## XXX This would be nice. But I ran out of memory if
 ## adding this one. Even with -Xmx1024m:
@@ -161,22 +162,22 @@ ${PERSISTENTTMPDIR}/gmapsupp.img:	${GMAPSUPP_SRC}
 
 gmapsupp-without-rebuild:
 .for f in ${GMAPSUPP_SRC}
-	[ -e ${PERSISTENTTMPDIR}/$f ]
+	[ -e $f ]
 .endfor
 	cd ${PERSISTENTTMPDIR} && \
 	    ${MKGMAP} --gmapsupp ${GMAPSUPP_SRC}
 
 ${PERSISTENTTMPDIR}/berlin_combined.osm:    ${MISCDIR}/download/osm/berlin/*.osm		\
-					    ${MISCDIR}/download/osm/koenigs_wusterhausen/*.osm	\
-					    ${MISCDIR}/download/osm/teltow/*.osm		\
+					    ${MISCDIR}/download/osm/potsdam/*.osm		\
 					    ${MISCDIR}/download/osm/uckermark/*.osm		\
-					    ${MISCDIR}/download/osm/usedom/*.osm
+					    ${MISCDIR}/download/osm/usedom/*.osm		\
+					    ${MISCDIR}/download/osm/barnim/*.osm
 	${COMBINE_OSM} \
 		${MISCDIR}/download/osm/berlin			\
-		${MISCDIR}/download/osm/koenigs_wusterhausen	\
-		${MISCDIR}/download/osm/teltow			\
+		${MISCDIR}/download/osm/potsdam			\
 		${MISCDIR}/download/osm/uckermark		\
 		${MISCDIR}/download/osm/usedom			\
+		${MISCDIR}/download/osm/barnim			\
 	    > $@~
 	mv $@~ $@
 
@@ -201,7 +202,7 @@ ${PERSISTENTTMPDIR}/leipzig_osm.img:
 	${COMBINE_OSM} ${MISCDIR}/download/osm/leipzig > ${PERSISTENTTMPDIR}/leipzig.osm
 	cd ${PERSISTENTTMPDIR} && ( \
 	    ${MKGMAP} --description="Leipzig und Umgebung OSM" --mapname=12117002 leipzig.osm && \
-	    mv 1211702.img leipzig_osm.img )
+	    mv 12117002.img leipzig_osm.img )
 
 ${PERSISTENTTMPDIR}/hessen_osm.img:
 	cd ${PERSISTENTTMPDIR} && ( \
@@ -225,6 +226,13 @@ ${PERSISTENTTMPDIR}/dalmatia_osm.img:
 	    ${MKGMAP_ROUTABLE} --description="Dalmatia Routable OSM" --mapname=12117007 --country-name=Croatia --country-abbr=HR --net --route dalmatia.osm && \
 	    mv 12117007.img dalmatia_osm.img )
 	-rm -f ${PERSISTENTTMPDIR}/dalmatia.osm
+
+# routable
+${PERSISTENTTMPDIR}/barnim_osm.img:
+	${COMBINE_OSM} ${MISCDIR}/download/osm/barnim > ${PERSISTENTTMPDIR}/barnim.osm
+	cd ${PERSISTENTTMPDIR} && ( \
+	    ${MKGMAP} --description="Barnim Routable OSM" --mapname=12117008 --net --route barnim.osm && \
+	    mv 12117008.img barnim_osm.img )
 
 ######################################################################
 # bbd2osm stuff
