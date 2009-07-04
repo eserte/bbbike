@@ -18834,9 +18834,6 @@ sub restack {
 # gibt das aktuelle Stacking aus
 sub real_stack_order {
     my @real_order;
-    if (defined @set_stack_order) {
-	return @set_stack_order;
-    }
 
     push @real_order, @special_lower;
     foreach (@normal_stack_order) {
@@ -18861,14 +18858,6 @@ sub real_type_stack_order {
 	}
     }
     @res;
-}
-
-### AutoLoad Sub
-sub set_normal_stack_order {
-    @set_stack_order = @normal_stack_order;
-    %special_lower = ();
-    %special_raise = ();
-    restack();
 }
 
 ### AutoLoad Sub

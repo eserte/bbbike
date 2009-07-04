@@ -262,7 +262,7 @@ use vars qw(%cursor %cursor_mask %stipple);
 use vars qw(%busy_watch_args);
 use vars qw($pp_color);
 use vars qw($xadd_anchor_type $yadd_anchor_type %label_spaceadd);
-use vars qw(@normal_stack_order @set_stack_order);
+use vars qw(@normal_stack_order);
 use vars qw(%perlmod_install_advice_seen
 	    %long_url_to_short_url);
 use vars qw($sBAB_two_track_width);
