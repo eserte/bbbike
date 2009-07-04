@@ -264,10 +264,15 @@ sub add_button {
 		     _require_BBBikeOsmUtil();
 		     BBBikeOsmUtil::plot_visible_area();
 		 }],
-		[Button => "Constrained download of OSM tiles",
+		[Button => "Constrained download of OSM tiles (and refresh)",
 		 -command => sub {
 		     _require_BBBikeOsmUtil();
-		     BBBikeOsmUtil::mirror_and_plot_visible_area_constrained();
+		     BBBikeOsmUtil::mirror_and_plot_visible_area_constrained(refreshdays => 0.5);
+		 }],
+		[Button => "Constrained download of OSM tiles (without refresh)",
+		 -command => sub {
+		     _require_BBBikeOsmUtil();
+		     BBBikeOsmUtil::mirror_and_plot_visible_area_constrained(refreshdays => 999999);
 		 }],
 		[Button => "Download and display any OSM data",
 		 -command => sub {

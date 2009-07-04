@@ -80,23 +80,27 @@ sub mirror_and_plot_visible_area {
     my($x0,$y0,$x1,$y1) = get_visible_area();
     my @osm_files = osm_files_in_grid($x0,$y0,$x1,$y1);
     if (@osm_files) {
-	mirror_and_plot_osm_files(@osm_files);
+	mirror_and_plot_osm_files(\@osm_files);
     } else {
 	main::status_message("No OSM tiles available in visible area");
     }
 }
 
 sub mirror_and_plot_osm_files {
-    my(@osm_files) = @_;
-    _filter_seen_grids(\@osm_files);
-    if (@osm_files) {
+    my($osm_files_ref, %args) = @_;
+
+    my $refresh_days = $args{refreshdays};
+    if (!defined $refresh_days) { $refresh_days = 0.5 } # mirror at most every 12 hours once
+
+    _filter_seen_grids($osm_files_ref);
+    if (@$osm_files_ref) {
 	my $ua = _get_ua();
 	$main::progress->Init(-label => "Mirroring...", -visible => 1);
 	my $file_i = -1;
-	for my $file (@osm_files) {
+	for my $file (@$osm_files_ref) {
 	    $file_i++;
-	    $main::progress->Update($file_i/@osm_files);
-	    if (do { local $^T = time; !-e $file || -M $file > 0.5 }) { # mirror at most every 12 hours once
+	    $main::progress->Update($file_i/@$osm_files_ref);
+	    if (do { local $^T = time; !-e $file || -M $file > $refresh_days }) {
 		if ($file !~ $osm_download_file_qr) {
 		    main::status_message("File '$file' does not have the expected pattern '$osm_download_file_qr'", "die");
 		}
@@ -119,9 +123,9 @@ sub mirror_and_plot_osm_files {
 	}
 	main::status_message("Mirroring successful, now plotting...", "info"); $main::top->update;
 	local $defer_restacking = 1;
-	plot_osm_files(\@osm_files);    
-	_mark_grids_as_seen(\@osm_files);
-	plot_osm_cover_by_files(\@osm_files);
+	plot_osm_files($osm_files_ref);    
+	_mark_grids_as_seen($osm_files_ref);
+	plot_osm_cover_by_files($osm_files_ref);
 	main::restack();
 	$main::progress->Finish;
 	main::status_message("", "info");
@@ -129,6 +133,8 @@ sub mirror_and_plot_osm_files {
 }
 
 sub mirror_and_plot_visible_area_constrained {
+    my(%args) = @_;
+
     my($x0,$y0,$x1,$y1) = get_visible_area();
 
     my $osm_download_dir = bbbike_root() . "/misc/download/osm";
@@ -154,7 +160,7 @@ sub mirror_and_plot_visible_area_constrained {
 require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([$x0,$y0,$x1,$y1],[qw()])->Indent(1)->Useqq(1)->Dump; # XXX
 require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([\@berlin_tiles, \@elsewhere_tiles],[qw(berlin elsewhere)])->Indent(1)->Useqq(1)->Dump; # XXX
 
-    mirror_and_plot_osm_files(@berlin_tiles, @elsewhere_tiles);
+    mirror_and_plot_osm_files([@berlin_tiles, @elsewhere_tiles], %args);
 }
 
 sub get_download_url {
