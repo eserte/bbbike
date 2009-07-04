@@ -229,8 +229,8 @@ if (@reload) {
 		"\n";
     }
 
-    for(my $x_fix = $x1_fix; $x_fix <= $x2_fix; $x_fix+=$xstep_fix) {
-	for(my $y_fix = $y1_fix; $y_fix <= $y2_fix; $y_fix+=$ystep_fix) {
+    for(my $x_fix = $x1_fix; $x_fix < $x2_fix; $x_fix+=$xstep_fix) {
+	for(my $y_fix = $y1_fix; $y_fix < $y2_fix; $y_fix+=$ystep_fix) {
 	    my $xend_fix = $x_fix+$xstep_fix;
 	    my $yend_fix = $y_fix+$ystep_fix;
 	    download_osm_tile($x_fix->numify,$y_fix->numify,$xend_fix->numify,$yend_fix->numify, 0);
