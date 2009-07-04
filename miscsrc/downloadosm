@@ -225,7 +225,7 @@ if (@reload) {
 
     if ($debug) {
 	warn "Approx. number of tiles to download: " .
-	    (int(($y2_fix-$y1_fix)/$ystep_fix + 1) * int(($x2_fix-$x1_fix)/$xstep_fix + 1)) .
+	    (int(($y2_fix-$y1_fix)/$ystep_fix) * int(($x2_fix-$x1_fix)/$xstep_fix)) .
 		"\n";
     }
 
