@@ -77,8 +77,8 @@ Second form: refresh existing osm files downloaded with this tool
 -xstep x:  set steps on the x axis (default=$xstep)
 -ystep y:  set steps on the y axis (default=$ystep)
 -step  xy: set steps for both the x and y axis
--round:    make sure bbox is rounded to 1/100 degree
-           NOTE: works only with -x/ystep 0.01!!!
+-round:    make sure bbox is rounded to 1/10 or 1/100 degree
+           NOTE: works only with -x/ystep 0.1 or 0.01!
 -report:   just report what URLs would be loaded to STDOUT
 
 With -reload:
@@ -172,16 +172,26 @@ if (@reload) {
     ($x1,$x2) = ($x2,$x1) if $x1 > $x2;
     ($y1,$y2) = ($y2,$y1) if $y1 > $y2;
 
-    if ($do_round) { # XXX works only for $xstep/$ystep = 0.01!!!
+    if ($do_round) {
+	if ($xstep != 0.01 && $xstep != 0.1) {
+	    die "-round option works only with -xstep=0.01 or 0.1!";
+	}
+	if ($ystep != 0.01 && $ystep != 0.1) {
+	    die "-round option works only with -ystep=0.01 or 0.1!";
+	}
+	if ($xstep != $ystep) {
+	    die "Currently -xstep has to be equal -ystep for -round option!";
+	}
+	my $dqr = $xstep == 0.1 ? '\d' : '\d\d'; $dqr = qr{$dqr};
 	my $up = sub {
 	    my $dir = $_[1];
-	    if ($_[0] =~ m{\.\d\d.*[1-9]}) {
-		$_[0] += ($dir * 0.01);
-		$_[0] =~ s{(\.\d\d).*}{$1};
+	    if ($_[0] =~ m{\.$dqr.*[1-9]}) {
+		$_[0] += ($dir * $xstep);
+		$_[0] =~ s{(\.$dqr).*}{$1};
 	    }
 	};
 	my $down = sub {
-	    $_[0] =~ s{(\.\d\d).*}{$1};
+	    $_[0] =~ s{(\.$dqr).*}{$1};
 	};
 
 	for ($x1, $y1) {
