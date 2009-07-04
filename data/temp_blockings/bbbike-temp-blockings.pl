@@ -694,7 +694,7 @@ EOF
        text  => 'B 167; zw. Bad Freienw. u. Falkenberg, Höhe Papierfabrik Neubau von Durchlässen Vollsperrung 04.10.2004-unbekannt ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 49039,44131 48583,44366
+userdel	2 49039,44131 48924,44216 48724,44248 48523,44467
 EOF
      },
      { from  => 1093496400, # 2004-08-26 07:00
@@ -924,7 +924,7 @@ EOF
        text  => 'B 167; zw. Bad Freienw. u. Falkenberg, Höhe Papierfabrik Neubau von Durchlässen Vollsperrung 12.04.2005-24.06.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 49039,44131 48583,44366
+userdel	q4 49039,44131 48924,44216 48724,44248 48523,44467
 userdel	q4 49039,44131 49691,43812
 EOF
      },
@@ -1140,7 +1140,7 @@ EOF
        text  => 'L 200; (Breite Str.); OD Eberswalde, zw. BÜ und Neue Str. Straßenbauarbeiten, Vollsperrung 01.11.2004-21.11.2004 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 38264,50086 38035,49183
+userdel	q4 38264,50086 38026,49115
 userdel	q4 38264,50086 38476,50514 38845,51258
 EOF
      },
@@ -1666,7 +1666,7 @@ EOF
        text  => 'L 291; (Oderberger Str.); OD Eberswalde, Einm. Breite Str. Straßenbauarbeiten Vollsperrung 24.03.2005-30.04.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 38035,49183 37900,48350 37875,48253
+userdel	q4 38026,49115 37900,48350 37875,48253
 EOF
      },
      { from  => 1111960800, # 2005-03-28 00:00
@@ -5933,7 +5933,7 @@ EOF
        text  => 'B 168 zw. Trampe und Eberswalde Deckenerneuerung Vollsperrung 27.09.2006-18.10.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 38522,47634 38653,47410 38723,47134 39446,42585
+userdel	2::inwork 38522,47634 38653,47410 38723,47134 39373,42579
 EOF
      },
      { from  => 1159426800, # 2006-09-28 09:00
@@ -13543,7 +13543,8 @@ EOF
        text  => 'Jessnerstr. wegen Bauarbeiten in Richtung Süden nicht befahrbar',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2009-05-26
+#: last_checked: 2009-07-03
+#: XXX nach Beendigung der Bauarbeiten ist wahrscheinlich die gesamte Straße asphaltiert, mit einigen Aufpflasterungen
 userdel	q4::inwork; 15080,11905 14977,11754 14941,11689 14849,11539
 EOF
      },
@@ -13604,7 +13605,7 @@ EOF
        text  => 'B 167 Bad Freienwalde - Eberswalde OD Falkenberg, Karl-Marx-Str. Straßenbauarbeiten Vollsperrung 14.04.2009-18.04.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 47952,44559 47538,44649
+userdel	q4::inwork 47893,44581 47735,44502 47657,44531 47628,44635
 EOF
      },
      { from  => 1240696800, # 2009-04-26 00:00

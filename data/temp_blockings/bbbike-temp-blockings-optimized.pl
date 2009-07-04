@@ -890,7 +890,8 @@ userdel	q4::inwork 14530,11137 14465,11195
          'text' => 'Jessnerstr. wegen Bauarbeiten in Richtung Süden nicht befahrbar',
          'from' => undef,
          'id' => 1598,
-         'data' => '#: last_checked: 2009-05-26
+         'data' => '#: last_checked: 2009-07-03
+#: XXX nach Beendigung der Bauarbeiten ist wahrscheinlich die gesamte Straße asphaltiert, mit einigen Aufpflasterungen
 userdel	q4::inwork; 15080,11905 14977,11754 14941,11689 14849,11539
 ',
          'type' => 'handicap'
