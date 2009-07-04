@@ -26,6 +26,7 @@ use Cwd qw(realpath);
 use File::Basename qw(dirname basename);
 use File::Glob qw(bsd_glob);
 
+use BBBikeUtil qw(bbbike_root);
 use VectorUtil qw(enclosed_rectangle intersect_rectangles normalize_rectangle);
 
 use vars qw($UNINTERESTING_TAGS);
@@ -73,47 +74,78 @@ sub mirror_and_plot_visible_area {
     my($x0,$y0,$x1,$y1) = get_visible_area();
     my @osm_files = osm_files_in_grid($x0,$y0,$x1,$y1);
     if (@osm_files) {
-	_filter_seen_grids(\@osm_files);
-	if (@osm_files) {
-	    my $ua = _get_ua();
-	    $main::progress->Init(-label => "Mirroring...", -visible => 1);
-	    my $file_i = -1;
-	    for my $file (@osm_files) {
-		$file_i++;
-		$main::progress->Update($file_i/@osm_files);
-		if (do { local $^T = time; -M $file > 0.5 }) { # mirror at most every 12 hours once
-		    if ($file !~ $osm_download_file_qr) {
-			main::status_message("File '$file' does not have the expected pattern '$osm_download_file_qr'", "die");
-		    }
-		    my($this_x0,$this_y0,$this_x1,$this_y1) = ($1, $2, $3, $4);
-		    my $url = "$OSM_API_URL/map?bbox=$this_x0,$this_y0,$this_x1,$this_y1";
-		    main::status_message("Mirror $url ...", "info"); $main::top->update;
-		    main::IncBusy($main::top);
-		    eval {
-			my $resp = $ua->mirror($url, $file);
-			if (!$resp->is_success) {
-			    die "Could not mirror $url: " . $resp->status_line . "\n";
-			}
-		    };
-		    my $err = $@;
-		    main::DecBusy($main::top);
-		    if ($err) {
-			main::status_message($err, 'die');
-		    }
-		}
-	    }
-	    main::status_message("Mirroring successful, now plotting...", "info"); $main::top->update;
-	    local $defer_restacking = 1;
-	    plot_osm_files(\@osm_files);    
-	    _mark_grids_as_seen(\@osm_files);
-	    plot_osm_cover_by_files(\@osm_files);
-	    main::restack();
-	    $main::progress->Finish;
-	    main::status_message("", "info");
-	}
+	mirror_and_plot_osm_files(@osm_files);
     } else {
 	main::status_message("No OSM tiles available in visible area");
     }
+}
+
+sub mirror_and_plot_osm_files {
+    my(@osm_files) = @_;
+    _filter_seen_grids(\@osm_files);
+    if (@osm_files) {
+	my $ua = _get_ua();
+	$main::progress->Init(-label => "Mirroring...", -visible => 1);
+	my $file_i = -1;
+	for my $file (@osm_files) {
+	    $file_i++;
+	    $main::progress->Update($file_i/@osm_files);
+	    if (do { local $^T = time; !-e $file || -M $file > 0.5 }) { # mirror at most every 12 hours once
+		if ($file !~ $osm_download_file_qr) {
+		    main::status_message("File '$file' does not have the expected pattern '$osm_download_file_qr'", "die");
+		}
+		my($this_x0,$this_y0,$this_x1,$this_y1) = ($1, $2, $3, $4);
+		my $url = "$OSM_API_URL/map?bbox=$this_x0,$this_y0,$this_x1,$this_y1";
+		main::status_message("Mirror $url ...", "info"); $main::top->update;
+		main::IncBusy($main::top);
+		eval {
+		    my $resp = $ua->mirror($url, $file);
+		    if (!$resp->is_success) {
+			die "Could not mirror $url: " . $resp->status_line . "\n";
+		    }
+		};
+		my $err = $@;
+		main::DecBusy($main::top);
+		if ($err) {
+		    main::status_message($err, 'die');
+		}
+	    }
+	}
+	main::status_message("Mirroring successful, now plotting...", "info"); $main::top->update;
+	local $defer_restacking = 1;
+	plot_osm_files(\@osm_files);    
+	_mark_grids_as_seen(\@osm_files);
+	plot_osm_cover_by_files(\@osm_files);
+	main::restack();
+	$main::progress->Finish;
+	main::status_message("", "info");
+    }
+}
+
+sub mirror_and_plot_visible_area_constrained {
+    my($x0,$y0,$x1,$y1) = get_visible_area();
+
+    my $osm_download_dir = bbbike_root() . "/misc/download/osm";
+    my $berlin_dir = "$osm_download_dir/berlin";
+    my $elsewhere_dir = "$osm_download_dir/elsewhere";
+
+    my @berlin_tiles;
+    my @elsewhere_tiles;
+
+    open my $fh, "-|",
+	$^X, bbbike_root() . "/miscsrc/downloadosm", "-round", "-report", "-o", $berlin_dir, $x0,$y0,$x1,$y1
+	    or die "Can't run downloadosm: $!";
+    while(<$fh>) {
+	chomp;
+	my($file, undef, $exists) = split /\t/, $_;
+	if ($exists) {
+	    push @berlin_tiles, "$berlin_dir/$file";
+	} else {
+	    push @elsewhere_tiles, "$elsewhere_dir/$file";
+	}
+    }
+
+    mirror_and_plot_osm_files(@berlin_tiles, @elsewhere_tiles);
 }
 
 sub get_download_url {
@@ -186,7 +218,7 @@ sub get_visible_area {
 sub osm_files_in_grid {
     my($x0,$y0,$x1,$y1) = @_;
 
-    my $osm_download_dir = dirname(dirname(realpath(__FILE__))) . "/misc/download/osm";
+    my $osm_download_dir = bbbike_root() . "/misc/download/osm";
     my $berlin_dir = "$osm_download_dir/berlin";
     my @osm_files = bsd_glob("$berlin_dir/download_*.osm*");
     if (!@osm_files) {
@@ -268,6 +300,7 @@ sub plot_osm_files {
 
     my $node_attr_to_icon = {};
     if ($USE_MERKAARTOR_ICONS) {
+	require Cwd; require File::Basename; local @INC = (@INC, Cwd::realpath(File::Basename::dirname(__FILE__)));
 	require MerkaartorMas;
 	$node_attr_to_icon = MerkaartorMas::parse_icons_from_mas($MERKAARTOR_MAS, $ALLICONS_QRC);
     }

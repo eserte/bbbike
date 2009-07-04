@@ -264,6 +264,11 @@ sub add_button {
 		     _require_BBBikeOsmUtil();
 		     BBBikeOsmUtil::plot_visible_area();
 		 }],
+		[Button => "Constrained download of OSM tiles",
+		 -command => sub {
+		     _require_BBBikeOsmUtil();
+		     BBBikeOsmUtil::mirror_and_plot_visible_area_constrained();
+		 }],
 		[Button => "Download and display any OSM data",
 		 -command => sub {
 		     _require_BBBikeOsmUtil();
