@@ -183,7 +183,16 @@ userdel	q4::inwork 9209,12795 9280,12883
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'IM_013416',
+         'until' => 1246831200,
+         'text' => 'Badstraße (Wedding) in beiden Richtungen zwischen Pankstr. und Behmstr. Veranstaltung, Straße gesperrt bis Mo 00:00 ',
+         'from' => undef,
+         'id' => 1046,
+         'data' => 'userdel	2::temp 8788,16264 8862,16208 8928,16158 8993,16100 9059,16038 9134,15953
+',
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
@@ -1262,15 +1271,7 @@ userdel	q4::inwork 9126,12413 9345,12443
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1246658400,
-         'text' => 'L 082 Zeudener Str. OD Marzahna Kanal- und Straßenbau Vollsperrung 11.06.2009-03.07.2009 ',
-         'from' => 1244584800,
-         'id' => 1707,
-         'data' => 'userdel	q4::inwork -33582,-43378 -32661,-44144
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => undef,
@@ -1448,6 +1449,43 @@ userdel	q4::inwork; 15698,8191 15561,8072
          'from' => 1246398785,
          'id' => 1727,
          'data' => 'userdel	1::inwork 15382,5687 15183,5480
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_013407',
+         'until' => 1246831199,
+         'text' => 'Residenzstr. (Reinickendorf) in beiden Richtungen zwischen Pankower Allee und Emmentaler Str. Veranstaltung, Straße vollständig gesperrt (Residenzstraßenfest)',
+         'from' => undef,
+         'id' => 1728,
+         'data' => 'userdel	2::temp 7587,17532 7500,17796 7487,17836 7466,17904 7445,17968 7439,17985 7418,18051 7350,18262
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1257030000,
+         'text' => 'B 112 OU Guben - OU Neuzelle zw. Abzw.Wellmitz und Neuzelle Straßenneubau Vollsperrung 07.07.2009-31.10.2009 ',
+         'from' => 1246831200,
+         'id' => 1729,
+         'data' => 'userdel	2::inwork 96951,-34887 97016,-36424 97032,-36743 97476,-37327 97680,-37821
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1251842400,
+         'text' => 'K 6910 Am Wasser OD Schwielowsee, zw. Baumgartenbrück u. B 1 Kanal- u. Straßenbau Vollsperrung 16.07.2009-01.09.2009 ',
+         'from' => 1247608800,
+         'id' => 1730,
+         'data' => 'userdel	q4::inwork -19332,-5240 -19112,-5226 -19013,-5247
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1254348000,
+         'text' => 'L 015 Fürstenberg - Menz OD Fürstenberg, zw. Bergstr. und OA Ri. Menz Straßenbau, Brückenabriss Vollsperrung 06.07.2009-30.09.2009 ',
+         'from' => 1246744800,
+         'id' => 1731,
+         'data' => 'userdel	2::inwork -8893,85743 -9850,84800
 ',
          'type' => 'gesperrt'
        }

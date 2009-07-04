@@ -8815,11 +8815,11 @@ EOF
 userdel	q4::inwork -19105,-19043 -19058,-19120
 EOF
      },
-     { from  => 1182577874, # 2007-06-23 07:51
-       until => 1182722400, # 2007-06-25 00:00
-       text  => 'Badstraße (Wedding) in beiden Richtungen zwischen Pankstraße und Behmstraße Veranstaltung, Straße gesperrt (bis 24.06.2007 nachts)',
+     { from  => undef, # 
+       until => 1246831200, # 2009-07-06 00:00
+       text  => 'Badstraße (Wedding) in beiden Richtungen zwischen Pankstr. und Behmstr. Veranstaltung, Straße gesperrt bis Mo 00:00 ',
        type  => 'gesperrt',
-       source_id => 'IM_005849',
+       source_id => 'IM_013416',
        data  => <<EOF,
 userdel	2::temp 8788,16264 8862,16208 8928,16158 8993,16100 9059,16038 9134,15953
 EOF
@@ -14637,6 +14637,39 @@ EOF
        source_id => 'IM_013302',
        data  => <<EOF,
 userdel	1::inwork 15382,5687 15183,5480
+EOF
+     },
+     { from  => undef, # 
+       until => 1246831199, # 2009-07-05 23:59
+       text  => 'Residenzstr. (Reinickendorf) in beiden Richtungen zwischen Pankower Allee und Emmentaler Str. Veranstaltung, Straße vollständig gesperrt (Residenzstraßenfest)',
+       type  => 'gesperrt',
+       source_id => 'IM_013407',
+       data  => <<EOF,
+userdel	2::temp 7587,17532 7500,17796 7487,17836 7466,17904 7445,17968 7439,17985 7418,18051 7350,18262
+EOF
+     },
+     { from  => 1246831200, # 2009-07-06 00:00
+       until => 1257030000, # 2009-11-01 00:00
+       text  => 'B 112 OU Guben - OU Neuzelle zw. Abzw.Wellmitz und Neuzelle Straßenneubau Vollsperrung 07.07.2009-31.10.2009 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 96951,-34887 97016,-36424 97032,-36743 97476,-37327 97680,-37821
+EOF
+     },
+     { from  => 1247608800, # 2009-07-15 00:00
+       until => 1251842400, # 2009-09-02 00:00
+       text  => 'K 6910 Am Wasser OD Schwielowsee, zw. Baumgartenbrück u. B 1 Kanal- u. Straßenbau Vollsperrung 16.07.2009-01.09.2009 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork -19332,-5240 -19112,-5226 -19013,-5247
+EOF
+     },
+     { from  => 1246744800, # 2009-07-05 00:00
+       until => 1254348000, # 2009-10-01 00:00
+       text  => 'L 015 Fürstenberg - Menz OD Fürstenberg, zw. Bergstr. und OA Ri. Menz Straßenbau, Brückenabriss Vollsperrung 06.07.2009-30.09.2009 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -8893,85743 -9850,84800
 EOF
      },
     );
