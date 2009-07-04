@@ -430,6 +430,8 @@ sub plot_osm_files {
 		       ) {
 			$light_color = '#a0a0b0';
 			$dark_color = '#6060a0';
+		    } elsif (exists $tag{'landuse'} && $tag{'landuse'} eq 'farm') {
+			$light_color = '#b2aa5f';
 		    } elsif (exists $tag{'building'} && $tag{'building'} eq 'yes') {
 			$light_color = '#b0a0b0';
 			$dark_color = '#a060a0';
