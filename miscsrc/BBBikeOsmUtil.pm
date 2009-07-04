@@ -736,6 +736,43 @@ sub cleanup_photos {
 #  GET http://www.openstreetmap.org/api/0.5/way/22495210/history
 #  GET http://www.openstreetmap.org/api/0.5/way/22495210
 
+# Osm Menu in SRTShortcuts should be created here and changed to the
+# following layout:
+#
+#  Download visible area as tiles
+#  Delete OSM layer
+#  -
+#  [ ] Offline mode
+#  [x] Load non-existing tiles only
+#  [ ] Refresh daily
+#  [ ] Refresh always
+#  -
+#  Show download URL
+#  Set Merkaartor Icon Style
+#  Download visible area without store
+#
+# The osm-converted layer menu items can reside in SRTShortcuts, for
+# now.
+
+# Download directory should be in ~/.bbbike/osm/<region> by default,
+# to avoid problems with read-only installations.
+
+# Download strategy looks like following:
+# - All tiles are round to 0.01 (see -round option in downloadosm)
+#   (Maybe I can use downloadosm, to avoid duplication of code? Or
+#   downloadosm should be implemented in BBBikeOsmUtil.pm?)
+# - First it is searched if there's an existing tile (regardless
+#   whether "refresh always" is turned on or not). Prefer
+#   ~/.bbbike/osm/berlin/<tilefile> first, then choose the other
+#   directories.
+# - If found:
+#   - in Offline mode, or if no refresh should be done: use it
+#   - if a refresh should be done: mirror to the existing file
+# - If not found:
+#   - in Offline mode -> blank/do nothing/warning message
+#   - if a refresh should be done: mirror to
+#     ~/.bbbike/osm/berlin/elsewhere (create directory if necessary)
+
 1;
 
 __END__
