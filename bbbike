@@ -6083,8 +6083,9 @@ sub define_item_attribs {
 
     # normale Reihenfolge für das Übereinanderlegen bei restack()
     #XXX labels sollten grundsätzlich immer oben sein. Problematisch bei tag_groups
+    # tags in the form '*...*' are special and used just as markers
     @normal_stack_order =
-	(qw(map f w-out w i-out i f-Pabove e e-img
+	(qw(map f w-out w i-out i f-Pabove *landuse* e e-img
 	    gP gD z g gP gD gBO
 	    s-out l-out show gr rw s-NN s-N s-H s-HH s-B s-BAB sBAB sBAB-BAB sBAB-fg l v
 	    f-label-bg wr w-label-bg gBO-label-bg f-label w-label i-label gBO-label
@@ -6092,7 +6093,7 @@ sub define_item_attribs {
 	    r-bg r-fg r_bg-img b-bg b-fg b_bg-img GU-img
 	    u-label r-label b-label
 	    hoehe vf-bg sperre temp_sperre_s temp_sperre v-fg obst
-	    fz route gps_track comm),
+	    fz *route* route gps_track comm),
 	 (map { "comm-$_" } @comments_types),
 	 qw(comm-route-label-bg comm-route-label qs hs ql hl mount nl delnet
 	    crosshairs
@@ -14485,9 +14486,10 @@ sub redraw_path {
 	if (!defined $last_route_below || $last_route_below ne $route_below) {
 	    if ($route_below) {
 		# Hmmm, need to make sure it's over wasser+flaechen XXX
-		special_lower("route", "delay-restack");
+		#XXXspecial_lower("route", "delay-restack");
+		set_in_stack('route', 'above', '*landuse*');
 	    } else {
-		special_normal("route", "delay-restack");
+		set_in_stack('route', 'above', '*route*');
 	    }
 	    $last_route_below = $route_below;
 	}
@@ -18837,6 +18839,7 @@ sub real_stack_order {
 
     push @real_order, @special_lower;
     foreach (@normal_stack_order) {
+	next if m{^\*.*\*$}; # ignore special tags
 	if (!$special_lower{$_} && !$special_raise{$_}) {
 	    push @real_order, $_;
 	}
@@ -18944,6 +18947,7 @@ sub add_to_stack {
     }
     my $i = 0;
     for (@normal_stack_order) {
+	# XXX I think I don't have to check against '*...*' tags
 	if ($_ eq $other_abk) {
 	    if ($how =~ m{^(after|above)$}) {
 		splice @normal_stack_order, $i+1, 0, $abk, "$abk-fg";
@@ -18958,6 +18962,13 @@ sub add_to_stack {
 	$i++;
     }
     push @normal_stack_order, $abk, "$abk-fg";
+}
+
+### AutoLoad Sub
+sub set_in_stack {
+    my($abk, $how, $other_abk) = @_;
+    remove_from_stack($abk);
+    add_to_stack($abk, $how, $other_abk);
 }
 
 ### AutoLoad Sub
@@ -20591,8 +20602,7 @@ sub handle_global_directives {
 	    if (!defined $other_abk) {
 		status_message("The layer_stack directive needs how:tag as an argument", "die");
 	    }
-	    remove_from_stack($abk);
-	    add_to_stack($abk, $how, $other_abk);
+	    set_in_stack($abk, $how, $other_abk);
 	} else {
 	    my($key, $cat) = $directive =~ /^([^\.]+)\.([^\.]+)/;
 	    if (defined $key) {
