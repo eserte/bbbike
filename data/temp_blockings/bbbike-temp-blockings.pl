@@ -1246,7 +1246,7 @@ EOF
        text  => 'B 167; (Zerpenschleuse-Liebenwalde); zw. OA Liebenwalde und Abzw. Hammer Erneuerung Durchlass Vollsperrung 26.11.2004-06.12.2004 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 11228,52175 10103,52074 9686,52037
+userdel	2 11095,52184 10103,52074 9686,52037
 EOF
      },
      { from  => 1085263200, # 2004-05-23 00:00
@@ -1708,7 +1708,7 @@ EOF
        text  => 'B 2; (Leipziger Str.); OD Treuenbrietzen, zw. Krz.Leipz.-/Belziger Str. u. Hinter d.Mauer Straßenbau, KVK Vollsperrung 29.03.2005-30.11.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 -25322,-35457 -24967,-35112
+userdel	q4 -25419,-35417 -25163,-35142 -24963,-35018
 EOF
      },
      { from  => 1113256800, # 2005-04-12 00:00
@@ -1995,7 +1995,7 @@ EOF
        text  => 'L 29; (Biesenthal-Wandlitz); Bahnübergang bei Wandlitz Gleisbauarbeiten Vollsperrung 31.05.2005-02.06.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 15403,40364 14713,40426
+userdel	2 15403,40364 14698,40345
 EOF
      },
      { from  => 1117317600, # 2005-05-29 00:00
@@ -4350,7 +4350,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 26936,23104 27283,23503
-userdel	2 28323,24341 27608,23776
+userdel	2 28246,24272 27608,23776
 userdel	2 27283,23503 27608,23776
 EOF
      },
@@ -5597,7 +5597,7 @@ EOF
        text  => 'L 811 OA Oehna - Landesgrenze Sachsen-A. OA Oehna - Landesgrenze Sachsen-A. Straßenausbau Vollsperrung 28.08.2006-30.11.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork -13946,-56116 -13817,-54938 -13601,-53865
+userdel	2::inwork -13946,-56116 -13817,-54938
 EOF
      },
      { from  => 1156792939, # 2006-08-28 21:22
@@ -7380,7 +7380,7 @@ EOF
        text  => 'B 167 Marienwerderstr. OD Finowfurt, zw. Zum Krugacker u. Werbelliner Str. Fahrbahnsanierung Vollsperrung 20.03.2007-24.03.2007 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 28589,49775 27634,49953
+userdel	q4::inwork 28575,49756 27626,49928
 EOF
      },
      { from  => 1174773600, # 2007-03-24 23:00
@@ -7689,7 +7689,7 @@ EOF
        text  => 'B 167 Eberswalder Str. OD Eberswalde, zw. Spechthausener Str. u. Schönholzer Str. Deckenerneuerung Vollsperrung 10.04.2007-24.04.2007 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 32143,48553 33252,48525 34356,48775
+userdel	q4::inwork 32189,48528 33242,48503 34356,48775
 EOF
      },
      { from  => 1176069600, # 2007-04-09 00:00
@@ -8770,7 +8770,7 @@ EOF
        text  => 'L 235 Gielsdorf-Werneuchen OD Werneuchen Straßenausbau Vollsperrung 29.08.2007-20.12.2007 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 32766,25156 33511,24201
+userdel	q4::inwork 32715,25292 32826,25218 33510,24304
 EOF
      },
      { from  => 1182281851, # 2007-06-19 21:37
@@ -9978,7 +9978,7 @@ EOF
        text  => 'L 031 zw. Bernau, hinter Zuf. Toom Baumarkt und BÜ Blumberg Deckensanierung Vollsperrung 01.10.2007-07.10.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 24186,26271 24204,25870 24244,25405 24242,25066 24281,24622 24214,24093 24677,23407 24761,23151 24718,22731
+userdel	2::inwork 24186,26271 24204,25870 24244,25405 24242,25066 24281,24622 24235,24035 24697,23369 24761,23151 24718,22731
 EOF
      },
      { from  => 1191103200, # 2007-09-30 00:00
@@ -11033,7 +11033,7 @@ EOF
        text  => 'L 235 Gielsdorf-Werneuchen OD Werneuchen Straßenausbau Vollsperrung 10.03.2008-10.05.2008 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 32766,25156 33511,24201
+userdel	q4::inwork 32715,25292 32826,25218 33510,24304
 EOF
      },
      { from  => 1205622000, # 2008-03-16 00:00
@@ -11124,7 +11124,7 @@ EOF
        text  => 'B 101 zw. Jüterbog und Hohenahlsdorf Deckenerneuerung Vollsperrung 02.04.2008-23.04.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork -7465,-53204 -7723,-51946 -8071,-50478 -8343,-49645 -8733,-48657 -9039,-47752
+userdel	2::inwork -7465,-53204 -7643,-51997 -8071,-50478 -8349,-49427 -8616,-48813 -8768,-48324 -8931,-47810
 EOF
      },
      { from  => 1206828000, # 2008-03-29 23:00
@@ -11930,7 +11930,7 @@ EOF
        text  => 'L 029 Lanke - Zehlendorf nördl. Wandlitz, ab B109 in Ri. Stolzenhagen Bau Kreisverkehr Vollsperrung 17.08.2008-31.12.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 15403,40364 14713,40426
+userdel	2::inwork 15403,40364 14698,40345
 EOF
      },
      { from  => 1216674352, # 2008-07-21 23:05
@@ -12017,7 +12017,7 @@ EOF
        text  => 'B 102 Umgehungsstr. Brücke über die Nieplitz in der OD Treuenbrietzen Brückenneubau Vollsperrung 21.07.2008-19.12.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork -25322,-35457 -24932,-35664
+userdel	2::inwork -25419,-35417 -24932,-35664
 EOF
      },
      { from  => 1216504800, # 2008-07-20 00:00
@@ -12265,7 +12265,7 @@ EOF
        text  => 'B 273 A 11 - Wandlitz zw. Abzw. Bernau und Wandlitz Rückau u. Erneuerung B273 Vollsperrung 18.08.2008-30.06.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 16953,35907 16647,36127 16132,36512 15491,37176 15385,37268 15253,37443 14909,37400 14477,37252 13556,37493
+userdel	2::inwork 16953,35907 16653,35993 16132,36512 15491,37176 15385,37268 15253,37443 14909,37400 14477,37252 13556,37493
 EOF
      },
      { from  => 1218924000, # 2008-08-17 00:00
@@ -12492,7 +12492,7 @@ EOF
        text  => 'L 220 AS Finowfurt - Joachimsthal zw. der B167 und der OL Eichhorst Deckenerneuerung Vollsperrung 04.09.2008-11.09.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 25488,54151 25395,53549 25347,53338 25368,53125 25393,52762 25556,52375 26375,50681 26256,50418
+userdel	2::inwork 25488,54151 25395,53549 25347,53338 25368,53125 25393,52762 25556,52375 26351,50634
 EOF
      },
      { from  => 1221084000, # 2008-09-11 00:00
@@ -12774,7 +12774,7 @@ EOF
        text  => 'L 294 Ruhlsdorfer Str. OD Biesenthal, zw. Lanker Str. und Akazienallee Straßenneubau Vollsperrung 22.09.2008-14.12.2008 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 24189,41639 24142,41045 24248,40620 24354,40323
+userdel	q4::inwork 24120,41684 24106,41050 24185,40670 24374,40395
 EOF
      },
      { from  => 1224540000, # 2008-10-21 00:00
@@ -13646,7 +13646,7 @@ EOF
        text  => 'B 102 Belziger Straße OD Treuenbrietzen, Kreisverkehr Ri. Belzig Sanierung Kreisverkehr Vollsperrung 15.04.2009-29.05.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork -25627,-35335 -25322,-35457
+userdel	q4::inwork -25654,-35292 -25419,-35417
 EOF
      },
      { from  => 1239573600, # 2009-04-13 00:00
@@ -13654,7 +13654,7 @@ EOF
        text  => 'B 158 Blumberg - Werneuchen zw. Blumberg u. Seefeld Deckenerneuerung Vollsperrung 14.04.2009-13.07.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 28531,24375 28323,24341 27608,23776 27283,23503 26936,23104 26764,23083 25641,22864 25295,22655 24951,22681 24735,22556
+userdel	2::inwork 28531,24375 28246,24272 27608,23776 27283,23503 26936,23104 26764,23083 25641,22864 25295,22655 24951,22681 24735,22556
 EOF
      },
      { from  => 1239919200, # 2009-04-17 00:00
@@ -14019,7 +14019,7 @@ EOF
        text  => 'B 158 Blumberg - Werneuchen zw. Seefeld und Werneuchen Deckenerneuerung Vollsperrung 11.05.2009-13.06.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 29103,24437 29528,24348 29791,24336 31905,25433 32229,25382
+userdel	2::inwork 29103,24437 29528,24348 29791,24336 31924,25478 32253,25457
 EOF
      },
      { from  => 1242281874, # 2009-05-14 08:17
@@ -14385,7 +14385,7 @@ EOF
        text  => 'B 102 Treuenbrietzener Str. OD Jüterbog, zw. Parkstr. und Bülowstr. Straßenausbau Vollsperrung 15.06.2009-30.09.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork -13089,-46170 -12581,-46124
+userdel	q4::inwork -13108,-46122 -12541,-46115
 EOF
      },
      { from  => 1244930400, # 2009-06-14 00:00

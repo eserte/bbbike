@@ -1218,7 +1218,7 @@ userdel	q4::inwork 9126,12413 9345,12443
          'text' => 'B 102 Treuenbrietzener Str. OD Jüterbog, zw. Parkstr. und Bülowstr. Straßenausbau Vollsperrung 15.06.2009-30.09.2009 ',
          'from' => 1244930400,
          'id' => 1697,
-         'data' => 'userdel	q4::inwork -13089,-46170 -12581,-46124
+         'data' => 'userdel	q4::inwork -13108,-46122 -12541,-46115
 ',
          'type' => 'handicap'
        },
