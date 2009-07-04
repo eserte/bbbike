@@ -2010,18 +2010,13 @@ route and a point and return information like:
 
 Do layer stacking for bridges and tunnels right. Some idea: we need
 additional tags <abk>-L<level> to signalize special layer levels. The
-normal layer order would be something like (L0=below, L1=normal
-(typically missing), L2=above):
+normal layer order would be something like (LVL-1=below, LVL0=normal
+(typically missing), LVL+1=above):
 
-     "u/r/b-L0" "s/l-L0" "u/r/b" "s/l" "u/r/b-L1" "s/l-L1"
+     "u/r/b-LVL-1" "s/l-LVL-1" "u/r/b" "s/l" "u/r/b-LVL+1" "s/l-LVL+1"
 
 Have to find out where to put outlines, radwege, bahnhoefe and such
 into the layer stack.
-
-=> Maybe use better LVL instead of L, to avoid confusion with the
-naming of custom layers (which also use an L). Also, ground level
-should probably be 0, and -1 is below, and +1 is above (like in OSM
-data).
 
 =item * (H3) (feature)
 
