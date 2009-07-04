@@ -61,6 +61,7 @@ my $o;
 my $xstep = 0.01;
 my $ystep = 0.01;
 my $do_round;
+my $do_report;
 
 sub usage () {
     die <<EOF;
@@ -77,6 +78,8 @@ Second form: refresh existing osm files downloaded with this tool
 -ystep y:  set steps on the y axis (default=$ystep)
 -step  xy: set steps for both the x and y axis
 -round:    make sure bbox is rounded to 1/100 degree
+           NOTE: works only with -x/ystep 0.01!!!
+-report:   just report what URLs would be loaded to STDOUT
 
 With -reload:
 -minage days: download only files which are older than days days
@@ -99,6 +102,7 @@ GetOptions("reload!" => \$do_reload,
 	       $xstep = $ystep = $_[1];
 	   },
 	   "round!" => \$do_round,
+	   "report!" => \$do_report,
 	  )
     or usage;
 my @reload;
@@ -168,7 +172,7 @@ if (@reload) {
     ($x1,$x2) = ($x2,$x1) if $x1 > $x2;
     ($y1,$y2) = ($y2,$y1) if $y1 > $y2;
 
-    if ($do_round) {
+    if ($do_round) { # XXX works only for $xstep/$ystep = 0.01!!!
 	my $up = sub {
 	    my $dir = $_[1];
 	    if ($_[0] =~ m{\.\d\d.*[1-9]}) {
@@ -223,6 +227,16 @@ sub download_osm_tile {
     my($x,$y,$xend,$yend, $reload) = @_;
     my $url = "$OSM_API_URL/map?bbox=$x,$y,$xend,$yend";
     my $dest = "download_$x,$y,$xend,$yend.osm";
+    if ($do_report) {
+	if (-s "$dest.bz2") {
+	    print "$dest.bz2 $url\n";
+	} elsif (-s "$dest.gz") {
+	    print "$dest.gz $url\n";
+	} else {
+	    print "$dest $url\n";
+	}
+	return;
+    }
     if ((-s $dest || -s "$dest.gz") && !$reload) {
 	warn "$dest already exists, skipping...\n" if $debug;
     } else {
