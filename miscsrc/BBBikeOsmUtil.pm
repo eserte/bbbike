@@ -279,6 +279,7 @@ sub plot_osm_files {
                          # this is also supposed to work for small
                          # files only
     my $c = $main::c;
+    my $c_bg = $c->cget('-background');
     my $map_conv = _get_map_conv();
 
     if (!$osm_layer) {
@@ -461,6 +462,8 @@ sub plot_osm_files {
 			    ) {
 			$light_color = '#b0b2b2';
 			$dark_color = '#707272';
+		    } elsif (!%tag || (keys %tag == 1 && exists $tag{'created_by'})) { # means basically: item without meaningful tags
+			$light_color = $c_bg;
 		    }
 		    $c->createPolygon(@coordlist,
 				      -fill => $light_color,
