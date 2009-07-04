@@ -39,7 +39,8 @@ $OSM_API_URL = "http://www.openstreetmap.org/api/0.6";
 $OSM_FALLBACK_API_URL = "http://www.informationfreeway.org/api/0.6";
 
 use vars qw($MAPNIKPLUS_MAS $ALLICONS_QRC $USE_MERKAARTOR_ICONS %ICON_NAME_TO_PHOTO);
-for my $merkaartor_work_dir ("$ENV{HOME}/work/merkaartor", # use 'svn co http://svn.openstreetmap.org/applications/editors/merkaartor/' in ~/work
+for my $merkaartor_work_dir ("/usr/local/src/work/merkaartor",
+			     "$ENV{HOME}/work/merkaartor", # use 'svn co http://svn.openstreetmap.org/applications/editors/merkaartor/' in ~/work
 			     "$ENV{HOME}/work2/merkaartor",
 			     "/usr/ports/astro/merkaartor/work/merkaartor-0.13.2", # for FreeBSD port
 			    ) {
