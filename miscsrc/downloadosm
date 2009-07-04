@@ -40,6 +40,10 @@ use vars qw($OSM_API_URL);
 #$OSM_API_URL = "http://www.openstreetmap.org/api/0.5";
 $OSM_API_URL = "http://www.openstreetmap.org/api/0.6";
 
+my $ltlnqr = qr{([-+]?\d+(?:\.\d+)?)};
+my $osm_download_file_qr       = qr{/download_$ltlnqr,$ltlnqr,$ltlnqr,$ltlnqr\.osm(?:\.gz|\.bz2)?$};
+my $short_osm_download_file_qr =           qr{$ltlnqr,$ltlnqr,$ltlnqr,$ltlnqr\.osm(?:\.gz|\.bz2)?$};
+
 my $ua = eval {
     require LWP::UserAgent;
     my $ua = LWP::UserAgent->new;
@@ -131,8 +135,9 @@ if (@reload) {
 	}
     }
     for my $reload (@reload) {
-	my $ltlnqr = qr{[-+]?\d+\.\d+};
-	if ($reload !~ m{($ltlnqr),($ltlnqr),($ltlnqr),($ltlnqr)\.osm(?:\.gz)?$}) {
+	my $ltlnqr = qr{([-+]?\d+(?:\.\d+)?)};
+
+	if ($reload !~ $short_osm_download_file_qr) {
 	    die "The file name <$reload> does not look correct, i.e. created by this tool.\n";
 	}
 	my($x,$y,$xend,$yend) = ($1,$2,$3,$4);

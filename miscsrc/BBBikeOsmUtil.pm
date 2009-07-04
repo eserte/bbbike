@@ -32,7 +32,8 @@ use VectorUtil qw(enclosed_rectangle intersect_rectangles normalize_rectangle);
 use vars qw($UNINTERESTING_TAGS);
 $UNINTERESTING_TAGS = qr{^(name|created_by|source|url)$};
 
-my $osm_download_file_qr = qr{/download_(-?\d+\.\d+),(-?\d+\.\d+),(-?\d+\.\d+),(-?\d+\.\d+)\.osm(?:\.gz|\.bz2)?$};
+my $ltlnqr = qr{([-+]?\d+(?:\.\d+)?)};
+my $osm_download_file_qr       = qr{/download_$ltlnqr,$ltlnqr,$ltlnqr,$ltlnqr\.osm(?:\.gz|\.bz2)?$};
 
 use vars qw($OSM_API_URL $OSM_FALLBACK_API_URL);
 #$OSM_API_URL = "http://www.openstreetmap.org/api/0.5";
@@ -133,7 +134,7 @@ sub mirror_and_plot_visible_area_constrained {
     my @elsewhere_tiles;
 
     open my $fh, "-|",
-	$^X, bbbike_root() . "/miscsrc/downloadosm", "-round", "-report", "-o", $berlin_dir, $x0,$y0,$x1,$y1
+	$^X, bbbike_root() . "/miscsrc/downloadosm", "-xstep", "0.1", "-ystep", "0.1", "-round", "-report", "-o", $berlin_dir, $x0,$y0,$x1,$y1
 	    or die "Can't run downloadosm: $!";
     while(<$fh>) {
 	chomp;
