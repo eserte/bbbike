@@ -282,6 +282,13 @@ sub add_button {
 		     main::status_message("Official URL: $url\nFallback URL: $url2", "infodlg");
 		 }],
 		"-",
+		[Button => 'Set Merkaartor Icon Style',
+		 -command => sub {
+		     _require_BBBikeOsmUtil();
+		     BBBikeOsmUtil::choose_merkaartor_icon_style();
+		 },
+		],
+		"-",
 		[Button => 'OSM-converted layer',
 		 -state => 'disabled',
 		 -font => $main::font{'bold'},

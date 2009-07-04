@@ -23,7 +23,7 @@ use vars qw($osm_layer $osm_layer_area $osm_layer_landuse $osm_layer_cover
 	  );
 
 use Cwd qw(realpath);
-use File::Basename qw(dirname);
+use File::Basename qw(dirname basename);
 use File::Glob qw(bsd_glob);
 
 use VectorUtil qw(enclosed_rectangle intersect_rectangles normalize_rectangle);
@@ -38,24 +38,11 @@ use vars qw($OSM_API_URL $OSM_FALLBACK_API_URL);
 $OSM_API_URL = "http://www.openstreetmap.org/api/0.6";
 $OSM_FALLBACK_API_URL = "http://www.informationfreeway.org/api/0.6";
 
-use vars qw($MAPNIKPLUS_MAS $ALLICONS_QRC $USE_MERKAARTOR_ICONS %ICON_NAME_TO_PHOTO);
-for my $merkaartor_work_dir ("/usr/local/src/work/merkaartor",
-			     "$ENV{HOME}/work/merkaartor", # use 'svn co http://svn.openstreetmap.org/applications/editors/merkaartor/' in ~/work
-			     "$ENV{HOME}/work2/merkaartor",
-			     "/usr/ports/astro/merkaartor/work/merkaartor-0.13.2", # for FreeBSD port
-			    ) {
-    my $candidate_MAPNIKPLUS_MAS = "$merkaartor_work_dir/Styles/MapnikPlus.mas";
-    my $candidate_ALLICONS_QRC   = "$merkaartor_work_dir/Icons/AllIcons.qrc";
-    if (-r $candidate_MAPNIKPLUS_MAS && -r $candidate_ALLICONS_QRC) {
-	$MAPNIKPLUS_MAS = $candidate_MAPNIKPLUS_MAS;
-	$ALLICONS_QRC   = $candidate_ALLICONS_QRC;
-	$USE_MERKAARTOR_ICONS = 1;
-	last;
-    }
-}
+use vars qw($MERKAARTOR_MAS_BASE $MERKAARTOR_MAS $ALLICONS_QRC $USE_MERKAARTOR_ICONS %ICON_NAME_TO_PHOTO);
 
 sub register {
     _create_images();
+    _find_merkaartor_data();
 }
 
 {
@@ -282,7 +269,7 @@ sub plot_osm_files {
     my $node_attr_to_icon = {};
     if ($USE_MERKAARTOR_ICONS) {
 	require MerkaartorMas;
-	$node_attr_to_icon = MerkaartorMas::parse_icons_from_mas($MAPNIKPLUS_MAS, $ALLICONS_QRC);
+	$node_attr_to_icon = MerkaartorMas::parse_icons_from_mas($MERKAARTOR_MAS, $ALLICONS_QRC);
     }
 
     my %node2ll;
@@ -635,6 +622,113 @@ sub _get_map_conv {
 	$transpose->($x, $y);
     };
     $map_conv;
+}
+
+sub _best_merkaartor_work_dir {
+    for my $merkaartor_work_dir
+	("/usr/local/src/work/merkaartor",
+	 "$ENV{HOME}/work/merkaartor", # use 'svn co http://svn.openstreetmap.org/applications/editors/merkaartor/' in ~/work
+	 "$ENV{HOME}/work2/merkaartor",
+	 "/usr/ports/astro/merkaartor/work/merkaartor-0.13.2", # for FreeBSD port
+	) {
+	if (-r "$merkaartor_work_dir/Icons/AllIcons.qrc" &&
+	    bsd_glob("$merkaartor_work_dir/Styles/*.mas")
+	   ) {
+	    return $merkaartor_work_dir;
+	}
+    }
+}
+
+sub _find_merkaartor_data {
+    cleanup_photos();
+
+    my $merkaartor_work_dir = _best_merkaartor_work_dir();
+    if (!$merkaartor_work_dir) {
+	warn "No Merkaartor source directory found, cannot use Merkaartor icons...\n";
+	$USE_MERKAARTOR_ICONS = 0;
+	return;
+    }
+
+    $ALLICONS_QRC = "$merkaartor_work_dir/Icons/AllIcons.qrc";
+    if (!-r $ALLICONS_QRC) {
+	warn "File '$ALLICONS_QRC' not existent or not readable, cannot use Merkaartor icons...\n";
+	$USE_MERKAARTOR_ICONS = 0;
+	return;
+    }
+
+    if (!$MERKAARTOR_MAS_BASE) {
+	for my $mas_candidate ("$merkaartor_work_dir/Styles/MapnikPlus.mas",
+			       bsd_glob("$merkaartor_work_dir/Styles/*.mas"),
+			      ) {
+	    if (-r $mas_candidate) {
+		$MERKAARTOR_MAS = $mas_candidate;
+		warn "Found Merkaartor style $MERKAARTOR_MAS...\n";
+		$MERKAARTOR_MAS_BASE = basename $MERKAARTOR_MAS;
+		$USE_MERKAARTOR_ICONS = 1;
+		return;
+	    }
+	}
+    }
+
+    {
+	my $mas_candidate = "$merkaartor_work_dir/Styles/$MERKAARTOR_MAS_BASE";
+	if (-r $mas_candidate) {
+	    $MERKAARTOR_MAS = $mas_candidate;
+	    warn "Use Merkaartor style $MERKAARTOR_MAS...\n";
+	    $USE_MERKAARTOR_ICONS = 1;
+	    return;
+	}
+    }
+
+    warn "No usable Merkaartor style found, cannot use Merkaartor icons...\n";
+
+    $USE_MERKAARTOR_ICONS = 0;
+}
+
+sub choose_merkaartor_icon_style {
+    my $merkaartor_work_dir = _best_merkaartor_work_dir();
+    if (!$merkaartor_work_dir) {
+	main::status_message("Cannot find suitable Merkaartor source directory.", "err");
+	return;
+    }
+    my @styles = map { basename $_ } bsd_glob("$merkaartor_work_dir/Styles/*.mas");
+    if (!@styles) {
+	main::status_message("No Merkaartor styles found in directory $merkaartor_work_dir/Styles.", "err");
+	return;
+    }
+    my $t = $main::top->Toplevel(-title => 'Choose Merkaartor Icon Style');
+    $t->transient($main::top) if $main::transient;
+    my $current_merkaartor_mas_base = $MERKAARTOR_MAS_BASE;
+    for my $style (@styles) {
+	$t->Radiobutton(-variable => \$current_merkaartor_mas_base,
+			-value => $style,
+			-text => $style,
+		       )->pack;
+    }
+    {
+	my $f = $t->Frame->pack(qw(-fill x));
+	$f->Button(-text => "OK",
+		   -command => sub {
+		       $MERKAARTOR_MAS_BASE = $current_merkaartor_mas_base;
+		       _find_merkaartor_data();
+		       $t->destroy;
+		   }
+		  )->pack(qw(-side left));
+	$f->Button(-text => "Cancel",
+		   -command => sub {
+		       $t->destroy;
+		   }
+		  )->pack(qw(-side left));
+    }
+}
+
+sub cleanup_photos {
+    for my $p (values %ICON_NAME_TO_PHOTO) {
+	if ($p) {
+	    $p->delete;
+	}
+    }
+    %ICON_NAME_TO_PHOTO = ();
 }
 
 # TODO:
