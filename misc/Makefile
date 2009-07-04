@@ -142,20 +142,23 @@ data_berlin_osm_bbbike_untiled:
 ######################################################################
 # Various downloads
 
-# ca. 1:24 h download time, 7020 tiles:
+# with -step 0.1: ca. 0:07 h download time, 70 tiles:
+# (formerly with -step 0.01: ca. 1:24 h download time, 7020 tiles)
 download-tiled-uckermark:
 	cd download/osm && mkdir -p uckermark && cd uckermark && \
-	    ${MISCSRCDIR}/downloadosm 13.19 53.47 14.48 52.94 -o .
+	    ${MISCSRCDIR}/downloadosm -step 0.1 13.1 53.4 14.5 52.9 -o .
 
-# ca. 0:42 h download time, 3619 tiles:
+# with -step 0.1: ca. 0:05 h download time, 45 tiles:
+# (formerly with -step 0.01: ca. 0:42 h download time, 3619 tiles)
 download-tiled-usedom:
 	cd download/osm && mkdir -p usedom && cd usedom && \
-	    ${MISCSRCDIR}/downloadosm 13.67 54.18 14.43 53.72 -o .
+	    ${MISCSRCDIR}/downloadosm -step 0.1 13.6 54.2 14.5 53.7 -o .
 
-# ca. 0:30 h download time, 551 tiles:
+# with -step 0.1: ca. 0:10 h download time, 6 tiles:
+# (formerly with -step 0.01: ca. 0:30 h download time, 551 tiles)
 download-tiled-potsdam:
 	cd download/osm && mkdir -p potsdam && cd potsdam && \
-	    ${MISCSRCDIR}/downloadosm 12.91 52.50 13.19 52.32 -o .
+	    ${MISCSRCDIR}/downloadosm -step 0.1 12.9 52.5 13.2 52.3 -o .
 
 ######################################################################
 # Testing for dalmatia
