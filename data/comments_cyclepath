@@ -92,7 +92,7 @@ Lobetal: verkehrsberuhigte Straße	RW 23008,35569 23232,36004
 Schönerlinder Str.: Radweg auf Gehweg	RW 17368,27859 17689,27853 18053,27875 18337,27854 18410,27890 18817,27979 18899,27976 19196,27963
 B2: Radweg	RW 22257,29814 22262,29723
 B2: Radweg	RW 22206,30826 22378,30943
-Breitscheidstr. (Bernau)	RW 22868,30412 22712,30340
+Breitscheidstr. (Bernau)	RW3;RW3 22712,30340 22783,30373 22868,30412 22892,30426 23024,30523
 Zweirichtungsradweg auf der südlichen Seite, feiner Schotter	RW -14669,-686 -15243,-656
 Radweg auf Gehweg	RW; -18125,-843 -18631,-778 -18725,-673
 Radweg (Verbundsteinpflaster)	RW; -19232,34 -18964,793
@@ -102,7 +102,10 @@ Zweirichtungsradweg auf der östlichen Seite	RW -17588,2815 -17309,2517 -16706,19
 Bötzseestr.: verkehrsberuhigte Straße	RW 39287,17231 39193,16900 39400,15803
 Rehfelde - Strausberg: Zweirichtungsradweg auf der nördlichen/östlichen Seite, Verbundsteinpflaster	RW 44121,14615 43743,14634 43162,14428 42996,14793
 Rehfelde: Zweirichtungsradweg auf der östlichen Seite, Verbundsteinpflaster	RW 46421,14990 46250,14765 46053,14653 45856,14437
-Verbundsteinpflasterradweg zumindest Richtung Osten	RW; 23109,30968 23325,31194 23549,31301
+	RW2; 23179,31047 23109,30968
+Verbundsteinpflasterradweg	RW2; 23179,31047 23325,31194 23549,31301 23647,31351 23701,31395
+Verbundsteinpflasterradweg	RW2; 23109,30968 23103,30923 22922,30640
+Gehweg für Radfahrer freigegene	RW1;RW1 23024,30523 22922,30640
 Auf beiden Seiten Verbundsteinpflasterradwege	RW 37961,52548 37650,53211
 Zumeist holprige Verbundsteinpflasterradwege	RW 40868,102837 40670,102503 40342,102355 40168,102237 40025,101987 39830,101921 39715,101866
 Rudolf-Breitscheid-Str.: Radstreifen	RW4; -10973,-1764 -11056,-1726
@@ -281,7 +284,6 @@ Werbellinsee: asphaltierter Zweirichtungsradweg auf der nordwestlichen Seite	RW 
 Eichhorst: asphaltierter Zweirichtungsradweg auf der südöstlichen Seite	RW 25512,54174 25488,54151
 Eichhorst - Finowfurt: asphaltierter Zweirichtungsradweg auf der östlichen Seite	RW 25488,54151 25395,53549
 Eichhorst - Finowfurt: asphaltierter Zweirichtungsradweg auf der westlichen Seite	RW 25395,53549 25347,53338
-Breitscheidstr. (Bernau): Suggestivstreifen	RW 23024,30523 22907,30433 22868,30412
 Am Bahnhof Bernau: Suggestivstreifen	RW 22868,30412 22904,30359
 	RW 2246,31162 2219,31171 2173,31187 2126,31207 2042,31236 1931,31275 1918,31279 1762,31318 1737,31303
 	RW4;RW2 1346,-762 1212,-706 925,-684 741,-584 465,-662 348,-743
@@ -301,6 +303,13 @@ Mäßiger Asphalt	RW2; -13375,2950 -13929,2548
 asphaltierter Zweirichtungsradweg auf der östlichen Seite	RW8;RW2 59747,33516 59814,33354 59908,33095 59941,33004
 Verbundsteinpflaster-Zweirichtungsradweg auf der östlichen Seite	RW8;RW2 59941,33004 60123,32505 60213,32415
 	RW2 44536,20408 44686,20822 44692,20886 44631,21051 44661,21139 44596,21287
+Verbundsteinpflaster-Zweirichtungsradweg	RW8;RW2 26497,33280 26755,33126
+asphaltierter Zweirichtungsradweg	RW8;RW2 26755,33126 27004,32977
+Verbundsteinpflaster-Zweirichtungsradweg	RW8;RW2 27004,32977 27103,32918
+Verbundsteinpflasterradweg	RW2; 46413,46342 46478,46164 46557,46048 46622,45896
+Verbundsteinpflasterradweg	RW2; 46734,45729 47076,45358
+Gehweg für Radfahrer freigegeben	RW1; 45328,48225 45519,48299 45833,48555 45893,48802
+Verbundsteinpflaster-Zweirichtungsradweg	RW8;RW2 45893,48802 45925,49350 46094,49871
 	RW 16953,35907 17114,35904 18082,36115 18440,36179 19193,36011
 Industriestr. (Dahlwitz-Hoppegarten): gegenläufiger Radweg, rotes Betonpflaster	RW 25938,11837 26042,11798 26222,11726 26555,11601 26794,11513 26880,11479
 	RW 1596,29362 1631,29260 1748,29003 1805,28879 1838,28808 1896,28681 2015,28414

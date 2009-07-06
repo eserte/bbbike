@@ -10645,7 +10645,7 @@ EOF
        text  => 'L 029 Hohenfinow - Heckelberg zw. Heckelberg und Kruge Fahrbahninstandsetzung Vollsperrung 10.12.2007-21.12.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 39917,38037 40666,38512 42062,39651
+userdel	2::inwork 39917,38037 40666,38512 41864,39489 42062,39651
 EOF
      },
      { from  => 1197154800, # 2007-12-09 00:00
