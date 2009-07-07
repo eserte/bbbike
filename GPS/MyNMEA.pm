@@ -93,6 +93,7 @@ sub parse_GPRMC {
 	my($H,$M,$S) = $l[1] =~ m{^(\d\d)(\d\d)(\d\d)$};
 	my($d,$m,$y) = $l[9] =~ m{^(\d\d)(\d\d)(\d\d)$};
 	$y+=2000; # no support before 2000
+	local $^W = 0; # possibly some uninitialized values following:
 	"$y$m$d".'T'."$H$M$S";
     };
     return {lon=>$laenge, lat=>$breite, isodate=>$isodate};
