@@ -347,18 +347,16 @@ if(1||$self->{Width} < $self->{Height}){#XXX scheint sonst undefinierbare Proble
 	($xw, $yw) = (5, 5);
     }
 
-# XXX verschiedene Zeichensatzgrößen für die Orte
-    my $min_ort_category = ($self->{Xk} < 0.005 ? 4
- 			    : ($self->{Xk} < 0.01 ? 3
- 			       : ($self->{Xk} < 0.02 ? 2
- 				  : ($self->{Xk} < 0.03 ? 1 : 0))));
+    my $min_ort_category = ($self->{Xk} < 0.005 ? 3
+ 			    : ($self->{Xk} < 0.01 ? 2
+ 			       : ($self->{Xk} < 0.02 ? 1 : 0)));
     my %ort_font = (0 => 6,
 		    1 => 7,
 		    2 => 8,
- 		    3 => 9,
- 		    4 => 10,
- 		    5 => 12,
- 		    6 => 14,
+ 		    3 => 10,
+ 		    4 => 12,
+ 		    5 => 14,
+ 		    6 => 16,
  		   );
     foreach my $def (['ubahn', 'ubahnhof', 'u'],
 		     ['sbahn', 'sbahnhof', 's'],
