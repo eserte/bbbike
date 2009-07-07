@@ -3593,6 +3593,8 @@ nicht lokalisiert. M(...) und Co. verwenden. Es wäre auch schön, wenn
 es auch möglich wäre, convert() eine Option für die Sprache anzugeben.
 Nur wenn diese fehlt, dann wird automatisch ausgewählt.
 
+-> Route::Descr hat mittlerweile M(...) support! Bloggen!
+
 =back
 
 =head3 Route::GPX
