@@ -183,16 +183,7 @@ userdel	q4::inwork 9209,12795 9280,12883
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_013416',
-         'until' => 1246831200,
-         'text' => 'Badstraﬂe (Wedding) in beiden Richtungen zwischen Pankstr. und Behmstr. Veranstaltung, Straﬂe gesperrt bis Mo 00:00 ',
-         'from' => undef,
-         'id' => 1046,
-         'data' => 'userdel	2::temp 8788,16264 8862,16208 8928,16158 8993,16100 9059,16038 9134,15953
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1162,15 +1153,7 @@ userdel	q4::inwork 9126,12413 9345,12443
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1246831200,
-         'text' => 'L 171 Kurt-Tucholsky-Straﬂe Ol Hohen Neuendorf, zw. Hˆhe E.-Toller-Str. u. OA Neubau Straﬂenbordanlage halbseitig gesperrt; Einbahnstraﬂe 25.05.2009-05.07.2009 ',
-         'from' => 1243116000,
-         'id' => 1680,
-         'data' => 'userdel	q4::inwork 1366,29416 1304,29256 1234,29120 1124,28923 1078,28830 1020,28712 1009,28662 1007,28446
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1360,15 +1343,7 @@ userdel	q4::inwork; 15698,8191 15561,8072
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1246831200,
-         'text' => 'L 026 Wollschow - Prenzlau OD Br¸ssow 750 Jahre Br¸ssow Vollsperrung 04.07.2009-05.07.2009 ',
-         'from' => 1246572000,
-         'id' => 1718,
-         'data' => 'userdel	q4::temp 57672,111590 57565,111511 57477,111392
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1247263200,
          'text' => 'L 073 Baruth - Luckenwalde zw. OA Baruth u. OE Paplitz Fahrbahnsanierung Vollsperrung 25.06.2009-10.07.2009 ',
@@ -1405,15 +1380,7 @@ userdel	q4::inwork; 15698,8191 15561,8072
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1246831200,
-         'text' => 'L 251 Frauenhagen - Br¸ssow OD Br¸ssow 750 Jahre Br¸ssow Vollsperrung 04.07.2009-05.07.2009 ',
-         'from' => 1246572000,
-         'id' => 1723,
-         'data' => 'userdel	q4::temp 57568,111045 57559,111267 57445,111340 57391,111374 57405,111424
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1247263200,
          'text' => 'L 303 Umgehungsstr. OD Eggersdorf, zw. K.-Liebknecht-Str. u. Landhausstr. Straﬂenbauarbeiten Vollsperrung 23.06.2009-10.07.2009 ',
@@ -1452,16 +1419,7 @@ userdel	q4::inwork; 15698,8191 15561,8072
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_013407',
-         'until' => 1246831199,
-         'text' => 'Residenzstr. (Reinickendorf) in beiden Richtungen zwischen Pankower Allee und Emmentaler Str. Veranstaltung, Straﬂe vollst‰ndig gesperrt (Residenzstraﬂenfest)',
-         'from' => undef,
-         'id' => 1728,
-         'data' => 'userdel	2::temp 7587,17532 7500,17796 7487,17836 7466,17904 7445,17968 7439,17985 7418,18051 7350,18262
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1257030000,
          'text' => 'B 112 OU Guben - OU Neuzelle zw. Abzw.Wellmitz und Neuzelle Straﬂenneubau Vollsperrung 07.07.2009-31.10.2009 ',

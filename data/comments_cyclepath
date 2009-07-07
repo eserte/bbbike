@@ -88,7 +88,7 @@ Bansin: Zweirichtungsradweg (Verbundsteinpflaster) auf der östlichen Seite	RW 56
 Ückeritz: teils Verbundsteinpflasterradweg, teils separate Straße, nörliche Seite	RW 50843,179488 51229,179229 51288,179162
 Bansin - Ückeritz: asphaltierter Zweirichtungsradweg auf der südlichen Seite	RW 56029,174482 55741,174692 55541,175016 55388,175169 55063,175432 54825,175505 54576,175560 54162,175850 53311,176048 52868,176203 52699,176308 52084,178098 51986,178177 51899,178200 51779,178229 51627,178336 51611,178406 51582,178510 51538,178665 51288,179162
 Ladeburg - Lobetal: Fahrradstraße	RW 22526,33785 22595,33961 22877,35230 23008,35569
-Lobetal: verkehrsberuhigte Straße	RW 23008,35569 23232,36004
+Lobetal: verkehrsberuhigte Straße	RW 23008,35569 23036,35624 23232,36004
 Schönerlinder Str.: Radweg auf Gehweg	RW 17368,27859 17689,27853 18053,27875 18337,27854 18410,27890 18817,27979 18899,27976 19196,27963
 B2: Radweg	RW 22257,29814 22262,29723
 B2: Radweg	RW 22206,30826 22378,30943
@@ -106,7 +106,7 @@ Rehfelde: Zweirichtungsradweg auf der östlichen Seite, Verbundsteinpflaster	RW 4
 Verbundsteinpflasterradweg	RW2; 23179,31047 23325,31194 23549,31301 23647,31351 23701,31395
 Verbundsteinpflasterradweg	RW2; 23109,30968 23103,30923 22922,30640
 Gehweg für Radfahrer freigegene	RW1;RW1 23024,30523 22922,30640
-Auf beiden Seiten Verbundsteinpflasterradwege	RW 37961,52548 37650,53211
+Auf beiden Seiten Verbundsteinpflasterradwege	RW 37940,52528 37650,53211
 Zumeist holprige Verbundsteinpflasterradwege	RW 40868,102837 40670,102503 40342,102355 40168,102237 40025,101987 39830,101921 39715,101866
 Rudolf-Breitscheid-Str.: Radstreifen	RW4; -10973,-1764 -11056,-1726
 Rudolf-Breitscheid-Str.: linksseitiger Radweg auf Gehweg	RW; -11056,-1726 -10973,-1764
@@ -175,9 +175,12 @@ B 198: benutzungspflichtiger Zweirichtungsradweg, überwiegend Asphalt, nur kurze
 Gemeinsamer Rad- und Gehweg auf der nördlichen Seite	RW 5394,-3053 4283,-2370
 Zweirichtungsradweg auf östlicher Seite, teils asphaltiert	RW 47432,119730 47554,120007 47547,120819 47501,121206 47549,121619
 Radweg auf Gehweg, Verbundsteinpflaster	RW 46859,118757 47008,118886 47187,119302 47432,119730
-asphaltierter Zweirichtungsradweg auf östlicher Seite	RW 22532,31955 22527,32200 22519,32552
-Radweg auf Gehweg (östliche Seite)	RW 22519,32552 22500,32911 22512,33312 22414,33559
+asphaltierter Zweirichtungsradweg auf östlicher Seite	RW2;RW8 22532,31955 22527,32200 22519,32552
+Radweg auf Gehweg (östliche Seite)	RW2;RW8 22519,32552 22500,32911 22512,33312 22414,33559
 Überwiegend asphaltierter Zweirichtungsradweg auf der nördlichen Seite	RW 23759,49971 23379,49925
+Radweg auf Gehweg, Verbundsteinpflaster	RW8;RW2 22517,31745 22445,31556 22319,31203 22318,31108
+Radweg auf Gehweg, Verbundsteinpflaster	RW2;RW8 22318,31108 22378,30943
+Radweg auf Gehweg	RW2;RW8 22206,30826 22283,30775 22352,30734
 B158: Zweirichtungsradweg auf der nordöstlichen Seite, Verbundsteinpflaster	RW 24203,22171 23930,21873
 B158: Zweirichtungsradweg auf der nordöstlichen Seite, asphaltiert, ca. 2m breit	RW 23930,21873 23565,21396 23281,21043 22529,19361
 Berliner Str. (Schwedt): Verbundsteinpflasteradweg, benutzungspflichtig	RW 69606,73554 69733,73945 69827,74244 70077,75094 70164,75201 70636,75624 70700,75740
@@ -310,6 +313,11 @@ Verbundsteinpflasterradweg	RW2; 46413,46342 46478,46164 46557,46048 46622,45896
 Verbundsteinpflasterradweg	RW2; 46734,45729 47076,45358
 Gehweg für Radfahrer freigegeben	RW1; 45328,48225 45519,48299 45833,48555 45893,48802
 Verbundsteinpflaster-Zweirichtungsradweg	RW8;RW2 45893,48802 45925,49350 46094,49871
+Bergerstr.: betonierter Radweg, Plattenwegqualität Q2+	RW2;RW2 37128,48358 36987,48362 36612,48200
+Wilhelmstr.: betonierter Radweg Q1	RW; 37159,48481 37128,48358
+Verbundsteinpflasterradweg	RW2; 36581,48125 36750,48064 36937,48074 37151,48074 37391,48095 37474,48123
+Verbundsteinpflaster-Zweirichtungsradweg	RW8;RW2 39361,42665 39355,42506 39291,42160 39137,42103 39146,42061
+Verbundsteinpflaster-Zweirichtungsradweg	RW8;RW2 25069,35558 25007,35418 24930,35363 24821,35134
 	RW 16953,35907 17114,35904 18082,36115 18440,36179 19193,36011
 Industriestr. (Dahlwitz-Hoppegarten): gegenläufiger Radweg, rotes Betonpflaster	RW 25938,11837 26042,11798 26222,11726 26555,11601 26794,11513 26880,11479
 	RW 1596,29362 1631,29260 1748,29003 1805,28879 1838,28808 1896,28681 2015,28414
@@ -327,7 +335,7 @@ Wahlsdorf - Niebendorf-Heinsdorf: asphaltierter straßenbegleitender Radweg, Flae
 Schleusenweg: Radweg	RW -2760,-740 -3003,432
 zwischen B2 und mindestens Autobahnbrücke: auf der nördlichen Seite verlaufender gemeinsamer Rad/Fußweg (in beiden Richtungen benutzungspflichtig), der stellenweise nur ca. 2,5m breit ist	RW 22178,30343 21872,30139 21561,30131 21172,29984 21085,29942
 B273: sehr guter Zweirichtungsradweg	RW -24957,22740 -24366,23575 -23897,24448 -23732,24811 -23641,24954 -22574,25597 -22376,26392 -22736,27452 -22711,27592 -22416,28080 -22224,28832 -21704,30257 -21772,30661
-Radweg	RW 33921,52251 34048,52933 34326,54103
+Radweg	RW 33937,52172 34100,52926 34322,53968
 Radweg (sehr gute Qualität)	RW -36006,-418 -35366,-542
 Seeburg - Falkensee: Zweirichtungsradweg auf der östlichen Seite	RW -8634,9626 -8628,9803 -8677,10083 -8697,10653 -8906,11139
 Emstal - Lehnin: sehr guter Zweirichtungsradweg auf der nördlichen Seite	RW -31776,-12438 -32010,-12375 -32394,-12207 -32629,-12038 -32737,-11697 -33398,-11574 -33613,-11062 -33784,-11021 -33786,-10636 -33914,-10466

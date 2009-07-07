@@ -1140,7 +1140,7 @@ EOF
        text  => 'L 200; (Breite Str.); OD Eberswalde, zw. BÜ und Neue Str. Straßenbauarbeiten, Vollsperrung 01.11.2004-21.11.2004 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 38264,50086 38026,49115
+userdel	q4 38264,50086 38174,49717 38026,49115
 userdel	q4 38264,50086 38476,50514 38845,51258
 EOF
      },
@@ -1650,7 +1650,7 @@ EOF
        text  => 'B 2; (Bernau-Biesenthal); B 2, OD Rüdnitz grundh. Ausbau, Bau Kreisverk. Vollsperrung 29.03.2005-22.06.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 25095,35601 24915,35340
+userdel	q4 25069,35558 25007,35418 24930,35363
 EOF
      },
      { from  => 1111960800, # 2005-03-28 00:00
@@ -1666,7 +1666,7 @@ EOF
        text  => 'L 291; (Oderberger Str.); OD Eberswalde, Einm. Breite Str. Straßenbauarbeiten Vollsperrung 24.03.2005-30.04.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 38026,49115 37900,48350 37875,48253
+userdel	q4 38026,49115 37914,48720 37906,48495 37898,48413 37900,48350 37909,48248
 EOF
      },
      { from  => 1111960800, # 2005-03-28 00:00
@@ -2942,7 +2942,7 @@ EOF
        text  => 'B 2; (Bernau-Biesenthal); B 2, OD Rüdnitz, Kreisverkehr grundh. Ausbau, Bau Kreisverk. Vollsperrung 10.10.2005-16.10.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 25095,35601 24915,35340
+userdel	q4 25069,35558 25007,35418 24930,35363
 EOF
      },
      { from  => 1128988800, # 2005-10-11 02:00
@@ -3474,7 +3474,7 @@ EOF
        text  => 'B 167 Eisenbahn- u. Heegermühler Str. OD Eberswalde, Eisenbahnbrücke Ersatzneubau Brücke Vollsperrung; Umleitung 14.12.2005-16.12.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 36937,48074 36403,48168
+userdel	2 36937,48074 36750,48064 36581,48125 36403,48168
 EOF
      },
      { from  => 1136242800, # 2006-01-03 00:00
@@ -5002,7 +5002,7 @@ EOF
        text  => 'L 029 Bahnhofstr. Bahnübergang in Biesenthal Umbau Bahnübergang Vollsperrung 12.07.2006-30.08.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 28993,38709 28199,39134 26237,40190
+userdel	2::inwork 28967,38692 28199,39134 26237,40190
 EOF
      },
      { from  => 1152223200, # 2006-07-07 00:00
@@ -5153,7 +5153,7 @@ EOF
        text  => 'B 167 Eisenbahnstr./ Wilhelmstr. OL Eberswalde, Wilhelmbrücke Fahrbahnsanierung 17.07.2006-11.08.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 37875,48253 37532,48149
+userdel	2::inwork 37909,48248 37731,48228 37474,48123
 EOF
      },
      { from  => 1153000800, # 2006-07-16 00:00
@@ -5933,7 +5933,7 @@ EOF
        text  => 'B 168 zw. Trampe und Eberswalde Deckenerneuerung Vollsperrung 27.09.2006-18.10.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 38522,47634 38653,47410 38723,47134 39373,42579
+userdel	2::inwork 38504,47638 38653,47410 38683,47327 38746,46954 39350,42740 39361,42665 39355,42506
 EOF
      },
      { from  => 1159426800, # 2006-09-28 09:00
@@ -7689,7 +7689,7 @@ EOF
        text  => 'B 167 Eberswalder Str. OD Eberswalde, zw. Spechthausener Str. u. Schönholzer Str. Deckenerneuerung Vollsperrung 10.04.2007-24.04.2007 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 32189,48528 33242,48503 34356,48775
+userdel	q4::inwork 32189,48528 33242,48503 34334,48750
 EOF
      },
      { from  => 1176069600, # 2007-04-09 00:00
@@ -8038,7 +8038,7 @@ EOF
        text  => 'L 029 Grüntal-B 2 Biesenthal OD Biesenthal Deckenerneuerung mit Entwäss. Vollsperrung 10.04.2007-30.09.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 28993,38709 28199,39134 26237,40190
+userdel	2::inwork 28967,38692 28199,39134 26237,40190
 EOF
      },
      { from  => 1178402400, # 2007-05-06 00:00
@@ -8542,7 +8542,7 @@ EOF
        text  => 'B 168 Breite Str. OD Eberswalde, zw. Heine-Str.u. Krz. Freienwalder Str. Deckenerneuerung halbseitig gesperrt; Einbahnstraße 11.06.2007-20.06.2007 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork; 38653,47410 38522,47634
+userdel	q4::inwork; 38653,47410 38504,47638
 EOF
      },
      { from  => 1181426400, # 2007-06-10 00:00
@@ -8667,7 +8667,7 @@ EOF
        text  => 'L 023 B 2 - Britz Brücke über das kalte Wasser am OE Britz Brückenneubau Vollsperrung 18.06.2007-23.11.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 38357,51575 38111,51856
+userdel	2::inwork 38357,51575 38170,51708 38089,51876
 EOF
      },
      { from  => 1186170676, # 
