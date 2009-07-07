@@ -52,6 +52,9 @@ Chausseestr.	? 9212,13471 9094,13641 9042,13707 8935,13844 8879,13913 8831,13973
 Kniprodestr.	? 13838,15113 13749,15013 13649,14899 13453,14678
 #: by: Tagesspiegel vom 2009-04-12, soll 2009 realisiert werden
 Streitstr. (werden die vorhandenen Bordsteinradwege ersetzt)?	? -3040,16246 -3050,16429 -3046,16548 -3043,16601 -3031,16807 -3023,16925 -3018,16974 -3017,16984 -3009,17090 -3006,17128 -2959,17507 -2934,17594
+#: by: http://www.berlin.de/ba-pankow/presse/archiv/20081128.1050.115446.html
+#: next_check: 2010-01-01
+Blankenburger Str. erhält beiderseitig Radfahrstreifen zwischen Dietzgen- und Siegfriedstr.	?::inwork 10249,19541 10377,19565 10742,19632
 #: section ^^^
 #: section ^^^
 #
@@ -112,8 +115,9 @@ Alt-Blankenburg: Bau von Radwegen	?::inwork; 13592,20785 13576,20849 13915,20944
 #: next_check ^^^
 #: by ^^^
 #: by: http://www.berlin.de/ba-neukoelln/presse/archiv/20081118.1520.114696.html
-#: next_check: 2009-06-01
-Schwarzer Weg: Wiedereröffnung im Frühjahr 2009 (im März aber noch keine Anzeichen zu sehen)	?::inwork 13938,7938 13957,8209 13939,8228
+#: last_checked: 2009-07-07
+#: next_check: 2010-03-01
+Schwarzer Weg: Wiedereröffnung im Frühjahr 2009 (im Juli aber noch keinerlei Anzeichen zu sehen)	?::projected 13938,7938 13957,8209 13939,8228
 #XXX del An der Spandauer Brücke: neue Straßenführung	?::inwork 10309,12854 10398,12903 10427,12921 10371,13006
 #XXXdel : by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0802/nachricht2958.html;#: note: laut daniel.geraskov noch eine Baustelle;#: last_checked: 2008-06-23;Oranienburger Str.: Existiert in Richtung Hackescher Markt zwischen Friedrichstraße und Linienstraße eine Radspur?	?; 9215,13392 9281,13374
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0803/nachricht2984.html
@@ -125,14 +129,13 @@ B96a: Neubau der Radwege (gemeinsam mit Gehweg); wahrscheinlich wird der Radstre
 Ahrensfelder Chaussee: Radstreifen in Bau, bis 2008-10	? 20160,18301 20460,18420 20582,18468 20624,18485 20915,18601 21143,18704 21278,18786 21332,18819
 #: by: http://www.reinickendorf.de/index_8368_de.html
 Wittenauer Str.: Ausbau zum verkehrsberuhigten Bereich, außerdem Ersetzen des Pflasters durch eine Betonpflasterfahrbahn (Verbundsteinpflaster?), bis 2009-03-01 (Frühjahr 2009)	? 6666,22988 6651,23020 6644,23036 6634,23076 6712,23252 6727,23287 6770,23417
-Blankenfelde, Berliner Str. und Hauptstr: nach Bauarbeiten (bis 2009-04-01) vielleicht bessere Fahrbahnqualität?	?::inwork 9528,23240 9490,23531 9425,23693 9625,23781 9774,23936
 #: by: http://www.berliner-stadtplan.com/topic/bln/str/x_wgs/22.04/y_wgs/28.92/from/form.html
 #: by: http://www.morgenpost.de/content/2006/09/20/bezirke/855150.html
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20060915.1800.47562.html
-#: XXX Name der Straße? Der Pharus-Verlag meint "Wilhelm-Kabus-Str."
-#: last_checked: 2009-03-16 (Bäume sind gerodet, aber mehr ist noch nicht zu sehen)
-#: next_check: 2009-06-01
-Kolonnenstr. - Südkreuz: Bauarbeiten beginnen 2007, die Naumannstr. wird später verkehrsberuhigt	?::projected 7716,8048 7844,8049 7861,8217 7893,8327 7942,8380 8078,8772
+#: XXX Name der Straße? Der Pharus-Verlag meint "Wilhelm-Kabus-Str."; hier auch erwähnt: http://spdnet.sozi.info/berlin/thf-schoeneberg/fraktempschoen/dl/aktinfo0706.pdf und http://www.spd-fraktion-tempelhof-schoeneberg.de/index.php?seite=522&s=1&menu=1
+#: last_checked: 2009-07-07 (Bäume sind gerodet, aber mehr ist noch nicht zu sehen)
+#: next_check: 2009-11-01
+Wilhelm-Kabus-Str.: Bauarbeiten beginnen 2007, die Naumannstr. wird später verkehrsberuhigt	?::projected 7716,8048 7844,8049 7861,8217 7893,8327 7942,8380 8078,8772
 #: next_check: 2010-12-31
 Verbindung zwischen Leuthener Platz und General-Pape-Str. (evtl. mit Verlängerung) inkl. Brücke über die Bahnstrecke für Fußgänger und Radfahrer, Realisierung bis 2010-12-31	?::projected 7716,8356 7837,8354 7893,8327 8088,8283 8264,8289
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/presse/archiv/20060109.1050.33932.html
@@ -156,11 +159,6 @@ Grenzweg: Brücke über die Spree bzw. Straßenverbindung zwischen Rummelsburger La
 #: by: http://www.nationaler-radverkehrsplan.de/neuigkeiten/news.php?id=1370
 #: note: Havelradweg
 Werder - Phöben: Radweg in Planung, Realisierung bis 2007-12-31	? -22206,-1693 -22672,-1511 -23124,-1235 -23199,-903 -23175,-350 -23411,15 -23896,653 -24509,1607 -24680,1670 -24894,1733
-Reiterhof, Phöben - Havelfähre: Radweg in Planung auf dem Deich, Realisierung bis 2007-12-31	? -25787,3228 -25765,3246 -25530,3223 -25511,3313 -25425,3364 -25345,3389 -25282,3433 -25191,3442 -25198,3540 -25262,3561 -25373,3653 -25460,3795 -25563,3940 -25592,3985 -25578,4203 -25471,4332 -25506,4488 -25723,4736 -25725,4734 -25726,4734 -25855,4868 -25942,5010 -26073,5175 -26215,5272 -26647,5444 -26755,5459 -26918,5525
-#: XXX mit Streckenführung in osm vergleichen
-Havelfähre - Trebelberg: Radweg in Planung, teilweise auf dem Deich, Realisierung bis 2007-12-31	? -26918,5525 -27169,5667 -27239,5694 -27344,5769 -27537,5873 -27679,5929 -27873,6033 -28007,6147 -28158,6227 -28398,6324 -28418,6351 -28778,6516 -28755,6544 -28757,6542 -29169,6718 -29225,6532 -29272,6453 -29279,6367 -29507,6251 -29501,6153 -29526,6093 -29580,6051 -29618,5962 -29969,5876 -29960,5808 -29883,5747 -29792,5636 -30714,5328 -30571,4759 -30814,4732 -30785,4243
-#: XXX mit Streckenführung in osm vergleichen
-Trebelberg - Götz: Radweg in Planung, teilweise auf dem Deich, Realisierung bis 2007-12-31	? -30785,4243 -31154,4222 -32084,4555 -31797,4911 -31914,4963 -31987,4900 -32261,4875 -32525,4957 -32836,4701 -32854,4530 -32897,4268 -33031,4079 -33335,3994 -33545,3812 -33724,3833 -33810,3769 -33846,3529 -34021,3446 -34198,3561 -34399,3482 -34754,3547 -34644,3235 -34804,3090 -35063,1837 -35855,561
 #: by: http://www.nationaler-radverkehrsplan.de/neuigkeiten/news.php?id=1370
 #: XXX mit Streckenführung in osm vergleichen
 Havelfähre - Brandenburg: Planung des Havelradwegs, genaue Strecke, Realisierung bis 2007-12-31?	? -35855,561 -40569,935
@@ -186,6 +184,8 @@ Fritz-von-der-Lancken-Str - Höhenweg: Straße in Bau	?::inwork -12766,1932 -12636
 # Das heißt diese Strecken werden nicht bei einer erweiterten Suche aufgenommen
 # und dem CGI-Benutzer auch nicht präsentiert.
 # 
+#: by: Carsten Schulz:
+Wilmersdorf, am Hohen Bogen: Irgendwo hier gibt es ein neues Drängelgitter und erhöhten Fußgängerverkehr, wo genau?	? 3665,8131 3676,8394 3618,8447 3713,8578 3489,8839 3388,8958
 #: XXX_indoor:
 eigentlich ein Knoten	? -9586,13296
 #: XXX_indoor:
@@ -559,6 +559,7 @@ Am Trebelsee: Deich, Qualität?	? -32200,5825 -31812,6387 -31525,6962 -31087,7275
 Am Havelufer: teilweise sehr sandige Stellen, Q3	? -4072,5227 -3956,4875 -4062,4487 -4693,4431 -4881,4093 -4964,4100
 Waldbühne - Havelchaussee: Qualität (wahrscheinlich Waldwege, Q2 bis Q3)? noch immer durchgängig befahrbar?	? -1356,12093 -1531,12043 -2050,12675 -1950,12925 -2076,13060
 Fährweg - Niederneuendorfer Allee (Kleingartenanlage): Qualität?	? -1864,17785 -1854,17805 -1871,17842 -1914,17899 -2011,17986 -2039,18049 -2066,18097 -2105,18119 -2143,18153 -2166,18199 -2177,18279 -2197,18307 -2229,18312 -2750,18333
+Elkartweg - Uferweg: Qualität?	? -2082,17918 -2011,17986
 Steinhöfel - Poratz - Ringenwalde: Qualität?	? 37482,74476 37025,74400 36800,74137 36612,74162 35775,73750 35469,73594 35125,73487 33687,73037 33075,72750 32750,72787 32600,73062 31862,73112 30712,72625 30244,72598
 Am Neuen Garten: Qualität zwischen Glumestr. und Cecilienhof?	? -12302,718 -12276,831 -12212,1201
 Verlängerte Amtsstr.: Qualität? 	? -15251,1200 -15161,1780
@@ -3308,7 +3309,6 @@ Reifenträgerweg: Qualität?	? -2367,3006 -2529,3220 -2638,3281 -2763,3359
 Waldsängerpfad: Qualität?	? -2638,3281 -2745,3182 -2890,3135
 #: XXX: laut OSM ein footway
 Strömannstr.: Ist die Strömannstr. zwischen Achillesstr. und Zum Kappgraben für Autofahrer gesperrt?	? 15899,23508 15963,23632
-ehem. Güterbahnhof Beusselstr.: existiert hier eine neue Erschließungsstraße?	? 7104,14403 7092,14471 7012,14508 6869,14493 6745,14433 6112,14288 6089,14197
 #: by: Prenzlauer Zeitung, 2009-03-19
 Seelübber Weg: ab Kreisel 135 Meter Kopfsteinpflaster mit begleitendem Radweg; danach weitere 650 Meter asphaltiert. Ist das tatsächlich die Straße nach Prenzlau?	? 42938,96695 42474,97313
 #: XXX ein anonymer Eintrag mit "sehr guter fester Sandweg, Schlaglöcher" existiert, aber vielleicht war der Möllersfelder Weg damit gemeint?
@@ -3577,3 +3577,36 @@ Bergerstr. (Eberswalde): Qualität? Gibt es hier einen Radweg?	? 37731,48228 3752
 Wilhelmstr. (Eberswalde): Qualität? Gibt es hier einen Radweg?	? 37128,48358 37138,48216 37151,48074
 #: XXX von Klobbicke aus: schlechtes Kopfsteinpflaster, Q3; von Tuchen aus: asphaltiert, Q0:
 Mühlenweg: Qualität?	? 36640,39793 36556,39917 36030,39721 35641,39643
+#: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20090706.1100.131656.html
+Lindauer Allee/Aroser Allee - Luisenweg: Fahrbahnbeschaffenheit der Radfahrverbindung?	? 6720,18616 6740,18644 6770,18670 6775,18726 6801,18761
+Markscheiderstr.: Qualität?	? 6960,19047 7105,19677
+#: XXX laut osm: ja
+Markscheiderstr. - An der Nordbahn: Existiert hier eine direkte Verbindung für Radfahrer? Qualität?	? 7105,19677 7125,19717
+#: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20090504.1220.126942.html vvv
+#: XXX vielleicht können Teilstücke als "grüner Weg" gekennzeichnet werden
+#: XXX wird die RR8 hier entlang geführt?
+Siegfriedstr. - Herzbergstr.: Qualität des Radwegs im Landschaftspark Herzberge? Nachts beleuchtet?	? 16860,12996 17041,12989 17114,13019 17170,13070 17234,13081 17215,13416 17194,13519
+Siegfriedstr. - Herzbergstr.: Qualität des Radwegs im Landschaftspark Herzberge? Nachts beleuchtet?	? 17215,13416 17292,13478
+#: by: ^^^
+Fischerstr. - Lückstr.: Qualität des Weges durch den Blockpark? Für Radfahrer befahrbar? Nachts beleuchtet?	? 16246,10641 16303,10760
+#: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20090220.1035.120888.html (Einbahnstraßen)
+Pestalozzistr. (Mahlsdorf): Qualität? Wo besteht die Einbahnstraßenregelung? Gilt die Einbahnstraßenregelung nur für Autofahrer oder auch für Radfahrer?	? 25258,11705 25130,11737 24999,11766 24919,11783 24769,11819 24704,11830 24652,11794
+Beethovenstr. (Mahlsdorf): Qualität?	? 25290,12088 25340,12149 25436,12162 25466,12187 25512,12183 25854,12238 25999,12269 26099,12285
+Landvogtstr.: Qualität?	? 25771,11626 25735,11639 25526,11703 25279,11774
+Bachstr. (Mahlsdorf): Qualität?	? 25783,11759 25556,11826 25315,11895
+Hummelstr.: Qualität?	? 25290,11816 25186,11853 25060,11898 24969,11932 24905,11952 24747,11929
+Schubertstr. (Mahlsdorf): Qualität?	? 25130,11737 25186,11853 25290,12088
+Mozartstr. (Mahlsdorf): Qualität?	? 24999,11766 25060,11898 25167,12119
+Straußstr. (Mahlsdorf): Qualität?	? 25490,11578 25526,11703 25556,11826 25594,11939 25617,12035
+Kuhnaustr.: Qualität?	? 24919,11783 24969,11932 24936,12071
+Händelstr. (Mahlsdorf): Qualität?	? 25512,12183 25814,12090 25911,12062
+Lisztstr. (Mahlsdorf): Qualität?	? 25814,12090 25857,12206 25854,12238
+Blankenfelde, Berliner Str. und Hauptstr: Ist die Fahrbahnqualität nach den Bauarbeiten (bis Mai 2009) besser geworden?	? 9528,23240 9490,23531 9425,23693 9625,23781 9774,23936
+Havelschanze - Schützenstr.: Existiert eine Verbindung für Radfahrer? Wenn ja, wie ist die Qualität?	? -2560,16212 -2551,16199 -2570,16192 -2531,16113 -2533,16056 -2624,16049
+Weg an der Havel: Für Radfahrer befahrbar? Qualität?	? -3370,14115 -3312,14036 -3353,13990 -3493,13782 -3543,13691 -3566,13580 -3555,13485
+#: XXX_indoor mit Streckenführung in osm vergleichen
+Reiterhof, Phöben - Havelfähre: Qualität des Radwegs?	? -25787,3228 -25765,3246 -25530,3223 -25511,3313 -25425,3364 -25345,3389 -25282,3433 -25191,3442 -25198,3540 -25262,3561 -25373,3653 -25460,3795 -25563,3940 -25592,3985 -25578,4203 -25471,4332 -25506,4488 -25723,4736 -25725,4734 -25726,4734 -25855,4868 -25942,5010 -26073,5175 -26215,5272 -26647,5444 -26755,5459 -26918,5525
+#: XXX_indoor mit Streckenführung in osm vergleichen
+Havelfähre - Trebelberg: Qualität des Radwegs?	? -26918,5525 -27169,5667 -27239,5694 -27344,5769 -27537,5873 -27679,5929 -27873,6033 -28007,6147 -28158,6227 -28398,6324 -28418,6351 -28778,6516 -28755,6544 -28757,6542 -29169,6718 -29225,6532 -29272,6453 -29279,6367 -29507,6251 -29501,6153 -29526,6093 -29580,6051 -29618,5962 -29969,5876 -29960,5808 -29883,5747 -29792,5636 -30714,5328 -30571,4759 -30814,4732 -30785,4243
+#: XXX_indoor mit Streckenführung in osm vergleichen
+Trebelberg - Götz: Qualität des Radwegs?	? -30785,4243 -31154,4222 -32084,4555 -31797,4911 -31914,4963 -31987,4900 -32261,4875 -32525,4957 -32836,4701 -32854,4530 -32897,4268 -33031,4079 -33335,3994 -33545,3812 -33724,3833 -33810,3769 -33846,3529 -34021,3446 -34198,3561 -34399,3482 -34754,3547 -34644,3235 -34804,3090 -35063,1837 -35855,561

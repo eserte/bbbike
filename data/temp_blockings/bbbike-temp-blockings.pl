@@ -809,7 +809,7 @@ EOF
        text  => 'Lückstr. Richtung stadteinwärts zwischen Schlichtallee und Wönnichstr. Baustelle, Straße gesperrt (bis Mitte 10.2004) ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1 16699,10611 16647,10632 16588,10655 16460,10699 16316,10755 16153,10818 16032,10842
+userdel	1 16699,10611 16647,10632 16588,10655 16460,10699 16316,10755 16303,10760 16153,10818 16032,10842
 EOF
      },
      { from  => 1094627730, # 2004-09-08 09:15
@@ -9887,7 +9887,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006691',
        data  => <<EOF,
-userdel	1::inwork 16460,10699 16316,10755 16153,10818 16032,10842
+userdel	1::inwork 16460,10699 16316,10755 16303,10760 16153,10818 16032,10842
 EOF
      },
      { from  => 1192399200, # 2007-10-15 00:00
@@ -10438,7 +10438,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_007093',
        data  => <<EOF,
-userdel	1::inwork 16316,10755 16153,10818 16032,10842
+userdel	1::inwork 16316,10755 16303,10760 16153,10818 16032,10842
 EOF
      },
      { from  => 1195308223, # 
@@ -13532,7 +13532,7 @@ EOF
        text  => 'Bauarbeiten in der Simplonstr., Straße gesperrt',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2009-06-01 vvv
+#: last_checked: 2009-07-05 vvv
 userdel	q4::inwork; 14597,11069 14530,11137
 userdel	q4::inwork 14530,11137 14465,11195
 #: last_checked ^^^
@@ -14525,7 +14525,7 @@ userdel	q4::inwork 12562,18483 12570,18351 12575,18275
 EOF
      },
      { from  => 1246398622, # 2009-06-30 23:50
-       until => 1247695199, # 2009-07-15 23:59
+       until => 1246996643, # 2009-07-15 23:59 1247695199
        text  => 'Dammweg Richtung Köpenicker Landstr. gesperrt (bis Mitte Juli 2009)',
        type  => 'handicap',
        data  => <<EOF,
@@ -14679,6 +14679,38 @@ EOF
        source_id => 'IM_013316',
        data  => <<EOF,
 userdel	q4::inwork; 9672,11833 9663,11927 9651,12020 9636,12126 9626,12227
+EOF
+     },
+     { from  => 1247349600, # 2009-07-12 00:00
+       until => 1257030000, # 2009-11-01 00:00
+       text  => 'K 6145 Drahnsdorf - Golßen OD Landwehr Straßenbau Vollsperrung 13.07.2009-31.10.2009 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 24326,-50111 24264,-49146
+EOF
+     },
+     { from  => 1246917600, # 2009-07-07 00:00
+       until => 1247090400, # 2009-07-09 00:00
+       text  => 'L 021 Mühlenbecker Str. OL Schildow, Nr. 89 Kranarbeiten Vollsperrung 08.07.2009-08.07.2009 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 8103,27587 8189,26883
+EOF
+     },
+     { from  => 1247608800, # 2009-07-15 00:00
+       until => 1248991199, # 2009-07-30 23:59
+       text  => 'Bauarbeiten in der Frohnauer Straße zwischen den Kreuzungsbereichen Alemannenstraße und Karmeliterweg, 16.07.-30.07.2009, Anliegerverkehr möglich',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 1868,24633 1838,24675 1802,24707 1736,24722
+EOF
+     },
+     { from  => 1247608800, # 2009-07-15 00:00
+       until => 1248991199, # 2009-07-30 23:59
+       text  => 'Bauarbeiten in der Alemannenstraße, Einbahnstraßenregelung zwischen Frohnauer Str. und Maximiliankorso Richtung Norden, 16.07.-30.07.2009',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork; 1738,25243 1767,25098 1775,25019 1750,24942 1730,24860 1732,24798 1735,24738
 EOF
      },
     );

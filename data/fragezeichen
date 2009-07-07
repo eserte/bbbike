@@ -86,6 +86,7 @@ Am Trebelsee: Deich, Qualität?	? -32200,5825 -31812,6387 -31525,6962 -31087,7275
 Am Havelufer: teilweise sehr sandige Stellen, Q3	? -4072,5227 -3956,4875 -4062,4487 -4693,4431 -4881,4093 -4964,4100
 Waldbühne - Havelchaussee: Qualität (wahrscheinlich Waldwege, Q2 bis Q3)? noch immer durchgängig befahrbar?	? -1356,12093 -1531,12043 -2050,12675 -1950,12925 -2076,13060
 Fährweg - Niederneuendorfer Allee (Kleingartenanlage): Qualität?	? -1864,17785 -1854,17805 -1871,17842 -1914,17899 -2011,17986 -2039,18049 -2066,18097 -2105,18119 -2143,18153 -2166,18199 -2177,18279 -2197,18307 -2229,18312 -2750,18333
+Elkartweg - Uferweg: Qualität?	? -2082,17918 -2011,17986
 Steinhöfel - Poratz - Ringenwalde: Qualität?	? 37482,74476 37025,74400 36800,74137 36612,74162 35775,73750 35469,73594 35125,73487 33687,73037 33075,72750 32750,72787 32600,73062 31862,73112 30712,72625 30244,72598
 Am Neuen Garten: Qualität zwischen Glumestr. und Cecilienhof?	? -12302,718 -12276,831 -12212,1201
 Verlängerte Amtsstr.: Qualität? 	? -15251,1200 -15161,1780
@@ -2410,7 +2411,6 @@ Eiderstedter Weg: Qualität?	? -2096,3402 -2038,3252 -1961,3021 -1951,2995 -1945,
 Reifenträgerweg: Qualität?	? -2367,3006 -2529,3220 -2638,3281 -2763,3359
 Waldsängerpfad: Qualität?	? -2638,3281 -2745,3182 -2890,3135
 Strömannstr.: Ist die Strömannstr. zwischen Achillesstr. und Zum Kappgraben für Autofahrer gesperrt?	? 15899,23508 15963,23632
-ehem. Güterbahnhof Beusselstr.: existiert hier eine neue Erschließungsstraße?	? 7104,14403 7092,14471 7012,14508 6869,14493 6745,14433 6112,14288 6089,14197
 Seelübber Weg: ab Kreisel 135 Meter Kopfsteinpflaster mit begleitendem Radweg; danach weitere 650 Meter asphaltiert. Ist das tatsächlich die Straße nach Prenzlau?	? 42938,96695 42474,97313
 Möllersfelder Str.: Qualität?	? 7793,20580 7827,20712 7820,20745
 Prenzlau - Klinkow: Qualität?	? 37410,103257 37132,103352 36562,103694 36467,103672 36006,103805
@@ -2651,6 +2651,29 @@ Lobetal - Lanke: Qualität? Wie ist die genaue Wegführung (GPS-Track?)	? 23278,36
 Bergerstr. (Eberswalde): Qualität? Gibt es hier einen Radweg?	? 37731,48228 37525,48270 37418,48290 37128,48358
 Wilhelmstr. (Eberswalde): Qualität? Gibt es hier einen Radweg?	? 37128,48358 37138,48216 37151,48074
 Mühlenweg: Qualität?	? 36640,39793 36556,39917 36030,39721 35641,39643
+Lindauer Allee/Aroser Allee - Luisenweg: Fahrbahnbeschaffenheit der Radfahrverbindung?	? 6720,18616 6740,18644 6770,18670 6775,18726 6801,18761
+Markscheiderstr.: Qualität?	? 6960,19047 7105,19677
+Markscheiderstr. - An der Nordbahn: Existiert hier eine direkte Verbindung für Radfahrer? Qualität?	? 7105,19677 7125,19717
+Siegfriedstr. - Herzbergstr.: Qualität des Radwegs im Landschaftspark Herzberge? Nachts beleuchtet?	? 16860,12996 17041,12989 17114,13019 17170,13070 17234,13081 17215,13416 17194,13519
+Siegfriedstr. - Herzbergstr.: Qualität des Radwegs im Landschaftspark Herzberge? Nachts beleuchtet?	? 17215,13416 17292,13478
+Fischerstr. - Lückstr.: Qualität des Weges durch den Blockpark? Für Radfahrer befahrbar? Nachts beleuchtet?	? 16246,10641 16303,10760
+Pestalozzistr. (Mahlsdorf): Qualität? Wo besteht die Einbahnstraßenregelung? Gilt die Einbahnstraßenregelung nur für Autofahrer oder auch für Radfahrer?	? 25258,11705 25130,11737 24999,11766 24919,11783 24769,11819 24704,11830 24652,11794
+Beethovenstr. (Mahlsdorf): Qualität?	? 25290,12088 25340,12149 25436,12162 25466,12187 25512,12183 25854,12238 25999,12269 26099,12285
+Landvogtstr.: Qualität?	? 25771,11626 25735,11639 25526,11703 25279,11774
+Bachstr. (Mahlsdorf): Qualität?	? 25783,11759 25556,11826 25315,11895
+Hummelstr.: Qualität?	? 25290,11816 25186,11853 25060,11898 24969,11932 24905,11952 24747,11929
+Schubertstr. (Mahlsdorf): Qualität?	? 25130,11737 25186,11853 25290,12088
+Mozartstr. (Mahlsdorf): Qualität?	? 24999,11766 25060,11898 25167,12119
+Straußstr. (Mahlsdorf): Qualität?	? 25490,11578 25526,11703 25556,11826 25594,11939 25617,12035
+Kuhnaustr.: Qualität?	? 24919,11783 24969,11932 24936,12071
+Händelstr. (Mahlsdorf): Qualität?	? 25512,12183 25814,12090 25911,12062
+Lisztstr. (Mahlsdorf): Qualität?	? 25814,12090 25857,12206 25854,12238
+Blankenfelde, Berliner Str. und Hauptstr: Ist die Fahrbahnqualität nach den Bauarbeiten (bis Mai 2009) besser geworden?	? 9528,23240 9490,23531 9425,23693 9625,23781 9774,23936
+Havelschanze - Schützenstr.: Existiert eine Verbindung für Radfahrer? Wenn ja, wie ist die Qualität?	? -2560,16212 -2551,16199 -2570,16192 -2531,16113 -2533,16056 -2624,16049
+Weg an der Havel: Für Radfahrer befahrbar? Qualität?	? -3370,14115 -3312,14036 -3353,13990 -3493,13782 -3543,13691 -3566,13580 -3555,13485
+Reiterhof, Phöben - Havelfähre: Qualität des Radwegs?	? -25787,3228 -25765,3246 -25530,3223 -25511,3313 -25425,3364 -25345,3389 -25282,3433 -25191,3442 -25198,3540 -25262,3561 -25373,3653 -25460,3795 -25563,3940 -25592,3985 -25578,4203 -25471,4332 -25506,4488 -25723,4736 -25725,4734 -25726,4734 -25855,4868 -25942,5010 -26073,5175 -26215,5272 -26647,5444 -26755,5459 -26918,5525
+Havelfähre - Trebelberg: Qualität des Radwegs?	? -26918,5525 -27169,5667 -27239,5694 -27344,5769 -27537,5873 -27679,5929 -27873,6033 -28007,6147 -28158,6227 -28398,6324 -28418,6351 -28778,6516 -28755,6544 -28757,6542 -29169,6718 -29225,6532 -29272,6453 -29279,6367 -29507,6251 -29501,6153 -29526,6093 -29580,6051 -29618,5962 -29969,5876 -29960,5808 -29883,5747 -29792,5636 -30714,5328 -30571,4759 -30814,4732 -30785,4243
+Trebelberg - Götz: Qualität des Radwegs?	? -30785,4243 -31154,4222 -32084,4555 -31797,4911 -31914,4963 -31987,4900 -32261,4875 -32525,4957 -32836,4701 -32854,4530 -32897,4268 -33031,4079 -33335,3994 -33545,3812 -33724,3833 -33810,3769 -33846,3529 -34021,3446 -34198,3561 -34399,3482 -34754,3547 -34644,3235 -34804,3090 -35063,1837 -35855,561
 # added from ampeln-orig
 #: add_fragezeichen: Existiert die Ampel Nordufer/Torfstr. noch?
 geschlossen bei Bedarf (?) (Zbr)	? 27657,-11741

@@ -878,7 +878,7 @@ userdel	1::inwork 12229,10014 12398,9938 12556,9862
          'text' => 'Bauarbeiten in der Simplonstr., Straße gesperrt',
          'from' => undef,
          'id' => 1597,
-         'data' => '#: last_checked: 2009-06-01 vvv
+         'data' => '#: last_checked: 2009-07-05 vvv
 userdel	q4::inwork; 14597,11069 14530,11137
 userdel	q4::inwork 14530,11137 14465,11195
 #: last_checked ^^^
@@ -1306,16 +1306,7 @@ userdel	2::inwork 7160,11225 6851,11346
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1247695199,
-         'text' => 'Dammweg Richtung Köpenicker Landstr. gesperrt (bis Mitte Juli 2009)',
-         'from' => 1246398622,
-         'id' => 1714,
-         'data' => '#: last_checked: 2009-06-27
-userdel	q4::inwork; 15698,8191 15561,8072
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1247349600,
          'text' => 'B 198 zw. Kerkow u. Greiffenberg Deckenerneuerung Vollsperrung 22.06.2009-11.07.2009 ',
@@ -1353,15 +1344,7 @@ userdel	q4::inwork; 15698,8191 15561,8072
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1246917600,
-         'text' => 'L 086 Bahnhofstraße OD Groß Kreutz, Bahnübergang Gleisbauarbeiten Vollsperrung 03.07.2009-06.07.2009 ',
-         'from' => 1246485600,
-         'id' => 1720,
-         'data' => 'userdel	2::inwork -31993,-726 -32143,-211
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1251324000,
          'text' => 'L 086 Bahnhofstraße OD Groß Kreutz, Bahnübergang Gleisbauarbeiten Vollsperrung 25.08.2009-26.08.2009 ',
@@ -1446,6 +1429,52 @@ userdel	q4::inwork; 15698,8191 15561,8072
          'data' => 'userdel	2::inwork -8893,85743 -9850,84800
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_013316',
+         'until' => 1262300400,
+         'text' => 'Markgrafenstr. (Mitte) Richtung Behrenstr. zwischen Mohrenstr. und Behrenstr. Baustelle, Fahrtrichtung gesperrt (bis Dezember 2009)',
+         'from' => 1246916833,
+         'id' => 1732,
+         'data' => 'userdel	q4::inwork; 9672,11833 9663,11927 9651,12020 9636,12126 9626,12227
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1257030000,
+         'text' => 'K 6145 Drahnsdorf - Golßen OD Landwehr Straßenbau Vollsperrung 13.07.2009-31.10.2009 ',
+         'from' => 1247349600,
+         'id' => 1733,
+         'data' => 'userdel	q4::inwork 24326,-50111 24264,-49146
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1247090400,
+         'text' => 'L 021 Mühlenbecker Str. OL Schildow, Nr. 89 Kranarbeiten Vollsperrung 08.07.2009-08.07.2009 ',
+         'from' => 1246917600,
+         'id' => 1734,
+         'data' => 'userdel	q4::inwork 8103,27587 8189,26883
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1248991199,
+         'text' => 'Bauarbeiten in der Frohnauer Straße zwischen den Kreuzungsbereichen Alemannenstraße und Karmeliterweg, 16.07.-30.07.2009, Anliegerverkehr möglich',
+         'from' => 1247608800,
+         'id' => 1735,
+         'data' => 'userdel	q4::inwork 1868,24633 1838,24675 1802,24707 1736,24722
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1248991199,
+         'text' => 'Bauarbeiten in der Alemannenstraße, Einbahnstraßenregelung zwischen Frohnauer Str. und Maximiliankorso Richtung Norden, 16.07.-30.07.2009',
+         'from' => 1247608800,
+         'id' => 1736,
+         'data' => 'userdel	q4::inwork; 1738,25243 1767,25098 1775,25019 1750,24942 1730,24860 1732,24798 1735,24738
+',
+         'type' => 'handicap'
        }
      
 );
