@@ -1182,7 +1182,7 @@ check-disabled:
 	@touch $@
 
 .check_ortsschilder2:	orte orte2 ortsschilder
-	perl -MData::Dumper -I.. -I../lib -MStrassen::Core -e 'for $$o (qw(orte orte2)) { Strassen->new_stream($$o)->read_stream(sub { $$seen{$$_[0]->[0]}++ }) }; Strassen->new_stream("ortsschilder")->read_stream(sub { $$seen{$$_[0]->[0]}++ or $$error{$$_[0]->[0]}++ }); if (%error) { die Dumper(\%error) }' 
+	perl -MData::Dumper -I.. -I../lib -MStrassen::Core -e 'for $$o (qw(orte orte2)) { Strassen->new_stream($$o)->read_stream(sub { $$seen{$$_[0]->[0]}++; for (@{ $$_[1]->{alias} || [] }) { $$seen{$$_ }++ } }, UseLocalDirectives => 1) }; Strassen->new_stream("ortsschilder")->read_stream(sub { $$seen{$$_[0]->[0]}++ or $$error{$$_[0]->[0]}++ }); if (%error) { die Dumper(\%error) }' 
 	@touch $@
 
 # Interactive test
