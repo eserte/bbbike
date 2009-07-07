@@ -157,6 +157,7 @@ sub flush {
 }
 
 use vars qw($unidecode_warning);
+# Note: also used by BBBikeDraw::PDF:
 sub _unidecode_string {
     my($str) = @_;
     if (grep { ord($_) > 255 } split //, $str) {

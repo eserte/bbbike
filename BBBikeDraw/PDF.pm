@@ -348,21 +348,21 @@ if(1||$self->{Width} < $self->{Height}){#XXX scheint sonst undefinierbare Proble
     }
 
 # XXX verschiedene Zeichensatzgrößen für die Orte
-#      my $min_ort_category = ($self->{Xk} < 0.005 ? 4
-#  			    : ($self->{Xk} < 0.01 ? 3
-#  			       : ($self->{Xk} < 0.02 ? 2
-#  				  : ($self->{Xk} < 0.03 ? 1 : 0))));
-#      my %ort_font = (0 => &GD::Font::Tiny,
-#  		    1 => &GD::Font::Small,
-#  		    2 => &GD::Font::Small,
-#  		    3 => &GD::Font::Large, # MediumBold sieht fetter aus
-#  		    4 => &GD::Font::Large,
-#  		    5 => &GD::Font::Giant,
-#  		    6 => &GD::Font::Giant,
-#  		   );
+    my $min_ort_category = ($self->{Xk} < 0.005 ? 4
+ 			    : ($self->{Xk} < 0.01 ? 3
+ 			       : ($self->{Xk} < 0.02 ? 2
+ 				  : ($self->{Xk} < 0.03 ? 1 : 0))));
+    my %ort_font = (0 => 6,
+		    1 => 7,
+		    2 => 8,
+ 		    3 => 9,
+ 		    4 => 10,
+ 		    5 => 12,
+ 		    6 => 14,
+ 		   );
     foreach my $def (['ubahn', 'ubahnhof', 'u'],
 		     ['sbahn', 'sbahnhof', 's'],
-#  			['ort', 'orte',       'o'],
+		     ['ort', 'orte',       'o'],
 		    ) {
 	my($lines, $points, $type) = @$def;
   	if ($str_draw{$lines}) {
@@ -427,19 +427,21 @@ if(1||$self->{Width} < $self->{Height}){#XXX scheint sonst undefinierbare Proble
 		    $im->set_fill_color(@$darkgreen);
 		    $im->circle($x, $y, 4);
 		    $im->fill;
-		}
-#  		} else {
-#  		    if ($cat >= $min_ort_category) {
-#  			my($x, $y) = &$transpose(@{$s->coord_as_list(0)});
-#  			my $ort = $s->name;
-#  			# Anhängsel löschen (z.B. "b. Berlin")
-#  			$ort =~ s/\|.*$//;
-#  			$im->arc($x, $y, 3, 3, 0, 360, $black);
-#  			outline_text($im, $ort_font{$cat} || &GD::Font::Small,
-#  				     $x+4, $y,
-#  				     patch_string($ort), $white, $darkblue);
-#  		    }
-#  		}
+ 		} else {
+ 		    if ($cat >= $min_ort_category) {
+ 			my($x, $y) = &$transpose(@{$s->coord_as_list(0)});
+ 			my $ort = $s->name;
+ 			# Anhängsel löschen (z.B. "b. Berlin")
+ 			$ort =~ s/\|.*$//;
+			$im->set_fill_color(@$black);
+ 			$im->circle($x, $y, 1);
+			$im->fill;
+			$im->set_stroke_color(@$darkblue);
+			$im->string($sansserif, $ort_font{$cat} || 6,
+				    $x+4, $y,
+				    patch_string($ort));
+ 		    }
+ 		}
   	    }
   	}
     }
@@ -996,6 +998,14 @@ sub origin_position { "sw" }
 sub can_multiple_passes {
     my($self, $type) = @_;
     return $type eq 'flaechen';
+}
+
+sub patch_string {
+    if (!eval { require Route::PDF; 1 }) {
+	$_[0];
+    } else {
+	Route::PDF::_unidecode_string($_[0]);
+    }
 }
 
 1;
