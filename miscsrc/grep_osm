@@ -107,6 +107,8 @@ my $search_term = shift @ARGV;
 usage if !defined $search_term;
 $search_term = decode $codeset, $search_term;
 
+usage if (!@ARGV);
+
 my @orig_osm_files = @ARGV;
 my @osm_files;
 for my $osm_file (@orig_osm_files) {
@@ -115,6 +117,10 @@ for my $osm_file (@orig_osm_files) {
     } else {
 	push @osm_files, $osm_file;
     }
+}
+
+if (!@osm_files) {
+    die "No usable osm files found in @ARGV.\n";
 }
 
 # do it after populating @orig_osm_files
