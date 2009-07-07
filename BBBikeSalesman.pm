@@ -140,6 +140,10 @@ sub map_mode_activate {
 	     $b = $t->Button
 	     (-text => M"Berechnen",
 	      -command => sub {
+		  if ($salesman->get_number_of_points < 3) {
+		      main::status_message(M("Mindestens drei Punkte sind für die Berechnung notwendig"), "err");
+		      return;
+		  }
 		  main::delete_route(); # XXX it would be nicer if the user could continue the existing route
 		  my $newb = $t->Button
 		      (-text => M"Abbruch",

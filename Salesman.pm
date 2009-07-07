@@ -58,6 +58,8 @@ sub new {
     bless $self, $class;
 }
 
+sub get_number_of_points { shift->{NumberOfPoints} }
+
 sub add_point {
     my($self, $point) = @_;
     my $r = 0;
