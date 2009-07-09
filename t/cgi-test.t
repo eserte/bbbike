@@ -72,4 +72,17 @@ $ua->agent("BBBike-Test/1.0");
     like_long_data($content, qr{L.*nge.*0\.25\s+km});
 }
 
+{
+    my $url = $testcgi . '?' . CGI->new({startc=>'10094,6428',
+					 zielc=>'10176,6050',
+					 pref_seen=>1,
+					 pref_speed=>20,
+					})->query_string;
+
+    my $resp = $ua->get($url);
+    ok($resp->is_success, 'BNP (Poller) in midst of route');
+    my $content = $resp->decoded_content;
+    like_long_data($content, qr{\(kein Zeitverlust\)});
+}
+
 __END__

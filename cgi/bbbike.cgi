@@ -3738,7 +3738,13 @@ sub display_route {
 			    my $name = $rec->[Strassen::NAME];
 			    if (defined $1) {
 				my $verlust = $1;
-				$name .= " (" . sprintf(M("ca. %s Sekunden Zeitverlust"), $verlust) . ")";
+				if ($verlust == 0) {
+				    $name .= " (" . M("kein Zeitverlust") . ")";
+				} elsif ($verlust == 1) {
+				    $name .= " (" . M("ca. eine Sekunde Zeitverlust") . ")";
+				} else {
+				    $name .= " (" . sprintf(M("ca. %s Sekunden Zeitverlust"), $verlust) . ")";
+				}
 			    }
 			    $comments_points->{$rec->[Strassen::COORDS][0]}
 				= $name;
