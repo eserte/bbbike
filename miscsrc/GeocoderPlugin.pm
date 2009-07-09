@@ -61,7 +61,7 @@ sub add_button {
     my($pkg) = @_;
     BBBikePlugin::add_to_global_plugins_menu
 	    (-menuitems => [[Button => M("Dialog zeigen"),
-			     -command => \&geocoder_dialog,
+			     -command => sub { geocoder_dialog() },
 			    ],
 			    [Button => M('Dieses Menü löschen'),
 			     -command => sub {
@@ -150,6 +150,21 @@ sub geocoder_dialog {
 				 }
 			     },
 			     'label' => 'Yahoo (avoid umlauts)',
+			   },
+		'Bing' => { 'new' => sub {
+				 Geo::Coder::Bing->new;
+			     },
+			     'extract_loc' => sub {
+				 my $location = shift;
+				 ($location->{BestLocation}{Coordinates}{Longitude},
+				  $location->{BestLocation}{Coordinates}{Latitude},
+				 );
+			     },
+			     'extract_addr' => sub {
+				 my $location = shift;
+				 $location->{Address}->{FormattedAddress};
+			     },
+			     'label' => 'Bing',
 			   },
 	       );
     for my $_api (sort keys %apis) {
