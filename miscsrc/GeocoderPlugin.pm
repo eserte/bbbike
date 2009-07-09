@@ -162,7 +162,9 @@ sub geocoder_dialog {
 			     },
 			     'extract_addr' => sub {
 				 my $location = shift;
-				 $location->{Address}->{FormattedAddress};
+				 $location->{Address}->{FormattedAddress} . "\n" .
+				     $location->{BestLocation}{Coordinates}{Longitude} . "," .
+					 $location->{BestLocation}{Coordinates}{Latitude};
 			     },
 			     'label' => 'Bing',
 			   },
