@@ -43,13 +43,6 @@ BEGIN {
 	exit;
     }
 
-#XXX Use lightning-fast Image::Info::SVG module
-#XXX This will hopefully be default some day in Image::Info
-#XXX Warn intentionally (redefined) to not forget this stuff.
-if (eval { require "/home/e/eserte/devel/Image_Info_SVG_LibXML.pm" }) {
-    Image::Info::SVG::LibXML::_as_default();
-}
-
     @modules = qw(GD/png GD/gif GD/jpeg
 		  GD::SVG SVG
 		  PDF PDF2
