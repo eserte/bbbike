@@ -216,7 +216,7 @@ my @req_table =
   [qw/Geo::Coder::Yahoo	0	all	0	plugin/,
    'Geocoding über Yahoo'],
 
-  [qw/Image::Info	0	all	0	test/],
+  [qw/Image::Info	1.29	all	0	test/],
   [qw/Test::More	0	all	0	test/],
   [qw/Test::Differences	0	all	0	test/],
   [qw/WWW::Mechanize	0	all	2	test/,
