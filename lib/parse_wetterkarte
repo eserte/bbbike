@@ -101,7 +101,7 @@ sub formatline {
     if ($args{windrichtung} && $args{windrichtung} eq 'windrose') {
 	$r{windrichtung} = wind_degrees_to_direction($r{windrichtung});
     }
-    join("|", @r{qw(date time temperatur luftdruck windrichtung windgeschwindigkeit luftfeuchte windspitze)});
+    join("|", @r{qw(date time temperatur luftdruck windrichtung windspitze luftfeuchte windgeschwindigkeit)});
 }
 
 sub get_current_from_file {
@@ -116,7 +116,7 @@ sub get_current_from_file {
     chomp $lastline;
     my(@w) = split /\|/, $lastline;
     my %result;
-    @result{qw(date time temperatur luftdruck windrichtung windgeschwindigkeit luftfeuchte windspitze)} = @w;
+    @result{qw(date time temperatur luftdruck windrichtung windspitze luftfeuchte windgeschwindigkeit)} = @w;
     if ($args{windrichtung} && $args{windrichtung} eq 'windrose') {
 	$result{windrichtung} = wind_degrees_to_direction($result{windrichtung});
     }
