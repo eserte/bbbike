@@ -687,7 +687,8 @@ $self->{UseFlags} = 0; # XXX don't use this because of missing transparency info
 	    my $name = Strassen::strip_bezirk($e->[0]);
 	    my $f_i  = $e->[4][0];
 	    my($x,$y) = &$transpose(split ',', $self->{Coords}[$f_i]);
-	    my $s_width = $im->my_string_width($sansserif, $name) * $size;
+	    my $patched_name = patch_string($name);
+	    my $s_width = $im->my_string_width($sansserif, $patched_name) * $size;
 	    if ($sm) {
 		my($x1,$y1,$x2,$y2) = ($x-$pad, $y-$pad, $x+$s_width+$pad, $y+$size);
 		my $r1 = $sm->nearest([$x1,$y1,$x2,$y2]);
@@ -705,7 +706,7 @@ $self->{UseFlags} = 0; # XXX don't use this because of missing transparency info
 	    $im->rectangle($x-$pad, $y-$pad, $s_width+$pad*2, $size+$pad);
 	    $im->stroke;
 	    $im->set_fill_color(@$black);
-	    $im->string($sansserif, $size, $x, $y, $name);
+	    $im->string($sansserif, $size, $x, $y, $patched_name);
 	}
     }
 
@@ -720,9 +721,9 @@ $self->{UseFlags} = 0; # XXX don't use this because of missing transparency info
 	    }
 	    $$s = join("/", @s);
 	}
-	my @s = ("$start ",
+	my @s = (patch_string($start) . ' ',
 		 chr(174), # left arrow
-		 " $ziel"
+		 ' ' . patch_string($ziel)
 		);
 
 	my $size = 20;

@@ -99,6 +99,7 @@ sub output {
 	my $col_i = 0;
 	for my $col (@$line) {
 	    $col = "" if !defined $col;
+	    $col = _unidecode_string($col); # yes, change @$line!
 	    my $font = ($col_i == 2 ? $bold_font : $font);
 	    my $this_width = $page->my_string_width($font, $col)*$font_size;
 	    if (!defined $max_width[$col_i] || $max_width[$col_i] < $this_width) {
@@ -116,8 +117,6 @@ sub output {
 	my $col_i = 0;
 	for my $col_i (0 .. $#$line) {
 	    my $col = $line->[$col_i];
-	    $col = "" if !defined $col;
-	    $col = _unidecode_string($col);
 	    my $font = ($col_i == 2 ? $bold_font : $font);
 	    my $width = $page->my_string_width($font, $col)*$font_size;
 	    if ($x + $width > $page_width-30) {
