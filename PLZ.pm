@@ -313,11 +313,13 @@ sub look {
 	    chomp(my @data = <PLZ>);
 	    close PLZ;
 	    my %res;
-	    foreach (map { substr $_, SA_ANCHOR_LENGTH }
-		     String::Approx::amatch(SA_ANCHOR_HACK . $str,
-					    ['i', $args{Agrep}],
-					    map { SA_ANCHOR_HACK . $_ } @data)) {
-		$push_sub->($_);
+	    if (@data) {
+		foreach (map { substr $_, SA_ANCHOR_LENGTH }
+			 String::Approx::amatch(SA_ANCHOR_HACK . $str,
+						['i', $args{Agrep}],
+						map { SA_ANCHOR_HACK . $_ } @data)) {
+		    $push_sub->($_);
+		}
 	    }
 	} elsif ($grep_type =~ m{^grep-(umlaut|inword|substr)$}) {
 	    my $sub_type = $1;
