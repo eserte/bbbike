@@ -35,7 +35,9 @@ sub encode_possible_utf8_params {
 		};
 		if (!$@) {
 		    $val = Encode::decode("utf-8", $val);
-		    utf8::downgrade($val);
+		    if ($val =~ m{^[\0-\xff]+$}) {
+			utf8::downgrade($val);
+		    }
 		}
 		push @vals, $val;
 	    }
