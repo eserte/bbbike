@@ -99,7 +99,7 @@ $BBBIKE_MAPSERVER_INDIRECT = "http://www.bbbike.de/mapserver/brb/";
 $BBBIKE_CVS_ANON_REPOSITORY = ":pserver:anonymous\@bbbike.cvs.sourceforge.net:/cvsroot/bbbike";
 $BBBIKE_CVS_HTTP = "http://sourceforge.net/cvs/?group_id=" . $SF_BBBIKE_GROUP_ID;
 
-$BBBIKE_GOOGLEMAP_URL = 'http://www.bbbike.de/cgi-bin/bbbikegooglemap.cgi';
+$BBBIKE_GOOGLEMAP_URL = 'http://bbbike.de/cgi-bin/bbbikegooglemap.cgi';
 
 1;
 
