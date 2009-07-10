@@ -20,16 +20,17 @@ $VERSION = sprintf("%d.%02d", q$Revision: 1.7 $ =~ /(\d+)\.(\d+)/);
 
 use base qw(BBBikeDraw);
 
+require BBBikeVar;
+
 use vars qw($bbbike_googlemaps_url $maptype);
 if (!defined $bbbike_googlemaps_url) {
     if ($ENV{SERVER_NAME} && $ENV{SERVER_NAME} eq 'www.herceg.de' && $ENV{REMOTE_ADDR} eq '192.168.1.5') {
 	$bbbike_googlemaps_url = "http://localhost/~eserte/bbbike/cgi/bbbikegooglemap.cgi";
     } else {
-	# Unfortunately I cannot use $BBBIKE_GOOGLEMAP_URL from BBBikeVar.pm here,
-	# because it seems that POSTs content is not sent through the rewriting
-	# rules...
-	$bbbike_googlemaps_url = "http://78.47.225.30/cgi-bin/bbbikegooglemap.cgi";
-	# XXX IP address will be changed to bbbike.de some day ...
+	# Note that this only works if there's no redirection
+	# involved:
+	$BBBike::BBBIKE_GOOGLEMAP_URL = $BBBike::BBBIKE_GOOGLEMAP_URL if 0; # cease -w
+	$bbbike_googlemaps_url = $BBBike::BBBIKE_GOOGLEMAP_URL;
     }
 }
 
