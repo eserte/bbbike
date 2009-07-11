@@ -32,6 +32,8 @@ if ($@) {
 }
 $codeset = lc $codeset; # 'UTF-8' is not recognized by emacs, but 'utf-8' is
 
+my $debug = 0;
+
 use DB_File;
 use Encode qw(decode encode);
 use File::Spec;
@@ -46,7 +48,7 @@ my $context_lines = DEFAULT_CONTEXT_LINES;
 my $need_cache_osm_nodes_hint;
 
 sub usage {
-    die "usage: $0 [-coordsys bbbike] [-context nr_of_lines] searchterm osmfile ...\n";
+    die "usage: $0 [-coordsys bbbike] [-context nr_of_lines] [-debug 1] searchterm osmfile ...\n";
 }
 
 sub grep_osm_fh {
@@ -63,6 +65,7 @@ sub grep_osm_fh {
     }
     local $ENV{LANG}   = 'C';
     local $ENV{LC_ALL} = 'C';
+    warn "Run '@cmd' using encoding '" . OSM_FILE_ENCODING . "'...\n" if $debug;
     open my $fh, '-|:encoding('.OSM_FILE_ENCODING.')', @cmd
 	or die "Can't run '@cmd': $!";
     $fh;
@@ -81,6 +84,7 @@ sub set_info_handler {
 my $coordsys;
 GetOptions("coordsys=s" => \$coordsys,
 	   "context=i" => \$context_lines,
+	   "debug=i" => \$debug,
 	  ) or usage;
 
 my $out_conv;
