@@ -657,6 +657,10 @@ for my $osm_file (@osm_files) {
 		push @or, ["icao", "X", name => $tag{icao} . (defined $name ? " ($name)" : '')];
 	    }
 
+	    if (exists $tag{'traffic_sign'} && $tag{'traffic_sign'} eq 'city_limit') {
+		push @or, ['ortsschilder', 'OS'];
+	    }
+
 	    if (!@or && !$ignore_unhandled && !$ignore_underline) {
 		$do_unhandled->(\$name, \%tag);
 		if ($name ne "" && !exists $tag{'obsolete_boundary'}) {
