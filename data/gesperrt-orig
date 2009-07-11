@@ -1159,6 +1159,10 @@ tragen (Treppe, 4 Stufen)	0:10 38056,48407
 ###################################################################
 # Drängelgitter (BLOCKED_NARROWPASSAGE)
 # 
+#: by: http://www.benno-koch.de/article09575_dumm_gelaufen_schifffahrtsamt_sperrt_teltow-route2 vvv
+Drängelgitter	BNP:5 4258,2693
+Drängelgitter	BNP:5 4202,2622
+#: by: ^^^
 #: by: Kerstin Klemann: vvv
 Drängelgitter, für Anhänger nicht passierbar	BNP:5 2009,3362
 Drängelgitter, für Anhänger nicht passierbar	BNP:5 1980,3409
@@ -1333,7 +1337,7 @@ Alice-und-Hella-Hirsch-Ring: noch in Bau, gesperrt	2:inwork 15788,10252 15823,10
 Lina-Morgenstern-Str.: noch in Bau, gesperrt	2:inwork 15716,10303 15753,10353
 #: next_check ^^^
 #: last_checked ^^^
-#: last_checked: 2009-05-13 vvv
+#: last_checked: 2009-07-09 vvv
 Zur Boyenstr.: Bauarbeiten	2:inwork 7925,14442 7828,14405
 Brücke über Panke: zur Zeit Bauarbeiten, keine Durchfahrt möglich	2:inwork 7753,14528 7807,14441
 #: last_checked ^^^

@@ -1976,10 +1976,10 @@ EOF
        text  => 'Luxemburger Straße - Föhrer Straße, Zwischen Kreuzung Leopoldplatz und Kreuzung Amrumer Straße Veranstaltung, Straße gesperrt, Dauer: 27.05.2005 06:00 Uhr bis 30.05.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 7148,15447 7020,15314
-userdel	q4 7148,15447 7277,15586
-userdel	q4 6630,15100 6737,15133
-userdel	q4 6737,15133 6846,15202 7020,15314
+userdel	q4 7138,15437 7020,15314
+userdel	q4 7138,15437 7277,15586
+userdel	q4 6630,15100 6721,15140
+userdel	q4 6721,15140 6846,15202 7020,15314
 EOF
      },
      { from  => 1117231200, # 2005-05-28 00:00
@@ -3283,8 +3283,8 @@ EOF
        text  => 'B 2 (Angermünde-OU Pinnow) OD Dobberzin grundh. Straßenbau Vollsperrung 02.11.2005-14.12.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 52316,69186 52711,69501
-userdel	q4 52316,69186 50891,68557
+userdel	q4 52044,69176 52738,69563
+userdel	q4 52044,69176 50891,68557
 EOF
      },
      { from  => 1136502000, # 2006-01-06 00:00
@@ -6347,7 +6347,7 @@ EOF
        text  => 'L 272 Vierraden-Woltersdorf OD Blumenhagen Kanalbau Vollsperrung 16.10.2006-31.10.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 69341,80383 69356,80336 69442,80070 69400,79825
+userdel	q4::inwork 69341,80383 69356,80336 69431,80070 69388,79825
 EOF
      },
      { from  => 1161036000, # 2006-10-17 00:00
@@ -9591,7 +9591,7 @@ EOF
        text  => 'K 7302 zwischen Dobberzin und Stolpe Straßenneubau Vollsperrung 27.08.2007-21.12.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 57050,65287 56712,66112 56200,66475
+userdel	2::inwork 56852,65453 56837,65747 56479,66257
 EOF
      },
      { from  => 1187042400, # 2007-08-14 00:00
@@ -13213,11 +13213,11 @@ EOF
        text  => 'K 7359 Crussow - B 2 zw. Kreisverkehr B 2 Ri. Schwedt und OE Neuhof Rohre für Erdgastrasse Vollsperrung 07.01.2009-19.01.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 55431,69759 55318,70278
+userdel	2::inwork 55424,69905 55318,70278
 EOF
      },
      { from  => 1233001614, # 2009-01-26 21:26
-       until => 1252965600, # 2009-09-15 00:00
+       until => 1247256157, # 2009-09-15 00:00 1252965600
        text  => 'Königsallee (Wilmersdorf) stadtauswärts zwischen Schinkelstr. und Lynarstr. Baustelle, Fahrtrichtung gesperrt (aber der Radweg ist möglicherweise noch nutzbar) (Ende ca. Mitte 09.2009) ',
        type  => 'gesperrt',
        source_id => 'IM_009603',
@@ -13512,7 +13512,7 @@ userdel	2::inwork 49004,64047 48516,64085 48151,64245
 EOF
      },
      { from  => 1236466800, # 2009-03-08 00:00
-       until => 1251756000, # 2009-09-01 00:00
+       until => 1247256843, # 2009-09-01 00:00 1251756000
        text  => 'L 402 Zeuthen - Dahlewitz Kreuzung zw. Zeuthen und Kiekebusch Neubau Kreisverkehr Vollsperrung 09.03.2009-31.08.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -13543,7 +13543,7 @@ EOF
        text  => 'Jessnerstr. wegen Bauarbeiten in Richtung Süden nicht befahrbar',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2009-07-03
+#: last_checked: 2009-07-11
 #: XXX nach Beendigung der Bauarbeiten ist wahrscheinlich die gesamte Straße asphaltiert, mit einigen Aufpflasterungen
 userdel	q4::inwork; 15080,11905 14977,11754 14941,11689 14849,11539
 EOF
@@ -13577,8 +13577,8 @@ userdel	q4::inwork; 7378,14559 7180,14419 7123,14367 6992,14251 6807,14093 6730,
 EOF
      },
      { from  => 1238450400, # 2009-03-31 00:00
-       until => 1261177200, # 2009-12-19 00:00
-       text  => 'B 002 Wittenberg - LG - Treuenbrietzen OD Marzahna Kanal- und Straßenbau halbseitig gesperrt; Einbahnstraße 01.04.2009-18.12.2009 ',
+       until => 1247695200, # 2009-07-16 00:00
+       text  => 'B 002 Wittenberg - LG - Treuenbrietzen OD Marzahna Kanal- und Straßenbau halbseitig gesperrt; Einbahnstraße 01.04.2009-15.07.2009 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork; -32313,-49192 -31201,-45781
@@ -14631,7 +14631,7 @@ userdel	2::temp 9636,12126 9651,12020 9663,11927 9672,11833
 EOF
      },
      { from  => 1246398785, # 2009-06-30 23:53
-       until => 1247695199, # 2009-07-15 23:59
+       until => 1247341116, # 2009-07-15 23:59 1247695199
        text  => 'Späthstr. (Treptow) Richtung A113 zwischen Königsheideweg und Britzer Allee Baustelle, Fahrtrichtung gesperrt (bis Mitte 07.2009)',
        type  => 'gesperrt',
        source_id => 'IM_013302',
@@ -14711,6 +14711,90 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork; 1738,25243 1767,25098 1775,25019 1750,24942 1730,24860 1732,24798 1735,24738
+EOF
+     },
+     { from  => 1247255857, # 2009-07-10 21:57
+       until => 1249163999, # 2009-08-01 23:59
+       text  => 'Bahnhofstr. (Pankow) in beiden Richtungen zwischen Mönchmühler Str. und Bahnübergang Baustelle, Straße vollständig gesperrt (bis Anfang 08.2009)',
+       type  => 'gesperrt',
+       source_id => 'IM_012890',
+       data  => <<EOF,
+userdel	2::inwork 8803,23478 8626,23432 8584,23421
+EOF
+     },
+     { from  => 1247169516, # 2009-07-09 21:58
+       until => 1247454000, # 2009-07-13 05:00
+       text  => 'Baumschulenstr. (Treptow) in beiden Richtungen zwischen Glanzstr. und Ekkehardstr. (DB-Brücke) Baustelle, gesperrt (bis Montag 5 Uhr)',
+       type  => 'gesperrt',
+       source_id => 'IM_013579',
+       data  => <<EOF,
+userdel	2::inwork 16286,6946 16323,6998
+EOF
+     },
+     { from  => 1247255953, # 2009-07-10 21:59
+       until => 1247349600, # 2009-07-12 00:00
+       text  => 'Bayreuther Str. (Charlottenburg) ebenso nördlicher Bereich des Wittenbergplatzes Veranstaltung: Bayreuther Str. ab Kleiststr. gesperrt. bis ca. 11.07.09, 24 Uhr',
+       type  => 'handicap',
+       source_id => 'IM_013507',
+       data  => <<EOF,
+userdel	q4::temp 6353,10583 6380,10704 6378,10887
+EOF
+     },
+     { from  => 1247256047, # 2009-07-10 22:00
+       until => 1249163999, # 2009-08-01 23:59
+       text  => 'Eichelhäherstr. (Reinickendorf) in beiden Richtungen zwischen Habichtstr. und Am Eulenhorst Baustelle, für beide Richtungen nur ein Fahrstreifen abwechselnd frei. Bis Anfang 08.2009)',
+       type  => 'handicap',
+       source_id => 'IM_013510',
+       data  => <<EOF,
+userdel	q4::inwork -1787,19341 -1826,19541 -1788,19663
+EOF
+     },
+     { from  => 1247090400, # 2009-07-09 00:00
+       until => 1247954400, # 2009-07-19 00:00
+       text  => 'B 087 Luckau - Schlieben zw. Wüstermarke und Hohenbucko Fahrbahnsanierung Vollsperrung 10.07.2009-18.07.2009 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 20927,-67514 22404,-66355 24219,-65378
+EOF
+     },
+     { from  => 1247954400, # 2009-07-19 00:00
+       until => 1248300000, # 2009-07-23 00:00
+       text  => 'K 6813 B122 - K6812 Zühlen zw. Zechow und Schwanow Straßenbauarbeiten Vollsperrung 20.07.2009-22.07.2009 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -24687,71412 -26350,70262 -26671,70334 -27168,70209 -27902,70373
+EOF
+     },
+     { from  => 1248213600, # 2009-07-22 00:00
+       until => 1248559200, # 2009-07-26 00:00
+       text  => 'K 6813 B122 - K6812 Zühlen zw. Zechow und Schwanow Straßenbauarbeiten Vollsperrung 23.07.2009-25.07.2009 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -27902,70373 -29027,70878
+EOF
+     },
+     { from  => 1248559200, # 2009-07-26 00:00
+       until => 1252706400, # 2009-09-12 00:00
+       text  => 'L 015 Rheinsberg - Dorf Zechlin zw. Abzw. Zühlen und Linow Straßenneubau, Vollsperrung 27.07.2009-11.09.2009 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -29636,76481 -28819,76060 -28278,75780 -27371,75722
+EOF
+     },
+     { from  => 1252792800, # 2009-09-13 00:00
+       until => 1253916000, # 2009-09-26 00:00
+       text  => 'L 015 Rheinsberg - Dorf Zechlin zw. Rheinsberg und Abzw. Zühlen Straßenneubau, Vollsperrung 14.09.2009-25.09.2009 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -26077,76116 -26509,76113 -26787,75950 -27091,75809 -27371,75722
+EOF
+     },
+     { from  => 1247349600, # 2009-07-12 00:00
+       until => 1256857200, # 2009-10-30 00:00
+       text  => 'L 024 Greiffenberg - Gerswalde zw. OL Greiffenberg und Wilmersdorf Grundhafter Straßenbau Vollsperrung 13.07.2009-29.10.2009 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 45489,76653 45010,77128 44326,77553 43888,77919 43560,78752
 EOF
      },
     );

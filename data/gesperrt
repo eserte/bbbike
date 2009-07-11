@@ -1204,15 +1204,15 @@ Kurfürstendamm -> Meinekestr.: unbequemes Passieren des Mittelstreifens (Bordste
 Meinekestr. -> Kurfürstendamm: unbequemes Passieren des Mittelstreifens (Bordsteine)	3::igndisp 5329,10422 5351,10760 5229,10716
 Mittelstreifen mit Straßenbahn	3nocross::ignrte 15420,12178 15443,12222 15480,12306 15508,12367
 Deutschmeisterstr. -> Möllendorffstr.: Mittelstreifen mit Straßenbahn	3::igndisp 15350,12270 15443,12222 15480,12306
-Möllendorffstr. -> Rathausstr.: Mittelstreifen mit Straßenbahn	3::igndisp 15508,12367 15480,12306 15531,12300
-Rathausstr. -> Möllendorffstr.: Mittelstreifen mit Straßenbahn	3::igndisp 15531,12300 15480,12306 15443,12222
+Möllendorffstr. -> Vorfahrt am Rathaus Lichtenberg: Mittelstreifen mit Straßenbahn	3::igndisp 15508,12367 15480,12306 15531,12300
+Vorfahrt am Rathaus Lichtenberg -> Möllendorffstr.: Mittelstreifen mit Straßenbahn	3::igndisp 15531,12300 15480,12306 15443,12222
 Zaun auf dem Mittelstreifen	3nocross::ignrte 6790,16018 6914,15908 6936,15888 7043,15793
-Müllerstr. -> Brüsseler Str.: Zaun auf dem Mittelstreifen	3::igndisp 6936,15888 6914,15908 6809,15798
+Müllerstr. -> Brüsseler Str.: Zaun auf dem Mittelstreifen	3::igndisp 6936,15888 6914,15908 6802,15790
+Brüsseler Str. -> Müllerstr.: Zaun auf dem Mittelstreifen	3::igndisp 6802,15790 6914,15908 6790,16018
+Brüsseler Str. -> Amsterdamer Str.: Zaun auf dem Mittelstreifen	3::igndisp 6802,15790 6914,15908 7077,16078
 Müllerstr. -> Amsterdamer Str.: Zaun auf dem Mittelstreifen	3::igndisp 6790,16018 6914,15908 7077,16078
 Amsterdamer Str. -> Müllerstr.: Zaun auf dem Mittelstreifen	3::igndisp 7077,16078 6914,15908 6936,15888
-Amsterdamer Str. -> Brüsseler Str.: Zaun auf dem Mittelstreifen	3::igndisp 7077,16078 6914,15908 6809,15798
-Brüsseler Str. -> Müllerstr.: Zaun auf dem Mittelstreifen	3::igndisp 6809,15798 6914,15908 6790,16018
-Brüsseler Str. -> Amsterdamer Str.: Zaun auf dem Mittelstreifen	3::igndisp 6809,15798 6914,15908 7077,16078
+Amsterdamer Str. -> Brüsseler Str.: Zaun auf dem Mittelstreifen	3::igndisp 7077,16078 6914,15908 6802,15790
 Straßenbahntrasse	3nocross::ignrte 14597,15970 14609,15921 14650,15750
 Orankeweg -> Indira-Gandhi-Str.: Straßenbahntrasse	3::igndisp 14720,15905 14609,15921 14650,15750
 Indira-Gandhi-Str. -> Orankeweg: Straßenbahntrasse	3::igndisp 14597,15970 14609,15921 14720,15905
@@ -1429,6 +1429,8 @@ tragen (Treppe, 50 Stufen)	0:50:-151 -12328,1941
 tragen (Treppe, 18 Stufen)	0:18:-72 8709,12605
 tragen (Treppe)	0:30 6016,12939 6017,12931 6019,12923
 tragen (Treppe, 4 Stufen)	0:10:86 38056,48407
+Drängelgitter	BNP:5:-164 4258,2693
+Drängelgitter	BNP:5:-123 4202,2622
 Drängelgitter, für Anhänger nicht passierbar	BNP:5:-206 2009,3362
 Drängelgitter, für Anhänger nicht passierbar	BNP:5:-211 1980,3409
 Schwingtor	BNP:5:-153 15054,10168
@@ -1532,7 +1534,7 @@ Drängelgitter	BNP:3:-150 62699,40901
 Drängelgitter	BNP:3:-151 62686,40877
 Drängelgitter	BNP:3:-158 63740,42840
 Drängelgitter	BNP:3:-157 63721,42792
-Schranke, kann auch mit Anhänger umfahren werden	BNP:1:-170 49137,24422
+Schranke, kann auch mit Anhänger umfahren werden	BNP:1:-168 49137,24422
 Dora-Benjamin-Park - Uferweg: Zugang ist noch gesperrt	2:inwork 14621,10062 14599,10039
 Dora-Benjamin-Park: Straße ist noch gesperrt	2:inwork 14621,10062 14705,10149
 Vicki-Baum-Str.: noch in Bau, gesperrt	2:inwork 15990,10185 15894,10251

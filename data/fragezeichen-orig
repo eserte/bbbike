@@ -12,8 +12,8 @@
 #: XXX: laut http://www.berlin.de/ba-pankow/presse/archiv/20081009.1220.111237.html sollten die Bauarbeiten nun beendet sein
 #: XXX: in osm ist schon cyclepath=lane komplett eingetragen, aber waren hier schon die provisorischen gemeint?
 Wisbyer Str.: Radstreifen sind noch provisorisch	? 12091,16209 12026,16247 11887,16320 11828,16335 11807,16340 11727,16358 11688,16365 11632,16373 11542,16384 11470,16393 11448,16398 11397,16405 11289,16423 11019,16465
-#: last_checked: 2009-05-26
-Frankfurter Allee: Radstreifen ist noch provisorisch	?; 15361,12071 15117,12106
+#: last_checked: 2009-07-11
+Frankfurter Allee: Radstreifen ist teilweise noch provisorisch	?; 15361,12071 15117,12106
 # Hier scheint nichts mehr zu passieren: #: last_checked: 2008-04-08 Wilhelmstr. (Kreuzberg)	? 9376,10393 9378,10539 9370,10615 9367,10641 9313,10789 9266,10936 9234,11056 9199,11166 9162,11286
 #: last_checked: 2008-10-11
 Alt-Moabit zwischen Kirch- und Paulstraße	? 7195,13046 6966,13075 6860,13093 6757,13112 6661,13130
@@ -40,6 +40,7 @@ Schlüterstr.	? 4579,11579 4567,11350 4556,11206 4540,11041 4525,10850 4513,10702
 #: by: Tagesspiegel vom 2009-04-12, soll 2009 realisiert werden
 Reichsstr.	? 1401,11428 1403,11428 1308,11506 1220,11583 1215,11587 1133,11664 1033,11754 881,11893 818,11954
 #: by: Tagesspiegel vom 2009-04-12, soll 2009 realisiert werden
+#: last_checked: 2009-07-09
 Müllerstr.	? 7754,15160 7611,15286 7474,15408 7414,15463 7277,15586 7198,15656 7129,15717 7043,15793 6936,15888 6914,15908 6790,16018 6680,16116 6608,16180 6450,16325 6444,16331 6433,16342 6311,16457 6208,16546 6103,16635 6019,16712 5937,16784 5777,16924 5589,17081 5504,17153
 #: by: Tagesspiegel vom 2009-04-12, soll 2009 realisiert werden
 #: last_checked: 2009-07-01
@@ -93,8 +94,6 @@ Friedrichsbrücke Richtung Bodestraße: ein Schild "verkehrsberuhigt" hängt hier, 
 #: last_checked: 2009-05-18
 #: next_check: 2009-05-31
 Jägerstr.: nach den Bauarbeiten in der Glinkastraße evtl. hier auch guter Asphalt	?::inwork 9108,11961 9201,11968 9394,11996
-#: last_checked: 2009-05-28
-Palisadenstr./Friedenstr.: Kreuzungsbereich wird umgebaut	?::inwork 12635,12629 12891,12549
 #: next_check: 2009-12-01:
 #: XXX und nicht vergessen: Eintrag in gesperrt dann entfernen! Und es existiert keine besondere Vorfahrtsregelung mehr. Evtl. auch Straßenkategorisierung bzw. comments_kfzverkehr anpassen.
 Französische Str.: Verlängerung wird 2009-12 eröffnet. Es wird eine Ampel an der Kreuzung Wilhelmstr. geben.	?::inwork 8901,12008 9076,12054
@@ -604,7 +603,7 @@ Biesenbrow - Passow: Qualität (vom Westen her wahrscheinlich auch nur der mäßige
 Biesenbrow - Briest: Qualität (vom Osten her Plattenweg)?	? 52512,82471 53263,82995 53611,83132 53570,83230 53668,83324
 #: note: vom Zug aus gesehen:
 Mürow - Henriettenhof: Qualität? im Bereich von Mürow asphaltiert	? 51971,72800 52072,72613 52361,72080
-Mürow - Henriettenhof: Qualität? südlich des Dorfes sah es wie ein Feldweg oder Kopfsteinpflaster aus (Q2 oder schlechter)	? 52361,72080 53612,69769 54031,69280
+Mürow - Henriettenhof: Qualität? südlich des Dorfes sah es wie ein Feldweg oder Kopfsteinpflaster aus (Q2 oder schlechter)	? 52361,72080 53566,69842 54031,69280
 Frauenhagen - Schönermark: Qualität? laut "Regio-Cart" gut geeignet, der Anfang im Süden sah gut aus (asphaltiert)	? 52490,75434 53312,76587 53555,77037 53868,77304 54146,77628 54332,77932
 Biesenbrow - Schönermark: Qualität (höchstwahrscheinlich asphaltiert)?	? 51812,78462 52611,79156 52663,79186 53647,78765 53692,78714 53765,78628 53872,78613 53982,78634 54113,78631 54146,78628 54283,78677 54366,78714 54542,78720
 Biesenbrow - Grünow: laut "Regio-Cart" gut geeignet	? 52611,79156 52632,79235 52720,79323 52830,79396 53973,80374 54000,80457 54061,80499 54119,80499
@@ -735,8 +734,8 @@ Frankfurt - Schlaubehammer: Qualität?	? 87379,-9565 87181,-9984 86831,-11347 866
 Brieskow-Finkenheerd: Qualität?	? 90164,-16382 90129,-16123 90183,-15925 90183,-15636 90259,-15331 90464,-15324 90632,-15087 91013,-15004
 Oder-Neiße-Radweg: Qualität?	? 90929,-14801 91203,-14745 91249,-14508 91340,-13206 91516,-13092 91767,-13412 92072,-13564 92856,-13747 93344,-13747 93664,-13838 94083,-14044 94821,-14569 95362,-14676 95949,-14592 96840,-14798 98188,-15598 99262,-16710 99316,-17441 99544,-18104 99734,-18363 99567,-19361 99232,-19841 98759,-20930 98112,-21608 98097,-22385 98417,-23177 99270,-24076 99468,-24601 99437,-25066 99117,-25531 98851,-25706 97647,-27138 97632,-27290 97343,-27595 97487,-27778 97609,-28204 97617,-28318 98066,-29720 98082,-29979 97952,-30634 97990,-31045 98866,-32386 98813,-32554 98950,-32820 99681,-33224 100214,-33399 101075,-33391 101227,-33460 102614,-34801 102614,-35204 102934,-35639 103063,-35692 103101,-35913 102347,-37010 102530,-37398 102690,-37924 102629,-38404 102896,-38746 102896,-39059 102698,-39455 102583,-39897 102720,-39958 102667,-40072 102400,-40140 102286,-40376 102309,-40826 102172,-41070 101677,-41572 101418,-41466 101159,-41473 100847,-41329 100458,-41915 99727,-42662 99300,-43225 99453,-43477 99565,-43453 99811,-43385 99933,-44147 99719,-44475 99674,-44764 99573,-44905
 Falkenberg - Liepe: Qualität (vermutlich nur mäßig?)?	? 48475,46175 48425,46625 48662,47600 49237,48087 49400,48437 49750,48625 49906,48904
-Crossiw - Gellmersdorf: Qualität?	? 55045,66286 54925,64862 54700,64125 54787,63762 54700,63500
-Gellmersdorf - Lüderitz: Qualität?	? 54874,63371 54975,63187 54712,63012 54662,62850 55100,61175 55462,60387 55443,60071
+Crossiw - Gellmersdorf: Qualität?	? 54909,66268 54715,64807 54474,64173 54646,63795 54622,63448
+Gellmersdorf - Lüderitz: Qualität?	? 54723,63351 54755,63252 54631,63129 54662,62850 55100,61175 55462,60387 55444,60035
 Grillenweg: Qualität? Stimmt der Straßen/Wegname? Ausschilderung vorhanden? nachts beleuchtet?	? 24236,5594 24225,5619 24216,5748 24197,5791 24150,5854 24126,5874 24111,5922 24122,6007
 #: note: Siehe auch http://www.pds-fraktion-treptow-koepenick.de/drucksache-5-908.html. Jupiterstr./Altglienicke aus der Datenbank herausnehmen.
 #: XXX Oder heißt sie weiterhin Jupiterstr.? Unklarer Eintrag von isabell komoll: mäßiger Asphalt, Fußgängerzone???
@@ -1029,8 +1028,9 @@ Heinrich-Zille-Weg: Qualität?	? 815,12653 1070,13309
 #: next_check: 2005-12-01
 Tharauer Allee: Bauarbeiten erledigt?	? -1483,11283 -1679,11336 -1818,11466 -1885,11392
 #: XXX: unklarer Beitrag von anonymous (guter Asphalt, kurvenreich?), Einbahnstraßenfrage ist nicht beantwortet
-#: XXX: confirmed: Einbahnstraße auch für Radfahrer
-Pasewalker Str. (Wedding): Qualität (wahrscheinlich Asphalt)? Einbahnstraße auch für Radfahrer?	? 7891,15417 7877,15581
+#: XXX: confirmed: Einbahnstraße (Richtung Süden) auch für Radfahrer
+#: XXX: nicht sicher, aber im Dunkeln sah das nach Kopfsteinpflaster, evtl. kleinteiliges, aus
+Pasewalker Str. (Wedding): Qualität?	? 7891,15417 7877,15581
 Verbindung Stülpnagelstr. - Knobelsdorffstr. vorh.?	? 2185,11701 2154,11762
 Greifswalder Str./Lilli-Henoch-Str.: gibt es hier eine Überquerungsmöglichkeit über die Straßenbahntrasse?	? 12614,14941
 #XXX del (erst interessant, wenn neue Straßen entstehen...) hier entsteht ein neues Wohngebiet	F:? 897,9056 957,8982 1677,9588 1551,9722
@@ -1271,12 +1271,12 @@ Mürow - Pinnow: Qualität (zumindest entlang der Bahnlinie asphaltiert)?	? 52072,
 Hohenlandin - Heinersdorf: Qualität?	? 58674,76657 59271,76828 61331,77132 62781,76706 63287,76613
 Heinersdorf - B166: Qualität?	? 63287,76613 63488,76645 64624,77291
 Heinersdorf - Berkholz: Qualität (am Bahnübergang asphaltiert)?	? 63287,76613 63233,76089 63244,76011 63732,73976 63805,73769 63945,73688
-Berkholz - Meyenburg: Qualität?	? 63945,73688 64061,73403 64317,73452 64817,73269 64953,73109 65450,72525 65658,72501 65846,72250
-Meyenburg - Schwedt: Qualität?	? 65846,72250 65828,72123 67157,71526
+Berkholz - Meyenburg: Qualität?	? 63945,73688 64048,73386 64272,73434 64491,73284 64797,73259 64976,73094 65440,72548 65658,72501 65817,72245
+Meyenburg - Schwedt: Qualität?	? 65817,72245 65801,72127 67117,71540
 Weg entlang der Bahn: asphaltiert	? 63244,76011 63956,75955 64832,75778
 Weg entlang der Bahn: sandig, womöglich Q2-Q3	? 64832,75778 65412,75648
-B166 - Meyenburg: Qualität (im Bereich des Bahnübergangs asphaltiert)?	? 65632,76166 65603,76110 65429,75766 65411,75684 65412,75648 65417,75421 65388,75202 65027,74177 64931,73525 64953,73109
-B166 - Berkholz: Qualität?	? 65027,74177 64076,73706 63945,73688
+B166 - Meyenburg: Qualität (im Bereich des Bahnübergangs asphaltiert)?	? 65632,76166 65603,76110 65429,75766 65411,75684 65412,75648 65417,75421 65388,75202 65022,74147 64983,73522 64976,73094
+B166 - Berkholz: Qualität?	? 65022,74147 64076,73706 63945,73688
 Casekow - Blumberg: Qualität (höchstwahrscheinlich auch asphaltiert, da vor kurzem renoviert)?	? 61635,91508 60916,90216 60350,90184 60042,89956 59648,89982
 Wartin - Blumberg: Qualität (erster Teil in Wartin anscheinend schlechtes Kopfsteinpflaster)?	? 59905,94908 59309,93719 59427,91764 58814,91687 58786,91394 59331,90829 59648,89982
 Melzow: Qualität?	? 41459,85131 41621,85290 41910,85359
@@ -2034,8 +2034,6 @@ Genfer Weg: Qualität? Für Autos gesperrt?	? 2995,2119 3150,2113
 Schwarzdornweg: Qualität?	? 2831,2390 3006,2384
 Weißdornweg: Qualität?	? 2852,2342 3003,2339
 Murtener Str.: Qualität?	? 2746,2590 2809,2615 3015,2606 3163,2598
-#: XXX: Eintrag von anonymous unsicher: Asphalt Q0, aber Radweg?
-Freiastr.: Qualität?	? 16829,12420 16696,12438
 #: XXX: Wegführung? Zumindest an der Herzbergstr. Beton, eher nur mäßige Qualität (Q1)
 #: XXX: Eintrag von Sybille Koppermann: guter Asphalt, enge Straße q1, Einbahnstraße offen Richtung Vulkanstr.
 Bernhard-Bästlein-Str.: Qualität? Einbahnstraße?	? 15348,13996 15487,14047 15595,14041 15593,13768 15661,13764 15653,13542
@@ -3185,8 +3183,6 @@ Martin-Albertz-Weg: Qualität?	? -3535,14408 -3587,14389
 Altstädter Ring - Münsingerstr./Martin-Albertz-Weg: Qualität?	? -3498,14413 -3535,14408
 Kurze Str. (Spandau): Qualität?	? -3582,15244 -3555,15377
 Kleine Mittelstr.: Qualität?	? -3536,15450 -3414,15460
-#: XXX: Eintrag aus plaetze-orig dann entfernen
-Roedeliusplatz: Qualität?	? 16158,12191 16246,12177
 Normannenstr.: Wie ist die Straße zwischen Magdalenenstr. und Schottstr. ausgeschildert: Roedeliusplatz oder Normannenstr.?	? 16159,12301 16227,12280 16276,12273
 Landsberger Allee - Anton-Saefkow-Platz: Qualität?	? 14871,14087 14903,14003
 Thaerstr. - Weidenweg: Straßenname?	? 13761,12690 13786,12636
@@ -3537,7 +3533,7 @@ Reiherweg (Potsdam): Qualität (zumindest am östlichen Ende asphaltiert)? Kann ma
 Ludwig-Boltzmann-Str.: Qualität des östlichen Abschnitts?	? -14374,458 -14216,372
 Jakob-von-Gundling-Str.: Qualität des östlichen Abschnitts?	? -13529,226 -13344,160
 Prädikow - Ihlow: Qualität? Für Autos gesperrt?	? 51867,25572 53381,24795 55410,24766
-Kastanienweg (Prädikow): Qualität?	? 51276,25176 51562,25039 51776,25017
+Kastanienweg (Prädikow): Qualität?	? 51257,25175 51562,25039 51776,25017
 Dorfstr. (Prädikow): Qualität?	? 51461,25613 51464,25638 51509,25735
 #: XXX benutzungspflichtiger Radweg am östlichen Ende
 Am Biotop: Qualität? Hat die gesamte Straße einen Radweg?	? 44686,20822 44589,20853 44493,20826 44382,20624 44286,20112
@@ -3588,12 +3584,6 @@ Lindauer Allee/Aroser Allee - Luisenweg: Fahrbahnbeschaffenheit der Radfahrverbi
 Markscheiderstr.: Qualität?	? 6960,19047 7105,19677
 #: XXX laut osm: ja
 Markscheiderstr. - An der Nordbahn: Existiert hier eine direkte Verbindung für Radfahrer? Qualität?	? 7105,19677 7125,19717
-#: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20090504.1220.126942.html vvv
-#: XXX vielleicht können Teilstücke als "grüner Weg" gekennzeichnet werden
-#: XXX wird die RR8 hier entlang geführt?
-Siegfriedstr. - Herzbergstr.: Qualität des Radwegs im Landschaftspark Herzberge? Nachts beleuchtet?	? 16860,12996 17041,12989 17114,13019 17170,13070 17234,13081 17215,13416 17194,13519
-Siegfriedstr. - Herzbergstr.: Qualität des Radwegs im Landschaftspark Herzberge? Nachts beleuchtet?	? 17215,13416 17292,13478
-#: by: ^^^
 Fischerstr. - Lückstr.: Qualität des Weges durch den Blockpark? Für Radfahrer befahrbar? Nachts beleuchtet?	? 16246,10641 16303,10760
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20090220.1035.120888.html (Einbahnstraßen)
 Pestalozzistr. (Mahlsdorf): Qualität? Wo besteht die Einbahnstraßenregelung? Gilt die Einbahnstraßenregelung nur für Autofahrer oder auch für Radfahrer?	? 25258,11705 25130,11737 24999,11766 24919,11783 24769,11819 24704,11830 24652,11794
@@ -3616,3 +3606,6 @@ Reiterhof, Phöben - Havelfähre: Qualität des Radwegs?	? -25787,3228 -25765,3246 
 Havelfähre - Trebelberg: Qualität des Radwegs?	? -26918,5525 -27169,5667 -27239,5694 -27344,5769 -27537,5873 -27679,5929 -27873,6033 -28007,6147 -28158,6227 -28398,6324 -28418,6351 -28778,6516 -28755,6544 -28757,6542 -29169,6718 -29225,6532 -29272,6453 -29279,6367 -29507,6251 -29501,6153 -29526,6093 -29580,6051 -29618,5962 -29969,5876 -29960,5808 -29883,5747 -29792,5636 -30714,5328 -30571,4759 -30814,4732 -30785,4243
 #: XXX_indoor mit Streckenführung in osm vergleichen
 Trebelberg - Götz: Qualität des Radwegs?	? -30785,4243 -31154,4222 -32084,4555 -31797,4911 -31914,4963 -31987,4900 -32261,4875 -32525,4957 -32836,4701 -32854,4530 -32897,4268 -33031,4079 -33335,3994 -33545,3812 -33724,3833 -33810,3769 -33846,3529 -34021,3446 -34198,3561 -34399,3482 -34754,3547 -34644,3235 -34804,3090 -35063,1837 -35855,561
+Zützen - ehem. B2: Qualität?	? 66091,69964 65762,70023 65345,70168 65207,70639
+Oder-Neiße-Radweg - Stützkow: Qualität?	? 61783,66148 61731,66250 61584,66212
+Stützkow - Alt-Gatow: Qualität?	? 61584,66212 61540,66359 61445,66368 61289,66610 60834,66986 60458,66859 60100,66606 60068,66610

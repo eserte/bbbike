@@ -84,7 +84,6 @@ Schönstedt/Karl-Marx-Str.	3 12649,8535 12540,8458 12582,8408 12598,8390
 Karl-Marx-Str./Schönstedt	3 12500,8504 12540,8458 12649,8535
 Hoffmannstr./Elsenstr.	3 14076,10011 14289,9870 14405,10027
 Jerusalemer/Leipziger	3 9892,11752 9898,11679 9981,11689
-Scharnweber/Gürtel	3 15080,11905 15248,11880 15294,11964
 Behren/Ebert	3 8861,12125 8737,12098 8595,12066 8581,11896 8571,11846
 UdL => Universitätsstr.	3 9475,12365 9601,12380 9574,12578
 Universitätsstr. => UdL	3 9574,12578 9601,12380 9679,12388 9771,12400 9780,12401
@@ -401,12 +400,12 @@ Frankfurter Allee -> Kinzigstr.: Kinzigstr./Frankfurter Allee	3::igndisp 14702,1
 Finowstr.+Weichselstr./Frankfurter Allee	3nocross::ignrte 14702,12157 14854,12137 14919,12130 14994,12121
 Finowstr. -> Frankfurter Allee: Finowstr.+Weichselstr./Frankfurter Allee	3::igndisp 14836,12045 14854,12137 14702,12157
 Frankfurter Allee -> Finowstr.: Finowstr.+Weichselstr./Frankfurter Allee	3::igndisp 14919,12130 14854,12137 14836,12045
-Weichselstr. -> Waldeyerstr.: Finowstr.+Weichselstr./Frankfurter Allee	3::igndisp 14879,11934 14919,12130 14997,12243
-Weichselstr. -> Frankfurter Allee: Finowstr.+Weichselstr./Frankfurter Allee	3::igndisp 14879,11934 14919,12130 14854,12137
-Waldeyerstr. -> Weichselstr.: Finowstr.+Weichselstr./Frankfurter Allee	3::igndisp 14997,12243 14919,12130 14879,11934
 Waldeyerstr. -> Frankfurter Allee: Finowstr.+Weichselstr./Frankfurter Allee	3::igndisp 14997,12243 14919,12130 14994,12121
-Frankfurter Allee -> Weichselstr.: Finowstr.+Weichselstr./Frankfurter Allee	3::igndisp 14994,12121 14919,12130 14879,11934
+Waldeyerstr. -> Weichselstr.: Finowstr.+Weichselstr./Frankfurter Allee	3::igndisp 14997,12243 14919,12130 14887,11929
+Frankfurter Allee -> Weichselstr.: Finowstr.+Weichselstr./Frankfurter Allee	3::igndisp 14994,12121 14919,12130 14887,11929
 Frankfurter Allee -> Waldeyerstr.: Finowstr.+Weichselstr./Frankfurter Allee	3::igndisp 14854,12137 14919,12130 14997,12243
+Weichselstr. -> Waldeyerstr.: Finowstr.+Weichselstr./Frankfurter Allee	3::igndisp 14887,11929 14919,12130 14997,12243
+Weichselstr. -> Frankfurter Allee: Finowstr.+Weichselstr./Frankfurter Allee	3::igndisp 14887,11929 14919,12130 14854,12137
 Friedrichstr. (Straßenbahn)	3nocross::ignrte 9225,13389 9236,13228 9245,13162 9251,13109
 Friedrichstr. -> Claire-Waldoff-Str.: Friedrichstr. (Straßenbahn)	3::igndisp 9245,13162 9236,13228 9114,13217
 Claire-Waldoff-Str. -> Friedrichstr.: Friedrichstr. (Straßenbahn)	3::igndisp 9114,13217 9236,13228 9225,13389
@@ -807,7 +806,7 @@ Finkeldeweg	1 22928,3057 22834,3571
 Mittelstreifen	3nocross::ignrte 19405,6276 19276,6359 19245,6379
 Verl. Rathenaustr. -> An der Wuhlheide: Mittelstreifen	3::igndisp 19407,6660 19276,6359 19405,6276
 An der Wuhlheide -> Verl. Rathenaustr.: Mittelstreifen	3::igndisp 19245,6379 19276,6359 19407,6660
-Kiautschoustr.	1 7020,14897 7199,14978
+Kiautschoustr.	1 7007,14911 7199,14978
 Rochstr.: Barriere	3 10418,12922 10535,13006 10571,13034
 Rochstr.: Barriere	3 10571,13034 10535,13006 10418,12922
 Mittelstreifen	3nocross::ignrte 7936,12906 7948,12918 8039,13009
@@ -825,3 +824,4 @@ Margarete-Kühn-Str.: Poller am Salzufer	3 5203,12387 5133,12240 5194,12176
 Margarete-Kühn-Str.: Poller am Salzufer	3 5018,12322 5133,12240 5203,12387
 Margarete-Kühn-Str.: Poller am Salzufer	3 5194,12176 5133,12240 5203,12387
 Eberswalder Str. (Bernau)	1 23109,30968 23103,30923 22922,30640
+Rutnikstr. - Möllendorffstr.: Abbiegen verboten	3 15648,12687 15546,12690 15550,12625
