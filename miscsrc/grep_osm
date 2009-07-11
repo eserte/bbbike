@@ -138,8 +138,31 @@ my $p = XML::LibXML->new;
 
 my $needs_header = 1;
 
-my $osm_file_i = 0;
+my @global_relation_defs;
+# First pass: handle nodes and way
 for my $osm_file (@osm_files) {
+    handle_osm_file($osm_file,
+		    do_relations => 1,
+		    search_term  => $search_term,
+		   );
+}
+# Second pass: handle relations, recorded in the first pass
+for my $relation_def (@global_relation_defs) {
+    my($rx, $osm_file, $relation_tags) = @$relation_def;
+    handle_osm_file($osm_file,
+		    do_relations  => 0,
+		    search_term   => $rx,
+		    relation_tags => $relation_tags,
+		   );
+}
+
+sub handle_osm_file {
+    my($osm_file, %args) = @_;
+    my $do_relations  = delete $args{'do_relations'};
+    my $search_term   = delete $args{'search_term'};
+    my $relation_tags = delete $args{'relation_tags'};
+    die "Unhandled parameters: " . join(" ", %args) if %args;
+
     my $fh = grep_osm_fh($search_term, $osm_file);
     set_info_handler($osm_file);
 
@@ -149,11 +172,13 @@ for my $osm_file (@osm_files) {
 	$buf .= $_;
     }
 
+    my @relation_defs; # { name => name, way => {....}, node => {....} }
+
     # Hack to find way and node elements in XML. Ignores
     # empty-elements (because they cannot have "name" tags, anyway).
     my @bufs = split /^--$/m, $buf;
     for my $buf (@bufs) {
-	while ($buf =~ m{(<(?:way|node) [^>]+(?<!/)>.*?</(?:way|node)>)}gs) {
+	while ($buf =~ m{(<(?:way|node|relation) [^>]+(?<!/)>.*?</(?:way|node|relation)>)}gs) {
 	    my $xml_frag = $1;
 	    if ($xml_frag =~ m{$search_term}i) {
 		my $frag = eval { $p->parse_string($xml_frag) };
@@ -162,7 +187,8 @@ for my $osm_file (@osm_files) {
 		    next;
 		}
 		$frag = $frag->documentElement;
-		my @coords;
+		my @coords; # for ways/nodes
+		my $relation_def; # for relations
 		if ($frag->nodeName eq 'way') {
 		    for my $nd_ref (map { $_->getAttribute('ref') } $frag->findnodes('//nd')) {
 			my $lonlat = $nodes_lonlat{$nd_ref};
@@ -173,31 +199,28 @@ for my $osm_file (@osm_files) {
 			    $need_cache_osm_nodes_hint = 1;
 			}
 		    }
+		} elsif ($do_relations && $frag->nodeName eq 'relation') {
+		    $relation_def = {};
+		    for my $way_member ($frag->findnodes('./member[@type="way"]')) {
+			$relation_def->{'way'}->{$way_member->getAttribute('ref')} = 1;
+		    }
+		    for my $node_member ($frag->findnodes('./member[@type="node"]')) {
+			$relation_def->{'node'}->{$node_member->getAttribute('ref')} = 1;
+		    }
+		    push @relation_defs, $relation_def;
 		} else {	# node
 		    push @coords, join ',', $frag->getAttribute('lon'), $frag->getAttribute('lat');
 		}
 		if (!@coords) {
-		    warn "No coords found in $xml_frag";
+		    if ($relation_def) {
+			$relation_def->{tags} = get_tags($frag);
+		    } else {
+			warn "No coords found in $xml_frag";
+		    }
 		    next;
 		}
 
-		my @tags;
-		for my $tag ($frag->findnodes('//tag')) {
-		    my $k = $tag->getAttribute('k');
-		    my $v = $tag->getAttribute('v');
-		    s{[\t\n]}{ }g for $k, $v;
-		    push @tags, "$k=$v";
-		}
-		for my $k (qw(user timestamp id)) {
-		    my $v = $frag->getAttribute($k);
-		    if (defined $v) {
-			s{[\t\n]}{ }g for $v;
-			push @tags, "$k=$v";
-		    }
-		}
-
-		# re-sort, name= first, created_by last
-		@tags = map { $_->[1] } sort { $a->[0] <=> $b->[0] } map { [m{^name=} ? 0 : m{^created_by=} ? 2 : 1, $_] } @tags;
+		my $tags_ref = get_tags($frag);
 
 		if ($needs_header) {
 		    print <<EOF;
@@ -210,10 +233,51 @@ EOF
 		    $needs_header = 0;
 		}
 
-		print join(" ", @tags) . "\tX " . ($out_conv ? join(' ', map { $out_conv->($_) } @coords) : join(' ', @coords)), "\n";
+		my $name = join(" ", @$tags_ref);
+		if ($relation_tags) {
+		    $name .= " [RELATION " . join(" ", @$relation_tags) . "]";
+		}
+		print $name . "\tX " . ($out_conv ? join(' ', map { $out_conv->($_) } @coords) : join(' ', @coords)), "\n";
 	    }
 	}
     }
+
+    if (@relation_defs) {
+	for my $relation_def (@relation_defs) {
+	    my $relation_tags = $relation_def->{tags};
+	    my @rx;
+	    # XXX Hack. Should use XML::LibXML::Reader here.
+	    for my $type (qw(node way)) {
+		if ($relation_def->{$type}) {
+		    push @rx, $type . ' id="(' . join('|', keys %{ $relation_def->{$type} }) . ')"';
+		}
+	    }
+	    my $rx = '(' . join('|', @rx) . ')';
+	    push @global_relation_defs, [$rx, $osm_file, $relation_tags];
+	}
+    }
+}
+
+sub get_tags {
+    my $frag = shift;
+    my @tags;
+    for my $tag ($frag->findnodes('//tag')) {
+	my $k = $tag->getAttribute('k');
+	my $v = $tag->getAttribute('v');
+	s{[\t\n]}{ }g for $k, $v;
+	push @tags, "$k=$v";
+    }
+    for my $k (qw(user timestamp id)) {
+	my $v = $frag->getAttribute($k);
+	if (defined $v) {
+	    s{[\t\n]}{ }g for $v;
+	    push @tags, "$k=$v";
+	}
+    }
+    
+    # re-sort, name= first, created_by last
+    @tags = map { $_->[1] } sort { $a->[0] <=> $b->[0] } map { [m{^name=} ? 0 : m{^created_by=} ? 2 : 1, $_] } @tags;
+    \@tags;
 }
 
 END {
@@ -266,8 +330,9 @@ The search regexp is internally used by C<egrep> and C<perl>. Try to
 use only regular expression constructs which are compatible with both
 programs.
 
-The usage of context lines is a hack. Especially for large features it
-is necessary to use a larger C<-context> value.
+The usage of context lines is a hack. Especially for large features or
+relations it is necessary to use a larger C<-context> value. You have
+to experiment.
 
 =head1 SEE ALSO
 
