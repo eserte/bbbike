@@ -483,9 +483,9 @@ Karlstr.	1 22556,4386 22458,4134
 Mittelstreifen	3nocross::ignrte 21400,18817 21335,18679 21251,18508
 Klandorfer Str. -> Märkische Allee: Mittelstreifen	3::igndisp 21377,18663 21335,18679 21251,18508
 Märkische Allee -> Klandorfer Str.: Mittelstreifen	3::igndisp 21400,18817 21335,18679 21377,18663
-Mittelstreifen	3nocross::ignrte 1208,3211 1334,3305 1415,3362
-Mörchinger Str. -> Berliner Str.: Mittelstreifen	3::igndisp 1358,3257 1334,3305 1208,3211
-Berliner Str. -> Mörchinger Str.: Mittelstreifen	3::igndisp 1415,3362 1334,3305 1358,3257
+Mittelstreifen	3nocross::ignrte 1214,3198 1338,3300 1415,3362
+Mörchinger Str. -> Berliner Str.: Mittelstreifen	3::igndisp 1358,3257 1338,3300 1214,3198
+Berliner Str. -> Mörchinger Str.: Mittelstreifen	3::igndisp 1415,3362 1338,3300 1358,3257
 Mittelstreifen	3nocross::ignrte 8939,16668 9000,16803 9024,16855 9028,16864 9082,16982
 Gotenburger Str. -> Prinzenallee: Mittelstreifen	3::igndisp 8844,16863 9000,16803 9024,16855
 Prinzenallee -> Gotenburger Str.: Mittelstreifen	3::igndisp 8939,16668 9000,16803 8844,16863
@@ -825,3 +825,4 @@ Margarete-Kühn-Str.: Poller am Salzufer	3 5018,12322 5133,12240 5203,12387
 Margarete-Kühn-Str.: Poller am Salzufer	3 5194,12176 5133,12240 5203,12387
 Eberswalder Str. (Bernau)	1 23109,30968 23103,30923 22922,30640
 Rutnikstr. - Möllendorffstr.: Abbiegen verboten	3 15648,12687 15546,12690 15550,12625
+Torgauer Str.: nur für Anlieger	2:Anlieger 7446,8200 7268,8225 7005,8150

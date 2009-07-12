@@ -1273,15 +1273,7 @@ userdel	2::inwork 7160,11225 6851,11346
          'type' => 'handicap'
        },
        undef,
-       {
-         'until' => 1247349600,
-         'text' => 'B 198 zw. Kerkow u. Greiffenberg Deckenerneuerung Vollsperrung 22.06.2009-11.07.2009 ',
-         'from' => 1245535200,
-         'id' => 1715,
-         'data' => 'userdel	2::inwork 48951,71593 48164,72815 47908,73136 47297,73550 47223,73677 46875,75023 46704,75833
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1252188000,
          'text' => 'K 6722 B246, Bornow - Groß Rietz zw. Bornow und Birkholz Straßenneubau Vollsperrung 22.06.2009-05.09.2009 ',
@@ -1420,16 +1412,7 @@ userdel	2::inwork 7160,11225 6851,11346
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_013507',
-         'until' => 1247349600,
-         'text' => 'Bayreuther Str. (Charlottenburg) ebenso nördlicher Bereich des Wittenbergplatzes Veranstaltung: Bayreuther Str. ab Kleiststr. gesperrt. bis ca. 11.07.09, 24 Uhr',
-         'from' => 1247255953,
-         'id' => 1739,
-         'data' => 'userdel	q4::temp 6353,10583 6380,10704 6378,10887
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'IM_013510',
          'until' => 1249163999,
