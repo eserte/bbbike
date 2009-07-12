@@ -37,7 +37,6 @@ our $VERSION = "0.02";
 use constant TIMEOUT => 600;
 
 use vars qw($OSM_API_URL);
-#$OSM_API_URL = "http://www.openstreetmap.org/api/0.5";
 $OSM_API_URL = "http://www.openstreetmap.org/api/0.6";
 
 my $ltlnqr = qr{([-+]?\d+(?:\.\d+)?)};
@@ -47,7 +46,7 @@ my $short_osm_download_file_qr =           qr{$ltlnqr,$ltlnqr,$ltlnqr,$ltlnqr\.o
 my $ua = eval {
     require LWP::UserAgent;
     my $ua = LWP::UserAgent->new;
-    ## the download server seems to block this user agent --- use the LWP default
+    ## the download server seems to block this user agent -> use the LWP default
     #$ua->agent("downloadosm/$VERSION LWP/$LWP::VERSION [part of BBBike]");
     $ua->default_headers->push_header("Accept-Encoding" => "gzip");
     $ua->timeout(TIMEOUT);
@@ -374,3 +373,5 @@ Slaven Rezic
 =head1 SEE ALSO
 
 L<osm2bbd>.
+
+=cut
