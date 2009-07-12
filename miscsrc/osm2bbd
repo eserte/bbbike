@@ -203,6 +203,11 @@ my %grade_to_Q = (1 => "Q0",
 		  5 => "Q3-",
 		 );
 
+use constant HIGHWAY_BAB_RX => qr{^(?:motorway|motorway_link|trunk|trunk_link)$};
+use constant HIGHWAY_HH_RX  => qr{^(?:primary|primary_link)$};
+use constant HIGHWAY_H_RX   => qr{^(?:secondary|tertiary)$};
+use constant HIGHWAY_N_RX   => qr{^(?:residential|unclassified|service|minor)$};
+
 sub add_underline {
     return if $ignore_underline;
     my($or_ref, $name, $cat) = @_;
@@ -908,17 +913,17 @@ for my $osm_file (@osm_files) {
 		    $addcat .= "::Br";
 		}
 
-		if      ($highway_cat =~ m{^(?:motorway|motorway_link|trunk|trunk_link)$} || $is_motorroad) {
+		if      ($highway_cat =~ HIGHWAY_BAB_RX || $is_motorroad) {
 		    if ($country eq 'de') {
 			$name =~ s{\bA\s*(\d+)}{BAB$1};
 		    }
 		    push @or, ["strassen_bab", "BAB".$addcat];
 		    $is_motorway = 1;
-		} elsif ($highway_cat =~ m{^(?:primary|primary_link)$}) {
+		} elsif ($highway_cat =~ HIGHWAY_HH_RX) {
 		    push @or, ["strassen", "HH".$addcat];
-		} elsif ($highway_cat =~ m{^(?:secondary|tertiary)$}) {
+		} elsif ($highway_cat =~ HIGHWAY_H_RX) {
 		    push @or, ["strassen", "H".$addcat];
-		} elsif ($highway_cat =~ m{^(?:residential|unclassified|service|minor)$}) {
+		} elsif ($highway_cat =~ HIGHWAY_N_RX) {
 		    push @or, ["strassen", "N".$addcat];
 		} elsif ($highway_cat eq 'road') {
 		    push @or, ['strassen', "N".$addcat];
@@ -985,11 +990,21 @@ for my $osm_file (@osm_files) {
 		    push @or, ["strassen", "N".$addcat];
 		    push @or, ["radwege_exact", "RW6;RW6", name => ($name ? "$name: " : "") . ($lang eq 'en' ? 'living street' : 'verkehrsberuhigter Bereich')];
 		} elsif ($highway_cat =~ m{^(?:construction|planned)$}) {
-		    my $construction = $tag{'construction'} || "";
-		    if ($construction eq 'motorway') { # seen in Berlin, strange one
+		    my $construction = $tag{'construction'} || ""; # what will the type of street be?
+		    if      ($construction =~ HIGHWAY_BAB_RX) {
 			push @or, ["strassen_bab", "BAB::inwork"];
+		    } elsif ($construction =~ HIGHWAY_HH_RX) {
+			push @or, ['strassen', 'HH'];
+			push @or, ['gesperrt', '2:inwork'];
+		    } elsif ($construction =~ HIGHWAY_H_RX) {
+			push @or, ['strassen', 'H'];
+			push @or, ['gesperrt', '2:inwork'];
+		    } elsif ($construction =~ HIGHWAY_N_RX) {
+			push @or, ['strassen', 'N'];
+			push @or, ['gesperrt', '2:inwork'];
 		    } else {
-			$unhandled{"highway=$highway_cat+construction=$construction"}++;
+			push @or, ['strassen', 'N'];
+			push @or, ['gesperrt', '2:inwork'];
 		    }
 		} elsif ($highway_cat eq 'steps') {
 		    push @or, ["strassen", "NN".$addcat];
