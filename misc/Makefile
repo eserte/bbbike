@@ -166,16 +166,20 @@ dalmatia-test:	dalmatia-test-osm2bbd \
 		dalmatia-test-osm2bbd-postprocess1 \
 		dalmatia-test-osm2bbd-postprocess2
 
+download-tiled-dalmatia:
+	cd download/osm && mkdir -p dalmatia && cd dalmatia && \
+	    ${MISCSRCDIR}/downloadosm -step 0.1 14.8 42.5 18.2 44.4 -o .
+
 dalmatia-test-osm2bbd:
-	${MISCSRCDIR}/osm2bbd -map bbbike -country hr -o /tmp/data_dalmatien download/osm/dalmatien -f \
+	${MISCSRCDIR}/osm2bbd -map bbbike -country hr -o /tmp/data_dalmatia download/osm/dalmatia -f \
 	    -nosplitlonglines -experiment coastline_hack \
 	    -experiment polar_coord_hack
 
 dalmatia-test-osm2bbd-postprocess1:
-	${MISCSRCDIR}/osm2bbd-postprocess /tmp/data_dalmatien -only-coastline-hack -coastline-hack-anchor sw
+	${MISCSRCDIR}/osm2bbd-postprocess /tmp/data_dalmatia -only-coastline-hack -coastline-hack-anchor sw
 
 dalmatia-test-osm2bbd-postprocess2:
-	${MISCSRCDIR}/osm2bbd-postprocess /tmp/data_dalmatien -dataset-title Dalmatia
+	${MISCSRCDIR}/osm2bbd-postprocess /tmp/data_dalmatia -dataset-title Dalmatia
 
 ######################################################################
 # Testing for berlin
