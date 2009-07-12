@@ -47,8 +47,9 @@ sub run {
 
     my $coordsystem = param("coordsystem") || "bbbike";
     my $converter;
-    if ($coordsystem eq 'polar') {
+    if ($coordsystem =~ m{^(wgs84|polar)$}) {
 	$converter = \&polar_converter;
+	$coordsystem = 'polar'; # normalize XXX should be wgs84 some day?
     } else { # bbbike or standard
 	$converter = \&bbbike_converter;
     }
@@ -1095,7 +1096,7 @@ bbbikegooglemap.cgi - show BBBike data through Google maps
 =item C<coordsystem=>I<coordsystem>
 
 Currently only C<bbbike> (standard BBBike coord system, default) and
-C<polar> (WGS84 coordinates) are allowed.
+C<polar> or C<wgs84> (WGS84 coordinates) are allowed.
 
 =item C<wpt_or_trk=>I<...>
 
