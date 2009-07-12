@@ -573,11 +573,19 @@ for my $osm_file (@osm_files) {
 			# fix name, remove "Bahnhof" if at beginning (XXX do it language independent?):
 			$name =~ s{^(?:Bahnhof|Bhf\.?)\s+(.+)}{$1};
 		    }
-		    # We don't know which layer this station belongs to,
-		    # so resolve it later.
-		    resolve_node_later("railway", $name, $node2ll{$id});
 
-		    $next2->();
+		    if (exists $tag{'station'} && $tag{'station'} eq 'light_rail') {
+			push @or, ['sbahnhof', 'SA', name => normalize_name_sbahnhof($name)];
+		    } elsif (exists $tag{'station'} && $tag{'station'} eq 'subway') {
+			push @or, ['ubahnhof', 'UA', name => normalize_name_ubahnhof($name)];
+		    } else {
+			# We don't know which layer this station belongs to,
+			# so resolve it later.
+			# XXX Maybe this should cause a warning? But currently "normal" railway stations
+			# do not have a "station" tag, just light_rail and subway
+			resolve_node_later("railway", $name, $node2ll{$id});
+			$next2->();
+		    }
 		} elsif ($railway_cat =~ m{^(?:crossing|level_crossing)$}) {
 		    push @or, ["ampeln", "B"];
 		} else {
@@ -1427,13 +1435,13 @@ sub resolve_node_fallback {
 
 sub normalize_name_ubahnhof {
     my $name = shift;
-    $name =~ s{^U(\s+|-Bhf)}{};
+    $name =~ s{^U(\s+|-Bhf)\.?\s*}{};
     $name;
 }
 
 sub normalize_name_sbahnhof {
     my $name = shift;
-    $name =~ s{^S(\s+|-Bhf)}{};
+    $name =~ s{^S(\s+|-Bhf)\.?\s*}{};
     $name;
 }
 
