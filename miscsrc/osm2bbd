@@ -1070,7 +1070,7 @@ for my $osm_file (@osm_files) {
 		} elsif ($waterway_cat eq 'river') {
 		    push @or, ["wasserstrassen", "W1"];
 		} elsif ($waterway_cat eq 'stream') {
-		    push @or, ["wasserstrassen", "W2"];
+		    push @or, ["wasserstrassen", "W0"];
 		} else {
 		    $unhandled{"waterway=$waterway_cat"}++;
 		}
