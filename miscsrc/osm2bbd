@@ -1013,9 +1013,9 @@ for my $osm_file (@osm_files) {
 		    my $step_count = $tag{'step_count'};
 		    if (defined $step_count) {
 			if ($lang eq 'en') {
-			    $name = $step_count . ' steps'; # XXX singular case? yes, it can happen!
+			    $name = $step_count . ' step' . ($step_count == 1 ? '' : 's');
 			} else {
-			    $name .= " ($step_count Stufen)"; # XXX singular?
+			    $name .= " ($step_count Stufe" . ($step_count == 1 ? '' : 'n');
 			}
 			$lost_time = int($step_count * 0.7); # XXX need more scientific background for the coefficient
 		    }
