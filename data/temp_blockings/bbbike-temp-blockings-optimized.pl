@@ -861,7 +861,7 @@ userdel	1::inwork 12229,10014 12398,9938 12556,9862
          'text' => 'Bauarbeiten in der Simplonstr., Straße gesperrt',
          'from' => undef,
          'id' => 1597,
-         'data' => '#: last_checked: 2009-07-05 vvv
+         'data' => '#: last_checked: 2009-07-12 vvv
 userdel	q4::inwork; 14597,11069 14530,11137
 userdel	q4::inwork 14530,11137 14465,11195
 #: last_checked ^^^
@@ -1402,16 +1402,7 @@ userdel	2::inwork 7160,11225 6851,11346
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_013579',
-         'until' => 1247454000,
-         'text' => 'Baumschulenstr. (Treptow) in beiden Richtungen zwischen Glanzstr. und Ekkehardstr. (DB-Brücke) Baustelle, gesperrt (bis Montag 5 Uhr)',
-         'from' => 1247169516,
-         'id' => 1738,
-         'data' => 'userdel	2::inwork 16286,6946 16323,6998
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'source_id' => 'IM_013510',
