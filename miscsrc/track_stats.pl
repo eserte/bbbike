@@ -36,6 +36,7 @@ my $gpsman_dir  = "$ENV{HOME}/src/bbbike/misc/gps_data",
 my $ignore_rx;
 my $stage1;
 my $stage2;
+my $sortby = "difftime";
 GetOptions("stage1=s" => \$stage1,
 	   "stage2=s" => \$stage2,
 
@@ -43,6 +44,8 @@ GetOptions("stage1=s" => \$stage1,
 	   "ignorerx=s" => \$ignore_rx,
 
 	   "gpsmandir=s" => \$gpsman_dir,
+
+	   "sortby=s" => \$sortby,
 	  ) or die "usage?";
 
 if ($stage2) {
@@ -137,7 +140,15 @@ sub stage2 {
 	my($file, $fromdef, $todef) = @$trackdef;
 	my($from1,$from2) = @{ $fromdef->[1] };
 	my($to1,  $to2)   = @{ $todef->[1] };
-	my $gps = GPS::GpsmanData::Any->load("$gpsman_dir/$file");
+	my $gps = eval { GPS::GpsmanData::Any->load("$gpsman_dir/$file") };
+	if ($@) {
+	    my $save_err = $@; # first error is best
+	    $gps = eval { GPS::GpsmanData::Any->load("$gpsman_dir/generated/$file") };
+	    if (!$gps) {
+		warn "$save_err, skipping...\n";
+		next;
+	    }
+	}
 	my $stage = 'from';
 	my $result;
 	my $length = 0;
@@ -216,7 +227,9 @@ sub stage2 {
 	}
     }
 
-    @results = sort { $a->{difftime} <=> $b->{difftime} } @results;
+    die "Invalid -sortby" if !exists $results[0]->{$sortby};
+
+    @results = sort { $a->{$sortby} <=> $b->{$sortby} } @results;
 
     my @cols = grep { /^!/ } keys %{ $results[0] };
     my $tb = Text::Table->new(map { /^!(.*)/; $1 } @cols);
