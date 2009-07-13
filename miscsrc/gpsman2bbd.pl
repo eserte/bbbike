@@ -179,6 +179,10 @@ EOF
 	$prefix = $destmap->coordsys;
     }
 
+    if ($destmaptoken ne 'standard') {
+	$_->set_global_directives({ map => ['polar'] }) for $s, $p;
+    }
+
     my $deststreetspath = File::Spec->file_name_is_absolute($deststreets) ? $deststreets : File::Spec->catfile($destdir, $deststreets);
     my $destpointspath  = File::Spec->file_name_is_absolute($destpoints) ? $destpoints : File::Spec->catfile($destdir, $destpoints);
 
@@ -317,9 +321,10 @@ EOF
 			($wpt->Latitude, $wpt->Longitude, undef, $gkk_zone);
 		    ($x, $y) = map { int } @gkk[1,2];
 		} else {
-		    ($x,$y) = map { $destmaptoken eq 'polar' ? $_ : int }
-			$Karte::map{"polar"}->map2map
-			    ($destmap, $wpt->Longitude, $wpt->Latitude);
+		    ($x,$y) = $destmap->trim_accuracy
+			($Karte::map{"polar"}->map2map
+			 ($destmap, $wpt->Longitude, $wpt->Latitude)
+			);
 		}
 		my $alt = $wpt->Altitude;
 		my $inaccurate = $wpt->Accuracy;
