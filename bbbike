@@ -14022,16 +14022,17 @@ sub set_coord_output_sub {
     if (defined $_coord_output) {
 	$coord_output = $_coord_output;
     }
+    (my $undecorated_coord_output = $coord_output) =~ s{:.*}{};
     # XXX warum geht es mit keys, aber nicht mit each!!?!?!?!
     foreach my $k (keys %Karte::map) {
 	#while(my($k,$v) = each %Karte::map) {
 	my $v = $Karte::map{$k};
 	#warn "$k => $v";
-	if ($coord_output eq $k) {
+	if ($undecorated_coord_output eq $k) {
 	    my $o = $Karte::map{$k};
 	    if ($edit_mode) { # XXX find better conditional
 		my $from_o = $Karte::map{'berlinmap'}; # XXX don't hardcode, each edit_mode has its own map-token
-		if ($k eq 'polar') {
+		if ($coord_output eq 'polar:dms') {
 		    $coord_output_sub = sub {
 			my(@c) = map { $_ / $scale } transpose(@_);
 			@c = map { sprintf "%d°%02d'%05.2f\"", Karte::Polar::ddd2dms($_) } $from_o->can('map2map')->($from_o, $o, @c);
@@ -14045,12 +14046,12 @@ sub set_coord_output_sub {
 		    };
 		}
 	    } else {
-		if ($k eq 'polar') {
+		if ($coord_output eq 'polar:dms') {
 		    $coord_output_sub = sub {
 			my(@c) = map { sprintf "%d°%02d'%05.2f\"", Karte::Polar::ddd2dms($_) } $o->can('standard2map')->($o, @_);
 			@c;
 		    };
-		} elsif ($k eq 'standard') {
+		} elsif ($coord_output eq 'standard') {
 		    $coord_output_sub = sub {
 			# force int
 			my(@c) = map { int } $o->can('standard2map')->($o, @_);

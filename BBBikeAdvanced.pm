@@ -1822,7 +1822,14 @@ sub advanced_coord_menu {
 			       -variable => \$coord_output,
 			       -value => $_,
 			       -command => sub { set_coord_output_sub() },
-			       );
+			      );
+	    if ($_ eq 'polar') {
+		$ausm->radiobutton(-label => $name . ' (DMS)',
+				   -variable => \$coord_output,
+				   -value => "$_:dms",
+				   -command => sub { set_coord_output_sub() },
+				  );
+	    }
 	    my $index = $ausm->index('last');
 	    if ($_ eq 'canvas') {
 		push @edit_mode_brb_cmd, sub { $ausm->invoke($index) };
