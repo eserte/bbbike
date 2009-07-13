@@ -145,6 +145,36 @@ eval {
     my $add_bbd;
     my $need_bbbike_css = 0;
 
+    {
+	my @add_bbd;
+	for my $key (param) {
+	    if ($key =~ m{^wpt\.\d+}) {
+		my($comment, $xy) = split /!/, param($key);
+		$comment =~ s{[\t\n]}{ }g;
+		push @add_bbd, "$comment\tWpt $xy";
+	    }
+	}
+	if (param("route")) {
+	    my(@points) = split / /, param("route");
+	    my $bbd_comment = param("comment") || "<no comment>";
+	    $bbd_comment =~ s{[\t\n]}{ }g;
+	    push @add_bbd, "$bbd_comment\tRte @points";
+	}
+	if (@add_bbd) {
+	    unshift @add_bbd,
+		("#: map: polar",
+		 "#: encoding: utf-8",
+		 "#: category_color.Wpt: #ff0000",
+		 "#: category_color.Rte: #0000ff",
+		 "#:",
+		 "#: by: $by_long vvv",
+		);
+	    push @add_bbd,
+		("#: by: ^^^");
+	    $add_bbd = join("\n", @add_bbd) . "\n";
+	}
+    }
+
     if (param("formtype") && param("formtype") =~ /^(newstreetform|fragezeichenform)$/) {
 	open(BACKUP, ">>/tmp/newstreetform-backup")
 	    or warn "Cannot write backup data for newstreetform: $!";
@@ -212,12 +242,16 @@ eval {
 	$plain_body .= "Lokal:  " . $link2 . "\n";
 	$plain_body .= "\n" . Data::Dumper->new([\%ENV],['ENV'])->Indent(1)->Useqq(1)->Dump;
     } else {
+	my $comment_param = param("comment");
+	if (!$author && !$email && $comment_param eq '' && !$add_bbd) {
+	    empty_msg(); # exits
+	}
 	$comment =
 	    "Von: $by_long\n" .
 	    "An:  $to\n\n" .
 	    (defined $mapx ? "Kartenkoordinaten: " . int($mapx) . "," . int($mapy) . "\n\n" : "") .
 	    "Kommentar:\n" .
-	    param("comment") . "\n";
+	    $comment_param . "\n";
 	$plain_body .= $comment . "\n";
 	$plain_body .= "Remote: " . $link1 . "\n" if defined $link1;
 	$plain_body .= "Lokal:  " . $link2 . "\n" if defined $link2;
@@ -227,36 +261,6 @@ eval {
 	    for my $key (param) {
 		$plain_body .= Data::Dumper->new([param($key)],[$key])->Indent(1)->Useqq(1)->Dump;
 	    }
-	}
-    }
-
-    {
-	my @add_bbd;
-	for my $key (param) {
-	    if ($key =~ m{^wpt\.\d+}) {
-		my($comment, $xy) = split /!/, param($key);
-		$comment =~ s{[\t\n]}{ }g;
-		push @add_bbd, "$comment\tWpt $xy";
-	    }
-	}
-	if (param("route")) {
-	    my(@points) = split / /, param("route");
-	    my $bbd_comment = param("comment") || "<no comment>";
-	    $bbd_comment =~ s{[\t\n]}{ }g;
-	    push @add_bbd, "$bbd_comment\tRte @points";
-	}
-	if (@add_bbd) {
-	    unshift @add_bbd,
-		("#: map: polar",
-		 "#: encoding: utf-8",
-		 "#: category_color.Wpt: #ff0000",
-		 "#: category_color.Rte: #0000ff",
-		 "#:",
-		 "#: by: $by_long vvv",
-		);
-	    push @add_bbd,
-		("#: by: ^^^");
-	    $add_bbd = join("\n", @add_bbd) . "\n";
 	}
     }
 
@@ -384,6 +388,17 @@ sub error_msg {
 					      body=>$comment})->query_string},$to),
 	  " mit dem folgenden Inhalt versenden:",br(),br(),
 	  pre($comment),
+	  end_html,
+	 );
+    exit;
+}
+
+sub empty_msg {
+    print(header,
+	  start_html(-title=>'Fehler beim Versenden',
+		     -style=>{'src'=>"$bbbike_html/bbbike.css"}),
+	  "Bitte einen Kommentar angeben.",br(),
+	  a({-href=>'javascript:history.back()'},'Zurück'),
 	  end_html,
 	 );
     exit;
