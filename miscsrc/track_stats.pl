@@ -80,35 +80,33 @@ sub stage1 {
 		next if $seen{$r->[Strassen::NAME]};
 		my($file) = $r->[Strassen::NAME] =~ m{^(\S+)};
 		next if $pass == 2 && !$in_start{$file};
-	    TRY_RECORD: {
-		    for my $r_i (1 .. $#{ $r->[Strassen::COORDS] }) {
-			my($r1,$r2) = @{$r->[Strassen::COORDS]}[$r_i-1,$r_i];
-			for my $checks ([$r1, $p1],
-					[$r1, $p2],
-					[$r2, $p1],
-					[$r2, $p2],
-				       ) {
-			    if ($checks->[0] eq $checks->[1]) {
-				$seen{$r->[Strassen::NAME]} = 1;
-				if ($pass == 1) {
-				    $in_start{$file} = [$r, [$checks->[0]], [$checks->[1]]];
-				} elsif ($pass == 2) {
-				    push @included, [$file, $in_start{$file}, [$r, [$checks->[0]], [$checks->[1]]]];
-				}
-				next TRY_RECORD;
-			    }
-			}
-			if (VectorUtil::intersect_lines(split(/,/, $p1),
-							split(/,/, $p2),
-							split(/,/, $r1),
-							split(/,/, $r2),
-						       )) {
+	    RECORD: for my $r_i (1 .. $#{ $r->[Strassen::COORDS] }) {
+		    my($r1,$r2) = @{$r->[Strassen::COORDS]}[$r_i-1,$r_i];
+		    for my $checks ([$r1, $p1],
+				    [$r1, $p2],
+				    [$r2, $p1],
+				    [$r2, $p2],
+				   ) {
+			if ($checks->[0] eq $checks->[1]) {
 			    $seen{$r->[Strassen::NAME]} = 1;
 			    if ($pass == 1) {
-				$in_start{$file} = [$r, [$r1,$r2], [$p1,$p2]];
+				$in_start{$file} = [$r, [$checks->[0]], [$checks->[1]]];
 			    } elsif ($pass == 2) {
-				push @included, [$file, $in_start{$file}, [$r, [$r1,$r2], [$p1,$p2]]];
+				push @included, [$file, $in_start{$file}, [$r, [$checks->[0]], [$checks->[1]]]];
 			    }
+			    next RECORD;
+			}
+		    }
+		    if (VectorUtil::intersect_lines(split(/,/, $p1),
+						    split(/,/, $p2),
+						    split(/,/, $r1),
+						    split(/,/, $r2),
+						   )) {
+			$seen{$r->[Strassen::NAME]} = 1;
+			if ($pass == 1) {
+			    $in_start{$file} = [$r, [$r1,$r2], [$p1,$p2]];
+			} elsif ($pass == 2) {
+			    push @included, [$file, $in_start{$file}, [$r, [$r1,$r2], [$p1,$p2]]];
 			}
 		    }
 		}
@@ -124,11 +122,13 @@ sub stage1 {
 	$ofh = \*STDERR;
     }
     require Data::Dumper;
-    print $ofh Data::Dumper->new([\@included],[qw()])->Indent(1)->Useqq(1)->Dump;
+    print $ofh Data::Dumper->new([\@included],[qw()])->Indent(1)->Useqq(1)->Purity(1)->Dump;
 }
 
 sub stage2 {
-    my $included = do $stage2;
+    use vars qw($VAR1);
+    do $stage2;
+    my $included = $VAR1;
     if (!$included) {
 	die "Cannot load from $stage2 (maybe: $@)";
     }
@@ -142,22 +142,35 @@ sub stage2 {
 	my $result;
 	my $length = 0;
 	my @vehicles;
+	my $current_vehicle;
+	my $current_brand;
+	my %vehicle_to_brand;
     PARSE_TRACK: {
 	    for my $chunk (@{ $gps->Chunks }) {
 		no warnings 'once';
 		my @points = map {
 		    join(",", $Karte::Polar::obj->trim_accuracy($_->Longitude, $_->Latitude));
 		} @{ $chunk->Points };
+
 		my $track_attrs = $chunk->TrackAttrs;
-		my $get_vehicle = sub {
-		    ($track_attrs->{'srt:vehicle'}
-		     ? ($track_attrs->{'srt:vehicle'} . ($track_attrs->{'srt:brand'} ? " (" . $track_attrs->{'srt:brand'} . ")" : ''))
-		     : '?'
-		    );
-		};
+		if ($track_attrs->{'srt:vehicle'}) {
+		    $current_vehicle = $track_attrs->{'srt:vehicle'} || '?';
+		}
+		$current_brand = undef;
+		if (!$track_attrs->{'srt:brand'}) {
+		    if (defined $current_vehicle && $vehicle_to_brand{$current_vehicle}) {
+			$current_brand = $vehicle_to_brand{$current_vehicle};
+		    }
+		} else {
+		    if (defined $current_vehicle) {
+			$current_brand = $vehicle_to_brand{$current_vehicle} = $track_attrs->{'srt:brand'};
+		    }
+		}
+		my $vehicle_label = defined $current_vehicle ? ($current_vehicle . (defined $current_brand ? " ($current_brand)" : '')) : '?';
+
 		if ($stage eq 'to') {
 		    # new chunk, maybe new vehicle?
-		    $result->{vehicles}->{ $get_vehicle->() }++;
+		    $result->{vehicles}->{$vehicle_label}++;
 		}
 		for my $wpt_i (1 .. $#points) {
 		    if ($stage eq 'from') {
@@ -166,7 +179,7 @@ sub stage2 {
 			    ($points[$wpt_i-1] eq $from2 &&
 			     $points[$wpt_i  ] eq $from1)) {
 			    tie my %vehicles, 'Tie::IxHash';
-			    $vehicles{ $get_vehicle->() } = 1;
+			    $vehicles{$vehicle_label} = 1;
 			    $result = {from1    => $chunk->Points->[$wpt_i-1],
 				       from2    => $chunk->Points->[$wpt_i  ],
 				       fromtime => $chunk->Points->[$wpt_i]->Comment_to_unixtime($chunk),
