@@ -212,3 +212,25 @@ sub stage2 {
 }
 
 __END__
+
+=pod
+
+HOWTO:
+
+ Create a streets-polar.bbd with all tracks in WGS84 coordinate system (see tracks-polar rule in misc/gps_data).
+
+ Set bbbike's output coordinate system to "polar" (WGS-84)
+
+ Activate to edit/select mode ("Koordinaten in Zwischenablage")
+
+ Select two points forming the "start line" and two points forming the "goal line"
+
+ Run the stage 1 of the programm (may take longer to create the grid):
+
+   ./track_stats.pl <coord1> <coord2> <coord3> <coord4> -stage1 /tmp/something
+
+ Run the stage 2 of the programm
+
+   ./track_stats.pl -stage2 /tmp/something
+
+=cut
