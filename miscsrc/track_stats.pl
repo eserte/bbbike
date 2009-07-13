@@ -213,9 +213,7 @@ sub stage2 {
 
 __END__
 
-=pod
-
-HOWTO:
+=head1 HOWTO
 
  Create a streets-polar.bbd with all tracks in WGS84 coordinate system (see tracks-polar rule in misc/gps_data).
 
@@ -232,5 +230,11 @@ HOWTO:
  Run the stage 2 of the programm
 
    ./track_stats.pl -stage2 /tmp/something
+
+=head1 TODO
+
+ * It's probably more efficient to have the tracks file splitted
+
+ * Grid should now about "polar" data and default the gridsize to something appropriate
 
 =cut
