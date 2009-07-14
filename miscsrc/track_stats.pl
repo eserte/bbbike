@@ -24,6 +24,7 @@ use Getopt::Long;
 use Text::Table;
 use Tie::IxHash;
 use Statistics::Descriptive;
+use Storable qw(lock_nstore lock_retrieve);
 
 use BBBikeUtil qw(ms2kmh s2hms);
 use GPS::GpsmanData::Any;
@@ -35,11 +36,11 @@ use VectorUtil;
 my $tracks_file = "$FindBin::RealBin/../tmp/streets-polar.bbd";
 my $gpsman_dir  = "$ENV{HOME}/src/bbbike/misc/gps_data",
 my $ignore_rx;
-my $stage1;
-my $stage2;
+my $start_stage;
+my $state_file;
 my $sortby = "difftime";
-GetOptions("stage1=s" => \$stage1,
-	   "stage2=s" => \$stage2,
+GetOptions("stage=i" => \$start_stage,
+	   "state=s" => \$state_file,
 
 	   "tracks=s" => \$tracks_file,
 	   "ignorerx=s" => \$ignore_rx,
@@ -49,10 +50,28 @@ GetOptions("stage1=s" => \$stage1,
 	   "sortby=s" => \$sortby,
 	  ) or die "usage?";
 
-if ($stage2) {
-    stage2();
-} else {
-    stage1();
+my $state = load_state();
+
+if (!defined $start_stage) {
+    if ($state && $state->{stage}) {
+	$start_stage = $state->{stage} + 1;
+    }
+}
+
+if (!defined $start_stage) {
+    $start_stage = 1;
+}
+
+my $max_stage = 4;
+if ($start_stage < 1 || $start_stage > $max_stage) {
+    die "Invalid start stage $start_stage";
+}
+
+for my $stage ($start_stage .. $max_stage) {
+    print STDERR "Stage $stage... " if $stage != $max_stage; # last stage does the output, therefore be quiet
+    no strict 'refs';
+    &{"stage" . $stage};
+    print STDERR "done\n" if $stage != $max_stage;
 }
 
 # Get tracks intersecting both lines
@@ -118,24 +137,13 @@ sub stage1 {
 	}
     }
 
-    my $ofh;
-    if ($stage1) {
-	open $ofh, ">", $stage1
-	    or die "Can't write to $stage1: $!";
-    } else {
-	$ofh = \*STDERR;
-    }
-    require Data::Dumper;
-    print $ofh Data::Dumper->new([\@included],[qw()])->Indent(1)->Useqq(1)->Purity(1)->Dump;
+    $state->{included} = \@included;
+    $state->{stage} = 1;
+    save_state();
 }
 
 sub stage2 {
-    use vars qw($VAR1);
-    do $stage2;
-    my $included = $VAR1;
-    if (!$included) {
-	die "Cannot load from $stage2 (maybe: $@)";
-    }
+    my $included = $state->{included};
     my @results;
     my %seen_device;
     for my $trackdef (@$included) {
@@ -221,6 +229,7 @@ sub stage2 {
 			    } else {
 				$result->{mount} = undef;
 			    }
+			    $result->{date} = guess_date($result);
 
 			    for my $field (qw(velocity vehicles length difftime file diffalt mount device)) {
 				no strict 'refs';
@@ -236,9 +245,15 @@ sub stage2 {
 	}
     }
 
-    die "Invalid -sortby" if !exists $results[0]->{$sortby};
+    $state->{results} = \@results;
+    $state->{seen_device} = \%seen_device;
+    $state->{stage} = 2;
+    save_state();
+}
 
-    @results = sort { $a->{$sortby} <=> $b->{$sortby} } @results;
+sub stage3 {
+    my @results = @{ $state->{results} };
+    my %seen_device = %{ $state->{seen_device} };
 
     my @cols = grep { /^!/ } keys %{ $results[0] };
 
@@ -269,6 +284,23 @@ sub stage2 {
 	}
     }
 
+    $state->{stats} = \%stats;
+    $state->{cols}  = \@cols;
+    $state->{count_per_device} = \%count_per_device;
+    $state->{stage} = 3;
+    save_state();
+}
+
+sub stage4 {
+    my @cols = @{ $state->{cols} };
+    my @results = @{ $state->{results} };
+    my %seen_device = %{ $state->{seen_device} };
+    my %stats = %{ $state->{stats} };
+    my %count_per_device = %{ $state->{count_per_device} };
+
+    die "Invalid -sortby" if !exists $results[0]->{$sortby};
+    @results = sort { $a->{$sortby} <=> $b->{$sortby} } @results;
+
     my $tb = Text::Table->new('', map { /^!(.*)/; $1 } @cols);
     $tb->load(map { [ '', @{$_}{@cols} ] } @results);
     for my $device ('ALL', keys %seen_device) {
@@ -281,7 +313,20 @@ sub stage2 {
 	}
     }
     print $tb->table, "\n";
+}
 
+sub load_state {
+    return if !defined $state_file;
+    if (-e $state_file) {
+	my $state = lock_retrieve $state_file;
+	return $state;
+    }
+    return {};
+}
+
+sub save_state {
+    return if !defined $state_file;
+    lock_nstore $state, $state_file;
 }
 
 sub format_velocity { sprintf "%.1f", ms2kmh($_[0]) }
@@ -309,10 +354,21 @@ sub guess_device {
 	} else {
 	    return "etrex vista hcx";
 	}
-    } elsif ($result->{file} =~ m{^W\d{14}}) {
+    } elsif ($result->{file} =~ m{^W\d{13,14}}) { # for some reason, the time string may have only 5 chars
 	return "n95";
     } else {
 	return undef;
+    }
+}
+
+sub guess_date {
+    my $file = $_[0]->{file};
+    if ($file =~ m{^(\d{8})\D}) {
+	return $1;
+    } elsif ($file =~ m{^W(\d{8})\d}) {
+	return $1;
+    } else {
+	return undef; # XXX maybe look into the file?
     }
 }
 
