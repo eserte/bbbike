@@ -142,6 +142,7 @@ sub stage1 {
     save_state();
 }
 
+# Find basic data for matched tracks (velocity, diffalt etc.)
 sub stage2 {
     my $included = $state->{included};
     my @results;
@@ -251,6 +252,7 @@ sub stage2 {
     save_state();
 }
 
+# Calculate statistics on data, total and per-device
 sub stage3 {
     my @results = @{ $state->{results} };
     my %seen_device = %{ $state->{seen_device} };
@@ -291,12 +293,18 @@ sub stage3 {
     save_state();
 }
 
+# Sort and print table
 sub stage4 {
     my @cols = @{ $state->{cols} };
     my @results = @{ $state->{results} };
     my %seen_device = %{ $state->{seen_device} };
     my %stats = %{ $state->{stats} };
     my %count_per_device = %{ $state->{count_per_device} };
+
+    if (!@results) {
+	print "No data\n";
+	return;
+    }
 
     die "Invalid -sortby" if !exists $results[0]->{$sortby};
     @results = sort { $a->{$sortby} <=> $b->{$sortby} } @results;
