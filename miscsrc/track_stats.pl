@@ -25,7 +25,7 @@ use Text::Table;
 use Tie::IxHash;
 use Statistics::Descriptive;
 
-use BBBikeUtil qw(ms2kmh s2hm);
+use BBBikeUtil qw(ms2kmh s2hms);
 use GPS::GpsmanData::Any;
 use Karte::Polar;
 use Strassen::Core;
@@ -266,7 +266,7 @@ sub stage2 {
 sub format_velocity { sprintf "%.1f", ms2kmh($_[0]) }
 sub format_vehicles { join(", ", keys %{ $_[0] }) }
 sub format_length   { sprintf "%.2f", $_[0]/1000 }
-sub format_difftime { s2hm($_[0]) }
+sub format_difftime { sprintf "%8s", s2hms($_[0]) }
 sub format_file     { $_[0] }
 sub format_diffalt  { sprintf "%.1f", $_[0] }
 sub format_mount    { defined $_[0] ? sprintf "%.1f", $_[0] : undef }
