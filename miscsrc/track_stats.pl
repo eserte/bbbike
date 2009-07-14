@@ -23,6 +23,7 @@ use lib ("$FindBin::RealBin/..",
 use Getopt::Long;
 use Text::Table;
 use Tie::IxHash;
+use Statistics::Descriptive;
 
 use BBBikeUtil qw(ms2kmh s2hm);
 use GPS::GpsmanData::Any;
@@ -218,14 +219,9 @@ sub stage2 {
 				$result->{mount} = undef;
 			    }
 
-			    $result->{'!velocity'} = sprintf "%.1f", ms2kmh($result->{velocity});
-			    $result->{'!vehicles'} = join(", ", keys %{ $result->{vehicles} });
-			    $result->{'!length'}   = sprintf "%.2f", $result->{length}/1000;
-			    $result->{'!difftime'} = s2hm($result->{difftime});
-			    $result->{'!file'}     = $result->{file};
-			    $result->{'!diffalt'}  = sprintf "%.1f", $result->{diffalt};
-			    if (defined $result->{mount}) {
-				$result->{'!mount'}    = sprintf "%.1f", $result->{mount};
+			    for my $field (qw(velocity vehicles length difftime file diffalt mount)) {
+				no strict 'refs';
+				$result->{'!' . $field} = &{"format_$field"}($result->{$field});
 			    }
 
 			    push @results, $result;
@@ -242,10 +238,38 @@ sub stage2 {
     @results = sort { $a->{$sortby} <=> $b->{$sortby} } @results;
 
     my @cols = grep { /^!/ } keys %{ $results[0] };
-    my $tb = Text::Table->new(map { /^!(.*)/; $1 } @cols);
-    $tb->load(map { [ @{$_}{@cols} ] } @results);
+
+    my %stats;
+    for my $col (@cols) {
+	(my $numeric_field = $col) =~ s{^!}{};
+	next if $numeric_field !~ m{^(difftime|length|velocity|diffalt|mount)$};
+	my $s = Statistics::Descriptive::Full->new;
+	$s->add_data(map { $_->{$numeric_field} } @results);
+	no strict 'refs';
+	$stats{median}->{$col}             = &{"format_" . $numeric_field}($s->median);
+	$stats{mean}->{$col}               = &{"format_" . $numeric_field}($s->mean);
+	$stats{standard_deviation}->{$col} = &{"format_" . $numeric_field}($s->standard_deviation);
+	$stats{percentile_25}->{$col}      = &{"format_" . $numeric_field}($s->percentile(25));
+	$stats{percentile_75}->{$col}      = &{"format_" . $numeric_field}($s->percentile(75));
+    }
+
+    my $tb = Text::Table->new('', map { /^!(.*)/; $1 } @cols);
+    $tb->load(map { [ '', @{$_}{@cols} ] } @results);
+    $tb->load(['---']);
+    for my $stat_method (keys %stats) {
+	$tb->load([$stat_method, map { $stats{$stat_method}->{$_} || '' } @cols]);
+    }
     print $tb->table, "\n";
+
 }
+
+sub format_velocity { sprintf "%.1f", ms2kmh($_[0]) }
+sub format_vehicles { join(", ", keys %{ $_[0] }) }
+sub format_length   { sprintf "%.2f", $_[0]/1000 }
+sub format_difftime { s2hm($_[0]) }
+sub format_file     { $_[0] }
+sub format_diffalt  { sprintf "%.1f", $_[0] }
+sub format_mount    { defined $_[0] ? sprintf "%.1f", $_[0] : undef }
 
 __END__
 
