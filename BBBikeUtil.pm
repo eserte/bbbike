@@ -28,7 +28,7 @@ require Exporter;
 	     cp850_iso iso_cp850 nil
 	     kmh2ms
 	     STAT_MODTIME);
-@EXPORT_OK = qw(min max first sum ms2kmh clone bbbike_root);
+@EXPORT_OK = qw(min max first sum ms2kmh clone bbbike_root s2hms);
 
 use constant STAT_MODTIME => 9;
 
@@ -113,6 +113,12 @@ sub sqr {
 sub s2hm {
     my $s = shift;
     sprintf "%d:%02d", $s/3600, ($s%3600)/60;
+}
+
+# Sekunden in HH:MM:SS-Schreibweise
+sub s2hms {
+    my $s = shift;
+    sprintf "%d:%02d:%02d", $s/3600, ($s%3600)/60, $s%60;
 }
 
 # Sekunden in MM:SS-Schreibweise
