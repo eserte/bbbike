@@ -12,7 +12,7 @@
 # WWW:  http://www.rezic.de/eserte/
 #
 
-# XXX Temporary --- will be moved somewhere some day!
+# XXX Temporary --- will be renamed somewhere some day!
 
 use strict;
 use FindBin;
@@ -137,6 +137,7 @@ sub stage2 {
 	die "Cannot load from $stage2 (maybe: $@)";
     }
     my @results;
+    my %seen_device;
     for my $trackdef (@$included) {
 	my($file, $fromdef, $todef) = @$trackdef;
 	my($from1,$from2) = @{ $fromdef->[1] };
@@ -212,6 +213,8 @@ sub stage2 {
 			    $result->{length} = $length;
 			    $result->{velocity} = $result->{length} / $result->{difftime};
 			    $result->{file} = $file;
+			    $result->{device} = guess_device($result);
+			    $seen_device{$result->{device}} = 1;
 			    $result->{diffalt} = $chunk->Points->[$wpt_i]->Altitude - $result->{from2}->Altitude;
 			    if ($length) {
 				$result->{mount} = 100 * $result->{diffalt} / $length;
@@ -219,7 +222,7 @@ sub stage2 {
 				$result->{mount} = undef;
 			    }
 
-			    for my $field (qw(velocity vehicles length difftime file diffalt mount)) {
+			    for my $field (qw(velocity vehicles length difftime file diffalt mount device)) {
 				no strict 'refs';
 				$result->{'!' . $field} = &{"format_$field"}($result->{$field});
 			    }
@@ -240,24 +243,42 @@ sub stage2 {
     my @cols = grep { /^!/ } keys %{ $results[0] };
 
     my %stats;
+    my %count_per_device;
     for my $col (@cols) {
 	(my $numeric_field = $col) =~ s{^!}{};
 	next if $numeric_field !~ m{^(difftime|length|velocity|diffalt|mount)$};
-	my $s = Statistics::Descriptive::Full->new;
-	$s->add_data(map { $_->{$numeric_field} } @results);
-	no strict 'refs';
-	$stats{median}->{$col}             = &{"format_" . $numeric_field}($s->median);
-	$stats{mean}->{$col}               = &{"format_" . $numeric_field}($s->mean);
-	$stats{standard_deviation}->{$col} = &{"format_" . $numeric_field}($s->standard_deviation);
-	$stats{percentile_25}->{$col}      = &{"format_" . $numeric_field}($s->percentile(25));
-	$stats{percentile_75}->{$col}      = &{"format_" . $numeric_field}($s->percentile(75));
+
+	my %s;
+	$s{ALL} = Statistics::Descriptive::Full->new;
+	$s{ALL}->add_data(map { $_->{$numeric_field} } @results);
+
+	for my $device (keys %seen_device) {
+	    $s{$device} = Statistics::Descriptive::Full->new;
+	    my @filtered_results = grep { $_->{device} eq $device } @results;
+	    $s{$device}->add_data(map { $_->{$numeric_field} } @filtered_results);
+	    $count_per_device{$device} = scalar @filtered_results;
+	}
+
+	for my $device ('ALL', keys %seen_device) {
+	    no strict 'refs';
+	    $stats{$device}->{median}->{$col}             = &{"format_" . $numeric_field}($s{$device}->median);
+	    $stats{$device}->{mean}->{$col}               = &{"format_" . $numeric_field}($s{$device}->mean);
+	    $stats{$device}->{standard_deviation}->{$col} = &{"format_" . $numeric_field}($s{$device}->standard_deviation);
+	    $stats{$device}->{percentile_25}->{$col}      = &{"format_" . $numeric_field}($s{$device}->percentile(25));
+	    $stats{$device}->{percentile_75}->{$col}      = &{"format_" . $numeric_field}($s{$device}->percentile(75));
+	}
     }
 
     my $tb = Text::Table->new('', map { /^!(.*)/; $1 } @cols);
     $tb->load(map { [ '', @{$_}{@cols} ] } @results);
-    $tb->load(['---']);
-    for my $stat_method (keys %stats) {
-	$tb->load([$stat_method, map { $stats{$stat_method}->{$_} || '' } @cols]);
+    for my $device ('ALL', keys %seen_device) {
+	$tb->load(['---']);
+	if ($device ne 'ALL') {
+	    $tb->load(["- $device ($count_per_device{$device})"]);
+	}
+	for my $stat_method (keys %{ $stats{$device} }) {
+	    $tb->load([$stat_method, map { $stats{$device}->{$stat_method}->{$_} || '' } @cols]);
+	}
     }
     print $tb->table, "\n";
 
@@ -270,6 +291,30 @@ sub format_difftime { sprintf "%8s", s2hms($_[0]) }
 sub format_file     { $_[0] }
 sub format_diffalt  { sprintf "%.1f", $_[0] }
 sub format_mount    { defined $_[0] ? sprintf "%.1f", $_[0] : undef }
+sub format_device   { $_[0] }
+
+sub guess_device {
+    my $result = shift;
+    my($year, $month, $day) = $result->{file} =~ m{^(2\d{3})(\d{2})(\d{2})};
+    if (defined $year) {
+	if ($year <= 2005 ||
+	    ($year == 2006 && $month <= 2) # XXX approx.!
+	   ) {
+	    return "etrex venture";
+	} elsif (($year <= 2007) ||
+	    ($year == 2007 && ($month <= 11 ||
+			       $day < 24))
+	   ) {
+	    return "etrex vista";
+	} else {
+	    return "etrex vista hcx";
+	}
+    } elsif ($result->{file} =~ m{^W\d{14}}) {
+	return "n95";
+    } else {
+	return undef;
+    }
+}
 
 __END__
 
@@ -296,5 +341,32 @@ __END__
  * It's probably more efficient to have the tracks file splitted
 
  * Grid should now about "polar" data and default the gridsize to something appropriate
+
+ * Allow more than two points in the start and goal lines
+
+ * If more than two points in the start and goal lines are
+   implemented: iterate from the center to the ends of that lines.
+
+ * Create a set of checks which may be automatically executed.
+
+ * The -stage1/-stage2 options are strange. Better: just let the user
+   define a -state file, and give him the possibility to enter at an
+   arbitrary "stage". Default is to enter the latest stage. Every
+   stage could add something to the state file.
+
+ * It seems that it is more wise to put the diffalt value into
+   comments_mount than the mount value. Then the orig file processing
+   should calculate the mount value automatically.
+
+ * For better statistics for the mount value both directions should be
+   covered, not only one direction (of course, this is mostly
+   meaningless for values like velocity, especially in the case of
+   slopes).
+
+ * Show "bad" points, maybe also filter out. Show statistics about bad
+   points (the "~" and "~~").
+
+ * Create a Tk interface out of the results (for instant sorting and
+   filtering). This could operate on a created state file.
 
 =cut
