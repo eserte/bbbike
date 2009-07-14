@@ -211,12 +211,22 @@ sub stage2 {
 			    $result->{length} = $length;
 			    $result->{velocity} = $result->{length} / $result->{difftime};
 			    $result->{file} = $file;
+			    $result->{diffalt} = $chunk->Points->[$wpt_i]->Altitude - $result->{from2}->Altitude;
+			    if ($length) {
+				$result->{mount} = 100 * $result->{diffalt} / $length;
+			    } else {
+				$result->{mount} = undef;
+			    }
 
 			    $result->{'!velocity'} = sprintf "%.1f", ms2kmh($result->{velocity});
 			    $result->{'!vehicles'} = join(", ", keys %{ $result->{vehicles} });
 			    $result->{'!length'}   = sprintf "%.2f", $result->{length}/1000;
 			    $result->{'!difftime'} = s2hm($result->{difftime});
 			    $result->{'!file'}     = $result->{file};
+			    $result->{'!diffalt'}  = sprintf "%.1f", $result->{diffalt};
+			    if (defined $result->{mount}) {
+				$result->{'!mount'}    = sprintf "%.1f", $result->{mount};
+			    }
 
 			    push @results, $result;
 			    last PARSE_TRACK;
