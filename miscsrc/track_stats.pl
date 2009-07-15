@@ -402,35 +402,41 @@ __END__
 
 =head1 TODO
 
- * It's probably more efficient to have the tracks file splitted
+ * [#C] It's probably more efficient to have the tracks file splitted
 
- * Grid should now about "polar" data and default the gridsize to something appropriate
+ * [#A] Grid should know about "polar" data and default the gridsize to something appropriate
 
- * Allow more than two points in the start and goal lines
+ * [#A] Allow more than two points in the start and goal lines
 
- * If more than two points in the start and goal lines are
+ * [#C] If more than two points in the start and goal lines are
    implemented: iterate from the center to the ends of that lines.
 
- * Create a set of checks which may be automatically executed.
-
- * The -stage1/-stage2 options are strange. Better: just let the user
-   define a -state file, and give him the possibility to enter at an
-   arbitrary "stage". Default is to enter the latest stage. Every
-   stage could add something to the state file.
-
- * It seems that it is more wise to put the diffalt value into
+ * [#C] It seems that it is more wise to put the diffalt value into
    comments_mount than the mount value. Then the orig file processing
    should calculate the mount value automatically.
 
- * For better statistics for the mount value both directions should be
+ * [#B] For better statistics for the mount value both directions should be
    covered, not only one direction (of course, this is mostly
    meaningless for values like velocity, especially in the case of
-   slopes).
+   slopes). This could be an additional option, which should also be
+   definable in track_stats.yml.
 
- * Show "bad" points, maybe also filter out. Show statistics about bad
+ * [#B] Show "bad" points, maybe also filter out. Show statistics about bad
    points (the "~" and "~~").
 
- * Create a Tk interface out of the results (for instant sorting and
+ * [#B] Create a Tk interface out of the results (for instant sorting and
    filtering). This could operate on a created state file.
+
+=head1 DONE
+
+ * See F<misc/gps_data/SlayMakefile> and
+   F<misc/gps_data/track_stats.yml> for a list of routes which is
+   automatically processed.
+
+ * C<-state> may be given to save the state, for faster processing.
+   Ideally, if the state file contains the state of last stage, then
+   displaying the table is quite fast. The user may specify C<-stage>
+   to start the processing at a given state, e.g. to force
+   recalculation.
 
 =cut
