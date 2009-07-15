@@ -427,6 +427,11 @@ __END__
  * [#B] Create a Tk interface out of the results (for instant sorting and
    filtering). This could operate on a created state file.
 
+ * [#B] Create an interface which is usable from within BBBike to
+   immediately get results. This could use a temporary state file for
+   fast sorting, which could be optionally made "persistent" by naming
+   it.
+
 =head1 DONE
 
  * See F<misc/gps_data/SlayMakefile> and
