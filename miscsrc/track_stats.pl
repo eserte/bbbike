@@ -1,4 +1,4 @@
-#!/usr/bin/perl -w
+#!/usr/bin/perl
 # -*- perl -*-
 
 #
@@ -15,6 +15,7 @@
 # XXX Temporary --- will be renamed somewhere some day!
 
 use strict;
+use warnings;
 use FindBin;
 use lib ("$FindBin::RealBin/..",
 	 "$FindBin::RealBin/../lib",
@@ -32,14 +33,17 @@ use Karte::Polar;
 use Strassen::Core;
 use VectorUtil;
 
+my @stages = qw(filtertracks trackdata statistics output);
+my %stages = map {($_,1)} @stages;
+
 #my $tracks_file = "$FindBin::RealBin/../tmp/streets-accurate-categorized-split.bbd";
 my $tracks_file = "$FindBin::RealBin/../tmp/streets-polar.bbd";
 my $gpsman_dir  = "$ENV{HOME}/src/bbbike/misc/gps_data",
 my $ignore_rx;
-my $start_stage;
+my $start_stage = 'begin';
 my $state_file;
 my $sortby = "difftime";
-GetOptions("stage=i" => \$start_stage,
+GetOptions("stage=s" => \$start_stage,
 	   "state=s" => \$state_file,
 
 	   "tracks=s" => \$tracks_file,
@@ -54,28 +58,42 @@ my $state = load_state();
 
 if (!defined $start_stage) {
     if ($state && $state->{stage}) {
-	$start_stage = $state->{stage} + 1;
+	$start_stage = next_stage($state->{stage});
     }
 }
 
-if (!defined $start_stage) {
-    $start_stage = 1;
+# don't support the old numerical stages anymore...
+if ($start_stage =~ m{^\d+$}) {
+    undef $start_stage;
 }
 
-my $max_stage = 4;
-if ($start_stage < 1 || $start_stage > $max_stage) {
+if (!defined $start_stage) {
+    $start_stage = 'begin';
+}
+
+if ($start_stage eq 'begin') {
+    $start_stage = $stages[0];
+}
+
+if (!$stages{$start_stage}) {
     die "Invalid start stage $start_stage";
 }
 
-for my $stage ($start_stage .. $max_stage) {
-    print STDERR "Stage $stage... " if $stage != $max_stage; # last stage does the output, therefore be quiet
-    no strict 'refs';
-    &{"stage" . $stage};
-    print STDERR "done\n" if $stage != $max_stage;
+{
+    my $stage = $start_stage;
+    while() {
+	my $be_quiet = $stage eq $stages[-1]; # last stage does the output, therefore be quiet
+	print STDERR "Stage $stage... " if !$be_quiet;
+	no strict 'refs';
+	&{"stage_" . $stage};
+	print STDERR "done\n"           if !$be_quiet;
+	$stage = next_stage($stage);
+	last if !defined $stage;
+    }
 }
 
 # Get tracks intersecting both lines
-sub stage1 {
+sub stage_filtertracks {
     die "usage: $0 from1 from2 to1 to2" if @ARGV != 4;
     my($from1,$from2, $to1,$to2) = @ARGV;
     my $trks = Strassen->new($tracks_file);
@@ -143,7 +161,7 @@ sub stage1 {
 }
 
 # Find basic data for matched tracks (velocity, diffalt etc.)
-sub stage2 {
+sub stage_trackdata {
     my $included = $state->{included};
     my @results;
     my %seen_device;
@@ -253,7 +271,7 @@ sub stage2 {
 }
 
 # Calculate statistics on data, total and per-device
-sub stage3 {
+sub stage_statistics {
     my @results = @{ $state->{results} };
     my %seen_device = %{ $state->{seen_device} };
 
@@ -294,7 +312,7 @@ sub stage3 {
 }
 
 # Sort and print table
-sub stage4 {
+sub stage_output {
     my @cols = @{ $state->{cols} };
     my @results = @{ $state->{results} };
     my %seen_device = %{ $state->{seen_device} };
@@ -337,14 +355,18 @@ sub save_state {
     lock_nstore $state, $state_file;
 }
 
-sub format_velocity { sprintf "%.1f", ms2kmh($_[0]) }
-sub format_vehicles { join(", ", keys %{ $_[0] }) }
-sub format_length   { sprintf "%.2f", $_[0]/1000 }
-sub format_difftime { sprintf "%8s", s2hms($_[0]) }
-sub format_file     { $_[0] }
-sub format_diffalt  { sprintf "%.1f", $_[0] }
-sub format_mount    { defined $_[0] ? sprintf "%.1f", $_[0] : undef }
-sub format_device   { $_[0] }
+{
+    no warnings 'uninitialized';
+
+    sub format_velocity { sprintf "%.1f", ms2kmh($_[0]) }
+    sub format_vehicles { join(", ", keys %{ $_[0] }) }
+    sub format_length   { sprintf "%.2f", $_[0]/1000 }
+    sub format_difftime { sprintf "%8s", s2hms($_[0]) }
+    sub format_file     { $_[0] }
+    sub format_diffalt  { sprintf "%.1f", $_[0] }
+    sub format_mount    { defined $_[0] ? sprintf "%.1f", $_[0] : undef }
+    sub format_device   { $_[0] }
+}
 
 sub guess_device {
     my $result = shift;
@@ -380,6 +402,16 @@ sub guess_date {
     }
 }
 
+sub next_stage {
+    my $this_stage = shift;
+    for my $i (0 .. $#stages-1) {
+	if ($this_stage eq $stages[$i]) {
+	    return $stages[$i+1];
+	}
+    }
+    undef;
+}
+
 __END__
 
 =head1 HOWTO
@@ -406,7 +438,8 @@ __END__
 
  * [#A] Grid should know about "polar" data and default the gridsize to something appropriate
 
- * [#A] Allow more than two points in the start and goal lines
+ * [#A] Allow more than two points in the start and goal lines. Maybe
+   also allow multiple start/goal lines.
 
  * [#C] If more than two points in the start and goal lines are
    implemented: iterate from the center to the ends of that lines.
@@ -432,6 +465,21 @@ __END__
    fast sorting, which could be optionally made "persistent" by naming
    it.
 
+ * [#A] Between stage1 and stage2 another sorting/filtering stage is
+   needed. Currently they may be track duplicates in the result.
+   stage1 should be rewritten to return *all* intersection points.
+   Another step should filter out the candidates, that is, step
+   lineary through the file and find starts, then goals. Two
+   consecutive starts without a goal in between would remove the
+   former start. In the "symmetric" mode for mount detection, the
+   detection for goal - start sequences could also be done here.
+
+ * [#B] Detect the broken altimeter and undef those values.
+
+ * [#B] The state file could have the input variants in, that is,
+   coordinates, input file timestamps, so the script may detect all
+   stages should be done.
+
 =head1 DONE
 
  * See F<misc/gps_data/SlayMakefile> and
@@ -443,5 +491,13 @@ __END__
    displaying the table is quite fast. The user may specify C<-stage>
    to start the processing at a given state, e.g. to force
    recalculation.
+
+=head1 PROBLEMS
+
+ * Currently the algorithm assumes that the floating point coordinates
+   already generated in the bbd file and the floating point
+   coordinates generated when reading the gpsman tracks use the same
+   rounding rules. This does not need to be true, especially if both
+   steps was done on different machines.
 
 =cut
