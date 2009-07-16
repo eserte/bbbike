@@ -1129,7 +1129,7 @@ sub split_ort {
 # Arguments (hash-style):
 #   UseCache: use cache
 #   Exact: use "exact" algorithm
-#   GridHeight, GridWidth: grid extents (by default 1000)
+#   GridHeight, GridWidth: grid extents (by default 1000, for WGS84 data 0.01 degrees)
 # With -rebuild => 1 the grid will be build again.
 # Uses the private Strassen::Core iterator "make_grid".
 # Specify another coordinate system with -tomap (like in get_conversion)
@@ -1145,8 +1145,17 @@ sub make_grid {
     }
     my $use_cache = $args{UseCache};
     my $use_exact = $args{Exact}||0;
+    my $get_default_grid_width = sub {
+	if (!$args{-tomap}) {
+	    my $map = $self->get_global_directive('map');
+	    if ($map && $map eq 'polar') {
+		return 0.01;
+	    }
+	}
+	1000;
+    };
     $self->{GridWidth}  = (defined $args{GridWidth}
-			   ? $args{GridWidth} : 1000);
+			   ? $args{GridWidth} : $get_default_grid_width->());
     $self->{GridHeight} = (defined $args{GridHeight}
 			   ? $args{GridHeight} : $self->{GridWidth});
     my $conv;
