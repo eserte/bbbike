@@ -69,11 +69,6 @@ if (!defined $start_stage) {
     }
 }
 
-# don't support the old numerical stages anymore...
-if ($start_stage =~ m{^\d+$}) {
-    undef $start_stage;
-}
-
 if (!defined $start_stage) {
     $start_stage = 'begin';
 }
@@ -199,79 +194,77 @@ sub stage_trackdata {
 	my $current_vehicle;
 	my $current_brand;
 	my %vehicle_to_brand;
-    PARSE_TRACK: {
-	    for my $chunk (@{ $gps->Chunks }) {
-		no warnings 'once';
-		my @points = map {
-		    join(",", $Karte::Polar::obj->trim_accuracy($_->Longitude, $_->Latitude));
-		} @{ $chunk->Points };
+    PARSE_TRACK: for my $chunk (@{ $gps->Chunks }) {
+	    no warnings 'once';
+	    my @points = map {
+		join(",", $Karte::Polar::obj->trim_accuracy($_->Longitude, $_->Latitude));
+	    } @{ $chunk->Points };
 
-		my $track_attrs = $chunk->TrackAttrs;
-		if ($track_attrs->{'srt:vehicle'}) {
-		    $current_vehicle = $track_attrs->{'srt:vehicle'} || '?';
+	    my $track_attrs = $chunk->TrackAttrs;
+	    if ($track_attrs->{'srt:vehicle'}) {
+		$current_vehicle = $track_attrs->{'srt:vehicle'} || '?';
+	    }
+	    $current_brand = undef;
+	    if (!$track_attrs->{'srt:brand'}) {
+		if (defined $current_vehicle && $vehicle_to_brand{$current_vehicle}) {
+		    $current_brand = $vehicle_to_brand{$current_vehicle};
 		}
-		$current_brand = undef;
-		if (!$track_attrs->{'srt:brand'}) {
-		    if (defined $current_vehicle && $vehicle_to_brand{$current_vehicle}) {
-			$current_brand = $vehicle_to_brand{$current_vehicle};
+	    } else {
+		if (defined $current_vehicle) {
+		    $current_brand = $vehicle_to_brand{$current_vehicle} = $track_attrs->{'srt:brand'};
+		}
+	    }
+	    my $vehicle_label = defined $current_vehicle ? ($current_vehicle . (defined $current_brand ? " ($current_brand)" : '')) : '?';
+
+	    if ($stage eq 'to') {
+		# new chunk, maybe new vehicle?
+		$result->{vehicles}->{$vehicle_label}++;
+	    }
+	    for my $wpt_i (1 .. $#points) {
+		if ($stage eq 'from') {
+		    if (($points[$wpt_i-1] eq $from1 &&
+			 $points[$wpt_i  ] eq $from2) ||
+			($points[$wpt_i-1] eq $from2 &&
+			 $points[$wpt_i  ] eq $from1)) {
+			tie my %vehicles, 'Tie::IxHash';
+			$vehicles{$vehicle_label} = 1;
+			$result = {from1    => $chunk->Points->[$wpt_i-1],
+				   from2    => $chunk->Points->[$wpt_i  ],
+				   fromtime => $chunk->Points->[$wpt_i]->Comment_to_unixtime($chunk),
+				   vehicles => \%vehicles,
+				  };
+			$stage = 'to';
 		    }
-		} else {
-		    if (defined $current_vehicle) {
-			$current_brand = $vehicle_to_brand{$current_vehicle} = $track_attrs->{'srt:brand'};
-		    }
-		}
-		my $vehicle_label = defined $current_vehicle ? ($current_vehicle . (defined $current_brand ? " ($current_brand)" : '')) : '?';
-
-		if ($stage eq 'to') {
-		    # new chunk, maybe new vehicle?
-		    $result->{vehicles}->{$vehicle_label}++;
-		}
-		for my $wpt_i (1 .. $#points) {
-		    if ($stage eq 'from') {
-			if (($points[$wpt_i-1] eq $from1 &&
-			     $points[$wpt_i  ] eq $from2) ||
-			    ($points[$wpt_i-1] eq $from2 &&
-			     $points[$wpt_i  ] eq $from1)) {
-			    tie my %vehicles, 'Tie::IxHash';
-			    $vehicles{$vehicle_label} = 1;
-			    $result = {from1    => $chunk->Points->[$wpt_i-1],
-				       from2    => $chunk->Points->[$wpt_i  ],
-				       fromtime => $chunk->Points->[$wpt_i]->Comment_to_unixtime($chunk),
-				       vehicles => \%vehicles,
-				      };
-			    $stage = 'to';
+		} else {	# $stage eq 'to'
+		    $length += $chunk->wpt_dist($chunk->Points->[$wpt_i-1], $chunk->Points->[$wpt_i]);
+		    if (($points[$wpt_i-1] eq $to1 &&
+			 $points[$wpt_i  ] eq $to2) ||
+			($points[$wpt_i-1] eq $to2 &&
+			 $points[$wpt_i  ] eq $to1)) {
+			$result->{to1} = $chunk->Points->[$wpt_i-1];
+			$result->{to2} = $chunk->Points->[$wpt_i  ];
+			$result->{totime} = $chunk->Points->[$wpt_i]->Comment_to_unixtime($chunk);
+			$result->{difftime} = $result->{totime} - $result->{fromtime};
+			$result->{length} = $length;
+			$result->{velocity} = $result->{length} / $result->{difftime};
+			$result->{file} = $file;
+			$result->{device} = guess_device($result);
+			$seen_device{$result->{device}} = 1;
+			$result->{diffalt} = $chunk->Points->[$wpt_i]->Altitude - $result->{from2}->Altitude;
+			if ($length) {
+			    $result->{mount} = 100 * $result->{diffalt} / $length;
+			} else {
+			    $result->{mount} = undef;
 			}
-		    } else { # $stage eq 'to'
-			$length += $chunk->wpt_dist($chunk->Points->[$wpt_i-1], $chunk->Points->[$wpt_i]);
-			if (($points[$wpt_i-1] eq $to1 &&
-			     $points[$wpt_i  ] eq $to2) ||
-			    ($points[$wpt_i-1] eq $to2 &&
-			     $points[$wpt_i  ] eq $to1)) {
-			    $result->{to1} = $chunk->Points->[$wpt_i-1];
-			    $result->{to2} = $chunk->Points->[$wpt_i  ];
-			    $result->{totime} = $chunk->Points->[$wpt_i]->Comment_to_unixtime($chunk);
-			    $result->{difftime} = $result->{totime} - $result->{fromtime};
-			    $result->{length} = $length;
-			    $result->{velocity} = $result->{length} / $result->{difftime};
-			    $result->{file} = $file;
-			    $result->{device} = guess_device($result);
-			    $seen_device{$result->{device}} = 1;
-			    $result->{diffalt} = $chunk->Points->[$wpt_i]->Altitude - $result->{from2}->Altitude;
-			    if ($length) {
-				$result->{mount} = 100 * $result->{diffalt} / $length;
-			    } else {
-				$result->{mount} = undef;
-			    }
-			    $result->{date} = guess_date($result);
+			$result->{date} = guess_date($result);
 
-			    for my $field (qw(velocity vehicles length difftime file diffalt mount device)) {
-				no strict 'refs';
-				$result->{'!' . $field} = &{"format_$field"}($result->{$field});
-			    }
-
-			    push @results, $result;
-			    last PARSE_TRACK;
+			for my $field (qw(velocity vehicles length difftime file diffalt mount device)) {
+			    no strict 'refs';
+			    $result->{'!' . $field} = &{"format_$field"}($result->{$field});
 			}
+
+			push @results, $result;
+			last PARSE_TRACK;
 		    }
 		}
 	    }
@@ -426,10 +419,10 @@ sub parse_intersection_lines {
     };
     if (!@ARGV) {
 	# get from state
-	if (!$state) {
+	if (!$state_file) {
 	    $usage->("Please specify from/to points.");
-	} elsif ($state && (!$state->{from} || !$state->{to})) {
-	    $usage->("Cannot get from/to from state file, please specify on command line.");
+	} elsif (!$state->{from} || !$state->{to}) {
+	    $usage->("Cannot get from/to points from state file, please specify on command line.");
 	}
 	@$from_ref = @{ $state->{from} };
 	@$to_ref   = @{ $state->{to} };
