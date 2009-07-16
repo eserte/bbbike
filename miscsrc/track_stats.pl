@@ -112,13 +112,9 @@ sub stage_filtertracks {
 
 	my %seen;
 	for my $p_i (0 .. $#p-1) {
-	    my($p1, $p2) = ($p[$p_i], $p[$p_i-1]);
+	    my($p1, $p2) = ($p[$p_i], $p[$p_i+1]);
 
-	    my(@grids) = keys %{{ map { ($_=>1) }
-				      (join(",", $trks->grid(split /,/, $p1)),
-				       join(",", $trks->grid(split /,/, $p2))) # XXX alle Gitter dazwischen auch!
-				  }
-			    };
+	    my(@grids) = $trks->get_new_grids((split /,/, $p1), (split /,/, $p2));
 	    for my $grid (@grids) {
 		next if !exists $trks->{Grid}{$grid};
 		for my $n (@{ $trks->{Grid}{$grid} }) {
