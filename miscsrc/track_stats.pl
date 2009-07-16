@@ -101,60 +101,103 @@ if (!$stages{$start_stage}) {
 
 # Get tracks intersecting both lines
 sub stage_filtertracks {
-    die "usage: $0 from1 from2 to1 to2" if @ARGV != 4;
-    my($from1,$from2, $to1,$to2) = @ARGV;
+    my $usage = sub {
+	my $msg = shift;
+	if ($msg) { warn $msg . "\n" }
+	die "usage: $0 [options] from1 from2 ... : to1 to2 ...";
+    };
+    my @from;
+    my @to;
+    if (!@ARGV) {
+	# get from state
+	if (!$state) {
+	    $usage->("Please specify from/to points.");
+	} elsif ($state && (!$state->{from} || !$state->{to})) {
+	    $usage->("Cannot get from/to from state file, please specify on command line.");
+	}
+	@from = @{ $state->{from} };
+	@to   = @{ $state->{to} };
+    } else {
+	my $var = \@from;
+	my $colon_seen;
+	for my $i (0 .. $#ARGV) {
+	    if ($ARGV[$i] eq ':') {
+		if ($colon_seen) {
+		    $usage->("Colon have to appear exactly once.");
+		}
+		$colon_seen = 1;
+		if (@from < 2) {
+		    $usage->("At least two from points need to be supplied.");
+		}
+		$var = \@to;
+		next;
+	    }
+	    push @$var, $ARGV[$i];
+	}
+	if (!$colon_seen) {
+	    $usage->("Colon have to be used to separate from and to points.");
+	}
+	if (@to < 2) {
+	    $usage->("At least two to points need to be supplied.");
+	}
+    }
+
     my $trks = Strassen->new($tracks_file);
-    $trks->make_grid(#Exact => 1, # XXX too slow?!
+    $trks->make_grid(#Exact => 1, # XXX Eats a lot of memory, so better not use it yet...
 		     UseCache => 1);
 
     my %in_start;
     my @included;
 
-    for my $def ([1, $from1,$from2],
-		 [2, $to1,$to2]) {
-	my($pass, $p1, $p2) = @$def;
-	my %seen;
+    for my $def ([1, @from],
+		 [2, @to]) {
+	my($pass, @p) = @$def;
 
-	my(@grids) = keys %{{ map { ($_=>1) }
-				  (join(",", $trks->grid(split /,/, $p1)),
-				   join(",", $trks->grid(split /,/, $p2))) # XXX alle Gitter dazwischen auch!
-			      }
-			};
-	for my $grid (@grids) {
-	    next if !exists $trks->{Grid}{$grid};
-	    for my $n (@{ $trks->{Grid}{$grid} }) {
-		my $r = $trks->get($n);
-		next if $ignore_rx && $r->[Strassen::NAME] =~ $ignore_rx;
-		next if $seen{$r->[Strassen::NAME]};
-		my($file) = $r->[Strassen::NAME] =~ m{^(\S+)};
-		next if $pass == 2 && !$in_start{$file};
-	    RECORD: for my $r_i (1 .. $#{ $r->[Strassen::COORDS] }) {
-		    my($r1,$r2) = @{$r->[Strassen::COORDS]}[$r_i-1,$r_i];
-		    for my $checks ([$r1, $p1],
-				    [$r1, $p2],
-				    [$r2, $p1],
-				    [$r2, $p2],
-				   ) {
-			if ($checks->[0] eq $checks->[1]) {
+	my %seen;
+	for my $p_i (0 .. $#p-1) {
+	    my($p1, $p2) = ($p[$p_i], $p[$p_i-1]);
+
+	    my(@grids) = keys %{{ map { ($_=>1) }
+				      (join(",", $trks->grid(split /,/, $p1)),
+				       join(",", $trks->grid(split /,/, $p2))) # XXX alle Gitter dazwischen auch!
+				  }
+			    };
+	    for my $grid (@grids) {
+		next if !exists $trks->{Grid}{$grid};
+		for my $n (@{ $trks->{Grid}{$grid} }) {
+		    my $r = $trks->get($n);
+		    next if $ignore_rx && $r->[Strassen::NAME] =~ $ignore_rx;
+		    next if $seen{$r->[Strassen::NAME]};
+		    my($file) = $r->[Strassen::NAME] =~ m{^(\S+)};
+		    next if $pass == 2 && !$in_start{$file};
+		RECORD: for my $r_i (1 .. $#{ $r->[Strassen::COORDS] }) {
+			my($r1,$r2) = @{$r->[Strassen::COORDS]}[$r_i-1,$r_i];
+			for my $checks ([$r1, $p1],
+					[$r1, $p2],
+					[$r2, $p1],
+					[$r2, $p2],
+				       ) {
+			    if ($checks->[0] eq $checks->[1]) {
+				$seen{$r->[Strassen::NAME]} = 1;
+				if ($pass == 1) {
+				    $in_start{$file} = [$r, [$checks->[0]], [$checks->[1]]];
+				} elsif ($pass == 2) {
+				    push @included, [$file, $in_start{$file}, [$r, [$checks->[0]], [$checks->[1]]]];
+				}
+				next RECORD;
+			    }
+			}
+			if (VectorUtil::intersect_lines(split(/,/, $p1),
+							split(/,/, $p2),
+							split(/,/, $r1),
+							split(/,/, $r2),
+						       )) {
 			    $seen{$r->[Strassen::NAME]} = 1;
 			    if ($pass == 1) {
-				$in_start{$file} = [$r, [$checks->[0]], [$checks->[1]]];
+				$in_start{$file} = [$r, [$r1,$r2], [$p1,$p2]];
 			    } elsif ($pass == 2) {
-				push @included, [$file, $in_start{$file}, [$r, [$checks->[0]], [$checks->[1]]]];
+				push @included, [$file, $in_start{$file}, [$r, [$r1,$r2], [$p1,$p2]]];
 			    }
-			    next RECORD;
-			}
-		    }
-		    if (VectorUtil::intersect_lines(split(/,/, $p1),
-						    split(/,/, $p2),
-						    split(/,/, $r1),
-						    split(/,/, $r2),
-						   )) {
-			$seen{$r->[Strassen::NAME]} = 1;
-			if ($pass == 1) {
-			    $in_start{$file} = [$r, [$r1,$r2], [$p1,$p2]];
-			} elsif ($pass == 2) {
-			    push @included, [$file, $in_start{$file}, [$r, [$r1,$r2], [$p1,$p2]]];
 			}
 		    }
 		}
@@ -164,6 +207,8 @@ sub stage_filtertracks {
 
     $state->{included} = \@included;
     $state->{stage} = 'filtertracks';
+    $state->{from} = \@from,
+    $state->{to}   = \@to,
     save_state();
 }
 
@@ -441,10 +486,6 @@ __END__
 
 =head1 TODO
 
- * [#C] It's probably more efficient to have the tracks file splitted
-
- * [#A] Grid should know about "polar" data and default the gridsize to something appropriate
-
  * [#A] Allow more than two points in the start and goal lines. Maybe
    also allow multiple start/goal lines.
 
@@ -487,6 +528,8 @@ __END__
    coordinates, input file timestamps, so the script may detect all
    stages should be done.
 
+ * [#C] It's probably more efficient to have the tracks file splitted
+
 =head1 DONE
 
  * See F<misc/gps_data/SlayMakefile> and
@@ -498,6 +541,12 @@ __END__
    displaying the table is quite fast. The user may specify C<-stage>
    to start the processing at a given state, e.g. to force
    recalculation.
+
+ * Strassen::Core was changed to know about "polar" data and default
+   the gridsize to 0.01°, which seems to be very good and speeds up
+   calculation a lot. Yeah, much better. Calculation time went down
+   from 10 minutes or so to 2 minutes. And filtertracks is not
+   anymore the slowest part.
 
 =head1 PROBLEMS
 
