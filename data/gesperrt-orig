@@ -104,7 +104,7 @@ Prenzlauer Promenade	2 11927,19308 12020,19333
 Breite Str. Pankow	1 10240,18193 10281,18241 10502,18338 10567,18366 10609,18384
 Breite Str. Pankow	1 10680,18380 10669,18336 10327,18177 10240,18193
 Heinrich-Mann-Platz.	1 9565,18555 9524,18531 9480,18539 9454,18570 9457,18612 9495,18639 9542,18634 9567,18599 9565,18555
-Edelweißstr.	1 8251,19937 7966,19968 7885,19975 7755,20059
+Edelweißstr.	1 8234,19936 7993,19953 7885,19975 7748,20040
 Angerburger Allee	1 -1524,11108 -1608,11133 -1885,11392 -1931,11437 -1986,11487
 Edelhofdamm	1 3185,25437 3101,25402 2909,25322 2756,25260 2683,25238 2713,25300 2744,25314 2882,25375 3076,25456 3171,25495
 Antonienstr.	1 3930,17920 3970,18126 4009,18322 4085,18694 4098,18762 4162,18891 4240,19019
@@ -617,6 +617,8 @@ Natalissteig	1 1202,14935 1223,14824 1226,14714
 Straße 12 (Neukölln): gesperrt für Fahrzeuge aller Art (außer BAB-Versorgung)	2 13883,6682 13881,6634 13915,6592
 Alt-Biesdorf	1 20375,11694 20435,11698 20575,11698 21108,11628
 Alt-Biesdorf	1 21108,11628 20963,11618 20549,11659 20375,11694
+#: add_fragezeichen: Gilt die Einbahnstraßenregelung nur für Autofahrer oder auch für Radfahrer?
+Privatstr. 14	1 13159,17196 13103,17280
 ######################################################################
 #
 # Potsdam
@@ -1326,6 +1328,8 @@ Schranke, kann auch mit Anhänger umfahren werden	BNP:1 49137,24422
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: next_check: 2011-03-01
+Rathausbrücke: gesperrt bis März 2011 (Neubau)	2:inwork 10362,12351 10422,12395
 #: last_checked: 2009-07-02: vvv
 Dora-Benjamin-Park - Uferweg: Zugang ist noch gesperrt	2:inwork 14621,10062 14599,10039
 Dora-Benjamin-Park: Straße ist noch gesperrt	2:inwork 14621,10062 14705,10149

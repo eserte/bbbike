@@ -938,7 +938,8 @@ userdel	2::temp -8087,-1453 -8151,-1470 -8306,-1454
          'text' => 'Rathausstr. (Mitte) Richtung Alexanderplatz zwischen Breitestr. und Poststr. Baustelle, Straße vollständig gesperrt (bis März 2011)',
          'from' => 1242770815,
          'id' => 1627,
-         'data' => 'userdel	q4::inwork 10267,12305 10362,12351 10422,12395 10476,12432
+         'data' => 'userdel	q4::inwork 10267,12305 10362,12351
+userdel	q4::inwork 10422,12395 10476,12432
 ',
          'type' => 'handicap'
        },
