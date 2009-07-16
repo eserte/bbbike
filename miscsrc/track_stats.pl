@@ -40,9 +40,10 @@ my %stages = map {($_,1)} @stages;
 my $tracks_file = "$FindBin::RealBin/../tmp/streets-polar.bbd";
 my $gpsman_dir  = "$ENV{HOME}/src/bbbike/misc/gps_data",
 my $ignore_rx;
-my $start_stage = 'begin';
+my $start_stage;
 my $state_file;
 my $sortby = "difftime";
+my $v;
 GetOptions("stage=s" => \$start_stage,
 	   "state=s" => \$state_file,
 
@@ -52,7 +53,13 @@ GetOptions("stage=s" => \$start_stage,
 	   "gpsmandir=s" => \$gpsman_dir,
 
 	   "sortby=s" => \$sortby,
+
+	   "v" => \$v,
 	  ) or die "usage?";
+
+if ($v) {
+    Strassen::set_verbose($v);
+}
 
 my $state = load_state();
 
