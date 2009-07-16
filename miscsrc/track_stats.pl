@@ -110,7 +110,8 @@ sub stage_filtertracks {
 		 [2, @to]) {
 	my($pass, @p) = @$def;
 
-	my %seen;
+	my %seen; #XXX
+	my %seen_record;
 	for my $p_i (0 .. $#p-1) {
 	    my($p1, $p2) = ($p[$p_i], $p[$p_i+1]);
 
@@ -118,9 +119,11 @@ sub stage_filtertracks {
 	    for my $grid (@grids) {
 		next if !exists $trks->{Grid}{$grid};
 		for my $n (@{ $trks->{Grid}{$grid} }) {
+		    next if $seen_record{$n};
+		    $seen_record{$n} = 1;
 		    my $r = $trks->get($n);
 		    next if $ignore_rx && $r->[Strassen::NAME] =~ $ignore_rx;
-		    next if $seen{$r->[Strassen::NAME]};
+		    #XXX next if $seen{$r->[Strassen::NAME]};
 		    my($file) = $r->[Strassen::NAME] =~ m{^(\S+)};
 		    next if $pass == 2 && !$in_start{$file};
 		RECORD: for my $r_i (1 .. $#{ $r->[Strassen::COORDS] }) {
@@ -131,7 +134,7 @@ sub stage_filtertracks {
 					[$r2, $p2],
 				       ) {
 			    if ($checks->[0] eq $checks->[1]) {
-				$seen{$r->[Strassen::NAME]} = 1;
+				$seen{$r->[Strassen::NAME]} = 1;#XXX
 				if ($pass == 1) {
 				    $in_start{$file} = [$r, [$checks->[0]], [$checks->[1]]];
 				} elsif ($pass == 2) {
@@ -145,7 +148,7 @@ sub stage_filtertracks {
 							split(/,/, $r1),
 							split(/,/, $r2),
 						       )) {
-			    $seen{$r->[Strassen::NAME]} = 1;
+			    $seen{$r->[Strassen::NAME]} = 1;#XXX
 			    if ($pass == 1) {
 				$in_start{$file} = [$r, [$r1,$r2], [$p1,$p2]];
 			    } elsif ($pass == 2) {
@@ -483,15 +486,18 @@ __END__
 
 =head1 TODO
 
- * [#A] Allow more than two points in the start and goal lines. Maybe
-   also allow multiple start/goal lines.
+ * [#A] Actually use "shortcuts" in track_stats.yml: define small (for
+   goals) and large (for starts) circles around points, which then
+   may be used in the actual calculations.
 
- * [#C] If more than two points in the start and goal lines are
-   implemented: iterate from the center to the ends of that lines.
-
- * [#C] It seems that it is more wise to put the diffalt value into
-   comments_mount than the mount value. Then the orig file processing
-   should calculate the mount value automatically.
+ * [#A] Between stage1 and stage2 another sorting/filtering stage is
+   needed. Currently they may be track duplicates in the result.
+   stage1 should be rewritten to return *all* intersection points.
+   Another step should filter out the candidates, that is, step
+   lineary through the file and find starts, then goals. Two
+   consecutive starts without a goal in between would remove the
+   former start. In the "symmetric" mode for mount detection, the
+   detection for goal - start sequences could also be done here.
 
  * [#B] For better statistics for the mount value both directions should be
    covered, not only one direction (of course, this is mostly
@@ -510,22 +516,25 @@ __END__
    fast sorting, which could be optionally made "persistent" by naming
    it.
 
- * [#A] Between stage1 and stage2 another sorting/filtering stage is
-   needed. Currently they may be track duplicates in the result.
-   stage1 should be rewritten to return *all* intersection points.
-   Another step should filter out the candidates, that is, step
-   lineary through the file and find starts, then goals. Two
-   consecutive starts without a goal in between would remove the
-   former start. In the "symmetric" mode for mount detection, the
-   detection for goal - start sequences could also be done here.
-
  * [#B] Detect the broken altimeter and undef those values.
 
  * [#B] The state file could have the input variants in, that is,
    coordinates, input file timestamps, so the script may detect all
    stages should be done.
 
+ * [#B] More statistical columns: wind direction/speed at the date of
+   the route. Maybe min/max values are necessary. Temperature.
+
  * [#C] It's probably more efficient to have the tracks file splitted
+
+ * [#C] Maybe also allow multiple start/goal lines.
+
+ * [#C] If more than two points in the start and goal lines are
+   implemented: iterate from the center to the ends of that lines.
+
+ * [#C] It seems that it is more wise to put the diffalt value into
+   comments_mount than the mount value. Then the orig file processing
+   should calculate the mount value automatically.
 
 =head1 DONE
 
@@ -544,6 +553,8 @@ __END__
    calculation a lot. Yeah, much better. Calculation time went down
    from 10 minutes or so to 2 minutes. And filtertracks is not
    anymore the slowest part.
+
+ * More than two points in the start and goal lines are now possible.
 
 =head1 PROBLEMS
 
