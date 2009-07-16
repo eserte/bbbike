@@ -135,10 +135,7 @@ iterate {
     return if $ignore_rx && $_->[Strassen::NAME] =~ $ignore_rx;
     for my $i (1 .. $#{ $_->[Strassen::COORDS] }) {
 	my($p1,$p2) = @{$_->[Strassen::COORDS]}[$i-1,$i];
-	my(@grids) = keys %{{ map { ($_=>1) }
-				  (join(",", $s->grid(split /,/, $p1)),
-				   join(",", $s->grid(split /,/, $p2))) # XXX alle Gitter dazwischen auch!
-			  }};
+	my(@grids) = $s->get_new_grids((split /,/, $p1), (split /,/, $p2));
 	for my $grid (@grids) {
 	    next if !exists $s->{Grid}{$grid};
 	    for my $n (@{ $s->{Grid}{$grid} }) {
