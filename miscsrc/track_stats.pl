@@ -54,7 +54,7 @@ GetOptions("stage=s" => \$start_stage,
 
 	   "sortby=s" => \$sortby,
 
-	   "v" => \$v,
+	   "v+" => \$v,
 	  ) or die "usage?";
 
 if ($v) {
@@ -221,6 +221,9 @@ sub stage_trackdata {
 		$result->{vehicles}->{$vehicle_label}++;
 	    }
 	    for my $wpt_i (1 .. $#points) {
+		if ($v && $v >= 2) {
+		    warn "$file $stage $from1 $from2 $points[$wpt_i-1] $points[$wpt_i]" . join(" ", map { Karte::Polar::ddd2dms($_) } map { split /,/ } $points[$wpt_i-1], $points[$wpt_i])."\n";
+		}
 		if ($stage eq 'from') {
 		    if (($points[$wpt_i-1] eq $from1 &&
 			 $points[$wpt_i  ] eq $from2) ||
