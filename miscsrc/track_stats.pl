@@ -101,46 +101,8 @@ if (!$stages{$start_stage}) {
 
 # Get tracks intersecting both lines
 sub stage_filtertracks {
-    my $usage = sub {
-	my $msg = shift;
-	if ($msg) { warn $msg . "\n" }
-	die "usage: $0 [options] from1 from2 ... : to1 to2 ...";
-    };
-    my @from;
-    my @to;
-    if (!@ARGV) {
-	# get from state
-	if (!$state) {
-	    $usage->("Please specify from/to points.");
-	} elsif ($state && (!$state->{from} || !$state->{to})) {
-	    $usage->("Cannot get from/to from state file, please specify on command line.");
-	}
-	@from = @{ $state->{from} };
-	@to   = @{ $state->{to} };
-    } else {
-	my $var = \@from;
-	my $colon_seen;
-	for my $i (0 .. $#ARGV) {
-	    if ($ARGV[$i] eq ':') {
-		if ($colon_seen) {
-		    $usage->("Colon have to appear exactly once.");
-		}
-		$colon_seen = 1;
-		if (@from < 2) {
-		    $usage->("At least two from points need to be supplied.");
-		}
-		$var = \@to;
-		next;
-	    }
-	    push @$var, $ARGV[$i];
-	}
-	if (!$colon_seen) {
-	    $usage->("Colon have to be used to separate from and to points.");
-	}
-	if (@to < 2) {
-	    $usage->("At least two to points need to be supplied.");
-	}
-    }
+    my(@from, @to);
+    parse_intersection_lines(\@from, \@to);
 
     my $trks = Strassen->new($tracks_file);
     $trks->make_grid(#Exact => 1, # XXX Eats a lot of memory, so better not use it yet...
@@ -451,6 +413,49 @@ sub guess_date {
 	return $1;
     } else {
 	return undef; # XXX maybe look into the file?
+    }
+}
+
+sub parse_intersection_lines {
+    my($from_ref, $to_ref) = @_;
+
+    my $usage = sub {
+	my $msg = shift;
+	if ($msg) { warn $msg . "\n" }
+	die "usage: $0 [options] from1 from2 ... : to1 to2 ...";
+    };
+    if (!@ARGV) {
+	# get from state
+	if (!$state) {
+	    $usage->("Please specify from/to points.");
+	} elsif ($state && (!$state->{from} || !$state->{to})) {
+	    $usage->("Cannot get from/to from state file, please specify on command line.");
+	}
+	@$from_ref = @{ $state->{from} };
+	@$to_ref   = @{ $state->{to} };
+    } else {
+	my $var = $from_ref;
+	my $colon_seen;
+	for my $i (0 .. $#ARGV) {
+	    if ($ARGV[$i] eq ':') {
+		if ($colon_seen) {
+		    $usage->("Colon have to appear exactly once.");
+		}
+		$colon_seen = 1;
+		if (@$from_ref < 2) {
+		    $usage->("At least two from points need to be supplied.");
+		}
+		$var = $to_ref;
+		next;
+	    }
+	    push @$var, $ARGV[$i];
+	}
+	if (!$colon_seen) {
+	    $usage->("Colon have to be used to separate from and to points.");
+	}
+	if (@$to_ref < 2) {
+	    $usage->("At least two to points need to be supplied.");
+	}
     }
 }
 
