@@ -156,7 +156,7 @@ sub stage_filtertracks {
     }
 
     $state->{included} = \@included;
-    $state->{stage} = 1;
+    $state->{stage} = 'filtertracks';
     save_state();
 }
 
@@ -266,7 +266,7 @@ sub stage_trackdata {
 
     $state->{results} = \@results;
     $state->{seen_device} = \%seen_device;
-    $state->{stage} = 2;
+    $state->{stage} = 'trackdata';
     save_state();
 }
 
@@ -307,7 +307,7 @@ sub stage_statistics {
     $state->{stats} = \%stats;
     $state->{cols}  = \@cols;
     $state->{count_per_device} = \%count_per_device;
-    $state->{stage} = 3;
+    $state->{stage} = 'statistics';
     save_state();
 }
 
