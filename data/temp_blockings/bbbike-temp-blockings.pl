@@ -7345,7 +7345,7 @@ EOF
        text  => 'Reichstagufer (Mitte) in beiden Richtungen Baustelle, Straße vollständig gesperrt, Fußgänger können passieren',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2009-05-27
+#: last_checked: 2009-07-12
 userdel	q4::inwork 9209,12795 9280,12883
 EOF
      },
@@ -12356,13 +12356,13 @@ EOF
 userdel	1::inwork 16654,16167 16961,16042
 EOF
      },
-     { from  => 1238347043, # 2009-03-29 19:17
-       until => 1293836399, # 2010-12-31 23:59
-       text  => 'Wendenschloßstr. (Köpenick) in beiden Richtungen zwischen Landjägerstr. und Müggelheimer Str. Baustelle, Straße vollständig gesperrt (bis Ende 2010)',
+     { from  => 1247724607, # 2009-07-16 08:10
+       until => 1251755999, # 2009-08-31 23:59
+       text  => 'Wendenschloßstr. (Köpenick) in beiden Richtungen zwischen Landjägerstr. und Salvador-Allende-Str. Baustelle, Straße vollständig gesperrt (bis Ende 08.2009)',
        type  => 'handicap',
        source_id => 'IM_009763',
        data  => <<EOF,
-userdel	q4::inwork 22740,4415 22686,4310
+userdel	q4::inwork 22740,4415 22832,4491 22862,4511 22893,4532 23363,4846 23451,4877
 EOF
      },
      { from  => 1219528800, # 2008-08-24 00:00
@@ -14120,8 +14120,8 @@ userdel	q4::inwork 10533,-76130 10891,-76066
 EOF
      },
      { from  => 1247954400, # 2009-07-19 00:00
-       until => 1253311200, # 2009-09-19 00:00
-       text  => 'L 014 Kyritz - Wittstock OD Herzsprung grundhafter Straßenausbau Vollsperrung 20.07.2009-18.09.2009 ',
+       until => 1254348000, # 2009-10-01 00:00
+       text  => 'L 014 Kyritz - Wittstock OD Herzsprung Straßenausbau Vollsperrung 20.07.2009-30.09.2009 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork -54249,73343 -54091,72917 -54034,72687
@@ -14381,8 +14381,8 @@ userdel	2::temp 7039,12314 7215,12295 7437,12368 7514,12387 7875,12363 8017,1235
 EOF
      },
      { from  => 1244930400, # 2009-06-14 00:00
-       until => 1254348000, # 2009-10-01 00:00
-       text  => 'B 102 Treuenbrietzener Str. OD Jüterbog, zw. Parkstr. und Bülowstr. Straßenausbau Vollsperrung 15.06.2009-30.09.2009 ',
+       until => 1248127200, # 2009-07-21 00:00
+       text  => 'B 102 Treuenbrietzener Str. OD Jüterbog, zw. Parkstr. und Bülowstr. Straßenausbau Vollsperrung 15.06.2009-20.07.2009 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork -13108,-46122 -12541,-46115
@@ -14590,8 +14590,8 @@ userdel	2::inwork -31993,-726 -32143,-211 -32153,-176
 EOF
      },
      { from  => 1245708000, # 2009-06-23 00:00
-       until => 1253311200, # 2009-09-19 00:00
-       text  => 'L 144 Herzsprung - Blumenthal OD Herzsprung grundhafter Straßenausbau Vollsperrung 24.06.2009-18.09.2009 ',
+       until => 1247954400, # 2009-07-19 00:00
+       text  => 'L 144 Herzsprung - Blumenthal OD Herzsprung grundhafter Straßenausbau Vollsperrung 24.06.2009-18.07.2009 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork -54665,72030 -54116,72465
@@ -14795,6 +14795,89 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 45489,76653 45010,77128 44326,77553 43888,77919 43560,78752
+EOF
+     },
+     { from  => 1247723819, # 2009-07-16 07:56
+       until => 1280613599, # 2010-07-31 23:59
+       text  => 'Hobrechtsfelder Chaussee - Bucher Str. in beiden Richtungen in Höhe der Autobahnüberführung (BAB 10) Brückenneubau, Straße vollständig gesperrt (bis Ende 07/2010)',
+       type  => 'gesperrt',
+       source_id => 'IM_013617',
+       data  => <<EOF,
+userdel	2::inwork 14314,25193 14219,25013 14029,24753
+EOF
+     },
+     { from  => 1247723876, # 2009-07-16 07:57
+       until => 1249077599, # 2009-07-31 23:59
+       text  => 'Steglitzer Damm (Steglitz) Richtung Alt-Mariendorf zwischen Biberacher Weg und Attilastr. geplatzte Wasserleitung, Fahrtrichtung gesperrt (bis Ende 07.2009)',
+       type  => 'handicap',
+       source_id => 'IM_013591',
+       data  => <<EOF,
+userdel	q4::inwork; 7532,4605 7544,4587 7601,4485
+EOF
+     },
+     { from  => 1247724705, # 2009-07-16 08:11
+       until => 1250373599, # 2009-08-15 23:59
+       text  => 'Colditzstr. (Tempelhof) in beiden Richtungen zwischen Ordensmeisterstr. und Volkmarstr. (Colditzbrücke) Baustelle, gesperrt (bis Mitte 08/2009)',
+       type  => 'gesperrt',
+       source_id => 'IM_013647',
+       data  => <<EOF,
+userdel	2::inwork 9875,5561 9847,5630
+EOF
+     },
+     { from  => 1247954400, # 2009-07-19 00:00
+       until => 1251669600, # 2009-08-31 00:00
+       text  => 'B 109 Prenzlau - Pasewalk OD Göritz bis LG MVP Deckensanierung Vollsperrung 20.07.2009-30.08.2009 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 44133,114908 43702,113455 43389,112844 43076,112210
+EOF
+     },
+     { from  => 1247608800, # 2009-07-15 00:00
+       until => 1251669600, # 2009-08-31 00:00
+       text  => 'L 038 zw. OA Hangelsberg u. Kreisverkehrsplatz Straßeninstandsetzungsarbeiten Vollsperrung 16.07.2009-30.08.2009 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 45037,31 43456,337 42843,102
+EOF
+     },
+     { from  => 1247436000, # 2009-07-13 00:00
+       until => 1249768800, # 2009-08-09 00:00
+       text  => 'L 212 Groß Schönebeck - Hammer - B167 zw. Böhmerheide und Hammer Deckensanierung Vollsperrung 14.07.2009-08.08.2009 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 12431,52894 12615,52952 13967,53380 15301,53802 15886,54280 17031,55218 17658,55401
+EOF
+     },
+     { from  => 1247954400, # 2009-07-19 00:00
+       until => 1258326000, # 2009-11-16 00:00
+       text  => 'B 102 Treuenbrietzener Str. OD Jüterbog, zw. Mendelsohnstr. und Bülowstr. Straßenausbau Vollsperrung 20.07.2009-15.11.2009 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork -12541,-46115 -13108,-46122
+EOF
+     },
+     { from  => 1247608800, # 2009-07-15 00:00
+       until => 1250546400, # 2009-08-18 00:00
+       text  => 'B 167 Marienwerderstr. OD Finowfurt, zw. Anschlußstelle A 11 u. Lehmschulzenstr. Straßemerneuerung Vollsperrung 16.07.2009-17.08.2009 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 28575,49756 27626,49928
+EOF
+     },
+     { from  => 1250460000, # 2009-08-17 00:00
+       until => 1251583200, # 2009-08-30 00:00
+       text  => 'B 167 Marienwerderstr. OD Finowfurt, zw. Lehmschulzenstr. u. Tankstelle Straßemerneuerung Vollsperrung 18.08.2009-29.08.2009 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 28575,49756 27626,49928
+EOF
+     },
+     { from  => 1240005600, # 2009-04-18 00:00
+       until => 1249077600, # 2009-08-01 00:00
+       text  => 'L 273 B166 - Stendell - Woltersdorf zw. Jamikow und Woltersdorf Kanal- und Straßenbau Vollsperrung 19.04.2009-31.07.2009 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 64018,86876 63805,86748 63574,86547 63391,86474 63202,86383 62757,86072 61678,85560
 EOF
      },
     );
