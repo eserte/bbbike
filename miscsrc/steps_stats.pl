@@ -43,11 +43,13 @@ Strassen->new_stream($file)->read_stream
 		 push @res, [$time/$steps, $steps, $time, $r];
 	     }
 	 } elsif ($r->[Strassen::NAME] =~ m{treppe}i) {
-	     push @steps_without_count, $r;
+	     my($time) = $r->[Strassen::CAT] =~ m{0:(\d+)};
+	     push @steps_without_count, [$time, $r];
 	 }
      });
 
-print "Steps without count:\n" . join("\n", map { $_->[Strassen::NAME] } @steps_without_count), "\n";
+@steps_without_count = sort { $b->[0] <=> $a->[0] } @steps_without_count;
+print "Steps without count:\n" . join("\n", map { join("\t", $_->[0], $_->[1]->[Strassen::NAME]) } @steps_without_count), "\n";
 print "-"x70,"\n";
 
 @res = sort { $b->[0] <=> $a->[0] } @res;
