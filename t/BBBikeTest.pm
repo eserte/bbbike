@@ -42,7 +42,8 @@ use BBBikeUtil qw(is_in_path);
 
 @EXPORT = (qw(get_std_opts set_user_agent do_display tidy_check
 	      xmllint_string xmllint_file gpxlint_string gpxlint_file kmllint_string
-	      eq_or_diff is_long_data like_long_data unlike_long_data),
+	      eq_or_diff is_long_data like_long_data unlike_long_data
+	      like_html unlike_html),
 	   @opt_vars);
 
 # Old logfile
@@ -434,6 +435,18 @@ sub unlike_long_data {
 	    failed_long_data($got, $expected, $testname, $suffix);
 	}
     }
+}
+
+sub like_html {
+    my($got, $expected, $testname) = @_;
+    local $Test::Builder::Level = $Test::Builder::Level+1;
+    like_long_data($got, $expected, $testname, '.html');
+}
+
+sub unlike_html {
+    my($got, $expected, $testname) = @_;
+    local $Test::Builder::Level = $Test::Builder::Level+1;
+    unlike_long_data($got, $expected, $testname, '.html');
 }
 
 if (!eval {
