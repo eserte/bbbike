@@ -284,9 +284,10 @@ sub make_sperre_1 {
 *make_sperre = \&make_sperre_1;
 
 sub make_sperre_tragen {
-    my($sperre_file, $special_vehicle, $sperre_tragen_ref, $sperre_narrowpassage_ref) = @_;
+    my($sperre_file, $special_vehicle, $sperre_tragen_ref, $sperre_narrowpassage_ref, %args) = @_;
     %$sperre_tragen_ref        = ();
     %$sperre_narrowpassage_ref = ();
+    my $extended = $args{'-extended'} || 0;
     my $s = Strassen->new($sperre_file);
     $s->init;
     while(1) {
@@ -295,10 +296,14 @@ sub make_sperre_tragen {
 	my($cat,@addinfo) = split /:/, $r->[Strassen::CAT()];
 	if ($cat eq StrassenNetz::BLOCKED_CARRY &&
 	    defined $addinfo[0] && $addinfo[0] ne '') {
-	    $sperre_tragen_ref->{$r->[Strassen::COORDS()][0]} = Strassen::Cat::carry_penalty_for_special_vehicle($addinfo[0], $special_vehicle);
+	    my $penalty = Strassen::Cat::carry_penalty_for_special_vehicle($addinfo[0], $special_vehicle);
+	    $sperre_tragen_ref->{$r->[Strassen::COORDS()][0]} = $extended ? [$r->[Strassen::NAME()], $penalty] : $penalty;
 	} elsif ($cat eq StrassenNetz::BLOCKED_NARROWPASSAGE &&
 		 defined $addinfo[0] && $addinfo[0] ne '') {
-	    $sperre_narrowpassage_ref->{$r->[Strassen::COORDS()][0]} = $addinfo[0];
+	    my $penalty = $addinfo[0];
+	    my $dummy;
+	    Strassen::Cat::change_bnp_penalty_for_special_vehicle(\@addinfo, $special_vehicle, \$dummy, \$penalty);
+	    $sperre_narrowpassage_ref->{$r->[Strassen::COORDS()][0]} = $extended ? [$r->[Strassen::NAME()], $penalty] : $penalty;
 	}
     }
 }

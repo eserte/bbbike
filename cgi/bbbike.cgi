@@ -82,8 +82,9 @@ use vars qw($VERSION $VERBOSE $WAP_URL
 	    $g_str $orte $orte2 $multiorte
 	    $ampeln $qualitaet_net $handicap_net
 	    $strcat_net $radwege_strcat_net $radwege_net $routen_net $comments_net
-	    $comments_points $green_net $unlit_streets_net
+	    $green_net $unlit_streets_net
 	    $crossings $kr %cached_plz $net $multi_bez_str
+	    $sperre_tragen $sperre_narrowpassage
 	    $overview_map $city
 	    $use_umland $use_umland_jwd $use_special_destinations
 	    $use_fragezeichen $use_fragezeichen_routelist
@@ -3604,6 +3605,7 @@ sub display_route {
     my %power_map;
     my @strnames;
     my @path;
+    my $penalty_lost = 0;
  CALC_ROUTE_TEXT: {
 	last CALC_ROUTE_TEXT if (!$r || !$r->path_list);
 
@@ -3737,44 +3739,13 @@ sub display_route {
 						-multiple => 1);
 		}
 	    }
-	    if (!$comments_points) {
-		$comments_points = {};
+
+	    if (!$sperre_tragen || !$sperre_narrowpassage) {
 		eval {
-		    require Strassen::Cat;
 		    my $special_vehicle = $q->param('pref_specialvehicle') || '';
-		    # XXX This regexp feels hacky, duplication of code (trailer=... stuff), and hardcoded to support
-		    # only specialvehicle=trailer.
-		    my $gesperrt_cat_rx = "^(?:" . join("|", map { quotemeta $_ }
-							(StrassenNetz::BLOCKED_CARRY(),
-							 StrassenNetz::BLOCKED_NARROWPASSAGE(),
-							)) . ")(?::(\\d+)(?::.*?:trailer=(\\d+))?)?";
-		    $gesperrt_cat_rx = qr{$gesperrt_cat_rx};
-		    my $s = Strassen->new("gesperrt");
-		    $s->init;
-		    while(1) {
-			my $rec = $s->next;
-			last if !@{ $rec->[Strassen::COORDS] };
-			if ($rec->[Strassen::CAT] =~ $gesperrt_cat_rx) {
-			    my $name = $rec->[Strassen::NAME];
-			    my($penalty, $trailer_penalty) = ($1, $2);
-			    if (defined $penalty) {
-				if ($special_vehicle eq 'trailer' && defined $trailer_penalty) {
-				    $penalty = $trailer_penalty;
-				} elsif ($rec->[Strassen::CAT] =~ m{^0}) { # XXX BLOCKED_CARRY
-				    $penalty = Strassen::Cat::carry_penalty_for_special_vehicle($penalty, $special_vehicle);
-				}
-				if ($penalty == 0) {
-				    $name .= " (" . M("kein Zeitverlust") . ")";
-				} elsif ($penalty == 1) {
-				    $name .= " (" . M("ca. eine Sekunde Zeitverlust") . ")";
-				} else {
-				    $name .= " (" . sprintf(M("ca. %s Sekunden Zeitverlust"), $penalty) . ")";
-				}
-			    }
-			    $comments_points->{$rec->[Strassen::COORDS][0]}
-				= $name;
-			}
-		    }
+		    $sperre_tragen = {};
+		    $sperre_narrowpassage = {};
+		    StrassenNetz::make_sperre_tragen('gesperrt', $special_vehicle, $sperre_tragen, $sperre_narrowpassage, -extended => 1);
 		};
 		warn $@ if $@;
 	    }
@@ -3893,15 +3864,24 @@ sub display_route {
 
 		for my $i ($strnames[$i]->[4][0] .. $strnames[$i]->[4][1]) {
 		    my $point = join ",", @{ $path[$i] };
-		    if (exists $comments_points->{$point}) {
-			my $etappe_comment = $comments_points->{$point};
-			# XXX not yet: problems with ... Sekunden Zeitverlust
-			#if (!exists $seen_comments_in_this_etappe{$etappe_comment}) {
-			push @comments, $etappe_comment;
-			push @comments_html, $etappe_comment;
-			# XXX missing: push @comments_html, $etappe_comment_html;
-			#} else {
-			#} # XXX better solution for multiple point comments: use (2x), (3x) ...
+		    for my $sperre_hash ($sperre_tragen, $sperre_narrowpassage) {
+			if (exists $sperre_hash->{$point}) {
+			    my($name, $penalty) = @{ $sperre_hash->{$point} };
+			    if ($penalty == 0) {
+				$name .= " (" . M("kein Zeitverlust") . ")";
+			    } elsif ($penalty == 1) {
+				$name .= " (" . M("ca. eine Sekunde Zeitverlust") . ")";
+			    } else {
+				$name .= " (" . sprintf(M("ca. %s Sekunden Zeitverlust"), $penalty) . ")";
+			    }
+			    # XXX not yet: problems with ... Sekunden Zeitverlust
+			    #if (!exists $seen_comments_in_this_etappe{$name}) {
+			    # XXX better solution for multiple point comments: use (2x), (3x) ...
+			    push @comments, $name;
+			    push @comments_html, $name;
+			    $penalty_lost += $penalty;
+			    last; # anyway, no point should appear in tragen AND narrowpassage
+			}
 		    }
 		}
 		$etappe_comment = join("; ", @comments) if @comments;
@@ -4231,7 +4211,7 @@ EOF
 		my $def = $speed_map{$speed};
 		my $bold = $def->{Pref};
 		my $time = $def->{Time};
-		print "<td>$fontstr" . make_time($time + $ampel_lost/3600)
+		print "<td>$fontstr" . make_time($time + $ampel_lost/3600 + $penalty_lost/3600)
 		    . "h (" . ($bold ? "<b>" : "") . M("bei")." $speed km/h" . ($bold ? "</b>" : "") . ")";
 		print "," if $speed != $speeds[-1];
 		print "$fontend</td>";
@@ -4252,7 +4232,7 @@ EOF
 		} else {
 		    $is_first = 0;
 		}
-		print $fontstr,  make_time(($power_map{$power}->{Time} + $ampel_lost)/3600) . "h (" . M("bei") . " $power W)", $fontend, "</td>"
+		print $fontstr,  make_time(($power_map{$power}->{Time} + $ampel_lost + $penalty_lost)/3600) . "h (" . M("bei") . " $power W)", $fontend, "</td>"
 	    }
 	    print "</tr>\n";
 	}
