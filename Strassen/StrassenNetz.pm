@@ -244,21 +244,8 @@ sub make_sperre_1 {
 	# Fix penalty or propagate to other category for special
 	# vehicles, currently only for BNP and CARRY:
 	if ($special_vehicle ne '') {
-	    if ($category eq BLOCKED_NARROWPASSAGE && @addinfo >= 2) {
-		# first addinfo is angle, following are possible special vehicle penalties
-		for my $addinfo (@addinfo[1 .. $#addinfo]) {
-		    my($key,$val) = split /=/, $addinfo;
-		    if ($key eq $special_vehicle) {
-			if ($val eq 'no') {
-			    $category = BLOCKED_ROUTE
-			} elsif ($val =~ m{^\d+$}) {
-			    $penalty = $val;
-			} else {
-			    warn "Unexpected value '$val' in " . $ret->[Strassen::CAT()];
-			}
-			last;
-		    }
-		}
+	    if ($category eq BLOCKED_NARROWPASSAGE) {
+		Strassen::Cat::change_bnp_penalty_for_special_vehicle(\@addinfo, $special_vehicle, \$category, \$penalty);
 	    } elsif ($category eq BLOCKED_CARRY) {
 		$penalty = Strassen::Cat::carry_penalty_for_special_vehicle($penalty, $special_vehicle);
 	    }
@@ -297,7 +284,7 @@ sub make_sperre_1 {
 *make_sperre = \&make_sperre_1;
 
 sub make_sperre_tragen {
-    my($sperre_file, $sperre_tragen_ref, $sperre_narrowpassage_ref) = @_;
+    my($sperre_file, $special_vehicle, $sperre_tragen_ref, $sperre_narrowpassage_ref) = @_;
     %$sperre_tragen_ref        = ();
     %$sperre_narrowpassage_ref = ();
     my $s = Strassen->new($sperre_file);
@@ -308,7 +295,7 @@ sub make_sperre_tragen {
 	my($cat,@addinfo) = split /:/, $r->[Strassen::CAT()];
 	if ($cat eq StrassenNetz::BLOCKED_CARRY &&
 	    defined $addinfo[0] && $addinfo[0] ne '') {
-	    $sperre_tragen_ref->{$r->[Strassen::COORDS()][0]} = $addinfo[0];
+	    $sperre_tragen_ref->{$r->[Strassen::COORDS()][0]} = Strassen::Cat::carry_penalty_for_special_vehicle($addinfo[0], $special_vehicle);
 	} elsif ($cat eq StrassenNetz::BLOCKED_NARROWPASSAGE &&
 		 defined $addinfo[0] && $addinfo[0] ne '') {
 	    $sperre_narrowpassage_ref->{$r->[Strassen::COORDS()][0]} = $addinfo[0];

@@ -10555,9 +10555,7 @@ sub add_temp_blockings_to_net {
 
 ### AutoLoad Sub
 sub read_sperre_tragen {
-    my($force) = @_;
-    return if (!$force && keys %sperre_tragen != 0);
-    if (!eval { StrassenNetz::make_sperre_tragen(get_strassen_file($sperre_file), \%sperre_tragen, \%sperre_narrowpassage) }) {
+    if (!eval { StrassenNetz::make_sperre_tragen(get_strassen_file($sperre_file), get_special_vehicle(), \%sperre_tragen, \%sperre_narrowpassage) }) {
 	warn $@;
     }
 }
@@ -17465,7 +17463,7 @@ sub make_net {
 		    eval {
 			$net->make_sperre($sperre_file,
 					  Type => \@sperre_type,
-					  SpecialVehicle => $special_vehicle_rb eq 'normal' ? '' : $special_vehicle_rb,
+					  SpecialVehicle => get_special_vehicle(),
 					 );
 		    }; warn $@ if $@;
 		    if ($net_type eq 's-car') {
@@ -19417,6 +19415,7 @@ sub update {
 	    plot($str_p,$elem);
 	} elsif ($type eq 'recalc-net') {
 	    make_net();
+	    read_sperre_tragen() unless $lowmem; # XXX should be called automatically, maybe?
 	} else {
 	    die "Unknown update type: $type";
 	}
@@ -20908,6 +20907,8 @@ sub balloon_info_from_all_tags {
 	}
     }
 }
+
+sub get_special_vehicle { $special_vehicle_rb eq 'normal' ? '' : $special_vehicle_rb }
 
 # REPO BEGIN
 # REPO NAME tk_sleep /home/e/eserte/work/srezic-repository 
