@@ -153,6 +153,7 @@ png-to-gif:	\
 		movehand.gif \
 		museum.gif \
 		newlayer.gif \
+		notrailer.gif \
 		opt.gif \
 		pflaume.gif \
 		printer.gif \
@@ -217,6 +218,7 @@ png-to-xpm:	\
 		mosque.xpm \
 		museum.xpm \
 		newlayer.xpm \
+		notrailer.xpm \
 		pflaume.xpm \
 		printer.xpm \
 		printer_narrow.xpm \
