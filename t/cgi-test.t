@@ -24,11 +24,12 @@ use lib ($FindBin::RealBin, "$FindBin::RealBin/..");
 use CGI qw();
 use Getopt::Long;
 
-use BBBikeTest qw(get_std_opts like_long_data $cgidir);
+use BBBikeTest qw(get_std_opts like_html unlike_html $cgidir);
 
 sub bbbike_cgi_search ($$);
 
-plan 'no_plan';
+#plan 'no_plan';
+plan tests => 17;
 
 if (!GetOptions(get_std_opts("cgidir"),
 	       )) {
@@ -45,14 +46,40 @@ my $ua = LWP::UserAgent->new;
 $ua->agent("BBBike-Test/1.0");
 
 {
+    my %route_endpoints = (startc => '14798,10985',
+			   zielc  => '14794,10844',
+			  );
+    {
+	my $resp = bbbike_cgi_search +{ %route_endpoints }, 'No special vehicle';
+	my $content = $resp->decoded_content;
+	like_html($content, qr{Fußgängerbrücke}, 'Found Fussgaengerbruecke');
+	like_html($content, qr{30 Sekunden Zeitverlust}, 'Found lost time');
+    }
+
+    {
+	my $resp = bbbike_cgi_search +{ %route_endpoints, pref_specialvehicle => 'childseat' }, 'Special "vehicle" childseat';
+	my $content = $resp->decoded_content;
+	like_html($content, qr{Fußgängerbrücke}, 'Still found Fussgaengerbruecke');
+	like_html($content, qr{90 Sekunden Zeitverlust}, 'Found lost time');
+    }
+
+    {
+	my $resp = bbbike_cgi_search +{ %route_endpoints, pref_specialvehicle => 'trailer' }, 'Special "vehicle" childseat';
+	my $content = $resp->decoded_content;
+	like_html($content, qr{Brücken Rummelsburg}, 'Found Umfahrung');
+	unlike_html($content, qr{Zeitverlust}, 'No lost time here');
+    }
+}
+
+{
     my $resp = bbbike_cgi_search +{startname=>'Dudenstr.',
 				   startc=>'9229,8785',
 				   zielname=>'Methfesselstr.',
 				   zielc=>'8982,8781',
 				  }, 'Search route with bbbike coords';
     my $content = $resp->decoded_content;
-    like_long_data($content, qr{Route von.*Dudenstr.*Methfesselstr});
-    like_long_data($content, qr{L.*nge.*0\.25\s+km});
+    like_html($content, qr{Route von.*Dudenstr.*Methfesselstr});
+    like_html($content, qr{L.*nge.*0\.25\s+km});
 }
 
 {
@@ -62,8 +89,8 @@ $ua->agent("BBBike-Test/1.0");
 				   zielc_wgs84=>'13.382252,52.484989',
 				  },'Search route with WGS84 coords';
     my $content = $resp->decoded_content;
-    like_long_data($content, qr{Route von.*Dudenstr.*Methfesselstr});
-    like_long_data($content, qr{L.*nge.*0\.25\s+km});
+    like_html($content, qr{Route von.*Dudenstr.*Methfesselstr});
+    like_html($content, qr{L.*nge.*0\.25\s+km});
 }
 
 {
@@ -71,7 +98,7 @@ $ua->agent("BBBike-Test/1.0");
 				   zielc=>'10176,6050',
 				  },'BNP (Poller) in midst of route';
     my $content = $resp->decoded_content;
-    like_long_data($content, qr{\(kein Zeitverlust\)});
+    like_html($content, qr{\(kein Zeitverlust\)});
 }
 
 sub bbbike_cgi_search ($$) {
