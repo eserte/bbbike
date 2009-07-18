@@ -26,6 +26,7 @@ BEGIN {
 
 if ($WWW::Mechanize::VERSION == 1.54) {
     package WWW::Mechanize;
+    local $^W;
     *_update_page = sub {
 # kept original WWW::Mechanize indentation:
     my ($self, $request, $res) = @_;
