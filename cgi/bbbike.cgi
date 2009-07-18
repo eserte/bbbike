@@ -93,7 +93,7 @@ use vars qw($VERSION $VERBOSE $WAP_URL
 	    $graphic_format $use_mysql_db $use_exact_streetchooser
 	    $use_module
 	    $cannot_gif_png $cannot_jpeg $cannot_pdf $cannot_svg $can_gif
-	    $can_wbmp $can_palmdoc $can_gpx $can_kml $can_berliner_stadtplan_post
+	    $can_wbmp $can_palmdoc $can_gpx $can_kml
 	    $can_google_maps
 	    $can_mapserver $mapserver_address_url
 	    $mapserver_init_url $no_berlinmap $max_plz_streets $with_comments
@@ -702,9 +702,6 @@ if ($config_master =~ s{^(.*)\.(en)(\.cgi)$}{$1$3}) {
 eval { local $SIG{'__DIE__'};
        #warn "$config_master.config";
        do "$config_master.config" };
-
-# Post-config adjustments:
-$can_berliner_stadtplan_post = 0; # API does not work since 2007-08-01
 
 if ($lang ne "") {
     $msg = eval { do "$FindBin::RealBin/msg/$lang" };
@@ -4594,7 +4591,6 @@ EOF
 	    print " <option " . $imagetype_checked->("pdf-landscape") . ">PDF (" . M("Querformat") . ")\n" unless $cannot_pdf;
 	    print " <option " . $imagetype_checked->("svg") . ">SVG\n" unless $cannot_svg;
 	    print " <option " . $imagetype_checked->("mapserver") . ">MapServer\n" if $can_mapserver;
-	    print " <option " . $imagetype_checked->("berlinerstadtplan") . ">www.berliner-stadtplan.com\n" if $can_berliner_stadtplan_post;
 	    print " <option " . $imagetype_checked->("googlemaps") . ">Google Maps\n" if $can_google_maps;
 	    #XXX print " <option " . $imagetype_checked->("googlemapsstatic") . ">Google Maps (static)\n" if 1;#XXXXXXXXXXXXXXXXXX
 	    print " </select></span>\n";
@@ -5095,11 +5091,6 @@ sub draw_route {
 	    $q->param('geometry', $1);
 	    $q->param('imagetype', 'pdf');
 	}
-    }
-
-    if (defined $q->param('imagetype') &&
-	$q->param('imagetype') eq 'berlinerstadtplan') {
-	$q->param("module", "BerlinerStadtplan"); # XXX change!
     }
 
     if (defined $use_module && !$bbbikedraw_args{Module}) {
