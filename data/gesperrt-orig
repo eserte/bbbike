@@ -669,7 +669,8 @@ Platz der Einheit	1 -12768,-1069 -12755,-1131 -12718,-1327
 Puschkinallee	1 -13042,807 -12912,783 -12868,738 -12827,629 -12815,554 -12811,533
 Geschwister-Scholl-Str.	1 -14215,-1687 -14151,-1656 -14115,-1678
 Friedrich-Ebert-Str.: Straßenbahntrasse, nur für Fußgänger bequem passierbar	3nocross -12719,-1661 -12755,-1585 -12773,-1544 -12795,-1499 -12833,-1365
-tragen (Treppe, 75 Stufen und etliche Rampenabschnitte)	0:180 -13733,-722 -13772,-623
+#: XXX_prog: Treppe sollte besser als -13733,-722 -13772,-623 -13784,-537 dargestellt sein, wenn es geht
+tragen (Treppe, 75 Stufen und etliche Rampenabschnitte)	0:180 -13772,-623
 #: by: rjoop
 Brücke mittlerweile gesperrt	2 -19183,7299 -19150,7320
 Prof.-Dr.-Helmert-Str.: Schranke	BNP:3 -7969,-1659
@@ -1032,11 +1033,13 @@ tragen (drei flache Stufen)	0:10 -7445,-5002
 tragen (zwei Stufen)	0:10 5970,20353
 tragen (ca. 45 Stufen, Aufzug ist vorhanden)	0:30 13503,11179
 tragen (flache Treppe, wenige Stufen)	0:10 6530,6786
-tragen (ca. 10 Stufen)	0:20 26407,161781 26395,161793
+#: XXX_prog: should be Treppe with two points: 26407,161781 26395,161793
+tragen (ca. 10 Stufen)	0:20 26407,161781
 #: by: Wolfhard Schleese:
 tragen (Treppe oder steile Kinderwagenrampe)	0:30 2956,24373
 #: by: Moritz (acros):
-tragen (Treppe)	0:30 2827,23059 2854,23062 2886,23045
+#: XXX_prog: should be Treppe with more than one point: 2827,23059 2854,23062 2886,23045
+tragen (Treppe)	0:30 2854,23062
 tragen (ca. 30 Stufen)	0:30 8773,10399
 tragen (Treppe)	0:30 -18702,4551
 tragen (Treppe)	0:20 -12681,-1726
@@ -1069,16 +1072,16 @@ tragen (ca. 35 Stufen)	0:30 18180,12262
 tragen (S-Bhf. Marzahn)	0:30 19571,15417
 tragen (S-Bhf. Marzahn)	0:30 19638,15431
 tragen (13 Stufen)	0:30 7923,12876
-tragen (zwei Mal, je fünf Stufen)	0:30 5017,6387
-tragen (Treppen zur U-Bahnbrücke, je drei Stufen)	0:20 2301,4917
-tragen (Treppen zur U-Bahnbrücke, je drei Stufen)	0:20 2181,4835
+tragen (2 x 5 Stufen)	0:30 5017,6387
+tragen (Treppen zur U-Bahnbrücke, 2 x 3 Stufen)	0:20 2301,4917
+tragen (Treppen zur U-Bahnbrücke, 2 x 3 Stufen)	0:20 2181,4835
 tragen (Eisenbahnbrücke Templiner See)	0:60 -15537,-4535
 tragen (Eisenbahnbrücke Templiner See)	0:60 -15652,-4441
 tragen (Eisenbahnbrücke Caputh)	0:60 -18009,-7528
 tragen (Eisenbahnbrücke Caputh)	0:60 -17978,-7375
 tragen (Eisenbahnbrücke Werder)	0:60 -21048,-2029
 tragen (Eisenbahnbrücke Werder)	0:60 -21210,-2058
-tragen (Elsenbrücke, ungefähr 15 Stufen auf jeder Seite)	0:60 13383,8716
+tragen (Elsenbrücke, ungefähr 2 x 15 Stufen)	0:60 13383,8716
 tragen (Gerickesteg, ungefähr 20 Stufen)	0:30 6748,12669
 tragen (Gerickesteg, ungefähr 20 Stufen)	0:30 6702,12633
 #: note: exakt 48 oder 49 Stufen
@@ -1114,7 +1117,7 @@ tragen (Treppe)	0:30 9983,16561
 tragen (Treppe)	0:30 9982,16527
 tragen (Treppe)	0:30 3756,12614
 tragen (Treppe)	0:30 4334,12551
-tragen (Jungfernbrücke, ungefähr 10 Stufen auf jeder Seite)	0:30 10213,12003
+tragen (Jungfernbrücke, ungefähr 2 x 10 Stufen)	0:30 10213,12003
 tragen (Treppe, 26 Stufen)	0:30 10583,12206
 tragen (Treppe und Rampe)	0:30 39281,17353
 tragen (Treppe oder sehr steile, sandige Rampe)	0:60 41715,18446
@@ -1156,7 +1159,8 @@ tragen (Treppe, ca. 6 Stufen)	0:15 15488,8508
 tragen (Treppe, 50 Stufen)	0:50 -12328,1941
 tragen (Treppe, 18 Stufen)	0:18 8709,12605
 #: by: osm:
-tragen (Treppe)	0:30 6016,12939 6017,12931 6019,12923
+#: XXX_prog: should be Treppe with more than one point: 6016,12939 6017,12931 6019,12923
+tragen (Treppe)	0:30 6017,12931
 tragen (Treppe, 4 Stufen)	0:10 38056,48407
 #
 ###################################################################
@@ -1400,8 +1404,8 @@ Bundesallee: Mittelstreifen unbequem zu überqueren	3nocross 5493,9357 5495,9263 
 Lietzenburger Str.: Mittelstreifen schlecht zu überqueren 	3nocross 6494,10440 6403,10424 6276,10401
 (Kolonieweg a. d. Forkenbeckstr.): tragen (5 Stufen)	0:15 3230,8194
 (Kolonieweg a. d. Forkenbeckstr.): schieben (Rampe 10 Stufen)	0:15 3753,8073
-tragen (2 mal 10 Stufen)	0:40 1666,4637
-tragen (2 mal 10 Stufen)	0:40 1689,4630
+tragen (2 x 10 Stufen)	0:40 1666,4637
+tragen (2 x 10 Stufen)	0:40 1689,4630
 Sterzinger Str.	1 6096,8600 6128,8536
 Bozener Str.	1 5904,8906 5995,8926 6049,8916
 Bozener Str.	1 5995,8926 5995,9098
@@ -1418,7 +1422,8 @@ Mollstr.: Straßenbahntrasse	3nocross 11881,13072 11905,13069 11966,13074 11985,1
 (Parkweg Am Karlsbad): tragen (ca. 10 Stufen)	0:40 8190,10960
 Matthäikirchplatz	1 7938,11276 7956,11340 7973,11354
 Matthäikirchplatz	1 7973,11354 7984,11334 7966,11267
-Herkulesufer: wg. Stufen schieben, ggf. auf Wiesenstreifen ausweichen	0:30 6920,11064 6882,11061
+#: XXX_prog: Should be Treppe with more than one point: 6920,11064 6882,11061
+Herkulesufer: wg. Stufen schieben, ggf. auf Wiesenstreifen ausweichen	0:30 6920,11064
 Potsdamer Str.: schwierig zu überqueren - besser Ampel benutzen	3nocross 7912,10945 7968,11048 7980,11070
 Grunewaldstr.: queren schlecht möglich	3nocross 6709,9234 6863,9254 6923,9266
 Adolf-Scheidt-Platz	1 8731,8050 8765,8050 8783,8020 8769,7994 8731,7990
@@ -1433,11 +1438,12 @@ tragen (3 einzelne Stufen)	0:15 13079,14320
 Achtung schlecht sichtbare Kette!!	BNP:5 13485,14054
 Treppe	0:20 12867,14648
 2 Treppen o. schmale Rampen	0:10 12969,14672
-tragen (Treppe)	0:15 5574,5791 5574,5819
+#: XXX_prog: Should be Treppe with more than one point: 5574,5791 5574,5819
+tragen (Treppe)	0:15 5574,5791
 Althoffplatz	1 5687,5586 5609,5584 5573,5622 5613,5672 5683,5672
 Elisenstr.: tragen (3 Stufen)	0:15 5808,5332
 tragen (9 Stufen)	0:30 5822,5388
-tragen (3 Treppen à 10 Stufen)	0:90 5478,4792
+tragen (3 x 10 Stufen)	0:90 5478,4792
 tragen (8 Stufen)	0:30 5466,4765
 tragen (Treppe)	0:20 5371,4609
 (Stadtpark Steglitz)	BNP:15 5765,4693
@@ -1458,7 +1464,10 @@ Hohenzollerndamm: unbequem passierbarer Mittelstreifen	3nocross 3688,9051 3741,9
 Hohenzollerndamm: unpassierbarer Mittelstreifen	3nocross 3439,8996 3482,9028 3521,9059
 Kette	BNP:5 3370,9215
 Kette	BNP:5 3264,9261
-(Fußgängertunnel Sybelstr.): 2 mal 30 Stufen	0:240 3761,10563
+#: corrected_by: srt/new_policy (0:240 -> 2 x 0:40; 60s for 60 steps and 20s for the way under the tunnel, divided into two) vvv
+(Fußgängertunnel Sybelstr.): 30 Stufen	0:40 3731,10563
+(Fußgängertunnel Sybelstr.): 30 Stufen	0:40 3781,10569
+#: corrected_by ^^^
 Bregenzer Str.	1 4278,10262 4227,10014
 Bayerische Str.	1 4296,10004 4349,10247
 Kniprodestr.: unpassierbarer Mittelstreifen (Straßenbahn, Bordsteine)	3nocross 12912,14084 12978,14151 12996,14172 13046,14220
@@ -1491,10 +1500,12 @@ Bollmannweg	1 -4431,11779 -4298,11769
 Weinmeisterhornweg	1s -4789,11225 -4564,11180
 Heerstr.	3nocross -4500,11937 -4437,11919 -4310,11882
 Heerstr.	3nocross -4310,11882 -4278,11873 -4063,11805
-tragen/schieben (40 Stufen, Rampe)	0:120 -4768,11016 -4836,11028
+#: XXX_prog: Treppe with two points: -4768,11016 -4836,11028
+tragen/schieben (40 Stufen, Rampe)	0:120 -4768,11016
 #: confirmed_by: srt
 Theodor-Heuss-Weg	1s 9197,14562 9081,14363
-tragen / schieben (Treppe 10 Stufen oder wilder Weg)	0:40 9223,14608
+#: corrected_by: srt/new_policy (0:40 -> 0:20, matches better the 10 steps)
+tragen / schieben (Treppe 10 Stufen oder wilder Weg)	0:20 9223,14608
 Tor	BNP:5 3326,12730
 Herderstr. (Charlottenburg)	1 4451,11558 4435,11343
 tragen (Treppe, 14 Stufen)	0:30 7931,12876
@@ -1540,7 +1551,8 @@ Drängelgitter	BNP:10 1407,8931
 Drängelgitter	BNP:10 1366,8986
 Drängelgitter	BNP:10 1330,9038
 Tor	BNP:15 1834,8893
-tragen (10 x 3 Stufen)	0:180 2170,8841
+#: corrected_by: srt/new_policy (0:180 -> 0:60; even at 5 km/h lost time would be about 80s)
+tragen (10 x 3 Stufen)	0:60 2170,8841
 tragen	0:40 2316,8593
 tragen	0:40 2316,8469
 Mittelstr.	1 9465,12460 9345,12443
@@ -1551,8 +1563,9 @@ Museumstr.	2:inwork 9943,12642 9884,12712
 Bauhofstr.	1 9810,12712 9671,12644
 Hollmannstr.	2 9991,10637 9777,10719
 Nordsternstr.	1s 6268,8884 6292,8899
-tragen	0:60 -9377,-625
-tragen (ca. 60 Stufen)	0:120 -8120,-1500
+tragen	0:60 -9371,-618
+#: corrected_by: srt/new_policy (0:120 -> 0:80)
+tragen (ca. 60 Stufen)	0:80 -8120,-1500
 tragen	0:60 -8451,-1418
 Hausotterpl.	1 8320,18185 8345,18182 8361,18160 8355,18142 8334,18127 8310,18127 8296,18145 8299,18172 8320,18185
 #: by: Holger Buechner [AM]
