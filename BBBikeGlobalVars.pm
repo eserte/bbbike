@@ -57,6 +57,7 @@ use vars qw(
      $search_photo $search_pref_photo $steigung_photo $gefaelle_photo
      $inwork_photo $achtung_photo $cal_photo $star_photo $newlayer_photo
      $menuarrow_photo $ferry_photo $ferry_klein_photo $blocked_photo
+     $notrailer_photo
      $google_photo $bbbike_google_photo $wikipedia_photo
      %photo
 );

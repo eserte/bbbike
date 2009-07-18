@@ -1167,8 +1167,8 @@ Drängelgitter	BNP:5 4258,2693
 Drängelgitter	BNP:5 4202,2622
 #: by: ^^^
 #: by: Kerstin Klemann: vvv
-Drängelgitter, für Anhänger nicht passierbar	BNP:5 2009,3362
-Drängelgitter, für Anhänger nicht passierbar	BNP:5 1980,3409
+Drängelgitter, für Anhänger nicht passierbar	BNP:5::trailer=no 2009,3362
+Drängelgitter, für Anhänger nicht passierbar	BNP:5::trailer=no 1980,3409
 #: by: ^^^
 Schwingtor	BNP:5 15054,10168
 Schwingtor	BNP:5 15097,10255
@@ -1365,7 +1365,7 @@ Brücke über den Torfgraben/Phöben gesperrt, Neubau voraussichtlich bis 2006-12-3
 #
 ######################################################################
 # Unsorted
-#
+# 
 Behlertstr.	1 -12370,-354 -12500,-339 -12621,-359 -12821,-417 -12865,-425
 tragen (Treppe)	0:30 2247,5068
 tragen (Treppe)	0:15 2204,5081

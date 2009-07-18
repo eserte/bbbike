@@ -1435,8 +1435,8 @@ tragen (Treppe)	0:30 6016,12939 6017,12931 6019,12923
 tragen (Treppe, 4 Stufen)	0:10:86 38056,48407
 Drängelgitter	BNP:5:-164 4258,2693
 Drängelgitter	BNP:5:-123 4202,2622
-Drängelgitter, für Anhänger nicht passierbar	BNP:5:-206 2009,3362
-Drängelgitter, für Anhänger nicht passierbar	BNP:5:-211 1980,3409
+Drängelgitter, für Anhänger nicht passierbar	BNP:5:-206:trailer=no 2009,3362
+Drängelgitter, für Anhänger nicht passierbar	BNP:5:-211:trailer=no 1980,3409
 Schwingtor	BNP:5:-153 15054,10168
 Schwingtor	BNP:5:-153 15097,10255
 Schranke, sehr enge Durchfahrt, nicht anhängertauglich	BNP:5:-135 14658,7513

@@ -5386,6 +5386,7 @@ sub load_photos {
     $zugbruecke_photo    = load_photo($top, 'zugbruecke');
     $zugbruecke_klein_photo
 	= load_photo($top, 'zugbruecke_klein');
+    $notrailer_photo     = load_photo($top, 'notrailer');
 #XXX not yet necessary:
 #    $blocked_photo       = load_photo($top, 'redcross');
 }
@@ -10171,8 +10172,9 @@ sub plot_sperre {
 	    my $sub_cat;
 	    my($cat,$addinfo) = $ret->[Strassen::CAT] =~ m{^(.*?)(?:::?(.*))?$};
 	    my @addinfo = $addinfo ? split(':', $addinfo): ();
+	    my %addinfo = map {($_,1)} @addinfo;
 	    if (!$edit_normal_mode) { # we want to see everything in edit mode
-	        next if first { $_ eq "igndisp" } @addinfo;
+	        next if $addinfo{'igndisp'};
 	    }
 	    if ($cat eq StrassenNetz::BLOCKED_CARRY) {
 		if ($width0) { # größer 0
@@ -10206,13 +10208,13 @@ sub plot_sperre {
 		my $sin1 = sin($rad);
 		my $cos4 = cos($rad)*4;
 		my $sin4 = sin($rad)*4;
+		my $tags = [$abk, $sub_cat, $ret->[Strassen::NAME], $abk.'-'.$pos];
 		for my $add ([-$cos1,$sin1]) {
 		    my($yadd,$xadd) = @$add;
 		    $c->createLine
 			($x-$cos1+$xadd, ($y+$yadd)-$sin1, $x+$cos4+$xadd, ($y+$yadd)+$sin4,
 			 -width => $width0, # XXX $widthBNP verwenden und in get_line_width anpassen
-			 -tags => [$abk, $sub_cat,
-				   $ret->[Strassen::NAME], $abk.'-'.$pos],
+			 -tags => $tags,
 			);
 		}
 		for my $add ([$cos1,-$sin1]) {
@@ -10220,9 +10222,15 @@ sub plot_sperre {
 		    $c->createLine
 			($x-$cos4+$xadd, ($y+$yadd)-$sin4, $x+$cos1+$xadd, ($y+$yadd)+$sin1,
 			 -width => $width0, # XXX $widthBNP verwenden und in get_line_width anpassen
-			 -tags => [$abk, $sub_cat,
-				   $ret->[Strassen::NAME], $abk.'-'.$pos],
+			 -tags => $tags,
 			);
+		}
+		if ($addinfo{'trailer=no'} && $notrailer_photo) {
+		    my($xm,$ym) = ($x+$cos1-$sin1, $y+$cos1+$sin1);
+		    $c->createImage($xm,$ym,
+				    -anchor => 'nw',
+				    -image => $notrailer_photo,
+				    -tags => $tags);
 		}
 		($icon_x, $icon_y, $icon_anchor) = ($x, $y, 'n');
 	    } elsif ($cat =~ /^@{[ StrassenNetz::BLOCKED_ROUTE ]}(nocross)?/) {
@@ -10313,18 +10321,16 @@ sub plot_sperre {
 
 		    my @anchors = qw(nw sw ne se);
 
-		    for my $addinfo (@addinfo) {
-			if ($addinfo =~ /\binwork\b/ && $inwork_photo) {
-			    $c->createImage($xm,$ym,
-					    -anchor => shift(@anchors),
-					    -image => $inwork_photo,
-					    -tags => $tags);
-			} elsif ($addinfo =~ /\btemp\b/ && $cal_photo) {
-			    $c->createImage($xm,$ym,
-					    -anchor => shift(@anchors),
-					    -image => $cal_photo,
-					    -tags => $tags);
-			}
+		    if ($addinfo{'inwork'} && $inwork_photo) {
+			$c->createImage($xm,$ym,
+					-anchor => shift(@anchors),
+					-image => $inwork_photo,
+					-tags => $tags);
+		    } elsif ($addinfo{'temp'} && $cal_photo) {
+			$c->createImage($xm,$ym,
+					-anchor => shift(@anchors),
+					-image => $cal_photo,
+					-tags => $tags);
 		    }
 
 		    if ($is_car && $car_photo) {
