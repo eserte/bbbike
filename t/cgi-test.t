@@ -29,7 +29,7 @@ use BBBikeTest qw(get_std_opts like_html unlike_html $cgidir);
 sub bbbike_cgi_search ($$);
 
 #plan 'no_plan';
-plan tests => 17;
+plan tests => 19;
 
 if (!GetOptions(get_std_opts("cgidir"),
 	       )) {
@@ -54,6 +54,7 @@ $ua->agent("BBBike-Test/1.0");
 	my $content = $resp->decoded_content;
 	like_html($content, qr{Fußgängerbrücke}, 'Found Fussgaengerbruecke');
 	like_html($content, qr{30 Sekunden Zeitverlust}, 'Found lost time');
+	like_html($content, qr{0:01h.*?bei 20 km/h}, 'Fahrzeit');
     }
 
     {
@@ -61,6 +62,7 @@ $ua->agent("BBBike-Test/1.0");
 	my $content = $resp->decoded_content;
 	like_html($content, qr{Fußgängerbrücke}, 'Still found Fussgaengerbruecke');
 	like_html($content, qr{90 Sekunden Zeitverlust}, 'Found lost time');
+	like_html($content, qr{0:03h.*?bei 20 km/h}, 'Fahrzeit');
     }
 
     {
