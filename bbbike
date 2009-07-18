@@ -403,6 +403,7 @@ $show_calories = 0;
 $use_hoehe = 1; # XXX kann im Programm nicht gesetzt werden
 $steigung_optimierung = 0;
 $green_optimization = 0;
+$special_vehicle_rb = 'normal';
 $grade_minimum_short_length = 100; # 100m gilt als kurz für grademinimumshort
 $use_legend = $use_legend_right = 0;
 $use_faehre = 0;
@@ -3039,7 +3040,10 @@ unless ($skip_features{"sehenswuerdigkeiten"}) {
     }
     if ($advanced || $lowmem) {
 	$sbm->command(-label => M"Straßennetz neu berechnen",
-		      -command => \&make_net);
+		      -command => sub {
+			  make_net();
+			  read_sperre_tragen() unless $lowmem; # XXX should be called automatically, maybe?
+		      });
 	$sbm->command(-label => M"undef netz",
 		      -command => sub {
 			  undef $net;
@@ -3303,6 +3307,26 @@ unless ($skip_features{"sehenswuerdigkeiten"}) {
 	$gwm->radiobutton(-label => M"stark bevorzugen",
 			  -variable => \$green_optimization,
 			  -value => 2,
+			 );
+    }
+    {
+	$sb2m->cascade(-label => M("Unterwegs mit")."...");
+	my $umm = $sb2m->Menu(-title => M"Unterwegs mit");
+	$sb2m->entryconfigure('last', -menu => $umm);
+	$umm->radiobutton(-label => M"nichts weiter", # XXX expr?
+			  -variable => \$special_vehicle_rb,
+			  -value => 'normal', # used to be $special_vehicle="", but this does not work with Perl/Tk
+			  -command => sub { pending(1, 'recalc-net') },
+			 );
+	$umm->radiobutton(-label => M"Anhänger",
+			  -variable => \$special_vehicle_rb,
+			  -value => 'trailer',
+			  -command => sub { pending(1, 'recalc-net') },
+			 );
+	$umm->radiobutton(-label => M"Kindersitz mit Kind",
+			  -variable => \$special_vehicle_rb,
+			  -value => 'childseat',
+			  -command => sub { pending(1, 'recalc-net') },
 			 );
     }
     unless ($skip_features{"nolighting"}) {
@@ -10533,24 +10557,7 @@ sub add_temp_blockings_to_net {
 sub read_sperre_tragen {
     my($force) = @_;
     return if (!$force && keys %sperre_tragen != 0);
-    %sperre_tragen = ();
-    if (!eval {
-	my $s = new Strassen get_strassen_file($sperre_file);
-	$s->init;
-	while(1) {
-	    my $r = $s->next;
-	    last if !@{ $r->[Strassen::COORDS] };
-	    my($cat,@addinfo) = split /:/, $r->[Strassen::CAT];
-	    if ($cat eq StrassenNetz::BLOCKED_CARRY &&
-		defined $addinfo[0] && $addinfo[0] ne '') {
-		$sperre_tragen{$r->[Strassen::COORDS][0]} = $addinfo[0];
-	    } elsif ($cat eq StrassenNetz::BLOCKED_NARROWPASSAGE &&
-		defined $addinfo[0] && $addinfo[0] ne '') {
-		$sperre_narrowpassage{$r->[Strassen::COORDS][0]} = $addinfo[0];
-	    }
-	}
-	1;
-    }) {
+    if (!eval { StrassenNetz::make_sperre_tragen(get_strassen_file($sperre_file), \%sperre_tragen, \%sperre_narrowpassage) }) {
 	warn $@;
     }
 }
@@ -17457,12 +17464,16 @@ sub make_net {
 		if (@sperre_type) {
 		    eval {
 			$net->make_sperre($sperre_file,
-					   Type => \@sperre_type);
+					  Type => \@sperre_type,
+					  SpecialVehicle => $special_vehicle_rb eq 'normal' ? '' : $special_vehicle_rb,
+					 );
 		    }; warn $@ if $@;
 		    if ($net_type eq 's-car') {
 			eval {
 			    $net->make_sperre("$datadir/gesperrt_car",
-					      Type => \@sperre_type);
+					      Type => \@sperre_type,
+					      # no SpecialVehicle defined for vars
+					     );
 			}; warn $@ if $@;
 		    }
 		}

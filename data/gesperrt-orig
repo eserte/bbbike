@@ -1172,8 +1172,8 @@ Drängelgitter, für Anhänger nicht passierbar	BNP:5::trailer=no 1980,3409
 #: by: ^^^
 Schwingtor	BNP:5 15054,10168
 Schwingtor	BNP:5 15097,10255
-#: XXX_prog: Fahrräder mit Anhänger sollten auf den parallelen Gehweg geführt werden
-Schranke, sehr enge Durchfahrt, nicht anhängertauglich	BNP:5 14658,7513
+#: note: Fahrräder mit Anhänger könnten auf den parallelen Gehweg geführt werden
+Schranke, sehr enge Durchfahrt, nicht anhängertauglich	BNP:5::trailer=no 14658,7513
 #: note: Hier steht ein "Radfahren verboten"-Schild
 Schranke	BNP:3 8828,13434
 #: note: Luftbild
@@ -1281,18 +1281,15 @@ Drängelgitter (vor der Straßenbahnhaltestelle)	BNP:5 29092,4761
 Schranke (Berliner Str./Woltersdorf)	BNP:5 32192,5915
 Schranke, schwer passierbar (Neue Steinmetzstr.)	BNP:10 7625,9376
 Schranke (Neue Steinmetzstr.)	BNP:5 7612,9446
-# XXX nur für Fahrräder mit Anhänger relevant: vvvvvvvvvvvvvvvvvvvvvvvvvvv
-#Barriere: Zillestr.	BNP:30 3268,11834
-# ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Barriere: Zillestr.	BNP:0::trailer=30 3268,11834
 Drängelgitter (Radweg nach Bötzow)	BNP:5 -5890,25875
 Schranke (Rütlistr.)	BNP:5 12490,9056
 Schranke (Rütlistr.)	BNP:5 12565,9200
 Schranke, meistens offen (Iranische Str.)	BNP:5 7875,16509
 Schranke, meistens offen (Iranische Str.)	BNP:5 7707,16543
 Barriere (Falkstr.)	BNP:10 12178,7985
-# XXX nur für Fahrräder mit Anhänger relevant (90cm breit): vvvvvvvvvvvvvv
-#Drängelgitter (Rochstr.)	BNP:5 10535,13006
-# ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+# note: nur für Fahrräder mit Anhänger relevant (90cm breit): vvvvvvvvvvvvvv
+Drängelgitter (Rochstr.)	BNP:0::trailer=5 10535,13006
 Barriere (Seydelstr.)	BNP:5 10370,11593
 Drängelgitter (Gleditschstr. - Elßholzstr.)	BNP:10 7158,9509
 Drängelgitter (Glühwürmchenweg, Verlängerung)	BNP:5 -6162,16287
@@ -1387,7 +1384,7 @@ Treibjagdweg	1 469,5138 472,4974
 Hochwildpfad	1 544,5165 549,4992
 Am Lappjagen	1 622,5192 625,5004
 Schranke (Verlängerte Alte Allee)	BNP:5 -20,10076
-#: XXX_prog: vielleicht relevant für Anhänger
+#: XXX: vielleicht relevant für Anhänger
 Pfähle (Verlängerter Dauerwaldweg)	BNP:1 467,9516
 Bernadottestr.	1 2711,6698 2793,6593 2875,6485 2935,6448 3020,6450
 Vogelsang	1 2229,6203 2170,5939 2137,5798

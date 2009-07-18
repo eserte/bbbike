@@ -833,7 +833,7 @@ use vars qw(%handicap_speed);
 		   "q1" => 25,
 		  );
 
-@pref_keys = qw/speed cat quality ampel green unlit winter fragezeichen/;
+@pref_keys = qw/speed cat quality ampel green specialvehicle unlit winter fragezeichen/;
 
 CGI->import('-no_xhtml');
 
@@ -2825,7 +2825,7 @@ sub set_cookie {
 }
 
 use vars qw($default_speed $default_cat $default_quality
-	    $default_ampel $default_routen $default_green $default_unlit $default_winter
+	    $default_ampel $default_routen $default_green $default_specialvehicle $default_unlit $default_winter
 	    $default_fragezeichen);
 
 sub get_settings_defaults {
@@ -2841,6 +2841,7 @@ sub get_settings_defaults {
     if ($default_green eq 'yes') {
 	$default_green = 2;
     }
+    $default_specialvehicle = (defined $c{"pref_specialvehicle"} ? $c{"pref_specialvehicle"} : '');
     $default_unlit   = (defined $c{"pref_unlit"}   ? $c{"pref_unlit"}   : "");
     $default_winter  = (defined $c{"pref_winter"}  ? $c{"pref_winter"}  : "");
     $default_fragezeichen = (defined $c{"pref_fragezeichen"} ? $c{"pref_fragezeichen"} : "");
@@ -2852,6 +2853,7 @@ sub reset_html {
 	my(%strqual)   = ("" => 0, "Q0" => 1, "Q2" => 2);
 	my(%strrouten) = ("" => 0, "RR" => 1);
 	my(%strgreen)  = ("" => 0, "GR1" => 1, "GR2" => 2);
+	my(%strspecialvehicle) = ('' => 0, 'trailer' => 1, 'childseat' => 2);
 	my(%strunlit)  = ("" => 0, "NL" => 1);
 	my(%strwinter) = ("" => 0, "WI1" => 1, "WI2" => 2);
 
@@ -2865,6 +2867,7 @@ sub reset_html {
 		   qq'@{[defined $strrouten{$default_routen} ? $strrouten{$default_routen} : 0]},',
 		   qq'@{[ $default_ampel?"true":"false" ]},',
 		   qq'@{[defined $strgreen{$default_green} ? $strgreen{$default_green} : 0]},',
+		   qq'@{[defined $strspecialvehicle{$default_specialvehicle} ? $strspecialvehicle{$default_specialvehicle} : 0]}',
 		   qq'@{[defined $strunlit{$default_unlit} ? $strunlit{$default_unlit} : 0]},',
 		   qq'@{[defined $strwinter{$default_winter} ? $strwinter{$default_winter} : 0]}',
 		   qq'); enable_settings_buttons(); return false;">',
@@ -2899,6 +2902,10 @@ sub settings_html {
 			      'value="' . $val . '" ' .
 			      ($default_green eq $val ? "selected" : "")
 			};
+    my $specialvehicle_checked = sub { my $val = shift;
+				       'value="' . $val . '" ' .
+				       ($default_specialvehicle eq $val ? "selected" : "")
+				   };
     my $unlit_checked = sub { my $val = shift;
 			      'value="' . $val . '" ' .
 			      ($default_unlit eq $val ? "selected" : "")
@@ -2967,6 +2974,13 @@ EOF
 <option @{[ $green_checked->("GR2") ]}>@{[ M("stark bevorzugen") ]} <!-- expr? -->
 </select></td></tr>
 EOF
+    print <<EOF;
+<tr><td>@{[ M("Unterwegs mit") ]}:</td><td><select $bi->{hfill} name="pref_specialvehicle">
+<option @{[ $specialvehicle_checked->("")          ]}>@{[ M("nichts weiter") ]} <!-- expr? XXX -->
+<option @{[ $specialvehicle_checked->("trailer")   ]}>@{[ M("Anhänger") ]}
+<option @{[ $specialvehicle_checked->("childseat") ]}>@{[ M("Kindersitz mit Kind") ]}
+</select></td></tr>
+EOF
     if ($use_winter_optimization) {
 	print <<EOF;
 <tr>
@@ -3022,6 +3036,7 @@ sub via_not_needed {
 sub make_netz {
     my $lite = shift;
     if (!$net) {
+	my $special_vehicle = defined $q->param('pref_specialvehicle') ? $q->param('pref_specialvehicle') : '';
 	my $str = get_streets();
 	$net = new StrassenNetz $str;
 	# XXX This change should also go into radlstadtplan.cgi!!!
@@ -3033,6 +3048,8 @@ sub make_netz {
 			  );
 	    $net->make_sperre('gesperrt',
 			      Type => [qw(wegfuehrung)],
+			      SpecialVehicle => $special_vehicle,
+			      # XXX What about $special_vehicle? Is it correct here, or not possible because of the static net?
 			     );
 	} else {
 	    # XXX überprüfen, ob sich der Cache lohnt...
@@ -3040,7 +3057,9 @@ sub make_netz {
 	    $net->make_net(UseCache => 1);
 	    if (!$lite) {
 		$net->make_sperre('gesperrt',
-				  Type => [qw(einbahn sperre wegfuehrung)]);
+				  Type => [qw(einbahn sperre wegfuehrung)],
+				  SpecialVehicle => $special_vehicle,
+				 );
 	    }
 	}
     }
@@ -3721,10 +3740,14 @@ sub display_route {
 	    if (!$comments_points) {
 		$comments_points = {};
 		eval {
+		    require Strassen::Cat;
+		    my $special_vehicle = $q->param('pref_specialvehicle') || '';
+		    # XXX This regexp feels hacky, duplication of code (trailer=... stuff), and hardcoded to support
+		    # only specialvehicle=trailer.
 		    my $gesperrt_cat_rx = "^(?:" . join("|", map { quotemeta $_ }
 							(StrassenNetz::BLOCKED_CARRY(),
 							 StrassenNetz::BLOCKED_NARROWPASSAGE(),
-							)) . ")(?::(\\d+))?";
+							)) . ")(?::(\\d+)(?::.*?:trailer=(\\d+))?)?";
 		    $gesperrt_cat_rx = qr{$gesperrt_cat_rx};
 		    my $s = Strassen->new("gesperrt");
 		    $s->init;
@@ -3733,14 +3756,19 @@ sub display_route {
 			last if !@{ $rec->[Strassen::COORDS] };
 			if ($rec->[Strassen::CAT] =~ $gesperrt_cat_rx) {
 			    my $name = $rec->[Strassen::NAME];
-			    if (defined $1) {
-				my $verlust = $1;
-				if ($verlust == 0) {
+			    my($penalty, $trailer_penalty) = ($1, $2);
+			    if (defined $penalty) {
+				if ($special_vehicle eq 'trailer' && defined $trailer_penalty) {
+				    $penalty = $trailer_penalty;
+				} elsif ($rec->[Strassen::CAT] =~ m{^0}) { # XXX BLOCKED_CARRY
+				    $penalty = Strassen::Cat::carry_penalty_for_special_vehicle($penalty, $special_vehicle);
+				}
+				if ($penalty == 0) {
 				    $name .= " (" . M("kein Zeitverlust") . ")";
-				} elsif ($verlust == 1) {
+				} elsif ($penalty == 1) {
 				    $name .= " (" . M("ca. eine Sekunde Zeitverlust") . ")";
 				} else {
-				    $name .= " (" . sprintf(M("ca. %s Sekunden Zeitverlust"), $verlust) . ")";
+				    $name .= " (" . sprintf(M("ca. %s Sekunden Zeitverlust"), $penalty) . ")";
 				}
 			    }
 			    $comments_points->{$rec->[Strassen::COORDS][0]}

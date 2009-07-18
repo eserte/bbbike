@@ -1439,7 +1439,7 @@ Drängelgitter, für Anhänger nicht passierbar	BNP:5:-206:trailer=no 2009,3362
 Drängelgitter, für Anhänger nicht passierbar	BNP:5:-211:trailer=no 1980,3409
 Schwingtor	BNP:5:-153 15054,10168
 Schwingtor	BNP:5:-153 15097,10255
-Schranke, sehr enge Durchfahrt, nicht anhängertauglich	BNP:5:-135 14658,7513
+Schranke, sehr enge Durchfahrt, nicht anhängertauglich	BNP:5:-135:trailer=no 14658,7513
 Schranke	BNP:3:51 8828,13434
 Drängelgitter an der Straßenbahntrasse	BNP:6:-154 14998,13623
 Drängelgitter	BNP:3:-73 25909,11844
@@ -1512,12 +1512,14 @@ Drängelgitter (vor der Straßenbahnhaltestelle)	BNP:5:-115 29092,4761
 Schranke (Berliner Str./Woltersdorf)	BNP:5:-108 32192,5915
 Schranke, schwer passierbar (Neue Steinmetzstr.)	BNP:10:-195 7625,9376
 Schranke (Neue Steinmetzstr.)	BNP:5:-190 7612,9446
+Barriere: Zillestr.	BNP:0:-83:trailer=30 3268,11834
 Drängelgitter (Radweg nach Bötzow)	BNP:5:-260 -5890,25875
 Schranke (Rütlistr.)	BNP:5:-152 12490,9056
 Schranke (Rütlistr.)	BNP:5:-152 12565,9200
 Schranke, meistens offen (Iranische Str.)	BNP:5:-263 7875,16509
 Schranke, meistens offen (Iranische Str.)	BNP:5:-256 7707,16543
 Barriere (Falkstr.)	BNP:10:-12 12178,7985
+Drängelgitter (Rochstr.)	BNP:0:52:trailer=5 10535,13006
 Barriere (Seydelstr.)	BNP:5:-100 10370,11593
 Drängelgitter (Gleditschstr. - Elßholzstr.)	BNP:10:-84 7158,9509
 Drängelgitter (Glühwürmchenweg, Verlängerung)	BNP:5:-70 -6162,16287

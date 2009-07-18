@@ -31,7 +31,7 @@ use vars qw(%filetype_to_cat %file_to_cat);
      # XXX Information duplicated in data/Makefile
      "gesperrt"	      => [qw(1 2 3 3nocross),
 			  sub { /^0:\d+(:-?\d+)?$/ },
-			  sub { /^BNP:\d+(:-?\d+(:trailer=no)?)?$/ },
+			  sub { /^BNP:\d+(:-?\d+(:trailer=(no|\d+))?)?$/ },
 			  sub { /^1s(:q\d)?$/ },
 			 ],
      "fragezeichen"   => [qw(? ?? F:? F:??)],
@@ -244,6 +244,20 @@ sub check_file {
     }
 
     $errors ? 0 : 1;
+}
+
+sub carry_penalty_for_special_vehicle {
+    my($penalty, $special_vehicle) = @_;
+    # XXX currently assume a constant factor for all carry
+    # situations. Maybe this should be overridable using
+    # addinfo?
+    if ($special_vehicle eq 'trailer') {
+	$penalty * 5;
+    } elsif ($special_vehicle eq 'childseat') {
+	$penalty * 3;
+    } else {
+	$penalty;
+    }
 }
 
 1;
