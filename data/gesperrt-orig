@@ -1328,12 +1328,12 @@ Schranke, kann auch mit Anhänger umfahren werden	BNP:1 49137,24422
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: next_check: 2009-12-01
+Französische Str.: Bauarbeiten	2:inwork 8901,12008 9076,12054
 #: next_check: 2011-03-01
 Rathausbrücke: gesperrt bis März 2011 (Neubau)	2:inwork 10362,12351 10422,12395
-#: last_checked: 2009-07-02: vvv
-Dora-Benjamin-Park - Uferweg: Zugang ist noch gesperrt	2:inwork 14621,10062 14599,10039
-Dora-Benjamin-Park: Straße ist noch gesperrt	2:inwork 14621,10062 14705,10149
-#: last_checked ^^^
+# XXX del: last_checked: 2009-07-02: Dora-Benjamin-Park - Uferweg: Zugang ist noch gesperrt	2:inwork 14621,10062 14599,10039
+# XXX del: Dora-Benjamin-Park: Straße ist noch gesperrt	2:inwork 14621,10062 14705,10149
 #: last_checked: 2009-05-09 vvv
 #: next_check: 2009-09-01 vvv
 Vicki-Baum-Str.: noch in Bau, gesperrt	2:inwork 15990,10185 15894,10251
@@ -1552,7 +1552,6 @@ Mittelstr.	1 9465,12460 9345,12443
 #: note: dabei auch prüfen, ob die Museumstr. -> Bodestr. umbenannt wurde (siehe strum2005.pdf)
 Museumstr.	2:inwork 9943,12642 9884,12712
 Bauhofstr.	1 9810,12712 9671,12644
-(Verlängerte Französische Str.): Tor kann verschlossen sein	2 8901,12008 9076,12054
 Hollmannstr.	2 9991,10637 9777,10719
 Nordsternstr.	1s 6268,8884 6292,8899
 tragen	0:60 -9377,-625

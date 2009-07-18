@@ -1535,6 +1535,43 @@ userdel	2::inwork 7160,11225 6851,11346
          'data' => 'userdel	2::inwork 64018,86876 63805,86748 63574,86547 63391,86474 63202,86383 62757,86072 61678,85560
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'http://www.berlin.de/ba-steglitz-zehlendorf/presse/archiv/20090715.1320.132295.html',
+         'until' => 1250287199,
+         'text' => 'Straßenbauarbeiten in der Schöneberger Straße von 20. Juli 2009 bis 14. August 2009',
+         'from' => 1247954400,
+         'id' => 1757,
+         'data' => 'userdel	q4::inwork; 5370,6486 5470,6423 5582,6360
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1250892000,
+         'text' => 'B 320 Guben - Lieberose zw. Pinnow und Staakow Deckenerneuerung Vollsperrung 21.07.2009-21.08.2009 ',
+         'from' => 1248040800,
+         'id' => 1758,
+         'data' => 'userdel	2::inwork 87008,-46244 80025,-45601 79205,-45332
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1258239600,
+         'text' => 'L 028 L 33, Wriezen - Neureetz OD Alt Märdewitz Grundhafter Straßenausbau Vollsperrung 20.07.2009-14.11.2009 ',
+         'from' => 1247954400,
+         'id' => 1759,
+         'data' => 'userdel	q4::inwork 61432,38883 61546,39041 61413,39860
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1259622000,
+         'text' => 'L 059 Hainschestraße Brücke über den Binnengraben in Bad Liebenwerda Brückenneubau Vollsperrung 23.07.2009-30.11.2009 ',
+         'from' => 1248213600,
+         'id' => 1760,
+         'data' => 'userdel	2::inwork 12383,-99327 12173,-99115
+',
+         'type' => 'gesperrt'
        }
      
 );
