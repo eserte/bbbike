@@ -20,7 +20,8 @@ use strict;
 use vars qw($VERSION $GPSBABEL $DEBUG);
 $VERSION = sprintf("%d.%02d", q$Revision: 1.15 $ =~ /(\d+)\.(\d+)/);
 
-use BBBikeUtil qw(is_in_path);
+use File::Basename qw(dirname);
+use BBBikeUtil qw(is_in_path bbbike_root);
 
 my %magics =
     ('pcx' => ['^H  SOFTWARE NAME & VERSION'],
@@ -144,6 +145,8 @@ sub gpsbabel_available {
     $new_gpsbabel = "gpsbabel" if !$new_gpsbabel && !$GPSBABEL;
     local $ENV{PATH} = $ENV{PATH};
     if ($^O eq 'MSWin32') {
+	# Maybe bundled together with BBBike:
+	$ENV{PATH} .= ";" . dirname(bbbike_root()) . "\\gpsbabel";
 	# There's no fixed installation location for gpsbabel under Windows:
 	$ENV{PATH} .= ";" . $self->gpsbabel_recommended_path;
     } else {

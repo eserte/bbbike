@@ -1635,6 +1635,8 @@ sub tk_interface {
 			    ]);
     }
 
+    sub transfer { } # NOP
+
 }
 
 {

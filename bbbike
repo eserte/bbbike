@@ -5119,7 +5119,7 @@ dazu verwendet wird",
 	  longhelp => M"Garmin-Symbol-ID. Falls leer gelassen, wird das Summit-Symbol verwendet",
 	  var => \$gps_waypointsymbol,
 	 ],
-	 ['gpsdevice','=s',($os eq 'win'   ? "COM1" :
+	 ['gpsdevice','=s',($os eq 'win'   ? "USB" :
 			    $os_bsd        ? '/dev/cuaa0' :
 			    $^O eq 'linux' ? '/dev/ttyUSB0' 
 				           : '/dev/ttyS0'
