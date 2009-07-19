@@ -19,7 +19,7 @@ use vars qw($top @popup_style
 	    $cannot_send_mail_via_Mail_Mailer
 	    $cannot_send_mail_reason $cannot_send_fax_reason);
 
-$top = $main::top;
+*top = \$main::top;
 *redisplay_top  = \&main::redisplay_top;
 *status_message = \&main::status_message;
 
@@ -122,16 +122,24 @@ sub enter_send_anything {
 		    $data = $data . "\n" . $comment_txt->get("1.0", "end");
 		}
 		send_mail($to, $subject, $data);
+		return 1; # usually cannot check send_mail success
+	    } else {
+		main::status_message("Bitte Empfänger und Subject angeben!", "err");
+		return 0;
 	    }
 	} else {
 	    if (defined $to && $to ne '') {
 		send_fax($to, undef, $data);
+		return 1; # XXX is it possible to check send_fax return value?
+	    } else {
+		main::status_message("Bitte Empfänger angeben!", "err");
+		return 0;
 	    }
 	}
     };
     my $ok_window    = sub {
-	&$apply_window;
-	&$close_window;
+	my $success = &$apply_window;
+	&$close_window if $success;
     };
     $row++;
     my $bf = $t->Frame->grid(-row => $row, -column => 0,
