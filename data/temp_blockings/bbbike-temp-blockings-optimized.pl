@@ -1258,15 +1258,7 @@ userdel	2::inwork 7160,11225 6851,11346
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1247954400,
-         'text' => 'L 014 Kyritz - Wittstock OD Herzsprung grundhafter Straßenausbau Vollsperrung 29.06.2009-18.07.2009 ',
-         'from' => 1246140000,
-         'id' => 1717,
-         'data' => 'userdel	q4::inwork -54338,71670 -54116,72465
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1279,15 +1271,7 @@ userdel	2::inwork 7160,11225 6851,11346
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1247954400,
-         'text' => 'L 144 Herzsprung - Blumenthal OD Herzsprung grundhafter Straßenausbau Vollsperrung 24.06.2009-18.07.2009 ',
-         'from' => 1245708000,
-         'id' => 1722,
-         'data' => 'userdel	q4::inwork -54665,72030 -54116,72465
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        {
@@ -1389,15 +1373,7 @@ userdel	2::inwork 7160,11225 6851,11346
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1247954400,
-         'text' => 'B 087 Luckau - Schlieben zw. Wüstermarke und Hohenbucko Fahrbahnsanierung Vollsperrung 10.07.2009-18.07.2009 ',
-         'from' => 1247090400,
-         'id' => 1741,
-         'data' => 'userdel	2::inwork 20927,-67514 22404,-66355 24219,-65378
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1248300000,
          'text' => 'K 6813 B122 - K6812 Zühlen zw. Zechow und Schwanow Straßenbauarbeiten Vollsperrung 20.07.2009-22.07.2009 ',
