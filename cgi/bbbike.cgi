@@ -4068,10 +4068,17 @@ sub display_route {
 		    $new_res->{$k} = $v;
 		}
 	    }
+
+	    my $xml_encoding = 'iso-8859-1';
+            if ($use_utf8) {
+	        binmode STDOUT, ":utf8";
+		$xml_encoding = 'UTF-8';
+            }
+
 	    print XML::Simple->new
 		(NoAttr => 1,
 		 RootName => "BBBikeRoute",
-		 XMLDecl => "<?xml version='1.0' encoding='iso-8859-1' standalone='yes'?>",
+		 XMLDecl => "<?xml version='1.0' encoding='$xml_encoding' standalone='yes'?>",
 		)->XMLout($new_res);
 	}
 	return;
