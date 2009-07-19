@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi.t,v 1.64 2009/02/25 23:46:23 eserte Exp $
+# $Id: cgi.t,v 1.65 2009/07/19 20:42:50 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2000,2003,2004,2006 Slaven Rezic. All rights reserved.
@@ -315,7 +315,7 @@ for my $cgiurl (@urls) {
 	ok($res->is_success, "Tragen test") or diag(Dumper($res));
 
 	$content = uncompr($res);
-	BBBikeTest::like_long_data($content, qr/Sekunden.*Zeitverlust/, "Zeitverlust in text", ".html");
+	BBBikeTest::like_long_data($content, qr/(Sekunden|Minuten).*Zeitverlust/, "Zeitverlust in text", ".html");
 
     XXX: 
 	# Test comments_points (category BNP, NARROWPASSAGE) (as part of Bemerkungen)
@@ -325,7 +325,7 @@ for my $cgiurl (@urls) {
 	ok($res->is_success, "Drängelgitter test") or diag(Dumper($res));
 
 	$content = uncompr($res);
-	BBBikeTest::like_long_data($content, qr/Dr.*ngelgitter.*Sekunden.*Zeitverlust/, "Zeitverlust in text", ".html");
+	BBBikeTest::like_long_data($content, qr/Dr.*ngelgitter.*(Sekunden|Minuten).*Zeitverlust/, "Zeitverlust in text", ".html");
 
 	# This is only correct with use_exact_streetchooser=true
 	$req = new HTTP::Request
