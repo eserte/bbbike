@@ -5307,8 +5307,10 @@ sub _set_public {
     $lazy_plot = 0;
     undef $proxy;
     # Not in old standard Tk:
-    $can_handle_image{png} = 0;
-    $can_handle_image{jpg} = 0;
+    if ($Tk::VERSION < 804) {
+	$can_handle_image{png} = 0;
+        $can_handle_image{jpg} = 0;
+    }
 }
 
 sub c_balloon_update {
@@ -17083,7 +17085,7 @@ sub show_route_strname {
 			  );
     push @bfb, $endb;
     push @bfb, $bf->Button
-      (-text => M"Sichern",
+      (-text => M"Sichern (Text)",
        -command => sub {
 	   my($file) = $bf->getSaveFile
 	       (($os eq 'win' ? (-defaultextension => '.TXT') : ()),
