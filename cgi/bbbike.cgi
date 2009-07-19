@@ -3862,26 +3862,46 @@ sub display_route {
 		    }
 		} @comment_objs;
 
-		for my $i ($strnames[$i]->[4][0] .. $strnames[$i]->[4][1]) {
-		    my $point = join ",", @{ $path[$i] };
-		    for my $sperre_hash ($sperre_tragen, $sperre_narrowpassage) {
-			if (exists $sperre_hash->{$point}) {
-			    my($name, $penalty) = @{ $sperre_hash->{$point} };
-			    if ($penalty == 0) {
-				$name .= " (" . M("kein Zeitverlust") . ")";
-			    } elsif ($penalty == 1) {
-				$name .= " (" . M("ca. eine Sekunde Zeitverlust") . ")";
-			    } else {
-				$name .= " (" . sprintf(M("ca. %s Sekunden Zeitverlust"), $penalty) . ")";
+		{
+		    my @penalty_comments_name;
+		    my %penalty_comments_penalty;
+		    my %penalty_comments_count;
+		    for my $i ($strnames[$i]->[4][0] .. $strnames[$i]->[4][1]) {
+			my $point = join ",", @{ $path[$i] };
+			for my $sperre_hash ($sperre_tragen, $sperre_narrowpassage) {
+			    if (exists $sperre_hash->{$point}) {
+				my($name, $penalty) = @{ $sperre_hash->{$point} };
+				push @penalty_comments_name, $name;
+				$penalty_comments_penalty{$name} += $penalty;
+				$penalty_comments_count{$name}++;
+				last; # anyway, no point should appear in tragen AND narrowpassage
 			    }
-			    # XXX not yet: problems with ... Sekunden Zeitverlust
-			    #if (!exists $seen_comments_in_this_etappe{$name}) {
-			    # XXX better solution for multiple point comments: use (2x), (3x) ...
-			    push @comments, $name;
-			    push @comments_html, $name;
-			    $penalty_lost += $penalty;
-			    last; # anyway, no point should appear in tragen AND narrowpassage
 			}
+		    }
+
+		    my %seen_penalty_name;
+		    for my $penalty_name (@penalty_comments_name) {
+			next if $seen_penalty_name{$penalty_name};
+			$seen_penalty_name{$penalty_name} = 1;
+
+			my $label = $penalty_name;
+			if ($penalty_comments_count{$penalty_name} >= 2) {
+			    $label .= ' (' . $penalty_comments_count{$penalty_name} . 'x)';
+			}
+
+			my $penalty = $penalty_comments_penalty{$penalty_name};
+			if ($penalty == 0) {
+			    $label .= " (" . M("kein Zeitverlust") . ")";
+			} elsif ($penalty == 1) {
+			    $label .= " (" . M("ca. eine Sekunde Zeitverlust") . ")";
+			} elsif ($penalty < 120) {
+			    $label .= " (" . sprintf(M("ca. %s Sekunden Zeitverlust"), $penalty) . ")";
+			} else {
+			    $label .= " (" . sprintf(M("ca. %s Minuten Zeitverlust"), $penalty/60) . ")";
+			}
+			push @comments, $label;
+			push @comments_html, $label;
+			$penalty_lost += $penalty;
 		    }
 		}
 		$etappe_comment = join("; ", @comments) if @comments;

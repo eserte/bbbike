@@ -29,7 +29,7 @@ use BBBikeTest qw(get_std_opts like_html unlike_html $cgidir);
 sub bbbike_cgi_search ($$);
 
 #plan 'no_plan';
-plan tests => 19;
+plan tests => 23;
 
 if (!GetOptions(get_std_opts("cgidir"),
 	       )) {
@@ -61,7 +61,7 @@ $ua->agent("BBBike-Test/1.0");
 	my $resp = bbbike_cgi_search +{ %route_endpoints, pref_specialvehicle => 'childseat' }, 'Special "vehicle" childseat';
 	my $content = $resp->decoded_content;
 	like_html($content, qr{Fußgängerbrücke}, 'Still found Fussgaengerbruecke');
-	like_html($content, qr{90 Sekunden Zeitverlust}, 'Found lost time');
+	like_html($content, qr{90 Sekunden Zeitverlust}, 'Found lost time, in seconds');
 	like_html($content, qr{0:03h.*?bei 20 km/h}, 'Fahrzeit');
     }
 
@@ -71,6 +71,17 @@ $ua->agent("BBBike-Test/1.0");
 	like_html($content, qr{Brücken Rummelsburg}, 'Found Umfahrung');
 	unlike_html($content, qr{Zeitverlust}, 'No lost time here');
     }
+}
+
+{
+    my $resp = bbbike_cgi_search +{ startc => '14787,10972',
+				    viac   => '14764,10877',
+				    zielc  => '14787,10972',
+				    pref_specialvehicle => 'childseat' }, 'Special "vehicle" childseat';
+    my $content = $resp->decoded_content;
+    like_html($content, qr{Fußgängerbrücke}, 'Still found Fussgaengerbruecke');
+    like_html($content, qr{\(2x\).*3 Minuten Zeitverlust}, 'Found lost time, in minutes, and "2x"');
+    like_html($content, qr{0:03h.*?bei 20 km/h}, 'Fahrzeit');
 }
 
 {
