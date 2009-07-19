@@ -24,12 +24,12 @@ use lib ($FindBin::RealBin, "$FindBin::RealBin/..");
 use CGI qw();
 use Getopt::Long;
 
-use BBBikeTest qw(get_std_opts like_html unlike_html $cgidir);
+use BBBikeTest qw(get_std_opts like_html unlike_html $cgidir xmllint_string);
 
 sub bbbike_cgi_search ($$);
 
 #plan 'no_plan';
-plan tests => 23;
+plan tests => 25;
 
 if (!GetOptions(get_std_opts("cgidir"),
 	       )) {
@@ -85,14 +85,22 @@ $ua->agent("BBBike-Test/1.0");
 }
 
 {
-    my $resp = bbbike_cgi_search +{startname=>'Dudenstr.',
-				   startc=>'9229,8785',
-				   zielname=>'Methfesselstr.',
-				   zielc=>'8982,8781',
-				  }, 'Search route with bbbike coords';
-    my $content = $resp->decoded_content;
-    like_html($content, qr{Route von.*Dudenstr.*Methfesselstr});
-    like_html($content, qr{L.*nge.*0\.25\s+km});
+    my %route_params = (startname=>'Dudenstr.',
+			startc=>'9229,8785',
+			zielname=>'Methfesselstr.',
+			zielc=>'8982,8781',
+			);
+    {
+	my $resp = bbbike_cgi_search +{%route_params}, 'Search route with bbbike coords';
+	my $content = $resp->decoded_content;
+	like_html($content, qr{Route von.*Dudenstr.*Methfesselstr});
+	like_html($content, qr{L.*nge.*0\.25\s+km});
+    }
+
+    {
+	my $resp = bbbike_cgi_search +{%route_params, output_as => 'xml'}, 'XML output';
+	xmllint_string($resp->decoded_content, 'Well-formedness of XML output');
+    }
 }
 
 {
