@@ -674,7 +674,9 @@ userdel	2::temp 9915,12417 9926,12368
          'text' => 'Unterführung unter Adlergestell und Bahn wegen Brückenerneuerung gesperrt',
          'from' => undef,
          'id' => 1495,
-         'data' => 'userdel	2::inwork 20810,2398 20939,2413
+         'data' => '#: by: tobias wirnsberger
+#: last_checked: 2009-05-31 (http://www.baustellen-doku.info/projekte/goerlitzer-bahn_berlin_baumschulenweg_schoeneweide_adlershof_s-bahn/20090531/baustellen-bild-44.html)
+userdel	2::inwork 20810,2398 20939,2413
 ',
          'type' => 'gesperrt'
        },
@@ -1002,8 +1004,8 @@ userdel	q4::inwork 10422,12395 10476,12432
          'type' => 'gesperrt'
        },
        {
-         'until' => 1248300000,
-         'text' => 'B 102 Wildberg - Neustadt-Dosse Kreuzungsber. B 5 bei Bückwitz Kreiselneubau Vollsperrung 02.06.2009-22.07.2009 ',
+         'until' => 1251756000,
+         'text' => 'B 102 Wildberg - Neustadt-Dosse Kreuzungsber. B 5 bei Bückwitz Kreiselneubau Vollsperrung 02.06.2009-31.08.2009 ',
          'from' => 1243807200,
          'id' => 1653,
          'data' => 'userdel	2::inwork -53139,50022 -52854,50094
@@ -1063,15 +1065,7 @@ userdel	q4::inwork 8389,11378 8374,11479
        undef,
        undef,
        undef,
-       {
-         'until' => 1248127200,
-         'text' => 'L 015 Menz - Rheinsberg zw. Menz u. Rheinsberg Straßenbau Vollsperrung 09.06.2009-20.07.2009 ',
-         'from' => 1244412000,
-         'id' => 1674,
-         'data' => 'userdel	2::inwork -24815,76635 -23305,77059 -22937,77020 -22504,76981 -21965,77030 -21728,77161 -21621,77313 -20227,77714 -19875,77881 -19494,78080 -19300,78146 -18544,78020 -17592,77812
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1249682400,
          'text' => 'L 141 B5 - Neustadt OD Dreetz Straßenbauarbeiten Vollsperrung 27.07.2009-07.08.2009 ',
@@ -1531,15 +1525,7 @@ userdel	2::inwork 7160,11225 6851,11346
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1258239600,
-         'text' => 'L 028 L 33, Wriezen - Neureetz OD Alt Märdewitz Grundhafter Straßenausbau Vollsperrung 20.07.2009-14.11.2009 ',
-         'from' => 1247954400,
-         'id' => 1759,
-         'data' => 'userdel	q4::inwork 61432,38883 61546,39041 61413,39860
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1259622000,
          'text' => 'L 059 Hainschestraße Brücke über den Binnengraben in Bad Liebenwerda Brückenneubau Vollsperrung 23.07.2009-30.11.2009 ',

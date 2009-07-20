@@ -179,6 +179,8 @@ Fritz-von-der-Lancken-Str - Höhenweg: Straße in Bau	?::inwork -12766,1932 -12636
 # Das heißt diese Strecken werden nicht bei einer erweiterten Suche aufgenommen
 # und dem CGI-Benutzer auch nicht präsentiert.
 # 
+#: by: anonymous:
+Straße 41 (Müggelheim): fester Sandweg, Q2	? 30265,2382 30320,2472 30317,2536 30338,2552 30444,2738 30469,2742 30504,2798 30593,2748 30541,2664
 #: by: Carsten Schulz:
 Wilmersdorf, am Hohen Bogen: Irgendwo hier gibt es ein neues Drängelgitter und erhöhten Fußgängerverkehr, wo genau?	? 3665,8131 3676,8394 3618,8447 3713,8578 3489,8839 3388,8958
 #: XXX_indoor:
@@ -422,8 +424,6 @@ Promenadenweg (Kleinmachnow): Asphalt, Q0, q4(???), Frage: Gehwegverbindung zum 
 Heimgartenstraße: Asphalt, Q0	? 23537,4238 23657,4255 23880,4280 24107,4309
 #: by: anonymous
 Männertreuweg: guter Asphalt, Q0 (wobei es im Luftbild eher wie Beton aussieht), eng, parkende Autos (q1); existiert eine Verbindung zum Weg zum Teltowkanal?	? 16631,3292 16599,3316 16473,3417 16340,3517
-#: by: Ludwig Ortmann:
-Sonnenhag/Kleinmachnow: mäßiger Beton,Q1	? -833,1406 -789,1220 -758,1098
 #: by: Wilde (thwila) 
 Schwarzkoppenstr.: Beton, Q0	? 19843,357 19937,246
 #: by: anonymous:
@@ -770,8 +770,9 @@ Zichow-Lindenwegsiedlung: Qualität?	? 54500,87934 52642,87955
 Prötzeler Ring: Qualität laut ADFC-Karte gut	? 21951,15918 21980,15857 22055,15698 22092,15610
 Heinestr./Ahrensfelde: laut ADFC-Karte nur mäßig für Radfahrer geeignet	? 20987,19604 21010,19692 21303,19918
 Cottbusser Platz: laut ADFC-Karte gute Qualität	? 23297,14772 23288,14719 23298,14685 23379,14514
-#: note: Die Beilsteiner ist eine Einbahnstraße in diesem Abschnitt: 18852,13269 18832,13099 18800,12838 18749,12413 (Merler - Marzahner, offen Richtung Marzahner)
+#: note: Die Beilsteiner ist eine Einbahnstraße in diesem Abschnitt (laut Google, aber nicht laut osm): 18852,13269 18832,13099 18800,12838 18749,12413 (Merler - Marzahner, offen Richtung Marzahner)
 #: XXX: ein anonymer Eintrag meint: Asphalt, Q0, enge Straße, q0, aber leider keine Hinweise zur Einbahnstraße
+#: XXX: ein weiterer anonymer Eintrag meint: Beton Q1, aber auch keine Hinweise zur Einbahnstraße
 Beilsteiner Str.: Qualität (laut ADFC-Karte im südlichen Abschnitt gut geeignet; zumindest in Höhe Allee der Kosmonauten asphaltiert)	? 18749,12413 18800,12838 18832,13099 18852,13269 18875,13473 18871,13796 18859,14048 18998,14089 19025,14037
 Bleicheroder Str. - Pasewalker Str.: existiert eine Verbindung für Radfahrer entlang der Tram-Trasse?	? 11805,19071 11937,19175
 #: XXX: ein anonymer Eintrag: eng schlechter straßenbelag, Q2
@@ -1883,7 +1884,7 @@ Deutschtaler Str.: Qualität?	? 17344,1060 17492,843 17640,626 17811,374 17854,31
 Großziethen: wie weit in Richtung Süden gehen die Radwege?	? 13090,205 13225,-681 13309,-1268
 #: XXX etwas widersprüchlich: Snoopsoul schreibt "schlechtes Kopfsteinpflaster", die ADFC-Karte vergibt für den nördlichen Abschnitt "gut befahrbar", außerdem werden Teilstücke vom Bus befahren
 #: note: Harry Marschke meint: "Guter Zustand, weitgehend neu asphaltiert. Tempo-30-Zone, teilweise keine ausgebauten Bürgersteige (Einfamilienhaus-Bebauung mit Siedlungscharakter). Lediglich der zur B1 gelegene Teil ist in etwas schlechterem Zustand (teilweise DDR-Beton, "Schleichverkehr"). "
-Pilgramer Str.: Asphalt/Beton. Welcher Abschnitt ist betoniert, welcher asphaltiert?	? 25144,11215 25150,10555 25148,10483 25135,10449 25112,10415 25107,10407 25048,10317 24984,10204 24923,10097 24854,9975 24793,9860 24713,9715 24617,9545 24566,9456 24519,9349 24471,9241 24412,9103 24358,8976 24294,8827 24239,8701 24217,8521 24195,8348 24167,8196 24137,8038 24112,7907 24087,7776 24070,7685
+Pilgramer Str.: Asphalt/Beton. Welcher Abschnitt ist betoniert, welcher asphaltiert?	? 25144,11215 25150,10555 25148,10483 25135,10449 25112,10415 25048,10317 24984,10204 24923,10097 24854,9975 24793,9860 24713,9715 24617,9545 24566,9456 24519,9349 24471,9241 24412,9103 24358,8976 24294,8827 24239,8701 24217,8521 24195,8348 24167,8196 24137,8038 24112,7907 24087,7776 24070,7685
 Coloniallee: Qualität? Existiert hier ein Radweg?	? 20051,-344 20052,-239 20046,-160 20036,-122 20010,-71 19972,-19
 Weidenweg: Qualität?	? 19780,-407 19794,-409 19879,-378 19941,-353 19974,-348 20051,-344 20327,-305 20476,-279
 Weidenweg: Qualität?	? 19775,-437 19761,-438 19704,-490
@@ -1904,7 +1905,6 @@ Straße zwischen Wissenschaftspark Golm und Universität Potsdam: wo genau verläuf
 #: by: http://www.berlin.de/ba-spandau/presse/archiv/20080325.1450.96925.html
 Elkartstr.: führt der Radweg Berlin-Kopenhagen hier entlang?	? -2158,17613 -2119,17647 -2103,17670 -2102,17714
 Straße 265: Qualität? Für Autos gesperrt?	? -4751,9033 -4771,9033 -4862,9079 -5638,9465 -6306,9794 -6324,9778
-Ascherberger Weg: Qualität?	? 1411,18447 1448,18436 1501,18429 1510,18429 1557,18421 1603,18418 1612,18417 1686,18419 1758,18421 1831,18424 1903,18429 1975,18431 2162,18452 2244,18465
 Kreuztaler Weg: Qualität?	? 2220,18554 2416,18598
 Weidenauer Weg: Qualität?	? 2244,18465 2426,18544
 Hilchenbacher Weg: Qualität? Ist der südliche Abschnitt für Autos gesperrt?	? 2413,18655 2416,18598 2419,18572 2426,18544 2444,18487
@@ -1913,7 +1913,6 @@ Oelder Weg: Qualität?	? 1967,18743 1965,18686 1965,18651 1974,18616
 Finnentroper Weg: Qualität?	? 2117,18632 2162,18452 2199,18304 2210,18262
 Betzdorfer Pfad: Qualität?	? 2199,18304 2278,18335
 Plettenberger Pfad: Qualität?	? 1869,18608 1903,18429 1924,18311 1936,18209
-Herscheider Weg: Qualität?	? 1743,18604 1758,18421 1771,18303 1760,18200
 Borkener Weg: Qualität?	? 1375,18209 1390,18256 1448,18436 1507,18629
 Breckerfelder Pfad: Qualität?	? 1457,18237 1501,18429
 Letmather Weg: Qualität?	? 1524,18221 1546,18317 1557,18421
@@ -1988,6 +1987,8 @@ Mündeseerundweg: Qualität? Wie geht's weiter Richtung Südosten?	? 50871,70761 50
 Deitmerstr.: Können Radfahrer den Mittelstreifen an der Schloßstr. überqueren?	? 5048,5904
 Hermesweg: Qualität?	? 6116,4707 6072,4606
 Gurlittstr.: Qualität?	? 7213,5062 6949,5096
+#: XXX: anonymous meint: Pfad vom Munsterdamm zum Oehlertring, ca. 5 Stufen -> aber wo genau?
+#: XXX: osm meint cycleway, foot=yes, keine Überquerungsmöglichkeit
 Kottesteig: Qualität? Für Autofahrer gesperrt? Kann der Munsterdamm in Höhe Kottesteig überquert werden?	? 6868,5262 6806,5230 6767,5233
 Doldenweg: Qualität? Für Autofahrer gesperrt?	? 7424,4821 7487,4802
 Heinrich-Schlusnus-Str.: Qualität?	? 15026,6391 15056,6431 15054,6526 15054,6589 15070,6621 15146,6690
@@ -2309,7 +2310,6 @@ Fintelmannstr.: Qualität?	? -7505,454 -7554,431 -7630,409 -7712,407
 Winninger Weg: Qualität?	? 19293,13043 19312,13211
 Hatzenporter Weg: Qualität?	? 19217,13054 19186,12795 19175,12690 19165,12594 19138,12381
 Kröver Str.: Qualität?	? 19186,12795 19046,12814 18999,12824 18956,12826 18896,12831 18800,12838
-Gülser Weg: Qualität?	? 18896,12831 18923,13089
 Thurandtweg: Qualität?	? 18968,12589 18969,12624 19017,12708 19035,12748 19046,12814
 Thurandtweg: Qualität?	? 19017,12708 19060,12700 19175,12690
 Reiler Str.: Qualität?	? 18766,12442 18927,12384 19028,12383 19095,12383 19138,12381 19253,12376
@@ -2433,6 +2433,7 @@ Hauptweg (Wartenberg): Qualität?	? 18737,18380 18761,18480 18923,18941 18997,191
 Lindenweg (Wartenberg): Qualität?	? 18983,18906 19061,19145 19129,19360 19186,19541
 Akazienweg (Wartenberg): Qualität?	? 19043,18876 19125,19130 19190,19340 19248,19525
 Genossenschaftsweg: Qualität?	? 17900,18972 17956,19139
+#: XXX unsicherer Eintrag von Jule (henriejetta ...): fester Sandweg Q2 (aber im Luftbild sind es geteert aus), Fußgängerzone q4, beides "part" ohne weitere Angaben
 Fennpfuhlweg: Qualität?	? 18061,19097 17956,19139 17761,19221 17697,18989
 #: XXX Stimmt der Straßenname? Googlemaps meint teilweise "Straße 190":
 Straße 1 (Wartenberg): Qualität?	? 18771,19892 18719,19911 18328,20043
@@ -3364,8 +3365,6 @@ Prierosser Str.: Qualität im nördlichen Abschnitt?	? 16570,2113 16568,2088 16651
 Sollmannweg: Qualität?	? 15010,2032 14993,2025 14865,1952 14846,1940 14627,1902 14549,1922
 (Matthäusweg - Friedrich-Kayßler-Weg): Qualität?	? 14996,1564 14962,1667 14982,1714 14985,1801 14986,1820
 (Matthäusweg - Friedrich-Kayßler-Weg): Qualität?	? 14993,2025 14994,2069
-Preysingstr.: Wie ist die Vorfahrtsregelung an der Kreuzung Preysingstr./Haynauer Str.?	? 8017,2330 7923,2319 7721,2137
-Haynauer Str.: Wie ist die Vorfahrtsregelung an der Kreuzung Preysingstr./Haynauer Str.?	? 7923,2319 7899,2391
 Am Elsenbruch: Qualität?	? 5524,4066 5573,3960 5593,3935
 Schürstr.: Qualität?	? -2980,13874 -2979,13908 -2944,13992 -2925,14098
 Plantage: Qualität? Ist die Straße eine Einbahnstraße? Wenn ja, gilt die Einbahnstraßenregelung nur für Autofahrer oder auch für Radfahrer?	? -3247,13864 -3320,13802 -3308,13778 -3229,13832
@@ -3573,7 +3572,6 @@ Wilhelmstr. (Eberswalde): Qualität? Gibt es hier einen Radweg?	? 37128,48358 371
 Mühlenweg: Qualität?	? 36640,39793 36556,39917 36030,39721 35641,39643
 #: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20090706.1100.131656.html
 Lindauer Allee/Aroser Allee - Luisenweg: Fahrbahnbeschaffenheit der Radfahrverbindung?	? 6720,18616 6740,18644 6770,18670 6775,18726 6801,18761
-Markscheiderstr.: Qualität?	? 6960,19047 7105,19677
 #: XXX laut osm: ja
 Markscheiderstr. - An der Nordbahn: Existiert hier eine direkte Verbindung für Radfahrer? Qualität?	? 7105,19677 7125,19717
 Fischerstr. - Lückstr.: Qualität des Weges durch den Blockpark? Für Radfahrer befahrbar? Nachts beleuchtet?	? 16246,10641 16303,10760
@@ -3614,3 +3612,13 @@ Anton-Webern-Weg: Qualität?	? 8131,20287 8282,20329
 Strawinskystr: Qualität?	? 8069,20408 8242,20434 8359,20449
 Seegerstr.: Qualität?	? 7640,20304 7711,20463
 Andanteweg: Qualität?	? 8293,20303 8400,20339
+Wickenweg: Qualität?	? 24056,9798 24043,9769 24019,9722 24002,9691 23932,9564 23887,9463 23838,9351 23798,9263 23755,9150 23704,9019 23643,8868
+Machnower Busch (Kleinmachnow): Qualität?	? -129,989 -279,1139 -394,1186 -493,1220 -605,1240 -789,1220 -877,1209
+Wolfswerder (Kleinmachnow): Qualität?	? -607,1425 -833,1410 -905,1395 -963,1370 -1116,1370 -1312,1380
+#: XXX anonymous meint Q2, aber ohne weitere Angaben, und q4 weil Privatstraße
+Straße 574 (Rudow): Qualität?	? 18023,833 18203,586 18306,655 18123,906
+Exiner Str.: Qualität?	? 17415,494 17274,705 17134,908
+Rahnsdorfer Str. (Mahlsdorf): Qualität? Als Hauptstraße oder als Nebenstraße zu klassifizieren?	? 24651,10575 24759,10507 24804,10477 25048,10317 25196,10214 25307,10142 25496,10037 25700,9986 25781,9966
+Rahnsdorfer Str.: Qualität? In welchem Ortsteil befindet sich dieser Abschnitt?	? 25781,9966 26321,9868
+Karlstr. (Mahlsdorf): Qualität?	? 24826,10597 24916,10539 25029,10462 25112,10415 25257,10326
+Iglauer Str.: Qualität?	? 25148,10483 25317,10457 25351,10452

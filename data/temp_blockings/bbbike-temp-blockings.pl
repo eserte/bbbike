@@ -8467,7 +8467,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_004688',
        data  => <<EOF,
-userdel	1::inwork 23891,8780 23946,8909 24001,9037 24051,9156 24149,9387 24227,9574 24337,9835
+userdel	1::inwork 23891,8780 23946,8909 24001,9037 24051,9156 24085,9237 24143,9371 24190,9484 24205,9520 24227,9574 24250,9629 24291,9727 24299,9746 24337,9835
 EOF
      },
      { from  => 1182636000, # 2007-06-24 00:00
@@ -12671,10 +12671,11 @@ EOF
      },
      { from  => undef, # 
        until => Time::Local::timelocal(reverse(2009-1900,12-1,31,23,59,59)), # XXX schätzungsweise ein Jahr gesperrt
-       # gemeldet von tobias wirnsberger
        text  => 'Unterführung unter Adlergestell und Bahn wegen Brückenerneuerung gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
+#: by: tobias wirnsberger
+#: last_checked: 2009-05-31 (http://www.baustellen-doku.info/projekte/goerlitzer-bahn_berlin_baumschulenweg_schoeneweide_adlershof_s-bahn/20090531/baustellen-bild-44.html)
 userdel	2::inwork 20810,2398 20939,2413
 EOF
      },
@@ -14008,8 +14009,8 @@ userdel	2::inwork 48662,51337 49039,51453
 EOF
      },
      { from  => 1243807200, # 2009-06-01 00:00
-       until => 1248300000, # 2009-07-23 00:00
-       text  => 'B 102 Wildberg - Neustadt-Dosse Kreuzungsber. B 5 bei Bückwitz Kreiselneubau Vollsperrung 02.06.2009-22.07.2009 ',
+       until => 1251756000, # 2009-09-01 00:00
+       text  => 'B 102 Wildberg - Neustadt-Dosse Kreuzungsber. B 5 bei Bückwitz Kreiselneubau Vollsperrung 02.06.2009-31.08.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork -53139,50022 -52854,50094
@@ -14187,7 +14188,7 @@ userdel	q4::inwork -15379,77129 -17592,77812
 EOF
      },
      { from  => 1244412000, # 2009-06-08 00:00
-       until => 1248127200, # 2009-07-21 00:00
+       until => 1248071647, # 2009-07-21 00:00 1248127200
        text  => 'L 015 Menz - Rheinsberg zw. Menz u. Rheinsberg Straßenbau Vollsperrung 09.06.2009-20.07.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -14437,7 +14438,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_013029',
        data  => <<EOF,
-userdel	q4::inwork; 11357,18598 11204,18545 11025,18531
+userdel	q4::inwork; 11357,18598 11204,18545 11168,18542 11025,18531
 EOF
      },
      { from  => 1244930400, # 2009-06-14 00:00
@@ -14899,7 +14900,7 @@ userdel	2::inwork 87008,-46244 80025,-45601 79205,-45332
 EOF
      },
      { from  => 1247954400, # 2009-07-19 00:00
-       until => 1258239600, # 2009-11-15 00:00
+       until => 1248071489, # 2009-11-15 00:00 1258239600
        text  => 'L 028 L 33, Wriezen - Neureetz OD Alt Märdewitz Grundhafter Straßenausbau Vollsperrung 20.07.2009-14.11.2009 ',
        type  => 'handicap',
        data  => <<EOF,
