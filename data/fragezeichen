@@ -108,7 +108,7 @@ B2 - entlang der polnischen Grenze: Qualität?	? 76848,101276 76087,101337 75912,
 zur B158: Qualität?	? 56450,48250 56587,48550 57328,48981
 Neue Trasse der B167: für Radfahrer benutzbar? Alte Trasse nicht mehr Bundesstraße, sondern K6436?	? 58206,37275 58206,37675 58225,37959 58087,38231 57734,38743 57612,39937 57403,40340 56862,40818 56659,41179 56381,41675 56087,41956 55506,42350 54895,43268 54515,43803 53987,44157 53425,44300 53187,44262 52341,43207
 Wendisch-Rietz - Radlow: Qualität?	? 54370,-20977 55509,-18644
-Lianenweg: Qualität? Durchfahrt möglich?	? 19686,1542 19955,1509
+Lianenweg: Qualität? Durchfahrt möglich?	? 19679,1571 19955,1509
 Freiheitstr., Wildau: Qualität?	? 25187,-8934 25916,-8709 26563,-8522 26749,-8475
 Str. der Freiheit, Zeuthen: Qualität?	? 25281,-6921 25981,-7196
 Westkorso, Zeuthen: Qualität?	? 25981,-7196 26244,-7147 26609,-7136
@@ -134,7 +134,7 @@ Altkünkendorf - Wolletz: laut "Regio-Cart" gut geeignet	? 41260,67587 41437,6801
 Wolletz Richtung Norden: laut "Regio-Cart" gut geeignet (zumindest in Wolletz Verbundsteinpflaster)	? 43101,69564 43250,71500 42941,72180
 Dargen - Katschow: Fahrradroute laut Kompass-Karte	? 51034,165181 50994,165390 50715,166093 50464,166650 50472,166804 50661,166901 50993,167239 51565,167859
 Stücken - Tremsdorf: Qualität?	? -10978,-17764 -10562,-16912 -10175,-16537 -9675,-16375 -9200,-15550 -9045,-15165 -8680,-14704
-Oberjägerweg: laut "Berliner Umland" gut geeigneter Radweg, im Mittelteil ohne Kfz-Verkehr, laut anderen Quellen schlechte Qualität	? -5209,19643 -5024,19831 -4844,20024 -4559,20331 -4472,20411 -4053,20594 -3936,21061 -3794,21804
+Oberjägerweg außerhalb Spandaus: Qualität? Für Kfz-Verkehr gesperrt? 	? -4472,20411 -4053,20594 -3936,21061 -3794,21804
 Drosselstr.: Qualität zwischen Privatstr. und Privatstr.?	? -8731,7403 -8503,7434 -8540,7569 -8554,7584
 Mauerweg Groß-Glienicke - Sacrower Landstr.: laut "Berliner Umland" witterungsabhängige Strecke	? -9395,5025 -9560,4615
 Am Park: Qualität zwischen Mauerweg und B2?	? -9413,7175 -9118,7286
@@ -273,7 +273,6 @@ Prötzeler Ring: Qualität laut ADFC-Karte gut	? 21951,15918 21980,15857 22055,156
 Heinestr./Ahrensfelde: laut ADFC-Karte nur mäßig für Radfahrer geeignet	? 20987,19604 21010,19692 21303,19918
 Cottbusser Platz: laut ADFC-Karte gute Qualität	? 23297,14772 23288,14719 23298,14685 23379,14514
 Beilsteiner Str.: Qualität (laut ADFC-Karte im südlichen Abschnitt gut geeignet; zumindest in Höhe Allee der Kosmonauten asphaltiert)	? 18749,12413 18800,12838 18832,13099 18852,13269 18875,13473 18871,13796 18859,14048 18998,14089 19025,14037
-Bleicheroder Str. - Pasewalker Str.: existiert eine Verbindung für Radfahrer entlang der Tram-Trasse?	? 11805,19071 11937,19175
 Schillingweg: laut ADFC-Karte mäßig bis gut geeignet	? 11514,24284 11101,23708 10855,23403 10717,23258 10700,23251 10396,23128 9890,22932
 Wriezener/Osloer Str.: ist das Abbiegen wegen der Straßenbahn möglich?	? 9210,16638
 Laut <cp6net$f0g$1@zeppelin.rz.uni-potsdam.de> ist die Eisenbahnbrücke für Fußgänger begehbar, laut <cn2fr0taoncnlu6s84inbhgpo8lq0u0bh2@4ax.com> sogar offizieller Bestandteil des Elbe-Radwegs	? -92087,-49506 -91387,-49350
@@ -859,8 +858,6 @@ Feldstedter Weg: Qualität?	? 10539,662 10423,636 10332,607 10242,572 10099,524
 Humboldtstr. (Lichtenrade): Qualität?	? 10469,-52 10353,-94 10214,-142
 Rudolf-Pechel-Str.: Qualität?	? 9991,-413 9913,-432 9920,-513 10018,-494
 Fontanestr. (Lichtenrade): Qualität?	? 10508,-519 10450,-528 10374,-552 10280,-578 10182,-601 10064,-628
-Simpsonweg: Qualität?	? 10082,-671 9937,-693 9913,-705 9899,-732 9907,-812 9884,-860
-Werfelstr.: Qualität?	? 10126,-834 9907,-812
 Ekensunder Weg: Qualität?	? 10481,-995 10365,-996 10260,-993 10143,-987 10082,-986
 Dossestr. (Lichtenrade): Qualität?	? 10082,-986 10030,-1066 9925,-1106
 Rhinstr. (Lichtenrade): Qualität?	? 10030,-1066 10134,-1138 10147,-1273 10155,-1320 10181,-1348 10248,-1346
@@ -901,7 +898,6 @@ Gerdsmeyerweg - Marienhöher Weg: Durchfahrt für Radfahrer möglich? Qualität?	? 8
 Haeftenzeile: Qualität?	? 2134,14440 2142,14573
 Popitzweg - Halemweg: ist der Weg über der U-Bahn auch für Radfahrer befahrbar? Qualität? Geht es über den Halemweg noch weiter?	? 1881,14425 2126,14392 2254,14387 2380,14392
 Haeftenzeile - Weg über der U-Bahn: Durchfahrt für Radfahrer möglich? Qualität?	? 2134,14440 2126,14392
-Mäckeritzstr.: Qualität?	? 1361,14431 1320,14440 1262,14510 1244,14558 1235,14609
 Schuckertplatz: Qualität?	? 1343,14972 1351,15057
 Jungfernsteig: Qualität? Einbahnstraße auch für Radfahrer gültig?	? 862,14463 938,14457
 Kapellensteig: Qualität? Einbahnstraße auch für Radfahrer gültig?	? 937,14391 938,14457 942,14517
@@ -1617,7 +1613,6 @@ Hauptweg (Wartenberg): Qualität?	? 18737,18380 18761,18480 18923,18941 18997,191
 Lindenweg (Wartenberg): Qualität?	? 18983,18906 19061,19145 19129,19360 19186,19541
 Akazienweg (Wartenberg): Qualität?	? 19043,18876 19125,19130 19190,19340 19248,19525
 Genossenschaftsweg: Qualität?	? 17900,18972 17956,19139
-Fennpfuhlweg: Qualität?	? 18061,19097 17956,19139 17761,19221 17697,18989
 Straße 1 (Wartenberg): Qualität?	? 18771,19892 18719,19911 18328,20043
 Straße 4 (Wartenberg): Qualität?	? 18643,19692 18690,19830 18719,19911 18909,20465
 Straße 5 (Wartenberg): Qualität?	? 18728,19666 18821,19936 18995,20436 19095,20722
@@ -2454,7 +2449,7 @@ Haydnstr. - Märkische Allee: Zugang für Radfahrer möglich? Qualität? Kann man au
 Uferweg an der Kongreßhalle: ist der Uferweg an der Kongreßhalle noch in Bau oder bereits fertig gestellt?	?::inwork 7782,12623 7745,12603 7710,12585 7670,12576
 Westhafenstr.: Ist die Westhafenstr. durchgängig bis zur Beusselstr. befahrbar? Qualität?	? 6083,14564 6025,14539 6015,14516 5997,14444 5920,14422 5217,14255
 Erwin-Bock-Str.: Qualität?	? 23745,3806 23749,3868 23749,3883 23753,4218
-Dorothea-Viehmann-Str.: Qualität der Straße südlich "Zum alten Windmühlenberg"?	? 19206,1809 19164,1708 19132,1628 19061,1457
+Dorothea-Viehmann-Str.: Qualität der Straße südlich "Zum alten Windmühlenberg"?	? 19206,1809 19164,1708 19132,1628 19101,1553 19061,1457
 Prierosser Str.: Qualität im nördlichen Abschnitt?	? 16570,2113 16568,2088 16651,1962
 Sollmannweg: Qualität?	? 15010,2032 14993,2025 14865,1952 14846,1940 14627,1902 14549,1922
 (Matthäusweg - Friedrich-Kayßler-Weg): Qualität?	? 14996,1564 14962,1667 14982,1714 14985,1801 14986,1820
@@ -2667,7 +2662,6 @@ Trebelberg - Götz: Qualität des Radwegs?	? -30785,4243 -31154,4222 -32084,4555 -
 Zützen - ehem. B2: Qualität?	? 66091,69964 65762,70023 65345,70168 65207,70639
 Oder-Neiße-Radweg - Stützkow: Qualität?	? 61783,66148 61731,66250 61584,66212
 Stützkow - Alt-Gatow: Qualität?	? 61584,66212 61540,66359 61445,66368 61289,66610 60834,66986 60458,66859 60100,66606 60068,66610
-Schlüterstr.: welcher Abschnitt der Schlüterstr. hat Radfahrstreifen?	? 4579,11579 4567,11350 4556,11206 4540,11041 4525,10850 4513,10702 4503,10497 4485,10307
 Max-Liebermann-Allee: Qualität? Über welche Straße erfolgt der Zugang?	? -6411,1951 -6348,2067 -6283,2180
 Friedrich-Wilhelm-Str. (Reinickendorf): Qualität?	? 7615,18204 7418,18051
 Straße 245 (Weißensee): Qualität?	? 13590,17368 13271,17589
@@ -2686,6 +2680,11 @@ Rahnsdorfer Str. (Mahlsdorf): Qualität? Als Hauptstraße oder als Nebenstraße zu 
 Rahnsdorfer Str.: Qualität? In welchem Ortsteil befindet sich dieser Abschnitt?	? 25781,9966 26321,9868
 Karlstr. (Mahlsdorf): Qualität?	? 24826,10597 24916,10539 25029,10462 25112,10415 25257,10326
 Iglauer Str.: Qualität?	? 25148,10483 25317,10457 25351,10452
+Schneewittchenstr. (Altglienicke): Qualität?	? 19460,1430 19369,1515 19207,1592 19132,1628
+Drebkauer Str.: Qualität?	? 6330,20742 6117,20738
+Lieberoser Str.: Qualität?	? 6366,20902 5929,20882
+Krangener Weg: Qualität?	? 7079,21000 7093,20874
+Markendorfer Str.: Qualität?	? 6380,20983 5840,20953
 # added from ampeln-orig
 #: add_fragezeichen: Existiert die Ampel Nordufer/Torfstr. noch?
 geschlossen bei Bedarf (?) (Zbr)	? 27657,-11741

@@ -2168,7 +2168,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4; 8775,12457 8907,12472 9008,12485
-userdel	q4; 9008,12485 9018,12400 9028,12307
+userdel	q4; 9008,12485 9016,12416 9028,12307
 EOF
      },
      { from  => 1119909600, # 2005-06-28 00:00
@@ -3801,7 +3801,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_002531',
        data  => <<EOF,
-userdel	q4; 9465,12460 9475,12365
+userdel	q4; 9462,12481 9475,12365
 EOF
      },
      { from  => 1143410400, # 2006-03-27 00:00
@@ -4052,8 +4052,8 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_002607',
        data  => <<EOF,
-userdel	2 9454,12558 9465,12460
-userdel	2 9475,12365 9465,12460
+userdel	2 9454,12558 9462,12481
+userdel	2 9475,12365 9462,12481
 EOF
      },
      { from  => 1144438828, # 2006-04-07 21:40
@@ -11746,7 +11746,7 @@ userdel auto	3 8901,12008 8861,12125 8804,12280
 userdel auto	3 9183,12076 9164,12172 9373,12197
 userdel auto	3 6540,11754 6778,11742 7073,11798
 userdel auto	3 7281,10418 7245,10297 7215,10203
-userdel auto	3 9487,12263 9475,12365 9465,12460
+userdel auto	3 9487,12263 9475,12365 9462,12481
 userdel auto	3 7534,10850 7820,10768 7963,10716
 userdel auto	3 6681,10959 6824,10904 6918,10854
 userdel auto	3 6980,11583 6809,11570 6524,11583
@@ -11768,7 +11768,7 @@ userdel auto	3 7429,10366 7413,10244 7384,10127
 userdel auto	3 6719,10347 6753,10446 6745,10619
 userdel auto	3 8172,11679 8226,11458 8232,11414
 userdel auto	3 7444,10479 7633,10394 7744,10372
-userdel auto	3 9028,12307 9141,12320 9126,12413
+userdel auto	3 9028,12307 9141,12320 9130,12433
 userdel auto	3 7744,10372 7633,10394 7444,10479
 userdel auto	3 7293,11519 6825,11486 6716,11439
 userdel auto	3 9869,12297 9852,12409 9842,12506
@@ -11782,20 +11782,20 @@ userdel auto	3 9373,12197 9164,12172 9183,12076
 userdel auto	3 6494,10542 6532,10529 6494,10440
 userdel auto	3 7747,11075 7980,11070 8104,11037 8205,10979
 userdel auto	3 6918,10854 6824,10904 6681,10959
-userdel auto	3 9465,12460 9475,12365 9487,12263
+userdel auto	3 9462,12481 9475,12365 9487,12263
 userdel auto	3 7115,11220 6880,11110 6841,11114
 userdel auto	3 6841,11114 6880,11110 7115,11220
 userdel auto	3 7698,10147 7579,10183 7539,9970
 userdel auto	3 7384,10127 7413,10244 7429,10366
 userdel auto	3 7003,10513 7033,10396 7291,10506
 userdel auto	3 8232,11414 8226,11458 8172,11679
-userdel auto	3 9369,12253 9358,12351 9345,12443
+userdel auto	3 9369,12253 9358,12351 9343,12464
 userdel auto	3 9842,12506 9852,12409 9869,12297
 userdel auto	3 8205,10979 8104,11037 7980,11070 7747,11075
 userdel auto	3 6494,10440 6532,10529 6494,10542
-userdel auto	3 9345,12443 9358,12351 9369,12253
+userdel auto	3 9343,12464 9358,12351 9369,12253
 userdel auto	3 7002,11034 6873,11011 6732,11106
-userdel auto	3 9126,12413 9141,12320 9028,12307
+userdel auto	3 9130,12433 9141,12320 9028,12307
 userdel auto	3 6716,11439 6825,11486 7293,11519
 userdel auto	3 8804,12280 8861,12125 8901,12008
 userdel auto	3 7291,10506 7033,10396 7003,10513
@@ -13248,7 +13248,7 @@ EOF
        text  => 'Reichenberger Str., Einbahnstraße Richtung Kottbusser Tor',
        type  => 'gesperrt',
        data  => <<EOF,
-#: last_checked: 2009-07-01
+#: last_checked: 2009-07-21
 #: check_frequency: 14d
 userdel	1::inwork 12229,10014 12398,9938 12556,9862
 EOF
@@ -13533,7 +13533,7 @@ EOF
        text  => 'Bauarbeiten in der Simplonstr., Straße gesperrt',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2009-07-12 vvv
+#: last_checked: 2009-07-21 vvv
 userdel	q4::inwork; 14597,11069 14530,11137
 userdel	q4::inwork 14530,11137 14465,11195
 #: last_checked ^^^
@@ -13858,7 +13858,7 @@ EOF
        data  => <<EOF,
 #userdel	q4::inwork; 8804,12280 8775,12457
 #: last_checked: 2009-05-21
-userdel	q4::inwork; 9018,12400 9028,12307
+userdel	q4::inwork; 9016,12416 9028,12307
 EOF
      },
      { from  => 1241301600, # 2009-05-03 00:00
@@ -14203,13 +14203,13 @@ EOF
 userdel	q4::inwork -54456,42981 -53872,42916
 EOF
      },
-     { from  => undef, # 
-       until => undef, # XXX
+     { from  => 1248200979, # undef
+       until => 1248200986, # XXX undef
        text  => 'Mittelstr. zwischen Friedrichstraße und Neustädtische Kirchstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg offen',
        type  => 'handicap',
        data  => <<EOF,
 #: last_checked: 2009-05-21
-userdel	q4::inwork 9126,12413 9345,12443
+userdel	q4::inwork 9130,12433 9343,12464
 EOF
      },
      { from  => 1243370925, # 2009-05-26 22:48
@@ -14232,11 +14232,11 @@ EOF
      },
      { from  => 1243371714, # 2009-05-26 23:01
        until => 1254347999, # 2009-09-30 23:59
-       text  => 'Glinkastr. (Mitte) Richtung Leipziger Str. zwischen Französische Str. und Jägerstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 09.2009)',
+       text  => 'Glinkastr. (Mitte) Richtung Leipziger Str. zwischen Behrenstr. und Jägerstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 09.2009)',
        type  => 'handicap',
        source_id => 'IM_012764',
        data  => <<EOF,
-userdel	q4::inwork; 9183,12076 9201,11968
+userdel	q4::inwork; 9164,12172 9183,12076 9201,11968
 EOF
      },
      { from  => 1243116000, # 2009-05-24 00:00
@@ -14913,6 +14913,30 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 12383,-99327 12173,-99115
+EOF
+     },
+     { from  => 1248200556, # 2009-07-21 20:22
+       until => 1257030000, # 2009-11-01 00:00
+       text  => 'Fahrbahn der Mauerstr. wegen Bauarbeiten bis Oktober 2009 gesperrt ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 9405,11413 9322,11487
+EOF
+     },
+     { from  => 1248200777, # 2009-07-21 20:26
+       until => 1254348000, # 2009-10-01 00:00
+       text  => 'Bauarbeiten in der Mohrenstraße, Fahrbahn bis September 2009 gesperrt ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 9672,11833 9538,11818 9418,11804 9220,11781
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Die Charlottenstraße ist wegen Bauarbeiten eine Einbahnstraße Richtung Süden',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork; 9475,12365 9462,12481 9454,12558
 EOF
      },
     );

@@ -778,7 +778,7 @@ userdel	1::inwork 10614,19907 10742,19632
          'text' => 'Reichenberger Str., Einbahnstraße Richtung Kottbusser Tor',
          'from' => undef,
          'id' => 1563,
-         'data' => '#: last_checked: 2009-07-01
+         'data' => '#: last_checked: 2009-07-21
 #: check_frequency: 14d
 userdel	1::inwork 12229,10014 12398,9938 12556,9862
 ',
@@ -863,7 +863,7 @@ userdel	1::inwork 12229,10014 12398,9938 12556,9862
          'text' => 'Bauarbeiten in der Simplonstr., Straße gesperrt',
          'from' => undef,
          'id' => 1597,
-         'data' => '#: last_checked: 2009-07-12 vvv
+         'data' => '#: last_checked: 2009-07-21 vvv
 userdel	q4::inwork; 14597,11069 14530,11137
 userdel	q4::inwork 14530,11137 14465,11195
 #: last_checked ^^^
@@ -1075,16 +1075,7 @@ userdel	q4::inwork 8389,11378 8374,11479
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => undef,
-         'text' => 'Mittelstr. zwischen Friedrichstraße und Neustädtische Kirchstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg offen',
-         'from' => undef,
-         'id' => 1676,
-         'data' => '#: last_checked: 2009-05-21
-userdel	q4::inwork 9126,12413 9345,12443
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'IM_012809',
          'until' => 1262300399,
@@ -1108,10 +1099,10 @@ userdel	q4::inwork 9126,12413 9345,12443
        {
          'source_id' => 'IM_012764',
          'until' => 1254347999,
-         'text' => 'Glinkastr. (Mitte) Richtung Leipziger Str. zwischen Französische Str. und Jägerstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 09.2009)',
+         'text' => 'Glinkastr. (Mitte) Richtung Leipziger Str. zwischen Behrenstr. und Jägerstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 09.2009)',
          'from' => 1243371714,
          'id' => 1679,
-         'data' => 'userdel	q4::inwork; 9183,12076 9201,11968
+         'data' => 'userdel	q4::inwork; 9164,12172 9183,12076 9201,11968
 ',
          'type' => 'handicap'
        },
@@ -1158,15 +1149,7 @@ userdel	q4::inwork 9126,12413 9345,12443
        undef,
        undef,
        undef,
-       {
-         'until' => 1248127200,
-         'text' => 'B 102 Treuenbrietzener Str. OD Jüterbog, zw. Parkstr. und Bülowstr. Straßenausbau Vollsperrung 15.06.2009-20.07.2009 ',
-         'from' => 1244930400,
-         'id' => 1697,
-         'data' => 'userdel	q4::inwork -13108,-46122 -12541,-46115
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1257030000,
          'text' => 'K 6153 L 39 Wenzlow - Königs Wusterhausen OD Friedrichshof Straßenneubau Vollsperrung 15.06.2009-31.10.2009 ',
@@ -1534,6 +1517,33 @@ userdel	2::inwork 7160,11225 6851,11346
          'data' => 'userdel	2::inwork 12383,-99327 12173,-99115
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => 1257030000,
+         'text' => 'Fahrbahn der Mauerstr. wegen Bauarbeiten bis Oktober 2009 gesperrt ',
+         'from' => 1248200556,
+         'id' => 1761,
+         'data' => 'userdel	q4::inwork 9405,11413 9322,11487
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1254348000,
+         'text' => 'Bauarbeiten in der Mohrenstraße, Fahrbahn bis September 2009 gesperrt ',
+         'from' => 1248200777,
+         'id' => 1762,
+         'data' => 'userdel	q4::inwork 9672,11833 9538,11818 9418,11804 9220,11781
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => undef,
+         'text' => 'Die Charlottenstraße ist wegen Bauarbeiten eine Einbahnstraße Richtung Süden',
+         'from' => undef,
+         'id' => 1763,
+         'data' => 'userdel	q4::inwork; 9475,12365 9462,12481 9454,12558
+',
+         'type' => 'handicap'
        }
      
 );

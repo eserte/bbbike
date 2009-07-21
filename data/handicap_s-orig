@@ -48,9 +48,10 @@ Treptower Park: Fuﬂg‰nger	q1 14697,9726 14645,9710 14575,9648 14496,9705 14351,9
 Gˆrlitzer Park: Parkweg, Fuﬂg‰nger	q2 12671,10042 12686,10045 12690,10062
 Gˆrlitzer Park: Parkweg, Fuﬂg‰nger	q2 12761,10195 12769,10211 12774,10222
 Gˆrlitzer Park: Parkweg, Fuﬂg‰nger	q2 13145,9920 12869,10071 12802,10097
-Gˆrlitzer Park: Parkweg, Fuﬂg‰nger	q2 12680,10168 12559,10220 12459,10256 12406,10368 12328,10442
+Gˆrlitzer Park: Parkweg, Fuﬂg‰nger	q2 12670,10160 12559,10220 12459,10256 12406,10368 12328,10442
 Gˆrlitzer Park: Parkweg, Fuﬂg‰nger	q2 12817,9964 12855,10035 12869,10071 12904,10141 12911,10156
-Gˆrlitzer Park, Rondell: Parkweg, Fuﬂg‰nger	q2 12802,10097 12737,10051 12690,10062 12659,10119 12680,10168 12712,10192 12761,10195 12801,10146 12802,10097
+Gˆrlitzer Park, Rondell: Parkweg, Fuﬂg‰nger	q2 12802,10097 12737,10051 12690,10062 12659,10119 12670,10160 12712,10192 12761,10195 12801,10146 12802,10097
+Gˆrlitzer Park: Fuﬂg‰nger, eng	q2 12802,10097 12670,10160
 Gˆrlitzer Park: eng, Kurven, Fuﬂg‰nger	q2 12507,10130 12509,10189 12559,10220
 Gˆrlitzer Park: Parkweg, Fuﬂg‰nger	q2 12559,10220 12611,10299
 Tiergartenufer: Parkweg, Fuﬂg‰nger	q1 6186,11466 6079,11524 5940,11616 5903,11683 5835,11768 5711,11841 5566,11860
@@ -490,6 +491,9 @@ Uferweg: Fuﬂg‰nger	q1 3862,12675 3938,12687 4147,12699 4206,12691 4242,12684
 Bundesratufer: Fuﬂg‰nger	q2 5938,12848 5922,12765
 Sonntagstr.: Richtung S-Bahnhof viele Fuﬂg‰nger	q3 14798,10985 14752,11041
 ######################### User Contributions #################################
+#: by: Michael Kiekbusch
+#: corrected_by: srt/policy (q4 -> q3-)
+(Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q3- 11805,19071 11937,19175
 #: by: Steini
 Ebersstr.: Sch¸ler	q2 7245,8583 7292,8631
 #: by: Christian Uhrich:
@@ -627,10 +631,10 @@ Erich-Kuttner-Str.: enge Straﬂe	q1 14584,13547 14532,13563 14428,13596 14370,136
 #: by: ^^^
 #: by: Dirk (gesch) vvv
 Birkenwerderstr.: enge Straﬂe mit parkenden Autos	q1 6470,20761 6945,20805
-# XXX deletion proposed by norbert winkelmann: Tornower Weg: enge Straﬂe mit parkenden Autos	q1 6452,20637 6457,20717 6470,20761 6496,20869 6523,20987 6544,21083
+# XXX deletion proposed by norbert winkelmann: Tornower Weg: enge Straﬂe mit parkenden Autos	q1 6452,20637 6457,20717 6470,20761 6496,20869 6501,20937 6544,21083
 Borgsdorfer Str.: enge Straﬂe mit parkenden Autos	q1 6496,20869 6962,20895
-Germendorfer Str.: enge Straﬂe mit parkenden Autos	q1 6383,20975 6523,20987 6982,21013 7036,21017
-Wentowsteig: enge Straﬂe mit parkenden Autos	q1 6924,20695 6945,20805 6955,20859 6962,20895 6982,21013
+Germendorfer Str.: enge Straﬂe mit parkenden Autos	q1 6376,20951 6501,20937 6977,20984 7079,21000 7151,21012
+Wentowsteig: enge Straﬂe mit parkenden Autos	q1 6924,20695 6945,20805 6955,20859 6962,20895 6977,20984
 #: by: ^^^
 #: by: Peter Held:
 (Spreeuferweg): Fuﬂg‰nger	q1 4537,12531 4501,12544 4334,12551
@@ -1041,6 +1045,7 @@ Stanzer Zeile: enge Straﬂe	q1 6180,376 6130,449 6112,547 6089,643 6066,821 6067,
 #: by: rjoop (Foto):
 (Uferweg an der Havel): enge Br¸cke	q1 -2413,18770 -2434,18832 -2460,18918
 #: by: Jˆrg Schulze:
+#: confirmed_by: Beate (wolter) "Keine gute Straﬂe! Beidseitiges Parken, gerade Platz f¸r Autobreite, am Ende Ausfahrt Parkplatz Reichelt, sehr un¸bersichtlich"
 Mommsenstr. (Lichterfelde): enge Straﬂe	q1 3583,4011 3356,3860
 #: by: Niels de Vos:
 Sodtkestr.: enge Straﬂe	q1 12221,15514 12302,15664 12382,15802 12423,15875
@@ -1331,8 +1336,11 @@ J‰gerstr. (Kˆpenick): enge Straﬂe	q1 22383,4703 22355,4660 22312,4593
 Kolonie Dreieck - Klemkepark: Hunde	q1 8260,18765 8188,18819 8101,18846 7988,18861 7850,18881 7794,18881 7793,18894 7710,18902 7621,18894 7574,18874
 Klemkepark - Kopenhagener Str./Freiheitsweg: Hunde	q1 7574,18874 7576,18837 7480,18828 7394,18820 7332,18818 7313,18781 7248,18793
 #: by: ^^^
-#: by: Detlef Liebe:
+#: by: Detlef Liebe: vvv
 Bosporusstr.: enge Straﬂe	q1 10363,4183 10455,4189 10505,4194 10601,4185 10724,4168
+Werfelstr.: enge Straﬂe	q1 10126,-834 9907,-812
+Simpsonweg: enge Straﬂe	q1 10082,-671 9937,-693 9913,-705 9899,-732 9907,-812 9884,-860
+#: by: ^^^
 #: by: where_are_you_between:
 (Weg am Heidekampgraben - Kiefholzstr., entlang der S-Bahn): teilweise eng/un¸bersichtlich	q1 15379,7283 15601,7340
 #: by: Norbert Rupsch

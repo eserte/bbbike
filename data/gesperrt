@@ -320,7 +320,8 @@ Arberstr.	1 19424,9502 19407,9232
 Hanne Nüte	1 13675,4855 13695,4859 13758,4926 13761,4992 13717,5175
 Parchimer Str.	1 22292,12198 22228,12274 22212,12349 22212,12422 22256,12489 22253,12570 22271,12623 22310,12637
 Ringbahnstr.	1 12934,6967 13081,7014
-Stiftsweg/Bleicheroder Str.	1 11025,18531 11268,18851 11439,18890 11526,18929 11620,18971 11725,19007 11805,19071
+Stiftsweg	1s 11025,18531 11268,18851
+Bleicheroder Str.	1 11268,18851 11439,18890 11526,18929 11620,18971 11725,19007 11805,19071
 Renée-Sintenis-Platz	1 5642,7255 5664,7244 5675,7224 5661,7202 5641,7189 5621,7204 5614,7223 5624,7244 5642,7255
 Spreepark	2 16023,8860 16161,8852
 Staakener Str.	1 -4112,14242 -4390,14257
@@ -1489,8 +1490,7 @@ Schranke (Kopfstr.)	BNP:5:-102 12571,7899
 Drängelgitter mit asphaltierer Vorbeifahrmöglichkeit (Parkweg)	BNP:2:39 14558,10082
 Drängelgitter mit asphaltierer Vorbeifahrmöglichkeit (Parkweg)	BNP:2:41 14597,10129
 Drängelgitter mit asphaltierer Vorbeifahrmöglichkeit (Parkweg)	BNP:2:33 14626,10162
-Drängelgitter (Görlitzer Park)	BNP:5:13 12686,10045
-Drängelgitter (Görlitzer Park)	BNP:5:-153 12904,10141
+Drängelgitter (Görlitzer Park)	BNP:3:-153:trailer=no 12904,10141
 Schranke (Privatstr.)	BNP:5:-180 25039,5304
 Schranke (Privatstr.)	BNP:5:88 9907,11752
 Schranke (Privatstr.)	BNP:5:50 10112,11796
@@ -1857,7 +1857,7 @@ Tor	BNP:15:-220 1834,8893
 tragen (10 x 3 Stufen)	0:60:17 2170,8841
 tragen	0:40:-180 2316,8593
 tragen	0:40:-178 2316,8469
-Mittelstr.	1 9465,12460 9345,12443
+Mittelstr.	1 9462,12481 9343,12464
 Museumstr.	2:inwork 9943,12642 9884,12712
 Bauhofstr.	1 9810,12712 9671,12644
 Hollmannstr.	2 9991,10637 9777,10719

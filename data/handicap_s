@@ -41,9 +41,10 @@ Treptower Park: Fußgänger	q1 14697,9726 14645,9710 14575,9648 14496,9705 14351,9
 Görlitzer Park: Parkweg, Fußgänger	q2 12671,10042 12686,10045 12690,10062
 Görlitzer Park: Parkweg, Fußgänger	q2 12761,10195 12769,10211 12774,10222
 Görlitzer Park: Parkweg, Fußgänger	q2 13145,9920 12869,10071 12802,10097
-Görlitzer Park: Parkweg, Fußgänger	q2 12680,10168 12559,10220 12459,10256 12406,10368 12328,10442
+Görlitzer Park: Parkweg, Fußgänger	q2 12670,10160 12559,10220 12459,10256 12406,10368 12328,10442
 Görlitzer Park: Parkweg, Fußgänger	q2 12817,9964 12855,10035 12869,10071 12904,10141 12911,10156
-Görlitzer Park, Rondell: Parkweg, Fußgänger	q2 12802,10097 12737,10051 12690,10062 12659,10119 12680,10168 12712,10192 12761,10195 12801,10146 12802,10097
+Görlitzer Park, Rondell: Parkweg, Fußgänger	q2 12802,10097 12737,10051 12690,10062 12659,10119 12670,10160 12712,10192 12761,10195 12801,10146 12802,10097
+Görlitzer Park: Fußgänger, eng	q2 12802,10097 12670,10160
 Görlitzer Park: eng, Kurven, Fußgänger	q2 12507,10130 12509,10189 12559,10220
 Görlitzer Park: Parkweg, Fußgänger	q2 12559,10220 12611,10299
 Tiergartenufer: Parkweg, Fußgänger	q1 6186,11466 6079,11524 5940,11616 5903,11683 5835,11768 5711,11841 5566,11860
@@ -459,6 +460,7 @@ Uferweg: Fußgänger	q1 3862,12675 3938,12687 4147,12699 4206,12691 4242,12684
 (Neues Ufer - Kaiserin-Augusta-Allee): Fußgänger	q1 4456,12918 4514,12936 4581,13066 4576,13115 4547,13139 4561,13233
 Bundesratufer: Fußgänger	q2 5938,12848 5922,12765
 Sonntagstr.: Richtung S-Bahnhof viele Fußgänger	q3 14798,10985 14752,11041
+(Bleicheroder Str. - Pasewalker Str.): Fußgänger	q3 11805,19071 11937,19175
 Ebersstr.: Schüler	q2 7245,8583 7292,8631
 Straße 103 (Niederschönhausen): enge Straße 	q1 10914,20065 11051,19789
 An der Heilandsweide: Fußgänger	q1 8203,1194 8305,1148 8492,1050 8539,1025 8687,950
@@ -532,8 +534,8 @@ Erich-Kuttner-Str.: enge Straße	q1 14584,13547 14532,13563 14428,13596 14370,136
 (Breiter Weg - Südostallee/Sterndamm): Fußgänger	q1 17538,5315 17586,5374
 Birkenwerderstr.: enge Straße mit parkenden Autos	q1 6470,20761 6945,20805
 Borgsdorfer Str.: enge Straße mit parkenden Autos	q1 6496,20869 6962,20895
-Germendorfer Str.: enge Straße mit parkenden Autos	q1 6383,20975 6523,20987 6982,21013 7036,21017
-Wentowsteig: enge Straße mit parkenden Autos	q1 6924,20695 6945,20805 6955,20859 6962,20895 6982,21013
+Germendorfer Str.: enge Straße mit parkenden Autos	q1 6376,20951 6501,20937 6977,20984 7079,21000 7151,21012
+Wentowsteig: enge Straße mit parkenden Autos	q1 6924,20695 6945,20805 6955,20859 6962,20895 6977,20984
 (Spreeuferweg): Fußgänger	q1 4537,12531 4501,12544 4334,12551
 Havelstr.: Fußgängerzone	q4 -3150,14631 -3122,14557 -3107,14535 -3054,14498
 (Schönholzer Heide, parallel zur Friesenstr.): Fußgänger	q1 8765,19288 8784,19253 8954,19151 9446,18855 9475,18862
@@ -999,6 +1001,8 @@ Jägerstr. (Köpenick): enge Straße	q1 22383,4703 22355,4660 22312,4593
 Kolonie Dreieck - Klemkepark: Hunde	q1 8260,18765 8188,18819 8101,18846 7988,18861 7850,18881 7794,18881 7793,18894 7710,18902 7621,18894 7574,18874
 Klemkepark - Kopenhagener Str./Freiheitsweg: Hunde	q1 7574,18874 7576,18837 7480,18828 7394,18820 7332,18818 7313,18781 7248,18793
 Bosporusstr.: enge Straße	q1 10363,4183 10455,4189 10505,4194 10601,4185 10724,4168
+Werfelstr.: enge Straße	q1 10126,-834 9907,-812
+Simpsonweg: enge Straße	q1 10082,-671 9937,-693 9913,-705 9899,-732 9907,-812 9884,-860
 (Weg am Heidekampgraben - Kiefholzstr., entlang der S-Bahn): teilweise eng/unübersichtlich	q1 15379,7283 15601,7340
 Immenweg: eng (einspurig)	q1 6744,4983 6415,5028 6383,4890
 Albtalweg: enge Straße	q1 5368,22669 5338,22753 5297,22830 5243,22896
@@ -1067,6 +1071,7 @@ Fritz-Kühn-Str.: enge Straße	q1 21681,-589 21666,-657 21479,-925 21445,-963
 Mittelstr. (Hohenschönhausen): enge Straße	q1 15543,14491 15647,14693 15706,14752 15769,14815 15856,14915
 Eichborndamm: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 4240,19019 4232,18981
 Revaler Str. (Straßenbahn): gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 13588,11490 13473,11456
+Stiftsweg: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 11025,18531 11268,18851
 Erkelenzdamm: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 11117,10326 11094,10261
 Privatstr. 14: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 13159,17196 13103,17280
 Josef-Nawrocki-Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 25802,4823 25819,4688 25720,4719 25692,4727 25565,4764 25552,4829

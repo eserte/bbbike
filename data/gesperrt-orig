@@ -361,8 +361,12 @@ Hanne Nüte	1 13675,4855 13695,4859 13758,4926 13761,4992 13717,5175
 Parchimer Str.	1 22292,12198 22228,12274 22212,12349 22212,12422 22256,12489 22253,12570 22271,12623 22310,12637
 #: by: Sascha (hurdler)
 Ringbahnstr.	1 12934,6967 13081,7014
-#: by: Robert J.
-Stiftsweg/Bleicheroder Str.	1 11025,18531 11268,18851 11439,18890 11526,18929 11620,18971 11725,19007 11805,19071
+#: by: Robert J. vvv
+#: corrected_by: Michael Kiekebusch (Radfahren auf breiten Gehweg möglich)
+Stiftsweg	1s:q3 11025,18531 11268,18851
+#: XXX eventuell kann man hier auch entgegengesetzt der Richtung auf dem Gehweg fahren, auf Antwort von Michael warten:
+Bleicheroder Str.	1 11268,18851 11439,18890 11526,18929 11620,18971 11725,19007 11805,19071
+#: by: ^^^
 Renée-Sintenis-Platz	1 5642,7255 5664,7244 5675,7224 5661,7202 5641,7189 5621,7204 5614,7223 5624,7244 5642,7255
 Spreepark	2 16023,8860 16161,8852
 #: by: Felix Schröder
@@ -1165,6 +1169,8 @@ tragen (Treppe, 4 Stufen)	0:10 38056,48407
 #
 ###################################################################
 # Drängelgitter (BLOCKED_NARROWPASSAGE)
+#
+# Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
 #: by: http://www.benno-koch.de/article09575_dumm_gelaufen_schifffahrtsamt_sperrt_teltow-route2 vvv
 Drängelgitter	BNP:5 4258,2693
@@ -1257,12 +1263,13 @@ Drängelgitter mit asphaltierer Vorbeifahrmöglichkeit (Parkweg)	BNP:2 14558,10082
 Drängelgitter mit asphaltierer Vorbeifahrmöglichkeit (Parkweg)	BNP:2 14597,10129
 Drängelgitter mit asphaltierer Vorbeifahrmöglichkeit (Parkweg)	BNP:2 14626,10162
 # weggedreht: Drängelgitter	BNP:5 14451,9927
-Drängelgitter (Görlitzer Park)	BNP:5 12686,10045
-# XXX mehrer Gitter fehlen zurzeit:
+# existiert nicht mehr: Drängelgitter (Görlitzer Park)	BNP:5 12686,10045
+# XXX mehrere Gitter fehlen zurzeit:
 #Drängelgitter (Görlitzer Park)	BNP:5 12769,10211
 # XXX eins von zwei Gittern fehlt zurzeit
 #Drängelgitter (Görlitzer Park)	BNP:5 10286,8342
-Drängelgitter (Görlitzer Park)	BNP:5 12904,10141
+#: note: 90cm Öffnung, 90cm zum versetzten Gitter -> 63cm lichte Breite
+Drängelgitter (Görlitzer Park)	BNP:3::trailer=no 12904,10141
 Schranke (Privatstr.)	BNP:5 25039,5304
 Schranke (Privatstr.)	BNP:5 9907,11752
 Schranke (Privatstr.)	BNP:5 10112,11796
@@ -1555,7 +1562,7 @@ Tor	BNP:15 1834,8893
 tragen (10 x 3 Stufen)	0:60 2170,8841
 tragen	0:40 2316,8593
 tragen	0:40 2316,8469
-Mittelstr.	1 9465,12460 9345,12443
+Mittelstr.	1 9462,12481 9343,12464
 #: last_checked: 2009-04-30
 #: next_check: 2010-01-01
 #: note: dabei auch prüfen, ob die Museumstr. -> Bodestr. umbenannt wurde (siehe strum2005.pdf)
