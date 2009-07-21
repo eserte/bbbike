@@ -252,7 +252,7 @@ sub add_button {
 		],
 	       ],
 	      ],
-	      [Cascade => 'OSM', -menuitems =>
+	      [Cascade => 'OSM Live data', -menuitems =>
 	       [
 		[Button => "Display (and refresh) downloaded OSM tiles",
 		 -command => sub {
@@ -298,11 +298,10 @@ sub add_button {
 		     BBBikeOsmUtil::choose_merkaartor_icon_style();
 		 },
 		],
-		"-",
-		[Button => 'OSM-converted layer',
-		 -state => 'disabled',
-		 -font => $main::font{'bold'},
-		],
+	       ],
+	      ],
+	      [Cascade => 'OSM-converted layer', -menuitems =>
+	       [
 		do {
 		    my @osm_layers = qw(building education motortraffic oepnv power unhandled);
 		    my @menu_items = map {
