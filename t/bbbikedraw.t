@@ -114,6 +114,7 @@ my @bbox = (8134,8581,9450,9718);
 my $do_display_all;
 my $flush_to_filename;
 my $do_compress = 1;
+my $do_outline = 1;
 my $route_type = 'multi'; # or none or single
 my $start_name = 'Start';
 my $goal_name = 'Goal';
@@ -128,7 +129,7 @@ if ($ENV{BBBIKE_TEST_DRAW_ONLY_MODULES}) {
 sub usage {
     die "usage $0: [-display|-displayall] [-save] [-v|-verbose] [-debug] [-fullmap] [-only module]
 		   [-drawtypes type,type,...] [-bbox x0,y0,x1,y1] [-geometry wxh] [-noroute]
-		   [-flushtofilename] [-[no]compress] [-start name] [-goal name] ...
+		   [-flushtofilename] [-[no]outline] [-[no]compress] [-start name] [-goal name] ...
 
 -flushtofilename: Normally the internal flush will be done to a filehandle.
                   Change it to flush to a filename.
@@ -137,6 +138,7 @@ sub usage {
 -debug:		  In debug mode, all created files will be kept.
 -nocompress:	  Do not compress output. Default is to compress where
 		  possible.
+-nooutline	  Do not use outlines when drawing streets.
 -route none|single|multi:  Draw a sample route. May supercede a specified bbox.
 -geometry wxh:    Default is $geometry.
 -only module:     Test only the given module (may be set multiple times).
@@ -161,6 +163,7 @@ if (!GetOptions(get_std_opts("display"),
 		"fullmap|slow!" => \$do_fullmap, # -slow was the old option name
 		"flushtofilename" => \$flush_to_filename,
 		"compress!" => \$do_compress,
+		"outline!" => \$do_outline,
 		"route=s" => \$route_type,
 		"geometry=s" => \$geometry,
 		'only=s@' => sub {
@@ -294,7 +297,7 @@ sub draw_map {
 	($flush_to_filename ? (Filename => $filename) : (Fh => $fh)),
 	Geometry   => $geometry,
 	Draw       => [@drawtypes],
-	Outline	   => 1,
+	Outline	   => $do_outline,
         Scope      => "city",
         ImageType  => $imagetype,
 	Module     => $module,
