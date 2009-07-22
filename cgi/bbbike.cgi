@@ -5101,6 +5101,11 @@ sub draw_route {
 	} elsif ($q->param('imagetype') eq 'googlemapsstatic') {
 	    $bbbikedraw_args{Module} = "GoogleMapsStatic";
 	    $q->param('imagetype', 'png'); # XXX hacky...
+	} elsif ($q->param('imagetype') =~ m{^(gif|png)$}) {
+	    # XXX Outline=1 looks good with smale scales, but very bad
+	    # with large scales (try Friedrichshain -> Potsdam). Maybe
+	    # I should introduce something like Outline=>best?
+	    # $bbbikedraw_args{Outline} = 1;
 	}
     }
 
