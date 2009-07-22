@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.7 2005/12/17 00:34:14 eserte Exp eserte $
+# $Id: Makefile,v 1.8 2008/01/24 21:53:33 eserte Exp $
 #
 
 # Run on a Debian system
@@ -36,10 +36,14 @@ debian-prepare:
 
 debian-control: $(BUILDDIR)/DEBIAN/control
 
-$(BUILDDIR)/DEBIAN/control:  $(BBBIKEROOT)/BBBikeVar.tpl \
+$(BUILDDIR)/DEBIAN/control:  bbbike-var-tpl \
 			     control.tpl
 	umask 022; tpage --debug=undef --eval_perl --define BBBIKE_DEBIAN_REVISION=$(BBBIKE_DEBIAN_REVISION) control.tpl > $(BUILDDIR)/DEBIAN/control || rm -f $@
 	umask 022; cp -f $(BUILDDIR)/DEBIAN/control control
+
+.PHONY: bbbike-var-tpl
+bbbike-var-tpl:
+	cd $(BBBIKEROOT) && $(MAKE) BBBikeVar.tpl
 
 debian-copy-files:
 	umask 022; mkdir -p $(BUILDBBBIKEROOT)
@@ -91,6 +95,6 @@ debian-build:
 	cd .. && umask 022 && dh_builddeb --destdir $(PACKAGEDIR)
 
 debian-clean:
-	rm -rf $(BUILDDIR)
+	sudo rm -rf $(BUILDDIR)
 	cd .. && dh_clean
 	rm -f control
