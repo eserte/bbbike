@@ -108,7 +108,7 @@ my $bbbike_manifest;
 	mkpath "$tmpdir/$bbbike_base" or die $!
     }
     system($cmd) and die "Failed on command $cmd with $?";
-    $cmd = "zcat $bbbike_archiv_path | ( cd $tmpdir ; tar xf - $bbbike_base/MANIFEST )";
+    $cmd = "zcat $bbbike_archiv_path | ( cd $tmpdir && tar xf - $bbbike_base/MANIFEST )";
     warn "$cmd\n" if $v;
     system($cmd) and die "Failed on command $cmd with $?";
     $bbbike_manifest = "$tmpdir/$bbbike_base/MANIFEST";
@@ -185,13 +185,13 @@ my $md5;
 my $sha256;
 {
     warn "Get MD5 and SHA256 of $bbbike_archiv_dir/$bbbike_archiv:\n";
-    $md5 = `cd $bbbike_archiv_dir; md5 $bbbike_archiv`;
-    $sha256 = `cd $bbbike_archiv_dir; sha256 $bbbike_archiv`;
+    $md5 = `cd $bbbike_archiv_dir && md5 $bbbike_archiv`;
+    $sha256 = `cd $bbbike_archiv_dir && sha256 $bbbike_archiv`;
     my $md5_sha256_qr = qr/^(MD5|SHA256)\s*(\(.*\))\s*(=)\s*(.*)$/;
 
     if (!defined $md5 || $md5 !~ $md5_sha256_qr) {
 	# try md5sum:
-	$md5 = `cd $bbbike_archiv_dir; md5sum $bbbike_archiv`;
+	$md5 = `cd $bbbike_archiv_dir && md5sum $bbbike_archiv`;
 	if (!$md5) {
 	    die "Couldn't get MD5 of $bbbike_archiv, tried md5 and md5sum";
 	} else {
@@ -207,7 +207,18 @@ my $sha256;
     }
 
     if (!defined $sha256 || $sha256 !~ $md5_sha256_qr) {
-	die "Sorry: no fallback mode for SHA256 calculation available!";
+	# try sha256sum:
+	$sha256 = `cd $bbbike_archiv_dir && sha256sum $bbbike_archiv`;
+	if (!$sha256) {
+	    die "Couldn't get SHA256 of $bbbike_archiv, tried sha256 and sha256sum";
+	} else {
+	    $sha256 = (split /\s+/, $sha256)[0];
+	    $sha256 = "SHA256 ($bbbike_archiv) = $sha256";
+	    if ($sha256 !~ $md5_sha256_qr) {
+		die "$sha256 does not match the proper SHA256 pattern";
+	    }
+	    $sha256 = "$1 $2 $3 $4"; # reformat sha256 value
+	}
     } else {
 	$sha256 = "$1 $2 $3 $4"; # reformat md5 value
     }
