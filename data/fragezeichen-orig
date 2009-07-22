@@ -2373,7 +2373,6 @@ Hofheimer Str.: Qualität? Führt die Straße schon über die Sollstedter Str. hinau
 Sollstedter Str.: Qualität?	? 17242,14664 17377,14678 17507,14693 17600,14713
 Küllstedter Str.: Qualität? Kann man direkt zur Landsberger Allee fahren?	? 17340,14898 17377,14678 17389,14599 17396,14523
 Birkenstr. (Hessenwinkel): Qualität?	? 31789,2636 31822,2676 31881,2712 31927,2735 32031,2723
-Wolfgang-Steinitz-Str.: Qualität?	? 31967,2966 31861,2898 31772,2830 31647,2729
 Straße 523: Qualität?	? 31927,2735 31861,2898
 Dämeritzstr.: Qualität?	? 32512,2621 32445,2716
 Wodanstr. (Hessenwinkel): Qualität?	? 32400,1793 32361,1926 32341,1996
@@ -2452,7 +2451,6 @@ Lachtaubenweg: Qualität?	? -1827,20216 -1823,20298 -1838,20471
 Alexander-von-Humboldt-Weg: Qualität? Bereits fertig gestellt? Für Autos offen?	? 19015,3129 18892,3256 18686,3468
 Boveristr.: Qualität?	? 19053,2890 19146,2975
 Kroneckerstr.: Qualität?	? 19146,2975 19216,3052
-Gottfried-Leibniz-Str.: Qualität?	? 19324,2939 19375,2888 19447,2814
 #: XXX: an der Max-Born-Str. keine Linksabbiegemöglichkeit für Autos, Radfahrer können wahrscheinlich improvisieren
 Ludwig-Boltzmann-Str.: Qualität?	? 18736,2764 18779,2773 18944,2816 19064,2867
 #: XXX: wie ist die James-Franck-Str. hier integriert?
@@ -2460,7 +2458,6 @@ Friedrich-Wöhler-Str.: Qualität?	? 18736,2764 18628,2750 18612,2888 18722,2902
 Karl-Otto-Reinsch-Str.: Qualität? Kann die Rudower Chaussee in Höhe Karl-Otto-Reinsch-Str. überquert werden?	? 19603,3207 19524,3286 19449,3358
 Merlitzstr.: Qualität?	? 19417,3184 19524,3286 19660,3420
 Wagner-Régeny-Str.: Qualität?	? 19732,3340 19660,3420 19581,3495 19491,3599
-Pfarrer-Goosmann-Str.: Qualität?	? 19242,3366 19491,3599
 Wilhelm-Hoff-Str.: Qualität? Geht die Straße über den Groß-Berliner Damm Richtung Nordosten weiter?	? 18833,3191 18892,3256 19125,3491
 Wilhelm-Ostwald-Str.: Qualität? Geht die Straße über "Am Studio" hinaus Richtung Nordosten weiter?	? 19933,2474 20116,2639
 Armenische Str.: Qualität?	? 7216,16552 7285,16638 7177,16715 7150,16760 7147,16791
@@ -2922,9 +2919,6 @@ Braunfelsstr.: Qualität (des südlichen Abschnitts)?	? 11953,-1181 11948,-1122 11
 Keuperweg: Qualität?	? 10795,1251 10737,1397
 Schneekoppenweg: Qualität?	? 8179,2630 8208,2771
 Felgentreustr.: Qualität?	? 8129,2390 8030,2423 7934,2471 7801,2527
-#: XXX Eintrag in str_cont_ausnahme fehlt
-Kiepertstr.: Qualität?	? 8522,1870 8342,1803
-Kiepertstr.: Qualität?	? 8311,1818 8277,1812 8198,1777 8085,1763 7994,1750 7962,1748 7876,1786
 Bruno-Möhring-Str.: Qualität?	? 8217,1866 8281,1998
 #: XXX Eintrag in str_cont_ausnahme fehlt
 Welterpfad: Qualität?	? 8110,2076 8048,1945 8009,1852 7994,1750 7991,1724 7899,1544 7814,1376 7787,1361
@@ -3292,7 +3286,6 @@ Joachimstr. (Zehlendorf): Qualität?	? -1654,2909 -1575,2934 -1500,2964
 Am Heidehof: Qualität?	? -1612,2785 -1571,2669 -1410,2726
 Eiderstedter Weg: Qualität?	? -2096,3402 -2038,3252 -1961,3021 -1951,2995 -1945,2975 -1858,2695
 Reifenträgerweg: Qualität?	? -2367,3006 -2529,3220 -2638,3281 -2763,3359
-Waldsängerpfad: Qualität?	? -2638,3281 -2745,3182 -2890,3135
 #: XXX: laut OSM ein footway
 Strömannstr.: Ist die Strömannstr. zwischen Achillesstr. und Zum Kappgraben für Autofahrer gesperrt?	? 15899,23508 15963,23632
 #: by: Prenzlauer Zeitung, 2009-03-19
@@ -3621,3 +3614,10 @@ Drebkauer Str.: Qualität?	? 6330,20742 6117,20738
 Lieberoser Str.: Qualität?	? 6366,20902 5929,20882
 Krangener Weg: Qualität?	? 7079,21000 7093,20874
 Markendorfer Str.: Qualität?	? 6380,20983 5840,20953
+Hermannswerder (Potsdam): Qualität des Abzweigs zur Tornowstr.	? -14301,-2871 -14309,-2803 -14289,-2766 -14180,-2757 -14119,-2778 -13981,-2723
+#: XXX laut osm Spielstraße:
+An der Fährwiese (Potsdam): Qualität?	? -14119,-2778 -14179,-2678 -14234,-2587 -14169,-2548 -14110,-2642 -14179,-2678
+Tornowstr. (Potsdam): Qualität?	? -13981,-2723 -13980,-2690 -13900,-2623 -13865,-2565 -13807,-2446 -13770,-2286 -13751,-2139
+Küsselstr. (Potsdam): Qualität?	? -13807,-2446 -13554,-2334 -13479,-2308 -13450,-2231 -13450,-2158
+#: XXX laut osm:
+Hermannswerder: ist ein Abschnitt eine Einbahnstraße? Wenn ja, nur für Autos oder auch für Radfahrer?	? -13718,-2991 -14301,-2871

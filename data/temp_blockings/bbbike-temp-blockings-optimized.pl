@@ -1544,6 +1544,70 @@ userdel	2::inwork 7160,11225 6851,11346
          'data' => 'userdel	q4::inwork; 9475,12365 9462,12481 9454,12558
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_013726',
+         'until' => 1253051999,
+         'text' => 'Buntzelstr. (Treptow) Richtung Waltersdorfer Str. zwischen Dahmestr. und Waltersdorfer Str. Baustelle, Fahrtrichtung gesperrt ist ausgeschildert. (bis Mitte 09.2009)',
+         'from' => 1248299511,
+         'id' => 1764,
+         'data' => 'userdel	q4::inwork; 21534,-262 21968,-15 22108,82 22145,208
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1249682400,
+         'text' => 'B 168 zw. Beeskow BÜ Oegeln u. Ragow Deckenerneuerung Vollsperrung 27.07.2009-07.08.2009 ',
+         'from' => 1248559200,
+         'id' => 1765,
+         'data' => 'userdel	2::inwork 70065,-24817 70924,-23663
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1251583200,
+         'text' => 'L 038 Falkenberg - Fürstenwalde zw. Berkenbrück u. Fürstenwalde Deckenerneuerung Vollsperrung 16.07.2009-29.08.2009 ',
+         'from' => 1247608800,
+         'id' => 1766,
+         'data' => 'userdel	2::inwork 58249,-5090 59449,-5351 60003,-5190 60762,-5117 60874,-5013 60958,-4995
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1249423200,
+         'text' => 'L 063 Berliner-, Finsterwalder Str. Bahnübergang in Lauchhammer West Gleisbauarbeiten Vollsperrung 27.07.2009-04.08.2009 ',
+         'from' => 1248559200,
+         'id' => 1767,
+         'data' => 'userdel	2::inwork 35072,-102150 35379,-103141 35482,-103562
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1251756000,
+         'text' => 'L 063 Berliner-, Finsterwalder Str. Bahnübergang in Lauchhammer West Gleisbauarbeiten Vollsperrung 28.08.2009-31.08.2009 ',
+         'from' => 1251324000,
+         'id' => 1768,
+         'data' => 'userdel	2::inwork 35072,-102150 35379,-103141 35482,-103562
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1249941600,
+         'text' => 'L 435 Mixdorf - Müllrose OD Müllrose, Mixdorfer Straße Kanal- u. Straßenbau Vollsperrung 23.07.2009-10.08.2009 ',
+         'from' => 1248213600,
+         'id' => 1769,
+         'data' => 'userdel	q4::inwork 79650,-16999 79549,-17498 79628,-17759
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1250892000,
+         'text' => 'L 715 zw- Hohenalsdorf u. Borgisdorf u. Werbig Deckenerneuerung Vollsperrung 22.07.2009-21.08.2009 ',
+         'from' => 1248127200,
+         'id' => 1770,
+         'data' => 'userdel	2::inwork -2997,-52781 -6384,-53390
+',
+         'type' => 'gesperrt'
        }
      
 );

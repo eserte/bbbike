@@ -1390,10 +1390,10 @@ tragen oder Aufzug (Storkower Str.)	0:60:-161 14528,13241
 tragen oder Aufzug (Storkower Str.)	0:60:-114 14503,13167
 tragen (zum Uferweg an den Treptowers)	0:60:-45 14383,10036
 tragen (M¸hsamstr.)	0:30:-117 13253,12625
-tragen (Fuﬂg‰ngerbr¸cke Ostkreuz)	0:60:40 14787,10972
-tragen (Fuﬂg‰ngerbr¸cke Ostkreuz)	0:60:13 14764,10877
+tragen (34 Stufen)	0:40:40 14787,10972
+tragen (ca. 35 Stufen)	0:40:13 14764,10877
 tragen (Durchgang unter der U-Bahn zur Warschauer Str.)	0:30:-255 13437,10992
-tragen (Treppe, 12 Stufen)	0:30:-87 7370,6451
+tragen (Treppe, 12 Stufen)	0:20:-87 7370,6451
 tragen (Bahn¸bergang ehem. Bhf. Satzkorn)	0:60:89 -19150,7320
 tragen (Bahn¸bergang ehem. Bhf. Satzkorn)	0:60:57 -19183,7299
 schieben (Rampe Schmˆckwitzwerdersteg)	0:30:14 30533,-3124
@@ -1445,7 +1445,7 @@ Schranke	BNP:3:51 8828,13434
 Dr‰ngelgitter an der Straﬂenbahntrasse	BNP:6:-154 14998,13623
 Dr‰ngelgitter	BNP:3:-73 25909,11844
 Schranke	BNP:3:-90 -3646,15717
-Cafeastr. - Gradestr.: Dr‰ngelgitter am Bahn¸bergang	BNP:3:-21 11612,5253
+Dr‰ngelgitter am Bahn¸bergang	BNP:3:-21 11612,5253
 Schranke	BNP:0:-81 9265,6361
 Schranke, kann von Fahrr‰dern umfahren werden	BNP:3:-259 668,25047
 Schranke, kann von Radfahrern umfahren werden	BNP:3:-146 9178,21072
@@ -1486,52 +1486,53 @@ Dr‰ngelgitter	BNP:5:-136 7935,4466
 Dr‰ngelgitter	BNP:5:-93 6560,21084
 Dr‰ngelgitter	BNP:5:-186 6613,21116
 Dr‰ngelgitter/Schranke	BNP:5:-180 10012,5210
-Schranke (Kopfstr.)	BNP:5:-102 12571,7899
-Dr‰ngelgitter mit asphaltierer Vorbeifahrmˆglichkeit (Parkweg)	BNP:2:39 14558,10082
-Dr‰ngelgitter mit asphaltierer Vorbeifahrmˆglichkeit (Parkweg)	BNP:2:41 14597,10129
-Dr‰ngelgitter mit asphaltierer Vorbeifahrmˆglichkeit (Parkweg)	BNP:2:33 14626,10162
-Dr‰ngelgitter (Gˆrlitzer Park)	BNP:3:-153:trailer=no 12904,10141
+Schranke	BNP:5:-102 12571,7899
+Dr‰ngelgitter	BNP:5:34:trailer=10 14453,9929
+Dr‰ngelgitter mit asphaltierer Vorbeifahrmˆglichkeit	BNP:2:39:trailer=4 14558,10082
+Dr‰ngelgitter mit asphaltierer Vorbeifahrmˆglichkeit	BNP:2:41:trailer=4 14597,10129
+Dr‰ngelgitter mit asphaltierer Vorbeifahrmˆglichkeit	BNP:2:33:trailer=4 14626,10162
+Dr‰ngelgitter	BNP:3:-153:trailer=no 12904,10141
 Schranke (Privatstr.)	BNP:5:-180 25039,5304
-Schranke (Privatstr.)	BNP:5:88 9907,11752
-Schranke (Privatstr.)	BNP:5:50 10112,11796
-Schranke (Brandesstr.)	BNP:5:86 9698,10348
-Dr‰ngelgitter (Thomashˆhe)	BNP:5:-12 12682,7514
-Barriere (Schwarzer Weg)	BNP:5:-2 17301,7645
-Dr‰ngelgitter (Uferweg Spree)	BNP:5:-77 24398,4842
+Schranke	BNP:5:88 9907,11752
+Schranke	BNP:5:50 10112,11796
+Schranke	BNP:5:86 9698,10348
+Dr‰ngelgitter	BNP:5:-12 12682,7514
+Barriere	BNP:5:-2 17301,7645
+Dr‰ngelgitter	BNP:5:-77 24398,4842
 Dr‰ngelgitter (Schloﬂallee/Straﬂenbahn) 	BNP:5:67 11883,19739
-Dr‰ngelgitter (Pankweg)	BNP:5:-96 11995,19759
-Dr‰ngelgitter (Brachvogelstr.)	BNP:5:-257 9884,10192
-Barriere (Pfl¸gerstr.)	BNP:5:-247 12316,9477
-Barriere (Nansenstr.)	BNP:5:28 12204,9238
+Dr‰ngelgitter	BNP:5:-96 11995,19759
+Dr‰ngelgitter	BNP:5:-257 9884,10192
+Barriere	BNP:5:-247 12316,9477
+Barriere, kann auf dem Gehweg umfahren werden	BNP:3:28:trailer=6 12186,9205
 Schranke (Griesinger-Krankenhaus)	BNP:5:-169 21581,12182
-Hauptweg: Schranke	BNP:5:-106 9410,21680
-Dr‰ngelgitter (Hoher Bogen)	BNP:5:48 3831,8674
+Schranke	BNP:5:-106 9410,21680
+Dr‰ngelgitter	BNP:5:48 3831,8674
 Schranke (Krankenhaus Herzberge)	BNP:5:88 17247,13519
 Dr‰ngelgitter (S-Bhf. Grunewald)	BNP:10:-55 731,9103
 Dr‰ngelgitter (vor der Straﬂenbahnhaltestelle)	BNP:5:-115 29092,4761
-Schranke (Berliner Str./Woltersdorf)	BNP:5:-108 32192,5915
-Schranke, schwer passierbar (Neue Steinmetzstr.)	BNP:10:-195 7625,9376
-Schranke (Neue Steinmetzstr.)	BNP:5:-190 7612,9446
-Barriere: Zillestr.	BNP:0:-83:trailer=30 3268,11834
-Dr‰ngelgitter (Radweg nach Bˆtzow)	BNP:5:-260 -5890,25875
-Schranke (R¸tlistr.)	BNP:5:-152 12490,9056
-Schranke (R¸tlistr.)	BNP:5:-152 12565,9200
-Schranke, meistens offen (Iranische Str.)	BNP:5:-263 7875,16509
-Schranke, meistens offen (Iranische Str.)	BNP:5:-256 7707,16543
-Barriere (Falkstr.)	BNP:10:-12 12178,7985
-Dr‰ngelgitter (Rochstr.)	BNP:0:52:trailer=5 10535,13006
-Barriere (Seydelstr.)	BNP:5:-100 10370,11593
-Dr‰ngelgitter (Gleditschstr. - Elﬂholzstr.)	BNP:10:-84 7158,9509
-Dr‰ngelgitter (Gl¸hw¸rmchenweg, Verl‰ngerung)	BNP:5:-70 -6162,16287
+Schranke	BNP:5:-108 32192,5915
+Schranke, schwer passierbar	BNP:10:-195 7625,9376
+Schranke	BNP:5:-190 7612,9446
+Barriere	BNP:0:-83:trailer=30 3268,11834
+Dr‰ngelgitter	BNP:5:-260 -5890,25875
+Schranke, eine Seite eventuell offen	BNP:3:-152:trailer=10 12490,9056
+Schranke, eine Seite eventuell offen	BNP:3:-152:trailer=10 12565,9200
+Schranke, meistens offen	BNP:3:-263:trailer=6 7875,16509
+Schranke, meistens offen	BNP:3:-256:trailer=6 7707,16543
+Barriere	BNP:10:-12 12178,7985
+Dr‰ngelgitter	BNP:0:52:trailer=5 10535,13006
+Barriere	BNP:5:-100 10370,11593
+Dr‰ngelgitter	BNP:10:-84 7158,9509
+Dr‰ngelgitter	BNP:5:-70 -6162,16287
 Dr‰ngelgitter	BNP:5:-193 38562,100725
 Dr‰ngelgitter	BNP:5:3 38662,97200
 Schwingtor an der Luiseninsel	BNP:10:-142 7696,11621
 Schwingtor an der Luiseninsel	BNP:10:-131 7735,11656
 Schranke	BNP:5:12 25558,997
 enges Dr‰ngelgitter	BNP:5:90 100,3
-Drosselbartweg: Dr‰ngelgitter	BNP:4:-242 13899,18833
-Drosselbartweg: Dr‰ngelgitter	BNP:3:71 14222,18666
-Schranke (Thyssenstr. - Sittestr.)	BNP:3:67 5856,19204
+Dr‰ngelgitter	BNP:4:-101 13909,18835
+Dr‰ngelgitter	BNP:3:-24 14218,18674
+Schranke	BNP:3:67 5856,19204
 Schranke, kann leicht umfahren wergen	BNP:1:-160 -13937,240
 Dr‰ngelgitter	BNP:3:-153 60332,36475
 Dr‰ngelgitter	BNP:3:-153 61521,38712
@@ -1560,8 +1561,8 @@ tragen (Treppe)	0:30:-73 2247,5068
 tragen (Treppe)	0:15 2204,5081
 tragen (Treppe)	0:30:-206 17626,-1847
 tragen (Treppe)	0:30:-208 17602,-1803
-Dr‰ngelgitter (Herderstr.)	BNP:5:-241 4386,6288
-Dr‰ngelgitter (Herderstr.)	BNP:5:-241 4351,6307
+Dr‰ngelgitter	BNP:5:-241 4386,6288
+Dr‰ngelgitter	BNP:5:-53 4351,6307
 Heimst‰ttenweg (kein ˆffentlicher Verkehr)	2 4355,6207 4323,6131 4268,6154
 Markobrunner Str.	1 4374,7016 4462,7137 4593,7167
 Deidesheimer Str.	1 4983,7546 4784,7534 4616,7563 4497,7595
@@ -1569,14 +1570,14 @@ Landauer Str.	1 4578,7358 4786,7327
 Eschenstr. (Friedenau)	1 5067,7523 5121,7523 5158,7560
 (Zur Dillenburger Str.)	1 3837,6926 3964,6928 4000,6852
 Dillenburger Str.	1 3947,6814 3837,6926
-Dr‰ngelgitter (Franz-Cornelsen-Weg)	BNP:5:-165 3597,7192
+Dr‰ngelgitter	BNP:5:-165 3597,7192
 Am Wieselbau	1 310,5084 310,4924
 Am Fuchspaﬂ	1 389,5111 388,4951
 Treibjagdweg	1 469,5138 472,4974
 Hochwildpfad	1 544,5165 549,4992
 Am Lappjagen	1 622,5192 625,5004
-Schranke (Verl‰ngerte Alte Allee)	BNP:5:-234 -20,10076
-Pf‰hle (Verl‰ngerter Dauerwaldweg)	BNP:1:-194 467,9516
+Schranke	BNP:5:-234 -20,10076
+Pf‰hle	BNP:1:-194:trailer=6 467,9516
 Bernadottestr.	1 2711,6698 2793,6593 2875,6485 2935,6448 3020,6450
 Vogelsang	1 2229,6203 2170,5939 2137,5798
 Vogelsang	1 2106,5808 2141,5948 2195,6184 2193,6214
@@ -1623,9 +1624,9 @@ Straﬂenbahntrasse	3nocross::ignrte 11881,13072 11905,13069 11966,13074 11985,130
 Pl. der Vereinten Nationen -> Mollstr.: Straﬂenbahntrasse	3::igndisp 11910,13055 11905,13069 11881,13072
 Pl. der Vereinten Nationen -> Plus-Parkpl.: Straﬂenbahntrasse	3::igndisp 11905,13069 11966,13074 11881,13147
 Plus-Parkpl. -> Pl. der Vereinten Nationen: Straﬂenbahntrasse	3::igndisp 11881,13147 11966,13074 11985,13075
-(Berolinastr.): Tor zum Spielplatz	BNP:10:-236 11865,13027
-(Berolinastr.): Tor zum Spielplatz	BNP:10:-156 11874,13048
-(Berolinastr.): Tor zum Spielplatz	BNP:10:-250 11815,13045
+Tor zum Spielplatz	BNP:10:-236 11865,13027
+Tor zum Spielplatz	BNP:10:-156 11874,13048
+Tor zum Spielplatz	BNP:10:-250 11815,13045
 (Parkweg Am Karlsbad): tragen (ca. 10 Stufen)	0:40:-140 8190,10960
 Matth‰ikirchplatz	1 7938,11276 7956,11340 7973,11354
 Matth‰ikirchplatz	1 7973,11354 7984,11334 7966,11267
@@ -1646,7 +1647,7 @@ Greifswalder Str. -> Olga-Benario-Prestes-Str.: Greifswalder Str.	3::igndisp 125
 Straﬂenbahntrasse	3nocross::ignrte 13098,15592 13229,15692 13316,15758
 Dietrich-Bonhoeffer-Str.	1 12578,14237 12285,14458
 tragen (3 einzelne Stufen)	0:15:-233 13079,14320
-Achtung schlecht sichtbare Kette!!	BNP:5:-121 13485,14054
+Achtung, schlecht sichtbare Kette!	BNP:5:-121 13485,14054
 Treppe	0:20:-62 12867,14648
 2 Treppen o. schmale Rampen	0:10:-229 12969,14672
 tragen (Treppe)	0:15:-187 5574,5791
