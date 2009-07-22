@@ -63,6 +63,10 @@ sub new {
     # common coordsys
     my $first_coordsys;
     for my $subobj (@{ $self->{SubObj} }) {
+	if ($subobj->count == 0) {
+	    # no data -> no problems, skip
+	    next;
+	}
 	my $global_dirs = $subobj->get_global_directives;
 	my $this_coordsys = 'bbbike';
 	if ($global_dirs && $global_dirs->{map}) {
@@ -72,12 +76,7 @@ sub new {
 	    $self->{GlobalDirectives}{map} = [$this_coordsys] if $this_coordsys ne 'bbbike';
 	    $first_coordsys = $this_coordsys;
 	} elsif ($this_coordsys ne $first_coordsys) {
-	    if ($subobj->count == 0) {
-		# no data - no problems
-	    } else {
-		# otherwise warn
-		warn "WARN: Mismatching coord systems. First was '$first_coordsys', this one is '$this_coordsys'.\nExpect problems!";
-	    }
+	    warn "WARN: Mismatching coord systems. First was '$first_coordsys', this one is '$this_coordsys'.\nExpect problems!";
 	}
     }
 

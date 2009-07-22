@@ -35,7 +35,7 @@ my $v;
 GetOptions("v" => \$v)
     or die "usage: $0 [-v]";
 
-plan tests => 50;
+plan tests => 52;
 
 use_ok("Strassen::CoreHeavy");
 
@@ -208,6 +208,37 @@ my $ms3 = MultiStrassen->new(@multibbd);
     is(scalar(@$delref), 1, "One record deleted");
     is($delref->[0], 1, "Index of deleted record");
 }
+
+{
+    my @warnings;
+    local $SIG{__WARN__} = sub { push @warnings, @_ };
+
+    my $s1 = Strassen->new;
+    $s1->push(["Name1", ["1,2"], "X"]);
+    $s1->set_global_directives({ map => ["polar"] });
+    my $s2 = Strassen->new;
+    $s2->push(["Name2", ["1,2"], "X"]);
+    $s2->set_global_directives({ map => ["bbbike"] });
+    my $ms = MultiStrassen->new($s1, $s2);
+
+    like("@warnings", qr{Mismatching coord systems.*polar.*bbbike}, "Check for mismatched coord systems");
+}
+
+{
+    my @warnings;
+    local $SIG{__WARN__} = sub { push @warnings, @_ };
+
+    my $s1 = Strassen->new;
+    # empty data
+    $s1->set_global_directives({ map => ["polar"] });
+    my $s2 = Strassen->new;
+    $s2->push(["Name2", ["1,2"], "X"]);
+    $s2->set_global_directives({ map => ["bbbike"] });
+    my $ms = MultiStrassen->new($s1, $s2);
+
+    unlike("@warnings", qr{Mismatching coord systems.*polar.*bbbike}, "No warning for mismatched coord systems");
+}
+
 
 ######################################################################
 # Helpers
