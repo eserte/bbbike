@@ -233,7 +233,7 @@
        (if (not is-windowsnt)
 	   (concat (if (string-match "csh" (getenv "SHELL"))
 		       "" "2>/dev/null ")
-		   "grep -ins *-orig -e ")
+		   "grep -ins *-orig *.coords.data -e ")
 	 "grep -ni ")))
 
 (fset 'bbbike-cons25-format-answer
