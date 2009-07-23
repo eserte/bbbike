@@ -135,9 +135,9 @@ Wuhlheide: bei schönem Wetter viele Fußgänger und Kinder	q2 20200,6321 20262,649
 Wuhlheide/R1: Fußgänger	q2 20464,6237 20327,6287 20293,6278
 (am Schloß Schönhausen): Fußgänger	q2 10308,19297 10350,19182 10390,19069
 Blockdammweg (Brücke): eng, Fußgänger, ggfs. schieben	q2 17976,8964 18087,9035
-Markgrafenstr.: Gehweg	q2 9711,11543 9701,11656
-Gendarmenmarkt: Fußgänger	q1 9526,11911 9663,11927
-Gendarmenmarkt: Fußgänger	q1 9516,12010 9651,12020
+Markgrafenstr.: Gehweg	q2 9737,11546 9732,11574 9707,11596 9701,11656
+Gendarmenmarkt: Fußgänger	q1 9526,11911 9668,11928
+Gendarmenmarkt: Fußgänger	q1 9516,12010 9656,12021
 Am Volkspark: Parkweg	q1 5745,8194 5934,8220
 Karl-Marx-Str. - Marchlewskistr.: Gehweg	q2 12869,12425 12985,12303
 Lange Str. [vor Kaufhof]: Fußgänger	q2 12409,11902 12522,11837
@@ -494,6 +494,7 @@ Sonntagstr.: Richtung S-Bahnhof viele Fußgänger	q3 14798,10985 14752,11041
 Bouchéstr.: Bodenschwellen	q0 13489,9456 13352,9308
 #: XXX_prog: für Anhänger relevant (q1 oder so)
 Bouchéstr.: Bodenschwellen	q0 13645,9621 13867,9864
+(Neue Grünstr. - Alte Jakobstr.): Radfahren verboten	q4 10624,11548 10534,11609
 ######################### User Contributions #################################
 #: by: Michael Kiekbusch
 #: corrected_by: srt/policy (q4 -> q3-)

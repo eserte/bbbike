@@ -649,7 +649,7 @@ Mangerstr. (Potsdam) (Umgehung auf Gehweg oder Uferweg möglich)	1s -12064,-284 -
 Stephanstr.	1s 6523,4491 6366,4500
 Am Poetensteig, Gramzow	1s 50043,90187 50107,89717
 Atzpodienstr. (Umgehung auf Gehweg möglich)	1s 16485,12384 16509,12518 16564,12513
-Behrenstr./Bebelplatz	1s 9801,12245 9743,12239 9700,12234 9626,12227
+Behrenstr./Bebelplatz	1s 9801,12245 9743,12239 9700,12234 9631,12227
 Halenseestr.	1s 2277,9801 2167,10004 2121,10089 1988,10328 1951,10435
 Zeltinger Platz	1s 2404,25187 2355,25252 2395,25273 2446,25265 2490,25211 2486,25156 2451,25123 2404,25187
 Sewanstr. - Balatonstr.	1s 17705,10232 17741,10386
@@ -713,7 +713,7 @@ Landsberger Allee -> Rebhuhnweg: Mittelstreifen	3::igndisp 20641,15622 20525,155
 Mittelstreifen	3nocross::ignrte 15256,14237 15430,14262 15838,14319
 Mittelstreifen	3nocross::ignrte 1133,14387 1057,14389 999,14390 937,14391 889,14392
 Mittelstreifen	3nocross::ignrte 22484,11270 22756,11268 22937,11265
-Mittelstreifen	3nocross::ignrte 24175,11265 24019,11264 23648,11265
+Mittelstreifen	3nocross::ignrte 24175,11265 24019,11264 23848,11264 23648,11265
 Straßenbahntrasse	3nocross::ignrte 15918,16383 16095,16331 16260,16282 16416,16236
 Straßenbahntrasse	3nocross::ignrte 16416,16236 16515,16207 16654,16167
 Suermondtstr. -> Hedwigstr.: Straßenbahntrasse	3::igndisp 16654,16167 16515,16207 16505,16096
@@ -1493,15 +1493,15 @@ Drängelgitter mit asphaltierer Vorbeifahrmöglichkeit	BNP:2:41:trailer=4 14597,10
 Drängelgitter mit asphaltierer Vorbeifahrmöglichkeit	BNP:2:33:trailer=4 14626,10162
 Drängelgitter	BNP:3:-153:trailer=no 12904,10141
 Schranke (Privatstr.)	BNP:5:-180 25039,5304
-Schranke	BNP:5:88 9907,11752
-Schranke	BNP:5:50 10112,11796
-Schranke	BNP:5:86 9698,10348
+Schranke	BNP:2:85:trailer=4 9907,11752
+Schranke	BNP:5:50:trailer=10 10112,11796
+Schranke	BNP:3:86:trailer=6 9698,10348
 Drängelgitter	BNP:5:-12 12682,7514
 Barriere	BNP:5:-2 17301,7645
 Drängelgitter	BNP:5:-77 24398,4842
 Drängelgitter (Schloßallee/Straßenbahn) 	BNP:5:67 11883,19739
 Drängelgitter	BNP:5:-96 11995,19759
-Drängelgitter	BNP:5:-257 9884,10192
+Drängelgitter	BNP:3:-257:trailer=6 9884,10192
 Barriere	BNP:5:-247 12316,9477
 Barriere, kann auf dem Gehweg umfahren werden	BNP:3:28:trailer=6 12186,9205
 Schranke (Griesinger-Krankenhaus)	BNP:5:-169 21581,12182
@@ -1521,7 +1521,6 @@ Schranke, meistens offen	BNP:3:-263:trailer=6 7875,16509
 Schranke, meistens offen	BNP:3:-256:trailer=6 7707,16543
 Barriere	BNP:10:-12 12178,7985
 Drängelgitter	BNP:0:52:trailer=5 10535,13006
-Barriere	BNP:5:-100 10370,11593
 Drängelgitter	BNP:10:-84 7158,9509
 Drängelgitter	BNP:5:-70 -6162,16287
 Drängelgitter	BNP:5:-193 38562,100725

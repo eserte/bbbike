@@ -123,9 +123,9 @@ Wuhlheide: bei schönem Wetter viele Fußgänger und Kinder	q2 20200,6321 20262,649
 Wuhlheide/R1: Fußgänger	q2 20464,6237 20327,6287 20293,6278
 (am Schloß Schönhausen): Fußgänger	q2 10308,19297 10350,19182 10390,19069
 Blockdammweg (Brücke): eng, Fußgänger, ggfs. schieben	q2 17976,8964 18087,9035
-Markgrafenstr.: Gehweg	q2 9711,11543 9701,11656
-Gendarmenmarkt: Fußgänger	q1 9526,11911 9663,11927
-Gendarmenmarkt: Fußgänger	q1 9516,12010 9651,12020
+Markgrafenstr.: Gehweg	q2 9737,11546 9732,11574 9707,11596 9701,11656
+Gendarmenmarkt: Fußgänger	q1 9526,11911 9668,11928
+Gendarmenmarkt: Fußgänger	q1 9516,12010 9656,12021
 Am Volkspark: Parkweg	q1 5745,8194 5934,8220
 Karl-Marx-Str. - Marchlewskistr.: Gehweg	q2 12869,12425 12985,12303
 Lange Str. [vor Kaufhof]: Fußgänger	q2 12409,11902 12522,11837
@@ -462,6 +462,7 @@ Bundesratufer: Fußgänger	q2 5938,12848 5922,12765
 Sonntagstr.: Richtung S-Bahnhof viele Fußgänger	q3 14798,10985 14752,11041
 Bouchéstr.: Bodenschwellen	q0 13489,9456 13352,9308
 Bouchéstr.: Bodenschwellen	q0 13645,9621 13867,9864
+(Neue Grünstr. - Alte Jakobstr.): Radfahren verboten	q4 10624,11548 10534,11609
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q3 11805,19071 11937,19175
 Ebersstr.: Schüler	q2 7245,8583 7292,8631
 Straße 103 (Niederschönhausen): enge Straße 	q1 10914,20065 11051,19789
@@ -1099,7 +1100,7 @@ Alt-Tegel: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 1668,20
 Alt-Tegel: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 1668,20156 1529,20131 1543,20060 1630,20097 1668,20156
 Am Treptower Park: entgegen der Richtung auf dem Parkstreifen: gegen die Einbahnstraßenrichtung, ggfs. schieben	q1::igndisp; 14739,8919 14614,9052 14563,9106 14529,9141 14443,9233 14382,9299 14242,9448 14179,9515 14089,9610
 Atzpodienstr. (Umgehung auf Gehweg möglich): gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 16485,12384 16509,12518 16564,12513
-Behrenstr./Bebelplatz: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 9801,12245 9743,12239 9700,12234 9626,12227
+Behrenstr./Bebelplatz: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 9801,12245 9743,12239 9700,12234 9631,12227
 Halenseestr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q2::igndisp; 2277,9801 2167,10004 2121,10089 1988,10328 1951,10435
 Zeltinger Platz: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 2404,25187 2355,25252 2395,25273 2446,25265 2490,25211 2486,25156 2451,25123 2404,25187
 Sewanstr. - Balatonstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 17705,10232 17741,10386

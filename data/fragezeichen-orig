@@ -41,7 +41,7 @@ Reichsstr.	? 1401,11428 1403,11428 1308,11506 1220,11583 1215,11587 1133,11664 1
 #: last_checked: 2009-07-09
 Müllerstr.	? 7754,15160 7611,15286 7474,15408 7414,15463 7277,15586 7198,15656 7129,15717 7043,15793 6936,15888 6914,15908 6790,16018 6680,16116 6608,16180 6450,16325 6444,16331 6433,16342 6311,16457 6208,16546 6103,16635 6019,16712 5937,16784 5777,16924 5589,17081 5504,17153
 #: by: Tagesspiegel vom 2009-04-12, soll 2009 realisiert werden
-#: last_checked: 2009-07-01
+#: last_checked: 2009-07-23
 #: next_check: 2009-09-15
 Annenstr.	? 11249,11268 11091,11379 10915,11535 10819,11664
 #: by: Tagesspiegel vom 2009-04-12, soll 2009 realisiert werden
@@ -181,6 +181,8 @@ Fritz-von-der-Lancken-Str - Höhenweg: Straße in Bau	?::inwork -12766,1932 -12636
 # Das heißt diese Strecken werden nicht bei einer erweiterten Suche aufgenommen
 # und dem CGI-Benutzer auch nicht präsentiert.
 # 
+#: XXX_prog:
+Für Anhänger sehr unbequem zu passieren (Betonblöcke und Barrieren, max. 90cm lichte Breite)	? 9777,10719 9805,10791 9786,10971
 #: by: anonymous:
 Straße 41 (Müggelheim): fester Sandweg, Q2	? 30265,2382 30320,2472 30317,2536 30338,2552 30444,2738 30469,2742 30504,2798 30593,2748 30541,2664
 #: by: Carsten Schulz:
@@ -1663,7 +1665,7 @@ Vereinsstr.: Qualität?	? 17180,3997 17244,4084 17297,4159 17405,4151 17503,4148
 Lindhorstweg: Qualität?	? 16674,4096 16742,4098 16852,4105 16887,4105 17027,4090 17108,4049 17180,3997 17187,3988 17228,3936 17245,3895
 Heinrich-Mirbach-Str.: Qualität? Für Autofahrer gesperrt?	? 17288,4026 17244,4084
 Köpenicker Str. (Johannisthal): Qualität?	? 17507,4216 17638,4224 17660,4204
-Adolfstr.: Qualität?	? 22756,11268 22743,11540 22734,11662 22633,11769
+Adolfstr.: Qualität?	? 22756,11268 22751,11381 22743,11540 22734,11662 22633,11769
 Senziger Str.: Qualität?	? 22191,11999 22224,11963 22263,11911 22301,11879 22333,11846
 Münsterberger Weg: Qualität zwischen Gielsdorfer Str. und Frettchenweg?	? 23883,11416 24034,11363
 Münsterberger Weg: Qualität zwischen Gielsdorfer und Neuenhagener Str.? Nachts beleuchtet?	? 24173,11328 24034,11363
@@ -3342,7 +3344,7 @@ Eichenstr. (Mahlsdorf): Qualität südlich der Ulmenstr.?	? 22394,8734 22431,8912 
 Seebadstr. (Kaulsdorf): Qualität südwestlich der Bergedorfer Str.?	? 22117,8801 22268,8718 22310,8700 22394,8734 22532,8807 22700,8867 22786,8940 22886,9017
 Werbellinstr. (Mahlsdorf): Qualität östlich der Weitzgründer Str.?	? 23541,9091 23704,9019 23946,8909
 Friedenstr. (Mahlsdorf): Qualität östlich der Weitzgründer Str.?	? 23596,9220 23755,9150 24001,9037
-Gielsdorfer Str.: Qualität?	? 24019,11264 24018,11320 24034,11363 24094,11521 24063,11535 24089,11665 24121,11795 24132,11859 24137,11930
+Gielsdorfer Str.: Qualität?	? 24019,11264 24018,11320 24034,11363 24094,11521 24063,11535 24071,11573 24089,11665 24121,11795 24132,11859 24137,11930
 Hornsteiner Weg: Qualität westlich des Finkenwalder Wegs?	? 23474,11391 23389,11390
 Püttlinger Str.: südlich des Frankenholzer Wegs: Qualität? Für Autos gesperrt?	? 21275,11942 21273,11882
 Haydnstr. - Märkische Allee: Zugang für Radfahrer möglich? Qualität? Kann man auch auf die andere Straßenseite wechseln?	? 20026,12088 20006,12128 19965,12134 19956,12239
@@ -3621,3 +3623,13 @@ Tornowstr. (Potsdam): Qualität?	? -13981,-2723 -13980,-2690 -13900,-2623 -13865,
 Küsselstr. (Potsdam): Qualität?	? -13807,-2446 -13554,-2334 -13479,-2308 -13450,-2231 -13450,-2158
 #: XXX laut osm:
 Hermannswerder: ist ein Abschnitt eine Einbahnstraße? Wenn ja, nur für Autos oder auch für Radfahrer?	? -13718,-2991 -14301,-2871
+Blumberger Str.: Qualität?	? 24229,11639 24185,11490
+Dirschauer Str. (Mahlsdorf): Qualität?	? 24223,11470 24185,11490 24094,11521
+Frettchenweg: Qualität? Kann die Straße Alt-Mahlsdorf in Höhe Frettchenweg überquert werden?	? 23848,11264 23883,11416 23946,11590 23950,11597 23930,11604 24003,11821
+Finkenwalder Weg: Qualität? Kann die Straße Alt-Mahlsdorf in Höhe Frettchenweg überquert werden?	? 23447,11264 23452,11320 23474,11391 23526,11541 23592,11710
+#: XXX Eintrag in Berlin.coords.data fehlt
+Wieselstr.: Qualität? Für Autos gesperrt?	? 24071,11573 23955,11612 23950,11597
+#: XXX Eintrag in multi_bez_str (Mahlsdorf, Kaulsdorf) fehlt:
+Hamsterstr.: Qualität? Für Autos gesperrt?	? 23946,11590 23799,11646 23694,11678 23592,11710 23495,11753 23390,11792
+Ferdinandstr. (Kaulsdorf): Qualität?	? 23403,11841 23215,11852 22947,11840
+Karlstr. (Kaulsdorf): Qualität?	? 23148,11419 22945,11402 22751,11381

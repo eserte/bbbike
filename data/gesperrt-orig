@@ -788,7 +788,7 @@ Am Poetensteig, Gramzow	1s:q1 50043,90187 50107,89717
 # by: David Greve:# note: removed by srt: Ringbahnstr.	1s 8717,6965 8447,6964
 #: by: Juliane Bölker:
 Atzpodienstr. (Umgehung auf Gehweg möglich)	1s:q3 16485,12384 16509,12518 16564,12513
-Behrenstr./Bebelplatz	1s:q3 9801,12245 9743,12239 9700,12234 9626,12227
+Behrenstr./Bebelplatz	1s:q3 9801,12245 9743,12239 9700,12234 9631,12227
 Halenseestr.	1s:q2 2277,9801 2167,10004 2121,10089 1988,10328 1951,10435
 Zeltinger Platz	1s:q3 2404,25187 2355,25252 2395,25273 2446,25265 2490,25211 2486,25156 2451,25123 2404,25187
 Sewanstr. - Balatonstr.	1s:q3 17705,10232 17741,10386
@@ -829,7 +829,7 @@ Landsberger Allee: Mittelstreifen	3nocross 20260,15434 20525,15571 20641,15622
 Landsberger Allee: Mittelstreifen	3nocross 15256,14237 15430,14262 15838,14319
 Siemensdamm: Mittelstreifen	3nocross 1133,14387 1057,14389 999,14390 937,14391 889,14392
 Alt-Kaulsdorf: Mittelstreifen	3nocross 22484,11270 22756,11268 22937,11265
-Alt-Mahlsdorf: Mittelstreifen	3nocross 24175,11265 24019,11264 23648,11265
+Alt-Mahlsdorf: Mittelstreifen	3nocross 24175,11265 24019,11264 23848,11264 23648,11265
 Suermondtstr: Straßenbahntrasse	3nocross 15918,16383 16095,16331 16260,16282 16416,16236
 Suermondtstr: Straßenbahntrasse	3nocross 16416,16236 16515,16207 16654,16167
 Marienfelder Chaussee: Mittelstreifen	3nocross 11002,1211 11155,1273 11198,1291
@@ -1275,16 +1275,19 @@ Drängelgitter mit asphaltierer Vorbeifahrmöglichkeit	BNP:2::trailer=4 14626,1016
 #: note: 90cm Öffnung, 90cm zum versetzten Gitter -> 63cm lichte Breite
 Drängelgitter	BNP:3::trailer=no 12904,10141
 Schranke (Privatstr.)	BNP:5 25039,5304
-Schranke	BNP:5 9907,11752
-Schranke	BNP:5 10112,11796
-Schranke	BNP:5 9698,10348
+Schranke	BNP:2::trailer=4 9907,11752
+#: note: möglicherweise wird die Vorbeifahrt ohne Schranke in Zukunft permanent möglich sein
+Schranke	BNP:5::trailer=10 10112,11796
+#: note: Vorbeifahrt auf dem Gehweg, Pfosten können möglicherweise Anhänger behindern 
+Schranke	BNP:3::trailer=6 9698,10348
 Drängelgitter	BNP:5 12682,7514
 Barriere	BNP:5 17301,7645
 Drängelgitter	BNP:5 24398,4842
 #: unverified_by: ADFC-Plan:
 Drängelgitter (Schloßallee/Straßenbahn) 	BNP:5 11883,19739
 Drängelgitter	BNP:5 11995,19759
-Drängelgitter	BNP:5 9884,10192
+#: note: Abstand zwischen den versetzten Gittern ca. 150cm 
+Drängelgitter	BNP:3::trailer=6 9884,10192
 Barriere	BNP:5 12316,9477
 Barriere, kann auf dem Gehweg umfahren werden	BNP:3::trailer=6 12186,9205
 Schranke (Griesinger-Krankenhaus)	BNP:5 21581,12182
@@ -1307,7 +1310,6 @@ Schranke, meistens offen	BNP:3::trailer=6 7707,16543
 Barriere	BNP:10 12178,7985
 #: note: nur für Fahrräder mit Anhänger relevant (90cm breit)
 Drängelgitter	BNP:0::trailer=5 10535,13006
-Barriere	BNP:5 10370,11593
 Drängelgitter	BNP:10 7158,9509
 Drängelgitter	BNP:5 -6162,16287
 # in Brandenburg:

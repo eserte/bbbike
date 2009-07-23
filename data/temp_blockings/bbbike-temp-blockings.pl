@@ -2076,7 +2076,7 @@ EOF
        text  => 'Französische Str. ab Markgrafenstr., Werderscher Markt, Breite Str. gesperrt. Dauer: bis 29.06.2005, 20:00 Uhr. (Beachvolleyball) ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 9636,12126 9756,12139 9812,12145
+userdel	2 9643,12127 9756,12139 9812,12145
 userdel	2 10084,12228 9972,12184
 userdel	2 9812,12145 9890,12161
 userdel	2 9890,12161 9972,12184
@@ -11380,7 +11380,7 @@ EOF
        text  => 'Mohrenstr. am Gendarmenmarkt: Einbahnstraße Richtung Osten',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1::inwork 9672,11833 9538,11818
+userdel	1::inwork 9679,11834 9538,11818
 EOF
      },
      { from  => 1209754240, # 2008-05-02 20:50
@@ -11388,7 +11388,7 @@ EOF
        text  => 'Markgrafenstr. am Gendarmenmarkt: Einbahnstraße Richtung Norden',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1::inwork 9663,11927 9672,11833
+userdel	1::inwork 9668,11928 9679,11834
 EOF
      },
      { from  => 1209754714, # 2008-05-02 20:58
@@ -14496,7 +14496,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_012983',
        data  => <<EOF,
-userdel	2::temp 9663,11927 9526,11911 9516,12010 9651,12020
+userdel	2::temp 9668,11928 9526,11911 9516,12010 9656,12021
 EOF
      },
      { from  => 1246207852, # 2009-06-28 18:50
@@ -14629,7 +14629,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_013316',
        data  => <<EOF,
-userdel	2::temp 9636,12126 9651,12020 9663,11927 9672,11833
+userdel	2::temp 9643,12127 9656,12021 9668,11928 9679,11834
 EOF
      },
      { from  => 1246398785, # 2009-06-30 23:53
@@ -14676,11 +14676,11 @@ EOF
      },
      { from  => 1246916833, # 2009-07-06 23:47
        until => 1262300400, # 2010-01-01 00:00
-       text  => 'Markgrafenstr. (Mitte) Richtung Behrenstr. zwischen Mohrenstr. und Behrenstr. Baustelle, Fahrtrichtung gesperrt (bis Dezember 2009)',
+       text  => 'Markgrafenstr. (Mitte) Richtung Behrenstr. zwischen Taubenstr. und Behrenstr. Baustelle, Fahrtrichtung gesperrt (bis Dezember 2009)',
        type  => 'handicap',
        source_id => 'IM_013316',
        data  => <<EOF,
-userdel	q4::inwork; 9672,11833 9663,11927 9651,12020 9636,12126 9626,12227
+userdel	q4::inwork; 9668,11928 9656,12021 9643,12127 9631,12227
 EOF
      },
      { from  => 1247349600, # 2009-07-12 00:00
@@ -14920,7 +14920,7 @@ EOF
        text  => 'Fahrbahn der Mauerstr. wegen Bauarbeiten bis Oktober 2009 gesperrt ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 9405,11413 9322,11487
+userdel	q4::inwork 9405,11413 9331,11497
 EOF
      },
      { from  => 1248200777, # 2009-07-21 20:26
@@ -14928,7 +14928,7 @@ EOF
        text  => 'Bauarbeiten in der Mohrenstraße, Fahrbahn bis September 2009 gesperrt ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 9672,11833 9538,11818 9418,11804 9220,11781
+userdel	q4::inwork 9418,11804 9220,11781
 EOF
      },
      { from  => undef, # 
