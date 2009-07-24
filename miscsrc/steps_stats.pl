@@ -16,7 +16,13 @@ use strict;
 use FindBin;
 use lib "$FindBin::RealBin/..";
 
+use Getopt::Long;
+
 use Strassen::Core;
+
+my $without_as_bbd;
+GetOptions("without-as-bbd!" => \$without_as_bbd)
+    or die "usage: $0 [-without_as_bbd] [file]";
 
 my $times_expr = qr{(\d+)\s*x\s*(\d+)};
 my $plus_expr = qr{\d+\s*(?:\+\s*\d+)+};
@@ -42,14 +48,24 @@ Strassen->new_stream($file)->read_stream
 	     if (my($time) = $r->[Strassen::CAT] =~ m{0:(\d+)}) {
 		 push @res, [$time/$steps, $steps, $time, $r];
 	     }
-	 } elsif ($r->[Strassen::NAME] =~ m{treppe}i) {
+	 } elsif ($r->[Strassen::NAME] =~ m{treppe|tragen}i) {
 	     my($time) = $r->[Strassen::CAT] =~ m{0:(\d+)};
 	     push @steps_without_count, [$time, $r];
 	 }
      });
 
 @steps_without_count = sort { $b->[0] <=> $a->[0] } @steps_without_count;
-print "Steps without count:\n" . join("\n", map { join("\t", $_->[0], $_->[1]->[Strassen::NAME]) } @steps_without_count), "\n";
+if ($without_as_bbd) {
+    my $s = Strassen->new;
+    for my $def (@steps_without_count) {
+	my $r = $def->[1];
+	$s->push($r);
+    }
+    print $s->as_string;
+    exit 0;
+}
+
+print "Steps without count:\n" . join("\n", map { join("\t", $_->[0], $_->[1][Strassen::NAME], $_->[1][Strassen::COORDS][0]) } @steps_without_count), "\n";
 print "-"x70,"\n";
 
 @res = sort { $b->[0] <=> $a->[0] } @res;
