@@ -512,7 +512,7 @@ An der Güterbahn: Asphalt	Q0 14898,1834 14676,1777
 (Matthäusweg - Friedrich-Kayßler-Weg): Kleinpflaster	Q1 14986,1820 14988,1860 14993,2025
 (Sollmannweg - Matthäusweg): Parkweg	Q1 14962,1667 14898,1834 14895,1842 14888,1869 14865,1952
 Falkensteinstr.: etwas besseres Kopfsteinpflaster	Q2 12911,10156 13032,10355 13140,10546
-Görlitzer Str.: Kopfsteinpflaster auf der Fahrbahn, Radweg OK	Q2; 13221,10005 13053,10088 12911,10156 12774,10222 12685,10264 12611,10299 12328,10442
+Görlitzer Str.: Kopfsteinpflaster auf der Fahrbahn, Radweg OK	Q1; 13221,10005 13053,10088 12911,10156 12774,10222 12685,10264 12611,10299 12328,10442
 Görlitzer Str.: Kopfsteinpflaster	Q2; 12328,10442 12611,10299 12685,10264 12774,10222 12911,10156
 Görlitzer Str.: Kopfsteinpflaster; Schwellen an der Kreuzung Cuvrystr.	Q2; 12911,10156 13053,10088 13221,10005
 Alter Markt: Asphalt	Q0 22495,4523 22458,4565
@@ -994,7 +994,9 @@ Friedrichshaller Str.: Kopfsteinpflaster	Q2 3083,7587 2784,7711 2774,7655
 Christburger Str.: Kopfsteinpflaster	Q2 11642,14625 11920,14468 12188,14321
 Pasteurstr.: Kopfsteinpflaster	Q2 12499,14136 12608,14070 12792,13957
 Ebelingstr.: Kopfsteinpflaster	Q2 13487,13115 13610,13169 13707,13206
-Cuvrystr.: Asphalt mit Langsamfahrschwellen, Teilstück mit gutem Kopfsteinpflaster	Q1 13053,10088 13156,10285 13249,10445
+Cuvrystr.: Asphalt	Q0 13053,10088 13132,10239
+Cuvrystr.: gutes Kopfsteinpflaster	Q1 13132,10239 13156,10285 13197,10355
+Cuvrystr.: Asphalt	Q0 13197,10355 13249,10445
 Cuvrystr.: Kopfsteinpflaster	Q2 13249,10445 13325,10565
 Zeughofstr.: Kopfsteinpflaster	Q2 12683,10896 12531,10676 12456,10563 12401,10461
 Pfuelstr.: Kopfsteinpflaster	Q2 12865,10762 12942,10845
@@ -2772,8 +2774,7 @@ Dievenowstr.: Asphalt	Q0 3206,7109 3189,7249 3208,7328 3225,7390
 Borkumer Str.: Asphalt	Q0 3056,7095 3094,7111 3206,7109 3302,7092 3382,7074 3488,7050 3585,7028
 Görschstr.: mäßiger Asphalt	Q1 10112,17287 10085,17370 10056,17781
 Görschstr.: Kopfsteinpflaster	Q3 10056,17781 9870,17971
-Neue Schönholzer Str.: mäßiger Asphalt	Q1 10089,18180 10140,18080
-Neue Schönholzer Str.: Kopfsteinpflaster	Q2 10179,17772 10140,18080
+Neue Schönholzer Str.: guter Asphalt	Q0 10089,18180 10140,18080 10179,17772
 Guntherstr.: Kopfsteinpflaster	Q2 17020,12309 16994,12122 16975,12000
 Cheruskerstr.: Asphalt	Q0 7446,8200 7412,8253 7411,8364 7410,8553 7409,8621 7488,8768
 Malplaquetstr.: mäßiges Kopfsteinpflaster	Q2 7441,15909 7279,16057 7162,16163 7051,16264
@@ -5586,6 +5587,8 @@ Bohnsacker Steig: Kopfsteinpflaster	Q2 -2250,22949 -2284,22847
 Wolfgang-Steinitz-Str.: guter Asphalt	Q0 31967,2966 31861,2898 31772,2830 31647,2729
 Gottfried-Leibniz-Str.: Asphalt	Q0 19324,2939 19375,2888 19447,2814
 Pfarrer-Goosmann-Str.: Asphalt	Q0 19242,3366 19491,3599
+Gropiusstr. (Hohenschönhausen): guter Asphalt	Q0 15877,15673 15825,15547
+Urbanstr. (Zehlendorf): guter Asphalt	Q0 515,1507 550,1358
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206
 Richard-Ermisch-Str.: Asphalt	Q0 14250,13281 14224,13206 14207,13152 14177,13065 14163,13025 14130,12926 14096,12827
 Zum Langen Jammer: Kopfsteipflaster, Gehweg besser	Q2 14686,12873 14405,12953

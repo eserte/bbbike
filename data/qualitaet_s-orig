@@ -535,7 +535,7 @@ An der Güterbahn: Asphalt	Q0 14898,1834 14676,1777
 (Matthäusweg - Friedrich-Kayßler-Weg): Kleinpflaster	Q1 14986,1820 14988,1860 14993,2025
 (Sollmannweg - Matthäusweg): Parkweg	Q1 14962,1667 14898,1834 14895,1842 14888,1869 14865,1952
 Falkensteinstr.: etwas besseres Kopfsteinpflaster	Q2 12911,10156 13032,10355 13140,10546
-Görlitzer Str.: Kopfsteinpflaster auf der Fahrbahn, Radweg OK	Q2; 13221,10005 13053,10088 12911,10156 12774,10222 12685,10264 12611,10299 12328,10442
+Görlitzer Str.: Kopfsteinpflaster auf der Fahrbahn, Radweg OK	Q1; 13221,10005 13053,10088 12911,10156 12774,10222 12685,10264 12611,10299 12328,10442
 Görlitzer Str.: Kopfsteinpflaster	Q2; 12328,10442 12611,10299 12685,10264 12774,10222 12911,10156
 Görlitzer Str.: Kopfsteinpflaster; Schwellen an der Kreuzung Cuvrystr.	Q2; 12911,10156 13053,10088 13221,10005
 Alter Markt: Asphalt	Q0 22495,4523 22458,4565
@@ -1095,7 +1095,9 @@ Friedrichshaller Str.: Kopfsteinpflaster	Q2 3083,7587 2784,7711 2774,7655
 Christburger Str.: Kopfsteinpflaster	Q2 11642,14625 11920,14468 12188,14321
 Pasteurstr.: Kopfsteinpflaster	Q2 12499,14136 12608,14070 12792,13957
 Ebelingstr.: Kopfsteinpflaster	Q2 13487,13115 13610,13169 13707,13206
-Cuvrystr.: Asphalt mit Langsamfahrschwellen, Teilstück mit gutem Kopfsteinpflaster	Q1 13053,10088 13156,10285 13249,10445
+Cuvrystr.: Asphalt	Q0 13053,10088 13132,10239
+Cuvrystr.: gutes Kopfsteinpflaster	Q1 13132,10239 13156,10285 13197,10355
+Cuvrystr.: Asphalt	Q0 13197,10355 13249,10445
 Cuvrystr.: Kopfsteinpflaster	Q2 13249,10445 13325,10565
 Zeughofstr.: Kopfsteinpflaster	Q2 12683,10896 12531,10676 12456,10563 12401,10461
 Pfuelstr.: Kopfsteinpflaster	Q2 12865,10762 12942,10845
@@ -3193,10 +3195,8 @@ Görschstr.: mäßiger Asphalt	Q1 10112,17287 10085,17370 10056,17781
 Görschstr.: Kopfsteinpflaster	Q3+ 10056,17781 9870,17971
 #: note: http://www.berlin.de/ba-pankow/presse/archiv/20070906.1125.84785.html
 #: note: http://www.berlin.de/ba-pankow/presse/archiv/20080709.1415.104631.html
-#: add_fragezeichen: Ist die Neue Schönholzer Str. mittlerweile komplett asphaltiert? Ist die Einbahnstraßenregelung (zumindest für Radfahrer) aufgehoben? Verläuft der Radweg Berlin-Usedom hier entlang? vvv
-Neue Schönholzer Str.: mäßiger Asphalt	Q1 10089,18180 10140,18080
-Neue Schönholzer Str.: Kopfsteinpflaster	Q2 10179,17772 10140,18080
-#: add_fragezeichen ^^^
+#: by: Ulf Lenski:
+Neue Schönholzer Str.: guter Asphalt	Q0 10089,18180 10140,18080 10179,17772
 #: by: ^^^
 #: by: arndt westphal:
 Guntherstr.: Kopfsteinpflaster	Q2 17020,12309 16994,12122 16975,12000
@@ -8055,6 +8055,7 @@ Strausberger Str. (Hohenschönhausen): schlechtes Kopfsteinpflaster	Q3 16377,1495
 Wörther Str.: Kopfsteinpflaster	Q2 11582,14448 11446,14508 11317,14564
 #: by: tomask:
 #: note: Kathleen Kuminowski meint "guter Beton" und enge Straße, q0
+#: XXX: Ilka Gomoll meint "Asphalt, Q2" und "schlechter Beton, q1"
 Bernkasteler Str.: guter Asphalt	Q0 14559,16912 14673,16895 14800,16887 14923,16914 14923,16901 15015,16908 15208,16939 15334,16961 15455,16984
 #: by: Diethelm Wohnhas:
 #: confirmed_by: Kurt Thiele and Detlef Liebe
@@ -8615,6 +8616,10 @@ Wolfgang-Steinitz-Str.: guter Asphalt	Q0 31967,2966 31861,2898 31772,2830 31647,
 Gottfried-Leibniz-Str.: Asphalt	Q0+ 19324,2939 19375,2888 19447,2814
 #: by: Eva-Maria Falkenberg:
 Pfarrer-Goosmann-Str.: Asphalt	Q0 19242,3366 19491,3599
+#: by: nicolas (huedepohl):
+Gropiusstr. (Hohenschönhausen): guter Asphalt	Q0 15877,15673 15825,15547
+#: by: Elina Juskevica:
+Urbanstr. (Zehlendorf): guter Asphalt	Q0 515,1507 550,1358
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206

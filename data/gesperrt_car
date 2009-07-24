@@ -562,7 +562,7 @@ Sesenheimer Str. -> Richard-Wagner-Str.: Mittelstreifen	3::igndisp 3866,11473 38
 Richard-Wagner-Str. -> Bismarckstr.: Mittelstreifen	3::igndisp 3837,11760 3844,11649 3898,11654
 Richard-Wagner-Str. -> Sesenheimer Str.: Mittelstreifen	3::igndisp 3837,11760 3844,11649 3866,11473
 Lenbachstr.: Einbahnstraße (genau genommen nur das östlichste Stück)	1 5888,6520 6070,6570
-Augustenburger Platz: nur für Taxen und Anlieger	2 6561,15041 6537,15156 6562,15177
+Augustenburger Platz: nur für Taxen und Anlieger	2:Anlieger 6561,15041 6537,15156 6562,15177
 Zinnowitzer Str. - Friedrichstr.:	3 9015,14014 8879,13913 8935,13844
 (Kastanienallee - Friedrich-Engels-Str.)	1 8789,20763 8692,20698 8717,20584
 Zimbelstr.: Poller	3 11959,20365 11924,20399 11879,20466
@@ -616,7 +616,7 @@ Mittelstreifen	3nocross::ignrte 13294,6386 13307,6359 13323,6322
 Bürgerstr. -> Buschkrugallee: Mittelstreifen	3::igndisp 13239,6344 13307,6359 13294,6386
 Buschkrugallee -> Bürgerstr.: Mittelstreifen	3::igndisp 13323,6322 13307,6359 13239,6344
 Gieselerstr.	1 4606,9023 4619,9200
-Wiener Str., Görlitzer Ufer	1 12932,9900 13086,9825 13150,9900 13221,10005
+Wiener Str., Görlitzer Ufer	1 13026,9854 13086,9825 13136,9883 13221,10005
 Mittelstreifen	3nocross::ignrte 15957,2330 15804,2512 15736,2593
 Freiertweg - Lichtenrader Damm	3 10827,467 10638,403 10676,299
 Glasbläserallee: Tore versperren die Durchfahrt, Radfahrer können passieren	2 14888,10385 14835,10272
@@ -671,7 +671,7 @@ Mittelstreifen	3nocross::ignrte 16643,1460 16698,1392 16815,1278
 Mittelstreifen	3nocross::ignrte 13151,14855 13110,14879 12812,15053
 Einsteinstr. -> Storkower Str.: Mittelstreifen	3::igndisp 13143,14935 13110,14879 13151,14855
 Storkower Str. -> Einsteinstr.: Mittelstreifen	3::igndisp 12812,15053 13110,14879 13143,14935
-Hönower Wiesenweg: nur für Anlieger und Radfahrer offen	2 17375,8847 17416,8767 17483,8644 17554,8458 17624,8353 17708,8316 17751,8284
+Hönower Wiesenweg: nur für Anlieger und Radfahrer offen	2:Anlieger 17375,8847 17416,8767 17483,8644 17554,8458 17624,8353 17708,8316 17751,8284
 Mittelstreifen	3nocross::ignrte 6787,5459 6767,5233 6747,5010
 Mittelstreifen	3nocross::ignrte 9248,4904 9239,4980 9207,5185
 Mittelstreifen	3nocross::ignrte 4507,4755 4515,4581 4521,4484
@@ -826,3 +826,5 @@ Margarete-Kühn-Str.: Poller am Salzufer	3 5194,12176 5133,12240 5203,12387
 Eberswalder Str. (Bernau)	1 23109,30968 23103,30923 22922,30640
 Rutnikstr. - Möllendorffstr.: Abbiegen verboten	3 15648,12687 15546,12690 15550,12625
 Torgauer Str.: nur für Anlieger	2:Anlieger 7446,8200 7268,8225 7005,8150
+Hermannswerder	1 -14301,-2871 -13718,-2991
+Neue Schönholzer Str.	1 10089,18180 10140,18080 10179,17772

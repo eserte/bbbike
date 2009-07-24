@@ -258,7 +258,6 @@ Aspenweg	1 -3000,18192 -3020,18188 -3050,18164 -3111,18105 -3168,18051 -3203,180
 Aspenweg	1 -3288,17831 -3244,17883 -3224,17943
 Pintschstr.	1 13342,13185 13438,12965
 Dievenowstr.	1 3225,7390 3208,7328 3189,7249 3206,7109
-Neue Schönholzer Str.	1 10089,18180 10140,18080 10179,17772
 Wolliner Str.	1 10405,14425 10320,14608
 Splanemannstr.	1 18301,9946 18389,9925 18408,10041 18403,10077
 Burgherrenstr.	1 8969,8640 9076,8783
@@ -623,6 +622,8 @@ Alt-Biesdorf	1 20375,11694 20435,11698 20575,11698 21108,11628
 Alt-Biesdorf	1 21108,11628 20963,11618 20549,11659 20375,11694
 #: by: Frank Winterlich:
 Privatstr. 14	1s:q3 13159,17196 13103,17280
+#: by: Ilka Gomoll, osm
+Bernkasteler Str.	1 15208,16939 15015,16908 14923,16901 14923,16914
 ######################################################################
 #
 # Potsdam
@@ -1019,6 +1020,7 @@ Mehringdamm/Baruther: Mittelstreifen	3nocross 9334,9670 9387,9804 9444,9919
 Höhndorfstr. - Loewenhardtdamm: Mittelstreifen	3 8438,8676 8334,8655 8371,8543
 Mehringdamm/Wilhelmshöhe: Mittelstreifen	3nocross 9224,9053 9225,9111 9248,9350
 Unter den Eichen: Mittelstreifen, Tunnelrampe	3nocross 3344,4488 3235,4421 3048,4305
+Kottbusser Damm: Mittelstreifen	3nocross 11785,9437 11757,9509 11745,9541
 #
 ####################################################################
 #
@@ -1098,7 +1100,7 @@ tragen? (Fußgängerbrücke)	0:120 20442,564
 #: XXX ja, siehe osm-Karte.
 tragen? (Fußgängerbrücke)	0:120 19762,-160
 tragen (Stufen), mit MTB befahrbar	0:30 5725,11644
-tragen (Stufen)	0:60 13148,9909
+tragen (20 Stufen)	0:25 13138,9897
 unter der S-Bahn-Brücke tragen	0:30 3730,18992
 tragen oder Aufzug (Storkower Str.)	0:60 14528,13241
 tragen oder Aufzug (Storkower Str.)	0:60 14503,13167
@@ -1288,7 +1290,8 @@ Drängelgitter (Schloßallee/Straßenbahn) 	BNP:5 11883,19739
 Drängelgitter	BNP:5 11995,19759
 #: note: Abstand zwischen den versetzten Gittern ca. 150cm 
 Drängelgitter	BNP:3::trailer=6 9884,10192
-Barriere	BNP:5 12316,9477
+#: note: Vorbeifahrt auf dem Gehweg, hohe Bordsteine
+Barriere	BNP:5::trailer=10 12316,9477
 Barriere, kann auf dem Gehweg umfahren werden	BNP:3::trailer=6 12186,9205
 Schranke (Griesinger-Krankenhaus)	BNP:5 21581,12182
 Schranke	BNP:5 9410,21680

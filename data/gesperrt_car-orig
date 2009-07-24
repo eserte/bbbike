@@ -351,7 +351,7 @@ Osloer Str.: Straßenbahntrasse	3nocross 8260,16740 8196,16746 8144,16750 7763,16
 Seestr.: Straßenbahntrasse	3nocross 7606,16746 7456,16620 7403,16575 7388,16561 7295,16477 7231,16418
 Bismarckstr.: Mittelstreifen	3nocross 3690,11629 3844,11649 3898,11654
 Lenbachstr.: Einbahnstraße (genau genommen nur das östlichste Stück)	1 5888,6520 6070,6570
-Augustenburger Platz: nur für Taxen und Anlieger	2 6561,15041 6537,15156 6562,15177
+Augustenburger Platz: nur für Taxen und Anlieger	2:Anlieger 6561,15041 6537,15156 6562,15177
 Zinnowitzer Str. - Friedrichstr.:	3 9015,14014 8879,13913 8935,13844
 #: by: Wolfhard Schleese
 (Kastanienallee - Friedrich-Engels-Str.)	1 8789,20763 8692,20698 8717,20584
@@ -399,7 +399,7 @@ Zwickauer Damm: Bahntrasse	3nocross 16135,2135 16056,2034 16002,1964 15875,1796 
 #: note: Luftbild:
 Buschkrugallee: Mittelstreifen	3nocross 13294,6386 13307,6359 13323,6322
 Gieselerstr.	1 4606,9023 4619,9200
-Wiener Str., Görlitzer Ufer	1 12932,9900 13086,9825 13150,9900 13221,10005
+Wiener Str., Görlitzer Ufer	1 13026,9854 13086,9825 13136,9883 13221,10005
 #: note: Luftbild:
 Rudower Chaussee: Mittelstreifen	3nocross 15957,2330 15804,2512 15736,2593
 #: by: Hans Lindner
@@ -429,7 +429,7 @@ B110 nach Swinoujscie: kein Grenzübergang für Autos	2 62279,166179 62213,166173
 #: note: Luftbild
 Neuköllner Str.: Mittelstreifen	3nocross 16643,1460 16698,1392 16815,1278
 Storkower Str.: Mittelstreifen	3nocross 13151,14855 13110,14879 12812,15053
-Hönower Wiesenweg: nur für Anlieger und Radfahrer offen	2 17375,8847 17416,8767 17483,8644 17554,8458 17624,8353 17708,8316 17751,8284
+Hönower Wiesenweg: nur für Anlieger und Radfahrer offen	2:Anlieger 17375,8847 17416,8767 17483,8644 17554,8458 17624,8353 17708,8316 17751,8284
 #: note: Luftbild
 Munsterdamm: Mittelstreifen	3nocross 6787,5459 6767,5233 6747,5010
 #: note: Luftbild
@@ -529,3 +529,7 @@ Margarete-Kühn-Str.: Poller am Salzufer	3 * 5133,12240 5203,12387
 Eberswalder Str. (Bernau)	1 23109,30968 23103,30923 22922,30640
 Rutnikstr. - Möllendorffstr.: Abbiegen verboten	3 15648,12687 15546,12690 15550,12625
 Torgauer Str.: nur für Anlieger	2:Anlieger 7446,8200 7268,8225 7005,8150
+#: by: Aaron Schaar, osm:
+Hermannswerder	1 -14301,-2871 -13718,-2991
+#: by: Ulf Lenski:
+Neue Schönholzer Str.	1 10089,18180 10140,18080 10179,17772
