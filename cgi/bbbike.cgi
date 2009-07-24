@@ -4014,7 +4014,11 @@ sub display_route {
 	    print Data::Dumper->new([$res], ['route'])->Dump;
 	} elsif ($output_as =~ /^yaml(.*)/) {
 	    my $is_short = $1 eq "-short";
-	    require YAML;
+	    my $yaml_dump;
+	    if (!eval { require YAML::Syck; $yaml_dump = sub { local $YAML::Syck::ImplicitUnicode = 1; YAML::Syck::Dump(@_) } }) {
+		$YAML::Syck::ImplicitUnicode = $YAML::Syck::ImplicitUnicode if 0; # cease -w
+		require YAML; $yaml_dump = \&YAML::Dump;
+	    }
 	    my $filename = filename_from_route($startname, $zielname) . ".yml";
 	    http_header
 		(-type => "text/plain", # XXX text/yaml ?
@@ -4023,9 +4027,9 @@ sub display_route {
 		);
 	    if ($is_short) {
 		my $short_res = {LongLatPath => $res->{LongLatPath}};
-		print YAML::Dump($short_res);
+		print $yaml_dump->($short_res);
 	    } else {
-		print YAML::Dump($res);
+		print $yaml_dump->($res);
 	    }
 	} elsif ($output_as eq 'gpx-route') {
 	    require Strassen::GPX;
