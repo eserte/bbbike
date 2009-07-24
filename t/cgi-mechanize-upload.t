@@ -28,6 +28,14 @@ use BBBikeTest;
 use File::Basename qw(basename);
 use File::Temp qw(tempfile);
 
+BEGIN {
+    if ($] < 5.006) {
+	$INC{"warnings.pm"} = 1;
+	*warnings::import = sub { };
+	*warnings::unimport = sub { };
+    }
+}
+
 my @gps_types = ("trk", "ovl", "bbr",
 		 "bbr-generated", "ovl-generated", "trk-generated",
 		);
@@ -49,8 +57,10 @@ if (defined $only) {
     @gps_types = grep { $_ eq $only } @gps_types;
 }
 
-my $sample_coords = [[8982,8781], [9050,8783], [9222,8787],
-		     [9227,8890], [9796,8905], [9799,8962]];
+my $sample_coords = do {
+    no warnings 'qw';
+    [map { [split/,/] } qw(8982,8781 9076,8783 9229,8785 9227,8890 9801,8889)];
+};
 
 plan tests => 3 + $gpsman_tests * @gps_types;
 
@@ -77,7 +87,7 @@ plan tests => 3 + $gpsman_tests * @gps_types;
 		my $gpsman_data_dir = "$FindBin::RealBin/../misc/gps_data";
 		skip("No gps_data directory available", $gpsman_tests)
 		    if !-d $gpsman_data_dir;
-		my @trk = glob("$gpsman_data_dir/*.trk");
+		my @trk = glob("$gpsman_data_dir/2???????.trk");
 		skip("No tracks available", $gpsman_tests)
 		    if !@trk;
 		$filename = $trk[rand(@trk)];
