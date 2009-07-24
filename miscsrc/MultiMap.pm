@@ -58,6 +58,12 @@ sub register {
 	  callback_3_std => sub { showmap_url_openstreetmap(@_) },
 	  ($images{OpenStreetMap} ? (icon => $images{OpenStreetMap}) : ()),
 	};
+    $main::info_plugins{__PACKAGE__ . "_MapCompare"} =
+	{ name => "Map Compare (Google/OSM)",
+	  callback => sub { showmap_mapcompare(@_) },
+	  callback_3_std => sub { showmap_url_mapcompare(@_) },
+	  ($images{Geofabrik} ? (icon => $images{Geofabrik}) : ()),
+	};
     $main::info_plugins{__PACKAGE__ . "_MultiMap"} =
 	{ name => "MultiMap",
 	  callback => sub { showmap(@_) },
@@ -369,6 +375,32 @@ ODThquTqumbDyuIwTHkYCEEERrQsEkMWAVI7ShaP3wZgUjYUGQEtSj8hCwYnhD8aCwOKiwsF
 hC8gFwsIDgtJIiMonp4xj6JJQQA7
 EOF
     }
+
+    if (!defined $images{Geofabrik} && eval { require Tk::PNG; 1 }) {
+	# Fetched logo:
+	#   wget http://tools.geofabrik.de/img/geofabrik-tools.png
+	# Manually cut "G" logo out and resized to 16x16
+	# Create base64:
+	#   mmencode -b ...
+	$images{Geofabrik} = $main::top->Photo
+	    (-format => 'png',
+	     -data => <<EOF);
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAAZiS0dE
+AP8A/wD/oL2nkwAAAAlwSFlzAAAE8AAABPABGA1izwAAAAd0SU1FB9kHGBMgGqjuhNYAAAAd
+dEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAhhJREFUOMuNkz1MFGEQ
+hp+5Be5PTo9wiNFwYEKUChOWWJm4VmpnLDBRI7Gw0OJILFxbCrMFSGVrY0jMtRZ2boiFwWww
+aqJQCGoUTxMh/Bw5jt0dC+90PbzoW803mXnnnflmoAGO60Xt+47rpRr9/wXH9a46rqeO6z38
+G3kdsSaV+4Bbted5x/UuAtiWuYtEGqr2AR+Au0BBVX8GibwEzgBJ2zIX/1DguF6UdUxVA4FC
+3DA0k4jTkUpomxEbBJZV9VGjYok49gJ3gOtDB3Mc7+lWQKpBqCvlijxeeM/Wjj8rIqO2Zc7X
+SaRmnATGQ9UTvdmMXhjsl6dLy7wufafiByRaDMrVHQ1VRUSWgHvApG2ZiON6U8ANoDUIQ04f
+yWs+m5HpuQV6su3k0kkqvs/bb6tsbldVRAQIgWfA5Ragt/4bCsQNQ4IwxA9DcukEhzsyZJNx
+Pq1tsrldjQ6/C8jFbMs8B1wB3sREeLeypl17UgzszzKz+JkHc/MYEgNFa4mrwARwzLbM59Eh
+HlLViVbDGDl7NE9/5z6+bmwRqnIgk2b6xQJf1suvROSabZmzv4bouB62ZdZJpoAxQ4TOdFK7
+21NS8QMtbZRlvVIlVJ27fWp4qJ5sW+auRRoGSsC4qo7q74YXReQS0GZb5kyz3Y/aA47rfazd
+QuC4XqExrlgs/vOYbtYInjQ7pmKxKLFmSmzLnARcYCTacwP0B/bXAvRRlokcAAAAAElFTkSu
+QmCC
+EOF
+    }
 }
 
 ######################################################################
@@ -488,6 +520,22 @@ sub showmap_openstreetmap {
     my $url = showmap_url_openstreetmap(%args);
     start_browser($url);
 }
+
+######################################################################
+# Map Compare (Geofabrik)
+
+sub showmap_url_mapcompare {
+    my(%args) = @_;
+
+    my $px = $args{px};
+    my $py = $args{py};
+
+    my $scale = 17 - log(($args{mapscale_scale})/3000)/log(2);
+    sprintf "http://tools.geofabrik.de/mc/?mt0=googlehybrid&mt1=tah&lat=%s&lon=%s&zoom=%d",
+	$py, $px, $scale;
+}
+
+sub showmap_mapcompare { start_browser(showmap_url_mapcompare(@_)) }
 
 ######################################################################
 # BVG-Stadtplan
