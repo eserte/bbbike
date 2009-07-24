@@ -268,7 +268,7 @@ sub process_data {
 		if ($r->[Strassen::CAT] =~ /^CP/) {
 		    my $this_coord = $hop_coords[$hop_coord_i-1];
 		    return 0 if $this_coord ne $r->[Strassen::COORDS][1]; # der mittlere Punkt?
-		    my $index_of_point = $d->{PathIndex}[$hop_i] + $hop_coord_i - 1; # XXX correct?
+		    my $index_of_point = $d->{Route}[$hop_i]{PathIndex} + $hop_coord_i - 1; # XXX correct?
 		    my $ret = seq_in_seq_including_point($d->{Path}, $index_of_point,
 							 $r->[Strassen::COORDS]);
 		    return $ret if $ret;
@@ -278,7 +278,7 @@ sub process_data {
 		    }
 		    $ret;
 		} elsif ($r->[Strassen::CAT] =~ /^PI/) {
-		    my $index_of_point = $d->{PathIndex}[$hop_i] + $hop_coord_i - 1; # XXX correct?
+		    my $index_of_point = $d->{Route}[$hop_i]{PathIndex} + $hop_coord_i - 1; # XXX correct?
 		    my $ret = seq_in_seq_including_point($d->{Path}, $index_of_point,
 							 $r->[Strassen::COORDS]);
 		    return $ret if $ret;
