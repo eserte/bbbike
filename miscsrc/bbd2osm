@@ -135,6 +135,12 @@ sub handle_blocked_like {
 	} elsif ($cat eq '2') {
 	    $no_access{$node_ids[$node_id_i-1].' '.$node_ids[$node_id_i]} = 1;
 	    $no_access{$node_ids[$node_id_i].' '.$node_ids[$node_id_i-1]} = 1;
+	} elsif ($cat =~ m{^BNP}) {
+	    if ($r->[Strassen::NAME] =~ m{drängelgitter}i) {
+		# XXX add node barrier=cycle_barrier
+	    } else {
+		# XXX add node barrier=bollard (which is a quite bold assumption)
+	    }
 	}
     }
 }
@@ -422,6 +428,13 @@ Currently the way and node ids start at 1 and increment by one. This
 means clashes are possible if these data and "real" osm is mixed.
 Maybe I should check if the various osm tools can handle negative or
 non-numeric ids, or if there's a private id range documented.
+
+Implement handling of stations (ubahnhof, sbahnhof, rbahnhof).
+
+Implement handling of BNP:...
+
+Both need the handling of stand-alone nodes -> add additional
+attributes to %node_id.
 
 =head1 AUTHOR
 
