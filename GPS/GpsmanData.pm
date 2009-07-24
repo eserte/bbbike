@@ -232,7 +232,9 @@ sub convert_from_route {
     foreach my $xy (@path) {
 	my $xy_string = join ",", @$xy;
 	my($polar_x, $polar_y) = $obj->standard2map(@$xy);
-	my($lat,$long) = convert_lat_long_to_gpsman($polar_y, $polar_x);
+	my($lat,$long) = ($polar_y, $polar_x);
+#XXX del: (after testing!)
+#	my($lat,$long) = convert_lat_long_to_gpsman($polar_y, $polar_x);
 #XXX del: (after testing!)
 #  	my $NS = $polar_y > 0 ? "N" : do { $polar_y = -$polar_y; "S" };
 #  	my $EW = $polar_x > 0 ? "E" : do { $polar_x = -$polar_x; "W" };
