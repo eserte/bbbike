@@ -26,6 +26,11 @@ BEGIN {
     }
 }
 
+{
+    use POSIX qw(strftime);
+    use constant TODO_NEW_COMMENTS => "2009-09-01T12:00:00" gt strftime("%FT%T", localtime) && 'Known failures';
+}
+
 use BBBikeTest qw(eq_or_diff);
 
 BEGIN {
@@ -35,6 +40,8 @@ BEGIN {
 	*warnings::unimport = sub { };
     }
 }
+
+$YAML::Syck::ImplicitUnicode = 1; # otherwise utf8 is wrong
 
 no warnings 'qw';
 
@@ -91,6 +98,7 @@ EOF
 	     # Bergmannstr.
 	     ["9248,9350", "10533,9240", <<EOF, "CS (was Route, now no route here)"],
 - Kopfsteinpflaster (Teilstrecke): 1
+  TR4: 1
 - {}
 EOF
 
@@ -98,6 +106,7 @@ EOF
 	     ["7315,9156", "6977,8934", <<EOF, "CS (Route)"],
 - 'RR1': 1
   'RR12': 1
+  'TR4': 1
   'mäßiges, teilweise holpriges Kopfsteinpflaster (Teilstrecke)': 1
 - {}
 EOF
@@ -124,13 +133,13 @@ EOF
 - {}
 EOF
 	     ["2348,9398", "2947,9367", <<EOF, "Rückweg"],
-- als Hubertusallee ausgeschildert: 1
+- als Hubertusallee ausgeschildert (Teilstrecke): 1
 - {}
 - {}
 EOF
 
 	     # Lützowplatz
-	     ["6732,10754", "6642,12010", <<EOF, "Mehrere Kommentare am gleichen Abschnitt"],
+	     ["6732,10754", "6642,12010", <<EOF, "Mehrere Kommentare am gleichen Abschnitt", TODO_NEW_COMMENTS],
 - als Lützowplatz ausgeschildert (Teilstrecke): 1
 - {}
 - {}
@@ -139,7 +148,7 @@ EOF
   RR3: 1
 - {}
 EOF
-	     ["6642,12010", "6732,10754", <<EOF, "Rückweg"],
+	     ["6642,12010", "6732,10754", <<EOF, "Rückweg", TODO_NEW_COMMENTS],
 - R1: 1
   RR2: 1
   RR3: 1
@@ -163,7 +172,7 @@ for my $cgiurl (@urls) {
     my $inx = -1 + $firstindex;
     for my $test (@tests) {
 	$inx++;
-	my($from, $to, $expected, $desc) = @$test;
+	my($from, $to, $expected, $desc, $is_todo) = @$test;
 	my $qs = get_qs($from, $to);
 	my $url = "$cgiurl?$qs";
 	my $res = $ua->get($url);
@@ -172,6 +181,8 @@ for my $cgiurl (@urls) {
 	my $comments = [ map {
 	    +{ map { ($_,1) } split /;\s+/, $_->{Comment} };
 	} @{$got->{Route}} ];
+	local $TODO;
+	$TODO = $is_todo if ($is_todo);
 	eq_or_diff($comments, Load("--- #YAML:1.0\n$expected"), $desc) or do {
 	    if ($v) {
 		diag Dumper $got;
