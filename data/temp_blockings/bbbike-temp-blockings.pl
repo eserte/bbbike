@@ -14996,4 +14996,38 @@ EOF
 userdel	2::inwork -2997,-52781 -6384,-53390
 EOF
      },
+     { from  => undef, # 
+       until => 1248645599, # 2009-07-26 23:59
+       text  => 'Straße des 17. Juni (Tiergarten) in beiden Richtungen zwischen Yitzhak-Rabin-Str. und Brandenburger Tor Veranstaltung, Straße vollständig gesperrt, außerdem gesperrt: Ebertstr. zwischen Behrenstr. und Dorotheenstr.',
+       type  => 'gesperrt',
+       source_id => 'IM_013767',
+       data  => <<EOF,
+userdel	2::temp 8055,12186 8089,12190 8214,12205 8538,12245 8546,12279 8570,12302 8573,12325 8540,12420
+userdel	2::temp 8538,12245 8600,12165 8595,12066
+EOF
+     },
+     { from  => 1248645600, # 2009-07-27 00:00
+       until => 1250287200, # 2009-08-15 00:00
+       text  => 'L 023 Berliner Straße OL Strausberg, zw. Elefantenpfuhl u. Altlandsb. Chaussee Straßenbauarbeiten Vollsperrung 28.07.2009-14.08.2009 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 41698,17577 41193,17512
+EOF
+     },
+     { from  => 1248559200, # 2009-07-26 00:00
+       until => 1249941600, # 2009-08-11 00:00
+       text  => 'L 040 L 23, Storkow - Friedersdorf zw. Abzw. Rieplos und Abzw. Alt Stahnsdorf Deckenerneuerung Vollsperrung 27.07.2009-10.08.2009 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 45753,-14154 45263,-14192 44580,-14101 44261,-14205
+EOF
+     },
+     { from  => 1247781600, # 2009-07-17 00:00
+       until => 1249077600, # 2009-08-01 00:00
+       text  => 'L 337 zw. B168 vor Tiefensee und B158 Werftpfuhl Deckenerneuerung Vollsperrung 18.07.2009-31.07.2009 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 39155,29093 38087,29075 36975,29112
+EOF
+     },
     );

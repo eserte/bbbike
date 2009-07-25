@@ -1600,6 +1600,35 @@ userdel	2::inwork 7160,11225 6851,11346
          'data' => 'userdel	2::inwork -2997,-52781 -6384,-53390
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_013767',
+         'until' => 1248645599,
+         'text' => 'Straße des 17. Juni (Tiergarten) in beiden Richtungen zwischen Yitzhak-Rabin-Str. und Brandenburger Tor Veranstaltung, Straße vollständig gesperrt, außerdem gesperrt: Ebertstr. zwischen Behrenstr. und Dorotheenstr.',
+         'from' => undef,
+         'id' => 1771,
+         'data' => 'userdel	2::temp 8055,12186 8089,12190 8214,12205 8538,12245 8546,12279 8570,12302 8573,12325 8540,12420
+userdel	2::temp 8538,12245 8600,12165 8595,12066
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1250287200,
+         'text' => 'L 023 Berliner Straße OL Strausberg, zw. Elefantenpfuhl u. Altlandsb. Chaussee Straßenbauarbeiten Vollsperrung 28.07.2009-14.08.2009 ',
+         'from' => 1248645600,
+         'id' => 1772,
+         'data' => 'userdel	2::inwork 41698,17577 41193,17512
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1249941600,
+         'text' => 'L 040 L 23, Storkow - Friedersdorf zw. Abzw. Rieplos und Abzw. Alt Stahnsdorf Deckenerneuerung Vollsperrung 27.07.2009-10.08.2009 ',
+         'from' => 1248559200,
+         'id' => 1773,
+         'data' => 'userdel	2::inwork 45753,-14154 45263,-14192 44580,-14101 44261,-14205
+',
+         'type' => 'gesperrt'
        }
      
 );
