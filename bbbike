@@ -10708,9 +10708,11 @@ sub _get_comments_obj {
 sub _get_fragezeichen_obj {
     my @files;
     push @files, get_strassen_file("fragezeichen");
-    if ($files[0] ne 'fragezeichen') { # happens in edit mode
-	push @files, "fragezeichen";
-    }
+##XXX hmmm. When editing, I don't want to see the non-orig fragezeichen.
+##XXX But sometimes I like to... need to gather wisdom
+#    if ($files[0] ne 'fragezeichen') { # happens in edit mode
+#	push @files, "fragezeichen";
+#    }
     my $xxx_file = catfile($FindBin::RealBin, "tmp", "XXX.bbd");
     if (0 && -r $xxx_file) { # XXX soll ich oder soll ich nicht XXX.bbd mit einbinden?
 	push @files, $xxx_file;
