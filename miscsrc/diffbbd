@@ -16,10 +16,26 @@
 package BBD::Diff;
 
 use strict;
-use FindBin;
-use lib ("$FindBin::RealBin/..",
-	 "$FindBin::RealBin/../lib",
-	);
+
+######################################################################
+# Extend path (unfortunately rather complicated for a modulino)
+use Cwd qw(abs_path);
+use File::Basename qw(dirname);
+my $bbbike_root;
+BEGIN { $bbbike_root = dirname(dirname(abs_path(__FILE__))) }
+use File::Spec;
+BEGIN {
+    for my $candidate (File::Spec->catfile($bbbike_root, "lib"),
+		       $bbbike_root,
+		      ) {
+	if (!grep { $candidate eq $_ } @INC) {
+	    require lib;
+	    lib->import($candidate);
+	}
+    }
+}
+######################################################################
+
 use Getopt::Long;
 use Algorithm::Diff qw(diff sdiff);
 use Strassen::Core;
