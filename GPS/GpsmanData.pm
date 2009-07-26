@@ -693,6 +693,7 @@ sub convert_lat_long_to_gpsman_DMS {
     );
 }
 *convert_lat_long_to_gpsman = \&convert_lat_long_to_gpsman_DMS; # for compat
+*convert_lat_long_to_gpsman = *convert_lat_long_to_gpsman if 0; # cease -w
 
 # XXX only waypoints --- tracks usually have no idents
 sub create_cache {
