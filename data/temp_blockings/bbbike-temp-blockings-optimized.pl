@@ -1352,15 +1352,7 @@ userdel	2::inwork 7160,11225 6851,11346
        },
        undef,
        undef,
-       {
-         'until' => 1248559200,
-         'text' => 'K 6813 B122 - K6812 Zühlen zw. Zechow und Schwanow Straßenbauarbeiten Vollsperrung 23.07.2009-25.07.2009 ',
-         'from' => 1248213600,
-         'id' => 1743,
-         'data' => 'userdel	2::inwork -27902,70373 -29027,70878
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1252706400,
          'text' => 'L 015 Rheinsberg - Dorf Zechlin zw. Abzw. Zühlen und Linow Straßenneubau, Vollsperrung 27.07.2009-11.09.2009 ',
@@ -1601,17 +1593,7 @@ userdel	2::inwork 7160,11225 6851,11346
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_013767',
-         'until' => 1248645599,
-         'text' => 'Straße des 17. Juni (Tiergarten) in beiden Richtungen zwischen Yitzhak-Rabin-Str. und Brandenburger Tor Veranstaltung, Straße vollständig gesperrt, außerdem gesperrt: Ebertstr. zwischen Behrenstr. und Dorotheenstr.',
-         'from' => undef,
-         'id' => 1771,
-         'data' => 'userdel	2::temp 8055,12186 8089,12190 8214,12205 8538,12245 8546,12279 8570,12302 8573,12325 8540,12420
-userdel	2::temp 8538,12245 8600,12165 8595,12066
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1250287200,
          'text' => 'L 023 Berliner Straße OL Strausberg, zw. Elefantenpfuhl u. Altlandsb. Chaussee Straßenbauarbeiten Vollsperrung 28.07.2009-14.08.2009 ',

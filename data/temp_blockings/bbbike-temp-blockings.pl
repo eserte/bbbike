@@ -14997,7 +14997,7 @@ userdel	2::inwork -2997,-52781 -6384,-53390
 EOF
      },
      { from  => undef, # 
-       until => 1248645599, # 2009-07-26 23:59
+       until => 1248600361, # 2009-07-26 23:59 1248645599
        text  => 'Straße des 17. Juni (Tiergarten) in beiden Richtungen zwischen Yitzhak-Rabin-Str. und Brandenburger Tor Veranstaltung, Straße vollständig gesperrt, außerdem gesperrt: Ebertstr. zwischen Behrenstr. und Dorotheenstr.',
        type  => 'gesperrt',
        source_id => 'IM_013767',

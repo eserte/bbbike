@@ -156,9 +156,6 @@ Grenzweg: Brücke über die Spree bzw. Straßenverbindung zwischen Rummelsburger La
 #: by: http://www.nationaler-radverkehrsplan.de/neuigkeiten/news.php?id=1370
 #: note: Havelradweg
 Werder - Phöben: Radweg in Planung, Realisierung bis 2007-12-31	? -22206,-1693 -22672,-1511 -23124,-1235 -23199,-903 -23175,-350 -23411,15 -23896,653 -24509,1607 -24680,1670 -24894,1733
-#: by: http://www.nationaler-radverkehrsplan.de/neuigkeiten/news.php?id=1370
-#: XXX mit Streckenführung in osm vergleichen
-Havelfähre - Brandenburg: Planung des Havelradwegs, genaue Strecke, Realisierung bis 2007-12-31?	? -35855,561 -40569,935
 #: last_checked: 2006-10-14
 Lichterfeld - Besucherbergwerk F60: Radweg in Bau	? 37870,-89814 37883,-89858 37885,-89996 37960,-90233 38002,-90351 38101,-90412
 #: by: http://www.nationaler-radverkehrsplan.de/neuigkeiten/news.php?id=1957
@@ -1056,7 +1053,7 @@ Vergissmeinnichtweg: Qualität?	? 21608,85 21582,185
 #: XXX green1/2 eintragen?
 #: note: laut anonymen Eintrag guter Asphalt und Einbahnstraße
 Wünsdorf: steht hier mittlerweile eine Eisenbahnbrücke?	? 15229,-27157 15682,-26971 15960,-26906
-Radewege - Brielow: Qualität?	? -46098,7170 -46447,6966 -46675,6078 -47386,5139 -47804,5025 -48365,5136
+Radewege - Brielow: Qualität?	? -46132,7173 -46538,6977 -46760,6249 -47618,4983 -47806,5061 -48417,5162
 Brielow - Hohenferchesar: Qualität?	? -48390,5412 -49416,7055 -49898,7487 -50089,8223 -50533,8629 -50660,8921 -50856,8901 -51205,9530 -51535,9758 -51829,10290
 Radewege - Hohenferchesar: Qualität?	? -48290,7437 -48693,7461 -49378,7626 -49809,8261 -50089,8223
 Hohenferchesar - Fohrde: Qualität?	? -50533,8629 -50622,8172 -50749,7956 -51434,7677 -51827,7258 -52233,7271 -52436,7487 -52855,7334 -53058,7005
@@ -3579,12 +3576,15 @@ Lisztstr. (Mahlsdorf): Qualität?	? 25814,12090 25857,12206 25854,12238
 Blankenfelde, Berliner Str. und Hauptstr: Ist die Fahrbahnqualität nach den Bauarbeiten (bis Mai 2009) besser geworden?	? 9528,23240 9490,23531 9425,23693 9625,23781 9774,23936
 Havelschanze - Schützenstr.: Existiert eine Verbindung für Radfahrer? Wenn ja, wie ist die Qualität?	? -2560,16212 -2551,16199 -2570,16192 -2531,16113 -2533,16056 -2624,16049
 Weg an der Havel: Für Radfahrer befahrbar? Qualität?	? -3370,14115 -3312,14036 -3353,13990 -3493,13782 -3543,13691 -3566,13580 -3555,13485
-#: XXX_indoor mit Streckenführung in osm vergleichen
 Reiterhof, Phöben - Havelfähre: Qualität des Radwegs?	? -25787,3228 -25765,3246 -25530,3223 -25511,3313 -25425,3364 -25345,3389 -25282,3433 -25191,3442 -25198,3540 -25262,3561 -25373,3653 -25460,3795 -25563,3940 -25592,3985 -25578,4203 -25471,4332 -25506,4488 -25723,4736 -25725,4734 -25726,4734 -25855,4868 -25942,5010 -26073,5175 -26215,5272 -26647,5444 -26755,5459 -26918,5525
-#: XXX_indoor mit Streckenführung in osm vergleichen
 Havelfähre - Trebelberg: Qualität des Radwegs?	? -26918,5525 -27169,5667 -27239,5694 -27344,5769 -27537,5873 -27679,5929 -27873,6033 -28007,6147 -28158,6227 -28398,6324 -28418,6351 -28778,6516 -28755,6544 -28757,6542 -29169,6718 -29225,6532 -29272,6453 -29279,6367 -29507,6251 -29501,6153 -29526,6093 -29580,6051 -29618,5962 -29969,5876 -29960,5808 -29883,5747 -29792,5636 -30714,5328 -30571,4759 -30814,4732 -30785,4243
-#: XXX_indoor mit Streckenführung in osm vergleichen
-Trebelberg - Götz: Qualität des Radwegs?	? -30785,4243 -31154,4222 -32084,4555 -31797,4911 -31914,4963 -31987,4900 -32261,4875 -32525,4957 -32836,4701 -32854,4530 -32897,4268 -33031,4079 -33335,3994 -33545,3812 -33724,3833 -33810,3769 -33846,3529 -34021,3446 -34198,3561 -34399,3482 -34754,3547 -34644,3235 -34804,3090 -35063,1837 -35855,561
+Trebelberg - Deetz: Qualität des Radwegs?	? -30785,4243 -31154,4222 -32084,4555 -31797,4911 -31914,4963 -31987,4900 -32261,4875 -32525,4957 -32743,4915 -32895,4725 -32902,4524 -32933,4297
+Fischerstr. (Deetz): Qualität? Dürfen hier Autos fahren?	? -32933,4297 -32727,4132
+Zur Ziegelei (Deetz): Qualität? Dürfen hier Autos fahren?	? -32727,4132 -33205,3833 -33483,3799 -33724,3833
+Deetz - Brandenburg: Qualität des Radwegs? Ist der Radweg teilweise straßenbegleitend?	? -33724,3833 -33810,3769 -33846,3529 -34021,3446 -34198,3561 -34399,3482 -34754,3547 -34644,3235 -34804,3090 -34826,3079 -34951,3326 -35105,3409 -35184,3505 -35483,3312 -35787,3201 -35895,3120 -36122,3041 -36285,2896 -36720,2134
+Deetz - Brandenburg: Qualität des Radwegs? Ist der Radweg teilweise straßenbegleitend?	? -36720,2134 -36838,2384 -36996,2513 -37114,2560 -37565,2596 -37639,2569 -37812,2572 -37925,2755 -38163,3255 -38686,3117 -38826,3004 -38951,2773 -39082,2714 -39413,2694 -39752,2793 -39881,2588 -39988,2119 -40142,2066 -40352,2075
+B1 - Gollwitz: Qualität?	? -41548,-302 -41535,-240 -41403,-64 -41215,62 -41123,207 -41139,357 -41059,567 -40948,850
+bei Gollwitz: fehlendes Stück des Havelradwegs? Qualität?	? -40352,2075 -40343,1682 -40387,1648 -40477,877 -40618,791 -40783,828 -40869,843 -40948,850
 Zützen - ehem. B2: Qualität?	? 66091,69964 65762,70023 65345,70168 65207,70639
 Oder-Neiße-Radweg - Stützkow: Qualität?	? 61783,66148 61731,66250 61584,66212
 Stützkow - Alt-Gatow: Qualität?	? 61584,66212 61540,66359 61445,66368 61289,66610 60834,66986 60458,66859 60100,66606 60068,66610
