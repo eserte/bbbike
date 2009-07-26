@@ -188,6 +188,26 @@ BBD::Diff::process(@ARGV);
 
 __END__
 
-Alternativ:
+=head2 EXAMPLES
+
+Diff osm data. Take an old and a new .osm file and create .bbd files
+out of them:
+
+    ./miscsrc/osm2bbd -map bbbike -v -f -o /tmp/oldberlin misc/download/osm.OLD/berlin.osm.bz2
+    ./miscsrc/osm2bbd -map bbbike -v -f -o /tmp/newberlin misc/download/osm/berlin.osm.bz2
+
+Now create the diff bbd for the "strassen" file:
+
+    ./miscsrc/diffbbd /tmp/oldberlin/strassen /tmp/newberlin/strassen -o /tmp/diff.bbd 
+
+Filter added lines, which are candidates for new streets (NOTE: the character
+
+    perl -nle 'm{^(#|Added [^\t])} and print ' /tmp/out8.bbd >| /tmp/out10.bbd
+
+=head2 ALTERNATIVE
+
+A diff just with Unix tools:
 
     diff -u /tmp/strassen strassen|grep '^\+'|cut -c2- | perl -pe 's/\t(\S+)/\t#ff0000/'
+
+=cut
