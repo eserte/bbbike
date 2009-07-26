@@ -146,8 +146,7 @@ GMAPSUPP_SRC=	${PERSISTENTTMPDIR}/bbbike_routable.img \
 		${PERSISTENTTMPDIR}/leipzig_osm.img \
 		${PERSISTENTTMPDIR}/hessen_osm.img \
 		${PERSISTENTTMPDIR}/croatia_osm.img \
-		${PERSISTENTTMPDIR}/dalmatia_osm.img \
-		${PERSISTENTTMPDIR}/barnim_osm.img
+		${PERSISTENTTMPDIR}/dalmatia_osm.img
 
 ## XXX This would be nice. But I ran out of memory if
 ## adding this one. Even with -Xmx1024m:
@@ -170,14 +169,12 @@ gmapsupp-without-rebuild:
 ${PERSISTENTTMPDIR}/berlin_combined.osm:    ${MISCDIR}/download/osm/berlin/*.osm		\
 					    ${MISCDIR}/download/osm/potsdam/*.osm		\
 					    ${MISCDIR}/download/osm/uckermark/*.osm		\
-					    ${MISCDIR}/download/osm/usedom/*.osm		\
-					    ${MISCDIR}/download/osm/barnim/*.osm
+					    ${MISCDIR}/download/osm/usedom/*.osm
 	${COMBINE_OSM} \
 		${MISCDIR}/download/osm/berlin			\
 		${MISCDIR}/download/osm/potsdam			\
 		${MISCDIR}/download/osm/uckermark		\
-		${MISCDIR}/download/osm/usedom			\
-		${MISCDIR}/download/osm/barnim			\
+		${MISCDIR}/download/osm/usedom
 	    > $@~
 	mv $@~ $@
 
