@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi.t,v 1.65 2009/07/19 20:42:50 eserte Exp $
+# $Id: cgi.t,v 1.66 2009/07/26 21:06:36 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2000,2003,2004,2006 Slaven Rezic. All rights reserved.
@@ -317,7 +317,6 @@ for my $cgiurl (@urls) {
 	$content = uncompr($res);
 	BBBikeTest::like_long_data($content, qr/(Sekunden|Minuten).*Zeitverlust/, "Zeitverlust in text", ".html");
 
-    XXX: 
 	# Test comments_points (category BNP, NARROWPASSAGE) (as part of Bemerkungen)
 	$req = new HTTP::Request
 	    ('GET', "$action?startc=9662%2C10345&startplz=10969&startname=Mehringplatz&zielname=Brachvogelstr.&zielplz=10961&zielc=10059%2C10147&scope=&pref_seen=1&pref_speed=12&pref_cat=N1&pref_quality=Q2&pref_ampel=yes&pref_green=&pref_fragezeichen=yes");
@@ -366,6 +365,7 @@ for my $cgiurl (@urls) {
 	}
     }
 
+    XXX: 
     {
 	my $content;
 
@@ -374,7 +374,7 @@ for my $cgiurl (@urls) {
 	ok($res->is_success, "Kirchhainer Damm - Zwickauer Damm")
 	    or diag(Dumper($res));
 	$content = uncompr($res);
-	BBBikeTest::like_long_data($content, qr/\(Lichtenrade -\) Groﬂziethen/,
+	BBBikeTest::like_long_data($content, qr/(Lichtenrader Chaussee|\(Lichtenrade -\) Groﬂziethen)/,
 				   "Shorter route through Groﬂziethen", ".html");
 	BBBikeTest::like_long_data($content, qr/\(Groﬂziethen -\) Rudow/,
 				   "Shorter route through Groﬂziethen", ".html");
