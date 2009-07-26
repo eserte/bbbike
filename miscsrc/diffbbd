@@ -5,13 +5,15 @@
 # $Id: diffbbd,v 1.5 2007/05/24 22:52:00 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2004 Slaven Rezic. All rights reserved.
+# Copyright (C) 2004,2009 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
 # Mail: slaven@rezic.de
 # WWW:  http://www.rezic.de/eserte/
 #
+
+package BBD::Diff;
 
 use strict;
 use FindBin;
@@ -22,13 +24,6 @@ use Getopt::Long;
 use Algorithm::Diff qw(diff sdiff);
 use Strassen::Core;
 
-my @bbd_diffs;
-my $o;
-
-if (!GetOptions("o=s" => \$o)) {
-    usage("Wrong option");
-}
-
 sub usage {
     my $msg = shift;
     die <<EOF;
@@ -37,90 +32,101 @@ usage: $0 -o outputbbd oldbbd newbbd
 EOF
 }
 
-usage("-o missing") if !$o;
+sub process {
+    my(@args) = @_;
 
-my $file1 = shift || usage("First (old) bbd file missing");
-my $file2 = shift || usage("Second (new) bbd file missing");
+    my @bbd_diffs;
+    my $o;
 
-my $s1 = Strassen->new($file1);
-my $s2 = Strassen->new($file2);
+    local @ARGV = @args;
+    if (!GetOptions("o=s" => \$o)) {
+	usage("Wrong option");
+    }
 
-my @diffs = diff($s1->data, $s2->data);
+    usage("-o missing") if !$o;
 
-for my $diff (@diffs) {
-    for my $subdiff (@$diff) {
-	if ($subdiff->[0] eq "-") {
-	    my($r1, $r2);
-	    for my $subdiff2 (@$diff) {
-		if ($subdiff2->[0] eq "+" &&
-		    $subdiff2->[1] == $subdiff->[1]) { # found corresponding
-		    $r1 = Strassen::parse($subdiff->[2]);
-		    $r2 = Strassen::parse($subdiff2->[2]);
-		    last;
+    my $file1 = shift @ARGV || usage("First (old) bbd file missing");
+    my $file2 = shift @ARGV || usage("Second (new) bbd file missing");
+
+    my $s1 = Strassen->new($file1);
+    my $s2 = Strassen->new($file2);
+
+    my @diffs = diff($s1->data, $s2->data);
+    
+    for my $diff (@diffs) {
+	for my $subdiff (@$diff) {
+	    if ($subdiff->[0] eq "-") {
+		my($r1, $r2);
+		for my $subdiff2 (@$diff) {
+		    if ($subdiff2->[0] eq "+" &&
+			$subdiff2->[1] == $subdiff->[1]) { # found corresponding
+			$r1 = Strassen::parse($subdiff->[2]);
+			$r2 = Strassen::parse($subdiff2->[2]);
+			last;
+		    }
 		}
-	    }
 
-	    if (!$r1 || !$r2) {
-		warn "Can't find corresponding line for $subdiff->[1], line deleted?";
-		next;
-	    }
+		if (!$r1 || !$r2) {
+		    warn "Can't find corresponding line for $subdiff->[1], line deleted?";
+		    next;
+		}
 
-	    (my $name1 = $r1->[Strassen::NAME]) =~ s/^\s+//;
-	    $name1 =~ s/\s+$//;
-	    (my $name2 = $r2->[Strassen::NAME]) =~ s/^\s+//;
-	    $name2 =~ s/\s+$//;
+		(my $name1 = $r1->[Strassen::NAME]) =~ s/^\s+//;
+		$name1 =~ s/\s+$//;
+		(my $name2 = $r2->[Strassen::NAME]) =~ s/^\s+//;
+		$name2 =~ s/\s+$//;
 
-	    if ($name1 ne $name2) {
-		push @bbd_diffs,
-		    Strassen::arr2line2(["$name1 (old) vs. $name2 (new)",
-					 $r2->[Strassen::COORDS],
-					 "changed_name"]);
-	    }
-
-	    (my $cat1 = $r1->[Strassen::CAT]) =~ s/^\s+//;
-	    $cat1 =~ s/\s+$//;
-	    (my $cat2 = $r2->[Strassen::CAT]) =~ s/^\s+//;
-	    $cat2 =~ s/\s+$//;
-
-	    if ($cat1 ne $cat2) {
-		push @bbd_diffs,
-		    Strassen::arr2line2(["$cat1 (old) vs. $cat2 (new)",
-					 $r2->[Strassen::COORDS],
-					 "changed_cat"]);
-	    }
-
-	    my @coords1 = @{ $r1->[Strassen::COORDS] };
-	    my @coords2 = @{ $r2->[Strassen::COORDS] };
-	    my @coord_diffs = sdiff(\@coords1, \@coords2);
-	    for my $coord_diff (@coord_diffs) {
-		my($action, $old, $new) = @$coord_diff;
-		if ($action eq 'c') {
+		if ($name1 ne $name2) {
 		    push @bbd_diffs,
-			Strassen::arr2line2(["change $old",
-					     [$old, $new],
-					     "changed_point"]);
-		} elsif ($action eq '+') {
+			Strassen::arr2line2(["$name1 (old) vs. $name2 (new)",
+					     $r2->[Strassen::COORDS],
+					     "changed_name"]);
+		}
+
+		(my $cat1 = $r1->[Strassen::CAT]) =~ s/^\s+//;
+		$cat1 =~ s/\s+$//;
+		(my $cat2 = $r2->[Strassen::CAT]) =~ s/^\s+//;
+		$cat2 =~ s/\s+$//;
+
+		if ($cat1 ne $cat2) {
 		    push @bbd_diffs,
-			Strassen::arr2line2(["add $new",
-					     [$new], # XXX with prev and succ
-					     "added_point"]); # XXX insert_point
-		} elsif ($action eq '-') {
-		    push @bbd_diffs,
-			Strassen::arr2line2(["del $old",
-					     [$old],
-					     "deleted_point"]);
+			Strassen::arr2line2(["$cat1 (old) vs. $cat2 (new)",
+					     $r2->[Strassen::COORDS],
+					     "changed_cat"]);
+		}
+
+		my @coords1 = @{ $r1->[Strassen::COORDS] };
+		my @coords2 = @{ $r2->[Strassen::COORDS] };
+		my @coord_diffs = sdiff(\@coords1, \@coords2);
+		for my $coord_diff (@coord_diffs) {
+		    my($action, $old, $new) = @$coord_diff;
+		    if ($action eq 'c') {
+			push @bbd_diffs,
+			    Strassen::arr2line2(["change $old",
+						 [$old, $new],
+						 "changed_point"]);
+		    } elsif ($action eq '+') {
+			push @bbd_diffs,
+			    Strassen::arr2line2(["add $new",
+						 [$new], # XXX with prev and succ
+						 "added_point"]); # XXX insert_point
+		    } elsif ($action eq '-') {
+			push @bbd_diffs,
+			    Strassen::arr2line2(["del $old",
+						 [$old],
+						 "deleted_point"]);
+		    }
 		}
 	    }
 	}
     }
-}
 
-my $out = Strassen->new;
-$out->{Data} = [ map { "$_\n" } @bbd_diffs ];
-$out->write($o);
+    my $out = Strassen->new;
+    $out->{Data} = [ map { "$_\n" } @bbd_diffs ];
+    $out->write($o);
 
-open(DESC, ">$o.desc") or die "Can't write $o.desc: $!";
-print DESC <<'EOF';
+    open(DESC, ">$o.desc") or die "Can't write $o.desc: $!";
+    print DESC <<'EOF';
 $category_color{changed_name}  = "#000000";
 $category_color{changed_cat}   = "#000080";
 $category_color{deleted_point} = "#c04040";
@@ -128,7 +134,12 @@ $category_color{added_point}   = "#40c040";
 $category_color{changed_point} = "#4040c0";
 $line_arrow    {changed_point} = "last";
 EOF
-close DESC;
+    close DESC;
+}
+
+return 1 if caller;
+
+BBD::Diff::process(@ARGV);
 
 __END__
 
