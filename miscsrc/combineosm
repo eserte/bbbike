@@ -41,7 +41,7 @@ die "Please specify one or more osm files or directories containing osm files"
     my @new_osm_files;
     for my $osm_file (@osm_files) {
 	if (-d $osm_file) {
-	    push @new_osm_files, grep { -f $_ && -s $_ } glob($osm_file . "/*.osm"); # XXX argh, grep duplicates functionality, see "recursive" suggestion above
+	    push @new_osm_files, grep { -f $_ && -s $_ } glob($osm_file . "/*.osm{,.gz,.bz2}"); # XXX argh, grep duplicates functionality, see "recursive" suggestion above
 	} elsif (-z $osm_file) {
 	    # May happen while loading data, so ignore this
 	    warn "Ignore empty file <$osm_file>...\n";
@@ -61,6 +61,7 @@ my $osm_version;
 my %bounds;
 my %seenid;
 for my $osm_file (@osm_files) {
+    set_info_handler($osm_file);
     my $root = $p->parse_file($osm_file)->documentElement;
     my $this_osm_version = $root->getAttribute("version");
     if (!defined $osm_version || $this_osm_version > $osm_version) {
@@ -120,5 +121,15 @@ close $tmpfh;
 print <<EOF;
 </osm>
 EOF
+
+sub set_info_handler {
+    my($osm_file) = @_;
+    no warnings 'signal'; # INFO is usually only available on BSD systems
+    $SIG{INFO} = sub {
+	my $msg = "File $osm_file";
+	print STDERR $msg, "\n";
+	require Carp; Carp::carp('Currently');
+    };
+}
 
 __END__
