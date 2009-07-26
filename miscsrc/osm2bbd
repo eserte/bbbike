@@ -202,6 +202,26 @@ my %grade_to_Q = (1 => "Q0",
 		  4 => "Q3",
 		  5 => "Q3-",
 		 );
+# XXX to be reviewed
+my %smoothness_to_Q = ('excellent'     => 'Q0',
+		       'good'          => 'Q1',
+		       'intermediate'  => 'Q2',
+		       'bad'           => 'Q3',
+		       'very_bad'      => 'Q3-',
+		       'horrible'      => 'Q3--',
+		       'very_horrible' => 'Q3---',
+		       'impassable'    => undef, # will be turned into a 'gesperrt, 2'
+		      );		       
+
+my %smoothness_to_de = ('excellent'     => 'ausgezeichnet',
+			'good'          => 'gut',
+			'intermediate'  => 'mäßig',
+			'bad'           => 'schlecht',
+			'very_bad'      => 'sehr schlecht',
+			'horrible'      => 'grauenhaft',
+			'very_horrible' => 'sehr grauenhaft',
+			'impassable'    => 'unpassierbar',
+		       );		       
 
 use constant HIGHWAY_BAB_RX => qr{^(?:motorway|motorway_link|trunk|trunk_link)$};
 use constant HIGHWAY_HH_RX  => qr{^(?:primary|primary_link)$};
@@ -874,30 +894,47 @@ for my $osm_file (@osm_files) {
 
 	    my $quality_cat;
 	    my $quality_name;
-	    if (exists $tag{'surface'}) {
-		my $surface = $tag{'surface'};
-		if      ($surface eq 'paved') {
-		    $quality_cat = 'Q0';
-		    $quality_name = 'befestigt (betoniert, asphaltiert oder wassergebunden)';
-		} elsif ($surface eq 'cobblestone') {
-		    $quality_cat = 'Q2';
-		    $quality_name = 'Kopfsteinpflaster';
-		} elsif ($surface eq 'unpaved') {
-		    $quality_cat = 'Q2';
-		    $quality_name = 'unbefestigt';
-		} elsif ($surface eq 'sand') {
-		    $quality_cat = 'Q3';
-		    $quality_name = 'sandig';
-		} elsif ($surface eq 'grass') {
-		    $quality_cat = 'Q3';
-		    $quality_name = 'Gras';
-		} elsif ($surface eq 'wood') {
-		    $quality_cat = 'Q1';
-		    $quality_name = 'Holz';
+	    if (exists $tag{'surface'} || exists $tag{'smoothness'}) {
+		my $surface    = $tag{'surface'}    || '';
+		my $smoothness = $tag{'smoothness'} || '';
+
+		my @quality_name;
+
+		if ($surface ne '') {
+		    if      ($surface eq 'paved') {
+			$quality_cat = 'Q0';
+			@quality_name = 'befestigt (betoniert, asphaltiert oder wassergebunden)';
+		    } elsif ($surface eq 'cobblestone') {
+			$quality_cat = 'Q2';
+			@quality_name = 'Kopfsteinpflaster';
+		    } elsif ($surface eq 'unpaved') {
+			$quality_cat = 'Q2';
+			@quality_name = 'unbefestigt';
+		    } elsif ($surface eq 'sand') {
+			$quality_cat = 'Q3';
+			@quality_name = 'sandig';
+		    } elsif ($surface eq 'grass') {
+			$quality_cat = 'Q3';
+			@quality_name = 'Gras';
+		    } elsif ($surface eq 'wood') {
+			$quality_cat = 'Q1';
+			@quality_name = 'Holz';
+		    }
+		    if ($lang eq 'en') {
+			@quality_name = $surface;
+		    }
 		}
-		if ($lang eq 'en') {
-		    $quality_name = $surface;
+
+		if ($smoothness ne '') {
+		    if (defined $smoothness_to_Q{$smoothness}) {
+			$quality_cat = $smoothness_to_Q{$smoothness}; # overrides before
+			push @quality_name, $lang eq '' ? $smoothness_to_de{$smoothness}||$smoothness : $smoothness;
+		    } else {
+			push @or, ['gesperrt', '2', name => $smoothness];
+		    }
 		}
+
+		$quality_name = join ", ", @quality_name if @quality_name;
 	    }
 
 	    if (exists $tag{'highway'}) {
@@ -944,7 +981,7 @@ for my $osm_file (@osm_files) {
 			# fallback
 			push @or, ["radwege_exact", "RW1"];
 		    }
-		} elsif ($highway_cat eq 'unsurfaced') {
+		} elsif ($highway_cat eq 'unsurfaced') { # XXX not mentioned in Map_Features, maybe fix data and remove?
 		    push @or, ["strassen", "N".$addcat];
 		    if (!defined $quality_cat) {
 			$quality_cat = "Q2";
@@ -1192,6 +1229,7 @@ for my $osm_file (@osm_files) {
 		} elsif ($landuse eq 'residential') {
 		    add_underline(\@or, "_building", "F:#d0d0d0");
 		} else {
+		    # e.g. greenfield (= Bauerwartungsland)
 		    $unhandled{"landuse=$landuse"}++;
 		}
 	    } elsif (exists $tag{'route'}) {
