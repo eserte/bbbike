@@ -166,15 +166,15 @@ gmapsupp-without-rebuild:
 	cd ${PERSISTENTTMPDIR} && \
 	    ${MKGMAP} --gmapsupp ${GMAPSUPP_SRC}
 
-${PERSISTENTTMPDIR}/berlin_combined.osm:    ${MISCDIR}/download/osm/berlin/*.osm		\
-					    ${MISCDIR}/download/osm/potsdam/*.osm		\
-					    ${MISCDIR}/download/osm/uckermark/*.osm		\
-					    ${MISCDIR}/download/osm/usedom/*.osm
+${PERSISTENTTMPDIR}/berlin_combined.osm:    ${MISCDIR}/download/osm/berlin/*.osm{,.gz,.bz2}	\
+					    ${MISCDIR}/download/osm/potsdam/*.osm{,.gz,.bz2}	\
+					    ${MISCDIR}/download/osm/uckermark/*.osm{,.gz,.bz2}	\
+					    ${MISCDIR}/download/osm/usedom/*.osm{,.gz,.bz2}
 	${COMBINE_OSM} \
-		${MISCDIR}/download/osm/berlin			\
-		${MISCDIR}/download/osm/potsdam			\
-		${MISCDIR}/download/osm/uckermark		\
-		${MISCDIR}/download/osm/usedom
+		${MISCDIR}/download/osm/berlin		\
+		${MISCDIR}/download/osm/potsdam		\
+		${MISCDIR}/download/osm/uckermark	\
+		${MISCDIR}/download/osm/usedom		\
 	    > $@~
 	mv $@~ $@
 
