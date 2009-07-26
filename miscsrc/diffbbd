@@ -86,7 +86,8 @@ sub process {
 		    for my $subdiff_old (@$diff) {
 			if ($subdiff_old->[0] eq "-") {
 			    my $tmp_r = Strassen::parse($subdiff_old->[2]);
-			    if ($tmp_r->[Strassen::NAME] eq $r2->[Strassen::NAME]) { # maybe found corresponding
+			    if ($tmp_r->[Strassen::NAME] ne '' &&
+				$tmp_r->[Strassen::NAME] eq $r2->[Strassen::NAME]) { # maybe found corresponding
 				$r1 = $tmp_r;
 				last;
 			    }
