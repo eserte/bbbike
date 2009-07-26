@@ -4,7 +4,7 @@
 # $Id: BBBikePanoramioPlugin.pm,v 1.5 2008/12/01 22:24:44 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2008 Slaven Rezic. All rights reserved.
+# Copyright (C) 2008,2009 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -35,6 +35,7 @@ sub register {
     $main::info_plugins{$pkg} =
 	{ name => "Panoramio on BBBike",
 	  callback => sub { show_mini_images(@_) },
+	  callback_3 => sub { show_panoramio_menu(@_) },
 	};
 }
 
@@ -88,6 +89,27 @@ sub show_mini_images {
     if ($data) {
 	main::status_message("Found $data->{count} photo(s)", "info");
     }
+}
+
+sub show_panoramio_menu {
+    my(%args) = @_;
+    my $w = $args{widget};
+    if (!Tk::Exists($w->{"PanoramioMenu"})) {
+	my $panoramio_menu = $w->Menu(-title => "Panoramio",
+				      -tearoff => 0);
+	$panoramio_menu->command(-label => "Panoramio-Bilder löschen",
+				 -command => sub { delete_panoramio_images() },
+				);
+	$w->{"PanoramioMenu"} = $panoramio_menu;
+    }
+
+    my $e = $w->XEvent;
+    $w->{"PanoramioMenu"}->Post($e->X, $e->Y);
+    Tk->break;
+}
+
+sub delete_panoramio_images {
+    $main::c->delete('panoramio');
 }
 
 1;
