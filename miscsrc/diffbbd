@@ -70,27 +70,57 @@ sub process {
     my @diffs = diff($s1->data, $s2->data);
     
     for my $diff (@diffs) {
-	for my $subdiff (@$diff) {
-	    if ($subdiff->[0] eq "-") {
-		my($r1, $r2);
-		for my $subdiff2 (@$diff) {
-		    if ($subdiff2->[0] eq "+" &&
-			$subdiff2->[1] == $subdiff->[1]) { # found corresponding
-			$r1 = Strassen::parse($subdiff->[2]);
-			$r2 = Strassen::parse($subdiff2->[2]);
+	for my $subdiff_new (@$diff) {
+	    if ($subdiff_new->[0] eq "+") {
+		my $r2 = Strassen::parse($subdiff_new->[2]);
+		my $r1;
+		for my $subdiff_old (@$diff) {
+		    if ($subdiff_old->[0] eq "-" &&
+			$subdiff_old->[1] == $subdiff_new->[1]) { # found corresponding
+			$r1 = Strassen::parse($subdiff_old->[2]);
 			last;
 		    }
 		}
+		if (!$r1) {
+		    # no corresponding found, try more fuzzyness (match names)
+		    for my $subdiff_old (@$diff) {
+			if ($subdiff_old->[0] eq "-") {
+			    my $tmp_r = Strassen::parse($subdiff_old->[2]);
+			    if ($tmp_r->[Strassen::NAME] eq $r2->[Strassen::NAME]) { # maybe found corresponding
+				$r1 = $tmp_r;
+				last;
+			    }
+			}
+		    }
+		}
 
-		if (!$r1 || !$r2) {
-		    warn "Can't find corresponding line for $subdiff->[1], line deleted?";
+		if (!$r1 && !$r2) {
+		    warn "Can't find anything in for $subdiff_new->[1], skipping...";
 		    next;
 		}
 
-		(my $name1 = $r1->[Strassen::NAME]) =~ s/^\s+//;
-		$name1 =~ s/\s+$//;
-		(my $name2 = $r2->[Strassen::NAME]) =~ s/^\s+//;
-		$name2 =~ s/\s+$//;
+		my($name1, $name2);
+		if ($r1) {
+		    ($name1 = $r1->[Strassen::NAME]) =~ s/^\s+//;
+		    $name1 =~ s/\s+$//;
+		}
+		if ($r2) {
+		    ($name2 = $r2->[Strassen::NAME]) =~ s/^\s+//;
+		    $name2 =~ s/\s+$//;
+		}
+		    
+		if (!$r1) {
+		    # could not found old entry -> assume new one
+		    push @bbd_diffs,
+			Strassen::arr2line2(["Added $name2",
+					     $r2->[Strassen::COORDS],
+					     'added_line']);
+		    next;
+		}
+
+		# XXX The !$r2 cannot happen yet, but should to detect
+		# deleted lines (which should occur more rarely, so
+		# it's not that pressing...)
 
 		if ($name1 ne $name2) {
 		    push @bbd_diffs,
