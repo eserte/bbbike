@@ -672,7 +672,7 @@ $max_matches = 20;
 $newstreetform_encoding = "";
 
 @outer_berlin_places = (qw(Potsdam Oranienburg Birkenwerder Kleinmachnow Stahnsdorf Teltow Bernau Strausberg Falkensee Mahlow Erkner
-			   Dahlwitz-Hoppegarten Woltersdorf Rüdersdorf Werder Hennigsdorf Schwanebeck Hönow Ahrensfelde
+			   Dahlwitz-Hoppegarten Woltersdorf Rüdersdorf Werder Hennigsdorf Schwanebeck Hönow Ahrensfelde Großziethen
 		          ), "Hohen Neuendorf", "Königs Wusterhausen", "Schöneiche bei Berlin", "Neuenhagen bei Berlin",
 			"Petershagen bei Berlin", 'Dallgow-Döberitz',
 		       );
