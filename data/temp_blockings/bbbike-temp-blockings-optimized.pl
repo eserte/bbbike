@@ -1629,6 +1629,15 @@ userdel	2::temp 8538,12245 8600,12165 8595,12066
          'data' => 'userdel	2::inwork 45753,-14154 45263,-14192 44580,-14101 44261,-14205
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => 1249077600,
+         'text' => 'L 337 zw. B168 vor Tiefensee und B158 Werftpfuhl Deckenerneuerung Vollsperrung 18.07.2009-31.07.2009 ',
+         'from' => 1247781600,
+         'id' => 1774,
+         'data' => 'userdel	2::inwork 39155,29093 38087,29075 36975,29112
+',
+         'type' => 'gesperrt'
        }
      
 );

@@ -260,7 +260,7 @@ Pannierstr.: Kopfsteinpflaster	Q2 12242,8972 12202,8895
 Fuldastr.: Kopfsteinpflaster	Q2 12907,9073 12836,8980 12740,8862
 Reuterstr.: Kopfsteinpflaster	Q2 12195,8436 12216,8323
 Torfstr.: Kopfsteinpflaster	Q2 6630,15100 6739,14969 6837,14848 6849,14831
-Ostpreußendamm.: gutes Kopfsteinpflaster	Q1 3450,543 3497,574 3579,627 3626,699 3647,739 3808,1016 3849,1116 3879,1211
+Ostpreußendamm.: gutes Kopfsteinpflaster	Q1 3450,543 3497,574 3579,627 3626,699 3647,739 3808,1016 3870,1125 3888,1221
 Alexandrinenstr.: Kopfsteinpflaster	Q2 10678,11172 10586,11116
 Bellermannstr.: Kopfsteinpflaster auf der Fahrbahn, Radwege OK	Q1 9170,16324 9268,16228 9307,16190 9413,16085
 Swinemünder Str.: teilweise Kopfsteinpflaster	Q2 10085,14863 10155,14719 10189,14649
@@ -2232,7 +2232,7 @@ Pietschkerstr.: Asphaltbeton	Q0 17770,5108 17729,5091 17652,5082 17601,5090
 #: note: von der S-Bahn aus gesehen:
 Hildburghauser Str.: Kopfsteinpflaster	Q2 4514,1402 4453,1408
 #: note: von der S-Bahn aus gesehen:
-Fürstenstr.: Kopfsteinpflaster	Q2 4349,1031 4250,763
+Fürstenstr.: Kopfsteinpflaster	Q2 4355,1043 4250,763
 (Aldi/Getränke-Hoffmann-Parkplatz): Verbundsteinpflaster	Q1+ 13208,11658 13186,11692 13173,11788
 Helsingforser Str.: Kopfsteinpflaster	Q2 13427,11431 13270,11581 13208,11658
 Helsingforser Str.: Kopfsteinpflaster	Q2; 13427,11431 13496,11384
@@ -4729,7 +4729,7 @@ Phloxstr.: loser Sandweg	Q3 23659,10074 23784,10051 23891,10027 23999,10004 2410
 Suttnerstr.: Asphalt	Q0 7659,5735 7667,5813 7728,5866 7730,5921 7730,5958
 #: by: ^^^
 #: by: Isa:
-Wunsiedeler Weg: Asphalt	Q0 7589,4008 7582,3885 7576,3774 7573,3698 7501,3432
+Wunsiedeler Weg: Asphalt	Q0 7589,4008 7582,3885 7576,3774 7573,3698 7555,3632 7537,3567 7501,3432
 #: by: Ulf Sawallisch:
 Charlottenstr.: Asphalt	Q0 5774,2785 5929,2982 6044,3110 6129,3203 6218,3302 6426,3425 6529,3480
 #: by: Sandra (sspp):
@@ -8592,7 +8592,7 @@ Grauwackeweg: mäßiger Asphalt	Q1- 10759,1112 10734,1178 10718,1220 10659,1370
 Rastatter Str.: guter Beton	Q0 24002,9691 24250,9629
 #: by: A. Richter:
 #: note: Tempo-30-Zone:
-Presingstr.: Asphalt	Q0 7987,2337 7923,2319 7721,2137 7578,2087 7390,2021
+Presingstr.: Asphalt	Q0 7987,2337 7923,2319 7721,2137 7645,2110 7578,2087 7390,2021
 #: by: Elke Stamm vvv
 Ascheberger Weg: guter Asphalt	Q0 1411,18447 1448,18436 1501,18429 1510,18429 1557,18421 1603,18418 1612,18417 1686,18419 1758,18421 1831,18424 1903,18429 1975,18431 2162,18452 2244,18465
 Herscheider Weg: guter Asphalt	Q0 1743,18604 1758,18421 1771,18303 1760,18200
@@ -9344,8 +9344,8 @@ Kurländer Allee: Asphalt	Q1 684,11090 681,10997 677,10864 673,10724 672,10685
 Boyenallee: Asphalt	Q0 684,11090 524,11204 462,11198
 Marienburger Allee: Asphalt	Q0 778,10988 775,10864 771,10719 643,10524
 Frauenburger Pfad: Waldweg	Q1 474,10869 579,10864 677,10864 775,10864
-Willenburger Pfad: Waldweg	Q1 576,10729 673,10724
-Willenburger Pfad: Kopfsteinpflaster	Q3 673,10724 771,10719
+Willenberger Pfad: Waldweg	Q1 576,10729 673,10724
+Willenberger Pfad: Kopfsteinpflaster	Q3 673,10724 771,10719
 Bismarckallee: Beton	Q0 1533,8635 1524,8524
 Flinsberger Platz: Gehwegplatten, Bordsteine	Q0 2919,8582 2973,8569
 Egerstr.: Gehwegplatten	Q0 2357,8055 2406,8050
@@ -9957,7 +9957,7 @@ Neukirchstr.: Asphalt	Q1 12562,18483 12014,18771
 (Paul-Löbe-Allee - südliches Spreeufer): Kopfsteinpflaster	Q1 7851,12590 7741,12581 7670,12576
 #: by:^^^
 #: by: Geske, Anselm [AM]
-Aalemannufer: Asphalt	Q0 -1989,18378 -2053,18375 -2535,18391 -2678,18396 -2759,18400
+Aalemannufer: Asphalt	Q0 -1989,18378 -2053,18375 -2535,18391 -2605,18393 -2678,18396 -2759,18400
 #: by: anonymous [AM] vvv
 #: corrected_by: srt (Q1 -> Q0)
 Westendstr.: Asphalt	Q0 21389,4635 21370,4442
