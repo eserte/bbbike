@@ -199,7 +199,7 @@ use Route;
 ## DEBUG_END
 use Karte;
 use Hooks;
-use VectorUtil qw(get_polygon_center point_in_polygon point_in_grid);
+use VectorUtil qw(get_polygon_center point_in_polygon point_in_grid offset_line);
 ## DEBUG_BEGIN
 #BEGIN{mymstat("before locale");}
 ## DEBUG_END
@@ -6609,13 +6609,15 @@ sub generate_plot_functions {
 			      );
 			}
 			if (defined $cat_rueck) {
+			    my $delta = $this_width_hin; # XXX need a better rule for this
+			    my($cl_hin,$cl_rueck) = offset_line(\@coordlist, $delta, $cat_hin ne '', $cat_rueck ne '');
 			    for my $dir (1, -1) {
 				my($cl, $this_color, $this_width, $cat, $std_tags, $line_dash, $line_capstyle);
 				if ($dir == 1 && $cat_hin ne '') {
 				    $this_color = $this_color_hin;
 				    $this_width = $this_width_hin/2;
 				    $cat        = $cat_hin;
-				    $cl         = [@coordlist];
+				    $cl         = $cl_hin; # XXX del: [@coordlist];
 				    $std_tags   = \@std_tags_hin;
 				    $line_dash  = $line_dash_hin;
 				    $line_capstyle = $line_capstyle_hin;
@@ -6624,8 +6626,8 @@ sub generate_plot_functions {
 				    $this_width = $this_width_rueck/2;
 				    $cat        = $cat_rueck;
 				    $cl         = [];
-				    for(my $cl_i = $#coordlist-1; $cl_i >= 0; $cl_i-=2) {
-					push @$cl, @coordlist[$cl_i, $cl_i+1];
+				    for(my $cl_i = $#$cl_rueck-1; $cl_i >= 0; $cl_i-=2) {
+					push @$cl, @{$cl_rueck}[$cl_i, $cl_i+1];
 				    }
 				    $std_tags   = \@std_tags_rueck;
 				    $line_dash  = $line_dash_rueck;
@@ -6633,20 +6635,20 @@ sub generate_plot_functions {
 				} else {
 				    next;
 				}
-				my $delta = -$this_width;
-
-				for(my $ii = 2; $ii < $#$cl; $ii+=2) {
-				    # atan2(y2-y1, x2-x1)
-				    my $alpha = atan2($cl->[$ii+1]-$cl->[$ii-1], $cl->[$ii]-$cl->[$ii-2]);
-				    my $beta  = $alpha - pi()/2;
-				    my($dx, $dy) = ($delta*cos($beta), $delta*sin($beta));
-				    $cl->[$ii] += $dx;
-				    $cl->[$ii+1] += $dy;
-				    if ($ii == 2) {
-					$cl->[0] += $dx;
-					$cl->[1] += $dy;
-				    }
-				}
+#				my $delta = -$this_width;
+#
+#				for(my $ii = 2; $ii < $#$cl; $ii+=2) {
+#				    # atan2(y2-y1, x2-x1)
+#				    my $alpha = atan2($cl->[$ii+1]-$cl->[$ii-1], $cl->[$ii]-$cl->[$ii-2]);
+#				    my $beta  = $alpha - pi()/2;
+#				    my($dx, $dy) = ($delta*cos($beta), $delta*sin($beta));
+#				    $cl->[$ii] += $dx;
+#				    $cl->[$ii+1] += $dy;
+#				    if ($ii == 2) {
+#					$cl->[0] += $dx;
+#					$cl->[1] += $dy;
+#				    }
+#				}
 				$c->createLine
 				    (@$cl,
 				     -fill  => $this_color,

@@ -25,6 +25,7 @@ require Exporter;
 		get_polygon_center
 		point_in_grid point_in_polygon move_point_orthogonal
 		intersect_rectangles enclosed_rectangle normalize_rectangle
+		azimuth offset_line
 	       );
 
 sub pi () { 4 * atan2(1, 1) } # 3.141592653
@@ -345,6 +346,65 @@ sub normalize_rectangle {
     ($r[2], $r[0]) = ($r[0], $r[2]) if $r[2] < $r[0];
     ($r[3], $r[1]) = ($r[1], $r[3]) if $r[3] < $r[1];
     @r;
+}
+
+# Return azimuth (Richtungswinkel) of the given vector. Useful for
+# angle arithmetic.
+sub azimuth {
+    my($ax,$ay,$bx,$by) = @_;
+    atan2($by-$ay, $bx-$ax);
+}
+
+sub offset_line {
+    my($pnts, $delta, $do_calc_right, $do_calc_left) = @_;
+
+    my @offset_pnts_left;
+    my @offset_pnts_right;
+
+    my $before_azimuth = undef;
+    my $after_azimuth;
+
+    my $max_pnts_index = @$pnts/2-1;
+    for my $p_i (0 .. $max_pnts_index) {
+	my($p1x, $p1y) = @{$pnts}[$p_i*2, $p_i*2+1];
+	my($p2x, $p2y) = $p_i < $max_pnts_index ? @{$pnts}[$p_i*2+2, $p_i*2+3] : (undef, undef);
+	my $after_azimuth = defined $p2x ? azimuth($p1x,$p1y, $p2x,$p2y) : $before_azimuth;
+	$before_azimuth = $after_azimuth if !defined $before_azimuth;
+
+	my $new_len = $delta / cos(($after_azimuth-$before_azimuth)/2);
+
+	# used vars here: $p1, $before_azimuth, $new_len
+	my $offset_position = sub {
+	    my($add_angle) = @_;
+	    my $angle = $before_azimuth + $add_angle;
+
+	    my $len_angle_to_d = sub {
+		my($len, $angle) = @_;
+		my $xd = $len * cos($angle);
+		my $yd = $len * sin($angle);
+		($xd, $yd);
+	    };
+
+	    my($xd,$yd) = $len_angle_to_d->($new_len, $angle);
+	    my($X2,$Y2) = ($p1x+$xd,$p1y+$yd);
+	    ($X2,$Y2);
+	};
+
+	if ($do_calc_right) {
+	    my $add_angle_right = -((2*pi - (-pi() + $after_azimuth-$before_azimuth))/2);
+	    push @offset_pnts_right, $offset_position->($add_angle_right);
+	}
+
+	if ($do_calc_left) {
+	    # To the left
+	    my $add_angle_left = (-pi() + ($after_azimuth-$before_azimuth))/2;
+	    push @offset_pnts_left, $offset_position->($add_angle_left);
+	}
+
+	$before_azimuth = $after_azimuth;
+    }
+
+    (\@offset_pnts_right, \@offset_pnts_left);
 }
 
 # REPO BEGIN
