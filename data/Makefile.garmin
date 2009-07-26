@@ -133,6 +133,12 @@ MKGMAP=	java -Xmx1024m -jar /usr/local/src/mkgmap-r${MKGMAP_VER}/mkgmap.jar
 MKGMAP_ROUTABLE=	java -Xmx1024m -jar /usr/local/src/mkgmap-r${MKGMAP_ROUTABLE_VER}/mkgmap.jar
 MAPSOURCE_DE_IMG=$(HOME)/doc/map/mapsource_de.img
 
+.if exists(/opt/osmosis-0.24.1-java5/bin/osmosis)
+OSMOSIS=	/opt/osmosis-0.24.1-java5/bin/osmosis
+.else
+OSMOSIS=	/usr/local/src/osmosis-0.24.1-java5/bin/osmosis
+.endif
+
 combined-map:	${PERSISTENTTMPDIR}/gmapsupp.img
 	@echo "* Now do an upload:"
 #	@echo "sudo mount /mnt/garmin"
@@ -143,6 +149,8 @@ combined-map:	${PERSISTENTTMPDIR}/gmapsupp.img
 GMAPSUPP_SRC=	${PERSISTENTTMPDIR}/bbbike_routable.img \
 		${PERSISTENTTMPDIR}/bbbikequal.img \
 		${PERSISTENTTMPDIR}/berlin_osm.img \
+		${PERSISTENTTMPDIR}/sachsen-anhalt_osm.img \
+		${PERSISTENTTMPDIR}/dresden_osm.img \
 		${PERSISTENTTMPDIR}/leipzig_osm.img \
 		${PERSISTENTTMPDIR}/hessen_osm.img \
 		${PERSISTENTTMPDIR}/croatia_osm.img \
@@ -195,8 +203,10 @@ ${PERSISTENTTMPDIR}/berlin_ring_osm_routable.img:	${PERSISTENTTMPDIR}/berlin_rin
 	    ${MKGMAP_ROUTABLE} --description="Berlin Ring Routable OSM" --mapname=12117004 --country-name=Germany --country-abbr=DE --region-name=Berlin --region-abbr=BER --net --route --transparent berlin_ring_osm.osm && \
 	    mv 12117004.img berlin_ring_osm_routable.img )
 
-${PERSISTENTTMPDIR}/leipzig_osm.img:
+${PERSISTENTTMPDIR}/leipzig.osm:	${MISCDIR}/download/osm/leipzig/*
 	${COMBINE_OSM} ${MISCDIR}/download/osm/leipzig > ${PERSISTENTTMPDIR}/leipzig.osm
+
+${PERSISTENTTMPDIR}/leipzig_osm.img:	${PERSISTENTTMPDIR}/leipzig.osm
 	cd ${PERSISTENTTMPDIR} && ( \
 	    ${MKGMAP} --description="Leipzig und Umgebung OSM" --mapname=12117002 leipzig.osm && \
 	    mv 12117002.img leipzig_osm.img )
@@ -228,8 +238,32 @@ ${PERSISTENTTMPDIR}/dalmatia_osm.img:
 ${PERSISTENTTMPDIR}/barnim_osm.img:
 	${COMBINE_OSM} ${MISCDIR}/download/osm/barnim > ${PERSISTENTTMPDIR}/barnim.osm
 	cd ${PERSISTENTTMPDIR} && ( \
-	    ${MKGMAP} --description="Barnim Routable OSM" --mapname=12117008 --net --route barnim.osm && \
+	    ${MKGMAP_ROUTABLE} --description="Barnim Routable OSM" --mapname=12117008 --net --route barnim.osm && \
 	    mv 12117008.img barnim_osm.img )
+
+# routable
+${PERSISTENTTMPDIR}/sachsen-anhalt_osm.img:
+	cd ${PERSISTENTTMPDIR} && ( \
+	    bzcat ${MISCDIR}/download/osm/sachsen-anhalt.osm.bz2 > sachsen-anhalt.osm && \
+	    ${MKGMAP_ROUTABLE} --description="Sachsen-Anhalt OSM" --mapname=12117009 --net --route sachsen-anhalt.osm && \
+	    mv 12117009.img sachsen-anhalt_osm.img )
+
+# routable - probably too large - segfaults with mkgmap 1034
+${PERSISTENTTMPDIR}/sachsen_osm.img:
+	cd ${PERSISTENTTMPDIR} && ( \
+	    bzcat ${MISCDIR}/download/osm/sachsen.osm.bz2 > sachsen.osm && \
+	    ${MKGMAP_ROUTABLE} --description="Sachsen OSM" --mapname=12117010 --net --route sachsen.osm && \
+	    mv 12117010.img sachsen_osm.img )
+
+${PERSISTENTTMPDIR}/dresden.osm:	${MISCDIR}/download/osm/sachsen.osm.bz2
+	${OSMOSIS} --rx file=${MISCDIR}/download/osm/sachsen.osm.bz2 --bb left=13.298826 bottom=50.820773 right=14.506001 top=51.301447 --wx file=${PERSISTENTTMPDIR}/dresden.osm~
+	mv ${PERSISTENTTMPDIR}/dresden.osm~ ${PERSISTENTTMPDIR}/dresden.osm
+
+# routable
+${PERSISTENTTMPDIR}/dresden_osm.img:	${PERSISTENTTMPDIR}/dresden.osm
+	cd ${PERSISTENTTMPDIR} && ( \
+	    ${MKGMAP_ROUTABLE} --description="Dresden und Umgebung OSM" --mapname=12117011 --net --route dresden.osm && \
+	    mv 12117011.img dresden_osm.img )
 
 ######################################################################
 # bbd2osm stuff
