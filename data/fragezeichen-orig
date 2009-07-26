@@ -777,7 +777,7 @@ Cottbusser Platz: laut ADFC-Karte gute Qualität	? 23297,14772 23288,14719 23298,
 #: XXX: ein weiterer anonymer Eintrag meint: Beton Q1, aber auch keine Hinweise zur Einbahnstraße
 Beilsteiner Str.: Qualität (laut ADFC-Karte im südlichen Abschnitt gut geeignet; zumindest in Höhe Allee der Kosmonauten asphaltiert)	? 18749,12413 18800,12838 18832,13099 18852,13269 18875,13473 18871,13796 18859,14048 18998,14089 19025,14037
 #: XXX: ein anonymer Eintrag: eng schlechter straßenbelag, Q2
-Schillingweg: laut ADFC-Karte mäßig bis gut geeignet	? 11514,24284 11101,23708 10855,23403 10717,23258 10700,23251 10396,23128 9890,22932
+Schillingweg: laut ADFC-Karte mäßig bis gut geeignet	? 11514,24284 11259,23928 11224,23879 11190,23832 11128,23746 11101,23708 10855,23403 10717,23258 10700,23251 10396,23128 9890,22932
 Wriezener/Osloer Str.: ist das Abbiegen wegen der Straßenbahn möglich?	? 9210,16638
 Laut <cp6net$f0g$1@zeppelin.rz.uni-potsdam.de> ist die Eisenbahnbrücke für Fußgänger begehbar, laut <cn2fr0taoncnlu6s84inbhgpo8lq0u0bh2@4ax.com> sogar offizieller Bestandteil des Elbe-Radwegs	? -92087,-49506 -91387,-49350
 Weg entlang der Elbe: Qualität?	? -91387,-49350 -91150,-49775 -90062,-50750 -89709,-51230
@@ -1071,8 +1071,8 @@ Möllersfelder Weg - Schillingweg: Qualität (möglicherweise guter Feldweg)? Teil 
 (Am Schloss Schönhausen): Qualität? Für Autofahrer befahrbar?	? 10390,19069 10322,19046 10278,19072 10249,19148 10223,19223 10243,19267 10308,19297
 Schloßallee - Blankenburger Str.: Qualität (laut ADFC-Karte gut geeignet)?	? 10661,19307 10481,19344 10377,19565
 #: XXX: zumindestens für den südlichen Abschnitt bestätigt, aber auf dem Luftbild sieht es so aus, als ob ein kleiner Abschnitt asphaltiert sein könnte:
-Blaubeerweg: Qualität (laut ADFC-Karte mäßig geeignet)?	? 10932,22184 10979,21977 10993,21948 11000,21858 11060,21694
-Mazetstr.: Qualität (laut ADFC-Karte überwiegend gut geeignet)? Ist der Abschnitt östlich der Blankenfelder Str. für Autofahrer gesperrt?	? 10979,21977 11056,21978 11329,22138 11437,22198 11504,22277 11566,22350
+Blaubeerweg: Qualität (laut ADFC-Karte mäßig geeignet)?	? 10932,22184 10993,21948 11000,21858 11060,21694
+Mazetstr.: Qualität (laut ADFC-Karte überwiegend gut geeignet)?	? 10993,21948 11056,21978 11231,22065 11347,22122 11461,22179
 Revierförsterei Blankenfelde - Blankenfelder Chaussee: Qualität (laut ADFC-Karte gut geeignet)?	? 9747,22694 9469,22606
 Revierförsterei Blankenfelde - Mönchmühler Str.: Qualität (laut ADFC-Karte mäßig geeignet)? Existiert überhaupt eine Verbindung zur Mönchmühler Str.?	? 9469,22606 8801,22341 8566,22434 8554,22440
 Schildower Weg - Schildower Str.: Qualität (laut ADFC-Karte mäßig geeignet)?	? 8415,24361 8547,24437 8891,24330
@@ -2007,7 +2007,7 @@ Hyazinthenstr.: Qualität?	? 3527,4608 3587,4514 3597,4494
 #: XXX beate wolters meint: gesamte Straße hat repariertes Kopfsteinpflaster, Q1
 Baseler Str.: Qualität nördlich der Curtiusstr.?	? 3185,3958 3141,4023
 #: note: ja, die Einbahnstraße gilt für alle:
-#: XXX beate wolters meint: Asphalt (aber hier sieht man Kopfsteinpflaster http://www.panoramio.com/photo/18620091, und hier sieht man Asphalt: http://www.panoramio.com/photo/5700740) und widerspricht sich bei der Einbahnstraßenregelung
+#: XXX beate wolters meint: Asphalt (hier sieht man Asphalt: http://www.panoramio.com/photo/5700740); bei der Einbahnstraßenregelung ist ihr Eintrag nicht klar, wahrscheinlich Einbahnstraße im östlichen Teil und keine im westlichen (da Sackgasse)
 Hans-Sachs-Str. (Lichterfelde): Qualität? Existiert eine Einbahnstraßenregelung zwischen Drakestr. und Baseler Str., und wenn ja, nur für Autofahrer oder auch für Radfahrer?	? 3214,4066 3141,4023 3049,3966
 Wüllenweberweg: Qualität?	? 4276,3202 4303,3260 4342,3366
 Chlumer Str.: Qualität?	? 4013,4547 4039,4500
@@ -3628,3 +3628,51 @@ Wieselstr.: Qualität? Für Autos gesperrt?	? 24071,11573 23955,11612 23950,11597
 Hamsterstr.: Qualität? Für Autos gesperrt?	? 23946,11590 23799,11646 23694,11678 23592,11710 23495,11753 23390,11792
 Ferdinandstr. (Kaulsdorf): Qualität?	? 23403,11841 23215,11852 22947,11840
 Karlstr. (Kaulsdorf): Qualität?	? 23148,11419 22945,11402 22751,11381
+Matestr.: Qualität?	? 15611,23552 15653,23630 15699,23707 15744,23788
+Rutenzeile: Qualität?	? 15566,23684 15610,23763 15640,23820
+Am Elsebrocken: Qualität?	? 15569,23908 15656,23850 15744,23788 15793,23762
+Teichbergstr.: Qualität?	? 15520,23824 15610,23763 15699,23707 15805,23636
+#: XXX Teleatlas und osm widersprechen sich beim Namen:
+#: XXX laut osm "paved", und der nördliche Abschnitt access=private
+Ringallee/Zur Ringallee: Name der Straße (Ringallee oder Zur Ringallee)? Qualität? Ist die Einfahrt in den nördlichen Abschnitt verboten?	? 13551,17566 13588,17614 13614,17650 13791,17903
+#: XXX Teleatlas und osm widersprechen sich beim Namen:
+#: XXX laut osm "paved"
+Zur Ringallee: Name der Straße ("Zur Ringallee" oder anders?)? Qualität?	? 13614,17650 13582,17738 13586,17830 13640,17921 13740,17977 13830,17990 13958,17966 14047,17894 14101,17817 14124,17730 14161,17681
+Apfelwicklerstr.: Qualität?	? 21475,10590 21436,10671
+Straße 56 (Heinersdorf): Qualität der Straße? Kann die Berliner Str. in Höhe Straße 56 überquert werden oder ist das wegen der Straßenbahngleise nicht möglich?	? 12448,17679 12587,17603
+#: XXX Eintrag in Berlin.coords.data fehlt
+Straße 49 (Heinersdorf): Qualität der Straße?	? 12780,17318 12407,17508
+#: XXX Eintrag in Berlin.coords.data fehlt
+Hans-Schumacher-Str.: Qualität?	? 11259,23928 11944,23391 11963,23410 12047,23345
+#: XXX Eintrag in Berlin.coords.data fehlt
+Zeuschelstr.: Qualität?	? 12022,23058 11788,23229 11629,23360 11560,23421 11128,23746
+#: XXX Eintrag in Berlin.coords.data fehlt
+#: XXX Eintrag in str_cont_ausnahme notwendig
+Rupertweg: Qualität?	? 11629,23360 11600,23317 11536,23231
+Rupertweg: Qualität?	? 11551,23221 11505,23160 11449,23088
+#: XXX Eintrag in Berlin.coords.data fehlt
+Marthe-Fontane-Str.: Qualität?	? 11788,23229 11754,23195 11600,23317
+#: XXX Eintrag in Berlin.coords.data fehlt
+Vienweg: Qualität?	? 11977,22801 11505,23160
+Schützenstr. (Französisch Buchholz): Qualität?	? 11959,22696 11449,23088 11353,23154
+#: XXX Eintrag in Berlin.coords.data fehlt
+Cunistr.: Qualität?	? 11693,22482 11240,22803
+Tiriotstr.: Qualität?	? 11765,22198 11484,22406 11235,22590
+Matthieustr.: Qualität?	? 11235,22590 11176,22526 11108,22445
+Favierweg: Qualität?	? 10876,22613 10979,22769
+#: XXX Teleatlas und osm widersprechen sich beim Namen
+Chartronstr.: Qualität? Straßenname "Chartonstr." oder "Chartronstr."?	? 11507,22143 11487,22112 11448,21863 11408,21653
+Straße 147: Qualität?	? 11448,21863 11505,21851
+#: XXX Eintrag in Berlin.coords.data fehlt
+Stadtgärten: Qualität?	? 11585,22082 11568,22056 11544,21897 11575,21888 11566,21829 11534,21831 11518,21727 11589,21713
+#: XXX Eintrag in Berlin.coords.data fehlt
+Saupéweg: Qualität?	? 11641,22038 11589,21713 11584,21688
+Ancillonweg: Qualität?	? 11204,21567 11228,21684
+Suzetteweg: Qualität?	? 11805,21385 11561,21429
+Dr.-Markus-Str.: Qualität?	? 12172,21545 12260,21583 12364,21623 12495,21670
+Wodanstr. (Französisch Buchholz): Qualität?	? 12216,21945 12162,21743
+#: XXX Eintrag in str_cont_ausnahme notwendig
+Eddastr.: Qualität?	? 12364,21623 12418,21727 12433,21880 12448,21971 12467,22147 12488,22305 12489,22420
+Eddastr.: Qualität?	? 12476,22423 12473,22801
+Gravensteinstr.: Qualität?	? 12185,22465 12228,22460 12397,22429 12476,22423 12489,22420 12568,22421 12592,22427 12692,22566 12766,22668 12773,22674 12836,22763 12848,22776 12901,22826 12995,22843 13028,22886 13070,22903 13156,22889
+Ludwig-Quidde-Str.: Qualität?	? 12570,21058 12613,21132 12695,21336 12778,21583 12806,21639 12825,21771 12829,21814 12837,21876 12841,21925 12843,22010 12850,22177 12852,22262 12852,22337 12855,22431
