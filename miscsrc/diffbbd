@@ -139,18 +139,16 @@ sub process {
 
     my $out = Strassen->new;
     $out->{Data} = [ map { "$_\n" } @bbd_diffs ];
+    $out->set_global_directives({ 'category_color.changed_name'  => ['#000000'],
+				  'category_color.changed_cat'   => ['#000080'],
+				  'category_color.deleted_point' => ['#c04040'],
+				  'category_color.added_point'   => ['#40c040'],
+				  'category_color.changed_point' => ['#4040c0'],
+				  'category_color.deleted_line'  => ['#c04040'],
+				  'category_color.added_line'    => ['#40c040'],
+				  'line_arrow.changed_point'     => ['last'],
+				});
     $out->write($o);
-
-    open(DESC, ">$o.desc") or die "Can't write $o.desc: $!";
-    print DESC <<'EOF';
-$category_color{changed_name}  = "#000000";
-$category_color{changed_cat}   = "#000080";
-$category_color{deleted_point} = "#c04040";
-$category_color{added_point}   = "#40c040";
-$category_color{changed_point} = "#4040c0";
-$line_arrow    {changed_point} = "last";
-EOF
-    close DESC;
 }
 
 return 1 if caller;
