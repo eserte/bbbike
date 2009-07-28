@@ -24,6 +24,7 @@ use strict;
 use vars
   qw($bbbike_context $splash_screen $booting $status_message_dialog $status_message_toplevel
      $coords_ref $realcoords_ref $search_route_points_ref @realcoords
+     @temp_blockings_on_route %temp_blockings_on_route_seen
      $VERSION $PROG_REVISION $tmpdir %tmpfiles $progname
      $os $os_bsd $use_clipboard $verbose $advanced $devel_host $public_test
      $datadir $no_original_datadir $city $country
@@ -34,7 +35,8 @@ use vars
      $dataset %str_obj %str_cache_attr %p_obj $net $no_make_net
      %str_file %p_file %ampeln %hoehe %custom_net_str $most_recent_str_layer $most_recent_p_layer
      %sperre %sperre_tragen %sperre_narrowpassage $sperre_file $use_faehre
-     $do_activate_temp_blockings $show_active_temp_blockings $current_temp_blockings_ms
+     $do_activate_temp_blockings $show_active_temp_blockings
+     $current_temp_blockings_ms $current_temp_blockings_net
      $coord_system $coord_system_obj $scale_coeff $scale %scalecommand
      %can_handle_image @image_type_order $register_window_adjust
      $ampel_count $kopfstein_count $ampel_count_button $kopfstein_count_button
@@ -145,6 +147,7 @@ use vars qw(
      $outline_i
      $without_zoom_factor $coord_output_int
      $in_canvas_drag $maybe_canvas_drag $canvas_drag_x $canvas_drag_y
+     $blockings_infobar
     );
 #XXX del:  %wind_dir $wind_dir_from $wind_dir_to $wind 
 use vars qw(@speed @power $speed_power_reference_string
