@@ -1089,7 +1089,8 @@ tragen (Eisenbahnbrücke Caputh)	0:60 -18009,-7528
 tragen (Eisenbahnbrücke Caputh)	0:60 -17978,-7375
 tragen (Eisenbahnbrücke Werder)	0:60 -21048,-2029
 tragen (Eisenbahnbrücke Werder)	0:60 -21210,-2058
-tragen (Elsenbrücke, ungefähr 2 x 15 Stufen)	0:60 13383,8716
+tragen (Elsensteg, 6 Stufen)	0:10 13376,8705
+tragen (Elsensteg, 6 Stufen)	0:10 13394,8730
 tragen (Gerickesteg, ungefähr 20 Stufen)	0:30 6748,12669
 tragen (Gerickesteg, ungefähr 20 Stufen)	0:30 6702,12633
 #: note: exakt 48 oder 49 Stufen
@@ -1106,7 +1107,7 @@ tragen (20 Stufen)	0:25 13138,9897
 unter der S-Bahn-Brücke tragen	0:30 3730,18992
 tragen oder Aufzug (Storkower Str.)	0:60 14528,13241
 tragen oder Aufzug (Storkower Str.)	0:60 14503,13167
-tragen (zum Uferweg an den Treptowers)	0:60 14383,10036
+tragen (zum Uferweg an den Treptowers, 24 Stufen)	0:35 14383,10036
 tragen (Mühsamstr.)	0:30 13253,12625
 tragen (34 Stufen)	0:40 14787,10972
 #: XXX analog zur Südseite
@@ -1135,7 +1136,7 @@ tragen (Treppe und Rampe)	0:30 39281,17353
 tragen (Treppe oder sehr steile, sandige Rampe)	0:60 41715,18446
 tragen (Treppe am Körnerpark)	0:30 12734,7384
 tragen (mehrere Treppen mit insgesamt ca. 25 Stufen und Kinderwagenrampe)	0:30 12115,8556
-tragen (Treppe mit Kinderwagenrampe)	0:30 13960,9365
+tragen (Treppe, 5 x 3 Stufen mit Kinderwagenrampe)	0:25 13953,9372
 tragen (Treppe)	0:30 8014,12846
 tragen (Treppe)	0:30 8428,12859
 tragen (Treppe)	0:30 8445,12755
@@ -1180,6 +1181,7 @@ tragen (Treppe, 4 Stufen)	0:10 38056,48407
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+Schranke	BNP:0::trailer=3 9920,11074
 #: by: http://www.benno-koch.de/article09575_dumm_gelaufen_schifffahrtsamt_sperrt_teltow-route2 vvv
 Drängelgitter	BNP:5 4258,2693
 Drängelgitter	BNP:5 4202,2622

@@ -452,7 +452,7 @@ Görlitzer Park: asphaltiert	Q0 12802,10097 12670,10160
 Görlitzer Park: teils fester sandiger Weg	Q1 12507,10130 12509,10189 12559,10220
 Görlitzer Park: schlechtes Kopfsteinpflaster	Q3 12559,10220 12611,10299
 Zur Eisenbahnbrücke: gutes Kopfsteinpflaster	Q1 13302,9894 13229,9853
-Bahndamm: fester Sandweg	Q1 13282,9828 13476,9720 13951,9356
+Bahndamm: fester Sandweg	Q1 13282,9828 13476,9720 13934,9365 13966,9340
 Tiergartenufer: Parkweg (Bodenwellen)	Q2 6186,11466 6079,11524 5940,11616 5903,11683 5835,11768 5711,11841 5566,11860
 (Lichtensteinallee - Tiergartenufer): Parkweg	Q2 6309,11443 6186,11466
 Fasanerieallee: Parkweg	Q1 6435,11606 6459,11638 6540,11754 6685,11954
@@ -471,7 +471,7 @@ Tiergarten: Parkweg	Q1 8215,12156 8222,11881 8223,11796 8223,11700
 Tiergarten: Parkweg	Q1 7663,11946 7570,11855 7223,11897 7073,11798 6778,11742 6540,11754
 Parkweg: sehr gutes Kopfsteinpflaster	Q1 14310,9692 14351,9757 14448,9922
 Parkweg: Verbundsteinpflaster	Q1 14448,9922 14453,9929 14558,10082 14597,10129 14626,10162 14652,10201
-Uferweg an den Treptowers: Parkweg (fester Sandweg)	Q0 14373,10046 14192,10145 14111,10169 13903,10237
+Uferweg an den Treptowers: Parkweg (fester Sandweg)	Q0 14373,10046 14202,10152 14118,10178 13903,10237
 Hasenheide: asphaltiert	Q0 11271,8325 11282,8428 11250,8585 11177,8985 11128,9100 11136,9183
 Hasenheide, zur Lilienthalstr.: Parkweg	Q1 10709,9192 11128,9100
 Carl-Herz-Ufer: Kopfsteinpflaster (kann auf Uferweg umgangen werden)	Q2 10619,9914 10602,9957 10500,10081
@@ -2269,6 +2269,7 @@ Rumeyplan: Asphalt mit Schäden	Q1 8684,7688 8815,7722 8902,7763 8967,7821
 Bülowstr. (Zehlendorf): Kopfsteinpflaster	Q2 -662,2998 -872,3133 -1052,3276 -1054,3328
 Mäckeritzstr.: asphaltiert	Q0 1361,14431 1320,14440 1262,14510 1244,14558 1235,14609
 (Neue Grünstr. - Alte Jakobstr.): Kleinpflaster	Q1 10624,11548 10534,11609
+Ritterstr.: Verbundsteinpflaster	Q0 9935,11067 9920,11074 9861,11103
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
 Riemeisterstr.: mäßiges Kopfsteinpflaster, aber asphaltierte Radwege	Q1 346,4833 294,4916 158,5103 103,5123
 Pücklerstr.: Fahrbahn mit schlechtem Kopfsteinpflaster, Radweg OK	Q1 2688,7067 2576,7026 2465,6984 2403,6962 2266,6911 2155,6873 2130,6865 2054,6840 1961,6820
@@ -5804,7 +5805,7 @@ Bahrfeldtstr.: Kopfsteinpflaster	Q2 14844,10088 14921,10047 14956,10028 14974,10
 Fanny-Zobel-Str.: Asphalt	Q0 13928,10053 13971,10182 14053,10157 14012,10029
 Fanny-Zobel-Str.: Asphalt	Q0 13971,10182 13891,10208
 (Hoffmannstr. - Puschkinallee): Verbundsteine	Q1 14076,10011 13995,9834
-(Hoffmannstr. - Uferweg an den Treptowers): Verbundsteine	Q1 14076,10011 14111,10169
+(Hoffmannstr. - Uferweg an den Treptowers): Verbundsteine	Q1 14076,10011 14118,10178
 Dossestr. (Friedrichshain): Kopfsteinpflaster	Q2 15037,11628 15140,11811 15202,11789
 Eldenaer Str.: Asphalt	Q1 14096,12827 13979,12861 13960,12866 13844,12900
 Neue Welt: Asphalt	Q0 14709,12949 14431,13028
