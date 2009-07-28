@@ -18545,6 +18545,35 @@ sub LongOrNormalDialog {
     $Dialog;
 }
 
+{
+    my $blockings_infobar;
+    sub _blockings_infobar_exists {
+	return if $blockings_infobar && Tk::Exists($blockings_infobar);
+	my %stdcolor = (-bg => 'yellow');
+	$blockings_infobar = $c->Frame(Name => "blockingsinfobar", %stdcolor, -relief => 'raised', -borderwidth => 1);
+	$blockings_infobar->Label(-text => "Mögliche temporäre Sperrungen auf der Route", %stdcolor)->pack(-side => "left"); # XXX Msg
+	$blockings_infobar->Button(-padx => 1, -pady => 1, -borderwidth => 1,
+				   -text => "Anzeigen",
+				   -command => sub { show_blockings() },
+				  )->pack(-side => "left", -padx => 10);
+	$blockings_infobar->idletasks; # to force -reqheight to be set
+    }
+
+    sub show_blockings_infobar {
+	require Tk::SmoothShow;
+	_blockings_infobar_exists();
+	Tk::SmoothShow::show($blockings_infobar);
+    }
+
+    sub hide_blockings_infobar {
+	if ($blockings_infobar && Tk::Exists($blockings_infobar)) {
+	    require Tk::SmoothShow;
+	    Tk::SmoothShow::hide($blockings_infobar);
+	}
+    }
+}
+
+
 sub set_status_button {
     my(%args) = @_;
     $status_button->grid(-column => $status_button_column,
