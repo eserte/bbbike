@@ -1080,8 +1080,8 @@ Föhrer Str. -> Augustenburger Pl.: Mittelstreifen	3::igndisp 6528,15000 6561,150
 unbequem passierbarer Mittelstreifen	3nocross::ignrte 14208,12235 14291,12220 14381,12205
 Kreutzigerstr. -> Frankfurter Allee: unbequem passierbarer Mittelstreifen	3::igndisp 14285,12190 14291,12220 14208,12235
 Frankfurter Allee -> Kreutzigerstr.: unbequem passierbarer Mittelstreifen	3::igndisp 14381,12205 14291,12220 14285,12190
-unbequem passierbarer Mittelstreifen	3nocross::ignrte 14381,12205 14427,12197 14488,12189
-Frankfurter Allee -> Mainzer Str.: unbequem passierbarer Mittelstreifen	3::igndisp 14488,12189 14427,12197 14357,12011
+unbequem passierbarer Mittelstreifen	3nocross::ignrte 14381,12205 14427,12197 14488,12188
+Frankfurter Allee -> Mainzer Str.: unbequem passierbarer Mittelstreifen	3::igndisp 14488,12188 14427,12197 14357,12011
 Mainzer Str. -> Frankfurter Allee: unbequem passierbarer Mittelstreifen	3::igndisp 14357,12011 14427,12197 14381,12205
 unbequem passierbarer Mittelstreifen	3nocross::ignrte 13785,12292 13885,12279 14208,12235
 Liebigstr. -> Frankfurter Allee: unbequem passierbarer Mittelstreifen	3::igndisp 13905,12374 13885,12279 14208,12235
@@ -1801,19 +1801,19 @@ Heilsberger Allee -> Heerstr.: Heerstr.	3::igndisp -391,11322 -420,11110 -346,11
 Heerstr. -> Heilsberger Allee: Heerstr.	3::igndisp -535,11096 -420,11110 -391,11322
 Rauschener Allee -> Heerstr.: Heerstr.	3::igndisp -328,10971 -346,11121 -420,11110
 Heerstr. -> Rauschener Allee: Heerstr.	3::igndisp -68,11156 -346,11121 -328,10971
-Heerstr.	3nocross::ignrte -68,11156 21,11167 232,11190 439,11228 456,11233
+Heerstr.	3nocross::ignrte -68,11156 21,11167 231,11198 439,11228 456,11233
+Heerstr. -> Parkweg Ortelsburger Allee: Heerstr.	3::igndisp 231,11198 21,11167 23,11137
 Heerstr. -> Pillkaller Allee: Heerstr.	3::igndisp -68,11156 21,11167 14,11215
-Pillkaller Allee -> Heerstr.: Heerstr.	3::igndisp 14,11215 21,11167 232,11190
+Pillkaller Allee -> Heerstr.: Heerstr.	3::igndisp 14,11215 21,11167 231,11198
 Pillkaller Allee -> Parkweg Ortelsburger Allee: Heerstr.	3::igndisp 14,11215 21,11167 23,11137
-Heerstr. -> Parkweg Ortelsburger Allee: Heerstr.	3::igndisp 232,11190 21,11167 23,11137
 Parkweg Ortelsburger Allee -> Heerstr.: Heerstr.	3::igndisp 23,11137 21,11167 -68,11156
 Parkweg Ortelsburger Allee -> Pillkaller Allee: Heerstr.	3::igndisp 23,11137 21,11167 14,11215
-Insterburgallee -> Heerstr.: Heerstr.	3::igndisp 200,11428 232,11190 439,11228
-Insterburgallee -> Insterburgallee: Heerstr.	3::igndisp 200,11428 232,11190 251,11039
-Heerstr. -> Insterburgallee: Heerstr.	3::igndisp 21,11167 232,11190 200,11428
-Heerstr. -> Insterburgallee: Heerstr.	3::igndisp 439,11228 232,11190 251,11039
-Insterburgallee -> Insterburgallee: Heerstr.	3::igndisp 251,11039 232,11190 200,11428
-Insterburgallee -> Heerstr.: Heerstr.	3::igndisp 251,11039 232,11190 21,11167
+Insterburgallee -> Heerstr.: Heerstr.	3::igndisp 200,11428 231,11198 439,11228
+Insterburgallee -> Insterburgallee: Heerstr.	3::igndisp 200,11428 231,11198 251,11039
+Heerstr. -> Insterburgallee: Heerstr.	3::igndisp 21,11167 231,11198 200,11428
+Heerstr. -> Insterburgallee: Heerstr.	3::igndisp 439,11228 231,11198 251,11039
+Insterburgallee -> Insterburgallee: Heerstr.	3::igndisp 251,11039 231,11198 200,11428
+Insterburgallee -> Heerstr.: Heerstr.	3::igndisp 251,11039 231,11198 21,11167
 Heerstr. -> Teufelsseestr.: Heerstr.	3::igndisp 456,11233 439,11228 454,11159
 tragen (20 Stufen)	0:30:-186 23,11137
 Oldenburgallee	1 454,11670 461,11455
