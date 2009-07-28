@@ -114,7 +114,8 @@ if ($single_file) {
     Strassen->new_stream("$datadir/strassen")->read_stream(\&handle_highway_like);
     Strassen->new_stream("$datadir/landstrassen")->read_stream(\&handle_highway_like);
     Strassen->new_stream("$datadir/landstrassen2")->read_stream(\&handle_highway_like);
-    Strassen->new_stream("$datadir/../tmp/fragezeichen-nextcheck.bbd")->read_stream(\&handle_highway_like);
+    my $fragezeichen = -r "$datadir/../tmp/fragezeichen-nextcheck.bbd" ? "$datadir/../tmp/fragezeichen-nextcheck.bbd" : "$datadir/fragezeichen";
+    Strassen->new_stream($fragezeichen)->read_stream(\&handle_highway_like);
 
     Strassen->new_stream("$datadir/ubahn")->read_stream(\&handle_railway_like);
     Strassen->new_stream("$datadir/sbahn")->read_stream(\&handle_railway_like);
