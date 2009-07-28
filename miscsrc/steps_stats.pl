@@ -97,9 +97,9 @@ __END__
      Treppe brauchte ich geschätzte 40 Sekunden, Kind blieb
      wahrscheinlich drinnen. -> 1.5s/Stufe
 
-   * Elsenbrücke: ca. 2 x 15 Stufen, insgesamt 60 Meter, im Mittel
-     verlorene Zeit 35 Sekunden. Bei 20 km/h hätte man es in ca. 10
-     Sekunden geschafft -> 0.83 Sekunden/Stufe
+   * Elsensteg: 2 x 6 Stufen, insgesamt 60 Meter, im Mittel Fahrzeit
+     35 Sekunden. Bei 13 km/h (als q3 markiert) hätte man es in ca. 17
+     Sekunden geschafft -> 1.4 Sekunden/Stufe
 
    * Sasarsteig: mehrere Treppen, insgesamt 25 Stufen, im Mittel
      verlorene Zeit 50 Sekunden. Bei 20 km/h hätte man es in ca. 21
