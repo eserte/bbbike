@@ -30,6 +30,7 @@ patch\.gz$
 ^nytprof\.out$
 ^nytprof/
 ^profiler/
+^\.prove$
 # private common files
 \.ok2cgi$
 \.copynewer.SKIP$
@@ -98,6 +99,9 @@ cgi/bbbike-netbeat.cgi.config
 cgi/bbbike-sourceforge.cgi.config
 cgi/bbbike-ipaq.cgi.config$
 cgi/bbbike-radzeit.cgi.config$
+cgi/bbbike-biokovo.cgi.config$
+cgi/bbbike-debian.cgi.config$
+cgi/bbbike-osm.cgi.config$
 cgi/bbbike2-radzeit.cgi.config$
 cgi/bbbike2.cgi.config$
 cgi/bbbike-cs.cgi.config$

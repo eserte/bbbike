@@ -276,6 +276,7 @@ data/obst
 data/orte
 data/orte2
 data/orte_city
+data/ortsschilder
 data/plaetze
 data/plz
 data/potsdam
@@ -709,6 +710,9 @@ images/museum.xpm
 images/newlayer.gif
 images/newlayer.png
 images/newlayer.xpm
+images/notrailer.gif
+images/notrailer.png
+images/notrailer.xpm
 images/open.gif
 images/open.xpm
 images/open_ovl.gif
@@ -950,6 +954,7 @@ lib/Tk/RotX11Font.pm
 lib/Tk/Ruler.pm
 lib/Tk/SRTProgress.pm
 lib/Tk/SRTScrollbar.pm
+lib/Tk/SmoothShow.pm
 lib/Tk/Splash.pm
 lib/Tk/StippleLine.pm
 lib/Tk/TextProgress.pm
