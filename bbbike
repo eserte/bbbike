@@ -6609,7 +6609,7 @@ sub generate_plot_functions {
 			      );
 			}
 			if (defined $cat_rueck) {
-			    my $delta = $this_width_hin; # XXX need a better rule for this
+			    my $delta = $this_width_hin/2; # XXX need a better rule for this
 			    my($cl_hin,$cl_rueck) = offset_line(\@coordlist, $delta, $cat_hin ne '', $cat_rueck ne '');
 			    for my $dir (1, -1) {
 				my($cl, $this_color, $this_width, $cat, $std_tags, $line_dash, $line_capstyle);
@@ -20943,7 +20943,7 @@ sub balloon_info_from_all_tags {
     }
 }
 
-sub get_special_vehicle { $special_vehicle_rb eq 'normal' ? '' : $special_vehicle_rb }
+sub get_special_vehicle { !defined $special_vehicle_rb || $special_vehicle_rb eq 'normal' ? '' : $special_vehicle_rb }
 
 # REPO BEGIN
 # REPO NAME tk_sleep /home/e/eserte/work/srezic-repository 

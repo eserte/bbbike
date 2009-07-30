@@ -265,16 +265,17 @@ sub change_bnp_penalty_for_special_vehicle {
     if (@$addinfo_ref >= 2) {
 	# first addinfo is angle, following are possible special vehicle penalties
 	for my $addinfo (@{$addinfo_ref}[1 .. $#$addinfo_ref]) {
-	    my($key,$val) = split /=/, $addinfo;
-	    if ($key eq $special_vehicle) {
-		if ($val eq 'no') {
-		    $$category_ref = StrassenNetz::BLOCKED_ROUTE();
-		} elsif ($val =~ m{^\d+$}) {
-		    $$penalty_ref = $val;
-		} else {
-		    warn "Unexpected value '$val'";
+	    if (my($key,$val) = $addinfo =~ m{^(.*?)=(.*)$}) {
+		if ($key eq $special_vehicle) {
+		    if ($val eq 'no') {
+			$$category_ref = StrassenNetz::BLOCKED_ROUTE();
+		    } elsif ($val =~ m{^\d+$}) {
+			$$penalty_ref = $val;
+		    } else {
+			warn "Unexpected value '$val'";
+		    }
+		    last;
 		}
-		last;
 	    }
 	}
     }
