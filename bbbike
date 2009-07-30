@@ -10832,7 +10832,7 @@ sub activate_temp_blockings {
 	$current_temp_blockings_ms = $ms;
 	if ($XXX_use_new_temp_blockings) {
 	    $current_temp_blockings_net = StrassenNetz->new($ms);
-	    $current_temp_blockings_net->make_net;
+	    $current_temp_blockings_net->make_net_cat(-onewayhack => 1, -net2name => 1);
 	}
 	print STDERR "Aktive temporäre Sperrungen: " . join(", ", $ms->dependent_files) . "\n" if $verbose;
 	make_net() if !$net;
@@ -10864,19 +10864,29 @@ sub add_temp_blockings_to_net {
 
 sub check_path_in_blockings_net {
     my($pathref) = @_;
-    my $net2name = $current_temp_blockings_net->{Net2Name};
+    check_path_in_blockings_net_reset();
+    check_path_in_blockings_net_continue($pathref);
+}
+
+sub check_path_in_blockings_net_reset {
+    @temp_blockings_on_route = ();
+    %temp_blockings_on_route = ();
+}
+
+sub check_path_in_blockings_net_continue {
+    my($pathref) = @_;
+    my $net      = $current_temp_blockings_net->{Net};
     for my $p_i (0 .. $#$pathref-1) {
 	my($xy0, $xy1) = (join(',', @{$pathref->[$p_i]}), 
 			  join(',', @{$pathref->[$p_i+1]}));
-	my $pos = $net2name->{$xy0}{$xy1};
-	if (!defined $pos) {
-	    $pos = $net2name->{$xy1}{$xy0};
-	}
-	if (defined $pos) {
-	    my $r = $current_temp_blockings_ms->get($pos);
-	    if (!$temp_blockings_on_route_seen{$r->[Strassen::NAME]}) {
-		push @temp_blockings_on_route, $r;
-		$temp_blockings_on_route_seen{$r->[Strassen::NAME]} = 1;
+	if (exists $net->{$xy0} && exists $net->{$xy0}{$xy1}) {
+	    my($pos) = $current_temp_blockings_net->net2name($xy0, $xy1);
+	    if (defined $pos) {
+		my $r = $current_temp_blockings_ms->get($pos);
+		if (!$temp_blockings_on_route{$r->[Strassen::NAME]}) {
+		    push @temp_blockings_on_route, $r->[Strassen::NAME];
+		}
+		push @{ $temp_blockings_on_route{$r->[Strassen::NAME]} }, $r;
 	    }
 	}
     }
@@ -10909,28 +10919,33 @@ sub show_blockings {
     } else {
 	require Tk::HList;
 	my $hl;
-	$hl = $blockings_toplevel->Scrolled('HList',
-					    -columns => 2,
-					    -header => 1,
-					    -selectmode => 'browse',
-					    -browsecmd => sub {
-						warn "browse!";
-					    },
-					    -scrollbars => 'osoe',
-					   )->pack(qw(-fill both));
+	$hl = $blockings_toplevel->Scrolled
+	    ('HList',
+	     -columns => 2,
+	     -header => 1,
+	     -selectmode => 'single',
+	     -browsecmd => sub {
+		 my($index) = @_;
+		 return if !defined $index;
+		 my $name = $temp_blockings_on_route[$index];
+		 my $coords = [
+			       map { [ transpose_all(@{ Strassen::to_koord($_->[Strassen::COORDS]) }) ] }
+			       @{ $temp_blockings_on_route{$name} }
+			      ];
+		 mark_street(-coords => $coords);
+	     },
+	     -scrollbars => 'osoe',
+	    )->pack(qw(-fill both));
 	$hl->anchorClear;
 	$hl->headerCreate(0, -text => M"Aktivieren");
 	$hl->headerCreate(1, -text => M"Sperrung");
 	$hl->columnWidth(0, 80);
 
 	require Tk::ItemStyle;
-	my $sel_is = $hl->ItemStyle("text",
-				    -selectforeground => 'white',
-				   );
 
 	my $dummyXXXXXXXXXX;
 	my $path_i = 0;
-	for my $r (@temp_blockings_on_route) {
+	for my $name (@temp_blockings_on_route) {
 	    my $is = $hl->ItemStyle('window', -pady => 0, -padx => 0);
 	    $hl->add($path_i, -itemtype => 'window', -style => $is,
 		     -widget => $hl->Checkbutton(-variable => \$dummyXXXXXXXXXX,
@@ -10940,7 +10955,7 @@ sub show_blockings {
 						 -highlightthickness => 0,
 						),
 		    );
-	    $hl->itemCreate($path_i, 1, -text => $r->[Strassen::NAME], -style => $sel_is);
+	    $hl->itemCreate($path_i, 1, -text => $name);
 	    $path_i++;
 	}
     }
@@ -15045,6 +15060,9 @@ sub reverse_route {
 	if ($show_strlist) {
 	    show_route_strname();
 	}
+	if ($XXX_use_new_temp_blockings) {
+	    check_path_in_blockings_net(\@realcoords);
+	}
 	restack_delayed();
     };
     warn __LINE__ . ": $@" if $@;
@@ -15088,8 +15106,7 @@ sub delete_route {
 	set_map_mode(MM_SEARCH);
     }
 
-    @temp_blockings_on_route = ();
-    %temp_blockings_on_route_seen = ();
+    check_path_in_blockings_net_reset();
     hide_blockings_infobar();
 
     Hooks::get_hooks("del_route")->execute;
@@ -15199,8 +15216,6 @@ sub dellast {
 	    }
 	}
 	if ($XXX_use_new_temp_blockings) {
-	    @temp_blockings_on_route = ();
-	    %temp_blockings_on_route_seen = ();
 	    check_path_in_blockings_net(\@realcoords);
 	}
     }
@@ -17169,7 +17184,10 @@ sub search_route {
 	}
 
 	my @path = @{ $res[StrassenNetz::RES_PATH] };
-	check_path_in_blockings_net(\@path);
+	if (!$continue) {
+	    check_path_in_blockings_net_reset();
+	}
+	check_path_in_blockings_net_continue(\@path);
  	my $old_nr;
  	if ($continue) {
  	    save_route_to_register('cont'); # if $max_list > 0;
