@@ -1875,18 +1875,19 @@ sub get_point_comment {
 # Wenn zwei Punkte angegeben sind, dann wird nur diese Strecke entfernt,
 # und zwar nur in dieser Richtung, wenn dir == 1, oder beide Richtungen,
 # wenn dir == 2
-# If $del_token is defined, then record the deletion in _Deleted$del_token
+# If $del_token is defined, then record the deletion in {_Deleted}->{$del_token}
 sub del_net {
     my($self, $point1, $point2, $dir, $del_token) = @_;
+    my $deleted_net = ($self->{_Deleted}{$del_token||''} ||= {});
     if (!defined $point2) {
 	if (exists $self->{Net}{$point1}) {
 	    foreach (keys %{$self->{Net}{$point1}}) {
 		if (defined $del_token) {
 		    if (exists $self->{Net}{$point1}{$_}) {
-			$self->{"_Deleted$del_token"}{$point1}{$_} = $self->{Net}{$point1}{$_};
+			$deleted_net->{$point1}{$_} = $self->{Net}{$point1}{$_};
 		    }
 		    if (exists $self->{Net}{$_}{$point1}) {
-			$self->{"_Deleted$del_token"}{$_}{$point1} = $self->{Net}{$_}{$point1};
+			$deleted_net->{$_}{$point1} = $self->{Net}{$_}{$point1};
 		    }
 		}
 		delete $self->{Net}{$point1}{$_};
@@ -1895,17 +1896,17 @@ sub del_net {
 	}
     } else {
 	if (exists $self->{Net}{$point1}) {
-	    if (defined $del_token &&
+	    if (defined $del_token && # XXX why?
 		exists $self->{Net}{$point1}{$point2}) {
-		$self->{"_Deleted$del_token"}{$point1}{$point2} = $self->{Net}{$point1}{$point2};
+		$deleted_net->{$point1}{$point2} = $self->{Net}{$point1}{$point2};
 	    }
 	    delete $self->{Net}{$point1}{$point2};
 	}
 	if ($dir ne BLOCKED_ONEWAY) { # "2"
 	    if (exists $self->{Net}{$point2}) {
-		if (defined $del_token &&
+		if (defined $del_token && # XXX why?
 		    exists $self->{Net}{$point2}{$point1}) {
-		    $self->{"_Deleted$del_token"}{$point2}{$point1} = $self->{Net}{$point2}{$point1};
+		    $deleted_net->{$point2}{$point1} = $self->{Net}{$point2}{$point1};
 		}
 		delete $self->{Net}{$point2}{$point1};
 	    }

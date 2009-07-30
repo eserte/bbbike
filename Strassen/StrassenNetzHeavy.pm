@@ -595,12 +595,16 @@ sub add_umsteigebahnhoefe {
     }
 }
 
+######################################################################
+# User deletions
+
 ### AutoLoad Sub
 sub toggle_deleted_line {
     my($net, $xy1, $xy2, $on_callback, $off_callback, $del_token) = @_;
     $del_token ||= "";
-    if (exists $net->{"_Deleted$del_token"}{$xy1}{$xy2} ||
-	exists $net->{"_Deleted$del_token"}{$xy2}{$xy1}) {
+    my $deleted_net = ($net->{"_Deleted"}{$del_token} ||= {});
+    if (exists $deleted_net->{$xy1}{$xy2} ||
+	exists $deleted_net->{$xy2}{$xy1}) {
 	$net->remove_from_deleted($xy1,$xy2,$off_callback,$del_token);
     } else {
 	$net->add_to_deleted($xy1,$xy2,$on_callback,$del_token);
@@ -610,31 +614,30 @@ sub toggle_deleted_line {
 ### AutoLoad Sub
 sub remove_from_deleted {
     my($net, $xy1, $xy2, $off_callback, $del_token) = @_;
-    my $del_key = "_Deleted$del_token";
-    $net->{Net}{$xy1}{$xy2} = $net->{$del_key}{$xy1}{$xy2}
-	if exists $net->{$del_key}{$xy1}{$xy2};
-    delete $net->{$del_key}{$xy1}{$xy2};
-    $net->{Net}{$xy2}{$xy1} = $net->{$del_key}{$xy2}{$xy1}
-	if exists $net->{$del_key}{$xy2}{$xy1};
-    delete $net->{$del_key}{$xy2}{$xy1};
+    $del_token ||= "";
+    my $deleted_net = ($net->{"_Deleted"}{$del_token} ||= {});
+    $net->{Net}{$xy1}{$xy2} = $deleted_net->{$xy1}{$xy2}
+	if exists $deleted_net->{$xy1}{$xy2};
+    delete $deleted_net->{$xy1}{$xy2};
+    $net->{Net}{$xy2}{$xy1} = $deleted_net->{$xy2}{$xy1}
+	if exists $deleted_net->{$xy2}{$xy1};
+    delete $deleted_net->{$xy2}{$xy1};
     $off_callback->($xy1, $xy2, $del_token) if ($off_callback);
 }
 
 ### AutoLoad Sub
 sub remove_all_from_deleted {
     my($net, $off_callback, $del_token) = @_;
+    my $deleted_net = ($net->{"_Deleted"} ||= {});
     my @del_tokens;
     if (defined $del_token) {
 	@del_tokens = $del_token;
     } else {
-	while(my($net_key) = each %$net) {
-	    if ($net_key =~ /^_Deleted(.*)/) {
-		push @del_tokens, $1;
-	    }
-	}
+	@del_tokens = keys %{ $deleted_net };
     }
+
     for my $del_token (@del_tokens) {
-	while(my($xy1,$v1) = each %{$net->{"_Deleted$del_token"}}) {
+	while(my($xy1,$v1) = each %{ $deleted_net->{$del_token}}) {
 	    while(my($xy2,$v2) = each %$v1) {
 		$net->remove_from_deleted($xy1,$xy2,$off_callback,$del_token);
 	    }
@@ -652,9 +655,9 @@ sub add_to_deleted {
 
 #XXX rewrite to use make_sperre instead of calls to add_to_deleted.
 # steps:
-# * delete all old _Deleted$del_token entries (with $off_callback)
+# * delete all old {_Deleted}{$del_token} entries (with $off_callback)
 # * call make_sperre with the given file/strassen object
-# * collect all points _Deleted$del_token  and call $on_callback on them
+# * collect all points {_Deleted}{$del_token}  and call $on_callback on them
 # * $on_callback should handle all blocking types
 #XXX
 # parameters: $filename or $strassen object
@@ -684,7 +687,8 @@ sub load_user_deletions {
 	}
     }
     if (!$do_merge) {
-	while(my($k1,$v1) = each %{ $net->{"_Deleted$del_token"} }) {
+	my $deleted_net = ($net->{_Deleted}{$del_token} ||= {});
+	while(my($k1,$v1) = each %{ $deleted_net }) {
 	    while(my($k2,$v2) = each %$v1) {
 		if (!exists $set{$k1}->{$k2} &&
 		    !exists $set{$k2}->{$k1}) {
@@ -724,7 +728,8 @@ sub create_user_deletions_object {
 
     my $s = Strassen->new;
     my %set;
-    while(my($k1,$v1) = each %{ $net->{"_Deleted$del_token"} }) {
+    my $deleted_net = ($net->{_Deleted}{$del_token} ||= {});
+    while(my($k1,$v1) = each %{ $deleted_net }) {
 	while(my($k2,$v2) = each %$v1) {
 	    if (!exists $set{$k1}->{$k2} &&
 		!exists $set{$k2}->{$k1}) {
@@ -748,6 +753,7 @@ sub save_user_deletions {
     $s->write($filename);
 }
 
+######################################################################
 # Zeichnet das Straﬂennetz, z.B. zum Debuggen.
 ### AutoLoad Sub
 sub draw {
