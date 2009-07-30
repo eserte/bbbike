@@ -3001,7 +3001,7 @@ EOF
        text  => 'Prenzlauer Berg: Richtung Prenzlauer Allee gesperrt (Kopfsteinpflaster wird durch Asphalt ersetzt)',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1 11723,13630 11538,13691 11257,13647
+userdel	1 11723,13630 11545,13690 11257,13647
 EOF
      },
      { from  => undef, # 

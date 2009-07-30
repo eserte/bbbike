@@ -213,7 +213,7 @@ Kietzer Weg: sehr schlechtes Kopfsteinpflaster	Q3 15327,11724 15277,11684 15162,
 Revaler Str.: Kopfsteinpflaster, einzelne Stellen mit unebenen Asphalt	Q2; 14139,11269 14211,11229 14286,11186 14357,11148 14442,11101 14509,11060
 Revaler Str.: Kopfsteinpflaster	Q2; 14509,11060 14442,11101 14357,11148 14286,11186 14211,11229 14139,11269
 Revaler Str.: Kopfsteinpflaster, Straﬂenbahn	Q2 13588,11490 13473,11456
-Prenzlauer Berg: Asphalt	Q0 11723,13630 11538,13691 11257,13647
+Prenzlauer Berg: Asphalt	Q0 11723,13630 11545,13690 11257,13647
 Alte Jakobstr.: Kopfsteinpflaster	Q2 10244,11160 10436,11344
 Ackerstr.: Kopfsteinpflaster	Q2 9439,14368 9400,14400 9375,14419 9279,14495 9197,14562 9048,14681 8953,14758 8741,14928
 Ackerstr.: Kopfsteinpflaster	Q2 9750,14132 9627,14229
@@ -1449,7 +1449,7 @@ Busseallee: Kopfsteinpflaster	Q2 161,3062 71,3179 -5,3286 -219,3619
 Hallesches Tor: Beton	Q0 9593,10238 9599,10175
 Bebelplatz: Kopfsteinpflaster, OK	Q1 9795,12293 9869,12297
 Metzer Str.: Kopfsteinpflaster	Q2 10933,14122 11016,14081 11160,14002 11389,13887
-Kollwitzplatz: Kopfsteinpflaster	Q2 11273,14495 11317,14564
+Kollwitzplatz: Kopfsteinpflaster	Q2 11285,14515 11317,14564
 Ekhofplatz: Kopfsteinpflaster	Q2 23343,1454 23382,1429 23360,1390 23325,1418 23343,1454
 Ekhofstr.: Kopfsteinpflaster	Q2 23158,1379 23243,1398 23325,1418
 Ekhofstr.: Kopfsteinpflaster	Q2 23382,1429 23464,1449 23552,1468 23562,1470
@@ -2524,6 +2524,7 @@ B¸lowstr. (Zehlendorf): Kopfsteinpflaster	Q2 -662,2998 -872,3133 -1052,3276 -105
 M‰ckeritzstr.: asphaltiert	Q0 1361,14431 1320,14440 1262,14510 1244,14558 1235,14609
 (Neue Gr¸nstr. - Alte Jakobstr.): Kleinpflaster	Q1- 10624,11548 10534,11609
 Ritterstr.: Verbundsteinpflaster	Q0- 9935,11067 9920,11074 9861,11103
+Wˆrther Str.: aufgepflasterte Abschnitte	Q1 11255,14572 11317,14564
 ######################### User Contributions #################################
 #: by: Dominik Seelow vvv
 Viktoriastr.: m‰ﬂiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
@@ -3788,9 +3789,9 @@ Dahlemer Weg - J‰gerndorfer Str./Weiﬂwasserweg: Radweg mit Gehwegplatten	Q0 2119
 Weiﬂwasserweg: Asphalt	Q0 2207,2917 2384,2964
 Weiﬂwasserweg: Beton	Q0 2384,2964 2476,2987
 Weiﬂwasserweg: Kopfsteinpflaster	Q2 2476,2987 2594,3009 2661,3021
-Mendelssohnstr.: Asphalt	Q0 11535,13411 11511,13429 11472,13456 11390,13513 11322,13421 11300,13390
-Mendelssohnstr.: Beton	Q0 11511,13429 11444,13335 11322,13421
-Mendelssohnstr.: Beton	Q0 11472,13456 11497,13492 11535,13465 11613,13570 11537,13617 11538,13691
+Mendelssohnstr.: Asphalt	Q0 11539,13425 11490,13463 11451,13495 11392,13528 11346,13441 11306,13386
+Mendelssohnstr.: Beton	Q0 11490,13463 11433,13389 11346,13441
+Mendelssohnstr.: Beton	Q0 11451,13495 11474,13524 11512,13493 11598,13598 11550,13642 11545,13690
 Keibelstr.: Asphalt	Q0 11275,13407 11187,13289 11082,13134
 Hittorfstr.: Asphalt	Q1 2212,4600 2290,4709
 Hittorfstr: Kopfsteinpflaster	Q2 2290,4709 2381,4737 2442,4806 2469,4882 2516,4936 2587,4965
@@ -8697,18 +8698,18 @@ Weydemeyerstr.: m‰ﬂiger Beton, Fugen	Q2+ 11725,12809 11824,12749 11933,12701 119
 (Berolinastr. - Mollstr.): Gehwegplatten	Q0 11865,13027 11874,13048 11881,13072
 (Berolinastr. - Mollstr.): Beton/Verbundsteine	Q1 11608,12985 11681,13161
 (Lichtenberger Str.): Verbundsteine	Q1 12054,12903 12039,12675
-Barnimstr.: Beton	Q0 11550,13427 11605,13387 11654,13351 11793,13247
-Barnimstr.: Beton	Q0 11881,13147 11758,13210 11596,13279
-(Erschlieﬂungstr./Parkplatz): Beton	Q0 11605,13387 11538,13309 11596,13279
-(Erschlieﬂungsstr.): Beton	Q0 11605,13387 11660,13457
-(Verbindungsweg): Kopfsteinpflaster	Q1 11660,13457 11711,13416
+Barnimstr.: Beton	Q0 11561,13451 11608,13417 11655,13370 11793,13247
+Barnimstr.: Beton	Q0 11881,13147 11758,13210 11589,13305
+(Erschlieﬂungstr./Parkplatz): Beton	Q0 11608,13417 11546,13327 11589,13305
+(Erschlieﬂungsstr.): Beton	Q0 11608,13417 11646,13465
+(Verbindungsweg): Kopfsteinpflaster	Q1 11646,13465 11703,13422
 Weinstr.: Asphalt stark verwurzelt	Q3 11793,13247 11909,13387
 Weinstr.: Asphalt	Q0+ 11909,13387 11982,13471
 (Plus-Parkplatz): Verbundsteinpflaster	Q0- 11881,13147 11966,13074
 (Friedenstr.): Beton	Q0 12131,13333 12138,13294 12139,13262 12066,13237
 Hˆchste Str.: Asphalt	Q0 11778,13498 11909,13387 12017,13299 12066,13237
 (Parkplatz): Beton	Q0 12066,13237 12046,13150 12011,13136 11920,13181
-Georgenkirchstr.: Asphalt	Q0 11842,13576 11778,13498 11711,13416 11654,13351 11596,13279
+Georgenkirchstr.: Asphalt	Q0 11842,13576 11778,13498 11703,13422 11655,13370 11589,13305
 (Mollstr. - Barnimstr.): Verbundsteine	Q0 11723,13139 11758,13210
 (Volkspark Friedrichshain, parallel zur Friedenstr.): Gehwegplatten und Kopfsteinpflaster	Q0 12386,13085 12387,13107 12344,13157 12248,13254 12194,13307 12148,13348 12088,13403 12005,13481 11943,13545 11857,13596 11823,13610 11785,13625
 Hinter der Katholischen Kirche: Kopfsteinpflaster	Q1 9801,12245 9795,12293 9780,12401

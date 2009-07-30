@@ -277,7 +277,7 @@ Mentzelstr.	1 21579,4579 21546,4457
 Amalienstr.	1 13814,16759 13722,16843 13653,16907 13589,16965
 Cosimaplatz	1 5490,7651 5458,7683 5493,7717 5528,7683 5490,7651
 Reiherbeize	1 444,4498 593,4262
-Mendelssohnstr.	1 11613,13570 11537,13617 11538,13691
+Mendelssohnstr.	1 11598,13598 11550,13642 11545,13690
 Am Bäkequell	1 4593,5235 4656,5101
 Sella-Hasse-Str.	1 20948,16612 20771,16690 20843,16829
 Buggenhagenstr.	1 14425,13780 14370,13615
@@ -1235,20 +1235,20 @@ Heerstr. -> Südpark: schlecht passierbar	3::igndisp -4063,11805 -4009,11789 -400
 nicht passierbarer Mittelstreifens	3nocross::ignrte 2560,5044 2587,4965 2615,4885
 Thielallee -> Hittorfstr.: nicht passierbarer Mittelstreifens	3::igndisp 2615,4885 2587,4965 2516,4936
 Hittorfstr. -> Thielallee: nicht passierbarer Mittelstreifens	3::igndisp 2516,4936 2587,4965 2560,5044
-Straßenbahntrasse	3nocross::ignrte 11446,13294 11406,13321 11300,13390 11275,13407
-Wadzeckstr. -> Mollstr.: Straßenbahntrasse	3::igndisp 11326,13196 11406,13321 11300,13390
+Straßenbahntrasse	3nocross::ignrte 11446,13294 11406,13321 11306,13386 11275,13407
+Wadzeckstr. -> Mollstr.: Straßenbahntrasse	3::igndisp 11326,13196 11406,13321 11306,13386
 Mollstr. -> Wadzeckstr.: Straßenbahntrasse	3::igndisp 11446,13294 11406,13321 11326,13196
-Mollstr. -> Mendelssohnstr.: Straßenbahntrasse	3::igndisp 11275,13407 11300,13390 11322,13421
-Mendelssohnstr. -> Mollstr.: Straßenbahntrasse	3::igndisp 11322,13421 11300,13390 11406,13321
-Straßenbahntrasse	3nocross::ignrte 11723,13630 11646,13546 11550,13427 11535,13411 11464,13321 11446,13294
-Mendelssohnstr. [Wohngebiet] -> Otto-Braun-Str.: Straßenbahntrasse	3::igndisp 11613,13570 11646,13546 11723,13630
-Otto-Braun-Str. -> Mendelssohnstr. [Wohngebiet]: Straßenbahntrasse	3::igndisp 11550,13427 11646,13546 11613,13570
-Barnimstr. -> Otto-Braun-Str.: Straßenbahntrasse	3::igndisp 11605,13387 11550,13427 11535,13411
-Otto-Braun-Str. -> Barnimstr.: Straßenbahntrasse	3::igndisp 11646,13546 11550,13427 11605,13387
-Mendelssohnstr. -> Otto-Braun-Str.: Straßenbahntrasse	3::igndisp 11511,13429 11535,13411 11550,13427
-Otto-Braun-Str. -> Mendelssohnstr.: Straßenbahntrasse	3::igndisp 11464,13321 11535,13411 11511,13429
-Mendelssohnstr. [Wohngebiet] -> Otto-Braun-Str.: Straßenbahntrasse	3::igndisp 11444,13335 11464,13321 11535,13411
-Otto-Braun-Str. -> Mendelssohnstr. [Wohngebiet]: Straßenbahntrasse	3::igndisp 11446,13294 11464,13321 11444,13335
+Mendelssohnstr. -> Mollstr.: Straßenbahntrasse	3::igndisp 11346,13441 11306,13386 11406,13321
+Mollstr. -> Mendelssohnstr.: Straßenbahntrasse	3::igndisp 11275,13407 11306,13386 11346,13441
+Straßenbahntrasse	3nocross::ignrte 11723,13630 11646,13546 11561,13451 11539,13425 11486,13350 11446,13294
+Mendelssohnstr. [Wohngebiet] -> Otto-Braun-Str.: Straßenbahntrasse	3::igndisp 11598,13598 11646,13546 11723,13630
+Otto-Braun-Str. -> Mendelssohnstr. [Wohngebiet]: Straßenbahntrasse	3::igndisp 11561,13451 11646,13546 11598,13598
+Otto-Braun-Str. -> Barnimstr.: Straßenbahntrasse	3::igndisp 11646,13546 11561,13451 11608,13417
+Barnimstr. -> Otto-Braun-Str.: Straßenbahntrasse	3::igndisp 11608,13417 11561,13451 11539,13425
+Mendelssohnstr. -> Otto-Braun-Str.: Straßenbahntrasse	3::igndisp 11490,13463 11539,13425 11561,13451
+Otto-Braun-Str. -> Mendelssohnstr.: Straßenbahntrasse	3::igndisp 11486,13350 11539,13425 11490,13463
+Otto-Braun-Str. -> Mendelssohnstr. [Wohngebiet]: Straßenbahntrasse	3::igndisp 11446,13294 11486,13350 11433,13389
+Mendelssohnstr. [Wohngebiet] -> Otto-Braun-Str.: Straßenbahntrasse	3::igndisp 11433,13389 11486,13350 11539,13425
 Straßenbahntrasse	3nocross::ignrte 11446,13294 11368,13170 11298,13063
 Wadzeckstr. -> Otto-Braun-Str.: Straßenbahntrasse	3::igndisp 11326,13196 11368,13170 11446,13294
 Mittelstreifen	3nocross::ignrte 11368,13170 11298,13063 11275,13026 11228,12951
@@ -1527,7 +1527,7 @@ Schranke, eine Seite eventuell offen	BNP:3:-152:trailer=10 12565,9200
 Schranke, meistens offen	BNP:3:-263:trailer=6 7875,16509
 Schranke, meistens offen	BNP:3:-256:trailer=6 7707,16543
 Barriere	BNP:10:-12 12178,7985
-Drängelgitter	BNP:0:52:trailer=5 10535,13006
+Drängelgitter	BNP:0:52:trailer=3 10535,13006
 Drängelgitter	BNP:10:-84 7158,9509
 Drängelgitter	BNP:5:-70 -6162,16287
 Drängelgitter	BNP:5:-193 38562,100725
@@ -1548,6 +1548,7 @@ Drängelgitter	BNP:3:-151 62686,40877
 Drängelgitter	BNP:3:-158 63740,42840
 Drängelgitter	BNP:3:-157 63721,42792
 Schranke, kann auch mit Anhänger umfahren werden	BNP:1:-168 49137,24422
+Schinkelplatz: Bauarbeiten	2:inwork 10084,12228 9984,12426
 Französische Str.: Bauarbeiten	2:inwork 8901,12008 9076,12054
 Rathausbrücke: gesperrt bis März 2011 (Neubau)	2:inwork 10362,12351 10422,12395
 Vicki-Baum-Str.: noch in Bau, gesperrt	2:inwork 15990,10185 15894,10251

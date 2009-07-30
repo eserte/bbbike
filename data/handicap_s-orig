@@ -70,7 +70,10 @@ Tiergarten: Parkweg	q1 8021,11636 8016,11770
 Tiergarten: Parkweg	q1 7663,11946 7570,11855 7223,11897 7073,11798 6778,11742 6540,11754
 Tiergarten: Parkweg	q1 7816,12150 7827,12105 7832,12036 7822,11952 7801,11875 7795,11823 7777,11787 7772,11749 7796,11681 7816,11571
 Parkweg: enge Br¸cke, Fuﬂweg	q2 14310,9692 14351,9757 14448,9922 14453,9929 14558,10082 14597,10129 14626,10162 14652,10201
-Spittelmarkt: Gehweg	q1 10166,11592 10153,11666 10213,11728
+#: note: mal sehen, wie die Situation hier nach den Bauarbeiten aussieht
+#Spittelmarkt: Gehweg	q1 10166,11592 10153,11666 10213,11728
+#: last_checked: 2009-07-29
+Spittelmarkt: Gehweg, wegen Bauarbeiten eng	q3::inwork 10166,11592 10153,11666 10213,11728
 Spittelmarkt: Gehweg	q1 10369,11728 10240,11740
 Beuthstr. - Spittelmarkt: Gehweg	q1 10229,11618 10213,11728
 Hasenheide: Parkweg	q1 11271,8325 11282,8428 11250,8585 11177,8985 11128,9100 11136,9183
@@ -777,7 +780,7 @@ Bissingzeile: Einspurig, eng bei Gegenverkehr	q1 7959,10910 8113,10786
 (Berolinastr. - Mollstr.): Fuﬂg‰nger	q1 11865,13027 11874,13048 11881,13072
 (Berolinastr. - Mollstr.): Fuﬂg‰nger	q1 11608,12985 11681,13161
 (Lichtenberger Str.): Fuﬂg‰nger	q1 12054,12903 12039,12675
-(Verbindungsweg): Fuﬂg‰nger	q1 11660,13457 11711,13416
+(Verbindungsweg): Fuﬂg‰nger	q1 11646,13465 11703,13422
 Weinstr.: Fuﬂg‰nger, Wurzeln	q3 11793,13247 11909,13387
 (Mollstr. - Barnimstr.): Fuﬂg‰nger	q1 11723,13139 11758,13210
 Br¸der-Grimm-Gasse: Fuﬂg‰nger	q2 8351,11163 8343,11133

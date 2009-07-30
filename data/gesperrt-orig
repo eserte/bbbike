@@ -308,7 +308,7 @@ Mentzelstr.	1 21579,4579 21546,4457
 Amalienstr.	1 13814,16759 13722,16843 13653,16907 13589,16965
 Cosimaplatz	1 5490,7651 5458,7683 5493,7717 5528,7683 5490,7651
 Reiherbeize	1 444,4498 593,4262
-Mendelssohnstr.	1 11613,13570 11537,13617 11538,13691
+Mendelssohnstr.	1 11598,13598 11550,13642 11545,13690
 Am Bäkequell	1 4593,5235 4656,5101
 Sella-Hasse-Str.	1 20948,16612 20771,16690 20843,16829
 Buggenhagenstr.	1 14425,13780 14370,13615
@@ -982,8 +982,8 @@ Kolonnenstr.: Mittelinsel mit Geländer	3nocross 7709,8777 7642,8815 7563,8871
 #: by: Andreas Mühlhausen: vvv
 Heerstr.: schlecht passierbar	3nocross -4063,11805 -4009,11789 -3707,11693
 Thielallee: nicht passierbarer Mittelstreifens	3nocross 2560,5044 2587,4965 2615,4885
-Mollstr.: Straßenbahntrasse	3nocross 11446,13294 11406,13321 11300,13390 11275,13407
-Otto-Braun-Str.: Straßenbahntrasse	3nocross 11723,13630 11646,13546 11550,13427 11535,13411 11464,13321 11446,13294
+Mollstr.: Straßenbahntrasse	3nocross 11446,13294 11406,13321 11306,13386 11275,13407
+Otto-Braun-Str.: Straßenbahntrasse	3nocross 11723,13630 11646,13546 11561,13451 11539,13425 11486,13350 11446,13294
 Otto-Braun-Str.: Straßenbahntrasse	3nocross 11446,13294 11368,13170 11298,13063
 Otto-Braun-Str.: Mittelstreifen	3nocross 11368,13170 11298,13063 11275,13026 11228,12951
 #: by: ^^^
@@ -1318,8 +1318,8 @@ Schranke, eine Seite eventuell offen	BNP:3::trailer=10 12565,9200
 Schranke, meistens offen	BNP:3::trailer=6 7875,16509
 Schranke, meistens offen	BNP:3::trailer=6 7707,16543
 Barriere	BNP:10 12178,7985
-#: note: nur für Fahrräder mit Anhänger relevant (90cm breit)
-Drängelgitter	BNP:0::trailer=5 10535,13006
+#: note: Durchfahrt ist 120cm breit
+Drängelgitter	BNP:0::trailer=3 10535,13006
 Drängelgitter	BNP:10 7158,9509
 Drängelgitter	BNP:5 -6162,16287
 # in Brandenburg:
@@ -1354,6 +1354,8 @@ Schranke, kann auch mit Anhänger umfahren werden	BNP:1 49137,24422
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: last_check: 2009-07-29
+Schinkelplatz: Bauarbeiten	2:inwork 10084,12228 9984,12426
 #: next_check: 2009-12-01
 Französische Str.: Bauarbeiten	2:inwork 8901,12008 9076,12054
 #: next_check: 2011-03-01
