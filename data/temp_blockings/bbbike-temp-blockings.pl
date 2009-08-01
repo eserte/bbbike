@@ -7340,8 +7340,8 @@ EOF
 userdel	2::inwork 38475,90762 38637,91275 38612,91950
 EOF
      },
-     { from  => undef, # 
-       until => undef, # XXX
+     { from  => 1249152327, # 
+       until => 1249152331, # XXX -> handicap_s-orig
        text  => 'Reichstagufer (Mitte) in beiden Richtungen Baustelle, Straße vollständig gesperrt, Fußgänger können passieren',
        type  => 'handicap',
        data  => <<EOF,
@@ -13528,8 +13528,8 @@ EOF
 userdel	q4::inwork 58018,-10573 57882,-10535 57752,-10566 57479,-10535 57371,-10550 57225,-10700
 EOF
      },
-     { from  => undef, # 
-       until => undef, # XXX
+     { from  => 1249152434, # 
+       until => 1249152439, # XXX -> handicap_s-orig
        text  => 'Bauarbeiten in der Simplonstr., Straße gesperrt',
        type  => 'handicap',
        data  => <<EOF,
@@ -15131,6 +15131,14 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 35405,59832 35962,59463
+EOF
+     },
+     { from  => 1249113600, # 2009-08-01 10:00
+       until => 1249243200, # 2009-08-02 22:00
+       text  => 'Oberbaumbrücke: gesperrt wegen der 7. Open-Air-Gallery, am 2. August 2009 von 10.00 Uhr bis 22.00 Uhr',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::temp 13178,10623 13206,10651 13305,10789 13332,10832
 EOF
      },
     );

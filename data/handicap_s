@@ -4,7 +4,10 @@
 #: note: XXX_* categorization done 2008-01-26
 #: note: "Parkweg" sollte hier vielleicht nicht verwendet werden, sondern nur in qualitaet_s-orig? Oder wenigstens die gleichen Wege nicht in beiden Dateien so benannt werden? Oder wenigstens beim Ausgeben der Routenliste doppelte ausfiltern?
 #:
-Hauptstr. (Friedrichshain-Kreuzberg) in beiden Richtungen zwischen Markgrafendamm und untere Kynaststr. Baustelle, Radfahrer kˆnnen nur langsam passieren bzw. m¸ssen schieben	q4::inwork 14906,10820 14794,10844 14717,10855
+Simplonstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork; 14597,11069 14530,11137
+Simplonstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 14530,11137 14465,11195
+Reichstagufer (Mitte): Baustelle, Fahrbahn gesperrt, Fuﬂg‰nger kˆnnen passieren	q4::inwork 9209,12795 9280,12883
+Hauptstr. (Friedrichshain-Kreuzberg): Baustelle, Radfahrer kˆnnen nur langsam passieren bzw. m¸ssen schieben	q4::inwork 14906,10820 14794,10844 14717,10855
 Wuhlewanderweg: steiler Anstieg, Fuﬂg‰nger	q4; 21998,12204 21970,12153
 Wuhlewanderweg: steiles Gef‰lle, Fuﬂg‰nger	q4; 21970,12153 21998,12204
 Caroline-Michaelis-Str.: Bordsteine	q3 9125,13973 9151,13941
@@ -221,7 +224,7 @@ Barsekowstr.: Fuﬂg‰nger	q1 5344,4672 5417,4647 5476,4626 5589,4617
 (Stadtpark Steglitz): Fuﬂg‰nger	q1 5589,4617 5582,4675 5555,4743
 (Stadtpark Steglitz): Fuﬂg‰nger	q1 5509,4773 5453,4665 5417,4647
 (Stadtpark Steglitz): Fuﬂg‰nger	q1 5797,4846 5826,4819 5909,4798 5945,4828 6018,4850
-Dieffenbach.: Bodenschwellen	q1 11141,9732 11346,9655 11541,9576
+Dieffenbachstr.: Bodenschwellen	q1 11141,9732 11346,9655 11541,9576
 Schˆnleinstr.: Bodenschwellen	q1 11560,9524 11541,9576 11594,9604
 Hoffmannstr.: Bodenschwellen	q1 14289,9870 14076,10011
 Lausitzer Platz: zahlreiche Bodenschwellen	q2 12212,10440 12172,10585
@@ -1076,6 +1079,11 @@ Schlierbacher Weg: enge Straﬂe	q1 10734,1178 10685,1159 10450,1202 10453,1242 10
 Fritz-K¸hn-Str.: enge Straﬂe	q1 21681,-589 21666,-657 21479,-925 21445,-963
 Mittelstr. (Hohenschˆnhausen): enge Straﬂe	q1 15543,14491 15647,14693 15706,14752 15769,14815 15856,14915
 Nantesstr.: enge Straﬂe	q1 11200,21689 11251,22022 11231,22065 11077,22236
+Helgiweg: enge Straﬂe	q1 14459,18589 14517,18410
+Helgiweg: enge Straﬂe	q1 14533,18413 14565,18226 14576,18163 14595,18050
+Lummenweg: eng durch parkende Autos	q1 21879,2592 21919,2510 21936,2388
+Hermannstr. (Zehlendorf): enge Straﬂe	q1 -1093,4529 -1025,4422 -947,4303 -851,4148 -843,4116
+Groﬂkopfstr.: enge Straﬂe (parkende Autos)	q1 5167,17725 5363,17667
 Eichborndamm: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 4240,19019 4232,18981
 Revaler Str. (Straﬂenbahn): gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 13588,11490 13473,11456
 Stiftsweg: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 11025,18531 11268,18851

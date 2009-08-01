@@ -5,9 +5,16 @@
 #: note: "Parkweg" sollte hier vielleicht nicht verwendet werden, sondern nur in qualitaet_s-orig? Oder wenigstens die gleichen Wege nicht in beiden Dateien so benannt werden? Oder wenigstens beim Ausgeben der Routenliste doppelte ausfiltern?
 #:
 #: temporary vvv
+#: last_checked: 2009-08-01 vvv
+Simplonstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork; 14597,11069 14530,11137
+Simplonstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 14530,11137 14465,11195
+#: last_checked ^^^
+#: last_checked: 2009-08-01
+#: next_check: 2009-10-01
+Reichstagufer (Mitte): Baustelle, Fahrbahn gesperrt, Fuﬂg‰nger kˆnnen passieren	q4::inwork 9209,12795 9280,12883
 #: last_checked: 2009-05-17
 #: next_check: 2009-09-15
-Hauptstr. (Friedrichshain-Kreuzberg) in beiden Richtungen zwischen Markgrafendamm und untere Kynaststr. Baustelle, Radfahrer kˆnnen nur langsam passieren bzw. m¸ssen schieben	q4::inwork 14906,10820 14794,10844 14717,10855
+Hauptstr. (Friedrichshain-Kreuzberg): Baustelle, Radfahrer kˆnnen nur langsam passieren bzw. m¸ssen schieben	q4::inwork 14906,10820 14794,10844 14717,10855
 #: temporary ^^^
 #: XXX es ist zu erwarten, dass hier der Wuhlewanderweg verbessert wird: vvv
 Wuhlewanderweg: steiler Anstieg, Fuﬂg‰nger	q4; 21998,12204 21970,12153
@@ -244,7 +251,7 @@ Barsekowstr.: Fuﬂg‰nger	q1 5344,4672 5417,4647 5476,4626 5589,4617
 (Stadtpark Steglitz): Fuﬂg‰nger	q1 5509,4773 5453,4665 5417,4647
 (Stadtpark Steglitz): Fuﬂg‰nger	q1 5797,4846 5826,4819 5909,4798 5945,4828 6018,4850
 #: XXX_prog: f¸r Anh‰nger q2
-Dieffenbach.: Bodenschwellen	q1 11141,9732 11346,9655 11541,9576
+Dieffenbachstr.: Bodenschwellen	q1 11141,9732 11346,9655 11541,9576
 Schˆnleinstr.: Bodenschwellen	q1 11560,9524 11541,9576 11594,9604
 Hoffmannstr.: Bodenschwellen	q1 14289,9870 14076,10011
 Lausitzer Platz: zahlreiche Bodenschwellen	q2 12212,10440 12172,10585
@@ -345,6 +352,7 @@ Haewererweg: enge Durchfahrt, Bordstein	q1 12125,1282 12097,1243
 Kaiser-Wilhelm-Platz: Fuﬂg‰nger	q4 7201,8870 7320,8939
 Kernhofer Str.: Fuﬂg‰nger, Supermarkt	q2 15369,10921 15353,10870
 Cecilieng‰rten: schmale Rampe oder Treppe	q3 6356,7479 6289,7472
+#: XXX_prog: f¸r Anh‰nger q2
 Sebastianstr.: Absperrung f¸r Autos, mit Anh‰nger unbequem passierbar	q1 10918,11084 10939,11045
 (Weg am Humboldthain): Radfahren erlaubt, Fuﬂg‰nger haben Vorrang	q1 9255,15816 9092,15789 8934,15740
 Tasdorfer Str. - Wilhelm-Guddorf-Str.: Fuﬂg‰nger	q1 15393,11590 15418,11662
@@ -1507,3 +1515,15 @@ Fritz-K¸hn-Str.: enge Straﬂe	q1 21681,-589 21666,-657 21479,-925 21445,-963
 Mittelstr. (Hohenschˆnhausen): enge Straﬂe	q1 15543,14491 15647,14693 15706,14752 15769,14815 15856,14915
 #: by: Philipp G¸nther:
 Nantesstr.: enge Straﬂe	q1 11200,21689 11251,22022 11231,22065 11077,22236
+#: by: Josephine Jacob vvv
+Helgiweg: enge Straﬂe	q1 14459,18589 14517,18410
+Helgiweg: enge Straﬂe	q1 14533,18413 14565,18226 14576,18163 14595,18050
+#: by: ^^^
+#: by: yossi:
+Lummenweg: eng durch parkende Autos	q1 21879,2592 21919,2510 21936,2388
+#: by: Isabel (easybelli):
+Hermannstr. (Zehlendorf): enge Straﬂe	q1 -1093,4529 -1025,4422 -947,4303 -851,4148 -843,4116
+#: by: Christian Schmidt-G¸tter:
+#: note: parkende Autos auf beiden Seiten einer normal breiten Nebenstraﬂe, zus‰tzlich Parksuchverkehr
+#: corrected_by: srt/policy (q2 -> q1):
+Groﬂkopfstr.: enge Straﬂe (parkende Autos)	q1 5167,17725 5363,17667
