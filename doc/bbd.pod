@@ -362,42 +362,55 @@ information is included in the Name field of the data line, preferred
 in a ISO-date similar notation (e.g. YYYY-MM-DD - YYYY-MM-DD for a
 starting and an end date).
 
-=item C<unsure: I<why>>
-
 =item C<XXX: I<why>>
 
 The next block or line is unsure or unclear information. The I<why>
 text specifies an additional comment. This note should not appear in
-the processed data. C<XXX> is an alias for C<unsure:>.
+the processed data. 
+
+Earlier versions also defined C<unsure> as an alias for C<XXX> (or
+even the other way around), but in reality C<unsure> was almost never
+used and also never considered in supporting scripts, so its use is
+now deprecated.
 
 =item C<XXX_checklater: I<why>>
 
 Like C<XXX>, and additionally attach the E<quot>checklaterE<quot>
 attribute.
 
+NOTE: Currently it's not recommended to use this tag. It is better to
+use just C<XXX> in conjunction with C<next_check> or C<last_checked>,
+because the current infrastructure (supporting scripts etc.) have
+better support for this.
+
 =item C<XXX_prog: I<why>>
 
 The next block or line contains problematic information due to
 problems in the using programs, i.e. bbbike and bbbike.cgi.
 
-This can be used if stacking information has to be given using
-ordering in the data file, but bbbike should really have a layer_stack
-attribute.
+For example this can be used if stacking information has to be given
+using ordering in the data file, but bbbike should really have a
+layer_stack attribute.
 
-It can also be used for the cyclepath layer, because of suboptimal
-rendering in points with large angles (more than 45° or so). Here the
-layer item has to be broken into two items to fix the rendering
-problem.
+In the past it was also used for the cyclepath layer, because of
+suboptimal rendering in points with large angles (more than 45° or
+so). Here the layer item has to be broken into two items to fix the
+rendering problem. But this is solved in bbbike since July 2009.
 
 =item C<XXX_indoor: I<why>>
 
 The unclear information can only be researched E<quot>indoorE<quot>,
-but usually not on-site.
+and usually not on-site.
 
 =item C<XXX_outdoor: I<why>>
 
 The unclear information can only be researched on-site. Usually this
 is the same as C<XXX>.
+
+=item C<XXX_osm: I<why>>
+
+An issue in OpenStreetMap data, e.g. incorrectly spelled street name
+or wrong ways.
 
 =item C<alias: I<name>>
 
