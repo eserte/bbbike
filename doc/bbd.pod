@@ -475,6 +475,10 @@ typically a URL.
 Last verified at the given date. The date should be in a ISO-8601-like
 notation, with possible abbreviations: YYYY-MM-DD or YYYY-MM or YYYY.
 
+The difference between C<last_checked> and C<as_of> is subtle; it is
+expected that C<last_checked>-tagged entries should be actively
+checked for changes, and C<as_of>-tagged entries only passively.
+
 =item C<url: I<string>>
 
 An (official) URL referring to more information.
