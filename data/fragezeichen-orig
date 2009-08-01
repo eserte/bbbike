@@ -16,6 +16,7 @@ Wisbyer Str.: Radstreifen sind noch provisorisch	? 12091,16209 12026,16247 11887
 Frankfurter Allee: Radstreifen ist teilweise noch provisorisch	?; 15361,12071 15117,12106
 # Hier scheint nichts mehr zu passieren: #: last_checked: 2008-04-08 Wilhelmstr. (Kreuzberg)	? 9376,10393 9378,10539 9370,10615 9367,10641 9313,10789 9266,10936 9234,11056 9199,11166 9162,11286
 #: last_checked: 2008-10-11
+#: by: MoPo 2009-08-01, soll 2009 realisiert werden
 Alt-Moabit zwischen Kirch- und Paulstraße	? 7195,13046 6966,13075 6860,13093 6757,13112 6661,13130
 #: last_checked: 2009-07-21
 #: next_check: 2009-09-01
@@ -26,6 +27,7 @@ Breite Str./Werderscher Markt	? 10267,12305 10170,12261 10109,12238 10084,12228 
 #: last_checked: 2008-12-20
 #: XXX: zumindest zwischen Danziger Str. und Berliner Allee gibt es auf der östlichen Seite eine Radspur, kurz unterbrochen unter der S-Bahnbrücke, teilweise mit, teilweise ohne Benutzungspflicht, vor einer Kreuzung (Michelangelostr.?) kurz auf dem Gehweg geführt
 #: by: Tagesspiegel vom 2009-04-12, soll 2009 realisiert werden
+#: by: MoPo 2009-08-01, soll 2009 realisiert werden
 Greifswalder Str.	? 12332,14526 12384,14600 12437,14680 12488,14753 12536,14827 12604,14927 12614,14941 12628,14962 12722,15105 12743,15138 12880,15335 12966,15478 13098,15592 13229,15692 13316,15758
 # XXX laut Luftbild fertig: last_checked: 2006-06-16 (von Corinna):Gorkistr.	? 2998,20487 2974,20483 2615,20421
 # XXX del: Alt-Friedrichsfelde (nur nördliche Seite) (wahrscheinlich nur hier, wo bereits eine Lücke ist)	? 18220,11710 18098,11720 17966,11730 17746,11748 17497,11769 17440,11774 17240,11791
@@ -35,21 +37,52 @@ Löhleinstraße	? 2717,5578 2499,5144 2454,5067 2288,4932
 Saargemünder Straße	? 2027,4792 1884,4811 1747,4829 1479,4853
 #: by ^^^
 # XXX del: hier passiert bestimmt nichts mehr: by Berliner Kurier: vvv Max-Beer-Str.: Fahrradstraße geplant (2005, aber noch nichts passiert)	? 10632,13199 10703,13467 10740,13621
-#: by: Tagesspiegel vom 2009-04-12, soll 2009 realisiert werden
+#: by: Tagesspiegel vom 2009-04-12, soll 2009 realisiert werden (bestätigt von MoPo 2009-08-01)
 Reichsstr.	? 1401,11428 1403,11428 1308,11506 1220,11583 1215,11587 1133,11664 1033,11754 881,11893 818,11954
+#: by: MoPo 2009-08-01, soll 2009 realisiert werden vvv
+Perleberger Str.	? 6230,13596 6366,13716 6493,13822 6649,13947 6730,14021 6807,14093 6992,14251 7123,14367 7180,14419
+Tiergartenstr.	? 8172,11679 8021,11636 7816,11571 7717,11540 7600,11513 7504,11512 7435,11514 7356,11517 7293,11519 6825,11486
+Grunewaldstr.	? 4861,5581 4671,5697 4520,5793 4419,5842 4291,5895 4172,5918 4006,5876 3931,5825 3850,5801 3707,5758
+Falkenberger Chaussee im Bereich Bhf. Hohenschönhausen	? 17400,17790 17703,17990 17843,18078
+#: by: ^^^
+#: by: MoPo 2009-08-01, soll 2010 realisiert werden vvv
+#: next_check: 2010-03-01 vvv
+Joachim-Friedrich-Str.	? 3067,9592 3069,9622 3083,9796 3092,9886 3108,10069 3111,10116 3132,10499
+Uhlandstr.	? 4984,9675 5004,9842 5026,10038 5036,10139 5063,10384
+Zossener Str./Lindenstr.	? 9856,10358 9873,10285 9865,10227 9858,10199 9837,10117 9827,10051
+Michaelbrücke/Michaelkirchstr.	? 11768,12006 11716,11914 11676,11839 11574,11594 11498,11417
+Stülerstr.	? 6825,11486 6716,11439 6692,11365 6679,11319 6630,11247 6606,11222
+Alt-Moabit	? 5975,13256 6214,13225
+Fischerinsel	? 10512,12039 10672,11870
+Poelchaustr.	? 20343,14429 20184,14435 20059,14441 19817,14454 19687,14469 19593,14472 19395,14477
+Germanenstr. (oder nur das kleine Stück bis Waldsteg?)	? 8396,19071 8359,19162 8304,19475 8268,19558 8234,19634 8233,19695 8231,19806 8242,19869 8234,19936
+Danziger Str.	? 11712,14868 11879,14771 11990,14714 12040,14688 12128,14640 12332,14526 12425,14459 12630,14306 12729,14227 12912,14084 12975,13990 13037,13897 13100,13803 13166,13707 13225,13620 13228,13615 13334,13459
+Kniprodestr./Am Friedrichshain	? 12912,14084 12792,13957 12703,13859 12658,13809 12573,13792 12403,13755 12204,13719 12161,13711 12038,13685 11868,13646 11785,13625 11762,13619 11723,13630
+Neuendorfer Str.	? -2883,15571 -2856,15687 -2869,15782 -2886,15867 -2915,15994 -3040,16246
+Goerzallee	? 4164,2717 4065,2576 3983,2454 3805,2196 3700,2045 3640,1959 3584,1877 3425,1647 3199,1455 3140,1411 2843,1281 2663,1199 2527,1136 2515,1131 2404,1078 2372,1043 2333,1003 2147,811 1946,604 1940,587 1834,339 1765,294
+Lankwitzer Str.	? 8955,3521 8599,3441 8478,3414 8347,3382 8270,3343 8173,3299 8080,3260 8039,3242
+Schnellerstr.	? 18245,5551 18370,5511 18680,5413 18984,5318 19031,5316 19328,5304 19405,5284
+#: next_check ^^^
+#: by: ^^^
 #: by: Tagesspiegel vom 2009-04-12, soll 2009 realisiert werden
-#: last_checked: 2009-07-09
-Müllerstr.	? 7754,15160 7611,15286 7474,15408 7414,15463 7277,15586 7198,15656 7129,15717 7043,15793 6936,15888 6914,15908 6790,16018 6680,16116 6608,16180 6450,16325 6444,16331 6433,16342 6311,16457 6208,16546 6103,16635 6019,16712 5937,16784 5777,16924 5589,17081 5504,17153
+#: corrected_by: MoPo 2009-08-01, soll 2010 realisiert werden
+#: next_check: 2010-03-01
+Müllerstr.	? 6790,16018 6680,16116 6608,16180 6450,16325 6444,16331 6433,16342 6311,16457 6208,16546 6103,16635 6019,16712 5937,16784 5777,16924 5589,17081 5504,17153
 #: by: Tagesspiegel vom 2009-04-12, soll 2009 realisiert werden
+#: corrected_by: MoPo 2009-08-01, soll 2010 realisiert werden
 #: last_checked: 2009-07-23
-#: next_check: 2009-09-15
-Annenstr.	? 11249,11268 11091,11379 10915,11535 10819,11664
+#: next_check: 2010-03-01
+Annenstr./Heinrich-Heine-Platz	? 11349,11227 11249,11268 11091,11379 10915,11535 10819,11664
 #: by: Tagesspiegel vom 2009-04-12, soll 2009 realisiert werden
-#: last_checked: 2009-05-27
-Chausseestr.	? 9212,13471 9094,13641 9042,13707 8935,13844 8879,13913 8831,13973 8735,14093 8654,14194 8607,14253 8527,14352 8442,14456 8346,14576 8286,14635 8246,14675 8153,14769
+#: corrected_by: MoPo 2009-08-01, soll 2010 realisiert werden
+#: next_check: 2010-03-01
+Müllerstr./Chausseestr.	? 8346,14576 8286,14635 8246,14675 8153,14769 8138,14786 8057,14876
 #: by: Tagesspiegel vom 2009-04-12, soll 2009 realisiert werden
+#: by: MoPo 2009-08-01, soll 2009 realisiert werden
 Kniprodestr.	? 13838,15113 13749,15013 13649,14899 13453,14678
 #: by: Tagesspiegel vom 2009-04-12, soll 2009 realisiert werden
+#: corrected_by: MoPo 2009-08-01, soll 2010 realisiert werden
+#: next_check: 2010-03-01
 Streitstr. (werden die vorhandenen Bordsteinradwege ersetzt)?	? -3040,16246 -3050,16429 -3046,16548 -3043,16601 -3031,16807 -3023,16925 -3018,16974 -3017,16984 -3009,17090 -3006,17128 -2959,17507 -2934,17594
 #: by: http://www.berlin.de/ba-pankow/presse/archiv/20081128.1050.115446.html
 #: next_check: 2010-01-01
@@ -83,6 +116,38 @@ Blankenburger Str. erhält beiderseitig Radfahrstreifen zwischen Dietzgen- und Si
 #
 #: section ignorieren vvv
 #: section Straßen in Planung vvv
+#: by: MoPo 2009-08-01, soll 2009 realisiert werden vvv
+Zobtener Str.: Asphaltierung	? 16539,10097 16157,10342 15758,10578
+Alter Fischweweg: gemeinsamer Geh- und Radweg	? 30087,5448 30244,6615 30307,6823
+Radwegeverbindung am U-Bhf. Johannisthaler Chaussee, gegenüber Kirschnerweg	? 13869,2658 13807,2863
+Belziger Str.: Asphaltierung	? 7315,9156 7110,9024
+Asphaltierung im Ramingrünzug	? -3776,14419 -3906,14517 -3941,14603 -4015,14744 -4035,14779
+Radwegbau Welzower Steig	? 6320,21777 6223,21952 6257,22005 6111,22155 6082,22183 6052,22185 6026,22227 5993,22260 5984,22280 5939,22330 5929,22339
+Radverbindung zwischen Bernhard-Lichtenberg-Str. und Goerdelerdamm	? 3174,14253 3229,14224
+Asphaltierung gemeinsamer Geh- und Radweg (Schönholzer Heide)	? 7857,19693 7849,19614 7940,19521 8170,19308 8334,19157 8359,19162
+Alt-Biesdorf (nördliche Seite): Bau von Radwegen	?; 22242,11269 21960,11269 21860,11278 21750,11319 21624,11379 21398,11482 21311,11528
+Allee der Kosmonauten: Bau von Radwegen	? 19173,13487 19059,13482 18875,13473 18783,13469 18234,13500 18017,13509 17793,13452 17688,13430
+#: by ^^^
+#: by: MoPo 2009-08-01, soll 2010 realisiert werden vvv
+#: next_check: 2010-03-01 vvv
+Radwegbau Welzower Steig	? 6320,21777 6370,21689 6428,21648 6478,21652 6508,21646 6529,21620 6576,21414
+Fasanenstr.: Öffnung der Einbahnstraße für Radfahrer	? 5268,11274 5247,10992 5242,10918 5229,10716 5207,10399
+Braunschweiger Str.: Asphaltierung	? 13047,7234 13150,7254 13322,7294 13369,7307 13487,7337
+Radverkehrsanlagen um den Knotenpunkt Weißenseer Weg/Konrad-Wolf-Str.	? 14843,15007 15052,14585 15164,14392
+Radverkehrsanlagen um den Knotenpunkt Weißenseer Weg/Konrad-Wolf-Str.	? 14754,14406 15052,14585 15272,14691
+# XXX wo ist das folgende: Asphaltierung eines Teilstücks der ehemaligen NBE-Trasse beiderseits Hansastr.
+Biesterfelder Str.: Asphaltierung eines Teilstücks	? 17102,16464 17010,16349 16942,16174
+Suermondtstr.: Schaffung von Radverkehrsanlagen	? 16964,16042 16961,16042 16654,16167 16515,16207 16416,16236 16260,16282 16095,16331 15919,16383
+Hansastr.: Schaffung von Radverkehrsanlagen	? 14650,15750 14823,15776 14934,15860 15077,16046 15432,16500
+Alt-Biesdorf/Alt-Kaulsdorf (südliche Seite): Bau von Radwegen	? 21108,11628 21251,11560 21311,11528 21398,11482 21624,11379 21750,11319 21860,11278 21960,11269 22242,11269 22326,11266 22484,11270
+# XXX wo genau: Radwegeverbindung im Zuge der TR7 Springpfuhl - Lea-Grundig-Str.
+Puccinistr.: Asphaltierung	? 13700,15501 13776,15546 13964,15656
+Borussenstr.: Asphaltstreifen	? -3907,2416 -3913,2327 -3965,2240 -4164,1993
+Ringstr.: Radverkehrsanlagen	? 9021,3878 8766,4038 8605,4138 8399,4244 8159,4354 8098,4376 7990,4420 7921,4451 7690,4552
+Teilestr.: Radverkehrsanlagen	? 10254,5921 10404,5969 10526,6008 10614,6047 10789,6031 11174,5996 11257,6015 11322,5989
+Fürstenwalder Allee: Bau von Radverkehrsanlagen	? 29713,4456 29813,4314 29850,4288 29901,4264 29959,4235 30340,3951 30518,3753 30650,3698 31139,3497 31366,3404 31447,3372 31632,3297 31863,3257 31999,3234 32829,3105 33111,3064 33593,2893
+#: next_check ^^^
+#: by: ^^^
 #: next_check: 2009-10-01
 Mohrenstr.: evtl. nach den Bauarbeiten Q0?	? 9418,11804 9220,11781
 #: next_check: 2009-07-15
@@ -107,7 +172,7 @@ Eisengutweg: Radwege entstehen im Zuge der Bauarbeiten bis 2011-09-30	?::inwork 
 #: by: http://www.berlin.de/ba-pankow/presse/archiv/20080912.1205.109026.html
 #: next_check: 2010-02-01:
 Friedrich-Engels-Str.: Radstreifen sollen hier entstehen	?::inwork 9791,19363 9729,19426 9606,19510 9468,19599 9408,19707 9355,19789
-#: by: http://www.berlin.de/ba-pankow/presse/archiv/20081119.1005.114651.html vvv
+#: by: http://www.berlin.de/ba-pankow/presse/archiv/20081119.1005.114651.html (confirmed_by: MoPo 2009-08-01, soll 2009 realisiert werden) vvv
 #: next_check: 2009-07-24: vvv
 Alt-Blankenburg: Bau von Radwegen	?::inwork; 14050,20955 13915,20944 13562,20913 13576,20849 13592,20785
 Alt-Blankenburg: Bau von Radwegen	?::inwork; 13592,20785 13576,20849 13915,20944 14050,20955
@@ -219,6 +284,7 @@ Prinzregentenstr.: Ist die Prinzregentenstr. mittlerweile eine Fahrradstraße? We
 Kleineweg: ist hier leicht versetzt	? 9130,7804 9131,7652 9120,7600
 Reinickendorfer Route 5, wo geht es weiter?	? 6558,18947 6442,18839
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20080728.1510.105902.html
+#: by: MoPo 2009-08-01, Radweg auf der südlichen Seite soll 2009 realisiert werden
 Oberspreestr.: südliche Nebenfahrbahn hat einen mittigen Asphaltbelag, Europaradweg wird hier entlanggeführt, genauer anschauen	? 19534,5242 19715,5185 19737,5176 20689,4862
 #: by: http://www.berlin.de/ba-spandau/presse/archiv/20071015.1025.86938.html
 #: by: http://www.berlin.de/ba-spandau/presse/archiv/20081022.1525.112277.html
@@ -230,9 +296,6 @@ Hamburger Platz: ist nun ein Kreisverkehr; Situation vor Ort genauer anschauen!	
 Schönefelder Str.: Einbahnstraßenregelung nur für Autos: wo genau, in welche Richtung?	? 17222,-606 17222,-580 17222,-426 17199,-196 17193,-109
 #: XXX ein anonymer bbbikegooglemaps-Kommentar --- aber auf dem Luftbild sieht die Kreuzung ganz normal aus?!
 Kreuzungsüberquerung umständlich?	? 26453,-12128
-#: by: burkard.dau (Sperrungen):
-#: by: anonymous (geschlossen):
-Einige Radweg-Abschnitte der Perleberger Str. sind mittlerweile gesperrt, welche genau? Oder alle?	? 6230,13596 6366,13716 6493,13822 6649,13947 6730,14021 6807,14093 6992,14251 7123,14367 7180,14419
 ## by: http://www.stadtentwicklung.berlin.de/verkehr/radverkehrsanlagen/de/hellersdorf/route.shtml: Marx-Engels-Forum: wird die RR8 hier durchgeführt? wo genau? -> Nein, keine Ausschilderung zu sehen; alle Radrouten werden an der Spandauer Str. nach SE geführt	? 10300,12587 10355,12551 10411,12471 10596,12517
 B87 (Umfahrung Müllrose): Ist die Straße eine Kfz-Straße?	? 78295,-17575 78445,-17324 78503,-16995 78474,-16794 78366,-16150 78445,-15684 78732,-15297 79126,-15047 79949,-14674 80501,-14338 81246,-13757 81362,-13667
 B87 (Umfahrung Beeskow): Ist die Straße eine Kfz-Straße?	? 66269,-27581 66283,-27438 66441,-26994 66462,-26428 66441,-25347 66426,-23979 66605,-23083 67085,-22374 67558,-22059 68152,-21851 68883,-21844 69506,-22088 70838,-22847 71168,-22890 71397,-22833
@@ -3703,3 +3766,5 @@ Simmelstr.: Qualität?	? 7540,17675 7669,17691 7809,17708 7897,17720 7973,17732
 Waltroper Weg: Qualität?	? 4148,1275 4082,1370
 Waltroper Weg: Qualität?	? 4056,1353 4011,1418
 Waltroper Platz: Qualität?	? 4056,1353 4082,1370 4109,1389
+#: XXX: möglicherweise Teil der TR3 (laut MoPo 2009-08-01)
+Michelangelostr. - Puccinistr.: Qualität? Sind Teile des Weges für Autos gesperrt?	? 13830,15138 13874,15137 13962,15238 13955,15274 13809,15370 13667,15464 13700,15501
