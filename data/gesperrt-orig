@@ -714,7 +714,7 @@ Lützlow: Gehweg auf gleichem Niveau wie Fahrbahn	1s:q1 52431,94119 52422,94028 5
 Lindenstr. (Frankfurt/Oder)	1 88960,-6639 88836,-6002
 Carthausplatz (Frankfurt/Oder)	1 88945,-6733 88890,-6691 88960,-6639
 Gubener Str. (Frankfurt/Oder)	1 88945,-6733 88890,-6691 88881,-6462 88775,-6151 88759,-5911
-B5 (paralleler Radweg existiert)	2 -9005,13354 -9586,13296 -10071,13353 -11250,13690
+B5 (paralleler Radweg existiert)	2 -9005,13354 -9583,13368 -10122,13391 -11253,13707
 Niemegk	1 -37263,-37723 -37263,-37584 -37216,-37587 -37188,-37728 -37263,-37723
 Bahnhofstr. (Fürstenberg)	1 -8839,86313 -8711,86273
 Fürstenberg	1 -8777,85887 -8680,85652
@@ -800,6 +800,7 @@ Atzpodienstr. (Umgehung auf Gehweg möglich)	1s:q3 16485,12384 16509,12518 16564,
 Behrenstr./Bebelplatz	1s:q3 9801,12245 9743,12239 9700,12234 9631,12227
 Halenseestr.	1s:q2 2277,9801 2167,10004 2121,10089 1988,10328 1951,10435
 Zeltinger Platz	1s:q3 2404,25187 2355,25252 2395,25273 2446,25265 2490,25211 2486,25156 2451,25123 2404,25187
+Ludolfinger Platz	1s:q3 2277,25033 2245,25016 2205,25042 2192,25083 2216,25117 2277,25094 2285,25059 2277,25033
 Sewanstr. - Balatonstr.	1s:q3 17705,10232 17741,10386
 Hönower Str. (Karlshorst) (Ausweichen auf Sandbankette möglich)	1s:q2 18377,9366 18490,9387
 #
@@ -1360,14 +1361,16 @@ Schranke, kann auch mit Anhänger umfahren werden	BNP:1 49137,24422
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: next_check: 2010-09-31
+#: XXX der Neubau wird "N" sein und auch Radwege haben
+#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0907/nachricht3563.html
+Wegedornbrücke: Vollsperrung, Neubau	2:inwork 20385,593 20442,564 20510,530
 #: last_check: 2009-07-29
 Schinkelplatz: Bauarbeiten	2:inwork 10084,12228 9984,12426
 #: next_check: 2009-12-01
 Französische Str.: Bauarbeiten	2:inwork 8901,12008 9076,12054
 #: next_check: 2011-03-01
 Rathausbrücke: gesperrt bis März 2011 (Neubau)	2:inwork 10362,12351 10422,12395
-# XXX del: last_checked: 2009-07-02: Dora-Benjamin-Park - Uferweg: Zugang ist noch gesperrt	2:inwork 14621,10062 14599,10039
-# XXX del: Dora-Benjamin-Park: Straße ist noch gesperrt	2:inwork 14621,10062 14705,10149
 #: last_checked: 2009-05-09 vvv
 #: next_check: 2009-09-01 vvv
 Vicki-Baum-Str.: noch in Bau, gesperrt	2:inwork 15990,10185 15894,10251

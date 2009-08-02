@@ -116,6 +116,11 @@ Blankenburger Str. erh‰lt beiderseitig Radfahrstreifen zwischen Dietzgen- und Si
 #
 #: section ignorieren vvv
 #: section Straﬂen in Planung vvv
+#: by: http://www.potsdam.de/cms/beitrag/10050631/757395/
+#: XXX wo wird die Verbindung genauer entlanggef¸hrt?
+Neuer Garten: Planung einer Radwegverbindung zwischen Gotischer Bibliothek und Alleestr.	?::inwork -12265,-418 -12262,-362 -12328,-212 -12331,-131 -12412,-118 -12450,-34 -12557,11
+#: XXX Zugleich Benennung von "Alter Markt" (im Gegensatz zum auch vorhandenen "Am Alten Markt") in der Gegend
+Humboldtstr. (Potsdam): alte Straﬂe wird hier wieder benannt	?::inwork -12771,-1633 -12766,-1598
 #: by: MoPo 2009-08-01, soll 2009 realisiert werden vvv
 Zobtener Str.: Asphaltierung	? 16539,10097 16157,10342 15758,10578
 Alter Fischweweg: gemeinsamer Geh- und Radweg	? 30087,5448 30244,6615 30307,6823
@@ -244,16 +249,10 @@ Fritz-von-der-Lancken-Str - Hˆhenweg: Straﬂe in Bau	?::inwork -12766,1932 -12636
 # und dem CGI-Benutzer auch nicht pr‰sentiert.
 # 
 Ampelanlage Schwedter/Kastanienallee?	? 10511,14418 10534,14460
-#: XXX_prog:
+#: XXX_prog: eine Art qX+3(=gerichtet)-Kombination ist notwendig, mit Unterst¸tzung f¸r bestimmte Fahrzeugarten (trailer) oder nur 3 mit trailer
 F¸r Anh‰nger sehr unbequem zu passieren (Betonblˆcke und Barrieren, max. 90cm lichte Breite)	? 9777,10719 9805,10791 9786,10971
-#: by: anonymous:
-Straﬂe 41 (M¸ggelheim): fester Sandweg, Q2	? 30265,2382 30320,2472 30317,2536 30338,2552 30444,2738 30469,2742 30504,2798 30593,2748 30541,2664
 #: by: Carsten Schulz:
 Wilmersdorf, am Hohen Bogen: Irgendwo hier gibt es ein neues Dr‰ngelgitter und erhˆhten Fuﬂg‰ngerverkehr, wo genau?	? 3665,8131 3676,8394 3618,8447 3713,8578 3489,8839 3388,8958
-#: XXX_indoor:
-eigentlich ein Knoten	? -9586,13296
-#: XXX_indoor:
-eigentlich ein Knoten	? -11250,13690
 #: XXX_prog:
 Potsdamer Str. oder Hauptstr.: Richtung Norden Hauptstr., Richtung S¸den Potsdamer Str.	? 7479,9357 7517,9454
 #: XXX_indoor:
@@ -371,6 +370,8 @@ Kleistpark: im Sommer bis 21 Uhr geˆffnet, im Winter bis 18 Uhr	? 7192,9508 7246
 #  ISOLIERTE EINTRƒGE (ebenfalls privat) (keine Verkn¸pfung zum Netz)
 #
 #: section ignorieren vvv
+#: by: anonymous:
+Straﬂe 41 (M¸ggelheim): fester Sandweg, Q2	? 30265,2382 30320,2472 30317,2536 30338,2552 30444,2738 30469,2742 30504,2798 30593,2748 30541,2664
 #: by: annett.scholze:
 Straﬂe 199 (Rudow): "neu gemacht", Q0	? 15565,379 15667,199 15783,72
 #: by: Aniko Timar:
@@ -1123,7 +1124,8 @@ Radewege - Brielow: Qualit‰t?	? -46132,7173 -46538,6977 -46760,6249 -47618,4983 
 Brielow - Hohenferchesar: Qualit‰t?	? -48390,5412 -49416,7055 -49898,7487 -50089,8223 -50533,8629 -50660,8921 -50856,8901 -51205,9530 -51535,9758 -51829,10290
 Radewege - Hohenferchesar: Qualit‰t?	? -48290,7437 -48693,7461 -49378,7626 -49809,8261 -50089,8223
 Hohenferchesar - Fohrde: Qualit‰t?	? -50533,8629 -50622,8172 -50749,7956 -51434,7677 -51827,7258 -52233,7271 -52436,7487 -52855,7334 -53058,7005
-Am Zernsee bis zur Eisenbahnbr¸cke: Qualit‰t (nˆrdlicher Abschnitt asphaltiert)? Nur f¸r Radfahrer offen? Ausschilderung vorhanden?	? -20202,-673 -20399,-666 -20526,-1097 -20704,-1561 -20913,-1859 -20933,-1960
+#: XXX leider war http://www.potsdam.de/cms/beitrag/10052198/757395/ bzgl. des Radwegs nicht genau genug...
+Am Zernsee bis zur Eisenbahnbr¸cke: Qualit‰t (nˆrdlicher Abschnitt asphaltiert)? Nur f¸r Radfahrer offen? Ausschilderung vorhanden? Existiert hier vielleicht auch ein Radweg?	? -20202,-673 -20399,-666 -20526,-1097 -20704,-1561 -20913,-1859 -20933,-1960
 Tˆplitz - Neu-Tˆplitz - Leest: Qualit‰t (von Leest aus asphaltiert!)? Durchgehende Ausschilderung (F3.1)?	? -23518,2861 -23286,3531 -23229,3692 -23207,3778 -22903,3848 -22909,4076 -21611,3984 -21437,3937 -21288,3807 -20898,3308 -20790,3007 -20745,2702 -20764,2582
 Tˆplitz - Gˆttin: Qualit‰t? Ausschilderung?	? -23694,2739 -23826,2871 -23975,2925 -24013,2975 -24073,2959 -24121,3026 -24076,3347 -24359,3569 -24613,3867 -24464,3972 -24362,3987 -24308,4092 -24368,4124 -24276,4282 -24191,4349 -24098,4329
 Gˆttin - Neu-Tˆplitz: Qualit‰t? Ausschilderung?	? -24098,4329 -23819,4206 -23597,4083 -23423,3918 -23353,3762 -23229,3692
@@ -1580,7 +1582,7 @@ Bergstr. (Wannsee): Qualit‰t zwischen Hermannstr. und Lindenstr., mˆglicherweise
 (Heuweg): Qualit‰t (wahrscheinlich Waldweg)	? -6021,2068 -6357,2274 -6587,2295
 Mauerweg in Kladow: Qualit‰t?	? -9395,5025 -9367,5246 -9390,5298 -9415,5322
 Braumannweg (Groﬂ Glienicke): Qualit‰t?	? -9415,5322 -9491,5339 -9671,5382
-Schwarzer Weg: Qualit‰t?	? -18385,4346 -18620,4569
+Zum Bahn¸bergang (Marquardt): Qualit‰t?	? -18385,4346 -18620,4569
 Garz - Korswandt: Qualit‰t? Sind Teile der Strecke f¸r Autos gesperrt?	? 59381,165027 59305,165173 59262,165310 59177,165487 59174,165716 59208,165863
 Trassenheide - Zinnowitz: Qualit‰t? F¸r Autos befahrbar? Straﬂennamen?	? 38457,187932 38487,187914 38526,187844 39424,187218 39495,187106 39521,187015 39609,186946 39753,186914 39896,186840 39981,186689 40036,186630 40207,186576 40254,186586 40249,186550 40243,186524 40204,186453 40262,186387 40489,186067 40530,185990 40621,185903 40685,185758 40751,185719
 Unter den Birken: Qualit‰t?	? 23066,7355 22836,7525 22704,7632 22600,7711
@@ -3398,7 +3400,9 @@ P¸ttlinger Str.: s¸dlich des Frankenholzer Wegs: Qualit‰t? F¸r Autos gesperrt?	?
 Haydnstr. - M‰rkische Allee: Zugang f¸r Radfahrer mˆglich? Qualit‰t? Kann man auch auf die andere Straﬂenseite wechseln?	? 20026,12088 20006,12128 19965,12134 19956,12239
 Uferweg an der Kongreﬂhalle: ist der Uferweg an der Kongreﬂhalle noch in Bau oder bereits fertig gestellt?	?::inwork 7782,12623 7745,12603 7710,12585 7670,12576
 Westhafenstr.: Ist die Westhafenstr. durchg‰ngig bis zur Beusselstr. befahrbar? Qualit‰t?	? 6083,14564 6025,14539 6015,14516 5997,14444 5920,14422 5217,14255
-Erwin-Bock-Str.: Qualit‰t?	? 23745,3806 23749,3868 23749,3883 23753,4218
+#: XXX laut http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20090722.1425.132805.html nach den Bauarbeiten asphaltiert
+#: next_check: 2009-08-28
+Erwin-Bock-Str.: Qualit‰t?	? 23749,3868 23749,3883 23753,4218
 Dorothea-Viehmann-Str.: Qualit‰t der Straﬂe s¸dlich "Zum alten Windm¸hlenberg"?	? 19206,1809 19164,1708 19132,1628 19101,1553 19061,1457
 Prierosser Str.: Qualit‰t im nˆrdlichen Abschnitt?	? 16570,2113 16568,2088 16651,1962
 Sollmannweg: Qualit‰t?	? 15010,2032 14993,2025 14865,1952 14846,1940 14627,1902 14549,1922
@@ -3786,3 +3790,15 @@ Breubergweg: Qualit‰t? Kˆnnen Radfahrer direkt zum Michelstadter Weg fahren?	? -
 Reuﬂstr.: Qualit‰t?	? -3023,16925 -3129,16931 -3238,16948
 Blankestr.: Qualit‰t?	? 5193,17428 5314,17558 5334,17592
 Reuterstr. (Reinickendorf): Qualit‰t?	? 5314,17558 5307,17582 5318,17617 5363,17667
+Seeburg - Heerstr.: Qualit‰t? Gibt es hier Wegweiser oder Straﬂennamen?	? -9467,12248 -9210,13338
+Fuﬂg‰ngerbr¸cke Hˆhe Coloniaallee: wieviele Stufen haben die Treppen?	? 19985,-6 19925,70
+#: XXX laut http://www.berlin.de/ba-reinickendorf/presse/archiv/20090727.1115.133229.html ex. auf einer L‰nge von 2500 Metern (beidseitig? einseitig?) Radangebotsstreifen und Radwege
+Bernauer Str.: Wo genau befinden sich Radspuren, wo befinden sich Radwege?	? 901,18732 1229,18750 1405,18749 1659,18747 1967,18743 2175,18740 2602,18737 2643,18738 2821,18831
+#: XXX laut http://www.berlin.de/ba-reinickendorf/presse/archiv/20090720.0950.132525.html
+#: XXX -> Mail an C. Lange geschickt
+Quickborner Str.: Wo genau befinden sich Radspuren, wo befinden sich Radwege?	? 7416,22349 7072,22905 6890,23213 6839,23300 6770,23417
+#: XXX Eintrag in Potsdam.coords.data fehlt
+#: XXX_osm: fehlt bei osm komplett
+Fritz-Rumpf-Str. (Potsdam): Ist die Straﬂe bereits fertiggestellt? Qualit‰t?	? -11307,133 -11388,270
+#: XXX Eintrag in Potsdam.coords.data fehlt
+Leonardo-da-Vinci-Str. (Potsdam): Ist die Straﬂe bereits fertiggestellt? Qualit‰t?	? -11390,72 -11609,400
