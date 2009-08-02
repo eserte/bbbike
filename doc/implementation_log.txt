@@ -1,3 +1,14 @@
+2009-08-02  Slaven Rezic  <slaven@rezic.de>
+
+	* "Eigentlich ein Knoten": gerade habe ich zwei Datensätze in der
+	"fragezeichen"-Datei, die den Text "eigentlich ein Knoten" enthielten,
+	ersatzlos gelöscht. Dabei handelte es sich um Knoten an der B5 von
+	Spandau Richtung Nauen, die in der BBBike-Karte nur als normale Kreuzung
+	dargestellt waren, ohne detaillierte Ausfahrten darzustellen. Die
+	restlichen Autobahnen und Kfz-Straßen sind ja auch nur grob dargestellt,
+	sollen nur einen ungefähren Orientierungspunkt geben, und, was das
+	Wichtigste ist, sind für das Routing sowieso nicht interessant.
+
 2009-01-11  Slaven Rezic  <slaven@rezic.de>
 
 	* osm2bbd: osm2bbd verwendet jetzt XML::LibXML::Reader statt der
