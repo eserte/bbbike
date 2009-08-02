@@ -14945,7 +14945,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_013726',
        data  => <<EOF,
-userdel	q4::inwork; 21534,-262 21968,-15 22108,82 22145,208
+userdel	q4::inwork; 21968,-15 22108,82 22145,208
 EOF
      },
      { from  => 1248559200, # 2009-07-26 00:00
@@ -15139,6 +15139,82 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::temp 13178,10623 13206,10651 13305,10789 13332,10832
+EOF
+     },
+     { from  => 1249153223, # 2009-08-01 21:00
+       until => 1251496799, # 2009-08-28 23:59
+       text  => 'Erwin-Bock-Straße zwischen Alfred-Randt-Straße und Müggelschlößchenweg: von der 30. bis 35. Kalenderwoche wird abschnittsweise unter einer halbseitigen bzw. Vollsperrung die Betonfahrbahn abgefräst und durch eine bituminöse Dechschicht erneuert.',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20090722.1425.132805.html',
+       data  => <<EOF,
+userdel	q4::inwork 23749,3868 23749,3883 23753,4218
+EOF
+     },
+     { from  => 1248559200, # 2009-07-26 00:00
+       until => 1249941599, # 2009-08-10 23:59
+       text  => 'Bellevuestraße und Seelenbinderstraße von Bahnhofstraße bis Bellevuestraße: Einbahnstraße in Richtung Fürstenwalder Damm vom 27.7. bis zum 10.8.2009',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork; 22294,5777 22513,5747 22608,5732 22696,5728 22798,5731 22897,5740 23092,5762 23333,5710 23402,5483
+EOF
+     },
+     { from  => 1249768800, # 2009-08-09 00:00
+       until => 1250978399, # 2009-08-22 23:59
+       text  => 'Bellevuestraße und Seelenbinderstraße von Bahnhofstraße bis Bellevuestraße: Einbahnstraße in Richtung Bahnhofstr. vom 10.8. bis zum 22.8.2009',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-treptow-koepenick/presse/archiv/',
+       data  => <<EOF,
+userdel	q4::inwork; 23402,5483 23333,5710 23092,5762 22897,5740 22798,5731 22696,5728 22608,5732 22513,5747 22294,5777
+EOF
+     },
+     { from  => 1252879200, # 2009-09-14 00:00
+       until => 1254347999, # 2009-09-30 23:59
+       text  => 'Bauarbeiten in der Buntzelstr. zwischen Parchwitzer Str. und Paradiesstr., Einbahnstraßenregelung, etwa vom 15.9. bis zum 30.9.2009',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-treptow-koepenick/presse/archiv/',
+       data  => <<EOF,
+userdel	q4::inwork; 21118,-459 21355,-309
+EOF
+     },
+     { from  => 1249154403, # 2009-08-01 21:20
+       until => 1252965600, # 2009-09-15 00:00
+       text  => 'Hebbelstraße - Trinkwasserverlegung Voraussichtlich bis Anfang September werden Bauarbeiten zur Verlegung einer Trinkwasserleitung in der westlichen Hebbelstraße zwischen Mittelstraße und Kurfürstenstraße durchgeführt. Während der Bauzeit wird in der Hebbelstraße eine Einbahnstraße in Richtung Kurfürstenstraße eingerichtet. ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork; -12571,-581 -12545,-698
+EOF
+     },
+     { from  => 1247349600, # 2009-07-12 00:00
+       until => 1255384800, # 2009-10-13 00:00
+       text  => 'Seit dem 13.07.2009 erfolgt der Bau einer Regenwasserleitung in der Steinstraße zwischen Großbeerenstraße und Hubertusdamm. Die Arbeiten werden unter Vollsperrung der Steinstraße durchgeführt. Die Arbeiten werden voraussichtlich drei Monate andauern. ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork -7060,-3124 -7266,-2736
+EOF
+     },
+     { from  => 1249164000, # 2009-08-02 00:00
+       until => 1251064800, # 2009-08-24 00:00
+       text  => 'Ab 03.08.2009 muss die Fr.-Ebert-Straße in Höhe Stadthaus wegen Gleisbauarbeiten und Leitungsarbeiten für den Verkehr gesperrt werden. Die Arbeiten dauern vorausichtlich bis 24.08.2009.',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork -12872,-565 -12865,-425
+EOF
+     },
+     { from  => 1246140000, # 2009-06-28 00:00
+       until => 1262214000, # 2009-12-31 00:00
+       text  => 'Aufgrund der Arbeiten zum Straßenneubau und der Verlegung von Schmutz- und Regenwasserleitungen kommt es ab dem 29.06.2009 zu Vollsperrungen der Otto-Nagel-Straße. Begonnen wird an der Kreuzung Berliner Straße. Die gesamte Maßnahme wir voraussichtlich zum Ende des 4. Quartals abgeschlossen werden. ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork -12064,-284 -11978,-348 -11877,-478
+EOF
+     },
+     { from  => 1251756000, # 2009-09-01 00:00
+       until => 1260831600, # 2009-12-15 00:00
+       text  => 'Fußgängertunnel Lange Brücke: unter Umständen vollständig gesperrt (September 2009 - Dezember 2009)',
+       type  => 'gesperrt',
+       source_id => 'http://www.potsdam.de/cms/beitrag/10051448/757395/',
+       data  => <<EOF,
+userdel	2::inwork -12669,-1768 -12608,-1715
 EOF
      },
     );

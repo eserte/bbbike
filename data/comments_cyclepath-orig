@@ -31,8 +31,9 @@ Hreinrich-Mann-Allee: Radweg	RW -12431,-2096 -12318,-2192
 Brauhausberg: Radstreifen	RW4;RW4 -12318,-2192 -12362,-2280 -12465,-2601
 Berliner Str. (B1): Radweg	RW2; -12317,-1212 -12285,-1174
 Berliner Str. (B1): beidseitiger Radweg	RW2;RW2 -12285,-1174 -12231,-1078 -12148,-934 -12045,-757
-Berliner Str. (B1): Radweg	RW; -10826,469 -11018,348 -11122,271 -11494,-4 -11584,-66 -11669,-138 -11723,-220 -11877,-478 -11935,-574 -12045,-757
-Berliner Str. (B1): teilweise parallele Nebenstraße, teilweise Radweg	RW1; -12045,-757 -11935,-574 -11877,-478 -11723,-220 -11669,-138 -11584,-66 -11494,-4 -11122,271 -11018,348 -10826,469
+Berliner Str. (B1): Radweg	RW; -10826,469 -11018,348 -11122,271 -11307,133 -11390,72 -11494,-4 -11584,-66 -11669,-138 -11723,-220 -11877,-478 -11935,-574 -12045,-757
+Berliner Str. (B1): teilweise parallele Nebenstraße, teilweise Radweg	RW1; -12045,-757 -11935,-574 -11877,-478 -11723,-220 -11669,-138 -11584,-66 -11494,-4 -11390,72 -11307,133 -11122,271 -11018,348 -10826,469
+#: XXX Radwegführung nach Verschwenkung der Straßenbahn begutachten (evtl. jetzt Zweirichtungsradweg)
 Humboldtbrücke: Radweg vorhanden und wegen Kfz-Straße zwingend benutzungspflichtig	RW2;RW2 -12045,-757 -11875,-925 -11613,-1125
 Nuthestr.: Radweg vorhanden und wegen Kfz-Straße zwingend benutzungspflichtig	RW2; -11549,-1169 -11613,-1125
 Nuthestr.: Radweg vorhanden und wegen Kfz-Straße zwingend benutzungspflichtig	RW2; -11613,-1125 -11549,-1169 -11463,-1232 -11356,-1317
@@ -432,7 +433,7 @@ Dahlwitzer Str./Köpenicker Allee	RW 25868,9225 26321,9868 26771,10496 26892,1066
 #: by: Janes Huff:
 Kopernikusstr. (Potsdam): freigegebener Gehweg	RW; -9723,-2451 -9963,-2253
 #: by: Message-ID: <Xns98A0C49FD8D3E4usenet@krickstadt.de>
-B5: straßenbegleitende Radwege	RW -11250,13690 -11620,13781 -12178,13928 -12968,13883 -13330,13857 -14017,13772 -16015,13705 -16767,13639 -16982,13681 -17175,13749 -18726,14303 -18976,14381 -19527,14652
+B5: straßenbegleitende Radwege	RW -11253,13707 -11635,13818 -12145,13943 -13019,13861 -13330,13857 -14057,13830 -16015,13705 -16767,13639 -16982,13681 -17175,13749 -18726,14303 -18976,14381 -19527,14652
 #: by: Stefan Schmidt:
 Trebbiner Str. (Mahlow): Radweg	RW 11186,-5297 11291,-4485 11355,-4293 11377,-4015
 #: by: Aimo Raasch vvv
@@ -440,7 +441,7 @@ Leipziger Str.: neuer Bürgersteigradweg, 1,50m	RW1; -12431,-2096 -12653,-2206
 Leipziger Str.: Radstreifen, 1,20m	RW4; -12653,-2206 -12719,-2283 -12756,-2437
 Leipziger Str.: Radstreifen, 1,20m	RW4; -12929,-2659 -13062,-2901
 Leipziger Str.: alter Bürgersteigradweg, etwas welliger Asphalt, 1,30m	RW1; -13062,-2901 -12929,-2659 -12756,-2437
-Leipziger Str.: Radangebotssreifen, 1m	RW3; -12756,-2437 -12719,-2283
+Leipziger Str.: Radangebotsstreifen, 1m	RW3; -12756,-2437 -12719,-2283
 Leipziger Str.: Radstreifen, 1,50m; kurz vor der Kreuzung Bürgersteigradweg	RW4; -12719,-2283 -12653,-2206 -12431,-2096
 #: by: ^^^
 #: by: Mentecapti...:

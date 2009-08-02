@@ -1053,28 +1053,10 @@ userdel	2::inwork 7160,11225 6851,11346
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_012890',
-         'until' => 1249163999,
-         'text' => 'Bahnhofstr. (Pankow) in beiden Richtungen zwischen Mönchmühler Str. und Bahnübergang Baustelle, Straße vollständig gesperrt (bis Anfang 08.2009)',
-         'from' => 1247255857,
-         'id' => 1737,
-         'data' => 'userdel	2::inwork 8803,23478 8626,23432 8584,23421
-',
-         'type' => 'gesperrt'
-       },
        undef,
        undef,
-       {
-         'source_id' => 'IM_013510',
-         'until' => 1249163999,
-         'text' => 'Eichelhäherstr. (Reinickendorf) in beiden Richtungen zwischen Habichtstr. und Am Eulenhorst Baustelle, für beide Richtungen nur ein Fahrstreifen abwechselnd frei. Bis Anfang 08.2009)',
-         'from' => 1247256047,
-         'id' => 1740,
-         'data' => 'userdel	q4::inwork -1787,19341 -1826,19541 -1788,19663
-',
-         'type' => 'handicap'
-       },
+       undef,
+       undef,
        undef,
        undef,
        undef,
@@ -1243,7 +1225,7 @@ userdel	2::inwork 7160,11225 6851,11346
          'text' => 'Buntzelstr. (Treptow) Richtung Waltersdorfer Str. zwischen Dahmestr. und Waltersdorfer Str. Baustelle, Fahrtrichtung gesperrt ist ausgeschildert. (bis Mitte 09.2009)',
          'from' => 1248299511,
          'id' => 1764,
-         'data' => 'userdel	q4::inwork; 21534,-262 21968,-15 22108,82 22145,208
+         'data' => 'userdel	q4::inwork; 21968,-15 22108,82 22145,208
 ',
          'type' => 'handicap'
        },
@@ -1436,14 +1418,91 @@ userdel	2::temp 5194,12176 5133,12240 5203,12387 5250,12296
 ',
          'type' => 'gesperrt'
        },
+       undef,
        {
-         'until' => 1249243200,
-         'text' => 'Oberbaumbrücke: gesperrt wegen der 7. Open-Air-Gallery, am 2. August 2009 von 10.00 Uhr bis 22.00 Uhr',
-         'from' => 1249113600,
-         'id' => 1787,
-         'data' => 'userdel	q4::temp 13178,10623 13206,10651 13305,10789 13332,10832
+         'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20090722.1425.132805.html',
+         'until' => 1251496799,
+         'text' => 'Erwin-Bock-Straße zwischen Alfred-Randt-Straße und Müggelschlößchenweg: von der 30. bis 35. Kalenderwoche wird abschnittsweise unter einer halbseitigen bzw. Vollsperrung die Betonfahrbahn abgefräst und durch eine bituminöse Dechschicht erneuert.',
+         'from' => 1249153223,
+         'id' => 1788,
+         'data' => 'userdel	q4::inwork 23749,3868 23749,3883 23753,4218
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => 1249941599,
+         'text' => 'Bellevuestraße und Seelenbinderstraße von Bahnhofstraße bis Bellevuestraße: Einbahnstraße in Richtung Fürstenwalder Damm vom 27.7. bis zum 10.8.2009',
+         'from' => 1248559200,
+         'id' => 1789,
+         'data' => 'userdel	q4::inwork; 22294,5777 22513,5747 22608,5732 22696,5728 22798,5731 22897,5740 23092,5762 23333,5710 23402,5483
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/presse/archiv/',
+         'until' => 1250978399,
+         'text' => 'Bellevuestraße und Seelenbinderstraße von Bahnhofstraße bis Bellevuestraße: Einbahnstraße in Richtung Bahnhofstr. vom 10.8. bis zum 22.8.2009',
+         'from' => 1249768800,
+         'id' => 1790,
+         'data' => 'userdel	q4::inwork; 23402,5483 23333,5710 23092,5762 22897,5740 22798,5731 22696,5728 22608,5732 22513,5747 22294,5777
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/presse/archiv/',
+         'until' => 1254347999,
+         'text' => 'Bauarbeiten in der Buntzelstr. zwischen Parchwitzer Str. und Paradiesstr., Einbahnstraßenregelung, etwa vom 15.9. bis zum 30.9.2009',
+         'from' => 1252879200,
+         'id' => 1791,
+         'data' => 'userdel	q4::inwork; 21118,-459 21355,-309
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1252965600,
+         'text' => 'Hebbelstraße - Trinkwasserverlegung Voraussichtlich bis Anfang September werden Bauarbeiten zur Verlegung einer Trinkwasserleitung in der westlichen Hebbelstraße zwischen Mittelstraße und Kurfürstenstraße durchgeführt. Während der Bauzeit wird in der Hebbelstraße eine Einbahnstraße in Richtung Kurfürstenstraße eingerichtet. ',
+         'from' => 1249154403,
+         'id' => 1792,
+         'data' => 'userdel	q4::inwork; -12571,-581 -12545,-698
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1255384800,
+         'text' => 'Seit dem 13.07.2009 erfolgt der Bau einer Regenwasserleitung in der Steinstraße zwischen Großbeerenstraße und Hubertusdamm. Die Arbeiten werden unter Vollsperrung der Steinstraße durchgeführt. Die Arbeiten werden voraussichtlich drei Monate andauern. ',
+         'from' => 1247349600,
+         'id' => 1793,
+         'data' => 'userdel	q4::inwork -7060,-3124 -7266,-2736
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1251064800,
+         'text' => 'Ab 03.08.2009 muss die Fr.-Ebert-Straße in Höhe Stadthaus wegen Gleisbauarbeiten und Leitungsarbeiten für den Verkehr gesperrt werden. Die Arbeiten dauern vorausichtlich bis 24.08.2009.',
+         'from' => 1249164000,
+         'id' => 1794,
+         'data' => 'userdel	q4::inwork -12872,-565 -12865,-425
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1262214000,
+         'text' => 'Aufgrund der Arbeiten zum Straßenneubau und der Verlegung von Schmutz- und Regenwasserleitungen kommt es ab dem 29.06.2009 zu Vollsperrungen der Otto-Nagel-Straße. Begonnen wird an der Kreuzung Berliner Straße. Die gesamte Maßnahme wir voraussichtlich zum Ende des 4. Quartals abgeschlossen werden. ',
+         'from' => 1246140000,
+         'id' => 1795,
+         'data' => 'userdel	q4::inwork -12064,-284 -11978,-348 -11877,-478
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'http://www.potsdam.de/cms/beitrag/10051448/757395/',
+         'until' => 1260831600,
+         'text' => 'Fußgängertunnel Lange Brücke: unter Umständen vollständig gesperrt (September 2009 - Dezember 2009)',
+         'from' => 1251756000,
+         'id' => 1796,
+         'data' => 'userdel	2::inwork -12669,-1768 -12608,-1715
+',
+         'type' => 'gesperrt'
        }
      
 );

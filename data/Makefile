@@ -1494,7 +1494,7 @@ ${PERSISTENTTMPDIR}/crossings_bahn.bbd:	strassen sbahn rbahn brunnels
 ${PERSISTENTTMPDIR}/crossings_gewaesser.bbd:	\
 					strassen wasserstrassen brunnels
 	${PERL} ${MISCSRCDIR}/check_crossings -v-if-interactive \
-	    -ignore "Fasaneriegraben,Packereigraben,Tränkegraben,Teufelsseekanal,(See im Tiergarten),,Luiseninsel,Fennpfuhl,Heidekampgraben,Karpfenteich,Panke,Nordgraben,Tegeler Fließ,Hermsdorfer See,Wuhle,Neue Wuhle,Flutgraben,Kreuzgraben,Zingergraben,Iderfenngraben,Bäke,Bullengraben,Spektegraben,Bruchstückengraben,Fredersdorfer Mühlenfließ,Neuenhagener Mühlenfließ,Plumpengraben,Kleiner Jürgengraben,Rudower Fließ,Grützmachergraben" \
+	    -ignore "Fasaneriegraben,Packereigraben,Tränkegraben,Kraatzgraben,Teufelsseekanal,(See im Tiergarten),,Luiseninsel,Fennpfuhl,Heidekampgraben,Karpfenteich,Panke,Nordgraben,Tegeler Fließ,Hermsdorfer See,Wuhle,Neue Wuhle,Flutgraben,Kreuzgraben,Zingergraben,Iderfenngraben,Bäke,Bullengraben,Spektegraben,Bruchstückengraben,Fredersdorfer Mühlenfließ,Neuenhagener Mühlenfließ,Plumpengraben,Kleiner Jürgengraben,Rudower Fließ,Grützmachergraben" \
 	    -o $@~ -against brunnels \
 	    strassen wasserstrassen
 	mv $@~ $@
