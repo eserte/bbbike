@@ -146,29 +146,23 @@ sub mirror_and_plot_visible_area_constrained {
     my($x0,$y0,$x1,$y1) = get_visible_area();
 
     my $osm_download_dir = bbbike_root() . "/misc/download/osm";
-    my $berlin_dir = "$osm_download_dir/berlin";
     my $elsewhere_dir = "$osm_download_dir/elsewhere";
 
-    my @berlin_tiles;
     my @elsewhere_tiles;
 
     open my $fh, "-|",
-	$^X, bbbike_root() . "/miscsrc/downloadosm", "-xstep", XSTEP, "-ystep", YSTEP, "-round", "-report", "-o", $berlin_dir, $x0,$y0,$x1,$y1
+	$^X, bbbike_root() . "/miscsrc/downloadosm", "-xstep", XSTEP, "-ystep", YSTEP, "-round", "-report", "-o", $elsewhere_dir, $x0,$y0,$x1,$y1
 	    or die "Can't run downloadosm: $!";
     while(<$fh>) {
 	chomp;
-	my($file, undef, $exists) = split /\t/, $_;
-	if ($exists) {
-	    push @berlin_tiles, "$berlin_dir/$file";
-	} else {
-	    push @elsewhere_tiles, "$elsewhere_dir/$file";
-	}
+	my($file, undef, undef) = split /\t/, $_;
+	push @elsewhere_tiles, "$elsewhere_dir/$file";
     }
 
 require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([$x0,$y0,$x1,$y1],[qw()])->Indent(1)->Useqq(1)->Dump; # XXX
-require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([\@berlin_tiles, \@elsewhere_tiles],[qw(berlin elsewhere)])->Indent(1)->Useqq(1)->Dump; # XXX
+require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([\@elsewhere_tiles],[qw(elsewhere)])->Indent(1)->Useqq(1)->Dump; # XXX
 
-    mirror_and_plot_osm_files([@berlin_tiles, @elsewhere_tiles], %args);
+    mirror_and_plot_osm_files([@elsewhere_tiles], %args);
 }
 
 sub get_download_url {
