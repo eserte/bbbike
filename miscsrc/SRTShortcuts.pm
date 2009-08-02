@@ -254,22 +254,22 @@ sub add_button {
 	      ],
 	      [Cascade => 'OSM Live data', -menuitems =>
 	       [
-		[Button => "Display (and refresh) downloaded OSM tiles",
+		[Button => "Display (and refresh) OSM tiles (Berlin)",
 		 -command => sub {
 		     _require_BBBikeOsmUtil();
 		     BBBikeOsmUtil::mirror_and_plot_visible_area();
 		 }],
-		[Button => "Display (without refresh) downloaded OSM tiles",
+		[Button => "Display (without refresh) OSM tiles (Berlin)",
 		 -command => sub {
 		     _require_BBBikeOsmUtil();
 		     BBBikeOsmUtil::plot_visible_area();
 		 }],
-		[Button => "Constrained download of OSM tiles (and refresh)",
+		[Button => "Display (and refresh) OSM tiles (elsewhere)",
 		 -command => sub {
 		     _require_BBBikeOsmUtil();
 		     BBBikeOsmUtil::mirror_and_plot_visible_area_constrained(refreshdays => 0.5);
 		 }],
-		[Button => "Constrained download of OSM tiles (without refresh)",
+		[Button => "Display (without refresh) OSM tiles (elsewhere)",
 		 -command => sub {
 		     _require_BBBikeOsmUtil();
 		     BBBikeOsmUtil::mirror_and_plot_visible_area_constrained(refreshdays => 999999);
