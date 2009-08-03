@@ -252,9 +252,9 @@ sub carry_penalty_for_special_vehicle {
     # situations. Maybe this should be overridable using
     # addinfo?
     if ($special_vehicle eq 'trailer') {
-	$penalty * 5;
+	35 + $penalty*3.5 + 35; # abmontieren, drei Wege, wobei der Anhänger etwas umständlicher zu transportieren ist, anmontieren
     } elsif ($special_vehicle eq 'childseat') {
-	$penalty * 3;
+	25 + $penalty*2 + 25; # Kind absetzen, ein potentiell langsamer Weg, Kind aufsetzen
     } else {
 	$penalty;
     }

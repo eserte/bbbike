@@ -61,8 +61,8 @@ $ua->agent("BBBike-Test/1.0");
 	my $resp = bbbike_cgi_search +{ %route_endpoints, pref_specialvehicle => 'childseat' }, 'Special "vehicle" childseat';
 	my $content = $resp->decoded_content;
 	like_html($content, qr{Fußgängerbrücke}, 'Still found Fussgaengerbruecke');
-	like_html($content, qr{90 Sekunden Zeitverlust}, 'Found lost time, in seconds');
-	like_html($content, qr{0:03h.*?bei 20 km/h}, 'Fahrzeit');
+	like_html($content, qr{110 Sekunden Zeitverlust}, 'Found lost time, in seconds');
+	like_html($content, qr{0:04h.*?bei 20 km/h}, 'Fahrzeit');
     }
 
     {
@@ -80,8 +80,8 @@ $ua->agent("BBBike-Test/1.0");
 				    pref_specialvehicle => 'childseat' }, 'Special "vehicle" childseat';
     my $content = $resp->decoded_content;
     like_html($content, qr{Fußgängerbrücke}, 'Still found Fussgaengerbruecke');
-    like_html($content, qr{\(2x\).*3 Minuten Zeitverlust}, 'Found lost time, in minutes, and "2x"');
-    like_html($content, qr{0:03h.*?bei 20 km/h}, 'Fahrzeit');
+    like_html($content, qr{\(2x\).*4 Minuten Zeitverlust}, 'Found lost time, in minutes, and "2x"');
+    like_html($content, qr{0:04h.*?bei 20 km/h}, 'Fahrzeit');
 }
 
 {

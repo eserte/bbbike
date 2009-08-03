@@ -124,7 +124,7 @@ sub s2hms {
 # Sekunden in MM:SS-Schreibweise
 sub s2ms {
     my $s = shift;
-    sprintf "%d:%02d", $s/60, $s%60;
+    sprintf "%d:%02d", $s/60, int($s%60);
 }
 
 # gebrochene Stunden in HH:MM-Schreibweise

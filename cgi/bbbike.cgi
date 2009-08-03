@@ -3897,7 +3897,7 @@ sub display_route {
 			} elsif ($penalty < 120) {
 			    $label .= " (" . sprintf(M("ca. %s Sekunden Zeitverlust"), $penalty) . ")";
 			} else {
-			    $label .= " (" . sprintf(M("ca. %s Minuten Zeitverlust"), $penalty/60) . ")";
+			    $label .= " (" . sprintf(M("ca. %s Minuten Zeitverlust"), int($penalty/60+0.5)) . ")";
 			}
 			push @comments, $label;
 			push @comments_html, $label;
