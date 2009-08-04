@@ -1,3 +1,21 @@
+2009-08-04  Slaven Rezic  <slaven@rezic.de>
+
+	* Umzug zu git: Das Haupt-Repository von BBBike ist ab sofort als
+	git-Repository bei github erreichbar:
+
+	    Clone-URL: git://github.com/eserte/bbbike.git
+	    Webseiten: http://github.com/eserte/bbbike
+
+	Intern habe ich schon seit einigen Monaten git verwendet und mit
+	git-cvsimport und git-cvsexportcommit von und zum CVS-Repository bei
+	SourceForce synchronisiert. Wegen Bugs in der git-cvs-Brücke (genauer:
+	in cvsps, welches von git-cvsimport verwendet wird) funktioniert aber
+	diese Synchronisation nicht mehr. Deshalb die Flucht nach vorne.
+
+	Das alte CVS-Repository werde ich aber in unregelmäßigen Abständen
+	weiterhin up-to-date halten. Wahrscheinlich werde ich dafür die alte
+	RCS-CVS-Brücke etwas umbauen.
+	
 2009-08-02  Slaven Rezic  <slaven@rezic.de>
 
 	* "Eigentlich ein Knoten": gerade habe ich zwei Datensätze in der
