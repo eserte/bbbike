@@ -265,26 +265,39 @@ C<cbbbike> and C<cmdbbbike> are simpler command line versions of the program.
 
 =head1 DEVELOPMENT
 
-The current BBBike development may be tracked via CVS. It is also
-possible to download a current snapshot using the URL
+
+=head2 git
+
+The current BBBike development may be tracked via git.
+
+To use the git repository from command line type the following:
+
+
+    git clone git://github.com/eserte/bbbike.git
+
+to update the next time
+
+    cd bbbike
+    git pull
+
+The git repository is always up-to-date and also contains the current
+data.
+
+
+=head2 CVS
+
+If git cannot be used, then there's still the possibility to access
+the old CVS repository (:pserver:anonymous@bbbike.cvs.sourceforge.net:/cvsroot/bbbike). Note that it's not guaranteed that
+updates occur in the same frequency as for the git repository.
+
+=head2
+Application update
+
+It is also possible to download a current snapshot using the URL
 L<http://www.bbbike.de/cgi-bin/bbbike-snapshot.cgi>.
 
-Look at L<http://sourceforge.net/cvs/?group_id=19142> for instructions on how to use CVS.
-
-To use the CVS repository from command line type the following:
-
-    # login is necessary only once, leave the password empty
-    cvs -d :pserver:anonymous@bbbike.cvs.sourceforge.net:/cvsroot/bbbike login
-    cvs -d :pserver:anonymous@bbbike.cvs.sourceforge.net:/cvsroot/bbbike co bbbike
-
-    # to update the next time
-    cd bbbike
-    cvs -q update -d
-
-The CVS repository is always up-to-date and also contains the current
-data. B<Warning>: address of the CVS repository changed in May 2006. You
-have to make a fresh checkout (co) if you have a checked-out repository
-which is older.
+=head2
+Data update
 
 To update only the data part of BBBike, just download the current data
 as a ZIP file from L<http://www.bbbike.de/cgi-bin/bbbike-data.cgi>. The ZIP file has to be

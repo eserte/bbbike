@@ -20,6 +20,8 @@
 ## perlreplace #MAIL#       $BBBike::EMAIL
 ## perlreplace #CGIURL#     $BBBike::BBBIKE_WWW
 ## perlreplace #DIRECTCGIURL#     $BBBike::BBBIKE_DIRECT_WWW
+## perlreplace #HTTPGIT#    $BBBike::BBBIKE_GIT_HTTP
+## perlreplace #GITREPO#    $BBBike::BBBIKE_GIT_CLONE_URL
 ## perlreplace #HTTPCVS#    $BBBike::BBBIKE_CVS_HTTP
 ## perlreplace #CVSREPO#    $BBBike::BBBIKE_CVS_ANON_REPOSITORY
 ## perlreplace #HTTPSNAPSHOT#     $BBBike::BBBIKE_UPDATE_DIST_CGI
@@ -656,62 +658,91 @@ DEVELOPMENT
 
 
 
-## only DE
-Der aktuelle Entwicklungsstand von BBBike kann über CVS
-verfolgt werden. Der aktuelle Stand kann aber auch
-von der Adresse L<#HTTPSNAPSHOT#> downgeloadet werden.
+=head2 git
 
-Eine ausführliche CVS-Anleitung befindet sich unter
-L<#HTTPCVS#>.
+
+## only DE
+Der aktuelle Entwicklungsstand von BBBike kann über git
+verfolgt werden.
 
 Von der Kommandozeile muss folgendes eingegeben werden:
 
 ## only EN
-The current BBBike development may be tracked via CVS. It is also
-possible to download a current snapshot using the URL
-L<#HTTPSNAPSHOT#>.
+The current BBBike development may be tracked via git.
 
-Look at L<#HTTPCVS#> for instructions on how to use CVS.
-
-To use the CVS repository from command line type the following:
+To use the git repository from command line type the following:
 
 ## yes
+
+
+    git clone git://github.com/eserte/bbbike.git
 
 
 ## only DE
-    # login ist nur das erste Mal notwendig, Passwort leer lassen
+Alle weiteren Male nur folgendes verwenden:
 ## only EN
-    # login is necessary only once, leave the password empty
+to update the next time
 ## yes
 
-    cvs -d #CVSREPO# login
-    cvs -d #CVSREPO# co bbbike
-
-
-## only DE
-    # Alle weiteren Male nur folgendes verwenden:
-## only EN
-    # to update the next time
-## yes
 
     cd bbbike
-    cvs -q update -d
+    git pull
 
 
 ## only DE
-Das CVS wird fast täglich aktualisiert und enthält auch die aktuellen
-Daten. B<Achtung>: die Adresse des Repositorys hat sich im Mai 2006
-geändert! Es ist notwendig, ein frisches Checkout (co) zu machen,
-falls das Repository vor diesem Datum ausgecheckt wurde.
+Das git-Repository wird fast täglich aktualisiert und enthält auch die aktuellen
+Daten.
 
 
 ## only EN
-The CVS repository is always up-to-date and also contains the current
-data. B<Warning>: address of the CVS repository changed in May 2006. You
-have to make a fresh checkout (co) if you have a checked-out repository
-which is older.
+The git repository is always up-to-date and also contains the current
+data.
 
 ## yes
+
+
+=head2 CVS
+
+
+## only DE
+Falls git nicht verwendet werden kann, gibt es noch immer die
+Möglichkeit auf das alte CVS-Repository unter #CVSREPO# zuzugreifen.
+Es ist allerdings nicht garantiert, dass Updates in der gleichen
+Frequenz wie auf dem git-Repository passieren.
+## only EN
+If git cannot be used, then there's still the possibility to access
+the old CVS repository (#CVSREPO#). Note that it's not guaranteed that
+updates occur in the same frequency as for the git repository.
+## yes
+
+
+=head2
+
+## only DE
+Programm-Aktualisierung
+## only EN
+Application update
+## yes
+
+
+
+## only DE
+Der aktuelle Programm -und Daten-Stand kann auch von der Adresse
+L<#HTTPSNAPSHOT#> downgeloadet werden.
+## only EN
+It is also possible to download a current snapshot using the URL
+L<#HTTPSNAPSHOT#>.
+## yes
+
+
+=head2
+
+## only DE
+Daten-Aktualisierung
+## only EN
+Data update
+## yes
+
 
 
 ## only DE
@@ -719,14 +750,13 @@ Um nur die Daten zu aktualisieren, kann man sich die aktuellen Daten
 als ZIP-Datei von L<#BBBIKEVAR_UPDATE_DATA_CGI#> holen. Die ZIP-Datei
 muss im BBBike-Programmverzeichnis (bei Windows unter
 C<C:\Programme\BBBike\bbbike>) ausgepackt werden.
-
 ## only EN
 To update only the data part of BBBike, just download the current data
 as a ZIP file from L<#BBBIKEVAR_UPDATE_DATA_CGI#>. The ZIP file has to be
 extracted in the BBBike program directory (Windows: in
 C<C:\Programme\BBBike\bbbike>).
-
 ## yes
+
 
 =head1 
 ## only DE

@@ -95,6 +95,10 @@ $BBBIKE_MAPSERVER_DIRECT = 'http://bbbike.de/mapserver/brb/';
 # The initial mapserver URL (indirect, from www.bbbike.de)
 $BBBIKE_MAPSERVER_INDIRECT = "http://www.bbbike.de/mapserver/brb/";
 
+# git
+$BBBIKE_GIT_CLONE_URL = 'git://github.com/eserte/bbbike.git';
+$BBBIKE_GIT_HTTP = 'http://github.com/eserte/bbbike';
+
 # CVS
 $BBBIKE_CVS_ANON_REPOSITORY = ":pserver:anonymous\@bbbike.cvs.sourceforge.net:/cvsroot/bbbike";
 $BBBIKE_CVS_HTTP = "http://sourceforge.net/cvs/?group_id=" . $SF_BBBIKE_GROUP_ID;

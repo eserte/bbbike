@@ -265,28 +265,42 @@ Programms.
 
 =head1 ENTWICKLUNG
 
-Der aktuelle Entwicklungsstand von BBBike kann über CVS
-verfolgt werden. Der aktuelle Stand kann aber auch
-von der Adresse L<http://www.bbbike.de/cgi-bin/bbbike-snapshot.cgi> downgeloadet werden.
 
-Eine ausführliche CVS-Anleitung befindet sich unter
-L<http://sourceforge.net/cvs/?group_id=19142>.
+=head2 git
+
+Der aktuelle Entwicklungsstand von BBBike kann über git
+verfolgt werden.
 
 Von der Kommandozeile muss folgendes eingegeben werden:
 
-    # login ist nur das erste Mal notwendig, Passwort leer lassen
-    cvs -d :pserver:anonymous@bbbike.cvs.sourceforge.net:/cvsroot/bbbike login
-    cvs -d :pserver:anonymous@bbbike.cvs.sourceforge.net:/cvsroot/bbbike co bbbike
 
-    # Alle weiteren Male nur folgendes verwenden:
+    git clone git://github.com/eserte/bbbike.git
+
+Alle weiteren Male nur folgendes verwenden:
+
     cd bbbike
-    cvs -q update -d
+    git pull
 
-Das CVS wird fast täglich aktualisiert und enthält auch die aktuellen
-Daten. B<Achtung>: die Adresse des Repositorys hat sich im Mai 2006
-geändert! Es ist notwendig, ein frisches Checkout (co) zu machen,
-falls das Repository vor diesem Datum ausgecheckt wurde.
+Das git-Repository wird fast täglich aktualisiert und enthält auch die aktuellen
+Daten.
 
+
+
+=head2 CVS
+
+Falls git nicht verwendet werden kann, gibt es noch immer die
+Möglichkeit auf das alte CVS-Repository unter :pserver:anonymous@bbbike.cvs.sourceforge.net:/cvsroot/bbbike zuzugreifen.
+Es ist allerdings nicht garantiert, dass Updates in der gleichen
+Frequenz wie auf dem git-Repository passieren.
+
+=head2
+Programm-Aktualisierung
+
+Der aktuelle Programm -und Daten-Stand kann auch von der Adresse
+L<http://www.bbbike.de/cgi-bin/bbbike-snapshot.cgi> downgeloadet werden.
+
+=head2
+Daten-Aktualisierung
 
 Um nur die Daten zu aktualisieren, kann man sich die aktuellen Daten
 als ZIP-Datei von L<http://www.bbbike.de/cgi-bin/bbbike-data.cgi> holen. Die ZIP-Datei
