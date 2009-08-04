@@ -43,18 +43,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1249250399,
-         'text' => 'Berliner Gauklerfest vom 24. Juli 2009 bis 2. August 2009, einige Straßen am Opernpalais sind vollständig gesperrt',
-         'from' => 1248386400,
-         'id' => 1112,
-         'data' => 'userdel	2::temp 9890,12161 9869,12297 9795,12293 9780,12401
-userdel	2::temp 9869,12297 9852,12409
-userdel	2::temp 9986,12375 9926,12368 9972,12184
-userdel	2::temp 9915,12417 9926,12368
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -786,7 +775,7 @@ userdel	q4::inwork 10422,12395 10476,12432
          'text' => 'Varian-Fry-Str.: Baustelle, Fahrbahn gesperrt',
          'from' => undef,
          'id' => 1657,
-         'data' => '#: last_checked: 2009-07-02 by rjoop
+         'data' => '#: last_checked: 2009-08-04
 userdel	q4::inwork 8389,11378 8374,11479
 ',
          'type' => 'handicap'
@@ -1303,36 +1292,9 @@ userdel	2::inwork 7160,11225 6851,11346
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'source_id' => 'IM_013842',
-         'until' => 1249304400,
-         'text' => 'Am Ostbahnhof (Friedrichshain) in beiden Richtungen zwischen Andreasstr. und Koppenstr. Veranstaltung, gesperrt (bis 03.08.09, ca. 15 Uhr)',
-         'from' => 1249106357,
-         'id' => 1775,
-         'data' => 'userdel	q4::temp 12310,11682 12208,11746
-',
-         'type' => 'handicap'
-       },
-       {
-         'source_id' => 'IM_013799',
-         'until' => 1249250400,
-         'text' => 'Badstr. (Wedding) in beiden Richtungen zwischen Pankstr. und Behmstr. Veranstaltung, Straße vollständig gesperrt (bis 02.08.09, nachts)',
-         'from' => 1249106389,
-         'id' => 1776,
-         'data' => 'userdel	2::temp 9134,15953 9059,16038 8993,16100 8928,16158 8862,16208 8788,16264
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'source_id' => 'IM_013853',
-         'until' => 1249279200,
-         'text' => 'Hüttenweg (Grunewald) in beiden Richtungen zwischen A115 und Koenigsallee Bauarbeiten, Straße vollständig gesperrt (bis 03.08.2009 morgens)',
-         'from' => 1249106497,
-         'id' => 1777,
-         'data' => 'userdel	2::inwork -130,6694 -739,6838 -927,6888
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
+       undef,
        {
          'source_id' => 'IM_013806',
          'until' => 1251755999,
@@ -1343,17 +1305,7 @@ userdel	2::inwork 7160,11225 6851,11346
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_013844',
-         'until' => 1249268400,
-         'text' => 'Salzufer (Charlottenburg) ebenso Gutenbergstr., Margarete-Kühn-Str., Hannah-Karminski-Str. Veranstaltung (31.07.09 - 02.08.09), gesperrt (bis 03.08.09, ca. 5 Uhr)',
-         'from' => 1248904800,
-         'id' => 1779,
-         'data' => 'userdel	2::temp 5253,12079 5231,12122 5194,12176 5250,12296 5325,12234
-userdel	2::temp 5194,12176 5133,12240 5203,12387 5250,12296
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_013849',
          'until' => undef,

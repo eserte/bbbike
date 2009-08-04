@@ -64,6 +64,7 @@ Fußgängerampel vor der Passauer Str. zum Überqueren der Lietzenburger Str. benut
 Fußgängerampel links benutzen	CP; 14723,16691 14619,16682 14619,16672
 Münchener Str., über Hohenstaufenstr.: Fußgängerampel auf der linken Seite zum Überqueren der Hohenstaufenstr. benutzen	CP; 6210,9833 6209,9772 6227,9531
 Münchener Str., über Hohenstaufenstr.: Fußgängerampel auf der rechten Seite zum Überqueren der Hohenstaufenstr. benutzen	CP; 6227,9531 6209,9772 6210,9833
+#: XXX_prog die zusätzliche Strecke sollte auch noch berücksichtigt werden
 Münchener Str., Richtung Martin-Luther-Str.: Fußgängerampel auf der linken Seite benutzen	CP; 6210,9833 6209,9772 6241,9772
 Hohenstaufenstr. zur Münchener Str.: frühzeitig Fußgängerampel nach links benutzen	PI; 6241,9772 6209,9772 6227,9531
 Münchener Str. zur Nachodstr.: Fußgängerampel auf der rechten Seite benutzen	CP; 6227,9531 6209,9772 6108,9772
@@ -161,7 +162,6 @@ Lichtenrader Damm - Griembergweg: Überquerungsmöglichkeit nördlich der Kreuzung	
 Griembergweg - Lichtenrader Damm: Überquerungsmöglichkeit nördlich der Kreuzung	CP; 10913,96 10753,83 10780,-43
 #: by: ^^^
 Richtung Bellevuestr. und Kemperplatz	CS; 8548,11552 8505,11544 8462,11538
-als "Leipziger Platz" ausgeschildert	CS; 8542,11502 8572,11506 8733,11524
 Einfahrt gegenüber Waldcafe	CP2; 30021,5322 27096,5828
 Zur Hackerstr.: Hausdurchgang benutzen	CP2; 4987,6336 5017,6387
 Lützowplatz - Wichmannstr.: Fußgängerampel links benutzen	CP; 6918,10854 6824,10904 6681,10959

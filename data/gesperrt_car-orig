@@ -418,6 +418,7 @@ Emser Str.	1 13058,7165 12872,7134
 Stuthirtenweg: Gitter	3 13453,1218 13552,1265 13628,1334
 Stuthirtenweg: Gitter	3 13628,1334 13552,1265 13453,1218
 Gertraudenstr.: Abbiegen verboten	3nocross 10512,12039 10431,11945 10391,11898
+Gertraudenstr.: Abbiegen verboten	3nocross 10313,11805 10299,11786 10240,11740
 Grunerstr.: Mittelstreifen	3nocross 10738,12364 10800,12461 10878,12560 10954,12635
 Bayernring	1 8616,8605 8455,8567 8371,8543
 Georg-Hermann-Allee (Potsdam): (teilweise) Einbahnstraße	1 -13429,1069 -13418,1668
@@ -457,8 +458,8 @@ Berliner Allee -> Rossinistr.	3 13432,15843 13401,15821 13456,15760
 Prenzlauer Promenade: Straßenbahntrasse	3nocross 12010,16774 12017,16734 12046,16568
 Karl-Marx-Allee: Mittelstreifen	3nocross 12114,12546 12134,12540 12360,12505
 Leipziger Str.: Mittelstreifen	3nocross 10240,11740 10213,11728 9981,11689
-Niederwallstr./Spittelmarkt	3 10183,11770 10240,11740 10320,11627
-Niederwallstr./Spittelmarkt	3 10183,11770 10240,11740 10299,11786
+Niederwallstr./Spittelmarkt: nur Abbiegen nach rechts erlaubt	3 10183,11770 10240,11740 10320,11627
+Niederwallstr./Spittelmarkt: nur Abbiegen nach rechts erlaubt	3 10183,11770 10240,11740 10299,11786
 Kleineweg: nur für Anlieger	2:Anlieger 9126,8025 9130,7804 9131,7652 9120,7600 9145,7522 9097,7469
 Friedrich-Wilhelm-Str.: In die andere Richtung nur für Anlieger	1 8385,5907 8282,5909
 Parkstr.: Durchfahrt gesperrt	3 9143,6415 9184,6413 9250,6414
@@ -533,7 +534,13 @@ Torgauer Str.: nur für Anlieger	2:Anlieger 7446,8200 7268,8225 7005,8150
 Hermannswerder	1 -14301,-2871 -13718,-2991
 #: by: Ulf Lenski:
 Neue Schönholzer Str.	1 10089,18180 10140,18080 10179,17772
-#: XXX Richtung unsicher
 Kleine Kurstr.	1 10227,11836 10183,11770
 Schendelgasse	1 10653,13493 10703,13467 10767,13443
 Leipziger Str. (Potsdam)	1 -12431,-2096 -12653,-2206 -12719,-2283 -12756,-2437 -12929,-2659 -13062,-2901
+#: XXX_prog für Anhänger auch nicht geeignet, Mittelstreifen zu schmal
+Grunewaldstr.: Mittelstreifen	1 6161,9128 6264,9156 6361,9175
+#: note: Breite zwischen Pollern ca. 150cm
+Viktoria-Luise-Platz: Poller	3 6270,9910 6275,9962 6224,9980
+Viktoria-Luise-Platz: Poller	3 6224,9980 6275,9962 6270,9910
+Else-Lasker-Schüler-Str.: Poller	3 7291,10506 7245,10499 7033,10396
+Else-Lasker-Schüler-Str.: Poller	3 7033,10396 7245,10499 7291,10506

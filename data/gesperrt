@@ -148,7 +148,7 @@ Weserstr. (Friedrichshain)	1 14416,11815 14471,11782
 Quickborner Str.	1 8022,21476 8170,21304
 Berliner Str. (Blankenfelde)	1 9490,23531 9528,23240
 Revaler Str. (Straﬂenbahn)	1s 13588,11490 13473,11456
-Molkenmarkt - zur Stralauer Str.	1 10804,12291 10772,12288 10675,12280
+Molkenmarkt - zur Stralauer Str.	1 10804,12291 10772,12288 10736,12285 10675,12280
 Herrfurthplatz	1 11647,7940 11659,7982 11695,8005 11732,8001 11757,7965 11753,7930 11717,7895 11670,7911 11647,7940
 Grimmstr.	1 11023,9597 11089,9751 11163,9903
 Grimmstr.	1 11200,9889 11141,9732 11110,9661 11075,9576
@@ -1207,6 +1207,11 @@ Poststr. -> M¸hlendamm: unbequemes Passieren des Mittelstreifens	3::igndisp 1062
 M¸hlendamm -> Poststr.: unbequemes Passieren des Mittelstreifens	3::igndisp 10625,12206 10659,12259 10629,12293
 M¸hlendamm -> Rolandufer: unbequemes Passieren des Mittelstreifens	3::igndisp 10574,12131 10625,12206 10583,12206
 Rolandufer -> M¸hlendamm: unbequemes Passieren des Mittelstreifens	3::igndisp 10583,12206 10625,12206 10659,12259
+unbequemes Passieren des Mittelstreifens	3nocross::ignrte 10675,12280 10700,12315 10723,12346 10738,12364
+Eiergasse -> M¸hlendamm: unbequemes Passieren des Mittelstreifens	3::igndisp 10671,12356 10700,12315 10723,12346
+M¸hlendamm -> Eiergasse: unbequemes Passieren des Mittelstreifens	3::igndisp 10675,12280 10700,12315 10671,12356
+Spandauer Str. [Gehweg] -> M¸hlendamm: unbequemes Passieren des Mittelstreifens	3::igndisp 10665,12413 10723,12346 10738,12364
+M¸hlendamm -> Spandauer Str. [Gehweg]: unbequemes Passieren des Mittelstreifens	3::igndisp 10700,12315 10723,12346 10665,12413
 unbequemes Passieren des Mittelstreifens (Bordsteine)	3nocross::ignrte 5229,10716 5351,10760 5484,10810
 Kurf¸rstendamm -> Meinekestr.: unbequemes Passieren des Mittelstreifens (Bordsteine)	3::igndisp 5484,10810 5351,10760 5329,10422
 Meinekestr. -> Kurf¸rstendamm: unbequemes Passieren des Mittelstreifens (Bordsteine)	3::igndisp 5329,10422 5351,10760 5229,10716
@@ -1330,6 +1335,9 @@ Unter den Eichen -> Reichensteiner Weg: Mittelstreifen, Tunnelrampe	3::igndisp 3
 Mittelstreifen	3nocross::ignrte 11785,9437 11757,9509 11745,9541
 Kottbusser Damm -> Pfl¸gerstr.: Mittelstreifen	3::igndisp 11745,9541 11757,9509 11934,9538
 Pfl¸gerstr. -> Kottbusser Damm: Mittelstreifen	3::igndisp 11934,9538 11757,9509 11785,9437
+Mittelstreifen	3nocross::ignrte 10350,11846 10391,11898 10431,11945
+Gertraudenstr. -> Kleine Gertraudenstr.: Mittelstreifen	3::igndisp 10350,11846 10391,11898 10364,11896
+Kleine Gertraudenstr. -> Gertraudenstr.: Mittelstreifen	3::igndisp 10364,11896 10391,11898 10431,11945
 tragen (14 Stufen)	0:25:-197 -6972,1029
 tragen (Treppe)	0:30:-24 22057,4531
 tragen (ca. 40 Stufen)	0:30:-147 -2396,3652
@@ -1415,7 +1423,7 @@ tragen (Treppe)	0:30:-115 3756,12614
 tragen (Treppe)	0:30:-267 4334,12551
 tragen (Jungfernbr¸cke, 10 Stufen)	0:15:52 10206,11997
 tragen (Jungfernbr¸cke, 4 Stufen)	0:10:53 10223,12010
-tragen (Treppe, 26 Stufen)	0:30 10583,12206
+tragen (Treppe, 26 Stufen)	0:30:-248 10591,12203
 tragen (Treppe und Rampe)	0:30:-154 39281,17353
 tragen (Treppe oder sehr steile, sandige Rampe)	0:60:-255 41715,18446
 tragen (Treppe am Kˆrnerpark)	0:30:-114 12734,7384
@@ -1637,7 +1645,7 @@ Plus-Parkpl. -> Pl. der Vereinten Nationen: Straﬂenbahntrasse	3::igndisp 11881,1
 Tor zum Spielplatz	BNP:10:-236 11865,13027
 Tor zum Spielplatz	BNP:10:-156 11874,13048
 Tor zum Spielplatz	BNP:10:-250 11815,13045
-(Parkweg Am Karlsbad): tragen (ca. 10 Stufen)	0:40:-140 8190,10960
+tragen (Treppe, 14 Stufen)	0:20:-140 8190,10960
 Matth‰ikirchplatz	1 7938,11276 7956,11340 7973,11354
 Matth‰ikirchplatz	1 7973,11354 7984,11334 7966,11267
 Herkulesufer: wg. Stufen schieben, ggf. auf Wiesenstreifen ausweichen	0:30:69 6920,11064

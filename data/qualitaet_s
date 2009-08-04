@@ -744,7 +744,7 @@ Bäkestr.: mäßiger Asphalt	Q1 -7088,-1074 -7051,-1221
 Dircksenstr: Kopfsteinpflaster	Q2 10706,13043 10582,13104 10445,13091 10336,13037
 Hildegard-Jadamowitz-Str.: Kopfsteinpflaster	Q2 13206,12309 13520,12264
 Hildegard-Jadamowitz-Str.: Kopfsteinpflaster	Q2 13599,12253 13659,12193
-Am Karlsbad: gutes Kopfsteinpflaster	Q1 7968,11048 8011,11014
+Am Karlsbad: gutes Kopfsteinpflaster	Q1 7968,11048 8011,11014 8027,11000
 Stallschreiberstr.: Beton/Asphalt	Q0 10678,11172 10620,11244
 Stallschreiberstr.: Kopfsteinpflaster, OK	Q1 10620,11244 10489,11405
 Am Urban-Krankenhaus: Kopfsteinpflaster, OK	Q1 10619,9914 10695,9922
@@ -2273,6 +2273,8 @@ Mäckeritzstr.: asphaltiert	Q0 1361,14431 1320,14440 1262,14510 1244,14558 1235,1
 (Neue Grünstr. - Alte Jakobstr.): Kleinpflaster	Q1 10624,11548 10534,11609
 Ritterstr.: Verbundsteinpflaster	Q0 9935,11067 9920,11074 9861,11103
 Wörther Str.: aufgepflasterte Abschnitte	Q1 11255,14572 11317,14564
+Park am Karlsbad: wassergebundene Decke	Q1 8143,10903 8190,10960
+Singerstr.: Asphalt mit Schäden	Q1 11920,12266 12084,12235
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
 Riemeisterstr.: mäßiges Kopfsteinpflaster, aber asphaltierte Radwege	Q1 346,4833 294,4916 158,5103 103,5123
 Pücklerstr.: Fahrbahn mit schlechtem Kopfsteinpflaster, Radweg OK	Q1 2688,7067 2576,7026 2465,6984 2403,6962 2266,6911 2155,6873 2130,6865 2054,6840 1961,6820
@@ -2876,7 +2878,8 @@ Fregestr.: guter Asphalt	Q0 5897,6799 5957,6889 5957,6970 5958,7220 5955,7406
 (Ringstr. - Gersdorfstr. (Kolonie Marienhöhe)): Asphalt	Q0 7921,4451 7935,4466 8027,4571 8162,4725
 (Gersdorfstr. - Wulfilaufer): fester sandiger Parkweg	Q1 8162,4725 8249,4769
 Lettestr.: Kopfsteinpflaster	Q2 11268,15360 11368,15301 11480,15229
-Apostel-Paulus-Str.: Kopfsteinpflaster	Q2 7044,9163 6945,9142 6885,9132 6735,9103 6593,9074 6442,9044 6366,9033 6283,9022 6209,9012
+Apostel-Paulus-Str.: Kopfsteinpflaster	Q2 7044,9163 6945,9142 6885,9132 6735,9103 6591,9080
+Apostel-Paulus-Str.: Asphalt	Q0 6591,9080 6443,9060 6367,9048 6279,9034 6214,9003
 Waldstr. (Niederschönhausen): asphaltiert	Q0 10018,19429 9978,19512
 Waldstr. (Niederschönhausen): Kleinsteinpflaster	Q1 9978,19512 9878,19741 9864,19793 9840,19923
 Waldstr. (Niederschönhausen): asphaltiert	Q0 9840,19923 9788,20035 9754,20134 9725,20260 9724,20291 9718,20498
@@ -3243,7 +3246,7 @@ Geibelstr. (Lichtenrade): Verbundsteinpflaster	Q0 10143,-1026 10143,-987 10126,-
 Geibelstr. (Lichtenrade): Verbundsteinpflaster	Q0 10064,-628 10034,-546
 Geibelstr. (Lichtenrade): Verbundsteinpflaster	Q0 10034,-546 10018,-494 9991,-413 9968,-345 9861,-44 9826,48 9789,150
 Rosenheimer Str.: Asphalt	Q0 6851,9365 6717,9339 6446,9328 6357,9322 6239,9344
-Rosenheimer Str.: Asphalt	Q0 6239,9344 6164,9329
+Rosenheimer Str.: Verbundsteinpflaster	Q0 6239,9344 6164,9329
 Rosenheimer Str.: Asphalt	Q0 6164,9329 6070,9322
 Tieckstr.: asphaltiert	Q0 9094,13641 9275,13720 9376,13765 9510,13823
 Löptener Str.: sehr guter Asphalt	Q0 10993,-1919 10760,-1931
@@ -3520,7 +3523,7 @@ Gerolsteiner Str.: Verbundsteinpflaster	Q1 4330,7497 4330,7375
 Am Fenn: Kopfsteinpflaster	Q2 6283,4565 6174,4434 6150,4340 6144,4315
 Ohmstr.: Asphalt	Q0 1432,14169 1479,14343
 Zühlsdorfer Str.: Asphalt	Q0 19976,16046 20214,15923 20262,16029 20170,16075
-Berchtesgadener Str.: Asphalt	Q0 6370,8922 6366,9033 6361,9175 6360,9194 6357,9322 6351,9464 6348,9535
+Berchtesgadener Str.: Asphalt	Q0 6370,8922 6367,9048 6361,9175 6360,9194 6357,9322 6351,9464 6348,9535
 Storchenweg: Beton	Q0 14616,3203 14707,3315 14779,3426
 Baumläuferweg: gutes Kopfsteinpflaster	Q1 14468,3484 14707,3315
 Baumläuferweg: Betonstraße in gutem Zustand	Q0 14707,3315 14816,3162 14865,3068 14949,2967
@@ -5698,7 +5701,7 @@ Markgrafenstr. (Kreuzberg, Mitte): Asphalt mit Schlaglöchern	Q2 9631,12227 9643,
 Am Festungsgraben: Kopfsteinpflaster	Q2 9842,12506 9764,12492
 (Dorotheenstr. - Unter den Linden): wassergebundene Decke	Q1 9744,12601 9764,12492
 (Dorotheenstr. - Unter den Linden): Kopfsteinpflaster	Q1 9764,12492 9771,12400
-(Eichhornstr. - Reichpietschufer): Kopfsteinplaster, Gehweg Ok	Q2 8232,11414 8205,11401 8184,11160
+(Eichhornstr. - Reichpietschufer): Kopfsteinplaster, Gehweg OK	Q2 8232,11414 8205,11401 8184,11160
 Kuppenheimerstr.: Schotterweg	Q1 5823,8107 5824,8035
 (Herkulesufer - Von-der-Heydtstr.): Kleinpflaster	Q2 7140,11156 7115,11220
 (Geßlerstr. - Monumentenstr.): Verbundpflaster	Q1 7970,8886 7964,9060 8009,9063 8014,9126
