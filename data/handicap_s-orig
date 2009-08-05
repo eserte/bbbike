@@ -443,7 +443,8 @@ Friedrichsbrücke: Fußgänger	q1 10086,12725 10171,12769
 Nollendorfplatz: Gehweg oder Parkplatz Richtung Motzstr. benutzen	q3; 7033,10328 6971,10346
 (Blücherplatz - Waterlooufer): Fußgänger, Bordsteine	q2 9631,10142 9687,10180
 Arenholzsteig: Bordsteine	q2 8481,6900 8496,6919
-Mergenthalerring: Asphaltschwellen, können umfahren werden	q1+ 14382,8058 14563,8243
+#: XXX_prog: für Anhänger vielleicht q2
+Mergenthalerring: Asphaltschwellen, können umfahren werden	q1 14395,8071 14563,8243
 Grazer Platz: Fußgänger, Bordsteine	q2 6546,6720 6530,6786 6529,6798
 (Vorarlberger Damm - Kleingartenkolonie): Fußgänger	q1 6817,7101 6852,7246 6841,7283
 (Nordmannzeile - Kleingartenkolonie): Fußgänger	q1 6807,7262 6809,7272 6841,7283
@@ -510,6 +511,7 @@ Bouchéstr.: Bodenschwellen	q0 13645,9621 13867,9864
 Cuvrystr.: Bodenschwellen	q1 13053,10088 13132,10239
 Elsensteg: Fußgänger	q3 13366,8694 13376,8705 13394,8730 13402,8741
 Elsenstr. - Bahndamm: enger Weg	q2 13923,9405 13953,9372
+(Blockpark): Fußgänger	q1 16303,10760 16246,10641 16187,10587
 ######################### User Contributions #################################
 #: by: Michael Kiekbusch
 #: corrected_by: srt/policy (q4 -> q3-)

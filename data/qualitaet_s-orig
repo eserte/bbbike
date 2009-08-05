@@ -113,7 +113,7 @@ Türrschmidtstr.: glattes Kopfsteinpflaster	Q1- 15279,10862 15353,10870 15435,108
 Türrschmidtstr.: mäßiges Kopfsteinpflaster	Q2 15540,10887 15649,10922 15738,10962
 Giselastr.: mäßiges Kopfsteinpflaster	Q2 16345,11328 16311,11226 16273,11113 16227,10991
 Emanuelstr.: Kopfsteinpflaster	Q2 16316,10755 16349,10860 16374,10946
-Zobtener Str.: teils sandiger und holpriger Fahrweg	Q3 16539,10097 16157,10342 15758,10578
+Zobtener Str.: Fahrweg, Schotter	Q2 16539,10097 16157,10342 15758,10578
 Zobtener Str.: sandig	Q2 16734,9990 16811,9937
 Wielandstr.: Asphalt	Q0 23470,9403 23428,9301 23374,9172 23342,9095 23289,8993 23171,8835
 Wielandstr.: schlechtes Kopfsteinpflaster	Q3 23171,8835 23099,8726 23003,8582
@@ -493,7 +493,8 @@ Tiergarten: Parkweg	Q1 8215,12156 8222,11881 8223,11796 8223,11700
 Tiergarten: Parkweg	Q1 7663,11946 7570,11855 7223,11897 7073,11798 6778,11742 6540,11754
 Parkweg: sehr gutes Kopfsteinpflaster	Q1 14310,9692 14351,9757 14448,9922
 Parkweg: Verbundsteinpflaster	Q1 14448,9922 14453,9929 14558,10082 14597,10129 14626,10162 14652,10201
-Uferweg an den Treptowers: Parkweg (fester Sandweg)	Q0 14373,10046 14202,10152 14118,10178 13903,10237
+#: note: mittlerweile etwas wellig
+Uferweg an den Treptowers: Parkweg (fester Sandweg)	Q1+ 14373,10046 14202,10152 14118,10178 13903,10237
 Hasenheide: asphaltiert	Q0 11271,8325 11282,8428 11250,8585 11177,8985 11128,9100 11136,9183
 Hasenheide, zur Lilienthalstr.: Parkweg	Q1 10709,9192 11128,9100
 Carl-Herz-Ufer: Kopfsteinpflaster (kann auf Uferweg umgangen werden)	Q2 10619,9914 10602,9957 10500,10081
@@ -551,7 +552,6 @@ Gleimstr: Kopfsteinpflaster (noch)	Q2 9917,15613 9734,15579
 Nordufer: uneben	Q2 5618,14981 5937,14824 5991,14832
 Seydlitzstr.: Kopfsteinpflaster	Q2 7655,13539 7419,13416 7295,13346 7263,13331 7131,13261
 Stolzenfelsstr.: schlechter Asphalt	Q1 18722,8582 18787,8540 18949,8437
-Schlichtallee: teilweise Kopfsteinpflaster	Q2; 15639,10469 15758,10578
 Dorfstr.: schlechtes Kopfsteinpflaster	Q3 22484,11270 22516,11418 22496,11474 22469,11627 22313,11688
 Dorfstr.: schlechtes Kopfsteinpflaster	Q3 22260,11742 22313,11688 22496,11474
 Dorfstr.: Kopfsteinpflaster	Q2 22260,11742 22149,11870 22112,11936 22140,11958
@@ -2154,7 +2154,7 @@ Achenbachpromenade: wassergebundene Decke und Verbundsteinpflaster	Q1 8763,8780 
 (Salzmannstr. - Betriebsbhf. Rummelsburg): Asphalt	Q0 16841,9995 16925,9852
 (Am Kraatzgraben): unebener Asphalt	Q1- 16839,10064 16666,10219 16544,10337 16488,10381
 (Kolonie Sanssouci): wassergebundene Decke, Feinschotter	Q1- 16488,10381 16297,10636 16246,10641
-(Kolonie Sanssouci - Fischerstr.): Beton	Q1 16246,10641 16187,10587
+(Blockpark): Asphalt	Q0 16303,10760 16246,10641 16187,10587
 Theatergasse: mäßiger Beton	Q1 18787,8540 18843,8612
 Wildensteiner Str.: guter Asphalt	Q0 18627,8475 18528,8331
 Wildensteiner Str.: schlechtes Kopfsteinpflaster	Q3 18528,8331 18416,8163 18365,8094 18333,8059
@@ -2532,6 +2532,7 @@ Ritterstr.: Verbundsteinpflaster	Q0- 9935,11067 9920,11074 9861,11103
 Wörther Str.: aufgepflasterte Abschnitte	Q1 11255,14572 11317,14564
 Park am Karlsbad: wassergebundene Decke	Q1+ 8143,10903 8190,10960
 Singerstr.: Asphalt mit Schäden	Q1+ 11920,12266 12084,12235
+Puderstr.: Asphalt	Q0 14614,9052 14567,8966 14525,8894 14374,8726
 ######################### User Contributions #################################
 #: by: Dominik Seelow vvv
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
@@ -9980,7 +9981,8 @@ Dettelbacher Weg: Kopfsteinpflaster	Q2 11698,18446 11750,18273 11820,18043
 Zeiler Weg: Kopfsteinpflaster	Q2 11495,18129 11579,18184 11665,18237 11750,18273 11835,18301 11914,18303
 #: by: ^^^
 #: by: axel bindrich [AM]
-Stuckstr.: Asphalt	Q2 14446,8983 14525,8894 14619,8794
+#: corrected_by: srt (Q2 -> Q0)
+Stuckstr.: Asphalt	Q0 14446,8983 14525,8894 14619,8794
 #: by: Detlef Neubauer [AM] vvv
 Gotlindestr.: Asphalt	Q0 16859,12613 16957,12599 17088,12617 17234,12607 17357,12566
 #: confirmed_by: srt

@@ -1236,15 +1236,7 @@ userdel	2::inwork 7160,11225 6851,11346
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1249423200,
-         'text' => 'L 063 Berliner-, Finsterwalder Str. Bahnübergang in Lauchhammer West Gleisbauarbeiten Vollsperrung 27.07.2009-04.08.2009 ',
-         'from' => 1248559200,
-         'id' => 1767,
-         'data' => 'userdel	2::inwork 35072,-102150 35379,-103141 35482,-103562
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1251756000,
          'text' => 'L 063 Berliner-, Finsterwalder Str. Bahnübergang in Lauchhammer West Gleisbauarbeiten Vollsperrung 28.08.2009-31.08.2009 ',
@@ -1306,16 +1298,7 @@ userdel	2::inwork 7160,11225 6851,11346
          'type' => 'handicap'
        },
        undef,
-       {
-         'source_id' => 'IM_013849',
-         'until' => undef,
-         'text' => 'Schlichtallee (Lichtenberg) in beiden Richtungen zwischen Lückstr. und Hauptstr. Straßenschäden, Straße vollständig gesperrt',
-         'from' => undef,
-         'id' => 1780,
-         'data' => 'userdel	q4::inwork 15639,10469 15758,10578 15982,10765 16032,10842
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1251496800,
          'text' => 'B 246 zw. Glienicke und Wendisch Rietz Deckenerneuerung Vollsperrung 10.08.2009-28.08.2009 ',
@@ -1455,6 +1438,73 @@ userdel	2::inwork 7160,11225 6851,11346
          'data' => 'userdel	2::inwork -12669,-1768 -12608,-1715
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => 1250546400,
+         'text' => 'B 246 Trebbin - Beelitz OL Schönhagen, zw. OE aus Ri. Trebbin u. Abzw. Blankensee Deckensanierung Vollsperrung 10.08.2009-17.08.2009 ',
+         'from' => 1249768800,
+         'id' => 1797,
+         'data' => 'userdel	2::inwork -6477,-21754 -6207,-21822 -5205,-21433 -4354,-20661
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1249941600,
+         'text' => 'L 029 Wandlitz - Zehlendorf zw. Stolzenhagen u. BÜ Zehlendorf Straßenausbesserungsarbeiten Vollsperrung 08.08.2009-10.08.2009 ',
+         'from' => 1249596000,
+         'id' => 1798,
+         'data' => 'userdel	2::inwork 9356,42175 9475,42182 9540,42187 9767,42206 10034,42225 10418,42259 11393,41903 11975,41509 12132,41423
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1253570400,
+         'text' => 'L 030 Friedrichstr. OD Erkner, zw. Kreisverkehr u. Beuststr. 17. Heimatfest Vollsperrung 17.09.2009-21.09.2009 ',
+         'from' => 1253052000,
+         'id' => 1799,
+         'data' => 'userdel	2::temp 34443,1951 34250,2546
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1251496800,
+         'text' => 'L 040 L 23, Storkow - Friedersdorf zw. Abzw. Alt Stahnsdorf u. Abzw. Kummersdorf Deckenerneuerung Vollsperrung 12.08.2009-28.08.2009 ',
+         'from' => 1249941600,
+         'id' => 1800,
+         'data' => 'userdel	2::inwork 44261,-14205 43456,-14384 42430,-14398
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1249768800,
+         'text' => 'L 272 Vierraden - Woltersdorf OD Kunow Straßenausbesserungsarbeiten Vollsperrung 04.08.2009-08.08.2009 ',
+         'from' => 1249250400,
+         'id' => 1801,
+         'data' => 'userdel	q4::inwork 66998,82800 66940,82666 66943,82495
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_013876',
+         'until' => undef,
+         'text' => 'Friedrich-Engels-Str. (Pankow) stadteinwärts zwischen Platanenstr. und Pastor-Niemöller-Platz Baustelle, Fahrtrichtung gesperrt',
+         'from' => undef,
+         'id' => 1802,
+         'data' => 'userdel	q4::inwork; 9355,19789 9408,19707 9468,19599 9606,19510 9729,19426 9791,19363
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'LMS_2386386548',
+         'until' => 1249934400,
+         'text' => 'Sperrung der Straße der Pariser Kommune zwischen Weidenweg / Palisadenstr. und Karl-Marx-Allee, Sperrung der Koppenstr. zwischen Karl-Marx-Allee und Stichstr., sowie Sperrung der Lebuserstr. zwischen Neue Weberstr. und Karl-Marx-Allee Grund: Veranstaltung. Dauer: vom 05.08.09, 08:00 Uhr bis 10.08.09, 22:00 Uhr. (08:07) ',
+         'from' => 1249365600,
+         'id' => 1803,
+         'data' => 'userdel	q4::temp 12635,12629 12606,12471
+userdel	q4::temp 12360,12505 12364,12589
+userdel	q4::temp 12891,12549 12869,12425
+',
+         'type' => 'handicap'
        }
      
 );

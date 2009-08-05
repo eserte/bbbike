@@ -1119,8 +1119,7 @@ tragen oder Aufzug (Storkower Str.)	0:60 14503,13167
 tragen (zum Uferweg an den Treptowers, 24 Stufen)	0:35 14383,10036
 tragen (Mühsamstr.)	0:30 13253,12625
 tragen (34 Stufen)	0:40 14787,10972
-#: XXX analog zur Südseite
-tragen (ca. 35 Stufen)	0:40 14764,10877
+tragen (33 Stufen)	0:40 14764,10877
 tragen (Durchgang unter der U-Bahn zur Warschauer Str., 15 Stufen)	0:20 13437,10992
 tragen (Treppe, 12 Stufen)	0:20 7370,6451
 tragen (Bahnübergang ehem. Bhf. Satzkorn)	0:60 -19150,7320
@@ -1190,6 +1189,7 @@ tragen (Treppe, 4 Stufen)	0:10 38056,48407
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+Schranke	BNP:1::trailer=3 14395,8071
 Schranke	BNP:0::trailer=3 9920,11074
 #: by: http://www.benno-koch.de/article09575_dumm_gelaufen_schifffahrtsamt_sperrt_teltow-route2 vvv
 Drängelgitter	BNP:5 4258,2693
@@ -1279,6 +1279,7 @@ Drängelgitter	BNP:5 6613,21116
 Drängelgitter/Schranke	BNP:5 10012,5210
 Schranke	BNP:5 12571,7899
 #: note: Abstand zwischen den versetzten Gittern ca. 135cm
+#: note: bei dichtem Verkehr kann die Wartezeit schon mal über 10 Sekunden betragen!
 Drängelgitter	BNP:5::trailer=10 14453,9929
 #: note: Breite der Vorbeifahrmöglichkeit >90cm
 Drängelgitter mit asphaltierer Vorbeifahrmöglichkeit	BNP:2::trailer=4 14558,10082

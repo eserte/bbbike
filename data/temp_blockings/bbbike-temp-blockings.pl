@@ -15076,8 +15076,8 @@ userdel	2::temp 5253,12079 5231,12122 5194,12176 5250,12296 5325,12234
 userdel	2::temp 5194,12176 5133,12240 5203,12387 5250,12296
 EOF
      },
-     { from  => undef, # 
-       until => undef, # XXX
+     { from  => 1249414524, # undef
+       until => 1249414528, # XXX undef
        text  => 'Schlichtallee (Lichtenberg) in beiden Richtungen zwischen Lückstr. und Hauptstr. Straßenschäden, Straße vollständig gesperrt',
        type  => 'handicap',
        source_id => 'IM_013849',
@@ -15215,6 +15215,66 @@ EOF
        source_id => 'http://www.potsdam.de/cms/beitrag/10051448/757395/',
        data  => <<EOF,
 userdel	2::inwork -12669,-1768 -12608,-1715
+EOF
+     },
+     { from  => 1249768800, # 2009-08-09 00:00
+       until => 1250546400, # 2009-08-18 00:00
+       text  => 'B 246 Trebbin - Beelitz OL Schönhagen, zw. OE aus Ri. Trebbin u. Abzw. Blankensee Deckensanierung Vollsperrung 10.08.2009-17.08.2009 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -6477,-21754 -6207,-21822 -5205,-21433 -4354,-20661
+EOF
+     },
+     { from  => 1249596000, # 2009-08-07 00:00
+       until => 1249941600, # 2009-08-11 00:00
+       text  => 'L 029 Wandlitz - Zehlendorf zw. Stolzenhagen u. BÜ Zehlendorf Straßenausbesserungsarbeiten Vollsperrung 08.08.2009-10.08.2009 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 9356,42175 9475,42182 9540,42187 9767,42206 10034,42225 10418,42259 11393,41903 11975,41509 12132,41423
+EOF
+     },
+     { from  => 1253052000, # 2009-09-16 00:00
+       until => 1253570400, # 2009-09-22 00:00
+       text  => 'L 030 Friedrichstr. OD Erkner, zw. Kreisverkehr u. Beuststr. 17. Heimatfest Vollsperrung 17.09.2009-21.09.2009 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::temp 34443,1951 34250,2546
+EOF
+     },
+     { from  => 1249941600, # 2009-08-11 00:00
+       until => 1251496800, # 2009-08-29 00:00
+       text  => 'L 040 L 23, Storkow - Friedersdorf zw. Abzw. Alt Stahnsdorf u. Abzw. Kummersdorf Deckenerneuerung Vollsperrung 12.08.2009-28.08.2009 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 44261,-14205 43456,-14384 42430,-14398
+EOF
+     },
+     { from  => 1249250400, # 2009-08-03 00:00
+       until => 1249768800, # 2009-08-09 00:00
+       text  => 'L 272 Vierraden - Woltersdorf OD Kunow Straßenausbesserungsarbeiten Vollsperrung 04.08.2009-08.08.2009 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 66998,82800 66940,82666 66943,82495
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Friedrich-Engels-Str. (Pankow) stadteinwärts zwischen Platanenstr. und Pastor-Niemöller-Platz Baustelle, Fahrtrichtung gesperrt',
+       type  => 'handicap',
+       source_id => 'IM_013876',
+       data  => <<EOF,
+userdel	q4::inwork; 9355,19789 9408,19707 9468,19599 9606,19510 9729,19426 9791,19363
+EOF
+     },
+     { from  => 1249365600, # 2009-08-04 08:00
+       until => 1249934400, # 2009-08-10 22:00
+       text  => 'Sperrung der Straße der Pariser Kommune zwischen Weidenweg / Palisadenstr. und Karl-Marx-Allee, Sperrung der Koppenstr. zwischen Karl-Marx-Allee und Stichstr., sowie Sperrung der Lebuserstr. zwischen Neue Weberstr. und Karl-Marx-Allee Grund: Veranstaltung. Dauer: vom 05.08.09, 08:00 Uhr bis 10.08.09, 22:00 Uhr. (08:07) ',
+       type  => 'handicap',
+       source_id => 'LMS_2386386548',
+       data  => <<EOF,
+userdel	q4::temp 12635,12629 12606,12471
+userdel	q4::temp 12360,12505 12364,12589
+userdel	q4::temp 12891,12549 12869,12425
 EOF
      },
     );
