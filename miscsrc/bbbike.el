@@ -58,6 +58,14 @@
       )
     ))
 
+(defun bbbike-split-directions ()
+  (interactive)
+  (shell-command-on-region (save-excursion (beginning-of-line) (point))
+			   (save-excursion (end-of-line) (point))
+			   "perl -e '$in=<>; ($name,$catfw,$catbw,$coord)=$in=~m{^([^\\t]*)\\t([^;]*);([^ ]*) (.*)} or do { print $in; exit }; print qq{$name\\t$catfw; $coord\\n$name\\t$catbw; } . join(qq{ },reverse(split / /, $coord)) '"
+			   nil t)
+  )
+
 (defun bbbike-join-street ()
   (interactive)
   (let (match-coord other-coord
