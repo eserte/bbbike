@@ -26,7 +26,8 @@ PERSISTENTTMPDIR=	$(BBBIKEDIR)/tmp
 PERL?=			perl
 # assume we have a modern perl (> 5.8.0, which has utf8 bugs) installed...
 PERL_UTF8?=		${PERL}
-SED?=			env LANG=C LC_ALL=C sed
+NO_LOCALE=		env LANG=C LC_ALL=C LC_CTYPE=C
+SED?=			${NO_LOCALE} sed
 
 HAFAS2HAFAS=		${PERL} ${MISCSRCDIR}/hafas2hafas -strict
 CONVERT2HAFAS=		${PERL} ${MISCSRCDIR}/convert2hafas -strict
@@ -106,7 +107,7 @@ GERMAN_LOCALE=de_DE.ISO8859-1
 GERMAN_LOCALE=de_DE.ISO-8859-1
 .endif
 SORT_GERMAN_LOCALE=	env LANG=${GERMAN_LOCALE} LC_CTYPE=${GERMAN_LOCALE} LC_ALL=${GERMAN_LOCALE} sort
-SORT_NO_LOCALE=		env LANG=C LC_CTYPE=C LC_ALL=C sort
+SORT_NO_LOCALE=		env ${NO_LOCALE} sort
 
 ## This seems to generate better results:
 COORDS_DATA_SORT_OPTS=	-f -t "|" -k 1,3
@@ -1435,10 +1436,10 @@ check-line-lengths:	.check_line_lengths
 	@touch $@
 
 count-streets:
-	@echo -n "Berlin:        "; grep -v "^(" strassen | cut -f1 -d"(" | sort -u | wc -l
-	@echo -n "Landstraﬂen:   "; grep -v "^#" landstrassen landstrassen2 | cut -f1 | sort -u | wc -l
-	@echo -n "  Potsdam:     "; fgrep "(Potsdam)" landstrassen | grep -v "^(" | cut -f1 -d"(" | sort -u | wc -l
-	@echo -n "  Oranienburg: "; grep -v "^#" landstrassen | fgrep "(Oranienburg" | cut -f1 -d"(" | sort -u | wc -l
+	@echo -n "Berlin:        "; grep -v "^(" strassen | ${NO_LOCALE} cut -f1 -d"(" | sort -u | wc -l
+	@echo -n "Landstraﬂen:   "; grep -v "^#" landstrassen landstrassen2 | ${NO_LOCALE} cut -f1 | sort -u | wc -l
+	@echo -n "  Potsdam:     "; fgrep "(Potsdam)" landstrassen | grep -v "^(" | ${NO_LOCALE} cut -f1 -d"(" | sort -u | wc -l
+	@echo -n "  Oranienburg: "; grep -v "^#" landstrassen | fgrep "(Oranienburg" | ${NO_LOCALE} cut -f1 -d"(" | sort -u | wc -l
 
 check-dates:	.check_dates
 
