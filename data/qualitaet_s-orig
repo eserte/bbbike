@@ -1050,7 +1050,7 @@ Fischerhüttenweg: Kopfsteinpflaster, schmale Asphaltbankette	Q2 -1274,4367 -1315
 Weg am Riemeisterfenn: Waldweg, überwiegend OK	Q1 -604,5228 -118,5287 10,5343 79,5405 122,5416 161,5496 213,5582 309,5669 344,5738 325,5925 381,6094 331,6225 394,6368 441,6435
 Umgehungschaussee: fester breiter Waldweg	Q1 1149,7205 1168,7047 1176,6938 1170,6654 1126,6548 1057,6461 917,6301 866,6328 533,6479 441,6435
 Friedrichsgracht: Parkweg	Q1 10207,12055 10109,12238
-Friedrichsgracht: holprig	Q2 10296,11896 10314,11865
+#XXX del: nö (nicht mehr?) Friedrichsgracht: holprig	Q2 10296,11896 10314,11865
 Hüttenweg: relativer guter Waldweg	Q1 -927,6888 -1006,6911 -1241,7017 -1493,6984 -1851,6887
 Grunewald: teilweise sandig	Q2 -3475,6780 -3418,6747 -3306,6779 -3242,6884 -3128,6923 -2981,6941 -2805,6884 -2668,6862
 Grunewald: teilweise sehr sandig, steile Strecken	Q3 -2668,6862 -2581,6834 -2468,6839 -2366,6869 -2230,6909 -2080,6897
@@ -2084,7 +2084,7 @@ Seidelbastweg: Asphalt	Q0 16779,2993 16689,3056 16556,3148 16504,3184 16281,3339
 Seidelbastweg: Beton	Q0 16281,3339 15793,3679 15574,3856
 Schwertlilienweg: Asphalt	Q0 15574,3856 15603,3905 15647,3977 15695,4051
 (Heideläuferweg - Stuthirtenweg): unbefestigt	Q2- 13109,1071 13109,1061
-(Niederwallstr. - Kurstr.): Asphalt	Q0 10183,11770 10227,11836
+(Niederwallstr. - Kurstr.): Asphalt	Q0 10183,11770 10230,11839
 Am Plänterwald: etwas besseres Kopfsteinpflaster	Q2+ 15714,8633 15543,8525 15499,8496 15443,8458 15303,8343
 Güldenhofer Ufer: Kopfsteinpflaster	Q2 16677,6892 16630,6800
 #: note: von der S-Bahn aus gesehen:
@@ -2533,6 +2533,7 @@ Wörther Str.: aufgepflasterte Abschnitte	Q1 11255,14572 11317,14564
 Park am Karlsbad: wassergebundene Decke	Q1+ 8143,10903 8190,10960
 Singerstr.: Asphalt mit Schäden	Q1+ 11920,12266 12084,12235
 Puderstr.: Asphalt	Q0 14614,9052 14567,8966 14525,8894 14374,8726
+Spittelmarkt: grobes Verbundsteinpflaster	Q1- 10229,11618 10213,11728
 ######################### User Contributions #################################
 #: by: Dominik Seelow vvv
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
@@ -9446,7 +9447,7 @@ Eiergasse: Gehwegplatten	Q0 10671,12356 10700,12315
 Am Nußbaum: Verbundsteine	Q1 10644,12469 10626,12455 10611,12444 10597,12405 10611,12378
 (Am Nußbaum): Verbundsteine	Q1 10597,12405 10536,12355
 Jägerstr. (Mitte): Asphalt	Q0 9656,12021 9913,12068 9961,12094 10003,12113
-Kleine Kurstr.: Asphalt	Q0 10249,11821 10275,11856
+Kleine Kurstr.: Asphalt	Q0 10241,11830 10281,11876
 Kreuzstr.: Asphalt	Q0 10231,11940 10209,11918
 Kleine Jägerstr.: Asphalt	Q0 9995,11910 10050,11942 10071,11957
 Alte Leipziger Str.: Asphalt	Q0 10076,11840 10118,11907

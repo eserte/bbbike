@@ -1338,6 +1338,7 @@ Pflügerstr. -> Kottbusser Damm: Mittelstreifen	3::igndisp 11934,9538 11757,9509 
 Mittelstreifen	3nocross::ignrte 10350,11846 10391,11898 10431,11945
 Gertraudenstr. -> Kleine Gertraudenstr.: Mittelstreifen	3::igndisp 10350,11846 10391,11898 10364,11896
 Kleine Gertraudenstr. -> Gertraudenstr.: Mittelstreifen	3::igndisp 10364,11896 10391,11898 10431,11945
+tragen (8 Stufen)	0:14:-35 10286,11869
 tragen (14 Stufen)	0:25:-197 -6972,1029
 tragen (Treppe)	0:30:-24 22057,4531
 tragen (ca. 40 Stufen)	0:30:-147 -2396,3652
@@ -1560,6 +1561,7 @@ Drängelgitter	BNP:3:-151 62686,40877
 Drängelgitter	BNP:3:-158 63740,42840
 Drängelgitter	BNP:3:-157 63721,42792
 Schranke, kann auch mit Anhänger umfahren werden	BNP:1:-168 49137,24422
+Kreuzstr.: Bauarbeiten, voll gesperrt	2:inwork 10231,11940 10209,11918
 Wegedornbrücke: Vollsperrung, Neubau	2:inwork 20385,593 20442,564 20510,530
 Schinkelplatz: Bauarbeiten	2:inwork 10084,12228 9984,12426
 Französische Str.: Bauarbeiten	2:inwork 8901,12008 9076,12054

@@ -1152,16 +1152,7 @@ userdel	2::inwork 7160,11225 6851,11346
          'type' => 'handicap'
        },
        undef,
-       {
-         'source_id' => 'http://www.berlin.de/ba-steglitz-zehlendorf/presse/archiv/20090715.1320.132295.html',
-         'until' => 1250287199,
-         'text' => 'Straßenbauarbeiten in der Schöneberger Straße von 20. Juli 2009 bis 14. August 2009',
-         'from' => 1247954400,
-         'id' => 1757,
-         'data' => 'userdel	q4::inwork; 5370,6486 5470,6423 5582,6360
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1250892000,
          'text' => 'B 320 Guben - Lieberose zw. Pinnow und Staakow Deckenerneuerung Vollsperrung 21.07.2009-21.08.2009 ',
@@ -1503,6 +1494,26 @@ userdel	2::inwork 7160,11225 6851,11346
          'data' => 'userdel	q4::temp 12635,12629 12606,12471
 userdel	q4::temp 12360,12505 12364,12589
 userdel	q4::temp 12891,12549 12869,12425
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'LMS_2287412476',
+         'until' => 1251280800,
+         'text' => 'Straße des 17. Juni In beiden Richtungen zwischen Brandenburger Tor und Yitzhak-Rabin-Str. gesperrt (bis 26.08.09, 12 Uhr)',
+         'from' => 1249676503,
+         'id' => 1804,
+         'data' => 'userdel	2::temp 8089,12190 8214,12205 8538,12245
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_013880',
+         'until' => 1249768799,
+         'text' => 'Paul-Löbe-Allee (Tiergarten) in beiden Richtungen Höhe Willy-Brandt-Str. Veranstaltung, gesperrt (bis Samstag Nacht)',
+         'from' => undef,
+         'id' => 1805,
+         'data' => 'userdel	q4::temp 8207,12616 8306,12617
 ',
          'type' => 'handicap'
        }

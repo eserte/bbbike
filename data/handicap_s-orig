@@ -26,7 +26,9 @@ Pappelplatz (Mitte): gemeinsamer Fuﬂ- und Radweg	q2 9750,14132 9663,14036
 Otto-Ludwig-Str.: Fuﬂg‰ngerzone	q2 4862,10881 4954,10876
 Mauerstr. (Mitte): Fuﬂg‰nger, Bordsteine	q3 9405,11413 9474,11360
 Georgenstr.: Fuﬂg‰nger	q1 9434,12669 9313,12662
-Neue Promenade: Fuﬂg‰ngerzone, Radfahren erlaubt	q2 10294,13070 10185,12982 10132,12941
+#: note: besonders in der Touristenhochsaison sehr eng
+Neue Promenade: Fuﬂg‰ngerzone, Radfahren erlaubt, aber nur langsam mˆglich	q4 10294,13070 10185,12982
+Neue Promenade: Fuﬂg‰ngerzone, Radfahren erlaubt	q2 10185,12982 10132,12941
 Pariser Platz/Brandenburger Tor: Fuﬂg‰nger	q2 8804,12280 8731,12270 8610,12254 8538,12245
 Potsdamer Platz: Fuﬂg‰nger	q3 8542,11502 8462,11538
 Bl¸cherplatz: reger Fuﬂg‰ngerverkehr	q3 9579,10122 9599,10175
@@ -223,6 +225,7 @@ Am Zeughaus: Fuﬂg‰nger, am Wochenende Flohmarkt	q3 9912,12623 9950,12522 9984,12
 Steinmetzstr.: Fuﬂg‰ngerzone, Radfahren erlaubt	q1 7625,9771 7648,9944 7698,10147
 L¸tzowplatz: Einbahnstraﬂe, Ausweichen auf Gehweg	q3; 7002,11034 6873,11011
 Zauritzweg: Fuﬂg‰nger	q1 4199,11819 4195,11690
+#: XXX_prog: Radfahren nicht erlaubt, rjoop mˆchte hier nicht geroutet werden, wenn "strikt befolgen" eingeschaltet ist
 (Bl¸cherplatz - Zossener Str.): Fuﬂg‰nger, Bordsteine	q2 9689,10124 9827,10051
 Hebbelstr.: Fuﬂg‰nger	q2 3117,11852 3251,12025 3258,12035 3295,12068
 Spreewaldplatz: Fuﬂg‰nger	q1 12341,10218 12292,10374

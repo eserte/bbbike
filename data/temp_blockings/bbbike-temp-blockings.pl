@@ -14883,7 +14883,7 @@ userdel	2::inwork 64018,86876 63805,86748 63574,86547 63391,86474 63202,86383 62
 EOF
      },
      { from  => 1247954400, # 2009-07-19 00:00
-       until => 1250287199, # 2009-08-14 23:59
+       until => 1249676747, # 2009-08-14 23:59 1250287199
        text  => 'Straßenbauarbeiten in der Schöneberger Straße von 20. Juli 2009 bis 14. August 2009',
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-steglitz-zehlendorf/presse/archiv/20090715.1320.132295.html',
@@ -15275,6 +15275,24 @@ EOF
 userdel	q4::temp 12635,12629 12606,12471
 userdel	q4::temp 12360,12505 12364,12589
 userdel	q4::temp 12891,12549 12869,12425
+EOF
+     },
+     { from  => 1249676503, # 2009-08-07 22:21
+       until => 1251280800, # 2009-08-26 12:00
+       text  => 'Straße des 17. Juni In beiden Richtungen zwischen Brandenburger Tor und Yitzhak-Rabin-Str. gesperrt (bis 26.08.09, 12 Uhr)',
+       type  => 'gesperrt',
+       source_id => 'LMS_2287412476',
+       data  => <<EOF,
+userdel	2::temp 8089,12190 8214,12205 8538,12245
+EOF
+     },
+     { from  => undef, # 
+       until => 1249768799, # 2009-08-08 23:59
+       text  => 'Paul-Löbe-Allee (Tiergarten) in beiden Richtungen Höhe Willy-Brandt-Str. Veranstaltung, gesperrt (bis Samstag Nacht)',
+       type  => 'handicap',
+       source_id => 'IM_013880',
+       data  => <<EOF,
+userdel	q4::temp 8207,12616 8306,12617
 EOF
      },
     );

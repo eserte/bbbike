@@ -1038,6 +1038,8 @@ Gertraudenstr.: Mittelstreifen	3nocross 10350,11846 10391,11898 10431,11945
 # Stellen, an denen getragen werden muß:
 # die Zahl hinter dem ":" entspricht ungefähr den verlorenen Sekunden
 # 
+#: note: zwei Varianten: 8 weit entfernte Stufen oder einige Gruppen à zwei bis drei Stufen
+tragen (8 Stufen)	0:14 10286,11869
 tragen (14 Stufen)	0:25 -6972,1029
 tragen (Treppe)	0:30 22057,4531
 tragen (ca. 40 Stufen)	0:30 -2396,3652
@@ -1364,11 +1366,14 @@ Schranke, kann auch mit Anhänger umfahren werden	BNP:1 49137,24422
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: last_checked: 2009-08-07
+#: next_check: 2010-04-01
+Kreuzstr.: Bauarbeiten, voll gesperrt	2:inwork 10231,11940 10209,11918
 #: next_check: 2010-09-31
 #: XXX der Neubau wird "N" sein und auch Radwege haben
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0907/nachricht3563.html
 Wegedornbrücke: Vollsperrung, Neubau	2:inwork 20385,593 20442,564 20510,530
-#: last_check: 2009-07-29
+#: last_check: 2009-08-07
 Schinkelplatz: Bauarbeiten	2:inwork 10084,12228 9984,12426
 #: next_check: 2009-12-01
 Französische Str.: Bauarbeiten	2:inwork 8901,12008 9076,12054

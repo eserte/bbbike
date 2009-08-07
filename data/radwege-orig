@@ -577,7 +577,7 @@ Für Radfahrer freigegebene Busspur ist Mo-Fr 9-14 Uhr gültig	RW5; 10738,12364 10
 	RW4;RW0 10738,12364 10800,12461
 	RW4; 10800,12461 10878,12560 10954,12635 11057,12715
 	RW3; 11057,12715 11105,12764 11134,12793
-#: last_checked: 2009-07-21
+#: last_checked: 2009-08-07
 #: XXX: Richtung N und S entstehen asphaltierte Gehweg-Radwege, Richtung N schon einigermaßen befahrbar
 	RW1; 11134,12793 11228,12951
 Für Radfahrer freigegebene Busspur ist Mo-Fr 7-14 Uhr gültig	RW5; 10878,12560 10800,12461
@@ -959,7 +959,11 @@ Berliner Gehwegplatten; ca. 1,50m breit	RW2;RW2 9267,14202 9400,14400 9410,14410
 	RW1;RW2 10832,13877 10895,13961
 	RW4;RW2 10895,13961 10933,14122
 	RW2;RW2 10437,12703 10387,12760 10360,12793 10309,12854
-	RW4?;RW4? 11228,12951 11139,13008
+#: temporary vvv
+#: XXX wegen Bauarbeiten in Richtung Osten keine Radspuren, dafür aber Quasi teilweise eine Nebenfahrbahn
+	RW4?; 11228,12951 11139,13008
+	RW10; 10920,13139 11139,13008
+#: temporary ^^^
 	RW5;RW5 11228,12951 11275,13026 11298,13063 11368,13170 11446,13294 11486,13350 11539,13425 11561,13451 11646,13546 11723,13630
 #: by: Christian Bewernitz, durch Luftaufnahmen bestätigt
 	RW5;RW0 12161,13711 12038,13685 11868,13646 11785,13625
@@ -1264,7 +1268,8 @@ Radweg etwa 20 Meter zur Kreuzung Naumannstr.	RW0;RW0 7499,7880 7717,7759
 Gehweg für Radfahrer freigegeben	RW1; 21576,5733 21470,5809 21365,5832 21303,5826
 Gehweg für Radfahrer freigegeben	RW1;RW1 21576,5733 21603,5698 21608,5690 21709,5543 21789,5427
 	RW1;RW1 21789,5427 21954,5229
-	RW4;RW4 10755,13152 10920,13139
+Die letzten Meter sind benutzungspflichtig	RW3; 10755,13152 10920,13139
+Die Radspur hört einige Meter vor der Ampel auf	RW4?; 10920,13139 10755,13152
 	RW4;RW4 13867,9864 13884,9882
 	RW7;RW7 10001,9234 10123,9233 10547,9233
 #: by: G. Chill:
@@ -2143,3 +2148,4 @@ betoniert	RW;RW 16227,22963 16271,23030 16304,23077 16315,23094 16383,23197 1644
 	RW4?;RW4? 10063,20493 10119,20731 10138,20840
 asphaltiert	RW2;RW8 15639,10469 15758,10578
 ca. 30 Meter vor der Kreuzung Schlichtallee benutzungspflichtige Radstreifen in beiden Richtungen 	RW0;RW0 15681,10801 16032,10842
+	RW6;RW6 10086,12725 10050,12705
