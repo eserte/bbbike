@@ -20873,8 +20873,9 @@ sub balloon_info_from_all_tags {
 
 	if ($tags[0] =~ m{^(s|sBAB|l|$comments_rx|qs|ql|hs|hl|fz|u|b|r|f|w|rw|e|v|v-fg|temp_sperre|temp_sperre_s|L\d+|L\d+-fg|L\d+-bg)$}) {
 	    my $label = $tags[1];
-	    if ($tags[0] eq 'rw') { # Special handling for cyclepaths
-		(my $rw_code) = $tags[2] =~ /^rw-(RW(?:\d*|\?))/; # XXX should probably use $Radwege::rw_qr without the anchors?
+	    if ($tags[0] eq 'rw' ||
+		$tags[0] eq 'comm-cyclepath') { # Special handling for cyclepaths
+		(my $rw_code) = $tags[2] =~ /^(?:rw|comm-cyclepath)-(RW(?:\d*|\?))/; # XXX should probably use $Radwege::rw_qr without the anchors?
 		my $name = Radwege::code2name($rw_code);
 		if (defined $name) {
 		    if (defined $label && $label ne "") {
