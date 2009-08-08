@@ -813,15 +813,7 @@ userdel	q4::inwork 8389,11378 8374,11479
        undef,
        undef,
        undef,
-       {
-         'until' => 1249682400,
-         'text' => 'L 141 B5 - Neustadt OD Dreetz Straßenbauarbeiten Vollsperrung 27.07.2009-07.08.2009 ',
-         'from' => 1248559200,
-         'id' => 1675,
-         'data' => 'userdel	q4::inwork -54456,42981 -53872,42916
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'source_id' => 'IM_012809',
@@ -1209,15 +1201,7 @@ userdel	2::inwork 7160,11225 6851,11346
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1249682400,
-         'text' => 'B 168 zw. Beeskow BÜ Oegeln u. Ragow Deckenerneuerung Vollsperrung 27.07.2009-07.08.2009 ',
-         'from' => 1248559200,
-         'id' => 1765,
-         'data' => 'userdel	2::inwork 70065,-24817 70924,-23663
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1251583200,
          'text' => 'L 038 Falkenberg - Fürstenwalde zw. Berkenbrück u. Fürstenwalde Deckenerneuerung Vollsperrung 16.07.2009-29.08.2009 ',

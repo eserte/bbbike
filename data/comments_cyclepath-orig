@@ -84,7 +84,8 @@ Güterfelde: Zweirichtungsradweg, Verbundsteinpflaster	RW -3368,-4430 -2534,-4606
 Radweg, nördliche Seite	RW 7981,-7165 9170,-7708 9828,-8106
 Alte, parallel verlaufende asphaltierte Allee ist für Radfahrer befahrbar	RW 21325,-16111 21605,-16054 22543,-15510
 Radweg	RW 22543,-15510 22865,-15325 23123,-14619 23346,-14193
-Radwegstreifen (Verbundsteinpflaster)	RW 25912,-11956 25949,-11945 26078,-11992 26296,-12053
+Radwegstreifen (Verbundsteinpflaster)	RW3;RW3 25912,-11956 25949,-11945 26078,-11992 26296,-12053
+Radwegstreifen (Verbundsteinpflaster)	RW3;RW3 26296,-12053 26299,-11896
 #: XXX: wahrscheinlich auch weiter Richtung Osten:
 Breiter Verbundsteinradweg für beide Richtungen auf der nördlichen Seite	RW 34990,2148 35453,2207 36403,2465 36719,2420
 Verbundsteinradweg für beide Richtungen, etwas abseits der Straße	RW 36719,2420 36771,2581 37084,2693 37712,2659 38023,2687 38636,2578
@@ -248,8 +249,8 @@ Swinemünde: Verbundsteinpflasterradweg auf der südlichen Seite, streng benutzung
 #: by: http://www.nationaler-radverkehrsplan.de/neuigkeiten/news.php?id=1644
 L33: Radweg auf der südwestlichen Seite, Betonsteinpflaster, bis 2,5m breit	RW 1763,120930 1435,120973 1303,121143 842,121718 206,122655 -121,122847
 Benutzungspflichtiger Radweg	RW 18578,-1130 18539,-1021 18423,-843 18177,-449 18168,-434 18127,-367
-Zweirichtungsradweg auf dem nördlichen Gehweg	RW 26220,-17796 26639,-17861 26706,-17867 26832,-17882 27605,-17999
-Asphaltierter Zweirichtungsradweg auf der südlichen Seite	RW 27605,-17999 28018,-18051
+Gehwegradweg	RW8;RW2 26220,-17796 26639,-17861 26706,-17867 26832,-17882 27605,-17999
+asphaltiert	RW2;RW8 27605,-17999 28018,-18051
 Rudower Str.: Radweg auf Gehweg	RW 15289,-2873 14977,-3505 14878,-3602
 Anklam: Verbundsteinpflasterradwege auf Gehweg	RW 27589,161496 27408,161558 27157,161625 26959,161572 26892,161556 26697,161590
 Anklam, Peenedamm: Radwege	RW 26697,161590 26698,161653 26699,161759 26699,161847 26700,161925
@@ -372,6 +373,9 @@ benutzungspflichtiger Radweg	RW2; -103185,-37953 -103040,-37931 -102849,-37981
 Radweg	RW1; -99805,-41829 -99681,-41642
 #: by: http://fotos.benno-koch.de/v/Radfernwege_und_Radwege_Brandenburg_im_Test/Radweg_Berlin-Usedom/Prenzlau-AbzweigEllingen/CIMG2152.JPG.html
 straßenbegleitender Radweg	RW 38439,102279 37547,102663 37410,103257
+Verbundsteinpflasterradwege	RW2;RW2 25232,-13241 25381,-12762 25543,-12403 25912,-11956
+Verbundsteinpflaster	RW2;RW 26302,-11712 26177,-11648
+asphaltiert	RW2;RW8 26466,-10409 27469,-10314
 ######################### User Contributions #################################
 #: by: Tagesspiegel
 	RW 16953,35907 17114,35904 18082,36115 18440,36179 19193,36011
@@ -466,10 +470,16 @@ Birkenwerder - Oranienburg: asphaltierte Radwege auf beiden Seiten	RW2 1051,3279
 #: by: ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Großziethen: gemeinsamer Geh- und Radweg auf beiden Seiten	RW2 12984,1011 13090,205
 #: by: René (refan): vvv
-KW - Zeuthen: Gemeinsamer Geh- und Radweg	RW 26446,-10394 26418,-10758 26407,-10986 26281,-11160 26243,-11296 26265,-11528 26177,-11648
-KW - Zeuthen: Radweg	RW 26446,-10394 26450,-10134
-KW - Zeuthen: Gemeinsamer Geh- und Radweg	RW 26645,-8944 26727,-8668 26749,-8475
-KW - Zeuthen: westlicher Gehweg für Radfahrer freigegeben	RW 26609,-7136 26146,-6218
+#: confirmed_by: srt
+Gemeinsamer Geh- und Radweg	RW2;RW2 26466,-10409 26442,-10452
+Gemeinsamer Geh- und Radweg	RW1;RW1 26442,-10452 26429,-10647
+Gemeinsamer Geh- und Radweg	RW2;RW2 26429,-10647 26407,-10986 26281,-11160 26243,-11296
+Gemeinsamer Geh- und Radweg (altertümliches Verbundsteinpflaster)	RW2;RW2 26243,-11296 26265,-11528 26177,-11648
+Radweg	RW2;RW2 26466,-10409 26446,-10394 26453,-10235
+Radweg	RW2;RW8 26453,-10235 26450,-10134 26432,-10043 26391,-9997 26365,-9875 26381,-9753
+antike Radwege, teilweise Schotter	RW1;RW1 26381,-9753 26679,-8825
+Gemeinsamer Geh- und Radweg, Verbundsteinpflaster	RW2;RW2 26679,-8825 26727,-8668 26749,-8475 26775,-8117
+Gehweg für Radfahrer freigegeben	RW1;RW1 26786,-7968 26790,-7918 26700,-7334 26609,-7136 26506,-6931 26146,-6218
 #: by: ^^^
 Verbundsteinpflasterradweg	RW 50367,179588 50643,179755
 Zweirichtungsradweg auf der westlichen Seite, Verbundsteinfpflaster	RW 50643,179755 50593,179823 49750,180975 49689,181083 49491,181430

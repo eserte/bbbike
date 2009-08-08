@@ -568,6 +568,7 @@ Eisenhartstr.	1 -12637,-8 -12779,-294 -12821,-417
 Ruinenbergstr.	1 -13794,178 -13918,-164
 Brandenburger Str.	1s -12784,-956 -12894,-977
 Nietnerstr.	2 -13855,1673 -13843,1668
+Bahnhofstr.	1s 26103,-11861 26300,-11864
 Bernau - Tempelfelde	1 23179,31047 23103,30923
 Straße gesperrt - Baustelle Großflughafen Schönefeld, Durchfahrt nicht möglich	2 18301,-6019 18411,-5428
 Straße gesperrt - Baustelle Großflughafen Schönefeld, Durchfahrt nicht möglich	2 15490,-4709 15539,-4658 15685,-4645 15964,-4817 16261,-4683 17742,-5179 18411,-5428 18764,-5531
@@ -1289,9 +1290,9 @@ Wolfensteindamm -> Gehweg Gelieustr.: Linksabbiegen in den Wolfensteindamm gefäh
 Mittelstreifen	3nocross::ignrte 6687,8385 6765,8480 6912,8617 6990,8685
 Parkweg Heinrich-Lassen-Park -> Hauptstr.: Mittelstreifen	3::igndisp 6815,8691 6912,8617 6990,8685
 Hauptstr. -> Parkweg Heinrich-Lassen-Park: Mittelstreifen	3::igndisp 6765,8480 6912,8617 6815,8691
-Straßenbahntrasse	3nocross::ignrte 18631,10167 18554,10354 18446,10620
+Straßenbahntrasse	3nocross::ignrte 18631,10167 18585,10278 18554,10354 18446,10620
 Otto-Schmirgal-Str. -> Am Tierpark: Straßenbahntrasse	3::igndisp 18512,10337 18554,10354 18446,10620
-Am Tierpark -> Otto-Schmirgal-Str.: Straßenbahntrasse	3::igndisp 18631,10167 18554,10354 18512,10337
+Am Tierpark -> Otto-Schmirgal-Str.: Straßenbahntrasse	3::igndisp 18585,10278 18554,10354 18512,10337
 Mittelstreifen ohne Überquerungshilfe	3nocross::ignrte 12497,11459 12539,11416 12576,11375 12641,11288
 Mühlenstr. -> Am Postbahnhof: Mittelstreifen ohne Überquerungshilfe	3::igndisp 12497,11459 12539,11416 12594,11467
 Am Postbahnhof -> Mühlenstr.: Mittelstreifen ohne Überquerungshilfe	3::igndisp 12594,11467 12539,11416 12576,11375
@@ -1306,6 +1307,9 @@ Klingelhöferstr.: Mittelstreifen	3 6880,11110 6851,11346 6692,11365
 Straßenbahntrasse	3nocross::ignrte 21158,15885 21220,15741 21235,15641
 Raoul-Wallenberg-Str. -> Schönagelstr.: Straßenbahntrasse	3::igndisp 21158,15885 21220,15741 21602,15908
 Schönagelstr. -> Raoul-Wallenberg-Str.: Straßenbahntrasse	3::igndisp 21602,15908 21220,15741 21235,15641
+Straßenbahntrasse	3nocross::ignrte 26871,-2500 26698,-2322 26286,-1901
+Adlergestell -> Langer See: Straßenbahntrasse	3::igndisp 26286,-1901 26698,-2322 26846,-2176
+Langer See -> Adlergestell: Straßenbahntrasse	3::igndisp 26846,-2176 26698,-2322 26871,-2500
 Mittelstreifen	3nocross::ignrte 21599,15213 21626,15357 21647,15496
 Krummenseer Str. -> Blumberger Damm: Mittelstreifen	3::igndisp 21657,15352 21626,15357 21599,15213
 Blumberger Damm -> Krummenseer Str.: Mittelstreifen	3::igndisp 21647,15496 21626,15357 21657,15352

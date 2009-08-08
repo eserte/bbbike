@@ -6,7 +6,6 @@
 #:
 #: temporary vvv
 #: last_checked: 2009-08-01 vvv
-Simplonstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork; 14597,11069 14530,11137
 Simplonstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 14530,11137 14465,11195
 #: last_checked ^^^
 #: last_checked: 2009-08-01
@@ -515,6 +514,7 @@ Cuvrystr.: Bodenschwellen	q1 13053,10088 13132,10239
 Elsensteg: Fuﬂg‰nger	q3 13366,8694 13376,8705 13394,8730 13402,8741
 Elsenstr. - Bahndamm: enger Weg	q2 13923,9405 13953,9372
 (Blockpark): Fuﬂg‰nger	q1 16303,10760 16246,10641 16187,10587
+Upstallweg (Lichtenberg): gemeinsamer Rad- und Gehweg	q1 17946,10344 17954,10367 18039,10398 18200,10387 18245,10398 18332,10434
 ######################### User Contributions #################################
 #: by: Michael Kiekbusch
 #: corrected_by: srt/policy (q4 -> q3-)
@@ -993,10 +993,7 @@ Wittenberger Str. (Einkaufzentrum): Fuﬂg‰nger	q3 21590,17918 21647,17889
 Wuhlewanderweg: Spazierg‰nger	q1 22313,18595 22332,18496 22391,18349 22395,18313 22367,18226 22341,18091 22324,18030 22327,17997 22343,17960 22353,17940 22353,17920 22365,17864 22381,17811 22384,17764 22333,17664 22329,17644 22364,17323
 Wuhlewanderweg: Spazierg‰nger	q1 22314,17916 22365,17864
 #: by: ^^^
-#: by: kathrin dorenburg-bunn [AM] vvv
-Erich-Kurz-Str.: viele Fuﬂg‰nger	q2 18354,10600 18345,10575 18285,10550 18232,10532 18150,10543 18120,10532 18104,10482
-Erich-Kurz-Str.: viele Fuﬂg‰nger	q2 18285,10550 18332,10434 18342,10384 18326,10362 18264,10343
-#: by: ^^^
+# del by srt: #: by: kathrin dorenburg-bunn [AM] vvv Erich-Kurz-Str.: viele Fuﬂg‰nger	q2 18354,10600 18345,10575 18285,10550 18232,10532 18150,10543 18120,10532 18104,10482 Erich-Kurz-Str.: viele Fuﬂg‰nger	q2 18285,10550 18332,10434 18342,10384 18326,10362 18264,10343 #: by: ^^^
 #: by: Matha Wimmer [AM] vvv
 Widderstr.: enge Straﬂe	q2 14853,7451 14997,7240
 Krebsgang: enge Straﬂe	q2 15085,7258 14997,7240 14878,7211 14792,7192 14693,7168

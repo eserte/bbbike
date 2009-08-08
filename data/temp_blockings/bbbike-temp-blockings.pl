@@ -1173,7 +1173,7 @@ EOF
        text  => 'L 401; (Lindenallee, Fontaneallee); OL Zeuthen, zw. Forstweg und Fährstr. grundhafter Straßenbau Vollsperrung 01.11.2004-12.08.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 26609,-7136 26146,-6218
+userdel	q4 26609,-7136 26506,-6931 26146,-6218
 EOF
      },
      { from  => 1089496800, # 2004-07-11 00:00
@@ -5483,7 +5483,7 @@ EOF
        text  => 'L 401 Königs Wusterhausen-Wildau OL Königs Wusterhausen, Höhe Neue Ziegelei Deckeneinbau Vollsperrung 31.08.2006-01.09.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 26446,-10394 26418,-10758 26407,-10986
+userdel	2::inwork 26466,-10409 26442,-10452 26429,-10647 26407,-10986
 EOF
      },
      { from  => 1156024800, # 2006-08-20 00:00
@@ -13206,7 +13206,7 @@ EOF
        text  => 'L 401 Karl-Marx-Str., Friedrich-Engels-Str. OD Wildau, zw. Freiheitsstr. und Westkorso grundhafter Straßenneubau Wintersicherung 19.12.2008-31.01.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 26609,-7136 26700,-7334 26790,-7918 26786,-7968 26749,-8475
+userdel	q4::inwork 26609,-7136 26700,-7334 26790,-7918 26786,-7968 26775,-8117 26749,-8475
 EOF
      },
      { from  => 1231196400, # 2009-01-06 00:00

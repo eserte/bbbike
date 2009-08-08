@@ -2165,7 +2165,6 @@ Maria-Matray-Str.: Asphalt	Q0 19208,8142 19195,8125 19176,8098 19157,8070 19133,
 #: XXX: ein Abschnitt ist noch unbefestigt
 Kr‰henwinkel: Verbundsteinpflaster	Q1+ 19195,8125 19105,8188 19044,8103
 Weideplan: Verbundsteinpflaster	Q1+ 19176,8098 19128,8131
-#: XXX: noch nicht fertig
 Binnend¸ne: Verbundsteinpflaster	Q1+ 19157,8070 19110,8105
 Lisbeth-Stern-Str.: Asphalt	Q0 19258,7943 19198,7985 19133,8038 19068,8082
 Lisbeth-Stern-Str.: Verbundsteinpflaster	Q1+ 19068,8082 19044,8103
@@ -2463,8 +2462,8 @@ Grimnitzstr. (Karlshorst): schlechtes Kopfsteinpflaster	Q3 18064,8939 17929,8737
 M¸ritzstr.: schlechtes Kopfsteinpflaster	Q3 18142,8886 18005,8681 17930,8567
 Hoher Wallgraben: Asphalt mit Sch‰den	Q2+ 17988,8350 17999,8336 18078,8112 18099,8048
 (Hoher Wallgraben - Hegemeisterweg): Waldweg	Q2+ 18099,8048 18119,7996 18287,7815
-Am Ernst-Grube-Park: sehr gutes Verbundsteinpflaster	Q0 21025,5437 21057,5421 21073,5351 21090,5417 21150,5403
-Angersteinweg: Asphalt und Verbundsteinpflaster	Q0 21150,5403 21206,5420
+Am Ernst-Grube-Park: sehr gutes Verbundsteinpflaster	Q0 21025,5437 21057,5421 21073,5351 21090,5417 21143,5402
+Angersteinweg: Asphalt und Verbundsteinpflaster	Q0 21143,5402 21151,5412 21206,5420
 Angersteinweg: Beton	Q1 21206,5420 21208,5336 21208,5291
 Mayschweg: Asphalt	Q0 22714,3558 22834,3571 22954,3584
 Finkeldeweg: Asphalt	Q0 22820,3713 22823,3681 22834,3571 22928,3057 23028,2706
@@ -2534,6 +2533,27 @@ Park am Karlsbad: wassergebundene Decke	Q1+ 8143,10903 8190,10960
 Singerstr.: Asphalt mit Sch‰den	Q1+ 11920,12266 12084,12235
 Puderstr.: Asphalt	Q0 14614,9052 14567,8966 14525,8894 14374,8726
 Spittelmarkt: grobes Verbundsteinpflaster	Q1- 10229,11618 10213,11728
+Upstallweg (Lichtenberg): Beton	Q0 17946,10344 17954,10367 18039,10398 18200,10387 18245,10398 18332,10434
+Hˆnower Str.: Kopfsteinpflaster	Q2 18621,9404 18735,9421
+(Adlergestell - Langer See): Schotterstraﬂe	Q2 26698,-2322 26846,-2176 26905,-2116
+(Rohrwallallee - Windwallstr.): enger Pfad im Wald	Q2- 26662,-1916 26846,-2176
+#: by srt and osm:
+Krimnitzer Weg: unbefestigte Straﬂe	Q2 26346,-1821 26429,-1876 26547,-1894 26662,-1916 26750,-1932
+Sielower Weg: Beton	Q0 26398,-1645 26500,-1672 26600,-1698 26707,-1726
+Zaucher Weg: asphaltiert, Sand auf der Fahrbahn	Q1+ 26547,-1894 26600,-1698 26663,-1443
+Peitzer Weg: asphaltiert, mit Sch‰den	Q1 26719,-1354 26614,-1316 26520,-1255
+Peitzer Weg: asphaltiert	Q0 26230,-858 26303,-972
+Fehrower Steig: Asphalt	Q0 26369,-1074 26445,-1037
+Krugauer Steig: Waldweg	Q2 26303,-972 26389,-932
+Krugauer Steig: Asphalt	Q0 26389,-932 26487,-876
+Krugauer Steig: unbefestigt	Q2 26487,-876 26512,-863
+Schappachstr.: schlechtes Kopfsteinpflaster	Q3 26133,-935 26190,-853 26254,-772
+Karolinenhofweg: Asphalt	Q0 26077,-846 25953,-1016
+Karolinenhofweg: schlechtes Kopfsteinpflaster	Q3 26129,-807 26107,-833 26077,-846
+Rehfeldtstr.: schlechtes Kopfsteinpflaster	Q3 26190,-853 26129,-807
+Rehfeldtstr.: unbefestigt	Q2 26032,-704 26004,-705 25958,-731
+Rabindranath-Tagore-Str.: Asphalt	Q0 23469,640 23252,792
+Schlierseestr.: Asphalt	Q0 22569,2096 22466,2030 22378,1970
 ######################### User Contributions #################################
 #: by: Dominik Seelow vvv
 Viktoriastr.: m‰ﬂiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
@@ -2847,7 +2867,10 @@ Tewsstr.: m‰ﬂiges Kopfsteinpflaster	Q2 -2391,2624 -2274,2656 -2160,2685 -2046,27
 Klandorfer Str.: guter Asphalt	Q0 21335,18679 21377,18663 21387,18674 21438,18648 21545,18595
 Klandorfer Str.: guter Asphalt	Q0 21438,18648 21503,18775 21627,18814 21785,18861 21871,18887
 Im Brachfeldwinkel: m‰ﬂiger Asphalt	Q1 3024,21286 2944,21464
-L¸bbenauer Weg: Asphalt	Q0 26011,-1407 26066,-1422 26168,-1424 26224,-1415 26275,-1403 26384,-1363 26448,-1326 26520,-1255 26575,-1191 26656,-1147 26723,-1101
+#: confirmed_by: srt (zumindest an der Rohrwallallee)
+L¸bbenauer Weg: Asphalt	Q0 26011,-1407 26066,-1422 26168,-1424 26224,-1415 26275,-1403 26384,-1363 26448,-1326 26520,-1255 26575,-1191 26656,-1147
+#: corrected_by: srt (Asphalt -> unbefestigt)
+L¸bbenauer Weg: unbefestigte Straﬂe	Q2 26656,-1147 26736,-1089
 Franz-Stenzer-Str.: guter Asphalt	Q0 20636,16046 20610,15993 20586,15947 20508,15792 20399,15744 20181,15658 20111,15609 20044,15585 19974,15594 19876,15644 19809,15676
 Triniusstr. (Oberschˆneweide): Asphalt	Q0 18273,6606 18339,6660 18417,6775 18492,6893
 Wendehalsweg: guter Asphalt	Q0 14550,3625 14594,3712 14619,3759 14911,4009
@@ -4214,11 +4237,11 @@ Ernststr.: Asphalt	Q0 3645,19921 3504,19849 3429,19786 3343,19727 3252,19658 316
 Thurgauer Str.: kleinteiliges Kopfsteinpflaster	Q1 7227,18010 7147,18149 7108,18199 7071,18232 7026,18267 6971,18299 6887,18330 6694,18351
 #: by: ^^^
 #: by: Claudia Skowronnek: vvv
-#: XXX: laut Claudia "vermutlich Beton":
-Rˆmerweg: gute Qualit‰t	Q0 18800,9743 18687,9736 18685,9719 18452,9755 18421,9764
+#: corrected_by: srt (laut Claudia "vermutlich Beton", but Asphalt)
+Rˆmerweg: Asphalt	Q0 18800,9743 18687,9736 18685,9719 18452,9755 18421,9764
 Aristotelessteig: guter Beton	Q0 18715,9589 18660,9599 18435,9639 18452,9755
-#: XXX: laut Claudia wird hier gebaut (2005-06). Die ADFC-Karte kennzeichnet die Strecke als "m‰ﬂig geeignet":
-C‰sarstr.: etwas sandig	Q2 18685,9719 18660,9599 18621,9404
+#: corrected_by: srt (fr¸her war hier "sandig", laut Claudia wurde 2005-06 gebaut)
+C‰sarstr.: Asphalt	Q0 18685,9719 18660,9599 18621,9404
 (Rˆmerweg - Weg entlang der Bahnstrecke): sandiger Weg	Q3 18421,9764 18445,9887
 #: by: ^^^
 #: by: Susan Richter:
@@ -5422,12 +5445,13 @@ Driesener Str.: gutes Kopfsteinpflaster	Q1 10458,16509 10449,16415 10438,16340 1
 Kleeblattstr.: gute Betonstraﬂe	Q0 20813,536 20903,210
 #: by: R¸diger (.katrin):
 #: note: Eintrag von F. Reinhardt war "m‰ﬂiges Kopfsteinpflaster", aber da hatte ich etwas anderes gesehen...
-Hentigstr.: Asphalt	Q1 18548,8942 18586,9172 18621,9404
+#: corrected_by: srt (Q1 -> Q0)
+Hentigstr.: Asphalt	Q0 18548,8942 18586,9172 18621,9404
 #: by: Omi2006@... [AM]
 #: by: Annett Nisch-Kabelka [AM]
 #: note: Ist laut Annett nur in Teilen schlecht
-#: corrected_by: srt (Q3 -> Q2)
-Hentigstr.: Asphalt mit Lˆchern	Q2 18514,8773 18548,8942
+#: corrected_by: srt (Q3 -> Q2 -> Q1)
+Hentigstr.: Asphalt mit Lˆchern	Q1 18514,8773 18548,8942
 #: by: nicole (heyer):
 Jostweg: schlechtes Kopfsteinpflaster	Q3 3423,25733 3356,25725 3216,25778
 #: by: Hausberger (benno):
@@ -7601,7 +7625,8 @@ Radenzer Str.: guter Beton	Q0 15994,6138 16012,6177 16068,6216 16105,6193 16220,
 #: by: Ralf Schimke:
 Bogenstr. (Hessenwinkel): Asphalt	Q0 32334,2224 32268,2229 32203,2254 32142,2304 32035,2435
 #: by: RenÈ (refan):
-Lindenstr. (Schmˆckwitz): gepflastert	Q1- 27022,-2761 26931,-2871
+#: corrected_by: srt (gepflastert -> Asphalt)
+Lindenstr. (Schmˆckwitz): Asphalt	Q0 27022,-2761 26931,-2871
 #: by: Freioun:
 Rothariweg: guter Asphalt	Q0 8292,6331 8290,6191 8291,6048
 #: by: Peter Heurich:
@@ -8423,7 +8448,9 @@ Homburgstr.: guter Asphalt	Q0 11077,-714 11106,-737 11278,-719 11477,-697 11666,
 Akkordeonweg: wassergebundene Decke, tiefe Schlaglˆcher	Q3 11506,20507 11576,20565 11654,20627 11732,20693 11787,20739 11822,20769 11844,20787 11872,20809
 #: by: Alex (alex12055):
 #: note: unklarer Beitrag von anonymous meinte: schlechtes Verbundsteinpflaster Q3
-Rohrwallallee: schlechtes Kopfsteinpflaster	Q3 26190,-853 26230,-858 26346,-863 26389,-932 26445,-1037 26656,-1147 26719,-1354 26780,-1468 26707,-1726 26662,-1916
+#: corrected_by: srt (schlechtes Kopfsteinpflaster -> Asphalt/m‰ﬂiges Kopfsteinpflaster)
+Rohrwallallee: Asphalt	Q0 26445,-1037 26656,-1147 26719,-1354 26780,-1468 26707,-1726 26662,-1916
+Rohrwallallee: unebenes Kleinkopfsteinpflaster	Q2 26190,-853 26230,-858 26346,-863 26389,-932 26445,-1037
 #: by: Tamo (tamosch4...):
 Tichauer Str.: guter Asphalt	Q0 14251,22755 14334,22694 14406,22633 14608,22479 14796,22338
 #: by: Yami Yugi:
@@ -9859,11 +9886,12 @@ Schwabenallee: Sandweg	Q2 21307,9591 21321,9672 21350,9820 21371,9923
 Schwabenplatz: Sandweg	Q2 21307,9591 21253,9547 21291,9507 21343,9546 21307,9591
 #: by: ^^^
 #: by: kathrin dorenburg-bunn [AM] vvv
-Erich-Kunz-Str.: Beton	Q2 18354,10600 18345,10575 18285,10550 18232,10532 18150,10543 18120,10532 18104,10482
-Erich-Kunz-Str.: Beton	Q2 18285,10550 18332,10434 18342,10384 18326,10362 18264,10343
-Franz-Mett-Str.: Beton	Q2 18446,10620 18397,10608 18354,10600 18325,10606
-Franz-Mett-Str.: Beton	Q2 18059,11248 18105,10997 18117,10933 18198,10864 18296,10754 18368,10763 18408,10774
-Franz-Mett-Str.: Beton	Q2 18368,10763 18397,10608
+#: corrected_by: srt (Q2 -> Q0-)
+Erich-Kunz-Str.: Beton	Q0- 18354,10600 18345,10575 18285,10550 18232,10532 18150,10543 18120,10532 18104,10482
+Erich-Kunz-Str.: Beton	Q0- 18285,10550 18332,10434 18342,10384 18326,10362 18264,10343
+Franz-Mett-Str.: Beton	Q0- 18446,10620 18397,10608 18354,10600 18325,10606
+Franz-Mett-Str.: Beton	Q0- 18059,11248 18105,10997 18117,10933 18198,10864 18296,10754 18368,10763 18408,10774
+Franz-Mett-Str.: Beton	Q0- 18368,10763 18397,10608
 #: by: ^^^
 #: by: Matha Wimmer [AM] vvv
 #: add_fragezeichen: Ist die Straﬂe gepflastert oder asphaltiert? vvv

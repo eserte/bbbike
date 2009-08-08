@@ -695,6 +695,7 @@ Brandenburger Str.	1s:q3 -12784,-956 -12894,-977
 Nietnerstr.	2 -13855,1673 -13843,1668
 ###################################################################### 
 # elsewhere in Brandenburg
+Bahnhofstr.	1s 26103,-11861 26300,-11864
 #: note: Radweg in einer Richtung
 Bernau - Tempelfelde	1 23179,31047 23103,30923
 #: by: grote energus: vvv
@@ -1012,13 +1013,14 @@ Linksabbiegen in den Wolfensteindamm gefährlich / unbequem	3nocross 4789,5079 46
 #: by ^^^
 Hauptstr.: Mittelstreifen	3nocross 6687,8385 6765,8480 6912,8617 6990,8685
 #: by: Jirka Klaue:
-Am Tierpark: Straßenbahntrasse	3nocross 18631,10167 18554,10354 18446,10620
+Am Tierpark: Straßenbahntrasse	3nocross 18631,10167 18585,10278 18554,10354 18446,10620
 Mühlenstr.: Mittelstreifen ohne Überquerungshilfe	3nocross 12497,11459 12539,11416 12576,11375 12641,11288
 Mühlenstr.: Mittelstreifen ohne Überquerungshilfe	3nocross 12990,11006 13080,10956 13144,10921
 Klingelhöferstr.: Mittelstreifen	3 6692,11365 6851,11346 6880,11110
 Klingelhöferstr.: Mittelstreifen	3 7160,11225 6851,11346 6880,11110
 Klingelhöferstr.: Mittelstreifen	3 6880,11110 6851,11346 6692,11365
 Raoul-Wallenberg-Str.: Straßenbahntrasse	3nocross 21158,15885 21220,15741 21235,15641
+Adlergestell: Straßenbahntrasse	3nocross 26871,-2500 26698,-2322 26286,-1901
 Blumberger Damm: Mittelstreifen	3nocross 21599,15213 21626,15357 21647,15496
 #: note: Luftbild:
 Blumberger Damm: Mittelstreifen	3nocross 21150,11925 21135,11799 21108,11628
@@ -1039,6 +1041,7 @@ Gertraudenstr.: Mittelstreifen	3nocross 10350,11846 10391,11898 10431,11945
 # die Zahl hinter dem ":" entspricht ungefähr den verlorenen Sekunden
 # 
 #: note: zwei Varianten: 8 weit entfernte Stufen oder einige Gruppen à zwei bis drei Stufen
+#: XXX_prog: should be Treppe with more than one point
 tragen (8 Stufen)	0:14 10286,11869
 tragen (14 Stufen)	0:25 -6972,1029
 tragen (Treppe)	0:30 22057,4531
@@ -1379,9 +1382,10 @@ Schinkelplatz: Bauarbeiten	2:inwork 10084,12228 9984,12426
 Französische Str.: Bauarbeiten	2:inwork 8901,12008 9076,12054
 #: next_check: 2011-03-01
 Rathausbrücke: gesperrt bis März 2011 (Neubau)	2:inwork 10362,12351 10422,12395
+#: last_checked: 2009-08-08
+Vicki-Baum-Str.: noch in Bau, gesperrt	2:inwork 15990,10185 15894,10251
 #: last_checked: 2009-05-09 vvv
 #: next_check: 2009-09-01 vvv
-Vicki-Baum-Str.: noch in Bau, gesperrt	2:inwork 15990,10185 15894,10251
 Vicki-Baum-Str.: noch in Bau, gesperrt	2:inwork 15823,10300 15753,10353 15688,10400
 Alice-und-Hella-Hirsch-Ring: noch in Bau, gesperrt	2:inwork 15788,10252 15823,10300
 Lina-Morgenstern-Str.: noch in Bau, gesperrt	2:inwork 15716,10303 15753,10353
