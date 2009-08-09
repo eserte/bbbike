@@ -932,7 +932,7 @@ EOF
     <td><input onchange="currentModeChange()" 
 	       id="mapmode_addroute"
                type="radio" name="mapmode" value="addroute" /></td>
-    <td><label for="mapmode_addroute">Mit Maus<span style="color:red;">klicks</span> eine Route erstellen</label><br/><!-- XXX remove colored "klicks" some time -->
+    <td><label for="mapmode_addroute">Mit Mausklicks eine Route erstellen</label><br/><!-- XXX remove colored "klicks" some time -->
         <a href="javascript:deleteLastPoint()">Letzten Punkt löschen</a>
         <a href="javascript:resetOrUndoRoute()" id="routedellink">Route löschen</a></td>
    </tr>
