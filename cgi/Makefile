@@ -47,6 +47,9 @@ GNUmakefile:	Makefile ../miscsrc/b2gmake
 	mv GNUmakefile~ GNUmakefile
 	chmod ugo+r GNUmakefile
 
+permissions: rights
+fix-permissions: rights
+
 rights:
 	chmod ugo+rx *.cgi
 	chmod ugo+r,ugo-x *.cgi.config
