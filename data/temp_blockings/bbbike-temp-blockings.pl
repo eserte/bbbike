@@ -15295,4 +15295,198 @@ EOF
 userdel	q4::temp 8207,12616 8306,12617
 EOF
      },
+     { from  => undef, #
+       until => undef, #
+       text  => 'Innovationspark Köpenick: Privatstraße, nachts und am Wochenende gesperrt',
+       type  => 'gesperrt',
+       permanent => 1,
+       data  => <<EOF,
+#: note: Sperrung bestätigt von Stefan (s.sms): vvv
+Am Wuhleufer, Innovationspark Köpenick: Privatstraße, nachts und am Wochenende gesperrt	2::temp 21677,6952 21498,7153 21475,7500 21497,7597 21546,7635
+Straße am Wald, Innovationspark Köpenick: Privatstraße, nachts und am Wochenende gesperrt	2::temp 21475,7500 21341,7487 21025,7349
+#: note: ^^^
+EOF
+     },
+     { from  => undef, #
+       until => undef, #
+       text  => 'Neuer Garten: Wege sind nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet',
+       type  => 'gesperrt',
+       permanent => 1,
+       data  => <<EOF,
+	2::temp -11615,853 -11715,959 -11818,993 -11871,1087 -12081,1168 -12094,1273 -12139,1325
+	2::temp -11650,590 -11603,721 -11615,853
+	2::temp -11510,810 -11562,918 -11575,1031 -11537,1206 -11568,1287 -11871,1185 -11990,1214 -12124,1359 -12141,1357
+	2::temp -11615,853 -11510,810 -11231,696
+(Ökonomieweg, Neuer Garten): Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet 	2::temp -12557,11 -12479,97 -12467,215 -12373,288 -12182,816 -12186,1118 -12144,1255 -12139,1325 -12141,1357 -12166,1384
+Neuer Garten, Westufer des Heiligen Sees: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet 	2::temp -12265,-418 -12262,-362 -12328,-212 -12331,-131 -12321,9 -12278,134 -12156,193 -12103,315 -12143,353 -12115,409 -12068,384 -11990,790 -11950,781 -11887,837 -11856,950 -11818,993
+Neuer Garten (am Portierhaus) - Weinmeisterstr.: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet 	2::temp -12331,-131 -12412,-118 -12450,-34 -12557,11
+EOF
+     },
+     { from  => undef, #
+       until => undef, #
+       text  => 'Sanssouci: Wege sind nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet',
+       type  => 'gesperrt',
+       permanent => 1,
+       data  => <<EOF,
+(Am Neuen Palais, direkter Weg):  	2::temp -15810,-1274 -15820,-1146 -15854,-656
+(Am Grünen Gitter, Sanssouci): Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet 	2::temp -13857,-1040 -14153,-1135 -14171,-1026
+(Ökonomieweg, Sanssouci): Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet 	2::temp -14171,-1026 -14482,-1043 -14622,-1138 -14865,-1118 -15025,-1096 -15553,-1139 -15651,-1137 -15820,-1146
+(Lennestr. - Ökonomieweg, Sanssouci): Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet 	2::temp -14614,-1342 -14856,-1223 -14865,-1118
+(Affengang, Sanssouci): Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet 	2::temp -14129,-1258 -14131,-1181 -14153,-1135
+EOF
+     },
+     { from  => undef, #
+       until => undef, #
+       text  => 'Schloßpark Charlottenburg: bei Dunkelheit geschlossen',
+       type  => 'gesperrt',
+       permanent => 1,
+       data  => <<EOF,
+	2::temp 3296,12719 3231,12749 3127,12793 3055,12973 2997,13402 2950,13552
+EOF
+     },
+     { from  => undef, #
+       until => undef, #
+       text  => '(Neue Grünstr. - Alte Jakobstr.): Der Hofdurchgang ist nachts zwischen 23 und 6 Uhr sowie an Sonn- und Feiertagen geschlossen',
+       type  => 'gesperrt',
+       permanent => 1,
+       data  => <<EOF,
+	2::temp 10624,11548 10534,11609
+EOF
+     },
+     { from  => undef, #
+       until => undef, #
+       text  => 'Eberbacher Str.: Di und Fr 08.00-13.00 wegen Wochenmarkt zwischen Binger Str und Rüdesheimer Str gesperrt',
+       type  => 'gesperrt',
+       permanent => 1,
+       data  => <<EOF,
+######################################################################
+# Wochenmärkte vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+	q4::temp 4397,7375 4330,7375 4162,7375 4059,7375
+EOF
+     },
+     { from  => undef, #
+       until => undef, #
+       text  => 'Nestorstr.: Di und Fr 08.00-13.00 Wochemarkt, Behinderungen möglich',
+       type  => 'gesperrt',
+       permanent => 1,
+       data  => <<EOF,
+	q4::temp 3374,10201 3359,9968 3347,9793
+EOF
+     },
+     { from  => undef, #
+       until => undef, #
+       text  => 'Maybachufer: Di und Fr 11.00-18.30 Wochenmarkt, Behinderungen möglich',
+       type  => 'gesperrt',
+       permanent => 1,
+       data  => <<EOF,
+	q4::temp 11543,10015 11669,9987 11880,9874
+EOF
+     },
+     { from  => undef, #
+       until => undef, #
+       text  => 'Friedrichstraße: zwischen Franz-Klühs-Str. und Mehringplatz, Markt Do 10.00-18.00 und Sa 08.00-13.00, Behinderungen möglich',
+       type  => 'gesperrt',
+       permanent => 1,
+       data  => <<EOF,
+#: note: http://www.berlin.de/ba-friedrichshain-kreuzberg/wirtschaftsfoerderung/wirtschaftsstandort/maerkte.html
+	q4::temp 9566,10566 9580,10434
+EOF
+     },
+     { from  => undef, #
+       until => undef, #
+       text  => 'Crellestr: Mi und Sa 10.00-15.00 Wochenmarkt, Behinderungen möglich',
+       type  => 'gesperrt',
+       permanent => 1,
+       data  => <<EOF,
+	q4::temp 7882,9490 7836,9413 7771,9389
+EOF
+     },
+     { from  => undef, #
+       until => undef, #
+       text  => 'Charlottenbrunner Str.: Mo und Do 09.00-14.00 Wochenmarkt, Ausweichen auf Gehweg',
+       type  => 'gesperrt',
+       permanent => 1,
+       data  => <<EOF,
+	q4::temp 3073,9020 2972,9037
+EOF
+     },
+     { from  => undef, #
+       until => undef, #
+       text  => 'Karl-August-Platz, Weimarer Str.: Mi 08.00-13.00 und Sa 08.00-14.00 Wochenmarkt, Behinderungen möglich',
+       type  => 'gesperrt',
+       permanent => 1,
+       data  => <<EOF,
+	q4::temp 4092,11338 4077,11226
+EOF
+     },
+     { from  => undef, #
+       until => undef, #
+       text  => 'Richard-Wagner-Platz: Wochenmarkt Mo und Do 08.00-13.00, Behinderungen möglich',
+       type  => 'gesperrt',
+       permanent => 1,
+       data  => <<EOF,
+	q4::temp 3763,12279 3701,12279
+EOF
+     },
+     { from  => undef, #
+       until => undef, #
+       text  => 'Ladiusmarkt in der Andréezeile: Wochenmarkt Dienstag, Donnerstag und Sonnabend, Behinderungen möglich',
+       type  => 'gesperrt',
+       permanent => 1,
+       data  => <<EOF,
+	q4::temp 1020,496 1078,443
+EOF
+     },
+     { from  => undef, #
+       until => undef, #
+       text  => 'Preußenallee zwischen Marathonallee und Badenallee: Wochenmarkt Mo 08.00-13.00 und Do 08.00-13.00, Behinderungen möglich',
+       type  => 'gesperrt',
+       permanent => 1,
+       data  => <<EOF,
+	q4::temp 596,11951 585,11830 572,11698 563,11601
+# Wochenmärkte ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+######################################################################
+EOF
+     },
+     { from  => undef, #
+       until => undef, #
+       text  => 'Uferpromenade und Invalidenfriedhof nachts geschlossen, Öffnungszeiten Winter (1.10-15.3.) 7.00-18.30, Sommer (16.3.-30.9.) 7.00-21.30',
+       type  => 'gesperrt',
+       permanent => 1,
+       data  => <<EOF,
+#: by: Marek Bänsch:
+#: confirmed_by: srt
+	2::temp 8337,13541 8248,13659 8101,13901 8119,13912 8011,14096
+	2::temp 8119,13912 8216,13987
+EOF
+     },
+     { from  => undef, #
+       until => undef, #
+       text  => 'Park Biesdorf nachts geschlossen, Öffnungszeiten 6.00-23.00',
+       type  => 'gesperrt',
+       permanent => 1,
+       data  => <<EOF,
+	2::temp 21150,11925 21132,11943 21100,11960 20862,12027 20810,12031
+	2::temp 20862,12027 20836,11768
+EOF
+     },
+     { from  => undef, #
+       until => undef, #
+       text  => 'Breite Gasse: nur von 9 Uhr bis zum Einschalten der Straßenbeleuchtung geöffnet',
+       type  => 'gesperrt',
+       permanent => 1,
+       data  => <<EOF,
+	2::temp 22312,4329 22252,4362
+EOF
+     },
+     { from  => undef, #
+       until => undef, #
+       text  => 'Park am Nordbahnhof: im Sommer zwischen 6.30 und 22.00 Uhr geöffnet, im Winterhalbjahr sind die Öffnungszeiten kürzer',
+       type  => 'gesperrt',
+       permanent => 1,
+       data  => <<EOF,
+	2::temp 8825,14401 8913,14485 8839,14635 8848,14638 8938,14521 8953,14528
+	2::temp 8913,14485 9176,14181 9147,14151 9224,14169
+EOF
+     },
     );

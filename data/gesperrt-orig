@@ -513,12 +513,13 @@ Zufahrt zu Germaniagarten/Oberlandgarten	1 11240,6350 11205,6358 11200,6372 1121
 Germaniagarten	1 11224,6244 11206,6252 11220,6323 11237,6326 11252,6319 11243,6246 11224,6244
 Oberlandgarten	1 11246,6403 11230,6413 11238,6470 11253,6473 11269,6466 11264,6409 11246,6403
 Alt-Tempelhof	1 9512,6652 9249,6642 9154,6638 9054,6631 8949,6644 9052,6664 9247,6687 9338,6694 9512,6652
-#: XXX_prog: Vielleicht sollte das beim Routing einstellbar sein? vvv
-#: note: Sperrung bestätigt von Stefan (s.sms): vvv
-Am Wuhleufer, Innovationspark Köpenick: Privatstraße, nachts und am Wochenende gesperrt	2 21677,6952 21498,7153 21475,7500 21497,7597 21546,7635
-Straße am Wald, Innovationspark Köpenick: Privatstraße, nachts und am Wochenende gesperrt	2 21475,7500 21341,7487 21025,7349
-#: note: ^^^
-#: XXX_prog: ^^^
+### -> folgendes ist jetzt in bbbike-temp-blockings.pl
+# #: XXX_prog: Vielleicht sollte das beim Routing einstellbar sein? vvv
+# #: note: Sperrung bestätigt von Stefan (s.sms): vvv
+# Am Wuhleufer, Innovationspark Köpenick: Privatstraße, nachts und am Wochenende gesperrt	2 21677,6952 21498,7153 21475,7500 21497,7597 21546,7635
+# Straße am Wald, Innovationspark Köpenick: Privatstraße, nachts und am Wochenende gesperrt	2 21475,7500 21341,7487 21025,7349
+# #: note: ^^^
+# #: XXX_prog: ^^^
 #: add_fragezeichen: Gilt die Einbahnstraßenregelung auch für Radfahrer oder nur für Autofahrer?
 Baumgartensteg	1 -2882,13474 -2937,13399
 #: by: Brüning:
