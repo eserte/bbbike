@@ -1086,6 +1086,7 @@ if (defined $q->param('PLZ')) {
 if (defined $q->param('LL')) {
     $set_anyc->($q->param('LL'), "ziel");
 }
+# XXX The following two are deprecated and will be removed some day.
 if (defined $q->param('startpolar')) {
     $set_anyc->($q->param('startpolar'), "start");
 }
