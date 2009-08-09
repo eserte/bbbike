@@ -10792,9 +10792,17 @@ sub activate_temp_blockings {
 	    if ($do_it) {
 		require POSIX;
 		my $datefmt = "%d.%m.%Y %H:%M:%S";
-		my $from_date_readable = defined $o->{from}  ? POSIX::strftime($datefmt, localtime($o->{from})) : "...";
-		my $to_date_readable   = defined $o->{until} ? POSIX::strftime($datefmt, localtime($o->{until})) : "...";
-		my $text = $o->{text} . " [" . $from_date_readable . " - " . $to_date_readable . "]";
+		my $date_spec;
+		{
+		    my $from_date_readable = defined $o->{from}  ? POSIX::strftime($datefmt, localtime($o->{from})) : "...";
+		    my $to_date_readable   = defined $o->{until} ? POSIX::strftime($datefmt, localtime($o->{until})) : "...";
+		    if ($from_date_readable eq '...' && $to_date_readable eq '...') {
+			$date_spec = 'permanent';
+		    } else {
+			$date_spec = $from_date_readable . " - " . $to_date_readable;
+		    }
+		}
+		my $text = $o->{text} . " [" . $date_spec . "]";
 		my $s;
 		my $f;
 		if ($o->{file}) {
