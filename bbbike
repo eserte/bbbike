@@ -10819,6 +10819,7 @@ sub activate_temp_blockings {
 		    last if !@{ $ret->[Strassen::COORDS()] };
 		    $ret->[Strassen::NAME] = $text;
 		    $new_s->push($ret);
+		    $new_s->set_directives_for_current({ info => [$o] });
 		    $used_inx++;
 		    $temp_blocking_inx_mapping{$used_inx} = $global_inx;
 		}
@@ -10870,6 +10871,21 @@ sub add_temp_blockings_to_net {
     }
 }
 
+sub apply_temp_blockings {
+    make_net() if !$net;
+    my $ms = Strassen->new;
+    for my $name (keys %temp_blockings_on_route_active) {
+	next if !$temp_blockings_on_route_active{$name};
+	for my $section (@{ $temp_blockings_on_route{$name} }) {
+	    my $r = $section->[0];
+	    $ms->push($r);
+	}
+    }
+    $net->remove_all_from_deleted(undef, 'std-temp-blockings');
+    $net->load_user_deletions($ms, -deltoken => 'std-temp-blockings');
+    re_search_gui();
+}
+
 sub check_path_in_blockings_net {
     my($pathref) = @_;
     check_path_in_blockings_net_reset();
@@ -10890,11 +10906,12 @@ sub check_path_in_blockings_net_continue {
 	if (exists $net->{$xy0} && exists $net->{$xy0}{$xy1}) {
 	    my($pos) = $current_temp_blockings_net->net2name($xy0, $xy1);
 	    if (defined $pos) {
-		my $r = $current_temp_blockings_ms->get($pos);
+		my $r   = $current_temp_blockings_ms->get($pos);
+		my $dir = $current_temp_blockings_ms->get_directives($pos);
 		if (!$temp_blockings_on_route{$r->[Strassen::NAME]}) {
 		    push @temp_blockings_on_route, $r->[Strassen::NAME];
 		}
-		push @{ $temp_blockings_on_route{$r->[Strassen::NAME]} }, $r;
+		push @{ $temp_blockings_on_route{$r->[Strassen::NAME]} }, [$r, $dir];
 	    }
 	}
     }
@@ -10924,12 +10941,13 @@ sub show_blockings {
 
     if (!@temp_blockings_on_route) {
 	$blockings_toplevel->Label(-text => M"Keine Sperrungen auf der Route")->pack;
+#XXX but should still use activated temp blockings, so the user can click it away!
     } else {
 	require Tk::HList;
 	my $hl;
 	$hl = $blockings_toplevel->Scrolled
 	    ('HList',
-	     -columns => 2,
+	     -columns => 3,
 	     -header => 1,
 	     -selectmode => 'single',
 	     -browsecmd => sub {
@@ -10937,7 +10955,7 @@ sub show_blockings {
 		 return if !defined $index;
 		 my $name = $temp_blockings_on_route[$index];
 		 my $coords = [
-			       map { [ transpose_all(@{ Strassen::to_koord($_->[Strassen::COORDS]) }) ] }
+			       map { [ transpose_all(@{ Strassen::to_koord($_->[0]->[Strassen::COORDS]) }) ] }
 			       @{ $temp_blockings_on_route{$name} }
 			      ];
 		 mark_street(-coords => $coords);
@@ -10947,24 +10965,64 @@ sub show_blockings {
 	$hl->anchorClear;
 	$hl->headerCreate(0, -text => M"Aktivieren");
 	$hl->headerCreate(1, -text => M"Sperrung");
+	$hl->headerCreate(2, -text => M"Dauer");
 	$hl->columnWidth(0, 80);
 
 	require Tk::ItemStyle;
+	my $bold_style = $hl->ItemStyle('text', -font => $font{bold});
+	my $nopad_style = $hl->ItemStyle('window', -pady => 0, -padx => 0);
 
-	my $dummyXXXXXXXXXX;
+	my %seen_temp_blockings_on_route;
 	my $path_i = 0;
-	for my $name (@temp_blockings_on_route) {
-	    my $is = $hl->ItemStyle('window', -pady => 0, -padx => 0);
-	    $hl->add($path_i, -itemtype => 'window', -style => $is,
-		     -widget => $hl->Checkbutton(-variable => \$dummyXXXXXXXXXX,
+
+	my $add_line = sub {
+	    my($name) = @_;
+	    $hl->add($path_i, -itemtype => 'window', -style => $nopad_style,
+		     -widget => $hl->Checkbutton(-variable => \$temp_blockings_on_route_active{$name},
 						 -onvalue => 1,
 						 -offvalue => 0,
 						 -background => $hl->cget('-background'),
 						 -highlightthickness => 0,
 						),
 		    );
-	    $hl->itemCreate($path_i, 1, -text => $name);
+### XXX this code is currently not needed:
+### it is only shown what is active anyway...
+### (if it is necessary to activate the code again, then put
+### -style => $text_style
+### to the hlist items)
+# 	    my $info = $temp_blockings_on_route{$name}[0][1]{info}[0];
+# 	    my $is_current = ($info &&
+# 			      (!defined $info->{from} || $info->{from} <= time) &&
+# 			      (!defined $info->{until} || $info->{until} >= time)
+# 			     );
+# 	    my $text_style = $hl->ItemStyle('text', -font => $is_current ? $font{bold} : $font{normal});
+	    if (my($desc, $date_spec) = $name =~ m{^(.*)\s\[(.*?)\]$}) {
+		$hl->itemCreate($path_i, 1, -text => $desc);
+		$hl->itemCreate($path_i, 2, -text => $date_spec);
+	    } else {
+		warn "Could not parse '$name'";
+		$hl->itemCreate($path_i, 1, -text => $name);
+	    }
 	    $path_i++;
+	};
+
+	for my $name (@temp_blockings_on_route) {
+	    $seen_temp_blockings_on_route{$name}++;
+	    $add_line->($name);
+	}
+
+	# Show the selected temp blockings not active in this search:
+	my $not_used_header_shown;
+	for my $name (keys %temp_blockings_on_route_active) {
+	    next if $seen_temp_blockings_on_route{$name};
+	    next if !$temp_blockings_on_route_active{$name};
+	    if (!$not_used_header_shown) {
+		$hl->add($path_i);
+		$hl->itemCreate($path_i, 1, -text => "Bereits aktivierte Sperrungen", -style => $bold_style);
+		$path_i++;
+		$not_used_header_shown++;
+	    }
+	    $add_line->($name);
 	}
     }
 
@@ -10974,11 +11032,14 @@ sub show_blockings {
     if (@temp_blockings_on_route) {
 	$footer->Button(-text => M"Alle umfahren",
 			-command => sub {
-			    warn;
+			    for my $name (@temp_blockings_on_route) {
+				$temp_blockings_on_route_active{$name} = 1;
+			    }
+			    apply_temp_blockings();
 			})->pack(-anchor => 'e', -side => "right");
 	$footer->Button(-text => M"Ausgewählte umfahren",
 			-command => sub {
-			    warn;
+			    apply_temp_blockings();
 			})->pack(-anchor => 'e', -side => "right");
     }
 }
