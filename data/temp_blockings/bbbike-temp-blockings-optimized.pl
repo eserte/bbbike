@@ -1708,6 +1708,16 @@ Neuer Garten (am Portierhaus) - Weinmeisterstr.: Weg ist nur zwischen 6 Uhr bis 
 	2::temp 8913,14485 9176,14181 9147,14151 9224,14169
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => 1251280800,
+         'text' => 'Brandenburger Tor: mögliche Sperrungen zur Leichtathletik-WM (bis 26.08.09)',
+         'from' => 1249842805,
+         'id' => 1827,
+         'data' => 'userdel	2::temp 8600,12165 8538,12245 8610,12254 8731,12270
+userdel	2::temp 8538,12245 8546,12279
+',
+         'type' => 'gesperrt'
        }
      
 );

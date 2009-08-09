@@ -15507,4 +15507,13 @@ EOF
 	2::temp 8913,14485 9176,14181 9147,14151 9224,14169
 EOF
      },
+     { from  => 1249842805, # 2009-08-09 20:33
+       until => 1251280800, # 2009-08-26 12:00
+       text  => 'Brandenburger Tor: mögliche Sperrungen zur Leichtathletik-WM (bis 26.08.09)',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::temp 8600,12165 8538,12245 8610,12254 8731,12270
+userdel	2::temp 8538,12245 8546,12279
+EOF
+     },
     );
