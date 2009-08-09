@@ -29,7 +29,7 @@ Gorkistr.: reger Fuﬂg‰ngerverkehr (Fuﬂg‰ngerzone)	q3 2049,20292 2116,20314 2295,
 Breitscheidplatz: starker Fuﬂg‰ngerverkehr, oft Veranstaltungen	q4 5656,10876 5652,11004
 Breitscheidplatz: starker Fuﬂg‰ngerverkehr, oft Veranstaltungen	q4 5782,10884 5829,10964
 Wilmersdorfer Str.: starker Fuﬂg‰ngerverkehr (Fuﬂg‰ngerzone), nachts und sonntags Radfahren erlaubt	q4 3723,11457 3751,11334 3770,11231 3795,11098 3827,10980
-(An der M¸ggelspree): Fuﬂg‰nger	q2 23451,4877 23441,4956 23468,5075 23620,5096 23776,5040 23982,5030 24233,4878 24398,4842 24834,4541 25023,4441 25102,4408 25427,4482 25479,4540 25565,4549
+(An der M¸ggelspree): Fuﬂg‰nger	q2 23451,4877 23441,4956 23461,5054 23620,5096 23776,5040 23982,5030 24233,4878 24398,4842 24834,4541 25030,4421 25131,4400 25200,4420 25315,4474 25403,4480 25479,4540 25565,4549
 Am M¸ggelsee: Fuﬂg‰nger	q2 25474,2848 25667,2787 25857,2654 26006,2615 26151,2624 26339,2667 26457,2660 26627,2610 26868,2580 27135,2500 27173,2444 27267,2414 27372,2434 27517,2523 27565,2569 27743,2842 27822,2910 27945,3006 28292,3150 28496,3253
 Pestalozzistr.: Fuﬂg‰ngerzone	q3 3721,11230 3770,11231 3822,11224
 (Zufahrt am NKZ): Bordsteine, Fuﬂg‰nger/Lieferverkehr	q3 11291,10438 11311,10505 11343,10528
@@ -266,7 +266,9 @@ Spreeuferweg: besonders an Wochenenden tags¸ber viele Fuﬂg‰nger	q1 8277,13032 83
 Spreeuferweg: besonders an Wochenenden tags¸ber viele Fuﬂg‰nger	q1 8635,12629 8709,12605 8756,12608
 Helenenhof: enge Tore, Fuﬂg‰nger	q3 14495,11261 14395,11356
 F‰rberstr. - Uferweg: sehr eng	q2 21675,4989 21665,5035 21684,5079
-Uferweg, Mentzelpark: Fuﬂg‰nger	q1 21487,5425 21600,5221 21684,5079 21735,5003 21821,4918 21845,4875
+Uferweg, Mentzelpark: Fuﬂg‰nger	q1 21487,5425 21600,5221 21684,5079 21735,5003 21769,4973
+Uferweg, Mentzelpark: Fuﬂg‰nger, eng	q3 21769,4973 21821,4918 21834,4889
+(Mentzelpark): Fuﬂg‰nger	q1 21769,4973 21778,4916 21834,4889 21848,4882
 (Verl‰ngerte Franzˆsische Str.): nur langsam passierbar	q4 8901,12008 9076,12054
 Heinrich-Lassen-Park: Fuﬂg‰nger (aber Radfahren ist erlaubt!)	q1 6664,8787 6740,8682 6815,8691 6912,8617
 (Uferweg am Nordhafen): Fuﬂg‰nger	q1 7753,14528 7695,14545 7498,14658
@@ -471,6 +473,7 @@ Elsensteg: Fuﬂg‰nger	q3 13366,8694 13376,8705 13394,8730 13402,8741
 Elsenstr. - Bahndamm: enger Weg	q2 13923,9405 13953,9372
 (Blockpark): Fuﬂg‰nger	q1 16303,10760 16246,10641 16187,10587
 Upstallweg (Lichtenberg): gemeinsamer Rad- und Gehweg	q1 17946,10344 17954,10367 18039,10398 18200,10387 18245,10398 18332,10434
+Mayschweg: Fuﬂg‰nger (Radfahrer frei), eng	q1 23064,3614 23012,3598 23007,3597
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q3 11805,19071 11937,19175
 Ebersstr.: Sch¸ler	q2 7245,8583 7292,8631
 Straﬂe 103 (Niederschˆnhausen): enge Straﬂe 	q1 10914,20065 11051,19789
@@ -530,7 +533,7 @@ Hausotterstr.: sehr schmal, auf beiden Seiten parkende Autos	q1 8592,18128 8348,
 Prettauer Pfad: enge Straﬂe	q1 3384,1297 3569,1532
 Prettauer Pfad: enge Straﬂe	q1 3358,1331 3384,1297 3437,1218
 Hempst¸cken: kurvenreich	q2 -7506,126 -7542,201 -7632,204
-Joachimstr. (Kˆpenick): zwei Bodenschwellen	q2 21907,5517 22009,5593
+Joachimstr. (Kˆpenick): Bodenschwellen	q1 21907,5517 22009,5593
 Jeanne-Mammen-Bogen: Fuﬂg‰ngerzone	q3 4954,10876 5090,10868
 Holwedestr.: schmale Straﬂe	q1 1128,20525 1203,20553 1264,20575 1326,20600 1387,20621
 (Fuﬂg‰ngertunnel Bahnhof Lichterfelde Ost): Fuﬂg‰nger	q4 5367,2528 5413,2436

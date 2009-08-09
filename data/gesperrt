@@ -423,7 +423,7 @@ Alt-Tempelhof	1 9512,6652 9249,6642 9154,6638 9054,6631 8949,6644 9052,6664 9247
 Baumgartensteg	1 -2882,13474 -2937,13399
 Geisenheimer Str.	1 4391,7258 4462,7137 4530,7021
 Teutonenstr. (Nikolassee)	1 -3519,2180 -3610,2237 -3689,2267 -3742,2287
-Straße zum FEZ	1 20716,6029 20593,6082 20428,6157 20453,6211 20623,6136 20708,6089 20716,6029
+Straße zum FEZ	1 20716,6029 20593,6082 20428,6157 20453,6211 20623,6136 20708,6089
 Malchiner Str.	1 13866,4481 13869,4626 13836,4759
 Paul-Franke-Str.	1 9916,18610 9994,18595 10013,18545 10006,18502 9901,18522
 Zellerfelder Str.	1 11526,18929 11468,19106
@@ -896,8 +896,8 @@ U-Bahnviadukt und Straßenbahn	3nocross::ignrte 10997,16280 10990,16197 10982,161
 Schönhauser Allee -> Rodenbergstr.: U-Bahnviadukt und Straßenbahn	3::igndisp 10997,16280 10990,16197 11253,16118
 Rodenbergstr. -> Schönhauser Allee: U-Bahnviadukt und Straßenbahn	3::igndisp 11253,16118 10990,16197 10982,16121
 Straßenbahntrasse	3nocross::ignrte 21579,4579 21726,4537 21796,4517
-Flemmingstr. -> Oberspreestr.: Straßenbahntrasse	3::igndisp 21845,4875 21726,4537 21796,4517
-Oberspreestr. -> Flemmingstr.: Straßenbahntrasse	3::igndisp 21579,4579 21726,4537 21845,4875
+Flemmingstr. -> Oberspreestr.: Straßenbahntrasse	3::igndisp 21848,4882 21726,4537 21796,4517
+Oberspreestr. -> Flemmingstr.: Straßenbahntrasse	3::igndisp 21579,4579 21726,4537 21848,4882
 Straßenbahntrasse	3nocross::ignrte 21332,4655 21389,4635 21494,4605
 Westendstr. -> Oberspreestr.: Straßenbahntrasse	3::igndisp 21370,4442 21389,4635 21332,4655
 Oberspreestr. -> Westendstr.: Straßenbahntrasse	3::igndisp 21494,4605 21389,4635 21370,4442
@@ -1397,7 +1397,7 @@ tragen (Elsensteg, 6 Stufen)	0:10:-144 13394,8730
 tragen (Gerickesteg, ungefähr 20 Stufen)	0:30:-128 6748,12669
 tragen (Gerickesteg, ungefähr 20 Stufen)	0:30:-126 6702,12633
 tragen (Spreetunnel, ca. 50 Stufen)	0:60:17 25658,4619
-tragen (Spreetunnel, 50 Stufen)	0:60 25565,4549
+tragen (Spreetunnel, 50 Stufen)	0:60:52 25571,4553
 tragen (Brücke Tegeler Hafen)	0:60:-256 1227,20281
 tragen (Brücke Tegeler Hafen)	0:60:-231 1166,20330
 tragen? (Fußgängerbrücke)	0:120:-63 20442,564
@@ -1454,6 +1454,7 @@ tragen (Treppe, 50 Stufen)	0:50:-151 -12328,1941
 tragen (Treppe, 18 Stufen)	0:18:-72 8709,12605
 tragen (Treppe)	0:30:-7 6017,12931
 tragen (Treppe, 4 Stufen)	0:10:86 38056,48407
+Drängelgitter	BNP:3:-101:trailer=10 23012,3598
 Schranke	BNP:1:-135:trailer=3 14395,8071
 Schranke	BNP:0:-63:trailer=3 9920,11074
 Drängelgitter	BNP:5:-164 4258,2693
@@ -1520,7 +1521,7 @@ Schranke	BNP:5:50:trailer=10 10112,11796
 Schranke	BNP:3:86:trailer=6 9698,10348
 Drängelgitter	BNP:5:-12 12682,7514
 Barriere	BNP:5:-2 17301,7645
-Drängelgitter	BNP:5:-77 24398,4842
+Drängelgitter	BNP:3:-77:trailer=10 24398,4842
 Drängelgitter (Schloßallee/Straßenbahn) 	BNP:5:67 11883,19739
 Drängelgitter	BNP:5:-96 11995,19759
 Drängelgitter	BNP:3:-257:trailer=6 9884,10192
@@ -1549,7 +1550,7 @@ Drängelgitter	BNP:5:-193 38562,100725
 Drängelgitter	BNP:5:3 38662,97200
 Schwingtor an der Luiseninsel	BNP:10:-142 7696,11621
 Schwingtor an der Luiseninsel	BNP:10:-131 7735,11656
-Schranke	BNP:5:12 25558,997
+Schranke	BNP:1:12:trailer=5 25558,997
 enges Drängelgitter	BNP:5:90 100,3
 Drängelgitter	BNP:4:-101 13909,18835
 Drängelgitter	BNP:3:-24 14218,18674

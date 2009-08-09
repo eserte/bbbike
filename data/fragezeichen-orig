@@ -191,6 +191,8 @@ Schwarzer Weg: Wiedereröffnung im Frühjahr 2009 (im Juli aber noch keinerlei Anz
 #XXXdel : by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0802/nachricht2958.html;#: note: laut daniel.geraskov noch eine Baustelle;#: last_checked: 2008-06-23;Oranienburger Str.: Existiert in Richtung Hackescher Markt zwischen Friedrichstraße und Linienstraße eine Radspur?	?; 9215,13392 9281,13374
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0803/nachricht2984.html
 #: last_checked: 2009-07-30
+#: XXX laut MoPo früher fertig:
+#: next_check: 2009-09-30
 Eberswalder Str.: Neubau von Radwegen bis 2009-12-01	?::inwork 10618,15076 10881,15047
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0802/nachricht2961.html
 B96a: Neubau der Radwege (gemeinsam mit Gehweg); wahrscheinlich wird der Radstreifen dann aufgehoben (bis 2010-01-01)	?::inwork 9228,23643 9146,23843 8984,24078 8891,24330 8826,24501 8682,24883 8665,24941 8661,24952 8571,25180 8548,25239 8493,25378
@@ -300,7 +302,8 @@ B87 (Umfahrung Müllrose): Ist die Straße eine Kfz-Straße?	? 78295,-17575 78445,-
 B87 (Umfahrung Beeskow): Ist die Straße eine Kfz-Straße?	? 66269,-27581 66283,-27438 66441,-26994 66462,-26428 66441,-25347 66426,-23979 66605,-23083 67085,-22374 67558,-22059 68152,-21851 68883,-21844 69506,-22088 70838,-22847 71168,-22890 71397,-22833
 # Hier scheint nichts mehr zu passieren... : last_checked: 2008-01-25 #: by: Message-ID: <4mfe1bF5vae4U1@uni-berlin.de> Warschauer Str.: Radwegbenutzungspflicht wird aufgehoben	?; 13546,11352 13476,11174 13454,11119 13409,11004 13332,10832
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20060629.1530.43277.html
-R1: geänderte Ausschilderung steht noch aus	? 22965,4124 23435,4179 23753,4218 24135,4264 24181,4270 25396,4417 25347,4320 25373,4266 25376,4207 25282,3932 25254,3785 25232,3757 25241,3232 25281,3161 25259,3116 25346,2956 25474,2848 25547,2779 25600,2681 25768,2627 25789,2576 25790,2507 25846,2496 25847,2482 25948,2474
+#: last_checked: 2009-08-09
+R1: geänderte Ausschilderung steht noch aus	? 22965,4124 23435,4179 23753,4218 24135,4264 24181,4270 25132,4385 25396,4417 25347,4320 25373,4266 25376,4207 25282,3932 25254,3785 25232,3757 25241,3232 25281,3161 25259,3116 25346,2956 25474,2848 25547,2779 25600,2681 25768,2627 25789,2576 25790,2507 25846,2496 25847,2482 25948,2474
 #: next_check: 2006-06-01
 Burgwallgraben: neuer Weg wg. Renaturisierung durch DB - fertig Sommer 2006	? -3609,13492 -3649,13288 -3625,13241 -3550,13122 -3403,13024 -3360,13028 -3332,13054
 #: XXX laut Detlef Hoge:
@@ -329,7 +332,7 @@ Alternative	? 24081,50440 24472,50937
 #: by ^^^
 Popitzweg: Fußgängerzone?	? 1361,14431 1881,14425
 #: last_checked: 2009-08-08
-R1 im Raum Spindlersfeld: zukünftige oder alternative Wegführung?	? 21364,5426 21443,5406 21487,5425 21600,5221 21684,5079 21735,5003 21779,4957 21821,4918 21845,4875 21896,4853 21796,4517
+R1 im Raum Spindlersfeld: zukünftige oder alternative Wegführung?	? 21364,5426 21443,5406 21487,5425 21600,5221 21684,5079 21735,5003 21783,4964 21778,4916 21834,4889 21848,4882 21896,4853 21796,4517
 #: XXX_prog: Verlustzeiten für Wegführungen implementieren (ähnlich wie 3)
 Pappelstr. -> Kastanienallee: hier verliert man durchaus 2 1/2 Minuten bei der Überquerung der Schönhauser!	? 11119,15385 10881,15047 10838,14962
 # Ich glaube, hier passiert nichts: #: by: http://www.agenda21berlin.de/vonwegen/map_tmpvelo.htm vvv Tempelhofer Veloroutenpläne: hmmm, teilweise gibt es hier gar keine Straßen?	? 8934,5095 9025,4871 #: note: laut Marko Preuss kann man hier höchstens Slalom fahren: Tempelhofer Veloroutenpläne: hmmm, teilweise gibt es hier gar keine Straßen?	? 9080,4371 9099,4204 Tempelhofer Veloroutenpläne: Grauwackeweg, Muschelkalkweg, Str. 482: genaue Lage, Qualität?	? 11193,1684 11190,1622 11155,1456 11146,1413 11120,1384 Tempelhofer Veloroutenpläne: Grauwackeweg, Muschelkalkweg, Str. 482: genaue Lage, Qualität?	? 11155,1273 11120,1384 11042,1352 10950,1315 10868,1281 10795,1251 10718,1220 10734,1178 10759,1112
@@ -3424,19 +3427,10 @@ Mohrenfalterstr.: Qualität?	? 21184,10673 21368,10768 21397,10768 21491,10815
 Dramburger Str.: Qualität? Gibt es eine Verbindung zum Wuhlewanderweg? Wenn ja, wie ist die Qualität?	? 21495,10600 21560,10471
 Kemberger Str.: Gibt es einen Radweg in der Kemberger Straße? Ist dieser benutzungspflichtig?	? 22314,17916 22215,17784 22191,17751 22148,17687 22022,17519 22002,17492 21913,17376
 Scharfschwerdtstr. (Hohen Neuendorf): Qualität?	? 1364,27953 1426,28065 1456,28125 1453,28175 1448,28276 1432,28356 1489,28451 1536,28550 1698,28742 1838,28808
-Harnischweg: Qualität?	? 21208,5336 21363,5336
-Mayschweg: Qualität östlich des Lobitzwegs? Ist ein Teil für Autos gesperrt? Einbahnstraßenregelung?	? 22954,3584 23008,3591 23072,3611 23158,3648
 Hugo-Wolf-Steig: Qualität?	? 23168,1335 23053,1308
 Peter-Gast-Weg: Qualität?	? 23144,1439 23030,1414
 Hirtengarten: Qualität?	? 23654,2051 23634,2148 23638,2185
-Lossowweg: Qualität?	? 23028,3216 23089,3231 23155,3251 23298,3295
-Riebekeweg: Qualität?	? 23072,3611 23109,3438 23155,3251
-Berlewitzweg: Qualität?	? 22966,3912 23008,3591 23089,3231 23098,3201
-Asseburgpfad: Qualität?	? 23481,3107 23551,3129 23630,3180 23701,3228 23734,3255 23758,3275
-Bukesweg: Qualität?	? 23551,3129 23633,2933 23643,2860 23668,2792
-Funkelgang: Qualität?	? 23701,3228 23908,2912 23948,2847
 Waldnesselweg: Qualität? Ist der Straßenname offiziell?	? 23652,3722 23663,3502
-Barbenweg: Qualität?	? 23734,3255 23991,2941
 Asternplatz: Ist der nördliche Teil Richtung Limonenstr. auch als Asternplatz ausgeschildert? Qualität dieses Teils des Asternplatzes (Asphalt oder Kopfsteinpflaster)?	? 3754,4755 3740,4766 3716,4764 3707,4752 3710,4728
 Sacrower Allee (Groß Glienicke): Qualität im südlichen Abschnitt?	? -10036,5795 -10049,5467
 Richard-Wagner-Str. (Groß Glienicke): Qualität im westlichen Abschnitt?	? -10036,5795 -10142,5793 -10186,5791 -10234,5803 -10350,5878 -10469,5951
@@ -3790,3 +3784,4 @@ Quickborner Str.: Wo genau befinden sich Radspuren, wo befinden sich Radwege?	? 
 Fritz-Rumpf-Str. (Potsdam): Ist die Straße bereits fertiggestellt? Qualität?	? -11307,133 -11388,270
 #: XXX Eintrag in Potsdam.coords.data fehlt
 Leonardo-da-Vinci-Str. (Potsdam): Ist die Straße bereits fertiggestellt? Qualität?	? -11390,72 -11609,400
+Flansweg: Qualität des östlichen Abschnitts?	? 23384,3563 23452,3613

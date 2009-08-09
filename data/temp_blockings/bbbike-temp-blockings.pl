@@ -15295,6 +15295,24 @@ EOF
 userdel	q4::temp 8207,12616 8306,12617
 EOF
      },
+     { from  => 1249768800, # 2009-08-09 00:00
+       until => 1251151200, # 2009-08-25 00:00
+       text  => 'Ilsestr., Bauarbeiten 10.8.2009 - 24.8.2009',
+       type  => 'handicap',
+       source_id => 'MoPo 8. August 2009',
+       data  => <<EOF,
+userdel	q4::inwork 12645,7087 12632,7137 12613,7236
+EOF
+     },
+     { from  => 1250373600, # 2009-08-16 00:00
+       until => 1251756000, # 2009-09-01 00:00
+       text  => 'Hannemannstr., Bauarbeiten 17.8.2009 - 31.8.2009',
+       type  => 'handicap',
+       source_id => 'MoPo, 8. August 2009',
+       data  => <<EOF,
+userdel	q4::inwork 13158,5490 13075,5470
+EOF
+     },
      { from  => undef, #
        until => undef, #
        text  => 'Innovationspark Köpenick: Privatstraße, nachts und am Wochenende gesperrt',

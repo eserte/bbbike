@@ -362,11 +362,9 @@ Zossener Str. -> Teupitzer Str.: Straßenbahntrasse	3::igndisp 23411,15632 23568,
 Kleinmachnower Weg: Sa und So ist die Schranke an der Kreuzung Sachlebenstraße zu, für Kfz-Verkehr demnach gesperrt	2 269,-41 665,85 1345,184
 Hentigstr.	1 18514,8773 18548,8942 18586,9172 18621,9404
 Grottewitzstr.	1 21933,152 22145,208
-Schlichtallee	3nocross::ignrte 15639,10469 15758,10578 15982,10765 16032,10842
+Schlichtallee	3nocross::ignrte 15639,10469 15758,10578 15982,10765
 Zobtener Str. -> Schlichtallee: Schlichtallee	3::igndisp 16157,10342 15758,10578 15639,10469
 Schlichtallee -> Zobtener Str.: Schlichtallee	3::igndisp 15982,10765 15758,10578 16157,10342
-Fischerstr. -> Schlichtallee: Schlichtallee	3::igndisp 16080,10743 15982,10765 15758,10578
-Schlichtallee -> Fischerstr.: Schlichtallee	3::igndisp 16032,10842 15982,10765 16080,10743
 Hindenburgdamm	3nocross::ignrte 4507,4755 4515,4581 4521,4484
 Hindenburgdamm -> Flotowstr.: Hindenburgdamm	3::igndisp 4507,4755 4515,4581 4651,4638
 Roonstr. -> Hindenburgdamm: Hindenburgdamm	3::igndisp 4265,4484 4515,4581 4507,4755
@@ -839,3 +837,4 @@ Viktoria-Luise-Platz: Poller	3 6270,9910 6275,9962 6224,9980
 Viktoria-Luise-Platz: Poller	3 6224,9980 6275,9962 6270,9910
 Else-Lasker-Schüler-Str.: Poller	3 7291,10506 7245,10499 7033,10396
 Else-Lasker-Schüler-Str.: Poller	3 7033,10396 7245,10499 7291,10506
+(Westhafenstr. - Beusselstr.): Durchfahrt verboten, Anlieger frei	2 6083,14564 6025,14539 6015,14516 5997,14444 5920,14422 5217,14255

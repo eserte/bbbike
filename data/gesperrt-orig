@@ -526,7 +526,7 @@ Baumgartensteg	1 -2882,13474 -2937,13399
 Geisenheimer Str.	1 4391,7258 4462,7137 4530,7021
 #: by: Matthias Müller:
 Teutonenstr. (Nikolassee)	1 -3519,2180 -3610,2237 -3689,2267 -3742,2287
-Straße zum FEZ	1 20716,6029 20593,6082 20428,6157 20453,6211 20623,6136 20708,6089 20716,6029
+Straße zum FEZ	1 20716,6029 20593,6082 20428,6157 20453,6211 20623,6136 20708,6089
 #: add_fragezeichen: Gilt die Einbahnstraßenregelung zwischen Onkel-Herse-Str. und Parchimer Allee auch für Radfahrer oder nur für Autofahrer?
 Malchiner Str.	1 13866,4481 13869,4626 13836,4759
 #: by: Butch Coolidge:
@@ -1110,7 +1110,7 @@ tragen (Gerickesteg, ungefähr 20 Stufen)	0:30 6748,12669
 tragen (Gerickesteg, ungefähr 20 Stufen)	0:30 6702,12633
 #: note: exakt 48 oder 49 Stufen
 tragen (Spreetunnel, ca. 50 Stufen)	0:60 25658,4619
-tragen (Spreetunnel, 50 Stufen)	0:60 25565,4549
+tragen (Spreetunnel, 50 Stufen)	0:60 25571,4553
 tragen (Brücke Tegeler Hafen)	0:60 1227,20281
 tragen (Brücke Tegeler Hafen)	0:60 1166,20330
 #: XXX ja, siehe osm-Karte. Richtung Rosestr. scheint noch eine Treppe zu sein.
@@ -1195,6 +1195,7 @@ tragen (Treppe, 4 Stufen)	0:10 38056,48407
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+Drängelgitter	BNP:3::trailer=10 23012,3598
 Schranke	BNP:1::trailer=3 14395,8071
 Schranke	BNP:0::trailer=3 9920,11074
 #: by: http://www.benno-koch.de/article09575_dumm_gelaufen_schifffahrtsamt_sperrt_teltow-route2 vvv
@@ -1307,7 +1308,8 @@ Schranke	BNP:5::trailer=10 10112,11796
 Schranke	BNP:3::trailer=6 9698,10348
 Drängelgitter	BNP:5 12682,7514
 Barriere	BNP:5 17301,7645
-Drängelgitter	BNP:5 24398,4842
+#: note: ca. 120cm zum versetzten Gitter
+Drängelgitter	BNP:3::trailer=10 24398,4842
 #: unverified_by: ADFC-Plan:
 Drängelgitter (Schloßallee/Straßenbahn) 	BNP:5 11883,19739
 Drängelgitter	BNP:5 11995,19759
@@ -1345,7 +1347,7 @@ Drängelgitter	BNP:5 38662,97200
 Schwingtor an der Luiseninsel	BNP:10 7696,11621
 Schwingtor an der Luiseninsel	BNP:10 7735,11656
 #: by: ^^^
-Schranke	BNP:5 25558,997
+Schranke	BNP:1::trailer=5 25558,997
 # XXX del: by: holger (hd, sav), updated by epperlein: Drängelgitter	BNP:5 8810,14373
 enges Drängelgitter	BNP:5 100,3
 #: by: antje weiss dorn: vvv
