@@ -11,7 +11,13 @@
 
 (defconst bbbike-font-lock-defaults
   '(bbbike-font-lock-keywords t nil nil nil (font-lock-multiline . nil)))
-  
+
+(defadvice switch-to-buffer (after bbbike-revert last act)
+  "Make sure bbbike buffers are up-to-date"
+  (if (and (eq major-mode 'bbbike-mode)
+	   (not (buffer-modified-p)))
+      (revert-buffer)))
+
 ;;; reverses the current region
 (defun bbbike-reverse-street ()
   (interactive)
