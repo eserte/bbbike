@@ -1637,7 +1637,7 @@ sort-$(city).coords.data:
 
 temp_blockings/bbbike-temp-blockings.yml: temp_blockings/bbbike-temp-blockings.pl
 	$(TEMP_BLOCKINGS_TASKS) pl_to_yml $> $@~
-	$(TEMP_BLOCKINGS_TASKS) cmp_pl_to_yml $> $@~
+	$(TEMP_BLOCKINGS_TASKS) cmp_pl_and_yml $> $@~
 	mv -f $@~ $@
 	@$(READABLE) $@
 
