@@ -3325,6 +3325,10 @@ unless ($skip_features{"sehenswuerdigkeiten"}) {
 			      save_user_dels($file);
 			  }
 		      });
+	$bdm->command(-label => M"In dieser Session aktive Sperrungen",
+		      -command => sub {
+			  show_blockings();
+		      });
 	$bdm->checkbutton
 	    (-label => M"Aktive Sperrungen zeichnen und beachten",
 	     -variable => \$show_active_temp_blockings,
@@ -10797,7 +10801,11 @@ sub activate_temp_blockings {
 		    my $from_date_readable = defined $o->{from}  ? POSIX::strftime($datefmt, localtime($o->{from})) : "...";
 		    my $to_date_readable   = defined $o->{until} ? POSIX::strftime($datefmt, localtime($o->{until})) : "...";
 		    if ($from_date_readable eq '...' && $to_date_readable eq '...') {
-			$date_spec = 'permanent';
+			if ($o->{permanent}) {
+			    $date_spec = 'permanent'; # XXX Msg
+			} else {
+			    $date_spec = 'Ende unbekannt'; # XXX Msg
+			}
 		    } else {
 			$date_spec = $from_date_readable . " - " . $to_date_readable;
 		    }
@@ -10940,9 +10948,12 @@ sub show_blockings {
     my $footer = $blockings_toplevel->Frame->pack(qw(-fill x -side bottom));
 
     if (!@temp_blockings_on_route) {
-	$blockings_toplevel->Label(-text => M"Keine Sperrungen auf der Route")->pack;
-#XXX but should still use activated temp blockings, so the user can click it away!
-    } else {
+	$blockings_toplevel->Label(-text => M"Keine Sperrungen auf der Route", -font => $font{bold})->pack;
+    }
+
+    my @temp_blockings_on_route_active = grep { $temp_blockings_on_route_active{$_} } keys %temp_blockings_on_route_active;
+
+    if (@temp_blockings_on_route || @temp_blockings_on_route_active) {
 	require Tk::HList;
 	my $hl;
 	$hl = $blockings_toplevel->Scrolled
@@ -10951,9 +10962,11 @@ sub show_blockings {
 	     -header => 1,
 	     -selectmode => 'single',
 	     -browsecmd => sub {
-		 my($index) = @_;
-		 return if !defined $index;
-		 my $name = $temp_blockings_on_route[$index];
+		 my($hl_index) = @_;
+		 return if !defined $hl_index;
+		 my $data_index = $hl->info('data', $hl_index);
+		 return if !defined $data_index;
+		 my $name = $temp_blockings_on_route[$data_index];
 		 my $coords = [
 			       map { [ transpose_all(@{ Strassen::to_koord($_->[0]->[Strassen::COORDS]) }) ] }
 			       @{ $temp_blockings_on_route{$name} }
@@ -10969,14 +10982,14 @@ sub show_blockings {
 	$hl->columnWidth(0, 80);
 
 	require Tk::ItemStyle;
-	my $bold_style = $hl->ItemStyle('text', -font => $font{bold});
+	my $header_style = $hl->ItemStyle('text', -foreground => 'blue3');
 	my $nopad_style = $hl->ItemStyle('window', -pady => 0, -padx => 0);
 
 	my %seen_temp_blockings_on_route;
 	my $path_i = 0;
 
 	my $add_line = sub {
-	    my($name) = @_;
+	    my($name, $index) = @_;
 	    $hl->add($path_i, -itemtype => 'window', -style => $nopad_style,
 		     -widget => $hl->Checkbutton(-variable => \$temp_blockings_on_route_active{$name},
 						 -onvalue => 1,
@@ -10984,18 +10997,8 @@ sub show_blockings {
 						 -background => $hl->cget('-background'),
 						 -highlightthickness => 0,
 						),
+		     (defined $index ? (-data => $index) : ()),
 		    );
-### XXX this code is currently not needed:
-### it is only shown what is active anyway...
-### (if it is necessary to activate the code again, then put
-### -style => $text_style
-### to the hlist items)
-# 	    my $info = $temp_blockings_on_route{$name}[0][1]{info}[0];
-# 	    my $is_current = ($info &&
-# 			      (!defined $info->{from} || $info->{from} <= time) &&
-# 			      (!defined $info->{until} || $info->{until} >= time)
-# 			     );
-# 	    my $text_style = $hl->ItemStyle('text', -font => $is_current ? $font{bold} : $font{normal});
 	    if (my($desc, $date_spec) = $name =~ m{^(.*)\s\[(.*?)\]$}) {
 		$hl->itemCreate($path_i, 1, -text => $desc);
 		$hl->itemCreate($path_i, 2, -text => $date_spec);
@@ -11006,19 +11009,19 @@ sub show_blockings {
 	    $path_i++;
 	};
 
-	for my $name (@temp_blockings_on_route) {
+	for my $i (0 .. $#temp_blockings_on_route) {
+	    my $name = $temp_blockings_on_route[$i];
 	    $seen_temp_blockings_on_route{$name}++;
-	    $add_line->($name);
+	    $add_line->($name, $i);
 	}
 
 	# Show the selected temp blockings not active in this search:
 	my $not_used_header_shown;
-	for my $name (keys %temp_blockings_on_route_active) {
+	for my $name (@temp_blockings_on_route_active) {
 	    next if $seen_temp_blockings_on_route{$name};
-	    next if !$temp_blockings_on_route_active{$name};
 	    if (!$not_used_header_shown) {
 		$hl->add($path_i);
-		$hl->itemCreate($path_i, 1, -text => "Bereits aktivierte Sperrungen", -style => $bold_style);
+		$hl->itemCreate($path_i, 1, -text => "Bereits aktivierte Sperrungen", -style => $header_style);
 		$path_i++;
 		$not_used_header_shown++;
 	    }
