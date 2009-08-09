@@ -51,6 +51,7 @@ REPLACESTRASSEN=	${PERL} ${MISCSRCDIR}/replacestrassen
 GREPSTRASSEN_UTF8=	${PERL_UTF8} ${MISCSRCDIR}/grepstrassen
 COMBINE_STREETS=	${PERL} ${MISCSRCDIR}/combine_streets.pl
 COMBINE_OSM=		${PERL} ${MISCSRCDIR}/combineosm
+TEMP_BLOCKINGS_TASKS=	${PERL} ${MISCSRCDIR}/temp_blockings_tasks
 
 COMMENTS_PARTIAL=	comments_cyclepath comments_danger comments_ferry comments_misc \
 			comments_mount comments_path comments_route \
@@ -1634,53 +1635,28 @@ sort-$(city).coords.data:
 ######################################################################
 # TEMPORARY BLOCKINGS LAYER
 
-TEMP_BLOCKINGS_PL_TO_YML=\
-	$(PERL) -MYAML -e '\
-	    $$YAML::UseBlock = 1;\
-	    do $$ARGV[0];\
-	    die 1 if not @temp_blocking;\
-	    YAML::DumpFile($$ARGV[1], \@temp_blocking);\
-	'
-
 temp_blockings/bbbike-temp-blockings.yml: temp_blockings/bbbike-temp-blockings.pl
-	$(TEMP_BLOCKINGS_PL_TO_YML) $> $@~
-	$(PERL) -MData::Compare -MData::Dumper -MYAML -e '\
-	    do $$ARGV[0];\
-	    $$y = YAML::LoadFile($$ARGV[1]);\
-	    die 2 if not @temp_blocking;\
-	    $$Data::Dumper::Sortkeys = 1;\
-	    if (not Compare(\@temp_blocking, $$y)) {\
-	        open(F1, "> /tmp/1"); print F1 Data::Dumper->new([\@temp_blocking],[])->Dump; \
-	        open(F2, "> /tmp/2"); print F2 Data::Dumper->new([$$y],[])->Dump; \
-		system("diff -u /tmp/1 /tmp/2 | less"); \
-	    }\
-	' $> $@~
+	$(TEMP_BLOCKINGS_TASKS) pl_to_yml $> $@~
+	$(TEMP_BLOCKINGS_TASKS) cmp_pl_to_yml $> $@~
 	mv -f $@~ $@
 	@$(READABLE) $@
 
 $(PERSISTENTTMPDIR)/bbbike-temp-blockings-optimized.yml: temp_blockings/bbbike-temp-blockings-optimized.pl
-	$(TEMP_BLOCKINGS_PL_TO_YML) $> $@~
+	$(TEMP_BLOCKINGS_TASKS) pl_to_yml $> $@~
 	mv -f $@~ $@
 	@$(READABLE) $@
 
-TEMP_BLOCKINGS_YML_TO_BBD=\
-	$(PERL) -MYAML -e '\
-	    $$x = YAML::LoadFile($$ARGV[0]);\
-	    for (@$$x) {\
-	        $$d = $$_->{data};\
-	        next if not $$d;\
-	        $$t = $$_->{text};\
-	        $$t =~ s/[\n\t]/ /g;\
-	        $$d =~ s/^(?!\#)/$$t /gm;\
-	        print $$d;\
-	    }\
-	    '
-
 $(PERSISTENTTMPDIR)/bbbike-temp-blockings.bbd: temp_blockings/bbbike-temp-blockings.yml
-	$(TEMP_BLOCKINGS_YML_TO_BBD) $> > $@
+	$(TEMP_BLOCKINGS_TASKS) yml_to_bbd $> > $@~
+	mv -f $@~ $@
 
 $(PERSISTENTTMPDIR)/bbbike-temp-blockings-optimized.bbd: $(PERSISTENTTMPDIR)/bbbike-temp-blockings-optimized.yml
-	$(TEMP_BLOCKINGS_YML_TO_BBD) $> > $@
+	$(TEMP_BLOCKINGS_TASKS) yml_to_nonpermanent_bbd $> > $@~
+	mv -f $@~ $@
+
+$(PERSISTENTTMPDIR)/bbbike-temp-blockings-permanent.bbd: $(PERSISTENTTMPDIR)/bbbike-temp-blockings-optimized.yml
+	$(TEMP_BLOCKINGS_TASKS) yml_to_permanent_bbd $> > $@~
+	mv -f $@~ $@
 
 ######################################################################
 # This will be removed someday if convert_orig_to_bbd is good enough

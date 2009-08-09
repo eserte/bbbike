@@ -1,0 +1,122 @@
+#!/usr/bin/perl -w
+# -*- perl -*-
+
+#
+# Author: Slaven Rezic
+#
+# Copyright (C) 2009 Slaven Rezic. All rights reserved.
+# This program is free software; you can redistribute it and/or
+# modify it under the same terms as Perl itself.
+#
+# Mail: slaven@rezic.de
+# WWW:  http://www.rezic.de/eserte/
+#
+
+use strict;
+use warnings;
+
+sub usage (;$) {
+    my $msg = shift;
+    warn $msg, "\n" if $msg;
+    die <<EOF;
+usage: $0 task
+EOF
+}
+
+my $task = shift
+    or usage("Task is missing");
+
+if ($task eq 'pl_to_yml') {
+    my $in_file = shift
+	or usage("in file is missing");
+    my $out_file = shift
+	or usage("out file is missing");
+    @ARGV and usage("extra args");
+
+    require YAML;
+
+    no warnings 'once';
+    local $YAML::UseBlock = 1;
+    use vars qw(@temp_blocking);
+    local @temp_blocking;
+    do $in_file;
+    die "Can't find \@temp_blocking array in $in_file" if not @temp_blocking;
+    YAML::DumpFile($out_file, \@temp_blocking);
+
+} elsif ($task eq 'cmp_pl_and_yml') {
+    my $file_pl = shift
+	or usage("pl file is missing");
+    my $file_yml = shift
+	or usage("yml file is missing");
+    @ARGV and usage("extra args");
+
+    require Data::Compare;
+    require Data::Dumper;
+    require File::Temp;
+    require YAML;
+
+    use vars qw(@temp_blocking);
+    local @temp_blocking;
+    do $file_pl;
+    die "Can't find \@temp_blocking array in $file_pl" if not @temp_blocking;
+    my $y = YAML::LoadFile($file_yml);
+
+    no warnings 'once';
+    local $Data::Dumper::Sortkeys = 1;
+    if (not Data::Compare::Compare(\@temp_blocking, $y)) {
+	my($tmp1fh,$tmp1file) = File::Temp::tempfile(SUFFIX => "_temp_blockings.pl") or die;
+	my($tmp2fh,$tmp2file) = File::Temp::tempfile(SUFFIX => "_temp_blockings.yml") or die;
+	print $tmp1fh Data::Dumper->new([\@temp_blocking],[])->Dump;
+	print $tmp2fh Data::Dumper->new([$$y],[])->Dump;
+	close $tmp1fh or die;
+	close $tmp2fh or die;
+	system("diff", "-u", $tmp1file, $tmp2file);
+	exit 1;
+    }
+
+} elsif ($task eq 'yml_to_bbd') {
+    my $infile = shift
+	or usage "yml file is missing";
+    @ARGV and usage "Extra args";
+
+    yml_to_bbd($infile);
+
+} elsif ($task eq 'yml_to_permanent_bbd') {
+    my $infile = shift
+	or usage "yml file is missing";
+    @ARGV and usage "Extra args";
+
+    yml_to_bbd($infile, filter => 'permanent');
+
+} elsif ($task eq 'yml_to_nonpermanent_bbd') {
+    my $infile = shift
+	or usage "yml file is missing";
+    @ARGV and usage "Extra args";
+
+    yml_to_bbd($infile, filter => 'nonpermanent');
+
+} else {
+    usage("Task $task is unknown");
+}
+
+sub yml_to_bbd {
+    my($infile, %args) = @_;
+    my $filter_permanent    = $args{'filter'} && $args{'filter'} eq 'permanent';
+    my $filter_nonpermanent = $args{'filter'} && $args{'filter'} eq 'nonpermanent';
+
+    require YAML;
+
+    my $x = YAML::LoadFile($infile);
+    for (@$x) {
+	my $d = $_->{data};
+	next if not $d;
+	next if $filter_permanent && !$_->{permanent};
+	next if $filter_nonpermanent && $_->{permanent};
+	my $t = $_->{text};
+	$t =~ s/[\n\t]/ /g;
+	$d =~ s/^(?!\#)/$t /gm;
+	print $d;
+    }
+}
+
+__END__
