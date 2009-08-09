@@ -333,12 +333,14 @@ sub get_html {
         var currentMode = getCurrentMode();
 	var dragObj = map.getDragObject();
         if (currentMode == "search") {
+	    map.disableDoubleClickZoom();
 	    if (searchStage == 0) {
 		dragObj.setDraggableCursor('url("$bbbikeroot/images/start_ptr.png"), url("$bbbikeroot/images/flag2_bl.png"), ' + dragCursor);
 	    } else {
 		dragObj.setDraggableCursor('url("$bbbikeroot/images/ziel_ptr.png"), url("$bbbikeroot/images/flag_ziel.png"), ' + dragCursor);
 	    }
         } else {
+	    map.enableDoubleClickZoom();
 	    if (currentMode == "addroute" || currentMode == "addwpt") {
 		dragObj.setDraggableCursor("default");
 	    } else {
@@ -684,6 +686,10 @@ sub get_html {
 	    searchStage = 1;
 	    currentModeChange();
 	} else if (searchStage == 1) { // set goal
+	    // XXX hack to avoid empty searches, this happens if the user does a double click in search/edit mode
+	    if (startPoint.x == point.x && startPoint.y == point.y) {
+		return;
+	    }
 	    setGoalMarker(point);
 	    searchStage = 0;
 	    currentModeChange();
@@ -822,7 +828,7 @@ sub get_html {
 
     if (GBrowserIsCompatible() ) {
         var map = new GMap(document.getElementById("map"));
-	map.disableDoubleClickZoom();
+	//map.disableDoubleClickZoom();
         map.addControl(new GLargeMapControl());
         map.addControl(new GMapTypeControl());
         map.addControl(new GOverviewMapControl ());
