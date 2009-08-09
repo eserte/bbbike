@@ -627,7 +627,7 @@ sub get_html {
     }
 
     function getSearchCoordParams(startPoint, goalPoint) {
-        return "startpolar=" + startPoint.x + "x" + startPoint.y + "&zielpolar=" + goalPoint.x + "x" + goalPoint.y;
+        return "startc_wgs84=" + startPoint.x + "," + startPoint.y + "&zielc_wgs84=" + goalPoint.x + "," + goalPoint.y;
     }
 
     function searchRoute(startPoint, goalPoint) {
