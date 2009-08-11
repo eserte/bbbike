@@ -1080,10 +1080,10 @@ userdel	2::inwork 7160,11225 6851,11346
        },
        undef,
        {
-         'source_id' => 'IM_013647',
-         'until' => 1250373599,
-         'text' => 'Colditzstr. (Tempelhof) in beiden Richtungen zwischen Ordensmeisterstr. und Volkmarstr. (Colditzbrücke) Baustelle, gesperrt (bis Mitte 08/2009)',
-         'from' => 1247724705,
+         'source_id' => 'LMS_1623809882',
+         'until' => 1251755999,
+         'text' => 'Colditzstr. (Colditzbrücke) in beiden Richtungen zwischen Ordensmeisterstraße und Volkmarstraße Baustelle, Straße vollständig gesperrt (bis Ende 08.2009)',
+         'from' => 1249972560,
          'id' => 1749,
          'data' => 'userdel	2::inwork 9875,5561 9847,5630
 ',
@@ -1186,7 +1186,7 @@ userdel	2::inwork 7160,11225 6851,11346
        {
          'source_id' => 'IM_013726',
          'until' => 1253051999,
-         'text' => 'Buntzelstr. (Treptow) Richtung Waltersdorfer Str. zwischen Dahmestr. und Waltersdorfer Str. Baustelle, Fahrtrichtung gesperrt ist ausgeschildert. (bis Mitte 09.2009)',
+         'text' => 'Buntzelstr. (Treptow) Richtung Waltersdorfer Str. zwischen Dahmestr. und Waltersdorfer Str. Baustelle, Fahrtrichtung gesperrt. (bis Mitte 09.2009)',
          'from' => 1248299511,
          'id' => 1764,
          'data' => 'userdel	q4::inwork; 21968,-15 22108,82 22145,208
@@ -1213,15 +1213,7 @@ userdel	2::inwork 7160,11225 6851,11346
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1249941600,
-         'text' => 'L 435 Mixdorf - Müllrose OD Müllrose, Mixdorfer Straße Kanal- u. Straßenbau Vollsperrung 23.07.2009-10.08.2009 ',
-         'from' => 1248213600,
-         'id' => 1769,
-         'data' => 'userdel	q4::inwork 79650,-16999 79549,-17498 79628,-17759
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1250892000,
          'text' => 'L 715 zw- Hohenalsdorf u. Borgisdorf u. Werbig Deckenerneuerung Vollsperrung 22.07.2009-21.08.2009 ',
@@ -1232,24 +1224,8 @@ userdel	2::inwork 7160,11225 6851,11346
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1250287200,
-         'text' => 'L 023 Berliner Straße OL Strausberg, zw. Elefantenpfuhl u. Altlandsb. Chaussee Straßenbauarbeiten Vollsperrung 28.07.2009-14.08.2009 ',
-         'from' => 1248645600,
-         'id' => 1772,
-         'data' => 'userdel	2::inwork 41698,17577 41193,17512
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'until' => 1249941600,
-         'text' => 'L 040 L 23, Storkow - Friedersdorf zw. Abzw. Rieplos und Abzw. Alt Stahnsdorf Deckenerneuerung Vollsperrung 27.07.2009-10.08.2009 ',
-         'from' => 1248559200,
-         'id' => 1773,
-         'data' => 'userdel	2::inwork 45753,-14154 45263,-14192 44580,-14101 44261,-14205
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        undef,
        undef,
        undef,
@@ -1331,22 +1307,14 @@ userdel	2::inwork 7160,11225 6851,11346
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1249941599,
-         'text' => 'Bellevuestraße und Seelenbinderstraße von Bahnhofstraße bis Bellevuestraße: Einbahnstraße in Richtung Fürstenwalder Damm vom 27.7. bis zum 10.8.2009',
-         'from' => 1248559200,
-         'id' => 1789,
-         'data' => 'userdel	q4::inwork; 22294,5777 22513,5747 22608,5732 22696,5728 22798,5731 22897,5740 23092,5762 23333,5710 23402,5483
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/presse/archiv/',
          'until' => 1250978399,
          'text' => 'Bellevuestraße und Seelenbinderstraße von Bahnhofstraße bis Bellevuestraße: Einbahnstraße in Richtung Bahnhofstr. vom 10.8. bis zum 22.8.2009',
          'from' => 1249768800,
          'id' => 1790,
-         'data' => 'userdel	q4::inwork; 23402,5483 23333,5710 23092,5762 22897,5740 22798,5731 22696,5728 22608,5732 22513,5747 22294,5777
+         'data' => 'userdel	q4::inwork; 22294,5777 22513,5747 22608,5732 22696,5728 22798,5731 22897,5740 23092,5762 23333,5710 23402,5483
 ',
          'type' => 'handicap'
        },
@@ -1415,15 +1383,7 @@ userdel	2::inwork 7160,11225 6851,11346
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1249941600,
-         'text' => 'L 029 Wandlitz - Zehlendorf zw. Stolzenhagen u. BÜ Zehlendorf Straßenausbesserungsarbeiten Vollsperrung 08.08.2009-10.08.2009 ',
-         'from' => 1249596000,
-         'id' => 1798,
-         'data' => 'userdel	2::inwork 9356,42175 9475,42182 9540,42187 9767,42206 10034,42225 10418,42259 11393,41903 11975,41509 12132,41423
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1253570400,
          'text' => 'L 030 Friedrichstr. OD Erkner, zw. Kreisverkehr u. Beuststr. 17. Heimatfest Vollsperrung 17.09.2009-21.09.2009 ',
@@ -1453,18 +1413,7 @@ userdel	2::inwork 7160,11225 6851,11346
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'LMS_2386386548',
-         'until' => 1249934400,
-         'text' => 'Sperrung der Straße der Pariser Kommune zwischen Weidenweg / Palisadenstr. und Karl-Marx-Allee, Sperrung der Koppenstr. zwischen Karl-Marx-Allee und Stichstr., sowie Sperrung der Lebuserstr. zwischen Neue Weberstr. und Karl-Marx-Allee Grund: Veranstaltung. Dauer: vom 05.08.09, 08:00 Uhr bis 10.08.09, 22:00 Uhr. (08:07) ',
-         'from' => 1249365600,
-         'id' => 1803,
-         'data' => 'userdel	q4::temp 12635,12629 12606,12471
-userdel	q4::temp 12360,12505 12364,12589
-userdel	q4::temp 12891,12549 12869,12425
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'LMS_2287412476',
          'until' => 1251280800,
@@ -1718,6 +1667,61 @@ Neuer Garten (am Portierhaus) - Weinmeisterstr.: Weg ist nur zwischen 6 Uhr bis 
 userdel	2::temp 8538,12245 8546,12279
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_013892',
+         'until' => 1251755999,
+         'text' => 'Sterndamm (Treptow) Rudow Richtung Oberschöneweide zwischen Stubenrauchstr. und Lindhorstweg Baustelle, Fahrtrichtung gesperrt (bis Ende 08.2009)',
+         'from' => 1249972926,
+         'id' => 1828,
+         'data' => 'userdel	q4::inwork; 17364,3565 17053,3971 17108,4049
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1258239600,
+         'text' => 'L 028 L 33, Wriezen - Neureetz OD Alt Märdewitz Grundhafter Straßenausbau Vollsperrung 10.08.2009-14.11.2009 ',
+         'from' => 1249768800,
+         'id' => 1829,
+         'data' => 'userdel	q4::inwork 61432,38883 61546,39041 61413,39860
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1251669600,
+         'text' => 'L 051 Hauptstr. OL Burg, zw. Krabatweg u. Bahnhofstr. Festumz. Heimat-u.Trachtenfest Vollsperrung 30.08.2009-30.08.2009 ',
+         'from' => 1251496800,
+         'id' => 1830,
+         'data' => 'userdel	q4::temp 62498,-63227 62522,-62647
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1251583200,
+         'text' => 'L 071 E.-Thälmann-Str. OL Schönewalde, zw. Str. d. Jugend u. Parkweg Pflaster- / Kanalarbeiten Vollsperrung 10.08.2009-29.08.2009 ',
+         'from' => 1249768800,
+         'id' => 1831,
+         'data' => 'userdel	q4::inwork -932,-66045 -575,-65978 60,-66035
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1251669600,
+         'text' => 'L 513 Bahnhofstr., Rinchaussee OL Burg, zw. Hauptstr. u. Jugendherbergsweg Festumz. Heimat-u.Trachtenfest Vollsperrung 30.08.2009-30.08.2009 ',
+         'from' => 1251496800,
+         'id' => 1832,
+         'data' => 'userdel	q4::temp 62010,-62330 62522,-62647
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1250460000,
+         'text' => 'L 435 Mixdorf - Müllrose OD Müllrose, Mixdorfer Straße Kanal- u. Straßenbau Vollsperrung 13.08.2009-16.08.2009 ',
+         'from' => 1250028000,
+         'id' => 1833,
+         'data' => 'userdel	q4::inwork 79650,-16999 79549,-17498 79628,-17759
+',
+         'type' => 'handicap'
        }
      
 );

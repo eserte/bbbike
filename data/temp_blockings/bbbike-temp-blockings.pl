@@ -10477,7 +10477,7 @@ EOF
      },
      { from  => 1195308071, # 2007-11-17 15:01
        until => 1195444800, # 2007-11-19 05:00
-       text  => 'Baumschulenstr. (Treptow) in beiden Richtungen Höhe S-Bahnbrücke Baustelle, Straße vollständig gesperrt ist ausgeschildert (bis 19.11. 05 Uhr)',
+       text  => 'Baumschulenstr. (Treptow) in beiden Richtungen Höhe S-Bahnbrücke Baustelle, Straße vollständig gesperrt (bis 19.11. 05 Uhr)',
        type  => 'gesperrt',
        source_id => 'IM_007201',
        data  => <<EOF,
@@ -14817,11 +14817,11 @@ EOF
 userdel	q4::inwork; 7532,4605 7544,4587 7601,4485
 EOF
      },
-     { from  => 1247724705, # 2009-07-16 08:11
-       until => 1250373599, # 2009-08-15 23:59
-       text  => 'Colditzstr. (Tempelhof) in beiden Richtungen zwischen Ordensmeisterstr. und Volkmarstr. (Colditzbrücke) Baustelle, gesperrt (bis Mitte 08/2009)',
+     { from  => 1249972560, # 2009-08-11 08:36
+       until => 1251755999, # 2009-08-31 23:59
+       text  => 'Colditzstr. (Colditzbrücke) in beiden Richtungen zwischen Ordensmeisterstraße und Volkmarstraße Baustelle, Straße vollständig gesperrt (bis Ende 08.2009)',
        type  => 'gesperrt',
-       source_id => 'IM_013647',
+       source_id => 'LMS_1623809882',
        data  => <<EOF,
 userdel	2::inwork 9875,5561 9847,5630
 EOF
@@ -14941,7 +14941,7 @@ EOF
      },
      { from  => 1248299511, # 2009-07-22 23:51
        until => 1253051999, # 2009-09-15 23:59
-       text  => 'Buntzelstr. (Treptow) Richtung Waltersdorfer Str. zwischen Dahmestr. und Waltersdorfer Str. Baustelle, Fahrtrichtung gesperrt ist ausgeschildert. (bis Mitte 09.2009)',
+       text  => 'Buntzelstr. (Treptow) Richtung Waltersdorfer Str. zwischen Dahmestr. und Waltersdorfer Str. Baustelle, Fahrtrichtung gesperrt. (bis Mitte 09.2009)',
        type  => 'handicap',
        source_id => 'IM_013726',
        data  => <<EOF,
@@ -15007,7 +15007,7 @@ userdel	2::temp 8538,12245 8600,12165 8595,12066
 EOF
      },
      { from  => 1248645600, # 2009-07-27 00:00
-       until => 1250287200, # 2009-08-15 00:00
+       until => 1249973521, # 2009-08-15 00:00 1250287200
        text  => 'L 023 Berliner Straße OL Strausberg, zw. Elefantenpfuhl u. Altlandsb. Chaussee Straßenbauarbeiten Vollsperrung 28.07.2009-14.08.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -15164,7 +15164,7 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-treptow-koepenick/presse/archiv/',
        data  => <<EOF,
-userdel	q4::inwork; 23402,5483 23333,5710 23092,5762 22897,5740 22798,5731 22696,5728 22608,5732 22513,5747 22294,5777
+userdel	q4::inwork; 22294,5777 22513,5747 22608,5732 22696,5728 22798,5731 22897,5740 23092,5762 23333,5710 23402,5483
 EOF
      },
      { from  => 1252879200, # 2009-09-14 00:00
@@ -15514,6 +15514,55 @@ EOF
        data  => <<EOF,
 userdel	2::temp 8600,12165 8538,12245 8610,12254 8731,12270
 userdel	2::temp 8538,12245 8546,12279
+EOF
+     },
+     { from  => 1249972926, # 2009-08-11 08:42
+       until => 1251755999, # 2009-08-31 23:59
+       text  => 'Sterndamm (Treptow) Rudow Richtung Oberschöneweide zwischen Stubenrauchstr. und Lindhorstweg Baustelle, Fahrtrichtung gesperrt (bis Ende 08.2009)',
+       type  => 'handicap',
+       source_id => 'IM_013892',
+       data  => <<EOF,
+userdel	q4::inwork; 17364,3565 17053,3971 17108,4049
+EOF
+     },
+     { from  => 1249768800, # 2009-08-09 00:00
+       until => 1258239600, # 2009-11-15 00:00
+       text  => 'L 028 L 33, Wriezen - Neureetz OD Alt Märdewitz Grundhafter Straßenausbau Vollsperrung 10.08.2009-14.11.2009 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 61432,38883 61546,39041 61413,39860
+EOF
+     },
+     { from  => 1251496800, # 2009-08-29 00:00
+       until => 1251669600, # 2009-08-31 00:00
+       text  => 'L 051 Hauptstr. OL Burg, zw. Krabatweg u. Bahnhofstr. Festumz. Heimat-u.Trachtenfest Vollsperrung 30.08.2009-30.08.2009 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::temp 62498,-63227 62522,-62647
+EOF
+     },
+     { from  => 1249768800, # 2009-08-09 00:00
+       until => 1251583200, # 2009-08-30 00:00
+       text  => 'L 071 E.-Thälmann-Str. OL Schönewalde, zw. Str. d. Jugend u. Parkweg Pflaster- / Kanalarbeiten Vollsperrung 10.08.2009-29.08.2009 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork -932,-66045 -575,-65978 60,-66035
+EOF
+     },
+     { from  => 1251496800, # 2009-08-29 00:00
+       until => 1251669600, # 2009-08-31 00:00
+       text  => 'L 513 Bahnhofstr., Rinchaussee OL Burg, zw. Hauptstr. u. Jugendherbergsweg Festumz. Heimat-u.Trachtenfest Vollsperrung 30.08.2009-30.08.2009 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::temp 62010,-62330 62522,-62647
+EOF
+     },
+     { from  => 1250028000, # 2009-08-12 00:00
+       until => 1250460000, # 2009-08-17 00:00
+       text  => 'L 435 Mixdorf - Müllrose OD Müllrose, Mixdorfer Straße Kanal- u. Straßenbau Vollsperrung 13.08.2009-16.08.2009 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 79650,-16999 79549,-17498 79628,-17759
 EOF
      },
     );
