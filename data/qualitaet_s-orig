@@ -299,7 +299,7 @@ Zepernicker Str: Kopfsteinpflaster, OK (?)	Q1 17218,26121 17013,25874
 Alt-Buch: Kopfsteinpflaster, OK	Q1 17013,25874 16850,25821 16586,25675 16414,25575
 Müggelseedamm: Kopfsteinpflaster, OK	Q1 26620,4936 26964,5039 27215,5200
 Müggelseedamm: Kopfsteinpflaster	Q2 28195,5141 27427,5188 27215,5200
-Dahlwitzer Landstr.: Asphalt	Q0 25585,6050 25579,5980
+Dahlwitzer Landstr.: Asphalt	Q0 25585,6050 25579,5958
 Auguste-Viktoria-Str.: Kopfsteinpflaster	Q2 2690,8814 2680,8608 2678,8571 2668,8372
 Hüttenweg: Kopfsteinpflaster	Q1 1585,5136 1964,5070
 Wuhlheide: fester Waldweg, bei Trockenheit etwas sandig, Wurzeln	Q2 20887,7267 20858,7143 21576,6644
@@ -765,7 +765,8 @@ Zum Langen See: Kopfsteinpflaster	Q2 23325,2070 23390,1785 23409,1699 23464,1449
 Mügelbergallee: Kopfsteinpflaster	Q2 23185,1649 23278,1668
 Müggelbergplatz: Kopfsteinpflaster	Q2 23293,1697 23278,1668 23303,1650 23321,1678 23293,1697
 Mügelbergallee: Kopfsteinpflaster	Q2 23321,1678 23409,1699 23669,1759
-(Müggelbergallee - Zum Müggelturm): Waldweg, meist OK	Q1- 23669,1759 24528,1949 24628,2062
+(Müggelbergallee - Zum Müggelturm): Waldweg, meist OK	Q1- 23669,1759 24265,1891 24889,1743
+(Müggelbergallee - Müggelheimer Damm): Waldweg, meist OK	Q1- 24265,1891 24528,1949 24628,2062
 Str. 790/791: holpriger Fahrweg	Q2 30546,-3072 30588,-3000 30599,-2827 30640,-2803 30703,-2841 30727,-2911 30710,-3037 30588,-3000
 Wernsdorfer Str.: teilweise Kopfsteinpflaster	Q2 30533,-3124 30537,-3140 30439,-3371 30390,-3443
 Wassersportallee: schlechtes Kopfsteinpflaster	Q3 22655,1450 22756,1524
@@ -2575,6 +2576,11 @@ Zum Schmetterlingshorst: Asphalt	Q0 24671,989 24889,1743
 (Kuhwall): Asphalt	Q0 24990,2905 25156,3002 25259,3116
 Annenallee: Asphalt	Q0 22179,5539 22095,5585 22009,5593
 Annenallee: schlechtes Kopfsteinpflaster	Q3 22009,5593 21901,5728
+Heinrich-Schlusnus-Str.: Asphalt	Q0 15026,6391 15056,6431 15054,6526 15054,6589 15070,6621 15146,6690
+Joseph-Schmidt-Str.: Asphalt	Q0 15260,6310 15255,6531 15275,6554
+#: note: zumindest an der Oberspreestr.
+Johanna-Tesch-Str.: Beton	Q0- 19715,5185 19743,5271 19756,5313 19928,5365 20030,5334 19998,5226 19930,5247 19919,5214 19743,5271
+Müggelpark: Kleinpflastersteine	Q1 25658,4619 25692,4727
 ######################### User Contributions #################################
 #: by: Dominik Seelow vvv
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
@@ -4162,6 +4168,7 @@ Glambecker Ring: guter Asphalt	Q0 21824,16506 21885,16494 22053,16462 22111,1645
 Borgmannstr.: guter Asphalt	Q0 22513,5747 22531,5871 22539,5956 22544,6037
 #: by: Thomas Ludwig: vvv
 Springbornstr.: guter Asphalt	Q0 17142,3393 16934,3571 16615,3734 16742,4098
+#: confirmed_by: srt (zumindest an der Südostallee)
 Friedrich-List-Str.: Asphalt	Q0 16987,5838 17137,5943 17384,5631 17331,5571
 #: by: ^^^
 #: by: Dirk (gesch):
@@ -5004,7 +5011,9 @@ Bärenlauchstr.: Asphalt	Q0 19737,5176 19744,5063 19755,4962 19760,4907 19760,487
 #: corrected_by: srt (einige Schlaglöcher -> Beton/Kopfsteinpflaster)
 Rudower Str. (Niederschöneweide): Mitte der Fahrbahn Kopfsteinpflaster, Seiten mit löchrigem Beton	Q1- 18695,5076 18641,5260 18659,5330
 #: XXX: unklarer Eintrag von anonymous: mäßiges Kopfsteinpflaster, Bordsteinkanten/Schrittgeschwindigkeit???
-Rudower Str. (Niederschöneweide): einige Schlaglöcher	Q1- 18659,5330 18680,5413 18695,5453
+Rudower Str. (Niederschöneweide): einige Schlaglöcher	Q1- 18659,5330 18680,5413
+#: corrected_by: srt (einige Schlaglöcher -> Asphalt)
+Rudower Str. (Niederschöneweide): Asphalt	Q0 18680,5413 18695,5453
 #: by: ^^^
 #: by: Thomas Köhler and Jesse:
 Paul-Schwenk-Str.: Beton	Q0 19613,14728 19579,14783 19588,14847 19646,14917 19856,14926 19872,14954 19902,14945

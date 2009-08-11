@@ -1474,7 +1474,7 @@ EOF
        text  => 'Fürstenwalder Damm zwischen Bölschestr. und Stillerzeile Baustelle, Straße stadteinwärts gesperrt (bis Ende 07.2005)',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q3; 25579,5980 25121,5799
+userdel	q3; 25579,5958 25121,5799
 EOF
      },
      { from  => 1108681200, # 2005-02-18 00:00
@@ -1575,7 +1575,7 @@ EOF
        text  => 'Dahlwitzer Landstr. - Bölschestr. (Köpenick) in beiden Richtungen an der Bahnbrücke Bölschestr. Baustelle, Straße vollständig gesperrt (Brücken- und Straßenarbeiten) (bis 26.09.2005)',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 25585,6050 25579,5980
+userdel	q4 25585,6050 25579,5958
 EOF
      },
      { from  => 1110668400, # 2005-03-13 00:00
@@ -3838,7 +3838,7 @@ EOF
        data  => <<EOF,
 userdel	q4 25012,5754 24700,5633 23950,5342
 userdel	q4 25012,5754 25018,5756 25121,5799
-userdel	q4 25579,5980 25121,5799
+userdel	q4 25579,5958 25121,5799
 EOF
      },
      { from  => 1146520800, # 2006-05-02 00:00
@@ -8112,7 +8112,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005473',
        data  => <<EOF,
-userdel	2::temp 25519,4830 25524,5011 25539,5237 25544,5326 25546,5359 25548,5398 25553,5486 25567,5749 25571,5829 25579,5980
+userdel	2::temp 25519,4830 25524,5011 25539,5237 25544,5326 25546,5359 25548,5398 25553,5486 25567,5749 25571,5829 25579,5958
 EOF
      },
      { from  => 1178874938, # 2007-05-11 11:15
@@ -10718,7 +10718,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_007457',
        data  => <<EOF,
-userdel	1::inwork 25579,5980 25121,5799
+userdel	1::inwork 25579,5958 25121,5799
 EOF
      },
      { from  => 1200178800, # 2008-01-13 00:00

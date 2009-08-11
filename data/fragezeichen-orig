@@ -39,6 +39,7 @@ Saargemünder Straße	? 2027,4792 1884,4811 1747,4829 1479,4853
 Reichsstr.	? 1401,11428 1403,11428 1308,11506 1220,11583 1215,11587 1133,11664 1033,11754 881,11893 818,11954
 #: by: MoPo 2009-08-01, soll 2009 realisiert werden vvv
 Perleberger Str.	? 6230,13596 6366,13716 6493,13822 6649,13947 6730,14021 6807,14093 6992,14251 7123,14367 7180,14419
+#: last_checked: 2009-08-11 (by rjoop)
 Tiergartenstr.	? 8172,11679 8021,11636 7816,11571 7717,11540 7600,11513 7504,11512 7435,11514 7356,11517 7293,11519 6825,11486
 Grunewaldstr.	? 4861,5581 4671,5697 4520,5793 4419,5842 4291,5895 4172,5918 4006,5876 3931,5825 3850,5801 3707,5758
 Falkenberger Chaussee im Bereich Bhf. Hohenschönhausen	? 17400,17790 17703,17990 17843,18078
@@ -59,6 +60,7 @@ Kniprodestr./Am Friedrichshain	? 12912,14084 12792,13957 12703,13859 12658,13809
 Neuendorfer Str.	? -2883,15571 -2856,15687 -2869,15782 -2886,15867 -2915,15994 -3040,16246
 Goerzallee	? 4164,2717 4065,2576 3983,2454 3805,2196 3700,2045 3640,1959 3584,1877 3425,1647 3199,1455 3140,1411 2843,1281 2663,1199 2527,1136 2515,1131 2404,1078 2372,1043 2333,1003 2147,811 1946,604 1940,587 1834,339 1765,294
 Lankwitzer Str.	? 8955,3521 8599,3441 8478,3414 8347,3382 8270,3343 8173,3299 8080,3260 8039,3242
+#: last_checked: 2009-08-11
 Schnellerstr.	? 18245,5551 18370,5511 18680,5413 18984,5318 19031,5316 19328,5304 19405,5284
 #: next_check ^^^
 #: by: ^^^
@@ -286,7 +288,7 @@ Kleineweg: ist hier leicht versetzt	? 9130,7804 9131,7652 9120,7600
 Reinickendorfer Route 5, wo geht es weiter?	? 6558,18947 6442,18839
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20080728.1510.105902.html
 #: by: MoPo 2009-08-01, Radweg auf der südlichen Seite soll 2009 realisiert werden
-Oberspreestr.: südliche Nebenfahrbahn hat einen mittigen Asphaltbelag, Europaradweg wird hier entlanggeführt, genauer anschauen	? 19534,5242 19715,5185 19737,5176 20689,4862
+Oberspreestr.: südliche Nebenfahrbahn hat einen mittigen Asphaltbelag, Europaradweg wird hier entlanggeführt, genauer anschauen	? 19534,5242 19715,5185 19737,5176 19965,5101
 #: by: http://www.berlin.de/ba-spandau/presse/archiv/20071015.1025.86938.html
 #: by: http://www.berlin.de/ba-spandau/presse/archiv/20081022.1525.112277.html
 #: XXX_outdoor:
@@ -1841,7 +1843,6 @@ Moosstr., Wohngebiet: Qualität? Einbahnstraße Richtung Süden, auch für Radfahrer
 Moosstr., Wohngebiet: Qualität? Einbahnstraße Richtung Norden, auch für Radfahrer?	? 19245,4931 19241,4958 19236,5025 19233,5076 19210,5150
 Moosstr., Wohngebiet: Qualität?	? 19294,5033 19236,5025
 Moosstr., Wohngebiet: Qualität?	? 19306,4969 19241,4958
-Johanna-Tesch-Str.: Qualität?	? 19715,5185 19743,5271 19756,5313 19928,5365 20030,5334 19998,5226 19930,5247 19919,5214 19743,5271
 Allmersweg: Qualität?	? 17855,5236 17789,5189
 Greifstr.: Qualität?	? 17906,5170 17854,5131 17780,5086
 Am Grünen Anger: Qualität?	? 17854,5131 17959,4955 18031,4831
@@ -2047,8 +2048,6 @@ Gurlittstr.: Qualität?	? 7213,5062 6949,5096
 #: XXX: osm meint cycleway, foot=yes, keine Überquerungsmöglichkeit
 Kottesteig: Qualität? Für Autofahrer gesperrt? Kann der Munsterdamm in Höhe Kottesteig überquert werden?	? 6868,5262 6806,5230 6767,5233
 Doldenweg: Qualität? Für Autofahrer gesperrt?	? 7424,4821 7487,4802
-Heinrich-Schlusnus-Str.: Qualität?	? 15026,6391 15056,6431 15054,6526 15054,6589 15070,6621 15146,6690
-Joseph-Schmidt-Str.: Qualität?	? 15260,6310 15255,6531 15275,6554
 Drosselbartstr.: Qualität?	? 15188,6908 15024,7083 14951,7163
 Rübezahlstr.: Wie ist die Qualität der Straße? Gibt es hier eine Einbahnstraßenregelung, und wenn ja, gilt sie für die gesamte Straße oder nur einen Teilabschnitt und gilt sie auch für Radfahrer?	? 15024,7083 15058,7115 15115,7128 15136,7106 15222,7162
 Wegastr.: Qualität? Einbahnstraße, auch für Radfahrer?	? 15222,7162 15175,7221
