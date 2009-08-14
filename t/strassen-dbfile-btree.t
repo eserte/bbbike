@@ -27,7 +27,7 @@ BEGIN {
 
 BEGIN {
     if (!eval q{
-	require Object::Iterate
+	require Object::Iterate;
 	1;
     }) {
 	print "1..0 # skip: no Object::Iterate module, needed for convert() method\n";
