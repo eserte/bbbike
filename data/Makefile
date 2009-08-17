@@ -1239,7 +1239,6 @@ GESPERRT_CATRX='^(0:\d+(:-?\d+)?|1|1s(:q\d)?|2|3|3nocross|BNP:\d+(:-?\d+(:traile
 	    $(SORT_GERMAN_LOCALE) -u > /tmp/$(i)bahnhof1
 	grep -i '^$(i)-Bhf' Berlin.coords.data |\
 	    egrep -v 'S-Bhf (Fürstenbrunn)' |\
-	    egrep -v 'U-Bhf (Hauptbahnhof|Unter den Linden|Bundestag)' |\
 	    $(SED) -e 's/ *(.*)//' -e 's/S-Bhf //' -e 's/U-Bhf //' -e 's/|.*//' |\
 	    $(SORT_GERMAN_LOCALE) -u > /tmp/$(i)bahnhof2
 	diff /tmp/$(i)bahnhof1 /tmp/$(i)bahnhof2

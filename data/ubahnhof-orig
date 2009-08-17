@@ -131,11 +131,13 @@ Hellersdorf	UB 24067,14820
 Louis-Lewin-Str.	UB 24946,15113
 #: attrs bf
 Hönow	UB 25965,15030
-# U5 in Bau/geplant
-Unter den Linden	UBau 8852,12293
-Bundestag	UBau 8272,12685
+#: attrs bg
+Brandenburger Tor	UA 8852,12293
+#: attrs bg
+Bundestag	UA 8272,12685
 #: alias: Lehrter Bahnhof
-Hauptbahnhof	UBau 8030,13294
+#: attrs bg
+Hauptbahnhof	UA 8030,13294
 # U6
 #: attrs bg
 Alt-Mariendorf	UB 9472,3641
