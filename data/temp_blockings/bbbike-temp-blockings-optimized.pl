@@ -1713,15 +1713,6 @@ userdel	2::temp 8538,12245 8546,12279
          'data' => 'userdel	q4::temp 62010,-62330 62522,-62647
 ',
          'type' => 'handicap'
-       },
-       {
-         'until' => 1250460000,
-         'text' => 'L 435 Mixdorf - Müllrose OD Müllrose, Mixdorfer Straße Kanal- u. Straßenbau Vollsperrung 13.08.2009-16.08.2009 ',
-         'from' => 1250028000,
-         'id' => 1833,
-         'data' => 'userdel	q4::inwork 79650,-16999 79549,-17498 79628,-17759
-',
-         'type' => 'handicap'
        }
      
 );
