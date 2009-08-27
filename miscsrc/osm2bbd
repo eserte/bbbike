@@ -904,6 +904,12 @@ for my $osm_file (@osm_files) {
 		    if      ($surface eq 'paved') {
 			$quality_cat = 'Q0';
 			@quality_name = 'befestigt (betoniert, asphaltiert oder wassergebunden)';
+		    } elsif ($surface eq 'asphalt') {
+			$quality_cat = 'Q0';
+			@quality_name = 'Asphalt';
+		    } elsif ($surface eq 'concrete') {
+			$quality_cat = 'Q0';
+			@quality_name = 'Beton';
 		    } elsif ($surface eq 'cobblestone') {
 			$quality_cat = 'Q2';
 			@quality_name = 'Kopfsteinpflaster';
@@ -913,6 +919,12 @@ for my $osm_file (@osm_files) {
 		    } elsif ($surface eq 'sand') {
 			$quality_cat = 'Q3';
 			@quality_name = 'sandig';
+		    } elsif ($surface eq 'paving_stones') {
+			$quality_cat = 'Q1';
+			@quality_name = 'Verbundsteinpflaster';
+		    } elsif ($surface eq 'compacted') {
+			$quality_cat = 'Q1';
+			@quality_name = 'wassergebundene Decke';
 		    } elsif ($surface eq 'grass') {
 			$quality_cat = 'Q3';
 			@quality_name = 'Gras';
