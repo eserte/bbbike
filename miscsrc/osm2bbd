@@ -192,6 +192,8 @@ my %place_to_population;
 		  ],
      'zebrastreifen' => ['category_image.Zs: ../misc/verkehrszeichen/Zeichen_350.svg:24x24=1:12000,xxx'],
      'grenzuebergaenge' => ['category_image.GU: grenzuebergang_16'],
+     'ortsschilder' => ['category_image.OS: ../misc/verkehrszeichen/Zeichen_310_leer.svg:24x24=1:12000,xxx',
+			'title: Ortsschilder'],
     );
 
 # see http://www.mail-archive.com/talk@openstreetmap.org/msg06041.html
@@ -626,7 +628,10 @@ for my $osm_file (@osm_files) {
 			 ((exists $tag{crossing} && ($tag{crossing} eq 'uncontrolled' || $tag{crossing} eq 'zebra')) ||
 			  (exists $tag{crossing_ref} && $tag{crossing_ref} eq 'zebra'))
 			) {
-		    push @or, ["zebrastreifen", "Zs"];
+		    push @or, ['zebrastreifen', 'Zs'];
+		} elsif ($highway_cat eq 'crossing' &&
+			 exists $tag{'crossing'} && $tag{'crossing'} eq 'traffic_signals') {
+		    push @or, ['ampeln', 'F'];
 		} else {
 		    $unhandled{"node-highway=$highway_cat"}++;
 		}
@@ -913,6 +918,9 @@ for my $osm_file (@osm_files) {
 		    } elsif ($surface eq 'cobblestone') {
 			$quality_cat = 'Q2';
 			@quality_name = 'Kopfsteinpflaster';
+		    } elsif ($surface eq 'gravel') {
+			$quality_cat = 'Q1-';
+			@quality_name = 'Schotter'; # fein oder grob?
 		    } elsif ($surface eq 'unpaved') {
 			$quality_cat = 'Q2';
 			@quality_name = 'unbefestigt';
@@ -1028,9 +1036,16 @@ for my $osm_file (@osm_files) {
 		    }
 		} elsif ($highway_cat eq 'path') {
 		    push @or, ["strassen", "NN".$addcat];
-		    if (!defined $quality_cat) {
-			$quality_cat = "Q3";
-			$quality_name = $lang eq 'en' ? $highway_cat : "Pfad";
+		    if (!$tag{bicycle} || $tag{bicycle} eq 'no') {
+			if (!defined $quality_cat) {
+			    $quality_cat = "Q3";
+			    $quality_name = $lang eq 'en' ? $highway_cat : "Pfad";
+			}
+		    } else {
+			if ($tag{bicycle} && $tag{bicycle} eq 'dismount') {
+			    push @or, ["handicap_s", "q4", name => ($name ? "$name: " : "") . ($lang eq 'en' ? 'Cyclists dismount' : 'Radfahrer absteigen')];
+			}
+			push @or, ["radwege_exact", "RW1"];
 		    }
 		} elsif ($highway_cat eq 'footway') {
 		    push @or, ["strassen", "NN".$addcat];
@@ -1576,15 +1591,17 @@ EOF
 	my $namecat = "$name\t$cat";
 	my $coord_string = join(" ", @$coords);
 	if ($splitlonglines && length($namecat) + length($coord_string) + 2 >= MAXLINELENGTH) {
-	    warn_once("Long line detected, splitting...\n");
+	    warn_once("Long line detected in $filename, splitting...\n");
 	    my $currlen = length($namecat);
 	    print $ofh $namecat;
+	    my $lastc;
 	    for my $c (@$coords) {
 		if ($currlen + 1 + length($c) + 1 > MAXLINELENGTH) {
-		    print $ofh "\n$namecat";
+		    print $ofh "\n$namecat $lastc";
 		    $currlen = length($namecat);
 		}
 		print $ofh " ", $c;
+		$lastc = $c;
 		$currlen += 1 + length($c);
 	    }
 	    print $ofh "\n";
