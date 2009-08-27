@@ -408,6 +408,10 @@ sub plot_osm_files {
 		$item_args{'-dash'} = '. ';
 	    } elsif (exists $tag{'tunnel'}) {
 		$item_args{'-dash'} = [10,2];
+	    } elsif (exists $tag{'highway'} && $tag{'highway'} eq 'path') {
+		if (!exists $tag{'bicycle'} || $tag{'bicycle'} eq 'no') {
+		    $item_args{'-dash'} = '--';
+		} # else: no dash, as it is ridable for cyclists
 	    } elsif (exists $tag{'highway'} && $tag{'highway'} =~ m{^(footway|steps|pedestrian|track|path|service|bridleway)$}) {
 		$item_args{'-dash'} = '--'; # may be interesting, but distinguish it from "official" streets
 	    } elsif (exists $tag{'highway'} && $tag{'highway'} =~ m{^(planned|construction)$}) {
