@@ -182,6 +182,22 @@ dalmatia-test-osm2bbd-postprocess2:
 	${MISCSRCDIR}/osm2bbd-postprocess /tmp/data_dalmatia -dataset-title Dalmatia
 
 ######################################################################
+# Testing for saechsische schweiz
+saechsische-schweiz-test:	saechsische-schweiz-test-osm2bbd \
+		saechsische-schweiz-test-osm2bbd-postprocess
+
+download-tiled-saechsische-schweiz:
+	cd download/osm && mkdir -p saechsische-schweiz && cd saechsische-schweiz && \
+	    ${MISCSRCDIR}/downloadosm -step 0.1 13.8 51 14.5 50.7 -o .
+
+saechsische-schweiz-test-osm2bbd:
+	${MISCSRCDIR}/osm2bbd -map bbbike -country de -o /tmp/data_saechsische-schweiz download/osm/saechsische-schweiz -f \
+	    -experiment polar_coord_hack
+
+saechsische-schweiz-test-osm2bbd-postprocess:
+	${MISCSRCDIR}/osm2bbd-postprocess /tmp/data_saechsische-schweiz -dataset-title "Sächsische Schweiz"
+
+######################################################################
 # Testing for berlin
 berlin-test:	berlin-test-osm2bbd \
 		berlin-test-osm2bbd-postprocess2
