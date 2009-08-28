@@ -961,15 +961,7 @@ userdel	2::inwork 7160,11225 6851,11346
        undef,
        undef,
        undef,
-       {
-         'until' => 1251324000,
-         'text' => 'L 086 Bahnhofstraße OD Groß Kreutz, Bahnübergang Gleisbauarbeiten Vollsperrung 25.08.2009-26.08.2009 ',
-         'from' => 1251064800,
-         'id' => 1721,
-         'data' => 'userdel	2::inwork -31993,-726 -32143,-211 -32153,-176
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1117,15 +1109,7 @@ userdel	2::inwork 7160,11225 6851,11346
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1250546400,
-         'text' => 'B 167 Marienwerderstr. OD Finowfurt, zw. Anschlußstelle A 11 u. Lehmschulzenstr. Straßemerneuerung Vollsperrung 16.07.2009-17.08.2009 ',
-         'from' => 1247608800,
-         'id' => 1754,
-         'data' => 'userdel	q4::inwork 28575,49756 27626,49928
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1251583200,
          'text' => 'B 167 Marienwerderstr. OD Finowfurt, zw. Lehmschulzenstr. u. Tankstelle Straßemerneuerung Vollsperrung 18.08.2009-29.08.2009 ',
@@ -1137,15 +1121,7 @@ userdel	2::inwork 7160,11225 6851,11346
        },
        undef,
        undef,
-       {
-         'until' => 1250892000,
-         'text' => 'B 320 Guben - Lieberose zw. Pinnow und Staakow Deckenerneuerung Vollsperrung 21.07.2009-21.08.2009 ',
-         'from' => 1248040800,
-         'id' => 1758,
-         'data' => 'userdel	2::inwork 87008,-46244 80025,-45601 79205,-45332
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'until' => 1259622000,
@@ -1214,15 +1190,7 @@ userdel	2::inwork 7160,11225 6851,11346
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1250892000,
-         'text' => 'L 715 zw- Hohenalsdorf u. Borgisdorf u. Werbig Deckenerneuerung Vollsperrung 22.07.2009-21.08.2009 ',
-         'from' => 1248127200,
-         'id' => 1770,
-         'data' => 'userdel	2::inwork -2997,-52781 -6384,-53390
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1251,15 +1219,7 @@ userdel	2::inwork 7160,11225 6851,11346
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1250546400,
-         'text' => 'B 246 zw. Schönhagen und Löwendorf Deckenerneuerung Vollsperrung 10.08.2009-17.08.2009 ',
-         'from' => 1249768800,
-         'id' => 1782,
-         'data' => 'userdel	2::inwork -3076,-20676 -4099,-20574
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1254348000,
          'text' => 'K 6722 Bornow - Groß Rietz zw. Birkholz und Groß Rietz Straßenneubau Vollsperrung 29.07.2009-30.09.2009 ',
@@ -1308,16 +1268,7 @@ userdel	2::inwork 7160,11225 6851,11346
          'type' => 'handicap'
        },
        undef,
-       {
-         'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/presse/archiv/',
-         'until' => 1250978399,
-         'text' => 'Bellevuestraße und Seelenbinderstraße von Bahnhofstraße bis Bellevuestraße: Einbahnstraße in Richtung Bahnhofstr. vom 10.8. bis zum 22.8.2009',
-         'from' => 1249768800,
-         'id' => 1790,
-         'data' => 'userdel	q4::inwork; 22294,5777 22513,5747 22608,5732 22696,5728 22798,5731 22897,5740 23092,5762 23333,5710 23402,5483
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/presse/archiv/',
          'until' => 1254347999,
@@ -1346,15 +1297,7 @@ userdel	2::inwork 7160,11225 6851,11346
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1251064800,
-         'text' => 'Ab 03.08.2009 muss die Fr.-Ebert-Straße in Höhe Stadthaus wegen Gleisbauarbeiten und Leitungsarbeiten für den Verkehr gesperrt werden. Die Arbeiten dauern vorausichtlich bis 24.08.2009.',
-         'from' => 1249164000,
-         'id' => 1794,
-         'data' => 'userdel	q4::inwork -12872,-565 -12865,-425
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1262214000,
          'text' => 'Aufgrund der Arbeiten zum Straßenneubau und der Verlegung von Schmutz- und Regenwasserleitungen kommt es ab dem 29.06.2009 zu Vollsperrungen der Otto-Nagel-Straße. Begonnen wird an der Kreuzung Berliner Straße. Die gesamte Maßnahme wir voraussichtlich zum Ende des 4. Quartals abgeschlossen werden. ',
@@ -1374,15 +1317,7 @@ userdel	2::inwork 7160,11225 6851,11346
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1250546400,
-         'text' => 'B 246 Trebbin - Beelitz OL Schönhagen, zw. OE aus Ri. Trebbin u. Abzw. Blankensee Deckensanierung Vollsperrung 10.08.2009-17.08.2009 ',
-         'from' => 1249768800,
-         'id' => 1797,
-         'data' => 'userdel	2::inwork -6477,-21754 -6207,-21822 -5205,-21433 -4354,-20661
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'until' => 1253570400,
@@ -1414,27 +1349,9 @@ userdel	2::inwork 7160,11225 6851,11346
          'type' => 'handicap'
        },
        undef,
-       {
-         'source_id' => 'LMS_2287412476',
-         'until' => 1251280800,
-         'text' => 'Straße des 17. Juni In beiden Richtungen zwischen Brandenburger Tor und Yitzhak-Rabin-Str. gesperrt (bis 26.08.09, 12 Uhr)',
-         'from' => 1249676503,
-         'id' => 1804,
-         'data' => 'userdel	2::temp 8089,12190 8214,12205 8538,12245
-',
-         'type' => 'gesperrt'
-       },
        undef,
-       {
-         'source_id' => 'MoPo 8. August 2009',
-         'until' => 1251151200,
-         'text' => 'Ilsestr., Bauarbeiten 10.8.2009 - 24.8.2009',
-         'from' => 1249768800,
-         'id' => 1806,
-         'data' => 'userdel	q4::inwork 12645,7087 12632,7137 12613,7236
-',
-         'type' => 'handicap'
-       },
+       undef,
+       undef,
        {
          'source_id' => 'MoPo, 8. August 2009',
          'until' => 1251756000,
@@ -1658,16 +1575,7 @@ Neuer Garten (am Portierhaus) - Weinmeisterstr.: Weg ist nur zwischen 6 Uhr bis 
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1251280800,
-         'text' => 'Brandenburger Tor: mögliche Sperrungen zur Leichtathletik-WM (bis 26.08.09)',
-         'from' => 1249842805,
-         'id' => 1827,
-         'data' => 'userdel	2::temp 8600,12165 8538,12245 8610,12254 8731,12270
-userdel	2::temp 8538,12245 8546,12279
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_013892',
          'until' => 1251755999,

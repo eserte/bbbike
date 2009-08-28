@@ -50,7 +50,7 @@ Friedrichstr., Erkner: Radweg auf Gehweg	RW 34142,2742 34175,2637 34250,2546 344
 Erkner - Tasdorf: (schlechter) Radweg	RW 34271,3184 34486,4276 34574,4552
 Zechlinerhütte - Rheinsberg: Radweg mit gutem Asphalt	RW -27053,82717 -26940,82461 -26806,82333 -26541,82132 -26511,81861 -26435,81684 -26499,80944 -26009,79227 -25923,78844 -25439,77907 -25459,77650 -25671,77176 -25760,76840 -25801,76494 -25728,76368 -25728,76256
 Hennickendorf - Ahrensdorf: breiter asphaltierter Radweg	RW -9594,-27471 -9298,-27089 -9016,-26788 -8893,-26326 -8511,-25814 -8128,-25535 -7894,-25017 -7586,-24667 -7310,-24388 -6700,-24539 -5997,-24621 -5200,-24423
-Bestensee: Radweg Richtung Norden	RW; 26220,-17796 26276,-17489
+Bestensee: Radweg Richtung Norden	RW; 26204,-17794 26276,-17489
 B198, Prenzlau: Radweg	RW 41193,100575 40691,100865 40507,100965 39962,101085 39867,101104
 B198, Prenzlau: gemeinsamer Rad- und Gehweg, mäßige Gehwegplatten	RW 39867,101104 39757,101217 39682,101543
 B109, Prenzlau: benutzungspflichtige Radwege, Verbundsteinpflaster, "Berg-und-Tal"	RW 39022,101334 38848,101208 38653,101065 37577,100778 37212,100549 37068,100245
@@ -249,8 +249,9 @@ Swinemünde: Verbundsteinpflasterradweg auf der südlichen Seite, streng benutzung
 #: by: http://www.nationaler-radverkehrsplan.de/neuigkeiten/news.php?id=1644
 L33: Radweg auf der südwestlichen Seite, Betonsteinpflaster, bis 2,5m breit	RW 1763,120930 1435,120973 1303,121143 842,121718 206,122655 -121,122847
 Benutzungspflichtiger Radweg	RW 18578,-1130 18539,-1021 18423,-843 18177,-449 18168,-434 18127,-367
-Gehwegradweg	RW8;RW2 26220,-17796 26639,-17861 26706,-17867 26832,-17882 27605,-17999
-asphaltiert	RW2;RW8 27605,-17999 28018,-18051
+Gehwegradweg	RW8;RW2 26439,-17829 26639,-17861 26706,-17867 26718,-17867 26832,-17882 27416,-17969 27605,-17999
+#: note: im Westen gesehen, im Osten durch osm bestätigt
+asphaltiert	RW2;RW8 27605,-17999 28048,-18009 28415,-18028 28642,-17918
 Rudower Str.: Radweg auf Gehweg	RW 15289,-2873 14977,-3505 14878,-3602
 Anklam: Verbundsteinpflasterradwege auf Gehweg	RW 27589,161496 27408,161558 27157,161625 26959,161572 26892,161556 26697,161590
 Anklam, Peenedamm: Radwege	RW 26697,161590 26698,161653 26699,161759 26699,161847 26700,161925
@@ -319,7 +320,7 @@ Zweirichtungsradweg auf der nördlichen Seite	RW9;RW2 -11822,-1959 -11197,-2032 -
 Mellenthin - Neppermin: verkehrsberuhigt	RW6 50035,170731 50047,170808 50081,170887 50081,170948 50061,171057 50079,171165 50181,171331
 Ahlbeck: gemeinsamer Geh- und Radweg auf der nördlichen Seite	RW2;RW9 60077,171695 60105,171680 60200,171623 60293,171553 60338,171543 60383,171530 60406,171501
 Neppermin - Mellenthin - B110: asphaltierter Radweg auf der westlichen Seite	RW 50049,170583 49835,170038 49737,169837 49114,169212 49028,168646 48995,168300 48954,167870
-nördlicher Gehweg für Radfahrer freigegeben	RW1;RW9 28071,-19862 28164,-19771 28251,-19639 28615,-19431 28853,-19212
+nördlicher Gehweg für Radfahrer freigegeben	RW1;RW9 28853,-19212 28615,-19431 28251,-19639 28164,-19771 28071,-19862
 Stegelitz: Gehwege für Radfahrer freigegeben	RW 39634,81668 39550,81278 39303,80853 38833,80699
 Werbellinsee: asphaltierter Zweirichtungsradweg auf der westlichen Seite	RW 30960,61370 30784,60950
 Werbellinsee: Verbundsteinpflaster-Zweirichtungsradweg auf der westlichen Seite	RW 30784,60950 30781,60566
@@ -375,7 +376,23 @@ Radweg	RW1; -99805,-41829 -99681,-41642
 straßenbegleitender Radweg	RW 38439,102279 37547,102663 37410,103257
 Verbundsteinpflasterradwege	RW2;RW2 25232,-13241 25381,-12762 25543,-12403 25912,-11956
 Verbundsteinpflaster	RW2;RW 26302,-11712 26177,-11648
-asphaltiert	RW2;RW8 26466,-10409 27469,-10314
+asphaltiert	RW2;RW8 26466,-10409 27050,-10317
+Verbundsteinpflaster	RW2;RW2 31843,-536 32128,-548 32138,-858
+Verbundsteinpflaster	RW2;RW8 32138,-858 32168,-981 32266,-1004 32778,-1044 32914,-1115 33326,-1341
+Verbundsteinpflaster	RW2;RW2 30933,-3649 30893,-3670 30666,-3650
+Verbundsteinpflaster	RW2;RW2 30893,-3670 30901,-3737 30886,-3867
+Verbundsteinpflaster	RW2;RW8 30886,-3867 30753,-4209
+Asphalt	RW10;RW10 30753,-4209 30721,-4293 30636,-4358
+Verbundsteinpflaster	RW2;RW8 30636,-4358 30334,-4590 30172,-4649 29555,-4881 29249,-5219 28628,-5900 28470,-6223
+Verbundsteinpflaster	RW2;RW8 27461,-12448 27234,-12434
+Gehweg für Radfahrer freigegeben	RW1;RW9 26814,-12271 26453,-12128 26419,-12089
+Gehweg für Radfahrer freigegeben	RW9;RW1 26453,-12128 26435,-12545
+Verbundsteinpflaster	RW2; 26373,-12553 26138,-12596
+Asphalt	RW2; 26465,-14385 26473,-14543
+Asphalt, gemeinsamer Geh- und Radweg	RW2;RW8 26473,-14543 26567,-14915
+Verbundsteinpflaster, gemeinsamer Geh- und Radweg	RW2;RW8 26567,-14915 26612,-15094 26572,-15618 26583,-15677 26650,-15695
+Beton, gemeinsamer Geh- und Radweg	RW2; 26583,-15677 26455,-16852 26431,-16931
+Beton, Gehweg für Radfahrer freigegeben	RW1; 26431,-16931 26276,-17489 26204,-17794
 ######################### User Contributions #################################
 #: by: Tagesspiegel
 	RW 16953,35907 17114,35904 18082,36115 18440,36179 19193,36011

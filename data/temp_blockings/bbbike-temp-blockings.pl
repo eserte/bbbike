@@ -954,7 +954,7 @@ EOF
        text  => 'L 743; (Motzener Str.); OL Bestensee, zw. Eichhornstr. u. Fasanenstr. SW-Leitung Vollsperrung 04.10.2004-19.11.2004 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 26650,-18150 26437,-18650 26343,-18775
+userdel	q4 26650,-18150 26376,-18707 26356,-18748
 EOF
      },
      { from  => 1096754400, # 2004-10-03 00:00
@@ -1855,7 +1855,7 @@ EOF
        text  => 'L 30; (Tiergartenstr.); OT Neue Mühle, Schleuse Straßenbauarbeiten Vollsperrung 09.05.2005-13.05.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	2 27543,-11912 27657,-11741
+userdel	2 27543,-11912 27544,-11856 27620,-11806 27657,-11741
 EOF
      },
      { from  => 1122760800, # 2005-07-31 00:00
@@ -1863,7 +1863,7 @@ EOF
        text  => 'B 179; (Cottbuser-/ Fichtestr.); OL Königs Wusterhausen, Bahnübergang Fichtestr. Umbau Bahnübergang Vollsp * 01.08.2005-14.08.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 26313,-13049 26205,-12769 26028,-12312
+userdel	2 26313,-13049 26205,-12769 26138,-12596 26028,-12312
 EOF
      },
      { from  => 1114725600, # 2005-04-29 00:00
@@ -2717,7 +2717,7 @@ EOF
        text  => 'B 179; (Karl-Liebknecht-Str.); OD Zeesen, zw. Spreewaldstr. u. Weidendamm Straßenausbau Vollsperrung 19.09.2005-24.10.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 26473,-14543 26612,-15094
+userdel	2 26473,-14543 26567,-14915 26612,-15094
 EOF
      },
      { from  => 1126994400, # 2005-09-18 00:00
@@ -3155,7 +3155,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 26639,-17861 26706,-17867
-userdel	2 26832,-17882 26706,-17867
+userdel	2 26832,-17882 26718,-17867 26706,-17867
 EOF
      },
      { from  => 1130277600, # 2005-10-26 00:00
@@ -3514,7 +3514,7 @@ EOF
        text  => 'B 179 Cottbuser-/ Fichtestr. OL Königs Wusterhausen, Bahnübergang Fichtestr. Umbau Bahnübergang Vollsperrung 02.01.2006-23.01.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 26313,-13049 26205,-12769 26028,-12312
+userdel	2 26313,-13049 26205,-12769 26138,-12596 26028,-12312
 EOF
      },
      { from  => 1134860400, # 2005-12-18 00:00
@@ -4124,7 +4124,7 @@ EOF
        text  => 'L 030 Tiergartenstr. OL Königs Wusterhausen, Schleusenbrücke Brückenreparatur Vollsperrung 24.04.2006-27.04.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 27543,-11912 27657,-11741
+userdel	2 27543,-11912 27544,-11856 27620,-11806 27657,-11741
 EOF
      },
      { from  => 1144959197, # 2006-04-13 22:13
@@ -4749,7 +4749,7 @@ EOF
        text  => 'B 246 OL Bestensee, Hauptstraße OL Bestensee, Hauptstraße, Bahnübergang Bauarbeiten am Gleiskörper Vollsperrung 30.06.2006-04.07.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 26639,-17861 26706,-17867 26832,-17882
+userdel	2::inwork 26639,-17861 26706,-17867 26718,-17867 26832,-17882
 EOF
      },
      { from  => 1150840800, # 2006-06-21 00:00
@@ -5042,7 +5042,7 @@ EOF
        text  => 'L 743 Motzener Str. OD Bestensee, Durchlass Ersatzneubau Durchlass Vollsperrung 10.07.2006-18.08.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 26639,-17861 26650,-18150 26437,-18650 26343,-18775 25475,-19231
+userdel	q4::inwork 26639,-17861 26650,-18150 26376,-18707 26356,-18748 26312,-18789 25453,-19255
 EOF
      },
      { from  => 1161366511, # 2006-10-20 19:48
@@ -6450,7 +6450,7 @@ EOF
        text  => 'B 246 Bahnübergang in der OD Bestensee Umbauarbeiten Vollsperrung 06.11.2006-17.11.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 26639,-17861 26706,-17867 26832,-17882
+userdel	2::inwork 26639,-17861 26706,-17867 26718,-17867 26832,-17882
 EOF
      },
      { from  => 1160604000, # 2006-10-12 00:00
@@ -8388,8 +8388,8 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005660',
        data  => <<EOF,
-userdel	2::temp 28188,962 28317,891 28218,1017 28119,1079
-userdel	2::temp 28119,1079 28188,962
+userdel	2::temp 28188,962 28317,891 28218,1017 28094,1090
+userdel	2::temp 28094,1090 28188,962
 EOF
      },
      { from  => 1180783143, # 2007-06-02 13:19

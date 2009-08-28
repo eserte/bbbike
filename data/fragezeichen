@@ -574,14 +574,14 @@ Lebus - Reitwein: Qualität?	? 87344,3693 87711,4056 87888,5199 88546,5310 90326,
 Wuhden - Klessin - Lebus: Qualität?	? 88764,8703 88707,7337 88447,6494 87888,5199
 Schönfließ - B167: Qualität?	? 83274,3292 83648,4018 83483,4450 83527,4852
 Neuhardenberg - Letschin: Qualität?	? 68139,21885 68350,22134 68604,23658 69163,23988 69518,24343 69645,25105
-Bestensee - Hintersiedlung: Qualität?	? 26437,-18650 26650,-18912 26987,-19262 26562,-20162 26037,-20825
+Bestensee - Hintersiedlung: Qualität?	? 26376,-18707 26637,-18860 26644,-18866 26967,-19187 26954,-19301 26929,-19477 26864,-19685 26703,-19943 26037,-20825
 Kolonieweg (Kleingärten am Pfingstberg): Qualität (wahrscheinlich unbefestiger Weg?)?	? -12633,1484 -12629,1630
 Langhansstr.: Qualität (zumindest das westliche Ende ist asphaltiert)? Ist die gesamte Straße eine Spielstraße?	? -12276,831 -12411,881 -12325,1145 -12408,1176
 Wilhelm-Staab-Str./Yorckstr.: Überqueren des Kanals möglich?	? -13001,-1329
 Rad- und Fußwegverbindung zwischen Wuhle und Hönow durch Hellersdorf: genauer Verlauf? Qualität? bereits komplett fertiggestellt?	? 22579,15416 22743,15414 23057,15458 23240,15472 23368,15469 23484,15485 23629,15498 23643,15389 23895,15450 23941,15458 24076,15481 24169,15497 24303,15766 25003,15617 25984,15415 25936,15335 25990,15301 25985,15080 26014,15039
-Niederlehme Anschlussstelle - Niederlehme: Qualität (wahrscheinlich Asphalt)? Radweg?	? 28499,-10164 28272,-10277 28168,-10289 27949,-10283 27906,-10191 27827,-10082 27535,-10033
-Fürstenwalder Str. (Zernsdorf): Qualität?	? 27966,-11585 28150,-11380 28235,-11227 28388,-11093 28839,-10831 29192,-10630
-Am Möllenberg (Zernsdorf): Qualität?	? 27949,-10283 28016,-10429 28241,-10904 28388,-11093
+Niederlehme Anschlussstelle - Niederlehme: Qualität (wahrscheinlich Asphalt)? Radweg?	? 28499,-10164 28272,-10277 28168,-10289 27934,-10286 27906,-10191 27827,-10082 27535,-10033
+Fürstenwalder Str. (Zernsdorf): Qualität?	? 27906,-11638 28150,-11380 28235,-11227 28388,-11093 28839,-10831 29192,-10630
+Am Möllenberg (Zernsdorf): Qualität?	? 27934,-10286 28016,-10429 28241,-10904 28388,-11093
 Hempelsteig: Qualität?	? -787,13147 -525,13034 -472,12961
 Am Hain: Qualität?	? -1337,13354 -1380,13126
 Krumpuhler Weg: Qualität? Einbahnstraße, auch für Radfahrer?	? 1405,18749 1390,18651
@@ -649,7 +649,7 @@ Neugrimnitz - B198: Qualität?	? 39637,63244 39576,63074 39521,62861 39503,62647 
 B2 - Chorin: Qualität?	? 41847,54619 41806,54725 41636,54890 41538,55140 41301,55146 41093,55310 41173,55516
 Wilhelm-von-Siemens-Str.: existiert zwischen Fritz-Werner-Str. und Hirzerweg möglicherweise eine Einbahnstraße Richtung Westen (auch für Radfahrer)?	? 9437,2649 9072,2589
 Selchow - Kiekebusch: Qualität zwischen Kreuzung Diepensee-Rotberg und Kreuzung Dahlewitz/Zeuthen (wahrscheinlich Plattenweg)	? 18764,-5531 19915,-6315
-Prieroser Str.: Qualität?	? 28540,-19744 29524,-19715
+Prieroser Str.: Qualität?	? 28540,-19744 28842,-19704 29515,-19702
 Neubrücker Str.: Qualität?	? 28231,-19792 28336,-19948
 Neubrücker Str.: Qualität?	? 28363,-19964 28514,-20071
 Bellevuepark: ist ein Weg für Radfahrer offiziell freigegeben?	? 22798,5731 22790,5568 22733,5569 22701,5428 22628,5340
@@ -818,7 +818,6 @@ Falkenberg - Wilmersdorf: Qualität?	? 67223,-1765 67432,-1337 67874,-787 67931,-
 Lichterfelder Weg: unklare Wegführung; mäßige Qualität: am Anfang (Goerzallee?) Kopfsteinpflaster, danach loser Sandweg	? 3140,1412 3140,1411 3147,1391 3106,1344 3082,1333 3071,1346 2849,1248
 Maßliebweg: Qualität?	? 15356,2499 15593,2495
 Mandelstr.: Qualität der Straße nördlich der Ostseestr.?	? 12911,15708 12979,15822 12911,15865
-Geschwister-Scholl-Str. (Neu-Zittau): Qualität?	? 34242,-1784 33628,-1509
 Mühlweg: Qualität?	? 24629,5831 24666,5726 24700,5633
 Rodenkirchener Str.: Qualität?	? 19974,-317 19973,-245 19960,-158 19943,-118 19909,-75
 Flottsteller Str. (Michendorf): Qualität (wahrscheinlich asphaltiert)?	? -15891,-10464 -15769,-10534 -15613,-10667 -15182,-10981 -15018,-11070 -14861,-11221
@@ -2748,6 +2747,14 @@ Quickborner Str.: Wo genau befinden sich Radspuren, wo befinden sich Radwege?	? 
 Fritz-Rumpf-Str. (Potsdam): Ist die Straße bereits fertiggestellt? Qualität?	? -11307,133 -11388,270
 Leonardo-da-Vinci-Str. (Potsdam): Ist die Straße bereits fertiggestellt? Qualität?	? -11390,72 -11609,400
 Flansweg: Qualität des östlichen Abschnitts?	? 23384,3563 23452,3613
+Pfalz-Zweibrücker Weg: Qualität zwischen Am Müggelberg und Enkenbacher Weg?	? 27170,1149 27280,1119
+Hornbacher Weg: Qualität zwischen Berghauser Str. und Sobernheimer Str.?	? 27658,877 27751,819 27783,792 27817,761 27855,731 27896,695 27932,665
+Appelbacher Weg: Qualität am nordwestlichen Ende (an der Philipp-Jacob-Rauch-Str.)?	? 27476,1287 27468,1279 27450,1182
+Appelbacher Weg: Qualität zwischen Berghauser Str. und Alsenzer Weg?	? 27718,946 27798,872
+Philipp-Jacob-Rauch-Str.: Qualität zwischen Appelbacher Weg und Am Müggelberg? Ist dieser Abschnitt auch verkehrsberuhigt?	? 27476,1287 27344,1329 27229,1359
+Am Müggelberg: Qualität?	? 27074,863 27170,1149 27229,1359
+Berghauser Str.: Qualität?	? 27315,484 27351,526 27410,590 27471,664 27658,877 27718,946
+Im Wustrocken: Qualität?	? 27081,-18824 27020,-18866 26961,-18891 26906,-18961 26825,-19031
 # added from ampeln-orig
 #: add_fragezeichen: Existiert die Ampel Nordufer/Torfstr. noch?
 geschlossen bei Bedarf (?) (Zbr)	? 27657,-11741
