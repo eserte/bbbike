@@ -28,6 +28,7 @@ PERL?=			perl
 PERL_UTF8?=		${PERL}
 NO_LOCALE=		env LANG=C LC_ALL=C LC_CTYPE=C
 SED?=			${NO_LOCALE} sed
+CUT?=			${NO_LOCALE} cut
 
 HAFAS2HAFAS=		${PERL} ${MISCSRCDIR}/hafas2hafas -strict
 CONVERT2HAFAS=		${PERL} ${MISCSRCDIR}/convert2hafas -strict
@@ -1142,8 +1143,8 @@ check-disabled:
 	@touch $@
 
 .check_strassen_plaetze_unique:	strassen-orig plaetze-orig
-	cut -d"	" -f1 strassen-orig | sort -u > /tmp/strassen-names
-	cut -d"	" -f1 plaetze-orig  | sort -u > /tmp/plaetze-names
+	${CUT} -d"	" -f1 strassen-orig | sort -u > /tmp/strassen-names
+	${CUT} -d"	" -f1 plaetze-orig  | sort -u > /tmp/plaetze-names
 	duplicates=`sort /tmp/strassen-names /tmp/plaetze-names | grep -v '^#' | uniq -d`; \
 	if [ "$$duplicates" != "" ]; then \
 	    echo "Found duplicates:"; \
@@ -1436,10 +1437,10 @@ check-line-lengths:	.check_line_lengths
 	@touch $@
 
 count-streets:
-	@echo -n "Berlin:        "; grep -v "^(" strassen | ${NO_LOCALE} cut -f1 -d"(" | sort -u | wc -l
-	@echo -n "Landstraßen:   "; grep -v "^#" landstrassen landstrassen2 | ${NO_LOCALE} cut -f1 | sort -u | wc -l
-	@echo -n "  Potsdam:     "; fgrep "(Potsdam)" landstrassen | grep -v "^(" | ${NO_LOCALE} cut -f1 -d"(" | sort -u | wc -l
-	@echo -n "  Oranienburg: "; grep -v "^#" landstrassen | fgrep "(Oranienburg" | ${NO_LOCALE} cut -f1 -d"(" | sort -u | wc -l
+	@echo -n "Berlin:        "; grep -v "^(" strassen | ${CUT} -f1 -d"(" | sort -u | wc -l
+	@echo -n "Landstraßen:   "; grep -v "^#" landstrassen landstrassen2 | ${CUT} -f1 | sort -u | wc -l
+	@echo -n "  Potsdam:     "; fgrep "(Potsdam)" landstrassen | grep -v "^(" | ${CUT} -f1 -d"(" | sort -u | wc -l
+	@echo -n "  Oranienburg: "; grep -v "^#" landstrassen | fgrep "(Oranienburg" | ${CUT} -f1 -d"(" | sort -u | wc -l
 
 check-dates:	.check_dates
 
@@ -1537,13 +1538,13 @@ check-Berlin.coords.data: .check_Berlin_coords_data_cityparts \
 			  .check_Berlin_coords_data_zip
 
 .check_Berlin_coords_data_cityparts: Berlin.coords.data
-	cut -d'|' -f2 Berlin.coords.data | sort -u |\
+	${CUT} -d'|' -f2 Berlin.coords.data | sort -u |\
 	    $(PERL) -I.. -MGeography::Berlin_DE -nle \
 		'BEGIN { %cp = map {($$_,1)} Geography::Berlin_DE->get_all_subparts } !exists $$cp{$$_} and die "<$$_> not a citypart of Berlin"'
 	@touch $@
 
 .check_Berlin_coords_data_zip: Berlin.coords.data
-	cut -d'|' -f3 Berlin.coords.data | sort -u |\
+	${CUT} -d'|' -f3 Berlin.coords.data | sort -u |\
 	    $(PERL) -nle '($$_ < 10000 || $$_ > 15000) and die "<$$_> unexpected ZIP in Berlin"'
 	@touch $@
 
