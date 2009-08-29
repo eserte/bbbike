@@ -63,6 +63,7 @@ my %vehicle_to_color = (
 			'bus'    => 'violet',
 			'car'    => 'darkgrey',
 			'ferry'  => 'lightblue',
+			'funicular' => 'red',
 			'pedes'  => 'orange',
 			'plane'  => 'black',
 			's-bahn' => 'green',
@@ -429,6 +430,7 @@ sub _track_attributes_editor {
 	     $t->BrowseEntry(-textvariable => \$track_attrs_ref->{'srt:vehicle'},
 			     -autolimitheight => 1,
 			     -autolistwidth => 1,
+			     -listheight => 12, # hmmm, -autolimitheight does not work? or do i misunderstand this option?
 			     -choices => [sort keys %vehicle_to_color],
 			    ));
     Tk::grid($t->Label(-text => "Brand"),
