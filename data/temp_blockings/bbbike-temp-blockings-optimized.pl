@@ -668,8 +668,8 @@ userdel	q4::inwork; 15080,11905 14977,11754 14941,11689 14849,11539
        undef,
        undef,
        {
-         'until' => 1251756000,
-         'text' => 'L 022 Zehdenick - Gransee Brücke über den Welsegraben bei Badingen Brückenbauarbeiten Vollsperrung 15.04.2009-31.08.2009 ',
+         'until' => 1257030000,
+         'text' => 'L 022 Zehdenick - Gransee Brücke über den Welsegraben bei Badingen Brückenbauarbeiten Vollsperrung 15.04.2009-31.10.2009 ',
          'from' => 1239660000,
          'id' => 1622,
          'data' => 'userdel	2::inwork -3207,65718 -3718,65788 -4295,65959
@@ -758,15 +758,7 @@ userdel	q4::inwork 10422,12395 10476,12432
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1251756000,
-         'text' => 'B 102 Wildberg - Neustadt-Dosse Kreuzungsber. B 5 bei Bückwitz Kreiselneubau Vollsperrung 02.06.2009-31.08.2009 ',
-         'from' => 1243807200,
-         'id' => 1653,
-         'data' => 'userdel	2::inwork -53139,50022 -52854,50094
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -788,8 +780,8 @@ userdel	q4::inwork 8389,11378 8374,11479
        undef,
        undef,
        {
-         'until' => 1254348000,
-         'text' => 'B 087 Luckau - Herzberg OD Schlieben Deckenerneuerung Vollsperrung 25.05.2009-30.09.2009 ',
+         'until' => 1251756000,
+         'text' => 'B 087 Luckau - Herzberg OD Schlieben Deckenerneuerung Vollsperrung 25.05.2009-31.08.2009 ',
          'from' => 1243116000,
          'id' => 1665,
          'data' => 'userdel	q4::inwork 10533,-76130 10891,-76066
@@ -797,8 +789,8 @@ userdel	q4::inwork 8389,11378 8374,11479
          'type' => 'handicap'
        },
        {
-         'until' => 1254348000,
-         'text' => 'L 014 Kyritz - Wittstock OD Herzsprung Straßenausbau Vollsperrung 20.07.2009-30.09.2009 ',
+         'until' => 1253311200,
+         'text' => 'L 014 Kyritz - Wittstock OD Herzsprung Straßenausbau Vollsperrung 20.07.2009-18.09.2009 ',
          'from' => 1247954400,
          'id' => 1666,
          'data' => 'userdel	q4::inwork -54249,73343 -54091,72917 -54034,72687
@@ -827,11 +819,11 @@ userdel	q4::inwork 8389,11378 8374,11479
        },
        {
          'source_id' => 'IM_012799',
-         'until' => 1370037599,
-         'text' => 'Glienicker Weg/Glienicker Str. (Treptow) Richtung Köpenick zwischen Adlergestell und Spindlersfelder Str. (DB-Brücke) Baustelle, Fahrtrichtung gesperrt (bis Ende 05.2013)',
-         'from' => 1243371263,
+         'until' => 1251755999,
+         'text' => 'Glienicker Weg/Glienicker Str. (Treptow) in beiden Richtungen zwischen Adlergestell und Spindlersfelder Str. (DB-Brücke) Baustelle, Straße vollständig gesperrt (bis Ende 08.2009)',
+         'from' => 1251530088,
          'id' => 1678,
-         'data' => 'userdel	q4::inwork; 21244,3571 21308,3680
+         'data' => 'userdel	q4::inwork 21244,3571 21308,3680
 ',
          'type' => 'handicap'
        },
@@ -921,9 +913,9 @@ userdel	q4::inwork 8389,11378 8374,11479
        },
        undef,
        {
-         'until' => 1270072800,
-         'text' => 'L 077 Langerwisch - Saarmund OD Langerwisch Straßenbau Vollsperrung 17.06.2009-31.03.2010 ',
-         'from' => 1245103200,
+         'until' => 1251669600,
+         'text' => 'L 077 Langerwisch - Saarmund OD Langerwisch, zw. Nahkauf u. Beelitzer Str. Straßenbau Vollsperrung 15.08.2009-30.08.2009 ',
+         'from' => 1250200800,
          'id' => 1706,
          'data' => 'userdel	q4::inwork -12915,-10753 -12337,-10735
 ',
@@ -965,15 +957,7 @@ userdel	2::inwork 7160,11225 6851,11346
        undef,
        undef,
        undef,
-       {
-         'until' => 1251496800,
-         'text' => 'L 412 Bad Saarow - Alt Golm OD Neu Golm, Abzw. Fürstenwalder Str. Kanal- und Straßenbau Vollsperrung 24.06.2009-28.08.2009 ',
-         'from' => 1245708000,
-         'id' => 1725,
-         'data' => 'userdel	q4::inwork 57479,-10535 57752,-10566 57882,-10535
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -986,15 +970,7 @@ userdel	2::inwork 7160,11225 6851,11346
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1251842400,
-         'text' => 'K 6910 Am Wasser OD Schwielowsee, zw. Baumgartenbrück u. B 1 Kanal- u. Straßenbau Vollsperrung 16.07.2009-01.09.2009 ',
-         'from' => 1247608800,
-         'id' => 1730,
-         'data' => 'userdel	q4::inwork -19332,-5240 -19112,-5226 -19013,-5247
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1254348000,
          'text' => 'L 015 Fürstenberg - Menz OD Fürstenberg, zw. Bergstr. und OA Ri. Menz Straßenbau, Brückenabriss Vollsperrung 06.07.2009-30.09.2009 ',
@@ -1071,16 +1047,7 @@ userdel	2::inwork 7160,11225 6851,11346
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'source_id' => 'LMS_1623809882',
-         'until' => 1251755999,
-         'text' => 'Colditzstr. (Colditzbrücke) in beiden Richtungen zwischen Ordensmeisterstraße und Volkmarstraße Baustelle, Straße vollständig gesperrt (bis Ende 08.2009)',
-         'from' => 1249972560,
-         'id' => 1749,
-         'data' => 'userdel	2::inwork 9875,5561 9847,5630
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1251669600,
          'text' => 'B 109 Prenzlau - Pasewalk OD Göritz bis LG MVP Deckensanierung Vollsperrung 20.07.2009-30.08.2009 ',
@@ -1090,15 +1057,7 @@ userdel	2::inwork 7160,11225 6851,11346
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1251669600,
-         'text' => 'L 038 zw. OA Hangelsberg u. Kreisverkehrsplatz Straßeninstandsetzungsarbeiten Vollsperrung 16.07.2009-30.08.2009 ',
-         'from' => 1247608800,
-         'id' => 1751,
-         'data' => 'userdel	2::inwork 45037,31 43456,337 42843,102
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'until' => 1258326000,
@@ -1198,27 +1157,10 @@ userdel	2::inwork 7160,11225 6851,11346
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_013806',
-         'until' => 1251755999,
-         'text' => 'Köpenicker Str. (Marzahn) in beiden Richtungen zwischen Heesestr. und Alfelder Str. Baustelle, gesperrt (bis Ende 08/2009)',
-         'from' => 1249106526,
-         'id' => 1778,
-         'data' => 'userdel	q4::inwork 21164,9960 21115,9842
-',
-         'type' => 'handicap'
-       },
        undef,
        undef,
-       {
-         'until' => 1251496800,
-         'text' => 'B 246 zw. Glienicke und Wendisch Rietz Deckenerneuerung Vollsperrung 10.08.2009-28.08.2009 ',
-         'from' => 1249768800,
-         'id' => 1781,
-         'data' => 'userdel	2::inwork 53048,-21761 53596,-21448 54370,-20977 55783,-21082 57404,-20885
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        undef,
        {
          'until' => 1254348000,
@@ -1257,25 +1199,16 @@ userdel	2::inwork 7160,11225 6851,11346
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20090722.1425.132805.html',
-         'until' => 1251496799,
-         'text' => 'Erwin-Bock-Straße zwischen Alfred-Randt-Straße und Müggelschlößchenweg: von der 30. bis 35. Kalenderwoche wird abschnittsweise unter einer halbseitigen bzw. Vollsperrung die Betonfahrbahn abgefräst und durch eine bituminöse Dechschicht erneuert.',
-         'from' => 1249153223,
-         'id' => 1788,
-         'data' => 'userdel	q4::inwork 23749,3868 23749,3883 23753,4218
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        {
-         'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/presse/archiv/',
+         'source_id' => 'IM_013726',
          'until' => 1254347999,
          'text' => 'Bauarbeiten in der Buntzelstr. zwischen Parchwitzer Str. und Paradiesstr., Einbahnstraßenregelung, etwa vom 15.9. bis zum 30.9.2009',
          'from' => 1252879200,
          'id' => 1791,
-         'data' => 'userdel	q4::inwork; 21118,-459 21355,-309
+         'data' => 'userdel	q4::inwork; 21355,-309 21118,-459
 ',
          'type' => 'handicap'
        },
@@ -1328,21 +1261,13 @@ userdel	2::inwork 7160,11225 6851,11346
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1251496800,
-         'text' => 'L 040 L 23, Storkow - Friedersdorf zw. Abzw. Alt Stahnsdorf u. Abzw. Kummersdorf Deckenerneuerung Vollsperrung 12.08.2009-28.08.2009 ',
-         'from' => 1249941600,
-         'id' => 1800,
-         'data' => 'userdel	2::inwork 44261,-14205 43456,-14384 42430,-14398
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'source_id' => 'IM_013876',
-         'until' => undef,
-         'text' => 'Friedrich-Engels-Str. (Pankow) stadteinwärts zwischen Platanenstr. und Pastor-Niemöller-Platz Baustelle, Fahrtrichtung gesperrt',
-         'from' => undef,
+         'until' => 1275343199,
+         'text' => 'Friedrich-Engels-Str. (Pankow) stadteinwärts zwischen Platanenstr. und Pastor-Niemöller-Platz Baustelle, Fahrtrichtung gesperrt (bis Ende 05/2010)',
+         'from' => 1251530039,
          'id' => 1802,
          'data' => 'userdel	q4::inwork; 9355,19789 9408,19707 9468,19599 9606,19510 9729,19426 9791,19363
 ',
@@ -1576,16 +1501,7 @@ Neuer Garten (am Portierhaus) - Weinmeisterstr.: Weg ist nur zwischen 6 Uhr bis 
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'source_id' => 'IM_013892',
-         'until' => 1251755999,
-         'text' => 'Sterndamm (Treptow) Rudow Richtung Oberschöneweide zwischen Stubenrauchstr. und Lindhorstweg Baustelle, Fahrtrichtung gesperrt (bis Ende 08.2009)',
-         'from' => 1249972926,
-         'id' => 1828,
-         'data' => 'userdel	q4::inwork; 17364,3565 17053,3971 17108,4049
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1258239600,
          'text' => 'L 028 L 33, Wriezen - Neureetz OD Alt Märdewitz Grundhafter Straßenausbau Vollsperrung 10.08.2009-14.11.2009 ',
@@ -1621,6 +1537,216 @@ Neuer Garten (am Portierhaus) - Weinmeisterstr.: Weg ist nur zwischen 6 Uhr bis 
          'data' => 'userdel	q4::temp 62010,-62330 62522,-62647
 ',
          'type' => 'handicap'
+       },
+       undef,
+       {
+         'until' => 1267398000,
+         'text' => 'B 001 Bundesgrenze Polen - Küstrin Kietz Vorflutbrücke bei Küstrin Kietz Brückeninstandsetzung Vollsperrung 17.08.2009-28.02.2010 ',
+         'from' => 1250373600,
+         'id' => 1834,
+         'data' => 'userdel	2::inwork 92955,20065 93405,20640
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1262300400,
+         'text' => 'B 005 Frankfurter Straße OL Heinersdorf Kanal- u. Straßenbauarbeiten Vollsperrung 07.09.2009-31.12.2009 ',
+         'from' => 1252188000,
+         'id' => 1835,
+         'data' => 'userdel	q4::inwork 66009,6118 65618,6296 65528,6253 65365,6281 65225,6403
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1251583200,
+         'text' => 'B 087 Lübben - Luckau von AS Duben bis OA Duben Deckenerneuerung Vollsperrung 27.08.2009-29.08.2009 ',
+         'from' => 1251237600,
+         'id' => 1836,
+         'data' => 'userdel	2::inwork 39355,-56021 39767,-55820
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1253570400,
+         'text' => 'B 115 Am Spreeufer OL Lübben, zw. Krz. B87 u. Brückenplatz Stadtfest Vollsperrung 15.09.2009-21.09.2009 ',
+         'from' => 1252879200,
+         'id' => 1837,
+         'data' => 'userdel	q4::temp 45023,-51268 44951,-51018
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1253311200,
+         'text' => 'B 158 Bad Freienwalde - Werneuchen zw. L236, Ri. Freudenberg u. OE Tiefensee Deckschichterneuerung Vollsperrung 02.09.2009-18.09.2009 ',
+         'from' => 1251756000,
+         'id' => 1838,
+         'data' => 'userdel	2::inwork 41925,33512 40827,32011 39783,31398
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1254520800,
+         'text' => 'L 025 Schönermark - Fürstenwerder - Woldegk zw. OL Kraatz u. Fürstenwerder u. LG Deckenerneuerung Vollsperrung 17.08.2009-02.10.2009 ',
+         'from' => 1250373600,
+         'id' => 1839,
+         'data' => 'userdel	2::inwork 21007,109931 21285,109895 22504,109807 23242,109707
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1252188000,
+         'text' => 'L 033 Wriezen - Prötzel zw. Abzw. Reichenow über Herzhorn nach Prötzel Deckenerneuerung Vollsperrung 24.08.2009-05.09.2009 ',
+         'from' => 1250978400,
+         'id' => 1840,
+         'data' => 'userdel	2::inwork 53517,29159 52892,28720 52634,28531 50690,27036
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1252274400,
+         'text' => 'L 070 Stülpe - Sperenberg bei Kummersdorf/ Gut Straßenausbau Vollsperrung 05.09.2009-06.09.2009 ',
+         'from' => 1252015200,
+         'id' => 1841,
+         'data' => 'userdel	2::inwork 8564,-34625 9068,-34115
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1252879200,
+         'text' => 'L 070 Stülpe - Sperenberg bei Kummersdorf/ Gut Straßenausbau Vollsperrung 12.09.2009-13.09.2009 ',
+         'from' => 1252620000,
+         'id' => 1842,
+         'data' => 'userdel	2::inwork 8564,-34625 9068,-34115
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1251669600,
+         'text' => 'L 070 Stülpe - Sperenberg bei Kummersdorf/ Gut Straßenausbau Vollsperrung 29.08.2009-30.08.2009 ',
+         'from' => 1251410400,
+         'id' => 1843,
+         'data' => 'userdel	2::inwork 8564,-34625 9068,-34115
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1270072800,
+         'text' => 'L 077 Langerwisch - Saarmund OD Langerwisch, zw. Potsdamer Str. u. Am Plan Straßenbau Vollsperrung 17.06.2009-31.03.2010 ',
+         'from' => 1245103200,
+         'id' => 1844,
+         'data' => 'userdel	q4::inwork -13211,-10642 -12915,-10753
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1252620000,
+         'text' => 'L 099 Möthlow - Barnewitz zw. Buschow u. Barnewitz Fahrbahnsanierungsarbeiten Vollsperrung 27.08.2009-10.09.2009 ',
+         'from' => 1251237600,
+         'id' => 1845,
+         'data' => 'userdel	2::inwork -42002,19243 -42106,18923 -42484,18388 -42920,17788 -43042,17302 -43226,16794
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1253311200,
+         'text' => 'L 144 Herzsprung - Blumenthal OD Herzsprung grundhafter Straßenausbau Vollsperrung 25.08.2009-18.09.2009 ',
+         'from' => 1251064800,
+         'id' => 1846,
+         'data' => 'userdel	q4::inwork -54665,72030 -54116,72465
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1275343200,
+         'text' => 'L 303 Brücke über die DB AG bei Eggersdorf Brückenersatzneubau Vollsperrung 07.09.2009-31.05.2010 ',
+         'from' => 1252188000,
+         'id' => 1847,
+         'data' => 'userdel	2::inwork 38553,14142 38637,14790
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1261436400,
+         'text' => 'L 621 Döllinger Straße OL Hohenleipisch, zw. Goethestr. u. Abzw. L62 Berliner Str. Straßen- und Kanalarbeiten Vollsperrung 24.08.2009-21.12.2009 ',
+         'from' => 1250978400,
+         'id' => 1848,
+         'data' => 'userdel	q4::inwork 23464,-101227 23305,-100904 23220,-100874
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1253397600,
+         'text' => 'L 861 Damsdorf - Plessow zw. Damsdorf und Göhlsdorf Straßensanierung Vollsperrung 31.08.2009-19.09.2009 ',
+         'from' => 1251583200,
+         'id' => 1849,
+         'data' => 'userdel	2::inwork -30199,-5774 -30919,-6570 -31110,-6743 -32618,-7268
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_013995',
+         'until' => 1293836399,
+         'text' => 'Freiheit/Wiesendamm (Spandau) Richtung Spandauer Damm zwischen Klärwerkstr. und Spandauer Damm Baustelle, Fahrtrichtung gesperrt (bis Ende 2010)',
+         'from' => 1251530342,
+         'id' => 1850,
+         'data' => 'userdel	q4::inwork; -1258,13552 -990,13502 -729,13415 -346,13349 -307,13279 -264,13009
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_013936',
+         'until' => 1251842399,
+         'text' => 'Joachim-Friedrich-Str. (Wilmersdorf) in beiden Richtungen zwischen Kurfürstendamm und Westfälische Str. Baustelle, gesperrt (bis Anfang 09/2009)',
+         'from' => 1251530387,
+         'id' => 1851,
+         'data' => 'userdel	q4::inwork 3092,9886 3108,10069 3111,10116
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_013998',
+         'until' => undef,
+         'text' => 'Proskauer Str. (Friedrichshain) in beiden Richtungen zwischen Rigaer Str. und Bänschstr. geplatzte Wasserleitung, Straße vollständig gesperrt (auf weiteres)',
+         'from' => undef,
+         'id' => 1852,
+         'data' => 'userdel	q4::inwork 14266,12446 14298,12553 14319,12629
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_013939',
+         'until' => 1253051999,
+         'text' => 'Päwesiner Weg (Spandau) Richtung Brunsbütteler Damm zwischen Lazarusstr. und Brunsbütteler Damm Baustelle, Fahrtrichtung gesperrt (bis Mitte 09.2009)',
+         'from' => 1251530442,
+         'id' => 1853,
+         'data' => 'userdel	q4::inwork; -4922,13609 -4922,13641 -4932,13887 -4926,13971
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_013990',
+         'until' => 1251842399,
+         'text' => 'Schönhauser Allee (Prenzlauer Berg) in beiden Richtungen im Kreuzungsbereich Schivelbeiner Str. - Wichertstr. Baustelle, Brückendurchfahrt gesperrt, aus allen Richtungen kein Linksabbiegen möglich (bis Anfang 09/2009)',
+         'from' => 1251530600,
+         'id' => 1854,
+         'data' => 'Schönhauser Allee -> Schivelbeiner Str.:	3::inwork 10975,16010 10982,16121 10753,16144
+Schönhauser Allee -> Wichertstr.:	3::inwork 10990,16197 10982,16121 11214,16043
+Wichertstr. -> Schönhauser Allee:	3::inwork 11214,16043 10982,16121 10975,16010
+Wichertstr. -> Schivelbeiner Str.:	3::inwork 11214,16043 10982,16121 10753,16144
+Schivelbeiner Str. -> Schönhauser Allee:	3::inwork 10753,16144 10982,16121 10990,16197
+Schivelbeiner Str. -> Wichertstr.:	3::inwork 10753,16144 10982,16121 11214,16043
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_013988',
+         'until' => 1251684000,
+         'text' => 'Spandauer Damm (Charlottenburg) in beiden Richtungen, Brücke über die A100 Baustelle, Straße vollständig gesperrt bis Mo 04:00 ',
+         'from' => 1251444429,
+         'id' => 1855,
+         'data' => 'userdel	2::inwork 2414,12418 2224,12397 2157,12389
+',
+         'type' => 'gesperrt'
        }
      
 );

@@ -2589,6 +2589,8 @@ Hornbacher Weg: Asphalt	Q0 27428,1026 27658,877
 Appelbacher Weg: Asphalt	Q0 27450,1182 27514,1129 27718,946
 Philipp-Jacob-Rauch-Str.: Verbundsteinpflaster	Q0- 27615,1245 27573,1279 27516,1300 27476,1287
 Johann-Jacob-Baeyer-Str.: Asphalt	Q0 27977,1187 27810,987
+#: by: osm
+Plutoweg: unbefestigt	Q2 30965,3391 30811,3416 30750,3468
 ######################### User Contributions #################################
 #: by: Dominik Seelow vvv
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
@@ -2859,9 +2861,9 @@ Tristanstr.: mäßiges Kopfsteinpflaster	Q2 -4315,1594 -4239,1512 -4049,1535 -3968
 Krähenfußzeile: Asphalt	Q0 15888,23814 16010,23734 16223,23584
 Emilienstr.: schlechtes Kopfsteinpflaster	Q3 8110,2076 8152,2059 8191,2039 8281,1998 8404,1937 8522,1870
 Schmalenbachstr.: guter Beton	Q0 14961,6162 14958,6243 14928,6314 14639,6577
-Mönchsheimer Str.: guter Asphalt	Q0 30950,3985 30854,3947 30821,3951 30687,3999 30605,4028 30530,4053
-Mönchsheimer Str.: guter Asphalt	Q0 30526,4041 30394,4085
-Mönchsheimer Str.: guter Asphalt	Q0 30398,4095 30240,4144
+Mönchsheimer Str.: guter Asphalt	Q0 30950,3985 30854,3947 30821,3951 30687,3999 30605,4028 30535,4051
+Mönchsheimer Str.: guter Asphalt	Q0 30531,4039 30395,4085
+Mönchsheimer Str.: guter Asphalt	Q0 30398,4095 30243,4143
 Siegmarstr.: guter Asphalt	Q0 21853,13784 21870,13852 21885,13954 21918,14219 21940,14413 21948,14501
 Heinrich-Böll-Str.: Asphalt	Q0 10178,20525 10251,20252 10225,20225 10068,20188
 Galileistr.: Beton	Q0 15698,8191 15443,8458
@@ -4959,9 +4961,9 @@ Wichernstr. (Spandau): Asphalt	Q0 -3439,17974 -3288,17831 -3204,17749 -3093,1764
 #: by: Daniel (dan.berlin):
 Poschingerstr.: Asphalt	Q0 5697,6276 5754,6238 5824,6240 5875,6262 5925,6311 5971,6343 6095,6358 6261,6391
 #: by: Jürgen Beckmann: vvv
-Olbendorfer Weg: Asphalt	Q0 4497,19539 4590,19493 4690,19446 4742,19428 4904,19690 5001,19832
+Olbendorfer Weg: Asphalt	Q0 4497,19539 4590,19493 4690,19446 4742,19428 4904,19690 4997,19849
 #: note: auch laut ADFC-Karte gut geeignet
-Hermann-Piper-Str.; Asphalt	Q0 4760,20071 4920,19928 5001,19832
+Hermann-Piper-Str.; Asphalt	Q0 4760,20071 4920,19928 4997,19849
 #: by: ^^^
 #: by: Samer Aburous
 Hanielweg: Asphalt	Q0 8077,1259 7980,1295 7888,1321 7830,1345 7810,1349 7787,1361 7651,1615 7610,1695 7562,1796
@@ -6051,7 +6053,7 @@ Friedrich-Wolf-Str.: mäßiger Beton	Q1- 22236,2029 22224,2061 22210,2140 22131,23
 #: by: michael weber: vvv
 #: confirmed_by: holger isbjoern:
 Jansenstr.: guter Asphalt	Q0 5278,19853 5338,19843 5396,19833 5422,19829 5439,19826 5533,19811
-(Hermann-Piper-Str./Olbendorfer Weg - Rathauspromenade): gepflasterte Wege	Q0- 5001,19832 5254,19931
+(Hermann-Piper-Str./Olbendorfer Weg - Rathauspromenade): gepflasterte Wege	Q0- 4997,19849 5254,19931
 #: by: ^^^
 #: by: Steffen (berthold):
 Solferinostr.: guter Asphalt	Q0 5537,18309 5415,18316 5423,18438
@@ -6525,7 +6527,7 @@ Waldpark Steinberg: Verbundsteinpflaster	Q1+ 3207,22123 3172,22109
 #: by: ^^^
 #: by: Jürgen Schulze (jochen): vvv
 Woltersdorfer Weg: mäßiges Kopfsteinpflaster	Q2 30124,4664 30092,4666 29982,4525 29930,4455 29813,4314
-Freienbrinker Saum: guter Asphalt	Q0 30124,4664 30254,4692 30369,4697 30478,4715 30527,4724 30636,4717 30810,4765 30857,4770 30913,4766 31011,4750 31118,4768 31209,4781 31224,4775 31311,4742 31364,4711 31424,4658
+Freienbrinker Saum: guter Asphalt	Q0 30124,4664 30254,4692 30369,4697 30478,4715 30527,4724 30588,4720 30636,4717 30686,4731 30810,4765 30857,4770 30913,4766 31011,4750 31118,4768 31209,4781 31224,4775 31311,4742 31364,4711 31424,4658
 #: by: ^^^
 #: by: Bodo Schlecht:
 Winkelriedstr.: guter Asphalt	Q0 7096,17079 7085,17113 7077,17186 7069,17204 7031,17323
@@ -8725,7 +8727,7 @@ Teikeweg: Beton	Q0 9400,4525 9501,4528 9677,4518
 #: by: Philipp Günther:
 Nantesstr.: guter Asphalt	Q0 11200,21689 11251,22022 11231,22065 11077,22236
 #: by: wtkoch...:
-Vogelsdorfer Steig: Beton	Q0 30978,4331 31118,4768
+Vogelsdorfer Steig: Beton	Q0 30978,4331 31043,4535 31118,4768
 #: by: Josephine Jacob vvv
 Helgiweg: Asphalt	Q0 14459,18589 14517,18410
 Helgiweg: Asphalt	Q0 14533,18413 14565,18226 14576,18163 14595,18050
