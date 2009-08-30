@@ -218,6 +218,10 @@ sub create_socket_server {
 		 }
 
 		 my $f = scalar <CHILD_RDR>;
+		 if (!defined $f) { # eof?
+		     close CHILD_RDR;
+		     return;
+		 }
 		 $compartment->reval($f);
 		 if ($@ || ref $args ne 'ARRAY') {
 		     warn $@;
