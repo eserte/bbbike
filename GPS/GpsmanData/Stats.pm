@@ -64,13 +64,15 @@ sub run_stats {
     my $max_dist_from_start;
 
     for my $chunk (@{ $gpsmandata->Chunks }) {
+	next if $chunk->Type ne $chunk->TYPE_TRACK;
 
 	my $chunk_duration = 0;
 	my $chunk_dist = 0;
 	my $chunk_max_speed = undef;
 	my $chunk_min_speed = undef;
 
-	my $vehicle = $chunk->TrackAttrs->{'srt:vehicle'} || $last_vehicle;
+	my $track_attrs = $chunk->TrackAttrs || {};
+	my $vehicle = $track_attrs->{'srt:vehicle'} || $last_vehicle;
 	$last_vehicle = $vehicle;
 
 	my($chunk_bbox_minx, $chunk_bbox_miny, $chunk_bbox_maxx, $chunk_bbox_maxy);
@@ -160,6 +162,7 @@ sub run_stats {
  FIND_GOAL_WPT: {
 	for(my $chunk_i = $#{ $gpsmandata->Chunks }; $chunk_i >= 0; $chunk_i--) {
 	    my $chunk = $gpsmandata->Chunks->[$chunk_i];
+	    next if $chunk->Type ne $chunk->TYPE_TRACK;
 	    for(my $wpt_i = $#{ $chunk->Track }; $wpt_i >= 0; $wpt_i--) {
 		my $wpt = $chunk->Track->[$wpt_i];
 		next if $wpt->Accuracy > $accepted_accuracy;
