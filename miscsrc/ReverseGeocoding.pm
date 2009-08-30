@@ -104,7 +104,7 @@ use strict;
 	my($px, $py) = split /,/, $pxy;
 
 	my($res) = $self->{geo}->find_closest($type, [$py, $px], {return_geometry=>'False'});
-	$res->name;
+	defined $res ? $res->name : undef;
     }
 }
 
@@ -147,5 +147,9 @@ Different types (road, api, area):
 
 C<-type area> is the default. Note that the bbbike module does not
 have general poi search yet.
+
+Inject location names into track meta files (see L<GPS::GpsmanData::Stats>):
+
+    perl -Mstrict -MYAML::Syck=LoadFile,DumpFile -Imiscsrc -Ilib -MReverseGeocoding -e 'my $rb=ReverseGeocoding->new("bbbike"); my $rc=ReverseGeocoding->new("cloudmade"); for my $file (@ARGV) { my @route_name; my $d = LoadFile $file; next if $d->{route_name}; warn $file; for my $loc (@{$d->{route}||[]}) { my $res = $rb->find_closest($loc, "road"); if (!$res) { warn "   use cloudmade...\n"; $res = $rc->find_closest($loc, "road") . ", " . $rc->find_closest($loc) } push @route_name, $res } $d->{route_name} = \@route_name; DumpFile($file, $d) }' /tmp/trkstats/*.yml
 
 =cut
