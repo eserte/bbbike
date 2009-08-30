@@ -1456,6 +1456,17 @@ sub gps_data_viewer {
 		       $edit->set_accuracies(\@lines, $new_accuracy);
 		       $gps_view->reload;
 		   })->pack(-side => "left");
+	$f->Button(-text => 'Statistics',
+		   -command => sub {
+		       require GPS::GpsmanData::Stats;
+		       require YAML::Syck;
+		       my $stats = GPS::GpsmanData::Stats->new($gps);
+		       $stats->run_stats;
+		       my $tt = $t->Toplevel(-title => 'GPS data statistics');
+		       my $txt = $tt->Scrolled('ROText', -width => 30, -scrollbars => 'osoe')->pack(qw(-fill both -expand 1));
+		       $txt->insert('end', YAML::Syck::Dump($stats->human_readable));
+		       $tt->Button(-text => 'Close', -command => sub { $tt->destroy })->pack;
+		   })->pack(-side => 'left');
     }
 }
 
