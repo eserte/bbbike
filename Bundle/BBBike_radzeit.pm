@@ -37,9 +37,9 @@ String::Approx 2.7	- oder man verwendet agrep (mindestens Version 3.0)
 
 GD 1.18	- zum On-the-fly-Erzeugen von Grafiken beim CGI-Programm
 
-PDF::Image::GIFImage	- Erzeugung der Route als PDF-Dokument --- das ist die neueste Version wie auf sourceforge erhältlich! (http://prdownloads.sourceforge.net/perl-pdf/perl-pdf-0.06.1b.tar.gz?download oder direkt: http://heanet.dl.sourceforge.net/sourceforge/perl-pdf/perl-pdf-0.06.1b.tar.gz)
+PDF::Create 0.06	- Erzeugung der Route als PDF-Dokument
 
-Class::Accessor	- für GPS::GpsmanData, die ESRI-Module etc.
+Class::Accessor	- für die ESRI-Module etc.
 
 Template	- für BBBikeDraw::MapServer
 
@@ -56,6 +56,8 @@ Archive::Zip	- Zum Zippen der BBBike-Daten in bbbike-data.cgi
 Geo::SpaceManager 0.91	- Intelligentere Labelplatzierung, bei der PDF-Ausgabe verwendet
 
 WWW::Mechanize	- Für Testen des CGI-Interfaces
+
+WWW::Mechanize::FormFiller	- Für Testen des CGI-Interfaces
 
 
 =head1 DESCRIPTION

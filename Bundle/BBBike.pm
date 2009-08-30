@@ -65,6 +65,8 @@ XML::Twig	- alternativ für das Parsen und Erzeugen von GPX-Dateien, benötigt XML
 
 YAML	- optional für YAML-Dumps der BBBike-Route sowie fuer temp_blockings
 
+YAML::Syck	- optional für die Testsuite, könnte auch YAML.pm in Zukunft ersetzen
+
 Mail::Mailer 1.53	- falls man aus bbbike heraus E-Mails mit der Routenbeschreibung verschicken will
 
 MIME::Lite	- Versenden von Benutzer-Kommentaren im Webinterface
@@ -85,7 +87,7 @@ Algorithm::Permute 0.08	- Für das Problem des Handlungsreisenden (schnellerer Pe
 
 List::Permutor	- Für das Problem des Handlungsreisenden (langsamerer Permutor)
 
-PDF::Image::GIFImage	- Erzeugung der Route als PDF-Dokument --- das ist die neueste Version wie auf sourceforge erhältlich! (http://prdownloads.sourceforge.net/perl-pdf/perl-pdf-0.06.1b.tar.gz?download oder direkt: http://heanet.dl.sourceforge.net/sourceforge/perl-pdf/perl-pdf-0.06.1b.tar.gz)
+PDF::Create 0.06	- Erzeugung der Route als PDF-Dokument
 
 Font::Metrics::Helvetica	- Für die Reparatur der Zeichenbreitentabellen in PDF::Create
 
@@ -97,7 +99,7 @@ Statistics::Descriptive
 
 Math::MatrixReal
 
-Class::Accessor	- für GPS::GpsmanData, die ESRI-Module etc.
+Class::Accessor	- für die ESRI-Module etc.
 
 Template	- für BBBikeDraw::MapServer
 
@@ -121,9 +123,13 @@ IPC::Run	- hilft bei der sicheren Ausführung von externen Kommandos (insbesonder
 
 Imager	- additional optional BBBikeDraw backend for PNG graphics
 
+Imager::Screenshot	- better screenshot module
+
 Image::ExifTool	- für geocode_images
 
 SVG	- additional optional BBBikeDraw backend for SVG graphics
+
+GD::SVG 0.31	- another SVG alternative, not used yet in production
 
 Object::Iterate	- Notwendig für die bbd2-esri-Konvertierung
 
@@ -151,31 +157,41 @@ GPS::Garmin	- für GPS-Upload
 
 Geo::SpaceManager 0.91	- Intelligentere Labelplatzierung, bei der PDF-Ausgabe verwendet
 
+Geo::Distance::XS	- Berechnung von Entfernungen für polare Koordinaten, möglicherweise schneller als Math::Trig
+
 Tk::ExecuteCommand	- Bessere Fehlerberichte im temp_blockings-Editor
 
 Algorithm::Diff	- Unterschiede im temp_blockings-Editor anzeigen
 
 Sort::Naturally	- Für natürliches Sortieren von bbd-Dateien
 
-WWW::Search::Google	- Suche in luise-berlin
+Yahoo::Search	- Suche in luise-berlin
 
 Geo::Coder::Google	- Geocoding über Googlemaps
 
 Geo::Coder::Yahoo	- Geocoding über Yahoo
 
-Image::Info
+Geo::Coder::Bing	- Geocoding über Bing
+
+Geo::Cloudmade	- Geocoding über Cloudmade
+
+Image::Info 1.29
 
 Test::More
 
 Test::Differences
 
-Test::NoWarnings
-
 WWW::Mechanize	- Für Testen des CGI-Interfaces
+
+WWW::Mechanize::FormFiller	- Für Testen des CGI-Interfaces
 
 Devel::Leak	- Für Memory-Leak-Tests
 
 Text::Table
+
+Text::Unidecode	- Für das Neu-Erzeugen der .bbd-Dateien in data
+
+Data::Compare	- Für das Neu-Erzeugen der .bbd-Dateien in data
 
 
 =head1 DESCRIPTION

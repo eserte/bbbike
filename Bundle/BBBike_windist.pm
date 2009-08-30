@@ -57,7 +57,7 @@ Algorithm::Permute 0.08	- Für das Problem des Handlungsreisenden (schnellerer Pe
 
 List::Permutor	- Für das Problem des Handlungsreisenden (langsamerer Permutor)
 
-PDF::Image::GIFImage	- Erzeugung der Route als PDF-Dokument --- das ist die neueste Version wie auf sourceforge erhältlich! (http://prdownloads.sourceforge.net/perl-pdf/perl-pdf-0.06.1b.tar.gz?download oder direkt: http://heanet.dl.sourceforge.net/sourceforge/perl-pdf/perl-pdf-0.06.1b.tar.gz)
+PDF::Create 0.06	- Erzeugung der Route als PDF-Dokument
 
 Win32::API	- Für das Ermitteln der verfügbaren Desktop-Größe
 
@@ -65,7 +65,7 @@ Win32::Registry
 
 Win32::Shortcut
 
-Class::Accessor	- für GPS::GpsmanData, die ESRI-Module etc.
+Class::Accessor	- für die ESRI-Module etc.
 
 IPC::Run	- hilft bei der sicheren Ausführung von externen Kommandos (insbesondere für Win32)
 
