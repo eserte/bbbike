@@ -215,6 +215,10 @@ my @req_table =
    'Geocoding über Googlemaps'],
   [qw/Geo::Coder::Yahoo	0	all	0	plugin/,
    'Geocoding über Yahoo'],
+  [qw/Geo::Coder::Bing	0	all	0	plugin/,
+   'Geocoding über Bing'],
+  [qw/Geo::Cloudmade	0	all	0	plugin/,
+   'Geocoding über Cloudmade'],
 
   [qw/Image::Info	1.29	all	0	test/],
   [qw/Test::More	0	all	0	test/],
