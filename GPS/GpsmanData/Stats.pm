@@ -207,6 +207,6 @@ Dump statistics for a track:
 Dump statistics for all tracks in F<misc/gps_data>:
 
     mkdir /tmp/trkstats
-    perl -MGPS::GpsmanData::Any -MGPS::GpsmanData::Stats -MYAML=DumpFile -MFile::Basename -e 'for $f (glob("misc/gps_data/*.trk misc/gps_data/generated/*.trk")) { $dest = "/tmp/trkstats/"; if ($f =~ m{/generated/}) { $dest .= "generated-" } $dest .= basename($f); $dest .= ".yml"; next if -s $dest; warn $dest; $g = GPS::GpsmanData::Any->load($f); $s = GPS::GpsmanData::Stats->new($g); $s->run_stats; DumpFile $dest, $s->human_readable }'
+    perl -MGPS::GpsmanData::Any -MGPS::GpsmanData::Stats -MYAML=DumpFile -MFile::Basename -e 'for $f (glob("misc/gps_data/*.trk misc/gps_data/generated/*.trk")) { $dest = "/tmp/trkstats/"; if ($f =~ m{/generated/}) { $dest .= "generated-" } $dest .= basename($f); $dest .= ".yml"; next if -s $dest && -M $dest < -M $f; warn $dest; $g = GPS::GpsmanData::Any->load($f); $s = GPS::GpsmanData::Stats->new($g); $s->run_stats; DumpFile $dest, $s->human_readable }'
 
 =cut
