@@ -193,7 +193,7 @@ sub load_gpx {
 		push @{ $gpsman->{Chunks} }, $trkseg;
 		undef $trkseg;
 	    }
-	} elsif ($wpt_or_trk->name eq 'metadata') {
+	} elsif ($wpt_or_trk->name =~ m{^(?:metadata|extensions)$}) {
 	    # ignore
 	} else {
 	    die "No support for " . $wpt_or_trk->name . " planned";
