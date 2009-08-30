@@ -38,15 +38,32 @@ use strict;
 	$Karte::Polar::obj = $Karte::Polar::obj if 0; # cease -w
 	require Karte::Standard;
 
-	my $s = MultiStrassen->new('orte', 'orte2');
+	bless { }, $class;
+    }
 
-	bless { 's' => $s }, $class;
+    sub _get_area_grid {
+	my $self = shift;
+	if (!$self->{area}) {
+	    $self->{area} = MultiStrassen->new('orte', 'orte2');
+	}
+	$self->{area};
+    }
+
+    sub _get_road_grid {
+	my $self = shift;
+	if (!$self->{road}) {
+	    $self->{road} = MultiStrassen->new('strassen', 'landstrassen', 'landstrassen2');
+	}
+	$self->{road};
     }
 
     sub find_closest {
-	my($self, $pxy, $type) = @_; # XXX $type is currently ignored
+	my($self, $pxy, $type) = @_;#
+	$type = 'area' if !$type;
 	my($sxy) = join ',', $Karte::Polar::obj->map2standard(split /,/, $pxy);
-	my $res = $self->{'s'}->nearest_point($sxy, FullReturn => 1);
+	my $get_grid_method = '_get_' . $type . '_grid'; # 'poi' is unsupported
+	my $grid_obj = $self->$get_grid_method;
+	my $res = $grid_obj->nearest_point($sxy, FullReturn => 1);
 	if ($res) {
 	    my $name = $res->{StreetObj}[0];
 	    $name =~ s{\|}{ }g; # e.g. "Rollberg|bei Eickstedt"
@@ -123,5 +140,12 @@ Different geocoding modules:
     perl -module bbbike miscsrc/ReverseGeocoding.pm 13.5 52.5
 
     perl -module cloudmade miscsrc/ReverseGeocoding.pm 13.5 52.5
+
+Different types (road, api, area):
+
+    perl -module bbbike -type road miscsrc/ReverseGeocoding.pm 13.5 52.5
+
+C<-type area> is the default. Note that the bbbike module does not
+have general poi search yet.
 
 =cut
