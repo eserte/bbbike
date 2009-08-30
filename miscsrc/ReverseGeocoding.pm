@@ -49,6 +49,9 @@ return 1 if caller;
     require Getopt::Long;
     my $type;
     Getopt::Long::GetOptions('type=s' => \$type) or die "usage?";
+    if (@ARGV == 1) {
+	@ARGV = split /,/, $ARGV[0];
+    }
     die "Expects longitude and latitude" if @ARGV != 2;
     my($px, $py) = @ARGV;
     print __PACKAGE__->new->find_closest("$px,$py", $type), "\n";
