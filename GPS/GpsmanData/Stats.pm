@@ -65,7 +65,9 @@ sub run_stats {
 	my $chunk_dist = 0;
 	my $chunk_max_speed = undef;
 	my $chunk_min_speed = undef;
+
 	my $vehicle = $chunk->TrackAttrs->{'srt:vehicle'} || $last_vehicle;
+	$last_vehicle = $vehicle;
 
 	my($chunk_bbox_minx, $chunk_bbox_miny, $chunk_bbox_maxx, $chunk_bbox_maxy);
 
