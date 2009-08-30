@@ -12,35 +12,51 @@
 # WWW:  http://www.rezic.de/eserte/
 #
 
-package ReverseGeocoding;
-
 use strict;
-use Geo::Cloudmade;
 
-sub new {
-    my $class = shift;
+{
+    package ReverseGeocoding;
 
-    my $apikey = do {
-	my $file = "$ENV{HOME}/.cloudmadeapikey";
-	open my $fh, $file
-	    or main::status_message("Cannot get key from $file: $!", "die");
-	local $_ = <$fh>;
-	chomp;
-	$_;
-    };
-
-    my $geo = Geo::Cloudmade->new($apikey);
-
-    bless { geo => $geo }, $class;
+    sub new {
+	my $class = shift;
+	my $using = shift || 'bbbike';
+	my $factory_class = 'ReverseGeocoding::' . ucfirst($using);
+	$factory_class->new;
+    }
 }
 
-sub find_closest {
-    my($self, $pxy, $type) = @_;
-    $type = 'area' if !$type;
-    my($px, $py) = split /,/, $pxy;
+{
+    package ReverseGeocoding::Cloudmade;
+    use vars qw(@ISA);
+    @ISA = 'ReverseGeocoding';
 
-    my($res) = $self->{geo}->find_closest($type, [$py, $px], {return_geometry=>'False'});
-    $res->name;
+    sub new {
+	my $class = shift;
+	
+	require Geo::Cloudmade;
+
+	my $apikey = do {
+	    my $file = "$ENV{HOME}/.cloudmadeapikey";
+	    open my $fh, $file
+		or main::status_message("Cannot get key from $file: $!", "die");
+	    local $_ = <$fh>;
+	    chomp;
+	    $_;
+	};
+
+	my $geo = Geo::Cloudmade->new($apikey);
+
+	bless { geo => $geo }, $class;
+    }
+
+    sub find_closest {
+	my($self, $pxy, $type) = @_;
+	$type = 'area' if !$type;
+	my($px, $py) = split /,/, $pxy;
+
+	my($res) = $self->{geo}->find_closest($type, [$py, $px], {return_geometry=>'False'});
+	$res->name;
+    }
 }
 
 return 1 if caller;
@@ -54,7 +70,7 @@ return 1 if caller;
     }
     die "Expects longitude and latitude" if @ARGV != 2;
     my($px, $py) = @ARGV;
-    print __PACKAGE__->new->find_closest("$px,$py", $type), "\n";
+    print ReverseGeocoding->new('cloudmade')->find_closest("$px,$py", $type), "\n";
 }
 
 __END__
