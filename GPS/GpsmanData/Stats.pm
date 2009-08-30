@@ -60,7 +60,11 @@ sub run_stats {
     my @chunk_stats;
     my $last_vehicle;
 
+    my($start_wpt, $farthest_wpt, $goal_wpt);
+    my $max_dist_from_start;
+
     for my $chunk (@{ $gpsmandata->Chunks }) {
+
 	my $chunk_duration = 0;
 	my $chunk_dist = 0;
 	my $chunk_max_speed = undef;
@@ -74,6 +78,17 @@ sub run_stats {
 	my $last_wpt;
 	for my $wpt (@{ $chunk->Track }) {
 	    next if $wpt->Accuracy > $accepted_accuracy;
+
+	    if (!defined $start_wpt) {
+		$start_wpt = $wpt;
+	    } else {
+		my $dist_from_start = $chunk->wpt_dist($start_wpt, $wpt);
+		if (!defined $max_dist_from_start || $dist_from_start > $max_dist_from_start) {
+		    $max_dist_from_start = $dist_from_start;
+		    $farthest_wpt = $wpt;
+		}
+	    }
+
 	    if (defined $last_wpt) {
 		my $time0 = $last_wpt->Comment_to_unixtime($chunk);
 		my $time1 = $wpt->Comment_to_unixtime($chunk);
@@ -141,6 +156,26 @@ sub run_stats {
 	    $bbox_maxy = $chunk_bbox_maxy;
 	}
     }
+    
+ FIND_GOAL_WPT: {
+	for(my $chunk_i = $#{ $gpsmandata->Chunks }; $chunk_i >= 0; $chunk_i--) {
+	    my $chunk = $gpsmandata->Chunks->[$chunk_i];
+	    for(my $wpt_i = $#{ $chunk->Track }; $wpt_i >= 0; $wpt_i--) {
+		my $wpt = $chunk->Track->[$wpt_i];
+		next if $wpt->Accuracy > $accepted_accuracy;
+		$goal_wpt = $wpt;
+		last FIND_GOAL_WPT;
+	    }
+	}
+    }
+
+    my @route_wpts;
+    if (defined $farthest_wpt && defined $goal_wpt && 
+	$farthest_wpt->Longitude . ',' . $farthest_wpt->Latitude ne $goal_wpt->Longitude . ',' . $goal_wpt->Latitude) {
+	push @route_wpts, $farthest_wpt;
+    }
+    unshift @route_wpts, $start_wpt if defined $start_wpt;
+    push @route_wpts, $goal_wpt if defined $goal_wpt;
 
     my %per_vehicle_stats;
     for my $chunk_stat (@chunk_stats) {
@@ -162,6 +197,7 @@ sub run_stats {
 		   avg_speed => ($duration ? $dist/$duration : undef),
 		   vehicles  => [keys %vehicles],
 		   bbox      => [$bbox_minx, $bbox_miny, $bbox_maxx, $bbox_maxy],
+		   route     => [map { $_->Longitude . ',' . $_->Latitude } @route_wpts],
 		 });
 }
 
@@ -207,6 +243,6 @@ Dump statistics for a track:
 Dump statistics for all tracks in F<misc/gps_data>:
 
     mkdir /tmp/trkstats
-    perl -MGPS::GpsmanData::Any -MGPS::GpsmanData::Stats -MYAML=DumpFile -MFile::Basename -e 'for $f (glob("misc/gps_data/*.trk misc/gps_data/generated/*.trk")) { $dest = "/tmp/trkstats/"; if ($f =~ m{/generated/}) { $dest .= "generated-" } $dest .= basename($f); $dest .= ".yml"; next if -s $dest && -M $dest < -M $f; warn $dest; $g = GPS::GpsmanData::Any->load($f); $s = GPS::GpsmanData::Stats->new($g); $s->run_stats; DumpFile $dest, $s->human_readable }'
+    perl -MGPS::GpsmanData::Any -MGPS::GpsmanData::Stats -MYAML=DumpFile -MFile::Basename -e 'for $f (@ARGV) { $dest = "/tmp/trkstats/"; if ($f =~ m{/generated/}) { $dest .= "generated-" } $dest .= basename($f); $dest .= ".yml"; next if -s $dest && -M $dest < -M $f; warn $dest; $g = GPS::GpsmanData::Any->load($f); $s = GPS::GpsmanData::Stats->new($g); $s->run_stats; DumpFile $dest, $s->human_readable }' misc/gps_data/*.trk misc/gps_data/generated/*.trk
 
 =cut
