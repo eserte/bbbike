@@ -140,7 +140,19 @@ sub run_stats {
 	}
     }
 
+    my %per_vehicle_stats;
+    for my $chunk_stat (@chunk_stats) {
+	if (defined(my $vehicle = $chunk_stat->{vehicle})) {
+	    $per_vehicle_stats{$vehicle}->{duration} += $chunk_stat->{duration} if defined $chunk_stat->{duration};
+	    $per_vehicle_stats{$vehicle}->{dist}     += $chunk_stat->{dist}     if defined $chunk_stat->{dist};
+	}
+    }
+    for my $key (keys %per_vehicle_stats) {
+	$per_vehicle_stats{$key}->{avg_speed} = (defined $per_vehicle_stats{$key}->{duration} ? $per_vehicle_stats{$key}->{dist}/$per_vehicle_stats{$key}->{duration} : undef);
+    }
+
     $self->Stats({ chunk_stats => \@chunk_stats,
+		   per_vehicle_stats => \%per_vehicle_stats,
 		   duration  => $duration,
 		   dist      => $dist,
 		   max_speed => $max_speed,
@@ -172,6 +184,9 @@ sub human_readable {
     $make_dump_output->($stats);
     for my $chunk (@{ $stats->{chunk_stats} }) {
 	$make_dump_output->($chunk);
+    }
+    for my $vehicle_data (values %{ $stats->{per_vehicle_stats} }) {
+	$make_dump_output->($vehicle_data);
     }
 
     $stats;
