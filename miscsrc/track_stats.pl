@@ -564,4 +564,11 @@ __END__
    rounding rules. This does not need to be true, especially if both
    steps was done on different machines.
 
+=head1 SEE ALSO
+
+L<GPS::GpsmanData::Stats> - a module providing statistics about one
+track file (length, duration, min/avg/max speed etc.). This script
+does statistics using multiple tracks between the same start and goal
+region.
+
 =cut
