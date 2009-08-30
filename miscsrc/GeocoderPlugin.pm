@@ -168,6 +168,29 @@ sub geocoder_dialog {
 			     },
 			     'label' => 'Bing',
 			   },
+		'Cloudmade' => { 'require' => sub { require Geo::Cloudmade },
+				 'new' => sub {
+				     my $apikey = do {
+					 my $file = "$ENV{HOME}/.cloudmadeapikey";
+					 open my $fh, $file
+					     or main::status_message("Cannot get key from $file: $!", "die");
+					 local $_ = <$fh>;
+					 chomp;
+					 $_;
+				     };
+				     my $cloudmade = Geo::Cloudmade->new($apikey);
+				     bless { cloudmade => $cloudmade }, 'Geo::Coder::MyCloudmade';
+				 },
+				 extract_addr => sub {
+				     my $loc = shift;
+				     $loc->name;
+				 },
+				 extract_loc => sub {
+				     my $loc = shift;
+				     ($loc->centroid->long, $loc->centroid->lat);
+				 },
+				 'label' => 'Cloudmade (needs API key)',
+			       },
 	       );
     for my $_api (sort keys %apis) {
 	my $label = $apis{$_api}->{'label'} || $_api;
@@ -183,12 +206,18 @@ sub geocoder_dialog {
     my $okb =
 	$bf->Button(Name => "ok",
 		    -command => sub {
-			my $mod = 'Geo::Coder::' . $geocoder_api;
-			eval "require $mod";
+			my $gc = $apis{$geocoder_api};
+			
+			if ($gc->{require}) {
+			    eval { $gc->{require}->() };
+			} else {
+			    my $mod = 'Geo::Coder::' . $geocoder_api;
+			    eval "require $mod";
+			}
 			if ($@) {
 			    main::status_message($@, "die");
 			}
-			my $gc = $apis{$geocoder_api};
+
 			my $geocoder = $gc->{new}->();
 			my $location = $geocoder->geocode(location => $loc);
 			$gc->{fix_result}->($location) if $gc->{fix_result};
@@ -212,6 +241,16 @@ sub geocoder_dialog {
 			destroy_geocoder_dialog();
 		    })->pack(-side => "left");
     pack_buttonframe($bf, [$okb, $cancelb]);
+}
+
+{
+    package Geo::Coder::MyCloudmade;
+    sub geocode {
+	my($self, %args) = @_;
+	my $loc = $args{location};
+	my($res) = $self->{cloudmade}->find($loc, {results=>1});
+	$res;
+    }
 }
 
 1;
