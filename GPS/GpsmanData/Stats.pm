@@ -182,6 +182,12 @@ sub run_stats {
 	if (defined(my $vehicle = $chunk_stat->{vehicle})) {
 	    $per_vehicle_stats{$vehicle}->{duration} += $chunk_stat->{duration} if defined $chunk_stat->{duration};
 	    $per_vehicle_stats{$vehicle}->{dist}     += $chunk_stat->{dist}     if defined $chunk_stat->{dist};
+	    $per_vehicle_stats{$vehicle}->{min_speed} = $chunk_stat->{min_speed}
+		if defined $chunk_stat->{min_speed} && (!defined $per_vehicle_stats{$vehicle}->{min_speed} ||
+							$per_vehicle_stats{$vehicle}->{min_speed} > $chunk_stat->{min_speed});
+	    $per_vehicle_stats{$vehicle}->{max_speed} = $chunk_stat->{max_speed}
+		if defined $chunk_stat->{max_speed} && (!defined $per_vehicle_stats{$vehicle}->{max_speed} ||
+							$per_vehicle_stats{$vehicle}->{max_speed} < $chunk_stat->{max_speed});
 	}
     }
     for my $key (keys %per_vehicle_stats) {
