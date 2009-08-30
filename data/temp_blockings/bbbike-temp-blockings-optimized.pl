@@ -1069,15 +1069,7 @@ userdel	2::inwork 7160,11225 6851,11346
          'type' => 'handicap'
        },
        undef,
-       {
-         'until' => 1251583200,
-         'text' => 'B 167 Marienwerderstr. OD Finowfurt, zw. Lehmschulzenstr. u. Tankstelle Straßemerneuerung Vollsperrung 18.08.2009-29.08.2009 ',
-         'from' => 1250460000,
-         'id' => 1755,
-         'data' => 'userdel	q4::inwork 28575,49756 27626,49928
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1129,15 +1121,7 @@ userdel	2::inwork 7160,11225 6851,11346
          'type' => 'handicap'
        },
        undef,
-       {
-         'until' => 1251583200,
-         'text' => 'L 038 Falkenberg - Fürstenwalde zw. Berkenbrück u. Fürstenwalde Deckenerneuerung Vollsperrung 16.07.2009-29.08.2009 ',
-         'from' => 1247608800,
-         'id' => 1766,
-         'data' => 'userdel	2::inwork 58249,-5090 59449,-5351 60003,-5190 60762,-5117 60874,-5013 60958,-4995
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'until' => 1251756000,
@@ -1189,15 +1173,7 @@ userdel	2::inwork 7160,11225 6851,11346
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1251583200,
-         'text' => 'L 023 Britz - Joachimsthal Bereich AS Chorin Grundhafter Ausbau Vollsperrung 03.08.2009-29.08.2009 ',
-         'from' => 1249164000,
-         'id' => 1786,
-         'data' => 'userdel	2::inwork 35405,59832 35962,59463
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1243,7 +1219,7 @@ userdel	2::inwork 7160,11225 6851,11346
        {
          'source_id' => 'http://www.potsdam.de/cms/beitrag/10051448/757395/',
          'until' => 1260831600,
-         'text' => 'Fußgängertunnel Lange Brücke: unter Umständen vollständig gesperrt (September 2009 - Dezember 2009)',
+         'text' => 'Fußgängertunnel Lange Brücke: vollständig gesperrt (September 2009 - Dezember 2009)',
          'from' => 1251756000,
          'id' => 1796,
          'data' => 'userdel	2::inwork -12669,-1768 -12608,-1715
@@ -1520,15 +1496,7 @@ Neuer Garten (am Portierhaus) - Weinmeisterstr.: Weg ist nur zwischen 6 Uhr bis 
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1251583200,
-         'text' => 'L 071 E.-Thälmann-Str. OL Schönewalde, zw. Str. d. Jugend u. Parkweg Pflaster- / Kanalarbeiten Vollsperrung 10.08.2009-29.08.2009 ',
-         'from' => 1249768800,
-         'id' => 1831,
-         'data' => 'userdel	q4::inwork -932,-66045 -575,-65978 60,-66035
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1251669600,
          'text' => 'L 513 Bahnhofstr., Rinchaussee OL Burg, zw. Hauptstr. u. Jugendherbergsweg Festumz. Heimat-u.Trachtenfest Vollsperrung 30.08.2009-30.08.2009 ',
@@ -1557,15 +1525,7 @@ Neuer Garten (am Portierhaus) - Weinmeisterstr.: Weg ist nur zwischen 6 Uhr bis 
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1251583200,
-         'text' => 'B 087 Lübben - Luckau von AS Duben bis OA Duben Deckenerneuerung Vollsperrung 27.08.2009-29.08.2009 ',
-         'from' => 1251237600,
-         'id' => 1836,
-         'data' => 'userdel	2::inwork 39355,-56021 39767,-55820
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1253570400,
          'text' => 'B 115 Am Spreeufer OL Lübben, zw. Krz. B87 u. Brückenplatz Stadtfest Vollsperrung 15.09.2009-21.09.2009 ',

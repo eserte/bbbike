@@ -537,11 +537,8 @@ Nuthestr. -> Uferweg: nicht passierbarer Mittelstreifen	3::igndisp -11549,-1169 
 Am Babelsberger Park -> Nuthestr.: nicht passierbarer Mittelstreifen	3::igndisp -11460,-1098 -11549,-1169 -11463,-1232
 Nuthestr. -> Am Babelsberger Park: nicht passierbarer Mittelstreifen	3::igndisp -11613,-1125 -11549,-1169 -11460,-1098
 nicht passierbarer Mittelstreifen	3nocross::ignrte -13238,-1569 -13375,-1546 -13516,-1517
-Lindenstr. -> Breite Str. (B1): nicht passierbarer Mittelstreifen	3::igndisp -13366,-1499 -13375,-1546 -13238,-1569
-Breite Str. (B1) -> Lindenstr.: nicht passierbarer Mittelstreifen	3::igndisp -13516,-1517 -13375,-1546 -13366,-1499
 Straßenbahntrasse	3nocross::ignrte -12719,-1661 -12659,-1700 -12567,-1817
 Mercure-Hotel -> Am Alten Markt: Straßenbahntrasse	3::igndisp -12681,-1726 -12659,-1700 -12643,-1694
-Mercure-Hotel -> Lange Brücke: Straßenbahntrasse	3::igndisp -12681,-1726 -12659,-1700 -12719,-1661
 Lange Brücke -> Mercure-Hotel: Straßenbahntrasse	3::igndisp -12567,-1817 -12659,-1700 -12681,-1726
 Am Alten Markt -> Mercure-Hotel: Straßenbahntrasse	3::igndisp -12643,-1694 -12659,-1700 -12681,-1726
 Am Alten Markt -> Lange Brücke: Straßenbahntrasse	3::igndisp -12643,-1694 -12659,-1700 -12567,-1817
@@ -553,9 +550,7 @@ Zimmerstr.	1 -13646,-1168 -13876,-1226
 Platz der Einheit	1 -12768,-1069 -12755,-1131 -12718,-1327
 Puschkinallee	1 -13042,807 -12912,783 -12868,738 -12827,629 -12815,554 -12811,533
 Geschwister-Scholl-Str.	1 -14215,-1687 -14151,-1656 -14115,-1678
-Straßenbahntrasse, nur für Fußgänger bequem passierbar	3nocross::ignrte -12719,-1661 -12755,-1585 -12773,-1544 -12795,-1499 -12833,-1365
-Friedrich-Ebert-Str. -> Am Alten Markt: Straßenbahntrasse, nur für Fußgänger bequem passierbar	3::igndisp -12795,-1499 -12773,-1544 -12583,-1552
-Am Alten Markt -> Friedrich-Ebert-Str.: Straßenbahntrasse, nur für Fußgänger bequem passierbar	3::igndisp -12583,-1552 -12773,-1544 -12755,-1585
+Straßenbahntrasse	3nocross::ignrte -12773,-1544 -12795,-1499 -12833,-1365
 tragen (Treppe, 75 Stufen und etliche Rampenabschnitte)	0:180:-201 -13772,-623
 Brücke mittlerweile gesperrt	2 -19183,7299 -19150,7320
 Prof.-Dr.-Helmert-Str.: Schranke	BNP:3:-93 -7969,-1659
@@ -1578,7 +1573,7 @@ Brücke über Panke: zur Zeit Bauarbeiten, keine Durchfahrt möglich	2:inwork 7753,
 Kynaststraße: Abriss und Neubau bis ca. 2010-03-01	2:inwork 14988,11130 14897,10935 14881,10864 14867,10802 14828,10628 14802,10505 14795,10473 14766,10372 14724,10297
 Am Pankepark: z.Zt. noch Baustraße, Fertigstellung um 2011-01-01, dann als Fußgänger/Radweg konzipiert	2:inwork 8184,14052 8290,14119
 Am Pankepark: z.Zt. noch Baustraße, Fertigstellung um 2011-01-01	2:inwork 8290,14119 8246,14201 8138,14148
-Rückbau der Fr.-Ebert-Str. zwischen Breite Str. und Platz der Einheit, Bauarbeiten bis Ende 2009. Umfahrung über Alten Markt notwendig.	1:inwork -12719,-1661 -12755,-1585 -12773,-1544
+Rückbau der Fr.-Ebert-Str. zwischen Breite Str. und Platz der Einheit, Bauarbeiten bis Ende 2009. Umfahrung über Alten Markt notwendig.	1:inwork -12659,-1700 -12719,-1661 -12755,-1585 -12773,-1544
 Rückbau der Fr.-Ebert-Str., kein Zugang zur Schwertfegerstr.	2:inwork -12870,-1493 -12795,-1499
 Behlertstr.	1 -12370,-354 -12500,-339 -12621,-359 -12821,-417 -12865,-425
 tragen (Treppe)	0:30:-73 2247,5068

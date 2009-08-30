@@ -7345,7 +7345,7 @@ EOF
        text  => 'Reichstagufer (Mitte) in beiden Richtungen Baustelle, Straße vollständig gesperrt, Fußgänger können passieren',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2009-07-12
+#: last_checked: 2009-08-29
 userdel	q4::inwork 9209,12795 9280,12883
 EOF
      },
@@ -11104,7 +11104,7 @@ EOF
      },
      { from  => 1215868573, # 2008-03-23 21:45 1206305145 -> now in gesperrt-orig
        until => 1215868579, # 2009-12-31 23:59 1262300399
-       text  => 'Rückbau der Fr.-Ebert-Str. zwischen Breiter Str. und Platz der Einheit, Bauarbeiten bis Ende 2009. Unter Umständen Umfahrung über Alten Markt notwendig. ',
+       text  => 'Rückbau der Fr.-Ebert-Str. zwischen Breite Str. und Platz der Einheit, Bauarbeiten bis Ende 2009. Unter Umständen Umfahrung über Alten Markt notwendig. ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork -12719,-1661 -12755,-1585 -12773,-1544
@@ -15210,7 +15210,7 @@ EOF
      },
      { from  => 1251756000, # 2009-09-01 00:00
        until => 1260831600, # 2009-12-15 00:00
-       text  => 'Fußgängertunnel Lange Brücke: unter Umständen vollständig gesperrt (September 2009 - Dezember 2009)',
+       text  => 'Fußgängertunnel Lange Brücke: vollständig gesperrt (September 2009 - Dezember 2009)',
        type  => 'gesperrt',
        source_id => 'http://www.potsdam.de/cms/beitrag/10051448/757395/',
        data  => <<EOF,
