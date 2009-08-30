@@ -137,7 +137,7 @@ sub run_stats {
 	if (defined $chunk_bbox_maxx && (!defined $bbox_maxx || $bbox_maxx < $chunk_bbox_maxx)) {
 	    $bbox_maxx = $chunk_bbox_maxx;
 	}
-	if (defined $chunk_bbox_maxy && (!defined $bbox_maxy || $bbox_maxy > $chunk_bbox_maxy)) {
+	if (defined $chunk_bbox_maxy && (!defined $bbox_maxy || $bbox_maxy < $chunk_bbox_maxy)) {
 	    $bbox_maxy = $chunk_bbox_maxy;
 	}
     }
@@ -150,7 +150,7 @@ sub run_stats {
 	}
     }
     for my $key (keys %per_vehicle_stats) {
-	$per_vehicle_stats{$key}->{avg_speed} = (defined $per_vehicle_stats{$key}->{duration} ? $per_vehicle_stats{$key}->{dist}/$per_vehicle_stats{$key}->{duration} : undef);
+	$per_vehicle_stats{$key}->{avg_speed} = ($per_vehicle_stats{$key}->{duration} ? $per_vehicle_stats{$key}->{dist}/$per_vehicle_stats{$key}->{duration} : undef);
     }
 
     $self->Stats({ chunk_stats => \@chunk_stats,
@@ -203,5 +203,10 @@ __END__
 Dump statistics for a track:
 
     perl -MGPS::GpsmanData::Any -MGPS::GpsmanData::Stats -MYAML -e '$g = GPS::GpsmanData::Any->load(shift); $s = GPS::GpsmanData::Stats->new($g); $s->run_stats; print Dump $s->human_readable' /tmp/20090829.trk
+
+Dump statistics for all tracks in F<misc/gps_data>:
+
+    mkdir /tmp/trkstats
+    perl -MGPS::GpsmanData::Any -MGPS::GpsmanData::Stats -MYAML=DumpFile -MFile::Basename -e 'for $f (glob("misc/gps_data/*.trk misc/gps_data/generated/*.trk")) { $dest = "/tmp/trkstats/"; if ($f =~ m{/generated/}) { $dest .= "generated-" } $dest .= basename($f); $dest .= ".yml"; next if -s $dest; warn $dest; $g = GPS::GpsmanData::Any->load($f); $s = GPS::GpsmanData::Stats->new($g); $s->run_stats; DumpFile $dest, $s->human_readable }'
 
 =cut
