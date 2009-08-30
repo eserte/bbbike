@@ -26,6 +26,38 @@ use strict;
 }
 
 {
+    package ReverseGeocoding::Bbbike;
+    use vars qw(@ISA);
+    @ISA = 'ReverseGeocoding';
+
+    sub new {
+	my $class = shift;
+
+	require Strassen::MultiStrassen;
+	require Karte::Polar;
+	$Karte::Polar::obj = $Karte::Polar::obj if 0; # cease -w
+	require Karte::Standard;
+
+	my $s = MultiStrassen->new('orte', 'orte2');
+
+	bless { 's' => $s }, $class;
+    }
+
+    sub find_closest {
+	my($self, $pxy, $type) = @_; # XXX $type is currently ignored
+	my($sxy) = join ',', $Karte::Polar::obj->map2standard(split /,/, $pxy);
+	my $res = $self->{'s'}->nearest_point($sxy, FullReturn => 1);
+	if ($res) {
+	    my $name = $res->{StreetObj}[0];
+	    $name =~ s{\|}{ }g; # e.g. "Rollberg|bei Eickstedt"
+	    $name;
+	} else {
+	    undef;
+	}
+    }
+}
+	
+{
     package ReverseGeocoding::Cloudmade;
     use vars qw(@ISA);
     @ISA = 'ReverseGeocoding';
@@ -63,14 +95,19 @@ return 1 if caller;
 
 {
     require Getopt::Long;
+    require FindBin;
+    $FindBin::RealBin = $FindBin::RealBin if 0; # cease -w
+    require lib;
+    lib->import("$FindBin::RealBin/../lib");
     my $type;
-    Getopt::Long::GetOptions('type=s' => \$type) or die "usage?";
+    my $module;
+    Getopt::Long::GetOptions('module=s' => \$module, 'type=s' => \$type) or die "usage?";
     if (@ARGV == 1) {
 	@ARGV = split /,/, $ARGV[0];
     }
     die "Expects longitude and latitude" if @ARGV != 2;
     my($px, $py) = @ARGV;
-    print ReverseGeocoding->new('cloudmade')->find_closest("$px,$py", $type), "\n";
+    print ReverseGeocoding->new($module)->find_closest("$px,$py", $type), "\n";
 }
 
 __END__
@@ -80,5 +117,11 @@ __END__
 Using from command line:
 
     perl miscsrc/ReverseGeocoding.pm 13.5 52.5
+
+Different geocoding modules:
+
+    perl -module bbbike miscsrc/ReverseGeocoding.pm 13.5 52.5
+
+    perl -module cloudmade miscsrc/ReverseGeocoding.pm 13.5 52.5
 
 =cut
