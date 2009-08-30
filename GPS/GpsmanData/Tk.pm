@@ -236,10 +236,12 @@ sub _fill_data_view {
     my %velocity_frame;
     my @chunk_to_i;
     my %max_ms;
+    my $last_vehicle;
     for my $chunk (@{ $w->{GpsmanData}->Chunks }) {
 	$chunk_i++;
 	my $supported = $chunk->Type eq $chunk->TYPE_TRACK;
-	my $vehicle = $chunk->TrackAttrs->{'srt:vehicle'};
+	my $vehicle = $chunk->TrackAttrs->{'srt:vehicle'} || $last_vehicle;
+	$last_vehicle = $vehicle;
 	my $max_v_vehicle = $velocity_per_vehicle ? ($vehicle||'unknown') : 'total';
 	my $label = $vehicle ? $vehicle : "-----";
 	$dv->add(++$i, -text => $label, -data => {Chunk => $chunk_i});
@@ -337,10 +339,12 @@ sub _adjust_overview {
     };
     my $last_y = $transpose->(0);
     my %blnmsg;
+    my $last_vehicle;
     for my $chunk_def_i (0 .. $#chunk_to_i) {
 	my($this_chunk, $this_i) = @{$chunk_to_i[$chunk_def_i]};
 	my($next_chunk, $next_i) = $chunk_def_i+1 <= $#chunk_to_i ? @{$chunk_to_i[$chunk_def_i+1]} : (undef,undef);
-	my $vehicle = $this_chunk->TrackAttrs->{'srt:vehicle'};
+	my $vehicle = $this_chunk->TrackAttrs->{'srt:vehicle'} || $last_vehicle;
+	$last_vehicle = $vehicle;
 	if (!$vehicle) {
 	    #warn "No vehicle found in chunk";
 	} else {
