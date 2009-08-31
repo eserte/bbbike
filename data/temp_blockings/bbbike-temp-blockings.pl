@@ -617,7 +617,7 @@ EOF
        text  => 'L 792; (Groß Schulzendorf-Blankenfelde); OD Blankenfelde, Dorfstr. Straßenbauarbeiten Vollsperrung 23.08.2004-27.08.2004 ',
        type  => 'handicap',
       data  => <<EOF,
-userdel	q4 10023,-8859 10115,-8276
+userdel	q4 9990,-8867 10115,-8276
 EOF
      },
      { from  => 1099177200, # 2004-10-31 01:00
@@ -666,7 +666,7 @@ EOF
        text  => 'L 792; (Groß Schulzendorf-Blankenfelde); OD Blankenfelde, Dorfstr. Straßenbauarbeiten Vollsperrung 30.08.2004-03.09.2004 ',
        type  => 'handicap',
       data  => <<EOF,
-userdel	q4 10023,-8859 10115,-8276
+userdel	q4 9990,-8867 10115,-8276
 EOF
      },
      { from  => 1121292000, # 2005-07-14 00:00
@@ -1116,7 +1116,7 @@ EOF
        text  => 'L 792; Trebbiner Str.-Glasower Damm: Straßenbau, Vollsperrung, 25.10.2004-30.11.2004 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 11186,-5297 11077,-5335 10994,-5361
+userdel	q4 11165,-5318 11077,-5335 11054,-5341
 EOF
      },
      { from  => 1098914007, # 2004-10-27 23:53
@@ -5966,7 +5966,7 @@ EOF
        text  => 'L 040 Zossener Damm OD Blankenfelde Straßenausbau Vollsperrung 05.10.2006-28.11.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 11019,-8435 11555,-8625
+userdel	q4::inwork 11115,-8466 11247,-8513 11555,-8625
 EOF
      },
      { from  => 1159308000, # 2006-09-27 00:00
@@ -7213,7 +7213,7 @@ EOF
        text  => 'L 040 Zossener Damm OD Blankenfelde, zw. Kreisverkehr u. K.-Liebknecht-Str. Straßenausbau Vollsperrung 07.03.2007-07.05.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 10115,-8276 11019,-8435
+userdel	2::inwork 10115,-8276 11115,-8466
 EOF
      },
      { from  => 1173135600, # 2007-03-06 00:00
@@ -7898,7 +7898,7 @@ EOF
        text  => 'L 792 Berliner Damm OD Blankenfelde, Höhe Hausnummer 4 Kranarbeiten Vollsperrung 08.05.2007-08.05.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 10427,-7665 10424,-7409
+userdel	2::inwork 10448,-7582
 EOF
      },
      { from  => 1177970400, # 2007-05-01 00:00
@@ -7995,7 +7995,7 @@ EOF
        text  => 'L 040 Zossener Damm OD Blankenfelde, zw. Tankstelle u. Garagentrakt. Ausbau Landesstraße Vollsperrung 07.05.2007-20.05.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 10115,-8276 11019,-8435
+userdel	2::inwork 10115,-8276 11115,-8466
 EOF
      },
      { from  => undef, # 
@@ -8054,7 +8054,7 @@ EOF
        text  => 'L 040 Zossener Damm OD Blankenfelde Ausbau Landesstr. Vollsperrung 07.05.2007-20.05.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 10115,-8276 11019,-8435
+userdel	2::inwork 10115,-8276 11115,-8466
 EOF
      },
      { from  => 1180648800, # 2007-06-01 00:00
@@ -8240,7 +8240,7 @@ EOF
        text  => 'L 040 Zossener Damm OD Blankenfelde, zw. Jühnsdorfer Weg u. A.-Dürer-Str. Kanal- und Straßenbau Vollsperrung 24.05.2007-30.09.2007 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 10115,-8276 11019,-8435
+userdel	q4::inwork 10115,-8276 11115,-8466
 EOF
      },
      { from  => 1180032862, # 2007-05-24 20:54
@@ -9986,7 +9986,7 @@ EOF
        text  => 'L 040 Zossener Damm OD Blankenfelde, zw. Jühnsdorfer Weg u. A.-Dürer-Str. Kanal- und Straßenbau Vollsperrung 01.10.2007-22.12.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 10115,-8276 11019,-8435
+userdel	2::inwork 10115,-8276 11115,-8466
 EOF
      },
      { from  => 1191708000, # 2007-10-07 00:00
@@ -10669,7 +10669,7 @@ EOF
        text  => 'L 792 Groß Schulzendorf-Mahlow OD Blankenfelde, Kno. Zossener-/Potsdamer Damm Deckeneinbau Vollsperrung 08.12.2007-15.12.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 10023,-8859 10115,-8276
+userdel	2::inwork 9990,-8867 10115,-8276
 EOF
      },
      { from  => 1197233736, # 
@@ -13831,7 +13831,7 @@ EOF
        text  => 'L 075 Mahlow - Großziethen zw. Kreuzg. B96A u. Kleinziethen Deckeninstandsetzung Vollsperrung 27.04.2009-15.05.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 13506,-2809 13348,-3283 13289,-4660
+userdel	2::inwork 13506,-2809 13373,-3234 13321,-3678 13301,-4355 13215,-4564 13289,-4660
 EOF
      },
      { from  => 1240783200, # 2009-04-27 00:00
