@@ -817,7 +817,7 @@ sub display {
 sub uncompr {
     my $res = shift;
     if ($res->can("decoded_content")) {
-	$res->decoded_content;
+	$res->decoded_content(charset => 'none');
     } else {
 	# When was decoded_content part of LWP?
 	if (defined $res->header('Content_Encoding') &&
