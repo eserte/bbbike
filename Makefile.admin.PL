@@ -265,7 +265,6 @@ do-copy-to-cvs-slow: /tmp/MANIFEST.withcvs
 diff-with-cvs:	/tmp/MANIFEST.withcvs
 	makepatch --verbose \
 	    -oldmanifest /tmp/MANIFEST.withcvs -newmanifest /tmp/MANIFEST.withcvs \
-	    -exclude lib/enum.pm \
 	    -diff "diff -up -I '\$$Id.*\$$' -I '\$$Revision.*\$$'" \
 	    -descr "" \
 	    ${CVS_DIR} ${.CURDIR}
