@@ -10,9 +10,8 @@ Eiswerderstr.: Asphalt	Q0 -2883,15571 -2783,15538 -2715,15519 -2675,15513
 Neue Kreisstr.: Kopfsteinpflaster	Q2 -7191,-1023 -7376,-1226 -7498,-1355 -7592,-1402
 Markgrafendamm: Asphalt	Q0 14558,10264 14608,10409 14641,10552 14675,10693 14680,10758 14674,10811
 Markgrafendamm/Hauptstr.: asphaltiert	Q0 14674,10811 14717,10855 14794,10844 14906,10820
-Hauptstr.: m‰ﬂiges Kopfsteinpflaster	Q2 14906,10820 15034,10795
-Hauptstr.: m‰ﬂiges Kopfsteinpflaster	Q2; 15263,10747 15181,10766 15034,10795
-Hauptstr.: Betonplatten	Q1; 15034,10795 15181,10766 15263,10747
+Hauptstr.: m‰ﬂiges Kopfsteinpflaster, teilweise Betonplatten	Q2; 14906,10820 15034,10795 15181,10766 15263,10747
+Hauptstr.: asphaltiert	Q0; 15263,10747 15181,10766 15034,10795 14906,10820
 Karlshorster Str.: m‰ﬂiges Kopfsteinpflaster	Q2 15279,10862 15272,10790 15263,10747
 Cordesstr.: schlechtes Kopfsteinpflaster	Q3 1683,9847 1511,10051 1382,10124 1318,10031
 Werkst‰ttenweg: m‰ﬂiges Kopfsteinpflaster	Q2 2121,10089 1634,9668
@@ -875,7 +874,6 @@ Pankeweg: gut befestigter Weg	Q1 15998,24887 15820,25003 15810,24981 15648,25084
 Nesselweg: Betonplatten, OK	Q1 8722,21437 8513,21099
 Schˆnholzer Weg: sehr schlechtes Kopfsteinpflaster	Q3 7992,20515 8052,20426 8069,20408 8090,20371 8131,20287 8196,20096
 Uferstr.: Kopfsteinpflaster	Q2 8420,16365 8334,16282 8236,16071 8187,15965 8140,15859
-Jessnerstr.: m‰ﬂiges bis schlechtes Kopfsteinpflaster	Q2 14941,11689 14849,11539
 Oderstr.: Kopfsteinpflaster	Q2 15101,11590 15037,11628 14941,11689
 Oderstr.: Kopfsteinpflaster	Q2 14794,11770 14708,11820 14623,11867
 Travestr.: Kopfsteinpflaster	Q2 14977,11754 14897,11801
@@ -2333,6 +2331,9 @@ Appelbacher Weg: Asphalt	Q0 27450,1182 27514,1129 27718,946
 Philipp-Jacob-Rauch-Str.: Verbundsteinpflaster	Q0 27615,1245 27573,1279 27516,1300 27476,1287
 Johann-Jacob-Baeyer-Str.: Asphalt	Q0 27977,1187 27810,987
 Plutoweg: unbefestigt	Q2 30965,3391 30811,3416 30750,3468
+Treptower Park: Asphalt	Q0 14310,9692 14304,9538 14398,9373 14494,9252 14576,9194
+Treptower Park: Asphalt, einige Wuzelsch‰den	Q1 14304,9538 14384,9565 14512,9528 14748,9420
+Treptower Park: Asphalt	Q0 14529,9141 14576,9194 14748,9420 14780,9480
 Viktoriastr.: m‰ﬂiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
 Riemeisterstr.: m‰ﬂiges Kopfsteinpflaster, aber asphaltierte Radwege	Q1 346,4833 294,4916 158,5103 103,5123
 P¸cklerstr.: Fahrbahn mit schlechtem Kopfsteinpflaster, Radweg OK	Q1 2688,7067 2576,7026 2465,6984 2403,6962 2266,6911 2155,6873 2130,6865 2054,6840 1961,6820

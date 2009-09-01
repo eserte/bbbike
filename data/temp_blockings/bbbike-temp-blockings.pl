@@ -13248,8 +13248,7 @@ EOF
        text  => 'Reichenberger Str., Einbahnstraße Richtung Kottbusser Tor',
        type  => 'gesperrt',
        data  => <<EOF,
-#: last_checked: 2009-07-24
-#: check_frequency: 14d
+#: last_checked: 2009-09-01
 userdel	1::inwork 12229,10014 12398,9938 12556,9862
 EOF
      },
@@ -13544,8 +13543,8 @@ EOF
        text  => 'Jessnerstr. wegen Bauarbeiten in Richtung Süden nicht befahrbar',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2009-07-11
-#: XXX nach Beendigung der Bauarbeiten ist wahrscheinlich die gesamte Straße asphaltiert, mit einigen Aufpflasterungen
+#: last_checked: 2009-09-01
+#: XXX nach Beendigung der Bauarbeiten bleibt wahrscheinlich die gesamte Straße asphaltiert, mit einigen Aufpflasterungen
 userdel	q4::inwork; 15080,11905 14977,11754 14941,11689 14849,11539
 EOF
      },
@@ -15711,9 +15710,9 @@ EOF
 userdel	q4::inwork 3092,9886 3108,10069 3111,10116
 EOF
      },
-     { from  => undef, # 
-       until => undef, # XXX
-       text  => 'Proskauer Str. (Friedrichshain) in beiden Richtungen zwischen Rigaer Str. und Bänschstr. geplatzte Wasserleitung, Straße vollständig gesperrt (auf weiteres)',
+     { from  => 1251833196, # 2009-09-01 21:26
+       until => 1252101599, # 2009-09-04 23:59
+       text  => 'Proskauer Str. (Friedrichshain) in beiden Richtungen zwischen Rigaer Str. und Bänschstr. geplatzte Wasserleitung, Straße vollständig gesperrt (bis Anfang 09/2009)',
        type  => 'handicap',
        source_id => 'IM_013998',
        data  => <<EOF,
@@ -15750,6 +15749,51 @@ EOF
        source_id => 'IM_013988',
        data  => <<EOF,
 userdel	2::inwork 2414,12418 2224,12397 2157,12389
+EOF
+     },
+     { from  => 1251833280, # 2009-09-01 21:28
+       until => 1260917999, # 2009-12-15 23:59
+       text  => 'Winckelmannstr. (Johannisthal) Richtung Stubenrauchstr. zwischen Sterndamm und Köpenicker Str. Baustelle, Fahrtrichtung gesperrt (bis Mitte 12.2009)',
+       type  => 'handicap',
+       source_id => 'IM_013929',
+       data  => <<EOF,
+userdel	q4::inwork; 17428,4503 17476,4337 17507,4216
+EOF
+     },
+     { from  => 1251833331, # 2009-09-01 21:28
+       until => 1293836399, # 2010-12-31 23:59
+       text  => 'Wendenschloßstr. (Köpenick) Richtung Müggelheimer Str. zwischen Salvador-Allende-Str. und Landjägerstr. Baustelle, Fahrtrichtung gesperrt (bis 12.2010)',
+       type  => 'handicap',
+       source_id => 'IM_014045',
+       data  => <<EOF,
+userdel	q4::inwork; 23451,4877 23363,4846 22893,4532 22862,4511 22832,4491 22740,4415
+EOF
+     },
+     { from  => 1250978400, # 2009-08-23 00:00
+       until => 1262300399, # 2009-12-31 23:59
+       text  => 'Aufgrund von Baumaßnahmen der Berliner Wasserbetriebe wird es vom 24. August bis zum 31. Dezember in der Rathausstraße und den angrenzenden Kreuzungsbereichen Rathausstraße/Frankfurter Allee und Rathaus-/Möllendorffstraße zu Verkehrseinschränkungen kommen.',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-lichtenberg/presse/archiv/20090813.1105.134956.html',
+       data  => <<EOF,
+userdel	q4::inwork 15537,12367 15576,12315 15628,12246 15651,12214 15685,12154 15670,12022
+EOF
+     },
+     { from  => 1250978400, # 2009-08-23 00:00
+       until => 1262300399, # 2009-12-31 23:59
+       text  => 'Vom 24. August bis zum 31. Dezember wird es in der Robert-Uhrig-Straße und den angrenzenden Kreuzungsbereichen Robert-Uhrig-Straße/Alt-Friedrichsfelde und Robert-Uhrig-/Paul-Gesche-Straße zu Verkehrseinschränkungen aufgrund von Baumaßnahmen der Berliner Wasserbetriebe kommen.',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-lichtenberg/presse/archiv/20090813.1105.134956.html',
+       data  => <<EOF,
+userdel	q4::inwork 17746,11748 17744,11703 17741,11607
+EOF
+     },
+     { from  => 1252188000, # 2009-09-06 00:00
+       until => 1280613600, # 2010-08-01 00:00
+       text  => 'Neubau der Miraustraße von Innungsstraße bis Breitenbachstraße in Berlin-Wittenau, vom 7.09.2009 bis ca. Juli 2010',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20090831.1205.137093.html',
+       data  => <<EOF,
+userdel	q4::inwork; 4014,19433 4170,19079 4195,19043
 EOF
      },
     );

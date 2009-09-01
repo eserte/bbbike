@@ -14,9 +14,10 @@ Eiswerderstr.: Asphalt	Q0 -2883,15571 -2783,15538 -2715,15519 -2675,15513
 Neue Kreisstr.: Kopfsteinpflaster	Q2 -7191,-1023 -7376,-1226 -7498,-1355 -7592,-1402
 Markgrafendamm: Asphalt	Q0 14558,10264 14608,10409 14641,10552 14675,10693 14680,10758 14674,10811
 Markgrafendamm/Hauptstr.: asphaltiert	Q0 14674,10811 14717,10855 14794,10844 14906,10820
-Hauptstr.: mäßiges Kopfsteinpflaster	Q2 14906,10820 15034,10795
-Hauptstr.: mäßiges Kopfsteinpflaster	Q2; 15263,10747 15181,10766 15034,10795
-Hauptstr.: Betonplatten	Q1; 15034,10795 15181,10766 15263,10747
+#: note: während der Bauarbeiten Verschwenkung auf Fahrbahnmitte
+Hauptstr.: mäßiges Kopfsteinpflaster, teilweise Betonplatten	Q2; 14906,10820 15034,10795 15181,10766 15263,10747
+#: note: Asphaltierung während der Bauarbeiten, vielleicht auch permanent
+Hauptstr.: asphaltiert	Q0; 15263,10747 15181,10766 15034,10795 14906,10820
 Karlshorster Str.: mäßiges Kopfsteinpflaster	Q2 15279,10862 15272,10790 15263,10747
 Cordesstr.: schlechtes Kopfsteinpflaster	Q3 1683,9847 1511,10051 1382,10124 1318,10031
 Werkstättenweg: mäßiges Kopfsteinpflaster	Q2 2121,10089 1634,9668
@@ -874,6 +875,8 @@ Brünowplatz: Kopfsteinpflaster	Q2 1825,20047 1804,20009 1840,19990 1862,20025 18
 #: note: laut ADFC-Karte gut geeignet
 Miraustr.: Asphalt, mäßig	Q0- 3321,20545 3344,20453 3390,20265 3581,20008 3645,19921 3820,19688
 #: note: laut ADFC-Karte mäßig/schlecht geeignet vvv
+#: XXX: laut http://www.berlin.de/ba-reinickendorf/presse/archiv/20090831.1205.137093.html nach den Bauarbeiten mit "bituminöser Decke"
+#: next_check: 2010-08-01
 Miraustr.: guter Asphalt	Q0 3820,19688 4014,19433
 Miraustr.: sehr schlechtes Kopfsteinpflaster	Q3 4014,19433 4170,19079 4195,19043
 #: note ^^^
@@ -971,7 +974,6 @@ Pankeweg: gut befestigter Weg	Q1 15998,24887 15820,25003 15810,24981 15648,25084
 Nesselweg: Betonplatten, OK	Q1 8722,21437 8513,21099
 Schönholzer Weg: sehr schlechtes Kopfsteinpflaster	Q3 7992,20515 8052,20426 8069,20408 8090,20371 8131,20287 8196,20096
 Uferstr.: Kopfsteinpflaster	Q2 8420,16365 8334,16282 8236,16071 8187,15965 8140,15859
-Jessnerstr.: mäßiges bis schlechtes Kopfsteinpflaster	Q2- 14941,11689 14849,11539
 Oderstr.: Kopfsteinpflaster	Q2 15101,11590 15037,11628 14941,11689
 Oderstr.: Kopfsteinpflaster	Q2 14794,11770 14708,11820 14623,11867
 Travestr.: Kopfsteinpflaster	Q2 14977,11754 14897,11801
@@ -2032,7 +2034,7 @@ Südtorweg: wassergebundene Decke	Q1 -503,11782 -750,11740
 #: note: Luftbild
 Südtorweg: asphaltiert	Q0 -750,11740 -794,11732 -940,11708
 #: XXX laut http://www.berlin.de/ba-neukoelln/presse/archiv/20090713.0945.132186.html Bauarbeiten, danach vielleicht besser?
-#: next_check: 2009-08-14
+#: last_checked: 2009-09-01
 Erkstr.: Asphalt mit Schäden	Q0- 12598,8390 12771,8439 12902,8470 12925,8494
 Straße 645: Asphalt	Q0 11416,8283 11415,8113 11450,7921 11472,7899
 Oderstr.: Asphalt	Q0 11472,7899 11498,7750 11515,7654 11536,7533 11553,7437 11562,7393 11601,7362 11615,7284 11606,7260 11593,7237 11607,7145
@@ -2593,6 +2595,9 @@ Philipp-Jacob-Rauch-Str.: Verbundsteinpflaster	Q0- 27615,1245 27573,1279 27516,1
 Johann-Jacob-Baeyer-Str.: Asphalt	Q0 27977,1187 27810,987
 #: by: osm
 Plutoweg: unbefestigt	Q2 30965,3391 30811,3416 30750,3468
+Treptower Park: Asphalt	Q0 14310,9692 14304,9538 14398,9373 14494,9252 14576,9194
+Treptower Park: Asphalt, einige Wuzelschäden	Q1+ 14304,9538 14384,9565 14512,9528 14748,9420
+Treptower Park: Asphalt	Q0 14529,9141 14576,9194 14748,9420 14780,9480
 ######################### User Contributions #################################
 #: by: Dominik Seelow vvv
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
