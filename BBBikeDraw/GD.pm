@@ -697,7 +697,7 @@ sub draw_map {
 
     if (ref $self->{StrLabel} &&
 #	(defined &GD::Image::stringFT || defined &GD::Image::stringTTF)
-	($im->can('stringFT') || $im->can('stringTTF'))
+	($self->_really_can_stringFT || $im->can('stringTTF'))
        ){
 	eval {
 	    my $ttf = $TTF_STREET;
@@ -1092,7 +1092,7 @@ sub outline_text {
 sub outline_ft_text {
     my($self, $fontspec, $x, $y, $s, $inner, $outer, %args) = @_;
     my $im = $self->{Image};
-    return if !$im->can("stringFT"); # for example for GD::SVG operation
+    return if !$self->_really_can_stringFT;
     if ($args{-anchor}) {
 	($x, $y) = _adjust_anchor
 	    ($x, $y, $args{-anchor}, $args{-padx}||0, $args{-pady}||0,
@@ -1381,6 +1381,14 @@ sub search_ttf_font {
     }
     warn "Cannot find font in candidates @$candidates" if $^W;
     undef;
+}
+
+sub _really_can_stringFT {
+    my $self = shift;
+    my $im = $self->{Image};
+    return 0 if !$im->can('stringFT'); # for example old GD::SVG <= 0.32
+    return 0 if $im->isa('GD::SVG::Image'); # GD::SVG 0.33 defines stringFT as a no-op
+    1;
 }
 
 # To avoid loading of GDHeavy
