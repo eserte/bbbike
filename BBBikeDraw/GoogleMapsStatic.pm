@@ -44,13 +44,21 @@ algorithm. This is available if L<Geo::Google::PolylineEncoder> is
 installed. Unfortunately there seems to be some bugs, so the support
 is currently disabled.
 
+=head1 EXAMPLES
+
+To create all tracks into static maps:
+
+    cd .../bbbike
+    mkdir /tmp/googlemapsstatic
+    for i in misc/gps_data/*.trk; do dest=/tmp/googlemapsstatic/`basename $i`.png; [ -e $dest ] || (echo $dest; ./miscsrc/bbbikedraw.pl -routefile $i -module GoogleMapsStatic -imagetype png > $dest); done
+
 =head1 AUTHOR
 
 Slaven Rezic
 
 =head1 SEE ALSO
 
-L<BBBikeDraw>.
+L<BBBikeDraw>, L<Geo::Google::PolylineEncoder>.
 
 =cut
 
