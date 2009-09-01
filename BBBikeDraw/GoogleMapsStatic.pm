@@ -167,7 +167,7 @@ sub flush {
     }
 
     my $resp = $ua->get($url);
-    die "Error while getting $url: " . $resp->status_line if !$resp->is_success;
+    die "Error while getting $url:\n" . $resp->status_line . "\n" . $resp->headers->as_string if !$resp->is_success;
 
     my $fh = $args{Fh} || $self->{Fh};
     binmode $fh;
@@ -188,7 +188,7 @@ sub _make_path_from_coords {
 	} map { @$_ } @$multi_c_ref;
 	my $encoder = Geo::Google::PolylineEncoder->new;
 	my $eline = $encoder->encode(\@points);
-	$path = 'enc:' . uri_escape($eline->{points});
+	$path = 'enc:' . uri_escape($eline->{points}, '\x60');
     } else {
 	# unencoded polyline, may more easily exceed URL limits
 	$path = join("|", map { join("|", map {
