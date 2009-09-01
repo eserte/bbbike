@@ -157,7 +157,6 @@ sub flush {
 	}
 	warn "Need to shorten path, next tolerance value is $tolerance...\n";
     }
-warn $url;
 
     my $resp = $ua->get($url);
     die "Error while getting $url: " . $resp->status_line if !$resp->is_success;
@@ -170,7 +169,11 @@ warn $url;
 sub _make_path_from_coords {
     my($multi_c_ref) = @_;
     my $path;
-    if (eval { die; require Geo::Google::PolylineEncoder; 1 }) {
+    if (eval { require Geo::Google::PolylineEncoder; 1 }) {
+	if ($Geo::Google::PolylineEncoder::VERSION <= 0.04) {
+	    no warnings 'redefine';
+	    *Geo::Google::PolylineEncoder::encode_signed_number = \&patched_Geo_Google_PolylineEncoder_encode_signed_number;
+	}
 	my @points = map {
 	    my($x, $y) = $Karte::Polar::obj->trim_accuracy($Karte::Polar::obj->standard2map(split /,/, $_));
 	    +{ lat => $y, lon => $x };
@@ -210,6 +213,52 @@ sub _shorten_path {
     }
 
     _make_path_from_coords(\@new_multi_c);
+}
+
+# See https://rt.cpan.org/Ticket/Display.html?id=49327
+sub patched_Geo_Google_PolylineEncoder_encode_signed_number {
+    my ($self, $orig_num) = @_;
+
+    # Take the decimal value and multiply it by 1e5, flooring the result:
+
+    # Note 1: we limit the number to 5 decimal places with sprintf to avoid
+    # perl's rounding errors (they can throw the line off by a big margin sometimes)
+    # From Geo::Google: use the correct floating point precision or else
+    # 34.06694 - 34.06698 will give you -3.999999999999999057E-5 which doesn't
+    # encode properly. -4E-5 encodes properly.
+
+    # Note 2: we use sprintf(%8.0f ...) rather than int() for similar reasons
+    # (see perldoc -f int), though there's not much in it and the sprintf approach
+    # ends up doing more of a round() than a floor() in some cases:
+    #   floor = -30   num=-30 *int=-29  1e5=-30  %3.5f=-0.00030  orig=-0.000300000000009959
+    #   floor = 119  *num=120  int=119  1e5=120  %3.5f=0.00120   orig=0.0011999999999972
+    # We don't use floor() to avoid a dependency on POSIX
+
+    # do this in a series of steps so we can see what's going on in the debugger:
+    my $num3_5 = sprintf('%3.5f', $orig_num)+0;
+    my $num_1e5 = $num3_5 * 1e5;
+    my $num = sprintf('%8.0f', $num_1e5)+0;
+    my $is_negative = $num < 0;
+
+    # my $int = int($num_1e5);
+    # my $floor = floor($num_1e5);
+    # warn "floor = $floor\tnum=$num\tint=$int\t1e5=$num_1e5\t%3.5f=$num3_5\torig=$orig_num\n"
+    #   if ($floor != $num or $num != $int);
+
+
+    # Convert the decimal value to binary.
+    # Note that a negative value must be inverted and provide padded values toward the byte boundary
+    # (perl ints are already manipulatable in binary, so do nothing)
+
+    # Shift the binary value:
+    $num = $num << 1;
+
+    # If the original decimal value was negative, invert this encoding:
+    if ($is_negative) {
+	$num = ~$num;
+    }
+
+    return $self->encode_number($num);
 }
 
 1;
