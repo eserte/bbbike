@@ -121,8 +121,8 @@ sub flush {
 	$marker_c = "$y,$x";
     }
 
-    my $format = ($self->{ImageType} eq 'png' ? 'png32' :
-		  $self->{ImageType} eq 'jpeg' ? 'jpg' : 'gif');
+    my $format = (($self->{ImageType}||'') eq 'png' ? 'png32' :
+		  ($self->{ImageType}||'') eq 'jpeg' ? 'jpg' : 'gif');
 
     # max imagesize according to http://code.google.com/apis/maps/documentation/staticmaps/#Imagesizes
     my $w = $self->{Width};
