@@ -247,20 +247,24 @@ ask-copy-to-cvs:
 	@echo -n "Really copy to ${CVS_DIR}? (Hit Ctrl-C otherwise) "
 	@read dummy
 
-do-copy-to-cvs:	MANIFEST.withcvs
-	perl "-MExtUtils::Manifest=manicopy,maniread" -e '$$fs=maniread(q{MANIFEST.withcvs}); while($$f=each %$$fs) { if (-e qq{${CVS_DIR}/$$f} && -M $$f >= -M qq{${CVS_DIR}/$$f}) { delete $$fs->{$$f} } } manicopy($$fs,q{${CVS_DIR}}, q{cp}); utime time,time,map { qq{${CVS_DIR}/$$_} } keys %$$fs'
+.PHONY: /tmp/MANIFEST.withcvs
+/tmp/MANIFEST.withcvs:
+	git ls-files > /tmp/MANIFEST.withcvs
+
+do-copy-to-cvs:	/tmp/MANIFEST.withcvs
+	perl "-MExtUtils::Manifest=manicopy,maniread" -e '$$fs=maniread(q{/tmp/MANIFEST.withcvs}); while($$f=each %$$fs) { if (-e qq{${CVS_DIR}/$$f} && -M $$f >= -M qq{${CVS_DIR}/$$f}) { delete $$fs->{$$f} } } manicopy($$fs,q{${CVS_DIR}}, q{cp}); utime time,time,map { qq{${CVS_DIR}/$$_} } keys %$$fs'
 
 # Slow, aber gruendlich! Problem with do-copy-to-cvs may be that
 # timestamps are incorrect.
-do-copy-to-cvs-slow: MANIFEST.withcvs
-	perl "-MExtUtils::Manifest=manicopy,maniread" -e "manicopy(maniread('MANIFEST.withcvs'),'${CVS_DIR}', 'cp');"
+do-copy-to-cvs-slow: /tmp/MANIFEST.withcvs
+	perl "-MExtUtils::Manifest=manicopy,maniread" -e "manicopy(maniread('/tmp/MANIFEST.withcvs'),'${CVS_DIR}', 'cp');"
 
 # Show the diffs between the source BBBike directory and the CVS directory.
 # This can also be used to get a list of removed files which are still
 # in the CVS repository.
-diff-with-cvs:	MANIFEST.withcvs
+diff-with-cvs:	/tmp/MANIFEST.withcvs
 	makepatch --verbose \
-	    -oldmanifest MANIFEST.withcvs -newmanifest MANIFEST.withcvs \
+	    -oldmanifest /tmp/MANIFEST.withcvs -newmanifest /tmp/MANIFEST.withcvs \
 	    -exclude lib/enum.pm \
 	    -diff "diff -up -I '\$$Id.*\$$' -I '\$$Revision.*\$$'" \
 	    -descr "" \
@@ -290,6 +294,7 @@ MANIFEST.withcvs:	MANIFEST MANIFEST.addtocvs
 .PHONY: MANIFEST.withcvs
 
 # XXX It would be nicer to use "cp" instead of "ln", but ExtUtils::Manifest is buggy
+# XXX rewrite using git? needed at all?
 full-cvs-dist:	MANIFEST.withcvs
 	perl -MExtUtils::Manifest=manicopy,maniread -e 'manicopy(maniread("MANIFEST.withcvs"), "/tmp/BBBike-CVS", "ln")'
 
