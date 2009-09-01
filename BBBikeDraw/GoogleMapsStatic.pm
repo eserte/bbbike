@@ -167,7 +167,7 @@ sub flush {
     }
 
     my $resp = $ua->get($url);
-    die "Error while getting $url:\n" . $resp->status_line . "\n" . $resp->headers->as_string if !$resp->is_success;
+    die "Error while getting $url\n" . $resp->status_line . "\n" . $resp->headers->as_string if !$resp->is_success;
 
     my $fh = $args{Fh} || $self->{Fh};
     binmode $fh;
