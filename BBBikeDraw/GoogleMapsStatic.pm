@@ -72,7 +72,7 @@ $VERSION = sprintf("%d.%02d", q$Revision: 1.1 $ =~ /(\d+)\.(\d+)/);
 
 use base qw(BBBikeDraw);
 
-use CGI            qw();
+use URI::Escape    qw(uri_escape_utf8);
 use LWP::UserAgent qw();
 
 use Karte;
@@ -108,11 +108,23 @@ sub flush {
     my $path;
     my $center;
     if (@multi_c) {
-	$path = join("|", map { join("|", map {
-	    my($x, $y) = $Karte::Polar::obj->trim_accuracy($Karte::Polar::obj->standard2map(split /,/, $_));
-	    $y.",".$x;
-	} @$_) } @multi_c);
-	$path = 'rgb:0x0000ff,weight:5|' . $path; # XXX make settable
+	if (eval { require Geo::Google::PolylineEncoder; 1 }) {
+	    my @points = map {
+		my($x, $y) = $Karte::Polar::obj->trim_accuracy($Karte::Polar::obj->standard2map(split /,/, $_));
+		+{ lat => $y, lon => $x };
+	    } map { @$_ } @multi_c;
+	    my $encoder = Geo::Google::PolylineEncoder->new;
+	    my $eline = $encoder->encode(\@points);
+	    $path = 'enc:' . $eline->{points};
+	} else {
+	    # unencoded polyline, may more easily exceed URL limits
+	    $path = join("|", map { join("|", map {
+		my($x, $y) = $Karte::Polar::obj->trim_accuracy($Karte::Polar::obj->standard2map(split /,/, $_));
+		$y.",".$x;
+	    } @$_) } @multi_c);
+	}
+	#$path = 'rgb:0x0000ff,weight:5|' . $path; # XXX make settable
+	$path = 'color:0x0000ff80|weight:5|' . $path; # XXX make settable
     } else {
 	my($cx,$cy) = ($self->{Min_x} + ($self->{Max_x}-$self->{Min_x})/2,
 		       $self->{Min_y} + ($self->{Max_y}-$self->{Min_y})/2,
@@ -142,20 +154,22 @@ sub flush {
 	$h = 640;
     }
 
-    CGI->import('-oldstyle_urls');
-    my $qs = CGI->new({size => $w."x".$h,
-		       maptype => "mobile", # XXX make settable
-		       ($marker_c ? (markers => "$marker_c,red") : ()),
-		       # markers=40.702147,-74.015794,blues%7C40.711614,-74.012318,greeng%7C40.718217,-73.998284,redc
-		       key => $my_api_key,
-		       format => $format,
-		       ($path ? (path => $path) :
-			( center => $center,
-			  zoom => 14, # XXX
-			)
-		       ),
-		      })->query_string;
-    my $url = "http://maps.google.com/staticmap?$qs";
+    my @cgi_params = ("size=${w}x${h}",
+		      'maptype=roadmap', # XXX make configurable (hybrid, satellite etc.)
+		      'mobile=true',
+		      'sensor=false',
+		      ($marker_c ? ("markers=size:mid|color:red|$marker_c") : ()),
+		      # markers=40.702147,-74.015794,blues%7C40.711614,-74.012318,greeng%7C40.718217,-73.998284,redc
+		      "key=$my_api_key",
+		      "format=$format",
+		      ($path ? "path=$path" :
+		       ( "center=$center",
+			 "zoom=14", # XXX
+		       )
+		      ),
+		     );
+    my $url = "http://maps.google.com/maps/api/staticmap?" . join("&", @cgi_params);
+
     my $resp = $ua->get($url);
     die "Error while getting $url: " . $resp->status_line if !$resp->is_success;
 
