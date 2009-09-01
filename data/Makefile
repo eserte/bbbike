@@ -1145,7 +1145,7 @@ check-disabled:
 .check_strassen_plaetze_unique:	strassen-orig plaetze-orig
 	${CUT} -d"	" -f1 strassen-orig | sort -u > /tmp/strassen-names
 	${CUT} -d"	" -f1 plaetze-orig  | sort -u > /tmp/plaetze-names
-	duplicates=`sort /tmp/strassen-names /tmp/plaetze-names | grep -v '^#' | uniq -d`; \
+	duplicates=`sort /tmp/strassen-names /tmp/plaetze-names | grep -v '^#' | $(NO_LOCALE) uniq -d`; \
 	if [ "$$duplicates" != "" ]; then \
 	    echo "Found duplicates:"; \
 	    echo "$$duplicates"; \
