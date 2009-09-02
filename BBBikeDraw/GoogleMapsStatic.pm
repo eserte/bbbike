@@ -103,10 +103,10 @@ sub flush {
     }
 
     my @multi_c = @{ $self->{MultiCoords} || [] } ? @{ $self->{MultiCoords} } : @{ $self->{Coords} || [] } ? [ @{ $self->{Coords} } ] : ();
-    my $path;
+    my @paths;
     my $center;
     if (@multi_c) {
-	$path = _make_path_from_coords(\@multi_c);
+	@paths = _make_paths_from_coords(\@multi_c);
     } else {
 	my($cx,$cy) = ($self->{Min_x} + ($self->{Max_x}-$self->{Min_x})/2,
 		       $self->{Min_y} + ($self->{Max_y}-$self->{Min_y})/2,
@@ -140,7 +140,7 @@ sub flush {
     my $tolerance = 0;
     while(1) {
 	if ($tolerance) {
-	    $path = _shorten_path(\@multi_c, $tolerance);
+	    @paths = _shorten_paths(\@multi_c, $tolerance);
 	}
 	my @cgi_params = ("size=${w}x${h}",
 			  'maptype=roadmap', # XXX make configurable (hybrid, satellite etc.)
@@ -150,7 +150,7 @@ sub flush {
 			  # markers=40.702147,-74.015794,blues%7C40.711614,-74.012318,greeng%7C40.718217,-73.998284,redc
 			  "key=$my_api_key",
 			  "format=$format",
-			  ($path ? "path=$path" :
+			  (@paths ? map { "path=$_" } @paths :
 			   ( "center=$center",
 			     "zoom=14", # XXX
 			   )
@@ -168,6 +168,7 @@ sub flush {
 	warn "Need to shorten path, next tolerance value is $tolerance...\n";
     }
 
+    warn "URL: $url\n" if $DEBUG;
     my $resp = $ua->get($url);
     die "Error while getting $url\n" . $resp->status_line . "\n" . $resp->headers->as_string if !$resp->is_success;
 
@@ -176,8 +177,14 @@ sub flush {
     print $fh $resp->decoded_content;
 }
 
-sub _make_path_from_coords {
+sub _make_paths_from_coords {
     my($multi_c_ref) = @_;
+    my @paths = map { _make_path_from_coords($_) } @$multi_c_ref;
+    @paths;
+}
+
+sub _make_path_from_coords {
+    my($c_ref) = @_;
     my $path;
     if (eval { require Geo::Google::PolylineEncoder; 1 }) {
 	if ($Geo::Google::PolylineEncoder::VERSION <= 0.04) {
@@ -187,27 +194,28 @@ sub _make_path_from_coords {
 	my @points = map {
 	    my($x, $y) = $Karte::Polar::obj->trim_accuracy($Karte::Polar::obj->standard2map(split /,/, $_));
 	    +{ lat => $y, lon => $x };
-	} map { @$_ } @$multi_c_ref;
+	} @$c_ref;
 	my $encoder = Geo::Google::PolylineEncoder->new;
 	my $eline = $encoder->encode(\@points);
 	$path = 'enc:' . uri_escape($eline->{points}, '\x60');
     } else {
 	# unencoded polyline, may more easily exceed URL limits
-	$path = join("|", map { join("|", map {
+	$path = join("|", map {
 	    my($x, $y) = $Karte::Polar::obj->trim_accuracy($Karte::Polar::obj->standard2map(split /,/, $_));
 	    $y.",".$x;
-	} @$_) } @$multi_c_ref);
+	} @$c_ref);
     }
     $path = 'color:0x0000ff80|weight:5|' . $path; # XXX make settable
     $path;
 }
 
-sub _shorten_path {
+sub _shorten_paths {
     my($multi_c_ref, $tolerance) = @_;
 
     require Strassen::Core;
     my $s = Strassen->new;
     for my $line (@$multi_c_ref) {
+	next if @$line == 0; # may this happen?
 	$s->push(["", $line, "X"]);
     }
 
@@ -222,7 +230,7 @@ sub _shorten_path {
 	push @new_multi_c, $c;
     }
 
-    _make_path_from_coords(\@new_multi_c);
+    _make_paths_from_coords(\@new_multi_c);
 }
 
 # See https://rt.cpan.org/Ticket/Display.html?id=49327
