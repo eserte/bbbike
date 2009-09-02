@@ -1,0 +1,68 @@
+=head1 Warum BBBike nicht OSM-Daten verwendet
+
+Vorab: warum importiere ich die BBBike-Daten nicht nach OSM? Weil es
+eine nicht-triviale Aufgabe ist, eine automatischen Importer zu
+schreiben, und ein manuelles Importieren ist zu langwierig. Außerdem
+gibt es einige strukturelle Probleme, die ich unten auflisten werde.
+
+=over
+
+=item * Separate Ways für straßenbegleitende Radwege innerorts
+(Beispiele: Warschauer Straße, Mehringdamm) sind problematisch für das
+Routing. Solche Radwege haben meist keinen Namen; im Routing würde
+also statt E<quot>Warschauer StraßeE<quot> nur E<quot>RadwegE<quot>
+erscheinen.
+
+Weiterhin kann es zu problematischen Routingtexten kommen, wenn
+zwischen Straße und Radweg gewechselt wird. Zum Beispiel:
+E<quot>Oberbaumbrücke, rechts in das Gröbenufer, nach vier Metern
+links in die OberbaumstraßeE<quot>.
+
+Es müsste erst einmal auch untersucht werden, ob alle Radwege mit dem
+übrigen Straßennetz verknüpft sind oder ob Verknüpfungs-Nodes fehlen
+(diese fehlen auch bei Fußwegen oft).
+
+Theoretisch könnte man das vermeiden, indem man erkennt, dass ein
+Radweg zu einer Straße gehört (da parallel verlaufend in geringer
+Entfernung), aber das muss erst einmal geschrieben werden. Oder man
+erzeugt entsprechende Relationen.
+
+=item * surface=* wird in Berlin kaum verwendet. Die meisten
+Kopfsteinpflasterstraßen sind nicht als solche getaggt. Es wird leider
+auch häufig surface=paved verwendet, aber eine genauere
+Aufschlüsselung (asphalt, concrete, compacted ...) wäre besser.
+
+=item * cycleway=opposite in Einbahnstraße wird kaum verwendet.
+
+=item * Uneinheitliches Tagging. Teilweise erkennt man keine
+Systematik, wann highway=track oder highway=cycleway etc. verwendet
+wird. Werte für tracktype werden uneinheitlich vergeben. Für
+smoothness würde ich dasselbe Problem erwarten, wobei smoothness
+leider noch kaum verwendet wird.
+
+=item * Ein Tag für E<quot>handicapE<quot> ist nicht definiert. In
+osm2bbd kann ich nur einige implizite Werte setzen, wie z.B. q4 (=
+Schrittgeschwindigkeit) für Fußgängerzonen.
+
+=item * Straßenabschnitte zwischen zwei Fahrbahnen einer Straße haben
+oft keinen sinnvollen Namen.
+
+=item * Es ist oft schwierig, alle möglichen Tag-Kombinationen richtig
+anzuwenden. Normalerweise werden Kfz-Straßen mit motorroad
+gekennzeichnet. Der Tiergartentunnel ist aber mit bicycle=no foot=no
+gekennzeichnet.
+
+=item * Oft stolpert man über Editier-Unfälle in den osm-Daten. Gerade
+habe ich gesehen, dass ein Teil der Kopernikusstraße mit dem
+Straßennamen E<quot>Tram M13E<quot> gekennzeichnet war. Das wurde zwar
+später korrigiert, aber falsch, nämlich zu
+E<quot>WühlischstraßeE<quot>.
+
+=item * Im BBBike-System gibt es viele Skripte, die die
+Datenintegrität garantieren.
+
+=item * In den BBBike-Daten kann ich auch subjektive Daten einbringen,
+z.B. E<quot>grüne WegeE<quot> (mit mehreren Stufen). osm kennt so
+etwas nicht und es ist zweifelhaft, ob es dort auch Platz hat.
+
+=back
