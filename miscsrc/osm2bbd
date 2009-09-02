@@ -834,8 +834,12 @@ for my $osm_file (@osm_files) {
 		    push @or, ["radwege_exact", "RW4"];
 		} elsif ($cycleway eq 'track') {
 		    push @or, ["radwege_exact", "RW1"];
-		} elsif ($cycleway eq 'opposite') {
+		} elsif ($cycleway eq 'opposite_track' ||
+			 $cycleway eq 'opposite_lane' # sollte in Berlin nicht vorkommen
+			) {
 		    push @or, ["radwege_exact", "RW9"];
+		} elsif ($cycleway eq 'opposite') {
+		    # wird in Zusammenhang mit oneway verwendet
 		} else {
 		    $unhandled{"cycleway-$cycleway"}++;
 		}
@@ -1103,7 +1107,10 @@ for my $osm_file (@osm_files) {
 			$reversed = 0;
 		    }
 		    if ($oneway =~ m{^(?:yes|true)$}) {
-			if ($is_motorway || (exists $tag{'bicycle'} && $tag{'bicycle'} eq 'opposite')) { # seen in Würzburg, Äußere Pleich, but no documentation/discussion for it
+			if ($is_motorway ||
+			    (exists $tag{'bicycle'} && $tag{'bicycle'} eq 'opposite') || # seen in Würzburg, Äußere Pleich, but no documentation/discussion for it
+			    (exists $tag{'cycleway'} && $tag{'cycleway'} eq 'opposite') # described in http://wiki.openstreetmap.org/wiki/DE:Germany_roads_tagging
+			   ) {
 			    push @or, ['gesperrt_car', '1', reversed => $reversed];
 			} else {
 			    if ($highway_cat eq 'cycleway') {
