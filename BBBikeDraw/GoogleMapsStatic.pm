@@ -179,7 +179,7 @@ sub _make_path_from_coords {
     my $path;
     if (eval { require Geo::Google::PolylineEncoder; 1 }) {
 	if ($Geo::Google::PolylineEncoder::VERSION <= 0.04) {
-	    no warnings 'redefine';
+	    no warnings 'redefine', 'once';
 	    *Geo::Google::PolylineEncoder::encode_signed_number = \&patched_Geo_Google_PolylineEncoder_encode_signed_number;
 	}
 	my @points = map {
