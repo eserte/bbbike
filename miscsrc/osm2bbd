@@ -968,9 +968,9 @@ for my $osm_file (@osm_files) {
 
 	    my $set_handicap = sub {
 		# XXX missing '-' and '+' handling
-		if (defined $handicap_cat && substr($handicap_cat,1,1) < substr($_[0],1,1)) {
+		if (!defined $handicap_cat || substr($handicap_cat,1,1) < substr($_[0],1,1)) {
 		    $handicap_cat = $_[0];
-		    $handicap_name = $_[0];
+		    $handicap_name = $_[1];
 		}
 	    };
 
@@ -1073,12 +1073,26 @@ for my $osm_file (@osm_files) {
 		    } else {
 			push @or, ["radwege_exact", "RW1"];
 		    }
-		} elsif ($highway_cat eq 'footway') {
+		} elsif ($highway_cat =~ m{^(footway|pedestrian)$}) {
+		    my $label = ($highway_cat eq 'footway'
+				 ? ($lang eq 'en' ? 'footway' : 'Fußweg')
+				 : ($lang eq 'en' ? 'pedestrian area' : 'Fußgängerzone')
+				);
 		    push @or, ["strassen", "NN".$addcat];
-		    $set_handicap->('q1', ($lang eq 'en' ? $highway_cat : 'Fußweg'));
-		} elsif ($highway_cat eq 'pedestrian') {
-		    push @or, ["strassen", "NN".$addcat];
-		    $set_handicap->('q4', ($lang eq 'en' ? 'pedestrian area' : 'Fußgängerzone'));
+		    if (defined $bicycle_tag) {
+			if ($bicycle_tag =~ m{^(yes|designated|official)$}) {
+			    $set_handicap->('q1', $label . ($lang eq 'en' ? ', cycling allowed' : ', Radfahren erlaubt'));
+			} elsif ($bicycle_tag eq 'permissive') {
+			    $set_handicap->('q2', $label . ($lang eq 'en' ? ', cycling permissive' : ', Radfahren geduldet'));
+			} elsif ($bicycle_tag eq 'no') {
+			    $set_handicap->('q4', $label . ($lang eq 'en' ? ', cycling not allowed' : ', Radfahren nicht erlaubt, ggfs. schieben'));
+			} else {
+			    warn "Found unhandled bicycle=$bicycle_tag together with $highway_cat...\n";
+			}
+		    } else {
+			my $cat = $highway_cat eq 'footway' ? 'q3' : 'q4'; # unklare Situation für Radfahrer
+			$set_handicap->($cat, $label);
+		    }
 		} elsif ($highway_cat eq 'living_street') {
 		    push @or, ["strassen", "N".$addcat];
 		    push @or, ["radwege_exact", "RW6;RW6", name => ($name ? "$name: " : "") . ($lang eq 'en' ? 'living street' : 'verkehrsberuhigter Bereich')];
