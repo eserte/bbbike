@@ -38,8 +38,10 @@ EOF
 
 my $single_file;
 my $single_file_type;
+my $fragezeichen_file;
 GetOptions("single=s" => \$single_file,
 	   "type=s" => \$single_file_type,
+	   "fragezeichen=s" => \$fragezeichen_file,
 	  )
     or usage;
 
@@ -114,8 +116,10 @@ if ($single_file) {
     Strassen->new_stream("$datadir/strassen")->read_stream(\&handle_highway_like);
     Strassen->new_stream("$datadir/landstrassen")->read_stream(\&handle_highway_like);
     Strassen->new_stream("$datadir/landstrassen2")->read_stream(\&handle_highway_like);
-    my $fragezeichen = -r "$datadir/../tmp/fragezeichen-nextcheck.bbd" ? "$datadir/../tmp/fragezeichen-nextcheck.bbd" : "$datadir/fragezeichen";
-    Strassen->new_stream($fragezeichen)->read_stream(\&handle_highway_like);
+    if (!$fragezeichen_file) {
+	$fragezeichen_file = -r "$datadir/../tmp/fragezeichen-nextcheck.bbd" ? "$datadir/../tmp/fragezeichen-nextcheck.bbd" : "$datadir/fragezeichen";
+    }
+    Strassen->new_stream($fragezeichen_file)->read_stream(\&handle_highway_like);
 
     Strassen->new_stream("$datadir/ubahn")->read_stream(\&handle_railway_like);
     Strassen->new_stream("$datadir/sbahn")->read_stream(\&handle_railway_like);
