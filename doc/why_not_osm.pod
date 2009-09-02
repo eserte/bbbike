@@ -70,3 +70,106 @@ z.B. E<quot>grüne WegeE<quot> (mit mehreren Stufen). osm kennt so
 etwas nicht und es ist zweifelhaft, ob es dort auch Platz hat.
 
 =back
+
+=head2 Beispielrouten
+
+Hier sind einige Beispielrouten, von BBBike berechnet anhand von
+osm-Daten. Die Probleme hier sind nicht notwendigerweise echte
+Probleme bei osm, sondern können auch durch schlechte Konvertierung
+von osm2bbd oder durch falsche Annahmen in der Routingsoftware
+entstanden sein.
+
+=over
+
+=item * Seumestraße - Methfesselstraße (Viktoria-Quartier)
+
+=over
+
+=item * Das erwähnte Wechseln zwischen Straße und Radweg sieht so aus:
+Warschauer Straße, nach 120m rechts in die Helsingforser Straße, nach
+0m (wahrscheinlich abgerundet) links in einen Weg ohne Namen (der
+parallele Radweg).
+
+=item * Am Halleschen Tor: Straßenname fehlt.
+
+=item * Die Kreuzung Blücherstraße/Mehringdamm ist problematisch:
+Blücherstraße, nach 70m Mehringdamm, nach 10m Obentrautstraße, nach 0m
+links in einen Weg ohne Namen (wieder ein paralleler Radweg). Richtig
+hätte es einfach sein müssen: Blücherstraße, nach 70m links in den
+Mehringdamm, fertig.
+
+=item * Es fehlt ein Hinweis, dass die Zufahrt zum Viktoria-Quartier
+genommen werden muss; die Straße heißt hier auch nur Methfesselstraße
+(was streng genommen richtig ist, aber nicht hilfreich).
+
+=back
+
+=item * Methfesselstraße - Hoeppnerstraße
+
+=over
+
+=item * Treppen haben keine Straßennamen, müssten also von osm2bbd
+besonders behandelt werden. Zurzeit sieht es so aus: Methfesselstraße,
+nach 0m rechts auf namenslosen Weg (nämlich eine Treppe), nach 10m
+rechts auf Methfesselstraße.
+
+=item * Fußwege haben oft keinen Namen, hier müsste man einen
+E<quot>künstlichenE<quot> Namen für die Routenliste oder einfach nur
+E<quot>FußwegE<quot> verwenden. Beispiel: Badener Ring, nach 10m links
+in namenslosen Weg, nach 90m rechts in den Wolffring.
+
+=back
+
+=item * Lüderitzstraße - Seumestraße
+
+=over
+
+=item * Problematische Straßennamen an Querstraßen zwischen zwei
+Fahrbahnen einer Hauptstraße. Das Abbiegen von Lüderitzstraße in die
+Seestraße sieht so aus: Lüderitzstraße, nach 90m Seestraße. Wie man
+sieht, fehlt hier E<quot>linksE<quot>. Das Straßenstück zwischen
+Lüderitzstraße und Genter Straße trägt hier den Namen Seestraße. Damit
+wird auch eine Schwäche bei BBBike aufgedeckt (Abbiegevorgänge werden
+nicht dargestellt wenn sich der Straßenname nicht ändert). Weiterhin
+hat dieses Straßenstück die Kategorie primary, was sich wahrscheinlich
+bei der Routingoption E<quot>Hauptstraßen vermeidenE<quot> auswürden
+würde, obwohl hier ja nur eine Hauptstraße überquert wird.
+
+=item * Unnötige mehrfach genannte gleiche Straßennamen: Müllerstraße,
+nach 1480m Müllerstraße, nach 180m Müllerstraße, nach 10m links in die
+Müllerstraße. Unklar, warum das passiert. Die zweite Müllerstraße
+fängt bei der Fennstraße an. Man fährt weiterhin geradeaus, keine
+versteckten Leerzeichen, keine Straßenkategorieänderung. Die dritte
+Müllerstraße befindet sich an der Kreuzung Schulzendorfer Straße. Und
+die letzte Müllerstraße ist wieder das gleiche Problem wie im Absatz
+vorher beschrieben.
+
+=item * Zwischen Grenzstraße und Liesenstraße wird ein Fußweg gewählt.
+Beim näheren Hinschauen ist das ein Friedhofsweg. Also eher kein guter
+Weg zum Radfahren. Vielleicht sollte ich Fußwege, soweit sie kein
+bicycle=yes haben, bei der Konvertierung mit q2 oder q3 taggen?
+
+Nachdem ich das so geändert habe (Fußwege können je nach bicycle-Tag
+q1 bis q4 haben), verläuft die Route nicht mehr über diesen Weg.
+
+=item * Mollstraße - Otto-Braun-Straße - Mollstraße: sogar hier, wo
+die Situation eindeutig ist, nämlich der Straßenname ist auf beiden
+Seiten gleich, gibt es einen Bruch.
+
+=item * Zwischen Straße der Pariser Kommune und
+Hildegard-Jadamowitz-Straße ist der Platz vor dem Hochhaus auch als
+Platz gekennzeichnet. osm2bbd kann damit nicht gut umgehen und erkennt
+nicht, dass man diagonal über den Platz fahren kann (und
+wahrscheinlich sind die Nodes des Platzes nicht mit dem restlichen
+Straßennetz verbunden). Stattdessen wird ein Umweg hinter der
+Feuerwache vorgeschlagen.
+
+=item * Es wird die Route Marchlewskistraße - Torellstraße statt der
+Gubener Straße vorgeschlagen, weil Einträge für Kopfsteinpflaster
+fehlen.
+
+=item * "Tram M13" wurde oben schon erwähnt.
+
+=back
+
+=back
