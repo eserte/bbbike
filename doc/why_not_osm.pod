@@ -69,6 +69,10 @@ QA-Systeme von osm können erst nachträglich in Aktion treten.
 z.B. E<quot>grüne WegeE<quot> (mit mehreren Stufen). osm kennt so
 etwas nicht und es ist zweifelhaft, ob es dort auch Platz hat.
 
+=item * osm erlaubt nicht das Offline-Arbeiten. Zwar gibt es bei
+Merkaartor einen Menüpunkt "Work offline", aber diesen sollte man
+besser nicht benutzen.
+
 =back
 
 =head2 Beispielrouten
@@ -169,6 +173,46 @@ Gubener Straße vorgeschlagen, weil Einträge für Kopfsteinpflaster
 fehlen.
 
 =item * "Tram M13" wurde oben schon erwähnt.
+
+=back
+
+=item * Mehringdamm - Lüderitzstraße
+
+=over
+
+=item * Mehringdamm verläuft bei osm bis zur Stresemannstraße. Ich bin
+mir aber ziemlich sicher, dass der Mehringdamm nur bis zur Kanalbrücke
+geht. Ein Ortstermin wird es feststellen.
+
+=item * Die Route verläuft über die Friedrichstraße und Müllerstraße.
+Ich würde gerne die Route am Schiffahrtskanal sehen, also "sperre" ich
+die Chausseestraße für den nächsten Versuch. Dieser verläuft komplett
+über die Wilhelmstraße und Luisenstraße. Hier sehe ich an einer
+Stelle: Luisenstraße, nach 90m Weg ohne Namen, nach 20m Luisenstraße.
+An der Stelle ist ein Fußweg über der Luisenstraße bei osm gezeichnet.
+
+=item * "Seller Brücke" - sieht offenkundig falsch aus, wenn die
+Straße dazu "Sellerstraße" geschrieben wird.
+
+=back
+
+=item * Kreuzberg - Potsdam
+
+=over
+
+=item * Ohne weitere Optimierungseinstellungen wird die "langweilige"
+Route über die B1 genommen, wie es auch BBBike machen würde. Mit der
+Einstellung "Hauptstraßen ohne Radwege meiden" bekommt man eine sehr
+interessante Route, die etwa 20% länger ist. Teilweise offensichtliche
+Empfehlungen (Monumentenstraße, Langenscheidtstraße), dann wird das
+Kopfsteinpflaster in der Belziger Straße zugunsten von anderen
+Kopfsteinpflasterstraßen (Apostel-Paulus-Straße, Merseburger Straße)
+umfahren (nur bei der Belziger ist das Kopfsteinpflaster getaggt). Es
+geht durch den Volkspark Wilmersdorf, weiter am Rand des Grunewalds
+entlang, durch Nikolassee und dann weiter am Griebnitzsee, zum Schluss
+ganz viel Zickzack, weil die Radwege an der B1 nicht eingetragen sind.
+
+Die Suche hat mehr als eine Minute gedauert!
 
 =back
 
