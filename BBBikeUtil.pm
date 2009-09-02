@@ -133,17 +133,25 @@ sub h2hm {
     sprintf "%d:%02d", $s, 60*($s - int($s));
 }
 
-# Meter in Kilometer umwandeln. $dig gibt die Anzahl der Nachkommastellen
-# (Default: 1) an. Mit $sigdig (optional) kann die Anzahl der
-# signifikaten Nachkommastellen angegeben werden (um Scheingenauigkeiten
-# zu vermeiden): Beispiel m2km(1234,3,2) => 1.230. Dabei wird nicht gerundet.
+# Meter in Kilometer umwandeln. $dig gibt die Anzahl der
+# Nachkommastellen (Default: 1) an. Mit $sigdig (optional) kann die
+# Anzahl der signifikaten Nachkommastellen angegeben werden (um
+# Scheingenauigkeiten zu vermeiden): Beispiel m2km(1234,3,2) => 1.230.
+# Dabei wird nicht gerundet. $sigdig wird nicht verwendet, wenn
+# dadurch 0.000 als Ergebnis herauskommen würde.
 sub m2km {
     my($s, $dig, $sigdig) = @_;
     return 0 unless $s =~ /\d/;
     $dig = 1 unless defined $dig;
     my $r = sprintf "%." . $dig . "f", $s/1000;
     if (defined $sigdig) {
-	$r =~ s/\.(\d{$sigdig})(.*)/".$1" . ("0"x length($2))/e;
+	if ($sigdig == 2 && $s < 10) {
+	    # do nothing
+	} elsif ($sigdig == 1 && $s < 100) {
+	    # do nothing
+	} else {
+	    $r =~ s/\.(\d{$sigdig})(.*)/".$1" . ("0"x length($2))/e;
+	}
     }
     $r . " km";
 }

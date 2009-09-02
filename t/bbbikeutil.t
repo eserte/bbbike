@@ -23,7 +23,7 @@ BEGIN {
     }
 }
 
-plan tests => 3 + 7;
+plan tests => 3 + 7 + 6;
 
 use_ok 'BBBikeUtil', 'bbbike_root';
 
@@ -39,6 +39,15 @@ is($bbbike_root, realpath(dirname(dirname(realpath($0)))), "Expected value for b
     is(BBBikeUtil::s2hms(3599),  "0:59:59");
     is(BBBikeUtil::s2hms(3600),  "1:00:00");
     is(BBBikeUtil::s2hms(36000),"10:00:00");
+}
+
+{
+    is(BBBikeUtil::m2km(1234,3,2), '1.230 km', 'm2km checks');
+    is(BBBikeUtil::m2km(1239,3,2), '1.230 km', 'kaufmaennisches Runden not done here'); # XXX maybe it should?
+    is(BBBikeUtil::m2km(1239,3),   '1.239 km', 'without sigdig');
+    is(BBBikeUtil::m2km(1239,2),   '1.24 km',  'without sigdig, rounding by sprintf');
+    is(BBBikeUtil::m2km(5,3,2),    '0.005 km', 'significant though below two digits');
+    is(BBBikeUtil::m2km(50,3,1),   '0.050 km');
 }
 
 __END__
