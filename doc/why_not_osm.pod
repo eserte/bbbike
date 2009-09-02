@@ -59,7 +59,11 @@ später korrigiert, aber falsch, nämlich zu
 E<quot>WühlischstraßeE<quot>.
 
 =item * Im BBBike-System gibt es viele Skripte, die die
-Datenintegrität garantieren.
+Datenintegrität garantieren. Bei osm gibt es zwar Maplint,
+Openstreetbugs u.a., aber: bei BBBike werden Daten erst
+veröffentlicht, wenn alle Kontrollskripte erfolgreich durchgelaufen
+sind. Bei osm sind editierte Daten immer sofort öffentlich. Die
+QA-Systeme von osm können erst nachträglich in Aktion treten.
 
 =item * In den BBBike-Daten kann ich auch subjektive Daten einbringen,
 z.B. E<quot>grüne WegeE<quot> (mit mehreren Stufen). osm kennt so
