@@ -160,6 +160,8 @@ sub flush {
 	last if (!@multi_c || length $url <= 2048 || $tolerance > 1000);
 	if ($tolerance == 0) {
 	    $tolerance = 10;
+	} elsif ($tolerance < 100) {
+	    $tolerance += 50;
 	} else {
 	    $tolerance += 100;
 	}
