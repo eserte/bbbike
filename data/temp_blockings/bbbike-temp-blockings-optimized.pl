@@ -1545,26 +1545,8 @@ Neuer Garten (am Portierhaus) - Weinmeisterstr.: Weg ist nur zwischen 6 Uhr bis 
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_013936',
-         'until' => 1251842399,
-         'text' => 'Joachim-Friedrich-Str. (Wilmersdorf) in beiden Richtungen zwischen Kurfürstendamm und Westfälische Str. Baustelle, gesperrt (bis Anfang 09/2009)',
-         'from' => 1251530387,
-         'id' => 1851,
-         'data' => 'userdel	q4::inwork 3092,9886 3108,10069 3111,10116
-',
-         'type' => 'handicap'
-       },
-       {
-         'source_id' => 'IM_013998',
-         'until' => 1252101599,
-         'text' => 'Proskauer Str. (Friedrichshain) in beiden Richtungen zwischen Rigaer Str. und Bänschstr. geplatzte Wasserleitung, Straße vollständig gesperrt (bis Anfang 09/2009)',
-         'from' => 1251833196,
-         'id' => 1852,
-         'data' => 'userdel	q4::inwork 14266,12446 14298,12553 14319,12629
-',
-         'type' => 'handicap'
-       },
+       undef,
+       undef,
        {
          'source_id' => 'IM_013939',
          'until' => 1253051999,
@@ -1577,9 +1559,9 @@ Neuer Garten (am Portierhaus) - Weinmeisterstr.: Weg ist nur zwischen 6 Uhr bis 
        },
        {
          'source_id' => 'IM_013990',
-         'until' => 1251842399,
-         'text' => 'Schönhauser Allee (Prenzlauer Berg) in beiden Richtungen im Kreuzungsbereich Schivelbeiner Str. - Wichertstr. Baustelle, Brückendurchfahrt gesperrt, aus allen Richtungen kein Linksabbiegen möglich (bis Anfang 09/2009)',
-         'from' => 1251530600,
+         'until' => 1253051999,
+         'text' => 'Schönhauser Allee (Prenzlauer Berg) in beiden Richtungen im Kreuzungsbereich Schivelbeiner Str. - Wichertstr. Baustelle, Brückendurchfahrt gesperrt, aus allen Richtungen kein Linksabbiegen möglich (bis Mitte 09.2009)',
+         'from' => 1252010710,
          'id' => 1854,
          'data' => 'Schönhauser Allee -> Schivelbeiner Str.:	3::inwork 10975,16010 10982,16121 10753,16144
 Schönhauser Allee -> Wichertstr.:	3::inwork 10990,16197 10982,16121 11214,16043
@@ -1638,6 +1620,89 @@ Schivelbeiner Str. -> Wichertstr.:	3::inwork 10753,16144 10982,16121 11214,16043
          'from' => 1252188000,
          'id' => 1860,
          'data' => 'userdel	q4::inwork; 4014,19433 4170,19079 4195,19043
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_014062',
+         'until' => 1254347999,
+         'text' => 'Böttgerstr. (Wedding) in beiden Richtungen zwischen Badstr. und Hochstr. Bauarbeiten, Straße vollständig gesperrt (bis Ende 09/2009)',
+         'from' => 1252010752,
+         'id' => 1861,
+         'data' => 'userdel	q4::inwork 8923,15850 9134,15953
+',
+         'type' => 'handicap'
+       },
+       undef,
+       {
+         'until' => 1254348000,
+         'text' => 'B 167 Marienwerderstr. OD Finowfurt, zw. Zum Krugacker u. Aral-Tankstelle Straßenerneuerung Vollsperrung 29.08.2009-30.09.2009 ',
+         'from' => 1251410400,
+         'id' => 1863,
+         'data' => 'userdel	q4::inwork 28575,49756 27626,49928
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1252792800,
+         'text' => 'L 373 B112 - Müllrose OL Brieskow-Finkenheerd, Gubener Str. - R.-Sonnenburg-Str. Deckenerneuerung Vollsperrung 10.09.2009-12.09.2009 ',
+         'from' => 1252447200,
+         'id' => 1864,
+         'data' => 'userdel	q4::inwork 89435,-16834 90073,-16502 90164,-16382
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1252274400,
+         'text' => 'K 6303 Brieselang - L161 Bredow bei Bredow am Abzw. Brieselang Brücken-, Radweg u. Straßenbau Vollsperrung 05.09.2009-06.09.2009 ',
+         'from' => 1252015200,
+         'id' => 1865,
+         'data' => 'userdel	2::inwork -20109,20341 -20850,20447
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1253052000,
+         'text' => 'L 015 Berliner Straße OL Lychen, zw. Brücke Nesselpfuhlfließ u. Schlüßstr. Kanal- u. Straßenausbau Vollsperrung 15.09.2009-15.09.2009 ',
+         'from' => 1252879200,
+         'id' => 1866,
+         'data' => 'userdel	2::inwork 1544,89701 1907,89597
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1252188000,
+         'text' => 'L 030 Gerichtsstr. OL Königs Wusterhausen, zw. Schloßplatz u. Brückenstr. Schlossfest Vollsperrung 05.09.2009-05.09.2009 ',
+         'from' => 1252015200,
+         'id' => 1867,
+         'data' => 'userdel	q4::temp 25859,-11559 26177,-11648
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1253570400,
+         'text' => 'L 074 Sperenberger Str. OL Klausdorf, zw. Zossener Str. und Am Park Kanalarbeiten Vollsperrung 07.09.2009-21.09.2009 ',
+         'from' => 1252188000,
+         'id' => 1868,
+         'data' => 'userdel	q4::inwork 11017,-27817 11325,-27743
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1252533600,
+         'text' => 'L 711 Krausnick - AS Staakow zw. Krausnick und Brand Straßenbauarbeiten Vollsperrung 08.09.2009-09.09.2009 ',
+         'from' => 1252274400,
+         'id' => 1869,
+         'data' => 'userdel	2::inwork 35214,-41158 35289,-41439 35915,-41259 36010,-41272 36387,-40961 36499,-41097 37581,-41158
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1259622000,
+         'text' => 'L 792 Dorfstraße OD Blankenfelde, zw. Zossener Damm u. H.-Heine-Str. Straßenausbau halbseitig gesperrt; Einbahnstraße 08.09.2009-30.11.2009 ',
+         'from' => 1252274400,
+         'id' => 1870,
+         'data' => 'userdel	q4::inwork; 10448,-7582 10115,-8276
 ',
          'type' => 'handicap'
        }

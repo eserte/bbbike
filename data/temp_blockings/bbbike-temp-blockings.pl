@@ -1724,7 +1724,7 @@ EOF
        text  => 'L 711; (Krausnick-AS Stakow); zw. Krausnick u. Bahnhof Brand Einschränkung Tragfähigkeit Vollsperrung, Dauer unbekannt ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 35178,-41015 37450,-41050 37950,-41275 38512,-41000 40390,-41069
+userdel	2 35214,-41158 35289,-41439 35915,-41259 36010,-41272 36387,-40961 36499,-41097 37581,-41158 37950,-41275 38512,-41000 40390,-41069
 EOF
      },
      { from  => 1113256800, # 2005-04-12 00:00
@@ -15711,7 +15711,7 @@ userdel	q4::inwork 3092,9886 3108,10069 3111,10116
 EOF
      },
      { from  => 1251833196, # 2009-09-01 21:26
-       until => 1252101599, # 2009-09-04 23:59
+       until => 1252010774, # 2009-09-04 23:59 1252101599
        text  => 'Proskauer Str. (Friedrichshain) in beiden Richtungen zwischen Rigaer Str. und Bänschstr. geplatzte Wasserleitung, Straße vollständig gesperrt (bis Anfang 09/2009)',
        type  => 'handicap',
        source_id => 'IM_013998',
@@ -15728,9 +15728,9 @@ EOF
 userdel	q4::inwork; -4922,13609 -4922,13641 -4932,13887 -4926,13971
 EOF
      },
-     { from  => 1251530600, # 2009-08-29 09:23
-       until => 1251842399, # 2009-09-01 23:59
-       text  => 'Schönhauser Allee (Prenzlauer Berg) in beiden Richtungen im Kreuzungsbereich Schivelbeiner Str. - Wichertstr. Baustelle, Brückendurchfahrt gesperrt, aus allen Richtungen kein Linksabbiegen möglich (bis Anfang 09/2009)',
+     { from  => 1252010710, # 2009-09-03 22:45
+       until => 1253051999, # 2009-09-15 23:59
+       text  => 'Schönhauser Allee (Prenzlauer Berg) in beiden Richtungen im Kreuzungsbereich Schivelbeiner Str. - Wichertstr. Baustelle, Brückendurchfahrt gesperrt, aus allen Richtungen kein Linksabbiegen möglich (bis Mitte 09.2009)',
        type  => 'gesperrt',
        source_id => 'IM_013990',
        data  => <<EOF,
@@ -15794,6 +15794,87 @@ EOF
        source_id => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20090831.1205.137093.html',
        data  => <<EOF,
 userdel	q4::inwork; 4014,19433 4170,19079 4195,19043
+EOF
+     },
+     { from  => 1252010752, # 2009-09-03 22:45
+       until => 1254347999, # 2009-09-30 23:59
+       text  => 'Böttgerstr. (Wedding) in beiden Richtungen zwischen Badstr. und Hochstr. Bauarbeiten, Straße vollständig gesperrt (bis Ende 09/2009)',
+       type  => 'handicap',
+       source_id => 'IM_014062',
+       data  => <<EOF,
+userdel	q4::inwork 8923,15850 9134,15953
+EOF
+     },
+     { from  => 1252014436, # 2009-09-04 00:00 1252015200
+       until => 1252014437, # 2009-09-07 00:00 1252274400
+       text  => 'B 087 Frankfurt/Oder - Müllrose zw. Markendorf u. Hohenwalde Durchlassneubau Vollsperrung 05.09.2009-06.09.2009 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 82521,-12031 82191,-12275
+EOF
+     },
+     { from  => 1251410400, # 2009-08-28 00:00
+       until => 1254348000, # 2009-10-01 00:00
+       text  => 'B 167 Marienwerderstr. OD Finowfurt, zw. Zum Krugacker u. Aral-Tankstelle Straßenerneuerung Vollsperrung 29.08.2009-30.09.2009 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 28575,49756 27626,49928
+EOF
+     },
+     { from  => 1252447200, # 2009-09-09 00:00
+       until => 1252792800, # 2009-09-13 00:00
+       text  => 'L 373 B112 - Müllrose OL Brieskow-Finkenheerd, Gubener Str. - R.-Sonnenburg-Str. Deckenerneuerung Vollsperrung 10.09.2009-12.09.2009 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 89435,-16834 90073,-16502 90164,-16382
+EOF
+     },
+     { from  => 1252015200, # 2009-09-04 00:00
+       until => 1252274400, # 2009-09-07 00:00
+       text  => 'K 6303 Brieselang - L161 Bredow bei Bredow am Abzw. Brieselang Brücken-, Radweg u. Straßenbau Vollsperrung 05.09.2009-06.09.2009 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -20109,20341 -20850,20447
+EOF
+     },
+     { from  => 1252879200, # 2009-09-14 00:00
+       until => 1253052000, # 2009-09-16 00:00
+       text  => 'L 015 Berliner Straße OL Lychen, zw. Brücke Nesselpfuhlfließ u. Schlüßstr. Kanal- u. Straßenausbau Vollsperrung 15.09.2009-15.09.2009 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 1544,89701 1907,89597
+EOF
+     },
+     { from  => 1252015200, # 2009-09-04 00:00
+       until => 1252188000, # 2009-09-06 00:00
+       text  => 'L 030 Gerichtsstr. OL Königs Wusterhausen, zw. Schloßplatz u. Brückenstr. Schlossfest Vollsperrung 05.09.2009-05.09.2009 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::temp 25859,-11559 26177,-11648
+EOF
+     },
+     { from  => 1252188000, # 2009-09-06 00:00
+       until => 1253570400, # 2009-09-22 00:00
+       text  => 'L 074 Sperenberger Str. OL Klausdorf, zw. Zossener Str. und Am Park Kanalarbeiten Vollsperrung 07.09.2009-21.09.2009 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 11017,-27817 11325,-27743
+EOF
+     },
+     { from  => 1252274400, # 2009-09-07 00:00
+       until => 1252533600, # 2009-09-10 00:00
+       text  => 'L 711 Krausnick - AS Staakow zw. Krausnick und Brand Straßenbauarbeiten Vollsperrung 08.09.2009-09.09.2009 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 35214,-41158 35289,-41439 35915,-41259 36010,-41272 36387,-40961 36499,-41097 37581,-41158
+EOF
+     },
+     { from  => 1252274400, # 2009-09-07 00:00
+       until => 1259622000, # 2009-12-01 00:00
+       text  => 'L 792 Dorfstraße OD Blankenfelde, zw. Zossener Damm u. H.-Heine-Str. Straßenausbau halbseitig gesperrt; Einbahnstraße 08.09.2009-30.11.2009 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork; 10448,-7582 10115,-8276
 EOF
      },
     );
