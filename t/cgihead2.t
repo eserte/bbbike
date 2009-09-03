@@ -157,13 +157,13 @@ sub check_url {
 		or diag("For URL $url $redir_url");
 	} elsif ($url =~ m{(?:\.tar\.bz2|\.tbz)$}) {
 	    is($content_type, "application/octet-stream", "Expected type (binary for bzip2)") or diag("For URL $url $redir_url");
-	} elsif ($url =~ m{\.tar\.gz\?download$}) { # Sourceforge download
+	} elsif ($url =~ m{\.tar\.gz/download$}) { # Sourceforge download
 	    # the inetbone mirror (213.203.218.125) running lighttpd returns octet-stream, so accept it, too
 	    like($content_type, qr{^application/(x-tar|x-gzip|octet-stream)$}, "Expected type (tar or gzip, but octet-stream also possible)") or diag("For URL $url $redir_url");
-	} elsif ($url =~ m{\.exe\?download$}) { # Sourceforge download
+	} elsif ($url =~ m{\.exe/download$}) { # Sourceforge download
 	    like($content_type, MSDOS_MIME_TYPE, "Expected type (binary or msdos program)")
 		or diag("For URL $url $redir_url");
-	} elsif ($url =~ m{\.deb\?download$}) { # Sourceforge download
+	} elsif ($url =~ m{\.deb/download$}) { # Sourceforge download
 	    # XXX One of the sourceforge mirrors uses text/plain as content-type
 	    like($content_type, qr{^application/(octet-stream|x-debian-package)$}, "Expected type (debian package), got $content_type")
 		or diag("For URL $url $redir_url");

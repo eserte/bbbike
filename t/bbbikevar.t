@@ -39,10 +39,11 @@ SKIP: {
 	push @url, $1;
     }
     my %dir_url = map { (dirname($_),1) } @url;
-    if (!exists $dir_url{$BBBike::DISTDIR}) {
-	fail("$BBBike::DISTDIR not found in " . join(", ", keys %dir_url));
+    my $bbbike_versioned_distdir = $BBBike::DISTDIR . '/BBBike/' . $BBBike::STABLE_VERSION;
+    if (!exists $dir_url{$bbbike_versioned_distdir}) {
+	fail("$bbbike_versioned_distdir not found in " . join(", ", keys %dir_url));
     } else {
-	pass("$BBBike::DISTDIR found");
+	pass("$bbbike_versioned_distdir found");
     }
 }
 

@@ -58,26 +58,26 @@ $BBBIKE_UPDATE_DIST_CGI = "http://www.bbbike.de/cgi-bin/bbbike-snapshot.cgi";
 $BBBIKE_WAP	   = 'http://bbbike.de/wap';
 $BBBIKE_DIRECT_WAP = 'http://bbbike.de/cgi-bin/wapbbbike.cgi';
 
-# Sourceforge IDs
+# Sourceforge IDs (not visible anymore)
 $SF_BBBIKE_GROUP_ID = 19142;
 $SF_BBBIKE_PACKAGE_ID = 14052;
 $SF_BBBIKE_LATEST_RELEASE_ID = 571125; # this is 3.16, change for new releases!
 
 # Distribution directory for scripts. Unfortunately there's no directory
 # index available anymore at sourceforge...
-$DISTDIR	   = 'http://heanet.dl.sourceforge.net/sourceforge/bbbike';
-$DISTFILE_SOURCE   = "$DISTDIR/BBBike-$STABLE_VERSION.tar.gz";
-$DISTFILE_WINDOWS  = "$DISTDIR/BBBike-$WINDOWS_VERSION-Windows.exe";
+$DISTDIR	   = 'http://heanet.dl.sourceforge.net/project/bbbike';
+$DISTFILE_SOURCE   = "$DISTDIR/BBBike/$STABLE_VERSION/BBBike-$STABLE_VERSION.tar.gz";
+$DISTFILE_WINDOWS  = "$DISTDIR/BBBike/$WINDOWS_VERSION/BBBike-$WINDOWS_VERSION-Windows.exe";
 # Distribution directory for humans (link to 'show files' at sourceforge, and restricted to BBBike)
-$DISPLAY_DISTDIR   = 'http://sourceforge.net/project/showfiles.php?group_id=' . $SF_BBBIKE_GROUP_ID . '&package_id=' . $SF_BBBIKE_PACKAGE_ID;
-$LATEST_RELEASE_DISTDIR  = 'http://sourceforge.net/project/showfiles.php?group_id=' . $SF_BBBIKE_GROUP_ID . '&package_id=' . $SF_BBBIKE_PACKAGE_ID . '&release_id=' . $SF_BBBIKE_LATEST_RELEASE_ID;
+$DISPLAY_DISTDIR   = 'http://sourceforge.net/projects/bbbike/files/BBBike/';
+$LATEST_RELEASE_DISTDIR  = "http://sourceforge.net/projects/bbbike/files/BBBike/$STABLE_VERSION/";
 # Contains all BBBike project releases:
-$DISPLAY_BBBIKE_PROJECT_DISTDIR   = 'http://sourceforge.net/project/showfiles.php?group_id=' . $SF_BBBIKE_GROUP_ID;
+$DISPLAY_BBBIKE_PROJECT_DISTDIR   = 'http://sourceforge.net/projects/bbbike/files/';
 # These link to the intermediate SourceForge download page (only for humans)
-$SF_DISTDIR	      = 'http://prdownloads.sourceforge.net/bbbike';
-$SF_DISTFILE_SOURCE   = "$SF_DISTDIR/BBBike-$STABLE_VERSION.tar.gz?download";
-$SF_DISTFILE_WINDOWS  = "$SF_DISTDIR/BBBike-$WINDOWS_VERSION-Windows.exe?download";
-$SF_DISTFILE_DEBIAN   = "$SF_DISTDIR/bbbike_${DEBIAN_VERSION}_i386.deb?download";
+$SF_DISTDIR	      = 'http://sourceforge.net/projects/bbbike/files/BBBike';
+$SF_DISTFILE_SOURCE   = "$SF_DISTDIR/$STABLE_VERSION/BBBike-$STABLE_VERSION.tar.gz/download";
+$SF_DISTFILE_WINDOWS  = "$SF_DISTDIR/$WINDOWS_VERSION/BBBike-$WINDOWS_VERSION-Windows.exe/download";
+$SF_DISTFILE_DEBIAN   = "$SF_DISTDIR/" . join('', $DEBIAN_VERSION =~ m{(^[^-]+)}) . "/bbbike_${DEBIAN_VERSION}_i386.deb/download";
 $DISTFILE_FREEBSD_I386 = "ftp://ftp.FreeBSD.org/pub/FreeBSD/ports/i386/packages-stable/All/de-BBBike-3.16_1.tbz";
 *DISTFILE_FREEBSD = \$DISTFILE_FREEBSD_I386; # compatibility
 $DISTFILE_FREEBSD_ALL  = "http://portsmon.freebsd.org/portoverview.py?category=german&portname=BBBike";
@@ -101,7 +101,7 @@ $BBBIKE_GIT_HTTP = 'http://github.com/eserte/bbbike';
 
 # CVS
 $BBBIKE_CVS_ANON_REPOSITORY = ":pserver:anonymous\@bbbike.cvs.sourceforge.net:/cvsroot/bbbike";
-$BBBIKE_CVS_HTTP = "http://sourceforge.net/cvs/?group_id=" . $SF_BBBIKE_GROUP_ID;
+$BBBIKE_CVS_HTTP = 'http://bbbike.cvs.sourceforge.net/viewvc/bbbike/bbbike/';
 
 $BBBIKE_GOOGLEMAP_URL = 'http://bbbike.de/cgi-bin/bbbikegooglemap.cgi';
 
