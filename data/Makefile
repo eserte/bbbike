@@ -395,6 +395,7 @@ ubahnhof:	ubahnhof-orig
 .for i in u s
 $(i)bahnhof_bg:	$(i)bahnhof-orig
 	-@$(WRITEABLE) $@
+# XXX :U modifier does not work with older pmakes, need a workaround...
 	(echo "#: title: Fahrradfreundliche Zugänge bei der $(i:U)-Bahn"; \
 	 [ "$(i)" = "s" ] && echo "#: note: http://www.s-bahn-berlin.de/fahrplanundnetz/sbahnhof_anzeige.php?ID=103"; \
 	 echo "#:") > $@~
