@@ -69,6 +69,15 @@ QA-Systeme von osm können erst nachträglich in Aktion treten.
 z.B. E<quot>grüne WegeE<quot> (mit mehreren Stufen). osm kennt so
 etwas nicht und es ist zweifelhaft, ob es dort auch Platz hat.
 
+=item * Soweit mir bekannt ist, gibt es bei osm keine Zuordnung
+zwischen Straßen und Bezirken/Ortsteilen. Das ist aber in Berlin
+notwendig, weil viele Straßennamen mehrfach vergeben sind und deshalb
+bei der Straßenauswahl eine Unterscheidung getroffen werden muss.
+Vielleicht ist es möglich, über eine Analyse der Lage von Straßen
+innerhalb der administrativen Grenzen die Zuordnung zu einem Ortsteil
+durchzuführen, aber dieses Programm muss erst einmal geschrieben
+werden.
+
 =item * osm erlaubt nicht das Offline-Arbeiten. Zwar gibt es bei
 Merkaartor einen Menüpunkt "Work offline", aber diesen sollte man
 besser nicht benutzen.
