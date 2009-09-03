@@ -10,8 +10,14 @@ ifndef ROOT_DIR
 ROOT_DIR=		$(shell perl -MFindBin='$$RealBin' -MCwd=realpath -le 'print realpath("$$RealBin/..")')
 endif
 
-all:	rights
+all:	rights symlinks
 	@echo "You may run $(MAKE) httpd.conf to create a default apache configuration for inclusion"
+
+symlinks:
+	[ -e bbbike.en.cgi   ] || ln -s bbbike.cgi  bbbike.en.cgi
+	[ -e bbbike2.cgi     ] || ln -s bbbike.cgi  bbbike2.cgi
+	[ -e bbbike2.en.cgi  ] || ln -s bbbike2.cgi bbbike2.en.cgi
+	[ -e bbbike-test.cgi ] || ln -s bbbike.cgi  bbbike-test.cgi
 
 biokovo.conf:
 	$(MAKE) \
@@ -42,7 +48,13 @@ GNUmakefile:	Makefile ../miscsrc/b2gmake
 	mv GNUmakefile~ GNUmakefile
 	chmod ugo+r GNUmakefile
 
+permissions: rights
+fix-permissions: rights
+
 rights:
 	chmod ugo+rx *.cgi
 	chmod ugo+r,ugo-x *.cgi.config
+# The next line is silly, but unfortunately the file is checked into
+# the sf CVS without x bit, and this causes problems when using git-cvs
+	chmod ugo-x bbbikesoapserver.cgi
 	[ ! -e ../tmp/www ] || chmod 777 ../tmp/www
