@@ -227,7 +227,7 @@ EOF
 sub teaser_other_cities {
     my @l = localtime; $l[4]++;$l[5]+=1900;
     my $is_new = $l[5]<2010 && $l[4]<5;
-    my $url = "http://bbbike.elsif.de/";
+    my $url = "http://www.bbbike.org/";
     if ($lang eq 'en') {
 	<<EOF;
 <div class="teaser">
