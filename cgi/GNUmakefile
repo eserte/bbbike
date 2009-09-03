@@ -1,8 +1,8 @@
 .CURDIR?=	${CURDIR}
-CGI_SCRIPTS=		bbbike.cgi bbbikegooglemap.cgi mapserver_address.cgi \
+CGI_SCRIPTS=		bbbike.cgi bbbike.en.cgi bbbikegooglemap.cgi mapserver_address.cgi \
 			mapserver_comment.cgi mapserver_setcoord.cgi \
 			wapbbbike.cgi bbbiketile.cgi
-DEVEL_CGI_SCRIPTS=	bbbike2.cgi bbbikegooglemap2.cgi
+DEVEL_CGI_SCRIPTS=	bbbike2.cgi bbbike2.en.cgi bbbikegooglemap2.cgi bbbike-test.cgi
 ROOT_URL?=		/bbbike
 # Set this to "cgi" or "Apache::Registry"
 CGI_TYPE?=		cgi
