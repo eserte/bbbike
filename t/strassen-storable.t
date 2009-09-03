@@ -19,7 +19,7 @@ use Getopt::Long;
 BEGIN {
     if (!eval q{
 	use Test;
-	die "No data/Makefile" if !-e "../data/Makefile";
+	die "No data/Makefile" if !-e "$FindBin::RealBin/../data/Makefile";
 	1;
     }) {
 	print "# tests only work with installed Test mode and a Makefile in the data directory\n";
@@ -45,7 +45,12 @@ if (!GetOptions("fast" => \$fast,
 
 use vars qw($token %times $ext);
 
-system("cd ../data && make storable 2>&1 >/dev/null") unless $fast;
+my $make = $^O =~ m{bsd}i ? "make" : "pmake";
+
+unless ($fast) {
+    warn "Regenerating storable files in data, please be patient...\n";
+    system("cd $FindBin::RealBin/../data && $make storable >/dev/null 2>&1");
+}
 
 for $ext ("", ".st") {
     if ($bench) {
