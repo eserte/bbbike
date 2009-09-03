@@ -82,6 +82,13 @@ werden.
 Merkaartor einen Menüpunkt "Work offline", aber diesen sollte man
 besser nicht benutzen.
 
+=item * Ampeln sind bei osm sehr detailliert aufgeführt: bei
+Kreuzungen mit zweibahnigen Straßen sind dann vier Ampeln
+eingezeichnet. Das heißt aber auch, dass beim Linksabbiegen an einer
+solchen Kreuzung drei Ampeln gezählt werden würden. Damit würde die
+Anzeige der Ampeln an der Route sowie die Ampeloptimierung nicht ohne
+zusätzliche Heuristiken zurechtkommen.
+
 =back
 
 =head2 Beispielrouten
