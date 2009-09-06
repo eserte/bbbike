@@ -1453,15 +1453,7 @@ Neuer Garten (am Portierhaus) - Weinmeisterstr.: Weg ist nur zwischen 6 Uhr bis 
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1252188000,
-         'text' => 'L 033 Wriezen - Prötzel zw. Abzw. Reichenow über Herzhorn nach Prötzel Deckenerneuerung Vollsperrung 24.08.2009-05.09.2009 ',
-         'from' => 1250978400,
-         'id' => 1840,
-         'data' => 'userdel	2::inwork 53517,29159 52892,28720 52634,28531 50690,27036
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1252274400,
          'text' => 'L 070 Stülpe - Sperenberg bei Kummersdorf/ Gut Straßenausbau Vollsperrung 05.09.2009-06.09.2009 ',
@@ -1670,15 +1662,7 @@ Schivelbeiner Str. -> Wichertstr.:	3::inwork 10753,16144 10982,16121 11214,16043
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1252188000,
-         'text' => 'L 030 Gerichtsstr. OL Königs Wusterhausen, zw. Schloßplatz u. Brückenstr. Schlossfest Vollsperrung 05.09.2009-05.09.2009 ',
-         'from' => 1252015200,
-         'id' => 1867,
-         'data' => 'userdel	q4::temp 25859,-11559 26177,-11648
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1253570400,
          'text' => 'L 074 Sperenberger Str. OL Klausdorf, zw. Zossener Str. und Am Park Kanalarbeiten Vollsperrung 07.09.2009-21.09.2009 ',
