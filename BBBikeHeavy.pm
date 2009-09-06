@@ -1573,7 +1573,7 @@ sub BBBikeHeavy::make_unique_temp {
 sub BBBikeHeavy::save_route_as_gpx {
     my(%args) = @_;
     if (!eval { require Strassen::GPX; 1 }) {
-	perlmod_install_advice("XML::Parser", "XML::Twig");
+	perlmod_install_advice("XML::LibXML", "XML::Twig");
     } else {
 	require Route;
 	require Route::Heavy;
