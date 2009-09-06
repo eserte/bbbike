@@ -89,7 +89,7 @@ my @req_table =
    'CPAN.pm kann XML::SAX nicht über XML::Simple automatisch installieren'],
   [qw/XML::Simple	0	all	2	cgi/,
    'optional für XML-Dumps der BBBike-Route'],
-  [qw/XML::Parser	0	all	2|4	cgi/,
+  [qw/XML::Parser	0	all	2	cgi/,
    'optional für UAProf parsing (alternative wäre XML::SAX::PurePerl)'],
   [qw/XML::LibXML	0	all	0	base/,
    'optional für das Parsen und Erzeugen von GPX-Dateien'],
