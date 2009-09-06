@@ -7,17 +7,41 @@ use lib "$FindBin::RealBin/..";
 use File::Glob qw(bsd_glob);
 use Getopt::Long;
 
-use BBBikeUtil qw(is_in_path);
+use BBBikeUtil qw(is_in_path save_pwd);
 
 chdir "$FindBin::RealBin/.." or die "Can't chdir to bbbike directory: $!";
 my $use_ack;
 GetOptions("ack!" => \$use_ack)
     or die "usage: $0 [-ack] ...";
+
+my $manifest;
+if (-e "$FindBin::RealBin/../.git" && is_in_path('git')) {
+    require File::Temp;
+    my($tmpfh,$tmpfile) = File::Temp::tempfile(SUFFIX => '.MANIFEST', UNLINK => 1) or die $!;
+    save_pwd {
+	chdir "$FindBin::RealBin/.." or die $!;
+	open my $fh, '-|', 'git', 'ls-files'
+	    or die "Cannot run git: $!";
+	while(<$fh>) {
+	    print $tmpfh $_;
+	}
+	close $fh
+	    or die $!;
+    };
+    close $tmpfh
+	or die $!;
+    $manifest = $tmpfile;
+} else {
+    warn "Cannot run git, using obsolete MANIFEST.withcvs...\n";
+    $manifest = "$FindBin::RealBin/../MANIFEST.withcvs";
+}
+
 die "No arguments" if !@ARGV;
 
 if (!$use_ack) {
     my @files;
-    open my $fh, "MANIFEST.withcvs" or die $!;
+    open my $fh, $manifest
+	or die "Can't open $manifest: $!";
     while(<$fh>) {
 	chomp;
 	next if /^#/ || /^\s*$/;
