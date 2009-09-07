@@ -34,7 +34,8 @@ $ua->agent('BBBikeTest/1.0');
     ok($resp->is_success, "revgeocode API call")
 	or diag $resp->as_string;
     my $data = decode_json $resp->decoded_content(charset => 'none');
-    is_deeply($data, {"crossing"=>"Simplonstr./Seumestr."}); # "Niemannstr." intentionally stripped
+    is_deeply($data, {crossing  => "Simplonstr./Seumestr.", # "Niemannstr." intentionally stripped in API
+		      bbbikepos => '14252,11368'});
 }
 
 __END__
