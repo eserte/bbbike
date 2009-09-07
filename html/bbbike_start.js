@@ -317,6 +317,12 @@ function locate_me_res(res) {
     alert("Die Positionierung konnte nicht durchgeführt werden.");
   } else {
     document.forms["BBBikeForm"].elements["start"].value = res.crossing;
+    if (typeof transpose_dot_func == "function") {
+      var xy = res.bbbikepos.split(/,/);
+      var txy = transpose_dot_func(parseInt(xy[0]), parseInt(xy[1]));
+      pos_rel("locateme_marker", "startmapbelow", txy[0], txy[1]);
+      vis("locateme_marker", "show");
+    }
   }
 }
 
