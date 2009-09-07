@@ -5,7 +5,8 @@
   <head>
     <title>Qualitätskategorien</title>
     <style type="text/css">
-    table { width:100%; border:1px solid black; border-collapse:collapse; }
+    table { border:1px solid black; border-collapse:collapse; }
+    table.wide { width:100%;  }
     th    { border:1px solid black; padding:2px; }
     td    { border:1px solid black; padding:2px; }
 
@@ -23,7 +24,7 @@
       <li>Fahrbare Geschwindigkeit</li>
     </ul>
     <h2>Kategorisierung anhand der Fahrbahnbeschaffenheit</h2>
-    <table>
+    <table class="wide">
       <tr>
 	<th></th>
 	<th></th>
@@ -134,7 +135,7 @@
       Fußgängern oder parkenden Autos, aktuelle Windgeschwindigkeit
       etc.) nicht berücksichtigt.
     </p>
-    <table>
+    <table class="wide">
       <tr>
 	<th></th>
 	<th>Rennrad</th>
@@ -172,5 +173,41 @@
       </tr>
     </table>
 
+    <h2 style="margin-top:0.5cm;">OpenStreetMap-Tag smoothness</h2>
+    <p>
+      Die BBBike-Qualitätskategorien verhalten sich
+      zum <a href="http://www.openstreetmap.org">OpenStreetMap</a>-Tag <a href="http://wiki.openstreetmap.org/wiki/DE:Map_Features#Wege">smoothness</a>
+      etwa wie folgt:
+    </p>
+    <table>
+      <tr>
+	<th>OpenStreetMap-Wert</th>
+	<th>BBBike-Kategorie</th>
+      </tr>
+      <tr>
+	<td>excellent</td>
+	<td>Q0</td>
+      </tr>
+      <tr>
+	<td>good</td>
+	<td>Q1</td>
+      </tr>
+      <tr>
+	<td>intermediate</td>
+	<td>Q2</td>
+      </tr>
+      <tr>
+	<td>bad</td>
+	<td>Q3</td>
+      </tr>
+    </table>
+    <p>
+      Werte schlechter als "bad" (also "very bad", "horrible" usw.) sind
+      üblicherweise zu schlecht für Fahrräder.
+    </p>
+    <p>
+      Da reale Vergleichswerte in den osm-Daten weitgehend fehlen, ist
+      dieses Mapping noch mit Vorsicht zu genießen.
+    </p>
   </body>
 </html>
