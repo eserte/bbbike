@@ -412,6 +412,9 @@ EOF
 	$self->{AntiTransposeCode} = $anti_code;
     }
 
+    $self->{TransposeJS} = _transpose_perl_to_js($code);
+    # warn $self->{TransposeJS};
+
     # Correct bounding box:
     #warn "before: $self->{Min_x},$self->{Min_y} $self->{Max_x},$self->{Max_y}";
     $self->set_bbox($anti_transpose->(0,0),$anti_transpose->($w, $h));
@@ -420,6 +423,15 @@ EOF
     # Bei 100dpi ist Xk=1 <=> 1km=1000 Pixel
     $self->{Xk} = $xk;
     $self->{Yk} = $yk;
+}
+
+sub _transpose_perl_to_js {
+    my $code = shift;
+    $code =~ s{\bsub\b}{function (x,y)};
+    $code =~ s{\$_\[0\]}{x}g;
+    $code =~ s{\$_\[1\]}{y}g;
+    $code =~ s<\{><{return new Array>;
+    $code;
 }
 
 sub get_color_values {
