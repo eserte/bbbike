@@ -2183,7 +2183,7 @@ EOF
 		    my $transpose_dot_func = "transpose_dot_func = " . overview_map()->{TransposeJS};
 		    print <<EOF;
 <div id="locateme" style="visibility:hidden;">
-  <a href="javascript:locate_me()">Aktuelle Position verwenden</a>
+  <a href="javascript:locate_me()">@{[ M("Aktuelle Position verwenden") ]}</a>
 </div>
 <div id="locateme_marker" style="position:absolute; visibility:hidden;"><img src="$bbbike_images/bluedot.png" border=0 width=8 height=8></div>
 <script type="text/javascript"><!--
