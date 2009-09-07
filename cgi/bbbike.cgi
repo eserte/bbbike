@@ -869,10 +869,10 @@ if (!defined $bbbike_html) {
     $bbbike_html   = "$bbbike_root/" . ($use_cgi_bin_layout ? "BBBike/" : "") .
 	"html";
 }
-$is_beta = $bbbike_url =~ m{bbbike\d\.cgi}; # bbbike2.cgi ...
+$is_beta = $bbbike_url =~ m{bbbike\d(\.en)?\.cgi}; # bbbike2.cgi ...
 $bbbike2_url = $bbbike_url;
 if (!$is_beta) {
-    $bbbike2_url =~ s{bbbike\.cgi}{bbbike2.cgi};
+    $bbbike2_url =~ s{bbbike(\.en)?\.cgi}{bbbike2$1.cgi};
 }
 
 $bbbike_script = $bbbike_url;
