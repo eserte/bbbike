@@ -135,7 +135,7 @@ sub geocoder_dialog {
 				      };
 				      require LWP::UserAgent; # should be already loaded anyway
 				      Geo::Coder::GoogleMaps->new(apikey => $apikey,
-								  ua => LWP::UserAgent->new(agent => "Mozilla/5.0 (compatible; Geo::Coder::GoogleMaps/$Geo::Coder::GoogleMaps::VERSION; Google, please stop smoking crack; http://rt.cpan.org/Public/Bug/Display.html?id=35173)"),
+								  ua => LWP::UserAgent->new(agent => "Mozilla/5.0 (compatible; Geo::Coder::GoogleMaps/$Geo::Coder::GoogleMaps::VERSION; Google, please stop smoking crack; http://rt.cpan.org/Public/Bug/Display.html?id=49483)"),
 								 );
 				  },
 				  'extract_loc' => sub {
