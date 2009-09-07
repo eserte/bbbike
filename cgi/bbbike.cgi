@@ -950,6 +950,12 @@ $smallform = $q->param('smallform') || $bi->{'mobile_device'};
 $got_cookie = 0;
 %c = ();
 
+if (defined $q->param('api')) {
+    require BBBikeCGIAPI;
+    BBBikeCGIAPI::action($q->param('api'), $q);
+    my_exit(0);
+}
+
 foreach my $type (qw(start via ziel)) {
     if (defined $q->param($type . "charimg.x") and
 	$q->param($type . "charimg.x") ne ""   and
@@ -1746,9 +1752,12 @@ sub choose_form {
 	$onloadscript .= "init_hi(); window.onresize = init_hi; "
     }
     $onloadscript .= "focus_first(); ";
+    if ($is_beta) {
+	$onloadscript .= "check_locate_me(); ";
+    }
     if ($nice_berlinmap || $nice_abcmap) {
 	push @extra_headers, -onLoad => $onloadscript,
-	     -script => [{-src => $bbbike_html . "/bbbike_start.js?v=1.14"},
+	     -script => [{-src => $bbbike_html . "/bbbike_start.js?v=1.16"},
 			 ($nice_berlinmap
 			  ? {-code => qq{set_bbbike_images_dir('$bbbike_images')}}
 			  : ()
@@ -2168,6 +2177,16 @@ EOF
 </select>
 };
 		    }
+		}
+
+		if ($type eq 'start' && $bi->{'can_css'} && $is_beta) {
+		    print <<EOF;
+<div id="locateme" style="visibility:hidden;">
+  <a href="javascript:locate_me()">Aktuelle Position verwenden</a>
+  <input type="hidden" name="startc_wgs84" value=""><br>
+  <span id="locatemeresult"></span>
+</div>
+EOF
 		}
 
 		print "</td><td>" if $bi->{'can_table'};
