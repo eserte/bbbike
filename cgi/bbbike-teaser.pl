@@ -4,7 +4,7 @@
 # $Id: bbbike-teaser.pl,v 1.31 2009/04/04 11:12:32 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003,2004,2005,2006,2008 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003,2004,2005,2006,2008,2009 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -40,6 +40,7 @@ sub teaser {
 				#teaser_sternfahrt_changes(),
 				#teaser_dobli(),
 				#$ENV{SERVER_NAME} =~ /radzeit/i ? teaser_radzeit() : (),
+				_teaser_is_iphone() ? teaser_iphone() : (),
 			       ];
     $teasers_optional{"en"} = [],
     $teasers_mandatory{"en"} = [
@@ -54,6 +55,7 @@ sub teaser {
 				#teaser_sternfahrt_changes(),
 				#teaser_dobli(),
 				#$ENV{SERVER_NAME} =~ /radzeit/i ? teaser_radzeit() : (),
+				_teaser_is_iphone() ? teaser_iphone() : (),
 			       ];
 
     my $use_lang = $lang eq 'en' ? "en" : "de";
@@ -242,6 +244,25 @@ EOF
 EOF
     }
 }
+
+sub teaser_iphone {
+    my $url = "$bbbike_html/bbbike_tracks_iphone.html";
+    if ($lang eq 'en') {
+	<<EOF;
+<div class="teaser">
+  Tutorial: <a href="$url">Load BBBike tracks to iPhone</a> (sorry, German only)
+</div>
+EOF
+    } else {
+	<<EOF;
+<div class="teaser">
+  Anleitung: <a href="$url">BBBike-Tracks unterwegs auf das iPhone laden</a>
+</div>
+EOF
+    }
+}
+
+sub _teaser_is_iphone { $ENV{HTTP_USER_AGENT} =~ m{\biPhone\b} }
 
 1;
 
