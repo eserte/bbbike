@@ -109,7 +109,9 @@ sub geocoder_dialog {
 				      chomp;
 				      $_;
 				  };
-				  Geo::Coder::Google->new(apikey => $apikey);
+				  my $google = Geo::Coder::Google->new(apikey => $apikey);
+				  $google->ua->agent("Mozilla/5.0 (compatible; Geo::Coder::Google/$Geo::Coder::Google::VERSION; Google, please stop smoking crack; http://rt.cpan.org/Public/Bug/Display.html?id=35173)");
+				  $google;
 			      },
 			      'extract_loc' => sub {
 				  my $location = shift;
@@ -131,7 +133,10 @@ sub geocoder_dialog {
 					  chomp;
 					  $_;
 				      };
-				      Geo::Coder::GoogleMaps->new(apikey => $apikey);
+				      require LWP::UserAgent; # should be already loaded anyway
+				      Geo::Coder::GoogleMaps->new(apikey => $apikey,
+								  ua => LWP::UserAgent->new(agent => "Mozilla/5.0 (compatible; Geo::Coder::GoogleMaps/$Geo::Coder::GoogleMaps::VERSION; Google, please stop smoking crack; http://rt.cpan.org/Public/Bug/Display.html?id=35173)"),
+								 );
 				  },
 				  'extract_loc' => sub {
 				      my $location = shift;
