@@ -122,6 +122,29 @@ sub geocoder_dialog {
 			      },
 			      'label' => 'Google (needs API key)',
 			    },
+		'GoogleMaps' => { 'new' => sub {
+				      my $apikey = do {
+					  my $file = "$ENV{HOME}/.googlemapsapikey";
+					  open my $fh, $file
+					      or main::status_message("Cannot get key from $file: $!", "die");
+					  local $_ = <$fh>;
+					  chomp;
+					  $_;
+				      };
+				      Geo::Coder::GoogleMaps->new(apikey => $apikey);
+				  },
+				  'extract_loc' => sub {
+				      my $location = shift;
+				      @{$location->{data}{Point}{coordinates}};
+				  },
+				  'extract_addr' => sub {
+				      my $location = shift;
+				      $location->{data}{address} . "\n" .
+					  join(",", @{$location->{data}{Point}{coordinates}});
+				  },
+				  'label' => 'Google (alternative implementation, needs API key)',
+				},
+		
 		'Yahoo' => { 'new' => sub {
 				 Geo::Coder::Yahoo->new(appid => 'bbbike');
 			     },
