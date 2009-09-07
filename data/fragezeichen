@@ -1550,7 +1550,7 @@ Antoniuskirchstr.: Qualität?	? 18125,6694 18152,6745 18122,6773 18069,6743
 Reuterpfad: Qualität?	? 1839,7887 1843,8059
 Bödikersteig: Qualität? Ist die Straße eine Einbahnstraße? Wenn ja, gilt die Einbahnstraßenregelung nur für Autofahrer oder auch für Radfahrer? Kann der Siemensdamm in Höhe der Straße überquert werden?	? 1141,14237 1182,14384
 Voltastr. (Siemensstadt): Qualität? Kann der Siemensdamm in Höhe der Straße überquert werden?	? 1246,14384 1200,14227
-Wehneltsteig: Qualität? Ist die Straße eine Einbahnstraße? Wenn ja, gilt die Einbahnstraßenregelung nur für Autofahrer oder auch für Radfahrer? Kann der Siemensdamm in Höhe der Straße überquert werden?	? 1256,14217 1305,14384
+Wehneltsteig: Kann der Siemensdamm in Höhe des Wehneltsteigs überquert werden?	? 1256,14217 1305,14384
 Hefnersteig: Qualität? Ist die Straße eine Einbahnstraße? Wenn ja, gilt die Einbahnstraßenregelung nur für Autofahrer oder auch für Radfahrer? Kann der Siemensdamm in Höhe der Straße überquert werden?	? 1420,14369 1364,14191
 Kroppenstedtweg: Qualität? Für Radfahrer benutzbar? Nachts beleuchtet? Ausgeschildert?	? 1058,14898 1035,14996 996,15091 957,15189
 Nonnendamm: Qualität? Name der Brücke?	? 2028,13801 2149,13775 2176,13703 2217,13689 2283,13741 2430,13717 2548,13796
@@ -1841,7 +1841,6 @@ Sodenstr.: Qualität?	? 11858,-1189 11853,-1134 11794,-935 11790,-894
 Steinmetzstr. (Lichtenrade): Qualität?	? 10573,-2891 10679,-2842 10770,-2796 10828,-2774 10884,-2795
 Tutzinger Str.: Qualität?	? 12203,-2259 12019,-2683
 Warnitzer Str. (Lichtenrade): Qualität?	? 10510,-235 10584,-432
-Zescher Str.: Qualität?	? 10513,-2397 10509,-2131
 Baderseestr.: Qualität?	? 22493,1325 22575,1157
 Chiemseestr.: Qualität?	? 22204,1496 22334,1553
 Dahmestr. (Grünau): Qualität?	? 22466,2030 22538,1878 22662,1638
@@ -2061,7 +2060,6 @@ Trusetaler Str.: Qualität? Sind Teile der Straße Einbahnstraße?	? 21390,16903 21
 Merseburger Str. (Marzahn): Qualität?	? 20460,18030 20490,18120 20407,18273
 Paul-Dessau-Str.: Qualität?	? 20787,16294 20811,16283 20833,16219 20764,16073 20707,16054 20656,16077
 Radebeuler Str.: Qualität? Ist die Straße eine Einbahnstraße? Wenn ja, gilt die Einbahnstraßenregelung nur für Autofahrer oder auch für Radfahrer?	? 19025,14037 19067,13818
-Scheibenbergstr.: Qualität?	? 20609,14842 20607,14953 20632,14975 20675,14980 20676,15022 20696,15039 20692,15161
 Scheibenbergstr. - Blenheimstr.: Durchfahrt für Radfahrer möglich? Qualität?	? 20692,15161 20687,15193
 Schragenfeldstr.: Qualität?	? 20980,14914 21027,14886 21083,14878 21097,14907 21097,14997 21201,14994
 Sitzendorfer Str.: Qualität?	? 21962,17152 21915,17159 21812,17174 21677,17195
@@ -2521,7 +2519,7 @@ Kummerow - Woltersdorf: Qualität (an der östlichen Seite: Feldweg)?	? 63468,8389
 Kummerow - Kunow: Qualität?	? 63202,83842 63468,83897 63701,83897 64030,83689 64199,83388 64560,83095 65187,82762 65732,81931 65968,82128 66459,82296 66731,82468 66943,82495
 Kummerow - Jamikow: Qualität?	? 63202,83842 62902,83983 61889,84194 61022,84291
 Huttwiler Weg: Qualität? Ist die Straße eine Einbahnstraße? Wenn ja, gilt die Einbahnstraßenregelung nur für Autofahrer oder auch für Radfahrer?	? 7071,18232 7120,18295 7098,18383 7035,18413 6961,18453 6913,18460
-Ragazer Str.: Qualität? Kann die Lindauer Allee in Höhe der Ragazer Str. überquert werden?	? 6971,18299 7035,18413 7119,18582
+Ragazer Str.: Kann die Lindauer Allee in Höhe der Ragazer Str. überquert werden?	? 7035,18413 7119,18582
 Walliser Str.: Qualität? Ist die Durchfahrt zur Lindauer Allee für Autofahrer gesperrt?	? 6887,18330 6913,18460 6924,18599
 Breitkopfstr.: Qualität? Ist der Abschnitt südlich der Mittelbruchzeile für Autos gesperrt?	? 7828,17550 7809,17708 7789,17853 7772,17915 7736,18005 7680,18106 7615,18204 7510,18364 7460,18465 7420,18455 7391,18472 7377,18498 7375,18539 7399,18569 7445,18581 7434,18695
 Gamsbartweg: Qualität?	? 7599,18421 7551,18515
@@ -2769,6 +2767,7 @@ Ammerseestr. - Waldstr.: Qualität? Nachts beleuchtet?	? 22166,1636 22216,1823
 Wegedornstr. - Mauerweg: Für Radfahrer befahrbar? Qualität? Nachts beleuchtet?	? 18813,1745 18770,1688 18673,1487
 Mauerweg - Töpchiner Weg: Qualität? Nachts beleuchtet?	? 11794,550 11691,554 11598,587
 Lutz-Schmidt-Str.: Qualität?	? 18799,91 18644,157
+Libellenstr.: Qualität?	? -3703,2137 -3699,2085 -3707,2037 -3742,1980 -3738,1929 -3602,1799 -3559,1760
 # added from ampeln-orig
 #: add_fragezeichen: Existiert die Ampel Nordufer/Torfstr. noch?
 geschlossen bei Bedarf (?) (Zbr)	? 27657,-11741
