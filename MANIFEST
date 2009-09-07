@@ -78,6 +78,7 @@ GPS/GpsmanData/Analyzer.pm
 GPS/GpsmanData/Any.pm
 GPS/GpsmanData/DirectEdit.pm
 GPS/GpsmanData/SportsTracker.pm
+GPS/GpsmanData/Stats.pm
 GPS/GpsmanData/Strassen.pm
 GPS/GpsmanData/Tk.pm
 GPS/KML.pm
@@ -407,6 +408,7 @@ gnome/bbbike.keys
 gnome/bbbike.mime
 html/allstreet.html
 html/bbbike.css
+html/bbbike_tracks_iphone.html
 html/bbbike_result.js
 html/bbbike_sidebar.en.html
 html/bbbike_sidebar.html
