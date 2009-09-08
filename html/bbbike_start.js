@@ -315,6 +315,8 @@ function locate_me_cb(position) {
 function locate_me_res(res) {
   if (!res) {
     alert("Die Positionierung konnte nicht durchgeführt werden.");
+  } else if (!res.bbbikepos) {
+    alert("Es konnte keine Position gefunden werden.");
   } else {
     document.forms["BBBikeForm"].elements["start"].value = res.crossing;
     if (typeof transpose_dot_func == "function") {
