@@ -1532,6 +1532,25 @@ sub choose_form {
 	# Darstellung eines Vias nicht erwünscht
 	next if ($type eq 'via' and $$oneref eq 'NO');
 
+	if ($$nameref eq '' && $$oneref eq '' && defined $ort && $ort =~ $outer_berlin_qr) {
+	    my $orte = get_orte();
+	    my $coords;
+	    eval {
+		$orte->grepstreets(sub {
+				       my($name) = $_->[Strassen::NAME] =~ m{^([^|]+)};
+				       if ($name eq $ort) {
+					   $coords = $_->[Strassen::COORDS][0];
+					   die "break loop";
+				       }
+				   });
+	    };
+	    if ($coords) {
+		$q->param($type.'c', $coords);
+		$$nameref = $ort;
+		next;
+	    }
+	}
+
 	# Überprüfen, ob eine Straße in PLZ vorhanden ist.
 	if ($$nameref eq '' && $$oneref ne '') {
 	    my $plz_scope = (defined $ort && $ort =~ $outer_berlin_qr ? $ort : "Berlin/Potsdam");
