@@ -23,7 +23,7 @@ BEGIN {
 
 use BBBikeTest qw($cgiurl);
 
-plan tests => 2;
+plan tests => 4;
 
 my $ua = LWP::UserAgent->new;
 $ua->agent('BBBikeTest/1.0');
@@ -36,6 +36,16 @@ $ua->agent('BBBikeTest/1.0');
     my $data = decode_json $resp->decoded_content(charset => 'none');
     is_deeply($data, {crossing  => "Simplonstr./Seumestr.", # "Niemannstr." intentionally stripped in API
 		      bbbikepos => '14252,11368'});
+}
+
+{
+    my $url = $cgiurl . '?api=revgeocode;lon=13.459998;lat=52.509047';
+    my $resp = $ua->get($url);
+    ok($resp->is_success, "revgeocode API call, umlauts in result")
+	or diag $resp->as_string;
+    my $data = decode_json $resp->decoded_content(charset => 'none');
+    is_deeply($data, {crossing  => 'Wühlischstr./Gärtnerstr. (Friedrichshain)',
+		      bbbikepos => '14211,11552'});
 }
 
 __END__

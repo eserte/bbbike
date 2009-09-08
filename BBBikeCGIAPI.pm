@@ -19,7 +19,7 @@ use strict;
 use vars qw($VERSION);
 $VERSION = '0.01';
 
-use JSON::XS qw(encode_json);
+use JSON::XS qw();
 
 require Karte::Polar;
 require Karte::Standard;
@@ -48,9 +48,9 @@ sub action_revgeocode {
     @cr = @cr[0,1] if @cr > 2; # bbbike.cgi can deal only with A/B
     my $cr = join("/", @cr);
     print $q->header('text/plain');
-    print encode_json({ crossing => $cr,
-			bbbikepos => $xy,
-		      });
+    print JSON::XS->new->ascii->encode({ crossing => $cr,
+					 bbbikepos => $xy,
+				       });
 }
 
 1;
