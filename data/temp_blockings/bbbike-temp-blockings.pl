@@ -15597,7 +15597,7 @@ userdel	q4::temp 45023,-51268 44951,-51018
 EOF
      },
      { from  => 1251756000, # 2009-09-01 00:00
-       until => 1253311200, # 2009-09-19 00:00
+       until => 1252440991, # 2009-09-19 00:00 1253311200
        text  => 'B 158 Bad Freienwalde - Werneuchen zw. L236, Ri. Freudenberg u. OE Tiefensee Deckschichterneuerung Vollsperrung 02.09.2009-18.09.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -15661,7 +15661,7 @@ userdel	2::inwork -42002,19243 -42106,18923 -42484,18388 -42920,17788 -43042,173
 EOF
      },
      { from  => 1251064800, # 2009-08-24 00:00
-       until => 1253311200, # 2009-09-19 00:00
+       until => 1252441079, # 2009-09-19 00:00 1253311200
        text  => 'L 144 Herzsprung - Blumenthal OD Herzsprung grundhafter Straßenausbau Vollsperrung 25.08.2009-18.09.2009 ',
        type  => 'handicap',
        data  => <<EOF,
@@ -15787,11 +15787,12 @@ EOF
 userdel	q4::inwork 17746,11748 17744,11703 17741,11607
 EOF
      },
-     { from  => 1252188000, # 2009-09-06 00:00
-       until => 1280613600, # 2010-08-01 00:00
-       text  => 'Neubau der Miraustraße von Innungsstraße bis Breitenbachstraße in Berlin-Wittenau, vom 7.09.2009 bis ca. Juli 2010',
+     { from  => 1252440431, # 2009-09-08 22:07
+       until => 1272751199, # 2010-05-01 23:59
+       text  => 'Miraustr. (Reinickendorf) stadteinwärts zwischen Innungsstr. un
+d Breitenbachstr. Baustelle, Fahrtrichtung gesperrt (bis Anfang 05/2010)',
        type  => 'handicap',
-       source_id => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20090831.1205.137093.html',
+       source_id => 'IM_014098', # auch: http://www.berlin.de/ba-reinickendorf/presse/archiv/20090831.1205.137093.html
        data  => <<EOF,
 userdel	q4::inwork; 4014,19433 4170,19079 4195,19043
 EOF
@@ -15875,6 +15876,46 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork; 10448,-7582 10115,-8276
+EOF
+     },
+     { from  => 1242684000, # 2009-05-19 00:00
+       until => 1252440968, # 2010-01-01 00:00 1262300400
+       text  => 'B 102 Große Milower Str. OD Rathenow, zw. Wolzenstr. und Körgraben Neubau Kreisverkehr Vollsperrung 20.05.2009-31.12.2009 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork -62269,19881 -62333,20390
+EOF
+     },
+     { from  => 1252188000, # 2009-09-06 00:00
+       until => 1275343200, # 2010-06-01 00:00
+       text  => 'B 087 Leipziger Straße Brücke über den Elsterkolk in Herzberg Brückenneubau halbseitig gesperrt; Einbahnstraße 07.09.2009-31.05.2010 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 1327,-79312 1746,-79119
+EOF
+     },
+     { from  => 1252188000, # 2009-09-06 00:00
+       until => 1253397600, # 2009-09-20 00:00
+       text  => 'B 112 Eisenhüttenstadt - Brieskow-Finenheerd Brücke über DB u. Oder-Spree-Kanal bei Zilten Belagserneuerung Vollasperrung 07.09.2009-19.09.2009 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 93494,-21221 93192,-21578
+EOF
+     },
+     { from  => 1252447200, # 2009-09-09 00:00
+       until => 1254348000, # 2009-10-01 00:00
+       text  => 'L 068 Oelsig - Schlieben OD Schlieben, Am Mühlenberg Deckenerneuerung Vollsperrung 10.09.2009-30.09.2009 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 10891,-76066 10533,-76130 10302,-76088
+EOF
+     },
+     { from  => 1252620000, # 2009-09-11 00:00
+       until => 1252965600, # 2009-09-15 00:00
+       text  => 'L 338 Rosa-Luxemburg-Damm, Hauptstraße Bahnübergang in Neuenhagen Gleiserneuerung Vollsperrung 12.09.2009-14.09.2009 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 30910,13101 30815,13170 30795,13191
 EOF
      },
     );

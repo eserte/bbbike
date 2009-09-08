@@ -1435,15 +1435,7 @@ Neuer Garten (am Portierhaus) - Weinmeisterstr.: Weg ist nur zwischen 6 Uhr bis 
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1253311200,
-         'text' => 'B 158 Bad Freienwalde - Werneuchen zw. L236, Ri. Freudenberg u. OE Tiefensee Deckschichterneuerung Vollsperrung 02.09.2009-18.09.2009 ',
-         'from' => 1251756000,
-         'id' => 1838,
-         'data' => 'userdel	2::inwork 41925,33512 40827,32011 39783,31398
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1254520800,
          'text' => 'L 025 Schönermark - Fürstenwerder - Woldegk zw. OL Kraatz u. Fürstenwerder u. LG Deckenerneuerung Vollsperrung 17.08.2009-02.10.2009 ',
@@ -1454,15 +1446,7 @@ Neuer Garten (am Portierhaus) - Weinmeisterstr.: Weg ist nur zwischen 6 Uhr bis 
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1252274400,
-         'text' => 'L 070 Stülpe - Sperenberg bei Kummersdorf/ Gut Straßenausbau Vollsperrung 05.09.2009-06.09.2009 ',
-         'from' => 1252015200,
-         'id' => 1841,
-         'data' => 'userdel	2::inwork 8564,-34625 9068,-34115
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1252879200,
          'text' => 'L 070 Stülpe - Sperenberg bei Kummersdorf/ Gut Straßenausbau Vollsperrung 12.09.2009-13.09.2009 ',
@@ -1491,15 +1475,7 @@ Neuer Garten (am Portierhaus) - Weinmeisterstr.: Weg ist nur zwischen 6 Uhr bis 
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1253311200,
-         'text' => 'L 144 Herzsprung - Blumenthal OD Herzsprung grundhafter Straßenausbau Vollsperrung 25.08.2009-18.09.2009 ',
-         'from' => 1251064800,
-         'id' => 1846,
-         'data' => 'userdel	q4::inwork -54665,72030 -54116,72465
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1275343200,
          'text' => 'L 303 Brücke über die DB AG bei Eggersdorf Brückenersatzneubau Vollsperrung 07.09.2009-31.05.2010 ',
@@ -1606,10 +1582,11 @@ Schivelbeiner Str. -> Wichertstr.:	3::inwork 10753,16144 10982,16121 11214,16043
          'type' => 'handicap'
        },
        {
-         'source_id' => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20090831.1205.137093.html',
-         'until' => 1280613600,
-         'text' => 'Neubau der Miraustraße von Innungsstraße bis Breitenbachstraße in Berlin-Wittenau, vom 7.09.2009 bis ca. Juli 2010',
-         'from' => 1252188000,
+         'source_id' => 'IM_014098',
+         'until' => 1272751199,
+         'text' => 'Miraustr. (Reinickendorf) stadteinwärts zwischen Innungsstr. un
+d Breitenbachstr. Baustelle, Fahrtrichtung gesperrt (bis Anfang 05/2010)',
+         'from' => 1252440431,
          'id' => 1860,
          'data' => 'userdel	q4::inwork; 4014,19433 4170,19079 4195,19043
 ',
@@ -1644,15 +1621,7 @@ Schivelbeiner Str. -> Wichertstr.:	3::inwork 10753,16144 10982,16121 11214,16043
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1252274400,
-         'text' => 'K 6303 Brieselang - L161 Bredow bei Bredow am Abzw. Brieselang Brücken-, Radweg u. Straßenbau Vollsperrung 05.09.2009-06.09.2009 ',
-         'from' => 1252015200,
-         'id' => 1865,
-         'data' => 'userdel	2::inwork -20109,20341 -20850,20447
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1253052000,
          'text' => 'L 015 Berliner Straße OL Lychen, zw. Brücke Nesselpfuhlfließ u. Schlüßstr. Kanal- u. Straßenausbau Vollsperrung 15.09.2009-15.09.2009 ',
@@ -1689,6 +1658,43 @@ Schivelbeiner Str. -> Wichertstr.:	3::inwork 10753,16144 10982,16121 11214,16043
          'data' => 'userdel	q4::inwork; 10448,-7582 10115,-8276
 ',
          'type' => 'handicap'
+       },
+       undef,
+       {
+         'until' => 1275343200,
+         'text' => 'B 087 Leipziger Straße Brücke über den Elsterkolk in Herzberg Brückenneubau halbseitig gesperrt; Einbahnstraße 07.09.2009-31.05.2010 ',
+         'from' => 1252188000,
+         'id' => 1872,
+         'data' => 'userdel	q4::inwork 1327,-79312 1746,-79119
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1253397600,
+         'text' => 'B 112 Eisenhüttenstadt - Brieskow-Finenheerd Brücke über DB u. Oder-Spree-Kanal bei Zilten Belagserneuerung Vollasperrung 07.09.2009-19.09.2009 ',
+         'from' => 1252188000,
+         'id' => 1873,
+         'data' => 'userdel	2::inwork 93494,-21221 93192,-21578
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1254348000,
+         'text' => 'L 068 Oelsig - Schlieben OD Schlieben, Am Mühlenberg Deckenerneuerung Vollsperrung 10.09.2009-30.09.2009 ',
+         'from' => 1252447200,
+         'id' => 1874,
+         'data' => 'userdel	q4::inwork 10891,-76066 10533,-76130 10302,-76088
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1252965600,
+         'text' => 'L 338 Rosa-Luxemburg-Damm, Hauptstraße Bahnübergang in Neuenhagen Gleiserneuerung Vollsperrung 12.09.2009-14.09.2009 ',
+         'from' => 1252620000,
+         'id' => 1875,
+         'data' => 'userdel	2::inwork 30910,13101 30815,13170 30795,13191
+',
+         'type' => 'gesperrt'
        }
      
 );
