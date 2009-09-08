@@ -250,24 +250,25 @@ ask-copy-to-cvs:
 	@echo -n "Really copy to ${CVS_DIR}? (Hit Ctrl-C otherwise) "
 	@read dummy
 
-.PHONY: $(BBBIKE_TMP)/MANIFEST.withcvs
-$(BBBIKE_TMP)/MANIFEST.withcvs:
-	git ls-files > $(BBBIKE_TMP)/MANIFEST.withcvs
+MANIFEST_WITHCVS=	/tmp/MANIFEST.withcvs
+.PHONY: $(MANIFEST_WITHCVS)
+$(MANIFEST_WITHCVS):
+	git ls-files > $(MANIFEST_WITHCVS)
 
-do-copy-to-cvs:	$(BBBIKE_TMP)/MANIFEST.withcvs
-	perl "-MExtUtils::Manifest=manicopy,maniread" -e '$$fs=maniread(q{$(BBBIKE_TMP)/MANIFEST.withcvs}); while($$f=each %$$fs) { if (-e qq{${CVS_DIR}/$$f} && -M $$f >= -M qq{${CVS_DIR}/$$f}) { delete $$fs->{$$f} } } manicopy($$fs,q{${CVS_DIR}}, q{cp}); utime time,time,map { qq{${CVS_DIR}/$$_} } keys %$$fs'
+do-copy-to-cvs:	$(MANIFEST_WITHCVS)
+	perl "-MExtUtils::Manifest=manicopy,maniread" -e '$$fs=maniread(q{$(MANIFEST_WITHCVS)}); while($$f=each %$$fs) { if (-e qq{${CVS_DIR}/$$f} && -M $$f >= -M qq{${CVS_DIR}/$$f}) { delete $$fs->{$$f} } } manicopy($$fs,q{${CVS_DIR}}, q{cp}); utime time,time,map { qq{${CVS_DIR}/$$_} } keys %$$fs'
 
 # Slow, aber gruendlich! Problem with do-copy-to-cvs may be that
 # timestamps are incorrect.
-do-copy-to-cvs-slow: $(BBBIKE_TMP)/MANIFEST.withcvs
-	perl "-MExtUtils::Manifest=manicopy,maniread" -e "manicopy(maniread('$(BBBIKE_TMP)/MANIFEST.withcvs'),'${CVS_DIR}', 'cp');"
+do-copy-to-cvs-slow: $(MANIFEST_WITHCVS)
+	perl "-MExtUtils::Manifest=manicopy,maniread" -e "manicopy(maniread('$(MANIFEST_withcvs)'),'${CVS_DIR}', 'cp');"
 
 # Show the diffs between the source BBBike directory and the CVS directory.
 # This can also be used to get a list of removed files which are still
 # in the CVS repository.
-diff-with-cvs:	$(BBBIKE_TMP)/MANIFEST.withcvs
+diff-with-cvs:	$(MANIFEST_WITHCVS)
 	makepatch --verbose \
-	    -oldmanifest $(BBBIKE_TMP)/MANIFEST.withcvs -newmanifest $(BBBIKE_TMP)/MANIFEST.withcvs \
+	    -oldmanifest $(MANIFEST_WITHCVS) -newmanifest $(MANIFEST_WITHCVS) \
 	    -diff "diff -up -I '\$$Id.*\$$' -I '\$$Revision.*\$$'" \
 	    -descr "" \
 	    ${CVS_DIR} ${.CURDIR}
