@@ -7001,6 +7001,7 @@ sub show_info {
    <li><a href="#beta">Beta-Version</a>
 <!--   <li><a href="#pda">PDA-Version</a>-->
    <li><a href="#wap">WAP</a>
+   <li><a href="#iphone">iPhone</a>
    <li><a href="#gpsupload">GPS-Upload</a>
    <li><a href="#opensearch">Suchplugin für Firefox und IE</a>
 @{[ $can_palmdoc ? qq{<li><a href="#palmexport">Palm-Export</a>} : qq{} ]}
@@ -7108,6 +7109,8 @@ Für iPAQ-Handhelds mit Familiar Linux gibt es eine kleine Version von BBBike: <a
 <h4 id="wap">WAP</h4>
 BBBike kann man per WAP-Handy unter der Adresse <a href="@{[ $BBBike::BBBIKE_WAP ]}">@{[ $BBBike::BBBIKE_WAP ]}</a> nutzen.
 <p>
+<h4 id="iphone">iPhone</h4>
+Eine Anregung, wie man BBBike auf dem iPhone verwenden kann, findet man <a href="$bbbike_html/bbbike_tracks_iphone.html">hier</a>.
 <h4 id="gpsupload">GPS-Upload</h4>
 Es besteht die experimentelle Möglichkeit, sich <a href="@{[ $bbbike_url ]}?uploadpage=1">GPS-Tracks oder bbr-Dateien</a> anzeigen zu lassen.<p>
 <h4 id="diplom">Diplomarbeit</h4>
