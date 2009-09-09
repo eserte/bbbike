@@ -11156,7 +11156,7 @@ EOF
        text  => 'B 109 Schönwalde - Wandlitz OD Wandlitz, zw. Kreisel und Berliner Weg Kanalarbeiten Vollsperrung 25.03.2008-20.04.2008 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 13556,37493 12887,36543
+userdel	q4::inwork 13546,37474 12887,36543
 EOF
      },
      { from  => 1207173600, # 2008-04-03 00:00
@@ -12265,7 +12265,7 @@ EOF
        text  => 'B 273 A 11 - Wandlitz zw. Abzw. Bernau und Wandlitz Rückau u. Erneuerung B273 Vollsperrung 18.08.2008-30.06.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 16953,35907 16653,35993 16132,36512 15491,37176 15385,37268 15253,37443 14909,37400 14477,37252 13556,37493
+userdel	2::inwork 16953,35907 16653,35993 16132,36512 15491,37176 15387,37252 15201,37349 14948,37315 14703,37197 14470,37191 13546,37474
 EOF
      },
      { from  => 1218924000, # 2008-08-17 00:00

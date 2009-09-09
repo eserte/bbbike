@@ -494,6 +494,7 @@ Wiedenbrücker Weg	1 4207,1113 4220,1175 4148,1275
 Am Langen Weg:	1 -7033,14984 -7024,14880 -7015,14772 -7011,14693 -7013,14578
 Hans-Sachs-Str.	1 3141,4023 3214,4066
 Wehneltsteig	1 1256,14217 1305,14384
+Bernhard-Bästlein-Str.	1 15595,14041 15593,13768
 Am Neuen Garten	1 -12166,1384 -12212,1201 -12276,831 -12302,718 -12323,635 -12332,585 -12582,127
 Leistikowstr.	1 -12512,810 -12302,718
 Hochstraße	3nocross::ignrte -11399,-1339 -11461,-1424 -11540,-1543
@@ -653,6 +654,9 @@ Zeltinger Platz	1s 2404,25187 2355,25252 2395,25273 2446,25265 2490,25211 2486,2
 Ludolfinger Platz	1s 2277,25033 2245,25016 2205,25042 2192,25083 2216,25117 2277,25094 2285,25059 2277,25033
 Sewanstr. - Balatonstr.	1s 17705,10232 17741,10386
 Hönower Str. (Karlshorst) (Ausweichen auf Sandbankette möglich)	1s 18377,9366 18490,9387
+Grünstreifen	3nocross::ignrte 13649,14899 13749,15013 13838,15113
+Kniprodestr. -> Altenescher Weg: Grünstreifen	3::igndisp 13838,15113 13749,15013 13856,14944
+Altenescher Weg -> Kniprodestr.: Grünstreifen	3::igndisp 13856,14944 13749,15013 13649,14899
 Mittelstreifen	3nocross::ignrte 19578,6165 19405,6276 19276,6359
 Treskowstr. -> An der Wuhlheide: Mittelstreifen	3::igndisp 19333,6165 19405,6276 19276,6359
 An der Wuhlheide -> Treskowstr.: Mittelstreifen	3::igndisp 19578,6165 19405,6276 19333,6165
