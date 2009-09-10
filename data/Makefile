@@ -969,7 +969,8 @@ ${PERSISTENTTMPDIR}/.fragezeichen-other-source:	${DATADIR}/qualitaet_s-orig ${DA
 			    if ($$l[$$i-1] =~ /\#:\s+unverified_by\s+(.*?):?\s*$$/i) {\
 				my $$comment = "laut $$1";\
 				my $$x = Strassen::parse($$l[$$i]);\
-				$$x->[Strassen::NAME()] .= " ($$comment)";\
+				$$x->[Strassen::NAME()] .= " " if $$x->[Strassen::NAME()] ne "";\
+				$$x->[Strassen::NAME()] .= "($$comment)";\
 				$$x->[Strassen::CAT()] = "?";\
 				print Strassen::arr2line2($$x),"\n"\
 			    }\
