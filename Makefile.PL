@@ -202,6 +202,8 @@ my @req_table =
    'Intelligentere Labelplatzierung, bei der PDF-Ausgabe verwendet'],
   [qw/Geo::Distance::XS	0	all	0	base/,
    'Berechnung von Entfernungen für polare Koordinaten, möglicherweise schneller als Math::Trig'],
+  [qw/Geo::Distance	0.16	all	0	base/,
+   'Prereq für Geo::Distance::XS'], # diese Version ohne Warnungen
   [qw/Tk::ExecuteCommand	0	all	1	base/,
    'Bessere Fehlerberichte im temp_blockings-Editor'],
   [qw/Algorithm::Diff	0	all	1	base/,
