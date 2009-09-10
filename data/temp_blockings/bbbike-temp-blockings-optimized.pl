@@ -852,8 +852,8 @@ userdel	q4::inwork 8389,11378 8374,11479
        undef,
        undef,
        {
-         'until' => 1272664800,
-         'text' => 'K 6422 Eggersdorfer Str. OL Petershagen, zw. Gravenhainstr. u. Johannesstr. Straßenausbau Vollsperrung 15.06.2009-30.04.2010 ',
+         'until' => 1252706400,
+         'text' => 'K 6422 Eggersdorfer Str. OL Petershagen, zw. Gravenhainstr. u. Johannesstr. Straßenausbau Vollsperrung 15.06.2009-11.09.2009 ',
          'from' => 1244930400,
          'id' => 1704,
          'data' => 'userdel	q4::inwork 36654,13977 35900,13643
@@ -1481,7 +1481,7 @@ Neuer Garten (am Portierhaus) - Weinmeisterstr.: Weg ist nur zwischen 6 Uhr bis 
          'text' => 'L 303 Brücke über die DB AG bei Eggersdorf Brückenersatzneubau Vollsperrung 07.09.2009-31.05.2010 ',
          'from' => 1252188000,
          'id' => 1847,
-         'data' => 'userdel	2::inwork 38553,14142 38637,14790
+         'data' => 'userdel	2::inwork 38540,14138 38569,14332 38535,14602 38637,14790
 ',
          'type' => 'gesperrt'
        },
@@ -1613,9 +1613,9 @@ d Breitenbachstr. Baustelle, Fahrtrichtung gesperrt (bis Anfang 05/2010)',
          'type' => 'handicap'
        },
        {
-         'until' => 1252792800,
-         'text' => 'L 373 B112 - Müllrose OL Brieskow-Finkenheerd, Gubener Str. - R.-Sonnenburg-Str. Deckenerneuerung Vollsperrung 10.09.2009-12.09.2009 ',
-         'from' => 1252447200,
+         'until' => 1252965600,
+         'text' => 'L 373 B112 - Müllrose OL Brieskow-Finkenheerd, R.-Sonnenburg-Str. Deckenerneuerung Vollsperrung 11.09.2009-14.09.2009 ',
+         'from' => 1252533600,
          'id' => 1864,
          'data' => 'userdel	q4::inwork 89435,-16834 90073,-16502 90164,-16382
 ',
@@ -1641,15 +1641,7 @@ d Breitenbachstr. Baustelle, Fahrtrichtung gesperrt (bis Anfang 05/2010)',
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1252533600,
-         'text' => 'L 711 Krausnick - AS Staakow zw. Krausnick und Brand Straßenbauarbeiten Vollsperrung 08.09.2009-09.09.2009 ',
-         'from' => 1252274400,
-         'id' => 1869,
-         'data' => 'userdel	2::inwork 35214,-41158 35289,-41439 35915,-41259 36010,-41272 36387,-40961 36499,-41097 37581,-41158
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1259622000,
          'text' => 'L 792 Dorfstraße OD Blankenfelde, zw. Zossener Damm u. H.-Heine-Str. Straßenausbau halbseitig gesperrt; Einbahnstraße 08.09.2009-30.11.2009 ',
@@ -1695,6 +1687,33 @@ d Breitenbachstr. Baustelle, Fahrtrichtung gesperrt (bis Anfang 05/2010)',
          'data' => 'userdel	2::inwork 30910,13101 30815,13170 30795,13191
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => 1267398000,
+         'text' => 'B 005 Friesack - Wusterhausen OD Bückwitz, Kreuzung B167, Ruppiner Str. Kreiselneubau Vollsperrung 14.09.2009-28.02.2010 ',
+         'from' => 1252792800,
+         'id' => 1876,
+         'data' => 'userdel	q4::inwork -52519,49887 -52595,49993
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1272664800,
+         'text' => 'K 6422 Eggersdorfer Str. OL Petershagen, zw. Ebereschenstr. u. Kreisverkehr Straßenausbau Vollsperrung 14.09.2009-30.04.2010 ',
+         'from' => 1252792800,
+         'id' => 1877,
+         'data' => 'userdel	q4::inwork 35900,13643 36654,13977
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1252879200,
+         'text' => 'K 6422 Eggersdorfer Str. OL Petershagen, zw. Elbestr. und Clara-Zetkin-Str. Straßenausbau Vollsperrung 11.09.2009-13.09.2009 ',
+         'from' => 1252533600,
+         'id' => 1878,
+         'data' => 'userdel	q4::inwork 35900,13643 36654,13977
+',
+         'type' => 'handicap'
        }
      
 );

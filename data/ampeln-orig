@@ -295,7 +295,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 10920,13139
 	X 10755,13152
 	X 11170,13475
-# XXX check, see in fragezeichen : by: aschoenebeck #: corrected_by: srt (kann mich nicht an eine Ampelanlage erinnern) 	F 10511,14418
+# XXX check, see in fragezeichen : by: aschoenebeck #: corrected_by: srt (kann mich nicht an eine Ampelanlage erinnern)	F 10511,14418
 	X 10003,14088
 	X 9800,14722
 	X 10881,15047
@@ -1857,8 +1857,8 @@ S-Bahn ca. alle 10 Minuten	B 10763,-4012
 S-Bahn ca. alle 10 Minuten	B 10865,-4464
 	B 99765,-46542
 	B 99245,-43974
- 	F 2334,5739
- 	F 4437,5335
+	F 2334,5739
+	F 4437,5335
 #: by: mfuss75:
 	X 7102,12613
 	F 1800,3903
@@ -1876,7 +1876,7 @@ S-Bahn ca. alle 10 Minuten	B 10865,-4464
 	B -5511,69122
 	B -6182,71661
 	B -6100,73876
- 	F 6459,8272
+	F 6459,8272
 #: note: Luftbild
 	F 1028,11309
 	X 13151,13367
@@ -1903,16 +1903,16 @@ S-Bahn ca. alle 10 Minuten	B 10865,-4464
 	F 7938,13791
 	F -1039,11034
 	X -68,11156
- 	F 3381,12087
+	F 3381,12087
 	F 6936,15888
 	F 1205,10114
 	F 2282,11463
- 	F -4648,11560
+	F -4648,11560
 	X 10819,11664
- 	X -1709,653
- 	X -1668,-1709
- 	X -3368,-4430
- 	X -1752,-1823
+	X -1709,653
+	X -1668,-1709
+	X -3368,-4430
+	X -1752,-1823
 	F 8867,4506
 	X 14179,9515
 Industriebahn	B0 -2410,13746
@@ -2456,6 +2456,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F 14519,7301
 	B 27647,-11196
 	B 26373,-12553
+	X 24321,14410
 ################################################################################
 # note: Potsdam vvv
 #: by: http://www.potsdam.de/cms/beitrag/10044614/620526/
@@ -2634,7 +2635,7 @@ Wensickendorf	F 7836,38835
 B273 / NEB	B 8643,38865
 Im Wensickendorfer Felde / nGAR (nur am Wochenende)	B 7378,40295
 #: note Mo-Fr Testbetrieb bis 31.12.2007
-Triftweg / NEB 	B0 8926,40020
+Triftweg / NEB	B0 8926,40020
 #: append_comment ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #: append_comment Oranienburg-Zehlendorf vvvvvvvvvvvvvvvvvvvvvvvvvvvv
 Alte Dorfstr. / Stolzenhagener Chaussee / NEB	B0 9343,42173

@@ -1732,7 +1732,7 @@ EOF
        text  => 'L 30; (Bernauer Str.); OL Altlandsberg zw. Strausberger Str. u. Buchholzer Str. Kanalarbeiten Vollsperrung 13.04.2005-16.04.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 32665,17841 32985,17127 33589,15778
+userdel	q4 32665,17841 32933,17242 32945,17123 33016,17059 33589,15778
 EOF
      },
      { from  => 1113084000, # 2005-04-10 00:00
@@ -2245,7 +2245,7 @@ EOF
        text  => 'B 109; (Prenzlauer Str.); OD Basdorf, Kno. Dimitroff-/Waldheimstr. Straßen-,Geh- u.Radwegbau Vollsperrung 04.07.2005-08.08.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 12193,34683 12635,32221
+userdel	q4 12160,34668 12224,34508 12635,32221
 EOF
      },
      { from  => 1122415200, # 2005-07-27 00:00
@@ -4404,7 +4404,7 @@ EOF
        text  => 'K 6503 KG Lubowsee-L211 nördl. Summt Kreuzung Zühlslake Vorber. Kreiselneubau Vollsperrung 11.05.2006-12.05.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 7435,34963 7070,34665
+userdel	q4 7431,34989 7073,34715
 EOF
      },
      { from  => 1147384800, # 2006-05-12 00:00
@@ -4806,8 +4806,8 @@ EOF
        text  => 'K 6503 B273-Zühlsdorf-L211 (Summt-Lehnitz) Kreuzung. Summter Chaussee bei Zühlslake Neubau Kreisverkehr Vollsperrung 06.07.2006-19.08.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 7346,32257 7435,34963 8115,35387
-userdel	q4::inwork 7070,34665 7435,34963 7443,36175
+userdel	q4::inwork 7346,32257 7431,34989 8115,35387
+userdel	q4::inwork 7073,34715 7431,34989 7456,36042 7454,36156
 EOF
      },
      { from  => 1149026400, # 2006-05-31 00:00
@@ -6071,7 +6071,7 @@ EOF
        text  => 'L 021 Zühlslake-Wensickendorf Kreuzung. Summter Chaussee bei Zühlslake Neubau Kreisverkehr Vollsperrung 20.08.2006-30.10.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 7435,34963 7443,36175
+userdel	q4::inwork 7431,34989 7456,36042 7454,36156
 EOF
      },
      { from  => 1159653600, # 2006-10-01 00:00
@@ -6589,7 +6589,7 @@ EOF
        text  => 'L 030 zw. Ortsumgehung Altlandsberg und OE Altlandsberg Deckenerneuerung Vollsperrung 13.11.2006-08.12.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 33589,15778 32985,17127 32665,17841
+userdel	2::inwork 33589,15778 33016,17059 32945,17123 32933,17242 32665,17841
 EOF
      },
      { from  => 1162767600, # 2006-11-06 00:00
@@ -7665,7 +7665,7 @@ EOF
        text  => 'L 033 Eggersdorf-Altlandsberg Brücke über den Graben in der OD Radebrück Brückenneubau Vollsperrung 10.04.2007-26.07.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 36768,17309 35618,17440 35225,17557
+userdel	2::inwork 36768,17309 35728,17428 35618,17440 35225,17557
 EOF
      },
      { from  => 1175810400, # 2007-04-06 00:00
@@ -14441,8 +14441,8 @@ userdel	q4::inwork; 11357,18598 11204,18545 11168,18542 11025,18531
 EOF
      },
      { from  => 1244930400, # 2009-06-14 00:00
-       until => 1272664800, # 2010-05-01 00:00
-       text  => 'K 6422 Eggersdorfer Str. OL Petershagen, zw. Gravenhainstr. u. Johannesstr. Straßenausbau Vollsperrung 15.06.2009-30.04.2010 ',
+       until => 1252706400, # 2009-09-12 00:00
+       text  => 'K 6422 Eggersdorfer Str. OL Petershagen, zw. Gravenhainstr. u. Johannesstr. Straßenausbau Vollsperrung 15.06.2009-11.09.2009 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork 36654,13977 35900,13643
@@ -14611,7 +14611,7 @@ EOF
        text  => 'L 303 Umgehungsstr. OD Eggersdorf, zw. K.-Liebknecht-Str. u. Landhausstr. Straßenbauarbeiten Vollsperrung 23.06.2009-10.07.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 39052,15115 38771,14926
+userdel	q4::inwork 38983,15053 38771,14926
 EOF
      },
      { from  => 1245708000, # 2009-06-23 00:00
@@ -15673,7 +15673,7 @@ EOF
        text  => 'L 303 Brücke über die DB AG bei Eggersdorf Brückenersatzneubau Vollsperrung 07.09.2009-31.05.2010 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 38553,14142 38637,14790
+userdel	2::inwork 38540,14138 38569,14332 38535,14602 38637,14790
 EOF
      },
      { from  => 1250978400, # 2009-08-23 00:00
@@ -15822,9 +15822,9 @@ EOF
 userdel	q4::inwork 28575,49756 27626,49928
 EOF
      },
-     { from  => 1252447200, # 2009-09-09 00:00
-       until => 1252792800, # 2009-09-13 00:00
-       text  => 'L 373 B112 - Müllrose OL Brieskow-Finkenheerd, Gubener Str. - R.-Sonnenburg-Str. Deckenerneuerung Vollsperrung 10.09.2009-12.09.2009 ',
+     { from  => 1252533600, # 2009-09-10 00:00
+       until => 1252965600, # 2009-09-15 00:00
+       text  => 'L 373 B112 - Müllrose OL Brieskow-Finkenheerd, R.-Sonnenburg-Str. Deckenerneuerung Vollsperrung 11.09.2009-14.09.2009 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork 89435,-16834 90073,-16502 90164,-16382
@@ -15916,6 +15916,30 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 30910,13101 30815,13170 30795,13191
+EOF
+     },
+     { from  => 1252792800, # 2009-09-13 00:00
+       until => 1267398000, # 2010-03-01 00:00
+       text  => 'B 005 Friesack - Wusterhausen OD Bückwitz, Kreuzung B167, Ruppiner Str. Kreiselneubau Vollsperrung 14.09.2009-28.02.2010 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork -52519,49887 -52595,49993
+EOF
+     },
+     { from  => 1252792800, # 2009-09-13 00:00
+       until => 1272664800, # 2010-05-01 00:00
+       text  => 'K 6422 Eggersdorfer Str. OL Petershagen, zw. Ebereschenstr. u. Kreisverkehr Straßenausbau Vollsperrung 14.09.2009-30.04.2010 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 35900,13643 36654,13977
+EOF
+     },
+     { from  => 1252533600, # 2009-09-10 00:00
+       until => 1252879200, # 2009-09-14 00:00
+       text  => 'K 6422 Eggersdorfer Str. OL Petershagen, zw. Elbestr. und Clara-Zetkin-Str. Straßenausbau Vollsperrung 11.09.2009-13.09.2009 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 35900,13643 36654,13977
 EOF
      },
     );

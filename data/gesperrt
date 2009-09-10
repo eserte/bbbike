@@ -297,7 +297,7 @@ Amalienpark	1 10905,18671 10950,18499 10860,18650
 Im Amseltal	1 1962,25214 1982,25108
 Gundelfinger Str.	1 18735,9421 18697,9153 18653,8922 18609,8717
 Dorotheenstr.	1 18653,8922 18770,8898
-Fehmarner Str. 	1 6710,14776 6528,15000
+Fehmarner Str.	1 6710,14776 6528,15000
 Alte Späthbrücke	2 14437,5080 14535,5137
 Rutherfordstr.: nicht permanent geöffnet	2 19071,2746 19136,2673 19207,2592
 Katzengraben	1 22445,4758 22452,4689
@@ -1522,7 +1522,7 @@ Schranke	BNP:3:86:trailer=6 9698,10348
 Drängelgitter	BNP:5:-12 12682,7514
 Barriere	BNP:5:-2 17301,7645
 Drängelgitter	BNP:3:-77:trailer=10 24398,4842
-Drängelgitter (Schloßallee/Straßenbahn) 	BNP:5:67 11883,19739
+Drängelgitter (Schloßallee/Straßenbahn)	BNP:5:67 11883,19739
 Drängelgitter	BNP:5:-96 11995,19759
 Drängelgitter	BNP:3:-257:trailer=6 9884,10192
 Barriere	BNP:5:-247:trailer=10 12316,9477
@@ -1615,9 +1615,9 @@ Iltisstr.	1 2797,5624 2858,5535
 Mittelstreifen unbequem zu überqueren	3nocross::ignrte 5493,9357 5495,9263 5503,8982
 Tharandter Str. -> Bundesallee: Mittelstreifen unbequem zu überqueren	3::igndisp 5527,9263 5495,9263 5503,8982
 Bundesallee -> Tharandter Str.: Mittelstreifen unbequem zu überqueren	3::igndisp 5493,9357 5495,9263 5527,9263
-Mittelstreifen schlecht zu überqueren 	3nocross::ignrte 6494,10440 6403,10424 6276,10401
-Wormser Str. -> Lietzenburger Str.: Mittelstreifen schlecht zu überqueren 	3::igndisp 6377,10434 6403,10424 6494,10440
-Lietzenburger Str. -> Wormser Str.: Mittelstreifen schlecht zu überqueren 	3::igndisp 6276,10401 6403,10424 6377,10434
+Mittelstreifen schlecht zu überqueren	3nocross::ignrte 6494,10440 6403,10424 6276,10401
+Wormser Str. -> Lietzenburger Str.: Mittelstreifen schlecht zu überqueren	3::igndisp 6377,10434 6403,10424 6494,10440
+Lietzenburger Str. -> Wormser Str.: Mittelstreifen schlecht zu überqueren	3::igndisp 6276,10401 6403,10424 6377,10434
 (Kolonieweg a. d. Forkenbeckstr.): tragen (5 Stufen)	0:15:-17 3230,8194
 (Kolonieweg a. d. Forkenbeckstr.): schieben (Rampe 10 Stufen)	0:15:-78 3753,8073
 tragen (2 x 10 Stufen)	0:40:18 1666,4637

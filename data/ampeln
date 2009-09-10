@@ -1793,8 +1793,8 @@ S-Bahn ca. alle 10 Minuten	B 10763,-4012
 S-Bahn ca. alle 10 Minuten	B 10865,-4464
 	B 99765,-46542
 	B 99245,-43974
- 	F 2334,5739
- 	F 4437,5335
+	F 2334,5739
+	F 4437,5335
 	X 7102,12613
 	F 1800,3903
 	F 1847,3620
@@ -1811,7 +1811,7 @@ S-Bahn ca. alle 10 Minuten	B 10865,-4464
 	B -5511,69122
 	B -6182,71661
 	B -6100,73876
- 	F 6459,8272
+	F 6459,8272
 	F 1028,11309
 	X 13151,13367
 	X 6399,-1793
@@ -1830,16 +1830,16 @@ S-Bahn ca. alle 10 Minuten	B 10865,-4464
 	F 7938,13791
 	F -1039,11034
 	X -68,11156
- 	F 3381,12087
+	F 3381,12087
 	F 6936,15888
 	F 1205,10114
 	F 2282,11463
- 	F -4648,11560
+	F -4648,11560
 	X 10819,11664
- 	X -1709,653
- 	X -1668,-1709
- 	X -3368,-4430
- 	X -1752,-1823
+	X -1709,653
+	X -1668,-1709
+	X -3368,-4430
+	X -1752,-1823
 	F 8867,4506
 	X 14179,9515
 Industriebahn	B0 -2410,13746
@@ -2237,6 +2237,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F 14519,7301
 	B 27647,-11196
 	B 26373,-12553
+	X 24321,14410
 	X -13051,-3101
 	X -12839,-1342
 	X -12833,-1365
@@ -2393,7 +2394,7 @@ Schwarzer Weg / nGAR (Oranienburg-Schmachtenhagen)	B0 3167,41284
 Wensickendorf (Oranienburg-Wensickendorf)	F 7836,38835
 B273 / NEB (Oranienburg-Wensickendorf)	B 8643,38865
 Im Wensickendorfer Felde / nGAR (nur am Wochenende) (Oranienburg-Wensickendorf)	B 7378,40295
-Triftweg / NEB  (Oranienburg-Wensickendorf)	B0 8926,40020
+Triftweg / NEB (Oranienburg-Wensickendorf)	B0 8926,40020
 Alte Dorfstr. / Stolzenhagener Chaussee / NEB (Oranienburg-Zehlendorf)	B0 9343,42173
 Ausbau Rickbyhl / NEB (Oranienburg-Zehlendorf)	B0 9407,42489
 Rehmater Weg / NEB (Oranienburg-Zehlendorf)	B0 9707,43684
