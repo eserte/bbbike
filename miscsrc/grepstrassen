@@ -368,10 +368,12 @@ sub special_fragezeichen {
     my($r, $dir) = @_;
     my $fragezeichen_r = Storable::dclone($r);
     if (exists $dir->{add_fragezeichen}) {
-	my $name = $r->[Strassen::NAME] . " (";
+	my $name = $r->[Strassen::NAME];
+	$name .= ' ' if $r->[Strassen::NAME] ne '';
+	$name .= '(';
 	my @add_names = grep { !/^\s*$/ } @{ $dir->{add_fragezeichen} };
 	if (!@add_names) {
-	    @add_names = "unsicher";
+	    @add_names = 'unsicher';
 	} else {
 	    s/:$// for @add_names;
 	}
