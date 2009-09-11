@@ -109,6 +109,10 @@ if ($single_file) {
     my $sub = \&{$subname};
     Strassen->new_stream($single_file)->read_stream($sub);
 } else {
+    # NODE-like
+    do_file("$datadir/ampeln", \&handle_trafficsignals_like);
+
+    # WAY-like
     do_file("$datadir/gesperrt", \&handle_blocked_like);
 
     do_file("$datadir/flaechen", \&handle_area_like);
@@ -374,6 +378,24 @@ sub handle_area_like {
     $next_way_id++;
 }
 
+sub handle_trafficsignals_like {
+    my($r, $dir) = @_;
+
+    my $attribs;
+    if      ($r->[Strassen::CAT] =~ m{^X}) {
+	$attribs = { highway => 'traffic_signals' };
+    } elsif ($r->[Strassen::CAT] =~ m{^F}) {
+	$attribs = { highway => 'crossing', crossing => 'traffic_signals' };
+    } elsif ($r->[Strassen::CAT] =~ m{^B}) {
+	$attribs = { railway => 'level_crossing' };
+    } else {
+	# ignore
+	return;
+    }
+
+    get_node_ids($r, $attribs); # as a side-effect, create the nodes
+}
+
 seek $nodefh, 0, SEEK_SET
     or die $!;
 seek $wayfh, 0, SEEK_SET
@@ -391,23 +413,30 @@ while(<$wayfh>) {
 print qq{</osm>\n};
 
 sub get_node_ids {
-    my $r = shift;
+    my($r, $attribs) = @_;
     my @node_ids;
     for my $sxy (@{ $r->[Strassen::COORDS] }) {
 	my($px,$py) = $Karte::Polar::obj->trim_accuracy($Karte::Polar::obj->standard2map(split /,/, $sxy));
-	my $this_node_id = maybe_add_node($px, $py);
+	my $this_node_id = maybe_add_node($px, $py, $attribs);
 	push @node_ids, $this_node_id;
     }
     @node_ids;
 }
 
 sub maybe_add_node {
-    my($px, $py) = @_;
+    my($px, $py, $attribs) = @_;
     my $pxy = $px.','.$py;
     my $this_node_id = $node_id{$pxy};
     if (!defined $this_node_id) {
 	$this_node_id = $node_id{$pxy} = $next_node_id++;
-	print $nodefh qq{<node id="$this_node_id" lat="$py" lon="$px" user="eserte" visible="true" />\n};
+	print $nodefh qq{<node id="$this_node_id" lat="$py" lon="$px" user="eserte" visible="true" };
+	if ($attribs) {
+	    while(my($k,$v) = each %$attribs) {
+		_xmlify($v);
+		print $nodefh qq{$k="$v" };
+	    }
+	}
+	print $nodefh qq{/>\n};
 
 	$min_lon = $px if !defined $min_lon || $min_lon > $px;
 	$max_lon = $px if !defined $max_lon || $max_lon < $px;
