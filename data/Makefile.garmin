@@ -127,11 +127,11 @@ ${CGPSMAPPER}:
 # see also osm-download-all rule in misc/Makefile
 
 # -Xmx1024m was needed for hessen.osm (maybe 512m would also be enough)
-MKGMAP_VER=590
-MKGMAP_ROUTABLE_VER=1034 # XXX builds berlin, but stops at leipzig, it seems
-MKGMAP=	java -Xmx1024m -jar /usr/local/src/mkgmap-r${MKGMAP_VER}/mkgmap.jar
-MKGMAP_ROUTABLE=	java -Xmx1024m -jar /usr/local/src/mkgmap-r${MKGMAP_ROUTABLE_VER}/mkgmap.jar
-MAPSOURCE_DE_IMG=$(HOME)/doc/map/mapsource_de.img
+MKGMAP_VER?=		590
+MKGMAP_ROUTABLE_VER?=	1034 # XXX builds berlin, but stops at leipzig, it seems
+MKGMAP?=		java -Xmx1024m -jar /usr/local/src/mkgmap-r${MKGMAP_VER}/mkgmap.jar
+MKGMAP_ROUTABLE?=	java -Xmx1024m -jar /usr/local/src/mkgmap-r${MKGMAP_ROUTABLE_VER}/mkgmap.jar
+MAPSOURCE_DE_IMG?=	$(HOME)/doc/map/mapsource_de.img
 
 .if exists(/opt/osmosis-0.24.1-java5/bin/osmosis)
 OSMOSIS=	/opt/osmosis-0.24.1-java5/bin/osmosis
