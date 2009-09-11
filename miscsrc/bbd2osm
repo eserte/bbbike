@@ -70,6 +70,7 @@ my %node_id;
 
 my %oneway;
 my %no_access;
+my %speed0;
 
 my %cat_to_highway = ('B'  => 'primary',
 		      'HH' => 'primary',
@@ -114,6 +115,11 @@ if ($single_file) {
 
     # WAY-like
     do_file("$datadir/gesperrt", \&handle_blocked_like);
+
+    do_file("$datadir/handicap_s", \&handle_handicap_like);
+    do_file("$datadir/handicap_l", \&handle_handicap_like);
+    do_file("$datadir/qualitaet_s", \&handle_handicap_like);
+    do_file("$datadir/qualitaet_l", \&handle_handicap_like);
 
     do_file("$datadir/flaechen", \&handle_area_like);
 
@@ -175,6 +181,32 @@ sub handle_blocked_like {
     }
 }
 
+sub handle_handicap_like {
+    my($r, $dir) = @_;
+    my($cat_hin, $cat_rueck);
+    if ($r->[Strassen::CAT] =~ /^(.*);(.*)$/) {
+	($cat_hin, $cat_rueck) = ($1, $2);
+    } else {
+	($cat_hin, $cat_rueck) = ($r->[Strassen::CAT], $r->[Strassen::CAT]);
+    }
+    for ($cat_hin, $cat_rueck) {
+	($_) = $_ =~ m{^([^:]+)};
+    }
+    my @node_ids = map {
+	my($px,$py) = $Karte::Polar::obj->trim_accuracy($Karte::Polar::obj->standard2map(split /,/, $_));
+	my $node_id = maybe_add_node($px,$py);
+	$node_id;
+    } @{ $r->[Strassen::COORDS] };
+    for my $node_id_i (1 .. $#node_ids) {
+	if ($cat_hin =~ m{^[qQ][34]$}) {
+	    $speed0{$node_ids[$node_id_i-1].' '.$node_ids[$node_id_i]} = 1; # XXX correct direction
+	}
+	if ($cat_rueck =~ m{^[qQ][34]$}) {
+	    $speed0{$node_ids[$node_id_i].' '.$node_ids[$node_id_i-1]} = 1;
+	}
+    }
+}
+
 sub handle_highway_like {
     my($r, $dir) = @_;
 
@@ -203,6 +235,8 @@ sub handle_highway_like {
 			 ($oneway{$forward_spec}||''),
 			 ($oneway{$backward_spec}||''),
 			 ($no_access{$forward_spec}||''),
+			 ($speed0{$forward_spec}||''),
+			 ($speed0{$backward_spec}||''),
 			);
 	my $this_tags = join(" ", @this_tags);
 	if (defined $last_tags) {
@@ -225,19 +259,26 @@ sub handle_highway_like {
 
     for my $segment (@segments) {
 	my @node_ids = @{$segment->[0]};
-	my($oneway, $oneway_reversed, $no_access) = @{$segment->[1]};
+	my($oneway, $oneway_reversed, $no_access, $speed0, $speed0_reversed) = @{$segment->[1]};
 
 	if ($oneway_reversed) {
 	    @node_ids = reverse @node_ids;
 	    $oneway = 1;
 	}
+
+	my $any_speed0 = $speed0 || $speed0_reversed; # XXX for the real thing I had to split the way into two directions...
 	    
 	print $wayfh qq{<way id="$next_way_id" visible="true">\n};
 	for my $node_id (@node_ids) {
 	    print $wayfh qq{  <nd ref="$node_id"/>\n};
 	}
 	print $wayfh qq{  <tag k="name" v="$name" />\n};
-	print $wayfh qq{  <tag k="highway" v="$highway_tag" />\n};
+	if ($any_speed0) {
+	    print $wayfh qq{  <tag k="highway" v="footway" />\n};
+	    print $wayfh qq{  <tag k="bicycle" v="yes" />\n};
+	} else {
+	    print $wayfh qq{  <tag k="highway" v="$highway_tag" />\n};
+	}
 	if ($oneway) {
 	    print $wayfh qq{  <tag k="oneway" v="yes" />\n};
 	}
