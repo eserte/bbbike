@@ -8,15 +8,18 @@
 # Vor¸bergehende Einschr‰nkungen
 #
 #: temporary vvv
-#: last_checked: 2009-08-28 vvv
+#: last_checked: 2009-09-12
+J‰gerstr.: Bauarbeiten, Fahrbahn Richtung Westen gesperrt	q4::inwork; 9394,11996 9201,11968
+#: last_checked: 2009-09-12
 Simplonstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 14530,11137 14465,11195
-#: last_checked ^^^
 #: last_checked: 2009-08-01
 #: next_check: 2009-10-01
 Reichstagufer (Mitte): Baustelle, Fahrbahn gesperrt, Fuﬂg‰nger kˆnnen passieren	q4::inwork 9209,12795 9280,12883
 #: last_checked: 2009-05-17
 #: next_check: 2009-09-30
 Hauptstr. (Friedrichshain-Kreuzberg): Baustelle, Radfahrer kˆnnen nur langsam passieren bzw. m¸ssen schieben	q4::inwork 14906,10820 14794,10844 14717,10855
+#: last_checked: 2009-09-12
+Varian-Fry-Str.: Baustelle, Fahrbahn gesperrt	q4::inwork 8389,11378 8374,11479
 #: temporary ^^^
 ######################################################################
 #: XXX es ist zu erwarten, dass hier der Wuhlewanderweg verbessert wird: vvv
@@ -81,6 +84,7 @@ Tiergarten: Parkweg	q1 8214,12205 8215,12156 8222,11881 8223,11796 8223,11700
 Tiergarten: Parkweg	q1 8021,11636 8016,11770
 Tiergarten: Parkweg	q1 7663,11946 7570,11855 7223,11897 7073,11798 6778,11742 6540,11754
 Tiergarten: Parkweg	q1 7816,12150 7827,12105 7832,12036 7822,11952 7801,11875 7795,11823 7777,11787 7772,11749 7796,11681 7816,11571
+(Bremer Weg - Fasanerieallee): Parkweg	q1 6342,11878 6379,11843 6406,11784 6467,11780 6540,11754
 Parkweg: enge Br¸cke, Fuﬂweg	q2 14310,9692 14351,9757 14448,9922 14453,9929 14558,10082 14597,10129 14626,10162 14652,10201
 #: last_checked: 2009-09-02
 #: next_check: 2010-09-01
@@ -523,6 +527,8 @@ Elsenstr. - Bahndamm: enger Weg	q2 13923,9405 13953,9372
 Upstallweg (Lichtenberg): gemeinsamer Rad- und Gehweg	q1 17946,10344 17954,10367 18039,10398 18200,10387 18245,10398 18332,10434
 Mayschweg: Fuﬂg‰nger (Radfahrer frei), eng	q1 23064,3614 23012,3598 23007,3597
 Spreetunnel: Fuﬂg‰nger	q2 25571,4553 25658,4619
+(entlang der Autobahn, zum hohen Bogen): gemeinsamer Fuﬂ- und Radweg	q1+ 3388,8958 3489,8839 3510,8814 3713,8578 3696,8572 3644,8456 3644,8425
+Gˆrresstr.: enge Straﬂe	q1 5066,7668 5158,7560 5272,7458 5318,7424
 ######################### User Contributions #################################
 #: by: Michael Kiekbusch
 #: corrected_by: srt/policy (q4 -> q3-)
@@ -772,7 +778,7 @@ Retzdorffpromenade: Fuﬂg‰nger	q2 4893,6812 4993,6812
 #: by: Michael Meixner:
 Lothar-Bucher-Str.: enge Straﬂe	q1 5598,6136 5664,6082 5748,6051 5845,6049 6008,6067
 #: by: Julie:
-#: XXX hier hat sie "Schrittgeschwindigkeit" angegeben?!
+#: corrected_by: srt (q4 -> q1)
 Albestr.: enge Straﬂe	q1 5422,7461 5448,7436 5640,7435 5811,7433
 #: by: Michael Dinter:
 Leuthener Str.: enge Straﬂe	q1 7411,8364 7494,8364 7578,8358 7640,8359 7716,8356

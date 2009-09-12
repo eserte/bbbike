@@ -74,10 +74,10 @@ Tiergarten: rechts des Neuen Sees halten	CP; 5901,11902 5890,11865 5870,11842
 Tiergarten: links des Neuen Sees halten	CP; 5901,11902 5890,11865 5933,11775
 Klingelhöferstr. - Köbisstr.: bereits an der Ampel Stülerstr./Tiergartenstr. die Straßenseite wechseln	PI; 6825,11486 6851,11346 7160,11225
 Blissestr. - Am Volkspark: bereits an der Ampel Mecklenburgische Str. auf die linke Seite wechseln	PI; 4783,8557 4784,8508 4960,8440
-#: XXX Bei den beiden nächsten Einträgen (Am Volkspark) stand hier "PI:35;".
-#: XXX Diese Schreibweise (verlorene Zeit in Sekunden) wird noch nirgendwo unterstützt,
-#: XXX deshalb wieder zu "PI;" geändert.
-#: XXX Die verlorene Zeit entspricht etwa 150m bei 15 km/h
+#: XXX_prog Bei den beiden nächsten Einträgen (Am Volkspark) stand hier "PI:35;".
+#: XXX_prog Diese Schreibweise (verlorene Zeit in Sekunden) wird noch nirgendwo unterstützt,
+#: XXX_prog deshalb wieder zu "PI;" geändert.
+#: XXX_prog Die verlorene Zeit entspricht etwa 150m bei 15 km/h
 Am Volkspark: zum Überqueren der Bundesallee Ampel an der Hildegarstr. (rechts) benutzen	CP; 5320,8456 5444,8406 5669,8207
 Am Volkspark: zum Überqueren der Bundesallee Ampel an der Hildegarstr. (links) benutzen	CP; 5669,8207 5444,8406 5320,8456
 Bundesallee - Am Volkspark: bereits an der Durlacher Str. die Straßenseite wechseln	PI; 5421,8337 5444,8406 5320,8456
@@ -379,7 +379,7 @@ Ausgeschildert Richtung Buga-Park	CP2; -14305,2184 -14100,2144
 Ausgeschildert Richtung Kurstr.	CP2; 9972,12184 10003,12113
 Hinter dem Straßenbetriebshof rechts in den Weg einbiegen	CP; 16860,12861 16865,13000 17041,12989
 Bremer Weg: die Einfahrt in den Parkweg befindet sich auf der linken Seite	CP2; 8538,12245 8522,12239
-#: last_checked: 2009-08-07
+#: last_checked: 2009-09-12
 Werderscher Markt - Schloßplatz: bereits hinter der Schleusenbrücke auf den linken Gehweg wechseln	PI; 10109,12238 10170,12261 10063,12438
 Lindenstr. - Breitestr.: auf dem linken Geh/Radweg bis zur Dortustr. fahren und dort die Straßenseite wechseln	CP; -13366,-1499 -13375,-1546 -13238,-1569
 Breitestr. - Lindenstr.: bereits an der Kreuzung "Wall am Kiez" auf die linke Straßenseite wechseln	PI; -13516,-1517 -13375,-1546 -13366,-1499

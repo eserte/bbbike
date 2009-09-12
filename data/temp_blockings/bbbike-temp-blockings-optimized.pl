@@ -728,16 +728,7 @@ userdel	q4::inwork 10422,12395 10476,12432
        undef,
        undef,
        undef,
-       {
-         'until' => undef,
-         'text' => 'Varian-Fry-Str.: Baustelle, Fahrbahn gesperrt',
-         'from' => undef,
-         'id' => 1657,
-         'data' => '#: last_checked: 2009-08-04
-userdel	q4::inwork 8389,11378 8374,11479
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1740,6 +1731,16 @@ d Breitenbachstr. Baustelle, Fahrtrichtung gesperrt (bis Anfang 05/2010)',
          'data' => 'userdel	q4::temp; 5817,7223 5654,6941
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => undef,
+         'permanent' => 1,
+         'text' => 'Breslauer Platz: Wochenmarkt Mittwoch 8-13 Uhr, Donnerstag 12-17 Uhr, Samstag 8-14 Uhr, Behinderungen möglich',
+         'from' => undef,
+         'id' => 1884,
+         'data' => '	q4::temp 5902,7334 5810,7337 5817,7223
+',
+         'type' => 'gesperrt'
        }
      
 );

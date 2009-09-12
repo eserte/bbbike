@@ -14042,12 +14042,11 @@ EOF
 userdel	q4::inwork 12822,12067 12852,12306 12869,12425
 EOF
      },
-     { from  => undef, # 
-       until => undef, # XXX
+     { from  => 1252767974, # undef
+       until => 1252767981, # XXX undef -> nach handicap_s-orig gewandert
        text  => 'Varian-Fry-Str.: Baustelle, Fahrbahn gesperrt',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2009-08-04
 userdel	q4::inwork 8389,11378 8374,11479
 EOF
      },
@@ -15985,6 +15984,15 @@ EOF
        source_id => 'IM_014142',
        data  => <<EOF,
 userdel	q4::temp; 5817,7223 5654,6941
+EOF
+     },
+     { from  => undef, #
+       until => undef, #
+       text  => 'Breslauer Platz: Wochenmarkt Mittwoch 8-13 Uhr, Donnerstag 12-17 Uhr, Samstag 8-14 Uhr, Behinderungen möglich',
+       type  => 'gesperrt',
+       permanent => 1,
+       data  => <<EOF,
+	q4::temp 5902,7334 5810,7337 5817,7223
 EOF
      },
     );

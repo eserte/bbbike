@@ -4,9 +4,11 @@
 #: note: XXX_* categorization done 2008-01-26
 #: note: "Parkweg" sollte hier vielleicht nicht verwendet werden, sondern nur in qualitaet_s-orig? Oder wenigstens die gleichen Wege nicht in beiden Dateien so benannt werden? Oder wenigstens beim Ausgeben der Routenliste doppelte ausfiltern?
 #:
+Jägerstr.: Bauarbeiten, Fahrbahn Richtung Westen gesperrt	q4::inwork; 9394,11996 9201,11968
 Simplonstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 14530,11137 14465,11195
 Reichstagufer (Mitte): Baustelle, Fahrbahn gesperrt, Fußgänger können passieren	q4::inwork 9209,12795 9280,12883
 Hauptstr. (Friedrichshain-Kreuzberg): Baustelle, Radfahrer können nur langsam passieren bzw. müssen schieben	q4::inwork 14906,10820 14794,10844 14717,10855
+Varian-Fry-Str.: Baustelle, Fahrbahn gesperrt	q4::inwork 8389,11378 8374,11479
 Wuhlewanderweg: steiler Anstieg, Fußgänger	q4; 21998,12204 21970,12153
 Wuhlewanderweg: steiles Gefälle, Fußgänger	q4; 21970,12153 21998,12204
 Caroline-Michaelis-Str.: Bordsteine	q3 9125,13973 9151,13941
@@ -65,6 +67,7 @@ Tiergarten: Parkweg	q1 8214,12205 8215,12156 8222,11881 8223,11796 8223,11700
 Tiergarten: Parkweg	q1 8021,11636 8016,11770
 Tiergarten: Parkweg	q1 7663,11946 7570,11855 7223,11897 7073,11798 6778,11742 6540,11754
 Tiergarten: Parkweg	q1 7816,12150 7827,12105 7832,12036 7822,11952 7801,11875 7795,11823 7777,11787 7772,11749 7796,11681 7816,11571
+(Bremer Weg - Fasanerieallee): Parkweg	q1 6342,11878 6379,11843 6406,11784 6467,11780 6540,11754
 Parkweg: enge Brücke, Fußweg	q2 14310,9692 14351,9757 14448,9922 14453,9929 14558,10082 14597,10129 14626,10162 14652,10201
 Spittelmarkt: Gehweg, wegen Bauarbeiten eng	q3::inwork 10166,11592 10153,11666 10213,11728
 Spittelmarkt: Gehweg	q1 10369,11728 10240,11740
@@ -475,6 +478,8 @@ Elsenstr. - Bahndamm: enger Weg	q2 13923,9405 13953,9372
 Upstallweg (Lichtenberg): gemeinsamer Rad- und Gehweg	q1 17946,10344 17954,10367 18039,10398 18200,10387 18245,10398 18332,10434
 Mayschweg: Fußgänger (Radfahrer frei), eng	q1 23064,3614 23012,3598 23007,3597
 Spreetunnel: Fußgänger	q2 25571,4553 25658,4619
+(entlang der Autobahn, zum hohen Bogen): gemeinsamer Fuß- und Radweg	q1 3388,8958 3489,8839 3510,8814 3713,8578 3696,8572 3644,8456 3644,8425
+Görresstr.: enge Straße	q1 5066,7668 5158,7560 5272,7458 5318,7424
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q3 11805,19071 11937,19175
 Ebersstr.: Schüler	q2 7245,8583 7292,8631
 Straße 103 (Niederschönhausen): enge Straße	q1 10914,20065 11051,19789

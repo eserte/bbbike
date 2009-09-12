@@ -124,8 +124,8 @@ Platz S (Hundekehlestr.)	1 2277,7705 2206,7637
 Platz S (Hundekehlestr.)	1 2161,7685 2222,7718 2277,7705
 Platz am Wilden Eber	1 2723,7029 2701,7045 2688,7067 2695,7082 2717,7093 2737,7073 2742,7056 2733,7039 2723,7029
 # gesperrt wegen Tunnel
-Wexstr.	2 6371,7976 6135,7973 5807,7978 5634,8004
-Wexstr.	1 5634,8004 5824,8035 5928,8052 6266,8058 6409,8026
+Wexstr.	2 6371,7976 6135,7973 5807,7978 5635,8011
+Wexstr.	1 5635,8011 5824,8035 5928,8052 6266,8058 6409,8026
 Detmolder Str. (Süd)	1 4659,7982 4572,7936 4371,8018 4342,8093 4280,8188
 Detmolder Str. (Nord)	2 4349,8118 4469,8037 4659,7982
 Detmolder Str. (Nord)	1 4280,8188 4349,8118
@@ -1036,7 +1036,7 @@ Blumberger Damm: Mittelstreifen	3nocross 21599,15213 21626,15357 21647,15496
 Blumberger Damm: Mittelstreifen	3nocross 21150,11925 21135,11799 21108,11628
 Rudower Chaussee: Mittelstreifen	3nocross 19206,2848 19242,2876 19324,2939
 Adlergestell: Mittelstreifen	3nocross 20565,2754 20289,3033 20207,3115 20064,3278
-Sachsendamm: Mittelstreifen mit Geländer	3nocross 6935,8208 7005,8150 7087,8066
+Sachsendamm: Mittelstreifen mit Geländer	3nocross 6935,8208 7005,8150 7073,8081
 Holzmarktstr.: Mittelstreifen	3nocross 11963,11813 11919,11856 11768,12006
 Mehringdamm/Baruther: Mittelstreifen	3nocross 9334,9670 9387,9804 9444,9919
 Höhndorfstr. - Loewenhardtdamm: Mittelstreifen	3 8438,8676 8334,8655 8371,8543
@@ -1044,6 +1044,7 @@ Mehringdamm/Wilhelmshöhe: Mittelstreifen	3nocross 9224,9053 9225,9111 9248,9350
 Unter den Eichen: Mittelstreifen, Tunnelrampe	3nocross 3344,4488 3235,4421 3048,4305
 Kottbusser Damm: Mittelstreifen	3nocross 11785,9437 11757,9509 11745,9541
 Gertraudenstr.: Mittelstreifen	3nocross 10350,11846 10391,11898 10431,11945
+Heylstr.: breiter Mittelstreifen, enge Querungsmöglichkeit nur für Fußgänger, Bordsteine	3nocross 6181,8181 6246,8222 6325,8259
 #
 ####################################################################
 #
@@ -1374,6 +1375,7 @@ Drängelgitter	BNP:3 62686,40877
 Drängelgitter	BNP:3 63740,42840
 Drängelgitter	BNP:3 63721,42792
 Schranke, kann auch mit Anhänger umfahren werden	BNP:1 49137,24422
+Drängelgitter	BNP:3::trailer=6 3644,8456
 #
 ############################################################################
 #
@@ -1410,6 +1412,8 @@ Kynaststraße: Abriss und Neubau bis ca. 2010-03-01	2:inwork 14988,11130 14897,10
 #: note: genaue Wegführung von Diethard Mager:
 Am Pankepark: z.Zt. noch Baustraße, Fertigstellung um 2011-01-01, dann als Fußgänger/Radweg konzipiert	2:inwork 8184,14052 8290,14119
 Am Pankepark: z.Zt. noch Baustraße, Fertigstellung um 2011-01-01	2:inwork 8290,14119 8246,14201 8138,14148
+#: last_checked: 2009-09-12
+Brücke im Tiergarten: gesperrt	2:inwork 6406,11784 6467,11780
 #
 #: section ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #: section in Brandenburg vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
@@ -1468,7 +1472,7 @@ Sterzinger Str.	1 6096,8600 6128,8536
 Bozener Str.	1 5904,8906 5995,8926 6049,8916
 Bozener Str.	1 5995,8926 5995,9098
 Kleiststr.: schwierig zu querender Mittelstreifen	3nocross 6532,10529 6636,10492 6753,10446
-Bundesallee: Queren nicht möglich	3nocross 5360,8197 5359,8140 5357,8005
+Bundesallee: Queren nicht möglich	3nocross 5360,8197 5359,8140 5357,8013
 (Los-Angeles-Platz)	1s:q3 5681,10696 5822,10609
 Bregenzer Str.	1 4278,10262 4227,10014
 Mollstr.: Straßenbahntrasse	3nocross 11905,13069 11881,13072 11839,13083 11739,13131 11723,13139
@@ -1594,6 +1598,8 @@ tragen (16 Stufen)	0:40 4124,12706
 tragen (16 Stufen)	0:40 4128,12637
 Kaiserdamm: queren schlecht möglich	3nocross 2109,11441 2191,11451 2282,11463
 Kaiserdamm: queren schlecht möglich	3nocross 2282,11463 2390,11468 2612,11491
+Bismarckstr.: unbequemes Überqueren des Mittelstreifens, parkende Autos	3nocross 3441,11598 3555,11612 3690,11629
+Kaiser-Friedrich-Str.: Mittelstreifen, unbequemes Überqueren	3nocross 3481,11224 3467,11373 3460,11441
 tragen, schieben (3 x 9 Stufen, schmale Rampe)	0:30 6190,12978
 tragen (30 Stufen)	0:45 5890,12602
 tragen (12 Stufen)	0:20 5683,12342

@@ -105,8 +105,8 @@ Olivaer Platz	1 4239,10358 4172,10406 4157,10418
 Platz S (Hundekehlestr.)	1 2277,7705 2206,7637
 Platz S (Hundekehlestr.)	1 2161,7685 2222,7718 2277,7705
 Platz am Wilden Eber	1 2723,7029 2701,7045 2688,7067 2695,7082 2717,7093 2737,7073 2742,7056 2733,7039 2723,7029
-Wexstr.	2 6371,7976 6135,7973 5807,7978 5634,8004
-Wexstr.	1 5634,8004 5824,8035 5928,8052 6266,8058 6409,8026
+Wexstr.	2 6371,7976 6135,7973 5807,7978 5635,8011
+Wexstr.	1 5635,8011 5824,8035 5928,8052 6266,8058 6409,8026
 Detmolder Str. (Süd)	1 4659,7982 4572,7936 4371,8018 4342,8093 4280,8188
 Detmolder Str. (Nord)	2 4349,8118 4469,8037 4659,7982
 Detmolder Str. (Nord)	1 4280,8188 4349,8118
@@ -1320,8 +1320,8 @@ Adlergestell -> Otto-Franke-Str.: Mittelstreifen	3::igndisp 20207,3115 20289,303
 Otto-Franke-Str. -> Adlergestell: Mittelstreifen	3::igndisp 20388,3100 20289,3033 20565,2754
 Adlergestell -> Büchnerweg: Mittelstreifen	3::igndisp 20064,3278 20207,3115 20315,3181
 Büchnerweg -> Adlergestell: Mittelstreifen	3::igndisp 20315,3181 20207,3115 20289,3033
-Mittelstreifen mit Geländer	3nocross::ignrte 6935,8208 7005,8150 7087,8066
-Torgauer Str. -> Sachsendamm: Mittelstreifen mit Geländer	3::igndisp 7268,8225 7005,8150 7087,8066
+Mittelstreifen mit Geländer	3nocross::ignrte 6935,8208 7005,8150 7073,8081
+Torgauer Str. -> Sachsendamm: Mittelstreifen mit Geländer	3::igndisp 7268,8225 7005,8150 7073,8081
 Mittelstreifen	3nocross::ignrte 11963,11813 11919,11856 11768,12006
 Mehlbeerenweg -> Holzmarktstr.: Mittelstreifen	3::igndisp 11923,11881 11919,11856 11963,11813
 Holzmarktstr. -> Mehlbeerenweg: Mittelstreifen	3::igndisp 11768,12006 11919,11856 11923,11881
@@ -1340,6 +1340,9 @@ Pflügerstr. -> Kottbusser Damm: Mittelstreifen	3::igndisp 11934,9538 11757,9509 
 Mittelstreifen	3nocross::ignrte 10350,11846 10391,11898 10431,11945
 Gertraudenstr. -> Kleine Gertraudenstr.: Mittelstreifen	3::igndisp 10350,11846 10391,11898 10364,11896
 Kleine Gertraudenstr. -> Gertraudenstr.: Mittelstreifen	3::igndisp 10364,11896 10391,11898 10431,11945
+breiter Mittelstreifen, enge Querungsmöglichkeit nur für Fußgänger, Bordsteine	3nocross::ignrte 6181,8181 6246,8222 6325,8259
+Nymphenburger Str. -> Heylstr.: breiter Mittelstreifen, enge Querungsmöglichkeit nur für Fußgänger, Bordsteine	3::igndisp 6163,8398 6246,8222 6325,8259
+Heylstr. -> Nymphenburger Str.: breiter Mittelstreifen, enge Querungsmöglichkeit nur für Fußgänger, Bordsteine	3::igndisp 6181,8181 6246,8222 6163,8398
 tragen (8 Stufen)	0:14:-35 10286,11869
 tragen (14 Stufen)	0:25:-197 -6972,1029
 tragen (Treppe)	0:30:-24 22057,4531
@@ -1564,6 +1567,7 @@ Drängelgitter	BNP:3:-151 62686,40877
 Drängelgitter	BNP:3:-158 63740,42840
 Drängelgitter	BNP:3:-157 63721,42792
 Schranke, kann auch mit Anhänger umfahren werden	BNP:1:-168 49137,24422
+Drängelgitter	BNP:3:24:trailer=6 3644,8456
 Kreuzstr.: Bauarbeiten, voll gesperrt	2:inwork 10231,11940 10209,11918
 Wegedornbrücke: Vollsperrung, Neubau	2:inwork 20385,593 20442,564 20510,530
 Schinkelplatz: Bauarbeiten	2:inwork 10084,12228 9984,12426
@@ -1578,6 +1582,7 @@ Brücke über Panke: zur Zeit Bauarbeiten, keine Durchfahrt möglich	2:inwork 7753,
 Kynaststraße: Abriss und Neubau bis ca. 2010-03-01	2:inwork 14988,11130 14897,10935 14881,10864 14867,10802 14828,10628 14802,10505 14795,10473 14766,10372 14724,10297
 Am Pankepark: z.Zt. noch Baustraße, Fertigstellung um 2011-01-01, dann als Fußgänger/Radweg konzipiert	2:inwork 8184,14052 8290,14119
 Am Pankepark: z.Zt. noch Baustraße, Fertigstellung um 2011-01-01	2:inwork 8290,14119 8246,14201 8138,14148
+Brücke im Tiergarten: gesperrt	2:inwork 6406,11784 6467,11780
 Rückbau der Fr.-Ebert-Str. zwischen Breite Str. und Platz der Einheit, Bauarbeiten bis Ende 2009. Umfahrung über Alten Markt notwendig.	1:inwork -12659,-1700 -12719,-1661 -12755,-1585 -12773,-1544
 Rückbau der Fr.-Ebert-Str., kein Zugang zur Schwertfegerstr.	2:inwork -12870,-1493 -12795,-1499
 Behlertstr.	1 -12370,-354 -12500,-339 -12621,-359 -12821,-417 -12865,-425
@@ -1628,13 +1633,13 @@ Bozener Str.	1 5995,8926 5995,9098
 schwierig zu querender Mittelstreifen	3nocross::ignrte 6532,10529 6636,10492 6753,10446
 Kalckreuthstr. -> Kleiststr.: schwierig zu querender Mittelstreifen	3::igndisp 6628,10318 6636,10492 6532,10529
 Kleiststr. -> Kalckreuthstr.: schwierig zu querender Mittelstreifen	3::igndisp 6753,10446 6636,10492 6628,10318
-Queren nicht möglich	3nocross::ignrte 5360,8197 5359,8140 5357,8005
+Queren nicht möglich	3nocross::ignrte 5360,8197 5359,8140 5357,8013
 Mainzer Str. -> Bundesallee: Queren nicht möglich	3::igndisp 5177,8139 5359,8140 5360,8197
 Mainzer Str. -> Tübinger Str.: Queren nicht möglich	3::igndisp 5177,8139 5359,8140 5420,8160
 Bundesallee -> Tübinger Str.: Queren nicht möglich	3::igndisp 5360,8197 5359,8140 5420,8160
-Bundesallee -> Mainzer Str.: Queren nicht möglich	3::igndisp 5357,8005 5359,8140 5177,8139
+Bundesallee -> Mainzer Str.: Queren nicht möglich	3::igndisp 5357,8013 5359,8140 5177,8139
 Tübinger Str. -> Mainzer Str.: Queren nicht möglich	3::igndisp 5420,8160 5359,8140 5177,8139
-Tübinger Str. -> Bundesallee: Queren nicht möglich	3::igndisp 5420,8160 5359,8140 5357,8005
+Tübinger Str. -> Bundesallee: Queren nicht möglich	3::igndisp 5420,8160 5359,8140 5357,8013
 (Los-Angeles-Platz)	1s 5681,10696 5822,10609
 Bregenzer Str.	1 4278,10262 4227,10014
 Straßenbahntrasse	3nocross::ignrte 11905,13069 11881,13072 11839,13083 11739,13131 11723,13139
@@ -1862,6 +1867,12 @@ Saldernstr. -> Riehlstr.: queren schlecht möglich	3::igndisp 2405,11587 2390,114
 Saldernstr. -> Kaiserdamm: queren schlecht möglich	3::igndisp 2405,11587 2390,11468 2612,11491
 Kaiserdamm -> Saldernstr.: queren schlecht möglich	3::igndisp 2282,11463 2390,11468 2405,11587
 Kaiserdamm -> Riehlstr.: queren schlecht möglich	3::igndisp 2612,11491 2390,11468 2393,11381
+unbequemes Überqueren des Mittelstreifens, parkende Autos	3nocross::ignrte 3441,11598 3555,11612 3690,11629
+Bismarckstr. -> Rückertstr.: unbequemes Überqueren des Mittelstreifens, parkende Autos	3::igndisp 3690,11629 3555,11612 3571,11451
+Rückertstr. -> Bismarckstr.: unbequemes Überqueren des Mittelstreifens, parkende Autos	3::igndisp 3571,11451 3555,11612 3441,11598
+Mittelstreifen, unbequemes Überqueren	3nocross::ignrte 3481,11224 3467,11373 3460,11441
+Goethepark -> Kaiser-Friedrich-Str.: Mittelstreifen, unbequemes Überqueren	3::igndisp 3594,11372 3467,11373 3481,11224
+Kaiser-Friedrich-Str. -> Goethepark: Mittelstreifen, unbequemes Überqueren	3::igndisp 3460,11441 3467,11373 3594,11372
 tragen, schieben (3 x 9 Stufen, schmale Rampe)	0:30:-263 6190,12978
 tragen (30 Stufen)	0:45:26 5890,12602
 tragen (12 Stufen)	0:20:41 5683,12342

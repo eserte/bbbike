@@ -16,8 +16,8 @@ Wisbyer Str.: Radstreifen sind noch provisorisch	? 12091,16209 12026,16247 11887
 Frankfurter Allee: Radstreifen ist teilweise noch provisorisch	?; 15361,12071 15117,12106
 # Hier scheint nichts mehr zu passieren: #: last_checked: 2008-04-08 Wilhelmstr. (Kreuzberg)	? 9376,10393 9378,10539 9370,10615 9367,10641 9313,10789 9266,10936 9234,11056 9199,11166 9162,11286
 # XXX del #: last_checked: 2008-10-11#: by: MoPo 2009-08-01, soll 2009 realisiert werden Alt-Moabit zwischen Kirch- und Paulstraße	? 7195,13046 6966,13075 6860,13093 6757,13112 6661,13130
-#: last_checked: 2009-08-07
-#: next_check: 2009-09-15
+#: last_checked: 2009-09-12
+#: next_check: 2009-12-15
 #: XXX: die ersten Meter in der Breiten Str. sind noch Baustelle ohne Radspuren
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0709/nachricht2788.html
 Breite Str./Werderscher Markt	? 10267,12305 10170,12261 10109,12238 10084,12228 9972,12184
@@ -39,7 +39,7 @@ Saargemünder Straße	? 2027,4792 1884,4811 1747,4829 1479,4853
 Reichsstr.	? 1401,11428 1403,11428 1308,11506 1220,11583 1215,11587 1133,11664 1033,11754 881,11893 818,11954
 #: by: MoPo 2009-08-01, soll 2009 realisiert werden vvv
 Perleberger Str.	? 6230,13596 6366,13716 6493,13822 6649,13947 6730,14021 6807,14093 6992,14251 7123,14367 7180,14419
-#: last_checked: 2009-08-11 (by rjoop)
+#: last_checked: 2009-09-12
 Tiergartenstr.	? 8172,11679 8021,11636 7816,11571 7717,11540 7600,11513 7504,11512 7435,11514 7356,11517 7293,11519 6825,11486
 Grunewaldstr.	? 4861,5581 4671,5697 4520,5793 4419,5842 4291,5895 4172,5918 4006,5876 3931,5825 3850,5801 3707,5758
 Falkenberger Chaussee im Bereich Bhf. Hohenschönhausen	? 17400,17790 17703,17990 17843,18078
@@ -163,9 +163,6 @@ Mohrenstr.: evtl. nach den Bauarbeiten Q0?	? 9418,11804 9220,11781
 Berliner Str.: nach den Bauarbeiten vielleicht asphaltiert?	? 12479,17811 12736,17998
 #: next_check: 2009-07-15
 Romain-Rolland-Str.: nach den Bauarbeiten vielleicht asphaltiert?	? 12562,18483 12570,18351 12575,18275
-#: last_checked: 2009-07-21
-#: next_check: 2009-09-30
-Jägerstr.: nach den Bauarbeiten in der Glinkastraße evtl. hier auch guter Asphalt	?::inwork 9108,11961 9201,11968 9394,11996
 #: next_check: 2009-12-01:
 #: XXX und nicht vergessen: Eintrag in gesperrt dann entfernen! Und es existiert keine besondere Vorfahrtsregelung mehr. Evtl. auch Straßenkategorisierung bzw. comments_kfzverkehr anpassen.
 Französische Str.: Verlängerung wird 2009-12 eröffnet. Es wird eine Ampel an der Kreuzung Wilhelmstr. geben.	?::inwork 8901,12008 9076,12054
@@ -219,7 +216,7 @@ Segelfliegerdamm (Zernsdorf - Niederlehme): in Planung/Bau	? 29192,-10630 29088,
 # : by: http://www.eyth16.de/weblog/2005/11/04/145/
 # : last_checked: 2006-03-29
 # : note: schien beim letzten Check noch offen
-# Scheint nicht zu passieren; außerdem ist wahrscheinlich die Verbindung zur Westtangente gemeint: Verlängerung des Tempelhofer Weges: wird zugemacht (2006-03-01)	? 7087,8066 7139,8079 7268,8008
+# Scheint nicht zu passieren; außerdem ist wahrscheinlich die Verbindung zur Westtangente gemeint: Verlängerung des Tempelhofer Weges: wird zugemacht (2006-03-01)	? 7073,8081 7139,8079 7268,8008
 #: by: berliner-stadtplan.com
 #: by: http://www.berlinonline.de/berliner-kurier/archiv/.bin/dump.fcgi/2005/1110/berlin/0033/index.html
 #: next_check: 2009-08-01
@@ -252,11 +249,11 @@ Fritz-von-der-Lancken-Str - Höhenweg: Straße in Bau	?::inwork -12766,1932 -12636
 # Das heißt diese Strecken werden nicht bei einer erweiterten Suche aufgenommen
 # und dem CGI-Benutzer auch nicht präsentiert.
 # 
+#: XXX_prog:
+Hauptstr.: enger Mittelstreifen, für Anhänger recht knapp (-> 3nocross)	? 6608,8277 6560,8219 6468,8109
 Ampelanlage Schwedter/Kastanienallee?	? 10511,14418 10534,14460
 #: XXX_prog: eine Art qX+3(=gerichtet)-Kombination ist notwendig, mit Unterstützung für bestimmte Fahrzeugarten (trailer) oder nur 3 mit trailer
 Für Anhänger sehr unbequem zu passieren (Betonblöcke und Barrieren, max. 90cm lichte Breite)	? 9777,10719 9805,10791 9786,10971
-#: by: Carsten Schulz:
-Wilmersdorf, am Hohen Bogen: Irgendwo hier gibt es ein neues Drängelgitter und erhöhten Fußgängerverkehr, wo genau?	? 3665,8131 3676,8394 3618,8447 3713,8578 3489,8839 3388,8958
 #: XXX_prog:
 Potsdamer Str. oder Hauptstr.: Richtung Norden Hauptstr., Richtung Süden Potsdamer Str.	? 7479,9357 7517,9454
 #: XXX_indoor:
@@ -279,10 +276,10 @@ Weitere Radwegverschwnekungen, siehe Track vom 25. April 2009	? 19389,11761 1900
 Rägeliner Str.: evtl. wird die Straße neu gewalzt?	?::inwork 19959,10443 20025,10337
 #: by: http://www.morgenpost.de/content/2008/02/03/berlin/944972.html
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0808/nachricht3157.html
+#: last_checked: 2009-09-12 (by srt, nur südlicher Abschnitt)
+Prinzregentenstr.: Ist die Prinzregentenstr. mittlerweile eine Fahrradstraße? Wenn ja, gilt die Fahrradstraßenregelung für die gesamte Straße oder nur einen Teilabschnitt?	? 5630,7875 5635,8011 5641,8137 5669,8207 5666,8345
 #: last_checked: 2009-04 (by rjoop)
-#: last_checked: 2009-05-02 (by srt, nur südlicher Abschnitt)
-#: next_check: 2009-08-01
-Prinzregentenstr.: Ist die Prinzregentenstr. mittlerweile eine Fahrradstraße? Wenn ja, gilt die Fahrradstraßenregelung für die gesamte Straße oder nur einen Teilabschnitt?	? 5630,7875 5634,8004 5641,8137 5669,8207 5666,8345 5660,8591 5655,8828 5647,9022 5633,9263 5628,9353 5630,9592
+Prinzregentenstr.: Ist die Prinzregentenstr. mittlerweile eine Fahrradstraße? Wenn ja, gilt die Fahrradstraßenregelung für die gesamte Straße oder nur einen Teilabschnitt?	? 5666,8345 5660,8591 5655,8828 5647,9022 5633,9263 5628,9353 5630,9592
 #: XXX_prog: verbessern, wenn der entsprechende Routingtext besser aussehen würde (also z.B. "nach rechts und sofort wieder nach links")
 Kleineweg: ist hier leicht versetzt	? 9130,7804 9131,7652 9120,7600
 Reinickendorfer Route 5, wo geht es weiter?	? 6558,18947 6442,18839
@@ -316,7 +313,6 @@ Drängelgitter/Schranke	? 8825,14401
 #: by: http://archiv.tagesspiegel.de/archiv/30.07.2005/1962466.asp:
 Spree: ist dieser Spreearm wiederhergestellt worden?	? 43394,-2017 43296,-2181 43357,-2501 43220,-2544 43129,-2437 43162,-2242 43053,-2114
 Adlergestell - Am Kanal: Existiert hier eine Verbindung ohne Treppen? Wenn ja, wie ist die Qualität? Ist die Verbindung auch für Autos befahrbar?	? 21041,2259 21050,2267 20946,2397
-(Bremer Weg - Fasanerieallee): genaue Wegführung? Qualität?	? 6342,11878 6379,11843 6406,11784 6540,11754
 Entwicklungsgebiet Haveleck: laut Thomas Biederbick sind alle Straßen fertig gestellt und gut befahrbar	? -1857,16747 -1457,16645 -1634,16255 -1916,16438
 Ortsumfahrung Seelow (B1): möglicherweise eine Kraftfahrzeugstraße?	? 79547,16079 79117,16131 78709,16342 78294,16686 77831,16850 77477,16855 76714,16676 76378,16579
 Ortsumfahrung Seelow (B1/B167): möglicherweise eine Kraftfahrzeugstraße?	? 76378,16579 75959,16446 75486,16163 75096,15691 74874,15075
@@ -540,8 +536,6 @@ Askanierring: an der Verbindung zwischen Fehrbelliner Tor und Streitstr. wird ge
 Havelschanze: Qualität?	? -3040,16246 -2641,16222 -2560,16212
 #: XXX Eintrag in PLZ-DB fehlt für Dorsch-Allee. Clementweg mit oder ohne Akzent?:
 Clémentweg/Dr.-Dorsch-Allee: Qualität (laut ADFC-Karte gut geeignet)?	? 11740,22770 10855,23403
-#: XXX ebenfalls: Werdauer Brücke eintragen!
-Werdauer Weg: Qualität (Am Sachsendamm-Ende anscheinend Beton)?	? 7087,8066 6990,8040 6481,7345
 Ludwig-Renn-Str.: Einbahnstraße auch für Radfahrer?	? 20843,16829 21017,16737
 Stolper Weg: Qualität? Bis wo (vom Europarc aus) ist Autoverkehr vorhanden? Radwege? Genaue Straßennamen?	? -4709,-728 -4884,-907 -5335,-1090 -6147,-1125 -6411,-868
 #: note: laut Message-ID: <dpqsm6$vmc$02$1@news.t-online.com> ist die Brücke offen für Fußgänger
@@ -1026,7 +1020,6 @@ Häsen - Gutengermendorf: Qualität? Westlich/nördlich der Bahnstrecke anscheinend
 Gutengermendorf - Häsen: Qualität? am Bahnübergang anscheinend Feldweg (Q2)	? -6390,59554 -6070,59687 -5227,60124 -5044,59890 -4597,59799 -4313,59921 -3764,59657 -3537,59727
 (bei Altlüdersdorf): Qualität? westlich des Bahnübergangs anscheinend mäßiger Asphalt (Q1)	? -7200,71187 -6182,71661 -5335,72039
 Seilershof - B96: Qualität? am Bahnübergang anscheinend asphaltiert	? -7455,74445 -6794,74226 -6517,74079 -6100,73876 -6037,73865
-Heylstr: Qualität?	? 6459,8281 6552,8281
 #: XXX Eintrag von Gabriel (glaeser) existiert, aber ist tatsächlich diese Mühlenstr. gemeint?
 Mühlenstr. (Blankenburg): Asphalt, Radweg?	? 14402,20250 14460,20406 14499,20649 14589,20988
 Beelitz - Schönefeld: laut "Berliner Umland" wurde die Straße etwas nach Süden verlegt	? -18265,-20481 -18031,-20502 -17867,-20681
@@ -2406,7 +2399,6 @@ Georg-Steger-Weg: Qualität? Für Radfahrer befahrbar?	? 1506,2237 1603,2615
 Mühlenstr. - Hampsteadstr.: Qualität? Für Radfahrer befahrbar?	? 1603,2615 1631,2722 1647,2759 1634,2914
 Von-Canstein-Str. (Dahlwitz-Hoppegarten): Qualität?	? 26880,11479 26957,11450 27007,11422 27165,11294
 Meisenstr.: Qualität?	? 1613,5258 1964,5196
-Am Güterbahnhof Halensee: Ist die Straße offen? Qualität?	? 2567,9871 2585,9875 2767,9670 3040,9420
 Harkortstr.: Qualität? Offen für Autos? Kann man zur Röblingstr. gelangen (Hausdurchfahrt?)?	? 7669,5536 7621,5494 7570,5508 7528,5480 7477,5475
 Straße 14 (Neukölln): Qualität? Offen? Ausgeschildert?	? 14133,6187 14116,6277
 Heldburger Str.: Qualität? Führt die Straße schon bis zur Ferdinand-Schultze-Str.?	? 17247,14581 17389,14599 17514,14613 17629,14627
@@ -2639,11 +2631,9 @@ Zimmererweg: Qualität und Fahrbahnbeschaffenheit?	? 12687,3319 12754,3318 12805,
 An der Fließwiese: Qualität?	? -998,12689 -1022,12743 -1020,12801 -962,12951 -950,13091 -912,13106 -815,13067
 Biedermannweg: Qualität?	? -854,12963 -742,12924
 Emmy-Zehden-Weg: Qualität?	? 4903,15105 4810,15000
-Goethepark: Qualität? Kann die Kaiser-Friedrich-Str. in Höhe Goethepark überquert werden?	? 3467,11373 3594,11372
 #: XXX ein anonymer Eintrag meint "Asphalt Q1", aber "viele Fußgänger q2" und hat die Frage nicht beantwortet. osm meint, dass der westliche Abschnitt access=private ist.
 Hanns-Braun-Str.: Qualität? Ist der hintere (westliche) Abschnitt der Straße permanent zugänglich?	? -232,12380 -262,12373 -418,12448 -453,12446 -515,12407 -671,12311 -1015,12106
 Prinz-Friedrich-Karl-Weg: Qualität?	? -1100,12210 -1172,12336 -824,12557 -646,12658
-Rückertstr. (Charlottenburg): Qualität? Kann die Bismarckstr. in Höhe der Rückertstr. überquert werden?	? 3571,11451 3540,11610
 Schwanenfeldstr.: Qualität?	? 4546,14803 4473,14646
 Sonnenhof: Qualität?	? 606,9463 612,9471 600,9480 586,9463 590,9456 599,9452 606,9463
 Stieffring: Qualität?	? 4150,15304 4236,15344 4163,15494 4080,15458

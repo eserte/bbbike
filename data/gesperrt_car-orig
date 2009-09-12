@@ -157,8 +157,8 @@ Simon-Dach-Str.	1 14045,11965 14006,11843
 #: by: Gregor (bluege):
 Buchhorster Str.	1 7620,20635 7793,20580 7866,20556 7992,20515
 Handjerystr.	1 5641,7189 5624,7113 5574,7018
-#: XXX: Die Stadtpläne sind hier nicht einheitlich, was die Einbahnstraßenregelung angeht.
 #: by: Michael Dinter: Einbahnstraße nicht für Radfahrer:
+#: confirmed_by: srt
 Leuthener Str.	1 7494,8364 7578,8358
 #: note: das hier habe ich gesehen:
 Leuthener Str.	1 7716,8356 7640,8359
@@ -169,8 +169,8 @@ Schrammstr.	1 4960,8440 4958,8344
 Stubbenkammerstr.	1 11643,15189 11798,15133
 Templiner Str.	1 10725,14189 10751,14229
 Heylstr.	1 6459,8281 6385,8274 6325,8259
-Fritz-Reuter-Str. (Schöneberg)	1 6621,8221 6814,8268
-Gutzkowstr.	1 6827,8204 6636,8157
+Fritz-Reuter-Str. (Schöneberg)	1 6621,8221 6779,8279
+Gutzkowstr.	1 6785,8194 6636,8157
 Gleditschstr.	1 7137,9216 7130,9305
 Hohenfriedbergstr.	3 7791,8882 7790,8913 7782,9115
 Hohenfriedbergstr.	3 7782,9115 7790,8913 7791,8882
@@ -349,7 +349,7 @@ Jägerallee/Hegelallee: Durchfahrt verboten	3 -13236,-797 -13231,-763 -13221,-718
 Osloer Str.: Straßenbahntrasse	3nocross 9455,16609 9331,16624 9210,16638 8939,16668
 Osloer Str.: Straßenbahntrasse	3nocross 8260,16740 8196,16746 8144,16750 7763,16779
 Seestr.: Straßenbahntrasse	3nocross 7606,16746 7456,16620 7403,16575 7388,16561 7295,16477 7231,16418
-Bismarckstr.: Mittelstreifen	3nocross 3690,11629 3844,11649 3898,11654
+Bismarckstr.: Mittelstreifen	3nocross 3690,11629 3844,11649 3898,11655
 Lenbachstr.: Einbahnstraße (genau genommen nur das östlichste Stück)	1 5888,6520 6070,6570
 Augustenburger Platz: nur für Taxen und Anlieger	2:Anlieger 6561,15041 6537,15156 6562,15177
 Zinnowitzer Str. - Friedrichstr.:	3 9015,14014 8879,13913 8935,13844
@@ -549,3 +549,5 @@ Else-Lasker-Schüler-Str.: Poller	3 7033,10396 7245,10499 7291,10506
 (Westhafenstr. - Beusselstr.): Durchfahrt verboten, Anlieger frei	2 6083,14564 6025,14539 6015,14516 5997,14444 5920,14422 5217,14255
 #: by: anonymous
 Steinbachstr.	1 19759,4160 19703,3979 19673,3888 19587,3801
+Südwestkorso: Mittelstreifen	3nocross 5083,7682 5066,7668 5045,7635
+Dominicusstr.: Überqueren verboten	3nocross 6687,8385 6807,8309 6935,8208
