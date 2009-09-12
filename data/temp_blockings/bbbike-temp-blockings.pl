@@ -15942,4 +15942,49 @@ EOF
 userdel	q4::inwork 35900,13643 36654,13977
 EOF
      },
+     { from  => 1252651373, # 2009-09-11 08:42
+       until => 1252886400, # 2009-09-14 02:00
+       text  => 'Ossietzkystr. (Pankow) in beiden Richtungen zwischen Breite Str. und Pestalozzistr. Veranstaltung, Straße vollständig gesperrt (bis Montag, 2 Uhr)',
+       type  => 'handicap',
+       source_id => 'IM_014139',
+       data  => <<EOF,
+userdel	q4::temp 10609,18384 10565,18507 10532,18601
+EOF
+     },
+     { from  => 1252651497, # 2009-09-11 08:44
+       until => 1252886400, # 2009-09-14 02:00
+       text  => 'Bahnhofstr. (Lichtenrade) in beiden Richtungen zwischen Goltzstr. und Steinstr. Veranstaltung, Straße vollständig gesperrt bis Mo 02:30 ',
+       type  => 'handicap',
+       source_id => 'IM_014144',
+       data  => <<EOF,
+userdel	q4::temp 10983,-2116 10747,-2129 10631,-2130 10509,-2131 10453,-2133 10310,-2136
+EOF
+     },
+     { from  => 1252651568, # 2009-09-11 08:46
+       until => 1252886400, # 2009-09-14 02:00
+       text  => 'Breite Str. (Pankow) in beiden Richtungen zwischen Berliner Str. und Mühlenstr. Veranstaltung, Straße vollständig gesperrt (bis Montag, 2 Uhr)',
+       type  => 'handicap',
+       source_id => 'IM_014138',
+       data  => <<EOF,
+userdel	q4::temp 10240,18193 10327,18177 10669,18336 10680,18380 10609,18384 10567,18366 10502,18338 10281,18241
+EOF
+     },
+     { from  => 1252651605, # 2009-09-11 08:46
+       until => 1252886400, # 2009-09-14 02:00
+       text  => 'Bölschestr. (Köpenick) in beiden Richtungen zwischen Fürstenwalder Damm und Müggelseedamm Veranstaltung, Straße vollständig gesperrt (15:29) ',
+       type  => 'handicap',
+       source_id => 'IM_014140',
+       data  => <<EOF,
+userdel	q4::temp 25519,4830 25524,5011 25539,5237 25544,5326 25546,5359 25548,5398 25553,5486 25567,5749 25571,5829 25579,5958
+EOF
+     },
+     { from  => 1252738143, # 2009-09-12 08:49
+       until => 1252879199, # 2009-09-13 23:59
+       text  => 'Rheinstr. (Schöneberg) stadtauswärts zwischen Schmargendorfer Str. und Schmiljanstr. Veranstaltung, Fahrtrichtung gesperrt (bis 13.09., 24 Uhr)',
+       type  => 'handicap',
+       source_id => 'IM_014142',
+       data  => <<EOF,
+userdel	q4::temp; 5817,7223 5654,6941
+EOF
+     },
     );

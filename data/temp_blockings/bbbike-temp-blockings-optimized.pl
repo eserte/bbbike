@@ -851,15 +851,7 @@ userdel	q4::inwork 8389,11378 8374,11479
        undef,
        undef,
        undef,
-       {
-         'until' => 1252706400,
-         'text' => 'K 6422 Eggersdorfer Str. OL Petershagen, zw. Gravenhainstr. u. Johannesstr. Straßenausbau Vollsperrung 15.06.2009-11.09.2009 ',
-         'from' => 1244930400,
-         'id' => 1704,
-         'data' => 'userdel	q4::inwork 36654,13977 35900,13643
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -950,15 +942,7 @@ userdel	2::inwork 7160,11225 6851,11346
        undef,
        undef,
        undef,
-       {
-         'until' => 1252706400,
-         'text' => 'L 015 Rheinsberg - Dorf Zechlin zw. Abzw. Zühlen und Linow Straßenneubau, Vollsperrung 27.07.2009-11.09.2009 ',
-         'from' => 1248559200,
-         'id' => 1744,
-         'data' => 'userdel	2::inwork -29636,76481 -28819,76060 -28278,75780 -27371,75722
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1253916000,
          'text' => 'L 015 Rheinsberg - Dorf Zechlin zw. Rheinsberg und Abzw. Zühlen Straßenneubau, Vollsperrung 14.09.2009-25.09.2009 ',
@@ -1466,15 +1450,7 @@ Neuer Garten (am Portierhaus) - Weinmeisterstr.: Weg ist nur zwischen 6 Uhr bis 
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1252620000,
-         'text' => 'L 099 Möthlow - Barnewitz zw. Buschow u. Barnewitz Fahrbahnsanierungsarbeiten Vollsperrung 27.08.2009-10.09.2009 ',
-         'from' => 1251237600,
-         'id' => 1845,
-         'data' => 'userdel	2::inwork -42002,19243 -42106,18923 -42484,18388 -42920,17788 -43042,17302 -43226,16794
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'until' => 1275343200,
@@ -1712,6 +1688,56 @@ d Breitenbachstr. Baustelle, Fahrtrichtung gesperrt (bis Anfang 05/2010)',
          'from' => 1252533600,
          'id' => 1878,
          'data' => 'userdel	q4::inwork 35900,13643 36654,13977
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_014139',
+         'until' => 1252886400,
+         'text' => 'Ossietzkystr. (Pankow) in beiden Richtungen zwischen Breite Str. und Pestalozzistr. Veranstaltung, Straße vollständig gesperrt (bis Montag, 2 Uhr)',
+         'from' => 1252651373,
+         'id' => 1879,
+         'data' => 'userdel	q4::temp 10609,18384 10565,18507 10532,18601
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_014144',
+         'until' => 1252886400,
+         'text' => 'Bahnhofstr. (Lichtenrade) in beiden Richtungen zwischen Goltzstr. und Steinstr. Veranstaltung, Straße vollständig gesperrt bis Mo 02:30 ',
+         'from' => 1252651497,
+         'id' => 1880,
+         'data' => 'userdel	q4::temp 10983,-2116 10747,-2129 10631,-2130 10509,-2131 10453,-2133 10310,-2136
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_014138',
+         'until' => 1252886400,
+         'text' => 'Breite Str. (Pankow) in beiden Richtungen zwischen Berliner Str. und Mühlenstr. Veranstaltung, Straße vollständig gesperrt (bis Montag, 2 Uhr)',
+         'from' => 1252651568,
+         'id' => 1881,
+         'data' => 'userdel	q4::temp 10240,18193 10327,18177 10669,18336 10680,18380 10609,18384 10567,18366 10502,18338 10281,18241
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_014140',
+         'until' => 1252886400,
+         'text' => 'Bölschestr. (Köpenick) in beiden Richtungen zwischen Fürstenwalder Damm und Müggelseedamm Veranstaltung, Straße vollständig gesperrt (15:29) ',
+         'from' => 1252651605,
+         'id' => 1882,
+         'data' => 'userdel	q4::temp 25519,4830 25524,5011 25539,5237 25544,5326 25546,5359 25548,5398 25553,5486 25567,5749 25571,5829 25579,5958
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_014142',
+         'until' => 1252879199,
+         'text' => 'Rheinstr. (Schöneberg) stadtauswärts zwischen Schmargendorfer Str. und Schmiljanstr. Veranstaltung, Fahrtrichtung gesperrt (bis 13.09., 24 Uhr)',
+         'from' => 1252738143,
+         'id' => 1883,
+         'data' => 'userdel	q4::temp; 5817,7223 5654,6941
 ',
          'type' => 'handicap'
        }
