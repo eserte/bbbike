@@ -1,7 +1,7 @@
 EMPTY_FILES=	Potsdam.coords.data gesperrt handicap_s qualitaet_s \
 		ampeln fragezeichen berlin \
 		comments_cyclepath comments_ferry comments_misc comments_mount \
-		comments_path comments_route comments_tram comments_scenic
+		comments_path comments_route comments_tram comments_scenic plaetze
 
 all:	Berlin.coords.data ${EMPTY_FILES}
 

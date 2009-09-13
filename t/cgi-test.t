@@ -27,9 +27,10 @@ use Getopt::Long;
 use BBBikeTest qw(get_std_opts like_html unlike_html $cgidir xmllint_string);
 
 sub bbbike_cgi_search ($$);
+sub bbbike_cgi_geocode ($$);
 
 #plan 'no_plan';
-plan tests => 25;
+plan tests => 33;
 
 if (!GetOptions(get_std_opts("cgidir"),
 	       )) {
@@ -44,6 +45,37 @@ if (!GetOptions(get_std_opts("cgidir"),
 my $testcgi = "$cgidir/bbbike-test.cgi";
 my $ua = LWP::UserAgent->new;
 $ua->agent("BBBike-Test/1.0");
+
+{
+    my $resp = bbbike_cgi_geocode +{start => 'Mehringdamm',
+				    ziel => 'Yorckstr.',
+				   }, 'Find normal street';
+    on_crossing_pref_page($resp);
+
+ TODO: {
+	todo_skip "Alias handling not yet implemented", 4;
+
+	my $resp2 = bbbike_cgi_geocode +{start => 'Aliaswidestr.',
+					 ziel => 'Aliasstr.',
+					}, 'Find aliases';
+	on_crossing_pref_page($resp2);
+
+	my $resp3 = bbbike_cgi_geocode +{start => 'B96',
+					 ziel => 'Aliasstr.',
+					}, 'Find aliases, 2nd check';
+	{
+	    local $TODO = "Approx is too good here";
+	    on_crossing_pref_page($resp2);
+	}
+    }
+}
+
+{
+    my $resp = bbbike_cgi_geocode +{start => 'Really unknown street (make it long, so approx cannot handle it, too)',
+				    ziel => 'Yorckstr.',
+				   }, 'Find normal street';
+    not_on_crossing_pref_page($resp);
+}
 
 {
     my %route_endpoints = (startc => '14798,10985',
@@ -130,6 +162,25 @@ sub bbbike_cgi_search ($$) {
     my $resp = $ua->get($url);
     ok($resp->is_success, $testname);
     $resp;
+}
+
+sub bbbike_cgi_geocode ($$) {
+    my($params, $testname) = @_;
+    $params->{pref_seen} = 0;
+    my $url = $testcgi . '?' . CGI->new($params)->query_string;
+    my $resp = $ua->get($url);
+    ok($resp->is_success, $testname);
+    $resp;
+}
+
+sub on_crossing_pref_page {
+    my($resp) = @_;
+    like_html($resp->decoded_content, 'Genaue Kreuzung angeben:', 'On crossing/pref page');
+}
+
+sub not_on_crossing_pref_page {
+    my($resp) = @_;
+    unlike_html($resp->decoded_content, 'Genaue Kreuzung angeben:', 'Not on crossing/pref page');
 }
 
 __END__
