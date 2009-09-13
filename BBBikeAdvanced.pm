@@ -3341,7 +3341,7 @@ sub search_anything {
 			    if (/^#:\s*encoding:\s*(.*)/) {
 				Strassen::switch_encoding(\*GREP, $1);
 			    }
-			    if (/^#:\s*alias:?\s*($s_rx.*)$/i) {
+			    if (/^#:\s*alias(_wide):?\s*($s_rx.*)$/i) {
 				my $alias = $1;
 				while(<GREP>) {
 				    next if /^#/;
