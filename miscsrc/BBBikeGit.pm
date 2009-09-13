@@ -32,7 +32,7 @@ Same terms as Perl itself.
 
 =cut
 
-use BBBikeUtil qw(save_pwd bbbike_root);
+use BBBikeUtil qw(save_pwd bbbike_root is_in_path);
 
 our $VERBOSE;
 
@@ -76,6 +76,8 @@ sub _backtick {
 
 sub git_info {
     my %git_info;
+    return if !is_in_path('git');
+
     my @unpushed_commits;
     my ($read, $branch, $snapshot_created, $commit_id, $describe)= ("") x 5;
     my ($changed, $extra_info, $commit_title, $new_patchnum, $status)= ("") x 5;
