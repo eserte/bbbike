@@ -5744,7 +5744,6 @@ sub define_item_attribs {
 	 'w-W1'     => [2, 2, 3, 5, 7, 11],
 	 'w-W2'     => [3, 4, 6, 8, 10,13],
 	 'comm-scenic-View' => [4, 7, 9, 12, 16, 20],
-	 'comm-tram' => [1, 1, 1, 1, 2, 3],
 	 'u-UBetrieb' => [1, 1, 2, 3, 4, 6],
 	 'b-SBetrieb' => [1, 1, 2, 3, 4, 6],
 	 'default'  => [1, 2, 3, 4, 6, 10],
@@ -5758,8 +5757,13 @@ sub define_item_attribs {
     foreach (qw/gBO gP gD/) {
 	$line_width{$_} = [@{ $line_width{"g"}}];
     }
-    foreach (grep { $_ ne "tram" } @comments_types) {
-	$line_width{"comm-".$_} = [@{ $line_width{"comm"}}];
+    my %narrow_comments_types = map {($_,1)} qw(tram misc mount kfzverkehr scenic);
+    foreach (@comments_types) {
+	if ($narrow_comments_types{$_}) {
+	    $line_width{'comm-'.$_} = [1, 1, 1, 1, 2, 3];
+	} else {
+	    $line_width{"comm-".$_} = [@{ $line_width{"comm"}}];
+	}
     }
 
     %line_dash =
