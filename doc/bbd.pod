@@ -470,6 +470,30 @@ data.
 A free text note, which refers to more information. This should be
 typically a URL.
 
+=item C<last_checked: I<date>>
+
+=item C<last_checked: I<date> (by: I<name>)>
+
+Date (and optionally surveyor) of the last check for a feature. This
+is useful in conjunction with C<XXX> or C<add_fragezeichen>
+directives, to generate automatic list of streets to be surveyed
+again.
+
+=item C<next_check: I<date>>
+
+Recommended date for a next survey for a feature. This could be for
+instance the intended finish date of road construction.
+
+For generating survey lists, it could also be useful to generate
+synthetic C<next_check> directives out of C<last_checked> value, e.g.
+one month after the last check. The default interval could be set by
+the C<check_frequency> directive.
+
+=item C<check_frequency>: I<days>C<d>
+
+Set a check frequency for the synthetic generationg of C<next_check>
+directives. If not set, then the default could be one month or so.
+
 =item C<as_of: I<date>>
 
 Last verified at the given date. The date should be in a ISO-8601-like
