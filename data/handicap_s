@@ -7,7 +7,7 @@
 Jägerstr.: Bauarbeiten, Fahrbahn Richtung Westen gesperrt	q4::inwork; 9394,11996 9201,11968
 Simplonstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 14530,11137 14465,11195
 Reichstagufer (Mitte): Baustelle, Fahrbahn gesperrt, Fußgänger können passieren	q4::inwork 9209,12795 9280,12883
-Hauptstr. (Friedrichshain-Kreuzberg): Baustelle, Radfahrer können nur langsam passieren bzw. müssen schieben	q4::inwork 14906,10820 14794,10844 14717,10855
+Hauptstr. (Friedrichshain-Kreuzberg): Baustelle, Radfahrer können langsam passieren	q3::inwork 14906,10820 14794,10844
 Varian-Fry-Str.: Baustelle, Fahrbahn gesperrt	q4::inwork 8389,11378 8374,11479
 Wuhlewanderweg: steiler Anstieg, Fußgänger	q4; 21998,12204 21970,12153
 Wuhlewanderweg: steiles Gefälle, Fußgänger	q4; 21970,12153 21998,12204
@@ -146,7 +146,6 @@ Volkspark Wilmersdorf: kombinierter Rad- und Fußweg	q1 5481,8506 5417,8519 5347,
 (zur Thomas-Dehler-Str.): Fußgänger, Bordsteine	q4 6654,11460 6716,11439
 Ernststr.: Fußgänger	q2 2497,19503 2700,19527
 (S-Bahnunterführung Wartenberg): Fußgänger, Rampen	q2 16923,18650 16990,18694 17114,18775
-Am Kupfergraben: am Wochenende Flohmarkt	q3 9754,12775 9661,12876 9618,12907 9529,12925
 Bernburger Treppe: Rampe	q3 8536,11063 8454,11086
 Virchowstr. (Volkspark Friedrichshain): Fußgänger	q1 12897,13402 12771,13603 12707,13706
 (Buckower Ring - Cecilienstr.): Fußgänger	q1 21874,13543 21931,13724
@@ -197,7 +196,7 @@ St.-Wolfgang-Str.: Fußgänger, Cafés	q3 10219,12701 10285,12744 10360,12793
 Spreegasse: Fußgänger, Cafés	q3 10249,12658 10309,12700 10387,12760
 Heiligengeistgasse: Fußgänger, Cafés, sehr eng	q4 10285,12744 10309,12700 10352,12627
 zur Gormannstr.: Bordstein	q4 10350,13376 10372,13436
-Am Zeughaus: Fußgänger, am Wochenende Flohmarkt	q3 9912,12623 9950,12522 9984,12426
+Am Zeughaus: Fußgänger	q2 9912,12623 9950,12522 9984,12426
 Steinmetzstr.: Fußgängerzone, Radfahren erlaubt	q1 7625,9771 7648,9944 7698,10147
 Lützowplatz: Einbahnstraße, Ausweichen auf Gehweg	q3; 7002,11034 6873,11011
 Zauritzweg: Fußgänger	q1 4199,11819 4195,11690

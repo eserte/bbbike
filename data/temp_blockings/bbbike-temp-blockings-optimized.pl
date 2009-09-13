@@ -1745,6 +1745,27 @@ userdel	q4::inwork; 10680,18380 10755,18231 10829,18083 10846,17992
 userdel	q4::inwork; 10829,18083 10907,18109 10938,18147 10989,18172 11137,18358 11025,18531
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => undef,
+         'permanent' => 1,
+         'text' => 'Erich-Steinfurth-Str.: Antikmarkt am Ostbahnhof, Sonntag 9-17 Uhr, nur Schieben möglich',
+         'from' => undef,
+         'id' => 1886,
+         'data' => '	q4::temp 12596,11696 12453,11790 12366,11808
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => undef,
+         'permanent' => 1,
+         'text' => 'Am Kupfergraben und am Zeughaus: Berliner Kunst- und Nostalgiemarkt, Samstag und Sonntag ca. 11-17 Uhr, nur Schieben möglich',
+         'from' => undef,
+         'id' => 1887,
+         'data' => '	q4::temp 9754,12775 9661,12876 9618,12907 9529,12925
+	q4::temp 9912,12623 9950,12522 9984,12426
+',
+         'type' => 'gesperrt'
        }
      
 );
