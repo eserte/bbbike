@@ -112,10 +112,10 @@ if ($single_file) {
 } else {
     # NODE-like
     do_file("$datadir/ampeln", \&handle_trafficsignals_like);
+    do_file("$datadir/gesperrt", \&handle_blocked_node_like);
 
     # WAY-like
-    do_file("$datadir/gesperrt", \&handle_blocked_like);
-
+    do_file("$datadir/gesperrt", \&handle_blocked_way_like);
     do_file("$datadir/handicap_s", \&handle_handicap_like);
     do_file("$datadir/handicap_l", \&handle_handicap_like);
     do_file("$datadir/qualitaet_s", \&handle_handicap_like);
@@ -157,7 +157,28 @@ sub do_file {
     }
 }
 
-sub handle_blocked_like {
+sub handle_blocked_node_like {
+    my($r, $dir) = @_;
+    my($cat) = $r->[Strassen::CAT] =~ m{^([^:]+)};
+    my $attribs;
+    if ($cat eq 'BNP') {
+	if ($r->[Strassen::NAME] =~ m{drängelgitter}i) {
+	    $attribs = { barrier => 'cycle_barrier' };
+	} else {
+	    $attribs = { barrier => 'bollard' }; #  (which is a quite bold assumption)
+	}
+    } elsif ($cat eq '0') {
+	if ($r->[Strassen::NAME] =~ m{(\d+)\s+Stufe}) { # XXX see steps_stats.pl for more possible regexps, should go into a module!
+	    $attribs->{step_count} = $1;
+	}
+	$attribs->{highway} = 'steps'; # not good: steps are in osm usually lines, not nodes!
+    }
+    if ($attribs) {
+	get_node_ids($r, $attribs); # as a side-effect, create the nodes
+    }
+}
+
+sub handle_blocked_way_like {
     my($r, $dir) = @_;
     my($cat) = $r->[Strassen::CAT] =~ m{^([^:]+)};
     my @node_ids = map {
@@ -171,12 +192,6 @@ sub handle_blocked_like {
 	} elsif ($cat eq '2') {
 	    $no_access{$node_ids[$node_id_i-1].' '.$node_ids[$node_id_i]} = 1;
 	    $no_access{$node_ids[$node_id_i].' '.$node_ids[$node_id_i-1]} = 1;
-	} elsif ($cat =~ m{^BNP}) {
-	    if ($r->[Strassen::NAME] =~ m{drängelgitter}i) {
-		# XXX add node barrier=cycle_barrier
-	    } else {
-		# XXX add node barrier=bollard (which is a quite bold assumption)
-	    }
 	}
     }
 }
@@ -190,7 +205,9 @@ sub handle_handicap_like {
 	($cat_hin, $cat_rueck) = ($r->[Strassen::CAT], $r->[Strassen::CAT]);
     }
     for ($cat_hin, $cat_rueck) {
-	($_) = $_ =~ m{^([^:]+)};
+	if (defined $_) {
+	    ($_) = $_ =~ m{^([^:]+)};
+	}
     }
     my @node_ids = map {
 	my($px,$py) = $Karte::Polar::obj->trim_accuracy($Karte::Polar::obj->standard2map(split /,/, $_));
@@ -201,7 +218,7 @@ sub handle_handicap_like {
 	if ($cat_hin =~ m{^[qQ][34]$}) {
 	    $speed0{$node_ids[$node_id_i-1].' '.$node_ids[$node_id_i]} = 1; # XXX correct direction
 	}
-	if ($cat_rueck =~ m{^[qQ][34]$}) {
+	if (defined $cat_rueck && $cat_rueck =~ m{^[qQ][34]$}) {
 	    $speed0{$node_ids[$node_id_i].' '.$node_ids[$node_id_i-1]} = 1;
 	}
     }
