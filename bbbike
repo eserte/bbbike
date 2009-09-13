@@ -258,10 +258,10 @@ eval 'use BBBikeXS 0.09';
 ## DEBUG_END
 
 # $VERSION is the version of the BBBike distribution
-# $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.403 $ =~ /(\d+)\.(\d+)/);
-# since version 3.40 => 3.040
+# Since the migration to git $PROG_REVISION is meaningless. Previously
+# it was constructed from the RCS version of this file.
+$PROG_REVISION = '3.500';
 
 # OS related
 $progname = basename($0);
@@ -1088,7 +1088,6 @@ if (defined $init_scale_massstab) {
 }
 
 $top->title("$progname $VERSION" .
-	    ($VERSION =~ /devel/i ? " [$PROG_REVISION]" : "") .
 	    ($dataset_title ? " [$dataset_title]" : "")
 	   );
 
@@ -5210,10 +5209,16 @@ speicherplatzsparender.",
 	  longhelp => M"Die Variable \$verbose kann manuell auf 2 oder höher gesetzt werden, um die Anwendung wortreicher zu machen"],
 	 ['version','!',undef,
 	  nogui => 1, var => sub {
-	      print
-		  "$progname $VERSION\n(file revision $PROG_REVISION)\n",
-		      "perl $]\nTk $Tk::VERSION\n";
-	      exit 0;
+	      my %git_info;
+	      if (-r "$FindBin::RealBin/miscsrc/BBBikeGit.pm") {
+		  require "$FindBin::RealBin/miscsrc/BBBikeGit.pm";
+		  %git_info = BBBikeGit::git_info();
+	      }
+	      print("$progname $VERSION\n",
+		    ($git_info{patchnum} ? "(patchnum $git_info{patchnum})\n" : ''),
+		    "perl $]\nTk $Tk::VERSION\n",
+		   );
+	      CORE::exit(0);
 	  }],
 	 ['plugins','=s',undef,
 	  label => M"Plugins beim Starten laden", var => \$initial_plugins,
@@ -19079,6 +19084,12 @@ sub show_logo { # und About
 				-background => 'white');
     return if !defined $logotop;
 
+    my %git_info;
+    if ($as_about && -r "$FindBin::RealBin/miscsrc/BBBikeGit.pm") {
+	require "$FindBin::RealBin/miscsrc/BBBikeGit.pm";
+	%git_info = BBBikeGit::git_info();
+    }
+
     $logotop->optionAdd("*" . substr($logotop->PathName, 1)
 			. "*background" => 'white', 'startupFile');
     $logotop->optionAdd("*" . substr($logotop->PathName, 1)
@@ -19091,22 +19102,26 @@ sub show_logo { # und About
 			     -fill => 'both', -expand => 1,
 			     -padx => 4, -pady => 4,
 			    );
+    my %common_args =
+	(
+	 -padx => 5,
+	 -highlightthickness => 1,
+	 -highlightbackground => 'white',
+	 -relief => 'flat',
+	 -borderwidth => 0,
+	);
     my $Button_or_Label = ($as_about ? "Button" : "Label");
     my $www_b =
 	$f->$Button_or_Label
 	    (-text =>
 	     "$progname $VERSION\n" .
-	     "(File Rev $PROG_REVISION)\n\n" .
+	     ($git_info{patchnum} ? "(patchnum $git_info{patchnum})\n" : '') .
 	     M("Ein Informationssystem für Radfahrer in Berlin") .
 	     "\n\n© 1995-2009 Slaven Rezic",
-	     -wraplength => 230,
+	     %common_args,
+	     -wraplength => 320,
 	     -font => $font{'bold'},
-	     -padx => 5,
 	     -pady => 0,
-	     -highlightthickness => 1,
-	     -highlightbackground => 'white',
-	     -relief => 'flat',
-	     -borderwidth => 0,
 	     ($as_about ?
 	      (-command => sub {
 		   require WWWBrowser;
@@ -19119,14 +19134,29 @@ sub show_logo { # und About
     my $copying_b =
 	$f->$Button_or_Label
 	    (-text => M"Siehe auch die Datei COPYING",
-	     -padx => 5,
-	     -highlightthickness => 1,
-	     -highlightbackground => 'white',
-	     -relief => "flat",
-	     -borderwidth => 0,
+	     %common_args,
 	     ($as_about ?
 	      (-command => sub { copying_viewer($logotop) }) : ()),
 	    )->pack(-fill => "x");
+    if (%git_info) {
+	$f->$Button_or_Label
+	    (-text => M"Detaillierte GIT-Information",
+	     %common_args,
+	     ($as_about ?
+	      (-command => sub {
+		   require Data::Dumper; 
+		   my $t = $logotop->Toplevel(-title => M"Detaillierte GIT-Information");
+		   my $txt = $t->Scrolled("ROText", -scrollbars => "osoe")->pack(-fill => "both", -expand => 1);
+		   local $Data::Dumper::Sortkeys = 1;
+		   my $dump = Data::Dumper::Dumper(\%git_info);
+		   $dump =~ s{^(.*?=)}{" " x length $1}e;
+		   $txt->insert('end', $dump);
+		   $t->Button(Name => 'close',
+			      -command => sub { $t->destroy },
+			     )->pack(-fill => "x", -expand => 1);
+	       }) : ()),
+	     )->pack(-fill => 'x');
+    }
     if ($as_about) {
 	my $os_info = "OS: $^O";
 	if ($os eq 'win') {
@@ -19156,12 +19186,8 @@ sub show_logo { # und About
     my $mail_b =
 	$f->$Button_or_Label
 	    (-text => $BBBike::EMAIL,
-	     -padx => 5,
 	     -pady => 0,
-	     -relief => 'flat',
-	     -borderwidth => 0,
-	     -highlightthickness => 1,
-	     -highlightbackground => 'white',
+	     %common_args,
 	     ($as_about ?
 	      (-command => sub {
 		   if ($^O eq 'MSWin32') {
