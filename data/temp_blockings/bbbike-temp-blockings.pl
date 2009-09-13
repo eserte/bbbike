@@ -13543,7 +13543,7 @@ EOF
        text  => 'Jessnerstr. wegen Bauarbeiten in Richtung Süden nicht befahrbar',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2009-09-01
+#: last_checked: 2009-09-13
 #: XXX nach Beendigung der Bauarbeiten bleibt wahrscheinlich die gesamte Straße asphaltiert, mit einigen Aufpflasterungen
 userdel	q4::inwork; 15080,11905 14977,11754 14941,11689 14849,11539
 EOF
@@ -15719,7 +15719,7 @@ userdel	q4::inwork 14266,12446 14298,12553 14319,12629
 EOF
      },
      { from  => 1251530442, # 2009-08-29 09:20
-       until => 1253051999, # 2009-09-15 23:59
+       until => 1252790612, # 2009-09-15 23:59 1253051999
        text  => 'Päwesiner Weg (Spandau) Richtung Brunsbütteler Damm zwischen Lazarusstr. und Brunsbütteler Damm Baustelle, Fahrtrichtung gesperrt (bis Mitte 09.2009)',
        type  => 'handicap',
        source_id => 'IM_013939',
@@ -15993,6 +15993,18 @@ EOF
        permanent => 1,
        data  => <<EOF,
 	q4::temp 5902,7334 5810,7337 5817,7223
+EOF
+     },
+     { from  => 1254261600, # 2009-09-30 00:00
+       until => undef, # XXX
+       text  => 'Bauarbeiten in der Berliner Straße in Pankow ab Anfang Oktober 2009, Einbahnstraße Richtung Breite Str.; die Hadlichstr. ab Damerowstraße Einbahnstraße in Richtung Berliner Straße',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-pankow/presse/archiv/20090903.1100.137516.html',
+       data  => <<EOF,
+#: XXX nach den Bauarbeiten fällt evtl. das Kopfsteinpflaster weg
+#: next_check: 2010-03-01
+userdel	q4::inwork; 10680,18380 10755,18231 10829,18083 10846,17992
+userdel	q4::inwork; 10829,18083 10907,18109 10938,18147 10989,18172 11137,18358 11025,18531
 EOF
      },
     );
