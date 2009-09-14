@@ -19151,7 +19151,7 @@ sub show_logo { # und About
 		   require Data::Dumper; 
 		   my $t = $logotop->Toplevel(-title => M"Detaillierte GIT-Information");
 		   my $txt = $t->Scrolled("ROText", -scrollbars => "osoe")->pack(-fill => "both", -expand => 1);
-		   local $Data::Dumper::Sortkeys = 1;
+		   local $Data::Dumper::Sortkeys = $Data::Dumper::Sortkeys = 1; # doubled to cease -w
 		   my $dump = Data::Dumper::Dumper(\%git_info);
 		   $dump =~ s{^(.*?=)}{" " x length $1}e;
 		   $txt->insert('end', $dump);
