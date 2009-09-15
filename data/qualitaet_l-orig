@@ -207,7 +207,9 @@ Schopenhauerstr.: Kopfsteinpflaster, OK	Q1 -14034,-571 -13815,-749 -13625,-902
 Im Grund: Kopfsteinpflaster	Q2 27163,12747 27684,12765
 Birkensteiner Str.: Kopfsteinpflaster	Q2 27684,12765 28590,12859
 Mühlenstr.: nicht befestigt	Q2 38369,15231 38300,15320
-Wesendahler Weg: nicht befestigt	Q2 38300,15320 38325,15906 38397,17019 38386,17143 38480,17478
+Wesendahler Weg: nicht befestigt	Q2 38300,15320 38325,15906 38397,17019
+#: corrected_by: Gonsolo (war früher "nicht befestigt")
+Wesendahler Weg: Asphalt	Q0 38397,17019 38386,17143 38480,17478
 Lankestr.: Kopfsteinpflaster	Q2 -9942,21 -9965,-105
 Wannseestr.: schlechtes Kopfsteinpflaster	Q3 -9766,-85 -9727,-54 -9698,-19 -9656,41 -9568,56 -9437,35 -9313,54
 Waldmüllerstr.: Kopfsteinpflaster	Q2 -10097,200 -10095,137 -9942,21 -9766,-85
@@ -3338,3 +3340,5 @@ Föhrenwald (Kleinmachnow): mäßiger Beton	Q2+ -531,807 -606,1134 -605,1240 -616,1
 Sonnenhag (Kleinmachnow): mäßiger Beton	Q2+ -833,1410 -811,1319 -789,1220 -758,1098
 #: by anonymous:
 Wehrmathen: guter Asphalt	Q0 18555,-588 18687,-632 18689,-686 18716,-727 18761,-748 18807,-745 18840,-729 18868,-686 18904,-573
+#: by: Gonsolo:
+Radweg Eggersdorf - Bruchmühle: Asphalt	Q0 38397,17019 36897,16874 36469,16966 35924,17284 35728,17428

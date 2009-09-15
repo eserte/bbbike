@@ -16026,4 +16026,36 @@ EOF
 	q4::temp 9912,12623 9950,12522 9984,12426
 EOF
      },
+     { from  => 1253224800, # 2009-09-18 00:00
+       until => 1253397600, # 2009-09-20 00:00
+       text  => 'B 096 Schönfließer Str.A OL Bergfelde, zw. Lindenallee und Ahornstr. Kranarbeiten Vollsperrung 19.09.2009-19.09.2009 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 4165,29251 4807,28338
+EOF
+     },
+     { from  => 1252792800, # 2009-09-13 00:00
+       until => 1253052000, # 2009-09-16 00:00
+       text  => 'B 101 Dresdner Straße Brücke über die Schwarze Elster in Elsterwerda Brückenneubau Vollsperrung 14.09.2009-15.09.2009 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 20952,-105585 21037,-105607
+EOF
+     },
+     { from  => 1253397600, # 2009-09-20 00:00
+       until => 1254175200, # 2009-09-29 00:00
+       text  => 'B 102 Werbig - Jüterbog zw. Hohengörsdorf und B101, Neumarkt Straßenbau Vollsperrung 21.09.2009-28.09.2009 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -6474,-50137 -7054,-49746 -7948,-48863 -8574,-48178 -8716,-47998
+EOF
+     },
+     { from  => 1253052000, # 2009-09-16 00:00
+       until => 1257030000, # 2009-11-01 00:00
+       text  => 'L 435 Grunow - Müllrose OD Müllrose, Mixdorfer Straße Kanal- u. Straßenbau Vollsperrung 17.09.2009-31.10.2009 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 79549,-17498 79628,-17759
+EOF
+     },
     );
