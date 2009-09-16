@@ -219,6 +219,11 @@ sub geocoder_dialog {
 				 },
 				 'label' => 'Cloudmade (needs API key)',
 			       },
+		# Other geocoding services:
+		#
+		# - Geo::Coder::Mapquest: requires an API key and is
+		# currently (2009-09) not production-ready (no results
+		# for non-US addresses)
 	       );
     for my $_api (sort keys %apis) {
 	my $label = $apis{$_api}->{'label'} || $_api;
