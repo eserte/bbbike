@@ -4092,6 +4092,7 @@ sub display_route {
 	    my $filename = filename_from_route($startname, $zielname) . ".xml";
 	    http_header
 		(-type => "text/xml",
+		 -charset => '', # to suppress default of iso-8859-1
 		 @no_cache,
 		 -Content_Disposition => "attachment; filename=$filename",
 		);
