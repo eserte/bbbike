@@ -1018,16 +1018,7 @@ userdel	2::inwork 7160,11225 6851,11346
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_013726',
-         'until' => 1253051999,
-         'text' => 'Buntzelstr. (Treptow) Richtung Waltersdorfer Str. zwischen Dahmestr. und Waltersdorfer Str. Baustelle, Fahrtrichtung gesperrt. (bis Mitte 09.2009)',
-         'from' => 1248299511,
-         'id' => 1764,
-         'data' => 'userdel	q4::inwork; 21968,-15 22108,82 22145,208
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1467,21 +1458,7 @@ Neuer Garten (am Portierhaus) - Weinmeisterstr.: Weg ist nur zwischen 6 Uhr bis 
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_013990',
-         'until' => 1253051999,
-         'text' => 'Schönhauser Allee (Prenzlauer Berg) in beiden Richtungen im Kreuzungsbereich Schivelbeiner Str. - Wichertstr. Baustelle, Brückendurchfahrt gesperrt, aus allen Richtungen kein Linksabbiegen möglich (bis Mitte 09.2009)',
-         'from' => 1252010710,
-         'id' => 1854,
-         'data' => 'Schönhauser Allee -> Schivelbeiner Str.:	3::inwork 10975,16010 10982,16121 10753,16144
-Schönhauser Allee -> Wichertstr.:	3::inwork 10990,16197 10982,16121 11214,16043
-Wichertstr. -> Schönhauser Allee:	3::inwork 11214,16043 10982,16121 10975,16010
-Wichertstr. -> Schivelbeiner Str.:	3::inwork 11214,16043 10982,16121 10753,16144
-Schivelbeiner Str. -> Schönhauser Allee:	3::inwork 10753,16144 10982,16121 10990,16197
-Schivelbeiner Str. -> Wichertstr.:	3::inwork 10753,16144 10982,16121 11214,16043
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'source_id' => 'IM_013929',
@@ -1556,15 +1533,7 @@ d Breitenbachstr. Baustelle, Fahrtrichtung gesperrt (bis Anfang 05/2010)',
        },
        undef,
        undef,
-       {
-         'until' => 1253052000,
-         'text' => 'L 015 Berliner Straße OL Lychen, zw. Brücke Nesselpfuhlfließ u. Schlüßstr. Kanal- u. Straßenausbau Vollsperrung 15.09.2009-15.09.2009 ',
-         'from' => 1252879200,
-         'id' => 1866,
-         'data' => 'userdel	2::inwork 1544,89701 1907,89597
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'until' => 1253570400,
@@ -1691,15 +1660,7 @@ userdel	q4::inwork; 10829,18083 10907,18109 10938,18147 10989,18172 11137,18358 
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1253052000,
-         'text' => 'B 101 Dresdner Straße Brücke über die Schwarze Elster in Elsterwerda Brückenneubau Vollsperrung 14.09.2009-15.09.2009 ',
-         'from' => 1252792800,
-         'id' => 1889,
-         'data' => 'userdel	2::inwork 20952,-105585 21037,-105607
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1254175200,
          'text' => 'B 102 Werbig - Jüterbog zw. Hohengörsdorf und B101, Neumarkt Straßenbau Vollsperrung 21.09.2009-28.09.2009 ',
