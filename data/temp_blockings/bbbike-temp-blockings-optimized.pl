@@ -600,11 +600,12 @@ userdel	1::inwork 12229,10014 12398,9938 12556,9862
        undef,
        undef,
        {
-         'until' => undef,
-         'text' => 'Jessnerstr. wegen Bauarbeiten in Richtung S¸den nicht befahrbar',
+         'until' => 1257029999,
+         'text' => 'Jessnerstr. wegen Bauarbeiten in Richtung S¸den nicht befahrbar, bis Oktober 2009',
          'from' => undef,
          'id' => 1598,
-         'data' => '#: last_checked: 2009-09-13
+         'data' => '#: last_checked: 2009-09-17
+#: next_check: 2009-10-01
 #: XXX nach Beendigung der Bauarbeiten bleibt wahrscheinlich die gesamte Straﬂe asphaltiert, mit einigen Aufpflasterungen
 userdel	q4::inwork; 15080,11905 14977,11754 14941,11689 14849,11539
 ',
