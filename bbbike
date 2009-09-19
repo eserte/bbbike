@@ -10827,7 +10827,7 @@ sub plot_point {
 	$c->delete($_) for (@del_tags);
     }
 
-    my($ampel_photo, $ampelf_photo, $andreaskr_photo);
+    my($ampel_photo, $ampelf_photo, $andreaskr_photo, $zugbruecke_photo);
     if ($abk eq 'lsa') {
 	undef %ampeln;
 	$ampel_photo      = get_symbol_scale('lsa-X');
