@@ -530,6 +530,9 @@ Mayschweg: Fuﬂg‰nger (Radfahrer frei), eng	q1 23064,3614 23012,3598 23007,3597
 Spreetunnel: Fuﬂg‰nger	q2 25571,4553 25658,4619
 (entlang der Autobahn, zum hohen Bogen): gemeinsamer Fuﬂ- und Radweg	q1+ 3388,8958 3489,8839 3510,8814 3713,8578 3696,8572 3644,8456 3644,8425
 Gˆrresstr.: enge Straﬂe	q1 5066,7668 5158,7560 5272,7458 5318,7424
+Stendaler Platz: Fuﬂg‰nger, Spielplatz	q2 6394,14085 6489,14071
+Washingtonplatz: querende Fuﬂg‰nger, Taxis	q2; 7937,13126 8106,13130
+Washingtonplatz: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 8106,13130 7937,13126
 ######################### User Contributions #################################
 #: by: Michael Kiekbusch
 #: corrected_by: srt/policy (q4 -> q3-)
@@ -612,7 +615,7 @@ Bahnhofstr. (Friedenau): enge Straﬂe	q1 6082,7066 6151,7078 6157,7117
 #: by: Andrea (techlin):
 Hugo-Heimann-Str.: enge, leicht kurvige Straﬂe	q1 14120,1991 14165,2106 14229,2177 14453,2087 14587,2032
 #: by: Marek B‰nsch:
-#: XXX check, maybe like the other paths "Radfahren auf befestigten Wegen erlaubt, Fuﬂg‰nger haben Vorrang"
+#: confirmed_by: srt
 (Am Invalidenfriedhof - Scharnhorststr.): Radfahren verboten, Schieben	q4 8119,13912 8216,13987
 #: by: Christian Marwitz:
 Am Gemeindepark: enge Straﬂe	q1 7172,2343 7215,2442 7208,2534 7199,2559 7165,2571 7043,2582 6751,2708 6679,2701

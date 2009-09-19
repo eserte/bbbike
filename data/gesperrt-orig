@@ -265,13 +265,14 @@ Travestr.	1 14835,11840 14897,11801 14977,11754
 Müggelstr.	1 14897,11801 14965,11921
 Schmollerplatz/str.	1 13244,9410 13184,9340 13209,9325
 Isarstr.	1 12349,8464 12368,8356
+#: XXX prüfen: sind überall hier Einbahnstraßen?
 Zionskirchplatz	1 10306,14247 10277,14350 10315,14386 10365,14372 10389,14274
 Ohmstr.	1 11324,11689 11378,11856
 Anton-Saefkow-Str.	1 13202,14388 13084,14472 13013,14523 12885,14616 12782,14676 12723,14714 12536,14827
 Spilstr.	1 3865,6758 3826,6656 3836,6550
 Wöhlertstr.	1 8442,14456 8669,14550
 Pflugstr.	1 8669,14550 8776,14364
-Schwartzkopffstr.	1 8776,14364 8607,14253
+Schwartzkopffstr.	1s:q4 8776,14364 8607,14253
 Strausberger Str.	1 12416,13045 12368,13031
 Große Präsidentenstr.	1 10097,12997 10220,13098
 Naumannstr.	1 7709,8777 7707,8915
@@ -637,6 +638,10 @@ Hans-Sachs-Str.	1 3141,4023 3214,4066
 Wehneltsteig	1 1256,14217 1305,14384
 #: by: Olaf (ziorjen), Sybille Koppermann, osm
 Bernhard-Bästlein-Str.	1 15595,14041 15593,13768
+(Fredersdorfer Str. - Hildegard-Jadamowitz-Str.)	1 12908,12280 12883,12118 12893,12077 12923,12043
+#: note_prog: eigentlich 1s:q3, aber Konflikt mit handicap_s-Eintrag für Washingtonplatz
+Washingtonplatz	1s 8106,13130 7937,13126
+(Vorfahrt HdKdW)	1 7627,12380 7654,12464 7687,12477 7778,12470 7813,12427 7821,12367
 ######################################################################
 #
 # Potsdam
@@ -1383,7 +1388,7 @@ Drängelgitter	BNP:3::trailer=6 3644,8456
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
-#: last_checked: 2009-08-07
+#: last_checked: 2009-09-18
 #: next_check: 2010-04-01
 Kreuzstr.: Bauarbeiten, voll gesperrt	2:inwork 10231,11940 10209,11918
 #: next_check: 2010-09-31
@@ -1404,14 +1409,9 @@ Alice-und-Hella-Hirsch-Ring: noch in Bau, gesperrt	2:inwork 15788,10252 15823,10
 Lina-Morgenstern-Str.: noch in Bau, gesperrt	2:inwork 15716,10303 15753,10353
 #: next_check ^^^
 #: last_checked ^^^
-#: last_checked: 2009-07-09 vvv
+#: last_checked: 2009-09-19
 Zur Boyenstr.: Bauarbeiten	2:inwork 7925,14442 7828,14405
-Brücke über Panke: zur Zeit Bauarbeiten, keine Durchfahrt möglich	2:inwork 7753,14528 7807,14441
-#: last_checked ^^^
 Kynaststraße: Abriss und Neubau bis ca. 2010-03-01	2:inwork 14988,11130 14897,10935 14881,10864 14867,10802 14828,10628 14802,10505 14795,10473 14766,10372 14724,10297
-#: note: genaue Wegführung von Diethard Mager:
-Am Pankepark: z.Zt. noch Baustraße, Fertigstellung um 2011-01-01, dann als Fußgänger/Radweg konzipiert	2:inwork 8184,14052 8290,14119
-Am Pankepark: z.Zt. noch Baustraße, Fertigstellung um 2011-01-01	2:inwork 8290,14119 8246,14201 8138,14148
 #: last_checked: 2009-09-12
 Brücke im Tiergarten: gesperrt	2:inwork 6406,11784 6467,11780
 #
@@ -1535,7 +1535,7 @@ Bregenzer Str.	1 4278,10262 4227,10014
 Bayerische Str.	1 4296,10004 4349,10247
 Kniprodestr.: unpassierbarer Mittelstreifen (Straßenbahn, Bordsteine)	3nocross 12912,14084 12978,14151 12996,14172 13046,14220
 Kniprodestr.: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3nocross 13070,14245 13115,14293 13202,14388 13261,14456 13318,14517 13374,14581
-(Treppe zur Putlitzbrücke): tragen	0:40 6253,14184
+(Treppe zur Putlitzbrücke): tragen, ca. 35 Stufen	0:40 6253,14184
 #: by: rjoop
 (Treppe zur Putlitzbrücke): tragen, 35 Stufen	0:40 6209,14245
 An der Putlitzbrücke: Mittelstreifen schlecht zu überqueren	3nocross 6226,13951 6230,14184 6234,14247 6237,14309
@@ -1621,7 +1621,7 @@ tragen (10 x 3 Stufen)	0:60 2170,8841
 tragen	0:40 2316,8593
 tragen	0:40 2316,8469
 Mittelstr.	1 9462,12481 9343,12464
-#: last_checked: 2009-04-30
+#: last_checked: 2009-09-19
 #: next_check: 2010-01-01
 #: note: dabei auch prüfen, ob die Museumstr. -> Bodestr. umbenannt wurde (siehe strum2005.pdf)
 Museumstr.	2:inwork 9943,12642 9884,12712

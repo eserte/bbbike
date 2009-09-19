@@ -4656,7 +4656,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_002839',
        data  => <<EOF,
-userdel	2::temp 8119,12414 8070,12409 8017,12359 7875,12363 7514,12387 7437,12368 7215,12295 7039,12314
+userdel	2::temp 8119,12414 8070,12409 8017,12359 7875,12363 7821,12367 7627,12380 7514,12387 7437,12368 7215,12295 7039,12314
 EOF
      },
      { from  => 1149976800, # 2006-06-11 00:00
@@ -12053,7 +12053,7 @@ EOF
 userdel	2::temp 8417,12846 8503,12895
 userdel	2::temp 7936,12906 8017,12826
 userdel	2::temp 8737,12757 8596,12748 8551,12746
-userdel	2::temp 7514,12387 7875,12363 8017,12359 8070,12409 8119,12414
+userdel	2::temp 7514,12387 7627,12380 7821,12367 7875,12363 8017,12359 8070,12409 8119,12414
 userdel	2::temp 8514,12877 8545,12760
 userdel	2::temp 8775,12457 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 6828,12031
 userdel	2::temp 8595,12066 8600,12165 8538,12245
@@ -14040,7 +14040,7 @@ EOF
        source_id => 'IM_012636',
        data  => <<EOF,
 #: last_checked: 2009-05-21
-userdel	q4::inwork 12822,12067 12852,12306 12869,12425
+userdel	q4::inwork 12822,12067 12850,12286 12869,12425
 EOF
      },
      { from  => 1252767974, # undef
@@ -14378,7 +14378,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_012990',
        data  => <<EOF,
-userdel	2::temp 7039,12314 7215,12295 7437,12368 7514,12387 7875,12363 8017,12359 8070,12409 8119,12414
+userdel	2::temp 7039,12314 7215,12295 7437,12368 7514,12387 7627,12380 7821,12367 7875,12363 8017,12359 8070,12409 8119,12414
 EOF
      },
      { from  => 1244930400, # 2009-06-14 00:00
@@ -15498,7 +15498,7 @@ EOF
      },
      { from  => undef, #
        until => undef, #
-       text  => 'Park am Nordbahnhof: im Sommer zwischen 6.30 und 22.00 Uhr geöffnet, im Winterhalbjahr sind die Öffnungszeiten kürzer',
+       text  => 'Park am Nordbahnhof: im Sommerhalbjahr zwischen 6.30 und 22.00 Uhr geöffnet, im Winterhalbjahr zwischen 7.30 und 19.00 Uhr',
        type  => 'gesperrt',
        permanent => 1,
        data  => <<EOF,

@@ -208,7 +208,9 @@ Revaler Str.: Kopfsteinpflaster	Q2; 14509,11060 14442,11101 14357,11148 14286,11
 Revaler Str.: Kopfsteinpflaster, Straßenbahn	Q2 13588,11490 13473,11456
 Prenzlauer Berg: Asphalt	Q0 11723,13630 11545,13690 11257,13647
 Alte Jakobstr.: Kopfsteinpflaster	Q2 10244,11160 10436,11344
-Ackerstr.: Kopfsteinpflaster	Q2 9439,14368 9400,14400 9375,14419 9279,14495 9197,14562 9048,14681 8953,14758 8741,14928
+Ackerstr.: Kopfsteinpflaster	Q2 9439,14368 9400,14400
+Ackerstr.: Rasengitterstein	Q2 9400,14400 9375,14419
+Ackerstr.: Kopfsteinpflaster	Q2 9375,14419 9279,14495 9197,14562 9048,14681 8953,14758 8741,14928
 Ackerstr.: Kopfsteinpflaster	Q2 9750,14132 9627,14229
 Gartenstr.: Asphalt	Q0 8692,14923 8870,14637 8953,14528 9081,14363 9118,14306 9224,14169 9383,13978 9510,13823 9531,13797 9668,13629
 Gartenstr.: Asphalt	Q0 8663,14960 8685,14966 8700,14956 8701,14932 8692,14923 8671,14919 8660,14929 8656,14947 8663,14960
@@ -610,7 +612,7 @@ Mittelbuschweg: Kopfsteinpflaster	Q2 13500,7018 13484,7140 13575,7200 13693,7228
 Welserstr.: Kopfsteinpflaster	Q2 6217,10099 6256,10309 6265,10359
 Kieler Str. (Mitte): Kopfsteinpflaster	Q2 8054,14257 7967,14200
 (Uferweg Plötzensee): Parkweg	Q2 5618,14981 5518,15236 5291,15424 5050,15643 5084,15415 5018,15228
-Kruppstr.: Kopfsteinpflaster	Q2 7327,14130 6917,13917 6890,13900 6817,13862
+Kruppstr.: Kopfsteinpflaster	Q2 7327,14130 6917,13917 6890,13900 6817,13862 6746,13826
 Weg 7: Asphalt	Q0 17039,7685 17297,7752 17527,7812
 Futranplatz: Kopfsteinpflaster	Q2 22377,4836 22439,4838
 Schierker Str.: Kopfsteinpflaster	Q2 12259,7164 12421,7197 12613,7236 12722,7261 12843,7290 12908,7305 13003,7316 13034,7319
@@ -2346,6 +2348,11 @@ Am Güterbahnhof Halensee: Kopfsteinpflaster	Q2 2559,9879 2585,9875 2767,9670 304
 Werdauer Weg: Beton	Q0 7073,8081 6947,8025 6774,7755
 Werdauer Weg: Asphalt	Q0 6774,7755 6691,7633
 Werdauer Weg: Beton	Q0 6691,7633 6693,7556 6654,7465 6580,7401 6505,7381
+(Fredersdorfer Str. - Hildegard-Jadamowitz-Str.): Beton	Q1 12923,12043 12893,12077 12883,12118 12908,12280
+Am Pankepark: Beton	Q1 8184,14052 8290,14119
+Am Pankepark: Verbundsteinpflaster	Q1 8290,14119 8246,14201
+Am Pankepark: noch unbefestigt, Schotter	Q2 8246,14201 8138,14148
+Stendaler Platz: überwiegend Asphalt	Q0 6394,14085 6489,14071
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
 Riemeisterstr.: mäßiges Kopfsteinpflaster, aber asphaltierte Radwege	Q1 346,4833 294,4916 158,5103 103,5123
 Pücklerstr.: Fahrbahn mit schlechtem Kopfsteinpflaster, Radweg OK	Q1 2688,7067 2576,7026 2465,6984 2403,6962 2266,6911 2155,6873 2130,6865 2054,6840 1961,6820
@@ -2827,7 +2834,8 @@ Buchstr.: Asphalt	Q0 6599,14735 6445,14893
 Stephanstr. (Tiergarten): Kopfsteinpflaster	Q2 6226,13951 6394,14085 6487,14156 6677,14219 6956,14288 6992,14251
 Holsteiner Ufer: Kopfsteinpflaster, OK	Q1 6182,12900 6354,12870 6452,12828 6580,12775
 Holsteiner Ufer: mäßiges Kopfsteinpflaster	Q2 6580,12775 6694,12627
-Rathenower Str.: Asphalt mit gepflasterten Bodenschwellen	Q1 6730,14021 6719,14047 6677,14219 6656,14311
+Rathenower Str.: Asphalt	Q0 6730,14021 6719,14047
+Rathenower Str.: Asphalt mit gepflasterten Bodenschwellen	Q1 6719,14047 6677,14219 6656,14311
 Albrecht-Thaer-Weg: Asphalt	Q0 3347,6460 3449,6863
 Lottumstr.: mäßiges Kopfsteinpflaster	Q2 10489,13942 10649,13860 10703,13832 10779,13793
 Stieglitzweg: Asphalt	Q0 14335,3231 14493,3143 14530,3044 14637,2868 14768,2763
@@ -3651,8 +3659,9 @@ Unterbaumstr.: Kopfsteinpflaster	Q2 8486,12918 8502,12935 8525,12958 8581,13013
 Nordufer: Verbundsteinpflaster	Q1 7212,14738 7433,14656 7467,14632
 Mönkeberger Str.: asphaltiert	Q0 9475,16307 9582,16296 9725,16281
 Ellerbeker Str.: Kopfsteinpflaster	Q2 9725,16281 9727,16188
-(Schwartzkopffstr. - Gartenstr.): fester Sand	Q1 8825,14401 8913,14485
-(Schwartzkopffstr. - Gartenstr.): Kopfsteinpflaster	Q2 8913,14485 8839,14635 8848,14638 8938,14521 8953,14528
+(Schwartzkopffstr. - Gartenstr.): Beton	Q0 8825,14401 8913,14485
+(Schwartzkopffstr. - Gartenstr.): Beton	Q0 8913,14485 8839,14635
+(Schwartzkopffstr. - Gartenstr.): Kopfsteinpflaster	Q2 8839,14635 8848,14638 8938,14521 8953,14528
 (Park am Nordbahnhof): fester Sand	Q1 8913,14485 9176,14181
 (Park am Nordbahnhof): betonierte Rampe	Q0 9176,14181 9147,14151 9224,14169
 Ernst-Bloch-Str.: Beton	Q0 23014,12706 22985,12807 23017,13037 23132,13034 23165,13167
@@ -5946,7 +5955,8 @@ Am Friedrichshain: Asphalt	Q2 12038,13685 12022,13755 12126,13893
 Vopeliuspfad: Kopfsteipflaster	Q2 1318,3009 1214,3198
 (Parkweg Dreipfuhlpark): Asphalt mit Löchern	Q1 1608,4313 1548,4168 1524,4054 1520,4006 1523,3904 1536,3780
 Westhafenstr.: Kopfsteinpflaster	Q2 6293,14625 6083,14564
-Salzwedeler Str.: Kopfsteinpflaster	Q2 6267,14184 6394,14085
+Salzwedeler Str.: Asphalt	Q0 6267,14184 6289,14167
+Salzwedeler Str.: Kopfsteinpflaster	Q2 6289,14167 6394,14085
 Havelberger Str.: Kopfsteinpflaster	Q2 6476,14277 6487,14156
 Havelberger Str.: Asphalt mit gepflasterten Bodenschwellen	Q1 6487,14156 6489,14071 6494,13861
 Stendaler Str. (Tiergarten): Asphalt mit gepflasterten Bodenschwellen	Q1 6719,14047 6489,14071
