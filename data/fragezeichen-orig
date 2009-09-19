@@ -1800,7 +1800,6 @@ Reulestr. - Kochstr.: Durchfahrt für Radfahrer möglich? Qualität? Offizieller St
 Markgrafenstr. (Mariendorf): Qualität?	? 8827,4874 8929,4882 9020,4890 9248,4904
 Illzacher Weg: Qualität?	? 9583,4190 9564,4305 9561,4404
 Kollostr.: Qualität?	? 9665,4392 9677,4518 9695,4638
-Didostr.: Qualität?	? 10176,4376 10178,4477 10183,4583
 Äneasstr.: Qualität?	? 10178,4477 10257,4471 10270,4571
 Schwalbenweg: Qualität?	? 9382,4826 9507,4838
 Finkenweg (Mariendorf): Qualität?	? 9360,4996 9482,5012
@@ -3500,7 +3499,6 @@ Strehlener Str.: Qualität?	? 22652,10392 22538,10477 22403,10523
 Lenbachstr. (Kaulsdorf): Qualität?	? 22327,10685 22251,10700 21979,10686 21938,10664 21717,10371 21683,10291 21679,10186 21718,10013
 Holbeinstr.: Qualität?	? 21868,10202 21830,10342 21907,10455
 Rogauer Weg: Qualität?	? 22732,10492 22627,10575 22635,10625
-Windthorststr.: Qualität?	? 22424,10662 22490,10868 22552,11029
 Penkuner Weg: Qualität?	? 22738,10605 22785,10781 22865,11007
 Eichhornstr. (Kaulsdorf): Qualität?	? 22458,9532 22501,9369
 Fichtenstr.: Qualität?	? 22212,9508 22200,9430 22154,9237
@@ -3548,9 +3546,7 @@ Stendaler Platz: Ist die Verbindung zwischen Salzwedeler Str. und Stendaler Str.
 #: XXX laut anonymous "Kopfsteinpflaster", aber ohne weitere Kategorisierung:
 Hirseländerweg: Qualität?	? 28301,1467 28327,1525 28369,1616 28502,1827 28557,1907 28640,2015 28695,2093 28717,2121 28829,2269 28916,2333 28993,2391 29070,2446 29192,2543
 Tychyer Str.: Qualität?	? 21398,11482 21305,11363
-Lauinger Str.: Qualität?	? 21537,11256 21305,11363 21221,11398
-Gartenstr. (Biesdorf): Qualität?	? 21138,11271 21162,11287 21192,11324 21217,11328
-Gartenstr. - Tychyer Str.: Qualität? Nachts beleuchtet?	? 21217,11328 21255,11314 21286,11319 21305,11363
+Gartenstr. - Tychyer Str.: Ist der Weg nachts beleuchtet?	? 21217,11328 21255,11314 21286,11319 21305,11363
 Arno-Philippsthal-Str.: Qualität?	? 20640,11469 20636,11342
 Minsker Str.: Qualität?	? 20828,11466 20820,11328 20817,11252 20834,11150
 Haltoner Str.: Qualität?	? 20536,11022 20602,11050 20659,11076 20719,11101 20834,11150 20968,11203
@@ -3687,9 +3683,7 @@ Eddastr.: Qualität?	? 12364,21623 12418,21727 12433,21880 12448,21971 12467,2214
 Eddastr.: Qualität?	? 12476,22423 12473,22801
 Ludwig-Quidde-Str.: Qualität?	? 12570,21058 12613,21132 12695,21336 12778,21583 12806,21639 12825,21771 12829,21814 12837,21876 12841,21925 12843,22010 12850,22177 12852,22262 12852,22337 12855,22431
 Papenberger Weg: Qualität?	? -2937,19008 -2894,19019 -2789,19013
-Rustweg: Qualität?	? -2827,18639 -2673,18634 -2595,18629 -2523,18627 -2455,18620 -2316,18613
-Zum Erlengrund: Qualität?	? -2605,18393 -2595,18629
-Zu den Fichtenwiesen: Qualität?	? -2535,18391 -2523,18627
+Rustweg: Qualität? Existiert für Radfahrer eine Verbindung zum Uferweg?	? -2827,18639 -2673,18634 -2595,18629 -2523,18627 -2455,18620 -2282,18615
 Zeesener Weg: Qualität?	? 30998,4012 31140,4059 31218,4082
 Döhlauer Pfad: Qualität?	? 7879,3455 7800,3435
 Bernecker Weg: Qualität?	? 7704,3383 7706,3512 7712,3542 7737,3598 7778,3644 7839,3714 7886,3801
@@ -3809,3 +3803,8 @@ Fritz-von-der-Lancken-Str.: Qualität?	? -13005,1933 -12775,1956
 #: last_checked: 2009-06-06
 #: note: laut http://www.potsdam.de/cms/beitrag/10055141/757395/ fertiggestellt
 Fritz-von-der-Lancken-Str - Höhenweg: Qualität?	? -12766,1932 -12636,1804 -12511,1680
+Rütlistr.: Qualität? Kann man als Radfahrer weiter zur Baseler Str. fahren?	? 7107,17342 7068,17485
+Grindelwaldweg: Qualität?	? 6908,17583 6797,17568 6679,17568 6642,17571
+#: XXX laut osm: bicycle=yes
+Schäfersee - Baseler Str.: Qualität? Für Radfahrer offiziell befahrbar? Nachts beleuchtet?	? 7189,17666 6908,17583
+Kalkbergeweg: Qualität?	? 31025,4116 31200,4218 31296,4346 31387,4571 31424,4658 31469,4678 31542,4680 31673,4641 31734,4624

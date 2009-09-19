@@ -3282,8 +3282,8 @@ Greifenhagener Str.: Kopfsteinpflaster	Q2 11040,15398 11055,15504 11086,15772
 Greifenhagener Str.: Kopfsteinpflaster	Q2 11214,16043 11253,16118 11295,16199 11330,16279 11397,16405
 Zermatter Str.: Kopfsteinpflaster besserer Qualit‰t	Q1 6631,17721 6739,17749 6841,17781
 Zermatter Str.: Betonplatten, gut	Q1 6376,17687 6512,17696 6631,17721
-(Um den Sch‰fersee): gute befestigte Sandwege	Q1 7501,17525 7490,17632 7437,17670 7214,17656 7193,17554 7233,17462
-Baseler Str. (Reinickendorf): Kopfsteinpflaster	Q2 6792,17951 6841,17781 6886,17649 6914,17567 6995,17322
+(Um den Sch‰fersee): gute befestigte Sandwege	Q1 7501,17525 7490,17632 7437,17670 7320,17718 7218,17700 7189,17666 7193,17554 7222,17471
+Baseler Str. (Reinickendorf): Kopfsteinpflaster	Q2 6792,17951 6841,17781 6886,17649 6908,17583 6995,17322
 Mudrackzeile: asphaltiert	Q0 6886,17649 6950,17669 7020,17690 6985,17812
 Mariabrunner Weg: asphaltiert	Q0 6985,17812 6909,17796 6841,17781
 Walderseestr.: m‰ﬂiges bis schlechtes Kopfsteinpflaster	Q2 7309,17159 7614,17245
@@ -3894,7 +3894,8 @@ Bˆrnestr.: guter Asphalt	Q0 13214,15830 13269,15927 13316,16036 13404,16212
 Am Sandwerder: guter Asphalt	Q0 -4644,1514 -4638,1579 -4469,1921 -4326,2141
 Am Oberhafen (Spandau): Beton	Q0 -2960,13203 -3053,13179 -3270,13307
 Sadowastr.: m‰ﬂiger Asphalt	Q1 17852,8155 17925,8101 17976,8106 18078,8112
-Treskowstr. (Tegel): gutes Kopfsteinpflaster	Q1 2064,19874 2029,19963 1989,20053 1953,20149 1907,20265
+Treskowstr. (Tegel): schlechtes Kopfsteinpflaster	Q3 2064,19874 2029,19963
+Treskowstr. (Tegel): Kopfsteinpflaster	Q2 2029,19963 1989,20053 1953,20149 1907,20265
 Wernitzer Str.: m‰ﬂiger Beton	Q1 22253,10412 22365,10386 22469,10362 22519,10339 22574,10300 22687,10210
 Wankstr.: sehr guter Asphalt	Q0 10432,3528 10409,3310
 Kunigundenstr.: Kopfsteinpflaster	Q2 8943,5428 8865,5468
@@ -4173,7 +4174,7 @@ Am Seeschloﬂ: Asphalt	Q0 4757,23184 4750,23211 4713,23254
 (Mauerweg am Eiskeller): gut befahrbarer Trampelpfad	Q2 -7971,19684 -8031,19862
 (Mauerweg am Eiskeller): asphaltiert	Q0 -8031,19862 -8266,19811 -8469,19845 -8494,19713 -8448,19710 -8521,19390 -8372,19402 -8272,19086 -8206,19007 -8022,19052
 (Mauerweg Spandau): asphaltiert, aber nicht unterhalten (Laub ...)	Q0 -2908,19715 -3371,19864
-(Uferweg an der Havel): sehr guter Asphalt	Q0 -2053,18375 -2051,18434 -2210,18526 -2291,18628 -2349,18744 -2413,18770
+(Uferweg an der Havel): sehr guter Asphalt	Q0 -2053,18375 -2051,18434 -2210,18526 -2282,18615 -2349,18744 -2413,18770
 (Uferweg an der Havel): Holzbohlen	Q0 -2413,18770 -2434,18832 -2460,18918
 (Uferweg an der Havel): sehr guter Asphalt	Q0 -2460,18918 -2503,18945 -2516,19186 -2597,19251 -2723,19255
 (Uferweg an der Havel): gut befahrbarer Wanderweg	Q0 -2723,19255 -2726,19408 -2763,19450 -2775,19532 -2870,19589 -2905,19636 -2908,19715
@@ -5714,6 +5715,8 @@ Rhenser Weg: m‰ﬂiger Asphalt, Straﬂensch‰den	Q1 19133,9087 19209,9125 19267,9201
 Adorfer Str.: guter Asphalt	Q0 24272,14278 24136,14321 24099,14355
 Altenescher Weg: Betonplatten z.T. mit Abs‰tzen	Q2 14051,14822 13856,14944 13749,15013
 Am Teufelsbruch: Asphalt	Q0 -2678,18396 -2673,18634
+Zum Erlengrund: Asphalt	Q0 -2605,18393 -2595,18629
+Zu den Fichtenwiesen: Asphalt	Q0 -2535,18391 -2523,18627
 Libellenstr.: schlechtes Kopfsteinpflaster	Q3 -3703,2137 -3699,2085 -3707,2037 -3742,1980 -3738,1929 -3602,1799 -3559,1760
 Girlitzweg: guter Beton	Q0 15273,3269 15321,3332 15373,3403
 Girlitzweg: Asphalt	Q0 15176,3136 15273,3269
@@ -5736,6 +5739,12 @@ Gravensteinstr.: guter Asphalt	Q0 12185,22465 12228,22460 12397,22429 12476,2242
 Heilmannring: guter Asphalt	Q0 1871,14556 1881,14425 1967,14249 2110,14225 2384,14237 2548,14248 2597,14288 2664,14470 2671,14653 2675,14744
 Sollmannweg: Asphalt	Q0 15010,2032 14993,2025 14865,1952 14846,1940 14627,1902 14549,1922
 Gertrudstr. (Hohenschˆnhausen): Kopfsteinpflaster	Q2 15891,16041 15869,16078 15793,16162 15731,16208
+Didostr.: betoniert	Q0 10176,4376 10178,4477 10183,4583
+Voltastr. (Mahlsdorf): Kopfsteinpflaster	Q2 24559,9682 24291,9727
+Windthorststr.: guter Beton	Q1 22424,10662 22490,10868 22552,11029
+Lauinger Str.: Asphalt	Q0 21537,11256 21305,11363 21221,11398
+(Gartenstr. - Tychyer Str.): loser Sandweg	Q3 21217,11328 21255,11314 21286,11319 21305,11363
+Gartenstr. (Biesdorf): alte Betonstraﬂe	Q2 21138,11271 21162,11287 21192,11324 21217,11328
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206
 Richard-Ermisch-Str.: Asphalt	Q0 14250,13281 14224,13206 14207,13152 14177,13065 14163,13025 14130,12926 14096,12827
 Zum Langen Jammer: Kopfsteipflaster, Gehweg besser	Q2 14686,12873 14405,12953

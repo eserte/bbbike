@@ -3976,8 +3976,8 @@ Greifenhagener Str.: Kopfsteinpflaster	Q2 11214,16043 11253,16118 11295,16199 11
 #: XXX: Katha hat hier "Kopfsteinpflaster, schlechte Straße" geschrieben, die ADFC-Karte sagt hier "gut geeignet". 2:1 für Q1
 Zermatter Str.: Kopfsteinpflaster besserer Qualität	Q1 6631,17721 6739,17749 6841,17781
 Zermatter Str.: Betonplatten, gut	Q1 6376,17687 6512,17696 6631,17721
-(Um den Schäfersee): gute befestigte Sandwege	Q1 7501,17525 7490,17632 7437,17670 7214,17656 7193,17554 7233,17462
-Baseler Str. (Reinickendorf): Kopfsteinpflaster	Q2 6792,17951 6841,17781 6886,17649 6914,17567 6995,17322
+(Um den Schäfersee): gute befestigte Sandwege	Q1 7501,17525 7490,17632 7437,17670 7320,17718 7218,17700 7189,17666 7193,17554 7222,17471
+Baseler Str. (Reinickendorf): Kopfsteinpflaster	Q2 6792,17951 6841,17781 6886,17649 6908,17583 6995,17322
 #: note: auch die ADFC-Karte sagt "gut geeignet" vvv
 Mudrackzeile: asphaltiert	Q0 6886,17649 6950,17669 7020,17690 6985,17812
 Mariabrunner Weg: asphaltiert	Q0 6985,17812 6909,17796 6841,17781
@@ -5169,8 +5169,12 @@ Am Sandwerder: guter Asphalt	Q0 -4644,1514 -4638,1579 -4469,1921 -4326,2141
 Am Oberhafen (Spandau): Beton	Q0 -2960,13203 -3053,13179 -3270,13307
 #: by: thomasraddatz:
 Sadowastr.: mäßiger Asphalt	Q1 17852,8155 17925,8101 17976,8106 18078,8112
-#: by: Scheu:
-Treskowstr. (Tegel): gutes Kopfsteinpflaster	Q1 2064,19874 2029,19963 1989,20053 1953,20149 1907,20265
+#: by: Scheu: vvv
+#: corrected_by: Thomas Heuving (gut -> schlecht)
+Treskowstr. (Tegel): schlechtes Kopfsteinpflaster	Q3 2064,19874 2029,19963
+#: corrected_by: Thomas Heuving ("gut" gestrichen)
+Treskowstr. (Tegel): Kopfsteinpflaster	Q2 2029,19963 1989,20053 1953,20149 1907,20265
+#: by: ^^^
 #: by: Tim Misiewicz:
 Wernitzer Str.: mäßiger Beton	Q1 22253,10412 22365,10386 22469,10362 22519,10339 22574,10300 22687,10210
 #: by: Ersoy:
@@ -5767,7 +5771,7 @@ Am Seeschloß: Asphalt	Q0 4757,23184 4750,23211 4713,23254
 (Mauerweg am Eiskeller): asphaltiert	Q0 -8031,19862 -8266,19811 -8469,19845 -8494,19713 -8448,19710 -8521,19390 -8372,19402 -8272,19086 -8206,19007 -8022,19052
 (Mauerweg Spandau): asphaltiert, aber nicht unterhalten (Laub ...)	Q0- -2908,19715 -3371,19864
 #: note: laut ADFC-Karte "mäßig geeignet", mittlerweile besser
-(Uferweg an der Havel): sehr guter Asphalt	Q0 -2053,18375 -2051,18434 -2210,18526 -2291,18628 -2349,18744 -2413,18770
+(Uferweg an der Havel): sehr guter Asphalt	Q0 -2053,18375 -2051,18434 -2210,18526 -2282,18615 -2349,18744 -2413,18770
 (Uferweg an der Havel): Holzbohlen	Q0- -2413,18770 -2434,18832 -2460,18918
 #: corrected_by: rjoop (Foto):
 (Uferweg an der Havel): sehr guter Asphalt	Q0 -2460,18918 -2503,18945 -2516,19186 -2597,19251 -2723,19255
@@ -8810,9 +8814,12 @@ Rhenser Weg: mäßiger Asphalt, Straßenschäden	Q1- 19133,9087 19209,9125 19267,920
 Adorfer Str.: guter Asphalt	Q0 24272,14278 24136,14321 24099,14355
 #: by: Heike Steinhardt:
 Altenescher Weg: Betonplatten z.T. mit Absätzen	Q2+ 14051,14822 13856,14944 13749,15013
-#: by: Horst Kujanek
+#: by: Horst Kujanek vvv
 #: note: "einige Fußgänger", aber ohne Kategorisierung
 Am Teufelsbruch: Asphalt	Q0 -2678,18396 -2673,18634
+Zum Erlengrund: Asphalt	Q0 -2605,18393 -2595,18629
+Zu den Fichtenwiesen: Asphalt	Q0 -2535,18391 -2523,18627
+#: by: ^^^
 #: by: Timm (wille):
 Libellenstr.: schlechtes Kopfsteinpflaster	Q3 -3703,2137 -3699,2085 -3707,2037 -3742,1980 -3738,1929 -3602,1799 -3559,1760
 #: by: Alexandra (kaffeeschluerfer): vvv
@@ -8864,6 +8871,19 @@ Sollmannweg: Asphalt	Q0 15010,2032 14993,2025 14865,1952 14846,1940 14627,1902 1
 #: by: Germar Molter:
 #: note: "eher unangenehm zum Fahrradfahren", und nur der Teil am am Freibad Orankesee geprüft
 Gertrudstr. (Hohenschönhausen): Kopfsteinpflaster	Q2 15891,16041 15869,16078 15793,16162 15731,16208
+#: by: Angelika Kißner:
+Didostr.: betoniert	Q0 10176,4376 10178,4477 10183,4583
+#: by: Klemens Müller:
+Voltastr. (Mahlsdorf): Kopfsteinpflaster	Q2 24559,9682 24291,9727
+#: by: Sebastian Koch: vvv
+Windthorststr.: guter Beton	Q1 22424,10662 22490,10868 22552,11029
+#: note: "wenig befahrene Zufahrtsstraße für Baumarkt, gute Qualität"
+Lauinger Str.: Asphalt	Q0 21537,11256 21305,11363 21221,11398
+#: note: "reiner Trampelpfad... sehr eng... nur für könner"
+(Gartenstr. - Tychyer Str.): loser Sandweg	Q3 21217,11328 21255,11314 21286,11319 21305,11363
+#: note: "unbefahrene alte Betonstraße.. Sackgasse"
+Gartenstr. (Biesdorf): alte Betonstraße	Q2 21138,11271 21162,11287 21192,11324 21217,11328
+#: by: ^^^
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206
