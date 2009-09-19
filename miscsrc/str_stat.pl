@@ -57,6 +57,11 @@ my $str_total_total_len = 0;
 	$s = MultiStrassen->new(@strfile);
     } else {
 	$s = Strassen->new(@strfile);
+	if ($s->get_global_directives->{map}->[0] eq 'polar') {
+	    warn qq{NOTE: Turning on "polar" hack...\n};
+	    *Strassen::Util::strecke_s = \&Strassen::Util::strecke_s_polar;
+	    *Strassen::Util::strecke   = \&Strassen::Util::strecke_polar;
+	}
     }
     $s->init;
     while(1) {
