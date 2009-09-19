@@ -565,15 +565,7 @@ userdel	1::inwork 12229,10014 12398,9938 12556,9862
        undef,
        undef,
        undef,
-       {
-         'until' => 1275256800,
-         'text' => 'K 6910 Am Wasser OD Schwielowsee, zw. Baumgartenbrück u. OA Kanal- u. Straßenbau halbseitig gesperrt; Einbahnstraße 02.04.2009-30.05.2010 ',
-         'from' => 1238536800,
-         'id' => 1580,
-         'data' => 'userdel	q4::inwork; -19332,-5240 -19652,-5090 -19744,-4792
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -716,15 +708,6 @@ userdel	q4::inwork 10422,12395 10476,12432
        undef,
        undef,
        undef,
-       {
-         'until' => 1253916000,
-         'text' => 'L 029 Oderberg - Niederfinow OD Liepe, E.-Thälmann-Straße Erneuerung Stützmauer Vollsperrung 11.05.2009-25.09.2009 ',
-         'from' => 1241906400,
-         'id' => 1652,
-         'data' => 'userdel	2::inwork 48662,51337 49039,51453
-',
-         'type' => 'gesperrt'
-       },
        undef,
        undef,
        undef,
@@ -738,15 +721,8 @@ userdel	q4::inwork 10422,12395 10476,12432
        undef,
        undef,
        undef,
-       {
-         'until' => 1253311200,
-         'text' => 'L 014 Kyritz - Wittstock OD Herzsprung Straßenausbau Vollsperrung 20.07.2009-18.09.2009 ',
-         'from' => 1247954400,
-         'id' => 1666,
-         'data' => 'userdel	q4::inwork -54249,73343 -54091,72917 -54034,72687
-',
-         'type' => 'handicap'
-       },
+       undef,
+       undef,
        undef,
        undef,
        undef,
@@ -1677,6 +1653,65 @@ userdel	q4::inwork; 10829,18083 10907,18109 10938,18147 10989,18172 11137,18358 
          'from' => 1253052000,
          'id' => 1891,
          'data' => 'userdel	q4::inwork 79549,-17498 79628,-17759
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_014203',
+         'until' => 1254434399,
+         'text' => 'Allee der Kosmonmauten (Marzahn) stadtauswärts zwischen Rhinstr. und Marzahner Chaussee Baustelle, Fahrtrichtung gesperrt (bis Anfang 10.2009)',
+         'from' => 1253357936,
+         'id' => 1892,
+         'data' => 'userdel	q4::inwork; 18234,13500 18783,13469 18875,13473 19059,13482 19173,13487
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_014178',
+         'until' => 1253483999,
+         'text' => 'Hauptstr. (Rosenthal) in beiden Richtungen zwischen Friedrich-Engels-Str. und Schönhauser Str. Veranstaltung, Verkehrsstörung möglich',
+         'from' => undef,
+         'id' => 1893,
+         'data' => 'userdel	q4::temp 8277,21257 8460,21602
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_014201',
+         'until' => 1253505600,
+         'text' => 'Scheidemannstr. (Tiergarten) in beiden Richtungen zwischen John-Foster-Dulles-Allee und Dorotheestr. wegen Marathon, Straße vollständig gesperrt, ebenfalls gesperrt: Heinrich-von-Gagern-Str, Paul-Löbe-Allee (bis Montag, 6 Uhr) (11:55) ',
+         'from' => 1253272543,
+         'id' => 1894,
+         'data' => 'userdel	q4::temp 8540,12420 8400,12417 8374,12416 8119,12414 8123,12615 8207,12616 8306,12617 8399,12616
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_014191',
+         'until' => 1253570399,
+         'text' => 'Straße des 17. Juni (Tiergarten) in beiden Richtungen zwischen Großer Stern und Brandenburger Tor (Marathon), Straße vollständig gesperrt, auch gesperrt ist die Ebertstr. zwischen Behrenstr. und Dorotheenstr. (bis 21.09., 12 Uhr)',
+         'from' => 1253359000,
+         'id' => 1895,
+         'data' => 'userdel	q4::temp 8595,12066 8600,12165 8538,12245 8546,12279 8570,12302 8573,12325 8540,12420
+userdel	q4::temp 6828,12031 7383,12095 7816,12150 8055,12186 8089,12190 8214,12205 8538,12245 8610,12254
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1275256800,
+         'text' => 'K 6910 Am Wasser OD Schwielowsee, zw. Hellwegbaumarkt und Mühlenbergstr. Kanal- u. Straßenbau halbseitig gesperrt; Einbahnstraße 21.09.2009-30.05.2010 ',
+         'from' => 1253397600,
+         'id' => 1896,
+         'data' => 'userdel	q4::inwork; -19013,-5247 -19112,-5226 -19332,-5240
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1253570400,
+         'text' => 'L 030 Straße der Jugend OL Rüdersdorf, zw. Am Landhof und Torellplatz Gleisbauarbeiten Vollsperrung 18.09.2009-21.09.2009 ',
+         'from' => 1253138400,
+         'id' => 1897,
+         'data' => 'userdel	q4::inwork 35771,7946 35662,8028 35625,8093
 ',
          'type' => 'handicap'
        }

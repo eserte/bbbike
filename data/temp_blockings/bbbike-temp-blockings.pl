@@ -13392,7 +13392,7 @@ userdel	2::inwork -27196,50015 -27421,50349 -28001,50966 -28368,51517 -28736,523
 EOF
      },
      { from  => 1238536800, # 2009-04-01 00:00
-       until => 1275256800, # 2010-05-31 00:00
+       until => 1253359305, # 2010-05-31 00:00 1275256800
        text  => 'K 6910 Am Wasser OD Schwielowsee, zw. Baumgartenbrück u. OA Kanal- u. Straßenbau halbseitig gesperrt; Einbahnstraße 02.04.2009-30.05.2010 ',
        type  => 'handicap',
        data  => <<EOF,
@@ -14001,7 +14001,7 @@ userdel	2::inwork 55392,83218 55808,83296 55901,83313
 EOF
      },
      { from  => 1241906400, # 2009-05-10 00:00
-       until => 1253916000, # 2009-09-26 00:00
+       until => 1253359337, # 2009-09-26 00:00 1253916000
        text  => 'L 029 Oderberg - Niederfinow OD Liepe, E.-Thälmann-Straße Erneuerung Stützmauer Vollsperrung 11.05.2009-25.09.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -16057,6 +16057,59 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork 79549,-17498 79628,-17759
+EOF
+     },
+     { from  => 1253357936, # 2009-09-19 12:58
+       until => 1254434399, # 2009-10-01 23:59
+       text  => 'Allee der Kosmonmauten (Marzahn) stadtauswärts zwischen Rhinstr. und Marzahner Chaussee Baustelle, Fahrtrichtung gesperrt (bis Anfang 10.2009)',
+       type  => 'handicap',
+       source_id => 'IM_014203',
+       data  => <<EOF,
+userdel	q4::inwork; 18234,13500 18783,13469 18875,13473 19059,13482 19173,13487
+EOF
+     },
+     { from  => undef, # 
+       until => 1253483999, # 2009-09-20 23:59
+       text  => 'Hauptstr. (Rosenthal) in beiden Richtungen zwischen Friedrich-Engels-Str. und Schönhauser Str. Veranstaltung, Verkehrsstörung möglich',
+       type  => 'handicap',
+       source_id => 'IM_014178',
+       data  => <<EOF,
+userdel	q4::temp 8277,21257 8460,21602
+EOF
+     },
+     { from  => 1253272543, # 2009-09-18 13:15
+       until => 1253505600, # 2009-09-21 06:00
+       text  => 'Scheidemannstr. (Tiergarten) in beiden Richtungen zwischen John-Foster-Dulles-Allee und Dorotheestr. wegen Marathon, Straße vollständig gesperrt, ebenfalls gesperrt: Heinrich-von-Gagern-Str, Paul-Löbe-Allee (bis Montag, 6 Uhr) (11:55) ',
+       type  => 'handicap',
+       source_id => 'IM_014201',
+       data  => <<EOF,
+userdel	q4::temp 8540,12420 8400,12417 8374,12416 8119,12414 8123,12615 8207,12616 8306,12617 8399,12616
+EOF
+     },
+     { from  => 1253359000, # 2009-09-19 13:16
+       until => 1253570399, # 2009-09-21 23:59
+       text  => 'Straße des 17. Juni (Tiergarten) in beiden Richtungen zwischen Großer Stern und Brandenburger Tor (Marathon), Straße vollständig gesperrt, auch gesperrt ist die Ebertstr. zwischen Behrenstr. und Dorotheenstr. (bis 21.09., 12 Uhr)',
+       type  => 'handicap',
+       source_id => 'IM_014191',
+       data  => <<EOF,
+userdel	q4::temp 8595,12066 8600,12165 8538,12245 8546,12279 8570,12302 8573,12325 8540,12420
+userdel	q4::temp 6828,12031 7383,12095 7816,12150 8055,12186 8089,12190 8214,12205 8538,12245 8610,12254
+EOF
+     },
+     { from  => 1253397600, # 2009-09-20 00:00
+       until => 1275256800, # 2010-05-31 00:00
+       text  => 'K 6910 Am Wasser OD Schwielowsee, zw. Hellwegbaumarkt und Mühlenbergstr. Kanal- u. Straßenbau halbseitig gesperrt; Einbahnstraße 21.09.2009-30.05.2010 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork; -19013,-5247 -19112,-5226 -19332,-5240
+EOF
+     },
+     { from  => 1253138400, # 2009-09-17 00:00
+       until => 1253570400, # 2009-09-22 00:00
+       text  => 'L 030 Straße der Jugend OL Rüdersdorf, zw. Am Landhof und Torellplatz Gleisbauarbeiten Vollsperrung 18.09.2009-21.09.2009 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 35771,7946 35662,8028 35625,8093
 EOF
      },
     );
