@@ -3577,14 +3577,32 @@ sub temp_blockings_editor {
     my($start_w, $end_w);
     my($start_undef, $end_undef);
     Tk::grid($t->Label(-text => M"Start"),
-	     $start_w = $t->Date(-choices => ["now", "tomorrow"]),
+	     $start_w = $t->Date(-choices => ["now",
+					      ["begin of today" => { H => 0, M => 0, S => 0 }],
+					      ["begin of tomorrow" => sub {
+						   my @l = localtime(time()+86400);
+						   @l[0,1,2]=(0,0,0);
+						   require Time::Local;
+						   Time::Local::timelocal(@l);
+					       },
+					      ]
+					     ]),
 	     $t->Checkbutton(-text => "undef",
 			     -variable => \$start_undef),
 	     -sticky => "w",
 	    );
 
     Tk::grid($t->Label(-text => M"Ende"),
-	     $end_w = $t->Date(-choices => ["now", "tomorrow"]),
+	     $end_w = $t->Date(-choices => ["now",
+					    ["end of today" => { H => 23, M => 59, S => 59 }],
+					    ["end of tomorrow" => sub {
+						   my @l = localtime(time()+86400);
+						   @l[0,1,2]=(59,59,23);
+						   require Time::Local;
+						   Time::Local::timelocal(@l);
+					       },
+					      ]
+					   ]),
 	     $t->Checkbutton(-text => "undef",
 			     -variable => \$end_undef),
 	     -sticky => "w",
