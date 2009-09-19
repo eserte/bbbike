@@ -72,7 +72,7 @@ sub process {
     }
 
     if (!@action) {
-	@action = "output_future";
+	@action = "output_future_nonpermanent";
     }
     @action = grep { $_ ne 'none' } @action;
 
@@ -208,7 +208,19 @@ sub run_checks {
     }
 }
 
+sub output_future_nonpermanent {
+    _output_future(includepermanent => 0);
+}
+
 sub output_future {
+    _output_future(includepermanent => 1);
+}
+
+sub _output_future {
+    my(%args) = @_;
+    my $include_permanent = delete $args{includepermanent};
+    die "Unhandled args: " . join(' ', %args) if %args;
+
     use constant LENGTH_OF_DATE_STRINGS => 55;
     use constant LENGTH_OF_ID => 4;
     # Sortieren nach dem nächsten Ereignis (Beginn oder Ende)
@@ -230,6 +242,7 @@ sub output_future {
 	       }
 	       grep { $_ } @temp_blocking) {
 	if (!defined $o->{until} || $o->{until} > time) {
+	    next if !$include_permanent && $o->{permanent};
 	    if ($do_output_files) {
 		print _get_name($o), "\n";
 	    } else {

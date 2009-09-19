@@ -1016,7 +1016,7 @@ ${PERSISTENTTMPDIR}/my-upload-fragezeichen.wpt:	fragezeichen Makefile
 temp_blockings/bbbike-temp-blockings-optimized.pl:	temp_blockings/bbbike-temp-blockings.pl .check_bbbike-temp-blockings-optimized
 	-@$(WRITEABLE) $@
 	${PERL} $(MISCSRCDIR)/check_bbbike_temp_blockings \
-	    -action output_future \
+	    -action output_future_nonpermanent \
 	    -action dump_future_as_perl > $@
 	touch .check_bbbike-temp-blockings-optimized
 	-@$(READONLY) $@
