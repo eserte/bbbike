@@ -60,6 +60,12 @@ sub BBBikeWeather::require_wettermeldung {
     $wettermeldung2::module = 1;
     $wettermeldung2::tk_widget = $top;
     require "wettermeldung2";
+    ## This smells like a perl bug, maybe only in 5.10.0 (seen on
+    ## debian). After the require, TMPDIR is undefined which is not
+    ## good for some programs, e.g. iceweasel
+    ## (WWWBrowser::start_browser does not work anymore). So be safe
+    ## and delete it.
+    if (exists $ENV{TMPDIR} && !defined $ENV{TMPDIR}) { delete $ENV{TMPDIR} }
 }
 
 # Laden der Wetterinformationen. Abhängig von den aktuellen Einstellungen
