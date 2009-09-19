@@ -218,7 +218,8 @@ if ($preserveglobaldirectives) {
     }
     my $encoding_directive = $s->get_global_directives->{'encoding'}->[0];
     if ($encoding_directive) {
-	print "#: encoding: $encoding_directive\n";
+	(my $emacs_coding_system = $encoding_directive) =~ s{iso8859}{iso-8859};
+	print "#: encoding: $emacs_coding_system\n";
 	binmode STDOUT, ":encoding($encoding_directive)";
 	$need_global_directive_separator++;
     }
