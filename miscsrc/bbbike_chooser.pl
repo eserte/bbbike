@@ -48,31 +48,14 @@ my $mw = tkinit;
 
 my @bbbike_datadirs;
 
-for my $dir (bsd_glob(File::Spec->catfile($rootdir, '*'))) {
-    if (-d $dir) {
-	my $meta_yml = File::Spec->catfile($dir, 'meta.yml');
-	if (-f $meta_yml) {
-	    my $meta = eval { LoadFile $meta_yml };
-	    if (!$meta) {
-		warn "WARN: Cannot load $meta_yml: $!, skipping this possible data directory...\n";
-	    } else {
-		$meta->{datadir} = $dir;
-		$meta->{dataset_title} = guess_dataset_title_from_dir($dir)
-		    if !$meta->{dataset_title};
-		push @bbbike_datadirs, $meta;
-	    }
-	} elsif (basename($dir) =~ m{^data}) {
-	    push @bbbike_datadirs, { datadir => $dir,
-				     dataset_title => guess_dataset_title_from_dir($dir),
-				   };
-	}
-    }
-}
+find_datadirs($rootdir);
 
 if (!@bbbike_datadirs) {
     $mw->messageBox(-message => "Sorry, no data directories found in $rootdir");
     exit;
 }
+
+uniquify_titles();
 
 my $xb = $mw->Button(-text => 'Exit',
 		     -command => sub { $mw->destroy },
@@ -122,6 +105,35 @@ for my $bbbike_datadir (sort { $a->{dataset_title} cmp $b->{dataset_title} } @bb
 
 MainLoop;
 
+sub find_datadirs {
+    my($startdir) = @_;
+    for my $dir (bsd_glob(File::Spec->catfile($startdir, '*'))) {
+	if (-d $dir) {
+	    my $meta_yml = File::Spec->catfile($dir, 'meta.yml');
+	    if (-f $meta_yml) {
+		my $meta = eval { LoadFile $meta_yml };
+		if (!$meta) {
+		    warn "WARN: Cannot load $meta_yml: $!, skipping this possible data directory...\n";
+		} else {
+		    $meta->{datadir} = $dir;
+		    $meta->{dataset_title} = guess_dataset_title_from_dir($dir)
+			if !$meta->{dataset_title};
+		    push @bbbike_datadirs, $meta;
+		}
+	    } else {
+		my $base_dir = basename($dir);
+		if ($base_dir eq 'data-osm') { # Wolfram's convention
+		    find_datadirs($dir); # XXX no recursion detection (possible with recursive symlinks...)
+		} elsif ($base_dir =~ m{^data}) {
+		    push @bbbike_datadirs, { datadir => $dir,
+					     dataset_title => guess_dataset_title_from_dir($dir),
+					   };
+		}
+	    }
+	}
+    }
+}
+
 sub guess_dataset_title_from_dir ($) {
     my $dir = shift;
     $dir = basename $dir;
@@ -133,6 +145,20 @@ sub guess_dataset_title_from_dir ($) {
 	$city =~ s{^[^A-Za-z]*}{}; # search for the alphabetic part
 	$city = ucfirst $city;
 	$city;
+    }
+}
+
+sub uniquify_titles {
+    my %seen_title;
+    for my $def (@bbbike_datadirs) {
+	push @{ $seen_title{$def->{dataset_title}} }, $def;
+    }
+    while(my($title, $v) = each %seen_title) {
+	if (@$v > 1) {
+	    for my $rec (@$v) {
+		$rec->{dataset_title} .= " (" . basename($rec->{datadir}) . ")"; # XXX should try harder if the basenames are also same
+	    }
+	}
     }
 }
 
