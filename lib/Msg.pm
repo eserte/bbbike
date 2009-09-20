@@ -1,10 +1,10 @@
 # -*- perl -*-
 
 #
-# $Id: Msg.pm,v 1.8 2008/01/05 20:44:13 eserte Exp $
+# $Id: Msg.pm,v 1.9 2009/09/20 19:36:29 eserte Exp eserte $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2001,2003,2008 Slaven Rezic. All rights reserved.
+# Copyright (C) 2001,2003,2008,2009 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -23,7 +23,7 @@ use base qw(Exporter);
 @EXPORT = qw(M Mfmt);
 @EXPORT_OK = qw(frommain noautosetup);
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.8 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.9 $ =~ /(\d+)\.(\d+)/);
 
 BEGIN {
     if ($ENV{PERL_MSG_DEBUG}) {
@@ -80,24 +80,10 @@ value of "C" or "POSIX" is ignored. [XXX yet unspecified for Win32?].
 
 sub setup_file (;$$) {
     my $default_dir = dirname($caller_file) . "/msg/" . basename($caller_file);
-    my %ignore = (C => 1, POSIX => 1);
     # Argument handling
     my $base = shift || $default_dir; #$FindBin::RealBin . "/msg/";
-    for my $env (qw(LC_ALL LC_MESSAGES LANG)) {
-	if (exists $ENV{$env} && !$ignore{$ENV{$env}}) {
-	    $lang = $ENV{$env};
-	    last;
-	}
-    }
-    if (!defined $lang) {
-	$lang = "";
-    } else {
-	# normalize language
-	$lang =~ s/^([^_.-]+).*/$1/; # XXX better use I18N::Lang
-    }
-    if ($DEBUG) {
-	warn "Use language $lang\n";
-    }
+
+    $lang = get_lang();
 
     require Safe;
     my $safe = Safe->new;
@@ -126,6 +112,27 @@ sub setup_file (;$$) {
 	#warn "Can't find any message file of @candidates\n";
     }
     $messages;
+}
+
+sub get_lang {
+    my $lang;
+    my %ignore = (C => 1, POSIX => 1);
+    for my $env (qw(LC_ALL LC_MESSAGES LANG)) {
+	if (exists $ENV{$env} && !$ignore{$ENV{$env}}) {
+	    $lang = $ENV{$env};
+	    last;
+	}
+    }
+    if (!defined $lang) {
+	$lang = "";
+    } else {
+	# normalize language
+	$lang =~ s/^([^_.-]+).*/$1/; # XXX better use I18N::Lang
+    }
+    if ($DEBUG) {
+	warn "Use language $lang\n";
+    }
+    $lang;
 }
 
 =head2 M($msg)
