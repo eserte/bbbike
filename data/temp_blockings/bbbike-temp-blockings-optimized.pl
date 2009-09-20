@@ -1413,15 +1413,7 @@ Neuer Garten (am Portierhaus) - Weinmeisterstr.: Weg ist nur zwischen 6 Uhr bis 
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1253397600,
-         'text' => 'L 861 Damsdorf - Plessow zw. Damsdorf und Göhlsdorf Straßensanierung Vollsperrung 31.08.2009-19.09.2009 ',
-         'from' => 1251583200,
-         'id' => 1849,
-         'data' => 'userdel	2::inwork -30199,-5774 -30919,-6570 -31110,-6743 -32618,-7268
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_013995',
          'until' => 1293836399,
@@ -1541,15 +1533,7 @@ d Breitenbachstr. Baustelle, Fahrtrichtung gesperrt (bis Anfang 05/2010)',
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1253397600,
-         'text' => 'B 112 Eisenhüttenstadt - Brieskow-Finenheerd Brücke über DB u. Oder-Spree-Kanal bei Zilten Belagserneuerung Vollasperrung 07.09.2009-19.09.2009 ',
-         'from' => 1252188000,
-         'id' => 1873,
-         'data' => 'userdel	2::inwork 93494,-21221 93192,-21578
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1254348000,
          'text' => 'L 068 Oelsig - Schlieben OD Schlieben, Am Mühlenberg Deckenerneuerung Vollsperrung 10.09.2009-30.09.2009 ',
@@ -1628,15 +1612,7 @@ userdel	q4::inwork; 10829,18083 10907,18109 10938,18147 10989,18172 11137,18358 
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1253397600,
-         'text' => 'B 096 Schönfließer Str.A OL Bergfelde, zw. Lindenallee und Ahornstr. Kranarbeiten Vollsperrung 19.09.2009-19.09.2009 ',
-         'from' => 1253224800,
-         'id' => 1888,
-         'data' => 'userdel	q4::inwork 4165,29251 4807,28338
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => 1254175200,

@@ -298,7 +298,8 @@ Schloßplatz Köpenick: Fußgänger, Straßenbahn, Lieferverkehr	q2 22111,4562 22093,
 #: note: Radfahren erlaubt
 (Am Rixdorfer Teich): Parkweg, Fußgänger	q1 11250,8585 11104,8559 11020,8596 10957,8573 10911,8457
 Torstr. - Weydingerstr.: Bordsteine	q2 11079,13492 11108,13513
-Gustav-Heinemann-Brücke: Fußgänger, enge Brücke	q2 8116,12938 8110,13042
+#: note: möglicherweise ist im Herbst/Winter weniger los, dann vielleicht q2?
+Gustav-Heinemann-Brücke: Fußgänger, enge Brücke	q3 8116,12938 8110,13042
 Beruner Str.: Rampen, Fußgänger, U-Bahn-Ausgang	q3 20143,10731 20215,10554
 #: note: "Radfahren auf befestigten Wegen erlaubt, Fußgänger haben Vorrang"
 (Parkweg Spreebogenpark): besonders an Wochenenden tagsüber sehr viele Fußgänger	q2 8017,12826 8021,12839 8046,12870 8072,12902 8116,12938 8168,12945 8235,12945 8275,12936 8341,12911 8417,12846
@@ -311,7 +312,6 @@ Färberstr. - Uferweg: sehr eng	q2 21675,4989 21665,5035 21684,5079
 Uferweg, Mentzelpark: Fußgänger	q1 21487,5425 21600,5221 21684,5079 21735,5003 21769,4973
 Uferweg, Mentzelpark: Fußgänger, eng	q3 21769,4973 21821,4918 21834,4889
 (Mentzelpark): Fußgänger	q1 21769,4973 21778,4916 21834,4889 21848,4882
-(Verlängerte Französische Str.): nur langsam passierbar	q4 8901,12008 9076,12054
 Heinrich-Lassen-Park: Fußgänger (aber Radfahren ist erlaubt!)	q1 6664,8787 6740,8682 6815,8691 6912,8617
 (Uferweg am Nordhafen): Fußgänger	q1 7753,14528 7695,14545 7498,14658
 An der Malche: teilweise eng und kurvig	q1 1127,20434 1060,20557 995,20590 921,20562 864,20646 673,20800
@@ -533,6 +533,7 @@ Görresstr.: enge Straße	q1 5066,7668 5158,7560 5272,7458 5318,7424
 Stendaler Platz: Fußgänger, Spielplatz	q2 6394,14085 6489,14071
 Washingtonplatz: querende Fußgänger, Taxis	q2; 7937,13126 8106,13130
 Washingtonplatz: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 8106,13130 7937,13126
+südliches Spreeufer: besonders an Wochenenden tagsüber sehr viele Fußgänger	q2 7437,12368 7529,12496 7670,12576
 ######################### User Contributions #################################
 #: by: Michael Kiekbusch
 #: corrected_by: srt/policy (q4 -> q3-)
@@ -763,8 +764,8 @@ Hüttenweg: keine abgesenkten Bordsteine an der Kreuzung "Auf dem Grat"	q1 1964,5
 Schloßpark Charlottenburg: Fußgänger	q1 3296,12719 3231,12749 3127,12793 3055,12973 2997,13402 2950,13552
 Spreeweg: eng und unübersichtlich	q2 2950,13552 2922,13594 2859,13686 2777,13712 2568,13662 2260,13540
 Lefèvrestr.: enge Straße	q1 4987,6902 4993,6812 5034,6745 5137,6651 5215,6643 5372,6663
-(Paul-Löbe-Allee - südl. Spreeufer): Gäste des Biergartens des HDKDW	q4 7741,12581 7670,12576
-(südliches Spreeufer): Gäste des Biergartens des HDKDW	q4 7745,12603 7710,12585 7670,12576
+(Paul-Löbe-Allee - südl. Spreeufer): Biergarten am HDKDW	q4 7741,12581 7670,12576
+(südliches Spreeufer): Biergarten am HDKDW	q4 7745,12603 7710,12585 7670,12576
 #: by: ^^^
 #: by: Michael Heckner:
 Robert-von-Ostertag-Str.: Pferde und Reiter	q1 -613,1949 -745,2320
