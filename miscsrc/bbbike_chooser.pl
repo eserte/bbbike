@@ -14,9 +14,10 @@
 
 use strict;
 use warnings;
+use FindBin;
+use lib ("$FindBin::RealBin/../lib");
 
 use Cwd qw(realpath);
-use FindBin;
 use File::Basename qw(basename);
 use File::Glob qw(bsd_glob);
 use File::Spec qw();
@@ -31,6 +32,27 @@ BEGIN {
 	    eval q{ use Safe; 1 } ||
 		die "ERROR: Can't load any YAML parser (tried YAML::Syck and YAML) and also no success loading Safe.pm: $@";
 }
+
+use Msg qw(M Mfmt noautosetup);
+
+my $lang = Msg::get_lang() || 'en';
+if ($lang !~ m{^(en|de)$}) {
+    $lang = 'en';
+}
+
+$Msg::messages =
+    { en => {}, # default language
+      de => {
+	     'Sorry, no data directories found in %s' => 'Sorry, keine Datenverzeichnisse in %s gefunden',
+	     'Exit' => 'Beenden',
+	     'Lazy drawing (experimental, faster startup)' => 'Verzögertes Zeichnen (experimentell, schnellerer Start)',
+	     'Warnings in a window' => 'Warnungen in ein eigenes Fenster',
+	     'Advanced mode' => 'Fortgeschrittener Modus',
+	     'Choose city/region:' => 'Stadt/Region auswählen:',
+	     '(original BBBike data)' => '(originale BBBike-Daten)',
+	     'Options' => 'Optionen',
+	    },
+    }->{$lang};
 
 sub usage ();
 sub guess_dataset_title_from_dir ($);
@@ -52,33 +74,33 @@ my @bbbike_datadirs;
 find_datadirs($rootdir);
 
 if (!@bbbike_datadirs) {
-    $mw->messageBox(-message => "Sorry, no data directories found in $rootdir");
+    $mw->messageBox(-message => Mfmt('Sorry, no data directories found in %s', $rootdir));
     exit;
 }
 
 uniquify_titles();
 
-my $xb = $mw->Button(-text => 'Exit',
+my $xb = $mw->Button(-text => M"Exit",
 		     -command => sub { $mw->destroy },
 		    )->pack(-side => 'bottom');
 $mw->bind('<Escape>' => sub { $xb->invoke });
 
 my %opt;
-$mw->Menubutton(-text => 'Options',
-		-menuitems => [[Checkbutton => 'Lazy drawing (experimental, faster startup)',
+$mw->Menubutton(-text => M"Options",
+		-menuitems => [[Checkbutton => M"Lazy drawing (experimental, faster startup)",
 				-variable => \$opt{'-lazy'},
 			       ],
-			       [Checkbutton => 'Warnings in a window',
+			       [Checkbutton => M"Warnings in a window",
 				-variable => \$opt{'-stderrwindow'},
 			       ],
-			       [Checkbutton => 'Advanced mode',
+			       [Checkbutton => M"Advanced mode",
 				-variable => \$opt{'-advanced'},
 			       ],
 			      ]
 	       )->pack(-side => 'bottom', -anchor => 'e');
 
 my $bln = $mw->Balloon;
-$mw->Label(-text => 'Choose your city/region:')->pack;
+$mw->Label(-text => M"Choose city/region:")->pack;
 my $p = $mw->Scrolled("Pane", -sticky => 'nw', -scrollbars => 'ose')->pack(qw(-fill both));
 my $adjust_geometry_cb;
 for my $bbbike_datadir (sort { $a->{dataset_title} cmp $b->{dataset_title} } @bbbike_datadirs) {
@@ -134,7 +156,7 @@ sub guess_dataset_title_from_dir ($) {
     my $dir = shift;
     $dir = basename $dir;
     if ($dir eq 'data') {
-	'Berlin (original BBBike data)';
+	'Berlin ' . M"(original BBBike data)";
     } else {
 	my $city = $dir;
 	$city =~ s{^data}{};
@@ -198,7 +220,6 @@ __END__
 
 =head2 TODO
 
- * german localization
  * store list of lru items into a config file
  * store options into a config file
  * get path to config file (~/.bbbike/bbbike_chooser_options) from a yet-to-written BBBikeUtil function
