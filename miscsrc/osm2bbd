@@ -28,7 +28,7 @@ use Getopt::Long;
 use IO::File;
 use List::Util qw(max);
 
-sub epoch2isodate (;$);
+sub epoch2isodatez (;$);
 sub touch ($);
 
 use constant DO_ASSERTS => 1;
@@ -1619,7 +1619,7 @@ EOF
 #:map: $map
 EOF
     }
-my $isodate = epoch2isodate;
+my $isodate = epoch2isodatez;
 print $ofh <<EOF;
 #:date: $isodate
 EOF
@@ -1678,7 +1678,7 @@ sub output_meta {
 
     my %meta;
 
-    $meta{created} = epoch2isodate;
+    $meta{created} = epoch2isodatez;
     $meta{created_by} = $ENV{EMAIL} || $ENV{REPLYTO} || $ENV{REPLY_TO} || (getpwuid($<))[0];
     $meta{commandline} = \@commandline;
     $meta{creation_cwd} = $cwd;
@@ -1838,18 +1838,13 @@ sub parse_warning {
     }
 }
 
-# REPO BEGIN
-# REPO NAME epoch2isodate /home/e/eserte/work/srezic-repository 
-# REPO MD5 a728acec57691739e2273d6c4836ecc1
-
-sub epoch2isodate (;$) {
+sub epoch2isodatez (;$) {
     my $time = shift || time;
-    my @l = localtime $time;
-    sprintf("%04d%02d%02d%02d%02d%02d",
+    my @l = gmtime $time;
+    sprintf("%04d%02d%02d%02d%02d%02dZ",
 	    $l[5]+1900, $l[4]+1, $l[3],
 	    $l[2],      $l[1],   $l[0]);
 }
-# REPO END
 
 # REPO BEGIN
 # REPO NAME is_interactive /home/e/eserte/work/srezic-repository 
