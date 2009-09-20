@@ -28,7 +28,8 @@ use Tk::Pane;
 BEGIN {
     eval q{ use YAML::Syck qw(LoadFile); 1 } ||
 	eval q{ use YAML qw(LoadFile); 1 } ||
-	    die "Can't load a YAML loader: $@";
+	    eval q{ use Safe; 1 } ||
+		die "ERROR: Can't load any YAML parser (tried YAML::Syck and YAML) and also no success loading Safe.pm: $@";
 }
 
 sub usage ();
@@ -109,17 +110,12 @@ sub find_datadirs {
     my($startdir) = @_;
     for my $dir (bsd_glob(File::Spec->catfile($startdir, '*'))) {
 	if (-d $dir) {
-	    my $meta_yml = File::Spec->catfile($dir, 'meta.yml');
-	    if (-f $meta_yml) {
-		my $meta = eval { LoadFile $meta_yml };
-		if (!$meta) {
-		    warn "WARN: Cannot load $meta_yml: $!, skipping this possible data directory...\n";
-		} else {
-		    $meta->{datadir} = $dir;
-		    $meta->{dataset_title} = guess_dataset_title_from_dir($dir)
-			if !$meta->{dataset_title};
-		    push @bbbike_datadirs, $meta;
-		}
+	    my $meta = load_meta($dir);
+	    if ($meta) {
+		$meta->{datadir} = $dir;
+		$meta->{dataset_title} = guess_dataset_title_from_dir($dir)
+		    if !$meta->{dataset_title};
+		push @bbbike_datadirs, $meta;
 	    } else {
 		my $base_dir = basename($dir);
 		if ($base_dir eq 'data-osm') { # Wolfram's convention
@@ -160,6 +156,36 @@ sub uniquify_titles {
 	    }
 	}
     }
+}
+
+sub load_meta {
+    my $dir = shift;
+
+    my $meta_yml = File::Spec->catfile($dir, 'meta.yml');
+    if (-f $meta_yml && defined &LoadFile) {
+	my $meta = eval { LoadFile $meta_yml };
+	if (!$meta) {
+	    warn "WARN: Cannot load $meta_yml: $!, will try another fallback...\n";
+	} else {
+	    return $meta;
+	}
+    }
+
+    my $meta_dd = File::Spec->catfile($dir, 'meta.dd');
+    if (-f $meta_dd) {
+	my $c = Safe->new;
+	my $meta = $c->rdo($meta_dd);
+	if (!$meta) {
+	    warn "WARN: Also cannot load $meta_dd: $!, skipping this possible data directory...\n";
+	    return;
+	} else {
+	    return $meta;
+	}
+    }
+
+    # Don't warn, we're usually trying every directory under
+    # $bbbike_root...
+    undef;
 }
 
 sub usage () {
