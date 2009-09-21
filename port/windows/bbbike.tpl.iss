@@ -37,8 +37,11 @@ OutputManifestFile=SETUP-MANIFEST
 
 [Files]
 [% IF use_strawberry -%]
+;;; XXX should contain only a MANIFEST copy of bbbike
 Source: "C:\cygwin\home\eserte\bbbikewindist\bbbike\*"; DestDir: "{app}\bbbike"; Flags: ignoreversion recursesubdirs createallsubdirs
+;;; XXX should contain a minimal set of gpsbabel, i.e. without doc, and maybe additional a notice where to get the complete distro and sources
 Source: "C:\cygwin\home\eserte\bbbikewindist\gpsbabel\*"; DestDir: "{app}\gpsbabel"; Flags: ignoreversion recursesubdirs createallsubdirs
+;;; XXX should contain a rather minimal strawberry. maybe strip some default modules there, but add essential like Tk and some nice-to-haves
 Source: "C:\cygwin\home\eserte\bbbikewindist\perl\*"; DestDir: "{app}\perl"; Flags: ignoreversion recursesubdirs createallsubdirs
 [% ELSE -%]
 [%
