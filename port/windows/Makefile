@@ -57,3 +57,5 @@ make-windows-installer: bbbike.iss
 devel:
 	$(MAKE) make-windows-installer BBBIKEVER=$(BBBIKEDEVELVER)
 
+strawberry-dist: make-BBBikeVar.tpl
+	tpage --debug=undef --define use_strawberry=1 --define VERSION=3.17-DEVEL --eval_perl bbbike.tpl.iss > bbbike.iss

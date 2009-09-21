@@ -5,8 +5,13 @@
    END;
 -%]
 [% PROCESS "../../BBBikeVar.tpl" -%]
-[% PROCESS "BBBikeWinDistFiles.tpl" -%]
-[% SET wperl_exe = "{app}\\windows\\5.6.1\\bin\\MSWin32-x86\\wperl.exe" -%]
+[% IF use_strawberry;
+     SET wperl_exe = "{app}\\perl\\bin\\wperl.exe";
+   ELSE;
+     PROCESS "BBBikeWinDistFiles.tpl";
+     SET wperl_exe = "{app}\\windows\\5.6.1\\bin\\MSWin32-x86\\wperl.exe";
+   END;
+-%]
 [% USE date %]
 
 [Setup]
@@ -22,11 +27,20 @@ DefaultGroupName=BBBike
 UninstallDisplayIcon={app}\bbbike\images\srtbike.ico
 Compression=lzma
 SolidCompression=yes
+[% IF use_strawberry -%]
+OutputDir=c:\cygwin\tmp
+[% ELSE -%]
 OutputDir=..\BBBike-Setup-Files
+[% END -%]
 OutputBaseFilename=BBBike-[% VERSION %]-Windows
 OutputManifestFile=SETUP-MANIFEST
 
 [Files]
+[% IF use_strawberry -%]
+Source: "C:\cygwin\home\eserte\bbbikewindist\bbbike\*"; DestDir: "{app}\bbbike"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "C:\cygwin\home\eserte\bbbikewindist\gpsbabel\*"; DestDir: "{app}\gpsbabel"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "C:\cygwin\home\eserte\bbbikewindist\perl\*"; DestDir: "{app}\perl"; Flags: ignoreversion recursesubdirs createallsubdirs
+[% ELSE -%]
 [%
 	FOR f = files
 -%]
@@ -36,12 +50,14 @@ Source: "[% f.src %]"; DestDir: "{app}\[% f.dest %]"[% -%]
 [%
 	END
 -%]
+[% END -%]
 
 [Icons]
 Name: "{group}\BBBike"; Filename: "[% wperl_exe %]"; Parameters: """{app}\bbbike\bbbike"""; WorkingDir: "{app}\bbbike"; IconFilename: "{app}\bbbike\images\srtbike.ico"; Comment: "BBBike - ein Routenplaner für Radfahrer in Berlin und Brandenburg"
 Name: "{userdesktop}\BBBike"; Filename: "[% wperl_exe %]"; Parameters: """{app}\bbbike\bbbike"""; WorkingDir: "{app}\bbbike"; IconFilename: "{app}\bbbike\images\srtbike.ico"; Comment: "BBBike - ein Routenplaner für Radfahrer in Berlin und Brandenburg"
 Name: "{group}\BBBike im WWW"; Filename: "[% BBBike.BBBIKE_DIRECT_WWW %]"; IconFilename: "{app}\bbbike\images\srtbike_www.ico"
 Name: "{group}\BBBike-Dokumentation"; Filename: "{app}\bbbike\doc\bbbike.html"
+Name: "{group}\BBBike Chooser"; Filename: "[% wperl_exe %]"; Parameters: """{app}\bbbike\miscsrc\bbbike_chooser.pl"""; WorkingDir: "{app}\bbbike"; IconFilename: "{app}\bbbike\images\srtbike.ico"
 
 [Languages]
 Name: "de"; MessagesFile: "compiler:Languages\German.isl"
