@@ -111,12 +111,20 @@ for my $bbbike_datadir (sort { $a->{dataset_title} cmp $b->{dataset_title} } @bb
 				    my @cmd = ($^X, File::Spec->catfile($this_rootdir, 'bbbike'), '-datadir', $datadir,
 					       (grep { $opt{$_} } keys %opt),
 					      );
-				    if (fork == 0) {
+				    if ($^O eq 'MSWin32') {
+					# no forking here
 					exec @cmd;
-					warn "Cannot start @cmd: $!";
-					CORE::exit(1);
+					use Tk::ErrorDialog;
+					$mw->messageBox(-message => "Can't execute @cmd: $!",
+							-icon => 'error');
+				    } else {
+					if (fork == 0) {
+					    exec @cmd;
+					    warn "Cannot start @cmd: $!";
+					    CORE::exit(1);
+					}
+					$mw->destroy;
 				    }
-				    $mw->destroy;
 				},
 			       ), -sticky => 'ew');
     $bln->attach($b, -msg => $datadir);
