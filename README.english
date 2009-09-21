@@ -2,16 +2,23 @@
 
 BBBike - a route-finder for cyclists in Berlin and Brandenburg
 
+=head1 PREBUILD PACKAGES
+
+You can check on L<http://bbbike.sourceforge.net/downloads.en.html> for prebuild BBBike
+packages. But keep in mind that the versions there might not represent
+the newest state and maybe your operating system is not covered.
+
 =head1 INSTALLATION
+
 
 =head2 All systems except Windows
 
 
 =head3 Download
 
-You can find the newest distribution file of BBBike in the directory
-L<http://sourceforge.net/project/showfiles.php?group_id=19142&package_id=14052> . The current source version is
-L<http://heanet.dl.sourceforge.net/sourceforge/bbbike/BBBike-3.16.tar.gz> .
+You can find the newest source distribution file of BBBike in the directory
+L<http://sourceforge.net/projects/bbbike/files/BBBike/> . The current source version is
+L<http://heanet.dl.sourceforge.net/project/bbbike/BBBike/3.16/BBBike-3.16.tar.gz> .
 
 =head3 FreeBSD
 
@@ -100,7 +107,7 @@ L<http://groups.google.com>).
 
 The following instructions are from Wolfram Kroll:
 
-Get L<http://heanet.dl.sourceforge.net/sourceforge/bbbike/BBBike-3.16.tar.gz> and (from
+Get L<http://heanet.dl.sourceforge.net/project/bbbike/BBBike/3.16/BBBike-3.16.tar.gz> and (from
 L<http://www.cpan.org>) perl-5.8.4-stable.tar.gz, Tk-804.027.tar.gz
 
 =over
@@ -148,7 +155,7 @@ Mac OS Classic is not supported.
 BBBike and Perl need approx. 32 MB hard disk space.
 
 Download the file
-L<http://heanet.dl.sourceforge.net/sourceforge/bbbike/BBBike-3.16-Windows.exe> and just start it for the installation
+L<http://heanet.dl.sourceforge.net/project/bbbike/BBBike/3.16/BBBike-3.16-Windows.exe> and just start it for the installation
 program.
 
 =head3 Alternative Windows Installation (1)
@@ -178,7 +185,7 @@ does not need to be installed.
 =item *
 
 Download
-C<BBBike-3.16.tar.gz|http://heanet.dl.sourceforge.net/sourceforge/bbbike/BBBike-3.16-Windows.exe>
+C<BBBike-3.16.tar.gz|http://heanet.dl.sourceforge.net/project/bbbike/BBBike/3.16/BBBike-3.16-Windows.exe>
 and extract this file with 
 WinZip. The unpacked directory will not move in the later
 installation.

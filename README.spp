@@ -17,6 +17,7 @@
 ## perlreplace #BBBIKEVAR_UPDATE_DATA_CGI#	$BBBike::BBBIKE_UPDATE_DATA_CGI
 ## perlreplace #BBBIKEVER#  $BBBike::STABLE_VERSION
 ## perlreplace #BBBIKEWINVER#  $BBBike::WINDOWS_VERSION
+## perlreplace #BBBIKESFWWW# $BBBike::BBBIKE_SF_WWW
 ## perlreplace #MAIL#       $BBBike::EMAIL
 ## perlreplace #CGIURL#     $BBBike::BBBIKE_WWW
 ## perlreplace #DIRECTCGIURL#     $BBBike::BBBIKE_DIRECT_WWW
@@ -39,7 +40,29 @@ a route-finder for cyclists in Berlin and Brandenburg
 ## yes
 
 
+=head1 
+## only DE
+FERTIGE PAKETE
+## but DE
+PREBUILD PACKAGES
+## yes
+
+
+
+## only DE
+Wenn man sich die Arbeit erleichtern möchte, dann kann man ein
+fertiges Paket auf L<#BBBIKESFWWW#/downloads.de.html> finden. Die
+Versionen dort sind allerdings unter Umständen nicht auf dem neuesten
+Stand; auch sind nicht alle Betriebssysteme erhältlich.
+## but DE
+You can check on L<#BBBIKESFWWW#/downloads.en.html> for prebuild BBBike
+packages. But keep in mind that the versions there might not represent
+the newest state and maybe your operating system is not covered.
+## yes
+
+
 =head1 INSTALLATION
+
 
 =head2 
 ## only DE
@@ -64,7 +87,7 @@ Die aktuellste BBBike-Archivdatei findet man im Verzeichnis
 L<#BBBIKEVAR_DISPLAY_DISTDIR#> . Die aktuelle Sourcedatei ist
 L<#BBBIKEVAR_DISTFILE_SOURCE#> .
 ## but DE
-You can find the newest distribution file of BBBike in the directory
+You can find the newest source distribution file of BBBike in the directory
 L<#BBBIKEVAR_DISPLAY_DISTDIR#> . The current source version is
 L<#BBBIKEVAR_DISTFILE_SOURCE#> .
 ## yes

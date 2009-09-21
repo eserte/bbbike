@@ -2,7 +2,15 @@
 
 BBBike - ein Programm zum Suchen von Routen für Radfahrer in Berlin
 
+=head1 FERTIGE PAKETE
+
+Wenn man sich die Arbeit erleichtern möchte, dann kann man ein
+fertiges Paket auf L<http://bbbike.sourceforge.net/downloads.de.html> finden. Die
+Versionen dort sind allerdings unter Umständen nicht auf dem neuesten
+Stand; auch sind nicht alle Betriebssysteme erhältlich.
+
 =head1 INSTALLATION
+
 
 =head2 Alle Systeme außer Windows
 
@@ -10,8 +18,8 @@ BBBike - ein Programm zum Suchen von Routen für Radfahrer in Berlin
 =head3 Download
 
 Die aktuellste BBBike-Archivdatei findet man im Verzeichnis
-L<http://sourceforge.net/project/showfiles.php?group_id=19142&package_id=14052> . Die aktuelle Sourcedatei ist
-L<http://heanet.dl.sourceforge.net/sourceforge/bbbike/BBBike-3.16.tar.gz> .
+L<http://sourceforge.net/projects/bbbike/files/BBBike/> . Die aktuelle Sourcedatei ist
+L<http://heanet.dl.sourceforge.net/project/bbbike/BBBike/3.16/BBBike-3.16.tar.gz> .
 
 =head3 FreeBSD
 
@@ -102,7 +110,7 @@ von Perl/Tk auf Mac OS X bekommt man in der comp.lang.perl.tk Newsgroup
 
 Folgende Anleitung habe ich von Wolfram Kroll erhalten:
 
-L<http://heanet.dl.sourceforge.net/sourceforge/bbbike/BBBike-3.16.tar.gz> und (von
+L<http://heanet.dl.sourceforge.net/project/bbbike/BBBike/3.16/BBBike-3.16.tar.gz> und (von
 L<http://www.cpan.org>) perl-5.8.4-stable.tar.gz, Tk-804.027.tar.gz
 besorgt.
 
@@ -151,7 +159,7 @@ Mac OS Classic wird nicht unterstützt.
 
 BBBike und Perl benötigen ca. 32 MB an Festplattenspeicher.
 
-Einfach die Datei L<http://heanet.dl.sourceforge.net/sourceforge/bbbike/BBBike-3.16-Windows.exe> laden und starten.
+Einfach die Datei L<http://heanet.dl.sourceforge.net/project/bbbike/BBBike/3.16/BBBike-3.16-Windows.exe> laden und starten.
 Damit wird das Installationsprogramm gestartet.
 
 =head3 Alternative Windows Installation (1)
@@ -181,7 +189,7 @@ enthalten und muss nicht separat installiert werden.
 
 =item *
 
-L<BBBike-3.16.tar.gz|http://heanet.dl.sourceforge.net/sourceforge/bbbike/BBBike-3.16-Windows.exe>
+L<BBBike-3.16.tar.gz|http://heanet.dl.sourceforge.net/project/bbbike/BBBike/3.16/BBBike-3.16-Windows.exe>
 downloaden und mit WinZip auspacken. Das
 ausgepackte Verzeichnis wird später nicht mehr verschoben.
 
