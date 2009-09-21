@@ -57,5 +57,30 @@ make-windows-installer: bbbike.iss
 devel:
 	$(MAKE) make-windows-installer BBBIKEVER=$(BBBIKEDEVELVER)
 
-strawberry-dist: make-BBBikeVar.tpl
+######################################################################
+# new rules for strawberry dist
+
+bbbike-strawberry-dist: make-BBBikeVar.tpl
 	tpage --debug=undef --define use_strawberry=1 --define VERSION=3.17-DEVEL --eval_perl bbbike.tpl.iss > bbbike.iss
+
+# XXX TODOs:
+# - all InlineDist.pm are missing in git --- should I include it? Or generate it, how? Or should I switch to Inline::C2XS as fast as possible?
+# - data/.modified is missing, but may be created using miscsrc/create_modified.pl
+make-bbbike-dist:
+	[ -d ../../../../bbbikewindist ]
+	-rm -rf ../../../../bbbikewindist/bbbike.old
+	-mv ../../../../bbbikewindist/bbbike ../../../../bbbikewindist/bbbike.old
+	perl "-MExtUtils::Manifest=manicopy,maniread" -e "chdir q{../..} or die; manicopy(maniread(q{MANIFEST}),q{../../bbbikewindist/bbbike}, 'cp');"
+
+# XXX more rules missing:
+#
+# make-gpsbabel-dist:
+# would grab a complete gpsbabel, strip everything but gpsbabel.exe,
+# AUTHORS and COPYING and add a README where the rest may be found
+# it would be especially nice if I could reuse the libexpat.dll from strawberry/perl/bin
+#
+# make-small-strawberry-dist:
+# would grab a complete strawberry, remove unused parts and add (via CPAN?)
+# essential modules to strawberry. Essential at least: Tk, but maybe
+# everything listed in Bundle::windist
+
