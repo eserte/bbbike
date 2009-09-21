@@ -39,7 +39,9 @@ if (!GetOptions(get_std_opts("cgidir"),
 
 {
     my $make = $^O =~ m{bsd}i ? "make" : "pmake";
-    system("cd $FindBin::RealBin/data && $make");
+    # -f BSDmakefile needed for old pmake (which may be found in Debian)
+    system("cd $FindBin::RealBin/data && $make -f BSDmakefile");
+    diag "Error running make, expect test failures..." if $? != 0;
 }
 
 my $testcgi = "$cgidir/bbbike-test.cgi";
