@@ -113,8 +113,7 @@ for my $bbbike_datadir (sort { $a->{dataset_title} cmp $b->{dataset_title} } @bb
 					      );
 				    if ($^O eq 'MSWin32') {
 					# no forking here
-					exec @cmd;
-					use Tk::ErrorDialog;
+					{ exec @cmd }
 					$mw->messageBox(-message => "Can't execute @cmd: $!",
 							-icon => 'error');
 				    } else {
