@@ -1642,26 +1642,8 @@ userdel	q4::inwork; 10829,18083 10907,18109 10938,18147 10989,18172 11137,18358 
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_014178',
-         'until' => 1253483999,
-         'text' => 'Hauptstr. (Rosenthal) in beiden Richtungen zwischen Friedrich-Engels-Str. und Schönhauser Str. Veranstaltung, Verkehrsstörung möglich',
-         'from' => undef,
-         'id' => 1893,
-         'data' => 'userdel	q4::temp 8277,21257 8460,21602
-',
-         'type' => 'handicap'
-       },
-       {
-         'source_id' => 'IM_014201',
-         'until' => 1253505600,
-         'text' => 'Scheidemannstr. (Tiergarten) in beiden Richtungen zwischen John-Foster-Dulles-Allee und Dorotheestr. wegen Marathon, Straße vollständig gesperrt, ebenfalls gesperrt: Heinrich-von-Gagern-Str, Paul-Löbe-Allee (bis Montag, 6 Uhr) (11:55) ',
-         'from' => 1253272543,
-         'id' => 1894,
-         'data' => 'userdel	q4::temp 8540,12420 8400,12417 8374,12416 8119,12414 8123,12615 8207,12616 8306,12617 8399,12616
-',
-         'type' => 'handicap'
-       },
+       undef,
+       undef,
        {
          'source_id' => 'IM_014191',
          'until' => 1253570399,
