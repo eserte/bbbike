@@ -535,7 +535,7 @@ userdel	1::inwork 10614,19907 10742,19632
          'text' => 'Reichenberger Str., Einbahnstraße Richtung Kottbusser Tor',
          'from' => undef,
          'id' => 1563,
-         'data' => '#: last_checked: 2009-09-01
+         'data' => '#: last_checked: 2009-09-22
 userdel	1::inwork 12229,10014 12398,9938 12556,9862
 ',
          'type' => 'gesperrt'
@@ -1088,15 +1088,7 @@ userdel	2::inwork 7160,11225 6851,11346
        },
        undef,
        undef,
-       {
-         'until' => 1253570400,
-         'text' => 'L 030 Friedrichstr. OD Erkner, zw. Kreisverkehr u. Beuststr. 17. Heimatfest Vollsperrung 17.09.2009-21.09.2009 ',
-         'from' => 1253052000,
-         'id' => 1799,
-         'data' => 'userdel	2::temp 34443,1951 34250,2546
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        {
@@ -1361,15 +1353,7 @@ Neuer Garten (am Portierhaus) - Weinmeisterstr.: Weg ist nur zwischen 6 Uhr bis 
          'type' => 'handicap'
        },
        undef,
-       {
-         'until' => 1253570400,
-         'text' => 'B 115 Am Spreeufer OL Lübben, zw. Krz. B87 u. Brückenplatz Stadtfest Vollsperrung 15.09.2009-21.09.2009 ',
-         'from' => 1252879200,
-         'id' => 1837,
-         'data' => 'userdel	q4::temp 45023,-51268 44951,-51018
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => 1254520800,
@@ -1504,15 +1488,7 @@ d Breitenbachstr. Baustelle, Fahrtrichtung gesperrt (bis Anfang 05/2010)',
        undef,
        undef,
        undef,
-       {
-         'until' => 1253570400,
-         'text' => 'L 074 Sperenberger Str. OL Klausdorf, zw. Zossener Str. und Am Park Kanalarbeiten Vollsperrung 07.09.2009-21.09.2009 ',
-         'from' => 1252188000,
-         'id' => 1868,
-         'data' => 'userdel	q4::inwork 11017,-27817 11325,-27743
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => 1259622000,
@@ -1644,32 +1620,13 @@ userdel	q4::inwork; 10829,18083 10907,18109 10938,18147 10989,18172 11137,18358 
        },
        undef,
        undef,
-       {
-         'source_id' => 'IM_014191',
-         'until' => 1253570399,
-         'text' => 'Straße des 17. Juni (Tiergarten) in beiden Richtungen zwischen Großer Stern und Brandenburger Tor (Marathon), Straße vollständig gesperrt, auch gesperrt ist die Ebertstr. zwischen Behrenstr. und Dorotheenstr. (bis 21.09., 12 Uhr)',
-         'from' => 1253359000,
-         'id' => 1895,
-         'data' => 'userdel	q4::temp 8595,12066 8600,12165 8538,12245 8546,12279 8570,12302 8573,12325 8540,12420
-userdel	q4::temp 6828,12031 7383,12095 7816,12150 8055,12186 8089,12190 8214,12205 8538,12245 8610,12254
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1275256800,
          'text' => 'K 6910 Am Wasser OD Schwielowsee, zw. Hellwegbaumarkt und Mühlenbergstr. Kanal- u. Straßenbau halbseitig gesperrt; Einbahnstraße 21.09.2009-30.05.2010 ',
          'from' => 1253397600,
          'id' => 1896,
          'data' => 'userdel	q4::inwork; -19013,-5247 -19112,-5226 -19332,-5240
-',
-         'type' => 'handicap'
-       },
-       {
-         'until' => 1253570400,
-         'text' => 'L 030 Straße der Jugend OL Rüdersdorf, zw. Am Landhof und Torellplatz Gleisbauarbeiten Vollsperrung 18.09.2009-21.09.2009 ',
-         'from' => 1253138400,
-         'id' => 1897,
-         'data' => 'userdel	q4::inwork 35771,7946 35662,8028 35625,8093
 ',
          'type' => 'handicap'
        }

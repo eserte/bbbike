@@ -2590,6 +2590,7 @@ Annenallee: schlechtes Kopfsteinpflaster	Q3 22009,5593 21901,5728
 Heinrich-Schlusnus-Str.: Asphalt	Q0 15026,6391 15056,6431 15054,6526 15054,6589 15070,6621 15146,6690
 Joseph-Schmidt-Str.: Asphalt	Q0 15260,6310 15255,6531 15275,6554
 #: note: zumindest an der Oberspreestr.
+#: note: Stefan (moehres) meint Asphalt, Q1
 Johanna-Tesch-Str.: Beton	Q0- 19715,5185 19743,5271 19756,5313 19928,5365 20030,5334 19998,5226 19930,5247 19919,5214 19743,5271
 Müggelpark: Kleinpflastersteine	Q1 25658,4619 25692,4727
 (Müggelturm - Müggelheim): Asphalt, teilweise mit Wurzelschäden	Q1+ 25626,1314 26302,1048 26425,942 26682,769 26783,721 27021,721 27151,729 27202,770
@@ -4684,7 +4685,7 @@ Rohrbachstr.: Kopfsteinpflaster	Q2 9658,-2640 9658,-2419 9650,-2135
 Bundschuhweg: Verbundsteinpflaster	Q1 3223,25868 3348,25902
 #: confirmed_by: Wolfhard Schleese:
 Bundschuhweg: Asphalt mit diversen notdürftig geflickten Frostaufbrüchen	Q2+ 3348,25902 3422,25935 3477,25969
-Maarer Str.: Beton	Q1 5568,21185 5676,21354 5892,21548 6056,21667 6253,21778
+Maarer Str.: Beton	Q1 5568,21185 5628,21279 5676,21354 5892,21548 6056,21667 6253,21778
 #: confirmed_by: Wolfhard Schleese
 Bieselheider Weg: Verbundsteinpflaster	Q1 3485,26544 3487,26491 3471,26447 3419,26398 3396,26364
 #: confirmed_by: Wolfhard Schleese "mäßiger Asphalt" vvv
@@ -6104,6 +6105,7 @@ Erdmann-Graeser-Weg: kleinteiliges Pflaster	Q1 -833,3619 -935,3706 -961,3737 -10
 Friedrich-Wolf-Str.: mäßiger Beton	Q1- 22236,2029 22224,2061 22210,2140 22131,2333 22205,2367
 #: by: michael weber: vvv
 #: confirmed_by: holger isbjoern:
+#: note: wethekam meint hingegen: Asphalt Q2, enge Straße q2
 Jansenstr.: guter Asphalt	Q0 5278,19853 5338,19843 5396,19833 5422,19829 5439,19826 5533,19811
 (Hermann-Piper-Str./Olbendorfer Weg - Rathauspromenade): gepflasterte Wege	Q0- 4997,19849 5254,19931
 #: by: ^^^
@@ -7182,7 +7184,7 @@ Petersallee: guter Asphalt	Q0 5426,16539 5602,16718 5684,16815 5777,16924
 #: by: Velodoom:
 Verlängerte Koloniestr.: mäßiges Kopfsteinpflaster	Q2 8944,17961 8957,18124 8918,18159
 #: by: Thomas Plischka:
-Knollstr.: Kopfsteinpflaster	Q2 17242,-80 17558,126
+Knollstr.: Kopfsteinpflaster	Q2 17242,-80 17362,-1 17429,42 17488,80 17558,126
 #: by: Ingo Henning:
 Mareyzeile: guter Beton	Q0 -6013,12009 -6013,12041 -5880,12209 -5872,12235
 #: by: Peter Kunz:
@@ -8833,6 +8835,8 @@ Altenescher Weg: Betonplatten z.T. mit Absätzen	Q2+ 14051,14822 13856,14944 1374
 Am Teufelsbruch: Asphalt	Q0 -2678,18396 -2673,18634
 Zum Erlengrund: Asphalt	Q0 -2605,18393 -2595,18629
 Zu den Fichtenwiesen: Asphalt	Q0 -2535,18391 -2523,18627
+Rustweg: OK	Q0 -2827,18639 -2673,18634 -2595,18629 -2523,18627 -2454,18620 -2455,18620
+(Rustweg - Uferweg): feste Sandstraße mit Schlaglöchern	Q2 -2455,18620 -2282,18615
 #: by: ^^^
 #: by: Timm (wille):
 Libellenstr.: schlechtes Kopfsteinpflaster	Q3 -3703,2137 -3699,2085 -3707,2037 -3742,1980 -3738,1929 -3602,1799 -3559,1760
@@ -8898,6 +8902,21 @@ Lauinger Str.: Asphalt	Q0 21537,11256 21305,11363 21221,11398
 #: note: "unbefahrene alte Betonstraße.. Sackgasse"
 Gartenstr. (Biesdorf): alte Betonstraße	Q2 21138,11271 21162,11287 21192,11324 21217,11328
 #: by: ^^^
+#: by: Andreas Kadgien:
+#: note: "ohne Schäden"
+Münchehagenstr.: Asphalt/Bitumen	Q0 16586,23061 16383,23197 16284,23260 16218,23303 16115,23375 16012,23439 15899,23508
+#: by: frieda (maxxiteam...)
+Thujaweg: guter Beton	Q0 15721,5211 15621,5034 15445,4878
+#: by: sebastian (hptm...)
+#: note: explizit "q1" angegeben
+Paul-Dessau-Str.: Beton	Q1 20787,16294 20811,16283 20833,16219 20764,16073 20707,16054 20656,16077
+#: by: Elke Ortloff:
+Eisweg: guter Asphalt	Q0 23562,10934 23577,10915 23608,10902 23596,10848 23561,10712 23569,10693
+#: by: Birgit Lipinski:
+#: note: "ruhige Nebenstraße, Tempo 30"
+Landenhäuser Weg: guter Beton	Q0 5676,21354 5604,21400 5549,21447
+#: by: Bernhard Husch:
+Pfarrer-Lüdtkehaus-Platz: Asphalt	Q0 10318,-2156 10231,-2159 10220,-2137
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206

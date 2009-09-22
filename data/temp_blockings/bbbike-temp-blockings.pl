@@ -13248,7 +13248,7 @@ EOF
        text  => 'Reichenberger Str., Einbahnstraße Richtung Kottbusser Tor',
        type  => 'gesperrt',
        data  => <<EOF,
-#: last_checked: 2009-09-01
+#: last_checked: 2009-09-22
 userdel	1::inwork 12229,10014 12398,9938 12556,9862
 EOF
      },

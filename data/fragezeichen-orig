@@ -1650,6 +1650,7 @@ Zellerfelder Str.: Qualität? Einbahnstraße? Auch für Radfahrer?	? 11468,19106 11
 Oranienburger Str. - Wilhelm-Gericke-Str.: kann man als Radfahrer direkt von der Oranienburger Str. in die Wilhelm-Gericke-Str. gelangen	? 5545,19909 5598,19912
 Lenaustr. (Lichtenrade): Qualität?	? 10380,757 10281,749 10237,749 10179,744 10021,741
 Glaserweg: Qualität?	? 10187,872 10237,749
+#: XXX Antje Lange meint: Kopfsteinpflaster, q3, einige Fußgänger -> nachgefragt
 Feldstedter Weg: Qualität?	? 10539,662 10423,636 10332,607 10242,572 10099,524
 Humboldtstr. (Lichtenrade): Qualität?	? 10469,-52 10353,-94 10214,-142
 Rudolf-Pechel-Str.: Qualität?	? 9991,-413 9913,-432 9920,-513 10018,-494
@@ -2514,7 +2515,6 @@ Sperlingsweg: Qualität?	? 14808,5202 14842,5128 14898,5010 14947,4961 14976,4935
 Straße 19 (Baumschulenweg): Qualität?	? 14681,5529 14669,5573 14664,5834
 Straße 20 (Baumschulenweg): Qualität?	? 14669,5573 14830,5564
 Straße 21 (Baumschulenweg): Qualität?	? 14830,5564 14830,5594 14830,5687 14833,5829
-Thujaweg: Qualität?	? 15721,5211 15621,5034 15445,4878
 Am Wäldchen (Blankenfelde): Qualität?	? 8826,24501 8905,24573 8972,24641 9032,24700
 Sonnenblumensteig: Qualität?	? 8972,24641 8906,24829 8864,24942 8791,25019
 #: XXX Eintrag in Berlin.coords.data fehlt noch
@@ -2957,7 +2957,6 @@ Oberweißbacher Str.: Qualität? Im Mittelteil für Autos gesperrt?	? 21602,16866 2
 Liebensteiner Str.: Qualität?	? 20678,17012 20741,17132 20767,17179 20872,17128 20899,17174 20935,17201 21012,17360
 Trusetaler Str.: Qualität? Sind Teile der Straße Einbahnstraße?	? 21390,16903 21431,17055 21451,17189 21352,17210 21360,17261 21285,17276 21225,17286 21154,17296 21081,17329 21012,17360 20911,17414
 Merseburger Str. (Marzahn): Qualität?	? 20460,18030 20490,18120 20407,18273
-Paul-Dessau-Str.: Qualität?	? 20787,16294 20811,16283 20833,16219 20764,16073 20707,16054 20656,16077
 Radebeuler Str.: Qualität? Ist die Straße eine Einbahnstraße? Wenn ja, gilt die Einbahnstraßenregelung nur für Autofahrer oder auch für Radfahrer?	? 19025,14037 19067,13818
 Scheibenbergstr. - Blenheimstr.: Durchfahrt für Radfahrer möglich? Qualität?	? 20692,15161 20687,15193
 Schragenfeldstr.: Qualität?	? 20980,14914 21027,14886 21083,14878 21097,14907 21097,14997 21201,14994
@@ -3541,6 +3540,7 @@ Am Wasserturm: Qualität?	? 12479,17811 12338,17862 12231,17908 12200,17919 12118
 #: XXX laut anonymous "Kopfsteinpflaster", aber ohne weitere Kategorisierung:
 Hirseländerweg: Qualität?	? 28301,1467 28327,1525 28369,1616 28502,1827 28557,1907 28640,2015 28695,2093 28717,2121 28829,2269 28916,2333 28993,2391 29070,2446 29192,2543
 Tychyer Str.: Qualität?	? 21398,11482 21305,11363
+#: XXX Sebastian Koch war sich hier nicht sicher
 Gartenstr. - Tychyer Str.: Ist der Weg nachts beleuchtet?	? 21217,11328 21255,11314 21286,11319 21305,11363
 Arno-Philippsthal-Str.: Qualität?	? 20640,11469 20636,11342
 Minsker Str.: Qualität?	? 20828,11466 20820,11328 20817,11252 20834,11150
@@ -3678,7 +3678,6 @@ Eddastr.: Qualität?	? 12364,21623 12418,21727 12433,21880 12448,21971 12467,2214
 Eddastr.: Qualität?	? 12476,22423 12473,22801
 Ludwig-Quidde-Str.: Qualität?	? 12570,21058 12613,21132 12695,21336 12778,21583 12806,21639 12825,21771 12829,21814 12837,21876 12841,21925 12843,22010 12850,22177 12852,22262 12852,22337 12855,22431
 Papenberger Weg: Qualität?	? -2937,19008 -2894,19019 -2789,19013
-Rustweg: Qualität? Existiert für Radfahrer eine Verbindung zum Uferweg?	? -2827,18639 -2673,18634 -2595,18629 -2523,18627 -2455,18620 -2282,18615
 Zeesener Weg: Qualität?	? 30998,4012 31140,4059 31218,4082
 Döhlauer Pfad: Qualität?	? 7879,3455 7800,3435
 Bernecker Weg: Qualität?	? 7704,3383 7706,3512 7712,3542 7737,3598 7778,3644 7839,3714 7886,3801
@@ -3763,8 +3762,6 @@ Ammerseestr. - Waldstr.: Qualität? Nachts beleuchtet?	? 22166,1636 22216,1823
 Wegedornstr. - Mauerweg: Für Radfahrer befahrbar? Qualität? Nachts beleuchtet?	? 18813,1745 18770,1688 18673,1487
 Mauerweg - Töpchiner Weg: Qualität? Nachts beleuchtet?	? 11794,550 11691,554 11598,587
 Lutz-Schmidt-Str.: Qualität?	? 18799,91 18644,157
-#: XXX unklarer Eintrag von anonymous: Asphalt, viele Fußgänger q0, Radweg
-Münchehagenstr.: Qualität? Gibt es hier einen Radweg?	? 16586,23061 16383,23197 16284,23260 16218,23303 16115,23375 16012,23439 15899,23508
 Froschsteg: Qualität?	? 19110,-612 19028,-548 18985,-525
 Krötengasse: Qualität?	? 19199,-542 19072,-474
 Otterstr.: Qualität?	? 19105,-376 19072,-474 19028,-548
@@ -3805,3 +3802,7 @@ Schäfersee - Baseler Str.: Qualität? Für Radfahrer offiziell befahrbar? Nachts b
 Kalkbergeweg: Qualität?	? 31025,4116 31200,4218 31296,4346 31387,4571 31424,4658 31469,4678 31542,4680 31673,4641 31734,4624
 #: XXX zumindest die ersten beiden Kreuzungen nördlich der S-Bahnstrecke haben entsprechende Schilder
 Rochstr./Max-Beer-Str.: Wo genau verläuft die neue Fahrradstraße? 	? 10535,13006 10571,13034 10582,13104 10635,13207 10703,13467 10740,13621
+#: XXX anonymous hat Q2 und q3 angegeben, aber ohne genauere Angaben
+Greifenberger Str.: Qualität?	? 17488,80 17281,411 17134,644
+Torgelowweg: Qualität?	? 17165,323 17362,-1
+Straße 604: Führt die Straße 604 bis zum Knollweg? Ist die gesamte Straße mit Verbundsteinpflaster versehen?	? 17077,526 17119,526 17228,361 17429,42

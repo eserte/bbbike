@@ -3649,7 +3649,7 @@ Altheider Str.: schlechtes Kopfsteinpflaster	Q3 19812,3561 19871,3600 19933,3641
 Rohrbachstr.: Kopfsteinpflaster	Q2 9658,-2640 9658,-2419 9650,-2135
 Bundschuhweg: Verbundsteinpflaster	Q1 3223,25868 3348,25902
 Bundschuhweg: Asphalt mit diversen notdürftig geflickten Frostaufbrüchen	Q2 3348,25902 3422,25935 3477,25969
-Maarer Str.: Beton	Q1 5568,21185 5676,21354 5892,21548 6056,21667 6253,21778
+Maarer Str.: Beton	Q1 5568,21185 5628,21279 5676,21354 5892,21548 6056,21667 6253,21778
 Bieselheider Weg: Verbundsteinpflaster	Q1 3485,26544 3487,26491 3471,26447 3419,26398 3396,26364
 Bieselheider Weg: schlecht ausgebesserte Asphaltdecke	Q2 3396,26364 3360,26275
 Bieselheider Weg: schlecht ausgebesserte Asphaltdecke	Q2 3347,26272 3328,26193 3318,26130 3324,26100 3352,26065 3477,25969 3529,25945 3587,25936
@@ -4957,7 +4957,7 @@ Baumbachstr.: schlechtes Kopfsteinpflaster	Q3 11441,16612 11441,16745
 Feldtmannstr.: schlechtes Kopfsteinpflaster	Q3 16460,17214 16418,17311 16380,17356 16326,17407 16302,17439 16070,17472 15827,17509 15810,17512 15239,17599
 Petersallee: guter Asphalt	Q0 5426,16539 5602,16718 5684,16815 5777,16924
 Verlängerte Koloniestr.: mäßiges Kopfsteinpflaster	Q2 8944,17961 8957,18124 8918,18159
-Knollstr.: Kopfsteinpflaster	Q2 17242,-80 17558,126
+Knollstr.: Kopfsteinpflaster	Q2 17242,-80 17362,-1 17429,42 17488,80 17558,126
 Mareyzeile: guter Beton	Q0 -6013,12009 -6013,12041 -5880,12209 -5872,12235
 Zieselweg: mäßiger Beton	Q1 2511,22590 2513,22737 2500,22867 2418,22878
 Gottschalkstr.: Asphalt	Q0 9399,17496 9265,17585 9160,17656
@@ -5727,6 +5727,8 @@ Altenescher Weg: Betonplatten z.T. mit Absätzen	Q2 14051,14822 13856,14944 13749
 Am Teufelsbruch: Asphalt	Q0 -2678,18396 -2673,18634
 Zum Erlengrund: Asphalt	Q0 -2605,18393 -2595,18629
 Zu den Fichtenwiesen: Asphalt	Q0 -2535,18391 -2523,18627
+Rustweg: OK	Q0 -2827,18639 -2673,18634 -2595,18629 -2523,18627 -2454,18620 -2455,18620
+(Rustweg - Uferweg): feste Sandstraße mit Schlaglöchern	Q2 -2455,18620 -2282,18615
 Libellenstr.: schlechtes Kopfsteinpflaster	Q3 -3703,2137 -3699,2085 -3707,2037 -3742,1980 -3738,1929 -3602,1799 -3559,1760
 Girlitzweg: guter Beton	Q0 15273,3269 15321,3332 15373,3403
 Girlitzweg: Asphalt	Q0 15176,3136 15273,3269
@@ -5755,6 +5757,12 @@ Windthorststr.: guter Beton	Q1 22424,10662 22490,10868 22552,11029
 Lauinger Str.: Asphalt	Q0 21537,11256 21305,11363 21221,11398
 (Gartenstr. - Tychyer Str.): loser Sandweg	Q3 21217,11328 21255,11314 21286,11319 21305,11363
 Gartenstr. (Biesdorf): alte Betonstraße	Q2 21138,11271 21162,11287 21192,11324 21217,11328
+Münchehagenstr.: Asphalt/Bitumen	Q0 16586,23061 16383,23197 16284,23260 16218,23303 16115,23375 16012,23439 15899,23508
+Thujaweg: guter Beton	Q0 15721,5211 15621,5034 15445,4878
+Paul-Dessau-Str.: Beton	Q1 20787,16294 20811,16283 20833,16219 20764,16073 20707,16054 20656,16077
+Eisweg: guter Asphalt	Q0 23562,10934 23577,10915 23608,10902 23596,10848 23561,10712 23569,10693
+Landenhäuser Weg: guter Beton	Q0 5676,21354 5604,21400 5549,21447
+Pfarrer-Lüdtkehaus-Platz: Asphalt	Q0 10318,-2156 10231,-2159 10220,-2137
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206
 Richard-Ermisch-Str.: Asphalt	Q0 14250,13281 14224,13206 14207,13152 14177,13065 14163,13025 14130,12926 14096,12827
 Zum Langen Jammer: Kopfsteipflaster, Gehweg besser	Q2 14686,12873 14405,12953
