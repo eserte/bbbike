@@ -16112,4 +16112,73 @@ EOF
 userdel	q4::inwork 35771,7946 35662,8028 35625,8093
 EOF
      },
+     { from  => 1253730664, # 2009-09-23 20:31
+       until => 1255643999, # 2009-10-15 23:59
+       text  => 'Bahnhofstr. (Pankow) in beiden Richtungen zwischen Mönchmühler Str. und Bahnübergang (ehemaliger Bahnhof Blankenfelde) Baustelle, Straße vollständig gesperrt (bis Mitte 10.2009)',
+       type  => 'handicap',
+       source_id => 'IM_014217',
+       data  => <<EOF,
+userdel	q4::inwork 8909,23506 8803,23478 8626,23432
+EOF
+     },
+     { from  => 1253730749, # 2009-09-23 20:32
+       until => 1254434399, # 2009-10-01 23:59
+       text  => 'Vulkanstr. ist voll gesperrt (bis Anfang 10.2009)',
+       type  => 'handicap',
+       source_id => 'IM_014223',
+       data  => <<EOF,
+userdel	q4::inwork 15838,14319 15871,14106 15897,13942
+EOF
+     },
+     { from  => 1253731110, # 2009-09-23 20:38
+       until => 1254434399, # 2009-10-01 23:59
+       text  => 'Darßer Str. (Hohenschönhausen) Richtung Falkenberger Chaussee zwischen Graaler Weg und Ribnitzer Str. Baustelle, Fahrtrichtung gesperrt (bis Anfang 10.2009)',
+       type  => 'handicap',
+       source_id => 'IM_014235',
+       data  => <<EOF,
+userdel	q4::inwork; 15783,17915 16292,17832
+EOF
+     },
+     { from  => 1253731186, # 2009-09-23 20:39
+       until => 1254240000, # 2009-09-29 18:00
+       text  => 'Scheidemannstr. (Tiergarten) in beiden Richtungen zwischen Ebertstr. und John-Foster-Dulles-Allee Veranstaltung, gesperrt (bis 29.09.09, ca. 18 Uhr)',
+       type  => 'handicap',
+       source_id => 'IM_014246',
+       data  => <<EOF,
+userdel	q4::temp 8540,12420 8400,12417 8374,12416 8119,12414
+EOF
+     },
+     { from  => 1254952800, # 2009-10-08 00:00
+       until => 1255384800, # 2009-10-13 00:00
+       text  => 'B 096 Sonnewalde - Luckau zw. L561, Weißack und OU Luckau Deckenerneuerung Vollsperrung 09.10.2009-12.10.2009 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 31378,-67751 31039,-67133 30744,-66875 30597,-66340 30577,-65764 30491,-65399
+EOF
+     },
+     { from  => 1253484000, # 2009-09-21 00:00
+       until => 1258498800, # 2009-11-18 00:00
+       text  => 'B 169 Lauchhammer - Elsterwerda zw. Abzw. Schraden und Plessa Deckenerneuerung Richtungsverkehr 22.09.2009-17.11.2009 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	1::inwork 28404,-104242 29283,-103951 32685,-103832 33348,-104123 33767,-104125
+EOF
+     },
+     { from  => 1253397600, # 2009-09-20 00:00
+       until => 1293750000, # 2010-12-31 00:00
+       text  => 'L 026 Brüssow - Prenzlau zw. Baumgarten und Prenzlau Grundhafter Straßenbau Vollsperrung 21.09.2009-30.12.2010 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 45417,105402 44804,104617 44521,104406 42811,104370 42331,104097 41975,103618 41700,103365
+EOF
+     },
+     { from  => 1253397600, # 2009-09-20 00:00
+       until => 1253743200, # 2009-09-24 00:00
+       text  => 'L 029 Oderberg - Hohenfinow Klappbrücke über den Finowkanal in Niederfinow Wartungsarbeiten Vollsperrung 21.09.2009-23.09.2009 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 45328,48225 45321,48142 45322,48104
+userdel	2::inwork 45406,45979 45119,45958
+EOF
+     },
     );

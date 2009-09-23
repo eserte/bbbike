@@ -197,8 +197,6 @@ Eberswalder Str.: Neubau von Radwegen bis 2009-12-01	?::inwork 10618,15076 10881
 B96a: Neubau der Radwege (gemeinsam mit Gehweg); wahrscheinlich wird der Radstreifen dann aufgehoben (bis 2010-01-01)	?::inwork 9228,23643 9146,23843 8984,24078 8891,24330 8826,24501 8682,24883 8665,24941 8661,24952 8571,25180 8548,25239 8493,25378
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20080327.1225.97044.html
 Ahrensfelder Chaussee: Radstreifen in Bau, bis 2008-10	? 20160,18301 20460,18420 20582,18468 20624,18485 20915,18601 21143,18704 21278,18786 21332,18819
-#: by: http://www.reinickendorf.de/index_8368_de.html
-Wittenauer Str.: Ausbau zum verkehrsberuhigten Bereich, außerdem Ersetzen des Pflasters durch eine Betonpflasterfahrbahn (Verbundsteinpflaster?), bis 2009-03-01 (Frühjahr 2009)	? 6666,22988 6651,23020 6644,23036 6634,23076 6712,23252 6727,23287 6770,23417
 #: by: http://www.berliner-stadtplan.com/topic/bln/str/x_wgs/22.04/y_wgs/28.92/from/form.html
 #: by: http://www.morgenpost.de/content/2006/09/20/bezirke/855150.html
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20060915.1800.47562.html
@@ -1452,7 +1450,8 @@ Flaeming-Skate: genaue Wegführung? Qualität (sehr wahrscheinlich asphaltierte Ra
 #: by: Oliver Brass [AM]
 Straße 136: beleuchtet? fester Sandweg	? -8050,5560 -7969,5453 -7937,5383 -7865,5334 -7903,5302
 Bau einer Ampel, voraussichtlich im Frühjahr 2007	? 16669,25373
-Semnonenweg: voraussichtlich 2006-12-01 mit einer neuen Asphaltdecke versehen	? -4482,10914 -4536,10670
+#: XXX sollte bis Dezember 2006 mit einer neuen Asphaltdecke versehen worden sein...
+Semnonenweg: Qualität (noch Kopfsteinpflaster oder jetzt mit Asphaltdecke)?	? -4482,10914 -4536,10670
 # note: laut Message-ID: <e3o6lb$grb$1@hahn.informatik.hu-berlin.de> noch immer nicht fertig
 #: XXX aber ich glaube, es war asphaltiert...
 Peetzig - Greiffenberg: westlich der Bahnstrecke mittlerweile asphaltiert?	? 44403,75026 44846,75320
@@ -3576,7 +3575,8 @@ Straußstr. (Mahlsdorf): Qualität?	? 25490,11578 25526,11703 25556,11826 25594,11
 Kuhnaustr.: Qualität?	? 24919,11783 24969,11932 24936,12071
 Händelstr. (Mahlsdorf): Qualität?	? 25512,12183 25814,12090 25911,12062
 Lisztstr. (Mahlsdorf): Qualität?	? 25814,12090 25857,12206 25854,12238
-Blankenfelde, Berliner Str. und Hauptstr: Ist die Fahrbahnqualität nach den Bauarbeiten (bis Mai 2009) besser geworden?	? 9528,23240 9490,23531 9425,23693 9625,23781 9774,23936
+#: XXX Bauarbeiten waren Mai 2009
+Blankenfelde, Berliner Str. und Hauptstr: Ist die Fahrbahnqualität (früher Kopfsteinpflaster) nach den Bauarbeiten besser geworden?	? 9528,23240 9490,23531 9425,23693 9625,23781 9774,23936
 Havelschanze - Schützenstr.: Existiert eine Verbindung für Radfahrer? Wenn ja, wie ist die Qualität?	? -2560,16212 -2551,16199 -2570,16192 -2531,16113 -2533,16056 -2624,16049
 Weg an der Havel: Für Radfahrer befahrbar? Qualität?	? -3370,14115 -3312,14036 -3353,13990 -3493,13782 -3543,13691 -3566,13580 -3555,13485
 Reiterhof, Phöben - Havelfähre: Qualität des Radwegs?	? -25787,3228 -25765,3246 -25530,3223 -25511,3313 -25425,3364 -25345,3389 -25282,3433 -25191,3442 -25198,3540 -25262,3561 -25373,3653 -25460,3795 -25563,3940 -25592,3985 -25578,4203 -25471,4332 -25506,4488 -25723,4736 -25725,4734 -25726,4734 -25855,4868 -25942,5010 -26073,5175 -26215,5272 -26647,5444 -26755,5459 -26918,5525
@@ -3806,3 +3806,6 @@ Rochstr./Max-Beer-Str.: Wo genau verläuft die neue Fahrradstraße?	? 10535,13006 
 Greifenberger Str.: Qualität?	? 17488,80 17281,411 17134,644
 Torgelowweg: Qualität?	? 17165,323 17362,-1
 Straße 604: Führt die Straße 604 bis zum Knollweg? Ist die gesamte Straße mit Verbundsteinpflaster versehen?	? 17077,526 17119,526 17228,361 17429,42
+#: by: http://www.reinickendorf.de/index_8368_de.html
+#: XXX Ausbau zum verkehrsberuhigten Bereich, außerdem Ersetzen des Pflasters durch eine Betonpflasterfahrbahn (Verbundsteinpflaster?), bis Frühjahr 2009
+Wittenauer Str.: Qualität der Wittenauer Str. (Verbundsteinpflaster oder etwas anderes)? Sind (Teile der) Wittenauer Str. verkehrsberuhigt (Spielstraße oder Tempo-30-Zone)? 	? 6666,22988 6651,23020 6644,23036 6634,23076 6712,23252 6727,23287
