@@ -496,7 +496,7 @@ Aﬂmannstr.: Bodenschwellen	q1 25039,5295 25039,5304 25048,5727
 Beckmannstr.: eng	q1 11670,-1973 11681,-1951 11666,-1825 11657,-1721
 S¸ltstr.: enge Straﬂe, beidseitiges Parken	q1 12094,15598 12171,15737 12247,15868 12295,15953 12352,16048
 Junker-Jˆrg-Str.: eng, parkende Autos	q1 18447,8818 18471,8957 18511,9185 18545,9395
-Windsteiner Weg: Bodenschwellen	q1 914,598 856,546 790,527 712,517 635,511 585,505 501,501
+Windsteiner Weg: Bodenschwellen	q1 914,598 856,546 790,527 712,517 635,511 585,505 501,493 284,470
 Liviusstr.: eng, parkende Autos	q1 10743,4515 10499,4542 10453,4518
 Osianderweg: enge Straﬂe	q1 3123,21360 3058,21530 2953,21777 2868,21945
 Im Brachfeldwinkel: enge Straﬂe	q1 3024,21286 2944,21464
@@ -815,7 +815,7 @@ Bruno-Apitz-Str.: viele Fuﬂg‰nger	q1 16423,24935 16359,24795 16304,24825 16264,2
 Bruno-Apitz-Str.: viele Fuﬂg‰nger	q1 16359,24795 16334,24728
 Bruno-Apitz-Str.: viele Fuﬂg‰nger	q1 16329,24865 16304,24825
 Scherenbergstr.: enge Straﬂe	q2 11307,15995 11358,16067 11404,16140 11464,16232 11542,16384
-Lupsteiner Weg: eng durch parkende KfZ	q1 264,227 489,296 521,332 521,360 501,501 489,587 428,656 393,704 400,765 460,812 739,885
+Lupsteiner Weg: eng durch parkende KfZ	q1 264,227 489,296 521,332 521,360 501,493 489,587 428,656 393,704 400,765 460,812 739,885
 Gertraudstr.: enge Straﬂe	q2 196,1657 79,1992
 Wittenberger Str. (Einkaufzentrum): Fuﬂg‰nger	q3 21614,17823 21647,17889 21719,18017 21751,18079
 Wittenberger Str. (Einkaufzentrum): Fuﬂg‰nger	q3 21654,18048 21719,18017
@@ -1109,6 +1109,8 @@ Kulmseestr.: einige Fuﬂg‰nger	q1 20252,12262 20303,12230
 (Kniprodestr./Michelangelostr. - Puccinistr.): Fuﬂweg mit Bordsteinkanten	q2 13830,15138 13874,15137 13962,15238 13955,15274 13809,15370 13667,15464 13700,15501
 (Gartenstr. - Tychyer Str.): sehr enger Trampelpfad	q2 21217,11328 21255,11314 21286,11319 21305,11363
 Eisweg: enge Straﬂe	q1 23562,10934 23577,10915 23608,10902 23596,10848 23561,10712 23569,10693
+Lauxweg: enge Straﬂe	q1 8979,3347 8921,3208
+Martinstr.: enge Straﬂe	q1 4956,5121 5102,5031
 Eichborndamm: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 4240,19019 4232,18981
 Revaler Str. (Straﬂenbahn): gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 13588,11490 13473,11456
 Schwartzkopffstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 8776,14364 8607,14253

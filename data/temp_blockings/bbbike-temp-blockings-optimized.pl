@@ -774,7 +774,7 @@ userdel	q4::inwork 10422,12395 10476,12432
          'text' => 'Pasewalker Str. (Pankow) stadteinwärts zwischen Marienstr. und Anschlussstelle A114 Baustelle, Fahrtrichtung gesperrt ist eingerichtet (bis Frühjahr 2011)',
          'from' => 1243886249,
          'id' => 1686,
-         'data' => 'userdel	q4::inwork; 12095,20832 12030,20490 12008,20368 11963,20136 11931,19965 11907,19838 11907,19749
+         'data' => 'userdel	q4::inwork; 12095,20832 12076,20731 12030,20490 12008,20368 11963,20136 11931,19965 11907,19838 11907,19749
 ',
          'type' => 'handicap'
        },
@@ -1657,7 +1657,7 @@ userdel	q4::inwork; 10829,18083 10907,18109 10938,18147 10989,18172 11137,18358 
          'text' => 'Darßer Str. (Hohenschönhausen) Richtung Falkenberger Chaussee zwischen Graaler Weg und Ribnitzer Str. Baustelle, Fahrtrichtung gesperrt (bis Anfang 10.2009)',
          'from' => 1253731110,
          'id' => 1900,
-         'data' => 'userdel	q4::inwork; 15783,17915 16292,17832
+         'data' => 'userdel	q4::inwork; 15881,17899 16277,17830
 ',
          'type' => 'handicap'
        },
