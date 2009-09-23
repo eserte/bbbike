@@ -205,12 +205,14 @@ tmp/streets-accurate.bbd
 
 =item C<line_width.I<category>: I<width>>
 
-Define the width of line items.
+Define the width of line items. The width should either be one value,
+or six comma-separated values. If it's only one value, then it is
+taken as the width at approx. 1:17000, and other widths are calculated
+proportionally to $line_width{default}. If it's six values, then this
+should represent the widths for the six standard scales defined by
+bbbike.
 
 XXX: The form with category is NYI!
-
-XXX: Maybe this should make it possible to define widths for specific
-zoom levels, like in the bbbike standard definitions.
 
 =item C<line_length: I<length>>
 

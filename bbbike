@@ -20656,8 +20656,22 @@ sub handle_global_directives {
     my $get_val = sub {
 	my($key, $vals) = @_;
 	my $val = $vals->[0];
-	if ($key =~ m{(?:_dash|_capstyle|_width|^line_length$)}) { # list of directives using arrays
+	if ($key =~ m{(?:_dash|_capstyle|^line_length$)}) { # list of directives using arrays
 	    $val = [split /\s*,\s*/, $val];
+	} elsif ($key =~ m{_width}) {
+	    my @vals = split /\s*,\s*/, $val;
+	    if (@vals == 1) {
+		my $factor = $vals[0] / $line_width{default}->[3];
+		for my $inx (0 .. $#{ $line_width{default} }) {
+		    $vals[$inx] = int($line_width{default}->[$inx] * $factor + 0.5);
+		    if ($vals[$inx] < 1) {
+			$vals[$inx] = 1;
+		    }
+		}
+	    } elsif (@vals != scalar @{ $line_width{default} }) {
+		warn "$key should have either one or exactly six comma-separated values";
+	    }
+	    $val = \@vals;
 	}
 	$val;
     };
