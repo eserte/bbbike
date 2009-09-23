@@ -6,17 +6,15 @@
 (^|/)\.svn/
 (^|/)\.git/
 \bChangeLog\b
-^MANIFEST\.
 ^Makefile$
-^Makefile.PL$
 ~$
+\.bak$
 (^|/)\.\#.*\d+\.\d+$
 (^|/)Attic/
 \.gdbinit$
 \.class$
 \.old$
 \.xvpics/
-\.rcsignore(_rx)?$
 \.cvsignore$
 \.gitignore$
 ^blib/
@@ -36,7 +34,11 @@ patch\.gz$
 \.copynewer.SKIP$
 \.spp$
 ^\.permissions$
+\.rcsignore(_rx)?$
 # bbbike specific
+^MANIFEST.addtocvs$
+^MANIFEST.delfromcvs$
+^MANIFEST.withcvs$
 ^Makefile.admin.PL$
 ^HEADER.html.tmpl$
 ^data/.*\.st$
