@@ -1697,16 +1697,6 @@ userdel	q4::inwork; 10829,18083 10907,18109 10938,18147 10989,18172 11137,18358 
          'data' => 'userdel	2::inwork 45417,105402 44804,104617 44521,104406 42811,104370 42331,104097 41975,103618 41700,103365
 ',
          'type' => 'gesperrt'
-       },
-       {
-         'until' => 1253743200,
-         'text' => 'L 029 Oderberg - Hohenfinow Klappbrücke über den Finowkanal in Niederfinow Wartungsarbeiten Vollsperrung 21.09.2009-23.09.2009 ',
-         'from' => 1253397600,
-         'id' => 1905,
-         'data' => 'userdel	2::inwork 45328,48225 45321,48142 45322,48104
-userdel	2::inwork 45406,45979 45119,45958
-',
-         'type' => 'gesperrt'
        }
      
 );
