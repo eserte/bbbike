@@ -128,6 +128,9 @@ for my $f (@files) {
 	myskip "$f needs Text::LevenshteinXS", $tests_per_file
 	    if $f =~ m{^( PLZ/Levenshtein.pm
 		      )$}x && !eval { require Text::LevenshteinXS; 1 };
+	myskip "$f needs JSON::XS", $tests_per_file
+	    if $f =~ m{^( BBBikeCGIAPI.pm
+		      )$}x && !eval { require JSON::XS; 1 };
 
 	my @add_opt;
 	if ($f =~ m{Tk/.*\.pm}) {
