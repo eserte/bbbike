@@ -102,7 +102,7 @@ for my $cgiurl (@urls) {
     ok($res->is_success, "Simple $cgiurl request")
 	or diag(Dumper($res));
     like($res->header('Content_Type'),
-	 qr|^text/html(?:; charset=ISO-8859-1)?$|, "Expect text/html");
+	 qr|^text/html(?:; charset=(?:ISO-8859-1|utf-8))?$|, "Expect text/html (regardless which charset)");
     $content = uncompr($res);
     like($content, qr/Dieses Programm sucht .*Fahrrad-.*Routen in Berlin/,
 	 "Expected introduction text in body");
