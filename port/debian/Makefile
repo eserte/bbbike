@@ -98,3 +98,4 @@ debian-clean:
 	sudo rm -rf $(BUILDDIR)
 	cd .. && dh_clean
 	rm -f control
+	rm -f bbbike
