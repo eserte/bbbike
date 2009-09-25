@@ -209,9 +209,8 @@ ${PERSISTENTTMPDIR}/berlin_combined.osm:    ${MISCDIR}/download/osm/berlin/*.osm
 	    > $@~
 	mv $@~ $@
 
-BERLIN_RING_OSM_FILES!=	tcsh -c 'echo ${MISCDIR}/download/osm/berlin/download_13.{2,3,4,5}*,52.{4,5}*'
 ${PERSISTENTTMPDIR}/berlin_ring_osm.osm:
-	${COMBINE_OSM} ${BERLIN_RING_OSM_FILES} > $@~
+	${COMBINE_OSM} `${PERL} -MFile::Glob=bsd_glob -le 'print join(" ", bsd_glob("${MISCDIR}/download/osm/berlin/download_13.{2,3,4,5}*,52.{4,5}*"))'` > $@~
 	mv $@~ $@
 
 ${PERSISTENTTMPDIR}/berlin_osm.img:	${PERSISTENTTMPDIR}/berlin_combined.osm
