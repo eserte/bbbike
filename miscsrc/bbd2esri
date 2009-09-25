@@ -243,6 +243,13 @@ sub create_shape_file {
 	$outprefix .= $suffix;
     }
 
+    # Avoid warnings (no records -> no bounding box)
+    if (!@rec) {
+	for ($glob_min_x, $glob_min_y, $glob_max_x, $glob_max_y) {
+	    $_ = 0 if !defined $_;
+	}
+    }
+
     $header = set_shp_header($header,
 			     -length => $rec_offset,
 			     -shapetype => $shapetype,
