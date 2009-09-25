@@ -5,7 +5,7 @@
 # $Id: bbd2esri,v 1.24 2008/02/01 21:14:03 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2002,2003 Slaven Rezic. All rights reserved.
+# Copyright (C) 2002,2003,2009 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -26,7 +26,6 @@ use Strassen::Core;
 use Strassen::MultiStrassen;
 use Strassen::Strasse;
 use ESRI::Shapefile::Main;
-use Object::Iterate qw(iterate);
 use XBase;
 use List::Util qw(max);
 use Getopt::Long;
@@ -181,26 +180,30 @@ sub create_shape_file {
 	    push @dbf, create_dbf_record($d, -type => $type, -file => $file);
 	};
 
-	iterate {
-	    return if $handle_igndisp && $_->[Strassen::CAT] =~ /::igndisp/;
+	$s->init;
+	while(1) {
+	    local $_ = $s->next;
+	    last if !@{ $_->[Strassen::COORDS] };
+
+	    next if $handle_igndisp && $_->[Strassen::CAT] =~ /::igndisp/;
 
 	    $_->[Strassen::CAT] =~ s/::.*//; # XXX hin/rueck XXX :: will change
 
 	    if ($filter && $shapetype eq 'polygon') {
 		if ($_->[Strassen::CAT] !~ /^F:/) {
-		    return;
+		    next;
 		} else {
 		    $_->[Strassen::CAT] =~ s/^F://;
 		}
 	    }
-	    return if ($filter && $shapetype ne 'polygon' && $_->[Strassen::CAT] =~ /^F:/);
+	    next if ($filter && $shapetype ne 'polygon' && $_->[Strassen::CAT] =~ /^F:/);
 
 	    if ($filter && $shapetype eq 'point') {
 		if (@{$_->[Strassen::COORDS]} > 1) {
-		    return;
+		    next;
 		}
 	    }
-	    return if ($filter && $shapetype ne 'point' && @{$_->[Strassen::COORDS]} == 1);
+	    next if ($filter && $shapetype ne 'point' && @{$_->[Strassen::COORDS]} == 1);
 
 	    if (defined $imagetype) {
 		# change extension
@@ -227,7 +230,7 @@ sub create_shape_file {
 	    } else {
 		$create_esri_and_dbf_record->($_);
 	    }
-	} $s;
+	}
     }
 
     if (!@rec && !$args{-emptyexpected}) {
