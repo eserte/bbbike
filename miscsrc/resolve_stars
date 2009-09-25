@@ -5,7 +5,7 @@
 # $Id: resolve_stars,v 1.7 2008/11/07 22:46:38 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003,2005 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003,2005,2009 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -28,7 +28,6 @@ use Strassen::MultiStrassen;
 use Strassen::StrassenNetz;
 # XXX What's faster? use BBBikeXS or usecache => 1?
 eval q{ use BBBikeXS }; warn "Note: BBBikeXS could not be loaded, continuing with pure perl version...\n" if $@;
-use Object::Iterate qw(iterate);
 use Getopt::Long;
 
 sub usage () {
@@ -63,9 +62,9 @@ if ($sperre_file) {
 		     );
 }
 
-my $s2 = Strassen->new($file_to_change, UseLocalDirectives => 1);
+my $s2 = Strassen->new_stream($file_to_change, UseLocalDirectives => 1);
 my $new_s = Strassen->new;
-iterate {
+$s2->read_stream(sub {
     my @res_begin;
     my @res_end;
     if (@{ $_->[Strassen::COORDS] } > 2) {
@@ -109,7 +108,7 @@ iterate {
 	    }
 	}
     }
-} $s2;
+});
 
 print $new_s->as_string;
 
