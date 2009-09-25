@@ -34,6 +34,8 @@ VPATH=		${BRBDIR}
 # TARGET: set to destination system to build mapserver for
 TARGET?=	local
 
+OSNAME!=	uname
+
 # Auto-set TARGET for some well-known rules
 .if make(dist-radzeit)
 TARGET=		radzeit
@@ -581,7 +583,7 @@ permissions:
 # XXX not used by default, because it disturbs the normal deployment
 # process
 permissions-FreeBSD:
-.if ${.FreeBSD} == true
+.if ${OSNAME} == FreeBSD
 	[ "`stat -f %Sg tmp`" = "www" ] || sudo chgrp www tmp && true
 	[ "`stat -f %Sg .`"   = "www" ] || sudo chgrp www .   && true
 .endif
