@@ -119,7 +119,7 @@ if (defined $in_str) {
 	print "# Test files are written to $tmpdir.\n";
     } else {
 	print "# Test files read from $tmpdir.\n";
-	print "# If there are non-fatal errors, try to re-run this script with -create\n";
+	print "# If there are errors due to data changes then re-run this script with -create\n";
     }
 }
 
