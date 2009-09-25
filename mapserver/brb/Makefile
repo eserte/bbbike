@@ -578,6 +578,7 @@ permissions:
 	chmod ugo+rx,ug+w .
 .if exists(/etc/debian_version)
 	[ "`stat --format=%G tmp`" = "www-data" ] || sudo chgrp www-data tmp && true
+	[ "`stat --format=%G .`"   = "www-data" ] || sudo chgrp www-data .   && true
 .endif
 
 # XXX not used by default, because it disturbs the normal deployment
