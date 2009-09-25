@@ -914,6 +914,7 @@ git-backup:
 #test-with-protocol-data:
 
 test-with-protocol: permission
+	[ -d $(HOME)/log ] || mkdir $(HOME)/log
 	-$(MAKE) ext
 EOF
 . ($^O eq 'linux'
