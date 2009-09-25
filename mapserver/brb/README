@@ -42,3 +42,8 @@ Rough installation procedure on a Debian system:
    * Point your browser to http://localhost/bbbike/cgi/bbbike.cgi
      bbbike should appear. In the footer there's a link to the
      mapserver.
+
+   * This instructions restrict to just using http://localhost. To
+     use a real (external) hostname run
+
+	pmake HOST=www.example.com
