@@ -365,7 +365,6 @@ for my $cgiurl (@urls) {
 	}
     }
 
-    XXX: 
     {
 	my $content;
 
@@ -750,6 +749,7 @@ for my $cgiurl (@urls) {
 	BBBikeTest::like_long_data($resp->content, qr{Genaue Kreuzung angeben});
     }
 
+    XXX: 
     {
 	if ($CGI::VERSION == 3.33) {
 	    diag <<EOF;
@@ -769,13 +769,15 @@ EOF
 		      zielname=>"Neustädtische Kirchstr./Mittelstr. (Mitte)",
 		      pref_seen=>1,
 		     );
-	$resp = $ua->get($cgiurl . "?" . join("&", map { "$_=" . my_uri_escape($params{$_}) } keys %params));
-	ok($resp->is_success, "Request with latin1")
+	my $url = $cgiurl . "?" . join("&", map { "$_=" . my_uri_escape($params{$_}) } keys %params);
+	$resp = $ua->get($url);
+	diag "URL: $url" if $v;
+	ok($resp->is_success, "Request with latin1 incoming CGI params")
 	    or diag $resp->as_string;
 	my $content = uncompr($resp);
-	BBBikeTest::like_long_data($content, qr{Neust%e4dtische}i, "Found iso-8859-1 encoding");
-	BBBikeTest::unlike_long_data($content, qr{Neust%C3%A4dtische}i, "No single encoded utf-8");
-	BBBikeTest::unlike_long_data($content, qr{Neust%C3%83%C2%A4dtische}i, "No double encoded utf-8");
+	BBBikeTest::like_long_data($content, qr{Neust%e4dtische}i, "Found iso-8859-1 encoding in CGI params in links");
+	BBBikeTest::unlike_long_data($content, qr{Neust%C3%A4dtische}i, "No single encoded utf-8 in CGI params in links");
+	BBBikeTest::unlike_long_data($content, qr{Neust%C3%83%C2%A4dtische}i, "No double encoded utf-8 in CGI params in links");
     }
 
     {
