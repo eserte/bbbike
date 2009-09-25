@@ -105,6 +105,7 @@ is given.
 =cut
 
 sub currmem {
+    no warnings "portable"; # hex numbers may grow large on 64bit machines
     my $pid = shift || $$;
     if (open(MAP, "/proc/$pid/map")) { # FreeBSD
 	my $mem = 0;
