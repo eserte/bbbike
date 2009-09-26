@@ -596,8 +596,8 @@ userdel	1::inwork 12229,10014 12398,9938 12556,9862
          'text' => 'Jessnerstr. wegen Bauarbeiten in Richtung Süden nicht befahrbar, bis Oktober 2009',
          'from' => undef,
          'id' => 1598,
-         'data' => '#: last_checked: 2009-09-17
-#: next_check: 2009-10-01
+         'data' => '#: last_checked: 2009-09-26
+#: next_check: 2009-10-05
 #: XXX nach Beendigung der Bauarbeiten bleibt wahrscheinlich die gesamte Straße asphaltiert, mit einigen Aufpflasterungen
 userdel	q4::inwork; 15080,11905 14977,11754 14941,11689 14849,11539
 ',
@@ -911,15 +911,7 @@ userdel	2::inwork 7160,11225 6851,11346
        undef,
        undef,
        undef,
-       {
-         'until' => 1253916000,
-         'text' => 'L 015 Rheinsberg - Dorf Zechlin zw. Rheinsberg und Abzw. Zühlen Straßenneubau, Vollsperrung 14.09.2009-25.09.2009 ',
-         'from' => 1252792800,
-         'id' => 1745,
-         'data' => 'userdel	2::inwork -26077,76116 -26509,76113 -26787,75950 -27091,75809 -27371,75722
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1256857200,
          'text' => 'L 024 Greiffenberg - Gerswalde zw. OL Greiffenberg und Wilmersdorf Grundhafter Straßenbau Vollsperrung 13.07.2009-29.10.2009 ',
@@ -1464,16 +1456,7 @@ d Breitenbachstr. Baustelle, Fahrtrichtung gesperrt (bis Anfang 05/2010)',
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_014062',
-         'until' => 1254347999,
-         'text' => 'Böttgerstr. (Wedding) in beiden Richtungen zwischen Badstr. und Hochstr. Bauarbeiten, Straße vollständig gesperrt (bis Ende 09/2009)',
-         'from' => 1252010752,
-         'id' => 1861,
-         'data' => 'userdel	q4::inwork 8923,15850 9134,15953
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => 1254348000,
@@ -1695,6 +1678,159 @@ userdel	q4::inwork; 10829,18083 10907,18109 10938,18147 10989,18172 11137,18358 
          'from' => 1253397600,
          'id' => 1904,
          'data' => 'userdel	2::inwork 45417,105402 44804,104617 44521,104406 42811,104370 42331,104097 41975,103618 41700,103365
+',
+         'type' => 'gesperrt'
+       },
+       undef,
+       {
+         'source_id' => 'IM_014251',
+         'until' => 1254153600,
+         'text' => 'Charlottenstr. (Mitte) in beiden Richtungen zwischen Dorotheenstr. und Unter den Linden Veranstaltung, gesperrt. Ebenso gesperrt ist die Mittelstr. zwischen Friedrichstr. und Charlottenstr. (bis 28.09.09, 18 Uhr)',
+         'from' => 1253965502,
+         'id' => 1906,
+         'data' => 'userdel	2::temp 9343,12464 9462,12481 9475,12365
+userdel	2::temp 9462,12481 9454,12558
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_014275',
+         'until' => 1253995200,
+         'text' => 'Friedrich-Wilhelm-Platz (Nebenfahrbahn) (Schöneberg) in beiden Richtungen zwischen Wilhelmshöher Str. und Wiesbadener Str. Veranstaltung, gesperrt (bis 22 Uhr)',
+         'from' => undef,
+         'id' => 1907,
+         'data' => 'userdel	2::temp 5324,7205 5310,7325
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_014281',
+         'until' => 1253995200,
+         'text' => 'Friedrichstr. (Kreuzberg) in beiden Richtungen zwischen Franz-Klühs-Str. und Rahel-Varnhagen-Promenade Veranstaltung, gesperrt (bis ca. 20 Uhr)',
+         'from' => undef,
+         'id' => 1908,
+         'data' => 'userdel	2::temp 9566,10566 9555,10656
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_014247',
+         'until' => 1254175200,
+         'text' => 'Konrad-Adenauer-Str. (Mitte) in beiden Richtungen Veranstaltung, gesperrt (bis 28.09.09, ca. 24 Uhr)',
+         'from' => 1253965727,
+         'id' => 1909,
+         'data' => 'userdel	2::temp 8417,12846 8309,12758 8306,12617
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_014260',
+         'until' => 1254088799,
+         'text' => 'Preußenallee (Charlottenburg) in beiden Richtungen zwischen Marathonallee und Heerstr. Veranstaltung (Herbstmarkt), Straße vollständig gesperrt (bis 27.09. 24 Uhr) ',
+         'from' => 1253965791,
+         'id' => 1910,
+         'data' => 'userdel	2::temp 585,11256 551,11462 563,11601 572,11698 585,11830 596,11951
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_014250',
+         'until' => 1254175200,
+         'text' => 'Stresemannstr. (Kreuzberg) Richtung Potsdamer Platz zwischen Wilhelmstr. und Großbeerenstr. Veranstaltung, gesperrt (bis 28.09.09, 24 Uhr)',
+         'from' => 1253965842,
+         'id' => 1911,
+         'data' => 'userdel	2::temp 9388,10393 9250,10563
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_014248',
+         'until' => 1254175200,
+         'text' => 'Wilhelmstr. (Kreuzberg) Richtung Tempelhof zwischen Hedemannstr. und Stresemannstr. Veranstaltung, gesperrt (bis 28.09.2009, 24 Uhr)',
+         'from' => 1253965870,
+         'id' => 1912,
+         'data' => 'userdel	2::temp 9370,10615 9378,10539 9388,10393
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1255298400,
+         'text' => 'B 001 zw. Manschnow und Abzw. Alt Tucheband Straßenbau Vollsperrung 28.09.2009-11.10.2009 ',
+         'from' => 1254002400,
+         'id' => 1913,
+         'data' => 'userdel	2::inwork 88364,18251 87135,17933 86429,17774 85640,17560
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1257116400,
+         'text' => 'B 087 Frankfurt/Oder - Müllrose zw. Markendorf u. Hohenwalde Durchlassneubau Hinterfüll. Vollsperrung 31.10.2009-01.11.2009 ',
+         'from' => 1256857200,
+         'id' => 1914,
+         'data' => 'userdel	2::inwork 82521,-12031 82191,-12275
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1255903200,
+         'text' => 'B 087 Frankfurt/Oder - Müllrose zw. Markendorf u. Hohenwalde Durchlassneubau Montagearb. Vollsperrung 17.10.2009-18.10.2009 ',
+         'from' => 1255644000,
+         'id' => 1915,
+         'data' => 'userdel	2::inwork 82521,-12031 82191,-12275
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1257721200,
+         'text' => 'B 087 Frankfurt/Oder - Müllrose zw. Markendorf u. Hohenwalde Straßenbau Durchlass Vollsperrung 07.11.2009-08.11.2009 ',
+         'from' => 1257462000,
+         'id' => 1916,
+         'data' => 'userdel	2::inwork 82521,-12031 82191,-12275
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1255384800,
+         'text' => 'B 115 Baruth - Jüterbog zw. Charlottenfelde und Abzw. Wahlsdorf Straßenbauarbeiten Vollsperrung 24.09.2009-12.10.2009 ',
+         'from' => 1253656800,
+         'id' => 1917,
+         'data' => 'userdel	2::inwork 4784,-46940 4232,-46877
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1261350000,
+         'text' => 'K 6422 Petershagener Str. OL Fredersdorf, zw. Rosinstr. und Platanenstr. Straßen- und Durchlassbau Vollsperrung 23.09.2009-20.12.2009 ',
+         'from' => 1253570400,
+         'id' => 1918,
+         'data' => 'userdel	q4::inwork 34139,13113 34896,13562
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1256943600,
+         'text' => 'L 015 Rheinsberg - Dorf Zechlin zw. Rheinsberg und Abzw. Zühlen Straßenneubau mit KV Vollsperrung 28.09.2009-30.10.2009 ',
+         'from' => 1254002400,
+         'id' => 1919,
+         'data' => 'userdel	2::inwork -26509,76113 -26787,75950 -27091,75809 -27371,75722
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1272664800,
+         'text' => 'L 054 Vetschau - Burg OL Vetschau, Kreuz. J.-Gagarin-/Bahnhofstr. Neubau Kreisverkehr Vollsperrung 28.09.2009-30.04.2010 ',
+         'from' => 1254002400,
+         'id' => 1920,
+         'data' => 'userdel	q4::inwork 58183,-67564 58018,-67843
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1260918000,
+         'text' => 'L 812 B102 - Kemnitz Brücke über den Arm der Nieplitz zw. Bardenitz u. Kemnitz Brückenneubau Vollsperrung 28.09.2009-15.12.2009 ',
+         'from' => 1254002400,
+         'id' => 1921,
+         'data' => 'userdel	2::inwork -19162,-33731 -18692,-33299
 ',
          'type' => 'gesperrt'
        }
