@@ -65,6 +65,7 @@ if ($sperre_file) {
 my $s2 = Strassen->new_stream($file_to_change, UseLocalDirectives => 1);
 my $new_s = Strassen->new;
 $s2->read_stream(sub {
+    local $_ = shift;
     my @res_begin;
     my @res_end;
     if (@{ $_->[Strassen::COORDS] } > 2) {
