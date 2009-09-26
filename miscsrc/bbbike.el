@@ -1,7 +1,18 @@
 (setq bbbike-el-file-name load-file-name)
 
+(defvar bbbike-font-lock-trailing-whitespace-face 'bbbike-font-lock-trailing-whitespace-face
+  "Face name to use for highlightning trailing whitespace.")
+(defface bbbike-font-lock-trailing-whitespace-face
+  '((((class color) (min-colors 88)) (:foreground "Red1" :weight bold :underline t))
+    (((class color) (min-colors 16)) (:foreground "Red1" :weight bold :underline t))
+    (((class color) (min-colors 8)) (:foreground "red" :underline t))
+    (t (:underline t)))
+  "Font Lock mode face used to highlight trailing whitespace."
+  :group 'font-lock-faces)
+
 (defvar bbbike-font-lock-keywords
-  '(("^\\(#[^:].*\\)" (1 font-lock-comment-face))                 ;; comments
+  '(("\\( +\\)\t" (1 bbbike-font-lock-trailing-whitespace-face)) ;; trailing whitespace after names. works only partially, but at least it disturbs the fontification
+    ("^\\(#[^:].*\\)" (1 font-lock-comment-face))                 ;; comments
     ("\\(#:.*\\)"  (1 font-lock-warning-face))	            ;; directives
     ("^\\([^\t\n]+\\)" (1 font-lock-constant-face))           ;; name
     ("^[^#][^\t\n:]+: \\([^\t\n]+\\)" (1 font-lock-string-face t)) ;; colon separated part of name
