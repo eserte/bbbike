@@ -983,7 +983,8 @@ userdel	2::inwork 7160,11225 6851,11346
          'text' => 'Die Charlottenstraße ist wegen Bauarbeiten eine Einbahnstraße Richtung Süden',
          'from' => undef,
          'id' => 1763,
-         'data' => 'userdel	q4::inwork; 9475,12365 9462,12481 9454,12558
+         'data' => '#: next_check: 2009-09-27
+userdel	q4::inwork; 9475,12365 9462,12481 9454,12558
 ',
          'type' => 'handicap'
        },

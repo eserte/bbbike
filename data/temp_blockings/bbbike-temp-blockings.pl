@@ -543,7 +543,7 @@ EOF
        text  => 'Hellersdorfer Straße (Hellersdorf) in beiden Richtungen zwischen Gülzower Straße und Heinrich-Grüber-Straße Straße vollständig gesperrt aufgrund eines Wasserrohrbruches.',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 22998,12453 22956,12669
+userdel	2 22998,12453 22990,12493 22980,12545 22967,12647
 userdel	2 22998,12453 23033,12367 23100,12269
 EOF
      },
@@ -14935,6 +14935,7 @@ EOF
        text  => 'Die Charlottenstraße ist wegen Bauarbeiten eine Einbahnstraße Richtung Süden',
        type  => 'handicap',
        data  => <<EOF,
+#: next_check: 2009-09-27
 userdel	q4::inwork; 9475,12365 9462,12481 9454,12558
 EOF
      },
@@ -15966,7 +15967,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_014138',
        data  => <<EOF,
-userdel	q4::temp 10240,18193 10327,18177 10669,18336 10680,18380 10609,18384 10567,18366 10502,18338 10281,18241
+userdel	q4::temp 10240,18193 10320,18197 10487,18270 10660,18345 10680,18380 10609,18384 10567,18366 10502,18338 10463,18321 10281,18241
 EOF
      },
      { from  => 1252651605, # 2009-09-11 08:46

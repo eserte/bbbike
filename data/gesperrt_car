@@ -582,8 +582,12 @@ Berliner Allee -> Streustr.: Straßenbahn	3::igndisp 13401,15821 13432,15843 1326
 Talsandweg: Einbahnstraße	1 3206,21179 3138,21372
 Mittelstreifen	3nocross::ignrte 10047,813 10187,872 10269,906
 Mittelstreifen	3nocross::ignrte 10485,807 10539,662 10590,525
+Feldstedter Weg -> Reichnerweg: Mittelstreifen	3::igndisp 10423,636 10539,662 10726,739
+Feldstedter Weg -> Lichtenrader Damm: Mittelstreifen	3::igndisp 10423,636 10539,662 10485,807
+Reichnerweg -> Feldstedter Weg: Mittelstreifen	3::igndisp 10726,739 10539,662 10423,636
 Reichnerweg -> Lichtenrader Damm: Mittelstreifen	3::igndisp 10726,739 10539,662 10590,525
 Lichtenrader Damm -> Reichnerweg: Mittelstreifen	3::igndisp 10485,807 10539,662 10726,739
+Lichtenrader Damm -> Feldstedter Weg: Mittelstreifen	3::igndisp 10590,525 10539,662 10423,636
 Mittelstreifen	3nocross::ignrte 10425,971 10485,807 10539,662
 Lichtenrader Damm -> Baldersheimer Weg: Mittelstreifen	3::igndisp 10425,971 10485,807 10674,882
 Baldersheimer Weg -> Lichtenrader Damm: Mittelstreifen	3::igndisp 10674,882 10485,807 10539,662
