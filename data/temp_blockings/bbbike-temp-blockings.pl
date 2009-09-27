@@ -1140,7 +1140,7 @@ EOF
        text  => 'L 200; (Breite Str.); OD Eberswalde, zw. BÜ und Neue Str. Straßenbauarbeiten, Vollsperrung 01.11.2004-21.11.2004 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 38264,50086 38174,49717 38026,49115
+userdel	q4 38264,50086 38174,49717 38022,49097
 userdel	q4 38264,50086 38476,50514 38845,51258
 EOF
      },
@@ -1666,7 +1666,7 @@ EOF
        text  => 'L 291; (Oderberger Str.); OD Eberswalde, Einm. Breite Str. Straßenbauarbeiten Vollsperrung 24.03.2005-30.04.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 38026,49115 37914,48720 37906,48495 37898,48413 37900,48350 37909,48248
+userdel	q4 38022,49097 37914,48720 37906,48495 37898,48413 37900,48350 37909,48248
 EOF
      },
      { from  => 1111960800, # 2005-03-28 00:00
@@ -3474,7 +3474,7 @@ EOF
        text  => 'B 167 Eisenbahn- u. Heegermühler Str. OD Eberswalde, Eisenbahnbrücke Ersatzneubau Brücke Vollsperrung; Umleitung 14.12.2005-16.12.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 36937,48074 36750,48064 36581,48125 36403,48168
+userdel	2 36937,48074 36750,48064 36581,48125 36406,48181
 EOF
      },
      { from  => 1136242800, # 2006-01-03 00:00
@@ -5863,7 +5863,7 @@ EOF
        text  => 'L 238 Eberswalde-Joachimsthal Brücke der A 11 zw. Lichterfelde u. Altenhof Brückenabbruch Vollsperrung 23.09.2006-24.09.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 30773,54731 31076,54246
+userdel	2::inwork 30773,54731 31065,54239
 EOF
      },
      { from  => 1158865257, # 2006-09-21 21:00
@@ -7082,7 +7082,7 @@ EOF
        text  => 'L 238 Eberswalde-Joachimsthal Brücke der A 11 zw. Lichterfelde u. Altenhof Brückenbauarbeiten Vollsperrung 03.03.2007-04.03.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 31076,54246 30773,54731
+userdel	2::inwork 31065,54239 30773,54731
 EOF
      },
      { from  => 1171580400, # 2007-02-16 00:00
@@ -7380,7 +7380,7 @@ EOF
        text  => 'B 167 Marienwerderstr. OD Finowfurt, zw. Zum Krugacker u. Werbelliner Str. Fahrbahnsanierung Vollsperrung 20.03.2007-24.03.2007 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 28575,49756 27827,49892 27566,49942
+userdel	q4::inwork 28575,49756 27822,49878 27566,49942
 EOF
      },
      { from  => 1174773600, # 2007-03-24 23:00
@@ -7689,7 +7689,7 @@ EOF
        text  => 'B 167 Eberswalder Str. OD Eberswalde, zw. Spechthausener Str. u. Schönholzer Str. Deckenerneuerung Vollsperrung 10.04.2007-24.04.2007 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 32189,48528 33242,48503 34334,48750
+userdel	q4::inwork 32139,48523 33163,48487 34334,48750
 EOF
      },
      { from  => 1176069600, # 2007-04-09 00:00
@@ -9647,7 +9647,7 @@ EOF
        text  => 'L 238 Eberswalde-Joachimsthal Brücke der A 11 zw. Lichterfelde u. Altenhof Brückenabbruch Vollsperrung 25.08.2007-26.08.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 31076,54246 30773,54731
+userdel	2::inwork 31065,54239 30773,54731
 EOF
      },
      { from  => 1188079200, # 2007-08-26 00:00
@@ -10661,7 +10661,7 @@ EOF
        text  => 'L 238 Eberswalde-ASWerbellin Brücke der A 11 zw. Lichterfelde u. Altenhof Straßenanbindung Vollsperrung 10.12.2007-21.12.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 31076,54246 30773,54731
+userdel	2::inwork 31065,54239 30773,54731
 EOF
      },
      { from  => 1196982000, # 2007-12-07 00:00
@@ -14862,7 +14862,7 @@ EOF
        text  => 'B 167 Marienwerderstr. OD Finowfurt, zw. Anschlußstelle A 11 u. Lehmschulzenstr. Straßemerneuerung Vollsperrung 16.07.2009-17.08.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 28575,49756 27827,49892 27566,49942
+userdel	q4::inwork 28575,49756 27822,49878 27566,49942
 EOF
      },
      { from  => 1250460000, # 2009-08-17 00:00
@@ -14870,7 +14870,7 @@ EOF
        text  => 'B 167 Marienwerderstr. OD Finowfurt, zw. Lehmschulzenstr. u. Tankstelle Straßemerneuerung Vollsperrung 18.08.2009-29.08.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 28575,49756 27827,49892 27566,49942
+userdel	q4::inwork 28575,49756 27822,49878 27566,49942
 EOF
      },
      { from  => 1240005600, # 2009-04-18 00:00
@@ -15820,7 +15820,7 @@ EOF
        text  => 'B 167 Marienwerderstr. OD Finowfurt, zw. Zum Krugacker u. Aral-Tankstelle Straßenerneuerung Vollsperrung 29.08.2009-30.09.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 28575,49756 27827,49892
+userdel	q4::inwork 28575,49756 27822,49878
 EOF
      },
      { from  => 1252533600, # 2009-09-10 00:00

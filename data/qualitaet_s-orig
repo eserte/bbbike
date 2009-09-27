@@ -807,7 +807,7 @@ Krumme Str.: Kopfsteinpflaster	Q2 3981,11226 3986,11337 3990,11490
 Fehrbelliner Str.: Kopfsteinpflaster	Q2 10037,14379 10282,14212
 Borussenstr.: Kopfsteinpflaster	Q2 -4164,1993 -3965,2240 -3913,2327 -3907,2416
 Bäkestr.: mäßiger Asphalt	Q1 -7088,-1074 -7051,-1221
-Dircksenstr: Kopfsteinpflaster	Q2 10706,13043 10582,13104 10445,13091 10336,13037
+Dircksenstr: Kopfsteinpflaster	Q2 10706,13043 10595,13100 10445,13091 10336,13037
 Hildegard-Jadamowitz-Str.: Kopfsteinpflaster	Q2 13206,12309 13520,12264
 Hildegard-Jadamowitz-Str.: Kopfsteinpflaster	Q2 13599,12253 13659,12193
 Am Karlsbad: gutes Kopfsteinpflaster	Q1 7968,11048 8011,11014 8027,11000
@@ -1333,7 +1333,7 @@ Weimarische Str.: Kopfsteinpflaster	Q2 5064,8340 5066,8140 5066,7998 5068,7965
 (Gleditschstr. - Elßholzstr.): kleinteiliges Kopfsteinpflaster	Q1 7128,9512 7158,9509 7192,9508
 Reuchlinstr.: mäßiges Kopfsteinpflaster	Q2 4989,13462 4964,13319 4926,13207
 Türkenstr.: Kopfsteinpflaster	Q2 6444,16331 6645,16523
-Am Luchgraben: Asphalt	Q0 17078,21321 17064,21350 16675,22168
+Am Luchgraben: Asphalt	Q0 17073,21329 17064,21350 16675,22168
 Rhumeweg: Kopfsteinpflaster	Q2 -1530,3323 -1453,3166 -1403,3047 -1339,2889
 Dubrowstr.: schlechtes Kopfsteinpflaster	Q3 -2249,2818 -2221,2886 -2094,2941 -1951,2995
 Dubrowstr.: schlechtes Kopfsteinpflaster	Q3 -1819,3042 -1709,3080 -1633,3104 -1561,3128 -1453,3166
@@ -1559,7 +1559,7 @@ Travemünder Str.: Kopfsteinpflaster, Uferweg Parkweg	Q1 8659,16494 8759,16684
 (Pankeweg): Parkweg	Q1 8721,16689 8804,16881 8866,17075
 #: by Radzeit 3/2006
 #: confirmed_by: Daniel Prusseit:
-Hohenschönhausener Weg: asphaltiert	Q0 15611,18547 16317,18020
+Hohenschönhausener Weg: asphaltiert	Q0 15600,18551 16317,18020
 #: note: laut Bild in Radzeit 3/2006
 Wuhlgartenweg: asphaltiert	Q0 20627,12162 20771,12149 20829,12144 21145,12116 21211,12118 21267,12109 21307,12132
 #: note: Angabe auch von Hubigirl:
@@ -1599,7 +1599,7 @@ Hubertusdamm: Asphalt	Q0 14632,23257 14761,23453 14845,23565 15029,23857 15130,2
 Straße 70: guter bis mäßiger Asphalt	Q1 15595,22693 16298,22221
 Straße 70 - Lindenberger Weg: Feldwege	Q2 16298,22221 16528,22074 16390,21828 16502,21751 16576,21165
 Lindenberger Weg - Am Luchgraben, entlang der B2: Trampelpfad	Q3 16779,21152 17064,21350
-(Am Luchgraben - Siedlung Wartenberg): glatter Feldweg	Q1 17078,21321 17274,20851 17281,20834 17946,20889 18083,20782 18061,20715
+(Am Luchgraben - Siedlung Wartenberg): glatter Feldweg	Q1 17073,21329 17274,20851 17281,20834 17946,20889 18083,20782 18061,20715
 (Am Luchgraben - Siedlung Wartenberg): schlechtes Kopfsteinpflaster	Q3 18061,20715 18383,20623 18513,20580
 Straße 2: schlechtes Kopfsteinpflaster	Q3 18513,20580 18869,20479
 Straße 2: Asphalt	Q0 18869,20479 18909,20465 18995,20436 19070,20410 19166,20377 19261,20344
@@ -3529,8 +3529,8 @@ Apostel-Paulus-Str.: Asphalt	Q0 6591,9080 6443,9060 6367,9048 6279,9034 6214,900
 #not anymore: Heerstr.: Kopfsteinpflaster auf den Parallelstraßen	Q2 456,11233 439,11228 231,11198 231,11198 21,11167 -68,11156 -346,11121 -420,11110 -535,11096 -572,11092 -731,11073 -776,11067 -831,11060 -1039,11034 -1269,11008 -1499,10990 -2209,11222
 #: by: ^^^
 #: by: Christiane Wiersch: vvv
-Waldstr. (Niederschönhausen): asphaltiert	Q0 10018,19429 9978,19512
-Waldstr. (Niederschönhausen): Kleinsteinpflaster	Q1 9978,19512 9878,19741 9864,19793 9840,19923
+Waldstr. (Niederschönhausen): asphaltiert	Q0 9991,19417 9955,19507
+Waldstr. (Niederschönhausen): Kleinsteinpflaster	Q1 9955,19507 9878,19741 9864,19793 9840,19923
 #: confirmed_by: Uta Voigt:
 Waldstr. (Niederschönhausen): asphaltiert	Q0 9840,19923 9788,20035 9754,20134 9725,20260 9724,20291 9718,20498
 #: by: ^^^
@@ -5289,7 +5289,7 @@ Amalienpark: schlechtes Kopfsteinpflaster	Q3 10950,18499 10905,18671
 Eichenstr. (Niederschönhausen): guter Asphalt	Q0 9300,19949 9408,19968 9788,20035 10095,20090
 #: note: laut ADFC-Karte gut geeignet
 #: confirmed_by: mianos@...
-Treskowstr. (Niederschönhausen): asphaltiert	Q0 9978,19512 9809,19529 9714,19615 9646,19670 9565,19751 9489,19826 9408,19968 9372,20065 9360,20152 9357,20213
+Treskowstr. (Niederschönhausen): asphaltiert	Q0 9955,19507 9809,19529 9714,19615 9646,19670 9565,19751 9489,19826 9408,19968 9372,20065 9360,20152 9357,20213
 #: by: ^^^
 #: by: Stephan Fleischer:
 Goethestr. (Lichterfelde): mäßiges Kopfsteinpflaster	Q2 4526,2635 4568,2424 4620,2155 4660,2116

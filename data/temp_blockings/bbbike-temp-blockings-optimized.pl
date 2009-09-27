@@ -1464,7 +1464,7 @@ d Breitenbachstr. Baustelle, Fahrtrichtung gesperrt (bis Anfang 05/2010)',
          'text' => 'B 167 Marienwerderstr. OD Finowfurt, zw. Zum Krugacker u. Aral-Tankstelle Straßenerneuerung Vollsperrung 29.08.2009-30.09.2009 ',
          'from' => 1251410400,
          'id' => 1863,
-         'data' => 'userdel	q4::inwork 28575,49756 27827,49892
+         'data' => 'userdel	q4::inwork 28575,49756 27822,49878
 ',
          'type' => 'handicap'
        },
