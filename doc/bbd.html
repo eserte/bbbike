@@ -249,13 +249,14 @@ tmp/streets-accurate.bbd
 <dt class="POD_ITEM"><a name="line_width_width"><code>line_width: <i>width</i></code></a>
 <dt><a name="line_width_category_"><code>line_width.<i>category</i>: <i>width</i></code></a>
 <dd>
-Define the width of line items.
+Define the width of line items. The width should either be one value,
+or six comma-separated values. If it&#39;s only one value, then it is
+taken as the width at approx. 1:17000, and other widths are calculated
+proportionally to $line_width{default}. If it&#39;s six values, then this
+should represent the widths for the six standard scales defined by
+bbbike.
 <p class="POD_TEXT">
 XXX: The form with category is NYI!
-</p>
-<p class="POD_TEXT">
-XXX: Maybe this should make it possible to define widths for specific
-zoom levels, like in the bbbike standard definitions.
 </p>
 <dt class="POD_ITEM"><a name="line_length_length"><code>line_length: <i>length</i></code></a>
 <dt><a name="line_length_category"><code>line_length.<i>category</i>: <i>length</i></code></a>
