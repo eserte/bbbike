@@ -7380,7 +7380,7 @@ EOF
        text  => 'B 167 Marienwerderstr. OD Finowfurt, zw. Zum Krugacker u. Werbelliner Str. Fahrbahnsanierung Vollsperrung 20.03.2007-24.03.2007 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 28575,49756 27626,49928
+userdel	q4::inwork 28575,49756 27827,49892 27566,49942
 EOF
      },
      { from  => 1174773600, # 2007-03-24 23:00
@@ -9371,7 +9371,7 @@ EOF
        text  => 'der Fußweg von der Buchberger Str. zum S-Bahnhof Nöldnerplatz ist z.Zt. voll gesperrt (Bauzaun)',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 15805,10949 15752,11115 15708,11193 15731,11270
+userdel	2::inwork 15805,10949 15752,11115 15708,11193 15730,11279
 EOF
      },
      { from  => 1248386400, # 2009-07-24 00:00 PERIODISCH!
@@ -14862,7 +14862,7 @@ EOF
        text  => 'B 167 Marienwerderstr. OD Finowfurt, zw. Anschlußstelle A 11 u. Lehmschulzenstr. Straßemerneuerung Vollsperrung 16.07.2009-17.08.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 28575,49756 27626,49928
+userdel	q4::inwork 28575,49756 27827,49892 27566,49942
 EOF
      },
      { from  => 1250460000, # 2009-08-17 00:00
@@ -14870,7 +14870,7 @@ EOF
        text  => 'B 167 Marienwerderstr. OD Finowfurt, zw. Lehmschulzenstr. u. Tankstelle Straßemerneuerung Vollsperrung 18.08.2009-29.08.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 28575,49756 27626,49928
+userdel	q4::inwork 28575,49756 27827,49892 27566,49942
 EOF
      },
      { from  => 1240005600, # 2009-04-18 00:00
@@ -15819,7 +15819,7 @@ EOF
        text  => 'B 167 Marienwerderstr. OD Finowfurt, zw. Zum Krugacker u. Aral-Tankstelle Straßenerneuerung Vollsperrung 29.08.2009-30.09.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 28575,49756 27626,49928
+userdel	q4::inwork 28575,49756 27827,49892
 EOF
      },
      { from  => 1252533600, # 2009-09-10 00:00
@@ -16065,7 +16065,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_014203',
        data  => <<EOF,
-userdel	q4::inwork; 18234,13500 18783,13469 18875,13473 19059,13482 19173,13487
+userdel	q4::inwork; 18234,13500 18783,13469 18875,13467 19059,13474 19173,13478
 EOF
      },
      { from  => undef, # 

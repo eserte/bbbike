@@ -291,7 +291,7 @@ Karl-Marx-Allee - Kadiner Str.: Fußgänger	q1 13543,12326 13556,12302 13555,12259
 Spreeuferweg - Elisabeth-Abegg-Str.: Rampe	q3 7923,12872 7885,12821
 (südliche Fahrbahn des Sachsendamms - Naturpark Schöneberg): Rampe	q2 7696,7562 7744,7538 7710,7547 7750,7528
 Heidenfeldstr.: Gehweg	q1 13433,13346 13393,13326
-(Gudrunstr. - Lichtenberger Brücke): Gehweg, Bordsteine	q2 16870,11920 16884,11889 16858,11860
+(Gudrunstr. - Lichtenberger Brücke): Gehweg, Bordsteine	q2 16870,11920 16884,11889 16851,11852
 Grünstr.: Fußgängerzone	q2 22111,4562 22162,4546 22214,4548 22312,4593
 Schloßplatz Köpenick: Fußgänger, Straßenbahn, Lieferverkehr	q2 22111,4562 22093,4499
 (Karlsgartenstr. - Hasenheide): Parkweg, Fußgänger	q1 11627,8485 11508,8491 11333,8582 11250,8585
@@ -330,7 +330,7 @@ Hildburghauser Str.: Bahnunterführung für Fußgänger und Radfahrer	q1 4595,1387 4
 (Bürgipfad - Jenbacher Weg): Fußgänger	q2 5591,240 5671,118 5703,74
 Langhoffstr.: enge Straße, Gegenverkehr	q1 19817,14454 19818,14064
 (Kolonie Friedrichsfelde Nord, entlang der Fernwärmeleitung): Fußgänger	q1 17774,12244 18129,12245 18180,12262 18216,12262
-(Frankfurter Allee, Nebenfahrbahn zur Hauptfahrbahn): Bordsteinabsenkung, aber eng	q3 16553,11921 16514,11911
+(Frankfurter Allee, Nebenfahrbahn zur Hauptfahrbahn): Bordsteinabsenkung, aber eng	q3 16535,11920 16512,11894
 Zum Schlachtensee: wegen der großen Steigung/Gefälles nur Schrittgeschwindigkeit möglich	q4 -1663,4218 -1592,4268
 (Treseburger Ufer - Rungiusstr.): nur für Fußgänger erlaubt	q4 12699,5909 13064,5953
 (Bellevuepark): nur für Fußgänger erlaubt	q4 22798,5731 22790,5568 22733,5569 22701,5428 22628,5340
@@ -534,6 +534,7 @@ Stendaler Platz: Fußgänger, Spielplatz	q2 6394,14085 6489,14071
 Washingtonplatz: querende Fußgänger, Taxis	q2; 7937,13126 8106,13130
 Washingtonplatz: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 8106,13130 7937,13126
 südliches Spreeufer: besonders an Wochenenden tagsüber sehr viele Fußgänger	q2 7437,12368 7529,12496 7670,12576
+(Ruwersteig - Klüsserather Weg): gemeinsamer Rad- und Gehweg, eng und kurvig	q2 19364,13033 19376,13092 19425,13089
 ######################### User Contributions #################################
 #: by: Michael Kiekbusch
 #: corrected_by: srt/policy (q4 -> q3-)

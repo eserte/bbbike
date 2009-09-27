@@ -1463,7 +1463,7 @@ d Breitenbachstr. Baustelle, Fahrtrichtung gesperrt (bis Anfang 05/2010)',
          'text' => 'B 167 Marienwerderstr. OD Finowfurt, zw. Zum Krugacker u. Aral-Tankstelle Straßenerneuerung Vollsperrung 29.08.2009-30.09.2009 ',
          'from' => 1251410400,
          'id' => 1863,
-         'data' => 'userdel	q4::inwork 28575,49756 27626,49928
+         'data' => 'userdel	q4::inwork 28575,49756 27827,49892
 ',
          'type' => 'handicap'
        },
@@ -1597,7 +1597,7 @@ userdel	q4::inwork; 10829,18083 10907,18109 10938,18147 10989,18172 11137,18358 
          'text' => 'Allee der Kosmonmauten (Marzahn) stadtauswärts zwischen Rhinstr. und Marzahner Chaussee Baustelle, Fahrtrichtung gesperrt (bis Anfang 10.2009)',
          'from' => 1253357936,
          'id' => 1892,
-         'data' => 'userdel	q4::inwork; 18234,13500 18783,13469 18875,13473 19059,13482 19173,13487
+         'data' => 'userdel	q4::inwork; 18234,13500 18783,13469 18875,13467 19059,13474 19173,13478
 ',
          'type' => 'handicap'
        },
@@ -1693,26 +1693,8 @@ userdel	2::temp 9462,12481 9454,12558
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_014275',
-         'until' => 1253995200,
-         'text' => 'Friedrich-Wilhelm-Platz (Nebenfahrbahn) (Schöneberg) in beiden Richtungen zwischen Wilhelmshöher Str. und Wiesbadener Str. Veranstaltung, gesperrt (bis 22 Uhr)',
-         'from' => undef,
-         'id' => 1907,
-         'data' => 'userdel	2::temp 5324,7205 5310,7325
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'source_id' => 'IM_014281',
-         'until' => 1253995200,
-         'text' => 'Friedrichstr. (Kreuzberg) in beiden Richtungen zwischen Franz-Klühs-Str. und Rahel-Varnhagen-Promenade Veranstaltung, gesperrt (bis ca. 20 Uhr)',
-         'from' => undef,
-         'id' => 1908,
-         'data' => 'userdel	2::temp 9566,10566 9555,10656
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        {
          'source_id' => 'IM_014247',
          'until' => 1254175200,

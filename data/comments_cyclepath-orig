@@ -355,8 +355,7 @@ Verbundsteinpflasterradweg	RW2; 46734,45729 47076,45358
 Gehweg für Radfahrer freigegeben	RW1; 45328,48225 45519,48299 45833,48555 45893,48802
 Verbundsteinpflaster-Zweirichtungsradweg	RW8;RW2 45893,48802 45925,49350 46094,49871
 Bergerstr.: betonierter Radweg, Plattenwegqualität Q2+	RW2;RW2 37128,48358 36987,48362 36612,48200
-#: XXX gab es einen Radweg in die andere Richtung?
-Wilhelmstr.: betonierter Radweg Q1	RW; 37159,48481 37128,48358
+Wilhelmstr.: betonierter Radweg Q1	RW;RW0 37159,48481 37128,48358
 #: XXX gab es einen Radweg in die andere Richtung? Sehr wahrscheinlich!
 Verbundsteinpflasterradweg	RW2; 36581,48125 36750,48064 36937,48074 37151,48074 37391,48095 37474,48123
 Verbundsteinpflaster-Zweirichtungsradweg	RW8;RW2 39361,42665 39355,42506 39291,42160 39137,42103 39146,42061
@@ -393,6 +392,8 @@ Asphalt, gemeinsamer Geh- und Radweg	RW2;RW8 26473,-14543 26567,-14915
 Verbundsteinpflaster, gemeinsamer Geh- und Radweg	RW2;RW8 26567,-14915 26612,-15094 26572,-15618 26583,-15677 26650,-15695
 Beton, gemeinsamer Geh- und Radweg	RW2; 26583,-15677 26455,-16852 26431,-16931
 Beton, Gehweg für Radfahrer freigegeben	RW1; 26431,-16931 26276,-17489 26204,-17794
+#: note: aus dem Auto heraus gesehen
+	RW2;RW2 17078,21321 17584,21678 17696,21806 17825,21931 18356,22225
 ######################### User Contributions #################################
 #: by: Tagesspiegel
 	RW 16953,35907 17114,35904 18082,36115 18440,36179 19193,36011

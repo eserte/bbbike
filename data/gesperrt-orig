@@ -197,7 +197,7 @@ Bornstr.	1 5210,6522 5347,6443
 Schildhornstr.	1 4903,6221 4962,6218 5165,6119
 Schildhornstr.	1 5137,6066 5047,6116 4903,6221
 # XXX evtl. nur bauestellenbedingt?
-Atzpodienstr.	1 16485,12384 16445,12193 16415,11926
+Atzpodienstr.	1 16485,12384 16445,12193 16413,11906
 #: by: Robert Joop:
 Alt-Lietzow	1 4219,12324 4116,12349 4066,12368 4079,12411 4137,12411 4250,12390
 Martin-Wagner-Ring	1 12796,3821 12895,3991 12941,4015 12995,4003 13007,3949 12913,3743
@@ -224,7 +224,7 @@ Gervinusstr.	1 3587,10768 3631,10784
 Darßer Str.	1 15000,18056 15031,18106 15181,18137
 #Schottstr.	1 16276,12273 16389,12394
 #Rüdigerstr.	1 16389,12394 16485,12384
-Alfredstr.	1 16211,11951 16246,12177 16261,12224
+Alfredstr.	1 16207,11937 16246,12177 16261,12224
 #Alfredstr.	1 16261,12224 16276,12273
 Fanningerstr.	1 17139,12100 17092,12107 16994,12122 16890,12135 16794,12144
 Gierkeplatz	1 3447,12269 3456,12296 3478,12306 3510,12301 3528,12276 3521,12243 3493,12228 3463,12237 3447,12269
@@ -641,6 +641,10 @@ Washingtonplatz	1s 8106,13130 7937,13126
 #: by: Bernhard Husch:
 #: XXX ein Eintrag war ohne, einer mit Einbahnstraße. osm hat keine Einbahnstraße eingezeichnet -> nachgefragt
 Pfarrer-Lüdtkehaus-Platz	1 10220,-2137 10231,-2159 10318,-2156
+Radebeuler Str.	1 19067,13818 19025,14037
+Beilsteiner Str.	1 18749,12413 18800,12838 18832,13099 18852,13269
+#: note: durch ein Tor versperrt; es existiert aber anscheinend parallel dazu ein Trampelpfad
+Am Rosengarten	2 18707,12225 18834,12228 18867,12265
 ######################################################################
 #
 # Potsdam
@@ -998,7 +1002,7 @@ Möllendorffstr.: Mittelstreifen mit Straßenbahn	3nocross 15420,12178 15443,12222
 Müllerstr.: Zaun auf dem Mittelstreifen	3nocross 6790,16018 6914,15908 6936,15888 7043,15793
 Indira-Gandhi-Str.: Straßenbahntrasse	3nocross 14597,15970 14609,15921 14650,15750
 Indira-Gandhi-Str.: Straßenbahntrasse	3nocross 14550,16161 14522,16260 14499,16341
-Lichtenberger Brücke: unbequemes Passieren des Mittelstreifens (Bordsteine, starker Verkehr)	3nocross 16738,11878 16858,11860 16964,11845
+Lichtenberger Brücke: unbequemes Passieren des Mittelstreifens (Bordsteine, starker Verkehr)	3nocross 16737,11866 16851,11852 16962,11833 17037,11820 17151,11801
 #: by: Kerstin Pantos:
 Kolonnenstr.: Mittelinsel mit Geländer	3nocross 7709,8777 7642,8815 7563,8871
 #: by: Andreas Mühlhausen: vvv
@@ -1055,6 +1059,7 @@ Heylstr.: breiter Mittelstreifen, enge Querungsmöglichkeit nur für Fußgänger, Bo
 # Stellen, an denen getragen werden muß:
 # die Zahl hinter dem ":" entspricht ungefähr den verlorenen Sekunden
 # 
+tragen (43 Stufen)	0:35 16998,11861
 #: note: zwei Varianten: 8 weit entfernte Stufen oder einige Gruppen à zwei bis drei Stufen
 #: XXX_prog: should be Treppe with more than one point
 tragen (8 Stufen)	0:14 10286,11869
@@ -1168,7 +1173,8 @@ tragen (Treppe, 5 x 3 Stufen mit Kinderwagenrampe)	0:25 13953,9372
 tragen (Treppe)	0:30 8014,12846
 tragen (Treppe)	0:30 8428,12859
 tragen (Treppe)	0:30 8445,12755
-tragen (Treppe)	0:30 17026,11810
+#: note: wahrscheinlich ebenso 40-45 Stufen wie das Pendant auf der Gegenseite
+tragen (Treppe)	0:35 17026,11810
 #: by: peer.weyrauch, bestätigt durch die neue ADFC-Karte:
 tragen (S-Bhf. Raoul-Wallenberg-Str.)	0:30 20041,16296
 #: by: Katharina Hoffmann: vvv
@@ -1335,7 +1341,8 @@ Barriere, kann auf dem Gehweg umfahren werden	BNP:3::trailer=6 12186,9205
 Schranke (Griesinger-Krankenhaus)	BNP:5 21581,12182
 Schranke	BNP:5 9410,21680
 Drängelgitter	BNP:5 3831,8674
-Schranke (Krankenhaus Herzberge)	BNP:5 17247,13519
+Schranke (Krankenhaus Herzberge)	BNP:1 17247,13519
+Schranke (Krankenhaus Herzberge)	BNP:2 17780,13468
 Drängelgitter (S-Bhf. Grunewald)	BNP:10 731,9103
 Drängelgitter (vor der Straßenbahnhaltestelle)	BNP:5 29092,4761
 Schranke	BNP:5 32192,5915

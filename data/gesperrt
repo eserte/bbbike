@@ -171,7 +171,7 @@ Gutsmuthsstr.	1 5311,6383 5075,6509
 Bornstr.	1 5210,6522 5347,6443
 Schildhornstr.	1 4903,6221 4962,6218 5165,6119
 Schildhornstr.	1 5137,6066 5047,6116 4903,6221
-Atzpodienstr.	1 16485,12384 16445,12193 16415,11926
+Atzpodienstr.	1 16485,12384 16445,12193 16413,11906
 Alt-Lietzow	1 4219,12324 4116,12349 4066,12368 4079,12411 4137,12411 4250,12390
 Martin-Wagner-Ring	1 12796,3821 12895,3991 12941,4015 12995,4003 13007,3949 12913,3743
 Wilskistr.	1 -402,4012 -303,4086 -219,4149 -151,4228 21,4434 207,4575 301,4643 418,4696 528,4747 636,4765 798,4766
@@ -194,7 +194,7 @@ Lietzenseeufer	1 2871,11211 2806,11241 2748,11206 2621,11190 2621,11065
 Gervinusstr.	1 3587,10768 3631,10784
 (Friedrich-Ludwig-Jahn-Sportpark)	2 10473,15549 10607,15142
 Darßer Str.	1 15000,18056 15031,18106 15181,18137
-Alfredstr.	1 16211,11951 16246,12177 16261,12224
+Alfredstr.	1 16207,11937 16246,12177 16261,12224
 Fanningerstr.	1 17139,12100 17092,12107 16994,12122 16890,12135 16794,12144
 Gierkeplatz	1 3447,12269 3456,12296 3478,12306 3510,12301 3528,12276 3521,12243 3493,12228 3463,12237 3447,12269
 Knaackstr.	1 11056,15009 11030,14979 11101,14768
@@ -495,6 +495,9 @@ Bernhard-Bästlein-Str.	1 15595,14041 15593,13768
 Washingtonplatz	1s 8106,13130 7937,13126
 (Vorfahrt HdKdW)	1 7627,12380 7654,12464 7687,12477 7778,12470 7813,12427 7821,12367
 Pfarrer-Lüdtkehaus-Platz	1 10220,-2137 10231,-2159 10318,-2156
+Radebeuler Str.	1 19067,13818 19025,14037
+Beilsteiner Str.	1 18749,12413 18800,12838 18832,13099 18852,13269
+Am Rosengarten	2 18707,12225 18834,12228 18867,12265
 Am Neuen Garten	1 -12166,1384 -12212,1201 -12276,831 -12302,718 -12323,635 -12332,585 -12582,127
 Leistikowstr.	1 -12512,810 -12302,718
 Hochstraße	3nocross::ignrte -11399,-1339 -11461,-1424 -11540,-1543
@@ -1231,9 +1234,13 @@ Indira-Gandhi-Str. -> Orankeweg: Straßenbahntrasse	3::igndisp 14597,15970 14609,
 Straßenbahntrasse	3nocross::ignrte 14550,16161 14522,16260 14499,16341
 Gartenstr. -> Indira-Gandhi-Str.: Straßenbahntrasse	3::igndisp 14628,16249 14522,16260 14550,16161
 Indira-Gandhi-Str. -> Gartenstr.: Straßenbahntrasse	3::igndisp 14499,16341 14522,16260 14628,16249
-unbequemes Passieren des Mittelstreifens (Bordsteine, starker Verkehr)	3nocross::ignrte 16738,11878 16858,11860 16964,11845
-Frankfurter Allee -> Gudrunstr.: unbequemes Passieren des Mittelstreifens (Bordsteine, starker Verkehr)	3::igndisp 16738,11878 16858,11860 16884,11889
-Gudrunstr. -> Frankfurter Allee: unbequemes Passieren des Mittelstreifens (Bordsteine, starker Verkehr)	3::igndisp 16884,11889 16858,11860 16964,11845
+unbequemes Passieren des Mittelstreifens (Bordsteine, starker Verkehr)	3nocross::ignrte 16737,11866 16851,11852 16962,11833 17037,11820 17151,11801
+Frankfurter Allee -> Gudrunstr.: unbequemes Passieren des Mittelstreifens (Bordsteine, starker Verkehr)	3::igndisp 16737,11866 16851,11852 16884,11889
+Gudrunstr. -> Frankfurter Allee: unbequemes Passieren des Mittelstreifens (Bordsteine, starker Verkehr)	3::igndisp 16884,11889 16851,11852 16962,11833
+Skandinavische Str. -> Frankfurter Allee: unbequemes Passieren des Mittelstreifens (Bordsteine, starker Verkehr)	3::igndisp 16998,11861 16962,11833 17037,11820
+Frankfurter Allee -> Skandinavische Str.: unbequemes Passieren des Mittelstreifens (Bordsteine, starker Verkehr)	3::igndisp 16851,11852 16962,11833 16998,11861
+Weitlingstr. -> Frankfurter Allee: unbequemes Passieren des Mittelstreifens (Bordsteine, starker Verkehr)	3::igndisp 17026,11810 17037,11820 16962,11833
+Frankfurter Allee -> Weitlingstr.: unbequemes Passieren des Mittelstreifens (Bordsteine, starker Verkehr)	3::igndisp 17151,11801 17037,11820 17026,11810
 Mittelinsel mit Geländer	3nocross::ignrte 7709,8777 7642,8815 7563,8871
 Kolonnenstr. -> Gustav-Müller-Str.: Mittelinsel mit Geländer	3::igndisp 7709,8777 7642,8815 7643,8634
 schlecht passierbar	3nocross::ignrte -4063,11805 -4009,11789 -3707,11693
@@ -1343,6 +1350,7 @@ Kleine Gertraudenstr. -> Gertraudenstr.: Mittelstreifen	3::igndisp 10364,11896 1
 breiter Mittelstreifen, enge Querungsmöglichkeit nur für Fußgänger, Bordsteine	3nocross::ignrte 6181,8181 6246,8222 6325,8259
 Nymphenburger Str. -> Heylstr.: breiter Mittelstreifen, enge Querungsmöglichkeit nur für Fußgänger, Bordsteine	3::igndisp 6163,8398 6246,8222 6325,8259
 Heylstr. -> Nymphenburger Str.: breiter Mittelstreifen, enge Querungsmöglichkeit nur für Fußgänger, Bordsteine	3::igndisp 6181,8181 6246,8222 6163,8398
+tragen (43 Stufen)	0:35:-231 16998,11861
 tragen (8 Stufen)	0:14:-35 10286,11869
 tragen (14 Stufen)	0:25:-197 -6972,1029
 tragen (Treppe)	0:30:-24 22057,4531
@@ -1438,7 +1446,7 @@ tragen (Treppe, 5 x 3 Stufen mit Kinderwagenrampe)	0:25:-110 13953,9372
 tragen (Treppe)	0:30:-225 8014,12846
 tragen (Treppe)	0:30:-4 8428,12859
 tragen (Treppe)	0:30:-265 8445,12755
-tragen (Treppe)	0:30:28 17026,11810
+tragen (Treppe)	0:35:47 17026,11810
 tragen (S-Bhf. Raoul-Wallenberg-Str.)	0:30:-244 20041,16296
 tragen (ca. 40 Stufen)	0:59:-124 1659,3226
 tragen (Treppe)	0:30:-114 1715,3257
@@ -1533,7 +1541,8 @@ Barriere, kann auf dem Gehweg umfahren werden	BNP:3:28:trailer=6 12186,9205
 Schranke (Griesinger-Krankenhaus)	BNP:5:-169 21581,12182
 Schranke	BNP:5:-106 9410,21680
 Drängelgitter	BNP:5:48 3831,8674
-Schranke (Krankenhaus Herzberge)	BNP:5:88 17247,13519
+Schranke (Krankenhaus Herzberge)	BNP:1:88 17247,13519
+Schranke (Krankenhaus Herzberge)	BNP:2:-219 17780,13468
 Drängelgitter (S-Bhf. Grunewald)	BNP:10:-55 731,9103
 Drängelgitter (vor der Straßenbahnhaltestelle)	BNP:5:-115 29092,4761
 Schranke	BNP:5:-108 32192,5915
