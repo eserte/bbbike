@@ -11,3 +11,12 @@ thumbnails:
 		echo "done" \
 	    ); \
 	done
+
+thumbnails-googlemaps:
+	for i in `csh -c 'echo *.{trk,gpx,bbr,xml}'`; do \
+	    [ -e .thumbnails_googlemaps/$$i -a .thumbnails_googlemaps/$$i -nt $$i ] || (\
+		echo -n ".thumbnails/$$i ... "; \
+	        ${MISCSRCDIR}/bbbikedraw.pl -geometry 120x120 -outtype png -o .thumbnails_googlemaps/$$i -routefile $$i -module GoogleMapsStatic; \
+		echo "done" \
+	    ); \
+	done
