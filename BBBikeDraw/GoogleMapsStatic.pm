@@ -76,6 +76,9 @@ use LWP::UserAgent qw();
 use Karte;
 Karte::preload(qw(Standard Polar));
 
+#use constant LIMIT_URI_PATH => 2048; # does not work anymore
+use constant LIMIT_URI_PATH => 1630; # the limit is somewhere between 1630 and 1866
+
 sub pre_draw {
     my $self = shift;
     $self->{PreDrawCalled}++;
@@ -157,7 +160,7 @@ sub flush {
 			  ),
 			 );
 	$url = "http://maps.google.com/maps/api/staticmap?" . join("&", @cgi_params);
-	last if (!@multi_c || length $url <= 2048 || $tolerance > 1000);
+	last if (!@multi_c || length $url <= LIMIT_URI_PATH || $tolerance > 1000);
 	if ($tolerance == 0) {
 	    $tolerance = 10;
 	} elsif ($tolerance < 100) {
