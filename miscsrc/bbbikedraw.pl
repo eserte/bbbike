@@ -51,6 +51,7 @@ my $custom_places;
 my $route_file;
 my $marker_point;
 my $q;
+my $debug;
 
 if (!GetOptions("w=i" => \$w,
 		"h=i" => \$h,
@@ -79,6 +80,7 @@ if (!GetOptions("w=i" => \$w,
 		"routefile=s" => \$route_file,
 		"markerpoint=s" => \$marker_point,
 		"q|quiet!" => \$q,
+		"debug" => \$debug,
 	       )) {
     usage();
 }
@@ -86,6 +88,10 @@ if (!GetOptions("w=i" => \$w,
 if ($q) {
     $BBBikeDraw::MapServer::Conf::QUIET = 1;
     $BBBikeDraw::MapServer::Conf::QUIET = $BBBikeDraw::MapServer::Conf::QUIET if 0; # cease -w
+}
+if ($debug) {
+    # XXX this list is not comprehensive yet
+    $BBBikeDraw::GoogleMapsStatic::DEBUG = $BBBikeDraw::GoogleMapsStatic::DEBUG = 1;
 }
 
 if (!defined $geometry) {
@@ -271,6 +277,7 @@ usage: $0 [options]
 -fontsizescale float       Scale default font sizes for place labels.
 -bg|-background color      Specify background color (as GD colors)
 -q			   Be quiet.
+-debug                     Turn debugging on.
 EOF
 }
 
