@@ -163,7 +163,7 @@ sub set_map_mode_customchoose {
 	unless $main::map_mode eq main::MM_CUSTOMCHOOSE();
     $main::map_mode = main::MM_CUSTOMCHOOSE();
     $main::c->configure(-cursor => "hand2");
-    main::status_message("Punkt auswählen", "infoauto");
+    main::status_message(M"Punkt auswählen", "infoauto");
 }
 
 sub choose {
@@ -179,9 +179,9 @@ sub choose {
 
 sub get_name {
     my($t, $oldname) = @_;
-    my $te = $t->Toplevel(-title => "Name");
+    my $te = $t->Toplevel(-title => M"Name");
     $te->transient($t);
-    $te->Label(-text => "Name:")->pack(-side => "left");
+    $te->Label(-text => M("Name").":")->pack(-side => "left");
     my $e = $te->Entry(-textvariable => \$oldname)->pack(-side => "left");
     $e->focus;
     my $wait = 0;
