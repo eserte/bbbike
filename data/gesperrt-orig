@@ -13,7 +13,7 @@ Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9865,10227 9825,10206 9687
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9368,10211 9145,10290 8804,10303 8724,10327 8661,10377 8634,10426 8525,10626 8430,10710
 Kanalstraßen Südufer, von Westen bis Flottwellstr.	1 8336,10829 8205,10979 8104,11037 7980,11070 7747,11075 7579,11032 7461,11051 7248,11143 7002,11034
 Kanalstraßen Nordufer	1 6880,11110 7115,11220 7160,11225 7251,11202 7333,11179 7419,11137 7492,11111 7595,11086 7690,11108 7873,11142 8000,11137 8102,11099 8241,11024
-# Hier kann ein kurzes Stück auf dem Gehweg überbrückt werden
+# Hier zwischen kann ein kurzes Stück auf dem Gehweg überbrückt werden
 Kanalstraßen Nordufer	1 8241,11024 8261,11015 8342,10916 8380,10865 8443,10777 8578,10672 8701,10428 8771,10381 8824,10366 8953,10366 9028,10371 9154,10348 9239,10313 9404,10250 9492,10226 9593,10238 9873,10285
 Gitschiner Str.	1 9873,10285 9948,10280
 Gitschiner Str.	1 9948,10280 9865,10227
@@ -53,7 +53,8 @@ Breitenbachplatz (Westseite)	1 4292,6558 4218,6583 4111,6651 4089,6668 4021,6729
 Breitenbachplatz (Ostseite)	1 4000,6852 4084,6766 4125,6728 4153,6703 4250,6625 4292,6558
 Inselstr. Schwanenwerder	1 -5310,4216 -5393,4211 -5453,4274 -5471,4412 -5442,4526 -5386,4539 -5341,4511 -5358,4404 -5356,4296 -5310,4216
 Bayerischer Platz	1 6063,9106 6053,9224 6084,9242 6131,9241 6161,9128 6152,9091 6118,9078 6083,9082 6063,9106
-orthodoxe Kirche (unsicher)	1 3952,8980 3932,8989 3835,9044
+#: confirmed_by: osm
+orthodoxe Kirche	1 3952,8980 3932,8989 3835,9044
 U-Bahn Dahlem	1 3216,6393 3123,6318 3023,6246 2950,6141 2898,5947 2823,5672 2797,5624 2746,5537 2523,5114 2469,5043 2313,4901 2190,4823 2079,4769 2027,4792
 U-Bahn Dahlem	1 2027,4792 2095,4805 2169,4854 2217,4884 2262,4914 2288,4932 2454,5067 2499,5144 2717,5578
 Am Großen Wannsee	1 -5869,1261 -5848,1379 -5867,1449 -5901,1562 -5929,1649 -5961,1767 -6025,1991 -6021,2068 -5945,2381 -5749,2701 -5722,2714 -5663,2609 -5653,2481 -5719,2323 -5836,2119 -5883,1948 -5885,1786 -5815,1649 -5645,1504 -5588,1454 -5518,1396 -5499,1349
@@ -67,8 +68,6 @@ Knoten Märkische Allee	1 19918,11891 19979,11774
 Knoten Märkische Allee	1 20114,11719 20026,11663
 Knoten Märkische Allee	1 20026,11663 20018,11698 19985,11727
 Gensinger Str./Alt-Friedrichsfelde	1 18853,11780 19064,11805 19142,11804 19389,11761
-#Altstadt Köpenick	1 22740,4415 22542,4485 22495,4523 22458,4565 22426,4609 22395,4678 22383,4703
-#Altstadt Köpenick (2s gibt es als Kategorie noch nicht)	2s 22383,4703 22381,4752
 Altstadt Köpenick	1 22377,4836 22381,4752
 Altstadt Köpenick	1 22445,4758 22439,4838
 #: XXX Einbahnstraßenregelung sah allerdings provisorisch aus
@@ -95,14 +94,13 @@ Kurt-Schumacher-Damm (Nord)	1 3676,16497 3753,16638 3853,16825 3948,16849
 Kurt-Schumacher-Damm (Nord)	1 3948,16849 3788,16621 3711,16481 3585,16252
 Ferdinand-Friedensburg-Platz	1 -914,14602 -1357,14533 -1392,14527 -1508,14508 -1369,14644 -1119,14659 -914,14602
 Falkenseer Platz	1 -3352,14676 -3368,14723 -3355,14764 -3295,14777 -3251,14741 -3247,14713 -3255,14685 -3301,14669 -3352,14676
-# Fasanenstr. für Radfahrer frei: 7167,8218 7169,8194 7174,8127
 Fasanenstr.	1 5207,10399 5229,10716 5242,10918 5247,10992 5268,11274
 Alt-Müggelheim	1 28317,891 28188,962 28094,1090 28218,1017 28317,891
 Prenzlauer Promenade	2 12008,19613 12040,19725 11907,19749
 Prenzlauer Promenade	2 12165,19600 12008,19613 11953,19363 12003,18896 11984,18771 11950,18529
 Prenzlauer Promenade	2 11927,19308 12020,19333
-Breite Str. Pankow	1 10240,18193 10281,18241 10463,18321 10502,18338 10567,18366 10609,18384
-Breite Str. Pankow	1 10680,18380 10660,18345 10487,18270 10320,18197 10240,18193
+Breite Str. (Pankow)	1 10240,18193 10281,18241 10463,18321 10502,18338 10567,18366 10609,18384
+Breite Str. (Pankow)	1 10680,18380 10660,18345 10487,18270 10320,18197 10240,18193
 Heinrich-Mann-Platz.	1 9565,18555 9524,18531 9480,18539 9454,18570 9457,18612 9495,18639 9542,18634 9567,18599 9565,18555
 Edelweißstr.	1 8234,19936 7993,19953 7885,19975 7748,20040
 Angerburger Allee	1 -1524,11108 -1608,11133 -1885,11392 -1931,11437 -1986,11487
@@ -134,7 +132,6 @@ Steinplatz	1 5166,11343 5122,11300 5088,11322 5053,11343 5091,11406
 Am Treptower Park (Umfahrung auf Gehweg ist möglich)	1 14089,9610 13867,9864 13829,9905
 Amtsgerichtsplatz	1 2987,11055 3049,11015 3033,10980 2981,10892 2921,10928 2987,11055
 Giesebrechtstr.	1 3915,10684 4006,10585 4157,10418
-# nur für Kfz: Emser Str.	1 10345,9509 10269,9520
 Bethaniendamm	1 12055,11331 12012,11235 11950,11157 11852,11102 11816,11084 11640,11067 11458,11136
 Engeldamm	1 11473,11180 11656,11106 11800,11118 11921,11185 12026,11348
 Pannierstr.	1 12202,8895 12242,8972
@@ -143,7 +140,6 @@ Dönhoffstr.	1 18726,8633 18609,8717 18514,8773 18447,8818 18372,8869 18296,8920 
 Bersarinplatz	1 13742,12538 13698,12544 13678,12571 13686,12611 13701,12628 13747,12642 13767,12626 13776,12571 13742,12538
 Petersburger Platz	1 13467,12978 13558,12766
 Dernburgstr.	1 2498,10665 2378,10677 2333,10710 2252,11037
-#Anscheinend hier keine Einbahnstraße, vielleicht weiter nördlich auch nicht: Burgstr.	1 10171,12769 10132,12941
 Schuckertdamm	1 746,14817 1024,14889 1058,14898 1109,14911 1202,14935 1343,14972 1465,14963
 Am Kleinen Wannsee	1 -5499,1349 -5485,1274 -5535,1204 -5742,1142
 Oberhofer Platz	1 5495,1964 5469,1949 5437,1941 5431,1956 5376,2097 5406,2110 5434,2122 5489,1981 5495,1964
@@ -167,8 +163,6 @@ Hardenbergplatz	1 5542,11075 5565,11147 5666,11362 5698,11333 5590,11118 5542,11
 (Waterlooufer - Zossener Str.)	1 9858,10199 9825,10206
 Greinerstr.	1 8347,3382 8327,2975
 Dederingstr.	1 8457,2965 8478,3414
-# hmmm?
-#Corneliusstr.	1 7762,7796 7847,7852 7863,7854
 Weserstr. (Friedrichshain)	1 14416,11815 14471,11782
 Quickborner Str.	1 8022,21476 8170,21304
 Berliner Str. (Blankenfelde)	1 9490,23531 9528,23240
@@ -196,7 +190,6 @@ Gutsmuthsstr.	1 5311,6383 5075,6509
 Bornstr.	1 5210,6522 5347,6443
 Schildhornstr.	1 4903,6221 4962,6218 5165,6119
 Schildhornstr.	1 5137,6066 5047,6116 4903,6221
-# XXX evtl. nur bauestellenbedingt?
 Atzpodienstr.	1 16485,12384 16445,12193 16413,11906
 #: by: Robert Joop:
 Alt-Lietzow	1 4219,12324 4116,12349 4066,12368 4079,12411 4137,12411 4250,12390
@@ -219,6 +212,7 @@ Damaschkestr.	1 3132,10499 3013,10553
 Herbartstr.	1 2346,11147 2340,11045
 Lietzenseeufer	1 2871,11211 2806,11241 2748,11206 2621,11190 2621,11065
 Gervinusstr.	1 3587,10768 3631,10784
+#: XXX_indoor: nach temp-blockings verschieben; Blockierung nur für Anhänger (trailer=no)
 #: note während Veranstaltungen und nachts von ca. 22 bis 7 Uhr gesperrt, mit Anhänger wegen des engen Südeinganges nicht befahrbar:
 (Friedrich-Ludwig-Jahn-Sportpark)	2 10473,15549 10607,15142
 Darßer Str.	1 15000,18056 15031,18106 15181,18137
@@ -245,7 +239,6 @@ Herbststr.	1 8465,18365 8634,18401
 Ruhwaldweg: Schranke gesperrt	2 773,13375 758,13334
 Alt-Reinickendorf	1 7003,18715 6869,18721 6775,18726 6734,18728 6572,18793 6716,18788 6801,18761 6879,18737 7003,18715
 Lauterstr.	1 5817,7223 5810,7337
-# laut Dominik hier keine Einbahnstraße: Friedrich-Wilhelm-Platz	1 5361,7423 5318,7424
 Friedrich-Wilhelm-Platz	1 5318,7424 5310,7325 5324,7205
 Stolbergstr.	1 8850,6421 8834,6639
 Richnowstr.	1 8946,6501 8850,6421
@@ -278,7 +271,7 @@ Strausberger Str.	1 12416,13045 12368,13031
 Große Präsidentenstr.	1 10097,12997 10220,13098
 Naumannstr.	1 7709,8777 7707,8915
 Gritznerstr.	1 4507,6320 4555,6403
-Duisburger Str.:	1 4183,10144 3874,10153
+Duisburger Str.	1 4183,10144 3874,10153
 Majakowskiring	1 10373,18889 10354,18814 10203,18762 10041,18697 9987,18757 10055,18831 10162,18867 10184,18875 10307,18915 10373,18889
 Straße 462	1 4914,17399 5068,17384
 Havensteinstr.	1 6293,2583 6463,2724 6593,2831
@@ -317,11 +310,13 @@ Buggenhagenstr.	1 14425,13780 14370,13615
 Schollenhof	1 3238,21448 3155,21572 3236,21601 3280,21477
 Siegfried-Aufhäuser-Platz	1 13939,7504 13928,7529 13942,7556 13967,7556
 Saltykowstr.	1 12726,7887 12865,7923
+#: XXX_indoor: evtl. nach temp-blockings verschieben
 (Drorystr. - Braunschweiger Str., Spielplatz): nachts werden die Tore geschlossen	2 13520,7485 13601,7366
 Barbarastr.	1 6451,3034 6371,2955 6320,2909 6357,2863 6374,2844
 Leipziger Platz	1 8572,11506 8580,11468 8624,11436 8703,11441 8735,11474 8733,11524 8729,11558 8682,11590 8601,11581 8569,11543 8572,11506
 Crusemarkstr.	1 10825,18634 10712,18975
 Kavalierstr.	1 10625,18831 10721,18575
+#: XXX_indoor: evtl. nach temp-blockings verschieben
 Luitpoldstr., Verlängerung über Schulhof, nicht immer geöffnet!	2 6611,9879 6670,9887
 Kattegatstr.	1 9323,17667 9475,17557
 Waldhüterpfad	1 510,4202 371,4453 301,4643
@@ -332,6 +327,7 @@ Gundelfinger Str.	1 18735,9421 18697,9153 18653,8922 18609,8717
 Dorotheenstr.	1 18653,8922 18770,8898
 Fehmarner Str.	1 6710,14776 6528,15000
 Alte Späthbrücke	2 14437,5080 14535,5137
+#: XXX_indoor: evtl. nach temp-blockings verschieben
 Rutherfordstr.: nicht permanent geöffnet	2 19071,2746 19136,2673 19207,2592
 Katzengraben	1 22445,4758 22452,4689
 Schwiegersteig	1 1134,14721 1130,14823 1109,14911
@@ -510,13 +506,6 @@ Zufahrt zu Germaniagarten/Oberlandgarten	1 11240,6350 11205,6358 11200,6372 1121
 Germaniagarten	1 11224,6244 11206,6252 11220,6323 11237,6326 11252,6319 11243,6246 11224,6244
 Oberlandgarten	1 11246,6403 11230,6413 11238,6470 11253,6473 11269,6466 11264,6409 11246,6403
 Alt-Tempelhof	1 9512,6652 9249,6642 9154,6638 9054,6631 8949,6644 9052,6664 9247,6687 9338,6694 9512,6652
-### -> folgendes ist jetzt in bbbike-temp-blockings.pl
-# #: XXX_prog: Vielleicht sollte das beim Routing einstellbar sein? vvv
-# #: note: Sperrung bestätigt von Stefan (s.sms): vvv
-# Am Wuhleufer, Innovationspark Köpenick: Privatstraße, nachts und am Wochenende gesperrt	2 21677,6952 21498,7153 21475,7500 21497,7597 21546,7635
-# Straße am Wald, Innovationspark Köpenick: Privatstraße, nachts und am Wochenende gesperrt	2 21475,7500 21341,7487 21025,7349
-# #: note: ^^^
-# #: XXX_prog: ^^^
 #: add_fragezeichen: Gilt die Einbahnstraßenregelung auch für Radfahrer oder nur für Autofahrer?
 Baumgartensteg	1 -2882,13474 -2937,13399
 #: by: Brüning:
@@ -650,7 +639,7 @@ Am Rosengarten	2 18707,12225 18834,12228 18867,12265
 ######################################################################
 #
 # Potsdam
-#
+# 
 Am Neuen Garten	1 -12166,1384 -12212,1201 -12276,831 -12302,718 -12323,635 -12332,585 -12582,127
 #: add_fragezeichen: Ist die Leistikowstr. für Radfahrer in entgegengesetzter Richtung geöffnet?
 Leistikowstr.	1 -12512,810 -12302,718
@@ -697,7 +686,6 @@ Platz der Einheit	1 -12768,-1069 -12755,-1131 -12718,-1327
 Puschkinallee	1 -13042,807 -12912,783 -12868,738 -12827,629 -12815,554 -12811,533
 Geschwister-Scholl-Str.	1 -14215,-1687 -14151,-1656 -14115,-1678
 Friedrich-Ebert-Str.: Straßenbahntrasse	3nocross -12773,-1544 -12795,-1499 -12833,-1365
-#XXX del: nach dem Umbau wird das alles anders aussehen: Friedrich-Ebert-Str.: Straßenbahntrasse, nur für Fußgänger bequem passierbar	3nocross -12719,-1661 -12755,-1585 -12773,-1544
 #: XXX_prog: Treppe sollte besser als -13733,-722 -13772,-623 -13784,-537 dargestellt sein, wenn es geht
 tragen (Treppe, 75 Stufen und etliche Rampenabschnitte)	0:180 -13772,-623
 #: by: rjoop
@@ -803,7 +791,7 @@ Billerbecker Weg	1s 1230,18698 1229,18750
 Alt-Tegel	1s:q3 1668,20156 1753,20191 1907,20265
 Alt-Tegel	1s:q3 1668,20156 1529,20131 1543,20060 1630,20097 1668,20156
 Am Treptower Park: entgegen der Richtung auf dem Parkstreifen	1s:q1 14739,8919 14614,9052 14563,9106 14529,9141 14443,9233 14382,9299 14242,9448 14179,9515 14089,9610
-#XXX del? Groebenufer	1s:q1 13206,10651 13077,10747
+Groebenufer	1s:q1 13206,10651 13077,10747
 Jahnstr. (KW)	1s 26243,-12300 26028,-12312
 Seestr. (Potsdam)	1s -11581,559 -11584,452
 Tizianstr. (Potsdam)	1s -11424,542 -11480,621 -11581,559
@@ -812,7 +800,6 @@ Spitzmühlenweg	1s 41728,17918 41668,17984 41556,18146
 Mangerstr. (Potsdam) (Umgehung auf Gehweg oder Uferweg möglich)	1s -12064,-284 -12108,-291 -12265,-418
 Stephanstr.	1s 6523,4491 6366,4500
 Am Poetensteig, Gramzow	1s:q1 50043,90187 50107,89717
-# by: David Greve:# note: removed by srt: Ringbahnstr.	1s 8717,6965 8447,6964
 #: by: Juliane Bölker:
 Atzpodienstr. (Umgehung auf Gehweg möglich)	1s:q3 16485,12384 16509,12518 16564,12513
 Behrenstr./Bebelplatz	1s:q3 9801,12245 9743,12239 9700,12234 9631,12227
@@ -1016,8 +1003,6 @@ Otto-Braun-Str.: Straßenbahntrasse	3nocross 11446,13294 11368,13170 11298,13063
 Otto-Braun-Str.: Mittelstreifen	3nocross 11368,13170 11298,13063 11275,13026 11228,12951
 #: by: ^^^
 Karl-Marx-Allee: Mittelstreifen	3nocross 11228,12951 11295,12915 11589,12768 11635,12745
-#XXX del: Sperrung wird aufgehoben, Fußgänger konnten schon immer passieren: Neustädtische Kirchstr.: An der US-Botschaft	3nocross 9108,12635 9112,12499 9126,12413 9141,12320
-#XXX del: Sperrung wird aufgehoben, Fußgänger konnten schon immer passieren: Sperrung vor der amerikanischen Botschaft	2 9141,12320 9126,12413 9112,12499 9108,12635
 #: note: wobei die Bordsteine auf der Hasenheide-Seite abgeflacht sind, aber auf der Freibad-Seite ist es weiterhin unbequem
 Columbiadamm: unbequem zu überqueren (Bordsteine)	3nocross 10796,8498 10911,8457 11271,8325
 #: by: Axel Schumacher:
@@ -1029,7 +1014,7 @@ Birkbuschstr.: unbequem zu passieren, aber Ausweichen auf linken Gehweg möglich	
 #: by: ^^^
 #: by: Kai Brueggemann [AM] vvv
 Birkbuschstr.: Metallgitter auf dem Mittelstreifen	3nocross 4807,5131 4846,5069 4879,5017
-Linksabbiegen in den Wolfensteindamm gefährlich / unbequem	3nocross 4789,5079 4692,4997 4675,4983 4517,4853
+Linksabbiegen in den Wolfensteindamm gefährlich/unbequem	3nocross 4789,5079 4692,4997 4675,4983 4517,4853
 #: by ^^^
 Hauptstr.: Mittelstreifen	3nocross 6687,8385 6765,8480 6912,8617 6990,8685
 #: by: Jirka Klaue:
@@ -1186,7 +1171,7 @@ tragen (Treppe)	0:30 1715,3257
 #: by: Jessica Mai:
 tragen (Treppe)	0:30 6172,12878
 #: by: Andreas Mühlhausen: vvv
-#: note: von 30->40 Sekunden korrigiert
+#: corrected_by: srt (30 -> 40 Sekunden)
 tragen (Treppe)	0:40 2921,13606
 tragen (Treppe)	0:40 3016,13615
 #: by: ^^^
@@ -1314,12 +1299,6 @@ Drängelgitter	BNP:5::trailer=10 14453,9929
 Drängelgitter mit asphaltierer Vorbeifahrmöglichkeit	BNP:2::trailer=4 14558,10082
 Drängelgitter mit asphaltierer Vorbeifahrmöglichkeit	BNP:2::trailer=4 14597,10129
 Drängelgitter mit asphaltierer Vorbeifahrmöglichkeit	BNP:2::trailer=4 14626,10162
-# weggedreht: Drängelgitter	BNP:5 14448,9922
-# existiert nicht mehr: Drängelgitter (Görlitzer Park)	BNP:5 12686,10045
-# XXX mehrere Gitter fehlen zurzeit:
-#Drängelgitter (Görlitzer Park)	BNP:5 12769,10211
-# XXX eins von zwei Gittern fehlt zurzeit
-#Drängelgitter (Görlitzer Park)	BNP:5 10286,8342
 #: note: 90cm Öffnung, 90cm zum versetzten Gitter -> 63cm lichte Breite
 Drängelgitter	BNP:3::trailer=no 12904,10141
 Schranke (Privatstr.)	BNP:5 25039,5304
@@ -1371,7 +1350,6 @@ Schwingtor an der Luiseninsel	BNP:10 7696,11621
 Schwingtor an der Luiseninsel	BNP:10 7735,11656
 #: by: ^^^
 Schranke	BNP:1::trailer=5 25558,997
-# XXX del: by: holger (hd, sav), updated by epperlein: Drängelgitter	BNP:5 8810,14373
 enges Drängelgitter	BNP:5 100,3
 #: by: antje weiss dorn: vvv
 Drängelgitter	BNP:4 13909,18835
@@ -1429,7 +1407,6 @@ Brücke im Tiergarten: gesperrt	2:inwork 6406,11784 6467,11780
 Rückbau der Fr.-Ebert-Str. zwischen Breite Str. und Platz der Einheit, Bauarbeiten bis Ende 2009. Umfahrung über Alten Markt notwendig.	1:inwork -12659,-1700 -12719,-1661 -12755,-1585 -12773,-1544
 #: last_checked: 2009-08-29
 Rückbau der Fr.-Ebert-Str., kein Zugang zur Schwertfegerstr.	2:inwork -12870,-1493 -12795,-1499
-#XXX wahrscheinlich fertig, immerhin ist die Radroute eröffnet...: by: http://www.maerkischeallgemeine.de/cms/beitrag/10670763/60889/, auch Tagesspiegel - Märkische Schlösser - Tour 1: Brücke über den Torfgraben/Phöben gesperrt, Neubau voraussichtlich bis 2006-12-31	2:inwork -25539,2641 -25453,2418
 #: section ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #: temporary ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #: section ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -1459,7 +1436,6 @@ Treibjagdweg	1 469,5138 472,4974
 Hochwildpfad	1 544,5165 549,4992
 Am Lappjagen	1 622,5192 625,5004
 Schranke	BNP:5 -20,10076
-#: XXX: vielleicht relevant für Anhänger
 Pfähle	BNP:1::trailer=6 467,9516
 Bernadottestr.	1 2711,6698 2793,6593 2875,6485 2935,6448 3020,6450
 Vogelsang	1 2229,6203 2170,5939 2137,5798

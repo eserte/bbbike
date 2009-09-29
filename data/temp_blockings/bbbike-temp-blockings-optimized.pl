@@ -1574,15 +1574,7 @@ userdel	q4::inwork; 10829,18083 10907,18109 10938,18147 10989,18172 11137,18358 
        },
        undef,
        undef,
-       {
-         'until' => 1254175200,
-         'text' => 'B 102 Werbig - J¸terbog zw. Hohengˆrsdorf und B101, Neumarkt Straﬂenbau Vollsperrung 21.09.2009-28.09.2009 ',
-         'from' => 1253397600,
-         'id' => 1890,
-         'data' => 'userdel	2::inwork -6474,-50137 -7054,-49746 -7948,-48863 -8574,-48178 -8716,-47998
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1257030000,
          'text' => 'L 435 Grunow - M¸llrose OD M¸llrose, Mixdorfer Straﬂe Kanal- u. Straﬂenbau Vollsperrung 17.09.2009-31.10.2009 ',
@@ -1683,59 +1675,13 @@ userdel	q4::inwork; 10829,18083 10907,18109 10938,18147 10989,18172 11137,18358 
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'source_id' => 'IM_014251',
-         'until' => 1254153600,
-         'text' => 'Charlottenstr. (Mitte) in beiden Richtungen zwischen Dorotheenstr. und Unter den Linden Veranstaltung, gesperrt. Ebenso gesperrt ist die Mittelstr. zwischen Friedrichstr. und Charlottenstr. (bis 28.09.09, 18 Uhr)',
-         'from' => 1253965502,
-         'id' => 1906,
-         'data' => 'userdel	2::temp 9343,12464 9462,12481 9475,12365
-userdel	2::temp 9462,12481 9454,12558
-',
-         'type' => 'gesperrt'
-       },
        undef,
        undef,
-       {
-         'source_id' => 'IM_014247',
-         'until' => 1254175200,
-         'text' => 'Konrad-Adenauer-Str. (Mitte) in beiden Richtungen Veranstaltung, gesperrt (bis 28.09.09, ca. 24 Uhr)',
-         'from' => 1253965727,
-         'id' => 1909,
-         'data' => 'userdel	2::temp 8417,12846 8309,12758 8306,12617
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'source_id' => 'IM_014260',
-         'until' => 1254088799,
-         'text' => 'Preuﬂenallee (Charlottenburg) in beiden Richtungen zwischen Marathonallee und Heerstr. Veranstaltung (Herbstmarkt), Straﬂe vollst‰ndig gesperrt (bis 27.09. 24 Uhr) ',
-         'from' => 1253965791,
-         'id' => 1910,
-         'data' => 'userdel	2::temp 585,11256 551,11462 563,11601 572,11698 585,11830 596,11951
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'source_id' => 'IM_014250',
-         'until' => 1254175200,
-         'text' => 'Stresemannstr. (Kreuzberg) Richtung Potsdamer Platz zwischen Wilhelmstr. und Groﬂbeerenstr. Veranstaltung, gesperrt (bis 28.09.09, 24 Uhr)',
-         'from' => 1253965842,
-         'id' => 1911,
-         'data' => 'userdel	2::temp 9388,10393 9250,10563
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'source_id' => 'IM_014248',
-         'until' => 1254175200,
-         'text' => 'Wilhelmstr. (Kreuzberg) Richtung Tempelhof zwischen Hedemannstr. und Stresemannstr. Veranstaltung, gesperrt (bis 28.09.2009, 24 Uhr)',
-         'from' => 1253965870,
-         'id' => 1912,
-         'data' => 'userdel	2::temp 9370,10615 9378,10539 9388,10393
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
        {
          'until' => 1255298400,
          'text' => 'B 001 zw. Manschnow und Abzw. Alt Tucheband Straﬂenbau Vollsperrung 28.09.2009-11.10.2009 ',
