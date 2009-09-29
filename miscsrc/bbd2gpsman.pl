@@ -40,6 +40,7 @@ my $match_index = Strassen::CAT;
 my $symbol;
 my $filter;
 my $filter_nearby;
+my $wptlen = 14; # XXX configurable!
 
 if (!GetOptions("type=s" => \$type_string,
 		"prefix=s" => \$prefix,
@@ -114,6 +115,8 @@ iterate {
 		}
 	    }
 	    $wpt->Ident("$prefix$inc");
+	} elsif ($outtype eq GPS::GpsmanData::TYPE_WAYPOINT) {
+	    $wpt->Ident(get_ident($_->[Strassen::NAME]));
 	}
     }
 
@@ -135,5 +138,31 @@ if ($outtype eq GPS::GpsmanData::TYPE_TRACK) {
     $gpsmandata->Waypoints(\@wpts);
 }
 $gpsmandata->write("-");
+
+sub get_ident {
+    my $name = shift;
+    # XXX Hack to protect from non-ascii characters,
+    # check what gpsman likes and wants
+    if (eval { require Text::Unidecode; 1 }) {
+	$name = Text::Unidecode::unidecode($name);
+    }
+    find_ident($name);
+}
+
+{
+    my %used_ident;
+    sub find_ident {
+	my $name = shift;
+	$name = substr($name, 0, $wptlen) if length($name) > $wptlen;
+	for (1..100) { # recursion breaker
+	    if (!$used_ident{$name}) {
+		$used_ident{$name} = 1;
+		return $name;
+	    }
+	    $name++;
+	}
+	undef;
+    }
+}
 
 __END__
