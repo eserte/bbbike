@@ -20,7 +20,7 @@ thumbnails-googlemaps:
 	    [ -e .thumbnails_googlemaps/$$i -a .thumbnails_googlemaps/$$i -nt $$i ] || (\
 		echo -n ".thumbnails/$$i ... "; \
 	        ${MISCSRCDIR}/bbbikedraw.pl -geometry 120x120 -outtype png -o .thumbnails_googlemaps/$$i~ -routefile $$i -module GoogleMapsStatic; \
-		mv .thumbnails/$$i~ .thumbnails/$$i; \
+		mv .thumbnails_googlemaps/$$i~ .thumbnails_googlemaps/$$i; \
 		echo "done" \
 	    ); \
 	done
