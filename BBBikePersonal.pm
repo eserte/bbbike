@@ -4,7 +4,7 @@
 # $Id: BBBikePersonal.pm,v 1.7 2006/09/23 20:32:28 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2002,2006 Slaven Rezic. All rights reserved.
+# Copyright (C) 2002,2006,2009 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -29,7 +29,11 @@ use Msg qw(frommain);
     }
 }
 
-use vars qw($show_places);
+use vars qw($show_places $can_toggle_flag);
+
+if (!defined $can_toggle_flag) {
+    $can_toggle_flag = $main::advanced ? 1 : 0;
+}
 
 sub filename {
     "$main::bbbike_configdir/personal.bbd";
@@ -70,6 +74,14 @@ sub dialog {
 		     -rebuild => 1,
 		     -container => $container,
 		     -popup => $container ? 0 : 1,
+		     ($can_toggle_flag ?
+		      (-splitter => sub {
+			   my(undef, $inx) = @_;
+			   my $r = $p->get($inx);
+			   ($r->[Strassen::NAME], $r->[Strassen::CAT]);
+		       }
+		      ) : ()
+		     ),
 		     ($see ? (-see => $see) : ()),
 		    );
     if ($container) {
@@ -88,6 +100,10 @@ sub buttonframe {
 		       -command => [\&change_name, $toplevel])->pack(-fill => "x");
     $container->Button(-text => M("Punkt ändern"),
 		       -command => [\&change_point, $toplevel])->pack(-fill => "x");
+    if ($can_toggle_flag) {
+	$container->Button(-text => M("Flag umschalten"), # XXX en translation missing
+			   -command => [\&toggle_flag, $toplevel])->pack(-fill => "x");
+    }
     $container->Button(-text => M("Löschen"),
 		       -command => [\&del, $toplevel])->pack(-fill => "x");
     $show_places = 0;
@@ -134,6 +150,16 @@ sub change_point {
 
 }
 
+sub toggle_flag {
+    my $t = shift;
+    my $oldname = get_current_name($t);
+    return if !defined $oldname;
+    my $oldcat = get_current_cat($t);
+    return if !defined $oldcat;
+    my $newcat = $oldcat eq 'X' ? 'X:GPS' : 'X';
+    change_file($oldname, undef, undef, undef, $newcat);
+}
+
 sub del {
     my $t = shift;
     my $oldname = get_current_name($t);
@@ -150,12 +176,37 @@ sub _lb { shift->Subwidget("Listbox") }
 sub get_current_name {
     my $t = shift;
     my $lb = _lb($t);
-    my($sel) = $lb->curselection;
-    if (!defined $sel) {
-	main::status_message(M("Keine Auswahl"),"err");
-	return;
+    if ($lb->isa('Tk::HList')) {
+	my $lb_index = $lb->info('anchor');
+	if (!defined $lb_index) {
+	    main::status_message(M("Keine Auswahl"),"err");
+	    return;
+	}
+	$lb->itemCget($lb_index, 0, '-text');
+    } else {
+	my($sel) = $lb->curselection;
+	if (!defined $sel) {
+	    main::status_message(M("Keine Auswahl"),"err");
+	    return;
+	}
+	$lb->get($sel);
     }
-    $lb->get($sel);
+}
+
+sub get_current_cat {
+    my $t = shift;
+    my $lb = _lb($t);
+    if ($lb->isa('Tk::HList')) {
+	my $lb_index = $lb->info('anchor');
+	if (!defined $lb_index) {
+	    main::status_message(M("Keine Auswahl"),"err");
+	    return;
+	}
+	$lb->itemCget($lb_index, 1, '-text');
+    } else {
+	# XXX not implemented in Listbox/non-splitter mode
+	undef;
+    }
 }
 
 sub set_map_mode_customchoose {
@@ -249,7 +300,7 @@ sub delete_file_name {
 }
 
 sub change_file {
-    my($oldname, $newname, $newpoint, $delete) = @_;
+    my($oldname, $newname, $newpoint, $delete, $newcat) = @_;
     maybe_upgrade_encoding($newname);
     $p->init;
     while(1) {
@@ -263,7 +314,9 @@ sub change_file {
 		    unless defined $newpoint;
 		$newname = $oldname
 		    unless defined $newname;
-		$p->set_current([$newname,$newpoint,$r->[Strassen::CAT]]);
+		$newcat = $r->[Strassen::CAT]
+		    unless defined $newcat;
+		$p->set_current([$newname,$newpoint,$newcat]);
 	    }
 	    $p->write(filename());
 	    dialog(-see => $newname);
@@ -287,6 +340,7 @@ sub toggle_show {
 
 sub maybe_upgrade_encoding {
     my($newname) = @_;
+    return if !defined $newname;
     if ($newname =~ m{[^\0-\xff]} && ($p->get_global_directive('encoding')||'') ne 'utf-8') {
 	my $glob_dir = $p->get_global_directives;
 	$glob_dir->{encoding} = ['utf-8'];
