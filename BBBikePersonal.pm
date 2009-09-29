@@ -227,6 +227,7 @@ sub cleanup {
 
 sub add_file {
     my($name, $cat, $coords) = @_;
+    maybe_upgrade_encoding($name);
     $p->push([$name, [$coords], $cat]);
     $p->write(filename());
     dialog(-see => $name);
@@ -249,6 +250,7 @@ sub delete_file_name {
 
 sub change_file {
     my($oldname, $newname, $newpoint, $delete) = @_;
+    maybe_upgrade_encoding($newname);
     $p->init;
     while(1) {
 	my $r = $p->next;
@@ -280,6 +282,15 @@ sub toggle_show {
 			  -nooverlaplabel => 1);
     } else {
 	main::plot('p', "personal", -draw => 0);
+    }
+}
+
+sub maybe_upgrade_encoding {
+    my($newname) = @_;
+    if ($newname =~ m{[^\0-\xff]} && ($p->get_global_directive('encoding')||'') ne 'utf-8') {
+	my $glob_dir = $p->get_global_directives;
+	$glob_dir->{encoding} = ['utf-8'];
+	$p->set_global_directives($glob_dir);
     }
 }
 
