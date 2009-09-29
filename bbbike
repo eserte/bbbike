@@ -11354,7 +11354,10 @@ sub choose_ort {
 	    }
 
 	    if ($splitter) {
-		my(@cols) = $splitter->((keys %orte)[0]);
+		keys %orte; # reset
+		my($first_ort, $first_index) = each %orte;
+		keys %orte; # reset
+		my(@cols) = $splitter->($first_ort, $first_index);
 		$max_cols = scalar @cols;
 	    }
 
@@ -11384,8 +11387,9 @@ sub choose_ort {
 		    push @text_style, $lb->ItemStyle('text', -wraplength => $wraplength[$col] || 100);
 		}
 		my $inx = 0;
+		# XXX no support for sort styles here XXX
 		for my $ort (sort keys %orte) {
-		    my(@cols) = $splitter->($ort);
+		    my(@cols) = $splitter->($ort, $orte{$ort});
 		    $lb->add($inx,
 			     -text => $cols[0],
 			     -data => $ort,
@@ -11425,27 +11429,42 @@ sub choose_ort {
 	    }
 
 	    if (defined $see) {
-		my $found_index;
-	    TRY: {
-		    # first: exact match
-		    for my $inx (0 .. $lb->index("end")-1) {
-			if ($lb->get($inx) eq $see) {
-			    $found_index = $inx;
-			    last TRY;
+		if ($splitter) {
+		TRY: {
+			for my $inx ($lb->info('children')) {
+			    if ($lb->itemCget($inx, 0, '-text') eq $see) {
+				$lb->see($inx);
+				$lb->anchorSet($inx);
+				last TRY;
+			    }
 			}
+			# XXX inconsistency: in splitter/HList mode, do only
+			#     exact match, no substring match
+			warn "Cannot find <$see> in listbox content";
 		    }
-		    # then: substring match
-		    for my $inx (0 .. $lb->index("end")-1) {
-			if (index($lb->get($inx), $see) >= 0) {
-			    $found_index = $inx;
-			    last TRY;
+		} else {
+		    my $found_index;
+		TRY: {
+			# first: exact match
+			for my $inx (0 .. $lb->index("end")-1) {
+			    if ($lb->get($inx) eq $see) {
+				$found_index = $inx;
+				last TRY;
+			    }
 			}
+			# then: substring match
+			for my $inx (0 .. $lb->index("end")-1) {
+			    if (index($lb->get($inx), $see) >= 0) {
+				$found_index = $inx;
+				last TRY;
+			    }
+			}
+			warn "Cannot find <$see> in listbox content";
 		    }
-		    warn "Cannot find <$see> in listbox content";
-		}
-		if (defined $found_index) {
-		    $lb->see($found_index);
-		    $lb->selectionSet($found_index);
+		    if (defined $found_index) {
+			$lb->see($found_index);
+			$lb->selectionSet($found_index);
+		    }
 		}
 	    }
 
