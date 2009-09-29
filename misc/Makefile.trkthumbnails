@@ -4,19 +4,23 @@ BBBIKEDIR?=	$(HOME)/src/bbbike
 MISCSRCDIR?=	$(BBBIKEDIR)/miscsrc
 
 thumbnails:
+	@[ -d .thumbnails ] || (echo "Please create .thumbnails directory manually."; false)
 	for i in `csh -c 'echo *.{trk,gpx,bbr,xml}'`; do \
 	    [ -e .thumbnails/$$i -a .thumbnails/$$i -nt $$i ] || (\
 		echo -n ".thumbnails/$$i ... "; \
-	        ${MISCSRCDIR}/bbbikedraw.pl -geometry 120x120 -outtype png -drawtypes all -o .thumbnails/$$i -scope wideregion -routefile $$i; \
+	        ${MISCSRCDIR}/bbbikedraw.pl -geometry 120x120 -outtype png -drawtypes all -o .thumbnails/$$i~ -scope wideregion -routefile $$i; \
+		mv .thumbnails/$$i~ .thumbnails/$$i; \
 		echo "done" \
 	    ); \
 	done
 
 thumbnails-googlemaps:
+	@[ -d .thumbnails_googlemaps ] || (echo "Please create .thumbnails_googlemaps directory manually."; false)
 	for i in `csh -c 'echo *.{trk,gpx,bbr,xml}'`; do \
 	    [ -e .thumbnails_googlemaps/$$i -a .thumbnails_googlemaps/$$i -nt $$i ] || (\
 		echo -n ".thumbnails/$$i ... "; \
-	        ${MISCSRCDIR}/bbbikedraw.pl -geometry 120x120 -outtype png -o .thumbnails_googlemaps/$$i -routefile $$i -module GoogleMapsStatic; \
+	        ${MISCSRCDIR}/bbbikedraw.pl -geometry 120x120 -outtype png -o .thumbnails_googlemaps/$$i~ -routefile $$i -module GoogleMapsStatic; \
+		mv .thumbnails/$$i~ .thumbnails/$$i; \
 		echo "done" \
 	    ); \
 	done
