@@ -160,13 +160,15 @@ sub flush {
 			  ),
 			 );
 	$url = "http://maps.google.com/maps/api/staticmap?" . join("&", @cgi_params);
-	last if (!@multi_c || length $url <= LIMIT_URI_PATH || $tolerance > 1000);
+	last if (!@multi_c || length $url <= LIMIT_URI_PATH || $tolerance > 10000);
 	if ($tolerance == 0) {
 	    $tolerance = 10;
 	} elsif ($tolerance < 100) {
 	    $tolerance += 50;
-	} else {
+	} elsif ($tolerance < 1000) {
 	    $tolerance += 100;
+	} else {
+	    $tolerance += 1000;
 	}
 	warn "Need to shorten path, next tolerance value is $tolerance...\n";
     }
@@ -215,9 +217,27 @@ sub _make_path_from_coords {
 sub _shorten_paths {
     my($multi_c_ref, $tolerance) = @_;
 
+    require Storable;
+    my @multi_c = @{ Storable::dclone($multi_c_ref) };
+
+    {
+	require Strassen::Util;
+	# simplify gaps away if smaller than $tolerance
+	my @new_multi_c = $multi_c[0];
+	for my $i (1 .. $#multi_c) {
+	    my $gap_dist = Strassen::Util::strecke_s($new_multi_c[-1][-1], $multi_c[$i][0]);
+	    if ($gap_dist < $tolerance) {
+		push @{ $new_multi_c[-1] }, @{ $multi_c[$i] };
+	    } else {
+		push @new_multi_c, $multi_c[$i];
+	    }
+	}
+	@multi_c = @new_multi_c;
+    }
+
     require Strassen::Core;
     my $s = Strassen->new;
-    for my $line (@$multi_c_ref) {
+    for my $line (@multi_c) {
 	next if @$line == 0; # may this happen?
 	$s->push(["", $line, "X"]);
     }
