@@ -819,9 +819,11 @@ sub display {
 sub uncompr {
     my $res = shift;
     if ($res->can("decoded_content")) {
-	$res->decoded_content(charset => 'none');
+	$res->decoded_content;
     } else {
 	# When was decoded_content part of LWP?
+	# XXX without decoded_content charset-related errors are possible,
+	# especially if utf-8 is used
 	if (defined $res->header('Content_Encoding') &&
 	    $res->header('Content_Encoding') eq 'gzip') {
 	    Compress::Zlib::memGunzip($res->content);
