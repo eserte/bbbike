@@ -81,11 +81,14 @@ use Getopt::Long;
 
 my @browsers;
 my $v;
+my %do_xxx;
 		
 if (!GetOptions(get_std_opts("cgiurl", "xxx"),
 		"v" => \$v,
-		'browser=s@' => \@browsers)) {
-    die "usage: $0 [-cgiurl url] [-xxx] [-v] [-browser ...]";
+		'browser=s@' => \@browsers,
+		'xxx-petri-dank' => \$do_xxx{PETRI_DANK},
+	       )) {
+    die "usage: $0 [-cgiurl url] [-xxx|-xxx-petri-dank] [-v] [-browser ...]";
 }
 
 if (!@browsers) {
@@ -160,6 +163,12 @@ for my $browser (@browsers) {
 	$like_long_data->(qr/Bevorzugte Geschwindigkeit/i, "Einstellungen page");
     };
 
+    # -xxx... handling
+    for my $key (keys %do_xxx) {
+	if ($do_xxx{$key}) {
+	    eval 'goto XXX_' . $key; die $@ if $@;
+	}
+    }
     if ($do_xxx) {
 	goto XXX;
     }
@@ -283,7 +292,7 @@ for my $browser (@browsers) {
     ######################################################################
     # A street in Potsdam but not in "landstrassen"
 
-    {
+ XXX_PETRI_DANK: {
 
 	$get_agent->();
 
