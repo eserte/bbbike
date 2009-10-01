@@ -6112,16 +6112,9 @@ sub header {
     # XXX check the standards:
     push @$head, $q->meta({-name => 'revisit-after',
 			   -content => "7 days"});
-    # For http://geourl.org/: vvv --- seems to be dead
-    my($my_lat, $my_long) = (52.507377, 13.460589);
-    push @$head, $q->meta({-name => 'ICBM',
-			   -content => "$my_lat, $my_long"});
     push @$head, $q->meta({-name => 'DC.title',
 			   -content => "BBBike - Routenplaner für Radfahrer in Berlin und Brandenburg"});
     # ^^^
-    # Another one: http://geotags.com/geobot/add-tags.html --- is up again
-    push @$head, $q->meta({-name => "geo.position",
-			   -content => "$my_lat;$my_long"});
     push @$head, "<base target='_top'>"; # Can't use -target option here
     push @$head, cgilink({-rel  => "shortcut icon",
   			  -href => "$bbbike_images/srtbike.ico",
