@@ -24,53 +24,6 @@ BEGIN {
     }
 }
 
-if ($WWW::Mechanize::VERSION == 1.54) {
-    package WWW::Mechanize;
-    local $^W;
-    *_update_page = sub {
-# kept original WWW::Mechanize indentation:
-    my ($self, $request, $res) = @_;
-
-    $self->{req} = $request;
-    $self->{redirected_uri} = $request->uri->as_string;
-
-    $self->{res} = $res;
-
-    $self->{status}  = $res->code;
-    $self->{base}    = $res->base;
-    $self->{ct}      = $res->content_type || '';
-
-    if ( $res->is_success ) {
-        $self->{uri} = $self->{redirected_uri};
-        $self->{last_uri} = $self->{uri};
-    }
-
-    if ( $res->is_error ) {
-        if ( $self->{autocheck} ) {
-            $self->die( 'Error ', $request->method, 'ing ', $request->uri, ': ', $res->message );
-        }
-    }
-
-    $self->_reset_page;
-
-    # Try to decode the content. Undef will be returned if there's nothing to decompress.
-    # See docs in HTTP::Message for details. Do we need to expose the options there?
-    my $content = $res->decoded_content(charset => 'none');
-    $content = $res->content if (not defined $content);
-
-    $content .= _taintedness();
-
-    if ($self->is_html) {
-        $self->update_html($content);
-    }
-    else {
-        $self->{content} = $content;
-    }
-
-    return $res;
-} # _update_page
-} # monkey-patch end
-
 use FindBin;
 use lib ("$FindBin::RealBin",
 	 "$FindBin::RealBin/..",
@@ -314,7 +267,11 @@ for my $browser (@browsers) {
 	# $use_exact_streetchooser=1. Actually the correct crossing in this case
 	# should be the end of "Lennéstr.", but the find-nearest-crossing code finds
 	# only real crossing, not endpoints of streets.
-	$like_long_data->(
+	{
+	    local $TODO;
+	    $TODO = "Known to fail with perl 5.10.0 (regexp problem)"
+		if $] == 5.010;
+	    $like_long_data->(
 	     qr{(\QHans-Sachs-Str. (Potsdam)/Meistersingerstr. (Potsdam)\E
 		|\QCarl-von-Ossietzky-Str. (Potsdam)/Lennéstr. (Potsdam)\E
 		|\Q(Ökonomieweg, Sanssouci) (Potsdam)/(Lennéstr. - Ökonomieweg, Sanssouci)\E
@@ -323,6 +280,7 @@ for my $browser (@browsers) {
 		|\Q(Lennéstr. - Ökonomieweg, Sanssouci) (Potsdam)/(Hans-Sachs-Str. - Lennéstr.) (Potsdam)/Lennéstr. (Potsdam)\E
 		|\Q(Lennéstr. - Ökonomieweg, Sanssouci)/(Hans-Sachs-Str. - Lennéstr.)/Lennéstr. (Potsdam)\E
 	       )}ix,  "Correct goal resolution (Hans-Sachs-Str. ... or Lennéstr. ... or Ökonomieweg ...)");
+	}
 	$like_long_data->(qr{(\QMarquardter Damm (Marquardt)/Schlänitzseer Weg (Marquardt)\E
 			     |\QMarquardter Damm/Schlänitzseer Weg (Marquardt)\E
 			    )}ix,  "Correct goal resolution (Marquardt ...)");
