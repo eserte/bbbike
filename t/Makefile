@@ -9,6 +9,10 @@ TEST_FILES=	*.t
 
 test:
 	LANG=C $(PERL) -w -I.. -I../lib -MTest::Harness -e \
+	    'runtests(@ARGV)' $(TEST_FILES)
+
+test-shuffle:
+	LANG=C $(PERL) -w -I.. -I../lib -MTest::Harness -e \
 	    'BEGIN { if (!eval q{ use List::Util qw(shuffle); 1 }) { *shuffle = sub { @_ }; } } runtests(shuffle @ARGV)' $(TEST_FILES)
 
 test-no-cgi:
