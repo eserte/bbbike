@@ -437,7 +437,8 @@ for my $browser (@browsers) {
 
 	my_tidy_check($agent);
 	$like_long_data->(qr{M.*gliche Ausweichroute}, "Using Ausweichroute");
-	$like_long_data->(qr{\(um \d+ Meter l.*nger\)}, "Info: längere Route");
+	$like_long_data->(qr{\(um \d+ Meter l.*nger\)}, "Info: längere Route")
+	    or diag("Test is known to fail if Apache::Session::Counted is not available");
 	if (get_ct($agent) =~ /L.*?nge:.*([\d\.]+)\s*km/) {
 	    my $length = $1;
 	    cmp_ok($length, ">=", 1, "Longer path ($length km)");
