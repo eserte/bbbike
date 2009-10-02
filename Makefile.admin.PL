@@ -488,10 +488,13 @@ predist:
 
 CLEAN_AFTER_POD2HTML=$(RM_F) pod2html-*cache pod2htm?.?~~
 
-STRPP=	strpp
+README:	README.tt BBBikeVar.pm
+	tpage --define lang=DE --eval_perl README.tt > README~
+	mv README~ README
 
-README README.english:	README.spp BBBikeVar.pm
-	${STRPP} --dir=. README.spp
+README.english: README.tt BBBikeVar.pm
+	tpage --define lang=EN --eval_perl README.tt > README.english~
+	mv README.english~ README.english
 
 EOF
 . $bbbike_html_rule . <<'EOF'
