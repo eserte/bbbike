@@ -1,3 +1,42 @@
+BBBike RELEASE 3.17 (XXXX-XX-XX)
+
+bbbike (ptk)
+- better representation of temporary blockings (XXX still in work)
+- new search settings: child seat, trailer
+- visualization of impossible passings with trailers
+- better street labelling, but only in "lazy" mode and on X11 and with
+  Perl/Tk built with XFT=yes
+- improvements for BBBike @ World (osm) data
+- new weather sources: metar data (only in git)
+- various bugfixes
+
+Data
+- many updates, currently more than 8000 streets in Berlin
+- the "kneipen" file is now deprecated (because not maintained for a
+  long time)
+- new file routing_helper-orig (routes which are "invisible" on the map)
+
+Modules
+
+Plugins
+
+Install
+- Windows package is now using a modern Strawberry Perl instead of the
+  old SiePerl 5.6.1. Also included is gpsbabel for easier pushing of
+  routes to a GPS device.
+
+CGI
+- new search settings: child seat, trailer
+
+Misc
+- bbbike source code moved to github: http://github.com/eserte/bbbike
+  The old CVS repository is still updated at times.
+- more complete and faster  implementation of osm2bbd, the OpenStreetMap
+  to BBBike data converter (only in git)
+- gpx2bbd is faster (only in git)
+
+----------------------------------------------------------------------
+
 BBBike RELEASE 3.16 (2008-01-24)
 
 bbbike (ptk)
