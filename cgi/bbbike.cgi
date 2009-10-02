@@ -4447,7 +4447,7 @@ EOF
 			    $rw = $longest_rw || "";
 			}
 			if ($cat) {
-			    my $cat_title = { NN => "Nebenstraße ohne Kfz",
+			    my $cat_title = { NN => "Weg ohne Kfz",
 					      N  => "Nebenstraße",
 					      H  => "Hauptstraße",
 					      HH => "wichtige Hauptstraße",
@@ -4458,7 +4458,7 @@ EOF
 			    if ($rw) {
 				$rw_title = { RW => "Radweg/spur",
 					      BS => "Busspur",
-					      NS => "Nebenstraße",
+					      NS => "Nebenstraße", # XXX bessere Bezeichnung? Nebenfahrbahn? Separate Fahrbahn?
 					    }->{$rw};
 			    }
 			    my $title = $cat_title;
