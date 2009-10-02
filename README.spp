@@ -690,7 +690,7 @@ verfolgt werden.
 
 Von der Kommandozeile muss folgendes eingegeben werden:
 
-## only EN
+## but DE
 The current BBBike development may be tracked via git.
 
 To use the git repository from command line type the following:
@@ -703,7 +703,7 @@ To use the git repository from command line type the following:
 
 ## only DE
 Alle weiteren Male nur folgendes verwenden:
-## only EN
+## but DE
 to update the next time
 ## yes
 
@@ -717,7 +717,7 @@ Das git-Repository wird fast täglich aktualisiert und enthält auch die aktuellen
 Daten.
 
 
-## only EN
+## but DE
 The git repository is always up-to-date and also contains the current
 data.
 
@@ -732,7 +732,7 @@ Falls git nicht verwendet werden kann, gibt es noch immer die
 Möglichkeit auf das alte CVS-Repository unter #CVSREPO# zuzugreifen.
 Es ist allerdings nicht garantiert, dass Updates in der gleichen
 Frequenz wie auf dem git-Repository passieren.
-## only EN
+## but DE
 If git cannot be used, then there's still the possibility to access
 the old CVS repository (#CVSREPO#). Note that it's not guaranteed that
 updates occur in the same frequency as for the git repository.
@@ -743,7 +743,7 @@ updates occur in the same frequency as for the git repository.
 
 ## only DE
 Programm-Aktualisierung
-## only EN
+## but DE
 Application update
 ## yes
 
@@ -752,7 +752,7 @@ Application update
 ## only DE
 Der aktuelle Programm -und Daten-Stand kann auch von der Adresse
 L<#HTTPSNAPSHOT#> downgeloadet werden.
-## only EN
+## but DE
 It is also possible to download a current snapshot using the URL
 L<#HTTPSNAPSHOT#>.
 ## yes
@@ -762,7 +762,7 @@ L<#HTTPSNAPSHOT#>.
 
 ## only DE
 Daten-Aktualisierung
-## only EN
+## but DE
 Data update
 ## yes
 
@@ -773,7 +773,7 @@ Um nur die Daten zu aktualisieren, kann man sich die aktuellen Daten
 als ZIP-Datei von L<#BBBIKEVAR_UPDATE_DATA_CGI#> holen. Die ZIP-Datei
 muss im BBBike-Programmverzeichnis (bei Windows unter
 C<C:\Programme\BBBike\bbbike>) ausgepackt werden.
-## only EN
+## but DE
 To update only the data part of BBBike, just download the current data
 as a ZIP file from L<#BBBIKEVAR_UPDATE_DATA_CGI#>. The ZIP file has to be
 extracted in the BBBike program directory (Windows: in
