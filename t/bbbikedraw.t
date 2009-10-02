@@ -47,10 +47,17 @@ BEGIN {
 		  GD::SVG SVG
 		  PDF PDF2
 		  Imager/png Imager/jpeg
-		  MapServer MapServer;noroute MapServer/pdf
+		  MapServer MapServer;noroute
 		  ImageMagick/png ImageMagick/jpeg
 		  BBBikeGoogleMaps
 		 );
+
+    if ($^O ne 'linux' || `lsb_release --id --short` !~ m{debian}i) {
+	push @modules, 'MapServer/pdf';
+    } else {
+	diag('Skipping MapServer/pdf tests, no support on Debian');
+	# because pdflib is considered non-free in Debian
+    }
 
     if (0) { # berliner-stadtplan.com support for BBBike got lost somewhen in 2007 or so...
 	if (eval { require BBBikeDraw::BerlinerStadtplan; 1 }) {
