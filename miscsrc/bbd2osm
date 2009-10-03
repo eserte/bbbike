@@ -77,8 +77,6 @@ my %cat_to_highway = ('B'  => 'primary',
 		      'H'  => 'secondary',
 		      'N'  => 'residential',
 		      'NN' => 'cycleway', # XXX
-		      '?'  => 'motorway', # cheating
-		      '??' => 'motorway', # cheating
 		     );
 
 my %cat_to_railway = ('U' => 'subway',
@@ -135,7 +133,7 @@ if ($single_file) {
     if (!$fragezeichen_file) {
 	$fragezeichen_file = -r "$datadir/../tmp/fragezeichen-nextcheck.bbd" ? "$datadir/../tmp/fragezeichen-nextcheck.bbd" : "$datadir/fragezeichen";
     }
-    do_file($fragezeichen_file, \&handle_highway_like);
+    do_file($fragezeichen_file, \&handle_fixme_like);
 
     do_file("$datadir/ubahn", \&handle_railway_like);
     do_file("$datadir/sbahn", \&handle_railway_like);
@@ -325,6 +323,23 @@ sub handle_highway_like {
 	print $wayfh qq{</way>\n};
 	$next_way_id++;
     }
+}
+
+sub handle_fixme_like {
+    my($r, $dir) = @_;
+
+    my @node_ids = get_node_ids($r);
+
+    my $name = $r->[Strassen::NAME] || 'FIXME';
+    _xmlify($name);
+
+    print $wayfh qq{<way id="$next_way_id" visible="true">\n};
+    for my $node_id (@node_ids) {
+	print $wayfh qq{  <nd ref="$node_id"/>\n};
+    }
+    print $wayfh qq{  <tag k="FIXME" v="$name" />\n};
+    print $wayfh qq{</way>\n};
+    $next_way_id++;
 }
 
 sub handle_railway_like {
