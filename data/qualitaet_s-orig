@@ -24,8 +24,8 @@ Werkst‰ttenweg: m‰ﬂiges Kopfsteinpflaster	Q2 2121,10089 1634,9668
 #: by: http://www.berlin.de/ba-spandau/presse/archiv/20061108.1455.50011.html
 Schˆnwalder Allee: asphaltiert	Q0 -3782,17125 -3807,17226 -3820,17276 -3936,17516 -4119,17723
 Schˆnwalder Allee: gutes Kopfsteinpflaster, 2-Richtungs-Radweg mit m‰ﬂigen bis guten Asphalt	Q1 -4119,17723 -4490,18341 -4898,18801 -5249,19246 -5253,19424 -5209,19643 -5240,19826 -5651,20200 -6099,20718
-Kopenhagener Str.: m‰ﬂiger Radweg auf beiden Seiten (gepflastert), Straﬂe OK	Q0 7217,18681 7248,18793 7329,18996 7496,19388 7520,19448 7528,19469 7660,19810
-Hauptstr. (Rosenthal): Asphalt	Q0 7660,19810 7681,19867 7716,19954 7748,20040 7790,20132 7832,20219 7929,20386 7992,20515 8064,20735 8092,20817 8107,20859 8167,21020
+Kopenhagener Str.: m‰ﬂiger Radweg auf beiden Seiten (gepflastert), Straﬂe OK	Q0 7217,18681 7248,18793 7329,18996 7487,19406 7504,19459 7512,19480 7603,19713 7617,19748 7634,19793
+Hauptstr. (Rosenthal): Asphalt	Q0 7634,19793 7672,19869 7711,19956 7748,20040 7790,20132 7832,20219 7929,20386 7992,20515 8064,20735 8092,20817 8107,20859 8167,21020
 Hauptstr. (Rosenthal): Kopfsteinpflaster auf der Straﬂe, Radwege OK	Q1 8277,21257 8167,21020
 Hauptstr. (Rosenthal)/Mˆnchm¸hler Str.: schlechtes Kopfsteinpflaster (12 km/h)	Q3 8277,21257 8460,21602 8591,21906 8426,22015 8504,22281 8543,22413 8554,22440 8900,23274 8903,23349 8909,23506
 Bahnhofstr.: schlechtes Kopfsteinpflaster	Q3 8803,23478 8909,23506
@@ -175,7 +175,7 @@ Mittenwalder Str.: Kopfsteinpflaster	Q2 9924,9476 9957,9692 9982,9847 10006,9942
 Tiergartenufer: m‰ﬂiges Kopfsteinpflaster	Q2 6476,11325 6436,11343
 Tiergartenufer: Parkweg/Kleinsteinpflaster	Q1 6436,11343 6358,11394 6262,11426 6186,11466
 Tiergarten: Kopfsteinpflaster	Q2 5835,11768 5771,11887
-Garibaldistr.: schlechtes Kopfsteinpflaster	Q3 7333,19911 7341,19974 7405,20019 7468,20009 7604,19988 7716,19954 7838,19884
+Garibaldistr.: schlechtes Kopfsteinpflaster	Q3 7324,19795 7333,19911 7341,19974 7405,20019 7468,20009 7604,19988 7711,19956 7838,19884
 Alt-L¸bars: schlechtes Kopfsteinpflaster	Q3 6727,23287 6770,23417 6819,23549 6744,23695
 Alt-L¸bars: Kopfsteinpflaster	Q2 6744,23695 6817,23760
 Alt-L¸bars: schlechtes Kopfsteinpflaster	Q3 6817,23760 6879,23816 6992,23814 7111,23873 7185,23749
@@ -348,8 +348,8 @@ Mauerweg: teilweise nur m‰ﬂiger Asphalt	Q1 7725,21247 7289,20618 7083,20584 6601
 An der Nordbahn: m‰ﬂiges Pflaster (?)	Q1 6669,20129 6365,20402 6289,20468
 An der Nordbahn: Verbundsteinpflaster	Q1+ 8647,18567 8597,18554 8558,18597 8562,18642
 An der Nordbahn: teilweise m‰ﬂiger Asphalt (Wellen, Schlaglˆcher)	Q1 8562,18642 8476,18773
-An der Nordbahn: teilweise m‰ﬂiger Asphalt (Wellen, Schlaglˆcher)	Q2 8369,18769 8237,18880 7528,19469
-An der Nordbahn: m‰ﬂiger Asphalt	Q1 7520,19448 6694,20164 6389,20412 6364,20431 6365,20452
+An der Nordbahn: teilweise m‰ﬂiger Asphalt (Wellen, Schlaglˆcher)	Q2 8369,18769 8237,18880 7512,19480
+An der Nordbahn: m‰ﬂiger Asphalt	Q1 7504,19459 6694,20164 6389,20412 6364,20431 6365,20452
 Pestalozzistr.: Kopfsteinpflaster	Q2 4433,11213 4556,11206 4728,11195 4782,11192
 Pestalozzistr.: Kopfsteinpflaster	Q2 4173,11225 4077,11226 3981,11226
 Goethestr.: teilweise Kopfsteinpflaster, teilweise Verbundsteine	Q2 4312,11341 4092,11338 3986,11337
@@ -2005,7 +2005,7 @@ La-Rochelle-Str.: asphaltiert	Q0 11173,22273 11347,22122 11364,22081 11304,21671
 #: note: den s¸dˆstlichen Abschnitt ab NisblÈstr. nur am Anfang sehen:
 (Am Nordgraben): unbefestigter, holpriger Weg	Q2 10228,21940 10993,21729 11060,21694 11175,21572 11345,21360 11729,21144
 Kurze Str.: Beton	Q1 7205,20047 7125,20053
-Hertzstr.: sehr schlechtes Kopfsteinpflaster	Q3 7681,19867 7807,19811
+Hertzstr.: sehr schlechtes Kopfsteinpflaster	Q3 7672,19869 7807,19811
 #: note: laut ADFC-Karte "nicht f¸r Radfahrer geeignet"
 Wˆrdenweg: unbefestigter, holpriger Weg	Q2 8513,21099 8482,21051 8251,20927 8107,20859
 #: note: laut ADFC-Karte "nicht f¸r Radfahrer geeignet"
@@ -2648,6 +2648,11 @@ Loefer Weg: grober Asphalt	Q1 19052,12591 19028,12383
 Am Rosengarten: Beton	Q1 18654,12255 18707,12225 18834,12228 18867,12265
 Hohenschˆnhauser Weg: m‰ﬂiger Asphalt	Q1 18422,11837 18408,12105
 Rosenfelder Ring: Kopfsteinpflaster	Q2+ 17466,11960 17363,11972
+#: note: aus der S-Bahn gesehen:
+Seebeckstr.: Kopfsteinpflaster	Q2+ 8495,18566 8425,18542
+Fontanestr.: betoniert	Q0 7209,19928 7223,19826 7324,19795 7522,19804
+(Fontanestr. - Kopenhagener Str.): asphaltiert, mit Lˆchern	Q2+ 7522,19804 7518,19762 7617,19748
+Straﬂe 33 (Niederschˆnhausen): teilweise unbefestigt	Q2 7603,19713 7675,19677
 ######################### User Contributions #################################
 #: by: Dominik Seelow vvv
 Viktoriastr.: m‰ﬂiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
@@ -2722,7 +2727,7 @@ Kneippstr.: schlechtes Kopfsteinpflaster	Q3 2891,23829 3015,23913
 #: by: truediger vvv
 #: note: Beate Vollrath meint hier: Asphalt, Q2, go with truediger
 Waldsteg: Asphalt	Q0 8359,19162 8334,19157 8170,19308 7940,19521 7849,19614 7857,19693
-Niederstr.: altes grobes Kopfsteinpflaster	Q3 7857,19693 7769,19736 7660,19810
+Niederstr.: altes grobes Kopfsteinpflaster	Q3 7857,19693 7769,19736 7634,19793
 #: by ^^^
 #: by: Thomas Dobrzinski
 Denkstr.: Asphalt	Q0 6865,4659 7032,4635
@@ -7351,7 +7356,9 @@ Jenny-Lind-Str.: m‰ﬂiger Asphalt	Q1 11531,17250 11645,17271 11768,17296
 Sandhofweg: gutes Verbundsteinpflaster	Q1 5848,272 5795,371 5757,434 5688,402 5644,381
 #: by:  Alexander Nieruch:
 #: note "Durchfahrt nicht zu empfehlen"
-Hielscherstr.: teilweise mit Asphalt ¸berdecktes groﬂsteiniges Kopfsteinpflaster	Q2- 7522,19804 7556,19882 7604,19988 7695,20175 7735,20262 7809,20420 7866,20556 7937,20778
+#: corrected_by: srt (Asphalt/Kopfsteinpflaster, Q2- -> betoniert, Q0)
+Hielscherstr.: betoniert	Q0 7522,19804 7556,19882
+Hielscherstr.: teilweise mit Asphalt ¸berdecktes groﬂsteiniges Kopfsteinpflaster	Q2- 7556,19882 7604,19988 7695,20175 7735,20262 7809,20420 7866,20556 7937,20778
 #: by: Michael Lawatsch: vvv
 #: note: anonym meint "m‰ﬂiger Asphalt Q2, enge Straﬂe q0":
 Fachinger Str.: Asphalt	Q0 -8118,14649 -8112,14702 -8126,14740 -8203,14826 -8295,14948 -8391,15109 -8449,15189

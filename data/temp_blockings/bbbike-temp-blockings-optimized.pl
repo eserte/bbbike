@@ -746,11 +746,11 @@ userdel	q4::inwork 10422,12395 10476,12432
        undef,
        {
          'source_id' => 'IM_012764',
-         'until' => 1254347999,
-         'text' => 'Glinkastr. (Mitte) Richtung Leipziger Str. zwischen Behrenstr. und J‰gerstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 09.2009)',
-         'from' => 1243371714,
+         'until' => 1255643999,
+         'text' => 'Glinkastr. (Mitte) Richtung Leipziger Str. zwischen Behrenstr. und Taubenstr. Baustelle, Fahrtrichtung gesperrt (bis Mitte 10.2009)',
+         'from' => 1254597146,
          'id' => 1679,
-         'data' => 'userdel	q4::inwork; 9164,12172 9183,12076 9201,11968
+         'data' => 'userdel	q4::inwork; 9164,12172 9183,12076 9201,11968 9208,11872
 ',
          'type' => 'handicap'
        },
@@ -872,15 +872,7 @@ userdel	2::inwork 7160,11225 6851,11346
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1254348000,
-         'text' => 'L 015 F¸rstenberg - Menz OD F¸rstenberg, zw. Bergstr. und OA Ri. Menz Straﬂenbau, Br¸ckenabriss Vollsperrung 06.07.2009-30.09.2009 ',
-         'from' => 1246744800,
-         'id' => 1731,
-         'data' => 'userdel	2::inwork -8893,85743 -9850,84800
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_013316',
          'until' => 1262300400,
@@ -969,15 +961,7 @@ userdel	2::inwork 7160,11225 6851,11346
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1254348000,
-         'text' => 'Bauarbeiten in der Mohrenstraﬂe, Fahrbahn bis September 2009 gesperrt ',
-         'from' => 1248200777,
-         'id' => 1762,
-         'data' => 'userdel	q4::inwork 9418,11804 9220,11781
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => undef,
          'text' => 'Die Charlottenstraﬂe ist wegen Bauarbeiten eine Einbahnstraﬂe Richtung S¸den',
@@ -1007,15 +991,7 @@ userdel	q4::inwork; 9475,12365 9462,12481 9454,12558
        undef,
        undef,
        undef,
-       {
-         'until' => 1254348000,
-         'text' => 'K 6722 Bornow - Groﬂ Rietz zw. Birkholz und Groﬂ Rietz Straﬂenneubau Vollsperrung 29.07.2009-30.09.2009 ',
-         'from' => 1248732000,
-         'id' => 1783,
-         'data' => 'userdel	2::inwork 65774,-20483 65659,-21355 65445,-21565 65314,-22074 65076,-22519
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1259967600,
          'text' => 'K 7346 Rudolf-Breitscheid-Str. OL Angerm¸nde, zw. Pestalozzistr. u. Sternefelder Weg Kanal- und Straﬂenbau Vollsperrung 05.08.2009-04.12.2009 ',
@@ -1039,16 +1015,7 @@ userdel	q4::inwork; 9475,12365 9462,12481 9454,12558
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_013726',
-         'until' => 1254347999,
-         'text' => 'Bauarbeiten in der Buntzelstr. zwischen Parchwitzer Str. und Paradiesstr., Einbahnstraﬂenregelung, etwa vom 15.9. bis zum 30.9.2009',
-         'from' => 1252879200,
-         'id' => 1791,
-         'data' => 'userdel	q4::inwork; 21355,-309 21118,-459
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => 1255384800,
@@ -1348,15 +1315,7 @@ Neuer Garten (am Portierhaus) - Weinmeisterstr.: Weg ist nur zwischen 6 Uhr bis 
        undef,
        undef,
        undef,
-       {
-         'until' => 1254520800,
-         'text' => 'L 025 Schˆnermark - F¸rstenwerder - Woldegk zw. OL Kraatz u. F¸rstenwerder u. LG Deckenerneuerung Vollsperrung 17.08.2009-02.10.2009 ',
-         'from' => 1250373600,
-         'id' => 1839,
-         'data' => 'userdel	2::inwork 21007,109931 21285,109895 22504,109807 23242,109707
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1459,15 +1418,7 @@ d Breitenbachstr. Baustelle, Fahrtrichtung gesperrt (bis Anfang 05/2010)',
        },
        undef,
        undef,
-       {
-         'until' => 1254348000,
-         'text' => 'B 167 Marienwerderstr. OD Finowfurt, zw. Zum Krugacker u. Aral-Tankstelle Straﬂenerneuerung Vollsperrung 29.08.2009-30.09.2009 ',
-         'from' => 1251410400,
-         'id' => 1863,
-         'data' => 'userdel	q4::inwork 28575,49756 27822,49878
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1494,15 +1445,7 @@ d Breitenbachstr. Baustelle, Fahrtrichtung gesperrt (bis Anfang 05/2010)',
          'type' => 'handicap'
        },
        undef,
-       {
-         'until' => 1254348000,
-         'text' => 'L 068 Oelsig - Schlieben OD Schlieben, Am M¸hlenberg Deckenerneuerung Vollsperrung 10.09.2009-30.09.2009 ',
-         'from' => 1252447200,
-         'id' => 1874,
-         'data' => 'userdel	q4::inwork 10891,-76066 10533,-76130 10302,-76088
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => 1267398000,
@@ -1584,16 +1527,7 @@ userdel	q4::inwork; 10829,18083 10907,18109 10938,18147 10989,18172 11137,18358 
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_014203',
-         'until' => 1254434399,
-         'text' => 'Allee der Kosmonmauten (Marzahn) stadtausw‰rts zwischen Rhinstr. und Marzahner Chaussee Baustelle, Fahrtrichtung gesperrt (bis Anfang 10.2009)',
-         'from' => 1253357936,
-         'id' => 1892,
-         'data' => 'userdel	q4::inwork; 18234,13500 18783,13469 18875,13467 19059,13474 19173,13478
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1617,36 +1551,9 @@ userdel	q4::inwork; 10829,18083 10907,18109 10938,18147 10989,18172 11137,18358 
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_014223',
-         'until' => 1254434399,
-         'text' => 'Vulkanstr. ist voll gesperrt (bis Anfang 10.2009)',
-         'from' => 1253730749,
-         'id' => 1899,
-         'data' => 'userdel	q4::inwork 15838,14319 15871,14106 15897,13942
-',
-         'type' => 'handicap'
-       },
-       {
-         'source_id' => 'IM_014235',
-         'until' => 1254434399,
-         'text' => 'Darﬂer Str. (Hohenschˆnhausen) Richtung Falkenberger Chaussee zwischen Graaler Weg und Ribnitzer Str. Baustelle, Fahrtrichtung gesperrt (bis Anfang 10.2009)',
-         'from' => 1253731110,
-         'id' => 1900,
-         'data' => 'userdel	q4::inwork; 15881,17899 16277,17830
-',
-         'type' => 'handicap'
-       },
-       {
-         'source_id' => 'IM_014246',
-         'until' => 1254240000,
-         'text' => 'Scheidemannstr. (Tiergarten) in beiden Richtungen zwischen Ebertstr. und John-Foster-Dulles-Allee Veranstaltung, gesperrt (bis 29.09.09, ca. 18 Uhr)',
-         'from' => 1253731186,
-         'id' => 1901,
-         'data' => 'userdel	q4::temp 8540,12420 8400,12417 8374,12416 8119,12414
-',
-         'type' => 'handicap'
-       },
+       undef,
+       undef,
+       undef,
        {
          'until' => 1255384800,
          'text' => 'B 096 Sonnewalde - Luckau zw. L561, Weiﬂack und OU Luckau Deckenerneuerung Vollsperrung 09.10.2009-12.10.2009 ',

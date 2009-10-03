@@ -5656,7 +5656,7 @@ EOF
        type  => 'handicap',
        source_id => 'INKO_84070',
        data  => <<EOF,
-userdel	q4::inwork 7832,20219 7790,20132 7748,20040 7716,19954
+userdel	q4::inwork 7832,20219 7790,20132 7748,20040 7711,19956
 EOF
      },
      { from  => undef, # 
@@ -14229,13 +14229,13 @@ EOF
 userdel	q4::inwork 21244,3571 21308,3680
 EOF
      },
-     { from  => 1243371714, # 2009-05-26 23:01
-       until => 1254347999, # 2009-09-30 23:59
-       text  => 'Glinkastr. (Mitte) Richtung Leipziger Str. zwischen Behrenstr. und Jägerstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 09.2009)',
+     { from  => 1254597146, # 2009-10-03 21:12
+       until => 1255643999, # 2009-10-15 23:59
+       text  => 'Glinkastr. (Mitte) Richtung Leipziger Str. zwischen Behrenstr. und Taubenstr. Baustelle, Fahrtrichtung gesperrt (bis Mitte 10.2009)',
        type  => 'handicap',
        source_id => 'IM_012764',
        data  => <<EOF,
-userdel	q4::inwork; 9164,12172 9183,12076 9201,11968
+userdel	q4::inwork; 9164,12172 9183,12076 9201,11968 9208,11872
 EOF
      },
      { from  => 1243116000, # 2009-05-24 00:00
