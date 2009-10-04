@@ -110,6 +110,11 @@ if ($single_file) {
 } else {
     # NODE-like
     do_file("$datadir/ampeln", \&handle_trafficsignals_like);
+    if (-r "$datadir/zebrastreifen") { # path for osm data
+	do_file("$datadir/zebrastreifen", \&handle_zebrastreifen);
+    } elsif (-r "$datadir/../misc/zebrastreifen") { # path for bbbike data (will be moved some day XXX)
+	do_file("$datadir/../misc/zebrastreifen", \&handle_zebrastreifen);
+    }
     do_file("$datadir/gesperrt", \&handle_blocked_node_like);
 
     # WAY-like
@@ -467,6 +472,14 @@ sub handle_trafficsignals_like {
     }
 
     get_node_ids($r, $attribs); # as a side-effect, create the nodes
+}
+
+sub handle_zebrastreifen {
+    my($r) = @_;
+    get_node_ids($r, { highway => 'crossing',
+		       crossing => 'uncontrolled',
+		       crossing_ref => 'zebra',
+		     });
 }
 
 seek $nodefh, 0, SEEK_SET
