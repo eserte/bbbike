@@ -105,7 +105,8 @@ RSYNC_SRCDEST?=	. ${RSYNC_DEST}
 WWW_USER?=	www
 WWW_GROUP?=	www
 
-.if ${OSTYPE} == "linux" || ${OSTYPE} == "linux-gnu"
+OSNAME!=	uname
+.if ${OSNAME} == "linux"
 OS_LINUX=	yes
 .else
 OS_LINUX=
