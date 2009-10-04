@@ -111,10 +111,13 @@ if ($single_file) {
     # NODE-like
     do_file("$datadir/ampeln", \&handle_trafficsignals_like);
     if (-r "$datadir/zebrastreifen") { # path for osm data
-	do_file("$datadir/zebrastreifen", \&handle_zebrastreifen);
+	do_file("$datadir/zebrastreifen", \&handle_zebrastreifen_like);
     } elsif (-r "$datadir/../misc/zebrastreifen") { # path for bbbike data (will be moved some day XXX)
-	do_file("$datadir/../misc/zebrastreifen", \&handle_zebrastreifen);
+	do_file("$datadir/../misc/zebrastreifen", \&handle_zebrastreifen_like);
     }
+    do_file("$datadir/ubahnhof", \&handle_railway_stations_like);
+    do_file("$datadir/sbahnhof", \&handle_railway_stations_like);
+    do_file("$datadir/rbahnhof", \&handle_railway_stations_like);
     do_file("$datadir/gesperrt", \&handle_blocked_node_like);
 
     # WAY-like
@@ -474,12 +477,33 @@ sub handle_trafficsignals_like {
     get_node_ids($r, $attribs); # as a side-effect, create the nodes
 }
 
-sub handle_zebrastreifen {
+sub handle_zebrastreifen_like {
     my($r) = @_;
     get_node_ids($r, { highway => 'crossing',
 		       crossing => 'uncontrolled',
 		       crossing_ref => 'zebra',
 		     });
+}
+
+sub handle_railway_stations_like {
+    my($r) = @_;
+    my $is_ubahn = $r->[Strassen::CAT] =~ m{^U};
+    my $is_sbahn = $r->[Strassen::CAT] =~ m{^S};
+    my $attribs = { railway => 'station', # no distinction between halt and station
+		    name => ($is_ubahn ? 'U ' : $is_sbahn ? 'S ' : '') . $r->[Strassen::NAME],
+		  };
+    if      ($is_ubahn) {
+	$attribs->{station} = 'subway';
+    } elsif ($is_sbahn) {
+	$attribs->{station} = 'light_rail';
+    } elsif ($r->[Strassen::CAT] =~ m{^R}) {
+	# Regional/Fernbahnhof
+    } else {
+	warn "Unhandled railway station-like category $r->[Strassen::CAT]\n";
+	return;
+    }
+
+    get_node_ids($r, $attribs);
 }
 
 seek $nodefh, 0, SEEK_SET
@@ -574,12 +598,7 @@ means clashes are possible if these data and "real" osm is mixed.
 Maybe I should check if the various osm tools can handle negative or
 non-numeric ids, or if there's a private id range documented.
 
-Implement handling of stations (ubahnhof, sbahnhof, rbahnhof).
-
 Implement handling of BNP:...
-
-Both need the handling of stand-alone nodes -> add additional
-attributes to %node_id.
 
 =head1 AUTHOR
 
