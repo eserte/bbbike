@@ -504,12 +504,16 @@ sub maybe_add_node {
 	$this_node_id = $node_id{$pxy} = $next_node_id++;
 	print $nodefh qq{<node id="$this_node_id" lat="$py" lon="$px" user="eserte" visible="true" };
 	if ($attribs) {
+	    print $nodefh qq{>\n};
 	    while(my($k,$v) = each %$attribs) {
+		_xmlify($k);
 		_xmlify($v);
-		print $nodefh qq{$k="$v" };
+		print $nodefh qq{  <tag k="$k" v="$v"/>\n};
 	    }
+	    print $nodefh qq{</node>\n};
+	} else {
+	    print $nodefh qq{/>\n};
 	}
-	print $nodefh qq{/>\n};
 
 	$min_lon = $px if !defined $min_lon || $min_lon > $px;
 	$max_lon = $px if !defined $max_lon || $max_lon < $px;
