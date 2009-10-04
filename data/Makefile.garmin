@@ -171,31 +171,36 @@ GMAPSUPP_SRC=	${PERSISTENTTMPDIR}/bbbike_routable.img \
 #GMAPSUPP_SRC+=	${MAPSOURCE_DE_IMG}
 #.endif
 
+.if exists(${HOME}/src/bbbike-aux/mkgmap/typ/M000002a.TYP)
+SRT_TYPFILE=	--family-id=42 ${HOME}/src/bbbike-aux/mkgmap/typ/M000002a.TYP
+.else
+SRT_TYPFILE=
+.endif
 
-${PERSISTENTTMPDIR}/gmapsupp.img:	${GMAPSUPP_SRC}
+${PERSISTENTTMPDIR}/gmapsupp.img:	${GMAPSUPP_SRC} ${SRT_TYPFILE}
 	cd ${PERSISTENTTMPDIR} && \
-	    ${MKGMAP} --gmapsupp ${GMAPSUPP_SRC}
+	    ${MKGMAP} --gmapsupp ${GMAPSUPP_SRC} ${SRT_TYPFILE}
 
 gmapsupp-without-rebuild:
 .for f in ${GMAPSUPP_SRC}
 	[ -e $f ]
 .endfor
 	cd ${PERSISTENTTMPDIR} && \
-	    ${MKGMAP} --gmapsupp ${GMAPSUPP_SRC}
+	    ${MKGMAP} --gmapsupp ${GMAPSUPP_SRC} ${SRT_TYPFILE}
 
 # Run as: make gmapsupp-with-alternative-berlin-brandenburg-without-rebuild-other TMPDIR=/mnt/i386/tmp
 # No success so far.
 GMAPSUPP_ALT_SRC=${GMAPSUPP_SRC:N*/berlin_osm.img}
-gmapsupp-with-alternative-berlin-brandenburg:	${GMAPSUPP_SRC} berlin-brandenburg-img
+gmapsupp-with-alternative-berlin-brandenburg:	${GMAPSUPP_SRC} berlin-brandenburg-img ${SRT_TYPFILE}
 	cd ${PERSISTENTTMPDIR} && \
-	    ${MKGMAP} --gmapsupp ${GMAPSUPP_SRC} ${BIGTMPDIR}/berlin_brandenburg_build/6324*.img
+	    ${MKGMAP} --gmapsupp ${GMAPSUPP_SRC} ${BIGTMPDIR}/berlin_brandenburg_build/6324*.img ${SRT_TYPFILE}
 
-gmapsupp-with-alternative-berlin-brandenburg-without-rebuild-other:	berlin-brandenburg-img
+gmapsupp-with-alternative-berlin-brandenburg-without-rebuild-other:	berlin-brandenburg-img ${SRT_TYPFILE}
 .for f in ${GMAPSUPP_ALT_SRC}
 	[ -e $f ]
 .endfor
 	cd ${PERSISTENTTMPDIR} && \
-	    ${MKGMAP} --gmapsupp ${GMAPSUPP_SRC} ${BIGTMPDIR}/berlin_brandenburg_build/6324*.img
+	    ${MKGMAP} --gmapsupp ${GMAPSUPP_SRC} ${BIGTMPDIR}/berlin_brandenburg_build/6324*.img ${SRT_TYPFILE}
 
 ${PERSISTENTTMPDIR}/berlin_combined.osm:    ${MISCDIR}/download/osm/berlin/*.osm{,.gz,.bz2}	\
 					    ${MISCDIR}/download/osm/potsdam/*.osm{,.gz,.bz2}	\
