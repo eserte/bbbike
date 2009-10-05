@@ -410,7 +410,7 @@ for my $browser (@browsers) {
 		cmp_ok($length, "<=", 1, "Short path (got $length km)")
 		    or diag $content;
 	    } else {
-		fail("Cannot get length from content");
+		fail("Cannot get length from content, URL is <" . $agent->uri . ">");
 		diag $content;
 	    }
 	}
