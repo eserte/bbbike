@@ -1,3 +1,24 @@
+2009-10-06  Slaven Rezic  <slaven@rezic.de>
+
+	* Bad Benchmarks: Eine goldene Regel beim Benchmarken: immer prüfen, ob
+	die geprüften Funktionen tatsächlich das Gleiche zurückgeben! Ich habe
+	einen alten, bislang nur im RCS lebenden
+	Benchmark (miscsrc/strassen_benchmark.pl) ausgegraben und ins
+	git-Repository verschoben. Dieser Benchmark hat immer behauptet, dass
+	die Strassen::Storable-Implementation langsamer als die normale Strassen
+	oder eine DB_File-Variante ist. Leider war dieser Benchmark immer schon
+	falsch gewesen: die Schleife über alle Datensätze hatte einen
+	fehlerhafte Bedingung und ist schon nach dem ersten Datensatz
+	ausgestiegen.
+
+	Nachdem der Benchmark korrigiert wurde, ergibt sich ein völlig anderes
+	Bild: DB_File/RECNO ist nun mit Abstand am langsamsten, dann folgen die
+	Pure-Perl-Varianten (wobei sowohl die Streaming-Variante als auch die
+	normale Variante sich nicht groß unterscheiden), und schließlich als
+	Schnellstes die Storable-Variante. Also lohnt es sich vielleicht doch,
+	die Storable-Variante (z.B. für binäre BBBike-Distributionen) zu
+	verwenden.
+
 2009-08-04  Slaven Rezic  <slaven@rezic.de>
 
 	* Umzug zu git: Das Haupt-Repository von BBBike ist ab sofort als
