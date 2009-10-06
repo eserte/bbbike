@@ -69,4 +69,10 @@ FreeBSD 7, perl 5.10.1
 parse     96328/s       --      -6%
 parse_rx 102867/s       7%       --
 
+Linux (Debian etch), perl 5.10.1
+
+             Rate    parse parse_rx
+parse     73454/s       --     -51%
+parse_rx 150377/s     105%       --
+
 =cut
