@@ -22,9 +22,20 @@ use Strassen::Storable;
 use Strassen;
 use Benchmark qw(cmpthese);
 use DB_File;
+use Getopt::Long;
 use strict;
 
-my $count = shift || -3;
+my $do_check;
+GetOptions("check!" => \$do_check)
+    or die "usage: $0 [-check] | [count]";
+
+my $count = $do_check ? 1 : (shift || -3);
+
+my @check_slow;
+my @check_stream;
+my @check_stream_nodir;
+my @check_storable;
+my @check_dbfile;
 
 cmpthese($count,
 	 {'slow'         => \&read_and_loop_slow,
@@ -34,36 +45,51 @@ cmpthese($count,
 	  'dbfile_recno' => \&read_and_loop_dbfile,
 	 });
 
+if ($do_check) {
+    require Test::More;
+    Test::More->import(qw(no_plan));
+    Test::More::is_deeply(\@check_stream,       \@check_slow, 'Check stream result'); 
+    Test::More::is_deeply(\@check_stream_nodir, \@check_slow, 'Check stream result (without local directives)'); 
+    Test::More::is_deeply(\@check_storable,     \@check_slow, 'Check storable result'); 
+    Test::More::is_deeply(\@check_dbfile,       \@check_slow, 'Check dbfile result'); 
+}
+
 sub read_and_loop_slow {
+    @check_slow = ();
     my $s = Strassen->new("strassen");
-    loop($s);
+    loop($s, \@check_slow);
 }
 
 sub read_and_loop_storable {
+    @check_storable = ();
     my $s = Strassen::Storable->new("strassen.st");
-    loop($s);
+    loop($s, \@check_storable);
 }
 
 sub loop {
-    my $s = shift;
+    my($s, $check_array) = @_;
     $s->init;
     while(1) {
 	my $r = $s->next;
-	last if @{ $r->[Strassen::COORDS] };
+	last if !@{ $r->[Strassen::COORDS] };
+	push @$check_array, $r;
     }
 }
 
 sub read_and_loop_stream {
+    @check_stream = ();
     my $s = Strassen->new_stream('strassen');
-    $s->read_stream(sub { });
+    $s->read_stream(sub { push @check_stream, $_[0] });
 }
 
 sub read_and_loop_stream_nodir {
+    @check_stream_nodir = ();
     my $s = Strassen->new_stream('strassen');
-    $s->read_stream(sub { }, UseLocalDirectives => 0);
+    $s->read_stream(sub { push @check_stream_nodir, $_[0] }, UseLocalDirectives => 0);
 }
 
 sub read_and_loop_dbfile {
+    @check_dbfile = ();
     tie my @s, 'DB_File', "$FindBin::RealBin/../data/strassen", O_RDONLY, 0644, $DB_RECNO
 	or die $!;
     my $s = new Strassen;
@@ -71,7 +97,8 @@ sub read_and_loop_dbfile {
     $s->_dbfile_init;
     while(1) {
 	my $r = $s->_dbfile_next;
-	last if @{ $r->[Strassen::COORDS] };
+	last if !@{ $r->[Strassen::COORDS] };
+	push @check_dbfile, $r;
     }
 }
 
@@ -82,6 +109,7 @@ sub Strassen::_dbfile_init {
 
 sub Strassen::_dbfile_next {
     my($s) = @_;
+    no warnings 'uninitialized';
     while ($s->{Array}[++($s->{Pos})] =~ m{^#}) {}
     $s->_dbfile_get($s->{Pos});
 }
@@ -97,40 +125,17 @@ __END__
 
 Results:
 
-$ perl5.00503 ./strassen_benchmark.pl
-Benchmark: running dbfile_recno, slow, storable, each for at least 3 CPU seconds...
-dbfile_recno:  4 wallclock secs ( 2.09 usr +  1.14 sys =  3.23 CPU) @ 43.70/s (n=141)
-        slow:  3 wallclock secs ( 3.31 usr +  0.16 sys =  3.47 CPU) @ 26.52/s (n=92)
-    storable:  4 wallclock secs ( 3.51 usr +  0.34 sys =  3.85 CPU) @ 10.65/s (n=41)
-
-$ perl5.7.2 ./strassen_benchmark.pl
-Benchmark: running dbfile_recno, slow, storable, each for at least 3 CPU seconds...
-dbfile_recno:  3 wallclock secs ( 1.85 usr +  1.24 sys =  3.09 CPU) @ 44.28/s (n=137)
-        slow:  3 wallclock secs ( 2.89 usr +  0.25 sys =  3.14 CPU) @ 31.84/s (n=100)
-    storable:  2 wallclock secs ( 2.75 usr +  0.34 sys =  3.09 CPU) @ 10.05/s (n=31)
-
-$ perl5.8.0 miscsrc/strassen_benchmark.pl
-Benchmark: running dbfile_recno, slow, storable for at least 3 CPU seconds...
-dbfile_recno:  4 wallclock secs ( 1.73 usr +  1.37 sys =  3.09 CPU) @ 29.74/s (n=92)
-        slow:  3 wallclock secs ( 2.94 usr +  0.14 sys =  3.08 CPU) @ 13.32/s (n=41)
-    storable:  3 wallclock secs ( 2.86 usr +  0.27 sys =  3.12 CPU) @  7.04/s (n=22)
-
-With a much newer machine (FreeBSD 7) and perl 5.8.8:
+FreeBSD 7 (amd64 machine) and perl 5.8.8:
 
                Rate      stream stream_nodir   storable        slow dbfile_recno
-stream       6.65/s          --         -21%       -73%        -76%         -92%
-stream_nodir 8.45/s         27%           --       -66%        -69%         -90%
-storable     24.8/s        273%         194%         --         -9%         -70%
-slow         27.3/s        311%         224%        10%          --         -67%
-dbfile_recno 82.9/s       1146%         881%       234%        203%           --
+               Rate dbfile_recno      stream        slow stream_nodir   storable
+dbfile_recno 3.12/s           --        -50%        -53%         -61%       -74%
+stream       6.31/s         102%          --         -6%         -21%       -47%
+slow         6.70/s         115%          6%          --         -16%       -44%
+stream_nodir 7.98/s         156%         27%         19%           --       -33%
+storable     11.9/s         280%         88%         77%          49%         --
 
 A Linux (Debian lenny) machine with perl 5.10.0:
 
-               Rate      stream stream_nodir   storable dbfile_recno        slow
-stream       11.4/s          --         -20%       -61%         -71%        -76%
-stream_nodir 14.3/s         25%           --       -51%         -64%        -70%
-storable     29.2/s        155%         104%         --         -26%        -39%
-dbfile_recno 39.4/s        245%         176%        35%           --        -18%
-slow         48.2/s        322%         237%        65%          22%          --
 
 =cut
