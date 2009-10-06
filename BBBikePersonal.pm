@@ -30,6 +30,7 @@ use Msg qw(frommain);
 }
 
 use vars qw($show_places $can_toggle_flag);
+$show_places = 0 if !defined $show_places;
 
 if (!defined $can_toggle_flag) {
     $can_toggle_flag = $main::advanced ? 1 : 0;
@@ -106,7 +107,6 @@ sub buttonframe {
     }
     $container->Button(-text => M("Löschen"),
 		       -command => [\&del, $toplevel])->pack(-fill => "x");
-    $show_places = 0;
     $container->Checkbutton(-text => M("Alle zeigen"),
 			    -command => \&toggle_show,
 			    -variable => \$show_places,
