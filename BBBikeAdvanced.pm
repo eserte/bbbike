@@ -3111,68 +3111,6 @@ sub all_crossings {
     }
 }
 
-### AutoLoad Sub
-sub search_movie {
-    if (!eval { require "miscsrc/kino-berlin.pl" }) {
-	return status_message(Mfmt("Das Programm kino-berlin.pl konnte nicht geladen werden: %s", $@), "error");
-    }
-    Kino::Berlin::init("$FindBin::RealBin/miscsrc");
-
-    my $start;
-    if (!@search_route_points || !$search_route_points[0]->[0]) {
-	if (defined $center_on_str) {
-	    my $plz = new PLZ;
-	    my @res = $plz->look($center_on_str);
-	    if (@res) {
-		$start = $res[0]->[3];
-	    }
-	}
-	die "Startpunkt nicht gesetzt" if !$start;
-    } else {
-	$start = $search_route_points[0]->[0];
-    }
-
-    my $entry_t = $top->Toplevel(-title => "Movie");
-    my $movie;
-    my $entry = $entry_t->Entry(-textvariable => \$movie)->pack;
-    $entry_t->idletasks;
-    $entry->focus;
-    $entry_t->bind("<<CloseWin>>" => sub { $entry_t->destroy });
-    $entry->bind
-	("<Return>" => sub {
-	     my @res;
-	     IncBusy($top);
-	     eval {
-		 @res = Kino::Berlin::search_nearest_cinema($movie, $start);
-	     };
-	     warn $@ if $@;
-	     DecBusy($top);
-
-	     if (@res) {
-		 my $coords;
-		 Kino::Berlin::tk_result
-			 ($top, \@res,
-			  -variable  => \$coords,
-			  -selsignal => sub {
-			      print $coords, "\n";
-			      $start = $search_route_points[0]->[0] || $start;
-			      set_route_start($start);
-			      set_route_ziel($coords);
-			      zoom_view();
-			  },
-			  -getstartcoords => sub {
-			      $search_route_points[0]->[0] || $start;
-			  },
-			  -transient => $top,
-			 );
-	     }
-
-	     $entry_t->destroy;
-
-	 });
-    $entry_t->Popup(@popup_style);
-}
-
 use vars qw(@search_anything_history);
 
 # Full text search
