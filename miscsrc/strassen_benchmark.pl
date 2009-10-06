@@ -24,7 +24,9 @@ use Benchmark qw(cmpthese);
 use DB_File;
 use strict;
 
-cmpthese(-3,
+my $count = shift || -3;
+
+cmpthese($count,
 	 {'slow'         => \&read_and_loop_slow,
 	  'stream'	 => \&read_and_loop_stream,
 	  'stream_nodir' => \&read_and_loop_stream_nodir,
