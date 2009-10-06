@@ -717,7 +717,7 @@ make_misc:
 	cd $(MISCDIR) && ${MAKE} ${MAKEFLAGS} 
 
 # create Storable versions of data files
-# handling of Storable files is slower, so it is not done by default
+# handling of Storable files is up to twice as fast as normal bbd files, but not well-tested, so it is not done by default
 STORABLE_TARGETS=${BBD_TARGETS:S/$/.st/}
 storable:	${STORABLE_TARGETS}
 
