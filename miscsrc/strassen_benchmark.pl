@@ -5,12 +5,12 @@
 # $Id: strassen_benchmark.pl,v 1.2 2004/08/27 00:20:08 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2001 Slaven Rezic. All rights reserved.
+# Copyright (C) 2001,2009 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven.rezic@berlin.de
-# WWW:  http://www.rezic.de/eserte/
+# Mail: eserte@users.sourceforge.net
+# WWW:  http://bbbike.sourceforge.net
 #
 
 use FindBin;
@@ -20,15 +20,17 @@ use lib ("$FindBin::RealBin/..",
 	);
 use Strassen::Storable;
 use Strassen;
-use Benchmark;
+use Benchmark qw(cmpthese);
 use DB_File;
 use strict;
 
-timethese(-3,
-	  {'slow'     => \&read_and_loop_slow,
-	   'storable' => \&read_and_loop_storable,
-	   'dbfile_recno' => \&read_and_loop_dbfile,
-	  });
+cmpthese(-3,
+	 {'slow'         => \&read_and_loop_slow,
+	  'stream'	 => \&read_and_loop_stream,
+	  'stream_nodir' => \&read_and_loop_stream_nodir,
+	  'storable'     => \&read_and_loop_storable,
+	  'dbfile_recno' => \&read_and_loop_dbfile,
+	 });
 
 sub read_and_loop_slow {
     my $s = Strassen->new("strassen");
@@ -47,6 +49,16 @@ sub loop {
 	my $r = $s->next;
 	last if @{ $r->[Strassen::COORDS] };
     }
+}
+
+sub read_and_loop_stream {
+    my $s = Strassen->new_stream('strassen');
+    $s->read_stream(sub { });
+}
+
+sub read_and_loop_stream_nodir {
+    my $s = Strassen->new_stream('strassen');
+    $s->read_stream(sub { }, UseLocalDirectives => 0);
 }
 
 sub read_and_loop_dbfile {
@@ -68,7 +80,8 @@ sub Strassen::_dbfile_init {
 
 sub Strassen::_dbfile_next {
     my($s) = @_;
-    $s->_dbfile_get(++($s->{Pos}));
+    while ($s->{Array}[++($s->{Pos})] =~ m{^#}) {}
+    $s->_dbfile_get($s->{Pos});
 }
 
 sub Strassen::_dbfile_get {
@@ -77,6 +90,8 @@ sub Strassen::_dbfile_get {
 }
 
 __END__
+
+=pod
 
 Results:
 
@@ -98,4 +113,13 @@ dbfile_recno:  4 wallclock secs ( 1.73 usr +  1.37 sys =  3.09 CPU) @ 29.74/s (n
         slow:  3 wallclock secs ( 2.94 usr +  0.14 sys =  3.08 CPU) @ 13.32/s (n=41)
     storable:  3 wallclock secs ( 2.86 usr +  0.27 sys =  3.12 CPU) @  7.04/s (n=22)
 
+With a much newer machine (FreeBSD 7) and perl 5.8.8:
 
+               Rate      stream stream_nodir   storable        slow dbfile_recno
+stream       6.65/s          --         -21%       -73%        -76%         -92%
+stream_nodir 8.45/s         27%           --       -66%        -69%         -90%
+storable     24.8/s        273%         194%         --         -9%         -70%
+slow         27.3/s        311%         224%        10%          --         -67%
+dbfile_recno 82.9/s       1146%         881%       234%        203%           --
+
+=cut
