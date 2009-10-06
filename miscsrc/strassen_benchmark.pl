@@ -137,5 +137,11 @@ storable     11.9/s         280%         88%         77%          49%         --
 
 A Linux (Debian lenny) machine with perl 5.10.0:
 
+               Rate dbfile_recno      stream        slow stream_nodir   storable
+dbfile_recno 2.96/s           --        -68%        -70%         -75%       -82%
+stream       9.21/s         211%          --         -8%         -22%       -44%
+slow         10.0/s         239%          9%          --         -15%       -39%
+stream_nodir 11.9/s         301%         29%         18%           --       -28%
+storable     16.5/s         457%         79%         65%          39%         --
 
 =cut
