@@ -293,6 +293,7 @@ sub look {
 	my @cmd = ($grep_type, @grep_args);
 	warn "About to call <@cmd>" if $VERBOSE;
 	CORE::open(PLZ, "-|") or do {
+	    $ENV{LANG} = $ENV{LC_ALL} = $ENV{LC_CTYPE} = 'C';
 	    exec @cmd;
 	    warn "While doing @cmd: $!";
 	    require POSIX;
