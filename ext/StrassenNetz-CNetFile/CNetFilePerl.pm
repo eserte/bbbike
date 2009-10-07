@@ -139,6 +139,11 @@ sub convert_net {
 
 # $wegfuehrung: coordinates in human-readable format
 # $old_wegfuehrung: coordinates in binary (converted) format
+#
+# The "exists" checks are necessary to avoid warnings if wegfuehrung
+# contains points outside the "master" net (which happens in current
+# bbbike data, some comments_path routes are only available together
+# with fragezeichen, maybe also landstrassen)
 sub convert_wegfuehrung {
     my($self, $wegfuehrung, $old_wegfuehrung) = @_;
     my $new_wegf = $old_wegfuehrung || {};
@@ -147,11 +152,15 @@ sub convert_wegfuehrung {
 	for my $elem (@$v) {
 	    my $new_node2 = [];
 	    for my $coord (@$elem) {
-		push @$new_node2, $self->convert_coord($coord);
+		if (exists $self->{CNetCoord2Ptr}{$coord}) {
+		    push @$new_node2, $self->convert_coord($coord);
+		}
 	    }
 	    push @$new_node, $new_node2;
 	}
-	$new_wegf->{$self->convert_coord($k1)} = $new_node;
+	if (exists $self->{CNetCoord2Ptr}{$k1}) {
+	    $new_wegf->{$self->convert_coord($k1)} = $new_node;
+	}
     }
     $new_wegf;
 }
