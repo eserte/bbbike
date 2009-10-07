@@ -36,9 +36,13 @@ if (!defined $ENV{BATCH}) {
     $ENV{BATCH} = 1;
 }
 
+my $mw = eval { tkinit };
+if (!$mw) {
+    plan skip_all => 'Cannot create MainWindow';
+    CORE::exit(0);
+}
 plan tests => 7;
 
-my $mw = tkinit;
 $mw->geometry("+10+10");
 $mw->Button(-text => "Close", -command => sub { $mw->destroy })->pack(-side => "bottom");
 my $c = $mw->Scrolled("Canvas")->pack(qw(-fill both -expand 1));

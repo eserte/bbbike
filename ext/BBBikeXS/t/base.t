@@ -10,7 +10,8 @@ use strict;
 use vars qw($x_delta $y_delta);
 
 use Test::More;
-plan tests => 39;
+my $tk_tests = 29;
+plan tests => 10 + $tk_tests;
 
 BEGIN {
     eval {
@@ -91,10 +92,11 @@ if (defined $v && $v > 0) {
 }
 
 SKIP: {
-    skip "Tk tests not enabled", 4 if !$test_tk;
+    skip "Tk tests not enabled", $tk_tests if !$test_tk;
+    skip "Tk not available", $tk_tests if !eval { require Tk; 1 };
+    my $top = eval { Tk::tkinit() };
+    skip "Cannot create MainWindow", $tk_tests if !$top;
 
-    require Tk;
-    my $top = Tk::tkinit();
     my $c = $top->Canvas(-width => 1000,
 			 -height => 700)->pack;
     use vars qw($andreaskr_klein_photo $ampel_klein_photo $zugbruecke_klein_photo);
