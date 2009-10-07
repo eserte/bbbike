@@ -18,7 +18,7 @@ BEGIN {
 	use Devel::Leak;
 	1;
     }) {
-	print "1..0 # skip: no Test::More and/or Devel::Leak modules\n";
+	print "1..0 # skip no Test::More and/or Devel::Leak modules\n";
 	exit;
     }
 }

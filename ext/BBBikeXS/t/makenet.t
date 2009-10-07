@@ -24,7 +24,7 @@ BEGIN {
 	use File::Temp;
 	1;
     }) {
-	print "1..0 # skip: no Test::More and/or File::Temp modules\n";
+	print "1..0 # skip no Test::More and/or File::Temp modules\n";
 	exit;
     }
 }

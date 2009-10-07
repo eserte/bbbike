@@ -15,7 +15,7 @@ BEGIN {
 	use Tk;
 	1;
     }) {
-	print "1..0 # skip: no File::Temp, Tk and/or Test::More module\n";
+	print "1..0 # skip no File::Temp, Tk and/or Test::More module\n";
 	CORE::exit(0);
     }
 }
