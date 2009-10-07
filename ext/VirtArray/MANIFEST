@@ -3,4 +3,4 @@ VirtArray.pm
 VirtArray.xs
 MANIFEST
 Makefile.PL
-test.pl
+t/basic.t
