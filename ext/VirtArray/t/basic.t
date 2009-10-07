@@ -49,7 +49,7 @@ ok($#fixed == $#fixed_b, 1, "Different lengths: $#fixed vs. $#fixed_b");
 }
 
 ### now it's stored...
-if (@ARGV && @ARGV[0] eq '-memorycheck') {
+if (@ARGV && $ARGV[0] eq '-memorycheck') {
     goto MEMORYCHECK;
 }
 
@@ -131,7 +131,10 @@ ok($#d == $#d2, 1, "Different lengths: $#d vs. $#d2");
 $o3 = tie @d3, 'VirtArray', $file . "3";
 ok(tied(@d3));
 
-*VirtArray::fetch_list = \&VirtArray::fetch_list_var;
+{
+    no warnings 'once';
+    *VirtArray::fetch_list = \&VirtArray::fetch_list_var;
+}
 
 ok(unpack("l50", $d[50]), $o3->fetch_list(50));
 
@@ -167,6 +170,7 @@ untie @a3;
 ###
 
 if ($do_benchmark) {
+    no warnings 'void';
     require Benchmark;
     Benchmark::timethese
       (-2,
