@@ -16,23 +16,27 @@ use VectorUtil::Inline;
 
 BEGIN {
     if (!eval q{
-	use Test;
+	use Test::More;
         use Tk;
 	1;
     }) {
-	print "1..0 # skip no Test/Tk modules\n";
+	print "1..0 # skip no Test::More and/or Tk modules\n";
 	exit;
     }
 }
 
-BEGIN { plan tests => 1 }
+my $mw = eval { tkinit };
+if (!$mw) {
+    plan skip_all => 'Cannot create MainWindow';
+    CORE::exit(0);
+}
+plan tests => 1;
 
-my $mw = tkinit;
 my $c = $mw->Scrolled("Canvas")->pack;
 my $cw = 400;
 my $ch = 300;
 
-ok(VectorUtil::Inline::sizeof_POINT() >= 8); # no support for 16bit systems...
+cmp_ok(VectorUtil::Inline::sizeof_POINT(), ">=", 8); # no support for 16bit systems...
 
 my $weiter = 0;
 {
@@ -112,7 +116,8 @@ while(1) {
 
     $c->update;
 
-    if ($ENV{BATCH}) {
+    if (!defined $ENV{BATCH} || $ENV{BATCH} ne 'yes') {
+	diag "Specify BATCH=yes for batch mode";
 	select(undef,undef,undef,0.5);
 	last;
     }
