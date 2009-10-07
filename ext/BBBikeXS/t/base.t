@@ -70,6 +70,7 @@ my $test_to_koord1 = 0;
 my $test_to_koord  = 0;
 my $test_transpose = 0;
 my $repeat         = -2;
+my $v;
 
 if (!GetOptions("tk!"        => \$test_tk,
 		"makenet!"   => \$test_make_net,
@@ -80,8 +81,13 @@ if (!GetOptions("tk!"        => \$test_tk,
 		"leaktest!"  => \$leaktest,
 		"all" => sub { $test_tk = $test_make_net = $test_to_koord1 =
 				   $test_to_koord = $test_transpose = 1},
+		"v+" => \$v,
 	       )) {
     die "usage!";
+}
+
+if (defined $v && $v > 0) {
+    Strassen::set_verbose(1);
 }
 
 SKIP: {
@@ -194,7 +200,6 @@ my $s = new Strassen "strassen";
 
 if ($test_make_net) {
     print "# Test make_net\n";
-    $StrassenNetz::VERBOSE = 1;
 
     checkpoint1();
     for my $pass (1 .. 3) {
@@ -382,7 +387,7 @@ my $handle;
 sub checkpoint1 {
     if ($leaktest) {
 	eval {
-	    $count1 = Devel::Leak::NoteSV($handle);
+	    $count1 = quiet_stderr(sub { Devel::Leak::NoteSV($handle) });
 	};
     }
 
@@ -392,9 +397,9 @@ sub checkpoint2 {
     my($tolerated_difference) = shift || 0;
     if ($leaktest) {
 	eval {
-	    $count2 = Devel::Leak::CheckSV($handle);
+	    $count2 = quiet_stderr(sub { Devel::Leak::CheckSV($handle) });
 	    if ($count1 != $count2-$tolerated_difference) {
-		warn "" . ($count2-$count1) . " new scalars since last checkpoint\n";
+		diag "" . ($count2-$count1) . " new scalars since last checkpoint\n";
 	    }
 	};
     }
@@ -467,4 +472,24 @@ sub checktime2 {
 	Test::More::ok(!$progress->{CalledUpdate}, "Update not called");
 	Test::More::ok($progress->{CalledUpdateFloat}, "UpdateFloat called");
     }
+}
+
+sub quiet_stderr {
+    my($code) = @_;
+    if (!$v) {
+	*OLDERR = *OLDERR; # peacify -w
+	open OLDERR, ">&STDERR" or die $!;
+	open STDERR, "> ". File::Spec->devnull or die $!;
+    }
+    my $ret;
+    eval {
+	$ret = $code->();
+    };
+    my $err = $@;
+    close STDERR;
+    open STDERR, ">&OLDERR" or die $!;
+    if ($err) {
+	die $err;
+    }
+    $ret;
 }

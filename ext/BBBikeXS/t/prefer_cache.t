@@ -16,8 +16,15 @@ BEGIN {
 }
 use Strassen;
 use BBBikeXS 0.10;
+use Getopt::Long;
 
-$Strassen::VERBOSE = $StrassenNetz::VERBOSE = $Strassen::Util::VERBOSE = 1;
+my $v;
+GetOptions("v" => \$v)
+    or die "usage: $0 [-v]";
+
+if ($v) {
+    $Strassen::VERBOSE = $StrassenNetz::VERBOSE = $Strassen::Util::VERBOSE = 1;
+}
 
 BEGIN {
     if (!eval q{
