@@ -51,7 +51,10 @@ use constant REQ_BBBIKE_WINDIST => 4; # for windows distribution (not yet!)
 #                                              description token (comma separated)
 #    long description (may have de/en variants)
 my @req_table =
- ([qw/Tk		800.000	all	1|4	gui/,
+ (($] < 5.006 ?
+   [qw/warnings::compat 0 all 0 base/, 'So I can use warnings everywhere'] : ()
+  ),
+  [qw/Tk		800.000	all	1|4	gui/,
    { de => 'das absolute Muss!',
      en => 'this one is really necessary!'
    }], # für Tk 402 sollte man bbbike 2.xx verwenden
