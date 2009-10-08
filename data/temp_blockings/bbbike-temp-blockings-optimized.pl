@@ -746,11 +746,11 @@ userdel	q4::inwork 10422,12395 10476,12432
        undef,
        {
          'source_id' => 'IM_012764',
-         'until' => 1255643999,
-         'text' => 'Glinkastr. (Mitte) Richtung Leipziger Str. zwischen Behrenstr. und Taubenstr. Baustelle, Fahrtrichtung gesperrt (bis Mitte 10.2009)',
-         'from' => 1254597146,
+         'until' => 1255125600,
+         'text' => 'Glinkastr. (Mitte) in beiden Richtungen zwischen Jägerstr. und Taubenstr. Baustelle, Straße vollständig gesperrt (bis 09.10.2009)',
+         'from' => 1254981680,
          'id' => 1679,
-         'data' => 'userdel	q4::inwork; 9164,12172 9183,12076 9201,11968 9208,11872
+         'data' => 'userdel	q4::inwork 9201,11968 9208,11872
 ',
          'type' => 'handicap'
        },
@@ -862,15 +862,7 @@ userdel	2::inwork 7160,11225 6851,11346
        undef,
        undef,
        undef,
-       {
-         'until' => 1257030000,
-         'text' => 'B 112 OU Guben - OU Neuzelle zw. Abzw.Wellmitz und Neuzelle Straßenneubau Vollsperrung 07.07.2009-31.10.2009 ',
-         'from' => 1246831200,
-         'id' => 1729,
-         'data' => 'userdel	2::inwork 96951,-34887 97016,-36424 97032,-36743 97476,-37327 97680,-37821
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        {
@@ -1483,7 +1475,7 @@ d Breitenbachstr. Baustelle, Fahrtrichtung gesperrt (bis Anfang 05/2010)',
        },
        {
          'source_id' => 'http://www.berlin.de/ba-pankow/presse/archiv/20090903.1100.137516.html',
-         'until' => undef,
+         'until' => 1333231199,
          'text' => 'Bauarbeiten in der Berliner Straße in Pankow ab Anfang Oktober 2009, Einbahnstraße Richtung Breite Str.; die Hadlichstr. ab Damerowstraße Einbahnstraße in Richtung Berliner Straße',
          'from' => 1254261600,
          'id' => 1885,
@@ -1552,7 +1544,16 @@ userdel	q4::inwork; 10829,18083 10907,18109 10938,18147 10989,18172 11137,18358 
          'type' => 'handicap'
        },
        undef,
-       undef,
+       {
+         'source_id' => 'IM_014235',
+         'until' => 1257029999,
+         'text' => 'Darßer Str. (Hohenschönhausen) Richtung Falkenberger Chaussee zwischen Graaler Weg und Ribnitzer Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 10.2009)',
+         'from' => 1254980700,
+         'id' => 1900,
+         'data' => 'userdel	q4::inwork; 15881,17899 16277,17830
+',
+         'type' => 'handicap'
+       },
        undef,
        {
          'until' => 1255384800,
@@ -1564,8 +1565,8 @@ userdel	q4::inwork; 10829,18083 10907,18109 10938,18147 10989,18172 11137,18358 
          'type' => 'gesperrt'
        },
        {
-         'until' => 1258498800,
-         'text' => 'B 169 Lauchhammer - Elsterwerda zw. Abzw. Schraden und Plessa Deckenerneuerung Richtungsverkehr 22.09.2009-17.11.2009 ',
+         'until' => 1255039200,
+         'text' => 'B 169 Lauchhammer - Elsterwerda zw. Abzw. Schraden und Plessa Deckenerneuerung Richtungsverkehr 22.09.2009-08.10.2009 ',
          'from' => 1253484000,
          'id' => 1903,
          'data' => 'userdel	1::inwork 28404,-104242 29283,-103951 32685,-103832 33348,-104123 33767,-104125
@@ -1669,6 +1670,170 @@ userdel	q4::inwork; 10829,18083 10907,18109 10938,18147 10989,18172 11137,18358 
          'data' => 'userdel	2::inwork -19162,-33731 -18692,-33299
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_014353',
+         'until' => 1257029999,
+         'text' => 'Erkstr. (Neukölln) in beiden Richtungen zwischen Sonnenallee und Donaustr. Baustelle, Straße vollständig gesperrt (bis Ende 10.2009)',
+         'from' => 1254981556,
+         'id' => 1922,
+         'data' => 'userdel	q4::inwork 12902,8470 12771,8439
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'LMS_157063303',
+         'until' => undef,
+         'text' => 'L1171 Naumannstraße Kreuzberg Richtung Schöneberg Zwischen Kolonnenstraße und Tempelhofer Weg gesperrt, Baustelle,',
+         'from' => undef,
+         'id' => 1923,
+         'data' => 'userdel	q4::inwork 7709,8777 7713,8600 7716,8356 7716,8048 7717,7879 7717,7759
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1257030000,
+         'text' => 'L 034 Brücke über das Sophienfließ bei Bollersdorf Böschungssanierung Vollsperrung 19.10.2009-31.10.2009 ',
+         'from' => 1255816800,
+         'id' => 1924,
+         'data' => 'userdel	2::inwork 55194,21167 55013,20980
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1261263600,
+         'text' => 'L 063 Berliner Straße OL Lauchhammer, zw. Dimitroffstr. u. Bahnübergang Kanalbau Vollsperrung 05.10.2009-19.12.2009 ',
+         'from' => 1254607200,
+         'id' => 1925,
+         'data' => 'userdel	q4::inwork 35482,-103562 35379,-103141
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1261177200,
+         'text' => 'L 292 Schönfeld - Grüntal OD Tempelfelde, Schönefelder Str. Kanal- und Straßenbau Vollsperrung 01.10.2009-18.12.2009 ',
+         'from' => 1254261600,
+         'id' => 1926,
+         'data' => 'userdel	q4::inwork 31377,34072 31293,33987
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1256335200,
+         'text' => 'L 339 Neuer Hönower Weg OD Hoppegarten, zw. Berliner Str. u. Industriestr. Deckenerneuerung Vollsperrung 05.10.2009-23.10.2009 ',
+         'from' => 1254607200,
+         'id' => 1927,
+         'data' => 'userdel	q4::inwork 26880,11479 26625,10953
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1258153200,
+         'text' => 'L 339 Neuer Hönower Weg OD Hoppegarten, zw. Industriestr. u. Wiesenstr. Deckenerneuerung Vollsperrung 26.10.2009-13.11.2009 ',
+         'from' => 1256425200,
+         'id' => 1928,
+         'data' => 'userdel	q4::inwork 26880,11479 27272,11970
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1255471200,
+         'text' => 'L 412 Bad Saarow - Alt Golm OD Neu Golm Einbau Deckschicht Vollsperrung 09.10.2009-13.10.2009 ',
+         'from' => 1254952800,
+         'id' => 1929,
+         'data' => 'userdel	q4::inwork 57225,-10700 57371,-10550 57479,-10535 57752,-10566 57882,-10535 58018,-10573
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1255212000,
+         'text' => 'L 085 Treuenbrietzen - Brück zw. Treuenbrietzen und Nichel Straßenbau am BÜ Vollsperrung 09.10.2009-10.10.2009 ',
+         'from' => 1254952800,
+         'id' => 1930,
+         'data' => 'userdel	q4::inwork -25920,-35115 -26873,-34493 -27632,-34000
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1256943600,
+         'text' => 'B 166 zw. Heinersdorf und Abzw. Passow Deckenerneuerung Vollsperrung 12.10.2009-30.10.2009 ',
+         'from' => 1255212000,
+         'id' => 1931,
+         'data' => 'userdel	2::inwork 64624,77291 61819,80513 61420,80705 60511,80745 60070,81164 59018,81801 58771,82019
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1257202800,
+         'text' => 'B 198 zw. Prenzlau und Dedelow grundh. Straßebau, Radwegbau Vollsperrung 05.10.2009-02.11.2009 ',
+         'from' => 1254607200,
+         'id' => 1932,
+         'data' => 'userdel	2::inwork 36927,105345 36726,106236 36665,106354 36137,106832 35674,106889 35287,106742
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1255989600,
+         'text' => 'B 101 Zinnaer Str. OD Luckenwalde, zw. Kirchstr. und Am Nuthefließ Straßenbau Vollsperrung 12.10.2009-19.10.2009 ',
+         'from' => 1255212000,
+         'id' => 1933,
+         'data' => 'userdel	q4::inwork -4630,-36012 -4603,-35730
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1255212000,
+         'text' => 'B 169 Lauchhammer - Elsterwerda zw. Abzw. Schraden und Plessa Deckeneinbau Vollsperrung 08.10.2009-10.10.2009 ',
+         'from' => 1254866400,
+         'id' => 1934,
+         'data' => 'userdel	2::inwork 33767,-104125 33348,-104123 32685,-103832
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1257030000,
+         'text' => 'K 6737 B 5, Arensdorf - L 36, Steinhöfel zw. Hasenfelde und L36, Steinhöfel Straßenbauarbeiten Vollsperrung 24.08.2009-31.10.2009 ',
+         'from' => 1250978400,
+         'id' => 1935,
+         'data' => 'userdel	2::inwork 65190,3699 64905,3165 63793,2943 63284,3141
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1255212000,
+         'text' => 'L 060 zw. Finsterwalde u. Hennersdorf Deckeneinbau Vollsperrung 08.10.2009-10.10.2009 ',
+         'from' => 1254866400,
+         'id' => 1936,
+         'data' => 'userdel	2::inwork 31829,-85450 31240,-85488 30463,-85655 29077,-85475 27831,-85375
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1255212000,
+         'text' => 'L 070 Baruther Str. OL Trebbin Straßenbauarbeiten Vollsperrung 09.10.2009-10.10.2009 ',
+         'from' => 1254952800,
+         'id' => 1937,
+         'data' => 'userdel	q4::inwork -237,-21890 -749,-21486
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1255298400,
+         'text' => 'L 070 Stülpe - Sperenberg OD Kummersdorf-Gut Straßenausbau Vollsperrung 10.10.2009-11.10.2009 ',
+         'from' => 1255039200,
+         'id' => 1938,
+         'data' => 'userdel	q4::inwork 8564,-34625 9068,-34115 9300,-34066
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1255903200,
+         'text' => 'L 070 Stülpe - Sperenberg OD Kummersdorf-Gut Straßenausbau Vollsperrung 17.10.2009-18.10.2009 ',
+         'from' => 1255644000,
+         'id' => 1939,
+         'data' => 'userdel	q4::inwork 8564,-34625 9068,-34115 9300,-34066
+',
+         'type' => 'handicap'
        }
      
 );
