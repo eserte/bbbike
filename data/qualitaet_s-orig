@@ -38,7 +38,8 @@ Berliner Str. (Blankenfelde): schlechtes Kopfsteinpflaster	Q3 9425,23693 9490,23
 Berliner Str. (Blankenfelde): mäßiges Kopfsteinpflaster	Q2 9490,23531 9528,23240
 B96a: Radweg Richtung N, OK	Q0 9228,23643 9146,23843 8984,24078 8891,24330 8826,24501 8682,24883 8665,24941 8661,24952 8571,25180 8548,25239 8493,25378
 Hobrechtsfelder Chaussee (bis Kurve): OK	Q0 15589,27116 15231,26587 14859,26029 14472,25449 14314,25193 14219,25013
-Hobrechtsfelder Chaussee (ab Kurve): schlechtes Kopfsteinpflaster, 13 km/h	Q3 15589,27116 15709,27984 15757,28054
+#: corrected_by: osm (schlechtes Kopfsteinpflaster -> paved)
+Hobrechtsfelder Chaussee (ab Kurve)	Q0 15589,27116 15711,27928 15777,28037
 Wisbyer Str.: Asphalt	Q0 11019,16465 11289,16423 11397,16405 11448,16398 11470,16393 11542,16384 11632,16373 11688,16365 11727,16358 11807,16340 11828,16335 11887,16320 12026,16247 12091,16209
 Weserstr.: Kopfsteinpflaster, schmale Verbundsteinpflaster-Radwege	Q1 11881,9202 11993,9211 12074,9217 12148,9209
 Weserstr.: asphaltiert, schmale Verbundsteinpflaster-Radwege	Q0 12148,9209 12180,9193 12322,9124
@@ -290,6 +291,8 @@ Schützenstr.: Kopfsteinpflaster	Q2 5193,5431 5119,5332 5046,5244 5003,5183 4956,
 Gelieustr.: Kopfsteinpflaster	Q2 4802,4921 4742,4885 4725,4876 4568,4789 4507,4755
 Appenzeller Str.: Kopfsteinpflaster	Q2 3425,1647 3297,1845
 Thuner Platz: Kopfsteinpflaster	Q2 3297,1845 3251,1881
+#: by: Norbert Palzkill:
+Thuner Platz: Kopfsteinpflaster	Q2 3251,1881 3263,1904 3286,1912 3307,1904 3317,1884 3312,1866 3297,1845
 Luzerner Str.: Kopfsteinpflaster	Q2 3251,1881 3148,1888 3044,1890
 Carstennstr.: Kopfsteinpflaster	Q2 3044,1890 2992,2018 2951,2112 2852,2342 2831,2390 2810,2439 2791,2484 2746,2590 2638,2843
 Ringstr.: Kopfsteinpflaster	Q2 2638,2843 2637,2973 2661,3021 2701,3064
@@ -3141,6 +3144,7 @@ Tschudistr.: Asphalt	Q0 23584,13661 23705,13636 23823,13611 23943,13588 24119,13
 Rellstabweg: Verbundsteinpflaster	Q1 -6514,13017 -6524,13086 -6299,13147 -6191,13177 -5971,13238 -5859,13270
 Kormoranweg: Asphalt	Q0 13997,3290 14034,3390 14128,3620 14176,3754 14226,3864 14281,3901
 Devrientweg: Verbundsteinpflaster	Q2 5094,3439 5250,3359 5375,3287
+#: confirmed_by: Editha Künzel
 Berlichingenstr.: Kopfsteinpflaster	Q2 4989,13462 4972,13804 4964,13959
 Rappoltsweilerstr.: grobes Kopfsteinpflaster	Q3 1203,4047 1334,4000 1379,3964 1453,4004
 Beifußweg: mäßiger Beton	Q1 15307,3683 15611,3448 15921,3215
@@ -6812,8 +6816,8 @@ Alt-Hermsdorf: schlechtes Kopfsteinpflaster, aber es existiert ein Sandstreifen	
 #: by: Marco (hansen):
 Hallichpromenade: guter Asphalt	Q0 5304,20630 5335,20615 5388,20606
 #: by: Bernd Honsa: vvv
-Wrightallee: Asphalt	Q0 18010,3263 17976,3735 17947,3957
-Arthur-Müller-Str.: Asphalt	Q0 17834,3125 17941,3176 18021,3167 18199,2960 18057,2852
+Wrightallee: Asphalt	Q0 17887,3285 17896,3738
+Arthur-Müller-Str.: Asphalt	Q0 17799,3183 17890,3204 17980,3197 18199,2960 18014,2830
 #: by: ^^^
 #: by: Michael Lietz:
 Kirschenbaumstr.: asphaltiert/betoniert	Q0 19560,689 19648,656 19736,623
@@ -6852,7 +6856,7 @@ Käthestr. (Hermsdorf): Asphalt	Q0 4829,24067 4872,24183 4911,24299
 #: corrected_by: srt (schlechtes Kopfsteinpflaster -> Asphalt)
 Klein-Ziethener Weg: Asphalt	Q0 15966,52 15949,53
 Klein-Ziethener Weg: schlechtes Kopfsteinpflaster	Q3 15949,53 15834,-28 15812,-65 15694,-178 15655,-245
-Rhodeländerweg: asphaltiert	Q0 16373,-496 16297,-468 16234,-450 16142,-414 16079,-337 15995,-115 15960,-10 15966,52 16113,247 16422,575 16518,784 16451,950
+Rhodeländerweg: asphaltiert	Q0 16373,-496 16297,-468 16234,-450 16142,-414 16079,-337 16055,-273 15995,-115 15960,-10 15966,52 16055,153 16130,239 16272,388 16422,575 16518,784 16451,950
 #: by: ^^^
 #: by: Jan Riemke: vvv
 Romanshorner Weg: Kopfsteinpflaster	Q2 6709,17466 6679,17568 6631,17721 6578,17898 6550,17988 6577,17998
@@ -7291,7 +7295,7 @@ Schünemannweg: Kopfsteinpflaster	Q2 7171,4200 6986,4258 6965,4219
 #: by: Mitrovic Mirjana:
 Rehagener Str.: guter Beton	Q0 10657,-2639 10648,-2547 10638,-2452 10642,-2371 10631,-2130 10629,-1931 10644,-1875 10697,-1847 10767,-1850
 #: by: uli 12move
-Straße am Flugplatz: asphaltiert	Q0 17522,3653 17762,3243 17834,3125 17990,2871 18057,2852 18185,2815 18427,2752
+Straße am Flugplatz: asphaltiert	Q0 17522,3653 17762,3243 17799,3183 17910,3004 18014,2830 18017,2751
 #: by: henning (hirschgarten):
 Gilgenburger Str.: mäßiger Asphalt	Q1- 24387,5672 24434,5645 24666,5726
 #: by: Karin (schopp):
@@ -8967,8 +8971,8 @@ Lauxweg: guter Asphalt	Q0 8979,3347 8921,3208
 #: by: Alexander Schneider:
 Malmedyer Str.: Asphalt	Q0 16481,26413 16415,26481 16354,26542 16262,26637
 #: by: wandel16:
-#: note: "q4" angegeben, deshalb Q3-
-Bielckenweg: schlechtes Kopfsteinpflaster	Q3- 16795,26560 16696,26651 16564,26773
+#: note: "q4" angegeben, wahrscheinlich für die alternative Gehwegbenutzung (die angeblich "geduldet" ist, genau wie beim Röbellweg)
+Bielckenweg: schlechtes Kopfsteinpflaster	Q3 16795,26560 16696,26651 16564,26773
 #: by: Esther Helmert:
 Martinstr.: relativ ebenes Kopfsteinpflaster	Q1 4956,5121 5102,5031
 #: by: coandree...:
@@ -9007,6 +9011,19 @@ Hohenzollernstr. (Zehlendorf): schlechtes Kopfsteinpflaster	Q3 492,2813 522,2802
 Zangenbergweg: sehr gutes Verbundsteinpflaster	Q0 10119,1435 10041,1328
 #: by: Wickop:
 Finkelsteinstr.: guter Asphalt	Q0 23583,12992 23678,12878
+#: by: remus preuss:
+Rosa-Reinglass-Steig: Verbundsteinpflaster	Q0 -2878,15304 -2856,15383
+#: by: Hans Naether:
+Wolfgang-Harlan-Str.: Asphalt	Q0 18000,3278 17887,3285 17817,3283
+#: by: Herbert Pohle:
+#: note: "enge Straße", aber q0
+Am Bruchland: guter Asphalt	Q0 19017,2214 19042,2318 19327,2288
+#: by: pittiplatch8:
+#: note: q2, einige Fußgänger ignoriert (anonymous hat sogar q3 angegeben)
+#: note: anonymous meinte: Q1, ohne weitere Angaben
+Liebensteiner Str.: guter Asphalt	Q0 20678,17012 20741,17132 20767,17179 20872,17128 20899,17174 20935,17201 21012,17360
+#: by: osm:
+Bitterfelder Weg: Kopfsteinpflaster	Q2 15505,923 15607,971 15705,1019 15804,1061 15901,1120 15977,1223
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206

@@ -104,7 +104,7 @@ Bansin: Zweirichtungsradweg (Verbundsteinpflaster) auf der östlichen Seite	RW 56
 Bansin - Ückeritz: asphaltierter Zweirichtungsradweg auf der südlichen Seite	RW 56029,174482 55741,174692 55541,175016 55388,175169 55063,175432 54825,175505 54576,175560 54162,175850 53311,176048 52868,176203 52699,176308 52084,178098 51986,178177 51899,178200 51779,178229 51627,178336 51611,178406 51582,178510 51538,178665 51288,179162
 Ladeburg - Lobetal: Fahrradstraße	RW 22526,33785 22595,33961 22877,35230 23008,35569
 Lobetal: verkehrsberuhigte Straße	RW 23008,35569 23036,35624 23232,36004
-Schönerlinder Str.: Radweg auf Gehweg	RW 17368,27859 17689,27853 18053,27875 18337,27854 18410,27890 18817,27979 18899,27976 19196,27963
+Schönerlinder Str.: Radweg auf Gehweg	RW 17325,27831 17689,27853 18053,27875 18337,27854 18410,27890 18817,27979 18899,27976 19187,27987
 B2: Radweg	RW 22257,29814 22262,29723
 B2: Radweg	RW 22206,30826 22378,30943
 Breitscheidstr. (Bernau)	RW3;RW3 22712,30340 22783,30373 22868,30412 22892,30426 23024,30523
@@ -482,11 +482,11 @@ Ruppiner Chaussee: Radweg	RW -1918,24514 -1950,24762 -2139,25038 -2446,25386 -28
 Parkstr. (Hennigsdorf): gepflasterte, eher schmale Radwege	RW -3331,25078 -3446,25075 -3815,25252 -4219,25460 -4265,25459
 #: by: ^^^
 #: by: Jörg Arnold:
-Bernau (ab Autobahnbrücke) - Zepernick: Zweirichtungsradweg ohne Benutzungspflicht auf der östlichen Seite	RW 21085,29942 20499,29310 20475,28650 20472,28570 20017,28297 19475,27877
+Bernau (ab Autobahnbrücke) - Zepernick: Zweirichtungsradweg ohne Benutzungspflicht auf der östlichen Seite	RW 21085,29942 20499,29310 20475,28650 20510,28585 20494,28542 20362,28420 20114,28315 19595,27953 19534,27833
 #: by: Andreas Titz: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 Birkenwerder - Oranienburg: asphaltierte Radwege auf beiden Seiten	RW2 1051,32796 929,32980 831,33128 746,33231 728,33253 470,33540 81,33971 -445,34937 -570,35185
 #: by: ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Großziethen: gemeinsamer Geh- und Radweg auf beiden Seiten	RW2 12984,1011 13090,205
+Großziethen: gemeinsamer Geh- und Radweg auf beiden Seiten	RW2 12984,1011 13124,216
 #: by: René (refan): vvv
 #: confirmed_by: srt
 Gemeinsamer Geh- und Radweg	RW2;RW2 26466,-10409 26442,-10452
@@ -513,3 +513,5 @@ asphaltierter Zweirichtungsradweg auf der östlichen Seite	RW -14279,-9832 -14518
 Zweirichtungsradweg auf der südlichen Seite	RW -14428,-10433 -13597,-10497 -13433,-10557 -13211,-10642
 #: by: Gonsolo (and osm):
 eigener Radweg neben der Straße	RW2;RW8 35728,17428 35618,17440 35225,17557 34813,17682 34154,17882 33961,17989 33133,18131 32941,18121
+#: by: osm ("paved")
+	RW 16488,29880 16279,29196 16066,28510 16008,28424 15777,28037

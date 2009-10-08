@@ -1254,7 +1254,7 @@ EOF
        text  => 'L 75; (Karl-Marx-Straße); OD Großziethen, von Dorfstraße bis Friedhofsweg Straßenbauarbeiten Vollsperrung 24.05.2004-20.12.2004 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 13225,-681 13090,205 13225,-681 13309,-1268
+userdel	q4 13225,-681 13176,-161 13165,-34 13124,216 13165,-34 13176,-161 13225,-681 13230,-712 13309,-1268
 EOF
      },
      { from  => 1102654800, # 2004-12-10 06:00
@@ -2839,7 +2839,7 @@ EOF
        text  => 'L 75; (Karl-Marx-Str.); OD Großziethen Straßenbauarbeiten Vollsperrung 06.09.2005-30.11.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 13225,-681 13090,205 12984,1011
+userdel	2 13225,-681 13176,-161 13165,-34 13124,216 12984,1011
 EOF
      },
      { from  => 1128290400, # 2005-10-03 00:00
@@ -3993,7 +3993,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_003887',
        data  => <<EOF,
-userdel	q4 13225,-681 13090,205 12984,1011
+userdel	q4 13225,-681 13176,-161 13165,-34 13124,216 12984,1011
 EOF
      },
      { from  => 1143928800, # 2006-04-02 00:00
@@ -5639,7 +5639,7 @@ EOF
        text  => 'L 075 Karl-Marx-Str. OD Großziehten Straßenbauarbeiten Vollsperrung 24.11.2006-22.12.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 13225,-681 13090,205 12984,1011
+userdel	2 13225,-681 13176,-161 13165,-34 13124,216 12984,1011
 EOF
      },
      { from  => 1156629600, # 2006-08-27 00:00
@@ -7156,7 +7156,7 @@ EOF
        text  => 'L 075 Karl-Marx-Str. OD Großziethen, nördl. Attilastr.- Landesgrenze Berlin, Buckower Damm Straßen- und Kanalbau Vollsperrung 05.03.2007-20.06.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 12984,1011 13090,205
+userdel	2::inwork 12984,1011 13124,216
 EOF
      },
      { from  => 1173308400, # 2007-03-08 00:00
@@ -8190,7 +8190,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005511',
        data  => <<EOF,
-userdel	2::inwork 16373,-496 16515,31
+userdel	2::inwork 16373,-496 16423,-308 16515,31
 EOF
      },
      { from  => 1179698400, # 2007-05-21 00:00
