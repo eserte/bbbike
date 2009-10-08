@@ -25,13 +25,16 @@ BEGIN {
 	use W3C::LogValidator::LinkChecker 1.005;
 	1;
     }) {
-	print "1..0 # skip: no Test::More and/or W3C::LogValidator modules\n";
+	print "1..0 # skip no Test::More and/or W3C::LogValidator modules\n";
 	exit;
     }
 
     if (!is_in_path("checklink")) {
-	print "1..0 # skip: W3C::LogValidator::LinkChecker needs the checklink program\n";
+	print "1..0 # skip W3C::LogValidator::LinkChecker needs the checklink program\n";
 	exit;
+    }
+    if (($ENV{USER}||'') ne 'eserte') {
+	print "1..0 # skip Should not be used everywhere...\n";
     }
 }
 
