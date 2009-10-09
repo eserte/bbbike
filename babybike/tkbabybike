@@ -116,7 +116,8 @@ BEGIN {
     # show only splash screen if activated explicitely or if started
     # as a script
     if (!caller(2) && !$tcltk) {
-	start_progress_splash("fast"); # only here use "fast"
+	#start_progress_splash("fast"); # only here use "fast"
+	start_progress_splash("slow"); # "fast" is too unreliable
     }
 
     if ($tcltk) {
