@@ -146,6 +146,10 @@ if ($single_file) {
     do_file("$datadir/ubahn", \&handle_railway_like);
     do_file("$datadir/sbahn", \&handle_railway_like);
     do_file("$datadir/rbahn", \&handle_railway_like);
+
+    if (-r "$datadir/radwege-orig") {
+	do_file("$datadir/radwege-orig", \&handle_cycleway_like);
+    }
 }
 
 sub do_file {
@@ -504,6 +508,81 @@ sub handle_railway_stations_like {
     }
 
     get_node_ids($r, $attribs);
+}
+
+sub handle_cycleway_like {
+    my($r, $dir) = @_;
+    my($cat_hin, $cat_rueck);
+    if ($r->[Strassen::CAT] =~ /^(.*);(.*)$/) {
+	($cat_hin, $cat_rueck) = ($1, $2);
+    } else {
+	($cat_hin, $cat_rueck) = ($r->[Strassen::CAT], $r->[Strassen::CAT]);
+    }
+    for ($cat_hin, $cat_rueck) {
+	if (defined $_) {
+	    ($_) = $_ =~ m{^([^:]+)};
+	}
+    }
+    my @node_ids = map {
+	my($px,$py) = $Karte::Polar::obj->trim_accuracy($Karte::Polar::obj->standard2map(split /,/, $_));
+	my $node_id = maybe_add_node($px,$py);
+	$node_id;
+    } @{ $r->[Strassen::COORDS] };
+
+    for my $def ([$cat_hin, +1], [$cat_rueck, -1]) {
+	my($cat, $direction) = @$def;
+	next if !defined $cat || $cat eq '';
+	my $extra_tags;
+	if ($cat eq 'RW' || $cat eq 'RW?' || $cat eq 'RW8?') {
+	    $extra_tags .= qq{  <tag k="cycleway" v="track" />\n};
+	    $extra_tags .= qq{  <tag k="bbbike:usage" v="unknown" />\n};
+	} elsif ($cat eq 'RW1' || $cat eq 'RW9') {
+	    $extra_tags .= qq{  <tag k="cycleway" v="track" />\n};
+	    $extra_tags .= qq{  <tag k="bbbike:usage" v="optional" />\n};
+	} elsif ($cat eq 'RW2' || $cat eq 'RW8') {
+	    $extra_tags .= qq{  <tag k="cycleway" v="track" />\n};
+	    $extra_tags .= qq{  <tag k="bbbike:usage" v="mandatory" />\n};
+	} elsif ($cat eq 'RW3') {
+	    $extra_tags .= qq{  <tag k="cycleway" v="lane" />\n};
+	    $extra_tags .= qq{  <tag k="bbbike:usage" v="optional" />\n};
+	} elsif ($cat eq 'RW4') {
+	    $extra_tags .= qq{  <tag k="cycleway" v="lane" />\n};
+	    $extra_tags .= qq{  <tag k="bbbike:usage" v="mandatory" />\n};
+	} elsif ($cat eq 'RW4?') {
+	    $extra_tags .= qq{  <tag k="cycleway" v="lane" />\n};
+	    $extra_tags .= qq{  <tag k="bbbike:usage" v="unknown" />\n};
+	} elsif ($cat eq 'RW5') {
+	    $extra_tags .= qq{  <tag k="psv" v="yes" />\n};
+	} elsif ($cat eq 'RW5?') {
+	    $extra_tags .= qq{  <tag k="psv" v="yes" />\n};
+	    $extra_tags .= qq{  <tag k="bbbike:times" v="unknown" />\n};
+	} elsif ($cat eq 'RW6') {
+	    # living street XXX
+	} elsif ($cat eq 'RW7') {
+	    # Fahrradstraﬂe XXX
+	} elsif ($cat eq 'RW10') {
+	    # Nebenfahrbahn XXX
+	} elsif ($cat eq 'RW0') {
+	    # kein Radweg
+	} else {
+	    warn "Unexpected category '$cat'...";
+	}
+	if ($extra_tags) {
+	    print $wayfh qq{<way id="$next_way_id" visible="true">\n};
+	    my @node_ids = $direction == +1 ? @node_ids : reverse(@node_ids);
+	    for my $node_id (@node_ids) {
+		print $wayfh qq{  <nd ref="$node_id"/>\n};
+	    }
+	    my $name = $r->[Strassen::NAME];
+	    if (defined $name && $name ne '') {
+		_xmlify($name);
+		print $wayfh qq{  <tag k="name" v="$name" />\n};
+	    }
+	    print $wayfh $extra_tags;
+	    print $wayfh qq{</way>\n};
+	    $next_way_id++;
+	}
+    }
 }
 
 seek $nodefh, 0, SEEK_SET
