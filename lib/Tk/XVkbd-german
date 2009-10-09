@@ -1,0 +1,175 @@
+!! XVkbd-german.ad  - sample app-defaults file for xvkbd-1.2
+!! by Tom Sato <VEF00200@nifty.ne.jp>, http://member.nifty.ne.jp/tsato/
+!
+! This file should be copied in the app-defaults directory, with
+! trailing ".ad" in its filename removed.
+! To enable this setting, you can set "xvkbd.customization: -german",
+! or simply rename this file to "XVkbd".
+
+
+.title: xvkbd - Virtual Keyboard
+.iconName: xvkbd
+.input: false
+.mappedWhenManaged: false
+.translations: #override \
+	<Message>WM_PROTOCOLS: DeleteWindowProc()
+.Form.translations: <BtnDown>:
+.Form.?.translations: <BtnDown>:
+*Command.translations: #override \n\
+	<BtnDown>: ButtonDownAction() set()\n\
+	<BtnUp>: notify() unset() ButtonUpAction()
+*Repeater.translations: #override \n\
+        <EnterWindow>: ShowBalloon() highlight() \n\
+        <LeaveWindow>: CloseBalloon() unhighlight() \n\
+	<BtnDown>: ButtonDownAction() set() start() \n\
+	<BtnUp>: stop() unset() ButtonUpAction()
+*Repeater.initialDelay: 600
+*Repeater.minimumDelay: 100
+*Repeater.decay: 500
+*Font: -*-helvetica-medium-r-*-*-12-*-*-*-*-*-iso8859-*
+*generalFont: -*-lucidatypewriter-bold-r-*-*-12-*-*-*-*-*-iso8859-*
+*letterFont: -*-helvetica-bold-r-*-*-12-*-*-*-*-*-iso8859-*
+*specialFont: -*-helvetica-medium-r-*-*-12-*-*-*-*-*-iso8859-*
+*keypadFont: -*-helvetica-medium-r-*-*-10-*-*-*-*-*-iso8859-*
+*banner.font: -*-lucida-bold-i-*-*-14-*-*-*-*-*-iso8859-*
+*beNiceToColormap: false
+*topShadowContrast: 40
+*bottomShadowContrast: 80
+*shadowWidth: 2
+*Label.shadowWidth: 0
+*Background: gray85
+*specialBackground: gray75
+*focusBackground: bisque2
+*Foreground: black
+*highlightBackground: gray90
+*highlightForeground: forestgreen
+*highlightThickness: 1
+*Form.resizable: true
+*defaultDistance: 0
+*Form.borderWidth: 0
+*Label.borderWidth: 0
+*Command.internalWidth: 1
+*Repeater.internalWidth: 1
+*Command.resize: false
+*Repeater.resize: false
+*Command.justify: center
+*Repeater.justify: center
+
+*banner.width: 150
+*banner.justify: right
+
+*row1.vertDistance: 5
+*F5.horizDistance: 5
+*F9.horizDistance: 5
+*BackSpace.horizDistance: 5
+
+*Command.height: 30
+*Repeater.height: 30
+*row0.Repeater.height: 25
+*Command.width: 30
+*Repeater.width: 30
+*space.width: 80
+*Tab.width: 45
+*Control_L.width: 60
+*Shift_L.width: 75
+*Shift_R.width: 40
+*Multi_key.width: 35
+*Caps_Lock.width: 35
+*Alt_L.width: 45
+*Alt_R.width: 45
+*Meta_L.width: 45
+*Meta_R.width: 45
+*BackSpace.width: 75
+*Delete.width: 45
+*Return.width: 60
+*row5.Focus.width: 35
+
+*keypad.vertDistance: 5
+*keypad.horizDistance: 10
+*keypad*Command.width: 35
+*keypad*Repeater.width: 35
+*keypad*Command.justify: left
+*keypad*Repeater.justify: left
+*keypad*pad3,3.height: 60
+*keypad*pad4,0.width: 70
+
+*message.width: 150
+*message.resize: false
+*message.background: LightYellow1
+*message.justify: left
+
+! Make the virtual keyboard to German layout
+!
+*Shift_L.width: 45
+*Mode_switch.width: 50
+*space.width: 165
+
+.NormalKeys: \
+!  F1 F2 F3 F4 F5 F6 F7 F8 F9 F10 F11 F12 \n\
+  Escape 1 2 3 4 5 6 7 8 9 0 \337 ` ^ # BackSpace \n\
+  Tab q w e r t z u i o p \374 + Delete \n\
+  Control_L a s d f g h j k l \366 \344 Return \n\
+  Shift_L < y x c v b n m , . - Shift_R \n\
+  Caps_Lock Alt_L Meta_L space Mode_switch Left Right Up Down Focus
+
+.ShiftKeys: \
+!  F1 F2 F3 F4 F5 F6 F7 F8 F9 F10 F11 F12 \n\
+  Escape ! " \247 $ % & / ( ) = ? ' \260 | BackSpace \n\
+  Tab Q W E R T Z U I O P \334 * Delete \n\
+  Control_L A S D F G H J K L \326 \304 Return \n\
+  Shift_L > Y X C V B N M ; : _ Shift_R \n\
+  Caps_Lock Alt_L Meta_L space Mode_switch Left Right Up Down Focus
+
+.AltgrKeys: \
+!  F1 F2 F3 F4 F5 F6 F7 F8 F9 F10 F11 F12 \n\
+  Escape \271 \262 \263 \243 \254 \251 { [ ] } \\ ' ^ ' BackSpace \n\
+  Tab @ w e r t z u i o p \374 ~ Delete \n\
+  Control_L a s d f g h j k l \366 \344 Return \n\
+  Shift_L | y x c v b n \265 , . - Shift_R \n\
+  Caps_Lock Alt_L Meta_L space Mode_switch Left Right Up Down Focus
+
+.KeyLabels: \
+!  F1 F2 F3 F4 F5 F6 F7 F8 F9 F10 F11 F12 \n\
+  Esc !\n1_\271 "\n2_\262 \247\n3_\263 $\n4_\243 %\n5_\254 &\n6_\251 \
+    /\n7_{ (\n8_[ )\n9_] =\n0_} \337\n\?_\\ '\n` \260\n^ |\n# Backspace \n\
+  Tab Q_@ W E R T Z U I O P \334 *\n+_~ Del \n\
+  Ctrl A S D F G H J K L \326 \304 Return \n\
+  Shft >\n<_| Y X C V B N M_\265 ;\n, :\n. _\n- Shft\n\
+  Lock Alt M space AltGr left right up down Focus
+
+.NormalKeyLabels: \
+!  F1 F2 F3 F4 F5 F6 F7 F8 F9 F10 F11 F12 \n\
+  Esc 1 2 3 4 5 6 7 8 9 0 \337 ` ^ # BackSpace \n\
+  Tab q w e r t z u i o p \374 + Del \n\
+  Ctrl a s d f g h j k l \366 \344 Return \n\
+  Shft < y x c v b n m , . - Shft \n\
+  Lock Alt M space AltGr left right up down Focus
+
+.ShiftKeyLabels: \
+!  F1 F2 F3 F4 F5 F6 F7 F8 F9 F10 F11 F12 \n\
+  Esc ! " \247 $ % & / ( ) = \337 ' \260 | BackSpace \n\
+  Tab Q W E R T Z U I O P \334 * Delete \n\
+  Control A S D F G H J K L \326 \304 Return \n\
+  Shift > Y X C V B N M ; : _ Com\npose Shift \n\
+  Caps\nLock Alt Meta space AltGr left right up down Focus
+
+.AltgrKeyLabels: \
+!  F1 F2 F3 F4 F5 F6 F7 F8 F9 F10 F11 F12 \n\
+  Esc \271 \262 \263 \243 \254 \251 { [ ] } \\ ' ^ ' BackSpace \n\
+  Tab @ w e r t z u i o p \374 ~ Delete \n\
+  Control a s d f g h j k l \366 \344 Return \n\
+  Shift | y x c v b n \265 , . - Com\npose Shift \n\
+  Caps\nLock Alt Meta space AltGr left right up down Focus
+
+
+
+!! Sample settings to make window small - see also XVkbd-small.ad
+!
+!xvkbd.windowGeometry: 300x100
+!xvkbd.modalKeytop: true
+!xvkbd.compact: true
+
+!! You should set the label font if you want to make the window small.
+!
+!*Font: -misc-fixed-medium-r-semicondensed--13-*-iso8859-1
+*Font: 5x7

@@ -615,8 +615,14 @@ sub main_gui {
 		     $mw->optionAdd("*KbdButton*HighlightThickness",0);
 		     $mw->optionAdd("*KbdButton*Pad",1);
 		     $mw->Busy(-recurse => 1);
+		     my $kbd_file = $INC{"Tk/Kbd.pm"};
+		     $kbd_file =~ s{(.*/).*}{$1};
+		     $kbd_file .= 'XVkbd-german';
+		     if (!-r $kbd_file) {
+			 $kbd_file = "$moduledir/lib/Tk/XVkbd-german"; # fallback
+		     }
 		     eval {
-			 $kbd = $vbox->Kbd(-configfile => "$moduledir/lib/Tk/XVkbd-german");
+			 $kbd = $vbox->Kbd(-configfile => $kbd_file);
 		     };
 		     my $err = $@;
 		     $mw->Unbusy;
