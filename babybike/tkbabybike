@@ -35,6 +35,10 @@ BEGIN {
 	    warn "Turning caching off...\n";
 	    @Strassen::Util::cacheable = ();
 	    $Strassen::Util::cacheable_array_set = 1;
+	    if (0) { # cease -w
+		@Strassen::Util::cacheable = @Strassen::Util::cacheable;
+		$Strassen::Util::cacheable_array_set = $Strassen::Util::cacheable_array_set;
+	    }
 	}
     }
 }
@@ -105,12 +109,20 @@ sub start_progress_splash {
     }
 }
 
+use vars qw($DEBUG);
+BEGIN {
+    if (grep { $_ eq '-debug' } @ARGV) {
+	$DEBUG = 1;
+    }
+}
+
 my $Pixmap;
 
 BEGIN {
     if (grep { $_ eq '-tcltk' } @ARGV) {
 	$tcltk = 1;
-	$Tcl::Tk::DEBUG = 1;
+	$Tcl::Tk::DEBUG = 1 if $DEBUG;
+	$Tcl::Tk::DEBUG = $Tcl::Tk::DEBUG if 0; # cease -w
     }
 
     # show only splash screen if activated explicitely or if started
@@ -171,6 +183,13 @@ BEGIN {
     }
 }
 
+my $has_xft;
+if (!$tcltk) {
+    require Tk::Config;
+    $has_xft = ($Tk::Config::xlib =~ /-lXft\b/);
+    $Tk::Config::xlib = $Tk::Config::xlib if 0; # cease -w
+}
+
 use BBBikeRouting;
 #use Strassen;
 use Strassen::Core;
@@ -187,7 +206,7 @@ use vars qw(%category_color %line_dash %line_width);
 
 $splash_screen->Update(0) if $splash_screen;
 
-Strassen::set_verbose(1);#XXX debug
+Strassen::set_verbose(1) if $DEBUG;
 ## This saves approx. 1 MB RAM memory:
 ## but I need a compiled VirtArray for this...
 #StrassenNetz::use_data_format($StrassenNetz::FMT_ARRAY);
@@ -330,9 +349,14 @@ sub parse_cmd_line {
 
 sub handheld_options {
     my $mw = shift;
-    $mw->optionAdd("*font", "5x7");
+    if ($has_xft) {
+	$mw->optionAdd('*font', 'monospace 6');
+	$mw->optionAdd("*Menu*font", "{sans serif} 7");
+    } else {
+	$mw->optionAdd("*font", "5x7");
+	$mw->optionAdd("*Menu*font", "Helvetica 6");
+    }
     $mw->optionAdd("*Scrollbar*width", 9);
-    $mw->optionAdd("*Menu*font", "Helvetica 6");
     $mw->optionAdd("*Menu*activeBorderWidth", 0);
     $mw->optionAdd("*Menu*activeBackground", "#ffe5e5");
     $mw->optionAdd("*Menu*borderWidth", 1);
@@ -396,8 +420,8 @@ sub main_gui {
     }
     $max_tiles = ((int($mw->screenwidth/$tilewidth)+1) *
 	          (int($mw->screenheight/$tileheight)+1));
-    $max_tiles = 40 if $^O eq 'freebsd'; # XXX debugging
-    warn "Maximum number of tiles: $max_tiles"; # XXX
+    #$max_tiles = 40 if $^O eq 'freebsd'; # XXX debugging
+    warn "Maximum number of tiles: $max_tiles" if $DEBUG;
 
     $splash_screen->Update(shift @update_points) if $splash_screen;
 
@@ -936,10 +960,10 @@ sub set_scope {
 	    $map = $mw->$Pixmap(-file => "/tmp/$imgname.xpm");
 	} elsif (!-r "$moduledir/images/$imgname.xpm" &&
 		 -r "$moduledir/images/$imgname.xpm.gz") {
-	    print STDERR "Decompressing $imgname.xpm.gz... ";
+	    print STDERR "Decompressing $imgname.xpm.gz... " if $DEBUG;
 	    my $tmp = "/tmp/$imgname.xpm";
 	    system("gzip -dc $moduledir/images/$imgname.xpm.gz > $tmp");
-	    print STDERR "OK\n";
+	    print STDERR "OK\n" if $DEBUG;
 	    $map = $mw->$Pixmap(-file => $tmp);
 	    unlink $tmp;
 	} else {
@@ -957,7 +981,7 @@ sub set_scope {
 	}
     }
     my $dimfile = $use_tiles ? "$moduledir/images/${imgname}_tiles/$imgname.dim" : "$moduledir/images/$imgname.dim";
-    warn "Get dimensions from $dimfile...\n";
+    warn "Get dimensions from $dimfile...\n" if $DEBUG;
     $draw = do $dimfile;
     if (!ref $draw eq 'HASH') {
 	die "Can't get dimensions from $dimfile";
@@ -1275,7 +1299,7 @@ sub start_bbbike {
 	    error_dialog("Goal not defined");
 	    goto CLEANUP;
 	}
-	warn "Search " . $routing->Start->Coord . " => " . $routing->Goal->Coord . "\n";
+	warn "Search " . $routing->Start->Coord . " => " . $routing->Goal->Coord . "\n" if $DEBUG;
     }
     my $orig_from = $routing->Start->Street;
     my $orig_to   = $routing->Goal->Street;
@@ -1352,7 +1376,7 @@ sub start_bbbike {
 	$last_path_i = scalar $#{$routing->Path};
     }
 
-    warn "Begin search\n";
+    warn "Begin search\n" if $DEBUG;
     eval {
 	$routing->search;
     };
@@ -1360,7 +1384,7 @@ sub start_bbbike {
 	error_dialog($@);
 	goto CLEANUP;
     }
-    warn "End search with routeinfo=" . scalar(@{ $routing->RouteInfo }) . "\n";
+    warn "End search with routeinfo=" . scalar(@{ $routing->RouteInfo }) . "\n" if $DEBUG;
 
     if ($orig_from ne $routing->Start->Street) {
 	set_street_coord('start',
