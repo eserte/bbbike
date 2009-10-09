@@ -858,7 +858,6 @@ sub main_gui {
 	  [Cascade => "~Apps", -menuitems =>
 	   [
 	    [Button => "~GSM Sender", -command => \&gsmsender],
-	    [Button => "~Kino Berlin", -command => \&kino_berlin],
 	    [Button => "~Speak", -command => \&speak],
 	    [Button => "~Lat/Long", -command => \&tk_set_lat_long],
 	    [Button => "Lat/Long of Start", -command => \&get_lat_long],
@@ -2021,34 +2020,6 @@ sub show_balloon {
 sub hide_balloon {
     $c->itemconfigure('balloon', -state => 'hidden');
     $c->itemconfigure('balloontext', -state => 'hidden');
-}
-
-sub kino_berlin {
-    push @INC, "$moduledir/miscsrc", "$moduledir/../miscsrc";
-    require "kino-berlin.pl";
-
-    $Kino::Berlin::mldbm_file = "/tmp/kino_data.db.gz";
-#    $Kino::Berlin::www_mldbm_file = "http://10.0.0.1/~eserte/test/kino_data.db.gz";
-    $Kino::Berlin::www_mldbm_file = "http://194.140.111.230/data/kino_data.db.gz";
-    #$Kino::Berlin::datadir = "$FindBin::RealBin/tmp";
-    $Kino::Berlin::target = "handheld";
-    #$Kino::Berlin::program_start = "001214";#XXXXXXXXX
-    $Kino::Berlin::tk_use_lbox = 1;
-    Kino::Berlin::init();
-    Kino::Berlin::tk_result
-	    ($mw, [],
-	     -selsignal => sub {
-		 my $res = shift;
-		 $ze->delete(0,"end");
-		 $ze->insert(0, $res->{CinemaName});
-		 $ziel_coord_valid_for = $res->{CinemaName};
-		 $routing->Goal->Coord($res->{Coords});
-		 start_bbbike(-centerpath => 1);
-	     },
-	     -getstartcoords => sub { $routing->Start->Coord },
-	     -geometry => "220x130+0+0",
-	     -transient => 1,
-	    );
 }
 
 sub zoom_window {
