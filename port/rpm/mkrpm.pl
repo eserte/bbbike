@@ -63,7 +63,7 @@ if (!defined $release) {
 
 open(RPM, ">bbbike.rpm.spec") or die $!;
 print RPM <<EOF;
-### DO NOT EDIT! CREATED AUTOMATICALLY! ###
+### DO NOT EDIT! CREATED AUTOMATICALLY BY $0! ###
 %define __prefix        %{_prefix}
 Name: BBBike
 Version: $bbbike_version
