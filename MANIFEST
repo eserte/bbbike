@@ -401,7 +401,7 @@ ext/VirtArray/Makefile.PL
 ext/VirtArray/README
 ext/VirtArray/VirtArray.pm
 ext/VirtArray/VirtArray.xs
-ext/VirtArray/test.pl
+ext/VirtArray/t/basic.t
 ext/VirtArray/typemap
 ext/inline2dist.pl
 gnome/BBBikeDoc.tmpl
