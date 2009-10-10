@@ -147,8 +147,12 @@ if ($single_file) {
     do_file("$datadir/sbahn", \&handle_railway_like);
     do_file("$datadir/rbahn", \&handle_railway_like);
 
+    # Use -orig files here, because it has more information (RW? etc.)
     if (-r "$datadir/radwege-orig") {
 	do_file("$datadir/radwege-orig", \&handle_cycleway_like);
+    }
+    if (-r "$datadir/comments_cyclepath-orig") {
+	do_file("$datadir/comments_cyclepath-orig", \&handle_cycleway_like);
     }
 }
 
