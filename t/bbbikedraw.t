@@ -52,7 +52,7 @@ BEGIN {
 		  BBBikeGoogleMaps
 		 );
 
-    if ($^O ne 'linux' || `lsb_release --id --short` !~ m{debian}i) {
+    if ($^O ne 'linux' || `lsb_release --id --short 2>/dev/null` !~ m{debian}i) {
 	push @modules, 'MapServer/pdf';
     } else {
 	diag('Skipping MapServer/pdf tests, no support on Debian');
