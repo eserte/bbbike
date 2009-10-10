@@ -14227,9 +14227,9 @@ EOF
 userdel	q4::inwork 21244,3571 21308,3680
 EOF
      },
-     { from  => 1254981680, # 2009-10-08 08:01
-       until => 1255125600, # 2009-10-10 00:00
-       text  => 'Glinkastr. (Mitte) in beiden Richtungen zwischen Jägerstr. und Taubenstr. Baustelle, Straße vollständig gesperrt (bis 09.10.2009)',
+     { from  => 1255162601, # 2009-10-10 10:16
+       until => 1255384800, # 2009-10-13 00:00
+       text  => 'Glinkastr. (Mitte) in beiden Richtungen zwischen Jägerstr. und Taubenstr. Baustelle, Straße vollständig gesperrt (bis 12.10.2009)',
        type  => 'handicap',
        source_id => 'IM_012764',
        data  => <<EOF,
@@ -16245,7 +16245,7 @@ userdel	2::temp 9370,10615 9378,10539 9388,10393
 EOF
      },
      { from  => 1254002400, # 2009-09-27 00:00
-       until => 1255298400, # 2009-10-12 00:00
+       until => 1255163073, # 2009-10-12 00:00 1255298400
        text  => 'B 001 zw. Manschnow und Abzw. Alt Tucheband Straßenbau Vollsperrung 28.09.2009-11.10.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -16325,8 +16325,8 @@ EOF
 userdel	q4::inwork 12902,8470 12771,8439
 EOF
      },
-     { from  => undef, # 
-       until => undef, # XXX
+     { from  => 1255162874, # 
+       until => 1255162879, # XXX
        text  => 'L1171 Naumannstraße Kreuzberg Richtung Schöneberg Zwischen Kolonnenstraße und Tempelhofer Weg gesperrt, Baustelle,',
        type  => 'handicap',
        source_id => 'LMS_157063303',
@@ -16374,9 +16374,9 @@ EOF
 userdel	q4::inwork 26880,11479 27272,11970
 EOF
      },
-     { from  => 1254952800, # 2009-10-08 00:00
-       until => 1255471200, # 2009-10-14 00:00
-       text  => 'L 412 Bad Saarow - Alt Golm OD Neu Golm Einbau Deckschicht Vollsperrung 09.10.2009-13.10.2009 ',
+     { from  => 1255212000, # 2009-10-11 00:00
+       until => 1255644000, # 2009-10-16 00:00
+       text  => 'L 412 Bad Saarow - Alt Golm OD Neu Golm Einbau Deckschicht Vollsperrung 12.10.2009-15.10.2009 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork 57225,-10700 57371,-10550 57479,-10535 57752,-10566 57882,-10535 58018,-10573
@@ -16460,6 +16460,48 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork 8564,-34625 9068,-34115 9300,-34066
+EOF
+     },
+     { from  => 1255162667, # 2009-10-10 10:17
+       until => 1255298400, # 2009-10-12 00:00
+       text  => 'Grunewaldstr. (Schöneberg) zwischen Hauptstr. und Akazienstr. sowie Akazienstr. Veranstaltung, Straße vollständig gesperrt (bis 11.10.09, 24 Uhr)',
+       type  => 'handicap',
+       source_id => 'IM_014394',
+       data  => <<EOF,
+userdel	q4::temp 7201,8870 7110,9024 7044,9163 7022,9211 7006,9282 7130,9305 7201,9318 7374,9350 7479,9357
+EOF
+     },
+     { from  => 1255644000, # 2009-10-16 00:00
+       until => 1257030000, # 2009-11-01 00:00
+       text  => 'B 107 Glöwen - B 5 Gumtow Durchlass zw. Glöwen und Abzw. Klein Leppin Durchlassneubau Vollsperrung 17.10.2009-31.10.2009 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -80266,56143 -80074,58321
+EOF
+     },
+     { from  => 1255212000, # 2009-10-11 00:00
+       until => 1257807600, # 2009-11-10 00:00
+       text  => 'B 115 Baruth - Jüterbog zw. Abzw. Wahlsdorf und Markendorf Straßenbauarbeiten Vollsperrung 12.10.2009-09.11.2009 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -3854,-46999 -1480,-46978 897,-46109 1296,-45979 2044,-46150
+EOF
+     },
+     { from  => 1257375600, # 2009-11-05 00:00
+       until => 1257721200, # 2009-11-09 00:00
+       text  => 'B 115 Baruth - Jüterbog zw. Jüterbog und Markendorf Deckschichteinbau Vollsperrung 06.11.2009-08.11.2009 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -5760,-46987 -6787,-46974 -6986,-46942
+userdel	2::inwork -7582,-46937 -7831,-47100 -7975,-47313 -8299,-47368
+EOF
+     },
+     { from  => 1255644000, # 2009-10-16 00:00
+       until => 1256421600, # 2009-10-25 00:00
+       text  => 'B 115 Baruth - Petkus OD Merzdorf Deckenerneuerung Vollsperrung 17.10.2009-24.10.2009 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 12648,-45054 12332,-44991 12078,-45032 11929,-45268
 EOF
      },
     );
