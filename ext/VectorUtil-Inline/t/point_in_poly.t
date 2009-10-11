@@ -116,8 +116,8 @@ while(1) {
 
     $c->update;
 
-    if (!defined $ENV{BATCH} || $ENV{BATCH} ne 'yes') {
-	diag "Specify BATCH=yes for batch mode";
+    if (!defined $ENV{BATCH} || $ENV{BATCH} eq 'yes') {
+	diag "Specify BATCH=no for interactive mode";
 	select(undef,undef,undef,0.5);
 	last;
     }
