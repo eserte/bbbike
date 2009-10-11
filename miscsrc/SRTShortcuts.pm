@@ -198,57 +198,37 @@ sub add_button {
 				  oncallback  => sub { $main::top->bind("<F12>"=> \&find_nearest_hoehe) },
 				  offcallback => sub { $main::top->bind("<F12>"=> '') },
 				 ),
-#XXX del:
-# 		[Button => "hm96.bbd (Höhenpunkte)",
-# 		 -command => sub {
-# 		     my $f = "$bbbike_rootdir/misc/senat_b/hm96.bbd";
-# 		     $hm_layer = add_new_layer("p", $f);
-# 		     $main::top->bind("<F12>"=> \&find_nearest_hoehe);
-# 		 }
-# 		],
-		[Button => "Zebrastreifen",
-		 -command => sub {
-		     local $main::lazy_plot = 0; # lazy mode does not support bbd images yet
-		     if (-e "$main::datadir/zebrastreifen") {
-			 # osm2bbd generated directories have it here:
-			 add_new_nonlazy_layer("p", "$main::datadir/zebrastreifen");
-		     } else {
-			 # the original Berlin data has it here:
-			 add_new_nonlazy_layer("p", "$bbbike_rootdir/misc/zebrastreifen");
-		     }
-		 }
-		],
-		[Button => "Ortsschilder",
-		 -command => sub {
-		     local $main::lazy_plot = 0; # lazy mode does not support bbd images yet
-		     add_new_nonlazy_layer("p", _maybe_orig_file("$main::datadir/ortsschilder"));
-		 }
-		],
-		[Button => "routing_helper", -command => sub { add_new_nonlazy_maybe_orig_layer("str", "routing_helper") }],
+		layer_checkbutton('Zebrastreifen', 'p',
+				  (-e "$main::datadir/zebrastreifen"
+				   ? "$main::datadir/zebrastreifen" # osm2bbd generated directories have it here
+				   : "$bbbike_rootdir/misc/zebrastreifen" # the original Berlin data has it here
+				  ),
+				  method => 'add_new_nonlazy_layer', # lazy mode does not support bbd images yet
+				 ),
+		layer_checkbutton('Ortsschilder', 'p',
+				  _maybe_orig_file("$main::datadir/ortsschilder"),
+				  method => 'add_new_nonlazy_layer', # lazy mode does not support bbd images yet
+				 ),
+		layer_checkbutton('routing_helper', 'str',
+				  _maybe_orig_file('routing_helper')),
 		[Button => "gesperrt_car", -command => sub { add_new_nonlazy_maybe_orig_layer("sperre", "gesperrt_car") }],
-		[Button => "brunnels", -command => sub { add_new_data_layer("str", "brunnels") }],
-		[Button => "geocoded images",
-		 -command => sub {
-		     add_new_layer("str", "$ENV{HOME}/.bbbike/geocoded_images.bbd");
-		 }],
+## XXX no support for "sperre" type yet:
+#		layer_checkbutton('gesperrt_cat', 'sperre',
+#				  _maybe_orig_file('gesperrt_car')),
+		layer_checkbutton('brunnels', 'str',
+				  _maybe_orig_file("$main::datadir/brunnels")),
+		layer_checkbutton('geocoded images', 'str',
+				  "$ENV{HOME}/.bbbike/geocoded_images.bbd"),
 		layer_checkbutton('fragezeichen-outdoor-nextcheck', 'str',
 				  "$bbbike_rootdir/tmp/fragezeichen-outdoor-nextcheck.bbd"),
-		[Button => "fragezeichen-indoor-nextcheck",
-		 -command => sub {
-		     add_new_layer("str", "$bbbike_rootdir/tmp/fragezeichen-indoor-nextcheck.bbd");
-		 }],
-		[Button => "fragezeichen-nextcheck",
-		 -command => sub {
-		     add_new_layer("str", "$bbbike_rootdir/tmp/fragezeichen-nextcheck.bbd");
-		 }],
-		[Button => "Unique matches",
-		 -command => sub {
-		     add_new_layer("str", "$bbbike_rootdir/tmp/unique-matches.bbd");
-		 }],
-		[Button => "Unique matches since 2008",
-		 -command => sub {
-		     add_new_layer("str", "$bbbike_rootdir/tmp/unique-matches-since2008.bbd");
-		 }],
+		layer_checkbutton('fragezeichen-indoor-nextcheck', 'str',
+				  "$bbbike_rootdir/tmp/fragezeichen-indoor-nextcheck.bbd"),
+		layer_checkbutton('fragezeichen-nextcheck', 'str',
+				  "$bbbike_rootdir/tmp/fragezeichen-nextcheck.bbd"),
+		layer_checkbutton('Unique matches', 'str',
+				  "$bbbike_rootdir/tmp/unique-matches.bbd"),
+		layer_checkbutton('Unique matches since 2008', 'str',
+				  "$bbbike_rootdir/tmp/unique-matches-since2008.bbd"),
 		[Button => "Abdeckung",
 		 -command => sub {
 		     local $main::p_draw{'pp-all'} = 1;
@@ -605,6 +585,7 @@ sub toggle_new_layer {
 	    delete $main::p_draw{$layer};
 	    if ($type eq 'p') {
 		$main::c->delete($layer.'-fg');
+		$main::c->delete($layer.'-img');
 	    } else {
 		$main::c->delete($layer);
 	    }
@@ -644,6 +625,7 @@ sub add_new_nonlazy_maybe_orig_layer {
 sub add_new_nonlazy_layer {
     my($type, $file, %args) = @_;
     require BBBikeAdvanced;
+    local $main::lazy_plot = 0; # lazy mode does not support bbd images yet
     main::plot_additional_layer($type, $file, %args);
 }
 
