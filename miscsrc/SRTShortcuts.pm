@@ -193,13 +193,19 @@ sub add_button {
 	      ],
 	      [Cascade => 'Add layer', -menuitems =>
 	       [
-		[Button => "hm96.bbd (Höhenpunkte)",
-		 -command => sub {
-		     my $f = "$bbbike_rootdir/misc/senat_b/hm96.bbd";
-		     $hm_layer = add_new_layer("p", $f);
-		     $main::top->bind("<F12>"=> \&find_nearest_hoehe);
-		 }
-		],
+		layer_checkbutton('hm96.bbd (Höhenpunkte)', 'p',
+				  "$bbbike_rootdir/misc/senat_b/hm96.bbd",
+				  oncallback  => sub { $main::top->bind("<F12>"=> \&find_nearest_hoehe) },
+				  offcallback => sub { $main::top->bind("<F12>"=> '') },
+				 ),
+#XXX del:
+# 		[Button => "hm96.bbd (Höhenpunkte)",
+# 		 -command => sub {
+# 		     my $f = "$bbbike_rootdir/misc/senat_b/hm96.bbd";
+# 		     $hm_layer = add_new_layer("p", $f);
+# 		     $main::top->bind("<F12>"=> \&find_nearest_hoehe);
+# 		 }
+# 		],
 		[Button => "Zebrastreifen",
 		 -command => sub {
 		     local $main::lazy_plot = 0; # lazy mode does not support bbd images yet
@@ -582,9 +588,11 @@ sub add_new_layer {
 
 sub toggle_new_layer {
     my($type, $file, %args) = @_;
+    my $method = delete $args{method} || 'add_new_layer';
     if (!$layer_for_type_file{"$type $file"}) {
 	eval {
-	    add_new_layer($type, $file, %args);
+	    no strict 'refs';
+	    &{$method}($type, $file, %args);
 	};
 	if ($@) {
 	    $want_plot_type_file{"$type $file"} = 0;
@@ -595,7 +603,11 @@ sub toggle_new_layer {
 	    my $layer = $layer_for_type_file{"$type $file"};
 	    delete $main::str_draw{$layer};
 	    delete $main::p_draw{$layer};
-	    $main::c->delete($layer);
+	    if ($type eq 'p') {
+		$main::c->delete($layer.'-fg');
+	    } else {
+		$main::c->delete($layer);
+	    }
 	    delete $layer_for_type_file{"$type $file"};
 	    BBBikeLazy::bbbikelazy_remove_data($type, $layer);
 	};
@@ -607,11 +619,19 @@ sub toggle_new_layer {
 }
 
 sub layer_checkbutton {
-    my($label, $type, $file) = @_;
+    my($label, $type, $file, %args) = @_;
+    my $oncallback  = delete $args{oncallback};
+    my $offcallback = delete $args{offcallback};
     [Checkbutton => $label,
      -variable => "$type $file",
      -command => sub {
-	 toggle_new_layer($type, $file);
+	 my $key = "$type $file";
+	 my $layer = toggle_new_layer($type, $file);
+	 if ($oncallback && $layer_for_type_file{"$key"}) {
+	     $oncallback->($layer, $type, $file);
+	 } elsif ($offcallback && !$layer_for_type_file{"$key"}) {
+	     $offcallback->($layer, $type, $file);
+	 }   
      },
     ];
 }
