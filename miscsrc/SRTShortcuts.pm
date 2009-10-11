@@ -44,6 +44,7 @@ my $other_tracks                     = "$bbbike_rootdir/tmp/other-tracks.bbd";
 use vars qw($hm_layer);
 
 use vars qw($show_situation_at_point_for_route);
+use vars qw(%want_plot_type_file %layer_for_type_file);
 
 sub register {
     my $pkg = __PACKAGE__;
@@ -224,10 +225,8 @@ sub add_button {
 		 -command => sub {
 		     add_new_layer("str", "$ENV{HOME}/.bbbike/geocoded_images.bbd");
 		 }],
-		[Button => "fragezeichen-outdoor-nextcheck",
-		 -command => sub {
-		     add_new_layer("str", "$bbbike_rootdir/tmp/fragezeichen-outdoor-nextcheck.bbd");
-		 }],
+		layer_checkbutton('fragezeichen-outdoor-nextcheck', 'str',
+				  "$bbbike_rootdir/tmp/fragezeichen-outdoor-nextcheck.bbd"),
 		[Button => "fragezeichen-indoor-nextcheck",
 		 -command => sub {
 		     add_new_layer("str", "$bbbike_rootdir/tmp/fragezeichen-indoor-nextcheck.bbd");
@@ -408,6 +407,14 @@ sub add_button {
 	     __PACKAGE__."_menu",
 	     -title => "SRT Shortcuts",
 	    );
+
+#     if ($devel_host) {
+# 	for my $keysym (qw(question slash ssharp)) { # all possible and impossible places for C-?
+# 	    bind_nomod($top, "<Control-$keysym>" => sub { warn "? of @_" });
+# $t->bind("<Control-slash>" => sub { warn "? of @_"; Tk->break });
+# $t->bind("<Control-ssharp>" => sub { warn "? of @_"; Tk->break });
+
+
     my $menu = $mmf->Subwidget(__PACKAGE__ . "_menu_menu");
     $menu->configure(-disabledforeground => "black");
     if ($main::devel_host) {
@@ -558,6 +565,7 @@ sub add_new_layer {
     if (exists $args{Width}) {
 	$main::p_width{$free_layer} = $args{Width};
     }
+    $layer_for_type_file{"$type $file"} = $free_layer;
     if (!$BBBikeLazy::mode) {
 	require BBBikeLazy;
 	BBBikeLazy::bbbikelazy_empty_setup();
@@ -570,6 +578,42 @@ sub add_new_layer {
     }
     Hooks::get_hooks("after_new_layer")->execute;
     $free_layer;
+}
+
+sub toggle_new_layer {
+    my($type, $file, %args) = @_;
+    if (!$layer_for_type_file{"$type $file"}) {
+	eval {
+	    add_new_layer($type, $file, %args);
+	};
+	if ($@) {
+	    $want_plot_type_file{"$type $file"} = 0;
+	    main::status_message("Cannot toggle layer: $@", 'die');
+	}
+    } else {
+	eval {
+	    my $layer = $layer_for_type_file{"$type $file"};
+	    delete $main::str_draw{$layer};
+	    delete $main::p_draw{$layer};
+	    $main::c->delete($layer);
+	    delete $layer_for_type_file{"$type $file"};
+	    BBBikeLazy::bbbikelazy_remove_data($type, $layer);
+	};
+	if ($@) {
+	    $want_plot_type_file{"$type $file"} = 1;
+	    main::status_message("Cannot toggle layer: $@", 'die');
+	}
+    }
+}
+
+sub layer_checkbutton {
+    my($label, $type, $file) = @_;
+    [Checkbutton => $label,
+     -variable => "$type $file",
+     -command => sub {
+	 toggle_new_layer($type, $file);
+     },
+    ];
 }
 
 sub add_new_nonlazy_maybe_orig_layer {
