@@ -1818,6 +1818,16 @@ userdel	2::inwork -7582,-46937 -7831,-47100 -7975,-47313 -8299,-47368
 userdel	2::inwork 3165,15590 3257,15666 3314,15782 3564,16294
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_014421',
+         'until' => 1258325999,
+         'text' => 'Neustädtische Kirchstr. (Mitte) in beiden Richtungen zwischen Dorotheenstr. und Unter den Linden Baustelle, Straße vollständig gesperrt. Ebenfalls in beiden Richtungen gesperrt: Dorotheenstr. zwischen Neustädtische Kirchstr. und Schadowstr (bis Mitte 11/2009)',
+         'from' => 1255383595,
+         'id' => 1946,
+         'data' => 'userdel	q4::inwork 9141,12320 9130,12433 9123,12500 9008,12485
+',
+         'type' => 'handicap'
        }
      
 );
