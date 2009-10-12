@@ -1720,15 +1720,7 @@ userdel	q4::inwork; 10829,18083 10907,18109 10938,18147 10989,18172 11137,18358 
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1255212000,
-         'text' => 'L 085 Treuenbrietzen - Brück zw. Treuenbrietzen und Nichel Straßenbau am BÜ Vollsperrung 09.10.2009-10.10.2009 ',
-         'from' => 1254952800,
-         'id' => 1930,
-         'data' => 'userdel	q4::inwork -25920,-35115 -26873,-34493 -27632,-34000
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1256943600,
          'text' => 'B 166 zw. Heinersdorf und Abzw. Passow Deckenerneuerung Vollsperrung 12.10.2009-30.10.2009 ',
@@ -1756,15 +1748,7 @@ userdel	q4::inwork; 10829,18083 10907,18109 10938,18147 10989,18172 11137,18358 
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1255212000,
-         'text' => 'B 169 Lauchhammer - Elsterwerda zw. Abzw. Schraden und Plessa Deckeneinbau Vollsperrung 08.10.2009-10.10.2009 ',
-         'from' => 1254866400,
-         'id' => 1934,
-         'data' => 'userdel	2::inwork 33767,-104125 33348,-104123 32685,-103832
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1257030000,
          'text' => 'K 6737 B 5, Arensdorf - L 36, Steinhöfel zw. Hasenfelde und L36, Steinhöfel Straßenbauarbeiten Vollsperrung 24.08.2009-31.10.2009 ',
@@ -1774,24 +1758,8 @@ userdel	q4::inwork; 10829,18083 10907,18109 10938,18147 10989,18172 11137,18358 
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1255212000,
-         'text' => 'L 060 zw. Finsterwalde u. Hennersdorf Deckeneinbau Vollsperrung 08.10.2009-10.10.2009 ',
-         'from' => 1254866400,
-         'id' => 1936,
-         'data' => 'userdel	2::inwork 31829,-85450 31240,-85488 30463,-85655 29077,-85475 27831,-85375
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'until' => 1255212000,
-         'text' => 'L 070 Baruther Str. OL Trebbin Straßenbauarbeiten Vollsperrung 09.10.2009-10.10.2009 ',
-         'from' => 1254952800,
-         'id' => 1937,
-         'data' => 'userdel	q4::inwork -237,-21890 -749,-21486
-',
-         'type' => 'handicap'
-       },
+       undef,
+       undef,
        {
          'until' => 1255298400,
          'text' => 'L 070 Stülpe - Sperenberg OD Kummersdorf-Gut Straßenausbau Vollsperrung 10.10.2009-11.10.2009 ',
