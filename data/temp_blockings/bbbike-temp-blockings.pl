@@ -16504,4 +16504,14 @@ EOF
 userdel	q4::inwork 12648,-45054 12332,-44991 12078,-45032 11929,-45268
 EOF
      },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Wegen Bauarbeiten ist der Radweg am Kurt-Schumacher-Damm und Hinckeldeybrücke nicht befahrbar',
+       type  => 'gesperrt',
+       source_id => 'Message-ID: <001e01ca4b11$15559d20$4000d760$@grittner@adfc-berlin.de>',
+       data  => <<EOF,
+#: last_checked: 2009-10-10 by Susanne Grittner
+userdel	2::inwork 3165,15590 3257,15666 3314,15782 3564,16294
+EOF
+     },
     );

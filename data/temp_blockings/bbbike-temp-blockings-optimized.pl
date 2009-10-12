@@ -1760,15 +1760,7 @@ userdel	q4::inwork; 10829,18083 10907,18109 10938,18147 10989,18172 11137,18358 
        },
        undef,
        undef,
-       {
-         'until' => 1255298400,
-         'text' => 'L 070 Stülpe - Sperenberg OD Kummersdorf-Gut Straßenausbau Vollsperrung 10.10.2009-11.10.2009 ',
-         'from' => 1255039200,
-         'id' => 1938,
-         'data' => 'userdel	q4::inwork 8564,-34625 9068,-34115 9300,-34066
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1255903200,
          'text' => 'L 070 Stülpe - Sperenberg OD Kummersdorf-Gut Straßenausbau Vollsperrung 17.10.2009-18.10.2009 ',
@@ -1778,16 +1770,7 @@ userdel	q4::inwork; 10829,18083 10907,18109 10938,18147 10989,18172 11137,18358 
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_014394',
-         'until' => 1255298400,
-         'text' => 'Grunewaldstr. (Schöneberg) zwischen Hauptstr. und Akazienstr. sowie Akazienstr. Veranstaltung, Straße vollständig gesperrt (bis 11.10.09, 24 Uhr)',
-         'from' => 1255162667,
-         'id' => 1940,
-         'data' => 'userdel	q4::temp 7201,8870 7110,9024 7044,9163 7022,9211 7006,9282 7130,9305 7201,9318 7374,9350 7479,9357
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1257030000,
          'text' => 'B 107 Glöwen - B 5 Gumtow Durchlass zw. Glöwen und Abzw. Klein Leppin Durchlassneubau Vollsperrung 17.10.2009-31.10.2009 ',
@@ -1824,6 +1807,17 @@ userdel	2::inwork -7582,-46937 -7831,-47100 -7975,-47313 -8299,-47368
          'data' => 'userdel	q4::inwork 12648,-45054 12332,-44991 12078,-45032 11929,-45268
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => 'Message-ID: <001e01ca4b11$15559d20$4000d760$@grittner@adfc-berlin.de>',
+         'until' => undef,
+         'text' => 'Wegen Bauarbeiten ist der Radweg am Kurt-Schumacher-Damm und Hinckeldeybrücke nicht befahrbar',
+         'from' => undef,
+         'id' => 1945,
+         'data' => '#: last_checked: 2009-10-10 by Susanne Grittner
+userdel	2::inwork 3165,15590 3257,15666 3314,15782 3564,16294
+',
+         'type' => 'gesperrt'
        }
      
 );

@@ -1973,7 +1973,9 @@ Seepromenade: Verbundsteinpflaster	Q1 -9609,5151 -9617,5086
 (westlich des Sacrower Sees): Waldweg	Q1- -9915,4974 -9976,4963
 (westlich des Sacrower Sees): Waldweg	Q1- -9976,4963 -10304,4668 -10388,4469 -10599,4372 -10649,4320 -10738,4074 -10783,3792 -10712,3625 -10662,3514 -10640,3293 -10799,3064 -10893,2730 -10976,2609 -11013,2545 -11065,2396
 Wasserstr.: Kopfsteinpflaster	Q2 -9883,-161 -9795,-230
-Domstr. (Potsdam): Asphalt	Q0 -9035,-1291 -8667,-1287
+#: note: laut osm surface=cobblestone, aber an der Karl-Marx-Str. ist es definitiv asphaltiert
+#: by: anonymous ("Schlaglöcher")
+Domstr. (Potsdam): asphaltiert, aber mit Schlaglöchern	Q1- -9438,-1260 -9278,-1293 -9228,-1296 -9090,-1293  -9035,-1291 -8667,-1287
 Am Klubhaus: Kopfsteinpflaster	Q2 -8429,-1805 -8788,-1852
 Sacrower Allee (Groß Glienicke): Asphalt	Q0 -10090,6868 -10059,6832 -10055,6715 -10053,6676 -10052,6640 -10052,6563 -10040,6021 -10036,5795
 Richard-Wagner-Str. (Groß Glienicke): Asphalt	Q0 -9730,5802 -9847,5798 -9945,5797 -10036,5795

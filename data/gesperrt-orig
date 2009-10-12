@@ -56,7 +56,7 @@ Bayerischer Platz	1 6063,9106 6053,9224 6084,9242 6131,9241 6161,9128 6152,9091 
 #: confirmed_by: osm
 orthodoxe Kirche	1 3952,8980 3932,8989 3835,9044
 U-Bahn Dahlem	1 3216,6393 3123,6318 3023,6246 2950,6141 2898,5947 2823,5672 2797,5624 2746,5537 2523,5114 2469,5043 2313,4901 2190,4823 2079,4769 2027,4792
-U-Bahn Dahlem	1 2027,4792 2095,4805 2169,4854 2217,4884 2262,4914 2288,4932 2454,5067 2499,5144 2717,5578
+U-Bahn Dahlem	1 2027,4792 2095,4805 2169,4854 2217,4884 2288,4932 2454,5067 2499,5144 2717,5578
 Am Großen Wannsee	1 -5869,1261 -5848,1379 -5867,1449 -5901,1562 -5929,1649 -5961,1767 -6025,1991 -6021,2068 -5945,2381 -5749,2701 -5722,2714 -5663,2609 -5653,2481 -5719,2323 -5836,2119 -5883,1948 -5885,1786 -5815,1649 -5645,1504 -5588,1454 -5518,1396 -5499,1349
 Wilhelplatz	1 -7232,445 -7219,454 -7059,578
 Wilhelplatz	1 -7059,578 -7089,472 -7122,439 -7180,378
@@ -638,6 +638,8 @@ Am Rosengarten	2 18707,12225 18834,12228 18867,12265
 (Breite Str., Verbindung)	1s:q4 10463,18321 10487,18270
 #: by: Norbert Palzkill:
 Thuner Platz	1 3251,1881 3263,1904 3286,1912 3307,1904 3317,1884 3312,1866 3297,1845
+#: by: Sabine Pechstein (and osm):
+Lappiner Str.	1 20418,12699 20545,12683
 ######################################################################
 #
 # Potsdam
@@ -1048,6 +1050,10 @@ Heylstr.: breiter Mittelstreifen, enge Querungsmöglichkeit nur für Fußgänger, Bo
 # Stellen, an denen getragen werden muß:
 # die Zahl hinter dem ":" entspricht ungefähr den verlorenen Sekunden
 # 
+#: note: Luftbild (Stufenanzahl)
+tragen (ca. 30 Stufen)	0:35 19976,5
+#: note: Luftbild (Stufenanzahl)
+tragen (ca. 30 Stufen)	0:35 19932,61
 tragen (43 Stufen)	0:35 16998,11861
 #: note: zwei Varianten: 8 weit entfernte Stufen oder einige Gruppen à zwei bis drei Stufen
 #: XXX_prog: should be Treppe with more than one point
@@ -1067,17 +1073,19 @@ tragen (flache Treppe, wenige Stufen)	0:10 6530,6786
 #: XXX_prog: should be Treppe with two points: 26407,161781 26395,161793
 tragen (ca. 10 Stufen)	0:20 26407,161781
 #: by: Wolfhard Schleese:
+#: note: mindestens 15 Stufen, laut Luftbild
 tragen (Treppe oder steile Kinderwagenrampe)	0:30 2956,24373
 #: by: Moritz (acros):
 #: XXX_prog: should be Treppe with more than one point: 2827,23059 2854,23062 2886,23045
 tragen (Treppe)	0:30 2854,23062
 tragen (ca. 30 Stufen)	0:30 8773,10399
-tragen (Treppe)	0:30 -18702,4551
+#: note: Luftbild (Stufenanzahl)
+tragen (ca. 25 Stufen)	0:30 -18702,4551
 tragen (Treppe)	0:20 -12681,-1726
 tragen (ca. 30 Stufen)	0:30 -13802,-1856
 tragen (ca. 30 Stufen)	0:30 -13733,-1856
 #: note: Luftbild
-tragen (Treppe)	0:30 15091,21172
+tragen (21 Stufen)	0:30 15091,21172
 tragen (Treppe)	0:30 1471,-311
 #: by: rjoop vvv
 tragen (ca. 20 Stufen)	0:30 730,13286
@@ -1086,14 +1094,18 @@ tragen (Treppe)	0:30 3361,15784
 #: by: ^^^
 #: by: Alwin (...schock):
 tragen (ca. 40 Stufen)	0:30 1761,3208
-tragen (Treppe)	0:30 17757,11761
+#: note: Luftbild (Stufenanzahl)
+tragen (ca. 30 Stufen)	0:30 17757,11761
 tragen (15 Stufen)	0:30 4710,23263
 tragen (Treppe)	0:30 1179,13532
 tragen (7 Stufen)	0:20 9762,16119
 tragen (ca. 10 Stufen)	0:20 -6442,14286
-tragen (Treppe)	0:30 7621,7105
-tragen (Treppe)	0:30 7655,7096
-tragen (Treppe)	0:30 15571,4168
+#: note: Luftbild (Stufenanzahl)
+tragen (ca. 35 Stufen)	0:30 7621,7105
+#: note: Luftbild (Stufenanzahl)
+tragen (ca. 35 Stufen)	0:30 7655,7096
+#: note: Luftbild (Stufenanzahl)
+tragen (30 Stufen)	0:30 15571,4168
 tragen (steile Treppe)	0:30 15156,6034
 tragen (Treppe)	0:30 4808,3404
 tragen (zwei Treppen, je ca. 10 Stufen)	0:30 8822,16873
@@ -1144,8 +1156,10 @@ tragen (Treppe Mansfelder Str.)	0:30 3619,9331
 tragen (Treppe)	0:30 9557,12992
 tragen (Treppe)	0:30 9508,12991
 #: by: rjoop
+#: note: mindestens 50 Stufen, laut Luftbild
 tragen (Treppe)	0:30 9983,16561
 #: by: rjoop
+#: note: wahrscheinlich ebenso mindestens 50 Stufen
 tragen (Treppe)	0:30 9982,16527
 tragen (Treppe)	0:30 3756,12614
 tragen (Treppe)	0:30 4334,12551
@@ -1156,7 +1170,7 @@ tragen (Jungfernbrücke, 4 Stufen)	0:10 10223,12010
 tragen (Treppe, 26 Stufen)	0:30 10591,12203
 tragen (Treppe und Rampe)	0:30 39281,17353
 tragen (Treppe oder sehr steile, sandige Rampe)	0:60 41715,18446
-tragen (Treppe am Körnerpark)	0:30 12734,7384
+tragen (Treppe am Körnerpark, 16 Stufen)	0:30 12734,7384
 tragen (mehrere Treppen mit insgesamt ca. 25 Stufen und Kinderwagenrampe)	0:30 12115,8556
 tragen (Treppe, 5 x 3 Stufen mit Kinderwagenrampe)	0:25 13953,9372
 tragen (Treppe)	0:30 8014,12846
@@ -1418,8 +1432,8 @@ Rückbau der Fr.-Ebert-Str., kein Zugang zur Schwertfegerstr.	2:inwork -12870,-14
 # 
 #: note: zwischen Eisenhart- und Friedrich-Ebert-Str. keine Einbahnstraße mehr (http://www.potsdam.de/cms/beitrag/10055182/757395/)
 Behlertstr.	1 -12370,-354 -12500,-339 -12621,-359 -12821,-417
-tragen (Treppe)	0:30 2247,5068
-tragen (Treppe)	0:15 2204,5081
+tragen (Treppe)	0:30 2279,5112
+tragen (Treppe)	0:15 2211,5120
 tragen (Treppe)	0:30 17626,-1847
 tragen (Treppe)	0:30 17602,-1803
 Drängelgitter	BNP:5 4386,6288

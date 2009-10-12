@@ -3166,7 +3166,7 @@ Luzinstr.: Beton	Q0 22925,13662 22859,13684 22759,13715
 Rudolf-Seiffert-Str.: mäßiger Asphalt	Q1 14871,13135 14978,13581 14784,13642
 Rosenbecker Str.: Beton	Q0 21684,18283 21699,18314 21751,18421 21732,18493 21678,18648 21627,18814
 #: XXX: sogar mit "13 km/h" ausgewiesen:
-Oleanderstr.: mäßiger Asphalt	Q2 14038,14099 14164,14062 14295,14010
+Oleanderstr.: mäßiger Asphalt	Q2 14038,14099 14164,14062 14271,14024
 Biesenbrower Str.: Beton	Q0 18118,17795 18237,17637 18403,17631 18565,17759 18740,17900 18875,18009 18893,18137 18737,18350 18620,18283
 #: XXX: der anonyme Mensch hat auch "z.T. verkehrsberuhigt" ausgewiesen, nur wo?
 Woltmannweg: Asphalt	Q0 5056,1321 4939,1148 4862,975 4837,890 4768,840
@@ -9047,6 +9047,37 @@ Luisenstr. (Lichterfelde): schlechtes Kopfsteinpflaster	Q3 5865,1975 5807,2117
 Luisenstr. (Lichterfelde): schlechtes Kopfsteinpflaster	Q3 5825,2125 5761,2262
 Luisenstr. (Lichterfelde): schlechtes Kopfsteinpflaster	Q3 5788,2274 5666,2548
 #: by: ^^^
+#: by: Jutta Marquark:
+#: note "glaube ich"
+Chrysanthemenstr.: Asphalt	Q0 14137,13987 14241,13941
+#: by: Claus Wiedenhöft:
+Weißkugelweg: Verbundsteinpflaster	Q1 10543,3069 10533,3001
+#: by: Kai Lilie:
+Kolibriweg: guter Beton	Q1 14034,3390 13822,3494
+#: by: Sabine Pechstein: vvv
+#: note: "hin und wieder gibt es kleinere Schäden (Risse), die aber beim Radfahren nicht behindern"
+Lappiner Str.: asphaltiert	Q0 20037,12707 20103,12698 20197,12688 20299,12677 20414,12663
+Lappiner Str.: asphaltiert	Q0 20541,12649 20680,12632
+Lappiner Str.: asphaltiert	Q0 20410,12628 20537,12615
+Lappiner Str.: asphaltiert	Q0 20545,12683 20418,12699
+#: by: ^^^
+#: by: Sylke Sallmon:
+Pankgrafenstr. (Pankow): gutes Verbundsteinpflaster	Q1 10409,18551 10447,18452 10470,18402
+#: by: Heiko Astalosch:
+#: note: "Achtung: Straßenbahn und Autostraße queren den Radweg, Gegenverkehr (Radfahrer) auf dem Teilstück Landsberger Allee. Einfahrt zur Altenhofer Straße abends häufig zugeparkt."
+#: note: Jack fro Freedom meint: Asphalt, Q1 --- go with Heiko
+#: XXX but maybe check myself...
+(Mittelstr./Altenhofer Str. - Landsberger Allee): Verbundsteinpflaster, teilweise Beton	Q1 15520,14444 15511,14409 15468,14430 15428,14341 15430,14272 15430,14262
+#: by: Stefan Rauhut: vvv
+Echtermeyerstr.: guter Beton	Q0 1524,2611 1561,2761 1567,2786
+(Echtermeyerstr. - Hampsteadstr.): breiter Parkweg	Q1 1561,2761 1607,2760 1608,2798 1582,2840 1582,2859 1542,2861 1527,2890 1532,2921
+#: by: ^^^
+#: by: maciek:
+Lienemannstr.: schlechtes Kopfsteinpflaster	Q3 4765,18496 4755,18539 4756,18589 4767,18810
+#: by: Uli Döbler:
+Eggepfad: guter Asphalt	Q0 -114,5077 -85,4949 -48,4888
+#: by: mmurdoc:
+Ludwig-Klapp-Str.: mäßiges Verbundsteinpflaster	Q2+ 16115,6995 16162,6951 16220,7003
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206
