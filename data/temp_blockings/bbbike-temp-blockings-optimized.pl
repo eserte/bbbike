@@ -744,16 +744,7 @@ userdel	q4::inwork 10422,12395 10476,12432
          'type' => 'handicap'
        },
        undef,
-       {
-         'source_id' => 'IM_012764',
-         'until' => 1255384800,
-         'text' => 'Glinkastr. (Mitte) in beiden Richtungen zwischen Jägerstr. und Taubenstr. Baustelle, Straße vollständig gesperrt (bis 12.10.2009)',
-         'from' => 1255162601,
-         'id' => 1679,
-         'data' => 'userdel	q4::inwork 9201,11968 9208,11872
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1009,15 +1000,7 @@ userdel	q4::inwork; 9475,12365 9462,12481 9454,12558
        undef,
        undef,
        undef,
-       {
-         'until' => 1255384800,
-         'text' => 'Seit dem 13.07.2009 erfolgt der Bau einer Regenwasserleitung in der Steinstraße zwischen Großbeerenstraße und Hubertusdamm. Die Arbeiten werden unter Vollsperrung der Steinstraße durchgeführt. Die Arbeiten werden voraussichtlich drei Monate andauern. ',
-         'from' => 1247349600,
-         'id' => 1793,
-         'data' => 'userdel	q4::inwork -7060,-3124 -7266,-2736
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => 1262214000,
@@ -1555,15 +1538,7 @@ userdel	q4::inwork; 10829,18083 10907,18109 10938,18147 10989,18172 11137,18358 
          'type' => 'handicap'
        },
        undef,
-       {
-         'until' => 1255384800,
-         'text' => 'B 096 Sonnewalde - Luckau zw. L561, Weißack und OU Luckau Deckenerneuerung Vollsperrung 09.10.2009-12.10.2009 ',
-         'from' => 1254952800,
-         'id' => 1902,
-         'data' => 'userdel	2::inwork 31378,-67751 31039,-67133 30744,-66875 30597,-66340 30577,-65764 30491,-65399
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'until' => 1293750000,
@@ -1610,15 +1585,7 @@ userdel	q4::inwork; 10829,18083 10907,18109 10938,18147 10989,18172 11137,18358 
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1255384800,
-         'text' => 'B 115 Baruth - Jüterbog zw. Charlottenfelde und Abzw. Wahlsdorf Straßenbauarbeiten Vollsperrung 24.09.2009-12.10.2009 ',
-         'from' => 1253656800,
-         'id' => 1917,
-         'data' => 'userdel	2::inwork 4784,-46940 4232,-46877
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1261350000,
          'text' => 'K 6422 Petershagener Str. OL Fredersdorf, zw. Rosinstr. und Platanenstr. Straßen- und Durchlassbau Vollsperrung 23.09.2009-20.12.2009 ',
