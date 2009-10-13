@@ -1089,8 +1089,9 @@ Paplitzer Str.: Qualität zwischen Saalower Str. und Goltzstr.? Sind einige Absch
 Deutschtaler Str.: Qualität?	? 17344,1060 17492,843 17640,626 17811,374 17854,314 17946,179 18011,83 18077,-13 18230,-233
 Großziethen: wie weit in Richtung Süden gehen die Radwege?	? 13124,216 13165,-34 13176,-161 13225,-681 13230,-712 13309,-1268
 Pilgramer Str.: Asphalt/Beton. Welcher Abschnitt ist betoniert, welcher asphaltiert?	? 25144,11215 25150,10555 25148,10483 25135,10449 25112,10415 25048,10317 24984,10204 24923,10097 24854,9975 24793,9860 24713,9715 24617,9545 24566,9456 24519,9349 24471,9241 24412,9103 24358,8976 24294,8827 24239,8701 24217,8521 24195,8348 24167,8196 24137,8038 24112,7907 24087,7776 24070,7685
-Coloniallee: Qualität? Existiert hier ein Radweg?	? 20051,-344 20052,-239 20046,-160 20036,-122 20010,-71 19972,-19
-Weidenweg: Qualität?	? 19780,-407 19794,-409 19879,-378 19941,-353 19974,-348 20051,-344 20327,-305 20476,-279
+Coloniaallee: Qualität? Existiert hier ein Radweg?	? 20051,-344 20052,-239 20046,-160 20036,-122 20010,-71 19972,-19
+Weidenweg: Qualität?	? 19780,-407 19794,-409 19879,-378 19941,-353 19974,-348 20051,-344
+Weidenweg: Qualität?	? 20051,-344 20327,-305 20476,-279
 Weidenweg: Qualität?	? 19775,-437 19761,-438 19704,-490
 Rodenkirchener Str. - Weidenweg: Existiert hier eine Durchfahrt für Radfahrer? Qualität?	? 19974,-317 19974,-348
 Ehrenfelder Platz - Rebenweg: Existiert hier eine Durchfahrt für Radfahrer? Qualität?	? 20052,-239 19973,-245 19894,-247 19827,-251 19775,-252
@@ -1895,7 +1896,6 @@ Wickhofstr.: Qualität?	? 4021,23330 4030,23054
 Gisbertasteig: Qualität?	? 4304,24250 4448,24277
 Bertastr. (Hermsdorf): Qualität?	? 4617,24029 4510,24170 4448,24277 4444,24329 4457,24400
 Marthastr. (Hermsdorf): Qualität?	? 4546,23930 4489,23976 4458,24011 4425,24067
-Olafstr.: Qualität?	? 3947,23547 3698,23657 3605,23724 3561,23817 3512,24049 3483,24186 3457,24321 3425,24469
 Oswinsteig: Qualität?	? 3875,24405 3744,24378 3605,24351 3457,24321 3271,24283 3127,24253
 Roswithastr.: Qualität?	? 3799,24105 3661,24079 3512,24049 3308,24009
 Seeblickstr.: Qualität?	? 4233,24459 4183,24326
@@ -2790,6 +2790,7 @@ Lößnitzer Weg: Qualität?	? 15655,556 15597,703 15579,745 15505,923 15489,970 154
 Lauchstädter Weg: Qualität?	? 15952,719 15872,902 15804,1061 15758,1179 15699,1258 15591,1332
 Pirnaer Str.: Qualität?	? 16042,772 15970,954 15935,1043 15901,1120
 Siebenendenweg: Qualität? Ist die gesamte Straße für Autos gesperrt?	? 404,3970 21,4434 -62,4564
+Eberswalder Str.: Existieren bereits Radwege zwischen Schönhauser Allee und Topsstraße? Falls ja: sind die Radwege benutzungspflichtig?	?::inwork 10618,15076 10881,15047
 # added from ampeln-orig
 #: add_fragezeichen: Existiert die Ampel Nordufer/Torfstr. noch?
 geschlossen bei Bedarf (?) (Zbr)	? 27657,-11741

@@ -1777,12 +1777,12 @@ userdel	2::inwork -7582,-46937 -7831,-47100 -7975,-47313 -8299,-47368
        },
        {
          'source_id' => 'Message-ID: <001e01ca4b11$15559d20$4000d760$@grittner@adfc-berlin.de>',
-         'until' => undef,
-         'text' => 'Wegen Bauarbeiten ist der Radweg am Kurt-Schumacher-Damm und Hinckeldeybrücke nicht befahrbar',
+         'until' => 1258369200,
+         'text' => 'Wegen Bauarbeiten ist der Radweg am Kurt-Schumacher-Damm zwischen Rue Ambroise Pare und Hinckeldeybrücke bis Mitte November nicht befahrbar',
          'from' => undef,
          'id' => 1945,
          'data' => '#: last_checked: 2009-10-10 by Susanne Grittner
-userdel	2::inwork 3165,15590 3257,15666 3314,15782 3564,16294
+userdel	2::inwork 3314,15782 3564,16294
 ',
          'type' => 'gesperrt'
        },
@@ -1793,6 +1793,24 @@ userdel	2::inwork 3165,15590 3257,15666 3314,15782 3564,16294
          'from' => 1255383595,
          'id' => 1946,
          'data' => 'userdel	q4::inwork 9141,12320 9130,12433 9123,12500 9008,12485
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1256076000,
+         'text' => 'Vom 6.10.2009 bis 20.10.2009 ist der Königsweg zwischen Eichkampstraße und Hüttenweg wegen Straßenbauarbeiten komplett gesperrt ',
+         'from' => 1255467829,
+         'id' => 1947,
+         'data' => 'userdel	2::inwork -903,6923 -643,7252 -348,7641 425,8766
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1275343200,
+         'text' => 'Verkehreinschränkungen in der Magdalenenstraße und am Roedeliusplatz bis Mai 2010, Einbahnstraßenregelung in Fahrtrichtung Normannenstraße ',
+         'from' => 1255468338,
+         'id' => 1948,
+         'data' => 'userdel	q4::inwork; 16159,12301 16158,12191
 ',
          'type' => 'handicap'
        }

@@ -32,11 +32,15 @@ Löhleinstraße	? 2717,5578 2499,5144 2454,5067 2288,4932
 #: last_checked: 2009-05-02
 Saargemünder Straße	? 2027,4792 1884,4811 1747,4829 1479,4853
 #: by ^^^
-# XXX del: hier passiert bestimmt nichts mehr: by Berliner Kurier: vvv Max-Beer-Str.: Fahrradstraße geplant (2005, aber noch nichts passiert)	? 10632,13199 10703,13467 10740,13621
-#: by: Tagesspiegel vom 2009-04-12, soll 2009 realisiert werden (bestätigt von MoPo 2009-08-01)
-Reichsstr.	? 1401,11428 1403,11428 1308,11506 1220,11583 1215,11587 1133,11664 1033,11754 881,11893 818,11954
+#: by: Tagesspiegel vom 2009-04-12, soll 2009 realisiert werden (bestätigt von MoPo 2009-08-01 und http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20091012.1150.142106.html) vvv
+#: next_check: 2009-10-31 vvv
+Reichsstr.: baulicher Radweg	?::inwork; 1403,11428 1308,11506
+Reichsstr.: Angebotsstreifen	?::inwork; 1308,11506 1403,11428
+Reichsstr.: Angebotsstreifen	?::inwork 1308,11506 1220,11583 1215,11587 1133,11664 1033,11754 881,11893 818,11954
+Reichsstr.: wird der vorhandene Radweg zugunsten eines Angebotsstreifens aufgegeben?	?::inwork 818,11954 738,12025 653,12109 628,12138
+#: next_check ^^^
+#: by: ^^^
 #: by: MoPo 2009-08-01, soll 2009 realisiert werden vvv
-# del, realisiert: Perleberger Str.	? 6230,13596 6366,13716 6493,13822 6649,13947 6730,14021 6807,14093 6992,14251 7123,14367 7180,14419
 #: last_checked: 2009-09-12
 Tiergartenstr.	? 8172,11679 8021,11636 7816,11571 7717,11540 7600,11513 7504,11512 7435,11514 7356,11517 7293,11519 6825,11486
 Grunewaldstr.	? 4861,5581 4671,5697 4520,5793 4419,5842 4291,5895 4172,5918 4006,5876 3931,5825 3850,5801 3707,5758
@@ -86,6 +90,9 @@ Streitstr. (werden die vorhandenen Bordsteinradwege ersetzt)?	? -3040,16246 -305
 #: by: http://www.berlin.de/ba-pankow/presse/archiv/20081128.1050.115446.html
 #: next_check: 2010-01-01
 Blankenburger Str. erhält beiderseitig Radfahrstreifen zwischen Dietzgen- und Siegfriedstr.	?::inwork 10249,19541 10377,19565 10742,19632
+#: by: http://www.berlin.de/ba-pankow/presse/archiv/20090921.0650.139568.html
+#: next_check: 2011-10-01
+Wollankstr.: Angebotsstreifen werden bis Herbst 2011 eingerichtet	?::inwork 9549,17625 9590,17662 9624,17693 9663,17734 9727,17804 9791,17877 9832,17925 9870,17971 9978,18104 10027,18165 10089,18180
 #: section ^^^
 #: section ^^^
 #
@@ -130,8 +137,11 @@ Zobtener Str.: Asphaltierung steht an	? 16539,10097 16157,10342 15758,10578
 Alter Fischweweg: gemeinsamer Geh- und Radweg	? 30087,5448 30244,6615 30307,6823
 Radwegeverbindung am U-Bhf. Johannisthaler Chaussee, gegenüber Kirschnerweg	? 13869,2658 13807,2863
 #: last_checked: 2009-08-04
-#: next_check: 2009-11-01
+#: next_check: 2009-11-13
+#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20090928.1155.140676.html
 Belziger Str.: Asphaltierung	? 7315,9156 7110,9024
+#: by: http://www.berlin.de/ba-spandau/presse/archiv/20090918.0810.139251.html
+#: next_check: 2010-05-01
 Asphaltierung im Ramingrünzug	? -3776,14419 -3906,14517 -3941,14603 -4015,14744 -4035,14779
 Radwegbau Welzower Steig	? 6320,21777 6223,21952 6257,22005 6111,22155 6082,22183 6052,22185 6026,22227 5993,22260 5984,22280 5939,22330 5929,22339
 Radverbindung zwischen Bernhard-Lichtenberg-Str. und Goerdelerdamm	? 3174,14253 3229,14224
@@ -192,11 +202,6 @@ Alt-Blankenburg: Bau von Radwegen	?::inwork; 13592,20785 13576,20849 13915,20944
 Schwarzer Weg: Wiedereröffnung im Frühjahr 2009 (im Juli aber noch keinerlei Anzeichen zu sehen)	?::projected 13938,7938 13957,8209 13939,8228
 #XXX del An der Spandauer Brücke: neue Straßenführung	?::inwork 10309,12854 10398,12903 10427,12921 10371,13006
 #XXXdel : by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0802/nachricht2958.html;#: note: laut daniel.geraskov noch eine Baustelle;#: last_checked: 2008-06-23;Oranienburger Str.: Existiert in Richtung Hackescher Markt zwischen Friedrichstraße und Linienstraße eine Radspur?	?; 9215,13392 9281,13374
-#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0803/nachricht2984.html
-#: last_checked: 2009-07-30
-#: XXX laut MoPo früher fertig:
-#: next_check: 2009-09-30
-Eberswalder Str.: Neubau von Radwegen bis 2009-12-01	?::inwork 10618,15076 10881,15047
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0802/nachricht2961.html
 B96a: Neubau der Radwege (gemeinsam mit Gehweg); wahrscheinlich wird der Radstreifen dann aufgehoben (bis 2010-01-01)	?::inwork 9228,23643 9146,23843 8984,24078 8891,24330 8826,24501 8682,24883 8665,24941 8661,24952 8571,25180 8548,25239 8493,25378
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20080327.1225.97044.html
@@ -1919,8 +1924,11 @@ Großziethen: wie weit in Richtung Süden gehen die Radwege?	? 13124,216 13165,-34
 #: note: Harry Marschke meint: "Guter Zustand, weitgehend neu asphaltiert. Tempo-30-Zone, teilweise keine ausgebauten Bürgersteige (Einfamilienhaus-Bebauung mit Siedlungscharakter). Lediglich der zur B1 gelegene Teil ist in etwas schlechterem Zustand (teilweise DDR-Beton, "Schleichverkehr"). "
 Pilgramer Str.: Asphalt/Beton. Welcher Abschnitt ist betoniert, welcher asphaltiert?	? 25144,11215 25150,10555 25148,10483 25135,10449 25112,10415 25048,10317 24984,10204 24923,10097 24854,9975 24793,9860 24713,9715 24617,9545 24566,9456 24519,9349 24471,9241 24412,9103 24358,8976 24294,8827 24239,8701 24217,8521 24195,8348 24167,8196 24137,8038 24112,7907 24087,7776 24070,7685
 #: XXX laut Jan Qualität gut, Verbundsteinpflaster, Radweg vorhanden, einige Fußgänger. Leider hat er keine E-Mail-Adresse hinterlassen, so dass ich nicht nachfragen kann, ob es sich um einen Zweirichtungsradweg handelt.
-Coloniallee: Qualität? Existiert hier ein Radweg?	? 20051,-344 20052,-239 20046,-160 20036,-122 20010,-71 19972,-19
-Weidenweg: Qualität?	? 19780,-407 19794,-409 19879,-378 19941,-353 19974,-348 20051,-344 20327,-305 20476,-279
+#: XXX laut http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20091002.1235.141155.html asphaltiert (auf jeden Fall ab November 2009)
+Coloniaallee: Qualität? Existiert hier ein Radweg?	? 20051,-344 20052,-239 20046,-160 20036,-122 20010,-71 19972,-19
+#: XXX Laut http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20091002.1235.141155.html ist dieser Abschnitt eine Spielstraße
+Weidenweg: Qualität?	? 19780,-407 19794,-409 19879,-378 19941,-353 19974,-348 20051,-344
+Weidenweg: Qualität?	? 20051,-344 20327,-305 20476,-279
 Weidenweg: Qualität?	? 19775,-437 19761,-438 19704,-490
 Rodenkirchener Str. - Weidenweg: Existiert hier eine Durchfahrt für Radfahrer? Qualität?	? 19974,-317 19974,-348
 Ehrenfelder Platz - Rebenweg: Existiert hier eine Durchfahrt für Radfahrer? Qualität?	? 20052,-239 19973,-245 19894,-247 19827,-251 19775,-252
@@ -2810,9 +2818,10 @@ Wickhofstr.: Qualität?	? 4021,23330 4030,23054
 Gisbertasteig: Qualität?	? 4304,24250 4448,24277
 Bertastr. (Hermsdorf): Qualität?	? 4617,24029 4510,24170 4448,24277 4444,24329 4457,24400
 Marthastr. (Hermsdorf): Qualität?	? 4546,23930 4489,23976 4458,24011 4425,24067
-Olafstr.: Qualität?	? 3947,23547 3698,23657 3605,23724 3561,23817 3512,24049 3483,24186 3457,24321 3425,24469
 #: XXX laut http://www.berlin.de/ba-reinickendorf/presse/archiv/20090804.1210.134045.html betoniert, ab 08.09.2009 sind schadhafte Stellen beseitigt
+#: next_check: 2009-09-08
 Oswinsteig: Qualität?	? 3875,24405 3744,24378 3605,24351 3457,24321 3271,24283 3127,24253
+#: XXX möglicherweise instand gesetzt, siehe http://www.berlin.de/ba-reinickendorf/presse/archiv/20090925.0930.140105.html, oder ist nur die Kreuzung gemeint?
 Roswithastr.: Qualität?	? 3799,24105 3661,24079 3512,24049 3308,24009
 Seeblickstr.: Qualität?	? 4233,24459 4183,24326
 Triniusstr. (Hermsdorf): Qualität?	? 3866,24451 3901,24453 4073,24393
@@ -3848,3 +3857,8 @@ Lauchstädter Weg: Qualität?	? 15952,719 15872,902 15804,1061 15758,1179 15699,12
 Pirnaer Str.: Qualität?	? 16042,772 15970,954 15935,1043 15901,1120
 #: XXX unklarer Eintrag von bene...finti: Asphalt, enge Straße, q0, vielleicht war auch die Onkel-Bräsig-Str. gemeint
 Siebenendenweg: Qualität? Ist die gesamte Straße für Autos gesperrt?	? 404,3970 21,4434 -62,4564
+#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0803/nachricht2984.html
+#: last_checked: 2009-07-30
+#: XXX laut MoPo früher fertig:
+#: next_check: 2009-09-30
+Eberswalder Str.: Existieren bereits Radwege zwischen Schönhauser Allee und Topsstraße? Falls ja: sind die Radwege benutzungspflichtig?	?::inwork 10618,15076 10881,15047

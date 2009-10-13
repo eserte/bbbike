@@ -2657,6 +2657,12 @@ Seebeckstr.: Kopfsteinpflaster	Q2+ 8495,18566 8425,18542
 Fontanestr.: betoniert	Q0 7209,19928 7223,19826 7324,19795 7522,19804
 (Fontanestr. - Kopenhagener Str.): asphaltiert, mit Lˆchern	Q2+ 7522,19804 7518,19762 7617,19748
 Straﬂe 33 (Niederschˆnhausen): teilweise unbefestigt	Q2 7603,19713 7675,19677
+#: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20090925.0930.140105.html
+Am Kr‰henberg: Beton	Q0 -1630,20086 -1927,20118 -2055,20129 -2205,20141
+#: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20090925.0930.140105.html
+Klamannstr.: Beton	Q0 5870,18387 5845,18435 5856,18569 5992,18651 6009,18755
+#: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20090925.0930.140105.html
+Kienhorststr.: Beton	Q0 4085,18694 4171,18677 4340,18636 4472,18603 4637,18595 4756,18589 5324,18560 5543,18555
 ######################### User Contributions #################################
 #: by: Dominik Seelow vvv
 Viktoriastr.: m‰ﬂiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
@@ -2984,6 +2990,8 @@ Hogenestweg: Asphalt	Q0 13288,1647 13275,1908 13286,1942
 Tewsstr.: m‰ﬂiges Kopfsteinpflaster	Q2 -2391,2624 -2274,2656 -2160,2685 -2046,2717 -2026,2742
 Klandorfer Str.: guter Asphalt	Q0 21335,18679 21377,18663 21387,18674 21438,18648 21545,18595
 Klandorfer Str.: guter Asphalt	Q0 21438,18648 21503,18775 21627,18814 21785,18861 21871,18887
+#: XXX: Asphaltreparatur laut http://www.berlin.de/ba-reinickendorf/presse/archiv/20090925.0930.140105.html
+#: next_check: 2009-12-31
 Im Brachfeldwinkel: m‰ﬂiger Asphalt	Q1 3024,21286 2944,21464
 #: confirmed_by: srt (zumindest an der Rohrwallallee)
 L¸bbenauer Weg: Asphalt	Q0 26011,-1407 26066,-1422 26168,-1424 26224,-1415 26275,-1403 26384,-1363 26448,-1326 26520,-1255 26575,-1191 26656,-1147
@@ -4733,8 +4741,12 @@ Maarer Str.: Beton	Q1 5568,21185 5628,21279 5676,21354 5892,21548 6056,21667 625
 #: confirmed_by: Wolfhard Schleese
 Bieselheider Weg: Verbundsteinpflaster	Q1 3485,26544 3487,26491 3471,26447 3419,26398 3396,26364
 #: confirmed_by: Wolfhard Schleese "m‰ﬂiger Asphalt" vvv
+#: XXX: Instandsetzungsarbeiten laut http://www.berlin.de/ba-reinickendorf/presse/archiv/20090925.0930.140105.html vvv
+#: next_check: 2009-12-31 vvv
 Bieselheider Weg: schlecht ausgebesserte Asphaltdecke	Q2+ 3396,26364 3360,26275
 Bieselheider Weg: schlecht ausgebesserte Asphaltdecke	Q2+ 3347,26272 3328,26193 3318,26130 3324,26100 3352,26065 3477,25969 3529,25945 3587,25936
+#: next_check: ^^^
+#: XXX: ^^^
 #: confirmed_by: ^^^
 #: by: ^^^
 #: by: Roxlau (aschenbre):
@@ -4982,8 +4994,12 @@ Ahrenshooper Str.: Beton	Q0 16905,17949 17082,18068 17215,18153
 #: by: ^^^
 #: by: Tobias Kant: vvv
 #: corrected_by: srt (teilweise gibt es Asphalt-Abschnitte, siehe Luftbilder)
+#: XXX: Kopfsteinpflaster wird bis Herbst 2011 durch Bitumen ersetzt (http://www.berlin.de/ba-pankow/presse/archiv/20090921.0650.139568.html) vvv
+#: next_check: 2011-10-01 vvv
 Wollankstr.: Kopfsteinpflaster	Q2 9624,17693 9663,17734 9727,17804 9791,17877 9832,17925
 Wollankstr.: Kopfsteinpflaster	Q2; 9832,17925 9870,17971 9978,18104
+#: next_check: ^^^
+#: XXX: ^^^
 Wollankstr.: Asphalt	Q0; 9978,18104 9870,17971 9832,17925
 Wollankstr.: Asphalt	Q0 9978,18104 10027,18165 10089,18180
 #: by: ^^^
@@ -6343,6 +6359,8 @@ Straﬂe 614: Verbundsteinpflaster	Q1 13105,5748 12885,5699
 #: by: Bosshold, Martin:
 Marschnerstr.: m‰ﬂiges Kopfsteinpflaster	Q2 4613,4515 4641,4287 4634,4053 4629,3916
 #: by: rainer (rfsriedrich):
+#: XXX: Asphaltreparatur laut http://www.berlin.de/ba-reinickendorf/presse/archiv/20090925.0930.140105.html (oder nur die Kreuzung Olafstr.?)
+#: next_check: 2009-12-31
 Odilostr.: m‰ﬂiger Beton	Q1 3216,24135 3311,24150 3483,24186 3632,24214 3771,24241 3902,24266
 #: by: panik (666):
 Westfalenring: m‰ﬂiger Beton	Q1 4068,406 4079,354 4066,277 4029,144 3939,109 3922,111 3837,166 3795,221 3729,324
@@ -7216,6 +7234,7 @@ Fritz-Reuter-Str. (Niederschˆnhausen): unbefestigter Weg	Q2 10421,20313 10431,20
 #: by: Gunnar (mopedfahrer):
 Schulstr. (Lankwitz): m‰ﬂiges Kopfsteinpflaster	Q2 7143,3508 6989,3433 6878,3379 6787,3348 6698,3336
 #: by: Detlef Lechner:
+#: XXX: Fahrbahn wurde laut http://www.berlin.de/ba-reinickendorf/presse/archiv/20090925.0930.140105.html instand gesetzt
 Klosterheider Weg: Betondecke in schlechtem Zustand	Q2 2842,23482 2742,23513 2621,23609 2490,23720 2522,23761 2582,23814 2663,23875
 #: by: Karsten Blumenau vvv
 Baumbachstr.: guter Beton	Q0 11448,16398 11450,16490 11441,16612
@@ -8454,6 +8473,8 @@ Spachtelweg: guter Asphalt	Q0 5900,20487 5970,20353
 Keilerstr.: guter Asphalt	Q0 -412,22468 -597,22627
 #: by: Jogi (albert):
 #: note: Eintrag "einige Fuﬂg‰nger" ignoriert
+#: XXX: Asphaltreparatur laut http://www.berlin.de/ba-reinickendorf/presse/archiv/20090925.0930.140105.html (oder nur die Kreuzung Odilostr.?)
+#: next_check: 2009-12-31
 Olafstr.: m‰ﬂiger Asphalt	Q1- 3947,23547 3698,23657 3605,23724 3561,23817 3512,24049 3483,24186 3457,24321 3425,24469
 #: by: Gabriele Meindl
 #: confirmed_by: anonymous
