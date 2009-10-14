@@ -1,7 +1,6 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikePanoramioPlugin.pm,v 1.5 2008/12/01 22:24:44 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2008,2009 Slaven Rezic. All rights reserved.
@@ -21,7 +20,7 @@ push @ISA, "BBBikePlugin";
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.5 $ =~ /(\d+)\.(\d+)/);
+$VERSION = 1.06;
 
 use File::Temp qw(tempfile);
 use JSON::XS;
@@ -43,6 +42,7 @@ sub show_mini_images {
     my(%args) = @_;
 
     my $data;
+    my $displayed_photos = 0;
 
     main::IncBusy($main::top);
     eval {
@@ -53,33 +53,60 @@ sub show_mini_images {
 	($minx,$maxx) = ($maxx,$minx) if $minx > $maxx;
 	($miny,$maxy) = ($maxy,$miny) if $miny > $maxy;
 
-	my $json_url = sprintf 'http://www.panoramio.com/map/get_panoramas.php?order=popularity&set=public&from=0&to=20&size=thumbnail&minx=%s&maxx=%s&miny=%s&maxy=%s', $minx, $maxx, $miny, $maxy;
-	my $ua = LWP::UserAgent->new;
-	$ua->agent("BBBike/$main::VERSION (BBBikePanoramioPlugin/$VERSION LWP/$LWP::VERSION");
-	my $resp = $ua->get($json_url);
-	if (!$resp->is_success) {
-	    die "Fetching $json_url was not successful: " . $resp->status_line;
-	}
-	$data = JSON::XS::decode_json($resp->content);
-
 	$main::c->delete("panoramio");
 	for (@photos) {
 	    eval { $_->delete }; warn $@ if $@;
 	}
 	@photos = ();
 
-	for my $rec (@{ $data->{photos} || [] }) {
-	    my($sx,$sy) = $Karte::Polar::obj->map2standard($rec->{longitude}, $rec->{latitude});
-	    my($tx,$ty) = main::transpose($sx,$sy);
-	    my(undef, $imgfile) = tempfile(UNLINK => 1, SUFFIX => "_panoramio.jpg");
-	    my $resp = $ua->get($rec->{photo_file_url}, ':content_file' => $imgfile);
-	    if ($resp->is_success) {
-		my $p = $main::c->Photo(-file => $imgfile);
-		push @photos, $p;
-		unlink $imgfile;
-		(my $medium_url = $rec->{photo_file_url}) =~ s{/thumbnail/}{/medium/};
-		$main::c->createImage($tx,$ty, -image => $p, -tags => ['panoramio', $rec->{photo_url}, "ImageURL: $medium_url"]);
+	my $ua = LWP::UserAgent->new;
+	$ua->agent("BBBike/$main::VERSION (BBBikePanoramioPlugin/$VERSION LWP/$LWP::VERSION");
+
+	my $max_display_photos = 30; # previously I used 21, try how "cluttered" it would be with 30
+	my $fetch_per_iteration = 100;
+
+	my $fetched_photos = 0;
+	my $available_photos;
+	my $iteration_breaker = 0;
+    FETCH_ALL_PHOTOS: while($displayed_photos < $max_display_photos &&
+			    ((defined $available_photos && $fetched_photos < $available_photos) ||
+			     !defined $available_photos)) {
+	    die "Iteration breaker!" if $iteration_breaker++>100;
+	    my $from = $fetched_photos;
+	    my $to = $fetched_photos + $fetch_per_iteration - 1;
+	    my $json_url = "http://www.panoramio.com/map/get_panoramas.php?order=popularity&set=full&size=thumbnail" .
+		"&from=$from&to=$to" .
+		    "&minx=$minx&maxx=$maxx&miny=$miny&maxy=$maxy";
+	    my $resp = $ua->get($json_url);
+	    if (!$resp->is_success) {
+		die "Fetching $json_url was not successful: " . $resp->status_line;
 	    }
+	    $data = JSON::XS::decode_json($resp->content);
+
+	    if (!defined $available_photos) {
+		$available_photos = $data->{count};
+		last if !$available_photos;
+	    }
+
+	    for my $rec (@{ $data->{photos} || [] }) {
+		next if ($rec->{longitude} > $maxx || $rec->{longitude} < $minx ||
+			 $rec->{latitude}  > $maxy || $rec->{latitude}  < $miny);
+		my($sx,$sy) = $Karte::Polar::obj->map2standard($rec->{longitude}, $rec->{latitude});
+		my($tx,$ty) = main::transpose($sx,$sy);
+		my(undef, $imgfile) = tempfile(UNLINK => 1, SUFFIX => "_panoramio.jpg");
+		my $resp = $ua->get($rec->{photo_file_url}, ':content_file' => $imgfile);
+		if ($resp->is_success) {
+		    my $p = $main::c->Photo(-file => $imgfile);
+		    push @photos, $p;
+		    unlink $imgfile;
+		    (my $medium_url = $rec->{photo_file_url}) =~ s{/thumbnail/}{/medium/};
+		    $main::c->createImage($tx,$ty, -image => $p, -tags => ['panoramio', $rec->{photo_url}, "ImageURL: $medium_url"]);
+		    $displayed_photos++;
+		    last FETCH_ALL_PHOTOS if $displayed_photos >= $maxy;
+		}
+	    }
+
+	    $fetched_photos += $fetch_per_iteration;
 	}
     };
     my $err = $@;
@@ -87,7 +114,7 @@ sub show_mini_images {
     main::status_message($err, 'die') if $err;
 
     if ($data) {
-	main::status_message("Found $data->{count} photo(s)", "info");
+	main::status_message("Panoramia API returned $data->{count} photo(s), displayed $displayed_photos within visible area", "info");
     }
 }
 
