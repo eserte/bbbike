@@ -44,6 +44,12 @@
 # HTML ... documents
 Alias [% ROOT_URL %]  [% ROOT_DIR %]
 
+# server headers have precedence over http-equiv tags, so
+# force utf-8 in case DefaultCharset is active
+<Location [% ROOT_URL %]/html/opensearch/opensearch.html>
+    AddType "text/html; charset=utf-8" .html
+</Location>
+
 [%
     IF CGI_TYPE == "Apache::Registry";
         FOR cgiurl = cgiurls
