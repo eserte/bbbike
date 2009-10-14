@@ -13334,7 +13334,7 @@ userdel	q4::inwork; 15681,10801 15674,10851
 EOF
      },
      { from  => 1242281854, # 2009-05-14 08:17
-       until => 1257029999, # 2009-10-31 23:59
+       until => 1255499918, # 2009-10-31 23:59 1257029999
        text  => 'Pappelallee (Prenzlauer Berg) Richtung Wisbyer Str. zwischen Stargarder Str. und Wichertstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 10.2009)',
        type  => 'handicap',
        source_id => 'IM_012654',
@@ -16537,6 +16537,32 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork; 16159,12301 16158,12191
+EOF
+     },
+     { from  => 1255384800, # 2009-10-13 00:00
+       until => 1262300400, # 2010-01-01 00:00
+       text  => 'L 220 B167 - Joachimsthal zw. Eichhorst u. Joachimsthal, Chausseestr. Deckenerneuerung Vollsperrung 14.10.2009-31.12.2009 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 30781,60566 30784,60950 30960,61370 31147,61555 31880,61589 32748,62327
+EOF
+     },
+     { from  => 1255539600, # 2009-10-14 19:00
+       until => 1255921200, # 2009-10-19 05:00
+       text  => 'Sperrungen an der Kreuzung Karl-Marx-Allee/Otto-Braun-Straße einschließlich Grunerstraße bis Alexanderstraße, 16.10.2009, 19.00 Uhr bis 19.10.2009, 05.00 Uhr ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 11275,13026 11228,12951 11134,12793
+userdel	3 11139,13008 11228,12951 11295,12915
+EOF
+     },
+     { from  => 1256144400, # 2009-10-21 19:00
+       until => 1256529600, # 2009-10-26 05:00
+       text  => 'Sperrungen an der Kreuzung Karl-Marx-Allee/Otto-Braun-Straße einschließlich Grunerstraße bis Alexanderstraße, 23.10.2009, 19.00 Uhr bis 26.10.2009, 05.00 Uhr ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 11275,13026 11228,12951 11134,12793
+userdel	3 11139,13008 11228,12951 11295,12915
 EOF
      },
     );

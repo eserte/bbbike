@@ -549,16 +549,7 @@ userdel	1::inwork 12229,10014 12398,9938 12556,9862
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_012654',
-         'until' => 1257029999,
-         'text' => 'Pappelallee (Prenzlauer Berg) Richtung Wisbyer Str. zwischen Stargarder Str. und Wichertstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 10.2009)',
-         'from' => 1242281854,
-         'id' => 1573,
-         'data' => 'userdel	q4::inwork; 11301,15668 11373,15789 11393,15823 11455,15916
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1813,6 +1804,35 @@ userdel	2::inwork 3314,15782 3564,16294
          'data' => 'userdel	q4::inwork; 16159,12301 16158,12191
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => 1262300400,
+         'text' => 'L 220 B167 - Joachimsthal zw. Eichhorst u. Joachimsthal, Chausseestr. Deckenerneuerung Vollsperrung 14.10.2009-31.12.2009 ',
+         'from' => 1255384800,
+         'id' => 1949,
+         'data' => 'userdel	2::inwork 30781,60566 30784,60950 30960,61370 31147,61555 31880,61589 32748,62327
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1255921200,
+         'text' => 'Sperrungen an der Kreuzung Karl-Marx-Allee/Otto-Braun-Straße einschließlich Grunerstraße bis Alexanderstraße, 16.10.2009, 19.00 Uhr bis 19.10.2009, 05.00 Uhr ',
+         'from' => 1255539600,
+         'id' => 1950,
+         'data' => 'userdel	2::inwork 11275,13026 11228,12951 11134,12793
+userdel	3 11139,13008 11228,12951 11295,12915
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1256529600,
+         'text' => 'Sperrungen an der Kreuzung Karl-Marx-Allee/Otto-Braun-Straße einschließlich Grunerstraße bis Alexanderstraße, 23.10.2009, 19.00 Uhr bis 26.10.2009, 05.00 Uhr ',
+         'from' => 1256144400,
+         'id' => 1951,
+         'data' => 'userdel	2::inwork 11275,13026 11228,12951 11134,12793
+userdel	3 11139,13008 11228,12951 11295,12915
+',
+         'type' => 'gesperrt'
        }
      
 );
