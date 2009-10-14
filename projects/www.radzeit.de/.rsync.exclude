@@ -14,6 +14,9 @@ routopedia/**
 etc/httpd*conf
 cgi-bin/mapserv
 .rsync.exclude
+.rsync_block-
+.rsync_message
+.rsync_message-
 .last/**
 Makefile
 .rcsignore
