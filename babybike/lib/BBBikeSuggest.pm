@@ -116,3 +116,28 @@ sub get_street_choices {
 1;
 
 __END__
+
+=head1 NAME
+
+BBBikeSuggest - suggest-like entry for street names
+
+=head1 SYNOPSIS
+
+    use BBBikeSuggest;
+    use Tk;
+    $suggest = BBBikeSuggest->new;
+    $suggest->set_zipfile(".../bbbike/data/Berlin.coords.data");
+    $mw = tkinit;
+    $w = $suggest->suggest_widget($mw, -selectcmd => sub { ... });
+    $w->pack;
+    MainLoop;
+
+=head1 AUTHOR
+
+Slaven Rezic
+
+=head1 SEE ALSO
+
+L<Tk::PathEntry>.
+
+=cut
