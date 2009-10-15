@@ -87,7 +87,7 @@ my $tcltk;
 
 sub start_progress_splash {
     my $type = shift || "slow";
-    if ($] >= 5.005) {
+    if ($] >= 5.005 && !$^C && !$^P) {
 	$type = "slow" if $^O eq "MSWin32";
 	# XXX don't know whether this is a Tk400 or an old perl problem
 	eval {
@@ -168,9 +168,12 @@ BEGIN {
 }
 
 use Tk::CanvasUtil;
+
+my $has_bbbikesuggest;
 BEGIN {
     if (!$tcltk) {
-	eval 'use Tk::PathEntry 2.17;'; die $@ if $@;
+	eval 'use BBBikeSuggest;'; die $@ if $@;
+	$has_bbbikesuggest = 1;
     } else {
 	for my $meth (qw(center_view center_view2 current_item
 			 get_center get_corners get_cursor is_visible
@@ -222,13 +225,13 @@ use vars qw($routing $context
 	    $release_timeout
 	    $map_mode $browse_mode $scribble_mode $freehand
 	    $xviewScroll $yviewScroll $swapydir $lbheight
-	    %zip_firstch $use_pathentry
+	    %zip_firstch
 	    $transpose $anti_transpose
 	    $c $cframe %streets $qualitaet_s_net $strcat_net
 	    $pref_quality $cat_quality
 	    $continue_search @update_points
 	    @normal_strassen_datadirs $use_tiles @available_scopes
-	    %quality_item $max_tiles
+	    %quality_item $max_tiles $bbbike_suggest
 	   );
 
 @update_points =
@@ -264,7 +267,6 @@ $use_tiles = (-e $tiledir) if !defined $use_tiles;
 ($centerx, $centery) = (14598,11245);
 
 $can_overview = 0;
-$use_pathentry = !$tcltk;
 
 $scope = "berlin" if !defined $scope;
 @normal_strassen_datadirs = @Strassen::datadirs;
@@ -487,7 +489,6 @@ sub main_gui {
     };
 
     $se_return = sub {
-	$se->Finish if $se->can('Finish');
 	$set_position->($routing->Start, $se->get);
 	$routing->get_start_position;
 	set_street_coord('start',
@@ -499,7 +500,6 @@ sub main_gui {
     };
 
     $ze_return = sub {
-	$ze->Finish if $ze->can('Finish');
 	$set_position->($routing->Goal, $ze->get);
 	$routing->get_goal_position;
 	set_street_coord('ziel',
@@ -510,15 +510,17 @@ sub main_gui {
 	start_bbbike(-centerpath => 1);
     };
 
+    if ($has_bbbikesuggest) {
+	$bbbike_suggest = BBBikeSuggest->new;
+    }
+
     $sl = $hbox_start->Label(-text => "Start:")->pack(-side => 'left');
-    if (!$use_pathentry) {
+    if (!$bbbike_suggest) {
 	$se = $hbox_start->Entry;
 	$se->bind('<Return>', $se_return);
     } else {
-	$se = $hbox_start->PathEntry
-	    (-autocomplete => 1,
-	     -choicescmd => \&get_street_choices,
-	     -isdircmd => sub { 0 },
+	$se = $bbbike_suggest->suggest_widget
+	    ($hbox_start,
 	     -selectcmd => $se_return,
 	    );
     }
@@ -538,14 +540,12 @@ sub main_gui {
 	 })->pack(-side => 'left');
 
     $zl = $hbox_ziel->Label(-text => "Ziel: ")->pack(-side => 'left');
-    if (!$use_pathentry) {
+    if (!$bbbike_suggest) {
 	$ze = $hbox_ziel->Entry;
 	$ze->bind('<Return>', $ze_return);
     } else {
-	$ze = $hbox_ziel->PathEntry
-	    (-autocomplete => 1,
-	     -choicescmd => \&get_street_choices,
-	     -isdircmd => sub { 0 },
+	$ze = $bbbike_suggest->suggest_widget
+	    ($hbox_ziel,
 	     -selectcmd => $ze_return,
 	    );
     }
@@ -1027,8 +1027,8 @@ sub init_big_data {
     $splash_screen->Update(shift @update_points) if $splash_screen;
     $routing->init_crossings;
     $splash_screen->Update(shift @update_points) if $splash_screen;
-    if ($use_pathentry && $scope =~ /^(city|berlin)$/) {
-	scan_zip_file();
+    if ($bbbike_suggest && $scope =~ /^(city|berlin)$/) {
+	$bbbike_suggest->set_zipfile($routing->init_zip->{File});
 	$splash_screen->Update(shift @update_points) if $splash_screen;
     }
     $splash_screen->Update(shift @update_points) if $splash_screen;
@@ -2098,54 +2098,54 @@ sub zoom_postdrawconfig {
     $master->coords("zoomrect", $tx1,$ty1,$tx2,$ty2);
 }
 
-sub scan_zip_file {
-    my $plz_file = $routing->init_zip->{File};
-    if (open(ZIP, $plz_file)) {
-	while(<ZIP>) {
-	    my $zip_firstch = lc substr($_, 0, 1);
-	    if (!exists $zip_firstch{$zip_firstch}) {
-		$zip_firstch{$zip_firstch} = tell(ZIP)-length($_);
-	    }
-	}
-	seek(ZIP,0,0);
-    } else {
-	warn "Can't open zip file $plz_file: $!";
-    }
-}
+# sub scan_zip_file {
+#     my $plz_file = $routing->init_zip->{File};
+#     if (open(ZIP, $plz_file)) {
+# 	while(<ZIP>) {
+# 	    my $zip_firstch = lc substr($_, 0, 1);
+# 	    if (!exists $zip_firstch{$zip_firstch}) {
+# 		$zip_firstch{$zip_firstch} = tell(ZIP)-length($_);
+# 	    }
+# 	}
+# 	seek(ZIP,0,0);
+#     } else {
+# 	warn "Can't open zip file $plz_file: $!";
+#     }
+# }
 
-sub get_street_choices {
-    my($w, $pathname) = @_;
-    return if $scope !~ /^(city|berlin)$/;
-    my $zip_firstch = lc substr($pathname, 0, 1);
-    if (exists $zip_firstch{$zip_firstch}) {
-	seek ZIP, $zip_firstch{$zip_firstch}, 0;
-    }
-    my $conv = sub {
-	my(@s) = split(/\|/,$_[0]);
-	if (defined $s[3] && $s[3] ne "") {
-	    "$s[0] ($s[1])";
-	} else {
-	    undef;
-	}
-    };
-    my @f;
-    local $_;
-    while(<ZIP>) {
-	if (/^\Q$pathname/i) {
-	    chomp;
-	    my $s = $conv->($_);
-	    push @f, $s if defined $s;
-	    last;
-	}
-    }
-    while(<ZIP>) {
-	chomp;
-	my $s = $conv->($_);
-	push @f, $s if defined $s && (!@f || $s ne $f[-1]);
-	last if @f >= 10;
-    }
-    \@f;
-}
+# sub get_street_choices {
+#     my($w, $pathname) = @_;
+#     return if $scope !~ /^(city|berlin)$/;
+#     my $zip_firstch = lc substr($pathname, 0, 1);
+#     if (exists $zip_firstch{$zip_firstch}) {
+# 	seek ZIP, $zip_firstch{$zip_firstch}, 0;
+#     }
+#     my $conv = sub {
+# 	my(@s) = split(/\|/,$_[0]);
+# 	if (defined $s[3] && $s[3] ne "") {
+# 	    "$s[0] ($s[1])";
+# 	} else {
+# 	    undef;
+# 	}
+#     };
+#     my @f;
+#     local $_;
+#     while(<ZIP>) {
+# 	if (/^\Q$pathname/i) {
+# 	    chomp;
+# 	    my $s = $conv->($_);
+# 	    push @f, $s if defined $s;
+# 	    last;
+# 	}
+#     }
+#     while(<ZIP>) {
+# 	chomp;
+# 	my $s = $conv->($_);
+# 	push @f, $s if defined $s && (!@f || $s ne $f[-1]);
+# 	last if @f >= 10;
+#     }
+#     \@f;
+# }
 
 sub _path_to_strassen {
     my($path_ref) = @_;
