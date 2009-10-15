@@ -13223,7 +13223,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_009603',
        data  => <<EOF,
-userdel	1::inwork 2186,9612 2122,9539 2046,9429 1932,9263
+userdel	1::inwork 2186,9612 2122,9539 2056,9446 1932,9263
 EOF
      },
      { from  => 1233088186, # 2009-01-27 21:29
@@ -13541,8 +13541,8 @@ EOF
        text  => 'Jessnerstr. wegen Bauarbeiten in Richtung Süden nicht befahrbar, bis Oktober 2009',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2009-09-26
-#: next_check: 2009-10-05
+#: last_checked: 2009-10-15
+#: next_check: 2009-11-01
 #: XXX nach Beendigung der Bauarbeiten bleibt wahrscheinlich die gesamte Straße asphaltiert, mit einigen Aufpflasterungen
 userdel	q4::inwork; 15080,11905 14977,11754 14941,11689 14849,11539
 EOF
