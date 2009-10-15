@@ -362,6 +362,9 @@ sub add_button {
 	      [Button => 'Search while type',
 	       -command => sub { tk_suggest() },
 	      ],
+	      [Button => 'Search while type (using BBBikeSuggest)',
+	       -command => sub { show_bbbike_suggest_toplevel() },
+	      ],
 	      [Cascade => 'Situation at point', -menuitems =>
 	       [
 		[Button => 'For three points',
@@ -1907,6 +1910,30 @@ sub visualize_N_RW_net {
     my $err = $@;
     main::DecBusy($main::top);
     main::status_message($err, "die") if $err;
+}
+
+######################################################################
+# BBBikeSuggest
+
+sub show_bbbike_suggest_toplevel {
+    require "$FindBin::RealBin/babybike/lib/BBBikeSuggest.pm";
+    require BBBikeRouting;
+    my $suggest = BBBikeSuggest->new;
+    $suggest->set_zipfile("$main::datadir/Berlin.coords.data");
+    my $t = $main::top->Toplevel(-title => 'Search street');
+    main::set_as_toolwindow($t);
+    my $w = $suggest->suggest_widget($t, -selectcmd => sub {
+					 my $w = shift;
+					 my $routing = BBBikeRouting->new->init_context;
+					 $routing->Start->Street($w->get);
+					 $routing->get_start_position;
+					 warn $routing->Start->Coord;
+					 main::mark_point(-coords => [[[ main::transpose(split /,/, $routing->Start->Coord) ]]],
+							  -clever_center => 1,
+							  -inactive => 1);
+				     });
+    $w->pack;
+    $w->focus;
 }
 
 1;
