@@ -1910,6 +1910,12 @@ sub advanced_coord_menu {
 	     $main::global_draw_gpsman_data_s = 0;
 	     BBBikeEdit::show_gps_track_mode();
 	 });
+    $bpcm->command
+	(-label => M"GPS-Track in GPS Data Viewer anzeigen",
+	 -command => sub {
+	     require BBBikeEdit;
+	     BBBikeEdit::show_gps_data_viewer_mode();
+	 });
     $bpcm->checkbutton
 	(-label => M"Bahn-Tracks bevorzugen",
 	 -variable => \$BBBikeEdit::prefer_tracks,
