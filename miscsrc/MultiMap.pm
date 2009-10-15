@@ -531,8 +531,12 @@ sub showmap_url_mapcompare {
     my $py = $args{py};
 
     my $scale = 17 - log(($args{mapscale_scale})/3000)/log(2);
-    sprintf "http://tools.geofabrik.de/mc/?mt0=googlehybrid&mt1=tah&lat=%s&lon=%s&zoom=%d",
-	$py, $px, $scale;
+    my $map0 = 'googlehybrid';
+    #my $map1 = 'tah';
+    #my $map1 = 'mapnik';
+    my $map1 = 'cyclemap';
+    sprintf 'http://tools.geofabrik.de/mc/?mt0=%s&mt1=%s&lat=%s&lon=%s&zoom=%d',
+	$map0, $map1, $py, $px, $scale;
 }
 
 sub showmap_mapcompare { start_browser(showmap_url_mapcompare(@_)) }
