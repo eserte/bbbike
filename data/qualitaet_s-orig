@@ -318,8 +318,8 @@ Mittelweg: Kopfsteinpflaster	Q3 12176,7811 12224,7799 12335,7770
 Karl-Marx-Platz/Richardplatz: Kopfsteinpflaster	Q2 12980,7597 13100,7626 13177,7644 13297,7654
 Karl-Marx-Platz/Richardplatz: Kopfsteinpflaster, OK	Q1 13297,7654 13423,7707
 Karl-Marx-Platz: Kopfsteinpflaster	Q2 12991,7549 13100,7626
-Richardplatz: Kopfsteinpflaster	Q2 13188,7590 13303,7622 13400,7642 13432,7649 13423,7707
-Richardstr.: Kopfsteinpflaster, OK	Q1 12792,8190 12870,8087 13085,7904 13103,7889 13150,7845 13226,7775 13245,7742 13297,7654 13303,7622 13336,7467 13345,7424 13369,7307
+Richardplatz: Kopfsteinpflaster	Q2 13188,7590 13303,7622 13400,7642 13426,7674 13423,7707
+Richardstr.: Kopfsteinpflaster, OK	Q1 12792,8190 12870,8087 13085,7904 13103,7889 13150,7845 13226,7775 13245,7742 13297,7654 13303,7622 13339,7452 13345,7424 13369,7307
 Alt-Rudow: Kopfsteinpflaster	Q2 16960,1282 16849,1437
 Fichtestr.: Kopfsteinpflaster, mit Teer gefugt	Q2+ 11108,9187 11060,9549
 Alt-Kladow: Kopfsteinpflaster, OK	Q1 -7170,4962 -7080,4896 -6947,4861 -6811,4893
@@ -1229,7 +1229,7 @@ Am Teltowkanal: feiner Schotter	Q1 3362,898 3304,832 3232,803
 Akeleiweg: Kopfsteinpflaster	Q2 17631,3200 17603,3240
 Winckelmannstr.: Kopfsteinpflaster Richtung Norden	Q2; 17465,3768 17468,3979
 Winckelmannstr.: Kopfsteinpflaster Richtung Süden	Q2; 17428,4503 17476,4337 17507,4216 17503,4148 17468,3979
-Zwiestädter Str.: Asphalt	Q0 13510,7535 13400,7642
+Zwiestädter Str.: Asphalt	Q0 13513,7532 13400,7642
 Am Orankesee: Parkweg	Q1 15856,15924 15703,15953 15581,15846 15484,15909 15479,16072
 Vorfahrt Reichstagsgebäude: Kopfsteinpflaster, OK	Q1 8400,12417 8399,12616
 Hagenauer Str.: Kopfsteinpflaster	Q2 11154,14985 11187,14763
@@ -2121,7 +2121,7 @@ Lissaer Str.: unbefestigte Straße	Q2 20349,10239 20536,10233 20711,10230
 Georg-Löwenstein-Str.: Asphalt	Q0 16030,9830 16156,9980 16191,10035
 (Rummelsburger Bucht - Georg-Löwenstein-Str.): Asphalt	Q0 16000,9784 16030,9830
 Karl-Wilker-Str.: Asphalt	Q0 15952,10134 16156,9980
-Erich-Müller-Str.: Asphalt	Q0 16030,9830 15831,9968
+Erich-Müller-Str.: Asphalt	Q0 16030,9830 15874,9938 15831,9968
 Viehtrift: Asphalt	Q0 14130,12926 14029,12954 14015,12958 13886,12995
 Am Viehhof: Verbundsteinpflaster	Q1+ 14015,12958 13979,12861
 Zur Waage: Asphalt	Q0 14029,12954 14067,13050
@@ -2620,8 +2620,8 @@ Werdauer Weg: Asphalt	Q0 6774,7755 6691,7633
 Werdauer Weg: Beton	Q0- 6691,7633 6693,7556 6654,7465 6580,7401 6505,7381
 (Fredersdorfer Str. - Hildegard-Jadamowitz-Str.): Beton	Q1 12923,12043 12893,12077 12883,12118 12908,12280
 Am Pankepark: Beton	Q1 8184,14052 8290,14119
-Am Pankepark: Verbundsteinpflaster	Q1 8290,14119 8246,14201
-Am Pankepark: noch unbefestigt, Schotter	Q2- 8246,14201 8138,14148
+Am Pankepark: Verbundsteinpflaster	Q1 8290,14119 8246,14184
+Am Pankepark: noch unbefestigt, Schotter	Q2- 8246,14184 8152,14130
 Stendaler Platz: überwiegend Asphalt	Q0 6394,14085 6489,14071
 Karl-Marx-Allee - Hildegard-Jadamowitz-Str.: unbefestigter und holpriger Parkplatz	Q2 12950,12340 12985,12303
 Hinter dem Zeughaus: kleinteiliges Kopfsteinpflaster	Q1 9842,12506 9950,12522
@@ -4526,7 +4526,7 @@ Grimmelshausenstr.: Verbundsteinpflaster	Q1 -8293,4915 -8281,4929 -8204,5103 -80
 (Grimmelshausenstr. - Pegnitzweg/Wickramstr.): Waldweg	Q2 -8080,5356 -8050,5560
 #: by: ^^^
 #: by: kathrin wenkel:
-Burgemeisterstr.: schlechtes holpriges Kopfsteinpflaster	Q3 9348,5665 9160,5689 8974,5708 8787,5727 8710,5735 8617,5745 8375,5766 8279,5794 8226,5809
+Burgemeisterstr.: schlechtes holpriges Kopfsteinpflaster	Q3 9365,5662 9160,5689 8974,5708 8787,5727 8710,5735 8617,5745 8375,5766 8279,5794 8226,5809
 #: by: Christoph Oelmüller: vvv
 Knesebeckstr. (Zehlendorf): Kopfsteinpflaster	Q2 1104,2328 1209,2371
 Knesebeckstr. (Zehlendorf): Asphalt	Q0 1209,2371 1320,2418 1392,2606
@@ -5480,7 +5480,7 @@ Wachsmuthstr.: Kopfsteinpflaster, nur 13km/h	Q3 3750,23363 3939,23345 4021,23330
 #: by: André Maier:
 Langenbeckstr.: fester Sandweg, nur 13km/h	Q3 24688,9918 24793,9860 25004,9737
 #: by: Christina Hopmann:
-Hattenheimer Str. (Tempelhof): Asphalt	Q0 11590,6026 11656,6182 11651,6192 11628,6240
+Hattenheimer Str. (Tempelhof): Asphalt	Q0 11590,6026 11650,6157 11651,6192 11628,6240
 #: by: Volkmar (vloebe):
 Riastr.: schlechtes Kopfsteinpflaster	Q3 18201,8984 18247,9158
 #: by: TCBerlin:
@@ -6197,7 +6197,7 @@ Blunckstr.: guter Beton	Q0 5429,19165 5502,19162 5571,19178 5601,19204 5609,1923
 #: XXX: anonymer Kommentar für die gesamte Straße, von Andreas nur zwischen Wittekindstr. und Tedamm
 Friedrich-Wilhelm-Str.: Asphalt	Q0 8282,5909 8385,5907
 #: corrected_by: srt (schlecht -> mäßig, zumindest der westliche Abschnitt)
-Friedrich-Wilhelm-Str.: Kopfsteinpflaster	Q2 8385,5907 8622,5867 8801,5844 8988,5821 9176,5803 9364,5784 9670,5728
+Friedrich-Wilhelm-Str.: Kopfsteinpflaster	Q2 8385,5907 8622,5867 8801,5844 8988,5821 9176,5803 9378,5773 9670,5728
 #: by: Thomas Pörs:
 Drachenfelsstr.: guter Asphalt	Q0- 18945,8547 18951,8574 18956,8618 18945,8660 18927,8702 18899,8744 18857,8790
 #: by: Andrea Kliche: vvv
@@ -6754,7 +6754,7 @@ Prötzeler Ring: Asphalt/Beton	Q0 21951,15918 21980,15857 22055,15698 22092,15610
 Trappenfelder Pfad: Asphalt/Beton	Q0 22092,15610 22101,15601 22076,15276 22061,15168 22059,15153
 #: by: ^^^
 #: by: Thomas Lützen-Johannsen:
-Haberechtstr.: guter Asphalt	Q0 11656,6182 11768,6159
+Haberechtstr.: guter Asphalt	Q0 11650,6157 11768,6159
 #: by: Katrin Kabisch:
 Reihersteg: mäßiges Kopfsteinpflaster	Q2 22471,-591 22462,-671 22458,-742 22451,-927 22442,-1093
 #: by: peters (p y):

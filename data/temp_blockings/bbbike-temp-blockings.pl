@@ -3266,7 +3266,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'INKO_77722',
        data  => <<EOF,
-userdel	1 12693,16700 12857,16627 13104,16522
+userdel	1 12713,16682 12857,16627 13104,16522
 EOF
      },
      { from  => 1138319651, # 2006-01-27 00:54
@@ -5665,7 +5665,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'INKO_77722',
        data  => <<EOF,
-userdel	1::inwork 12693,16700 12857,16627 13104,16522
+userdel	1::inwork 12713,16682 12857,16627 13104,16522
 EOF
      },
      { from  => 1156976256, # 2006-08-31 00:17
@@ -7857,7 +7857,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005266',
        data  => <<EOF,
-userdel	2::inwork 9670,5728 9457,5641 9357,5601 9147,5534
+userdel	2::inwork 9670,5728 9457,5641 9368,5608 9147,5534
 EOF
      },
      { from  => undef, # 
@@ -8960,7 +8960,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.berlin.de/ba-pankow/presse/archiv/20070703.1505.81257.html',
        data  => <<EOF,
-userdel	1::inwork 12693,16700 12604,16731 12486,16791 12257,16876 12241,16900
+userdel	1::inwork 12667,16699 12604,16731 12486,16791 12257,16876 12241,16900
 EOF
      },
      { from  => 1183704492, # 2007-07-06 08:48
@@ -9272,7 +9272,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006204',
        data  => <<EOF,
-userdel	2::inwork 9357,5601 9147,5534
+userdel	2::inwork 9368,5608 9147,5534
 EOF
      },
      { from  => 1186869600, # 2007-08-12 00:00
@@ -10812,7 +10812,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006024',
        data  => <<EOF,
-userdel	1::inwork 12257,16876 12486,16791 12604,16731 12693,16700
+userdel	1::inwork 12257,16876 12486,16791 12604,16731 12667,16699
 EOF
      },
      { from  => 1201647600, # 2008-01-30 00:00
@@ -11976,7 +11976,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_009406',
        data  => <<EOF,
-userdel	2::inwork 9357,5601 9147,5534 8955,5549 8870,5557 8767,5571
+userdel	2::inwork 9368,5608 9147,5534 8955,5549 8870,5557 8767,5571
 EOF
      },
      { from  => 1216504800, # 2008-07-20 00:00
@@ -12694,7 +12694,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_010086',
        data  => <<EOF,
-userdel	1::inwork 9789,5767 9670,5728 9457,5641 9357,5601
+userdel	1::inwork 9789,5767 9670,5728 9457,5641 9368,5608
 EOF
      },
      { from  => 1223320675, # 2008-10-06 21:17
@@ -12900,7 +12900,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_010086',
        data  => <<EOF,
-userdel	1::inwork 9357,5601 9147,5534
+userdel	1::inwork 9368,5608 9147,5534
 EOF
      },
      { from  => 1226267441, # 2008-11-09 22:50
@@ -13563,7 +13563,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_012064',
        data  => <<EOF,
-userdel	q4::inwork; 9457,5641 9357,5601 9147,5534
+userdel	q4::inwork; 9457,5641 9368,5608 9147,5534
 EOF
      },
      { from  => 1238954845, # 2009-04-05 20:07
@@ -13710,7 +13710,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_012244',
        data  => <<EOF,
-userdel	q4::inwork 9457,5641 9357,5601 9147,5534
+userdel	q4::inwork 9457,5641 9368,5608 9147,5534
 EOF
      },
      { from  => 1243371742, # 2009-05-26 23:02
