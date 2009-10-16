@@ -4340,7 +4340,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'LMS_1146113785841',
        data  => <<EOF,
-userdel	2 9098,12687 9209,12795
+userdel	2 9098,12687 9117,12705 9209,12795
 userdel	2 9280,12883 9209,12795
 EOF
      },
@@ -10795,7 +10795,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_007651',
        data  => <<EOF,
-userdel	1::inwork 10309,12854 10264,12826 10171,12769
+userdel	1::inwork 10309,12854 10264,12826 10166,12777
 EOF
      },
      { from  => 1198018800, # 2007-12-19 00:00
@@ -14913,18 +14913,20 @@ userdel	2::inwork 12383,-99327 12173,-99115
 EOF
      },
      { from  => 1248200556, # 2009-07-21 20:22
-       until => 1257030000, # 2009-11-01 00:00
-       text  => 'Fahrbahn der Mauerstr. wegen Bauarbeiten bis Oktober 2009 gesperrt ',
+       until => undef, # was 1257030000, 2009-11-01 00:00, bis Oktober 2009, but seems to be more work...
+       text  => 'Fahrbahn der Mauerstr. wegen Bauarbeiten gesperrt ',
        type  => 'handicap',
        data  => <<EOF,
+#: last_checked: 2009-10-16
 userdel	q4::inwork 9405,11413 9331,11497
 EOF
      },
      { from  => 1248200777, # 2009-07-21 20:26
-       until => 1254348000, # 2009-10-01 00:00
-       text  => 'Bauarbeiten in der Mohrenstraße, Fahrbahn bis September 2009 gesperrt ',
+       until => undef, # was 2009-10-01 00:00, 1254348000, bis September 2009, but seems to be more work...
+       text  => 'Bauarbeiten in der Mohrenstraße, Fahrbahn gesperrt ',
        type  => 'handicap',
        data  => <<EOF,
+#: last_checked: 2009-10-16
 userdel	q4::inwork 9418,11804 9220,11781
 EOF
      },
@@ -14933,7 +14935,7 @@ EOF
        text  => 'Die Charlottenstraße ist wegen Bauarbeiten eine Einbahnstraße Richtung Süden',
        type  => 'handicap',
        data  => <<EOF,
-#: next_check: 2009-09-27
+#: last_checked: 2009-10-16
 userdel	q4::inwork; 9475,12365 9462,12481 9454,12558
 EOF
      },
@@ -16023,7 +16025,7 @@ EOF
        permanent => 1,
        data  => <<EOF,
 	q4::temp 9754,12775 9661,12876 9618,12907 9529,12925
-	q4::temp 9912,12623 9950,12522 9984,12426
+	q4::temp 9919,12613 9950,12522 9984,12426
 EOF
      },
      { from  => 1253224800, # 2009-09-18 00:00

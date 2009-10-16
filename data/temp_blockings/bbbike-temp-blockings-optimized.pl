@@ -927,21 +927,31 @@ userdel	2::inwork 7160,11225 6851,11346
          'type' => 'gesperrt'
        },
        {
-         'until' => 1257030000,
-         'text' => 'Fahrbahn der Mauerstr. wegen Bauarbeiten bis Oktober 2009 gesperrt ',
+         'until' => undef,
+         'text' => 'Fahrbahn der Mauerstr. wegen Bauarbeiten gesperrt ',
          'from' => 1248200556,
          'id' => 1761,
-         'data' => 'userdel	q4::inwork 9405,11413 9331,11497
+         'data' => '#: last_checked: 2009-10-16
+userdel	q4::inwork 9405,11413 9331,11497
 ',
          'type' => 'handicap'
        },
-       undef,
+       {
+         'until' => undef,
+         'text' => 'Bauarbeiten in der Mohrenstraße, Fahrbahn gesperrt ',
+         'from' => 1248200777,
+         'id' => 1762,
+         'data' => '#: last_checked: 2009-10-16
+userdel	q4::inwork 9418,11804 9220,11781
+',
+         'type' => 'handicap'
+       },
        {
          'until' => undef,
          'text' => 'Die Charlottenstraße ist wegen Bauarbeiten eine Einbahnstraße Richtung Süden',
          'from' => undef,
          'id' => 1763,
-         'data' => '#: next_check: 2009-09-27
+         'data' => '#: last_checked: 2009-10-16
 userdel	q4::inwork; 9475,12365 9462,12481 9454,12558
 ',
          'type' => 'handicap'
@@ -1477,7 +1487,7 @@ userdel	q4::inwork; 10829,18083 10907,18109 10938,18147 10989,18172 11137,18358 
          'from' => undef,
          'id' => 1887,
          'data' => '	q4::temp 9754,12775 9661,12876 9618,12907 9529,12925
-	q4::temp 9912,12623 9950,12522 9984,12426
+	q4::temp 9919,12613 9950,12522 9984,12426
 ',
          'type' => 'gesperrt'
        },
@@ -1507,16 +1517,7 @@ userdel	q4::inwork; 10829,18083 10907,18109 10938,18147 10989,18172 11137,18358 
          'type' => 'handicap'
        },
        undef,
-       {
-         'source_id' => 'IM_014217',
-         'until' => 1255643999,
-         'text' => 'Bahnhofstr. (Pankow) in beiden Richtungen zwischen Mönchmühler Str. und Bahnübergang (ehemaliger Bahnhof Blankenfelde) Baustelle, Straße vollständig gesperrt (bis Mitte 10.2009)',
-         'from' => 1253730664,
-         'id' => 1898,
-         'data' => 'userdel	q4::inwork 8909,23506 8803,23478 8626,23432
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'source_id' => 'IM_014235',
@@ -1669,15 +1670,7 @@ userdel	q4::inwork; 10829,18083 10907,18109 10938,18147 10989,18172 11137,18358 
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1255644000,
-         'text' => 'L 412 Bad Saarow - Alt Golm OD Neu Golm Einbau Deckschicht Vollsperrung 12.10.2009-15.10.2009 ',
-         'from' => 1255212000,
-         'id' => 1929,
-         'data' => 'userdel	q4::inwork 57225,-10700 57371,-10550 57479,-10535 57752,-10566 57882,-10535 58018,-10573
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => 1256943600,
