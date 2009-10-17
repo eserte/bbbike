@@ -32,7 +32,6 @@ patch\.gz$
 # private common files
 \.ok2cgi$
 \.copynewer.SKIP$
-\.spp$
 ^\.permissions$
 \.rcsignore(_rx)?$
 # bbbike specific
@@ -46,6 +45,7 @@ patch\.gz$
 ^data/.*\.inx\d+$
 ^data/.*\.lock$
 ^README.admin$
+^README.tt$
 ^CRASH/
 ^cache\b
 ^cdrom/
@@ -75,6 +75,7 @@ patch\.gz$
 ^Bundle/make_small_pi_osd$
 ^Bundle/make_windist_bundle$
 \bbbbike-advanced.pod$
+^bench/
 ^misc/
 ^miscsrc/
 ^port/
