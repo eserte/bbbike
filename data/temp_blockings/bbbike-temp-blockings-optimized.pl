@@ -1807,21 +1807,22 @@ userdel	2::inwork 3314,15782 3564,16294
 ',
          'type' => 'gesperrt'
        },
+       undef,
        {
-         'until' => 1255921200,
-         'text' => 'Sperrungen an der Kreuzung Karl-Marx-Allee/Otto-Braun-Straße einschließlich Grunerstraße bis Alexanderstraße, 16.10.2009, 19.00 Uhr bis 19.10.2009, 05.00 Uhr ',
-         'from' => 1255539600,
-         'id' => 1950,
+         'until' => 1256529600,
+         'text' => 'Sperrungen an der Kreuzung Karl-Marx-Allee/Otto-Braun-Straße einschließlich Grunerstraße bis Alexanderstraße, 23.10.2009, 19.00 Uhr bis 26.10.2009, 05.00 Uhr ',
+         'from' => 1256144400,
+         'id' => 1951,
          'data' => 'userdel	2::inwork 11275,13026 11228,12951 11134,12793
 userdel	3 11139,13008 11228,12951 11295,12915
 ',
          'type' => 'gesperrt'
        },
        {
-         'until' => 1256529600,
-         'text' => 'Sperrungen an der Kreuzung Karl-Marx-Allee/Otto-Braun-Straße einschließlich Grunerstraße bis Alexanderstraße, 23.10.2009, 19.00 Uhr bis 26.10.2009, 05.00 Uhr ',
-         'from' => 1256144400,
-         'id' => 1951,
+         'until' => 1257134400,
+         'text' => 'Sperrungen an der Kreuzung Karl-Marx-Allee/Otto-Braun-Straße einschließlich Grunerstraße bis Alexanderstraße, 30.10.2009, 19.00 Uhr bis 2.11.2009, 05.00 Uhr ',
+         'from' => 1256752800,
+         'id' => 1952,
          'data' => 'userdel	2::inwork 11275,13026 11228,12951 11134,12793
 userdel	3 11139,13008 11228,12951 11295,12915
 ',

@@ -16549,8 +16549,8 @@ EOF
 userdel	2::inwork 30781,60566 30784,60950 30960,61370 31147,61555 31880,61589 32748,62327
 EOF
      },
-     { from  => 1255539600, # 2009-10-14 19:00
-       until => 1255921200, # 2009-10-19 05:00
+     { from  => 1255812887, # 2009-10-14 19:00 1255539600
+       until => 1255812894, # 2009-10-19 05:00 1255921200 verschoben um eine Woche!
        text  => 'Sperrungen an der Kreuzung Karl-Marx-Allee/Otto-Braun-Straße einschließlich Grunerstraße bis Alexanderstraße, 16.10.2009, 19.00 Uhr bis 19.10.2009, 05.00 Uhr ',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -16561,6 +16561,15 @@ EOF
      { from  => 1256144400, # 2009-10-21 19:00
        until => 1256529600, # 2009-10-26 05:00
        text  => 'Sperrungen an der Kreuzung Karl-Marx-Allee/Otto-Braun-Straße einschließlich Grunerstraße bis Alexanderstraße, 23.10.2009, 19.00 Uhr bis 26.10.2009, 05.00 Uhr ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 11275,13026 11228,12951 11134,12793
+userdel	3 11139,13008 11228,12951 11295,12915
+EOF
+     },
+     { from  => 1256752800, # 2009-10-28 19:00
+       until => 1257134400, # 2009-11-02 05:00
+       text  => 'Sperrungen an der Kreuzung Karl-Marx-Allee/Otto-Braun-Straße einschließlich Grunerstraße bis Alexanderstraße, 30.10.2009, 19.00 Uhr bis 2.11.2009, 05.00 Uhr ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 11275,13026 11228,12951 11134,12793

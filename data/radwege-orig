@@ -1296,7 +1296,7 @@ Gehweg für Radfahrer freigegeben	RW1; 21576,5733 21470,5809 21365,5832 21303,582
 Gehweg für Radfahrer freigegeben	RW1;RW1 21576,5733 21603,5698 21608,5690 21709,5543 21789,5427
 	RW1;RW1 21789,5427 21954,5229
 Die letzten Meter sind benutzungspflichtig	RW3; 10755,13152 10920,13139
-Die Radspur hört einige Meter vor der Ampel auf	RW4?; 10920,13139 10755,13152
+Die Radspur hört einige Meter vor der Ampel auf	RW3; 10920,13139 10755,13152
 	RW4;RW4 13867,9864 13884,9882
 	RW7;RW7 10001,9234 10123,9233 10547,9233
 #: by: G. Chill:
@@ -2213,3 +2213,12 @@ Gemeinsamer Rad- und Gehweg, die letzten 50 Meter getrennter Rad- und Gehweg	RW2
 	RW6;RW6 15641,10198 15716,10303 15753,10353
 Nur ein angedeuteter Radweg, ohne Schild und Markierungen	RW0; 18286,11275 18343,11041
 Nur ein angedeuteter Radweg, ohne Schild und Markierungen	RW0; 18286,11275 18228,11656
+	RW6;RW6 11057,12715 11030,12741 11007,12773
+	RW6;RW6 10077,13100 10022,13286
+10er-Zone	RW6;RW6 10317,13248 9982,13411
+10er-Zone	RW6;RW6 10022,13286 9982,13411 9961,13502
+#: by: Tsp, http://auguststrasse-berlin-mitte.de/
+#: XXX generell die gesamte Spandauer Vorstadt auf Tempo 10 prüfen; auch die Almstadtstr. wurde erwähnt!
+10er-Zone	RW6;RW6 10263,13594 10142,13556 10049,13528 10026,13521 9961,13502 9898,13484 9651,13406
+#: by: http://www.stadtentwicklung.berlin.de/verkehr/mobil/fahrrad/radrouten/de/nordspange/route.shtml
+	RW7;RW7 14934,15860 15305,15858 15395,15852 15453,15848
