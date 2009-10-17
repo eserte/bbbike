@@ -505,6 +505,9 @@ Lappiner Str.	1 20418,12699 20545,12683
 Rathenauplatz	1 2366,9664 2360,9754 2369,9779 2445,9838 2415,9765 2394,9714 2366,9664
 Metzplatz	1 9390,5870 9370,5880 9363,5903 9373,5927 9400,5938 9419,5926 9425,5896 9411,5873 9390,5870
 Hamburger Platz	1 12670,16675 12667,16685 12667,16699 12678,16711 12691,16711 12705,16708 12712,16695 12713,16682 12702,16668 12686,16667 12670,16675
+Lüttichauweg	1 18596,10675 18537,10663 18519,10707 18512,10744 18509,10757 18506,10769 18481,10870 18530,10887
+Enckevortweg	1 18530,10887 18570,10768 18587,10716 18596,10675
+Schulze-Boysen-Str./Frankfurter Allee	1 15597,11957 15592,11881 15738,11851
 Am Neuen Garten	1 -12166,1384 -12212,1201 -12276,831 -12302,718 -12323,635 -12332,585 -12582,127
 Leistikowstr.	1 -12512,810 -12302,718
 Hochstraße	3nocross::ignrte -11399,-1339 -11461,-1424 -11540,-1543
@@ -873,8 +876,8 @@ Rummelsburger Str. -> Mentelinstr.: wegen Überführung nicht überquerbar	3::igndi
 Mittelstreifen nicht passierbar	3nocross::ignrte 4469,8037 4659,7982 4793,7992
 Detmolder Str. -> Aachener Str.: Mittelstreifen nicht passierbar	3::igndisp 4572,7936 4659,7982 4609,8013
 Aachener Str. -> Detmolder Str.: Mittelstreifen nicht passierbar	3::igndisp 4609,8013 4659,7982 4793,7992
-Straßenbahntrasse	3nocross::ignrte 18215,12132 18216,12262 18220,12450
-Rhinstr. -> Kolonie Friedrichsfelde Nord: Straßenbahntrasse	3::igndisp 18215,12132 18216,12262 18180,12262
+Straßenbahntrasse	3nocross::ignrte 18215,12132 18216,12239 18216,12262 18220,12450
+Rhinstr. -> Kolonie Friedrichsfelde Nord: Straßenbahntrasse	3::igndisp 18216,12239 18216,12262 18180,12262
 Kolonie Friedrichsfelde Nord -> Rhinstr.: Straßenbahntrasse	3::igndisp 18180,12262 18216,12262 18220,12450
 Straßenbahntrasse	3nocross::ignrte 19628,13517 19726,13524 19807,13529 19837,13531 19894,13535 20097,13549
 Allee der Kosmonauten -> Langhoffstr.: Straßenbahntrasse	3::igndisp 19726,13524 19807,13529 19821,13604

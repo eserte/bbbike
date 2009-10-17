@@ -16538,7 +16538,7 @@ EOF
        text  => 'Verkehreinschränkungen in der Magdalenenstraße und am Roedeliusplatz bis Mai 2010, Einbahnstraßenregelung in Fahrtrichtung Normannenstraße ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork; 16159,12301 16158,12191
+userdel	q4::inwork; 16159,12301 16158,12191 16127,11950
 EOF
      },
      { from  => 1255384800, # 2009-10-13 00:00

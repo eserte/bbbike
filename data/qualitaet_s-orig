@@ -115,7 +115,7 @@ Türrschmidtstr.: glattes Kopfsteinpflaster	Q1- 15279,10862 15353,10870 15435,108
 Türrschmidtstr.: mäßiges Kopfsteinpflaster	Q2 15540,10887 15649,10922 15738,10962
 Giselastr.: mäßiges Kopfsteinpflaster	Q2 16345,11328 16311,11226 16273,11113 16227,10991
 Emanuelstr.: Kopfsteinpflaster	Q2 16316,10755 16349,10860 16374,10946
-Zobtener Str.: Fahrweg, Schotter	Q2 16539,10097 16157,10342 15758,10578
+Zobtener Str.: Asphalt	Q0 16539,10097 16157,10342 15758,10578
 Zobtener Str.: sandig	Q2 16734,9990 16811,9937
 Wielandstr.: Asphalt	Q0 23470,9403 23428,9301 23374,9172 23342,9095 23289,8993 23171,8835
 Wielandstr.: schlechtes Kopfsteinpflaster	Q3 23171,8835 23099,8726 23003,8582
@@ -199,14 +199,16 @@ Kohlfurter Str.: Kopfsteinpflaster, OK	Q1- 11512,10105 11464,10102 11274,10184 1
 Archibaldweg: Kopfsteinpflaster	Q2 16160,11154 16028,11049
 Münsterlandstr./Delbrückstr.: Kopfsteinpflaster	Q2 16160,11154 16273,11113 16381,11080 16494,11046 16573,11022 16697,10984 16790,10955 16864,10932
 Delbrückstr.: teilweise schlechtes Kopfsteinpflaster	Q3 16864,10932 16964,10902 17088,10864 17166,10840
-Sophienstr.: Kopfsteinpflaster	Q2 16918,11176 16869,11190 16777,11216 16653,11251 16568,11272 16468,11297 16345,11328
+Sophienstr.: Asphalt	Q0 16918,11176 16869,11190
+Sophienstr.: Kopfsteinpflaster	Q2- 16869,11190 16777,11216 16653,11251 16568,11272 16468,11297 16345,11328
 Müggelstr.: Asphalt	Q0 14764,11591 14837,11706
 Weserstr. (Friedrichshain): Kopfsteinpflaster	Q2 15016,11431 14849,11539
 Weserstr. (Friedrichshain): Asphalt	Q0 14849,11539 14764,11591 14710,11626
 Weserstr. (Friedrichshain): Kopfsteinpflaster	Q2 14710,11626 14645,11670 14622,11685 14550,11732 14471,11782 14416,11815
 Finowstr.: Kopfsteinpflaster	Q2 14622,11685 14708,11820 14783,11949 14836,12045 14854,12137
 Glatzer Str.: Kopfsteinpflaster	Q2 14577,11582 14645,11670
-Wiesenweg (Lichtenberg): Kopfsteinpflaster	Q2 15477,11338 15303,11412 15227,11429 15162,11458 15055,11505
+Wiesenweg (Lichtenberg): Kopfsteinpflaster	Q2 15477,11338 15303,11412 15227,11429 15162,11458
+Wiesenweg (Lichtenberg): Asphalt	Q0 15162,11458 15055,11505
 Wartenbergstr. (Lichtenberg): Kopfsteinpflaster	Q2 15227,11429 15328,11636 15418,11662
 Tasdorfer Str.: Asphalt	Q0 15303,11412 15359,11524 15377,11555 15393,11590
 Tasdorfer Str. - Wilhelm-Guddorf-Str.: Gehwegpflasterung	Q0 15393,11590 15418,11662
@@ -1918,10 +1920,8 @@ Kraetkestr. (Friedrichsfelde): Kopfsteinpflaster	Q2 17466,10941 17458,10986 1750
 Eggersdorfer Str.: Kopfsteinpflaster	Q2 17317,11289 17259,11093
 Eggersdorfer Str.: Beton	Q1 17259,11093 17222,10936 17228,10860
 Bietzkestr.: Kopfsteinpflaster	Q2 17259,11093 17172,11101 17062,11130
-Bietzkestr.: Asphalt	Q0 17062,11130 16967,11162
-#: add_fragezeichen: Qualität der Lincolnstr. zwischen Einbecker und Zachertstr.?
-Lincolnstr.: Kopfsteinpflaster	Q2 17341,11595 17242,11304
-Lincolnstr.: Kopfsteinpflaster	Q2 17242,11304 17172,11101 17088,10864 17081,10806
+Bietzkestr.: Asphalt	Q0 17062,11130 16967,11162 16918,11176
+Lincolnstr.: Kopfsteinpflaster	Q2 17341,11595 17245,11312 17172,11101 17088,10864 17081,10806
 Margaretenstr.: Kopfsteinpflaster	Q2+ 16649,11497 16723,11470
 Margaretenstr.: Asphalt	Q0 16723,11470 16852,11430 16936,11409 17006,11386 17070,11375
 Metastr.: Asphalt	Q0- 17006,11386 17056,11497 17103,11606
@@ -2663,6 +2663,14 @@ Am Krähenberg: Beton	Q0 -1630,20086 -1927,20118 -2055,20129 -2205,20141
 Klamannstr.: Beton	Q0 5870,18387 5845,18435 5856,18569 5992,18651 6009,18755
 #: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20090925.0930.140105.html
 Kienhorststr.: Beton	Q0 4085,18694 4171,18677 4340,18636 4472,18603 4637,18595 4756,18589 5324,18560 5543,18555
+Gisèle-Freund-Hain: Kopfsteinpflaster	Q2+ 15874,9938 15842,9891
+Elfriede-Tygör-Str.: asphaltiert	Q0 18105,10997 18295,11032
+(Elfriede-Tygör-Str. - Am Tierpark): asphaltiert	Q0 18295,11032 18343,11041
+Criegernweg: schadhafter Asphalt	Q2 18417,10738 18509,10757
+Lüttichauweg: schadhafter Asphalt	Q2 18530,10887 18481,10870 18506,10769 18509,10757 18512,10744 18519,10707 18537,10663 18596,10675
+Enckevortweg: schadhafter Asphalt	Q2 18598,10661 18596,10675 18587,10716 18570,10768 18530,10887 18520,10913
+Hülsenplatz: Gehwegplatten	Q1+ 18512,10744 18545,10752 18542,10762 18538,10774 18506,10769
+Hülsenplatz: Gehwegplatten	Q1+ 18542,10762 18570,10768
 ######################### User Contributions #################################
 #: by: Dominik Seelow vvv
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
@@ -3132,7 +3140,7 @@ Riedemannweg: Asphalt	Q0 4248,15647 4389,15336
 #: note: widersprüchliche Angaben!
 Haßfurter Weg: mäßiger Asphalt	Q1 11835,18301 11796,18482
 Erlenweg: mäßiger Asphalt	Q1 -3327,18007 -3228,18103
-Zachertstr.: Beton	Q0 17070,11375 17153,11342 17242,11304 17317,11289 17500,11252 17588,11234 17725,11228 17834,11229 17853,11201
+Zachertstr.: Beton	Q0 17070,11375 17153,11342 17245,11312 17317,11289 17500,11252 17588,11234 17725,11228 17807,11219 17853,11201
 Belziger Ring: Asphalt	Q0 22215,17784 22059,17842 21931,17818 21882,17748 21968,17714 21995,17754 22148,17687
 Blesener Zeile: Asphalt	Q0 3214,20629 3395,20660
 Moorweg: Asphalt	Q0 3137,22088 3081,22048 2990,22018 2868,21945 2824,21896 2783,21773 2696,21648 2635,21559 2621,21538 2522,21494 2404,21445
@@ -6574,7 +6582,7 @@ Zeißpfad: Verbundsteinpflaster	Q1+ 10962,103 10903,263 10895,284 10866,364 10827
 #: by: Klemens Lange:
 Alsenstr. (Steglitz): Asphalt	Q0 5560,6344 5558,6319 5416,6119
 #: by: Antje (utefeldwebel):
-Bürgerheimstr.: gutes Kopfsteinpflaster	Q1- 16317,11920 16326,11966 16359,12207
+Bürgerheimstr.: gutes Kopfsteinpflaster	Q1- 16326,11966 16359,12207
 #: by: Petra Scheffler: vvv
 Zitadellenweg: schlechtes Kopfsteinpflaster	Q3 -2597,14532 -2594,14571 -2264,14584
 Zitadellenweg: Asphalt	Q0 -1993,14594 -1768,14605 -1616,14527 -1567,14494
@@ -10288,7 +10296,8 @@ Schwabenplatz: Sandweg	Q2 21307,9591 21253,9547 21291,9507 21343,9546 21307,9591
 Erich-Kunz-Str.: Beton	Q0- 18354,10600 18345,10575 18285,10550 18232,10532 18150,10543 18120,10532 18104,10482
 Erich-Kunz-Str.: Beton	Q0- 18285,10550 18332,10434 18342,10384 18326,10362 18264,10343
 Franz-Mett-Str.: Beton	Q0- 18446,10620 18397,10608 18354,10600 18325,10606
-Franz-Mett-Str.: Beton	Q0- 18059,11248 18105,10997 18117,10933 18198,10864 18296,10754 18368,10763 18408,10774
+#: corrected_by: srt (Beton -> Asphalt)
+Franz-Mett-Str.: Asphalt, mit Schäden	Q1 18059,11248 18105,10997 18117,10933 18198,10864 18296,10754 18368,10763 18408,10774
 Franz-Mett-Str.: Beton	Q0- 18368,10763 18397,10608
 #: by: ^^^
 #: by: Matha Wimmer [AM] vvv

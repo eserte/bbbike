@@ -122,18 +122,14 @@ Wollankstr.: Angebotsstreifen werden bis Herbst 2011 eingerichtet	?::inwork 9549
 #
 #: section ignorieren vvv
 #: section Straßen in Planung vvv
-#: last_checked: 2009-09-27
-#: next_check: 2009-12-31
-Rhinstr.: Radwegsituation nach den Bauarbeiten prüfen	?::inwork 18234,13500 18220,12450 18216,12262 18215,12132
+#: last_checked: 2009-10-17
+Rhinstr.: Radwegsituation Richtung Süden nach den Bauarbeiten prüfen	?::inwork; 18234,13500 18220,12450 18216,12262 18216,12239 18215,12132
 #: by: http://www.potsdam.de/cms/beitrag/10050631/757395/
 #: XXX wo wird die Verbindung genauer entlanggeführt?
 Neuer Garten: Planung einer Radwegverbindung zwischen Gotischer Bibliothek und Alleestr.	?::inwork -12265,-418 -12262,-362 -12328,-212 -12331,-131 -12412,-118 -12450,-34 -12557,11
 #: XXX Zugleich Benennung von "Alter Markt" (im Gegensatz zum auch vorhandenen "Am Alten Markt") in der Gegend
 Humboldtstr. (Potsdam): alte Straße wird hier wieder benannt	?::inwork -12771,-1633 -12766,-1598
 #: by: MoPo 2009-08-01, soll 2009 realisiert werden vvv
-#: last_checked: 2009-08-28
-#: next_check: 2009-10-05
-Zobtener Str.: Asphaltierung steht an	? 16539,10097 16157,10342 15758,10578
 Alter Fischweweg: gemeinsamer Geh- und Radweg	? 30087,5448 30244,6615 30307,6823
 Radwegeverbindung am U-Bhf. Johannisthaler Chaussee, gegenüber Kirschnerweg	? 13869,2658 13807,2863
 #: last_checked: 2009-08-04
@@ -147,8 +143,8 @@ Radwegbau Welzower Steig	? 6320,21777 6223,21952 6257,22005 6111,22155 6082,2218
 Radverbindung zwischen Bernhard-Lichtenberg-Str. und Goerdelerdamm	? 3174,14253 3229,14224
 Asphaltierung gemeinsamer Geh- und Radweg (Schönholzer Heide)	? 7857,19693 7849,19614 7940,19521 8170,19308 8334,19157 8359,19162
 Alt-Biesdorf (nördliche Seite): Bau von Radwegen	?; 22242,11269 21960,11269 21860,11278 21750,11319 21624,11379 21398,11482 21311,11528
-#: next_check: 2009-10-05 (nach den Bauarbeiten)
-Allee der Kosmonauten: Bau von Radwegen	? 19173,13478 19059,13474 18875,13467 18783,13469 18234,13500 18017,13509 17793,13452 17688,13430
+#: last_checked: 2009-10-17
+Allee der Kosmonauten: Bau von Radwegen oder -streifen	? 19173,13478 19059,13474 18875,13467 18783,13469 18234,13500
 #: by ^^^
 #: by: MoPo 2009-08-01, soll 2010 realisiert werden vvv
 #: next_check: 2010-03-01 vvv
@@ -171,7 +167,7 @@ Teilestr.: Radverkehrsanlagen	? 10254,5921 10404,5969 10526,6008 10614,6047 1078
 Fürstenwalder Allee: Bau von Radverkehrsanlagen	? 29713,4456 29813,4314 29850,4288 29901,4264 29959,4235 30210,4046 30351,3939 30456,3794 30518,3753 30650,3698 31139,3497 31366,3404 31447,3372 31632,3297 31863,3257 31999,3234 32829,3105 33111,3064 33593,2893
 #: next_check ^^^
 #: by: ^^^
-#: next_check: 2009-10-01
+#: last_checked: 2009-10-16
 Mohrenstr.: evtl. nach den Bauarbeiten Q0?	? 9418,11804 9220,11781
 #: next_check: 2009-07-15
 Berliner Str.: nach den Bauarbeiten vielleicht asphaltiert?	? 12479,17811 12736,17998
@@ -2401,12 +2397,7 @@ Olpererweg: Qualität?	? 10950,3602 10866,3611
 Schareckstr.: Qualität?	? 10866,3611 10841,3441
 Straße 483: Qualität?	? 10841,3441 10925,3425
 Pohligstr.: Qualität?	? 8969,3074 9000,3065
-Criegernweg: Qualität?	? 18417,10738 18509,10757
-Lüttichauweg: Qualität? Ist die Straße eine Einbahnstraße? Wenn ja, gilt die Einbahnstraßenregelung nur für Autofahrer oder auch für Radfahrer?	? 18530,10887 18481,10870 18506,10769 18509,10757 18512,10744 18519,10707 18537,10663 18596,10675
-Enckevortweg: Qualität? Ist die Straße (außer in den Sackgassen) eine Einbahnstraße? Wenn ja, gilt die Einbahnstraßenregelung nur für Autofahrer oder auch für Radfahrer?	? 18598,10661 18596,10675 18587,10716 18530,10887 18520,10913
-Hülsenplatz: Qualität? Offen für Autos?	? 18512,10744 18545,10752 18538,10774 18506,10769
-#: XXX_indoor: fehlende Nebenfahrbahnen für die Netzverknüpfung einzeichnen!
-Köpitzer Str.: Qualität?	? 18272,11552 18390,11597 18381,11655
+Köpitzer Str.: Qualität?	? 18409,11348 18392,11420 18317,11402 18272,11552 18390,11597 18381,11655 18557,11660
 Am Karpfenpfuhl: Qualität?	? 2253,2689 2358,2669 2539,2748
 Möllerpfad: Qualität?	? 2396,2485 2394,2558 2358,2669
 Gütlingstr.: Qualität?	? 2590,2485 2564,2630 2561,2683 2539,2748
@@ -3167,9 +3158,6 @@ Kurze Str. (Potsdam): Qualität?	? -11635,-2414 -11475,-2454
 Kolonie Daheim (Potsdam): Qualität?	? -11487,-2373 -11472,-2406 -11475,-2454 -11481,-2525 -11487,-2618 -11466,-2698 -11437,-2748 -11203,-2868
 Kolonie Daheim (Potsdam): Qualität?	? -11481,-2525 -11595,-2635
 Nuthewinkel: Qualität?	? -11194,-2790 -11203,-2868 -11162,-3047
-Bietzkestr.: beginnt der asphaltierte Abschnitt der Bietzkestr. bereits hinter der Sophienstr. oder erst ab Marie-Curie-Allee?	? 16967,11162 16918,11176
-#: XXX missing in Berlin.coords.data
-Elfriede-Tygör-Str.: Qualität?	? 18105,10997 18295,11032
 Brascheweg: Qualität? Kann man als Radfahrer zur Treskowallee fahren und diese auch überqueren?	? 18881,9865 18810,9850
 Rolandseck: Qualität zwischen Waldowallee und Köpenicker?	? 18977,9322 19020,9364
 Johannes-Zoschke-Str. - Römerweg: Radfahren möglich? Qualität?	? 19037,9636 19042,9708
@@ -3794,7 +3782,6 @@ Schäferstege - Parkanlage: Existiert eine Verbindung? Qualität? Nachts beleuchte
 Georgenstr. (Blankenburg): Qualität?	? 14263,20352 14294,20412 14309,20486 14320,20580 14328,20644 14304,20682 14236,20773 14091,20962
 #: XXX asphaltierter Radweg auf der nördlichen/östlichen Seite, nicht ganz sicher bei der Lage
 Buckow - Lichterfelde: wo genau ist der Radweg?	? 31634,53303 32692,53191 32718,53044 32856,52150 33002,51944
-Rhinstr.: existiert ein Radweg zwischen Seddiner Str. und Alt-Friedrichsfelde?	?; 18215,12132 18220,11710
 Kraetkestr.: Qualität?	? 23941,12779 23943,12804 23951,12879 23955,12910 23962,12973 23989,13170 24018,13380
 Kainzstr.: Qualität?	? 24236,13295 24203,13133
 #: XXX benötigt Eintrag in str_cont_ausnahme:
@@ -3861,7 +3848,5 @@ Siebenendenweg: Qualität? Ist die gesamte Straße für Autos gesperrt?	? 404,3970 
 #: XXX laut MoPo früher fertig:
 #: next_check: 2009-09-30
 Eberswalder Str.: Existieren bereits Radwege zwischen Schönhauser Allee und Topsstraße? Falls ja: sind die Radwege benutzungspflichtig?	?::inwork 10618,15076 10881,15047
-#: XXX fehlt in Berlin.coords.data
-Gisèle-Freund-Hain: Qualität?	? 15874,9938 15842,9891
 #: XXX und außerdem könnte man bis Ostseestr. verlängern!
 Kuglerstr. oder Prenzlauer Allee: wie ist dieser Straßenabschnitt ausgeschildert? Befindet sich hier eine Einbahnstraße?	? 12030,15968 12154,15902

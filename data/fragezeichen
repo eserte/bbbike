@@ -1511,11 +1511,7 @@ Olpererweg: Qualität?	? 10950,3602 10866,3611
 Schareckstr.: Qualität?	? 10866,3611 10841,3441
 Straße 483: Qualität?	? 10841,3441 10925,3425
 Pohligstr.: Qualität?	? 8969,3074 9000,3065
-Criegernweg: Qualität?	? 18417,10738 18509,10757
-Lüttichauweg: Qualität? Ist die Straße eine Einbahnstraße? Wenn ja, gilt die Einbahnstraßenregelung nur für Autofahrer oder auch für Radfahrer?	? 18530,10887 18481,10870 18506,10769 18509,10757 18512,10744 18519,10707 18537,10663 18596,10675
-Enckevortweg: Qualität? Ist die Straße (außer in den Sackgassen) eine Einbahnstraße? Wenn ja, gilt die Einbahnstraßenregelung nur für Autofahrer oder auch für Radfahrer?	? 18598,10661 18596,10675 18587,10716 18530,10887 18520,10913
-Hülsenplatz: Qualität? Offen für Autos?	? 18512,10744 18545,10752 18538,10774 18506,10769
-Köpitzer Str.: Qualität?	? 18272,11552 18390,11597 18381,11655
+Köpitzer Str.: Qualität?	? 18409,11348 18392,11420 18317,11402 18272,11552 18390,11597 18381,11655 18557,11660
 Am Karpfenpfuhl: Qualität?	? 2253,2689 2358,2669 2539,2748
 Möllerpfad: Qualität?	? 2396,2485 2394,2558 2358,2669
 Gütlingstr.: Qualität?	? 2590,2485 2564,2630 2561,2683 2539,2748
@@ -2207,8 +2203,6 @@ Kurze Str. (Potsdam): Qualität?	? -11635,-2414 -11475,-2454
 Kolonie Daheim (Potsdam): Qualität?	? -11487,-2373 -11472,-2406 -11475,-2454 -11481,-2525 -11487,-2618 -11466,-2698 -11437,-2748 -11203,-2868
 Kolonie Daheim (Potsdam): Qualität?	? -11481,-2525 -11595,-2635
 Nuthewinkel: Qualität?	? -11194,-2790 -11203,-2868 -11162,-3047
-Bietzkestr.: beginnt der asphaltierte Abschnitt der Bietzkestr. bereits hinter der Sophienstr. oder erst ab Marie-Curie-Allee?	? 16967,11162 16918,11176
-Elfriede-Tygör-Str.: Qualität?	? 18105,10997 18295,11032
 Brascheweg: Qualität? Kann man als Radfahrer zur Treskowallee fahren und diese auch überqueren?	? 18881,9865 18810,9850
 Rolandseck: Qualität zwischen Waldowallee und Köpenicker?	? 18977,9322 19020,9364
 Johannes-Zoschke-Str. - Römerweg: Radfahren möglich? Qualität?	? 19037,9636 19042,9708
@@ -2734,7 +2728,6 @@ Schäferstege: Qualität?	? 13403,20686 13380,20811 13366,20897
 Schäferstege - Parkanlage: Existiert eine Verbindung? Qualität? Nachts beleuchtet?	? 13366,20897 13332,20898 13298,20917 13244,20903
 Georgenstr. (Blankenburg): Qualität?	? 14263,20352 14294,20412 14309,20486 14320,20580 14328,20644 14304,20682 14236,20773 14091,20962
 Buckow - Lichterfelde: wo genau ist der Radweg?	? 31634,53303 32692,53191 32718,53044 32856,52150 33002,51944
-Rhinstr.: existiert ein Radweg zwischen Seddiner Str. und Alt-Friedrichsfelde?	?; 18215,12132 18220,11710
 Kraetkestr.: Qualität?	? 23941,12779 23943,12804 23951,12879 23955,12910 23962,12973 23989,13170 24018,13380
 Kainzstr.: Qualität?	? 24236,13295 24203,13133
 Sudermannstr.: Qualität?	? 25189,12661 25126,12710 24978,12793 24833,12874 24603,13003 24502,13049 24417,13083 24335,13102 24203,13133 24118,13148 23989,13170
@@ -2790,7 +2783,6 @@ Lauchstädter Weg: Qualität?	? 15952,719 15872,902 15804,1061 15758,1179 15699,12
 Pirnaer Str.: Qualität?	? 16042,772 15970,954 15935,1043 15901,1120
 Siebenendenweg: Qualität? Ist die gesamte Straße für Autos gesperrt?	? 404,3970 21,4434 -62,4564
 Eberswalder Str.: Existieren bereits Radwege zwischen Schönhauser Allee und Topsstraße? Falls ja: sind die Radwege benutzungspflichtig?	?::inwork 10618,15076 10881,15047
-Gisèle-Freund-Hain: Qualität?	? 15874,9938 15842,9891
 Kuglerstr. oder Prenzlauer Allee: wie ist dieser Straßenabschnitt ausgeschildert? Befindet sich hier eine Einbahnstraße?	? 12030,15968 12154,15902
 # added from ampeln-orig
 #: add_fragezeichen: Existiert die Ampel Nordufer/Torfstr. noch?
@@ -2884,7 +2876,6 @@ Haydnstr.: Kopfsteinpflaster (wie ist die Qualität der Haydnstr.?)	? 4521,4484 4
 Marienhöher Weg: Kopfsteinpflaster (mäßiges oder schlechtes Kopfsteinpflaster?)	? 8353,5188 8185,5195 8009,5000 7913,4996 7873,5024 7851,5125 7944,5237
 Nalepastr.: Betonstr., Eisenbahnschienen (stimmt das?)	? 17043,7512 17211,7265
 Zeppelinstr.: kleinteiliges, unebenes Kopfsteinpflaster (ist der Abschnitt der Zeppelinstr. zwischen Triniusstr. und Firlstr. asphaltiert oder gepflastert?)	? 18682,6615 18417,6775
-Lincolnstr.: Kopfsteinpflaster (Qualität der Lincolnstr. zwischen Einbecker und Zachertstr.?)	? 17341,11595 17242,11304
 Kohlweißlingstr.: Verbundsteinpflaster (Qualität: Verbundsteinpflaster oder Asphalt?)	? 21723,10920 21765,10834
 Distelfalterstr.: Verbundsteinpflaster (Qualität: Verbundsteinpflaster oder Asphalt?)	? 21723,10920 21605,10866
 Gerhard-Winkler-Weg: Kopfsteinpflaster (tatsächlich Kopfsteinpflaster?)	? 17338,1336 17293,1309

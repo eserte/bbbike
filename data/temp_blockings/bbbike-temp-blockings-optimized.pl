@@ -1794,7 +1794,7 @@ userdel	2::inwork 3314,15782 3564,16294
          'text' => 'Verkehreinschränkungen in der Magdalenenstraße und am Roedeliusplatz bis Mai 2010, Einbahnstraßenregelung in Fahrtrichtung Normannenstraße ',
          'from' => 1255468338,
          'id' => 1948,
-         'data' => 'userdel	q4::inwork; 16159,12301 16158,12191
+         'data' => 'userdel	q4::inwork; 16159,12301 16158,12191 16127,11950
 ',
          'type' => 'handicap'
        },
