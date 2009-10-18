@@ -16630,4 +16630,13 @@ EOF
 	2::temp 19071,2746 19136,2673 19207,2592
 EOF
      },
+     { from  => undef, #
+       until => undef, #
+       text  => 'Uferweg am Schloß Bellevue: kann bei Staatsbesuchen gesperrt sein',
+       type  => 'gesperrt',
+       permanent => 1,
+       data  => <<EOF,
+	2::temp 6694,12627 7039,12314
+EOF
+     },
     );

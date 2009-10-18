@@ -1887,6 +1887,16 @@ userdel	q4::inwork; 9574,12578 9601,12380
          'data' => '	2::temp 19071,2746 19136,2673 19207,2592
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => undef,
+         'permanent' => 1,
+         'text' => 'Uferweg am Schloß Bellevue: kann bei Staatsbesuchen gesperrt sein',
+         'from' => undef,
+         'id' => 1959,
+         'data' => '	2::temp 6694,12627 7039,12314
+',
+         'type' => 'gesperrt'
        }
      
 );

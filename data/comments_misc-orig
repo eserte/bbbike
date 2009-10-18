@@ -1,9 +1,31 @@
 #:# -*- coding: iso-8859-1 -*-
 #: title: sonstige Kommentare
+#
+# z.B.: * "ausgeschildert als"
+#       * Richtungsangabe, z.B. in Wäldern oder bei
+#         unübersichtlichen Straßennamensbezeichnungen
+#         (Potsdamer Platz, Nollendorfplatz)
+#       * Orientierungshinweise ("entlang der
+#         Autobahn", "schwierig zu finden")
+#       * Warnhinweise (z.B. reduzierte Höhe,
+#         Glas auf dem Radweg, Bodenschwellen). Warnungen vor
+#         "subjektiv" gefährlichen Stellen wandern nach
+#         comments_danger. Allerdings wird comments_danger
+#         noch *nicht* im CGI angezeigt, und im Perl/TK
+#         defaultmäßig ebenfalls nicht.
+#       * Informationen zur Straßenlage
+#         (z.B. Privatstraße, Krankenhausgelände)
+#       * populäre Informationen ("Fahrbahn vor der britischen
+#         Botschaft für Autos gesperrt")
+#       * ungewöhnliche Verkehrssituation ("Radfahren durch den
+#         Park erlaubt")
+#       * Kreisverkehr (mit cat=Roundabout)
+# 
 #:
 als Zionskirchstr. ausgeschildert	CS 10306,14247 10389,14274
 als Zionskirchstr. ausgeschildert	CS 10306,14247 10277,14350 10315,14386 10365,14372 10389,14274
 Unterführung ist nur 2,10m hoch	CS 21306,-975 21393,-871
+#: XXX_indoor kann das hier verschoben werden?
 Einbahnstr., aber Radweg vorhanden	CS; 23109,30968 23103,30923 22922,30640
 Gillweg: entlang der Autobahn	CS 2585,9653 2484,9671 2394,9714
 Bismarckplatz: als Hubertusallee ausgeschildert	CS; 2348,9398 2380,9402
@@ -32,18 +54,19 @@ Richtung S-Bhf.	CP2; -4001,2858 -3956,2787
 Richtung Teufelssee/Saubucht	CP2; -3475,6780 -3418,6747
 ausgeschildert Richtung Breitenbachplatz	CP2; 3349,7361 3374,7322
 als Ganghoferstr. ausgeschildert	CP2; 12960,8246 12918,8232
+#: XXX_prog: sollte besser als eine Art gerichteter BNP dargestellt werden
 Sredzkistr. - Christburger Str.: Drängelgitter auf dem Mittelstreifen	CP 11526,14693 11642,14625 11920,14468
+#: XXX_prog: sollte besser als eine Art gerichteter BNP dargestellt werden
 Christburger Str. - Pasteurstr.: Drängelgitter auf dem Mittelstreifen	CP 11920,14468 12188,14321 12307,14246
 Sellin - Benz: schwierig zu findender Waldweg	CS 53932,172900 53868,172725 53906,172550 53574,172367 53383,171931 53203,171896 52806,171507
+#: add_fragezeichen: Ist das Tor permanent geöffnet?
 Tor (Sperrung möglich?)	CP 58324,164202
 Alternativ auch Fahrt auf dem Lärmschutzwall möglich	CS 17557,17999 16990,18694
 Keine Straße ausgeschildert, am Bahndamm halten	CS; 12645,11673 12596,11696
-Am Schloß Bellevue: kann bei Staatsbesuchen gesperrt sein	CS 6694,12627 7039,12314
+#XXX del now in temp_blockings: Am Schloß Bellevue: kann bei Staatsbesuchen gesperrt sein	CS 6694,12627 7039,12314
 Paralleler Uferweg an der Spree nur über zwei Treppen erreichbar	CS 10300,12587 10355,12551 10411,12471 10422,12395
-# XXX: gibt es noch Veranstaltungen hier?
-#vor der Columbiahalle: häufig Glasscherben auf dem Radweg	CS 9571,8706 9801,8683
+# XXX gibt es noch Veranstaltungen hier? #vor der Columbiahalle: häufig Glasscherben auf dem Radweg	CS 9571,8706 9801,8683
 unter der S-Bahnbrücke: Glassplitter	CS 6184,20550 6298,20599
-Brandenburger Str.: im Volksmund auch Broadway genannt	CS -12784,-956 -12894,-977 -13005,-1002 -13173,-1039 -13289,-1071 -13410,-1101 -13556,-1140
 Hegelstr.: Ausweichmöglichkeit auf Nebenstraße mit Kopfsteinpflaster oder grünen Mittelstreifen mit Parkweg	CS -13625,-902 -13468,-847 -13433,-831 -13231,-763 -13137,-728 -13067,-706 -12878,-665
 Kreisverkehr	Roundabout 60197,12001
 Kreisverkehr	Roundabout 61156,11478
@@ -57,21 +80,26 @@ Kreisverkehr	Roundabout 25069,35558
 Kreisverkehr	Roundabout 26302,-11712
 #: by: Marita:
 (Waldweg über den Beyschlagtunnel): bei Regen Rutschgefahr	CS 332,22372 742,22666
-# nicht mehr (by Bernd Szczepanski): Beim Überqueren der Blaschkoallee müssen Bordsteine überwunden werden	CP 13162,5382 13112,5253 13039,5122
 Privatstraße der DB	CS 5710,7820 6275,7847
+#: add_fragezeichen: wird der Albrecht-Thaer-Weg manchmal geschlossen?
 Albrecht-Thaer-Weg: Privatstraße, evtl. nicht geöffnet	CS 3347,6460 3449,6863
-Zimmermannstr. (Steglitz): Pfähle und Treppe mit Rampe in der Mitte	CS 4957,5894 4981,5939 5013,6003
+#: add_fragezeichen: wird dieser Weg tatsächlich nachts geschlossen?
 (Weg über das Sportgelände): evtl. nachts geschlossen	CS 13252,14179 13375,13986
 Borgmannstr.: Bodenschwellen, rechs vorbei fahren	CS 22513,5747 22531,5871
-Hermann-Blankensteinstr.: Tor für Kfz evtl. geschlossen, auf Gehweg ausweichen	CS 13886,13668 13858,13719
+Hermann-Blankenstein-Str.: Tor für Kfz evtl. geschlossen, auf Gehweg ausweichen	CS 13886,13668 13858,13719
 Georg-Wilhelm-Str.: 3 Bodenschwellen, rechts vorbei fahren	CS 2708,10245 2691,10047
+#: XXX_prog: doubled in gesperrt_orig, but needs implementation in Perl/Tk version
 Carionweg: Kette	CS 3382,9223 3370,9215
+#: XXX_prog: doubled in gesperrt_orig, but needs implementation in Perl/Tk version
 Sesselmannweg: Kette	CS 3264,9261 3332,9181
+#: XXX_prog: should be superseded by a superiour BNP-like implementation vvv
 (Waitzstr. - Lewishamstr.): Bordsteine	CS 3800,10580 3739,10576
 Sybelstr.: Bordsteine	CS 3739,10576 3712,10566
 Apeldorner Weg: Bordsteine	CP; * 3848,8689 3868,8759
 Apeldorner Weg: Bordsteine	CP; * 3932,8989 3868,8759
+#: XXX_prog: ^^^
 Apeldorner Weg: kein Straßenname ausgeschildert; Weg verläuft westl. direkt an der BAB (104)	CS 3848,8689 3868,8759 3932,8989
+#: XXX_prog: should be superseded by a superiour BNP-like implementation
 (Wallenbergstr. - Rudolstätter Str.): Bordsteine	CP; * 4029,8482 4139,8485
 Virchowweg: Gelände der Charité	CS 8548,13577 8503,13553 8379,13457 8371,13399 8434,13310 8596,13086 8628,13033
 Hufelandweg: Gelände der Charité	CS 8503,13553 8554,13476 8504,13441 8538,13388 8582,13355 8618,13306 8631,13159 8632,13133 8596,13086
@@ -80,9 +108,10 @@ Sauerbruchweg: Gelände der Charité	CS 8487,13351 8631,13159
 (Luisenstr. - Hufelandweg): Gelände der Charité	CS 8665,13353 8582,13355
 (Reichsstr. - Westendallee): Privatstraße	CS 269,12576 151,12541
 (Guerickestr. - Einsteinufer): Privatstraße	CS 4642,12275 4711,12411
+#: XXX_prog: trailer=no implementation missing
 Stromstr: kann über schmale Furt (keine Anhänger!) gequert werden	CS 6218,12975 6190,12978 6165,12985 6106,12989
 Am Wriezener Bahnhof: Privatstraße zu diversen Märkten	CS 12794,11893 12953,11727
-#: XXX_prog wird irgendwann mal zu "BS" vvv
+#: XXX_prog should be superseded by a superiour BNP-like implementation/wird irgendwann mal zu "BS" vvv
 Bordstein	CP 12054,12903 11983,12949 11921,12990
 Bordstein	CP2; 12483,12682 12594,12866
 #: XXX_prog ^^^
@@ -96,22 +125,20 @@ Ausgeschildert: Puschkinallee 6c, 6d	CP2; 13995,9834 14076,10011
 Durch Toreinfahrt (immer offen)	CP2; 14043,10928 14093,10909
 als Sackgasse ausgeschildert	CP2; 14680,10758 14564,10792
 Radfahren durch den Park erlaubt	CS 6542,1674 6679,1734 6848,1809
+#: XXX_indoor: vielleicht nach comments_kfzverkehr verschieben?
 Kein MIV-Durchgangsverkehr, nur Anlieger	CS -13036,342 -12947,106 -12862,-27
 #: by: Ingrid Beese:
 Teltower Weg: nicht ausgeschildert	CP2; -107,5880 -174,5941
 Kreisverkehr	Roundabout 19907,12501
 Röntgentaler Weg: durch den Schloßpark	CS 16166,25767 16532,26174
-(Autobahnzubringer): Fahrbahn ist Kfz-Straße	CS 18036,2531 18503,2449
+(Autobahnzubringer): Fahrbahn ist Kraftfahrzeugstraße	CS 18036,2531 18503,2449
 #: by: Karin Millonig
 (In den Gärten - Hochspannungsweg): Privatweg	CS 11713,1622 11689,1687 11709,1761 11659,1943
 Privatweg, Durchfahrt eigentlich verboten, aber möglich	CS 19726,11743 19750,11730 19827,11686 19881,11591
-#: by: Petra-Maria Grell [AM]
-Titiseestr.: starker Busverkehr	CS 5098,22326 5140,22342 5237,22345 5376,22350 5429,22359 5485,22396 5517,22432 5517,22487 5484,22564 5423,22685
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/presse/archiv/20060505.1315.39412.html
 Dreipfuhlpark: Freigegeben für Radfahrer	CS 1536,3780 1523,3904 1520,4006 1524,4054 1548,4168 1608,4313 1670,4477 1692,4575 1682,4607 1689,4630 1698,4653
 #: by: Kay-Uwe Ludwig [AM]
 Seefelder Str.: Schranken, für Radler gut passierbar	CS 17341,16136 17344,16081
-Paul-Koenig-Str. / Wartenbergerstr.: Vorsicht Straßenbahn	CS 17446,16393
 #: by: Daniel Weber [AM] vvv
 (Malteser Str. - Hanielweg): Geschützte Grünanlage, Radfahren verboten	CS 7451,1818 7534,1818 7562,1796
 (Parkweg Trippsteinstr. - Sondershauser Str.): Geschützte Grünanlage, Radfahren verboten	CS 6762,1226 6700,1184 6667,1189 6596,1198 6528,1207 6501,1207 6481,1210 6406,1218
@@ -149,7 +176,7 @@ DB-Gelände: bei starken Regenfällen regelmäßig eine große und tiefe Pfütze, die 
 Straße 77: die Straße ist nicht ausgeschildert	CS 15402,12390 15315,12360
 #: by: antje weiss dorn:
 Drosselbartweg: Radfahren erlaubt	CS 13899,18833 13909,18835 13953,18842 13967,18842 13993,18833 14061,18791 14206,18700 14218,18674 14222,18666
-(Seeburger Str./Seecktstr. - Bullengraben): Zufahrt über Supermarktparkplart	CS; -4299,13304 -4354,13377
+(Seeburger Str./Seecktstr. - Bullengraben): Zufahrt über Supermarktparkplatz	CS; -4299,13304 -4354,13377
 #: by: Ralf Henze vvv
 #: note: das gilt für alle Straßen von R bis Z vvv
 Straße R: Privatstraße, Höchstgeschwindigkeit 20 km/h	CS -198,16187 -629,16546 -698,16603 -786,16666
@@ -181,6 +208,7 @@ Wall am Kiez: Hausdurchfahrt	CP2; -13331,-1802 -13394,-1771
 Tegeler Weg: Alternativ kann der Spreeuferweg genutzt werden	CS 3164,13067 3143,13175 3123,13274 3080,13459 3038,13612
 #: by: trixi (putsch):
 #: note: genau hier: 19221,9499
+#: XXX_indoor: gehört das nach comments_scenic? Oder hilft es bei der Orientierung hier?
 Neuwieder Str.: schöner alter Eichenbaum als Verkehrsinsel mitten auf der Straße	CS 19221,9517 19206,9243
 Hintersee - Rieth: ehemalige Bahnstrecke	CS 66282,136950 66202,137084 66069,137327 65959,137807 65703,138610 65662,138670 65539,138759 65158,138985 65012,139133 64954,139218 64942,139340 64853,139518 64530,140051 63831,141136 63825,141282 63941,141456 64137,141564 64424,141639 64605,141761 64847,142064 65056,142373 65262,142830 65493,143395 65540,143487 65592,143522
 #: by: Sara Köhler: vvv
@@ -192,9 +220,10 @@ Tordurchfahrt	CS 9341,6163 9367,6160
 (Am Nuthetal - Wetzlarer Str.): Weg entlang der Straßenbahntrasse	CS -9544,-3913 -9531,-3917 -9461,-3879 -9440,-3872 -9391,-3864 -9328,-3871 -9276,-3891 -9240,-3912 -9217,-3897 -9186,-3853 -9157,-3842 -9134,-3851 -9114,-3846 -9064,-3866 -9047,-3889
 (Wetzlarer Str. - Stern-Center): Weg entlang der Schnellstraße	CS -8970,-3923 -8975,-3946 -8708,-4025 -8687,-4015 -8634,-4035 -8579,-4074 -8448,-4098 -8324,-4087 -8096,-4106 -8038,-4093
 An den Haselbüschen: Sackgasse, kein Durchgang zur Daumstr.	CS; -1273,15539 -1291,15580 -1402,15592
+#: XXX_indoor: sollte das nach handicap_s wandern bzw. durch die Bordstein-Implementation behandelt werden?
 Pfähle und hohe Bordsteine	CP2 2211,4280 2254,4376
 Uferweg am Plötzensee	CS 5618,14981 5518,15236 5291,15424 5050,15643 5084,15415 5018,15228
-(Wintgensstr. - General-Pape-Str.): eine mögliche Route über das ehem. Werksgelände	CS 7950,7840 8140,7845 8140,7906 8207,7909
+#XXX del komischer Kommentar: (Wintgensstr. - General-Pape-Str.): eine mögliche Route über das ehem. Werksgelände	CS 7950,7840 8140,7845 8140,7906 8207,7909
 (Im Schäferfeld - Wetzlarer Str.): am Baggersee entlang	CS -8563,-3805 -8562,-3849 -8661,-3971 -8982,-3860 -9002,-3896 -8970,-3923
 (Eichborndamm - General-Woyna-Str.): Weg parallel zur S-Bahn-Trasse	CS 4232,18981 4285,18983 4353,18986 4475,18998 4577,19009
 #: by: Tom Urig
@@ -219,6 +248,7 @@ ausgeschildert als "Zur Gerkrathstr."	CP2; -3368,2415 -3290,2420
 ausgeschildert als "Köllnischer Platz"	CP2; 21796,4517 21775,4470
 ausgeschildert als "Köllnischer Platz"	CP2; 21796,4517 22071,4501
 #: by: Dennis Lucke-Schenk:
+#: XXX_indoor: Kandidat für comments_danger? Aber erst, wenn überall sichtbar.
 Kambergstr. - Mauerweg: Achtung, scharfkantiges Metallteil in der Erde, Gefahr einer Reifenpanne	CS 11677,-58 11746,-62
 Moor: Achtung, schlechte Ausschilderung der Radroute! Nicht in die Sackgasse fahren!	CP; 55650,109962 55319,109799 55318,109732 55317,109697
 Zum Uferweg: als Privatweg gekennzeichnet	CP2; 4751,13245 4742,13157
