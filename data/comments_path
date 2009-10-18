@@ -9,7 +9,7 @@ bereits an der Kreuzung An der Urania/Kurfürstenstr. die Straßenseite wechseln	P
 bereits an der Kreuzung Sachsendamm/Dominicusstr./Ebersstr. die Straßenseite wechseln	PI; 6935,8208 7005,8150 7268,8225
 am Domäne-Markt Richtung Hochbahnhof Hallesches Tor abbiegen	CP; 9536,10064 9579,10122 9599,10175
 Fußgängerampel am Spittelmarkt zum Wechseln der Straßenseite benutzen, zwischen den Hochhäusern zur Axel-Springer-Str.	CP; 10240,11740 10213,11728 10153,11666
-Straßenseite an der Fußgängerampel Yorckstr./Katzbachstr. wechseln	CP; 8773,9524 8648,9526 8595,9495
+auf linken Gehweg fahren, Straßenseite an der Fußgängerampel Yorckstr./Katzbachstr. wechseln	CP; 8773,9524 8648,9526 8595,9495
 von der Brandenburgischen in die Paderborner: bereits an der Ampel Zähringerstr. auf den linken Gehweg wechseln	PI; 3930,9919 3906,10035 3720,9996
 Treptower Str./Sonnenallee: Ampel an der Hertzbergstr. benutzen	CP; 13478,8095 13459,8072 13376,7970
 Treptower Str./Sonnenallee: Ampel an der Hertzbergstr. benutzen	CP; 13376,7970 13459,8072 13478,8095
@@ -20,11 +20,11 @@ Zugang durch Betonabsperrung	CP2; 21222,12501 21122,12549
 am Gartenbauamt abbiegen	CP2; 7663,11946 7570,11855
 Schillerstr. Richtung Ernst-Reuter-Platz: zunächst linken Gehweg bis zur Ampel am Ernst-Reuter-Platz benutzen	CP; 4579,11579 4892,11621 4842,11679
 Hardenbergstr. - Schillerstr.: bereits an der Knesebeckstraße auf den linken Gehweg wechseln	PI; 4917,11592 4892,11621 4579,11579
-Torstr. => Weydemeyerstr.: bereits am Mollknoten die Straßenseite wechseln	PI; 11170,13475 11108,13513 11079,13492
+Torstr. - Weydemeyerstr.: bereits am Mollknoten die Straßenseite wechseln	PI; 11170,13475 11108,13513 11079,13492
 Zossener - Brachvogelstr.: bereits an der Fußgängerampel Waterlooufer Straßenseite wechseln	PI; 9865,10227 9858,10199 9884,10192
 Zossener - Brachvogelstr.: bereits an der Johanniterstr. vom Radstreifen auf den Gehweg wechseln	PI; 9837,10117 9858,10199 9884,10192
-Wendeschleife der Straßenbahn links umfahren	CP; 22965,4124 23368,3894 23652,3722 23684,3702 24101,3447
-Potsdamer Str. - Am Karlsbad: auf linken Gehweg wechseln	PI; 7980,11070 7968,11048 8011,11014
+Wendeschleife der Straßenbahn links umfahren	CP; 22965,4124 23368,3894 23652,3722
+Potsdamer Str. - Am Karlsbad: bereits am Schöneberger Ufer auf linken Gehweg wechseln	PI; 7980,11070 7968,11048 8011,11014
 Am Karlsbad - Potsdamer Str.: entweder Fußgängerampel am Schöneberger Ufer oder an der Lützowstr. benutzen	CP; 8011,11014 7968,11048 7912,10945
 Otto-Braun-Str. - Wadzeckstr.: bereits am Alexanderplatz die Straßenseite wechseln	PI; 11228,12951 11275,13026 11298,13063 11368,13170 11326,13196
 Sachsendamm - Südkreuz: frühzeitig (z.B. an der Hedwig-Dohm-Str.) auf den linken Radweg wechseln	PI; 7600,7605 7696,7562 7716,7625
@@ -48,7 +48,7 @@ Münchener Str., über Hohenstaufenstr.: Fußgängerampel auf der rechten Seite zum 
 Münchener Str., Richtung Martin-Luther-Str.: Fußgängerampel auf der linken Seite benutzen	CP; 6210,9833 6209,9772 6241,9772
 Hohenstaufenstr. zur Münchener Str.: frühzeitig Fußgängerampel nach links benutzen	PI; 6241,9772 6209,9772 6227,9531
 Münchener Str. zur Nachodstr.: Fußgängerampel auf der rechten Seite benutzen	CP; 6227,9531 6209,9772 6108,9772
-Thomas-Dehler-Str. => Stülerstr.: nach dem Abbiegen zunächst auf dem linken Gehweg bleiben	CP; 6654,11460 6716,11439 6825,11486
+Thomas-Dehler-Str. - Stülerstr.: nach dem Abbiegen zunächst auf dem linken Gehweg bleiben	CP; 6654,11460 6716,11439 6825,11486
 Gervinusstr./Lewishamstr.: linken Gehweg bis zur Ampel an der Mommsenstr. benutzen	CP; 3839,10904 3631,10784 3644,10759
 Tiergarten: rechts des Neuen Sees halten	CP; 5901,11902 5890,11865 5870,11842
 Tiergarten: links des Neuen Sees halten	CP; 5901,11902 5890,11865 5933,11775
@@ -58,44 +58,32 @@ Am Volkspark: zum Überqueren der Bundesallee Ampel an der Hildegarstr. (rechts) 
 Am Volkspark: zum Überqueren der Bundesallee Ampel an der Hildegarstr. (links) benutzen	CP; 5669,8207 5444,8406 5320,8456
 Bundesallee - Am Volkspark: bereits an der Durlacher Str. die Straßenseite wechseln	PI; 5421,8337 5444,8406 5320,8456
 Am Volkspark - Bundesallee: zunächst den linken Gehweg der Bundesallee benutzen	CP; 5669,8207 5444,8406 5421,8337
-Lietzenburger Str. - Rankestr.: bereits an der Ampel Joachimstaler Str. auf den linken Gehweg wechseln	PI; 5468,10442 5529,10453 5578,10529 5636,10626
-weiter auf Uferweg	CP; 6334,14756 5991,14832 5937,14824
-An der Wuhlheide => Wuhlewanderweg: bereits an der Ampel Köpenicker Allee die Straßenseite wechseln (Straßenbahn auf Mittelstreifen)	PI; 21303,5826 21365,5832 21470,5809 21576,5733 21603,5698 21608,5690 21744,5804
-An der Wuhlheide => Alte Försterei: bereits an der Ampel Köpenicker Allee die Straßenseite wechseln (Straßenbahn auf Mittelstreifen)	PI; 21303,5826 21365,5832 22012,6219
-Wuhlewanderweg => Lindenstr.: zunächst linken Gehweg benutzen	CP; 21744,5804 21608,5690 21709,5543
-Mariendorfer Damm => Am Teltowkanal: bereits an der Ullsteinstr. auf den linken Gehweg wechseln	PI; 9207,5185 9192,5272 9171,5263 8881,5143
-Jerusalemer => Leipziger Str.: zunächst linken Gehweg benutzen (schlecht passierbarer Mittelstreifen)	CP; 9892,11752 9898,11679 9981,11689
+Lietzenburger Str. - Rankestr.: bereits an der Ampel Bundesallee/Lietzenburger Str. auf den linken Gehweg wechseln	PI; 5468,10442 5529,10453 5578,10529 5636,10626
+weiter links auf Uferweg	CP; 6334,14756 5991,14832 5937,14824
+An der Wuhlheide - Wuhlewanderweg: bereits an der Ampel Köpenicker Allee die Straßenseite wechseln (Straßenbahn auf Mittelstreifen)	PI; 21303,5826 21365,5832 21470,5809 21576,5733 21603,5698 21608,5690 21744,5804
+An der Wuhlheide - Alte Försterei: bereits an der Ampel Köpenicker Allee die Straßenseite wechseln (Straßenbahn auf Mittelstreifen)	PI; 21303,5826 21365,5832 22012,6219
+Wuhlewanderweg - Lindenstr.: zunächst linken Gehweg benutzen, an der Cardinalstr. oder Ampel Joachimstr. die Straßenseite wechseln	CP; 21744,5804 21608,5690 21709,5543
+Mariendorfer Damm - Am Teltowkanal: bereits an der Ullsteinstr. auf den linken Gehweg wechseln	PI; 9207,5185 9192,5272 9171,5263
+Jerusalemer - Leipziger Str.: zunächst linken Gehweg benutzen, an der Ampel Jerusalemer Str. die Straßenseite wechseln	CP; 9892,11752 9898,11679 9981,11689
 hinter dem "Alten Zollhaus" halbrechts abbiegen	CP; 10313,10084 10168,10085 10158,10117 10069,10151
 Frankfurter Allee - Kreutzigerstr.: Einfahrt in Hausdurchgang	CP2; 14291,12220 14285,12190
 Lennéstr: Radweg Richtung Ebertstr. auf der linken Seite im Tiergarten	CS; 8172,11679 8202,11691 8223,11700 8326,11732 8436,11766 8489,11782 8571,11846
 Jüdenstr.: unbequemes Passieren der Grunerstr.	CP; 10778,12493 10800,12461 10831,12371
 Jüdenstr.: unbequemes Passieren der Grunerstr.	CP; 10831,12371 10800,12461 10778,12493
-Ausgeschildert: Panorama-Hotel Oberuckersee	CP2; 42509,91443 42546,91203
-Ausgeschildert: zum Golfplatz	CP2; 48923,171834 48859,171937
-Ausgeschildert: zum Golfplatz	CP2; 50181,171331 50016,171383
-Ausschilderung nach Luisenthal (?) folgen	CS; 41134,76881 41143,76365
 dem Schotterweg folgen	CP; 24210,37562 24193,37725 24208,37830
-Ausgeschildert: Campingplatz Warnitz	CP; 40653,83900 40702,84070 40703,84157 40756,84209 40768,84393
-Ausgeschildert: Werneuchen, Wegendorf	CP2; 32325,18434 32343,18775
-Hauptstr.: an der Gustav-Holzmann-Str die Gehwegseite wechseln	PI; 16302,9865 16262,9925 16046,9746
+Hauptstr.: an der Gustav-Holzmann-Str. die Gehwegseite wechseln	PI; 16302,9865 16262,9925 16046,9746
 Hauptstr.: wegen Straßenbahntrasse zunächst auf der linken Gehwegseite weiterfahren und an der nächsten Ampel die Gehwegseite wechseln	CP; 16046,9746 16262,9925 16191,10035
-Ausgeschildert: Drense	CP2; 47333,101140 47475,101212
-Ausgeschildert: Grünow	CP2; 45050,101273 45189,101514
-Ausgeschildert: nach Charlottenhof	CP2; -14500,-2012 -14536,-1943
-Rollbergstr. - Karl-Marx-Str.: beim Linksabbiegen Ampel vor Hertie benutzen	CP; 12528,8205 12714,8249 12689,8289
-zunächst auf dem linken Gehweg des Weißenseer Wegs bleiben, nächste Möglichkeit zur Querung benutzen	CP; 15363,13531 15428,13770 15348,13996
-Route nach Prenzlau ausgeschildert	CP2; 50420,96012 50188,95514
-Ausgeschildert mit Tafel "Windfeld Randowhöhe" und "Wolliner Weg"	CP2; 52527,98581 52471,98189
+Rollbergstr. - Karl-Marx-Str.: zunächst auf dem linken Gehweg bleiben, an der Ampel Anzengruberstr. die Straßenseite wechseln	CP; 12528,8205 12714,8249 12689,8289
+zunächst auf dem linken Gehweg des Weißenseer Wegs bleiben, nächste Möglichkeit (Bernhard-Bästlein-Str. oder Landsberger Allee) zur Querung benutzen	CP; 15363,13531 15428,13770 15348,13996
 zur Müggelstr. Hausdurchfahrt benutzen	CS; 14855,11737 14837,11706
 zur Müggelstr. Hausdurchfahrt benutzen	CS; 14994,12121 14994,12064
-Ausgeschildert: Sportplatz	CP2; 13535,10184 13506,10146
 Zugang zum Bahndamm über die Terasse der Mambo-Bar	CS; 13923,9405 13953,9372
 Große Querallee: nicht ausgeschildert, vor dem "Tipi" nach links abbiegen	PI; 8123,12615 7945,12592 7875,12363
 Stralauer Allee - Warschauer Platz: bereits an der Kreuzung Am Oberbaum/Stralauer Allee auf den linken Gehweg wechseln	PI; 13332,10832 13389,10808 13471,10983
 Am Schinkelplatz: Nicht ausgeschildert, Fortsetzung der Unterwasserstr.	CP2; 10084,12228 9996,12401
 Bereits an der Ampel Steinmetzstr. die Straßenseite wechseln	PI; 7702,10146 7813,10112 7850,10351
 Regensburger Str. - Bundesallee: zunächst auf der linken Gehwegseite bis zur Kreuzung Nachodstr. fahren und dort die Straßenseite wechseln	CP; 5541,9923 5475,9914 5473,9869
-Bundesallee - Pariser Str.: an der Kreuzung Nachodstr. auf die linken Gehwegseite der Bundesallee wechseln	PI; 5473,9869 5475,9914 5416,9928
+Bundesallee - Pariser Str.: an der Kreuzung Bundesallee/Nachodstr. auf die linken Gehwegseite der Bundesallee wechseln	PI; 5473,9869 5475,9914 5416,9928
 Mehringbrücke - Ruhlsdorfer Str.: den linken Gehweg benutzen	CP2; 9416,10196 9368,10211
 Buchholzer Str. - Schönhauser Allee: zunächst auf der linken Geh/Radwegseite der Schönhauser Allee fahren, an der Kreuzung Gneiststr. die Straßenseite wechseln	CP; 11055,15504 10917,15525 10902,15422
 An der Stadtteilbibliothek einbiegen	CP2; 9460,6519 9453,6415

@@ -1,19 +1,21 @@
 #:# -*- coding: iso-8859-1 -*-
 #: title: sonstige Kommentare
 #
-# z.B.: * "ausgeschildert als"
+# z.B.: path finding helper (maybe candidates for comments_path):
+#       * "ausgeschildert als"
 #       * Richtungsangabe, z.B. in Wäldern oder bei
 #         unübersichtlichen Straßennamensbezeichnungen
 #         (Potsdamer Platz, Nollendorfplatz)
 #       * Orientierungshinweise ("entlang der
 #         Autobahn", "schwierig zu finden")
+#       other information:
 #       * Warnhinweise (z.B. reduzierte Höhe,
 #         Glas auf dem Radweg, Bodenschwellen). Warnungen vor
 #         "subjektiv" gefährlichen Stellen wandern nach
 #         comments_danger. Allerdings wird comments_danger
 #         noch *nicht* im CGI angezeigt, und im Perl/TK
 #         defaultmäßig ebenfalls nicht.
-#       * Informationen zur Straßenlage
+#       * Informationen zur Straßenlage, nicht routing-relevant
 #         (z.B. Privatstraße, Krankenhausgelände)
 #       * populäre Informationen ("Fahrbahn vor der britischen
 #         Botschaft für Autos gesperrt")
@@ -121,7 +123,7 @@ Am Petersberg: Privatstraße	CS 990,5581 825,5420
 (Weg in Kolonie Bodenreform): entlang des Teltowkanals	CS 20810,2398 20510,2321 20490,2276 20234,2254 20128,2271
 #: note: http://www.stadtentwicklung.berlin.de/verkehr/radverkehr/infrastruktur/de/seperater_weg01.shtml
 (Alt-Lankwitz - Kamenzer Damm): Rampe für Radfahrer	CS 8017,3355 8039,3242
-Ausgeschildert: Puschkinallee 6c, 6d	CP2; 13995,9834 14076,10011
+als Puschkinallee 6c, 6d ausgeschildert	CP2; 13995,9834 14076,10011
 Durch Toreinfahrt (immer offen)	CP2; 14043,10928 14093,10909
 als Sackgasse ausgeschildert	CP2; 14680,10758 14564,10792
 Radfahren durch den Park erlaubt	CS 6542,1674 6679,1734 6848,1809
@@ -159,7 +161,7 @@ Poller	CS -9031,5984
 Poller	CS -8929,5984
 #: by: ^^^
 #: by: rjoop:
-Ausgeschildert: zum Bahnhof	CS; 20772,-104623 20754,-104514
+ausgeschildert "zum Bahnhof"	CS; 20772,-104623 20754,-104514
 Am Stand - Klemkepark: Torbogen in der Häuserfront in den Klemkepark benutzen	CS 7484,18778 7480,18828
 Begasstr. - Riemenschneiderweg: Hausdurchfahrten	CS 6513,7005 6662,7018 6770,7027
 "Brücke" ausgeschildert	CP; 2452,281 2195,42 2175,71
@@ -261,3 +263,16 @@ als Potsdamer Platz ausgeschildert	CS; 8573,11404 8542,11502
 als Nollendorfplatz ausgeschildert	CS 6937,10363 6971,10346 7033,10328
 Richtung Einemstr.	CP2; 7033,10328 7033,10396
 Richtung Maaßenstr.	CP2; 7033,10396 7033,10328
+ausgeschildert Richtung Panorama-Hotel Oberuckersee	CP2; 42509,91443 42546,91203
+ausgeschildert zum Golfplatz	CP2; 48923,171834 48859,171937
+ausgeschildert zum Golfplatz	CP2; 50181,171331 50016,171383
+#: add_fragezeichen: Heißt es tatsächlich "Luisenthal"?
+Ausschilderung nach Luisenthal (?) folgen	CS; 41134,76881 41143,76365
+ausgeschildert Richtung Campingplatz Warnitz	CP; 40653,83900 40702,84070 40703,84157 40756,84209 40768,84393
+ausgeschildert Richtung Werneuchen, Wegendorf	CP2; 32325,18434 32343,18775
+ausgeschildert Richtung Drense	CP2; 47333,101140 47475,101212
+ausgeschildert Richtung Grünow	CP2; 45050,101273 45189,101514
+ausgeschildert nach Charlottenhof	CP2; -14500,-2012 -14536,-1943
+ausgeschildert mit Tafel "Windfeld Randowhöhe" und "Wolliner Weg"	CP2; 52527,98581 52471,98189
+ausgeschildert zum Sportplatz	CP2; 13535,10184 13506,10146
+Route nach Prenzlau ausgeschildert	CP2; 50420,96012 50188,95514
