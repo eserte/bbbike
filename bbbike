@@ -17036,6 +17036,24 @@ sub show_route_strname {
 		       ) {
 			my $name = $etappe_comment_obj->[Strassen::NAME()];
 			$name =~ s{.*:\s+}{}; # strip street part
+## The following is not needed if the comments are specific enough, i.e.
+## "An der Ampel Voltairestr. die Gehwegseite wechseln" instead of
+## "An der Ampel die Gehwegseite wechseln". As most comments are in this
+## form already I will try to be consistent and have everything like
+## this (of course, with osm data this would be another story, but
+## currently CP/CP2/PI comments are not created by osm2bbd)
+#			# If the special comment is not at beginning
+#			# of an etappe, then it is useful to have the
+#			# exact crossing displayed.
+#			if ($i != $index_arr->[0] && $etappe_comment_obj->[Strassen::CAT()] =~ m{^(CP|CP2|PI)(;|$)?}) {
+#			    my $crossings = all_crossings();
+#			    my $c = join ',', @{ $realcoords[$i] };
+#			    if ($crossings && exists $crossings->{$c}) {
+#				# XXX strip also "current" street
+#				my $cr_name = join '/', map { Strassen::strip_bezirk($_) } @{ $crossings->{$c} };
+#				$name .= " (Kreuzung $cr_name)";
+#			    }
+#			}
 			push @comments, $name;
 		    }
 		}
@@ -17358,6 +17376,7 @@ sub make_net {
     undef $green_net;
     undef $unlit_streets_net;
     undef $steigung_net;
+    undef $crossings;
 
     eval {
 	my $add_temp_blockings;
@@ -17632,6 +17651,18 @@ sub make_comments_net {
 				    -multiple => 1,
 				    -obeydir => 1);
     }
+}
+
+# Erzeugt einen Hash aller Kreuzungen
+### AutoLoad Sub
+sub all_crossings {
+    if (!keys %$crossings) {
+	my $s = $multistrassen ? $multistrassen : $str_obj{'s'};
+	return if !$s;
+	$crossings = $s->all_crossings(RetType => 'hash',
+				       UseCache => 1);
+    }
+    $crossings;
 }
 
 # User definable blockings
