@@ -1007,7 +1007,7 @@ EOF
        text  => 'Werner-Voß-Damm (Tempelhof) in beidenRichtungen zwischen Boelckestraße und Bäumerplan Verkehrsbehinderung durch geplatzte Wasserleitung, Straße ind beiden Richtungen gesperrt.',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 8553,7795 8637,7871
+userdel	q4 8553,7795 8642,7876
 userdel	q4 8553,7795 8512,7757
 EOF
      },
@@ -16574,6 +16574,60 @@ EOF
        data  => <<EOF,
 userdel	2::inwork 11275,13026 11228,12951 11134,12793
 userdel	3 11139,13008 11228,12951 11295,12915
+EOF
+     },
+     { from  => 1254891600, # 2009-10-07 07:00
+       until => 1261177200, # 2009-12-19 00:00
+       text  => 'Naumannstraße zwischen Leuthener Straße und Tempelhofer Weg gesperrt, Baustelle, Dauer: 08.10.2009 07:00 Uhr bis 18.12.2009 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 7716,8356 7716,8048 7717,7879
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Universitätsstraße Richtung Unter den Linden gesperrt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: last_checked: 2009-10-18
+#: XXX oder ist das eine permanente Sperrung?
+userdel	q4::inwork; 9574,12578 9601,12380
+EOF
+     },
+     { from  => undef, #
+       until => undef, #
+       text  => '(Drorystr. - Braunschweiger Str., Spielplatz): nachts werden die Tore geschlossen',
+       type  => 'gesperrt',
+       permanent => 1,
+       data  => <<EOF,
+	2::temp 13520,7485 13601,7366
+EOF
+     },
+     { from  => undef, #
+       until => undef, #
+       text  => 'Friedrich-Ludwig-Jahn-Sportpark: während Veranstaltungen und nachts von ca. 22 bis 7 Uhr gesperrt, mit Anhänger wegen des engen Südeinganges ggfs. nicht befahrbar',
+       type  => 'gesperrt',
+       permanent => 1,
+       data  => <<EOF,
+	2::temp 10473,15549 10607,15142
+EOF
+     },
+     { from  => undef, #
+       until => undef, #
+       text  => 'Luitpoldstr., Durchfahrt über Schulhof: nicht immer geöffnet!',
+       type  => 'gesperrt',
+       permanent => 1,
+       data  => <<EOF,
+	2::temp 6611,9879 6670,9887
+EOF
+     },
+     { from  => undef, #
+       until => undef, #
+       text  => 'Rutherfordstr.: nicht permanent geöffnet',
+       type  => 'gesperrt',
+       permanent => 1,
+       data  => <<EOF,
+	2::temp 19071,2746 19136,2673 19207,2592
 EOF
      },
     );

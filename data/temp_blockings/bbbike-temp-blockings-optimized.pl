@@ -1827,6 +1827,66 @@ userdel	3 11139,13008 11228,12951 11295,12915
 userdel	3 11139,13008 11228,12951 11295,12915
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => 1261177200,
+         'text' => 'Naumannstraße zwischen Leuthener Straße und Tempelhofer Weg gesperrt, Baustelle, Dauer: 08.10.2009 07:00 Uhr bis 18.12.2009 ',
+         'from' => 1254891600,
+         'id' => 1953,
+         'data' => 'userdel	q4::inwork 7716,8356 7716,8048 7717,7879
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => undef,
+         'text' => 'Universitätsstraße Richtung Unter den Linden gesperrt',
+         'from' => undef,
+         'id' => 1954,
+         'data' => '#: last_checked: 2009-10-18
+#: XXX oder ist das eine permanente Sperrung?
+userdel	q4::inwork; 9574,12578 9601,12380
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => undef,
+         'permanent' => 1,
+         'text' => '(Drorystr. - Braunschweiger Str., Spielplatz): nachts werden die Tore geschlossen',
+         'from' => undef,
+         'id' => 1955,
+         'data' => '	2::temp 13520,7485 13601,7366
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => undef,
+         'permanent' => 1,
+         'text' => 'Friedrich-Ludwig-Jahn-Sportpark: während Veranstaltungen und nachts von ca. 22 bis 7 Uhr gesperrt, mit Anhänger wegen des engen Südeinganges ggfs. nicht befahrbar',
+         'from' => undef,
+         'id' => 1956,
+         'data' => '	2::temp 10473,15549 10607,15142
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => undef,
+         'permanent' => 1,
+         'text' => 'Luitpoldstr., Durchfahrt über Schulhof: nicht immer geöffnet!',
+         'from' => undef,
+         'id' => 1957,
+         'data' => '	2::temp 6611,9879 6670,9887
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => undef,
+         'permanent' => 1,
+         'text' => 'Rutherfordstr.: nicht permanent geöffnet',
+         'from' => undef,
+         'id' => 1958,
+         'data' => '	2::temp 19071,2746 19136,2673 19207,2592
+',
+         'type' => 'gesperrt'
        }
      
 );
