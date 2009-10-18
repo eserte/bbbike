@@ -3,8 +3,12 @@
 #:
 #
 # "Gefährlich" ist sehr subjektiv. Mit den Daten hier wird beim
-# Routing noch nichts gemacht.
+# Routing noch nichts gemacht und per Default auch nirgendwo
+# angezeigt.
 #
+# Evtl. könnte man das komplett in eine user-kontrollierte Datenbank
+# überführen.
+# 
 #: by: mikeruben:
 An der Ampel sollte man sehr aufpassen, da die Autofahrer den Radweg meist nicht wahrnehmen	CP::danger; 3229,14224 3103,14187 3030,14224
 #: by: srt: vvv
