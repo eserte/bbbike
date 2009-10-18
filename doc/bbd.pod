@@ -132,7 +132,8 @@ file.
 
 =item C<version: I<RCS or CVS identifier string>>
 
-This global directive introduces an RCS/CVS Id string.
+This global directive introduces an RCS/CVS Id string. Not recommended
+if a modern version controlling system like git is used.
 
 =item C<encoding: I<encoding name>>
 
