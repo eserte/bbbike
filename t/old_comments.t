@@ -83,7 +83,7 @@ EOF
 	     # Hagelberger/Yorck
 	     ["8773,9524", "8595,9495", <<EOF, "PI"],
 - Kopfsteinpflaster: 1
-- Straßenseite an der Fußgängerampel Yorckstr./Katzbachstr. wechseln: 1
+- auf linken Gehweg fahren, Straßenseite an der Fußgängerampel Yorckstr./Katzbachstr. wechseln: 1
 - {}
 EOF
 	     ["8777,9601", "8595,9495", <<EOF, "No PI, starting point outside"],
