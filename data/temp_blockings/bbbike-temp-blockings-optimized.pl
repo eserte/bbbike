@@ -1559,15 +1559,7 @@ userdel	q4::inwork; 10829,18083 10907,18109 10938,18147 10989,18172 11137,18358 
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1255903200,
-         'text' => 'B 087 Frankfurt/Oder - Müllrose zw. Markendorf u. Hohenwalde Durchlassneubau Montagearb. Vollsperrung 17.10.2009-18.10.2009 ',
-         'from' => 1255644000,
-         'id' => 1915,
-         'data' => 'userdel	2::inwork 82521,-12031 82191,-12275
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1257721200,
          'text' => 'B 087 Frankfurt/Oder - Müllrose zw. Markendorf u. Hohenwalde Straßenbau Durchlass Vollsperrung 07.11.2009-08.11.2009 ',
@@ -1712,15 +1704,7 @@ userdel	q4::inwork; 10829,18083 10907,18109 10938,18147 10989,18172 11137,18358 
        undef,
        undef,
        undef,
-       {
-         'until' => 1255903200,
-         'text' => 'L 070 Stülpe - Sperenberg OD Kummersdorf-Gut Straßenausbau Vollsperrung 17.10.2009-18.10.2009 ',
-         'from' => 1255644000,
-         'id' => 1939,
-         'data' => 'userdel	q4::inwork 8564,-34625 9068,-34115 9300,-34066
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => 1257030000,
