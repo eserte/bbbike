@@ -2344,11 +2344,17 @@ sub send_comment {
 }
 
 sub init_with_edittools {
+    my $wm_border = 5; # XXX needed for fvwm2
     require BBBikeAdvanced;
-    main::set_line_coord_interactive(-geometry => "-0+0");
+    main::set_line_coord_interactive(-geometry => "-$wm_border+0");
     ## I don't use this anymore:
-    #main::coord_to_markers_dialog(-geometry => "-0+120");
-    editmenu($main::top, -geometry => "-0-0");
+    #main::coord_to_markers_dialog(-geometry => "-$wm_border+120");
+    editmenu($main::top, -geometry => "-$wm_border-0");
+    if (eval { require SRTShortcuts; 1 }) {
+	SRTShortcuts::show_bbbike_suggest_toplevel(-geometry => "-$wm_border+200");
+    } else {
+	warn "SRTShortcuts cannot be loaded, cannot show suggest window";
+    }
 }
 
 sub editmenu {

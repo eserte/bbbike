@@ -1916,11 +1916,12 @@ sub visualize_N_RW_net {
 # BBBikeSuggest
 
 sub show_bbbike_suggest_toplevel {
+    my(%args) = @_;
     require "$FindBin::RealBin/babybike/lib/BBBikeSuggest.pm";
     require BBBikeRouting;
     my $suggest = BBBikeSuggest->new;
     $suggest->set_zipfile("$main::datadir/Berlin.coords.data");
-    my $t = $main::top->Toplevel(-title => 'Search street');
+    my $t = main::redisplay_top($main::top, 'bbbike_suggest', -force => 1, -title => 'Search street', %args);
     main::set_as_toolwindow($t);
     my $w = $suggest->suggest_widget($t, -selectcmd => sub {
 					 my $w = shift;
