@@ -541,6 +541,7 @@ sub delete_osm_layer {
     $main::c->delete("osm");
     for my $abk ($osm_layer, $osm_layer_area, $osm_layer_cover, $osm_layer_landuse) {
 	$main::str_draw{$abk} = 0; # XXX also for layer editor
+	delete $main::str_obj{$abk};
     }
     Hooks::get_hooks("after_delete_layer")->execute;
     @cover_grids = ();
