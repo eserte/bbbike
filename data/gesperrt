@@ -1214,6 +1214,13 @@ Stralauer Allee -> Bödikerstr.: unbequem passierbare Straße	3::igndisp 14222,104
 unbequemes Passieren des Mittelstreifens (parkende Autos)	3nocross::ignrte 12630,8722 12742,8635 12772,8612
 Sonnenallee -> Schönstedtstr.: unbequemes Passieren des Mittelstreifens (parkende Autos)	3::igndisp 12772,8612 12742,8635 12649,8535
 Schönstedtstr. -> Sonnenallee: unbequemes Passieren des Mittelstreifens (parkende Autos)	3::igndisp 12649,8535 12742,8635 12630,8722
+Mittelstreifen	3nocross::ignrte 13277,8211 13459,8072 13474,8060
+Treptower Str. -> Treptower Str.: Mittelstreifen	3::igndisp 13457,8069 13459,8072 13478,8095
+Treptower Str. -> Sonnenallee: Mittelstreifen	3::igndisp 13457,8069 13459,8072 13277,8211
+Sonnenallee -> Treptower Str.: Mittelstreifen	3::igndisp 13474,8060 13459,8072 13457,8069
+Treptower Str. -> Treptower Str.: Mittelstreifen	3::igndisp 13478,8095 13459,8072 13457,8069
+Treptower Str. -> Sonnenallee: Mittelstreifen	3::igndisp 13478,8095 13459,8072 13474,8060
+Sonnenallee -> Treptower Str.: Mittelstreifen	3::igndisp 13277,8211 13459,8072 13478,8095
 unbequemes Passieren des Mittelstreifens	3nocross::ignrte 10675,12280 10659,12259 10625,12206 10574,12131
 Poststr. -> Mühlendamm: unbequemes Passieren des Mittelstreifens	3::igndisp 10629,12293 10659,12259 10675,12280
 Mühlendamm -> Poststr.: unbequemes Passieren des Mittelstreifens	3::igndisp 10625,12206 10659,12259 10629,12293
@@ -2153,3 +2160,4 @@ Kreuzung Sewanstr./Am Tierpark	1::igndisp 18647,10172 18631,10167
 Am Tierpark, linker Gehweg	1::igndisp 18715,10003 18647,10172
 Alt-Friedrichsfelde, linker Gehweg	1::igndisp 18228,11656 18556,11688 18778,11742 19005,11767 19750,11730
 Landsberger Allee, linker Gehweg	1::igndisp 15430,14272 15256,14237
+Sonnenallee, linker Gehweg	1::igndisp 13457,8069 13474,8060

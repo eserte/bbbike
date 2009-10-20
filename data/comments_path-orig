@@ -40,10 +40,8 @@ am Dom‰ne-Markt Richtung Hochbahnhof Hallesches Tor abbiegen	CP; 9536,10064 9579
 Fuﬂg‰ngerampel am Spittelmarkt zum Wechseln der Straﬂenseite benutzen, zwischen den Hochh‰usern zur Axel-Springer-Str.	CP; 10240,11740 10213,11728 10153,11666
 auf linken Gehweg fahren, Straﬂenseite an der Fuﬂg‰ngerampel Yorckstr./Katzbachstr. wechseln	CP; 8773,9524 8648,9526 8595,9495
 von der Brandenburgischen in die Paderborner: bereits an der Ampel Z‰hringerstr. auf den linken Gehweg wechseln	PI; 3930,9919 3906,10035 3720,9996
-#: XXX_indoor: sollte in eine 3nocross+routing_helper-Kombination umgeschrieben werdem
-Treptower Str./Sonnenallee: Ampel an der Hertzbergstr. benutzen	CP; 13478,8095 13459,8072 13376,7970
-#: XXX_indoor: braucht bei 3nocross keine weitere Bearbeitung
-Treptower Str./Sonnenallee: Ampel an der Hertzbergstr. benutzen	CP; 13376,7970 13459,8072 13478,8095
+# XXX del : XXX_indoor: sollte in eine 3nocross+routing_helper-Kombination umgeschrieben werden Treptower Str./Sonnenallee: Ampel an der Hertzbergstr. benutzen	CP; 13478,8095 13459,8072 13457,8069 13376,7970
+# XXX del : XXX_indoor: braucht bei 3nocross keine weitere Bearbeitung Treptower Str./Sonnenallee: Ampel an der Hertzbergstr. benutzen	CP; 13376,7970 13457,8069 13459,8072 13478,8095
 #: XXX_prog: RL:ja, GPS:jein: Radweg ist eingezeichnet, aber evtl. schlecht auf GPS-Karte sichtbar (spitzer Winkel)
 zur Prenzlauer Promenade: bei der Ampel an der Autobahnausfahrt die Straﬂenseite wechseln	CP2; 11907,19749 11933,19590
 #: XXX_prog: RL:ja, GPS:jein: Radweg ist eingezeichnet, aber evtl. schlecht auf GPS-Karte sichtbar (spitzer Winkel)
@@ -173,19 +171,18 @@ An der Stadtteilbibliothek einbiegen	CP2; 9460,6519 9453,6415
 Breite Str. - Auf dem Kiewitt: bereits an der Ampel Schopenhauerstr. die Straﬂenseite wechseln (wie ausgeschildert)	PI; -13516,-1517 -13764,-1460 -13865,-1618
 #: XXX_prog: RL:ja, GPS:nein
 Waldweg ist schwierig zu finden	CP2; 44290,165418 44268,165790
-#### ^^^ REVIEW RL:ja/nein, GPS:ja/nein SOWIE CP;+Crossing name UNTIL HERE ^^^ ##############################
-#: by: Gero:
-als Julius-Leber-Br¸cke ausgeschildert	CP; 7604,8927 7563,8871 7548,8879
+#: XXX_prog: RL:ja, GPS:nein
 Falkenwalde - Eickstedt: nicht den Eickst‰dter Weg nehmen, sondern erst den n‰chsten (nicht ausgeschilderten) Weg nach links	CP; 51235,97275 52505,97610 52471,98189
-#: note: nur mit einem "t", wohingegen der Ortseil auf der Uckermark-Karte mit zwei "t" geschrieben wird:
-Ausgeschildert: Matheshˆher Weg	CP2; 49488,96427 49056,96700
 #: by: Andreas M.: vvv
-Ausgeschildert: Britzer Str.	CP2; 33044,51831 33415,51839
-Ausgeschildert: Bl¸tenberger Weg	CP2; 36914,54197 34819,54697
+#: XXX_prog: RL:ja, GPS:nein
 Spreeufer: durch das Tor der Kleingartenkolonie	CP2; -307,13279 -278,13322
+#: XXX_prog: RL:ja, GPS:nein
 LefËvrestr. - Bundesallee: Fuﬂg‰ngerfurt benutzen	CP; 5215,6643 5372,6663 5372,6747
+#: XXX_indoor: sollte in eine 3nocross+routing_helper-Kombination umgeschrieben werden, auﬂerdem auch die Verbindung Zolastr. - Straﬂburger sollte beachtet werden
 Straﬂburger Str. - Torstr.: Fuﬂg‰ngerfurt (Dr‰ngelgitter) ca. 50m westlich der Kreuzung benutzen	CP; 11060,13865 10902,13604 11108,13513
+#: XXX_indoor: sollte in eine 3nocross+routing_helper-Kombination umgeschrieben werden
 Torstr. - Straﬂburger Str.: Fuﬂg‰ngerfurt (Dr‰ngelgitter) ca. 50m westlich der Kreuzung benutzen	CP; 10746,13673 10902,13604 11060,13865
+#### ^^^ REVIEW RL:ja/nein, GPS:ja/nein SOWIE CP;+Crossing name UNTIL HERE ^^^ ##############################
 K‰the-Niederkirchner-Str - Greifswalder Str.: Fuﬂg‰ngerfurt (Dr‰ngelgitter) ca. 50m nord-ˆstlich der Kreuzung benutzen	CP; 12110,13965 11993,14037 11958,13986
 Greifswalder Str. - K‰the-Niederkirchner-Str: Fuﬂg‰ngerfurt (Dr‰ngelgitter) ca. 50m nord-ˆstlich der Kreuzung benutzen oder schon an der Marienburger die Straﬂenseite wechseln	PI; 12091,14179 11993,14037 12110,13965
 Heinrich-Roller-Str. - Greifswalder Str.: Fuﬂg‰ngerfurt (Dr‰ngelgitter) benutzen	CP; 11616,13911 11832,13795 11958,13986
@@ -380,7 +377,7 @@ Krautstr. - Karl-Marx-Allee: auf dem linken Gehweg bis zur Ampel am Strausberger
 Bl¸cherplatz - Waterlooufer: vor der Amerikagedenkbibliothek Richtung Waterlooufer abbiegen	CP2; 9631,10142 9687,10180
 Bl¸cherplatz: an der Ampel Richtung Amerikagedenkbibliothek halten	CP2; 9599,10175 9631,10142
 Bl¸cherplatz: Richtung Hochbahnhof Hallesches Tor halten	CP2; 9631,10142 9599,10175
-Ausgeschildert: Fangel	CP2; 54825,175505 54819,175345
+Ausgeschildert Richtung Fangel	CP2; 54825,175505 54819,175345
 flache Rampe zum Umfahren der Treppen benutzen	CP 9404,6392
 Am Treptower Park - Hans-Thoma-Str.: fr¸hzeitig auf den linken Gehweg wechseln	PI; 14529,9141 14443,9233 14327,9117
 Hans-Thoma-Str. - Am Treptower Park: bis zur Moosdorfstr. auf dem linken Gehweg fahren	CP; 14327,9117 14443,9233 14382,9299
@@ -400,7 +397,7 @@ Kleine Andreasstr.: Einfahrt befindet sich links von der Kaiser's-Parkplatzeinfa
 Zitadelle - Am Juliusturm: bis zur Ampel am Zitadellenweg auf dem linken Gehweg vorfahren	CP; -2668,14635 -2656,14582 -2652,14559 -2646,14525 -2597,14532
 Am Juliusturm - Zitadelle: an der Ampel "An der Spreeschanze" die Straﬂenseite wechseln und zur¸ckfahren	CP; -2793,14505 -2646,14525 -2652,14559 -2656,14582 -2668,14635
 Loewenhardtdamm - Hˆhndorfstr.: bereits an der General-Pape-Str. auf den linken Gehweg wechseln	PI; 8306,8722 8334,8655 8438,8676
-Ausgeschildert: zum Bayernring	CP2; 8531,8404 8455,8567
+Ausgeschildert zum Bayernring	CP2; 8531,8404 8455,8567
 Mehringdamm - Wilhelmshˆhe: bereits an der Fidicinstr. die Straﬂenseite wechseln	PI; 9224,9053 9225,9111 9186,9107
 #: by: Steini (immerlocker)
 Kaiser-Wilhelm-Str. - Langkofelweg: bereits an der Ampel Edenkobener Weg die Straﬂenseite wechseln	PI; 6996,3761 6957,3699 6998,3596
@@ -415,8 +412,8 @@ Welzower Steig: links des Grabens halten	CP; 6223,21952 6257,22005 6111,22155
 Welzower Steig: rechts des Grabens halten	CP; 6111,22155 6257,22005 6223,21952
 Welzower Steig: rechts des Grabens halten	CP; 6478,21652 6508,21646 6529,21620
 #: by: ^^^
-Rahel-Hirsch-Str. -> Ella-Trebe-Str.: bereits an der Ampel Alt-Moabit/Willy-Brandt-Str. auf den linken Gehweg wechseln	PI; 7936,12906 7948,12918 7941,13014
-Babelsberger Str. -> Uferweg: bereits an der Ampel den Radweg auf der linken Straﬂenseite benutzen	PI; -12493,-1896 -12420,-1853 -12335,-1725
+Rahel-Hirsch-Str. - Ella-Trebe-Str.: bereits an der Ampel Alt-Moabit/Willy-Brandt-Str. auf den linken Gehweg wechseln	PI; 7936,12906 7948,12918 7941,13014
+Babelsberger Str. - Uferweg: bereits an der Ampel den Radweg auf der linken Straﬂenseite benutzen	PI; -12493,-1896 -12420,-1853 -12335,-1725
 Ausgeschildert Richtung Buga-Park	CP2; -14305,2184 -14100,2144
 Ausgeschildert Richtung Kurstr.	CP2; 9972,12184 10003,12113
 Hinter dem Straﬂenbetriebshof rechts in den Weg einbiegen	CP; 16860,12861 16865,13000 17041,12989

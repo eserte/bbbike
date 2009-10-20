@@ -279,3 +279,16 @@ Route nach Prenzlau ausgeschildert	CP2; 50420,96012 50188,95514
 #: by: Martin Rehfeld:
 #: note: Die Straße liegt in dem für öffentlichen Kraftverkehr gesperrten Areal "Waldsiedlung Krumme Lanke"
 Privatstraße	CS -519,4737 -552,4698 -581,4662
+#: by: Gero:
+#: XXX_indoor: why is only the path Czeminskistr. - Kolonnenstr. marked with this, why not just a CP2; without the first point?
+als Julius-Leber-Brücke ausgeschildert	CP; 7604,8927 7563,8871 7548,8879
+#: note: nur mit einem "t", wohingegen der Ortsteil auf der Uckermark-Karte mit zwei "t" geschrieben wird:
+Ausgeschildert als Matheshöher Weg	CP2; 49488,96427 49056,96700
+#: by: Andreas M.: vvv
+Ausgeschildert als Britzer Str.	CP2; 33044,51831 33415,51839
+Ausgeschildert als Blütenberger Weg	CP2; 36914,54197 34819,54697
+#: by: ^^^
+# #: XXX_prog: U-Turns sollten automatisch erkannt werden vvv
+# An der Kreuzung Bundesallee/Hildegardstr. die Straßenseite wechseln und zurück fahren	CP; 5439,8408 5421,8337 5444,8406
+# An der Kreuzung Bundesallee/Durlacher Str. die Straßenseite wechseln und zurück fahren	CP; 5449,8402 5421,8337 5439,8408
+# #: XXX_prog ^^^

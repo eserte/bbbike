@@ -1682,15 +1682,7 @@ userdel	q4::inwork; 10829,18083 10907,18109 10938,18147 10989,18172 11137,18358 
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1255989600,
-         'text' => 'B 101 Zinnaer Str. OD Luckenwalde, zw. Kirchstr. und Am Nuthefließ Straßenbau Vollsperrung 12.10.2009-19.10.2009 ',
-         'from' => 1255212000,
-         'id' => 1933,
-         'data' => 'userdel	q4::inwork -4630,-36012 -4603,-35730
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => 1257030000,
@@ -1764,15 +1756,7 @@ userdel	2::inwork 3314,15782 3564,16294
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1256076000,
-         'text' => 'Vom 6.10.2009 bis 20.10.2009 ist der Königsweg zwischen Eichkampstraße und Hüttenweg wegen Straßenbauarbeiten komplett gesperrt ',
-         'from' => 1255467829,
-         'id' => 1947,
-         'data' => 'userdel	2::inwork -903,6923 -643,7252 -348,7641 425,8766
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1275343200,
          'text' => 'Verkehreinschränkungen in der Magdalenenstraße und am Roedeliusplatz bis Mai 2010, Einbahnstraßenregelung in Fahrtrichtung Normannenstraße ',

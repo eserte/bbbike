@@ -589,7 +589,7 @@ handicap_s:	handicap_s-orig berlin .gesperrt.tmp routing_helper-orig
 		-catexpr 's/.*:(q\d)/$$1::igndisp;/' \
 		-nameexpr 's/(.*)/$$1: gegen die Einbahnstraßenrichtung, ggfs. schieben/' \
 		>> handicap_s~
-	${GREPSTRASSEN} -ignoreglobaldirectives -catrx '^q\d+' routing_helper-orig |\
+	${GREPSTRASSEN} -ignoreglobaldirectives -catrx '^q\d+;$$' routing_helper-orig |\
 	    ${REPLACESTRASSEN} -catexpr 's/;/::igndisp;/' >> handicap_s~
 	mv handicap_s~ handicap_s
 	-@$(READONLY) $@
