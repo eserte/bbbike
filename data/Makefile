@@ -1330,7 +1330,7 @@ GESPERRT_CATRX='^(0:\d+(:-?\d+)?|1|1s(:q\d)?|2|3|3nocross|BNP:\d+(:-?\d+(:traile
 	    iterate {\
 		$$_->[Strassen::CAT] =~ m{^CP2;} and @{$$_->[Strassen::COORDS]} != 2 and push @errors, "*** $$file ($$_->[Strassen::NAME]): CP2; != 2 coordinates";\
 		$$_->[Strassen::CAT] =~ m{^PI;} and @{$$_->[Strassen::COORDS]} < 3 and push @errors, "*** $$file ($$_->[Strassen::NAME]): PI; too few coordinates";\
-		$$_->[Strassen::CAT] =~ m{^CP(;|$$)} and @{$$_->[Strassen::COORDS]} == 2 and push @errors, "*** $$file ($$_->[Strassen::NAME]): CP; too few coordinates";\
+		$$_->[Strassen::CAT] =~ m{^CP(;|$$)} and @{$$_->[Strassen::COORDS]} < 3 and push @errors, "*** $$file ($$_->[Strassen::NAME]): CP; too few coordinates";\
 		$$_->[Strassen::CAT] =~ m{^P0} and push @errors, "*** $$file ($$_->[Strassen::NAME]): P0 is unsupported";\
 	    } $$s;\
         }\

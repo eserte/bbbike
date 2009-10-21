@@ -85,6 +85,7 @@ if ($do_xxx) {
     }
 }
 
+XXX:
 {
     my $net = StrassenNetz->new($comments_path);
     $net->make_net_cat(-obeydir => 1, -net2name => 1, -multiple => 1);
@@ -110,15 +111,15 @@ if ($do_xxx) {
     }
 
     {
-	pass("-- CP-Kommentar (beide Richtungen) Sonnenallee/Treptower --");
+	# XXX Note that this comment will probably move to comments_misc some day!
+	pass("-- CP-Kommentar (beide Richtungen) Rampe Nähe Götzstr. --");
 
 	no warnings qw(qw);
 	my $route = [ map { [ split /,/ ] }
 		      qw(
-			 13478,8095 13459,8072 13376,7970
+			 9453,6415 9404,6392 9389,6348
 			) ];
 	my $comment;
-
 	for my $pass (1, 2) {
 	    if ($pass == 2) {
 		@$route = reverse @$route;
@@ -128,7 +129,7 @@ if ($do_xxx) {
 	    is($comment, undef, "No CP comment for begin point, pass $pass")
 		or diag $comment;
 	    ($comment) = $net->get_point_comment($route, 1, undef);
-	    like($comment, qr{Ampel.*benutzen}i, "CP comment only at middle point, pass $pass")
+	    like($comment, qr{flache Rampe zum Umfahren der Treppen benutzen}i, "CP comment only at middle point, pass $pass")
 		or diag $comment;
 	    ($comment) = $net->get_point_comment($route, 2, undef);
 	    is($comment, undef, "No CP comment for end point, pass $pass")
@@ -308,7 +309,6 @@ EOF
     }
 }
 
-XXX:
 {
     # Check for nearest_node output (find nearest reachable point if
     # the selected goal is not reachable)
