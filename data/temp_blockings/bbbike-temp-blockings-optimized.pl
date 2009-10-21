@@ -850,10 +850,10 @@ userdel	2::inwork 7160,11225 6851,11346
        {
          'source_id' => 'IM_013316',
          'until' => 1262300400,
-         'text' => 'Markgrafenstr. (Mitte) Richtung Behrenstr. zwischen Taubenstr. und Behrenstr. Baustelle, Fahrtrichtung gesperrt (bis Dezember 2009)',
+         'text' => 'Markgrafenstr. (Mitte) Richtung Behrenstr. zwischen Mohrenstr. und Behrenstr. Baustelle, Fahrtrichtung gesperrt (bis Dezember 2009)',
          'from' => 1246916833,
          'id' => 1732,
-         'data' => 'userdel	q4::inwork; 9668,11928 9656,12021 9643,12127 9631,12227
+         'data' => 'userdel	q4::inwork; 9679,11834 9668,11928 9656,12021 9643,12127 9631,12227
 ',
          'type' => 'handicap'
        },
@@ -941,7 +941,7 @@ userdel	q4::inwork 9405,11413 9331,11497
          'text' => 'Bauarbeiten in der Mohrenstraße, Fahrbahn gesperrt ',
          'from' => 1248200777,
          'id' => 1762,
-         'data' => '#: last_checked: 2009-10-16
+         'data' => '#: last_checked: 2009-10-21
 userdel	q4::inwork 9418,11804 9220,11781
 ',
          'type' => 'handicap'

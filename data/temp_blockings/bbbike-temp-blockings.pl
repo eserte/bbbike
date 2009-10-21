@@ -14673,11 +14673,11 @@ EOF
      },
      { from  => 1246916833, # 2009-07-06 23:47
        until => 1262300400, # 2010-01-01 00:00
-       text  => 'Markgrafenstr. (Mitte) Richtung Behrenstr. zwischen Taubenstr. und Behrenstr. Baustelle, Fahrtrichtung gesperrt (bis Dezember 2009)',
+       text  => 'Markgrafenstr. (Mitte) Richtung Behrenstr. zwischen Mohrenstr. und Behrenstr. Baustelle, Fahrtrichtung gesperrt (bis Dezember 2009)',
        type  => 'handicap',
        source_id => 'IM_013316',
        data  => <<EOF,
-userdel	q4::inwork; 9668,11928 9656,12021 9643,12127 9631,12227
+userdel	q4::inwork; 9679,11834 9668,11928 9656,12021 9643,12127 9631,12227
 EOF
      },
      { from  => 1247349600, # 2009-07-12 00:00
@@ -14926,7 +14926,7 @@ EOF
        text  => 'Bauarbeiten in der Mohrenstraße, Fahrbahn gesperrt ',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2009-10-16
+#: last_checked: 2009-10-21
 userdel	q4::inwork 9418,11804 9220,11781
 EOF
      },
