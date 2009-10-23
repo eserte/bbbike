@@ -164,21 +164,26 @@ for my $f (sort @lib_files) {
 
     #   * nachgucken, ob in lib/perl eine Entsprechung existiert (ansonsten
     #     Warnung!)
-    save_pwd {
-	my $destdir = cwd . $dir;
-	if (!chdir $destdir) {
-	    if ($do_exec) {
-		die "Can't chdir to $destdir: $!";
+    {
+	my $do_next;
+	save_pwd {
+	    my $destdir = cwd . $dir;
+	    if (!chdir $destdir) {
+		if ($do_exec) {
+		    die "Can't chdir to $destdir: $!";
+		} else {
+		    warn "$destdir does not exist yet, cannot check...\n";
+		}
 	    } else {
-		warn "$destdir does not exist yet, cannot check...\n";
+		if (!-f $src) {
+		    warn "$src does not exist\n";
+		    $do_next = 1;
+		    return;
+		}
 	    }
-	} else {
-	    if (!-f $src) {
-		warn "$src does not exist\n";
-		next;
-	    }
-	}
-    };
+	};
+	next if $do_next;
+    }
 
     #   * nachgucken, ob die Dateien in lib/perl nicht älter sind (ansonsten
     #     Warnung!) XXX
