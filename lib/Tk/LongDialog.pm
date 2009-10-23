@@ -1,7 +1,7 @@
 package Tk::LongDialog;
 
 use vars qw($VERSION);
-$VERSION = '4.005'; # $Id: LongDialog.pm,v 1.4 2008/01/04 21:26:14 eserte Exp $
+$VERSION = '4.005'; # $Id: LongDialog.pm,v 1.4 2008/01/04 21:26:14 eserte Exp eserte $
 
 # Dialog - a translation of `tk_dialog' from Tcl/Tk to TkPerl (based on
 # John Stoffel's idea).

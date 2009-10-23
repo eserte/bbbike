@@ -1,11 +1,11 @@
 # -*- perl -*-
 
 #
-# $Id: PathEntry.pm,v 3.2 2009/03/01 23:37:51 eserte Exp $
+# $Id: PathEntry.pm,v 3.4 2009/06/02 15:46:18 k_wittrock Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 2001,2002,2003,2007,2008,2009 Slaven Rezic. All rights reserved.
-# Copyright (c) 2007 Klaus Wittrock. All rights reserved.
+# Copyright (c) 2007,2009 Klaus Wittrock. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -17,8 +17,13 @@ package Tk::PathEntry;
 
 use strict;
 use vars qw($VERSION);
-#$VERSION = sprintf("%d.%02d", q$Revision: 3.2 $ =~ /(\d+)\.(\d+)/);
-$VERSION = '3.03';
+#$VERSION = sprintf("%d.%02d", q$Revision: 3.4 $ =~ /(\d+)\.(\d+)/);
+$VERSION = '3.05';
+
+# Allow whitespace in file pathes.
+# Silently use standard glob for old versions of Perl (you may get trouble
+# with whitespace in file pathes, of course).
+BEGIN { eval {require File::Glob; File::Glob->import(':glob'); 1} }
 
 use base qw(Tk::Derived Tk::Entry);
 
@@ -53,32 +58,45 @@ sub ClassInit {
 	$mw->bind($class,"<$_-Right>"     => '_forward_path_component');
 	$mw->bind($class,"<$_-Left>"      => '_backward_path_component');
     }
-    $mw->bind($class,"<FocusOut>" => sub {
-		  my $w = shift;
-		  # Note: A button 1 mouse click in the choices listbox will invoke the
-		  # FocusOut callback of the Entry widget before invoking the Button-1
-		  # of the choices listbox, if the focus is in the Entry at that moment.
-		  # In this case $w->focusCurrent is undefined. The Button-1 callback will
-		  #  withdraw the choices listbox.
-		  # Also $w->focusCurrent is undefined if the focus is passed to a
-		  # different window.
-		  return unless defined $w->focusCurrent;
-		  # Don't withdraw the choices listbox if the focus just has been passed to it.
-		  return if $w->focusCurrent == $w->Subwidget("ChoicesLabel");
-		  # This queer situation can be reproduced on Windows OS as follows:
-		  # Klick on a directory that is displayed below the PathEntry::Dialog;
-		  # Enter <Tab> or / to get the next choices list;
-		  # Select the 2nd choice at a point above the OK button.
-		  # Apparently this situation doesn't do any harm.
-		  # return if $w->focusCurrent eq $w;
-		  $w->Finish;
-	      });
+
+    # Withdraw the choices listbox when the PathEntry looses focus
+    $mw->bind($class,"<FocusOut>" => \&_bind_focusout);
+
+    # On <Return> in the Entry withdraw the choices listbox and invoke the selectcmd callback
     $mw->bind($class,"<Return>" => \&_bind_return);
 
     $class;
 }
 
-# Class binding for <Return>
+# Class binding for <FocusOut>
+
+sub _bind_focusout {
+    my $w = shift;
+    # Note: A button 1 mouse click in the choices listbox will invoke the
+    # FocusOut callback of the Entry widget before invoking the Button-1 callback
+    # of the choices listbox, if the focus is in the Entry at that moment.
+    # In this case $w->focusCurrent is undefined. The Button-1 callback will
+    #  withdraw the choices listbox.
+    # Also $w->focusCurrent is undefined if the focus is passed to a
+    # different window.
+    return unless defined $w->focusCurrent;
+
+    # Don't withdraw the choices listbox if the focus just has been passed to it.
+    return if $w->focusCurrent eq $w->Subwidget("ChoicesLabel");
+
+    # Sometimes the focus is passed from the PathEntry to the PathEntry
+    # (that means $w->focusCurrent eq $w).
+    # This queer situation can be reproduced on Windows OS as follows:
+    # Klick on a directory that is displayed below the PathEntry::Dialog;
+    # Enter <Tab> or / to get the next choices list;
+    # Select the 2nd choice at a point above the OK button.
+    # Apparently this situation doesn't do any harm here.
+
+    my $choices_t = $w->Subwidget("ChoicesToplevel");
+    $choices_t->withdraw;
+};
+
+# Class binding for <Return> in the Entry
 
 sub _bind_return {
     my $w = shift;
@@ -114,6 +132,7 @@ sub Populate {
 	$choices_l->configure(-background => 'yellow');
     }
     $w->Advertise("ChoicesLabel" => $choices_l);
+
     # <Button-1> in the Listbox
     $choices_l->bind("<1>" => sub {
 			 my $lb = shift;
@@ -125,6 +144,7 @@ sub Populate {
 			 $w->_set_text($path);
 			 $w->Finish;
 		     });
+
     # <Return> in the Listbox
     $choices_l->bind("<Return>" => sub {
 		 # Transfer the selection to the Entry widget
@@ -140,20 +160,32 @@ sub Populate {
 		 $w->Finish;
 	     });
     # <Return> in the Entry is now a class binding
+
     # <Escape> in the Listbox
     $choices_l->bind("<Escape>" => sub {
 		 $w->Finish;
 	     });
+
     # <Escape> in the Entry
     $w->bind("<Escape>" => sub {
 		 $w->Finish;
 		 $w->Callback(-cancelcmd => $w);
 	     });
+
+    # <FocusIn> in the Entry
     $w->bind("<FocusIn>" => sub {
 		 # If the focus is passed to the entry widget by <Tab> or <Shift-Tab>,
 		 # all text in the widget gets selected. This might lateron cause
 		 # unintended deletion when pressing a key.
 		 $w->selectionClear();
+	     });
+
+    # <FocusOut> in the Listbox
+    # Hide the Listbox window if visible
+    $choices_l->bind("<FocusOut>" => sub {
+		 my $choices_t = $w->Subwidget("ChoicesToplevel");
+		 return unless $choices_t->state eq 'normal';
+		 $choices_t->withdraw;
 	     });
 
     if (exists $args->{-vcmd} ||
@@ -252,6 +284,9 @@ sub ConfigChanged {
     $w->{max_show} = $w->cget(-height);   # save original height of the listbox
 }
 
+# Finish is meant for "terminating" Events (<Return>, <Escape>, <Button-1>),
+# but not for cases where "$choices_t->withdraw;" will do. Beware of the 
+# focus change in Finish.
 sub Finish {
     my $w = shift;
     my $choices_t = $w->Subwidget("ChoicesToplevel");
@@ -874,7 +909,7 @@ Klaus Wittrock <wittrock@cpan.org>
 =head1 COPYRIGHT
 
 Copyright (c) 2001,2002,2003,2007,2008,2009 Slaven Rezic.
-Copyright (c) 2007 Klaus Wittrock.
+Copyright (c) 2007,2009 Klaus Wittrock.
 All rights reserved. This module is free software; you can
 redistribute it and/or modify it under the same terms as Perl itself.
 

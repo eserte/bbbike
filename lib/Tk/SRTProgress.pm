@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: SRTProgress.pm,v 1.10 2005/05/12 20:49:00 eserte Exp eserte $
+# $Id: SRTProgress.pm,v 1.12 2009/01/24 22:01:48 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2003,2005,2009 Slaven Rezic. All rights reserved.
@@ -18,7 +18,7 @@ use vars qw(@ISA $VERSION $VERBOSE);
 use strict;
 
 @ISA = qw(Tk::Derived Tk::Canvas);
-$VERSION = '0.06';
+$VERSION = '0.07';
 
 Construct Tk::Widget 'SRTProgress';
 

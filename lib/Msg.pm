@@ -127,7 +127,7 @@ sub get_lang {
 	$lang = "";
     } else {
 	# normalize language
-	$lang =~ s/^([^_.-]+).*/$1/; # XXX better use I18N::Lang
+	$lang =~ s/^([^_.-]+).*/$1/; # XXX better use I18N::LangTags
     }
     if ($DEBUG) {
 	warn "Use language $lang\n";
