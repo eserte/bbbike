@@ -476,7 +476,7 @@ predist:
 	cd data && ${MAKE}
 	${MAKE} generatemods
 	${MAKE} extmod
-	${MAKE} linkextmod
+	${MAKE} copyextmod
 	${MAKE} bbbikedoc
 	${MAKE} distcheck
 	${MAKE} distdir
@@ -754,8 +754,8 @@ extmod:
 EOF
 . <<EOF
 
-linkextmod:
-	$^X ./miscsrc/link_ext_mod.pl -v
+copyextmod:
+	$^X ./miscsrc/link_ext_mod.pl -copy -v
 EOF
 . <<'EOF'
 

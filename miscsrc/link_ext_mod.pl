@@ -12,13 +12,26 @@
 # WWW:  http://bbbike.sourceforge.net
 #
 
-# link external modules from ~/lib/perl to ~/src/bbbike/lib
+=head1 NAME
 
-# XXX sollte auch Config{archname} und evtl. auch
-# XXX perl-Version beachten
+link_ext_mod.pl - link or copy external modules
 
-use FindBin;
+=head1 DESCRIPTION
+
+Link or copy external modules from ~/lib/perl to ~/src/bbbike/lib
+
+=head1 TODO
+
+ * sollte auch Config{archname} und evtl. auch
+ * perl-Version beachten
+
+=cut
+
 use strict;
+use FindBin;
+use lib "$FindBin::RealBin/..";
+
+use File::Copy qw(cp);
 use File::Find;
 use File::Basename;
 use File::Path;
@@ -27,31 +40,7 @@ use Getopt::Long;
 use Cwd;
 use Cwd qw(abs_path);
 
-# REPO BEGIN
-# REPO NAME save_pwd /home/e/eserte/src/repository 
-# REPO MD5 7f59b47ca12f3affcf409af03c44292e
-
-=head2 _save_pwd(sub { ... })
-
-=for category File
-
-Save the current directory and assure that outside the block the old
-directory will still be valid.
-
-=cut
-
-sub _save_pwd (&) {
-    my $code = shift;
-    require Cwd;
-    my $pwd = Cwd::cwd();
-    eval {
-	$code->();
-    };
-    my $err = $@;
-    chdir $pwd or die "Can't chdir back to $pwd: $!";
-    die $err if $err;
-}
-# REPO END
+use BBBikeUtil qw(is_in_path save_pwd);
 
 # be nice:
 umask 2;
@@ -60,6 +49,7 @@ my $verbose = 0;
 my $lib_perl = abs_path("$ENV{HOME}/lib/perl");
 my $do_exec = 1;
 my $do_rellink = 1;
+my $do_copy = 0;
 my $force = 0;
 
 if (!GetOptions("n" => sub { $do_exec = 0; $verbose = 1; },
@@ -67,12 +57,18 @@ if (!GetOptions("n" => sub { $do_exec = 0; $verbose = 1; },
 		"f" => \$force,
 		"libperldir=s" => \$lib_perl,
 		"rellink!" => \$do_rellink,
+		"copy!" => \$do_copy,
 	       )) {
-    die "usage: $0 [-n] [-v [-v ...]] [-f] [-[no]rellink] [-libperldir ~/lib/perl]";
+    die "usage: $0 [-n] [-v [-v ...]] [-f] [-[no]rellink] [-copy] [-libperldir ~/lib/perl]";
 }
 
 die "Works only on the source system and not on Win32"
     if $^O eq 'MSWin32';
+
+my $make = $^O =~ m{bsd}i ? "make" : "pmake";
+if (!is_in_path($make)) {
+    die "The $make program is not available.\n";
+}
 
 # Vorgehensweise:
 # * mit echoextmodcpan und echoextmodperl feststellen, welche Module gelinkt
@@ -81,17 +77,21 @@ die "Works only on the source system and not on Win32"
 chdir "$FindBin::RealBin/.." or die "chdir: $!";
 #system_or_print($^X, "Makefile.PL");
 
-my($extmodcpantop) = `make echoextmodcpantop`;
+die "Makefile is not available, did you run 'perl Makefile.PL'?"
+    if !-r "Makefile";
+
+# XXX The echo rules could be replaced by using "make -V..."
+my($extmodcpantop) = `$make echoextmodcpantop`;
 chomp $extmodcpantop;
 
-my($extmodcpan) = `make echoextmodcpan`;
+my($extmodcpan) = `$make echoextmodcpan`;
 chomp $extmodcpan;
 my @extmodcpan = split /\s+/, $extmodcpan;
 
-my($extmodperltop) = `make echoextmodperltop`;
+my($extmodperltop) = `$make echoextmodperltop`;
 chomp $extmodperltop;
 
-my($extmodperl) = `make echoextmodperl`;
+my($extmodperl) = `$make echoextmodperl`;
 chomp $extmodperl;
 my @extmodperl = split /\s+/, $extmodperl;
 
@@ -154,21 +154,29 @@ for my $f (sort @lib_dirs) {
 warn "Files:\n" if $verbose;
 for my $f (sort @lib_files) {
 
-    my $src = "$lib_perl/$f";
+    my $abssrc = "$lib_perl/$f";
     my $dir = ($f !~ m|/| ? "" : "/" . dirname($f));
-    $src = File::Spec->abs2rel($src, cwd.$dir);
+    my $src = File::Spec->abs2rel($abssrc, cwd.$dir);
     print STDERR "$f " if $verbose;
-    if ($verbose >= 2) {
-	print STDERR " -> $src\n";
+    if ($verbose >= 2 && $do_exec) {
+	print STDERR "<- $src\n";
     }
 
     #   * nachgucken, ob in lib/perl eine Entsprechung existiert (ansonsten
     #     Warnung!)
-    _save_pwd {
-	chdir cwd.$dir or die $!;
-	if (!-f $src) {
-	    warn "$src does not exist\n";
-	    next;
+    save_pwd {
+	my $destdir = cwd . $dir;
+	if (!chdir $destdir) {
+	    if ($do_exec) {
+		die "Can't chdir to $destdir: $!";
+	    } else {
+		warn "$destdir does not exist yet, cannot check...\n";
+	    }
+	} else {
+	    if (!-f $src) {
+		warn "$src does not exist\n";
+		next;
+	    }
 	}
     };
 
@@ -177,41 +185,52 @@ for my $f (sort @lib_files) {
 
     #   * feststellen, ob die Position unter bbbike leer ist oder nur ein
     #     symlink (wenn nicht, Abbruch!)
-    if (-e $f && !-l $f) {
-	warn "$f is not empty and not a symlink\n";
-	next;
-    }
+    if (!$do_copy) {
+	if (-e $f && !-l $f) {
+	    warn "$f is not empty and not a symlink\n";
+	    next;
+	}
 
-    if (-l $f) {
-	if (-e $f) {
-	    my $link = readlink($f);
+	if (-l $f) {
+	    if (-e $f) {
+		my $link = readlink($f);
 #	    if (File::Spec->rel2abs($link) ne $src) {
-	    if ($link ne $src) {
-		if ($f) {
-		    print STDERR "Remove old link $f because " . File::Spec->rel2abs($link) . " ne ". $src . "\n" if $verbose;
-		    if ($do_exec) {
-			unlink $f;
+		if ($link ne $src) {
+		    if ($f) {
+			print STDERR "Remove old link $f because " . File::Spec->rel2abs($link) . " ne ". $src . "\n" if $verbose;
+			if ($do_exec) {
+			    unlink $f;
+			}
+		    } else {
+			warn "Link mismatch: $link <=> $src\n";
+			next;
 		    }
 		} else {
-		    warn "Link mismatch: $link <=> $src\n";
+		    # ok, nothing to do
 		    next;
 		}
 	    } else {
-		# ok, nothing to do
-		next;
-	    }
-	} else {
-	    print STDERR "Remove old link $f because unexisting target\n" if $verbose;
-	    if ($do_exec) {
-		unlink $f;
+		print STDERR "Remove old link $f because unexisting target\n" if $verbose;
+		if ($do_exec) {
+		    unlink $f;
+		}
 	    }
 	}
     }
 
     #   * Erzeugen des Symlinks
-    print STDERR "-> $src" if $verbose;
     if ($do_exec) {
-	symlink($src, $f);
+	if ($do_copy) {
+	    print STDERR "<- $abssrc" if $verbose;
+	    cp $abssrc, $f
+		or die "Cannot copy $abssrc to $f: $!";
+	} else {
+	    print STDERR "<- $src" if $verbose;
+	    symlink $src, $f
+		or die "Cannot symlink $f -> $src: $!";
+	}
+    } else {
+	print STDERR "<- $src" if $verbose;
     }
     print STDERR "\n" if $verbose;
 }
