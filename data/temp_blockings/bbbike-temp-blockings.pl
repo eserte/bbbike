@@ -16319,7 +16319,7 @@ userdel	2::inwork -19162,-33731 -18692,-33299
 EOF
      },
      { from  => 1254981556, # 2009-10-08 07:59
-       until => 1257029999, # 2009-10-31 23:59
+       until => 1256194316, # 2009-10-31 23:59 1257029999
        text  => 'Erkstr. (Neukölln) in beiden Richtungen zwischen Sonnenallee und Donaustr. Baustelle, Straße vollständig gesperrt (bis Ende 10.2009)',
        type  => 'handicap',
        source_id => 'IM_014353',

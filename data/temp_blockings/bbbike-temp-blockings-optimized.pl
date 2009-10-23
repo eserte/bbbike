@@ -1606,16 +1606,7 @@ userdel	q4::inwork; 10829,18083 10907,18109 10938,18147 10989,18172 11137,18358 
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_014353',
-         'until' => 1257029999,
-         'text' => 'Erkstr. (Neukölln) in beiden Richtungen zwischen Sonnenallee und Donaustr. Baustelle, Straße vollständig gesperrt (bis Ende 10.2009)',
-         'from' => 1254981556,
-         'id' => 1922,
-         'data' => 'userdel	q4::inwork 12902,8470 12771,8439
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => 1257030000,

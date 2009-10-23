@@ -1331,7 +1331,7 @@ Schranke	BNP:2::trailer=4 9907,11752
 Schranke	BNP:5::trailer=10 10112,11796
 #: note: Vorbeifahrt auf dem Gehweg, Pfosten können möglicherweise Anhänger behindern 
 Schranke	BNP:3::trailer=6 9698,10348
-Drängelgitter	BNP:5 12682,7514
+Drängelgitter	BNP:3::trailer=6 12682,7514
 Barriere	BNP:5 17301,7645
 #: note: ca. 120cm zum versetzten Gitter
 Drängelgitter	BNP:3::trailer=10 24398,4842
