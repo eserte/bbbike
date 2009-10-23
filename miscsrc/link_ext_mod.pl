@@ -2,15 +2,14 @@
 # -*- perl -*-
 
 #
-# $Id: link_ext_mod.pl,v 1.9 2007/12/26 21:37:19 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000,2001,2002 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: eserte@cs.tu-berlin.de
-# WWW:  http://user.cs.tu-berlin.de/~eserte/
+# Mail: slaven@rezic.de
+# WWW:  http://bbbike.sourceforge.net
 #
 
 # link external modules from ~/lib/perl to ~/src/bbbike/lib
