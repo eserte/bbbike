@@ -382,6 +382,9 @@ sub add_button {
 	      [Button => "GPS data viewer",
 	       -command => sub { gps_data_viewer() },
 	      ],
+	      [Button => "Set Garmin device defaults",
+	       -command => sub { garmin_devcap() },
+	      ],
 	      "-",
 	      [Cascade => "Rare or old", -menu => $rare_or_old_menu],
 	      "-",
@@ -1935,6 +1938,46 @@ sub show_bbbike_suggest_toplevel {
 				     });
     $w->pack;
     $w->focus;
+}
+
+######################################################################
+# Garmin devcap
+
+sub garmin_devcap {
+    require YAML::Syck;
+    my $devcap_data = YAML::Syck::LoadFile("$FindBin::RealBin/misc/garmin_devcap.yaml");
+    my $t = $main::top->Toplevel(-title => 'Garmin devices');
+    my $lb = $t->Scrolled('Listbox', -scrollbars => 'osoe', -selectmode => 'single')->pack(qw(-fill both -expand 1));
+    my @data;
+    for my $prod_id (sort { $b <=> $a } keys %$devcap_data) { # younger devices (with larger product ids) first
+	my $name = $devcap_data->{$prod_id}->{name};
+	push @data, [$name, $prod_id];
+	$lb->insert('end', $name);
+    }
+    my $f = $t->Frame->pack(qw(-fill x));
+    $f->Button(-text => 'Use device',
+	       -command => sub {
+		   my($sel) = $lb->curselection;
+		   if (!defined $sel) {
+		       main::status_message('Please select a device', 'err');
+		       return;
+		   }
+		   my $device_data = $devcap_data->{$data[$sel]->[1]};
+		   for my $def (['wpts_in_route',       \$main::gps_waypoints],
+				['wpt_length',          \$main::gps_waypointlength],
+				['wpt_charset',         \$main::gps_waypointcharset],
+				['unique_route_number', \$main::gps_needuniqueroutenumber],
+			       ) {
+		       my($data_key, $ref) = @$def;
+		       if (exists $device_data->{$data_key}) {
+			   $$ref = $device_data->{$data_key};
+		       }
+		   }
+	       })->pack(qw(-side left));
+    $f->Button(-text => 'Cancel',
+	       -command => sub {
+		   $t->destroy;
+	       })->pack(qw(-side left));
 }
 
 1;
