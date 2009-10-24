@@ -211,3 +211,31 @@ berlin-test-osm2bbd:
 
 berlin-test-osm2bbd-postprocess2:
 	${MISCSRCDIR}/osm2bbd-postprocess /tmp/data_berlin
+
+######################################################################
+# Building for garmin with custom .typ file
+# Currently works only on mosor
+
+bbbikemap-for-garmin:	/tmp/gmapsupp.img
+	@echo "Now do:"
+	@echo "   mount /mnt/garmin"
+	@echo "   cp /tmp/gmapsupp.img /mnt/garmin/garmin/gmapsupp.img"
+	@echo "   umount /mnt/garmin"
+
+.PHONY: ../tmp/bbbike_routable.osm
+../tmp/bbbike_routable.osm:
+	cd ../data && ${MAKE} ../tmp/bbbike_routable.osm
+
+/tmp/gmapsupp.img: /tmp/bbbike_routable.img
+	[ -r /home/eserte/src/bbbike-aux/mkgmap/typ/M000002a.TYP ]
+	cd /tmp && \
+	    /usr/lib/jvm/java-6-sun/bin/java -jar /opt/mkgmap-r1247/mkgmap.jar --family-id=42 \
+	       --gmapsupp bbbike_routable.img /home/eserte/src/bbbike-aux/mkgmap/typ/M000002a.TYP
+
+/tmp/bbbike_routable.img: ../tmp/bbbike_routable.osm
+	[ -r /home/eserte/src/bbbike-aux/mkgmap/srt-style ]
+	cd /tmp && \
+	    /usr/lib/jvm/java-6-sun/bin/java -Xmx1024m -jar /opt/mkgmap-r1247/mkgmap.jar --mapname=12117006 \
+	        --latin1 --draw-priority=5 --style-file=/home/eserte/src/bbbike-aux/mkgmap/srt-style \
+	        /home/eserte/src/bbbike/tmp/bbbike_routable.osm  && \
+	    mv -f 12117006.img bbbike_routable.img 
