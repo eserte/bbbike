@@ -1479,12 +1479,14 @@ sub tk_interface {
 	$NumEntry = "NumEntry";
 	@NumEntryArgs = (-minvalue => 1, -maxvalue => 20);
     }
-    Tk::grid($t->Label(-text => M"Routennummer"),
-	     $t->$NumEntry(-textvariable => \$gps_route_info->{Number},
-			   @NumEntryArgs,
-			   -validate => 'all',
-			   -vcmd => sub { $_[0] =~ /^\d*$/ }),
-	     -sticky => "w");
+    if ($main::gps_needuniqueroutenumber) {
+	Tk::grid($t->Label(-text => M"Routennummer"),
+		 $t->$NumEntry(-textvariable => \$gps_route_info->{Number},
+			       @NumEntryArgs,
+			       -validate => 'all',
+			       -vcmd => sub { $_[0] =~ /^\d*$/ }),
+		 -sticky => "w");
+    }
     Tk::grid($t->Label(-text => M"Waypoint-Suffix"),
 	     $t->Entry(-textvariable => \$gps_route_info->{WptSuffix}),
 	     -sticky => "w");
