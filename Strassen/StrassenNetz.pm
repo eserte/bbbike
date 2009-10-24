@@ -1466,7 +1466,7 @@ sub simplify_route_to_name {
     my($route_to_name_ref, %args) = @_;
     my @new_route_to_name;
     for(my $i=0; $i<=$#$route_to_name_ref; $i++) {
-	my $e0 = $route_to_name_ref->[$i-1] if $i > 0;
+	my $e0; $e0 = $route_to_name_ref->[$i-1] if $i > 0;
 	my $e = $route_to_name_ref->[$i];
 	my $combine = 0;
     CHECK_COMBINE: {

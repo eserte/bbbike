@@ -3,6 +3,7 @@
 # mapping: product id -> device capabilities
 # general notes:
 # - route name length is 13 for all checked devices
+# XXX garmin.c in gpsbabel has much more information available
 111:
   name: emap
   wpts_in_route: 50

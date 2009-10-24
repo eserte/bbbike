@@ -16342,7 +16342,7 @@ sub search_route {
     my($start, $ziel, $via_arr, $continue, %args) = @_;
     return if $in_search;
     $in_search++;
-    my(@via) = @$via_arr if defined $via_arr;
+    my @via; @via = @$via_arr if defined $via_arr;
 
     destroy_delayed_restack();
 

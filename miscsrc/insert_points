@@ -550,7 +550,7 @@ sub process {
 			       : '(B)?'
 			      ); # XXX right? ''; # XXX
 	    my $map_from = "$map_char_rx$from";
-	    my $map_to   = "$map_char_rx$to" if defined $to;
+	    my $map_to; $map_to = "$map_char_rx$to" if defined $to;
 	    open(F, $file) or do {
 		my $msg = "Can't open file <$file>";
 		warn "$msg.\n";

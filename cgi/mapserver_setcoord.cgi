@@ -51,7 +51,7 @@ if ($set eq 'ziel') {
     $q2->param("mapext", param("imgext")) if defined param("imgext");
     push_INC();
     require BBBikeMapserver;
-    my $scope = BBBikeMapserver::scope_by_map(param("map"))
+    my $scope; $scope = BBBikeMapserver::scope_by_map(param("map"))
 	if defined param("map");
     $q2->param("scope", $scope)
 	if defined $scope;

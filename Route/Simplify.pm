@@ -169,7 +169,7 @@ sub Route::simplify_for_gps {
 	    my $this_street_info = $routetoname->[$n];
 	    my $prev_street_info = $routetoname->[$n-1];
 	    my $main_street = $this_street_info->[&StrassenNetz::ROUTE_NAME];
-	    my $prev_street = $prev_street_info->[&StrassenNetz::ROUTE_NAME] if $n > 0;
+	    my $prev_street; $prev_street = $prev_street_info->[&StrassenNetz::ROUTE_NAME] if $n > 0;
 	    # The < or > prefix for showing the direction
 	    # XXX should use a better "situation_at_point" function
 	    if (($prev_street_info->[&StrassenNetz::ROUTE_ANGLE]||0) >= 30) {

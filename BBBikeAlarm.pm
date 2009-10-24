@@ -180,7 +180,7 @@ sub enter_alarm {
 		$w->configure
 		    (-vcmd =>
 		     sub {
-			 my $adjust_subset_choice = 1
+			 my $adjust_subset_choice; $adjust_subset_choice = 1
 			     if ($_[4] == 0 || $_[4] == 1) && $w eq $e; # INSERT or DELETE
 			 $w->after(10, sub {
 					 $get_end_zeit->(0);

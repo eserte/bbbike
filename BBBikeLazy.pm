@@ -476,7 +476,7 @@ sub BBBikeLazy::plotstr_on_demand {
 				      my $cat = $rec->[Strassen::CAT()];
 				      return if $cat =~ m{::igndisp};
 				      return if ($rec->[Strassen::NAME()] =~ m{\s+-\s+}); # ignore everything looking like "A - B"
-				      my $use_bold = 1 if $cat =~ m{^(H|HH|B)$};
+				      my $use_bold; $use_bold = 1 if $cat =~ m{^(H|HH|B)$};
 				      SRTShortcuts::street_name_experiment_one($rec->[Strassen::NAME()], $rec->[Strassen::COORDS()], $use_bold);
 				  };
 		$draw_sub = sub { my $r = shift;

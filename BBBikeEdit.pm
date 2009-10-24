@@ -4441,7 +4441,7 @@ sub add_cross_road_blockings {
 	Karte::preload(":all");
 	require BBBikeEditUtil;
 	$map = $Karte::map{$maptoken};
-	my $mapprefix = $map->coordsys if $map;
+	my $mapprefix; $mapprefix = $map->coordsys if $map;
 	for my $f (@orig_files) {
 	    my $baseprefix = { BBBikeEditUtil::base() }->{$f};
 	    if (defined $mapprefix && $mapprefix ne $baseprefix) {

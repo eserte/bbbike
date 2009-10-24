@@ -161,7 +161,7 @@ while(defined($_ = $nextline->())) {
 	next if $only_result && (!has_params_for_search($qs) || $qs =~ /output_as=print/);
 
 	my $request = $qs; #XXX? uri_unescape($1);
-	my $req_line = $_ if $netscape;
+	my $req_line; $req_line = $_ if $netscape;
 
 	my $req_url_part = $request;
 	if (keys %add_param) {

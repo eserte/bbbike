@@ -180,7 +180,7 @@ sub get_all_subparts { # ... recursive
     my %res = ($name => undef);
     if (exists $cityparts{$name}) {
 	foreach my $cp (@{ $cityparts{$name} }) {
-	    my @sub_res = $class->get_all_subparts($cp)
+	    my @sub_res; @sub_res = $class->get_all_subparts($cp)
 		unless $cp eq $name;
 	    @res{@sub_res} = undef;
 	}
