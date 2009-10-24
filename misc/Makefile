@@ -17,7 +17,7 @@ TARGETS=	ampelschaltung.txt
 WRITEABLE=	chmod u+w,ugo+r
 READONLY=	chmod ugo+r,ugo-w
 
-all:	check targets
+all:	check validate targets
 
 targets:	${TARGETS}
 
@@ -29,6 +29,9 @@ ampelschaltung.txt:	ampelschaltung-orig.txt
 
 # checks
 check:	.check_ampelschaltung2
+
+validate:
+	pkwalify -f garmin_devcap.kwalify garmin_devcap.yaml
 
 .check_ampelschaltung2:	ampelschaltung-orig.txt ${DATADIR}/ampeln-orig
 	$(CHECK_POINTS) -ampelschaltung2 -warn \

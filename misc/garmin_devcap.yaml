@@ -1,0 +1,46 @@
+---
+# Garmin device capabilities
+# mapping: product id -> device capabilities
+# general notes:
+# - route name length is 13 for all checked devices
+111:
+  name: emap
+  wpts_in_route: 50
+  wpt_length: 10
+  wpt_charset: simpleascii
+  unique_route_number: 0
+  protocols: &EtrexVenture_protocols
+    wpt_data: D108
+    trk_data: D301
+    trk_hdr: D310
+154:
+  name: etrex Venture
+  protocols: *EtrexVenture_protocols
+169:
+  name: etrex Vista
+  wpts_in_route: 50
+  wpt_length: 10
+  protocols: *EtrexVenture_protocols
+248:
+  name: gecko 201
+  protocols: *EtrexVenture_protocols
+292:
+  name: GPSmap 60CSx
+  protocols: *EtrexVenture_protocols
+295:
+  name: etrex yellow
+  protocols: *EtrexVenture_protocols
+315:
+  name: etrex Vista C
+  protocols: *EtrexVenture_protocols
+694:
+  name: etrex Vista HCx
+  wpts_in_route: 250
+  wpts_in_routable_route: 50
+  wpt_length: 14
+  wpt_charset: latin1
+  unique_route_number: 0
+  protocols: &EtrexVistaHCx_protocols
+    wpt_data: D110
+    trk_data: D301
+    trk_hdr: D310

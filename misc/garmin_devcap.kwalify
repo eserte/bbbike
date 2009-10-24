@@ -1,0 +1,46 @@
+---
+type: map
+mapping:
+  # Key is product id
+  =:
+    type: map
+    mapping:
+
+      name:
+        type: text
+        required: yes
+
+      wpts_in_route:
+        type: int
+
+      # Max. number of waypoints in route so that device
+      # is still able to do automatic routing (follow street mode)
+      wpts_in_routable_route:
+        type: int
+
+      wpt_length:
+        type: int
+
+      wpt_charset:
+        enum:
+          - simpleascii # only uppercase letters
+          - ascii
+          - latin1 # though some characters seem to be forbidden, like < and >
+
+      # True if route number has to be unique, like specified in
+      # the garmin protocol specification.
+      unique_route_number:
+        type: bool
+        enum:
+          - 0
+          - 1
+
+      protocols:
+        type: map
+        mapping:
+          wpt_data:
+            pattern: /^D\d+$/
+          trk_data:
+            pattern: /^D\d+$/
+          trk_hdr:
+            pattern: /^D\d+$/
