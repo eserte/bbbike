@@ -76,7 +76,9 @@ sub BBBikeGPS::gps_interface {
     if ($modobj->can("tk_interface")) {
 	return if !$modobj->tk_interface(-top => $top,
 					 -gpsrouteinfo => $gps_route_info,
-					 -test => $extra_args{-test});
+					 -test => $extra_args{-test},
+					 -file => $file,
+					);
     }
 
     my $routetoname = get_route_simplification_mapping(verbose => 1);
@@ -1435,6 +1437,8 @@ sub dbl_raise {
 use vars qw($old_route_info_name $old_route_info_number $old_route_info_wpt_suffix $old_route_info_wpt_suffix_existing);
 $old_route_info_wpt_suffix_existing=1;
 
+use constant MAX_ROUTE_NAME_LENGTH => 13; # this is OK for most garmin devices
+
 # $self is NOT a BBBikeGPS object here, but GPS::DirectGarmin or so...
 sub tk_interface {
     my($self, %args) = @_;
@@ -1442,7 +1446,22 @@ sub tk_interface {
     my $top = $args{-top} or die "-top arg is missing";
     my $gps_route_info = $args{-gpsrouteinfo} or die "-gpsrouteinfo arg is missing";
     my $oklabel = $args{-oklabel};
-    $gps_route_info->{Name} ||= $old_route_info_name if defined $old_route_info_name;
+    my $file = delete $args{-file}; # only set if saving into a file
+
+    if (!defined $gps_route_info->{Name} || $gps_route_info->{Name} eq '') {
+	# use filename, if existing
+	if (defined $file && $file ne '') {
+	    require File::Basename;
+	    my $base = File::Basename::basename($file);
+	    $base =~ s{\.[^.]+$}{}; # remove suffix, if any
+	    $gps_route_info->{Name} = $base;
+	} elsif ($old_route_info_name) {
+	    $gps_route_info->{Name} = $old_route_info_name;
+	}
+    }
+    $gps_route_info->{Name} = substr($gps_route_info->{Name}, 0, MAX_ROUTE_NAME_LENGTH)
+	if length $gps_route_info->{Name} > MAX_ROUTE_NAME_LENGTH;
+
     $gps_route_info->{Number} ||= $old_route_info_number if defined $old_route_info_number;
     $gps_route_info->{WptSuffix} ||= $old_route_info_wpt_suffix if defined $old_route_info_wpt_suffix;
     $gps_route_info->{WptSuffixExisting} ||= $old_route_info_wpt_suffix_existing if defined $old_route_info_wpt_suffix_existing;
@@ -1451,7 +1470,7 @@ sub tk_interface {
     Tk::grid($t->Label(-text => M"Name der Route"),
 	     my $e = $t->Entry(-textvariable => \$gps_route_info->{Name},
 			       -validate => 'all',
-			       -vcmd => sub { length $_[0] <= 13 }),
+			       -vcmd => sub { length $_[0] <= MAX_ROUTE_NAME_LENGTH }),
 	     -sticky => "w");
     $e->focus;
     my $NumEntry = 'Entry';
