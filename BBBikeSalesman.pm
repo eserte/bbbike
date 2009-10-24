@@ -120,7 +120,11 @@ sub map_mode_activate {
 
     $salesman = new Salesman
 	-net         => $main::net,
-	-addnewpoint => \&main::add_new_point,
+	-addnewpoint => sub { my($net, $point) = @_;
+			      my $xy = main::set_coords_str($main::c); # set_coords_str also handles fragezeichen
+			      return $xy if $xy;
+			      main::add_new_point($net, $point); # fallback to old method
+			  },
 	-tk          => $main::top,
 	-progress    => $main::progress,
 	-searchargs  => \%main::global_search_args;
