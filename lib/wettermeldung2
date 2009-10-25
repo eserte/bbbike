@@ -31,11 +31,9 @@ $logfile               = "$ENV{HOME}/Mail/wetter-errorlog";		#
 $destdir_met            = "$ENV{HOME}/doc/met";				#
 $destfile{'dahlem1'}    = "$destdir_met/wetter-full-$year";		#
 $destfile{'dahlem2'}    = "$destdir_met/wetter-$year";			#
-$destfile{'tempelhof'}  = "$destdir_met/wetter-tempelhof-$year";	#
 $cksumdir               = "$ENV{HOME}/Mail";                            #
 $cksumfile{'dahlem1'}   = "$cksumdir/wetter-cksum-dahlem1"; 		#
 $cksumfile{'dahlem2'}   = "$cksumdir/wetter-cksum-dahlem2"; 		#
-$cksumfile{'tempelhof'} = "$cksumdir/wetter-cksum-tempelhof"; 		#
 #########################################################################
 
 # synop files:
@@ -53,15 +51,10 @@ $www_port{'dahlem1'} = $www_port{'dahlem2'} = 80;
 $loc{'dahlem1'}  = '/de/wetter/wetterbeobachtung/';
 $loc{'dahlem2'}  = '/de/wetter/wetterdaten/';
 
-$www_site{'tempelhof'} = 'www.hundert6.de';
-$www_port{'tempelhof'} = 80;
-$loc{'tempelhof'} = '/b_wett.htm';
-
 ### CONFIG VARS #########################################################
 # path for test file (option -test and -testfile)			#
 $localfile{'dahlem1'}   = "/usr/cache/http/www.met.fu-berlin.de/deutsch/Wetter/beobachtung.html";
 $localfile{'dahlem2'}   = "/usr/cache/http/www.met.fu-berlin.de/deutsch/Wetter/meldungen.html";
-$localfile{'tempelhof'} = "/usr/apache-cache/http:/www.bbtt.com/hundert6/lhwett0.htm";
 #########################################################################
 
 # peacify -w
@@ -140,7 +133,6 @@ sub cmdline_call {
 	    /^-shortverbose$/ && do { $SHORTVERBOSE = 1; last ARGL; };
 	    /^-dahlem1$/ && do { $get_file = 'dahlem1'; last ARGL; };
 	    /^-dahlem2$/ && do { $get_file = 'dahlem2'; last ARGL; };
-	    /^-tempelhof$/ && do { $get_file = 'tempelhof'; last ARGL; };
 	    /^-synop_(.*)$/ && do { $get_file = "synop_$1"; last ARGL; };
 	    /^-newest$/ && do { $newest = 1; last ARGL; };
 	    /^-local$/ && do { $local = 1; last ARGL; };
@@ -324,8 +316,6 @@ sub parse {
 	&parse_dahlem1;
     } elsif ($type eq 'dahlem2') {
 	&parse_dahlem2;
-    } elsif ($type eq 'tempelhof') {
-	&parse_tempelhof;
     } elsif ($type =~ /^synop_(.*)$/) {
 	&parse_synop($1);
     } else {
@@ -752,140 +742,6 @@ sub parse_dahlem2 {
     $line;
 }
 
-sub parse_tempelhof {
-    local($line);
-    local($noparse);
-    local($datum, $uhrzeit, $luftdruck, $temperatur, $luftfeuchtigkeit,
-	  $windrichtung, $windstaerke);
-    $fetch_cmd =
-      ($testfile
-       ? $testfile
-       : ($local
-	  ? $localfile{'tempelhof'}
-	  : &fetch_cmd($www_site{'tempelhof'},
-		       $www_port{'tempelhof'},
-		       $loc{'tempelhof'})
-	 )
-      );
-    open(IN, $fetch_cmd) || return;
-    while(<IN>) {
-	push(@in_file, $_); # für Fehlermeldungen
-	chop;
-
-	if ($noparse) {
-	    # do nothing
-	}
-
-	# Datum und Uhrzeit
-	elsif (/Stand:.*[^\d](\d+)\.(\d+)\.(\d+)\s+(\d+):(\d+)/) {
-	    if (!defined $datum) {
-		$datum = "$1.$2.$3";
-	    } else {
-		&add_problem("Datum doppelt");
-	    }
-	    if (!defined $uhrzeit) {
-		$uhrzeit = sprintf("%d.%02d", $4, $5);
-	    } else {
-		&add_problem("Uhrzeit doppelt");
-	    }
-	    if ($datum eq '01.01.1970') {
-		# das haben sie noch immer nicht hingekriegt :-(
-		return undef;
-	    }
-	}
-	
-	# Luftdruck
-	elsif (/^\s*(\d+)\s+hPa/) {
-	    if (!defined $luftdruck) {
-		$luftdruck = $1;
-		&check_luftdruck;
-	    } else {
-		&add_problem("Luftdruck doppelt");
-	    }
-	}
-	
-	# Temperatur
-	elsif (/^\s*([+\-]?\d+)\s*(&\#176;|°)\s*C/) {
-	    if (!defined $temperatur) {
-		$temperatur = $1;
-	    } else {
-		&add_problem("Temperatur doppelt");
-	    }
-	}
-
-	# Luftfeuchtigkeit
-	elsif (/relative.*Luftfeuchte.*[^\d](\d+)\s*%/) {
-	    if (!defined $luftfeuchtigkeit) {
-		$luftfeuchtigkeit = $1;
-	    } else {
-		&add_problem("Luftfeuchtigkeit doppelt");
-	    }
-	} 
-	
-	# Wind
-	elsif (/weht\s+([a-zA-Z&;\-]+)/) {
-	    if (!defined $windrichtung) {
-		%windrichtungen = 
-		    ('sued', 'S',
-		     'suedwest', 'SW',
-		     'west', 'W',
-		     'nordwest', 'NW',
-		     'nord', 'N',
-		     'nordost', 'NE',
-		     'ost', 'E',
-		     'suedost', 'SE',
-		     'still', '', # windstill (wind wird entfernt)
-		     );
-		local($w) = "\L$1";
-		$w =~ s/&uuml;/ue/i; # ü-Umlaut umwandeln
-		$w =~ s/-//g; # Bindestrich entfernen
-		# süd-west-(wind) oder (wind)still-(wind) entfernen
-		$w =~ s/wind//ig;
-		$windrichtung = $windrichtungen{$w};
-		if (!defined $windrichtung) {
-		    &add_problem("Windrichtung nicht erkannt!");
-		}
-	    } else {
-		&add_problem("Windrichtung doppelt");
-	    }
-	}
-	elsif (/St(&auml;|ä)rke\s+(\d+)/) {
-	    if (!defined $windstaerke) {
-		$windstaerke = $2;
-	    } else {
-		&add_problem("Windstaerke doppelt");
-	    }
-	}
-        elsif (/Die\s+Wettervorhersage/) {
-	    # In der Wettervorhersage können Termperatur- und Windangaben
-	    # nochmal vorkommen. Deshalb Abbruch.
-	    $noparse = 1;
-	}
-    }
-
-    close(IN);
-
-    if (!defined $datum) { &add_problem("Datum fehlt"); }
-    if (!defined $uhrzeit) { &add_problem("Uhrzeit fehlt"); }
-    if (!defined $luftdruck) { &add_problem("Luftdruck fehlt"); }
-    if (!defined $temperatur) { &add_problem("Temperatur fehlt"); }
-    if (!defined $luftfeuchtigkeit) { &add_problem("Luftfeuchtigkeit fehlt"); }
-    if (!defined $windrichtung) { &add_problem("Windrichtung fehlt"); }
-    if (!defined $windstaerke) { &add_problem("Windstaerke fehlt"); }
-
-    if (defined $datum && defined $uhrzeit &&
-	(defined $luftdruck || defined $temperatur)) {
-	$line = "$datum|$uhrzeit|$temperatur|$luftdruck|$windrichtung|$windstaerke|$luftfeuchtigkeit";
-    }
-
-    &cleanup;
-
-    &print_verbose if $VERBOSE;
-    &print_shortverbose if $SHORTVERBOSE;
-
-    $line;
-}
-
 sub add_problem {
     local($problem) = @_;
     push(@mail_problem, $problem);
@@ -1017,11 +873,10 @@ sub site_reachable {
 # the string argument passed to it is printed at the end, with a nl.
 sub usage {
     local($problem) = @_;
-    die "usage: $0 [-d] [-dahlem1|-dahlem2|-tempelhof] [-lastinfile]
+    die "usage: $0 [-d] [-dahlem1|-dahlem2] [-lastinfile]
           [-store] [-verbose|-shortverbose] [-local] [-testfile file]
 -dahlem1       holt umfangreiche Wettermeldung (Berlin-Dahlem)
 -dahlem2       holt einfache Wettermeldung (Berlin-Dahlem)
--tempelhof     Wettermeldung des DWD für den Flughafen Tempelhof
 -newest        gibt die neueste Meldung aus
 -store         speichert die Daten in der vorgesehenen Datei in
                 $destdir_met ab
@@ -1183,7 +1038,7 @@ sub get_newest {
     local($act_line, $act_source);
     local($source);
     if (@sources == 0) {
-	@sources = ('dahlem1', 'dahlem2', 'tempelhof');
+	@sources = ('dahlem1', 'dahlem2');
     }
     foreach $source (@sources) {
 	local($line) = &parse($source);
