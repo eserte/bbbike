@@ -359,6 +359,8 @@ sub build_prereq {
 }
 
 sub make_bundle {
+    die "This bundle action should not be called on a Windows system"
+	if $^O eq 'MSWin32';
     make_general_bundle(0, "BBBike.pm");
 }
 
