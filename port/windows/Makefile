@@ -59,6 +59,19 @@ devel:
 
 ######################################################################
 # new rules for strawberry dist
+#
+# HOWTO use this rules
+# - install a portable strawberry into \cygwin\home\eserte\strawberry
+# - create \cygwin\home\eserte\bbbikewindist
+# - copy ...\strawberry\perl into \cygwin\home\eserte\bbbikewindist\perl
+# - copy (stripped down) gpsbabel distro into \cygwin\home\eserte\bbbikewindist\gpsbabel
+# - open a cygwin shell
+# - run in bbbike directory
+#    perl Makefile.PL
+# - then run these rules
+#    cd port/windows
+#    make bbbike-strawberry-dist make-bbbike-dist
+# - 
 
 bbbike-strawberry-dist: make-BBBikeVar.tpl
 	tpage --debug=undef --define use_strawberry=1 --define VERSION=3.17-DEVEL --eval_perl bbbike.tpl.iss > bbbike.iss
