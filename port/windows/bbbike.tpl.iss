@@ -43,6 +43,11 @@ Source: "C:\cygwin\home\eserte\bbbikewindist\bbbike\*"; DestDir: "{app}\bbbike";
 Source: "C:\cygwin\home\eserte\bbbikewindist\gpsbabel\*"; DestDir: "{app}\gpsbabel"; Flags: ignoreversion recursesubdirs createallsubdirs
 ;;; XXX should contain a rather minimal strawberry. maybe strip some default modules there, but add essential like Tk and some nice-to-haves
 Source: "C:\cygwin\home\eserte\bbbikewindist\perl\*"; DestDir: "{app}\perl"; Flags: ignoreversion recursesubdirs createallsubdirs
+;;; additional files in c\bin required by XML::LibXML
+;;; currently not in bbbikewindist, only in strawberry directory
+Source: "C:\cygwin\home\eserte\strawberry\c\bin\libxml2.dll"; DestDir: "{app}\c\bin"; Flags: ignoreversion
+Source: "C:\cygwin\home\eserte\strawberry\c\bin\iconv.dll"; DestDir: "{app}\c\bin"; Flags: ignoreversion
+Source: "C:\cygwin\home\eserte\strawberry\c\bin\zlib1.dll"; DestDir: "{app}\c\bin"; Flags: ignoreversion
 [% ELSE -%]
 [%
 	FOR f = files
