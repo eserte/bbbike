@@ -873,6 +873,7 @@ if (!defined $bbbike_html) {
 $is_beta = $bbbike_url =~ m{bbbike\d(\.en)?\.cgi}; # bbbike2.cgi ...
 $bbbike2_url = $bbbike_url;
 if (!$is_beta) {
+    local $^W; # $1 may be undef
     $bbbike2_url =~ s{bbbike(\.en)?\.cgi}{bbbike2$1.cgi};
 }
 
