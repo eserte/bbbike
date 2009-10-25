@@ -15,12 +15,13 @@ use ExtUtils::Manifest;
 use File::Basename;
 use Getopt::Long;
 
-use lib ".."; # falls als make_bundle gestartet
+#use lib ".."; # falls als make_bundle gestartet
 
 use BBBikeVar;
 
-my %opt;
-GetOptions(\%opt) or die "usage?";
+my $action;
+GetOptions('action=s' => \$action)
+    or die "usage: $^X $0 [-action make_bundle|make_small_bundle|make_windist_bundle|make_radzeit_bundle]";
 
 my $author = 'Slaven Rezic (' . $BBBike::EMAIL . ')',
 my $abstract = "BBBike - ein Routenplaner für Radfahrer in Berlin und Brandenburg";
@@ -274,18 +275,22 @@ my $admin_makefile = "./Makefile.admin.PL";
 
 my $make_bundle;
 my $type_bundle = 0;
-if ($0 =~ /make_bundle/) {
-    $make_bundle = "normal";
-    $type_bundle = 0;
-} elsif ($0 =~ /make_small_bundle/) {
-    $make_bundle = "small";
-    $type_bundle = 0;
-} elsif ($0 =~ /make_radzeit_bundle/) {
-    $make_bundle = "radzeit";
-    $type_bundle = REQ_BBBIKE_RADZEIT;
-} elsif ($0 =~ /make_windist_bundle/) {
-    $make_bundle = "windist";
-    $type_bundle = REQ_BBBIKE_WINDIST;
+if ($action) {
+    if ($action eq 'make_bundle') {
+	$make_bundle = "normal";
+	$type_bundle = 0;
+    } elsif ($action eq 'make_small_bundle') {
+	$make_bundle = "small";
+	$type_bundle = 0;
+    } elsif ($action eq 'make_radzeit_bundle') {
+	$make_bundle = "radzeit";
+	$type_bundle = REQ_BBBIKE_RADZEIT;
+    } elsif ($action eq 'make_windist_bundle') {
+	$make_bundle = "windist";
+	$type_bundle = REQ_BBBIKE_WINDIST;
+    } else {
+	die "Unhandled action '$action'";
+    }
 }
 
 my(%prereq, @prereq);
@@ -370,6 +375,8 @@ sub make_windist_bundle {
 sub make_general_bundle {
     my($type, $file, %args) = @_;
 
+    chdir "Bundle" or die "Can't chdir into Bundle directory: $!";
+
     my $modules_string = "\n";
     foreach my $prereq (@prereq) {
 	if ($type != 0) {
@@ -411,6 +418,7 @@ sub make_general_bundle {
 				   \%args,
 				 }, \$out) or die $t->error;
     open(BUNDLE, ">$file") or die "Can't write bundle $file: $!";
+    binmode BUNDLE;
     print BUNDLE $out;
     close BUNDLE;
     0;
