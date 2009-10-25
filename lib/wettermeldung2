@@ -87,7 +87,7 @@ eval '
 	$user_agent .= " $mailto";
     }
 ';
-warn $@ if $@;
+warn $@ if $@ && $^O ne 'MSWin32';
 
 $nomail = 0; # verhindert das Abschicken von Mails
 
