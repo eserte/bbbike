@@ -171,6 +171,20 @@ BEGIN {
     }
 }
 
+# Add ...\c\bin directory for Strawberry Perl on Windows.
+# This directory contains shared libraries e.g. libxml2.
+# Also the ...\perl\bin may be missing.
+if ($^O eq 'MSWin32' && $^X =~ m{(.*)(\\perl\\bin)\\}) {
+    my $c_bin_dir = "$1\\c\\bin";
+    my $perl_bin_dir = "$1$2";
+    if (-d $c_bin_dir) {
+	$ENV{PATH} .= ";$c_bin_dir";
+    }
+    if (-d $perl_bin_dir) {
+	$ENV{PATH} .= ";$perl_bin_dir";
+    }
+}
+
 #XXX for now disabled ... still too many bugs floating around -> what bugs?
 #use Tk::ErrorDialog; # XXX is this OK?
 use Tk::Canvas;
@@ -19228,7 +19242,7 @@ sub show_logo { # und About
 	}
 	# Are we running an emulation?
 	# This could be wrong, e.g. if cygwin's uname is
-	# in the PATH, but Winn32 perl is running,
+	# in the PATH, but Win32 perl is running,
 	# hence the "maybe"
 	if (is_in_path("uname")) {
 	    chomp(my $real_os = `uname`);
