@@ -42,8 +42,10 @@ OutputManifestFile=SETUP-MANIFEST
 Source: "C:\cygwin\home\eserte\bbbikewindist\bbbike\*"; DestDir: "{app}\bbbike"; Flags: ignoreversion recursesubdirs createallsubdirs
 ;;;
 ;;; XXX should contain an additional a notice where to get the complete distro and sources
+;;; Note: libexpat.dll also exists in perl\bin (part of XML::Parser), so no
+;;; duplication necessary
 Source: "C:\cygwin\home\eserte\bbbikewindist\gpsbabel\*"; DestDir: "{app}\gpsbabel"; [% -%]
-    Excludes: "gpsbabel.html"; Flags: ignoreversion recursesubdirs createallsubdirs
+    Excludes: "gpsbabel.html,libexpat.dll"; Flags: ignoreversion recursesubdirs createallsubdirs
 ;;;
 ;;; XXX should contain a rather minimal strawberry. maybe strip some default modules there, but add essential like Tk and some nice-to-haves
 Source: "C:\cygwin\home\eserte\bbbikewindist\perl\*"; DestDir: "{app}\perl"; [% ~%]
