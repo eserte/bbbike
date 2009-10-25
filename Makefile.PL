@@ -208,6 +208,8 @@ my @req_table =
    'Berechnung von Entfernungen für polare Koordinaten, möglicherweise schneller als Math::Trig'],
   [qw/Geo::Distance	0.16	all	0	base/,
    'Prereq für Geo::Distance::XS'], # diese Version ohne Warnungen
+  [qw/Geo::METAR        0       all     4       base/,
+   'Wetterdaten im METAR-Format'],
   [qw/Tk::ExecuteCommand	0	all	1	base/,
    'Bessere Fehlerberichte im temp_blockings-Editor'],
   [qw/Algorithm::Diff	0	all	1	base/,

@@ -73,6 +73,8 @@ Tie::IxHash	- Damit Direktiven in Straßen-Daten geordnet bleiben
 
 GPS::Garmin	- für GPS-Upload
 
+Geo::METAR	- Wetterdaten im METAR-Format
+
 
 =head1 DESCRIPTION
 
