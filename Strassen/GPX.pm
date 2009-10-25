@@ -280,6 +280,8 @@ sub _bbd2gpx_libxml {
     my $xy2longlat = delete $args{xy2longlat};
     my $meta = delete $args{-meta} || {};
     my $as = delete $args{-as} || 'track';
+    my $name = delete $args{-name};
+    my $number = delete $args{-number};
 
     my $has_encode = eval { require Encode; 1 };
     if (!$has_encode) {
@@ -338,6 +340,8 @@ sub _bbd2gpx_libxml {
     if ($as eq 'route') {
 	my $rtexml = $gpx->addNewChild(undef, "rte");
 	_add_meta_attrs_libxml($rtexml, $meta);
+	$rtexml->appendTextChild('name', $name) if defined $name && $name ne '';
+	$rtexml->appendTextChild('number', $number) if defined $number && $number ne '';
 	for my $wpt (@wpt) {
 	    my $rteptxml = $rtexml->addNewChild(undef, "rtept");
 	    $rteptxml->setAttribute("lat", $wpt->{coords}[1]);
@@ -354,6 +358,8 @@ sub _bbd2gpx_libxml {
 	if (@trkseg) {
 	    my $trkxml = $gpx->addNewChild(undef, "trk");
 	    _add_meta_attrs_libxml($trkxml, $meta);
+	    $trkxml->appendTextChild('name', $name) if defined $name && $name ne '';
+	    $trkxml->appendTextChild('number', $number) if defined $number && $number ne '';
 	    for my $trkseg (@trkseg) {
 		my $trksegxml = $trkxml->addNewChild(undef, "trkseg");
 		for my $wpt (@{ $trkseg->{coords} }) {

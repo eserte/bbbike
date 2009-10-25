@@ -1646,7 +1646,10 @@ sub tk_interface {
 	my($ofh,$ofile) = File::Temp::tempfile(SUFFIX => ".gpx",
 					       UNLINK => 1);
 	main::status_message("Could not create temporary file: $!", "die") if !$ofh;
-	print $ofh $s->bbd2gpx(-as => "route");
+	print $ofh $s->bbd2gpx(-as => "route",
+			       -name => $simplified_route->{routename},
+			       -number => $args{-routenumber},
+			      );
 	close $ofh;
 	my $gpsb = GPS::Gpsbabel->new;
 	my $dev = !$args{'-gpsdevice'} || $args{'-gpsdevice'} =~ /usb/i ? "usb:" : $args{'-gpsdevice'};
