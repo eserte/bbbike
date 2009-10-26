@@ -166,12 +166,12 @@ while(1) {
 	    }
 	}
     } elsif ($notin_net) {
-    CHECK: {
+    CHECK_IT: {
 	    for my $i (1 .. $#{ $r->[Strassen::COORDS] }) {
 		my($xy1,$xy2) = ($r->[Strassen::COORDS][$i-1],
 				 $r->[Strassen::COORDS][$i]);
 		if (exists $notin_net->{Net}{$xy1}{$xy2}) {
-		    last CHECK;
+		    last CHECK_IT;
 		}
 	    }
 	    $new_s->push($r);

@@ -390,7 +390,7 @@ sub combine {
     if ($self->{DataFmt} eq FMT_COORDS_WITH_INDEX) {
 	push @copy_indexes, LOOK_INDEX;
     }
- CHECK:
+ CHECK_IT:
     foreach my $s (@in) {
 	if (exists $out{$s->[LOOK_NAME]}) {
 	    foreach my $r (@{ $out{$s->[LOOK_NAME]} }) {
@@ -402,7 +402,7 @@ sub combine {
 			unless $eq_cp;
 		    push @{ $r->[LOOK_ZIP] }, $s->[LOOK_ZIP]
 			unless $eq_zp;
-		    next CHECK;
+		    next CHECK_IT;
 		}
 	    }
 	}

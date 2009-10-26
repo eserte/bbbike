@@ -45,7 +45,7 @@ SKIP: {
     is(ref $s2, 'Strassen::DB_File');
     ok($s2->isa('Strassen'));
 
- CHECK: {
+ CHECK_IT: {
 	$s->init;
 	$s2->init;
 	while(1) {
@@ -53,24 +53,24 @@ SKIP: {
 	    my $r2 = $s2->next;
 	    if (!@{ $r->[Strassen::COORDS] }) {
 		ok(!@{ $r2->[Strassen::COORDS] });
-		last CHECK;
+		last CHECK_IT;
 	    }
 	    if ($r->[Strassen::NAME] ne $r2->[Strassen::NAME]) {
 		is($r->[Strassen::NAME], $r2->[Strassen::NAME]);
-		last CHECK;
+		last CHECK_IT;
 	    }
 	    if ($r->[Strassen::CAT] ne $r2->[Strassen::CAT]) {
 		is($r->[Strassen::CAT], $r2->[Strassen::CAT]);
-		last CHECK;
+		last CHECK_IT;
 	    }
 	    if (@{$r->[Strassen::COORDS]} != @{$r2->[Strassen::COORDS]}) {
 		is(@{$r->[Strassen::COORDS]}, @{$r2->[Strassen::COORDS]});
-		last CHECK;
+		last CHECK_IT;
 	    }
 	    for my $i (0 .. $#{$r->[Strassen::COORDS]}) {
 		if ($r->[Strassen::COORDS][$i] ne $r2->[Strassen::COORDS][$i]) {
 		    is_deeply($r->[Strassen::COORDS],$r2->[Strassen::COORDS]);
-		    last CHECK;
+		    last CHECK_IT;
 		}
 	    }
 	}

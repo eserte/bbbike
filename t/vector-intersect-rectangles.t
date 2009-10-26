@@ -60,19 +60,19 @@ if ($opt{interactive}) {
 	$c->createRectangle(@rect2);
 	$c->configure(-bg => "#c0c0c0");
 
-#   CHECK: {
+#   CHECK_IT: {
 #  	my($xa1,$ya1,$xa2,$ya2) = @rect1;
 
 #  	$c->createLine($xa1,$ya1,$xa2,$ya1, -fill => "blue");$c->update;
-#  	warn "yeah", last CHECK if VectorUtil::vector_in_grid($xa1,$ya1,$xa2,$ya1, @rect2);
+#  	warn "yeah", last CHECK_IT if VectorUtil::vector_in_grid($xa1,$ya1,$xa2,$ya1, @rect2);
 #  	scalar <STDIN>;
 
 #  	$c->createLine($xa2,$ya1,$xa2,$ya2, -fill => "blue");$c->update;
-#  	warn "yeah", last CHECK if VectorUtil::vector_in_grid($xa2,$ya1,$xa2,$ya2, @rect2);
+#  	warn "yeah", last CHECK_IT if VectorUtil::vector_in_grid($xa2,$ya1,$xa2,$ya2, @rect2);
 #  	scalar <STDIN>;
 
 #  	$c->createLine($xa2,$ya2,$xa1,$ya2, -fill => "blue");$c->update;
-#  	warn "yeah", last CHECK if VectorUtil::vector_in_grid($xa2,$ya2,$xa1,$ya2, @rect2);
+#  	warn "yeah", last CHECK_IT if VectorUtil::vector_in_grid($xa2,$ya2,$xa1,$ya2, @rect2);
 #  	scalar <STDIN>;
 
 #  #    return 1 if vector_in_grid($xa1,$ya2,$xa1,$ya1, @rect2);$c->update;
