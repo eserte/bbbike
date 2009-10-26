@@ -16639,4 +16639,13 @@ EOF
 	2::temp 6694,12627 7039,12314
 EOF
      },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Glasbläserallee wegen Bauarbeiten gesperrt',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: last_checked: 2009-10-26
+userdel	2::inwork 14835,10272 14888,10385
+EOF
+     },
     );

@@ -1635,15 +1635,7 @@ userdel	q4::inwork; 10829,18083 10907,18109 10938,18147 10989,18172 11137,18358 
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1256335200,
-         'text' => 'L 339 Neuer Hönower Weg OD Hoppegarten, zw. Berliner Str. u. Industriestr. Deckenerneuerung Vollsperrung 05.10.2009-23.10.2009 ',
-         'from' => 1254607200,
-         'id' => 1927,
-         'data' => 'userdel	q4::inwork 26880,11479 26625,10953
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1258153200,
          'text' => 'L 339 Neuer Hönower Weg OD Hoppegarten, zw. Industriestr. u. Wiesenstr. Deckenerneuerung Vollsperrung 26.10.2009-13.11.2009 ',
@@ -1717,15 +1709,7 @@ userdel	2::inwork -7582,-46937 -7831,-47100 -7975,-47313 -8299,-47368
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1256421600,
-         'text' => 'B 115 Baruth - Petkus OD Merzdorf Deckenerneuerung Vollsperrung 17.10.2009-24.10.2009 ',
-         'from' => 1255644000,
-         'id' => 1944,
-         'data' => 'userdel	q4::inwork 12648,-45054 12332,-44991 12078,-45032 11929,-45268
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'Message-ID: <001e01ca4b11$15559d20$4000d760$@grittner@adfc-berlin.de>',
          'until' => 1258369200,
@@ -1767,16 +1751,7 @@ userdel	2::inwork 3314,15782 3564,16294
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1256529600,
-         'text' => 'Sperrungen an der Kreuzung Karl-Marx-Allee/Otto-Braun-Straße einschließlich Grunerstraße bis Alexanderstraße, 23.10.2009, 19.00 Uhr bis 26.10.2009, 05.00 Uhr ',
-         'from' => 1256144400,
-         'id' => 1951,
-         'data' => 'userdel	2::inwork 11275,13026 11228,12951 11134,12793
-userdel	3 11139,13008 11228,12951 11295,12915
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1257134400,
          'text' => 'Sperrungen an der Kreuzung Karl-Marx-Allee/Otto-Braun-Straße einschließlich Grunerstraße bis Alexanderstraße, 30.10.2009, 19.00 Uhr bis 2.11.2009, 05.00 Uhr ',
@@ -1854,6 +1829,16 @@ userdel	q4::inwork; 9574,12578 9601,12380
          'from' => undef,
          'id' => 1959,
          'data' => '	2::temp 6694,12627 7039,12314
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => undef,
+         'text' => 'Glasbläserallee wegen Bauarbeiten gesperrt',
+         'from' => undef,
+         'id' => 1960,
+         'data' => '#: last_checked: 2009-10-26
+userdel	2::inwork 14835,10272 14888,10385
 ',
          'type' => 'gesperrt'
        }
