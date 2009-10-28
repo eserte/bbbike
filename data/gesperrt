@@ -845,11 +845,9 @@ Samländische Str. -> Berliner Str.: Straßenbahntrasse	3::igndisp 10706,17391 109
 Straßenbahntrasse	3nocross::ignrte 13753,16000 13826,16026 14014,16106
 Berliner Allee -> Herbert-Baum-Str.: Straßenbahntrasse	3::igndisp 14014,16106 13826,16026 13869,15912
 Herbert-Baum-Str. -> Berliner Allee: Straßenbahntrasse	3::igndisp 13869,15912 13826,16026 13753,16000
-Straßenbahntrasse	3nocross::ignrte 10920,13139 11015,13264 11087,13359 11149,13442
-Karl-Liebknecht-Str. -> Hirtenstr.: Straßenbahntrasse	3::igndisp 10920,13139 11015,13264 10923,13317
-Hirtenstr. -> Karl-Liebknecht-Str.: Straßenbahntrasse	3::igndisp 10923,13317 11015,13264 11087,13359
+Straßenbahntrasse	3nocross::ignrte 11149,13442 11087,13359 11021,13271
 Karl-Liebknecht-Str. -> Wadzeckstr.: Straßenbahntrasse	3::igndisp 11149,13442 11087,13359 11187,13289
-Wadzeckstr. -> Karl-Liebknecht-Str.: Straßenbahntrasse	3::igndisp 11187,13289 11087,13359 11015,13264
+Wadzeckstr. -> Karl-Liebknecht-Str.: Straßenbahntrasse	3::igndisp 11187,13289 11087,13359 11021,13271
 Gitter auf Mittelstreifen	3nocross::ignrte 8659,16327 8543,16364 8516,16393 8486,16425
 Gropiusstr. -> Badstr.: Gitter auf Mittelstreifen	3::igndisp 8389,16214 8543,16364 8516,16393
 Gropiusstr. -> Travemünder Str.: Gitter auf Mittelstreifen	3::igndisp 8389,16214 8543,16364 8592,16406
