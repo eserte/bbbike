@@ -103,7 +103,7 @@ use vars qw($VERSION $VERBOSE $WAP_URL
 	    @weak_cache @no_cache %proc
 	    $bbbike_script $cgi $port
 	    $search_algorithm $use_background_image
-	    $use_apache_session $apache_session_module $cookiename
+	    $use_apache_session $now_use_apache_session $apache_session_module $cookiename
 	    $bbbike_temp_blockings_file $bbbike_temp_blockings_optimized_file
 	    @temp_blocking $temp_blocking_epoch
 	    $use_cgi_compress_gzip $use_bbbikedraw_compress $max_matches
@@ -847,6 +847,9 @@ undef $g_str; # XXX because it may already contain landstrassen etc.
 undef $net; # dito
 undef $kr;
 undef $comments_net; # XXX because it may or may not contain qualitaet_l
+
+# reset per request
+$now_use_apache_session = $use_apache_session;
 
 #$str = new Strassen "strassen" unless defined $str;
 #$str = new Strassen::Lazy "strassen" unless defined $str;
@@ -6730,10 +6733,10 @@ sub upload_button_html {
 
 sub tie_session {
     my $id = shift;
-    return unless $use_apache_session;
+    return unless $now_use_apache_session;
 
     if (!eval qq{ require $apache_session_module }) {
-	$use_apache_session = undef;
+	$now_use_apache_session = $use_apache_session = undef; # permanent error
 	warn $@ if $debug;
 	return;
     }
@@ -6742,14 +6745,27 @@ sub tie_session {
 	return tie_session_counted($id);
     }
 
-    tie my %sess, $apache_session_module, $id,
-	{ FileName => "/tmp/bbbike_sessions_" . $< . ".db", # XXX make configurable
-	  LockDirectory => '/tmp',
-	} or do {
-	    $use_apache_session = undef;
-	    warn $! if $debug;
-	    return;
-	};
+    my %sess;
+    eval {
+	tie %sess, $apache_session_module, $id,
+	    { FileName => "/tmp/bbbike_sessions_" . $< . ".db", # XXX make configurable
+	      LockDirectory => '/tmp',
+	    } or do {
+		$use_apache_session = undef; # possibly transient error
+		warn $! if $debug;
+		return;
+	    };
+    };
+    if ($@) {
+	if (!defined $id) {
+	    # this is fatal
+	    die "Cannot create new session: $@";
+	} else {
+	    # may happen for old sessions, e.g. in links, so
+	    # do not die
+	    warn "Cannot load old session, maybe already garbage-collected: $@";
+	}
+    }
 
     return \%sess;
 }
@@ -6780,19 +6796,37 @@ sub tie_session_counted {
 #     close STDOUT;
 #     open(STDOUT, ">&OLDOUT") or die $!;
 
-    tie my %sess, $apache_session_module, $id,
-	{ Directory => $directory,
-	  DirLevels => $dirlevels,
-	  CounterFile => $counterfile,
-	  AlwaysSave => 1,
-	  #HostID => undef,
-	  #HostURL => sub { undef },
-	  Timeout => 10,
-	} or do {
-	    $use_apache_session = undef;
-	    warn $! if $debug;
-	    return;
-	};
+    my %sess;
+    eval {
+	tie %sess, $apache_session_module, $id,
+	    { Directory => $directory,
+	      DirLevels => $dirlevels,
+	      CounterFile => $counterfile,
+	      AlwaysSave => 1,
+	      #HostID => undef,
+	      #HostURL => sub { undef },
+	      Timeout => 10,
+	    } or do {
+		$use_apache_session = undef; # possibly transient error
+		warn $! if $debug;
+		return;
+	    };
+    };
+    if ($@) { # I think this normally does not happen
+	if (!defined $id) {
+	    # this is fatal
+	    die "Cannot create new session: $@";
+	} else {
+	    # may happen for old sessions, e.g. in links, so
+	    # do not die
+	    warn "Cannot load old session, maybe already garbage-collected: $@";
+	}
+    }
+    if (defined $id && keys %sess == 1) {
+	# we silently assume that the session is invalid
+	$use_apache_session = undef;
+	return undef;
+    }
 
     return \%sess;
 }
