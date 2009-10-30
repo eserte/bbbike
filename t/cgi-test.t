@@ -227,7 +227,14 @@ SKIP: {
 	my $resp = $ua->request($req);
 	ok($resp->is_success, 'Ausweichroute request with 5 km/h was successful');
 	$content = $resp->decoded_content;
-	like_html($content, qr{Eine bessere Ausweichroute wurde nicht gefunden}, 'Expected Ausweichroute text (no better route at 5 km/h)');
+	like_html($content, qr{Eine bessere Ausweichroute wurde nicht gefunden}, 'Expected Ausweichroute text (no better route at 5 km/h)')
+	    or do {
+		if (!eval { require Apache::Session; 1 } &&
+		    !eval { require Apache::Session::Counted; 1 }
+		   ) {
+		    diag 'Please install either Apache::Session or Apache::Session::Counted';
+		}
+	    };
     }
 }
 
