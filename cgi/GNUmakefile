@@ -53,5 +53,5 @@ fix-permissions: rights
 
 rights:
 	chmod ugo+rx *.cgi
-	chmod ugo+r,ugo-x *.cgi.config
+	chmod ugo+r *.cgi.config
 	[ ! -e ../tmp/www ] || chmod 777 ../tmp/www
