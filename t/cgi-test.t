@@ -9,11 +9,12 @@ use strict;
 
 BEGIN {
     if (!eval q{
+	use HTML::Form;
 	use LWP::UserAgent;
 	use Test::More;
 	1;
     }) {
-	print "1..0 # skip: no LWP::UserAgent and/or Test::More modules\n";
+	print "1..0 # skip: no HTML::Form, LWP::UserAgent and/or Test::More modules\n";
 	exit;
     }
 }
@@ -30,7 +31,7 @@ sub bbbike_cgi_search ($$);
 sub bbbike_cgi_geocode ($$);
 
 #plan 'no_plan';
-plan tests => 39;
+plan tests => 52;
 
 if (!GetOptions(get_std_opts("cgidir"),
 	       )) {
@@ -47,6 +48,13 @@ if (!GetOptions(get_std_opts("cgidir"),
 my $testcgi = "$cgidir/bbbike-test.cgi";
 my $ua = LWP::UserAgent->new;
 $ua->agent("BBBike-Test/1.0");
+
+{
+    my $resp = bbbike_cgi_geocode +{start => 'Kottbusser Damm/Maybachstr.',
+				    ziel => 'Maybachstr./Schinkelstr.',
+				   }, 'Find streets with crossing notation';
+    on_crossing_pref_page($resp);
+}
 
 {
     my $resp = bbbike_cgi_geocode +{start => 'Mehringdamm',
@@ -192,6 +200,38 @@ SKIP: {
     like_html($content, qr{\(kein Zeitverlust\)});
 }
 
+{ # Ausweichroute
+    my %route_endpoints = (startc => '11543,10015',
+			   zielc  => '11880,9874',
+			  );
+    my $resp = bbbike_cgi_search +{ %route_endpoints }, 'Ausweichroute should follow';
+    on_routelist_page($resp);
+    my $content = $resp->decoded_content;
+    like_html($content, qr{Maybachufer: Di und Fr 11.00-18.30 Wochenmarkt, Behinderungen möglich}, 'Found Ausweichroute reason');
+    like_html($content, qr{Ausweichroute suchen}, 'Found Ausweichroute button');
+    my($ausweichroute_form) = grep { $_->attr('name') eq 'Ausweichroute' } HTML::Form->parse($resp);
+    ok($ausweichroute_form, 'Found form with name "Ausweichroute"');
+
+    {
+	my $req = $ausweichroute_form->click;
+	my $resp = $ua->request($req);
+	ok($resp->is_success, 'Ausweichroute request was successful');
+	$content = $resp->decoded_content;
+	like_html($content, qr{Mögliche Ausweichroute}, 'Expected Ausweichroute text');
+	like_html($content, qr{links.*in die.*Schinkelstr}, 'Expected route');
+    }
+
+    {
+	$ausweichroute_form->param('pref_speed', 5);
+	my $req = $ausweichroute_form->click;
+	my $resp = $ua->request($req);
+	ok($resp->is_success, 'Ausweichroute request with 5 km/h was successful');
+	$content = $resp->decoded_content;
+	like_html($content, qr{Eine bessere Ausweichroute wurde nicht gefunden}, 'Expected Ausweichroute text (no better route at 5 km/h)');
+    }
+}
+
+
 sub bbbike_cgi_search ($$) {
     my($params, $testname) = @_;
     $params->{pref_seen} = 1;
@@ -219,6 +259,12 @@ sub on_crossing_pref_page {
 sub not_on_crossing_pref_page {
     my($resp) = @_;
     unlike_html($resp->decoded_content, 'Genaue Kreuzung angeben:', 'Not on crossing/pref page');
+}
+
+sub on_routelist_page {
+    my($resp) = @_;
+    like_html($resp->decoded_content, qr{Route von .* bis}, 'On routelist page (title)');
+    like_html($resp->decoded_content, qr{Fahrzeit}, 'On routelist page (Fahrzeit)');
 }
 
 __END__

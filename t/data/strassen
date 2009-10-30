@@ -1,4 +1,4 @@
-#: #: -*- coding: iso-8859-1 -*-
+#: #: -*- mode: bbbike; coding: iso-8859-1 -*-
 #: title: Strassen-Koordinaten (standard coords)
 #: title.de: Straßen und Plätze in Berlin
 #: title.en: Streets and places in Berlin
@@ -24,3 +24,7 @@ Ostkreuz	NN 14764,10877 14794,10844
 Umfahrung Ostkreuz	H 14794,10844 15263,10747
 Brücken Rummelsburg	H 15263,10747 15279,10862
 Umfahrung Ostkreuz	H 15279,10862 15113,10916 14918,11249 14811,11067 14752,11041
+# Tests for temp blockings
+Maybachufer	N 11543,10015 11669,9987 11880,9874
+Kottbusser Damm	HH 11543,10015 11623,9841
+Schinkelstr.	N 11623,9841 11734,9856 11880,9874
