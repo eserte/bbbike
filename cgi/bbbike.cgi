@@ -3424,7 +3424,6 @@ sub search_coord {
 		 (!defined $tb->{until} || $t <= $tb->{until})) ||
 		$is_test_mode
 		) {
-		#XXX del: my $type = $tb->{type} || 'gesperrt';
 		push @current_temp_blocking, $tb;
 		$tb->{'index'} = $index;
 	    }
@@ -3460,8 +3459,25 @@ sub search_coord {
 		$tb->{strobj} = $strobj;
 		if (@custom) {
 		    if (exists $custom{'temp-blocking-' . $tb->{'index'}}) {
-			my $type = $tb->{type} || 'gesperrt';
-			push @{ $custom_s{$type} }, $strobj;
+			my %strobj_per_type;
+			$strobj->init;
+			while(1) {
+			    my $r = $strobj->next;
+			    last if !@{ $r->[Strassen::COORDS] };
+			    my $type;
+			    if ($r->[Strassen::CAT] =~ m{^q}) {
+				$type = 'handicap';
+			    } else {
+				$type = 'gesperrt';
+			    }
+			    if (!$strobj_per_type{$type}) {
+				$strobj_per_type{$type} = Strassen->new;
+			    }
+			    $strobj_per_type{$type}->push($r);
+			}
+			while(my($type, $strobj_per_type) = each %strobj_per_type) {
+			    push @{ $custom_s{$type} }, $strobj_per_type;
+			}
 		    }
 		} else {
 		    $tb->{net} = StrassenNetz->new($strobj);
