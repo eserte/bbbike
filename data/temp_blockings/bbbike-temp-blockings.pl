@@ -14845,8 +14845,8 @@ userdel	2::inwork 12431,52894 12615,52952 13967,53380 15301,53802 15886,54280 17
 EOF
      },
      { from  => 1247954400, # 2009-07-19 00:00
-       until => 1258326000, # 2009-11-16 00:00
-       text  => 'B 102 Treuenbrietzener Str. OD Jüterbog, zw. Mendelsohnstr. und Bülowstr. Straßenausbau Vollsperrung 20.07.2009-15.11.2009 ',
+       until => 1260658800, # 2009-12-13 00:00
+       text  => 'B 102 Treuenbrietzener Str. OD Jüterbog, zw. Mendelsohnstr. und Bülowstr. Straßenausbau Vollsperrung 20.07.2009-12.12.2009 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork -12541,-46115 -13108,-46122
@@ -15868,12 +15868,12 @@ EOF
 userdel	2::inwork 35214,-41158 35289,-41439 35915,-41259 36010,-41272 36387,-40961 36499,-41097 37581,-41158
 EOF
      },
-     { from  => 1252274400, # 2009-09-07 00:00
+     { from  => 1254952800, # 2009-10-08 00:00
        until => 1259622000, # 2009-12-01 00:00
-       text  => 'L 792 Dorfstraße OD Blankenfelde, zw. Zossener Damm u. H.-Heine-Str. Straßenausbau halbseitig gesperrt; Einbahnstraße 08.09.2009-30.11.2009 ',
+       text  => 'L 792 Dorfstraße OD Blankenfelde, zw. Zossener Damm u. H.-Heine-Str. Straßenausbau Vollsperrung 09.10.2009-30.11.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork; 10448,-7582 10115,-8276
+userdel	q4::inwork 10448,-7582 10115,-8276
 EOF
      },
      { from  => 1242684000, # 2009-05-19 00:00
@@ -16267,8 +16267,8 @@ EOF
 userdel	2::inwork 82521,-12031 82191,-12275
 EOF
      },
-     { from  => 1257462000, # 2009-11-06 00:00
-       until => 1257721200, # 2009-11-09 00:00
+     { from  => 1257195560, # 2009-11-06 00:00 1257462000
+       until => 1257195564, # 2009-11-09 00:00 1257721200
        text  => 'B 087 Frankfurt/Oder - Müllrose zw. Markendorf u. Hohenwalde Straßenbau Durchlass Vollsperrung 07.11.2009-08.11.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -16358,8 +16358,8 @@ userdel	q4::inwork 31377,34072 31293,33987
 EOF
      },
      { from  => 1254607200, # 2009-10-04 00:00
-       until => 1256335200, # 2009-10-24 00:00
-       text  => 'L 339 Neuer Hönower Weg OD Hoppegarten, zw. Berliner Str. u. Industriestr. Deckenerneuerung Vollsperrung 05.10.2009-23.10.2009 ',
+       until => 1257548400, # 2009-11-07 00:00
+       text  => 'L 339 Neuer Hönower Weg OD Hoppegarten, zw. Berliner Str. u. Industriestr. Deckenerneuerung Vollsperrung 05.10.2009-06.11.2009 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork 26880,11479 26625,10953
@@ -16643,6 +16643,96 @@ EOF
        data  => <<EOF,
 #: last_checked: 2009-10-26
 userdel	2::inwork 14835,10272 14888,10385
+EOF
+     },
+     { from  => 1257194796, # 2009-11-02 21:46
+       until => 1258325999, # 2009-11-15 23:59
+       text  => 'Edisonstr. (Köpenick) Richtung Süden zwischen Helmholtzstr. und Siemensstr. Bauarbeiten, Fahrtrichtung gesperrt (bis Mitte 11/2009)',
+       type  => 'handicap',
+       source_id => 'IM_014548',
+       data  => <<EOF,
+userdel	q4::inwork; 17919,6968 17962,6674
+EOF
+     },
+     { from  => 1257194861, # 2009-11-02 21:47
+       until => 1259708399, # 2009-12-01 23:59
+       text  => 'Friedrichstr. (Mitte) Richtung Wedding zwischen Dorotheenstr. und Georgenstr. Baustelle, Fahrtrichtung gesperrt (bis Anfang 12.2009)',
+       type  => 'handicap',
+       source_id => 'IM_014503',
+       data  => <<EOF,
+userdel	q4::inwork; 9330,12529 9314,12652
+EOF
+     },
+     { from  => 1255212000, # 2009-10-11 00:00
+       until => 1259190000, # 2009-11-26 00:00
+       text  => 'B 101 Zinnaer Str. OD Luckenwalde, zw. Kirchstr. und Am Nuthefließ Straßenbau Vollsperrung 12.10.2009-25.11.2009 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork -4630,-36012 -4603,-35730
+EOF
+     },
+     { from  => 1255816800, # 2009-10-18 00:00
+       until => 1257980400, # 2009-11-12 00:00
+       text  => 'B 179 zw. Gröditsch u. Neu Lübbenau, ab OL Kuschkow Deckeneinbau Vollsperrung 19.10.2009-11.11.2009 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 46830,-37598 47572,-37563 48907,-37829
+EOF
+     },
+     { from  => 1256684400, # 2009-10-28 00:00
+       until => 1257634800, # 2009-11-08 00:00
+       text  => 'B 103 Kyritz - Pritzwalk zw. Kollrep u. Abzw. K7012 Deckenerneuerung Vollsperrung 29.10.2009-07.11.2009 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -67657,68360 -67922,68633 -69298,70111 -70126,70529 -70280,70719 -70377,70966 -70384,71350
+EOF
+     },
+     { from  => 1257634800, # 2009-11-08 00:00
+       until => 1259362800, # 2009-11-28 00:00
+       text  => 'B 103 Meyenburg - Plau am See zw. Meyenburg und Ganzlin Deckenerneuerung Vollsperrung 09.11.2009-27.11.2009 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -70491,100364 -70046,101896
+EOF
+     },
+     { from  => 1257030000, # 2009-11-01 00:00
+       until => 1262300400, # 2010-01-01 00:00
+       text  => 'B 112 OU Guben - OU Neuzelle zw. Abzw.Wellmitz und Abzw. Streichwitz Straßenneubau Vollsperrung 02.11.2009-31.12.2009 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 96951,-34887 97016,-36424 97032,-36743 97476,-37327 97680,-37821
+EOF
+     },
+     { from  => 1258239600, # 2009-11-15 00:00
+       until => 1261177200, # 2009-12-19 00:00
+       text  => 'B 122 Zechlinerhütte - Wesenberg zw. Abzw. Kleinzerlang und Prebelowbrücke Deckenerneuerung Vollsperrung 16.11.2009-18.12.2009 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -26520,83231 -26098,84240 -26120,84667 -26316,84900
+EOF
+     },
+     { from  => 1256425200, # 2009-10-25 01:00
+       until => 1257634800, # 2009-11-08 00:00
+       text  => 'B 158 Oderberg - Angermünde zw. OA Parstein u. OE Neuendorf Straßenbau Vollsperrung 26.10.2009-07.11.2009 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 54050,56075 53725,56812 53450,57200 53250,57425 52950,58000 52740,58576 52499,58861
+EOF
+     },
+     { from  => 1256598000, # 2009-10-27 00:00
+       until => 1257548400, # 2009-11-07 00:00
+       text  => 'K 6303 Brücke zw. Brieselang und Nauen Straßenerneuerung Vollsperrung 28.10.2009-06.11.2009 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -20109,20341 -19128,19920
+EOF
+     },
+     { from  => 1257030000, # 2009-11-01 00:00
+       until => 1258326000, # 2009-11-16 00:00
+       text  => 'L 049 Berliner Straße OL Lübbenau, Bahnübergang, zw. Bahnhofstr. u. Berl. Str. Gleisbauarbeiten Vollsperrung 02.11.2009-15.11.2009 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 49774,-59756 49226,-59451 47862,-59500
 EOF
      },
     );
