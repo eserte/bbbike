@@ -13537,13 +13537,10 @@ userdel	q4::inwork 14530,11137 14465,11195
 EOF
      },
      { from  => undef, # 
-       until => Time::Local::timelocal(reverse(2009-1900,10-1,31,23,59,59)), # XXX
+       until => 1257190766, # Time::Local::timelocal(reverse(2009-1900,10-1,31,23,59,59)), # XXX
        text  => 'Jessnerstr. wegen Bauarbeiten in Richtung Süden nicht befahrbar, bis Oktober 2009',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2009-10-15
-#: next_check: 2009-11-01
-#: XXX nach Beendigung der Bauarbeiten bleibt wahrscheinlich die gesamte Straße asphaltiert, mit einigen Aufpflasterungen
 userdel	q4::inwork; 15080,11905 14977,11754 14941,11689 14849,11539
 EOF
      },
