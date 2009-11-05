@@ -1556,15 +1556,7 @@ userdel	q4::inwork; 10829,18083 10907,18109 10938,18147 10989,18172 11137,18358 
        undef,
        undef,
        undef,
-       {
-         'until' => 1257202800,
-         'text' => 'B 198 zw. Prenzlau und Dedelow grundh. Straßebau, Radwegbau Vollsperrung 05.10.2009-02.11.2009 ',
-         'from' => 1254607200,
-         'id' => 1932,
-         'data' => 'userdel	2::inwork 36927,105345 36726,106236 36665,106354 36137,106832 35674,106889 35287,106742
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1815,6 +1807,72 @@ userdel	2::inwork 14835,10272 14888,10385
          'from' => 1257030000,
          'id' => 1971,
          'data' => 'userdel	2::inwork 49774,-59756 49226,-59451 47862,-59500
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_014555',
+         'until' => 1257980400,
+         'text' => 'Str. des 17. Juni und Ebertstr. (Tiergarten) in beiden Richtungen zwischen Y.-Rabin-Str. und Brandenburger Tor Veranstaltung, Straße vollständig gesperrt, auch Ebertstr. zwischen Dorotheenstr. und Behrenstr. (bis 11.11.2009 nachts)',
+         'from' => 1257404794,
+         'id' => 1972,
+         'data' => 'userdel	2::temp 8610,12254 8538,12245 8214,12205 8089,12190
+userdel	2::temp 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_014557',
+         'until' => 1257980400,
+         'text' => 'Ebertstr. (Mitte) in beiden Richtungen zwischen Hannah-Arendt-Str. und Behrenstr. Veranstaltung, Straße vollständig gesperrt (auch im weiteren Verlauf bis Dorotheenstr.) (bis 11.11.2009 nachts)',
+         'from' => 1257404868,
+         'id' => 1973,
+         'data' => 'userdel	2::temp 8581,11896 8595,12066 8600,12165
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1259535600,
+         'text' => 'L 060 Ringstr. OD Uebigau, Bereich Markt Weihnachtsmarkt Vollsperrung 28.11.2009-29.11.2009 ',
+         'from' => 1259276400,
+         'id' => 1974,
+         'data' => 'userdel	q4::temp 5358,-90502 5798,-90075
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1257807600,
+         'text' => 'L 239 Kerkow - Joachimsthal Bahnübergang Kerkow Gleiserneuerung Vollsperrung 06.11.2009, 08.11.2009 und 09.11.2009',
+         'from' => 1257375600,
+         'id' => 1975,
+         'data' => 'userdel	2::inwork 48237,70892 48147,70935 48092,70962
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1260313200,
+         'text' => 'L 239 Kerkow - Joachimsthal Bahnübergang Kerkow Gleiserneuerung Vollsperrung 06.12.2009 und 08.12.2009',
+         'from' => 1259967600,
+         'id' => 1976,
+         'data' => 'userdel	2::inwork 48237,70892 48147,70935 48092,70962
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1258326000,
+         'text' => 'L 239 Kerkow - Joachimsthal Bahnübergang Kerkow Gleiserneuerung Vollsperrung 14.11.2009-15.11.2009 ',
+         'from' => 1258066800,
+         'id' => 1977,
+         'data' => 'userdel	2::inwork 48237,70892 48147,70935 48092,70962
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1258498800,
+         'text' => 'L 704 B 87 - Lebusa zw. B 87 und Krassig Radwegneubau an B 87 Vollsperrung 04.11.2009-17.11.2009 ',
+         'from' => 1257202800,
+         'id' => 1978,
+         'data' => 'userdel	2::inwork 6325,-75436 6892,-75008
 ',
          'type' => 'gesperrt'
        }

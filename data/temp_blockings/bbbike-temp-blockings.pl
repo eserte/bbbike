@@ -16735,4 +16735,63 @@ EOF
 userdel	2::inwork 49774,-59756 49226,-59451 47862,-59500
 EOF
      },
+     { from  => 1257404794, # 2009-11-05 08:06
+       until => 1257980400, # 2009-11-12 00:00
+       text  => 'Str. des 17. Juni und Ebertstr. (Tiergarten) in beiden Richtungen zwischen Y.-Rabin-Str. und Brandenburger Tor Veranstaltung, Straße vollständig gesperrt, auch Ebertstr. zwischen Dorotheenstr. und Behrenstr. (bis 11.11.2009 nachts)',
+       type  => 'gesperrt',
+       source_id => 'IM_014555',
+       data  => <<EOF,
+userdel	2::temp 8610,12254 8538,12245 8214,12205 8089,12190
+userdel	2::temp 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165
+EOF
+     },
+     { from  => 1257404868, # 2009-11-05 08:07
+       until => 1257980400, # 2009-11-12 00:00
+       text  => 'Ebertstr. (Mitte) in beiden Richtungen zwischen Hannah-Arendt-Str. und Behrenstr. Veranstaltung, Straße vollständig gesperrt (auch im weiteren Verlauf bis Dorotheenstr.) (bis 11.11.2009 nachts)',
+       type  => 'gesperrt',
+       source_id => 'IM_014557',
+       data  => <<EOF,
+userdel	2::temp 8581,11896 8595,12066 8600,12165
+EOF
+     },
+     { from  => 1259276400, # 2009-11-27 00:00
+       until => 1259535600, # 2009-11-30 00:00
+       text  => 'L 060 Ringstr. OD Uebigau, Bereich Markt Weihnachtsmarkt Vollsperrung 28.11.2009-29.11.2009 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::temp 5358,-90502 5798,-90075
+EOF
+     },
+     { from  => 1257375600, # 2009-11-05 00:00
+       until => 1257807600, # 2009-11-10 00:00
+       text  => 'L 239 Kerkow - Joachimsthal Bahnübergang Kerkow Gleiserneuerung Vollsperrung 06.11.2009, 08.11.2009 und 09.11.2009',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 48237,70892 48147,70935 48092,70962
+EOF
+     },
+     { from  => 1259967600, # 2009-12-05 00:00
+       until => 1260313200, # 2009-12-09 00:00
+       text  => 'L 239 Kerkow - Joachimsthal Bahnübergang Kerkow Gleiserneuerung Vollsperrung 06.12.2009 und 08.12.2009',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 48237,70892 48147,70935 48092,70962
+EOF
+     },
+     { from  => 1258066800, # 2009-11-13 00:00
+       until => 1258326000, # 2009-11-16 00:00
+       text  => 'L 239 Kerkow - Joachimsthal Bahnübergang Kerkow Gleiserneuerung Vollsperrung 14.11.2009-15.11.2009 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 48237,70892 48147,70935 48092,70962
+EOF
+     },
+     { from  => 1257202800, # 2009-11-03 00:00
+       until => 1258498800, # 2009-11-18 00:00
+       text  => 'L 704 B 87 - Lebusa zw. B 87 und Krassig Radwegneubau an B 87 Vollsperrung 04.11.2009-17.11.2009 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 6325,-75436 6892,-75008
+EOF
+     },
     );
