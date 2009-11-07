@@ -287,7 +287,7 @@ sub read_from_fh {
 	    } elsif ($directives_stage eq DIR_STAGE_GLOBAL && $_ =~ /^\#:$/) {
 		$directives_stage = DIR_STAGE_LOCAL;
 	    }
-	    if ($directives_stage eq DIR_STAGE_GLOBAL) {
+	    if ($directives_stage == DIR_STAGE_GLOBAL) {
 		push @{ $global_directives{$directive} }, $value;
 		if ($directive eq 'encoding') {
 		    switch_encoding($fh, $value);
@@ -305,7 +305,7 @@ sub read_from_fh {
 	    }
 	    next;
 	}
-	$directives_stage = DIR_STAGE_LOCAL if $directives_stage eq DIR_STAGE_GLOBAL;
+	$directives_stage = DIR_STAGE_LOCAL if $directives_stage == DIR_STAGE_GLOBAL;
 	last if ($read_only_global_directives);
 	if ($preserve_comments) {
 	    next if m{^\#:}; # directives already handled
