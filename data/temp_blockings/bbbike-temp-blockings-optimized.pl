@@ -1535,15 +1535,7 @@ userdel	q4::inwork; 10829,18083 10907,18109 10938,18147 10989,18172 11137,18358 
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1257548400,
-         'text' => 'L 339 Neuer Hönower Weg OD Hoppegarten, zw. Berliner Str. u. Industriestr. Deckenerneuerung Vollsperrung 05.10.2009-06.11.2009 ',
-         'from' => 1254607200,
-         'id' => 1927,
-         'data' => 'userdel	q4::inwork 26880,11479 26625,10953
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1258153200,
          'text' => 'L 339 Neuer Hönower Weg OD Hoppegarten, zw. Industriestr. u. Wiesenstr. Deckenerneuerung Vollsperrung 26.10.2009-13.11.2009 ',
@@ -1792,15 +1784,7 @@ userdel	2::inwork 14835,10272 14888,10385
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1257548400,
-         'text' => 'K 6303 Brücke zw. Brieselang und Nauen Straßenerneuerung Vollsperrung 28.10.2009-06.11.2009 ',
-         'from' => 1256598000,
-         'id' => 1970,
-         'data' => 'userdel	2::inwork -20109,20341 -19128,19920
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1258326000,
          'text' => 'L 049 Berliner Straße OL Lübbenau, Bahnübergang, zw. Bahnhofstr. u. Berl. Str. Gleisbauarbeiten Vollsperrung 02.11.2009-15.11.2009 ',

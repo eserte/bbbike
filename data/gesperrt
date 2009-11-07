@@ -1365,6 +1365,9 @@ Kleine Gertraudenstr. -> Gertraudenstr.: Mittelstreifen	3::igndisp 10364,11896 1
 breiter Mittelstreifen, enge Querungsmöglichkeit nur für Fußgänger, Bordsteine	3nocross::ignrte 6181,8181 6246,8222 6325,8259
 Nymphenburger Str. -> Heylstr.: breiter Mittelstreifen, enge Querungsmöglichkeit nur für Fußgänger, Bordsteine	3::igndisp 6163,8398 6246,8222 6325,8259
 Heylstr. -> Nymphenburger Str.: breiter Mittelstreifen, enge Querungsmöglichkeit nur für Fußgänger, Bordsteine	3::igndisp 6181,8181 6246,8222 6163,8398
+Mittelstreifen mit Bordsteinen und parkenden Autos	3nocross::ignrte 15899,14598 15972,14681 16035,14748
+Verdener Gasse -> Große-Leege-Str.: Mittelstreifen mit Bordsteinen und parkenden Autos	3::igndisp 15946,14702 15972,14681 16035,14748
+Große-Leege-Str. -> Verdener Gasse: Mittelstreifen mit Bordsteinen und parkenden Autos	3::igndisp 15899,14598 15972,14681 15946,14702
 tragen (ca. 30 Stufen)	0:35:-219 19976,5
 tragen (ca. 30 Stufen)	0:35:-221 19932,61
 tragen (43 Stufen)	0:35:-231 16998,11861
@@ -1518,7 +1521,7 @@ Drängelgitter	BNP:5:72 11010,-378
 Drängelgitter	BNP:5:-53 22280,11284
 Drängelgitter	BNP:5:66 -7228,15504
 Drängelgitter	BNP:5:-249 -7182,15524
-Drängelgitter	BNP:5:-154 14285,12190
+Drängelgitter und Schranke	BNP:5:-154:trailer=15 14285,12190
 Drängelgitter	BNP:5:-60 14060,14986
 Drängelgitter	BNP:5:-210 20586,10935
 Drängelgitter, relativ breite Durchfahrt	BNP:3:66 12363,2367
