@@ -67,6 +67,12 @@ citibank_osm.bbd:	../data_berlin_osm_bbbike/_unhandled
 	perl -nle '/citibank/i and do { s{\tX }{\tIMG:/home/e/eserte/images/icons/citibank.gif }; print }' ../data_berlin_osm_bbbike/_unhandled > citibank_osm.bbd~
 	mv citibank_osm.bbd~ citibank_osm.bbd
 
+upload-personal: $(HOME)/.bbbike/personal.wpt
+	gpsman readput GPSMan WP $(HOME)/.bbbike/personal.wpt
+
+$(HOME)/.bbbike/personal.wpt:	$(HOME)/.bbbike/personal.bbd
+	${GREPSTRASSEN} -catrx ':GPS' $(HOME)/.bbbike/personal.bbd | ${MISCSRCDIR}/bbd2gpsman.pl -symbol danger > $(HOME)/.bbbike/personal.wpt
+
 ######################################################################
 # OSM downloads
 
