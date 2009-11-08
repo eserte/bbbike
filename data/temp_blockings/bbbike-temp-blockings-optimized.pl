@@ -1739,15 +1739,7 @@ userdel	2::inwork 14835,10272 14888,10385
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1257634800,
-         'text' => 'B 103 Kyritz - Pritzwalk zw. Kollrep u. Abzw. K7012 Deckenerneuerung Vollsperrung 29.10.2009-07.11.2009 ',
-         'from' => 1256684400,
-         'id' => 1965,
-         'data' => 'userdel	2::inwork -67657,68360 -67922,68633 -69298,70111 -70126,70529 -70280,70719 -70377,70966 -70384,71350
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1259362800,
          'text' => 'B 103 Meyenburg - Plau am See zw. Meyenburg und Ganzlin Deckenerneuerung Vollsperrung 09.11.2009-27.11.2009 ',
@@ -1775,15 +1767,7 @@ userdel	2::inwork 14835,10272 14888,10385
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1257634800,
-         'text' => 'B 158 Oderberg - Angermünde zw. OA Parstein u. OE Neuendorf Straßenbau Vollsperrung 26.10.2009-07.11.2009 ',
-         'from' => 1256425200,
-         'id' => 1969,
-         'data' => 'userdel	2::inwork 54050,56075 53725,56812 53450,57200 53250,57425 52950,58000 52740,58576 52499,58861
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'until' => 1258326000,
