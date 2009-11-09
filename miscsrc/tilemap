@@ -1,0 +1,175 @@
+#!/usr/bin/perl -w
+# -*- perl -*-
+
+#
+# $Id: tilemap,v 1.7 2005/07/22 23:28:24 eserte Exp $
+# Author: Slaven Rezic
+#
+# Copyright (C) 2002 Slaven Rezic. All rights reserved.
+# This program is free software; you can redistribute it and/or
+# modify it under the same terms as Perl itself.
+#
+# Mail: slaven.rezic@berlin.de
+# WWW:  http://www.rezic.de/eserte/
+#
+
+use strict;
+use Getopt::Long;
+use lib "$ENV{HOME}/lib/perl"; # XXX
+# XXX non-standard modules XXX
+use NetPBM::PurePerl;
+use NetPBM::Pipe;
+use File::Basename;
+
+=head1 NAME
+
+tilemap - split an image into tiles
+
+=head1 SYNOPSIS
+
+    tilemap [-width tilewidth -height tileheight |
+             -geometry tilewidthxtileheight]
+             -image image -destdir directory
+            [-conf outfile] [-name name] [-maxcolors n] [-[no]hardlink]
+
+=cut
+
+my %opt = (maxcolors => 32);
+if (!GetOptions(\%opt,
+		"geometry=s",
+		"width=i", "height=i",
+		"image=s", "destdir=s",
+		"conf=s", "name=s",
+		"maxcolors=i",
+		"hardlink!",
+	       )) {
+    require Pod::Usage;
+    Pod::Usage::pod2usage(1);
+}
+
+if (!$opt{image}) {
+    die "-image not specified";
+}
+if (!$opt{destdir}) {
+    die "-destdir not specified";
+}
+if (!-r $opt{image}) {
+    die "$opt{image} is not readable";
+}
+if (!-d $opt{destdir} || !-w $opt{destdir}) {
+    die "$opt{destdir} is not a directory or not writable";
+}
+if ($opt{geometry}) {
+    ($opt{width}, $opt{height}) = split /x/, $opt{geometry};
+}
+if (!$opt{width} || !$opt{height}) {
+    die "Tile width and/or height is missing";
+}
+
+my %md5; # md5 => file
+if ($opt{hardlink}) {
+    require Digest::MD5;
+}
+
+my $pnmcut = "pnmcut";
+## XXX Not working if wrong architecture. Maybe I should file
+## a request to netpbm some day?
+#if (-x "$ENV{HOME}/src/twistdim/fastpnmcut.$^O") {
+#    $pnmcut = "$ENV{HOME}/src/twistdim/fastpnmcut.$^O";
+#    warn "Using faster pnmcut: $pnmcut\n";
+#}
+
+my $basedest = basename($opt{destdir});
+
+my $tmpfile = "/tmp/tilemap.$$.ppm";
+my $pp = NetPBM::Pipe->create(["file", $opt{image}],
+			      ["file", $tmpfile]);
+warn $pp->cmdline;
+$pp->execute;
+
+my $img = NetPBM::PurePerl->open($tmpfile)
+    or die "Can't load $tmpfile as netpbm file";
+my($img_width, $img_height) = ($img->width, $img->height);
+
+if ($opt{conf}) {
+    open CONF, ">$opt{conf}" or die "Can't write to $opt{conf}: $!";
+    select CONF; $|=1; select STDOUT;
+
+    print CONF <<EOF;
+NAME=$opt{name}
+SIZEX=$opt{width}
+SIZEY=$opt{height}
+ROOTDIR=.
+CITY_X     = $img_width
+CITY_Y     = $img_height
+EOF
+}
+
+my $x = 0;
+my $y = 0;
+my $row = 0;
+my $col = 0;
+
+while ($y < $img_height) {
+    last if ($y + $opt{height} > $img_height); # XXX better solution
+    while ($x < $img_width) {
+	last if ($x + $opt{width} > $img_width); # XXX better solution
+	my $out = "s-$col-$row.xpm";
+	my $out_gz = "$out.gz";
+	print CONF "$col $row $basedest/$out_gz . . 0 0 $opt{width} $opt{height}\n"
+	    if $opt{conf};
+	my $cmd = "$pnmcut $x $y $opt{width} $opt{height} $tmpfile | ppmquant $opt{maxcolors} | ";
+	if (0) { # problems with ppmtoxpm and colormap
+	    $cmd .= "ppmtoxpm > $opt{destdir}/$out";
+	} else {
+	    $cmd .= "convert - xpm:- > $opt{destdir}/$out";
+	}
+	warn "$cmd\n";
+	system($cmd);
+	die "Error while doing <$cmd>: $?" if $? != 0;
+
+    TRY_HARDLINK: {
+	    if ($opt{hardlink}) {
+		my $md5 = md5_file("$opt{destdir}/$out");
+		if (exists $md5{$md5}) {
+		    warn "Hard link $opt{destdir}/$out_gz => $opt{destdir}/$md5{$md5}\n";
+		    unlink "$opt{destdir}/$out_gz";
+		    link "$opt{destdir}/$md5{$md5}", "$opt{destdir}/$out_gz";
+		    last TRY_HARDLINK;
+		}
+		$md5{$md5} = $out_gz;
+	    }
+
+	    my $cmd = "gzip -9f $opt{destdir}/$out";
+	    warn "$cmd\n";
+	    system($cmd);
+	    die "Error while doing <$cmd>: $?" if $? != 0;
+	}
+
+	$x += $opt{width};
+	$col++;
+    }
+    $y += $opt{height};
+    $x = 0;
+    $col = 0;
+    $row++;
+}
+
+close CONF
+    if $opt{conf};
+
+END {
+    unlink $tmpfile if defined $tmpfile;
+}
+
+sub md5_file {
+    my $file = shift;
+    my $ctx = Digest::MD5->new;
+    open(F, $file) or die "Can't open $file: $!";
+    binmode F;
+    $ctx->addfile(\*F);
+    close F;
+    $ctx->digest;
+}
+
+__END__
