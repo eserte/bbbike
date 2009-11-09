@@ -206,7 +206,7 @@ image_brb:
 ######################################################################
 # Overview button
 image_small_berlin:
-	../miscsrc/small_berlinmap.pl -geometry 60x45 -normbg '#c0c0c0' -includepotsdam
+	../miscsrc/small_berlinmap.pl -geometry 60x45 -normbg '#c0c0c0' -fill -includepotsdam
 	cp /tmp/berlin_small.dim images
 	giftopnm /tmp/berlin_small.gif | ppmtoxpm > images/berlin_small.xpm
 
