@@ -27,7 +27,7 @@ small_berlinmap.pl - create a small overview map of Berlin
 			 [-bbox x,y,x,y]
 			 [-imagemagick] [-gif|-xpm]
 			 [-cgisettings] [-customplaces place;place;...]
-			 [-suffix suffix]
+			 [-suffix suffix] [-fill]
 			 [-o prefix]
 
 =head1 DESCRIPTION
@@ -69,6 +69,8 @@ With -cgisettings the standard settings for bbbike.cgi are used.
 
 -suffix: set a suffix for all generated files (usually something like
  _I<width>).
+
+Use -fill to fill the area between borders with normbg.
 
 =head1 OS DEPENDENCIES
 
@@ -141,11 +143,13 @@ my $custom_places;
 my $suffix = "";
 my $datadir;
 my $o_prefix = "/tmp/berlin";
+my $do_fill;
 
 my @orig_ARGV = @ARGV;
 if (!GetOptions("width=i" => \$img_w,
 		"height=i" => \$img_h,
 		"normbg=s" => \$normbg,
+		"fill!" => \$do_fill,
 		"geometry=s" => \$geometry,
 		"includepotsdam!" => \$includepotsdam,
 		"datadir=s" => \$datadir,
@@ -269,7 +273,7 @@ EOF
 
     $draw->draw_map;
     my $gd_img = $draw->{Image};
-    if (0 && $type ne 'hi') { # filling not necessary anymore???
+    if ($do_fill && $type ne 'hi') {
 	no warnings 'uninitialized';
 	if ($draw->{Module} eq 'ImageMagick') {
 	    $gd_img->ColorFloodfill(geometry=>'+'.($w/2).'+'.+($h/2),
