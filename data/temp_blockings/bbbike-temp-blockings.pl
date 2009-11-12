@@ -13248,7 +13248,7 @@ EOF
        text  => 'Reichenberger Str., Einbahnstraße Richtung Kottbusser Tor',
        type  => 'gesperrt',
        data  => <<EOF,
-#: last_checked: 2009-09-22
+#: last_checked: 2009-11-10
 userdel	1::inwork 12229,10014 12398,9938 12556,9862
 EOF
      },
@@ -16792,6 +16792,81 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 6325,-75436 6892,-75008
+EOF
+     },
+     { from  => 1257721200, # 2009-11-09 00:00
+       until => 1262214000, # 2009-12-31 00:00
+       text  => 'Aufgrund einer Veranstaltung sind in der Zeit von 10.11.2009 bis 30.12.2009, 24:00 Uhr folgende Straßenzüge gesperrt: Niederlagstr. zwischen Am Schinkelplatz und Französische Str. Oberwallstr. zwischen Unter den Linden und Französische Str. Bebelplatz zwischen Unter den Linden und Behrenstr.',
+       type  => 'gesperrt',
+       source_id => 'IM_014608',
+       data  => <<EOF,
+userdel	2::temp 9943,12364 9951,12318 9939,12296 9972,12184
+userdel	2::temp 9780,12401 9795,12293 9801,12245 9812,12145
+userdel	2::temp 9852,12409 9869,12297 9890,12161
+EOF
+     },
+     { from  => 1258239600, # 2009-11-15 00:00
+       until => 1258412400, # 2009-11-17 00:00
+       text  => 'B 087 Frankfurt/Oder - Müllrose zw. Markendorf u. Hohenwalde Deckeneinbau Vollsperrung 16.11.2009-16.11.2009 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 83389,-11087 82521,-12031 82191,-12275 81697,-12826
+EOF
+     },
+     { from  => 1257634800, # 2009-11-08 00:00
+       until => 1259362800, # 2009-11-28 00:00
+       text  => 'B 109 Schönwalde - Wandlitz OD Schönwalde Durchlasssanierung Vollsperrung 09.11.2009-27.11.2009 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 12635,32221 12466,30452
+EOF
+     },
+     { from  => 1257462000, # 2009-11-06 00:00
+       until => 1258758000, # 2009-11-21 00:00
+       text  => 'B 115 Baruth - Jüterbog zw. Charlottenfelde und Markendorf Straßenbauarbeiten Vollsperrung 07.11.2009-20.11.2009 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -1480,-46978 897,-46109
+EOF
+     },
+     { from  => 1258585200, # 2009-11-19 00:00
+       until => 1258844400, # 2009-11-22 00:00
+       text  => 'B 115 Baruth - Jüterbog zw. Jüterbog und Markendorf Deckschichteinbau Vollsperrung 20.11.2009-21.11.2009 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -4289,-47091 -5760,-46987 -6787,-46974 -6986,-46942 -7582,-46937 -7831,-47100
+EOF
+     },
+     { from  => 1257807600, # 2009-11-10 00:00
+       until => 1258585200, # 2009-11-19 00:00
+       text  => 'B 158 Bad Freienwalde - Berlin zw. Bad Freienwalde, Abzw. Waldstadt und Forsthaus Deckenerneuerung Vollsperrung 11.11.2009-18.11.2009 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 51252,41977 51162,41743 50650,41400 50271,41315
+EOF
+     },
+     { from  => 1257375600, # 2009-11-05 00:00
+       until => 1258239600, # 2009-11-15 00:00
+       text  => 'B 179 zw. OL Kuschkow u. Neu Lübbenau Deckeneinbau Vollsperrung 06.11.2009-14.11.2009 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 46362,-37400 46830,-37598 47572,-37563 48907,-37829 49139,-37938 49667,-38348
+EOF
+     },
+     { from  => 1254607200, # 2009-10-04 00:00
+       until => 1258326000, # 2009-11-16 00:00
+       text  => 'B 198 zw. Prenzlau und Dedelow grundh. Straßebau, Radwegbau Vollsperrung 05.10.2009-15.11.2009 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 36927,105345 36726,106236 36665,106354 36137,106832 35674,106889
+EOF
+     },
+     { from  => 1257634800, # 2009-11-08 00:00
+       until => 1259967600, # 2009-12-05 00:00
+       text  => 'L 601 Finsterwalde - Doberlug-Kirchhain OD Lugau, zw. Abzw. Hennersdorfer Str. u. Abzw. Ha Straßenbauarbeiten Vollsperrung 09.11.2009-04.12.2009 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 28028,-88225 26392,-88322 25763,-88254 25470,-88145 24969,-87998 24927,-87720
 EOF
      },
     );

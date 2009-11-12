@@ -527,7 +527,7 @@ userdel	1::inwork 10614,19907 10742,19632
          'text' => 'Reichenberger Str., Einbahnstraße Richtung Kottbusser Tor',
          'from' => undef,
          'id' => 1563,
-         'data' => '#: last_checked: 2009-09-22
+         'data' => '#: last_checked: 2009-11-10
 userdel	1::inwork 12229,10014 12398,9938 12556,9862
 ',
          'type' => 'gesperrt'
@@ -1558,25 +1558,8 @@ userdel	q4::inwork; 10829,18083 10907,18109 10938,18147 10989,18172 11137,18358 
        undef,
        undef,
        undef,
-       {
-         'until' => 1257807600,
-         'text' => 'B 115 Baruth - Jüterbog zw. Abzw. Wahlsdorf und Markendorf Straßenbauarbeiten Vollsperrung 12.10.2009-09.11.2009 ',
-         'from' => 1255212000,
-         'id' => 1942,
-         'data' => 'userdel	2::inwork -3854,-46999 -1480,-46978 897,-46109 1296,-45979 2044,-46150
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'until' => 1257721200,
-         'text' => 'B 115 Baruth - Jüterbog zw. Jüterbog und Markendorf Deckschichteinbau Vollsperrung 06.11.2009-08.11.2009 ',
-         'from' => 1257375600,
-         'id' => 1943,
-         'data' => 'userdel	2::inwork -5760,-46987 -6787,-46974 -6986,-46942
-userdel	2::inwork -7582,-46937 -7831,-47100 -7975,-47313 -8299,-47368
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        undef,
        {
          'source_id' => 'Message-ID: <001e01ca4b11$15559d20$4000d760$@grittner@adfc-berlin.de>',
@@ -1730,15 +1713,7 @@ userdel	2::inwork 14835,10272 14888,10385
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1257980400,
-         'text' => 'B 179 zw. Gröditsch u. Neu Lübbenau, ab OL Kuschkow Deckeneinbau Vollsperrung 19.10.2009-11.11.2009 ',
-         'from' => 1255816800,
-         'id' => 1964,
-         'data' => 'userdel	2::inwork 46830,-37598 47572,-37563 48907,-37829
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'until' => 1259362800,
@@ -1778,27 +1753,8 @@ userdel	2::inwork 14835,10272 14888,10385
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_014555',
-         'until' => 1257980400,
-         'text' => 'Str. des 17. Juni und Ebertstr. (Tiergarten) in beiden Richtungen zwischen Y.-Rabin-Str. und Brandenburger Tor Veranstaltung, Straße vollständig gesperrt, auch Ebertstr. zwischen Dorotheenstr. und Behrenstr. (bis 11.11.2009 nachts)',
-         'from' => 1257404794,
-         'id' => 1972,
-         'data' => 'userdel	2::temp 8610,12254 8538,12245 8214,12205 8089,12190
-userdel	2::temp 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'source_id' => 'IM_014557',
-         'until' => 1257980400,
-         'text' => 'Ebertstr. (Mitte) in beiden Richtungen zwischen Hannah-Arendt-Str. und Behrenstr. Veranstaltung, Straße vollständig gesperrt (auch im weiteren Verlauf bis Dorotheenstr.) (bis 11.11.2009 nachts)',
-         'from' => 1257404868,
-         'id' => 1973,
-         'data' => 'userdel	2::temp 8581,11896 8595,12066 8600,12165
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        {
          'until' => 1259535600,
          'text' => 'L 060 Ringstr. OD Uebigau, Bereich Markt Weihnachtsmarkt Vollsperrung 28.11.2009-29.11.2009 ',
@@ -1808,15 +1764,7 @@ userdel	2::temp 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1257807600,
-         'text' => 'L 239 Kerkow - Joachimsthal Bahnübergang Kerkow Gleiserneuerung Vollsperrung 06.11.2009, 08.11.2009 und 09.11.2009',
-         'from' => 1257375600,
-         'id' => 1975,
-         'data' => 'userdel	2::inwork 48237,70892 48147,70935 48092,70962
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1260313200,
          'text' => 'L 239 Kerkow - Joachimsthal Bahnübergang Kerkow Gleiserneuerung Vollsperrung 06.12.2009 und 08.12.2009',
@@ -1841,6 +1789,90 @@ userdel	2::temp 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165
          'from' => 1257202800,
          'id' => 1978,
          'data' => 'userdel	2::inwork 6325,-75436 6892,-75008
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_014608',
+         'until' => 1262214000,
+         'text' => 'Aufgrund einer Veranstaltung sind in der Zeit von 10.11.2009 bis 30.12.2009, 24:00 Uhr folgende Straßenzüge gesperrt: Niederlagstr. zwischen Am Schinkelplatz und Französische Str. Oberwallstr. zwischen Unter den Linden und Französische Str. Bebelplatz zwischen Unter den Linden und Behrenstr.',
+         'from' => 1257721200,
+         'id' => 1979,
+         'data' => 'userdel	2::temp 9943,12364 9951,12318 9939,12296 9972,12184
+userdel	2::temp 9780,12401 9795,12293 9801,12245 9812,12145
+userdel	2::temp 9852,12409 9869,12297 9890,12161
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1258412400,
+         'text' => 'B 087 Frankfurt/Oder - Müllrose zw. Markendorf u. Hohenwalde Deckeneinbau Vollsperrung 16.11.2009-16.11.2009 ',
+         'from' => 1258239600,
+         'id' => 1980,
+         'data' => 'userdel	2::inwork 83389,-11087 82521,-12031 82191,-12275 81697,-12826
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1259362800,
+         'text' => 'B 109 Schönwalde - Wandlitz OD Schönwalde Durchlasssanierung Vollsperrung 09.11.2009-27.11.2009 ',
+         'from' => 1257634800,
+         'id' => 1981,
+         'data' => 'userdel	2::inwork 12635,32221 12466,30452
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1258758000,
+         'text' => 'B 115 Baruth - Jüterbog zw. Charlottenfelde und Markendorf Straßenbauarbeiten Vollsperrung 07.11.2009-20.11.2009 ',
+         'from' => 1257462000,
+         'id' => 1982,
+         'data' => 'userdel	2::inwork -1480,-46978 897,-46109
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1258844400,
+         'text' => 'B 115 Baruth - Jüterbog zw. Jüterbog und Markendorf Deckschichteinbau Vollsperrung 20.11.2009-21.11.2009 ',
+         'from' => 1258585200,
+         'id' => 1983,
+         'data' => 'userdel	2::inwork -4289,-47091 -5760,-46987 -6787,-46974 -6986,-46942 -7582,-46937 -7831,-47100
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1258585200,
+         'text' => 'B 158 Bad Freienwalde - Berlin zw. Bad Freienwalde, Abzw. Waldstadt und Forsthaus Deckenerneuerung Vollsperrung 11.11.2009-18.11.2009 ',
+         'from' => 1257807600,
+         'id' => 1984,
+         'data' => 'userdel	2::inwork 51252,41977 51162,41743 50650,41400 50271,41315
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1258239600,
+         'text' => 'B 179 zw. OL Kuschkow u. Neu Lübbenau Deckeneinbau Vollsperrung 06.11.2009-14.11.2009 ',
+         'from' => 1257375600,
+         'id' => 1985,
+         'data' => 'userdel	2::inwork 46362,-37400 46830,-37598 47572,-37563 48907,-37829 49139,-37938 49667,-38348
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1258326000,
+         'text' => 'B 198 zw. Prenzlau und Dedelow grundh. Straßebau, Radwegbau Vollsperrung 05.10.2009-15.11.2009 ',
+         'from' => 1254607200,
+         'id' => 1986,
+         'data' => 'userdel	2::inwork 36927,105345 36726,106236 36665,106354 36137,106832 35674,106889
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1259967600,
+         'text' => 'L 601 Finsterwalde - Doberlug-Kirchhain OD Lugau, zw. Abzw. Hennersdorfer Str. u. Abzw. Ha Straßenbauarbeiten Vollsperrung 09.11.2009-04.12.2009 ',
+         'from' => 1257634800,
+         'id' => 1987,
+         'data' => 'userdel	2::inwork 28028,-88225 26392,-88322 25763,-88254 25470,-88145 24969,-87998 24927,-87720
 ',
          'type' => 'gesperrt'
        }
