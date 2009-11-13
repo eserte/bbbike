@@ -690,6 +690,7 @@ SEHENSWUERDIGKEIT_IMG_PNG_SRC=	\
 				franzoesischer_dom \
 				friedrichswerdersche_kirche_klein \
 				heilandskirche_sacrow \
+				hubbruecke_karnin \
 				sanssouci \
 				wasserturm_ostkreuz \
 
