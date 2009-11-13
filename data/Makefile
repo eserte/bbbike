@@ -683,13 +683,16 @@ kneipen:	kneipen.yml
 
 ######################################################################
 # DATA-SPECIFIC IMAGES
-SEHENSWUERDIGKEIT_IMG_PNG_SRC=	bodemuseum_klein \
-				wasserturm_ostkreuz \
+SEHENSWUERDIGKEIT_IMG_PNG_SRC=	\
+				bodemuseum_klein \
+				chinesisches_haus \
+				fernsehturm \
+				franzoesischer_dom \
 				friedrichswerdersche_kirche_klein \
 				heilandskirche_sacrow \
 				sanssouci \
-				chinesisches_haus \
-				franzoesischer_dom
+				wasserturm_ostkreuz \
+
 data-images:	${SEHENSWUERDIGKEIT_IMG_PNG_SRC:S/^/sehenswuerdigkeit_img\//:S/$/.gif/}
 
 .for img in ${SEHENSWUERDIGKEIT_IMG_PNG_SRC}
