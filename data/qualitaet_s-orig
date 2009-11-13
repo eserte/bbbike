@@ -1056,7 +1056,11 @@ Malmöer Str.: mäßiges Kopfsteinpflaster	Q2 10225,16436 10254,16363 10281,16263 1
 Sonnenburger Str.: Kopfsteinpflaster	Q2 10564,15721 10550,15610
 Charlottenstr.: mäßiger Asphalt	Q1 9454,12558 9462,12481 9475,12365
 Mohrenstr.: Asphalt	Q0 9220,11781 9418,11804
-Jägerstr.: Asphalt	Q0 9108,11961 9201,11968 9394,11996
+Jägerstr.: Asphalt	Q0 9108,11961 9201,11968
+#: XXX vielleicht nach den Bauarbeiten besser?
+#: next_check: 2010-01-01
+#: last_checked: 2009-11-13
+Jägerstr.: Asphalt mit Schäden	Q1 9201,11968 9394,11996
 Taubenstr.: Asphaltschäden, alte Straßenbahnschienen	Q1 9406,11899 9208,11872 9144,11866
 südlicher Uferweg an der Krummen Lanke: Waldweg, überwiegend OK, einige sandige Stellen	Q1 -1274,4367 -1245,4414 -1185,4450 -1139,4575 -1134,4706 -971,4971 -724,5080 -604,5228 -593,5280 -579,5320
 nördlicher/westlicher Uferweg an der Krummen Lanke: Waldweg, überwiegend OK	Q1 -579,5320 -603,5317 -676,5323 -731,5291 -795,5233 -888,5172 -1098,5062 -1180,5020 -1243,4939 -1298,4815 -1298,4584 -1287,4486 -1272,4450 -1245,4414
@@ -1317,7 +1321,7 @@ Löwestr.: teilweise schlechtes Kopfsteinpflaster	Q3 13279,12639 13357,12473
 Jacobystr.: Beton	Q1 11594,12662 11260,12809 11207,12706
 Parochialstr.: Kopfsteinpflaster	Q2 10954,12394 11040,12415
 Parochialstr.: Asphalt mit Schadstellen	Q1 10831,12371 10954,12394
-Waisenstr.: schlechtes Kopfsteinpflaster	Q3 11056,12461 11025,12450 11040,12415 11094,12243
+Waisenstr.: schlechtes Kopfsteinpflaster	Q3 11056,12461 11025,12450 11040,12415 11049,12386 11094,12243
 Propststr.: Kopfsteinpflaster	Q2 10492,12289 10553,12333 10611,12378 10639,12394
 (Crellestr. - Julius-Leber-Brücke): Verbundsteinpflaster	Q1 7535,9087 7555,8978 7509,8929 7497,8916
 Naumannstr.: Asphalt	Q0 7707,8915 7709,8777
@@ -2692,6 +2696,7 @@ Berkenbrücker Steig: schlechtes Kopfsteinpflaster	Q3 15647,14693 15532,14718
 Berkenbrücker Steig: unebenes kleinteiliges Kopfsteinpflaster	Q2 15532,14718 15383,14759
 (Landsberger Allee - Anton-Saefkow-Platz): Gehwegplatten	Q1 14871,14087 14903,14003
 Sandinostr.: Asphalt	Q0 15706,14752 15580,14880
+(Waisenstr. - Littenstr.): Gehwegplatten	Q1 11049,12386 11084,12395
 ######################### User Contributions #################################
 #: by: Dominik Seelow vvv
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3528,4118 3768,4045

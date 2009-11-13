@@ -7,8 +7,12 @@
 # Vorübergehende Einschränkungen
 #
 #: temporary vvv
-#: last_checked: 2009-10-03
+#: last_checked: 2009-11-13
 Jägerstr.: Bauarbeiten, Fahrbahn Richtung Westen gesperrt	q4::inwork; 9394,11996 9201,11968
+#: last_checked: 2009-11-13
+Glinkastr.: Bauarbeiten, Fahrbahn Richtung Süden gesperrt	q4::inwork; 9201,11968 9208,11872
+#: last_checked: 2009-11-13
+Fahrbahn der Mauerstr. wegen Bauarbeiten gesperrt	q4::inwork 9405,11413 9331,11497
 #: last_checked: 2009-10-18
 #: next_check: 2010-01-01
 Reichstagufer (Mitte): Baustelle, Fahrbahn gesperrt, Fußgänger können passieren	q4::inwork 9209,12795 9280,12883
@@ -568,6 +572,8 @@ Landsberger Allee - Große-Leege-Str.: Gehweg, Radfahrer frei	q1 15920,14357 1590
 Landsberger Allee - Große-Leege-Str.: Gehweg, Radfahrer frei	q1 15902,14498 15896,14548 15899,14598
 Verdener Gasse: enge Straße	q1 15878,14761 15946,14702
 Verdener Gasse: Bordsteine	q3 15946,14702 15972,14681
+#: note: außerdem zu kurz für eine höhere Geschwindigkeit
+(Waisenstr. - Littenstr.): Fußgänger	q3 11049,12386 11084,12395
 ######################### User Contributions #################################
 #: by: Michael Kiekbusch
 #: corrected_by: srt/policy (q4 -> q3-)

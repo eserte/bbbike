@@ -5323,7 +5323,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_003144',
        data  => <<EOF,
-userdel	1::inwork 11323,12484 11209,12430 11092,12375 11056,12461 10954,12635
+userdel	1::inwork 11323,12484 11209,12430 11092,12375 11084,12395 11056,12461 10954,12635
 userdel	1::inwork 10954,12635 11057,12715 11105,12764 11134,12793
 EOF
      },
@@ -14910,16 +14910,15 @@ userdel	2::inwork 12383,-99327 12173,-99115
 EOF
      },
      { from  => 1248200556, # 2009-07-21 20:22
-       until => undef, # was 1257030000, 2009-11-01 00:00, bis Oktober 2009, but seems to be more work...
+       until => 1258131416, # was 1257030000, 2009-11-01 00:00, bis Oktober 2009, but seems to be more work...; -> nach handicap_s-orig gewandert
        text  => 'Fahrbahn der Mauerstr. wegen Bauarbeiten gesperrt ',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2009-10-16
 userdel	q4::inwork 9405,11413 9331,11497
 EOF
      },
      { from  => 1248200777, # 2009-07-21 20:26
-       until => undef, # was 2009-10-01 00:00, 1254348000, bis September 2009, but seems to be more work...
+       until => 1258131029, # was 2009-10-01 00:00, 1254348000, bis September 2009, but seems to be more work... 
        text  => 'Bauarbeiten in der Mohrenstraße, Fahrbahn gesperrt ',
        type  => 'handicap',
        data  => <<EOF,
@@ -16867,6 +16866,14 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 28028,-88225 26392,-88322 25763,-88254 25470,-88145 24969,-87998 24927,-87720
+EOF
+     },
+     { from  => 1258045387, # 2009-11-12 18:03
+       until => 1262300399, # 2009-12-31 23:59
+       text  => 'Voltairestr.: Durchfahrt wegen des Weihnachtsmarkts am Alexanderplatz nicht oder nur schwer möglich',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::temp 11209,12430 11323,12484
 EOF
      },
     );

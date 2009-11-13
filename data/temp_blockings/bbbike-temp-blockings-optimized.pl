@@ -875,26 +875,8 @@ userdel	2::inwork 7160,11225 6851,11346
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => undef,
-         'text' => 'Fahrbahn der Mauerstr. wegen Bauarbeiten gesperrt ',
-         'from' => 1248200556,
-         'id' => 1761,
-         'data' => '#: last_checked: 2009-10-16
-userdel	q4::inwork 9405,11413 9331,11497
-',
-         'type' => 'handicap'
-       },
-       {
-         'until' => undef,
-         'text' => 'Bauarbeiten in der Mohrenstraße, Fahrbahn gesperrt ',
-         'from' => 1248200777,
-         'id' => 1762,
-         'data' => '#: last_checked: 2009-10-21
-userdel	q4::inwork 9418,11804 9220,11781
-',
-         'type' => 'handicap'
-       },
+       undef,
+       undef,
        {
          'until' => undef,
          'text' => 'Die Charlottenstraße ist wegen Bauarbeiten eine Einbahnstraße Richtung Süden',
@@ -1873,6 +1855,15 @@ userdel	2::temp 9852,12409 9869,12297 9890,12161
          'from' => 1257634800,
          'id' => 1987,
          'data' => 'userdel	2::inwork 28028,-88225 26392,-88322 25763,-88254 25470,-88145 24969,-87998 24927,-87720
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1262300399,
+         'text' => 'Voltairestr.: Durchfahrt wegen des Weihnachtsmarkts am Alexanderplatz nicht oder nur schwer möglich',
+         'from' => 1258045387,
+         'id' => 1988,
+         'data' => 'userdel	2::temp 11209,12430 11323,12484
 ',
          'type' => 'gesperrt'
        }
