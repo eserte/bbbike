@@ -688,7 +688,8 @@ SEHENSWUERDIGKEIT_IMG_PNG_SRC=	bodemuseum_klein \
 				friedrichswerdersche_kirche_klein \
 				heilandskirche_sacrow \
 				sanssouci \
-				chinesisches_haus
+				chinesisches_haus \
+				franzoesischer_dom
 data-images:	${SEHENSWUERDIGKEIT_IMG_PNG_SRC:S/^/sehenswuerdigkeit_img\//:S/$/.gif/}
 
 .for img in ${SEHENSWUERDIGKEIT_IMG_PNG_SRC}
