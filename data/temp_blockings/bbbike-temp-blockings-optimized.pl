@@ -539,7 +539,16 @@ userdel	1::inwork 12229,10014 12398,9938 12556,9862
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'IM_011637',
+         'until' => 1262300400,
+         'text' => 'Köthener Str. (Kreuzberg) zwischen Bernburger Str. und Hallesches Ufer Baustelle, Einbahnstraße Richtung Norden (bis Anfang 2010)',
+         'from' => 1238347506,
+         'id' => 1571,
+         'data' => 'userdel	q4::inwork; 8536,11063 8483,10900 8443,10777
+',
+         'type' => 'handicap'
+       },
        undef,
        undef,
        undef,
@@ -815,10 +824,10 @@ userdel	2::inwork 7160,11225 6851,11346
        {
          'source_id' => 'IM_013316',
          'until' => 1262300400,
-         'text' => 'Markgrafenstr. (Mitte) Richtung Behrenstr. zwischen Mohrenstr. und Behrenstr. Baustelle, Fahrtrichtung gesperrt (bis Dezember 2009)',
+         'text' => 'Markgrafenstr. (Mitte) Richtung Behrenstr. zwischen Mohrenstr. und Französische Str. Baustelle, Fahrtrichtung gesperrt (bis Dezember 2009)',
          'from' => 1246916833,
          'id' => 1732,
-         'data' => 'userdel	q4::inwork; 9679,11834 9668,11928 9656,12021 9643,12127 9631,12227
+         'data' => 'userdel	q4::inwork; 9679,11834 9668,11928 9656,12021 9643,12127
 ',
          'type' => 'handicap'
        },
@@ -1188,15 +1197,7 @@ Neuer Garten (am Portierhaus) - Weinmeisterstr.: Weg ist nur zwischen 6 Uhr bis 
        },
        undef,
        undef,
-       {
-         'until' => 1258239600,
-         'text' => 'L 028 L 33, Wriezen - Neureetz OD Alt Märdewitz Grundhafter Straßenausbau Vollsperrung 10.08.2009-14.11.2009 ',
-         'from' => 1249768800,
-         'id' => 1829,
-         'data' => 'userdel	q4::inwork 61432,38883 61546,39041 61413,39860
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1518,15 +1519,7 @@ userdel	q4::inwork; 10829,18083 10907,18109 10938,18147 10989,18172 11137,18358 
          'type' => 'handicap'
        },
        undef,
-       {
-         'until' => 1258153200,
-         'text' => 'L 339 Neuer Hönower Weg OD Hoppegarten, zw. Industriestr. u. Wiesenstr. Deckenerneuerung Vollsperrung 26.10.2009-13.11.2009 ',
-         'from' => 1256425200,
-         'id' => 1928,
-         'data' => 'userdel	q4::inwork 26880,11479 27272,11970
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1831,15 +1824,7 @@ userdel	2::temp 9852,12409 9869,12297 9890,12161
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1258239600,
-         'text' => 'B 179 zw. OL Kuschkow u. Neu Lübbenau Deckeneinbau Vollsperrung 06.11.2009-14.11.2009 ',
-         'from' => 1257375600,
-         'id' => 1985,
-         'data' => 'userdel	2::inwork 46362,-37400 46830,-37598 47572,-37563 48907,-37829 49139,-37938 49667,-38348
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1258326000,
          'text' => 'B 198 zw. Prenzlau und Dedelow grundh. Straßebau, Radwegbau Vollsperrung 05.10.2009-15.11.2009 ',
@@ -1864,6 +1849,15 @@ userdel	2::temp 9852,12409 9869,12297 9890,12161
          'from' => 1258045387,
          'id' => 1988,
          'data' => 'userdel	2::temp 11209,12430 11323,12484
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1262300399,
+         'text' => 'Gendarmenmarkt: Weihnachtsmarkt, gesperrt',
+         'from' => 1258207217,
+         'id' => 1989,
+         'data' => 'userdel	2::temp 9526,11911 9668,11928
 ',
          'type' => 'gesperrt'
        }

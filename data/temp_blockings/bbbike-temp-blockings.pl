@@ -13314,12 +13314,12 @@ userdel	q4::inwork; 11242,11720 11324,11689 11574,11594
 EOF
      },
      { from  => 1238347506, # 2009-03-29 19:25
-       until => 1239657424, # 2010-01-01 00:00 1262300400
-       text  => 'Köthener Str. (Kreuzberg) in beiden Richtungen zwischen Bernburger Str. und Hafenplatz Baustelle, Straße vollständig gesperrt (bis Anfang 2010)',
+       until => 1262300400, # 2010-01-01 00:00
+       text  => 'Köthener Str. (Kreuzberg) zwischen Bernburger Str. und Hallesches Ufer Baustelle, Einbahnstraße Richtung Norden (bis Anfang 2010)',
        type  => 'handicap',
        source_id => 'IM_011637',
        data  => <<EOF,
-userdel	q4::inwork 8536,11063 8483,10900
+userdel	q4::inwork; 8536,11063 8483,10900 8443,10777
 EOF
      },
      { from  => 1244065177, # 2009-06-03 23:39
@@ -14670,11 +14670,11 @@ EOF
      },
      { from  => 1246916833, # 2009-07-06 23:47
        until => 1262300400, # 2010-01-01 00:00
-       text  => 'Markgrafenstr. (Mitte) Richtung Behrenstr. zwischen Mohrenstr. und Behrenstr. Baustelle, Fahrtrichtung gesperrt (bis Dezember 2009)',
+       text  => 'Markgrafenstr. (Mitte) Richtung Behrenstr. zwischen Mohrenstr. und Französische Str. Baustelle, Fahrtrichtung gesperrt (bis Dezember 2009)',
        type  => 'handicap',
        source_id => 'IM_013316',
        data  => <<EOF,
-userdel	q4::inwork; 9679,11834 9668,11928 9656,12021 9643,12127 9631,12227
+userdel	q4::inwork; 9679,11834 9668,11928 9656,12021 9643,12127
 EOF
      },
      { from  => 1247349600, # 2009-07-12 00:00
@@ -16874,6 +16874,14 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp 11209,12430 11323,12484
+EOF
+     },
+     { from  => 1258207217, # 2009-11-14 15:00
+       until => 1262300399, # 2009-12-31 23:59
+       text  => 'Gendarmenmarkt: Weihnachtsmarkt, gesperrt',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::temp 9526,11911 9668,11928
 EOF
      },
     );
