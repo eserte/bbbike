@@ -131,7 +131,7 @@ Steinstr. (Mitte)	1 10603,13395 10390,13493 10282,13546
 Roennebergstr.	1 5533,6753 5374,6932
 Matternstr.	1 13798,13003 13579,12904
 Ebelingstr.	1 13707,13206 13610,13169 13487,13115
-John-Schehr-Str. - Greifswalder Str.	3 12573,14581 12437,14680 12384,14600 12332,14526
+John-Schehr-Str. - Greifswalder Str.	3 12573,14581 12422,14692 12403,14663 12371,14615 12317,14535
 Prenzlauer Allee	3nocross::ignrte 11822,15193 11798,15133 11776,15060 11712,14868
 Prenzlauer Allee -> Stubbenkammerstr.: Prenzlauer Allee	3::igndisp 11776,15060 11798,15133 11643,15189
 Fröbelstr. -> Raumerstr.: Prenzlauer Allee	3::igndisp 11870,15004 11776,15060 11623,15108
@@ -180,7 +180,7 @@ Hohenfriedbergstr.	3 7791,8882 7790,8913 7782,9115
 Hohenfriedbergstr.	3 7782,9115 7790,8913 7791,8882
 Hohenfriedbergstr. - Brunhildstr.	3 7782,9115 7790,8913 7707,8915
 Hohenfriedbergstr. - Brunhildstr.	3 7707,8915 7790,8913 7782,9115
-Olga-Benario-Prestes-Str.	1 12653,14653 12488,14753
+Olga-Benario-Prestes-Str.	1 12653,14653 12473,14763
 Filandastr.	3nocross::ignrte 5687,5486 5687,5586 5683,5672 5681,5743
 Althoffpl. -> Filandastr.: Filandastr.	3::igndisp 5609,5584 5687,5586 5683,5672
 Althoffpl. -> Kantstr.: Filandastr.	3::igndisp 5609,5584 5687,5586 5840,5588
@@ -243,12 +243,12 @@ Ahlbecker Str. -> Lilli-Henoch-Str.: Straßenbahn	3::igndisp 11638,15522 11882,15
 Lilli-Henoch-Str. -> Ahlbecker Str.: Straßenbahn	3::igndisp 11952,15374 11882,15384 11638,15522
 Lilli-Henoch-Str. -> Prenzlauer Allee: Straßenbahn	3::igndisp 11952,15374 11882,15384 11860,15309
 Prenzlauer Allee -> Ahlbecker Str.: Straßenbahn	3::igndisp 11860,15309 11882,15384 11638,15522
-Straßenbahn	3nocross::ignrte 12488,14753 12437,14680 12384,14600
-John-Schehr-Str. -> Greifswalder Str.: Straßenbahn	3::igndisp 12573,14581 12437,14680 12384,14600
-Greifswalder Str. -> John-Schehr-Str.: Straßenbahn	3::igndisp 12488,14753 12437,14680 12573,14581
-Straßenbahntrasse	3nocross::ignrte 12722,15105 12743,15138 12880,15335
-Naugarder Str. -> Greifswalder Str.: Straßenbahntrasse	3::igndisp 12693,15225 12743,15138 12880,15335
-Greifswalder Str. -> Naugarder Str.: Straßenbahntrasse	3::igndisp 12722,15105 12743,15138 12693,15225
+Straßenbahn	3nocross::ignrte 12473,14763 12422,14692 12403,14663 12371,14615
+Greifswalder Str. -> John-Schehr-Str.: Straßenbahn	3::igndisp 12473,14763 12422,14692 12573,14581
+John-Schehr-Str. -> Greifswalder Str.: Straßenbahn	3::igndisp 12573,14581 12422,14692 12403,14663
+Straßenbahntrasse	3nocross::ignrte 12709,15112 12737,15154 12880,15335
+Greifswalder Str. -> Naugarder Str.: Straßenbahntrasse	3::igndisp 12709,15112 12737,15154 12693,15225
+Naugarder Str. -> Greifswalder Str.: Straßenbahntrasse	3::igndisp 12693,15225 12737,15154 12880,15335
 Straßenbahn	3nocross::ignrte 13550,13560 13640,13597 13708,13623
 Hausburgstr. -> Landsberger Allee: Straßenbahn	3::igndisp 13706,13460 13640,13597 13550,13560
 Hausburgstr. -> Fritz-Riedel-Str.: Straßenbahn	3::igndisp 13706,13460 13640,13597 13517,13778
@@ -288,12 +288,12 @@ Martin-Luther-Str. -> Winterfeldtstr.: Martin-Luther-Str.	3::igndisp 6514,10088 
 Martin-Luther-Str. -> Winterfeldtstr.: Martin-Luther-Str.	3::igndisp 6512,9866 6514,9947 6270,9910
 Winterfeldtstr. -> Winterfeldtstr.: Martin-Luther-Str.	3::igndisp 6270,9910 6514,9947 6633,9980
 Winterfeldtstr. -> Martin-Luther-Str.: Martin-Luther-Str.	3::igndisp 6270,9910 6514,9947 6514,10088
-Straßenbahntrasse	3nocross::ignrte 12630,14306 12729,14227 12912,14084
-Danziger Str. -> Hans-Otto-Str.: Straßenbahntrasse	3::igndisp 12912,14084 12729,14227 12608,14070
+Straßenbahntrasse	3nocross::ignrte 12630,14306 12729,14227 12901,14093
 Danziger Str. -> Hans-Otto-Str.: Straßenbahntrasse	3::igndisp 12630,14306 12729,14227 12782,14300
+Danziger Str. -> Hans-Otto-Str.: Straßenbahntrasse	3::igndisp 12901,14093 12729,14227 12608,14070
 Hans-Otto-Str. -> Danziger Str.: Straßenbahntrasse	3::igndisp 12608,14070 12729,14227 12630,14306
 Hans-Otto-Str. -> Hans-Otto-Str.: Straßenbahntrasse	3::igndisp 12608,14070 12729,14227 12782,14300
-Hans-Otto-Str. -> Danziger Str.: Straßenbahntrasse	3::igndisp 12782,14300 12729,14227 12912,14084
+Hans-Otto-Str. -> Danziger Str.: Straßenbahntrasse	3::igndisp 12782,14300 12729,14227 12901,14093
 Hans-Otto-Str. -> Hans-Otto-Str.: Straßenbahntrasse	3::igndisp 12782,14300 12729,14227 12608,14070
 Straßenbahntrasse	3nocross::ignrte 11662,14695 11642,14625 11582,14448
 Christburger Str. -> Sredzkistr.: Straßenbahntrasse	3::igndisp 11920,14468 11642,14625 11526,14693
@@ -489,8 +489,10 @@ Gotenburger Str. -> Prinzenallee: Mittelstreifen	3::igndisp 8844,16863 9000,1680
 Prinzenallee -> Gotenburger Str.: Mittelstreifen	3::igndisp 8939,16668 9000,16803 8844,16863
 Biesentaler Str. -> Prinzenallee: Mittelstreifen	3::igndisp 9245,16758 9024,16855 9000,16803
 Prinzenallee -> Biesentaler Str.: Mittelstreifen	3::igndisp 9028,16864 9024,16855 9245,16758
-Straßenbahntrasse	3nocross::ignrte 13540,15928 13623,15954 13630,15956 13753,16000
-Tassostr. -> Berliner Allee: Straßenbahntrasse	3::igndisp 13621,15990 13630,15956 13753,16000
+Straßenbahntrasse	3nocross::ignrte 13540,15928 13623,15954 13630,15956 13737,15994
+Mahlerstr. -> Berliner Allee: Straßenbahntrasse	3::igndisp 13667,15836 13623,15954 13540,15928
+Berliner Allee -> Mahlerstr.: Straßenbahntrasse	3::igndisp 13630,15956 13623,15954 13667,15836
+Tassostr. -> Berliner Allee: Straßenbahntrasse	3::igndisp 13621,15990 13630,15956 13737,15994
 Berliner Allee -> Tassostr.: Straßenbahntrasse	3::igndisp 13623,15954 13630,15956 13621,15990
 Straßenbahntrasse	3nocross::ignrte 17919,6978 17919,6968 17962,6674
 Edisonstr. -> Zeppelinstr.: Straßenbahntrasse	3::igndisp 17919,6978 17919,6968 18041,6924
@@ -573,8 +575,10 @@ Jenny-Lind-Str. -> Neumannstr.: Mittelstreifen	3::igndisp 11645,17271 11531,1725
 Straßenbahn	3nocross::ignrte 14067,16127 14248,16202 14371,16252
 Lindenallee -> Berliner Allee: Straßenbahn	3::igndisp 14296,16065 14248,16202 14067,16127
 Berliner Allee -> Lindenallee: Straßenbahn	3::igndisp 14371,16252 14248,16202 14296,16065
-Straßenbahn	3nocross::ignrte 13540,15928 13623,15954 13630,15956 13753,16000
-Tassostr. -> Berliner Allee: Straßenbahn	3::igndisp 13621,15990 13630,15956 13753,16000
+Straßenbahn	3nocross::ignrte 13540,15928 13623,15954 13630,15956 13737,15994
+Mahlerstr. -> Berliner Allee: Straßenbahn	3::igndisp 13667,15836 13623,15954 13540,15928
+Berliner Allee -> Mahlerstr.: Straßenbahn	3::igndisp 13630,15956 13623,15954 13667,15836
+Tassostr. -> Berliner Allee: Straßenbahn	3::igndisp 13621,15990 13630,15956 13737,15994
 Berliner Allee -> Tassostr.: Straßenbahn	3::igndisp 13623,15954 13630,15956 13621,15990
 Straßenbahn	3nocross::ignrte 13401,15821 13432,15843 13540,15928
 Streustr. -> Berliner Allee: Straßenbahn	3::igndisp 13269,15927 13432,15843 13540,15928
@@ -872,3 +876,5 @@ Sophienstr.	1 9982,13411 10317,13248
 Gradestr./Moosrosenstr.	3nocross::ignrte 12773,5248 12727,5244 12582,5232
 Gradestr. -> Moosrosenstr.: Gradestr./Moosrosenstr.	3::igndisp 12773,5248 12727,5244 12726,5147
 Moosrosenstr. -> Gradestr.: Gradestr./Moosrosenstr.	3::igndisp 12726,5147 12727,5244 12582,5232
+Hunsrückstr.	1 13914,17016 13990,17122 14060,17221
+Soonwaldstr.	1 13990,17122 13839,17227

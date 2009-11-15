@@ -126,7 +126,7 @@ Steinstr. (Mitte)	1 10603,13395 10390,13493 10282,13546
 Roennebergstr.	1 5533,6753 5374,6932
 Matternstr.	1 13798,13003 13579,12904
 Ebelingstr.	1 13707,13206 13610,13169 13487,13115
-John-Schehr-Str. - Greifswalder Str.	3 12573,14581 12437,14680 12384,14600 12332,14526
+John-Schehr-Str. - Greifswalder Str.	3 12573,14581 12422,14692 12403,14663 12371,14615 12317,14535
 Prenzlauer Allee	3nocross 11822,15193 11798,15133 11776,15060 11712,14868
 Groﬂe Weinmeisterstr. (Potsdam)	1 -12557,11 -12582,127 -12618,296
 #: by: Christian Marten (Einbahnstraﬂe nur f¸r Autofahrer)
@@ -172,7 +172,7 @@ Hohenfriedbergstr.	3 7791,8882 7790,8913 7782,9115
 Hohenfriedbergstr.	3 7782,9115 7790,8913 7791,8882
 Hohenfriedbergstr. - Brunhildstr.	3 7782,9115 7790,8913 7707,8915
 Hohenfriedbergstr. - Brunhildstr.	3 7707,8915 7790,8913 7782,9115
-Olga-Benario-Prestes-Str.	1 12653,14653 12488,14753
+Olga-Benario-Prestes-Str.	1 12653,14653 12473,14763
 Filandastr.	3nocross 5687,5486 5687,5586 5683,5672 5681,5743
 Gelnitzstr.	1 22882,5834 22897,5740
 Kurf¸rstendamm	3nocross 2770,10024 2828,10040 2938,10071
@@ -196,8 +196,8 @@ K¸hler Weg	1 841,9914 743,9772 616,9602
 Wilhelmstr.: vor der britischen Botschaft dauerhaft f¸r Kfz gesperrt	2 8861,12125 8804,12280
 Schˆnhauser Allee: U-Bahnviadukt und Straﬂenbahn	3nocross 11019,16465 11004,16360 10997,16280 10990,16197 10982,16121
 Prenzlauer Allee: Straﬂenbahn	3nocross 11860,15309 11882,15384 11891,15413
-Greifswalder Str.: Straﬂenbahn	3nocross 12488,14753 12437,14680 12384,14600
-Greifswalder Str.: Straﬂenbahntrasse	3nocross 12722,15105 12743,15138 12880,15335
+Greifswalder Str.: Straﬂenbahn	3nocross 12473,14763 12422,14692 12403,14663 12371,14615
+Greifswalder Str.: Straﬂenbahntrasse	3nocross 12709,15112 12737,15154 12880,15335
 Landsberger Allee: Straﬂenbahn	3nocross 13550,13560 13640,13597 13708,13623
 #: note: Luftbild:
 Landsberger Allee: Straﬂenbahn	3nocross 21398,15671 21475,15705 21694,15802
@@ -215,7 +215,7 @@ Almstadtstr.	1 10790,13565 10767,13443 10757,13401 10699,13173
 Lohmeyerstr.	1 3348,12314 3409,12451
 Yitzhak-Rabin-Str.	1 8055,12186 8119,12414
 Martin-Luther-Str.	3nocross 6514,10088 6514,9947 6512,9866
-Hans-Otto-Str: Straﬂenbahntrasse	3nocross 12630,14306 12729,14227 12912,14084
+Hans-Otto-Str: Straﬂenbahntrasse	3nocross 12630,14306 12729,14227 12901,14093
 Sredzkistr./Prenzlauer Allee: Straﬂenbahntrasse	3nocross 11662,14695 11642,14625 11582,14448
 #: by: Christian (cm-germany): vvv
 Dankwartstr.	1 17197,12488 17163,12291
@@ -323,7 +323,7 @@ Berliner Str.: Mittelstreifen	3nocross 1214,3198 1338,3300 1415,3362
 #: note: Luftbild
 Prinzenallee: Mittelstreifen	3nocross 8939,16668 9000,16803 9024,16855 9028,16864 9082,16982
 #: note: Luftbild
-Berliner Allee: Straﬂenbahntrasse	3nocross 13540,15928 13623,15954 13630,15956 13753,16000
+Berliner Allee: Straﬂenbahntrasse	3nocross 13540,15928 13623,15954 13630,15956 13737,15994
 #: note: Luftbild
 Edisonstr.: Straﬂenbahntrasse	3nocross 17919,6978 17919,6968 17962,6674
 #: note: Luftbild
@@ -366,7 +366,7 @@ Knollstr.: Poller	3 17242,-80 17362,-1 17429,42 17488,80 17558,126 17609,164
 Neumannstr.: Mittelstreifen	3nocross 11549,17154 11531,17250 11519,17316
 #: note: Luftbild: vvv
 Berliner Allee: Straﬂenbahn	3nocross 14067,16127 14248,16202 14371,16252
-Berliner Allee: Straﬂenbahn	3nocross 13540,15928 13623,15954 13630,15956 13753,16000
+Berliner Allee: Straﬂenbahn	3nocross 13540,15928 13623,15954 13630,15956 13737,15994
 Berliner Allee: Straﬂenbahn	3nocross 13401,15821 13432,15843 13540,15928
 #: note: ^^^
 #: by: Nicolas Schier:
@@ -558,3 +558,5 @@ Rosenfelder Ring	3 18165,12091 18093,12093 17978,12092
 Rosenfelder Ring	3 17978,12092 18093,12093 18165,12091
 Sophienstr.	1 9982,13411 10317,13248
 Gradestr./Moosrosenstr.	3nocross 12773,5248 12727,5244 12582,5232
+Hunsr¸ckstr.	1 13914,17016 13990,17122 14060,17221
+Soonwaldstr.	1 13990,17122 13839,17227

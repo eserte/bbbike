@@ -61,7 +61,7 @@ Zossener - Brachvogelstr.: bereits an der Johanniterstr. vom Radstreifen auf den
 Wendeschleife der Straﬂenbahn links umfahren	CP; 22965,4124 23368,3894 23652,3722
 Potsdamer Str. - Am Karlsbad: bereits am Schˆneberger Ufer auf linken Gehweg wechseln	PI; 7980,11070 7968,11048 8011,11014
 Am Karlsbad - Potsdamer Str.: entweder Fuﬂg‰ngerampel am Schˆneberger Ufer oder an der L¸tzowstr. benutzen	CP; 8011,11014 7968,11048 7912,10945
-Otto-Braun-Str. - Wadzeckstr.: bereits am Alexanderplatz die Straﬂenseite wechseln	PI; 11228,12951 11275,13026 11298,13063 11368,13170 11326,13196
+Otto-Braun-Str. - Wadzeckstr.: bereits am Alexanderplatz die Straﬂenseite wechseln	PI; 11228,12951 11267,13012 11314,13087 11368,13170 11326,13196
 #: XXX_prog: RL:ja, GPS:nein (in der Realit‰t kann man nicht anders fahren, aber vielleicht einen kleinen Hint wert)
 Fuﬂg‰ngerampel auf der linken Seite benutzen	CP; 9929,13660 9918,13733 9792,13681
 #: XXX_prog: RL:ja, GPS:nein (in der Realit‰t kann man nicht anders fahren, aber vielleicht einen kleinen Hint wert)
@@ -179,13 +179,13 @@ Straﬂburger Str. - Torstr.: Fuﬂg‰ngerfurt (Dr‰ngelgitter) ca. 50m westlich der K
 #: XXX_indoor: sollte in eine 3nocross+routing_helper-Kombination umgeschrieben werden
 Torstr. - Straﬂburger Str.: Fuﬂg‰ngerfurt (Dr‰ngelgitter) ca. 50m westlich der Kreuzung benutzen	CP; 10746,13673 10902,13604 11060,13865
 #### ^^^ REVIEW RL:ja/nein, GPS:ja/nein SOWIE CP;+Crossing name UNTIL HERE ^^^ ##############################
-K‰the-Niederkirchner-Str - Greifswalder Str.: Fuﬂg‰ngerfurt (Dr‰ngelgitter) ca. 50m nord-ˆstlich der Kreuzung benutzen	CP; 12110,13965 11993,14037 11958,13986
-Greifswalder Str. - K‰the-Niederkirchner-Str: Fuﬂg‰ngerfurt (Dr‰ngelgitter) ca. 50m nord-ˆstlich der Kreuzung benutzen oder schon an der Marienburger die Straﬂenseite wechseln	PI; 12091,14179 11993,14037 12110,13965
-Heinrich-Roller-Str. - Greifswalder Str.: Fuﬂg‰ngerfurt (Dr‰ngelgitter) benutzen	CP; 11616,13911 11832,13795 11958,13986
-Greifswalder Str. - Heinrich-Roller-Str.: Fuﬂg‰ngerfurt (Dr‰ngelgitter) benutzen	CP; 11723,13630 11832,13795 11616,13911
+K‰the-Niederkirchner-Str - Greifswalder Str.: Fuﬂg‰ngerfurt (Dr‰ngelgitter) ca. 50m nord-ˆstlich der Kreuzung benutzen	CP; 12110,13965 11991,14060 11946,13993
+Greifswalder Str. - K‰the-Niederkirchner-Str: Fuﬂg‰ngerfurt (Dr‰ngelgitter) ca. 50m nord-ˆstlich der Kreuzung benutzen oder schon an der Marienburger die Straﬂenseite wechseln	PI; 12077,14186 11991,14060 12110,13965
+Heinrich-Roller-Str. - Greifswalder Str.: Fuﬂg‰ngerfurt (Dr‰ngelgitter) benutzen	CP; 11616,13911 11820,13804 11946,13993
+Greifswalder Str. - Heinrich-Roller-Str.: Fuﬂg‰ngerfurt (Dr‰ngelgitter) benutzen	CP; 11706,13635 11820,13804 11616,13911
 #: by: ^^^
-Immanuelkirchstr. - Greifswalder Str.: Fuﬂg‰ngerfurt (Dr‰ngelgitter) benutzen	CP; 11727,14111 11958,13986 11993,14037
-Greifswalder Str. - Immanuelkirchstr.: Fuﬂg‰ngerfurt (Dr‰ngelgitter) benutzen	CP; 11832,13795 11958,13986 11727,14111
+Immanuelkirchstr. - Greifswalder Str.: Fuﬂg‰ngerfurt (Dr‰ngelgitter) benutzen	CP; 11727,14111 11946,13993 11991,14060
+Greifswalder Str. - Immanuelkirchstr.: Fuﬂg‰ngerfurt (Dr‰ngelgitter) benutzen	CP; 11820,13804 11946,13993 11727,14111
 Kietz - Kietzer Str.: zum ‹berqueren der Straﬂe Fuﬂg‰ngerampel links benutzen	CP; 22364,4429 22396,4464 22358,4521
 Kietz - M¸ggelheimer Str.: zum ‹berqueren der Straﬂe Fuﬂg‰ngerampel links benutzen	CP; 22364,4429 22396,4464 22341,4483
 Kietz - Amtsstr.: zum ‹berqueren der Straﬂe Fuﬂg‰ngerampel links benutzen	CP; 22364,4429 22396,4464 22495,4523

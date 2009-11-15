@@ -1642,7 +1642,7 @@ EOF
        text  => 'Pistoriusstr. (Weissensee) Richtung Berliner Allee zwischen Mirbachplatz und Parkstr. Baustelle, Fahrtrichtung gesperrt (bis 30.06.2005)',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1 13400,16395 13485,16362 13544,16339 13632,16305 13652,16297 13679,16286 13797,16237
+userdel	1 13400,16395 13485,16362 13544,16339 13632,16305 13652,16297 13679,16286 13788,16240
 EOF
      },
      { from  => 1111960800, # 2005-03-28 00:00
@@ -1830,7 +1830,7 @@ EOF
        text  => 'Berliner Allee Richtung stadtauwärts, zwischen Langhanstr. und Lindenallee Baustelle, Fahrtrichtung gesperrt (bis Ende 2005)',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4; 13540,15928 13623,15954 13630,15956 13753,16000 13826,16026 14014,16106 14067,16127 14248,16202 14371,16252
+userdel	q4; 13540,15928 13623,15954 13630,15956 13737,15994 13826,16026 14014,16106 14067,16127 14248,16202 14371,16252
 EOF
      },
      { from  => 1138319749, # 2006-01-27 00:55
@@ -3001,7 +3001,7 @@ EOF
        text  => 'Prenzlauer Berg: Richtung Prenzlauer Allee gesperrt (Kopfsteinpflaster wird durch Asphalt ersetzt)',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1 11723,13630 11545,13690 11257,13647
+userdel	1 11706,13635 11545,13690 11257,13647
 EOF
      },
      { from  => undef, # 
@@ -3556,7 +3556,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_002437',
        data  => <<EOF,
-userdel	q4; 14067,16127 13797,16237
+userdel	q4; 14067,16127 13788,16240
 EOF
      },
      { from  => 1138319443, # 2006-01-27 00:50
@@ -12082,7 +12082,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_009457',
        data  => <<EOF,
-userdel	q4::inwork; 11785,13625 11762,13619 11723,13630
+userdel	q4::inwork; 11785,13625 11762,13619 11706,13635
 EOF
      },
      { from  => undef, # 
@@ -12610,7 +12610,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_009965',
        data  => <<EOF,
-userdel	1::inwork 13727,16085 13753,16000
+userdel	1::inwork 13712,16089 13737,15994
 EOF
      },
      { from  => 1221775200, # 2008-09-19 00:00
@@ -12936,7 +12936,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_010408',
        data  => <<EOF,
-userdel	1::inwork 13453,14678 13151,14855 13110,14879 12812,15053 12722,15105
+userdel	1::inwork 13438,14675 13151,14855 13110,14879 12812,15053 12709,15112
 EOF
      },
      { from  => 1224626400, # 2008-10-22 00:00
@@ -16550,7 +16550,7 @@ EOF
        text  => 'Sperrungen an der Kreuzung Karl-Marx-Allee/Otto-Braun-Straße einschließlich Grunerstraße bis Alexanderstraße, 16.10.2009, 19.00 Uhr bis 19.10.2009, 05.00 Uhr ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 11275,13026 11228,12951 11134,12793
+userdel	2::inwork 11267,13012 11228,12951 11134,12793
 userdel	3 11139,13008 11228,12951 11295,12915
 EOF
      },
@@ -16559,7 +16559,7 @@ EOF
        text  => 'Sperrungen an der Kreuzung Karl-Marx-Allee/Otto-Braun-Straße einschließlich Grunerstraße bis Alexanderstraße, 23.10.2009, 19.00 Uhr bis 26.10.2009, 05.00 Uhr ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 11275,13026 11228,12951 11134,12793
+userdel	2::inwork 11267,13012 11228,12951 11134,12793
 userdel	3 11139,13008 11228,12951 11295,12915
 EOF
      },
@@ -16568,7 +16568,7 @@ EOF
        text  => 'Sperrungen an der Kreuzung Karl-Marx-Allee/Otto-Braun-Straße einschließlich Grunerstraße bis Alexanderstraße, 30.10.2009, 19.00 Uhr bis 2.11.2009, 05.00 Uhr ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 11275,13026 11228,12951 11134,12793
+userdel	2::inwork 11267,13012 11228,12951 11134,12793
 userdel	3 11139,13008 11228,12951 11295,12915
 EOF
      },

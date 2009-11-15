@@ -235,7 +235,7 @@ Schmollerplatz/str.	1 13244,9410 13184,9340 13209,9325
 Isarstr.	1 12349,8464 12368,8356
 Zionskirchplatz	1 10306,14247 10277,14350 10315,14386 10365,14372 10389,14274
 Ohmstr.	1 11324,11689 11378,11856
-Anton-Saefkow-Str.	1 13202,14388 13084,14472 13013,14523 12885,14616 12782,14676 12723,14714 12536,14827
+Anton-Saefkow-Str.	1 13186,14397 13084,14472 13013,14523 12901,14594 12874,14608 12782,14676 12723,14714 12520,14833
 Spilstr.	1 3865,6758 3826,6656 3836,6550
 Wöhlertstr.	1 8442,14456 8669,14550
 Pflugstr.	1 8669,14550 8776,14364
@@ -272,7 +272,7 @@ Florapromenade	1 10211,17432 10321,17453 10311,17764
 Takustr.	1 3321,5212 3209,5214 3079,5411 2953,5606 2909,5674
 Schönerlinder Str.	1 21799,4319 21633,4355
 Mentzelstr.	1 21579,4579 21546,4457
-Amalienstr.	1 13814,16759 13722,16843 13653,16907 13589,16965
+Amalienstr.	1 13789,16775 13722,16843 13653,16907 13589,16965
 Cosimaplatz	1 5490,7651 5458,7683 5493,7717 5528,7683 5490,7651
 Reiherbeize	1 444,4498 593,4262
 Mendelssohnstr.	1 11598,13598 11550,13642 11545,13690
@@ -842,9 +842,9 @@ Max-Lingner-Str. -> Berliner Str.: Straßenbahntrasse	3::igndisp 11107,17340 1090
 Berliner Str. -> Max-Lingner-Str.: Straßenbahntrasse	3::igndisp 10900,17397 10906,17331 11107,17340
 Berliner Str. -> Samländische Str.: Straßenbahntrasse	3::igndisp 10906,17331 10900,17397 10706,17391
 Samländische Str. -> Berliner Str.: Straßenbahntrasse	3::igndisp 10706,17391 10900,17397 10894,17470
-Straßenbahntrasse	3nocross::ignrte 13753,16000 13826,16026 14014,16106
+Straßenbahntrasse	3nocross::ignrte 13737,15994 13826,16026 14014,16106
 Berliner Allee -> Herbert-Baum-Str.: Straßenbahntrasse	3::igndisp 14014,16106 13826,16026 13869,15912
-Herbert-Baum-Str. -> Berliner Allee: Straßenbahntrasse	3::igndisp 13869,15912 13826,16026 13753,16000
+Herbert-Baum-Str. -> Berliner Allee: Straßenbahntrasse	3::igndisp 13869,15912 13826,16026 13737,15994
 Straßenbahntrasse	3nocross::ignrte 11149,13442 11087,13359 11021,13271
 Karl-Liebknecht-Str. -> Wadzeckstr.: Straßenbahntrasse	3::igndisp 11149,13442 11087,13359 11187,13289
 Wadzeckstr. -> Karl-Liebknecht-Str.: Straßenbahntrasse	3::igndisp 11187,13289 11087,13359 11021,13271
@@ -1101,25 +1101,23 @@ Liebigstr. -> Frankfurter Allee: unbequem passierbarer Mittelstreifen	3::igndisp
 Frankfurter Allee -> Liebigstr.: unbequem passierbarer Mittelstreifen	3::igndisp 13785,12292 13885,12279 13905,12374
 unbequem passierbarer Mittelstreifen	3nocross::ignrte 9701,11656 9898,11679 9981,11689
 Leipziger Str. -> Jerusalemer Str.: unbequem passierbarer Mittelstreifen	3::igndisp 9701,11656 9898,11679 9892,11752
-Mittelstreifen mit Straßenbahn	3nocross::ignrte 12188,14321 12239,14393 12285,14458 12332,14526
-Greifswalder Str. -> Jablonskistr.: Mittelstreifen mit Straßenbahn	3::igndisp 12188,14321 12239,14393 11955,14531
-Jablonskistr. -> Greifswalder Str.: Mittelstreifen mit Straßenbahn	3::igndisp 11955,14531 12239,14393 12285,14458
-Greifswalder Str. -> Dietrich-Bonhoeffer-Str.: Mittelstreifen mit Straßenbahn	3::igndisp 12332,14526 12285,14458 12578,14237
-Greifswalder Str. -> Chodowieckistr.: Mittelstreifen mit Straßenbahn	3::igndisp 12239,14393 12285,14458 11992,14599
-Chodowieckistr. -> Dietrich-Bonhoeffer-Str.: Mittelstreifen mit Straßenbahn	3::igndisp 11992,14599 12285,14458 12578,14237
-Chodowieckistr. -> Greifswalder Str.: Mittelstreifen mit Straßenbahn	3::igndisp 11992,14599 12285,14458 12332,14526
-Mittelstreifen mit Straßenbahn	3nocross::ignrte 12437,14680 12488,14753 12536,14827 12604,14927 12614,14941
-Olga-Benario-Prestes-Str. -> Greifswalder Str.: Mittelstreifen mit Straßenbahn	3::igndisp 12653,14653 12488,14753 12437,14680
-Greifswalder Str. -> Olga-Benario-Prestes-Str.: Mittelstreifen mit Straßenbahn	3::igndisp 12536,14827 12488,14753 12653,14653
-Greifswalder Str. -> Anton-Saefkow-Str.: Mittelstreifen mit Straßenbahn	3::igndisp 12572,14836 12536,14827 12723,14714
-Greifswalder Str. -> Greifswalder Str.: Mittelstreifen mit Straßenbahn	3::igndisp 12572,14836 12536,14827 12488,14753
-Greifswalder Str. -> Greifswalder Str.: Mittelstreifen mit Straßenbahn	3::igndisp 12604,14927 12536,14827 12572,14836
-Greifswalder Str. -> Anton-Saefkow-Str.: Mittelstreifen mit Straßenbahn	3::igndisp 12604,14927 12536,14827 12723,14714
-Greifswalder Str. -> Greifswalder Str.: Mittelstreifen mit Straßenbahn	3::igndisp 12612,14904 12604,14927 12536,14827
-Greifswalder Str. -> Greifswalder Str.: Mittelstreifen mit Straßenbahn	3::igndisp 12614,14941 12604,14927 12612,14904
-Mittelstreifen mit Straßenbahn	3nocross::ignrte 12722,15105 12743,15138 12880,15335
-Naugarder Str. -> Greifswalder Str.: Mittelstreifen mit Straßenbahn	3::igndisp 12693,15225 12743,15138 12880,15335
-Greifswalder Str. -> Naugarder Str.: Mittelstreifen mit Straßenbahn	3::igndisp 12722,15105 12743,15138 12693,15225
+Mittelstreifen mit Straßenbahn	3nocross::ignrte 12177,14335 12228,14404 12266,14460 12317,14535
+Greifswalder Str. -> Jablonskistr.: Mittelstreifen mit Straßenbahn	3::igndisp 12177,14335 12228,14404 11955,14531
+Jablonskistr. -> Greifswalder Str.: Mittelstreifen mit Straßenbahn	3::igndisp 11955,14531 12228,14404 12266,14460
+Greifswalder Str. -> Dietrich-Bonhoeffer-Str.: Mittelstreifen mit Straßenbahn	3::igndisp 12317,14535 12266,14460 12578,14237
+Chodowieckistr. -> Greifswalder Str.: Mittelstreifen mit Straßenbahn	3::igndisp 11992,14599 12266,14460 12317,14535
+Chodowieckistr. -> Dietrich-Bonhoeffer-Str.: Mittelstreifen mit Straßenbahn	3::igndisp 11992,14599 12266,14460 12578,14237
+Greifswalder Str. -> Chodowieckistr.: Mittelstreifen mit Straßenbahn	3::igndisp 12228,14404 12266,14460 11992,14599
+Mittelstreifen mit Straßenbahn	3nocross::ignrte 12422,14692 12473,14763 12520,14833 12584,14928
+Olga-Benario-Prestes-Str. -> Greifswalder Str.: Mittelstreifen mit Straßenbahn	3::igndisp 12653,14653 12473,14763 12422,14692
+Greifswalder Str. -> Olga-Benario-Prestes-Str.: Mittelstreifen mit Straßenbahn	3::igndisp 12520,14833 12473,14763 12653,14653
+Greifswalder Str. -> Greifswalder Str.: Mittelstreifen mit Straßenbahn	3::igndisp 12572,14836 12520,14833 12473,14763
+Greifswalder Str. -> Anton-Saefkow-Str.: Mittelstreifen mit Straßenbahn	3::igndisp 12572,14836 12520,14833 12723,14714
+Greifswalder Str. -> Greifswalder Str.: Mittelstreifen mit Straßenbahn	3::igndisp 12584,14928 12520,14833 12572,14836
+Greifswalder Str. -> Anton-Saefkow-Str.: Mittelstreifen mit Straßenbahn	3::igndisp 12584,14928 12520,14833 12723,14714
+Mittelstreifen mit Straßenbahn	3nocross::ignrte 12709,15112 12737,15154 12880,15335
+Greifswalder Str. -> Naugarder Str.: Mittelstreifen mit Straßenbahn	3::igndisp 12709,15112 12737,15154 12693,15225
+Naugarder Str. -> Greifswalder Str.: Mittelstreifen mit Straßenbahn	3::igndisp 12693,15225 12737,15154 12880,15335
 Mittelstreifen mit Straßenbahn	3nocross::ignrte 11642,14625 11662,14695 11681,14759
 Jablonskistr. -> Prenzlauer Allee: Mittelstreifen mit Straßenbahn	3::igndisp 11955,14531 11662,14695 11642,14625
 Prenzlauer Allee -> Jablonskistr.: Mittelstreifen mit Straßenbahn	3::igndisp 11681,14759 11662,14695 11955,14531
@@ -1269,22 +1267,20 @@ Wadzeckstr. -> Mollstr.: Straßenbahntrasse	3::igndisp 11326,13196 11406,13321 11
 Mollstr. -> Wadzeckstr.: Straßenbahntrasse	3::igndisp 11446,13294 11406,13321 11326,13196
 Mendelssohnstr. -> Mollstr.: Straßenbahntrasse	3::igndisp 11346,13441 11306,13386 11406,13321
 Mollstr. -> Mendelssohnstr.: Straßenbahntrasse	3::igndisp 11275,13407 11306,13386 11346,13441
-Straßenbahntrasse	3nocross::ignrte 11723,13630 11646,13546 11561,13451 11539,13425 11486,13350 11446,13294
-Mendelssohnstr. [Wohngebiet] -> Otto-Braun-Str.: Straßenbahntrasse	3::igndisp 11598,13598 11646,13546 11723,13630
-Otto-Braun-Str. -> Mendelssohnstr. [Wohngebiet]: Straßenbahntrasse	3::igndisp 11561,13451 11646,13546 11598,13598
-Otto-Braun-Str. -> Barnimstr.: Straßenbahntrasse	3::igndisp 11646,13546 11561,13451 11608,13417
+Straßenbahntrasse	3nocross::ignrte 11706,13635 11640,13551 11561,13451 11539,13425 11486,13350 11446,13294
+Mendelssohnstr. [Wohngebiet] -> Otto-Braun-Str.: Straßenbahntrasse	3::igndisp 11598,13598 11640,13551 11706,13635
+Otto-Braun-Str. -> Mendelssohnstr. [Wohngebiet]: Straßenbahntrasse	3::igndisp 11561,13451 11640,13551 11598,13598
 Barnimstr. -> Otto-Braun-Str.: Straßenbahntrasse	3::igndisp 11608,13417 11561,13451 11539,13425
+Otto-Braun-Str. -> Barnimstr.: Straßenbahntrasse	3::igndisp 11640,13551 11561,13451 11608,13417
 Mendelssohnstr. -> Otto-Braun-Str.: Straßenbahntrasse	3::igndisp 11490,13463 11539,13425 11561,13451
 Otto-Braun-Str. -> Mendelssohnstr.: Straßenbahntrasse	3::igndisp 11486,13350 11539,13425 11490,13463
 Otto-Braun-Str. -> Mendelssohnstr. [Wohngebiet]: Straßenbahntrasse	3::igndisp 11446,13294 11486,13350 11433,13389
 Mendelssohnstr. [Wohngebiet] -> Otto-Braun-Str.: Straßenbahntrasse	3::igndisp 11433,13389 11486,13350 11539,13425
-Straßenbahntrasse	3nocross::ignrte 11446,13294 11368,13170 11298,13063
+Straßenbahntrasse	3nocross::ignrte 11446,13294 11368,13170 11314,13087
 Wadzeckstr. -> Otto-Braun-Str.: Straßenbahntrasse	3::igndisp 11326,13196 11368,13170 11446,13294
-Mittelstreifen	3nocross::ignrte 11368,13170 11298,13063 11275,13026 11228,12951
-Otto-Braun-Str. -> Berolinastr.: Mittelstreifen	3::igndisp 11368,13170 11298,13063 11440,12976
-Berolinastr. -> Otto-Braun-Str.: Mittelstreifen	3::igndisp 11440,12976 11298,13063 11275,13026
-Otto-Braun-Str. -> Str.nbahntrasse: Mittelstreifen	3::igndisp 11228,12951 11275,13026 11191,13080
-Str.nbahntrasse -> Otto-Braun-Str.: Mittelstreifen	3::igndisp 11191,13080 11275,13026 11298,13063
+Mittelstreifen	3nocross::ignrte 11368,13170 11314,13087 11267,13012 11228,12951
+Otto-Braun-Str. -> Str.nbahntrasse: Mittelstreifen	3::igndisp 11267,13012 11314,13087 11230,13134
+Str.nbahntrasse -> Otto-Braun-Str.: Mittelstreifen	3::igndisp 11230,13134 11314,13087 11368,13170
 Mittelstreifen	3nocross::ignrte 11228,12951 11295,12915 11589,12768 11635,12745
 Karl-Marx-Allee -> Berolinastr.: Mittelstreifen	3::igndisp 11228,12951 11295,12915 11362,12964
 Berolinastr. -> Karl-Marx-Allee: Mittelstreifen	3::igndisp 11362,12964 11295,12915 11589,12768
@@ -1436,8 +1432,8 @@ tragen? (Fußgängerbrücke)	0:120:-202 19762,-160
 tragen (Stufen), mit MTB befahrbar	0:30:-69 5725,11644
 tragen (20 Stufen)	0:25:16 13138,9897
 unter der S-Bahn-Brücke tragen	0:30:-172 3730,18992
-tragen oder Aufzug (Storkower Str.)	0:60:-161 14528,13241
-tragen oder Aufzug (Storkower Str.)	0:60:-114 14503,13167
+tragen (31 Stufen) oder Aufzug (Storkower Str.)	0:30:-71 14530,13269
+tragen (41 Stufen) oder Aufzug (Storkower Str.)	0:40:-116 14481,13143
 tragen (zum Uferweg an den Treptowers, 24 Stufen)	0:35:-45 14383,10036
 tragen (Mühsamstr.)	0:30:-117 13253,12625
 tragen (34 Stufen)	0:40:40 14787,10972
@@ -1485,6 +1481,8 @@ tragen (Treppe, 50 Stufen)	0:50:-151 -12328,1941
 tragen (Treppe, 18 Stufen)	0:18:-72 8709,12605
 tragen (Treppe)	0:30:-7 6017,12931
 tragen (Treppe, 4 Stufen)	0:10:86 38056,48407
+tragen (Treppe, 9 Stufen)	0:15:-149 14331,17016
+tragen (4 Stufen)	0:10:-246 12871,15882
 Drängelgitter	BNP:3:-101:trailer=10 23012,3598
 Schranke	BNP:1:-135:trailer=3 14395,8071
 Schranke	BNP:0:-63:trailer=3 9920,11074
@@ -1693,18 +1691,21 @@ Klixstr. -> Grunewaldstr.: queren schlecht möglich	3::igndisp 6885,9132 6863,925
 Adolf-Scheidt-Platz	1 8731,8050 8765,8050 8783,8020 8769,7994 8731,7990
 Rumeyplan	1 8690,7717 8799,7741 8894,7783 8940,7835
 Rumeyplan	1 8967,7821 8902,7763 8815,7722 8694,7691
-Greifswalder Str.	3nocross::ignrte 12332,14526 12384,14600 12437,14680
-Bernhard-Lichtenberg-Str. -> Greifswalder Str.: Greifswalder Str.	3::igndisp 12496,14515 12384,14600 12332,14526
-Greifswalder Str. -> Bernhard-Lichtenberg-Str.: Greifswalder Str.	3::igndisp 12437,14680 12384,14600 12496,14515
-Greifswalder Str.	3nocross::ignrte 12437,14680 12488,14753 12536,14827
-Olga-Benario-Prestes-Str. -> Greifswalder Str.: Greifswalder Str.	3::igndisp 12653,14653 12488,14753 12437,14680
-Greifswalder Str. -> Olga-Benario-Prestes-Str.: Greifswalder Str.	3::igndisp 12536,14827 12488,14753 12653,14653
+Greifswalder Str.	3nocross::ignrte 12317,14535 12371,14615 12403,14663 12422,14692
+Bernhard-Lichtenberg-Str. -> Greifswalder Str.: Greifswalder Str.	3::igndisp 12496,14515 12371,14615 12317,14535
+Greifswalder Str. -> Bernhard-Lichtenberg-Str.: Greifswalder Str.	3::igndisp 12403,14663 12371,14615 12496,14515
+Greifswalder Str.	3nocross::ignrte 12422,14692 12473,14763 12520,14833
+Olga-Benario-Prestes-Str. -> Greifswalder Str.: Greifswalder Str.	3::igndisp 12653,14653 12473,14763 12422,14692
+Greifswalder Str. -> Olga-Benario-Prestes-Str.: Greifswalder Str.	3::igndisp 12520,14833 12473,14763 12653,14653
 Straßenbahntrasse	3nocross::ignrte 13098,15592 13229,15692 13316,15758
-Dietrich-Bonhoeffer-Str.	1 12578,14237 12285,14458
-tragen (3 einzelne Stufen)	0:15:-233 13079,14320
+Cohnstr. -> Greifswalder Str.: Straßenbahntrasse	3::igndisp 13197,15734 13229,15692 13316,15758
+Greifswalder Str. -> Cohnstr.: Straßenbahntrasse	3::igndisp 13098,15592 13229,15692 13197,15734
+Dietrich-Bonhoeffer-Str.	1 12578,14237 12266,14460
+tragen (3 einzelne Stufen)	0:15:-234 13079,14320
 Achtung, schlecht sichtbare Kette!	BNP:5:-121 13485,14054
 Treppe	0:20:-62 12867,14648
-2 Treppen o. schmale Rampen	0:10:-229 12969,14672
+tragen (4 Stufen) oder schmale Rampe benutzen	0:5:-235 13007,14615
+tragen (3 Stufen) oder schmale Rampe benutzen	0:5:-240 12982,14629
 tragen (Treppe)	0:15:-187 5574,5791
 Althoffplatz	1 5687,5586 5609,5584 5573,5622 5613,5672 5683,5672
 Elisenstr.: tragen (3 Stufen)	0:15 5808,5332
@@ -1717,18 +1718,18 @@ tragen (16 Stufen)	0:45:-158 5469,4543
 tragen (Treppe)	0:20:-177 12387,13107
 Schranke	BNP:10 12605,13356
 tragen (ca. 5 x 9 Stufen)	0:120:0 13858,13709
-Straßenbahnschienen	3nocross::ignrte 12912,14084 12975,13990 13037,13897 13100,13803
-Danziger Str. -> Erich-Boltze-Str.: Straßenbahnschienen	3::igndisp 12912,14084 12975,13990 13075,14060
+Straßenbahnschienen	3nocross::ignrte 12901,14093 12975,13990 13037,13897 13100,13803
 Danziger Str. -> Margarete-Sommer-Str.: Straßenbahnschienen	3::igndisp 13037,13897 12975,13990 12879,13889
 Danziger Str. -> Margarete-Sommer-Str.: Straßenbahnschienen	3::igndisp 13037,13897 12975,13990 12972,13970
-Margarete-Sommer-Str. -> Danziger Str.: Straßenbahnschienen	3::igndisp 12879,13889 12975,13990 12912,14084
 Margarete-Sommer-Str. -> Erich-Boltze-Str.: Straßenbahnschienen	3::igndisp 12879,13889 12975,13990 13075,14060
+Margarete-Sommer-Str. -> Danziger Str.: Straßenbahnschienen	3::igndisp 12879,13889 12975,13990 12901,14093
 Erich-Boltze-Str. -> Danziger Str.: Straßenbahnschienen	3::igndisp 13075,14060 12975,13990 13037,13897
 Erich-Boltze-Str. -> Margarete-Sommer-Str.: Straßenbahnschienen	3::igndisp 13075,14060 12975,13990 12879,13889
 Erich-Boltze-Str. -> Margarete-Sommer-Str.: Straßenbahnschienen	3::igndisp 13075,14060 12975,13990 12972,13970
-Margarete-Sommer-Str. -> Danziger Str.: Straßenbahnschienen	3::igndisp 12972,13970 12975,13990 12912,14084
+Danziger Str. -> Erich-Boltze-Str.: Straßenbahnschienen	3::igndisp 12901,14093 12975,13990 13075,14060
 Margarete-Sommer-Str. -> Margarete-Sommer-Str.: Straßenbahnschienen	3::igndisp 12972,13970 12975,13990 12879,13889
 Margarete-Sommer-Str. -> Erich-Boltze-Str.: Straßenbahnschienen	3::igndisp 12972,13970 12975,13990 13075,14060
+Margarete-Sommer-Str. -> Danziger Str.: Straßenbahnschienen	3::igndisp 12972,13970 12975,13990 12901,14093
 Heinz-Bartsch-Str. -> Danziger Str.: Straßenbahnschienen	3::igndisp 13137,13968 13037,13897 13100,13803
 Danziger Str. -> Heinz-Bartsch-Str.: Straßenbahnschienen	3::igndisp 12975,13990 13037,13897 13137,13968
 Straßenbahnschienen	3nocross::ignrte 13100,13803 13166,13707 13225,13620 13228,13615
@@ -1760,19 +1761,19 @@ Kette	BNP:5:-220 3264,9261
 (Fußgängertunnel Sybelstr.): 30 Stufen	0:40:59 3781,10569
 Bregenzer Str.	1 4278,10262 4227,10014
 Bayerische Str.	1 4296,10004 4349,10247
-unpassierbarer Mittelstreifen (Straßenbahn, Bordsteine)	3nocross::ignrte 12912,14084 12978,14151 12996,14172 13046,14220
-Kniprodestr. -> Heinz-Kapelle-Str.: unpassierbarer Mittelstreifen (Straßenbahn, Bordsteine)	3::igndisp 12912,14084 12978,14151 12782,14300
-Heinz-Kapelle-Str. -> Kniprodestr.: unpassierbarer Mittelstreifen (Straßenbahn, Bordsteine)	3::igndisp 12782,14300 12978,14151 12996,14172
-Kniprodestr. -> Ernst-Fürstenberg-Str.: unpassierbarer Mittelstreifen (Straßenbahn, Bordsteine)	3::igndisp 13046,14220 12996,14172 13014,14146
-Ernst-Fürstenberg-Str. -> Kniprodestr.: unpassierbarer Mittelstreifen (Straßenbahn, Bordsteine)	3::igndisp 13014,14146 12996,14172 12978,14151
-schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3nocross::ignrte 13070,14245 13115,14293 13202,14388 13261,14456 13318,14517 13374,14581
-Rudolf-Schwarz-Str. -> Kniprodestr.: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3::igndisp 13079,14320 13115,14293 13202,14388
-Kniprodestr. -> Rudolf-Schwarz-Str.: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3::igndisp 13070,14245 13115,14293 13079,14320
-Anton-Saefkow-Str. -> Kniprodestr.: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3::igndisp 13084,14472 13202,14388 13261,14456
-Volkspark Anton Saefkow -> Kniprodestr.: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3::igndisp 13243,14470 13261,14456 13318,14517
-Kniprodestr. -> Volkspark Anton Saefkow: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3::igndisp 13202,14388 13261,14456 13243,14470
-Kniprodestr. -> Volkspark Anton Saefkow: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3::igndisp 13261,14456 13318,14517 13281,14540
-Volkspark Anton Saefkow -> Kniprodestr.: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3::igndisp 13281,14540 13318,14517 13374,14581
+unpassierbarer Mittelstreifen (Straßenbahn, Bordsteine)	3nocross::ignrte 12901,14093 12972,14173 12985,14187 13026,14234
+Kniprodestr. -> Heinz-Kapelle-Str.: unpassierbarer Mittelstreifen (Straßenbahn, Bordsteine)	3::igndisp 12901,14093 12972,14173 12782,14300
+Heinz-Kapelle-Str. -> Kniprodestr.: unpassierbarer Mittelstreifen (Straßenbahn, Bordsteine)	3::igndisp 12782,14300 12972,14173 12985,14187
+Kniprodestr. -> Ernst-Fürstenberg-Str.: unpassierbarer Mittelstreifen (Straßenbahn, Bordsteine)	3::igndisp 13026,14234 12985,14187 13014,14146
+Ernst-Fürstenberg-Str. -> Kniprodestr.: unpassierbarer Mittelstreifen (Straßenbahn, Bordsteine)	3::igndisp 13014,14146 12985,14187 12972,14173
+schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3nocross::ignrte 13057,14267 13097,14307 13186,14397 13242,14458 13301,14516 13367,14588
+Kniprodestr. -> Rudolf-Schwarz-Str.: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3::igndisp 13057,14267 13097,14307 13079,14320
+Rudolf-Schwarz-Str. -> Kniprodestr.: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3::igndisp 13079,14320 13097,14307 13186,14397
+Anton-Saefkow-Str. -> Kniprodestr.: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3::igndisp 13084,14472 13186,14397 13242,14458
+Volkspark Anton Saefkow -> Kniprodestr.: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3::igndisp 13195,14487 13242,14458 13301,14516
+Kniprodestr. -> Volkspark Anton Saefkow: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3::igndisp 13186,14397 13242,14458 13195,14487
+Kniprodestr. -> Volkspark Anton Saefkow: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3::igndisp 13242,14458 13301,14516 13266,14541
+Volkspark Anton Saefkow -> Kniprodestr.: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3::igndisp 13266,14541 13301,14516 13367,14588
 (Treppe zur Putlitzbrücke): tragen, ca. 35 Stufen	0:40:90 6253,14184
 (Treppe zur Putlitzbrücke): tragen, 35 Stufen	0:40:-172 6209,14245
 Mittelstreifen schlecht zu überqueren	3nocross::ignrte 6226,13951 6230,14184 6234,14247 6237,14309

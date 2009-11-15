@@ -261,7 +261,7 @@ Isarstr.	1 12349,8464 12368,8356
 #: XXX pr¸fen: sind ¸berall hier Einbahnstraﬂen?
 Zionskirchplatz	1 10306,14247 10277,14350 10315,14386 10365,14372 10389,14274
 Ohmstr.	1 11324,11689 11378,11856
-Anton-Saefkow-Str.	1 13202,14388 13084,14472 13013,14523 12885,14616 12782,14676 12723,14714 12536,14827
+Anton-Saefkow-Str.	1 13186,14397 13084,14472 13013,14523 12901,14594 12874,14608 12782,14676 12723,14714 12520,14833
 Spilstr.	1 3865,6758 3826,6656 3836,6550
 Wˆhlertstr.	1 8442,14456 8669,14550
 Pflugstr.	1 8669,14550 8776,14364
@@ -299,7 +299,7 @@ Florapromenade	1 10211,17432 10321,17453 10311,17764
 Takustr.	1 3321,5212 3209,5214 3079,5411 2953,5606 2909,5674
 Schˆnerlinder Str.	1 21799,4319 21633,4355
 Mentzelstr.	1 21579,4579 21546,4457
-Amalienstr.	1 13814,16759 13722,16843 13653,16907 13589,16965
+Amalienstr.	1 13789,16775 13722,16843 13653,16907 13589,16965
 Cosimaplatz	1 5490,7651 5458,7683 5493,7717 5528,7683 5490,7651
 Reiherbeize	1 444,4498 593,4262
 Mendelssohnstr.	1 11598,13598 11550,13642 11545,13690
@@ -544,6 +544,7 @@ Asternplatz	1 3775,4632 3710,4728 3707,4752 3716,4764 3740,4766 3754,4755 3815,4
 #: by: Wolfhard Schleese:
 Kammgasse	1 1992,24354 2213,24393 2264,24414 2302,24451 2325,24486
 #: by: anonymous
+#: confirmed_by: srt
 Herbert-Tsch‰pe-Str.	1 14358,14155 14481,14095 14510,14104 14710,14185
 Strausberger Platz	1 11976,12595 12005,12619 12050,12616 12099,12580 12114,12546 12083,12518 12028,12519 11988,12546 11976,12595
 Magirusstr.	1 8199,6583 7985,6598
@@ -908,7 +909,7 @@ Kˆnigsberger Str.: Mittelstreifen nicht passierbar	3nocross 4251,2637 4212,2675 
 #: note: Luftbild:
 Berliner Str.: Straﬂenbahntrasse	3nocross 10911,17275 10906,17331 10900,17397 10894,17470 10892,17491
 #: note: Luftbild:
-Berliner Str.: Straﬂenbahntrasse	3nocross 13753,16000 13826,16026 14014,16106
+Berliner Str.: Straﬂenbahntrasse	3nocross 13737,15994 13826,16026 14014,16106
 Karl-Liebknecht-Str.: Straﬂenbahntrasse	3nocross 11149,13442 11087,13359 11021,13271
 Badstr.: Gitter auf Mittelstreifen	3nocross 8659,16327 8543,16364 8516,16393 8486,16425
 Riesaer Str.: Straﬂenbahntrasse	3nocross 24120,14526 24097,14575 24020,14737
@@ -966,9 +967,9 @@ Frankfurter Allee: unbequem passierbarer Mittelstreifen	3nocross 14381,12205 144
 Frankfurter Allee: unbequem passierbarer Mittelstreifen	3nocross 13785,12292 13885,12279 14208,12235
 Leipziger Str.: unbequem passierbarer Mittelstreifen	3nocross 9701,11656 9898,11679 9981,11689
 #Landsberger Allee: Mittelstreifen	3nocross 13089,13323 13161,13360 13241,13405 13334,13459
-Greifswalder Str.: Mittelstreifen mit Straﬂenbahn	3nocross 12188,14321 12239,14393 12285,14458 12332,14526
-Greifswalder Str.: Mittelstreifen mit Straﬂenbahn	3nocross 12437,14680 12488,14753 12536,14827 12604,14927 12614,14941
-Greifswalder Str.: Mittelstreifen mit Straﬂenbahn	3nocross 12722,15105 12743,15138 12880,15335
+Greifswalder Str.: Mittelstreifen mit Straﬂenbahn	3nocross 12177,14335 12228,14404 12266,14460 12317,14535
+Greifswalder Str.: Mittelstreifen mit Straﬂenbahn	3nocross 12422,14692 12473,14763 12520,14833 12584,14928
+Greifswalder Str.: Mittelstreifen mit Straﬂenbahn	3nocross 12709,15112 12737,15154 12880,15335
 #: note: Fuﬂg‰ngerfurt existiert zwischen Chodowieckistr. und Jablonskistr.:
 Prenzlauer Allee: Mittelstreifen mit Straﬂenbahn	3nocross 11642,14625 11662,14695 11681,14759
 Prenzlauer Allee: Mittelstreifen mit Straﬂenbahn, aber Furt in der N‰he	3nocross 11798,15133 11822,15193 11852,15281
@@ -1010,9 +1011,9 @@ Kolonnenstr.: Mittelinsel mit Gel‰nder	3nocross 7709,8777 7642,8815 7563,8871
 Heerstr.: schlecht passierbar	3nocross -4063,11805 -4009,11789 -3707,11693
 Thielallee: nicht passierbarer Mittelstreifens	3nocross 2560,5044 2587,4965 2615,4885
 Mollstr.: Straﬂenbahntrasse	3nocross 11446,13294 11406,13321 11306,13386 11275,13407
-Otto-Braun-Str.: Straﬂenbahntrasse	3nocross 11723,13630 11646,13546 11561,13451 11539,13425 11486,13350 11446,13294
-Otto-Braun-Str.: Straﬂenbahntrasse	3nocross 11446,13294 11368,13170 11298,13063
-Otto-Braun-Str.: Mittelstreifen	3nocross 11368,13170 11298,13063 11275,13026 11228,12951
+Otto-Braun-Str.: Straﬂenbahntrasse	3nocross 11706,13635 11640,13551 11561,13451 11539,13425 11486,13350 11446,13294
+Otto-Braun-Str.: Straﬂenbahntrasse	3nocross 11446,13294 11368,13170 11314,13087
+Otto-Braun-Str.: Mittelstreifen	3nocross 11368,13170 11314,13087 11267,13012 11228,12951
 #: by: ^^^
 Karl-Marx-Allee: Mittelstreifen	3nocross 11228,12951 11295,12915 11589,12768 11635,12745
 #: note: wobei die Bordsteine auf der Hasenheide-Seite abgeflacht sind, aber auf der Freibad-Seite ist es weiterhin unbequem
@@ -1149,8 +1150,8 @@ tragen? (Fuﬂg‰ngerbr¸cke)	0:120 19762,-160
 tragen (Stufen), mit MTB befahrbar	0:30 5725,11644
 tragen (20 Stufen)	0:25 13138,9897
 unter der S-Bahn-Br¸cke tragen	0:30 3730,18992
-tragen oder Aufzug (Storkower Str.)	0:60 14528,13241
-tragen oder Aufzug (Storkower Str.)	0:60 14503,13167
+tragen (31 Stufen) oder Aufzug (Storkower Str.)	0:30 14530,13269
+tragen (41 Stufen) oder Aufzug (Storkower Str.)	0:40 14481,13143
 tragen (zum Uferweg an den Treptowers, 24 Stufen)	0:35 14383,10036
 tragen (M¸hsamstr.)	0:30 13253,12625
 tragen (34 Stufen)	0:40 14787,10972
@@ -1221,6 +1222,8 @@ tragen (Treppe, 18 Stufen)	0:18 8709,12605
 #: XXX_prog: should be Treppe with more than one point: 6016,12939 6017,12931 6019,12923
 tragen (Treppe)	0:30 6017,12931
 tragen (Treppe, 4 Stufen)	0:10 38056,48407
+tragen (Treppe, 9 Stufen)	0:15 14331,17016
+tragen (4 Stufen)	0:10 12871,15882
 #
 ###################################################################
 # Dr‰ngelgitter (BLOCKED_NARROWPASSAGE)
@@ -1500,15 +1503,16 @@ Grunewaldstr.: queren schlecht mˆglich	3nocross 6709,9234 6863,9254 6923,9266
 Adolf-Scheidt-Platz	1 8731,8050 8765,8050 8783,8020 8769,7994 8731,7990
 Rumeyplan	1 8690,7717 8799,7741 8894,7783 8940,7835
 Rumeyplan	1 8967,7821 8902,7763 8815,7722 8694,7691
-Greifswalder Str.	3nocross 12332,14526 12384,14600 12437,14680
-Greifswalder Str.	3nocross 12437,14680 12488,14753 12536,14827
+Greifswalder Str.	3nocross 12317,14535 12371,14615 12403,14663 12422,14692
+Greifswalder Str.	3nocross 12422,14692 12473,14763 12520,14833
 #: note: Luftbild:
 Greifswalder Str.: Straﬂenbahntrasse	3nocross 13098,15592 13229,15692 13316,15758
-Dietrich-Bonhoeffer-Str.	1 12578,14237 12285,14458
+Dietrich-Bonhoeffer-Str.	1 12578,14237 12266,14460
 tragen (3 einzelne Stufen)	0:15 13079,14320
 Achtung, schlecht sichtbare Kette!	BNP:5 13485,14054
 Treppe	0:20 12867,14648
-2 Treppen o. schmale Rampen	0:10 12969,14672
+tragen (4 Stufen) oder schmale Rampe benutzen	0:5 13007,14615
+tragen (3 Stufen) oder schmale Rampe benutzen	0:5 12982,14629
 #: XXX_prog: Should be Treppe with more than one point: 5574,5791 5574,5819
 tragen (Treppe)	0:15 5574,5791
 Althoffplatz	1 5687,5586 5609,5584 5573,5622 5613,5672 5683,5672
@@ -1523,7 +1527,7 @@ tragen (16 Stufen)	0:45 5469,4543
 tragen (Treppe)	0:20 12387,13107
 Schranke	BNP:10 12605,13356
 tragen (ca. 5 x 9 Stufen)	0:120 13858,13709
-Danziger Str.: Straﬂenbahnschienen	3nocross 12912,14084 12975,13990 13037,13897 13100,13803
+Danziger Str.: Straﬂenbahnschienen	3nocross 12901,14093 12975,13990 13037,13897 13100,13803
 Danziger Str.: Straﬂenbahnschienen	3nocross 13100,13803 13166,13707 13225,13620 13228,13615
 Pintschstr.	1 13342,13185 13438,12965
 Landsberger Allee	3nocross 12386,13085 12585,13118 12685,13135
@@ -1542,8 +1546,8 @@ Kette	BNP:5 3264,9261
 #: corrected_by ^^^
 Bregenzer Str.	1 4278,10262 4227,10014
 Bayerische Str.	1 4296,10004 4349,10247
-Kniprodestr.: unpassierbarer Mittelstreifen (Straﬂenbahn, Bordsteine)	3nocross 12912,14084 12978,14151 12996,14172 13046,14220
-Kniprodestr.: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3nocross 13070,14245 13115,14293 13202,14388 13261,14456 13318,14517 13374,14581
+Kniprodestr.: unpassierbarer Mittelstreifen (Straﬂenbahn, Bordsteine)	3nocross 12901,14093 12972,14173 12985,14187 13026,14234
+Kniprodestr.: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3nocross 13057,14267 13097,14307 13186,14397 13242,14458 13301,14516 13367,14588
 (Treppe zur Putlitzbr¸cke): tragen, ca. 35 Stufen	0:40 6253,14184
 #: by: rjoop
 (Treppe zur Putlitzbr¸cke): tragen, 35 Stufen	0:40 6209,14245

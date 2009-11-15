@@ -489,7 +489,7 @@ Washingtonplatz: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 8
 s¸dliches Spreeufer: besonders an Wochenenden tags¸ber sehr viele Fuﬂg‰nger	q2 7437,12368 7529,12496 7670,12576
 (Ruwersteig - Kl¸sserather Weg): gemeinsamer Rad- und Gehweg, eng und kurvig	q2 19364,13033 19376,13092 19425,13089
 (Fontanestr. - Kopenhagener Str.): Fuﬂg‰nger	q2 7522,19804 7518,19762 7617,19748
-Oleanderstr.: Benutzung des Fuﬂwegs	q1 14271,14024 14298,14015
+Oleanderstr.: Fuﬂg‰nger, Bordsteine	q2 14271,14024 14298,14015
 Pankgrafenstr. (Pankow): Benutzung des Fuﬂwegs	q1 10409,18551 10447,18452 10470,18402
 Kurt-Schumacher-Damm: Radweg in Gegenrichtung	q3; 3585,16252 3358,15794 3299,15668 3282,15632 3290,15604 3328,15595 3335,15617 3316,15641 3301,15631 3280,15543 3242,15523 3221,15498 3162,15314 3045,15044 2960,14746
 Kurt-Schumacher-Damm: Radweg in Gegenrichtung	q3; 2904,14748 2934,14852 3000,15048 3106,15384 3095,15495 3160,15519 3165,15590 3257,15666 3314,15782 3564,16294
@@ -511,6 +511,11 @@ Landsberger Allee - Groﬂe-Leege-Str.: Gehweg, Radfahrer frei	q1 15902,14498 1589
 Verdener Gasse: enge Straﬂe	q1 15878,14761 15946,14702
 Verdener Gasse: Bordsteine	q3 15946,14702 15972,14681
 (Waisenstr. - Littenstr.): Fuﬂg‰nger	q3 11049,12386 11084,12395
+Karl-Vesper-Str.: enge Straﬂe	q1 14184,13666 14205,13755 14263,13739
+(Karl-Vesper-Str. - Landsberger Allee): Fuﬂg‰nger, Bordsteine	q2 14205,13755 14218,13834
+Mahlerstr.: Fuﬂg‰ngerzone, Radfahrer frei	q2 13739,15643 13714,15709
+Fuﬂg‰ngerbr¸cke Storkower Str.: Fuﬂg‰nger	q2 14481,13143 14524,13271 14530,13269
+Lemgoer Str.: Fuﬂg‰nger, Bordsteine	q2 14341,17030 14331,17016 14328,17011
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q3 11805,19071 11937,19175
 Ebersstr.: Sch¸ler	q2 7245,8583 7292,8631
 Straﬂe 103 (Niederschˆnhausen): enge Straﬂe	q1 10914,20065 11051,19789
@@ -580,7 +585,7 @@ Poschingerstr.: enge Straﬂe	q1 5697,6276 5754,6238 5824,6240 5875,6262 5925,6311
 Hˆltermannsteig: Fuﬂg‰nger	q2 13974,2728 13936,2795 13935,2908 13941,3219 13965,3222 13997,3290
 Eiswaldtstr.: schmale Straﬂe	q1 6733,2433 6834,2449 6937,2417 7052,2353 7172,2343 7282,2386
 Georg-Lehnig-Str.: enge Straﬂe	q1 14532,13563 14509,13481 14428,13507
-Erich-Kuttner-Str.: enge Straﬂe	q1 14584,13547 14532,13563 14428,13596 14370,13615 14323,13627 14217,13657 14184,13666 14117,13685 14088,13627 14053,13620
+Erich-Kuttner-Str.: enge Straﬂe	q1 14584,13547 14532,13563 14428,13596 14370,13615 14323,13627 14217,13657 14184,13666 14117,13685 14088,13627 14060,13622
 (Kˆnigsheideweg - Westweg): Weg durch den Park	q1 17115,4757 17173,4902
 (Breiter Weg - S¸dostallee/Sterndamm): Fuﬂg‰nger	q1 17538,5315 17586,5374
 Birkenwerderstr.: enge Straﬂe mit parkenden Autos	q1 6470,20761 6945,20805
@@ -691,7 +696,7 @@ Bautzener Platz: Fufg‰nger, Bordsteine	q2 8102,9262 8183,9260
 (Prenzlauer Allee - Lilly-Henoch-Str.): Fuﬂg‰nger	q2 11860,15309 11919,15314 11952,15374
 (Verl‰ngerte Diesterwegstr.): Fuﬂg‰nger	q2 12078,15160 12107,15229
 (Anton-Saefkow-Str. - John-Schehr-Str.): Fuﬂg‰nger, Schranken	q1 13084,14472 13009,14371 12949,14292
-Ernst-F¸rstenberg-Str.: Fuﬂg‰nger	q1 13014,14146 12996,14172
+Ernst-F¸rstenberg-Str.: Fuﬂg‰nger	q1 13014,14146 12985,14187
 An der Brauerei: Fuﬂg‰nger	q1 13291,13290 13283,13311 13378,13353
 An der Brauerei: Fuﬂg‰nger	q2 13283,13311 13237,13410
 (Friedhofsweg): Fuﬂg‰nger, Radfahren nicht erlaubt	q4 12851,12602 13108,12859 13046,12956 12878,13229
@@ -711,7 +716,7 @@ Vereinsweg (Steglitz): Fuﬂg‰nger, Privatstraﬂe, Radfahren nicht erlaubt	q4 5347,
 (Volkspark Friedrichshain): Fuﬂg‰nger	q2 12915,13785 12937,13803 12887,13877 12879,13889
 (Volkspark Friedrichshain): Fuﬂg‰nger	q2 12937,13803 12987,13727
 (Volkspark Friedrichshain): Fuﬂg‰nger	q2 12825,13783 12813,13799 12805,13809
-(Volkspark Friedrichshain): Fuﬂg‰nger	q2 12403,13755 12436,13719 12482,13705 12594,13747 12658,13809
+(Volkspark Friedrichshain): Fuﬂg‰nger	q2 12403,13755 12436,13719 12482,13705 12594,13747 12654,13819
 (Volkspark Friedrichshain): Fuﬂg‰nger	q2 12771,13603 12737,13593 12727,13571 12582,13519 12483,13418
 (Volkspark Friedrichshain): Fuﬂg‰nger	q2 12483,13418 12605,13356
 (Volkspark Friedrichshain): Fuﬂg‰nger	q2 12438,13387 12344,13320 12248,13254 12231,13233
@@ -1134,7 +1139,7 @@ Altenescher Weg: enge Straﬂe	q1 14051,14822 13856,14944 13749,15013
 Bernhard-B‰stlein-Str.: enge Straﬂe	q1 15348,13996 15487,14047 15595,14041 15593,13768 15661,13764 15653,13542
 Kulmseestr.: einige Fuﬂg‰nger	q1 20001,12368 20062,12353 20156,12311
 Kulmseestr.: einige Fuﬂg‰nger	q1 20252,12262 20303,12230
-(Kniprodestr./Michelangelostr. - Puccinistr.): Fuﬂweg mit Bordsteinkanten	q2 13830,15138 13874,15137 13962,15238 13955,15274 13809,15370 13667,15464 13700,15501
+(Kniprodestr./Michelangelostr. - Puccinistr.): Fuﬂweg mit Bordsteinkanten	q2 13973,15259 13905,15306 13809,15370
 (Gartenstr. - Tychyer Str.): sehr enger Trampelpfad	q2 21217,11328 21255,11314 21286,11319 21305,11363
 Eisweg: enge Straﬂe	q1 23562,10934 23577,10915 23608,10902 23596,10848 23561,10712 23569,10693
 Lauxweg: enge Straﬂe	q1 8979,3347 8921,3208
@@ -1148,7 +1153,7 @@ Am Lupinenfeld: enge Straﬂe	q1 24164,13504 24347,13465 24539,13427 24746,13384 2
 Franzstr. (Lankwitz): enge Straﬂe	q1 5556,3056 5776,3195
 Gluckweg: enge Straﬂe	q1 5853,3050 6039,3275
 Gluckweg: beiderseits parkende Autos	q1 6039,3275 6171,3400
-Chrysanthemenstr.: Benutzung des Fuﬂwegs	q1 14241,13941 14262,13935
+Chrysanthemenstr.: Benutzung des Fuﬂwegs, Bordsteine	q2 14241,13941 14261,13932
 Kolibriweg: breiter Fuﬂweg, ggfs. schieben	q1 13822,3494 13775,3500
 (Echtermeyerstr. - Hampsteadstr.): einige Fuﬂg‰nger	q1 1561,2761 1607,2760 1608,2798 1582,2840 1582,2859 1542,2861 1527,2890 1532,2921
 Zwingenberger Weg: enge Straﬂe	q1 -519,4737 -552,4698 -581,4662
