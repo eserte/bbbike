@@ -2669,7 +2669,7 @@ EOF
        text  => 'Wegedornstraße (Adlershof) Richtung Rudow, zwischen Rudower Chaussee und Ernst-Ruska-Ufer Baustelle, Fahrtrichtung gesperrt (bis Ende 2005)',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 18929,2454 18925,2700
+userdel	q4 18929,2454 18941,2609 18934,2703
 EOF
      },
      { from  => 1125957600, # 2005-09-06 00:00
@@ -8868,7 +8868,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_005905',
        data  => <<EOF,
-userdel	q4::inwork; 17388,3576 17490,3637 17522,3653 17593,3748
+userdel	q4::inwork; 17388,3576 17491,3627 17522,3653 17593,3748
 EOF
      },
      { from  => 1184191200, # 2007-07-12 00:00
@@ -10086,7 +10086,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006820',
        data  => <<EOF,
-userdel	1::inwork 16861,5935 16987,5838 17331,5571 17586,5374
+userdel	1::inwork 16861,5935 16993,5841 17337,5574 17366,5551 17586,5374
 EOF
      },
      { from  => 1191708000, # 2007-10-07 00:00

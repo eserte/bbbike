@@ -1536,27 +1536,8 @@ userdel	q4::inwork; 10829,18083 10907,18109 10938,18147 10989,18172 11137,18358 
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'Message-ID: <001e01ca4b11$15559d20$4000d760$@grittner@adfc-berlin.de>',
-         'until' => 1258369200,
-         'text' => 'Wegen Bauarbeiten ist der Radweg am Kurt-Schumacher-Damm zwischen Rue Ambroise Pare und Hinckeldeybr¸cke bis Mitte November nicht befahrbar',
-         'from' => undef,
-         'id' => 1945,
-         'data' => '#: last_checked: 2009-10-10 by Susanne Grittner
-userdel	2::inwork 3314,15782 3564,16294
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'source_id' => 'IM_014421',
-         'until' => 1258325999,
-         'text' => 'Neust‰dtische Kirchstr. (Mitte) in beiden Richtungen zwischen Dorotheenstr. und Unter den Linden Baustelle, Straﬂe vollst‰ndig gesperrt. Ebenfalls in beiden Richtungen gesperrt: Dorotheenstr. zwischen Neust‰dtische Kirchstr. und Schadowstr (bis Mitte 11/2009)',
-         'from' => 1255383595,
-         'id' => 1946,
-         'data' => 'userdel	q4::inwork 9141,12320 9130,12433 9123,12500 9008,12485
-',
-         'type' => 'handicap'
-       },
+       undef,
+       undef,
        undef,
        {
          'until' => 1275343200,
@@ -1659,16 +1640,7 @@ userdel	2::inwork 14835,10272 14888,10385
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_014548',
-         'until' => 1258325999,
-         'text' => 'Edisonstr. (Kˆpenick) Richtung S¸den zwischen Helmholtzstr. und Siemensstr. Bauarbeiten, Fahrtrichtung gesperrt (bis Mitte 11/2009)',
-         'from' => 1257194796,
-         'id' => 1961,
-         'data' => 'userdel	q4::inwork; 17919,6968 17962,6674
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'IM_014503',
          'until' => 1259708399,
@@ -1719,15 +1691,7 @@ userdel	2::inwork 14835,10272 14888,10385
        },
        undef,
        undef,
-       {
-         'until' => 1258326000,
-         'text' => 'L 049 Berliner Straﬂe OL L¸bbenau, Bahn¸bergang, zw. Bahnhofstr. u. Berl. Str. Gleisbauarbeiten Vollsperrung 02.11.2009-15.11.2009 ',
-         'from' => 1257030000,
-         'id' => 1971,
-         'data' => 'userdel	2::inwork 49774,-59756 49226,-59451 47862,-59500
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        {
@@ -1749,24 +1713,8 @@ userdel	2::inwork 14835,10272 14888,10385
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1258326000,
-         'text' => 'L 239 Kerkow - Joachimsthal Bahn¸bergang Kerkow Gleiserneuerung Vollsperrung 14.11.2009-15.11.2009 ',
-         'from' => 1258066800,
-         'id' => 1977,
-         'data' => 'userdel	2::inwork 48237,70892 48147,70935 48092,70962
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'until' => 1258498800,
-         'text' => 'L 704 B 87 - Lebusa zw. B 87 und Krassig Radwegneubau an B 87 Vollsperrung 04.11.2009-17.11.2009 ',
-         'from' => 1257202800,
-         'id' => 1978,
-         'data' => 'userdel	2::inwork 6325,-75436 6892,-75008
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        {
          'source_id' => 'IM_014608',
          'until' => 1262214000,
@@ -1779,15 +1727,7 @@ userdel	2::temp 9852,12409 9869,12297 9890,12161
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1258412400,
-         'text' => 'B 087 Frankfurt/Oder - M¸llrose zw. Markendorf u. Hohenwalde Deckeneinbau Vollsperrung 16.11.2009-16.11.2009 ',
-         'from' => 1258239600,
-         'id' => 1980,
-         'data' => 'userdel	2::inwork 83389,-11087 82521,-12031 82191,-12275 81697,-12826
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1259362800,
          'text' => 'B 109 Schˆnwalde - Wandlitz OD Schˆnwalde Durchlasssanierung Vollsperrung 09.11.2009-27.11.2009 ',
@@ -1815,25 +1755,9 @@ userdel	2::temp 9852,12409 9869,12297 9890,12161
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1258585200,
-         'text' => 'B 158 Bad Freienwalde - Berlin zw. Bad Freienwalde, Abzw. Waldstadt und Forsthaus Deckenerneuerung Vollsperrung 11.11.2009-18.11.2009 ',
-         'from' => 1257807600,
-         'id' => 1984,
-         'data' => 'userdel	2::inwork 51252,41977 51162,41743 50650,41400 50271,41315
-',
-         'type' => 'gesperrt'
-       },
        undef,
-       {
-         'until' => 1258326000,
-         'text' => 'B 198 zw. Prenzlau und Dedelow grundh. Straﬂebau, Radwegbau Vollsperrung 05.10.2009-15.11.2009 ',
-         'from' => 1254607200,
-         'id' => 1986,
-         'data' => 'userdel	2::inwork 36927,105345 36726,106236 36665,106354 36137,106832 35674,106889
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        {
          'until' => 1259967600,
          'text' => 'L 601 Finsterwalde - Doberlug-Kirchhain OD Lugau, zw. Abzw. Hennersdorfer Str. u. Abzw. Ha Straﬂenbauarbeiten Vollsperrung 09.11.2009-04.12.2009 ',

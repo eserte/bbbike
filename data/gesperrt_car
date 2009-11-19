@@ -462,6 +462,8 @@ Altstadt Köpenick: nur für Busse frei	2 22381,4752 22383,4703
 Mittelstreifen	3nocross::ignrte 16428,7144 16353,7226 16195,7398 15920,7697
 Trojanstr. -> Köpenicker Landstr.: Mittelstreifen	3::igndisp 16290,7160 16353,7226 16195,7398
 Köpenicker Landstr. -> Trojanstr.: Mittelstreifen	3::igndisp 16428,7144 16353,7226 16290,7160
+Lakegrund -> Köpenicker Landstr.: Mittelstreifen	3::igndisp 16368,7425 16195,7398 16353,7226
+Köpenicker Landstr. -> Lakegrund: Mittelstreifen	3::igndisp 15920,7697 16195,7398 16368,7425
 Straßenbahntrasse	3nocross::ignrte 14809,16525 15134,16499 15388,16502
 Sulzfelder Str. -> Buschallee: Straßenbahntrasse	3::igndisp 15120,16349 15134,16499 14809,16525
 Buschallee -> Sulzfelder Str.: Straßenbahntrasse	3::igndisp 15388,16502 15134,16499 15120,16349
@@ -878,3 +880,12 @@ Gradestr. -> Moosrosenstr.: Gradestr./Moosrosenstr.	3::igndisp 12773,5248 12727,
 Moosrosenstr. -> Gradestr.: Gradestr./Moosrosenstr.	3::igndisp 12726,5147 12727,5244 12582,5232
 Hunsrückstr.	1 13914,17016 13990,17122 14060,17221
 Soonwaldstr.	1 13990,17122 13839,17227
+Mittelstreifen/Straßenbahntrasse	3nocross::ignrte 19324,2939 19417,3015 19426,3024 19475,3074
+Erich-Thilo-Str. -> Rudower Chaussee: Mittelstreifen/Straßenbahntrasse	3::igndisp 19331,3098 19417,3015 19426,3024
+Rudower Chaussee -> Erich-Thilo-Str.: Mittelstreifen/Straßenbahntrasse	3::igndisp 19324,2939 19417,3015 19331,3098
+Volmerstr. -> Rudower Chaussee: Mittelstreifen/Straßenbahntrasse	3::igndisp 19538,2899 19426,3024 19417,3015
+Rudower Chaussee -> Volmerstr.: Mittelstreifen/Straßenbahntrasse	3::igndisp 19475,3074 19426,3024 19538,2899
+Max-Born-Str./Ludwig-Boltzmann-Str.	3nocross::ignrte 19053,2890 19064,2867 19111,2777
+Max-Born-Str. -> Ludwig-Boltzmann-Str.: Max-Born-Str./Ludwig-Boltzmann-Str.	3::igndisp 19111,2777 19064,2867 18944,2816
+Ludwig-Boltzmann-Str. -> Max-Born-Str.: Max-Born-Str./Ludwig-Boltzmann-Str.	3::igndisp 18944,2816 19064,2867 19053,2890
+Johannes-Sasse-Ring	1 17525,3029 17465,2964 17412,2908 17199,3082 17146,3125 17206,3189 17274,3267

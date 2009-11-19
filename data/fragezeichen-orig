@@ -118,7 +118,15 @@ Wollankstr.: Angebotsstreifen werden bis Herbst 2011 eingerichtet	?::inwork 9549
 #  STRASSEN IN BAU UND PLANUNG
 #
 #: section ignorieren vvv
-#: section Straßen in Planung vvv
+#: section Straßen in Bau und Planung vvv
+#: last_checked: 2009-11-19
+Wagner-Régeny-Str.: Straße wird Richtung Norden verlängert	?::inwork 19487,3593 19377,3721
+#: last_checked: 2009-11-19
+Wilhelm-Hoff-Str.: östlich des Groß-Berliner Damms in Bau, westlich nur als Trasse erkennbar	?::inwork 18833,3191 18892,3256 18953,3318 19125,3491 19180,3542
+#: last_checked: 2009-11-19
+Groß-Berliner Damm: Straße wird neu gebaut, danach wird auch in Richtung Norden ein Radweg existieren	?::inwork; 18050,4649 17956,4787 17885,4912 17780,5086 17770,5108 17742,5174 17700,5272 17645,5328
+#: last_checked: 2009-11-19
+Greifstr.: Straße wird zurzeit neu gebaut, danach vielleicht asphaltiert?	?::inwork 17780,5086 17854,5131
 #: last_checked: 2009-10-17
 Rhinstr.: Radwegsituation Richtung Süden nach den Bauarbeiten prüfen	?::inwork; 18234,13500 18220,12450 18216,12262 18216,12239 18215,12132
 #: by: http://www.potsdam.de/cms/beitrag/10050631/757395/
@@ -178,6 +186,8 @@ Laut Uckermark-Kurier: 2.7km Radweg auf ehem. Bahndamm zwischen L15 undf K7332 b
 #: last_checked: 2009-09-19:
 Choriner Str.: die Choriner Str. soll eine Fahrradstraße werden	? 10480,13871 10489,13942 10502,14070 10558,14176 10629,14299 10870,14689 10893,14705
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20081110.1105.113814.html
+#: last_checked: 2009-11-19:
+#: next_check: 2010-09-30:
 Eisengutweg: Radwege entstehen im Zuge der Bauarbeiten bis 2011-09-30	?::inwork 17894,2783 17741,2824 17525,3029 17274,3267 17142,3393
 #: by: http://www.berlin.de/ba-pankow/presse/archiv/20080912.1205.109026.html
 #: next_check: 2010-02-01:
@@ -427,8 +437,6 @@ Karlstr. (Rehfelde): mäßiger loser Sandweg, Q2	? 43666,15719 43602,16024
 Pietschkerstr. (Potsdam): guter Beton, Q0, enge Straße, q1	? -8098,-3680 -8096,-3596 -8077,-3486 -8025,-3348
 #: by: eisenach ronald:
 Pelzlakeweg: gute Qualität, Q0	? 29163,1329 29074,1410
-#: by: anonymous:
-Barbara-McClintock-Str.: guter Asphalt, Q0	? 18802,2993 18651,3148 18514,3287
 #: by: Renate Braun:
 Schmückertstr.: Asphalt,Q0	? -80,1682 -117,1836
 #: by: Bartsch, Christel:
@@ -877,8 +885,6 @@ Neuglobsow - Rheinsberg: laut http://www.ruppin.de/rheinsberg/freizeit/sport/rad
 #: XXX ein anonymer Eintrag hat einen (diesen?) Mittelweg mit "loser Sandweg" attributiert:
 Mittelweg (Altglienicke, Bohnsdorf): Qualität (laut ADFC-Karte mäßig geeignet)?	? 20265,858 20171,698 20035,348
 Neubrandenburg: Hinterste Mühle - Stadt (Waldweg), wie geht es weiter?	? -78,126443 -112,126528 -62,126684 -96,126768 -231,126900 -428,127368 -493,127450 -671,127478
-#: note: Ausgeschildert "zum Sportplatz", zumindest am Anfang Waldweg/Schotter, Q2+
-Eichbuschallee - Plänterwald: Qualität?	? 16136,7886 16534,8182
 Hof Sternhagen - Lindenhagen: Qualität (Deckenerneuerung 5/2005)?	? 35466,92211 34375,92125 33537,92937 33412,93612 33342,94000
 Beenz - Kröchlendorff: Qualität (zumindest die Kröchlendorffer Seite ist asphaltiert)?	? 30850,95280 30813,95463 30179,95743 29814,96060 28388,96768
 Lindenhagen - Beenz: Qualität?	? 32388,94460 31922,94902 31069,95292 30850,95280 30510,95193 30216,94987
@@ -1703,10 +1709,6 @@ Buolstr.: Qualität?	? 559,15342 429,15284 283,15237
 #: XXX: ein anonymer Eintrag existiert, aber nach der Beschreibung hat sich das eher wie Rohrdamm als Köttgenstr. angehört...
 Köttgenstr.: Qualität?	? 473,15169 556,15175 613,15195
 Sternfelder Str.: Qualität?	? 386,14162 367,13991 371,13863 182,13878 169,13851
-Vereinsstr.: Qualität?	? 17180,3997 17244,4084 17297,4159 17405,4151 17503,4148
-Lindhorstweg: Qualität?	? 16674,4096 16742,4098 16852,4105 16887,4105 17027,4090 17108,4049 17180,3997 17187,3988 17228,3936 17245,3895
-Heinrich-Mirbach-Str.: Qualität? Für Autofahrer gesperrt?	? 17288,4026 17244,4084
-Köpenicker Str. (Johannisthal): Qualität?	? 17507,4216 17638,4224 17660,4204
 Adolfstr.: Qualität?	? 22756,11268 22751,11381 22743,11540 22734,11662 22633,11769
 Senziger Str.: Qualität?	? 22191,11999 22224,11963 22263,11911 22301,11879 22333,11846
 Münsterberger Weg: Qualität zwischen Gielsdorfer Str. und Frettchenweg?	? 23883,11416 24034,11363
@@ -1810,17 +1812,6 @@ Moosstr., Wohngebiet: Qualität? Einbahnstraße Richtung Süden, auch für Radfahrer
 Moosstr., Wohngebiet: Qualität? Einbahnstraße Richtung Norden, auch für Radfahrer?	? 19245,4931 19241,4958 19236,5025 19233,5076 19210,5150
 Moosstr., Wohngebiet: Qualität?	? 19294,5033 19236,5025
 Moosstr., Wohngebiet: Qualität?	? 19306,4969 19241,4958
-Allmersweg: Qualität?	? 17855,5236 17789,5189
-Greifstr.: Qualität?	? 17906,5170 17854,5131 17780,5086
-Am Grünen Anger: Qualität?	? 17854,5131 17959,4955 18031,4831
-Pilotenstr.: Qualität zwischen Groß-Berliner Damm und Hagedornstr?	? 18116,4898 18031,4831 17956,4787
-Nieberstr.: Qualität?	? 18030,5010 17959,4955 17885,4912 17792,4875 17760,4867
-Am Haselbusch: Qualität? Durchfahrt für Autos möglich?	? 17463,4964 17349,5000 17291,5045
-Fielitzstr.: Qualität?	? 17276,4539 17173,4392 17113,4295 17095,4208 17066,4149 17027,4090
-Megedestr.: Qualität?	? 17244,4242 17113,4295 17092,4297 17001,4307 16909,4309
-Rollettweg: Qualität?	? 16814,4315 16878,4268 16966,4191
-#: note: wrong name in Pharus-Plan!
-Draesekestr.: Qualität?	? 16887,4105 16966,4191 17092,4297
 Minzeweg: Qualität?	? 16556,3258 16420,3353 16365,3396 16325,3401 16315,3430 16225,3512 16003,3652 15838,3754 15603,3905
 Sauerdornweg: Qualität?	? 16420,3353 16473,3417 16496,3448
 Sauerdornweg - Uferweg am Teltowkanal: existiert eine Durchfahrt für Radfahrer? Qualität?	? 16496,3448 16510,3473
@@ -1883,13 +1874,9 @@ Schönecker Weg: Qualität?	? 22330,6973 22358,7093
 Eitelsdorfer Str.: Qualität?	? 22869,7095 22810,7120 22690,7146 22501,7192 22272,7242
 Pflanzgartenplatz: Qualität?	? 22656,7412 22685,7480
 Dammheidestr.: Qualität?	? 22880,7351 22745,7388 22656,7412 22554,7437
-Johann-Hittorf-Str.: Qualität?	? 18951,3069 18802,2993 18757,2966 18716,2966 18592,2971
-Karl-Ziegler-Str.: Qualität?	? 18951,3069 18833,3191 18766,3260 18624,3402
-Ernst-Lau-Str.: Qualität?	? 18766,3260 18651,3148 18540,3040
 #: XXX: anonymous meint "gute Qualität"
 Hangelsberger Gang: Qualität?	? 31186,4341 31258,4560 31311,4742
 Straße 3a: Qualität?	? 16689,3056 16740,3131 16793,3176
-Weg am Heidekampgraben - Kiefholzstr. (entlang der S-Bahn): Qualität (wahrscheinlich asphaltiert)?	? 15185,7234 15379,7283 15601,7340
 Paplitzer Str.: Qualität zwischen Saalower Str. und Goltzstr.? Sind einige Abschnitte als Einbahnstraße ausgewiesen, und falls ja, gilt die Einbahnstraßenregelung auch für Radfahrer?	? 10735,-3142 10767,-3064 10783,-3033 10831,-2919 10884,-2795 10900,-2756 10927,-2687 10949,-2635 10989,-2543 11021,-2464 11027,-2448 11080,-2035
 Deutschtaler Str.: Qualität?	? 17344,1060 17492,843 17640,626 17811,374 17854,314 17946,179 18011,83 18077,-13 18230,-233
 Großziethen: wie weit in Richtung Süden gehen die Radwege?	? 13124,216 13165,-34 13176,-161 13225,-681 13230,-712 13309,-1268
@@ -1999,12 +1986,6 @@ Gurlittstr.: Qualität?	? 7213,5062 6949,5096
 #: XXX: osm meint cycleway, foot=yes, keine Überquerungsmöglichkeit
 Kottesteig: Qualität? Für Autofahrer gesperrt? Kann der Munsterdamm in Höhe Kottesteig überquert werden?	? 6868,5262 6806,5230 6767,5233
 Doldenweg: Qualität? Für Autofahrer gesperrt?	? 7424,4821 7487,4802
-Drosselbartstr.: Qualität?	? 15188,6908 15024,7083 14951,7163
-Rübezahlstr.: Wie ist die Qualität der Straße? Gibt es hier eine Einbahnstraßenregelung, und wenn ja, gilt sie für die gesamte Straße oder nur einen Teilabschnitt und gilt sie auch für Radfahrer?	? 15024,7083 15058,7115 15115,7128 15136,7106 15222,7162
-Wegastr.: Qualität? Einbahnstraße, auch für Radfahrer?	? 15222,7162 15175,7221
-Lakegrund: Qualität? Für Autos gesperrt? Kann die Köpenicker Landstraße in Höhe Lakegrund überquert werden?	? 16406,7430 16195,7398
-Eschenbachstr.: Qualität?	? 16290,7160 16375,7070
-Stormstr.: Qualität?	? 16323,6998 16234,7100
 Elbeweg: Qualität? Für Autofahrer gesperrt?	? 17211,7265 17135,7223 17061,7323 16949,7484 16934,7570 16902,7652 16869,7713
 #: XXX nur dreimal bei einer Googlesuche erwähnt!
 Kuhnheimstr.: Qualität? Existiert dieser Straßenname tatsächlich?	? 17514,6754 17418,6702
@@ -2092,8 +2073,6 @@ Ruthstr.: Qualität der Ruthstr. zwischen Elisabethstr. und Charlottenstr.?	? 612
 Genfer Str.: Ist die Genfer Str. eine Einbahnstraße? Wenn ja, gilt die Einbahnstraßenregelung nur für Autofahrer oder auch für Radfahrer?	? 7031,18085 6939,18160 6821,18216 6683,18243
 Genfer Str. - Deutsche Str.: Existiert eine Verbindung für Radfahrer zwischen Genfer und Deutscher Str.?	? 7075,18033 7089,17990 7148,17999
 Deutsche Str.: Qualität?	? 7148,17999 7227,18010 7418,18051
-#: XXX: auch eintragen: NN zur Rudower Chaussee hin, genauere Abbiegebeschreibung bzw. Sperrung über die Rudower Chaussee (Auto/Radfahrer)
-Walther-Nernst-Str.: Qualität?	? 19602,2956 19498,3054 19475,3074
 Mewesstr.: Qualität der Straße zwischen Röbellweg und Röntgentaler Weg?	? 17186,26779 17108,26852 16985,26966
 Priesterstege: Qualität?	? 13524,21053 13562,20913
 Alt-Blankenburg: Qualität der Nebenstraße Richtung Schäferstege?	? 13562,20913 13487,20887 13491,20869 13493,20847 13576,20849
@@ -2194,9 +2173,6 @@ Am Maselakekanal: Qualität? Führt die Radroute Berlin-Kopenhagen hier entlang? K
 Parkweg durch den Maselakepark: Qualität?	? -2834,16375 -2720,16356 -2620,16380 -2587,16600 -2504,16558
 Brücke über die Maselake: Gibt es hier eine Treppe oder Rampe? Ist die Brücke eine Zugbrücke? Name der Brücke?	? -2504,16558 -2445,16610
 Hugo-Cassirer-Str. - Maselakepark: Qualität?	? -2391,16607 -2445,16610
-Erich-Thilo-Str.: Qualität? Kann man als Radfahrer die Rudower Chaussee in Höhe der Erich-Thilo-Str. überqueren?	? 19417,3015 19331,3098 19257,3172
-Rumplerzeile: Qualität? Ist die Straße für Autofahrer gesperrt?	? 19331,3098 19417,3184
-Katharina-Boll-Dornberger-Str.: Qualität?	? 19269,3183 19167,3287
 Dingolfinger Str.: Qualität? Führt die Straße zur Walsheimer Str.? Kann der Blumberger Damm in Höhe der Dingolfinger Str. überquert werden?	? 21135,11799 21233,11781 21352,11701
 Nottepfad: Qualität?	? -8837,4688 -8820,4823 -8806,4957
 Nieplitzsteig: Qualität?	? -8642,4789 -8727,4795 -8745,4812 -8820,4823
@@ -2214,10 +2190,6 @@ Carossastr.: Qualität?	? -2595,16808 -2946,16869
 Am Maselakepark: Qualität?	? -2955,16418 -2939,16495 -2661,16446 -2595,16808
 #: note: http://www.berlin.de/ba-spandau/presse/archiv/20080807.0735.106603.html
 Bamihlstr.: Qualität?	? -2595,16808 -2579,16899 -2563,17004
-Johannes-Sasse-Ring: Qualität? Gibt es hier eine Einbahnstraße?	? 17274,3267 17206,3189 17146,3125 17412,2908 17465,2964 17525,3029
-Johannes-Sasse-Ring: Qualität?	? 17206,3189 17465,2964
-Herrmann-Dorner-Allee: Qualität zwischen Groß-Berliner Damm und Rudower Chaussee? Gibt es hier Radwege?	? 18928,3701 18855,3639 18750,3536 18686,3468 18624,3402 18514,3287 18397,3174 18347,3129 18427,2752
-James-Franck-Str.: Qualität?	? 18632,2651 18592,2971 18540,3040 18397,3174
 #: XXX zumindest zwischen Löcknitz- und Flakenseestr. "bituminöse" Decke, laut http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20080811.1415.106769.html
 Möllenseestr.: Qualität?	? 26400,5449 26358,5403 26364,5288 26367,5211 26350,5167 26299,5061 26299,5041
 Wupatzseestr.: Qualität?	? 26196,5477 26213,5403 26224,5285
@@ -2403,17 +2375,6 @@ Dohlenstr.: Qualität?	? -1584,19363 -1557,19457 -1508,19578 -1419,19815 -1364,19
 Dorndreherweg: Qualität?	? -1364,19982 -1414,20145 -1473,20181
 Elstergasse: Qualität?	? -1596,20184 -1827,20216 -1971,20231
 Lachtaubenweg: Qualität?	? -1827,20216 -1823,20298 -1838,20471
-Alexander-von-Humboldt-Weg: Qualität? Bereits fertig gestellt? Für Autos offen?	? 19015,3129 18892,3256 18686,3468
-Boveristr.: Qualität?	? 19053,2890 19146,2975
-Kroneckerstr.: Qualität?	? 19146,2975 19216,3052
-#: XXX: an der Max-Born-Str. keine Linksabbiegemöglichkeit für Autos, Radfahrer können wahrscheinlich improvisieren
-Ludwig-Boltzmann-Str.: Qualität?	? 18736,2764 18779,2773 18944,2816 19064,2867
-#: XXX: wie ist die James-Franck-Str. hier integriert?
-Friedrich-Wöhler-Str.: Qualität?	? 18736,2764 18628,2750 18612,2888 18722,2902
-Karl-Otto-Reinsch-Str.: Qualität? Kann die Rudower Chaussee in Höhe Karl-Otto-Reinsch-Str. überquert werden?	? 19603,3207 19524,3286 19449,3358
-Merlitzstr.: Qualität?	? 19417,3184 19524,3286 19660,3420
-Wagner-Régeny-Str.: Qualität?	? 19732,3340 19660,3420 19581,3495 19491,3599
-Wilhelm-Hoff-Str.: Qualität? Geht die Straße über den Groß-Berliner Damm Richtung Nordosten weiter?	? 18833,3191 18892,3256 19125,3491
 Wilhelm-Ostwald-Str.: Qualität? Geht die Straße über "Am Studio" hinaus Richtung Nordosten weiter?	? 19933,2474 20116,2639
 Armenische Str.: Qualität?	? 7216,16552 7285,16638 7177,16715 7150,16760 7147,16791
 Syrische Str.: Qualität? Kann man als Radfahrer zur Seestr. durchfahren? Kann man die Seestr. hier überqueren?	? 7106,16646 7216,16552 7263,16508 7295,16477
@@ -2436,10 +2397,6 @@ Golfweg: Qualität?	? -7394,918 -7985,781 -8136,700
 Malergarten: Qualität?	? -7831,-2230 -7859,-2304
 Reichsbahnstr.: Qualität?	? -4554,1391 -4579,1397 -4648,1334
 Alpenrosenweg: Qualität?	? 16209,5067 16083,5118 15947,5137 15828,5156 15721,5211 15656,5271
-Dornbrunner Str.: Qualität? Ist die Straße (teilweise?) eine Einbahnstraße? Wenn ja, gilt die Einbahnstraßenregelung nur für Autofahrer oder auch für Radfahrer?	? 16144,6542 16043,6414 15954,6297
-Heidemühler Weg: Qualität?	? 16304,6374 16192,6503 16144,6542
-Hohenbirker Weg: Qualität?	? 16192,6503 16280,6601
-Schöntaler Weg: Qualität?	? 16089,7041 15988,7129
 Späthsfelder Weg: Qualität?	? 15870,5251 15828,5156 15728,4949 15608,4722 15548,4623 15448,4422
 Sperlingsweg: Qualität?	? 14808,5202 14842,5128 14898,5010 14947,4961 14976,4935 14994,4913 15011,4891
 Straße 19 (Baumschulenweg): Qualität?	? 14681,5529 14669,5573 14664,5834
@@ -2846,9 +2803,6 @@ Klothildestr - Schloßallee: Kann der Weg von Radfahrern befahren werden?	? 11068
 Dechertstr.: Qualität?	? 11429,19682 11475,19749 11626,19806 11652,19743
 #: XXX laut anonymous "mäßiger Asphalt", allerdings keine Angabe zu den Sperrungen, außerdem war nicht sicher, ob er die Rolandstr. in Niederschönhausen oder Nikolassee meinte
 Rolandstr. (Niederschönhausen): Qualität? Sind Teile der Straße für den Autoverkehr gesperrt?	? 11627,19907 11380,19783 11229,19706 11134,19655 11018,19597 10806,19490 10630,19429
-Segelfliegerdamm - Park Adlershof: Qualität? Gibt es Straßennamen oder andere Bezeichnungen? Ist der Weg für Autos offen?	? 17612,4066 17612,4066 17877,3979 17947,3957 18133,4064
-#: XXX "grüner Weg"
-Park Adlershof - Karl-Ziegler-Str.: Qualität? Nachts beleuchtet?	? 18592,3743 18637,3526 18562,3461 18624,3402
 Fontanestr. (Hermsdorf): Qualität?	? 4039,24296 3922,24338 3888,24338
 #: XXX ein anonymer Eintrag "mäßiger Asphalt" existiert, aber bezieht er sich auf den südlichen oder nördlichen Teil?
 Braunfelsstr.: Qualität (des südlichen Abschnitts)?	? 11953,-1181 11948,-1122 11878,-885 11844,-773 11808,-659 11771,-545 11747,-440 11721,-351
@@ -3816,3 +3770,13 @@ Rückerstr.: gehört die Rückerstr. zur 10er-Zone?	? 10535,13509 10597,13647
 Gormannstr.: gehört die Gormannstr. zur 10er-Zone?	? 10372,13436 10390,13493 10406,13543 10445,13675 10463,13747
 Kleine Rosenthaler Str.: 10er-Zone?	? 10282,13546 10304,13575 10305,13580 10307,13600 10310,13692
 Konrad-Wolf-Str.: hat die gesamte Konrad-Wolf-Straße Radstreifen?	? 15580,14880 15774,14992 15937,15134 16028,15218 16119,15302 16208,15379 16331,15486 16412,15559 16434,15580 16497,15636 16633,15753 16819,15912 16917,16001 16961,16042
+(Uferweg am Kanal): nachts beleuchtet?	? 16425,6445 16275,6275 16263,6248 16098,6134 16065,6126 16044,6120
+#: XXX an der Nieberstr. noch asphaltiert. Radfahren explizit erlaubt. green1 (mindestens) eintragen
+Weg am Johannisthaler Park: Qualität? Nachts beleuchtet?	? 17760,4867 17659,4849 17580,4761
+Melli-Besse-Str.: Wie ist die Qualität der Straße im nördlichen Abschnitt (vielleicht auch asphaltiert?)	? 17827,3549 17832,3740 17870,3965
+#: XXX missing in Berlin.coords.data
+Straße an der Parkanlage: Qualität? Stimmt der Straßenname? Spielstraße?	? 17827,3549 17892,3550
+Hanuschkestr.: Qualität? Spielstraße?	? 17892,3537 17974,3536
+Walter-Huth-Str.: Ist ein Abschnitt der Straße verkehrsberuhigt? Welcher genau?	? 17832,3740 17896,3738 17927,3737 17976,3735
+Ellernweg: Qualität?	? 17303,4824 17428,4792 17542,4772
+Am Alten Fenn: Qualität?	? 17037,4794 17060,4848 17119,4931 17246,5089 17266,5134 17291,5201 17297,5260 17300,5423 17366,5551

@@ -531,6 +531,10 @@ Sonntagstr.: Richtung S-Bahnhof viele Fußgänger	q3 14798,10985 14752,11041
 Bouchéstr.: Bodenschwellen	q0 13489,9456 13352,9308
 #: XXX_prog: für Anhänger relevant (q1 oder so)
 Bouchéstr.: Bodenschwellen	q0 13645,9621 13867,9864
+#: XXX_prog: für Anhänger relevant (q2 oder so)
+Radenzer Str.: zwei Bodenschwellen	q1 16220,6277 16304,6358
+#: XXX_prog: für Anhänger relevant (q2 oder so)
+Dornbrunner Str.: zwei Bodenschwellen	q1 16144,6542 16043,6414
 (Neue Grünstr. - Alte Jakobstr.): Radfahren verboten	q4 10624,11548 10534,11609
 Cuvrystr.: Bodenschwellen	q1 13053,10088 13132,10239
 Elsensteg: Fußgänger	q3 13366,8694 13376,8705 13394,8730 13402,8741
@@ -578,6 +582,15 @@ Karl-Vesper-Str.: enge Straße	q1 14184,13666 14205,13755 14263,13739
 Mahlerstr.: Fußgängerzone, Radfahrer frei	q2 13739,15643 13714,15709
 Fußgängerbrücke Storkower Str.: Fußgänger	q2 14481,13143 14524,13271 14530,13269
 Lemgoer Str.: Fußgänger, Bordsteine	q2 14341,17030 14331,17016 14328,17011
+(Uferweg am Kanal): gemeinsamer Rad- und Gehweg	q1 16425,6445 16275,6275 16263,6248 16098,6134 16065,6126 16044,6120
+Am Haselbusch: Radfahren verboten, ggfs. schieben	q1 17411,4979 17356,5011
+(Allmersweg - Groß-Berliner Damm): Fußgänger, Bordsteine	q3 17789,5189 17742,5174
+#: XXX_prog: für Anhänger q3
+Sportfliegerstr.: drei Bodenschwellen, nicht umfahrbar	q2 18157,4742 18343,4545
+Karl-Otto-Reinsch-Str.: Fußgänger	q1 19603,3207 19524,3286
+Brook-Taylor-Str.: Fußgängerzone	q1 19146,2975 19101,3028 19015,3129
+Heinrich-Mirbach-Str.: Fußgänger	q1 17288,4026 17244,4084
+Drosselbartstr.: enge Straße	q1 15188,6908 15024,7083 14951,7163
 ######################### User Contributions #################################
 #: by: Michael Kiekbusch
 #: corrected_by: srt/policy (q4 -> q3-)
@@ -716,8 +729,10 @@ Georg-Lehnig-Str.: enge Straße	q1 14532,13563 14509,13481 14428,13507
 Erich-Kuttner-Str.: enge Straße	q1 14584,13547 14532,13563 14428,13596 14370,13615 14323,13627 14217,13657 14184,13666 14117,13685 14088,13627 14060,13622
 #: by: ^^^
 #: by: Patryk (bigoudi): vvv
-(Königsheideweg - Westweg): Weg durch den Park	q1 17115,4757 17173,4902
-(Breiter Weg - Südostallee/Sterndamm): Fußgänger	q1 17538,5315 17586,5374
+#: corrected_by: srt (added "Bordstein")
+(Königsheideweg - Westweg): Weg durch den Park, Bordstein	q1 17115,4757 17129,4837 17173,4902
+#: confirmed_by: srt
+(Breiter Weg - Südostallee/Sterndamm): Fußgänger	q1 17586,5374 17538,5315
 #: by: ^^^
 #: by: Dirk (gesch) vvv
 Birkenwerderstr.: enge Straße mit parkenden Autos	q1 6470,20761 6945,20805
@@ -1057,11 +1072,16 @@ Wuhlewanderweg: Spaziergänger	q1 22314,17916 22365,17864
 #: by: ^^^
 # del by srt: #: by: kathrin dorenburg-bunn [AM] vvv Erich-Kurz-Str.: viele Fußgänger	q2 18354,10600 18345,10575 18285,10550 18232,10532 18150,10543 18120,10532 18104,10482 Erich-Kurz-Str.: viele Fußgänger	q2 18285,10550 18332,10434 18342,10384 18326,10362 18264,10343 #: by: ^^^
 #: by: Matha Wimmer [AM] vvv
-Widderstr.: enge Straße	q2 14853,7451 14997,7240
-Krebsgang: enge Straße	q2 15085,7258 14997,7240 14878,7211 14792,7192 14693,7168
-Einhornstr.: enge Straße	q2 14708,7325 14792,7192
-Steinbockstr.: enge Straße	q2 14775,7385 14840,7307 14848,7288 14878,7211
-Steinbockstr.: enge Straße	q2 14840,7307 14861,7316 14868,7297 14848,7288
+#: corrected_by: srt (q2 -> q1)
+Widderstr.: enge Straße	q1 14853,7451 14942,7347 14997,7240
+#: corrected_by: srt (q2 -> q1)
+Krebsgang: enge Straße	q1 15085,7258 14997,7240 14878,7211 14792,7192 14693,7168
+#: corrected_by: srt (q2 -> q1)
+Einhornstr.: enge Straße	q1 14708,7325 14792,7192
+#: corrected_by: srt (q2 -> q1)
+Steinbockstr.: enge Straße	q1 14775,7385 14840,7307 14848,7288 14878,7211
+#: corrected_by: srt (q2 -> q1)
+Steinbockstr.: enge Straße	q1 14840,7307 14861,7316 14868,7297 14848,7288
 #: by: ^^^
 #: by: Kay-Uwe Ludwig [AM]
 Seefelder Str. (Fußweg): Fußgänger, schmal	q2 17274,16177 17371,16194 17383,16197
@@ -1297,9 +1317,7 @@ Juttastr.: enge Straße	q1 1072,4542 949,4366
 Herbert-Baum-Str.: enge Straße	q1 13826,16026 13869,15912 13904,15818 13943,15717 13964,15656 13989,15589
 #: by: Bernd Mahrin:
 Sendener Weg: enge Straße	q1 964,18321 1040,18283 1144,18237 1189,18246 1221,18327 1281,18487 1346,18662
-#: by: Bernd Honsa:
-#: corrected_by: srt/policy (q4 -> q2, q4 gibt es nicht)
-Arthur-Müller-Str.: enge Straße	q2 17799,3183 17890,3204 17980,3197 18199,2960 18014,2830
+# XXX del : by: Bernd Honsa: #: corrected_by: srt/policy (q4 -> q2, q4 gibt es nicht) Arthur-Müller-Str.: enge Straße	q2 17799,3183 17890,3204 17942,3205 17980,3197 18057,3117 18196,2974 18199,2960 18156,2912 18014,2830
 #: by: henning (hirschgarten):
 #: corrected_by: srt/policy (q2 -> q1)
 Gilgenburger Str.: enge Straße	q1 24387,5672 24434,5645 24666,5726
@@ -1427,7 +1445,7 @@ Werfelstr.: enge Straße	q1 10126,-834 9907,-812
 Simpsonweg: enge Straße	q1 10082,-671 9937,-693 9913,-705 9899,-732 9907,-812 9884,-860
 #: by: ^^^
 #: by: where_are_you_between:
-(Weg am Heidekampgraben - Kiefholzstr., entlang der S-Bahn): teilweise eng/unübersichtlich	q1 15379,7283 15601,7340
+(Weg am Heidekampgraben - Kiefholzstr., entlang der S-Bahn): teilweise eng/unübersichtlich	q1 15388,7228 15422,7265 15468,7291 15579,7316 15601,7340
 #: by: Norbert Rupsch
 Immenweg: eng (einspurig)	q1 6744,4983 6415,5028 6383,4890
 #: by: Ralf Pilgrim:
