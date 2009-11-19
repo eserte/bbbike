@@ -18,7 +18,7 @@ Wisbyer Str.: Radstreifen sind noch provisorisch	? 12091,16209 12026,16247 11887
 #: next_check: 2009-12-15
 #: XXX: die ersten Meter in der Breiten Str. sind noch Baustelle ohne Radspuren
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0709/nachricht2788.html
-Breite Str./Werderscher Markt	? 10267,12305 10170,12261 10109,12238 10084,12228 9972,12184
+Breite Str./Werderscher Markt	?::inwork 10267,12305 10170,12261 10109,12238 10084,12228 9972,12184
 # Hier scheint nichts mehr zu passieren: #: last_checked: 2008-02-22 Gitschiner Str.	? 9948,10280 10122,10294 10340,10301 10605,10312 10859,10333 10962,10340 11117,10326
 # XXX laut Luftbild fertig: last_checked: 2006-06-16 (von Corinna):Gorkistr.	? 2998,20487 2974,20483 2615,20421
 # XXX del: Alt-Friedrichsfelde (nur nördliche Seite) (wahrscheinlich nur hier, wo bereits eine Lücke ist)	? 18220,11710 18098,11720 17966,11730 17746,11748 17497,11769 17440,11774 17240,11791
@@ -135,25 +135,25 @@ Neuer Garten: Planung einer Radwegverbindung zwischen Gotischer Bibliothek und A
 #: XXX Zugleich Benennung von "Alter Markt" (im Gegensatz zum auch vorhandenen "Am Alten Markt") in der Gegend
 Humboldtstr. (Potsdam): alte Straße wird hier wieder benannt	?::inwork -12771,-1633 -12766,-1598
 #: by: MoPo 2009-08-01, soll 2009 realisiert werden vvv
-Alter Fischweweg: gemeinsamer Geh- und Radweg	? 30087,5448 30244,6615 30307,6823
+Alter Fischweweg: gemeinsamer Geh- und Radweg	?::inwork 30087,5448 30244,6615 30307,6823
 Radwegeverbindung am U-Bhf. Johannisthaler Chaussee, gegenüber Kirschnerweg	? 13869,2658 13807,2863
 #: last_checked: 2009-08-04
 #: next_check: 2009-11-13
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20090928.1155.140676.html
-Belziger Str.: Asphaltierung	? 7315,9156 7110,9024
+Belziger Str.: Asphaltierung	?::inwork 7315,9156 7110,9024
 #: by: http://www.berlin.de/ba-spandau/presse/archiv/20090918.0810.139251.html
 #: next_check: 2010-05-01
-Asphaltierung im Ramingrünzug	? -3776,14419 -3906,14517 -3941,14603 -4015,14744 -4035,14779
-Radwegbau Welzower Steig	? 6320,21777 6223,21952 6257,22005 6111,22155 6082,22183 6052,22185 6026,22227 5993,22260 5984,22280 5939,22330 5929,22339
+Asphaltierung im Ramingrünzug	?::inwork -3776,14419 -3906,14517 -3941,14603 -4015,14744 -4035,14779
+Radwegbau Welzower Steig	?::inwork 6320,21777 6223,21952 6257,22005 6111,22155 6082,22183 6052,22185 6026,22227 5993,22260 5984,22280 5939,22330 5929,22339
 Radverbindung zwischen Bernhard-Lichtenberg-Str. und Goerdelerdamm	? 3174,14253 3229,14224
 Asphaltierung gemeinsamer Geh- und Radweg (Schönholzer Heide)	? 7857,19693 7849,19614 7940,19521 8170,19308 8334,19157 8359,19162
 Alt-Biesdorf (nördliche Seite): Bau von Radwegen	?; 22242,11269 21960,11269 21860,11278 21750,11319 21624,11379 21398,11482 21311,11528
 #: last_checked: 2009-10-17
-Allee der Kosmonauten: Bau von Radwegen oder -streifen	? 19173,13478 19059,13474 18875,13467 18783,13469 18234,13500
+Allee der Kosmonauten: Bau von Radwegen oder -streifen	?::inwork 19173,13478 19059,13474 18875,13467 18783,13469 18234,13500
 #: by ^^^
 #: by: MoPo 2009-08-01, soll 2010 realisiert werden vvv
 #: next_check: 2010-03-01 vvv
-Radwegbau Welzower Steig	? 6320,21777 6370,21689 6428,21648 6478,21652 6508,21646 6529,21620 6576,21414
+Radwegbau Welzower Steig	?::inwork 6320,21777 6370,21689 6428,21648 6478,21652 6508,21646 6529,21620 6576,21414
 Fasanenstr.: Öffnung der Einbahnstraße für Radfahrer	? 5268,11274 5247,10992 5242,10918 5229,10716 5207,10399
 Braunschweiger Str.: Asphaltierung	? 13047,7234 13150,7254 13322,7294 13369,7307 13487,7337
 #: last_checked: 2009-09-27
@@ -219,9 +219,9 @@ Wilhelm-Kabus-Str.: Bauarbeiten beginnen 2007, die Naumannstr. wird später verke
 Verbindung zwischen Leuthener Platz und General-Pape-Str. (evtl. mit Verlängerung) inkl. Brücke über die Bahnstrecke für Fußgänger und Radfahrer, Realisierung bis 2010-12-31	?::projected 7716,8356 7837,8354 7893,8327 8088,8283 8264,8289
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/presse/archiv/20060109.1050.33932.html
 #: last_checked: 2008-03 (by steffi silvermidi)
-Blanckertzweg: Radwege in Planung (ebenso östlicher Teil der Hildburghauser Str.)	? 4806,1360 4634,1245 4542,1188
-Aalemannkanal: laut ADFC-Karte/neu Brücke geplant	? -2053,18375 -2156,18310
-Segelfliegerdamm (Zernsdorf - Niederlehme): in Planung/Bau	? 29192,-10630 29088,-10386 29021,-10333 28918,-10301 28723,-10326 28656,-10329 28539,-10255 28499,-10164
+Blanckertzweg: Radwege in Planung (ebenso östlicher Teil der Hildburghauser Str.)	?::projected 4806,1360 4634,1245 4542,1188
+Aalemannkanal: laut ADFC-Karte/neu Brücke geplant	?::inwork -2053,18375 -2156,18310
+Segelfliegerdamm (Zernsdorf - Niederlehme): in Planung/Bau	?::inwork 29192,-10630 29088,-10386 29021,-10333 28918,-10301 28723,-10326 28656,-10329 28539,-10255 28499,-10164
 # : by: http://www.eyth16.de/weblog/2005/11/04/145/
 # : last_checked: 2006-03-29
 # : note: schien beim letzten Check noch offen
