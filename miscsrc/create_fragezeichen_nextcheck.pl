@@ -150,8 +150,17 @@ sub handle_file {
 		 }
 	     }
 
+	     my $cat;
+	     if ($r->[Strassen::CAT] =~ m{^\?}) {
+		 $cat = $r->[Strassen::CAT];
+	     } elsif ($r->[Strassen::CAT] =~ m{:inwork}) {
+		 $cat = '?::inwork';
+	     } else {
+		 $cat = '?';
+	     }
+
 	     # XXX better!!!
-	     print $r->[Strassen::NAME] . (defined $add_name ? (length $r->[Strassen::NAME] ? ' ' : '') . $add_name : '') . "\t? " . join(" ", @{ $r->[Strassen::COORDS] }) . "\n";
+	     print $r->[Strassen::NAME] . (defined $add_name ? (length $r->[Strassen::NAME] ? ' ' : '') . $add_name : '') . "\t$cat " . join(" ", @{ $r->[Strassen::COORDS] }) . "\n";
 	 });
 }
 
