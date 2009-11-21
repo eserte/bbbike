@@ -1372,6 +1372,10 @@ Köpenicker Landstr. -> Lakegrund: Mittelstreifen mit Bordsteienen	3::igndisp 159
 Straßenbahntrasse	3nocross::ignrte 19053,2890 19021,2946 18951,3069
 Zum Trudelturm -> Max-Born-Str.: Straßenbahntrasse	3::igndisp 19101,3028 19021,2946 19053,2890
 Max-Born-Str. -> Zum Trudelturm: Straßenbahntrasse	3::igndisp 18951,3069 19021,2946 19101,3028
+Mittelstreifen	3nocross::ignrte 6765,5863 6895,5873 7078,5887
+Riemenschneiderweg -> Prellerweg: Mittelstreifen	3::igndisp 6878,5946 6895,5873 7078,5887
+Prellerweg -> Riemenschneiderweg: Mittelstreifen	3::igndisp 6765,5863 6895,5873 6878,5946
+tragen (16 Stufen)	0:20:75 7487,5477
 tragen (ca. 30 Stufen)	0:35:-219 19976,5
 tragen (ca. 30 Stufen)	0:35:-221 19932,61
 tragen (43 Stufen)	0:35:-231 16998,11861
@@ -1611,6 +1615,7 @@ Drängelgitter	BNP:3:-158 63740,42840
 Drängelgitter	BNP:3:-157 63721,42792
 Schranke, kann auch mit Anhänger umfahren werden	BNP:1:-168 49137,24422
 Drängelgitter	BNP:3:24:trailer=6 3644,8456
+Poller, Abstand 80cm (mit Anhänger über Gehweg umfahren)	BNP:1:1:trailer=10 7816,5682
 Kreuzstr.: Bauarbeiten, voll gesperrt	2:inwork 10231,11940 10209,11918
 Wegedornbrücke: Vollsperrung, Neubau	2:inwork 20385,593 20442,564 20510,530
 Schinkelplatz: Bauarbeiten	2:inwork 10084,12228 9996,12401
@@ -1631,7 +1636,7 @@ tragen (Treppe)	0:15:-136 2211,5120
 tragen (Treppe)	0:30:-206 17626,-1847
 tragen (Treppe)	0:30:-208 17602,-1803
 Drängelgitter	BNP:5:-241 4386,6288
-Drängelgitter	BNP:5:-53 4351,6307
+Drängelgitter	BNP:5:-56 4351,6307
 Heimstättenweg (kein öffentlicher Verkehr)	2 4355,6207 4323,6131 4268,6154
 Markobrunner Str.	1 4374,7016 4462,7137 4593,7167
 Deidesheimer Str.	1 4983,7546 4784,7534 4616,7563 4497,7595
@@ -1654,8 +1659,8 @@ Dievenowstr.	2 3165,6939 3206,7109
 Ahornstr. (Steglitz)	1 4852,6094 4869,6122 4940,6080 4926,6053
 Ahornstr. (Steglitz)	1 4926,6053 4911,6028 4839,6067 4852,6094
 Treitschkestr.	1 4854,6413 4987,6336 5125,6262 5219,6215
-tragen (Treppe)	0:40:-185 4127,5427
-tragen (5 Stufen)	0:10:28 4077,5406
+tragen (Treppe)	0:40:-217 4127,5427
+tragen (5 Stufen)	0:10:26 4061,5418
 Iltisstr.	1 2797,5624 2858,5535
 Mittelstreifen unbequem zu überqueren	3nocross::ignrte 5493,9357 5495,9263 5503,8982
 Tharandter Str. -> Bundesallee: Mittelstreifen unbequem zu überqueren	3::igndisp 5527,9263 5495,9263 5503,8982
@@ -1722,7 +1727,8 @@ Achtung, schlecht sichtbare Kette!	BNP:5:-121 13485,14054
 Treppe	0:20:-62 12867,14648
 tragen (4 Stufen) oder schmale Rampe benutzen	0:5:-235 13007,14615
 tragen (3 Stufen) oder schmale Rampe benutzen	0:5:-240 12982,14629
-tragen (Treppe)	0:15:-187 5574,5791
+tragen (8 Stufen)	0:15:-185 5575,5801
+tragen (12 Stufen)	0:20:-142 5581,5828
 Althoffplatz	1 5687,5586 5609,5584 5573,5622 5613,5672 5683,5672
 Elisenstr.: tragen (3 Stufen)	0:15 5808,5332
 tragen (9 Stufen)	0:30:-165 5822,5388

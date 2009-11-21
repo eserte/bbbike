@@ -825,7 +825,6 @@ Teufelsseechaussee: Welcher Abschnitt der Teufelsseechaussee ist eine ausgeschil
 Hertwigswalder Steig: Art der Fahrbahn (Beton, Asphalt ...)?	? 22812,12129 22917,12239 23019,12356 23033,12367
 Hartmannsweilerweg: Ist der Hartmannsweilerweg (abschnittsweise) eine Einbahnstraße? Nur für Autofahrer oder auch für Radfahrer?	? 17,3471 41,3510 16,3744
 Sperberstr. (Konradshöhe): Qualität?	? -1681,19955 -1869,19974 -2073,19990 -2216,20003
-Menckenstr.: Qualität zwischen Tiburtiusbrücke und Poschingerstr.?	? 5567,5864 5570,5913 5593,5965 5664,6082 5754,6238
 Schrobsdorffstr.: Ist die Straße durchgängig asphaltiert oder gibt es unbefestigte Abschnitte?	? 24102,8772 24156,8904 24207,9035 24261,9168 24315,9302 24360,9411 24404,9527
 Radolfzeller Weg: Qualität?	? -35,2434 -4,2413 23,2356
 Zellerfelder Str.: Qualität? Einbahnstraße? Auch für Radfahrer?	? 11468,19106 11526,18929
@@ -866,7 +865,6 @@ Hirseweg: Qualität?	? 20743,13184 20836,13170 20918,13159 21003,13152 21113,1314
 Sensenpfad: Qualität?	? 21101,12661 21176,12627
 Ährenweg: Qualität?	? 21028,12536 21134,12471 21123,12352 21107,12183
 Garbenpfad: Qualität?	? 21031,12364 21015,12190
-Reglinstr.: Qualität?	? 7523,5749 7659,5735 7817,5719
 Ingostr.: Qualität?	? 7901,4726 7970,4640
 Ingostr. - Am Teltowkanal: Durchfahrt für Radfahrer möglich? Qualität?	? 7970,4640 8027,4571
 Tejastr.: Qualität?	? 7830,4667 7897,4585
@@ -929,8 +927,6 @@ Seilerweg: Qualität?	? 16447,1483 16489,1453 16547,1439
 Seilerweg - Neuköllner Str.: Durchfahrt für Radfahrer möglich? Qualität? Nachts beleuchtet?	? 16547,1439 16605,1424 16643,1460
 Bäckerstr.: Qualität?	? 16726,1074 16700,1104 16657,1124
 Bäckerstr. - Buchbinderweg: Durchfahrt für Radfahrer möglich? Qualität? Nachts beleuchtet?	? 16657,1124 16567,1142 16485,1162
-Brüggemannstr.: Qualität?	? 6848,6309 6725,6295
-Overbeckstr.: Qualität?	? 6872,6083 6746,6073
 Str. 482: Qualität?	? 11120,1384 11146,1413 11155,1456
 Str. 96: Qualität?	? 11190,1622 11170,1517
 Glimmerweg: Qualität? Einbahnstraße, auch für Radfahrer gültig?	? 11005,1541 11170,1517 11349,1483 11436,1513 11538,1550 11713,1622
@@ -1426,7 +1422,6 @@ Leo-Baeck-Str. - Seehofstr.: Qualität? Für Radfahrer befahrbar?	? 1478,1721 1432
 Mühlenstr. - Hampsteadstr.: Qualität? Für Radfahrer befahrbar?	? 1603,2615 1631,2722 1647,2759 1634,2914
 Von-Canstein-Str. (Dahlwitz-Hoppegarten): Qualität?	? 26880,11479 26957,11450 27007,11422 27165,11294
 Meisenstr.: Qualität?	? 1613,5258 1964,5196
-Harkortstr.: Qualität? Offen für Autos? Kann man zur Röblingstr. gelangen (Hausdurchfahrt?)?	? 7669,5536 7621,5494 7570,5508 7528,5480 7477,5475
 Straße 14 (Neukölln): Qualität? Offen? Ausgeschildert?	? 14133,6187 14116,6277
 Heldburger Str.: Qualität? Führt die Straße schon bis zur Ferdinand-Schultze-Str.?	? 17247,14581 17389,14599 17514,14613 17629,14627
 Hofheimer Str.: Qualität? Führt die Straße schon über die Sollstedter Str. hinaus?	? 17579,14777 17600,14713
@@ -1469,8 +1464,6 @@ Waldmüllerstr.: Qualität?	? 1558,1805 1658,1852 1747,1887
 Nienkemperstr.: Qualität?	? 1658,1852 1640,1922 1709,2186 1812,2594
 Türksteinweg: Qualität? Existiert ein direkter Zugang zum Heinrich-Laehr-Park?	? 1181,1169 1321,1199 1359,1204
 Türksteinweg: Qualität?	? 1321,1199 1274,1376 1198,1662
-Dünther Str.: Qualität?	? 5268,5920 5234,6086
-Friedrichsruher Platz: Qualität? Für Radfahrer befahrbar?	? 5942,5775 5935,5874
 Im Gartenheim: Qualität?	? 5707,4777 5690,4744 5659,4761 5677,4794
 Unter den Rüstern: Qualität?	? 6266,4361 6174,4434 6100,4495
 Ahornweg (Wartenberg): Qualität?	? 18879,18954 18947,19168 19019,19396 19070,19572
@@ -2722,6 +2715,7 @@ Hanuschkestr.: Qualität? Spielstraße?	? 17892,3537 17974,3536
 Walter-Huth-Str.: Ist ein Abschnitt der Straße verkehrsberuhigt? Welcher genau?	? 17832,3740 17896,3738 17927,3737 17976,3735
 Ellernweg: Qualität?	? 17303,4824 17428,4792 17542,4772
 Am Alten Fenn: Qualität?	? 17037,4794 17060,4848 17119,4931 17246,5089 17266,5134 17291,5201 17297,5260 17300,5423 17366,5551
+Möckernstr.: wo genau ist der Zebrastreifen in der Möckernstr.?	? 8773,9524 8769,9290
 # added from ampeln-orig
 #: add_fragezeichen: Existiert die Ampel Nordufer/Torfstr. noch?
 geschlossen bei Bedarf (?) (Zbr)	? 27657,-11741
@@ -2756,7 +2750,6 @@ Waldowplatz (Einbahnstraßenregelung im Waldowplatz?)	? 19283,6123 19290,6114 193
 Brennerstr. (Qualität der Brennerstr. zwischen Trienter Str. und Andreas-Hofer-Platz?)	? 10228,17025 10495,17022
 Brauerplatz (Qualität des Brauerplatzes)	? 4979,1964 5004,1939 4964,1890
 Sportforumstr. (Qualität der Sportforumstr. (asphaltiert?))	? -193,12051 -212,12095 -247,12117 -369,12175
-(Zimmermannstr. (Viktoriapark)) (heisst dieser Weg wirklich so?)	? 4957,5894 4981,5939
 Klausdorfer Str. (Beschaffenheit guter Beton?)	? 23126,15979 23178,15968 23271,15948 23267,15928 23243,15820 23218,15671
 Klausdorfer Str. (Beschaffenheit guter Beton?)	? 23267,15928 23359,15910
 Klausdorfer Str. (Beschaffenheit guter Beton?)	? 23178,15968 23151,15837 23243,15820
@@ -2822,7 +2815,6 @@ Barkenhof: guter Asphalt (Ist der Barkenhof eine Spielstraße?)	? -1892,1732 -192
 Haßfurter Weg: mäßiger Asphalt (Kopfsteinpflaster oder Asphalt?)	? 11835,18301 11796,18482
 (unter der S-Bahn): Verbundsteinpflaster (tatsächlich Verbundsteinpflaster?)	? 9699,-600 9520,-641
 Miethepfad: Verbundsteinpflaster (Miethepfad zwischen Poleigrund und Weg unter der S-Bahnbrücke: tatsächlich Verbundsteinpflaster oder betoniert/asphaltiert?)	? 9520,-641 9561,-748
-Schmidt-Ott-Str.: Kopfsteinpflaster (Ist die gesamte Schmidt-Ott-Str. asphaltiert?)	? 4115,5804 4283,5694 4309,5675 4404,5613
 Alter Bernauer Heerweg: Kopfsteinpflaster (Alter Bernauer Heerweg westlich der Bezirksgrenze: Kopfsteinpflaster oder wassergebundene Decke?)	? 6641,22756 7072,22905 7782,23172 7923,23225 8145,23301
 Dohlengrund: Asphalt (wie ist die Qualität zwischen Grabensprung und Köpenicker Str.?)	? 20716,10434 21017,10423 21288,10431
 Salzachstr.: unbefestigt, fester Erdboden (wo genau sind die Kopfsteinpflaster-/Asphaltabschnitte?)	? -2103,3536 -2014,3564

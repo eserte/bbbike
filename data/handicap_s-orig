@@ -591,6 +591,12 @@ Karl-Otto-Reinsch-Str.: Fußgänger	q1 19603,3207 19524,3286
 Brook-Taylor-Str.: Fußgängerzone	q1 19146,2975 19101,3028 19015,3129
 Heinrich-Mirbach-Str.: Fußgänger	q1 17288,4026 17244,4084
 Drosselbartstr.: enge Straße	q1 15188,6908 15024,7083 14951,7163
+Zimmermannstr.: Fußgänger, Bordsteine	q3 4997,5877 5024,5863
+Deitmerstr.: Fußgänger, Bordsteine	q3 5078,5889 5048,5904
+Friedrichsruher Platz: Fußgänger, eng	q2 5942,5775 5935,5874
+Riemenschneiderweg: gemeinsamer Rad- und Gehweg, eng	q1 6878,5946 6895,5873
+#: XXX_prog: für Anhänger q2 oder q3
+Harkortstr.: Bodenschwellen	q1 7570,5508 7621,5494
 ######################### User Contributions #################################
 #: by: Michael Kiekbusch
 #: corrected_by: srt/policy (q4 -> q3-)
@@ -820,7 +826,8 @@ Hüttenweg: keine abgesenkten Bordsteine an der Kreuzung "Auf dem Grat"	q1 1964,5
 (Glühwürmchenweg - Pionierstr.): Wohngebiet	q1 -5960,16441 -6018,16250
 Schloßpark Charlottenburg: Fußgänger	q1 3296,12719 3231,12749 3127,12793 3055,12973 2997,13402 2950,13552
 Spreeweg: eng und unübersichtlich	q2 2950,13552 2922,13594 2859,13686 2777,13712 2568,13662 2260,13540
-Lefèvrestr.: enge Straße	q1 4987,6902 4993,6812 5034,6745 5137,6651 5215,6643 5372,6663
+Lefèvrestr.: enge Straße	q1 4987,6902 4993,6812 5034,6745 5137,6651 5215,6643
+# XXX removed by srt: Lefèvrestr.: enge Straße	q1 5215,6643 5360,6642
 (Paul-Löbe-Allee - südl. Spreeufer): Biergarten am HDKDW	q4 7741,12581 7670,12576
 (südliches Spreeufer): Biergarten am HDKDW	q4 7745,12603 7710,12585 7670,12576
 #: by: ^^^

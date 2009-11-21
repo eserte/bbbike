@@ -1537,7 +1537,16 @@ userdel	q4::inwork; 10829,18083 10907,18109 10938,18147 10989,18172 11137,18358 
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'IM_014421',
+         'until' => 1270072799,
+         'text' => 'Neustädtische Kirchstr. (Mitte) in beiden Richtungen zwischen Dorotheenstr. und Unter den Linden Baustelle, Straße vollständig gesperrt. Ebenfalls in beiden Richtungen gesperrt: Dorotheenstr. zwischen Neustädtische Kirchstr. und Schadowstr (bis Ende 03/2010)',
+         'from' => 1258835854,
+         'id' => 1946,
+         'data' => 'userdel	q4::inwork 9141,12320 9130,12433 9123,12500 9008,12485
+',
+         'type' => 'handicap'
+       },
        undef,
        {
          'until' => 1275343200,
@@ -1737,15 +1746,7 @@ userdel	2::temp 9852,12409 9869,12297 9890,12161
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1258758000,
-         'text' => 'B 115 Baruth - Jüterbog zw. Charlottenfelde und Markendorf Straßenbauarbeiten Vollsperrung 07.11.2009-20.11.2009 ',
-         'from' => 1257462000,
-         'id' => 1982,
-         'data' => 'userdel	2::inwork -1480,-46978 897,-46109
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1258844400,
          'text' => 'B 115 Baruth - Jüterbog zw. Jüterbog und Markendorf Deckschichteinbau Vollsperrung 20.11.2009-21.11.2009 ',
@@ -1784,6 +1785,25 @@ userdel	2::temp 9852,12409 9869,12297 9890,12161
          'data' => 'userdel	2::temp 9526,11911 9668,11928
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => undef,
+         'text' => 'Asphaltierung der Belziger Str., Einbahnstraße Richtung Westen',
+         'from' => undef,
+         'id' => 1990,
+         'data' => 'userdel	q4::inwork; 7110,9024 7315,9156
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_014662',
+         'until' => 1259017199,
+         'text' => 'Tiergartenstr. (Tiergarten) in beiden Richtungen zwischen Hildebrandtsr. und Hiroshimastr. Baustelle, Straße vollständig gesperrt (bis 23.11. 18 Uhr)',
+         'from' => 1258836011,
+         'id' => 1991,
+         'data' => 'userdel	q4::inwork 7435,11514 7356,11517
+',
+         'type' => 'handicap'
        }
      
 );

@@ -10778,7 +10778,7 @@ EOF
        text  => 'Einbahnstraße Richtung Westen wegen Bauarbeiten',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1::inwork 5149,7012 5251,6949 5374,6932
+userdel	1::inwork 5149,7012 5251,6949 5357,6932
 EOF
      },
      { from  => 1200438000, # 2008-01-16 00:00
@@ -11246,7 +11246,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_008378',
        data  => <<EOF,
-userdel	q4::inwork 7497,5610 7599,5553 7669,5536 7816,5519 8038,5521
+userdel	q4::inwork 7497,5610 7599,5553 7669,5536 7816,5519 7857,5519 8038,5521
 EOF
      },
      { from  => 1208546801, # 2008-04-18 21:26
@@ -16512,9 +16512,9 @@ EOF
 userdel	2::inwork 3314,15782 3564,16294
 EOF
      },
-     { from  => 1255383595, # 2009-10-12 23:39
-       until => 1258325999, # 2009-11-15 23:59
-       text  => 'Neustädtische Kirchstr. (Mitte) in beiden Richtungen zwischen Dorotheenstr. und Unter den Linden Baustelle, Straße vollständig gesperrt. Ebenfalls in beiden Richtungen gesperrt: Dorotheenstr. zwischen Neustädtische Kirchstr. und Schadowstr (bis Mitte 11/2009)',
+     { from  => 1258835854, # 2009-11-21 21:37
+       until => 1270072799, # 2010-03-31 23:59
+       text  => 'Neustädtische Kirchstr. (Mitte) in beiden Richtungen zwischen Dorotheenstr. und Unter den Linden Baustelle, Straße vollständig gesperrt. Ebenfalls in beiden Richtungen gesperrt: Dorotheenstr. zwischen Neustädtische Kirchstr. und Schadowstr (bis Ende 03/2010)',
        type  => 'handicap',
        source_id => 'IM_014421',
        data  => <<EOF,
@@ -16882,6 +16882,23 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp 9526,11911 9668,11928
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Asphaltierung der Belziger Str., Einbahnstraße Richtung Westen',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork; 7110,9024 7315,9156
+EOF
+     },
+     { from  => 1258836011, # 2009-11-21 21:40
+       until => 1259017199, # 2009-11-23 23:59
+       text  => 'Tiergartenstr. (Tiergarten) in beiden Richtungen zwischen Hildebrandtsr. und Hiroshimastr. Baustelle, Straße vollständig gesperrt (bis 23.11. 18 Uhr)',
+       type  => 'handicap',
+       source_id => 'IM_014662',
+       data  => <<EOF,
+userdel	q4::inwork 7435,11514 7356,11517
 EOF
      },
     );
