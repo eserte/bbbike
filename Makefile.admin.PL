@@ -922,11 +922,11 @@ test-with-protocol: permission
 EOF
 . ($^O eq 'linux'
    ? <<'EOF'
-	DATE=`date +%Y%m%d`; export HARNESS_NOTTY=1; export BBBIKE_LONG_TESTS=1; script -c '$(MAKE) test' $(HOME)/log/bbbike-test-$$DATE
+	DATE=`date +%Y%m%d`; export HARNESS_NOTTY=1; export HARNESS_TIMER=1; export BBBIKE_LONG_TESTS=1; script -c '$(MAKE) test' $(HOME)/log/bbbike-test-$$DATE
 EOF
    : <<'EOF'
 # The tee /dev/null is used because Test::Harness 3.xx does not understand HARNESS_NOTTY=1
-	DATE=`date +%Y%m%d`; export HARNESS_NOTTY=1; export BBBIKE_LONG_TESTS=1; script $(HOME)/log/bbbike-test-$$DATE sh -c '$(MAKE) test | tee /dev/null'
+	DATE=`date +%Y%m%d`; export HARNESS_NOTTY=1; export HARNESS_TIMER=1; export BBBIKE_LONG_TESTS=1; script $(HOME)/log/bbbike-test-$$DATE sh -c '$(MAKE) test | tee /dev/null'
 EOF
   )
 . <<'EOF';
