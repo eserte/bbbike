@@ -5,7 +5,7 @@
 # $Id: check_crossings,v 1.9 2008/12/07 19:05:53 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003,2004,2009 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -58,7 +58,7 @@ EOF
 }
 
 if ($v_if_interactive) {
-    if (is_interactive()) {
+    if (is_interactive() && !running_in_script()) {
 	$v = 1;
     }
 }
@@ -180,6 +180,29 @@ iterate {
 	}
     }
 } $s;
+
+# Determine if command is running within 'script', which should be
+# treated as non-interactive.
+sub running_in_script {
+    return 0 if !eval { require Proc::ProcessTable };
+    my $pto = Proc::ProcessTable->new;
+    my $pt = $pto->table;
+    my %pt;
+    for my $p (@$pt) {
+	$pt{$p->pid} = $p;
+    }
+    my $recursion_breaker = 0;
+    my $pid = $$;
+    while ($pid && $pid != 1) {
+	my $p = $pt{$pid};
+	if ($p->fname eq 'script') {
+	    return 1;
+	}
+	$pid = $p->ppid;
+	die if $recursion_breaker++>100;
+    }
+    0;
+}
 
 # REPO BEGIN
 # REPO NAME is_interactive /home/e/eserte/work/srezic-repository 
