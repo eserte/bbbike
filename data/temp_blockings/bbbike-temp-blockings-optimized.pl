@@ -1747,15 +1747,7 @@ userdel	2::temp 9852,12409 9869,12297 9890,12161
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1258844400,
-         'text' => 'B 115 Baruth - Jüterbog zw. Jüterbog und Markendorf Deckschichteinbau Vollsperrung 20.11.2009-21.11.2009 ',
-         'from' => 1258585200,
-         'id' => 1983,
-         'data' => 'userdel	2::inwork -4289,-47091 -5760,-46987 -6787,-46974 -6986,-46942 -7582,-46937 -7831,-47100
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
