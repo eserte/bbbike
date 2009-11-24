@@ -1357,8 +1357,8 @@ d Breitenbachstr. Baustelle, Fahrtrichtung gesperrt (bis Anfang 05/2010)',
        undef,
        {
          'until' => 1267398000,
-         'text' => 'B 005 Friesack - Wusterhausen OD Bückwitz, Kreuzung B167, Ruppiner Str. Kreiselneubau Vollsperrung 14.09.2009-28.02.2010 ',
-         'from' => 1252792800,
+         'text' => 'B 167 Ruppiner Str. OD Bückwitz, Einmünd. B 5 Kreiselneubau Vollsperrung 23.11.2009-28.02.2010 ',
+         'from' => 1258844400,
          'id' => 1876,
          'data' => 'userdel	q4::inwork -52519,49887 -52595,49993
 ',
@@ -1787,15 +1787,25 @@ userdel	2::temp 9852,12409 9869,12297 9890,12161
 ',
          'type' => 'handicap'
        },
+       undef,
        {
-         'source_id' => 'IM_014662',
-         'until' => 1259017199,
-         'text' => 'Tiergartenstr. (Tiergarten) in beiden Richtungen zwischen Hildebrandtsr. und Hiroshimastr. Baustelle, Straße vollständig gesperrt (bis 23.11. 18 Uhr)',
-         'from' => 1258836011,
-         'id' => 1991,
-         'data' => 'userdel	q4::inwork 7435,11514 7356,11517
+         'source_id' => 'IM_014681',
+         'until' => 1259621999,
+         'text' => 'Einsteinufer (Charlottenburg) Richtung Marchstr. zwischen Str. des 17. Juni und Marchstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 11/2009)',
+         'from' => 1259104057,
+         'id' => 1992,
+         'data' => 'userdel	q4::inwork; 5361,11910 5229,12001 5128,12149 4981,12252
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => 1259535600,
+         'text' => 'B 167 Neuruppin - AS Neuruppin zw. Bechlin u. AS Neuruppin Straßenbauarbeiten Vollsperrung 16.11.2009-29.11.2009 ',
+         'from' => 1258239600,
+         'id' => 1993,
+         'data' => 'userdel	2::inwork -35577,54824 -35059,54768 -34499,54966 -33922,55483
+',
+         'type' => 'gesperrt'
        }
      
 );

@@ -15915,9 +15915,9 @@ EOF
 userdel	2::inwork 30910,13101 30815,13170 30795,13191
 EOF
      },
-     { from  => 1252792800, # 2009-09-13 00:00
+     { from  => 1258844400, # 2009-11-22 00:00
        until => 1267398000, # 2010-03-01 00:00
-       text  => 'B 005 Friesack - Wusterhausen OD Bückwitz, Kreuzung B167, Ruppiner Str. Kreiselneubau Vollsperrung 14.09.2009-28.02.2010 ',
+       text  => 'B 167 Ruppiner Str. OD Bückwitz, Einmünd. B 5 Kreiselneubau Vollsperrung 23.11.2009-28.02.2010 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork -52519,49887 -52595,49993
@@ -16899,6 +16899,23 @@ EOF
        source_id => 'IM_014662',
        data  => <<EOF,
 userdel	q4::inwork 7435,11514 7356,11517
+EOF
+     },
+     { from  => 1259104057, # 2009-11-25 00:07
+       until => 1259621999, # 2009-11-30 23:59
+       text  => 'Einsteinufer (Charlottenburg) Richtung Marchstr. zwischen Str. des 17. Juni und Marchstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 11/2009)',
+       type  => 'handicap',
+       source_id => 'IM_014681',
+       data  => <<EOF,
+userdel	q4::inwork; 5361,11910 5229,12001 5128,12149 4981,12252
+EOF
+     },
+     { from  => 1258239600, # 2009-11-15 00:00
+       until => 1259535600, # 2009-11-30 00:00
+       text  => 'B 167 Neuruppin - AS Neuruppin zw. Bechlin u. AS Neuruppin Straßenbauarbeiten Vollsperrung 16.11.2009-29.11.2009 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -35577,54824 -35059,54768 -34499,54966 -33922,55483
 EOF
      },
     );
