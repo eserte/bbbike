@@ -302,6 +302,10 @@ data/sehenswuerdigkeit_img/chinesisches_haus.gif
 data/sehenswuerdigkeit_img/chinesisches_haus.png
 data/sehenswuerdigkeit_img/einsteinturm.gif
 data/sehenswuerdigkeit_img/fernsehturm.gif
+data/sehenswuerdigkeit_img/fernsehturm.png
+data/sehenswuerdigkeit_img/fernsehturm_klein.gif
+data/sehenswuerdigkeit_img/franzoesischer_dom.gif
+data/sehenswuerdigkeit_img/franzoesischer_dom.png
 data/sehenswuerdigkeit_img/friedrichswerdersche_kirche.png
 data/sehenswuerdigkeit_img/friedrichswerdersche_kirche_klein.gif
 data/sehenswuerdigkeit_img/friedrichswerdersche_kirche_klein.png
@@ -309,6 +313,8 @@ data/sehenswuerdigkeit_img/funkturm.gif
 data/sehenswuerdigkeit_img/gedaechtniskirche.gif
 data/sehenswuerdigkeit_img/heilandskirche_sacrow.gif
 data/sehenswuerdigkeit_img/heilandskirche_sacrow.png
+data/sehenswuerdigkeit_img/hubbruecke_karnin.gif
+data/sehenswuerdigkeit_img/hubbruecke_karnin.png
 data/sehenswuerdigkeit_img/luftbrueckendenkmal.gif
 data/sehenswuerdigkeit_img/oberbaumbruecke.gif
 data/sehenswuerdigkeit_img/oberbaumcity.gif
@@ -900,6 +906,7 @@ kde/bbbike.menu
 kde/x-bbbike-data.desktop.tmpl
 kde/x-bbbike-route.desktop.tmpl
 kde/x-gpstrack.desktop.tmpl
+lib/Algorithm/GooglePolylineEncoding.pm
 lib/AutoInstall/Tk.pm
 lib/BikePower.pm
 lib/BikePower/HTML.pm
