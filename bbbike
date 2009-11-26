@@ -1970,6 +1970,15 @@ unless($skip_features{"strassen"}) {
 	 },
 	);
     $strcm->separator;
+    if ($os ne 'win' || $advanced) {
+	# No rotation on win possible.
+	$strcm->checkbutton(-label => M"Straßennamen",
+			    -variable => \$str_name_draw{'s'},
+			    -command => sub {
+				pending(1, 'replot-str-s');
+			    },
+			   );
+    }
     $strcm->cascade(-label => M"Straßenkategorien");
     {
 	my $skm = $strcm->Menu(-title => M"Straßenkategorien");
@@ -2001,12 +2010,6 @@ unless($skip_features{"strassen"}) {
 	}
 
     }
-    unless ($skip_features{"hoehe"}) {
-	$strcm->checkbutton(-label => M"Höhenangaben",
-			    -variable => \$p_draw{'hoehe'},
-			    -command => sub { plot('p','hoehe') });
-    }
-
     $strcm->checkbutton(-label => M"Radwege",
 			-variable => \$str_draw{'rw'},
 			-command => sub { plot('str','rw')},
@@ -2030,36 +2033,41 @@ unless($skip_features{"strassen"}) {
 	}
     }
 
+    my $create_comment_layers_cb = sub {
+	my($menu, $type) = @_;
+	my $label = $comment_cat_labels{$type} || $type;
+	my $def = 'comm-' . $type;
+	$menu->checkbutton
+	    (-label => $label,
+	     -variable => \$str_draw{$def},
+	     -command => sub {
+		 my $file  = get_strassen_file("comments_" . $type);
+		 plot('str', $def, Filename => $file);
+	     },
+	    );
+    };
+
+    unless ($skip_features{"radroute"}) {
+	$create_comment_layers_cb->($strcm, "route");
+	$strcm->command(-label => M"Radroute auswählen",
+			-command => sub {
+			    choose_ort(qw(s comm-route),
+				       -markstartifactive => 1);
+			});
+    }
+
     $strcm->checkbutton(-label => M"Einbahn-/gesperrte Straßen",
 			-variable => \$p_draw{'sperre'},
 			-command => sub { plot_sperre() },
 			-accelerator => 'G',
 		       );
     $sperre_check_index = $strcm->index('last');
-    $strcm->checkbutton(-label => M"Fähren",
-			-variable => \$str_draw{'e'},
-			-command => sub { plot('str','e') });
     $strcm->checkbutton(-label => M"Ampeln",
 			-variable => \$p_draw{'lsa'},
 			-command => sub { plot('p','lsa') },
 			-accelerator => 'A',
 		       );
     $ampeln_check_index = $strcm->index('last');
-    $strcm->checkbutton(-label => M"Outline zeichnen",
-			-variable => \$str_outline{'s'},
-			-command => sub {
-			    pending(1, 'replot-str-s');
-			},
-		       );
-    if ($os ne 'win' || $advanced) {
-	# No rotation on win possible.
-	$strcm->checkbutton(-label => M"Straßennamen",
-			    -variable => \$str_name_draw{'s'},
-			    -command => sub {
-				pending(1, 'replot-str-s');
-			    },
-			   );
-    }
     $strcm->checkbutton(-label => M"Straßenqualität",
 			-variable => \$str_draw{'qs'},
 			-command => sub { plot('str','qs') },
@@ -2088,6 +2096,7 @@ unless($skip_features{"strassen"}) {
     $strcm->checkbutton(-label => M"Sonstige Beeinträchtigungen",
 			-variable => \$str_draw{'hs'},
 			-command => sub { plot('str','hs') },
+			-accelerator => 'Shift-H',
 		       );
     $handicap_check_index = $strcm->index('last');
     unless ($skip_features{"nolighting"}) {
@@ -2108,39 +2117,8 @@ unless($skip_features{"strassen"}) {
 			    -command => sub { plot('p','vf') },
 			   );
     }
-    if ($advanced) {
-	$strcm->checkbutton(-label => M"Fragezeichen",
-			    -variable => \$str_draw{'fz'},
-			    -command => sub { plot('str','fz') },
-			    -accelerator => '?',
-			   );
-	$fragezeichen_check_index = $strcm->index('last');
-    }
 
-    my $create_comment_layers_cb = sub {
-	my($menu, $type) = @_;
-	my $label = $comment_cat_labels{$type} || $type;
-	my $def = 'comm-' . $type;
-	$menu->checkbutton
-	    (-label => $label,
-	     -variable => \$str_draw{$def},
-	     -command => sub {
-		 my $file  = get_strassen_file("comments_" . $type);
-		 plot('str', $def, Filename => $file);
-	     },
-	    );
-    };
-
-    unless ($skip_features{"radroute"}) {
-	$create_comment_layers_cb->($strcm, "route");
-	$strcm->command(-label => M"Radroute auswählen",
-			-command => sub {
-			    choose_ort(qw(s comm-route),
-				       -markstartifactive => 1);
-			});
-    }
-
-    $strcm->cascade(-label => M"Sonstige");
+    $strcm->cascade(-label => M"Kommentare");
     {
 	my $c_bpcm = $strcm->Menu(-title => M"Sonstige");
 	$strcm->entryconfigure("last", -menu => $c_bpcm);
@@ -2175,6 +2153,16 @@ unless($skip_features{"strassen"}) {
 	}
     }
 
+    $strcm->checkbutton(-label => M"Fähren",
+			-variable => \$str_draw{'e'},
+			-command => sub { plot('str','e') });
+
+    unless ($skip_features{"hoehe"}) {
+	$strcm->checkbutton(-label => M"Höhenangaben",
+			    -variable => \$p_draw{'hoehe'},
+			    -command => sub { plot('p','hoehe') });
+    }
+
     # XXX the mount file is very problematic at the moment; do not show it to the normal user until everything's fixed! See StrassenNetz.pm and steigung_stat. Also, I think comments_mount is not used for Steigungsoptimierung, so don't puzzle the user about this.
     if ($devel_host) {
 	$strcm->checkbutton
@@ -2183,6 +2171,20 @@ unless($skip_features{"strassen"}) {
 	     -command => \&plot_mount,
 	    );
     }
+    if ($advanced) {
+	$strcm->checkbutton(-label => M"Fragezeichen",
+			    -variable => \$str_draw{'fz'},
+			    -command => sub { plot('str','fz') },
+			    -accelerator => '?',
+			   );
+	$fragezeichen_check_index = $strcm->index('last');
+    }
+    $strcm->checkbutton(-label => M"Outline zeichnen",
+			-variable => \$str_outline{'s'},
+			-command => sub {
+			    pending(1, 'replot-str-s');
+			},
+		       );
     menu_entry_up_down($strcm, $tag_group{'str_s'});
     menuright($strasse_check, $strcm);
     menuarrow($strcmb, $strcm, $col++, -special => 'LAYER');
