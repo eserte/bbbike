@@ -4421,7 +4421,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_002776',
        data  => <<EOF,
-userdel	1 15388,16502 15134,16499 14809,16525 14621,16563
+userdel	1 15388,16502 15142,16499 15134,16499 14809,16525 14621,16563
 EOF
      },
      { from  => 1147721063, # 2006-05-15 21:24
@@ -5084,7 +5084,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'INKO_84063',
        data  => <<EOF,
-userdel	1::inwork 14621,16563 14809,16525 15134,16499 15388,16502
+userdel	1::inwork 14621,16563 14809,16525 15134,16499 15142,16499 15388,16502
 EOF
      },
      { from  => 1152566231, # 2006-07-10 23:17
@@ -5533,7 +5533,7 @@ EOF
        text  => 'Berlin Weißensee, Buschallee, Weißensee Richtung Ahrensfelde Zwischen Einmündung Berliner Allee und Kreuzung Hansastraße Baustelle, gesperrt bis 15.09.2006 18:00 Uhr ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1::inwork 14621,16563 14809,16525 15134,16499 15388,16502 15432,16500
+userdel	1::inwork 14621,16563 14809,16525 15134,16499 15142,16499 15388,16502 15432,16500
 EOF
      },
      { from  => 1156478400, # 2006-08-25 06:00
@@ -9673,7 +9673,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006391',
        data  => <<EOF,
-userdel	2::inwork 16843,14420 16881,14063
+userdel	2::inwork 16843,14420 16864,14226 16881,14063
 EOF
      },
      { from  => 1188424800, # 2007-08-30 00:00
@@ -12065,7 +12065,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_009449',
        data  => <<EOF,
-userdel	1::inwork 13098,15592 12966,15478 12880,15335
+userdel	1::inwork 13098,15592 12966,15478 12870,15342
 EOF
      },
      { from  => 1216591200, # 2008-07-21 00:00
@@ -12353,7 +12353,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_009790',
        data  => <<EOF,
-userdel	1::inwork 16654,16167 16961,16042
+userdel	1::inwork 16660,16165 16961,16042
 EOF
      },
      { from  => 1247724607, # 2009-07-16 08:10

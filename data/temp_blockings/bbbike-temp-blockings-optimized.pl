@@ -1660,15 +1660,7 @@ userdel	2::inwork 14835,10272 14888,10385
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1259190000,
-         'text' => 'B 101 Zinnaer Str. OD Luckenwalde, zw. Kirchstr. und Am Nuthefließ Straßenbau Vollsperrung 12.10.2009-25.11.2009 ',
-         'from' => 1255212000,
-         'id' => 1963,
-         'data' => 'userdel	q4::inwork -4630,-36012 -4603,-35730
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        {

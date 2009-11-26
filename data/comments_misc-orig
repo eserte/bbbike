@@ -85,9 +85,11 @@ Kreisverkehr	Roundabout 26302,-11712
 (Waldweg über den Beyschlagtunnel): bei Regen Rutschgefahr	CS 332,22372 742,22666
 Privatstraße der DB	CS 5710,7820 6275,7847
 #: add_fragezeichen: wird der Albrecht-Thaer-Weg manchmal geschlossen?
+#: XXX_prog: should not appear in fragezeichen-outdoor-nextcheck!
 Albrecht-Thaer-Weg: Privatstraße, evtl. nicht geöffnet	CS 3347,6460 3449,6863
 #: add_fragezeichen: wird dieser Weg tatsächlich nachts geschlossen?
-(Weg über das Sportgelände): evtl. nachts geschlossen	CS 13252,14179 13375,13986
+#: XXX_prog: should not appear in fragezeichen-outdoor-nextcheck!
+(Weg über das Sportgelände): evtl. nachts geschlossen	CS 13252,14179 13385,13992
 Borgmannstr.: Bodenschwellen, rechs vorbei fahren	CS 22513,5747 22531,5871
 Hermann-Blankenstein-Str.: Tor für Kfz evtl. geschlossen, auf Gehweg ausweichen	CS 13886,13668 13858,13719
 Georg-Wilhelm-Str.: 3 Bodenschwellen, rechts vorbei fahren	CS 2708,10245 2691,10047
@@ -201,6 +203,7 @@ Kreisverkehr	Roundabout 59806,35893
 #: by: osm:
 Kreisverkehr	Roundabout 26432,-10043
 Kreisverkehr	Roundabout 18017,2751
+Kreisverkehr	Roundabout 12670,16675 12686,16667 12702,16668 12713,16682 12712,16695 12705,16708 12691,16711 12678,16711 12667,16699 12667,16685 12670,16675
 #: XXX_prog ^^^
 #: section ^^^
 #: by: Dagmar Schilka
@@ -296,3 +299,5 @@ Ausgeschildert als Blütenberger Weg	CP2; 36914,54197 34819,54697
 # #: XXX_prog ^^^
 (Lauterberger Str. - Andreasberger Str.): Privatstraße	CS 12053,6042 12154,6063
 ausgeschildert "zum Sportplatz"	CP2; 16136,7886 16534,8182
+ausgeschildert "zu den Häusern Gubitzstr. 18 - 20a"	CP2; 12463,15774 12642,15668
+ausgeschildert "zu den Häusern Hosemannstr. 50 - 39"	CP2; 12642,15668 12463,15774

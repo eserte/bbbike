@@ -32,8 +32,8 @@ Fußgängerampel auf der rechten Seite benutzen	CP; 9810,14066 9918,13733 10177,13
 Kopernikusstr./Warschauer Str.: Fußgängerampel auf der linken Seite zum Überqueren der Warschauer Str. benutzen	CP; 13467,11778 13651,11731 13895,11663
 Kopernikusstr./Warschauer Str.: Fußgängerampel auf der linken Seite benutzen	CP; 13467,11778 13651,11731 13696,11920
 Wisbyer Str. Richtung Dunckerstr.: bereits an der Prenzlauer Allee den linken Gehweg benutzen	PI; 12091,16209 12026,16247 11939,16084
-Stahlheimer Richtung Wisbyer Str.: Fußgängerampel auf der linken Seite zum Überqueren der Wisbyer Str. benutzen	CP; 11618,16183 11727,16358 11688,16365
-Varnhagenstr Richtung Wisbyer Str.: linken Gehweg bis zur Fußgängerampel benutzen	CP; 11680,16151 11807,16340 11727,16358
+Stahlheimer Richtung Wisbyer Str.: Fußgängerampel auf der linken Seite zum Überqueren der Wisbyer Str. benutzen	CP; 11618,16183 11727,16358 11673,16367
+Varnhagenstr Richtung Wisbyer Str.: linken Gehweg bis zur Fußgängerampel benutzen	CP; 11680,16151 11808,16343 11750,16354
 Fußgängerampel links zum Überqueren der Lietzenburger Str. benutzen	CP; 6033,10403 6020,10351 5997,10286
 Fußgängerampel links zum Überqueren der Lietzenburger Str. benutzen	CP; 6033,10403 6020,10351 6128,10319
 Fußgängerampel links benutzen	CP; 6033,10403 6020,10351 6147,10383
@@ -125,8 +125,8 @@ das Portal des Anhalter Bahnhofs links liegen lassen	CP2; 8938,10872 8912,10846
 (Geßlerstr. - Monumentenstr.): Zufahrt über den Parkplatz an der Sportanlage	CP2; 7970,8886 7964,9060
 (Geßlerstr. - Monumentenstr.): Ausgeschildert als Monumentenstr. 13 a-c	CP2; 8014,9126 8009,9063
 (Wintgensstr. - General-Pape-Str.): Zufahrt durch Tor im Wohnhaus, seitlich am Torgitter vorbei	CP2; 8260,7911 8207,7909
-rechts an der Tiefgarageneinfart vorbei, Vorsicht Kette!	CP; 13375,13986 13485,14054 13585,14117
-Vorsicht Kette! (auf Höhe der Tiefgarageneinfahrt)	CP; 13585,14117 13485,14054 13375,13986
+rechts an der Tiefgarageneinfart vorbei, Vorsicht Kette!	CP; 13385,13992 13485,14054 13585,14117
+Vorsicht Kette! (auf Höhe der Tiefgarageneinfahrt)	CP; 13585,14117 13485,14054 13385,13992
 bereits an der Kirche auf den Gehweg wechseln	CP; 12635,12629 12483,12682 12594,12866
 Etwa in Höhe Kino Kosmos abbiegen	CP2; 13543,12326 13556,12302
 Ludwig-Pick-Str. beginnt an der Zufahrt zur Tiefgarage Kosmos-Kino	CP2; 13543,12326 13552,12435
@@ -307,3 +307,5 @@ Bürgerheimstr. - Frankfurter Allee: auf dem linken Gehweg bis zur Atzpodienstr. 
 Gradestr. - Moosrosenstr.: entweder schon an der Holzmindener Str. die Straßenseite wechseln oder am Busbahnhof umdrehen	PI; 12773,5248 12727,5244 12726,5147
 Moosrosenstr. - Gradestr.: auf dem linken Gehweg bis Höhe Busbahnhof fahren und dort die Straßenseite wechseln	CP; 12726,5147 12727,5244 12582,5232
 Rudower Chaussee - Karl-Otto-Reinsch-Str.: bereits an der Ampel Am Studio die Straßenseite wechseln	PI; 19581,3184 19603,3207 19524,3286
+Gustav-Adolf-Str. - Prenzlauer Promenade: auf dem linken Gehweg bis zur Ampel fahren	CP; 12182,16322 12097,16263 12091,16209
+Caligariplatz - Prenzlauer Promenade: auf dem linken Gehweg bis zur Ampel fahren	CP; 12162,16410 12097,16263 12091,16209

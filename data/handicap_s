@@ -531,6 +531,11 @@ Deitmerstr.: Fuﬂg‰nger, Bordsteine	q3 5078,5889 5048,5904
 Friedrichsruher Platz: Fuﬂg‰nger, eng	q2 5942,5775 5935,5874
 Riemenschneiderweg: gemeinsamer Rad- und Gehweg, eng	q1 6878,5946 6895,5873
 Harkortstr.: Bodenschwellen	q1 7570,5508 7621,5494
+(Plauener Str. - K¸llstedter Str.): Fuﬂg‰nger	q2 17352,14827 17363,14760
+Orankeweg: einige Bodenschwellen, ohne Anh‰nger leicht umfahrbar	q0 14934,15860 15305,15858 15395,15852 15453,15848
+(Gounodstr. - Otto-Brahm-Str.): abschnittsweise eng und kurvig	q1 14435,15904 14451,15873 14383,15848 14349,15825 14365,15778
+Gounodstr.: Fuﬂg‰nger	q1 14259,15816 14272,15837 14366,15877
+Seidenberger Str.: Bordstein, Gel‰nder	q3 12379,16998 12373,17007
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q3 11805,19071 11937,19175
 Ebersstr.: Sch¸ler	q2 7245,8583 7292,8631
 Straﬂe 103 (Niederschˆnhausen): enge Straﬂe	q1 10914,20065 11051,19789
@@ -711,8 +716,8 @@ Bautzener Platz: Fufg‰nger, Bordsteine	q2 8102,9262 8183,9260
 (Prenzlauer Allee - Lilly-Henoch-Str.): Fuﬂg‰nger	q2 11860,15309 11919,15314 11952,15374
 (Verl‰ngerte Diesterwegstr.): Fuﬂg‰nger	q2 12078,15160 12107,15229
 (Anton-Saefkow-Str. - John-Schehr-Str.): Fuﬂg‰nger, Schranken	q1 13084,14472 13009,14371 12949,14292
-Ernst-F¸rstenberg-Str.: Fuﬂg‰nger	q1 13014,14146 12985,14187
-An der Brauerei: Fuﬂg‰nger	q1 13291,13290 13283,13311 13378,13353
+Ernst-F¸rstenberg-Str.: Fuﬂg‰nger	q1 13049,14141 12992,14196
+An der Brauerei: Fuﬂg‰nger	q1 13291,13290 13283,13311 13381,13354
 An der Brauerei: Fuﬂg‰nger	q2 13283,13311 13237,13410
 (Friedhofsweg): Fuﬂg‰nger, Radfahren nicht erlaubt	q4 12851,12602 13108,12859 13046,12956 12878,13229
 (Friedhofsweg): Fuﬂg‰nger, Radfahren nicht erlaubt	q4 12773,12683 13046,12956
@@ -913,7 +918,7 @@ Lotte-Lenya-Bogen: Fuﬂg‰ngerzone, schieben	q4 5242,10918 5264,10921 5348,10960 5
 (Gehweg Gelieustr. - Wolfensteindamm): Fuﬂg‰nger	q1 4725,4876 4675,4983
 (Krahmerstr. - Stockweg): Queren des Hindenburgdamms un¸bersichtlich, starker Autoverkehr	q4 4564,3457 4523,3482
 Seeweg (Weiﬂensee): Fuﬂg‰nger	q2 14499,16341 14480,16449 14510,16549 14521,16599
-Seeweg (Weiﬂensee): Fuﬂg‰nnger	q1 14610,16522 14549,16538 14510,16549
+Seeweg (Weiﬂensee): Fuﬂg‰nger	q1 14610,16522 14581,16529 14510,16549
 (Treppe zur Gehrenseestr.)	q4 18465,16761 18448,16759 18454,16775
 (Blohmstr. - Diedersdorfer Str.): kaum Fuﬂg‰nger	q1 9093,-1670 8968,-1576 8845,-1521 8776,-1487 8492,-1376 8073,-1137
 (Dinnendahlstr. - Schichauweg): kaum Fuﬂg‰nger	q1 9123,-1321 8953,-1184 8882,-1142 8873,-1118
@@ -940,7 +945,7 @@ Rue Joseph le Brix: enge Straﬂe	q1 3159,17780 3066,17833 2949,17810 2883,17801 2
 Rue du Capitaine Jean Maridor: enge Straﬂe	q1 3213,17858 3235,17830 3392,17841 3459,17829 3503,17798
 Rue Doret: enge Straﬂe	q1 3248,17921 3153,17975
 Rue Marin la MeslÈe: enge Straﬂe	q1 3213,17858 3123,17923
-Max-Koska-Str.: Fuﬂg‰nger	q2 11828,16335 11846,16438 11844,16483
+Max-Koska-Str.: Fuﬂg‰nger	q2 11829,16339 11846,16438 11844,16483
 Schulzendorfer Str.: Gehweg	q2 -2176,22789 -2263,22748 -2348,22704 -2377,22689 -2504,22626
 William-H.-Tunner-Str.: enge Straﬂe	q0 2372,1043 2336,1111 2163,1499
 Mauserstr.: enge Straﬂe	q1 9165,1014 9139,1043 9218,1226 9314,1451 9420,1700
@@ -1039,7 +1044,7 @@ Im Lesachtal: enge Straﬂe	q1 10549,2257 10526,2282
 Im Lesachtal: enge Straﬂe	q1 10526,2282 10504,2321
 Rotdornstr.: enge Straﬂe	q1 5139,7206 5141,7158 5121,7132 5085,7109
 Im Eichengrund: enger Weg mit B‰umen mitten auf dem Weg	q3 976,15195 921,15359 901,15386 885,15435 877,15474
-Hedwigstr. (Hohenschˆnhausen): enge Straﬂe	q1 16607,16049 16505,16096 16515,16207
+Hedwigstr. (Hohenschˆnhausen): enge Straﬂe	q1 16616,16046 16505,16096 16515,16207
 Hopfenweg: enge Straﬂe	q1 15745,2294 15745,2320 15593,2495 15588,2520 15590,2724
 Kasinoweg: enge Straﬂe	q1 2624,24710 2444,24950 2364,24886
 Knappenpfad: enge Straﬂe	q1 2471,24709 2410,24837 2364,24886 2340,24884

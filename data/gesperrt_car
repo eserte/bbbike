@@ -246,16 +246,16 @@ Prenzlauer Allee -> Ahlbecker Str.: Straßenbahn	3::igndisp 11860,15309 11882,153
 Straßenbahn	3nocross::ignrte 12473,14763 12422,14692 12403,14663 12371,14615
 Greifswalder Str. -> John-Schehr-Str.: Straßenbahn	3::igndisp 12473,14763 12422,14692 12573,14581
 John-Schehr-Str. -> Greifswalder Str.: Straßenbahn	3::igndisp 12573,14581 12422,14692 12403,14663
-Straßenbahntrasse	3nocross::ignrte 12709,15112 12737,15154 12880,15335
+Straßenbahntrasse	3nocross::ignrte 12709,15112 12737,15154 12870,15342
 Greifswalder Str. -> Naugarder Str.: Straßenbahntrasse	3::igndisp 12709,15112 12737,15154 12693,15225
-Naugarder Str. -> Greifswalder Str.: Straßenbahntrasse	3::igndisp 12693,15225 12737,15154 12880,15335
+Naugarder Str. -> Greifswalder Str.: Straßenbahntrasse	3::igndisp 12693,15225 12737,15154 12870,15342
 Straßenbahn	3nocross::ignrte 13550,13560 13640,13597 13708,13623
+Fritz-Riedel-Str. -> Hausburgstr.: Straßenbahn	3::igndisp 13521,13781 13640,13597 13706,13460
+Fritz-Riedel-Str. -> Landsberger Allee: Straßenbahn	3::igndisp 13521,13781 13640,13597 13708,13623
+Hausburgstr. -> Fritz-Riedel-Str.: Straßenbahn	3::igndisp 13706,13460 13640,13597 13521,13781
 Hausburgstr. -> Landsberger Allee: Straßenbahn	3::igndisp 13706,13460 13640,13597 13550,13560
-Hausburgstr. -> Fritz-Riedel-Str.: Straßenbahn	3::igndisp 13706,13460 13640,13597 13517,13778
-Landsberger Allee -> Fritz-Riedel-Str.: Straßenbahn	3::igndisp 13550,13560 13640,13597 13517,13778
+Landsberger Allee -> Fritz-Riedel-Str.: Straßenbahn	3::igndisp 13550,13560 13640,13597 13521,13781
 Landsberger Allee -> Hausburgstr.: Straßenbahn	3::igndisp 13708,13623 13640,13597 13706,13460
-Fritz-Riedel-Str. -> Hausburgstr.: Straßenbahn	3::igndisp 13517,13778 13640,13597 13706,13460
-Fritz-Riedel-Str. -> Landsberger Allee: Straßenbahn	3::igndisp 13517,13778 13640,13597 13708,13623
 Straßenbahn	3nocross::ignrte 21398,15671 21475,15705 21694,15802
 Landsberger Allee -> Pöhlbergstr: Straßenbahn	3::igndisp 21694,15802 21475,15705 21491,15671
 Pöhlbergstr -> Landsberger Allee: Straßenbahn	3::igndisp 21491,15671 21475,15705 21398,15671
@@ -420,7 +420,7 @@ Fregestr. -> Fregestr.: Durchfahrt für Autofahrer per Poller gesperrt	3::igndisp
 Fregestr. -> Saarstr.: Durchfahrt für Autofahrer per Poller gesperrt	3::igndisp 5957,6889 5897,6799 5972,6756
 Saarstr. -> Fregestr.: Durchfahrt für Autofahrer per Poller gesperrt	3::igndisp 5972,6756 5897,6799 5777,6628
 Putlitzstr.	1 6210,13939 6205,14216
-Bornitzstr.	1 15645,12864 15543,12856
+Bornitzstr.	1 15645,12864 15563,12860
 Straßenbahntrasse	3nocross::ignrte 18890,9529 18834,9256 18809,9133
 Rolandseck -> Treskowallee: Straßenbahntrasse	3::igndisp 18903,9244 18834,9256 18809,9133
 Treskowallee -> Rolandseck: Straßenbahntrasse	3::igndisp 18890,9529 18834,9256 18903,9244
@@ -464,9 +464,9 @@ Trojanstr. -> Köpenicker Landstr.: Mittelstreifen	3::igndisp 16290,7160 16353,72
 Köpenicker Landstr. -> Trojanstr.: Mittelstreifen	3::igndisp 16428,7144 16353,7226 16290,7160
 Lakegrund -> Köpenicker Landstr.: Mittelstreifen	3::igndisp 16368,7425 16195,7398 16353,7226
 Köpenicker Landstr. -> Lakegrund: Mittelstreifen	3::igndisp 15920,7697 16195,7398 16368,7425
-Straßenbahntrasse	3nocross::ignrte 14809,16525 15134,16499 15388,16502
+Straßenbahntrasse	3nocross::ignrte 14809,16525 15134,16499 15142,16499 15388,16502
 Sulzfelder Str. -> Buschallee: Straßenbahntrasse	3::igndisp 15120,16349 15134,16499 14809,16525
-Buschallee -> Sulzfelder Str.: Straßenbahntrasse	3::igndisp 15388,16502 15134,16499 15120,16349
+Buschallee -> Sulzfelder Str.: Straßenbahntrasse	3::igndisp 15142,16499 15134,16499 15120,16349
 Mittelstreifen	3nocross::ignrte 24824,11256 24893,11252 25144,11215
 Alt-Mahlsdorf -> Theodorstr.: Mittelstreifen	3::igndisp 25144,11215 24893,11252 24907,11186
 Theodorstr. -> Alt-Mahlsdorf: Mittelstreifen	3::igndisp 24907,11186 24893,11252 24824,11256
@@ -890,3 +890,7 @@ Max-Born-Str. -> Ludwig-Boltzmann-Str.: Max-Born-Str./Ludwig-Boltzmann-Str.	3::i
 Ludwig-Boltzmann-Str. -> Max-Born-Str.: Max-Born-Str./Ludwig-Boltzmann-Str.	3::igndisp 18944,2816 19064,2867 19053,2890
 Johannes-Sasse-Ring	1 17525,3029 17465,2964 17412,2908 17199,3082 17146,3125 17206,3189 17274,3267
 Podbielskiallee - Englerallee	3 3654,5816 3712,5806 3732,5920
+Frieda-Seidlitz-Str.	1 12761,16862 12613,16749 12604,16731
+Straßenbahntrasse	3nocross::ignrte 15918,16383 16095,16331 16260,16282
+Suermondtstr. -> Annemariestr.: Straßenbahntrasse	3::igndisp 16260,16282 16095,16331 16075,16249
+Annemariestr. -> Suermondtstr.: Straßenbahntrasse	3::igndisp 16075,16249 16095,16331 15918,16383
