@@ -2528,7 +2528,7 @@ Reußstr.: Qualität?	? -3023,16925 -3129,16931 -3238,16948
 Blankestr.: Qualität?	? 5193,17428 5314,17558 5334,17592
 Reuterstr. (Reinickendorf): Qualität?	? 5314,17558 5307,17582 5318,17617 5363,17667
 Seeburg - Heerstr.: Qualität? Gibt es hier Wegweiser oder Straßennamen?	? -9467,12248 -9210,13338
-Bernauer Str.: Wo genau befinden sich Radspuren, wo befinden sich Radwege?	? 901,18732 1229,18750 1405,18749 1659,18747 1967,18743 2175,18740 2602,18737 2643,18738 2821,18831
+Bernauer Str.: Wo genau befinden sich Radspuren, wo befinden sich Radwege?	? -220,16110 -198,16187 127,17176 600,18472 901,18732 1229,18750 1405,18749 1659,18747 1967,18743 2175,18740 2602,18737 2643,18738 2821,18831
 Quickborner Str.: Wo genau befinden sich Radspuren, wo befinden sich Radwege?	? 7416,22349 7072,22905 6890,23213 6839,23300 6770,23417
 Fritz-Rumpf-Str. (Potsdam): Ist die Straße bereits fertiggestellt? Qualität?	? -11307,133 -11388,270
 Leonardo-da-Vinci-Str. (Potsdam): Ist die Straße bereits fertiggestellt? Qualität?	? -11390,72 -11609,400
@@ -2687,6 +2687,8 @@ Am Alten Fenn: Qualität?	? 17037,4794 17060,4848 17119,4931 17246,5089 17266,513
 Möckernstr.: wo genau ist der Zebrastreifen in der Möckernstr.?	? 8773,9524 8769,9290
 Melli-Besse-Str. - Parkweg: gibt es für Radfahrer eine Verbindung zwischen Melli-Besse-Str. und dem Weg im Landschaftspark?	? 17870,3965 17877,3979
 Rennbahnstr./Gustav-Adolf-Str.: gibt es eine Ampel an der Kreuzung Rennbahnstr./Gustav-Adolf-Str.?	? 13708,17453
+Spiekermannstr.: Ist die Spiekermannstr. eine Tempo-30-Straße oder eine Spielstraße?	? 12054,16517 11919,16495 11844,16483 11663,16458
+Ruben-Wolf-Str.: Qualität? Ist die Straße für Autos offen?	? 19906,217 19785,361
 # added from ampeln-orig
 #: add_fragezeichen: Existiert die Ampel Nordufer/Torfstr. noch?
 geschlossen bei Bedarf (?) (Zbr)	? 27657,-11741
@@ -2795,6 +2797,7 @@ Teutonenstr. (Nikolassee): schlechtes Kopfsteinpflaster (Ist die Teutonenstr. zw
 Treseburger Str. (Blankenburg): mäßiges Kopfsteinpflaster (welcher Abschnitt ist mit Kopfsteinpflaster versehen, wie sieht der Rest aus?)	? 14509,21337 14461,21372 14304,21399 14157,21442 14069,21471 13978,21496 13884,21524
 Klausenburger Pfad: guter Asphalt (Ist der Klausenburger Pfad eine Spielstraße (verkehrsberuhigter Bereich)?)	? 7199,-418 7110,-363 7030,-313 6985,-282 6885,-169 6867,-126
 Kreuzgraben: guter Beton (ist die Straße Kreuzgraben verkehrsberuhigt?)	? 10309,20032 10282,20137 10267,20193 10264,20209
+Schützenstr. (Bohnsdorf): Beton (gibt es eine Einbahnstraßenregelung in der Schützenstraße, und wenn ja, gilt diese auch für Radfahrer?)	? 19352,-961 19465,-907 19599,-885
 Rheinpfalzallee: geflickter Asphalt (bis 2007-10-15 wird der Asphaltbelag erneuert)	? 19030,9530 19128,9523 19221,9517 19424,9502 19510,9497 19651,9489
 Ortsdurchfahrt Buckow: schlechtes Kopfsteinpflaster (nach den Bauarbeiten (2006-12-31) vielleicht asphaltiert?)	? 55786,18881 55877,18248 55700,18101 55623,17923 55524,17754 55164,17565
 Jühnsdorf: Asphalt (existiert durch Jühnsdorf ein Radweg?)	? 9792,-12090 9345,-11425 9472,-11297 9578,-10891

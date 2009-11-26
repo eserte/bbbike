@@ -3016,6 +3016,8 @@ Behnitz: Kopfsteinpflaster	Q2 -2951,14617 -2993,14568 -3014,14559
 Rietzestr.: Asphalt	Q0 12693,15225 12472,15356
 ######################################################################
 #: by: anonymous vvv
+#: note: enge Straße aber q0
+Sauerbruchstr.: guter Asphalt	Q0 -6249,1332 -6365,1304 -6447,1287 -6504,1420 -6490,1507 -6422,1523
 Schönwalder Str.: Asphalt	Q0 8016,15085 8229,15128 8266,15134 8402,15162
 Churer Zeile: Asphalt	Q0 3221,2221 3218,2123
 Am Kladower Wäldchen: Verbundsteinpflaster	Q0 -8906,4557 -8855,4518 -8809,4565 -8862,4607
@@ -6310,9 +6312,9 @@ Löwenzahnweg: guter Asphalt	Q0 16045,2434 16106,2514 16183,2615 16260,2717 16376
 #: by: Bernd (Neuworak): (Beton)
 Forkenzeile: guter Asphalt	Q0 16052,23273 16115,23375 16183,23476
 #: by: Roland (cybertour): vvv
-#: XXX: anonymous widerspricht: Kopfsteinpflaster, Q2
-Sültstr.: mäßiger Asphalt	Q0- 12094,15598 12171,15737 12247,15868
 #: confirmed_by: srt (zumindest an der Erich-Weinert-Str.)
+Sültstr.: mäßiger Asphalt	Q0- 12094,15598 12171,15737 12247,15868
+#: XXX: anonymous widerspricht: Kopfsteinpflaster, Q2
 Sültstr.: mäßiger Asphalt	Q0- 12247,15868 12295,15953 12352,16048
 #: by: ^^^
 #: by: oli (without @):
@@ -9408,6 +9410,41 @@ Zwingenberger Weg: guter Beton	Q0 -519,4737 -552,4698 -581,4662
 #: by: arndt rimpler:
 #: confirmed_by: srt
 Ochtumweg: mäßiger Beton	Q1 13990,14729 13795,14876
+#: by: Doreen Platz 
+Oehlertplatz: Asphalt	Q0 6892,5330 6932,5311 6950,5320 6951,5338 6939,5352 6896,5347
+#: by: Sascha (saschajana@...)
+Narzissenweg (Altglienicke): Asphalt	Q1 20246,553 20206,464 20214,375
+#: by: Wilde (thwila) 
+Schwarzkoppenstr.: Beton	Q0 19843,357 19937,246
+#: by: Carina (cyndi9227): vvv
+#: add_fragezeichen: gibt es eine Einbahnstraßenregelung in der Schützenstraße, und wenn ja, gilt diese auch für Radfahrer?
+Schützenstr. (Bohnsdorf): Beton	Q0 19352,-961 19465,-907 19599,-885
+Schützenstr. (Bohnsdorf): Beton	Q0 19588,-860 19757,-790
+Schützenstr. (Bohnsdorf): Beton	Q0 19725,-857 19773,-837 19897,-783 19896,-746 19978,-712 19940,-610
+Schützenstr. (Bohnsdorf): Beton	Q0 19465,-907 19529,-1061
+Schützenstr. (Bohnsdorf): Beton	Q0 19599,-885 19588,-860 19550,-775
+#: add_fragezeichen ^^^
+#: by: ^^^
+#: by: Ulrich Dalkmann 
+Saint-Exupéry-Str.: Verbundsteinpflaster	Q1 -8207,7012 -8140,6898 -8087,6806
+#: by: connie zipser: vvv
+#: note: laut http://www.berlin.de/ba-spandau/presse/archiv/20071129.1255.89932.html ab 2008-02-01 neu asphaltiert, Q0, nicht mehr eng
+Am Kinderdorf: sehr guter Belag	Q0 -5093,8398 -5106,8534 -5103,8614 -5089,8701 -5074,8761 -5071,8864
+#: note: enge Straße, q0
+Am Berghang: guter Asphalt	Q0 -5246,8751 -5169,8749 -5150,8766 -5074,8761 -4891,8752 -4853,8735 -4793,8675 -4705,8671
+Buchwaldzeile: Feldweg	Q2+ -4682,8292 -4680,8340 -4671,8458 -4664,8532 -4683,8650 -4705,8671 -4786,8847
+Buchwaldzeile: Katzenkopfpflaster	Q2- -4786,8847 -4862,9079
+Plievierstr.: geteert	Q0 -4590,8666 -4683,8650
+#: by: ^^^
+#: by: Dirk Schmidt 
+Vietzer Zeile: guter Asphalt	Q0 2789,19600 2906,19771
+#: by: Hans-Peter Ott 
+Drenziger Zeile: mäßiger Asphalt	Q1 2906,19771 2790,19910
+#: by: Claudia Oll, franziska.schaefer vvv
+Tubaweg: Asphalt	Q0 11828,20625 11782,20693 11771,20706
+Tubaweg: Asphalt	Q0 11782,20693 11826,20722 11843,20734 11867,20747 11919,20745
+Tubaweg: Asphalt	Q0 11843,20734 11822,20769
+#: by: ^^^
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206

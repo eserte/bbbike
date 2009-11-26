@@ -8,21 +8,17 @@
 #
 #: section ignorieren vvv
 #: section projektierte Radstreifen der Verkehrsverwaltung vvv
-# Hier scheint nichts mehr zu passieren: #: last_checked: 2008-04-08 Wilhelmstr. (Kreuzberg)	? 9376,10393 9378,10539 9370,10615 9367,10641 9313,10789 9266,10936 9234,11056 9199,11166 9162,11286
-# XXX del #: last_checked: 2008-10-11#: by: MoPo 2009-08-01, soll 2009 realisiert werden Alt-Moabit zwischen Kirch- und Paulstraße	? 7195,13046 6966,13075 6860,13093 6757,13112 6661,13130
+#
 #: last_checked: 2009-10-21
 #: next_check: 2009-12-15
 #: XXX: die ersten Meter in der Breiten Str. sind noch Baustelle ohne Radspuren
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0709/nachricht2788.html
 Breite Str./Werderscher Markt	?::inwork 10267,12305 10170,12261 10109,12238 10084,12228 9972,12184
-# Hier scheint nichts mehr zu passieren: #: last_checked: 2008-02-22 Gitschiner Str.	? 9948,10280 10122,10294 10340,10301 10605,10312 10859,10333 10962,10340 11117,10326
-# XXX laut Luftbild fertig: last_checked: 2006-06-16 (von Corinna):Gorkistr.	? 2998,20487 2974,20483 2615,20421
-# XXX del: Alt-Friedrichsfelde (nur nördliche Seite) (wahrscheinlich nur hier, wo bereits eine Lücke ist)	? 18220,11710 18098,11720 17966,11730 17746,11748 17497,11769 17440,11774 17240,11791
 #: last_checked: 2007-07-15
-Löhleinstraße	? 2717,5578 2499,5144 2454,5067 2288,4932
+Löhleinstraße	?::projected 2717,5578 2499,5144 2454,5067 2288,4932
 #: last_checked: 2009-05-02
-Saargemünder Straße	? 2027,4792 1884,4811 1747,4829 1479,4853
-#: by ^^^
+Saargemünder Straße	?::projected 2027,4792 1884,4811 1747,4829 1479,4853
+#
 #: by: Tagesspiegel vom 2009-04-12, soll 2009 realisiert werden (bestätigt von MoPo 2009-08-01 und http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20091012.1150.142106.html) vvv
 #: next_check: 2009-10-31 vvv
 Reichsstr.: baulicher Radweg	?::inwork; 1403,11428 1308,11506
@@ -31,84 +27,73 @@ Reichsstr.: Angebotsstreifen	?::inwork 1308,11506 1220,11583 1215,11587 1133,116
 Reichsstr.: wird der vorhandene Radweg zugunsten eines Angebotsstreifens aufgegeben?	?::inwork 818,11954 738,12025 653,12109 628,12138
 #: next_check ^^^
 #: by: ^^^
+#
 #: by: MoPo 2009-08-01, soll 2009 realisiert werden vvv
 #: last_checked: 2009-10-28
-Tiergartenstr.	? 8172,11679 8021,11636 7816,11571 7717,11540 7600,11513 7504,11512 7435,11514 7356,11517 7293,11519 6825,11486
+Tiergartenstr.	?::projected 8172,11679 8021,11636 7816,11571 7717,11540 7600,11513 7504,11512 7435,11514 7356,11517 7293,11519 6825,11486
 #: last_checked: 2009-11-21
-Grunewaldstr.	? 4861,5581 4671,5697 4520,5793 4419,5842 4291,5895 4172,5918 4010,5888 3931,5825 3850,5801 3707,5758
-Falkenberger Chaussee im Bereich Bhf. Hohenschönhausen	? 17400,17790 17703,17990 17843,18078
+Grunewaldstr. (Steglitz)	?::projected 4861,5581 4671,5697 4520,5793 4419,5842 4291,5895 4172,5918 4010,5888 3931,5825 3850,5801 3707,5758
+Falkenberger Chaussee im Bereich Bhf. Hohenschönhausen	?::projected 17400,17790 17703,17990 17843,18078
 #: by: ^^^
+#
 #: by: MoPo 2009-08-01, soll 2010 realisiert werden vvv
 #: next_check: 2010-03-01 vvv
-Joachim-Friedrich-Str.	? 3067,9592 3069,9622 3083,9796 3092,9886 3108,10069 3111,10116 3132,10499
-Uhlandstr.	? 4984,9675 5004,9842 5026,10038 5036,10139 5063,10384
-Zossener Str./Lindenstr.	? 9856,10358 9873,10285 9865,10227 9858,10199 9837,10117 9827,10051
-Michaelbrücke/Michaelkirchstr.	? 11768,12006 11716,11914 11676,11839 11574,11594 11498,11417
-Stülerstr.	? 6825,11486 6716,11439 6692,11365 6679,11319 6630,11247 6606,11222
-Alt-Moabit	? 5975,13256 6214,13225
-Fischerinsel	? 10512,12039 10672,11870
-Poelchaustr.	? 20343,14429 20184,14435 20059,14441 19817,14454 19687,14469 19593,14472 19395,14477
-Germanenstr. (oder nur das kleine Stück bis Waldsteg?)	? 8396,19071 8359,19162 8304,19475 8268,19558 8234,19634 8233,19695 8231,19806 8242,19869 8234,19936
-#: last_checked: 2009-11-16
-Danziger Str.	? 11712,14868 11879,14771 11990,14714 12040,14688 12128,14640 12317,14535 12425,14459 12630,14306 12729,14227 12901,14093 12975,13990 13037,13897 13100,13803 13166,13707 13225,13620 13228,13615 13334,13459
-#: last_checked: 2009-11-16
-Kniprodestr./Am Friedrichshain	? 12901,14093 12784,13961 12695,13864 12654,13819 12571,13798 12403,13755 12204,13719 12161,13711 12038,13685 11868,13646 11785,13625 11762,13619 11706,13635
-Neuendorfer Str.	? -2883,15571 -2856,15687 -2869,15782 -2886,15867 -2915,15994 -3040,16246
-Goerzallee	? 4164,2717 4065,2576 3983,2454 3805,2196 3700,2045 3640,1959 3584,1877 3425,1647 3199,1455 3140,1411 2843,1281 2663,1199 2527,1136 2515,1131 2404,1078 2372,1043 2333,1003 2147,811 1946,604 1940,587 1834,339 1765,294
-Lankwitzer Str.	? 8955,3521 8599,3441 8478,3414 8347,3382 8259,3349 8080,3260 8039,3242
+Joachim-Friedrich-Str.	?::projected 3067,9592 3069,9622 3083,9796 3092,9886 3108,10069 3111,10116 3132,10499
+Uhlandstr.	?::projected 4984,9675 5004,9842 5026,10038 5036,10139 5063,10384
+Zossener Str./Lindenstr.	?::projected 9856,10358 9873,10285 9865,10227 9858,10199 9837,10117 9827,10051
+Michaelbrücke/Michaelkirchstr.	?::projected 11768,12006 11716,11914 11676,11839 11574,11594 11498,11417
+Stülerstr.	?::projected 6825,11486 6716,11439 6692,11365 6679,11319 6630,11247 6606,11222
+Alt-Moabit	?::projected 5975,13256 6214,13225
+Fischerinsel	?::projected 10512,12039 10672,11870
+Poelchaustr.	?::projected 20343,14429 20184,14435 20059,14441 19817,14454 19687,14469 19593,14472 19395,14477
+Germanenstr. (oder nur das kleine Stück bis Waldsteg?)	?::projected 8396,19071 8359,19162 8304,19475 8268,19558 8234,19634 8233,19695 8231,19806 8242,19869 8234,19936
+#: last_checked: 2009-11-26
+Danziger Str.	?::projected 11712,14868 11879,14771 11990,14714 12040,14688 12128,14640 12317,14535 12425,14459 12630,14306 12729,14227 12901,14093 12975,13990 13037,13897 13100,13803 13166,13707 13225,13620 13228,13615 13334,13459
+#: last_checked: 2009-11-26
+Kniprodestr./Am Friedrichshain	?::projected 12901,14093 12784,13961 12695,13864 12654,13819 12571,13798 12403,13755 12204,13719 12161,13711 12038,13685 11868,13646 11785,13625 11762,13619 11706,13635
+Neuendorfer Str.	?::projected -2883,15571 -2856,15687 -2869,15782 -2886,15867 -2915,15994 -3040,16246
+Goerzallee	?::projected 4164,2717 4065,2576 3983,2454 3805,2196 3700,2045 3640,1959 3584,1877 3425,1647 3199,1455 3140,1411 2843,1281 2663,1199 2527,1136 2515,1131 2404,1078 2372,1043 2333,1003 2147,811 1946,604 1940,587 1834,339 1765,294
+Lankwitzer Str.	?::projected 8955,3521 8599,3441 8478,3414 8347,3382 8259,3349 8080,3260 8039,3242
 #: last_checked: 2009-08-11
-Schnellerstr.	? 18245,5551 18370,5511 18680,5413 18984,5318 19031,5316 19328,5304 19405,5284
+Schnellerstr.	?::projected 18245,5551 18370,5511 18680,5413 18984,5318 19031,5316 19328,5304 19405,5284
 #: next_check ^^^
 #: by: ^^^
+#
 #: by: Tagesspiegel vom 2009-04-12, soll 2009 realisiert werden
 #: corrected_by: MoPo 2009-08-01, soll 2010 realisiert werden
 #: next_check: 2010-03-01
-Müllerstr.	? 6790,16018 6680,16116 6608,16180 6450,16325 6444,16331 6433,16342 6311,16457 6208,16546 6103,16635 6019,16712 5937,16784 5777,16924 5589,17081 5504,17153
+Müllerstr.	?::projected 6790,16018 6680,16116 6608,16180 6450,16325 6444,16331 6433,16342 6311,16457 6208,16546 6103,16635 6019,16712 5937,16784 5777,16924 5589,17081 5504,17153
+#
 #: by: Tagesspiegel vom 2009-04-12, soll 2009 realisiert werden
 #: corrected_by: MoPo 2009-08-01, soll 2010 realisiert werden
 #: last_checked: 2009-07-23
 #: next_check: 2010-03-01
-Annenstr./Heinrich-Heine-Platz	? 11349,11227 11249,11268 11091,11379 10915,11535 10819,11664
+Annenstr./Heinrich-Heine-Platz	?::projected 11349,11227 11249,11268 11091,11379 10915,11535 10819,11664
+#
 #: by: Tagesspiegel vom 2009-04-12, soll 2009 realisiert werden
 #: corrected_by: MoPo 2009-08-01, soll 2010 realisiert werden
 #: next_check: 2010-03-01
-Müllerstr./Chausseestr.	? 8346,14576 8286,14635 8246,14675 8153,14769 8138,14786 8057,14876
+Müllerstr./Chausseestr.	?::projected 8346,14576 8286,14635 8246,14675 8153,14769 8138,14786 8057,14876
+#
 #: by: Tagesspiegel vom 2009-04-12, soll 2009 realisiert werden
 #: by: MoPo 2009-08-01, soll 2009 realisiert werden
 #: last_checked: 2009-11-16
-Kniprodestr.	? 13838,15113 13749,15013 13649,14899 13438,14675
+Kniprodestr.	?::projected 13838,15113 13749,15013 13649,14899 13438,14675
+#
 #: by: Tagesspiegel vom 2009-04-12, soll 2009 realisiert werden
 #: corrected_by: MoPo 2009-08-01, soll 2010 realisiert werden
 #: next_check: 2010-03-01
-Streitstr. (werden die vorhandenen Bordsteinradwege ersetzt)?	? -3040,16246 -3050,16429 -3046,16548 -3043,16601 -3031,16807 -3023,16925 -3018,16974 -3017,16984 -3009,17090 -3006,17128 -2959,17507 -2934,17594
+Streitstr. (werden die vorhandenen Bordsteinradwege ersetzt)?	?::projected -3040,16246 -3050,16429 -3046,16548 -3043,16601 -3031,16807 -3023,16925 -3018,16974 -3017,16984 -3009,17090 -3006,17128 -2959,17507 -2934,17594
+#
 #: by: http://www.berlin.de/ba-pankow/presse/archiv/20081128.1050.115446.html
 #: next_check: 2010-01-01
-Blankenburger Str. erhält beiderseitig Radfahrstreifen zwischen Dietzgen- und Siegfriedstr.	?::inwork 10249,19541 10377,19565 10742,19632
+Blankenburger Str. erhält beiderseitig Radfahrstreifen zwischen Dietzgen- und Siegfriedstr.	?::projected 10249,19541 10377,19565 10742,19632
+#
 #: by: http://www.berlin.de/ba-pankow/presse/archiv/20090921.0650.139568.html
 #: next_check: 2011-10-01
-Wollankstr.: Angebotsstreifen werden bis Herbst 2011 eingerichtet	?::inwork 9549,17625 9590,17662 9624,17693 9663,17734 9727,17804 9791,17877 9832,17925 9870,17971 9978,18104 10027,18165 10089,18180
+Wollankstr.: Angebotsstreifen werden bis Herbst 2011 eingerichtet	?::projected 9549,17625 9590,17662 9624,17693 9663,17734 9727,17804 9791,17877 9832,17925 9870,17971 9978,18104 10027,18165 10089,18180
 #: section ^^^
 #: section ^^^
-#
-## new list by http://www.tagesspiegel.de/berlin/;art270,2355982 (11.08.2007)
-# Memhardstraße (Mitte)
-# Greifswalder Straße (Prenzlauer Berg) (zumindest teilweise realisiert)
-# Wisbyer Straße (Prenzlauer Berg) (teilweise schon realisiert, Rest folgt)
-# Gorkistraße (Tegel)
-# Bernauer Straße (Tegel)
-# Aroser Allee (Reinickendorf)
-# Neuendorfer Straße (Spandau)
-# Konrad-Wolf-Straße (Hohenschönh.) (zumindest teilweise realisiert)
-## bereits realisiert:
-# Engeldamm (Kreuzberg)
-# Zossener Straße (Kreuzberg) (teilweise, Richtung Norden von Blücherstr.)
-# Grunerstraße (Mitte) (teilweise, Richtung Norden)
-# Ostseeplatz (Prenzlauer Berg)
-# Hochstraße (Wedding)
-# Alexanderufer (am Hauptbahnhof)
-# Gertraudenstraße (Spittelmarkt, Mitte) (nur Richtung Westen)
-# Markgrafendamm (Friedrichshain) (der sanierte Bereich ist bereits markiert)
-# Vulkanstraße (Lichtenberg)
 #
 ######################################################################
 #
@@ -116,6 +101,7 @@ Wollankstr.: Angebotsstreifen werden bis Herbst 2011 eingerichtet	?::inwork 9549
 #
 #: section ignorieren vvv
 #: section Straßen in Bau und Planung vvv
+#
 #: last_checked: 2009-11-19
 Wagner-Régeny-Str.: Straße wird Richtung Norden verlängert	?::inwork 19487,3593 19377,3721
 #: last_checked: 2009-11-19
@@ -292,8 +278,6 @@ Oberspreestr.: südliche Nebenfahrbahn hat einen mittigen Asphaltbelag, Europarad
 #: by: http://www.berlin.de/ba-spandau/presse/archiv/20081022.1525.112277.html
 #: XXX_outdoor:
 Radweg durch den Münsinger Park: genaue Wegführung?	? -3624,14113 -3656,14272 -3700,14375 -3776,14419
-#: by: http://www.berlin.de/ba-pankow/presse/archiv/20080821.1155.107497.html
-Hamburger Platz: ist nun ein Kreisverkehr; Situation vor Ort genauer anschauen!	? 12705,16708
 #: by: http://www.berlin.de/ba-neukoelln/presse/archiv/20080519.1325.100767.html
 Schönefelder Str.: Einbahnstraßenregelung nur für Autos: wo genau, in welche Richtung?	? 17222,-606 17222,-580 17222,-426 17199,-196 17193,-109
 #: XXX ein anonymer bbbikegooglemaps-Kommentar --- aber auf dem Luftbild sieht die Kreuzung ganz normal aus?!
@@ -369,6 +353,7 @@ Kleistpark: im Sommer bis 21 Uhr geöffnet, im Winter bis 18 Uhr	? 7192,9508 7246
 #
 #  ISOLIERTE EINTRÄGE (ebenfalls privat) (keine Verknüpfung zum Netz)
 #
+#: section isolated entries vvv
 #: section ignorieren vvv
 #: by: constantin(g):
 Heisterbachstr.: guter Beton, Q0	? 28421,889 28520,998 28763,1276
@@ -397,8 +382,6 @@ Weg A (Blankenfelde): mäßiger fester Sandweg, Q2	? 10700,23251 10549,23550
 #: by: Stephan Demke:
 Gaismannshofer Weg: mäßiger Asphalt, Q1 (policy!), Schrittgeschwindigkeit wegen Schulweg (???)	? -3650,16731 -3593,16736 -3597,16843
 #: by: anonymous:
-Sauerbruchstr.: guter Asphalt, Q0, enge Straße aber q0	? -6249,1332 -6365,1304 -6447,1287 -6504,1420 -6490,1507 -6422,1523
-#: by: anonymous:
 Büssower Weg: guter Asphalt, Q0	? -1324,24357 -1620,24229
 #: by: Nicole Slowinski:
 Rodestr.: Asphalt	? 29176,1897 29357,2113
@@ -414,11 +397,6 @@ Ederkopfweg: guter Asphalt, Q0	? -4729,14958 -4761,14961 -4807,14990 -4879,15008
 Eiserfelder Ring: guter Beton, Q0	? -4720,15087 -4856,15089 -4881,15111 -4883,15175 -4862,15193 -4713,15191
 #: by: Stapel (rowingfriend...):
 Bärdorfer Zeile: guter Beton, Q0, Bordsteinkanten?	? 20917,4261 20822,4571 20818,4610 20827,4655
-#: by: Claudia Oll, franziska.schaefer vvv
-Tubaweg: Asphalt, Q0, RW6	? 11828,20625 11782,20693 11771,20706
-Tubaweg: Asphalt, Q0, RW6	? 11782,20693 11826,20722 11843,20734 11867,20747 11919,20745
-Tubaweg: Asphalt, Q0, RW6	? 11843,20734 11822,20769
-#: by: ^^^
 #: by: H. Schmidt:
 #: confirmed_by: Patty (kuki...)
 Heribaldstr.: Asphalt, Q0	? 25029,10462 25022,10715
@@ -453,13 +431,6 @@ Sawallstr. (Erkner): mäßiges Kopfsteinpflaster, Q2	? 34024,1360 34181,1349
 Am Schlangenfenn (Potsdam): guter Asphalt, Q0	? -10516,-5498 -10585,-5528 -10630,-5553 -10712,-5594 -10758,-5502 -10630,-5440
 Am Schlangenfenn (Potsdam): guter Asphalt, Q0	? -10585,-5528 -10630,-5440 -10652,-5393 -10804,-5464
 #: by: ^^^
-#: by: connie zipser: vvv
-#: note: laut http://www.berlin.de/ba-spandau/presse/archiv/20071129.1255.89932.html ab 2008-02-01 neu asphaltiert, Q0, nicht mehr eng
-Am Kinderdorf: sehr guter Belag, Q0	? -5093,8398 -5106,8534 -5103,8614 -5089,8701 -5074,8761 -5071,8864
-Am Berghang: guter Asphalt, Q0, enge Straße, q0	? -5246,8751 -5169,8749 -5150,8766 -5074,8761 -4891,8752 -4853,8735 -4793,8675 -4705,8671
-Buchwaldzeile: im Nordteil Katzenkopfpflaster, ab Melsunger Str ist sie Feldweg	? -4682,8292 -4680,8340 -4671,8458 -4664,8532 -4683,8650 -4705,8671 -4786,8847 -4862,9079
-Plievierstr.: geteert, Q0	? -4590,8666 -4683,8650
-#: by: ^^^
 #: by: anonymous
 Am Upstall, Fahrland: Asphalt, Q0	? -16009,7063 -16011,7252 -16010,7299 -15998,7329 -15967,7362 -15929,7375 -15891,7375 -15815,7375
 #: by: anonymous
@@ -481,14 +452,6 @@ Adolf-Hoffmann-Str. (Vogelsdorf): mäßiger fester Sandweg, Q2	? 34007,11572 34149
 #: note: widersprüchliche Angabe von lesz...: gutes Kopfsteinpflaster, Q1, Sandbanketten
 #: note: weiterer Eintrag von anonymous: Kopfsteinpflaster ohne weitere Angabe, enge Straße, q2
 Bulgenbachweg: mäßiges Verbundsteinpflaster, Q2+, kein Gehweg	? 3439,26192 3452,26160 3478,26119 3520,26081 3574,26060 3647,26060
-#: by: Carina (cyndi9227): vvv
-#: note: weitere Fragen: Einbahnstraßenregelung, wo?
-Schützenstr. (Bohnsdorf): Beton, Q0	? 19352,-961 19465,-907 19599,-885
-Schützenstr. (Bohnsdorf): Beton, Q0	? 19588,-860 19757,-790
-Schützenstr. (Bohnsdorf): Beton, Q0	? 19725,-857 19773,-837 19897,-783 19896,-746 19978,-712 19940,-610
-Schützenstr. (Bohnsdorf): Beton, Q0	? 19465,-907 19529,-1061
-Schützenstr. (Bohnsdorf): Beton, Q0	? 19599,-885 19588,-860 19550,-775
-#: by: ^^^
 #: by: ThomasDob:
 Am Wall (Kleinmachnow): guter Beton, Q0	? -3395,-880 -3322,-894 -3191,-914 -3060,-933 -2926,-955 -2795,-978 -2742,-987
 Promenadenweg (Kleinmachnow): Asphalt, Q0, q4(???), Frage: Gehwegverbindung zum Stahnsdorfer Damm?	? -3391,-1155 -3288,-1153 -3221,-1154 -3087,-1155 -2953,-1156 -2819,-1157 -2720,-1159 -2683,-1160
@@ -496,27 +459,14 @@ Promenadenweg (Kleinmachnow): Asphalt, Q0, q4(???), Frage: Gehwegverbindung zum 
 Heimgartenstraße: Asphalt, Q0	? 23537,4238 23657,4255 23880,4280 24107,4309
 #: by: anonymous (2x): einmal "guter Asphalt", einmal "guter Beton" (go with 2nd, like in Luftbild); "eng q1" nur einmal erwähnt
 Männertreuweg: guter Beton, Q0, eng, parkende Autos (q1); existiert eine Verbindung zum Weg zum Teltowkanal?	? 16631,3292 16599,3316 16473,3417 16340,3517
-#: by: Wilde (thwila) 
-Schwarzkoppenstr.: Beton, Q0	? 19843,357 19937,246
-#: by: anonymous:
-Ruben-Wolf-Str.: Verbundsteinpflaster, Q1, viele Fußgänger, q1	? 19906,217 19785,361
-#: by: Doreen Platz 
-Oehlertplatz: Asphalt, Q0	? 6892,5330 6932,5311 6950,5320 6951,5338 6939,5352 6896,5347
 #: by: Anke Terzer und Kati13125 und Nele (vanilla4usa)
 #: note: anonymous meint "mäßiger Asphalt"
 Nettestr.: Asphalt, Q0	? 14307,22262 14464,22485
-#: by: Ulrich Dalkmann 
-Saint-Exupéry-Str.: Verbundsteinpflaster, Q1, Spielstraße, RW6	? -8207,7012 -8140,6898 -8087,6806
 #: by: Stefan Walther (2x!):
 Indrastr.: Kopfsteinpflaster, Q2	? 12233,18170 12269,18042 12231,17908
-#: by: Dirk Schmidt 
-Vietzer Zeile: guter Asphalt, Q0	? 2789,19600 2906,19771
-#: by: Hans-Peter Ott 
-Drenziger Zeile: mäßiger Asphalt, Q1	? 2906,19771 2790,19910
-#: by: Sascha (saschajana@...)
-Narzissenweg (Altglienicke): Asphalt Q1	? 20246,553 20206,464 20214,375
 #: by: Katharina Undisz [AM]
 Helmut-Just-Str. (Hohen Neuendorf): Asphalt Q1	? 4054,29959 4132,29954 4487,29996
+#: section ^^^
 #: section ^^^
 #
 ######################################################################
@@ -3546,7 +3496,7 @@ Blankestr.: Qualität?	? 5193,17428 5314,17558 5334,17592
 Reuterstr. (Reinickendorf): Qualität?	? 5314,17558 5307,17582 5318,17617 5363,17667
 Seeburg - Heerstr.: Qualität? Gibt es hier Wegweiser oder Straßennamen?	? -9467,12248 -9210,13338
 #: XXX laut http://www.berlin.de/ba-reinickendorf/presse/archiv/20090727.1115.133229.html ex. auf einer Länge von 2500 Metern (beidseitig? einseitig?) Radangebotsstreifen und Radwege
-Bernauer Str.: Wo genau befinden sich Radspuren, wo befinden sich Radwege?	? 901,18732 1229,18750 1405,18749 1659,18747 1967,18743 2175,18740 2602,18737 2643,18738 2821,18831
+Bernauer Str.: Wo genau befinden sich Radspuren, wo befinden sich Radwege?	? -220,16110 -198,16187 127,17176 600,18472 901,18732 1229,18750 1405,18749 1659,18747 1967,18743 2175,18740 2602,18737 2643,18738 2821,18831
 #: XXX laut http://www.berlin.de/ba-reinickendorf/presse/archiv/20090720.0950.132525.html
 #: XXX -> Mail an C. Lange geschickt
 Quickborner Str.: Wo genau befinden sich Radspuren, wo befinden sich Radwege?	? 7416,22349 7072,22905 6890,23213 6839,23300 6770,23417
@@ -3742,3 +3692,6 @@ Am Alten Fenn: Qualität?	? 17037,4794 17060,4848 17119,4931 17246,5089 17266,513
 Möckernstr.: wo genau ist der Zebrastreifen in der Möckernstr.?	? 8773,9524 8769,9290
 Melli-Besse-Str. - Parkweg: gibt es für Radfahrer eine Verbindung zwischen Melli-Besse-Str. und dem Weg im Landschaftspark?	? 17870,3965 17877,3979
 Rennbahnstr./Gustav-Adolf-Str.: gibt es eine Ampel an der Kreuzung Rennbahnstr./Gustav-Adolf-Str.?	? 13708,17453
+Spiekermannstr.: Ist die Spiekermannstr. eine Tempo-30-Straße oder eine Spielstraße?	? 12054,16517 11919,16495 11844,16483 11663,16458
+#: XXX anonymous meinte: Verbundsteinpflaster, Q1, viele Fußgänger, q1; lieber nachfragen!
+Ruben-Wolf-Str.: Qualität? Ist die Straße für Autos offen?	? 19906,217 19785,361
