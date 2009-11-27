@@ -876,8 +876,8 @@ userdel	2::inwork 7160,11225 6851,11346
        undef,
        undef,
        {
-         'until' => 1259622000,
-         'text' => 'L 059 Hainschestraße Brücke über den Binnengraben in Bad Liebenwerda Brückenneubau Vollsperrung 23.07.2009-30.11.2009 ',
+         'until' => 1260572400,
+         'text' => 'L 059 Hainschestraße Brücke über den Binnengraben in Bad Liebenwerda Brückenneubau Vollsperrung 23.07.2009-11.12.2009 ',
          'from' => 1248213600,
          'id' => 1760,
          'data' => 'userdel	2::inwork 12383,-99327 12173,-99115
@@ -1663,15 +1663,7 @@ userdel	2::inwork 14835,10272 14888,10385
        undef,
        undef,
        undef,
-       {
-         'until' => 1259362800,
-         'text' => 'B 103 Meyenburg - Plau am See zw. Meyenburg und Ganzlin Deckenerneuerung Vollsperrung 09.11.2009-27.11.2009 ',
-         'from' => 1257634800,
-         'id' => 1966,
-         'data' => 'userdel	2::inwork -70491,100364 -70046,101896
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1262300400,
          'text' => 'B 112 OU Guben - OU Neuzelle zw. Abzw.Wellmitz und Abzw. Streichwitz Straßenneubau Vollsperrung 02.11.2009-31.12.2009 ',
@@ -1729,15 +1721,7 @@ userdel	2::temp 9852,12409 9869,12297 9890,12161
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1259362800,
-         'text' => 'B 109 Schönwalde - Wandlitz OD Schönwalde Durchlasssanierung Vollsperrung 09.11.2009-27.11.2009 ',
-         'from' => 1257634800,
-         'id' => 1981,
-         'data' => 'userdel	2::inwork 12635,32221 12466,30452
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1798,6 +1782,34 @@ userdel	2::temp 9852,12409 9869,12297 9890,12161
          'data' => 'userdel	2::inwork -35577,54824 -35059,54768 -34499,54966 -33922,55483
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_014707',
+         'until' => 1259553600,
+         'text' => 'Baumschulenstr. (Treptow) in beiden Richtungen zwischen Kiefholzstr. und Köpenicker Landstr. Baustelle, Straße vollständig gesperrt (bis Montag, 5 Uhr) (10:27) ',
+         'from' => 1259276209,
+         'id' => 1994,
+         'data' => 'userdel	2::inwork 16286,6946 16323,6998
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1260054000,
+         'text' => 'B 096 Luckau - Baruth Brücke über die Schuge bei Rüdingsdorf Brückenneubau Vollsperrung 02.12.2009-05.12.2009 ',
+         'from' => 1259622000,
+         'id' => 1995,
+         'data' => 'userdel	2::inwork 29918,-54610 30409,-55818
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1259449200,
+         'text' => 'B 101 Zinnaer Str. OD Luckenwalde, zw. Heidestr. u. R.-Breitscheid-Str. Straßenbau Vollsperrung 26.11.2009-28.11.2009 ',
+         'from' => 1259103600,
+         'id' => 1996,
+         'data' => 'userdel	q4::inwork -4630,-36012 -4603,-35730
+',
+         'type' => 'handicap'
        }
      
 );

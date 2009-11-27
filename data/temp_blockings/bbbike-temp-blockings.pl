@@ -14902,8 +14902,8 @@ userdel	q4::inwork 61432,38883 61546,39041 61413,39860
 EOF
      },
      { from  => 1248213600, # 2009-07-22 00:00
-       until => 1259622000, # 2009-12-01 00:00
-       text  => 'L 059 Hainschestraße Brücke über den Binnengraben in Bad Liebenwerda Brückenneubau Vollsperrung 23.07.2009-30.11.2009 ',
+       until => 1260572400, # 2009-12-12 00:00
+       text  => 'L 059 Hainschestraße Brücke über den Binnengraben in Bad Liebenwerda Brückenneubau Vollsperrung 23.07.2009-11.12.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 12383,-99327 12173,-99115
@@ -16813,7 +16813,7 @@ userdel	2::inwork 83389,-11087 82521,-12031 82191,-12275 81697,-12826
 EOF
      },
      { from  => 1257634800, # 2009-11-08 00:00
-       until => 1259362800, # 2009-11-28 00:00
+       until => 1259362756, # 2009-11-28 00:00 1259362800
        text  => 'B 109 Schönwalde - Wandlitz OD Schönwalde Durchlasssanierung Vollsperrung 09.11.2009-27.11.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -16916,6 +16916,31 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork -35577,54824 -35059,54768 -34499,54966 -33922,55483
+EOF
+     },
+     { from  => 1259276209, # 2009-11-26 23:56
+       until => 1259553600, # 2009-11-30 05:00
+       text  => 'Baumschulenstr. (Treptow) in beiden Richtungen zwischen Kiefholzstr. und Köpenicker Landstr. Baustelle, Straße vollständig gesperrt (bis Montag, 5 Uhr) (10:27) ',
+       type  => 'gesperrt',
+       source_id => 'IM_014707',
+       data  => <<EOF,
+userdel	2::inwork 16286,6946 16323,6998
+EOF
+     },
+     { from  => 1259622000, # 2009-12-01 00:00
+       until => 1260054000, # 2009-12-06 00:00
+       text  => 'B 096 Luckau - Baruth Brücke über die Schuge bei Rüdingsdorf Brückenneubau Vollsperrung 02.12.2009-05.12.2009 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 29918,-54610 30409,-55818
+EOF
+     },
+     { from  => 1259103600, # 2009-11-25 00:00
+       until => 1259449200, # 2009-11-29 00:00
+       text  => 'B 101 Zinnaer Str. OD Luckenwalde, zw. Heidestr. u. R.-Breitscheid-Str. Straßenbau Vollsperrung 26.11.2009-28.11.2009 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork -4630,-36012 -4603,-35730
 EOF
      },
     );
