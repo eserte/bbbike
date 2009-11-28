@@ -7129,8 +7129,10 @@ bereits vordefinierten Ziel setzen. Die Vorgehensweise sieht so aus:
 </ul>
 Für einen vordefinierten Startort geht man genauso vor, lediglich werden alle Vorkommen von <tt>ziel</tt> durch <tt>start</tt> ersetzt.
 
+<!-- XXX DEL:
 <h4 id="mambo">BBBike-Modul für Mambo</h4>
 Für das CMS Mambo gibt es auf mamboforge ein <a href="http://mamboforge.net/frs/?group_id=1094">BBBike-Modul</a> von Ramiro G&#243;mez.
+-->
 <hr>
 <p>
 EOF
