@@ -16902,7 +16902,7 @@ userdel	q4::inwork 7435,11514 7356,11517
 EOF
      },
      { from  => 1259104057, # 2009-11-25 00:07
-       until => 1259621999, # 2009-11-30 23:59
+       until => 1259518702, # 2009-11-30 23:59 1259621999
        text  => 'Einsteinufer (Charlottenburg) Richtung Marchstr. zwischen Str. des 17. Juni und Marchstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 11/2009)',
        type  => 'handicap',
        source_id => 'IM_014681',

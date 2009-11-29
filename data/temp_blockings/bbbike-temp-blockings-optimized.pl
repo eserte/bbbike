@@ -1764,16 +1764,7 @@ userdel	2::temp 9852,12409 9869,12297 9890,12161
          'type' => 'handicap'
        },
        undef,
-       {
-         'source_id' => 'IM_014681',
-         'until' => 1259621999,
-         'text' => 'Einsteinufer (Charlottenburg) Richtung Marchstr. zwischen Str. des 17. Juni und Marchstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 11/2009)',
-         'from' => 1259104057,
-         'id' => 1992,
-         'data' => 'userdel	q4::inwork; 5361,11910 5229,12001 5128,12149 4981,12252
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1259535600,
          'text' => 'B 167 Neuruppin - AS Neuruppin zw. Bechlin u. AS Neuruppin Straßenbauarbeiten Vollsperrung 16.11.2009-29.11.2009 ',
