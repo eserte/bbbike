@@ -246,10 +246,11 @@ sub get_html {
 	#commentlink  { background-color:yellow; }
 	body.nonWaitMode * { }
 	body.waitMode *    { cursor:wait; }
+        html,body     { height:100%; }
     --></style>
   </head>
   <body onload="init()" onunload="GUnload()" class="nonWaitMode">
-    <div id="map" style="width: 100%; height: 500px"></div>
+    <div id="map" style="width:100%; height:70%; min-height:500px;"></div>
     <script type="text/javascript">
     //<![CDATA[
 
