@@ -13626,14 +13626,16 @@ sub show_info {
 				my $wpt = "$zielname!$px,$py";
 				my $center = "$px,$py";
 				my $zoom;
-				if ($mapscale_scale < 4000) {
-				    $zoom = 0;
+				if ($mapscale_scale < 2000) {
+				    $zoom = 18;
+				} elsif ($mapscale_scale < 4000) {
+				    $zoom = 17;
 				} elsif ($mapscale_scale < 8000) {
-				    $zoom = 1;
+				    $zoom = 16;
 				} elsif ($mapscale_scale < 16000) {
-				    $zoom = 2;
+				    $zoom = 15;
 				} else {
-				    $zoom = 3;
+				    $zoom = 14;
 				}
 				my $q2 = CGI->new({ #wpt => $wpt, # XXX wpt or center --- TBD what is better suited
 						    center => $center,

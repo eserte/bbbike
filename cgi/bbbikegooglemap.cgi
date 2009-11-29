@@ -136,7 +136,7 @@ sub run {
     }
 
     my $zoom = param("zoom");
-    $zoom = 3 if !defined $zoom;
+    $zoom = 17-3 if !defined $zoom;
 
     my $autosel = param("autosel") || "";
     $self->{autosel} = $autosel && $autosel ne 'false' ? "true" : "false";
@@ -297,12 +297,12 @@ sub get_html {
     }
 
     function setwpt(x,y) {
-        map.recenterOrPanToLatLng(new GPoint(x, y));
+        map.panTo(new GLatLng(y, x));
     }
 
     function setwptAndMark(x,y) {
-	var pt = new GPoint(x, y);
-	map.recenterOrPanToLatLng(pt);
+	var pt = new GLatLng(y, x);
+	map.panTo(pt);
 	if (currentPointMarker) {
 	    map.removeOverlay(currentPointMarker);
 	}
@@ -419,7 +419,7 @@ sub get_html {
 	for(var i = 0; i < addRoute.length; i++) {
 	    if (i == 0) {
 		addRouteText = routeLabel;
-		addRouteLink = routeLinkLabel + "@{[ $get_public_link->() ]}?zoom=" + map.getZoomLevel() + "&coordsystem=polar" + "&maptype=" + mapTypeToString() + "&wpt_or_trk=";
+		addRouteLink = routeLinkLabel + "@{[ $get_public_link->() ]}?zoom=" + map.getZoom() + "&coordsystem=polar" + "&maptype=" + mapTypeToString() + "&wpt_or_trk=";
 	    } else if (i > 0) {
 		addRouteText += " ";
 		addRouteLink += "+";
@@ -496,7 +496,7 @@ sub get_html {
 		    if (textElements && textElements.length) {
 			text = textElements[0].textContent;
 		    }
-		    var point = new GPoint(xy[0], xy[1]);
+		    var point = new GLatLng(xy[1], xy[0]);
 	    	    var marker = createMarker(point, text);
 		    map.addOverlay(marker);
 		    currentTempBlockingMarkers[currentTempBlockingMarkers.length] = marker;
@@ -597,7 +597,7 @@ sub get_html {
 
     function showLink(point, message) {
 	var mapType = mapTypeToString();
-        var latLngStr = message + "@{[ $get_public_link->() ]}?zoom=" + map.getZoomLevel() + "&wpt=" + formatPoint(point) + "&coordsystem=polar" + "&maptype=" + mapType;
+        var latLngStr = message + "@{[ $get_public_link->() ]}?zoom=" + map.getZoom() + "&wpt=" + formatPoint(point) + "&coordsystem=polar" + "&maptype=" + mapType;
         document.getElementById("permalink").innerHTML = latLngStr;
     }
 
@@ -611,11 +611,11 @@ sub get_html {
     }
 
     function setZoomInForm() {
-	document.googlemap.zoom.value = map.getZoomLevel();
+	document.googlemap.zoom.value = map.getZoom();
     }
 
     function setZoomInUploadForm() {
-	document.upload.zoom.value = map.getZoomLevel();
+	document.upload.zoom.value = map.getZoom();
     }
 
     function waitMode() {
@@ -664,7 +664,7 @@ sub get_html {
 	    for (var i = 0; i < pointElements.length; i++) {
 	    	var xy = pointElements[i].textContent.split(",");
 		if (i == 0) setwpt(xy[0],xy[1]);
-	    	var p = new GPoint(xy[0],xy[1]);
+	    	var p = new GLatLng(xy[1],xy[0]);
 	    	addRoute[addRoute.length] = p;
             }
 	    //updateRouteDiv();
@@ -841,20 +841,20 @@ sub get_html {
     }
 
     if (GBrowserIsCompatible() ) {
-        var map = new GMap(document.getElementById("map"));
+        var map = new GMap2(document.getElementById("map"));
 	//map.disableDoubleClickZoom();
+	map.enableScrollWheelZoom()
         map.addControl(new GLargeMapControl());
         map.addControl(new GMapTypeControl());
         map.addControl(new GOverviewMapControl ());
- 	map.setMapType($self->{maptype});
-        map.centerAndZoom(new GPoint($centerx, $centery), $zoom);
+	map.setCenter(new GLatLng($centery, $centerx), $zoom, $self->{maptype});
 	new GKeyboardHandler(map);
     } else {
         document.getElementById("map").innerHTML = '<p class="large-error">Sorry, your browser is not supported by <a href="http://maps.google.com/support">Google Maps</a></p>';
     }
 
     GEvent.addListener(map, "moveend", function() {
-        var center = map.getCenterLatLng();
+        var center = map.getCenter();
 	showCoords(center, 'Center of map: ');
 	showLink(center, 'Link to map center: ');
     });
@@ -872,7 +872,7 @@ EOF
 	    $route_js_code .= join(",\n",
 				   map {
 				       my($x,$y) = split /,/, $_;
-				       sprintf 'new GPoint(%.5f, %.5f)', $x, $y;
+				       sprintf 'new GLatLng(%.5f, %.5f)', $y, $x;
 				   } @$path_polar
 				  );
 	    $route_js_code .= qq{], "$color", $width};
@@ -893,7 +893,7 @@ EOF
 	#my $html_name = escapeHTML($name);
 	my $html_name = hrefify($name);
 	$html .= <<EOF;
-    var point = new GPoint($x,$y);
+    var point = new GLatLng($y,$x);
     var marker = createMarker(point, '$html_name');
     map.addOverlay(marker);
 EOF
@@ -1141,7 +1141,8 @@ Upload parameter for a GPX file.
 
 =item C<zoom=>I<...>
 
-Set zoom value (use standard Google Maps zoom values).
+Set zoom value. Use standard Google Maps zoom values (that is, GMap2
+compatible values: 0 is the coarsest level).
 
 =item C<autosel=true>I<|>C<false>
 
