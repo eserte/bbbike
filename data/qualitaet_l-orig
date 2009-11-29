@@ -406,10 +406,15 @@ Am Pfingstberg (Potsdam): Kopfsteinpflaster, OK	Q1- -13089,1135 -12825,1284
 Am Waldessaum: Parkweg	Q1 -12825,1284 -12709,1106
 Vogelweide: Kopfsteinpflaster	Q2- -12825,1284 -12861,1357 -12906,1446
 Vogelweide: Schotter	Q2 -12906,1446 -12926,1494 -12928,1646 -12928,1686
-Vogelweide: sandiger Weg	Q2 -12928,1686 -12934,1813 -12845,1861 -12766,1932 -12775,1956 -12713,2000
-Bertiniweg: Schotterstraﬂe	Q2+ -12934,1813 -12883,1812 -12710,1713 -12642,1781 -12636,1804 -12604,1857 -12605,1927
+Vogelweide: sandiger Weg	Q2 -12928,1686 -12934,1813
+#XXX del: Vogelweide: sandiger Weg	Q2 -12934,1813 -12845,1861 -12766,1932 -12775,1956 -12713,2000
+(Fritz-von-der-Lancken-Str. - Bertiniweg): Asphalt	Q0 -12775,1956 -12663,2007 -12542,1959
+Eichbergstr.: Asphalt	Q0 -12775,1956 -12700,1851
+Eichbergstr.: Asphalt	Q0 -12761,1770 -12700,1851 -12671,1879
+#XXX del: Bertiniweg: Schotterstraﬂe	Q2+ -12934,1813 -12883,1812 -12710,1713 -12642,1781 -12636,1804 -12604,1857 -12605,1927
 Bertiniweg: schlechtes Kopfsteinpflaster	Q3+ -12383,1919 -12335,1928
-Bertiniweg: unbefestigte Straﬂe	Q2 -12605,1927 -12593,1946 -12542,1959 -12383,1919
+Bertiniweg: unbefestigte Straﬂe	Q2 -12605,1927 -12593,1946 -12542,1959
+Bertiniweg: unbefestigte Straﬂe	Q2 -12542,1959 -12383,1919
 (Bertinistr. - Uferweg): wassergebundene Decke	Q2+ -12335,1928 -12328,1941 -12329,1956 -12383,1986 -12424,2034
 #: XXX_prog: trailer=no
 (Uferweg): teilweise nur ein Pfad, teilweise holpriger zweispuriger Weg, einige steile Stellen	Q3 -12460,2288 -12586,2373 -12609,2364 -12637,2348 -12671,2354 -12743,2388 -12819,2465 -12897,2508 -12992,2595 -13076,2703 -13112,2825 -13192,2897 -13194,2909 -13227,2920 -13287,2924 -13375,2950
@@ -1136,7 +1141,7 @@ Cremzow: sehr guter Asphalt	Q0 51178,106442 51391,106540
 Cremzow - Klockow: Feldweg in der Qualit‰t eines Trampelpfads	Q3 51030,106885 50419,108545
 Rollberg: Feldweg, teilweise etwas sandig	Q2 53527,102597 53396,102754
 Neuer Garten: Parkweg	Q1 -11615,853 -11715,959 -11818,993 -11871,1087 -12081,1168 -12094,1273 -12139,1325
-Neuer Garten: Parkweg	Q1 -11510,810 -11562,918 -11575,1031 -11537,1206 -11568,1287 -11871,1185 -11990,1214 -12124,1359 -12141,1357
+Neuer Garten: Parkweg	Q1 -11510,810 -11562,918 -11575,1031 -11537,1206 -11544,1262 -11580,1281 -11871,1185 -11990,1214 -12124,1359 -12141,1357
 Seestr.: Kopfsteinpflaster	Q2 -11903,-71 -11866,103 -11796,240 -11707,315
 Seestr.: schlechtes Kopfsteinpflaster, bessere Banketten	Q3;Q2 -11707,315 -11609,400 -11584,452 -11581,559
 Seestr.: Kopfsteinpflaster	Q2 -11581,559 -11650,590
@@ -1146,8 +1151,8 @@ M¸hlenweg: Asphalt mit Lˆchern und Schotter	Q2+ -11751,-58 -11866,103
 Kleine Gasse: schlechtes Kopfsteinpflaster	Q3 -13272,-1168 -13287,-1231
 (Heiliger See, Ostufer): Parkweg	Q1 -11650,590 -11603,721 -11615,853
 Neuer Garten, Westufer des Heiligen Sees: Parkweg	Q1 -12265,-418 -12262,-362 -12328,-212 -12331,-131 -12321,9 -12278,134 -12156,193 -12103,315 -12143,353 -12115,409 -12068,384 -11990,790 -11950,781 -11887,837 -11856,950 -11818,993
-Neuer Garten: Parkweg	Q1 -12331,-131 -12412,-118 -12450,-34 -12557,11
-Neuer Garten: Parkweg	Q1 -11615,853 -11510,810 -11231,696
+Neuer Garten: Parkweg	Q1 -12331,-131 -12412,-118 -12450,-34 -12528,-11
+Neuer Garten: Parkweg	Q1 -11615,853 -11510,810 -11412,784 -11392,762
 Zum Pfingstberg: Parkweg	Q1 -12621,1162 -12709,1106 -12796,1037
 Russ. Kolonie: Parkweg	Q1 -13036,342 -13000,379 -12960,416 -12918,431 -12850,412 -12812,371
 Charlottenstr. (Potsdam): Kopfsteinpflaster	Q2 -12285,-1174 -12359,-1096 -12488,-999
@@ -1430,8 +1435,8 @@ Plantagenstr.: Asphalt	Q0 -9837,-1612 -9860,-1550 -9902,-1445
 Karl-Gruhl-Str.: Asphalt	Q0 -9837,-1612 -9905,-1627 -10102,-1522 -10119,-1515 -10369,-1374
 Oderstr.: Betonstraﬂe	Q1 818,-298 595,-310
 Oderstr.: Asphalt	Q0 595,-310 -425,-935 -882,-1220
-Brandenburger Str.: grobes Pflaster	Q1 -12894,-977 -13005,-1002 -13173,-1039 -13289,-1071 -13410,-1101 -13556,-1140
-Brandenburger Str.: etwas besseres Kopfsteinpflaster	Q1- -12894,-977 -12784,-956
+Brandenburger Str.: grobes Pflaster	Q1 -12883,-976 -13005,-1002 -13173,-1039 -13289,-1071 -13410,-1101 -13556,-1140
+Brandenburger Str.: etwas besseres Kopfsteinpflaster	Q1- -12883,-976 -12784,-956
 # von der Bahn aus gesehen: vvv
 Welsow - Bruchhagen: Asphalt	Q0 49075,74662 48437,74675 48262,74825
 Schˆnermark - Biesenbrow: Asphalt	Q0 51812,78462 50637,79674 50493,79806 50593,80084
@@ -1464,7 +1469,7 @@ Joliot-Curie-Str.: Asphalt	Q0 -12549,-1277 -12542,-1305 -12526,-1356 -12500,-143
 Am Kanal, Nebenstraﬂe.: Asphalt	Q0 -12542,-1305 -12657,-1338
 Am Alten Markt: Asphalt	Q0 -12666,-1311 -12657,-1338 -12614,-1471 -12583,-1552
 #: note: aus der Straﬂenbahn heraus gesehen:
-Am Alten Markt: Asphalt	Q0 -12659,-1700 -12643,-1694 -12583,-1552
+Am Alten Markt: Asphalt	Q0 -12659,-1700 -12643,-1694 -12624,-1598 -12583,-1552
 Ebr‰erstr.: Kopfsteinpflaster, evtl. OK	Q2 -12992,-1222 -12854,-1243
 Wilhelm-Staab-Str.: Kopfsteinpflaster	Q2 -13001,-1329 -12992,-1222 -12984,-1110
 Eltesterstr.: Kopfsteinpflaster	Q2 -12062,-1378 -11981,-1390
@@ -1633,7 +1638,7 @@ Barnewitz - Gortz: rauher Asphalt	Q0 -43321,16508 -42279,15770 -41751,14811 -418
 Parkring (Paretz): m‰ﬂiges Kopfsteinpflaster, Sandbanketten	Q2 -25213,6477 -25341,6386 -25444,6326 -25470,6372 -25482,6505 -25537,6616
 Menzelstr.: asphaltiert	Q0 -11246,665 -11018,348
 Bertha-von-Suttner-Str.: schlechtes Kopfsteinpflaster	Q3 -12435,-222 -12637,-292 -12779,-294
-Hebbelstr.: schlechtes Kopfsteinpflaster	Q3 -12637,-292 -12511,-75
+Hebbelstr.: schlechtes Kopfsteinpflaster	Q3 -12637,-292 -12505,-60
 Hebbelstr.: m‰ﬂiges bis schlechtes Kopfsteinpflaster	Q3+ -12571,-581 -12621,-359
 Hebbelstr.: schlechtes Kopfsteinpflaster	Q3 -12621,-359 -12637,-292
 Eisenhartstr.: asphaltiert	Q0 -12821,-417 -12779,-294 -12637,-8
@@ -1824,7 +1829,7 @@ Am Hinzenberg: Beton	Q0 -12708,-1928 -12894,-2111 -12946,-2119
 Am Hinzenberg: gute Pflasterung	Q0 -12708,-1928 -12678,-1812 -12669,-1768
 #: add_fragezeichen: die Rampe wird in Zukunft vielleicht durch eine Treppe ersetzt
 (Uferweg - Alter Markt): provisorische sandige Rampe	Q3 -12608,-1715 -12643,-1694
-Am Alten Markt: gepflastert	Q2+ -12583,-1552 -12773,-1544
+Am Alten Markt: gepflastert	Q2+ -12583,-1552 -12619,-1549 -12773,-1544
 Schwertfegerstr.: teils schlechtes Kopfsteinpflaster	Q3 -12795,-1499 -12870,-1493
 Am Neuen Markt: m‰ﬂiges bis schlechtes Kopfsteinpflaster	Q2- -12882,-1565 -12870,-1493
 Am Neuen Markt: teils schlechtes Kopfsteinpflaster	Q3 -12870,-1493 -12865,-1462 -12913,-1451
@@ -2072,6 +2077,7 @@ Hohenwutzen: Verbundsteinpflaster	Q1 58401,49550 58325,49275 58211,48945 58211,4
 Hohenwutzen: Asphalt	Q0 58211,48747 58483,48684
 Oderdeich: Asphalt	Q0 58483,48684 58476,48123 58541,47929 58726,47738 59409,47357 59708,47298 60891,47140 62693,46893 64414,46678 64616,46627 65030,46416 65167,46261 65286,46173
 (Im Franzˆsischen Quartier): glatt gepflastert	Q1 -12552,-1096 -12601,-1108
+(Im Franzˆsischen Quartier): Verbundsteinpflaster	Q1 -12601,-1108 -12670,-1120 -12657,-1183 -12741,-1197
 Am Flugplatz (Strausberg): Fahrbahn asphaltiert, Radwege mit Verbundsteinpflaster	Q0 44536,20408 44686,20822 44692,20886 44631,21051 44639,21076 44661,21139 44596,21287
 Wriezen - Oderdeich: Asphalt	Q0 60053,36267 60045,36299 60328,36467 60332,36475 61231,38167 61507,38685 61515,38700 61521,38712 62406,40358 62686,40877 62694,40892 62699,40901 63689,42714 63721,42792 63732,42820 63740,42840 64609,44963 64972,45813 65076,45984 65286,46173
 #: note: laut Aktiv Regional gut geeignet
@@ -2128,6 +2134,7 @@ Im Wustrocken - Kiefernweg: Waldweg	Q2+ 27113,-18765 27164,-18892 27212,-19171 2
 Zum Krugacker (Finowfurt): Asphalt	Q0 27822,49878 27846,50013 27850,50151
 Triftstr. (Finowfurt): Asphalt	Q0 28511,50068 28427,50113 27850,50151 27700,50159
 Bergerstr. (Eberswalde): Asphalt	Q0 37731,48228 37525,48270 37418,48290 37128,48358
+(÷konomieweg, Neuer Garten): Asphalt mit Sch‰den	Q1+ -12528,-11 -12518,13 -12537,48 -12531,75 -12475,116 -12448,246 -12373,288 -12182,816 -12154,963 -12186,1118 -12148,1245 -12139,1325 -12141,1357 -12166,1384
 ######################### User Contributions #################################
 #: by: Aaron Schaar: vvv
 Hermannswerder: guter Asphalt	Q0 -13718,-2991 -14301,-2871 -14577,-3068 -14740,-3262
@@ -2500,7 +2507,7 @@ Driftweg - entlang der Eisenbahnstrecke: wassergebundene Decke	Q1- -18908,5040 -
 Graf-von-Schwerin-Str.: Kopfsteinpflaster	Q1- -13125,1508 -13067,1506 -13084,1679 -13087,1696
 Graf-von-Schwerin-Str.: Asphalt	Q0 -13087,1696 -13087,1746 -13092,1930
 Friedrich-Klausing-Str.: Kopfsteinpflaster	Q1- -12960,1684 -12961,1746 -13087,1746
-Fritz-von-der-Lancken-Str.: Asphalt	Q0 -13141,1933 -13092,1930 -13005,1933
+Fritz-von-der-Lancken-Str.: Asphalt	Q0 -13141,1933 -13092,1930 -12859,1935 -12775,1956
 Viereckremise: Asphalt	Q0 -13337,1680 -13339,1762 -13347,1928 -13273,1924 -13205,1928 -13141,1933
 Am Golfplatz: Asphalt	Q0 -14382,3066 -13968,2568 -13929,2548 -13846,2489 -13563,2297 -13200,1980 -13205,1928 -13200,1758
 Nedlitzer Holz: Asphalt	Q0 -13270,1758 -13273,1924

@@ -702,12 +702,12 @@ Spornstr.	1 -13220,-1416 -13350,-1403
 Nuthestr.	1 -11356,-1317 -11463,-1232 -11549,-1169
 Nuthestr.: nicht passierbarer Mittelstreifen	3nocross -12045,-757 -11875,-925 -11613,-1125 -11549,-1169 -11463,-1232 -11356,-1317
 Breite Str.: nicht passierbarer Mittelstreifen	3nocross -13238,-1569 -13375,-1546 -13516,-1517
-Lange Brücke: Straßenbahntrasse	3nocross -12719,-1661 -12659,-1700 -12567,-1817
+Lange Brücke: Straßenbahntrasse	3nocross -12758,-1654 -12659,-1700 -12567,-1817
 Feuerbachstr.	1 -14140,-1390 -13879,-1445
 Rudolf-Breitscheid-Str.	2 -11056,-1726 -11142,-1675
 Geschwister-Scholl-Str.	1 -14330,-1762 -14215,-1687 -14151,-1656 -14115,-1678
 Zimmerstr.	1 -13646,-1168 -13876,-1226
-Platz der Einheit	1 -12768,-1069 -12755,-1131 -12718,-1327
+Platz der Einheit	1 -12755,-1131 -12741,-1197 -12718,-1327
 Puschkinallee	1 -13042,807 -12912,783 -12868,738 -12827,629 -12815,554 -12811,533
 Geschwister-Scholl-Str.	1 -14215,-1687 -14151,-1656 -14115,-1678
 Friedrich-Ebert-Str.: Straßenbahntrasse	3nocross -12773,-1544 -12795,-1499 -12833,-1365
@@ -718,9 +718,8 @@ Brücke mittlerweile gesperrt	2 -19183,7299 -19150,7320
 Prof.-Dr.-Helmert-Str.: Schranke	BNP:3 -7969,-1659
 (Kiezstr. - Wall am Kiez)	1 -13397,-1729 -13374,-1709
 Kiezstr.: Mittelstreifen	3nocross -13450,-1595 -13374,-1709 -13328,-1790
-Eisenhartstr.	1 -12637,-8 -12779,-294 -12821,-417
 Ruinenbergstr.	1 -13794,178 -13918,-164
-Brandenburger Str.	1s:q3 -12784,-956 -12894,-977
+Brandenburger Str.	1s:q3 -12784,-956 -12883,-976
 Nietnerstr.	2 -13855,1673 -13843,1668
 ###################################################################### 
 # elsewhere in Brandenburg
@@ -947,7 +946,7 @@ Bundesplatztunnel	3nocross 5360,7554 5359,7619 5358,7681 5358,7746 5356,7862
 Lützowplatz: unbequem passierbarer Mittelstreifen	3nocross 6880,11110 6882,11061 6873,11011 6824,10904
 Brandenburgische Str.: Tunneleinfahrt Adenauerplatz	3nocross 3852,10236 3874,10153 3906,10035 3930,9919
 Treskowallee: Straßenbahntrasse	3nocross 18809,9133 18790,9018 18770,8898
-Bundesallee: unbequem passierbarer Mittelstreifen	3nocross 5474,9961 5475,9914 5473,9869
+Bundesallee: unbequem passierbarer Mittelstreifen	3nocross 5463,9961 5464,9914 5466,9859
 Marzahner Kreuz: Linksabbiegen nicht möglich	3nocross 19694,15149 19735,15155 20260,15434
 Marzahner Kreuz: Linksabbiegen nicht möglich	3nocross 19681,15405 19582,15221 19506,15002 19466,14910 19422,14793
 Zossener Str.: unbequem passierbarer Mittelstreifen	3nocross 9865,10227 9858,10199 9837,10117
@@ -1461,10 +1460,8 @@ Brücke im Tiergarten: gesperrt	2:inwork 6406,11784 6467,11780
 #
 #: section ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #: section in Brandenburg vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
-#: last_checked: 2009-08-29
-Rückbau der Fr.-Ebert-Str. zwischen Breite Str. und Platz der Einheit, Bauarbeiten bis Ende 2009. Umfahrung über Alten Markt notwendig.	1:inwork -12659,-1700 -12719,-1661 -12755,-1585 -12773,-1544
-#: last_checked: 2009-08-29
-Rückbau der Fr.-Ebert-Str., kein Zugang zur Schwertfegerstr.	2:inwork -12870,-1493 -12795,-1499
+# XXX del #: last_checked: 2009-08-29 Rückbau der Fr.-Ebert-Str. zwischen Breite Str. und Platz der Einheit, Bauarbeiten bis Ende 2009. Umfahrung über Alten Markt notwendig.	1:inwork -12659,-1700 -12758,-1654 -12755,-1585 -12773,-1544
+# XXX del #: last_checked: 2009-08-29 Rückbau der Fr.-Ebert-Str., kein Zugang zur Schwertfegerstr.	2:inwork -12870,-1493 -12795,-1499
 #: section ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #: temporary ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #: section ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

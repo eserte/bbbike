@@ -1,14 +1,14 @@
 #: #: -*- coding: iso-8859-1 -*-
 #: title: Sonstige Behinderungen (Brandenburg und weiteres Umland)
 #:
-Brandenburger Str.: Fußgängerzone	q4 -12894,-977 -13005,-1002 -13173,-1039 -13289,-1071 -13410,-1101 -13556,-1140
+Brandenburger Str.: Fußgängerzone	q4 -12883,-976 -13005,-1002 -13173,-1039 -13289,-1071 -13410,-1101 -13556,-1140
 Neuer Garten: Schiebestrecke	q3 -11615,853 -11715,959 -11818,993 -11871,1087 -12081,1168 -12094,1273 -12139,1325
 Neuer Garten: Schiebestrecke	q3 -12166,1384 -12212,1201
-Neuer Garten: Fußgänger	q1 -11510,810 -11562,918 -11575,1031 -11537,1206 -11568,1287 -11871,1185 -11990,1214 -12124,1359 -12141,1357
+Neuer Garten: Fußgänger	q1 -11510,810 -11562,918 -11575,1031 -11537,1206 -11544,1262 -11580,1281 -11871,1185 -11990,1214 -12124,1359 -12141,1357
 Neuer Garten, Westufer des Heiligen Sees: Schiebestrecke	q3 -12265,-418 -12262,-362 -12328,-212 -12331,-131 -12321,9 -12278,134 -12156,193 -12103,315 -12143,353 -12115,409 -12068,384 -11990,790 -11950,781 -11887,837 -11856,950 -11818,993
-Neuer Garten: Schiebestrecke	q3 -12331,-131 -12412,-118 -12450,-34 -12557,11
+Neuer Garten: Schiebestrecke	q3 -12331,-131 -12412,-118 -12450,-34 -12528,-11
 Neuer Garten: Schiebestrecke	q3 -11615,853 -11510,810
-Neuer Garten: Fußgänger	q2 -11510,810 -11231,696
+Neuer Garten: Fußgänger	q2 -11510,810 -11412,784 -11392,762
 (Uferweg): Fußgänger	q1 -12204,1869 -12223,1911 -12330,1974 -12424,2034 -12462,2139 -12460,2288
 Am Waldessaum: Fußgänger, enger Weg	q2 -12825,1284 -12709,1106
 Heiliger See, Ostufer: Schiebestrecke	q3 -11650,590 -11603,721 -11615,853
@@ -45,7 +45,7 @@ Stormstr.: Spielstraße	q3 -15239,-2728 -15300,-2670
 (Ökonomieweg, Sanssouci): Fußgänger haben Vorrang	q1 -14171,-1026 -14482,-1043 -14622,-1138 -14865,-1118 -15025,-1096 -15553,-1139 -15651,-1137 -15820,-1146
 (Lennestr. - Ökonomieweg, Sanssouci): Fußgänger haben Vorrang	q1 -14614,-1342 -14856,-1223 -14865,-1118
 (Affengang, Sanssouci): Schiebestrecke	q3 -14129,-1258 -14131,-1181 -14153,-1135
-(Ökonomieweg, Neuer Garten): Fußgänger haben Vorrang	q1 -12557,11 -12479,97 -12467,215 -12373,288 -12182,816 -12186,1118 -12144,1255 -12139,1325 -12141,1357 -12166,1384
+(Ökonomieweg, Neuer Garten): Fußgänger haben Vorrang	q1 -12528,-11 -12518,13 -12537,48 -12531,75 -12475,116 -12448,246 -12373,288 -12182,816 -12154,963 -12186,1118 -12148,1245
 (Hans-Sachs-Str. - Lennéstr.): Fußgänger, eng, Rampe	q2 -14612,-1415 -14596,-1409 -14614,-1342
 (Uferweg): Fußgänger	q2 -14069,-2227 -14009,-2234 -13967,-2143 -13962,-2097 -13912,-2007 -13934,-1874 -13977,-1870
 (Am Burgfried): eng	q2 62821,117400 62723,117404 62635,117440 62650,117483
@@ -95,7 +95,7 @@ An den Gärten (Potsdam): enge Straße	q1 -13499,-85 -13432,1
 Hochlandstr.: enge Straße	q1 2054,30388 1846,30408 1689,30431
 Bergholzer Str. (Potsdam): enge Straße	q1 -11579,-2333 -11635,-2414 -11679,-2408
 Bahnhof Schönefeld - Flughafen Schönefeld: Fußgänger	q3 18175,-1570 18234,-1645 18324,-1728 18401,-1767
-(Friedrich-Klausing-Str. - Vogelweide): enger Weg	q1 -12960,1684 -12928,1686
+(Friedrich-Klausing-Str. - Vogelweide): gemeinsamer Rad- und Fußweg	q2 -12960,1684 -12928,1686
 Louis-Nathan-Allee: recht enge (einspurige) Wohnstraße	q1 -9698,-19 -10097,200
 Rotdornweg: enge Straße	q1 -9444,-1926 -9463,-2058
 Wockninstr. (Ückeritz): enge Straße	q1 51229,179229 51270,179246 51327,179272 51430,179287 51488,179349 51557,179407
@@ -106,7 +106,8 @@ Am Sportplatz - Marktplatz: eng, Fußgänger	q2 57188,111478 57226,111462 57256,11
 (Dennis-Gabor-Str. - Pappelallee): Überquerung von Tramgleisen	q3 -14534,434 -14547,388
 Wriezen, Innenstadt: Fußgängerzone, Radfahren erlaubt	q1 59806,35893 59689,35457 59740,35420
 Am Finowkanal: bei schönem Wetter reger Fußgänger- und Fahrradverkehr	q1 38162,48400 38126,48386 38104,48410 38056,48407 37961,48391 37908,48342 37856,48337 37784,48323 37565,48389 37452,48447 37217,48445 37141,48467 36973,48608 36813,48667 36586,48613 36364,48599
-Brandenburger Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; -12784,-956 -12894,-977
+(Im Französischen Quartier): eng, Fußgänger	q2 -12601,-1108 -12670,-1120 -12657,-1183 -12741,-1197
+Brandenburger Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; -12784,-956 -12883,-976
 Lützlow: Gehweg auf gleichem Niveau wie Fahrbahn: gegen die Einbahnstraßenrichtung, ggfs. schieben	q1::igndisp; 52431,94119 52422,94028 52350,93856
 Hauptstr., Ückeritz: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 50754,179461 50843,179488
 Gramzow (Dorfstr.?): gegen die Einbahnstraßenrichtung, ggfs. schieben	q1::igndisp; 49779,90206 49841,90479

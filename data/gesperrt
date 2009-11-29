@@ -562,29 +562,31 @@ Nuthestr. -> Uferweg: nicht passierbarer Mittelstreifen	3::igndisp -11549,-1169 
 Am Babelsberger Park -> Nuthestr.: nicht passierbarer Mittelstreifen	3::igndisp -11460,-1098 -11549,-1169 -11463,-1232
 Nuthestr. -> Am Babelsberger Park: nicht passierbarer Mittelstreifen	3::igndisp -11613,-1125 -11549,-1169 -11460,-1098
 nicht passierbarer Mittelstreifen	3nocross::ignrte -13238,-1569 -13375,-1546 -13516,-1517
-Straßenbahntrasse	3nocross::ignrte -12719,-1661 -12659,-1700 -12567,-1817
+Straßenbahntrasse	3nocross::ignrte -12758,-1654 -12659,-1700 -12567,-1817
 Mercure-Hotel -> Am Alten Markt: Straßenbahntrasse	3::igndisp -12681,-1726 -12659,-1700 -12643,-1694
+Mercure-Hotel -> Lange Brücke: Straßenbahntrasse	3::igndisp -12681,-1726 -12659,-1700 -12758,-1654
 Lange Brücke -> Mercure-Hotel: Straßenbahntrasse	3::igndisp -12567,-1817 -12659,-1700 -12681,-1726
 Am Alten Markt -> Mercure-Hotel: Straßenbahntrasse	3::igndisp -12643,-1694 -12659,-1700 -12681,-1726
 Am Alten Markt -> Lange Brücke: Straßenbahntrasse	3::igndisp -12643,-1694 -12659,-1700 -12567,-1817
-Lange Brücke -> Am Alten Markt: Straßenbahntrasse	3::igndisp -12719,-1661 -12659,-1700 -12643,-1694
+Lange Brücke -> Am Alten Markt: Straßenbahntrasse	3::igndisp -12758,-1654 -12659,-1700 -12643,-1694
 Feuerbachstr.	1 -14140,-1390 -13879,-1445
 Rudolf-Breitscheid-Str.	2 -11056,-1726 -11142,-1675
 Geschwister-Scholl-Str.	1 -14330,-1762 -14215,-1687 -14151,-1656 -14115,-1678
 Zimmerstr.	1 -13646,-1168 -13876,-1226
-Platz der Einheit	1 -12768,-1069 -12755,-1131 -12718,-1327
+Platz der Einheit	1 -12755,-1131 -12741,-1197 -12718,-1327
 Puschkinallee	1 -13042,807 -12912,783 -12868,738 -12827,629 -12815,554 -12811,533
 Geschwister-Scholl-Str.	1 -14215,-1687 -14151,-1656 -14115,-1678
 Straßenbahntrasse	3nocross::ignrte -12773,-1544 -12795,-1499 -12833,-1365
+Friedrich-Ebert-Str. -> Schwertfegerstr.: Straßenbahntrasse	3::igndisp -12773,-1544 -12795,-1499 -12870,-1493
+Schwertfegerstr. -> Friedrich-Ebert-Str.: Straßenbahntrasse	3::igndisp -12870,-1493 -12795,-1499 -12833,-1365
 tragen (Treppe, 75 Stufen und etliche Rampenabschnitte)	0:180:-201 -13772,-623
 Brücke mittlerweile gesperrt	2 -19183,7299 -19150,7320
 Prof.-Dr.-Helmert-Str.: Schranke	BNP:3:-93 -7969,-1659
 (Kiezstr. - Wall am Kiez)	1 -13397,-1729 -13374,-1709
 Mittelstreifen	3nocross::ignrte -13450,-1595 -13374,-1709 -13328,-1790
 Kiezstr. -> Wall am Kiez: Mittelstreifen	3::igndisp -13328,-1790 -13374,-1709 -13397,-1729
-Eisenhartstr.	1 -12637,-8 -12779,-294 -12821,-417
 Ruinenbergstr.	1 -13794,178 -13918,-164
-Brandenburger Str.	1s -12784,-956 -12894,-977
+Brandenburger Str.	1s -12784,-956 -12883,-976
 Nietnerstr.	2 -13855,1673 -13843,1668
 Bahnhofstr.	1s 26103,-11861 26300,-11864
 Bernau - Tempelfelde	1 23179,31047 23103,30923
@@ -960,11 +962,11 @@ Paderborner Str. -> Düsseldorfer Str.: Tunneleinfahrt Adenauerplatz	3::igndisp 3
 Straßenbahntrasse	3nocross::ignrte 18809,9133 18790,9018 18770,8898
 Bopparder Str. -> Treskowallee: Straßenbahntrasse	3::igndisp 18881,9002 18790,9018 18770,8898
 Treskowallee -> Bopparder Str.: Straßenbahntrasse	3::igndisp 18809,9133 18790,9018 18881,9002
-unbequem passierbarer Mittelstreifen	3nocross::ignrte 5474,9961 5475,9914 5473,9869
-Bundesallee -> Regensburger Str.: unbequem passierbarer Mittelstreifen	3::igndisp 5474,9961 5475,9914 5541,9923
-Regensburger Str. -> Pariser Str.: unbequem passierbarer Mittelstreifen	3::igndisp 5541,9923 5475,9914 5416,9928
-Pariser Str. -> Bundesallee: unbequem passierbarer Mittelstreifen	3::igndisp 5416,9928 5475,9914 5474,9961
-Pariser Str. -> Regensburger Str.: unbequem passierbarer Mittelstreifen	3::igndisp 5416,9928 5475,9914 5541,9923
+unbequem passierbarer Mittelstreifen	3nocross::ignrte 5463,9961 5464,9914 5466,9859
+Regensburger Str. -> Pariser Str.: unbequem passierbarer Mittelstreifen	3::igndisp 5541,9923 5464,9914 5416,9928
+Pariser Str. -> Regensburger Str.: unbequem passierbarer Mittelstreifen	3::igndisp 5416,9928 5464,9914 5541,9923
+Pariser Str. -> Bundesallee: unbequem passierbarer Mittelstreifen	3::igndisp 5416,9928 5464,9914 5463,9961
+Bundesallee -> Regensburger Str.: unbequem passierbarer Mittelstreifen	3::igndisp 5463,9961 5464,9914 5541,9923
 Linksabbiegen nicht möglich	3nocross::ignrte 19694,15149 19735,15155 20260,15434
 Landsberger Allee -> Landsberger Allee: Linksabbiegen nicht möglich	3::igndisp 19605,15073 19735,15155 19694,15149
 Linksabbiegen nicht möglich	3nocross::ignrte 19681,15405 19582,15221 19506,15002 19466,14910 19422,14793
@@ -1647,8 +1649,6 @@ Lina-Morgenstern-Str.: noch in Bau, gesperrt	2:inwork 15716,10303 15753,10353
 Zur Boyenstr.: Bauarbeiten	2:inwork 7925,14442 7828,14405
 Kynaststraße: Abriss und Neubau bis ca. 2010-03-01	2:inwork 14988,11130 14897,10935 14881,10864 14867,10802 14828,10628 14802,10505 14795,10473 14766,10372 14724,10297
 Brücke im Tiergarten: gesperrt	2:inwork 6406,11784 6467,11780
-Rückbau der Fr.-Ebert-Str. zwischen Breite Str. und Platz der Einheit, Bauarbeiten bis Ende 2009. Umfahrung über Alten Markt notwendig.	1:inwork -12659,-1700 -12719,-1661 -12755,-1585 -12773,-1544
-Rückbau der Fr.-Ebert-Str., kein Zugang zur Schwertfegerstr.	2:inwork -12870,-1493 -12795,-1499
 Behlertstr.	1 -12370,-354 -12500,-339 -12621,-359 -12821,-417
 tragen (Treppe)	0:30:-82 2279,5112
 tragen (Treppe)	0:15:-136 2211,5120

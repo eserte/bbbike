@@ -894,3 +894,37 @@ Frieda-Seidlitz-Str.	1 12761,16862 12613,16749 12604,16731
 Straﬂenbahntrasse	3nocross::ignrte 15918,16383 16095,16331 16260,16282
 Suermondtstr. -> Annemariestr.: Straﬂenbahntrasse	3::igndisp 16260,16282 16095,16331 16075,16249
 Annemariestr. -> Suermondtstr.: Straﬂenbahntrasse	3::igndisp 16075,16249 16095,16331 15918,16383
+Mittelstreifen	3nocross::ignrte 3587,9905 3620,9936 3706,10039
+Paulsborner Str. -> Albrecht-Achilles-Str.: Mittelstreifen	3::igndisp 3587,9905 3620,9936 3604,9961
+Albrecht-Achilles-Str. -> Paulsborner Str.: Mittelstreifen	3::igndisp 3604,9961 3620,9936 3706,10039
+Mittelstreifen	3nocross::ignrte 3620,9936 3706,10039 3747,10094 3852,10236
+Eisenzahnstr. -> Paulsborner Str.: Mittelstreifen	3::igndisp 3720,10027 3706,10039 3620,9936
+Paulsborner Str. -> Eisenzahnstr.: Mittelstreifen	3::igndisp 3747,10094 3706,10039 3720,10027
+Paulsborner Str. -> Eisenzahnstr.: Mittelstreifen	3::igndisp 3706,10039 3747,10094 3728,10125
+Eisenzahnstr. -> Paulsborner Str.: Mittelstreifen	3::igndisp 3728,10125 3747,10094 3852,10236
+Eisenhartstr.	1 -12637,-8 -12779,-294 -12821,-417
+Fuﬂg‰ngerzone	3nocross::ignrte -13556,-1140 -13410,-1101 -13289,-1071 -13173,-1039 -13005,-1002 -12883,-976
+Brandenburger Str. -> Hermann-Elflein-Str.: Fuﬂg‰ngerzone	3::igndisp -13289,-1071 -13410,-1101 -13392,-1196
+Brandenburger Str. -> Hermann-Elflein-Str.: Fuﬂg‰ngerzone	3::igndisp -13556,-1140 -13410,-1101 -13433,-991
+Hermann-Elflein-Str. -> Brandenburger Str.: Fuﬂg‰ngerzone	3::igndisp -13433,-991 -13410,-1101 -13289,-1071
+Hermann-Elflein-Str. -> Hermann-Elflein-Str.: Fuﬂg‰ngerzone	3::igndisp -13433,-991 -13410,-1101 -13392,-1196
+Hermann-Elflein-Str. -> Brandenburger Str.: Fuﬂg‰ngerzone	3::igndisp -13392,-1196 -13410,-1101 -13556,-1140
+Hermann-Elflein-Str. -> Hermann-Elflein-Str.: Fuﬂg‰ngerzone	3::igndisp -13392,-1196 -13410,-1101 -13433,-991
+Lindenstr. -> Brandenburger Str.: Fuﬂg‰ngerzone	3::igndisp -13305,-1176 -13289,-1071 -13410,-1101
+Lindenstr. -> Lindenstr.: Fuﬂg‰ngerzone	3::igndisp -13305,-1176 -13289,-1071 -13264,-952
+Brandenburger Str. -> Lindenstr.: Fuﬂg‰ngerzone	3::igndisp -13410,-1101 -13289,-1071 -13264,-952
+Brandenburger Str. -> Lindenstr.: Fuﬂg‰ngerzone	3::igndisp -13173,-1039 -13289,-1071 -13305,-1176
+Lindenstr. -> Lindenstr.: Fuﬂg‰ngerzone	3::igndisp -13264,-952 -13289,-1071 -13305,-1176
+Lindenstr. -> Brandenburger Str.: Fuﬂg‰ngerzone	3::igndisp -13264,-952 -13289,-1071 -13173,-1039
+Brandenburger Str. -> Dortustr.: Fuﬂg‰ngerzone	3::igndisp -13289,-1071 -13173,-1039 -13158,-930
+Brandenburger Str. -> Dortustr.: Fuﬂg‰ngerzone	3::igndisp -13005,-1002 -13173,-1039 -13187,-1150
+Dortustr. -> Brandenburger Str.: Fuﬂg‰ngerzone	3::igndisp -13158,-930 -13173,-1039 -13005,-1002
+Dortustr. -> Dortustr.: Fuﬂg‰ngerzone	3::igndisp -13158,-930 -13173,-1039 -13187,-1150
+Dortustr. -> Brandenburger Str.: Fuﬂg‰ngerzone	3::igndisp -13187,-1150 -13173,-1039 -13289,-1071
+Dortustr. -> Dortustr.: Fuﬂg‰ngerzone	3::igndisp -13187,-1150 -13173,-1039 -13158,-930
+Brandenburger Str. -> J‰gerstr.: Fuﬂg‰ngerzone	3::igndisp -13173,-1039 -13005,-1002 -13025,-901
+J‰gerstr. -> Brandenburger Str.: Fuﬂg‰ngerzone	3::igndisp -12984,-1110 -13005,-1002 -13173,-1039
+J‰gerstr. -> J‰gerstr.: Fuﬂg‰ngerzone	3::igndisp -12984,-1110 -13005,-1002 -13025,-901
+Brandenburger Str. -> J‰gerstr.: Fuﬂg‰ngerzone	3::igndisp -12883,-976 -13005,-1002 -12984,-1110
+J‰gerstr. -> J‰gerstr.: Fuﬂg‰ngerzone	3::igndisp -13025,-901 -13005,-1002 -12984,-1110
+J‰gerstr. -> Brandenburger Str.: Fuﬂg‰ngerzone	3::igndisp -13025,-901 -13005,-1002 -12883,-976

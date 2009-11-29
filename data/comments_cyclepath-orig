@@ -25,14 +25,16 @@ Rudolf-Breitscheid-Str.: Suggestivstreifen	RW -10446,-1947 -10559,-1901 -10678,-
 B101: Zweirichtungsradweg auf der östlichen Seite	RW 5943,-2117 5836,-2309 5627,-2671 5394,-3053
 Potsdam - Teltow: enger Zweirichtungsradweg auf der nördlichen Seite	RW8;RW2 -5736,-3629 -5156,-3192 -4885,-3087 -4456,-2968 -3950,-2743 -3650,-2609
 Lichterfelder Allee, Teltow: Radweg vorhanden	RW 3450,543 3417,524 3112,331 2947,220 2459,-109 2331,-228 2215,-328 1974,-440 1696,-571 1453,-746
-Lange Brücke, Friedrich-Ebert-Str.: beidseitiger Radweg vorhanden, mäßige Qualität	RW2;RW2 -12431,-2096 -12493,-1896 -12567,-1817 -12659,-1700 -12719,-1661 -12755,-1585 -12773,-1544 -12795,-1499 -12833,-1365 -12839,-1342
-Breite Str., Potsdam: Radweg vorhanden	RW2;RW2 -12719,-1661 -12940,-1625 -13238,-1569 -13375,-1546 -13516,-1517 -13764,-1460 -13879,-1445
+Lange Brücke, Friedrich-Ebert-Str.: beidseitiger Radweg vorhanden, mäßige Qualität	RW2;RW2 -12431,-2096 -12493,-1896 -12567,-1817 -12659,-1700 -12758,-1654 -12755,-1585 -12773,-1544 -12795,-1499 -12833,-1365 -12839,-1342
+Breite Str., Potsdam: Radweg vorhanden	RW2;RW2 -12758,-1654 -12940,-1625 -13238,-1569 -13375,-1546 -13516,-1517 -13764,-1460 -13879,-1445
 Hreinrich-Mann-Allee: Radweg	RW -12431,-2096 -12318,-2192
 Brauhausberg: Radstreifen	RW4;RW4 -12318,-2192 -12362,-2280 -12465,-2601
 Berliner Str. (B1): Radweg	RW2; -12317,-1212 -12285,-1174
 Berliner Str. (B1): beidseitiger Radweg	RW2;RW2 -12285,-1174 -12231,-1078 -12148,-934 -12045,-757
-Berliner Str. (B1): Radweg	RW; -10826,469 -11018,348 -11122,271 -11307,133 -11390,72 -11494,-4 -11584,-66 -11669,-138 -11723,-220 -11877,-478 -11935,-574 -12045,-757
+Berliner Str. (B1): Radweg	RW2; -10826,469 -11018,348
+Berliner Str. (B1): Radweg	RW; -11018,348 -11122,271 -11307,133 -11390,72 -11494,-4 -11584,-66 -11669,-138 -11723,-220 -11877,-478 -11935,-574 -12045,-757
 Berliner Str. (B1): teilweise parallele Nebenstraße, teilweise Radweg	RW1; -12045,-757 -11935,-574 -11877,-478 -11723,-220 -11669,-138 -11584,-66 -11494,-4 -11390,72 -11307,133 -11122,271 -11018,348 -10826,469
+	RW6;RW6 -11392,762 -11231,696 -11106,644 -10857,487
 #: XXX Radwegführung nach Verschwenkung der Straßenbahn begutachten (evtl. jetzt Zweirichtungsradweg)
 Humboldtbrücke: Radweg vorhanden und wegen Kfz-Straße zwingend benutzungspflichtig	RW2;RW2 -12045,-757 -11875,-925 -11613,-1125
 Nuthestr.: Radweg vorhanden und wegen Kfz-Straße zwingend benutzungspflichtig	RW2; -11549,-1169 -11613,-1125
@@ -148,7 +150,7 @@ Zehlendorfer Damm: Radweg	RW -1436,-887 -1378,-1022 -1348,-1098 -1503,-1328 -153
 Geschwister-Scholl-Str.: Radweg auf Gehweg	RW2;RW2 -14909,-1818 -14733,-1812 -14612,-1809
 Thomas-Müntzer-Damm: Radweg (Verbundsteinpflaster)	RW -840,-185 -775,-304 -551,-731 -502,-803
 Am Kanal: Radspur	RW4;RW4 -12317,-1212 -12549,-1277 -12666,-1311
-Am Kanal: Radspur	RW4; -12666,-1311 -12718,-1327
+Am Kanal: Radspur	RW4; -12666,-1311 -12674,-1313 -12718,-1327
 Am Kanal: Radweg	RW2; -12718,-1327 -12839,-1342
 Am Kanal: Radweg	RW; -12833,-1365 -12718,-1327
 #: unverified_by: http://www.ruppin.de/rheinsberg/freizeit/sport/radwege.html vvv

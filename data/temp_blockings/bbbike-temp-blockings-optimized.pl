@@ -1003,11 +1003,11 @@ Straße am Wald, Innovationspark Köpenick: Privatstraße, nachts und am Wochenende
          'id' => 1809,
          'data' => '	2::temp -11615,853 -11715,959 -11818,993 -11871,1087 -12081,1168 -12094,1273 -12139,1325
 	2::temp -11650,590 -11603,721 -11615,853
-	2::temp -11510,810 -11562,918 -11575,1031 -11537,1206 -11568,1287 -11871,1185 -11990,1214 -12124,1359 -12141,1357
-	2::temp -11615,853 -11510,810 -11231,696
-(Ökonomieweg, Neuer Garten): Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet 	2::temp -12557,11 -12479,97 -12467,215 -12373,288 -12182,816 -12186,1118 -12144,1255 -12139,1325 -12141,1357 -12166,1384
+	2::temp -11510,810 -11562,918 -11575,1031 -11537,1206 -11544,1262 -11580,1281 -11871,1185 -11990,1214 -12124,1359 -12141,1357
+	2::temp -11615,853 -11510,810 -11412,784 -11392,762 -11231,696
+(Ökonomieweg, Neuer Garten): Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet 	2::temp -12528,-11 -12518,13 -12537,48 -12531,75 -12475,116 -12448,246 -12373,288 -12182,816 -12154,963 -12186,1118 -12148,1245 -12139,1325 -12141,1357 -12166,1384
 Neuer Garten, Westufer des Heiligen Sees: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet 	2::temp -12265,-418 -12262,-362 -12328,-212 -12331,-131 -12321,9 -12278,134 -12156,193 -12103,315 -12143,353 -12115,409 -12068,384 -11990,790 -11950,781 -11887,837 -11856,950 -11818,993
-Neuer Garten (am Portierhaus) - Weinmeisterstr.: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet 	2::temp -12331,-131 -12412,-118 -12450,-34 -12557,11
+Neuer Garten (am Portierhaus) - Weinmeisterstr.: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet 	2::temp -12331,-131 -12412,-118 -12450,-34 -12528,-11
 ',
          'type' => 'gesperrt'
        },
@@ -1801,15 +1801,6 @@ userdel	2::temp 9852,12409 9869,12297 9890,12161
          'data' => 'userdel	2::inwork 29918,-54610 30409,-55818
 ',
          'type' => 'gesperrt'
-       },
-       {
-         'until' => 1259449200,
-         'text' => 'B 101 Zinnaer Str. OD Luckenwalde, zw. Heidestr. u. R.-Breitscheid-Str. Straßenbau Vollsperrung 26.11.2009-28.11.2009 ',
-         'from' => 1259103600,
-         'id' => 1996,
-         'data' => 'userdel	q4::inwork -4630,-36012 -4603,-35730
-',
-         'type' => 'handicap'
        }
      
 );

@@ -116,7 +116,7 @@ Am Volkspark: zum Überqueren der Bundesallee Ampel an der Hildegarstr. (links) b
 Bundesallee - Am Volkspark: bereits an der Durlacher Str. die Straßenseite wechseln	PI; 5421,8337 5444,8406 5320,8456
 #: XXX_prog: falls obiges implementiert mit routing_helper wird, braucht man hier vielleicht nichts zu machen --- oder doch, je nach Labelling?
 Am Volkspark - Bundesallee: zunächst den linken Gehweg der Bundesallee benutzen	CP; 5669,8207 5444,8406 5421,8337
-Lietzenburger Str. - Rankestr.: bereits an der Ampel Bundesallee/Lietzenburger Str. auf den linken Gehweg wechseln	PI; 5468,10442 5529,10453 5578,10529 5636,10626
+Lietzenburger Str. - Rankestr.: bereits an der Ampel Bundesallee/Lietzenburger Str. auf den linken Gehweg wechseln	PI; 5458,10443 5529,10453 5578,10529 5636,10626
 weiter links auf Uferweg	CP; 6334,14756 5991,14832 5937,14824
 An der Wuhlheide - Wuhlewanderweg: bereits an der Ampel Köpenicker Allee die Straßenseite wechseln (Straßenbahn auf Mittelstreifen)	PI; 21303,5826 21365,5832 21470,5809 21576,5733 21603,5698 21608,5690 21744,5804
 #: XXX_prog: RL:ja, GPS:nein
@@ -158,8 +158,8 @@ Stralauer Allee - Warschauer Platz: bereits an der Kreuzung Am Oberbaum/Stralaue
 Am Schinkelplatz: Nicht ausgeschildert, Fortsetzung der Unterwasserstr.	CP2; 10084,12228 9996,12401
 #: XXX_indoor: hmmm, why not use Steinmetzstr. at all for such routes? Maybe use routing_helper with some penalty instead? Ah, it would minimize Kopfsteinpflaster...
 Bereits an der Ampel Steinmetzstr. die Straßenseite wechseln	PI; 7702,10146 7813,10112 7850,10351
-Regensburger Str. - Bundesallee: zunächst auf der linken Gehwegseite bis zur Kreuzung Nachodstr. fahren und dort die Straßenseite wechseln	CP; 5541,9923 5475,9914 5473,9869
-Bundesallee - Pariser Str.: an der Kreuzung Bundesallee/Nachodstr. auf die linken Gehwegseite der Bundesallee wechseln	PI; 5473,9869 5475,9914 5416,9928
+Regensburger Str. - Bundesallee: zunächst auf der linken Gehwegseite bis zur Kreuzung Nachodstr. fahren und dort die Straßenseite wechseln	CP; 5541,9923 5464,9914 5466,9859
+Bundesallee - Pariser Str.: an der Kreuzung Bundesallee/Nachodstr. auf die linken Gehwegseite der Bundesallee wechseln	PI; 5466,9859 5464,9914 5416,9928
 Mehringbrücke - Ruhlsdorfer Str.: den linken Gehweg benutzen	CP2; 9416,10196 9368,10211
 Buchholzer Str. - Schönhauser Allee: zunächst auf der linken Geh/Radwegseite der Schönhauser Allee fahren, an der Kreuzung Gneiststr. die Straßenseite wechseln	CP; 11055,15504 10917,15525 10902,15422
 #: XXX_prog: RL:ja, GPS:nein
@@ -260,7 +260,7 @@ Falkenberger Chaussee: Zufahrt zur Wartenberger Str.	CS; 17400,17790 17440,17746
 Langhansstr. - Allee der Kosmonauten: Zufahrt zum Parkweg schwierig einzusehen, einfach geradeaus fahren	CP2; 19818,14064 19823,14045
 In den Gärten - Marienfelder Chaussee: 100m auf der linken Straßenseite vorfahren	CP; 11713,1622 11756,1519 11865,1564 12207,1704
 Marienfelder Chaussee - In den Gärten: bereits am Quarzweg die Straßenseite wechseln	PI; 11475,1404 11756,1519 11713,1622
-Lange Brücke - Freundschaftsinsel: wegen der Tramtrasse bereits vor der Langen Brücke die Straßenseite wechseln	PI; -12719,-1661 -12659,-1700 -12567,-1817 -12396,-1681
+Lange Brücke - Freundschaftsinsel: wegen der Tramtrasse bereits vor der Langen Brücke die Straßenseite wechseln	PI; -12758,-1654 -12659,-1700 -12567,-1817 -12396,-1681
 Freundschaftsinsel - Potsdam Hbf: wegen der Tramtrasse zunächst auf dem Gehweg bis zur nächsten Ampel vorfahren	CP; -12396,-1681 -12567,-1817 -12493,-1896
 Zum Barnimer Dörferweg: am Waidmannsluster Damm auf den Gehweg fahren, nicht auf die Radspur fahren (wegen eines nicht überwindbaren Geländers)	PI; 1858,20740 1828,20780 1799,20815 1716,20915 1819,21116
 Barnimer Dörferweg - Karolinenstr.: wegen des Geländers zunächst auf dem Gehweg fahren	CP; 1819,21116 1716,20915 1799,20815 1828,20780 1858,20740
@@ -301,7 +301,7 @@ Anzengruberstr. - Sonnenallee/Finowstr.: Sonnenallee links an der Finowstr. über
 Sonnenallee - Anzengruberstr.: Sonnenallee schon an Innstr. oder erst an der Finowstr. überqueren	PI; 13107,8343 13042,8395 12865,8346
 Rudower Chaussee - Max-Born-Str.: Rudower Chaussee kann über Fußgängerfurt gequert werden	CP; 19071,2746 19111,2777 19064,2867
 Max-Born-Str. - Rudower Chaussee: Rudower Chaussee kann über Fußgängerfurt gequert werden	CP; 19064,2867 19111,2777 19206,2848
-Kulmer Str./Goebenstr.: Fußgängerampel an der linken Seite zum Überqueren der Goebenstr. benutzen	CP; 7771,9479 7829,9723 7848,9814 7866,9902
+Kulmer Str./Goebenstr.: Fußgängerampel an der linken Seite zum Überqueren der Goebenstr. benutzen	CP; 7771,9479 7829,9723 7848,9814
 zur Kietzer Str.: gegenüber der Mauritiuskirchstr. in die Grünanlage einfahren	CP2; 15339,11912 15298,11892
 Zufahrt zum Gartenbauamt	CP2; 9150,9152 9080,9163
 Ellwanger Str. - Attilastr.: Attilastr. in Höhe der Neckarsulmer Str. überqueren	CP; 7382,4503 7450,4397 7482,4416 7601,4485
@@ -429,3 +429,4 @@ Moosrosenstr. - Gradestr.: auf dem linken Gehweg bis Höhe Busbahnhof fahren und 
 Rudower Chaussee - Karl-Otto-Reinsch-Str.: bereits an der Ampel Am Studio die Straßenseite wechseln	PI; 19581,3184 19603,3207 19524,3286
 Gustav-Adolf-Str. - Prenzlauer Promenade: auf dem linken Gehweg bis zur Ampel fahren	CP; 12182,16322 12097,16263 12091,16209
 Caligariplatz - Prenzlauer Promenade: auf dem linken Gehweg bis zur Ampel fahren	CP; 12121,16317 12097,16263 12091,16209
+Am Alten Markt: Richtung TFH/Friedrich-Ebert-Str. abbiegen	CP; -12624,-1598 -12619,-1549 -12773,-1544

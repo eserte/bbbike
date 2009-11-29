@@ -894,7 +894,7 @@ Miraustr.: guter Asphalt	Q0 3820,19688 4014,19433
 Miraustr.: sehr schlechtes Kopfsteinpflaster	Q3 4014,19433 4170,19079 4195,19043
 #: note ^^^
 #: by: ^^^
-Schaperstr.: Asphalt	Q0 5706,10216 5597,10299 5471,10331
+Schaperstr.: Asphalt	Q0 5706,10216 5597,10299 5450,10338
 Bleibtreustr.: Kopfsteinpflaster	Q2 4728,11195 4722,11030 4714,10950 4701,10837 4685,10689
 Wilhelmsaue: Kopfsteinpflaster	Q2 5164,8740 5206,8731 5228,8729 5346,8720 5510,8709
 Werderstr.: Kopfsteinpflaster	Q2 8955,5549 8974,5708
@@ -1010,7 +1010,7 @@ Pohlstr.: Kopfsteinpflaster	Q2 7932,10475 7883,10483 7849,10488
 Schwerinstr.: Kopfsteinpflaster, OK, in der Mitte Asphalt	Q1 7384,10127 7201,10180 7060,10221
 Damaschkestr.: Kopfsteinpflaster	Q2 3132,10499 3013,10553
 Mierendorffstr.: Kopfsteinpflaster, Radwege mäßig bis OK	Q1 3337,12855 3542,13063 3559,13177
-Albrecht-Achilles-Str.: wechselnd Asphalt und gutes Kopfsteinpflaster	Q1 3618,10283 3597,9907
+Albrecht-Achilles-Str.: wechselnd Asphalt und gutes Kopfsteinpflaster	Q1 3618,10283 3604,9961 3620,9936
 (Stresemannstr. - Wilhelmstr.): Parkweg, etwas holprig	Q2+ 9210,10614 9367,10641
 (Stresemannstr. - Wilhelmstr.): Parkweg	Q1 9250,10563 9370,10615
 #: by Olaf Schulz vvv
@@ -1400,7 +1400,7 @@ Sixtusgarten: Kopfsteinpflaster	Q2 8988,8990 9091,9054
 Ottomar-Geschke-Str.: Kopfsteinpflaster	Q2 21332,4655 21376,4748
 Ottomar-Geschke-Str.: Asphalt	Q0 21376,4748 21454,4928
 Ottomar-Geschke-Str.: Kopfsteinpflaster	Q2 21454,4928 21498,5023
-Wallotstr.: Asphalt	Q0 2056,9446 1965,9431 1851,9332 1795,9325 1757,9271
+Wallotstr.: Asphalt	Q0 2065,9459 1997,9499 1933,9476 1873,9388 1783,9368 1757,9282
 Gartenufer: Parkweg	Q1 5780,11622 6239,11399 6342,11353 6346,11326
 (südliches Spreeufer): teils gutes Kopfsteinpflaster, teils Parkweg, teils Asphalt	Q1 5579,12231 5737,12281 5804,12362 5962,12553 6029,12693 6078,12848 6123,12887 6182,12900
 Elisabeth-Abegg-Str.: Kopfsteinpflaster mit großen Fugen	Q3 7936,12906 7806,12759
@@ -2891,6 +2891,9 @@ Chamierstr.: Asphalt	Q0- 15840,15806 15801,15706
 Seeweg: Kleinkopfsteinpflaster	Q1 14499,16341 14480,16449 14510,16549 14521,16599
 Seeweg: wassergebundene Decke, Kleinkopfsteinpflaster	Q1 14510,16549 14581,16529
 Gustav-Adolf-Str.: Asphalt, mit einigen Schäden	Q0- 12097,16263 12182,16322 12285,16392 12409,16475 12564,16591 12670,16675
+Hilde-Ephraim-Str.: Asphalt	Q0 1312,9220 1261,9285 1662,9642 1709,9663 1718,9653 1756,9610
+(Hilde-Ephraim-Str. - Trabener Str.): Verbundsteinpflaster	Q0- 1718,9653 1920,9824 1941,9814
+Kyllmannstr. (Wannsee): Asphalt	Q0 -6248,1607 -6179,1570 -6147,1467 -6111,1396 -6065,1222
 ######################### User Contributions #################################
 #: by: Dominik Seelow vvv
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
@@ -3377,7 +3380,7 @@ Moselstr. (Friedenau): Asphalt	Q0 5684,6942 5824,6974
 Grenzweg (Lichtenrade): mäßiger Asphalt	Q1 9798,-1288 9738,-1290 9721,-1290 9603,-1293 9456,-1303
 Mechthildstr.: mäßiger Asphalt/Kopfsteinpflaster	Q2 23385,8217 23420,8265 23542,8429 23627,8543 23661,8597 23797,8814
 Am Faulen See: guter Asphalt	Q0 16515,16207 16546,16308 16623,16554 16639,16671 16617,16796 16550,16914 16487,17023
-Badeweg: guter Belag	Q0 -4171,2659 -4292,2762
+Badeweg: guter Belag	Q0 -4188,2674 -4292,2762
 Badeweg: guter Belag	Q0 -4292,2762 -4471,2917
 Bröndbystr.: Asphalt	Q0 3500,1587 3273,1302 3312,1241 3384,1297
 Kurpromenade: mäßiger Asphalt	Q1 -8917,5986 -8864,6289 -8862,6375 -8860,6439 -8859,6540 -8868,6798 -8804,6818 -8732,6840 -8656,6864 -8567,6893
@@ -8879,7 +8882,7 @@ Waldemarstr. (Niederschönhausen): Asphalt	Q0 10461,20403 10409,20592 10380,20720
 #: by: ^^^
 #: by: Carmencha:
 #: note: "enge Straße", aber ohne schlechtere Kategorisierung
-Wernerstr. (Wannsee): guter Asphalt	Q0 -5944,1004 -6006,1231
+Wernerstr. (Wannsee): guter Asphalt	Q0 -5944,1004 -6006,1234
 #: by: Micha (michich)
 Estersstr.: schlechtes Kopfsteinpflaster	Q3 8152,2059 8233,2231
 #: by: Stefan Byczynski:
@@ -10168,7 +10171,7 @@ Egerstr.: Kopfsteinpflaster	Q2 2309,8058 2357,8055
 Karlsbader Str.: Kopfsteinpflaster	Q2 2209,7848 2215,8066
 Karlsbader Str.: Asphalt	Q0 2215,8066 2219,8245 2223,8500
 Plöner Str.: Asphalt	Q0 2309,8058 2310,8160 2315,8431
-Gneiststr. (Grunewald): Asphalt	Q0 1408,9166 1580,9307
+Gneiststr. (Grunewald): Asphalt	Q0 1408,9166 1586,9316
 Niersteiner Str.: Asphalt	Q0 1666,9418 1562,9436
 Hasensprung (Grunewald): Kleinpflaster	Q1 1476,8831 1456,8856 1407,8931 1386,8959 1366,8986 1330,9038 1316,9067
 Herbertstr. (Grunewald): Asphalt	Q0 2130,9260 2056,9446
