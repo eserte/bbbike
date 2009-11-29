@@ -18,9 +18,18 @@ use strict;
 use vars qw($VERSION);
 $VERSION = sprintf("%d.%02d", q$Revision: 1.15 $ =~ /(\d+)\.(\d+)/);
 
-use vars qw($osm_layer $osm_layer_area $osm_layer_landuse $osm_layer_cover
-	    %images @cover_grids %seen_grids $last_osm_file $defer_restacking
+use vars qw(%osm_layer %images @cover_grids %seen_grids $last_osm_file $defer_restacking
 	  );
+
+BEGIN {
+    for (qw(item area landuse cover)) {
+	$osm_layer{$_} = undef;
+    }
+    if (eval { require Hash::Util; 1 }) {
+	Hash::Util::lock_keys(\%osm_layer);
+    }
+}
+
 
 use Cwd qw(realpath);
 use File::Basename qw(dirname basename);
@@ -284,33 +293,36 @@ sub plot_osm_files {
     my $c_bg = $c->cget('-background');
     my $map_conv = _get_map_conv();
 
-    if (!$osm_layer) {
-	$osm_layer = main::next_free_layer();
-	$osm_layer_area = $osm_layer . "-bg";
-	$osm_layer_landuse = $osm_layer . "-landuse";
-	$osm_layer_cover = $osm_layer . "-cover";
-	for my $abk ($osm_layer, $osm_layer_area, $osm_layer_cover, $osm_layer_landuse) {
+    if (!$osm_layer{item}) {
+	$osm_layer{item} = main::next_free_layer();
+	$osm_layer{area} = $osm_layer{item} . "-bg";
+	$osm_layer{landuse} = $osm_layer{item} . "-landuse";
+	$osm_layer{cover} = $osm_layer{item} . "-cover";
+	for my $abk (values %osm_layer) {
 	    $main::str_obj{$abk} = Strassen::Dummy->new; # XXX just for the layer editor, not useful for anything else
 	}
-	$main::layer_name{$osm_layer} = "OpenStreetMap (fg)";
-	$main::layer_name{$osm_layer_area} = "OpenStreetMap (bg)";
-	$main::layer_name{$osm_layer_cover} = "OpenStreetMap (cover)";
-	$main::layer_name{$osm_layer_landuse} = "OpenStreetMap (landuse)";
-	$main::layer_icon{$osm_layer} = $images{OsmLogo};
-	$main::layer_icon{$osm_layer_area} = $images{OsmLogo};
-	$main::layer_icon{$osm_layer_cover} = $images{OsmLogo};
-	$main::layer_icon{$osm_layer_landuse} = $images{OsmLogo};
-	main::add_to_stack($osm_layer, "below", "pp");
-	main::add_to_stack($osm_layer_area, "below", "f");
-	main::add_to_stack($osm_layer_landuse, "lowermost", undef);
-	main::add_to_stack($osm_layer_cover, "above", $osm_layer_landuse);
-	main::std_str_binding($osm_layer);
-	main::std_str_binding($osm_layer_area);
-	main::std_str_binding($osm_layer_landuse);
+	$main::layer_name{$osm_layer{item}} = "OpenStreetMap (fg)";
+	$main::layer_name{$osm_layer{area}} = "OpenStreetMap (bg)";
+	$main::layer_name{$osm_layer{cover}} = "OpenStreetMap (cover)";
+	$main::layer_name{$osm_layer{landuse}} = "OpenStreetMap (landuse)";
+
+	$main::layer_icon{$osm_layer{item}} = $images{OsmLogo};
+	$main::layer_icon{$osm_layer{area}} = $images{OsmLogo};
+	$main::layer_icon{$osm_layer{cover}} = $images{OsmLogo};
+	$main::layer_icon{$osm_layer{landuse}} = $images{OsmLogo};
+
+	main::add_to_stack($osm_layer{item}, "below", "pp");
+	main::add_to_stack($osm_layer{area}, "below", "f");
+	main::add_to_stack($osm_layer{landuse}, "lowermost", undef);
+	main::add_to_stack($osm_layer{cover}, "above", $osm_layer{landuse});
+
+	main::std_str_binding($osm_layer{item});
+	main::std_str_binding($osm_layer{area});
+	main::std_str_binding($osm_layer{landuse});
     }
 
-    if (!$main::str_draw{$osm_layer}) { # XXX just check this one, maybe not enough!
-	for my $abk ($osm_layer, $osm_layer_area, $osm_layer_cover, $osm_layer_landuse) {
+    if (!$main::str_draw{$osm_layer{item}}) { # XXX just check this one, maybe not enough!
+	for my $abk (values %osm_layer) {
 	    $main::str_draw{$abk} = 1; # XXX also for layer editor
 	}
 	Hooks::get_hooks("after_new_layer")->execute;
@@ -364,7 +376,7 @@ sub plot_osm_files {
 			$photo = $ICON_NAME_TO_PHOTO{$photo_file};
 		    }
 		}
-		my @tags = ($osm_layer, $tag{name}||$tag{amenity}, $uninteresting_tags, 'osm', 'osm-node-' . $id);
+		my @tags = ($osm_layer{item}, $tag{name}||$tag{amenity}, $uninteresting_tags, 'osm', 'osm-node-' . $id);
 		if ($photo) {
 		    $c->createImage($cx,$cy,
 				    -image => $photo,
@@ -475,7 +487,7 @@ sub plot_osm_files {
 				      -fill => $light_color,
 				      -outline => $dark_color,
 				      %item_args,
-				      -tags => [$tag{landuse} ? $osm_layer_landuse : $osm_layer_area, @tags],
+				      -tags => [$tag{landuse} ? $osm_layer{landuse} : $osm_layer{area}, @tags],
 				     );
 		} else {
 		    my $color = '#c05000';
@@ -489,7 +501,7 @@ sub plot_osm_files {
 				   -width => 2,
 				   %item_args,
 				   %line_item_args,
-				   -tags => [$osm_layer, @tags],
+				   -tags => [$osm_layer{item}, @tags],
 				  );
 		}
 	    }
@@ -517,7 +529,7 @@ sub _plot_osm_cover_no_restack {
 			-stipple => '@'.$FindBin::RealBin.'/images/stiplite.xbm',
 			-fill => '#ffdead',
 			-state => 'disabled', # no balloon interaction
-			-tags => ['osm', $osm_layer_cover],
+			-tags => ['osm', $osm_layer{cover}],
 		       );
 }
 
@@ -539,9 +551,12 @@ sub plot_osm_cover_by_files {
 
 sub delete_osm_layer {
     $main::c->delete("osm");
-    for my $abk ($osm_layer, $osm_layer_area, $osm_layer_cover, $osm_layer_landuse) {
+    for my $abk (values %osm_layer) {
 	$main::str_draw{$abk} = 0; # XXX also for layer editor
 	delete $main::str_obj{$abk};
+    }
+    for my $key (keys %osm_layer) {
+	$osm_layer{$key} = undef;
     }
     Hooks::get_hooks("after_delete_layer")->execute;
     @cover_grids = ();
@@ -568,7 +583,7 @@ sub _sort_cover_grids {
 }
 
 sub _draw_cover_grids {
-    $main::c->delete($osm_layer_cover);
+    $main::c->delete($osm_layer{cover});
     return if !@cover_grids;
     _sort_cover_grids();
     use List::Util qw(reduce);
@@ -607,7 +622,7 @@ sub _draw_cover_grids {
 			    -stipple => '@'.$FindBin::RealBin.'/images/stiplite.xbm',
 			    -fill => 'red',
 			    -state => 'disabled',
-			    -tags => ['osm', $osm_layer_cover],
+			    -tags => ['osm', $osm_layer{cover}],
 			   );
     if (0) {
 	# a debugging helper
@@ -615,7 +630,7 @@ sub _draw_cover_grids {
 			     -fill => "darkred",
 			     -dash => '.   ',
 			     -state => 'disabled',
-			     -tags => ['osm', $osm_layer_cover],
+			     -tags => ['osm', $osm_layer{cover}],
 			    );
     }
 }
