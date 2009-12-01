@@ -770,7 +770,7 @@ sub parse_data {
 	$linenr++;
 	next if /^\#/;
 	next if /^\s*$/;
-	if (/([+-]?\d+),([+-]?\d+)\s*([+-]?[\d\.]+),([+-]?[\d\.]+)/) {
+	if (/([+-]?[\d\.]+),([+-]?[\d\.]+)\s*([+-]?[\d\.]+),([+-]?[\d\.]+)/) {
 	    push @map_data, [$3,$1,$4,$2,$linenr];
 	    #XXX combine next three cases...
 	} elsif (/([NS]\d+\s\d+\s[\d\.]+)\s+
