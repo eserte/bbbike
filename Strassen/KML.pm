@@ -55,6 +55,7 @@ sub kml2bbd {
 
 sub _kmldoc2bbd {
     my($self, $doc, %args) = @_;
+    my $xy2longlat = \&xy2longlat;
     my $root = $doc->documentElement;
     if ($root->can("setNamespaceDeclURI") && !$TEST_SET_NAMESPACE_DECL_URI_HACK) {
 	$root->setNamespaceDeclURI(undef, undef);
@@ -114,6 +115,12 @@ sub longlat2xy {
     ($x, $y);
 }
 
+sub longlat2longlat {
+    my($c) = @_;
+    my($lon, $lat) = split /,/, $c;
+    ($lon, $lat);
+}
+
 sub xy2longlat {
     my($c) = @_;
     my($lon, $lat) = $Karte::Polar::obj->trim_accuracy($Karte::Polar::obj->standard2map(split /,/, $c));
@@ -131,6 +138,12 @@ sub bbd2kml {
     my($self, %args) = @_;
     my $document_name = delete $args{documentname} || 'BBBike-Route';
     my $document_description = delete $args{documentdescription} || "";
+
+    my $xy2longlat = \&xy2longlat;
+    my $map = $self->get_global_directive("map");
+    if ($map && $map eq 'polar') {
+	$xy2longlat = \&longlat2longlat;
+    }
 
     my @routes;
     my %colors;
@@ -155,7 +168,7 @@ sub bbd2kml {
 
 	push @routes, { name => $r->[Strassen::NAME],
 			coords => join("\n", map {
-			    join(",", xy2longlat($_))
+			    join(",", $xy2longlat->($_))
 			} @c),
 			color => $color,
 			dist => $dist,

@@ -1,0 +1,24 @@
+#!/usr/bin/perl -w
+
+use strict;
+
+use FindBin;
+use lib ("$FindBin::RealBin/..",
+	 "$FindBin::RealBin/../lib",
+	);
+use Getopt::Long;
+use Strassen::Core;
+use Strassen::KML;
+
+sub usage {
+    die <<EOF;
+usage: $0  bbdfile
+EOF
+}
+
+GetOptions() or usage();
+
+my $file = shift || usage();
+my $s = Strassen->new($file);
+my $s_kml = Strassen::KML->new($s);
+print $s_kml->bbd2kml;
