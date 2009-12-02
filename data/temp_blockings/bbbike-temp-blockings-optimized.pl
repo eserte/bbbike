@@ -1334,15 +1334,7 @@ d Breitenbachstr. Baustelle, Fahrtrichtung gesperrt (bis Anfang 05/2010)',
        undef,
        undef,
        undef,
-       {
-         'until' => 1259622000,
-         'text' => 'L 792 Dorfstraße OD Blankenfelde, zw. Zossener Damm u. H.-Heine-Str. Straßenausbau Vollsperrung 09.10.2009-30.11.2009 ',
-         'from' => 1254952800,
-         'id' => 1870,
-         'data' => 'userdel	q4::inwork 10448,-7582 10115,-8276
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => 1275343200,
@@ -1651,16 +1643,7 @@ userdel	2::inwork 14835,10272 14888,10385
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'source_id' => 'IM_014503',
-         'until' => 1259708399,
-         'text' => 'Friedrichstr. (Mitte) Richtung Wedding zwischen Dorotheenstr. und Georgenstr. Baustelle, Fahrtrichtung gesperrt (bis Anfang 12.2009)',
-         'from' => 1257194861,
-         'id' => 1962,
-         'data' => 'userdel	q4::inwork; 9330,12529 9314,12652
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1688,15 +1671,7 @@ userdel	2::inwork 14835,10272 14888,10385
        undef,
        undef,
        undef,
-       {
-         'until' => 1259535600,
-         'text' => 'L 060 Ringstr. OD Uebigau, Bereich Markt Weihnachtsmarkt Vollsperrung 28.11.2009-29.11.2009 ',
-         'from' => 1259276400,
-         'id' => 1974,
-         'data' => 'userdel	q4::temp 5358,-90502 5798,-90075
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => 1260313200,
@@ -1766,25 +1741,8 @@ userdel	2::temp 9852,12409 9869,12297 9890,12161
        },
        undef,
        undef,
-       {
-         'until' => 1259535600,
-         'text' => 'B 167 Neuruppin - AS Neuruppin zw. Bechlin u. AS Neuruppin Straßenbauarbeiten Vollsperrung 16.11.2009-29.11.2009 ',
-         'from' => 1258239600,
-         'id' => 1993,
-         'data' => 'userdel	2::inwork -35577,54824 -35059,54768 -34499,54966 -33922,55483
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'source_id' => 'IM_014707',
-         'until' => 1259553600,
-         'text' => 'Baumschulenstr. (Treptow) in beiden Richtungen zwischen Kiefholzstr. und Köpenicker Landstr. Baustelle, Straße vollständig gesperrt (bis Montag, 5 Uhr) (10:27) ',
-         'from' => 1259276209,
-         'id' => 1994,
-         'data' => 'userdel	2::inwork 16286,6946 16323,6998
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        {
          'until' => 1260054000,
          'text' => 'B 096 Luckau - Baruth Brücke über die Schuge bei Rüdingsdorf Brückenneubau Vollsperrung 02.12.2009-05.12.2009 ',
