@@ -43,7 +43,8 @@ Rough installation procedure on a Debian system:
      bbbike should appear. In the footer there's a link to the
      mapserver.
 
-   * This instructions restrict to just using http://localhost. To
+   * These instructions restrict to just using http://localhost. To
      use a real (external) hostname run
 
-	pmake HOST=www.example.com
+         touch -t 197001010000 Makefile.automatic.inc
+         pmake TARGET=automatic WWW_HOST=www.example.com

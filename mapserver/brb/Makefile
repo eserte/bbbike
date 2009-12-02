@@ -68,6 +68,25 @@ IMAGECOLOR?=	225 225 225
 
 RADZEIT_APACHE_DIR_LOCAL=	$(ABS_LOCAL_BBBIKE_DIR)/projects/www.radzeit.de
 
+.if ${TARGET} == "automatic"
+BBBIKECGI_CONFIG_LOCAL=	../../cgi/bbbike.cgi.config
+WWW_HOST?=		localhost
+BBBIKE_CGI_RELURL?=	/bbbike/cgi
+BBBIKE_HTML_RELURL?=	/bbbike/html
+MAPSERVER_RELURL?=	/bbbike/mapserver/brb
+BBBIKE_URL?=		http://$(WWW_HOST)$(BBBIKE_CGI_RELURL)/bbbike.cgi
+MAPSERVER_URL?=		http://$(WWW_HOST)$(MAPSERVER_RELURL)
+BBBIKE_IMAGES_RELURL?=	/bbbike/images
+MAPSERVER_DIR=		$(LOCAL_BBBIKE_DIR)/mapserver/brb
+IMAGE_DIR=		$(LOCAL_BBBIKE_DIR)/images
+IMAGE_SUFFIX=		gif
+.if exists(/etc/debian_version)
+FONTS_LIST?=		fonts-debian.list
+.else
+FONTS_LIST?=		fonts-biokovo.list
+.endif
+.endif
+
 .if ${TARGET} == "radzeit.herceg.de"
 
 RADZEIT_HOST=		radzeit.herceg.de
