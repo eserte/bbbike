@@ -629,7 +629,8 @@ DEB_DATA=	libstring-approx-perl libdbd-xbase-perl libxml-parser-perl \
 		libobject-realize-later-perl libmldbm-perl \
 		libclass-accessor-perl libarchive-zip-perl \
 		libtemplate-perl libxml-libxml-perl libxml-simple-perl \
-		libyaml-perl libyaml-syck-perl libtext-unidecode-perl
+		libyaml-perl libyaml-syck-perl libjson-xs-perl \
+		libtext-unidecode-perl libdata-compare-perl
 DEB_MISC=	libdate-calc-perl
 # If apache2 is installed, then do not install apache-perl!
 DEB_CGI=	libapache-session-perl apache-perl libfile-counterfile-perl
@@ -639,7 +640,7 @@ DEB_MAPSERVER=	mapserver-bin cgi-mapserver
 OWN_DEB=	libapache-session-counted-perl libpalm-palmdoc-perl \
 		libgd-svg-perl libgeo-spacemanager-perl \
 		libgeo-distance-perl libgeo-distance-xs-perl \
-		libobject-iterate-perl
+		libobject-iterate-perl libkwalify-perl
 
 # All packages needed for full-flavoured Web server operation:
 DEB_ALL_CGI=	$(DEB_DEVEL)      \
