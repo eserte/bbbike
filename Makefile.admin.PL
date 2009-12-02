@@ -615,21 +615,31 @@ winbindist: winbindist-pre
 
 # Debian packages needed for (subparts of) BBBike, loosely
 # categorized:
-DEB_DEVEL=	cvs bison byacc flex g++ apt-show-versions pmake gcc \
+DEB_DEVEL=	git-core cvs bison byacc flex g++ apt-show-versions pmake gcc \
 		libc6-dev libinline-perl strace rsync less make
 DEB_TEST=	libimage-info-perl libwww-mechanize-perl
 DEB_DRAW=	libgd2-xpm libgd2-xpm-dev perlmagick libimager-perl \
-		pdftk netpbm imagemagick libgd-gd2-perl ttf-bitstream-vera
+		pdftk netpbm imagemagick libgd-gd2-perl ttf-bitstream-vera \
+		libpdf-create-perl libfont-afm-perl \
+		libtest-number-delta-perl \
+		libsvg-perl
 DEB_MAIL=	libmime-lite-perl libmailtools-perl
 DEB_DATA=	libstring-approx-perl libdbd-xbase-perl libxml-parser-perl \
 		libxml-twig-perl libdbi-perl libtie-ixhash-perl \
 		libobject-realize-later-perl libmldbm-perl \
 		libclass-accessor-perl libarchive-zip-perl \
 		libtemplate-perl libxml-libxml-perl libxml-simple-perl \
-		libyaml-perl libtext-unidecode-perl
+		libyaml-perl libyaml-syck-perl libtext-unidecode-perl
 DEB_MISC=	libdate-calc-perl
-DEB_CGI=	libapache-session-perl apache-perl
+# If apache2 is installed, then do not install apache-perl!
+DEB_CGI=	libapache-session-perl apache-perl libfile-counterfile-perl
 DEB_MAPSERVER=	mapserver-bin cgi-mapserver
+
+# Debian packages from own repo
+OWN_DEB=	libapache-session-counted-perl libpalm-palmdoc-perl \
+		libgd-svg-perl libgeo-spacemanager-perl \
+		libgeo-distance-perl libgeo-distance-xs-perl \
+		libobject-iterate-perl
 
 # All packages needed for full-flavoured Web server operation:
 DEB_ALL_CGI=	$(DEB_DEVEL)      \
