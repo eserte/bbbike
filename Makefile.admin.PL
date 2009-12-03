@@ -640,7 +640,7 @@ DEB_MAPSERVER=	mapserver-bin cgi-mapserver
 OWN_DEB=	libapache-session-counted-perl libpalm-palmdoc-perl \
 		libgd-svg-perl libgeo-spacemanager-perl \
 		libgeo-distance-perl libgeo-distance-xs-perl \
-		libobject-iterate-perl libkwalify-perl
+		libobject-iterate-perl libkwalify-perl libcdb-file-perl
 
 # All packages needed for full-flavoured Web server operation:
 DEB_ALL_CGI=	$(DEB_DEVEL)      \
