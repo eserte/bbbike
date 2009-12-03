@@ -16,7 +16,7 @@ FONTSET "[% MAPSERVER_DIR %]/[% FONTS_LIST %]"
 
 [%# NOTE: IMAGE_SUFFIX => type of *input* images -%]
 [%#       IMAGE_TYPE   => type of *output* image -%]
-[% IF 0 %]
+[% IF NEED_PNG_NOALPHA_HACK %]
 # you may need to change this to match your MapServer build
 [% UNLESS IMAGE_TYPE.defined; IMAGE_TYPE = "png"; END -%]
 [%# some (all?) GD versions cannot handle alpha channels well ... -%]
@@ -334,7 +334,7 @@ SYMBOL
   TYPE TRUETYPE
   FONT 'lucida'
   FILLED true
-  GAP 20
+  GAP -20
   ANTIALIAS true
   CHARACTER "[% LEFTARROW %]"
 END
@@ -348,37 +348,41 @@ END
 #  STYLE 1 20 END
 #END
 
+[% IF NEED_ONEWAY_RIGHT_HACK -%]
 ## Does not work with mapserver-3.6.6, but with mapserver-4.01-tobe
 SYMBOL
   NAME 'oneway_right'
   TYPE TRUETYPE
   FONT 'lucida'
   FILLED true
-  GAP 20
+  GAP -20
   ANTIALIAS true
   CHARACTER "[% RIGHTARROW %]"
 END
+[% END -%]
 
 SYMBOL
   NAME 'oneway_left_small'
   TYPE TRUETYPE
   FONT 'lucida'
   FILLED true
-  GAP 10
+  GAP -10
   ANTIALIAS true
   CHARACTER "[% LEFTARROW %]"
 END
 
+[% IF NEED_ONEWAY_RIGHT_HACK -%]
 ## XXX geht nicht in mapserver-3.6.6!
 SYMBOL
   NAME 'oneway_right_small'
   TYPE TRUETYPE
   FONT 'lucida'
   FILLED true
-  GAP 10
+  GAP -10
   ANTIALIAS true
   CHARACTER "[% RIGHTARROW %]"
 END
+[% END -%]
 
 SYMBOL
   NAME 'point'
@@ -1721,7 +1725,11 @@ LAYER
   CLASS
     EXPRESSION '1_right'
     COLOR 0 0 200
+[% IF NEED_ONEWAY_RIGHT_HACK -%]
     SYMBOL 'oneway_right'
+[% ELSE -%]
+    SYMBOL 'oneway_left'
+[% END -%]
     SIZE 10
     MAXSCALE 30000
   END
@@ -1736,7 +1744,11 @@ LAYER
   CLASS
     EXPRESSION '1_right'
     COLOR 0 0 200
+[% IF NEED_ONEWAY_RIGHT_HACK -%]
     SYMBOL 'oneway_right_small'
+[% ELSE -%]
+    SYMBOL 'oneway_left_small'
+[% END -%]
     SIZE 7
     MINSCALE 30000
     MAXSCALE 60000
