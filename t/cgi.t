@@ -752,6 +752,7 @@ for my $cgiurl (@urls) {
     XXX: 
     {
 	if ($CGI::VERSION == 3.33) {
+	    # but see below for other bad CGI versions...
 	    diag <<EOF;
 Check if Umlaute are correctly preserved. This breaks with
 the CGI.pm in perl 5.10.0 (3.33) and must be seen as a CGI.pm
@@ -775,9 +776,19 @@ EOF
 	ok($resp->is_success, "Request with latin1 incoming CGI params")
 	    or diag $resp->as_string;
 	my $content = uncompr($resp);
-	BBBikeTest::like_long_data($content, qr{Neust%e4dtische}i, "Found iso-8859-1 encoding in CGI params in links");
-	BBBikeTest::unlike_long_data($content, qr{Neust%C3%A4dtische}i, "No single encoded utf-8 in CGI params in links");
-	BBBikeTest::unlike_long_data($content, qr{Neust%C3%83%C2%A4dtische}i, "No double encoded utf-8 in CGI params in links");
+	my $fail_count = 0;
+	$fail_count++ if !BBBikeTest::like_long_data($content, qr{Neust%e4dtische}i, "Found iso-8859-1 encoding in CGI params in links");
+	$fail_count++ if !BBBikeTest::unlike_long_data($content, qr{Neust%C3%A4dtische}i, "No single encoded utf-8 in CGI params in links");
+	$fail_count++ if !BBBikeTest::unlike_long_data($content, qr{Neust%C3%83%C2%A4dtische}i, "No double encoded utf-8 in CGI params in links");
+	if ($fail_count) {
+	    if ($] >= 5.010 && $CGI::VERSION < 3.48) {
+		# ... but see above for other bad CGI versions
+		diag <<EOF;
+Locally CGI.pm $CGI::VERSION is installed, remote maybe too?
+Consider to upgrade to at least CGI.pm 3.47.
+EOF
+	    }
+	}
     }
 
     {
