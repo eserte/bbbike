@@ -774,8 +774,21 @@ EOF
     # outer Berlin
 
  SKIP: {
-	skip("XXX Outer Berlin feature needs bbbike2.cgi", $outer_berlin_tests)
-	    if $cgiurl !~ /bbbike2\.cgi/ && $cgiurl ne 'http://localhost/bbbike/cgi/bbbike.cgi';
+	# Is bbbike2.cgi available?
+	my $can_bbbike2_cgi;
+	my $bbbike2_url;
+	if ($cgiurl =~ /bbbike2\.cgi/) {
+	    $bbbike2_url = $cgiurl;
+	    $can_bbbike2_cgi = 1;
+	} else {
+	    ($bbbike2_url = $cgiurl) =~ s{bbbike\.cgi}{bbbike2.cgi};
+	    if ($bbbike2_url ne $cgiurl) {
+		my $resp = $agent->get($bbbike2_url);
+		$can_bbbike2_cgi = $resp->is_success;
+	    }
+	}
+	skip("Outer Berlin feature needs a working bbbike2.cgi", $outer_berlin_tests)
+	    if !$can_bbbike2_cgi;
 
 	$get_agent->();
 	$agent->get($cgiurl);
