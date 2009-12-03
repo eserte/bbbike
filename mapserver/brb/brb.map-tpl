@@ -16,25 +16,28 @@ FONTSET "[% MAPSERVER_DIR %]/[% FONTS_LIST %]"
 
 [%# NOTE: IMAGE_SUFFIX => type of *input* images -%]
 [%#       IMAGE_TYPE   => type of *output* image -%]
-[% IF 1 %]
+[% IF 0 %]
 # you may need to change this to match your MapServer build
 [% UNLESS IMAGE_TYPE.defined; IMAGE_TYPE = "png"; END -%]
 [%# some (all?) GD versions cannot handle alpha channels well ... -%]
 [% IF IMAGE_SUFFIX == "png"; SET NOALPHA = "_noalpha"; ELSE; SET NOALPHA = ""; END -%]
+[% SET TRANSPARENCY_ALPHA = "" -%]
 IMAGETYPE [% IMAGE_TYPE %]
 
 [% ELSE %]
-# I thought this could be a good fix for the alpha problem.
-# But it did not work...
+
 OUTPUTFORMAT
-  NAME pnga
-  DRIVER "GD/PNG"
-  MIMETYPE "image/gif"
-  IMAGEMODE RGBA
-  TRANSPARENT ON
-  EXTENSION "png"
+  NAME png
+  MIMETYPE image/png
+  DRIVER GD/PNG
+  EXTENSION png
+  IMAGEMODE RGB
+  TRANSPARENT FALSE
 END
-IMAGETYPE pnga
+IMAGETYPE png
+
+[% SET TRANSPARENCY_ALPHA = "TRANSPARENCY ALPHA" -%]
+
 [% END %]
 
 #
@@ -811,7 +814,7 @@ LAYER
   STATUS [% ON_SEHENSWUERDIGKEIT %]
   GROUP sehenswuerdigkeit
   DATA sehenswuerdigkeit_polygon
-  
+ 
   LABELITEM "NAME"
 
   CLASSITEM 'CAT'
@@ -1756,6 +1759,7 @@ LAYER
   DATA gesperrt_point
   GROUP blocked
 
+[% TRANSPARENCY_ALPHA -%] 
   CLASSITEM 'CAT'
   CLASS
     EXPRESSION 'BNP'
@@ -2193,6 +2197,7 @@ LAYER
   DATA sehenswuerdigkeit_point
   MAXSCALE 30000
   
+[% TRANSPARENCY_ALPHA -%] 
   LABELITEM "NAME"
 
   CLASSITEM "CAT"
@@ -2240,7 +2245,8 @@ LAYER
   STATUS [% ON_AMPELN %]
   GROUP ampeln
   DATA ampeln
- 
+
+[% TRANSPARENCY_ALPHA -%]
   CLASSITEM "CAT" 
 
   CLASS
