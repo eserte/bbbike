@@ -104,6 +104,14 @@ my $outer_berlin_tests = 16;
 my $tests = 110 + $outer_berlin_tests;
 plan tests => $tests * @browsers;
 
+if ($WWW::Mechanize::VERSION == 1.32) {
+    diag <<EOF;
+**********************************************************************
+* Expect a failed test suite with this WWW::Mechanize version ($WWW::Mechanize::VERSION)
+**********************************************************************
+EOF
+}
+
 ######################################################################
 # general testing
 
