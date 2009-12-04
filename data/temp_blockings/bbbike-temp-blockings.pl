@@ -1262,7 +1262,7 @@ EOF
        text  => 'Sophienstraße, zwischen Große Hamburger Straße und Rosenthaler Straße, für den Fahrzeugverkehr gesperrt (9. Umwelt- und Weihnachtsmarkt). Dauer: 11.12.2004 06:00 Uhr bis 12.12.2004 24:00 Uhr ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 9982,13411 10317,13248
+userdel	2 9986,13412 10317,13248
 EOF
      },
      { from  => 1102050000, # 2004-12-03 06:00
@@ -3057,7 +3057,7 @@ EOF
        text  => 'Universitätsstr., Richtung Dorotheenstr. gesperrt (bis 2010) ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork; 9601,12380 9574,12578
+userdel	q4::inwork; 9601,12380 9580,12581
 EOF
      },
      { from  => undef, # 
@@ -3065,7 +3065,7 @@ EOF
        text  => 'Universitätsstr., Richtung Dorotheenstr. gesperrt (bis 2010)',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork; 9561,12687 9574,12578
+userdel	q4::inwork; 9568,12688 9580,12581
 EOF
      },
      { from  => 1129413600, # 2005-10-16 00:00
@@ -10969,7 +10969,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_008076',
        data  => <<EOF,
-userdel	2::inwork 9982,13411 10317,13248
+userdel	2::inwork 9986,13412 10317,13248
 EOF
      },
      { from  => 1205622000, # 2008-03-16 00:00
@@ -11091,7 +11091,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_008152',
        data  => <<EOF,
-userdel	2::inwork 9982,13411 10317,13248
+userdel	2::inwork 9986,13412 10317,13248
 EOF
      },
      { from  => 1206313200, # 2008-03-24 00:00
@@ -14926,8 +14926,8 @@ EOF
 userdel	q4::inwork 9418,11804 9220,11781
 EOF
      },
-     { from  => undef, # 
-       until => undef, # XXX
+     { from  => 1259937995, # 
+       until => 1259937999, # XXX -> nach handicap_s-orig gewandert
        text  => 'Die Charlottenstraße ist wegen Bauarbeiten eine Einbahnstraße Richtung Süden',
        type  => 'handicap',
        data  => <<EOF,
@@ -16581,14 +16581,14 @@ EOF
 userdel	q4::inwork 7716,8356 7716,8048 7717,7879
 EOF
      },
-     { from  => undef, # 
-       until => undef, # XXX
+     { from  => 1259938062, # 
+       until => 1259938066, # XXX -> nach handicap_s-orig gewandert
        text  => 'Universitätsstraße Richtung Unter den Linden gesperrt',
        type  => 'handicap',
        data  => <<EOF,
 #: last_checked: 2009-10-18
 #: XXX oder ist das eine permanente Sperrung?
-userdel	q4::inwork; 9574,12578 9601,12380
+userdel	q4::inwork; 9580,12581 9601,12380
 EOF
      },
      { from  => undef, #
@@ -16942,6 +16942,14 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork -4630,-36012 -4603,-35730
+EOF
+     },
+     { from  => undef, # 
+       until => 1262300399, # 2009-12-31 23:59
+       text  => 'Weihnachtsmarkt am Potsdamer Platz',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::temp 8479,11493 8481,11447 8389,11378
 EOF
      },
     );

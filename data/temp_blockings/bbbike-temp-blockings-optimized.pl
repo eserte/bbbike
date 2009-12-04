@@ -642,15 +642,7 @@ userdel	q4::inwork 10422,12395 10476,12432
        },
        undef,
        undef,
-       {
-         'until' => 1259881200,
-         'text' => 'B 198 Neubrandenburger Straße OD Prenzlau, Brücke über die Ücker Brückenneubau Vollsperrung 04.05.2009-03.12.2009 ',
-         'from' => 1241301600,
-         'id' => 1630,
-         'data' => 'userdel	2::inwork 39239,101950 39066,102017
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -886,16 +878,7 @@ userdel	2::inwork 7160,11225 6851,11346
        },
        undef,
        undef,
-       {
-         'until' => undef,
-         'text' => 'Die Charlottenstraße ist wegen Bauarbeiten eine Einbahnstraße Richtung Süden',
-         'from' => undef,
-         'id' => 1763,
-         'data' => '#: last_checked: 2009-10-16
-userdel	q4::inwork; 9475,12365 9462,12481 9454,12558
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1571,17 +1554,7 @@ userdel	q4::inwork; 10829,18083 10907,18109 10938,18147 10989,18172 11137,18358 
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => undef,
-         'text' => 'Universitätsstraße Richtung Unter den Linden gesperrt',
-         'from' => undef,
-         'id' => 1954,
-         'data' => '#: last_checked: 2009-10-18
-#: XXX oder ist das eine permanente Sperrung?
-userdel	q4::inwork; 9574,12578 9601,12380
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => undef,
          'permanent' => 1,
@@ -1749,6 +1722,16 @@ userdel	2::temp 9852,12409 9869,12297 9890,12161
          'from' => 1259622000,
          'id' => 1995,
          'data' => 'userdel	2::inwork 29918,-54610 30409,-55818
+',
+         'type' => 'gesperrt'
+       },
+       undef,
+       {
+         'until' => 1262300399,
+         'text' => 'Weihnachtsmarkt am Potsdamer Platz',
+         'from' => undef,
+         'id' => 1997,
+         'data' => 'userdel	2::temp 8479,11493 8481,11447 8389,11378
 ',
          'type' => 'gesperrt'
        }

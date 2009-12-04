@@ -11,7 +11,9 @@ Hauptstr. (Friedrichshain-Kreuzberg): Baustelle, Radfahrer können langsam passie
 Varian-Fry-Str.: Baustelle, Fahrbahn gesperrt	q4::inwork 8389,11378 8374,11479
 General-Pape-Str.: Baustelle, Fahrbahn Richtung Norden gesperrt	q4::inwork; 7959,7609 7921,7728 7950,7840
 Matkowskystr.: Baustelle, Fahrbahn gesperrt	q4::inwork 14530,11137 14509,11060
-Am Kupfergraben: Baustelle, Einbahnstraße	q3::inwork; 9754,12775 9810,12712
+Französische Str.: Bauarbeiten, Gehweg ist schon passierbar	q4::inwork 8901,12008 9076,12054
+Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 9475,12365 9462,12481 9454,12558
+Universitätsstr.: wegen Bauarbeiten Richtung Unter den Linden gesperrt	q4::inwork; 9580,12581 9601,12380
 Wuhlewanderweg: steiler Anstieg, Fußgänger	q4; 21998,12204 21970,12153
 Wuhlewanderweg: steiles Gefälle, Fußgänger	q4; 21970,12153 21998,12204
 Caroline-Michaelis-Str.: Bordsteine	q3 9125,13973 9151,13941
@@ -537,6 +539,8 @@ Orankeweg: einige Bodenschwellen, ohne Anhänger leicht umfahrbar	q0 14934,15860 
 (Gounodstr. - Otto-Brahm-Str.): abschnittsweise eng und kurvig	q1 14435,15904 14451,15873 14383,15848 14349,15825 14365,15778
 Gounodstr.: Fußgänger	q1 14259,15816 14272,15837 14366,15877
 Seidenberger Str.: Bordstein, Geländer	q3 12379,16998 12373,17007
+Mulackstr.: enge Straße	q1 10640,13471 10535,13509 10406,13543 10304,13575
+Rückerstr.: enge Straße	q1 10597,13647 10535,13509
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q3 11805,19071 11937,19175
 Ebersstr.: Schüler	q2 7245,8583 7292,8631
 Straße 103 (Niederschönhausen): enge Straße	q1 10914,20065 11051,19789

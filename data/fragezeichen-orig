@@ -29,7 +29,7 @@ Reichsstr.: wird der vorhandene Radweg zugunsten eines Angebotsstreifens aufgege
 #: by: ^^^
 #
 #: by: MoPo 2009-08-01, soll 2009 realisiert werden vvv
-#: last_checked: 2009-10-28
+#: last_checked: 2009-12-04
 Tiergartenstr.	?::projected 8172,11679 8021,11636 7816,11571 7717,11540 7600,11513 7504,11512 7435,11514 7356,11517 7293,11519 6825,11486
 #: last_checked: 2009-11-21
 Grunewaldstr. (Steglitz)	?::projected 4861,5581 4671,5697 4520,5793 4419,5842 4291,5895 4172,5918 4010,5888 3931,5825 3850,5801 3707,5758
@@ -161,9 +161,6 @@ Fürstenwalder Allee: Bau von Radverkehrsanlagen	? 29713,4456 29813,4314 29850,42
 Berliner Str.: nach den Bauarbeiten vielleicht asphaltiert?	? 12479,17811 12736,17998
 #: next_check: 2009-07-15
 Romain-Rolland-Str.: nach den Bauarbeiten vielleicht asphaltiert?	? 12562,18483 12570,18351 12575,18275
-#: next_check: 2009-12-01:
-#: XXX und nicht vergessen: Eintrag in gesperrt dann entfernen! Und es existiert keine besondere Vorfahrtsregelung mehr. Evtl. auch Straßenkategorisierung bzw. comments_kfzverkehr anpassen.
-Französische Str.: Verlängerung wird 2009-12 eröffnet. Es wird eine Ampel an der Kreuzung Wilhelmstr. geben.	?::inwork 8901,12008 9076,12054
 #: next_check: 2009-12-31:
 Boitzenburg - Hardenbeck: straßenbegleitender Radweg in Vorbereitung, Realisierung bis Ende 2009	?::inwork 22233,95712 21980,95754 21160,95892 20914,96092 20696,96135 20064,95650 19336,95235 19032,95142
 Laut Uckermark-Kurier: 2.7km Radweg auf ehem. Bahndamm zwischen L15 undf K7332 bei Hardenbeck (Radweg "Spur der Steine", Templin - Fürstenwerder), Baubeginn Anfang 2009, Asphalt ca. 3m breit; wo genau???	?::inwork 16377,90072 15782,90862 15738,90942 15410,92053 15661,93732 15688,93829 15748,93928 15841,94009 16435,94298 17677,94900 17796,95008 17912,95192 18001,95435 18507,96268 18676,96867 18954,97944 19022,98128 19442,99078 19582,99411
@@ -3634,13 +3631,6 @@ Siebenendenweg: Qualität? Ist die gesamte Straße für Autos gesperrt?	? 404,3970 
 #: next_check: 2009-09-30
 Eberswalder Str.: Existieren bereits Radwege zwischen Schönhauser Allee und Topsstraße? Falls ja: sind die Radwege benutzungspflichtig?	?::inwork 10618,15076 10881,15047
 TR4 durch den Volkspark Jungfernheide: Qualität/Wegbeschaffenheit? Nachts beleuchtet?	? 1468,15194 1510,15067 1550,15014 2367,14836 2527,14832 2683,14878 2675,14744
-Weydingerstr.: gehört die Weydingerstr. zur 10er-Zone?	? 10852,13377 10941,13415 10969,13430 11032,13465 11059,13480 11079,13492
-Schendelgasse: gehört die Schendelgasse zur 10er-Zone?	? 10767,13443 10703,13467 10653,13493
-Steinstr.: gehört die Steinstr. zur 10er-Zone?	? 10603,13395 10390,13493 10282,13546
-Mulackstr.: gehört die Mulackstr. zur 10er-Zone?	? 10304,13575 10406,13543 10535,13509 10640,13471
-Rückerstr.: gehört die Rückerstr. zur 10er-Zone?	? 10535,13509 10597,13647
-Gormannstr.: gehört die Gormannstr. zur 10er-Zone?	? 10372,13436 10390,13493 10406,13543 10445,13675 10463,13747
-Kleine Rosenthaler Str.: 10er-Zone?	? 10282,13546 10304,13575 10305,13580 10307,13600 10310,13692
 (Uferweg am Kanal): nachts beleuchtet?	? 16425,6445 16275,6275 16263,6248 16098,6134 16065,6126 16044,6120
 #: XXX an der Nieberstr. noch asphaltiert. Radfahren explizit erlaubt. green1 (mindestens) eintragen
 Weg am Johannisthaler Park: Qualität? Nachts beleuchtet?	? 17760,4867 17659,4849 17580,4761

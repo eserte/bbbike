@@ -446,7 +446,7 @@ Siegfriedstr.: relativ glattes Kopfsteinpflaster	Q2+ 12843,7093 12872,7134
 Berliner Allee: Kopfsteinpflaster	Q2 14828,17856 14754,17673 14673,17454 14584,17224
 Berliner Allee: Asphalt	Q0 14584,17224 14533,17084 14535,17003 14559,16912
 Lessingstr.: Kopfsteinpflaster	Q2 10425,67 10300,42 10156,13 10066,-3 9966,-22 9861,-44
-Monbijoustr.: Kopfsteinpflaster, OK	Q1 9734,13057 9714,12995 9707,12974
+Monbijoustr.: Asphalt	Q0 9771,13182 9734,13057 9714,12995 9707,12974
 #: by: Message-ID: <ehgp1u$d4g$03$1@news.t-online.com>
 Nördliche Monbijoubrücke: Kleinsteinpflaster	Q1- 9707,12974 9680,12916
 #: by: Message-ID: <ehi7qc$etg$01$1@news.t-online.com>
@@ -2251,7 +2251,7 @@ Ariadnestr.: Kopfsteinpflaster	Q2 2657,25486 2505,25538 2384,25495 2301,25492
 Gollanczstr.: Verbundsteinpflaster	Q1+ 2120,26060 2110,26268 2108,26312
 Gollanczstr.: Kopfsteinpflaster	Q2 2108,26312 2111,26459
 Gollanczstr.: Asphalt	Q0 2111,26459 2122,26660 2017,26779
-Bartelstr.: Asphalt	Q0 11032,13465 10998,13382
+Bartelstr.: Asphalt	Q0 11031,13467 10998,13382
 Paul-Zobel-Str.: Asphalt	Q0 15724,13544 15724,13298 15846,13297 15851,13511
 Herzbergstr. [Wohngebiet]: Asphalt	Q0 15851,13511 15897,13512
 Annenstr. (Biesdorf): Asphalt	Q0 20269,14256 20376,14244
@@ -10248,7 +10248,8 @@ Heidereutergasse: Asphalt	Q0 10427,12873 10390,12842
 #: corrected_by: srt (Gehwegplatten -> Kopfsteinpflaster (neu))
 (Rosenstr. - Karl-Liebknecht-Str.): Kopfsteinpflaster	Q2 10476,12829 10528,12785
 # XXX del Straße existiert zurzeit nicht: Museumstr.: Asphalt	Q0 9943,12642 9884,12712
-Hegelplatz: Asphalt mit Löchern	Q1 9682,12590 9671,12644
+# XXX del: no, looks good enough: Hegelplatz: Asphalt mit Löchern	Q1 9682,12590 9671,12644
+#: confirmed_by: srt
 Bauhofstr.: Asphalt mit Löchern	Q1 9810,12712 9671,12644
 Panoramastr.: Asphalt	Q0 10793,12906 10734,12850
 Spandauer Str. [Gehweg]: Gehwegplatten	Q0 10584,12507 10626,12455 10665,12413 10723,12346
