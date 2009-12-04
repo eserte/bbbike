@@ -616,7 +616,7 @@ vorfahrt:	vorfahrt-orig
 # able to do some things yet necessary here, for example automatic
 # Gefaelle generation in comments_mount or not combining X;X
 # categories into X
-.for f in ${COMMENTS_PARTIAL:Ncomments_route:Ncomments_ferry:Ncomments_misc}
+.for f in ${COMMENTS_PARTIAL:Ncomments_route:Ncomments_ferry:Ncomments_misc:Ncomments_cyclepath}
 ${f}: ${f}-orig ${ALL_STREETS} ${PERSISTENTTMPDIR}/gesperrt-without-nocross
 	-@$(WRITEABLE) $@
 	cat ${f}-orig | \
@@ -627,6 +627,19 @@ ${f}: ${f}-orig ${ALL_STREETS} ${PERSISTENTTMPDIR}/gesperrt-without-nocross
 	mv $@~ $@
 	-@$(READONLY) $@
 .endfor
+
+# Special target to remove "?" modifier from categories
+comments_cyclepath: comments_cyclepath-orig ${ALL_STREETS} ${PERSISTENTTMPDIR}/gesperrt-without-nocross
+	-@$(WRITEABLE) $@
+	cat comments_cyclepath-orig | \
+	    ${GREPSTRASSEN} -v -sectionrx "ignorieren" | \
+	    $(CONVERT2HAFAS) -basefile comments_cyclepath-orig - | \
+	    ${RESOLVE_STARS} -sperrefile ${PERSISTENTTMPDIR}/gesperrt-without-nocross \
+	        ${ALL_STREETS} - | \
+	    ${REPLACESTRASSEN} -catexpr 's/\?//' \
+		> $@~ && \
+	mv $@~ $@
+	-@$(READONLY) $@
 
 # New style using convert_orig_to_bbd. comments_route here,
 # because of the need for alias and url directives. comments_ferry
