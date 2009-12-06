@@ -84,7 +84,14 @@ FONTS_LIST?=		fonts-biokovo.list
 
 RADZEIT_HOST=		radzeit.herceg.de
 RADZEIT_APACHE_DIR=	$(RADZEIT_APACHE_DIR_LOCAL)
-BBBIKE_MAPSERVER_URL=	http://radzeit.herceg.de/cgi-bin/mapserv
+BBBIKE_MAPSERVER_URL=	http://$(RADZEIT_HOST)/cgi-bin/mapserv
+
+.elif ${TARGET} == "bbbike.hosteurope.herceg.de"
+
+RADZEIT_HOST=		bbbike.hosteurope.herceg.de
+RADZEIT_APACHE_DIR_LOCAL=	$(ABS_LOCAL_BBBIKE_DIR)/projects/bbbike.de-hosteurope
+RADZEIT_APACHE_DIR=	$(RADZEIT_APACHE_DIR_LOCAL)
+BBBIKE_MAPSERVER_URL=	http://$(RADZEIT_HOST)/cgi-bin/mapserv
 
 .endif
 
@@ -150,6 +157,41 @@ FONTS_LIST=		fonts-radzeit.list
 .elif ${TARGET} == "radzeit.herceg.de" && exists(/etc/debian_version)
 FONTS_LIST=		fonts-debian.list
 .elif ${TARGET} == "radzeit.herceg.de"
+FONTS_LIST=		fonts-biokovo.list
+.endif
+
+.elif ${TARGET} == "hosteurope" || ${TARGET} == "bbbike.hosteurope.herceg.de"
+
+HOST=			$(RADZEIT_HOST)
+HTDOCS=			public
+MAPSERVER_DIR=		$(RADZEIT_APACHE_DIR)/$(HTDOCS)/mapserver/brb
+MAPSERVER_RELURL=	/mapserver/brb
+MAPSERVER_URL=		http://$(HOST)$(MAPSERVER_RELURL)
+#MAPSERVER_PROG_RELURL=	/cgi-bin/mapserv
+#MAPSERVER_PROG_URL=	http://$(HOST)$(MAPSERVER_PROG_RELURL)
+BBBIKECGI_CONFIG=	$(RADZEIT_APACHE_DIR)/cgi-bin/bbbike.cgi.config
+BBBIKECGI_CONFIG_LOCAL=	$(RADZEIT_APACHE_DIR_LOCAL)/cgi-bin/bbbike.cgi.config
+MAPSERVER_PROG_RELURL=	$(BBBIKE_MAPSERVER_URL:C/^http:\/\/[^\/]+//)
+MAPSERVER_PROG_URL=	$(BBBIKE_MAPSERVER_URL)
+MAPSERVER_VERSION=	5
+IMAGE_DIR=		$(RADZEIT_APACHE_DIR)/BBBike/images
+BBBIKE_HTML_RELURL=	/BBBike/html
+BBBIKE_CGI_RELURL=	/cgi-bin
+BBBIKE_IMAGES_RELURL=	/BBBike/images
+BBBIKE_URL=		http://$(HOST)$(BBBIKE_CGI_RELURL)/bbbike.cgi
+IMAGE_SUFFIX=		png
+
+.if ${TARGET} == "hosteurope"
+WWW_USER=		www-data
+.elif ${TARGET} == "bbbike.hosteurope.herceg.de"
+WWW_USER=		eserte
+.endif
+
+.if ${TARGET} == "hosteurope"
+FONTS_LIST=		fonts-debian.list
+.elif ${TARGET} == "bbbike.hosteurope.herceg.de" && exists(/etc/debian_version)
+FONTS_LIST=		fonts-debian.list
+.elif ${TARGET} == "bbbike.hosteurope.herceg.de"
 FONTS_LIST=		fonts-biokovo.list
 .endif
 
