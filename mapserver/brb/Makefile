@@ -97,48 +97,24 @@ BBBIKECGI_CONFIG_LOCAL=	$(BBBIKECGI_CONFIG)
 
 .endif
 
-.if ${TARGET} == "devpc01"
-ABS_LOCAL_BBBIKE_DIR=	/home/slavenr/work2/bbbike
-MAPSERVER_PROG_FSPATH=	/home/slavenr/work2/mapserver/mapserv.cgi
-#MAPSERVER_PROG_FSPATH=	/home/slavenr/mapserver-3.6.6/mapserv
-#MAPSERVER_PROG_FSPATH=	/home/slavenr/mapserver-3.6.4/mapserv
-# XXX port number or not?
-LOCAL_HOST=		localhost:8080
-FONTS_LIST=		fonts-devpc01.list
-BBBIKECGI_CONFIG=	$(ABS_LOCAL_BBBIKE_DIR)/cgi/bbbike-icm.cgi.config
-BBBIKECGI_CONFIG_LOCAL=	$(BBBIKECGI_CONFIG)
-.endif
-
-.if ${TARGET} == "local" || ${TARGET} == "devpc01"
+.if ${TARGET} == "local"
 
 HOST=			$(LOCAL_HOST)
 MAPSERVER_DIR=		$(LOCAL_BBBIKE_DIR)/mapserver/brb
 # Relative URL to this directory and to the mapserv binary:
-.if ${TARGET} == "local"
 MAPSERVER_RELURL=	/bbbike/mapserver/brb				# ***
 MAPSERVER_PROG_RELURL?=	/cgi/mapserv.cgi				# ***
-.elif ${TARGET} == "devpc01"
-MAPSERVER_RELURL=	/bbbike/mapserver/brb				# ***
-MAPSERVER_PROG_RELURL?=	/mapserver/cgi/mapserv.cgi			# ***
-MAPSERVER_PROG_RELURL?=	/mapserver/cgi/mapserv				# ***
-.endif
 MAPSERVER_URL=		http://$(HOST)$(MAPSERVER_RELURL)
 MAPSERVER_PROG_URL?=	http://$(HOST)$(MAPSERVER_PROG_RELURL)
 # Filesystem path of the mapserv binary:
 MAPSERVER_PROG_FSPATH?=	/home/e/eserte/www/cgi/mapserv.cgi		# ***
 IMAGE_DIR=		$(LOCAL_BBBIKE_DIR)/images
 # Relative URL to the bbbike html and cgi directories:
-.if ${TARGET} == "local"
 BBBIKE_HTML_RELURL=	/bbbike/html					# ***
 BBBIKE_CGI_RELURL=	/bbbike/cgi					# ***
 BBBIKE_IMAGES_RELURL=	/bbbike/images					# ***
 BBBIKECGI_CONFIG=	$(ABS_LOCAL_BBBIKE_DIR)/cgi/bbbike.cgi.config
 BBBIKECGI_CONFIG_LOCAL=	$(BBBIKECGI_CONFIG)
-.elif ${TARGET} == "devpc01"
-BBBIKE_HTML_RELURL=	/bbbike/html					# ***
-BBBIKE_CGI_RELURL=	/bbbike/cgi					# ***
-BBBIKE_IMAGES_RELURL=	/bbbike/images					# ***
-.endif
 BBBIKE_URL=		http://$(HOST)$(BBBIKE_CGI_RELURL)/bbbike.cgi
 # Which kind of images should be generated:
 IMAGE_SUFFIX=		gif # was: png					# ***
@@ -195,11 +171,7 @@ FONTS_LIST=		fonts-biokovo.list
 
 ######################################################################
 
-.if ${TARGET} != "devpc01"
-TPAGE?=			tpage --compile_ext=.ttc --compile_dir=/tmp/bbbikettc
-.else
-TPAGE?=			tpage
-.endif
+TPAGE?=		tpage --compile_ext=.ttc --compile_dir=/tmp/bbbikettc
 
 SCOPES=		brb b inner-b wide p
 
@@ -618,14 +590,6 @@ dist-any:	# build-all
 # Freetype 2.1.2 sollte nicht verwendet werden, da Textwinkel dort
 # falsch berechnet werden (benötigt ein Minus in Zeile 404 von
 # maplabel.c, mapserver 3.6.3)
-
-# To build mapserver on devpc01, use:
-# ./configure --with-gd=static,/home/slavenr/tmp/gd-2.0.12/ --enable-debug
-# However, the newest mapserver seems to be buggy. I had more succes with mapserver-3.6.4.
-# The configure line was:
-# ./configure  --without-ogr --with-gd=static,/home/slavenr/tmp/gd-2.0.23 --enable-debug
-# Another problem is the single .cpp file in the code. I just renamed it to .c and
-# removed the mapogr.cpp rule from the Makefile.
 
 # On bbbike.radzeit.de, use the mapserv-3.6.6 binary instead of the
 # mapserv-3.6.4 binary. The latter seems to segfault more often.
