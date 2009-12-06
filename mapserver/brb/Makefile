@@ -36,13 +36,6 @@ TARGET?=	local
 
 OSNAME!=	uname
 
-# Auto-set TARGET for some well-known rules
-.if make(dist-radzeit)
-TARGET=		radzeit
-.elif make(dist-radzeit.herceg.de)
-TARGET=		radzeit.herceg.de
-.endif
-
 # XXX Hmmm. This should be done automatically somehow.
 .if !exists(Makefile.${TARGET}.inc)
 # This line may fail for older pmake versions. Please do as this line
@@ -92,8 +85,6 @@ FONTS_LIST?=		fonts-biokovo.list
 RADZEIT_HOST=		radzeit.herceg.de
 RADZEIT_APACHE_DIR=	$(RADZEIT_APACHE_DIR_LOCAL)
 BBBIKE_MAPSERVER_URL=	http://radzeit.herceg.de/cgi-bin/mapserv
-BBBIKECGI_CONFIG=	$(RADZEIT_APACHE_DIR)/cgi-bin/bbbike.cgi.config
-BBBIKECGI_CONFIG_LOCAL=	$(BBBIKECGI_CONFIG)
 
 .endif
 
@@ -126,7 +117,6 @@ FONTS_LIST?=		fonts-biokovo.list				# ***
 .endif
 # The unix user of the webserver process:
 WWW_USER=		eserte						# ***
-TARGET_DIR=		${.CURDIR}
 
 .elif ${TARGET} == "radzeit" || ${TARGET} == "radzeit.herceg.de"
 
@@ -139,13 +129,9 @@ MAPSERVER_URL=		http://$(HOST)$(MAPSERVER_RELURL)
 #MAPSERVER_PROG_URL=	http://$(HOST)$(MAPSERVER_PROG_RELURL)
 BBBIKECGI_CONFIG=	$(RADZEIT_APACHE_DIR)/cgi-bin/bbbike.cgi.config
 BBBIKECGI_CONFIG_LOCAL=	$(RADZEIT_APACHE_DIR_LOCAL)/cgi-bin/bbbike.cgi.config
-.if ${TARGET} == "radzeit.herceg.de"
-BBBIKE_MAPSERVER_URL=	http://radzeit.herceg.de/cgi-bin/mapserv
-.endif
 MAPSERVER_PROG_RELURL=	$(BBBIKE_MAPSERVER_URL:C/^http:\/\/[^\/]+//)
 MAPSERVER_PROG_URL=	$(BBBIKE_MAPSERVER_URL)
 MAPSERVER_VERSION=	3.6.6
-# XXX should be changed to BBBike for real production
 IMAGE_DIR=		$(RADZEIT_APACHE_DIR)/BBBike/images
 BBBIKE_HTML_RELURL=	/BBBike/html
 BBBIKE_CGI_RELURL=	/cgi-bin
@@ -155,13 +141,11 @@ IMAGE_SUFFIX=		gif
 
 .if ${TARGET} == "radzeit"
 WWW_USER=		www
-TARGET_DIR=		${.CURDIR:H}/brb-radzeit
 .elif ${TARGET} == "radzeit.herceg.de"
 WWW_USER=		eserte
-TARGET_DIR=		${.CURDIR:H}/brb-radzeit.herceg.de
 .endif
 
-if ${TARGET} == "radzeit"
+.if ${TARGET} == "radzeit"
 FONTS_LIST=		fonts-radzeit.list
 .elif ${TARGET} == "radzeit.herceg.de" && exists(/etc/debian_version)
 FONTS_LIST=		fonts-debian.list
@@ -169,9 +153,11 @@ FONTS_LIST=		fonts-debian.list
 FONTS_LIST=		fonts-biokovo.list
 .endif
 
+.endif
+
 ######################################################################
 
-TPAGE?=		tpage --compile_ext=.ttc --compile_dir=/tmp/bbbikettc
+TPAGE?=		tpage --compile_ext=.ttc --compile_dir=/tmp/bbbikettc-${TARGET}
 
 SCOPES=		brb b inner-b wide p
 
@@ -452,11 +438,6 @@ sternfahrt2007/sternfahrt2007.map:	sternfahrt2007/sternfahrt2007-brb.map
 
 sternfahrt2007.map: sternfahrt2007/sternfahrt2007.map
 	[ -L $@ ] || ln -s sternfahrt2007/sternfahrt2007.map
-
-# XXX del:
-# sternfahrt2007/sternfahrt2007.map:	sternfahrt2007/.sternfahrt2007.map mkroutemap
-# 	${BRBDIR}/mkroutemap -force -scope region sternfahrt2007/.sternfahrt2007.map sternfahrt2007/sternfahrt2007.map || rm -f $@
-# 	chmod ugo+r $@
 
 sternfahrt2007/sternfahrt2007.html:	brb.html-tpl sternfahrt2007/sternfahrt2007.inc Makefile Makefile.${TARGET}.inc
 	$(TPAGE) $(ALL_TPL_DEFINES) --define INCLUDE_FILE=sternfahrt2007/sternfahrt2007.inc brb.html-tpl > $@
