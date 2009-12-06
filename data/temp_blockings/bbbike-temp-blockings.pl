@@ -14267,7 +14267,7 @@ userdel	q4::inwork 16360,-29489 16379,-29446
 EOF
      },
      { from  => 1243807200, # 2009-06-01 00:00
-       until => 1264978800, # 2010-02-01 00:00
+       until => 1259960685, # 2010-02-01 00:00 1264978800
        text  => 'L 076 Mahlow - Teltow zw. Abzw. Birkholz und Abzw. Großbeeren Straßenbau Vollsperrung 02.06.2009-31.01.2010 ',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -16950,6 +16950,53 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp 8479,11493 8481,11447 8389,11378
+EOF
+     },
+     { from  => 1259959719, # 2009-12-04 21:48
+       until => 1260140400, # 2009-12-07 00:00
+       text  => 'Richardplatz (Neukölln) und die Durchfahrt aller angrenzenden Straßen Rixdorfer Weihnachtsmarkt, Straße vollständig gesperrt (bis 6.12.2009, 24 Uhr)',
+       type  => 'gesperrt',
+       source_id => 'IM_014741',
+       file  => 'rixdorfer_weihnachtsmarkt.bbd',
+     },
+     { from  => 1212876000, # 2008-06-08 00:00
+       until => 1264978800, # 2010-02-01 00:00
+       text  => 'L 030 Bahnhofstraße OL Erkner, Erneuerung Eisenbahnbrücke Vollsperrung 09.06.2008-31.01.2010 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 34326,2915 34142,2742
+EOF
+     },
+     { from  => 1254952800, # 2009-10-08 00:00
+       until => 1261609200, # 2009-12-24 00:00
+       text  => 'L 792 Dorfstraße OD Blankenfelde, zw. Zossener Damm u. H.-Heine-Str. Straßenausbau Vollsperrung 09.10.2009-23.12.2009 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 10115,-8276 10448,-7582
+EOF
+     },
+     { from  => 1259449200, # 2009-11-29 00:00
+       until => 1283292000, # 2010-09-01 00:00
+       text  => 'B 183 Dresdner Straße Brücke über die Schwarze Elster in Bad Liebenwerda Brückenneubau Vollsperrung 30.11.2009-31.08.2010 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 12593,-99029 13053,-99051
+EOF
+     },
+     { from  => undef, # 
+       until => 1272664800, # 2010-05-01 00:00
+       text  => 'Baumaßnahmen in der Parkanlage am Schlachtensee, teilweise ist der Uferweg gesperrt (bis zum Frühjahr 2010)',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -2521,3637 -2396,3666 -2174,3718 -2014,3826 -1980,3872 -1974,3933 -1996,4063 -1944,4140 -1706,3971 -1624,3956 -1558,3965 -1468,3995 -1380,4108
+EOF
+     },
+     { from  => 1259794800, # 2009-12-03 00:00
+       until => 1260745199, # 2009-12-13 23:59
+       text  => 'Alt-Köpenicker Weihnachtsmarkt vom 4.12. bis zum 13.12.2009',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::temp 22111,4562 22162,4546 22214,4548
 EOF
      },
     );

@@ -714,15 +714,7 @@ userdel	q4::inwork 10422,12395 10476,12432
        undef,
        undef,
        undef,
-       {
-         'until' => 1264978800,
-         'text' => 'L 076 Mahlow - Teltow zw. Abzw. Birkholz und Abzw. Großbeeren Straßenbau Vollsperrung 02.06.2009-31.01.2010 ',
-         'from' => 1243807200,
-         'id' => 1684,
-         'data' => 'userdel	2::inwork 7955,-4250 7790,-3985 6012,-3393 5394,-3053
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'source_id' => 'IM_012907',
@@ -899,15 +891,7 @@ userdel	2::inwork 7160,11225 6851,11346
        undef,
        undef,
        undef,
-       {
-         'until' => 1259967600,
-         'text' => 'K 7346 Rudolf-Breitscheid-Str. OL Angermünde, zw. Pestalozzistr. u. Sternefelder Weg Kanal- und Straßenbau Vollsperrung 05.08.2009-04.12.2009 ',
-         'from' => 1249336800,
-         'id' => 1784,
-         'data' => 'userdel	q4::inwork 48657,68265 49566,68311
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1261177200,
          'text' => 'L 015 Schloßstr., Menzer Str. OD Rheinsberg, zw. Berliner Str. u. Kiefernweg Straßenbauarbeiten Vollsperrung 27.07.2009-18.12.2009 ',
@@ -1676,15 +1660,7 @@ userdel	2::temp 9852,12409 9869,12297 9890,12161
        undef,
        undef,
        undef,
-       {
-         'until' => 1259967600,
-         'text' => 'L 601 Finsterwalde - Doberlug-Kirchhain OD Lugau, zw. Abzw. Hennersdorfer Str. u. Abzw. Ha Straßenbauarbeiten Vollsperrung 09.11.2009-04.12.2009 ',
-         'from' => 1257634800,
-         'id' => 1987,
-         'data' => 'userdel	2::inwork 28028,-88225 26392,-88322 25763,-88254 25470,-88145 24969,-87998 24927,-87720
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1262300399,
          'text' => 'Voltairestr.: Durchfahrt wegen des Weihnachtsmarkts am Alexanderplatz nicht oder nur schwer möglich',
@@ -1716,15 +1692,7 @@ userdel	2::temp 9852,12409 9869,12297 9890,12161
        undef,
        undef,
        undef,
-       {
-         'until' => 1260054000,
-         'text' => 'B 096 Luckau - Baruth Brücke über die Schuge bei Rüdingsdorf Brückenneubau Vollsperrung 02.12.2009-05.12.2009 ',
-         'from' => 1259622000,
-         'id' => 1995,
-         'data' => 'userdel	2::inwork 29918,-54610 30409,-55818
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'until' => 1262300399,
@@ -1732,6 +1700,60 @@ userdel	2::temp 9852,12409 9869,12297 9890,12161
          'from' => undef,
          'id' => 1997,
          'data' => 'userdel	2::temp 8479,11493 8481,11447 8389,11378
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_014741',
+         'until' => 1260140400,
+         'text' => 'Richardplatz (Neukölln) und die Durchfahrt aller angrenzenden Straßen Rixdorfer Weihnachtsmarkt, Straße vollständig gesperrt (bis 6.12.2009, 24 Uhr)',
+         'from' => 1259959719,
+         'file' => 'rixdorfer_weihnachtsmarkt.bbd',
+         'id' => 1998,
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1264978800,
+         'text' => 'L 030 Bahnhofstraße OL Erkner, Erneuerung Eisenbahnbrücke Vollsperrung 09.06.2008-31.01.2010 ',
+         'from' => 1212876000,
+         'id' => 1999,
+         'data' => 'userdel	2::inwork 34326,2915 34142,2742
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1261609200,
+         'text' => 'L 792 Dorfstraße OD Blankenfelde, zw. Zossener Damm u. H.-Heine-Str. Straßenausbau Vollsperrung 09.10.2009-23.12.2009 ',
+         'from' => 1254952800,
+         'id' => 2000,
+         'data' => 'userdel	q4::inwork 10115,-8276 10448,-7582
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1283292000,
+         'text' => 'B 183 Dresdner Straße Brücke über die Schwarze Elster in Bad Liebenwerda Brückenneubau Vollsperrung 30.11.2009-31.08.2010 ',
+         'from' => 1259449200,
+         'id' => 2001,
+         'data' => 'userdel	2::inwork 12593,-99029 13053,-99051
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1272664800,
+         'text' => 'Baumaßnahmen in der Parkanlage am Schlachtensee, teilweise ist der Uferweg gesperrt (bis zum Frühjahr 2010)',
+         'from' => undef,
+         'id' => 2002,
+         'data' => 'userdel	2::inwork -2521,3637 -2396,3666 -2174,3718 -2014,3826 -1980,3872 -1974,3933 -1996,4063 -1944,4140 -1706,3971 -1624,3956 -1558,3965 -1468,3995 -1380,4108
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1260745199,
+         'text' => 'Alt-Köpenicker Weihnachtsmarkt vom 4.12. bis zum 13.12.2009',
+         'from' => 1259794800,
+         'id' => 2003,
+         'data' => 'userdel	2::temp 22111,4562 22162,4546 22214,4548
 ',
          'type' => 'gesperrt'
        }
