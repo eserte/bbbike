@@ -605,7 +605,6 @@ check-crontab:
 ######################################################################
 # dists
 
-# this obsoletes dist-radzeit and dist-radzeit.herceg.de
 #XXX remove the sternfahrt2005 productions to own rule
 dist-any:	# build-all
 	[ ! -d $(RADZEIT_DIST_DIR) ] || \
@@ -623,35 +622,6 @@ dist-any:	# build-all
 	chmod ugo+rx $(RADZEIT_DIST_DIR)/tmp
 	cd $(RADZEIT_DIST_DIR) && \
 	    $(MAKE) $(MAKEFLAGS) TARGET=$(TARGET) ABS_LOCAL_BBBIKE_DIR=$(ABS_LOCAL_BBBIKE_DIR) all sternfahrt2007
-
-#XXX obsolete
-dist-radzeit:	# build-all
-	[ ${TARGET} = "radzeit" ]
-	[ ! -d $(RADZEIT_DIST_DIR) ] && mkdir $(RADZEIT_DIST_DIR) || true
-	chmod ugo+rx $(RADZEIT_DIST_DIR)
-	cp -pf $(DISTFILES) fonts-radzeit.list $(RADZEIT_DIST_DIR)
-	cp -pR data $(RADZEIT_DIST_DIR)
-	cp -pR graphics $(RADZEIT_DIST_DIR)
-	-mkdir $(RADZEIT_DIST_DIR)/tmp
-	chmod ugo+rx $(RADZEIT_DIST_DIR)/tmp
-	cd $(RADZEIT_DIST_DIR) && $(MAKE) $(MAKEFLAGS) TARGET=radzeit
-
-#XXX obsolete
-dist-radzeit.herceg.de:	# build-all
-	[ ${TARGET} = "radzeit.herceg.de" ]
-	[ ! -d $(RADZEIT_DIST_DIR) ] && mkdir $(RADZEIT_DIST_DIR) || true
-	chmod ugo+rx $(RADZEIT_DIST_DIR)
-#	cp -pf $(DISTFILES) fonts-vran.list $(RADZEIT_DIST_DIR)
-	cp -pf $(DISTFILES) fonts-biokovo.list $(RADZEIT_DIST_DIR)
-	cp -pR data $(RADZEIT_DIST_DIR)
-	cp -pR graphics $(RADZEIT_DIST_DIR)
-	-mkdir $(RADZEIT_DIST_DIR)/tmp
-	chmod ugo+rx $(RADZEIT_DIST_DIR)/tmp
-	cd $(RADZEIT_DIST_DIR) && $(MAKE) $(MAKEFLAGS) TARGET=radzeit.herceg.de
-
-rsync-radzeit:
-	[ ! -d $(RADZEIT_DIST_DIR) ] && ( echo Please execute ${MAKE} dist-radzeit first; false ) || true
-	cd $(RADZEIT_DIST_DIR) && rsync -Pvzrt . $(BBBIKE_RADZEIT_USER)@$(BBBIKE_RADZEIT_HOST):$(RADZEIT_APACHE_DIR)/$(HTDOCS)/mapserver/brb/
 
 ######################################################################
 # Download: http://mapserver.gis.umn.edu/dist/mapserver-3.6.4.tar.gz
