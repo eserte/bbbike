@@ -34,7 +34,6 @@ $BBBIKE_WWW	   = 'http://www.bbbike.de';
 # list of additional WWW mirrors
 @BBBIKE_WWW_MIRRORS = ('http://bbbike.sourceforge.net/cgi-bin/bbbike.cgi',
 		       'http://bbbike.de/cgi-bin/bbbike.cgi',
-		       'http://www.rezic.de/cgi-bin/bbbike.cgi',
 		       'http://user.cs.tu-berlin.de/~eserte/bbbike/cgi/bbbike.cgi',
 		      );
 # WWW version, URL for direct access (sometimes www.bbbike.de does not work)
