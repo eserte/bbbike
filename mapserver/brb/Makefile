@@ -146,21 +146,16 @@ IMAGE_SUFFIX=		gif # was: png					# ***
 .if exists(/etc/debian_version)
 FONTS_LIST?=		fonts-debian.list
 .else
-#FONTS_LIST?=		fonts-vran.list					# ***
-FONTS_LIST?=		fonts-biokovo.list					# ***
+FONTS_LIST?=		fonts-biokovo.list				# ***
 .endif
 # The unix user of the webserver process:
 WWW_USER=		eserte						# ***
 TARGET_DIR=		${.CURDIR}
 
-.elif ${TARGET} == "radzeit" || ${TARGET} == "radzeit.herceg.de" || ${TARGET} == "radzeit-old"
+.elif ${TARGET} == "radzeit" || ${TARGET} == "radzeit.herceg.de"
 
 HOST=			$(RADZEIT_HOST)
-.if ${TARGET} == "radzeit-old"
-HTDOCS=			htdocs
-.else
 HTDOCS=			public
-.endif
 MAPSERVER_DIR=		$(RADZEIT_APACHE_DIR)/$(HTDOCS)/mapserver/brb
 MAPSERVER_RELURL=	/mapserver/brb
 MAPSERVER_URL=		http://$(HOST)$(MAPSERVER_RELURL)
@@ -182,7 +177,7 @@ BBBIKE_IMAGES_RELURL=	/BBBike/images
 BBBIKE_URL=		http://$(HOST)$(BBBIKE_CGI_RELURL)/bbbike.cgi
 IMAGE_SUFFIX=		gif
 
-.if ${TARGET} == "radzeit" || ${TARGET} == "radzeit-old"
+.if ${TARGET} == "radzeit"
 WWW_USER=		www
 TARGET_DIR=		${.CURDIR:H}/brb-radzeit
 .elif ${TARGET} == "radzeit.herceg.de"
@@ -190,17 +185,12 @@ WWW_USER=		eserte
 TARGET_DIR=		${.CURDIR:H}/brb-radzeit.herceg.de
 .endif
 
-.if ${TARGET} == "radzeit-old"
-FONTS_LIST=		fonts-radzeit-old.list
-.elif ${TARGET} == "radzeit"
+if ${TARGET} == "radzeit"
 FONTS_LIST=		fonts-radzeit.list
 .elif ${TARGET} == "radzeit.herceg.de" && exists(/etc/debian_version)
 FONTS_LIST=		fonts-debian.list
 .elif ${TARGET} == "radzeit.herceg.de"
-#FONTS_LIST=		fonts-vran.list
 FONTS_LIST=		fonts-biokovo.list
-.endif
-
 .endif
 
 ######################################################################
@@ -359,20 +349,10 @@ Makefile.${TARGET}.inc:	${ABS_LOCAL_BBBIKE_DIR}/Makefile \
 	touch $@
 	chmod ugo+r $@
 	echo "### DO NOT EDIT. Automatically created by Makefile" >> $@
-.if ${TARGET} == "radzeit-old"
-.error not supported anymore
-	echo "RSYNC=	rsync" >> $@
-	echo "BBBIKE_RADZEIT_USER=	root" >> $@
-#	echo "BBBIKE_RADZEIT_HOST=	130.149.231.37" >> $@
-## Only with faked /etc/hosts entry:
-	echo "BBBIKE_RADZEIT_HOST=	bbbike.radzeit.de" >> $@
-	echo "BBBIKE_RADZEIT_APACHE_DIR=	/var/www/domains/radzeit.de/www/" >> $@
-.else
 .for makefile_var in $(ADD_MAKEFILE_VARS)
 	echo -n "$(makefile_var)=	" >> $@
 	${MAKE} -f ${ABS_LOCAL_BBBIKE_DIR}/Makefile -V $(makefile_var) >> $@
 .endfor
-.endif
 .for bbbikevar_var in $(ADD_BBBIKEVAR_VARS)
 	echo -n "$(bbbikevar_var)=	" >> $@
 	perl -I${ABS_LOCAL_BBBIKE_DIR} -MBBBikeVar -e 'print $$BBBike::$(bbbikevar_var), "\n"' >> $@
@@ -627,10 +607,9 @@ dist-any:	# build-all
 # Download: http://mapserver.gis.umn.edu/dist/mapserver-3.6.4.tar.gz
 
 # Patches für 3.6.3/3.6.4 sind unter
-# vran:/usr/local/src/mapserver/private-patches* vorhanden
+# /mnt/i386/usr/local/src/from_vran/mapserver/private-patches* vorhanden
 
 # Um mapserver zu bauen, sind folgende configure-Aufrufe notwendig:
-# vran:              sh configure --with-freetype=/usr/local --with-jpeg=/usr/local --with-gd=/usr/local
 # bbbike.radzeit.de: sh configure --with-jpeg=/usr/src/jpeg-6b --with-freetype=/usr/X11R6
 
 # GD 2.0.x ist bevorzugt zu verwenden, da die Textausgabe dort
@@ -639,11 +618,6 @@ dist-any:	# build-all
 # Freetype 2.1.2 sollte nicht verwendet werden, da Textwinkel dort
 # falsch berechnet werden (benötigt ein Minus in Zeile 404 von
 # maplabel.c, mapserver 3.6.3)
-
-# To compile 3.7 from CVS
-# vran:           sh configure --with-freetype=/usr/local --with-jpeg=/usr/local --with-gd=/usr/local --with-png=/usr/local --with-xpm=/usr/X11R6 --with-ming=/usr/local
-# then hand-edit Makefile: MING_INC=-I/usr/local/include/ming
-# and add -lming to MING_LIB
 
 # To build mapserver on devpc01, use:
 # ./configure --with-gd=static,/home/slavenr/tmp/gd-2.0.12/ --enable-debug
