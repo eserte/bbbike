@@ -38,7 +38,9 @@ my $streets_track                    = "$bbbike_rootdir/tmp/streets.bbd";
 my $acc_streets_track                = "$bbbike_rootdir/tmp/streets-accurate.bbd";
 my $acc_cat_streets_track            = "$bbbike_rootdir/tmp/streets-accurate-categorized.bbd";
 my $acc_cat_split_streets_track      = "$bbbike_rootdir/tmp/streets-accurate-categorized-split.bbd";
-my $acc_cat_split_streets_2008_track = "$bbbike_rootdir/tmp/streets-accurate-categorized-split-since2008.bbd";
+my %acc_cat_split_streets_byyear_track;
+$acc_cat_split_streets_byyear_track{2008} = "$bbbike_rootdir/tmp/streets-accurate-categorized-split-since2008.bbd";
+$acc_cat_split_streets_byyear_track{2009} = "$bbbike_rootdir/tmp/streets-accurate-categorized-split-since2009.bbd";
 my $other_tracks                     = "$bbbike_rootdir/tmp/other-tracks.bbd";
 
 use vars qw($hm_layer);
@@ -148,11 +150,15 @@ sub add_button {
 		   add_any_streets_bbd($acc_cat_split_streets_track);
 	       }
 	      ],
-	      [Button => "Add streets-accurate-categorized-split-since2008.bbd",
-	       -command => sub {
-		   add_any_streets_bbd($acc_cat_split_streets_2008_track);
-	       },
-	      ],
+	      (map {
+		  my $year = $_;
+		  [Button => "Add streets-accurate-categorized-split-since".$year.".bbd",
+		   -command => sub {
+		       add_any_streets_bbd($acc_cat_split_streets_byyear_track{$year});
+		   },
+		  ]
+	      } (2008, 2009)
+	      ),
 	      [Cascade => "Add other streets...bbd", -menuitems =>
 	       [
 		[Button => "Add streets.bbd (all GPS tracks)",
