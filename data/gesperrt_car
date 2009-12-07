@@ -929,3 +929,6 @@ Brandenburger Str. -> Jägerstr.: Fußgängerzone	3::igndisp -12883,-976 -13005,-10
 Jägerstr. -> Jägerstr.: Fußgängerzone	3::igndisp -13025,-901 -13005,-1002 -12984,-1110
 Jägerstr. -> Brandenburger Str.: Fußgängerzone	3::igndisp -13025,-901 -13005,-1002 -12883,-976
 Eichhornstr. - Potsdamer: abbiegen verboten	3 8232,11414 8226,11458 8145,11438
+Mittelstreifen	3nocross::ignrte 11543,10015 11623,9841 11673,9720
+Kottbusser Damm -> Schinkestr.: Mittelstreifen	3::igndisp 11543,10015 11623,9841 11734,9856
+Schinkestr. -> Kottbusser Damm: Mittelstreifen	3::igndisp 11734,9856 11623,9841 11673,9720

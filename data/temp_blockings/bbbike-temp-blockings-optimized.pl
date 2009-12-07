@@ -522,16 +522,7 @@ userdel	1::inwork 10614,19907 10742,19632
        undef,
        undef,
        undef,
-       {
-         'until' => undef,
-         'text' => 'Reichenberger Str., Einbahnstraße Richtung Kottbusser Tor',
-         'from' => undef,
-         'id' => 1563,
-         'data' => '#: last_checked: 2009-11-10
-userdel	1::inwork 12229,10014 12398,9938 12556,9862
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1703,15 +1694,7 @@ userdel	2::temp 9852,12409 9869,12297 9890,12161
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_014741',
-         'until' => 1260140400,
-         'text' => 'Richardplatz (Neukölln) und die Durchfahrt aller angrenzenden Straßen Rixdorfer Weihnachtsmarkt, Straße vollständig gesperrt (bis 6.12.2009, 24 Uhr)',
-         'from' => 1259959719,
-         'file' => 'rixdorfer_weihnachtsmarkt.bbd',
-         'id' => 1998,
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1264978800,
          'text' => 'L 030 Bahnhofstraße OL Erkner, Erneuerung Eisenbahnbrücke Vollsperrung 09.06.2008-31.01.2010 ',
