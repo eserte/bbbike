@@ -1740,18 +1740,30 @@ sub advanced_coord_menu {
 	     -command => sub { choose_edit_any_mode() },
 	     );
     }
-    $bpcm->cascade(-label => "Obsolete Editierfunktionen");
-    {
-	my $o_bpcm = $bpcm->Menu(-title => "Obsolete Editierfunktionen");
+    my $obsolete_menu;
+    for my $def ({menu => "Editierfunktionen",
+		  items => [{Label => M"Ampelschaltung",
+			     Type  => 'ampel'},
+			   ],
+		 },
+		 {menu => "Obsolete Editierfunktionen",
+		  items => [{Label => M"Radwege",
+			     Type  => 'radweg'},
+			    {Label => M"Label",
+			     Type  => 'label'},
+			    {Label => M"Vorfahrt",
+			     Type  => 'vorfahrt'},
+			   ],
+		  var => \$obsolete_menu,
+		 }) {
+	my($menu_label, $menu_items, $var_ref) = @{$def}{qw(menu items var)};
+	$bpcm->cascade(-label => $menu_label);
+	my $o_bpcm = $bpcm->Menu(-title => $menu_label);
+	if ($var_ref) {
+	    $$var_ref = $o_bpcm;
+	}
 	$bpcm->entryconfigure("last", -menu => $o_bpcm);
-	foreach my $def ({Label => M"Radwege",
-			  Type  => 'radweg'},
-			 {Label => M"Ampelschaltung",
-			  Type  => 'ampel'},
-			 {Label => M"Label",
-			  Type  => 'label'},
-			 {Label => M"Vorfahrt",
-			  Type  => 'vorfahrt'}) {
+	foreach my $def (@$menu_items) {
 	    $o_bpcm->cascade(-label => $def->{Label});
 	    my $m = $o_bpcm->Menu(-title => $def->{Label});
 	    $o_bpcm->entryconfigure('last', -menu => $m);
@@ -1780,7 +1792,9 @@ sub advanced_coord_menu {
 			    warn $@ if $@;
 			});
 	}
-	$o_bpcm->checkbutton
+    }
+    {
+	$obsolete_menu->checkbutton
 	    (-label => M"Point-Editor",
 	     -variable => \$special_edit,
 	     -onvalue => "point",
@@ -1802,7 +1816,7 @@ sub advanced_coord_menu {
 		     undef $point_editor;
 		 }
 	     });
-	$o_bpcm->command
+	$obsolete_menu->command
 	    (-label => M"Beziehungs-Editor",
 	     -command => sub {
 		 require BBBikeEdit;
