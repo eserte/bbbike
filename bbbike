@@ -162,12 +162,16 @@ BEGIN {
 BEGIN {
     eval q{ use Tk; };
     if ($@) {
-	warn $@;
-	if ($^O eq 'MSWin32' || -t STDIN) {
-	    warn "Please enter RETURN to exit.\n";
-	    <STDIN>;
+	if ($^C) {
+	    die $@;
+	} else {
+	    warn $@;
+	    if ($^O eq 'MSWin32' || -t STDIN) {
+		warn "Please enter RETURN to exit.\n";
+		<STDIN>;
+	    }
+	    CORE::exit(1);
 	}
-	CORE::exit(1);
     }
 }
 
