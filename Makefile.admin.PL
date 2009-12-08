@@ -630,7 +630,7 @@ DEB_DATA=	libstring-approx-perl libdbd-xbase-perl libxml-parser-perl \
 		libclass-accessor-perl libarchive-zip-perl \
 		libtemplate-perl libxml-libxml-perl libxml-simple-perl \
 		libyaml-perl libyaml-syck-perl libjson-xs-perl \
-		libtext-unidecode-perl libdata-compare-perl
+		libtext-unidecode-perl libdata-compare-perl agrep
 DEB_MISC=	libdate-calc-perl
 # If apache2 is installed, then do not install apache-perl!
 DEB_CGI=	libapache-session-perl apache-perl libfile-counterfile-perl
