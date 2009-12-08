@@ -653,12 +653,18 @@ DEB_ALL_CGI=	$(DEB_DEVEL)      \
 		$(DEB_MAPSERVER)  
 
 install-debian-for-cgi:	install-debian-packages-for-cgi \
-			install-debian-perlmods-for-cgi
+			install-debian-owndebs-for-cgi
 
 install-debian-packages-for-cgi:
-	apt-get install ${DEB_ALL_CGI}
+	aptitude install ${DEB_ALL_CGI}
 
-install-debian-perlmods-for-cgi:
+# Assumes own deb packages are in ~/work/mydebs
+install-debian-owndebs-for-cgi:
+	cd ${HOME}/work/mydebs && \
+	    dpkg --install ${OWN_DEB}
+
+# Not used:
+install-debian-perlmods-for-cgi-via-cpan:
 	cpan CPAN
 	cpan PDF::Image::GIFImage Apache::Session::Counted \
 	     Object::Iterate Palm::PalmDoc SVG WWW::Mechanize::FormFiller
