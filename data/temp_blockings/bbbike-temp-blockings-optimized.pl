@@ -1663,10 +1663,11 @@ userdel	2::temp 9852,12409 9869,12297 9890,12161
        },
        {
          'until' => 1262300399,
-         'text' => 'Gendarmenmarkt: Weihnachtsmarkt, gesperrt',
+         'text' => 'Gendarmenmarkt: Weihnachtsmarkt, Durchfahrt nicht oder nur schwer möglich',
          'from' => 1258207217,
          'id' => 1989,
          'data' => 'userdel	2::temp 9526,11911 9668,11928
+userdel	2::temp 9516,12010 9656,12021
 ',
          'type' => 'gesperrt'
        },

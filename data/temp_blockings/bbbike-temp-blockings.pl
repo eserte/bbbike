@@ -16878,10 +16878,11 @@ EOF
      },
      { from  => 1258207217, # 2009-11-14 15:00
        until => 1262300399, # 2009-12-31 23:59
-       text  => 'Gendarmenmarkt: Weihnachtsmarkt, gesperrt',
+       text  => 'Gendarmenmarkt: Weihnachtsmarkt, Durchfahrt nicht oder nur schwer möglich',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp 9526,11911 9668,11928
+userdel	2::temp 9516,12010 9656,12021
 EOF
      },
      { from  => undef, # 
