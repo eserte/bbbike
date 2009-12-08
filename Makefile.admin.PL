@@ -196,10 +196,11 @@ BBBIKE_RADZEIT_DEST2=		$(BBBIKE_RADZEIT_USER)@$(BBBIKE_RADZEIT_HOST):$(BBBIKE_RA
 
 RSYNC=rsync
 RSYNC_DATA_CMD=cd data && \
-	    $(RSYNC) --verbose --progress --compress --backup --perms --times \
+	    $(RSYNC) --verbose --progress --recursive --compress --backup --perms --times \
 		--exclude "*~" --exclude "RCS/" --exclude "*.st" \
-		--exclude "*-orig" --exclude "*.inx" --exclude ".*" --exclude "Makefile*" \
-		*
+		--exclude "*-orig" --exclude "*.inx" --exclude ".check*" \
+		--exclude ".*.tmp" --exclude ".create_fragezeichen" --exclude ".???ignore" --exclude "Makefile*" \
+		* .modified
 RSYNC_RADZEIT_DATA=cd data_berlin_and_potsdam && $(RSYNC) -Pvzr . $(BBBIKE_RADZEIT_DEST)/data/
 RSYNC_RADZEIT_TEST_DATA=cd data_berlin_and_potsdam && $(RSYNC) -Pvzr . $(BBBIKE_RADZEIT_DEST2)/data/
 
