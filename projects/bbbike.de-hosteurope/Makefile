@@ -93,7 +93,7 @@ DEPLOY_LOCAL_DATA_TARGETS=	prepare-bbbike-data \
 				prepare-bbbike-dist \
 				test-local
 
-SSH_PROG_AND_ARGS?=	ssh -2 -p 5022
+SSH_PROG_AND_ARGS?=	ssh
 RSYNC_PROG?=	rsync
 RSYNC_ARGS=	-e "${SSH_PROG_AND_ARGS}" -Pvz -r -t --links --copy-unsafe-links --delay-updates --exclude-from .rsync.exclude
 #RSYNC_ARGS=	-e "${SSH_PROG_AND_ARGS}" -Pvz -r -t --links --copy-unsafe-links --exclude-from .rsync.exclude
@@ -232,6 +232,7 @@ check-rsync-ok:
 .endif
 
 do-rsync:
+	-@mkdir -p .last
 	-@date >> .last/start-do-rsync
 	${RSYNC} ${RSYNC_ARGS} ${RSYNC_SRCDEST}
 	-@date >> .last/do-rsync
@@ -264,6 +265,7 @@ RSYNC_BBBIKE_DATA_RULES=check-rsync-data-ok \
 rsync-bbbike-data:	$(RSYNC_BBBIKE_DATA_RULES)
 
 do-rsync-bbbike-data:
+	-@mkdir -p .last
 	-@date >> .last/start-do-rsync-bbbike-data
 	${RSYNC} ${RSYNC_ARGS} \
 	    BBBike/data/ ${RSYNC_DEST}/BBBike/data/
@@ -273,6 +275,7 @@ post-rsync-bbbike-data:
 # Nothing to do anymore...
 
 rsync-temp-blockings:
+	-@mkdir -p .last
 	-@date >> .last/start-post-rsync-bbbike-data
 	${RSYNC} ${RSYNC_ARGS} \
 	    BBBike/data/temp_blockings/ ${RSYNC_DEST}/BBBike/data/temp_blockings/
@@ -579,6 +582,7 @@ prepare-additional-dist-images:
 test:	test-on-remote test-from-local
 
 test-on-remote:
+	-@mkdir -p .last
 	-@date >> .last/start-test-on-remote
 	${SSH_PROG_AND_ARGS} -l ${BBBIKE_SERVER_USER} ${BBBIKE_SERVER_SSH_HOST} '\
 	cd ${BBBIKE_SERVER_APACHE_DIR}/BBBike/t && \
@@ -595,6 +599,7 @@ test-on-remote-full:
 	$(MAKE) test-on-remote TESTS_ON_REMOTE="$(TESTS)"
 
 test-from-local:
+	-@mkdir -p .last
 	-@date >> .last/start-test-from-local
 	cd ${.CURDIR}/BBBike/t && \
 	BBBIKE_TEST_CGIDIR=http://${BBBIKE_SERVER_HOST}/cgi-bin \
