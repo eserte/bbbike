@@ -4155,6 +4155,7 @@ sub display_route {
 		(NoAttr => 1,
 		 RootName => "BBBikeRoute",
 		 XMLDecl => "<?xml version='1.0' encoding='$xml_encoding' standalone='yes'?>",
+		 SuppressEmpty => 1, # e.g. Trafficlights may be undefined
 		)->XMLout($new_res);
 	}
 	return;
