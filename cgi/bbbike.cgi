@@ -1231,6 +1231,14 @@ if (defined $q->param('begin')) {
     get_kreuzung();
 } elsif (defined $q->param('browser')) {
     show_user_agent_info();
+} elsif (defined $q->param('init_environment')) {
+    http_header(-type => 'text/plain', @no_cache);
+    if ($apache_session_module eq 'Apache::Session::Counted') {
+	require Apache::Session::Counted;
+	# XXX make configurable, see below
+	Apache::Session::CountedStore->tree_init("/tmp/bbbike-sessions-$<","1");
+    }
+    my_exit(0);
 } else {
     choose_form();
 }
