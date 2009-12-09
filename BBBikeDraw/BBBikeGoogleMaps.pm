@@ -26,6 +26,8 @@ use vars qw($bbbike_googlemaps_url $maptype);
 if (!defined $bbbike_googlemaps_url) {
     if ($ENV{SERVER_NAME} && $ENV{SERVER_NAME} eq 'www.herceg.de' && $ENV{REMOTE_ADDR} eq '192.168.1.5') {
 	$bbbike_googlemaps_url = "http://localhost/~eserte/bbbike/cgi/bbbikegooglemap.cgi";
+    } elsif ($ENV{SERVER_NAME} && $ENV{SERVER_NAME} =~ m{^user.cs.tu-berlin.de$}) {
+	($bbbike_googlemaps_url = $ENV{SCRIPT_NAME}) =~ s{[^/]+$}{bbbikegooglemap.cgi};
     } else {
 	# Note that this only works if there's no redirection
 	# involved:
