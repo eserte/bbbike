@@ -26,7 +26,7 @@
 #BBBIKE_ROOT_DIR?=	$(HOME)/src/bbbike
 BBBIKE_ROOT_DIR?=	${.CURDIR}/../..
 CURDIR=			${.CURDIR}
-LOCAL_URL?=		http://bbbike.herceg.de
+LOCAL_URL?=		http://bbbike.hosteurope.herceg.de
 LOCAL_CGI_URL?=		${LOCAL_URL}/cgi-bin
 LOCAL_HTML_URL?=	${LOCAL_URL}/BBBike
 DATA_DIR=		data
@@ -95,8 +95,8 @@ DEPLOY_LOCAL_DATA_TARGETS=	prepare-bbbike-data \
 
 SSH_PROG_AND_ARGS?=	ssh -2 -p 5022
 RSYNC_PROG?=	rsync
-#RSYNC_ARGS=	-e "${SSH_PROG_AND_ARGS}" -Pvz -r -t --links --copy-unsafe-links --delay-updates --exclude-from .rsync.exclude
-RSYNC_ARGS=	-e "${SSH_PROG_AND_ARGS}" -Pvz -r -t --links --copy-unsafe-links --exclude-from .rsync.exclude
+RSYNC_ARGS=	-e "${SSH_PROG_AND_ARGS}" -Pvz -r -t --links --copy-unsafe-links --delay-updates --exclude-from .rsync.exclude
+#RSYNC_ARGS=	-e "${SSH_PROG_AND_ARGS}" -Pvz -r -t --links --copy-unsafe-links --exclude-from .rsync.exclude
 RSYNC_ARGS_MS=	${RSYNC_ARGS:S/.rsync.exclude/\/tmp\/mapserver.rsync.exclude/}
 RSYNC_DEST?=	${BBBIKE_SERVER_USER}@${BBBIKE_SERVER_SSH_HOST}:${BBBIKE_SERVER_APACHE_DIR}
 RSYNC_SRCDEST?=	. ${RSYNC_DEST}
@@ -144,7 +144,7 @@ TARGET=hosteurope
 .if ${HOST} == "devpc01.iconmobile.de"
 TARGET=devpc01
 .else
-TARGET=bbbike.herceg.de
+TARGET=bbbike.hosteurope.herceg.de
 .endif
 .endif
 .endfor
@@ -177,10 +177,10 @@ TARGET=hosteurope
 .if ${HOST} == "devpc01.iconmobile.de"
 TARGET=devpc01
 .else
-TARGET=bbbike.herceg.de
+TARGET=bbbike.hosteurope.herceg.de
 .endif
 .else
-.error "Please set TARGET to hosteurope or bbbike.herceg.de"
+.error "Please set TARGET to hosteurope or bbbike.hosteurope.herceg.de"
 .endif
 .endif
 
@@ -191,6 +191,8 @@ LOCAL_CGI_URL=	http://localhost:8080/bbbike/cgi
 LOCAL_HTML_URL=	http://localhost:8080/bbbike
 DATA_DIR=	data
 .endif
+
+LOCAL_MAPSERVER_URL=	http://www/cgi-bin/mapserv
 
 # The bbbike.cgi to test (stable or beta)
 BBBIKECGI=		bbbike.cgi
@@ -248,7 +250,7 @@ rsync-tests:
 	perl -pe 's{^public/mapserver/}{}' $> > $@
 
 check-rsync-mapserver:
-	fgrep -q -s 'SHAPEPATH "/root/work/bbbike-webserver/public/mapserver/brb/data"' ${CURDIR}/$(HTDOCS)/mapserver/brb/brb.map
+	fgrep -q -s 'SHAPEPATH "${BBBIKE_SERVER_APACHE_DIR}public/mapserver/brb/data"' ${CURDIR}/$(HTDOCS)/mapserver/brb/brb.map
 
 check-rsync-data-ok:
 	true
@@ -365,6 +367,9 @@ prepare-bbbike-dist-prog-bbbike-cgi:
 	rm -f ${CURDIR}/cgi-bin/bbbike2.cgi.config
 	cd ${CURDIR}/cgi-bin && ln -s ../BBBike/cgi/bbbike2.cgi.config
 	chmod ugo+r ${CURDIR}/BBBike/cgi/bbbike2.cgi.config
+# Create bbbikegooglemap2.cgi link
+	rm -f ${CURDIR}/cgi-bin/bbbikegooglemap2.cgi
+	cd ${CURDIR}/cgi-bin && ln -s bbbikegooglemap.cgi bbbikegooglemap2.cgi
 # Create bbbike-test.cgi link
 	rm -f ${CURDIR}/cgi-bin/bbbike-test.cgi
 	cd ${CURDIR}/cgi-bin && ln -s bbbike.cgi bbbike-test.cgi
@@ -508,7 +513,7 @@ prepare-mapserver-dist-main:
 prepare-mapserver-dist-local-main:
 	touch ${CURDIR}/.not_rsyncable
 	cd ${BBBIKE_ROOT_DIR}/mapserver/brb && \
-	    ${MAKE} dist-any TARGET=bbbike.herceg.de
+	    ${MAKE} dist-any TARGET=bbbike.hosteurope.herceg.de
 	cp -Rpf /tmp/radzeit_mapserver_dist/* ${CURDIR}/$(HTDOCS)/mapserver/brb/
 	chmod 777 ${CURDIR}/$(HTDOCS)/mapserver/brb
 	chmod 777 ${CURDIR}/$(HTDOCS)/mapserver/brb/tmp
@@ -611,11 +616,8 @@ test-on-remote-and-send-mail:
 		${TESTS} | mail slaven@rezic.de ) & \
 	'
 
-.if exists($(HOME)/work/Test-Harness-Parallel/Test-Harness-Parallel.pm)
 test-local: test-local-parallel
-.else
-test-local: test-local-serial
-.endif
+#test-local: test-local-serial
 
 test-local-serial:
 	cd ${.CURDIR}/BBBike/t && \
@@ -627,8 +629,6 @@ test-local-serial:
 	    perl -MTest::Harness -e 'runtests(@ARGV)' \
 		${TESTS}
 
-# Very experimental! Seems to be somewhat faster on my machine:
-# 11 1/2 minutes vs. 16 minutes for test-local-serial
 test-local-parallel:
 	cd ${.CURDIR}/BBBike/t && \
 	BBBIKE_TEST_CGIDIR=${LOCAL_CGI_URL} \
@@ -636,8 +636,7 @@ test-local-parallel:
 	BBBIKE_TEST_WAPURL=${LOCAL_CGI_URL}/wapbbbike.cgi \
 	BBBIKE_TEST_MAPSERVERURL=${LOCAL_MAPSERVER_URL} \
 	BBBIKE_TEST_HTMLDIR=${LOCAL_HTML_URL} \
-	    perl $(HOME)/work/Test-Harness-Parallel/Test-Harness-Parallel.pm \
-		${TESTS}
+	    prove -j3 ${TESTS}
 
 server-permissions:
 	${SSH_PROG_AND_ARGS} -l ${BBBIKE_SERVER_USER} ${BBBIKE_SERVER_SSH_HOST} '\

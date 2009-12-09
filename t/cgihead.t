@@ -49,7 +49,7 @@ my @prog = qw(
 	      bbbike-snapshot.cgi
 	      bbbikegooglemap.cgi
 	     );
-if ($cgi_dir !~ m{\Qradzeit.herceg.de}) {
+if ($cgi_dir !~ m{(bbbike.hosteurope|radzeit)\Q.herceg.de}) {
     push @prog, "bbbikegooglemap2.cgi";
 }
 
