@@ -231,7 +231,7 @@ if (defined $dimfile) {
     require Data::Dumper;
     open(DIM, ">$dimfile") or die "Can't write to $dimfile: $!";
     while(my($k,$v) = each %$draw) {
-	delete $draw->{$k} if $k =~ /^_/;
+	delete $draw->{$k} if $k =~ /^(_|Image$)/;
     }
     print DIM Data::Dumper->Dumpxs([$draw], ['draw']);
     close DIM;
