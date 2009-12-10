@@ -17,6 +17,8 @@
 #
 # Start of map file for small devices (e.g. ipaq)
 #
+MAP
+
 NAME [% MAPNAME %]
 STATUS ON
 SIZE [% IMGWIDTH %] [% IMGHEIGHT %]
@@ -26,11 +28,31 @@ SHAPEPATH "[% MAPSERVER_DIR %]/data"
 IMAGECOLOR [% IMAGECOLOR %]
 FONTSET "[% MAPSERVER_DIR %]/[% FONTS_LIST %]"
 
+[%# NOTE: IMAGE_SUFFIX => type of *input* images -%]
+[%#       IMAGE_TYPE   => type of *output* image -%]
+[% IF NEED_PNG_NOALPHA_HACK %]
 # you may need to change this to match your MapServer build
 [% UNLESS IMAGE_TYPE.defined; IMAGE_TYPE = "png"; END -%]
 [%# some (all?) GD versions cannot handle alpha channels well ... -%]
-[% IF IMAGE_TYPE == "png"; SET NOALPHA = "_noalpha"; ELSE; SET NOALPHA = ""; END -%]
+[% IF IMAGE_SUFFIX == "png"; SET NOALPHA = "_noalpha"; ELSE; SET NOALPHA = ""; END -%]
+[% SET TRANSPARENCY_ALPHA = "" -%]
 IMAGETYPE [% IMAGE_TYPE %]
+
+[% ELSE %]
+
+OUTPUTFORMAT
+  NAME png
+  MIMETYPE image/png
+  DRIVER GD/PNG
+  EXTENSION png
+  IMAGEMODE RGB
+  TRANSPARENT FALSE
+END
+IMAGETYPE png
+
+[% SET TRANSPARENCY_ALPHA = "TRANSPARENCY ALPHA" -%]
+
+[% END %]
 
 #
 # Projection definition, consult the PROJ.4 documentation for parameter discussion
