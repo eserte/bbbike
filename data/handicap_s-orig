@@ -7,6 +7,7 @@
 # Vorübergehende Einschränkungen
 #
 #: temporary vvv
+# 
 #: last_checked: 2009-11-13
 Jägerstr.: Bauarbeiten, Fahrbahn Richtung Westen gesperrt	q4::inwork; 9394,11996 9201,11968
 # XXX del #: last_checked: 2009-11-13 Glinkastr.: Bauarbeiten, Fahrbahn Richtung Süden gesperrt	q4::inwork; 9201,11968 9208,11872
@@ -23,12 +24,21 @@ Varian-Fry-Str.: Baustelle, Fahrbahn gesperrt	q4::inwork 8389,11378 8374,11479
 #: last_checked: 2009-11-08
 General-Pape-Str.: Baustelle, Fahrbahn Richtung Norden gesperrt	q4::inwork; 7959,7609 7921,7728 7950,7840
 # XXX del #: last_checked: 2009-11-08 Matkowskystr.: Baustelle, Fahrbahn gesperrt	q4::inwork 14530,11137 14509,11060
-#: last_checked: 2009-12-08
+#: last_checked: 2009-12-15
+#: XXX: am 2009-12-15 wird die Straße eröffnet!
+#: XXX Steht die Ampel an der Wilhelmstr. schon?
 Französische Str.: Bauarbeiten, Gehweg ist schon passierbar	q4::inwork 8901,12008 9076,12054
 #: last_checked: 2009-12-04
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 9475,12365 9462,12481 9454,12558
 #: last_checked: 2009-12-04
 Universitätsstr.: wegen Bauarbeiten Richtung Unter den Linden gesperrt	q4::inwork; 9580,12581 9601,12380
+#: by: Uta Rahmann vvv
+#: next_check: 2010-10-01 vvv
+Varziner Str.: Bauarbeiten, Einbahnstraßenregelung zwischen Bundesallee und Varziner Platz (offen Richtung Südwestkorso)	q4::inwork; 5458,7866 5356,7862
+Varziner Platz: Bauarbeiten, es muss geschoben werden	q4::inwork 5458,7866 5492,7868 5517,7869
+#: next_check ^^^
+#: by: ^^^
+# 
 #: temporary ^^^
 ######################################################################
 #: XXX es ist zu erwarten, dass hier der Wuhlewanderweg verbessert wird: vvv

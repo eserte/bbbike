@@ -1208,8 +1208,8 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
          'type' => 'gesperrt'
        },
        {
-         'until' => 1261436400,
-         'text' => 'L 621 Döllinger Straße OL Hohenleipisch, zw. Goethestr. u. Abzw. L62 Berliner Str. Straßen- und Kanalarbeiten Vollsperrung 24.08.2009-21.12.2009 ',
+         'until' => 1270072800,
+         'text' => 'L 621 Döllinger Straße OL Hohenleipisch, zw. Goethestr. u. Abzw. L62 Berliner Str. Straßen- und Kanalarbeiten Vollsperrung 24.08.2009-31.03.2010 ',
          'from' => 1250978400,
          'id' => 1848,
          'data' => 'userdel	q4::inwork 23464,-101227 23305,-100904 23220,-100874
@@ -1491,10 +1491,10 @@ userdel	q4::inwork; 10829,18083 10907,18109 10938,18147 10989,18172 11137,18358 
        {
          'source_id' => 'IM_014421',
          'until' => 1270072799,
-         'text' => 'Neustädtische Kirchstr. (Mitte) in beiden Richtungen zwischen Dorotheenstr. und Unter den Linden Baustelle, Straße vollständig gesperrt. Ebenfalls in beiden Richtungen gesperrt: Dorotheenstr. zwischen Neustädtische Kirchstr. und Schadowstr (bis Ende 03/2010)',
-         'from' => 1258835854,
+         'text' => 'Neustädtische Kirchstr. (Mitte) Richtung Reichtagsufer zwischen Dorotheenstr. und Unter den Linden Baustelle, Fahrtrichtung gesperrt (bis Ende 03/2010)',
+         'from' => 1260481458,
          'id' => 1946,
-         'data' => 'userdel	q4::inwork 9141,12320 9130,12433 9123,12500 9008,12485
+         'data' => 'userdel	q4::inwork; 9141,12320 9130,12433 9123,12500
 ',
          'type' => 'handicap'
        },
@@ -1522,10 +1522,10 @@ userdel	q4::inwork; 10829,18083 10907,18109 10938,18147 10989,18172 11137,18358 
        undef,
        {
          'until' => 1261177200,
-         'text' => 'Naumannstraße zwischen Leuthener Straße und Tempelhofer Weg gesperrt, Baustelle, Dauer: 08.10.2009 07:00 Uhr bis 18.12.2009 ',
+         'text' => 'Naumannstraße zwischen Leuthener Straße und Tempelhofer Weg in Richtung Sachsendamm gesperrt, Baustelle, Dauer: 08.10.2009 07:00 Uhr bis 18.12.2009 ',
          'from' => 1254891600,
          'id' => 1953,
-         'data' => 'userdel	q4::inwork 7716,8356 7716,8048 7717,7879
+         'data' => 'userdel	q4::inwork; 7716,8356 7716,8048 7717,7879
 ',
          'type' => 'handicap'
        },
@@ -1621,15 +1621,7 @@ userdel	2::inwork 14835,10272 14888,10385
        undef,
        undef,
        undef,
-       {
-         'until' => 1260313200,
-         'text' => 'L 239 Kerkow - Joachimsthal Bahnübergang Kerkow Gleiserneuerung Vollsperrung 06.12.2009 und 08.12.2009',
-         'from' => 1259967600,
-         'id' => 1976,
-         'data' => 'userdel	2::inwork 48237,70892 48147,70935 48092,70962
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        {
@@ -1738,6 +1730,44 @@ userdel	2::temp 9516,12010 9656,12021
          'from' => 1259794800,
          'id' => 2003,
          'data' => 'userdel	2::temp 22111,4562 22162,4546 22214,4548
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_014764',
+         'until' => 1260917999,
+         'text' => 'Rosenthaler Str. (Mitte) Richtung Rosenthaler Platz zwischen Neue Schönhauser Str. und Weinmeisterstr. Baustelle, Fahrtrichtung gesperrt (bis Mitte 12.2009)',
+         'from' => 1260481636,
+         'id' => 2004,
+         'data' => 'userdel	q4::inwork; 10317,13248 10350,13376
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_014785',
+         'until' => 1260917999,
+         'text' => 'Zeltinger Str. (Frohnau) Richtung Zeltinger Platz zwischen Schönfließer Str. und Zerndorfer Weg Baustelle, Fahrtrichtung gesperrt (bis Mitte 12.2009)',
+         'from' => 1260481719,
+         'id' => 2005,
+         'data' => 'userdel	q4::inwork; 3112,26253 3057,26075 2994,25873 2941,25822
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1260572400,
+         'text' => 'B 096 Luckau - Baruth Brücke über die Schuge bei Rüdingsdorf Brückenneubau Vollsperrung 11.12.2009-11.12.2009 ',
+         'from' => 1260399600,
+         'id' => 2006,
+         'data' => 'userdel	2::inwork 29918,-54610 30409,-55818
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1261522800,
+         'text' => 'L 029 Lanke - Wandlitz Durchlass bei Ützdorf Erneuerung Durchlass Vollsperrung 10.12.2009-22.12.2009 ',
+         'from' => 1260313200,
+         'id' => 2007,
+         'data' => 'userdel	2::inwork 18702,39267 19045,39387
 ',
          'type' => 'gesperrt'
        }
