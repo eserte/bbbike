@@ -199,6 +199,7 @@ sub get_html {
 	 '78.47.225.30'	      => "ABQIAAAACNG-XP3VVgdpYda6EwQUyhTTdIcL8tflEzX084lXqj663ODsaRSCKugGasYn0ZdJkWoEtD-oJeRhNw",
 	 'bbbike.de'	      => 'ABQIAAAACNG-XP3VVgdpYda6EwQUyhRfQt6AwvKXAVZ7ZsvglWYeC-xX5BROlXoba_KenDFQUtSEB_RJPUVetw',
 	 '83.169.19.137'      => 'ABQIAAAACNG-XP3VVgdpYda6EwQUyhSIqv_shXeYhPRHJYvhhlve40RasBRI6WpGYyWT9EJigb4eNrqNhQkqSQ',
+	 'bbbike.lvps83-169-19-137.dedicated.hosteurope.de' => 'ABQIAAAACNG-XP3VVgdpYda6EwQUyhQzU4FpitV0WsqI42ZHyXuB_4og4xSjtsqjECenvg7m7jSSPGu1rc1w4A',
 	);
     my $full = URI->new(BBBikeCGIUtil::my_url(CGI->new, -full => 1));
     my $fallback_host = "bbbike.de";
