@@ -30,6 +30,7 @@ use Sys::Hostname;
 use Http;
 use Strassen::Core;
 
+my $bbbike_url               = "http://bbbike.de";
 my $bbbike_data_url          = "http://bbbike.de/BBBike/data";
 my $bbbike_data_fallback_url = "http://bbbike.radzeit.de/BBBike/data";
 my $bbbike_data_local_url    = "http://radzeit/BBBike/data";
@@ -44,7 +45,7 @@ if ($ENV{BBBIKE_TEST_HTMLDIR}) {
 }
 
 my $tests_per_url = 17;
-plan tests => $tests_per_url * scalar(@urls);
+plan tests => $tests_per_url * scalar(@urls) + 2;
 
 my $ua_string = 'BBBike-Test/1.0';
 
@@ -94,6 +95,18 @@ for my $url (@urls) {
 	    do_content_checks($res{'content'}, 'Http (SRT)');
 	}
     }
+}
+
+{
+    my $resp = $ua->get("$bbbike_url/robots.txt");
+    ok($resp->is_success, 'robots.txt exists')
+	or diag($resp->as_string);
+}
+
+{
+    my $resp = $ua->get("$bbbike_url/favicon.ico");
+    ok($resp->is_success, 'favicon exists')
+	or diag($resp->as_string);
 }
 
 sub do_content_checks {
