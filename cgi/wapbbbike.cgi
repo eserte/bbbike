@@ -5,7 +5,7 @@
 # $Id: wapbbbike.cgi,v 2.27 2008/02/20 23:04:54 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2000,2001,2003,2004 Slaven Rezic. All rights reserved.
+# Copyright (C) 2000,2001,2003,2004,2009 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -270,10 +270,10 @@ sub _any_image {
     my $cgi = $self->Context->CGI;
 
     my $imagetype = "wbmp";
-    if ($cgi->Accept("image/gif")) {
-	$imagetype = "gif";
-    } elsif ($cgi->Accept("image/png")) {
+    if ($cgi->Accept("image/png")) {
 	$imagetype = "png";
+    } elsif ($cgi->Accept("image/gif")) {
+	$imagetype = "gif";
     }
 
     my $convert_to = undef;
