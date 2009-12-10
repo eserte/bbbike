@@ -5,7 +5,7 @@
 # $Id: analyze_deploy_timestamps,v 1.2 2007/03/18 19:58:34 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2006,2007 Slaven Rezic. All rights reserved.
+# Copyright (C) 2006,2007,2009 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -21,10 +21,13 @@ use List::Util qw(max);
 use Getopt::Long;
 
 my $skip_wrong = 1;
-GetOptions("skipwrong!" => \$skip_wrong) 
-    or die "usage: $0 [-[no]skipwrong]";
+my $project = "bbbike.de-hosteurope";
+GetOptions("skipwrong!" => \$skip_wrong,
+	   "project=s" => \$project,
+	  ) 
+    or die "usage: $0 [-[no]skipwrong] [-project bbbike.de-hosteurope|www.radzeit.de]";
 
-my $last_dir = "$FindBin::RealBin/../projects/www.radzeit.de/.last";
+my $last_dir = "$FindBin::RealBin/../projects/$project/.last";
 
 for my $pairdef ("test-from-local",
 		 "do-rsync",

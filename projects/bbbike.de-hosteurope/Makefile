@@ -31,7 +31,7 @@ LOCAL_CGI_URL?=		${LOCAL_URL}/cgi-bin
 LOCAL_HTML_URL?=	${LOCAL_URL}/BBBike
 DATA_DIR=		data
 TEMP_BLOCKINGS_DIR=	data/temp_blockings
-BBBIKE_SERVER_SSH_HOST?=	${BBBIKE_SERVER_HOST}
+BBBIKE_HOSTEUROPE_SSH_HOST?=	${BBBIKE_HOSTEUROPE_HOST}
 STERNFAHRT_YEAR?=	2007
 KREISFAHRT_YEAR?=	2007
 
@@ -98,7 +98,7 @@ RSYNC_PROG?=	rsync
 RSYNC_ARGS=	-e "${SSH_PROG_AND_ARGS}" -Pvz -r -t --links --copy-unsafe-links --delay-updates --exclude-from .rsync.exclude
 #RSYNC_ARGS=	-e "${SSH_PROG_AND_ARGS}" -Pvz -r -t --links --copy-unsafe-links --exclude-from .rsync.exclude
 RSYNC_ARGS_MS=	${RSYNC_ARGS:S/.rsync.exclude/\/tmp\/mapserver.rsync.exclude/}
-RSYNC_DEST?=	${BBBIKE_SERVER_USER}@${BBBIKE_SERVER_SSH_HOST}:${BBBIKE_SERVER_APACHE_DIR}
+RSYNC_DEST?=	${BBBIKE_HOSTEUROPE_USER}@${BBBIKE_HOSTEUROPE_SSH_HOST}:${BBBIKE_HOSTEUROPE_APACHE_DIR}
 RSYNC_SRCDEST?=	. ${RSYNC_DEST}
 
 # XXX Should be set from mapserver/brb/Makefile:
@@ -214,7 +214,7 @@ check:
 	${RSYNC} --dry-run ${RSYNC_ARGS} ${RSYNC_SRCDEST}
 
 clean-cache-files-on-remote:
-	-${SSH_PROG_AND_ARGS} -l ${BBBIKE_SERVER_USER} ${BBBIKE_SERVER_SSH_HOST} \
+	-${SSH_PROG_AND_ARGS} -l ${BBBIKE_HOSTEUROPE_USER} ${BBBIKE_HOSTEUROPE_SSH_HOST} \
 	    rm /tmp/b_de_\*
 
 RSYNC_RULES=		check-rsync-ok \
@@ -242,7 +242,7 @@ rsync-bbbike:
 	false
 
 rsync-mapserver:	check-rsync-ok check-rsync-mapserver /tmp/mapserver.rsync.exclude
-	${RSYNC_PROG} ${RSYNC_ARGS_MS} ${CURDIR}/public/mapserver/ ${BBBIKE_SERVER_USER}@${BBBIKE_SERVER_SSH_HOST}:${BBBIKE_SERVER_APACHE_DIR}/${HTDOCS}/mapserver/
+	${RSYNC_PROG} ${RSYNC_ARGS_MS} ${CURDIR}/public/mapserver/ ${BBBIKE_HOSTEUROPE_USER}@${BBBIKE_HOSTEUROPE_SSH_HOST}:${BBBIKE_HOSTEUROPE_APACHE_DIR}/${HTDOCS}/mapserver/
 
 rsync-tests:
 	${RSYNC_PROG} ${RSYNC_ARGS} --exclude tmp/ ${BBBIKE_ROOT_DIR}/t/ ${RSYNC_DEST}/BBBike/t/
@@ -251,7 +251,7 @@ rsync-tests:
 	perl -pe 's{^public/mapserver/}{}' $> > $@
 
 check-rsync-mapserver:
-	fgrep -q -s 'SHAPEPATH "${BBBIKE_SERVER_APACHE_DIR}public/mapserver/brb/data"' ${CURDIR}/$(HTDOCS)/mapserver/brb/brb.map
+	fgrep -q -s 'SHAPEPATH "${BBBIKE_HOSTEUROPE_APACHE_DIR}public/mapserver/brb/data"' ${CURDIR}/$(HTDOCS)/mapserver/brb/brb.map
 
 check-rsync-data-ok:
 	true
@@ -395,7 +395,7 @@ prepare-bbbike-dist-prog-bbbike-htdocs:
 	chmod 755 ${CURDIR}/$(HTDOCS)
 	[ -e ${CURDIR}/$(HTDOCS)/BBBike ] || \
 	    ln -s ../BBBike ${CURDIR}/$(HTDOCS)/BBBike
-	@echo "Do 'ln -s ../BBBike ${BBBIKE_SERVER_APACHE_DIR}/$(HTDOCS)/BBBike' manually on server"
+	@echo "Do 'ln -s ../BBBike ${BBBIKE_HOSTEUROPE_APACHE_DIR}/$(HTDOCS)/BBBike' manually on server"
 
 prepare-bbbike-dist-prog-bbbike-images:	prepare-sternfahrt2005-dist-images \
 					prepare-sternfahrt${STERNFAHRT_YEAR}-dist-images \
@@ -408,7 +408,7 @@ prepare-favicon:
 
 prepare-bbbike-dist-prog-bbbike-tmp:
 	chmod 777 ${CURDIR}/BBBike/tmp
-	@echo "Maybe chown ${BBBIKE_SERVER_APACHE_DIR}/BBBike/tmp on ${BBBIKE_SERVER_SSH_HOST} to www"
+	@echo "Maybe chown ${BBBIKE_HOSTEUROPE_APACHE_DIR}/BBBike/tmp on ${BBBIKE_HOSTEUROPE_SSH_HOST} to www"
 
 prepare-bbbike-dist-prog-bbbike-miscsrc:
 	[ -d ${CURDIR}/BBBike/miscsrc ] || \
@@ -458,7 +458,7 @@ prepare-bbbike-dist-prog-bbbike-html:
 	    rm -f newstreetform.html newstreetform.utf8.html fragezeichenform.html fragezeichenform.utf8.html
 	cd ${CURDIR}/BBBike/html && \
 	    ${MAKE} newstreetform.html newstreetform.utf8.html fragezeichenform.html fragezeichenform.utf8.html \
-		CGIDIR=http://${BBBIKE_SERVER_HOST}/cgi-bin
+		CGIDIR=http://${BBBIKE_HOSTEUROPE_HOST}/cgi-bin
 
 prepare-bbbike-dist-data:	prepare-bbbike-dist-data-datadir \
 				prepare-bbbike-dist-data-datadir-additional \
@@ -498,7 +498,7 @@ prepare-mapserver-local-dist:	prepare-mapserver-dist-pre \
 prepare-mapserver-dist-pre:
 	[ -e ${CURDIR}/cgi-bin/mapserv ] || \
 	    ln -s ${MAPSERVER_EXE} ${CURDIR}/cgi-bin/mapserv
-	@echo "Compile mapserv manually on ${BBBIKE_SERVER_SSH_HOST}"
+	@echo "Compile mapserv manually on ${BBBIKE_HOSTEUROPE_SSH_HOST}"
 	[ -d ${CURDIR}/$(HTDOCS)/mapserver/brb ] || \
 	    mkdir -p ${CURDIR}/$(HTDOCS)/mapserver/brb
 
@@ -584,12 +584,12 @@ test:	test-on-remote test-from-local
 test-on-remote:
 	-@mkdir -p .last
 	-@date >> .last/start-test-on-remote
-	${SSH_PROG_AND_ARGS} -l ${BBBIKE_SERVER_USER} ${BBBIKE_SERVER_SSH_HOST} '\
-	cd ${BBBIKE_SERVER_APACHE_DIR}/BBBike/t && \
-	BBBIKE_TEST_CGIDIR=http://${BBBIKE_SERVER_HOST}/cgi-bin \
-	BBBIKE_TEST_CGIURL=http://${BBBIKE_SERVER_HOST}/cgi-bin/${BBBIKECGI} \
-	BBBIKE_TEST_WAPURL=http://${BBBIKE_SERVER_HOST}/cgi-bin/wapbbbike.cgi \
-	BBBIKE_TEST_HTMLDIR=http://${BBBIKE_SERVER_HOST}/BBBike \
+	${SSH_PROG_AND_ARGS} -l ${BBBIKE_HOSTEUROPE_USER} ${BBBIKE_HOSTEUROPE_SSH_HOST} '\
+	cd ${BBBIKE_HOSTEUROPE_APACHE_DIR}/BBBike/t && \
+	BBBIKE_TEST_CGIDIR=http://${BBBIKE_HOSTEUROPE_HOST}/cgi-bin \
+	BBBIKE_TEST_CGIURL=http://${BBBIKE_HOSTEUROPE_HOST}/cgi-bin/${BBBIKECGI} \
+	BBBIKE_TEST_WAPURL=http://${BBBIKE_HOSTEUROPE_HOST}/cgi-bin/wapbbbike.cgi \
+	BBBIKE_TEST_HTMLDIR=http://${BBBIKE_HOSTEUROPE_HOST}/BBBike \
 	    perl -MTest::Harness -e "runtests(@ARGV)" \
 		${TESTS_ON_REMOTE} ${TESTS_SERVER_ON_REMOTE} \
 	'
@@ -602,21 +602,21 @@ test-from-local:
 	-@mkdir -p .last
 	-@date >> .last/start-test-from-local
 	cd ${.CURDIR}/BBBike/t && \
-	BBBIKE_TEST_CGIDIR=http://${BBBIKE_SERVER_HOST}/cgi-bin \
-	BBBIKE_TEST_CGIURL=http://${BBBIKE_SERVER_HOST}/cgi-bin/${BBBIKECGI} \
-	BBBIKE_TEST_WAPURL=http://${BBBIKE_SERVER_HOST}/cgi-bin/wapbbbike.cgi \
-	BBBIKE_TEST_HTMLDIR=http://${BBBIKE_SERVER_HOST}/BBBike \
+	BBBIKE_TEST_CGIDIR=http://${BBBIKE_HOSTEUROPE_HOST}/cgi-bin \
+	BBBIKE_TEST_CGIURL=http://${BBBIKE_HOSTEUROPE_HOST}/cgi-bin/${BBBIKECGI} \
+	BBBIKE_TEST_WAPURL=http://${BBBIKE_HOSTEUROPE_HOST}/cgi-bin/wapbbbike.cgi \
+	BBBIKE_TEST_HTMLDIR=http://${BBBIKE_HOSTEUROPE_HOST}/BBBike \
 	    perl -MTest::Harness -e "runtests(@ARGV)" \
 		${TESTS_FROM_LOCAL}
 	-@date >> .last/test-from-local
 
 test-on-remote-and-send-mail:
-	${SSH_PROG_AND_ARGS} -l ${BBBIKE_SERVER_USER} ${BBBIKE_SERVER_SSH_HOST} '\
-	cd ${BBBIKE_SERVER_APACHE_DIR}/BBBike/t && \
-	BBBIKE_TEST_CGIDIR=http://${BBBIKE_SERVER_HOST}/cgi-bin \
-	BBBIKE_TEST_CGIURL=http://${BBBIKE_SERVER_HOST}/cgi-bin/${BBBIKECGI} \
-	BBBIKE_TEST_WAPURL=http://${BBBIKE_SERVER_HOST}/cgi-bin/wapbbbike.cgi \
-	BBBIKE_TEST_HTMLDIR=http://${BBBIKE_SERVER_HOST}/BBBike \
+	${SSH_PROG_AND_ARGS} -l ${BBBIKE_HOSTEUROPE_USER} ${BBBIKE_HOSTEUROPE_SSH_HOST} '\
+	cd ${BBBIKE_HOSTEUROPE_APACHE_DIR}/BBBike/t && \
+	BBBIKE_TEST_CGIDIR=http://${BBBIKE_HOSTEUROPE_HOST}/cgi-bin \
+	BBBIKE_TEST_CGIURL=http://${BBBIKE_HOSTEUROPE_HOST}/cgi-bin/${BBBIKECGI} \
+	BBBIKE_TEST_WAPURL=http://${BBBIKE_HOSTEUROPE_HOST}/cgi-bin/wapbbbike.cgi \
+	BBBIKE_TEST_HTMLDIR=http://${BBBIKE_HOSTEUROPE_HOST}/BBBike \
 	    (perl -MTest::Harness -e "runtests(@ARGV)" \
 		${TESTS} | mail slaven@rezic.de ) & \
 	'
@@ -644,17 +644,17 @@ test-local-parallel:
 	    prove -j3 ${TESTS}
 
 server-permissions:
-	${SSH_PROG_AND_ARGS} -l ${BBBIKE_SERVER_USER} ${BBBIKE_SERVER_SSH_HOST} '\
-		chown ${WWW_USER} "${BBBIKE_SERVER_APACHE_DIR}/BBBike/tmp/berlin_map*"; \
-		chown 644 "${BBBIKE_SERVER_APACHE_DIR}/BBBike/tmp/berlin_map*"; \
-		chmod 777 "${BBBIKE_SERVER_APACHE_DIR}/BBBike/tmp"; \
-		chown ${WWW_USER} "${BBBIKE_SERVER_APACHE_DIR}/$(HTDOCS)/mapserver/brb"; \
-		chown ${WWW_USER} "${BBBIKE_SERVER_APACHE_DIR}/$(HTDOCS)/mapserver/brb/tmp"; \
+	${SSH_PROG_AND_ARGS} -l ${BBBIKE_HOSTEUROPE_USER} ${BBBIKE_HOSTEUROPE_SSH_HOST} '\
+		chown ${WWW_USER} "${BBBIKE_HOSTEUROPE_APACHE_DIR}/BBBike/tmp/berlin_map*"; \
+		chown 644 "${BBBIKE_HOSTEUROPE_APACHE_DIR}/BBBike/tmp/berlin_map*"; \
+		chmod 777 "${BBBIKE_HOSTEUROPE_APACHE_DIR}/BBBike/tmp"; \
+		chown ${WWW_USER} "${BBBIKE_HOSTEUROPE_APACHE_DIR}/$(HTDOCS)/mapserver/brb"; \
+		chown ${WWW_USER} "${BBBIKE_HOSTEUROPE_APACHE_DIR}/$(HTDOCS)/mapserver/brb/tmp"; \
 	'
 
 backup:
-	${SSH_PROG_AND_ARGS} -l ${BBBIKE_SERVER_USER} ${BBBIKE_SERVER_SSH_HOST} '\
-	    cd ${BBBIKE_SERVER_APACHE_DIR} && \
+	${SSH_PROG_AND_ARGS} -l ${BBBIKE_HOSTEUROPE_USER} ${BBBIKE_HOSTEUROPE_SSH_HOST} '\
+	    cd ${BBBIKE_HOSTEUROPE_APACHE_DIR} && \
 	    tar cfpz /tmp/BBBike-`date +%Y%m%d`-backup.tar.gz \
 	    BBBike \
 	    cgi-bin/bbbike.cgi cgi-bin/bbbike.cgi.config cgi-bin/wapbbbike.cgi \
@@ -671,19 +671,19 @@ backup-local:
 	'
 
 remote-cleanup:
-	${SSH_PROG_AND_ARGS} -l ${BBBIKE_SERVER_USER} ${BBBIKE_SERVER_SSH_HOST} '\
-	    cd ${BBBIKE_SERVER_APACHE_DIR}/$(HTDOCS)/mapserver/brb && \
+	${SSH_PROG_AND_ARGS} -l ${BBBIKE_HOSTEUROPE_USER} ${BBBIKE_HOSTEUROPE_SSH_HOST} '\
+	    cd ${BBBIKE_HOSTEUROPE_APACHE_DIR}/$(HTDOCS)/mapserver/brb && \
 	    ./cleanup -f -agehours 24 \
 	'
 
 # For quick deployment only:
 fast-rsync-googlemaps:
-	rsync -e "${SSH_PROG_AND_ARGS}" -av $(BBBIKE_ROOT_DIR)/cgi/bbbikegooglemap.cgi ${BBBIKE_SERVER_USER}@${BBBIKE_SERVER_SSH_HOST}:${BBBIKE_SERVER_APACHE_DIR}/cgi-bin/
+	rsync -e "${SSH_PROG_AND_ARGS}" -av $(BBBIKE_ROOT_DIR)/cgi/bbbikegooglemap.cgi ${BBBIKE_HOSTEUROPE_USER}@${BBBIKE_HOSTEUROPE_SSH_HOST}:${BBBIKE_HOSTEUROPE_APACHE_DIR}/cgi-bin/
 
 # Do I need an rsync for temp-blockings?
 diff-temp-blockings:
-	${SSH_PROG_AND_ARGS} -C ${BBBIKE_SERVER_USER}@${BBBIKE_SERVER_SSH_HOST} \
-	    cat ${BBBIKE_SERVER_APACHE_DIR}/BBBike/data/temp_blockings/bbbike-temp-blockings.pl | diff -u - ${BBBIKE_ROOT_DIR}/${TEMP_BLOCKINGS_DIR}/bbbike-temp-blockings.pl
+	${SSH_PROG_AND_ARGS} -C ${BBBIKE_HOSTEUROPE_USER}@${BBBIKE_HOSTEUROPE_SSH_HOST} \
+	    cat ${BBBIKE_HOSTEUROPE_APACHE_DIR}/BBBike/data/temp_blockings/bbbike-temp-blockings.pl | diff -u - ${BBBIKE_ROOT_DIR}/${TEMP_BLOCKINGS_DIR}/bbbike-temp-blockings.pl
 
 check-temp-blockings-integrity-pre:
 	cd $(BBBIKE_ROOT_DIR)/${DATA_DIR} && ${MAKE} temp_blockings/bbbike-temp-blockings-optimized.pl
@@ -693,5 +693,5 @@ check-temp-blockings-integrity:
 	$(BBBIKE_ROOT_DIR)/miscsrc/check_bbbike_temp_blockings -datadir $(CURDIR)/BBBike/data -action none
 
 create-all-maps:
-	lwp-request -m GET 'http://${BBBIKE_SERVER_HOST}/cgi-bin/bbbike.cgi?create_all_maps=1'
+	lwp-request -m GET 'http://${BBBIKE_HOSTEUROPE_HOST}/cgi-bin/bbbike.cgi?create_all_maps=1'
 

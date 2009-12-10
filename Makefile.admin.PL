@@ -194,6 +194,11 @@ BBBIKE_RADZEIT_DIR2=		$(BBBIKE_RADZEIT_APACHE_DIR)/BBBike2
 BBBIKE_RADZEIT_DEST=		$(BBBIKE_RADZEIT_USER)@$(BBBIKE_RADZEIT_HOST):$(BBBIKE_RADZEIT_DIR)
 BBBIKE_RADZEIT_DEST2=		$(BBBIKE_RADZEIT_USER)@$(BBBIKE_RADZEIT_HOST):$(BBBIKE_RADZEIT_DIR2)
 
+BBBIKE_HOSTEUROPE_USER=	root
+# XXX change this!
+BBBIKE_HOSTEUROPE_HOST=	bbbike.lvps83-169-19-137.dedicated.hosteurope.de
+BBBIKE_HOSTEUROPE_APACHE_DIR=/root/work/bbbike-webserver/
+
 RSYNC=rsync
 RSYNC_DATA_CMD=cd data && \
 	    $(RSYNC) --verbose --progress --recursive --compress --backup --perms --times \

@@ -56,6 +56,9 @@ if (!GetOptions("bbbikeurl=s" => \$bbbike_url,
 		"local-radzeit!" => sub {
 		    $bbbike_url = "http://radzeit/cgi-bin/bbbike.cgi";
 		},
+		"local-hosteurope!" => sub {
+		    $bbbike_url = "http://bbbike.hosteurope.herceg.de/cgi-bin/bbbike.cgi";
+		},
 		'layer=s@' => \@layers,
 		'initmapext=s' => sub {
 		    ($width, $height) = split /x/, $_[1];

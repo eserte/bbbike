@@ -39,7 +39,6 @@ sub teaser {
 				#teaser_kreisfahrt(),
 				#teaser_sternfahrt_changes(),
 				#teaser_dobli(),
-				#$ENV{SERVER_NAME} =~ /radzeit/i ? teaser_radzeit() : (),
 				_teaser_is_iphone() ? teaser_iphone() : (),
 			       ];
     $teasers_optional{"en"} = [],
@@ -54,7 +53,6 @@ sub teaser {
 				#teaser_kreisfahrt(),
 				#teaser_sternfahrt_changes(),
 				#teaser_dobli(),
-				#$ENV{SERVER_NAME} =~ /radzeit/i ? teaser_radzeit() : (),
 				_teaser_is_iphone() ? teaser_iphone() : (),
 			       ];
 
@@ -183,12 +181,6 @@ EOF
 sub teaser_wap {
     <<EOF;
 <div class="teaser">Experimentell - BBBike über WAP: <a href="@{[ CGI::escapeHTML($BBBike::BBBIKE_WAP) ]}">@{[ CGI::escapeHTML($BBBike::BBBIKE_WAP) ]}</a></div>
-EOF
-}
-
-sub teaser_radzeit {
-    <<EOF;
-<div class="teaser"><a href="http://www.radzeit.de"><!--img src="http://www.radzeit.de/uploads/images/1/thumb-RadZeit_Logo2.gif" width="100" height="21"--><b>Radzeit.de</b></a></div>
 EOF
 }
 

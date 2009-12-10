@@ -6,6 +6,8 @@
 # Author: Slaven Rezic
 #
 
+# XXX Needs to be adapted for local bbbike.hosteurope operation.
+
 use strict;
 
 BEGIN {

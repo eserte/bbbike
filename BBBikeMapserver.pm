@@ -403,11 +403,11 @@ sub create_mapfile {
 		$preferred_map_path = $map_path;
 	    }
 
-	    my $tmpfile2;
+	    my($tmpfh, $tmpfile2);
 	    if ($externshape && -s $tmpfile1) {
 		# convert bbd file to esri file
 		require File::Temp;
-		(undef, $tmpfile2) = File::Temp::tempfile(UNLINK => 1);
+		($tmpfh, $tmpfile2) = File::Temp::tempfile(UNLINK => 1);
 		my @cmd = ($self->{BBD2ESRI_PROG},
 			   $tmpfile1, "-o", $tmpfile2);
 		warn "Cmd: @cmd" if $self->{DEBUG};
