@@ -71,6 +71,7 @@ DEPLOY_TARGETS=			prepare-bbbike-data \
 				prepare-bbbike-dist \
 				prepare-mapserver-dist \
 				rsync \
+				init-environment \
 				test \
 				create-all-maps
 
@@ -84,7 +85,8 @@ DEPLOY_DATA_TARGETS=		prepare-bbbike-data \
 DEPLOY_LOCAL_NO_TEST_TARGETS=	prepare-bbbike-data \
 				prepare-mapserver-data \
 				prepare-bbbike-dist \
-				prepare-mapserver-local-dist
+				prepare-mapserver-local-dist \
+				init-local-environment
 
 DEPLOY_LOCAL_TARGETS=		${DEPLOY_LOCAL_NO_TEST_TARGETS} \
 				test-local
@@ -695,3 +697,8 @@ check-temp-blockings-integrity:
 create-all-maps:
 	lwp-request -m GET 'http://${BBBIKE_HOSTEUROPE_HOST}/cgi-bin/bbbike.cgi?create_all_maps=1'
 
+init-environment:
+	lwp-request -m GET 'http://${BBBIKE_HOSTEUROPE_HOST}/cgi-bin/bbbike.cgi?init_environment=1'
+
+init-local-environment:
+	lwp-request -m GET '${LOCAL_CGI_URL}/bbbike.cgi?init_environment=1'
