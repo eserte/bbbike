@@ -530,7 +530,9 @@ sub resolve_position {
 	    $self->init_str;
 	    my(@r) = $self->Streets->get_by_strname_and_citypart($pos_o->Street, $pos_o->Citypart);
 	    if (!@r) {
-		warn "Found street <" . $pos_o->Street . "> from ZIP file, but not in streets file. Using nevertheless";
+		if ($context->Verbose) {
+		    warn "Found street <" . $pos_o->Street . "> from ZIP file, but not in streets file. Using nevertheless";
+		}
 	    } else {
 		$self->create_exact_crossing_choices(\@r, $pos_o, $choices_o, $type);
 		if (@$choices_o > 1) {
