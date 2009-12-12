@@ -136,18 +136,28 @@ sub geocoder_dialog {
 					  $_;
 				      };
 				      require LWP::UserAgent; # should be already loaded anyway
+				      #Geo::Coder::GoogleMaps->VERSION(0.03); # API changes! XXX check cannot be done, because of 0.3 vs. 0.3.1 problem!
 				      Geo::Coder::GoogleMaps->new(apikey => $apikey,
 								  ua => LWP::UserAgent->new(agent => "Mozilla/5.0 (compatible; Geo::Coder::GoogleMaps/$Geo::Coder::GoogleMaps::VERSION; Google, please stop smoking crack; http://rt.cpan.org/Public/Bug/Display.html?id=49483)"),
 								 );
 				  },
+				  'fix_result' => sub {
+				      if (!$_[0]->is_success) {
+					  main::status_message("No success getting the result.", "info");
+					  $_[0] = undef;
+				      }
+				      $_[0] = $_[0]->placemarks->[0]; # return only first one
+				  },
 				  'extract_loc' => sub {
 				      my $location = shift;
-				      @{$location->{data}{Point}{coordinates}};
+				      return unless $location;
+				      ($location->longitude, $location->latitude);
 				  },
 				  'extract_addr' => sub {
 				      my $location = shift;
-				      $location->{data}{address} . "\n" .
-					  join(",", @{$location->{data}{Point}{coordinates}});
+				      return unless $location;
+				      $location->address . "\n" .
+					  join(",", $location->longitude, $location->latitude);
 				  },
 				  'label' => 'Google (alternative implementation, needs API key)',
 				},
