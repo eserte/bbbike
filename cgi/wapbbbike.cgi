@@ -334,7 +334,7 @@ sub _any_image {
 	}
 	my $cmd;
 	if ($convert_to eq 'gif') {
-	    $cmd = "pngtopnm $temp | ppmquant 256 | ppmtogif $temp2cmd";
+	    $cmd = "pngtopnm $temp | ppmquant 2>/dev/null 256 | ppmtogif 2>/dev/null $temp2cmd ";
 	} else { # wbmp
 	    # with the default pgmtopbm the resulting image is just white
 	    $cmd = "pngtopnm $temp | ppmtopgm | pgmtopbm -d8 | pbmtowbmp $temp2cmd";
