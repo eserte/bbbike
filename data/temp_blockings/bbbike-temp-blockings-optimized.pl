@@ -850,15 +850,7 @@ userdel	2::inwork 7160,11225 6851,11346
        undef,
        undef,
        undef,
-       {
-         'until' => 1260572400,
-         'text' => 'L 059 Hainschestraße Brücke über den Binnengraben in Bad Liebenwerda Brückenneubau Vollsperrung 23.07.2009-11.12.2009 ',
-         'from' => 1248213600,
-         'id' => 1760,
-         'data' => 'userdel	2::inwork 12383,-99327 12173,-99115
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1753,15 +1745,7 @@ userdel	2::temp 9516,12010 9656,12021
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1260572400,
-         'text' => 'B 096 Luckau - Baruth Brücke über die Schuge bei Rüdingsdorf Brückenneubau Vollsperrung 11.12.2009-11.12.2009 ',
-         'from' => 1260399600,
-         'id' => 2006,
-         'data' => 'userdel	2::inwork 29918,-54610 30409,-55818
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1261522800,
          'text' => 'L 029 Lanke - Wandlitz Durchlass bei Ützdorf Erneuerung Durchlass Vollsperrung 10.12.2009-22.12.2009 ',

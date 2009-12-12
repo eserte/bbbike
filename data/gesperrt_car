@@ -715,8 +715,8 @@ Straßenbahntrasse	3nocross::ignrte 12010,16774 12017,16734 12046,16568
 Brauhausstr. -> Prenzlauer Promenade: Straßenbahntrasse	3::igndisp 12211,16688 12017,16734 12046,16568
 Prenzlauer Promenade -> Brauhausstr.: Straßenbahntrasse	3::igndisp 12010,16774 12017,16734 12211,16688
 Mittelstreifen	3nocross::ignrte 12114,12546 12134,12540 12360,12505
-Krautstr. -> Karl-Marx-Allee: Mittelstreifen	3::igndisp 12118,12462 12134,12540 12114,12546
-Karl-Marx-Allee -> Krautstr.: Mittelstreifen	3::igndisp 12360,12505 12134,12540 12118,12462
+Karl-Marx-Allee -> Krautstr./Blumenstr.: Mittelstreifen	3::igndisp 12360,12505 12134,12540 12125,12490
+Krautstr./Blumenstr. -> Karl-Marx-Allee: Mittelstreifen	3::igndisp 12125,12490 12134,12540 12114,12546
 Mittelstreifen	3nocross::ignrte 10240,11740 10213,11728 9981,11689
 Gertraudenstr. -> Beuthstr.: Mittelstreifen	3::igndisp 10240,11740 10213,11728 10229,11618
 Gertraudenstr. -> Spittelmarkt: Mittelstreifen	3::igndisp 10240,11740 10213,11728 10153,11666
