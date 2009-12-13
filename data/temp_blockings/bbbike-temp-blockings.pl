@@ -13805,8 +13805,8 @@ userdel	q4::inwork 14604,-22009 14714,-22665
 EOF
      },
      { from  => 1241301600, # 2009-05-03 00:00
-       until => 1259881200, # 2009-12-04 00:00
-       text  => 'B 198 Neubrandenburger Straße OD Prenzlau, Brücke über die Ücker Brückenneubau Vollsperrung 04.05.2009-03.12.2009 ',
+       until => 1261436400, # 2009-12-22 00:00
+       text  => 'B 198 Neubrandenburger Straße OD Prenzlau, Brücke über die Ücker Brückenneubau Vollsperrung 04.05.2009-21.12.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 39239,101950 39066,102017
@@ -14844,8 +14844,8 @@ userdel	2::inwork 12431,52894 12615,52952 13967,53380 15301,53802 15886,54280 17
 EOF
      },
      { from  => 1247954400, # 2009-07-19 00:00
-       until => 1260658800, # 2009-12-13 00:00
-       text  => 'B 102 Treuenbrietzener Str. OD Jüterbog, zw. Mendelsohnstr. und Bülowstr. Straßenausbau Vollsperrung 20.07.2009-12.12.2009 ',
+       until => 1292972400, # 2010-12-22 00:00
+       text  => 'B 102 Treuenbrietzener Str. OD Jüterbog, zw. Dammtor und Bülowstr. Straßenausbau Vollsperrung 20.07.2009-21.12.2010 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork -12541,-46115 -13108,-46122
@@ -15570,8 +15570,8 @@ userdel	2::inwork 92955,20065 93405,20640
 EOF
      },
      { from  => 1252188000, # 2009-09-06 00:00
-       until => 1262300400, # 2010-01-01 00:00
-       text  => 'B 005 Frankfurter Straße OL Heinersdorf Kanal- u. Straßenbauarbeiten Vollsperrung 07.09.2009-31.12.2009 ',
+       until => 1261436400, # 2009-12-22 00:00
+       text  => 'B 005 Frankfurter Straße OL Heinersdorf Kanal- u. Straßenbauarbeiten Vollsperrung 07.09.2009-21.12.2009 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork 66009,6118 65618,6296 65528,6253 65365,6281 65225,6403

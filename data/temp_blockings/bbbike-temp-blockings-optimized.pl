@@ -633,7 +633,15 @@ userdel	q4::inwork 10422,12395 10476,12432
        },
        undef,
        undef,
-       undef,
+       {
+         'until' => 1261436400,
+         'text' => 'B 198 Neubrandenburger Straße OD Prenzlau, Brücke über die Ücker Brückenneubau Vollsperrung 04.05.2009-21.12.2009 ',
+         'from' => 1241301600,
+         'id' => 1630,
+         'data' => 'userdel	2::inwork 39239,101950 39066,102017
+',
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
@@ -836,8 +844,8 @@ userdel	2::inwork 7160,11225 6851,11346
        undef,
        undef,
        {
-         'until' => 1260658800,
-         'text' => 'B 102 Treuenbrietzener Str. OD Jüterbog, zw. Mendelsohnstr. und Bülowstr. Straßenausbau Vollsperrung 20.07.2009-12.12.2009 ',
+         'until' => 1292972400,
+         'text' => 'B 102 Treuenbrietzener Str. OD Jüterbog, zw. Dammtor und Bülowstr. Straßenausbau Vollsperrung 20.07.2009-21.12.2010 ',
          'from' => 1247954400,
          'id' => 1753,
          'data' => 'userdel	q4::inwork -12541,-46115 -13108,-46122
@@ -1163,8 +1171,8 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
          'type' => 'gesperrt'
        },
        {
-         'until' => 1262300400,
-         'text' => 'B 005 Frankfurter Straße OL Heinersdorf Kanal- u. Straßenbauarbeiten Vollsperrung 07.09.2009-31.12.2009 ',
+         'until' => 1261436400,
+         'text' => 'B 005 Frankfurter Straße OL Heinersdorf Kanal- u. Straßenbauarbeiten Vollsperrung 07.09.2009-21.12.2009 ',
          'from' => 1252188000,
          'id' => 1835,
          'data' => 'userdel	q4::inwork 66009,6118 65618,6296 65528,6253 65365,6281 65225,6403

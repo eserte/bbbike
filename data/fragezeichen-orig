@@ -41,6 +41,7 @@ Falkenberger Chaussee im Bereich Bhf. Hohenschönhausen	?::projected 17400,17790 
 Joachim-Friedrich-Str.	?::projected 3067,9592 3069,9622 3083,9796 3092,9886 3108,10069 3111,10116 3132,10499
 Uhlandstr.	?::projected 4984,9675 5004,9842 5026,10038 5036,10139 5063,10384
 Zossener Str./Lindenstr.	?::projected 9856,10358 9873,10285 9865,10227 9858,10199 9837,10117 9827,10051
+#: last_checked: 2009-12-11
 Michaelbrücke/Michaelkirchstr.	?::projected 11768,12006 11716,11914 11676,11839 11574,11594 11498,11417
 Stülerstr.	?::projected 6825,11486 6716,11439 6692,11365 6679,11319 6630,11247 6606,11222
 Alt-Moabit	?::projected 5975,13256 6214,13225
@@ -66,7 +67,7 @@ Müllerstr.	?::projected 6790,16018 6680,16116 6608,16180 6450,16325 6444,16331 6
 #
 #: by: Tagesspiegel vom 2009-04-12, soll 2009 realisiert werden
 #: corrected_by: MoPo 2009-08-01, soll 2010 realisiert werden
-#: last_checked: 2009-07-23
+#: last_checked: 2009-12-11
 #: next_check: 2010-03-01
 Annenstr./Heinrich-Heine-Platz	?::projected 11349,11227 11249,11268 11091,11379 10915,11535 10819,11664
 #
@@ -279,7 +280,7 @@ Oberspreestr.: südliche Nebenfahrbahn hat einen mittigen Asphaltbelag, Europarad
 #: XXX_outdoor:
 Radweg durch den Münsinger Park: genaue Wegführung?	? -3624,14113 -3656,14272 -3700,14375 -3776,14419
 #: by: http://www.berlin.de/ba-neukoelln/presse/archiv/20080519.1325.100767.html
-Schönefelder Str.: Einbahnstraßenregelung nur für Autos: wo genau, in welche Richtung?	? 17222,-606 17222,-580 17222,-426 17199,-196 17193,-109
+Schönefelder Str.: Einbahnstraßenregelung nur für Autos: wo genau, in welche Richtung?	? 17222,-606 17222,-580 17222,-560 17222,-426 17199,-196 17193,-109
 #: XXX ein anonymer bbbikegooglemaps-Kommentar --- aber auf dem Luftbild sieht die Kreuzung ganz normal aus?!
 Kreuzungsüberquerung umständlich?	? 26453,-12128
 ## by: http://www.stadtentwicklung.berlin.de/verkehr/radverkehrsanlagen/de/hellersdorf/route.shtml: Marx-Engels-Forum: wird die RR8 hier durchgeführt? wo genau? -> Nein, keine Ausschilderung zu sehen; alle Radrouten werden an der Spandauer Str. nach SE geführt	? 10300,12587 10355,12551 10411,12471 10596,12517
@@ -3690,3 +3691,23 @@ Pollnower Weg: Qualität?	? 21588,10654 21604,10614
 Zur Nuthestr.: Qualität?	? -11114,-2104 -10917,-2439
 #: XXX evtl. den Sackgassenpunkt etwas nach Norden verschieben
 Bernhardstr. - Varziner Platz: Kann man als Radfahrer (schiebend?) von der Bernhardstr. zum Varziner Platz gelangen?	? 5471,7915 5492,7868
+Französische Str./Wilhelmstr.: Ist die Ampel an der Kreuzung Französische Str./Wilhelmstr. schon eingeschaltet?	? 8901,12008
+Obere Donarstr. (Potsdam): Qualität? Existiert eine Verbindung für Radfahrer zur Donarstr.?	? -10108,-796 -10020,-861 -9897,-901
+#: XXX Eintrag in Berlin.coords.data fehlt: PLZ=10117
+(Am Schinkelplatz): lautet der Straßenname "An der Kommandatur"?	? 9996,12401 9994,12368 9943,12364
+Käte-Frankenthal-Weg: Qualität? Straßenname mit oder ohne "h" bei "Käte"?	? 17551,-373 17491,-412 17429,-453 17222,-580
+Elisabeth-Selbert-Str.: Qualität?	? 17491,-412 17418,-305 17306,-136
+Helene-Weber-Str.: Qualität?	? 17551,-373 17476,-266 17368,-95
+Helene-Wessel-Str.: Qualität?	? 17537,-226 17488,-145
+Lieselotte-Berger-Platz: Qualität?	? 17569,-139 17687,-57
+Marianne-Hapig-Weg: Qualität?	? 17623,-221 17563,-364
+Dorothea-Stutkowsky-Weg: Qualität?	? 17597,-50 17548,22
+#: XXX Straßenname anscheinend falsch bei osm
+Benedicta-Teresia-Weg: Qualität?	? 17687,-57 17736,78 17778,109
+Gertrud-Dorka-Weg: Qualität?	? 17848,-173 17805,-107
+Hiltrud-Dudek-Weg: Qualität? Nachts beleuchtet? Für Radfahrer befahrbar?	? 17985,-208 17951,-286 17879,-345 17736,-391 17588,-392 17551,-373
+Straße 182: Qualität?	? 17088,-135 17122,-270 17147,-573
+Straße 184: Qualität?	? 17222,-560 17147,-573 17054,-597
+Timmendorfer Weg: Qualität?	? 17879,-3 18011,83 18085,137
+Altrader Weg: Qualität? Kann man die Waltersdorfer Chaussee in Höhe des Altrader Wegs überqueren?	? 18077,-13 17946,-100
+Am Klarpfuhl: Qualität? Besteht (für Radfahrer) eine direkte Verbindung zum Mauerweg?	? 18085,137 18249,-114 18230,-233 18195,-277
