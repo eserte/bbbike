@@ -21,6 +21,8 @@ BEGIN {
     }
 }
 
+my $gmap_api = 2;
+
 use Getopt::Long;
 my $cgi_dir = $ENV{BBBIKE_TEST_CGIDIR} || "http://localhost/bbbike/cgi";
 my $cgi_url = "http://www.bbbike.de/cgi-bin/bbbikegooglemap.cgi";
@@ -63,10 +65,12 @@ $ua->agent('BBBike-Test/1.0');
 	fail("Cannot match Polyline");
     } else {
 	my $points = 0;
-	while($content =~ m{new GPoint}g) {
+	my $gpoint_qr = $gmap_api == 1 ? qr{new GPoint} : qr{new GLatLng};
+	while($content =~ m{$gpoint_qr}g) {
 	    $points++;
 	}
-	is($points, 2, "Found exactly two points from wpt_or_trk query");
+	is($points, 2, "Found exactly two points from wpt_or_trk query")
+	    or diag $content;
     }
 }
 
