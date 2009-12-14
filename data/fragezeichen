@@ -1397,7 +1397,7 @@ Von-Canstein-Str. (Dahlwitz-Hoppegarten): Qualität?	? 26880,11479 26957,11450 27
 Meisenstr.: Qualität?	? 1613,5258 1964,5196
 Straße 14 (Neukölln): Qualität? Offen? Ausgeschildert?	? 14133,6187 14116,6277
 Birkenstr. (Hessenwinkel): Qualität?	? 31789,2636 31822,2676 31881,2712 31927,2735 32031,2723
-Straße 523: Qualität?	? 31927,2735 31861,2898
+Seidenbienenweg: Qualität?	? 31927,2735 31861,2898
 Dämeritzstr.: Qualität?	? 32512,2621 32445,2716
 Wodanstr. (Hessenwinkel): Qualität?	? 32400,1793 32361,1926 32341,1996
 Baldurstr. (Hessenwinkel): Qualität?	? 32239,1929 32361,1926
@@ -2705,6 +2705,10 @@ Straße 184: Qualität?	? 17222,-560 17147,-573 17054,-597
 Timmendorfer Weg: Qualität?	? 17879,-3 18011,83 18085,137
 Altrader Weg: Qualität? Kann man die Waltersdorfer Chaussee in Höhe des Altrader Wegs überqueren?	? 18077,-13 17946,-100
 Am Klarpfuhl: Qualität? Besteht (für Radfahrer) eine direkte Verbindung zum Mauerweg?	? 18085,137 18249,-114 18230,-233 18195,-277
+Falkoniergasse: Qualität?	? 9945,12180 9915,12259
+Werdersche Rosenstr.: Qualität?	? 9915,12259 9941,12268
+Prinzengasse: existiert sie schon, wenn ja: wie ist die Qualität?	? 9952,12292 10029,12313
+Schinkelplatz: Ist der Schinkelplatz ausgeschildert?	? 10084,12228 9996,12401 9984,12426
 # added from ampeln-orig
 #: add_fragezeichen: Existiert die Ampel Nordufer/Torfstr. noch?
 geschlossen bei Bedarf (?) (Zbr)	? 27657,-11741
@@ -2798,6 +2802,7 @@ Zeppelinstr.: kleinteiliges, unebenes Kopfsteinpflaster (ist der Abschnitt der Z
 Kohlweißlingstr.: Verbundsteinpflaster (Qualität: Verbundsteinpflaster oder Asphalt?)	? 21723,10920 21765,10834
 Distelfalterstr.: Verbundsteinpflaster (Qualität: Verbundsteinpflaster oder Asphalt?)	? 21723,10920 21605,10866
 Gerhard-Winkler-Weg: Kopfsteinpflaster (tatsächlich Kopfsteinpflaster?)	? 17338,1336 17293,1309
+Philosophenweg: Kopfsteinpflaster oder Verbundsteinpflaster (genaue Qualität des Philosophenwegs?)	? 16073,12883 16074,12773
 Barkenhof: guter Asphalt (Ist der Barkenhof eine Spielstraße?)	? -1892,1732 -1921,1826
 Haßfurter Weg: mäßiger Asphalt (Kopfsteinpflaster oder Asphalt?)	? 11835,18301 11796,18482
 (unter der S-Bahn): Verbundsteinpflaster (tatsächlich Verbundsteinpflaster?)	? 9699,-600 9520,-641

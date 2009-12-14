@@ -1724,15 +1724,7 @@ userdel	2::temp 9516,12010 9656,12021
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1260745199,
-         'text' => 'Alt-Köpenicker Weihnachtsmarkt vom 4.12. bis zum 13.12.2009',
-         'from' => 1259794800,
-         'id' => 2003,
-         'data' => 'userdel	2::temp 22111,4562 22162,4546 22214,4548
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_014764',
          'until' => 1260917999,

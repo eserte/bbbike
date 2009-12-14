@@ -2221,7 +2221,8 @@ Von-Canstein-Str. (Dahlwitz-Hoppegarten): Qualität?	? 26880,11479 26957,11450 27
 Meisenstr.: Qualität?	? 1613,5258 1964,5196
 Straße 14 (Neukölln): Qualität? Offen? Ausgeschildert?	? 14133,6187 14116,6277
 Birkenstr. (Hessenwinkel): Qualität?	? 31789,2636 31822,2676 31881,2712 31927,2735 32031,2723
-Straße 523: Qualität?	? 31927,2735 31861,2898
+#: XXX oldname: Straße 523, bitte eintragen!
+Seidenbienenweg: Qualität?	? 31927,2735 31861,2898
 Dämeritzstr.: Qualität?	? 32512,2621 32445,2716
 Wodanstr. (Hessenwinkel): Qualität?	? 32400,1793 32361,1926 32341,1996
 Baldurstr. (Hessenwinkel): Qualität?	? 32239,1929 32361,1926
@@ -3388,6 +3389,7 @@ Am Elsebrocken: Qualität?	? 15569,23908 15656,23850 15744,23788 15793,23762
 Teichbergstr.: Qualität?	? 15520,23824 15610,23763 15699,23707 15805,23636
 #: XXX Teleatlas und osm widersprechen sich beim Namen:
 #: XXX laut osm "paved", und der nördliche Abschnitt access=private
+#: XXX laut plzdaten von Ringallee zu "Zur Ringallee" umbenannt
 Ringallee/Zur Ringallee: Name der Straße (Ringallee oder Zur Ringallee)? Qualität? Ist die Einfahrt in den nördlichen Abschnitt verboten?	? 13551,17566 13588,17614 13614,17650 13791,17903
 #: XXX Teleatlas und osm widersprechen sich beim Namen:
 #: XXX laut osm "paved"
@@ -3711,3 +3713,12 @@ Straße 184: Qualität?	? 17222,-560 17147,-573 17054,-597
 Timmendorfer Weg: Qualität?	? 17879,-3 18011,83 18085,137
 Altrader Weg: Qualität? Kann man die Waltersdorfer Chaussee in Höhe des Altrader Wegs überqueren?	? 18077,-13 17946,-100
 Am Klarpfuhl: Qualität? Besteht (für Radfahrer) eine direkte Verbindung zum Mauerweg?	? 18085,137 18249,-114 18230,-233 18195,-277
+#: XXX Eintrag in Berlin.corrds.data fehlt: PLZ=10117
+Falkoniergasse: Qualität?	? 9945,12180 9915,12259
+#: XXX Eintrag in Berlin.corrds.data fehlt: PLZ=10117
+Werdersche Rosenstr.: Qualität?	? 9915,12259 9941,12268
+#: XXX Eintrag in Berlin.corrds.data fehlt: PLZ=10117
+#: XXX genaue Lage?
+Prinzengasse: existiert sie schon, wenn ja: wie ist die Qualität?	? 9952,12292 10029,12313
+#: XXX Eintrag in Berlin.corrds.data fehlt: PLZ=10117
+Schinkelplatz: Ist der Schinkelplatz ausgeschildert?	? 10084,12228 9996,12401 9984,12426
