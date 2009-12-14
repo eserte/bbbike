@@ -549,9 +549,9 @@ Elisenau - Börnicke: Privatgelände, ist die Durchfahrt uneingeschränkt möglich?	
 Potzlow - Fergitz: Gilt das hier noch immer: schlechtes Kopfsteinpflaster, breite Sandbanketten (von Potzlow aus sah es letztens gut aus!)	? 38475,90762 37937,90365 37674,90025
 Weg zwischen Tierpark und Bahntrasse: Qualität des Weges (Am westlichen Ende Beton, dann Feldweg Q2?), geht es weiter in Richtung Norden/Osten, vielleicht bis zur B1? Schranke am westlichen Ende	? 18690,10016 19641,10476 19734,10690 19713,10880
 Freystadter Weg: Qualität (laut ADFC-Karte mäßig geeignet)? Ist die Straße südlich des Wünschelburger Gangs für Autos gesperrt? Kann man die Dörpfeldstr. in Höhe Freystadter Weg überqueren?	? 20994,4761 20981,4696 20981,4628 21008,4275 21017,4220 21053,4162
-#XXX laut anonymen Eintrag ist hier nichts, jedenfalls an der Grünauer Str.: Dörpfeldstr. - Grünauer: evtl. lohnende Diagonale, Qualität?	? 21132,4184 21316,3662 21350,3526 21840,3144 21951,3189
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20080114.1205.92135.html
-Charlotte-E-Pauly-Str.: Qualität? In der Nähe befindet sich auch die Ingrid Goltzsche-Schwarz-Straße, wo genau?	? 25018,5294 25030,4984 25010,4807
+Charlotte-E-Pauly-Str.: Qualität?	? 25018,5294 25030,4984 25010,4807
+Ingrid-Goltzsche-Schwarz-Str.: Ist hier die Ingrid-Goltzsche-Schwarz-Straße?	? 25012,5729 25009,5593
 B101 bis Großbeeren: hier auch ein Radweg?	? 5394,-3053 5068,-3719 4842,-4182 4547,-4951 4227,-5721
 Potsdamer Str., Wilhelm-Külz-Str., Bäkedamm, Potsdamer Allee: wo gibt es überall Radwege?	? -2477,-1717 -2276,-1621 -2073,-1525 -1668,-1709 -1453,-1715 -1303,-1758 -1143,-1759 -705,-1564 -282,-1184 -71,-1037 348,-743 465,-662 741,-584 925,-684 1212,-706 1346,-762
 B273: hier auch Radweg?	? -14737,300 -14859,421 -15158,589 -15527,795
@@ -2508,7 +2508,8 @@ Warnitzer Str. (Lichtenrade): Qualität?	? 10510,-235 10584,-432
 Baderseestr.: Qualität?	? 22493,1325 22575,1157
 Chiemseestr.: Qualität?	? 22204,1496 22334,1553
 Dahmestr. (Grünau): Qualität?	? 22466,2030 22538,1878 22662,1638
-Eibseestr.: Qualität?	? 22449,1569 22462,1547 22560,1377
+#: XXX Don-Ugoletti-Platz 12527 fehlt in Berlin.coords.data
+Eibseestr.: Qualität? Heißt der Platz an der Kirche "Don-Ugoletti-Platz"?	? 22449,1569 22462,1547 22560,1377
 Fuchsbau (Grünau): Qualität?	? 21421,2268 21416,2139 21414,2085 21385,2031
 Rabindranath-Tagore-Str.: Qualität?	? 23457,35 23540,591 23469,640
 Kochelseestr.: Qualität?	? 22462,1547 22364,1487 22247,1409 22163,1363
@@ -3713,12 +3714,40 @@ Straße 184: Qualität?	? 17222,-560 17147,-573 17054,-597
 Timmendorfer Weg: Qualität?	? 17879,-3 18011,83 18085,137
 Altrader Weg: Qualität? Kann man die Waltersdorfer Chaussee in Höhe des Altrader Wegs überqueren?	? 18077,-13 17946,-100
 Am Klarpfuhl: Qualität? Besteht (für Radfahrer) eine direkte Verbindung zum Mauerweg?	? 18085,137 18249,-114 18230,-233 18195,-277
-#: XXX Eintrag in Berlin.corrds.data fehlt: PLZ=10117
+#: XXX Eintrag in Berlin.coords.data fehlt: PLZ=10117
 Falkoniergasse: Qualität?	? 9945,12180 9915,12259
-#: XXX Eintrag in Berlin.corrds.data fehlt: PLZ=10117
+#: XXX Eintrag in Berlin.coords.data fehlt: PLZ=10117
 Werdersche Rosenstr.: Qualität?	? 9915,12259 9941,12268
-#: XXX Eintrag in Berlin.corrds.data fehlt: PLZ=10117
+#: XXX Eintrag in Berlin.coords.data fehlt: PLZ=10117
 #: XXX genaue Lage?
 Prinzengasse: existiert sie schon, wenn ja: wie ist die Qualität?	? 9952,12292 10029,12313
-#: XXX Eintrag in Berlin.corrds.data fehlt: PLZ=10117
+#: XXX Eintrag in Berlin.coords.data fehlt: PLZ=10117
 Schinkelplatz: Ist der Schinkelplatz ausgeschildert?	? 10084,12228 9996,12401 9984,12426
+#: XXX Eintrag in Berlin.coords.data fehlt: PLZ=10243
+O2-Platz: gibt es hier einen offiziellen Straßennamen (O2-Platz)?	? 13006,11159 13115,11107
+#: XXX Eintrag in Berlin.coords.data fehlt: PLZ=10435
+Marthashof: existiert die Straße schon? Qualität?	? 10459,14721 10559,14756
+#: XXX Eintrag in Berlin.coords.data fehlt: PLZ=10785
+Clara-Wieck-Str.: Qualität?	? 7136,11257 7199,11492
+#: XXX Eintrag in Berlin.coords.data fehlt: PLZ=12205
+Locarnoweg: Qualität? Ist die Straße eine Spielstraße?	? 3290,2135 3369,2135
+Glandzeile: Qualität? Ist die Straße eine Spielstraße?	? 3369,2135 3369,2216
+Sittener Zeile: Qualität? Ist die Straße eine Spielstraße?	? 3443,2215 3443,2138 3513,2135
+Reinacher Zeile: Qualität? Ist die Straße eine Spielstraße?	? 3516,2213 3513,2135
+Anna-Mackenroth-Weg: Qualität? Ist die Straße eine Spielstraße? Ist die Straße eine Einbahnstraße, und wenn ja, gilt das auch für Radfahrer?	? 3641,2459 3633,2210
+#: XXX laut osm "track"
+#: XXX Eintrag in Berlin.coords.data fehlt: PLZ=12487
+Ginkgoweg: Qualität?	? 16934,3571 16784,3441
+#: XXX laut osm "track"
+Hederichweg: Qualität?	? 16801,3413 16784,3441 16727,3520 16657,3619 16589,3715 16536,3797
+#: XXX laut osm "track"
+Straße 207: Qualität?	? 16838,3620 16727,3520
+#: XXX Eintrag in Berlin.coords.data fehlt
+Murmeltierweg: Qualität?	? 25873,12690 25961,12617
+#: XXX Eintrag in Berlin.coords.data fehlt: PLZ=12623
+#: XXX osm meint Greiffenweg, plzdata nicht
+Greifenweg: Qualität? Wie ist der Straßenname: Greifenweg oder Greiffenweg?	? 26119,12981 26228,12898
+#: XXX Eintrag in Berlin.coords.data fehlt: PLZ=12623
+Braunbärenweg: Qualität?	? 26157,13026 26259,12949
+#: XXX Eintrag in Berlin.coords.data fehlt: PLZ=12623
+Schwarzbärenweg: Qualität?	? 26192,13068 26284,12998
