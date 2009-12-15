@@ -32,7 +32,7 @@ bereits bei der Fußgängerampel am Lützowplatz die Straßenseite wechseln	PI; 6824
 bereits bei der Ampel an der Corneliusstr. die Straßenseite wechseln	PI; 6880,11110 6882,11061 6873,11011 7002,11034
 auf linken Gehweg fahren, Straßenseite an der Corneliusstr. wechseln	CP; 6732,11106 6873,11011 6882,11061
 bereits an der Kreuzung An der Urania/Kurfürstenstr. die Straßenseite wechseln	PI; 6740,10755 6685,10690 6745,10619
-bereits an der Kreuzung Sachsendamm/Dominicusstr./Ebersstr. die Straßenseite wechseln	PI; 6935,8208 7005,8150 7268,8225
+bereits an der Kreuzung Sachsendamm/Dominicusstr./Ebersstr. die Straßenseite wechseln	PI; 6935,8208 7005,8150 7250,8223
 #: XXX_prog: RL:ja, GPS:nein
 am Domäne-Markt Richtung Hochbahnhof Hallesches Tor abbiegen	CP; 9536,10064 9579,10122 9599,10175
 #: XXX_prog: RL:ja, GPS:nein
@@ -173,7 +173,7 @@ Falkenwalde - Eickstedt: nicht den Eickstädter Weg nehmen, sondern erst den näch
 #: XXX_prog: RL:ja, GPS:nein
 Spreeufer: durch das Tor der Kleingartenkolonie	CP2; -307,13279 -278,13322
 #: XXX_prog: RL:ja, GPS:nein
-Lefèvrestr. - Bundesallee: Fußgängerfurt benutzen	CP; 5215,6643 5360,6642 5358,6745
+Lefèvrestr. - Bundesallee: Fußgängerfurt benutzen	CP; 5215,6643 5360,6642 5358,6725
 #: XXX_indoor: sollte in eine 3nocross+routing_helper-Kombination umgeschrieben werden, außerdem auch die Verbindung Zolastr. - Straßburger sollte beachtet werden
 Straßburger Str. - Torstr.: Fußgängerfurt (Drängelgitter) ca. 50m westlich der Kreuzung benutzen	CP; 11060,13865 10902,13604 11108,13513
 #: XXX_indoor: sollte in eine 3nocross+routing_helper-Kombination umgeschrieben werden
@@ -198,7 +198,7 @@ Griembergweg - Lichtenrader Damm: Überquerungsmöglichkeit nördlich der Kreuzung	
 Richtung Bellevuestr. und Kemperplatz	CS; 8548,11552 8505,11544 8462,11538
 Richtung Linkstr.	CS; 8573,11404 8554,11386 8474,11350
 Einfahrt gegenüber Waldcafe	CP2; 30021,5322 27096,5828
-Zur Hackerstr.: Hausdurchgang benutzen	CP2; 4987,6336 5017,6387
+Zur Hackerstr.: Hausdurchgang benutzen	CP2; 4971,6345 4999,6397
 Lützowplatz - Wichmannstr.: Fußgängerampel links benutzen	CP; 6918,10854 6824,10904 6681,10959
 Lützowplatz - Schillstr.: Fußgängerampel links benutzen	CP; 6918,10854 6824,10904 6740,10755
 Ausschilderung: Alter Markt	CP2; -11875,-925 -11910,-945

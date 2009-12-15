@@ -197,8 +197,8 @@ Ahrensfelder Chaussee: Radstreifen in Bau, bis 2008-10	? 20160,18301 20460,18420
 #: by: http://www.morgenpost.de/content/2006/09/20/bezirke/855150.html
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20060915.1800.47562.html
 #: XXX Name der Straße? Der Pharus-Verlag meint "Wilhelm-Kabus-Str."; hier auch erwähnt: http://spdnet.sozi.info/berlin/thf-schoeneberg/fraktempschoen/dl/aktinfo0706.pdf und http://www.spd-fraktion-tempelhof-schoeneberg.de/index.php?seite=522&s=1&menu=1
-#: last_checked: 2009-07-07 (Bäume sind gerodet, aber mehr ist noch nicht zu sehen)
-#: next_check: 2009-12-18
+#: last_checked: 2009-12-15 (Fahrbahn wird verbreitert)
+#: next_check: 2010-02-01
 Wilhelm-Kabus-Str.: Bauarbeiten beginnen 2007, die Naumannstr. wird später verkehrsberuhigt	?::projected 7716,8048 7844,8049 7861,8217 7893,8327 7942,8380 8078,8772
 #: next_check: 2010-12-31
 Verbindung zwischen Leuthener Platz und General-Pape-Str. (evtl. mit Verlängerung) inkl. Brücke über die Bahnstrecke für Fußgänger und Radfahrer, Realisierung bis 2010-12-31	?::projected 7716,8356 7837,8354 7893,8327 8088,8283 8264,8289
@@ -267,7 +267,7 @@ Weitere Radwegverschwnekungen, siehe Track vom 25. April 2009	? 19389,11761 1900
 Rägeliner Str.: evtl. wird die Straße neu gewalzt?	?::inwork 19959,10443 20025,10337
 #: by: http://www.morgenpost.de/content/2008/02/03/berlin/944972.html
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0808/nachricht3157.html
-#: last_checked: 2009-11-21
+#: last_checked: 2009-12-15
 Prinzregentenstr.: Ist die Prinzregentenstr. mittlerweile eine Fahrradstraße? Wenn ja, gilt die Fahrradstraßenregelung für die gesamte Straße oder nur einen Teilabschnitt?	? 5630,7875 5635,8011 5641,8137 5669,8207 5666,8345 5660,8591 5655,8828 5647,9022 5633,9263 5628,9353 5630,9592
 #: XXX_prog: verbessern, wenn der entsprechende Routingtext besser aussehen würde (also z.B. "nach rechts und sofort wieder nach links")
 Kleineweg: ist hier leicht versetzt	? 9130,7804 9131,7652 9120,7600
@@ -3692,9 +3692,6 @@ Straße 19: Qualität?	? 12939,18081 12898,18083 12807,18033
 #: XXX laut osm "unpaved"
 Pollnower Weg: Qualität?	? 21588,10654 21604,10614
 Zur Nuthestr.: Qualität?	? -11114,-2104 -10917,-2439
-#: XXX evtl. den Sackgassenpunkt etwas nach Norden verschieben
-Bernhardstr. - Varziner Platz: Kann man als Radfahrer (schiebend?) von der Bernhardstr. zum Varziner Platz gelangen?	? 5471,7915 5492,7868
-Französische Str./Wilhelmstr.: Ist die Ampel an der Kreuzung Französische Str./Wilhelmstr. schon eingeschaltet?	? 8901,12008
 Obere Donarstr. (Potsdam): Qualität? Existiert eine Verbindung für Radfahrer zur Donarstr.?	? -10108,-796 -10020,-861 -9897,-901
 #: XXX Eintrag in Berlin.coords.data fehlt: PLZ=10117
 (Am Schinkelplatz): lautet der Straßenname "An der Kommandatur"?	? 9996,12401 9994,12368 9943,12364
@@ -3723,8 +3720,6 @@ Werdersche Rosenstr.: Qualität?	? 9915,12259 9941,12268
 Prinzengasse: existiert sie schon, wenn ja: wie ist die Qualität?	? 9952,12292 10029,12313
 #: XXX Eintrag in Berlin.coords.data fehlt: PLZ=10117
 Schinkelplatz: Ist der Schinkelplatz ausgeschildert?	? 10084,12228 9996,12401 9984,12426
-#: XXX Eintrag in Berlin.coords.data fehlt: PLZ=10243
-O2-Platz: gibt es hier einen offiziellen Straßennamen (O2-Platz)?	? 13006,11159 13115,11107
 #: XXX Eintrag in Berlin.coords.data fehlt: PLZ=10435
 Marthashof: existiert die Straße schon? Qualität?	? 10459,14721 10559,14756
 #: XXX Eintrag in Berlin.coords.data fehlt: PLZ=10785

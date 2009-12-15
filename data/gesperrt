@@ -106,7 +106,7 @@ Platz S (Hundekehlestr.)	1 2277,7705 2206,7637
 Platz S (Hundekehlestr.)	1 2161,7685 2222,7718 2277,7705
 Platz am Wilden Eber	1 2723,7029 2701,7045 2688,7067 2695,7082 2717,7093 2737,7073 2742,7056 2733,7039 2723,7029
 Wexstr.	2 6371,7976 6135,7973 5807,7978 5635,8011
-Wexstr.	1 5635,8011 5824,8035 5928,8052 6266,8058 6409,8026
+Wexstr.	1 5635,8011 5824,8035 5928,8052 6154,8070 6266,8058 6409,8026
 Detmolder Str. (Süd)	1 4659,7982 4572,7936 4371,8018 4342,8093 4280,8188
 Detmolder Str. (Nord)	2 4349,8118 4469,8037 4659,7982
 Detmolder Str. (Nord)	1 4280,8188 4349,8118
@@ -168,7 +168,7 @@ Degnerstr. (außer Tram)	1 16448,15593 16475,15659
 Henriette-Herz-Platz	1 10371,13006 10255,12959
 Savignyplatz	1 4921,11017 4920,10933 4868,10934 4817,10943 4827,11025 4835,11092 4880,11088 4926,11081 4921,11017
 Dresdener Str./Oranienplatz	1 11258,10682 11234,10739
-Gutsmuthsstr.	1 5311,6383 5075,6509
+Gutsmuthsstr.	1 5311,6383 5065,6515
 Bornstr.	1 5210,6522 5347,6443
 Schildhornstr.	1 4903,6221 4962,6218 5165,6119
 Schildhornstr.	1 5137,6066 5047,6116 4903,6221
@@ -266,7 +266,7 @@ Karl-Marx-Platz	1 12980,7597 13100,7626
 Karl-Marx-Platz	1 13100,7626 12991,7549
 Olympischer Platz	1 -157,11943 -505,11882 -514,11991 -272,12039 -193,12051 -99,12019
 Aristotelessteig	1 18452,9755 18435,9639 18660,9599
-Markelstr.	1 5268,6305 5034,6425
+Markelstr.	1 5268,6305 5020,6434
 Berlinickestr.	1 5088,5495 5016,5401
 Florapromenade	1 10211,17432 10321,17453 10311,17764
 Takustr.	1 3321,5212 3209,5214 3079,5411 2953,5606 2909,5674
@@ -1362,7 +1362,7 @@ Otto-Franke-Str. -> Adlergestell: Mittelstreifen	3::igndisp 20388,3100 20289,303
 Adlergestell -> Büchnerweg: Mittelstreifen	3::igndisp 20064,3278 20207,3115 20315,3181
 Büchnerweg -> Adlergestell: Mittelstreifen	3::igndisp 20315,3181 20207,3115 20289,3033
 Mittelstreifen mit Geländer	3nocross::ignrte 6935,8208 7005,8150 7073,8081
-Torgauer Str. -> Sachsendamm: Mittelstreifen mit Geländer	3::igndisp 7268,8225 7005,8150 7073,8081
+Torgauer Str. -> Sachsendamm: Mittelstreifen mit Geländer	3::igndisp 7250,8223 7005,8150 7073,8081
 Mittelstreifen	3nocross::ignrte 11963,11813 11919,11856 11768,12006
 Mehlbeerenweg -> Holzmarktstr.: Mittelstreifen	3::igndisp 11923,11881 11919,11856 11963,11813
 Holzmarktstr. -> Mehlbeerenweg: Mittelstreifen	3::igndisp 11768,12006 11919,11856 11923,11881
@@ -1398,6 +1398,9 @@ Riemenschneiderweg -> Prellerweg: Mittelstreifen	3::igndisp 6878,5946 6895,5873 
 Prellerweg -> Riemenschneiderweg: Mittelstreifen	3::igndisp 6765,5863 6895,5873 6878,5946
 Mittelstreifen	3nocross::ignrte 12091,16209 12237,16119 12352,16048
 Prenzlauer Allee -> Ostseestr.: Mittelstreifen	3::igndisp 12198,15999 12237,16119 12091,16209
+Mittelstreifen vor dem Autobahnanschluss	3nocross::ignrte 4292,6558 4320,6540 4423,6477
+Björnsonstr. -> Schildhornstr.: Mittelstreifen vor dem Autobahnanschluss	3::igndisp 4290,6445 4320,6540 4292,6558
+Schildhornstr. -> Björnsonstr.: Mittelstreifen vor dem Autobahnanschluss	3::igndisp 4423,6477 4320,6540 4290,6445
 tragen (16 Stufen)	0:20:75 7487,5477
 tragen (ca. 30 Stufen)	0:35:-219 19976,5
 tragen (ca. 30 Stufen)	0:35:-221 19932,61
@@ -1445,7 +1448,7 @@ tragen (ca. 35 Stufen)	0:30:-108 18180,12262
 tragen (S-Bhf. Marzahn)	0:30:-195 19571,15417
 tragen (S-Bhf. Marzahn)	0:30:-155 19638,15431
 tragen (13 Stufen)	0:30:-180 7923,12876
-tragen (2 x 5 Stufen)	0:30:-149 5017,6387
+tragen (2 x 5 Stufen)	0:30:-151 4999,6397
 tragen (Treppen zur U-Bahnbrücke, 2 x 3 Stufen)	0:20:-40 2301,4917
 tragen (Treppen zur U-Bahnbrücke, 2 x 3 Stufen)	0:20:-32 2181,4835
 tragen (Eisenbahnbrücke Templiner See)	0:60:-168 -15537,-4535
@@ -1519,6 +1522,7 @@ tragen (Treppe, 4 Stufen)	0:10:86 38056,48407
 tragen (Treppe, 9 Stufen)	0:15:-149 14331,17016
 tragen (4 Stufen)	0:10:-246 12871,15882
 Rampe und 8 weite Stufen	0:25:76 16065,6126
+tragen (Treppe, 12 Stufen)	0:15:-23 5475,7906
 Drängelgitter	BNP:2:-266:trailer=5 18583,2972
 Drängelgitter	BNP:2:90:trailer=5 18390,2972
 Drängelgitter	BNP:2:90:trailer=5 18361,2972
@@ -1533,8 +1537,10 @@ Drängelgitter	BNP:5:-164 4258,2693
 Drängelgitter	BNP:5:-123 4202,2622
 Drängelgitter, für Anhänger nicht passierbar	BNP:5:-206:trailer=no 2009,3362
 Drängelgitter, für Anhänger nicht passierbar	BNP:5:-211:trailer=no 1980,3409
-Schwingtor	BNP:5:-153 15054,10168
-Schwingtor	BNP:5:-153 15097,10255
+Schwingtor	BNP:5:-153:trailer=10 15054,10168
+Schwingtor	BNP:5:-153:trailer=10 15097,10255
+Schwingtor	BNP:5:5:trailer=10 7352,8390
+Schwingtor	BNP:5:28:trailer=10 7283,8265
 Schranke, sehr enge Durchfahrt, nicht anhängertauglich	BNP:5:-135:trailer=no 14658,7513
 Schranke	BNP:3:51 8828,13434
 Drängelgitter an der Straßenbahntrasse	BNP:6:-154 14998,13623
@@ -1551,8 +1557,8 @@ Schranke	BNP:5:-81 11162,6379
 Drängelgitter am Bahnübergang	BNP:3:-90 13552,2204
 Drängelgitter am Bahnübergang	BNP:3:-108 13568,2208
 Drängelgitter	BNP:5:43 7509,8929
-Drängelgitter	BNP:3:44 7245,8583
-Drängelgitter	BNP:3:48 7292,8631
+Drängelgitter	BNP:3:44:trailer=8 7245,8583
+Drängelgitter	BNP:3:48:trailer=8 7292,8631
 Schranke	BNP:3:61 8251,20927
 Schranke	BNP:5:-174 21297,12748
 Drängelgitter	BNP:5:7 22061,15168
@@ -1678,13 +1684,16 @@ Vogelsang	1 2106,5808 2141,5948 2195,6184 2193,6214
 Dievenowstr.	2 3165,6939 3206,7109
 Ahornstr. (Steglitz)	1 4852,6094 4869,6122 4940,6080 4926,6053
 Ahornstr. (Steglitz)	1 4926,6053 4911,6028 4839,6067 4852,6094
-Treitschkestr.	1 4854,6413 4987,6336 5125,6262 5219,6215
+Treitschkestr.	1 4854,6413 4971,6345 5125,6262 5219,6215
 tragen (Treppe)	0:40:-217 4127,5427
 tragen (5 Stufen)	0:10:26 4061,5418
 Iltisstr.	1 2797,5624 2858,5535
 Mittelstreifen unbequem zu überqueren	3nocross::ignrte 5493,9357 5495,9263 5503,8982
 Tharandter Str. -> Bundesallee: Mittelstreifen unbequem zu überqueren	3::igndisp 5527,9263 5495,9263 5503,8982
 Bundesallee -> Tharandter Str.: Mittelstreifen unbequem zu überqueren	3::igndisp 5493,9357 5495,9263 5527,9263
+Mittelstreifen, parkende Autos	3nocross::ignrte 5356,7862 5356,7915 5357,8013
+Bundesallee -> Bernhardstr.: Mittelstreifen, parkende Autos	3::igndisp 5357,8013 5356,7915 5471,7915
+Bernhardstr. -> Bundesallee: Mittelstreifen, parkende Autos	3::igndisp 5471,7915 5356,7915 5356,7862
 Mittelstreifen schlecht zu überqueren	3nocross::ignrte 6494,10440 6403,10424 6276,10401
 Wormser Str. -> Lietzenburger Str.: Mittelstreifen schlecht zu überqueren	3::igndisp 6377,10434 6403,10424 6494,10440
 Lietzenburger Str. -> Wormser Str.: Mittelstreifen schlecht zu überqueren	3::igndisp 6276,10401 6403,10424 6377,10434

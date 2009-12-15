@@ -153,9 +153,10 @@ Pfarrstr.: mäßiges Kopfsteinpflaster	Q2 15279,10862 15359,11115 15458,11306
 Pfarrstr.: sehr guter Asphalt	Q0 15458,11306 15477,11338
 Schulze-Boysen-Str: sehr guter Asphalt	Q0 15477,11338 15498,11380
 Buchberger Str.: teilweise mäßige Betonplatten	Q1 16225,11523 16368,11912
-Torgauer Str.: mäßiges, teils schlechtes Kopfsteinpflaster, 17 km/h möglich (weil bergab)	Q3+; 7446,8200 7268,8225 7005,8150
-Torgauer Str.: mäßiges, teils schlechtes Kopfsteinpflaster	Q3; 7005,8150 7268,8225 7446,8200
-Ebersstr.: gutes Kopfsteinpflaster, >22 km/h	Q1 6935,8208 6918,8178 6792,8122 6658,8063
+Torgauer Str.: mäßiges, teils schlechtes Kopfsteinpflaster, 17 km/h möglich (weil bergab)	Q3+; 7446,8200 7250,8223 7005,8150
+Torgauer Str.: mäßiges, teils schlechtes Kopfsteinpflaster	Q3; 7005,8150 7250,8223 7446,8200
+Ebersstr.: gutes Kopfsteinpflaster, >22 km/h	Q1 6935,8208 6918,8178 6792,8122
+Ebersstr.: Asphalt	Q0 6792,8122 6658,8063 6559,8027
 Reichenberger Str.: Kopfsteinpflaster	Q2 11443,10394 11476,10357 11616,10288 11829,10192 12048,10097 12229,10014 12398,9938 12556,9862 12714,9792 12834,9738 12935,9689
 Manteuffelstr.: Kopfsteinpflaster	Q2 11735,10022 11829,10192 11949,10414
 Aachener Str.: Kopfsteinpflaster	Q2 4687,8034 4687,8306 4623,8457
@@ -2898,6 +2899,8 @@ Kyllmannstr. (Wannsee): Asphalt	Q0 -6248,1607 -6179,1570 -6147,1467 -6111,1396 -
 #: add_fragezeichen: genaue Qualität des Philosophenwegs?
 #: by: osm (zweifelhaft: der benachbarte Rhododendronweg ist auch mit surface=cobblestone gekennzeichnet, aber es war Verbundsteinpflaster!)
 Philosophenweg: Kopfsteinpflaster oder Verbundsteinpflaster	Q2 16073,12883 16074,12773
+Cheruskerpark: wassergebundene Decke	Q1 7437,8712 7403,8693 7369,8583
+Cheruskerpark: Asphalt	Q0 7369,8583 7352,8390 7283,8265 7250,8223
 ######################### User Contributions #################################
 #: by: Dominik Seelow vvv
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
@@ -3607,8 +3610,11 @@ Neue Schönholzer Str.: guter Asphalt	Q0 10089,18180 10140,18080 10179,17772
 #: by: ^^^
 #: by: arndt westphal:
 Guntherstr.: Kopfsteinpflaster	Q2 17020,12309 16994,12122 16975,12000
-#: by: D.Mahlow:
-Cheruskerstr.: Asphalt	Q0 7446,8200 7412,8253 7411,8364 7410,8553 7409,8621 7488,8768
+#: by: D.Mahlow: vvv
+Cheruskerstr.: Asphalt	Q0 7446,8200 7412,8253 7411,8364 7410,8593 7408,8648 7437,8712
+#: corrected_by: srt
+Cheruskerstr.: Kopfsteinpflaster	Q2 7437,8712 7488,8768
+#: by: ^^^
 #: by: Mara Kuhl:
 Malplaquetstr.: mäßiges Kopfsteinpflaster	Q2 7441,15909 7279,16057 7162,16163 7051,16264
 #: corrected_by: Frank I (Q2 -> Q1, wording) vvv
@@ -4497,7 +4503,7 @@ Stirnerstr.: guter Asphalt	Q0 5909,5072 6068,5028
 #: by: Tatze:
 Hammersteinstr.: schlechtes grobes Kopfsteinpflaster	Q3 2750,7416 2654,7324 2555,7238 2458,7156 2376,7089
 #: by: Jens Wesendrup:
-Hackerstr.: guter Asphalt	Q0 5017,6387 5034,6425 5075,6509 5101,6579 5137,6651 5184,6723
+Hackerstr.: guter Asphalt	Q0 4999,6397 5020,6434 5065,6515 5101,6579 5137,6651 5184,6723
 #: by: Samuel Koenig: vvv
 #: corrected_by: srt (diesen Abschnitt korrigiert)
 Stewardstr.: Asphalt	Q0 755,5017 928,4996
@@ -4656,7 +4662,7 @@ Neukirchstr.: Kopfsteinpflaster	Q2 12751,18401 12562,18483
 #removed: Markelstr.: asphaltiert	Q0 4528,6711 4588,6675
 #: corrected_by: Fédele Simshäuser (was partially also "asphaltiert"):
 Markelstr.: Kopfsteinpflaster	Q1 4588,6675 4679,6620 4901,6505
-Markelstr.: asphaltiert	Q0 4901,6505 5034,6425 5268,6305
+Markelstr.: asphaltiert	Q0 4901,6505 5020,6434 5268,6305
 #: by: ^^^
 #: by: René Hartmann:
 Neanderstr.: Asphalt	Q0 9815,-805 9808,-339 9812,-41 9826,48
@@ -10327,8 +10333,12 @@ Nordsternstr.: Asphalt	Q0 6292,8899 6268,8884 6249,8846 6241,8798
 Prinz-Georg-Str.: Kopfsteinpflaster	Q2 7012,8511 7104,8413
 #: confirmed_by: srt
 Bruchsaler Str. (Wilmersdorf): Kopfsteinpflaster	Q2 5573,8197 5520,8132 5522,8011
+#: confirmed_by: srt
 Bernhardstr.: Asphalt	Q0 5570,8011 5570,7939
+#: confirmed_by: srt
 Bernhardstr.: Asphalt	Q0 5472,8012 5471,7915
+#: confirmed_by: srt
+(Bernhardstr. - Bundesallee, Parkplatz): Asphalt	Q0 5471,7915 5356,7915
 (Schulstr.): Asphalt	Q0 1506,5169 1493,5258 1437,5282 1361,5228
 Am Petersberg: Kopfsteinpflaster	Q2 990,5581 825,5420
 Pritchardstr.: Asphalt	Q0 1138,4974 1140,5021 1000,5184
