@@ -910,16 +910,7 @@ userdel	2::inwork 7160,11225 6851,11346
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'http://www.potsdam.de/cms/beitrag/10051448/757395/',
-         'until' => 1260831600,
-         'text' => 'Fußgängertunnel Lange Brücke: vollständig gesperrt (September 2009 - Dezember 2009)',
-         'from' => 1251756000,
-         'id' => 1796,
-         'data' => 'userdel	2::inwork -12669,-1768 -12608,-1715
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,

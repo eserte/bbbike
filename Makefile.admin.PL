@@ -184,7 +184,8 @@ BBBIKE_SF_DIR=${.CURDIR}/projects/bbbike.sourceforge.net
 
 BBBIKE_RADZEIT_USER=		root
 #BBBIKE_RADZEIT_HOST=		bbbike.radzeit.de
-BBBIKE_RADZEIT_HOST=		bbbike.de
+#BBBIKE_RADZEIT_HOST=		bbbike.de
+BBBIKE_RADZEIT_HOST=		78.47.225.30
 BBBIKE_RADZEIT_OLD_APACHE_DIR=	/usr/local/apache/radzeit
 BBBIKE_RADZEIT_APACHE_DIR=	/var/www/domains/radzeit.de/www/
 BBBIKE_RADZEIT_CGI_DIR=		$(BBBIKE_RADZEIT_APACHE_DIR)/cgi-bin
@@ -196,7 +197,8 @@ BBBIKE_RADZEIT_DEST2=		$(BBBIKE_RADZEIT_USER)@$(BBBIKE_RADZEIT_HOST):$(BBBIKE_RA
 
 BBBIKE_HOSTEUROPE_USER=	root
 # XXX change this!
-BBBIKE_HOSTEUROPE_HOST=	bbbike.lvps83-169-19-137.dedicated.hosteurope.de
+#BBBIKE_HOSTEUROPE_HOST=	bbbike.lvps83-169-19-137.dedicated.hosteurope.de
+BBBIKE_HOSTEUROPE_HOST=	bbbike.de
 BBBIKE_HOSTEUROPE_APACHE_DIR=/root/work/bbbike-webserver/
 
 RSYNC=rsync
