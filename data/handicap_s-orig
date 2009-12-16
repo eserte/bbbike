@@ -8,8 +8,7 @@
 #
 #: temporary vvv
 # 
-#: last_checked: 2009-11-13
-Jägerstr.: Bauarbeiten, Fahrbahn Richtung Westen gesperrt	q4::inwork; 9394,11996 9201,11968
+# XXX del Einbahnstraße aufgehoben: #: last_checked: 2009-11-13 Jägerstr.: Bauarbeiten, Fahrbahn Richtung Westen gesperrt	q4::inwork; 9394,11996 9201,11968
 # XXX del #: last_checked: 2009-11-13 Glinkastr.: Bauarbeiten, Fahrbahn Richtung Süden gesperrt	q4::inwork; 9201,11968 9208,11872
 #: last_checked: 2009-12-08
 Fahrbahn der Mauerstr. wegen Bauarbeiten gesperrt	q4::inwork 9405,11413 9331,11497
@@ -1710,3 +1709,8 @@ Zwingenberger Weg: enge Straße	q1 -519,4737 -552,4698 -581,4662
 Gliensteig: enge Straße	q1 -5119,16813 -5097,17003
 #: by: anonymous:
 Krämerweg: enge Straße	q1 -5267,16871 -5224,17046 -5178,17258
+#: by: Peter Heibel:
+#: corrected_by: srt/policy (q3 -> q1)
+Seidenbaustr.: enge Straße	q1 19857,3514 19966,3596
+#: by: Ulrike Herwig:
+Gerstenweg: enge Straße	q1 21262,13517 21214,13126 21168,12794 21101,12661 21053,12582 21028,12536 20952,12407 20943,12376 20923,12194

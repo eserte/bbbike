@@ -1223,16 +1223,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_013929',
-         'until' => 1260917999,
-         'text' => 'Winckelmannstr. (Johannisthal) Richtung Stubenrauchstr. zwischen Sterndamm und Köpenicker Str. Baustelle, Fahrtrichtung gesperrt (bis Mitte 12.2009)',
-         'from' => 1251833280,
-         'id' => 1856,
-         'data' => 'userdel	q4::inwork; 17428,4503 17476,4337 17507,4216
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'IM_014045',
          'until' => 1293836399,
@@ -1430,15 +1421,7 @@ userdel	q4::inwork; 10829,18083 10907,18109 10938,18147 10989,18172 11137,18358 
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1260918000,
-         'text' => 'L 812 B102 - Kemnitz Brücke über den Arm der Nieplitz zw. Bardenitz u. Kemnitz Brückenneubau Vollsperrung 28.09.2009-15.12.2009 ',
-         'from' => 1254002400,
-         'id' => 1921,
-         'data' => 'userdel	2::inwork -19162,-33731 -18692,-33299
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1716,26 +1699,8 @@ userdel	2::temp 9516,12010 9656,12021
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'source_id' => 'IM_014764',
-         'until' => 1260917999,
-         'text' => 'Rosenthaler Str. (Mitte) Richtung Rosenthaler Platz zwischen Neue Schönhauser Str. und Weinmeisterstr. Baustelle, Fahrtrichtung gesperrt (bis Mitte 12.2009)',
-         'from' => 1260481636,
-         'id' => 2004,
-         'data' => 'userdel	q4::inwork; 10317,13248 10350,13376
-',
-         'type' => 'handicap'
-       },
-       {
-         'source_id' => 'IM_014785',
-         'until' => 1260917999,
-         'text' => 'Zeltinger Str. (Frohnau) Richtung Zeltinger Platz zwischen Schönfließer Str. und Zerndorfer Weg Baustelle, Fahrtrichtung gesperrt (bis Mitte 12.2009)',
-         'from' => 1260481719,
-         'id' => 2005,
-         'data' => 'userdel	q4::inwork; 3112,26253 3057,26075 2994,25873 2941,25822
-',
-         'type' => 'handicap'
-       },
+       undef,
+       undef,
        undef,
        {
          'until' => 1261522800,
