@@ -18,6 +18,9 @@
 #  test-makefile:	Same as deploy-local, but each make command has to
 #			be confirmed.
 #
+# Make variables:
+#  NO_PARALLEL=1  Do not build and test in parallel.
+# 
 # It is required that the target web server has "FollowSymLinks" on.
 
 # The local service is available on
@@ -118,6 +121,14 @@ OS_LINUX=
 XARGS_REPL?=	xargs --replace=%
 .else
 XARGS_REPL?=	xargs -J %
+.endif
+
+.if ${NO_PARALLEL}
+BUILD_JOBS=1
+TEST_JOBS=1
+.else
+BUILD_JOBS=4
+TEST_JOBS=3
 .endif
 
 .if exists(/usr/lib/cgi-bin/mapserv)
@@ -322,7 +333,7 @@ prepare-bbbike-data-serial:
 
 prepare-bbbike-data-parallel:
 	cd $(BBBIKE_ROOT_DIR)/${DATA_DIR} && \
-		(${MAKE} -j4 all slow-checks; ${MAKE} all slow-checks)
+		(${MAKE} -j${BUILD_JOBS} all slow-checks; ${MAKE} all slow-checks)
 
 # I used "mapfiles-without-reference-maps" instead of "mapfiles" here
 # This was because the "mapfiles-reference-maps" rule took a lot of time
@@ -645,7 +656,7 @@ test-local-parallel:
 	BBBIKE_TEST_WAPURL=${LOCAL_CGI_URL}/wapbbbike.cgi \
 	BBBIKE_TEST_MAPSERVERURL=${LOCAL_MAPSERVER_URL} \
 	BBBIKE_TEST_HTMLDIR=${LOCAL_HTML_URL} \
-	    prove -j3 ${TESTS}
+	    prove -j${TEST_JOBS} ${TESTS}
 
 server-permissions:
 	${SSH_PROG_AND_ARGS} -l ${BBBIKE_HOSTEUROPE_USER} ${BBBIKE_HOSTEUROPE_SSH_HOST} '\
