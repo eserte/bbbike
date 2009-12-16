@@ -475,15 +475,7 @@ userdel	2::inwork 20810,2398 20939,2413
        undef,
        undef,
        undef,
-       {
-         'until' => 1262300400,
-         'text' => 'L 060 Schipkau-Lichterfeld zw. Lichterfeld und Lauchhammer-Nord grundhafter Straßenbau Vollsperrung 01.05.2006-31.12.2009 ',
-         'from' => 1146348000,
-         'id' => 1534,
-         'data' => 'userdel	2::inwork 37797,-89881 37187,-90210 37102,-90307 37059,-90429 37023,-90770 37078,-90978 37419,-91709 37675,-92038 37809,-92300 37918,-93202 37419,-94853 37230,-95682 37151,-95962 37151,-96145
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1695,19 +1687,6 @@ userdel	2::temp 9516,12010 9656,12021
          'from' => undef,
          'id' => 2002,
          'data' => 'userdel	2::inwork -2521,3637 -2396,3666 -2174,3718 -2014,3826 -1980,3872 -1974,3933 -1996,4063 -1944,4140 -1706,3971 -1624,3956 -1558,3965 -1468,3995 -1380,4108
-',
-         'type' => 'gesperrt'
-       },
-       undef,
-       undef,
-       undef,
-       undef,
-       {
-         'until' => 1261522800,
-         'text' => 'L 029 Lanke - Wandlitz Durchlass bei Ützdorf Erneuerung Durchlass Vollsperrung 10.12.2009-22.12.2009 ',
-         'from' => 1260313200,
-         'id' => 2007,
-         'data' => 'userdel	2::inwork 18702,39267 19045,39387
 ',
          'type' => 'gesperrt'
        }

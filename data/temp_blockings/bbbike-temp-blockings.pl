@@ -12996,7 +12996,7 @@ userdel	q4::inwork 54017,-89128 53787,-90242
 EOF
      },
      { from  => 1146348000, # 2006-04-30 00:00
-       until => 1262300400, # 2010-01-01 00:00
+       until => 1261003082, # 2010-01-01 00:00 1262300400
        text  => 'L 060 Schipkau-Lichterfeld zw. Lichterfeld und Lauchhammer-Nord grundhafter Straßenbau Vollsperrung 01.05.2006-31.12.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -17026,7 +17026,7 @@ userdel	2::inwork 29918,-54610 30409,-55818
 EOF
      },
      { from  => 1260313200, # 2009-12-09 00:00
-       until => 1261522800, # 2009-12-23 00:00
+       until => 1261003050, # 2009-12-23 00:00 1261522800
        text  => 'L 029 Lanke - Wandlitz Durchlass bei Ützdorf Erneuerung Durchlass Vollsperrung 10.12.2009-22.12.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
