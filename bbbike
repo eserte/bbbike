@@ -11942,23 +11942,7 @@ sub choose_from_plz {
 	}
     }
 
-    require PLZ;
-    my $plz;
-    if (defined $city && $city eq 'Berlin') {
-	require PLZ::Multi;
-	my @objs = ("Berlin.coords.data",
-		    "Potsdam.coords.data",
-		   );
-	eval {
-	    # XXX why?
-	    my $plaetze = Strassen->new("plaetze");
-	    push @objs, $plaetze if $plaetze;
-	}; warn $@ if $@;
-
-	$plz = PLZ::Multi->new(@objs, -cache => 1);
-    } else {
-	$plz = new PLZ;
-    }
+    my $plz = make_plz();
     if (!$plz) {
 	$plzmcmd->configure(-state => 'disabled');
 	status_message(M"Keine PLZ-Datenbank vorhanden!", 'err');
@@ -17379,6 +17363,27 @@ sub add_custom_layers_to_net {
 	    warn "Cannot get Strassen for $abk: $@" if $@;
 	}
     }
+}
+
+sub make_plz {
+    require PLZ;
+    my $plz;
+    if (defined $city && $city eq 'Berlin') {
+	require PLZ::Multi;
+	my @objs = ("Berlin.coords.data",
+		    "Potsdam.coords.data",
+		   );
+	eval {
+	    # XXX why?
+	    my $plaetze = Strassen->new("plaetze");
+	    push @objs, $plaetze if $plaetze;
+	}; warn $@ if $@;
+
+	$plz = PLZ::Multi->new(@objs, -cache => 1);
+    } else {
+	$plz = PLZ->new;
+    }
+    $plz;
 }
 
 sub make_net {
