@@ -1927,18 +1927,20 @@ sub visualize_N_RW_net {
 sub show_bbbike_suggest_toplevel {
     my(%args) = @_;
     require "$FindBin::RealBin/babybike/lib/BBBikeSuggest.pm";
-    require BBBikeRouting;
     my $suggest = BBBikeSuggest->new;
     $suggest->set_zipfile("$main::datadir/Berlin.coords.data");
     my $t = main::redisplay_top($main::top, 'bbbike_suggest', -force => 1, -title => 'Search street', %args);
     main::set_as_toolwindow($t);
     my $w = $suggest->suggest_widget($t, -selectcmd => sub {
 					 my $w = shift;
-					 my $routing = BBBikeRouting->new->init_context;
-					 $routing->Start->Street($w->get);
-					 $routing->get_start_position;
-					 warn $routing->Start->Coord;
-					 main::mark_point(-coords => [[[ main::transpose(split /,/, $routing->Start->Coord) ]]],
+					 my $plz = main::make_plz();
+					 main::status_message("Keine PLZ-Datenbank vorhanden!", 'die') if (!$plz);
+					 my $str = $w->get;
+					 my($matchref) = $plz->look_loop($str, Agrep => 3, Max => 1);
+					 my(@match) = @$matchref;
+					 main::status_message("Strange, no match for $str found...", 'die') if (!@match);
+					 my $coord = $match[0]->[PLZ::LOOK_COORD()];
+					 main::mark_point(-coords => [[[ main::transpose(split /,/, $coord) ]]],
 							  -clever_center => 1,
 							  -inactive => 1);
 				     });
