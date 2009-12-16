@@ -273,7 +273,7 @@ $VERSION = sprintf("%d.%02d", q$Revision: 1.45 $ =~ /(\d+)\.(\d+)/);
 		    $conf = BBBikeDraw::MapServer::Conf->radzeit_default;
 		} elsif (defined $ENV{SERVER_NAME} &&
 			 $ENV{SERVER_NAME} =~ /bbbike\.de$/) {
-		    $conf = BBBikeDraw::MapServer::Conf->radzeit_default;
+		    $conf = BBBikeDraw::MapServer::Conf->bbbike_cgi_conf;
 		} elsif (defined $ENV{SERVER_NAME} &&
 			 $ENV{SERVER_NAME} =~ /radzeit\.herceg\.(de|local)$/) {
 		    $conf = BBBikeDraw::MapServer::Conf->radzeit_herceg_de_default;
