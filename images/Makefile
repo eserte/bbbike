@@ -301,3 +301,6 @@ png-to-jpg:	\
 #     removed text
 #     made black bar narrower
 #     made red circle border broader
+
+# Creation of srtbike57.png:
+#   convert -bordercolor white -border 6x6 -geometry 57x57 srtbike_logo.svg srtbike57.png
