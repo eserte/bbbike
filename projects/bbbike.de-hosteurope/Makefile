@@ -123,7 +123,7 @@ XARGS_REPL?=	xargs --replace=%
 XARGS_REPL?=	xargs -J %
 .endif
 
-.if ${NO_PARALLEL}
+.ifdef NO_PARALLEL
 BUILD_JOBS=1
 TEST_JOBS=1
 .else
