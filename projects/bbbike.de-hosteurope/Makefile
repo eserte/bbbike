@@ -407,6 +407,8 @@ prepare-bbbike-dist-prog-bbbike-images:	prepare-sternfahrt2005-dist-images \
 prepare-favicon:
 	cd ${CURDIR}/${HTDOCS} && \
 	    ( [ -e favicon.ico ] || ln -s BBBike/images/favicon.ico )
+	cd ${CURDIR}/${HTDOCS} && \
+	    ( [ -e apple-touch-icon.png ] || ln -s BBBike/images/srtbike57.png apple-touch-icon.png )
 
 prepare-bbbike-dist-prog-bbbike-tmp:
 	chmod 777 ${CURDIR}/BBBike/tmp
