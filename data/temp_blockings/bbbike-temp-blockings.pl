@@ -16573,9 +16573,10 @@ userdel	3 11139,13008 11228,12951 11295,12915
 EOF
      },
      { from  => 1254891600, # 2009-10-07 07:00
-       until => 1261177200, # 2009-12-19 00:00
-       text  => 'Naumannstraße zwischen Leuthener Straße und Tempelhofer Weg in Richtung Sachsendamm gesperrt, Baustelle, Dauer: 08.10.2009 07:00 Uhr bis 18.12.2009 ',
+       until => 1267397999, # 2010-02-28 23:59
+       text  => 'Naumannstraße zwischen Leuthener Straße und Tempelhofer Weg in Richtung Sachsendamm gesperrt, Baustelle, Dauer: 08.10.2009 07:00 Uhr bis Ende 02.2010',
        type  => 'handicap',
+       source_id => 'IM_014786',
        data  => <<EOF,
 userdel	q4::inwork; 7716,8356 7716,8048 7717,7879
 EOF
@@ -16695,7 +16696,7 @@ userdel	2::inwork -70491,100364 -70046,101896
 EOF
      },
      { from  => 1257030000, # 2009-11-01 00:00
-       until => 1262300400, # 2010-01-01 00:00
+       until => 1261123459, # 2010-01-01 00:00 1262300400
        text  => 'B 112 OU Guben - OU Neuzelle zw. Abzw.Wellmitz und Abzw. Streichwitz Straßenneubau Vollsperrung 02.11.2009-31.12.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -16976,7 +16977,7 @@ userdel	q4::inwork 10115,-8276 10448,-7582
 EOF
      },
      { from  => 1259449200, # 2009-11-29 00:00
-       until => 1283292000, # 2010-09-01 00:00
+       until => 1261123496, # 2010-09-01 00:00 1283292000
        text  => 'B 183 Dresdner Straße Brücke über die Schwarze Elster in Bad Liebenwerda Brückenneubau Vollsperrung 30.11.2009-31.08.2010 ',
        type  => 'gesperrt',
        data  => <<EOF,

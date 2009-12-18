@@ -1487,8 +1487,9 @@ userdel	q4::inwork; 10829,18083 10907,18109 10938,18147 10989,18172 11137,18358 
        undef,
        undef,
        {
-         'until' => 1261177200,
-         'text' => 'Naumannstraße zwischen Leuthener Straße und Tempelhofer Weg in Richtung Sachsendamm gesperrt, Baustelle, Dauer: 08.10.2009 07:00 Uhr bis 18.12.2009 ',
+         'source_id' => 'IM_014786',
+         'until' => 1267397999,
+         'text' => 'Naumannstraße zwischen Leuthener Straße und Tempelhofer Weg in Richtung Sachsendamm gesperrt, Baustelle, Dauer: 08.10.2009 07:00 Uhr bis Ende 02.2010',
          'from' => 1254891600,
          'id' => 1953,
          'data' => 'userdel	q4::inwork; 7716,8356 7716,8048 7717,7879
@@ -1562,15 +1563,7 @@ userdel	2::inwork 14835,10272 14888,10385
        undef,
        undef,
        undef,
-       {
-         'until' => 1262300400,
-         'text' => 'B 112 OU Guben - OU Neuzelle zw. Abzw.Wellmitz und Abzw. Streichwitz Straßenneubau Vollsperrung 02.11.2009-31.12.2009 ',
-         'from' => 1257030000,
-         'id' => 1967,
-         'data' => 'userdel	2::inwork 96951,-34887 97016,-36424 97032,-36743 97476,-37327 97680,-37821
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1261177200,
          'text' => 'B 122 Zechlinerhütte - Wesenberg zw. Abzw. Kleinzerlang und Prebelowbrücke Deckenerneuerung Vollsperrung 16.11.2009-18.12.2009 ',
@@ -1672,15 +1665,7 @@ userdel	2::temp 9516,12010 9656,12021
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1283292000,
-         'text' => 'B 183 Dresdner Straße Brücke über die Schwarze Elster in Bad Liebenwerda Brückenneubau Vollsperrung 30.11.2009-31.08.2010 ',
-         'from' => 1259449200,
-         'id' => 2001,
-         'data' => 'userdel	2::inwork 12593,-99029 13053,-99051
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1272664800,
          'text' => 'Baumaßnahmen in der Parkanlage am Schlachtensee, teilweise ist der Uferweg gesperrt (bis zum Frühjahr 2010)',
