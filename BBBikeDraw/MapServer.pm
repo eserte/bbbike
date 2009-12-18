@@ -196,7 +196,7 @@ $VERSION = sprintf("%d.%02d", q$Revision: 1.45 $ =~ /(\d+)\.(\d+)/);
 	    }
 	}
 	if (!defined $self->MapserverBinDir || ! -e $self->MapserverBinDir) {
-	    die "Please define \$mapserver_bin_dir in $bbbike_cgi_conf_path";
+	    die "Please define \$mapserver_bin_dir in $bbbike_cgi_conf_path. Or maybe shp2img is not installed in one of the standard paths?";
 	}
 
 	$self->MapserverCgiBinDir($ms->{MAPSERVER_CGI_BIN_DIR}) if defined $ms->{MAPSERVER_CGI_BIN_DIR};
