@@ -4106,7 +4106,7 @@ sub display_route {
 	    require XML::Simple;
 	    my $filename = filename_from_route($startname, $zielname) . ".xml";
 	    http_header
-		(-type => "text/xml",
+		(-type => 'application/xml',
 		 -charset => '', # to suppress default of iso-8859-1
 		 @no_cache,
 		 -Content_Disposition => "attachment; filename=$filename",
