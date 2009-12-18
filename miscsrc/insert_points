@@ -73,6 +73,7 @@ use lib ("$FindBin::RealBin/..", "$FindBin::RealBin/../lib",
 	 "$FindBin::RealBin/miscsrc", # in the case it's required from bbbike
 	);
 use BBBikeUtil;
+use BBBikeUtil qw(save_pwd);
 use File::Basename;
 use Strassen::Dataset;
 use Strassen::Core;
@@ -127,6 +128,14 @@ my $use_indexer = 1;
 my $operation;
 
 sub process {
+    my(@argv) = @_;
+    my $ret = save_pwd {
+	_process(@argv);
+    };
+    $ret;
+}
+
+sub _process {
     my(@argv) = @_;
 
     local @ARGV = @argv;
