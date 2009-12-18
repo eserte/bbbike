@@ -830,7 +830,12 @@ sub display {
 sub uncompr {
     my $res = shift;
     if ($res->can("decoded_content")) {
-	$res->decoded_content;
+	my %opts;
+	if ($res->content_is_xml) {
+	    # http://rt.cpan.org/Public/Bug/Display.html?id=52572
+	    $opts{charset} = 'none';
+	}
+	$res->decoded_content(%opts);
     } else {
 	# When was decoded_content part of LWP?
 	# XXX without decoded_content charset-related errors are possible,
