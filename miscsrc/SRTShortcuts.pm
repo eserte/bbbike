@@ -574,6 +574,8 @@ sub add_new_layer {
 	main::handle_global_directives($file, $free_layer);
 	main::bbbikelazy_add_data($type, $free_layer, $file);
     }
+    # XXX add_to_stack functionality gots destroyed by calling once the layer_editor, because it used special_raise for *all*. get rid of special_raise/lower!
+    main::add_to_stack($free_layer, "before", "pp");
     Hooks::get_hooks("after_new_layer")->execute;
     $free_layer;
 }
