@@ -698,6 +698,48 @@ sub _process {
 	print STDERR "Doing $operation...\n" if $verbose;
 	$ans = 'j';
     } elsif ($use_tk) {
+	my @check;
+	my @orig_change_files;
+	my @checkbutton_info;
+	my @lock_warnings;
+	for (my $type = 0; $type <= $#change_files; $type++) {
+	    next if !defined $change_files[$type];
+	    @{$orig_change_files[$type]} = @{$change_files[$type]};
+	    $change_files[$type] = [];
+	    foreach my $file (@{$orig_change_files[$type]}) {
+		if (-l emacs_lockfile($file)) {
+		    push @lock_warnings, $file;
+		}
+		my $names = "";
+		if (exists $change_names{$file} &&
+		    @{ $change_names{$file} }) {
+		    $names = join(", ", @{ $change_names{$file} });
+		    $names = substr($names, 0, 40)."..." if length $names > 40;
+		    $names = " ($names)";
+		}
+		if (exists $change_special_flags{$file} &&
+			@{ $change_special_flags{$file} }) {
+		    $names .= " (" . join(", ", @{ $change_special_flags{$file} }) . ")";
+		}
+		$check[$type]->{$file} = 1;
+		push @checkbutton_info, { -text => "$file$names",
+					  -variable => \$check[$type]->{$file},
+					};
+	    }
+	}
+
+	if (@lock_warnings) {
+	    my $yn = $top->messageBox(-title => 'Warning',
+				      -message => "The following files might be edited in an emacs session:\n" .
+				      join("\n", map { "* $_" } @lock_warnings) . "\n" .
+				      "Continue editing?",
+				      -type => 'YesNo',
+				     );
+	    if ($yn !~ m{^y}i) {
+		return RET_NOMOD;
+	    }
+	}
+
 	require Tk::DialogBox;
 	my $dia = $top->DialogBox
 	    (-title => $0,
@@ -713,29 +755,8 @@ sub _process {
 				    }->{$operation}
 		 )->pack;
 	$dia->add('Label', -text => 'Betroffene Dateien:')->pack;
-	my @check;
-	my @orig_change_files;
-	for (my $type = 0; $type <= $#change_files; $type++) {
-	    next if !defined $change_files[$type];
-	    @{$orig_change_files[$type]} = @{$change_files[$type]};
-	    $change_files[$type] = [];
-	    foreach my $file (@{$orig_change_files[$type]}) {
-		my $names = "";
-		if (exists $change_names{$file} &&
-		    @{ $change_names{$file} }) {
-		    $names = join(", ", @{ $change_names{$file} });
-		    $names = substr($names, 0, 40)."..." if length $names > 40;
-		    $names = " ($names)";
-		}
-		if (exists $change_special_flags{$file} &&
-			@{ $change_special_flags{$file} }) {
-		    $names .= " (" . join(", ", @{ $change_special_flags{$file} }) . ")";
-		}
-		$check[$type]->{$file} = 1;
-		$dia->add('Checkbutton',
-			  -text => "$file$names",
-			  -variable => \$check[$type]->{$file})->pack(-anchor => "w");
-	    }
+	for my $cb_info (@checkbutton_info) {
+	    $dia->add('Checkbutton', %$cb_info)->pack(-anchor => "w");
 	}
 	unless ($operation =~ /^(grep|grepline)$/) {
 	    $dia->add('Label',
@@ -1090,6 +1111,17 @@ sub get_indexer {
 	return $indexer;
     }
     undef;
+}
+
+sub emacs_lockfile {
+    my $file = shift;
+    my $lock_file;
+    if ($file =~ m{/.*?$}) {
+	($lock_file = $file) =~ s{/(.*?)$}{/.#$1};
+    } else {
+	$lock_file = '.#' . $file;
+    }
+    $lock_file;
 }
 
 return 1 if caller;
