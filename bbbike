@@ -6874,7 +6874,8 @@ EOF
 		    if ($p) {
 		        $c->createImage($x, $y, -image => $p,
 				        -anchor => $anchor,
-				        -tags => ["$abk-img", "$xx,$yy", $pointname, ($abk =~ /^L\d+$/ ? ("L-fg") : ())],
+					# $abk-img or $abk-fg? set both!
+				        -tags => ["$abk-img", "$xx,$yy", $pointname, ($abk =~ /^L\d+$/ ? ("$abk-fg", "L-fg") : ())],
 				       );
 		        last; # we're done, only label drawing missing
 		    }
