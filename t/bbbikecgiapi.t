@@ -16,7 +16,7 @@ BEGIN {
 	use Test::More;
 	1;
     }) {
-	print "1..0 # skip: no JSON::XS, LWP::UserAgent and/or Test::More module(s)\n";
+	print "1..0 # skip no JSON::XS, LWP::UserAgent and/or Test::More module(s)\n";
 	exit;
     }
 }

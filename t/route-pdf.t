@@ -30,7 +30,7 @@ BEGIN {
 	use File::Temp qw(tempfile);
 	1;
     }) {
-	print "1..0 # skip: no Test::More and/or File::Temp module(s)\n";
+	print "1..0 # skip no Test::More and/or File::Temp module(s)\n";
 	exit;
     }
 }

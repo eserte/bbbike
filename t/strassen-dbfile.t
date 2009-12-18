@@ -19,7 +19,7 @@ BEGIN {
 	use Strassen::DB_File;
 	1;
     }) {
-	print "1..0 # skip: no DB_File and/or Test::More modules\n";
+	print "1..0 # skip no DB_File and/or Test::More modules\n";
 	exit;
     }
 }

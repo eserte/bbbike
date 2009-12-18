@@ -14,7 +14,7 @@ BEGIN {
 	use Test::More;
 	1;
     }) {
-	print "1..0 # skip: no Test::More and/or WWW::Mechanize modules or outdated versions\n";
+	print "1..0 # skip no Test::More and/or WWW::Mechanize modules or outdated versions\n";
 	exit;
     }
 }

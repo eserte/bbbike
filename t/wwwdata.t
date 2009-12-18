@@ -20,7 +20,7 @@ BEGIN {
 	use Image::Info;
 	1;
     }) {
-	print "1..0 # skip: no Test::More, Image::Info and/or LWP::UserAgent module\n";
+	print "1..0 # skip no Test::More, Image::Info and/or LWP::UserAgent module\n";
 	exit;
     }
 }

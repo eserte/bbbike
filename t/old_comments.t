@@ -21,7 +21,7 @@ BEGIN {
 	use YAML::Syck qw(Load Dump);
 	1;
     }) {
-	print "1..0 # skip: no Test::More, LWP::UserAgent and/or YAML::Syck modules\n";
+	print "1..0 # skip no Test::More, LWP::UserAgent and/or YAML::Syck modules\n";
 	exit;
     }
 }

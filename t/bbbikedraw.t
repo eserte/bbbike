@@ -39,7 +39,7 @@ BEGIN {
 	use Image::Info qw(image_info);
 	1;
     }) {
-	print "1..0 # skip: no Test, Time::HiRes and/or Image::Info modules\n";
+	print "1..0 # skip no Test, Time::HiRes and/or Image::Info modules\n";
 	exit;
     }
 

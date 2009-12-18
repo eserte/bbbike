@@ -15,12 +15,12 @@ BEGIN {
 	use Test::More;
 	1;
     }) {
-	print "1..0 # skip: no Test::More module\n";
+	print "1..0 # skip no Test::More module\n";
 	exit;
     }
 
     if ($^O eq 'MSWin32') {
-	print "1..0 # skip: test meaningless on Windows\n";
+	print "1..0 # skip test meaningless on Windows\n";
 	exit;
     }
 }

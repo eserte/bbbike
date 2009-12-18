@@ -23,7 +23,7 @@ BEGIN {
 	use Test;
 	1;
     }) {
-	print "1..0 # skip: no Test module\n";
+	print "1..0 # skip no Test module\n";
 	exit;
     }
 }

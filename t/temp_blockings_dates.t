@@ -20,7 +20,7 @@ BEGIN {
 	use Date::Calc qw(Mktime Today_and_Now); # fallback to Date::PCalc?
 	1;
     }) {
-	print "1..0 # skip: no Test::More and/or Date::Calc modules\n";
+	print "1..0 # skip no Test::More and/or Date::Calc modules\n";
 	exit;
     }
 }

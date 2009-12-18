@@ -25,7 +25,7 @@ BEGIN {
 	use Archive::Zip qw( :ERROR_CODES :CONSTANTS );
 	1;
     }) {
-	print "1..0 # skip: no Test::More and/or Archive::Zip modules\n";
+	print "1..0 # skip no Test::More and/or Archive::Zip modules\n";
 	exit;
     }
 }

@@ -26,14 +26,14 @@ BEGIN {
 	use Tk;
 	1;
     }) {
-	print "1..0 # skip: no Object::Iterate, Test::More and/or Tk modules\n";
+	print "1..0 # skip no Object::Iterate, Test::More and/or Tk modules\n";
 	exit;
     }
 }
 
 my $top = eval { Tk::tkinit() };
 if (!$top) {
-    print "1..0 # skip: cannot create main window: $@\n";
+    print "1..0 # skip cannot create main window: $@\n";
     exit;
 }
 

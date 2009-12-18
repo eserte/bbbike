@@ -20,7 +20,7 @@ BEGIN {
 	use Object::Iterate 0.05 qw(iterate);
 	1;
     }) {
-	print "1..0 # skip: no Test and/or Object::Iterate modules\n";
+	print "1..0 # skip no Test and/or Object::Iterate modules\n";
 	exit;
     }
 }

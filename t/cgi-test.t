@@ -14,7 +14,7 @@ BEGIN {
 	use Test::More;
 	1;
     }) {
-	print "1..0 # skip: no HTML::Form, LWP::UserAgent and/or Test::More modules\n";
+	print "1..0 # skip no HTML::Form, LWP::UserAgent and/or Test::More modules\n";
 	exit;
     }
 }

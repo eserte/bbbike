@@ -18,13 +18,13 @@ BEGIN {
 	use Sys::Hostname qw(hostname);
 	1;
     }) {
-	print "1..0 # skip: no WWW::Mechanize (1.54), WWW::Mechanize::FormFiller and/or Test::More modules\n";
+	print "1..0 # skip no WWW::Mechanize (1.54), WWW::Mechanize::FormFiller and/or Test::More modules\n";
 	exit;
     }
 }
 
 if (hostname !~ m{^(biokovo|biokovo-amd64|vran)\.herceg\.de} && hostname !~ /radzeit/i) {
-    print "1..0 # skip: works only on vran/biokovo\n";
+    print "1..0 # skip works only on vran/biokovo\n";
     exit;
 }
 

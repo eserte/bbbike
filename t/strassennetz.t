@@ -32,7 +32,7 @@ BEGIN {
 	use List::Util qw(sum);
 	1;
     }) {
-	print "1..0 # skip: no Test::More and/or List::Util module\n";
+	print "1..0 # skip no Test::More and/or List::Util module\n";
 	exit;
     }
 }

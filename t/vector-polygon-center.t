@@ -34,14 +34,14 @@ BEGIN {
 	use Tk::MinMaxScale;
 	1;
     }) {
-	print "1..0 # skip: no Test::More, Tk and/or Tk::MinMaxScale modules\n";
+	print "1..0 # skip no Test::More, Tk and/or Tk::MinMaxScale modules\n";
 	exit;
     }
 }
 
 my $top = eval { Tk::tkinit() };
 if (!$top) {
-    print "1..0 # skip: cannot create main window: $@\n";
+    print "1..0 # skip cannot create main window: $@\n";
     exit;
 }
 

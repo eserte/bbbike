@@ -20,14 +20,14 @@ BEGIN {
         use YAML 0.39; # changed YAML magic
 	1;
     }) {
-	print "1..0 # skip: no Test::More and/or YAML modules\n";
+	print "1..0 # skip no Test::More and/or YAML modules\n";
 	exit;
     }
     if (!eval q{
 	use Strassen::StrassenNetzNew;
 	1;
     }) {
-	print "1..0 # skip: no Strassen::StrassenNetzNew module\n";
+	print "1..0 # skip no Strassen::StrassenNetzNew module\n";
 	exit;
     }
     if (!eval q{
@@ -35,7 +35,7 @@ BEGIN {
 	require "$FindBin::RealBin/../miscsrc/XXX_new_comments.pl";
 	1;
     }) {
-	print "1..0 # skip: no new_comments script or Text::Table module\n";
+	print "1..0 # skip no new_comments script or Text::Table module\n";
 	exit;
     }
 

@@ -26,7 +26,7 @@ BEGIN {
 	use WWW::Mechanize;
 	1;
     }) {
-	print "1..0 # skip: no File::Temp, Test::More, LWP::UserAgent, and/or WWW::Mechanize modules\n";
+	print "1..0 # skip no File::Temp, Test::More, LWP::UserAgent, and/or WWW::Mechanize modules\n";
 	exit;
     }
 }

@@ -26,7 +26,7 @@ BEGIN {
 	use Tie::File;
 	1;
     }) {
-	print "1..0 # skip: no Test::More and/or FIle::Temp module\n";
+	print "1..0 # skip no Test::More and/or FIle::Temp module\n";
 	exit;
     }
 }

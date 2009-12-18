@@ -16,7 +16,7 @@ BEGIN {
 	use CGI;
 	1;
     }) {
-	print "1..0 # skip: no Test::More and/or LWP::UserAgent module\n";
+	print "1..0 # skip no Test::More and/or LWP::UserAgent module\n";
 	exit;
     }
 }

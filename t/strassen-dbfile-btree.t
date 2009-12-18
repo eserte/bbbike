@@ -20,7 +20,7 @@ BEGIN {
 	use Strassen::DB_File_Btree;
 	1;
     }) {
-	print "1..0 # skip: no Test/DB_File/File::Temp modules\n";
+	print "1..0 # skip no Test/DB_File/File::Temp modules\n";
 	exit;
     }
 }
@@ -30,7 +30,7 @@ BEGIN {
 	require Object::Iterate;
 	1;
     }) {
-	print "1..0 # skip: no Object::Iterate module, needed for convert() method\n";
+	print "1..0 # skip no Object::Iterate module, needed for convert() method\n";
 	exit;
     }
 }

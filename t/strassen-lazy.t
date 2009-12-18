@@ -21,7 +21,7 @@ BEGIN {
 	1;
     }) {
 	warn $@;
-	print "1..0 # skip: no Test/Object::Realize::Later modules\n";
+	print "1..0 # skip no Test/Object::Realize::Later modules\n";
 	exit;
     }
 }

@@ -22,7 +22,7 @@ BEGIN {
 	use File::ReadBackwards 1.00; # tell method
 	1;
     }) {
-	print "1..0 # skip: no Test::More, recent Fcntl and/or File::ReadBackwards modules\n";
+	print "1..0 # skip no Test::More, recent Fcntl and/or File::ReadBackwards modules\n";
 	exit;
     }
 }
