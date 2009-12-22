@@ -25,9 +25,11 @@ BEGIN {
     for (qw(item area landuse cover)) {
 	$osm_layer{$_} = undef;
     }
-    if (eval { require Hash::Util; 1 }) {
-	Hash::Util::lock_keys(\%osm_layer);
-    }
+    eval q{ use Hash::Util };
+}
+
+if (defined &Hash::Util::lock_keys) {
+    Hash::Util::lock_keys(%osm_layer);
 }
 
 
