@@ -129,8 +129,9 @@ my $operation;
 
 sub process {
     my(@argv) = @_;
-    my $ret = save_pwd {
-	_process(@argv);
+    my $ret;
+    save_pwd {
+	$ret = _process(@argv);
     };
     $ret;
 }
