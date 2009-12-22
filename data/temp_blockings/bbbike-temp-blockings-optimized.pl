@@ -625,15 +625,7 @@ userdel	q4::inwork 10422,12395 10476,12432
        },
        undef,
        undef,
-       {
-         'until' => 1261436400,
-         'text' => 'B 198 Neubrandenburger Straße OD Prenzlau, Brücke über die Ücker Brückenneubau Vollsperrung 04.05.2009-21.12.2009 ',
-         'from' => 1241301600,
-         'id' => 1630,
-         'data' => 'userdel	2::inwork 39239,101950 39066,102017
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -738,15 +730,7 @@ userdel	q4::inwork 10422,12395 10476,12432
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1261350000,
-         'text' => 'K 6938 Görzke - Hohenlobbese OD Görzke, zw. B107 und. Reppinicher Str., 2 Bauabschn. Kanalarbeiten Vollsperrung 08.06.2009-20.12.2009 ',
-         'from' => 1244325600,
-         'id' => 1700,
-         'data' => 'userdel	q4::inwork -59599,-27568 -59265,-27286 -58799,-27258
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -875,15 +859,7 @@ userdel	2::inwork 7160,11225 6851,11346
        undef,
        undef,
        undef,
-       {
-         'until' => 1261177200,
-         'text' => 'L 015 Schloßstr., Menzer Str. OD Rheinsberg, zw. Berliner Str. u. Kiefernweg Straßenbauarbeiten Vollsperrung 27.07.2009-18.12.2009 ',
-         'from' => 1248559200,
-         'id' => 1785,
-         'data' => 'userdel	q4::inwork -24965,76568 -25211,76393 -25508,76444
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1153,15 +1129,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1261436400,
-         'text' => 'B 005 Frankfurter Straße OL Heinersdorf Kanal- u. Straßenbauarbeiten Vollsperrung 07.09.2009-21.12.2009 ',
-         'from' => 1252188000,
-         'id' => 1835,
-         'data' => 'userdel	q4::inwork 66009,6118 65618,6296 65528,6253 65365,6281 65225,6403
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1394,15 +1362,7 @@ userdel	q4::inwork; 10829,18083 10907,18109 10938,18147 10989,18172 11137,18358 
        undef,
        undef,
        undef,
-       {
-         'until' => 1261350000,
-         'text' => 'K 6422 Petershagener Str. OL Fredersdorf, zw. Rosinstr. und Platanenstr. Straßen- und Durchlassbau Vollsperrung 23.09.2009-20.12.2009 ',
-         'from' => 1253570400,
-         'id' => 1918,
-         'data' => 'userdel	q4::inwork 34139,13113 34896,13562
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => 1272664800,
@@ -1417,24 +1377,8 @@ userdel	q4::inwork; 10829,18083 10907,18109 10938,18147 10989,18172 11137,18358 
        undef,
        undef,
        undef,
-       {
-         'until' => 1261263600,
-         'text' => 'L 063 Berliner Straße OL Lauchhammer, zw. Dimitroffstr. u. Bahnübergang Kanalbau Vollsperrung 05.10.2009-19.12.2009 ',
-         'from' => 1254607200,
-         'id' => 1925,
-         'data' => 'userdel	q4::inwork 35482,-103562 35379,-103141
-',
-         'type' => 'handicap'
-       },
-       {
-         'until' => 1261177200,
-         'text' => 'L 292 Schönfeld - Grüntal OD Tempelfelde, Schönefelder Str. Kanal- und Straßenbau Vollsperrung 01.10.2009-18.12.2009 ',
-         'from' => 1254261600,
-         'id' => 1926,
-         'data' => 'userdel	q4::inwork 31377,34072 31293,33987
-',
-         'type' => 'handicap'
-       },
+       undef,
+       undef,
        undef,
        undef,
        undef,
@@ -1564,15 +1508,7 @@ userdel	2::inwork 14835,10272 14888,10385
        undef,
        undef,
        undef,
-       {
-         'until' => 1261177200,
-         'text' => 'B 122 Zechlinerhütte - Wesenberg zw. Abzw. Kleinzerlang und Prebelowbrücke Deckenerneuerung Vollsperrung 16.11.2009-18.12.2009 ',
-         'from' => 1258239600,
-         'id' => 1968,
-         'data' => 'userdel	2::inwork -26520,83231 -26098,84240 -26120,84667 -26316,84900
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
