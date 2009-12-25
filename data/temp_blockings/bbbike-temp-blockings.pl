@@ -13487,7 +13487,7 @@ userdel	2::inwork -5575,-6838 -6043,-7395 -6319,-7823
 EOF
      },
      { from  => 1237676400, # 2009-03-22 00:00
-       until => 1262300400, # 2010-01-01 00:00
+       until => 1261770596, # 2010-01-01 00:00 1262300400
        text  => 'L 086 Belziger Straße OD Lehnin Kreuzungsbereich Gohlitzstraße Straßenbau Vollsperrung 23.03.2009-31.12.2009 ',
        type  => 'handicap',
        data  => <<EOF,
@@ -14667,9 +14667,9 @@ EOF
 userdel	2::inwork -8893,85743 -9850,84800
 EOF
      },
-     { from  => 1246916833, # 2009-07-06 23:47
-       until => 1262300400, # 2010-01-01 00:00
-       text  => 'Markgrafenstr. (Mitte) Richtung Behrenstr. zwischen Mohrenstr. und Französische Str. Baustelle, Fahrtrichtung gesperrt (bis Dezember 2009)',
+     { from  => 1261769245, # 2009-12-25 20:27
+       until => 1277935199, # 2010-06-30 23:59
+       text  => 'Markgrafenstr. (Mitte) Richtung Behrenstr. zwischen Mohrenstr. und Französische Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 06.10)',
        type  => 'handicap',
        source_id => 'IM_013316',
        data  => <<EOF,
@@ -15570,8 +15570,8 @@ userdel	2::inwork 92955,20065 93405,20640
 EOF
      },
      { from  => 1252188000, # 2009-09-06 00:00
-       until => 1261436400, # 2009-12-22 00:00
-       text  => 'B 005 Frankfurter Straße OL Heinersdorf Kanal- u. Straßenbauarbeiten Vollsperrung 07.09.2009-21.12.2009 ',
+       until => 1264978800, # 2010-02-01 00:00
+       text  => 'B 005 Frankfurter Straße OL Heinersdorf Kanal- u. Straßenbauarbeiten Vollsperrung 07.09.2009-31.01.2010 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork 66009,6118 65618,6296 65528,6253 65365,6281 65225,6403
@@ -15924,7 +15924,7 @@ userdel	q4::inwork -52519,49887 -52595,49993
 EOF
      },
      { from  => 1252792800, # 2009-09-13 00:00
-       until => 1272664800, # 2010-05-01 00:00
+       until => 1261770537, # 2010-05-01 00:00 1272664800
        text  => 'K 6422 Eggersdorfer Str. OL Petershagen, zw. Ebereschenstr. u. Kreisverkehr Straßenausbau Vollsperrung 14.09.2009-30.04.2010 ',
        type  => 'handicap',
        data  => <<EOF,
@@ -16162,7 +16162,7 @@ userdel	1::inwork 28404,-104242 29283,-103951 32685,-103832 33348,-104123 33767,
 EOF
      },
      { from  => 1253397600, # 2009-09-20 00:00
-       until => 1293750000, # 2010-12-31 00:00
+       until => 1261769610, # 2010-12-31 00:00 1293750000
        text  => 'L 026 Brüssow - Prenzlau zw. Baumgarten und Prenzlau Grundhafter Straßenbau Vollsperrung 21.09.2009-30.12.2010 ',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -16538,7 +16538,7 @@ userdel	q4::inwork; 16159,12301 16158,12191 16127,11950
 EOF
      },
      { from  => 1255384800, # 2009-10-13 00:00
-       until => 1262300400, # 2010-01-01 00:00
+       until => 1261769627, # 2010-01-01 00:00 1262300400
        text  => 'L 220 B167 - Joachimsthal zw. Eichhorst u. Joachimsthal, Chausseestr. Deckenerneuerung Vollsperrung 14.10.2009-31.12.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -17032,6 +17032,23 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 18702,39267 19045,39387
+EOF
+     },
+     { from  => 1261682930, # 2009-12-24 20:28
+       until => 1308175199, # 2011-06-15 23:59
+       text  => 'Eisenhutweg (Adlershof) Richtung Rudower Chaussee zwischen Stubenrauchstr. und Rudower Chaussee Baustelle, Fahrtrichtung gesperrt (bis Mitte 2011)',
+       type  => 'handicap',
+       source_id => 'IM_014849',
+       data  => <<EOF,
+userdel	q4::inwork; 17142,3393 17274,3267 17525,3029 17741,2824 17894,2783
+EOF
+     },
+     { from  => 1260745200, # 2009-12-14 00:00
+       until => 1272664800, # 2010-05-01 00:00
+       text  => 'L 601 Finsterwalde - Doberlug-Kirchhain OD Lugau, zw. Abzw. Hennersdorfer Str. u. Abzw. Ha Straßenbauarbeiten Vollsperrung 15.12.2009-30.04.2010 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 28028,-88225 26392,-88322 25763,-88254 25470,-88145 24969,-87998
 EOF
      },
     );

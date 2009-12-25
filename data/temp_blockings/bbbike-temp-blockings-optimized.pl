@@ -552,15 +552,7 @@ userdel	1::inwork 10614,19907 10742,19632
        undef,
        undef,
        undef,
-       {
-         'until' => 1262300400,
-         'text' => 'L 086 Belziger Straße OD Lehnin Kreuzungsbereich Gohlitzstraße Straßenbau Vollsperrung 23.03.2009-31.12.2009 ',
-         'from' => 1237676400,
-         'id' => 1592,
-         'data' => 'userdel	q4::inwork -34655,-11263 -34337,-11047
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -782,9 +774,9 @@ userdel	2::inwork 7160,11225 6851,11346
        undef,
        {
          'source_id' => 'IM_013316',
-         'until' => 1262300400,
-         'text' => 'Markgrafenstr. (Mitte) Richtung Behrenstr. zwischen Mohrenstr. und Französische Str. Baustelle, Fahrtrichtung gesperrt (bis Dezember 2009)',
-         'from' => 1246916833,
+         'until' => 1277935199,
+         'text' => 'Markgrafenstr. (Mitte) Richtung Behrenstr. zwischen Mohrenstr. und Französische Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 06.10)',
+         'from' => 1261769245,
          'id' => 1732,
          'data' => 'userdel	q4::inwork; 9679,11834 9668,11928 9656,12021 9643,12127
 ',
@@ -1129,7 +1121,15 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
 ',
          'type' => 'gesperrt'
        },
-       undef,
+       {
+         'until' => 1264978800,
+         'text' => 'B 005 Frankfurter Straße OL Heinersdorf Kanal- u. Straßenbauarbeiten Vollsperrung 07.09.2009-31.01.2010 ',
+         'from' => 1252188000,
+         'id' => 1835,
+         'data' => 'userdel	q4::inwork 66009,6118 65618,6296 65528,6253 65365,6281 65225,6403
+',
+         'type' => 'handicap'
+       },
        undef,
        undef,
        undef,
@@ -1257,15 +1257,7 @@ d Breitenbachstr. Baustelle, Fahrtrichtung gesperrt (bis Anfang 05/2010)',
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1272664800,
-         'text' => 'K 6422 Eggersdorfer Str. OL Petershagen, zw. Ebereschenstr. u. Kreisverkehr Straßenausbau Vollsperrung 14.09.2009-30.04.2010 ',
-         'from' => 1252792800,
-         'id' => 1877,
-         'data' => 'userdel	q4::inwork 35900,13643 36654,13977
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1340,15 +1332,7 @@ userdel	q4::inwork; 10829,18083 10907,18109 10938,18147 10989,18172 11137,18358 
        undef,
        undef,
        undef,
-       {
-         'until' => 1293750000,
-         'text' => 'L 026 Brüssow - Prenzlau zw. Baumgarten und Prenzlau Grundhafter Straßenbau Vollsperrung 21.09.2009-30.12.2010 ',
-         'from' => 1253397600,
-         'id' => 1904,
-         'data' => 'userdel	2::inwork 45417,105402 44804,104617 44521,104406 42811,104370 42331,104097 41975,103618 41700,103365
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1418,15 +1402,7 @@ userdel	q4::inwork; 10829,18083 10907,18109 10938,18147 10989,18172 11137,18358 
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1262300400,
-         'text' => 'L 220 B167 - Joachimsthal zw. Eichhorst u. Joachimsthal, Chausseestr. Deckenerneuerung Vollsperrung 14.10.2009-31.12.2009 ',
-         'from' => 1255384800,
-         'id' => 1949,
-         'data' => 'userdel	2::inwork 30781,60566 30784,60950 30960,61370 31147,61555 31880,61589 32748,62327
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1592,15 +1568,7 @@ userdel	2::temp 9516,12010 9656,12021
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1261609200,
-         'text' => 'L 792 Dorfstraße OD Blankenfelde, zw. Zossener Damm u. H.-Heine-Str. Straßenausbau Vollsperrung 09.10.2009-23.12.2009 ',
-         'from' => 1254952800,
-         'id' => 2000,
-         'data' => 'userdel	q4::inwork 10115,-8276 10448,-7582
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => 1272664800,
@@ -1608,6 +1576,30 @@ userdel	2::temp 9516,12010 9656,12021
          'from' => undef,
          'id' => 2002,
          'data' => 'userdel	2::inwork -2521,3637 -2396,3666 -2174,3718 -2014,3826 -1980,3872 -1974,3933 -1996,4063 -1944,4140 -1706,3971 -1624,3956 -1558,3965 -1468,3995 -1380,4108
+',
+         'type' => 'gesperrt'
+       },
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       {
+         'source_id' => 'IM_014849',
+         'until' => 1308175199,
+         'text' => 'Eisenhutweg (Adlershof) Richtung Rudower Chaussee zwischen Stubenrauchstr. und Rudower Chaussee Baustelle, Fahrtrichtung gesperrt (bis Mitte 2011)',
+         'from' => 1261682930,
+         'id' => 2008,
+         'data' => 'userdel	q4::inwork; 17142,3393 17274,3267 17525,3029 17741,2824 17894,2783
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1272664800,
+         'text' => 'L 601 Finsterwalde - Doberlug-Kirchhain OD Lugau, zw. Abzw. Hennersdorfer Str. u. Abzw. Ha Straßenbauarbeiten Vollsperrung 15.12.2009-30.04.2010 ',
+         'from' => 1260745200,
+         'id' => 2009,
+         'data' => 'userdel	2::inwork 28028,-88225 26392,-88322 25763,-88254 25470,-88145 24969,-87998
 ',
          'type' => 'gesperrt'
        }
