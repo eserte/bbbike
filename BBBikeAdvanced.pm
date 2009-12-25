@@ -2405,7 +2405,11 @@ sub find_canvas_item_file {
 	    }
 	}
     }
-    if (defined $abk && (exists $str_file{$abk} ||
+    if (defined $abk && $abk =~ m{^temp_sperre(?:_s)?$}) {
+	require BBBikeEdit;
+	my $e = BBBikeEdit->create;
+	$e->edit_temp_blockings;
+    } elsif (defined $abk && (exists $str_file{$abk} ||
 			 exists $p_file{$abk})) {
 	my($p_f, $str_f);
 	if (exists $p_file{$abk}) {
