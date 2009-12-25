@@ -2010,22 +2010,8 @@ sub click {
     die "No (str or p) line recognised" if !$click_info;
 
     if ($click_info->filetype eq "temp_blockings") {
-	open TEMP_BLOCKINGS, $click_info->basefile
-	    or main::status_message("Can't open " . $click_info->basefile . ": $!", "die");
-	my $line = $main::temp_blocking_inx_mapping{ $click_info->line };
-	my $record = 0;
-	my $linenumber = 1;
-	while(<TEMP_BLOCKINGS>) {
-	    if (m<^\s*\{>) {
-		if ($record == $line) {
-		    start_editor($click_info->basefile, $linenumber);
-		    return;
-		}
-		$record++;
-	    }
-	    $linenumber++;
-	}
-	main::status_message("Can't find record number " . $click_info->line . " in " . $click_info->basefile, "die");
+	$o->edit_temp_blockings;
+	return;
     }
 
     my $ev = $o->canvas->XEvent;
@@ -2246,6 +2232,30 @@ use Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n"
 			});
     }
 
+}
+
+sub edit_temp_blockings {
+    my $o = shift;
+    my $click_info = $o->click_info;
+
+    open TEMP_BLOCKINGS, $click_info->basefile
+	or main::status_message("Can't open " . $click_info->basefile . ": $!", "die");
+    my $line = $main::temp_blocking_inx_mapping{ $click_info->line };
+    my $record = 0;
+    my $linenumber = 1;
+    while(<TEMP_BLOCKINGS>) {
+	if (m<^\s*\{>) {
+	    if ($record == $line) {
+		close TEMP_BLOCKINGS;
+		start_editor($click_info->basefile, $linenumber);
+		return;
+	    }
+	    $record++;
+	}
+	$linenumber++;
+    }
+    close TEMP_BLOCKINGS;
+    main::status_message("Can't find record number " . $click_info->line . " in " . $click_info->basefile, "die");
 }
 
 sub start_editor {
