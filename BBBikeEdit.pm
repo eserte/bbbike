@@ -1857,6 +1857,7 @@ undef &LinePartInfo::new;
 struct(LinePartInfo => [ 'basefile' => "\$",
 			 'line'     => "\$",
 			 'filetype' => "\$",
+			 'name'     => "\$",
 		       ]);
 
 use constant BBBIKEEDIT_TOPLEVEL => "bbbikeedit";
@@ -1950,6 +1951,7 @@ sub click_info {
 	# XXX p_file is not supported (yet)
 	my $str_filename;
 	my $filetype = "str";
+	my $name;
 	if ($abk =~ /^[wi]$/) { # exception because of
                                 # _get_wasser_obj, include also _i_slands
 	    if ($main::wasserstadt) {
@@ -1977,6 +1979,7 @@ sub click_info {
 	    my $info = main::get_temp_blockings_files();
 	    $str_filename = $info->{file};
 	    $filetype = "temp_blockings";
+	    $name = $tags[2];
 	}
 	if ($str_filename) {
 	    my $ret = LinePartInfo->new;
@@ -1984,6 +1987,7 @@ sub click_info {
 	    $pos =~ s/^.*-//;
 	    $ret->line($pos);
 	    $ret->filetype($filetype);
+	    $ret->name($name) if defined $name;
 	    return $ret;
 	}
 
@@ -2009,10 +2013,11 @@ sub click {
     my $click_info = $o->click_info;
     die "No (str or p) line recognised" if !$click_info;
 
-    if ($click_info->filetype eq "temp_blockings") {
-	$o->edit_temp_blockings;
-	return;
-    }
+#XXX del (no more extra handling here):
+#     if ($click_info->filetype eq "temp_blockings") {
+# 	$o->edit_temp_blockings;
+# 	return;
+#     }
 
     my $ev = $o->canvas->XEvent;
     my($cx,$cy) = ($o->canvas->canvasx($ev->x),
@@ -2046,7 +2051,10 @@ sub click {
 	    $click_readonly_warning_seen{$file}++;
 	}
 	$readonly = 1;
+    } elsif ($click_info->filetype eq "temp_blockings") {
+	$readonly = 1;
     }
+
     if ($readonly) {
 	if ($Tk::VERSION >= 804) {
 	    @entry_args = (-state => "readonly");
@@ -2112,21 +2120,25 @@ sub click {
 		  )->pack(-side => "left");
 	$f->Button(-text => $main::texteditor || "Editor",
 		   -command => sub {
-		       # XXX don't duplicate code, see below
-		       # XXX ufff... this is also in  BBBikeAdvanced::find_canvas_item_file for the F9 key :-(
-		       my $count = 0;
-		       my $rec_count = 0;
-		       foreach (@rec) {
-			   if (!/^\#/) {
-			       if ($count == $click_info->line) {
-				   start_editor($file, $rec_count+1);
-				   return;
+		       if ($click_info->filetype eq "temp_blockings") {
+			   $o->edit_temp_blockings($click_info);
+		       } else {
+			   # XXX don't duplicate code, see below
+			   # XXX ufff... this is also in  BBBikeAdvanced::find_canvas_item_file for the F9 key :-(
+			   my $count = 0;
+			   my $rec_count = 0;
+			   foreach (@rec) {
+			       if (!/^\#/) {
+				   if ($count == $click_info->line) {
+				       start_editor($file, $rec_count+1);
+				       return;
+				   }
+				   $count++;
 			       }
-			       $count++;
+			       $rec_count++;
 			   }
-			   $rec_count++;
+			   main::status_message("Cannot find line " . $click_info->line, "die");
 		       }
-		       main::status_message("Cannot find line " . $click_info->line, "die");
 		   })->pack(-side => "left");
     }
 
@@ -2160,9 +2172,14 @@ sub click {
 
     my $count = 0;
     my $rec_count = 0;
-use Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->Dumpxs([$click_info],[]); # XXX
+    #use Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->Dumpxs([$click_info],[]); # XXX
 
  TRY: {
+	if ($click_info->filetype eq "temp_blockings") {
+	    $name = $click_info->name;
+	    last TRY;
+	}
+
 	foreach (@rec) {
 	    if (!/^\#/) {
 		if ($count == $click_info->line) {
@@ -2235,8 +2252,10 @@ use Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n"
 }
 
 sub edit_temp_blockings {
-    my $o = shift;
-    my $click_info = $o->click_info;
+    my($o, $click_info) = @_;
+    if (!$click_info) {
+	$click_info = $o->click_info;
+    }
 
     open TEMP_BLOCKINGS, $click_info->basefile
 	or main::status_message("Can't open " . $click_info->basefile . ": $!", "die");
