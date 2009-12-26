@@ -33,6 +33,9 @@ EOF
 use BBBikePlugin;
 push @ISA, 'BBBikePlugin';
 
+use CGI qw();
+use Encode;
+
 use PLZ;
 use Strassen::Strasse;
 use WWWBrowser;
@@ -111,11 +114,16 @@ sub launch_street_url {
 	return;
     }
 
-    $street =~ s{([sS])tr\.$}{$1traße};
-    $street = kill_umlauts($street);
-    $street =~ s{ }{-}g;
+## not working good:
+#     $street =~ s{([sS])tr\.$}{$1traße};
+#     $street = kill_umlauts($street);
+#     $street =~ s{ }{-}g;
+#     my $url = 'http://berlin.kauperts.de/Strassen/' . join('-', $street, $zip, $city);
 
-    my $url = 'http://berlin.kauperts.de/Strassen/' . join('-', $street, $zip, $city);
+    ## using Kauperts own search
+    CGI->import('oldstyle_urls');
+    my $url = 'http://berlin.kauperts.de/search?' . CGI->new({query => Encode::encode("utf-8", $street . " " . $zip)})->query_string;
+
     start_browser($url);
 }
 
