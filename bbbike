@@ -13118,12 +13118,13 @@ sub show_info {
 	    my($below_item, @below_tags) = find_below($c, qw/show/); # XXX still necessary? 'show' is now -state=>'disabled'
 	    if (!defined $below_item) {
 		# XXX Alert! Hardcoded for special osm layer, see BBBikeOsmUtil XXX
-		$BBBikeOsmUtil::osm_layer = $BBBikeOsmUtil::osm_layer if 0; # cease -w
-		if (defined $BBBikeOsmUtil::osm_layer && grep { $_ eq 'osm' } @tags) {
+		%BBBikeOsmUtil::osm_layer = %BBBikeOsmUtil::osm_layer if 0; # cease -w
+		if (defined $BBBikeOsmUtil::osm_layer{item} && grep { $_ eq 'osm' } @tags) {
 		    # just accept
 		    last;
 		} else {
 		    main::status_message("Es wurde kein Kartenelement an dieser Position gefunden.", "err");
+		    warn "Current tags=@tags\nBase tag=$base_tag\nBelow item/tags=$below_item @below_tags"; 
 		    return;
 		}
 	    }
