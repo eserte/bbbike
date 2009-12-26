@@ -2175,7 +2175,7 @@ unless($skip_features{"strassen"}) {
 	     -command => \&plot_mount,
 	    );
     }
-    if ($advanced) {
+    if (1) {
 	$strcm->checkbutton(-label => M"Fragezeichen",
 			    -variable => \$str_draw{'fz'},
 			    -command => sub { plot('str','fz') },
@@ -4223,7 +4223,8 @@ if (!$MM_DRAG_IS_OBSOLETE) {
 		   }
 	       });
     bind_nomod($top, "<question>" => sub {
-	$strcm->invoke($fragezeichen_check_index) })
+	$strcm->invoke($fragezeichen_check_index)
+    })
 	if defined $fragezeichen_check_index;
 
     bind_nomod($top, "<L>" => sub { $lstrcm->invoke($land_jwd_check_index) }) if $lstrcm && defined $land_jwd_check_index;
