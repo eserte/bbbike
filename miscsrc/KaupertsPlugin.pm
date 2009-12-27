@@ -100,8 +100,8 @@ sub find_street {
     my $plz = PLZ->new;
     my @res = $plz->look($street, (@subcityparts ? (Citypart => $subcityparts[0]) : ()));
     if (!@res) {
-	main::status_message("Die Straße <$strname> konnte in der BBBike-Datenbank nicht gefunden werden.", "err");
-	return;
+	main::status_message("Die Straße <$strname> konnte in der BBBike-Datenbank nicht gefunden werden.", "infodlg");
+	return ($strname, undef, 'Berlin');
     }
     ($res[0]->[PLZ::LOOK_NAME], $res[0]->[PLZ::LOOK_ZIP], 'Berlin');
 }
@@ -122,7 +122,7 @@ sub launch_street_url {
 
     ## using Kauperts own search
     CGI->import('oldstyle_urls');
-    my $url = 'http://berlin.kauperts.de/search?' . CGI->new({query => Encode::encode("utf-8", $street . " " . $zip)})->query_string;
+    my $url = 'http://berlin.kauperts.de/search?' . CGI->new({query => Encode::encode("utf-8", $street . (defined $zip ? " " . $zip : ''))})->query_string;
 
     start_browser($url);
 }
