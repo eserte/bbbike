@@ -5,7 +5,7 @@
 #:
 Caroline-Michaelis-Str.: Bauarbeiten, Ausweichen auf Gehweg	q4::inwork 9061,14050 9125,13973
 Fahrbahn der Mauerstr. wegen Bauarbeiten gesperrt	q4::inwork 9405,11413 9331,11497
-Hauptstr. (Friedrichshain-Kreuzberg): Baustelle, Radfahrer können langsam passieren	q3::inwork 14906,10820 14794,10844
+Hauptstr. (Friedrichshain-Kreuzberg): Baustelle, Radfahrer können langsam passieren	q3::inwork 14906,10820 14794,10844 14717,10855
 Varian-Fry-Str.: Baustelle, Fahrbahn gesperrt	q4::inwork 8389,11378 8374,11479
 General-Pape-Str.: Baustelle, Fahrbahn Richtung Norden gesperrt	q4::inwork; 7959,7609 7921,7728 7950,7840
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 9475,12365 9462,12481 9454,12558
@@ -1186,6 +1186,8 @@ Krämerweg: enge Straße	q1 -5267,16871 -5224,17046 -5178,17258
 Seidenbaustr.: enge Straße	q1 19857,3514 19966,3596
 Gerstenweg: enge Straße	q1 21262,13517 21214,13126 21168,12794 21101,12661 21053,12582 21028,12536 20952,12407 20943,12376 20923,12194
 Genfer Weg: Fußgänger	q1 2995,2119 3150,2113
+Renatenweg: enge Straße	q1 6374,2844 6402,2770 6438,2767 6463,2724
+Renatenweg: Fußgänger	q2 6463,2724 6529,2642
 Dennewitzplatz: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 7906,10098 7866,9918
 Eichborndamm: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 4240,19019 4232,18981
 Dorotheenstr. (Straßenbahn): gegen die Einbahnstraßenrichtung, ggfs. schieben	q2::igndisp; 9454,12558 9330,12529

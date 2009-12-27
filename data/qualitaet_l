@@ -76,7 +76,7 @@ Dahlwitz - Neuenhagen: teilweise nur mäßiger Asphalt	Q1 29093,13456 29743,14143
 Börnicke: Asphalt	Q0 26443,29384 25977,28869
 Börnicke - Elisenau: mäßiger Feldweg	Q2 25582,28612 25169,28106 24994,27790
 Alt Nowawes: mäßiges Kopfsteinpflaster, gute Radwege	Q0 -10973,-1764 -10884,-1653 -10841,-1599 -10606,-1303 -10581,-1271 -10505,-1166 -10338,-950 -10154,-828
-Hans-Marwitza-Ring: guter Asphalt	Q0 -11461,-1424 -11358,-1491 -11215,-1587 -11215,-1607 -11241,-1625 -11297,-1704 -11438,-1610 -11540,-1543
+Hans-Marchwitza-Ring: guter Asphalt	Q0 -11461,-1424 -11358,-1491 -11215,-1587 -11215,-1607 -11241,-1625 -11297,-1704 -11438,-1610 -11540,-1543
 Priesterweg (Güterfelde): guter Asphalt	Q0 -5511,-4384 -4957,-4360 -4661,-4172
 Neue Str.: schlechtes Kopfsteinpflaster	Q3 -10884,-1653 -10987,-1578 -11054,-1531 -11090,-1506
 Nauen - Bredow: mäßiger Feldweg	Q2 -25082,21468 -24715,21432 -23061,20613 -22609,20276 -22390,19831 -22236,19745
@@ -393,9 +393,9 @@ Gr. Weinmeisterstr (Potsdam): guter Asphalt	Q0 -12618,296 -12582,127 -12557,11
 (Große Weinmeisterstr. - Pfingstberg): Parkweg	Q2 -12510,866 -12572,885 -12624,830 -12698,798 -12813,909 -12798,958 -12830,1011 -12796,1037
 Puschkinallee: schlechtes Kopfsteinpflaster	Q3 -12815,554 -12827,629 -12868,738 -12912,783
 Puschkinallee: Asphalt	Q0 -12912,783 -13042,807
-Höhenweg: unebenes Kopfsteinpflaster	Q2 -12334,1324 -12365,1427
-Höhenweg: kleinteiliges Kopfsteinpflaster, OK	Q1 -12365,1427 -12421,1601
-Höhenweg: unbefestigte, teils sandige Fahrstraße	Q2 -12421,1601 -12432,1679
+Höhenstr.: unebenes Kopfsteinpflaster	Q2 -12334,1324 -12365,1427
+Höhenstr.: kleinteiliges Kopfsteinpflaster, OK	Q1 -12365,1427 -12421,1601
+Höhenstr.: unbefestigte, teils sandige Fahrstraße	Q2 -12421,1601 -12432,1679
 Am Kanal (Potsdam): Kopfsteinpflaster, nördliche Fahrbahn bevorzugt nutzen	Q2 -12317,-1212 -12070,-1153 -12040,-1169
 Große Fischerstr. (Potsdam): Kopfsteinpflaster	Q2 -12040,-1169 -12011,-1273 -11981,-1390
 Kleine Fischerstr.: Kopfsteinpflaster	Q2 -12070,-1269 -12011,-1273
@@ -1698,7 +1698,7 @@ August-Bebel-Str.: Kopfsteinpflaster	Q2 -8463,-1549 -8485,-1445
 Paul-Gerhard-Str.: Asphalt	Q0 3232,803 3271,745 3417,524
 Alte B101-Trasse: feiner Schotter	Q1 7098,-523 6959,-743
 (Postenweg): guter Beton	Q0 17234,-685 17806,-561 18177,-449
-Peter-Hund-Str.: Asphalt	Q0 -13257,1337 -13277,1490 -13294,1681
+Peter-Huchel-Str.: Asphalt	Q0 -13257,1337 -13277,1490 -13294,1681
 Erich-Arendt-Str.: Asphalt	Q0 -13277,1490 -13125,1508
 Graf-von-Schwerin-Str.: Asphalt	Q0 -13133,1698 -13087,1696
 Friedrich-Klausing-Str.: Kopfsteinpflaster	Q1 -13084,1679 -12960,1684
@@ -2098,9 +2098,9 @@ Niederfinow - Eberswalde: wassergebundene Decke	Q1 38162,48400 38126,48386 38104
 Niederfinow - Eberswalde: Kopfsteinpflaster	Q2 37908,48342 37856,48337
 Niederfinow - Eberswalde: Asphalt	Q0 37856,48337 37784,48323 37565,48389 37452,48447 37217,48445 37141,48467 36973,48608 36813,48667 36586,48613 36364,48599
 Steinstr.: Kopfsteinpflaster	Q2 -7750,-2431 -7909,-2375
-(Steinstr. - Tschaikowskistr.): Waldweg	Q1 -7996,-2293 -8024,-2468
-Tschaikowskistr.: Asphalt mit Schäden	Q1 -8024,-2468 -8018,-2585
-Tschaikowskistr.: Asphalt	Q0 -7999,-2585 -7993,-2678 -7976,-2772
+(Steinstr. - Tschaikowskiweg): Waldweg	Q1 -7996,-2293 -8024,-2468
+Tschaikowskiweg: Asphalt mit Schäden	Q1 -8024,-2468 -8018,-2585
+Tschaikowskiweg: Asphalt	Q0 -7999,-2585 -7993,-2678 -7976,-2772
 Hubertusdamm: Asphalt	Q0 -8167,-2704 -8136,-2699 -7993,-2678 -7808,-2689
 Ratsweg: Asphalt	Q0 -7976,-2772 -7958,-2775 -7822,-2795
 Lortzingstr.: Asphalt	Q0 -7958,-2775 -7965,-2825 -7992,-2960 -8005,-3056

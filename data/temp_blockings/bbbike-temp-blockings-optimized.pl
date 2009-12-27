@@ -1463,7 +1463,7 @@ userdel	q4::inwork; 10829,18083 10907,18109 10938,18147 10989,18172 11137,18358 
          'text' => 'Glasbläserallee wegen Bauarbeiten gesperrt',
          'from' => undef,
          'id' => 1960,
-         'data' => '#: last_checked: 2009-10-26
+         'data' => '#: last_checked: 2009-12-27
 userdel	2::inwork 14835,10272 14888,10385
 ',
          'type' => 'gesperrt'
@@ -1591,6 +1591,18 @@ userdel	2::temp 9516,12010 9656,12021
          'from' => 1260745200,
          'id' => 2009,
          'data' => 'userdel	2::inwork 28028,-88225 26392,-88322 25763,-88254 25470,-88145 24969,-87998
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_014856',
+         'until' => 1262494800,
+         'text' => 'Straße des 17. Juni (Tiergarten) in beiden Richtungen zwischen Großer Stern und Brandenburger Tor Veranstaltung (Silvesterparty), Straße vollständig gesperrt, ebenfalls gesperrt Yitzhak-Rabin-Str. und Ebertstr. zwischen Behrenstr. und Scheidemannstr. (bis 03.01., 6 Uhr)',
+         'from' => 1261945758,
+         'id' => 2010,
+         'data' => 'userdel	2::temp 8731,12270 8610,12254 8538,12245 8214,12205 8089,12190 8055,12186 8119,12414
+userdel	2::temp 8522,12239 8466,12197
+userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
 ',
          'type' => 'gesperrt'
        }

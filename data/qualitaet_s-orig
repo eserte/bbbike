@@ -3032,6 +3032,8 @@ Rietzestr.: Asphalt	Q0 12693,15225 12472,15356
 ######################################################################
 #: by: anonymous vvv
 # 
+#: note: enge Straße, aber q0
+Am Elsenbruch: Beton	Q0 5524,4066 5573,3960 5593,3935
 Huntestr.: guter Beton	Q0- 1913,1000 1960,1096 2055,1198 2166,1256
 Tollensestr. (Zehlendorf): guter Beton	Q0- 1812,638 2047,914 2239,1104
 #: note: "einige Fußgänger" ignoriert
@@ -3930,6 +3932,7 @@ Undinestr.: Kopfsteinpflaster	Q2 4760,4075 4681,4537 4651,4638 4568,4789 4517,48
 Vogelbeerstr.: mäßiges Kopfsteinpflaster	Q2 19715,4178 19759,4160 19815,4148 19869,4151 19917,4168 19963,4198
 Florian-Geyer-Str.: mäßiger Asphalt	Q1 19869,4151 19884,4018 19905,3973 19924,3939 19954,3887
 Florian-Geyer-Str.: mäßiges Kopfsteinpflaster	Q2 19954,3887 19992,3839 20073,3734 20159,3623
+#: XXX laut ritter.68 ist die Straße zwischen Berliner und Sellinstr. asphaltiert. Rückfrage am 2009-12-27
 Borkumstr.: mäßiges Kopfsteinpflaster	Q2 11425,17817 11297,17795 11217,17783 11136,17768 11049,17752 10956,17735 10871,17722
 #: by: ^^^
 #: by: Claudia (99):
@@ -9539,6 +9542,17 @@ Gerstenweg: guter Beton	Q1 21262,13517 21214,13126 21168,12794 21101,12661 21053
 Billy-Wilder-Promenade: Asphalt	Q1 2663,1199 2469,1634
 #: by: Katja Frenzel:
 Genfer Weg: Kleinsteinpflaster	Q1 2995,2119 3150,2113
+#: by: L.Koch vvv
+Wünschelburger Gang: Asphalt	Q0; 20829,4211 20850,4225 20917,4261 21008,4275
+Wünschelburger Gang: Sand, teilweise wellig	Q2+; 21008,4275 20917,4261 20850,4225 20829,4211
+#: by: ^^^
+#: by: Stapel (rowingfriend...):
+#: note: Eintrag "Bordsteinkanten" ignoriert
+Bärdorfer Zeile: guter Beton	Q0 20917,4261 20822,4571 20818,4610 20827,4655
+#: by anonymous:
+Renatenweg: mäßiger Asphalt	Q1 6374,2844 6402,2770 6438,2767 6463,2724
+#: by: Tina Zimmer:
+Renatenweg: Verbundsteinpflaster	Q1+ 6463,2724 6529,2642
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206

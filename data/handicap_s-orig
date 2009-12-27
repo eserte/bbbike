@@ -13,12 +13,11 @@ Caroline-Michaelis-Str.: Bauarbeiten, Ausweichen auf Gehweg	q4::inwork 9061,1405
 # XXX del Einbahnstraﬂe aufgehoben: #: last_checked: 2009-11-13 J‰gerstr.: Bauarbeiten, Fahrbahn Richtung Westen gesperrt	q4::inwork; 9394,11996 9201,11968
 #: last_checked: 2009-12-08
 Fahrbahn der Mauerstr. wegen Bauarbeiten gesperrt	q4::inwork 9405,11413 9331,11497
-#: last_checked: 2009-10
-#: next_check: 2009-12-15
-Hauptstr. (Friedrichshain-Kreuzberg): Baustelle, Radfahrer kˆnnen langsam passieren	q3::inwork 14906,10820 14794,10844
+#: last_checked: 2009-12-27
+Hauptstr. (Friedrichshain-Kreuzberg): Baustelle, Radfahrer kˆnnen langsam passieren	q3::inwork 14906,10820 14794,10844 14717,10855
 #: last_checked: 2009-12-04
 Varian-Fry-Str.: Baustelle, Fahrbahn gesperrt	q4::inwork 8389,11378 8374,11479
-#: last_checked: 2009-12-25
+#: last_checked: 2009-12-27
 General-Pape-Str.: Baustelle, Fahrbahn Richtung Norden gesperrt	q4::inwork; 7959,7609 7921,7728 7950,7840
 #: last_checked: 2009-12-04
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraﬂe Richtung S¸den	q4::inwork; 9475,12365 9462,12481 9454,12558
@@ -1712,3 +1711,8 @@ Seidenbaustr.: enge Straﬂe	q1 19857,3514 19966,3596
 Gerstenweg: enge Straﬂe	q1 21262,13517 21214,13126 21168,12794 21101,12661 21053,12582 21028,12536 20952,12407 20943,12376 20923,12194
 #: by: Katja Frenzel:
 Genfer Weg: Fuﬂg‰nger	q1 2995,2119 3150,2113
+#: by anonymous:
+Renatenweg: enge Straﬂe	q1 6374,2844 6402,2770 6438,2767 6463,2724
+#: by: Tina Zimmer:
+#: corrected_by: srt/policy (q4 -> q2)
+Renatenweg: Fuﬂg‰nger	q2 6463,2724 6529,2642
