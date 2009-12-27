@@ -363,8 +363,8 @@ Kleinmachnower Weg: Sa und So ist die Schranke an der Kreuzung Sachlebenstraße z
 Hentigstr.	1 18514,8773 18548,8942 18586,9172 18621,9404
 Grottewitzstr.	1 21933,152 22145,208
 Schlichtallee	3nocross::ignrte 15639,10469 15758,10578 15982,10765
-Zobtener Str. -> Schlichtallee: Schlichtallee	3::igndisp 16157,10342 15758,10578 15639,10469
-Schlichtallee -> Zobtener Str.: Schlichtallee	3::igndisp 15982,10765 15758,10578 16157,10342
+Zobtener Str. -> Schlichtallee: Schlichtallee	3::igndisp 16148,10329 15758,10578 15639,10469
+Schlichtallee -> Zobtener Str.: Schlichtallee	3::igndisp 15982,10765 15758,10578 16148,10329
 Hindenburgdamm	3nocross::ignrte 4507,4755 4515,4581 4521,4484
 Hindenburgdamm -> Flotowstr.: Hindenburgdamm	3::igndisp 4507,4755 4515,4581 4651,4638
 Roonstr. -> Hindenburgdamm: Hindenburgdamm	3::igndisp 4265,4484 4515,4581 4507,4755
@@ -375,7 +375,7 @@ Flotowstr. -> Hindenburgdamm: Hindenburgdamm	3::igndisp 4651,4638 4515,4581 4521
 Mariannenplatz - Bethaniendamm	1 11984,11130 12012,11235
 Ballonfahrerweg - Werner-Voß-Damm	3 7979,7525 7959,7609 8263,7611
 General-Pape-Str. - Werner-Voß-Damm	3 7921,7728 7959,7609 8263,7611
-Rubensstr. - Baumeisterstr.	3 6389,7196 6367,7356 6277,7220
+Rubensstr. - Baumeisterstr.	3 6389,7196 6367,7356 6283,7231
 Mittelstreifen	3nocross::ignrte 13010,8422 13042,8395 13107,8343
 Sonnenallee -> Anzengruberstr.: Mittelstreifen	3::igndisp 13107,8343 13042,8395 12865,8346
 Anzengruberstr. -> Sonnenallee: Mittelstreifen	3::igndisp 12865,8346 13042,8395 13010,8422
@@ -701,13 +701,13 @@ Weddingstr. -> Reinickendorfer Str.: Mittelstreifen	3::igndisp 8053,15598 7974,1
 Reinickendorfer Str. -> Weddingstr.: Mittelstreifen	3::igndisp 7960,15801 7974,15634 8053,15598
 Zeisigweg	1 5178,1499 5153,1534 5148,1559 5145,1611 5132,1672 5087,1807
 Nollendorfplatz	1 7033,10328 6971,10346
-Mittelstreifen	3nocross::ignrte 5902,9083 5995,9098 6063,9106
-Stübbenstr. -> Bozener Str.: Mittelstreifen	3::igndisp 5993,9128 5995,9098 5995,8926
-Stübbenstr. -> Grunewaldstr.: Mittelstreifen	3::igndisp 5993,9128 5995,9098 6063,9106
-Bozener Str. -> Stübbenstr.: Mittelstreifen	3::igndisp 5995,8926 5995,9098 5993,9128
-Bozener Str. -> Grunewaldstr.: Mittelstreifen	3::igndisp 5995,8926 5995,9098 5902,9083
-Grunewaldstr. -> Bozener Str.: Mittelstreifen	3::igndisp 6063,9106 5995,9098 5995,8926
-Grunewaldstr. -> Stübbenstr.: Mittelstreifen	3::igndisp 5902,9083 5995,9098 5993,9128
+Mittelstreifen	3nocross::ignrte 5902,9083 5975,9094 6063,9106
+Bozener Str. -> Stübbenstr.: Mittelstreifen	3::igndisp 5971,8926 5975,9094 5965,9131
+Bozener Str. -> Grunewaldstr.: Mittelstreifen	3::igndisp 5971,8926 5975,9094 5902,9083
+Stübbenstr. -> Bozener Str.: Mittelstreifen	3::igndisp 5965,9131 5975,9094 5971,8926
+Stübbenstr. -> Grunewaldstr.: Mittelstreifen	3::igndisp 5965,9131 5975,9094 6063,9106
+Grunewaldstr. -> Bozener Str.: Mittelstreifen	3::igndisp 6063,9106 5975,9094 5971,8926
+Grunewaldstr. -> Stübbenstr.: Mittelstreifen	3::igndisp 5902,9083 5975,9094 5965,9131
 Stavenhagener Str.	1 13534,5111 13634,5126
 Küsterstr.	1 -624,15494 -593,15300 -569,15167
 Berliner Allee -> Rossinistr.	3 13432,15843 13401,15821 13456,15760

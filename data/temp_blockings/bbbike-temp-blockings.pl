@@ -3009,7 +3009,7 @@ EOF
        text  => 'Mahlsdorfer Str. (Köpenick) Richtung Köpenick, zwischen Hultischiner Damm und Genovevastr. Baustelle, Fahrtrichtung gesperrt (bis 15.10.)',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4; 23799,7877 23774,7803 23701,7772 23223,7493 23145,7429 23066,7355
+userdel	q4; 23792,7861 23764,7815 23701,7772 23223,7493 23145,7429 23066,7355
 EOF
      },
      { from  => 1129327200, # 2005-10-15 00:00
@@ -3890,7 +3890,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_002552',
        data  => <<EOF,
-userdel	q4 3349,7361 3314,7269
+userdel	q4 3346,7369 3314,7269
 EOF
      },
      { from  => 1143928800, # 2006-04-02 00:00
@@ -8467,7 +8467,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_004688',
        data  => <<EOF,
-userdel	1::inwork 23891,8780 23946,8909 24001,9037 24051,9156 24085,9237 24143,9371 24190,9484 24205,9520 24227,9574 24250,9629 24291,9727 24299,9746 24337,9835
+userdel	1::inwork 23891,8780 23927,8864 23946,8909 23982,8994 24001,9037 24032,9111 24051,9156 24085,9237 24143,9371 24190,9484 24205,9520 24227,9574 24250,9629 24291,9727 24299,9746 24337,9835
 EOF
      },
      { from  => 1182636000, # 2007-06-24 00:00
@@ -10319,7 +10319,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_006985',
        data  => <<EOF,
-userdel	q4::inwork; 22967,7252 22869,7095 22785,6984 22758,6944 22748,6714 22745,6657 22724,6608
+userdel	q4::inwork; 22960,7215 22869,7095 22785,6984 22758,6944 22748,6714 22745,6657 22724,6608
 EOF
      },
      { from  => 1193482855, # 2007-10-27 13:00
@@ -11752,12 +11752,12 @@ userdel auto	3 6681,10959 6824,10904 6918,10854
 userdel auto	3 6980,11583 6809,11570 6524,11583
 userdel auto	3 7215,10203 7245,10297 7281,10418
 userdel auto	3 7963,10716 7820,10768 7534,10850
-userdel auto	3 7873,11142 8000,11137 8102,11099
+userdel auto	3 7828,11133 8000,11137 8102,11099
 userdel auto	3 6732,11106 6873,11011 7002,11034
 userdel auto	3 6607,10801 6740,10755 6972,10665
 userdel auto	3 8572,11506 8542,11502 8573,11404
 userdel auto	3 8572,11506 8542,11502 8462,11538
-userdel auto	3 6692,11365 6851,11346 7160,11225
+userdel auto	3 6692,11365 6851,11346 7103,11247 7160,11225
 userdel auto	3 8573,11404 8542,11502 8462,11538
 userdel auto	3 8573,11404 8542,11502 8572,11506
 userdel auto	3 7478,10612 7689,10514 7849,10488
@@ -11770,11 +11770,11 @@ userdel auto	3 8172,11679 8226,11458 8232,11414
 userdel auto	3 7444,10479 7633,10394 7744,10372
 userdel auto	3 9028,12307 9141,12320 9130,12433
 userdel auto	3 7744,10372 7633,10394 7444,10479
-userdel auto	3 7293,11519 6825,11486 6716,11439
+userdel auto	3 7293,11519 7171,11510 6825,11486 6716,11439
 userdel auto	3 9869,12297 9852,12409 9842,12506
 userdel auto	3 7849,10488 7689,10514 7478,10612
-userdel auto	3 7160,11225 6851,11346 6692,11365
-userdel auto	3 8102,11099 8000,11137 7873,11142
+userdel auto	3 7160,11225 7103,11247 6851,11346 6692,11365
+userdel auto	3 8102,11099 8000,11137 7828,11133
 userdel auto	3 7073,11798 6778,11742 6540,11754
 userdel auto	3 7539,9970 7579,10183 7698,10147
 userdel auto	3 6745,10619 6753,10446 6719,10347
@@ -11796,7 +11796,7 @@ userdel auto	3 6494,10440 6532,10529 6494,10542
 userdel auto	3 9343,12464 9358,12351 9369,12253
 userdel auto	3 7002,11034 6873,11011 6732,11106
 userdel auto	3 9130,12433 9141,12320 9028,12307
-userdel auto	3 6716,11439 6825,11486 7293,11519
+userdel auto	3 6716,11439 6825,11486 7171,11510 7293,11519
 userdel auto	3 8804,12280 8861,12125 8901,12008
 userdel auto	3 7291,10506 7245,10499 7033,10396 7003,10513
 EOF
@@ -11957,7 +11957,7 @@ EOF
        source_id => 'IM_009394',
        data  => <<EOF,
 userdel	2::inwork 4280,8188 4325,8229 4423,8315 4473,8351 4623,8457 4783,8557
-userdel	2::inwork 4772,8599 4456,8584
+userdel	2::inwork 4772,8599 4456,8598
 userdel	2::inwork 4473,8351 4457,8372 4457,8484
 EOF
      },
@@ -14474,13 +14474,12 @@ EOF
 userdel	2::temp 62010,-62330 62522,-62647
 EOF
      },
-     { from  => undef, # 
-       until => undef, # XXX
+     { from  => 1261827633, #  undef
+       until => 1261827641, # XXX undef
        text  => 'Köbisstr.: Zugang zum Reichpietschufer wegen Bauarbeiten nicht möglich',
        type  => 'gesperrt',
        data  => <<EOF,
-#: last_checked: 2009-06-28
-userdel	2::inwork 7160,11225 6851,11346
+userdel	2::inwork 7160,11225 7103,11247 6851,11346
 EOF
      },
      { from  => 1246206950, # 2009-06-28 18:35
@@ -15315,7 +15314,7 @@ EOF
        permanent => 1,
        data  => <<EOF,
 #: note: Sperrung bestätigt von Stefan (s.sms): vvv
-Am Wuhleufer, Innovationspark Köpenick: Privatstraße, nachts und am Wochenende gesperrt	2::temp 21677,6952 21498,7153 21475,7500 21497,7597 21546,7635
+Am Wuhleufer, Innovationspark Köpenick: Privatstraße, nachts und am Wochenende gesperrt	2::temp 21683,6946 21498,7153 21475,7500 21497,7597 21546,7635
 Straße am Wald, Innovationspark Köpenick: Privatstraße, nachts und am Wochenende gesperrt	2::temp 21475,7500 21341,7487 21025,7349
 #: note: ^^^
 EOF
@@ -16062,7 +16061,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_014203',
        data  => <<EOF,
-userdel	q4::inwork; 18234,13500 18783,13469 18875,13467 19059,13474 19173,13478
+userdel	q4::inwork; 18234,13500 18382,13492 18783,13469 18875,13467 19059,13474 19173,13478
 EOF
      },
      { from  => undef, # 

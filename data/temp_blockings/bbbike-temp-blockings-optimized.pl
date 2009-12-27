@@ -731,16 +731,7 @@ userdel	q4::inwork 10422,12395 10476,12432
        undef,
        undef,
        undef,
-       {
-         'until' => undef,
-         'text' => 'Köbisstr.: Zugang zum Reichpietschufer wegen Bauarbeiten nicht möglich',
-         'from' => undef,
-         'id' => 1709,
-         'data' => '#: last_checked: 2009-06-28
-userdel	2::inwork 7160,11225 6851,11346
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        {
@@ -898,7 +889,7 @@ userdel	2::inwork 7160,11225 6851,11346
          'from' => undef,
          'id' => 1808,
          'data' => '#: note: Sperrung bestätigt von Stefan (s.sms): vvv
-Am Wuhleufer, Innovationspark Köpenick: Privatstraße, nachts und am Wochenende gesperrt	2::temp 21677,6952 21498,7153 21475,7500 21497,7597 21546,7635
+Am Wuhleufer, Innovationspark Köpenick: Privatstraße, nachts und am Wochenende gesperrt	2::temp 21683,6946 21498,7153 21475,7500 21497,7597 21546,7635
 Straße am Wald, Innovationspark Köpenick: Privatstraße, nachts und am Wochenende gesperrt	2::temp 21475,7500 21341,7487 21025,7349
 #: note: ^^^
 ',

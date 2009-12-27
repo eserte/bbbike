@@ -5,7 +5,7 @@
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9865,10227 9825,10206 9687,10180 9599,10175 9416,10196
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9368,10211 9145,10290 8804,10303 8724,10327 8661,10377 8634,10426 8525,10626 8430,10710
 Kanalstraßen Südufer, von Westen bis Flottwellstr.	1 8336,10829 8205,10979 8104,11037 7980,11070 7747,11075 7579,11032 7461,11051 7248,11143 7002,11034
-Kanalstraßen Nordufer	1 6880,11110 7115,11220 7160,11225 7251,11202 7333,11179 7419,11137 7492,11111 7595,11086 7690,11108 7873,11142 8000,11137 8102,11099 8241,11024
+Kanalstraßen Nordufer	1 6880,11110 7115,11220 7160,11225 7251,11202 7333,11179 7419,11137 7492,11111 7595,11086 7690,11108 7828,11133 8000,11137 8102,11099 8241,11024
 Kanalstraßen Nordufer	1 8241,11024 8261,11015 8342,10916 8380,10865 8443,10777 8578,10672 8701,10428 8771,10381 8824,10366 8953,10366 9028,10371 9154,10348 9239,10313 9404,10250 9492,10226 9593,10238 9873,10285
 Gitschiner Str.	1 9873,10285 9948,10280
 Gitschiner Str.	1 9948,10280 9865,10227
@@ -219,13 +219,13 @@ Richnowstr.	1 8946,6501 8850,6421
 Menzelstr.	1 6185,6469 6155,6722
 Cranachstr.	1 6303,6736 6324,6480 6338,6312
 Boddinstr.	1 12582,8408 12368,8356 12216,8323 12104,8299 11920,8252
-Schlangenbader Str.	1 3969,7888 3964,7742
+Schlangenbader Str.	1 3968,7906 3964,7742
 Tannenweg	1 -3023,17889 -3012,17940 -3028,18024
 Erlenweg	1 -3228,18103 -3327,18007
 Aspenweg	1 -3000,18192 -3020,18188 -3050,18164 -3111,18105 -3168,18051 -3203,18014 -3224,17943
 Aspenweg	1 -3288,17831 -3244,17883 -3224,17943
 Pintschstr.	1 13342,13185 13438,12965
-Dievenowstr.	1 3225,7390 3208,7328 3189,7249 3206,7109
+Dievenowstr.	1 3228,7401 3208,7328 3189,7249 3206,7109
 Wolliner Str.	1 10405,14425 10320,14608
 Splanemannstr.	1 18301,9946 18389,9925 18408,10041 18403,10077
 Burgherrenstr.	1 8969,8640 9076,8783
@@ -1092,10 +1092,10 @@ Waitzstr. -> Sybelstr.: Straßentunnelrampe	3::igndisp 3800,10580 3739,10576 3712
 Lewishamstr. -> Waitzstr.: Straßentunnelrampe	3::igndisp 3813,10435 3771,10511 3739,10495
 Waitzstr. -> Lewishamstr.: Straßentunnelrampe	3::igndisp 3739,10495 3771,10511 3739,10576
 unbequem passierbarer Mittelstreifen	3nocross::ignrte 6825,11486 6851,11346 6880,11110
-Rauchstr. -> Köbisstr.: unbequem passierbarer Mittelstreifen	3::igndisp 6692,11365 6851,11346 7160,11225
 Rauchstr. -> Klingelhöferstr.: unbequem passierbarer Mittelstreifen	3::igndisp 6692,11365 6851,11346 6825,11486
-Köbisstr. -> Rauchstr.: unbequem passierbarer Mittelstreifen	3::igndisp 7160,11225 6851,11346 6692,11365
-Köbisstr. -> Klingelhöferstr.: unbequem passierbarer Mittelstreifen	3::igndisp 7160,11225 6851,11346 6880,11110
+Rauchstr. -> Köbisstr.: unbequem passierbarer Mittelstreifen	3::igndisp 6692,11365 6851,11346 7103,11247
+Köbisstr. -> Rauchstr.: unbequem passierbarer Mittelstreifen	3::igndisp 7103,11247 6851,11346 6692,11365
+Köbisstr. -> Klingelhöferstr.: unbequem passierbarer Mittelstreifen	3::igndisp 7103,11247 6851,11346 6880,11110
 Klingelhöferstr. -> Rauchstr.: unbequem passierbarer Mittelstreifen	3::igndisp 6880,11110 6851,11346 6692,11365
 Straßenbahn auf Mittelstreifen	3nocross::ignrte 10197,16528 9998,16547 9883,16557 9816,16565
 Bornholmer Str. -> Treppe zum Kolonnenweg: Straßenbahn auf Mittelstreifen	3::igndisp 10197,16528 9998,16547 9982,16527
@@ -1339,7 +1339,7 @@ Mittelstreifen ohne Überquerungshilfe	3nocross::ignrte 12990,11006 13080,10956 1
 Hedwig-Wachenheim-Str. -> Mühlenstr.: Mittelstreifen ohne Überquerungshilfe	3::igndisp 13150,11101 13080,10956 13144,10921
 Mühlenstr. -> Hedwig-Wachenheim-Str.: Mittelstreifen ohne Überquerungshilfe	3::igndisp 12990,11006 13080,10956 13150,11101
 Klingelhöferstr.: Mittelstreifen	3 6692,11365 6851,11346 6880,11110
-Klingelhöferstr.: Mittelstreifen	3 7160,11225 6851,11346 6880,11110
+Klingelhöferstr.: Mittelstreifen	3 7103,11247 6851,11346 6880,11110
 Klingelhöferstr.: Mittelstreifen	3 6880,11110 6851,11346 6692,11365
 Straßenbahntrasse	3nocross::ignrte 21158,15885 21220,15741 21235,15641
 Raoul-Wallenberg-Str. -> Schönagelstr.: Straßenbahntrasse	3::igndisp 21158,15885 21220,15741 21602,15908
@@ -1688,8 +1688,8 @@ Bernadottestr.	1 2711,6698 2793,6593 2875,6485 2935,6448 3020,6450
 Vogelsang	1 2229,6203 2170,5939 2137,5798
 Vogelsang	1 2106,5808 2141,5948 2195,6184 2193,6214
 Dievenowstr.	2 3165,6939 3206,7109
-Ahornstr. (Steglitz)	1 4852,6094 4869,6122 4940,6080 4926,6053
-Ahornstr. (Steglitz)	1 4926,6053 4911,6028 4839,6067 4852,6094
+Ahornstr. (Steglitz)	1 4863,6088 4888,6093 4923,6073 4926,6053
+Ahornstr. (Steglitz)	1 4926,6053 4903,6048 4872,6068 4863,6088
 Treitschkestr.	1 4854,6413 4971,6345 5125,6262 5219,6215
 tragen (Treppe)	0:40:-217 4127,5427
 tragen (5 Stufen)	0:10:26 4061,5418
@@ -1708,8 +1708,8 @@ Lietzenburger Str. -> Wormser Str.: Mittelstreifen schlecht zu überqueren	3::ign
 tragen (2 x 10 Stufen)	0:40:18 1666,4637
 tragen (2 x 10 Stufen)	0:40:21 1689,4630
 Sterzinger Str.	1 6096,8600 6128,8536
-Bozener Str.	1 5904,8906 5995,8926 6049,8916
-Bozener Str.	1 5995,8926 5995,9098
+Bozener Str.	1 5904,8928 5971,8926 6049,8916
+Bozener Str.	1 5971,8926 5975,9094
 schwierig zu querender Mittelstreifen	3nocross::ignrte 6532,10529 6636,10492 6753,10446
 Kalckreuthstr. -> Kleiststr.: schwierig zu querender Mittelstreifen	3::igndisp 6628,10318 6636,10492 6532,10529
 Kleiststr. -> Kalckreuthstr.: schwierig zu querender Mittelstreifen	3::igndisp 6753,10446 6636,10492 6628,10318
@@ -1737,8 +1737,8 @@ Tor zum Spielplatz	BNP:10:-236 11865,13027
 Tor zum Spielplatz	BNP:10:-156 11874,13048
 Tor zum Spielplatz	BNP:10:-250 11815,13045
 tragen (Treppe, 14 Stufen)	0:20:-140 8190,10960
-Matthäikirchplatz	1 7938,11276 7956,11340 7973,11354
-Matthäikirchplatz	1 7973,11354 7984,11334 7966,11267
+Matthäikirchplatz	1 7897,11287 7931,11391 7954,11399
+Matthäikirchplatz	1 7954,11399 7965,11380 7934,11275
 Herkulesufer: wg. Stufen schieben, ggf. auf Wiesenstreifen ausweichen	0:30:69 6920,11064
 schwierig zu überqueren - besser Ampel benutzen	3nocross::ignrte 7912,10945 7968,11048 7980,11070
 queren schlecht möglich	3nocross::ignrte 6709,9234 6863,9254 6923,9266
@@ -1805,10 +1805,12 @@ Otto-Ostrowski-Str. -> Landsberger Allee: Straßenbahntrasse	3::igndisp 13769,134
 Landsberger Allee	3nocross::ignrte 17254,14451 17533,14484 17848,14523
 Schalkauer Str. -> Landsberger Allee: Landsberger Allee	3::igndisp 17514,14613 17533,14484 17848,14523
 Landsberger Allee -> Schalkauer Str.: Landsberger Allee	3::igndisp 17254,14451 17533,14484 17514,14613
-Kalkhorster Weg (10 Stufen)	0:40:-175 3931,8638
-unbequem passierbarer Mittelstreifen	3nocross::ignrte 3688,9051 3741,9047 3835,9044
+Kalkhorster Weg (10 Stufen)	0:40:-199 3904,8664
+unbequem passierbarer Mittelstreifen	3nocross::ignrte 3688,9051 3741,9047 3816,9045 3835,9044
 Hoffmann-von-Fallersleben-Pl. -> Hohenzollerndamm: unbequem passierbarer Mittelstreifen	3::igndisp 3741,8955 3741,9047 3688,9051
-Hohenzollerndamm -> Hoffmann-von-Fallersleben-Pl.: unbequem passierbarer Mittelstreifen	3::igndisp 3835,9044 3741,9047 3741,8955
+Hohenzollerndamm -> Hoffmann-von-Fallersleben-Pl.: unbequem passierbarer Mittelstreifen	3::igndisp 3816,9045 3741,9047 3741,8955
+Hohenzollerndamm -> Bielefelder Str.: unbequem passierbarer Mittelstreifen	3::igndisp 3741,9047 3816,9045 3814,9304
+Bielefelder Str. -> Hohenzollerndamm: unbequem passierbarer Mittelstreifen	3::igndisp 3814,9304 3816,9045 3835,9044
 unpassierbarer Mittelstreifen	3nocross::ignrte 3439,8996 3482,9028 3521,9059
 Bechstedter Weg -> Hohenzollerndamm: unpassierbarer Mittelstreifen	3::igndisp 3661,8815 3482,9028 3439,8996
 Hohenzollerndamm -> Bechstedter Weg: unpassierbarer Mittelstreifen	3::igndisp 3521,9059 3482,9028 3661,8815

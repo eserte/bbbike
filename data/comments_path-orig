@@ -88,23 +88,23 @@ Fußgängerampel vor der Passauer Str. zum Überqueren der Lietzenburger Str. benut
 #: XXX_prog: RL:ja, GPS:nein (in der Realität kann man nicht anders fahren, aber vielleicht einen kleinen Hint wert)
 Fußgängerampel links benutzen	CP; 14723,16691 14619,16682 14619,16672
 #: XXX_prog: RL:ja, GPS:nein (in der Realität kann man nicht anders fahren, aber vielleicht einen kleinen Hint wert)
-Münchener Str., über Hohenstaufenstr.: Fußgängerampel auf der linken Seite zum Überqueren der Hohenstaufenstr. benutzen	CP; 6210,9833 6209,9772 6227,9531
+Münchener Str., über Hohenstaufenstr.: Fußgängerampel auf der linken Seite zum Überqueren der Hohenstaufenstr. benutzen	CP; 6210,9833 6209,9772 6224,9544
 #: XXX_prog: RL:ja, GPS:nein (in der Realität kann man nicht anders fahren, aber vielleicht einen kleinen Hint wert)
-Münchener Str., über Hohenstaufenstr.: Fußgängerampel auf der rechten Seite zum Überqueren der Hohenstaufenstr. benutzen	CP; 6227,9531 6209,9772 6210,9833
+Münchener Str., über Hohenstaufenstr.: Fußgängerampel auf der rechten Seite zum Überqueren der Hohenstaufenstr. benutzen	CP; 6224,9544 6209,9772 6210,9833
 #: XXX_prog die zusätzliche Strecke sollte auch noch berücksichtigt werden
 #: XXX_prog: RL:ja, GPS:nein (in der Realität kann man nicht anders fahren, aber vielleicht einen kleinen Hint wert)
 Münchener Str., Richtung Martin-Luther-Str.: Fußgängerampel auf der linken Seite benutzen	CP; 6210,9833 6209,9772 6241,9772
 #: XXX_prog: RL:ja, GPS:ja (da es doch immerhin 30 Meter bis zur Kreuzung sind)
-Hohenstaufenstr. zur Münchener Str.: frühzeitig Fußgängerampel nach links benutzen	PI; 6241,9772 6209,9772 6227,9531
+Hohenstaufenstr. zur Münchener Str.: frühzeitig Fußgängerampel nach links benutzen	PI; 6241,9772 6209,9772 6224,9544
 #: XXX_prog: RL:ja, GPS:ja (da es doch immerhin 30 Meter bis zur Ampel sind und Radfahrer evtl. nach links fahren würden)
-Münchener Str. zur Nachodstr.: Fußgängerampel auf der rechten Seite benutzen	CP; 6227,9531 6209,9772 6108,9772
+Münchener Str. zur Nachodstr.: Fußgängerampel auf der rechten Seite benutzen	CP; 6224,9544 6209,9772 6108,9772
 Thomas-Dehler-Str. - Stülerstr.: nach dem Abbiegen zunächst auf dem linken Gehweg bleiben	CP; 6654,11460 6716,11439 6825,11486
 Gervinusstr./Lewishamstr.: linken Gehweg bis zur Ampel an der Mommsenstr. benutzen	CP; 3839,10904 3631,10784 3644,10759
 #: XXX_prog: RL:ja, GPS:nein
 Tiergarten: rechts des Neuen Sees halten	CP; 5901,11902 5890,11865 5870,11842
 #: XXX_prog: RL:ja, GPS:nein
 Tiergarten: links des Neuen Sees halten	CP; 5901,11902 5890,11865 5933,11775
-Klingelhöferstr. - Köbisstr.: bereits an der Ampel Stülerstr./Tiergartenstr. die Straßenseite wechseln	PI; 6825,11486 6851,11346 7160,11225
+Klingelhöferstr. - Köbisstr.: bereits an der Ampel Stülerstr./Tiergartenstr. die Straßenseite wechseln	PI; 6825,11486 6851,11346 7103,11247
 Blissestr. - Am Volkspark: bereits an der Ampel Mecklenburgische Str. auf die linke Seite wechseln	PI; 4783,8557 4784,8508 4960,8440
 #: XXX_prog Bei den beiden nächsten Einträgen (Am Volkspark) stand hier "PI:35;".
 #: XXX_prog Diese Schreibweise (verlorene Zeit in Sekunden) wird noch nirgendwo unterstützt,
