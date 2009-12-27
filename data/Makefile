@@ -1097,7 +1097,7 @@ report-checks:
 	@echo Now doing checks...
 
 do-checks:	.check_empty_lines \
-	.check_strassen1 .check_strassen2 .check_strassen_cont \
+	.check_strassen1 .check_strassen2 .check_strassen_potsdam .check_strassen_cont \
 	.check_plaetze1 .check_plaetze2 .check_strassen_plaetze_unique \
 	.check_hoehe .check_hoehe2 \
 	.check_ampeln .check_ampeln2 \
@@ -1144,13 +1144,10 @@ check-disabled:
 	$(CHECK_DOUBLE) -special strassen -linesegs strassen landstrassen landstrassen2
 	@touch $@
 
-# This rule is not called automatically, because
-# it has some known and expected failures. But the rule
-# should be called manually from time to time.
-.check_strassen_potsdam:	landstrassen Potsdam.coords.data
+.check_strassen_potsdam:	landstrassen add_str_potsdam Potsdam.coords.data
 	-rm /tmp/potsdam-strassen
 	${GREPSTRASSEN} --namerx ' \(Potsdam\)' landstrassen | perl -pe 's/\s+\(B\d+\)//' > /tmp/potsdam-strassen
-	${CHECK_STR_PLZ} -ignoreplzwarnings -plzdata Potsdam.coords.data -data /tmp/potsdam-strassen
+	${CHECK_STR_PLZ} -addstr add_str_potsdam -ignoreplzwarnings -plzdata Potsdam.coords.data -data /tmp/potsdam-strassen
 	rm /tmp/potsdam-strassen
 	@touch $@
 
