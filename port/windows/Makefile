@@ -71,10 +71,15 @@ devel:
 # - then run these rules
 #    cd port/windows
 #    make bbbike-strawberry-dist make-bbbike-dist
-# - 
+#   (use bbbike-strawberry-snapshot-dist instead to create a snapshot)
+# - run
+#    /cygdrive/c/WINDOWS/system32/cmd.exe /c bbbike-snapshot-20091228.iss
 
 bbbike-strawberry-dist: make-BBBikeVar.tpl
 	tpage --debug=undef --define use_strawberry=1 --define VERSION=3.17-DEVEL --eval_perl bbbike.tpl.iss > bbbike.iss
+
+bbbike-strawberry-snapshot-dist: make-BBBikeVar.tpl
+	env SNAPSHOTDATE=`perl -MPOSIX=strftime -e 'print strftime "%Y%m%d", localtime'` sh -c 'tpage --debug=undef --define use_strawberry=1 --define VERSION=snapshot-$$SNAPSHOTDATE --eval_perl bbbike.tpl.iss > bbbike-snapshot-$$SNAPSHOTDATE.iss && chmod 755 bbbike-snapshot-$$SNAPSHOTDATE.iss'
 
 # XXX TODOs:
 # - all InlineDist.pm are missing in git --- should I include it? Or generate it, how? Or should I switch to Inline::C2XS as fast as possible?
