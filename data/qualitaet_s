@@ -1703,6 +1703,7 @@ Heinrich-Dathe-Platz: große Gehwegplatten	Q1 18512,10337 18484,10411 18394,10348
 Dathepromenade: große Gehwegplatten	Q1 18394,10348 18320,10318 18302,10289 18314,10260 18101,10169 18048,10169
 (Erieseering - Dathepromenade): große Gehwegplatten	Q1 18319,10249 18314,10260
 Rhododendronweg: Verbundsteinpflaster	Q1 16146,12881 16148,12772 16200,12771 16197,12880
+Philosophenweg: Verbundsteinpflaster	Q1 16073,12883 16074,12778
 Kulmseestr.: Asphalt	Q0 20303,12230 20364,12216 20490,12209 20629,12177
 Rotraudstr.: Asphalt, leicht uneben	Q0 21118,14477 21099,14300 21087,14183 21074,14058 21062,13948
 (Pfingstrosenweg - Wuhlewanderweg): glatte Pflasterung	Q0 22079,10852 22097,10812 22106,10789
@@ -2301,9 +2302,9 @@ Weidenweg: Kopfsteinpflaster	Q2 13767,12626 13786,12636 13866,12672
 Weidenweg: Asphalt	Q0 13866,12672 13911,12692 14058,12709
 Roedeliusplatz: Kopfsteinpflaster	Q2 16158,12191 16246,12177
 Freiastr.: Kopfsteinpflaster	Q2 16826,12408 16694,12422
-(Siegfriedstr. - Herzbergstr.): Asphalt	Q0 16865,13000 17041,12989 17114,13019 17170,13070 17234,13081 17257,13117 17219,13430 17203,13519
+(Siegfriedstr. - Herzbergstr.): Asphalt	Q0 16865,13000 17041,12995 17114,13019 17170,13070 17234,13081 17257,13117 17219,13430 17203,13519
 (Siegfriedstr. - Herzbergstr.): Asphalt	Q0 17219,13430 17300,13459
-Herzbergstr.: betoniert	Q0 17232,13518 17300,13459 17330,13437 17688,13430
+Herzbergstr.: betoniert/Verbundsteinpflaster	Q0 17232,13518 17300,13459 17330,13437 17479,13434 17688,13430
 Rumeyplan: Asphalt mit Schäden	Q1 8694,7691 8815,7722 8902,7763 8967,7821
 Bülowstr. (Zehlendorf): Kopfsteinpflaster	Q2 -662,2998 -872,3133 -1052,3276 -1054,3328
 Mäckeritzstr.: asphaltiert	Q0 1361,14431 1320,14440 1262,14510 1244,14558 1235,14609
@@ -2378,7 +2379,7 @@ Am Pankepark: noch unbefestigt, Schotter	Q2 8246,14184 8152,14130
 Stendaler Platz: überwiegend Asphalt	Q0 6394,14085 6489,14071
 Karl-Marx-Allee - Hildegard-Jadamowitz-Str.: unbefestigter und holpriger Parkplatz	Q2 12950,12340 12985,12303
 Hinter dem Zeughaus: kleinteiliges Kopfsteinpflaster	Q1 9842,12506 9950,12522
-(Krankenhaus Herzberge): Asphalt mit Schäden	Q1 17438,13525 17446,13554 17475,13567 17502,13554 17510,13527 17500,13504 17479,13490 17454,13501 17438,13525
+(Krankenhaus Herzberge): Asphalt mit Schäden	Q1 17479,13490 17500,13504 17510,13527 17502,13554 17475,13567
 Beilsteiner Str.: Beton	Q0 19025,14037 18998,14089 18859,14048 18871,13796 18875,13467
 Beilsteiner Str.: Asphalt mit einigen Schäden	Q0 18875,13467 18852,13269 18832,13099 18800,12838
 Beilsteiner Str.: Beton	Q0 18800,12838 18749,12413
@@ -2632,9 +2633,18 @@ Gustav-Adolf-Str.: Asphalt, mit einigen Schäden	Q0 12097,16263 12182,16322 12285
 Hilde-Ephraim-Str.: Asphalt	Q0 1312,9220 1261,9285 1662,9642 1709,9663 1718,9653 1756,9610
 (Hilde-Ephraim-Str. - Trabener Str.): Verbundsteinpflaster	Q0 1718,9653 1920,9824 1941,9814
 Kyllmannstr. (Wannsee): Asphalt	Q0 -6248,1607 -6179,1570 -6147,1467 -6111,1396 -6065,1222
-Philosophenweg: Kopfsteinpflaster oder Verbundsteinpflaster	Q2 16073,12883 16074,12773
 Cheruskerpark: wassergebundene Decke	Q1 7437,8712 7403,8693 7369,8583
 Cheruskerpark: Asphalt	Q0 7369,8583 7352,8390 7283,8265 7250,8223
+Rhinstr. [Wohngebiet]: Beton	Q0 18008,13507 17988,13683 17987,13766 18015,13846 18134,13811 18206,13817
+Arendsweg: Beton	Q0 17254,14451 17274,14280
+(Zufahrt ehem. Einkaufszentrum): Asphalt	Q0 16864,14226 16965,14235 17010,14269 17060,14255 17221,14268 17274,14280
+(Rhinstr. - Arendsweg/Landsberger Allee): unbefestiger Weg	Q2 18015,13846 17300,14133
+(Rhinstr. - Arendsweg/Landsberger Allee): ehem. Eisenbahngleise	Q3 17300,14133 17319,14159
+(Rhinstr. - Arendsweg/Landsberger Allee): unbefestiger Weg, Schotter, Beton	Q2 17319,14159 17230,14206 17221,14268
+Alte Rhinstr.: Asphalt	Q0 18247,14241 18225,14398 18183,14573
+Rhinstr. [134-130]: Asphalt	Q0 18477,14042 18187,14039
+Meeraner Str.: Asphalt	Q0 18382,13492 18407,13548 18462,13560 18489,13593 18486,13819 18477,14042
+Meeraner Str.: Asphalt	Q0 18626,13820 18486,13819 18206,13817
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
 Riemeisterstr.: mäßiges Kopfsteinpflaster, aber asphaltierte Radwege	Q1 346,4833 294,4916 158,5103 103,5123
 Pücklerstr.: Fahrbahn mit schlechtem Kopfsteinpflaster, Radweg OK	Q1 2688,7067 2576,7026 2465,6984 2403,6962 2266,6911 2155,6873 2130,6865 2054,6840 1961,6820
@@ -7103,7 +7113,7 @@ Laurinsteig: Kleinpflastersteine	Q2 1209,25542 1307,25639 1348,25720 1360,25764 
 Kubornstr.: Asphalt	Q1 15857,12682 15832,12518 15819,12498 15800,12353
 Kubornstr.: kleinteiliges Kopfsteinpflaster	Q1 15800,12353 15790,12289
 Rutnikstr.: Asphalt	Q0 15546,12690 15648,12687 15731,12687 15857,12682 15952,12679
-Heringerstr.: Asphalt	Q0 15648,12687 15645,12864
+Heringer Str.: Asphalt	Q0 15648,12687 15643,12875
 Hendrichplatz: Asphalt	Q0 15953,12753 15859,12753 15859,12793 15734,12793 15731,12687
 Rathausstr. (Lichtenberg): Asphalt	Q0 15537,12367 15576,12315 15628,12246 15651,12214 15685,12154 15670,12022
 Dottistr.: Asphalt	Q0 15685,12154 15879,12131

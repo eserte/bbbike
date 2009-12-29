@@ -894,6 +894,9 @@ Aachener Str. -> Detmolder Str.: Mittelstreifen nicht passierbar	3::igndisp 4609
 Straßenbahntrasse	3nocross::ignrte 18215,12132 18216,12239 18216,12262 18220,12450
 Rhinstr. -> Kolonie Friedrichsfelde Nord: Straßenbahntrasse	3::igndisp 18216,12239 18216,12262 18180,12262
 Kolonie Friedrichsfelde Nord -> Rhinstr.: Straßenbahntrasse	3::igndisp 18180,12262 18216,12262 18220,12450
+Straßenbahntrasse	3nocross::ignrte 18166,14277 18187,14039 18206,13817
+Rhinstr. [134-130] -> Rhinstr.: Straßenbahntrasse	3::igndisp 18477,14042 18187,14039 18206,13817
+Rhinstr. -> Rhinstr. [134-130]: Straßenbahntrasse	3::igndisp 18166,14277 18187,14039 18477,14042
 Straßenbahntrasse	3nocross::ignrte 19628,13517 19726,13524 19807,13529 19837,13531 19894,13535 20097,13549
 Allee der Kosmonauten -> Langhoffstr.: Straßenbahntrasse	3::igndisp 19726,13524 19807,13529 19821,13604
 Langhoffstr. -> Allee der Kosmonauten: Straßenbahntrasse	3::igndisp 19821,13604 19807,13529 19837,13531

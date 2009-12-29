@@ -103,6 +103,8 @@ Wollankstr.: Angebotsstreifen werden bis Herbst 2011 eingerichtet	?::projected 9
 #: section ignorieren vvv
 #: section Straßen in Bau und Planung vvv
 # 
+#: last_checked: 2009-12-29
+Pyramidenring/Rhinstr.: Ampel in Bau	?::inwork 18166,14277
 #: last_checked: 2009-12-16 vvv
 #: XXX keine Chance, die Gegend während des Weihnachtsmarktes zu erkunden
 #: XXX Eintrag in Berlin.coords.data fehlt: PLZ=10117
@@ -124,8 +126,10 @@ Wagner-Régeny-Str.: Straße wird Richtung Norden verlängert	?::inwork 19487,3593 
 #: last_checked: 2009-11-19
 Wilhelm-Hoff-Str.: östlich des Groß-Berliner Damms in Bau, westlich nur als Trasse erkennbar	?::inwork 18833,3191 18892,3256 18953,3318 19125,3491 19180,3542
 #: last_checked: 2009-11-19
+#: next_check: 2010-04-01
 Groß-Berliner Damm: Straße wird neu gebaut, danach wird auch in Richtung Norden ein Radweg existieren	?::inwork; 18050,4649 17956,4787 17885,4912 17780,5086 17770,5108 17742,5174 17700,5272 17645,5328
 #: last_checked: 2009-11-19
+#: next_check: 2010-04-01
 Greifstr.: Straße wird zurzeit neu gebaut, danach vielleicht asphaltiert?	?::inwork 17780,5086 17854,5131
 #: by: http://www.potsdam.de/cms/beitrag/10050631/757395/
 #: XXX wo wird die Verbindung genauer entlanggeführt?
@@ -147,7 +151,7 @@ Radverbindung zwischen Bernhard-Lichtenberg-Str. und Goerdelerdamm	? 3174,14253 
 Asphaltierung gemeinsamer Geh- und Radweg (Schönholzer Heide)	? 7857,19693 7849,19614 7940,19521 8170,19308 8334,19157 8359,19162
 Alt-Biesdorf (nördliche Seite): Bau von Radwegen	?; 22242,11269 21960,11269 21860,11278 21750,11319 21624,11379 21398,11482 21311,11528
 #: last_checked: 2009-10-17
-Allee der Kosmonauten: Bau von Radwegen oder -streifen	?::inwork 19173,13478 19059,13474 18875,13467 18783,13469 18382,13492 18234,13500
+Allee der Kosmonauten: Bau von Radwegen oder -streifen	?::inwork 19173,13478 19059,13474 18875,13467 18783,13469
 #: by ^^^
 #: by: MoPo 2009-08-01, soll 2010 realisiert werden vvv
 #: next_check: 2010-03-01 vvv
@@ -3765,13 +3769,6 @@ Landhausring: Qualität?	? 21710,12798 21866,12763 21893,12783 21900,12820 21880,
 S-Bahnhofunterführung Friedenau: existieren hier Treppen, die zwischen Dürerplatz und Bahnhofstr. überwunden werden müssen?	? 6243,7033 6151,7078
 #: XXX laut osm surface=cobblestone
 Lorcher Str.: Qualität zwischen Binger Str. und Rüdesheimer Str.?	? 4271,6990 4160,7043 4059,7038
-#: XXX Eintrag in Berlin.coords.data fehlt
-Meeraner Str.: Qualität?	? 18382,13492 18407,13548 18462,13560 18489,13593 18486,13819 18480,14031 18188,14027
-Meeraner Str.: Qualität?	? 18626,13820 18486,13819 18206,13817
-Rhinstr. [Wohngebiet]: Qualität?	? 18008,13507 17988,13683 17987,13766 18015,13846 18134,13811 18206,13817
-Rhinstr. - Landsberger Allee: Fußweg auch für Radfahrer befahrbar? Qualität? Nachts beleuchtet?	? 18015,13846 17300,14133 17319,14159 17230,14195 17281,14225
-Alte Rhinstr.: Qualität? Kann die Landsberger Allee in Höhe Alte Rhinstr. überquert werden?	? 18247,14241 18225,14398 18183,14573
-Pyramidenring/Rhinstr.: Heißt der Abschnitt westliche der Rhinstr. Pyramidenring oder Rhinstr.? Qualität?	? 18166,14277 17945,14260
 Lötschbergstr.: Qualität? Ist der nördliche Abschnitt eine Einbahnstraße? Wenn ja, nur für Autos oder auch für Radfahrer?	? 20114,11233 20135,11269 20140,11343 20150,11512 20161,11715
 Ernstroder Weg: Qualität?	? 19984,11557 19966,11394
 Schmellwitzer Weg: Qualität?	? 20005,11383 19984,11319 19801,11360

@@ -420,7 +420,7 @@ Fregestr. -> Fregestr.: Durchfahrt für Autofahrer per Poller gesperrt	3::igndisp
 Fregestr. -> Saarstr.: Durchfahrt für Autofahrer per Poller gesperrt	3::igndisp 5957,6889 5897,6799 5972,6756
 Saarstr. -> Fregestr.: Durchfahrt für Autofahrer per Poller gesperrt	3::igndisp 5972,6756 5897,6799 5777,6628
 Putlitzstr.	1 6210,13939 6205,14216
-Bornitzstr.	1 15645,12864 15563,12860
+Bornitzstr.	1 15643,12875 15563,12860
 Straßenbahntrasse	3nocross::ignrte 18890,9529 18834,9256 18809,9133
 Rolandseck -> Treskowallee: Straßenbahntrasse	3::igndisp 18903,9244 18834,9256 18809,9133
 Treskowallee -> Rolandseck: Straßenbahntrasse	3::igndisp 18890,9529 18834,9256 18903,9244
@@ -935,3 +935,6 @@ Schinkestr. -> Kottbusser Damm: Mittelstreifen	3::igndisp 11734,9856 11623,9841 
 Mittelstreifen	3nocross::ignrte 19735,3643 19676,3705 19633,3751
 Mittelstreifen	3nocross::ignrte 19472,3922 19587,3801 19633,3751
 Adlergestell -> Steinbachstr.: Mittelstreifen	3::igndisp 19472,3922 19587,3801 19673,3888
+Überqueren des Mittelstreifens verboten	3nocross::ignrte 18057,14549 18183,14573 18365,14607
+Landsberger Allee -> Alte Rhinstr.: Überqueren des Mittelstreifens verboten	3::igndisp 18365,14607 18183,14573 18225,14398
+Alte Rhinstr. -> Landsberger Allee: Überqueren des Mittelstreifens verboten	3::igndisp 18225,14398 18183,14573 18057,14549
