@@ -6190,7 +6190,7 @@ sub header {
 	     -lang => 'de-DE',
 	     -BGCOLOR => '#ffffff',
 	     ($use_background_image && !$printmode ? (-BACKGROUND => "$bbbike_images/bg.jpg") : ()),
-	     -meta=>{'keywords'=>'berlin fahrrad route bike karte suche cycling route routing routenplaner routenplanung fahrradroutenplaner radroutenplaner',
+	     -meta=>{'keywords'=>'berlin fahrrad route bike karte suche cycling route routing routenplaner routenplanung fahrradroutenplaner radroutenplaner entfernungsrechner',
 		     'copyright'=>'(c) 1998-2009 Slaven Rezic',
 		    },
 	     -author => $BBBike::EMAIL,
