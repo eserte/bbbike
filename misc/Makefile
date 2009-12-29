@@ -220,7 +220,8 @@ berlin-test-osm2bbd-postprocess2:
 # Currently works only on mosor
 
 bbbikemap-for-garmin:	/tmp/gmapsupp.img
-	@echo "Now do:"
+	@echo "Set the garmin device into USB mass storage mode."
+	@echo "Then execute:"
 	@echo "   mount /mnt/garmin"
 	@echo "   cp /tmp/gmapsupp.img /mnt/garmin/garmin/gmapsupp.img"
 	@echo "   umount /mnt/garmin"
