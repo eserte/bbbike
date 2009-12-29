@@ -132,13 +132,13 @@ Roennebergstr.	1 5533,6753 5357,6932
 Matternstr.	1 13798,13003 13579,12904
 Ebelingstr.	1 13707,13206 13610,13169 13487,13115
 John-Schehr-Str. - Greifswalder Str.	3 12573,14581 12422,14692 12403,14663 12371,14615 12317,14535
-Prenzlauer Allee	3nocross::ignrte 11822,15193 11798,15133 11776,15060 11712,14868
-Prenzlauer Allee -> Stubbenkammerstr.: Prenzlauer Allee	3::igndisp 11776,15060 11798,15133 11643,15189
+Prenzlauer Allee	3nocross::ignrte 11822,15193 11801,15132 11776,15060 11712,14868
+Prenzlauer Allee -> Stubbenkammerstr.: Prenzlauer Allee	3::igndisp 11776,15060 11801,15132 11643,15189
 Fröbelstr. -> Raumerstr.: Prenzlauer Allee	3::igndisp 11870,15004 11776,15060 11623,15108
 Fröbelstr. -> Prenzlauer Allee: Prenzlauer Allee	3::igndisp 11870,15004 11776,15060 11712,14868
-Prenzlauer Allee -> Fröbelstr.: Prenzlauer Allee	3::igndisp 11798,15133 11776,15060 11870,15004
+Prenzlauer Allee -> Fröbelstr.: Prenzlauer Allee	3::igndisp 11801,15132 11776,15060 11870,15004
 Raumerstr. -> Fröbelstr.: Prenzlauer Allee	3::igndisp 11623,15108 11776,15060 11870,15004
-Raumerstr. -> Prenzlauer Allee: Prenzlauer Allee	3::igndisp 11623,15108 11776,15060 11798,15133
+Raumerstr. -> Prenzlauer Allee: Prenzlauer Allee	3::igndisp 11623,15108 11776,15060 11801,15132
 Prenzlauer Allee -> Raumerstr.: Prenzlauer Allee	3::igndisp 11712,14868 11776,15060 11623,15108
 Große Weinmeisterstr. (Potsdam)	1 -12557,11 -12582,127 -12618,296
 Stellmacherweg	1 13151,2958 13453,2930
@@ -170,7 +170,7 @@ Leuthener Str.	1 7716,8356 7640,8359
 Lüdenscheider Weg	1 -1389,15285 -1037,15482
 Büsingstr.	1 5215,6643 5210,6522
 Schrammstr.	1 4960,8440 4958,8344
-Stubbenkammerstr.	1 11643,15189 11798,15133
+Stubbenkammerstr.	1 11643,15189 11801,15132
 Templiner Str.	1 10725,14189 10751,14229
 Heylstr.	1 6459,8281 6385,8274 6325,8259
 Fritz-Reuter-Str. (Schöneberg)	1 6621,8221 6779,8279
@@ -236,13 +236,13 @@ Erich-Weinert-Str. -> Paul-Robeson-Str.: U-Bahnviadukt und Straßenbahn	3::igndis
 Erich-Weinert-Str. -> Schönhauser Allee: U-Bahnviadukt und Straßenbahn	3::igndisp 11295,16199 10997,16280 10990,16197
 Schönhauser Allee -> Rodenbergstr.: U-Bahnviadukt und Straßenbahn	3::igndisp 10997,16280 10990,16197 11253,16118
 Rodenbergstr. -> Schönhauser Allee: U-Bahnviadukt und Straßenbahn	3::igndisp 11253,16118 10990,16197 10982,16121
-Straßenbahn	3nocross::ignrte 11860,15309 11882,15384 11891,15413
-Prenzlauer Allee -> Lilli-Henoch-Str.: Straßenbahn	3::igndisp 11891,15413 11882,15384 11952,15374
-Ahlbecker Str. -> Prenzlauer Allee: Straßenbahn	3::igndisp 11638,15522 11882,15384 11891,15413
-Ahlbecker Str. -> Lilli-Henoch-Str.: Straßenbahn	3::igndisp 11638,15522 11882,15384 11952,15374
-Lilli-Henoch-Str. -> Ahlbecker Str.: Straßenbahn	3::igndisp 11952,15374 11882,15384 11638,15522
-Lilli-Henoch-Str. -> Prenzlauer Allee: Straßenbahn	3::igndisp 11952,15374 11882,15384 11860,15309
-Prenzlauer Allee -> Ahlbecker Str.: Straßenbahn	3::igndisp 11860,15309 11882,15384 11638,15522
+Straßenbahn	3nocross::ignrte 11860,15309 11877,15366 11891,15413
+Prenzlauer Allee -> Lilli-Henoch-Str.: Straßenbahn	3::igndisp 11891,15413 11877,15366 11942,15358
+Lilli-Henoch-Str. -> Ahlbecker Str.: Straßenbahn	3::igndisp 11942,15358 11877,15366 11638,15522
+Lilli-Henoch-Str. -> Prenzlauer Allee: Straßenbahn	3::igndisp 11942,15358 11877,15366 11860,15309
+Ahlbecker Str. -> Prenzlauer Allee: Straßenbahn	3::igndisp 11638,15522 11877,15366 11891,15413
+Ahlbecker Str. -> Lilli-Henoch-Str.: Straßenbahn	3::igndisp 11638,15522 11877,15366 11942,15358
+Prenzlauer Allee -> Ahlbecker Str.: Straßenbahn	3::igndisp 11860,15309 11877,15366 11638,15522
 Straßenbahn	3nocross::ignrte 12473,14763 12422,14692 12403,14663 12371,14615
 Greifswalder Str. -> John-Schehr-Str.: Straßenbahn	3::igndisp 12473,14763 12422,14692 12573,14581
 John-Schehr-Str. -> Greifswalder Str.: Straßenbahn	3::igndisp 12573,14581 12422,14692 12403,14663

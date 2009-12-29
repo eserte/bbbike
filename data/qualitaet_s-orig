@@ -1207,10 +1207,10 @@ Landsberger Allee: Radwege nur mit mäßiger Qualität (Bordsteinkanten!)	Q1 20260,
 Kurfürstenweg: fester Waldweg	Q1 -5960,-604 -5863,-426 -5762,-145 -5752,-44 -5658,135 -5567,231 -5539,308 -5376,450 -5295,545 -5155,758 -4974,900
 Schönburgstr.: schlechtes Kopfsteinpflaster	Q3 8949,6644 8946,6501 8995,6473
 Schönburgstr.: Kopfsteinpflaster	Q2 8995,6473 9029,6360
-Parkstr.: Kopfsteinpflaster	Q2 8943,6292 8992,6312 9029,6360
+Parkstr.: Kopfsteinpflaster	Q2 8959,6292 8992,6312 9029,6360
 Parkstr.: Asphalt	Q0 9029,6360 9078,6360 9143,6415
-Blumenthalstr.: schlechtes Kopfsteinpflaster	Q3 8943,6292 8961,6126
-Blumenthalstr.: Kopfsteinpflaster	Q2 8961,6126 8990,5950
+Blumenthalstr.: schlechtes Kopfsteinpflaster	Q3 8959,6292 8971,6154
+Blumenthalstr.: Kopfsteinpflaster	Q2 8976,6094 8990,5950
 Kaiserin-Augusta-Str.: Kopfsteinpflaster	Q2 8990,5950 9192,5921
 (Teltowkanal, Nordufer): Parkweg	Q2 8750,5173 9118,5328 9145,5323 9182,5332
 #: confirmed_by: Stefan (sts):
@@ -1570,7 +1570,7 @@ Parkstr.: Asphalt mit Straßenschäden	Q1 9909,18333 10075,18472 10202,18579 10359
 #: corrected_by: srt (war "schlechtes Kopfsteinpflaster")
 Eintrachtstr.: Asphalt mit Straßenschäden	Q1 10710,18393 10650,18544
 Hiddenseer Str.: Asphalt mit leichten Schäden	Q0 11655,15253 11822,15193
-Stubbenkammerstr.: Asphalt mit leichten Schäden	Q0 11643,15189 11798,15133
+Stubbenkammerstr.: Asphalt mit leichten Schäden	Q0 11643,15189 11801,15132
 (Chausseestr. - Schulzendorfer Str.): Parkweg	Q1 8286,14635 8316,14667 8263,14838 8248,14900
 (Pankeweg zwischen Pankstr. und Wiesenstr.): Kopfsteinpflaster	Q2 8176,15635 8150,15700 8164,15840
 Gropiusstr.: Fahrbahn Kopfsteinpflaster, Uferweg wassergebundene Decke	Q1 8389,16214 8543,16364
@@ -2916,6 +2916,7 @@ Alte Rhinstr.: Asphalt	Q0 18247,14241 18225,14398 18183,14573
 Rhinstr. [134-130]: Asphalt	Q0 18477,14042 18187,14039
 Meeraner Str.: Asphalt	Q0 18382,13492 18407,13548 18462,13560 18489,13593 18486,13819 18477,14042
 Meeraner Str.: Asphalt	Q0 18626,13820 18486,13819 18206,13817
+Spinozastr.: Asphalt	Q0 3926,6409 3930,6481 3974,6511 4050,6506
 ######################### User Contributions #################################
 #: by: Dominik Seelow vvv
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
@@ -2965,7 +2966,7 @@ Richnowstr.: mäßiger Asphalt	Q1 8850,6421 8946,6501
 Bosepark: kleinteiliges Kopfsteinpflaster, OK	Q1 8850,6421 8697,6455
 Bosestr.: Asphalt mit Asphaltflicken	Q1 8191,6339 8292,6331 8388,6322 8546,6307 8546,6329 8680,6322
 #: confirmed_by: srt
-Bosestr.: schlechtes Kopfsteinpflaster	Q3 8680,6322 8846,6303 8943,6292
+Bosestr.: schlechtes Kopfsteinpflaster	Q3 8680,6322 8846,6303 8959,6292
 #: corrected_by: Kowaliczek Larissa (Kopfsteinpflaster Q2 -> Asphalt), auch hatte ich den Eindruck, dass sie asphaltiert ist
 #: confirmed_by: srt
 Borussiastr.: Asphalt	Q0 8645,6781 8743,6778 8831,6780 9046,6784 9241,6791 9511,6797 9706,6802
@@ -3658,7 +3659,8 @@ Wolliner Str.: Asphalt	Q0 10405,14425 10320,14608 10277,14691 10242,14765 10218,
 #: by: Floris Akkerman:
 Am Pichelssee: Kopfsteinpflaster	Q2 -3370,11425 -3528,11100 -3537,10903
 #: by: Oliver Schnuerer: vvv
-Haderslebener Str.: mäßiges Kopfsteinpflaster	Q2 3899,6411 3891,6295 3878,6110
+#: corrected_by: srt (mäßiges Kopfsteinpflaster, Q2 -> Kleinkopfsteinpflaster, Q1)
+Haderslebener Str.: Kleinkopfsteinpflaster	Q1 3899,6411 3891,6295 3878,6110
 #: corrected_by: srt (schlechtes Kopfsteinpflaster, Q3 -> mäßiges Kopfsteinpflaster, Q2-)
 Brentanostr.: mäßiges Kopfsteinpflaster	Q2- 4111,6651 4058,6602 4054,6565 4050,6506 4045,6402 4040,6289 4028,6099 4010,5888
 #: by: ^^^
@@ -5446,7 +5448,7 @@ Grabertstr.: Asphalt	Q0 7091,4760 7058,4890 7052,4911 7030,4937 6923,5057
 #: by: christian (czorr):
 Tulpenstr.: Kopfsteinpflaster	Q2 3587,4514 3775,4632 3795,4644 3815,4657 3991,4773 4193,4897 4209,4908
 #: by: koschulz:
-Kanzowstr.: schlechter Asphalt	Q2 11698,15627 11914,15490
+Kanzowstr.: schlechter Asphalt	Q2 11698,15627 11913,15490
 #: by: ulfert030:
 #: corrected_by: Wolfhard Schleese (Kopfsteinpflaster -> Kleinpflastersteine)
 Am Priesterberg: mäßig befahrbare Kleinpflastersteine	Q2 830,25285 917,25324 1056,25332
@@ -9846,11 +9848,11 @@ Eichhörnchensteig: Asphalt	Q1 1728,7525 1449,7519 1405,7471
 Bernhard-Wieck-Promenade: wassergebundene Decke	Q1 1363,7997 1372,8011 1381,8023 1446,8114
 Bernhard-Wieck-Promenade: wassergebundene Decke	Q1 1381,8023 1366,8032 1348,8010
 (Spohrstr. - Umgehungschaussee): Waldweg	Q2 1274,7866 1256,7841 1215,7797
-Lilli-Henoch-Str.: Beton	Q0 12584,14928 12477,14987 12454,15046 12381,15034
-(Güterbahnhof Greifswalder Str.): Beton	Q1 12477,14987 12540,15063 12727,14929 12717,14908 12620,14979
-(Danziger Str. - Lilli-Henoch-Str.): Verbundsteine	Q0 12128,14640 12201,14770 12258,14779 12298,14846 12277,14859 12381,15034
-(Prenzlauer Allee - Lilli-Henoch-Str.): Verbundsteine	Q0 11882,15384 11952,15374 12107,15229 12215,15115 12381,15034
-(Prenzlauer Allee - Lilli-Henoch-Str.): Verbundsteine	Q0 11860,15309 11919,15314 11952,15374
+Lilli-Henoch-Str.: Beton	Q0 12584,14928 12477,14987 12381,15034 12314,15008
+(Güterbahnhof Greifswalder Str.): Beton	Q1 12477,14987 12520,15057 12727,14929 12717,14908 12620,14979
+(Danziger Str. - Lilli-Henoch-Str.): Verbundsteine	Q0 12128,14640 12189,14767 12220,14779 12255,14849 12241,14865 12314,15008
+(Prenzlauer Allee - Lilli-Henoch-Str.): Verbundsteine	Q0 11877,15366 11942,15358 12107,15229 12215,15115 12284,15068 12314,15008
+(Prenzlauer Allee - Lilli-Henoch-Str.): Verbundsteine	Q0 11860,15309 11919,15314 11942,15358
 (Verlängerte Diesterwegstr.): Verbundsteine	Q0 12078,15160 12107,15229
 Olga-Benario-Prestes-Str.: Asphalt	Q2 12653,14653 12473,14763
 #: corrected_by: srt (Asphalt -> Asphalt mit Schäden)
