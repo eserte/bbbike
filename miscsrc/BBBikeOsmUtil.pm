@@ -151,7 +151,16 @@ sub mirror_and_plot_osm_files {
     }
 }
 
-sub mirror_and_plot_visible_area_constrained {
+# This can be used to manually download tiles:
+# Call from ptksh using
+#    x BBBikeOsmUtil::get_visible_area_constrained_tiles
+# Use
+#    touch -t 197001010000 $filename
+# on returned filenames.
+# Use
+#    ~/src/bbbike/miscsrc/downloadosm -reload $filename
+# to mirror a tile.
+sub get_visible_area_constrained_tiles {
     my(%args) = @_;
 
     my($x0,$y0,$x1,$y1) = get_visible_area();
@@ -170,9 +179,15 @@ sub mirror_and_plot_visible_area_constrained {
 	push @elsewhere_tiles, "$elsewhere_dir/$file";
     }
 
-require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([$x0,$y0,$x1,$y1],[qw()])->Indent(1)->Useqq(1)->Dump; # XXX
-require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([\@elsewhere_tiles],[qw(elsewhere)])->Indent(1)->Useqq(1)->Dump; # XXX
+#require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([$x0,$y0,$x1,$y1],[qw()])->Indent(1)->Useqq(1)->Dump; # XXX
+#require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([\@elsewhere_tiles],[qw(elsewhere)])->Indent(1)->Useqq(1)->Dump; # XXX
 
+    @elsewhere_tiles;
+}
+
+sub mirror_and_plot_visible_area_constrained {
+    my(%args) = @_;
+    my @elsewhere_tiles = get_visible_area_constrained_tiles(%args);
     mirror_and_plot_osm_files([@elsewhere_tiles], %args);
 }
 
