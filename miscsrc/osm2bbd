@@ -1477,7 +1477,7 @@ if ($parsefor) {
 		    )) {
 	touch $file;
     }
-    for (qw(cyclepath misc path route tram kfzverkehr scenic ferry danger)) {
+    for (qw(cyclepath misc path route tram kfzverkehr scenic ferry danger mount)) {
 	touch "comments_$_";
     }
     # radwege will be used for plotting, radwege_exact for routing.
