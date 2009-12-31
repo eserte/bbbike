@@ -1973,9 +1973,11 @@ EOF
 		print "in <i>$$ortref</i> ";
 	    }
 	    print M("ist nicht bekannt") . ".<br>\n";
-	    if (!$shown_unknown_street_helper) {
-		if ($lang eq 'en') {
-		    print <<EOF;
+	    my $geo = get_geography_object();
+	    if (!$geo || !$geo->is_osm_source) {
+		if (!$shown_unknown_street_helper) {
+		    if ($lang eq 'en') {
+			print <<EOF;
 <p>
 Checklist:
 <ul>
@@ -1987,8 +1989,8 @@ Checklist:
 Nothing applies?
 </p>
 EOF
-		} else {
-		    print <<EOF;
+		    } else {
+			print <<EOF;
 <p>
 Checkliste:
 <ul>
@@ -2000,15 +2002,18 @@ Checkliste:
 Ansonsten:
 </p>
 EOF
+		    }
+		    $shown_unknown_street_helper = 1;
 		}
-		$shown_unknown_street_helper = 1;
-	    }
 
-	    my $qs = CGI->new({strname => $$oneref,
-			       ($$ortref ? (ort => $$ortref) : ()),
-			      })->query_string;
-	    print qq{<a target="newstreetform" href="$bbbike_html/newstreetform${newstreetform_encoding}.html?$qs">} . M("Diese Straﬂe neu in die BBBike-Datenbank eintragen") . qq{</a><br><br>\n};
-	    print M(qq{Oder einen anderen Straﬂennamen versuchen}) . qq{:<br>\n};
+		my $qs = CGI->new({strname => $$oneref,
+				   ($$ortref ? (ort => $$ortref) : ()),
+				  })->query_string;
+		print qq{<a target="newstreetform" href="$bbbike_html/newstreetform${newstreetform_encoding}.html?$qs">} . M("Diese Straﬂe neu in die BBBike-Datenbank eintragen") . qq{</a><br><br>\n};
+		print M(qq{Oder einen anderen Straﬂennamen versuchen}) . qq{:<br>\n};
+	    } else {
+		print M(qq{Einen anderen Straﬂennamen versuchen}) . qq{:<br>\n};
+	    }
 	    $no_td = 1;
 	    $tryempty = 1;
 	} elsif ($$tworef ne '') {
