@@ -1622,10 +1622,22 @@ sub choose_form {
 			warn "Suche $$oneref in der $label.\n" if $debug;
 			my @res = $str->agrep($$oneref);
 			if (@res) {
-			    my $ret = $str->get_by_name($res[0]);
-			    if ($ret) {
-				$$nameref = $res[0];
-				$q->param($type . 'c', $ret->[1][0]);
+			    my @matches;
+			    for my $res (@res) {
+				my $ret = $str->get_by_name($res);
+				if ($ret) {
+				    my($street, $citypart) = Strasse::split_street_citypart($res);
+				    push @matches, [$street, $citypart, undef, $ret->[1][0]];
+				}
+			    }
+			    if (@matches == 1) {
+				$$nameref = $matches[0]->[PLZ::LOOK_NAME()];
+				$q->param($type . 'c', $matches[0]->[PLZ::LOOK_COORD()]);
+			    } else {
+				@$matchref = @matches;
+			    }
+
+			    if (@matches) {
 				last;
 			    }
 			}
