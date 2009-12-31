@@ -5213,6 +5213,7 @@ sub draw_route {
 					 MakeNet => \&make_netz,
 					 Bg => '#c5c5c5',
 					 Lang => $lang,
+					 Geo => get_geography_object(),
 					 %bbbikedraw_args,
 					);
 	die $@ if !$draw;
@@ -5357,6 +5358,7 @@ sub create_map {
 						Fh => \*IMG,
 						Bg => '#c5c5c5',
 						Lang => $lang,
+						Geo => get_geography_object(),
 					       );
 	    $draw->set_dimension(@dim);
 	    $draw->create_transpose();
@@ -6904,7 +6906,18 @@ sub outside_berlin {
 }
 
 sub get_geography_object {
+    my $maybe_meta_file = "$Strassen::datadirs[0]/meta.dd";
+    if (-r $maybe_meta_file) {
+	my $geo = eval {
+	    require Geography::FromMeta;
+	    Geography::FromMeta->load_meta($maybe_meta_file);
+	};
+	warn $@ if $@;
+	return $geo if $geo;
+    }
+
     return if !defined $city;
+
     my $geo_mod = "Geography::" . $city;
     if (eval qq{ require $geo_mod; }) {
 	$geo_mod->new;

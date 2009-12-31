@@ -69,6 +69,7 @@ sub new {
     $self->{CGI}       = delete $args{CGI};
     $self->{Compress}  = delete $args{Compress};
     $self->{Lang}      = delete $args{Lang};
+    $self->{Geo}       = delete $args{Geo};
 
     if (defined $self->{Return} &&
 	$self->{Return} eq 'string') {
@@ -343,8 +344,14 @@ sub set_dimension_max { shift->set_bbox_max(@_) }
 sub create_transpose {
     my($self, %args) = @_;
     my($w, $h) = ($self->{Width}, $self->{Height});
+    my $geo = $self->{Geo};
+    my $has_custom_coord_to_standard = $geo && $geo->can('coord_to_standard'); # XXX maybe check also for coordsys != bbbike
     my($min_x, $min_y, $max_x, $max_y) =
       ($self->{Min_x}, $self->{Min_y}, $self->{Max_x}, $self->{Max_y});
+    if ($has_custom_coord_to_standard) {
+	($min_x, $min_y) = $geo->coord_to_standard($min_x, $min_y);
+	($max_x, $max_y) = $geo->coord_to_standard($max_x, $max_y);
+    }
     my($xk, $yk) = ($w/($max_x-$min_x), $h/($max_y-$min_y));
     my $aspect = ($max_x-$min_x)/($max_y-$min_y);
     my($delta_x, $delta_y) = ($min_x, $min_y);
@@ -361,43 +368,79 @@ sub create_transpose {
     my($code, $anti_code);
     if ($self->origin_position eq 'sw') {
 	# Ursprung ist unten, nicht oben (z.B. PDF)
-	$code = <<EOF;
+	if ($has_custom_coord_to_standard) {
+	    $code = <<EOF;
+	sub {
+	    my(\$x,\$y) = \$geo->coord_to_standard(\@_);
+	    ((\$x-$delta_x)*$xk, (\$y-$delta_y)*$yk);
+	};
+EOF
+	} else {
+	    $code = <<EOF;
 	sub {
 	    ((\$_[0]-$delta_x)*$xk, (\$_[1]-$delta_y)*$yk);
 	};
 EOF
+	}
         $code =~ s/--/+/g;
 	$code =~ s/\+-/-/g;
 	#warn $code;
 	$transpose = eval $code;
 	die "$code: $@" if $@;
 
-	$anti_code = <<EOF;
+	if ($has_custom_coord_to_standard) {
+	    $anti_code = <<EOF;
+	sub {
+	    my(\$x,\$y) = ((\$_[0]/$xk)+$delta_x, (\$_[1]/$yk)+$delta_y);
+	    \$geo->standard_to_coord(\$x,\$y);
+	};
+EOF
+	} else {
+	    $anti_code = <<EOF;
 	sub {
 	    ((\$_[0]/$xk)+$delta_x, (\$_[1]/$yk)+$delta_y);
 	};
 EOF
+	}
         $anti_code =~ s/--/+/g;
 	$anti_code =~ s/\+-/-/g;
 	#warn $anti_code;
         $anti_transpose = eval $anti_code;
 	die "$anti_code: $@" if $@;
     } else { # origin_positon eq 'nw'
-	$code = <<EOF;
+	if ($has_custom_coord_to_standard) {
+	    $code = <<EOF;
+	sub {
+	    my(\$x,\$y) = \$geo->coord_to_standard(\@_);
+	    ((\$x-$delta_x)*$xk, $h-(\$y-$delta_y)*$yk);
+	};
+EOF
+	} else {
+	    $code = <<EOF;
 	sub {
 	    ((\$_[0]-$delta_x)*$xk, $h-(\$_[1]-$delta_y)*$yk);
 	};
 EOF
+	}
         $code =~ s/--/+/g;
 	$code =~ s/\+-/-/g;
         $transpose = eval $code;
 	die "$code: $@" if $@;
 
-	$anti_code = <<EOF;
+	if ($has_custom_coord_to_standard) {
+	    $anti_code = <<EOF;
+	sub {
+	    my(\$x,\$y) = ((\$_[0]/$xk)+$delta_x, ($h-\$_[1])/$yk+$delta_y);
+	    \$geo->standard_to_coord(\$x,\$y);
+	};
+EOF
+	} else {
+	    $anti_code = <<EOF;
 	sub {
 	    ((\$_[0]/$xk)+$delta_x, ($h-\$_[1])/$yk+$delta_y);
 	};
 EOF
+	}
         $anti_code =~ s/--/+/g;
 	$anti_code =~ s/\+-/-/g;
         $anti_transpose = eval $anti_code;
@@ -932,6 +975,16 @@ sub get_street_records_in_bbox {
 sub can_multiple_passes {
     my($self, $type) = @_;
     0;
+}
+
+sub standard_to_coord {
+    my($self, $sx, $sy) = @_;
+    my $geo = $self->{Geo};
+    if ($geo && $geo->can('standard_to_coord')) {
+	$geo->standard_to_coord($sx, $sy);
+    } else {
+	($sx, $sy);
+    }
 }
 
 1;

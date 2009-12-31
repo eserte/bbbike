@@ -540,10 +540,10 @@ sub draw_scale {
     my $y_margin = 10;
     my $color = $black;
     my $bar_width = 4;
-    my($x0,$y0) = $transpose->(0,0);
+    my($x0,$y0) = $transpose->($self->standard_to_coord(0,0));
     my($x1,$y1, $strecke, $strecke_label);
     for $strecke (10, 50, 100, 500, 1000, 5000, 10000, 20000, 50000, 100000) {
-	($x1,$y1) = $transpose->($strecke,0);
+	($x1,$y1) = $transpose->($self->standard_to_coord($strecke,0));
 	if ($x1-$x0 > 50) {
 	    if ($strecke >= 1000) {
 		$strecke_label = $strecke/1000 . "km";
@@ -963,14 +963,14 @@ sub transpose_all {
     my($s, $transpose) = @_;
     # first:
     my($tx,$ty) = map { sprintf "%.2f", $_ }
-	              $transpose->(@{ Strassen::to_koord1($s->[0]) });
+	              $transpose->(@{ Strassen::to_koord_f1($s->[0]) });
 
     my $res = [[$tx, $ty]];
     my $bbox = [$tx,$ty,$tx,$ty];
 
     foreach my $xy (@{$s}[1 .. $#$s]) {
 	my($tx,$ty) = map { sprintf "%.2f", $_ }
-	                  $transpose->(@{ Strassen::to_koord1($xy) });
+	                  $transpose->(@{ Strassen::to_koord_f1($xy) });
 	push @$res, [ $tx, $ty ];
 
 	$bbox->[0] = $tx if ($tx < $bbox->[0]);

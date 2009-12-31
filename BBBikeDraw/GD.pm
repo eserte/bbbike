@@ -808,10 +808,10 @@ sub draw_scale {
     my $y_margin = 10;
     my $color = $black;
     my $bar_width = 4;
-    my($x0,$y0) = $transpose->(0,0);
+    my($x0,$y0) = $transpose->($self->standard_to_coord(0,0));
     my($x1,$y1, $strecke, $strecke_label);
     for $strecke (10, 50, 100, 500, 1000, 5000, 10000, 20000, 50000, 100000) {
-	($x1,$y1) = $transpose->($strecke,0);
+	($x1,$y1) = $transpose->($self->standard_to_coord($strecke,0));
 	if ($x1-$x0 > $self->{Width}/15) {
 	    if ($strecke >= 1000) {
 		$strecke_label = $strecke/1000 . "km";

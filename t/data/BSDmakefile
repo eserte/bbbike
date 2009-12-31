@@ -31,3 +31,4 @@ wgs84-data:
 	touch ${WGS84_DATADIR}/$f
 	chmod 644 ${WGS84_DATADIR}/$f
 .endfor
+	echo '$$meta = { coordsys => q{wgs84}, };' > ${WGS84_DATADIR}/meta.dd
