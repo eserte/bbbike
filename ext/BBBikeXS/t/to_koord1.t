@@ -20,7 +20,7 @@ BEGIN {
     }
 }
 
-BEGIN { plan tests => 9 }
+BEGIN { plan tests => 11 }
 
 {
     my $sub1 = \&Strassen::to_koord1;
@@ -51,8 +51,14 @@ is($xy->[1], 456, "to_koord1 y");
 
 {
     my $xy = Strassen::to_koord_f1("13.1234,52.5432");
-    is($xy->[0], 13.1234, "to_koord_f1 x");
-    is($xy->[1], 52.5432, "to_koord_f1 y");
+    is($xy->[0], 13.1234, "to_koord_f1 x (float value)");
+    is($xy->[1], 52.5432, "to_koord_f1 y (float value)");
+}
+
+{
+    my $xy = Strassen::to_koord_f1("8598,9074");
+    is($xy->[0], 8598, "to_koord_f1 x (int value)");
+    is($xy->[1], 9074, "to_koord_f1 y (int value)");
 }
 
 __END__
