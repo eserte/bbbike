@@ -223,6 +223,7 @@ sub agrep {
 		next;
 	    }
 	}
+	@this_res = grep { !/^#/ } @this_res;
 	if (@this_res == 1) {
 	    return parse($this_res[0])->[NAME];
 	} elsif (@this_res) {
