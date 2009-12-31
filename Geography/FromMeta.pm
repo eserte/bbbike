@@ -74,11 +74,31 @@ sub coord_to_standard {
     }
 }
 
-sub coord_s_to_standard {
+sub coord_to_standard_s {
     my($self, $xy) = @_;
     if (($self->{coordsys}||'') eq 'wgs84') {
 	require Karte::Polar;
 	join ",", $Karte::Polar::obj->map2standard(split /,/, $xy);
+    } else {
+	$xy;
+    }
+}
+
+sub standard_to_coord {
+    my($self, $x, $y) = @_;
+    if (($self->{coordsys}||'') eq 'wgs84') {
+	require Karte::Polar;
+	$Karte::Polar::obj->standard2map($x,$y);
+    } else {
+	($x, $y);
+    }
+}
+
+sub standard_to_coord_s {
+    my($self, $xy) = @_;
+    if (($self->{coordsys}||'') eq 'wgs84') {
+	require Karte::Polar;
+	join ",", $Karte::Polar::obj->standard2map(split /,/, $xy);
     } else {
 	$xy;
     }

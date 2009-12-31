@@ -27,7 +27,9 @@ sub search_args          { () }
 sub scrollregion         { () }
 sub is_osm_source        { undef }
 sub coord_to_standard    { ($_[1], $_[2]) }
-sub coord_s_to_standard  { $_[1] }
+sub coord_to_standard_s  { $_[1] }
+sub standard_to_coord    { ($_[1], $_[2]) }
+sub standard_to_coord_s  { $_[1] }
 sub _bbox_standard_coordsys { }
 sub _center_standard_coordsys { }
 
