@@ -35,15 +35,17 @@ if (!GetOptions("addx=i" => \$addx,
 
 my($from, $to);
 
+if (@ARGV == 1) {
+    $ARGV[1] = 'standard';
+}
 if (@ARGV == 2) {
     $from = $Karte::map{$ARGV[0]} || usage_coordsys($ARGV[0]);
     $to   = $Karte::map{$ARGV[1]} || usage_coordsys($ARGV[1]);
-} elsif (@ARGV == 1) {
-    $from = $Karte::map{$ARGV[0]} || usage_coordsys($ARGV[0]);
-    $to   = $Karte::map{'standard'} || die;
 } else {
     usage();
 }
+
+print "#: map: $ARGV[1]\n";
 
 while(<STDIN>) {
     chomp;
