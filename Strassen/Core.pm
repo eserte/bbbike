@@ -1010,7 +1010,7 @@ sub to_koord1_slow {
 *to_koord = \&to_koord_slow;
 *to_koord1 = \&to_koord1_slow;
 *to_koord_f = \&to_koord_slow;
-*to_koord_f1 = \&to_koord_slow;
+*to_koord_f1 = \&to_koord1_slow;
 
 # Return crossings as an array or hash reference.
 # Argumente:
