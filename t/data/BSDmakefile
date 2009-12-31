@@ -2,6 +2,7 @@ EMPTY_FILES=	Potsdam.coords.data gesperrt handicap_s qualitaet_s \
 		ampeln fragezeichen berlin \
 		comments_cyclepath comments_ferry comments_misc comments_mount \
 		comments_path comments_route comments_tram comments_scenic plaetze
+NON_EMPTY_FILES=	strassen gesperrt
 
 all:	Berlin.coords.data ${EMPTY_FILES}
 
@@ -14,4 +15,19 @@ Berlin.coords.data:	strassen
 $f:
 	touch $f
 	chmod 644 $f
+.endfor
+
+# The following is used for tests with wgs84 data (e.g. needed for osm
+# wgs84 experiments)
+WGS84_DATADIR=/tmp/test_wgs84
+wgs84-data:
+	mkdir -p ${WGS84_DATADIR}
+	chmod 755 ${WGS84_DATADIR}
+.for f in ${NON_EMPTY_FILES}
+	../../miscsrc/convert_coordsys standard polar < $f > ${WGS84_DATADIR}/$f
+	chmod 644 ${WGS84_DATADIR}/$f
+.endfor
+.for f in ${EMPTY_FILES} Berlin.coords.data
+	touch ${WGS84_DATADIR}/$f
+	chmod 644 ${WGS84_DATADIR}/$f
 .endfor
