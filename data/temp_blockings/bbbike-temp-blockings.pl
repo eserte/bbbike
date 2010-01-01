@@ -6909,7 +6909,7 @@ EOF
      },
      { from  => 1182281811, # 2007-06-19 21:36
        until => 1184018400, # 2007-07-10 00:00
-       text  => 'Kaulsdorfer Brücke (Hellerdorf) in beiden Richtungen Baustelle, Brücke gesperrt (bis 09.07.2007)',
+       text  => 'Kaulsdorfer Brücke (Hellersdorf) in beiden Richtungen Baustelle, Brücke gesperrt (bis 09.07.2007)',
        type  => 'gesperrt',
        source_id => 'IM_004489',
        data  => <<EOF,

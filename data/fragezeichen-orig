@@ -103,6 +103,8 @@ Wollankstr.: Angebotsstreifen werden bis Herbst 2011 eingerichtet	?::projected 9
 #: section ignorieren vvv
 #: section Straßen in Bau und Planung vvv
 # 
+#: by: http://www.potsdam.de/cms/beitrag/10056300/757395/
+Mauerweg: evtl. existiert hier bereits ein geschotterter Radweg parallel zur Straße	? -8799,3778 -9064,3667 -9156,3451 -9399,3297 -9530,3165 -9999,2615 -10105,2458
 #: last_checked: 2009-12-29
 Pyramidenring/Rhinstr.: Ampel in Bau	?::inwork 18166,14277
 #: last_checked: 2009-12-16 vvv
@@ -132,8 +134,12 @@ Groß-Berliner Damm: Straße wird neu gebaut, danach wird auch in Richtung Norden 
 #: next_check: 2010-04-01
 Greifstr.: Straße wird zurzeit neu gebaut, danach vielleicht asphaltiert?	?::inwork 17780,5086 17854,5131
 #: by: http://www.potsdam.de/cms/beitrag/10050631/757395/
-#: XXX wo wird die Verbindung genauer entlanggeführt?
-Neuer Garten: Planung einer Radwegverbindung zwischen Gotischer Bibliothek und Alleestr.	?::inwork -12265,-418 -12262,-362 -12328,-212 -12331,-131 -12412,-118 -12450,-34 -12528,-11
+#: by: http://www.potsdam.de/cms/beitrag/10058808/757395/
+#: XXX wo wird die Verbindung genau entlanggeführt?
+Neuer Garten: neue Radwegverbindung zwischen Gotischer Bibliothek und Alleestr.	?::inwork -12265,-418 -12262,-362 -12328,-212 -12331,-131 -12412,-118 -12450,-34 -12528,-11
+#: by: http://www.potsdam.de/cms/beitrag/10058808/757395/
+#: next_check: 2010-08-01
+Am Neuen Garten/Alleestr.: Planung von Schutzstreifen	?::inwork -12265,-418 -12370,-354 -12435,-222 -12505,-60 -12528,-11 -12557,11 -12637,-8 -12661,-14 -12840,-69 -12961,-136 -13068,-115 -13111,-136
 #: XXX Zugleich Benennung von "Alter Markt" (im Gegensatz zum auch vorhandenen "Am Alten Markt") in der Gegend
 Humboldtstr. (Potsdam): alte Straße wird hier wieder benannt	?::inwork -12771,-1633 -12766,-1598
 #: by: MoPo 2009-08-01, soll 2009 realisiert werden vvv
@@ -1390,7 +1396,7 @@ Sleipnerstr.: Qualität (vermutlich Asphalt wie zw. Heimdall- u. Romain-Rolland-S
 Heinrich-von-Kleist-Str. (Potsdam): Qualität (vermutlich Kopfsteinpflaster)?	? -10078,-2339 -10109,-2437 -10142,-2540
 Havellandkanal Richtung Norden: Qualität (wahrscheinlich Asphalt), wohin führt die Strecke?	? -8730,22254 -8734,22586
 (Falkenberger Chaussee - Rüdickenstr.): Qualität? beleuchtet? Fußgänger?	? 16947,17506 16964,17482 16992,17472 17012,17471 17185,17386 17384,17307 17397,17310
-Brauhausberg/B2: wie weit Richtung Süden reichen die Radspuren? Werden die Radspuren dann zu einem gewöhnlichen Radweg?	? -12465,-2601 -12812,-2793 -12925,-2956 -13051,-3101
+Brauhausberg/B2: wie weit Richtung Süden reichen die Radspuren? Werden die Radspuren dann zu einem gewöhnlichen Radweg?	? -12476,-2605 -12643,-2673 -12840,-2799 -12913,-2937 -13051,-3101
 Dahme: Qualität?	? 13750,-59911 13663,-59806 13598,-59801
 Dahme: Qualität?	? 13491,-59794 13153,-59795 13484,-59914 13618,-59923
 Dahme: Qualität?	? 13491,-59794 13484,-59914
@@ -3915,3 +3921,23 @@ Willi-Schwabe-Str.: Qualität?	? 19778,3064 19713,3124
 Moriz-Seeler-Str.: Qualität?	? 19767,3307 19669,3200
 #: XXX fehlt in Berlin.coords.data
 Lotte-Loebinger-Str.: Qualität?	? 20116,2639 20218,2730
+An der Vorderkappe (Potsdam): Qualität? Gilt die Einbahnstraßenregelung auch für Radfahrer?	? -13021,-2784 -13123,-2797 -13135,-2783 -13304,-2779 -13329,-2800 -13209,-2829 -13123,-2797
+Uferweg auf Hermannswerder: Qualität?	? -13003,-2754 -13266,-2716 -13431,-2777 -13681,-2824 -13767,-2718 -13762,-2691 -13865,-2565 -13921,-2516 -14045,-2521 -14081,-2516 -14177,-2514 -14247,-2568 -14234,-2587
+An der Vorderkappe - Uferweg: Qualität?	? -13329,-2800 -13431,-2777
+Leiterstr. (Potsdam): Qualität?	? -13381,-2943 -13359,-3096
+Leiterstr. (Potsdam): Qualität?	? -13495,-3094 -13456,-3099 -13359,-3096 -13316,-3091
+Ulrich-von-Hutten-Str.: Qualität? Gilt die Einbahnstraßenregelung auch für Radfahrer?	? -13481,-2956 -13456,-3099
+Paetowstr. (Potsdam): Qualität?	? -13155,-2913 -13137,-3022 -13191,-3080 -13209,-3082 -13270,-3092 -13282,-3001 -13227,-2994 -13209,-3082
+Max-Planck-Str. (Potsdam): Qualität?	? -12355,-2263 -12595,-2220
+Am Havelblick (Potsdam): Qualität?	? -12335,-2571 -12462,-2568 -12492,-2555 -12442,-2389 -12623,-2367
+Finkenweg (Potsdam): Qualität?	? -12840,-2799 -12877,-2734 -12867,-2680 -12797,-2632 -12756,-2577 -12688,-2595 -12643,-2673
+Zur Königlichen Hofbrauerei/Friedrich-Wilhelm-Boelcke-Straße: wo befinden sich diese Straßen? Qualität?	? -12702,-2167 -12775,-2281
+Friedhofsgasse (Potsdam): Qualität?	? -11781,-2235 -11799,-2283 -11995,-2500
+Drevesstr. (Potsdam): Qualität?	? -11656,-2944 -11685,-2971 -11676,-3137 -11423,-3431 -11278,-3596
+Kunersdorfer Str. (Potsdam): Qualität? Kann die Heinrich-Mann-Allee in Höhe Kunersdorfer Str. überquert werden?	? -11676,-3137 -11739,-3141 -11789,-3212 -11819,-3302 -11792,-3372 -11722,-3458 -11547,-3502 -11504,-3502 -11423,-3431 -11311,-3322
+Am Brunnen (Potsdam): Qualität?	? -11547,-3502 -11543,-3461 -11672,-3345 -11789,-3212
+Waldstr. (Potsdam): Qualität?	? -11152,-3498 -11278,-3596 -11414,-3703
+Kottmeierstr. (Potsdam): Qualität?	? -11504,-3502 -11423,-3638
+Heidereiterweg (Potsdam): Qualität?	? -11278,-3596 -11166,-3744
+#: by: http://www.potsdam.de/cms/beitrag/10057990/757395/
+Nuthestr.: existieren durchgängig Radwege zwischen Berliner Str. und Alt Nowawes?	? -11142,-1675 -11226,-1445 -11356,-1317 -11463,-1232 -11549,-1169

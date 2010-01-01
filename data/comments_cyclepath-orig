@@ -10,7 +10,7 @@ Petzow - Werder: Fahrradstraße	RW -20281,-6915 -20293,-6728 -20157,-6373 -20290,
 Radweg	RW -19449,-5977 -19536,-5985 -19716,-5851 -19997,-5752 -20116,-5592 -20290,-5475 -20696,-5198
 Caputh: Radweg	RW -15811,-6533 -16280,-6747 -16553,-6765 -16562,-6825 -16812,-7010
 Potsdam - Ferch: Zweirichtungsradweg	RW -18431,-7978 -18631,-8412 -18756,-8962 -18909,-9080 -19146,-9196 -19606,-9698 -20112,-10437 -20590,-10806 -20816,-10818 -21391,-10967
-Templiner Str.: Zweirichtungsradweg	RW -13062,-2901 -13718,-2991 -13771,-3023 -14038,-3356 -14031,-3554 -14095,-3670 -14119,-3845 -14267,-4206 -14712,-4614 -14710,-4977 -14795,-5169 -14947,-5405 -15228,-5678 -15275,-5928 -15472,-6233 -15811,-6533
+Templiner Str.: Zweirichtungsradweg	RW -13062,-2901 -13155,-2913 -13381,-2943 -13481,-2956 -13718,-2991 -13771,-3023 -14038,-3356 -14031,-3554 -14095,-3670 -14119,-3845 -14267,-4206 -14712,-4614 -14710,-4977 -14795,-5169 -14947,-5405 -15228,-5678 -15275,-5928 -15472,-6233 -15811,-6533
 asphaltierter Zweirichtungsradweg (Südwestseite)	RW -13778,4492 -14244,5152 -14404,5435 -14728,5709 -15216,6079 -15452,6185
 Zweirichtungsradweg auf der Südseite, kurz vor der Lindenberg Wechsel auf Nordseite	RW 21626,19542 21471,19728 21303,19918 20867,20409 20270,20684 19945,20979 18762,22087
 Radweg	RW; 20606,21815 19945,20979 19881,20887 19637,20600
@@ -28,7 +28,7 @@ Lichterfelder Allee, Teltow: Radweg vorhanden	RW 3450,543 3417,524 3112,331 2947
 Lange Brücke, Friedrich-Ebert-Str.: beidseitiger Radweg vorhanden, mäßige Qualität	RW2;RW2 -12431,-2096 -12493,-1896 -12567,-1817 -12659,-1700 -12758,-1654 -12755,-1585 -12773,-1544 -12795,-1499 -12833,-1365 -12839,-1342
 Breite Str., Potsdam: Radweg vorhanden	RW2;RW2 -12758,-1654 -12940,-1625 -13238,-1569 -13375,-1546 -13516,-1517 -13764,-1460 -13879,-1445
 Hreinrich-Mann-Allee: Radweg	RW -12431,-2096 -12318,-2192
-Brauhausberg: Radstreifen	RW4;RW4 -12318,-2192 -12362,-2280 -12465,-2601
+Brauhausberg: Radstreifen	RW4;RW4 -12318,-2192 -12355,-2263 -12362,-2288 -12462,-2568 -12476,-2605
 Berliner Str. (B1): Radweg	RW2; -12317,-1212 -12285,-1174
 Berliner Str. (B1): beidseitiger Radweg	RW2;RW2 -12285,-1174 -12231,-1078 -12148,-934 -12045,-757
 Berliner Str. (B1): Radweg	RW2; -10826,469 -11018,348
@@ -74,7 +74,7 @@ Fahrradstraße	RW -6943,25831 -7187,25859 -7225,25509 -7260,25515
 Zweirichtungsradweg auf der östl. Seite, Qualität unbekannt	RW -7533,24138 -7734,23796 -8777,22961 -8988,22668 -9046,22376
 Zweirichtungsradweg auf der östl. Seite, asphaltiert	RW -10377,20973 -10581,19871 -10000,18629
 Suggestivstreifen	RW4?;RW4? -11114,-2104 -10983,-2088 -10772,-2153 -10673,-2128
-Radweg auf Gehweg	RW2;RW -12213,-2131 -12098,-2173 -11681,-2256
+Radweg auf Gehweg	RW2;RW -12213,-2131 -12098,-2173 -11781,-2235 -11681,-2256
 Radweg auf Gehweg	RW;RW -11681,-2256 -11601,-2197 -11507,-2130 -11114,-2104
 #: add_fragezeichen: Gibt es in der Großbeerenstr. einen Radweg oder Radstreifen?
 Radstreifen	RW4?;RW4? -10673,-2128 -10634,-2159 -10528,-2196 -10426,-2231 -10327,-2262
@@ -163,7 +163,7 @@ Menz - Neuglobsow: Radweg (überwiegend auf altem Bahndamm, asphaltiert, einige k
 Neuglobsow - Fürstenberg: straßenbegleitender asphaltierter Radweg	RW -14354,81575 -12625,81350 -11971,81450 -11849,81547 -10516,83471 -10281,83899 -10109,84134 -10054,84256 -10085,84390 -9850,84800
 Großwoltersdorf - Menu: straßenbegleitender asphaltierter Radweg	RW -12250,73762 -12381,74147 -12575,74512 -13537,75287 -13950,75662 -14862,76637
 #: by: thomas (kara.)
-Heinrich-Mann-Allee: parallele Nebenstraße	;RW -11152,-3498 -11438,-3179 -11656,-2944
+Heinrich-Mann-Allee: parallele Nebenstraße	;RW -11152,-3498 -11311,-3322 -11438,-3179 -11656,-2944
 #: by: Arne Grein:
 Heinrich-Mann-Allee: Radweg (auf Gehweg)	RW -11656,-2944 -11770,-2743 -11912,-2587 -11995,-2500 -12318,-2192
 Amundsenstr.: Richtung Norden Radspur, Richtung Süden asphaltierter Radweg	RW4;RW2 -15581,444 -15589,578 -15527,795
@@ -466,8 +466,8 @@ Trebbiner Str. (Mahlow): Radweg	RW 11165,-5318 11291,-4485 11355,-4293 11338,-39
 #: by: Aimo Raasch vvv
 Leipziger Str.: neuer Bürgersteigradweg, 1,50m	RW1; -12431,-2096 -12653,-2206
 Leipziger Str.: Radstreifen, 1,20m	RW4; -12653,-2206 -12719,-2283 -12756,-2437
-Leipziger Str.: Radstreifen, 1,20m	RW4; -12929,-2659 -13062,-2901
-Leipziger Str.: alter Bürgersteigradweg, etwas welliger Asphalt, 1,30m	RW1; -13062,-2901 -12929,-2659 -12756,-2437
+Leipziger Str.: Radstreifen, 1,20m	RW4; -12929,-2659 -13003,-2754 -13021,-2784 -13062,-2901
+Leipziger Str.: alter Bürgersteigradweg, etwas welliger Asphalt, 1,30m	RW1; -13062,-2901 -13021,-2784 -13003,-2754 -12929,-2659 -12756,-2437
 Leipziger Str.: Radangebotsstreifen, 1m	RW3; -12756,-2437 -12719,-2283
 Leipziger Str.: Radstreifen, 1,50m; kurz vor der Kreuzung Bürgersteigradweg	RW4; -12719,-2283 -12653,-2206 -12431,-2096
 #: by: ^^^

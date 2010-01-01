@@ -486,8 +486,8 @@ Helmholtzstr. (Potsdam): Kopfsteinpflaster	Q2 -11831,-70 -11978,-348
 Griebnitzstr. (Potsdam): asphaltiert	Q0 -9698,-19 -9627,-27
 Griebnitzstr. (Potsdam): Kopfsteinpflaster	Q2 -9627,-27 -9432,-57
 Griebnitzstr. (Potsdam): Waldweg	Q1 -9432,-57 -9399,-139
-Albert-Einstein-Str. (Potsdam): Kopfsteinpflaster	Q2 -12362,-2280 -12327,-2277
-Albert-Einstein-Str. (Potsdam): asphaltiert, im Wohngebiet teils m‰ﬂige Stellen, im Wald sehr gut	Q0 -12327,-2277 -12335,-2571 -12317,-2637 -12219,-2760 -12222,-2932
+Albert-Einstein-Str. (Potsdam): Kopfsteinpflaster	Q2 -12362,-2288 -12330,-2297
+Albert-Einstein-Str. (Potsdam): asphaltiert, im Wohngebiet teils m‰ﬂige Stellen, im Wald sehr gut	Q0 -12330,-2297 -12335,-2571 -12317,-2637 -12219,-2760 -12222,-2932
 Schloﬂstr. (Potsdam): Kopfsteinpflaster	Q2 -12923,-1558 -12882,-1565 -12755,-1585
 Johannes-Lepsius-Str.: Asphalt	Q0 -13240,32 -13225,179 -13209,260
 Johannes-Lepsius-Str.: Verbundsteinpflaster	Q0- -13209,260 -13244,281
@@ -855,8 +855,8 @@ Kopfsteinpflaster	Q2 -19190,7296 -19187,6709 -19514,6643
 	Q0 -20696,-5198 -20290,-5475 -20116,-5592 -19997,-5752 -19716,-5851 -19536,-5985 -19449,-5977 -19189,-5697 -19144,-5616 -19112,-5403 -19079,-5334 -19002,-5271
 	Q0 -19449,-5977 -19420,-6014 -19420,-6060 -19534,-6344 -19760,-6450 -20051,-6631 -20281,-6915 -20472,-7292 -20740,-7375 -20778,-7496 -20684,-7570 -20725,-8059 -20893,-8318 -21318,-8660 -21561,-8963 -21590,-9622
 	Q0 -20816,-10818 -20590,-10806 -20112,-10437 -19606,-9698 -19146,-9196 -18909,-9080 -18756,-8962 -18631,-8412 -18431,-7978 -17984,-7684 -17650,-7464 -17334,-7253 -17267,-7134 -16995,-7004 -16812,-7010
-	Q0 -16280,-6747 -15811,-6533 -15472,-6233 -15275,-5928 -15228,-5678 -14947,-5405 -14795,-5169 -14710,-4977 -14712,-4614 -14267,-4206 -14119,-3845 -14095,-3670 -14031,-3554 -14038,-3356 -13771,-3023 -13718,-2991 -13062,-2901
-	Q0 -13062,-2901 -12929,-2659 -12756,-2437 -12719,-2283 -12653,-2206 -12431,-2096
+	Q0 -16280,-6747 -15811,-6533 -15472,-6233 -15275,-5928 -15228,-5678 -14947,-5405 -14795,-5169 -14710,-4977 -14712,-4614 -14267,-4206 -14119,-3845 -14095,-3670 -14031,-3554 -14038,-3356 -13771,-3023 -13718,-2991 -13481,-2956 -13381,-2943 -13155,-2913 -13062,-2901
+	Q0 -13062,-2901 -13021,-2784 -13003,-2754 -12929,-2659 -12756,-2437 -12719,-2283 -12653,-2206 -12431,-2096
 	Q0 -17643,-7028 -17703,-7228 -18009,-7528
 	Q0 -5736,-3629 -5156,-3192 -4885,-3087 -4456,-2968 -3950,-2743 -3650,-2609 -3521,-2552 -2984,-2184 -2831,-1956 -2477,-1717 -2276,-1621 -2073,-1525 -1668,-1709 -1453,-1715 -1303,-1758 -1143,-1759 -705,-1564 -282,-1184 -71,-1037 348,-743 465,-662 741,-584 925,-684 1212,-706 1346,-762 1453,-746
 	Q0 3450,543 3417,524 3112,331 2947,220 2459,-109 2331,-228 2215,-328 1974,-440 1696,-571 1453,-746
@@ -1454,7 +1454,7 @@ Kleinow: Betonplatten	Q1 50781,96778 50828,96893
 Kleinow: schlechtes Kopfsteinpflaster	Q3 50828,96893 50875,97118
 Kleinow: Asphalt	Q0 50875,97118 50846,97187
 Zimmerstr. (Potsdam): Kopfsteinpflaster	Q2 -14149,-1264 -14129,-1258 -13876,-1226 -13646,-1168
-Zimmerplatz (Potsdam): Kopfsteinpflaster	Q2 -13876,-1226 -13876,-1263
+Kˆhlerplatz (Potsdam): Kopfsteinpflaster	Q2 -13876,-1226 -13876,-1263
 Kastanienallee (Potsdam): Kopfsteinpflaster, Tram auf Fahrbahn	Q2 -14909,-1818 -14897,-1946 -14881,-2098 -14868,-2244 -14859,-2384
 bei Zechow: Asphalt	Q0 -26350,70262 -24687,71412 -24162,71612
 dt. Alleenstraﬂe: Asphalt	Q0 -24436,65301 -22589,66989 -22477,67059 -21066,67757
@@ -1982,7 +1982,12 @@ Wasserstr.: Kopfsteinpflaster	Q2 -9883,-161 -9795,-230
 Domstr. (Potsdam): asphaltiert, aber mit Schlaglˆchern	Q1- -9438,-1260 -9278,-1293 -9228,-1296 -9090,-1293  -9035,-1291 -8667,-1287
 Am Klubhaus: Kopfsteinpflaster	Q2 -8429,-1805 -8788,-1852
 Sacrower Allee (Groﬂ Glienicke): Asphalt	Q0 -10090,6868 -10059,6832 -10055,6715 -10053,6676 -10052,6640 -10052,6563 -10040,6021 -10036,5795
-Richard-Wagner-Str. (Groﬂ Glienicke): Asphalt	Q0 -9730,5802 -9847,5798 -9945,5797 -10036,5795
+#: by: osm (surface=cobblestone)
+Sacrower Allee (Groﬂ Glienicke): Kopfsteinpflaster	Q2 -10036,5795 -10046,5464
+#: by: osm (surface=paved)
+Sacrower Allee (Groﬂ Glienicke): Asphalt	Q2 -10046,5464 -10036,5310 -9986,5176 -9935,5070
+#: note: ˆstlich der Sacrower Allee by osm
+Richard-Wagner-Str. (Groﬂ Glienicke): Asphalt	Q0 -9730,5802 -9847,5798 -9945,5797 -10036,5795 -10140,5794 -10195,5794 -10234,5804 -10347,5874 -10467,5948
 Dorfstr. (Groﬂ Glienicke): Asphalt	Q0 -9476,7033 -9547,6865 -9557,6773 -9582,6643 -9642,6538
 M¸ndeseerundweg: schottriger/sandiger Weg	Q2+ 50403,70708 50497,70796 50594,70755 50678,70738 50758,70752 50871,70761
 Pinnow - Frauenhagen: Asphalt	Q0 55703,74309 55612,74354 55164,74111 54952,74078
@@ -2285,7 +2290,7 @@ Meistersingerstr.: schlechtes Kopfsteinpflaster	Q3 -14475,-1529 -14378,-1512 -14
 Feuerbachstr.: geteert, aber mit Straﬂensch‰den	Q1 -14362,-1323 -14243,-1371 -14140,-1390 -13879,-1445
 #: by: ^^^
 #: by: Arne Grein:
-Damaschkeweg: guter Asphalt	Q0 -11021,-3642 -11181,-3800 -11393,-3868
+Damaschkeweg: guter Asphalt	Q0 -11021,-3642 -11166,-3744 -11173,-3758 -11305,-3793 -11382,-3814
 #: by: Tom Melchior (gefakte E-Mail-Adresse?):
 Grenzstr. (Eichwalde): holprige Straﬂe	Q2 26337,-3101 26186,-2832 25958,-2455
 #: by: Norman Kraehe:

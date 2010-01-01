@@ -670,7 +670,7 @@ Sleipnerstr.: Qualität (vermutlich Asphalt wie zw. Heimdall- u. Romain-Rolland-S
 Heinrich-von-Kleist-Str. (Potsdam): Qualität (vermutlich Kopfsteinpflaster)?	? -10078,-2339 -10109,-2437 -10142,-2540
 Havellandkanal Richtung Norden: Qualität (wahrscheinlich Asphalt), wohin führt die Strecke?	? -8730,22254 -8734,22586
 (Falkenberger Chaussee - Rüdickenstr.): Qualität? beleuchtet? Fußgänger?	? 16947,17506 16964,17482 16992,17472 17012,17471 17185,17386 17384,17307 17397,17310
-Brauhausberg/B2: wie weit Richtung Süden reichen die Radspuren? Werden die Radspuren dann zu einem gewöhnlichen Radweg?	? -12465,-2601 -12812,-2793 -12925,-2956 -13051,-3101
+Brauhausberg/B2: wie weit Richtung Süden reichen die Radspuren? Werden die Radspuren dann zu einem gewöhnlichen Radweg?	? -12476,-2605 -12643,-2673 -12840,-2799 -12913,-2937 -13051,-3101
 Dahme: Qualität?	? 13750,-59911 13663,-59806 13598,-59801
 Dahme: Qualität?	? 13491,-59794 13153,-59795 13484,-59914 13618,-59923
 Dahme: Qualität?	? 13491,-59794 13484,-59914
@@ -2852,6 +2852,25 @@ Franz-Ehrlich-Str.: Qualität?	? 19732,3340 19767,3307 19890,3186
 Willi-Schwabe-Str.: Qualität?	? 19778,3064 19713,3124
 Moriz-Seeler-Str.: Qualität?	? 19767,3307 19669,3200
 Lotte-Loebinger-Str.: Qualität?	? 20116,2639 20218,2730
+An der Vorderkappe (Potsdam): Qualität? Gilt die Einbahnstraßenregelung auch für Radfahrer?	? -13021,-2784 -13123,-2797 -13135,-2783 -13304,-2779 -13329,-2800 -13209,-2829 -13123,-2797
+Uferweg auf Hermannswerder: Qualität?	? -13003,-2754 -13266,-2716 -13431,-2777 -13681,-2824 -13767,-2718 -13762,-2691 -13865,-2565 -13921,-2516 -14045,-2521 -14081,-2516 -14177,-2514 -14247,-2568 -14234,-2587
+An der Vorderkappe - Uferweg: Qualität?	? -13329,-2800 -13431,-2777
+Leiterstr. (Potsdam): Qualität?	? -13381,-2943 -13359,-3096
+Leiterstr. (Potsdam): Qualität?	? -13495,-3094 -13456,-3099 -13359,-3096 -13316,-3091
+Ulrich-von-Hutten-Str.: Qualität? Gilt die Einbahnstraßenregelung auch für Radfahrer?	? -13481,-2956 -13456,-3099
+Paetowstr. (Potsdam): Qualität?	? -13155,-2913 -13137,-3022 -13191,-3080 -13209,-3082 -13270,-3092 -13282,-3001 -13227,-2994 -13209,-3082
+Max-Planck-Str. (Potsdam): Qualität?	? -12355,-2263 -12595,-2220
+Am Havelblick (Potsdam): Qualität?	? -12335,-2571 -12462,-2568 -12492,-2555 -12442,-2389 -12623,-2367
+Finkenweg (Potsdam): Qualität?	? -12840,-2799 -12877,-2734 -12867,-2680 -12797,-2632 -12756,-2577 -12688,-2595 -12643,-2673
+Zur Königlichen Hofbrauerei/Friedrich-Wilhelm-Boelcke-Straße: wo befinden sich diese Straßen? Qualität?	? -12702,-2167 -12775,-2281
+Friedhofsgasse (Potsdam): Qualität?	? -11781,-2235 -11799,-2283 -11995,-2500
+Drevesstr. (Potsdam): Qualität?	? -11656,-2944 -11685,-2971 -11676,-3137 -11423,-3431 -11278,-3596
+Kunersdorfer Str. (Potsdam): Qualität? Kann die Heinrich-Mann-Allee in Höhe Kunersdorfer Str. überquert werden?	? -11676,-3137 -11739,-3141 -11789,-3212 -11819,-3302 -11792,-3372 -11722,-3458 -11547,-3502 -11504,-3502 -11423,-3431 -11311,-3322
+Am Brunnen (Potsdam): Qualität?	? -11547,-3502 -11543,-3461 -11672,-3345 -11789,-3212
+Waldstr. (Potsdam): Qualität?	? -11152,-3498 -11278,-3596 -11414,-3703
+Kottmeierstr. (Potsdam): Qualität?	? -11504,-3502 -11423,-3638
+Heidereiterweg (Potsdam): Qualität?	? -11278,-3596 -11166,-3744
+Nuthestr.: existieren durchgängig Radwege zwischen Berliner Str. und Alt Nowawes?	? -11142,-1675 -11226,-1445 -11356,-1317 -11463,-1232 -11549,-1169
 # added from ampeln-orig
 #: add_fragezeichen: Existiert die Ampel Nordufer/Torfstr. noch?
 geschlossen bei Bedarf (?) (Zbr)	? 27657,-11741
@@ -2880,6 +2899,7 @@ Stadtheidestr. (Ist die Stadtheidestr. eine Einbahnstraße? Wenn ja, in welche Ri
 Ferdinand-Buisson-Str. (Qualität der Straße?)	? 12331,20963 12459,21010 12570,21058 12762,21140 12837,21229 12885,21282 12939,21345 12948,21421 12953,21502 12994,21719 13008,21783 13050,21994
 Roßlauer Str. (das letzte Stück zum Blumberger Damm nicht passierbar?)	? 20656,12415 20853,12388 20943,12376 21031,12364 21123,12352 21163,12347
 Ahornstr. (Hessenwinkel) (Qualität der Straße?)	? 32998,2827 32952,2786 32952,2743 32888,2717 32801,2710 32643,2695
+Straße 106 (Heißt die Straße noch immer so (Straße 106)?)	? 14574,14646 14592,14682 14678,14853 14828,15050
 Möwenweg (Biesdorf) (Wie ist die Fahrbahnbeschaffenheit: asphaltiert oder betoniert?)	? 22219,11136 22060,11084
 Waldowplatz (Einbahnstraßenregelung im Waldowplatz?)	? 19283,6123 19290,6114 19325,6105 19344,6119 19345,6150 19333,6165 19303,6170 19282,6152 19283,6123
 Brennerstr. (Qualität der Brennerstr. zwischen Trienter Str. und Andreas-Hofer-Platz?)	? 10228,17025 10495,17022
@@ -2899,6 +2919,7 @@ Birkenhain (Borkheide) (Fahrradstraße?)	? -25293,-19426 -26249,-20121
 Borkheide - Neuendorf (ungenaue Koordinaten!)	? -26270,-20176 -26560,-20828 -27908,-22935 -28547,-22981 -29244,-23127
 Grieben - Glambeck (Qualität? (möglicherweise asphaltiert?) )	? -14640,54609 -14619,54872 -14667,54977 -14759,55179 -14847,55938 -14966,56468 -14783,56907 -14320,57151 -13528,57848 -13065,58263
 Beiersdorf - Beerbaum (Qualität? (laut osm ein "track"))	? 35644,32421 35537,32519 35552,32680 35441,32759 35824,33690 35989,34206 35989,34582 36085,34994 36096,35327 36200,35854 36214,36208 36215,36497
+(Am Lustgarten) (Heißt diese Straße "Am Lustgartenwall"?)	? -12920,-1663 -12931,-1761 -12948,-1863 -12953,-1889 -12708,-1928
 (Am Neuen Palais, direkter Weg) (unbefestigter Weg oder Asphalt??)	? -15810,-1274 -15820,-1146 -15854,-656
 Alter Tornow (Qualität?)	? -13718,-2991 -13793,-2880 -13890,-2838 -13981,-2723
 (Alter Tornow - Fähre) (Qualität?)	? -13981,-2723 -14045,-2595 -14045,-2521 -14081,-2516
