@@ -47,12 +47,7 @@ sub find_all_plugins {
 
     my @p;
     eval {
-	if (1) {
-	    @p = _find_all_plugins_perl($topdir);
-	} else {
-	    # XXX may be removed some day
-	    @p = _find_all_plugins_unix($topdir);
-	}
+	@p = _find_all_plugins_perl($topdir);
     };
 
     my $err = $@;
@@ -96,12 +91,15 @@ sub _find_all_plugins_perl {
     require File::Find;
     my @p;
     my $wanted = sub {
+	if (   $File::Find::name =~ m{^\Q$topdir\E/projects/} # the www.radzeit.de directories
+	    || $File::Find::name =~ m{^\Q$topdir\E/BBBike-\d+\.\d+(-DEVEL)?/} # distdir
+	    || $File::Find::name =~ m{/(CVS|RCS|\.svn|\.git)/}) {
+	    $File::Find::prune = 1;
+	    return;
+	}
 	if (/^.*\.pm$/
 	    && $_ ne "BBBikePlugin.pm" # meta modules
 	    && $_ ne "BBBikePluginLister.pm"
-	    && $File::Find::name !~ m{/bbbike/projects/} # the www.radzeit.de directories
-	    && $File::Find::name !~ m{/bbbike/BBBike-\d+\.\d+(-DEVEL)?/} # distdir
-	    && $File::Find::name !~ m{/(CVS|RCS|\.svn)/}
 	    && open(PM, $_)) {
 	    my $curr_file = $_;
 	    my $descr_lang;
@@ -137,31 +135,6 @@ sub _find_all_plugins_perl {
     };
 
     File::Find::find($wanted, $topdir);
-
-    _plugin_active_check(\@p);
-
-    @p;
-}
-
-# only for Unix with modern grep
-# XXX This may be removed, as it lacks some feature like description parsing
-sub _find_all_plugins_unix {
-    my $topdir = shift;
-
-    require File::Basename;
-
-    my @p;
-    open(F, 'find '.$topdir.' -name "*.pm" -exec grep -l BBBikePlugin {} \; |');
-    while(<F>) {
-	chomp;
-	next if /BBBikePlugin\.pm$/;
-	my $p = BBBikePlugin::Plugin->new;
-	$p->Name((File::Basename::fileparse($_, '\..*'))[0]);
-	$p->File($_);
-	$p->Description($_);
-	push @p, $p;
-    }
-    close F;
 
     _plugin_active_check(\@p);
 
