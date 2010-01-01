@@ -6150,6 +6150,18 @@ sub header {
     push @$head, $q->meta({-name => 'DC.title',
 			   -content => "BBBike - Routenplaner für Radfahrer in Berlin und Brandenburg"});
     # ^^^
+    # Hint for search engines, to canonify the start URL
+    # This handles the ?begin=1 case and bbbike.de vs. www.bbbike.de
+    if (defined $from && $from eq 'chooseform-start' &&
+	BBBikeCGIUtil::my_server_name($q) =~ m{^(
+						   \Qwww.bbbike.de\E
+					       |
+						   \Qbbbike.de\E
+					       )$}x) {
+	push @$head, cgilink({-rel => 'canonical',
+			      -href => 'http://www.bbbike.de',
+			     });
+    }
     push @$head, "<base target='_top'>"; # Can't use -target option here
     push @$head, cgilink({-rel  => "shortcut icon",
   			  -href => "$bbbike_images/srtbike.ico",
