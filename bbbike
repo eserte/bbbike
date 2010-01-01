@@ -1909,6 +1909,7 @@ my $handicap_check_index;
 my $sperre_check_index;
 my $ampeln_check_index;
 my $fragezeichen_check_index;
+my $gruene_wege_check_index;
 unless($skip_features{"strassen"}) {
     $strasse_photo = load_photo($misc_frame, 'strasse');
     $strasse_check = $misc_frame->$Checkbutton
@@ -2113,7 +2114,9 @@ unless($skip_features{"strassen"}) {
 	$strcm->checkbutton(-label => M"Grüne Wege",
 			    -variable => \$str_draw{'gr'},
 			    -command => sub { plot('str','gr') },
+			    -accelerator => 'Shift-G',
 			   );
+	$gruene_wege_check_index = $strcm->index('last');
     }
     unless ($skip_features{"vorfahrt"}) {
 	$strcm->checkbutton(-label => M"Vorfahrt",
@@ -4222,6 +4225,8 @@ if (!$MM_DRAG_IS_OBSOLETE) {
 		       $strcm->invoke($handicap_check_index) if $strcm && defined $handicap_check_index;
 		   }
 	       });
+    bind_nomod($top, '<G>' => sub { $strcm->invoke($gruene_wege_check_index) })
+	if defined $gruene_wege_check_index;
     bind_nomod($top, "<question>" => sub {
 	$strcm->invoke($fragezeichen_check_index)
     })
