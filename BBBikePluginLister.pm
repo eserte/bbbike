@@ -48,11 +48,7 @@ sub plugin_lister {
     my @p;
     eval {
 	local $SIG{__DIE__};
-	if (1||$^O eq 'MSWin32') {
-	    @p = BBBikePlugin::_find_all_plugins_perl($topdir);
-	} else {
-	    @p = BBBikePlugin::_find_all_plugins_unix($topdir);
-	}
+	@p = BBBikePlugin::_find_all_plugins_perl($topdir);
     };
     my $err = $@;
     if (defined &main::IncBusy && defined $top) {
@@ -146,24 +142,42 @@ sub plugin_lister {
     @p = sort { $a->Name cmp $b->Name } @p;
 
     require Tk::ItemStyle;
-    my $sel_is = $hl->ItemStyle("text",
-				-selectforeground => 'white',
-			      );
+    my(%is, %sel_is, %sel_descr_is, %bg_color);
+    for my $key (qw(odd even)) {
+	$bg_color{$key} = $key eq 'even' ? $hl->cget('-background') : '#dddddd';
+	$is{$key}           = $hl->ItemStyle("window",
+					     -pady => 0, -padx => 0,
+					     -anchor => 'nw',
+					     # no -background available here
+					    );
+	$sel_is{$key}       = $hl->ItemStyle("text",
+					     -selectforeground => 'white',
+					     -anchor => 'nw',
+					     -background => $bg_color{$key},
+					    );
+	$sel_descr_is{$key} = $hl->ItemStyle('text',
+					     -selectforeground => 'white',
+					     -wraplength => 400,
+					     -anchor => 'nw',
+					     -background => $bg_color{$key},
+					    );
+    }
+
     my $path_i = 0;
     for my $plugin_def (@p) {
-	my $is = $hl->ItemStyle("window", -pady => 0, -padx => 0);
-	$hl->add($path_i, -itemtype => "window", -style => $is,
+	my $key = $path_i % 2 == 0 ? 'even' : 'odd';
+	$hl->add($path_i, -itemtype => "window", -style => $is{$key},
 		 -widget => $hl->Checkbutton(-variable => \$plugin_def->[3], # XXX HACK! how to access member directly???
 					     -onvalue => 1,
 					     -offvalue => 0,
 					     -command => sub { toggle_plugin($tl, $plugin_def, $plugin_def->[3]) },
-					     -background => $hl->cget('-background'),
+					     -background => $bg_color{$key},
 					     -highlightthickness => 0,
 					    ),
 		);
-	$hl->itemCreate($path_i, 1, -text => $plugin_def->Name, -style => $sel_is);
-	$hl->itemCreate($path_i, 2, -text => $plugin_def->Description, -style => $sel_is);
-	$hl->itemCreate($path_i, 3, -text => $plugin_def->File, -style => $sel_is);
+	$hl->itemCreate($path_i, 1, -text => $plugin_def->Name, -style => $sel_is{$key});
+	$hl->itemCreate($path_i, 2, -text => $plugin_def->Description, -style => $sel_descr_is{$key});
+	$hl->itemCreate($path_i, 3, -text => $plugin_def->File, -style => $sel_is{$key});
 	$path_i++;
     }
 
