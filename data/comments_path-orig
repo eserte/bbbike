@@ -131,7 +131,7 @@ hinter dem "Alten Zollhaus" halbrechts abbiegen	CP; 10313,10084 10168,10085 1015
 Frankfurter Allee - Kreutzigerstr.: Einfahrt in Hausdurchgang	CP2; 14291,12220 14285,12190
 #: XXX_prog: RL:ja, GPS:nein
 #: XXX_prog: eigentlich nicht notwendig, da als RW8/RW9 bereits gekennzeichnet. Allerdings wird das im CGI noch gar nicht visualisiert. Vielleicht in der der stilisierten Straßenführung auf der *rechten* (falschen) Seite unterbringen?
-Lennéstr: Radweg Richtung Ebertstr. auf der linken Seite im Tiergarten	CS; 8172,11679 8202,11691 8223,11700 8326,11732 8436,11766 8489,11782 8571,11846
+Lennéstr: Radweg Richtung Ebertstr. auf der linken Seite im Tiergarten	CS; 8172,11679 8203,11686 8225,11692 8335,11718 8438,11753 8489,11782 8571,11846
 #: XXX_indoor: hmm, folgende zwei Datensätze sind mit keinen Konsequenzen verbunden. nach permanent temp_blockings verschieben? oder Penalty einplanen? Auf jeden Fall nicht bei GPS-Tracks gesondert ausgeben.
 Jüdenstr.: unbequemes Passieren der Grunerstr.	CP; 10778,12493 10800,12461 10831,12371
 Jüdenstr.: unbequemes Passieren der Grunerstr.	CP; 10831,12371 10800,12461 10778,12493

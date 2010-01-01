@@ -827,13 +827,13 @@ Stubenrauchstr. -> Fuchsienweg: Bahntrasse	3::igndisp 16475,2586 16573,2715 1637
 Fuchsienweg -> Stubenrauchstr.: Bahntrasse	3::igndisp 16376,2862 16573,2715 16635,2796
 Mittelstreifen	3nocross::ignrte 16135,2135 16028,2261 15957,2330
 Rudower Chaussee: Mittelstreifen	3 19498,3054 19475,3074 19426,3024
-Straßenbahntrasse	3nocross::ignrte 17601,5090 17542,4772 17518,4644
+Straßenbahntrasse	3nocross::ignrte 17601,5090 17542,4772 17520,4649
 Ellernweg -> Waldstr.: Straßenbahntrasse	3::igndisp 17428,4792 17542,4772 17580,4761
 Ellernweg -> Sterndamm: Straßenbahntrasse	3::igndisp 17428,4792 17542,4772 17601,5090
 Waldstr. -> Ellernweg: Straßenbahntrasse	3::igndisp 17580,4761 17542,4772 17428,4792
-Waldstr. -> Sterndamm: Straßenbahntrasse	3::igndisp 17580,4761 17542,4772 17518,4644
-Sterndamm -> Ellernweg: Straßenbahntrasse	3::igndisp 17518,4644 17542,4772 17428,4792
+Waldstr. -> Sterndamm: Straßenbahntrasse	3::igndisp 17580,4761 17542,4772 17520,4649
 Sterndamm -> Waldstr.: Straßenbahntrasse	3::igndisp 17601,5090 17542,4772 17580,4761
+Sterndamm -> Ellernweg: Straßenbahntrasse	3::igndisp 17520,4649 17542,4772 17428,4792
 unbequemes Passieren des Mittelstreifens	3nocross::ignrte 21960,11269 22242,11269 22326,11266
 Möwenweg -> Alt-Biesdorf: unbequemes Passieren des Mittelstreifens	3::igndisp 22237,11215 22242,11269 21960,11269
 Möwenweg -> Wuhlewanderweg: unbequemes Passieren des Mittelstreifens	3::igndisp 22237,11215 22242,11269 22244,11311

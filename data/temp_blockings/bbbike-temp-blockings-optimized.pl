@@ -426,17 +426,6 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1262300399,
-         'text' => 'Unterführung unter Adlergestell und Bahn wegen Brückenerneuerung gesperrt',
-         'from' => undef,
-         'id' => 1495,
-         'data' => '#: by: tobias wirnsberger
-#: last_checked: 2009-05-31 (http://www.baustellen-doku.info/projekte/goerlitzer-bahn_berlin_baumschulenweg_schoeneweide_adlershof_s-bahn/20090531/baustellen-bild-44.html)
-userdel	2::inwork 20810,2398 20939,2413
-',
-         'type' => 'gesperrt'
-       },
        undef,
        undef,
        undef,
@@ -498,17 +487,6 @@ userdel	2::inwork 20810,2398 20939,2413
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_011081',
-         'until' => 1262300400,
-         'text' => 'Blankenburger Str. (Pankow) Richtung Dietzgenstr. zwischen Siegfriedstr. und Dietzgenstr. Baustelle, Fahrtrichtung gesperrt; ebenso ist die Siegfriedstr. als Einbahnstraße von Blankenburger Str. in Richtung Herthaplatz ausgewiesen (bis Anfang 2010)',
-         'from' => 1231707292,
-         'id' => 1557,
-         'data' => 'userdel	1::inwork 10742,19632 10377,19565 10249,19541
-userdel	1::inwork 10614,19907 10742,19632
-',
-         'type' => 'gesperrt'
-       },
        undef,
        undef,
        undef,
@@ -522,16 +500,6 @@ userdel	1::inwork 10614,19907 10742,19632
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_011637',
-         'until' => 1262300400,
-         'text' => 'Köthener Str. (Kreuzberg) zwischen Bernburger Str. und Hallesches Ufer Baustelle, Einbahnstraße Richtung Norden (bis Anfang 2010)',
-         'from' => 1238347506,
-         'id' => 1571,
-         'data' => 'userdel	q4::inwork; 8536,11063 8483,10900 8443,10777
-',
-         'type' => 'handicap'
-       },
        undef,
        undef,
        undef,
@@ -575,15 +543,10 @@ userdel	1::inwork 10614,19907 10742,19632
        undef,
        undef,
        undef,
-       {
-         'until' => 1262300400,
-         'text' => 'L 033 Gielsdorfer Str. / Prötzeler Chaussee OL Strausberg, Kreisverk. Abzw. Wriezener Str. Straßenausbau Wriezener Str. gesperrt 20.04.2009-31.12.2009 ',
-         'from' => 1240092000,
-         'id' => 1615,
-         'data' => 'userdel	q4::inwork 43584,20871 43209,20665
-',
-         'type' => 'handicap'
-       },
+       undef,
+       undef,
+       undef,
+       undef,
        undef,
        undef,
        undef,
@@ -673,16 +636,7 @@ userdel	q4::inwork 10422,12395 10476,12432
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_012809',
-         'until' => 1262300399,
-         'text' => 'Blockdammweg (Lichtenberg) Richtung Karlshorst zwischen Hönower Wiesenweg und Ehrlichstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 12/2009)',
-         'from' => 1243370925,
-         'id' => 1677,
-         'data' => 'userdel	q4::inwork; 17375,8847 17729,8850
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -713,15 +667,7 @@ userdel	q4::inwork 10422,12395 10476,12432
        undef,
        undef,
        undef,
-       {
-         'until' => 1262300400,
-         'text' => 'K 6828 Altfriesack - Wuthenow OD Karwe, Lange Straße Kanal- u. Straßenbau Vollsperrung 08.06.2009-31.12.2009 ',
-         'from' => 1244325600,
-         'id' => 1699,
-         'data' => 'userdel	q4::inwork -28001,50966 -27421,50349 -27196,50015
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -852,15 +798,7 @@ userdel	q4::inwork 10422,12395 10476,12432
        undef,
        undef,
        undef,
-       {
-         'until' => 1262214000,
-         'text' => 'Aufgrund der Arbeiten zum Straßenneubau und der Verlegung von Schmutz- und Regenwasserleitungen kommt es ab dem 29.06.2009 zu Vollsperrungen der Otto-Nagel-Straße. Begonnen wird an der Kreuzung Berliner Straße. Die gesamte Maßnahme wir voraussichtlich zum Ende des 4. Quartals abgeschlossen werden. ',
-         'from' => 1246140000,
-         'id' => 1795,
-         'data' => 'userdel	q4::inwork -12064,-284 -11978,-348 -11877,-478
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1185,26 +1123,8 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'http://www.berlin.de/ba-lichtenberg/presse/archiv/20090813.1105.134956.html',
-         'until' => 1262300399,
-         'text' => 'Aufgrund von Baumaßnahmen der Berliner Wasserbetriebe wird es vom 24. August bis zum 31. Dezember in der Rathausstraße und den angrenzenden Kreuzungsbereichen Rathausstraße/Frankfurter Allee und Rathaus-/Möllendorffstraße zu Verkehrseinschränkungen kommen.',
-         'from' => 1250978400,
-         'id' => 1858,
-         'data' => 'userdel	q4::inwork 15537,12367 15576,12315 15628,12246 15651,12214 15685,12154 15670,12022
-',
-         'type' => 'handicap'
-       },
-       {
-         'source_id' => 'http://www.berlin.de/ba-lichtenberg/presse/archiv/20090813.1105.134956.html',
-         'until' => 1262300399,
-         'text' => 'Vom 24. August bis zum 31. Dezember wird es in der Robert-Uhrig-Straße und den angrenzenden Kreuzungsbereichen Robert-Uhrig-Straße/Alt-Friedrichsfelde und Robert-Uhrig-/Paul-Gesche-Straße zu Verkehrseinschränkungen aufgrund von Baumaßnahmen der Berliner Wasserbetriebe kommen.',
-         'from' => 1250978400,
-         'id' => 1859,
-         'data' => 'userdel	q4::inwork 17746,11748 17744,11703 17741,11607
-',
-         'type' => 'handicap'
-       },
+       undef,
+       undef,
        {
          'source_id' => 'IM_014098',
          'until' => 1272751199,
@@ -1486,18 +1406,6 @@ userdel	2::inwork 14835,10272 14888,10385
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_014608',
-         'until' => 1262214000,
-         'text' => 'Aufgrund einer Veranstaltung sind in der Zeit von 10.11.2009 bis 30.12.2009, 24:00 Uhr folgende Straßenzüge gesperrt: Niederlagstr. zwischen Am Schinkelplatz und Französische Str. Oberwallstr. zwischen Unter den Linden und Französische Str. Bebelplatz zwischen Unter den Linden und Behrenstr.',
-         'from' => 1257721200,
-         'id' => 1979,
-         'data' => 'userdel	2::temp 9943,12364 9951,12318 9939,12296 9972,12184
-userdel	2::temp 9780,12401 9795,12293 9801,12245 9812,12145
-userdel	2::temp 9852,12409 9869,12297 9890,12161
-',
-         'type' => 'gesperrt'
-       },
        undef,
        undef,
        undef,
@@ -1506,25 +1414,9 @@ userdel	2::temp 9852,12409 9869,12297 9890,12161
        undef,
        undef,
        undef,
-       {
-         'until' => 1262300399,
-         'text' => 'Voltairestr.: Durchfahrt wegen des Weihnachtsmarkts am Alexanderplatz nicht oder nur schwer möglich',
-         'from' => 1258045387,
-         'id' => 1988,
-         'data' => 'userdel	2::temp 11209,12430 11323,12484
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'until' => 1262300399,
-         'text' => 'Gendarmenmarkt: Weihnachtsmarkt, Durchfahrt nicht oder nur schwer möglich',
-         'from' => 1258207217,
-         'id' => 1989,
-         'data' => 'userdel	2::temp 9526,11911 9668,11928
-userdel	2::temp 9516,12010 9656,12021
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
+       undef,
        {
          'until' => undef,
          'text' => 'Asphaltierung der Belziger Str., Einbahnstraße Richtung Westen',
@@ -1540,15 +1432,7 @@ userdel	2::temp 9516,12010 9656,12021
        undef,
        undef,
        undef,
-       {
-         'until' => 1262300399,
-         'text' => 'Weihnachtsmarkt am Potsdamer Platz',
-         'from' => undef,
-         'id' => 1997,
-         'data' => 'userdel	2::temp 8479,11493 8481,11447 8389,11378
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'until' => 1264978800,

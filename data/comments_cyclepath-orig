@@ -65,7 +65,7 @@ Gramzow: Radweg	RW 49779,90206 49640,90243 48924,90469
 Eiche: Zweirichtungsradweg (westliche Seite)	RW 22771,16194 22828,16257 22889,16350
 Landsberger Chaussee: Radwege (Betonplatten)	RW 22771,16194 22974,16139 23159,16086 23561,15975 23893,15893
 B1: Zweirichtungsradweg auf der nördlichen Seite	RW 25659,11125 26449,10953 26596,10921
-Zweirichtungsradweg auf der östlichen Seite	RW 31456,17231 31212,16278 31053,15975 31027,15926 30768,15431
+Zweirichtungsradweg auf der östlichen Seite	RW 31456,17231 31457,17129 31212,16278 31053,15975 31027,15926 30768,15431
 Altlandsberg: Radweg	RW 30118,16565 30335,16649 30837,16843 31456,17231
 Asphaltierter Zweirichtungsradweg auf der SE-Seite	RW -926,27132 -1941,26218 -2118,26060 -2446,25386
 Asphaltierter Radweg	RW -4642,25672 -4929,25719 -5890,25875 -6593,25703 -6943,25831
@@ -73,8 +73,9 @@ Fahrradstraße	RW -6943,25831 -7187,25859 -7225,25509 -7260,25515
 #: add_fragezeichen: Position ist vielleicht nicht ganz genau
 Zweirichtungsradweg auf der östl. Seite, Qualität unbekannt	RW -7533,24138 -7734,23796 -8777,22961 -8988,22668 -9046,22376
 Zweirichtungsradweg auf der östl. Seite, asphaltiert	RW -10377,20973 -10581,19871 -10000,18629
-Suggestivstreifen	RW4?;RW4? -11114,-2104 -10995,-2108 -10772,-2153 -10673,-2128
-Radweg auf Gehweg	RW;RW -12098,-2173 -11681,-2256 -11601,-2197 -11507,-2130 -11114,-2104
+Suggestivstreifen	RW4?;RW4? -11114,-2104 -10983,-2088 -10772,-2153 -10673,-2128
+Radweg auf Gehweg	RW2;RW -12213,-2131 -12098,-2173 -11681,-2256
+Radweg auf Gehweg	RW;RW -11681,-2256 -11601,-2197 -11507,-2130 -11114,-2104
 #: add_fragezeichen: Gibt es in der Großbeerenstr. einen Radweg oder Radstreifen?
 Radstreifen	RW4?;RW4? -10673,-2128 -10634,-2159 -10528,-2196 -10426,-2231 -10327,-2262
 #: add_fragezeichen: genauer spezifizieren:

@@ -1156,8 +1156,8 @@ EOF
        text  => 'Lennéstr. zwischen Bellvuestr. und Eberstr. Baustelle, Straße gesperrt Richtung Ebertstr. (bis 15.11.2004) ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 8489,11782 8436,11766 8326,11732
-userdel	2 8326,11732 8223,11700
+userdel	2 8489,11782 8438,11753 8335,11718
+userdel	2 8335,11718 8225,11692
 EOF
      },
      { from  => 1092520800, # 2004-08-15 00:00
@@ -1559,7 +1559,7 @@ EOF
        text  => 'Sterndamm (Treptow) in Richtung Rudow zwischen Königsheideweg und Winckelmannstr. Baustelle, Fahrtrichtung gesperrt, eine Umleitung ist eingerichtet (bis 24.03.2005)',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1 17518,4644 17471,4570 17428,4503
+userdel	1 17520,4649 17471,4570 17428,4503
 EOF
      },
      { from  => 1110235074, # 2005-03-07 23:37
@@ -3530,7 +3530,7 @@ EOF
        text  => 'Bellevuestraße, Presseball, Straße in beide Richtungen gesperrt, Dauer: 13.01.2006 19:00 Uhr bis 15.01.2006 06:00 Uhr ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 8462,11538 8209,11671 8202,11691
+userdel	q4 8462,11538 8209,11671 8203,11686
 EOF
      },
      { from  => 1137548634, # 2006-01-18 02:43
@@ -4698,7 +4698,7 @@ userdel	2::temp 7073,11798 6778,11742
 userdel	2::temp 8374,12416 8546,12279
 userdel	2::temp 7382,11588 7356,11517
 userdel	2::temp 6809,11979 7073,11798
-userdel	2::temp 8223,11700 8223,11796 8222,11881 8215,12156 8214,12205
+userdel	2::temp 8225,11692 8223,11796 8222,11881 8215,12156 8214,12205
 userdel	2::temp 8119,12414 8055,12186
 userdel	2::temp 8055,12186 8048,12135 8034,12093 8006,12074 7999,12049 8022,12016 8048,12033 8057,12059 8034,12093
 userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
@@ -8517,7 +8517,7 @@ EOF
        text  => 'Holteistraße: Bauarbeiten, Fahrbahn ist nicht benutzbar',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 14535,11327 14495,11261 14465,11195
+userdel	q4::inwork 14535,11327 14499,11259 14465,11195
 EOF
      },
      { from  => 1181768521, # 
@@ -9002,7 +9002,7 @@ EOF
        text  => 'L 033 zw. Kreuz. Hönow und Krz. Landsberger Ch./ Stendaler Str. Deckeninstandsetzung Vollsperrung 06.08.2007-17.08.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 25506,15585 25955,15531 26117,15452
+userdel	2::inwork 25506,15585 25955,15531 26071,15470
 EOF
      },
      { from  => 1184709600, # 2007-07-18 00:00
@@ -9118,7 +9118,7 @@ EOF
        text  => 'L 033 zw. Kreuz. Hönow und Krz. Landsberger Ch./ Stendaler Str. Deckeninstandsetzung Vollsperrung 06.08.2007-17.08.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 26328,15462 26232,15444 26117,15452 25955,15531 25506,15585 25342,15609 25007,15650 23893,15893
+userdel	2::inwork 26333,15481 26175,15461 26071,15470 25955,15531 25506,15585 25342,15609 25007,15650 23893,15893
 EOF
      },
      { from  => 1186092000, # 2007-08-03 00:00
@@ -11405,7 +11405,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_008688',
        data  => <<EOF,
-userdel	q4; 17115,4757 17266,4720 17518,4644
+userdel	q4; 17115,4757 17266,4720 17520,4649
 EOF
      },
      { from  => 1211580000, # 2008-05-24 00:00
@@ -11779,7 +11779,7 @@ userdel auto	3 7073,11798 6778,11742 6540,11754
 userdel auto	3 7539,9970 7579,10183 7698,10147
 userdel auto	3 6745,10619 6753,10446 6719,10347
 userdel auto	3 9373,12197 9164,12172 9183,12076
-userdel auto	3 6494,10542 6532,10529 6494,10440
+userdel auto	3 6468,10550 6532,10529 6494,10440
 userdel auto	3 7747,11075 7980,11070 8104,11037 8205,10979
 userdel auto	3 6918,10854 6824,10904 6681,10959
 userdel auto	3 9462,12481 9475,12365 9487,12263
@@ -11792,7 +11792,7 @@ userdel auto	3 8232,11414 8226,11458 8172,11679
 userdel auto	3 9369,12253 9358,12351 9343,12464
 userdel auto	3 9842,12506 9852,12409 9869,12297
 userdel auto	3 8205,10979 8104,11037 7980,11070 7747,11075
-userdel auto	3 6494,10440 6532,10529 6494,10542
+userdel auto	3 6494,10440 6532,10529 6468,10550
 userdel auto	3 9343,12464 9358,12351 9369,12253
 userdel auto	3 7002,11034 6873,11011 6732,11106
 userdel auto	3 9130,12433 9141,12320 9028,12307
@@ -11807,7 +11807,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_009262',
        data  => <<EOF,
-userdel	1::inwork 10294,13070 10336,13037 10371,13006 10418,12922 10398,12903 10309,12854
+userdel	1::inwork 10298,13076 10349,13043 10371,13006 10418,12922 10398,12903 10309,12854
 EOF
      },
      { from  => 1215112739, # 
@@ -12273,7 +12273,7 @@ EOF
        text  => 'L 033 Strausberg - Berlin zw. AS Berlin-Marzahn und Hönow, Mahlsdorfer Str. Deckenerneuerung Vollsperrung 18.08.2008-26.08.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 27328,15740 26908,15630 26538,15523 26328,15462
+userdel	2::inwork 27328,15740 26908,15630 26538,15523 26333,15481
 EOF
      },
      { from  => 1219183200, # 2008-08-20 00:00
@@ -15517,7 +15517,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_013892',
        data  => <<EOF,
-userdel	q4::inwork; 17364,3565 17053,3971 17108,4049
+userdel	q4::inwork; 17364,3565 17219,3795 17053,3971 17108,4049
 EOF
      },
      { from  => 1249768800, # 2009-08-09 00:00

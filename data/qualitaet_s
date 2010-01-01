@@ -367,26 +367,26 @@ Simplonstr.: Kopfsteinpflaster	Q2 13996,11631 13992,11605 14031,11569 14049,1155
 Simplonstr.: Kopfsteinpflaster	Q2; 14465,11195 14530,11137
 Simplonstr.: bis zur Fahrbahnmitte asphaltiert	Q1; 14530,11137 14465,11195
 Simplonstr.: Kopfsteinpflaster	Q2 14530,11137 14597,11069 14677,11027 14752,11041
-Helenenhof: kleinteiliges Pflaster	Q1 14495,11261 14395,11356
+Helenenhof: kleinteiliges Pflaster	Q1 14499,11259 14395,11356
 Matkowskystr.: Kopfsteinpflaster	Q2 14530,11137 14509,11060
 Neue Bahnhofstr.: Kopfsteinpflaster	Q2 14752,11041 14811,11067 14918,11249
 (Klein-Glienicke - Hahn-Meitner-Institut): Waldweg	Q2 -9313,54 -8629,175 -8387,190
-Schildhornweg: Waldweg, OK	Q1 676,9104 197,9069 30,9105 -97,9196 -346,9173 -851,9155 -1047,9123 -1188,9090 -1279,9093 -1415,9144 -1553,9161 -1638,9152 -1877,9092 -2090,9075 -2297,9103 -2672,9220 -2956,9307
+Schildhornweg: Waldweg, OK	Q1 676,9104 197,9069 30,9105 -122,9213 -360,9193 -850,9181 -1047,9123 -1188,9090 -1279,9093 -1415,9144 -1553,9161 -1638,9152 -1877,9092 -2090,9075 -2297,9103 -2672,9220 -2956,9307
 Schildhornweg: Waldweg	Q2 -2967,9320 -3304,9470
 Havelweg: Waldweg, OK	Q1 -2956,9307 -3140,9294 -3235,9267 -3250,9081 -3451,8840
 Havelweg: Waldweg, Schotter	Q2 -3451,8840 -3809,8847 -4001,8880
 Straße am Schildhorn: Kopfsteinpflaster	Q2 -3423,9642 -3456,9479 -3597,9446
 Straße am Schildhorn: Waldweg, OK	Q1 -3597,9446 -3796,9439
-Neuer Schildhornweg: Waldweg, OK	Q1 -404,9456 -743,9364 -942,9251
-Neuer Schildhornweg (durch Kolonie Grunewald): Verbundsteine, einige Bodenwellen	Q0 -404,9456 -252,9466
-Neuer Schildhornweg (durch Kolonie Grunewald): fester Sandweg	Q1 -252,9466 71,9429
-Neuer Schildhornweg: Waldweg, OK, 22 km/h möglich	Q1 71,9429 316,9338 383,9305 676,9104
-Verbindungschaussee: Waldweg, OK, 22 km/h möglich	Q1 -404,9456 -346,9173 -310,8989 -345,8899 -1112,7891
-Verbindungschaussee: asphaltiert	Q0 -404,9456 -471,9647
+Neuer Schildhornweg: Waldweg, OK	Q1 -426,9473 -756,9382 -942,9251
+Neuer Schildhornweg (durch Kolonie Grunewald): Verbundsteine, einige Bodenwellen	Q0 -426,9473 -249,9479
+Neuer Schildhornweg (durch Kolonie Grunewald): fester Sandweg	Q1 -249,9479 73,9438
+Neuer Schildhornweg: Waldweg, OK, 22 km/h möglich	Q1 73,9438 321,9346 383,9305 676,9104
+Verbindungschaussee: Waldweg, OK, 22 km/h möglich	Q1 -426,9473 -360,9193 -310,8989 -345,8899 -1112,7891
+Verbindungschaussee: asphaltiert	Q0 -426,9473 -471,9647
 Lenbachstr.: Kopfsteinpflaster	Q2 14799,11330 14669,11152 14597,11069
 Garnisonkirchplatz: Kopfsteinpflaster, OK	Q1 10309,12854 10255,12959
 Am Schwarzen Graben: Querrillen	Q1 4849,15875 4816,15954 5000,16826 5007,16861 4996,16990 4991,17037 4974,17036
-Holteistr.: Asphalt	Q0 14535,11327 14495,11261 14465,11195
+Holteistr.: Asphalt	Q0 14535,11327 14499,11259 14465,11195
 Holteistr.: Asphalt	Q0 14575,11407 14535,11327
 Brehmestr.: Kopfsteinpflaster	Q2 9904,17347 9966,17355 10085,17370 10215,17386
 Heynstr.: Kopfsteinpflaster	Q2 10215,17386 10211,17432 10205,17506
@@ -474,7 +474,7 @@ Tiergarten: wassergebundene Decke	Q1 8223,11796 8156,11863 8091,11992 8089,12041
 Tiergarten: Parkweg	Q1 8021,11636 8016,11770 8022,12016
 Tiergarten: Parkweg	Q1 8034,12093 8057,12059 8048,12033 8022,12016 7999,12049 8006,12074 8034,12093 8048,12135 8055,12186
 Tiergarten: Asphalt	Q0 8214,12205 8215,12156
-Tiergarten: Parkweg	Q1 8215,12156 8222,11881 8223,11796 8223,11700
+Tiergarten: Parkweg	Q1 8215,12156 8222,11881 8223,11796 8225,11692
 Tiergarten: Parkweg	Q1 7663,11946 7570,11855 7223,11897 7073,11798 6778,11742 6540,11754
 Parkweg: sehr gutes Kopfsteinpflaster	Q1 14310,9692 14351,9757 14448,9922
 Parkweg: Verbundsteinpflaster	Q1 14448,9922 14453,9929 14558,10082 14597,10129 14626,10162 14652,10201
@@ -755,7 +755,7 @@ Fehrbelliner Str.: Kopfsteinpflaster	Q2 10037,14379 10282,14212
 Borussenstr.: Kopfsteinpflaster	Q2 -4164,1993 -3965,2240 -3913,2327 -3907,2416
 Bäkestr.: mäßiger Asphalt	Q1 -7088,-1074 -7051,-1221
 Dircksenstr: Kopfsteinpflaster	Q2 10706,13043 10595,13100
-Dircksenstr: Asphalt	Q0 10595,13100 10445,13091 10336,13037
+Dircksenstr: Asphalt	Q0 10595,13100 10445,13091 10349,13043
 Hildegard-Jadamowitz-Str.: Kopfsteinpflaster	Q2 13206,12309 13520,12264
 Hildegard-Jadamowitz-Str.: Kopfsteinpflaster	Q2 13599,12253 13659,12193
 Am Karlsbad: gutes Kopfsteinpflaster	Q1 7968,11048 8011,11014 8027,11000
@@ -970,7 +970,7 @@ Weg am Riemeisterfenn: Waldweg, überwiegend OK	Q1 -604,5228 -118,5287 10,5343 79
 Umgehungschaussee: fester breiter Waldweg	Q1 1149,7205 1168,7047 1176,6938 1170,6654 1126,6548 1057,6461 917,6301 866,6328 533,6479 441,6435
 Friedrichsgracht: Parkweg	Q1 10207,12055 10109,12238
 Hüttenweg: relativer guter Waldweg	Q1 -927,6888 -1006,6911 -1241,7017 -1493,6984 -1851,6887
-Grunewald: teilweise sandig	Q2 -3475,6780 -3418,6747 -3306,6779 -3242,6884 -3128,6923 -2981,6941 -2805,6884 -2668,6862
+Grunewald: teilweise sandig	Q2 -3475,6780 -3418,6747 -3305,6797 -3242,6884 -3133,6948 -2981,6941 -2805,6884 -2668,6862
 Grunewald: teilweise sehr sandig, steile Strecken	Q3 -2668,6862 -2581,6834 -2468,6839 -2366,6869 -2230,6909 -2080,6897
 Grunewald: teilweise sandig	Q2 -2080,6897 -1925,6790
 verlängerte Verbindungschaussee: teilweise sandige Stellen, sonst 20 km/h möglich	Q2 -1112,7891 -1328,7597 -1851,6887 -1925,6790 -2834,5578 -3605,4520
@@ -1072,7 +1072,7 @@ Am Schinkelplatz: Asphalt	Q0 9984,12426 9996,12401 9994,12368
 An der Kommandatur: Asphalt	Q0 9994,12368 9943,12364
 Am Spreekanal: mäßiges Kopfsteinpflaster	Q2 9996,12401 10084,12228
 Sorauer Str.: teilweise Kopfsteinpflaster	Q1 12822,10487 12685,10264
-am Beisheim-Center: sehr gutes Kopfsteinpflaster	Q0 8326,11732 8404,11629 8462,11538
+am Beisheim-Center: sehr gutes Kopfsteinpflaster	Q0 8335,11718 8404,11629 8462,11538
 Hans-Bülow-Str.: Asphalt	Q0 8553,11638 8473,11634
 Berliner Freiheit: sehr gutes Kopfsteinpflaster	Q0 8473,11634 8404,11629
 Katzlerstr.: mäßiges Kopfsteinpflaster	Q2 8035,9437 8097,9650
@@ -1243,7 +1243,7 @@ Dubrowstr.: Kopfsteinpflaster	Q2 -1453,3166 -1187,3264
 Gabelsbergerstr.: Kopfsteinpflaster	Q2 14381,12205 14451,12396
 Hübnerstr.: Kopfsteinpflaster	Q2 13960,12866 13911,12692
 Heidenfeldstr.: Kopfsteinpflaster	Q2 13609,13427 13433,13346
-Neue Promenade: unebenes Pflaster	Q2 10294,13070 10185,12982 10132,12941
+Neue Promenade: unebenes Pflaster	Q2 10298,13076 10185,12982 10132,12941
 Griebnitzseepromenade: Waldweg	Q1 -7266,-450 -7318,-515 -7358,-605 -7495,-716 -7585,-736 -7759,-850 -7908,-989 -8071,-1144 -8119,-1211 -8207,-1240 -8253,-1241 -8294,-1163 -8404,-1074 -8495,-1054 -8605,-995 -8628,-959 -8652,-865 -8733,-751 -8770,-720 -8886,-708 -8927,-642 -9009,-582 -9138,-521 -9182,-515 -9183,-381 -9208,-357 -9261,-272 -9399,-139
 (Frankfurter Allee, Nebenfahrbahn): Kopfsteinpflaster, OK	Q1 16870,11920 16764,11919 16702,11920
 (Frankfurter Allee, Nebenfahrbahn): asphaltiert	Q0 16702,11920 16535,11920
@@ -1346,7 +1346,7 @@ Fritz-Riedel-Str.: Asphalt	Q0 13385,13992 13449,13892 13521,13781 13640,13597
 Hausburgstr.: Asphalt	Q0 13640,13597 13706,13460 13742,13376
 Hausburgstr.: Kopfsteinpflaster	Q2 13742,13376 13841,13135 13895,13017
 Konitzer Str.: Kopfsteinpflaster	Q2 14099,11505 14087,11467
-Auguste-Hauschner-Str.: asphaltiert	Q0 8436,11766 8473,11634 8505,11544
+Auguste-Hauschner-Str.: asphaltiert	Q0 8438,11753 8473,11634 8505,11544
 Cora-Berliner-Str.: asphaltiert	Q0 8737,12098 8783,11959
 Gertrud-Kolmar-Str.: asphaltiert	Q0 8837,11676 8825,11773 8810,11824 8783,11959
 Am Johannistisch: Verbundsteinpflaster	Q1 10029,9989 10111,9942
@@ -1838,7 +1838,7 @@ Südtorweg: wassergebundene Decke	Q1 -503,11782 -750,11740
 Südtorweg: asphaltiert	Q0 -750,11740 -794,11732 -940,11708
 Erkstr.: Asphalt mit Schäden	Q0 12598,8390 12771,8439
 Erkstr.: Asphalt	Q0 12771,8439 12902,8470 12925,8494
-Straße 645: Asphalt	Q0 11416,8283 11415,8113 11450,7921 11472,7899
+Straße 645: Asphalt	Q0 11441,8280 11426,8107 11450,7921 11472,7899
 Oderstr.: Asphalt	Q0 11472,7899 11498,7750 11515,7654 11536,7533 11553,7437 11562,7393 11601,7362 11615,7284 11606,7260 11593,7237 11607,7145
 Jollenseglerstr.: Verbundsteinpflaster	Q0 14921,10047 14882,9966
 Am Jüdischen Museum: wassergebundene Decke	Q1 9770,10590 9985,10616
@@ -6919,7 +6919,7 @@ Am Omnibushof: Asphalt	Q0 -4650,12257 -4412,12179
 (Mauerweg Spandau): Asphalt	Q0 -6612,11796 -6930,12027 -6991,12080 -7182,12137 -7261,12299 -7342,12349 -7351,12547 -7294,12560 -7317,12618 -7344,12795 -7344,12854
 Milastr.: Asphalt mit Löchern	Q1 10917,15525 10786,15544
 Zolastr.: Asphalt	Q1 10902,13604 10878,13565
-Am Zwirngraben: Gehwegplatten, Kopfsteinpflaster	Q1 10336,13037 10185,12982 10117,12966
+Am Zwirngraben: Gehwegplatten, Kopfsteinpflaster	Q1 10349,13043 10185,12982 10117,12966
 Heidereutergasse: Asphalt	Q0 10427,12873 10390,12842
 (Rosenstr. - Karl-Liebknecht-Str.): Kopfsteinpflaster	Q2 10476,12829 10528,12785
 Bauhofstr.: Asphalt mit Löchern	Q1 9810,12712 9671,12644
