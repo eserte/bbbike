@@ -126,7 +126,10 @@ Baumaßnahmen in der Parkanlage am Schlachtensee, teilweise ist der Uferweg gespe
 #: last_checked: 2009-11-19
 Wagner-Régeny-Str.: Straße wird Richtung Norden verlängert	?::inwork 19487,3593 19377,3721
 #: last_checked: 2009-11-19
-Wilhelm-Hoff-Str.: östlich des Groß-Berliner Damms in Bau, westlich nur als Trasse erkennbar	?::inwork 18833,3191 18892,3256 18953,3318 19125,3491 19180,3542
+Wilhelm-Hoff-Str.: nur als Trasse erkennbar	?::inwork 18833,3191 18892,3256 18953,3318 19125,3491
+#: last_checked: 2009-11-19
+#: XXX missing in Berlin.coords.data
+Georg-Schendel-Str.: in Bau	?::inwork 19125,3491 19180,3542
 #: last_checked: 2009-11-19
 #: next_check: 2010-04-01
 Groß-Berliner Damm: Straße wird neu gebaut, danach wird auch in Richtung Norden ein Radweg existieren	?::inwork; 18050,4649 17956,4787 17885,4912 17780,5086 17770,5108 17742,5174 17700,5272 17645,5328
@@ -594,7 +597,7 @@ Unterspreewald, Schlepzig - Lübben: genaue Wegführung? Qualität?	? 44543,-41337 
 Zachow - Trebelsee: Qualität (Betonplatten?)?	? -31583,7939 -31087,7275
 Gutenpaaren - Trebelsee: Qualität?	? -32754,7349 -32587,6112 -32200,5825
 Am Trebelsee: Deich, Qualität?	? -32200,5825 -31812,6387 -31525,6962 -31087,7275
-Am Havelufer: teilweise sehr sandige Stellen, Q3	? -4072,5227 -3956,4875 -4062,4487 -4693,4431 -4881,4093 -4964,4100
+(Am Havelufer): teilweise sehr sandige Stellen, Q3	? -4072,5227 -3956,4875 -4062,4487 -4693,4431 -4881,4093 -4964,4100
 Waldbühne - Havelchaussee: Qualität (wahrscheinlich Waldwege, Q2 bis Q3)? noch immer durchgängig befahrbar?	? -1356,12093 -1531,12043 -2050,12675 -1950,12925 -2076,13060
 Fährweg - Niederneuendorfer Allee (Kleingartenanlage): Qualität?	? -1864,17785 -1854,17805 -1871,17842 -1914,17899 -2011,17986 -2039,18049 -2066,18097 -2105,18119 -2143,18153 -2166,18199 -2177,18279 -2197,18307 -2229,18312 -2750,18333
 Elkartweg - Uferweg: Qualität?	? -2082,17918 -2011,17986
@@ -2441,7 +2444,7 @@ Piesporter Str. - Liebermannstr.: Ist die Abkürzung eine Einbahnstraße? Qualität
 Perler Str. (Weißensee): Qualität?	? 15799,17406 15785,17303 15818,17083
 Perler Str. (Hohenschönhausen): Qualität?	? 15827,17509 15839,17634 15851,17722
 Perler Str. - Darßer Str.: Qualität?	? 15851,17722 15780,17860 15783,17915
-#: XXX Benötigt einen Eintrag in multibez (Hohenschönhausen, Weißensee):
+#: XXX Benötigt einen Eintrag in multibez (Alt-Hohenschönhausen, Weißensee):
 Bitburger Str.: Qualität? Kann der "Tümpel" umfahren werden (nur Radfahrer/Fußgänger, oder auch Autos?)?	? 16645,17449 16595,17508 16522,17541 16346,17561 15839,17634 15548,17684 15515,17717 15478,17724 15439,17698 15220,17729
 Preunelstr.: Qualität? Ist die Straße eine Einbahnstraße? Wenn ja, gilt die Einbahnstraßenregelung nur für Autofahrer oder auch für Radfahrer?	? 12865,17381 12930,17302 12965,17324 13012,17332
 #: XXX laut anonymous Kopfsteinpflaster, Q2, enge Straße, q0, aber keine Angaben zu einer Einbahnstraße:
@@ -2924,7 +2927,6 @@ Umberto-Nobile-Str.: Qualität?	? -8275,7131 -8348,7292 -8408,7429
 George-Caylay-Str.: Qualität?	? -8138,7182 -8215,7354 -8258,7454
 #: XXX missing in Berlin.coords.data:
 Richard-Byrd-Str.: Qualität?	? -8074,7204 -8155,7379 -8191,7466
-#: XXX missing in Berlin.coords.data:
 Albrecht-Berblinger-Str.: Qualität?	? -8011,7229 -8090,7408 -8121,7478
 #: XXX missing in Berlin.coords.data:
 #: XXX südwestliches Ende Verbundsteinpflaster, nordöstliches Ende eventuell unbefestigt
@@ -3844,7 +3846,7 @@ Scharnauer Str.: Qualität?	? 21996,8716 22036,8834 21924,8886 21780,8892 21694,8
 Ahornstr. (Kaulsdorf): Qualität?	? 22262,8664 22137,8651 22073,8645
 Sadowastr.: Qualität?	? 22760,8770 22586,8686 22242,8536 22158,8503 22101,8489
 Weidenstr.: Qualität?	? 22941,8834 22786,8940 22644,9044
-Arndtstr. (Mahlsdorf): Qualität?	? 22871,8582 22919,8647 23007,8788 23082,8892 23176,9037
+Arndtstr. (Mahlsdorf, Kaulsdorf): Qualität?	? 22871,8582 22919,8647 23007,8788 23082,8892 23176,9037
 Buchenstr.: Qualität?	? 22514,8848 22586,8961 22644,9044 22699,9137
 #: XXX_indoor: bei osm ohne Namen und zu kurz
 Güstrower Str.: Qualität?	? 23921,13465 24078,13431 24117,13423 24345,13366
@@ -3941,3 +3943,4 @@ Kottmeierstr. (Potsdam): Qualität?	? -11504,-3502 -11423,-3638
 Heidereiterweg (Potsdam): Qualität?	? -11278,-3596 -11166,-3744
 #: by: http://www.potsdam.de/cms/beitrag/10057990/757395/
 Nuthestr.: existieren durchgängig Radwege zwischen Berliner Str. und Alt Nowawes?	? -11142,-1675 -11226,-1445 -11356,-1317 -11463,-1232 -11549,-1169
+Am Berg: Qualität?	? 23010,4506 22959,4576

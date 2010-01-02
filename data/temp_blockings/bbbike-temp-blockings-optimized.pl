@@ -1119,7 +1119,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
          'text' => 'Wendenschloßstr. (Köpenick) Richtung Müggelheimer Str. zwischen Salvador-Allende-Str. und Landjägerstr. Baustelle, Fahrtrichtung gesperrt (bis 12.2010)',
          'from' => 1251833331,
          'id' => 1857,
-         'data' => 'userdel	q4::inwork; 23451,4877 23363,4846 22893,4532 22862,4511 22832,4491 22740,4415
+         'data' => 'userdel	q4::inwork; 23451,4877 23363,4846 22959,4576 22893,4532 22862,4511 22832,4491 22740,4415
 ',
          'type' => 'handicap'
        },
