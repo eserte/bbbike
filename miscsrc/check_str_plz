@@ -191,10 +191,28 @@ while(1) {
 	    my $k1 = keys %{$str_in_plz{$name}};
 	    my $k2 = keys %{$str_in_plz2{$name}};
 	    if ($k1 > 1 && $k2 > 1) {
-		my(@b) = keys %{$str_in_plz{$name}};
-		if (!exists $str_in_multi_bez{$name} ||
-		    $str_in_multi_bez{$name} ne join(",", sort @b)) {
-		    push @ambiguous, $name;
+		my $ambiguous_coord = 1;
+		# First check if all coords are the same --- in this
+		# case we don't need to check in multi_bez_str
+		if (exists $str_coord{$name}) {
+		    $ambiguous_coord = 0;
+		    my $last_coord;
+		    for my $citypart (keys %{ $str_coord{$name} }) {
+			my $this_coord = $str_coord{$name}->{$citypart};
+			if (defined $last_coord && $last_coord ne $this_coord) {
+			    $ambiguous_coord = 1;
+			    last;
+			}
+			$last_coord = $this_coord;
+		    }
+		}
+		# Coords are ambigous, so we have to check in multi_bez_str
+		if ($ambiguous_coord) {
+		    my(@b) = keys %{$str_in_plz{$name}};
+		    if (!exists $str_in_multi_bez{$name} ||
+			$str_in_multi_bez{$name} ne join(",", sort @b)) {
+			push @ambiguous, $name;
+		    }
 		}
 	    }
 	}
