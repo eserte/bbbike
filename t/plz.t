@@ -229,14 +229,14 @@ for my $noextern (@extern_order) {
 	}
 	
 	@res = $plz->look("Hauptstr.", MultiZIP => 1);
-	is(scalar @res, 8, "Hits for Hauptstr.")
+	is(scalar @res, 9, "Hits for Hauptstr.")
 	    or diag $dump->(\@res);
 	@res = map { $plz->combined_elem_to_string_form($_) } $plz->combine(@res);
 	is(scalar @res, 7, "Combine hits")
 	    or diag $dump->(\@res);
 
 	@res = $plz->look("Hauptstr.", MultiCitypart => 1, MultiZIP => 1);
-	is(scalar @res, 9, "Hits for Hauptstr. with MultiCitypart")
+	is(scalar @res, 11, "Hits for Hauptstr. with MultiCitypart")
 	    or diag $dump->(\@res);
 	@res = map { $plz->combined_elem_to_string_form($_) } $plz->combine(@res);
 	is(scalar @res, 7, "Combine hits")
@@ -247,7 +247,7 @@ for my $noextern (@extern_order) {
 	is($friedenau_schoeneberg->[PLZ::LOOK_ZIP], "10827, 12159", "Check PLZ");
 
 	@res = grep { defined $_->[PLZ::LOOK_COORD] } $plz->look("Am Nordgraben", MultiCitypart => 1, MultiZIP => 1);
-	is(scalar @res, 3, "Hits for Am Nordgraben. with MultiCitypart")
+	is(scalar @res, 4, "Hits for Am Nordgraben. with MultiCitypart")
 	    or diag $dump->(\@res);
 	@res = map { $plz->combined_elem_to_string_form($_) } $plz->combine(@res);
 	is(scalar @res, 2, "Combine hits")
