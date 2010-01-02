@@ -86,8 +86,8 @@ Ahornstr.|Zehlendorf|14163|311,2761
 Ahornweg|Friedrichshagen|12587|23514,5348
 Ahornweg|Wartenberg|13059|18954,19298
 Ahrensdorfer Str.|Marienfelde|12279|7404,301
-Ahrensfelder Chaussee|Falkenberg|13057|20577,18464
-Ahrensfelder Chaussee|Marzahn|12689|20785,18512
+Ahrensfelder Chaussee|Falkenberg|13057|20915,18601
+Ahrensfelder Chaussee|Marzahn|12689|20915,18601
 Ahrenshooper Str.|Neu-Hohenschönhausen|13051|16867,18106
 Ahrenshooper Zeile|Zehlendorf|14129|-1773,3211
 Ährenweg|Biesdorf|12683|21022,12446
@@ -122,7 +122,7 @@ Albestr.|Friedenau|12159|5466,7444
 Albiger Weg|Nikolassee|14129|-2822,2294
 Alboinplatz|Schöneberg|12105|8056,6011
 Alboinplatz|Tempelhof|12105|8056,6011
-Alboinstr.|Schöneberg|12103|8161,6301
+Alboinstr.|Schöneberg|12103|8194,6390
 Alboinstr.|Tempelhof|12103|8194,6390
 Alboinstr.|Tempelhof|12105|8194,6390
 Albrecht-Achilles-Str.|Wilmersdorf|10709|3649,9722
@@ -166,7 +166,7 @@ Alice-Salomon-Platz|Hellersdorf|12627|23977,14850
 Alice-und-Hella-Hirsch-Ring|Rummelsburg|10317|15706,10142
 Alkenweg|Grünau|12527|21780,2462
 Allee der Kosmonauten|Biesdorf|12683|20035,13683
-Allee der Kosmonauten|Lichtenberg|10315|17657,13255
+Allee der Kosmonauten|Lichtenberg|10315|20035,13683
 Allee der Kosmonauten|Marzahn|12679|20035,13683
 Allee der Kosmonauten|Marzahn|12681|20035,13683
 Allee der Kosmonauten|Marzahn|12683|20035,13683
@@ -204,7 +204,7 @@ Alt-Britz|Britz|12359|12851,4848
 Alt-Buch|Buch|13125|16830,25534
 Alt-Buckow|Buckow|12349|12218,1986
 Alt-Friedrichsfelde|Biesdorf|12683|19302,11801
-Alt-Friedrichsfelde|Friedrichsfelde|10315|19261,11822
+Alt-Friedrichsfelde|Friedrichsfelde|10315|19302,11801
 Alt-Friedrichsfelde|Marzahn|12681|19302,11801
 Alt-Gatow|Gatow|14089|-4502,8726
 Alt-Heiligensee|Heiligensee|13503|-2599,21981
@@ -250,7 +250,7 @@ Alte Fasanerie|Lübars|13469|7648,22489
 Alte Fischerhütte|Zehlendorf|14163|-365,5130
 Alte Hellersdorfer Str.|Hellersdorf|12629|23054,15218
 Alte Jakobstr.|Kreuzberg|10969|9982,10834
-Alte Jakobstr.|Mitte|10179|10755,11635
+Alte Jakobstr.|Mitte|10179|9982,10834
 Alte Kaulsdorfer Str.|Köpenick|12555|22123,6399
 Alte Leipziger Str.|Mitte|10117|10076,11840
 Alte Potsdamer Str.|Tiergarten|10785|8384,11359
@@ -956,7 +956,7 @@ Astridstr.|Wartenberg|13051|16392,19955
 Atlantisring|Bohnsdorf|12526|
 Attendorner Weg|Tegel|13507|2125,18266
 Attilagarten|Tempelhof|12105|8417,5214
-Attilastr.|Steglitz|12247|7195,4149
+Attilastr.|Steglitz|12247|7729,4624
 Attilastr.|Tempelhof|12105|7729,4624
 Attinghausenweg|Mahlsdorf|12623|23391,8182
 Atzpodienstr.|Lichtenberg|10365|16451,12467
@@ -1013,7 +1013,7 @@ Avenue Jean Mermoz|Tegel|13405|3272,17773
 Avus Innenraum|Charlottenburg|14055|1842,10413
 Avus Nordkurve|Charlottenburg|14055|1842,10413
 Axel-Springer-Str.|Kreuzberg|10969|10104,11355
-Axel-Springer-Str.|Mitte|10117|10096,11432
+Axel-Springer-Str.|Mitte|10117|10104,11355
 Axenstr.|Heinersdorf|13089|13746,18280
 Azaleenstr.|Köpenick|12559|23798,4642
 Aßmannshauser Str.|Wilmersdorf|14197|4418,7598
@@ -1037,7 +1037,7 @@ Bad-Steben-Str.|Wittenau|13437|4836,20180
 Badenallee|Westend|14052|567,11597
 Badener Ring|Tempelhof|12101|8586,8474
 Badener Str.|Mahlsdorf|12623|23131,9568
-Badensche Str.|Schöneberg|10825|5935,8813
+Badensche Str.|Schöneberg|10825|5301,8821
 Badensche Str.|Wilmersdorf|10715|5301,8821
 Baderseestr.|Grünau|12527|22402,1339
 Badeweg|Nikolassee|14129|-4266,2737
@@ -1106,7 +1106,7 @@ Barbarastr.|Lankwitz|12249|6298,2970
 Barbarossaplatz|Schöneberg|10781|6771,9482
 Barbarossastr.|Schöneberg|10779|6015,9499
 Barbarossastr.|Schöneberg|10781|6015,9499
-Barbarossastr.|Wilmersdorf|10779|5853,9506
+Barbarossastr.|Wilmersdorf|10779|6015,9499
 Bärbelweg|Konradshöhe|13505|-2086,18747
 Barbenweg|Köpenick|12557|23709,3178
 Bardelebenweg|Kladow|14089|-8442,6287
@@ -1167,7 +1167,7 @@ Baummardersteig|Konradshöhe|13505|-1838,19426
 Baumschulenstr.|Baumschulenweg|12437|15737,6280
 Baumschulenstr.|Johannisthal|12437|15737,6280
 Baumwerder|Tegel|13599|-498,17491
-Bausdorfstr.|Kaulsdorf|12621|23650,12149
+Bausdorfstr.|Kaulsdorf|12621|24006,9267
 Bausdorfstr.|Mahlsdorf|12623|24006,9267
 Bautzener Platz|Schöneberg|10829|8132,9214
 Bautzener Str.|Schöneberg|10829|8178,9315
@@ -1209,7 +1209,7 @@ Behaimstr.|Charlottenburg|10585|3659,12129
 Behaimstr.|Weißensee|13086|13266,16117
 Behelfsheimsiedlung|Karlshorst|10318|
 Behmstr.|Gesundbrunnen|13357|9433,15966
-Behmstr.|Prenzlauer Berg|10439|10241,16105
+Behmstr.|Prenzlauer Berg|10439|9433,15966
 Behnitz|Spandau|13597|-2831,14547
 Behrenstr.|Mitte|10117|9675,12185
 Behringstr.|Baumschulenweg|12437|16291,6822
@@ -1233,7 +1233,7 @@ Belowstr.|Reinickendorf|13403|5083,17735
 Belziger Ring|Marzahn|12689|21909,17787
 Belziger Str.|Schöneberg|10823|6900,8867
 Belßstr.|Lankwitz|12249|7593,2491
-Belßstr.|Marienfelde|12277|8203,2306
+Belßstr.|Marienfelde|12277|7593,2491
 Ben-Gurion-Str.|Tiergarten|10785|8172,11679
 Benatzkyweg|Rudow|12355|17578,1574
 Bendastr.|Britz|12051|12731,6424
@@ -1627,7 +1627,7 @@ Borner Str.|Hohenschönhausen|13051|16627,17858
 Börnestr.|Weißensee|13086|13362,15986
 Bornhagenweg|Lichtenrade|12309|11650,-1735
 Bornholm (Kolonie)|Prenzlauer Berg|10439|10135,16456
-Bornholmer Str.|Prenzlauer Berg|10439|10135,16456
+Bornholmer Str.|Prenzlauer Berg|10439|9514,16508
 Bornholmer Str.|Wedding|13359|9514,16508
 Börnicker Str.|Wilhelmstadt|13595|-4000,11850
 Bornimer Str.|Grunewald|10711|2370,9915
@@ -1657,7 +1657,7 @@ Böttgerstr.|Wedding|13357|8806,15819
 Böttnerstr.|Karow|13125|14225,23247
 Bottroper Weg|Tegel|13507|1896,18769
 Bötzowstr.|Prenzlauer Berg|10407|12488,14068
-Bouchéstr.|Neukölln|12059|13143,9093
+Bouchéstr.|Neukölln|12059|13263,9283
 Bouchéstr.|Alt-Treptow|12435|13263,9283
 Boumannstr.|Hermsdorf|13467|3484,22480
 Boveristr.|Adlershof|12489|19156,2890
@@ -1763,7 +1763,7 @@ Briloner Weg|Lichterfelde|12207|4353,1315
 Brinkmannstr.|Steglitz|12169|7146,5340
 Bristolstr.|Wedding|13349|6700,16910
 Brittendorfer Weg|Zehlendorf|14167|1947,3128
-Britzer Allee|Baumschulenweg|12437|15089,5736
+Britzer Allee|Baumschulenweg|12437|15110,6255
 Britzer Allee|Neukölln|12057|15110,6255
 Britzer Damm|Britz|12347|12784,5354
 Britzer Hafen|Britz|12347|12600,5560
@@ -1806,7 +1806,7 @@ Brunhildstr.|Schöneberg|10829|7764,8908
 Brunnenplatz|Wedding|13357|8480,15967
 Brunnenstr.|Mitte|10115|9896,14497
 Brunnenstr.|Mitte|10119|9896,14497
-Brunnenstr.|Wedding|13355|9517,15725
+Brunnenstr.|Wedding|13355|9896,14497
 Brünnhildestr.|Friedenau|12159|5510,7721
 Bruno-Apitz-Str.|Buch|13125|16300,24661
 Bruno-Bauer-Str.|Neukölln|12051|12851,6559
@@ -1837,7 +1837,7 @@ Buchenweg (Kolonie)|Charlottenburg|14055|839,10103
 Buchenweg|Hakenfelde|13587|-2933,17889
 Bucher Chaussee|Karow|13125|15896,23526
 Bucher Str.|Französisch Buchholz|13127|13416,23681
-Bucher Str.|Karow|13125|13684,24286
+Bucher Str.|Karow|13125|13416,23681
 Buchfinkweg|Buckow|12351|14546,3218
 Buchholzer Str.|Blankenfelde|13159|10156,23281
 Buchholzer Str.|Niederschönhausen|13156|10624,19992
@@ -1878,11 +1878,11 @@ Bülowstr.|Schöneberg|10783|7956,9751
 Bülowstr.|Zehlendorf|14163|-711,3058
 Bültenring|Biesdorf|12683|21543,10394
 Bundenbacher Weg|Weißensee|13086|13836,17012
-Bundesallee|Friedenau|12161|5336,6525
+Bundesallee|Friedenau|12161|5348,8248
 Bundesallee|Wilmersdorf|10715|5348,8248
 Bundesallee|Wilmersdorf|10717|5348,8248
 Bundesallee|Wilmersdorf|10719|5348,8248
-Bundesplatz|Wilmersdorf|10715|5386,7928
+Bundesplatz|Wilmersdorf|10715|5348,8248
 Bundesratufer|Moabit|10555|6007,12865
 Bundesring|Tempelhof|12101|8943,8073
 Bundschuhweg|Frohnau|13465|3559,25760
@@ -2031,7 +2031,7 @@ Chlodwigstr.|Tempelhof|12105|8467,5060
 Chlumer Str.|Lichterfelde|12203|4010,4509
 Chodowieckistr.|Prenzlauer Berg|10405|11744,14703
 Chopinstr.|Weißensee|13088|14541,15692
-Choriner Str.|Mitte|10119|10536,14069
+Choriner Str.|Mitte|10119|10821,14506
 Choriner Str.|Prenzlauer Berg|10435|10821,14506
 Chorweilerstr.|Altglienicke|12524|20228,-121
 Christburger Str.|Prenzlauer Berg|10405|12154,14337
@@ -2161,7 +2161,7 @@ Dammbrücke|Spandau|13597|-3029,14656
 Dammheidestr.|Köpenick|12555|22563,7447
 Dammsmühler Str.|Rosenthal|13158|9824,20898
 Dammweg|Baumschulenweg|12437|15647,8155
-Dammweg|Neukölln|12057|14730,7461
+Dammweg|Neukölln|12057|15647,8155
 Dammweg|Treptow|12435|15647,8155
 Damsdorfer Weg|Wannsee|14109|-7173,840
 Damwildsteig|Heiligensee|13503|-734,21327
@@ -2169,7 +2169,7 @@ Danckelmannstr.|Charlottenburg|14059|2802,11547
 Dänenstr.|Prenzlauer Berg|10439|10695,16005
 Danewendplatz|Karow|13125|15168,23378
 Dankmarsteig|Altglienicke|12524|19153,903
-Dankmarsteig|Rudow|12355|18542,1176
+Dankmarsteig|Rudow|12355|19153,903
 Dankratstr.|Biesdorf|12683|20936,9585
 Dankratweg|Biesdorf|12683|20531,9587
 Dankwartstr.|Lichtenberg|10365|17154,12405
@@ -2226,9 +2226,9 @@ Demminer Str.|Wedding|13355|9943,15094
 Deniszeile|Staaken|13591|-5977,14488
 Denkstr.|Steglitz|12167|6837,4660
 Dennewitzplatz|Schöneberg|10783|7878,10037
-Dennewitzstr.|Kreuzberg|10785|8131,10329
+Dennewitzstr.|Kreuzberg|10785|7979,10127
 Dennewitzstr.|Schöneberg|10783|7979,10127
-Dennewitzstr.|Tiergarten|10785|8104,10340
+Dennewitzstr.|Tiergarten|10785|7979,10127
 Der Zwinger|Frohnau|13465|2801,24783
 Derfflingerstr.|Lankwitz|12249|6001,2423
 Derfflingerstr.|Tiergarten|10785|7189,10673
@@ -2390,7 +2390,7 @@ Dreilindenstr.|Wannsee|14109|-4229,1391
 Dreiserstr.|Friedrichshagen|12587|25759,5033
 Drenziger Zeile|Wittenau|13509|2985,19742
 Dresdener Str.|Kreuzberg|10999|11190,10871
-Dresdener Str.|Mitte|10179|10962,11341
+Dresdener Str.|Mitte|10179|11190,10871
 Dresselsteg|Charlottenburg|14057|2329,11051
 Dresselstr.|Charlottenburg|14057|2368,11218
 Drewitzer Str.|Hermsdorf|13467|3127,23554
@@ -2414,7 +2414,7 @@ Droysenstr.|Charlottenburg|10629|3451,10380
 Drübecker Weg|Neukölln|12059|13812,8501
 Druckerkehre|Rudow|12355|16561,1342
 Druschiner Str.|Kaulsdorf|12621|21730,8157
-Druschiner Str.|Köpenick|12555|21895,7973
+Druschiner Str.|Köpenick|12555|21730,8157
 Drusenheimer Weg|Buckow|12349|11599,1266
 Drygalski Insel|Müggelheim|12559|
 Drygalskistr.|Dahlem|14195|3653,6102
@@ -2574,7 +2574,7 @@ Eilveser Str.|Weißensee|13086|12919,16308
 Einbecker Str.|Friedrichsfelde|10315|17347,11526
 Einbecker Str.|Lichtenberg|10317|17347,11526
 Einemstr.|Schöneberg|10787|6988,10525
-Einemstr.|Tiergarten|10785|6992,10724
+Einemstr.|Tiergarten|10785|6988,10525
 Einheit|Reinickendorf|13407|
 Einhornstr.|Neukölln|12057|14740,7241
 Einigkeit (Kolonie)|Britz|12359|13788,5677
@@ -2969,7 +2969,7 @@ Feldstr.|Spandau|13585|-3432,15097
 Feldstr.|Wedding|13355|9058,14556
 Feldtmannsburg (Kolonie)|Weißensee|13088|16157,17362
 Feldtmannstr.|Alt-Hohenschönhausen|13051|16370,17344
-Feldtmannstr.|Weißensee|13088|15673,17494
+Feldtmannstr.|Weißensee|13088|16370,17344
 Feldweg|Blankenfelde|13159|10076,25942
 Feldweg|Bohnsdorf|12526|
 Feldweg|Französisch Buchholz|13127|
@@ -3166,7 +3166,7 @@ Frankenstr.|Blankenburg|13129|13736,22353
 Frankenstr.|Schöneberg|10781|6803,9671
 Frankentaler Ufer|Lankwitz|12247|6939,4110
 Frankenwaldstr.|Spandau|13589|-5142,15787
-Frankfurter Allee|Friedrichshain|10247|14597,12183
+Frankfurter Allee|Friedrichshain|10247|16268,11955
 Frankfurter Allee|Lichtenberg|10317|16268,11955
 Frankfurter Allee|Lichtenberg|10365|16268,11955
 Frankfurter Tor|Friedrichshain|10243|13807,12232
@@ -3678,7 +3678,7 @@ Glauchauer Str.|Hellersdorf|12627|24048,14070
 Glaßbrennerstr.|Prenzlauer Berg|10439|11610,16246
 Gleditschstr.|Schöneberg|10781|7148,9557
 Gleditschstr.|Schöneberg|10823|7148,9557
-Gleimstr.|Prenzlauer Berg|10437|10813,15731
+Gleimstr.|Prenzlauer Berg|10437|10004,15592
 Gleimstr.|Wedding|13355|10004,15592
 Gleiwitzer Str.|Biesdorf|12683|20904,10037
 Gleyeweg|Karlshorst|10318|17491,8074
@@ -3718,8 +3718,8 @@ Godesberger Str.|Karlshorst|10318|18852,8888
 Goebelplatz|Charlottenburg|13627|2076,14556
 Goebelstr.|Charlottenburg|13627|1772,14593
 Goebelstr.|Charlottenburg|13629|1772,14593
-Goebelstr.|Siemensstadt|13627|1327,14595
-Goebelstr.|Siemensstadt|13629|1327,14595
+Goebelstr.|Siemensstadt|13627|1772,14593
+Goebelstr.|Siemensstadt|13629|1772,14593
 Goebenstr.|Schöneberg|10783|7863,9661
 Goebenstr.|Steglitz|12167|5655,4747
 Goeckestr.|Hohenschönhausen|13055|16173,14735
@@ -4154,7 +4154,7 @@ Halbauer Weg|Lankwitz|12249|7699,3233
 Halbe-Hufen-Weg|Karow|13125|15592,23730
 Halberstädter Str.|Wilmersdorf|10711|3014,9731
 Halemweg|Charlottenburg|13627|2469,14465
-Halenseestr.|Charlottenburg|14055|2000,10337
+Halenseestr.|Charlottenburg|14055|2248,9923
 Halenseestr.|Grunewald|10711|2248,9923
 Halker Zeile|Lichtenrade|12305|10194,-277
 Hallandstr.|Pankow|13189|11367,16803
@@ -4228,7 +4228,7 @@ Hansastr.|Weißensee|13088|15296,16305
 Hansaufer|Moabit|10555|5843,12475
 Hanseatenweg|Hansaviertel|10557|6411,12400
 Hänselstr.|Baumschulenweg|12437|15381,7277
-Hänselstr.|Neukölln|12057|15188,7019
+Hänselstr.|Neukölln|12057|15381,7277
 Hanstedter Weg|Steglitz|12169|6826,5068
 Hanuschkestr.|Johannisthal|12487|17803,3467
 Happestr.|Lichtenrade|12305|10876,-858
@@ -4237,7 +4237,7 @@ Harbigstr.|Charlottenburg|14055|831,10411
 Harburger Weg|Staaken|13581|-5889,13905
 Hardangerstr.|Pankow|13189|11781,16636
 Hardenbergplatz|Charlottenburg|10623|5603,11145
-Hardenbergplatz|Tiergarten|10787|5691,11136
+Hardenbergplatz|Tiergarten|10787|5603,11145
 Hardenbergstr.|Charlottenburg|10623|5441,11098
 Hardyweg|Charlottenburg|14055|-835,10926
 Harfenweg|Französisch Buchholz|13127|11805,20732
@@ -4262,7 +4262,7 @@ Hartwichzeile|Staaken|13591|-6200,14461
 Harzburger Str.|Blankenburg|13129|13939,21187
 Harzburger Str.|Pankow|13187|11458,18737
 Harzer Str.|Neukölln|12059|13723,8664
-Harzer Str.|Treptow|12435|13033,9256
+Harzer Str.|Treptow|12435|13723,8664
 Harzgeroder Str.|Pankow|13187|11493,18638
 Harztal (Kolonie)|Neukölln|12059|13671,8939
 Haselbusch|Spandau|13599|
@@ -4313,10 +4313,10 @@ Hausstockweg|Mariendorf|12107|9868,3137
 Hausvaterweg|Falkenberg|13057|19875,18426
 Hausvogteiplatz|Mitte|10117|9848,11857
 Havelberger Str.|Moabit|10559|6558,14202
-Havelchaussee|Charlottenburg|14055|-2331,11246
+Havelchaussee|Charlottenburg|14055|-3499,7898
 Havelchaussee|Grunewald|14193|-3499,7898
-Havelchaussee|Spandau|13597|-2148,12244
-Havelchaussee|Zehlendorf|14129|-3296,3686
+Havelchaussee|Spandau|13597|-3499,7898
+Havelchaussee|Zehlendorf|14129|-3499,7898
 Haveleck|Spandau|13599|-1541,16910
 Haveleck|Wannsee|14109|-5919,3092
 Havelfreunde|Kladow|14089|
@@ -4385,7 +4385,7 @@ Heidelandstr.|Rahnsdorf|12589|30368,4230
 Heideläuferweg|Buckow|12353|12951,1693
 Heidelbeerweg|Bohnsdorf|12526|21681,135
 Heidelberger Platz|Wilmersdorf|14197|4224,7958
-Heidelberger Str.|Neukölln|12059|13719,8984
+Heidelberger Str.|Neukölln|12059|13711,9028
 Heidelberger Str.|Treptow|12435|13711,9028
 Heidemühler Weg|Baumschulenweg|12437|16200,6522
 Heidenauer Str.|Hellersdorf|12627|24209,14669
@@ -4617,7 +4617,7 @@ Hilchenbacher Weg|Tegel|13507|2555,18441
 Hildburghauser Str.|Lankwitz|12249|5252,1291
 Hildburghauser Str.|Lichterfelde|12207|5252,1291
 Hildburghauser Str.|Lichterfelde|12209|5252,1291
-Hildburghauser Str.|Marienfelde|12279|7154,892
+Hildburghauser Str.|Marienfelde|12279|5252,1291
 Hilde-Ephraim-Str.|Grunewald|14193|1662,9642
 Hildebrandstr.|Tiergarten|10785|7358,11173
 Hildegard-Jadamowitz-Str.|Friedrichshain|10243|13611,12227
@@ -4785,7 +4785,7 @@ Holzhauser Str.|Borsigwalde|13509|3591,19336
 Holzhauser Str.|Tegel|13509|3591,19336
 Holzkircher Str.|Weißensee|13086|12970,17148
 Holzmannstr.|Tempelhof|12099|11408,6394
-Holzmarktstr.|Friedrichshain|10243|12051,11685
+Holzmarktstr.|Friedrichshain|10243|11722,12064
 Holzmarktstr.|Mitte|10179|11722,12064
 Holzmindener Str.|Britz|12347|12483,5679
 Holzstr.|Wedding|13359|8706,17352
@@ -4894,7 +4894,7 @@ Hüttendorfer Weg|Bohnsdorf|12526|21272,-98
 Hüttenroder Weg|Neukölln|12059|13322,8865
 Huttenstr.|Frohnau|13465|2815,25810
 Huttenstr.|Moabit|10553|4466,13516
-Hüttenweg|Dahlem|14195|1673,5098
+Hüttenweg|Dahlem|14195|-622,6791
 Hüttenweg|Grunewald|14193|-622,6791
 Hüttigpfad|Charlottenburg|13627|4799,14991
 Huttwiler Weg|Reinickendorf|13407|7209,18301
@@ -5024,7 +5024,7 @@ Interessentenweg|Wittenau|13437|6583,19811
 Intzestr.|Marienfelde|12277|8409,963
 Invalidensiedlung|Frohnau|13465|2043,27691
 Invalidenstr.|Mitte|10115|8772,13688
-Invalidenstr.|Tiergarten|10557|7624,13144
+Invalidenstr.|Tiergarten|10557|8772,13688
 Iranische Str.|Wedding|13347|7874,16439
 Irenenstr.|Lichtenberg|10317|17062,11608
 Irisring|Heinersdorf|13089|13339,17939
@@ -5122,7 +5122,7 @@ Joachim-Karnatz-Allee|Moabit|10557|7178,12600
 Joachimstaler Platz|Charlottenburg|10719|5484,10810
 Joachimstaler Str.|Charlottenburg|10623|5463,10436
 Joachimstaler Str.|Charlottenburg|10719|5463,10436
-Joachimstaler Str.|Wilmersdorf|10719|5457,10347
+Joachimstaler Str.|Wilmersdorf|10719|5463,10436
 Joachimsthaler Str.|Alt-Hohenschönhausen|13055|17023,14764
 Joachimstr.|Bohnsdorf|12526|22068,-26
 Joachimstr.|Köpenick|12555|21856,5654
@@ -5154,7 +5154,7 @@ Johannesstr.|Zehlendorf|14165|655,1675
 Johannisberger Str.|Wilmersdorf|14197|4160,7140
 Johannisburger Allee|Charlottenburg|14055|-415,10792
 Johannisstr.|Mitte|10117|9515,13142
-Johannisthaler Chaussee|Baumschulenweg|12437|15864,4771
+Johannisthaler Chaussee|Baumschulenweg|12437|14594,3197
 Johannisthaler Chaussee|Britz|12351|14594,3197
 Johannisthaler Chaussee|Britz|12359|14594,3197
 Johannisthaler Chaussee|Buckow|12351|14594,3197
@@ -5231,7 +5231,7 @@ Kaiser-Wilhelm-Platz|Schöneberg|10827|7292,8887
 Kaiser-Wilhelm-Str.|Lankwitz|12247|6470,3261
 Kaiserallee|Marienfelde|12277|8045,1507
 Kaiserdamm|Charlottenburg|14057|1805,11371
-Kaiserin-Augusta-Allee|Charlottenburg|10589|3869,13183
+Kaiserin-Augusta-Allee|Charlottenburg|10589|4524,13164
 Kaiserin-Augusta-Allee|Moabit|10553|4524,13164
 Kaiserin-Augusta-Str.|Tempelhof|12099|8231,6082
 Kaiserin-Augusta-Str.|Tempelhof|12103|8231,6082
@@ -5299,7 +5299,7 @@ Karl-Lade-Str.|Lichtenberg|10369|14456,13769
 Karl-Lange-Brücke Nord (Kolonie)|Steglitz|12167|6807,4256
 Karl-Liebknecht-Str.|Mitte|10178|10833,13038
 Karl-Marx-Allee|Friedrichshain|10243|12865,12509
-Karl-Marx-Allee|Mitte|10178|11675,12659
+Karl-Marx-Allee|Mitte|10178|12865,12509
 Karl-Marx-Platz|Neukölln|12043|13026,7656
 Karl-Marx-Str.|Neukölln|12043|12792,7982
 Karl-Marx-Str.|Neukölln|12055|12792,7982
@@ -5394,7 +5394,7 @@ Kaulbachstr.|Lankwitz|12247|5873,3491
 Kaulbachstr.|Mahlsdorf|12623|25909,12609
 Kaulsdorfer Busch|Kaulsdorf|12621|
 Kaulsdorfer Str.|Kaulsdorf|12621|21559,8330
-Kaulsdorfer Str.|Köpenick|12555|22057,6828
+Kaulsdorfer Str.|Köpenick|12555|21559,8330
 Kaumanns Gasse|Köpenick|12557|22339,4396
 Kaunstr.|Zehlendorf|14163|-1142,2993
 Kauschstr.|Friedenau|12157|6557,6585
@@ -5482,7 +5482,7 @@ Kiefernallee|Karlshorst|10318|19779,8088
 Kiefernweg|Charlottenburg|14055|997,9565
 Kiefheider Weg|Heiligensee|13503|-606,23571
 Kiefholzstr.|Baumschulenweg|12437|15959,6892
-Kiefholzstr.|Neukölln|12057|14392,8624
+Kiefholzstr.|Neukölln|12057|15959,6892
 Kiefholzstr.|Treptow|12435|15959,6892
 Kiehler Grund (Kolonie)|Neukölln|12057|14183,8345
 Kiehlufer|Neukölln|12059|13404,8735
@@ -5626,7 +5626,7 @@ Kleinreuther Weg|Hakenfelde|13587|-3494,16850
 Kleinschewskystr.|Köpenick|12555|21955,7455
 Kleiststr.|Schöneberg|10787|6414,10501
 Kleiststr.|Zehlendorf|14163|-999,3968
-Klemkestr.|Niederschönhausen|13158|8636,18675
+Klemkestr.|Niederschönhausen|13158|7665,18587
 Klemkestr.|Reinickendorf|13409|7665,18587
 Klempnergasse|Britz|12351|13390,2762
 Klenzepfad|Reinickendorf|13407|6386,18272
@@ -6010,10 +6010,10 @@ Kürenzer Str.|Marzahn|12681|19220,12406
 Kurfürstendamm|Charlottenburg|10707|3965,10370
 Kurfürstendamm|Charlottenburg|10709|3965,10370
 Kurfürstendamm|Charlottenburg|10719|3965,10370
-Kurfürstendamm|Grunewald|10711|2856,9970
-Kurfürstendamm|Wilmersdorf|10707|2856,9970
-Kurfürstendamm|Wilmersdorf|10709|2856,9970
-Kurfürstendamm|Wilmersdorf|10711|2856,9970
+Kurfürstendamm|Grunewald|10711|3965,10370
+Kurfürstendamm|Wilmersdorf|10707|3965,10370
+Kurfürstendamm|Wilmersdorf|10709|3965,10370
+Kurfürstendamm|Wilmersdorf|10711|3965,10370
 Kurfürstenstr.|Hermsdorf|13467|3277,22332
 Kurfürstenstr.|Lankwitz|12249|5983,2190
 Kurfürstenstr.|Mariendorf|12105|9207,4690
@@ -6100,14 +6100,14 @@ Landjägerstr.|Köpenick|12555|22484,4553
 Landoltweg|Dahlem|14195|2412,4860
 Landreiterweg|Buckow|12353|13554,2059
 Landréstr.|Kaulsdorf|12621|23792,12386
-Landsberger Allee|Friedrichshain|10249|13037,13308
-Landsberger Allee|Hohenschönhausen|13055|16609,14435
+Landsberger Allee|Friedrichshain|10249|14703,14051
+Landsberger Allee|Hohenschönhausen|13055|14703,14051
 Landsberger Allee|Lichtenberg|10365|14703,14051
 Landsberger Allee|Lichtenberg|10367|14703,14051
 Landsberger Allee|Lichtenberg|10369|14703,14051
-Landsberger Allee|Marzahn|12679|21286,15664
-Landsberger Allee|Marzahn|12681|21286,15664
-Landsberger Allee|Prenzlauer Berg|10407|13601,13596
+Landsberger Allee|Marzahn|12679|14703,14051
+Landsberger Allee|Marzahn|12681|14703,14051
+Landsberger Allee|Prenzlauer Berg|10407|14703,14051
 Landsberger Str.|Lichtenrade|12305|11050,370
 Landsberger Str.|Mahlsdorf|12623|26452,13493
 Landshuter Str.|Lichtenrade|12309|11641,-2154
@@ -6293,17 +6293,17 @@ Libellenstr.|Nikolassee|14129|-3648,1967
 Liberdastr.|Neukölln|12047|12178,9646
 Lichtelfensteg|Stadtrandsiedlung Malchow|13088|14288,18126
 Lichtenauer Str.|Hohenschönhausen|13055|17053,15140
-Lichtenberger Str.|Friedrichshain|10243|11955,12401
+Lichtenberger Str.|Friedrichshain|10243|11835,12221
 Lichtenberger Str.|Mitte|10178|11835,12221
 Lichtenberger Str.|Mitte|10179|11835,12221
 Lichtenhainer Str.|Hellersdorf|12627|24658,14414
-Lichtenrader Damm|Buckow|12305|10401,930
+Lichtenrader Damm|Buckow|12305|10734,-287
 Lichtenrader Damm|Lichtenrade|12305|10734,-287
 Lichtenrader Damm|Lichtenrade|12309|10734,-287
 Lichtenrader Str.|Neukölln|12049|11623,7503
 Lichtensteinallee|Tiergarten|10787|6408,11528
 Lichterfelder Ring|Lichterfelde|12209|5936,567
-Lichterfelder Ring|Marienfelde|12279|6645,538
+Lichterfelder Ring|Marienfelde|12279|5936,567
 Lichterfelder Weg|Zehlendorf|14167|3068,1276
 Lichtungsweg|Frohnau|13465|1003,24953
 Lichtwarkweg|Hakenfelde|13587|-2732,18015
@@ -6334,10 +6334,10 @@ Liessauer Pfad|Heiligensee|13503|-1264,23236
 Lietzenburger Str.|Charlottenburg|10707|4985,10359
 Lietzenburger Str.|Charlottenburg|10719|4985,10359
 Lietzenburger Str.|Charlottenburg|10789|4985,10359
-Lietzenburger Str.|Schöneberg|10789|6274,10399
-Lietzenburger Str.|Wilmersdorf|10707|5322,10367
-Lietzenburger Str.|Wilmersdorf|10719|5322,10367
-Lietzenburger Str.|Wilmersdorf|10789|5322,10367
+Lietzenburger Str.|Schöneberg|10789|4985,10359
+Lietzenburger Str.|Wilmersdorf|10707|4985,10359
+Lietzenburger Str.|Wilmersdorf|10719|4985,10359
+Lietzenburger Str.|Wilmersdorf|10789|4985,10359
 Lietzenseeufer|Charlottenburg|14057|2828,11128
 Ligusterweg|Baumschulenweg|12437|15233,4811
 Lil-Dagover-Gasse|Hellersdorf|12627|23903,14984
@@ -6636,7 +6636,7 @@ Malplaquetstr.|Wedding|13347|7182,16170
 Malschweg|Spandau|13593|-5234,11171
 Malteserstr.|Lankwitz|12247|7276,1987
 Malteserstr.|Lankwitz|12249|7276,1987
-Malteserstr.|Marienfelde|12277|7636,1255
+Malteserstr.|Marienfelde|12277|7276,1987
 Malvenstr.|Lichterfelde|12203|3599,4986
 Malvenweg|Altglienicke|12524|20312,553
 Mandelblütenweg|Altglienicke|12524|21625,495
@@ -6703,7 +6703,7 @@ Marie-Vögtlin-Weg|Lichterfelde|12205|3589,2327
 Marienbader Str.|Schmargendorf|14199|2342,7850
 Marienburger Allee|Charlottenburg|14055|736,10497
 Marienburger Str.|Prenzlauer Berg|10405|12048,14158
-Mariendorfer Damm|Buckow|12107|10303,1226
+Mariendorfer Damm|Buckow|12107|9555,3296
 Mariendorfer Damm|Lichtenrade|12107|9555,3296
 Mariendorfer Damm|Mariendorf|12107|9555,3296
 Mariendorfer Damm|Mariendorf|12109|9555,3296
@@ -6790,7 +6790,7 @@ Martin-Wagner-Ring|Britz|12359|12921,4121
 Martinstr.|Steglitz|12167|5070,5073
 Martiusweg|Marienfelde|12277|9281,1468
 Marwitzer Str.|Hakenfelde|13589|-4248,16668
-Marzahner Chaussee|Friedrichsfelde|10315|18383,11836
+Marzahner Chaussee|Friedrichsfelde|10315|19012,12888
 Marzahner Chaussee|Marzahn|12681|19012,12888
 Marzahner Promenade|Marzahn|12679|20101,15462
 Marzahner Str.|Hohenschönhausen|13053|18626,15604
@@ -7059,9 +7059,9 @@ Möllersfelder Str.|Rosenthal|13158|7904,20579
 Möllersfelder Weg|Blankenfelde|13159|10082,24061
 Möllhausenufer|Köpenick|12557|23295,1215
 Mollnerweg|Buckow|12353|13190,1488
-Mollstr.|Friedrichshain|10249|11681,13211
+Mollstr.|Friedrichshain|10249|11710,13058
 Mollstr.|Mitte|10178|11710,13058
-Mollstr.|Prenzlauer Berg|10405|11416,13360
+Mollstr.|Prenzlauer Berg|10405|11710,13058
 Mollwitzstr.|Charlottenburg|14059|2613,12625
 Molsheimer Str.|Dahlem|14195|1883,3965
 Moltkestr.|Lichterfelde|12203|4492,3780
@@ -7079,7 +7079,7 @@ Monopolstr.|Mariendorf|12109|9463,4740
 Monschauer Weg|Mariendorf|12105|8888,4827
 Montanstr.|Reinickendorf|13407|6852,19320
 Monumentenstr.|Kreuzberg|10965|8545,9080
-Monumentenstr.|Schöneberg|10829|8012,9035
+Monumentenstr.|Schöneberg|10829|8545,9080
 Moorlake|Wannsee|14109|-9522,1384
 Moorweg|Tegel|13509|2954,21706
 Moosdorfstr.|Treptow|12435|14270,9206
@@ -7110,7 +7110,7 @@ Möthlower Str.|Staaken|13591|-7489,15493
 Mottlaupfad|Heiligensee|13503|-1827,23411
 Motzener Str.|Marienfelde|12277|9139,-190
 Motzstr.|Schöneberg|10777|6561,10096
-Motzstr.|Wilmersdorf|10779|5803,9660
+Motzstr.|Wilmersdorf|10779|6561,10096
 Mövenstr.|Wannsee|14109|-10269,445
 Möwenweg|Biesdorf|12683|22119,11157
 Möwenweg|Buckow|12359|14380,4120
@@ -7317,7 +7317,7 @@ Neue Roßstr.|Mitte|10179|10761,11723
 Neue Schönhauser Str.|Mitte|10178|10358,13171
 Neue Schönholzer Str.|Pankow|13187|10206,17815
 Neue Späthstr.|Baumschulenweg|12437|14600,5450
-Neue Späthstr.|Britz|12359|14340,5393
+Neue Späthstr.|Britz|12359|14600,5450
 Neue Steinmetzstr.|Schöneberg|10827|7650,9380
 Neue Str.|Staaken|13581|-6125,13900
 Neue Str.|Tempelhof|12103|9012,6783
@@ -7519,10 +7519,10 @@ Obernburger Weg|Pankow|13189|11728,17595
 Oberonstr.|Blankenburg|13129|13471,21928
 Oberseestr.|Hohenschönhausen|13053|16191,16049
 Oberspree (Kolonie)|Oberschöneweide|12459|17176,7529
-Oberspreestr.|Adlershof|12489|19774,5232
+Oberspreestr.|Adlershof|12489|21335,4649
 Oberspreestr.|Köpenick|12555|21335,4649
 Oberspreestr.|Köpenick|12557|21335,4649
-Oberspreestr.|Niederschöneweide|12439|19774,5232
+Oberspreestr.|Niederschöneweide|12439|21335,4649
 Obersteiner Weg|Weißensee|13086|13358,17377
 Oberwallstr.|Mitte|10117|9921,11980
 Oberwasserstr.|Mitte|10117|10253,11899
@@ -7534,7 +7534,7 @@ Ochtumweg|Prenzlauer Berg|10407|13917,14773
 Odenwaldstr.|Friedenau|12161|4942,6693
 Oderberger Str.|Prenzlauer Berg|10435|10425,14895
 Oderbruchstr.|Lichtenberg|10369|14345,14032
-Oderbruchstr.|Prenzlauer Berg|10407|14252,13942
+Oderbruchstr.|Prenzlauer Berg|10407|14345,14032
 Odernheimer Str.|Müggelheim|12559|28781,2020
 Oderstr.|Friedrichshain|10247|14703,11799
 Oderstr.|Neukölln|12049|11521,7567
@@ -7581,7 +7581,7 @@ Olympiastadion|Charlottenburg|14053|-698,11834
 Olympische Str.|Charlottenburg|14052|521,12027
 Olympischer Platz|Charlottenburg|14053|-146,11990
 Onckenstr.|Neukölln|12059|12974,9178
-Onckenstr.|Treptow|12435|13067,9290
+Onckenstr.|Treptow|12435|12974,9178
 Onkel-Bräsig-Str.|Britz|12359|13249,4890
 Onkel-Herse-Str.|Britz|12359|13723,4801
 Onkel-Tom-Str.|Zehlendorf|14169|331,4417
@@ -8090,7 +8090,7 @@ Prenzlauer Allee|Prenzlauer Berg|10409|12106,15981
 Prenzlauer Berg|Prenzlauer Berg|10405|11568,13628
 Prenzlauer Chaussee|Französisch Buchholz|13127|11937,19175
 Prenzlauer Promenade|Heinersdorf|13089|11962,17302
-Prenzlauer Promenade|Pankow|13189|11938,17070
+Prenzlauer Promenade|Pankow|13189|11962,17302
 Prenzlauer Promenade|Weißensee|13086|11962,17302
 Prerower Platz|Hohenschönhausen|13051|17309,17851
 Presselstr.|Steglitz|12167|6207,4878
@@ -8158,9 +8158,9 @@ Propst-Süßmilch-Weg|Zehlendorf|14169|856,3188
 Propststr.|Mitte|10178|10544,12314
 Proskauer Str.|Friedrichshain|10247|14355,12685
 Prötzeler Ring|Marzahn|12685|22035,15856
-Provinzstr.|Niederschönhausen|13158|8731,18622
+Provinzstr.|Niederschönhausen|13158|8631,17968
 Provinzstr.|Reinickendorf|13409|8631,17968
-Provinzstr.|Wedding|13409|8577,17426
+Provinzstr.|Wedding|13409|8631,17968
 Prühßstr.|Mariendorf|12105|9214,4149
 Prühßstr.|Mariendorf|12109|9214,4149
 Puccinistr.|Weißensee|13088|13847,15522
@@ -8198,7 +8198,7 @@ Quermatenweg|Zehlendorf|14163|-759,4768
 Querstr.|Zehlendorf|14163|82,3307
 Querweg|Staaken|13591|-7894,12216
 Quickborner Str.|Lübars|13469|7181,22815
-Quickborner Str.|Rosenthal|13158|8158,21302
+Quickborner Str.|Rosenthal|13158|7181,22815
 Quickborner Str.|Wittenau|13439|7181,22815
 Quittensteig|Staaken|13591|-7456,15008
 Quittenweg|Altglienicke|12524|19352,35
@@ -8341,7 +8341,7 @@ Reichsbahnstr.|Wannsee|14109|-4560,1406
 Reichshofer Str.|Dahlem|14195|1755,4470
 Reichsstr.|Charlottenburg|14052|258,12540
 Reichstagufer|Mitte|10117|8995,12567
-Reichstagufer|Tiergarten|10557|8554,12593
+Reichstagufer|Tiergarten|10557|8995,12567
 Reichweilerweg|Müggelheim|12559|27804,740
 Reichweindamm|Charlottenburg|13627|3566,14213
 Reifträgerweg|Nikolassee|14129|-2638,3258
@@ -8774,7 +8774,7 @@ Rungiusstr.|Britz|12347|13063,5747
 Ruppiner Chaussee|Heiligensee|13503|-387,22770
 Ruppiner Chaussee|Tegel|13503|-387,22770
 Ruppiner Str.|Mitte|10115|10062,14754
-Ruppiner Str.|Wedding|13355|9904,14983
+Ruppiner Str.|Wedding|13355|10062,14754
 Ruppiner-See-Str.|Spandau|13599|-1585,16576
 Rupprechtstr.|Lichtenberg|10317|16124,11036
 Ruprecht|Gatow|14089|
@@ -8943,7 +8943,7 @@ Saarower Weg|Rahnsdorf|12589|30878,3932
 Saarstr.|Friedenau|12161|5872,6813
 Saatwinkel|Tegel|13599|
 Saatwinkler Damm (Kolonie)|Charlottenburg|13627|4594,15120
-Saatwinkler Damm|Charlottenburg|13627|4461,15536
+Saatwinkler Damm|Charlottenburg|13627|-148,15412
 Saatwinkler Damm|Siemensstadt|13629|-148,15412
 Saatwinkler Damm|Spandau|13599|-148,15412
 Sabinensteig|Hohenschönhausen|13053|16379,16064
@@ -9273,7 +9273,7 @@ Schöneweider Str.|Neukölln|12055|13252,7440
 Schönfließer Str.|Frohnau|13465|3156,26082
 Schönfließer Str.|Prenzlauer Berg|10439|10637,16301
 Schongauer Str.|Mahlsdorf|12623|26676,13155
-Schönhauser Allee|Mitte|10119|10718,13684
+Schönhauser Allee|Mitte|10119|11021,16343
 Schönhauser Allee|Prenzlauer Berg|10435|11021,16343
 Schönhauser Allee|Prenzlauer Berg|10437|11021,16343
 Schönhauser Allee|Prenzlauer Berg|10439|11021,16343
@@ -9444,7 +9444,7 @@ Scottweg|Charlottenburg|14055|-1109,11218
 Sderotplatz|Zehlendorf|14163|669,3119
 Sebaldweg|Altglienicke|12524|20819,498
 Sebastianstr.|Kreuzberg|10969|10993,10966
-Sebastianstr.|Mitte|10179|10758,11436
+Sebastianstr.|Mitte|10179|10993,10966
 Sebnitzer Str.|Hellersdorf|12627|24497,14852
 Sebnitzer Weg|Rudow|12355|16099,1067
 Sedanstr.|Spandau|13581|-3460,13539
@@ -9644,7 +9644,7 @@ Simrockplatz|Mahlsdorf|12623|24587,12953
 Singdrosselsteig|Tegel|13629|1379,15843
 Singener Weg|Zehlendorf|14163|-479,2324
 Singerstr.|Friedrichshain|10243|12505,12115
-Singerstr.|Mitte|10179|11813,12364
+Singerstr.|Mitte|10179|12505,12115
 Sinsheimer Weg|Neukölln|12059|13774,8875
 Sinziger Str.|Karlshorst|10318|18856,9054
 Siriusstr.|Altglienicke|12524|18748,-187
@@ -9703,7 +9703,7 @@ Sonderburger Str.|Wedding|13357|9677,16424
 Sondershauser Str.|Lankwitz|12249|6381,1139
 Sondershauser Str.|Lichterfelde|12209|6381,1139
 Sonneberger Weg|Lichterfelde|12209|5405,1482
-Sonnenallee|Baumschulenweg|12437|15506,6386
+Sonnenallee|Baumschulenweg|12437|13337,8170
 Sonnenallee|Neukölln|12045|13337,8170
 Sonnenallee|Neukölln|12047|13337,8170
 Sonnenallee|Neukölln|12057|13337,8170
@@ -9757,7 +9757,7 @@ Sparrplatz|Wedding|13353|7436,14964
 Sparrstr.|Wedding|13353|7337,15092
 Spatenweg|Biesdorf|12683|21048,12579
 Späthsfelder Weg|Baumschulenweg|12437|15586,4853
-Späthstr.|Baumschulenweg|12437|15218,5673
+Späthstr.|Baumschulenweg|12437|14463,5060
 Späthstr.|Britz|12359|14463,5060
 Späthswalde (Kolonie)|Johannisthal|12487|16416,4686
 Spatzensteig|Karlshorst|10318|17644,8221
@@ -9980,8 +9980,8 @@ Storchenweg|Buckow|12351|14599,3330
 Störitzseestr.|Friedrichshagen|12587|26132,5505
 Storkower Str.|Lichtenberg|10367|14380,13381
 Storkower Str.|Lichtenberg|10369|14380,13381
-Storkower Str.|Prenzlauer Berg|10407|13331,14683
-Storkower Str.|Prenzlauer Berg|10409|13331,14683
+Storkower Str.|Prenzlauer Berg|10407|14380,13381
+Storkower Str.|Prenzlauer Berg|10409|14380,13381
 Storkwinkel|Grunewald|10711|2609,9689
 Stormstr.|Baumschulenweg|12437|16206,7119
 Stormstr.|Charlottenburg|14050|1399,11483
@@ -10266,7 +10266,7 @@ Straße A|Tegel|13629|1379,15788
 Straße B|Tegel|13629|1182,15916
 Straße C|Tegel|13629|798,15830
 Straße der Pariser Kommune|Friedrichshain|10243|12775,12099
-Straße des 17. Juni|Charlottenburg|10623|5263,11844
+Straße des 17. Juni|Charlottenburg|10623|5911,11903
 Straße des 17. Juni|Tiergarten|10785|5911,11903
 Straße D|Tegel|13629|1217,15784
 Straße E|Tegel|13629|1109,15782
@@ -10304,7 +10304,7 @@ Strelitzer Str.|Mitte|10115|9693,14536
 Strelitzer Str.|Wedding|13355|9693,14536
 Strelitzstr.|Mariendorf|12105|9179,4822
 Stresemannstr.|Kreuzberg|10963|9131,10716
-Stresemannstr.|Mitte|10117|8687,11291
+Stresemannstr.|Mitte|10117|9131,10716
 Stresowplatz|Spandau|13597|-3052,13813
 Stresowstr.|Spandau|13597|-2911,13905
 Streustr.|Weißensee|13086|12460,16297
@@ -10359,7 +10359,7 @@ Südring (Kolonie)|Tempelhof|12099|10329,6189
 Südstern|Kreuzberg|10961|10583,9202
 Südtorweg|Charlottenburg|14053|-752,11748
 Südufer (Kolonie)|Mariendorf|12105|8054,4349
-Südwestkorso|Friedenau|12161|4821,7232
+Südwestkorso|Friedenau|12161|4265,6866
 Südwestkorso|Wilmersdorf|14197|4265,6866
 Suermondtstr.|Hohenschönhausen|13053|16785,16051
 Suevenstr.|Altglienicke|12524|20658,980
@@ -10384,7 +10384,7 @@ Sven-Hedin-Str.|Zehlendorf|14163|-299,3564
 Swakopmunder Str.|Wedding|13351|5369,16914
 Swantewitstr.|Karow|13125|16285,23679
 Swiftweg|Charlottenburg|14055|-900,11267
-Swinemünder Str.|Mitte|10435|10170,14757
+Swinemünder Str.|Mitte|10435|9823,15478
 Swinemünder Str.|Wedding|13355|9823,15478
 Sybelstr.|Charlottenburg|10629|3234,10497
 Sylter Str.|Schmargendorf|14199|3369,7188
@@ -10612,7 +10612,7 @@ Tongrubenweg|Müggelheim|12559|28110,2259
 Toni-Lessler-Str.|Grunewald|14193|1863,8347
 Tonstichweg|Lübars|13469|5591,23023
 Töpchiner Weg|Buckow|12349|11685,892
-Töpchiner Weg|Lichtenrade|12309|11251,-55
+Töpchiner Weg|Lichtenrade|12309|11685,892
 Topeliusweg|Kladow|14089|-7053,5391
 Töpferweg|Britz|12351|13204,2504
 Töpferweg|Buckow|12351|13204,2504
@@ -10667,7 +10667,7 @@ Treseburger Str.|Blankenburg|13129|14166,21391
 Treseburger Str.|Charlottenburg|10589|3919,12952
 Treseburger Ufer|Britz|12347|12091,5769
 Treskowallee|Karlshorst|10318|18735,9062
-Treskowallee|Oberschöneweide|12459|18119,7514
+Treskowallee|Oberschöneweide|12459|18735,9062
 Treskowstr.|Heinersdorf|13089|12110,17283
 Treskowstr.|Mahlsdorf|12623|23979,12004
 Treskowstr.|Niederschönhausen|13156|9437,19995
@@ -11393,8 +11393,8 @@ Weißenfelser Str.|Hellersdorf|12627|24872,15136
 Weißenhöher Str.|Biesdorf|12683|20352,11504
 Weißenseer Weg|Hohenschönhausen|13053|15130,14480
 Weißenseer Weg|Hohenschönhausen|13055|15130,14480
-Weißenseer Weg|Lichtenberg|10367|14840,14937
-Weißenseer Weg|Lichtenberg|10369|14840,14937
+Weißenseer Weg|Lichtenberg|10367|15130,14480
+Weißenseer Weg|Lichtenberg|10369|15130,14480
 Weißenstadter Ring|Staaken|13581|-5912,13552
 Weißenthurmstr.|Lichtenrade|12309|10930,-890
 Weißer Stern (Kolonie)|Neukölln|12057|14433,7599
@@ -11483,7 +11483,7 @@ Wettersternweg|Biesdorf|12683|20708,11145
 Wetzlarer Str.|Wilmersdorf|14197|4575,6895
 Weverpromenade|Steglitz|12167|5557,4294
 Weverstr.|Spandau|13595|-3904,12304
-Wexstr.|Schöneberg|10825|6316,8048
+Wexstr.|Schöneberg|10825|5466,8018
 Wexstr.|Wilmersdorf|10715|5466,8018
 Weydemeyerstr.|Mitte|10178|11909,12797
 Weydingerstr.|Mitte|10178|11004,13395
@@ -11523,7 +11523,7 @@ Wiesbadener Str.|Lichtenrade|12309|11506,-513
 Wiesbadener Str.|Wilmersdorf|14197|3568,7469
 Wiesenblick (Kolonie)|Lübars|13469|5544,23801
 Wiesenburger Weg|Marzahn|12681|18896,15656
-Wiesendamm|Charlottenburg|14050|-213,13059
+Wiesendamm|Charlottenburg|14050|-385,13287
 Wiesendamm|Spandau|13597|-385,13287
 Wiesenerstr.|Tempelhof|12101|8775,7418
 Wiesengrund (Kolonie)|Britz|12359|14337,4946
@@ -11570,7 +11570,7 @@ Wildrosengehölz|Mahlsdorf|12623|25760,13721
 Wildrosenweg|Biesdorf|12683|20624,11863
 Wildschwansteig|Heiligensee|13503|-439,21510
 Wildspitz (Kolonie)|Mariendorf|12107|10667,3263
-Wildspitzweg|Britz|12349|10901,3149
+Wildspitzweg|Britz|12349|10670,3221
 Wildspitzweg|Mariendorf|12107|10670,3221
 Wildstrubelpfad|Heinersdorf|13089|13321,18215
 Wildtaubenweg|Konradshöhe|13505|-1679,19076
@@ -11583,7 +11583,7 @@ Wilhelm-Guddorf-Str.|Lichtenberg|10365|15366,11703
 Wilhelm-Hauff-Str.|Friedenau|12159|6053,6983
 Wilhelm-Hoff-Str.|Adlershof|12489|19139,3478
 Wilhelm-Kuhr-Str.|Pankow|13187|9765,18004
-Wilhelm-Kuhr-Str.|Wedding|13359|9236,17672
+Wilhelm-Kuhr-Str.|Wedding|13359|9765,18004
 Wilhelm-Ostwald-Str.|Adlershof|12489|20050,2518
 Wilhelm-Pasewaldt-Str.|Mariendorf|12107|8953,3360
 Wilhelm-Stolze-Str.|Friedrichshain|10249|13338,13005
@@ -11604,7 +11604,7 @@ Wilhelmshöher Str.|Friedenau|12161|4914,7289
 Wilhelmshöhe|Kreuzberg|10965|9140,9005
 Wilhelmsmühlenweg|Kaulsdorf|12621|23581,11962
 Wilhelmsmühlenweg|Mahlsdorf|12623|23581,11962
-Wilhelmsruher Damm|Rosenthal|13158|8126,21158
+Wilhelmsruher Damm|Rosenthal|13158|6392,21021
 Wilhelmsruher Damm|Wittenau|13435|6392,21021
 Wilhelmsruher Damm|Wittenau|13439|6392,21021
 Wilhelmsruh|Spandau|13587|
@@ -11741,11 +11741,11 @@ Wolfsteiner Weg|Müggelheim|12559|27213,1025
 Wolgaster Str.|Wedding|13355|9954,14785
 Wolkenburgweg|Zehlendorf|14169|1120,5153
 Wolkensteinstr.|Blankenburg|13129|13654,22461
-Wollankstr.|Pankow|13187|9709,17617
+Wollankstr.|Pankow|13187|9216,17098
 Wollankstr.|Wedding|13359|9216,17098
 Wollenberger Str.|Hohenschönhausen|13053|17589,16002
 Wollgrasweg|Müggelheim|12559|
-Wolliner Str.|Mitte|10435|10217,14791
+Wolliner Str.|Mitte|10435|10091,15163
 Wolliner Str.|Wedding|13355|10091,15163
 Wolmirstedter Weg|Spandau|13583|-4092,15490
 Woltersdorfer Weg|Rahnsdorf|12589|29803,4582
