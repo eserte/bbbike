@@ -87,6 +87,7 @@ use base qw(Geography::Base);
 			        Niederschöneweide Plänterwald/, 'Alt-Treptow'],
      'Wedding'		 => [qw/Gesundbrunnen/],
      'Weißensee'	 => [qw/Blankenburg Heinersdorf Karow/],
+     # XXX Halensee is special, as parts of it seem to belong to Charlottenburg. Check!
      'Wilmersdorf'	 => [qw/Grunewald Schmargendorf Halensee/],
      'Zehlendorf'	 => [qw/Dahlem Nikolassee Wannsee/],
     );

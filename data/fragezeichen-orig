@@ -2212,7 +2212,7 @@ Dankratweg: Qualität?	? 20857,9542 20690,9546 20595,9558 20514,9579 20460,9593
 Dankratweg - Am Waldberg: Ist die Verbindung für Radfahrer befahrbar? Qualität?	? 20460,9593 20408,9604 20338,9718 20335,9866
 Abtstr.: Qualität? Ist die Straße eine Einbahnstraße? Wenn ja, gilt die Einbahnstraßenregelung nur für Autofahrer oder auch für Radfahrer?	? 20066,3466 19990,3416
 Platz der Befreiung: Qualität? Ist die Straße eine Einbahnstraße? Wenn ja, gilt die Einbahnstraßenregelung nur für Autofahrer oder auch für Radfahrer?	? 20038,3357 19990,3416
-Schneckenburger Str.: Qualität?	? 20089,3438 20148,3490
+Schneckenburgerstr.: Qualität?	? 20089,3438 20148,3490
 Weerthstr.: Qualität?	? 20113,3408 20038,3357 20010,3340
 Thomas-Müntzer-Str.: Qualität?	? 20301,3432 20149,3617
 Pfingstberggasse: Qualität?	? 19954,3887 20075,3979 20112,3932 20145,3954
@@ -2440,7 +2440,7 @@ Kelberger Weg: Qualität?	? 15544,17350 15540,17443
 Polcher Weg: Qualität?	? 15623,17343 15635,17432
 Piesporter Str. - Liebermannstr.: Ist die Abkürzung eine Einbahnstraße? Qualität?	? 15280,17352 15267,17349 15217,17284
 Perler Str. (Weißensee): Qualität?	? 15799,17406 15785,17303 15818,17083
-Perler Str. (Hohenschönhausen): Qualität?	? 15827,17509 15839,17634 15851,17722
+Perler Str. (Alt-Hohenschönhausen): Qualität?	? 15827,17509 15839,17634 15851,17722
 Perler Str. - Darßer Str.: Qualität?	? 15851,17722 15780,17860 15783,17915
 #: XXX Benötigt einen Eintrag in multibez (Alt-Hohenschönhausen, Weißensee):
 Bitburger Str.: Qualität? Kann der "Tümpel" umfahren werden (nur Radfahrer/Fußgänger, oder auch Autos?)?	? 16645,17449 16595,17508 16522,17541 16346,17561 15839,17634 15548,17684 15515,17717 15478,17724 15439,17698 15220,17729
@@ -2906,7 +2906,6 @@ Jules-Verne-Str.: Qualität?	? -8458,6721 -8377,6764 -8318,6797 -8260,6831 -8201,
 Lerchenstr.: Qualität? Ist die Straße eine Einbahnstraße? Wenn ja, gilt die Einbahnstraßenregelung nur für Autofahrer oder auch für Radfahrer?	? -8793,7115 -8802,7049 -8801,6977 -8619,7012
 Storchenstr.: Qualität? Ist die Straße eine Einbahnstraße? Wenn ja, gilt die Einbahnstraßenregelung nur für Autofahrer oder auch für Radfahrer?	? -8675,7148 -8793,7115
 Johann-Landefeldt-Str.: Qualität?	? -8619,7012 -8598,7018 -8532,7041 -8466,7064 -8404,7087 -8341,7108 -8275,7131 -8207,7156 -8138,7182 -8074,7204 -8011,7229 -7948,7252 -8032,7437 -8055,7489
-#: XXX missing in Berlin.coords.data:
 Rex-Waite-Str.: Qualität?	? -8658,7157 -8597,7184 -8534,7212 -8472,7240 -8412,7267 -8348,7292 -8283,7325 -8215,7354 -8155,7379 -8090,7408 -8032,7437
 #: XXX missing in Berlin.coords.data:
 Gatower Heide: Qualität?	? -8055,7489 -8121,7478 -8191,7466 -8258,7454 -8335,7441 -8408,7429 -8476,7417 -8547,7404 -8615,7392 -8682,7381 -8728,7376 -8738,7365
@@ -2916,7 +2915,6 @@ Ludwig-Dürr-Str.: Qualität?	? -8341,7108 -8412,7267 -8476,7417
 #: XXX missing in Berlin.coords.data:
 Umberto-Nobile-Str.: Qualität?	? -8275,7131 -8348,7292 -8408,7429
 George-Caylay-Str.: Qualität?	? -8138,7182 -8215,7354 -8258,7454
-#: XXX missing in Berlin.coords.data:
 Richard-Byrd-Str.: Qualität?	? -8074,7204 -8155,7379 -8191,7466
 Albrecht-Berblinger-Str.: Qualität?	? -8011,7229 -8090,7408 -8121,7478
 #: XXX missing in Berlin.coords.data:
@@ -3113,7 +3111,7 @@ Jägerstr. (Kaulsdorf): Qualität zwischen Tieflandstr. und Waldstr?	? 22190,9043 
 Birkenstr. (Kaulsdorf): Qualität südlich der Seebadstr.?	? 22242,8536 22262,8664 22268,8718
 Eichenstr. (Mahlsdorf): Qualität südlich der Ulmenstr.?	? 22394,8734 22431,8912 22494,9036
 #: XXX anonymous meint "mäßiges Kopfsteinpflaster", aber zumindest der nördliche Teil ist betoniert
-Seebadstr. (Kaulsdorf): Qualität südwestlich der Bergedorfer Str.?	? 22117,8801 22268,8718 22310,8700 22394,8734 22532,8807 22700,8867 22786,8940 22886,9017
+Seebadstr. (Kaulsdorf, Mahlsdorf): Qualität südwestlich der Bergedorfer Str.?	? 22117,8801 22268,8718 22310,8700 22394,8734 22532,8807 22700,8867 22786,8940 22886,9017
 Werbellinstr. (Mahlsdorf): Qualität östlich der Weitzgründer Str.?	? 23541,9091 23704,9019 23946,8909
 Friedenstr. (Mahlsdorf): Qualität östlich der Weitzgründer Str.?	? 23596,9220 23755,9150 24001,9037
 Gielsdorfer Str.: Qualität?	? 24019,11264 24018,11320 24034,11363 24094,11521 24063,11535 24071,11573 24089,11665 24121,11795 24132,11859 24137,11930
@@ -3397,7 +3395,6 @@ Straße 56 (Heinersdorf): Qualität der Straße? Kann die Berliner Str. in Höhe Str
 Straße 49 (Heinersdorf): Qualität der Straße?	? 12780,17318 12609,17405 12407,17508
 #: XXX Eintrag in Berlin.coords.data fehlt
 Zeuschelstr.: Qualität?	? 12022,23058 11788,23229 11629,23360 11560,23421 11128,23746
-#: XXX Eintrag in Berlin.coords.data fehlt
 #: XXX Eintrag in str_cont_ausnahme notwendig
 Rupertweg: Qualität?	? 11629,23360 11600,23317 11536,23231
 Rupertweg: Qualität?	? 11551,23221 11505,23160 11449,23088
@@ -3415,7 +3412,6 @@ Chartronstr.: Qualität? Straßenname "Chartonstr." oder "Chartronstr."?	? 11507,2
 Straße 147: Qualität?	? 11448,21863 11505,21851
 #: XXX Eintrag in Berlin.coords.data fehlt
 Stadtgärten: Qualität?	? 11585,22082 11568,22056 11544,21897 11575,21888 11566,21829 11534,21831 11518,21727 11589,21713
-#: XXX Eintrag in Berlin.coords.data fehlt
 Saupéweg: Qualität?	? 11641,22038 11589,21713 11584,21688
 Ancillonweg: Qualität?	? 11204,21567 11228,21684
 Suzetteweg: Qualität?	? 11805,21385 11561,21429
@@ -3539,7 +3535,6 @@ Straße 604: Führt die Straße 604 bis zum Knollweg? Ist die gesamte Straße mit Ve
 Wittenauer Str.: Qualität der Wittenauer Str. (Verbundsteinpflaster oder etwas anderes)? Sind (Teile der) Wittenauer Str. verkehrsberuhigt (Spielstraße oder Tempo-30-Zone)?	? 6666,22988 6651,23020 6644,23036 6634,23076 6712,23252 6727,23287
 #: XXX Eintrag in Berlin.coords.data fehlt:
 Graaler Weg: Qualität?	? 15881,17899 15869,17831 16109,17784
-#: XXX Eintrag in Berlin.coords.data fehlt:
 Saaler Bogen: Qualität?	? 15715,17930 15711,17850 15686,17827 15574,17846 15555,17869 15568,17962
 Kyllburger Weg: Qualität?	? 16779,17521 16670,17454 16645,17449 16549,17394 16418,17311
 Dasburger Weg: Qualität?	? 16549,17394 16522,17426 16479,17447
@@ -3551,7 +3546,6 @@ Am Birkenknick: Qualität?	? 1248,871 1377,897 1416,906
 Werner-Sylten-Weg: Qualität? Dürfen Radfahrer hier fahren? Nachts beleuchtet?	? 1016,737 1129,763 1267,789
 Vesterzeile: Qualität?	? 1215,527 1224,481 1226,453
 Ramsteinweg: Qualität?	? 967,446 856,546 763,625 696,655 581,670
-#: XXX Eintrag in Berlin.coords.data fehlt:
 Ringelsteinweg: Qualität?	? 882,396 906,294
 Sulzer Str.: Qualität?	? 13720,21761 13825,21730 13887,21714 13938,21700 14017,21673 14120,21645
 Urbacher Str.: Qualität?	? 14262,21607 14227,21657 14156,21753 14064,21838 13950,21935 13853,22006
@@ -3719,7 +3713,6 @@ Straße 207: Qualität?	? 16838,3620 16727,3520
 #: XXX osm meint Greiffenweg, plzdata und lor nicht, wahrscheinlich ist ein "f" richtig
 Greifenweg: Qualität? Wie ist der Straßenname: Greifenweg oder Greiffenweg?	? 26119,12981 26228,12898
 Braunbärenweg: Qualität?	? 26157,13026 26259,12949
-#: XXX Eintrag in Berlin.coords.data fehlt: PLZ=12623
 Schwarzbärenweg: Qualität?	? 26192,13068 26284,12998
 Straße 87 (Rosenthal): Qualität?	? 9091,20425 9025,20372
 Straße 101 (Niederschönhausen): Qualität?	? 9235,20125 9360,20152
