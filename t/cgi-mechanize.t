@@ -336,7 +336,8 @@ for my $browser (@browsers) {
 		|\Q(Lennéstr. - Ökonomieweg, Sanssouci)/(Hans-Sachs-Str. - Lennéstr.)/Lennéstr. (Potsdam)\E
 	       )}ix,  "Correct goal resolution (Hans-Sachs-Str. ... or Lennéstr. ... or Ökonomieweg ...)");
 	}
-	$like_long_data->(qr{(\QMarquardter Damm (Marquardt)/Schlänitzseer Weg (Marquardt)\E
+	$like_long_data->(qr{(\QKönigsdamm (Grube)/Schlänitzseer Weg (Marquardt)\E
+			     |\QMarquardter Damm (Marquardt)/Schlänitzseer Weg (Marquardt)\E # before renaming Marquardter Damm -> Königsdamm
 			     |\QMarquardter Damm/Schlänitzseer Weg (Marquardt)\E
 			    )}ix,  "Correct goal resolution (Marquardt ...)");
                            
