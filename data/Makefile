@@ -921,6 +921,28 @@ $(PERSISTENTTMPDIR)/plz.zip:
 ${PERSISTENTTMPDIR}/Berlin.coords.bbd: Berlin.coords.data
 	$(PERL) -F'\|' -nale 'print "@F[0,1,2]\tX $$F[3]" if $$F[3]' Berlin.coords.data > $@
 
+Berlin.coords-by-citypart:
+	mkdir -p ${PERSISTENTTMPDIR}/Berlin.coords-by-citypart
+	$(PERL) -F'\|' -nale '\
+	    if ($$F[3] && $$F[1]) {\
+		my $$fh = $$fh{$$F[1]} || do {\
+		    open $$fh{$$F[1]}, ">", "${PERSISTENTTMPDIR}/Berlin.coords-by-citypart/$$F[1]" or die $$!;\
+		    $$fh{$$F[1]}\
+		};\
+		print $$fh "@F[0,1,2]\tX $$F[3]";\
+	    }' Berlin.coords.data
+
+Berlin.coords-by-zip:
+	mkdir -p ${PERSISTENTTMPDIR}/Berlin.coords-by-zip
+	$(PERL) -F'\|' -nale '\
+	    if ($$F[3] && $$F[2]) {\
+		my $$fh = $$fh{$$F[2]} || do {\
+		    open $$fh{$$F[2]}, ">", "${PERSISTENTTMPDIR}/Berlin.coords-by-zip/$$F[2]" or die $$!;\
+		    $$fh{$$F[2]}\
+		};\
+		print $$fh "@F[0,1,2]\tX $$F[3]";\
+	    }' Berlin.coords.data
+
 ${PERSISTENTTMPDIR}/Potsdam.coords.bbd: Potsdam.coords.data
 	$(PERL) -F'\|' -nale 'print "@F[0,1,2]\tX $$F[3]" if $$F[3]' Potsdam.coords.data > $@
 
