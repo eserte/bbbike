@@ -195,15 +195,16 @@ sub resolve_street {
 	}
 
 	splice @{$br->StartChoices}, 20 if @{$br->StartChoices} > 20;
+	my $start_choices = combine_same_streets($br->StartChoices);
 	print header, start_html("Auswahl nach Straßen und Orten"), h1("Auswahl nach Straßen und Orten");
 	#print start_form;
 	_form;
 	print h2("Mehrere Straßen gefunden");
 	print radio_group
 	    (-name=>"coords",
-	     -values => [map { $_->Coord } @{$br->StartChoices}],
-	     -labels => {map { ($_->Coord =>
-				$_->Street . " (" . $_->Citypart . (defined $_->ZIP ? ", " . $_->ZIP : "") . ")" ) } @{$br->StartChoices}},
+	     -values => [map { $_->{Coord} } values %$start_choices],
+	     -labels => {map { ($_->{Coord} =>
+				$_->{Street} . " (" . $_->{Citypart} . (defined $_->{ZIP} ? "; " . $_->{ZIP} : "") . ")" ) } values %$start_choices},
 	     -linebreak => "true",
 	    ), br;
 	print submit(-value => "Zeigen");
@@ -215,6 +216,32 @@ sub resolve_street {
 
     my $xy = $start->Coord;
     redirect_to_map($xy);
+}
+
+sub combine_same_streets {
+    my $choices = shift;
+    my %tmp;
+    for my $choice (@$choices) {
+	my $street = $choice->Street;
+	my $coord = $choice->Coord;
+	my $key = "$street $coord";
+	if (!exists $tmp{$key}) { $tmp{$key} = [] }
+	push @{ $tmp{$key} }, $choice;
+    }
+
+    my %res;
+    for my $key (keys %tmp) {
+	my %cityparts = map {($_->Citypart,1) } @{ $tmp{$key} };
+	my %zip       = map { defined $_->ZIP ? ($_->ZIP, 1) : () } @{ $tmp{$key} };
+	my $first = $tmp{$key}->[0];
+	$res{$first->Coord} = { Coord => $first->Coord,
+				Street => $first->Street,
+				Citypart => join(", ", sort keys %cityparts),
+				ZIP => join(", ", sort keys %zip),
+			      };
+    }
+
+    \%res;
 }
 
 sub resolve_city {

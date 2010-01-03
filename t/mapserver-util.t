@@ -36,7 +36,7 @@ if (!GetOptions(get_std_opts("cgidir", "xxx"),
 if ($do_xxx) {
     Test::More->import(qw(no_plan));
 } else {
-    plan tests => 99;
+    plan tests => 102;
 }
 
 sub get_agent {
@@ -160,17 +160,34 @@ XXX: {
     like($agent->content, qr{Mehrere.*Stra.*en}, 'Expected "multiple ..." content for Heerstr');
 
     $agent->submit_form(form_number => 1,
-			fields => {'coords', 'Heerstr. (Spandau, 13591)'},
+			fields => {'coords', 'Heerstr. (Staaken, Westend, Wilhelmstadt; 13591, 13593, 14052)'},
 		       );
     is_on_mapserver_page($agent, "after multiple streets");
 
     $agent->back();
     $agent->submit_form(form_number => 2,
 			fields => {'street', 'heerstr',
-				   'citypart', 'charlottenburg',
+				   'citypart', 'westend',
 				  },
 		       );
     is_on_mapserver_page($agent, "street with citypart output");
+
+    $agent->back();
+
+    ######################################################################
+    # Straße (Bahnhofstr.)
+
+    $agent->submit_form(form_number => 2,
+			fields => {'street', 'bahnhofstr'},
+		       );
+    like($agent->uri, qr{/mapserver_address.cgi}, "Multiple street matches, same address");
+    like($agent->content, qr{Mehrere.*Stra.*en}, 'Expected "multiple ..." content for Bahnhofstr');
+
+    {
+	my $form = $agent->form_number(1);
+	my $input = $form->find_input('coords','radio');
+	cmp_ok(scalar $input->possible_values, ">=", 8, "Found a lot of Bahnhofstr.");
+    }
 }
 
 __END__
