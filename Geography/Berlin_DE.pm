@@ -27,13 +27,14 @@ use base qw(Geography::Base);
 %subcityparts =
     (
      'Charlottenburg'	 => [qw/Charlottenburg-Nord Pichelsberg Westend
-			        Witzleben/], # "Pichelsberg" und "Witzleben" sind keine Ortsteile
+			        Witzleben/], # "Pichelsberg" und "Witzleben" sind nur Ortslagen
      'Friedrichshain'	 => [],
      'Hellersdorf'	 => [qw/Kaulsdorf Mahlsdorf/],
      'Hohenschönhausen'	 => [qw/Falkenberg Margaretenhöhe Wartenberg Malchow/,
-			     "Alt-Hohenschönhausen", "Neu-Hohenschönhausen"], # "Margaretenhöhe" ist kein Ortsteil
+			     "Alt-Hohenschönhausen", "Neu-Hohenschönhausen"], # "Margaretenhöhe" ist nur eine Ortslage in Malchow
      'Kreuzberg'	 => [],
      # Karolinenhof ist eine Ortslage in Schmöckwitz (siehe http://de.wikipedia.org/wiki/Berlin-Schm%C3%B6ckwitz)
+     # Hessenwinkel und Wilhelmshagen sind ebenfalls nur Ortslagen
      'Köpenick'		 => [qw/Friedrichshagen Grünau Hessenwinkel
 			        Karolinenhof
 			        Müggelheim Oberschöneweide Rahnsdorf
@@ -51,7 +52,7 @@ use base qw(Geography::Base);
      'Prenzlauer Berg'	 => [],
      'Reinickendorf'	 => [qw/Borsigwalde Frohnau Heiligensee Hermsdorf
 			        Konradshöhe Lübars Tegel Waidmannslust
-			        Wittenau/, 'Märkisches Viertel'],
+			        Wittenau/, 'Märkisches Viertel'], # Borsigwalde ist nur eine Ortslage in Wittenau
      'Schöneberg'	 => [qw/Friedenau Schöneberg-Nord/],
      'Spandau'		 => [qw/Gatow Kladow Siemensstadt Haselhorst Staaken
 				Wilhelmstadt Hakenfelde/,
