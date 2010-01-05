@@ -464,7 +464,7 @@ sub BBBikeLazy::plotstr_on_demand {
 	    my $restrict = undef; #XXX
 	    my $coordsys = $coord_system_obj->coordsys;
 	    my $use_stippleline = decide_stippleline($abk);
-	    my $label_spaceadd = ''; # XXX?
+	    my $label_spaceadd = undef; # XXX? note that "" is special
 	    my $transpose = \&transpose;
 	    my $conv = $lazy_str{$abk}->get_conversion;
 	    my $draw_sub;
