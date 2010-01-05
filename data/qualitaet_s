@@ -1590,7 +1590,8 @@ Hauptstr.: Asphalt	Q0 -7360,13409 -7273,13354
 (Am Bullengraben): sehr guter Asphalt	Q0 -5610,13614 -5949,13600 -6010,13586
 (Am Bullengraben): sehr guter Asphalt	Q0 -6272,13482 -6349,13444 -6429,13426 -6563,13403 -6718,13383 -6724,13359 -6890,13351 -6911,13372 -7010,13382 -7237,13461 -7443,13616
 (Am Bullengraben): Gitterbr¸cke	Q1 -7443,13616 -7522,13651
-(Am Bullengraben): wassergebundene Decke	Q1 -7522,13651 -7529,13657 -7503,13742 -7592,13713 -7656,13723 -7717,13720 -7801,13697 -7843,13663 -7851,13606
+(Am Bullengraben): wassergebundene Decke	Q1 -7522,13651 -7529,13657 -7503,13742 -7592,13713 -7656,13723 -7717,13720 -7801,13697
+Philipp-Gerlach-Weg: wassergebundene Decke	Q1 -7801,13697 -7843,13663 -7851,13606
 (Seecktstr. - Wilhelmstr.): kleinteiliges Kopfsteinpflaster	Q1 -4017,13167 -3886,13120
 Krumme G‰rten: Asphalt	Q0 -4011,13407 -3994,13301 -4017,13167
 (Spekteweg - Galenstr.): kleinteiliges Pflaster	Q1 -4303,14960 -4284,14937 -4200,14928 -4035,14779
@@ -4264,13 +4265,13 @@ Hausotterstr.: m‰ﬂiges Kopfsteinpflaster	Q2 8592,18128 8348,18071 8139,18020 795
 Liebfrauenweg: guter Asphalt	Q0 2917,21205 2830,21378 2816,21410 2740,21592 2696,21648
 Herrnholzweg: Verbundsteinpflaster	Q1 6279,23170 6491,22915
 Marienfelder Str.: Kopfsteinpflaster	Q2 10853,-1475 10981,-1564 11068,-1574
-Altonaer Str.: guter Asphalt	Q0 -4932,13887 -4776,13869 -4314,13828 -3989,13785 -3875,13762 -3701,13719
+Altonaer Str.: guter Asphalt	Q0 -4932,13887 -4776,13869 -4314,13828 -4170,13809 -3989,13785 -3875,13762 -3850,13756 -3701,13719
 Prignitzstr.: guter Asphalt	Q0 20447,13991 20420,13757 20391,13511 20364,13255 20335,12985 20331,12920 20299,12677 20271,12458 20252,12262
 Nikolaus-Bares-Weg: Verbundsteinpflaster	Q1 7234,1045 7437,1144
 Joachimstr. (Bohnsdorf): m‰ﬂiges Kopfsteinpflaster	Q2 22029,-178 22177,-137
 Joachimstr. (Bohnsdorf): schlechtes Kopfsteinpflaster, Straﬂenr‰nder teilweise unbefestigt	Q3 22177,-137 22382,-87 22631,50 22710,98
 Illigstr.: guter Asphalt	Q0 9428,-1892 9431,-1800 9443,-1626 9445,-1460 9456,-1303 9461,-1268 9379,-935
-Sigmund-Bergmann-Str.: gutes Verbundsteinpflaster	Q0 -2312,16770 -2173,16741 -2157,16838 -2119,17015
+Sigmund-Bergmann-Str.: gutes Verbundsteinpflaster	Q0 -2312,16770 -2173,16741 -2157,16838 -2133,16934
 (Parkplatz Kaufland): Verbundsteinpflaster	Q1 13031,17775 12981,17557
 (Parkplatz Kaufland - Am Steinberg): gepflasterter Fuﬂweg	Q1 12981,17557 12998,17480
 Hasenmark: m‰ﬂiges Kopfsteinpflaster	Q2 -3694,14744 -3582,14886
@@ -6904,9 +6905,9 @@ Ilmenauer Str.: Kopfsteinpflaster	Q2 2551,8183 2552,8419
 Rodensteinstr.: Asphalt	Q0 -4679,11489 -4821,11560 -4904,11601 -4996,11648 -5081,11690 -5164,11732 -5268,11795 -5332,11843
 Pf‰lzische Str.: Beton	Q0 -5003,11937 -4945,11904 -4876,11867 -4801,11826 -4726,11782 -4590,11709
 Winzerstr.: Beton	Q0 -4935,11273 -4821,11560 -4726,11782 -4687,11885
-Folkungerstr.: Beton	Q0 -5046,11311 -4904,11601 -4801,11826
-Falstaffweg: Beton	Q0 -5168,11354 -4996,11648 -4876,11867 -4836,11944
-Kattfuﬂstr.: Asphalt	Q0 -5275,11392 -5081,11690
+Folkungerstr.: Beton	Q0 -5061,11305 -4904,11601 -4801,11826
+Falstaffweg: Beton	Q0 -5188,11342 -4996,11648 -4876,11867 -4836,11944
+Kattfuﬂstr.: Asphalt	Q0 -5284,11375 -5081,11690
 Kattfuﬂstr.: Beton	Q0 -5081,11690 -4945,11904
 Steinmeisterweg: Beton	Q0 -5499,11493 -5435,11573 -5268,11795 -5029,12107
 Fahremundstr.: Beton	Q0 -5435,11573 -5495,11618 -5332,11843 -5110,12134
@@ -7231,7 +7232,7 @@ Brahmsstr.: Kopfsteinpflaster	Q2 4785,4557 4932,4152 4967,4067
 Gertraudstr.: Kopfsteinpflaster	Q2 196,1657 79,1992
 Lerchenweg (Mariendorf): sehr guter Asphalt	Q0 9405,4667 9382,4826 9360,4996 9350,5060
 Treskowstr. (Heinersdorf): Asphalt	Q1 11893,17397 12336,17207
-Elsflether Weg: Asphalt	Q0 -4011,13407 -4023,13493 -3989,13785 -3909,13932 -3892,13960
+Elsflether Weg: Asphalt	Q0 -4011,13407 -4023,13493 -4011,13656 -3989,13785 -3965,13870 -3937,13975
 Nordendstr.: Asphalt	Q0 9149,20336 8964,20259
 Nordendstr.: moderat fester Sandweg mit vielen Lˆchern	Q2 8964,20259 8409,19956 8415,19910
 Nordendstr.: Asphalt	Q0 9983,20581 9910,20556 9859,20542 9815,20530 9739,20508 9718,20498 9615,20469 9498,20435 9324,20386 9209,20361 9149,20336
