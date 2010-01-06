@@ -1119,7 +1119,7 @@ report-checks:
 	@echo Now doing checks...
 
 do-checks:	.check_empty_lines \
-	.check_strassen1 .check_strassen2 .check_strassen_potsdam .check_strassen_cont \
+	.check_strassen1 .check_strassen2 .check_strassen_potsdam .check_strassen_cont .check_strassen_consecutive \
 	.check_plaetze1 .check_plaetze2 .check_strassen_plaetze_unique \
 	.check_hoehe .check_hoehe2 \
 	.check_ampeln .check_ampeln2 \
@@ -1175,6 +1175,23 @@ check-disabled:
 
 .check_strassen_cont:	.strassen.tmp str_cont_ausnahme
 	$(CHECK_CONT) -data .strassen.tmp
+	@touch $@
+
+.check_strassen_consecutive: strassen
+	@${PERL} -nle '\
+	    next if /^(#|\()/; m{([^\t]+)} and do {\
+		if ($$1 ne $$last && $$seen{$$1}) {\
+		    if (!$$error_header_printed) {\
+			print "*** The following streets are not consecutive in strassen";\
+			$$error_header_printed = 1;\
+		    }\
+		    print "$$1";\
+		}\
+		$$last = $$1;\
+		$$seen{$$1}++;\
+	    };\
+	    END { exit 1 if $$error_header_printed }\
+	' strassen
 	@touch $@
 
 .check_plaetze1: plaetze .strassen.tmp landstrassen
