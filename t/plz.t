@@ -275,12 +275,12 @@ for my $noextern (@extern_order) {
 
 	@res = $plz->look_loop(PLZ::split_street("Straße des 17. Juni"),
 			       @standard_look_loop_args);
-	is(scalar @{$res[0]}, 2, "Hits for Straße des 17. Juni")
+	is(scalar @{$res[0]}, 4, "Hits for Straße des 17. Juni")
 	    or diag $dump->(\@res);
 
 	@res = $plz->look_loop(PLZ::split_street("str.des 17.Juni"),
 			       @standard_look_loop_args);
-	is(scalar @{$res[0]}, 2, "Hits for Straße des 17. Juni (missing spaces)")
+	is(scalar @{$res[0]}, 4, "Hits for Straße des 17. Juni (missing spaces)")
 	    or diag $dump->(\@res);
 
 	@res = $plz->look_loop(PLZ::split_street("  Str. des 17. Juni 153  "),
