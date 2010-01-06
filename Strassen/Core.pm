@@ -999,7 +999,7 @@ sub to_koord1_slow {
     } elsif ($s =~ /^((:[^:]*:)?([A-Za-z])?)?(-?\d+),(-?\d+)$/) {
 	# Ausgabe: x, y, coordsystem, bahnhof
 	[$4, $5, $3, $2];
-    } elsif (/(-?\d+(?:\.\d*)?),(-?\d+(?:\.\d*)?)$/) { # float numbers
+    } elsif ($s =~ /(-?\d+(?:\.\d*)?),(-?\d+(?:\.\d*)?)$/) { # float numbers
 	[$1, $2];
     } else {
 	warn "Unrecognized string: $s...";
