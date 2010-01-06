@@ -133,17 +133,34 @@ my $check_coords = sub {
 		    last;
 		}
 	    }
-	    # else use first
-	    while(my($k,$v) = each %{ $str_coord{$lastname} }) {
-		$check_against = $v;
-		last;
+	    if (!defined $check_against) {
+		# else use first
+		while(my($k,$v) = each %{ $str_coord{$lastname} }) {
+		    $check_against = $v;
+		    last;
+		}
 	    }
 	}
     }
     if (!$check_against) {
 	warn "Can't find any coordinate for $lastname @lastbezirk\n";
     } elsif (!grep { $_ eq $check_against } @coords) {
-	warn "Can't find coordinate $check_against for $lastname @lastbezirk\n";
+	my $min_dist;
+	if ($check_against ne 'XXX') {
+	    for my $i (1 .. $#coords) {
+		require VectorUtil;
+		my $dist = VectorUtil::distance_point_line((split /,/, $check_against),
+							   (split /,/, $coords[$i-1]),
+							   (split /,/, $coords[$i]),
+							  );
+		if (!defined $min_dist || $dist < $min_dist) {
+		    $min_dist = $dist;
+		}
+	    }
+	}
+	warn "Can't find coordinate $check_against for $lastname @lastbezirk" .
+	    (defined $min_dist ? ", distance is " . int($min_dist) . "m" : '') .
+		"\n";
     }
 };
 
@@ -265,3 +282,15 @@ if (@unknown || @unknown2 || @ambiguous || @no_coord) {
     exit 0;
 }
 
+__END__
+
+=head1 EXAMPLES
+
+C<-checkcoords> may be used also to find significant mismatches
+between Berlin.coords.data and strassen data by sorting by distance.
+For this, my C<psort> script (sort with a custom perl sub) may be
+used:
+
+    ./check_str_plz -checkcoords |& psort -r -n -e 'm{distance is (\d+)m} ? $1 : 0' | less
+
+=cut
