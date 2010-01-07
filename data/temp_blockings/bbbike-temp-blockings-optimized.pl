@@ -1115,9 +1115,9 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        {
          'source_id' => 'IM_014045',
-         'until' => 1293836399,
-         'text' => 'Wendenschloßstr. (Köpenick) Richtung Müggelheimer Str. zwischen Salvador-Allende-Str. und Landjägerstr. Baustelle, Fahrtrichtung gesperrt (bis 12.2010)',
-         'from' => 1251833331,
+         'until' => 1278021599,
+         'text' => 'Wendenschloßstr. (Köpenick) Richtung Müggelheimer Str. zwischen Salvador-Allende-Str. und Landjägerstr. Baustelle, Fahrtrichtung gesperrt (bis Mitte 2010)',
+         'from' => undef,
          'id' => 1857,
          'data' => 'userdel	q4::inwork; 23451,4877 23363,4846 22959,4576 22893,4532 22862,4511 22832,4491 22740,4415
 ',
@@ -1477,6 +1477,17 @@ userdel	2::inwork 14835,10272 14888,10385
          'data' => 'userdel	2::inwork 28028,-88225 26392,-88322 25763,-88254 25470,-88145 24969,-87998
 ',
          'type' => 'gesperrt'
+       },
+       undef,
+       {
+         'source_id' => 'IM_014885',
+         'until' => 1280613599,
+         'text' => 'Tucholskystr. (Mitte) in beiden Richtungen zwischen Oranienburger Str. und Auguststr. Baustelle, gesperrt (bis Ende 07/2010)',
+         'from' => 1262821467,
+         'id' => 2011,
+         'data' => 'userdel	q4::inwork 9605,13248 9651,13406
+',
+         'type' => 'handicap'
        }
      
 );

@@ -15756,9 +15756,9 @@ EOF
 userdel	q4::inwork; 17428,4503 17476,4337 17507,4216
 EOF
      },
-     { from  => 1251833331, # 2009-09-01 21:28
-       until => 1293836399, # 2010-12-31 23:59
-       text  => 'Wendenschloßstr. (Köpenick) Richtung Müggelheimer Str. zwischen Salvador-Allende-Str. und Landjägerstr. Baustelle, Fahrtrichtung gesperrt (bis 12.2010)',
+     { from  => undef, # 
+       until => 1278021599, # 2010-07-01 23:59
+       text  => 'Wendenschloßstr. (Köpenick) Richtung Müggelheimer Str. zwischen Salvador-Allende-Str. und Landjägerstr. Baustelle, Fahrtrichtung gesperrt (bis Mitte 2010)',
        type  => 'handicap',
        source_id => 'IM_014045',
        data  => <<EOF,
@@ -17059,6 +17059,15 @@ EOF
 userdel	2::temp 8731,12270 8610,12254 8538,12245 8214,12205 8089,12190 8055,12186 8119,12414
 userdel	2::temp 8522,12239 8466,12197
 userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
+EOF
+     },
+     { from  => 1262821467, # 2010-01-07 00:44
+       until => 1280613599, # 2010-07-31 23:59
+       text  => 'Tucholskystr. (Mitte) in beiden Richtungen zwischen Oranienburger Str. und Auguststr. Baustelle, gesperrt (bis Ende 07/2010)',
+       type  => 'handicap',
+       source_id => 'IM_014885',
+       data  => <<EOF,
+userdel	q4::inwork 9605,13248 9651,13406
 EOF
      },
     );
