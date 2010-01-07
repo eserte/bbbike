@@ -227,7 +227,8 @@ my %smoothness_to_de = ('excellent'     => 'ausgezeichnet',
 
 use constant HIGHWAY_BAB_RX => qr{^(?:motorway|motorway_link|trunk|trunk_link)$};
 use constant HIGHWAY_HH_RX  => qr{^(?:primary|primary_link)$};
-use constant HIGHWAY_H_RX   => qr{^(?:secondary|tertiary)$};
+use constant HIGHWAY_H_RX   => qr{^(?:secondary)$};
+use constant HIGHWAY_NH_RX  => qr{^(?:tertiary)$};
 use constant HIGHWAY_N_RX   => qr{^(?:residential|unclassified|service|minor)$};
 
 my $cyclists_dismount_label = ($lang eq 'en' ? 'Cyclists dismount' : 'Radfahrer absteigen');
@@ -1012,6 +1013,8 @@ for my $osm_file (@osm_files) {
 		    push @or, ["strassen", "HH".$addcat];
 		} elsif ($highway_cat =~ HIGHWAY_H_RX) {
 		    push @or, ["strassen", "H".$addcat];
+		} elsif ($highway_cat =~ HIGHWAY_NH_RX) {
+		    push @or, ["strassen", "NH".$addcat];
 		} elsif ($highway_cat =~ HIGHWAY_N_RX) {
 		    push @or, ["strassen", "N".$addcat];
 		} elsif ($highway_cat eq 'road') {
@@ -1105,6 +1108,9 @@ for my $osm_file (@osm_files) {
 			push @or, ['gesperrt', '2:inwork'];
 		    } elsif ($construction =~ HIGHWAY_H_RX) {
 			push @or, ['strassen', 'H'];
+			push @or, ['gesperrt', '2:inwork'];
+		    } elsif ($construction =~ HIGHWAY_NH_RX) {
+			push @or, ['strassen', 'NH'];
 			push @or, ['gesperrt', '2:inwork'];
 		    } elsif ($construction =~ HIGHWAY_N_RX) {
 			push @or, ['strassen', 'N'];

@@ -50,7 +50,7 @@ use vars qw(%filetype_to_cat %file_to_cat);
 				 /^((F:)?(?:SW|Shop)(\|$img)?|($img)?)$/
 			     },
 			    ],
-     "strassen"	      => [qw(HH H N NN Pl)],
+     "strassen"	      => [qw(HH H NH N NN Pl)],
      "ubahn"	      => [qw(U0 UA UB UC UBau)],
      "wasserstrassen" => [qw(F:I F:W F:W0 F:W1 F:W2 W W0 W1 W2)],
      "*bahnhof_bg"    => [qw(bg bf)],
@@ -61,7 +61,10 @@ my %older_file_to_cat =
 		"flaechen" => [qw(F:Ae F:Cemetery F:Forest F:Green
 			          F:Industrial F:Orchard F:Mine
 			          F:P F:Pabove F:Sport)],
-	       }
+	       },
+     '3.17' => {
+		"strassen" => [qw(HH H N NN Pl)],
+	       },
     );
 
 %file_to_cat =

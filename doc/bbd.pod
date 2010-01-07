@@ -561,19 +561,26 @@ Bundesstraßen
 =item HH
 
 Important main streets (wichtige Hauptstraßen). Entspricht von der
-Kfz-Dichte meist Bundesstraßen.
+Kfz-Dichte meist Bundesstraßen. In osm this is a highway=primary
+within cities.
 
 =item H
 
-Main streets (Hauptstraßen)
+Main streets (Hauptstraßen). In osm this is a highway=secondary.
+
+=item NH
+
+Experimental, not yet fully supported in bbbike. In osm this is a
+highway=tertiary.
 
 =item N
 
-Nebenstraßen
+Nebenstraßen. In osm this is a highway=residential.
 
 =item NN
 
-Für Kfz gesperrte Straßen.
+Für Kfz gesperrte Straßen. In osm this is either a highway=footway or
+highway=cycleway.
 
 =item Pl
 

@@ -275,7 +275,7 @@ sub make_net_cat {
 # For $type only "N_RW" is defined now:
 #    H    => H, B or HH without cycle path
 #    H_RW => same with
-#    N    => N or NN without cycle path
+#    N    => NH, N or NN without cycle path
 #    N_RW => same with
 # %args: may be UseCache => $boolean
 ### AutoLoad Sub

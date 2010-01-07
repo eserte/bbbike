@@ -374,7 +374,7 @@ $p_draw{"pp-all"} = 0;   # pp drawing only for the tag types below:
 for (qw(s l r b u w f v e z g gP gD gBO sBAB fz wr)) { $p_draw{"pp-$_"} = 1} # this list should cover most keys of %str_file (but not the dependent ones like "comm" or "qs")
 $p_draw{'lsa'} = 1;
 $p_far_away{'o'} = 0;
-$str_restrict{'s'}  = {qw(BAB 0 B 1 HH 1 H 1 N 1 NN 1 Pl 0 Br 0)}; # Pl = places, Br = bridges
+$str_restrict{'s'}  = {qw(BAB 0 B 1 HH 1 H 1 NH 1 N 1 NN 1 Pl 0 Br 0)}; # Pl = places, Br = bridges
 # NOTE: This is misused for getting all valid RBahn categories:
 $str_restrict{'r'}  = {qw(RA 1 RB 1 RC 1 R 1 R0 0 RBau 0 RG 1 RP 0)};
 $str_restrict{'b'}  = {qw(S 1 SA 1 SB 1 SC 1 S0 0 SBau 0 SBetrieb 0)};
@@ -511,7 +511,7 @@ for(0..$#Radwege::category_order, "") {
     $radwege_speed{"RW$_"} = 100;
 }
 
-@strcat_order = qw(B HH H N NN);
+@strcat_order = qw(B HH H NH N NN);
 if (0) { # not enabled by default
     unshift @strcat_order, "BAB";
 }
@@ -1253,8 +1253,9 @@ if (!$rot_bold_font_sub) {
 				  . "-0-0-p-0-iso8859-1"};
 }
 %category_rot_font =
-  ('N'   => $rot_font_sub,
-   'NN'  => $rot_font_sub,
+  ('NN'  => $rot_font_sub,
+   'N'   => $rot_font_sub,
+   'NH'  => $rot_font_sub,
    'H'   => $rot_bold_font_sub,
    'HH'  => $rot_bold_font_sub,
    'B'   => $rot_bold_font_sub,
@@ -1990,6 +1991,7 @@ unless($skip_features{"strassen"}) {
 	$strcm->entryconfigure('last', -menu => $skm);
 	my @l = ([M"wichtige Hauptstraßen", 'HH'],
 		 [M"Hauptstraßen", 'H'],
+		 ($devel_host || $city_obj->is_osm_source ? [M"wichtige Nebenstraße", 'NH'] : ()), # XXX good name for this?
 		 [M"Nebenstraßen", 'N'],
 		 [M"für Kfz gesperrte Straßen", 'NN']);
 	foreach (@l) {
@@ -5018,6 +5020,7 @@ sub handle_options {
 				HH => 100,
 				#BAB => 100,
 				H  => 100,
+				NH => 100,
 				N  => 100,
 				NN => 100},
 	  label => M"Straßenkategorien konfigurieren", var => \%strcat_speed,
@@ -5536,8 +5539,9 @@ sub define_item_attribs {
 # Stelle definiert ist, z.B. beim U-Bahn-Symbol oder in der Legende
     my @area_cats = qw(P W I Ae ex-Ae Forest Cemetery Orchard Green Sport Industrial Mine);
     %category_color =
-	('N'  => 'grey98',
-	 'NN' => '#bdffbd',
+	('NN' => '#bdffbd',
+	 'N'  => 'grey98',
+	 'NH' => '#ffffc0',     # noch blasseres gelb --- XXX überhaupt unterscheidbar?
 	 'H'  => '#ffffa0', 	# blassgelb
 	 'HH' => '#fff800', 	# kräftiges gelb
 	 'BAB' => 'DarkBlue',
@@ -5745,13 +5749,14 @@ sub define_item_attribs {
 	('Cemetery' => 'crosses.xbm');
 
     %line_width =
-	('s-H'      => [1, 2, 3, 4, 6, 10],
+	('s-NN'     => [1, 1, 2, 2, 4, 7],
+	 's-N'      => [1, 1, 2, 2, 4, 7],
+	 's-NH'     => [1, 1, 2, 3, 5, 8],
+	 's-H'      => [1, 2, 3, 4, 6, 10],
 	 's-HH'     => [1, 2, 3, 4, 6, 10],
 	 's-B'      => [1, 2, 3, 4, 6, 10],
 	 's-BAB'    => [1, 2, 3, 4, 6, 10],
 	 'sBAB-BAB' => [1, 2, 3, 4, 6, 10],
-	 's-N'      => [1, 1, 2, 2, 4, 7],
-	 's-NN'     => [1, 1, 2, 2, 4, 7],
 	 'comm'     => [1, 2, 3, 4, 6, 10],
 	 'mount'    => [1, 2, 3, 4, 6, 10],
 	 'qs'       => [3, 4, 5, 6, 8, 12],
@@ -5780,7 +5785,7 @@ sub define_item_attribs {
 	 'b-SBetrieb' => [1, 1, 2, 3, 4, 6],
 	 'default'  => [1, 2, 3, 4, 6, 10],
 	);
-    foreach (qw/H HH B BAB N NN/) {
+    foreach (qw/NN N NH H HH B BAB/) {
 	$line_width{"l-$_"} = [@{ $line_width{"s-$_"}}];
     }
     foreach (qw/sperre1s/) {
@@ -5853,8 +5858,9 @@ sub define_item_attribs {
 	);
     # Label size per category
     %category_size =
-	('N'  => 8,
-	 'NN' => 7,
+	('NN' => 7,
+	 'N'  => 8,
+	 'NH' => 9,
 	 'H'  => 10,
 	 'HH' => 10,
 	 'B'  => 10,
@@ -6006,6 +6012,7 @@ sub define_item_attribs {
 	 'B'  => [M"Bundesstraße", M"Bundesstraßen", undef],
 	 'H'  => [M"Hauptstraße", M"Hauptstraßen", undef],
 	 'N'  => [M"Nebenstraße", M"Nebenstraßen", undef],
+	 'NH' => [M"wichtige Nebenstraße", M"wichtige Nebenstraßen", undef],
 	 'NN' => [M"für Kfz gesperrte Straße", M"für Kfz gesperrte Straßen", undef],
 	 'Pl' => [M"Platz", M"Plätze", undef],
 	 'BAB'=> [M"Autobahn", M"Autobahnen", undef],
@@ -6124,7 +6131,7 @@ sub define_item_attribs {
 
     %tag_group =		# group related tags (for stacking)
 	('str_s' => ['s-out', 'gr', 'rw',
-		     's-NN', 's-N', 's-H', 's-HH', 's-B', 's-BAB', 'sBAB-BAB', 'sBAB-fg',
+		     's-NN', 's-N', 's-NH', 's-H', 's-HH', 's-B', 's-BAB', 'sBAB-BAB', 'sBAB-fg',
 		     'comm', (map { "comm-$_" } @comments_types),
 		     'nl', 'qs', 'hs', 'mount',
 		     's-label-bg', 'sBAB-label-bg', 's-label', 'sBAB-label',
@@ -6155,7 +6162,7 @@ sub define_item_attribs {
     @normal_stack_order =
 	(qw(map f w-out w i-out i f-Pabove *landuse* e e-img
 	    gP gD z g gP gD gBO
-	    s-out l-out show gr rw s-NN s-N s-H s-HH s-B s-BAB sBAB sBAB-BAB sBAB-fg l v
+	    s-out l-out show gr rw s-NN s-N s-NH s-H s-HH s-B s-BAB sBAB sBAB-BAB sBAB-fg l v
 	    f-label-bg wr w-label-bg gBO-label-bg f-label w-label i-label gBO-label
 	    u sperre_u u-bg u-fg u_bg-img r sperre_r b sperre_b
 	    r-bg r-fg r_bg-img b-bg b-fg b_bg-img GU-img
@@ -8722,8 +8729,9 @@ sub enter_opt_preferences {
 						  );
     $gridy++;
     # XXX no BAB here!
-    for (qw(HH H N NN)) {
+    for (qw(HH H NH N NN)) {
 	my $i = $_;
+	next if $_ eq 'NH' && !$city_obj->is_osm_source && !$devel_host; # XXX maybe only restrict in edit mode???
 	$act_page[1]->Label(-text => $category_attrib{$i}->[ATTRIB_PLURAL] . ": "
 			)->grid(-row => $gridy, -column => 0,
 				-sticky => 'w');
@@ -8757,12 +8765,14 @@ sub enter_opt_preferences {
 	   -command => sub {
 	       my $i = 0;
 	       # XXX BAB
-	       for (qw(HH H N NN)) {
-		   $var2{$_} = [[100,100,1,1],
-				[100,100,12,12],
-				[100,100,100,100],
-				[12,12,100,100],
-				[1,1,100,100],
+	       # XXX should be relative to current speed, like in cgi!
+	       # XXX rethink penalty for NH, maybe like in cgi!
+	       for (qw(HH H NH N NN)) {
+		   $var2{$_} = [[100,100,100,1,1],
+				[100,100,100,12,12],
+				[100,100,100,100,100],
+				[12,12,100,100,100],
+				[1,1,100,100,100],
 			       ]->[$name2inx->{$default}][$i];
 		   $i++;
 	       }
@@ -9059,7 +9069,7 @@ sub enter_opt_preferences2 {
 	     [M"Radwege", M"Radwege vermeiden", M"Radwege bevorzugen"],
 	     [M"Steigung", M"Steigungen vermeiden", M"Steigungen bevorzugen"]);
 
-# Kategorie: B/HH: 3, H: 2, N: 1, NN: 0
+# Kategorie: B/HH: 3, H: 2, NH/N: 1, NN: 0
 
 # Kat     Scale	Res
 
@@ -15109,8 +15119,8 @@ sub scale_width {
 
 # XXX scale obst (mehrere Icon-Größen)
     foreach my $type
-	(qw(s-BAB sBAB-BAB s-HH s-B s-H s-N s-NN
-	    SBAB-BAB-out s-HH-out s-B-out s-H-out s-N-out s-NN-out
+	(qw(s-BAB sBAB-BAB s-HH s-B s-H s-NH s-N s-NN
+	    SBAB-BAB-out s-HH-out s-B-out s-H-out s-NH-out s-N-out s-NN-out
 	    rw
 	    w-W w-W0 w-W1 w-W2 w-W-out w-W0-out w-W1-out w-W2-out wr
 	    l l-out u b r pp p z g gP gD gBO fz
@@ -16382,6 +16392,7 @@ sub search_route {
 		$extra_args{Abbiegen} = {Penalty => $abbiege_penalty,
 					 Order   => {'NN' => 0,
 						     'N' => 1,
+						     'NH' => 1,
 						     'H' => 2,
 						     'HH' => 3,
 						     'BAB' => 3, # XXX

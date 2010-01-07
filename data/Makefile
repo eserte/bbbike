@@ -193,7 +193,8 @@ strassen:	.strassen.tmp plaetze routing_helper-orig
 	-@$(READONLY) $@
 
 .strassen.tmp: strassen-orig
-	$(CONVERT_ORIG) -keep-directive alias strassen-orig > $@~
+	$(CONVERT_ORIG) -keep-directive alias strassen-orig |\
+	    ${REPLACESTRASSEN} -catexpr 's/NH/N/' > $@~
 	mv $@~ $@
 
 .for f in ${COOKED_TARGETS}

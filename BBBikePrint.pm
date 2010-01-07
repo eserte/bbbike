@@ -434,7 +434,7 @@ sub draw_legend {
 	$left = $c->canvasx($c->width-10-$start_width);
     }
     my %str_category = ('u' => [qw(UA UB U0 UBau)],
-			's' => [qw(HH H N NN)],
+			's' => [qw(HH H), ($devel_host ? "NH" : ()), qw(N NN)],
 			'sBAB' => [qw(BAB)],
 			'r' => [qw(RA RB RC R RG R0 RBau)],
 			'b' => [qw(SA SB SC S0 SBau)],

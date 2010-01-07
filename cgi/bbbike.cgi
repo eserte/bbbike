@@ -3387,24 +3387,28 @@ sub search_coord {
 		$penalty = { "B"  => 4,
 			     "HH" => 4,
 			     "H"  => 4,
+			     "NH" => 2,
 			     "N"  => 1,
 			     "NN" => 1 };
 	    } elsif ($q->param('pref_cat') eq 'N1') {
 		$penalty = { "B"  => 1.5,
 			     "HH" => 1.5,
 			     "H"  => 1.5,
+			     "NH" => 1,
 			     "N"  => 1,
 			     "NN" => 1 };
 	    } elsif ($q->param('pref_cat') eq 'H1') {
 		$penalty = { "B"  => 1,
 			     "HH" => 1,
 			     "H"  => 1,
+			     "NH" => 1,
 			     "N"  => 1.5,
 			     "NN" => 1.5 };
 	    } elsif ($q->param('pref_cat') eq 'H2') {
 		$penalty = { "B"  => 1,
 			     "HH" => 1,
 			     "H"  => 1,
+			     "NH" => 2,
 			     "N"  => 4,
 			     "NN" => 4 };
 	    }
@@ -4482,6 +4486,7 @@ EOF
 			if ($cat) {
 			    my $cat_title = { NN => "Weg ohne Kfz",
 					      N  => "Nebenstraße",
+					      NH => "wichtige Hauptstraße",
 					      H  => "Hauptstraße",
 					      HH => "wichtige Hauptstraße",
 					      B  => "Bundesstraße",
