@@ -16885,8 +16885,8 @@ userdel	2::temp 9526,11911 9668,11928
 userdel	2::temp 9516,12010 9656,12021
 EOF
      },
-     { from  => undef, # 
-       until => undef, # XXX
+     { from  => 1262990710, #  undef
+       until => 1262990714, # XXX undef
        text  => 'Asphaltierung der Belziger Str., Einbahnstraße Richtung Westen',
        type  => 'handicap',
        data  => <<EOF,

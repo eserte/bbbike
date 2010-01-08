@@ -1417,15 +1417,7 @@ userdel	2::inwork 14835,10272 14888,10385
        undef,
        undef,
        undef,
-       {
-         'until' => undef,
-         'text' => 'Asphaltierung der Belziger Str., Einbahnstraße Richtung Westen',
-         'from' => undef,
-         'id' => 1990,
-         'data' => 'userdel	q4::inwork; 7110,9024 7315,9156
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
