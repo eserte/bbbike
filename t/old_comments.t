@@ -103,12 +103,12 @@ EOF
 - {}
 EOF
 
- 	     # Belziger Str.
-	     ["7315,9156", "6977,8934", <<EOF, "CS (Route)"],
+ 	     # Helmstr.
+	     ["7381,9165", "7444,9148", <<EOF, "CS (Route)"],
 - 'RR1': 1
   'RR12': 1
   'TR4': 1
-  'mäßiges, teilweise holpriges Kopfsteinpflaster (Teilstrecke)': 1
+  'gutes Kopfsteinpflaster': 1
 - {}
 EOF
 
