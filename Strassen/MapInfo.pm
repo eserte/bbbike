@@ -465,6 +465,7 @@ sub create_mif_mid_from_data_directory {
 	(B  => $rgb->(255,0,0), # red
 	 HH => $rgb->(255,255,0),
 	 H  => $rgb->(255,255,0),
+	 NH => $rgb->(120,120,120),
 	 N  => $rgb->(120,120,120),
 	 NN => $rgb->(0,200,0),
 
@@ -486,6 +487,7 @@ sub create_mif_mid_from_data_directory {
 	 B  => 4,
 	 HH => 4,
 	 H  => 3,
+	 NH => 3,
 	 N  => 3,
 	 NN => 3,
 

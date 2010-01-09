@@ -112,8 +112,9 @@ binmode OUT;
 my @extra_args;
 if ($ipaq) {
     push @extra_args, CategoryWidths => {B  => 2,
-					 H  => 2,
 					 HH => 2,
+					 H  => 2,
+					 NH => 1,
 					 N  => 1,
 					 NN => 1,
 					};

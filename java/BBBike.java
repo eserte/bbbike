@@ -118,6 +118,8 @@ System.err.println("x/y=" + berlin_mitte_txy[0] + "/" + berlin_mitte_txy[1]);
 	prop.put(CanvasProp.FILL, new Color(238,238,0));
       else if (ret.Category.equals("NN"))
 	prop.put(CanvasProp.FILL, Color.green);
+      else if (ret.Category.equals("NH"))
+	prop.put(CanvasProp.FILL, Color.white);
       else
 	prop.put(CanvasProp.FILL, Color.white);
       prop.put(CanvasProp.WIDTH, new Integer(5));

@@ -75,6 +75,7 @@ my %speed0;
 my %cat_to_highway = ('B'  => 'primary',
 		      'HH' => 'primary',
 		      'H'  => 'secondary',
+		      'NH' => 'tertiary',
 		      'N'  => 'residential',
 		      'NN' => 'cycleway', # XXX
 		     );

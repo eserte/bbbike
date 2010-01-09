@@ -175,8 +175,18 @@ for my $kr ($kr1, $kr2) {
     {
 	my %situation = situation_at_point_inorder($kr, qw(12891,12008 13066,11854 13217,11936));
 	is($situation{action}, 'left', "Ruedersdorfer/Wedekindstr");
+	local $TODO = "situation_at_point_inorder needs Vorfahrt detection based on street categories";
 	if ($kr == $kr2) {
 	    is($situation{traffic_rule}, 'bent_right_of_way', "Ruedersdorfer/Wedekindstr.: bent right of way");
+	}
+    }
+
+    # Bergmannstr./Südstern
+    {
+	my %situation = situation_at_point_inorder($kr, qw(10123,9233 10547,9233 10564,9292));
+	is($situation{action}, 'left', "Bergmannstr/Suedstern");
+	if ($kr == $kr2) {
+	    is($situation{traffic_rule}, 'bent_right_of_way', "Bergmannstr/Suedstern: bent right of way");
 	}
     }
 

@@ -113,7 +113,7 @@ sub cat2svgrgb {
 sub set_category_styles {
     my($self) = @_;
     %style = ();
-    for my $cat (qw(B HH H N NN
+    for my $cat (qw(B HH H NH N NN
 		    S SA SB SC S0 SBau
 		    R RA RB RC R0 RBau RG RP
 		    U UA UB    U0 UBau

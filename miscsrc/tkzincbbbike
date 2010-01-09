@@ -67,8 +67,9 @@ my $z = $mw->Scrolled("Zinc",
 }
 
 my    %category_color =
-	('N'  => 'grey98',
-	 'NN' => '#bdffbd',
+	('NN' => '#bdffbd',
+	 'N'  => 'grey98',
+	 'NH' => '#ffffc0',     # noch blasseres gelb
 	 'H'  => '#ffffa0', 	# blassgelb
 	 'HH' => '#fff800', 	# kräftiges gelb
 	 'BAB' => 'DarkBlue',
@@ -94,6 +95,7 @@ my    %category_color =
 my    %category_priority =
     (NN => 10,
      N => 11,
+     NH => 11,
      H => 12,
      HH => 13,
      B => 14,
@@ -106,12 +108,13 @@ my    %category_priority =
     );
 
 my    %line_width =
-	('s-H'      => [1, 2, 3, 4, 6, 10],
+	('s-NN'     => [1, 1, 2, 2, 4, 7],
+	 's-N'      => [1, 1, 2, 2, 4, 7],
+	 's-NH'     => [1, 1, 2, 3, 5, 8],
+	 's-H'      => [1, 2, 3, 4, 6, 10],
 	 's-HH'     => [1, 2, 3, 4, 6, 10],
 	 's-B'      => [1, 2, 3, 4, 6, 10],
 	 's-BAB'    => [1, 2, 3, 4, 6, 10],
-	 's-N'      => [1, 1, 2, 2, 4, 7],
-	 's-NN'     => [1, 1, 2, 2, 4, 7],
 );
 
 my $last_c;

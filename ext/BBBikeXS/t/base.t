@@ -146,10 +146,11 @@ SKIP: {
 
     use vars qw(%str_outline %category_color);
     $str_outline{"s"} = 1;
-    my @restr = ('HH', 'H', 'N', 'NN');
-    my $category_width = {'HH' => 6, 'H' => 4, 'N' => 2, 'NN' => 1};
-    %category_color = ('N'  => 'grey99',
-		       'NN' => '#bdffbd',
+    my @restr = ('HH', 'H', 'NH', 'N', 'NN');
+    my $category_width = {'HH' => 6, 'H' => 4, 'NH' => 3, 'N' => 2, 'NN' => 1};
+    %category_color = ('NN' => '#bdffbd',
+		       'N'  => 'grey99',
+		       'NH' => '#ffffc0',
 		       'H'  => 'yellow',
 		       'HH' => 'yellow2',
 		      );

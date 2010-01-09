@@ -1220,7 +1220,7 @@ LAYER
 [%  xxx_is_first = 0 -%]
 [% END -%]
   CLASS
-    EXPRESSION 'N'
+    EXPRESSION /^NH?$/
 [% IF p.legend -%]
     NAME "Nebenstraﬂe"
 [% END -%]

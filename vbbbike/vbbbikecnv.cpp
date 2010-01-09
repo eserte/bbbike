@@ -16,13 +16,17 @@ inline int vbbbikeCanvasPane::getCategory(char* catStr) {
   case 'H':
     switch (catStr[1]) {
     case 0: cat = Hitem; break;
-    case 'H': cat = HHitem; break;
+    case 'H': cat = HHitem; break; // HH
     default: cat = Xitem;
     }
     break;
   case 'N':
-    if (catStr[1] == 0) cat = Nitem;
-    else cat = NNitem;
+    switch (catStr[1]) {
+    case 0: cat = Nitem; break;
+    case 'H': cat = NHitem; break; // NH
+    case 'N': cat = NNitem; break; // NN
+    defailt: cat = Xitem;
+    }
     break;
   case 'B':
     cat = BABitem;
@@ -318,6 +322,7 @@ printf("%d %d %d %d\n", x, xx, y, yy);
 	case BABitem: SetPen(bluePen); break;
 	case HHitem:  SetPen(darkYellowPen); break;
 	case Hitem:   SetPen(yellowPen); break;
+	case NHitem:  SetPen(whitePen); break;
 	case Nitem:   SetPen(whitePen); break;
 	case NNitem:  SetPen(greenPen); break;
 	case SAitem:

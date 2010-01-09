@@ -893,7 +893,7 @@ LAYER
     SIZE 1
   END
   CLASS
-    EXPRESSION 'N'
+    EXPRESSION /^NH?$/
 [%# IF p.legend -%]
     NAME "Nebenstraﬂe"
 [%# END -%]

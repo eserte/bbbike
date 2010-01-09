@@ -1,7 +1,8 @@
 #XXX from bbbike:
 %category_color =
-  ('N'  => 'grey98',
-   'NN' => '#bdffbd',
+  ('NN' => '#bdffbd',
+   'N'  => 'grey98',
+   'NH' => '#ffffc0',
    'H'  => 'yellow',
    'HH' => 'yellow2',
    'BAB' => 'DarkBlue',

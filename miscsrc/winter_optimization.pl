@@ -142,6 +142,7 @@ while(my($k1,$v) = each %{ $net{"s"}->{Net} }) {
 
 	    my $cat_num = {NN => 1,
 			   N  => 3,
+			   NH => 4,
 			   H  => 5,
 			   HH => 6,
 			   B  => 6,

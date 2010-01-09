@@ -144,7 +144,7 @@ Elevation=m
 Levels=@{[ $levels + 1 ]}
 ; with Pl, POI etc.
 Level0=24
-; with NN/N
+; with NN/N/NH
 Level1=22
 ; with H
 Level2=20
@@ -451,6 +451,7 @@ sub cat2type {
     # normal street categories
     return 2 if $cat =~ m{^B$anyquality$} || $cat =~ m{^HH$anyquality$}; # Principal HWY-thick
     return 3 if $cat =~ m{^H$anyquality$}; # Principal HWY - medium
+    return 4 if $cat =~ m{^NH$anyquality$}; # Arterial Road - medium
     return 4 if $cat =~ m{^N$anyquality$}; # Arterial Road - medium
     return 6 if $cat =~ m{^NN$anyquality$}; # Road - thin
 

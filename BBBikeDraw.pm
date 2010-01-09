@@ -554,8 +554,9 @@ sub set_category_colors {
     my $code = "package $pkg;\n" . <<'EOF';
 
     %color = (B  => $red,
-	      H  => $yellow,
 	      HH => $yellow,
+	      H  => $yellow,
+	      NH => $white,
 	      N  => $white,
 	      NN => $lightgreen,
 	      S  => $darkgreen,
@@ -619,8 +620,9 @@ sub set_category_outline_colors {
     my $code = "package $pkg;\n" . <<'EOF';
 
     %outline_color = (B  => $black,
-		      H  => $black,
 		      HH => $black,
+		      H  => $black,
+		      NH => $darkgrey,
 		      N  => $darkgrey,
 		      NN => $darkgrey,
 		      W  => $darkblue,
@@ -666,8 +668,9 @@ sub set_category_widths {
     my $code = "package $pkg;\n" . <<'EOF';
 
     %width = (B  => 3*$m,
-	      H  => 3*$m,
 	      HH => 3*$m,
+	      H  => 3*$m,
+	      NH => 2*$m,
 	      N  => 2*$m,
 	      NN => 2*$m,
 	      S  => 2*$m,

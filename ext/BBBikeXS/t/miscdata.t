@@ -48,8 +48,8 @@ plan tests => 17;
 $mw->geometry("+10+10");
 $mw->Button(-text => "Close", -command => sub { $mw->destroy })->pack(-side => "bottom");
 my $c = $mw->Scrolled("Canvas")->pack(qw(-fill both -expand 1));
-my @restr = ('HH', 'H', 'N', 'NN');
-my $category_width = {'HH' => 6, 'H' => 4, 'N' => 2, 'NN' => 1};
+my @restr = ('HH', 'H', 'NH', 'N', 'NN');
+my $category_width = {'HH' => 6, 'H' => 4, 'NH' => 3, 'N' => 2, 'NN' => 1};
 
 # Incomplete line (no category)
 {

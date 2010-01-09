@@ -134,6 +134,7 @@ private:		//--------------------------------------- private
 
     NNitem,
     Nitem,
+    NHitem,
     Hitem,
     HHitem,
     BABitem,
