@@ -3,10 +3,9 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 9.30 2009/04/04 11:13:58 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998-2009 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998-2010 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
 # terms of the GNU General Public License, see the file COPYING.
 #
@@ -724,7 +723,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 9.30 $ =~ /(\d+)\.(\d+)/);
+$VERSION = 10.001;
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -6227,7 +6226,7 @@ sub header {
 	     -BGCOLOR => '#ffffff',
 	     ($use_background_image && !$printmode ? (-BACKGROUND => "$bbbike_images/bg.jpg") : ()),
 	     -meta=>{'keywords'=>'berlin fahrrad route bike karte suche cycling route routing routenplaner routenplanung fahrradroutenplaner radroutenplaner entfernungsrechner',
-		     'copyright'=>'(c) 1998-2009 Slaven Rezic',
+		     'copyright'=>'(c) 1998-2010 Slaven Rezic',
 		    },
 	     -author => $BBBike::EMAIL,
 	    );
@@ -7286,9 +7285,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2009/04/04 11:13:58 $';
-    ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
-    $cgi_date =~ s{/}{-}g;
+    my $cgi_date = eval { require POSIX; POSIX::strftime("%F", localtime((stat($0))[9])) };
     my $data_date;
     for (@Strassen::datadirs) {
 	if (my(@s) = stat "$_/.modified") {
@@ -7442,7 +7439,7 @@ Slaven Rezic <slaven@rezic.de>
 
 =head1 COPYRIGHT
 
-Copyright (C) 1998-2009 Slaven Rezic. All rights reserved.
+Copyright (C) 1998-2010 Slaven Rezic. All rights reserved.
 This is free software; you can redistribute it and/or modify it under the
 terms of the GNU General Public License, see the file COPYING.
 
