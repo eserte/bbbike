@@ -115,7 +115,7 @@ sub _bbox_standard_coordsys {
 sub _center_standard_coordsys {
     my $self = shift;
     my $xy = $self->center;
-    $self->coord_s_to_standard($xy);
+    $self->coord_to_standard_s($xy);
 }
 
 # sub datadir {
