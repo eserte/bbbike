@@ -838,11 +838,14 @@ sub get_anti_conversion {
 # get_directive_for_iterator)
 # Arguments:
 #  -idadd => $string      add this string to the id of the created object
-#  -preservedir => $bool  preserve directives
+#  -preservedir => $bool  preserve local directives
+# Note that global directives are always preserved.
 sub grepstreets {
     my($s, $sub, %args) = @_;
     my $new_s = Strassen->new;
     $new_s->{DependentFiles} = [ $s->dependent_files ];
+    require Storable;
+    $new_s->set_global_directives(Storable::dclone($s->get_global_directives));
     if ($args{-idadd}) {
 	my $id = $new_s->id;
 	$new_s->{Id} = $id . "_" . $args{-idadd};
