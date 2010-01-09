@@ -28,7 +28,7 @@ use Carp qw(confess);
 use vars qw($VERSION @colors %color %width %outline_color
 	    $sansserif $symbolfont $VERBOSE);
 BEGIN { @colors =
-         qw($grey_bg $white $yellow $red $green $middlegreen $darkgreen
+         qw($grey_bg $white $yellow $lightyellow $red $green $middlegreen $darkgreen
 	    $darkblue $lightblue $rose $black $darkgrey $lightgreen);
 }
 use vars @colors;
@@ -147,6 +147,7 @@ sub allocate_colors {
 
     $white       = [1,1,1] if !defined $white;
     $yellow      = [1,1,0] if !defined $yellow;
+    $lightyellow = [1,1,0.7] if !defined $lightyellow;
     $red         = [1,0,0];
     $green       = [0,1,0];
     $darkgreen   = [0,0.5,0];

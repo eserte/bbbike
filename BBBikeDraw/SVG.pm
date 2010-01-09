@@ -23,7 +23,7 @@ use Carp qw(confess);
 
 use vars qw($VERSION @colors %color %style %width %outline_color $sansserif);
 BEGIN { @colors =
-         qw($grey_bg $white $yellow $red $green $middlegreen $darkgreen
+         qw($grey_bg $white $yellow $lightyellow $red $green $middlegreen $darkgreen
 	    $darkblue $lightblue $rose $black $darkgrey $lightgreen);
 }
 use vars @colors;

@@ -28,7 +28,7 @@ use Imager;
 use vars qw($VERSION @colors %color %outline_color %width
 	    $TTF_STREET $TTF_CITY);
 BEGIN { @colors =
-         qw($grey_bg $white $yellow $red $green $middlegreen $darkgreen
+         qw($grey_bg $white $yellow $lightyellow $red $green $middlegreen $darkgreen
 	    $darkblue $lightblue $rose $black $darkgrey $lightgreen);
 }
 use vars @colors;

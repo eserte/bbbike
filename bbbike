@@ -5541,8 +5541,8 @@ sub define_item_attribs {
     %category_color =
 	('NN' => '#bdffbd',
 	 'N'  => 'grey98',
-	 'NH' => '#ffffc0',     # noch blasseres gelb --- XXX überhaupt unterscheidbar?
-	 'H'  => '#ffffa0', 	# blassgelb
+	 'NH' => '#ffffb0',     # noch blasseres gelb --- XXX überhaupt unterscheidbar?
+	 'H'  => '#ffff90', 	# blassgelb
 	 'HH' => '#fff800', 	# kräftiges gelb
 	 'BAB' => 'DarkBlue',
 	 'B'  => 'red3',

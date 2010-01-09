@@ -23,7 +23,7 @@ use Carp qw(confess);
 use vars qw($gd_version $VERSION $DEBUG @colors %color %outline_color %width
 	    $TTF_STREET $TTF_CITY $TTF_TITLE $TTF_SCALE);
 BEGIN { @colors =
-         qw($grey_bg $white $yellow $red $green $middlegreen $darkgreen
+         qw($grey_bg $white $yellow $lightyellow $red $green $middlegreen $darkgreen
 	    $darkblue $lightblue $rose $black $darkgrey $lightgreen);
 }
 use vars @colors;
