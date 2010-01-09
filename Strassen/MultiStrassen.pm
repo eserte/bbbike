@@ -76,7 +76,7 @@ sub new {
 	    $self->{GlobalDirectives}{map} = [$this_coordsys] if $this_coordsys ne 'bbbike';
 	    $first_coordsys = $this_coordsys;
 	} elsif ($this_coordsys ne $first_coordsys) {
-	    warn "WARN: Mismatching coord systems. First was '$first_coordsys', this one is '$this_coordsys'.\nExpect problems!";
+	    warn "WARN: Mismatching coord systems. First was '$first_coordsys', this one (" . $subobj->id . ") is '$this_coordsys'.\nExpect problems!\n";
 	}
     }
 
