@@ -15712,7 +15712,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_013998',
        data  => <<EOF,
-userdel	q4::inwork 14266,12446 14298,12553 14319,12629
+userdel	q4::inwork 14266,12446 14297,12553 14319,12629
 EOF
      },
      { from  => 1251530442, # 2009-08-29 09:20
