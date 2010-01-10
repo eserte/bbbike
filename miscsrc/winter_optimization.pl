@@ -77,10 +77,15 @@ if ($one_instance) {
     }
 }
 
+my $strassen_orig = "$FindBin::RealBin/../data/strassen-orig";
+
 my %str;
-#$str{"s"} = Strassen->new("strassen");
-my($strassen_with_NH_file) = create_strassen_with_NH();
-$str{"s"} = Strassen->new($strassen_with_NH_file);
+if (-r $strassen_orig) {
+    my($strassen_with_NH_file) = create_strassen_with_NH();
+    $str{"s"} = Strassen->new($strassen_with_NH_file);
+} else {
+    $str{"s"} = Strassen->new("strassen");
+}
 ## I don't think bridges are critical (and mostly if you have to use one, then usually you cannot avoid it at all)
 #$str{"br"} = Strassen->new("brunnels");
 $str{"qs"} = Strassen->new("qualitaet_s");
@@ -239,7 +244,7 @@ sub create_strassen_with_NH {
     use IPC::Run qw(run);
     my($tmpfh,$tmpfile) = tempfile(SUFFIX => ".bbd", UNLINK => 1);
     run(["$FindBin::RealBin/convert_orig_to_bbd", "-keep-directive", "alias",
-	 "$FindBin::RealBin/../data/strassen-orig"],
+	 $strassen_orig],
 	">", $tmpfile) or die $!;
     run(["$FindBin::RealBin/grepstrassen", "-v", "--namerx", ' \(Potsdam\)', 'plaetze'],
 	">>", $tmpfile) or die $!;
