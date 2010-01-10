@@ -3047,7 +3047,7 @@ EOF
 <option @{[ $winter_checked->("WI1") ]}>@{[ M("schwach") ]}
 <option @{[ $winter_checked->("WI2") ]}>@{[ M("stark") ]}
 </select></td>
- <td style="vertical-align:bottom">@{[ experimental_label() ]}<small><a target="BBBikeHelp" href="$bbbike_html/help.html#winteroptimization" onclick=show_help@{[ $lang ? "_$lang" : "" ]}('winteroptimization'); return false;">@{[ M("Was ist das?") ]}</a></small></td>
+ <td style="vertical-align:bottom">@{[ experimental_label() ]}<small><a target="BBBikeHelp" href="$bbbike_html/help.html#winteroptimization" onclick="show_help@{[ $lang ? "_$lang" : "" ]}('winteroptimization'); return false;">@{[ M("Was ist das?") ]}</a></small></td>
 </tr>
 EOF
     }
@@ -3184,7 +3184,7 @@ sub search_coord {
 		    if ($try == 2) {
 			die "Can't find winter_optimization.st in @Strassen::datadirs and cannot build...";
 		    } else {
-			system("$FindBin::RealBin/../miscsrc/winter_optimization.pl", "-one-instance");
+			system("$FindBin::RealBin/../miscsrc/winter_optimization.pl", "-winter-hardness", 2, "-one-instance");
 		    }
 		} else {
 		    last;
