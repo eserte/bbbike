@@ -1148,12 +1148,12 @@ Naugarder Str. -> Greifswalder Str.: Mittelstreifen mit Straßenbahn	3::igndisp 1
 Mittelstreifen mit Straßenbahn	3nocross::ignrte 11642,14625 11662,14695 11681,14759
 Jablonskistr. -> Prenzlauer Allee: Mittelstreifen mit Straßenbahn	3::igndisp 11955,14531 11662,14695 11642,14625
 Prenzlauer Allee -> Jablonskistr.: Mittelstreifen mit Straßenbahn	3::igndisp 11681,14759 11662,14695 11955,14531
-Mittelstreifen mit Straßenbahn, aber Furt in der Nähe	3nocross::ignrte 11801,15132 11822,15193 11852,15281
-Hiddenseer Str. -> Prenzlauer Allee: Mittelstreifen mit Straßenbahn, aber Furt in der Nähe	3::igndisp 11655,15253 11822,15193 11852,15281
-Prenzlauer Allee -> Hiddenseer Str.: Mittelstreifen mit Straßenbahn, aber Furt in der Nähe	3::igndisp 11801,15132 11822,15193 11655,15253
-Mittelstreifen mit Straßenbahn, aber Ampel in der Nähe	3nocross::ignrte 11776,15060 11801,15132 11822,15193
-Prenzlauer Allee -> Stubbenkammerstr.: Mittelstreifen mit Straßenbahn, aber Ampel in der Nähe	3::igndisp 11776,15060 11801,15132 11643,15189
-Stubbenkammerstr. -> Prenzlauer Allee: Mittelstreifen mit Straßenbahn, aber Ampel in der Nähe	3::igndisp 11643,15189 11801,15132 11822,15193
+Mittelstreifen mit Straßenbahn, aber Furt in der Nähe	3nocross::ignrte 11801,15132 11828,15210 11852,15281
+Hiddenseer Str. -> Prenzlauer Allee: Mittelstreifen mit Straßenbahn, aber Furt in der Nähe	3::igndisp 11657,15271 11828,15210 11852,15281
+Prenzlauer Allee -> Hiddenseer Str.: Mittelstreifen mit Straßenbahn, aber Furt in der Nähe	3::igndisp 11801,15132 11828,15210 11657,15271
+Mittelstreifen mit Straßenbahn, aber Ampel in der Nähe	3nocross::ignrte 11776,15060 11801,15132 11828,15210
+Stubbenkammerstr. -> Prenzlauer Allee: Mittelstreifen mit Straßenbahn, aber Ampel in der Nähe	3::igndisp 11636,15191 11801,15132 11828,15210
+Prenzlauer Allee -> Stubbenkammerstr.: Mittelstreifen mit Straßenbahn, aber Ampel in der Nähe	3::igndisp 11776,15060 11801,15132 11636,15191
 Mittelstreifen mit Straßenbahn, hier aber Fußgängerfurt vorhanden	3nocross::ignrte 11712,14868 11681,14759 11662,14695
 Chodowieckistr. -> Prenzlauer Allee: Mittelstreifen mit Straßenbahn, hier aber Fußgängerfurt vorhanden	3::igndisp 11992,14599 11681,14759 11662,14695
 Prenzlauer Allee -> Chodowieckistr.: Mittelstreifen mit Straßenbahn, hier aber Fußgängerfurt vorhanden	3::igndisp 11712,14868 11681,14759 11992,14599

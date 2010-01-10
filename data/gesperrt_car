@@ -108,7 +108,7 @@ Prenzlauer Allee - Belforter Str.	3 11389,13887 11435,14023 11299,14112
 Prenzlauer Allee - Heinrich-Roller-Str.	3 11506,14230 11476,14142 11468,14121 11435,14023 11616,13911
 Heinrich-Roller-Str. - Prenzlauer Allee	3 11616,13911 11435,14023 11389,13887
 Allerstr.	1 11879,7720 12055,7751
-Hiddenseer Str.	1 11655,15253 11822,15193
+Hiddenseer Str.	1 11657,15271 11828,15210
 Koserstr.	1 2950,6141 3112,6090 3118,6140 3209,6206 3309,6270
 Offenbacher Str.	1 4515,7743 4575,7675 4785,7609 5039,7627
 Wassergasse	1 11034,11895 11022,11782
@@ -132,14 +132,14 @@ Roennebergstr.	1 5533,6753 5357,6932
 Matternstr.	1 13798,13003 13579,12904
 Ebelingstr.	1 13707,13206 13610,13169 13487,13115
 John-Schehr-Str. - Greifswalder Str.	3 12573,14581 12422,14692 12403,14663 12371,14615 12317,14535
-Prenzlauer Allee	3nocross::ignrte 11822,15193 11801,15132 11776,15060 11712,14868
-Prenzlauer Allee -> Stubbenkammerstr.: Prenzlauer Allee	3::igndisp 11776,15060 11801,15132 11643,15189
-Fröbelstr. -> Raumerstr.: Prenzlauer Allee	3::igndisp 11870,15004 11776,15060 11623,15108
+Prenzlauer Allee	3nocross::ignrte 11828,15210 11801,15132 11776,15060 11712,14868
+Prenzlauer Allee -> Stubbenkammerstr.: Prenzlauer Allee	3::igndisp 11776,15060 11801,15132 11636,15191
+Fröbelstr. -> Raumerstr.: Prenzlauer Allee	3::igndisp 11870,15004 11776,15060 11615,15114
 Fröbelstr. -> Prenzlauer Allee: Prenzlauer Allee	3::igndisp 11870,15004 11776,15060 11712,14868
+Raumerstr. -> Fröbelstr.: Prenzlauer Allee	3::igndisp 11615,15114 11776,15060 11870,15004
+Raumerstr. -> Prenzlauer Allee: Prenzlauer Allee	3::igndisp 11615,15114 11776,15060 11801,15132
 Prenzlauer Allee -> Fröbelstr.: Prenzlauer Allee	3::igndisp 11801,15132 11776,15060 11870,15004
-Raumerstr. -> Fröbelstr.: Prenzlauer Allee	3::igndisp 11623,15108 11776,15060 11870,15004
-Raumerstr. -> Prenzlauer Allee: Prenzlauer Allee	3::igndisp 11623,15108 11776,15060 11801,15132
-Prenzlauer Allee -> Raumerstr.: Prenzlauer Allee	3::igndisp 11712,14868 11776,15060 11623,15108
+Prenzlauer Allee -> Raumerstr.: Prenzlauer Allee	3::igndisp 11712,14868 11776,15060 11615,15114
 Große Weinmeisterstr. (Potsdam)	1 -12557,11 -12582,127 -12618,296
 Stellmacherweg	1 13151,2958 13453,2930
 Hittorfstr	1 2442,4806 2469,4882 2516,4936 2587,4965
@@ -170,7 +170,7 @@ Leuthener Str.	1 7716,8356 7640,8359
 Lüdenscheider Weg	1 -1389,15285 -1037,15482
 Büsingstr.	1 5215,6643 5210,6522
 Schrammstr.	1 4960,8440 4958,8344
-Stubbenkammerstr.	1 11643,15189 11801,15132
+Stubbenkammerstr.	1 11636,15191 11801,15132
 Templiner Str.	1 10725,14189 10751,14229
 Heylstr.	1 6459,8281 6385,8274 6325,8259
 Fritz-Reuter-Str. (Schöneberg)	1 6621,8221 6779,8279
