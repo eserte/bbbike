@@ -1,0 +1,32 @@
+/* XPM */
+static char *kreuzung_klein[] = {
+/* columns rows colors chars-per-pixel */
+"8 7 19 1",
+"  c #666666",
+". c #6C6C6C",
+"X c #D63939",
+"o c #D53B3B",
+"O c #BF6F6F",
+"+ c #CC4B4B",
+"@ c #D64343",
+"# c #D24747",
+"$ c #D54848",
+"% c #CE5757",
+"& c #C76B6B",
+"* c #E16B6B",
+"= c #888888",
+"- c #898989",
+"; c #EEACAC",
+": c #D0D0D0",
+"> c #F6D2D2",
+", c #F6F6F6",
+"< c None",
+/* pixels */
+"<<<&&<<<",
+"<<<XX<<<",
+"<<%;;%<<",
+"<<$::$<<",
+"<#> .>#<",
+"O*,--,*O",
+"+o@@@@X+"
+};

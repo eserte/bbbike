@@ -861,6 +861,20 @@ Auf Schrittgeschwidigkeit (z.B. in FuE<szlig>gE<auml>ngerzonen).
 
 =back
 
+=head2 RIGHT OF WAY
+
+=over
+
+=item C<Vf>
+
+Vorfahrt
+
+=item C<Kz>
+
+Kreuzung ohne Vorfahrtsregelung
+
+=back
+
 =head2 COMMENTS
 
 Used in files: F<comments_cyclepath> (alternative way to attribute

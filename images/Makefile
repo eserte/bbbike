@@ -143,6 +143,8 @@ png-to-gif:	\
 		kopfstein_klein.gif \
 		kopfstein_klein_grey.gif \
 		kreisverkehr.gif \
+		kreuzung.gif \
+		kreuzung_klein.gif \
 		legend_blocked.gif \
 		legend_blockedroute.gif \
 		legend_carry.gif \
@@ -214,6 +216,8 @@ png-to-xpm:	\
 		hatched_ring.xpm \
 		kirsche.xpm \
 		kreisverkehr.xpm \
+		kreuzung.xpm \
+		kreuzung_klein.xpm \
 		mapserver_logo.xpm \
 		mosque.xpm \
 		museum.xpm \

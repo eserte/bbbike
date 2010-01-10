@@ -1990,7 +1990,7 @@ unless($skip_features{"strassen"}) {
 	$strcm->entryconfigure('last', -menu => $skm);
 	my @l = ([M"wichtige Hauptstraßen", 'HH'],
 		 [M"Hauptstraßen", 'H'],
-		 ($devel_host || $city_obj->is_osm_source ? [M"wichtige Nebenstraße", 'NH'] : ()), # XXX good name for this?
+		 ($devel_host || $city_obj->is_osm_source ? [M"wichtige Nebenstraße", 'NH'] : ()), # XXX good name for this? Some osm records have the comment "Ergänzungsstraße mit besonderer Bedeutung"
 		 [M"Nebenstraßen", 'N'],
 		 [M"für Kfz gesperrte Straßen", 'NN']);
 	foreach (@l) {
@@ -5420,6 +5420,7 @@ sub standard_selection_handle {
 }
 
 sub load_photos {
+    # Note that some rarely used photos are loaded on-demand.
     $flag_photo{'start'} = load_photo($top, 'flag2_bl');
     $flag_photo{'via'}   = load_photo($top, 'flag_via');
     $flag_photo{'ziel'}  = load_photo($top, 'flag_ziel');
@@ -5432,8 +5433,6 @@ sub load_photos {
     $andreaskr_klein_photo = load_photo($top, 'andreaskr_klein');
     $andreaskr_klein2_photo= load_photo($top, 'andreaskr_klein2');
     $andreaskr_photo     = load_photo($top, 'andreaskr');
-    $vorfahrt_photo      = load_photo($top, 'vorfahrt');
-    $vorfahrt_klein_photo= load_photo($top, 'vorfahrt_klein');
     $kreisverkehr_photo  = load_photo($top, 'kreisverkehr');
     $windrose2_photo     = load_photo($top, 'windrose2');
     $kneipen_photo       = load_photo($top, 'glas');
@@ -6926,25 +6925,29 @@ EOF
 			           -tags => ["$abk-fg", "$xx,$yy", $pointname],
 			          );
 	        } elsif ($abk eq 'vf') {
-		    $c->createImage(transpose(@{Strassen::to_koord1($ret->[Strassen::COORDS][1])}),
-				    -tags => "$abk-fg");
-		    my($x1,$y1,$x2,$y2,$x3,$y3) =
-		      (transpose(@{Strassen::to_koord1($ret->[Strassen::COORDS][0])}),
-		       transpose(@{Strassen::to_koord1($ret->[Strassen::COORDS][1])}),
-		       transpose(@{Strassen::to_koord1($ret->[Strassen::COORDS][2])}));
-		    my $len1 = Strassen::Util::strecke([$x1,$y1], [$x2,$y2]);
-		    my $whole_len1 = $len1 > 20 ? 20 : $len1;
-		    my $len2 = Strassen::Util::strecke([$x2,$y2], [$x3,$y3]);
-		    my $whole_len2 = $len2 > 20 ? 20 : $len2;
-		    my($cx1,$cy1,$cx2,$cy2,$cx3,$cy3)
-		      = (($x1-$x2)/$len1*$whole_len1+$x2,
-		         ($y1-$y2)/$len1*$whole_len1+$y2,
-		         $x2,$y2,
-		         ($x3-$x2)/$len2*$whole_len2+$x2,
-		         ($y3-$y2)/$len2*$whole_len2+$y2,
-		        );
-		    $c->createLine($cx1,$cy1,$cx2,$cy2,$cx3,$cy3,
-			           -tags => "$abk-bg");
+		    my @tags = ("$abk-fg", "$xx,$yy", "$abk-$category-fg", "$abk-$i");
+		    if ($category eq 'Vf') {
+			my($x1,$y1,$x2,$y2,$x3,$y3) =
+			  (transpose(@{Strassen::to_koord1($ret->[Strassen::COORDS][0])}),
+			   transpose(@{Strassen::to_koord1($ret->[Strassen::COORDS][1])}),
+			   transpose(@{Strassen::to_koord1($ret->[Strassen::COORDS][2])}));
+		        $c->createImage($x2,$y2, -tags => \@tags);
+			my $len1 = Strassen::Util::strecke([$x1,$y1], [$x2,$y2]);
+			my $whole_len1 = $len1 > 20 ? 20 : $len1;
+			my $len2 = Strassen::Util::strecke([$x2,$y2], [$x3,$y3]);
+			my $whole_len2 = $len2 > 20 ? 20 : $len2;
+			my($cx1,$cy1,$cx2,$cy2,$cx3,$cy3)
+			  = (($x1-$x2)/$len1*$whole_len1+$x2,
+			     ($y1-$y2)/$len1*$whole_len1+$y2,
+			     $x2,$y2,
+			     ($x3-$x2)/$len2*$whole_len2+$x2,
+			     ($y3-$y2)/$len2*$whole_len2+$y2,
+			    );
+			$c->createLine($cx1,$cy1,$cx2,$cy2,$cx3,$cy3,
+				           -tags => "$abk-bg");
+		    } else {
+		        $c->createImage($x,$y, -tags => \@tags);
+		    }
 	        } elsif ($abk =~ /^L(\d+)/) {
 		    my $color = $category =~ /^\#/ ? $category : exists $layer_category_color{$abk} && exists $layer_category_color{$abk}{$category} ? $layer_category_color{$abk}{$category} : exists $category_color{$category} ? $category_color{$category} : undef;
 		    my $width = ($layer_category_line_width{$abk} && $layer_category_line_width{$abk}{$category}) || $category_width{$category} || $p_width{$abk} || $default_width || 6;
@@ -10840,7 +10843,9 @@ sub config_symbol {
 	$c->itemconfigure($tag_fg, -fill => 'red', -capstyle => 'projecting',
 			  -width => 8);
     } elsif ($abk eq 'vf') {
-	$c->itemconfigure($tag_fg, -image => get_symbol_scale($abk));
+	for my $cat (qw(Vf Kz)) {
+	    $c->itemconfigure("$abk-$cat-fg", -image => get_symbol_scale("$abk-$cat"));
+	}
 	$c->itemconfigure($tag_bg, -fill => 'black',
 			  -width => 3); # XXX width skalierbar machen
     } elsif ($abk =~ /^(kn|rest)$/) {
@@ -15192,7 +15197,7 @@ sub scale_width {
 	}
     }
 
-    foreach (qw(lsa-X lsa-B lsa-B0 lsa-F lsa-Zbr rest kn vf u b), ($XXX_use_old_R_symbol ? () : ('r'))) {
+    foreach (qw(lsa-X lsa-B lsa-B0 lsa-F lsa-Zbr rest kn vf-Vf vf-Kz u b), ($XXX_use_old_R_symbol ? () : ('r'))) {
 	$c->itemconfigure($_ . '-fg', -image => get_symbol_scale($_, $scale));
     }
     foreach (qw(e comm-tram)) {
@@ -15545,11 +15550,23 @@ sub get_symbol_scale {
 	    $photo = load_photo($top, $filename, -persistent => 1);
 	}
 	return $photo;
-    } elsif ($tag eq 'vf') {
+    } elsif ($tag eq 'vf-Vf') {
 	if ($myscale > 2*$mod) {
+	    $vorfahrt_photo = load_photo($top, 'vorfahrt') if !$vorfahrt_photo;
 	    return $vorfahrt_photo;
 	} elsif ($scale >= 0.5*$mod) {
+	    $vorfahrt_klein_photo = load_photo($top, 'vorfahrt_klein') if !$vorfahrt_klein_photo;
 	    return $vorfahrt_klein_photo;
+	} else {
+	    return undef;
+	}
+    } elsif ($tag eq 'vf-Kz') {
+	if ($myscale > 2*$mod) {
+	    $kreuzung_photo = load_photo($top, 'kreuzung') if !$kreuzung_photo;
+	    return $kreuzung_photo;
+	} elsif ($scale >= 0.5*$mod) {
+	    $kreuzung_klein_photo = load_photo($top, 'kreuzung_klein') if !$kreuzung_klein_photo;
+	    return $kreuzung_klein_photo;
 	} else {
 	    return undef;
 	}
