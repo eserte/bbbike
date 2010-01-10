@@ -35,12 +35,31 @@ use Fcntl qw(LOCK_EX LOCK_NB);
 
 my $do_display = 0;
 my $one_instance = 0;
+my $winter_hardness = 1;
 
 if (!GetOptions("display" => \$do_display,
 		"one-instance" => \$one_instance,
+		"winter-hardness=i" => \$winter_hardness,
 	       )) {
     die "usage: $0 [-display] [-one-instance]\n";
 }
+
+my %cat_to_usability = ($winter_hardness == 1 ? (NN => 1,
+						 N  => 3,
+						 NH => 4,
+						 H  => 5,
+						 HH => 6,
+						 B  => 6,
+						)
+			: $winter_hardness == 2 ? (NN => 1,
+						   N  => 2,
+						   NH => 4,
+						   H  => 5,
+						   HH => 6,
+						   B  => 6,
+						  )
+			: die "winter-hardness may be 1 or 2"
+		       );
 
 my $outfile = "$FindBin::RealBin/../tmp/winter_optimization.st";
 
@@ -62,9 +81,11 @@ my %str;
 #$str{"s"} = Strassen->new("strassen");
 my($strassen_with_NH_file) = create_strassen_with_NH();
 $str{"s"} = Strassen->new($strassen_with_NH_file);
-$str{"br"} = Strassen->new("brunnels");
+## I don't think bridges are critical (and mostly if you have to use one, then usually you cannot avoid it at all)
+#$str{"br"} = Strassen->new("brunnels");
 $str{"qs"} = Strassen->new("qualitaet_s");
-$str{"rw"} = Strassen->new("radwege_exact");
+## Bei Winterwetter können Radwege komplett ignoriert werden
+#$str{"rw"} = Strassen->new("radwege_exact");
 $str{"kfz"} = Strassen->new("comments_kfzverkehr");
 $str{"tram"} = Strassen->new("comments_tram");
 #lock_keys %str;
@@ -142,13 +163,7 @@ while(my($k1,$v) = each %{ $net{"s"}->{Net} }) {
 		}
 	    };
 
-	    my $cat_num = {NN => 1,
-			   N  => 3,
-			   NH => 4,
-			   H  => 5,
-			   HH => 6,
-			   B  => 6,
-			  }->{$main_cat};
+	    my $cat_num = $cat_to_usability{$main_cat};
 	    if (!defined $cat_num) {
 		my $rec = $net{"s"}->get_street_record($k1, $k2);
 		require Data::Dumper;
