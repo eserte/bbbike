@@ -285,7 +285,10 @@ do-rsync-bbbike-data:
 	-@date >> .last/do-rsync-bbbike-data
 
 post-rsync-bbbike-data:
-# Nothing to do anymore...
+	-@date >> .last/start-post-rsync-bbbike-data
+	-${SSH_PROG_AND_ARGS} -l ${BBBIKE_HOSTEUROPE_USER} ${BBBIKE_HOSTEUROPE_SSH_HOST} \
+	   "${BBBIKE_HOSTEUROPE_APACHE_DIR}/BBBike/miscsrc/winter_optimization.pl -one-instance -winter-hardness 2 &"
+	-@date >> .last/post-rsync-bbbike-data
 
 rsync-temp-blockings:
 	-@mkdir -p .last
