@@ -1589,14 +1589,14 @@ BERLIN_PLZ_RANGES=10 12 13 14
 
 unhandled-streets:	${BERLIN_PLZ_RANGES:S/^/${PERSISTENTTMPDIR}\/unhandled_streets_/:S/$/XXX.bbd/}
 
-${PERSISTENTTMPDIR}/naked-fragezeichen:	fragezeichen
-	${REPLACESTRASSEN} -nameexpr 's{:.*}{}' < fragezeichen > ${PERSISTENTTMPDIR}/naked-fragezeichen~
+${PERSISTENTTMPDIR}/naked-fragezeichen:	fragezeichen-orig
+	${REPLACESTRASSEN} -nameexpr 's{:.*}{}' < fragezeichen-orig > ${PERSISTENTTMPDIR}/naked-fragezeichen~
 	mv ${PERSISTENTTMPDIR}/naked-fragezeichen~ ${PERSISTENTTMPDIR}/naked-fragezeichen
 
 .for plz in ${BERLIN_PLZ_RANGES}
 ${PERSISTENTTMPDIR}/Berlin$(plz)XXX.coords.data:	Berlin.coords.data
 	${PERL} -F'\|' -nale '$$F[2] =~ m{^$(plz)} and print' Berlin.coords.data |\
-	    grep -v '[US]-Bhf ' | fgrep -v ' (Kolonie)' | grep -v '^(Kolonie |KGA )' \
+	    grep -v '[US]-Bhf ' | egrep -v ' \(Kolonie|Gaststätte|Insel\)' | egrep -v '^(Kolonie |KGA )' \
 		> ${PERSISTENTTMPDIR}/Berlin$(plz)XXX.coords.data~
 	mv ${PERSISTENTTMPDIR}/Berlin$(plz)XXX.coords.data~ ${PERSISTENTTMPDIR}/Berlin$(plz)XXX.coords.data
 

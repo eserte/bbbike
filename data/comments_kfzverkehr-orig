@@ -133,7 +133,7 @@ Odinstr.: Sackgasse (Teile)	-1 18006,9335 17898,9564 17890,9580 17866,9639
 #: by: Thilo Czerwonka:
 Hennensteig: verkehrsarme Nebenstraße, nur Anwohnerverkehr	-2 15860,156 15760,253 15657,436 15598,526
 #: by: Rasmus (pries):
-Katteweg: wenig Verkehr	-2 -3017,1056 -3222,1390
+Katteweg: wenig Verkehr	-2 -3017,1056 -3094,1183 -3192,1343 -3245,1427
 #: by: christian (czorr):
 Tulpenstr.: sehr wenig Autoverkehr	-2 3587,4514 3775,4632 3795,4644 3815,4657 3991,4773 4193,4897 4209,4908
 #: by: Michael Korok: vvv
@@ -169,7 +169,8 @@ Prießnitzstr.: sehr ruhig	-1 11351,19169 11407,19186 11549,19258
 Blenheimstr.: ruhige Straße in 30-km/h-Zone	-1 20473,15329 20565,15271 20617,15239 20687,15193 20811,15175 20904,15178 20970,15175 20976,15129
 #: by: Karin Millonig:
 Rufacher Weg: starker Verkehr insbesondere während Stoßzeiten trotz 30-km/h-Zone	+1 12207,1704 12179,1758 12160,1817 12245,2023 12286,2065 12582,2129 12738,2162
-Rosa-Luxemburg-Str.: noch immer teilweise Hauptstraßencharakter	+2 10755,13152 10846,13362 10852,13377 10825,13463 10790,13565 10777,13614 10746,13673
+#: note: seit NH von +2 auf +1 propagiert
+Rosa-Luxemburg-Str.: noch immer teilweise Hauptstraßencharakter	+1 10755,13152 10846,13362 10852,13377 10825,13463 10790,13565 10777,13614 10746,13673
 Gartenstr. (Mitte, Gesundbrunnen): auch im Rechts-vor-Links-Bereich relativ viel Verkehr	+1 9668,13629 9531,13797 9510,13823 9383,13978
 #: by: Helmut Stockinger:
 Gralsburgsteig: kaum befahrene Straße	-1 2164,25190 2206,25260 2038,25531 1950,25763 1924,26013
@@ -206,7 +207,7 @@ Gärtnerstr.: relativ stark befahren	+1 17488,15766 17378,15760 17238,15764 17115
 Lange Enden: tagsüber Lkw-Verkehr	+1 4732,21271 4660,21250 4376,21170
 Lange Enden: tagsüber Lkw-Verkehr	+1 4660,21250 4719,21232
 #: by: ^^^
-Bölschestr.: stärkerer Verkehr	+1 25579,5958 25571,5829 25567,5749 25553,5486 25548,5398 25546,5359 25544,5326 25539,5237 25524,5011 25519,4830
+#NH!!! Bölschestr.: stärkerer Verkehr	+1 25579,5958 25571,5829 25567,5749 25553,5486 25548,5398 25546,5359 25544,5326 25539,5237 25524,5011 25519,4830
 Bahnhofstr.: stärkerer Verkehr	+1 13590,20705 13403,20686 12909,20592 12835,20637 12821,20646 12814,20648 12760,20669 12563,20753 12442,20805 12331,20963 12298,21015 12168,21218
 #: by: Martina Wirth:
 Domnauer Str.: Straße wird nur durch Anwohner befahren	-1 7819,5953 7817,5719 7816,5682 7816,5519
