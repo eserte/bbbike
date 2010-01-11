@@ -2,10 +2,9 @@
 # -*- perl -*-
 
 #
-# $Id: check_str_plz,v 1.27 2007/08/26 21:23:03 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998,2004,2005 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998,2004,2005,2010 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -13,7 +12,11 @@
 # WWW:  http://bbbike.sourceforge.net
 #
 
-# überprüft Straßennamen gegen die PLZ-Datei
+=head1 NAME
+
+check_str_plz - check street names against zip file (PLZ-Datei)
+
+=cut
 
 use Getopt::Long;
 use FindBin;
@@ -28,31 +31,35 @@ use strict;
 unshift(@Strassen::datadirs, "$FindBin::RealBin/../data");
 
 my $do_multi_bez = 1;
-my $datafile = "strassen";
+my @datafile;
 my $ignore_in_parens = 1;
 my $ignore_bracket_part = 1;
 my $plzfield = PLZ::FILE_ZIP();
 my $plzdata;
 my $addstr;
 my $do_check_coords;
+my $do_reverse_check;
 my $ignore_plz_warnings;
 
 GetOptions("plzdata=s"  => \$plzdata,
 	   "plzfield=i" => \$plzfield,
 	   "addstr=s"   => \$addstr,
 	   "multibez!"  => \$do_multi_bez,
-	   "data=s"     => \$datafile,
+	   'data=s@'     => \@datafile,
 	   "ignoreparens!" => \$ignore_in_parens,
 	   "ignorebracketpart!" => \$ignore_bracket_part, # ignore [...]
 	   "ignoreplzwarnings!" => \$ignore_plz_warnings,
 	   "checkcoords!" => \$do_check_coords,
+	   "reversecheck" => \$do_reverse_check,
 	  ) or die <<EOF;
 usage: $0 [-plzdata plzdatafile] [-plzfield fieldindex]
-	  [-addstr bbdfile] [-[no]multibez] [-[no]checkcoords]
+	  [-addstr bbdfile] [-[no]multibez]
+	  [-[no]checkcoords] [-reversecheck]
 	  [-[no]ignoreparens] [-[no]ignorebracketpart] [-ignoreplzwarnings]
 	  -data bbdfile
 EOF
 
+@datafile = "strassen" if !@datafile;
 my $plz;
 if (!defined $plzdata) {
     $plz = PLZ->new();
@@ -63,6 +70,7 @@ my %str_in_plz;
 my %str_in_plz2;
 my %str_coord;
 my %str_coord_without_bezirk;
+my %seen_str;
 my $fh = gensym;
 open($fh, $plzdata) or die "$plzdata: $!";
 while(<$fh>) {
@@ -71,6 +79,7 @@ while(<$fh>) {
     $str_in_plz{$l[0]}->{$l[1]}++;
     $l[$plzfield]="" if $ignore_plz_warnings && !defined $l[$plzfield]; # may happen for example in Potsdam.coords.data
     $str_in_plz2{$l[0]}->{$l[$plzfield]}++;
+    $seen_str{$l[0]}->{$l[PLZ::FILE_CITYPART()]} = $l[PLZ::FILE_COORD()] if $do_reverse_check;
     $str_coord{$l[PLZ::FILE_NAME()]}->{$l[PLZ::FILE_CITYPART()]}
 	= $l[PLZ::FILE_COORD()];
     $str_coord_without_bezirk{$l[PLZ::FILE_NAME()]}
@@ -169,7 +178,7 @@ my @unknown;
 my @unknown2;
 my @no_coord;
 
-my $s = new Strassen $datafile;
+my $s = @datafile == 1 ? Strassen->new($datafile[0]) : MultiStrassen->new(@datafile);
 $s->init;
 while(1) {
     my $ret = $s->next;
@@ -189,6 +198,19 @@ while(1) {
     if ($name =~ s/\s+\(([^\(]+)\)$//) {
 	foreach (split(/,\s*/, $1)) {
 	    push(@bezirk, $_) unless /\?/ || /^(?:F|R)\s*\d+$/;
+	}
+    }
+
+    if ($do_reverse_check) {
+	if (!@bezirk) {
+	    delete $seen_str{$name};
+	} else {
+	    for my $bezirk (@bezirk) {
+		delete $seen_str{$name}->{$bezirk};
+	    }
+	    if (!keys %{ $seen_str{$name} }) {
+		delete $seen_str{$name};
+	    }
 	}
     }
 
@@ -262,6 +284,23 @@ while(1) {
 }
 $check_coords->();
 
+if ($do_reverse_check) {
+    if (keys %seen_str) {
+	for my $name (sort keys %seen_str) {
+	    my @bezirke = sort keys %{ $seen_str{$name} };
+	    my $coord = $seen_str{$name}->{$bezirke[0]};
+	    if ($coord) {
+		print "$name @bezirke\tX $coord\n";
+	    } else {
+		print "# $name @bezirke\n";
+	    }
+	}
+	exit 1;
+    } else {
+	exit 0;
+    }
+}
+
 if (@unknown || @unknown2 || @ambiguous || @no_coord) {
     print "="x70,"\n", join("\n", sort @unknown), "\n";
     print "="x70,"\n", join("\n", sort @unknown2), "\n";
@@ -292,5 +331,9 @@ For this, my C<psort> script (sort with a custom perl sub) may be
 used:
 
     ./check_str_plz -checkcoords |& psort -r -n -e 'm{distance is (\d+)m} ? $1 : 0' | less
+
+=head1 SEE ALSO
+
+L<PLZ>.
 
 =cut
