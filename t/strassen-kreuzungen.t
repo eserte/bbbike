@@ -162,12 +162,12 @@ for my $kr ($kr1, $kr2) {
 	}
     }
 
-    # Möckernstr.
+    # Rüdersdorfer Str.
     {
-	my %situation = situation_at_point_inorder($kr, qw(8779,9851 8780,9968 8783,10166));
-	is($situation{action}, '', q{Moeckernstr.: straight"});
+	my %situation = situation_at_point_inorder($kr, qw(13295,11792 13173,11788 13066,11854));
+	is($situation{action}, '', q{Ruedersdorfer.: straight"});
 	if ($kr == $kr2) {
-	    is($situation{traffic_rule}, 'right_of_way', "Moeckernstr.: right of way, straight");
+	    is($situation{traffic_rule}, 'right_of_way', "Ruedersdorfer.: right of way, straight");
 	}
     }
 
