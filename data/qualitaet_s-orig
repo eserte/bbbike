@@ -1202,7 +1202,7 @@ Hebbelstr.: gutes Pflaster	Q1 3117,11852 3251,12025 3258,12035 3295,12068
 Am Comeniusplatz: Kopfsteinpflaster	Q2 13275,11830 13406,11896
 Josef-Orlopp-Str.: Asphalt	Q0 15912,13153 16426,13145 16863,13138
 Landsberger Allee: Radwege nur mit mäßiger Qualität (Bordsteinkanten!)	Q1 16843,14420 17254,14451 17533,14484 17848,14523 18057,14549 18183,14573 18365,14607 18433,14620 18556,14687 18794,14819
-Landsberger Allee: Radwege nur mit mäßiger Qualität (Bordsteinkanten!)	Q1 20260,15434 20525,15571 20641,15622 20796,15667 20990,15664 21119,15635 21235,15641 21398,15671 21475,15705 21694,15802
+Landsberger Allee: Radwege nur mit mäßiger Qualität (Bordsteinkanten!)	Q1 20260,15434 20525,15571 20641,15622 20796,15667 20990,15664 21068,15646 21119,15635 21235,15641 21398,15671 21475,15705 21694,15802
 #: by: http://www.bsisb.de/friedhofsb/b_s_ws_drl/c10.jpg
 Kurfürstenweg: fester Waldweg	Q1 -5960,-604 -5863,-426 -5762,-145 -5752,-44 -5658,135 -5567,231 -5539,308 -5376,450 -5295,545 -5155,758 -4974,900
 Schönburgstr.: schlechtes Kopfsteinpflaster	Q3 8949,6644 8946,6501 8995,6473
@@ -1501,7 +1501,7 @@ Am Krögel: kleinteiliges Kopfsteinpflaster	Q1 10766,12184 10772,12288
 Spinatweg: Betonstraße	Q1 20915,18601 20921,18479
 Schwarzwurzelstr.: Betonstraße	Q1 21009,18503 20921,18479 20814,18419 20759,18390 20654,18336 20544,18279 20452,18273 20407,18273 20289,18274 20186,18238
 Köthener Str. (Marzahn): Betonstraße	Q1 20482,17775 20542,17911 20576,17994 20591,18037 20616,18126 20544,18279
-Wolfener Str.: Asphalt	Q0 20482,17775 20443,17698 20344,17493 19896,16611
+Wolfener Str.: Asphalt	Q0 20482,17775 20443,17698 20344,17493 20193,17196 20137,17087 20047,16910 19896,16611
 Dahmeweg: Betonstraße	Q1 19347,14936 19241,14561 19235,14483
 Unterführung S-Bahnhof Poelchaustr.: asphaltiert	Q0 19235,14483 19307,14480 19395,14477
 (Allee der Kosmonauten - Langhoffstr.): teils Gehwegplatten, teils asphaltiert, kurzes Stück unbefestiger Weg	Q1 19807,13529 19821,13604 19861,13823 19856,14008 19823,14045 19818,14064
@@ -1648,7 +1648,7 @@ Altvaterstr.: Beton	Q0 -3223,3034 -3225,2902
 (Am Britzer Verbindungskanal): feiner Schotter, OK	Q1 15358,6022 15166,6019
 (Am Britzer Verbindungskanal): Asphalt	Q0 15143,5936 15099,5978 14342,5990 14298,6009 14234,6010 14178,5980 14164,5936
 #: note: zumindest die westliche Seite sah gut aus, im Gegensatz zum ADFC-Karteneintrag: "mäßig geeignet"
-Gerosteig: Asphalt	Q0 18990,584 19377,496 19480,471
+Gerosteig: Asphalt	Q0 18990,584 19086,562 19184,540 19281,518 19377,496 19480,471
 #: note: per Augenschein
 Pätzer Str.: schlechtes Kopfsteinpflaster	Q3 12885,5205 12963,5199 13039,5122
 Haewererweg: Verbundsteinpflaster	Q1 12125,1282 12097,1243
@@ -2166,8 +2166,9 @@ Buschrosenplatz: Asphalt	Q0 13075,5470 13054,5556 13002,5548 12986,5564
 Ligusterweg: Asphalt	Q0 14988,5214 15034,5119 15211,4923 15245,4843 15364,4748 15548,4623 15631,4567 15712,4513 15797,4456
 Heideweg: Beton	Q1 15797,4456 15833,4435 15851,4424
 Heideweg: Asphalt	Q0 15851,4424 15887,4400 15947,4361 16001,4325 16061,4285 16151,4226 16234,4171
-Am Buckersberg: Schotter	Q2 16048,3978 16234,4171 16518,4551 16547,4590
-Am Buckersberg: zweispuriger Verbundsteinpflasterweg	Q1+ 16547,4590 16784,4913
+Am Buckersberg: Schotter	Q2 16048,3978 16234,4171 16382,4381 16445,4454
+Ostweg: Schotter	Q2 16445,4454 16483,4505 16518,4551 16547,4590
+Ostweg: zweispuriger Verbundsteinpflasterweg	Q1+ 16547,4590 16604,4668 16784,4913
 #: note: von der S-Bahn aus gesehen:
 Resedenstr.: Kopfsteinpflaster	Q2 4274,4808 4332,4819 4515,4966
 Sennockstr.: Asphalt	Q0 9048,6877 8975,6875
@@ -4744,7 +4745,7 @@ Lübarser Str.: Asphalt	Q0 5320,21432 5589,21799
 (Wuhlewanderweg - Teterower Ring): Asphalt	Q0 22199,12955 22444,12990
 (Erich-Kästner-Str. - Peter-Huchel-Str.): Asphalt	Q0 23056,13727 23007,13509
 #: note: genau genommen nur der Teil parallel zur U-Bahn gekennzeichnet
-Peter-Huchel-Str.: Asphalt	Q0 22980,13286 23007,13509 23275,13459 23460,13454
+Peter-Huchel-Str.: Asphalt	Q0 22980,13286 23007,13509 23161,13480 23275,13459 23460,13454
 #: XXX in Höhe des U-Bhfs. Cottbusser Platz Gehwegplatten?
 (Carola-Neher-Str - Kastanienallee): Asphalt	Q0 23382,14367 23405,14410 23458,14439 23506,14450 23563,14473 23567,14523 23723,14595 23769,14609
 #: note: "auch für Rennräder befahrbar"
@@ -5876,7 +5877,7 @@ Sophie-Taeuber-Arp-Weg: Asphalt	Q0 3302,2471 3293,2218
 Mosischstr.: Asphalt	Q0 15919,6992 16089,7041 16156,7061
 #: by: holrit:
 #: note: laut ADFC-Karte mäßig geeignet, wahrscheinlich wegen stärkeren Verkehrs?
-Germanenstr.: Asphalt	Q0 19955,1509 20235,1430 20347,1398 20365,1393 20381,1383 20543,1284 20653,1211 20696,1134 20836,982 20960,819 21089,639 21164,476
+Germanenstr.: Asphalt	Q0 19955,1509 20235,1430 20347,1398 20365,1393 20381,1383 20543,1284 20653,1211 20695,1162 20818,1006 20836,982 20960,819 21089,639 21119,602 21164,476
 #: by: Jens (buchmann): vvv
 Königstr.: guter Asphalt	Q0 8418,4432 8569,4459 8868,4498
 Bogotastr.: schlechtes Kopfsteinpflaster	Q3 -1261,3422 -1319,3517 -1340,3602 -1348,3676 -1366,3747 -1394,3798 -1409,3834
@@ -5895,7 +5896,7 @@ Graf-Haeseler-Str.: gutes Kopfsteinpflaster	Q1 4096,17890 4139,18091 4181,18284
 #: by: Kerstin Goldbeck:
 Driesener Str.: gutes Kopfsteinpflaster	Q1 10458,16509 10449,16415 10438,16340 10421,16175 10405,16017
 #: by: Simon Schrape:
-Kleeblattstr.: gute Betonstraße	Q0 20813,536 20903,210
+Kleeblattstr.: gute Betonstraße	Q0 20813,536 20870,328 20898,227 20903,210
 #: by: Rüdiger (.katrin):
 #: note: Eintrag von F. Reinhardt war "mäßiges Kopfsteinpflaster", aber da hatte ich etwas anderes gesehen...
 #: corrected_by: srt (Q1 -> Q0)
@@ -10564,7 +10565,7 @@ Scharnweberstr. (Friedrichshagen): Asphalt	Q0 25738,5228 25739,5242 25743,5311
 Scharnweberstr. (Friedrichshagen): Kopfsteinpflaster	Q2- 25743,5311 25745,5345 25754,5485 25757,5536 25761,5613 25768,5771 25773,5868
 #: by: ^^^
 #: by: Simon Schrape [AM]
-Ewaldstr.: Asphalt	Q0 21297,651 21164,476 21077,387 20903,210 20719,140 20684,105 20688,-10 20673,-31 20590,-120 20519,-198 20505,-217 20476,-279 20348,-380 20161,-487 20127,-502
+Ewaldstr.: Asphalt	Q0 21297,651 21164,476 21077,387 20991,299 20903,210 20719,140 20684,105 20688,-10 20673,-31 20590,-120 20519,-198 20505,-217 20476,-279 20348,-380 20300,-416 20161,-487 20127,-502
 Parsevalstr.: Kopfsteinpflaster	Q2 18072,6487 18088,6507 18114,6549 18159,6642
 #: by: ^^^
 #: by: Petra-Maria Grell [AM]

@@ -2394,7 +2394,7 @@ EOF
        text  => 'Rudower Str. (Treptow) Richtung stadteinwärts zwischen Köpenicker Str. und Wegedornstr. Baustelle, Fahrtrichtung gesperrt, Einbahnstraße in Richtung Köpenicker Str. (bis 05.08.2005)',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4; 19771,1793 19564,1871 19266,1968 19055,2037 18881,2062
+userdel	q4; 19771,1793 19743,1804 19564,1871 19266,1968 19181,1996 19164,2001 19055,2037 18985,2047 18881,2062
 EOF
      },
      { from  => 1122415200, # 2005-07-27 00:00
@@ -3836,7 +3836,7 @@ EOF
        type  => 'handicap',
        source_id => 'LMS_1142967727545',
        data  => <<EOF,
-userdel	q4 25012,5754 24700,5633 23950,5342
+userdel	q4 25012,5754 24871,5699 24700,5633 24471,5544 24366,5504 24285,5472 24162,5424 23950,5342
 userdel	q4 25012,5754 25018,5756 25121,5799
 userdel	q4 25579,5958 25121,5799
 EOF
@@ -6631,7 +6631,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_004066',
        data  => <<EOF,
-userdel	2::inwork 25585,6050 25776,6054 26221,6229 28794,7219 29168,7350
+userdel	2::inwork 25585,6050 25776,6054 25967,6125 26139,6188 26247,6228 28794,7219 29168,7350
 EOF
      },
      { from  => 1163286000, # 2006-11-12 00:00
@@ -7122,7 +7122,7 @@ EOF
        text  => 'Fürstenwalder Damm, für beide Richtungen nur ein Fahrstreifen abwechselnd frei, Baustelle bis 30.03.2007 (im Bereich Einmündung Mühlweg) ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 25012,5754 24700,5633 23950,5342
+userdel	q4::inwork 25012,5754 24871,5699 24700,5633 24471,5544 24366,5504 24285,5472 24162,5424 23950,5342
 EOF
      },
      { from  => 1172530621, # 2007-02-26 23:57
@@ -12511,7 +12511,7 @@ EOF
        data  => <<EOF,
 userdel	2::inwork 20673,-31 20590,-120 20519,-198
 userdel	2::inwork 20688,-10 20684,105 20719,140
-userdel	2::inwork 20161,-487 20348,-380 20476,-279 20505,-217
+userdel	2::inwork 20161,-487 20300,-416 20348,-380 20476,-279 20505,-217
 EOF
      },
      { from  => 1217714400, # 2008-08-03 00:00
