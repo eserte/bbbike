@@ -149,16 +149,16 @@ EOF
 	last if !@{$ret->[1]};
 	my $name = $ret->[Strassen::NAME()];
 	my $cat = $ret->[Strassen::CAT()];
-	my @error;
+	my @this_error_points;
 	foreach (@{$ret->[1]}) {
 	    if (!exists $s2->{$_} && $_ ne '*') {
-		push(@error, $_);
+		push(@this_error_points, $_);
 	    }
 	}
-	if (@error) {
-	    print STDERR "Error in $name: " . join(" ", @error) . "\n" unless $q;
+	if (@this_error_points) {
+	    print STDERR "Error in $name: coordinate(s) " . join(" ", @this_error_points) . " are not in net\n" unless $q;
 	    $fail++ unless $warn;
-	    push @error_points, @error if $do_report;
+	    push @error_points, @this_error_points if $do_report;
 	}
 
 	if (@namerx) {
