@@ -13982,6 +13982,7 @@ sub hypertext_widget {
 				 -scrollbars => 'osoe',
 				 -highlightthickness => 0,
 				 -borderwidth => 0,
+				 -insertwidth => 0,
 				 -width => 40,
 				 -height => 30,
 				)->pack(-expand => 1, -fill => "both");
