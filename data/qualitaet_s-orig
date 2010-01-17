@@ -1746,7 +1746,7 @@ Hubertusstr.: Kopfsteinpflaster	Q2 -5178,17258 -5042,17191 -4871,17197 -4828,171
 Hubertusstr.: Asphalt	Q0 -4503,16994 -4318,16979 -4259,16974 -4154,16947 -3985,16902 -3845,16921 -3749,16945
 (Niederheideweg - Hubertusstr.): Waldweg	Q2 -5639,17355 -5415,17311 -5266,17416 -5242,17405 -5225,17356 -4995,17268 -4875,17256 -4871,17197
 Niederheideweg: Asphalt	Q0 -6518,17539 -5927,17314
-Niederheideweg: wassergebundene Decke	Q1 -5927,17314 -5639,17355
+Niederheideweg: wassergebundene Decke	Q1 -5927,17314 -5898,17318 -5639,17355
 (Pestalozzistr. - Falkenseer Chaussee): Asphalt	Q0 -7276,16753 -7184,16582 -7183,16250
 Brücke über Spektelake: Holzbohlen	Q1 -7228,15504 -7182,15524
 (An der Felgenlake - Finkenkruger Weg): Asphalt	Q0 -7228,15504 -7360,15447
@@ -1776,7 +1776,7 @@ Krumme Gärten: Asphalt	Q0 -4011,13407 -3994,13301 -4017,13167
 (Falkenseer Chaussee - Spektelake): Asphalt	Q0 -7208,15924 -7222,15833 -7173,15693 -7159,15543
 (An der Spektelake): Asphalt	Q0 -7159,15543 -7119,15501 -7035,15432 -6922,15394 -6802,15376
 (Spektewiesen): Asphalt	Q0 -5680,15112 -5769,14992 -5969,15040 -6118,15135 -6181,15161 -6197,15188 -6252,15228 -6498,15301 -6824,15274 -6802,15376
-Spekteweg: Asphalt	Q0 -4061,15164 -4303,14960 -4481,14808 -4598,14817 -4663,14820 -4737,14862 -5033,15059 -5146,15059 -5680,15112
+Spekteweg: Asphalt	Q0 -4061,15164 -4303,14960 -4481,14808 -4598,14817 -4663,14820 -4737,14862 -5071,15042 -5146,15059 -5374,15082 -5608,15105 -5680,15112
 Koloniewege: asphaltiert	Q0 -2434,17638 -2408,17716 -2114,17878 -2154,17917 -2419,17955 -2539,18109 -2728,18149
 (Am Hohenzollernkanal): Verbundsteinpflaster bzw. Schotterweg	Q1 4971,15263 4469,15711 4273,15740 4212,15787 4369,15950 4136,16023 4093,15968 4084,15859 4049,15776 3775,15768
 #: by: Igor Smikalla
@@ -3486,7 +3486,7 @@ Fritz-Kirsch-Zeile: schlechtes Kopfsteinpflaster	Q3 17644,7219 17684,7233 17845,
 #: by: ^^^
 ######################################################################
 #: by: Ingmar Camphausen [AM]
-Aspenweg: Asphalt	Q0 -3288,17831 -3244,17883 -3224,17943 -3203,18014 -3168,18051 -3111,18105 -3050,18164 -3020,18188 -3000,18192 -2956,18203 -2900,18214
+Aspenweg: Asphalt	Q0 -3288,17831 -3244,17883 -3224,17943 -3203,18014 -3168,18051 -3111,18105 -3096,18119 -3050,18164 -3020,18188 -3000,18192 -2956,18203 -2914,18211 -2900,18214
 #: by: anonymous [AM]
 #: corrected_by: srt (Q1 -> Q0)
 Dillgesstr.: Asphalt	Q0 6218,3302 6308,3204 6407,3101 6451,3034 6482,3004 6511,2959 6593,2831
@@ -4681,7 +4681,7 @@ Gäblerstr.: mäßiger Asphalt	Q1 13029,17162 13023,17210 13018,17264 13012,17332 1
 #: note: laut ADFC-Karte gut geeignet: vvv
 #: confirmed_by: srt
 Neukirchstr.: loser Sandweg	Q2 12885,18329 12751,18401
-Neukirchstr.: Kopfsteinpflaster	Q2 12751,18401 12562,18483
+Neukirchstr.: Kopfsteinpflaster	Q2 12751,18401 12681,18431 12606,18464 12562,18483
 #: note: ^^^
 #: by: ^^^
 #: by: Christof (keuter): vvv
@@ -4762,7 +4762,7 @@ Rue Diderot: Asphalt	Q0 4525,21714 4596,21629
 #: note: auch laut ADFC-Karte gut befahrbar
 (Weg parallel zur S-Bahn): Asphalt	Q0 27068,5723 27096,5828 30041,5329
 #: by: David wolff:
-Burgwallstr.: Kopfsteinpflaster, Straßenschäden	Q2 12993,21112 13065,21267 13107,21357 13136,21419 13158,21471 13171,21532 13182,21639 13192,21697 13220,21761 13315,21969 13392,22014 13609,22143 13682,22139 13762,22064
+Burgwallstr.: Kopfsteinpflaster, Straßenschäden	Q2 12993,21112 13065,21267 13107,21357 13136,21419 13158,21471 13171,21532 13182,21639 13192,21697 13220,21761 13270,21870 13315,21969 13392,22014 13505,22081 13609,22143 13682,22139 13762,22064
 #: by: Andreas Aurenz: vvv
 Am Breiten Luch: Asphalt	Q0 17531,17802 17650,17605 17729,17448 17784,17357 17872,17226 17907,17161
 #: XXX: aber 25 km/h Geschwindigkeit?
@@ -4786,7 +4786,7 @@ Flaischlenstr.: asphaltiert	Q0 13458,22519 13395,22365
 Flaischlenstr.: schlechtes Kopfsteinpflaster, Ausweichen auf den Fußweg (Rasenflächen mit Trampelpfad) möglich	Q3 13395,22365 13354,22327 13267,22090 13249,22003
 Frankenstr.: schlechtes Kopfsteinpflaster	Q3 13267,22090 13503,22239 13541,22300 13622,22409 13681,22501
 #: confirmed_by: srt (von der Bahnstrecke aus gesehen)
-Rudelsburgstr.: Asphalt	Q0 12814,20648 12835,20670 12865,20684 13165,21144 13204,21203 13255,21282 13371,21462 13413,21528 13601,21826 13649,21896 13762,22064 13787,22114 13795,22131 13845,22231
+Rudelsburgstr.: Asphalt	Q0 12814,20648 12835,20670 12865,20684 13165,21144 13204,21203 13255,21282 13371,21462 13413,21528 13479,21633 13545,21738 13601,21826 13649,21896 13698,21969 13762,22064 13787,22114 13795,22131 13845,22231
 Frankensteinstr.: schlechtes Kopfsteinpflaster	Q3 13845,22231 13622,22409 13458,22519
 #: XXX: "glaube ich":
 Wolkensteinstr.: fester Sandweg	Q2 13681,22501 13497,22623
@@ -4861,7 +4861,7 @@ Irisweg: Asphalt	Q0 13303,17962 13376,18036 13381,18058
 Bromelienweg: Asphalt	Q0 13434,18019 13381,18058 13288,18086 13200,18081
 # alte Kommentare: note: ADFC-Karte kennzeichnet die gesamte Malchower Str. als "mäßig geeignet", #: XXX: widersprüchliche Angaben: laut Matthias Wiegandt alles asphaltiert:, #: XXX: nach den Bauarbeiten asphaltiert? siehe auch http://www.berlin.de/ba-pankow/presse/archiv/20070522.1415.78289.html
 #: by: http://www.berlin.de/ba-pankow/presse/archiv/20071212.1415.90758.html
-Malchower Str.: Asphalt	Q0 12808,18155 12942,18154 12987,18154 13042,18152 13178,18148
+Malchower Str.: Asphalt	Q0 12808,18155 12942,18154 12987,18154 13042,18152 13146,18149 13178,18148
 #: by: http://www.berlin.de/ba-pankow/presse/archiv/20041222.1005.23050.html (auch)
 Malchower Str.: Asphalt	Q0 13178,18148 13233,18151 13300,18145 13345,18130 13405,18113 13497,18087 13617,18045
 Malchower Str.: mäßig geeignet	Q2 13617,18045 13732,18026 13894,18121
@@ -4991,7 +4991,7 @@ Marinesteig: Asphalt	Q0 -3053,3298 -2776,3512 -2700,3554
 #: by: ^^^
 #: by: B.Kleinig: vvv
 Schollenweg: Asphalt	Q0 3280,21477 3236,21601 3211,21678 3156,21832 3081,22048
-Straße 56 (Blankenburg): Asphalt	Q0 14582,20969 14642,21162 14684,21284 14753,21487
+Straße 56 (Blankenburg): Asphalt	Q0 14582,20969 14634,21135 14684,21284 14753,21487
 #: by: ^^^
 #: by: sven draband: vvv
 #: corrected_by: srt ("mit Löchern" deleted)
@@ -5997,7 +5997,7 @@ Körnerstr. (Spandau): mäßiger Asphalt	Q1 -3043,15207 -2915,15152 -2853,15127
 #: by: Hendrike Hellmann:
 Am Brandpfuhl: mäßiger Asphalt	Q1 11937,4353 12015,4038
 #: by: W.Peters vvv
-Michelstadter Weg: Asphalt	Q0 -3085,17504 -3092,17420 -3117,17137 -3129,16931 -3151,16657
+Michelstadter Weg: Asphalt	Q0 -3085,17504 -3092,17420 -3117,17137 -3129,16931 -3148,16712
 Hakenfelder Str.: Asphalt	Q0 -2959,17507 -3085,17504 -3216,17492 -3366,17506 -3418,17525 -3796,17716 -3813,17559 -3788,17304 -3778,17245 -3807,17226
 #: by: ^^^
 #: by: Meike Hempel:
@@ -7292,7 +7292,7 @@ Haduweg: Asphalt	Q0 15981,23996 16029,23964 16106,23913 16416,23705 16510,23642 
 #: by: Andreas Reihs:
 Straße 41 (Karow): Asphalt	Q0 15013,22472 15087,22573 15154,22674 15169,22770
 #: by: Dugrain Olivier:
-Feldzeugmeisterstr. (Haselhorst): guter Asphalt	Q0 -663,14996 -634,15012 -556,15128 -528,15171 -532,15184
+Feldzeugmeisterstr. (Haselhorst): guter Asphalt	Q0 -663,14996 -634,15012 -558,15123 -556,15128 -528,15171 -532,15184
 #: by: Hans-Eberhard Heß:
 #: note: Simone Kühn meint "Asphalt, Q2", "Sackgasse, q3", go with Hans
 Telramundweg: guter Asphalt	Q0 5206,4432 5284,4390
@@ -10515,8 +10515,8 @@ Theobaldstr.: mäßiger Asphalt	Q2 18384,16550 18300,16488 18228,16438
 Oswaldstr.: Asphalt	Q0 18300,16488 18326,16452 18412,16334
 Roderichplatz: Asphalt	Q0 18326,16452 18252,16403
 Markfriedstr.: Asphalt	Q0 18252,16403 18228,16336
-Marzahner Str.: Beton	Q0 17488,15766 17646,15777 17935,15781
-Marzahner Str.: Beton	Q0 17935,15781 18178,15787 18573,15803 18623,15587 18180,15594 18178,15787
+Marzahner Str.: Beton	Q0 17488,15766 17616,15775 17646,15777 17935,15781
+Marzahner Str.: Beton	Q0 17935,15781 18178,15787 18573,15803 18623,15587 18422,15590 18180,15594 18178,15787
 Schöneicher Str. (Alt-Hohenschönhausen): Kopfsteinpflaster	Q2 16694,15658 16658,15627 16628,15532 16584,15489
 Schöneicher Str. (Alt-Hohenschönhausen): Kopfsteinpflaster	Q2 16675,15688 16628,15642 16597,15552 16550,15503
 #: note: [SRT]
@@ -10922,7 +10922,7 @@ Neuenhagener Str. (Mahlsdorf): Beton	Q1 24175,11265 24173,11328 24223,11470 2427
 #: by: ^^^
 #: by: Andreas Mühlhausen vvv
 Romain-Rolland-Str.: Kopfsteinpflaster	Q2 12575,18275 12570,18351 12562,18483
-Romain-Rolland-Str.: Asphalt	Q1 12562,18483 12522,18813 12510,18954 12498,19069 12457,19248 12387,19454
+Romain-Rolland-Str.: Asphalt	Q1 12562,18483 12545,18625 12522,18813 12510,18954 12498,19069 12457,19248 12387,19454
 Heimdallstr.: Asphalt	Q1 11984,18771 12002,18768 12014,18771 12028,18810 12190,19009
 # XXX del conflict: Heimdallstr.: Asphalt	Q1 12190,19009 12261,19099
 Heimdallstr.: Verbundsteine	Q1 12190,19009 12261,19099
