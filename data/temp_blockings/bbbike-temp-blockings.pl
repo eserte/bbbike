@@ -550,7 +550,7 @@ EOF
      { from  => undef,
        until => 1092439940,
        data => <<EOF,
-userdel	2 9457,18612 9279,18724
+userdel	2 9457,18612 9366,18669 9279,18724
 userdel	2 9565,18555 9821,18392 9881,18354
 EOF
        text  => 'Heinrich-Mann-Straße Berlin-Reinickendorf Richtung Berlin-Pankow Zwischen Heinrich-Mann-Straße und Grabbeallee Störungen durch geplatzte Wasserleitung, Straße gesperrt',
@@ -1059,7 +1059,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'INKO_82',
        data  => <<EOF,
-userdel	1 12442,20805 12030,20490
+userdel	1 12442,20805 12222,20637 12118,20557 12030,20490
 EOF
      },
      { from  => 1098309600, # 2004-10-21 00:00
@@ -5999,7 +5999,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_003701',
        data  => <<EOF,
-userdel	2::temp 7587,17532 7540,17675 7500,17796 7487,17836 7466,17904 7445,17968 7439,17985 7418,18051 7350,18262 7232,18572
+userdel	2::temp 7587,17532 7540,17675 7500,17796 7487,17836 7466,17904 7445,17968 7439,17985 7418,18051 7350,18262 7299,18395 7274,18462 7232,18572
 EOF
      },
      { from  => 1221024854, #  undef
@@ -9238,7 +9238,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006189',
        data  => <<EOF,
-userdel	1::inwork 5320,21432 5311,21495 5136,21738
+userdel	1::inwork 5320,21432 5311,21495 5210,21636 5136,21738
 EOF
      },
      { from  => 1187647200, # 2007-08-21 00:00
@@ -9518,7 +9518,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006352',
        data  => <<EOF,
-userdel	1::inwork 5320,21432 5311,21495 5136,21738
+userdel	1::inwork 5320,21432 5311,21495 5210,21636 5136,21738
 EOF
      },
      { from  => 1188240671, # 
@@ -11890,7 +11890,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_009340',
        data  => <<EOF,
-userdel	1::inwork 9279,18724 9457,18612
+userdel	1::inwork 9279,18724 9366,18669 9457,18612
 EOF
      },
      { from  => 1216159200, # 2008-07-16 00:00
@@ -14287,7 +14287,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_012907',
        data  => <<EOF,
-userdel	q4::inwork; 12095,20832 12076,20731 12030,20490 12008,20368 11963,20136 11931,19965 11907,19838 11907,19749
+userdel	q4::inwork; 12095,20832 12076,20731 12030,20490 12008,20368 12000,20327 11984,20246 11963,20136 11931,19965 11907,19838 11907,19749
 EOF
      },
      { from  => 1243972705, # 2009-06-02 21:58
