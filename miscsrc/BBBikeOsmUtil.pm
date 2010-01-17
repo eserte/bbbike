@@ -427,7 +427,8 @@ sub plot_osm_files {
 	    my %line_item_args;
 	    # following some stuff which is not that interesting for BBBike editing
 	    if ((exists $tag{'railway'} && $tag{'railway'} =~ m{^(?:abandoned|disused)$}) ||
-		(exists $tag{'man_made'} && $tag{'man_made'} eq 'pipeline')
+		(exists $tag{'man_made'} && $tag{'man_made'} eq 'pipeline') ||
+		exists $tag{'barrier'}
 	       ) {
 		$item_args{'-dash'} = '.  ';
 	    } elsif (exists $tag{'power'}) {
