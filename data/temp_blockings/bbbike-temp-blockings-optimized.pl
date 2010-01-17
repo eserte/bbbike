@@ -686,7 +686,7 @@ userdel	q4::inwork 10422,12395 10476,12432
          'text' => 'Kastanienallee (Rosenthal) Richtung Dietzgenstr. zwischen Hauptstr. und Friedrich-Engels-Str. Baustelle, Fahrtrichtung gesperrt (bis 04.2011)',
          'from' => 1246207933,
          'id' => 1712,
-         'data' => 'userdel	q4::inwork; 7992,20515 8344,20548 8411,20554 8481,20561 8543,20567 8717,20584 8900,20601
+         'data' => 'userdel	q4::inwork; 7992,20515 8344,20548 8411,20554 8481,20561 8543,20567 8561,20569 8717,20584 8900,20601
 ',
          'type' => 'handicap'
        },

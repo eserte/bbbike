@@ -8424,7 +8424,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005680',
        data  => <<EOF,
-userdel	1::inwork 2029,20331 2241,20487
+userdel	1::inwork 2029,20331 2131,20406 2241,20487
 EOF
      },
      { from  => 1181165074, # undef
@@ -9028,7 +9028,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006066',
        data  => <<EOF,
-userdel	2::inwork 30087,5448 30021,5322
+userdel	2::inwork 30090,5436 30041,5329
 EOF
      },
      { from  => 1184450400, # 2007-07-15 00:00
@@ -9202,7 +9202,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006194',
        data  => <<EOF,
-userdel	1::inwork 10138,20840 10119,20731 10063,20493
+userdel	1::inwork 10138,20840 10119,20731 10115,20714 10063,20493
 EOF
      },
      { from  => 1185833817, # 2007-07-31 00:16
@@ -12703,7 +12703,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_010134',
        data  => <<EOF,
-userdel	2::inwork 22172,194 22168,-71 22177,-137 22190,-228
+userdel	2::inwork 22172,194 22169,14 22168,-71 22177,-137 22190,-228
 EOF
      },
      { from  => 1224799200, # 2008-10-24 00:00
@@ -12909,7 +12909,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_010134',
        data  => <<EOF,
-userdel	2::inwork 22172,194 22168,-71 22177,-137
+userdel	2::inwork 22172,194 22169,14 22168,-71 22177,-137
 EOF
      },
      { from  => 1243972540, # 2009-06-02 21:55
@@ -13633,7 +13633,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_012136',
        data  => <<EOF,
-userdel	q4::inwork; 2241,20487 2029,20331
+userdel	q4::inwork; 2241,20487 2131,20406 2029,20331
 EOF
      },
      { from  => 1239660000, # 2009-04-14 00:00
@@ -14506,7 +14506,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_013223',
        data  => <<EOF,
-userdel	q4::inwork; 7992,20515 8344,20548 8411,20554 8481,20561 8543,20567 8717,20584 8900,20601
+userdel	q4::inwork; 7992,20515 8344,20548 8411,20554 8481,20561 8543,20567 8561,20569 8717,20584 8900,20601
 EOF
      },
      { from  => 1246208018, # 2009-06-28 18:53
