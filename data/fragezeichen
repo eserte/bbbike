@@ -599,8 +599,8 @@ Baumgartenbrück - B1: Rampe oder Treppe?	? -19200,-5744 -19189,-5723 -19189,-569
 Fähre Ketzin - Paretz: Qualität des Radwegs? Nur für Radfahrer oder auch für Autofahrer befahrbar? Führt hier die Route F3 entlang?	? -26785,5851 -26526,5882 -26360,5950 -26214,5988 -26121,6011 -26141,6106 -26010,6122 -25973,6078 -25933,6081 -25921,6058 -25629,5996 -25569,6220 -25516,6282 -25444,6326
 Barnimer Dörferweg in Blankenfelde: Qualität?	? 7956,24083 8132,23896 8502,23877
 Barnimer Dörferweg in Blankenfelde: Qualität (laut ADFC-Karte schlecht geeignet)?	? 8535,23753 8984,24078 9344,24262 9555,23933 9828,24149
-Ingwäonenweg - Am Luchgraben, Teil des Barnimer Dörferwegs: Qualität (laut ADFC-Karte schlecht geeignet)?	? 16500,22465 16508,22215 16675,22168
-Straße 70 - Am Luchgraben: Qualität?	? 16298,22221 16508,22215
+Ingwäonenweg - Am Luchgraben, Teil des Barnimer Dörferwegs: Qualität (laut ADFC-Karte schlecht geeignet)?	? 16442,22505 16508,22215 16675,22168
+Straße 70 - Am Luchgraben: Qualität?	? 16327,22202 16508,22215
 Barnimer Dörferweg im Bereich Falkenberg: Qualität (laut ADFC-Karte teilweise gut, mäßig und schlecht geeignet)?	? 19971,18785 20356,18659 20377,18753 20586,18822 20694,18857
 Am Gehrensee, Teil des Barnimer Dörferwegs: Qualität (laut ADFC-Karte überwiegend gut geeignet)?	? 20855,19299 21322,19049 21278,18786
 B109, Ortsumfahrung Greifswald: Kann sie von Radfahrern benutzt werden oder ist es eine Kraftfahrzeugstraße?	? 8760,185005 8635,184987 8026,184622 7625,184400 7206,184242 6597,184106 5913,184041 5170,183994 5170,183994 4785,184156 4387,184532 4104,184747 3778,184883 3227,185005 2903,185164 2718,185384 2659,185700 2707,187214
@@ -2265,6 +2265,7 @@ Hainleiteweg: Qualität?	? -4805,15596 -4772,15702
 Tangermünder Weg: Qualität?	? -4294,15525 -4137,15512
 Am Heimhort: Qualität?	? -4317,15298 -4117,15255 -4084,15264
 Germersheimer Platz: Qualität?	? -4332,15179 -4495,15198
+Germersheimer Platz: Qualität?	? -4499,15152 -4338,15137
 Merziger Str.: Qualität?	? -4622,15186 -4497,15176
 Windmühlenberg: Qualität?	? -3905,15605 -3900,15650
 Hügelschanze, westlich der Falkenhagener Straße: Qualität? Ist die Straße eine Einbahnstraße? Wenn ja, gilt die Einbahnstraßenregelung nur für Autofahrer oder auch für Radfahrer?	? -3982,15577 -3881,15589
@@ -2428,7 +2429,7 @@ Wieselstr.: Qualität? Für Autos gesperrt?	? 24071,11573 23955,11612 23950,11597
 Hamsterstr.: Qualität? Für Autos gesperrt?	? 23946,11590 23799,11646 23694,11678 23592,11710 23495,11753 23390,11792
 Ferdinandstr. (Kaulsdorf): Qualität?	? 23403,11841 23215,11852 22947,11840
 Karlstr. (Kaulsdorf): Qualität?	? 23148,11419 22945,11402 22751,11381
-Matestr.: Qualität?	? 15611,23552 15653,23630 15699,23707 15744,23788
+Matestr.: Qualität?	? 15611,23552 15653,23630 15699,23707 15730,23763 15744,23788
 Rutenzeile: Qualität?	? 15566,23684 15610,23763 15640,23820
 Am Elsebrocken: Qualität?	? 15569,23908 15656,23850 15744,23788 15793,23762
 Teichbergstr.: Qualität?	? 15520,23824 15610,23763 15699,23707 15805,23636
@@ -3942,6 +3943,98 @@ Straße 124: Qualität?	? 11013,22745 10979,22769 10758,22952
 Margaretenaue: Qualität?	? 11984,20246 12071,20232 12087,20312 12000,20327
 Straße 42 (Französisch Buchholz): Qualität?	? 12087,20312 12211,20486 12274,20570 12222,20637
 Straße 44 (Französisch Buchholz): Qualität?	? 12211,20486 12118,20557
+Karestr.: Qualität?	? 15453,24474 15414,24418 15344,24315
+Pfannschmidtstr.: Qualität?	? 15536,24417 15498,24362 15423,24251
+Ballonplatz: Qualität?	? 15591,24137 15661,24250
+Chronisteneck: Qualität?	? 15692,24040 15730,24051 15759,24033 15843,23980
+Beerbaumstr.: Qualität?	? 15843,23980 15906,24088 15948,24151
+Lanzelotstr.: Qualität?	? 16139,24162 16081,24056 16029,23964 15987,23876 15966,23836
+Erekweg: Qualität?	? 16091,24182 16139,24162
+Erekweg: Qualität?	? 16127,24024 16186,24108 16469,23877 16439,23823
+Nerthusweg: Qualität?	? 16031,24087 16081,24056 16127,24024 16156,24003 16439,23823 16515,23753 16578,23731
+Ebenrotsteig: Qualität?	? 16578,23731 16770,23593
+Swantewitstr.: Qualität?	? 15987,23876 16060,23830 16330,23647 16699,23402
+Bohrerzeile: Qualität?	? 16156,24003 16106,23913 16060,23830 16010,23734 15963,23632
+Bedeweg: Qualität?	? 16436,23313 16523,23454 16683,23354 16732,23319
+Straße 74 (Karow): Qualität?	? 15776,23185 15627,23255
+Möserstr.: Qualität?	? 15029,23857 15179,23755
+Heimfriedstr.: Qualität?	? 14902,23655 15072,23535 15167,23470 15387,23310
+Amselstr. (Karow): Qualität?	? 15117,23634 15295,23508 15428,23413
+Wotanstr. (Karow): Qualität?	? 15033,23432 15072,23535 15117,23634 15179,23755 15256,23861
+Hagenstr. (Karow): Qualität?	? 15249,23279 15176,23168 15037,22974 14950,22853
+Grundackerweg: Qualität?	? 15310,23085 15229,22840
+Leobschützer Str.: Qualität?	? 14776,23612 14756,23622 14651,23667 14614,23684 14550,23712
+Straße 94: Qualität?	? 14982,24192 14901,24090 14716,23819 14647,23833 14550,23712 14465,23623 14447,23562
+Sandbergstr.: Qualität?	? 14575,23538 14447,23562 14382,23574 14316,23586
+Lönsstr.: Qualität?	? 14109,23278 14338,23187
+Boenkestr.: Qualität?	? 14756,23622 14539,23306 14314,22944 14276,22914 14246,22900 14185,22803 14122,22708 13983,22513
+Kernerstr.: Qualität?	? 14185,22803 14043,22903 13950,22969
+Straße 86: Qualität?	? 13805,22935 13726,22860 13699,22834
+Straße 100: Qualität?	? 13690,23083 13671,23030 13622,22944
+Straße 101 (Karow): Qualität?	? 13622,22944 13726,22860
+Kreuzburger Str.: Qualität?	? 14545,23141 14501,22858
+Rybniker Str.: : Qualität?	? 14597,22842 14482,22731 14406,22633 14346,22550
+Bunzlauer Str.: Qualität?	? 14721,22821 14699,22678 14684,22583 14608,22479 14572,22436
+Steinauer Str.: Qualität?	? 14950,22853 14937,22784 14913,22662 14910,22648 14891,22551 14872,22448
+Kattowitzer Str.: Qualität?	? 14699,22678 14910,22648
+Nahestr.: Qualität?	? 14195,22657 14308,22574 14346,22550 14425,22481
+Siegstr.: Qualität?	? 14308,22574 14162,22366
+Nettestr.: Qualität?	? 14425,22481 14278,22281
+Straße 10 (Karow): Qualität?	? 14162,22366 14278,22281 14307,22262
+Straße 40 (Karow): Qualität? Heißt die Straße tatsächlich so?	? 14307,22262 14661,21987
+Straße 36 (Karow): Qualität?	? 14720,22062 14661,21987 14625,21927 14563,21817
+Straße 38 (Karow): Qualität? Heißt die Straße tatsächlich so?	? 14511,21847 14563,21817
+Straße 39 (Karow): Qualität?	? 14625,21927 14742,21843
+Straße 48 (Karow): Qualität?	? 14885,21827 15053,22039 15202,22210 15377,22452
+Tarnowitzer Str.: Qualität?	? 15154,22370 15013,22472 14891,22551
+Straße 34 (Karow): Qualität?	? 15087,22573 14913,22662
+Straße 72 (Karow): Qualität?	? 15527,23033 15691,22949 15797,22939
+Straße 73 (Karow): Qualität?	? 15709,22999 15797,22939 15850,22905 15983,22814 16090,22745 16280,22618 16442,22505
+Straße 62: Qualität?	? 16280,22618 16336,22718 16389,22860
+An der Laake: Qualität?	? 16336,22718 16154,22842
+Straße 71: Qualität?	? 15799,22787 15662,22873
+Straße 58: Qualität?	? 15722,22607 15697,22566
+Straße 59 (Karow): Qualität?	? 15835,22531 15807,22489
+Straße 60 (Karow): Qualität?	? 15957,22449 15931,22408
+Straße 62: Qualität?	? 16080,22366 16049,22330
+Straße 63: Qualität?	? 16206,22282 16171,22247
+Straße 64: Qualität?	? 16327,22202 16301,22159
+Straße 69: Qualität?	? 15434,22604 15638,22473 15898,22296
+Straße 58: Qualität?	? 15638,22473 15547,22345 15450,22232
+Straße 42 (Karow): Qualität?	? 15271,22527 15377,22452 15442,22412 15547,22345 15705,22236 15740,22238 15759,22208
+KGA Am Teichberg: Qualität?	? 15705,22236 15672,22127
+Straße 68: Qualität?	? 15759,22208 15869,22131
+Straße 65: Qualität?	? 15869,22131 15757,21979
+Straße 67: Qualität?	? 15430,22196 15452,22180 15757,21979 15973,21836
+Straße 43: Qualität?	? 15094,22290 15202,22210 15353,22105
+Straße 66: Qualität?	? 15353,22105 15459,22025
+Straße 50: Qualität? Straßenname?	? 15430,22196 15353,22105
+Straße 50: Qualität?	? 15305,22017 15281,21960 15197,21791 15118,21585 15107,21514 15097,21424
+Straße 51: Qualität?	? 15325,21777 15377,21921
+Straße 44 (Karow): Qualität?	? 15464,21894 15377,21921 15281,21960 15121,22016 15053,22039 14932,22083
+Straße 46 (Karow): Qualität?	? 14953,21680 14819,21711 14690,21764
+Straße 27: Qualität?	? 14747,21472 14617,21490 14541,21360 14509,21337
+Blanchardstr.: Qualität?	? 15130,24012 15189,24120
+Gatterweg: Qualität? Genaue Lage der Straße?	? 16388,22890 16504,22903
+Hentzeweg: Qualität? Genaue Lage der Straße?	? 16465,23091 16528,23006
+Kurze-Enden-Weg: Qualität?	? 15235,23886 15321,23979
+Nordische Str.: Qualität? Genaue Lage der Straße?	? 15128,21837 15176,21964
+Ebersdorfer Str.: Qualität?	? -4818,13347 -4932,13318 -5033,13284 -5137,13248 -5217,13232
+Ebersdorfer Platz: Qualität?	? -5062,13347 -5161,13308
+Hettnerweg: Qualität?	? -5217,13232 -5295,13415 -5333,13515
+Földerichplatz: Qualität? Für Radfahrer Zugang zur Adamstr. möglich?	? -3941,12376 -3941,12545 -3942,12559
+Kerstenweg: Qualität? Für Radfahrer befahrbar? Kann die Wilhelmstr. überquert werden?	? -3705,13386 -3813,13404
+Schwimmerweg: Qualität?	? -3584,11177 -3642,11216 -3673,11216
+Paddlerweg: Qualität?	? -3559,11227 -3625,11250 -3679,11248
+Rudererweg: Qualität?	? -3534,11277 -3570,11289 -3689,11291
+Lankestrand: Qualität?	? -3689,11291 -3679,11248 -3673,11216
+Am Kirchenland: Qualität? Genaue Lage der Straße?	? -6821,16028 -6752,16015
+Salchendorfer Weg: Qualität?	? -5123,15298 -4972,15297
+Henri-Dunant-Platz: Pl	? -4972,15297
+Pfefferweg: Qualität?	? -5849,16199 -5767,16177
+Rockenhausener Str.: Qualität?	? -4338,15137 -4244,15127
+Am Posseberg: Qualität?	? 12632,25569 12436,25580 12396,25478 12138,24989 12261,24851
+Arkenberger Damm: Qualität?	? 12396,25478 12324,25514 11964,25488 11871,25582
 # added from ampeln-orig
 #: add_fragezeichen: Existiert die Ampel Nordufer/Torfstr. noch?
 geschlossen bei Bedarf (?) (Zbr)	? 27657,-11741

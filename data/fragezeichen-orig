@@ -1312,8 +1312,8 @@ Baumgartenbr¸ck - B1: Rampe oder Treppe?	? -19200,-5744 -19189,-5723 -19189,-569
 F‰hre Ketzin - Paretz: Qualit‰t des Radwegs? Nur f¸r Radfahrer oder auch f¸r Autofahrer befahrbar? F¸hrt hier die Route F3 entlang?	? -26785,5851 -26526,5882 -26360,5950 -26214,5988 -26121,6011 -26141,6106 -26010,6122 -25973,6078 -25933,6081 -25921,6058 -25629,5996 -25569,6220 -25516,6282 -25444,6326
 Barnimer Dˆrferweg in Blankenfelde: Qualit‰t?	? 7956,24083 8132,23896 8502,23877
 Barnimer Dˆrferweg in Blankenfelde: Qualit‰t (laut ADFC-Karte schlecht geeignet)?	? 8535,23753 8984,24078 9344,24262 9555,23933 9828,24149
-Ingw‰onenweg - Am Luchgraben, Teil des Barnimer Dˆrferwegs: Qualit‰t (laut ADFC-Karte schlecht geeignet)?	? 16500,22465 16508,22215 16675,22168
-Straﬂe 70 - Am Luchgraben: Qualit‰t?	? 16298,22221 16508,22215
+Ingw‰onenweg - Am Luchgraben, Teil des Barnimer Dˆrferwegs: Qualit‰t (laut ADFC-Karte schlecht geeignet)?	? 16442,22505 16508,22215 16675,22168
+Straﬂe 70 - Am Luchgraben: Qualit‰t?	? 16327,22202 16508,22215
 Barnimer Dˆrferweg im Bereich Falkenberg: Qualit‰t (laut ADFC-Karte teilweise gut, m‰ﬂig und schlecht geeignet)?	? 19971,18785 20356,18659 20377,18753 20586,18822 20694,18857
 Am Gehrensee, Teil des Barnimer Dˆrferwegs: Qualit‰t (laut ADFC-Karte ¸berwiegend gut geeignet)?	? 20855,19299 21322,19049 21278,18786
 B109, Ortsumfahrung Greifswald: Kann sie von Radfahrern benutzt werden oder ist es eine Kraftfahrzeugstraﬂe?	? 8760,185005 8635,184987 8026,184622 7625,184400 7206,184242 6597,184106 5913,184041 5170,183994 5170,183994 4785,184156 4387,184532 4104,184747 3778,184883 3227,185005 2903,185164 2718,185384 2659,185700 2707,187214
@@ -3194,7 +3194,9 @@ Kohlmeisenweg: Qualit‰t?	? 14991,3547 14954,3447
 Hainleiteweg: Qualit‰t?	? -4805,15596 -4772,15702
 Tangerm¸nder Weg: Qualit‰t?	? -4294,15525 -4137,15512
 Am Heimhort: Qualit‰t?	? -4317,15298 -4117,15255 -4084,15264
+#: XXX_indoor str_cont_ausnahme
 Germersheimer Platz: Qualit‰t?	? -4332,15179 -4495,15198
+Germersheimer Platz: Qualit‰t?	? -4499,15152 -4338,15137
 Merziger Str.: Qualit‰t?	? -4622,15186 -4497,15176
 Windm¸hlenberg: Qualit‰t?	? -3905,15605 -3900,15650
 H¸gelschanze, westlich der Falkenhagener Straﬂe: Qualit‰t? Ist die Straﬂe eine Einbahnstraﬂe? Wenn ja, gilt die Einbahnstraﬂenregelung nur f¸r Autofahrer oder auch f¸r Radfahrer?	? -3982,15577 -3881,15589
@@ -3388,7 +3390,7 @@ Wieselstr.: Qualit‰t? F¸r Autos gesperrt?	? 24071,11573 23955,11612 23950,11597
 Hamsterstr.: Qualit‰t? F¸r Autos gesperrt?	? 23946,11590 23799,11646 23694,11678 23592,11710 23495,11753 23390,11792
 Ferdinandstr. (Kaulsdorf): Qualit‰t?	? 23403,11841 23215,11852 22947,11840
 Karlstr. (Kaulsdorf): Qualit‰t?	? 23148,11419 22945,11402 22751,11381
-Matestr.: Qualit‰t?	? 15611,23552 15653,23630 15699,23707 15744,23788
+Matestr.: Qualit‰t?	? 15611,23552 15653,23630 15699,23707 15730,23763 15744,23788
 Rutenzeile: Qualit‰t?	? 15566,23684 15610,23763 15640,23820
 Am Elsebrocken: Qualit‰t?	? 15569,23908 15656,23850 15744,23788 15793,23762
 Teichbergstr.: Qualit‰t?	? 15520,23824 15610,23763 15699,23707 15805,23636
@@ -5184,3 +5186,115 @@ Straﬂe 124: Qualit‰t?	? 11013,22745 10979,22769 10758,22952
 Margaretenaue: Qualit‰t?	? 11984,20246 12071,20232 12087,20312 12000,20327
 Straﬂe 42 (Franzˆsisch Buchholz): Qualit‰t?	? 12087,20312 12211,20486 12274,20570 12222,20637
 Straﬂe 44 (Franzˆsisch Buchholz): Qualit‰t?	? 12211,20486 12118,20557
+Karestr.: Qualit‰t?	? 15453,24474 15414,24418 15344,24315
+#: XXX Existiert hier ein Straﬂenname? evtl. str_cont_ausnahme-Eintrag notwendig
+Pfannschmidtstr.: Qualit‰t?	? 15536,24417 15498,24362 15423,24251
+Ballonplatz: Qualit‰t?	? 15591,24137 15661,24250
+#: XXX_indoor bei osm als "Beerbaumstr." bezeichnet
+#: XXX_indoor fehlt bei Berlin.coords.data
+Chronisteneck: Qualit‰t?	? 15692,24040 15730,24051 15759,24033 15843,23980
+Beerbaumstr.: Qualit‰t?	? 15843,23980 15906,24088 15948,24151
+Lanzelotstr.: Qualit‰t?	? 16139,24162 16081,24056 16029,23964 15987,23876 15966,23836
+#: XXX_indoor str_cont_ausnahme-Eintrag
+Erekweg: Qualit‰t?	? 16091,24182 16139,24162
+Erekweg: Qualit‰t?	? 16127,24024 16186,24108 16469,23877 16439,23823
+Nerthusweg: Qualit‰t?	? 16031,24087 16081,24056 16127,24024 16156,24003 16439,23823 16515,23753 16578,23731
+Ebenrotsteig: Qualit‰t?	? 16578,23731 16770,23593
+Swantewitstr.: Qualit‰t?	? 15987,23876 16060,23830 16330,23647 16699,23402
+#: XXX_indoor bei osm ohne Namen
+Bohrerzeile: Qualit‰t?	? 16156,24003 16106,23913 16060,23830 16010,23734 15963,23632
+Bedeweg: Qualit‰t?	? 16436,23313 16523,23454 16683,23354 16732,23319
+Straﬂe 74 (Karow): Qualit‰t?	? 15776,23185 15627,23255
+Mˆserstr.: Qualit‰t?	? 15029,23857 15179,23755
+Heimfriedstr.: Qualit‰t?	? 14902,23655 15072,23535 15167,23470 15387,23310
+Amselstr. (Karow): Qualit‰t?	? 15117,23634 15295,23508 15428,23413
+Wotanstr. (Karow): Qualit‰t?	? 15033,23432 15072,23535 15117,23634 15179,23755 15256,23861
+Hagenstr. (Karow): Qualit‰t?	? 15249,23279 15176,23168 15037,22974 14950,22853
+Grundackerweg: Qualit‰t?	? 15310,23085 15229,22840
+Leobsch¸tzer Str.: Qualit‰t?	? 14776,23612 14756,23622 14651,23667 14614,23684 14550,23712
+Straﬂe 94: Qualit‰t?	? 14982,24192 14901,24090 14716,23819 14647,23833 14550,23712 14465,23623 14447,23562
+Sandbergstr.: Qualit‰t?	? 14575,23538 14447,23562 14382,23574 14316,23586
+Lˆnsstr.: Qualit‰t?	? 14109,23278 14338,23187
+Boenkestr.: Qualit‰t?	? 14756,23622 14539,23306 14314,22944 14276,22914 14246,22900 14185,22803 14122,22708 13983,22513
+Kernerstr.: Qualit‰t?	? 14185,22803 14043,22903 13950,22969
+Straﬂe 86: Qualit‰t?	? 13805,22935 13726,22860 13699,22834
+Straﬂe 100: Qualit‰t?	? 13690,23083 13671,23030 13622,22944
+Straﬂe 101 (Karow): Qualit‰t?	? 13622,22944 13726,22860
+Kreuzburger Str.: Qualit‰t?	? 14545,23141 14501,22858
+#: XXX_indoor bei osm als Kerkowstr. bezeichnet:
+Rybniker Str.: : Qualit‰t?	? 14597,22842 14482,22731 14406,22633 14346,22550
+#: XXX_indoor bei osm als Spinolastr. bezeichnet:
+Bunzlauer Str.: Qualit‰t?	? 14721,22821 14699,22678 14684,22583 14608,22479 14572,22436
+Steinauer Str.: Qualit‰t?	? 14950,22853 14937,22784 14913,22662 14910,22648 14891,22551 14872,22448
+Kattowitzer Str.: Qualit‰t?	? 14699,22678 14910,22648
+Nahestr.: Qualit‰t?	? 14195,22657 14308,22574 14346,22550 14425,22481
+Siegstr.: Qualit‰t?	? 14308,22574 14162,22366
+Nettestr.: Qualit‰t?	? 14425,22481 14278,22281
+Straﬂe 10 (Karow): Qualit‰t?	? 14162,22366 14278,22281 14307,22262
+#: XXX_indoor bei osm "Straﬂe 10"
+Straﬂe 40 (Karow): Qualit‰t? Heiﬂt die Straﬂe tats‰chlich so?	? 14307,22262 14661,21987
+Straﬂe 36 (Karow): Qualit‰t?	? 14720,22062 14661,21987 14625,21927 14563,21817
+#: XXX_indoor bei osm "Straﬂe 33"
+Straﬂe 38 (Karow): Qualit‰t? Heiﬂt die Straﬂe tats‰chlich so?	? 14511,21847 14563,21817
+Straﬂe 39 (Karow): Qualit‰t?	? 14625,21927 14742,21843
+Straﬂe 48 (Karow): Qualit‰t?	? 14885,21827 15053,22039 15202,22210 15377,22452
+Tarnowitzer Str.: Qualit‰t?	? 15154,22370 15013,22472 14891,22551
+Straﬂe 34 (Karow): Qualit‰t?	? 15087,22573 14913,22662
+#: XXX_indoor bei osm teilweise Straﬂe 73
+Straﬂe 72 (Karow): Qualit‰t?	? 15527,23033 15691,22949 15797,22939
+Straﬂe 73 (Karow): Qualit‰t?	? 15709,22999 15797,22939 15850,22905 15983,22814 16090,22745 16280,22618 16442,22505
+Straﬂe 62: Qualit‰t?	? 16280,22618 16336,22718 16389,22860
+An der Laake: Qualit‰t?	? 16336,22718 16154,22842
+Straﬂe 71: Qualit‰t?	? 15799,22787 15662,22873
+Straﬂe 58: Qualit‰t?	? 15722,22607 15697,22566
+Straﬂe 59 (Karow): Qualit‰t?	? 15835,22531 15807,22489
+Straﬂe 60 (Karow): Qualit‰t?	? 15957,22449 15931,22408
+Straﬂe 62: Qualit‰t?	? 16080,22366 16049,22330
+Straﬂe 63: Qualit‰t?	? 16206,22282 16171,22247
+Straﬂe 64: Qualit‰t?	? 16327,22202 16301,22159
+Straﬂe 69: Qualit‰t?	? 15434,22604 15638,22473 15898,22296
+Straﬂe 58: Qualit‰t?	? 15638,22473 15547,22345 15450,22232
+Straﬂe 42 (Karow): Qualit‰t?	? 15271,22527 15377,22452 15442,22412 15547,22345 15705,22236 15740,22238 15759,22208
+KGA Am Teichberg: Qualit‰t?	? 15705,22236 15672,22127
+#: XXX_indoor fehlt bei Berlin.coords.data
+Straﬂe 68: Qualit‰t?	? 15759,22208 15869,22131
+#: XXX_indoor fehlt bei Berlin.coords.data
+Straﬂe 65: Qualit‰t?	? 15869,22131 15757,21979
+Straﬂe 67: Qualit‰t?	? 15430,22196 15452,22180 15757,21979 15973,21836
+Straﬂe 43: Qualit‰t?	? 15094,22290 15202,22210 15353,22105
+#: XXX evtl Str. 43 (osm?)
+Straﬂe 66: Qualit‰t?	? 15353,22105 15459,22025
+#: XXX evtl. auch Str. 50 oder Str. 43?
+Straﬂe 50: Qualit‰t? Straﬂenname?	? 15430,22196 15353,22105
+Straﬂe 50: Qualit‰t?	? 15305,22017 15281,21960 15197,21791 15118,21585 15107,21514 15097,21424
+Straﬂe 51: Qualit‰t?	? 15325,21777 15377,21921
+Straﬂe 44 (Karow): Qualit‰t?	? 15464,21894 15377,21921 15281,21960 15121,22016 15053,22039 14932,22083
+Straﬂe 46 (Karow): Qualit‰t?	? 14953,21680 14819,21711 14690,21764
+Straﬂe 27: Qualit‰t?	? 14747,21472 14617,21490 14541,21360 14509,21337
+#: XXX_indoor bei osm ohne Namen
+Blanchardstr.: Qualit‰t?	? 15130,24012 15189,24120
+#: XXX_indoor fehlt bei osm
+Gatterweg: Qualit‰t? Genaue Lage der Straﬂe?	? 16388,22890 16504,22903
+Hentzeweg: Qualit‰t? Genaue Lage der Straﬂe?	? 16465,23091 16528,23006
+#: XXX_indoor fehlt bei osm
+Kurze-Enden-Weg: Qualit‰t?	? 15235,23886 15321,23979
+#: XXX_indoor fehlt bei osm
+Nordische Str.: Qualit‰t? Genaue Lage der Straﬂe?	? 15128,21837 15176,21964
+Ebersdorfer Str.: Qualit‰t?	? -4818,13347 -4932,13318 -5033,13284 -5137,13248 -5217,13232
+Ebersdorfer Platz: Qualit‰t?	? -5062,13347 -5161,13308
+Hettnerweg: Qualit‰t?	? -5217,13232 -5295,13415 -5333,13515
+Fˆlderichplatz: Qualit‰t? F¸r Radfahrer Zugang zur Adamstr. mˆglich?	? -3941,12376 -3941,12545 -3942,12559
+Kerstenweg: Qualit‰t? F¸r Radfahrer befahrbar? Kann die Wilhelmstr. ¸berquert werden?	? -3705,13386 -3813,13404
+Schwimmerweg: Qualit‰t?	? -3584,11177 -3642,11216 -3673,11216
+Paddlerweg: Qualit‰t?	? -3559,11227 -3625,11250 -3679,11248
+Rudererweg: Qualit‰t?	? -3534,11277 -3570,11289 -3689,11291
+Lankestrand: Qualit‰t?	? -3689,11291 -3679,11248 -3673,11216
+#: XXX_indoor fehlt bei osm
+Am Kirchenland: Qualit‰t? Genaue Lage der Straﬂe?	? -6821,16028 -6752,16015
+Salchendorfer Weg: Qualit‰t?	? -5123,15298 -4972,15297
+Henri-Dunant-Platz: Pl	? -4972,15297
+#: XXX_indoor fehlt bei osm
+Pfefferweg: Qualit‰t?	? -5849,16199 -5767,16177
+Rockenhausener Str.: Qualit‰t?	? -4338,15137 -4244,15127
+Am Posseberg: Qualit‰t?	? 12632,25569 12436,25580 12396,25478 12138,24989 12261,24851
+Arkenberger Damm: Qualit‰t?	? 12396,25478 12324,25514 11964,25488 11871,25582
