@@ -84,15 +84,15 @@ http://wind.met.fu-berlin.de/loops/webcam/Wannsee_prod.jpg	WC -4416,2664 -4497,2
 #: XXX: Blickrichtung unklar
 http://www.marzahn-hellersdorf.net/webcam.php	WC 22829,13324
 http://rudi-02.dyndns.org:8080/	WC 17163,17631 17207,17659
-http://www.rbb-online.de/_/wetter/webcam/index_jsp.html	WC   1674,11250 1712,11133
+## früher: http://www.rbb-online.de/_/wetter/webcam/index_jsp.html
+#: note: gleicher Link: http://www.rbb-online.de/webcam/fsz/fullsize_logo.jpg
+http://www.inforadio.de/include/rbb/webcam/fsz/fullsize.jpg	WC   1674,11250 1712,11133
 #: note: gleicher Link: http://www.btm.de/deutsch/spiel-spass/d_sp_webcam.php
 http://www.berlin-tourist-information.de/deutsch/spiel-spass/d_sp_webcam.php	WC 8226,10917 8284,10981
-http://www.berlin-webcam.illustriertestadt.de/index.php	WC 6692,11096 6787,11112
+#XXX Domain existiert nicht mehr: http://www.berlin-webcam.illustriertestadt.de/index.php	WC 6692,11096 6787,11112
 # Leider zeigt dieser Link nur noch eine Kaffeekanne: http://home.versanet.de/~bajinsky/alternativ.htm	WC 11975,9187 12010,9235
 http://www.rbb-online.de/webcam/rathaus/fullsize_logo.jpg	WC 10687,12493 10531,12475
-#: note: direkt mit: http://www.rbb-online.de/webcam/fsz/fullsize_logo.jpg
-#: XXX: Standort noch einmal prüfen
-http://www.inforadio.de/webcam1.do	WC 1687,11306 1775,11337
+# seit 2010-01 nicht mehr: http://www.inforadio.de/webcam1.do	WC 1687,11306 1775,11337
 #: note: ebenso als Loop: http://www.met.fu-berlin.de/cgi-bin/webcam/Cam00_loop
 #: note: auch verlinkt von: http://wind.met.fu-berlin.de/wind_work/main.php?lId=500#
 http://www.met.fu-berlin.de/de/wetter/webcam/	WC 4149,5755 4140,5796
@@ -101,15 +101,14 @@ http://www.met.fu-berlin.de/de/wetter/webcam/	WC 4149,5755 4140,5796
 # http://www.omnicon-ffm.de/content/zoomcam1.php	WC 11208,12777 11220,12699
 # http://www.omnicon-ffm.de/content/zoomcam2.php	WC 11200,12775 11166,12746
 # #: note: ^^^
-#: note: Bauarbeiten U55:
-http://www.u55.info/webcam.htm	WC 8765,12306 8791,12289
+## 2010-01: existiert nicht mehr: #: note: Bauarbeiten U55: http://www.u55.info/webcam.htm	WC 8765,12306 8791,12289
 http://linpop.zdf.de/Berlin/webcam/	WC 8822,12326 8747,12300
 # XXX alt: http://www.oldpetrus.de/webcam/	WC 13158,15126 13062,15121
 # XXX alt: http://www.oldpetrus.de/webcam/	WC 13159,15121 13043,15006
 # XXX alt: http://www.oldpetrus.de/webcam/	WC 13159,15118 13180,15060
 http://www.oldpetrus.de/webcam/piescam.jpg	WC 13269,15053 13194,15093
 http://www.oldpetrus.de/webcam/citycam2.jpg	WC 13269,15053 13237,15003
-http://www.das-schloss-steglitz.de/index.php?id=webcam	WC 4865,5521 4853,5621
+# 2010-01: benötigt nun ein Login: http://www.das-schloss-steglitz.de/index.php?id=webcam	WC 4865,5521 4853,5621
 #: note: Indexseite: http://www.olympiastadion-berlin.de/index.php?id=80
 http://www.olympiastadion-berlin.de/webcam2.php	WC -642,11931 -752,11907
 http://www.olympiastadion-berlin.de/webcam3.php	WC -517,11940 -627,11928
