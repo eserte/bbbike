@@ -3403,7 +3403,7 @@ Ringallee/Zur Ringallee: Name der Straﬂe (Ringallee oder Zur Ringallee)? Qualit‰
 Zur Ringallee: Name der Straﬂe ("Zur Ringallee" oder anders?)? Qualit‰t?	? 13614,17650 13582,17738 13586,17830 13640,17921 13740,17977 13830,17990 13958,17966 14047,17894 14101,17817 14124,17730 14161,17681
 Straﬂe 56 (Heinersdorf): Qualit‰t der Straﬂe? Kann die Berliner Str. in Hˆhe Straﬂe 56 ¸berquert werden oder ist das wegen der Straﬂenbahngleise nicht mˆglich?	? 12448,17679 12587,17603
 #: XXX Eintrag in Berlin.coords.data fehlt
-Straﬂe 49 (Heinersdorf): Qualit‰t der Straﬂe?	? 12780,17318 12609,17405 12407,17508
+Straﬂe 49 (Heinersdorf): Qualit‰t der Straﬂe?	? 12780,17318 12609,17405 12500,17460 12407,17508
 Zeuschelstr.: Qualit‰t?	? 12022,23058 11788,23229 11629,23360 11560,23421 11128,23746
 #: XXX Eintrag in str_cont_ausnahme notwendig
 Rupertweg: Qualit‰t?	? 11629,23360 11600,23317 11536,23231
@@ -3716,7 +3716,7 @@ Ginkgoweg: Qualit‰t?	? 16934,3571 16784,3441
 #: XXX laut osm "track"
 Hederichweg: Qualit‰t?	? 16801,3413 16784,3441 16727,3520 16657,3619 16589,3715 16536,3797
 #: XXX laut osm "track"
-Straﬂe 207: Qualit‰t?	? 16838,3620 16727,3520
+Straﬂe 207 (Gr¸ne Aue): Qualit‰t? Wie ist die Straﬂe ausgeschildert?	? 16838,3620 16727,3520
 #: XXX osm meint Greiffenweg, plzdata und lor nicht, wahrscheinlich ist ein "f" richtig
 Greifenweg: Qualit‰t? Wie ist der Straﬂenname: Greifenweg oder Greiffenweg?	? 26119,12981 26228,12898
 Braunb‰renweg: Qualit‰t?	? 26157,13026 26259,12949
@@ -3940,11 +3940,15 @@ Straﬂe 199 (Franzˆsisch Buchholz, Niederschˆnhausen): Qualit‰t?	? 11632,20086 11
 Verl‰ngerte Mozartstr.: Qualit‰t?	? 21864,6928 21920,6835
 Verl‰ngerte M¸ggelbergallee: gibt es diese Straﬂe? Qualit‰t?	? 23107,1680 23231,1707
 Andersonweg: existiert hier eine Straﬂe unter dem Namen "Andersonweg"? Qualit‰t?	? 23064,2147 22872,2107
+#: oldname: Straﬂe 241
 Am Marienhain: Qualit‰t?	? 22638,3366 22662,3205
+#: oldname: Straﬂe 240
 Marienh¸tter Weg: Qualit‰t?	? 22553,3363 22561,3271 22569,3201
+#: oldname: Straﬂe 235
 Zum Dahmeufer: Qualit‰t?	? 22303,3201 22405,3214 22472,3221
+#: oldname: Straﬂe 234
 Bockm¸hlenweg: Qualit‰t?	? 22403,3250 22470,3255 22561,3271
-Straﬂe 239: Qualit‰t?	? 22470,3255 22472,3221 22475,3187
+Straﬂe 239: Qualit‰t? Ebenfalls in "Bockm¸hlenweg" umbenannt?	? 22470,3255 22472,3221 22475,3187
 Straﬂe 236: Qualit‰t? Ist der Straﬂenname richtig? Verlauf der Straﬂe?	? 22356,3351 22346,3293
 Waldweg: Qualit‰t?	? 31670,4365 31700,4493 31734,4624
 Kageler Weg: Qualit‰t?	? 31591,4361 31635,4509 31673,4641
@@ -4260,7 +4264,7 @@ Dˆbelner Weg: Qualit‰t?	? 16153,835 16117,927 16083,1013 16054,1087
 Straﬂe 188: Qualit‰t?	? 16054,1087 15935,1043
 Eilenburger Weg: Qualit‰t?	? 16141,1136 16126,1112 16221,872
 Straﬂe 618: Qualit‰t? Existiert f¸r Radfahrer eine Verbindung zum Weg am Rudower Flieﬂ?	? 16346,481 16320,538 16294,597
-Erlenbruchring: Qualit‰t? Ist die Straﬂe eine Spielstraﬂe? Existiert f¸r Radfahrer eine Verbindung zum Weg am Rudower Flieﬂ?	? 16320,538 16402,655 16434,714 16409,774 16351,817
+Erlenbruchring: Qualit‰t? Ist die Straﬂe eine Spielstraﬂe? Existiert f¸r Radfahrer eine Verbindung zum Weg am Rudower Flieﬂ?	? 16320,538 16402,655 16434,714 16409,774 16339,827
 Truthahnweg: Qualit‰t?	? 16272,388 16372,312 16469,262 16582,221
 Leghornweg: Qualit‰t?	? 16192,24 16055,153
 Langschanweg: Qualit‰t?	? 16244,86 16289,-30 16246,-64 16194,-226
@@ -4524,7 +4528,7 @@ An den B‰nken: Qualit‰t?	? 29529,3880 29753,3679 29820,3589 29842,3421 29846,336
 Richard-Hilliges-Str.: Qualit‰t? Stimmt der Straﬂenname?	? 29946,3674 29951,3448
 #: XXX_indoor: Berlin.coords.data-Eintrag fehlt
 #: XXX_indoor: str_cont_ausnahme-Eintrag
-#: XXX fr¸her evtl. "Fuﬂweg 552|Rahnsdorf|12589|"?
+#: XXX fr¸her evtl. "Fuﬂweg 552|Rahnsdorf|12589|"? oder "Straﬂe 552"?
 Richard-Hˆrnke-Str.: Qualit‰t? Stimmt der Straﬂenname?	? 29842,3421 29951,3448 30037,3469 30094,3475
 Richard-Hˆrnke-Str.: Qualit‰t? Stimmt der Straﬂenname?	? 30121,3482 30219,3512
 Straﬂe 567: Qualit‰t?	? 30037,3469 30017,3554 30024,3636
@@ -4889,7 +4893,9 @@ Fasoltstr.: Qualit‰t?	? 12681,18431 12749,18564 12755,18573 12794,18656 12838,18
 Donarstr.: Qualit‰t?	? 12749,18564 12683,18597 12651,18613 12619,18612
 Straﬂe 45 (Blankenburg): Qualit‰t?	? 14540,20298 14503,20341 14455,20388
 Parkstr. (Blankenburg): Qualit‰t?	? 14466,20455 14309,20486 13938,20548
-Mittelstr. (Blankenburg): Qualit‰t?	? 13912,20650 14320,20580 14482,20547 14685,20504
+Mittelstr. (Blankenburg): Qualit‰t?	? 13912,20650 14320,20580 14482,20547
+#: XXX_indoor bei osm falsch (Mittelstr. statt Str. 46)?
+Straﬂe 46 (Blankenburg): Qualit‰t?	? 14482,20547 14685,20504
 Kirchstr. (Blankenburg): Qualit‰t?	? 14721,20690 14515,20727 14236,20773
 Straﬂe 24: Qualit‰t?	? 14538,20819 14484,20832
 #: XXX_indoor bei osm falsch (str 52 statt 42)?
@@ -4983,7 +4989,7 @@ Zum alten Strandbad: Qualit‰t?	? -2551,16199 -2518,16193
 Amorbacher Weg: Qualit‰t?	? -3043,16601 -3151,16657
 Wansdorfer Platz: Qualit‰t?	? -3148,16712 -3254,16726 -3255,16667 -3203,16660 -3151,16657 -3148,16712
 David-Francke-Str.: Qualit‰t? Existiert ein Zugang zum Uferweg?	? -2325,16687 -2154,16660
-Franz-Meyer-Str.: Qualit‰t? Existiert ein Zugang zum Uferweg?	? -2334,16624 -2193,16573
+Franz-Meyer-Str.: Qualit‰t? Existiert ein Zugang zum Uferweg?	? -2334,16624 -2183,16563
 Hans-Poelzig-Str.: Qualit‰t?	? -2296,16866 -2157,16838
 Sandwiesenweg: Qualit‰t?	? -5905,17165 -5898,17318
 Kohstallweg: Qualit‰t?	? -5645,14887 -5512,14844
@@ -5298,3 +5304,26 @@ Pfefferweg: Qualit‰t?	? -5849,16199 -5767,16177
 Rockenhausener Str.: Qualit‰t?	? -4338,15137 -4244,15127
 Am Posseberg: Qualit‰t?	? 12632,25569 12436,25580 12396,25478 12138,24989 12261,24851
 Arkenberger Damm: Qualit‰t?	? 12396,25478 12324,25514 11964,25488 11871,25582
+Straﬂe 13A: Existiert diese Straﬂe ¸berhaupt? Wo befindet sie sich? Qualit‰t?	? 29789,3478 29810,3422
+Straﬂe 174 (Rheingoldstr.): Existiert diese Straﬂe ¸berhaupt? Wo befindet sie sich? Qualit‰t?	? 18934,558 18789,586
+#: XXX kommt man ¸berhaupt auf die Insel rauf?
+Straﬂe 31 (Rahnsdorf): Qualit‰t? Genaue Lage?	? 29616,3070 29338,3219
+#: XXX_indoor fehlt bei osm
+Straﬂe 89 (Niederschˆnhausen): Qualit‰t?	? 8606,20063 8703,19917
+#: XXX_indoor fehlt bei osm
+Straﬂe 87 (Blankenburg): Qualit‰t?	? 13441,22298 13476,22345
+#: XXX_indoor bei osm ohne Namen
+Straﬂe 73 (Niederschˆnhausen): Qualit‰t?	? 9453,19383 9458,19329
+Straﬂe 39 (Blankenburg): Qualit‰t?	? 15114,21034 15138,21002 15052,20725 15018,20624
+#: XXX_indoor fehlt bei osm
+Straﬂe 46 (Heinersdorf): Qualit‰t?	? 12928,17801 12755,17723 12587,17603 12500,17460
+Straﬂe 41 (Niederschˆnhausen): Qualit‰t?	? 11425,19978 11355,20123 11285,20260
+Straﬂe 39 (Niederschˆnhausen): Qualit‰t?	? 11355,20123 11240,20069
+#: oldname: Alpenberger Str.
+#: XXX_indoor bei osm mit alten Namen?
+Straﬂe 4 (Buch): Qualit‰t? Stimmt der Straﬂenname, oder ist es die Alpenberger Str.?	? 17881,25951 18015,25653
+Straﬂe 28 (Franzˆsisch Buchholz): Qualit‰t?	? 11522,21519 11509,21439 11503,21406
+Straﬂe 18a: Qualit‰t?	? 11217,21565 11297,21593 11347,21589
+#: XXX_indoor fehlt bei osm
+Straﬂe 145: Qualit‰t?	? 11077,21858 11170,21876
+Darﬂer Bogen: Qualit‰t?	? 15226,17900 15450,17861
