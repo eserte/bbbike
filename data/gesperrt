@@ -158,7 +158,7 @@ Körtestr.	1 11060,9549 11004,9554
 Fichtestr.	1 11075,9576 11060,9549
 Baerwaldstr.	1 10361,9755 10357,9813 10424,9958 10467,10051 10500,10081
 Baerwaldstr.	1 10500,10081 10513,10038 10480,9949 10408,9800 10361,9755
-Dittersbacher Weg	1 7859,3181 7865,3344
+Dittersbacher Weg	1 7865,3344 7859,3181
 Anzengruberstr.	1 13042,8395 12865,8346 12689,8289
 Nalepastr. am Rundfunkgebäude	2 17076,8443 17042,7748
 Kirchstr.	1 22196,4847 22234,4789 22243,4710 22284,4653 22312,4593
@@ -521,6 +521,7 @@ Prenzlauer Allee [Wohngebiet]	1 12154,15902 12030,15968
 Blumenstr.	1 12125,12490 12306,12459 12305,12440
 Blumenstr.	1 12305,12440 12118,12462
 Friedensplatz	1 8971,6154 8994,6144 9003,6121 8996,6106 8976,6094 8952,6109 8944,6127 8955,6147 8971,6154
+Westhafenstr.: Tor kann geschlossen sein	2 6083,14564 6025,14539 6015,14516 5997,14444 5920,14422 5217,14255
 Am Neuen Garten	1 -12166,1384 -12212,1201 -12276,831 -12302,718 -12323,635 -12332,585 -12582,127
 Leistikowstr.	1 -12512,810 -12302,718
 Hochstraße	3nocross::ignrte -11399,-1339 -11461,-1424 -11540,-1543
@@ -746,6 +747,12 @@ Mittelstreifen	3nocross::ignrte 15256,14237 15430,14262 15838,14319
 Mittelstr./Altenhofer Str. -> Landsberger Allee: Mittelstreifen	3::igndisp 15430,14272 15430,14262 15838,14319
 Landsberger Allee -> Mittelstr./Altenhofer Str.: Mittelstreifen	3::igndisp 15256,14237 15430,14262 15430,14272
 Mittelstreifen	3nocross::ignrte 1133,14387 1057,14389 999,14390 937,14391 889,14392
+Nonnendammallee -> Grammestr.: Mittelstreifen	3::igndisp 999,14390 1057,14389 1058,14459
+Grammestr. -> Nonnendammallee: Mittelstreifen	3::igndisp 1028,14251 1057,14389 999,14390
+Grammestr. -> Grammestr.: Mittelstreifen	3::igndisp 1028,14251 1057,14389 1058,14459
+Nonnendammallee -> Grammestr.: Mittelstreifen	3::igndisp 1133,14387 1057,14389 1028,14251
+Grammestr. -> Grammestr.: Mittelstreifen	3::igndisp 1058,14459 1057,14389 1028,14251
+Grammestr. -> Nonnendammallee: Mittelstreifen	3::igndisp 1058,14459 1057,14389 1133,14387
 Mittelstreifen	3nocross::ignrte 22484,11270 22756,11268 22937,11265
 Mittelstreifen	3nocross::ignrte 24175,11265 24019,11264 23848,11264 23648,11265
 Mittelstreifen	3nocross::ignrte 11002,1211 11155,1273 11198,1291
