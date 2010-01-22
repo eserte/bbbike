@@ -4,7 +4,7 @@
 # $Id: UAProf.pm,v 1.7 2008/02/02 17:26:19 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2005 Slaven Rezic. All rights reserved.
+# Copyright (C) 2005,2010 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -132,7 +132,14 @@ sub parse_xml {
     my($self, $cap) = @_;
     $self->{p_path} = [];
     $self->{p_look_for} = $cap;
-    if (eval { require XML::Parser; 1 }) {
+    my $sax_parser;
+    if (eval { require XML::LibXML::SAX; 1 }) {
+	$sax_parser = 'XML::LibXML::SAX';
+    } elsif (eval { require XML::SAX::PurePerl; 1 }) {
+	$sax_parser = 'XML::SAX::PurePerl';
+    }
+    if (!$sax_parser) {
+	require XML::Parser;
 	my $p = XML::Parser->new
 	    (Handlers => {Start => sub { $self->p_start_tag(@_) },
 			  End   => sub { $self->p_end_tag(@_) },
@@ -141,7 +148,6 @@ sub parse_xml {
 	    );
 	$p->parsefile($self->{uaproffile});
     } else {
-	require XML::SAX::PurePerl;
 	{
 	    package BrowserInfo::UAProf::SAXHandler;
 	    sub new {
@@ -161,7 +167,7 @@ sub parse_xml {
 		$self->{P}->p_char(undef, $el->{Data});
 	    }
 	}
-	my $p = XML::SAX::PurePerl->new
+	my $p = $sax_parser->new
 	    (Handler => BrowserInfo::UAProf::SAXHandler->new(P => $self));
 	open(UAPROF, $self->{uaproffile}) or die $!;
 	$p->parse_file(\*UAPROF);
