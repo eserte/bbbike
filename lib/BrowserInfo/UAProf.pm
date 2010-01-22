@@ -96,11 +96,15 @@ sub get_cap {
 	die "While fetching $self->{uaprofurl}: " . $resp->content;
     }
 
-    open(UAPROFFILE, "> $self->{uaproffile}") or
-	die "Can't write to $self->{uaproffile}: $!";
+    my $tmp_uaproffile = "$self->{uaproffile}.$$";
+    open(UAPROFFILE, "> $tmp_uaproffile") or
+	die "Can't write to $tmp_uaproffile: $!";
     binmode UAPROFFILE;
     print UAPROFFILE $resp->content;
-    close UAPROFFILE;
+    close UAPROFFILE
+	or die "While writing to $tmp_uaproffile: $!";
+    rename $tmp_uaproffile, $self->{uaproffile}
+	or die "Can't rename $tmp_uaproffile to $self->{uaproffile}: $!";
 
     $self->parse_xml($cap);
     $self->cache_and_get($cap);
