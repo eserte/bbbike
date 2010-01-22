@@ -8072,7 +8072,7 @@ sub exit_app_noninteractive {
 sub change_active_speed_power {
     my($type, $index) = @_;
     my $has_old = 0;
-    if (defined %active_speed_power) {
+    if (keys %active_speed_power) {
 	# delete old
 	my $frame = ($active_speed_power{Type} eq 'speed'
 		     ? \@speed_frame
@@ -14337,7 +14337,7 @@ sub addpoint_xy {
 				      : 0);
 	    $bikepwr_cal[$i] += $bikepwr_cal_etappe;
 
-	    if (defined %active_speed_power &&
+	    if (keys %active_speed_power &&
 		$active_speed_power{Type} eq "power" &&
 		$i == $active_speed_power{Index}) {
 		if (!$nr) {
@@ -14416,7 +14416,7 @@ sub addpoint_xy {
 	}
     }
 
-    if (defined %active_speed_power &&
+    if (keys %active_speed_power &&
 	$active_speed_power{Type} eq "speed") {
 	my $i = $active_speed_power{Index};
 	if (!$nr) {
