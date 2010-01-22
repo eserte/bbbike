@@ -549,8 +549,13 @@ sub showmap_url_bvgstadtplan {
 
     my $px = $args{px};
     my $py = $args{py};
+    my $scale = $args{mapscale_scale};
 
-    sprintf "http://www.fahrinfo-berlin.de/Stadtplan/index?language=d&client=fahrinfo&mode=show&zoom=3&ld=0.1&seqnr=1&location=,,WGS84,%s,%s&label=", $px, $py
+    my $map_zoom;
+    if    ($scale < 18000) { $map_zoom = 4 } # best is 12000
+    elsif ($scale > 37000) { $map_zoom = 3 } # best is 50000
+    else                   { $map_zoom = 2 } # best is 25000
+    sprintf "http://www.fahrinfo-berlin.de/Stadtplan/index?language=d&client=fahrinfo&mode=show&zoom=%d&ld=0.1&seqnr=1&location=,,WGS84,%s,%s&label=", $map_zoom, $px, $py
 }
 
 sub showmap_bvgstadtplan {
