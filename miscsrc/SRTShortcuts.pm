@@ -1953,6 +1953,7 @@ sub visualize_N_RW_net {
 
 sub show_bbbike_suggest_toplevel {
     my(%args) = @_;
+    require Strassen::Strasse;
     require "$FindBin::RealBin/babybike/lib/BBBikeSuggest.pm";
     my $suggest = BBBikeSuggest->new;
     $suggest->set_zipfile("$main::datadir/Berlin.coords.data");
@@ -1963,9 +1964,12 @@ sub show_bbbike_suggest_toplevel {
 					 my $plz = main::make_plz();
 					 main::status_message("Keine PLZ-Datenbank vorhanden!", 'die') if (!$plz);
 					 my $str = $w->get;
-					 my($matchref) = $plz->look_loop($str, Agrep => 3, Max => 1);
+					 ($str,my(@cityparts)) = Strasse::split_street_citypart($str);
+					 my($matchref) = $plz->look_loop($str, Agrep => 3, Max => 1,
+									 (@cityparts ? (Citypart => \@cityparts) : ()),
+									);
 					 my(@match) = @$matchref;
-					 main::status_message("Strange, no match for $str found...", 'die') if (!@match);
+					 main::status_message("Strange, no match for $str (@cityparts) found...", 'die') if (!@match);
 					 my $coord = $match[0]->[PLZ::LOOK_COORD()];
 					 main::mark_point(-coords => [[[ main::transpose(split /,/, $coord) ]]],
 							  -clever_center => 1,
