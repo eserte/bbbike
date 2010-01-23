@@ -22,7 +22,7 @@ Röntgental, Buchenallee: Qualität?	?? 17689,27853 17896,28134 18451,29241
 Gamengrund: Qualität (teilweise war es sehr sandig!)? Geht es von der B 158 aus noch weiter in Richtung Norden?	?? 39337,22638 39383,22801 39165,23131 39033,23202 39114,23766 39180,23776 39266,23984 39241,24116 39089,24279 39063,24400 38997,24431 38880,24568 38824,24812 39002,25304 39221,25518 39205,25655 39124,25812 39089,26036 39241,26229 39282,26391 39378,26508 39561,27382 39602,27382 39678,27600 39535,27808 39561,27996 39657,28154 39988,28352 40231,28753 40135,28824 40267,28951 40282,29022 40236,29621 40195,29774 40206,30002 40255,30508 40302,30617 40314,30725 40562,30941 40750,31012 40982,31319 41300,31862 41235,31914 41003,31612 40819,31252 40562,31025 40350,31083 39783,31398
 Brunow - Gamengrund: Qualität?	? 41618,36515 43362,37337 43825,37262 43922,36623 43637,36362 42975,36212 42748,35962
 Martin-Luther-Str. (Falkensee) - Radelandstr.: durchgängige Verbindung vorhanden? Qualität?	? -6977,17720 -7060,17637 -7306,17291 -7424,17303
-Am Oder-Spree-Kanal, Schwarzer Weg nach Schmöckwitz: Qualität?	? 30533,-3124 29375,-2846 28803,-2932 28549,-3084 28212,-3120 28000,-3147 27898,-3171
+Schwarzer Weg (Schmöckwitz): Am Oder-Spree-Kanal entlang, Qualität?	? 30533,-3124 29375,-2846 28803,-2932 28549,-3084 28212,-3120 28000,-3147 27898,-3171
 Sacrower See - Försterei Zedlitz: Qualität (wahrscheinlich Waldweg, Q2)?	? -10783,3792 -10912,3738 -10955,3723
 Schenkenberg - Dauer: Qualität (zumindest in Schenkenberg noch asphaltiert)?	? 45454,107247 44745,108948
 Dauer - Tornow: Qualität?	? 44745,108948 45265,108797 46428,109624 46174,110110 45766,110618 46075,110850 46272,110976 46317,111103 46685,111038 47335,110888
@@ -92,13 +92,13 @@ Am Neuen Garten: Qualität zwischen Glumestr. und Cecilienhof?	? -12302,718 -1227
 Verlängerte Amtsstr.: Qualität?	? -15251,1200 -15161,1780
 Lindenallee: Qualität? laut "Berliner Umland" witterungsabhängige Strecke; laut "mobil-potsdam.de" teils eine "Promenade", teils betoniert	? -15161,1780 -15132,1992 -15290,2665 -15459,2946
 zur Kohlhasenbrücker Str.: Durchfahrt möglich?	? -6998,-1320 -6946,-1418 -6879,-1504
-Kohlhasenbrücker Str.: Qualität (beidseitig der Großbeerenstr. Asphalt, sonst Waldweg?)?	? -6879,-1504 -6882,-1922 -6827,-2791 -6810,-3151 -6813,-3490 -6808,-3642 -6808,-3950
+Kohlhasenbrücker Str.: Qualität (beidseitig der Großbeerenstr. Asphalt, sonst Waldweg?)?	? -6879,-1504 -6882,-1922 -6827,-2791 -6810,-3151 -6811,-3373 -6813,-3490 -6808,-3642 -6808,-3950
 Stern - Potsdamer Damm/Potsdamer Str.: Durchfahrt möglich? Qualität?	? -6808,-3642 -5736,-3629
-Gaußstr.: Einbahnstraße? Qualität?	? -6969,-3582 -6968,-3678 -6983,-3886 -7113,-3884 -7118,-3678
+Gaußstr.: Einbahnstraße? Qualität?	? -6969,-3582 -6968,-3678 -6976,-3804 -6983,-3886 -7113,-3884 -7118,-3678
 Galileistr.: Qualität? Name westl. der Neuendorfer Str. noch immer Galileistr?	? -8032,-3710 -8098,-3680
-Im Schäferfeld: Qualität?	? -8098,-3680 -8404,-3824 -8475,-3861
+Im Schäferfeld: Qualität?	? -8098,-3680 -8198,-3696 -8317,-3775 -8404,-3824 -8475,-3861
 Fichtenallee (Potsdam): Qualität?	? -8563,-3805 -8451,-3728 -8226,-3592
-Stern - Nudow: Durchfahrt möglich? Qualität (laut "Berliner Umland" witterungsabhängige Strecke)?	? -6983,-3886 -7077,-4186 -6902,-4397 -6775,-4326 -6671,-6390 -6516,-6520 -6508,-6969 -6191,-7587 -6319,-7823 -5766,-8911 -5387,-8896
+Stern - Nudow: Durchfahrt möglich? Qualität (laut "Berliner Umland" witterungsabhängige Strecke)?	? -6983,-3886 -7077,-4186 -6902,-4397 -6775,-4326 -6767,-4463 -6671,-6390 -6516,-6520 -6508,-6969 -6191,-7587 -6319,-7823 -5766,-8911 -5387,-8896
 F3 nach Marquardt: genaue Wegführung? Qualität?	? -19309,4359 -19403,4631 -18701,4578
 Joachimsthal - Altkünkendorf: Qualität?	? 35512,66695 38125,66800 39287,67537 39575,67262 39875,66425
 Gartz - Mescherin: Qualität?	? 75502,90490 75544,90356 75700,90288 76023,90222
@@ -196,7 +196,8 @@ Walter-Klausch-Str.: Qualität?	? -9963,-2980 -9845,-2990
 Walter-Klausch-Str. - Rudolf-Moos-Str.: Existiert für Radfahrer eine Verbindung? Qualität?	? -10192,-2850 -10207,-2848 -10225,-2856 -10274,-2801 -10280,-2766 -10263,-2732 -10281,-2690
 Rudolf-Moos-Str.: Qualität? Existiert ein Radweg?	? -10418,-2624 -10315,-2656 -10281,-2690
 Rudolf-Moos-Str.: Qualität?	? -10281,-2690 -10123,-2712 -9880,-2762 -9788,-2785
-Baberowweg: Qualität?	? -9880,-2762 -9825,-2734 -9767,-2718
+Baberowweg (Potsdam): Qualität des östlichen Abschnitts?	? -9880,-2762 -9825,-2734 -9767,-2718
+Baberowweg (Potsdam): Qualität des westlichen Abschnitts?	? -10174,-2805 -10120,-2838 -9996,-2815
 Fritz-Zubeil-Str.: Qualität?	? -8997,-3762 -9123,-3655 -9212,-3609 -9356,-3546 -9531,-3408 -9642,-3257 -9845,-2990 -9806,-2861 -9788,-2785 -9767,-2718 -9716,-2543 -9692,-2462
 An den Windmühlen: Qualität?	? -9825,-2734 -9905,-2695 -9840,-2413
 Konsumhof: Qualität?	? -9716,-2543 -9573,-2600
@@ -269,9 +270,9 @@ Zichow-Lindenwegsiedlung: Qualität?	? 54500,87934 52642,87955
 Prötzeler Ring: Qualität laut ADFC-Karte gut	? 21951,15918 21980,15857 22055,15698 22092,15610
 Heinestr./Ahrensfelde: laut ADFC-Karte nur mäßig für Radfahrer geeignet	? 20987,19604 21010,19692 21303,19918
 Cottbusser Platz: laut ADFC-Karte gute Qualität	? 23297,14772 23288,14719 23298,14685 23379,14514
-Schillingweg: laut ADFC-Karte mäßig bis gut geeignet	? 11514,24284 11259,23928 11224,23879 11190,23832 11128,23746 11101,23708 10855,23403 10717,23258 10700,23251 10396,23128 9890,22932
+Schillingweg: laut ADFC-Karte mäßig bis gut geeignet	? 11514,24284 11259,23928 11224,23879 11190,23832 11128,23746 11101,23708 10855,23403 10717,23258 10700,23251 10629,23222 10396,23128 9890,22932
 Wriezener/Osloer Str.: ist das Abbiegen wegen der Straßenbahn möglich?	? 9210,16638
-Laut <cp6net$f0g$1@zeppelin.rz.uni-potsdam.de> ist die Eisenbahnbrücke für Fußgänger begehbar, laut <cn2fr0taoncnlu6s84inbhgpo8lq0u0bh2@4ax.com> sogar offizieller Bestandteil des Elbe-Radwegs	? -92087,-49506 -91387,-49350
+Eisenbahnbrücke über der Elbe: laut <cp6net$f0g$1@zeppelin.rz.uni-potsdam.de> ist die Eisenbahnbrücke für Fußgänger begehbar, laut <cn2fr0taoncnlu6s84inbhgpo8lq0u0bh2@4ax.com> sogar offizieller Bestandteil des Elbe-Radwegs	? -92087,-49506 -91387,-49350
 Weg entlang der Elbe: Qualität?	? -91387,-49350 -91150,-49775 -90062,-50750 -89709,-51230
 Fürstenwalder Damm/Müggelseedamm: Vorfahrtsregelung?	? 28195,5141
 Dahlwitzer Landstraße/Schöneicher Str.: Vorfahrtsregelung?	? 25585,6050
@@ -1250,8 +1251,9 @@ Merkurstr.: Qualität?	? 22668,-786 22799,-728 22987,-655
 Schillerstr.: Qualität?	? 23030,-761 22987,-655 22938,-555
 Goethestr.: Qualität?	? 23134,-720 23089,-609 23035,-507
 Lessingstr.: Qualität?	? 23239,-679 23193,-569 23148,-487
-Amorstr.: Qualität?	? 22638,-705 22745,-650 22938,-555 23035,-507 23068,-495 23148,-487
+Amorstr.: Qualität?	? 22638,-705 22745,-650 22938,-555 23035,-507 23056,-499 23148,-487
 Apollostr.: Qualität?	? 22696,-579 22990,-406
+Grünauer Str. (Bohnsdorf): Qualität?	? 23056,-499 22990,-406 22926,-340
 Ruppiner-See-Str.: Qualität?	? -1664,16245 -1643,16323 -1634,16353 -1627,16386 -1616,16427 -1610,16459 -1600,16494 -1593,16524 -1584,16557 -1575,16593 -1566,16628 -1560,16660 -1553,16695 -1538,16776
 Kölpinseeweg: Qualität?	? -1432,16633 -1560,16660
 Kölpinseeweg: Qualität?	? -1566,16628 -1637,16643
@@ -2078,6 +2080,7 @@ Brascheweg: Qualität? Kann man als Radfahrer zur Treskowallee fahren und diese a
 Rolandseck: Qualität zwischen Waldowallee und Köpenicker?	? 18977,9322 19020,9364
 Johannes-Zoschke-Str. - Römerweg: Radfahren möglich? Qualität?	? 19037,9636 19042,9708
 Horterweg: Qualität?	? 19005,9816 19018,10022 19023,10088
+(Horterweg - Römerweg): existiert für Radfahrer eine Verbindung? Qualität? Nachts beleuchtet?	? 19005,9816 18994,9707
 Brekowweg: Qualität?	? 18951,9994 18925,10064
 Rudolf-Grosse-Str.: Qualität? Ist ein Teilabschnitt für Autos gesperrt, aber für Radfahrer passierbar?	? 19109,9306 19128,9523 19141,9709 19144,9810
 Bodenmaiser Weg: Qualität?	? 19407,9232 19488,9219 19634,9192
@@ -2795,7 +2798,7 @@ Am Moosbruch: Qualität?	? 21645,9085 21492,9131
 Seebadstr./Scharnauer Str.: Qualität? Straßenname westlich der Waldstr.?	? 22117,8801 22036,8834
 Scharnauer Str.: Qualität?	? 21996,8716 22036,8834 21924,8886 21780,8892 21694,8886 21645,8861 21540,8815
 Ahornstr. (Kaulsdorf): Qualität?	? 22262,8664 22137,8651 22073,8645
-Sadowastr.: Qualität?	? 22760,8770 22586,8686 22242,8536 22158,8503 22101,8489
+Sadowastr. (Kaulsdorf): Qualität?	? 22760,8770 22586,8686 22242,8536 22158,8503 22101,8489
 Weidenstr.: Qualität?	? 22941,8834 22786,8940 22644,9044
 Arndtstr. (Mahlsdorf, Kaulsdorf): Qualität?	? 22871,8582 22919,8647 23007,8788 23082,8892 23176,9037
 Buchenstr.: Qualität?	? 22514,8848 22586,8961 22644,9044 22699,9137
@@ -2879,6 +2882,8 @@ Am Brunnen (Potsdam): Qualität?	? -11547,-3502 -11543,-3461 -11672,-3345 -11789,
 Waldstr. (Potsdam): Qualität?	? -11152,-3498 -11278,-3596 -11414,-3703
 Kottmeierstr. (Potsdam): Qualität?	? -11504,-3502 -11423,-3638
 Heidereiterweg (Potsdam): Qualität?	? -11278,-3596 -11166,-3744
+Heidereiterweg (Potsdam): Qualität?	? -11173,-3758 -11137,-3880 -11114,-3961 -11083,-4002
+Heidereiterweg (Potsdam): Qualität?	? -11105,-4023 -10978,-4247 -10924,-4319 -10899,-4355
 Nuthestr.: existieren durchgängig Radwege zwischen Berliner Str. und Alt Nowawes?	? -11142,-1675 -11226,-1445 -11356,-1317 -11463,-1232 -11549,-1169
 Am Berg: Qualität?	? 23010,4506 22959,4576
 Iselbergplatz: Qualität?	? 23523,13368 23646,13346
@@ -3432,7 +3437,7 @@ Weg G: Qualität?	? 27859,875 27895,848 27932,816 27972,783 28003,747 28126,641
 Weg H: Qualität?	? 27961,699 28083,592
 Weg J: Qualität?	? 27831,548 27798,576 27762,608
 Weg K: Qualität?	? 27798,576 27750,527
-Weg L: Qualität?	? 27783,493 27750,527 27714,554
+Weg L: Qualität? Oder heißt die Straße "Weg I"?	? 27783,493 27750,527 27714,554
 Weg M: Qualität?	? 27880,347 27752,458
 Weg N: Qualität?	? 27836,286 27700,402
 Weg O: Qualität? Stimmt der Straßenname?	? 27762,608 27714,554
@@ -3688,7 +3693,7 @@ Asgardstr.: Qualität?	? 12387,19454 12424,19542
 Sleipnerplatz: Qualität?	? 12921,18691 12838,18734 12829,18775
 Hildestr.: Qualität?	? 12684,18859 12623,18756 12609,18730 12616,18630 12619,18612 12627,18506 12606,18464
 Lokistr.: Qualität?	? 12683,18597 12717,18662
-Froststr.: Qualität?	? 12545,18625 12616,18630
+Frostr.: Qualität?	? 12545,18625 12616,18630
 Erdastr.: Qualität?	? 12861,18505 12818,18543 12755,18573
 Fasoltstr.: Qualität?	? 12681,18431 12749,18564 12755,18573 12794,18656 12838,18734
 Donarstr.: Qualität?	? 12749,18564 12683,18597 12651,18613 12619,18612
@@ -4048,6 +4053,141 @@ Straße 28 (Französisch Buchholz): Qualität?	? 11522,21519 11509,21439 11503,2140
 Straße 18a: Qualität?	? 11217,21565 11297,21593 11347,21589
 Straße 145: Qualität?	? 11077,21858 11170,21876
 Darßer Bogen: Qualität?	? 15226,17900 15450,17861
+Kapellenweg (Blankenfelde): Qualität?	? 10287,23275 10373,23353 10418,23396 10456,23441 10493,23487 10549,23550 10667,23684 10971,23838
+Weg B (Blankenfelde): Qualität?	? 10493,23487 10629,23222
+Schönhauser Allee/Berliner Str.: Wo genau hört die eine Straße auf und die andere an? An der Wisbyer, Schonensche oder Thulestr.?	? 11019,16465 11027,16553 11026,16606
+Gehrenseestr./Hohenschönhauser Str.: Wo genau hört die eine Straße auf und die andere an?	? 18738,16957 18465,16761
+Schwarze-Pumpe-Weg: Qualität?	? 19349,15984 19192,15979 19081,16020
+Georg-Knorr-Str.: Heißt die Verbindung zwischen Boxberger und Landsberger so? Qualität?	? 19352,15639 19350,15573 19296,15472 19428,15126
+Klettwitzer Str.: Qualität?	? 18871,16864 18786,16609
+(Klettwitzer Str. - Georg-Knorr-Str./Landsberger): Existiert für eine Radfahrer eine Verbindung? Qualität? Nachts beleuchtet?	? 18786,16609 18770,16566 18959,16113 19035,15639 19024,15406 19079,15173 19151,15007
+(Wiesenburger - Wolfener): Existiert für eine Radfahrer eine Verbindung? Qualität? Nachts beleuchtet?	? 19480,15622 19522,16219 19561,16414 19599,16430 19803,16424
+Johannes-Kraatz-Str.: Qualität?	? 18932,5926 18818,5756 18771,5686
+Peter-Behrens-Str.: Qualität?	? 19024,5830 18925,5688 18877,5618
+Paul-Tropp-Str.: Qualität?	? 19105,5699 19042,5607
+Gottfried-Klemm-Str.: Qualität?	? 19042,5607 18925,5688 18818,5756
+Ernst-Ziesel-Str.: Qualität?	? 18877,5618 18771,5686
+Jägersteig (Potsdam): Qualität?	? -8191,-2259 -8297,-2220 -8434,-2197
+Försterweg (Potsdam): Qualität?	? -8244,-2373 -8329,-2330 -8446,-2328
+Joe-May-Str. (Potsdam): Qualität? Öffentliche Straße?	? -8437,-2226 -8489,-2220 -8574,-2204 -8653,-2195
+G.-W.-Pabst-Str. (Potsdam): Qualität? Öffentliche Straße?	? -8450,-2371 -8503,-2362 -8596,-2346 -8677,-2331 -8702,-2330 -8793,-2315
+Zarah-Leander-Str. (Potsdam): Qualität? Öffentliche Straße?	? -8648,-2697 -8623,-2492 -8727,-2473 -8775,-2469
+Albert-Wilkening-Str. (Potsdam): Qualität? Öffentliche Straße?	? -8501,-2285 -8583,-2272
+Lilian-Harvey-Str. (Potsdam): Qualität? Öffentliche Straße?	? -8653,-2195 -8677,-2331
+Friedrich-Holländer-Str. (Potsdam): Qualität? Öffentliche Straße?	? -8702,-2330 -8727,-2473
+Joseph-von-Sternberg-Str. (Potsdam): Qualität? Öffentliche Straße?	? -8623,-2492 -8605,-2400 -8596,-2346 -8574,-2204
+Quentin-Tarantino-Str. (Potsdam): Qualität? Öffentliche Straße?	? -8489,-2220 -8501,-2285 -8503,-2362
+Alfred-Hirschmeier-Str. (Potsdam): Qualität? Öffentliche Straße?	? -8503,-2362 -8512,-2417 -8548,-2645
+Billy-Wilder-Platz (Potsdam): Qualität? Öffentliche Straße?	? -8605,-2400 -8512,-2417
+Ratsweg (Potsdam): geht der Ratsweg auch östlich der Mendelssohn-Bartholdy-Str. entlang?	? -7822,-2795 -7751,-2806
+Bahnhofstr. (Potsdam): Qualität? Gibt es Abschnitte mit einer Einbahnstraßenregelung? Können Radfahrer zur Neuendorfer Str. gelangen?	? -8417,-2867 -8435,-2937 -8358,-3067 -8197,-3128 -7942,-3225
+Parallelweg (Potsdam): Qualität?	? -8435,-2937 -8471,-2958 -8653,-3270 -8447,-3461 -8386,-3549
+Gagarinstr. (Potsdam): Qualität?	? -8137,-2997 -8197,-3128 -8247,-3264 -8277,-3305 -8327,-3450
+Lilienthalstr. (Potsdam): Qualität?	? -8247,-3264 -8025,-3348 -7971,-3373
+Hans-Grade-Ring (Potsdam): Qualität?	? -8327,-3450 -8471,-3399 -8420,-3259 -8277,-3305
+Am Mittelbusch (Potsdam): Qualität?	? -8447,-3461 -8578,-3556
+Katharinastr. (Potsdam): Qualität?	? -8327,-3450 -8302,-3463 -8281,-3495 -8226,-3592 -8198,-3696 -8166,-3907
+Fuldaer Str. (Potsdam): Qualität?	? -8281,-3495 -8386,-3549 -8510,-3616 -8580,-3655
+Schäferweg (Potsdam): Qualität?	? -8317,-3775 -8249,-3934
+Röhrenstr. (Potsdam): Qualität?	? -7774,-3091 -7772,-3209 -7792,-3273
+Kellerstr. (Potsdam): Qualität?	? -7668,-3092 -7674,-3216
+Chopinstr. (Potsdam): Qualität?	? -7577,-3093 -7582,-3196 -7638,-3330
+Grotrianstr. (Potsdam): Qualität?	? -7497,-3096 -7511,-3384
+Schwarzschildstr. (Potsdam): Qualität? Können Radfahrer zur Grotrianstr. und Neuendorfer Str. fahren?	? -7896,-3236 -7839,-3262 -7794,-3277 -7638,-3330 -7552,-3365
+Schwarzschildstr. (Potsdam): Qualität?	? -7839,-3262 -7856,-3397
+Jagdhausstr. (Potsdam): Qualität?	? -7060,-3124 -7017,-3225 -6959,-3339 -6897,-3456 -6808,-3642
+Eulenkamp (Potsdam): Qualität?	? -7412,-3419 -7563,-3565
+Wildeberstr. (Potsdam): Qualität?	? -7017,-3225 -7248,-3434
+Wildeberstr. (Potsdam): Qualität?	? -7285,-3464 -7407,-3578
+Waldhornweg (Potsdam): Qualität?	? -6866,-3257 -6959,-3339 -7150,-3513 -7269,-3628
+Otto-Haseloff-Str. (Potsdam): Qualität?	? -6811,-3373 -6897,-3456 -7015,-3563 -7117,-3655
+Sternstr. (Potsdam): Qualität des nordöstlichen Abschnitts?	? -6976,-3804 -6808,-3642
+Sternstr. (Potsdam): Qualität des südwestlichen Abschnitts?	? -7228,-4113 -7335,-4235 -7436,-4337 -7480,-4391 -7531,-4446 -7616,-4536 -7702,-4629 -7853,-4790
+Newtonstr. (Potsdam): Qualität? Können Radfahrer zum Stern-Center fahren?	? -7830,-3400 -7820,-3701 -7819,-3764 -7815,-3805 -7812,-3936 -7813,-4020
+Laplacering (Potsdam): Qualität?	? -7819,-3764 -7987,-3769 -7980,-3938 -7812,-3936
+Leibnizring (Potsdam): Qualität?	? -7815,-3805 -7663,-3800 -7656,-3934 -7812,-3936
+Max-Born-Str. (Potsdam): Qualität?	? -7351,-3685 -7350,-3742 -7348,-3801 -7346,-3837 -7344,-3893 -7344,-3995
+Niels-Bohr-Ring (Potsdam): Qualität?	? -7350,-3742 -7522,-3750 -7522,-3837 -7346,-3837
+Otto-Hahn-Ring (Potsdam): Qualität?	? -7348,-3801 -7199,-3800 -7196,-3889 -7344,-3893
+Fritz-Lang-Str. (Potsdam): Qualität?	? -7204,-4352 -7149,-4407 -7076,-4482 -7049,-4505 -6961,-4588 -6940,-4609
+Oskar-Meßter-Str. (Potsdam): Qualität?	? -7702,-4629 -7582,-4742
+Robert-Baberske-Str. (Potsdam): Qualität?	? -7616,-4536 -7498,-4655
+Eduard-von-Winterstein-Str. (Potsdam): Qualität?	? -7531,-4446 -7408,-4562
+Guido-Seeber-Weg (Potsdam): Qualität?	? -7308,-4459 -7378,-4396 -7427,-4439 -7464,-4407 -7480,-4391
+Slatan-Dudow-Str. (Potsdam): Qualität?	? -7498,-4655 -7353,-4785
+Hertha-Thiele-Weg (Potsdam): Qualität?	? -7253,-4505 -7169,-4586
+Willi-Schiller-Weg (Potsdam): Qualität?	? -7169,-4586 -7099,-4648
+Willi-Schiller-Weg (Potsdam): Qualität?	? -7049,-4605 -7099,-4648 -7154,-4722 -7156,-4745
+Willy-A.-Kleinau-Weg (Potsdam): Qualität?	? -7278,-4571 -7330,-4625 -7264,-4690
+Wolfgang-Staudte-Str. (Potsdam): Qualität?	? -7353,-4785 -7264,-4690 -7169,-4586 -7076,-4482
+Günther-Simon-Str. (Potsdam): Qualität?	? -7264,-4690 -7172,-4776
+Conrad-Veidt-Str. (Potsdam): Qualität?	? -7156,-4745 -7083,-4708 -6961,-4588
+Friedrich-W.-Murnau-Str.: Qualität?	? -7149,-4407 -7047,-4299 -6949,-4389
+Paul-Wegener-Str.: Qualität?	? -6949,-4389 -7049,-4505
+Priesterweg (Potsdam): Qualität? Teilweise für Autos gesperrt?	? -6767,-4463 -6940,-4609 -7038,-4699 -7172,-4776 -7199,-4797 -7873,-4811
+Alt-Drewitz (Potsdam): Qualität?	? -8101,-4749 -8150,-4849 -8141,-4962 -8186,-5161 -8165,-5236
+Kirchstr. (Potsdam): Qualität?	? -7534,-5904 -7473,-5743 -7561,-5659 -7796,-5447 -7910,-5356 -8057,-5350
+Am Friedhof (Potsdam): Qualität?	? -7722,-5701 -7728,-5839 -7719,-5916
+Am Friedhof (Potsdam): Qualität?	? -7728,-5839 -7821,-5866
+Am Silbergraben (Potsdam): Qualität?	? -8057,-5350 -7905,-5621 -7821,-5866
+Trebbiner Str. (Potsdam): Qualität?	? -7477,-6033 -7488,-6072 -7762,-6204 -7862,-6009
+Handelshof (Potsdam): Qualität?	? -9028,-5574 -9169,-5651 -9205,-5580
+Möbelhof (Potsdam): Qualität?	? -9337,-5246 -9199,-5153 -9088,-5091
+Zum Heizwerk (Potsdam): Qualität?	? -9597,-5392 -9583,-5366 -9441,-5109 -9402,-5039 -9212,-4718 -9105,-4665
+Am Bürohochhaus (Potsdam): Qualität?	? -9402,-5039 -9199,-5153
+Meisenweg (Potsdam): Qualität?	? -9940,-4206 -9875,-4247 -9798,-4308 -9721,-4364 -9692,-4391
+Wieselkiez (Potsdam): Qualität?	? -9647,-3958 -9645,-3830
+Sperberhorst (Potsdam): Qualität?	? -10643,-3062 -10528,-3053 -10532,-2940
+Falkenhorst (Potsdam): Qualität?	? -10643,-3155 -10498,-3164 -10397,-3164 -10379,-3182 -10301,-3255 -10299,-3443
+Habichthorst (Potsdam): Qualität?	? -10498,-3164 -10498,-3266
+Milanhorst (Potsdam): Qualität?	? -10587,-3320 -10401,-3307 -10379,-3182
+Schilfhof (Potsdam): Qualität?	? -10585,-3440 -10439,-3440 -10299,-3443 -10174,-3445
+Binsenhof (Potsdam): Qualität?	? -10585,-3545 -10469,-3545 -10473,-3674
+Magnus-Zeller-Platz (Potsdam): Qualität?	? -10438,-3818 -10433,-3753
+Erlenhof (Potsdam): Qualität?	? -10228,-3894 -10227,-3873 -10224,-3767 -10224,-3730 -10206,-3685 -10202,-3585 -10148,-3585
+Wiesenhof (Potsdam): Qualität?	? -10227,-3873 -10104,-3880 -10102,-3828
+Pappelhof (Potsdam): Qualität?	? -10224,-3767 -10129,-3769
+Weidenhof (Potsdam): Qualität?	? -10224,-3730 -10371,-3724 -10374,-3651
+Inselhof (Potsdam): Qualität?	? -10206,-3685 -10021,-3683 -10020,-3655
+Käthe-Kollwitz-Str. (Potsdam): Qualität?	? -10634,-4001 -10594,-3966 -10362,-4158
+Tiroler Damm (Potsdam): Qualität?	? -10400,-4212 -10362,-4158 -10304,-4090 -10267,-4025 -10165,-3954 -10140,-3918
+Unter den Eichen (Potsdam): Qualität?	? -10304,-4090 -10215,-4169
+Unter den Eichen (Potsdam): Qualität?	? -10170,-4416 -10102,-4346 -10048,-4288 -10021,-4258
+Eduard-Claudius-Str. (Potsdam): Qualität?	? -10725,-4032 -10714,-4011 -10682,-3960
+Eduard-Claudius-Str. (Potsdam): Qualität?	? -10714,-4011 -10584,-4147 -10542,-4204
+Eduard-Claudius-Str. (Potsdam): Qualität?	? -10463,-4157 -10542,-4204 -10615,-4254
+Lisdorf (Potsdam): Qualität?	? -9875,-4247 -9783,-4140 -9672,-4065
+Zur Nuthe (Potsdam): Qualität?	? -9798,-4308 -9717,-4220 -9613,-4149 -9472,-4061
+Käuzchenweg (Potsdam): Qualität?	? -10048,-4288 -9808,-4484
+Am Fenn (Potsdam): Qualität?	? -10102,-4346 -10011,-4426 -9860,-4555
+Am Stadtrand (Potsdam): Qualität?	? -9928,-4643 -9860,-4555 -9808,-4484 -9721,-4364 -9559,-4242 -9413,-4154 -9472,-4061
+Bernhard-Kellermann-Str. (Potsdam): Qualität? Einbahnstraßenregelung?	? -10371,-4237 -10399,-4335 -10277,-4471 -10183,-4402
+Kuckucksruf (Potsdam): Qualität?	? -10578,-4327 -10400,-4212
+Johannes-R.-Becher-Str. (Potsdam): Qualität?	? -10134,-4981 -10288,-4749 -10403,-4498 -10493,-4507
+Friedrich-Wolf-Str. (Potsdam): Qualität?	? -10359,-4780 -10288,-4749 -10204,-4675 -10072,-4507
+Bertolt-Brecht-Str. (Potsdam): Qualität? Einbahnstraßenregelung?	? -10204,-4675 -9998,-4865
+Am Wald (Potsdam): Qualität?	? -11414,-3703 -11382,-3814 -11282,-4118 -11192,-4385 -11153,-4512
+(Kottmeierstr. - Am Wald): Qualität? Für Radfahrer befahrbar?	? -11423,-3638 -11414,-3703
+(Am Wald - Zum Kahleberg): Qualität? Für Radfahrer befahrbar?	? -11153,-4512 -11121,-4605 -11013,-4671
+Vogelsang (Potsdam): Qualität?	? -11305,-3793 -11210,-4095 -11117,-4349
+Heimrode (Potsdam): Qualität? Ist die Heinrich-Mann-Allee an dieser Stelle überquerbar?	? -11137,-3880 -10963,-3762
+Ravensbergweg (Potsdam): Qualität? Ist die Heinrich-Mann-Allee an dieser Stelle überquerbar?	? -11282,-4118 -11210,-4095 -11105,-4023 -11083,-4002 -11003,-3941 -10899,-3866
+Am Plantagenhaus (Potsdam): Qualität?	? -11003,-3941 -10827,-4172
+Hegemeisterweg (Potsdam): Qualität?	? -11192,-4385 -11117,-4349 -10978,-4247
+Am Försteracker (Potsdam): Qualität?	? -10924,-4319 -10915,-4308 -10827,-4172 -10748,-4065 -10725,-4032
+Hasensprung (Potsdam): Qualität?	? -11153,-4512 -10899,-4355 -10888,-4346
+Hasensprung (Potsdam): Qualität?	? -10915,-4308 -10888,-4346 -10840,-4403
+Saarmunder Str. (Potsdam): Qualität?	? -10748,-4065 -10662,-4280 -10577,-4552 -10517,-4686 -10453,-4819
+Saarmunder Str. (Potsdam): Qualität?	? -10331,-5085 -10254,-5307 -10188,-5486
+Zum Jagenstein (Potsdam): Qualität?	? -10824,-4434 -10722,-4618 -10659,-4750 -10596,-4892 -10453,-4819 -10359,-4780
+Ginsterweg (Potsdam): Qualität?	? -10659,-4750 -10517,-4686
+Zum Kahleberg (Potsdam): Qualität?	? -11013,-4671 -10999,-4820
+Sonnentaustr. (Potsdam): Qualität?	? -10649,-5236 -10740,-5048
+Zum Teufelssee (Potsdam): Qualität?	? -10150,-5260 -10254,-5307 -10397,-5379 -10542,-5445 -10516,-5498 -10482,-5572 -10431,-5655
+Liefelds Grund (Potsdam): Qualität?	? -10397,-5379 -10344,-5504 -10482,-5572
+Caputher Heuweg (Potsdam): Qualität?	? -10075,-5419 -10188,-5486 -10288,-5562 -10431,-5655 -10535,-5751 -10641,-5814
+Moosglöckchenweg (Potsdam): Qualität?	? -10535,-5751 -10630,-5553
+Am Springbruch (Potsdam): Qualität?	? -10641,-5814 -10721,-5678 -10659,-5648
 # added from ampeln-orig
 #: add_fragezeichen: Existiert die Ampel Nordufer/Torfstr. noch?
 geschlossen bei Bedarf (?) (Zbr)	? 27657,-11741
@@ -4246,7 +4386,7 @@ Wiedenbrücker Weg (Ist der Wiedenbrücker Weg eine Einbahnstraße? Wenn ja, gilt d
 Leistikowstr. (Ist die Leistikowstr. für Radfahrer in entgegengesetzter Richtung geöffnet?)	? -12512,810 -12302,718
 Zweirichtungsradweg auf der östl. Seite, Qualität unbekannt (Position ist vielleicht nicht ganz genau)	? -7533,24138 -7734,23796 -8777,22961 -8988,22668 -9046,22376
 Radstreifen (Gibt es in der Großbeerenstr. einen Radweg oder Radstreifen?)	? -10673,-2128 -10634,-2159 -10528,-2196 -10426,-2231 -10327,-2262
-Radwege unterschiedlicher Form und Qualtität (genauer spezifizieren)	? -9723,-2451 -9692,-2462 -9534,-2515 -9462,-2540 -9254,-2605 -9118,-2649 -9110,-2651 -9075,-2664 -8865,-2732 -8500,-2856 -8417,-2867 -8361,-2875 -8283,-2917 -8137,-2997 -8005,-3056 -7878,-3090 -7497,-3096 -7487,-3097 -7060,-3124 -6810,-3151
+Radwege unterschiedlicher Form und Qualtität (genauer spezifizieren)	? -9723,-2451 -9692,-2462 -9534,-2515 -9462,-2540 -9254,-2605 -9118,-2649 -9110,-2651 -9075,-2664 -8865,-2732 -8500,-2856 -8417,-2867 -8361,-2875 -8283,-2917 -8137,-2997 -8005,-3056 -7878,-3090 -7774,-3091 -7668,-3092 -7577,-3093 -7497,-3096 -7487,-3097 -7060,-3124 -6810,-3151
 Zweirichtungsradweg auf der östlichen Seite (laut "Berliner Umland" entnommen)	? -18356,4783 -18233,4501 -18025,4018
 Zweirichtungsradweg auf der östlichen Seite (laut "Berliner Umland" entnommen)	? -17588,2815 -17309,2517 -16706,1911
 Radweg (andere Straßenseite auch?)	? 37093,-151665 37375,-151190
