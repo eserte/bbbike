@@ -108,7 +108,7 @@ Teufelsseechaussee: Einrichtung als Fahrradstraße, wo genau?	? 194,10846 96,1070
 #: section ignorieren vvv
 #: section Straßen in Bau und Planung vvv
 # 
-Wohngebiet Carlsgarten: Sind schon weitere Straßen gebaut (z.B. Johanna-Hofer-Str.|Karlshorst|10318|)?	? 19223,8089 19222,7996
+Wohngebiet Carlsgarten: Sind schon weitere Straßen gebaut (z.B. Johanna-Hofer-Str./Karlshorst/10318)?	? 19223,8089 19222,7996
 #: by: http://www.potsdam.de/cms/beitrag/10056300/757395/
 Mauerweg: evtl. existiert hier bereits ein geschotterter Radweg parallel zur Straße	? -8799,3778 -9064,3667 -9156,3451 -9399,3297 -9530,3165 -9999,2615 -10105,2458
 #: last_checked: 2009-12-29
@@ -316,7 +316,7 @@ B87 (Umfahrung Beeskow): Ist die Straße eine Kfz-Straße?	? 66269,-27581 66283,-2
 # Hier scheint nichts mehr zu passieren... : last_checked: 2008-01-25 #: by: Message-ID: <4mfe1bF5vae4U1@uni-berlin.de> Warschauer Str.: Radwegbenutzungspflicht wird aufgehoben	?; 13546,11352 13476,11174 13454,11119 13409,11004 13332,10832
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20060629.1530.43277.html
 #: last_checked: 2009-08-09
-R1: geänderte Ausschilderung steht noch aus	? 22965,4124 23435,4179 23655,4205 23753,4218 23879,4233 24135,4264 24181,4270 25132,4385 25396,4417 25347,4320 25373,4266 25376,4207 25282,3932 25254,3785 25232,3757 25241,3232 25281,3161 25259,3116 25346,2956 25474,2848 25547,2779 25600,2681 25768,2627 25789,2576 25790,2507 25846,2496 25847,2482 25948,2474
+R1: geänderte Ausschilderung steht noch aus	? 22965,4124 23435,4179 23655,4205 23753,4218 23879,4233 24135,4264 24181,4270 25132,4385 25396,4417 25347,4320 25373,4266 25376,4207 25282,3932 25262,3828 25254,3785 25232,3757 25241,3232 25281,3161 25259,3116 25346,2956 25474,2848 25547,2779 25600,2681 25768,2627 25789,2576 25790,2507 25846,2496 25847,2482 25948,2474
 #: next_check: 2006-06-01
 Burgwallgraben: neuer Weg wg. Renaturisierung durch DB - fertig Sommer 2006	? -3609,13492 -3649,13288 -3625,13241 -3550,13122 -3403,13024 -3360,13028 -3332,13054
 #: XXX laut Detlef Hoge:
@@ -692,6 +692,8 @@ Müllerstr. (Potsdam): Qualität?	? -10035,-1465 -10004,-1365
 #: XXX könnte Coloniaweg (Google) oder Concordiaweg (ADAC) sein:
 Name des Koloniewegs, Qualität?	? -10278,-1140 -10261,-1143 -10208,-1155 -10105,-1178 -10059,-1189 -10019,-1198
 Herthastr. (Potsdam): Qualität?	? -9638,-1193 -9617,-1128 -9607,-1097 -9584,-1030
+#: add_fragezeichen: Heißt der Platz mittlerweile "Gertrud-Droste-Platz"?
+#: XXX laut osm
 Freyaplatz (Potsdam): Qualität?	? -9470,-1031 -9515,-1059
 Freyaplatz (Potsdam): Qualität?	? -9457,-1053 -9500,-1086
 Donarstr. (Potsdam): Qualität?	? -9515,-1059 -9584,-1030
@@ -1055,7 +1057,7 @@ Carl-Ludwig-Schleich-Promenade: neu	? 2279,8638 2317,8616 2353,8636
 Heinrich-Zille-Weg: Qualität?	? 815,12653 1070,13309
 (Spandauer Damm - Fürstenbrunnerweg): Qualität?	? 1459,12475 1601,12908 1551,13377
 #: next_check: 2005-12-01
-Tharauer Allee: Bauarbeiten erledigt?	? -1483,11283 -1679,11336 -1818,11466 -1885,11392
+Tharauer Allee: Bauarbeiten erledigt?	? -1515,11278 -1679,11336 -1818,11466 -1885,11392
 #: XXX: unklarer Beitrag von anonymous (guter Asphalt, kurvenreich?), Einbahnstraßenfrage ist nicht beantwortet
 #: XXX: confirmed: Einbahnstraße (Richtung Süden) auch für Radfahrer
 #: XXX: nicht sicher, aber im Dunkeln sah das nach Kopfsteinpflaster, evtl. kleinteiliges, aus
@@ -1927,8 +1929,8 @@ Gurlittstr.: Qualität?	? 7213,5062 6949,5096
 Kottesteig: Qualität? Für Autofahrer gesperrt? Kann der Munsterdamm in Höhe Kottesteig überquert werden?	? 6868,5262 6806,5230 6767,5233
 Doldenweg: Qualität? Für Autofahrer gesperrt?	? 7424,4821 7487,4802
 Elbeweg: Qualität? Für Autofahrer gesperrt?	? 17211,7265 17135,7223 17061,7323 16949,7484 16934,7570 16902,7652 16869,7713
-#: XXX nur dreimal bei einer Googlesuche erwähnt!
-Kuhnheimstr.: Qualität? Existiert dieser Straßenname tatsächlich?	? 17514,6754 17418,6702
+#: XXX fehlt in Berlin.coords.data
+Kunheimstr.: Qualität?	? 17514,6754 17418,6702
 Neckarsulmer Str.: Qualität?	? 7482,4416 7533,4293 7537,4257 7589,4147
 Rottweiler Str.: Qualität?	? 7368,4342 7487,4104
 #: XXX renepost@... meint Q2 ohne weitere Angaben und enge Straße q4!
@@ -2040,7 +2042,7 @@ Stockholmer Str.: Qualität?	? 8759,16684 8783,16710 8844,16863
 #: XXX: nicht vergessen: auch in brunnels eintragen!
 Fußgängerbrücke: Für Radfahrer befahrbar? Existieren Rampen oder Treppen? Qualität?	? 13192,21697 13046,21734 13008,21783
 Blumenthalstr.: Qualität südlich der Uhlandstr. (fängt auch mit Kopfsteinpflaster an)?	? 9120,20015 9159,19818 9177,19745 9195,19644 9214,19533 9231,19440 9249,19351 9258,19290
-Rosenstr.: Ist die Rosenstr. zwischen Jägerstr. und Kirchstr. gepflastert? Gibt es hier eine Einbahnstraße?	? 22284,4653 22355,4660
+Schüßlerplatz: Ist der Schüßlerplatz gepflastert? Gibt es hier eine Einbahnstraße?	? 22284,4653 22355,4660
 Rue Racine: Qualität?	? 4339,21600 4334,21540 4307,21506 4254,21495 4204,21536 4198,21615 4209,21703
 #: XXX unklarer Eintrag von Ulrich Sziede: gute Qualität, Radweg?
 Schefferweg: Qualität?	? 7432,2400 7425,2461
@@ -2514,7 +2516,9 @@ Münchener Str. (Lichtenrade): Qualität?	? 11384,-1983 11380,-2100 11388,-2202 11
 Nespersteig: Qualität?	? 9340,-829 9379,-935
 Norstedter Weg: Qualität?	? 9732,379 9777,364 9812,348 9838,327
 Passauer Str. (Lichtenrade): Qualität?	? 11842,-2230 11882,-2326
-Scharnhorststr. (Lichtenrade): Qualität?	? 10900,-2756 10958,-2760 11112,-2728
+#: XXX fehlt in Berlin.coords.data
+Seydlitzplatz: Qualität?	? 10900,-2756 10958,-2760
+Scharnhorststr. (Lichtenrade): Qualität?	? 10958,-2760 11112,-2728
 Scheerbartweg: Qualität?	? 9616,-186 9719,-187
 Schwalbachstr.: Qualität?	? 11376,32 11399,15 11427,-87 11465,-210
 Sodenstr.: Qualität?	? 11858,-1189 11853,-1134 11794,-935 11790,-894
@@ -2992,10 +2996,12 @@ Rheinpfalzallee: geht es jenseits der Zwieseler Str. noch weiter?	? 19651,9489 1
 Pirolstr. (Karlshorst): Qualität?	? 19688,10094 19819,10090
 Beerfelder Str.: Qualität?	? 19842,9895 19819,10090 19810,10155
 Zwieseler Str.: geht es im Süden noch ein kleines Stück weiter?	? 19629,9094 19631,9072 19700,9040
+# viele der folgenden Straßen in Karlshorst fehlen in Berlin.coords.data
 Wiesengrundstr. (Karlshorst): Qualität östlich von Gasag?	? 19599,8256 19639,8278 19698,8310 19713,8319 19740,8332 19782,8354 19832,8378 19898,8410 19964,8447 20046,8448 20129,8444 20174,8443 20187,8442 20293,8440
 Biesenhorster Weg (Karlshorst): Qualität? Ist der Straßenname offiziell?	? 19950,9234 19972,8935 20006,8706 20046,8448 20058,8355 20096,8077
-Drosselweg (Karlshorst): Qualität? Ist der Straßenname offiziell?	? 19946,9328 20008,9340 20018,9262 20059,8951 20089,8706 20129,8444
-Amselweg (Karlshorst): Qualität? Ist der Straßenname offiziell?	? 20091,9330 20150,8962 20172,8703 20174,8443
+Drosselweg (Karlshorst): Qualität? Ist der Straßenname offiziell?	? 19946,9328 20008,9340 20018,9262 20059,8951 20089,8706 20108,8583 20129,8444
+Habichtweg (Karlshorst): Qualität? Ist der Straßenname offiziell?	? 20108,8583 20173,8580
+Amselweg (Karlshorst): Qualität? Ist der Straßenname offiziell?	? 20091,9330 20150,8962 20172,8703 20173,8580 20174,8443
 Spechtweg (Karlshorst): Qualität? Ist der Straßenname offiziell?	? 20006,8706 20089,8706 20172,8703
 Agavensteig (Karlshorst): Qualität östlich der Eibenallee?	? 19759,8212 19780,8230 19794,8240 19845,8242 19909,8242 19998,8241
 Anemonensteig (Karlshorst): Qualität östlich des Birkenknicks?	? 19925,7958 19958,7998 19986,8035 20014,8071
@@ -3248,7 +3254,7 @@ Adolf-Menzel-Str.: Qualität? Kann man als Radfahrer zur Chemnitzer Str. durchfah
 Adolf-Menzel-Str.: Qualität?	? 22077,10080 22022,10102 22032,10150 22055,10213 22125,10451
 Elsenborner Weg: Qualität?	? 21897,9972 21939,10179
 Norastr.: Qualität?	? 22140,9830 22231,9817 22307,9762
-Mieltschiner Str.: Qualität?	? 22862,9886 22535,10023 22405,10098 22306,10144 22183,10179 22055,10213
+Mieltschiner Str.: Qualität?	? 22862,9886 22604,9994 22535,10023 22405,10098 22306,10144 22183,10179 22055,10213
 Hirsinger Str.: Qualität?	? 22013,9919 21897,9972 21858,9988 21782,10007 21718,10013
 Striegauer Str.: Qualität?	? 22160,10020 22218,10013 22293,10038 22405,10098 22498,10201 22574,10300 22652,10392 22732,10492 22783,10548 22808,10591
 Lassallestr.: Qualität?	? 22306,10144 22343,10289 22365,10386 22403,10523 22440,10658
@@ -3354,7 +3360,7 @@ Oder-Neiße-Radweg - Stützkow: Qualität?	? 61783,66148 61731,66250 61584,66212
 Stützkow - Alt-Gatow: Qualität?	? 61584,66212 61540,66359 61445,66368 61289,66610 60834,66986 60458,66859 60100,66606 60068,66610
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/presse/archiv/20090630.1130.131208.html
 #: XXX: benötigt Eintrag in Berlin.coords.data
-Max-Liebermann-Allee: Qualität? Über welche Straße erfolgt der Zugang?	? -6411,1951 -6348,2067 -6283,2180
+Max-Liebermann-Allee: Qualität? Über welche Straße erfolgt der Zugang?	? -6422,1932 -6331,2094 -6273,2194
 Friedrich-Wilhelm-Str. (Reinickendorf): Qualität?	? 7615,18204 7418,18051
 Straße 245 (Weißensee): Qualität?	? 13590,17368 13271,17589
 Marthastr. (Wilhelmsruh): Qualität?	? 8000,19819 8234,19936
@@ -3416,7 +3422,7 @@ Schützenstr. (Französisch Buchholz): Qualität?	? 11959,22696 11449,23088 11353,2
 Cunistr.: Qualität?	? 11693,22482 11240,22803
 Tiriotstr.: Qualität?	? 11765,22198 11484,22406 11235,22590
 Favierweg: Qualität?	? 10876,22613 10979,22769
-#: XXX Teleatlas und osm widersprechen sich beim Namen
+#: XXX Teleatlas/kauperts/Berlin.coords.data und osm widersprechen sich beim Namen
 Chartronstr.: Qualität? Straßenname "Chartonstr." oder "Chartronstr."?	? 11507,22143 11487,22112 11448,21863 11408,21653
 Straße 147: Qualität?	? 11448,21863 11505,21851
 Stadtgärten: Qualität?	? 11585,22082 11568,22056 11544,21897 11575,21888 11566,21829 11534,21831 11518,21727 11589,21713
@@ -3948,7 +3954,8 @@ Auf der Höh: Qualität?	? 22898,11125 22782,11127
 Straße 199 (Französisch Buchholz, Niederschönhausen): Qualität?	? 11632,20086 11553,20253 11684,20377 11840,20528
 Verlängerte Mozartstr.: Qualität?	? 21864,6928 21920,6835
 Verlängerte Müggelbergallee: gibt es diese Straße? Qualität?	? 23107,1680 23231,1707
-Andersonweg: existiert hier eine Straße unter dem Namen "Andersonweg"? Qualität?	? 23064,2147 22872,2107
+# XXX_indoor Anderson bei tvojpl, Edmund bei osm
+Edmundweg: existiert hier eine Straße unter dem Namen "Andersonweg" oder "Edmundweg"? Qualität?	? 23064,2147 22872,2107
 #: oldname: Straße 241
 Am Marienhain: Qualität?	? 22638,3366 22662,3205
 #: oldname: Straße 240
@@ -5274,7 +5281,7 @@ Straße 64: Qualität?	? 16327,22202 16301,22159
 Straße 69: Qualität?	? 15434,22604 15638,22473 15898,22296
 Straße 58: Qualität?	? 15638,22473 15547,22345 15450,22232
 Straße 42 (Karow): Qualität?	? 15271,22527 15377,22452 15442,22412 15547,22345 15705,22236 15740,22238 15759,22208
-KGA Am Teichberg: Qualität?	? 15705,22236 15672,22127
+Kolonie Am Teichberg: Qualität?	? 15705,22236 15672,22127
 #: XXX_indoor fehlt bei Berlin.coords.data
 Straße 68: Qualität?	? 15759,22208 15869,22131
 #: XXX_indoor fehlt bei Berlin.coords.data
@@ -5384,7 +5391,7 @@ Am Mittelbusch (Potsdam): Qualität?	? -8447,-3461 -8578,-3556
 Katharinastr. (Potsdam): Qualität?	? -8327,-3450 -8302,-3463 -8281,-3495 -8226,-3592 -8198,-3696 -8166,-3907
 Fuldaer Str. (Potsdam): Qualität?	? -8281,-3495 -8386,-3549 -8510,-3616 -8580,-3655
 Schäferweg (Potsdam): Qualität?	? -8317,-3775 -8249,-3934
-Röhrenstr. (Potsdam): Qualität?	? -7774,-3091 -7772,-3209 -7792,-3273
+Röhrenstr. (Potsdam): Qualität?	? -7774,-3091 -7772,-3209 -7794,-3277
 Kellerstr. (Potsdam): Qualität?	? -7668,-3092 -7674,-3216
 Chopinstr. (Potsdam): Qualität?	? -7577,-3093 -7582,-3196 -7638,-3330
 Grotrianstr. (Potsdam): Qualität?	? -7497,-3096 -7511,-3384
@@ -5496,3 +5503,69 @@ Liefelds Grund (Potsdam): Qualität?	? -10397,-5379 -10344,-5504 -10482,-5572
 Caputher Heuweg (Potsdam): Qualität?	? -10075,-5419 -10188,-5486 -10288,-5562 -10431,-5655 -10535,-5751 -10641,-5814
 Moosglöckchenweg (Potsdam): Qualität?	? -10535,-5751 -10630,-5553
 Am Springbruch (Potsdam): Qualität?	? -10641,-5814 -10721,-5678 -10659,-5648
+Am Löwentor: Qualität?	? -6021,2068 -6145,2091 -6171,2128 -6273,2194 -6336,2234
+#: XXX bei kauperts groß
+Am kleinen Anger: Qualität? Wird "kleinen" klein oder groß geschrieben?	? -6496,1976 -6404,2126 -6331,2094
+An der Obstwiese: Qualität?	? -6331,2094 -6234,2055 -6290,1969
+#: XXX bei osm "under construction"
+Am Kirschgarten: bereits fertiggestellt? Qualität?	? 11724,21156 11831,21104 11937,21043 11944,21220 11876,21218 11831,21104
+Am Konsulat: Qualität?	? 9962,19757 9990,19644 9916,19625
+#: XXX fehlt in Berlin.coords.data
+Adlerhorst: Qualität?	? 21131,2454 21133,2406 21185,2341
+#: XXX fehlt in Berlin.coords.data
+Am Spandauer Wasserturm: Qualität?	? -4835,14223 -4893,14287
+#: XXX fehlt in Berlin.coords.data
+An der Schutzbepflanzung: Qualität?	? 25356,14491 25409,14185
+Andreas-Hermes-Siedlung: Qualität?	? 15834,-28 15881,-163
+#: XXX fehlt in Berlin.coords.data; ist bei tvojpl und osm erwähnt
+Rahel-Hirsch-Weg: existiert hier eine Straße unter diesem Straßennamen? Qualität?	? 8554,13476 8584,13432 8595,13375 8582,13355
+#: XXX fehlt in Berlin.coords.data; ist bei kauperts und osm erwähnt
+Richard-Kolkwitz-Weg: Heißt der Weg tatsächlich "Richard-Kolkwitz-Weg"? Ist der Weg ausgeschildert?	? 18773,10028 19116,10173 19675,10410 19711,10426 19921,10499
+#: XXX fehlt in Berlin.coords.data
+Wiesenschlag: Qualität? Sind Teile der Straße für Autos gesperrt?	? -2074,2258 -2036,2150 -1910,1829
+#: XXX tvojpl meint 433, osm 432; fehlt in Berlin.coords.data
+Straße 432: Stimmt der Straßenname? Qualität? Kann man als Radfahrer zur Straße "Im Eck" durchfahren?	? 9840,1173 9906,1166 10001,1122
+#: XXX existiert in osm, aber nirgendwo sonst; fehlt in Berlin.coords.data
+Straße 433: Stimmt der Straßenname? Qualität?	? 9846,817 9956,852 10034,991
+#: XXX fehlt in Berlin.coords.data
+Hermann-Wundrich-Platz: Qualität? Nachts beleuchtet? Ausgeschildert?	? 11174,-1719 11129,-1772 11095,-1846 11070,-1853
+#: XXX fehlt in Berlin.coords.data
+Spielplatzweg: Qualität?	? 15141,5800 15246,5812 15330,5821
+#: XXX fehlt in Berlin.coords.data
+Lilienweg: Qualität?	? 15337,5730 15252,5719 15154,5705 15149,5746
+#: XXX fehlt in Berlin.coords.data
+Kurzer Weg: Qualität?	? 15149,5746 15201,5751
+#: XXX fehlt in Berlin.coords.data
+Verlängerte Köpenicker Str.: Qualität? Permanent offen? Können Radfahrer über Straße F zur Straße "Am Wuhleufer" fahren?	? 21016,7325 21245,7084
+Katzengraben: Qualität im südlichen Abschnitt?	? 22475,4658 22469,4677 22465,4690
+#: XXX fehlt in Berlin.coords.data
+Spindlergasse: Qualität?	? 22469,4677 22515,4694
+#: XXX fehlt in Berlin.coords.data
+#: XXX bei osm mit ss?
+Strandschloßweg: Qualität? Ausgeschildert? Für Autos gesperrt? Nachts beleuchtet?	? 23368,3894 23749,3883 23925,3886 24147,3888 25052,3877 25262,3828
+#: XXX fehlt in Berlin.coords.data
+Sportallee: Qualität? Für Autos gesperrt? Nachts beleuchtet?	? 22577,1002 22368,1081
+Ravensteiner Promenade: Qualität? Nachts beleuchtet?	? 24249,6132 24306,6267 24539,6415 25178,6664 25133,6792 25252,7079 25275,7461
+Müggelspreeweg: Qualität?	? 31772,2830 31645,3108 31591,3139
+#: XXX fehlt in Berlin.coords.data
+Rue René Laennec: Qualität?	? 3684,16788 3608,16765
+#: XXX fehlt in Berlin.coords.data
+Elsa-Rendschmidt-Weg: Qualität? Können Radfahrer hier fahren? Existieren Treppen?	? -1471,11416 -1574,11484 -1593,11501 -1635,11535 -1750,11719
+(Waldweg): Qualität? Führt hier die Route 6 entlang?	? 1859,21541 1610,21721 1556,22050 1588,22209 1524,22368 1415,22552 1476,22938 1559,23039 1534,23277 1382,23505 902,23844
+Führen hier die Routen 3 und 6 entlang?	? 905,24113 931,23965 902,23844
+#: XXX fehlt in Berlin.coords.data
+Straupitzer Steig: Qualität?	? 6768,21515 6777,21335
+#: XXX fehlt in Berlin.coords.data
+Straße 189 (Lübars): Qualität?	? 6353,22515 6301,22581
+#: XXX fehlt in Berlin.coords.data
+Straße 188 (Lübars): Qualität?	? 6353,22622 6301,22581 6254,22546
+#: XXX fehlt bei osm
+(Wittenauer Str. - Zabel-Krüger-Damm): Existiert hier für Radfahrer eine Verbindung? Qualität? Nachts beleuchtet? Ausgeschildert?	? 6301,22581 6254,22633 6207,22741 6249,22761 6243,22797 6126,22952 6075,23022
+#: XXX fehlt in Berlin.coords.data und bei osm
+Straße 185 (Lübars): Qualität?	? 6006,22867 6083,22772
+#: XXX fehlt in Berlin.coords.data und bei osm
+Straße 186 (Lübars): Qualität?	? 6083,22772 6153,22828
+#: XXX fehlt in Berlin.coords.data und bei osm
+Straße 187 (Lübars): Qualität?	? 6175,22803 6153,22828 6115,22877
+#: XXX fehlt in Berlin.coords.data
+Karower Weg: Qualität?	? 12821,22437 12826,22481 12943,22517 13088,22646 13183,22817

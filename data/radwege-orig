@@ -1395,8 +1395,8 @@ Am Ende gibt es 50 Meter benutzungspflichtigen Radweg	RW0; 18008,13507 18234,135
 Am Anfang gibt es einen Radweg von 50 Metern Länge	RW3; 18234,13500 18382,13492 18783,13469
 Die letzten 50 Meter als benutzungspflichtiger Radweg auf dem Gehweg geführt	RW3; 18875,13467 18783,13469 18382,13492 18234,13500
 Am Anfang gibt es einen benutzungspflichtigen Radweg von 80 Metern Länge, danach ist der Gehweg für Radfahrer freigegeben	RW1; 18234,13500 18206,13817
-Am Anfang gibt es einen kurzen benutzungspflichtigen Radweg, danach ist der Gehweg für Radfahrer freigegeben	RW1; 18206,13817 18187,14039 18166,14277
-Gehweg für Radfahrer freigegeben; am Ende gibt es 60 Meter benutzungspflichtigen Radweg	RW1; 18166,14277 18187,14039 18206,13817
+Am Anfang gibt es einen kurzen benutzungspflichtigen Radweg, danach ist der Gehweg für Radfahrer freigegeben	RW1; 18206,13817 18187,14039 18184,14078 18181,14110 18166,14277
+Gehweg für Radfahrer freigegeben; am Ende gibt es 60 Meter benutzungspflichtigen Radweg	RW1; 18166,14277 18181,14110 18184,14078 18187,14039 18206,13817
 Gehweg für Radfahrer freigegeben; am Ende gibt es 80 Meter Radweg	RW1; 18206,13817 18234,13500
 	RW2; 18215,12132 18216,12239
 	RW4; 18216,12239 18216,12262 18220,12450 18234,13500
@@ -2070,7 +2070,7 @@ Die letzten 10 Meter werden auf dem Gehweg geführt	RW3; 3800,6418 3836,6550
 #: by: Tino Knauth:
 	RW6;RW6 10349,2188 10313,2231 10390,2571
 #: by: Thomas Weiner
-	RW4?;RW4? 9695,1563 9782,1474 9832,1380 9847,1274 9828,998 9825,953 9858,744
+	RW4?;RW4? 9695,1563 9782,1474 9832,1380 9847,1274 9840,1173 9828,998 9825,953 9846,817 9858,744
 #: by: Tom Bschor
 	RW;RW0 4810,21730 5106,21418 5297,21243 5357,21199
 #: by: Olaf (hoehne):
@@ -2194,7 +2194,7 @@ Radweg kaum zu erkennen	RW1;RW1 1576,1742 1478,1721 1358,1695 1258,1674 1198,166
 	RW6;RW6 10578,1840 11031,1739 11136,1782 11205,1776
 #: note: laut Radzeit, confirmed by SRT in Höhe der Straßenbahntrasse
 	RW4?;RW4? 21913,17376 21796,17413 21719,17427 21539,17442 21284,17454 21066,17503 20892,17586
-	RW1;RW0 21027,7432 21025,7349 20958,7289
+	RW1;RW0 21027,7432 21025,7349 21016,7325 20958,7289
 	RW1;RW1 20958,7289 20887,7267 20653,7289
 Radwege (Betonplatten)	RW1;RW1 22631,16215 22696,16208 22739,16203 22771,16194
 #: by: Hollie (freak...)

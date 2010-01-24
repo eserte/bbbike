@@ -53,8 +53,8 @@ Knoten Märkische Allee	1 19918,11891 19979,11774
 Knoten Märkische Allee	1 20114,11719 20026,11663
 Knoten Märkische Allee	1 20026,11663 20018,11698 19985,11727
 Gensinger Str./Alt-Friedrichsfelde	1 18853,11780 19064,11805 19142,11804 19389,11761
-Altstadt Köpenick	1 22377,4836 22381,4752
-Altstadt Köpenick	1 22445,4758 22439,4838
+Altstadt Köpenick	1 22377,4836 22388,4737
+Altstadt Köpenick	1 22451,4749 22439,4838
 Landjägerstr.	1 22740,4415 22542,4485 22495,4523
 Alt-Köpenick	1 22138,4661 22175,4730 22196,4847
 (Am S-Bahnhof Plänterwald): Asphalt	1 15357,8286 15284,8214 15242,8263 15303,8343
@@ -294,7 +294,7 @@ Gundelfinger Str.	1 18735,9421 18697,9153 18653,8922 18609,8717
 Dorotheenstr.	1 18653,8922 18770,8898
 Fehmarner Str.	1 6710,14776 6528,15000
 Alte Späthbrücke	2 14437,5080 14535,5137
-Katzengraben	1 22445,4758 22452,4689
+Katzengraben	1 22451,4749 22465,4690
 Schwiegersteig	1 1134,14721 1130,14823 1109,14911
 Moränenweg	1 3208,21425 3304,21205
 Graacher Str.	1 14672,17085 14533,17084
@@ -902,9 +902,9 @@ Aachener Str. -> Detmolder Str.: Mittelstreifen nicht passierbar	3::igndisp 4609
 Straßenbahntrasse	3nocross::ignrte 18215,12132 18216,12239 18216,12262 18220,12450
 Rhinstr. -> Kolonie Friedrichsfelde Nord: Straßenbahntrasse	3::igndisp 18216,12239 18216,12262 18180,12262
 Kolonie Friedrichsfelde Nord -> Rhinstr.: Straßenbahntrasse	3::igndisp 18180,12262 18216,12262 18220,12450
-Straßenbahntrasse	3nocross::ignrte 18166,14277 18187,14039 18206,13817
+Straßenbahntrasse	3nocross::ignrte 18166,14277 18181,14110 18184,14078 18187,14039 18206,13817
 Rhinstr. [134-130] -> Rhinstr.: Straßenbahntrasse	3::igndisp 18477,14042 18187,14039 18206,13817
-Rhinstr. -> Rhinstr. [134-130]: Straßenbahntrasse	3::igndisp 18166,14277 18187,14039 18477,14042
+Rhinstr. -> Rhinstr. [134-130]: Straßenbahntrasse	3::igndisp 18184,14078 18187,14039 18477,14042
 Straßenbahntrasse	3nocross::ignrte 19628,13517 19726,13524 19807,13529 19837,13531 19894,13535 20097,13549
 Allee der Kosmonauten -> Langhoffstr.: Straßenbahntrasse	3::igndisp 19726,13524 19807,13529 19821,13604
 Langhoffstr. -> Allee der Kosmonauten: Straßenbahntrasse	3::igndisp 19821,13604 19807,13529 19837,13531
