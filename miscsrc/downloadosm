@@ -113,7 +113,7 @@ GetOptions("reload!" => \$do_reload,
 	  )
     or usage;
 
-&activate_socksproxy($socksproxy) if $socksproxy;
+activate_socksproxy($socksproxy) if $socksproxy;
 
 my @reload;
 if ($do_reload) {
