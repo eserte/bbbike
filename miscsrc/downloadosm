@@ -65,6 +65,7 @@ my $xstep = 0.01;
 my $ystep = 0.01;
 my $do_round;
 my $do_report;
+my $socksproxy;
 
 sub usage () {
     die <<EOF;
@@ -83,6 +84,8 @@ Second form: refresh existing osm files downloaded with this tool
 -round:    make sure bbox is rounded to 1/10 or 1/100 degree
            NOTE: works only with -x/ystep 0.1 or 0.01!
 -report:   just report what URLs would be loaded to STDOUT
+
+-socksproxy=socks://host:port 	set socks proxy
 
 With -reload:
 -minage days: download only files which are older than days days
@@ -106,8 +109,12 @@ GetOptions("reload!" => \$do_reload,
 	   },
 	   "round!" => \$do_round,
 	   "report!" => \$do_report,
+	   "socksproxy=s" => \$socksproxy,
 	  )
     or usage;
+
+&activate_socksproxy($socksproxy) if $socksproxy;
+
 my @reload;
 if ($do_reload) {
     @reload = @ARGV;
@@ -235,6 +242,39 @@ if (@reload) {
 	    download_osm_tile($x_fix->numify,$y_fix->numify,$xend_fix->numify,$yend_fix->numify, 0);
 	} 
     }
+}
+
+sub activate_socksproxy {
+    my $socksproxy = shift;
+
+    if (!$ua) {
+	warn "LWP::UserAgent is not set, ignore socks proxy!\n";
+	return;
+    }
+
+    eval {
+    	require LWP::Protocol::socks;
+    	$ua->proxy([qw(http https)] => $socksproxy);
+    };
+
+    if ($@) {
+    	warn "Cannot load LWP::Protocol::socks, ignore socks proxy...\n";
+	return;
+    }
+}
+
+sub osm_round {
+    my $real = shift;
+
+    my $number = shift || 100_000;
+ 
+    my $round = int($real * $number + 0.5) / $number;
+
+    if ($debug >= 3) {	
+    	warn "$real <-> $round ", $real - $round, "\n" if $real != $round;
+    }
+
+    return $round;
 }
 
 sub download_osm_tile {
