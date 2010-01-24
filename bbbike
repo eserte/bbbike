@@ -15920,7 +15920,7 @@ sub show_overview_populate {
 	$overview_canvas->configure(-scrollregion => [@s]);
     }
 
-    $overview_canvas->createLine(0,0,0,0,-tags => 'zoomrect');
+    $overview_canvas->createLine(0,0,0,0,-fill => 'red', -tags => 'zoomrect');
     $overview_top->gridColumnconfigure(0, -weight => 1);
     $overview_top->gridRowconfigure(0, -weight => 1);
     $overview_canvas->grid(-row => 0, -column => 0, -sticky => 'eswn');
