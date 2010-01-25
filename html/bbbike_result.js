@@ -144,6 +144,7 @@ function enable_settings_buttons() {
     }
     var winteroptelem = frm.elements["pref_winter"];
     if (!winteroptelem) return;
+    return; // Currently all preferences are available, even with winter optimierung
     var disable_non_winter = winteroptelem.value != "";
     var elems = frm.elements;
     var other_prefs = ["speed", "cat", "quality", "ampel", "green"];

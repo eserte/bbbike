@@ -35,33 +35,69 @@ use Fcntl qw(LOCK_EX LOCK_NB);
 
 my $do_display = 0;
 my $one_instance = 0;
-my $winter_hardness = 1;
+my $winter_hardness = 'snowy';
 
 if (!GetOptions("display" => \$do_display,
 		"one-instance" => \$one_instance,
-		"winter-hardness=i" => \$winter_hardness,
+		"winter-hardness=s" => \$winter_hardness,
 	       )) {
-    die "usage: $0 [-display] [-one-instance]\n";
+    die "usage: $0 [-display] [-one-instance] [-winter-hardness snowy|very_snowy|dry_cold]\n";
 }
 
-my %cat_to_usability = ($winter_hardness == 1 ? (NN => 1,
-						 N  => 3,
-						 NH => 4,
-						 H  => 5,
-						 HH => 6,
-						 B  => 6,
-						)
-			: $winter_hardness == 2 ? (NN => 1,
-						   N  => 2,
-						   NH => 4,
-						   H  => 5,
-						   HH => 6,
-						   B  => 6,
-						  )
-			: die "winter-hardness may be 1 or 2"
-		       );
+# compat for old integers
+if ($winter_hardness eq '1') {
+    $winter_hardness = 'snowy';
+} elsif ($winter_hardness eq '2') {
+    $winter_hardness = 'very_snowy';
+}
 
-my $outfile = "$FindBin::RealBin/../tmp/winter_optimization.st";
+my %usability_desc =
+    ($winter_hardness eq 'snowy'
+     ? (cat_to_usability => { NN => 1,
+			      N  => 3,
+			      NH => 4,
+			      H  => 5,
+			      HH => 6,
+			      B  => 6,
+			    },
+	do_kfz_adjustment  => 1, # use -2/-1/+1/+2 adjustment from comments_kfzverkehr
+	do_cobblestone_opt => 1,
+	do_tram_opt        => 1,
+       )
+     : $winter_hardness eq 'very_snowy'
+     ? (cat_to_usability => { NN => 1,
+			      N  => 2,
+			      NH => 4,
+			      H  => 5,
+			      HH => 6,
+			      B  => 6,
+			    },
+	do_kfz_adjustment  => 1, # use -2/-1/+1/+2 adjustment from comments_kfzverkehr
+	do_cobblestone_opt => 1,
+	do_tram_opt        => 1,
+       )
+     : $winter_hardness eq 'dry_cold'
+     ? (cat_to_usability => { NN => 1, # dry but icy cyclepaths
+			      N  => 6,
+			      NH => 6,
+			      H  => 6,
+			      HH => 6,
+			      B  => 6,
+			    },
+	do_kfz_adjustment  => 0,
+	do_cobblestone_opt => 0,
+	do_tram_opt        => 0,
+       )
+     : die "winter-hardness should be snowy, very_snowy, or dry_cold"
+    );
+my %cat_to_usability   = %{ $usability_desc{cat_to_usability} };
+my $do_cobblestone_opt =    $usability_desc{do_cobblestone_opt};
+my $do_kfz_adjustment  =    $usability_desc{do_kfz_adjustment};
+my $do_tram_opt        =    $usability_desc{do_tram_opt};
+my $do_cyclepath_opt   = 0; # Bei Winterwetter können Radwege komplett ignoriert werden
+my $do_bridge_opt      = 0; # I don't think anymore bridges are critical (and mostly if you have to use one, then usually you cannot avoid it at all)
+
+my $outfile = "$FindBin::RealBin/../tmp/winter_optimization." . $winter_hardness . ".st";
 
 my $lock_file = "/tmp/winter_optimization.lck";
 if ($one_instance) {
@@ -86,13 +122,20 @@ if (-r $strassen_orig) {
 } else {
     $str{"s"} = Strassen->new("strassen");
 }
-## I don't think bridges are critical (and mostly if you have to use one, then usually you cannot avoid it at all)
-#$str{"br"} = Strassen->new("brunnels");
+
+if ($do_bridge_opt) {
+    $str{"br"} = Strassen->new("brunnels");
+}
 $str{"qs"} = Strassen->new("qualitaet_s");
-## Bei Winterwetter können Radwege komplett ignoriert werden
-#$str{"rw"} = Strassen->new("radwege_exact");
-$str{"kfz"} = Strassen->new("comments_kfzverkehr");
-$str{"tram"} = Strassen->new("comments_tram");
+if ($do_cyclepath_opt) {
+    $str{"rw"} = Strassen->new("radwege_exact");
+}
+if ($do_kfz_adjustment) {
+    $str{"kfz"} = Strassen->new("comments_kfzverkehr");
+}
+if ($do_tram_opt) {
+    $str{"tram"} = Strassen->new("comments_tram");
+}
 #lock_keys %str;
 
 my %net;
@@ -123,32 +166,36 @@ while(my($k1,$v) = each %{ $net{"s"}->{Net} }) {
 
     CALC: {
 	    my $quality_penalty = 0;
-	    my $q = $net{"qs"}->{Net}{$k1}{$k2};
-	    if (defined $q) {
-		if ($q =~ /^Q(\d+)/) {
-		    my $cat = $1;
-		    my $rec = $net{"qs"}->get_street_record($k1, $k2);
-		    if ($rec->[Strassen::NAME] =~ /(kopfstein|verbundstein)/i) {
-			if ($cat =~ /^3/) {
-			    $res = 0;
-			    push @reason, "Schlechtes Kopfsteinpflaster";
-			    last CALC;
-			} else {
-			    $res = 1;
-			    push @reason, "Kopfsteinpflaster";
+	    if ($do_cobblestone_opt) {
+		my $q = $net{"qs"}->{Net}{$k1}{$k2};
+		if (defined $q) {
+		    if ($q =~ /^Q(\d+)/) {
+			my $cat = $1;
+			my $rec = $net{"qs"}->get_street_record($k1, $k2);
+			if ($rec->[Strassen::NAME] =~ /(kopfstein|verbundstein)/i) {
+			    if ($cat =~ /^3/) {
+				$res = 0;
+				push @reason, "Schlechtes Kopfsteinpflaster";
+				last CALC;
+			    } else {
+				$res = 1;
+				push @reason, "Kopfsteinpflaster";
+			    }
+			} elsif ($cat ne "0") {
+			    $quality_penalty = 1;
+			    push @reason, "Quality penalty";
 			}
-		    } elsif ($cat ne "0") {
-			$quality_penalty = 1;
-			push @reason, "Quality penalty";
 		    }
 		}
 	    }
 
-	    my $rw = $net{"rw"}->{Net}{$k1}{$k2};
-	    if (defined $rw) {
-		if ($rw =~ /^RW(2|8|)$/) {
-		    $res = 1;
-		    push @reason, "Radweg";
+	    if ($do_cyclepath_opt) {
+		my $rw = $net{"rw"}->{Net}{$k1}{$k2};
+		if (defined $rw) {
+		    if ($rw =~ /^RW(2|8|)$/) {
+			$res = 1;
+			push @reason, "Radweg";
+		    }
 		}
 	    }
 
@@ -156,7 +203,7 @@ while(my($k1,$v) = each %{ $net{"s"}->{Net} }) {
 	    my $is_bridge;
 	    for (@$cat) {
 		next if $_ eq 'Pl';
-		if ($_ eq 'Br') {
+		if ($do_bridge_opt && $_ eq 'Br') {
 		    $is_bridge = 1;
 		} elsif (defined $main_cat) {
 		    my $rec = $net{"s"}->get_street_record($k1, $k2);
@@ -167,6 +214,7 @@ while(my($k1,$v) = each %{ $net{"s"}->{Net} }) {
 		    $main_cat = $_;
 		}
 	    };
+	    next if !defined $main_cat; # may happen for "Pl"
 
 	    my $cat_num = $cat_to_usability{$main_cat};
 	    if (!defined $cat_num) {
@@ -182,7 +230,7 @@ while(my($k1,$v) = each %{ $net{"s"}->{Net} }) {
 	    }
 
 	    my $kfz = $net{"kfz"}->{Net}{$k1}{$k2};
-	    if (defined $kfz) {
+	    if ($do_kfz_adjustment && defined $kfz) {
 		$cat_num += $kfz;
 		push @reason, $main_cat . $kfz;
 	    } else {
@@ -198,10 +246,12 @@ while(my($k1,$v) = each %{ $net{"s"}->{Net} }) {
 
 	    $res -= $quality_penalty;
 
-	    my $tram = $net{"tram"}->{Net}{$k1}{$k2};
-	    if (defined $tram) {
-		$res -= 1;
-		push @reason, "Tram";
+	    if ($do_tram_opt) {
+		my $tram = $net{"tram"}->{Net}{$k1}{$k2};
+		if (defined $tram) {
+		    $res -= 1;
+		    push @reason, "Tram";
+		}
 	    }
 
 	    if    ($res < 0) { $res = 0 }
@@ -232,10 +282,10 @@ while(my($k1,$v) = each %{ $net{"s"}->{Net} }) {
     }
 }
 
-store($net, "$outfile~");
-chmod 0644, "$outfile~";
-rename "$outfile~", $outfile
-    or die "Can't rename from $outfile~ to $outfile: $!";
+store($net, "$outfile.$$~");
+chmod 0644, "$outfile.$$~";
+rename "$outfile.$$~", $outfile
+    or die "Can't rename from $outfile.$$~ to $outfile: $!";
 
 # The data/Makefile rules .strassen.tmp and strassen,
 # without the NH replacement

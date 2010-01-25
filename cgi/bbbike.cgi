@@ -92,7 +92,7 @@ use vars qw($VERSION $VERBOSE $WAP_URL
 	    $bbbike_temp_blockings_file $bbbike_temp_blockings_optimized_file
 	    @temp_blocking $temp_blocking_epoch
 	    $use_cgi_compress_gzip $use_bbbikedraw_compress $max_matches
-	    $use_winter_optimization
+	    $use_winter_optimization $winter_hardness
 	    $with_fullsearch_radio
 	    $with_lang_switch
 	    $newstreetform_encoding
@@ -3170,11 +3170,12 @@ sub search_coord {
     # Winteroptimierung
     if (defined $q->param('pref_winter') && $q->param('pref_winter') ne '') {
 	if ($use_winter_optimization) {
+	    $winter_hardness ||= 'snowy'; # some default
 	    require Storable;
 	    my $penalty;
 	    for my $try (1 .. 2) {
 		for my $dir ("$FindBin::RealBin/../tmp", @Strassen::datadirs) {
-		    my $f = "$dir/winter_optimization.st";
+		    my $f = "$dir/winter_optimization.$winter_hardness.st";
 		    if (-r $f && -s $f) {
 			$penalty = Storable::retrieve($f);
 			last;
@@ -3182,9 +3183,9 @@ sub search_coord {
 		}
 		if (!$penalty) {
 		    if ($try == 2) {
-			die "Can't find winter_optimization.st in @Strassen::datadirs and cannot build...";
+			die "Can't find winter_optimization.$winter_hardness.st in @Strassen::datadirs and cannot build...";
 		    } else {
-			system("$FindBin::RealBin/../miscsrc/winter_optimization.pl", "-winter-hardness", 2, "-one-instance");
+			system("$FindBin::RealBin/../miscsrc/winter_optimization.pl", "-winter-hardness", $winter_hardness, "-one-instance");
 		    }
 		} else {
 		    last;
@@ -3209,7 +3210,7 @@ sub search_coord {
 		}
 		$pen;
 	    };
-	    $disable_other_optimizations = 1;
+	    #XXX $disable_other_optimizations = 1;
 	} else {
 	    # ignore pref_winter
 	}
@@ -4193,7 +4194,7 @@ sub display_route {
 # -->
 # EOF
 #     }
-    $header_args{-script} = {-src => $bbbike_html . "/bbbike_result.js?v=1.13",
+    $header_args{-script} = {-src => $bbbike_html . "/bbbike_result.js?v=1.14",
 			    };
     $header_args{-printmode} = 1 if $printmode;
     header(%header_args, -onLoad => "init_search_result()");
