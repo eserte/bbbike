@@ -13,13 +13,6 @@
 # WWW:  http://www.rezic.de/eserte/
 #
 
-# Verwendung:
-
-# Dieses Skript aufrufen, in .../bbbike/tmp/winter_optimization.st
-# wird ein Penalty-Netz erzeugt. Dann in bbbike Sucheinstellungen ->
-# Penalty -> Penalty für Net/Storable-Datei anklicken und die erzeugte
-# Datei auswählen.
-
 use strict;
 use FindBin;
 use lib ("$FindBin::RealBin/../lib",
@@ -306,3 +299,54 @@ sub create_strassen_with_NH {
 }
 
 __END__
+
+=head1 NAME
+
+winter_optimization.pl - create a penalty net for the winter
+
+=head1 SYNOPSIS
+
+Very snowy, useful for the first days with snow:
+
+   winter_optimization.pl -winter-hardness very_snowy
+
+Somewhat snowy, useful when more streets are already cleared:
+
+   winter_optimization.pl -winter-hardness snowy
+
+Dry cold, but all streets are cleared, no ice expected except
+footpaths and cyclepaths:
+
+   winter_optimization.pl -winter-hardness dry_cold
+
+=head1 DESCRIPTION
+
+=head2 CGI
+
+Note that currently the winter hardness has to be set in the config
+file F<bbbike.cgi.config> as variable C<$winter_hardness>. Winter
+optimization is turned on only if C<$use_winter_optimization> is set
+to true. Usually this could be done automatically for the winter
+months, see F<bbbike-biokovo.cgi.config> for an example.
+
+=head2 Perl/Tk application
+
+After calling this script there is a penalty file created in the
+directory F<.../bbbike/tmp> with name
+F<winter_optimization.I<$hardness>.st>, where I<$hardness> is the
+winter hardness used in the script call.
+
+Choose then in the Perl/Tk application the menu item Sucheinstellungen
+-> Penalty -> Penalty für Net/Storable-Datei and choose the created
+file in the file dialog.
+
+To create a bbd file with the calculated penalties, which then may be
+displayed in the Perl/Tk version:
+
+   winter_optimization.pl -winter-hardness ... -display > wi.bbd
+
+=head1 AUTHOR
+
+Slaven Rezic
+
+=cut
