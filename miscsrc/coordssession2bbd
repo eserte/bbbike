@@ -20,6 +20,7 @@ use Getopt::Long;
 my $do_cumulated;
 my $do_cumulated_per_dir;
 my $do_start_goal;
+my $max;
 
 my $ignore_test_points;
 
@@ -63,9 +64,10 @@ GetOptions("cumulated!" => \$do_cumulated,
 	   "cumulated-per-dir!" => \$do_cumulated_per_dir,
 	   "start-goal!" => \$do_start_goal,
 	   "ignore-test-points!" => \$ignore_test_points,
+	   "max=i" => \$max,
 	  )
     or die "usage: $0 [-cumulated | -cumulated-per-dir | -start-goal]
-	[-ignore-test-points]
+	[-ignore-test-points] [-max ...]
 	[/path/to/coordssessiondir]";
 
 my $cpt = Safe->new;
@@ -112,6 +114,7 @@ sub handle_path {
 sub handle_data {
     my($data) = @_;
     if (UNIVERSAL::isa($data, "HASH") && $data->{routestringrep}) {
+	return if ($data->{'user_agent'}||'') =~ m{BBBike-?Test/}; # ignore test accesses
 	(my $coords = $data->{routestringrep}) =~ s{!}{ }g;
 	if ($do_cumulated || $do_cumulated_per_dir) {
 	    my @coords = split / /, $coords;
@@ -137,12 +140,36 @@ sub handle_data {
 }
 
 if ($do_cumulated || $do_cumulated_per_dir) {
+    if (defined $max) {
+	print <<EOF;
+#: category_color.w1: #c0c0ff
+#: category_color.w2: #8080ff
+#: category_color.w3: #4040c0
+#: category_color.w4: #000080
+#:
+EOF
+    }
     while(my($k1,$v1) = each %seen) {
 	while(my($k2,$v2) = each %$v1) {
-	    if ($do_cumulated_per_dir) {
-		print "$v2\tX; $k1 $k2\n";
+	    my $cat;
+	    if (defined $max) {
+		my $ratio = $v2/$max;
+		if ($ratio <= 0.25) {
+		    $cat = "w1";
+		} elsif ($ratio <= 0.5) {
+		    $cat = "w2";
+		} elsif ($ratio <= 0.75) {
+		    $cat = "w3";
+		} else {
+		    $cat = "w4";
+		}
 	    } else {
-		print "$v2\tX $k1 $k2\n";
+		$cat = 'X';
+	    }
+	    if ($do_cumulated_per_dir) {
+		print "$v2\t$cat; $k1 $k2\n";
+	    } else {
+		print "$v2\t$cat $k1 $k2\n";
 	    }
 	}
     }
