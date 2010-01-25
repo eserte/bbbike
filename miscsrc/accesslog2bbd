@@ -23,6 +23,10 @@ use Safe;
 
 $| = 1;
 
+# The following was created with the help of Regexp::Common,
+# $RE{delimited}{-delim=>'"'}, but with only the payload "kept"
+my $delim_rx = qr{(?:(?:\")([^\\\"]*(?:\\.[^\\\"]*)*)(?:\"))};
+
 my $apache_rx = qr{^      (\S+) # host or ip
                    \s+    (\S+) # user ?
                    \s+    (\S+) # ?
@@ -34,10 +38,13 @@ my $apache_rx = qr{^      (\S+) # host or ip
                    \s+    (\S+) " # protocol
                    \s+    (\d+) # code
                    \s+    (\S+) # bytes or -
+		   \s+$delim_rx # referer
+		   \s+$delim_rx # ua
+		   \s+(\d+)     # duration
                   }x;
-my @apache_fields = qw(host user unknown y m d H M D timezone method url protocol code bytes);
+my @apache_fields = qw(host user unknown y m d H M D timezone method url protocol code bytes referer ua duration);
 
-my $url_prefix = "http://radzeit";
+my $url_prefix = "http://bbbike.hosteurope";
 
 my $ua = LWP::UserAgent->new;
 my $cpt = Safe->new;
