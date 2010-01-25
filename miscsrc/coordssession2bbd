@@ -5,7 +5,7 @@
 # $Id: coordssession2bbd,v 1.4 2007/03/18 19:52:02 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2007 Slaven Rezic. All rights reserved.
+# Copyright (C) 2007,2010 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -32,6 +32,7 @@ my %seen;
 #     cd /tmp/coordssession
 #     perl -le 'for (<*>) { $x = do $_; @c = split /\!/, $x->{routestringrep}; print $c[0]; print $c[-1] }'|sort -u
 #
+no warnings 'qw';
 my %test_start_goal = map {($_,1)}
     qw(
 	  -11240,-2525
@@ -67,16 +68,49 @@ GetOptions("cumulated!" => \$do_cumulated,
 	[-ignore-test-points]
 	[/path/to/coordssessiondir]";
 
-my $dir = shift || "/home/e/eserte/www/log/bbbike-sessions/coordssession";
 my $cpt = Safe->new;
-opendir my $DIR, $dir
-    or die $!;
-my $count = 0;
-while(my $file = readdir $DIR) {
-    my $path = "$dir/$file";
-    next if !-f $path;
-    $count++;
-    my $data = $cpt->rdo($path);
+
+my @files_and_dirs = @ARGV;
+if (!@files_and_dirs) {
+    @files_and_dirs = "/home/e/eserte/www/log/bbbike-sessions/coordssession";
+    # XXX or a better default?
+    warn "Using @files_and_dirs ...\n";
+}
+
+for my $file_or_dir (@files_and_dirs) {
+    handle_path($file_or_dir);
+}
+sub handle_path {
+    my($file_or_dir) = @_;
+    if (-d $file_or_dir) {
+	my $dir = $file_or_dir;
+	opendir my $DIR, $dir
+	    or die $!;
+	my $count = 0;
+	while(my $file = readdir $DIR) {
+	    my $path = "$dir/$file";
+	    next if !-f $path;
+	    handle_path($path);
+	}
+    } elsif (-f $file_or_dir) {
+	if ($file_or_dir =~ m{\.zip$}) {
+	    require Archive::Zip;
+	    my $zip = Archive::Zip->new($file_or_dir);
+	    for my $member ($zip->members) {
+		my $data = $cpt->reval($member->contents);
+		handle_data($data);
+	    }
+	} else {
+	    my $data = $cpt->rdo($file_or_dir);
+	    handle_data($data);
+	}
+    } else {
+	warn "Ignore $file_or_dir...\n";
+    }
+}
+
+sub handle_data {
+    my($data) = @_;
     if (UNIVERSAL::isa($data, "HASH") && $data->{routestringrep}) {
 	(my $coords = $data->{routestringrep}) =~ s{!}{ }g;
 	if ($do_cumulated || $do_cumulated_per_dir) {
