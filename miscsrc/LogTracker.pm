@@ -214,6 +214,12 @@ sub add_button {
 		   pref_statistics();
 	       },
 	      ],
+	      '-',
+	      [Button => 'New online tracking',
+	       -command => sub {
+		   setup_new_online_tracking();
+	       },
+	      ],
               "-",
               [Button => "Delete this menu",
                -command => sub {
@@ -993,6 +999,66 @@ sub worst_routes_of_the_day {
     untie *BW if $is_tied;
 }
 
+######################################################################
+# New tracker XXX currently only a hack
+
+use vars qw($SETUP_NEW_ONLINE_TRACKING_TEST);
+$SETUP_NEW_ONLINE_TRACKING_TEST=0;
+
+sub setup_new_online_tracking {
+    require Net::OpenSSH;
+    my $ssh = Net::OpenSSH->new(
+				$SETUP_NEW_ONLINE_TRACKING_TEST ? 'localhost' : 'bbbike.de',
+				master_stdout_discard => 1, # does not work together with ptksh
+				master_stderr_discard => 1,
+			       );
+    $ssh->error and die "Couldn't establish SSH connection: " . $ssh->error;
+    my($out, $pid) = $ssh->pipe_out($SETUP_NEW_ONLINE_TRACKING_TEST
+				    ? 'echo "/tmp/coordssession/ CLOSE_WRITE,CLOSE 01000000_0aa6e7661e8cfe43"'
+				    : 'inotifywait -m -e close_write /tmp/coordssession'
+				   )
+	or die "pipe out failed: " . $ssh->error;
+    $main::top->fileevent($out, 'readable', sub { new_online_tracking($out,$ssh) });
+}
+
+sub new_online_tracking {
+    my($fh,$ssh) = @_;
+    if (eof($fh)) {
+	close $fh;
+	undef $ssh; # XXX enough to close?
+	$main::top->fileevent($fh, 'readable', '');
+	main::status_message('Stopped tracker...', 'infodlg');
+	return;
+    }
+    chomp(my $inotify_line = <$fh>);
+    my(undef,undef,$session_file) = split /\s+/, $inotify_line, 3;
+    $ssh->scp_get({}, "/tmp/coordssession/$session_file", "/tmp/remote_session_file");
+    open my $ifh, "-|", "$FindBin::RealBin/miscsrc/coordssession2bbd", "-allow-test", "/tmp/remote_session_file"
+	or die $!;
+    open my $ofh, ">>", '/tmp/LogTracker2.bbd'
+	or die $!;
+    while(<$ifh>) {
+	print $ofh $_;
+    }
+    close $ofh or die $!;
+    close $ifh;
+
+    my $s = Strassen->new('/tmp/LogTracker2.bbd');
+    main::plot("str", 'LogTracker', -draw => 1,
+	       -lazy => 0,
+	       FastUpdate => 1,
+	       Filename => "/tmp/LogTracker2.bbd");
+    $main::str_obj{'LogTracker'} = $s; # for LayerEditor
+    my $last = $s->get($s->count-1);
+    if ($last && $last->[Strassen::COORDS()]->[-1]) {
+	main::mark_street
+		(-coords => [[ map { main::transpose(split /,/, $_) } @{$last->[Strassen::COORDS()]} ]],
+		 -dont_center => 1);
+    }
+}
+
+
+######################################################################
 # REPO BEGIN
 # REPO NAME apache2epoch /home/e/eserte/work/srezic-repository 
 # REPO MD5 e3d19a71595fe57b8b1200c8fd1cc60d
