@@ -113,6 +113,10 @@ sub register {
 	  callback_3_std => sub { showmap_url_yahoo_de(@_) },
 	  ($images{YahooDe} ? (icon => $images{YahooDe}) : ()),
 	};
+    $main::info_plugins{__PACKAGE__ . '_AllMaps'} =
+	{ name => 'All Maps',
+	  callback => sub { show_links_to_all_maps(@_) },
+	};
 }
 
 sub _create_images {
@@ -753,6 +757,38 @@ sub showmap_yahoo_de {
     my(%args) = @_;
     my $url = showmap_url_yahoo_de(%args);
     start_browser($url);
+}
+
+######################################################################
+
+sub show_links_to_all_maps {
+    my(%args) = @_;
+    my %all_maps = map {
+	my $desc = $main::info_plugins{$_};
+	$desc && $desc->{callback_3_std} ?
+	    ($desc->{name} => $desc->{callback_3_std}->(%args)) : ();
+    } keys %main::info_plugins;
+    my $tl_tag = 'MultiMap_AllMaps';
+    my $t = main::redisplay_top($main::top, $tl_tag,
+				-title => 'All Maps',
+				-class => 'BbbbikePassive',
+				);
+    my $txt;
+    if (defined $t) {
+	$txt = $t->Scrolled('ROText', -scrollbars => 'osoe',
+			    -wrap => 'none',
+			    -width => 50, -height => 15)->pack(qw(-fill both -expand 1));
+	$t->Advertise(Text => $txt);
+    } else {
+	$main::toplevel = $main::toplevel if 0; # cease -w
+	$t = $main::toplevel{$tl_tag};
+	$txt = $t->Subwidget('Text');
+	$txt->delete('1.0', 'end');
+    }
+    for my $name (sort keys %all_maps) {
+	my $url = $all_maps{$name};
+	$txt->insert('end', "$name\t$url\n");
+    }
 }
 
 ######################################################################
