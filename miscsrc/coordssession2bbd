@@ -22,6 +22,7 @@ my $do_cumulated_per_dir;
 my $do_start_goal;
 my $max;
 my $do_automax;
+my $do_allow_test;
 
 my $ignore_test_points;
 
@@ -67,18 +68,17 @@ GetOptions("cumulated!" => \$do_cumulated,
 	   "ignore-test-points!" => \$ignore_test_points,
 	   "max=i" => \$max,
 	   "automax!" => \$do_automax,
+	   "allow-test!" => \$do_allow_test,
 	  )
     or die "usage: $0 [-cumulated | -cumulated-per-dir | -start-goal]
-	[-ignore-test-points] [-automax | -max ...]
-	[/path/to/coordssessiondir]";
+	[-ignore-test-points] [-automax | -max ...] [-allow-test],
+	/path/to/coordssessiondir ...";
 
 my $cpt = Safe->new;
 
 my @files_and_dirs = @ARGV;
 if (!@files_and_dirs) {
-    @files_and_dirs = "/home/e/eserte/www/log/bbbike-sessions/coordssession";
-    # XXX or a better default?
-    warn "Using @files_and_dirs ...\n";
+    die "Please specify a directory or file containing coordssession files";
 }
 
 for my $file_or_dir (@files_and_dirs) {
@@ -126,7 +126,9 @@ sub handle_path {
 sub handle_data {
     my($data) = @_;
     if (UNIVERSAL::isa($data, "HASH") && $data->{routestringrep}) {
-	return if ($data->{'user_agent'}||'') =~ m{BBBike-?Test/}; # ignore test accesses
+	unless ($do_allow_test) {
+	    return if ($data->{'user_agent'}||'') =~ m{BBBike-?Test/}; # ignore test accesses
+	}
 	(my $coords = $data->{routestringrep}) =~ s{!}{ }g;
 	if ($do_cumulated || $do_cumulated_per_dir) {
 	    my @coords = split / /, $coords;
