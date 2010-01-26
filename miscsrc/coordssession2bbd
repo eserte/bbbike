@@ -21,6 +21,7 @@ my $do_cumulated;
 my $do_cumulated_per_dir;
 my $do_start_goal;
 my $max;
+my $do_automax;
 
 my $ignore_test_points;
 
@@ -65,9 +66,10 @@ GetOptions("cumulated!" => \$do_cumulated,
 	   "start-goal!" => \$do_start_goal,
 	   "ignore-test-points!" => \$ignore_test_points,
 	   "max=i" => \$max,
+	   "automax!" => \$do_automax,
 	  )
     or die "usage: $0 [-cumulated | -cumulated-per-dir | -start-goal]
-	[-ignore-test-points] [-max ...]
+	[-ignore-test-points] [-automax | -max ...]
 	[/path/to/coordssessiondir]";
 
 my $cpt = Safe->new;
@@ -103,7 +105,17 @@ sub handle_path {
 		handle_data($data);
 	    }
 	} else {
-	    my $data = $cpt->rdo($file_or_dir);
+	    my $data;
+	    if ($file_or_dir =~ m{\.gz$}) {
+		require PerlIO::gzip;
+		open my $fh, "<:gzip", $file_or_dir
+		    or die "Can't open $file_or_dir: $!";
+		local $/ = undef;
+		my $buf = <$fh>;
+		$data = $cpt->reval($buf);
+	    } else {
+		$data = $cpt->rdo($file_or_dir);
+	    }
 	    handle_data($data);
 	}
     } else {
@@ -135,6 +147,15 @@ sub handle_data {
 	    $goal{$coords[-1]}++;
 	} else {
 	    print "$data->{date} $data->{remote_ip}\tX $coords\n";
+	}
+    }
+}
+
+if ($do_automax) {
+    $max = 0;
+    while(my($k1,$v1) = each %seen) {
+	while(my($k2,$v2) = each %$v1) {
+	    $max = $v2 if $v2 > $max;
 	}
     }
 }
