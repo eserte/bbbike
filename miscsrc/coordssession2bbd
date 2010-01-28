@@ -23,6 +23,7 @@ my $do_start_goal;
 my $max;
 my $do_automax;
 my $do_allow_test;
+my $debug;
 
 my $ignore_test_points;
 
@@ -69,9 +70,11 @@ GetOptions("cumulated!" => \$do_cumulated,
 	   "max=i" => \$max,
 	   "automax!" => \$do_automax,
 	   "allow-test!" => \$do_allow_test,
+	   "debug!" => \$debug,
 	  )
     or die "usage: $0 [-cumulated | -cumulated-per-dir | -start-goal]
-	[-ignore-test-points] [-automax | -max ...] [-allow-test],
+	[-ignore-test-points] [-automax | -max ...] [-allow-test]
+        [-debug]
 	/path/to/coordssessiondir ...";
 
 my $cpt = Safe->new;
@@ -86,6 +89,7 @@ for my $file_or_dir (@files_and_dirs) {
 }
 sub handle_path {
     my($file_or_dir) = @_;
+    warn "Check $file_or_dir...\n" if $debug;
     if (-d $file_or_dir) {
 	my $dir = $file_or_dir;
 	opendir my $DIR, $dir
@@ -101,6 +105,7 @@ sub handle_path {
 	    require Archive::Zip;
 	    my $zip = Archive::Zip->new($file_or_dir);
 	    for my $member ($zip->members) {
+		warn "  Check " . $member->fileName . " ...\n" if $debug;
 		my $data = $cpt->reval($member->contents);
 		handle_data($data);
 	    }
@@ -127,7 +132,9 @@ sub handle_data {
     my($data) = @_;
     if (UNIVERSAL::isa($data, "HASH") && $data->{routestringrep}) {
 	unless ($do_allow_test) {
-	    return if ($data->{'user_agent'}||'') =~ m{BBBike-?Test/}; # ignore test accesses
+	    if (($data->{'user_agent'}||'') =~ m{BBBike-?Test/}) { # ignore test accesses
+		warn "  Ignoring test access...\n" if $debug;
+	    }
 	}
 	(my $coords = $data->{routestringrep}) =~ s{!}{ }g;
 	if ($do_cumulated || $do_cumulated_per_dir) {
@@ -148,7 +155,15 @@ sub handle_data {
 	    $start{$coords[0]}++;
 	    $goal{$coords[-1]}++;
 	} else {
-	    print "$data->{date} $data->{remote_ip}\tX $coords\n";
+	    my $name = "$data->{date} $data->{remote_ip}";
+	    my $prefs = $data->{prefs};
+	    if ($prefs) {
+		$name .= " " . join(" ", map {
+		    (my $short_key = $_) =~ s{^pref_}{};
+		    $short_key . ':' . $prefs->{$_};
+		} grep { length $prefs->{$_} } grep { $_ ne 'pref_seen' } keys %$prefs);
+	    }
+	    print "$name\tX $coords\n";
 	}
     }
 }
