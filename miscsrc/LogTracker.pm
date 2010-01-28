@@ -1053,6 +1053,12 @@ sub new_online_tracking {
 	or die $!;
     open my $ofh, ">>", '/tmp/LogTracker2.bbd'
 	or die $!;
+    if (tell($ofh) == 0) { # new file?
+	print $ofh <<'EOF';
+#: category_color.X: blue
+#:
+EOF
+    }
     while(<$ifh>) {
 	print $ofh $_;
     }
