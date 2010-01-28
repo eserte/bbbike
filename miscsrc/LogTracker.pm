@@ -220,6 +220,11 @@ sub add_button {
 		   setup_new_online_tracking();
 	       },
 	      ],
+	      [Button => 'Stop new online tracking',
+	       -command => sub {
+		   stop_new_online_tracking();
+	       },
+	      ],
               "-",
               [Button => "Delete this menu",
                -command => sub {
@@ -1002,31 +1007,42 @@ sub worst_routes_of_the_day {
 ######################################################################
 # New tracker XXX currently only a hack
 
-use vars qw($SETUP_NEW_ONLINE_TRACKING_TEST);
+use vars qw($SETUP_NEW_ONLINE_TRACKING_TEST $LOG_TRACKER_SSH $LOG_TRACKER_FH);
 $SETUP_NEW_ONLINE_TRACKING_TEST=0;
 
 sub setup_new_online_tracking {
+    if ($LOG_TRACKER_SSH) {
+	stop_online_tracking();
+    }
     require Net::OpenSSH;
-    my $ssh = Net::OpenSSH->new(
-				$SETUP_NEW_ONLINE_TRACKING_TEST ? 'localhost' : 'bbbike.de',
-				master_stdout_discard => 1, # does not work together with ptksh
-				master_stderr_discard => 1,
-			       );
-    $ssh->error and die "Couldn't establish SSH connection: " . $ssh->error;
-    my($out, $pid) = $ssh->pipe_out($SETUP_NEW_ONLINE_TRACKING_TEST
-				    ? 'echo "/tmp/coordssession/ CLOSE_WRITE,CLOSE 01000000_0aa6e7661e8cfe43"'
-				    : 'inotifywait -m -e close_write /tmp/coordssession'
-				   )
-	or die "pipe out failed: " . $ssh->error;
-    $main::top->fileevent($out, 'readable', sub { new_online_tracking($out,$ssh) });
+    $LOG_TRACKER_SSH = Net::OpenSSH->new(
+					 $SETUP_NEW_ONLINE_TRACKING_TEST ? 'localhost' : 'bbbike.de',
+					 master_stdout_discard => 1, # does not work together with ptksh
+					 master_stderr_discard => 1,
+					);
+    $LOG_TRACKER_SSH->error
+	and die "Couldn't establish SSH connection: " . $LOG_TRACKER_SSH->error;
+    ($LOG_TRACKER_FH, my($pid)) = $LOG_TRACKER_SSH->pipe_out($SETUP_NEW_ONLINE_TRACKING_TEST
+							     ? 'echo "/tmp/coordssession/ CLOSE_WRITE,CLOSE 01000000_0aa6e7661e8cfe43"'
+							     : 'inotifywait -m -e close_write /tmp/coordssession'
+							    )
+	or die "pipe out failed: " . $LOG_TRACKER_SSH->error;
+    $main::top->fileevent($LOG_TRACKER_FH, 'readable', sub { new_online_tracking() });
+}
+
+sub stop_new_online_tracking {
+    if ($LOG_TRACKER_FH) {
+	$main::top->fileevent($LOG_TRACKER_FH, 'readable', '');
+	close $LOG_TRACKER_FH;
+    }
+    undef $LOG_TRACKER_FH;
+    undef $LOG_TRACKER_SSH;
 }
 
 sub new_online_tracking {
-    my($fh,$ssh) = @_;
+    my($fh,$ssh) = ($LOG_TRACKER_FH, $LOG_TRACKER_SSH);
     if (eof($fh)) {
-	close $fh;
-	undef $ssh; # XXX enough to close?
-	$main::top->fileevent($fh, 'readable', '');
+	stop_new_online_tracking();
 	main::status_message('Stopped tracker...', 'infodlg');
 	return;
     }
@@ -1044,11 +1060,11 @@ sub new_online_tracking {
     close $ifh;
 
     my $s = Strassen->new('/tmp/LogTracker2.bbd');
-    main::plot("str", 'LogTracker', -draw => 1,
+    main::plot("str", $layer{routes}, -draw => 1,
 	       -lazy => 0,
 	       FastUpdate => 1,
 	       Filename => "/tmp/LogTracker2.bbd");
-    $main::str_obj{'LogTracker'} = $s; # for LayerEditor
+    $main::str_obj{$layer{routes}} = $s; # for LayerEditor
     my $last = $s->get($s->count-1);
     if ($last && $last->[Strassen::COORDS()]->[-1]) {
 	main::mark_street
