@@ -4732,6 +4732,7 @@ EOF
 			   route          => \@out_route,
 			   remote_ip      => $ENV{HTTP_X_FORWARDED_FOR} || $ENV{REMOTE_ADDR},
 			   user_agent     => $ENV{HTTP_USER_AGENT},
+			   prefs          => { map { ($_ => $q->param($_)) } grep { /^pref_/ } $q->param },
 			 });
 		    close SESS;
 		}
