@@ -7,7 +7,7 @@
 
 use strict;
 use FindBin;
-use lib "$FindBin::RealBin";
+use lib ($FindBin::RealBin, "$FindBin::RealBin/..");
 
 BEGIN {
     if (!eval q{
@@ -21,12 +21,14 @@ BEGIN {
     }
 }
 
-use BBBikeTest qw($cgiurl);
+use BBBikeTest qw($cgidir);
 
 plan tests => 4;
 
 my $ua = LWP::UserAgent->new;
 $ua->agent('BBBikeTest/1.0');
+
+my $cgiurl = "$cgidir/bbbike-test.cgi";
 
 {
     my $url = $cgiurl . '?api=revgeocode;lon=13.460589;lat=52.507395';
