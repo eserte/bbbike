@@ -1953,10 +1953,22 @@ sub visualize_N_RW_net {
 
 sub show_bbbike_suggest_toplevel {
     my(%args) = @_;
+    require File::Temp;
     require Strassen::Strasse;
     require "$FindBin::RealBin/babybike/lib/BBBikeSuggest.pm";
     my $suggest = BBBikeSuggest->new;
-    $suggest->set_zipfile("$main::datadir/Berlin.coords.data");
+    my($ofh,$sorted_zipfile) = File::Temp::tempfile(SUFFIX => ".data", UNLINK => 1);
+    {
+	local $ENV{LANG} = $ENV{LC_CTYPE} = $ENV{LC_ALL} = 'C';
+	open my $fh, "-|", 'sort', "$main::datadir/Berlin.coords.data"
+	    or die $!;
+	while(<$fh>) {
+	    print $ofh $_;
+	}
+	close $fh
+	    or die $!;
+    }
+    $suggest->set_zipfile($sorted_zipfile);
     my $t = main::redisplay_top($main::top, 'bbbike_suggest', -force => 1, -title => 'Search street', %args);
     main::set_as_toolwindow($t);
     my $w = $suggest->suggest_widget($t, -selectcmd => sub {

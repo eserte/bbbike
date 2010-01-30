@@ -42,6 +42,7 @@ sub suggest_widget {
     my $sw;
     $sw = $parent->PathEntry
 	(-autocomplete => 1,
+	 -casesensitive => 0,
 	 -choicescmd => sub {
 	     my($w, $pathname) = @_;
 	     $self->get_street_choices($w, $pathname);
