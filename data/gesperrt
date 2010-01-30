@@ -142,7 +142,7 @@ Marksburgstr.	1 18319,9218 18430,9199 18511,9185 18586,9172 18697,9153 18809,913
 Griechische Allee	1 17962,6674 18005,6681 18077,6690 18125,6694 18254,6679 18339,6660 18494,6588
 Griechische Allee	1 18494,6588 18429,6582 18273,6606 18159,6642 18080,6670 18008,6672 17962,6674
 Hardenbergplatz	1 5542,11075 5565,11147 5666,11362 5698,11333 5590,11118 5542,11075
-(Waterlooufer - Zossener Str.)	1 9858,10199 9825,10206
+(Waterloo-Ufer - Zossener Str.)	1 9858,10199 9825,10206
 Greinerstr.	1 8347,3382 8327,2975
 Dederingstr.	1 8457,2965 8478,3414
 Weserstr. (Friedrichshain)	1 14416,11815 14471,11782
@@ -990,8 +990,8 @@ Landsberger Allee -> Märkische Allee: Linksabbiegen nicht möglich	3::igndisp 195
 Landsberger Allee -> Märkische Allee: Linksabbiegen nicht möglich	3::igndisp 19408,15007 19466,14910 19506,15002
 unbequem passierbarer Mittelstreifen	3nocross::ignrte 9865,10227 9858,10199 9837,10117
 Brachvogelstr. -> Zossener Str.: unbequem passierbarer Mittelstreifen	3::igndisp 9884,10192 9858,10199 9837,10117
-Waterlooufer -> Brachvogelstr.: unbequem passierbarer Mittelstreifen	3::igndisp 9825,10206 9858,10199 9884,10192
-Waterlooufer -> Zossener Str.: unbequem passierbarer Mittelstreifen	3::igndisp 9825,10206 9858,10199 9865,10227
+Waterloo-Ufer -> Brachvogelstr.: unbequem passierbarer Mittelstreifen	3::igndisp 9825,10206 9858,10199 9884,10192
+Waterloo-Ufer -> Zossener Str.: unbequem passierbarer Mittelstreifen	3::igndisp 9825,10206 9858,10199 9865,10227
 Straßentunnelrampe	3nocross::ignrte 10878,12560 10954,12635 11057,12715 11105,12764
 Littenstr. -> Grunerstr.: Straßentunnelrampe	3::igndisp 11056,12461 10954,12635 10878,12560
 Grunerstr. -> Littenstr.: Straßentunnelrampe	3::igndisp 11057,12715 10954,12635 11056,12461
