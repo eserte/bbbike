@@ -52,3 +52,15 @@ local $/ = \8192;
 print <$fh>;
 
 unlink $filename;
+
+__END__
+
+=pod
+
+Note that almost the same archive may be created using git:
+
+    git archive --format=zip HEAD -- `grep "^data" MANIFEST`
+
+Only data/.modified is missing and has to be added afterwards.
+
+=cut
