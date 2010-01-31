@@ -5434,6 +5434,7 @@ EOF
     # Browsern.
     header(#-script => $script,
 	   #-onLoad => 'jump_to_map()'
+	   -from => 'map',
 	  );
     if ($lang eq 'en') {
 	print "Choose <b><a name='mapbegin'>" . M(ucfirst($type)) . "</a></b>:<br>\n";
@@ -6258,7 +6259,7 @@ sub header {
 	print $q->start_html;
 	print "<h1>BBBike</h1>";
     }
-    if ($with_lang_switch) { # && defined $from && $from eq 'chooseform-start') {
+    if ($with_lang_switch && (!defined $from || $from !~ m{^(info|map)$})) {
         my $query_string = $q->query_string;
 	$query_string = '?' . $query_string if $query_string;
 
@@ -7085,7 +7086,7 @@ sub experimental_label {
 #
 sub show_info {
     http_header(@weak_cache);
-    header();
+    header(-from => 'info');
     my $perl_url = "http://www.perl.org/";
     my $cpan = "http://www.cpan.org/";
     my $scpan = "http://search.cpan.org/search?mode=module&amp;query=";
