@@ -6258,17 +6258,20 @@ sub header {
 	print $q->start_html;
 	print "<h1>BBBike</h1>";
     }
-    if ($with_lang_switch && defined $from && $from eq 'chooseform-start') {
+    if ($with_lang_switch) { # && defined $from && $from eq 'chooseform-start') {
+        my $query_string = $q->query_string;
+	$query_string = '?' . $query_string if $query_string;
+
 	print qq{<div style="position:absolute; top:5px; right:10px;">};
 	if ($lang eq 'en') {
 	    print <<EOF;
-<a href="$bbbike_de_script"><img class="unselectedflag" src="$bbbike_images/de_flag.png" alt="Deutsch" border="0"></a>
+<a href="$bbbike_de_script$query_string"><img class="unselectedflag" src="$bbbike_images/de_flag.png" alt="Deutsch" border="0"></a>
 <img class="selectedflag" src="$bbbike_images/gb_flag.png" alt="English" border="0">
 EOF
 	} else {
 	    print <<EOF;
 <img class="selectedflag" src="$bbbike_images/de_flag.png" alt="Deutsch" border="0">
-<a href="$bbbike_en_script"><img class="unselectedflag" src="$bbbike_images/gb_flag.png" alt="English" border="0"></a>
+<a href="$bbbike_en_script$query_string"><img class="unselectedflag" src="$bbbike_images/gb_flag.png" alt="English" border="0"></a>
 EOF
 	}
 	print qq{</div>\n};
