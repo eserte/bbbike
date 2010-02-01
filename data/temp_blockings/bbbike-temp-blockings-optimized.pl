@@ -1051,8 +1051,8 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
          'type' => 'gesperrt'
        },
        {
-         'until' => 1264978800,
-         'text' => 'B 005 Frankfurter Straße OL Heinersdorf Kanal- u. Straßenbauarbeiten Vollsperrung 07.09.2009-31.01.2010 ',
+         'until' => 1270072800,
+         'text' => 'B 005 Frankfurter Straße OL Heinersdorf Kanal- u. Straßenbauarbeiten Vollsperrung 07.09.2009-31.03.2010 ',
          'from' => 1252188000,
          'id' => 1835,
          'data' => 'userdel	q4::inwork 66009,6118 65618,6296 65528,6253 65365,6281 65225,6403
@@ -1426,15 +1426,7 @@ userdel	2::inwork 14835,10272 14888,10385
        undef,
        undef,
        undef,
-       {
-         'until' => 1264978800,
-         'text' => 'L 030 Bahnhofstraße OL Erkner, Erneuerung Eisenbahnbrücke Vollsperrung 09.06.2008-31.01.2010 ',
-         'from' => 1212876000,
-         'id' => 1999,
-         'data' => 'userdel	2::inwork 34326,2915 34142,2742
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        {
@@ -1471,16 +1463,7 @@ userdel	2::inwork 14835,10272 14888,10385
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'source_id' => 'IM_014885',
-         'until' => 1280613599,
-         'text' => 'Tucholskystr. (Mitte) in beiden Richtungen zwischen Oranienburger Str. und Auguststr. Baustelle, gesperrt (bis Ende 07/2010)',
-         'from' => 1262821467,
-         'id' => 2011,
-         'data' => 'userdel	q4::inwork 9605,13248 9651,13406
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'IM_014905',
          'until' => 1272664799,
@@ -1517,6 +1500,16 @@ userdel	2::inwork 14835,10272 14888,10385
          'data' => 'userdel	2::inwork -24240,6075 -24731,6194
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_011081',
+         'until' => 1272664799,
+         'text' => 'Blankenburger Str. (Pankow) Richtung Dietzgenstr. zwischen Siegfriedstr. und Dietzgenstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 04/2010)',
+         'from' => 1265027979,
+         'id' => 2016,
+         'data' => 'userdel	q4::inwork; 10742,19632 10377,19565 10249,19541
+',
+         'type' => 'handicap'
        }
      
 );

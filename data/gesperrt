@@ -746,13 +746,6 @@ Landsberger Allee -> Rebhuhnweg: Mittelstreifen	3::igndisp 20641,15622 20525,155
 Mittelstreifen	3nocross::ignrte 15256,14237 15430,14262 15838,14319
 Mittelstr./Altenhofer Str. -> Landsberger Allee: Mittelstreifen	3::igndisp 15430,14272 15430,14262 15838,14319
 Landsberger Allee -> Mittelstr./Altenhofer Str.: Mittelstreifen	3::igndisp 15256,14237 15430,14262 15430,14272
-Mittelstreifen	3nocross::ignrte 1133,14387 1057,14389 999,14390 937,14391 889,14392
-Nonnendammallee -> Grammestr.: Mittelstreifen	3::igndisp 999,14390 1057,14389 1058,14459
-Grammestr. -> Nonnendammallee: Mittelstreifen	3::igndisp 1028,14251 1057,14389 999,14390
-Grammestr. -> Grammestr.: Mittelstreifen	3::igndisp 1028,14251 1057,14389 1058,14459
-Nonnendammallee -> Grammestr.: Mittelstreifen	3::igndisp 1133,14387 1057,14389 1028,14251
-Grammestr. -> Grammestr.: Mittelstreifen	3::igndisp 1058,14459 1057,14389 1028,14251
-Grammestr. -> Nonnendammallee: Mittelstreifen	3::igndisp 1058,14459 1057,14389 1133,14387
 Mittelstreifen	3nocross::ignrte 22484,11270 22756,11268 22937,11265
 Mittelstreifen	3nocross::ignrte 24175,11265 24019,11264 23848,11264 23648,11265
 Mittelstreifen	3nocross::ignrte 11002,1211 11155,1273 11198,1291
@@ -762,6 +755,13 @@ Straßenbahntrasse	3nocross::ignrte 22539,6258 22645,6431 22682,6495
 Mittelstreifen	3nocross::ignrte 11021,17889 11045,17893 11111,17905
 Kissingenstr. -> Stubnitzstr.: Mittelstreifen	3::igndisp 11021,17889 11045,17893 11102,17942
 Stubnitzstr. -> Kissingenstr.: Mittelstreifen	3::igndisp 11102,17942 11045,17893 11111,17905
+Mittelstreifen	3nocross::ignrte 1133,14387 1057,14389 999,14390 937,14391 889,14392
+Nonnendammallee -> Grammestr.: Mittelstreifen	3::igndisp 999,14390 1057,14389 1058,14459
+Grammestr. -> Nonnendammallee: Mittelstreifen	3::igndisp 1028,14251 1057,14389 999,14390
+Grammestr. -> Grammestr.: Mittelstreifen	3::igndisp 1028,14251 1057,14389 1058,14459
+Nonnendammallee -> Grammestr.: Mittelstreifen	3::igndisp 1133,14387 1057,14389 1028,14251
+Grammestr. -> Grammestr.: Mittelstreifen	3::igndisp 1058,14459 1057,14389 1028,14251
+Grammestr. -> Nonnendammallee: Mittelstreifen	3::igndisp 1058,14459 1057,14389 1133,14387
 Straßenbahntrasse	3nocross::ignrte 16095,16331 16260,16282 16416,16236
 Klarastr. -> Suermondtstr.: Straßenbahntrasse	3::igndisp 16234,16203 16260,16282 16095,16331
 Suermondtstr. -> Klarastr.: Straßenbahntrasse	3::igndisp 16416,16236 16260,16282 16234,16203

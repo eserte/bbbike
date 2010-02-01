@@ -15569,8 +15569,8 @@ userdel	2::inwork 92955,20065 93405,20640
 EOF
      },
      { from  => 1252188000, # 2009-09-06 00:00
-       until => 1264978800, # 2010-02-01 00:00
-       text  => 'B 005 Frankfurter Straße OL Heinersdorf Kanal- u. Straßenbauarbeiten Vollsperrung 07.09.2009-31.01.2010 ',
+       until => 1270072800, # 2010-04-01 00:00
+       text  => 'B 005 Frankfurter Straße OL Heinersdorf Kanal- u. Straßenbauarbeiten Vollsperrung 07.09.2009-31.03.2010 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork 66009,6118 65618,6296 65528,6253 65365,6281 65225,6403
@@ -17062,7 +17062,7 @@ userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,1216
 EOF
      },
      { from  => 1262821467, # 2010-01-07 00:44
-       until => 1280613599, # 2010-07-31 23:59
+       until => 1265028093, # 2010-07-31 23:59 1280613599
        text  => 'Tucholskystr. (Mitte) in beiden Richtungen zwischen Oranienburger Str. und Auguststr. Baustelle, gesperrt (bis Ende 07/2010)',
        type  => 'handicap',
        source_id => 'IM_014885',
@@ -17101,6 +17101,15 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork -24240,6075 -24731,6194
+EOF
+     },
+     { from  => 1265027979, # 2010-02-01 13:39
+       until => 1272664799, # 2010-04-30 23:59
+       text  => 'Blankenburger Str. (Pankow) Richtung Dietzgenstr. zwischen Siegfriedstr. und Dietzgenstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 04/2010)',
+       type  => 'handicap',
+       source_id => 'IM_011081',
+       data  => <<EOF,
+userdel	q4::inwork; 10742,19632 10377,19565 10249,19541
 EOF
      },
     );
