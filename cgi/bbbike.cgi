@@ -6266,13 +6266,13 @@ sub header {
 	print qq{<div style="position:absolute; top:5px; right:10px;">};
 	if ($lang eq 'en') {
 	    print <<EOF;
-<a href="$bbbike_de_script$query_string"><img class="unselectedflag" src="$bbbike_images/de_flag.png" alt="Deutsch" border="0"></a>
-<img class="selectedflag" src="$bbbike_images/gb_flag.png" alt="English" border="0">
+<a href="$bbbike_de_script$query_string"><img class="unselectedflag" src="$bbbike_images/de_flag.png" alt="Deutsch" title="Deutsch" border="0"></a>
+<img class="selectedflag" src="$bbbike_images/gb_flag.png" alt="English" title="English" border="0">
 EOF
 	} else {
 	    print <<EOF;
-<img class="selectedflag" src="$bbbike_images/de_flag.png" alt="Deutsch" border="0">
-<a href="$bbbike_en_script$query_string"><img class="unselectedflag" src="$bbbike_images/gb_flag.png" alt="English" border="0"></a>
+<img class="selectedflag" src="$bbbike_images/de_flag.png" alt="Deutsch" border="0" title="Deutsch">
+<a href="$bbbike_en_script$query_string"><img class="unselectedflag" src="$bbbike_images/gb_flag.png" alt="English" title="English" border="0"></a>
 EOF
 	}
 	print qq{</div>\n};
