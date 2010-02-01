@@ -25,7 +25,6 @@ my @dists = qw(100 200 400 600 1000 2000 3000 5000
 my @dists_region = grep { $_ <= 40000 } @dists;
 
 my $tests = @dists + @dists_region;
-plan tests => $tests;
 
 use Getopt::Long;
 my $doit = !!$ENV{BBBIKE_LONG_TESTS};
@@ -38,14 +37,19 @@ GetOptions("doit" => \$doit,
 			  },
 	   'center=s' => \$custom_center,
 	  ) or die $!;
-SKIP: {
-    skip("Neither -doit cmdline option specified nor is the env var BBBIKE_LONG_TESTS set", $tests)
-	if !$doit;
 
-    my $bbbikedraw = "$FindBin::RealBin/../miscsrc/bbbikedraw.pl";
-    skip("The executable $bbbikedraw is not available", $tests)
-	if !-e $bbbikedraw;
+if (!$doit) {
+    plan skip_all => "Neither -doit cmdline option specified nor is the env var BBBIKE_LONG_TESTS set";
+    exit 0;
+}
+my $bbbikedraw = "$FindBin::RealBin/../miscsrc/bbbikedraw.pl";
+if (!-e $bbbikedraw) {
+    plan skip_all => "The executable $bbbikedraw is not available";
+    exit 0;
+}
+plan tests => $tests;
 
+{
     my $center = "9331,9668"; # Kreuzberg 61
     my $center_region = "53519,102604"; # Uckermark
     my $width = 550;
