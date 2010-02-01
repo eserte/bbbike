@@ -291,7 +291,7 @@ EOF
     my $header = $args{header};
     if (1 && $header) {
 	my $reply_to = $header->{"reply-to"};
-	my $cc = 'info@bbbike.de';
+	my $cc = 'info2010@bbbike.de';
 	my $body =<<EOF;
 Hallo $name,
 
@@ -304,7 +304,7 @@ Gruß,
 [Eintrag #$args{thisid}]
 EOF
 	if (!$reply_to) {
-	    $reply_to = 'info@bbbike.de';
+	    $reply_to = 'info2010@bbbike.de';
 	    undef $cc;
 	    $body = 'Hallo Slaven';
 	}
