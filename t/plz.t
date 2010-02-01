@@ -266,7 +266,6 @@ for my $noextern (@extern_order) {
 	is($res[0]->[PLZ::LOOK_CITYPART], 'Mitte');
 	is($res[0]->[PLZ::LOOK_ZIP], 10117);
 
-    XXX:
 	{
 	    my $utf8_citypart = "Weißensee";
 	    utf8::upgrade($utf8_citypart);
@@ -426,14 +425,12 @@ for my $noextern (@extern_order) {
 	   "U+S-Bahnhof, long form (unusual order)")
 	    or diag $dump->(\@res);
 
-	{
-	    local $TODO = "Does not work yet";
-	    @res = $plz->look_loop("u+s bahnhof friedrichstr.",
-				   @standard_look_loop_args);
-	    is(!!(grep { $_->[PLZ::LOOK_NAME] eq 'S-Bhf Friedrichstr.' } @{$res[0]}), 1,
-	       "U+S Bahnhof, long form with space (unusual order)")
-		or diag $dump->(\@res);
-	}
+    XXX:
+	@res = $plz->look_loop("u+s bahnhof friedrichstr.",
+			       @standard_look_loop_args);
+	is(!!(grep { $_->[PLZ::LOOK_NAME] eq 'S-Bhf Friedrichstr.' } @{$res[0]}), 1,
+	   "U+S Bahnhof, long form with space (unusual order)")
+	    or diag $dump->(\@res);
 
 	@res = $plz->look_loop("s-bahnhof heerstr",
 			       @standard_look_loop_args);
