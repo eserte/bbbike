@@ -92,7 +92,7 @@ plan tests => 3 + $gpsman_tests * @gps_types;
 		    if !@trk;
 		$filename = $trk[rand(@trk)];
 	    } elsif ($gps_type eq 'ovl') {
-		my $ovl_data_dir = "$FindBin::RealBin/../misc/ovl_resources/ulamm";
+		my $ovl_data_dir = "$FindBin::RealBin/../misc/download_tracks";
 		skip("No ovl directory available", $gpsman_tests)
 		    if !-d $ovl_data_dir;
 		my @ovl = glob("$ovl_data_dir/*.{ovl,OVL}");
