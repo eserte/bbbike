@@ -41,6 +41,7 @@ GetOptions("htmldir=s" => \$htmldir)
     or die "usage?";
 
 my $ua = LWP::UserAgent->new;
+$ua->parse_head(0); # too avoid confusion with Content-Type in http header and meta tags
 $ua->agent('BBBike-Test/1.0');
 
 my $datadir = "$htmldir/data";
@@ -91,8 +92,11 @@ for my $do_accept_gzip (0, 1) {
 	my $url = "$htmldir/html/newstreetform.html";
 	my($resp, $content) = $basic_tests->($url);
 	like($content, qr{<html}, "Could be html content");
-	local $TODO = "Currently this may fail because server says text/html and html says text/html+charset. Is this problematic?";
-	like($resp->header("content-type"), qr{^text/html(;\s*charset=iso-8859-1)?$}, "Content-type check");# or diag($resp->as_string);
+	# Note that HTTP header (usually without charset) and meta
+	# value (usually with) may contradict, but this is probably no
+	# issue. See also parse_head setting above.
+	like($resp->header("content-type"), qr{^text/html(;\s*charset=iso-8859-1)?$}, "Content-type check")
+	    or diag($resp->as_string);
     }
 }
 
