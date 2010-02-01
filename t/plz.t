@@ -2,10 +2,9 @@
 # -*- perl -*-
 
 #
-# $Id: plz.t,v 1.40 2009/04/22 19:53:51 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998,2002,2003,2004,2006,2007 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998,2002,2003,2004,2006,2007,2010 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -87,7 +86,7 @@ if (!GetOptions("create!" => \$create,
 if ($create) {
     plan 'no_plan';
 } else {
-    plan tests => 162 + scalar(@approx_tests)*4;
+    plan tests => 166 + scalar(@approx_tests)*4;
 }
 
 # XXX auch Test mit ! -small
@@ -267,6 +266,15 @@ for my $noextern (@extern_order) {
 	is($res[0]->[PLZ::LOOK_CITYPART], 'Mitte');
 	is($res[0]->[PLZ::LOOK_ZIP], 10117);
 
+    XXX:
+	{
+	    my $utf8_citypart = "Weißensee";
+	    utf8::upgrade($utf8_citypart);
+	    @res = $plz->look("Gustav-Adolf-Str.", Citypart => $utf8_citypart, Max => 1);
+	    is($res[0]->[PLZ::LOOK_NAME], 'Gustav-Adolf-Str.', "utf8-ified citypart");
+	    is(scalar @res, 1, 'Max limit');
+	}
+
 	@res = $plz->look_loop(PLZ::split_street("Heerstr. 1"),
 			       @standard_look_loop_args);
 	is(scalar @{$res[0]}, 7, "Hits for Heerstr.")
@@ -368,7 +376,6 @@ for my $noextern (@extern_order) {
 	   "U-Bahnhof")
 	    or diag $dump->(\@res);
 
-    XXX:
 	@res = $plz->look_loop("S-Bhf. Grünau",
 			       @standard_look_loop_args);
 	is(!!(grep { $_->[PLZ::LOOK_NAME] eq 'S-Bhf Grünau' } @{$res[0]}), 1,

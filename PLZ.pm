@@ -1,10 +1,9 @@
 # -*- perl -*-
 
 #
-# $Id: PLZ.pm,v 1.75 2009/01/25 20:47:20 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998, 2000, 2001, 2002, 2003, 2004 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998, 2000, 2001, 2002, 2003, 2004, 2010 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -24,7 +23,7 @@ use locale;
 use BBBikeUtil;
 use Strassen::Strasse;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.75 $ =~ /(\d+)\.(\d+)/);
+$VERSION = 1.76;
 
 use constant FMT_NORMAL            => 0; # /usr/www/soc/plz/Berlin.data
 use constant FMT_REDUCED           => 1; # ./data/Berlin.small.data (does not exist anymore)
@@ -369,10 +368,18 @@ sub look {
 	} else {
 	    $rx = "^(?i:" . quotemeta($args{Citypart}) . ")";
 	}
+	my $need_utf8_upgrade = defined &utf8::is_utf8 && utf8::is_utf8($rx);
 	$rx = qr{$rx};
 	my @new_res;
 	foreach (@res) {
-	    if ($_->[LOOK_CITYPART] =~ /$rx/ ||
+	    my $citypart = $_->[LOOK_CITYPART];
+	    # This is needed for something which smells like a perl
+	    # bug, apparent from 5.8.8 over 5.10.1 to 5.11.4. If $rx
+	    # is utf8-flagged and contains a "ß", then the regexp does
+	    # not match. See the Gustav-Adolf-Str. (Weißensee) test in
+	    # plz.t
+	    utf8::upgrade($citypart) if $need_utf8_upgrade;
+	    if ($citypart =~ /$rx/ ||
 		$_->[$self->{FieldPLZ}] =~ /$rx/) {
 		push @new_res, $_;
 	    }
