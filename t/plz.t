@@ -425,7 +425,6 @@ for my $noextern (@extern_order) {
 	   "U+S-Bahnhof, long form (unusual order)")
 	    or diag $dump->(\@res);
 
-    XXX:
 	@res = $plz->look_loop("u+s bahnhof friedrichstr.",
 			       @standard_look_loop_args);
 	is(!!(grep { $_->[PLZ::LOOK_NAME] eq 'S-Bhf Friedrichstr.' } @{$res[0]}), 1,
@@ -444,14 +443,12 @@ for my $noextern (@extern_order) {
 	   "S-Bahnhof (Grunewald), long form")
 	    or diag $dump->(\@res);
 
-	{
-	    local $TODO = "Does not work yet";
-	    @res = $plz->look_loop("s bahnhof grunewald",
-				   @standard_look_loop_args);
-	    is(!!(grep { $_->[PLZ::LOOK_NAME] eq 'S-Bhf Grunewald' } @{$res[0]}), 1,
-	       "S Bahnhof (Grunewald), long form with space")
-		or diag $dump->(\@res);
-	}
+    XXX:
+	@res = $plz->look_loop("s bahnhof grunewald",
+			       @standard_look_loop_args);
+	is(!!(grep { $_->[PLZ::LOOK_NAME] eq 'S-Bhf Grunewald' } @{$res[0]}), 1,
+	   "S Bahnhof (Grunewald), long form with space")
+	    or diag $dump->(\@res);
 
 	# A complaint by alh (but obsolete now):
 	@res = $plz->look_loop("lehrter bahnhof",

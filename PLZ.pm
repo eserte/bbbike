@@ -599,13 +599,13 @@ sub _strip_hnr {
 sub _expand_strasse {
     my $str = shift;
     my $replaced = 0;
-    if      ($str =~ s/^([US])\s+/uc($1)."-Bhf "/ie) {
-	$replaced++;
-    } elsif ($str =~ s/^(U\+S|S\+U)[- ](?:Bahnhof|Bhf\.?)\s+/S-Bhf /i) { # Choose one
+    if      ($str =~ s/^(U\+S|S\+U)[- ](?:Bahnhof|Bhf\.?)\s+/S-Bhf /i) { # Choose one
 	$replaced++;
     } elsif ($str =~ s/^(U\+S|S\+U)\s+/S-Bhf /i) { # Choose one
 	$replaced++;
     } elsif ($str =~ s/^([US])[- ](?:Bahnhof|Bhf\.)\s+/uc($1)."-Bhf "/ie) {
+	$replaced++;
+    } elsif ($str =~ s/^([US])\s+/uc($1)."-Bhf "/ie) {
 	$replaced++;
     }
     if      ($str =~ s/^(k)l\.?\s+(.*str)/$1leine $2/i) {
