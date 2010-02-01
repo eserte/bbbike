@@ -381,14 +381,8 @@ for my $noextern (@extern_order) {
 	is(!!(grep { $_->[PLZ::LOOK_NAME] eq 'S-Bhf Grünau' } @{$res[0]}), 1,
 	   "S-Bhf with dot, should find Grünau")
 	    or diag $dump->(\@res);
-	{
-	    local $TODO = <<EOF;
-The S-Bhf. -> S-Bhf translation exists in PLZ.pm, but is called to late.
-Maybe unambiguous translations (= normalizations) should be done quite
-early?
-EOF
-	    is(scalar(@res), 1, "S-Bhf with dot, should be exact");
-	}
+	is(scalar(@{$res[0]}), 1, "S-Bhf with dot, should be exact")
+	    or diag $dump->(\@res);
 
 	@res = $plz->look_loop("u weberwiese",
 			       @standard_look_loop_args);
