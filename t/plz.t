@@ -443,7 +443,6 @@ for my $noextern (@extern_order) {
 	   "S-Bahnhof (Grunewald), long form")
 	    or diag $dump->(\@res);
 
-    XXX:
 	@res = $plz->look_loop("s bahnhof grunewald",
 			       @standard_look_loop_args);
 	is(!!(grep { $_->[PLZ::LOOK_NAME] eq 'S-Bhf Grunewald' } @{$res[0]}), 1,
@@ -551,12 +550,13 @@ for my $noextern (@extern_order) {
 	cmp_ok($hits, "<=", 4, "not too much hits ($hits)")
 	    or diag $dump->(\@res);
 
+    XXX:
 	{
-	    local $TODO = "Should get all four Eichenstr. in Berlin";
+	    local $TODO = "But gets only two which have an 'a' near the beginning of the citypart name";
 
 	    @res = $plz->look_loop("Eichenstraße 1 A", @standard_look_loop_args);
 	    my $hits = scalar @{$res[0]};
-	    cmp_ok($hits, ">=", 4, "Should get not only Eichenstraße in Mahlsdorf (hits=$hits)")
+	    cmp_ok($hits, ">=", 4, "Should get all four Eichenstr. in Berlin (hits=$hits)")
 		or diag $dump->(\@res);
 	}
 
