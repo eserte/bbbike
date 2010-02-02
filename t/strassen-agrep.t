@@ -29,10 +29,11 @@ Dudenstr.	X 1,1
 Angermünder Str.	X 1,1
 Unkeallee (A)	X 1,1
 Unkeallee (B)	X 1,1
+Weißenseer Weg	X 1,1
 EOF
 
 my @search_types = ("agrep", "String::Approx", "perl");
-my $non_approx_tests = 6;
+my $non_approx_tests = 7;
 my $approx_tests     = 2;
 my $tests_per_type = $non_approx_tests + $approx_tests;
 
@@ -94,10 +95,12 @@ for my $search_def (@search_types) {
 	};
 	$check->("Dudenstr", ["Dudenstr."]);
 	$check->("Angermünder Str", ["Angermünder Str."]);
+	$check->("Weißenseer Weg", ["Weißenseer Weg"]);
 	$check->("Unkeallee", ["Unkeallee (A)", "Unkeallee (B)"]);
 	$check->("Really does not exist!", []);
 	{
-	    local $TODO = "Does not work (yet?)";
+	    local $TODO = "Not implemented yet: substituting straße with str";
+	    # see _strip_strasse and _expand_strasse in PLZ.pm
 	    $check->("Dudenstraße", ["Dudenstr."]);
 	    $check->("Dudenstrasse", ["Dudenstr."]);
 	}
