@@ -218,7 +218,6 @@ XXX:
 {
     pass("-- Bug reported by Dominik --");
 
-    $TODO = "In some strange circumstances, angle may be undef";
     my $route = <<'EOF';
 #BBBike route
 $realcoords_ref = [[-3011,10103],[-2761,10323],[-2766,10325],[-2761,10323],[-2571,10258]];
@@ -228,8 +227,9 @@ EOF
     my $path = $ret->{RealCoords};
     my(@route) = $s_net->route_to_name($path);
     my $got_undef = 0;
-    for (@route) { $got_undef++ if !defined $_->[StrassenNetz::ROUTE_ANGLE] }
+    for (@route[0..$#route-1]) { $got_undef++ if !defined $_->[StrassenNetz::ROUTE_ANGLE] }
     is($got_undef, 0);
+
 }
 
 {
@@ -239,7 +239,7 @@ EOF
 	# Wilhelmstr. - Stresemannstr.
 	my $route = <<'EOF';
 #BBBike route
-$realcoords_ref = [[9392,10260], [9376,10393], [9250,10563]];
+$realcoords_ref = [[9404,10250], [9388,10393], [9250,10563]];
 EOF
 	my $ret = Route::load_from_string($route);
 	my $path = $ret->{RealCoords};
@@ -249,14 +249,14 @@ EOF
 
 	# Add another point before start. This triggers a special case
 	# in route_to_name with combinestreet set (which is default)
-	unshift @$path, [9395,10233];
+	unshift @$path, [9409,10226];
 	(@route) = $s_net->route_to_name($path);
 	is($route[0][StrassenNetz::ROUTE_EXTRA]{ImportantAngle}, '!', "Found an important angle (longer Wilhelmstr. -> Stresemannstr.)")
 	    or diag(Dumper(\@route));
 
 	# And add yet another point before start, just to see if everything
 	# is right if ImportantAngle is set to the *2nd* street in route
-	unshift @$path, [9401,10199];
+	unshift @$path, [9416,10196];
 	(@route) = $s_net->route_to_name($path);
 	is($route[1][StrassenNetz::ROUTE_EXTRA]{ImportantAngle}, '!', "Found an important angle (Mehringdamm -> Wilhelmstr. -> Stresemannstr.)")
 	    or diag(Dumper(\@route));
@@ -266,7 +266,7 @@ EOF
 	# gleiche Kreuzung, Wilhelmstr. geradeaus
 	my $route = <<'EOF';
 #BBBike route
-$realcoords_ref = [[9392,10260], [9376,10393], [9366,10541]];
+$realcoords_ref = [[9404,10250], [9388,10393], [9378,10539]];
 EOF
 	my $ret = Route::load_from_string($route);
 	my $path = $ret->{RealCoords};
@@ -279,7 +279,7 @@ EOF
 	# Martin-Luther-Str. -> Dominicusstr.
 	my $route = <<'EOF';
 #BBBike route
-$realcoords_ref = [[6470,8809], [6470,8681], [6590,8469]];
+$realcoords_ref = [[6449,8807], [6460,8688], [6575,8469]];
 EOF
 	my $ret = Route::load_from_string($route);
 	my $path = $ret->{RealCoords};
