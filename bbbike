@@ -10613,7 +10613,7 @@ sub add_temp_blockings_to_net {
 
 ### AutoLoad Sub
 sub read_sperre_tragen {
-    if (!eval { StrassenNetz::make_sperre_tragen(get_strassen_file($sperre_file), get_special_vehicle(), \%sperre_tragen, \%sperre_narrowpassage) }) {
+    if (!eval { StrassenNetz::make_sperre_tragen(get_strassen_file($sperre_file), get_special_vehicle(), \%sperre_tragen, \%sperre_narrowpassage); 1 }) {
 	warn $@;
     }
 }
