@@ -43,6 +43,10 @@ sub action_revgeocode {
 
     no warnings 'once';
     my($x,$y) = $Karte::Polar::obj->map2standard($lon,$lat);
+    # XXX Die Verwendung von main::... bricht, wenn bbbike.cgi als
+    # Apache::Registry-Skript ausgeführt wird, da das Package dann ein
+    # anderes ist! -> beste Lösung: alle Funktionen von bbbike.cgi
+    # müssen in ein Package überführt werden
     my $xy = main::get_nearest_crossing_coords($x,$y);
     my @cr = split m{/}, main::crossing_text($xy);
     @cr = @cr[0,1] if @cr > 2; # bbbike.cgi can deal only with A/B
