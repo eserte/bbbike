@@ -4355,7 +4355,11 @@ EOF
 	    } else {
 		print $ampel_count . " " . M("Ampel" . ($ampel_count == 1 ? "" : "n"));
 	    }
-	    print " " . M("auf der Strecke") . " (" . M("in die Fahrzeit einbezogen") . ").$fontend<br>\n";
+	    print " " . M("auf der Strecke");
+	    if ($ampel_count) {
+		print " (" . M("in die Fahrzeit einbezogen") . ")";
+	    }
+	    print ".$fontend<br>\n";
 	}
 	print "</center>\n" unless $printmode;
 	print "<hr>";
