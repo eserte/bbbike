@@ -885,7 +885,7 @@ if ($Tk::VERSION < 803 || $Tk::VERSION >= 804.025) {
 }
 
 eval { local $SIG{'__DIE__'};
-       do "FindBin::RealBin/$progname" . "_1.config" };
+       do "$FindBin::RealBin/$progname" . "_1.config" };
 
 ## DEBUG_BEGIN
 #BEGIN{mymstat("irgendwo in der mitte BEGIN");} mymstat("irgendwo in der mitte");
