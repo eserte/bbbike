@@ -77,7 +77,7 @@ if (defined $mapserver_prog_url) {
     diag("No URL for mapserv defined");
 }
 
-my $extra_tests = 4;
+my $extra_tests = 7;
 plan tests => scalar(@prog) + scalar(@static) + $extra_tests;
 
 delete $ENV{PERL5LIB}; # override Test::Harness setting
@@ -95,6 +95,22 @@ for my $prog (@prog) {
 for my $static (@static) {
     my $url = "$html_dir/$static";
     check_url($url);
+}
+
+# Check for Bot traps
+{
+    my $java_ua = LWP::UserAgent->new;
+    $java_ua->agent('Java/1.6.0_06 BBBike-Test/1.0');
+    $java_ua->requests_redirectable([]);
+    { # Redirect on start page
+	my $resp = $java_ua->get("$cgi_dir/bbbike.cgi");
+	is($resp->code, 302, 'Found redirect for Java bot');
+	like($resp->header('location'), qr{BBBike/html/bbbike_small});
+    }
+    { # But allow for direct access (which bots do not do)
+	my $resp = $java_ua->get("$cgi_dir/bbbike.cgi?info=1");
+	is($resp->code, 200);
+    }
 }
 
 sub check_url {
