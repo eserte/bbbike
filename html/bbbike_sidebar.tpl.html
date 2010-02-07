@@ -1,0 +1,86 @@
+[% PERL -%]
+use lib "..";
+require BBBikeVar;
+$stash->set('DIRECTCGIURL', $BBBike::BBBIKE_DIRECT_WWW);
+[% END -%]
+[% IF lang=="DE";
+      SET START = "Start";
+      SET GOAL  = "Ziel";
+   ELSE;
+      SET START = "Start";
+      SET GOAL  = "Goal";
+   END;
+-%]
+<html>
+<head><title>BBBike</title>
+<script><!--
+
+var query = {};
+
+function init() {
+    if (location.search == "") return;
+    var street = null;
+    var s = location.search;
+    if (s.indexOf("?") == 0) {
+	s = s.substring(1);
+    }
+    var a = s.split("&");
+    for(var i in a) {
+	var kv = a[i].split("=");
+	query[kv[0]] = unescape(kv[1]);
+    }
+
+    if (document && document.images) {
+	var img = ["homeflag1", "goalflag1", "homeflag2", "goalflag2"];
+	for(var i in img) {
+	    if (document.images[img[i]]) {
+		document.images[img[i]].title = (img[i].indexOf("home") == 0
+						 ? query["home"]
+						 : query["goal"]);
+	    }
+	}
+    }
+}
+
+function setHome(elem, type) {
+    var frm = document.forms.bbbike_sidebar;
+    if (!query[type]) return;
+    frm.elements[elem].value = query[type];
+    return false;
+}
+
+//--></script>
+</head><body style="background-color:#ffffff; font-family:sans-serif;" onload="init()">
+<form name="bbbike_sidebar" target="_content" action="[% DIRECTCGIURL %]">
+ <table border=0 cellpadding=0 cellspacing=1>
+  <tr>
+   <td>[% START %]:</td>
+   <td><input size=10 name="start"></td>
+   <td>
+    <a href="#" onclick='return setHome("start", "home")'>
+     <img name="homeflag1" src="../images/flag2_bl.gif" border=0></a>
+   </td>
+   <td>
+    <a href="#" onclick='return setHome("start", "goal")'>
+     <img name="goalflag1" src="../images/flag_ziel.gif" border=0></a>
+   </td>
+  </tr>
+  <tr>
+   <td>[% GOAL %]:</td>
+   <td><input size=10 name="ziel"></td>
+   <td>
+    <a href="#" onclick='return setHome("ziel", "home")'>
+     <img name="homeflag2" src="../images/flag2_bl.gif" border=0></a>
+   </td>
+   <td>
+    <a href="#" onclick='return setHome("ziel", "goal")'>
+     <img name="goalflag2" src="../images/flag_ziel.gif" border=0></a>
+   </td>
+  </tr>
+  <tr><td colspan=2 align=center><input type="submit" value="&gt;&gt;">
+    &nbsp;&nbsp;
+    <a href="[% DIRECTCGIURL %]?info=1" target="_content">?</a>
+  </td></tr>
+ </table>
+</form>
+</body></html>

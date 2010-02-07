@@ -1,0 +1,20 @@
+[% PERL -%]
+use lib "..";
+require BBBikeVar;
+$stash->set('DIRECTCGIURL', $BBBike::BBBIKE_DIRECT_WWW);
+[% END -%]
+[% IF lang=="DE";
+      SET START = "Start";
+      SET GOAL  = "Ziel";
+   ELSE;
+      SET START = "Start";
+      SET GOAL  = "Goal";
+   END;
+-%]
+<form action="[% DIRECTCGIURL %]">
+ <table>
+  <tr><td>[% START %]:</td><td><input size=15 name="start"></td></tr>
+  <tr><td>[% GOAL  %]:</td><td><input size=15 name="ziel"></td>
+   <td><input type="submit" value="&gt;&gt;"></td></tr>
+ </table>
+</form>

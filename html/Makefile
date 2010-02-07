@@ -19,13 +19,25 @@ all:	newstreetform.html newstreetform.utf8.html \
 bbbike_small:	bbbike_small.html bbbike_small.en.html \
 		bbbike_sidebar.html bbbike_sidebar.en.html
 
-bbbike_small.html bbbike_small.en.html: bbbike_small.html.spp
-	${STRPP} --dir=. bbbike_small.html.spp
-	chmod 644 bbbike_small.html bbbike_small.en.html
+bbbike_small.html: bbbike_small.tpl.html ../BBBikeVar.pm
+	tpage --define lang=DE --eval_perl bbbike_small.tpl.html > bbbike_small.html~
+	chmod 644 bbbike_small.html~
+	mv bbbike_small.html~ bbbike_small.html
 
-bbbike_sidebar.html bbbike_sidebar.en.html: bbbike_sidebar.html.spp ../BBBikeVar.pm
-	${STRPP} --dir=. bbbike_sidebar.html.spp
-	chmod 644 bbbike_sidebar.html bbbike_sidebar.en.html
+bbbike_small.en.html: bbbike_small.tpl.html ../BBBikeVar.pm
+	tpage --define lang=EN --eval_perl bbbike_small.tpl.html > bbbike_small.en.html~
+	chmod 644 bbbike_small.en.html~
+	mv bbbike_small.en.html~ bbbike_small.en.html
+
+bbbike_sidebar.html: bbbike_sidebar.tpl.html ../BBBikeVar.pm
+	tpage --define lang=DE --eval_perl bbbike_sidebar.tpl.html > bbbike_sidebar.html~
+	chmod 644 bbbike_sidebar.html~
+	mv bbbike_sidebar.html~ bbbike_sidebar.html
+
+bbbike_sidebar.en.html: bbbike_sidebar.tpl.html ../BBBikeVar.pm
+	tpage --define lang=EN --eval_perl bbbike_sidebar.tpl.html > bbbike_sidebar.en.html~
+	chmod 644 bbbike_sidebar.en.html~
+	mv bbbike_sidebar.en.html~ bbbike_sidebar.en.html
 
 newstreetform.html: newstreetform.tpl.html
 	${TPAGE} --define cgidir=${CGIDIR} newstreetform.tpl.html > $@
