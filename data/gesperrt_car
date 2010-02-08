@@ -938,3 +938,8 @@ Adlergestell -> Steinbachstr.: Mittelstreifen	3::igndisp 19472,3922 19587,3801 1
 Überqueren des Mittelstreifens verboten	3nocross::ignrte 18057,14549 18183,14573 18365,14607
 Landsberger Allee -> Alte Rhinstr.: Überqueren des Mittelstreifens verboten	3::igndisp 18365,14607 18183,14573 18225,14398
 Alte Rhinstr. -> Landsberger Allee: Überqueren des Mittelstreifens verboten	3::igndisp 18225,14398 18183,14573 18057,14549
+Straßenbahntrasse	3nocross::ignrte 14609,15921 14597,15970 14595,15980 14576,16069 14550,16161
+Gounodstr. -> Indira-Gandhi-Str.: Straßenbahntrasse	3::igndisp 14520,15937 14597,15970 14595,15980
+Indira-Gandhi-Str. -> Gounodstr.: Straßenbahntrasse	3::igndisp 14609,15921 14597,15970 14520,15937
+Meyerbeerstr. -> Indira-Gandhi-Str.: Straßenbahntrasse	3::igndisp 14484,16035 14576,16069 14550,16161
+Indira-Gandhi-Str. -> Meyerbeerstr.: Straßenbahntrasse	3::igndisp 14595,15980 14576,16069 14484,16035

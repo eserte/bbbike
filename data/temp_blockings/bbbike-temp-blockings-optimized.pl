@@ -1510,6 +1510,26 @@ userdel	2::inwork 14835,10272 14888,10385
          'data' => 'userdel	q4::inwork; 10742,19632 10377,19565 10249,19541
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_015001',
+         'until' => 1309471199,
+         'text' => 'Bahnhofstr. (Erkner) in beiden Richtungen zwischen Kreisverkehr Friedensplatz und Bahnhofsvorplatz Baustelle, Straße vollständig gesperrt (bis Ende 06.2011)',
+         'from' => 1265413596,
+         'id' => 2017,
+         'data' => 'userdel	2::inwork 34326,2915 34142,2742
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_015007',
+         'until' => undef,
+         'text' => 'Winckelmannstr. (Johannisthal) Richtung Segelfliegerdamm zwischen Herweghstr. und Köpenicker Str. Baustelle, gesperrt. Das Abbiegen vom Sterndamm in die Winckelmannstr. ist nicht möglich.',
+         'from' => undef,
+         'id' => 2018,
+         'data' => 'userdel	q4::inwork; 17476,4337 17507,4216
+',
+         'type' => 'handicap'
        }
      
 );
