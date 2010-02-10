@@ -66,11 +66,10 @@ for my $pairdef ("test-from-local",
     for my $stop (@new_stop) {
 	my $stop_epoch = $stop->[0];
 	my @l = grep { $_->[0] < $stop_epoch } @new_start;
-	my $start = max @l;
-	if (!defined $start) {
-	    warn "Cannot determin start for stop time @$stop";
+	my $start_epoch = max map { $_->[0] } @l;
+	if (!defined $start_epoch) {
+	    warn "Cannot determine start for stop time @$stop";
 	} else {
-	    my $start_epoch = $start->[0];
 	    my $diff = $stop_epoch - $start_epoch;
 	    next if ($skip_wrong && $diff > 3600);
 	    print "$stop->[1]: $diff\n";
