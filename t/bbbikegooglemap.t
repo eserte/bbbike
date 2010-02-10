@@ -25,15 +25,19 @@ my $gmap_api = 2;
 
 use Getopt::Long;
 my $cgi_dir = $ENV{BBBIKE_TEST_CGIDIR} || "http://localhost/bbbike/cgi";
-my $cgi_url = "http://www.bbbike.de/cgi-bin/bbbikegooglemap.cgi";
+my $cgi_url;
 
-if (!GetOptions("cgidir=s" => \$cgi_dir, # XXX not used
+if (!GetOptions("cgidir=s" => \$cgi_dir,
 		"cgiurl=s" => \$cgi_url,
 	       )) {
-    die "usage: $0 [-cgiurl url]";
+    die "usage: $0 [-cgiurl url | -cgidir url]";
 }
 
-plan tests => 4;
+if (!defined $cgi_url) {
+    $cgi_url = $cgi_dir . '/bbbikegooglemap.cgi';
+}
+
+plan tests => 6;
 
 my $ua = LWP::UserAgent->new;
 $ua->agent('BBBike-Test/1.0');
@@ -55,11 +59,21 @@ $ua->agent('BBBike-Test/1.0');
 }
 
 {
-    my %query = (wpt_or_trk  => "   -49893,-29160 -49793,-29260 ");
-    my $qs = CGI->new(\%query)->query_string;
-    my $url = $cgi_url . "?" . $qs;
-    my $resp = $ua->get($url);
-    ok($resp->is_success, "Success with $url");
+    for my $query_def ({wpt_or_trk  => "   -49893,-29160 -49793,-29260 "},
+		       {coords      => "-49893,-29160!-49793,-29260" },
+		      ) {
+	my %query = %$query_def;
+	my $qs = CGI->new(\%query)->query_string;
+	my $url = $cgi_url . "?" . $qs;
+	my $resp = $ua->get($url);
+	ok($resp->is_success, "Success with $url");
+	check_polyline($resp, 2, "Found exactly two points from " . ((keys %query)[0]) . " query");
+    }
+}
+
+sub check_polyline {
+    my($resp, $expected_points, $testname) = @_;
+    $testname = "Found exactly $expected_points points" if !$testname;
     my $content = $resp->content;
     if ($content !~ m{\Qnew GPolyline([}g) {
 	fail("Cannot match Polyline");
@@ -69,10 +83,9 @@ $ua->agent('BBBike-Test/1.0');
 	while($content =~ m{$gpoint_qr}g) {
 	    $points++;
 	}
-	is($points, 2, "Found exactly two points from wpt_or_trk query")
+	is($points, $expected_points, $testname)
 	    or diag $content;
     }
 }
-
 
 __END__
