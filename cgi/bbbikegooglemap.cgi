@@ -41,28 +41,38 @@ sub run {
 
     local $CGI::POST_MAX = 2_000_000;
 
-    my @polylines_polar;
-    my @polylines_polar_feeble;
-    my @wpt;
-
     my $coordsystem = param("coordsystem") || "bbbike";
     my $converter;
     if ($coordsystem =~ m{^(wgs84|polar)$}) {
 	$converter = \&polar_converter;
-	$coordsystem = 'polar'; # normalize XXX should be wgs84 some day?
+	$coordsystem = 'polar';
     } else { # bbbike or standard
 	$converter = \&bbbike_converter;
     }
+    my $convert_xy   = sub { join ",", $converter->(split /,/, $_[0]) };
+    my $split_coords = sub { split /[!;]/, $_[0] };
+    my $convert_all  = sub { map { $convert_xy->($_) } $split_coords->($_[0]) };
+
+    my $convert_wpt = sub {
+	my($coord, $name);
+	if ($_ =~ /[!;]/) {
+	    ($name, $coord) = split /[!;]/, $_, 2;
+	} else {
+	    ($name, $coord) = ("", $_);
+	}
+	$coord = $convert_xy->($coord);
+	[$coord, $name];
+    };
+
+    my @coords = map { [$convert_all->($_)] } param('coords');
+    my @wpt    = map { $convert_wpt->($_) } param('wpt');
 
     if (param("wpt_or_trk")) {
 	my $wpt_or_trk = trim(param("wpt_or_trk"));
 	if ($wpt_or_trk =~ / /) {
-	    param("coords", join("!",
-				 param("coords"),
-				 split(/ /, $wpt_or_trk))
-		 );
+	    push @coords, [map { $convert_xy->($_) } split / /, $wpt_or_trk];
 	} else {
-	    param("wpt", $wpt_or_trk);
+	    push @wpt, map { $convert_wpt->($_) } param('wpt_or_trk');
 	}
     }
 
@@ -85,55 +95,27 @@ sub run {
 
 	    my $gpx = Strassen->new($tmpfile, name => "Uploaded GPX file");
 	    $gpx->init;
+	    my $gpx_converter = $gpx->get_conversion(-tomap => 'polar');
 	    while (1) {
 		my $r = $gpx->next;
 		if (!$r || !UNIVERSAL::isa($r->[Strassen::COORDS()], "ARRAY")) {
 		    warn "Parse error in line " . $gpx->pos . ", skipping...";
 		    next;
 		}
-		last if !@{ $r->[Strassen::COORDS()] };
-		if (@{ $r->[Strassen::COORDS()] } == 1) { # treat as waypoint
-		    # XXX hack --- should append recognise self_or_default?
-		    $CGI::Q->append(-name   => 'wpt',
-				    -values => $r->[Strassen::NAME()] . "!" . $r->[Strassen::COORDS()][0]
-				   );
+		my @c = @{ $r->[Strassen::COORDS()] };
+		last if !@c;
+		@c = map { $gpx_converter->($_) } @c if $gpx_converter;
+		if (@c == 1) { # treat as waypoint
+		    push @wpt, [ $c[0], $r->[Strassen::NAME()] ];
 		} else {
-		    # XXX hack --- should append recognise self_or_default?
-		    $CGI::Q->append(-name   => 'coords',
-				    -values => [join "!", @{ $r->[Strassen::COORDS()] }],
-				   );
+		    push @coords, \@c;
 		}
 	    }
 	}
     }
 
-    for my $def (['coords',    \@polylines_polar],
-		 ['oldcoords', \@polylines_polar_feeble],
-		) {
-	my($cgiparam, $polylines_ref) = @$def;
-
-	for my $coords (param($cgiparam)) {
-	    my(@coords) = split /[!;]/, $coords;
-	    my(@coords_polar) = map {
-		my($x,$y) = split /,/, $_;
-		join ",", $converter->($x,$y);
-	    } @coords;
-	    push @$polylines_ref, \@coords_polar;
-	}
-    }
-
-    for my $wpt (param("wpt")) {
-	my($name,$coord);
-	if ($wpt =~ /[!;]/) {
-	    ($name,$coord) = split /[!;]/, $wpt;
-	} else {
-	    $name = "";
-	    $coord = $wpt;
-	}
-	my($x,$y) = split /,/, $coord;
-	($x, $y) = $converter->($x,$y);
-	push @wpt, [$x,$y,$name];
-    }
+    my @polylines_polar = @coords;
+    my @polylines_polar_feeble = map { [$convert_all->($_)] } param('oldcoords');
 
     my $zoom = param("zoom");
     $zoom = 17-3 if !defined $zoom;
@@ -179,7 +161,7 @@ sub get_html {
     } elsif ($paths_polar && @$paths_polar) {
 	($centerx,$centery) = map { sprintf "%.5f", $_ } split /,/, $paths_polar->[0][0];
     } elsif ($wpts && @$wpts) {
-	($centerx,$centery) = map { sprintf "%.5f", $_ } $wpts->[0][0], $wpts->[0][1];
+	($centerx,$centery) = map { sprintf "%.5f", $_ } split /,/, $wpts->[0][0];
     } else {
 	require Geography::Berlin_DE;
 	($centerx,$centery) = $converter->(split /,/, Geography::Berlin_DE->center());
@@ -862,6 +844,7 @@ sub get_html {
 	showLink(center, 'Link to map center: ');
     });
 
+    // *** BEGIN DATA ***
 EOF
     for my $def ([$feeble_paths_polar, '#ff00ff', 5,  0.4],
 		 [$paths_polar,        '#ff0000', 10, undef],
@@ -892,7 +875,8 @@ EOF
     }
 
     for my $wpt (@$wpts) {
-	my($x,$y,$name) = @$wpt;
+	my($xy,$name) = @$wpt;
+	my($x,$y) = split /,/, $xy;
 	#my $html_name = escapeHTML($name);
 	my $html_name = hrefify($name);
 	$html .= <<EOF;
@@ -903,6 +887,7 @@ EOF
     }
 
     $html .= <<EOF;
+    // *** END DATA ***
 
     GEvent.addListener(map, "click", onClick);
 
@@ -918,7 +903,8 @@ EOF
     <div class="sml" id="wpt">
 EOF
     for my $wpt (@$wpts) {
-	my($x,$y,$name) = @$wpt;
+	my($xy,$name) = @$wpt;
+	my($x,$y) = split /,/, $xy;
 	next if $name eq '';
 	$html .= qq{<a href="#map" onclick="setwpt($x,$y);return true;">$name</a><br />\n};
     }
