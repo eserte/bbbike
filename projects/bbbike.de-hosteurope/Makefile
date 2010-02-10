@@ -235,6 +235,7 @@ RSYNC_RULES=		check-rsync-ok \
 			do-rsync \
 			clean-cache-files-on-remote \
 			show-rsync-message \
+			post-rsync-bbbike \
 			post-rsync-bbbike-data
 .ORDER:	$(RSYNC_RULES)	
 rsync:	$(RSYNC_RULES)	
@@ -284,6 +285,12 @@ do-rsync-bbbike-data:
 	${RSYNC} ${RSYNC_ARGS} \
 	    BBBike/data/ ${RSYNC_DEST}/BBBike/data/
 	-@date >> .last/do-rsync-bbbike-data
+
+post-rsync-bbbike:
+# bbbike-snapshot expects this file, but nothing of BBBike/tmp is
+# rsync'ed by .rsync_exclude file
+	-${SSH_PROG_AND_ARGS} -l ${BBBIKE_HOSTEUROPE_USER} ${BBBIKE_HOSTEUROPE_SSH_HOST} \
+	   "touch ${BBBIKE_HOSTEUROPE_APACHE_DIR}/BBBike/tmp/.keep_me"
 
 post-rsync-bbbike-data:
 	-@date >> .last/start-post-rsync-bbbike-data
