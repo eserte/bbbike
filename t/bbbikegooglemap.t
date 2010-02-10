@@ -37,7 +37,7 @@ if (!defined $cgi_url) {
     $cgi_url = $cgi_dir . '/bbbikegooglemap.cgi';
 }
 
-plan tests => 6;
+plan tests => 8;
 
 my $ua = LWP::UserAgent->new;
 $ua->agent('BBBike-Test/1.0');
@@ -69,6 +69,17 @@ $ua->agent('BBBike-Test/1.0');
 	ok($resp->is_success, "Success with $url");
 	check_polyline($resp, 2, "Found exactly two points from " . ((keys %query)[0]) . " query");
     }
+}
+
+{
+    my %query = (coords => ['0,0!100,100', '200,200;300,300'],
+		 oldcoords => '400,400!500,500',
+		);
+    my $qs = CGI->new(\%query)->query_string;
+    my $url = $cgi_url . "?" . $qs;
+    my $resp = $ua->get($url);
+    ok($resp->is_success, "Success with $url");
+    check_polyline($resp, 6, "Found exactly six points from coords+oldcoords query");
 }
 
 sub check_polyline {
