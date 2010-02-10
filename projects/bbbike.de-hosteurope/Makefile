@@ -60,6 +60,7 @@ TESTS_FROM_LOCAL=	cgihead.t \
 			cgi-mechanize.t \
 			cgi.t \
 			cgi-test.t \
+			bbbikegooglemap.t \
 			radzeit.t \
 			wapcgi.t \
 			wwwdata.t
