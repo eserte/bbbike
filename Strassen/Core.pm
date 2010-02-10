@@ -1437,23 +1437,22 @@ sub nearest_point {
 sub get_conversion {
     my($self, %args) = @_;
     my $convsub;
-    my $frommap = $self->{GlobalDirectives}{map} || $args{Map};
-    if ($frommap) {
-	$frommap = $frommap->[0];
-	my $tomap = $args{-tomap} || "standard";
-	return if $frommap eq $tomap; # no conversion needed
-	require Karte;
-	Karte::preload(":all"); # Can't preload specific maps, because $map is a token, not a map module name
-	if ($tomap ne "standard") {
-	    $convsub = sub {
-		join ",", $Karte::map{$frommap}->map2map($Karte::map{$tomap},
-							 split /,/, $_[0]);
-	    };
-	} else {
-	    $convsub = sub {
-		join ",", $Karte::map{$frommap}->map2standard(split /,/, $_[0]);
-	    };
-	}
+    my $frommap = $self->{GlobalDirectives}{map} || $args{Map} || ['standard'];
+    $frommap = $frommap->[0];
+    my $tomap = $args{-tomap} || "standard";
+    for ($frommap, $tomap) { $_ = 'standard' if $_ eq 'bbbike' } # normalize
+    return if $frommap eq $tomap; # no conversion needed
+    require Karte;
+    Karte::preload(":all"); # Can't preload specific maps, because $map is a token, not a map module name
+    if ($tomap ne "standard") {
+	$convsub = sub {
+	    join ",", $Karte::map{$frommap}->map2map($Karte::map{$tomap},
+						     split /,/, $_[0]);
+	};
+    } else {
+	$convsub = sub {
+	    join ",", $Karte::map{$frommap}->map2standard(split /,/, $_[0]);
+	};
     }
     $convsub;
 }
