@@ -105,7 +105,7 @@ for my $static (@static) {
     { # Redirect on start page
 	my $resp = $java_ua->get("$cgi_dir/bbbike.cgi");
 	is($resp->code, 302, 'Found redirect for Java bot');
-	like($resp->header('location'), qr{BBBike/html/bbbike_small});
+	like($resp->header('location'), qr{/html/bbbike_small});
     }
     { # But allow for direct access (which bots do not do)
 	my $resp = $java_ua->get("$cgi_dir/bbbike.cgi?info=1");

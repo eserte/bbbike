@@ -927,7 +927,7 @@ if (0 && $bi->{'wap_browser'}) {
 # Die nervigen Java-Robots... wenn sie wenigstens korrekt crawlen
 # würden und robots.txt beachten würden...
 if ($q->user_agent =~ m{^Java/1\.} && ($q->query_string||'') eq '') {
-    print $q->redirect("$BBBike::BBBIKE_WWW/BBBike/html/bbbike_small.html");
+    print $q->redirect("$bbbike_html/bbbike_small.html");
     my_exit(0);
 }
 
