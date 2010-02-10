@@ -27,6 +27,7 @@ for my $file (sort keys %$manifest) {
 
 my $zip = Archive::Zip->new;
 for my $file (@files) {
+    warn "Expect error, cannot read file <$file>" if !-r $file; # help bad error message from Archive::Zip
     $zip->addFile($file, ($do_snapshot ? "BBBike-snapshot-$date/$file" : ()));
 }
 my(undef, $filename) = tempfile(SUFFIX => "-bbbike-" . ($do_snapshot ? "snapshot" : "data") .  ".zip",
