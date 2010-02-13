@@ -79,15 +79,17 @@ $VERSION = sprintf("%d.%02d", q$Revision: 1.45 $ =~ /(\d+)\.(\d+)/);
     sub biokovo_default {
 	my $self = shift->vran_default;
 	require Config;
-	if ($Config::Config{archname} =~ /amd64/) {
-	    $self->MapserverBinDir("/usr/local/src/work/mapserver-amd64");
-	    notice_once "Use latest subversion version (amd64) from " . $self->MapserverBinDir . " ...";
-	} else {
-	    $self->MapserverBinDir("/usr/local/src/work/mapserver");
-	    notice_once "Use latest subversion version from " . $self->MapserverBinDir . " ...";
-	}
-	## use mapserver from ports
-	#$self->MapserverBinDir("/usr/local/bin");
+	#if ($Config::Config{archname} =~ /amd64/) {
+	#    $self->MapserverBinDir("/usr/local/src/work/mapserver-amd64");
+	#    notice_once "Use latest subversion version (amd64) from " . $self->MapserverBinDir . " ...";
+	#} else {
+	#    $self->MapserverBinDir("/usr/local/src/work/mapserver");
+	#    notice_once "Use latest subversion version from " . $self->MapserverBinDir . " ...";
+	#}
+	# use mapserver from ports
+	$self->MapserverBinDir("/usr/local/bin");
+	$self->MapserverRelurl("/cgi-bin/mapserv");
+	$self->MapserverUrl("http://www/cgi-bin/mapserv");
 	## mapserver uninstalled from ports
 	#$self->MapserverBinDir("/usr/ports/graphics/mapserver/work/mapserver-4.4.1");
 	$self->FontsList("fonts-biokovo.list");

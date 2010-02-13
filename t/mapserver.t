@@ -6,8 +6,6 @@
 # Author: Slaven Rezic
 #
 
-# XXX Needs to be adapted for local bbbike.hosteurope operation.
-
 use strict;
 
 BEGIN {
@@ -23,7 +21,7 @@ BEGIN {
     }
 }
 
-if (hostname !~ m{^(biokovo|biokovo-amd64|vran)\.herceg\.de} && hostname !~ /radzeit/i) {
+if (hostname !~ m{^(biokovo|biokovo-amd64|vran)\.herceg\.de}) {
     print "1..0 # skip works only on vran/biokovo\n";
     exit;
 }
@@ -117,17 +115,18 @@ my $ms = get_config();
 # 		      program => $ms->{MAPSERVER_PROG_RELURL},
 # 		     });
 #     $url = $ms->{MAPSERVER_PROG_URL} . "?" . $q->query_string;
-    my $host = hostname =~ /radzeit/ ? "www.radzeit.de" : "radzeit";
+    my $host = "bbbike.hosteurope.herceg.de";
     $url = "http://$host/cgi-bin/bbbike.cgi?mapserver=1";
     $agent->get($url);
     ok($agent->success, "$url is ok");
 
-    my $skip_not_useable = ($host eq "radzeit" && index($agent->content, 'Unable to access file.') > -1 && index($agent->content, '/var/www/domains/radzeit.de/www/') > -1);
+    my $skip_not_useable = (index($agent->content, 'Unable to access file.') > -1 &&
+			    index($agent->content, '/root/work/bbbike-webserver') > -1);
 
     SKIP:
     {
 	if ($skip_not_useable) {
-	    diag "To fix this, do: cd $FindBin::RealBin/../projects/www.radzeit.de && make deploy-local";
+	    diag "To fix this, do: cd $FindBin::RealBin/../projects/bbbike.de-hosteurope && make deploy-local";
 	    skip("not setup for local operation", $core_tests)
 	}
 
