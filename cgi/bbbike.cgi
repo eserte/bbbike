@@ -4496,7 +4496,7 @@ EOF
 			if ($cat) {
 			    my $cat_title = { NN => "Weg ohne Kfz",
 					      N  => "Nebenstraße",
-					      NH => "wichtige Hauptstraße",
+					      NH => "wichtige Nebenstraße",
 					      H  => "Hauptstraße",
 					      HH => "wichtige Hauptstraße",
 					      B  => "Bundesstraße",
