@@ -1,4 +1,4 @@
-# -*- bbbike -*-
+# -*- mode: bbbike; coding: iso-8859-1 -*-
 # temp-blocking
 # XXX undef old entries
 # iso2epoch: date -j 2004MMDDhhmm +%s
@@ -5546,7 +5546,7 @@ EOF
      },
      { from  => 1156454823, # 2006-08-24 23:27
        until => 1156802399, # 2006-08-28 23:59
-       text  => 'Vom 26. August 2006, 13 Uhr bis zum 28. August 2006, 4 Uhr ist der Verkehr in der Möllendorffstraße im Abschnitt zwischen der Straße Am Containerbahnhof und der Frankfurter Allee gesperrt.',
+       text  => 'Vom 26. August 2006, 13 Uhr bis zum 28. August 2006, 4 Uhr ist der Verkehr in der Möllendorffstraße im Abschnitt zwischen der Straße Am Containerbahnhof und der Frankfurter Allee gesperrt.',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork; 15361,12071
