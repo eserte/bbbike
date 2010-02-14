@@ -74,14 +74,14 @@ if (!GetOptions("cgiurl=s" => sub {
 
 if (!@urls) {
     unshift @urls, "http://localhost/bbbike/cgi/bbbike.cgi";
-    # If this URL exists, then it is using cgi-bin in contrast to mod-perl
-    my $url2 = "http://localhost/~eserte/bbbike/cgi/bbbike.cgi";
-    my $resp = $ua->head($url2);
-    if ($resp->is_success) {
-	push @urls, $url2;
-    } else {
-	diag "Skipping tests on $url2";
-    }
+    ## If this URL exists, then it is using cgi-bin in contrast to mod-perl
+    #my $url2 = "http://localhost/~eserte/bbbike/cgi/bbbike.cgi";
+    #my $resp = $ua->head($url2);
+    #if ($resp->is_success) {
+    #	push @urls, $url2;
+    #} else {
+    #	diag "Skipping tests on $url2";
+    #}
 }
 
 my $ortsuche_tests = 11;
