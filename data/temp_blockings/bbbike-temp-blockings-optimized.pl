@@ -1378,16 +1378,7 @@ userdel	q4::inwork; 10829,18083 10907,18109 10938,18147 10989,18172 11137,18358 
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => undef,
-         'text' => 'Glasbläserallee wegen Bauarbeiten gesperrt',
-         'from' => undef,
-         'id' => 1960,
-         'data' => '#: last_checked: 2009-12-27
-userdel	2::inwork 14835,10272 14888,10385
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
