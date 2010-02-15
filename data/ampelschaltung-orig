@@ -1,5 +1,5 @@
 # DO NOT EDIT!
-# $Id: ampelschaltung-orig,v 4.12 2008/12/31 17:36:25 eserte Exp eserte $
+# $Id: $
 9229,8785	Dudenstr./Mehringdamm so,18:00,w,o,25,45 mo,16:30,w,o,25,55 mi,16:00,w,o,20,60 fr,14:00,w,o,20,60,, mi,0:00,n,s,,45,,Rad do,21:15,w,o,25,60,, sa,18:15,w,o,10,60,, sa,19:00,o,w,22,48,, sa,19:00,s,n,27,43,,Auto
 8982,8781	Dudenstr./Methfesselstr./Mussehlstr. so,18:00,w,o,35,35 mo,16:30,w,o,35,35 mi,16:00,n,s,15,55,, sa,18:15,w,o,32,38,,
 8594,8777	Dudenstr./Katzbachstr./Boelckestr. so,18:00,o,w,30,40 mo,16:30,o,w,25,45 mo,19:15,o,w,28,42 di,13:45,w,o,,40,, sa,11:30,o,w,,45,, fr,17:00,n,s,,45,, sa,18:15,o,w,28,42,,
@@ -43,7 +43,7 @@
 9753,9252	Bergmannstr. (Kreuzberg)/Zossener Str. (Kreuzberg) do,15:15,o,w,,45,, sa,19:30,w,o,35,35,,
 9058,11564	Wilhelmstr. (Mitte, Kreuzberg)/Leipziger Str. do,18:00,s,n,15,75,,
 9141,12320	Glinkastr./Neustädtische Kirchstr./Unter den Linden do,18:00,w,o,12,78,,
-9358,12351	Friedrichstr. (Mitte, Kreuzberg)/Unter den Linden do,18:00,w,o,,45,, di,19:45,s,n,,70,,
+9358,12351	Friedrichstr. (Mitte, Kreuzberg)/Unter den Linden do,18:00,w,o,,45,, di,19:45,s,n,,70,,	mo,21:45,o,w,33,57,90,per Webcam,2010-02-15
 10437,12703	Spandauer Str. (Mitte)/Karl-Liebknecht-Str. do,18:00,w,o,15,45,,X
 10527,13257	Neue Schönhauser Str./Alte Schönhauser Str./Weinmeisterstr./Münzstr. do,18:00,nw,so,35,45,,
 12822,12067	Rüdersdorfer Str./Straße der Pariser Kommune do,21:45,n,s,,50,, fr,9:44:30,o,w,18,,,,2003-07-11 mi,19:49,w,o,13,,60,,2003-07-16
@@ -80,7 +80,6 @@
 10213,8665	Columbiadamm/Golßener Str. so,14:00,o,w,35,35,, sa,19:00,w,o,45,25,,
 9801,8683	Columbiadamm/Friesenstr. (Kreuzberg, Tempelhof) so,14:00,o,w,35,35,, sa,19:00,o,w,35,35,,
 9395,8726	Platz der Luftbrücke/Columbiadamm so,14:00,o,w,30,,, sa,19:00,o,w,30,40,,
-# Ampel existiert nicht mehr: 7782,9115	Monumentenstr./Hohenfriedbergstr. so,17:00,o,w,,25,,
 7479,9357	Langenscheidtstr./Hauptstr. (Schöneberg)/Grunewaldstr. (Schöneberg)/Potsdamer Str. (Schöneberg) so,19:00,w,so,,45,, so,17:00,so,w,,,60,
 7006,9282	Akazienstr. (Schöneberg)/Grunewaldstr. (Schöneberg)/Goltzstr. (Schöneberg) so,17:00,o,w,,30,,
 6709,9234	Grunewaldstr. (Schöneberg)/Eisenacher Str. (Schöneberg) so,17:00,o,w,,30,,
@@ -115,3 +114,7 @@
 11512,10105	Kottbusser Str./Mariannenstr. (Kreuzberg)/Fraenkelufer/Paul-Lincke-Ufer/Kohlfurter Str.
 12731,10547	Skalitzer Str./Lübbener Str./Wrangelstr. (Kreuzberg)	fr,ca. 9:10,o,w,,,70,,2008-12-05
 11616,10288	Reichenberger Str. (Kreuzberg)/Mariannenstr. (Kreuzberg)	fr,ca. 9:20,n,s,,,35,,2008-12-05	fr,ca. 18:30,s,n,11,24,35,,2008-12-05
+-4220,14311	Seegefelder Str./Borkzeile	mo,21:30,w,o,13,27,40,per Webcam beobachtet,2010-02-15
+5652,11004	Budapester Str./Kantstr. (Charlottenburg)/Hardenbergstr./Breitscheidplatz	mo,22:15,o,w,26,34,60,per Webcam,2010-02-15
+5782,10884	Tauentzienstr./Kurfürstendamm/Rankestr./Breitscheidplatz	mo,22:15,o,w,26,34,60,per Webcam,2010-02-15
+17645,5328	Südostallee/Sterndamm/Groß-Berliner Damm	mo,23:20,,,,,90,per Webcam,2010-02-15
