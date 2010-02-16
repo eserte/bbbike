@@ -17,6 +17,13 @@ use strict;
 use vars qw($VERSION);
 $VERSION = '0.01';
 
+use constant TAGNAME     => 'tlcgpst';
+use constant TAGNAME_WPT => TAGNAME . '-wpt';
+
+our $CURRENT_FILENAME;
+our @CURRENT_DATA;
+
+use File::Basename qw(basename);
 use Tie::File;
 
 sub gpsman2ampelschaltung_string {
@@ -75,6 +82,232 @@ sub inject {
     die "Can't find 'Anmerkungen' marker in " . $file;
 }
 
+sub find_mappings_in_ampelschaltung {
+    my $file = ampelschaltung_filename();
+    open my $fh, $file or die $!;
+    my @res;
+    while(<$fh>) {
+	chomp;
+	if (/^#WPTFILE:\s+(.*)/) {
+	    push @res, $1;
+	}
+    }
+    @res;
+}
+
+sub tk_gui {
+    my $mw = shift;
+    my $t = $mw->Toplevel(-title => 'Mappings');
+    my $lb = $t->Scrolled('Listbox', -scrollbars => 'osoe')->pack(qw(-expand 1 -fill both));
+    my @mappings = find_mappings_in_ampelschaltung();
+    $lb->insert('end', @mappings);
+    $lb->bind('<Double-1>' => sub {
+		  my(@cursel) = $lb->curselection;
+		  my $filename = $lb->get($cursel[0]);
+		  tk_show_mapping($t, $filename);
+	      });
+    $t->Button(-text => 'Delete on canvas',
+	       -command => sub {
+		   $main::c->delete(TAGNAME);
+	       })->pack;
+}
+
+sub tk_show_mapping {
+    my($t, $filename) = @_;
+
+    require Karte::Polar;
+    require Karte::Standard;
+    require VectorUtil;
+
+    $CURRENT_FILENAME = $filename;
+
+    my $ampelschaltung_file = ampelschaltung_filename();
+    open my $fh, $ampelschaltung_file or die $!;
+    my @res;
+    my $state = 'find_start';
+    while(<$fh>) {
+	chomp;
+	if ($state eq 'find_start') {
+	    if (m{^#WPTFILE:\s+\Q$filename}) {
+		$state = 'find_wpt';
+	    }
+	} elsif ($state eq 'find_wpt') {
+	    if (m{^(# Anmerkungen:$|#WPTFILE:\s+)}) {
+		last;
+	    } elsif (my($ident, $date, $time, $lat, $lon, $symbol) = $_ =~ m{^#WPT:\s+(\S+)\t(\S+)\s+(\S+)\t(\S+)\t(\S+)\t(\S+)}) {
+		my($x,$y) = $Karte::Polar::obj->map2standard($lon, $lat);
+		my($tx,$ty) = main::transpose($x,$y);
+		my $color = $symbol =~ m{green} ? 'green' : $symbol =~ m{red} ? 'red' : 'brown';
+		push @res, { ident   => $ident,
+			     date    => $date,
+			     time    => $time,
+			     wpt_lat => $lat,
+			     wpt_lon => $lon,
+			     symbol  => $symbol,
+			     color   => $color,
+			     wpt_xy  => [$x,$y],
+			     wpt_txy => [$tx,$ty],
+			   };
+	    } elsif (m{^(-?[0-9.]+,-?[0-9.]+)}) {
+		my($tl_x,$tl_y) = split /,/, $1;
+		my($tl_tx,$tl_ty) = main::transpose($tl_x,$tl_y);
+		$res[-1]->{tl_txy} = [$tl_tx,$tl_ty];
+	    }
+	}
+    }
+    if (!@res) {
+	die "Could not find start of '$filename' or empty data?!";
+    }
+
+    $main::c->delete(TAGNAME);
+    main::add_to_stack(TAGNAME, 'topmost');
+    # $main::str_obj{TAGNAME()} = Strassen::Dummy->new; # XXX
+    $main::layer_name{TAGNAME()} = "TrafficLightCircuitGPSTracking";
+
+    $main::map_mode_callback{'BBBikeTrafficLightCircuitGPSTracking'} = sub {
+	$main::c->Tk::bind($main::c, '<Motion>', [\&BBBikeTrafficLightCircuitGPSTracking::motion, $main::c]);
+    };
+    main::set_map_mode('BBBikeTrafficLightCircuitGPSTracking');
+    $main::map_mode_deactivate = sub {
+	$main::c->Tk::bind($main::c, '<Motion>', '');
+    };
+    $BBBikeTrafficLightCircuitGPSTracking::STATE = undef;
+
+    for my $i (0 .. $#res) {
+	my @dir;
+	if ($i == 0) {
+	    @dir = (@{ $res[$i]->{wpt_txy} }, @{ $res[$i+1]->{wpt_txy} });
+	    eval { main::line_shorten_end(\@dir) }; # XXX be smarter if both points are the same!!!
+	    @dir = () if $@;
+	} elsif ($i == $#res) {
+	    @dir = (@{ $res[$i-1]->{wpt_txy} }, @{ $res[$i]->{wpt_txy} });
+	    eval { main::line_shorten_begin(\@dir) }; # XXX be smarter if both points are the same!!!
+	    @dir = () if $@;
+	} else {
+	    @dir = (@{ $res[$i-1]->{wpt_txy} },
+		    @{ $res[$i  ]->{wpt_txy} },
+		    @{ $res[$i+1]->{wpt_txy} },
+		   );
+	    eval { main::line_shorten(\@dir) }; # XXX be smarter if some points are the same!!!
+	    @dir = () if $@;
+	}
+	if (@dir) {
+	    my($dir_right) = VectorUtil::offset_line(\@dir, 5, 1, 0);
+	    @dir = @$dir_right;
+	}
+
+	$main::c->createLine(@{ $res[$i]->{wpt_txy} }, @{ $res[$i]->{wpt_txy} },
+			     -fill => $res[$i]->{color},
+			     -width => 10, # XXX skalieren?
+			     -capstyle => $main::capstyle_round,
+			     -tags => [TAGNAME, TAGNAME_WPT, TAGNAME_WPT . '-' . $res[$i]->{ident}],
+			    );
+	$main::c->createText(@{ $res[$i]->{wpt_txy} },
+			     -anchor => 'w',
+			     -text => ' '.$res[$i]->{ident},
+			     -font => $main::font{'tiny'},
+			     -tags => TAGNAME,
+			    );
+	if (@dir) {
+	    $main::c->createLine(@dir,
+				 -fill => '#606060',
+				 -width => 2,
+				 -arrow => 'last',
+				 -arrowshape => [4,6,3],
+				 -smooth => 1,
+				 -tags => TAGNAME,
+				);
+	}
+
+	if ($res[$i]->{tl_txy}) {
+	    $main::c->createLine(@{ $res[$i]->{wpt_txy} },
+				 @{ $res[$i]->{tl_txy} },
+				 -fill => 'black',
+				 -dash => '.-',
+				 -width => 2,
+				 -tags => TAGNAME,
+				);
+	}
+    }
+
+    @CURRENT_DATA = @res;
+}
+
+sub tk_link_traffic_light {
+    my($wpt, $coords) = @_;
+    $CURRENT_FILENAME or die "Missing CURRENT_FILENAME?!";
+    @CURRENT_DATA or die "Missing CURRENT_DATA?!";
+    tie my @lines, 'Tie::File', ampelschaltung_filename()
+	or die "Can't tie: $!";
+    my $line_i;
+    for($line_i = $#lines; $line_i >= 0; $line_i--) {
+	if ($lines[$line_i] =~ m{^#WPTFILE:\s+\Q$CURRENT_FILENAME}) {
+	    last;
+	}
+    }
+    if ($line_i == 0) {
+	die "Cannot find $CURRENT_FILENAME?!";
+    }
+    $line_i++;
+    for(; $line_i <= $#lines; $line_i++) {
+	if ($lines[$line_i] =~ m{^(# Anmerkungen:$|#WPTFILE:\s+)}) {
+	    die "Cannot find wpt $wpt?!";
+	} elsif ($lines[$line_i] =~ m{^#WPT:\s+\Q$wpt}) {
+	    # XXX should use our toplevel!
+	    if ($main::top->messageBox(-icon => "question",
+				       -title => 'Link?',
+				       -message => "Link traffic light $wpt <-> $coords?",
+				       -type => "YesNo") =~ /yes/i) {
+		link_traffic_light($wpt, $coords);
+	    }
+	    last;
+	}
+    }
+}
+
+# XXX duplication of code!!!
+# XXX vielleicht kann ich mit waitVariable arbeiten? oder irgendwie die Position rüberretten?
+sub link_traffic_light {
+    my($wpt, $coords) = @_;
+    $CURRENT_FILENAME or die "Missing CURRENT_FILENAME?!";
+    @CURRENT_DATA or die "Missing CURRENT_DATA?!";
+    my $current_record;
+    for (@CURRENT_DATA) {
+	if ($_->{ident} eq $wpt) {
+	    $current_record = $_;
+	    last;
+	}
+    }
+    $current_record or die "Cannot find record for $wpt?!";
+    tie my @lines, 'Tie::File', ampelschaltung_filename()
+	or die "Can't tie: $!";
+    my $line_i;
+    for($line_i = $#lines; $line_i >= 0; $line_i--) {
+	if ($lines[$line_i] =~ m{^#WPTFILE:\s+\Q$CURRENT_FILENAME}) {
+	    last;
+	}
+    }
+    if ($line_i == 0) {
+	die "Cannot find $CURRENT_FILENAME?!";
+    }
+    $line_i++;
+    for(; $line_i <= $#lines; $line_i++) {
+	if ($lines[$line_i] =~ m{^(# Anmerkungen:$|#WPTFILE:\s+)}) {
+	    die "Cannot find wpt $wpt?!";
+	} elsif ($lines[$line_i] =~ m{^#WPT:\s+\Q$wpt}) {
+	    my $line = $coords;
+	    if ($current_record->{color} eq 'green') {
+		$line .= ' 'x(60-length($line)) . $current_record->{time};
+	    } elsif ($current_record->{color} eq 'red') {
+		$line .= ' 'x(70-length($line)) . $current_record->{time};
+	    } else {
+		die "Unexpected color $current_record->{color}?!";
+	    }
+	    splice @lines, $line_i+1, 0, $line;
+	}
+    }
+}
+
 sub ampelschaltung_filename {
     require BBBikeUtil;
     BBBikeUtil::bbbike_root() . "/misc/ampelschaltung-orig.txt";
@@ -85,6 +318,57 @@ sub wkday_to_german {
     [qw(So Mo Di Mi Do Fr Sa)]->[$wkday_num];
 }
 
+{
+    package BBBikeTrafficLightCircuitGPSTracking;
+    use constant TAGNAME        => TrafficLightCircuitGPSTracking::TAGNAME();
+    use constant TAGNAME_MOTION => TrafficLightCircuitGPSTracking::TAGNAME() . '-motion';
+    use constant TAGNAME_WPT    => TrafficLightCircuitGPSTracking::TAGNAME_WPT();
+    our $STATE; # XXX reset if set_map_mode changes!
+    our $WPT;
+
+    sub button {
+	my($c, $e) = @_;
+	my($x, $y) = ($c->canvasx($e->x), $c->canvasy($e->y));
+	if ($STATE && $STATE eq 'motion') {
+	    my($item, @tags) = main::find_below_rx($c, ['^lsa'], [0]);
+	    if ($item) {
+		$STATE = undef;
+		my $coords = $tags[1];
+		TrafficLightCircuitGPSTracking::tk_link_traffic_light($WPT, $coords);
+	    }
+	} else {
+	    my($item, @tags) = main::find_below_rx($c, [TAGNAME_WPT], [1]);
+	    if ($item) {
+		my @coords = $c->coords($item);
+		@coords = (@coords[0,1], $coords[0]+1, $coords[1]+1);
+		$c->delete(TAGNAME_MOTION);
+		$c->createLine(@coords,-tags => [TAGNAME, TAGNAME_MOTION]);
+		$STATE = 'motion';
+		$WPT = substr($tags[2], length(TAGNAME_WPT)+1);
+	    }
+	}
+    }
+    sub motion {
+	my($c) = @_;
+	return if !$STATE || $STATE ne 'motion';
+	if ($main::escape) {
+	    $main::escape = 0;
+	    $c->delete(TAGNAME_MOTION);
+	    $STATE = undef;
+	    return;
+	}
+	my $e = $c->XEvent;
+	my($x, $y) = ($c->canvasx($e->x), $c->canvasy($e->y));
+	my($item) = $c->find(withtag => TAGNAME_MOTION);
+	if ($item) {
+	    my @coords = $c->coords($item);
+	    $coords[2] = $x;
+	    $coords[3] = $y;
+	    $c->coords($item, @coords);
+	}
+    }
+}
+
 return 1 if caller;
 
 ######################################################################
@@ -92,6 +376,7 @@ return 1 if caller;
 require FindBin;
 require Getopt::Long;
 push @INC, "$FindBin::RealBin/..";
+push @INC, "$FindBin::RealBin/../lib";
 require GPS::GpsmanData;
 
 sub usage (;$) {
@@ -99,6 +384,7 @@ sub usage (;$) {
     warn $msg, "\n" if $msg;
     die <<EOF;
 usage: $^X $0 [-force] dump|inject gpsfile
+       $^X $0 show_all
 EOF
 }
 
@@ -106,21 +392,30 @@ my $force;
 Getopt::Long::GetOptions("force" => \$force)
     or usage;
 my $action = shift or usage "Please specify action: dump or inject";
-my $file   = shift or usage "Please specify gpsmap waypoint file";
-my $gps = GPS::GpsmanData->new;
-$gps->load($file);
-my $info = {};
-my $res = gpsman2ampelschaltung_string($gps, $info);
-if ($action eq 'dump') {
-    print $res;
-} elsif ($action eq 'inject') {
-    $info->{formatted_date} or die "Strange: did not get formatted date?!";
-    if (!$force && find_date_in_ampelschaltung($info->{formatted_date})) {
-	die "Data for date '$info->{formatted_date}' seems to exist already. Force operation with --force.\n";
-    }
-    inject($res);
+if ($action eq 'show_all') {
+    print join("\n", find_mappings_in_ampelschaltung()), "\n";
+} elsif ($action eq 'tk') {
+    require Tk;
+    my $mw = MainWindow->new;
+    tk_gui($mw);
+    Tk::MainLoop();
 } else {
-    usage "Invalid action '$action', please specify either dump or inject";
+    my $file   = shift or usage "Please specify gpsmap waypoint file";
+    my $gps = GPS::GpsmanData->new;
+    $gps->load($file);
+    my $info = {};
+    my $res = gpsman2ampelschaltung_string($gps, $info);
+    if ($action eq 'dump') {
+	print $res;
+    } elsif ($action eq 'inject') {
+	$info->{formatted_date} or die "Strange: did not get formatted date?!";
+	if (!$force && find_date_in_ampelschaltung($info->{formatted_date})) {
+	    die "Data for date '$info->{formatted_date}' seems to exist already. Force operation with --force.\n";
+	}
+	inject($res);
+    } else {
+	usage "Invalid action '$action', please specify either dump or inject";
+    }
 }
 
 1;
