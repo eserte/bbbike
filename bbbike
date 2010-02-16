@@ -10474,8 +10474,9 @@ sub _line_shorten {
     }
 }
 
-sub line_shorten     { _line_shorten(shift, 1, 1) }
-sub line_shorten_end { _line_shorten(shift, 0, 1) }
+sub line_shorten_begin { _line_shorten(shift, 1, 0) }
+sub line_shorten       { _line_shorten(shift, 1, 1) }
+sub line_shorten_end   { _line_shorten(shift, 0, 1) }
 
 sub get_temp_blockings_files {
     my $temp_blockings_dir = "$datadir/temp_blockings";
