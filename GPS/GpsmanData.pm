@@ -89,8 +89,11 @@ struct('GPS::Gpsman::Waypoint' =>
 	    my($y,$m,$d, $H,$M,$S) = ($1,$2,$3,$4,$5,$6);
 	    require Time::Local;
 	    $epoch = Time::Local::timegm($S,$M,$H,$d,$m-1,$y-1900);
-	} elsif ($datetime =~ /^(\d{1,2})-([^-]{3})-(\d{4})\s+(\d{1,2}):(\d{2}):(\d{2})/) {
+	} elsif ($datetime =~ /^(\d{1,2})-([^-]{3})-(\d{2,4})\s+(\d{1,2}):(\d{2}):(\d{2})/) {
 	    my($d,$m_name,$y, $H,$M,$S) = ($1,$2,$3,$4,$5,$6);
+	    if ($y < 100) { # waypoint files seem to have two-digit years
+		$y += 2000;
+	    }
 	    my $m = GPS::GpsmanData::monthabbrev_number($m_name);
 	    return undef if !defined $m;
 	    require Time::Local;
@@ -874,17 +877,29 @@ sub Points {
 sub monthabbrev_number {
     my $mon = shift;
     +{'Jan' => 1,
+      'JAN' => 1,
       'Feb' => 2,
+      'FEB' => 2,
       'Mar' => 3,
+      'MAR' => 3,
       'Apr' => 4,
+      'APR' => 4,
       'May' => 5,
+      'MAY' => 5,
       'Jun' => 6,
+      'JUN' => 6,
       'Jul' => 7,
+      'JUL' => 7,
       'Aug' => 8,
+      'AUG' => 8,
       'Sep' => 9,
+      'SEP' => 9,
       'Oct' => 10,
+      'OCT' => 10,
       'Nov' => 11,
+      'NOV' => 11,
       'Dec' => 12,
+      'DEC' => 12,
      }->{$mon};
 }
 # REPO END
