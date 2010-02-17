@@ -5,7 +5,7 @@
 # $Id: trafficlightgraph.pl,v 1.10 2007/12/14 23:01:46 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2007 Slaven Rezic. All rights reserved.
+# Copyright (C) 2007,2010 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -38,6 +38,19 @@ my($canvas_w,$canvas_h)=(800,500);
 my $reversed = 0;
 my $ignorelsa = "";
 my($scale_x,$scale_y);
+
+sub usage (;$) {
+    my $msg = shift;
+    print STDERR $msg, "\n" if $msg;
+    die <<EOF;
+usage: $0 [-velocity kph] [-testvelocity|tv kph,kph,...]
+\t[-green secs] [-cycle secs]
+\t[-canvasw|-cw pixels] [-canvash|-ch pixels]
+\t[-reversed] [-ignorelsa "x,y x,y ..."]
+\t[-scalex float] [-scaley float] bbrfile
+EOF
+}
+
 GetOptions("velocity=s"         => \$v_kmh,
 	   'testvelocity|tv=s@' => \@v_test_kmh,
 	   "green=i"            => \$green_s,
@@ -48,7 +61,7 @@ GetOptions("velocity=s"         => \$v_kmh,
 	   "ignorelsa=s"        => \$ignorelsa,
 	   "scalex=f"           => \$scale_x,
 	   "scaley=f"           => \$scale_y,
-	  ) or die "usage?";
+	  ) or usage;
 my $v_ms = kmh2ms($v_kmh);
 if (!@v_test_kmh) {
     @v_test_kmh = ($default_test_kmh);
@@ -61,7 +74,7 @@ for (@v_test_kmh) {
     push @v_test_ms, kmh2ms($_);
 }
 
-my $route_file = shift or die ".bbr file is missing";
+my $route_file = shift or usage ".bbr file is missing";
 my $route = Route::load($route_file);
 
 my $ampeln_s = Strassen->new("$FindBin::RealBin/../data/ampeln");
@@ -300,9 +313,7 @@ sub trafficlight_state {
 
 __END__
 
-=pod
-
- Beispiele:
+=head1 EXAMPLES
 
  Leipziger: Spittelmarkt -> Potsdamer Platz (Länge: 1695m)
      grün: 20s/Zyklus: 60s
@@ -355,5 +366,27 @@ __END__
      20km/h:		 5:00	 4:21
      25km/h:		 3:50	 3:59
      30km/h:		 2:42	 2:51
-     
+
+=head1 TODO
+
+ * Alternative display: only draw green/red lines along the horizontal
+   trafficlight lines. The red ones thicker, they should be seen as
+   "barriers".
+
+ * Use real-world traffic light cycle times, from ampelschaltung.txt
+   and elsewhere. Should probably use only data for one day first, and
+   fill up missing data with good guesses and statistics (i.e.:
+   - green is only 20% or so from cycle time (maybe depends on primary vs.
+     residential street)
+   - a street keeps its cycle time until it crosses a higher order street
+   - default cycle time in West Berlin is 60s (with some known exceptions
+     like the Kanalstraßen) and 70s - 90s in East Berlin (the higher value
+     being at crossings with tramways)
+   - default cycle time may be higher in Berufsverkehr (70s in West Berlin)
+   )
+
+ * Draw also a line with an optimal speed: define a maximum speed
+   which must not be exceeded, and fallback to slower pace if red
+   light threatens.
+
 =cut
