@@ -11,6 +11,10 @@
 # WWW:  http://www.rezic.de/eserte/
 #
 
+# TODO:
+# * all dies in gui mode -> status_message(die)
+# * maybe as emacs function: combine times for same point (red/green) and if there are three times, the Zyklus may be calculated
+
 package TrafficLightCircuitGPSTracking;
 
 use strict;
@@ -269,6 +273,10 @@ sub tk_link_traffic_light {
 # XXX vielleicht kann ich mit waitVariable arbeiten? oder irgendwie die Position rüberretten?
 sub link_traffic_light {
     my($wpt, $coords) = @_;
+
+    require BBBikeCalc;
+    require Strassen::Strasse;
+
     $CURRENT_FILENAME or die "Missing CURRENT_FILENAME?!";
     @CURRENT_DATA or die "Missing CURRENT_DATA?!";
     my $current_record;
@@ -291,11 +299,14 @@ sub link_traffic_light {
 	die "Cannot find $CURRENT_FILENAME?!";
     }
     $line_i++;
+    my $crossings = main::all_crossings();
     for(; $line_i <= $#lines; $line_i++) {
 	if ($lines[$line_i] =~ m{^(# Anmerkungen:$|#WPTFILE:\s+)}) {
 	    die "Cannot find wpt $wpt?!";
 	} elsif ($lines[$line_i] =~ m{^#WPT:\s+\Q$wpt}) {
 	    my $line = $coords;
+
+	    # color
 	    if ($current_record->{color} eq 'green') {
 		$line .= ' 'x(60-length($line)) . $current_record->{time};
 	    } elsif ($current_record->{color} eq 'red') {
@@ -303,7 +314,26 @@ sub link_traffic_light {
 	    } else {
 		die "Unexpected color $current_record->{color}?!";
 	    }
+
+	    # crossingname
+	    # XXX [#C] Für Fußgängerampeln sollte vielleicht die nächste
+	    #          Kreuzung verwendet werden
+	    my $crossingname = join("/", map { Strasse::strip_bezirk($_) } @{ $crossings->{$coords} || [] });
+	    $crossingname = substr($crossingname, 0, 47-14) if length($crossingname) > 47-14;
+	    substr($line, 14, length($crossingname)) = $crossingname;
+
+	    # direction
+	    # XXX this is complete madness... everything here is wrong way:
+	    # tl_txy and wpt_txy swapped, unexpected usage of canvas_translation,
+	    # combination of $direction -> opposite_direction alswo swapped
+	    my $direction = BBBikeCalc::canvas_translation(BBBikeCalc::line_to_canvas_direction(@{ $current_record->{tl_txy} },
+												@{ $current_record->{wpt_txy} }));
+	    $direction = uc($direction) . '->' . uc(BBBikeCalc::opposite_direction($direction));
+	    $direction =~ s{E}{O}g; # we're using german directions here
+	    substr($line, 49, length($direction)) = $direction;
+
 	    splice @lines, $line_i+1, 0, $line;
+	    last;
 	}
     }
 }
