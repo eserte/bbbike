@@ -37,11 +37,18 @@ sub gpsman2ampelschaltung_string {
 
     $res .= <<EOF;
 # Punkt       Kreuzung                           Dir    Zyk grün      rot
-#
-----------------------------------------------------------------------------
+# ----------------------------------------------------------------------------
 EOF
 
-    my $date = $gps->Waypoints->[0]->Comment_to_unixtime($gps);
+    my @sorted_waypoints = map { $_->[1] }
+	sort { $a->[0] <=> $b->[0] }
+	    map {
+		my $wpt = $_;
+		my $epoch = $wpt->Comment_to_unixtime($gps);
+		[$epoch, $wpt];
+	    } @{ $gps->Waypoints };
+
+    my $date = $sorted_waypoints[0]->Comment_to_unixtime($gps);
     my(undef,undef,undef,$day,$month,$year,$wkday) = localtime $date;
     $month++;
     $year+=1900;
@@ -50,7 +57,7 @@ EOF
     $info->{formatted_date} = $formatted_date if $info;
     $res .= $formatted_date . "\n";
 
-    for my $wpt (@{ $gps->Waypoints }) {
+    for my $wpt (@sorted_waypoints) {
 	$res .= "#WPT: " . join("\t", $wpt->Ident, $wpt->Comment, $wpt->Latitude, $wpt->Longitude, $wpt->Symbol) . "\n";
     }
     $res;
