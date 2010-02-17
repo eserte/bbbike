@@ -15972,7 +15972,7 @@ sub show_overview_populate {
 			 -tags => 'berlinarrow');
 		    $overview_canvas->createText
 			($ix1, $iy1,
-			 -anchor => BBBikeCalc::opposite_direction(BBBikeCalc::line_to_canvas_direction
+			 -anchor => BBBikeCalc::canvas_translation(BBBikeCalc::line_to_canvas_direction
 								   ($ix1,$iy1,$ix2,$iy2)),
 			 -text => "$center_name\n".sprintf("%d km", $entf/1000),
 			 -fill => "red",
