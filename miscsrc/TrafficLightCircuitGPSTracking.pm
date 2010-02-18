@@ -28,6 +28,7 @@ our $CURRENT_FILENAME;
 our @CURRENT_DATA;
 
 use File::Basename qw(basename);
+use Text::Tabs qw(expand);
 use Tie::File;
 
 sub gpsman2ampelschaltung_string {
@@ -126,6 +127,8 @@ sub tk_gui {
 sub tk_show_mapping {
     my($t, $filename) = @_;
 
+    require BBBikeCalc;
+    BBBikeCalc::init_wind();
     require Karte::Polar;
     require Karte::Standard;
     require VectorUtil;
@@ -161,8 +164,12 @@ sub tk_show_mapping {
 			   };
 	    } elsif (m{^(-?[0-9.]+,-?[0-9.]+)}) {
 		my($tl_x,$tl_y) = split /,/, $1;
+		my $expanded_line = expand $_;
+		my($dir_from,$dir_to) = length $expanded_line > 49 ? (substr($expanded_line, 49) =~ m{^([A-Z]{1,2})->([A-Z]{1,2})}) : ();
 		my($tl_tx,$tl_ty) = main::transpose($tl_x,$tl_y);
 		$res[-1]->{tl_txy} = [$tl_tx,$tl_ty];
+		$res[-1]->{tl_dirfrom} = $dir_from;
+		$res[-1]->{tl_dirto}   = $dir_to;
 	    }
 	}
     }
@@ -231,13 +238,38 @@ sub tk_show_mapping {
 	}
 
 	if ($res[$i]->{tl_txy}) {
+	    my($tl_tx,$tl_ty) = @{ $res[$i]->{tl_txy} };
 	    $main::c->createLine(@{ $res[$i]->{wpt_txy} },
-				 @{ $res[$i]->{tl_txy} },
+				 $tl_tx, $tl_ty,
 				 -fill => 'black',
 				 -dash => '.-',
 				 -width => 2,
 				 -tags => TAGNAME,
 				);
+	    my($dirfrom, $dirto) = @{$res[$i]}{qw(tl_dirfrom tl_dirto)};
+	    if ($dirfrom && $dirto) {
+		s{O}{E}g for ($dirfrom, $dirto);
+		my $deltafrom = $BBBikeCalc::wind_dir{BBBikeCalc::canvas_translation(lc($dirfrom))};
+		my $deltato   = $BBBikeCalc::wind_dir{BBBikeCalc::canvas_translation(lc($dirto))};
+		my $arrowlen  = 20;
+		if ($deltafrom) {
+		    $main::c->createLine($tl_tx + $deltafrom->[1]*$arrowlen,
+					 $tl_ty + $deltafrom->[0]*$arrowlen,
+					 $tl_tx, $tl_ty,
+					 -tags => TAGNAME,
+					);
+		}
+		if ($deltato) {
+		    $main::c->createLine($tl_tx, $tl_ty,
+					 $tl_tx + $deltato->[1]*$arrowlen,
+					 $tl_ty + $deltato->[0]*$arrowlen,
+					 -width => 2,
+					 -arrow => 'last',
+					 -arrowshape => [4,6,3],
+					 -tags => TAGNAME,
+					);
+		}
+	    }
 	}
     }
 
