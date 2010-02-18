@@ -1413,8 +1413,7 @@ Mi, 09.12.2009
 13919,10583   Stralauer Allee/Modersohnstr.      W->O   90? 42        48
 
 # Punkt	      Kreuzung                           Dir    Zyk grün      rot
-#
-----------------------------------------------------------------------------
+# ----------------------------------------------------------------------------
 Fr, 11.12.2009
 # ca. 09:20
 # Sekunden gezählt
@@ -1422,8 +1421,7 @@ Fr, 11.12.2009
 
 #WPTFILE: /home/e/eserte/src/bbbike/misc/gps_data/ampelschaltung/20100216.wpt
 # Punkt       Kreuzung                           Dir    Zyk grün      rot
-#
-----------------------------------------------------------------------------
+# ----------------------------------------------------------------------------
 Di, 16.02.2010
 14024,10861                                      N->S                 10:35:40
 13596,10722   Stralauer Allee/Ehrenbergstr.      N->S       10:37:57
@@ -1471,8 +1469,7 @@ Di, 16.02.2010
 
 #WPTFILE: /home/e/eserte/src/bbbike/misc/gps_data/ampelschaltung/20100217.wpt
 # Punkt       Kreuzung                           Dir    Zyk grün      rot
-#
-----------------------------------------------------------------------------
+# ----------------------------------------------------------------------------
 Mi, 17.02.2010
 14139,11269   Revaler Str./Modersohnstr.         N->S       09:30:07
 13596,10722   Stralauer Allee/Ehrenbergstr.      N->S                 09:33:38
@@ -1521,6 +1518,35 @@ Mi, 17.02.2010
 14211,11552   Wühlischstr./Gärtnerstr.           S->N                 19:33:49
 14211,11552   Wühlischstr./Gärtnerstr.           S->N       19:34:26
 14211,11552   Wühlischstr./Gärtnerstr.           S->N                 19:35:13
+
+#WPTFILE: /home/e/eserte/src/bbbike/misc/gps_data/ampelschaltung/20100218.wpt
+# Punkt       Kreuzung                           Dir    Zyk grün      rot
+# ----------------------------------------------------------------------------
+Do, 18.02.2010
+15361,12071   Frankfurter Allee/Möllendorffstr.  S->N       15:54:54
+15361,12071   Frankfurter Allee/Möllendorffstr.  S->N                 15:55:11
+15361,12071   Frankfurter Allee/Möllendorffstr.  S->N       15:56:33
+15361,12071   Frankfurter Allee/Möllendorffstr.  S->N                 15:56:52
+15117,12106   Frankfurter Allee/Pettenkoferstr.  O->W                 15:57:54
+15117,12106   Frankfurter Allee/Pettenkoferstr.  O->W       15:58:27
+15117,12106   Frankfurter Allee/Pettenkoferstr.  O->W                 15:59:34
+15117,12106   Frankfurter Allee/Pettenkoferstr.  O->W       16:00:07
+15361,12071   Frankfurter Allee/Möllendorffstr.  W->O                 16:27:44
+15361,12071   Frankfurter Allee/Möllendorffstr.  W->O       16:28:45
+15361,12071   Frankfurter Allee/Möllendorffstr.  W->N       16:29:29
+15361,12071   Frankfurter Allee/Möllendorffstr.  W->O       16:30:22
+15361,12071   Frankfurter Allee/Möllendorffstr.  W->O                 16:31:09
+15248,11880   Gürtelstr./Scharnweberstr.         N->S       16:31:44
+15248,11880   Gürtelstr./Scharnweberstr.         N->S                 16:32:12
+15248,11880   Gürtelstr./Scharnweberstr.         N->S       16:32:43
+15080,11905   Scharnweberstr./Jessnerstr.        O->W       16:33:40
+15080,11905   Scharnweberstr./Jessnerstr.        O->W                 16:34:03
+15080,11905   Scharnweberstr./Jessnerstr.        O->W       16:34:45
+15248,11880   Gürtelstr./Scharnweberstr.         W->O                 16:35:01
+15248,11880   Gürtelstr./Scharnweberstr.         W->O       16:35:43
+15361,12071   Frankfurter Allee/Möllendorffstr.  S->N       16:36:37
+15361,12071   Frankfurter Allee/Möllendorffstr.  S->N                 16:36:52
+15080,11905   Scharnweberstr./Jessnerstr.        O->W       17:05:25
 
 # Anmerkungen:
 #  Kreuzung:

@@ -1413,8 +1413,7 @@ Mi, 09.12.2009
 13919,10583   Stralauer Allee/Modersohnstr.	 W->O   90? 42	      48
 
 # Punkt	      Kreuzung                           Dir    Zyk grün      rot
-#
-----------------------------------------------------------------------------
+# ----------------------------------------------------------------------------
 Fr, 11.12.2009
 # ca. 09:20
 # Sekunden gezählt
@@ -1422,8 +1421,7 @@ Fr, 11.12.2009
 
 #WPTFILE: /home/e/eserte/src/bbbike/misc/gps_data/ampelschaltung/20100216.wpt
 # Punkt       Kreuzung                           Dir    Zyk grün      rot
-#
-----------------------------------------------------------------------------
+# ----------------------------------------------------------------------------
 Di, 16.02.2010
 #WPT: 012	16-FEB-10 10:35:40	52.5035555555556	13.4573333333333	buoy_white_red
 14024,10861		  			 N->S                 10:35:40
@@ -1514,8 +1512,7 @@ Di, 16.02.2010
 
 #WPTFILE: /home/e/eserte/src/bbbike/misc/gps_data/ampelschaltung/20100217.wpt
 # Punkt       Kreuzung                           Dir    Zyk grün      rot
-#
-----------------------------------------------------------------------------
+# ----------------------------------------------------------------------------
 Mi, 17.02.2010
 #WPT: 055	17-FEB-10 9:30:07	52.5078888888889	13.4599722222222	buoy_white_green
 14139,11269   Revaler Str./Modersohnstr.         N->S       09:30:07
@@ -1611,6 +1608,59 @@ Mi, 17.02.2010
 14211,11552   Wühlischstr./Gärtnerstr.           S->N       19:34:26
 #WPT: 101	17-FEB-10 19:35:13	52.5080555555556	13.4596666666667	buoy_white_red
 14211,11552   Wühlischstr./Gärtnerstr.           S->N                 19:35:13
+
+#WPTFILE: /home/e/eserte/src/bbbike/misc/gps_data/ampelschaltung/20100218.wpt
+# Punkt       Kreuzung                           Dir    Zyk grün      rot
+# ----------------------------------------------------------------------------
+Do, 18.02.2010
+#WPT: 101	18-FEB-10 15:54:54	52.5127222222222	13.4764444444444	buoy_white_green
+15361,12071   Frankfurter Allee/Möllendorffstr.  S->N       15:54:54
+#WPT: 102	18-FEB-10 15:55:11	52.5128888888889	13.4766111111111	buoy_white_red
+15361,12071   Frankfurter Allee/Möllendorffstr.  S->N                 15:55:11
+#WPT: 103	18-FEB-10 15:56:33	52.5132222222222	13.477	buoy_white_green
+15361,12071   Frankfurter Allee/Möllendorffstr.  S->N       15:56:33
+#WPT: 104	18-FEB-10 15:56:52	52.51325	13.477	buoy_white_red
+15361,12071   Frankfurter Allee/Möllendorffstr.  S->N                 15:56:52
+#WPT: 105	18-FEB-10 15:57:54	52.5134722222222	13.4765833333333	buoy_white_red
+15117,12106   Frankfurter Allee/Pettenkoferstr.  O->W                 15:57:54
+#WPT: 106	18-FEB-10 15:58:27	52.5135833333333	13.4766666666667	buoy_white_green
+15117,12106   Frankfurter Allee/Pettenkoferstr.  O->W       15:58:27
+#WPT: 107	18-FEB-10 15:59:34	52.51375	13.4756666666667	buoy_white_red
+15117,12106   Frankfurter Allee/Pettenkoferstr.  O->W                 15:59:34
+#WPT: 108	18-FEB-10 16:00:07	52.51375	13.4756666666667	buoy_white_green
+15117,12106   Frankfurter Allee/Pettenkoferstr.  O->W       16:00:07
+#WPT: 109	18-FEB-10 16:27:44	52.5137777777778	13.4747777777778	buoy_white_red
+15361,12071   Frankfurter Allee/Möllendorffstr.  W->O                 16:27:44
+#WPT: 110	18-FEB-10 16:28:45	52.5136666666667	13.4751111111111	buoy_white_green
+15361,12071   Frankfurter Allee/Möllendorffstr.  W->O       16:28:45
+#WPT: 111 Links	18-FEB-10 16:29:29	52.5134444444444	13.4760277777778	buoy_white_green
+15361,12071   Frankfurter Allee/Möllendorffstr.  W->N       16:29:29
+#WPT: 111	18-FEB-10 16:30:22	52.5133888888889	13.4765277777778	buoy_white_green
+15361,12071   Frankfurter Allee/Möllendorffstr.  W->O       16:30:22
+#WPT: 112	18-FEB-10 16:31:09	52.5133611111111	13.4765555555556	buoy_white_red
+15361,12071   Frankfurter Allee/Möllendorffstr.  W->O                 16:31:09
+#WPT: 113	18-FEB-10 16:31:44	52.5130833333333	13.4763055555556	buoy_white_green
+15248,11880   Gürtelstr./Scharnweberstr.         N->S       16:31:44
+#WPT: 114	18-FEB-10 16:32:12	52.5128055555556	13.4760555555556	buoy_white_red
+15248,11880   Gürtelstr./Scharnweberstr.         N->S                 16:32:12
+#WPT: 115	18-FEB-10 16:32:43	52.5124722222222	13.4758333333333	buoy_white_green
+15248,11880   Gürtelstr./Scharnweberstr.         N->S       16:32:43
+#WPT: 116	18-FEB-10 16:33:40	52.5118888888889	13.4752222222222	buoy_white_green
+15080,11905   Scharnweberstr./Jessnerstr.        O->W       16:33:40
+#WPT: 117	18-FEB-10 16:34:03	52.5118888888889	13.4749166666667	buoy_white_red
+15080,11905   Scharnweberstr./Jessnerstr.        O->W                 16:34:03
+#WPT: 118	18-FEB-10 16:34:45	52.5119166666667	13.4743333333333	buoy_white_green
+15080,11905   Scharnweberstr./Jessnerstr.        O->W       16:34:45
+#WPT: 119	18-FEB-10 16:35:01	52.5118888888889	13.4745833333333	buoy_white_red
+15248,11880   Gürtelstr./Scharnweberstr.         W->O                 16:35:01
+#WPT: 120	18-FEB-10 16:35:43	52.5118055555556	13.47525	buoy_white_green
+15248,11880   Gürtelstr./Scharnweberstr.         W->O       16:35:43
+#WPT: 121	18-FEB-10 16:36:37	52.5121666666667	13.4758055555556	buoy_white_green
+15361,12071   Frankfurter Allee/Möllendorffstr.  S->N       16:36:37
+#WPT: 122	18-FEB-10 16:36:52	52.5123333333333	13.476	buoy_white_red
+15361,12071   Frankfurter Allee/Möllendorffstr.  S->N                 16:36:52
+#WPT: 123	18-FEB-10 17:05:25	52.5121666666667	13.4736388888889	buoy_white_green
+15080,11905   Scharnweberstr./Jessnerstr.        O->W       17:05:25
 
 # Anmerkungen:
 #  Kreuzung:
