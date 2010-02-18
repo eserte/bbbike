@@ -152,6 +152,9 @@ sub tk_show_mapping {
 		my($x,$y) = $Karte::Polar::obj->map2standard($lon, $lat);
 		my($tx,$ty) = main::transpose($x,$y);
 		my $color = $symbol =~ m{green} ? 'green' : $symbol =~ m{red} ? 'red' : 'brown';
+		if (length $time < 8) {
+		    $time = '0' . $time; # leading zero is missing
+		}
 		push @res, { ident   => $ident,
 			     date    => $date,
 			     time    => $time,
@@ -490,3 +493,28 @@ if ($action eq 'show_all') {
 1;
 
 __END__
+
+=head1 NAME
+
+TrafficLightCircuitGPSTracking - handle ampelschaltung.txt data
+
+=head1 SYNOPSIS
+
+=head2 From commandline
+
+Check if everything looks right before importing:
+
+    perl miscsrc/TrafficLightCircuitGPSTracking.pm dump ~/src/bbbike/misc/gps_data/ampelschaltung/...wpt
+
+Do the import:
+
+    perl miscsrc/TrafficLightCircuitGPSTracking.pm inject ~/src/bbbike/misc/gps_data/ampelschaltung/...wpt
+
+=head2 From bbbike
+
+Open ptksh.
+
+    require "miscsrc/TrafficLightCircuitGPSTracking.pm"
+    TrafficLightCircuitGPSTracking::tk_gui($top)
+
+=cut
