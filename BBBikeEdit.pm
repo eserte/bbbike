@@ -1143,6 +1143,7 @@ sub ampel_draw_canvas {
 		$index++;
 	    } else {
 		my $point = $l->{Point};
+		next if $point =~ m{^#}; # comments are not dropped in Ampelschaltung.pm
 		my($x1, $y1) = split /,/, $point;
 		my(@entries);
 		if ($ampel_draw_restrict ne "") {
@@ -1189,7 +1190,7 @@ sub ampel_draw_canvas_cycle {
 	my $zyklus = join(",", sort { $a <=> $b } keys %$v);
 	if ($zyklus ne "") {
 	    #$c->createText($x,$y, -text => $zyklus, -tags => ["lsas-t"]);
-	    draw_text_intelligent($c, $x, $y, -text => $zyklus, -font => $font{'tiny'}, -tags => ["lsas-t"]);
+	    draw_text_intelligent($c, $x, $y, -text => $zyklus, -font => $font{'tiny'}, -tags => ["lsas-t"], -abk => 'lsa');
 	}
     }
 #     $c->itemconfigure('lsas-t',

@@ -21,7 +21,7 @@ sub time2s {
     return if $t1 eq '';
 
     my($h1,$m1,$s1);
-    if ($t1 =~ /^\+(\d+):(\d+)$/) {
+    if ($t1 =~ /^\+(\d+):(\d+)\??$/) {
 	my($rel_m,$rel_s) = ($1, $2);
 	if (!$args{-relstart}) {
 	    die "Relative time found, but no -relstart given!";
@@ -611,7 +611,7 @@ sub from_string {
     my($self, $str) = @_;
     local(@Strassen::datadirs) = "/tmp";
     my $tmpfile = "/tmp/ampsch.$$.txt";
-    open(W, ">$tmpfile") or die "$tmpfile: $!";
+    CORE::open(W, ">$tmpfile") or die "$tmpfile: $!";
     print W $str;
     close W;
     require File::Basename;
@@ -628,7 +628,7 @@ sub open {
     my $file;
     if (-e $basefile) {
 	$file = $basefile;
-	open(RW, $file) or return 0;
+	CORE::open(RW, $file) or return 0;
     } else {
 	$file = MyFile::openlist(*RW, map { "$_/$basefile" }
 				 @Strassen::datadirs, "$FindBin::RealBin/misc",
@@ -710,11 +710,14 @@ sub add_point {
 
     my $kreuzung = _strip_blank_substr($line, 14, 49-14);
     my $dir = _strip_blank_substr($line, 49, 6);
-    if ($dir ne '' and $dir !~ /([A-Z]+)->([A-Z]+)/) {
-	warn "Die Richtung <$dir> in <$line> kann nicht geparst werden.";
-	return;
+    my($dir_from, $dir_to);
+    if ($dir !~ m{^\s*$}) {
+	if ($dir !~ /([A-Z]+)->([A-Z]+)/) {
+	    warn "Die Richtung <$dir> in <$line> kann nicht geparst werden.";
+	    return;
+	}
+	($dir_from, $dir_to) = (lc($1), lc($2));
     }
-    my($dir_from, $dir_to) = (lc($1), lc($2));
 
     my $zyklus     = _strip_blank_substr($line, 56, 3);
     (my $zyklus_n = $zyklus) =~ s/^(\d+).*/$1/;
