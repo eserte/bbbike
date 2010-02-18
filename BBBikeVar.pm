@@ -77,7 +77,7 @@ $SF_DISTDIR	      = 'http://sourceforge.net/projects/bbbike/files/BBBike';
 $SF_DISTFILE_SOURCE   = "$SF_DISTDIR/$STABLE_VERSION/BBBike-$STABLE_VERSION.tar.gz/download";
 $SF_DISTFILE_WINDOWS  = "$SF_DISTDIR/$WINDOWS_VERSION/BBBike-$WINDOWS_VERSION-Windows.exe/download";
 $SF_DISTFILE_DEBIAN   = "$SF_DISTDIR/" . join('', $DEBIAN_VERSION =~ m{(^[^-]+)}) . "/bbbike_${DEBIAN_VERSION}_i386.deb/download";
-$DISTFILE_FREEBSD_I386 = "ftp://ftp.FreeBSD.org/pub/FreeBSD/ports/i386/packages-stable/All/de-BBBike-3.16_1.tbz";
+$DISTFILE_FREEBSD_I386 = "ftp://ftp.FreeBSD.org/pub/FreeBSD/ports/i386/packages-stable/All/de-BBBike-3.16_2.tbz";
 *DISTFILE_FREEBSD = \$DISTFILE_FREEBSD_I386; # compatibility
 $DISTFILE_FREEBSD_ALL  = "http://portsmon.freebsd.org/portoverview.py?category=german&portname=BBBike";
 
