@@ -23,8 +23,9 @@ targets:	${TARGETS}
 
 ampelschaltung.txt:	ampelschaltung-orig.txt
 	-@$(WRITEABLE) $@
-	${CONVERT2HAFAS} -keepcomment -ampelschaltung2 \
-		ampelschaltung-orig.txt > ampelschaltung.txt
+	grep -v '^#WPT:' ampelschaltung-orig.txt | \
+	    ${CONVERT2HAFAS} -keepcomment -ampelschaltung2 \
+	    > ampelschaltung.txt
 	-@$(READONLY) $@
 
 # checks
