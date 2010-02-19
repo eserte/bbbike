@@ -80,7 +80,7 @@ Sa, 24.10.1998
 9229,8785     Te-Damm/Columbiadamm (Auto)        S->N   70  19:20:34  19:21:01
 9229,8785     Te-Damm/Columbiadamm (Rad)         S->N                 +5/10s?
 9229,8718     Te-Damm/Manfred-v.-Richthofens.    N->S   70  19:21:31  19:21:04
-9225,9038     Mehringdamm/Fidicinstr.            S->N   ?   19:23:17  19:23:42
+9225,9038     Mehringdamm/Fidicinstr.            S->N       19:23:17  19:23:42
 9248,9350     Mehringdamm/Kreuzbergs. (Auto)     S->N   70  19:24:38  19:25:10
 9248,9350     Mehringdamm/Kreuzbergs. (Rad)      S->N                 +5s
 9793,9241     Bergmannstr./Friesenstr.           W->S   70  19:31:20  19:28:21
@@ -1547,6 +1547,80 @@ Do, 18.02.2010
 15361,12071   Frankfurter Allee/Möllendorffstr.  S->N       16:36:37
 15361,12071   Frankfurter Allee/Möllendorffstr.  S->N                 16:36:52
 15080,11905   Scharnweberstr./Jessnerstr.        O->W       17:05:25
+
+#WPTFILE: /home/e/eserte/src/bbbike/misc/gps_data/ampelschaltung/20100219.wpt:track1
+# Punkt       Kreuzung                           Dir    Zyk grün      rot
+# ----------------------------------------------------------------------------
+Fr, 19.02.2010
+13541,11355   Warschauer Str./Helsingforser Str  NO->SW     08:52:24
+13454,11119                                      NO->SW               08:55:16
+13332,10832   Am Oberbaum/Stralauer Allee/Warsc  NO->SW     09:00:46
+13332,10832   Am Oberbaum/Stralauer Allee/Warsc  NO->SW               09:01:05
+8982,8781     Dudenstr./Methfesselstr./Mussehls  O->W       09:24:43
+8982,8781     Dudenstr./Methfesselstr./Mussehls  O->W       09:25:53
+8982,8781     Dudenstr./Methfesselstr./Mussehls  O->W                 09:26:26
+
+#WPTFILE: /home/e/eserte/src/bbbike/misc/gps_data/ampelschaltung/20100219.wpt:track2
+# Punkt       Kreuzung                           Dir    Zyk grün      rot
+# ----------------------------------------------------------------------------
+Fr, 19.02.2010
+8625,8174     Loewenhardtdamm/Boelckestr.        N->S       13:13:23
+8625,8174     Loewenhardtdamm/Boelckestr.        N->S                 13:13:39
+8625,8174     Loewenhardtdamm/Boelckestr.        N->S       13:14:13
+8625,8174     Loewenhardtdamm/Boelckestr.        N->S                 13:14:28
+8625,8174     Loewenhardtdamm/Boelckestr.        N->S       13:15:03
+8642,7876     Werner-Voß-Damm/Boelckestr.        N->S                 13:15:44
+8642,7876     Werner-Voß-Damm/Boelckestr.        N->S       13:16:20
+8642,7876     Werner-Voß-Damm/Boelckestr.        N->S                 13:16:35
+8642,7876     Werner-Voß-Damm/Boelckestr.        N->S       13:17:10
+8642,7876     Werner-Voß-Damm/Boelckestr.        N->S                 13:17:24
+8642,7876     Werner-Voß-Damm/Boelckestr.        N->S       13:18:00
+
+#WPTFILE: /home/e/eserte/src/bbbike/misc/gps_data/ampelschaltung/20100219.wpt:track3
+# Punkt       Kreuzung                           Dir    Zyk grün      rot
+# ----------------------------------------------------------------------------
+Fr, 19.02.2010
+8642,7876     Werner-Voß-Damm/Boelckestr.        SW->NO     14:10:56
+8642,7876     Werner-Voß-Damm/Boelckestr.        SW->NO               14:11:06
+8625,8174     Loewenhardtdamm/Boelckestr.        S->N                 14:11:58
+8625,8174     Loewenhardtdamm/Boelckestr.        S->N       14:12:33
+8625,8174     Loewenhardtdamm/Boelckestr.        S->N                 14:12:49
+8625,8174     Loewenhardtdamm/Boelckestr.        S->N       14:13:23
+8625,8174     Loewenhardtdamm/Boelckestr.        S->N                 14:13:38
+8616,8605     Boelckestr./Bayernring             S->N       14:16:12
+8616,8605     Boelckestr./Bayernring             S->N                 14:16:44
+8616,8605     Boelckestr./Bayernring             S->N       14:17:22
+8982,8781     Dudenstr./Methfesselstr./Mussehls  SW->NO     14:19:29
+8982,8781     Dudenstr./Methfesselstr./Mussehls  SW->NO               14:19:41
+8982,8781     Dudenstr./Methfesselstr./Mussehls  SW->NO     14:20:39
+8982,8781     Dudenstr./Methfesselstr./Mussehls  SW->NO               14:20:52
+8982,8781     Dudenstr./Methfesselstr./Mussehls  SW->NO     14:21:49
+8982,8781     Dudenstr./Methfesselstr./Mussehls  SW->NO               14:22:01
+
+#WPTFILE: /home/e/eserte/src/bbbike/misc/gps_data/ampelschaltung/20100219.wpt:track4
+# Punkt       Kreuzung                           Dir    Zyk grün      rot
+# ----------------------------------------------------------------------------
+Fr, 19.02.2010
+8982,8781     Dudenstr./Methfesselstr./Mussehls  NO->SW               19:38:12
+8982,8781     Dudenstr./Methfesselstr./Mussehls  NO->SW     19:39:09
+8982,8781     Dudenstr./Methfesselstr./Mussehls  NO->SW               19:39:21
+9229,8785     Dudenstr./Mehringdamm/Platz der L  W->O       19:40:57
+9229,8785     Dudenstr./Mehringdamm/Platz der L  W->O                 19:41:14
+9229,8785     Dudenstr./Mehringdamm/Platz der L  W->O       19:42:16
+13541,11355   Warschauer Str./Helsingforser Str  S->N       20:09:47
+13541,11355   Warschauer Str./Helsingforser Str  S->N                 20:10:26
+13588,11490   Warschauer Str./Revaler Str.       S->N       20:10:56
+13588,11490   Warschauer Str./Revaler Str.       S->N                 20:11:28
+13588,11490   Warschauer Str./Revaler Str.       S->N       20:12:06
+14139,11269   Revaler Str./Modersohnstr.         W->O                 20:15:38
+14139,11269   Revaler Str./Modersohnstr.         W->O       20:16:32
+14139,11269   Revaler Str./Modersohnstr.         W->O                 20:16:50
+14139,11269   Revaler Str./Modersohnstr.         W->O       20:17:42
+14139,11269   Revaler Str./Modersohnstr.         W->O                 20:17:58
+14211,11552   Wühlischstr./Gärtnerstr.           S->N                 20:18:34
+14211,11552   Wühlischstr./Gärtnerstr.           S->N       20:19:25
+14211,11552   Wühlischstr./Gärtnerstr.           S->N                 20:19:44
+14211,11552   Wühlischstr./Gärtnerstr.           S->N       20:20:19
 
 # Anmerkungen:
 #  Kreuzung:
