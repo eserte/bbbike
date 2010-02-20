@@ -18,6 +18,7 @@ use Getopt::Long;
 use Text::Tabs;
 use FindBin;
 use lib ("$FindBin::RealBin/..",
+	 "$FindBin::RealBin/../lib",
 	 "$FindBin::RealBin/../data",
 	 "$FindBin::RealBin/../misc");
 use Ampelschaltung;
