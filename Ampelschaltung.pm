@@ -181,6 +181,23 @@ sub lost {
 
 sub root { $_[0]->{Root} }
 
+sub add_epoch_times {
+    my $self = shift;
+    require Time::Local;
+    if (my($d,$m,$y) = $self->{Date} =~ m{(\d{1,2})\.(\d{1,2})\.(\d{4})}) {
+	for my $key (qw(Time GreenTime RedTime)) {
+	    if (my($H,$M,$S) = ($self->{$key}||'') =~ m{(\d{1,2}):(\d{2}):(\d{2})}) {
+		my $epoch = Time::Local::timelocal($S,$M,$H,$d,$m-1,$y);
+		$self->{$key.'Epoch'} = $epoch;
+	    }
+	}
+    } else {
+	die "Cannot parse date out of " . $self->as_string;
+    }
+}
+
+######################################################################
+
 package Ampelschaltung;
 use Strassen;
 use BBBikeUtil qw(sqr);
@@ -825,6 +842,11 @@ sub add_point {
        GroupIndex => $group_index,
       );
     push @{ $self->{Data} }, $e;
+}
+
+sub get_entries {
+    my $self = shift;
+    @{ $self->{Data} };
 }
 
 # Create a hash of Points, each one contains a list of Entries.
