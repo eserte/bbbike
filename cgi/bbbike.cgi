@@ -2811,10 +2811,11 @@ sub get_kreuzung {
 # coordinates return a html snippet with either a radiobutton list or
 # a select listbox with the selectable crossings. Unusable crossings
 # (i.e. those with a concise name) are stripped out. If a crossed
-# street has no name, then it will given the pseudo name "N.N.". If no
-# usable crossing was found, an empty string is returned. In this case
-# the caller is responsible to use some alternative, e.g. choosing one
-# (i.e. the middle) of the available coordinates automatically.
+# street has no name, then it will given the pseudo name "(street
+# without name)". If no usable crossing was found, an empty string is
+# returned. In this case the caller is responsible to use some
+# alternative, e.g. choosing one (i.e. the middle) of the available
+# coordinates automatically.
 sub make_crossing_choose_html {
     my($strname, $type, $coords_ref) = @_;
 
@@ -2842,7 +2843,7 @@ sub make_crossing_choose_html {
 	    }
 	    for (@kreuzung) {
 		if (m{^\s*$}) {
-		    $_ = 'N.N.';
+		    $_ = '(' . M"Straﬂe ohne Namen" . ')';
 		}
 	    }
 	    {
