@@ -2701,6 +2701,14 @@ sub get_kreuzung {
 	if (@coords == 1) {
 	    $c = $coords[0];
 	}
+	my $crossing_choose_html;
+	if (!defined $c) {
+	    $crossing_choose_html = make_crossing_choose_html($strname, $type, \@coords);
+	    if (!$crossing_choose_html) {
+		# cannot find meaningful crossings, fallback to middle coord
+		$c = $coords[@coords/2];
+	    }
+	}
 	if (defined $c) {
 	    print "<input type=hidden name=" . $type . "c value=\"$c\">";
 	}
@@ -2732,63 +2740,7 @@ sub get_kreuzung {
 	if ($is_ort{$type}) {
 	    print "<input type=hidden name=" . $type . "isort value=1>\n";
 	}
-	if (!defined $c) {
-	    my $i = 0;
-	    my %used;
-	    my $ecke_printed = 0;
-	    foreach (@coords) {
-		unless ($ecke_printed) {
-		    if ($use_select) {
-			print " <i>" . M("Ecke") . " </i>";
-			if ($bi->{'can_table'}) {
-			    print "</td><td>";
-			}
-			print "<select $bi->{hfill} name=" . $type . "c>";
-		    } else {
-			print " " . M("Ecke") . " ...<br>\n";
-		    }
-		    $ecke_printed++;
-		}
-		if ($used{$_}) {
-		    next;
-		} else {
-		    $used{$_}++;
-		}
-		if (exists $crossings->{$_}) {
-		    if ($use_select) {
-			print "<option value=\"$_\">";
-		    } else {
-			print
-			  "<input type=radio name=" . $type . "c ",
-			  "value=\"$_\"";
-			if ($i++ == 0) {
-			    print " checked";
-			}
-			print "> ";
-		    }
-		    my @kreuzung;
-		    foreach (@{$crossings->{$_}}) {
-			if ($_ ne $strname) {
-			    push(@kreuzung, $_);
-			}
-		    }
-		    if (@kreuzung == 0) {
-			print "..."; # XXX bessere Loesung?
-		    } else {
-			print join("/", map { Strasse::strip_bezirk($_) } @kreuzung);
-		    }
-		    print "<br>" unless $use_select;
-		    print "\n";
-		}
-	    }
-	    print "</select>" if $use_select && $ecke_printed;
-
-#XXX
-#  	    my $img_url = crossing_map($type, \@coords);
-#  	    if ($img_url) {
-#  		print "<img src=\"$img_url\">";
-#  	    }
-	}
+	print $crossing_choose_html if $crossing_choose_html;
 	if ($bi->{'can_table'}) {
 	    print "</td></tr>\n";
 	} else {
@@ -2854,6 +2806,83 @@ sub get_kreuzung {
 #  	return "$mapdir_url/$basefile";
 #      }
 #  }
+
+# For a given $strname, $type (start, ziel, ...) and array ref of
+# coordinates return a html snippet with either a radiobutton list or
+# a select listbox with the selectable crossings. Unusable crossings
+# (i.e. those with a concise name) are stripped out. If a crossed
+# street has no name, then it will given the pseudo name "N.N.". If no
+# usable crossing was found, an empty string is returned. In this case
+# the caller is responsible to use some alternative, e.g. choosing one
+# (i.e. the middle) of the available coordinates automatically.
+sub make_crossing_choose_html {
+    my($strname, $type, $coords_ref) = @_;
+
+    my $html = "";
+
+    my $i = 0;
+    my %used;
+    my $ecke_printed = 0;
+    foreach (@$coords_ref) {
+	if ($used{$_}) {
+	    next;
+	} else {
+	    $used{$_}++;
+	}
+	if (exists $crossings->{$_}) {
+	    my @kreuzung;
+	    foreach (@{$crossings->{$_}}) {
+		if ($_ ne $strname) {
+		    push(@kreuzung, $_);
+		}
+	    }
+	    if (@kreuzung == 0) {
+		# May happen if all street names at the crossing are the same
+		next;
+	    }
+	    for (@kreuzung) {
+		if (m{^\s*$}) {
+		    $_ = 'N.N.';
+		}
+	    }
+	    {
+		my %seen; # make unique
+		@kreuzung = grep { !$seen{$_}++ } @kreuzung;
+	    }
+
+	    unless ($ecke_printed) {
+		if ($use_select) {
+		    $html .= " <i>" . M("Ecke") . " </i>";
+		    if ($bi->{'can_table'}) {
+			$html .= "</td><td>";
+		    }
+		    $html .= "<select $bi->{hfill} name=" . $type . "c>";
+		} else {
+		    $html .= " " . M("Ecke") . " ...<br>\n";
+		}
+		$ecke_printed++;
+	    }
+
+	    if ($use_select) {
+		$html .= "<option value=\"$_\">";
+	    } else {
+		$html .=
+		    "<input type=radio name=" . $type . "c " .
+			"value=\"$_\"";
+		if ($i++ == 0) {
+		    $html .= " checked";
+		}
+		$html .= "> ";
+	    }
+	    $html .= join("/", map { Strasse::strip_bezirk($_) } @kreuzung);
+	    $html .= "<br>" unless $use_select;
+	    $html .= "\n";
+	}
+    }
+    $html .= "</select>" if $use_select && $ecke_printed;
+
+    $html;
+}
 
 sub get_global_cookie {
     if (!$got_cookie) {
