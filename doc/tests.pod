@@ -524,7 +524,7 @@ Dokumentation im WWW-Browser.
 =head3 Einstellungen > Daten-Update über das Internet
 
 B<NOTE>: Achtung: dieser Menüpunkt darf nicht genutzt werden, wenn die
-Dateien im F<data>-Verzeichnis über CVS up-to-date gehalten werden,
+Dateien im F<data>-Verzeichnis über git up-to-date gehalten werden,
 oder wenn Kartendaten selbst geändert wurden und nicht verloren gehen
 dürfen.
 
@@ -556,9 +556,9 @@ Unter Unix würde sofort angefangen werden zu drucken (vielleicht).
 =head3 Update über das Internet testen
 
     * Entweder eine alte Distribution in /tmp auspacken oder einen
-      älteren CVS-Stand in /tmp auschecken (cvs update -D YYYY/MM/DD)
+      älteren git-Stand in /tmp auschecken
 
-    * Falls von CVS: alle CVS-Verzeichnisse und data/Makefile löschen.
+    * Falls von git: das .git-Verzeichnis und data/Makefile löschen.
       Außerdem ein data/.modified besorgen
 
     * bbbike von diesem Verzeichnis starten und ein Daten-Update

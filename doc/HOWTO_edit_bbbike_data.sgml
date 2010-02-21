@@ -61,28 +61,32 @@ Editieren</> verwendet werden.
 
 <para>
 Zum Editieren ist ein POSIX-kompatibles System, also Linux oder Unix,
-empfehlenswert.
+empfehlenswert. Das Programm <command>git</> wird für die
+Versionskontrolle verwendet und muss ggfs. nachinstalliert werden.
 </para>
 
 <para>
 Bei Windows könnte es helfen, wenn <ulink
 url="http://www.cygwin.com">cygwin</> installiert ist (die
-Basis-Installation von cygwin zusammen mit <command>cvs</> dürfte
+Basis-Installation von cygwin zusammen mit <command>git</> dürfte
 ausreichen). Die Umgebungsvariable <envar>PATH</> sollte um den
 bin-Pfad von cygwin ergänzt werden (üblicherweise
 <filename>C:\cygwin\bin</>), falls das nicht automatisch bei der
-cygwin-Installation gemacht wird.
+cygwin-Installation gemacht wird. Zusätzlich wird für die
+Versionskontrolle <command>git</> benötigt. Die Windows-Version
+von <command>git</> kann
+man <ulink url="http://code.google.com/p/msysgit/">hier</> downloaden.
 </para>
 
 <sect2>
-<title>CVS</>
+<title>git</>
 
 <para>
-Ein CVS-Checkout von BBBike ist notwendig, um die neuesten Daten sowie
+Ein git-Clone von BBBike ist notwendig, um die neuesten Daten sowie
 die aktuellsten Entwicklungstools zu erhalten. Eine Anleitung für das
-CVS-Checkout befindet sich unter <ulink
+Durchführen eines git-Clone befindet sich unter <ulink
 url="README.html#ENTWICKLUNG">Entwicklung im README</>.
-Windows-Benutzer sollten das Verzeichnis aus dem CVS-Checkout an die
+Windows-Benutzer sollten das Verzeichnis mit dem git-Clone an die
 Stelle des originalen BBBike-Programmverzeichnisses verschieben, also
 üblicherweise <filename>C:\Programme\BBBike\bbbike\</>.
 </para>
@@ -392,7 +396,7 @@ den <ulink url="mailto:slaven@rezic.de">Maintainer der
 BBBike-Stammdaten</> geschickt werden. In der Datei ist auch jeweils
 ein Zeitstempel pro Tag enthalten; es reicht aus, wenn nur die
 neuesten Änderungen abgeschickt werden. Zugleich sollte ein diff
-geschickt werden. Dieses wird mit <command>cvs diff -u data >
+geschickt werden. Dieses wird mit <command>git diff -u data >
 data.patch</> aus dem ausgecheckten BBBike-Verzeichnis heraus gemacht.
 Die diff-Datei namens <filename>data.patch</> sollte dann ebenfalls an
 den Maintainer geschickt werden.
@@ -403,9 +407,9 @@ den Maintainer geschickt werden.
 <para>
 Es ist empfehlenswert, das Verzeichnis <filename>data</> nach dem
 Veröffentlichen umzubenennen (oder zu löschen) und das alte
-Verzeichnis mit <command>cvs update -d</> wiederherzustellen. Der
-Grund sind mögliche CVS-Konflikte, die auftreten können, nachdem der
-Maintainer die editierten Daten ins CVS eingepflegt hat.
+Verzeichnis mit <command>git checkout -- data</> wiederherzustellen. Der
+Grund sind mögliche Konflikte, die auftreten können, nachdem der
+Maintainer die editierten Daten in das Haupt-git-Repository eingepflegt hat.
 
 <sect1>
  <title>Erfassen anhand eines GPS-Tracks</>
@@ -1039,7 +1043,7 @@ beschrieben, geändert werden.
 
 <para>
 Es ist auch möglich, mit der Standardinstallation von BBBike (ohne
-CVS) Daten zu erfassen, die an der Daten-Maintainer geschickt werden
+git) Daten zu erfassen, die an der Daten-Maintainer geschickt werden
 können. Dazu muss einfach ein Straßenzug zusammengeklickt werden,
 indem man die Shift-Maustaste verwendet. Existierende Punkte (nur im
 Edit-Modus) sollten nur mit der Maustaste (ohne Shift)
@@ -1126,7 +1130,7 @@ BBBike muss dieses neue Datenverzeichnis angegeben werden:
 Achtung: da manche BBBike-Tools sich auf ein hart kodiertes
 <filename>data</>-Verzeichnis verlassen, könnten einige
 Editieroperationen fehlschlagen. Alternativ könnte man das neue
-Verzeichnis auch <filename>data</> nennen, aber ein CVS-Update würde
+Verzeichnis auch <filename>data</> nennen, aber ein git-Update würde
 dann zu Konflikten führen.
 </para>
 

@@ -98,7 +98,7 @@ $BBBIKE_MAPSERVER_INDIRECT = "http://www.bbbike.de/mapserver/brb/";
 $BBBIKE_GIT_CLONE_URL = 'git://github.com/eserte/bbbike.git';
 $BBBIKE_GIT_HTTP = 'http://github.com/eserte/bbbike';
 
-# CVS
+# CVS (outdated!)
 $BBBIKE_CVS_ANON_REPOSITORY = ":pserver:anonymous\@bbbike.cvs.sourceforge.net:/cvsroot/bbbike";
 $BBBIKE_CVS_HTTP = 'http://bbbike.cvs.sourceforge.net/viewvc/bbbike/bbbike/';
 

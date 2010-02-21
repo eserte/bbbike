@@ -328,7 +328,7 @@ sub resolve_fulltext {
 
     my @res;
     my @files = grep { -f $_ }
-                grep { !/(relation_gps|coords\.data|ampelschaltung|-orig|-info|~|\.st|\.desc|RCS|CVS)$/ }
+                grep { !/(relation_gps|coords\.data|ampelschaltung|-orig|-info|~|\.st|\.desc|RCS|CVS|\.svn|\.git)$/ }
 		glob("$dir/*");
     die "No files in directory $dir" if !@files; # should not happen
     my @cmd = ("fgrep", "-i", "--", param("searchterm"), @files);

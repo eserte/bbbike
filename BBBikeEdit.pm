@@ -3508,7 +3508,7 @@ sub find_gpsman_file {
 	undef $file;
 	require File::Find;
 	File::Find::find(sub {
-			     if ($File::Find::name =~ /\b(RCS|CVS)\b/) {
+			     if ($File::Find::name =~ /\b(RCS|CVS|\.svn|\.git)\b/) {
 				 $File::Find::prune = 1;
 				 return;
 			     }

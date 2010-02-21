@@ -316,11 +316,11 @@ sub bbbike_data_update {
 	if ($rootdir =~ m|/home/e/eserte/src/bbbike|);
     $my_die->("FATAL: Ein Verzeichnis RCS in $rootdir/data gefunden. Update nicht möglich.")
 	if (-e "$rootdir/data/RCS");
-    $my_die->("FATAL: Ein Verzeichnis CVS in $rootdir/data gefunden. Bitte benutze 'cvs update' in der Kommandozeile um die BBBike-Daten zu aktualisieren, oder entferne das Verzeichnis CVS.")
-	if (-e "$rootdir/data/RCS");
-    $my_die->("FATAL: Ein Verzeichnis .svn in $rootdir/data gefunden. Bitte benutze 'svn update' in der Kommandozeile um die BBBike-Daten zu aktualisieren, oder entferne das Verzeichnis .svn.")
+    $my_die->("FATAL: Ein Verzeichnis CVS in $rootdir/data gefunden. Update nicht möglich. Es wird empfohlen, statt CVS git zu verwenden. Siehe README.")
+	if (-e "$rootdir/data/CVS");
+    $my_die->("FATAL: Ein Verzeichnis .svn in $rootdir/data gefunden. Update nicht möglich. Subversion wird nicht unterstützt, bitte git verwenden. Siehe README.")
 	if (-e "$rootdir/data/.svn"); # will probably never happen
-    $my_die->("FATAL: Ein Verzeichnis .git in $rootdir gefunden. Bitte benutze 'git pull' in der Kommandozeile um die BBBike-Daten zu aktualisieren, oder entferne das Verzeichnis .git.")
+    $my_die->("FATAL: Ein Verzeichnis .git in $rootdir gefunden. Bitte benutze 'git pull' in der Kommandozeile um die BBBike-Daten zu aktualisieren, oder entferne das Verzeichnis $rootdir/.git.")
 	if (-e "$rootdir/.git"); # if somebody is using github, or local git
 
     if (!-w "$rootdir/data") {
@@ -330,7 +330,7 @@ sub bbbike_data_update {
 	return;
     }
 
- TRY_CVS: {
+ TRY_CVS: { # Never reached, see above. CVS is outdated anyway.
 	if (-e "$rootdir/data/CVS") {
 	    if (!is_in_path("cvs")) {
 		last TRY_CVS;

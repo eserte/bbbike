@@ -10497,7 +10497,7 @@ sub activate_temp_blockings {
     my($temp_blockings_dir, $file, $optimized_file) =
 	@{ get_temp_blockings_files() }{qw(dir file optimized_file)};
     if (!-r $file && !-r $optimized_file) {
-	status_message(M("Kein Support fuer temporaere Sperrungen, das Verzeichnis $temp_blockings_dir fehlt. Dieses Verzeichnis ist aus dem CVS erhältlich, siehe README."), "warn");
+	status_message(M("Kein Support fuer temporaere Sperrungen, das Verzeichnis $temp_blockings_dir fehlt. Dieses Verzeichnis ist aus per git erhältlich, siehe README."), "warn");
 	return;
     }
 
