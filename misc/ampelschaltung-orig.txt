@@ -1790,6 +1790,52 @@ Fr, 19.02.2010
 #WPT: 177	19-FEB-10 20:20:19	52.5079444444444	13.4595833333333	buoy_white_green
 14211,11552   Wühlischstr./Gärtnerstr.           S->N       20:20:19
 
+#WPTFILE: /home/e/eserte/src/bbbike/misc/gps_data/ampelschaltung/20100220.wpt
+# Punkt       Kreuzung                           Dir    Zyk grün      rot
+# ----------------------------------------------------------------------------
+Sa, 20.02.2010
+#WPT: 178	20-FEB-10 12:34:11	52.5028888888889	13.4698611111111	buoy_white_green
+15263,10747   Hauptstr./Karlshorster Str.        W->O       12:34:11
+#WPT: 179	20-FEB-10 12:34:31	52.5028888888889	13.4698333333333	buoy_white_red
+15263,10747   Hauptstr./Karlshorster Str.        W->O                 12:34:31
+#WPT: 180	20-FEB-10 12:35:22	52.5029166666667	13.4698055555556	buoy_white_green
+15263,10747   Hauptstr./Karlshorster Str.        W->O       12:35:22
+#WPT: 181	20-FEB-10 12:37:52	52.5035	13.4701111111111	buoy_white_green
+# XXX falsch? 15144,10905   Marktstr./Schreiberhauer Str.      W->O       12:37:52
+#WPT: 182	20-FEB-10 12:38:20	52.5035	13.4701111111111	buoy_white_green
+15144,10905   Marktstr./Schreiberhauer Str.      W->O       12:38:20
+#WPT: 183	20-FEB-10 12:38:37	52.5035277777778	13.4701111111111	buoy_white_red
+15144,10905   Marktstr./Schreiberhauer Str.      W->O                 12:38:37
+#WPT: 184	20-FEB-10 12:39:22	52.5035555555556	13.4701111111111	buoy_white_green
+15144,10905   Marktstr./Schreiberhauer Str.      W->O       12:39:22
+#WPT: 185	20-FEB-10 15:38:26	52.4745833333333	13.3724166666667	buoy_white_green
+8642,7876     Werner-Voß-Damm/Boelckestr.        SW->NO     15:38:26
+#WPT: 186	20-FEB-10 15:38:37	52.4745833333333	13.3723888888889	buoy_white_red
+8642,7876     Werner-Voß-Damm/Boelckestr.        SW->NO               15:38:37
+#WPT: 187	20-FEB-10 17:18:42	52.4725555555556	13.3766944444444	buoy_white_green
+8715,7384     Boelckestr./Hoeppnerstr.           W->O       17:18:42
+#WPT: 188	20-FEB-10 17:18:54	52.4725	13.3769444444444	buoy_white_red
+8715,7384     Boelckestr./Hoeppnerstr.           W->O                 17:18:54
+#WPT: 189	20-FEB-10 17:19:42	52.4725	13.3778333333333	buoy_white_green
+8715,7384     Boelckestr./Hoeppnerstr.           W->O       17:19:42
+#WPT: 190Man/Ring+R.	20-FEB-10 17:20:33	52.4726388888889	13.378	buoy_white_green
+8717,6965     Ringbahnstr./Manteuffelstr.        N->S       17:20:33
+8715,7384     Boelckestr./Hoeppnerstr.           N->S                 17:20:33
+#WPT: 190	20-FEB-10 17:28:47	52.4714166666667	13.3853611111111	buoy_white_green
+9242,7145                                        N->S       17:28:47
+#WPT: 191	20-FEB-10 17:29:16	52.471	13.3853055555556	buoy_white_red
+9242,7145                                        N->S                 17:29:16
+#WPT: 192	20-FEB-10 18:01:02	52.506	13.4636111111111	buoy_white_green
+14575,11407   Wühlischstr./Holteistr.            S->N       18:01:02
+#WPT: 193	20-FEB-10 18:01:12	52.5060277777778	13.4636388888889	buoy_white_green
+14639,11512   Boxhagener Str./Holteistr.         S->N       18:01:12
+#WPT: 194	20-FEB-10 18:01:21	52.5060277777778	13.4636111111111	buoy_white_red
+14575,11407   Wühlischstr./Holteistr.            S->N                 18:01:21
+#WPT: 195	20-FEB-10 18:01:34	52.5060277777778	13.4636111111111	buoy_white_red
+14639,11512   Boxhagener Str./Holteistr.         S->N                 18:01:34
+#WPT: 196	20-FEB-10 18:02:17	52.5060277777778	13.4636111111111	buoy_white_green
+14575,11407   Wühlischstr./Holteistr.            S->N       18:02:17
+
 # Anmerkungen:
 #  Kreuzung:
 #   KS: Kontaktschleife
