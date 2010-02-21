@@ -148,7 +148,7 @@ sub tk_show_mapping {
 	} elsif ($state eq 'find_wpt') {
 	    if (m{^(# Anmerkungen:$|#WPTFILE:\s+)}) {
 		last;
-	    } elsif (my($ident, $date, $time, $lat, $lon, $symbol) = $_ =~ m{^#WPT:\s+(\S+)\t(\S+)\s+(\S+)\t(\S+)\t(\S+)\t(\S+)}) {
+	    } elsif (my($ident, $date, $time, $lat, $lon, $symbol) = $_ =~ m{^#WPT:\s+([^\t]+)\t(\S+)\s+(\S+)\t(\S+)\t(\S+)\t(\S+)}) {
 		my($x,$y) = $Karte::Polar::obj->map2standard($lon, $lat);
 		my($tx,$ty) = main::transpose($x,$y);
 		my $color = $symbol =~ m{green} ? 'green' : $symbol =~ m{red} ? 'red' : 'brown';
