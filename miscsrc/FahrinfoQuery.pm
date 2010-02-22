@@ -112,9 +112,18 @@ sub choose {
     # XXX no support for via
     my $goal  = $main::search_route_points[-1]->[main::SRP_COORD()];
 
-    my $osm_data_dir = bbbike_root . '/data_berlin_osm_bbbike';
-    if (!-d $osm_data_dir) {
-	main::status_message(M"Das Verzeichnis $osm_data_dir existiert nicht. Keine Haltestellensuche möglich.", "error");
+    my $osm_data_dir;
+ TRY_OSM_DATA_DIR: {
+	my @try_dirs = ('data_berlin_brandenburg_osm_bbbike',
+			'data_berlin_osm_bbbike',
+		       );
+	for my $try_dir (map { bbbike_root . '/' . $_ } @try_dirs) {
+	    if (-d $try_dir) {
+		$osm_data_dir = $try_dir;
+		last TRY_OSM_DATA_DIR;
+	    }
+	}
+	main::status_message(M"Es konnte keines der folgenden Verzeichnisse im BBBike-Wurzelverzeichnis gefunden werden: " . join(" ", @try_dirs) . ". Keine Haltestellensuche möglich.", "error");
 	return;
     }
 
