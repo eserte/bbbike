@@ -618,6 +618,8 @@ for my $osm_file (@osm_files) {
 		    }
 		} elsif ($railway_cat =~ m{^(?:crossing|level_crossing)$}) {
 		    push @or, ["ampeln", "B"];
+		} elsif ($railway_cat eq 'tram_stop') { # takes precedence over highway=bus_stop
+		    add_underline(\@or, '_oepnv', 'Tram');
 		} else {
 		    $unhandled{"node-railway=$railway_cat"}++;
 		}
