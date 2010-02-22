@@ -4,7 +4,7 @@
 # $Id: FahrinfoRealtime.pm,v 1.4 2008/01/15 21:02:20 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2006 Slaven Rezic. All rights reserved.
+# Copyright (C) 2006,2010 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,12 +15,8 @@
 # Description (de): Interface zu ÖPNV-Ist-Fahrzeiten bei Fahrinfo
 package FahrinfoRealtime;
 
-## Die URL existiert nicht mehr.
-## Umschreiben zu aufwändig --- das Plugin wird ja eigentlich nicht genutzt.
-return 1;
-__END__
-use BBBike#Plugin;
-push @ISA, 'BBBike#Plugin';
+use BBBikePlugin;
+push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
@@ -100,6 +96,30 @@ sub visibility {
     return 0 if (!grep { /^[ub]-fg/ || /^s$/ } @tags);
     1;
 }
+
+sub get_and_show_result {
+    my($haltestelle) = @_;
+    require CGI;
+    require Encode;
+    $haltestelle = Encode::encode("iso-8859-1", $haltestelle);
+    CGI->import('-oldstyle_urls');
+    my $qs = CGI->new({ input  => $haltestelle,
+			submit => 'Anzeigen',
+		      })->query_string;
+    my $url = 'http://www.fahrinfo-berlin.de/IstAbfahrtzeiten/index;ref=1?' . $qs;
+    start_browser($url);
+}
+
+sub start_browser {
+    my($url) = @_;
+    main::status_message("Der WWW-Browser wird mit der URL $url gestartet.", "info");
+    require WWWBrowser;
+    WWWBrowser::start_browser($url);
+}
+
+__END__
+
+# Following the old code, not working anymore
 
 sub get_and_show_result {
     my($haltestelle) = @_;
