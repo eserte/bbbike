@@ -107,14 +107,17 @@ sub gelbe_seiten {
 		  if ($pid == 0) { # child
 		      open(STDOUT, ">$outfile");
 		      open(STDERR, ">&CHILD_WTR");
-		      exec("$FindBin::RealBin/miscsrc/gelbeseiten.pl", ($DEBUG ? ("-test") : ()), $url);
+		      exec($^X, "$FindBin::RealBin/miscsrc/gelbeseiten.pl", ($DEBUG ? ("-test") : ()), $url);
 		      warn $!;
 		      CORE::exit(1);
 		  }
 		  my $end_child = sub {
 		      $SIG{CHLD} = 'IGNORE';
 		      $okb->fileevent(\*PARENT_RDR, 'readable', "");
-		      do_plot($t, $outfile, $branche);
+		      eval {
+			  do_plot($t, $outfile, $branche);
+		      };
+		      main::status_message($@, 'error') if $@;
 		  };
 		  $SIG{CHLD} = $end_child;
 		  $okb->fileevent
