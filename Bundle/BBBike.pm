@@ -57,15 +57,17 @@ XML::SAX	- CPAN.pm kann XML::SAX nicht über XML::Simple automatisch installieren
 
 XML::Simple	- optional für XML-Dumps der BBBike-Route
 
-XML::Parser	- optional für UAProf parsing (alternative wäre XML::SAX::PurePerl)
+XML::LibXML	- optional für das Parsen und Erzeugen von GPX-Dateien und für UAProf parsing
 
-XML::LibXML	- optional für das Parsen und Erzeugen von GPX-Dateien
+XML::Parser	- optional für UAProf parsing (bevorzugt wird allerdings XML::LibXML::SAX oder XML::SAX::PurePerl)
 
 XML::Twig	- alternativ für das Parsen und Erzeugen von GPX-Dateien, benötigt XML::Parser
 
 YAML	- optional für YAML-Dumps der BBBike-Route sowie fuer temp_blockings
 
 YAML::Syck	- optional für die Testsuite, könnte auch YAML.pm in Zukunft ersetzen
+
+JSON::XS	- optional für diverse Serialisierungsaufgaben
 
 Mail::Mailer 1.53	- falls man aus bbbike heraus E-Mails mit der Routenbeschreibung verschicken will
 
@@ -159,6 +161,10 @@ Geo::SpaceManager 0.91	- Intelligentere Labelplatzierung, bei der PDF-Ausgabe ve
 
 Geo::Distance::XS	- Berechnung von Entfernungen für polare Koordinaten, möglicherweise schneller als Math::Trig
 
+Geo::Distance 0.16	- Prereq für Geo::Distance::XS
+
+Geo::METAR	- Wetterdaten im METAR-Format
+
 Tk::ExecuteCommand	- Bessere Fehlerberichte im temp_blockings-Editor
 
 Algorithm::Diff	- Unterschiede im temp_blockings-Editor anzeigen
@@ -167,7 +173,7 @@ Sort::Naturally	- Für natürliches Sortieren von bbd-Dateien
 
 Yahoo::Search	- Suche in luise-berlin
 
-Geo::Coder::Google	- Geocoding über Googlemaps
+Geo::Coder::Google 0.06	- Geocoding über Googlemaps
 
 Geo::Coder::Yahoo	- Geocoding über Yahoo
 

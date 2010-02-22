@@ -103,6 +103,8 @@ my @req_table =
    'optional für YAML-Dumps der BBBike-Route sowie fuer temp_blockings'],
   [qw/YAML::Syck	0	all	0	devel/,
    'optional für die Testsuite, könnte auch YAML.pm in Zukunft ersetzen'],
+  [qw/JSON::XS	0	all	0	base/,
+   'optional für diverse Serialisierungsaufgaben'],
 
   [qw/Mail::Mailer	1.53	unix	0	mail/,
    'falls man aus bbbike heraus E-Mails mit der Routenbeschreibung verschicken will'],
