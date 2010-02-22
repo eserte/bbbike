@@ -102,6 +102,9 @@ download-${land}.osm.bz2:
 	mv ${OSM_DOWNLOAD_DIR}/${land}.osm.bz2~ ${OSM_DOWNLOAD_DIR}/${land}.osm.bz2
 .endfor
 
+######################################################################
+# Berlin+Brandenburg
+
 # Download the prepared osm from geofabrik
 # XXX very problematic because streets between Berlin and Brandenburg are not connected!
 #data_berlin_brandenburg_osm_bbbike:	download-berlin.osm.bz2 download-brandenburg.osm.bz2 \
@@ -129,6 +132,14 @@ convert-splitted-berlin-brandenburg:
 convert-data_berlin_brandenburg_osm_bbbike:
 	${MISCSRCDIR}/osm2bbd -country de -lang de -map bbbike -v -f -o ../data_berlin_brandenburg_osm_bbbike download/osm/berlin.osm.bz2 download/osm/brandenburg.osm.bz2
 	${MISCSRCDIR}/osm2bbd-postprocess ../data_berlin_brandenburg_osm_bbbike
+
+# Currently brandenburg.osm.bz2 contains also berlin
+data_berlin_brandenburg_osm_bbbike_untiled:
+	${MISCSRCDIR}/osm2bbd -map bbbike -v -f -o ../data_berlin_brandenburg_osm_bbbike download/osm/brandenburg.osm.bz2
+	${MISCSRCDIR}/osm2bbd-postprocess ../data_berlin_brandenburg_osm_bbbike
+
+######################################################################
+# Berlin (only)
 
 # Alternative tiled Berlin data
 reload-tiled-berlin:
