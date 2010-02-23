@@ -1648,6 +1648,48 @@ Sa, 20.02.2010
 14639,11512   Boxhagener Str./Holteistr.         S->N                 18:01:34
 14575,11407   Wühlischstr./Holteistr.            S->N       18:02:17
 
+#WPTFILE: /home/e/eserte/src/bbbike/misc/gps_data/ampelschaltung/20100223.wpt:track1
+# Punkt       Kreuzung                           Dir    Zyk grün      rot
+# ----------------------------------------------------------------------------
+Di, 23.02.2010
+14024,10861                                      N->S                 09:52:31
+13596,10722   Stralauer Allee/Ehrenbergstr.      N->S       09:54:47
+13332,10832   Am Oberbaum/Stralauer Allee/Warsc  O->W                 09:55:15
+12985,10665   Skalitzer Str./Oberbaumstr./Schle  O->W       09:57:19
+12731,10547   Skalitzer Str./Lübbener Str./Wran  O->W       09:58:21
+12274,10436   Skalitzer Str./Spreewaldplatz      O->W       09:59:05
+12274,10436   Skalitzer Str./Spreewaldplatz      O->W                 09:59:27
+12274,10436   Skalitzer Str./Spreewaldplatz      O->W       09:59:54
+11949,10414   Skalitzer Str./Oranienstr./Manteu  O->W                 10:00:12
+11949,10414   Skalitzer Str./Oranienstr./Manteu  O->W       10:01:04
+11671,10402   Skalitzer Str./Mariannenstr.       O->W                 10:01:37
+11671,10402   Skalitzer Str./Mariannenstr.       O->W       10:02:13
+11512,10105   Kottbusser Str./Mariannenstr./Pau  N->S       10:04:13
+11543,10015   Kottbusser Brücke/Kottbusser Damm  N->S       10:04:44
+11089,9751    Grimmstr./Dieffenbachstr.          N->S       10:06:32
+11089,9751    Grimmstr./Dieffenbachstr.          N->S                 10:06:42
+11089,9751    Grimmstr./Dieffenbachstr.          N->S       10:07:23
+11023,9597    Körtestr./Urbanstr./Grimmstr.      N->S                 10:07:41
+11023,9597    Körtestr./Urbanstr./Grimmstr.      N->S       10:09:17
+10713,9260    Lilienthalstr./Südstern/Körtestr.  N->S       10:10:28
+9489,9309                                        O->W       10:15:50
+9248,9350     Mehringdamm/Kreuzbergstr./Bergman  O->W       10:16:45
+
+#WPTFILE: /home/e/eserte/src/bbbike/misc/gps_data/ampelschaltung/20100223.wpt:track2
+# Punkt       Kreuzung                           Dir    Zyk grün      rot
+# ----------------------------------------------------------------------------
+Di, 23.02.2010
+9753,9252     Bergmannstr./Zossener Str.         W->O                 18:46:43
+9753,9252     Bergmannstr./Zossener Str.         W->O       18:47:19
+9793,9241     Bergmannstr./Friesenstr. (Rad)     W->O       18:47:31
+10713,9260    Lilienthalstr./Südstern/Körtestr.  S->N       18:51:15
+11075,9576    Urbanstr./Grimmstr./Fichtestr.     S->N       18:53:35
+11141,9732    Grimmstr./Dieffenbachstr.          S->N       18:54:20
+11543,10015   Kottbusser Brücke/Kottbusser Damm  W->O       18:57:30
+11512,10105   Kottbusser Str./Mariannenstr./Pau  S->N       18:57:51
+11616,10288   Reichenberger Str./Mariannenstr.   S->N                 18:58:07
+11949,10414   Skalitzer Str./Oranienstr./Manteu  W->O                 19:00:09
+
 # Anmerkungen:
 #  Kreuzung:
 #   KS: Kontaktschleife
