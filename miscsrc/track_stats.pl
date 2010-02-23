@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2009 Slaven Rezic. All rights reserved.
+# Copyright (C) 2009,2010 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -75,6 +75,13 @@ if (!defined $start_stage) {
 
 if ($start_stage eq 'begin') {
     $start_stage = $stages[0];
+}
+
+if ($start_stage =~ m{^(dump)$}) {
+    my $func = 'stage_' . $start_stage;
+    no strict 'refs';
+    $func->();
+    exit;
 }
 
 if (!$stages{$start_stage}) {
@@ -348,6 +355,13 @@ sub stage_output {
 	}
     }
     print $tb->table, "\n";
+}
+
+# Pseudo stage: dump state
+sub stage_dump {
+    require Data::Dumper;
+    print Data::Dumper->new([$state],[qw(state)])->Indent(1)->Useqq(1)->Dump;
+
 }
 
 sub load_state {
