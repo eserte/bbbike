@@ -110,61 +110,100 @@ sub stage_filtertracks {
     $trks->make_grid(#Exact => 1, # XXX Eats a lot of memory, so better not use it yet...
 		     UseCache => 1);
 
-    my %in_start;
+    my %from_candidates;
+    my %to_candidates;
     my @included;
 
     for my $def ([1, @from],
 		 [2, @to]) {
 	my($pass, @p) = @$def;
 
-	my %seen; #XXX
-	my %seen_record;
 	for my $p_i (0 .. $#p-1) {
 	    my($p1, $p2) = ($p[$p_i], $p[$p_i+1]);
 
+	    # Get all records in the selected grids.
+	    my %ns;
 	    my(@grids) = $trks->get_new_grids((split /,/, $p1), (split /,/, $p2));
 	    for my $grid (@grids) {
 		next if !exists $trks->{Grid}{$grid};
 		for my $n (@{ $trks->{Grid}{$grid} }) {
-		    next if $seen_record{$n};
-		    $seen_record{$n} = 1;
-		    my $r = $trks->get($n);
-		    next if $ignore_rx && $r->[Strassen::NAME] =~ $ignore_rx;
-		    #XXX next if $seen{$r->[Strassen::NAME]};
-		    my($file) = $r->[Strassen::NAME] =~ m{^(\S+)};
-		    next if $pass == 2 && !$in_start{$file};
-		RECORD: for my $r_i (1 .. $#{ $r->[Strassen::COORDS] }) {
-			my($r1,$r2) = @{$r->[Strassen::COORDS]}[$r_i-1,$r_i];
-			for my $checks ([$r1, $p1],
-					[$r1, $p2],
-					[$r2, $p1],
-					[$r2, $p2],
-				       ) {
-			    if ($checks->[0] eq $checks->[1]) {
-				$seen{$r->[Strassen::NAME]} = 1;#XXX
-				if ($pass == 1) {
-				    $in_start{$file} = [$r, [$checks->[0]], [$checks->[1]]];
-				} elsif ($pass == 2) {
-				    push @included, [$file, $in_start{$file}, [$r, [$checks->[0]], [$checks->[1]]]];
-				}
-				next RECORD;
-			    }
-			}
-			if (VectorUtil::intersect_lines(split(/,/, $p1),
-							split(/,/, $p2),
-							split(/,/, $r1),
-							split(/,/, $r2),
-						       )) {
-			    $seen{$r->[Strassen::NAME]} = 1;#XXX
+		    $ns{$n} = 1;
+		}
+	    }
+	    # Order records by appearance in file. Note: order is
+	    # important, so the last records in the first pass and the
+	    # first record in the 2nd pass is found.
+	    #
+	    # XXX probably this is violated if @p > 2 ?!
+	    for my $n (sort { $a <=> $b } keys %ns) {
+		my $r = $trks->get($n);
+		my $deb_r; # = $r XXX
+		next if $ignore_rx && $r->[Strassen::NAME] =~ $ignore_rx;
+		my($file) = $r->[Strassen::NAME] =~ m{^(\S+)};
+	    RECORD: for my $r_i (1 .. $#{ $r->[Strassen::COORDS] }) {
+		    my($r1,$r2) = @{$r->[Strassen::COORDS]}[$r_i-1,$r_i];
+		    for my $checks ([$r1, $p1],
+				    [$r1, $p2],
+				    [$r2, $p1],
+				    [$r2, $p2],
+				   ) {
+			if ($checks->[0] eq $checks->[1]) {
 			    if ($pass == 1) {
-				$in_start{$file} = [$r, [$r1,$r2], [$p1,$p2]];
+				push @{ $from_candidates{$file} }, [$deb_r, [$checks->[0]], [$checks->[1]], [$n,$r_i-1]];
 			    } elsif ($pass == 2) {
-				push @included, [$file, $in_start{$file}, [$r, [$r1,$r2], [$p1,$p2]]];
+				push @{ $to_candidates{$file}   }, [$deb_r, [$checks->[0]], [$checks->[1]], [$n,$r_i-1]];
+				
 			    }
+			    next RECORD;
+			}
+		    }
+		    if (VectorUtil::intersect_lines(split(/,/, $p1),
+						    split(/,/, $p2),
+						    split(/,/, $r1),
+						    split(/,/, $r2),
+						   )) {
+			if ($pass == 1) {
+			    push @{ $from_candidates{$file} }, [$deb_r, [$r1,$r2], [$p1,$p2], [$n,$r_i-1]];
+			} elsif ($pass == 2) {
+			    push @{ $to_candidates{$file}   }, [$deb_r, [$r1,$r2], [$p1,$p2], [$n,$r_i-1]];
 			}
 		    }
 		}
 	    }
+	}
+    }
+
+    for my $file (keys %from_candidates) {
+	my $from_candidates = $from_candidates{$file};
+	my $to_candidates   = $to_candidates{$file};
+	next if !$to_candidates;
+	my($from, $to);
+	my $from_i = -1;
+	my $to_i = -1;
+	while () {
+	    last if $from_i >= $#$from_candidates && $to_i >= $#$to_candidates;
+	    if ($from_i >= $#$from_candidates) {
+		$to_i++;
+	    } elsif ($to_i >= $#$to_candidates) {
+		$from_i++;
+	    } elsif ($from_candidates->[$from_i+1][3][0] < $to_candidates->[$to_i+1][3][0] ||
+		     ($from_candidates->[$from_i+1][3][0] == $to_candidates->[$to_i+1][3][0] &&
+		      $from_candidates->[$from_i+1][3][1] < $to_candidates->[$to_i+1][3][1])
+		    ) {
+		$from_i++;
+	    } else {
+		$to_i++;
+	    }
+	    if ($from_i > -1) {
+		$from = $from_candidates->[$from_i];
+	    }
+	    if ($to_i > -1) {
+		$to = $to_candidates->[$to_i];
+		last;
+	    }
+	}
+	if ($from && $to) {
+	    push @included, [$file, $from, $to];
 	}
     }
 
