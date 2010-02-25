@@ -1,0 +1,96 @@
+#: title: erkannte Ampelschaltungsregeln
+#:
+#XXX bessere Kategorien (mit Pfeilen, Farben...)
+#
+# Wühlisch/Gärtner
+#   wahrscheinlich abhängig von der Straßenbahn
+#   rot/grün-Zeiten auch irregular
+#   Basis-Zyklus könnte 70s sein, aber um bis zu 20s verkürzt oder verlängert werden
+cycle=irregular	X 14211,11552
+# Modersohn/Simplon
+#   Anforderungsampel
+#   schnelle Reaktion (~2s)
+#   wenig bis mittel genutzt
+cycle=irregular	X 14174,11406
+# Modersohn/Rudolfplatz
+#   XXX Verhältnis ausmessen!
+connected	X 14024,10861 14007,10802
+# Stralauer/Ehrenberg
+#   XXX prüfen, Daten von 1999
+#   note: separate Linksabbiegerampeln
+cycle=70s	X 13596,10722
+red=45s green=25s(constructed)	X; 13496,10763 13596,10722 13678,10685
+red=46s green=24s	X; 13678,10685 13596,10722 13496,10763
+red=59s green=11s(constructed)	X; 13676,10926 13596,10722 *
+# Stralauer/Warschauer
+#   XXX rot/grün-Verhältnis (alle Richtungen): ~70%:~30%
+#   note: separate Linksabbiegerampeln
+time=rush-hour cycle=90s	X 13332,10832
+time=day cycle=70s	X 13332,10832
+time=night cycle=60s	X 13332,10832
+# Skalitzer/Köpenicker
+#   XXX prüfen: 9s grün für Radfahrerampel
+cycle=70s	X 12985,10665
+# Skalitzer/Wrangel
+XXX no data	X 12731,10547
+# Skalitzer/Post
+#   Anforderungsampel
+#   für Radweg nicht relevant (außer erhöhte Vorsicht)
+#   wenig bis mittel genutzt
+cycle=irregular	X 12545,10496
+# Skalitzer/Lausitzer
+#   Anforderungsampel
+#   für Radweg nicht relevant (außer erhöhte Vorsicht)
+#   mittel bis oft genutzt
+#   XXX Zyklus=50s, red=28s, green=22s (wenn angefordert)
+cycle=irregular	X 12274,10436
+# Skalitzer/Oranien
+#   Zyklus wechselt wahrscheinlich, alternierend. Sicher 70s, vermutet 90s.
+#   rot~48s, kann auch 52s sein
+XXX	X 11949,10414
+# Skalitzer/Mariannen
+cycle=70s	X 11671,10402
+red=36s green=24s	X 11949,10414 11671,10402 11443,10394
+# Kottbusser Tor
+#   XXX komplex!!!
+XXX	X 11393,10390
+# Wassertorplatz
+#   Anforderungsampel
+#   wenig genutzt
+XXX no data	X 11130,10326
+# Gitschiner/Prinzen
+cycle=70s	X 10605,10312
+red=39s green=31s	X 10708,10312 10605,10312 10363,10303
+# Gitschiner/Alexandrinnen
+cycle=70s	X 10122,10294
+red=34s green=26s	X 10363,10303 10122,10294 9948,10280
+# Gitschiner/Linden
+#   XXX red/green variiert, red kann auch 38s sein
+cycle=70s	X 9873,10285
+red=42s green=28s	X 9948,10280 9873,10285 9593,10238
+# Zossener/Waterloo-Ufer
+cycle=70s(guessed)	X 9865,10227
+# Zossener/Blücher
+#   XXX sonntags (auch nachts?) womöglich nur 50s
+cycle=70s	X 9827,10051
+# Gneisenau/Zossener
+time=rush-hour cycle=70s	X 9790,9528
+time=day cycle=60s	X 9790,9528
+time=sunday cycle=50s	X 9790,9528
+time=day red=43s green=17s(constructed)	X 9820,9718 9790,9528 9767,9386
+# Zossener/Bergmann
+cycle=70s	X 9753,9252
+red=49s green=21s(constructed)	X 9759,9307 9753,9252 *
+red=36s green=34s	X 9689,9266 9753,9252 9793,9241
+red=46s green=24s(constructed)	X 9793,9241 9753,9252 9689,9266
+# Bergmann/Nostitz
+#   Anforderungsampel
+#   viel genutzt
+#   schnelle Reaktion (~2s)
+#   "Schutzzeit" für die Fahrbahn: ~20s
+#   XXX früher war die Rotphase deutlich länger, aber die Ampel ist jetzt neu
+cycle=irregular	X 9489,9309
+red=23s	X 9489,9309
+# Mehringdamm/Bergmann
+#   XXX cycle=70s,80s, allerdings müssen die Zeiten genauer ermittelt werden (teilweise auch 80s abends um 20Uhr?!)
+	X 9248,9350
