@@ -147,7 +147,25 @@ if (!$cycle) {require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: "
     }
 }
 
-for my $key (keys %ampel_data_with_cycles) {
+my @sorted_ampel_data_with_cycles_keys = do {
+    no warnings 'numeric';
+    map { $_->[0] }
+	sort {
+	    my $res = $a->[1] <=> $b->[1];
+	    if ($res == 0) {
+		$res = $a->[2] <=> $b->[2];
+		if ($res == 0) {
+		    $res = $a->[3] cmp $b->[3];
+		}
+	    }
+	    $res;
+	} map {
+	    my @f = split /\|/;
+	    [ $_, split(/,/, $f[0]), @f[1..$#f] ];
+	} keys %ampel_data_with_cycles;
+};
+    
+for my $key (@sorted_ampel_data_with_cycles_keys) {
     my $header_printed;
     for my $ae_or_cd (@{ $ampel_data_with_cycles{$key} }) {
 	if ($ae_or_cd->can('as_string')) {
