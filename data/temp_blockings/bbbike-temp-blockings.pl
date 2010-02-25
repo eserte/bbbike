@@ -13278,12 +13278,13 @@ userdel	1::inwork 56358,-6276 56333,-6677 56312,-6895 56416,-7090
 EOF
      },
      { from  => 1234122499, # 2009-02-08 20:48
-       until => 1235861999, # 2009-02-28 23:59
-       text  => 'Weinmeisterstr. (Mitte) in Richtung Alexanderplatz gesperrt (bis Ende 02.2009)',
+       until => undef, # 2009-02-28 23:59 1235861999
+       text  => 'Weinmeisterstr. (Mitte) in Richtung Alexanderplatz gesperrt',
        type  => 'gesperrt',
        source_id => 'IM_011184',
        data  => <<EOF,
-userdel	1::inwork 10350,13376 10527,13257
+#: last_checked: 2010-02-25
+userdel	q4::inwork; 10350,13376 10527,13257
 EOF
      },
      { from  => 1238347304, # 2009-03-29 19:21

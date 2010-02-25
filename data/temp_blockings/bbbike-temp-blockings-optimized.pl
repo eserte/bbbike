@@ -498,7 +498,17 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'IM_011184',
+         'until' => undef,
+         'text' => 'Weinmeisterstr. (Mitte) in Richtung Alexanderplatz gesperrt',
+         'from' => 1234122499,
+         'id' => 1567,
+         'data' => '#: last_checked: 2010-02-25
+userdel	q4::inwork; 10350,13376 10527,13257
+',
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
