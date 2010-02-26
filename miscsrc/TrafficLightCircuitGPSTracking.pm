@@ -298,7 +298,7 @@ sub tk_link_traffic_light {
     for(; $line_i <= $#lines; $line_i++) {
 	if ($lines[$line_i] =~ m{^(# Anmerkungen:$|#WPTFILE:\s+)}) {
 	    die "Cannot find wpt $wpt?!";
-	} elsif ($lines[$line_i] =~ m{^#WPT:\s+\Q$wpt}) {
+	} elsif ($lines[$line_i] =~ m{^#WPT:\s+\Q$wpt\E\t}) {
 	    # XXX should use our toplevel!
 	    if ($main::top->messageBox(-icon => "question",
 				       -title => 'Link?',
@@ -345,7 +345,7 @@ sub link_traffic_light {
     for(; $line_i <= $#lines; $line_i++) {
 	if ($lines[$line_i] =~ m{^(# Anmerkungen:$|#WPTFILE:\s+)}) {
 	    die "Cannot find wpt $wpt?!";
-	} elsif ($lines[$line_i] =~ m{^#WPT:\s+\Q$wpt}) {
+	} elsif ($lines[$line_i] =~ m{^#WPT:\s+\Q$wpt\E\t}) {
 	    my $line = $coords;
 
 	    # color
