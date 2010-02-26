@@ -2,9 +2,12 @@
 # -*- perl -*-
 
 #
-# $Id: radzeit.t,v 1.7 2009/04/04 12:31:35 eserte Exp $
 # Author: Slaven Rezic
 #
+
+# This script is currently misnamed, as it checks data download from
+# the live server, not specifically from the (non-existent) radzeit
+# server
 
 use strict;
 use FindBin;
@@ -33,7 +36,8 @@ use Strassen::Core;
 my $bbbike_url               = "http://bbbike.de";
 my $bbbike_data_url          = "http://bbbike.de/BBBike/data";
 my $bbbike_data_fallback_url = "http://bbbike.radzeit.de/BBBike/data";
-my $bbbike_data_local_url    = "http://radzeit/BBBike/data";
+#my $bbbike_data_local_url    = "http://radzeit/BBBike/data";
+my $bbbike_data_local_url    = "http://bbbike.hosteurope/BBBike/data";
 
 my @urls;
 if ($ENV{BBBIKE_TEST_HTMLDIR}) {
