@@ -193,9 +193,10 @@ for my $key (@sorted_ampel_data_with_cycles_keys) {
 		    $green_percent = int($green/$cycle*100);
 		}
 	    }
-	    print "  red:$red" . (defined $red_percent ? " ($red_percent%)" : "") .
-		" green:$green" . (defined $green_percent ? " ($green_percent%)" : "") .
-		    " cycle:$cycle\n";
+	    printf "  cycle:%-2s | red:%-2s %-5s | green:%-2s %-5s\n",
+		$cycle,
+		    $red, (defined $red_percent ? "($red_percent%)" : ""),
+			$green, (defined $green_percent ? "($green_percent%)" : "");
 	}
     }
     print "-"x70, "\n";
