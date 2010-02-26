@@ -369,7 +369,7 @@ Mo,  2.11.1998
 10198,9405    Baerwaldstr/Gneisenaustr.          S->N                 11:50:16
 10713,9260    Südstern/Lilienthalstr.            W->O                 11:51:28
 10713,9260    Südstern/Lilienthalstr.            S->N       11:51:37  11:51:45
-11089,9751    Grimmstr/Dieffenbachstr.           S->N   50  11:53:32  11:53:07
+11141,9732    Grimmstr/Dieffenbachstr.           S->N   50  11:53:32  11:53:07
 11023,9597    Grimmstr/Urbanstr.                 S->N       11:53:38
 
 # Punkt	      Kreuzung                           Dir    Zyk grün      rot
@@ -398,7 +398,7 @@ Fr,  6.11.1998
 10713,9260    Südstern/Lilienthalstr (Auto)      S->N       12:10:37
 11023,9597    Urbanstr/Grimmstr (Rad)            S->N       12:12:09
 11023,9597    Urbanstr/Grimmstr (Auto)           S->N       12:12:11
-11089,9751    Grimmstr/Dieffenbachstr            S->N       12:12:42
+11141,9732    Grimmstr/Dieffenbachstr            S->N       12:12:42
 
 # Punkt	      Kreuzung                           Dir    Zyk grün      rot
 # ----------------------------------------------------------------------------
@@ -413,7 +413,7 @@ Di, 10.11.1998
 10713,9260    Südstern/Lilienthalstr. (Rad)      W->O       12:33:56  12:34:23
 11023,9597    Grimmstr/Urbanstr. (Rad)           S->N       12:36:28
 11023,9597    Grimmstr/Urbanstr. (Auto)          S->N       12:36:30
-11089,9751    Grimmstr/Dieffenbachstr.           S->N       12:36:53
+11141,9732    Grimmstr/Dieffenbachstr.           S->N       12:36:53
 
 # Punkt	      Kreuzung                           Dir    Zyk grün      rot
 # ----------------------------------------------------------------------------
@@ -476,7 +476,7 @@ Mi, 11.11.1998
 10713,9260    Lilienthalstr/Südstern (Rad)       S->N       12:03:37
 10713,9260    Lilienthalstr/Südstern (Auto)      S->N       12:03:39  12:02:46
 11023,9597    Urbanstr/Grimmstr (Rad)            S->N       12:05:48
-11089,9751    Grimmstr/Dieffenbachstr            S->N       12:05:13  12:05:38
+11141,9732    Grimmstr/Dieffenbachstr            S->N       12:05:13  12:05:38
 
 # Punkt	      Kreuzung                           Dir    Zyk grün      rot
 # ----------------------------------------------------------------------------
@@ -2112,6 +2112,108 @@ Do, 25.02.2010
 15248,11880   Gürtelstr./Scharnweberstr.         W->O       16:28:20
 #WPT: 314	25-FEB-10 16:28:33	52.5119444444444	13.4748888888889	buoy_white_red
 15248,11880   Gürtelstr./Scharnweberstr.         W->O                 16:28:33
+
+#WPTFILE: /home/e/eserte/src/bbbike/misc/gps_data/ampelschaltung/20100226.wpt:track1
+# Punkt       Kreuzung                           Dir    Zyk grün      rot
+# ----------------------------------------------------------------------------
+Fr, 26.02.2010
+#WPT: 315	26-FEB-10 8:54:19	52.5038055555556	13.4574166666667	buoy_white_red
+14024,10861                                      N->S                 08:54:19
+#WPT: 316	26-FEB-10 8:56:19	52.50275	13.4514166666667	buoy_white_green
+13596,10722   Stralauer Allee/Ehrenbergstr.      N->S       08:56:19
+#WPT: 317	26-FEB-10 8:56:30	52.5022777777778	13.4509722222222	buoy_white_red
+13596,10722   Stralauer Allee/Ehrenbergstr.      N->S                 08:56:30
+#WPT: 318	26-FEB-10 8:57:50	52.5019166666667	13.4508055555556	buoy_white_green
+13596,10722   Stralauer Allee/Ehrenbergstr.      N->S       08:57:50
+#WPT: 319	26-FEB-10 8:58:32	52.5025555555556	13.4475555555556	buoy_white_green
+13332,10832   Am Oberbaum/Stralauer Allee/Warsc  O->W       08:58:32
+#WPT: 320	26-FEB-10 8:59:58	52.5011666666667	13.4431666666667	buoy_white_green
+12985,10665   Skalitzer Str./Oberbaumstr./Schle  O->W       08:59:58
+#WPT: 321 R	26-FEB-10 9:01:20	52.5005	13.4378055555556	buoy_white_green
+12731,10547   Skalitzer Str./Lübbener Str (Rad)  O->W       09:01:20
+#WPT: 321R2	26-FEB-10 9:03:57	52.4994166666667	13.4268611111111	buoy_white_green
+11949,10414   Skalitzer Str./Oranienstr (Rad 2)  O->W       09:03:57
+#WPT: 321	26-FEB-10 9:04:37	52.4993055555556	13.4240277777778	buoy_white_red
+11671,10402   Skalitzer Str./Mariannenstr.       O->W                 09:04:37
+#WPT: 322	26-FEB-10 9:05:13	52.49925	13.4226111111111	buoy_white_green
+11671,10402   Skalitzer Str./Mariannenstr.       O->W       09:05:13
+#WPT: 323	26-FEB-10 9:06:38	52.4983333333333	13.4216111111111	buoy_white_green
+11616,10288   Reichenberger Str./Mariannenstr.   N->S       09:06:38
+#WPT: 324	26-FEB-10 9:07:13	52.4969166666667	13.4204166666667	buoy_white_green
+11512,10105   Kottbusser Str./Mariannenstr./Pau  NO->W      09:07:13
+#WPT: 325	26-FEB-10 9:10:25	52.4923333333333	13.4128055555556	buoy_white_green
+11023,9597    Körtestr./Urbanstr./Grimmstr.      N->S       09:10:25
+#WPT: 326	26-FEB-10 9:11:28	52.4903333333333	13.4095277777778	buoy_white_green
+10713,9260    Lilienthalstr./Südstern/Körtestr.  N->S       09:11:28
+#WPT: 327	26-FEB-10 9:11:41	52.4899444444444	13.4086666666667	buoy_white_red
+10713,9260    Lilienthalstr./Südstern/Körtestr.  N->S                 09:11:41
+#WPT: 328	26-FEB-10 9:12:28	52.4893888888889	13.4080833333333	buoy_white_green
+10713,9260    Lilienthalstr./Südstern/Körtestr.  N->S       09:12:28
+#WPT: 329	26-FEB-10 13:26:45	52.4833611111111	13.3779444444444	buoy_white_green
+8616,8605     Boelckestr./Bayernring             O->W       13:26:45
+#WPT: 330	26-FEB-10 13:27:49	52.4802777777778	13.3771388888889	buoy_white_red
+8625,8174     Loewenhardtdamm/Boelckestr.        N->S                 13:27:49
+#WPT: 331	26-FEB-10 13:28:24	52.4798055555556	13.3768611111111	buoy_white_green
+8625,8174     Loewenhardtdamm/Boelckestr.        N->S       13:28:24
+#WPT: 332	26-FEB-10 13:28:50	52.4781944444444	13.3766666666667	buoy_white_green
+8642,7876     Werner-Voß-Damm/Boelckestr.        N->S       13:28:50
+#WPT: 333	26-FEB-10 13:29:04	52.4772777777778	13.37675	buoy_white_red
+8642,7876     Werner-Voß-Damm/Boelckestr.        N->S                 13:29:04
+
+#WPTFILE: /home/e/eserte/src/bbbike/misc/gps_data/ampelschaltung/20100226.wpt:track2
+# Punkt       Kreuzung                           Dir    Zyk grün      rot
+# ----------------------------------------------------------------------------
+Fr, 26.02.2010
+#WPT: 334	26-FEB-10 14:14:27	52.4763055555556	13.3759722222222	buoy_white_red
+8642,7876     Werner-Voß-Damm/Boelckestr.        SW->NO               14:14:27
+#WPT: 335	26-FEB-10 14:15:06	52.47675	13.3767777777778	buoy_white_green
+8642,7876     Werner-Voß-Damm/Boelckestr.        SW->NO     14:15:06
+#WPT: 336	26-FEB-10 14:16:57	52.4821111111111	13.3806111111111	buoy_white_green
+8919,8508     Manfred-von-Richthofen-Str./Bayer  S->N       14:16:57
+#WPT: 337	26-FEB-10 14:18:19	52.4847777777778	13.3821666666667	buoy_white_green
+8982,8781     Dudenstr./Methfesselstr./Mussehls  SW->NO     14:18:19
+#WPT: 338	26-FEB-10 19:27:00	52.4900277777778	13.3860555555556	buoy_white_green
+9248,9350     Mehringdamm/Kreuzbergstr./Bergman  W->O       19:27:00
+#WPT: 339	26-FEB-10 19:27:36	52.4899722222222	13.3883888888889	buoy_white_green
+9489,9309                                        W->O       19:27:36
+#WPT: 340	26-FEB-10 19:28:56	52.4892222222222	13.3932777777778	buoy_white_green
+9753,9252     Bergmannstr./Zossener Str.         W->O       19:28:56
+#WPT: 341	26-FEB-10 19:31:51	52.4888888888889	13.4070277777778	buoy_white_green
+10713,9260    Lilienthalstr./Südstern/Körtestr.  W->O       19:31:51
+#WPT: 342	26-FEB-10 19:33:40	52.4916111111111	13.4131944444444	buoy_white_red
+11075,9576    Urbanstr./Grimmstr./Fichtestr.     S->N                 19:33:40
+#WPT: 343	26-FEB-10 19:33:53	52.4921666666667	13.4136111111111	buoy_white_red
+11141,9732    Grimmstr./Dieffenbachstr.          S->N                 19:33:53
+#WPT: 344	26-FEB-10 19:34:20	52.4930833333333	13.4139722222222	buoy_white_green
+11141,9732    Grimmstr./Dieffenbachstr.          S->N       19:34:20
+#WPT: 345	26-FEB-10 19:37:19	52.4955277777778	13.4199444444444	buoy_white_green
+11543,10015   Kottbusser Brücke/Kottbusser Damm  W->O       19:37:19
+#WPT: 346	26-FEB-10 19:37:41	52.4961944444444	13.4200833333333	buoy_white_green
+11512,10105   Kottbusser Str./Mariannenstr./Pau  S->N       19:37:41
+#WPT: 347	26-FEB-10 19:38:22	52.4978333333333	13.4215	buoy_white_green
+11616,10288   Reichenberger Str./Mariannenstr.   S->N       19:38:22
+#WPT: 348	26-FEB-10 19:40:04	52.4990277777778	13.4257777777778	buoy_white_green
+11949,10414   Skalitzer Str./Oranienstr./Manteu  W->O       19:40:04
+#WPT: 349 R2	26-FEB-10 19:40:12	52.4991111111111	13.4261111111111	buoy_white_red
+11949,10414   Skalitzer Str./Oranienstr (Rad 2)  W->O                 19:40:12
+#WPT: 349	26-FEB-10 19:41:17	52.499	13.4266944444444	buoy_white_green
+11949,10414   Skalitzer Str./Oranienstr (Rad 2)  W->O       19:41:17
+#WPT: 350  R	26-FEB-10 19:45:08	52.5008333333333	13.442	buoy_white_green
+13028,10629   Oberbaumstr./Schlesische Str./Opp  W->O       19:45:08
+#WPT: 350	26-FEB-10 19:46:12	52.50175	13.4456666666667	buoy_white_red
+13332,10832   Am Oberbaum/Stralauer Allee/Warsc  S->N                 19:46:12
+#WPT: 351  R	26-FEB-10 19:47:16	52.5025277777778	13.4466666666667	buoy_white_green
+13332,10832   Am Oberbaum/Stralauer Allee/Warsc  S->N       19:47:16
+#WPT: 351	26-FEB-10 19:48:00	52.5041666666667	13.4480833333333	buoy_white_red
+13454,11119                                      S->N                 19:48:00
+#WPT: 352	26-FEB-10 19:48:28	52.5049166666667	13.4486666666667	buoy_white_green
+13454,11119                                      S->N       19:48:28
+#WPT: 353	26-FEB-10 19:48:53	52.5059166666667	13.4491944444444	buoy_white_red
+13541,11355   Warschauer Str./Helsingforser Str  S->N                 19:48:53
+#WPT: 354	26-FEB-10 19:49:27	52.5070833333333	13.4499722222222	buoy_white_green
+13541,11355   Warschauer Str./Helsingforser Str  S->N       19:49:27
+#WPT: 355	26-FEB-10 19:51:09	52.5074166666667	13.4562222222222	buoy_white_red
+14139,11269   Revaler Str./Modersohnstr.         W->O                 19:51:09
 
 # Anmerkungen:
 #  Kreuzung:

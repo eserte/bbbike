@@ -12,11 +12,25 @@ cycle=irregular	X 14211,11552
 #   schnelle Reaktion (~2s)
 #   wenig bis mittel genutzt
 cycle=irregular	X 14174,11406
+# Modersohn/Revaler
+#   "Nacht" ist bereits um 20:15
+#   "Tag" ist noch um 19:30
+#   Der Zyklus kann um +/-2s variieren
+time=night cycle=70s	X 14139,11269
+time=* cycle=90s	X 14139,11269
+time=night red=52s green=18s	X 13970,11366 14139,11269 14211,11229
+time=* red=46s green=44s	X 14102,11133 14139,11269 14174,11406
 # Modersohn/Rudolfplatz
 #   XXX Verh‰ltnis ausmessen!
-connected	X 14024,10861 14007,10802
+XXX connected	X 14024,10861 14007,10802
+# Stralauer/Modersohn
+#   Zyklus kˆnnte 70s oder 90s sein (Tag/Nacht?)
+#   note: separate Linksabbiegerampeln
+#   Anforderung f¸r Radfahrerlinksabbiegeampel
+XXX no data	X 13919,10583
 # Stralauer/Ehrenberg
 #   XXX pr¸fen, Daten von 1999
+#   XXX Zyhlus kann auch 90s sein (rush-hour?)
 #   note: separate Linksabbiegerampeln
 cycle=70s	X 13596,10722
 red=45s green=25s(constructed)	X; 13496,10763 13596,10722 13678,10685
@@ -26,7 +40,7 @@ red=59s green=11s(constructed)	X; 13676,10926 13596,10722 *
 #   XXX rot/gr¸n-Verh‰ltnis (alle Richtungen): ~70%:~30%
 #   note: separate Linksabbiegerampeln
 time=rush-hour cycle=90s	X 13332,10832
-time=day cycle=70s	X 13332,10832
+time=* cycle=70s	X 13332,10832
 time=night cycle=60s	X 13332,10832
 # Skalitzer/Kˆpenicker
 #   XXX pr¸fen: 9s gr¸n f¸r Radfahrerampel
@@ -75,9 +89,9 @@ cycle=70s(guessed)	X 9865,10227
 cycle=70s	X 9827,10051
 # Gneisenau/Zossener
 time=rush-hour cycle=70s	X 9790,9528
-time=day cycle=60s	X 9790,9528
+time=* cycle=60s	X 9790,9528
 time=sunday cycle=50s	X 9790,9528
-time=day red=43s green=17s(constructed)	X 9820,9718 9790,9528 9767,9386
+time=* red=43s green=17s(constructed)	X 9820,9718 9790,9528 9767,9386
 # Zossener/Bergmann
 cycle=70s	X 9753,9252
 red=49s green=21s(constructed)	X 9759,9307 9753,9252 *
@@ -94,3 +108,55 @@ red=23s	X 9489,9309
 # Mehringdamm/Bergmann
 #   XXX cycle=70s,80s, allerdings m¸ssen die Zeiten genauer ermittelt werden (teilweise auch 80s abends um 20Uhr?!)
 	X 9248,9350
+# Kottbuser Str/Mariannenstr
+time=rush-hour cycle=80s	X 11512,10105
+time=* cycle=70s	X 11512,10105
+time=rush-hour red=55s green=25s	X 11616,10288 11512,10105 11464,10102
+time=* red=54s green=16s	X 11616,10288 11512,10105 11464,10102
+# XXX Verh‰ltnis?
+green..green=+30s	X 11512,10105 11543,10015
+# Kottbusser Br¸cke/Planufer
+XXX no data	X 11543,10015
+# Grimm/Dieffenbachstr
+cycle=50s	X 11089,9751
+red=40s green=10s	X 11163,9903 11089,9751 11023,9597
+# Grimm/Dieffenbachstr
+cycle=50s	X 11141,9732
+red=27s green=23s	X 11110,9661 11141,9732 11200,9889
+# Grimm/Urban
+#   XXX Rad/Auto gleich lange Rot/Gr¸n-Phasen, aber versetzt
+time=night cycle=50s	X 11023,9597
+time=* cycle=70s	X 11023,9597
+time=night red=39s green=11s	X 11089,9751 11023,9597 11004,9554
+time=* red=52s green=18s	X 11089,9751 11023,9597 11004,9554
+# Kˆrte/S¸dstern
+time=rush-hour cycle=70s	X 10713,9260
+time=* cycle=60s	X 10713,9260
+time=night cycle=50s	X 10713,9260
+time=rush-hour red=46s green=24s	X 10747,9326 10713,9260 10705,9234
+time=* red=47s green=13s	X 10747,9326 10713,9260 10705,9234
+time=hight red=40s green=10s	X 10747,9326 10713,9260 10705,9234
+# Bergmann/Friesen
+#   Ost->West nur Radfahrer
+#   XXX nachts wahrscheinlich nur 50s
+cycle=70s(guessed)	X 9793,9241
+# XXX Verh‰ltnis zur Radfahrerampel W->O!
+green..green=+12s	X 9753,9252 9793,9241
+# XXX Verh‰ltnis bestimmen
+XXX connected	X 9793,9241 9753,9252
+# Dudenstr/Katzbach
+cycle=70s	X 8594,8777
+red=46s green=24s	X 8598,9074 8594,8777 8616,8605
+red=42s green=28s	X 8763,8780 8594,8777 8472,8776
+red=43s green=27s	X 8472,8776 8594,8777 8763,8780
+# Boelcke/Bayernring
+cycle=70s	X 8616,8605
+red=38s green=32s	X 8666,8453 8616,8605 8594,8777
+# Boelcke/Loewenhardtdamm
+cycle=50s	X 8625,8174
+red=35s green=15s	X 8671,8307 8625,8174 8620,8095
+red=35s green=15s	X 8620,8095 8625,8174 8671,8307
+# Boelcke/Werner-Voﬂ-Damm
+cycle=50s	X 8642,7876
+red=36s green=14s	X 8626,7936 8642,7876 8690,7717
+red=39s green=11s	X 8553,7795 8642,7876 8731,7956
