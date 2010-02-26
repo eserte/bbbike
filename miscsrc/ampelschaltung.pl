@@ -35,6 +35,7 @@ my $a1 = 1;
 my $a2 = 1;
 my $table = 0;
 my $do_verkehrszeit = 1;
+my $bbd;
 
 GetOptions("file=s"           => \$file,
 	   "speed=i"          => \$speed,
@@ -45,6 +46,7 @@ GetOptions("file=s"           => \$file,
 	   "a2!"              => \$a2, # entspricht Ampelschaltung2
 	   "table!"           => \$table,
 	   "verkehrszeit!"    => \$do_verkehrszeit,
+	   "bbd=s"            => \$bbd,
 	  );
 
 if ($old_ampelschaltung && defined $file) { # XXX obsolet, kann gelöscht werden
@@ -136,6 +138,8 @@ if ($old_ampelschaltung && defined $file) { # XXX obsolet, kann gelöscht werden
 	}
     }
 
+} elsif ($bbd) {
+    process_bbd($bbd);
 } else {
 
     my($gruen, $rot) = (shift, shift);
@@ -238,5 +242,30 @@ sub average_lost {
     %res;
 }
 
+# Example usage:
+#  ./miscsrc/ampelschaltung.pl -speed 25 -bbd misc/ampelschaltung_rules.bbd > /tmp/l.bbd
+sub process_bbd {
+    my $file = shift;
+    require Strassen::Core;
+    my $s = Strassen->new($file);
+    my $new_s = Strassen->new;
+    while() {
+	my $r = $s->next;
+	last if !@{ $r->[Strassen::COORDS()] };
+	if ($r->[Strassen::NAME()] =~ m{red=(\d+)s(?:\(.*?\))? green=(\d+)s(?:\(.*?\))?}) {
+	    my %lost_res = Ampelschaltung::lost(-rot => $1, -gruen => $2,
+						-geschwindigkeit => $speed,
+						-beschleunigung => $a,
+					       );
+	    $new_s->push(["lost=" . sprintf("%ds", $lost_res{-zeit}) . " $r->[Strassen::NAME()]", $r->[Strassen::COORDS()], $r->[Strassen::CAT()]]);
+	}
+    }
+    print <<EOF;
+# Speed: $speed km/h
+# Accel: $a m/s2
+#
+EOF
+    $new_s->write("-");
+}
 
 __END__
