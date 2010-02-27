@@ -228,6 +228,21 @@ sub parse_street_type_nr {
     } elsif ($strname =~ /berlin.*barnim.*oderbruch/i) {
 	$type = 'BBO';
 	$image = 'BBO.gif';
+    } elsif ($strname =~ /Route Potsdam Nordost/i) {
+	$type = 'Blau';
+	$image = 'potsdamer_radrouten_blau.png';
+    } elsif ($strname =~ /Route Potsdam Nord\b/i) {
+	$type = 'Rot';
+	$image = 'potsdamer_radrouten_rot.png';
+    } elsif ($strname =~ /Route Alter Fritz/i) {
+	$type = 'AF';
+	$image = 'alter_fritz.png';
+    } elsif ($strname =~ /Route Sanssouci/i) {
+	$type = 'SS';
+	$image = 'route_sanssouci.png';
+    } elsif ($strname =~ /Griebnitzsee-Route/i) {
+	$type = 'GS';
+	$image = 'route_griebnitzsee.png';
     }
     if (defined $type) {
 	$do_round = 1;
