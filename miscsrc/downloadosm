@@ -281,6 +281,7 @@ sub download_osm_tile {
     my($x,$y,$xend,$yend, $reload) = @_;
     my $url = "$OSM_API_URL/map?bbox=$x,$y,$xend,$yend";
     my $dest = "download_$x,$y,$xend,$yend.osm";
+
     if ($do_report) {
 	if (-s "$dest.bz2") {
 	    print "$dest.bz2\t$url\t1\n";
@@ -344,6 +345,9 @@ sub download_osm_tile {
 
 {
     package FixPoint;
+    use constant FIXPOINTSDOTS => 2;
+
+
     use overload
 	'+'  => 'add',
 	'0+' => 'numify',
@@ -362,7 +366,19 @@ sub download_osm_tile {
     }
     sub numify {
 	my($self) = @_;
-	$self->[0] / 10**$self->[1];
+	my $result = $self->[0] / 10**$self->[1];
+
+        my $padding = 1;
+
+        if ($padding) {
+	   $result .= '.' if $result !~ /\./;
+	   $result =~ /\.(\d*)$/;
+           for(my $i = length($1); $i < FIXPOINTSDOTS; $i++) {
+		$result .= '0';
+           }
+        }
+
+	return $result;
     }
 }
 
