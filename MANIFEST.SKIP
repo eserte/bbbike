@@ -105,6 +105,9 @@ cgi/bbbike-radzeit.cgi.config$
 cgi/bbbike-biokovo.cgi.config$
 cgi/bbbike-debian.cgi.config$
 cgi/bbbike-osm.cgi.config$
+cgi/bbbike-osm.cgi$
+cgi/bbbike-hosteurope.cgi.config$
+cgi/bbbike2-hosteurope.cgi.config$
 cgi/bbbike2-radzeit.cgi.config$
 cgi/bbbike2.cgi.config$
 cgi/bbbike-cs.cgi.config$
@@ -125,6 +128,7 @@ data/old/
 data/new/
 data/oldold/
 data/add_str$
+data/add_str_potsdam$
 data/add_plaetze$
 data/str_cont_ausnahme$
 data/inaccessible_strassen$
@@ -152,12 +156,15 @@ data/GNUmakefile$
 data/wasserstrassen-lowres$
 data_zuerich_ch/
 ^data_[^/]+_osm.*/
+doc/implementation_log.txt$
 ext/.*/blib/
 ext/.*/pm_to_blib$
 ext/.*/.*\.inl$
 ext/.*/_Inline/
 ext/Strassen-Inline/Inline\.bs
 ext/Strassen-Inline/heap\.o
+html/.*\.tpl\.html$
+html/.*\.tpl\.html$
 images/ampel_time.gif
 images/ampel_time.xpm
 images/baum.xbm
