@@ -372,57 +372,58 @@ if (!$experiments{'polar_coord_hack'}) {
 	    or die "Cannot remove $o/Karte/Polar.pm: $!";
     }
 }
+if ($experiments{'polar_coord_hack'}) {
+    require Math::Trig;
+    my $lat;
+    if ($center) {
+	(undef, $lat) = split /,/, $center;
+    } else {
+	my($min_lat, $max_lat);
+	# XXX taken from BBBikeOsmUtil.pm
+	my $osm_download_file_qr = qr{/download_(-?\d+\.\d+),(-?\d+\.\d+),(-?\d+\.\d+),(-?\d+\.\d+)\.osm(?:\.gz|\.bz2)?$};
+	# XXX it would be better to read the bboxes of all XML files
+	for my $osm_file (@osm_files) {
+	    if ($osm_file =~ $osm_download_file_qr) {
+		if (!defined $min_lat || $2 < $min_lat) {
+		    $min_lat = $2;
+		}
+		if (!defined $max_lat || $4 > $max_lat) {
+		    $max_lat = $4;
+		}
+	    }
+	}
+	if (defined $min_lat && defined $max_lat) {
+	    $lat = ($max_lat - $min_lat)/2 + $min_lat;
+	}
+    }
+    if (!defined $lat) {
+	die "Cannot apply polar_coord_hack experiment, because the center could not be determined";
+	# XXX should read the bboxes of all files
+    }
+    my $newx1 = cos(Math::Trig::deg2rad($lat))*111_000; # XXX 111km is rough for one degree
+
+    mkdir $o if !-d $o; # does not exist yet, see below the OUTPUT section
+    mkdir "$o/Karte" if !-d "$o/Karte";
+    open my $ifh, "<", "$FindBin::RealBin/../Karte/Polar.pm"
+	or die "Cannot open $FindBin::RealBin/../Karte/Polar.pm: $!";
+    open my $ofh, ">", "$o/Karte/Polar.pm~"
+	or die "Cannot write to $o/Karte/Polar.pm~: $!";
+    print $ofh q{warn "Using corrected Karte::Polar for latitude } . $lat . q{...\n";} . "\n";
+    while(<$ifh>) {
+	s{^(\s*X1\s*=>\s*)[0-9.-]+}{$1$newx1};
+	print $ofh $_;
+    }
+    close $ofh
+	or die "Error while writing to Polar.pm~: $!";
+    rename "$o/Karte/Polar.pm~", "$o/Karte/Polar.pm"
+	or die "Error while renaming Polar.pm~: $!";
+
+    lib->import($o); # so the hacked Karte::Polar is in front of @INC
+}
+
 if ($map) {
     if ($map ne 'bbbike') {
 	die "Only -map bbbike is supported.\n";
-    }
-    if ($experiments{'polar_coord_hack'}) {
-	require Math::Trig;
-	my $lat;
-	if ($center) {
-	    (undef, $lat) = split /,/, $center;
-	} else {
-	    my($min_lat, $max_lat);
-	    # XXX taken from BBBikeOsmUtil.pm
-	    my $osm_download_file_qr = qr{/download_(-?\d+\.\d+),(-?\d+\.\d+),(-?\d+\.\d+),(-?\d+\.\d+)\.osm(?:\.gz|\.bz2)?$};
-	    # XXX it would be better to read the bboxes of all XML files
-	    for my $osm_file (@osm_files) {
-		if ($osm_file =~ $osm_download_file_qr) {
-		    if (!defined $min_lat || $2 < $min_lat) {
-			$min_lat = $2;
-		    }
-		    if (!defined $max_lat || $4 > $max_lat) {
-			$max_lat = $4;
-		    }
-		}
-	    }
-	    if (defined $min_lat && defined $max_lat) {
-		$lat = ($max_lat - $min_lat)/2 + $min_lat;
-	    }
-	}
-	if (!defined $lat) {
-	    die "Cannot apply polar_coord_hack experiment, because the center could not be determined";
-	    # XXX should read the bboxes of all files
-	}
-	my $newx1 = cos(Math::Trig::deg2rad($lat))*111_000; # XXX 111km is rough for one degree
-
-	mkdir $o if !-d $o; # does not exist yet, see below the OUTPUT section
-	mkdir "$o/Karte" if !-d "$o/Karte";
-	open my $ifh, "<", "$FindBin::RealBin/../Karte/Polar.pm"
-	    or die "Cannot open $FindBin::RealBin/../Karte/Polar.pm: $!";
-	open my $ofh, ">", "$o/Karte/Polar.pm~"
-	    or die "Cannot write to $o/Karte/Polar.pm~: $!";
-	print $ofh q{warn "Using corrected Karte::Polar for latitude } . $lat . q{...\n";} . "\n";
-	while(<$ifh>) {
-	    s{^(\s*X1\s*=>\s*)[0-9.-]+}{$1$newx1};
-	    print $ofh $_;
-	}
-	close $ofh
-	    or die "Error while writing to Polar.pm~: $!";
-	rename "$o/Karte/Polar.pm~", "$o/Karte/Polar.pm"
-	    or die "Error while renaming Polar.pm~: $!";
-
-	lib->import($o); # so the hacked Karte::Polar is in front of @INC
     }
     require Karte::Polar;
     require Karte::Standard;
