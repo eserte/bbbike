@@ -1,4 +1,4 @@
-Asphaltierter Zweirichtungsradweg, südöstliche Straßenseite	RW 26645,163217 26848,164249 27717,165103 27848,165204
+Asphaltierter Zweirichtungsradweg, südöstliche Straßenseite	RW 26645,163217 26848,164249 27363,164755 27717,165103 27848,165204
 Überwiegend asphaltierter Zweirichtungsradweg, südliche Straßenseite	RW 32023,167053 32741,167080 32952,166951 33153,166785 33246,166330 33267,166229
 Asphaltierter Zweirichtungsradweg durch Wald, Laub, unnötig hügelig und kurvig, westliche Straßenseite	RW 33267,166229 33494,165278 33577,164823
 Zweirichtungsradweg	RW 33577,164823 33649,164756 35654,162897 35953,162870 36080,162883 36480,162910 36737,162995
@@ -18,7 +18,7 @@ Baumschulenstr. (Woltersdorf)	RW 33943,5568 34028,6053 34132,6174
 Rudolf-Breitscheid-Str.: Suggestivstreifen	RW -10446,-1947 -10559,-1901 -10678,-1860 -10702,-1851 -10773,-1828 -10973,-1764
 B101: Zweirichtungsradweg auf der östlichen Seite	RW 5943,-2117 5836,-2309 5627,-2671 5394,-3053
 Potsdam - Teltow: enger Zweirichtungsradweg auf der nördlichen Seite	RW8;RW2 -5736,-3629 -5156,-3192 -4885,-3087 -4456,-2968 -3950,-2743 -3650,-2609
-Lichterfelder Allee, Teltow: Radweg vorhanden	RW 3450,543 3417,524 3112,331 2947,220 2459,-109 2331,-228 2215,-328 1974,-440 1696,-571 1453,-746
+Lichterfelder Allee, Teltow: Radweg vorhanden	RW 3450,543 3417,524 3112,331 2947,220 2459,-109 2331,-228 2215,-328 1974,-440 1677,-582 1453,-746
 Lange Brücke, Friedrich-Ebert-Str.: beidseitiger Radweg vorhanden, mäßige Qualität	RW2;RW2 -12431,-2096 -12493,-1896 -12567,-1817 -12659,-1700 -12758,-1654 -12755,-1585 -12773,-1544 -12795,-1499 -12833,-1365 -12839,-1342
 Breite Str., Potsdam: Radweg vorhanden	RW2;RW2 -12758,-1654 -12940,-1625 -13238,-1569 -13375,-1546 -13516,-1517 -13764,-1460 -13879,-1445
 Hreinrich-Mann-Allee: Radweg	RW -12431,-2096 -12318,-2192
@@ -85,7 +85,7 @@ Radweg (?)	RW 39968,3795 40463,4020 41051,4427 41275,5229 41987,5693
 Gorinsee - Schönwalde: Zweirichtungsradweg auf der südl. Seite	RW 14341,30839 12955,30436 12466,30452
 Feinsplit-Radweg	RW 41806,-40762 42075,-40337 42152,-39572 41675,-38268 41687,-38100 41731,-37743
 asphaltierter Radweg auf der nördlichen Seite, enge Stelle an der Bahnüberführung	RW 8303,28478 7546,28255 7365,28253 7125,28106 5939,27781
-Gemeinsamer Geh- und Radweg, Verbundsteinpflaster	RW -150,-1457 61,-2956
+Gemeinsamer Geh- und Radweg, Verbundsteinpflaster	RW -150,-1457 86,-2903
 Gemeinsamer Geh- und Radweg, Verbundsteinpflaster	RW -1853,-2412 -2049,-2165
 Bansin: Zweirichtungsradweg (Verbundsteinpflaster) auf der nördlichen Seite	RW 56175,173875 56327,173853 56381,173849
 Bansin: Zweirichtungsradweg (Verbundsteinpflaster) auf der östlichen Seite	RW 56381,173849 56493,173943 56546,174049
@@ -130,7 +130,7 @@ B1, Zeppelinstr.: teilweise Radweg, teilweise Radspur	RW2;RW2 -14859,-2384 -1506
 Geschwister-Scholl-Str.: Radweg	RW; -14115,-1678 -14151,-1656
 Zehlendorfer Str.: Radweg auf Gehweg	RW 1460,-372 1473,-420 1457,-470 1378,-676 1346,-762
 Oderstr.: Verbundsteinpflasterradweg, teilweise Zweirichtungsradweg, oft wechselnde Seite	RW 595,-310 -425,-935 -882,-1220
-Zehlendorfer Damm: Radweg	RW -1436,-887 -1378,-1022 -1348,-1098 -1503,-1328 -1538,-1502
+Zehlendorfer Damm: Radweg	RW -1436,-887 -1378,-1022 -1348,-1098 -1503,-1328 -1573,-1477
 Geschwister-Scholl-Str.: Radweg auf Gehweg	RW2;RW2 -14909,-1818 -14733,-1812 -14612,-1809
 Thomas-Müntzer-Damm: Radweg (Verbundsteinpflaster)	RW -840,-185 -775,-304 -551,-731 -502,-803
 Am Kanal: Radspur	RW4;RW4 -12317,-1212 -12549,-1277 -12666,-1311
@@ -351,6 +351,9 @@ Verbundsteinpflaster, gemeinsamer Geh- und Radweg	RW2;RW8 26567,-14915 26612,-15
 Beton, gemeinsamer Geh- und Radweg	RW2; 26583,-15677 26455,-16852 26431,-16931
 Beton, Gehweg für Radfahrer freigegeben	RW1; 26431,-16931 26276,-17489 26204,-17794
 	RW2;RW2 17073,21329 17584,21678 17696,21806 17825,21931 18356,22225
+Asphaltierter Radweg	RW 38845,51258 38400,51404 38357,51575 38170,51708 38089,51876
+	RW -1392,41610 -1585,42437
+	RW -1864,43042 -1943,43360 -2602,45078
 	RW 16953,35907 17114,35904 18082,36115 18440,36179 19193,36011
 Industriestr. (Dahlwitz-Hoppegarten): gegenläufiger Radweg, rotes Betonpflaster	RW 25938,11837 26042,11798 26222,11726 26555,11601 26794,11513 26880,11479
 	RW 1596,29362 1631,29260 1748,29003 1805,28879 1838,28808 1896,28681 2015,28414

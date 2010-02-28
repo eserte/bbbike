@@ -978,8 +978,8 @@ EOF
        text  => 'K 6003; (Friedrichswalde-LG-L100 Gollin); OD Reiersdorf Deckenerneuerung Vollsperrung 06.10.2004-15.10.2004 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 24200,72512 25875,71662
-userdel	q4 28132,70222 26843,71276 26511,71453
+userdel	q4 25097,72040 25875,71662
+userdel	q4 28214,70120 27727,70536 26843,71276 26511,71453
 userdel	q4 26511,71453 25875,71662
 EOF
      },
@@ -1887,8 +1887,8 @@ EOF
        text  => 'L 76; (Mahlower Str.); OL Teltow, zw. Ruhlsdorfer u. A.-Saefkow-Str. Kanal- und Straßenbau Vollsperrung 02.05.2005-30.11.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 1453,-746 1550,-761 1709,-953
-userdel	q4 1916,-1090 1709,-953
+userdel	q4 1453,-746 1550,-761 1684,-927
+userdel	q4 1916,-1090 1684,-927
 EOF
      },
      { from  => 1115589537, # 2005-05-08 23:58
@@ -3247,7 +3247,7 @@ EOF
        text  => 'Stahnsdorf, Lindenstraße, Baustelle bis 30.04.2006, Der Verkehr wird an der Baustelle durch eine Lichtzeichenanlage halbseitig vorbeigeführt. ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1 -1668,-1709 -1752,-1823 -1921,-1931 -2049,-2165
+userdel	1 -1668,-1709 -1715,-1767 -1921,-1931 -2049,-2165
 EOF
      },
      { from  => 1132411558, # 2005-11-19 15:45
@@ -4001,7 +4001,7 @@ EOF
        text  => 'L 077 Lindenstr. OD Stahnsdorf, zw. Streuobsthang u. Ruhlsdorfer Str. Geh- und Radwegbau halbseitig gesperrt; Einbahnstraße 03.04.2006-18.08.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1 -2049,-2165 -1921,-1931 -1752,-1823
+userdel	1 -2049,-2165 -1921,-1931 -1715,-1767
 EOF
      },
      { from  => 1144706400, # 2006-04-11 00:00
@@ -6267,7 +6267,7 @@ EOF
        text  => 'K 6003 Friedrichswalde-L100 Gollin zw. Friedrichswalde und Kreisgrenze Straßenbau Vollsperrung 04.09.2006-30.11.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 28975,69975 28132,70222 26843,71276 26511,71453
+userdel	2::inwork 28795,69970 28214,70120 27727,70536 26843,71276 26511,71453
 EOF
      },
      { from  => 1152050400, # 2006-07-05 00:00
@@ -11683,7 +11683,7 @@ EOF
        text  => 'L 794 Ruhlsdorfer Str. OD Teltow. zw. Schenkendorfer Weg und Ruhlsdorfer Platz Kanalarbeiten Vollsperrung 29.05.2008-19.12.2008 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 1222,-1732 1276,-1268
+userdel	q4::inwork 1335,-1472 1370,-1295
 EOF
      },
      { from  => 1214257294, # 2008-06-23 23:41
@@ -13233,7 +13233,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_008991',
        data  => <<EOF,
-userdel	1::inwork 1137,-1989 956,-2890
+userdel	1::inwork 1186,-1973 1182,-2170 1001,-3066
 EOF
      },
      { from  => 1231023600, # 2009-01-04 00:00
@@ -16030,7 +16030,7 @@ EOF
        text  => 'B 096 Schönfließer Str.A OL Bergfelde, zw. Lindenallee und Ahornstr. Kranarbeiten Vollsperrung 19.09.2009-19.09.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 4165,29251 4807,28338
+userdel	q4::inwork 4167,29307 4267,29149 4412,28911 4807,28338
 EOF
      },
      { from  => 1252792800, # 2009-09-13 00:00

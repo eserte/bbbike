@@ -155,6 +155,7 @@ Humboldtstr. (Potsdam): alte Straße wird hier wieder benannt	?::inwork -12771,-1
 Alter Fischweweg: gemeinsamer Geh- und Radweg	?::inwork 30090,5436 30244,6615 30307,6823
 Radwegeverbindung am U-Bhf. Johannisthaler Chaussee, gegenüber Kirschnerweg	? 13869,2658 13807,2863
 #: by: http://www.berlin.de/ba-spandau/presse/archiv/20090918.0810.139251.html
+#: by: http://www.berlin.de/ba-spandau/presse/archiv/20100209.0950.155061.html
 #: next_check: 2010-05-01
 Asphaltierung im Ramingrünzug	?::inwork -3776,14419 -3906,14517 -3941,14603 -4015,14744 -4035,14779
 Radwegbau Welzower Steig	?::inwork 6320,21777 6223,21952 6257,22005 6111,22155 6082,22183 6052,22185 6026,22227 5993,22260 5984,22280 5939,22330 5929,22339
@@ -316,7 +317,7 @@ B87 (Umfahrung Beeskow): Ist die Straße eine Kfz-Straße?	? 66269,-27581 66283,-2
 # Hier scheint nichts mehr zu passieren... : last_checked: 2008-01-25 #: by: Message-ID: <4mfe1bF5vae4U1@uni-berlin.de> Warschauer Str.: Radwegbenutzungspflicht wird aufgehoben	?; 13546,11352 13476,11174 13454,11119 13409,11004 13332,10832
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20060629.1530.43277.html
 #: last_checked: 2009-08-09
-R1: geänderte Ausschilderung steht noch aus	? 22965,4124 23435,4179 23655,4205 23753,4218 23879,4233 24135,4264 24181,4270 25132,4385 25396,4417 25347,4320 25373,4266 25376,4207 25282,3932 25262,3828 25254,3785 25232,3757 25241,3232 25281,3161 25259,3116 25346,2956 25474,2848 25547,2779 25600,2681 25768,2627 25789,2576 25790,2507 25846,2496 25847,2482 25948,2474
+R1: geänderte Ausschilderung steht noch aus	? 23753,4218 23879,4233 24135,4264 24181,4270 25132,4385 25396,4417 25347,4320 25373,4266 25376,4207 25282,3932 25262,3828 25254,3785 25232,3757 25241,3232 25281,3161 25259,3116 25346,2956 25474,2848 25547,2779 25600,2681 25768,2627 25789,2576 25790,2507 25846,2496 25847,2482 25948,2474
 #: next_check: 2006-06-01
 Burgwallgraben: neuer Weg wg. Renaturisierung durch DB - fertig Sommer 2006	? -3609,13492 -3649,13288 -3625,13241 -3550,13122 -3403,13024 -3360,13028 -3332,13054
 #: XXX laut Detlef Hoge:
@@ -341,7 +342,7 @@ Alternative	? 24081,50440 24472,50937
 #: by ^^^
 Popitzweg: Fußgängerzone?	? 1361,14431 1881,14425
 #: last_checked: 2009-08-08
-R1 im Raum Spindlersfeld: zukünftige oder alternative Wegführung?	? 21364,5426 21443,5406 21487,5425 21600,5221 21684,5079 21735,5003 21783,4964 21778,4916 21834,4889 21848,4882 21896,4853 21796,4517
+R1 im Raum Spindlersfeld: zukünftige oder alternative Wegführung?	? 21364,5426 21443,5406 21487,5425 21600,5221 21684,5079 21735,5003 21769,4973 21778,4916 21834,4889 21848,4882 21896,4853 21796,4517
 #: XXX_prog: Verlustzeiten für Wegführungen implementieren (ähnlich wie 3)
 Pappelstr. -> Kastanienallee: hier verliert man durchaus 2 1/2 Minuten bei der Überquerung der Schönhauser!	? 11119,15385 10881,15047 10838,14962
 # Ich glaube, hier passiert nichts: #: by: http://www.agenda21berlin.de/vonwegen/map_tmpvelo.htm vvv Tempelhofer Veloroutenpläne: hmmm, teilweise gibt es hier gar keine Straßen?	? 8934,5095 9025,4871 #: note: laut Marko Preuss kann man hier höchstens Slalom fahren: Tempelhofer Veloroutenpläne: hmmm, teilweise gibt es hier gar keine Straßen?	? 9080,4371 9099,4204 Tempelhofer Veloroutenpläne: Grauwackeweg, Muschelkalkweg, Str. 482: genaue Lage, Qualität?	? 11193,1684 11190,1622 11155,1456 11146,1413 11120,1384 Tempelhofer Veloroutenpläne: Grauwackeweg, Muschelkalkweg, Str. 482: genaue Lage, Qualität?	? 11155,1273 11120,1384 11042,1352 10950,1315 10868,1281 10795,1251 10718,1220 10734,1178 10759,1112
@@ -519,7 +520,6 @@ Stolper Weg: Qualität? Bis wo (vom Europarc aus) ist Autoverkehr vorhanden? Radw
 Albrechts Teerofen - Stopler Weg (ehem. Autobahnbrücke): Qualität?	? -5359,-1298 -5335,-1090
 Arkenberge: wo genau ist die Durchfahrt für Autos gesperrt	? 10370,26352 10308,26376 10112,26349
 Weg am Tegeler Fließ: Durchfahrt möglich? Qualität (wahrscheinlich sandiger Weg?)?	?? 7736,24239 7627,24190 7594,24200 7402,24144 7315,24082 7207,24103 7039,24077 6930,24045 6870,24061 6716,23949 6609,23892
-Georg-Knorr-Str. - Landsberger Allee: existiert ein Zugang, wahrscheinlich Treppen?	? 19183,15019 19151,15007 19175,14968
 Seenpromenade (Groß Glienicke): Qualität des südlichen Abschnitts?	? -9617,5086 -9678,4874
 Röntgental, Buchenallee: Qualität?	?? 17689,27853 17896,28134 18451,29241
 Gamengrund: Qualität (teilweise war es sehr sandig!)? Geht es von der B 158 aus noch weiter in Richtung Norden?	?? 39337,22638 39383,22801 39165,23131 39033,23202 39114,23766 39180,23776 39266,23984 39241,24116 39089,24279 39063,24400 38997,24431 38880,24568 38824,24812 39002,25304 39221,25518 39205,25655 39124,25812 39089,26036 39241,26229 39282,26391 39378,26508 39561,27382 39602,27382 39678,27600 39535,27808 39561,27996 39657,28154 39988,28352 40231,28753 40135,28824 40267,28951 40282,29022 40236,29621 40195,29774 40206,30002 40255,30508 40302,30617 40314,30725 40562,30941 40750,31012 40982,31319 41300,31862 41235,31914 41003,31612 40819,31252 40562,31025 40350,31083 39783,31398
@@ -1666,6 +1666,7 @@ Grammestr.: Qualität zwischen Nonnendammallee und Jugendweg? Einbahnstraße auch 
 #: XXX: Einbahn offen Richtung Westen
 Halskesteig: Qualität? Einbahnstraße auch für Radfahrer gültig?	? 1166,14458 1058,14459
 #: XXX: Einbahn (Teilabschnitt!) offen Richtung Norden
+#: XXX laut burkard.dau Q0 (ohne Angaben), q1 (enge Straße)
 Lenther Steig: Qualität? Einbahnstraße zwischen Goebelstr. und Schuckertdamm auch für Radfahrer gültig?	? 1037,14515 1042,14721 1037,14814 1024,14889
 Am Laubwald: Qualität?	? 981,15490 1078,15524
 Buolstr.: Qualität?	? 559,15342 429,15284 283,15237
@@ -2038,7 +2039,8 @@ Weg zwischen Goerdelersteg und Beusselstr.: existiert auch ein Weg zwischen West
 Bohrauer Pfad: Qualität?	? 20981,4628 20827,4655 20716,4691
 Gartenweg (Kolonie Wendenheide): Qualität? Offizieler Name des Weges? Für Autos gesperrt?	? 20850,4225 20716,4549 20684,4596
 Travemünder Str.: Qualität?	? 8695,16525 8759,16665 8759,16684
-Stockholmer Str.: Qualität?	? 8759,16684 8783,16710 8844,16863
+#: XXX b.zander meint Kopfsteinpflaster,Q3; aber welchen Abschnitt meinte er?
+Stockholmer Str.: Qualität des Abschnitts zwischen Osloer Str. und Gotenburger Str.?	? 8759,16684 8783,16710 8844,16863
 #: XXX: nicht vergessen: auch in brunnels eintragen!
 Fußgängerbrücke: Für Radfahrer befahrbar? Existieren Rampen oder Treppen? Qualität?	? 13192,21697 13046,21734 13008,21783
 Blumenthalstr.: Qualität südlich der Uhlandstr. (fängt auch mit Kopfsteinpflaster an)?	? 9120,20015 9159,19818 9177,19745 9195,19644 9214,19533 9231,19440 9249,19351 9258,19290
@@ -3682,7 +3684,6 @@ Bismarckstr. (Zehlendorf): Qualität?	? 146,2073 243,1820
 Karolinenstr. (Zehlendorf): Qualität?	? 345,1977 444,2008 524,2031
 Kunzendorfstr.: Qualität?	? 815,2310 602,2248 578,2189 585,2129
 Biesestr.: Qualität?	? 585,2129 662,1930
-Rombsweg: Qualität?	? 444,2008 484,1879
 Johannesstr.: Qualität?	? 609,1915 712,1551
 Siepesteig: Qualität?	? 194,1055 115,1043 84,1174 91,1202
 (Siepesteig - Machnower Str.): Qualität? Ist der Weg ausgeschildert? Nachts beleuchtet? Dürfen Radfahrer ihn benutzen?	? 91,1202 43,1233
@@ -4194,8 +4195,6 @@ Neuer Weg: Qualität?	? 23660,5307 23492,5334
 Neuer Weg: Qualität?	? 23469,5340 23427,5349
 Grünfließer Gang: Qualität? Nachts beleuchtet?	? 23696,5529 23681,5565 23675,5810
 Erpeweg: Qualität?	? 23729,5940 23758,5846
-Hirschsprung: Qualität?	? 23837,5978 23874,5870
-Wiesenpromenade: Qualität? Für Autos gesperrt?	? 23675,5810 23758,5846 23874,5870
 #: XXX der Eintrag in plaetze-orig könnte dann entfernt werden
 Brandenburgplatz: Qualität?	? 23346,5723 23328,5737
 Waldstr. (Köpenick): Qualität?	? 23328,5737 23327,5817
@@ -5219,6 +5218,7 @@ Ballonplatz: Qualität?	? 15591,24137 15661,24250
 #: XXX_indoor fehlt bei Berlin.coords.data
 Chronisteneck: Qualität?	? 15692,24040 15730,24051 15759,24033 15843,23980
 Beerbaumstr.: Qualität?	? 15843,23980 15906,24088 15948,24151
+(Beerbaumstr. - Karower Chaussee): Qualität? Nachts beleuchtet?	? 15948,24151 16021,24243 16123,24232
 Lanzelotstr.: Qualität?	? 16139,24162 16081,24056 16029,23964 15987,23876 15966,23836
 #: XXX_indoor str_cont_ausnahme-Eintrag
 Erekweg: Qualität?	? 16091,24182 16139,24162
@@ -5578,3 +5578,11 @@ Grenzweg (Mahlow): Qualität?	? 12251,-4600 13289,-4660
 Am Wasserturm (?) (Potsdam): Straßenname?	? -11980,-2163 -11975,-2098 -11828,-2110 -11834,-2186
 #: XXX genaue Wegführung? Laut http://www.berlin-friedrichsfelde.info/history/diary_2006.htm offiziell Radfahren erlaubt
 Wege entlang des Kraatzgrabens/Tränkegrabens: Qualität? Nachts beleuchtet?	? 16925,9852 17262,10704 18150,10543
+#: by: http://www.nationaler-radverkehrsplan.de/neuigkeiten/news.php?id=2669
+Radweg zwischen Groß Schulzendorf und Ludwigsfelde: existiert bereits der Radweg? Qualität?	? 7638,-14868 7475,-14774 7135,-14839 5497,-15134 4880,-15498 4580,-15515 4453,-15366 4282,-15325 4048,-14854 3323,-14135
+#: by: http://www.nationaler-radverkehrsplan.de/neuigkeiten/news.php?id=2669
+Radweg zwischen Linthe und Brück: Qualität?	? -30940,-28490 -31197,-28211 -32763,-26409
+#: XXX: laut http://www.nationaler-radverkehrsplan.de/neuigkeiten/news.php?id=2339 mit Radweg
+Schönower Str. (Teltow): Qualität?	? 1684,-927 1722,-773 1713,-652 1677,-582 1612,-505 1457,-470
+#: XXX: laut http://www.nationaler-radverkehrsplan.de/neuigkeiten/news.php?id=2339 mit Radweg
+Zeppelinufer (Teltow): Qualität?	? 1457,-470 1338,-426 1134,-370 818,-298

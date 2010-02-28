@@ -75,8 +75,8 @@ Landjägerstr.	1 22740,4415 22542,4485 22495,4523
 Alt-Köpenick	1 22138,4661 22175,4730 22196,4847
 (Am S-Bahnhof Plänterwald): Asphalt	1 15357,8286 15284,8214 15242,8263 15303,8343
 Wuhletalstr.	1 20691,17463 20675,17515 20748,17661 20832,17824 20912,17872
-Knoten Märkische/Landsberger Allee	1 19175,14968 19364,15045 19496,15113 19567,15134 19694,15149 19735,15155
-Knoten Märkische/Landsberger Allee	1 19735,15155 19605,15073 19408,15007 19175,14968
+Knoten Märkische/Landsberger Allee	1 19013,14905 19175,14968 19364,15045 19496,15113 19567,15134 19694,15149 19735,15155
+Knoten Märkische/Landsberger Allee	1 19735,15155 19605,15073 19408,15007 19350,14997 19156,14953 19013,14905
 Knoten Märkische/Landsberger Allee	1 19466,14910 19408,15007
 Knoten Märkische/Landsberger Allee	1 19506,15002 19551,14961 19615,14960 19643,15025 19605,15073
 Knoten Märkische/Landsberger Allee	1 19496,15113 19582,15221 19675,15240 19707,15206 19694,15149
@@ -667,6 +667,7 @@ Blumenstr.	1 12305,12440 12118,12462
 Friedensplatz	1 8971,6154 8994,6144 9003,6121 8996,6106 8976,6094 8952,6109 8944,6127 8955,6147 8971,6154
 #: by: anonymous
 Westhafenstr.: Tor kann geschlossen sein	2 6083,14564 6025,14539 6015,14516 5997,14444 5920,14422 5217,14255
+Frank-Schweitzer-Str.	1 19350,14997 19175,14926 19113,14901 19117,14875 19255,14911
 ######################################################################
 #
 # Potsdam
@@ -1258,6 +1259,8 @@ tragen (Treppe, 9 Stufen)	0:15 14331,17016
 tragen (4 Stufen)	0:10 12871,15882
 Rampe und 8 weite Stufen	0:25 16065,6126
 tragen (Treppe, 12 Stufen)	0:15 5475,7906
+tragen (Treppe, ca. 20 Stufen)	0:25 19163,14981
+tragen (Treppe, ca. 20 Stufen)	0:25 19160,14935
 #
 ###################################################################
 # Drängelgitter (BLOCKED_NARROWPASSAGE)
@@ -1450,6 +1453,9 @@ Poller, Abstand 80cm (mit Anhänger über Gehweg umfahren)	BNP:1::trailer=10 7816,
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1002/nachricht3772.html
+#: next_check: 2010-10-01
+Brücke über A10: Sperrung vom 15.02.2010 bis 01.10.2010	2:inwork 15337,24593 15490,24848
 #: last_checked: 2009-09-18
 #: next_check: 2010-04-01
 Kreuzstr.: Bauarbeiten, voll gesperrt	2:inwork 10231,11940 10209,11918
