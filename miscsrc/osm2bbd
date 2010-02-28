@@ -1997,8 +1997,14 @@ version of the module L<Karte::Polar>, which is adapted to the central
 latitude of the processed region. This means distance calculation is
 still not perfect, but far better for regions far away from the
 reference latitude of BBBike (which is 52.5°, the latitude of Berlin).
-Currently only the Perl/Tk version has support to use this hack;
-C<bbbike.cgi> currently does not.
+Currently only the Perl/Tk version has out-of-the-box support for this
+hack. To use the hack in the CGI implementation it is necessary to add
+something like
+
+    unshift @INC, "/path/to/datadir;
+
+best in the configuration file F<bbbike.cgi.config> (or whatever
+config file is used).
 
 =back
 
