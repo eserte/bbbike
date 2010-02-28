@@ -2610,6 +2610,12 @@ sub reload_new_modules {
 		system @cmd;
 		if ($? != 0) {
 		    push @problems, $f;
+		    if ($? == -1) {
+			push @problems, "errno=$!";
+			if ($!{ECHILD} && $SIG{CHLD} eq 'IGNORE') {
+			    push @problems, "ECHILD encountered and SIGCHLD=IGNORE --- possible side-effect of some module?";
+			}
+		    }
 		}
 	    }
 	    if (@problems) {
