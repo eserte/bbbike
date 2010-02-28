@@ -58,6 +58,9 @@ use constant YSTEP => 0.1;
 use constant MARGIN_X => 0.11; # MARGIN... needs to be larger than ...STEP
 use constant MARGIN_Y => 0.11;
 
+# taken from osm2bbd
+use constant CONSTRUCTION_RX => qr{^(?:construction|planned|proposed)$};
+
 sub register {
     _create_images();
     _find_merkaartor_data();
@@ -444,7 +447,7 @@ sub plot_osm_files {
 		} # else: no dash, as it is ridable for cyclists
 	    } elsif (exists $tag{'highway'} && $tag{'highway'} =~ m{^(footway|steps|pedestrian|track|path|service|bridleway)$}) {
 		$item_args{'-dash'} = '--'; # may be interesting, but distinguish it from "official" streets
-	    } elsif (exists $tag{'highway'} && $tag{'highway'} =~ m{^(planned|construction)$}) {
+	    } elsif (exists $tag{'highway'} && $tag{'highway'} =~ CONSTRUCTION_RX) {
 		$item_args{'-dash'} = '.'; 
 	    } elsif (exists $tag{'boundary'}) {
 		$item_args{'-dash'} = '.-'; # looks like a boundary, n'est-ce pas?

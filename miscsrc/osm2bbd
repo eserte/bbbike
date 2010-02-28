@@ -231,6 +231,8 @@ use constant HIGHWAY_H_RX   => qr{^(?:secondary)$};
 use constant HIGHWAY_NH_RX  => qr{^(?:tertiary)$};
 use constant HIGHWAY_N_RX   => qr{^(?:residential|unclassified|service|minor)$};
 
+use constant CONSTRUCTION_RX => qr{^(?:construction|planned|proposed)$};
+
 my $cyclists_dismount_label = ($lang eq 'en' ? 'Cyclists dismount' : 'Radfahrer absteigen');
 
 sub add_underline {
@@ -887,7 +889,7 @@ for my $osm_file (@osm_files) {
 		} elsif ($railway_cat =~ m{^(?:abandoned|disused)$}) {
 		    push @or, ["rbahn", "R0".$addcat];
 		    resolve_node_now('railway', 'rbahnhof', "R0", \@nodes);
-		} elsif ($railway_cat =~ m{^(?:construction)$}) {
+		} elsif ($railway_cat =~ CONSTRUCTION_RX) {
 		    push @or, ["rbahn", "RBau".$addcat];
 		    resolve_node_now('railway', 'rbahnhof', "RBau", \@nodes);
 		} elsif ($railway_cat =~ m{^(?:narrow_gauge)$}) { # z.B. Parkeisenbahnen
@@ -1102,7 +1104,7 @@ for my $osm_file (@osm_files) {
 		} elsif ($highway_cat eq 'living_street') {
 		    push @or, ["strassen", "N".$addcat];
 		    push @or, ["radwege_exact", "RW6;RW6", name => ($name ? "$name: " : "") . ($lang eq 'en' ? 'living street' : 'verkehrsberuhigter Bereich')];
-		} elsif ($highway_cat =~ m{^(?:construction|planned)$}) {
+		} elsif ($highway_cat =~ CONSTRUCTION_RX) {
 		    my $construction = $tag{'construction'} || ""; # what will the type of street be?
 		    if      ($construction =~ HIGHWAY_BAB_RX) {
 			push @or, ["strassen_bab", "BAB::inwork"];
