@@ -5689,7 +5689,7 @@ sub define_item_attribs {
     for (qw(RA RB RC R0 RBau RG RP)) { $category_font_color{$_} = $category_font_color{"R"} }
     %category_font =
 	(
-	 'W'  => "$sans_serif_font_family %d italic",
+	 'W'  => ($has_xft ? "$sans_serif_font_family:size=%d:matrix=1 -0.15 0 1" : "$sans_serif_font_family %d italic"),
 	 'I'  => "$sans_serif_font_family %d italic",
 	 'P'  => "$sans_serif_font_family %d",
 	 'Ae' => "$sans_serif_font_family %d",
