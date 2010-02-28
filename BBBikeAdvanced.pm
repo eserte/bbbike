@@ -126,17 +126,16 @@ sub advanced_option_menu {
 		   }
 		   );
     $opbm->command(-label => 'Reload modules',
-		   -command => \&reload_new_modules);
+		   -command => sub { reload_new_modules() });
     $opbm->command(-label => 'Destroy all toplevels',
-		   -command => \&destroy_all_toplevels);
+		   -command => sub { destroy_all_toplevels() });
     $opbm->command(-label => 'Re-call some subs',
-		   -command => \&recall_some_subs,
-		  );
+		   -command => sub { recall_some_subs() });
     $opbm->command(-label => 'Reload photos',
 		   -command => sub { %photo = (); $top->{MapImages} = {}; load_photos() },
 		  );
     $opbm->command(-label => M"Datenverzeichnis ändern ...",
-		   -command => \&change_datadir);
+		   -command => sub { change_datadir() });
 
     $top->bind("<Pause>" => sub {
 		   eval {
