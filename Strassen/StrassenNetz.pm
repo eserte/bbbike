@@ -19,7 +19,7 @@ Strassen::StrassenNetz - net creation and route searching routines
 
 =head1 SYNOPSIS
 
-    $net = Strassen::StrassenNetz->new($strassen);
+    $net = StrassenNetz->new($strassen);
     $net->make_net;
     $net->search(...)
 
