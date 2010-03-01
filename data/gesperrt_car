@@ -331,9 +331,14 @@ Gropiusstr.	1 8543,16364 8389,16214
 Osloer Str.	3nocross::ignrte 8503,16716 8721,16689 8759,16684 8939,16668
 Osloer Str. -> Pankeweg: Osloer Str.	3::igndisp 8503,16716 8721,16689 8804,16881
 Pankeweg -> Osloer Str.: Osloer Str.	3::igndisp 8804,16881 8721,16689 8759,16684
+Stockholmer Str. -> Travemünder Str.: Osloer Str.	3::igndisp 8783,16710 8759,16684 8659,16494
+Stockholmer Str. -> Osloer Str.: Osloer Str.	3::igndisp 8783,16710 8759,16684 8939,16668
+Osloer Str. -> Stockholmer Str.: Osloer Str.	3::igndisp 8721,16689 8759,16684 8783,16710
 Osloer Str. -> Pankeweg, teilweise als Walter-Nicklitz-Promenade gekennzeichnet: Osloer Str.	3::igndisp 8721,16689 8759,16684 8776,16718
+Pankeweg, teilweise als Walter-Nicklitz-Promenade gekennzeichnet -> Stockholmer Str.: Osloer Str.	3::igndisp 8776,16718 8759,16684 8783,16710
 Pankeweg, teilweise als Walter-Nicklitz-Promenade gekennzeichnet -> Travemünder Str.: Osloer Str.	3::igndisp 8776,16718 8759,16684 8659,16494
 Pankeweg, teilweise als Walter-Nicklitz-Promenade gekennzeichnet -> Osloer Str.: Osloer Str.	3::igndisp 8776,16718 8759,16684 8939,16668
+Travemünder Str. -> Stockholmer Str.: Osloer Str.	3::igndisp 8659,16494 8759,16684 8783,16710
 Travemünder Str. -> Osloer Str.: Osloer Str.	3::igndisp 8659,16494 8759,16684 8721,16689
 Travemünder Str. -> Pankeweg, teilweise als Walter-Nicklitz-Promenade gekennzeichnet: Osloer Str.	3::igndisp 8659,16494 8759,16684 8776,16718
 Osloer Str. -> Travemünder Str.: Osloer Str.	3::igndisp 8939,16668 8759,16684 8659,16494
@@ -944,3 +949,4 @@ Gounodstr. -> Indira-Gandhi-Str.: Straßenbahntrasse	3::igndisp 14520,15937 14597
 Indira-Gandhi-Str. -> Gounodstr.: Straßenbahntrasse	3::igndisp 14609,15921 14597,15970 14520,15937
 Meyerbeerstr. -> Indira-Gandhi-Str.: Straßenbahntrasse	3::igndisp 14484,16035 14576,16069 14550,16161
 Indira-Gandhi-Str. -> Meyerbeerstr.: Straßenbahntrasse	3::igndisp 14595,15980 14576,16069 14484,16035
+Lenther Steig	1 1024,14889 1037,14814 1042,14721

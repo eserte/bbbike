@@ -1051,15 +1051,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        undef,
-       {
-         'until' => 1267398000,
-         'text' => 'B 001 Bundesgrenze Polen - Küstrin Kietz Vorflutbrücke bei Küstrin Kietz Brückeninstandsetzung Vollsperrung 17.08.2009-28.02.2010 ',
-         'from' => 1250373600,
-         'id' => 1834,
-         'data' => 'userdel	2::inwork 92955,20065 93405,20640
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1270072800,
          'text' => 'B 005 Frankfurter Straße OL Heinersdorf Kanal- u. Straßenbauarbeiten Vollsperrung 07.09.2009-31.03.2010 ',
@@ -1169,15 +1161,7 @@ d Breitenbachstr. Baustelle, Fahrtrichtung gesperrt (bis Anfang 05/2010)',
        undef,
        undef,
        undef,
-       {
-         'until' => 1267398000,
-         'text' => 'B 167 Ruppiner Str. OD Bückwitz, Einmünd. B 5 Kreiselneubau gesperrt 23.11.2009-28.02.2010 ',
-         'from' => 1258844400,
-         'id' => 1876,
-         'data' => 'userdel	q4::inwork -52519,49887 -52595,49993
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1327,16 +1311,7 @@ userdel	q4::inwork; 10829,18083 10907,18109 10938,18147 10989,18172 11137,18358 
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_014786',
-         'until' => 1267397999,
-         'text' => 'Naumannstraße zwischen Leuthener Straße und Tempelhofer Weg in Richtung Sachsendamm gesperrt, Baustelle, Dauer: 08.10.2009 07:00 Uhr bis Ende 02.2010',
-         'from' => 1254891600,
-         'id' => 1953,
-         'data' => 'userdel	q4::inwork; 7716,8356 7716,8048 7717,7879
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => undef,
