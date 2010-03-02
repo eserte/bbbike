@@ -32,6 +32,7 @@ sub simple_search {
 
     my $net_net = $net->{Net}
 	or die "Cannot find 'Net' field in $net";
+    my $add_net_net = $add_net ? $add_net->{Net} : {};
 
     my %CLOSED;
     my %OPEN;
@@ -49,14 +50,16 @@ sub simple_search {
 	$CLOSED{$act_coord} = $act_dist;
 	delete $OPEN{$act_coord};
 
-	while (my($neighbor, $dist) = each %{ $net_net->{$act_coord} }) {
-	    $dist = $adjust_dist->($dist, $act_coord, $neighbor)
-		if $adjust_dist;
-	    my $new_dist = $act_dist + $dist;
-	    next if exists $CLOSED{$neighbor} && $CLOSED{$neighbor} <= $new_dist;
-	    next if exists $OPEN{$neighbor}   && $OPEN{$neighbor}   <= $new_dist;
-	    $OPEN{$neighbor} = $new_dist;
-	    $PRED{$neighbor} = $act_coord;
+	for my $neighbors (grep { defined } $net_net->{$act_coord}, $add_net_net->{$act_coord}) {
+	    while (my($neighbor, $dist) = each %$neighbors) {
+		$dist = $adjust_dist->($dist, $act_coord, $neighbor)
+		    if $adjust_dist;
+		my $new_dist = $act_dist + $dist;
+		next if exists $CLOSED{$neighbor} && $CLOSED{$neighbor} <= $new_dist;
+		next if exists $OPEN{$neighbor}   && $OPEN{$neighbor}   <= $new_dist;
+		$OPEN{$neighbor} = $new_dist;
+		$PRED{$neighbor} = $act_coord;
+	    }
 	}
 
 	my $new_act_coord;

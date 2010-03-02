@@ -31,7 +31,7 @@ use Strassen::StrassenNetz;
 # This is the same prefix as in cgi/bbbike-test.cgi.config
 $Strassen::Util::cacheprefix = "test_b_de";
 
-plan tests => 15;
+plan tests => 18;
 
 my $do_bbd;
 GetOptions("bbd" => \$do_bbd)
@@ -119,6 +119,42 @@ $net->make_net;
     isnt($res->{route}[-1], $goal, "Did not found goal point because of threshold");
 }
 
+{
+    my $name = 'add_net';
+    my $add_net = StrassenNetz->new(Strassen->new_from_data_string("\tX 8769,9290 8858,9303 8969,9320\n"));
+    $add_net->make_net(UseCache => 0);
+    {
+	my $name = $name . " (start is added)";
+	my $res = simple_search_and_dump
+	    ($name, '8858,9303', ['8598,9264'],
+	     add_net => $add_net);
+	is_deeply($res->{route},
+		  [qw(8858,9303 8769,9290 8598,9264)],
+		  $name,
+		 );
+    }
+    {
+	my $name = $name . " (goal is added)";
+	my $res = simple_search_and_dump
+	    ($name, '9248,9350', ['8858,9303'],
+	     add_net => $add_net);
+	is_deeply($res->{route},
+		  [qw(9248,9350 9211,9354 9133,9343 8969,9320 8858,9303)],
+		  $name,
+		 );
+    }
+    {
+	my $name = $name . " (added in middle)";
+	my $res = simple_search_and_dump
+	    ($name, '8598,9264', ['9133,9343'],
+	     add_net => $add_net);
+	is_deeply($res->{route},
+		  [qw(8598,9264 8769,9290 8858,9303 8969,9320 9133,9343)], # actually it could be possible that another route without the added coord may happen here
+		  $name,
+		 );
+    }
+
+}
 
 sub simple_search_and_dump {
     my($test_name, @args) = @_;
