@@ -5,7 +5,7 @@
 # $Id: flood_search.pl,v 1.16 2007/04/24 18:49:33 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2002 Slaven Rezic. All rights reserved.
+# Copyright (C) 2002,2010 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -28,8 +28,12 @@ $net_type = "s" if !defined $net_type;
 $show_rings = 0 if !defined $show_rings;
 $circle_unit = "km" if !defined $circle_unit;
 
+use your qw(%main::map_mode_callback $main::Radiobutton $main::net
+	    %main::do_flag %main::penalty_subs);
+
 use base qw(BBBikePlugin);
 use Strassen::Util;
+use Strassen::SimpleSearch qw(simple_search);
 use BBBikeUtil qw(s2hm);
 
 sub register {
@@ -201,14 +205,6 @@ sub flood_search {
 					   [transpose(5000,0)],
 					  );
 
-    my %CLOSED;
-    my %OPEN;
-    my %PRED;
-
-    my $act_dist = 0;
-    $OPEN{$act_coord} = $act_dist;
-    $PRED{$act_coord} = undef;
-
     my $adjust_dist_text =
 	($circle_unit eq 'km'
 	 ? sub { $_[0] }
@@ -278,7 +274,7 @@ sub flood_search {
     };
 
     my $adjust_dist = sub {
-	my($dist, $neighbor, $act_coord) = @_;
+	my($dist, $act_coord, $neighbor) = @_;
 	while(my($k,$v) = each %main::penalty_subs) {
 	    $dist = $v->($dist, $neighbor, $act_coord);
 	}
@@ -288,79 +284,49 @@ sub flood_search {
     # XXX configurable
     my $CIRCLE_DELTA = 1000; # XXX ($circle_unit eq 'km' ? 1000 : 1000*16);
 
-    while (1) {
-	$CLOSED{$act_coord} = $act_dist;
-	delete $OPEN{$act_coord};
-
-	while (my($neighbor, $dist) = each %{ $net->{Net}{$act_coord} }) {
-	    $dist = $adjust_dist->($dist, $neighbor, $act_coord);
-	    next if exists $CLOSED{$neighbor} && $CLOSED{$neighbor} <= $act_dist + $dist;
-	    $OPEN{$neighbor} = $act_dist + $dist;
-	    $PRED{$neighbor} = $act_coord;
-	}
-
-	my $new_act_coord;
-	my $new_act_dist = 99999999;
-	while (my($c, $dist) = each %OPEN) {
-	    if ($dist < $new_act_dist) {
-		$new_act_coord = $c;
-		$new_act_dist = $dist;
-	    }
-	}
-	if (!defined $new_act_coord) {
-	    warn "Nothing more...";
-	    last;
-	}
-
-	if (exists $PRED{$new_act_coord} && int($CLOSED{$PRED{$new_act_coord}}/$CIRCLE_DELTA) != int($new_act_dist/$CIRCLE_DELTA)) { # XXX mehrere Sprünge checken
-	    my $len = Strassen::Util::strecke_s($PRED{$new_act_coord}, $new_act_coord);
-	    $len = $adjust_dist->($len, $new_act_coord, $PRED{$new_act_coord});
-  	    my @new_dist;
-### klappt nicht
-#  	    if ($len > 2000) {
-#  		my $steps = int($len/$CIRCLE_DELTA);
-#  		my $dist = (int($CLOSED{$PRED{$new_act_coord}}/$CIRCLE_DELTA)+1)*$CIRCLE_DELTA;
-#  		for (1..$steps) {
-#  		    push @new_dist, $dist;
-#  		    $dist += $CIRCLE_DELTA;
-#  		}
-#  	    }
-	    push @new_dist, $new_act_dist;
+    simple_search
+	($net, $act_coord, undef,
+	 adjustdist => $adjust_dist,
+	 callback => sub {
+	     my($new_act_coord, $new_act_dist, $act_coord, $PRED, $CLOSED, $OPEN) = @_;
+	     if (exists $PRED->{$new_act_coord} && int($CLOSED->{$PRED->{$new_act_coord}}/$CIRCLE_DELTA) != int($new_act_dist/$CIRCLE_DELTA)) { # XXX mehrere Sprünge checken
+		 my $len = Strassen::Util::strecke_s($PRED->{$new_act_coord}, $new_act_coord);
+		 $len = $adjust_dist->($len, $new_act_coord, $PRED->{$new_act_coord});
+		 my @new_dist;
+		 ### klappt nicht
+		 #  	    if ($len > 2000) {
+		 #  		my $steps = int($len/$CIRCLE_DELTA);
+		 #  		my $dist = (int($CLOSED{$PRED{$new_act_coord}}/$CIRCLE_DELTA)+1)*$CIRCLE_DELTA;
+		 #  		for (1..$steps) {
+		 #  		    push @new_dist, $dist;
+		 #  		    $dist += $CIRCLE_DELTA;
+		 #  		}
+		 #  	    }
+		 push @new_dist, $new_act_dist;
 #require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([\@new_dist],[])->Indent(1)->Useqq(1)->Dump if @new_dist>1;
 
-	    for my $new_dist (@new_dist) {
-		my $rest = $new_dist%$CIRCLE_DELTA;
-		my($x1,$y1) = split /,/, $PRED{$new_act_coord};
-		my($x2,$y2) = split /,/, $new_act_coord;
-		my($x, $y) = ($x2-($x2-$x1)*$rest/$len,
-			      $y2-($y2-$y1)*$rest/$len);
+		 for my $new_dist (@new_dist) {
+		     my $rest = $new_dist%$CIRCLE_DELTA;
+		     my($x1,$y1) = split /,/, $PRED->{$new_act_coord};
+		     my($x2,$y2) = split /,/, $new_act_coord;
+		     my($x, $y) = ($x2-($x2-$x1)*$rest/$len,
+				   $y2-($y2-$y1)*$rest/$len);
 
-		push @{ $circle_coords[int($new_dist/$CIRCLE_DELTA)] },
-		    [$x,$y, atan2($start_y-$y, $start_x-$x)];
-	    }
+		     push @{ $circle_coords[int($new_dist/$CIRCLE_DELTA)] },
+			 [$x,$y, atan2($start_y-$y, $start_x-$x)];
+		 }
 
-	    if (1) { # XXX siehe unten
-		if (int($new_act_dist/$CIRCLE_DELTA) > $last_circle+1) {
-		    $draw_circle->($last_circle+1);
-		    update_ring_visibility();
-		    $c->update;
-		    $last_circle++;
-		}
-	    }
-	}
-
-	$act_coord = $new_act_coord;
-	$act_dist = $new_act_dist;
-	# warn $act_dist;
-    }
-
-    if (0) { # XXX siehe oben
-	for my $circle (1 .. $#circle_coords) {
-	    $draw_circle->($circle);
-	}
-	$c->update;
-    }
-
+		 if (1) {
+		     if (int($new_act_dist/$CIRCLE_DELTA) > $last_circle+1) {
+			 $draw_circle->($last_circle+1);
+			 update_ring_visibility();
+			 $c->update;
+			 $last_circle++;
+		     }
+		 }
+	     }
+	 },
+	);
 }
 
 return 1 if caller;
