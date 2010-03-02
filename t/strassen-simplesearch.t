@@ -31,7 +31,7 @@ use Strassen::StrassenNetz;
 # This is the same prefix as in cgi/bbbike-test.cgi.config
 $Strassen::Util::cacheprefix = "test_b_de";
 
-plan tests => 13;
+plan tests => 15;
 
 my $do_bbd;
 GetOptions("bbd" => \$do_bbd)
@@ -107,6 +107,18 @@ $net->make_net;
 	      $name);
     is_approx($res->{dist}, 1867, 4);
 }
+
+{
+    my $name = 'threshold';
+    my $goal = '7938,9694';
+    my $res = simple_search_and_dump
+	($name, '8969,9320', [$goal],
+	 threshold => 1000,
+	);
+    ok($res->{hit_threshold}, 'Hit threshold');
+    isnt($res->{route}[-1], $goal, "Did not found goal point because of threshold");
+}
+
 
 sub simple_search_and_dump {
     my($test_name, @args) = @_;
