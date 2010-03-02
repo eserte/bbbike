@@ -28,6 +28,20 @@ use strict;
 use vars qw($VERSION);
 $VERSION = sprintf("%d.%02d", q$Revision: 1.83 $ =~ /(\d+)\.(\d+)/);
 
+use your qw(%MultiMap::images $BBBikeLazy::mode
+	    %main::line_width %main::p_width %main::str_draw %main::p_draw
+	    %main::p_obj
+	    $main::lazy_plot %main::lazy_p %main::layer_active_color
+	    %main::add_net
+	    $main::newlayer_photo
+	    @main::inslauf_selection $main::edit_normal_mode
+	    $main::gps_waypoints $main::gps_waypointlength
+	    $main::gps_waypointcharset $main::gps_needuniqueroutenumber
+	    $main::zoom_loaded_route $main::center_loaded_route
+	    $Karte::Berlinmap1996::obj $Karte::Polar::obj
+	    $Tk::Config::xlib
+	  );
+
 my $bbbike_rootdir;
 if (-e "$FindBin::RealBin/bbbike") {
     $bbbike_rootdir = $FindBin::RealBin;
@@ -127,39 +141,59 @@ sub add_button {
 	   }],
 	 ]);
 
+    my $do_compound = sub {
+	my($text, $image) = @_;
+	if ($Tk::VERSION >= 804) {
+	    # Tk804 has native menu item compounds
+	    if ($image) {
+		($text, -image => $image, -compound => "left");
+	    } else {
+		if (!$SRTShortcuts::empty_image_16) {
+		    $SRTShortcuts::empty_image_16 = $main::top->Photo(-data => <<EOF);
+R0lGODlhEAAQAIAAAP///////yH+FUNyZWF0ZWQgd2l0aCBUaGUgR0lNUAAh+QQBCgABACwA
+AAAAEAAQAAACDoyPqcvtD6OctNqLsz4FADs=
+EOF
+		}
+		($text, -image => $SRTShortcuts::empty_image_16, -compound => "left");
+	    }
+	} else {
+	    ($text);
+	}
+    };
+
     BBBikePlugin::place_menu_button
 	    ($mmf,
 	     [
-	      [Button => "Set penalty: unique matches (alltime)",
+	      [Button => $do_compound->("Set penalty: unique matches (alltime)"),
 	       -command => sub { set_penalty() },
 	      ],
-	      [Button => "Set penalty: unique matches (since 2008)",
+	      [Button => $do_compound->("Set penalty: unique matches (since 2008)"),
 	       -command => sub { set_penalty_2008() },
 	      ],
-	      [Button => "Set penalty fragezeichen",
+	      [Button => $do_compound->("Set penalty fragezeichen"),
 	       -command => sub { set_penalty_fragezeichen() },
 	      ],
-	      [Button => "Tracks in region",
+	      [Button => $do_compound->("Tracks in region"),
 	       -command => sub { tracks_in_region() },
 	      ],
-	      [Button => "Update tracks and matches.bbd",
+	      [Button => $do_compound->("Update tracks and matches.bbd"),
 	       -command => sub { make_gps_target("tracks tracks-accurate tracks-accurate-categorized unique-matches") },
 	      ],
-	      [Button => "Add streets-accurate-categorized-split.bbd",
+	      [Button => $do_compound->("Add streets-accurate-categorized-split.bbd"),
 	       -command => sub {
 		   add_any_streets_bbd($acc_cat_split_streets_track);
 	       }
 	      ],
 	      (map {
 		  my $year = $_;
-		  [Button => "Add streets-accurate-categorized-split-since".$year.".bbd",
+		  [Button => $do_compound->("Add streets-accurate-categorized-split-since".$year.".bbd"),
 		   -command => sub {
 		       add_any_streets_bbd($acc_cat_split_streets_byyear_track{$year});
 		   },
 		  ]
 	      } (2008, 2009)
 	      ),
-	      [Cascade => "Add other streets...bbd", -menuitems =>
+	      [Cascade => $do_compound->("Add other streets...bbd"), -menuitems =>
 	       [
 		[Button => "Add streets.bbd (all GPS tracks)",
 		 -command => sub {
@@ -178,26 +212,26 @@ sub add_button {
 		],
 	       ],
 	      ],
-	      [Button => "Add other-tracks.bbd (other people's GPS tracks)",
+	      [Button => $do_compound->("Add other-tracks.bbd (other people's GPS tracks)"),
 	       -command => sub {
 		   add_any_streets_bbd($other_tracks);
 	       }
 	      ],
-	      [Button => "Add points-all.bbd (all GPS trackpoints)",
+	      [Button => $do_compound->("Add points-all.bbd (all GPS trackpoints)"),
 	       -command => sub {
 		   my $f = "$bbbike_rootdir/tmp/points-all.bbd";
 		   my $points_layer = add_new_layer("p", $f, Width => 20);
 		   main::special_lower($points_layer . "-fg", 0);
 	       }
 	      ],
-	      [Button => "Add points-symbols.bbd (with symbols)",
+	      [Button => $do_compound->("Add points-symbols.bbd (with symbols)"),
 	       -command => sub {
 		   my $f = "$bbbike_rootdir/tmp/points-symbols.bbd";
 		   my $points_layer = add_new_layer("p", $f, Width => 20);
 		   main::special_lower($points_layer . "-fg", 0);
 	       }
 	      ],
-	      [Cascade => 'Add layer', -menuitems =>
+	      [Cascade => $do_compound->('Add layer', $main::newlayer_photo), -menuitems =>
 	       [
 		layer_checkbutton('hm96.bbd (Höhenpunkte)', 'p',
 				  "$bbbike_rootdir/misc/senat_b/hm96.bbd",
@@ -243,7 +277,7 @@ sub add_button {
 		],
 	       ],
 	      ],
-	      [Cascade => 'OSM Live data', -menuitems =>
+	      [Cascade => $do_compound->('OSM Live data', $MultiMap::images{OpenStreetMap}), -menuitems =>
 	       [
 		[Button => "Display (and refresh) OSM tiles (Berlin)",
 		 -command => sub {
@@ -291,7 +325,7 @@ sub add_button {
 		],
 	       ],
 	      ],
-	      [Cascade => 'OSM-converted layer', -menuitems =>
+	      [Cascade => $do_compound->('OSM-converted layer'), -menuitems =>
 	       [
 		do {
 		    my @osm_layers = qw(building education motortraffic oepnv power unhandled);
@@ -314,7 +348,7 @@ sub add_button {
 		},
 	       ]
 	      ],
-	      [Cascade => 'Berlin/Potsdam coords', -menuitems =>
+	      [Cascade => $do_compound->('Berlin/Potsdam coords'), -menuitems =>
 	       [
 		[Button => "Add Berlin.coords.data",
 		 -command => sub { add_coords_data("Berlin.coords.bbd") },
@@ -336,10 +370,10 @@ sub add_button {
 # 		],
 	       ]
 	      ],
-	      [Button => 'VMZ/LBVS lister',
+	      [Button => $do_compound->('VMZ/LBVS lister'),
 	       -command => sub { show_vmz_lbvs_files() },
 	      ],
-	      [Cascade => "VMZ/LBVS Archive", -menuitems =>
+	      [Cascade => $do_compound->("VMZ/LBVS Archive"), -menuitems =>
 	       [
 		[Button => "Show recent VMZ diff",
 		 -command => sub { show_vmz_diff() },
@@ -352,32 +386,32 @@ sub add_button {
 		(map { [Button => "LBVS version $_", -command => [sub { show_lbvs_diff($_[0]) }, $_] ] } (0 .. 5)),
 	       ],
 	      ],
-	      ($main::devel_host ? [Cascade => "Karte"] : ()),
-	      [Button => "Mark Layer",
+	      ($main::devel_host ? [Cascade => $do_compound->("Karte")] : ()),
+	      [Button => $do_compound->("Mark Layer"),
 	       -command => sub { mark_layer_dialog() },
 	      ],
-	      [Button => "Mark most recent Layer",
+	      [Button => $do_compound->("Mark most recent Layer"),
 	       -command => sub { mark_most_recent_layer() },
 	      ],
-	      [Button => "Current search in local bbbike.cgi",
+	      [Button => $do_compound->("Current search in local bbbike.cgi"),
 	       -command => sub { current_search_in_bbbike_cgi() },
 	      ],
-	      [Button => "Street name experiment",
+	      [Button => $do_compound->("Street name experiment"),
 	       -command => sub { street_name_experiment() },
 	      ],
-	      [Button => "New GPS simplification",
+	      [Button => $do_compound->("New GPS simplification"),
 	       -command => sub { new_gps_simplification() },
 	      ],
-	      [Button => 'Real street widths',
+	      [Button => $do_compound->('Real street widths'),
 	       -command => sub { real_street_widths() },
 	      ],
-	      [Button => 'Search while type',
+	      [Button => $do_compound->('Search while type'),
 	       -command => sub { tk_suggest() },
 	      ],
-	      [Button => 'Search while type (using BBBikeSuggest)',
+	      [Button => $do_compound->('Search while type (using BBBikeSuggest)'),
 	       -command => sub { show_bbbike_suggest_toplevel() },
 	      ],
-	      [Cascade => 'Situation at point', -menuitems =>
+	      [Cascade => $do_compound->('Situation at point'), -menuitems =>
 	       [
 		[Button => 'For three points',
 		 -command => sub { show_situation_at_point() },
@@ -388,19 +422,25 @@ sub add_button {
 		],
 	       ],
 	      ],
-	      [Button => "Load route",
+	      [Button => $do_compound->("Load route"),
 	       -command => sub { route_lister() },
 	      ],
-	      [Button => "GPS data viewer",
+	      [Button => $do_compound->("GPS data viewer"),
 	       -command => sub { gps_data_viewer() },
 	      ],
-	      [Button => "Set Garmin device defaults",
+	      [Button => $do_compound->("Set Garmin device defaults"),
 	       -command => sub { garmin_devcap() },
 	      ],
+	      [Button => $do_compound->("Trafficlight circuit + GPS tracks"),
+	       -command => sub {
+		   require "$bbbike_rootdir/miscsrc/TrafficLightCircuitGPSTracking.pm";
+		   TrafficLightCircuitGPSTracking::tk_gui($main::top);
+	       },
+	      ],
 	      "-",
-	      [Cascade => "Rare or old", -menu => $rare_or_old_menu],
+	      [Cascade => $do_compound->("Rare or old"), -menu => $rare_or_old_menu],
 	      "-",
-	      [Button => "Delete this menu",
+	      [Button => $do_compound->("Delete this menu"),
 	       -command => sub {
 		   $mmf->after(100, sub {
 				   unregister();
@@ -885,6 +925,7 @@ sub add_done_file {
 
 sub define_subs {
     package main;
+    no warnings 'once';
     *show_info_ext = sub {
 	my($c, @tags) = @_;
 	#warn "$c - $tags[3] - @tags ";
