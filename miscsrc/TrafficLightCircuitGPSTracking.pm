@@ -110,9 +110,10 @@ sub find_mappings_in_ampelschaltung {
 sub tk_gui {
     my $mw = shift;
     my $t = $mw->Toplevel(-title => 'Mappings');
-    my $lb = $t->Scrolled('Listbox', -scrollbars => 'osoe')->pack(qw(-expand 1 -fill both));
+    my $lb = $t->Scrolled('Listbox', -scrollbars => 'osoe', -width => 80)->pack(qw(-expand 1 -fill both));
     my @mappings = find_mappings_in_ampelschaltung();
     $lb->insert('end', @mappings);
+    $lb->see('end'); # last are more interesting
     $lb->bind('<Double-1>' => sub {
 		  my(@cursel) = $lb->curselection;
 		  my $filename = $lb->get($cursel[0]);
