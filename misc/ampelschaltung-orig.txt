@@ -2215,6 +2215,20 @@ Fr, 26.02.2010
 #WPT: 355	26-FEB-10 19:51:09	52.5074166666667	13.4562222222222	buoy_white_red
 14139,11269   Revaler Str./Modersohnstr.         W->O                 19:51:09
 
+#WPTFILE: /home/e/eserte/src/bbbike/misc/gps_data/ampelschaltung/20100302.wpt
+# Punkt       Kreuzung                           Dir    Zyk grün      rot
+# ----------------------------------------------------------------------------
+Di, 02.03.2010
+#WPT: 355	02-MAR-10 18:38:48	52.501	13.4527777777778	buoy_white_red
+13919,10583   Stralauer Allee/Modersohnstr.      W->O                 18:38:48
+#WPT: 356	02-MAR-10 18:39:28	52.5005277777778	13.45475	buoy_white_green
+13919,10583   Stralauer Allee/Modersohnstr.      W->O       18:39:28
+13919,10583   Stralauer Allee/Modersohnstr.      W->N       18:39:28
+#WPT: 357	02-MAR-10 18:40:02	52.5015	13.4563055555556	buoy_white_green
+14007,10802   Modersohnstr./Corinthstr./Am Rudo  S->N       18:40:02
+#WPT: 358	02-MAR-10 18:41:47	52.5063888888889	13.4588333333333	buoy_white_green
+14139,11269   Revaler Str./Modersohnstr.         S->N       18:41:47
+
 # Anmerkungen:
 #  Kreuzung:
 #   KS: Kontaktschleife
