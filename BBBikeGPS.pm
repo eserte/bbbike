@@ -217,12 +217,14 @@ sub BBBikeGPS::draw_gpsman_data {
 
     my $cfc_top = $top->Toplevel(-title => M"Gpsman-Daten zeichnen");
     $cfc_top->transient($top) if $main::transient;
+    $main::toplevel{'BBBikeGPS.pm'} = $cfc_top;
 
     use vars qw($draw_gpsman_data_s $draw_gpsman_data_p
 		$show_track_graph
 		$show_track_graph_speed
 		$show_track_graph_alt
 		$show_track_graph_grade
+		$show_track_graph_dist_time
 		$show_statistics
 		$do_center_begin
 		$draw_point_names);
@@ -232,6 +234,7 @@ sub BBBikeGPS::draw_gpsman_data {
     $show_track_graph_speed = 1 if !defined $show_track_graph_speed;
     $show_track_graph_alt = 0 if !defined $show_track_graph_alt;
     $show_track_graph_grade = 0 if !defined $show_track_graph_grade;
+    $show_track_graph_dist_time = 0 if !defined $show_track_graph_dist_time;
     $show_statistics = 0    if !defined $show_statistics;
     $do_center_begin = 0    if !defined $do_center_begin;
     $draw_point_names = 0   if !defined $draw_point_names;
@@ -413,6 +416,10 @@ EOF
 	Tk::grid($f3->Label,
 		 $dep[2] = $f3->Checkbutton(-text => M"Steigung",
 					    -variable => \$show_track_graph_grade),
+		 -sticky => "w");
+	Tk::grid($f3->Label,
+		 $dep[3] = $f3->Checkbutton(-text => M"Weg-Zeit",
+					    -variable => \$show_track_graph_dist_time),
 		 -sticky => "w");
 	$update_dep->();
     }
@@ -897,6 +904,7 @@ sub BBBikeGPS::draw_track_graph {
 		grade => "%",
 		alt => "m",
 		dist => "km",
+		wholedist => "km",
 		time => "h",
 	       );
 
@@ -912,6 +920,7 @@ sub BBBikeGPS::draw_track_graph {
 	if ($show_track_graph_speed) { $types{"speed"} = 1 }
 	if ($show_track_graph_alt)   { $types{"alt"}   = 1 }
 	if ($show_track_graph_grade) { $types{"grade"} = 1 }
+	if ($show_track_graph_dist_time) { $types{"wholedist"} = 1 }
     }
     my @types = keys %types;
     if (!@types) {
@@ -998,7 +1007,9 @@ sub BBBikeGPS::draw_track_graph {
 	    $against{$type} = $against;
 	} else {
 	    my $tl_name = "trackgraph-$type";
-	    if (Tk::Exists($main::toplevel{$tl_name})) {
+	    if ($type eq 'wholedist') {
+		$against{$type} = 'time'; # dist is meaningless here
+	    } elsif (Tk::Exists($main::toplevel{$tl_name})) {
 		my $tl = $main::toplevel{$tl_name};
 		$against{$type} = $tl->{against};
 	    } else {
@@ -1136,7 +1147,7 @@ sub BBBikeGPS::draw_track_graph {
 # 			    $graph_c{$type}->lower("$type-smooth");
 # 			}
 # 		       )->pack(-side => "left");
-	    {
+	    if ($type ne 'wholedist') { # "Nach Strecke plotten" is meaningless for wholedist
 		my($against_b, @conf_time, @conf_dist);
 		$against_b = $fg->Button->pack(-side => "left");
 		@conf_time = (-text => M"Nach Zeit plotten",
@@ -1205,15 +1216,25 @@ sub BBBikeGPS::draw_track_graph {
 	my $c_h = $c_h{$type};
 
 	# Y axis ##################################################
-	my $tic = BBBikeGPS::make_tics($min, $max);
+	my $min_y_cooked;
+	my $max_y_cooked;
+	if ($unit{$type} eq 'km') {
+	    $min_y_cooked = $min/1000;
+	    $max_y_cooked = $max/1000;
+	} else {
+	    $min_y_cooked = $min;
+	    $max_y_cooked = $max;
+	}
+	my $delta_cooked = $max_y_cooked - $min_y_cooked;
+	my $tic = BBBikeGPS::make_tics($min_y_cooked, $max_y_cooked);
 	my @tics;
-	for (my $val = 0; $val <= $max; $val+=$tic) { push @tics, $val }
+	for (my $val = 0; $val <= $max_y_cooked; $val+=$tic) { push @tics, $val }
 	if ($min < 0) {
-	    for (my $val = -$tic; $val >= $min; $val-=$tic) { unshift @tics, $val }
+	    for (my $val = -$tic; $val >= $min_y_cooked; $val-=$tic) { unshift @tics, $val }
 	}
 
 	for my $val (@tics) {
-	    my $y = $def_c_top + $c_h-( ($c_h/$delta)*($val-$min));
+	    my $y = $def_c_top + $c_h-( ($c_h/$delta_cooked)*($val-$min_y_cooked));
 	    $graph_c{$type}->createLine($c_x-2, $y, $c_x+2, $y, -fill => "blue");
 	    $graph_c{$type}->createLine($c_x+2, $y, $c_x+$c_w, $y, -dash => '. ', -fill => "blue");
 	    $graph_c{$type}->createText($c_x-2, $y, -text => $val, -anchor => "e", -fill => "blue");
