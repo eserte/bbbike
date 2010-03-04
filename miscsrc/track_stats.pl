@@ -22,6 +22,7 @@ use lib ("$FindBin::RealBin/..",
 	);
 
 use Getopt::Long;
+use POSIX qw(strftime);
 use Text::Table;
 use Tie::IxHash;
 use Statistics::Descriptive;
@@ -35,6 +36,8 @@ use VectorUtil;
 
 my @stages = qw(filtertracks trackdata statistics output);
 my %stages = map {($_,1)} @stages;
+
+my @cols_sorted = qw(file fromtime vehicles device diffalt mount velocity length difftime);
 
 #my $tracks_file = "$FindBin::RealBin/../tmp/streets-accurate-categorized-split.bbd";
 my $tracks_file = "$FindBin::RealBin/../tmp/streets-polar.bbd";
@@ -284,7 +287,7 @@ sub stage_trackdata {
 			}
 			$result->{date} = guess_date($result);
 
-			for my $field (qw(velocity vehicles length difftime file diffalt mount device)) {
+			for my $field (@cols_sorted) {
 			    no strict 'refs';
 			    $result->{'!' . $field} = &{"format_$field"}($result->{$field});
 			}
@@ -308,7 +311,8 @@ sub stage_statistics {
     my @results = @{ $state->{results} };
     my %seen_device = %{ $state->{seen_device} };
 
-    my @cols = grep { /^!/ } keys %{ $results[0] };
+    #my @cols = grep { /^!/ } keys %{ $results[0] };
+    my @cols = map { "!$_" } @cols_sorted;
 
     my %stats;
     my %count_per_device;
@@ -402,6 +406,7 @@ sub save_state {
     sub format_vehicles { join(", ", keys %{ $_[0] }) }
     sub format_length   { sprintf "%.2f", $_[0]/1000 }
     sub format_difftime { sprintf "%8s", s2hms($_[0]) }
+    sub format_fromtime { strftime("%T", localtime $_[0]) }
     sub format_file     { $_[0] }
     sub format_diffalt  { sprintf "%.1f", $_[0] }
     sub format_mount    { defined $_[0] ? sprintf "%.1f", $_[0] : undef }
