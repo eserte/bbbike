@@ -110,19 +110,15 @@ sub stage_filtertracks {
     $trks->make_grid(#Exact => 1, # XXX Eats a lot of memory, so better not use it yet...
 		     UseCache => 1);
 
-    my %from_candidates;
-    my %to_candidates;
     my @included;
 
-    for my $def ([1, @from],
-		 [2, @to]) {
-	my($pass, @p) = @$def;
-
+    my %ns;
+    for my $def (\@from, \@to) {
+	my @p = @$def;
 	for my $p_i (0 .. $#p-1) {
 	    my($p1, $p2) = ($p[$p_i], $p[$p_i+1]);
 
 	    # Get all records in the selected grids.
-	    my %ns;
 	    my(@grids) = $trks->get_new_grids((split /,/, $p1), (split /,/, $p2));
 	    for my $grid (@grids) {
 		next if !exists $trks->{Grid}{$grid};
@@ -130,29 +126,39 @@ sub stage_filtertracks {
 		    $ns{$n} = 1;
 		}
 	    }
-	    # Order records by appearance in file. Note: order is
-	    # important, so the last records in the first pass and the
-	    # first record in the 2nd pass is found.
-	    #
-	    # XXX probably this is violated if @p > 2 ?!
-	    for my $n (sort { $a <=> $b } keys %ns) {
-		my $r = $trks->get($n);
-		my $deb_r; # = $r XXX
-		next if $ignore_rx && $r->[Strassen::NAME] =~ $ignore_rx;
-		my($file) = $r->[Strassen::NAME] =~ m{^(\S+)};
-	    RECORD: for my $r_i (1 .. $#{ $r->[Strassen::COORDS] }) {
-		    my($r1,$r2) = @{$r->[Strassen::COORDS]}[$r_i-1,$r_i];
+	}
+    }
+
+    use constant STAGE_SEARCH_FROM => 1;
+    use constant STAGE_SEARCH_TO  => 2;
+    my $stage = STAGE_SEARCH_FROM;
+    my %found_from;
+    # Order records by appearance in file
+    for my $n (sort { $a <=> $b } keys %ns) {
+	my $r = $trks->get($n);
+	my $deb_r; # = $r; # XXX
+	next if $ignore_rx && $r->[Strassen::NAME] =~ $ignore_rx;
+	my($file) = $r->[Strassen::NAME] =~ m{^(\S+)};
+    RECORD: for my $r_i (1 .. $#{ $r->[Strassen::COORDS] }) {
+	    my($r1,$r2) = @{$r->[Strassen::COORDS]}[$r_i-1,$r_i];
+	    for my $stage (STAGE_SEARCH_FROM, STAGE_SEARCH_TO) {
+		my $fence_coords = $stage == STAGE_SEARCH_FROM ? \@from : \@to;
+	    FENCE_CHECK: for my $p_i (0 .. $#$fence_coords-1) {
+		    my($p1, $p2) = ($fence_coords->[$p_i],$fence_coords->[$p_i+1]);
 		    for my $checks ([$r1, $p1],
 				    [$r1, $p2],
 				    [$r2, $p1],
 				    [$r2, $p2],
 				   ) {
 			if ($checks->[0] eq $checks->[1]) {
-			    if ($pass == 1) {
-				push @{ $from_candidates{$file} }, [$deb_r, [$checks->[0]], [$checks->[1]], [$n,$r_i-1]];
-			    } elsif ($pass == 2) {
-				push @{ $to_candidates{$file}   }, [$deb_r, [$checks->[0]], [$checks->[1]], [$n,$r_i-1]];
-				
+			    if ($stage == STAGE_SEARCH_FROM) {
+				$found_from{$file} = [$deb_r, [$checks->[0]], [$checks->[1]], [$n,$r_i-1]];
+			    } else { # STAGE_SEARCH_TO
+				if ($found_from{$file}) {
+				    my $found_to = [$deb_r, [$checks->[0]], [$checks->[1]], [$n,$r_i-1]];
+				    push @included, [$file, $found_from{$file}, $found_to];
+				    delete $found_from{$file};
+				}
 			    }
 			    next RECORD;
 			}
@@ -162,48 +168,19 @@ sub stage_filtertracks {
 						    split(/,/, $r1),
 						    split(/,/, $r2),
 						   )) {
-			if ($pass == 1) {
-			    push @{ $from_candidates{$file} }, [$deb_r, [$r1,$r2], [$p1,$p2], [$n,$r_i-1]];
-			} elsif ($pass == 2) {
-			    push @{ $to_candidates{$file}   }, [$deb_r, [$r1,$r2], [$p1,$p2], [$n,$r_i-1]];
+			if ($stage == STAGE_SEARCH_FROM) {
+			    $found_from{$file} = [$deb_r, [$r1,$r2], [$p1,$p2], [$n,$r_i-1]];
+			} else { # STAGE_SEARCH_TO
+			    if ($found_from{$file}) {
+				my $found_to = [$deb_r, [$r1,$r2], [$p1,$p2], [$n,$r_i-1]];
+				push @included, [$file, $found_from{$file}, $found_to];
+				delete $found_from{$file};
+			    }
 			}
+			next RECORD;
 		    }
 		}
 	    }
-	}
-    }
-
-    for my $file (keys %from_candidates) {
-	my $from_candidates = $from_candidates{$file};
-	my $to_candidates   = $to_candidates{$file};
-	next if !$to_candidates;
-	my($from, $to);
-	my $from_i = -1;
-	my $to_i = -1;
-	while () {
-	    last if $from_i >= $#$from_candidates && $to_i >= $#$to_candidates;
-	    if ($from_i >= $#$from_candidates) {
-		$to_i++;
-	    } elsif ($to_i >= $#$to_candidates) {
-		$from_i++;
-	    } elsif ($from_candidates->[$from_i+1][3][0] < $to_candidates->[$to_i+1][3][0] ||
-		     ($from_candidates->[$from_i+1][3][0] == $to_candidates->[$to_i+1][3][0] &&
-		      $from_candidates->[$from_i+1][3][1] < $to_candidates->[$to_i+1][3][1])
-		    ) {
-		$from_i++;
-	    } else {
-		$to_i++;
-	    }
-	    if ($from_i > -1) {
-		$from = $from_candidates->[$from_i];
-	    }
-	    if ($to_i > -1) {
-		$to = $to_candidates->[$to_i];
-		last;
-	    }
-	}
-	if ($from && $to) {
-	    push @included, [$file, $from, $to];
 	}
     }
 
@@ -241,9 +218,10 @@ sub stage_trackdata {
 	my %vehicle_to_brand;
     PARSE_TRACK: for my $chunk (@{ $gps->Chunks }) {
 	    no warnings 'once';
+	    my @point_objs = @{ $chunk->Points };
 	    my @points = map {
 		join(",", $Karte::Polar::obj->trim_accuracy($_->Longitude, $_->Latitude));
-	    } @{ $chunk->Points };
+	    } @point_objs;
 
 	    my $track_attrs = $chunk->TrackAttrs;
 	    if ($track_attrs->{'srt:vehicle'}) {
@@ -267,7 +245,7 @@ sub stage_trackdata {
 	    }
 	    for my $wpt_i (1 .. $#points) {
 		if ($v && $v >= 2) {
-		    warn "$file $stage $from1 $from2 $points[$wpt_i-1] $points[$wpt_i]" . join(" ", map { Karte::Polar::ddd2dms($_) } map { split /,/ } $points[$wpt_i-1], $points[$wpt_i])."\n";
+		    warn "$file $stage " . $point_objs[$wpt_i]->Comment . " | $from1 $from2 | $points[$wpt_i-1] $points[$wpt_i] | " . join(" ", map { Karte::Polar::ddd2dms($_) } map { split /,/ } $points[$wpt_i-1], $points[$wpt_i])."\n";
 		}
 		if ($stage eq 'from') {
 		    if (($points[$wpt_i-1] eq $from1 &&
@@ -551,6 +529,11 @@ __END__
    consecutive starts without a goal in between would remove the
    former start. In the "symmetric" mode for mount detection, the
    detection for goal - start sequences could also be done here.
+
+   UPDATE: the stage_filtertracks algorithm is now better. What still
+   may happen: a relation may be covered multiple times in one track
+   file. Currently stage_filtertracks might handle this, but
+   stage_trackdata probably not.
 
  * [#B] For better statistics for the mount value both directions should be
    covered, not only one direction (of course, this is mostly
