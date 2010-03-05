@@ -224,3 +224,40 @@ sub load_gpsman {
 1;
 
 __END__
+
+=head1 NAME
+
+GPS::GpsmanData::Any - support for loading GPS files
+
+=head1 SYNOPSIS
+
+    use GPS::GpsmanData::Any;
+    my $gps = GPS::GpsmanData::Any->load($gps_file);
+
+=head1 DESCRIPTION
+
+Try to recognize a number of GPS file formats and load into a
+L<GPS::GpsmanData>-compatible format. Currently the following file
+formats are recognized:
+
+=over
+
+=item * MPS (by extension)
+
+=item * GPX (by extension)
+
+=item * compressed GPX (by extension C<.gpx.gz>)
+
+=item * Nokia Sports Tracker files (by extension C<.xml>)
+
+=item * compressed Nokia Sports Tracker files (by extension C<.xml.gz>)
+
+=back
+
+Other files are treated as GPSMan files.
+
+=head1 AUTHOR
+
+Slaven Rezic
+
+=cut
