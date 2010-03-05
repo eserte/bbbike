@@ -4,15 +4,13 @@
 # $Id: SportsTracker.pm,v 1.6 2009/01/16 21:55:28 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2008 Slaven Rezic. All rights reserved.
+# Copyright (C) 2008,2010 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
 # Mail: slaven@rezic.de
 # WWW:  http://www.rezic.de/eserte/
 #
-
-# Support for XML files produced by Nokia Sports Tracker
 
 package GPS::GpsmanData::SportsTracker;
 
@@ -87,7 +85,7 @@ sub load {
 	$reader->nextElement("activity") == 1
 	    or die "Cannot find activity element";
 	my $activity = $reader->copyCurrentNode(1);
-	#my $activity_name = $activity->findvalue("./name");
+	my $activity_name = $activity->findvalue("./name");
 	my $activity_oid  = $activity->findvalue("./oid");
 	my $srt_vehicle = ($activity_oid == 0 ? 'pedes' : # 'Walking'
 			   $activity_oid == 1 ? 'pedes' : # 'Running'
@@ -95,6 +93,7 @@ sub load {
 			   $activity_oid == 3 ? 'ski'   : # probably 'Skiing', untested
 			   $activity_oid == 4 ? 'oepnv' : # 'Other 1', my convention
 			   $activity_oid == 5 ? 'car'   : # 'Other 2', my convention
+			   $activity_oid == -1 ? $activity_name : # own invention, for custom activities (i.e. mixed activities)
 			   undef);
 
 	$reader->nextElement("events") == 1
@@ -159,3 +158,33 @@ sub load {
 1;
 
 __END__
+
+=head1 NAME
+
+GPS::GpsmanData::SportsTracker - handle Nokia Sports Tracker files
+
+=head1 DESCRIPTION
+
+B<GPS::GpsmanData::SportsTracker> creates
+L<GPS::GpsmanData>-compatible data structures out of the XML files
+produced by Nokia Sports Tracker.
+
+=head2 ACTIVITY CONVENTIONS
+
+The activity oids 0..3 are already defined by Nokia. Activity oid 4
+("Other 1") is translated to "oepnv" (public transport) and activitiy
+oid 5 ("Other 2") is translated to "car".
+
+The activity oid -1 (which cannot be entered in the application) means
+"mixed". In this case the activity name can be filled in for the
+actual combination (e.g. "pedes+bike").
+
+=head1 AUTHOR
+
+Slaven Rezic
+
+=head1 SEE ALSO
+
+L<GPS::GpsmanData::Any>.
+
+=cut
