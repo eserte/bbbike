@@ -203,6 +203,8 @@ sub stage_trackdata {
 	my($file, $fromdef, $todef) = @$trackdef;
 	my($from1,$from2) = @{ $fromdef->[1] };
 	my($to1,  $to2)   = @{ $todef->[1] };
+	my($from_fence1,$from_fence2) = @{ $fromdef->[2] };
+	my($to_fence1,  $to_fence2)   = @{ $todef->[2] };
 	my $gps = eval { GPS::GpsmanData::Any->load("$gpsman_dir/$file") };
 	if ($@) {
 	    my $save_err = $@; # first error is best
@@ -257,9 +259,22 @@ sub stage_trackdata {
 			 $points[$wpt_i  ] eq $from1)) {
 			tie my %vehicles, 'Tie::IxHash';
 			$vehicles{$vehicle_label} = 1;
-			$result = {from1    => $chunk->Points->[$wpt_i-1],
-				   from2    => $chunk->Points->[$wpt_i  ],
-				   fromtime => $chunk->Points->[$wpt_i]->Comment_to_unixtime($chunk),
+			my($wpt1,$wpt2) = ($chunk->Points->[$wpt_i-1], $chunk->Points->[$wpt_i]);
+			my($epoch1,$epoch2) = ($wpt1->Comment_to_unixtime($chunk), $wpt2->Comment_to_unixtime($chunk));
+			my $epoch;
+			my($intersect_wpt) = eval { _schnittpunkt_as_wpt([$from1,$from2],[$from_fence1,$from_fence2]) };
+			if ($@) {
+			    warn "$@...";
+			    $epoch = $epoch2;
+			} else {
+			    $epoch = $epoch1 + ($epoch2-$epoch1)*_fraction($wpt1, $intersect_wpt, $wpt2);
+			    $length = $chunk->wpt_dist($intersect_wpt,$wpt2);
+#XXX warn "length corr: $length    epoch corr: " . ($epoch2-$epoch1)*_fraction($wpt1, $intersect_wpt, $wpt2) . " $from1 $from2 $epoch1 $epoch2\n";
+			}
+			$result = {from1    => $wpt1,
+				   from2    => $wpt2,
+				   from     => $intersect_wpt,
+				   fromtime => $epoch,
 				   vehicles => \%vehicles,
 				  };
 			$stage = 'to';
@@ -270,9 +285,22 @@ sub stage_trackdata {
 			 $points[$wpt_i  ] eq $to2) ||
 			($points[$wpt_i-1] eq $to2 &&
 			 $points[$wpt_i  ] eq $to1)) {
-			$result->{to1} = $chunk->Points->[$wpt_i-1];
-			$result->{to2} = $chunk->Points->[$wpt_i  ];
-			$result->{totime} = $chunk->Points->[$wpt_i]->Comment_to_unixtime($chunk);
+			my($wpt1,$wpt2) = ($chunk->Points->[$wpt_i-1], $chunk->Points->[$wpt_i]);
+			my($epoch1,$epoch2) = ($wpt1->Comment_to_unixtime($chunk), $wpt2->Comment_to_unixtime($chunk));
+			my $epoch;
+			my($intersect_wpt) = eval { _schnittpunkt_as_wpt([$to1,$to2],[$to_fence1,$to_fence2]) };
+			if ($@) {
+			    warn "$@...";
+			    $epoch = $epoch1;
+			} else {
+			    $epoch = $epoch1 + ($epoch2-$epoch1)*_fraction($wpt1, $intersect_wpt, $wpt2);
+#XXX warn "length corr: " . $chunk->wpt_dist($wpt1,$intersect_wpt) . "   epoch corr: " . ($epoch2-$epoch1)*_fraction($wpt1, $intersect_wpt, $wpt2). " $to1 $to2 $epoch1 $epoch2\n";
+			    $length += $chunk->wpt_dist($wpt1,$intersect_wpt);
+			}
+			$result->{to1} = $wpt1;
+			$result->{to2} = $wpt2;
+			$result->{to} = $intersect_wpt;
+			$result->{totime} = $epoch;
 			$result->{difftime} = $result->{totime} - $result->{fromtime};
 			$result->{length} = $length;
 			$result->{velocity} = $result->{length} / $result->{difftime};
@@ -498,6 +526,43 @@ sub next_stage {
 	}
     }
     undef;
+}
+
+# XXX will fail if $m1 or $m2 is senkrecht :-(
+sub _schnittpunkt {
+    my($l1, $l2) = @_;
+
+    my($x11,$y11,$x12,$y12) = map { split/,/ } @$l1;
+    my($x21,$y21,$x22,$y22) = map { split/,/ } @$l2;
+
+    my $m1 = ($y12-$y11)/($x12-$x11);
+    my $m2 = ($y22-$y21)/($x22-$x21);
+
+    my $x = ($m1*$x11-$m2*$x21+$y21-$y11)/($m1-$m2);
+    # XXX check if $x is really between $x11..$x12 and $x21..$x22
+    my $y = ($x-$x11)*$m1+$y11;
+    # the same: my $y = ($x-$x21)*$m2+$y21;
+    ($x, $y);
+}
+
+sub _schnittpunkt_as_wpt {
+    my($l1, $l2) = @_;
+    my($x, $y) = _schnittpunkt($l1, $l2);
+    my $wpt = GPS::Gpsman::Waypoint->new;
+    $wpt->Latitude($y);
+    $wpt->Longitude($x);
+    $wpt;
+}
+
+sub _fraction {
+    my($first,$middle,$last) = @_;
+    my $delta = $last->Latitude - $first->Latitude;
+    if ($delta == 0) {
+	my $delta = $last->Longitude - $first->Longitude;
+	return 0 if ($delta == 0);
+	return ($middle->Longitude-$first->Longitude)/$delta;
+    }
+    return ($middle->Latitude-$first->Latitude)/$delta;
 }
 
 __END__
