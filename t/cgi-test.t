@@ -32,7 +32,7 @@ sub bbbike_cgi_search ($$);
 sub bbbike_cgi_geocode ($$);
 
 #plan 'no_plan';
-plan tests => 60;
+plan tests => 62;
 
 if (!GetOptions(get_std_opts("cgidir"),
 	       )) {
@@ -167,18 +167,22 @@ SKIP: {
 
     {
 	my $resp = bbbike_cgi_search +{%route_params, output_as => 'gpx-route'}, 'GPX route';
-	my $doc = $p->parse_string($resp->decoded_content(charset => "none"));
+	my $content = $resp->decoded_content(charset => "none");
+	my $doc = $p->parse_string($content);
 	$doc->documentElement->setNamespaceDeclURI(undef, undef);
 	my $startname = $doc->findvalue('/gpx/rte/rtept[1]/name');
 	is($startname, 'Wilhelmshöhe', 'Expected startname in right encoding');
+	gpxlint_string($content);
     }
 
     {
 	my $resp = bbbike_cgi_search +{%route_params, output_as => 'kml-track'}, 'KML output';
-	my $doc = $p->parse_string($resp->decoded_content(charset => "none"));
+	my $content = $resp->decoded_content(charset => "none");
+	my $doc = $p->parse_string($content);
 	$doc->documentElement->setNamespaceDeclURI(undef, undef);
 	my $name = $doc->findvalue('/kml/Document/Placemark/name');
 	like($name, qr{^Wilhelmshöhe}, 'Expected name in right encoding');
+	kmllint_string($content);
     }
 
     # No route found with these values
