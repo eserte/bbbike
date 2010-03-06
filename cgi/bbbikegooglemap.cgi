@@ -185,6 +185,18 @@ sub get_html {
 	 'bbbike.de'	      => 'ABQIAAAACNG-XP3VVgdpYda6EwQUyhRfQt6AwvKXAVZ7ZsvglWYeC-xX5BROlXoba_KenDFQUtSEB_RJPUVetw',
 	 '83.169.19.137'      => 'ABQIAAAACNG-XP3VVgdpYda6EwQUyhSIqv_shXeYhPRHJYvhhlve40RasBRI6WpGYyWT9EJigb4eNrqNhQkqSQ',
 	 'bbbike.lvps83-169-19-137.dedicated.hosteurope.de' => 'ABQIAAAACNG-XP3VVgdpYda6EwQUyhQzU4FpitV0WsqI42ZHyXuB_4og4xSjtsqjECenvg7m7jSSPGu1rc1w4A',
+
+        'bbbike.org' =>
+'ABQIAAAAX99Vmq6XHlL56h0rQy6IShRC_6-KTdKUFGO0FTIV9HYn6k4jEBS45YeLakLQU48-9GshjYiSza7RMg',
+        'www.bbbike.org' =>
+'ABQIAAAAX99Vmq6XHlL56h0rQy6IShRC_6-KTdKUFGO0FTIV9HYn6k4jEBS45YeLakLQU48-9GshjYiSza7RMg',
+        'dev.bbbike.org' =>
+'ABQIAAAAX99Vmq6XHlL56h0rQy6IShQGl2ahQNKygvI--_E2nchLqmbBhxRLXr4pQqVNorfON2MgRTxoThX1iw',
+        'devel.bbbike.org' =>
+'ABQIAAAAX99Vmq6XHlL56h0rQy6IShSz9Y_XkjB4bplja172uJiTycvaMBQbZCQc60GoFTYOa5aTUrzyHP-dVQ',
+        'localhost' =>
+'ABQIAAAAX99Vmq6XHlL56h0rQy6IShT2yXp_ZAY8_ufC3CFXhHIE1NvwkxTN4WPiGfl2FX2PYZt6wyT5v7xqcg',
+
 	);
     my $full = URI->new(BBBikeCGIUtil::my_url(CGI->new, -full => 1));
     my $fallback_host = "bbbike.de";
