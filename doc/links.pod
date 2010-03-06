@@ -240,12 +240,13 @@ Straﬂenbeschaffenheit und Energieverbrauch beim Radfahren
 
 =head2 Andere Fahrradroutenplaner
 
+=head3 Deutschland
+
 =over
 
 =item
 
 Bremen:
-
 L<http://www.radroutenplaner-bremen.de/rad24neu/Default.htm>
 
 =item
@@ -274,6 +275,12 @@ Bike E<amp> Ride und ÷V Fahrradmitnahme)
 Stuttgart:
 L<http://www.vvs.de/service_radroutenplaner.php>
 
+=back
+
+=head3 Europa
+
+=over
+
 =item
 
 Wien:
@@ -281,7 +288,19 @@ L<http://service.wien.gv.at/wien-grafik/cgi-bin/wg?app=13&tmpl=wo>
 
 =item
 
-Weltweit (auf Basis der openstreetmap.org-Daten): L<http://openrouteservice.org/>
+Cambridge:
+L<http://www.camcycle.org.uk/map/journey/>
+
+=item
+
+UK (CycleStreets: UK-wide Cycle Journey Planner and Photomap):
+L<http://www.cyclestreets.net/>
+
+=back
+
+=head3 Auﬂerhalb Europas
+
+=over
 
 =item
 
@@ -290,9 +309,22 @@ L<http://sourceforge.net/projects/sfbikemap/>
 
 =item
 
-Cambridge:
+New York City (Ride the City):
+L<http://www.ridethecity.com/>
 
-L<http://www.camcycle.org.uk/map/journey/>
+=back
+
+=head3 Weltweit
+
+=over
+
+=item
+
+BBBike @ World: L<http://www.bbbike.org/>
+
+=item
+
+Auf Basis der openstreetmap.org-Daten: L<http://openrouteservice.org/>
 
 =back
 
