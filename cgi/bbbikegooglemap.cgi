@@ -5,7 +5,7 @@
 # $Id: bbbikegooglemap.cgi,v 2.36 2009/04/04 11:14:43 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2005,2006,2007,2008 Slaven Rezic. All rights reserved.
+# Copyright (C) 2005,2006,2007,2008,2009,2010 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -126,6 +126,9 @@ sub run {
     my $maptype = param("maptype") || "";
     $self->{maptype} = ($maptype =~ /hybrid/i ? 'G_HYBRID_MAP' :
 			$maptype =~ /normal/i ? 'G_NORMAL_MAP' :
+			$maptype =~ /osm-mapnik/i ? 'mapnik_map' :
+			$maptype =~ /osm-tah/i    ? 'tah_map' :
+			$maptype =~ /osm-cycle/i  ? 'cycle_map' :
 			'G_SATELLITE_MAP');
 
     my $mapmode = param("mapmode") || "";
@@ -206,6 +209,9 @@ sub get_html {
 	    $link;
 	};
     }
+
+    # assume that osm is always updated
+    my $osm_copyright_year = ((localtime)[5])+1900;
 
     my $html = <<EOF;
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
@@ -574,6 +580,12 @@ sub get_html {
 	    mapType = "normal";
 	} else if (map.getCurrentMapType() == G_HYBRID_MAP) {
 	    mapType = "hybrid";
+	} else if (map.getCurrentMapType() == mapnik_map) {
+	    mapType = "osm-mapnik";
+	} else if (map.getCurrentMapType() == tah_map) {
+	    mapType = "osm-tah";
+	} else if (map.getCurrentMapType() == cycle_map) {
+	    mapType = "osm-cycle";
 	} else {
 	    mapType = "satellite";
 	}
@@ -832,10 +844,68 @@ sub get_html {
         map.addControl(new GLargeMapControl());
         map.addControl(new GMapTypeControl());
         map.addControl(new GOverviewMapControl ());
-	map.setCenter(new GLatLng($centery, $centerx), $zoom, $self->{maptype});
-	new GKeyboardHandler(map);
     } else {
         document.getElementById("map").innerHTML = '<p class="large-error">Sorry, your browser is not supported by <a href="http://maps.google.com/support">Google Maps</a></p>';
+    }
+
+    var copyright = new GCopyright(1,
+        new GLatLngBounds(new GLatLng(-90,-180), new GLatLng(90,180)), 0,
+        '(<a rel="license" href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>)');
+    var copyrightCollection =
+        new GCopyrightCollection('Kartendaten &copy; $osm_copyright_year <a href="http://www.openstreetmap.org/">OpenStreetMap</a> Contributors');
+    copyrightCollection.addCopyright(copyright);
+
+    var tilelayers_mapnik = new Array();
+    tilelayers_mapnik[0] = new GTileLayer(copyrightCollection, 0, 18);
+    tilelayers_mapnik[0].getTileUrl = GetTileUrl_Mapnik;
+    tilelayers_mapnik[0].isPng = function () { return true; };
+    tilelayers_mapnik[0].getOpacity = function () { return 1.0; };
+    var mapnik_map = new GMapType(tilelayers_mapnik,
+        new GMercatorProjection(19), "Mapnik",
+        { urlArg: 'mapnik', linkColor: '#000000' });
+    map.addMapType(mapnik_map);
+
+    var tilelayers_tah = new Array();
+    tilelayers_tah[0] = new GTileLayer(copyrightCollection, 0, 17);
+    tilelayers_tah[0].getTileUrl = GetTileUrl_TaH;
+    tilelayers_tah[0].isPng = function () { return true; };
+    tilelayers_tah[0].getOpacity = function () { return 1.0; };
+    var tah_map = new GMapType(tilelayers_tah,
+        new GMercatorProjection(19), "T\@H",
+        { urlArg: 'tah', linkColor: '#000000' });
+    map.addMapType(tah_map);
+
+    var tilelayers_cycle = new Array();
+    tilelayers_cycle[0] = new GTileLayer(copyrightCollection, 0, 16);
+    tilelayers_cycle[0].getTileUrl = GetTileUrl_cycle;
+    tilelayers_cycle[0].isPng = function () { return true; };
+    tilelayers_cycle[0].getOpacity = function () { return 1.0; };
+    var cycle_map = new GMapType(tilelayers_cycle,
+        new GMercatorProjection(19), "Cycle",
+        { urlArg: 'cycle', linkColor: '#000000' });
+    map.addMapType(cycle_map);
+
+    //// no, I prefer hybrid
+    //map.setMapType(mapnik_map);
+
+    function GetTileUrl_Mapnik(a, z) {
+        return "http://tile.openstreetmap.org/" +
+                    z + "/" + a.x + "/" + a.y + ".png";
+    }
+
+    function GetTileUrl_TaH(a, z) {
+        return "http://tah.openstreetmap.org/Tiles/tile/" +
+                    z + "/" + a.x + "/" + a.y + ".png";
+    }
+
+    function GetTileUrl_cycle(a, z) {
+        return "http://a.andy.sandbox.cloudmade.com/tiles/cycle/" +
+                    z + "/" + a.x + "/" + a.y + ".png";
+    }
+
+    if (GBrowserIsCompatible() ) {
+	map.setCenter(new GLatLng($centery, $centerx), $zoom, $self->{maptype});
+	new GKeyboardHandler(map);
     }
 
     GEvent.addListener(map, "moveend", function() {
