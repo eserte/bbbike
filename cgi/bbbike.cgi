@@ -505,7 +505,7 @@ $with_cat_display = 0;
 =item $use_coord_link
 
 Use an own exact coordinate link (i.e. to Mapserver) instead of a
-"Stadtplan" link. Default: true:
+"Stadtplan" link. Default: true.
 
 =cut
 
@@ -5059,6 +5059,9 @@ sub coord_link {
     my($strname, $coords, %args) = @_;
     my $coords_esc = CGI::escape($coords);
     my $strname_esc = CGI::escapeHTML($strname);
+    if ($data_is_wgs84) {
+	return $strname_esc; # XXX currently not useful with wgs84 data
+    }
     my $jslink = $args{-jslink};
     my $out = qq{<a };
     if ($jslink) {
