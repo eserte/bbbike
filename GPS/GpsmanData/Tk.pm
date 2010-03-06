@@ -445,6 +445,8 @@ sub _track_attributes_editor {
 	     $t->Entry(-textvariable => \$track_attrs_ref->{'srt:comment'}));
     Tk::grid($t->Label(-text => "Event"),
 	     $t->Entry(-textvariable => \$track_attrs_ref->{'srt:event'}));
+    Tk::grid($t->Label(-text => "Frequency"),
+	     $t->Entry(-textvariable => \$track_attrs_ref->{'srt:frequency'}));
     my $weiter;
     Tk::grid($t->Button(-text => 'Ok', -command => sub { $weiter = +1 }),
 	     $t->Button(-text => 'Cancel', -command => sub { $weiter = -1 }));
@@ -737,7 +739,8 @@ extension attribute C<srt:vehicle> is used.
 =item *
 
 Subtracks (track chunks) may be created, with values for the extension
-attributes C<srt:vehicle>, C<srt:brand>, and C<srt:comment>.
+attributes C<srt:vehicle>, C<srt:brand>, C<srt:comment>, and
+C<srt:frequency>.
 
 =item *
 
