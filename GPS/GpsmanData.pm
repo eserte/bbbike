@@ -557,7 +557,7 @@ sub parse {
 			tie %attr, 'Tie::IxHash';
 		    }
 		    for my $l_i (2 .. $#l) {
-			my($key,$val) = split /=/, $l[$l_i];
+			my($key,$val) = split /=/, $l[$l_i], 2;
 			$attr{$key} = $val;
 		    }
 		    $self->TrackAttrs(\%attr);
