@@ -199,8 +199,8 @@ sub get_html {
     };
     if ($host eq 'bbbike.dyndns.org') {
 	$bbbikeroot = "/bbbike";
-    } elsif ($host =~ m{srand\.de}) {
-	$bbbikeroot = dirname(dirname($full->path));
+    } elsif ($host =~ m{bbbike\.org}) {
+	$bbbikeroot = "";
     } elsif ($host eq 'localhost') {
 	$bbbikeroot = "/bbbike";
 	$get_public_link = sub {
