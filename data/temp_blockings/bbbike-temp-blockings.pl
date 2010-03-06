@@ -13245,7 +13245,7 @@ userdel	1::inwork -25441,21563 -25466,21523 -25542,21416
 EOF
      },
      { from  => 1260212611, # undef
-       until => 1260212616, # undef
+       until => undef, # 
        text  => 'Reichenberger Str., Einbahnstraße Richtung Kottbusser Tor',
        type  => 'gesperrt',
        data  => <<EOF,

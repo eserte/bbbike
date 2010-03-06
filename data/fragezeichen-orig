@@ -108,6 +108,9 @@ Teufelsseechaussee: Einrichtung als Fahrradstraße, wo genau?	? 194,10846 96,1070
 #: section ignorieren vvv
 #: section Straßen in Bau und Planung vvv
 # 
+#: next_check: 2011-09-30
+#: by: http://www.potsdam.de/cms/beitrag/10061626/966975/
+Mangerstr.: Bauarbeiten bis September 2011, danach asphaltiert	?::inwork -11669,-138 -11751,-58 -11831,-70 -11903,-71 -12000,-156 -12064,-284 -12108,-291 -12265,-418
 Wohngebiet Carlsgarten: Sind schon weitere Straßen gebaut (z.B. Johanna-Hofer-Str./Karlshorst/10318)?	? 19223,8089 19222,7996
 #: by: http://www.potsdam.de/cms/beitrag/10056300/757395/
 Mauerweg: evtl. existiert hier bereits ein geschotterter Radweg parallel zur Straße	? -8799,3778 -9064,3667 -9156,3451 -9399,3297 -9530,3165 -9999,2615 -10105,2458
@@ -2149,7 +2152,6 @@ Rehfeldtstr.: Qualität?	? 26129,-807 26032,-704
 (Rohrwallallee - Windwallstr.): Existiert eine Verbindung für Radfahrer? Qualität?	? 26846,-2176 27021,-2336
 Zum Seeblick: Qualität?	? 27017,-2660 27093,-2560 27161,-2474 27191,-2432
 Nuscheweg: Qualität?	? 27037,-2492 27093,-2560 27149,-2620
-Wildganssteig: Qualität?	? -1602,22422 -1301,22347 -956,22262 -762,22216 -677,22194 -540,22172 -452,22145 -362,22105
 Nelkenweg (Rudow): Qualität?	? 18403,1143 18534,965
 Tulpenweg (Rudow): Qualität?	? 18487,1174 18554,1047
 Schönbergweg: Qualität?	? 18577,872 18566,866 18529,840 18446,780
@@ -2274,8 +2276,6 @@ Brittendorfer Weg: Qualität?	? 1884,3106 1946,3142
 Drei-Zinnen-Weg: Qualität?	? 3106,1344 3221,1159
 Rilkepfad: Qualität? Zufahrt zum Dahlemer Weg für Radfahrer möglich?	? 1645,1486 1762,1534 1825,1534
 Melker Str.: Qualität? Zufahrt zum Dahlemer Weg für Radfahrer möglich?	? 1616,1594 1778,1659 1848,1647
-Waldmüllerstr.: Qualität?	? 1558,1805 1658,1852 1747,1887
-Nienkemperstr.: Qualität?	? 1658,1852 1640,1922 1709,2186 1812,2594
 Türksteinweg: Qualität? Existiert ein direkter Zugang zum Heinrich-Laehr-Park?	? 1181,1169 1321,1199 1359,1204
 Türksteinweg: Qualität?	? 1321,1199 1274,1376 1198,1662
 Im Gartenheim: Qualität?	? 5707,4777 5690,4744 5659,4761 5677,4794
@@ -2425,6 +2425,7 @@ Polierweg: Qualität? Ist die Straße (teilweise) eine Einbahnstraße? Wenn ja, gil
 Steinträgerweg: Qualität? Können Autofahrer den Hochspannungsweg überqueren?	? 12971,2297 12948,2484 12937,2575 12924,2617 12907,2660 12849,2751 12810,2751 12693,2746
 #: XXX Wenig Referenzen im Netz:
 Straße 245: Existiert diese Straße? Qualität?	? 11851,3980 11819,4102
+#: XXX laut anonymous: Asphalt, Q2, aber keine Angaben zu den anderen Fragen
 Teterower Str.: Qualität? Ist die Straße (teilweise) eine Einbahnstraße? Wenn ja, gilt die Einbahnstraßenregelung nur für Autofahrer oder auch für Radfahrer? Kann die Buschkrugallee in Höhe Teterower Str. überquert werden?	? 13820,5203 13717,5175 13626,5153
 Wesenberger Ring: Qualität? Ist die Straße eine Einbahnstraße? Wenn ja, gilt die Einbahnstraßenregelung nur für Autofahrer oder auch für Radfahrer?	? 13162,3576 13206,3674 13238,3794 13229,3836 13206,3854 13165,3850 13129,3809 13030,3664
 An der Fließwiese: Qualität?	? -998,12689 -1022,12743 -1020,12801 -962,12951 -950,13091 -912,13106 -815,13067
@@ -5485,9 +5486,6 @@ Am Försteracker (Potsdam): Qualität?	? -10924,-4319 -10915,-4308 -10827,-4172 -1
 #: XXX_indoor str_cont_ausnahme-Eintrag
 Hasensprung (Potsdam): Qualität?	? -11153,-4512 -10899,-4355 -10888,-4346
 Hasensprung (Potsdam): Qualität?	? -10915,-4308 -10888,-4346 -10840,-4403
-#: XXX_indoor str_cont_ausnahme-Eintrag
-Saarmunder Str. (Potsdam): Qualität?	? -10748,-4065 -10662,-4280 -10577,-4552 -10517,-4686 -10453,-4819
-Saarmunder Str. (Potsdam): Qualität?	? -10331,-5085 -10254,-5307 -10188,-5486
 Zum Jagenstein (Potsdam): Qualität?	? -10824,-4434 -10722,-4618 -10659,-4750 -10596,-4892 -10453,-4819 -10359,-4780
 Ginsterweg (Potsdam): Qualität?	? -10659,-4750 -10517,-4686
 Zum Kahleberg (Potsdam): Qualität?	? -11013,-4671 -10999,-4820

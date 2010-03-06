@@ -494,7 +494,15 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       undef,
+       {
+         'until' => undef,
+         'text' => 'Reichenberger Str., Einbahnstraße Richtung Kottbusser Tor',
+         'from' => 1260212611,
+         'id' => 1563,
+         'data' => 'userdel	1::inwork 12229,10014 12398,9938 12556,9862
+',
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
