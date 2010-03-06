@@ -25,13 +25,14 @@ use lib ($FindBin::RealBin, "$FindBin::RealBin/..");
 use CGI qw();
 use Getopt::Long;
 
-use BBBikeTest qw(get_std_opts like_html unlike_html $cgidir xmllint_string);
+use BBBikeTest qw(get_std_opts like_html unlike_html $cgidir
+		  xmllint_string gpxlint_string kmllint_string);
 
 sub bbbike_cgi_search ($$);
 sub bbbike_cgi_geocode ($$);
 
 #plan 'no_plan';
-plan tests => 52;
+plan tests => 60;
 
 if (!GetOptions(get_std_opts("cgidir"),
 	       )) {
@@ -178,6 +179,38 @@ SKIP: {
 	$doc->documentElement->setNamespaceDeclURI(undef, undef);
 	my $name = $doc->findvalue('/kml/Document/Placemark/name');
 	like($name, qr{^Wilhelmshöhe}, 'Expected name in right encoding');
+    }
+
+    # No route found with these values
+    my %noroute_params = ('startname'=>'Pazifik1',
+			  'startc_wgs84'=>'-144.316406,-4.915833',
+			  'zielname'=>'Pazifik2',
+			  'zielc_wgs84'=>'-139.570312,-4.565474',
+			 );
+
+    {
+	my $resp = bbbike_cgi_search +{%noroute_params, output_as => 'xml'}, 'No route, XML output';
+	my $content = $resp->decoded_content(charset => 'none');
+	my $doc = $p->parse_string($content);
+	like($doc->findvalue('/BBBikeRoute/Error'), qr{.+}, 'Found expected error message')
+	    or diag $content;
+    }
+
+    {
+	my $resp = bbbike_cgi_search +{%noroute_params, output_as => 'gpx-route'}, 'No route, GPX route output';
+	gpxlint_string($resp->decoded_content(charset => 'none'));
+    }
+
+    {
+	local $TODO = "Should not return an empty document";
+	my $resp = bbbike_cgi_search +{%noroute_params, output_as => 'gpx-track'}, 'No route, GPX track output';
+	gpxlint_string($resp->decoded_content(charset => 'none'));
+    }
+
+    {
+	local $TODO = "Should not return an empty document";
+	my $resp = bbbike_cgi_search +{%noroute_params, output_as => 'kml-track'}, 'No route, KML track output';
+	kmllint_string($resp->decoded_content(charset => 'none'));
     }
 }
 

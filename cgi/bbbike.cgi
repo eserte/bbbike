@@ -4113,13 +4113,15 @@ sub display_route {
     }
 
  OUTPUT_DISPATCHER:
-    if (defined $output_as && $output_as =~ /^(xml|yaml|yaml-short|perldump|gpx-route)$/ && $r && $r->path) {
+    if (defined $output_as && $output_as =~ /^(xml|yaml|yaml-short|perldump|gpx-route)$/) {
 	require Karte;
 	Karte::preload(qw(Polar Standard));
 	for my $tb (@affecting_blockings) {
 	    $tb->{longlathop} = [ map { join ",", $Karte::Polar::obj->trim_accuracy($Karte::Polar::obj->standard2map(split /,/, $_)) } @{ $tb->{hop} || [] } ];
 	}
-	my $res = {
+	my $res;
+	if ($r && $r->path) {
+	    $res = {
 		   Route => \@out_route,
 		   Len   => $r->len, # in meters
 		   Trafficlights => $r->trafficlights,
@@ -4132,6 +4134,12 @@ sub display_route {
 		   } @{ $r->path }],
 		   AffectingBlockings => \@affecting_blockings,
 		  };
+	} else {
+	    $res = {
+		    Error => 'No route found',
+		    LongLatPath => [],
+		  };
+	}
 	if ($output_as eq 'perldump') {
 	    require Data::Dumper;
 	    my $filename = filename_from_route($startname, $zielname) . ".txt";
