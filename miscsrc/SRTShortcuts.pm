@@ -1453,9 +1453,10 @@ sub gps_data_viewer {
     my $gps_view;
     my $gps;
 
-    use vars qw($gps_data_viewer_file);
-    $gps_data_viewer_file = "$FindBin::RealBin/misc/gps_data" if !defined $gps_data_viewer_file;
-    $gps_data_viewer_file = $FindBin::RealBin                 if !defined $gps_data_viewer_file;
+    use vars qw($gps_data_viewer_file $gps_data_dir);
+    $gps_data_dir = "$FindBin::RealBin/misc/gps_data" if !defined $gps_data_dir;
+    $gps_data_viewer_file = $gps_data_dir             if !defined $gps_data_viewer_file;
+    $gps_data_viewer_file = $FindBin::RealBin         if !defined $gps_data_viewer_file;
 
     my $show_file = sub {
 	if (defined $gps_data_viewer_file) {
@@ -1505,6 +1506,11 @@ sub gps_data_viewer {
 		       });
     }
 
+    my $vehicles_to_brands;
+    if (-r "$gps_data_dir/vehicles_brands.yml" && eval { require YAML::Syck; 1 }) {
+	$vehicles_to_brands = YAML::Syck::LoadFile("$gps_data_dir/vehicles_brands.yml");
+    }
+
     $gps_view = $t->GpsmanData(-command => sub {
 				   my(%args) = @_;
 				   my $wpt = $args{-wpt};
@@ -1519,6 +1525,7 @@ sub gps_data_viewer {
 			       -selectforeground => 'black',
 			       -selectbackground => 'green',
 			       -velocity => 'per_vehicle',
+			       -vehiclestobrands => $vehicles_to_brands,
 			      )->pack(qw(-fill both -expand 1));
 
     {

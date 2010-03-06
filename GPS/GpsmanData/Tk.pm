@@ -158,6 +158,7 @@ sub Populate {
        -selectbackground => [$real_dv],
        -selectforeground => [$real_dv],
        -velocity => ['PASSIVE', undef, undef, 'absolute'],
+       -vehiclestobrands => ['PASSIVE', undef, undef, undef],
       );
 }
 
@@ -432,15 +433,36 @@ sub _track_attributes_editor {
 	     $t->Label(-text => $line_content));
     Tk::grid($t->Label(-text => "Name"),
 	     $t->Entry(-textvariable => $track_name_ref));
+    my $brands_be;
+    if ($self->cget(-vehiclestobrands)) {
+	$brands_be = $t->BrowseEntry(-textvariable => \$track_attrs_ref->{'srt:brand'},
+				     -autolimitheight => 1,
+				     -autolistwidth => 1,
+				    );
+    }
+    my $fill_brands = sub {
+	my($vehicle) = @_;
+	if (exists $self->cget(-vehiclestobrands)->{$vehicle}) {
+	    $brands_be->configure(-choices => $self->cget(-vehiclestobrands)->{$vehicle});
+	} else {
+	    $brands_be->configure(-choices => []);
+	}
+    };
     Tk::grid($t->Label(-text => "Vehicle"),
 	     $t->BrowseEntry(-textvariable => \$track_attrs_ref->{'srt:vehicle'},
 			     -autolimitheight => 1,
 			     -autolistwidth => 1,
 			     -listheight => 12, # hmmm, -autolimitheight does not work? or do i misunderstand this option?
 			     -choices => [sort keys %vehicle_to_color],
+			     ($brands_be
+			      ? (-browsecmd => sub { my(undef, $new_value) = @_; $fill_brands->($new_value) })
+			      : ()
+			     ),
 			    ));
+    $fill_brands->($track_attrs_ref->{'srt:vehicle'});
     Tk::grid($t->Label(-text => "Brand"),
-	     $t->Entry(-textvariable => \$track_attrs_ref->{'srt:brand'}));
+	     ($brands_be ? $brands_be : $t->Entry(-textvariable => \$track_attrs_ref->{'srt:brand'})),
+	    );
     Tk::grid($t->Label(-text => "Comment"),
 	     $t->Entry(-textvariable => \$track_attrs_ref->{'srt:comment'}));
     Tk::grid($t->Label(-text => "Event"),
