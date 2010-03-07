@@ -151,42 +151,19 @@ sub stage_filtertracks {
 	    my($r1,$r2) = @{$r->[Strassen::COORDS]}[$r_i-1,$r_i];
 	    for my $stage (STAGE_SEARCH_FROM, STAGE_SEARCH_TO) {
 		my $fence_coords = $stage == STAGE_SEARCH_FROM ? \@from : \@to;
-	    FENCE_CHECK: for my $p_i (0 .. $#$fence_coords-1) {
-		    my($p1, $p2) = ($fence_coords->[$p_i],$fence_coords->[$p_i+1]);
-		    for my $checks ([$r1, $p1],
-				    [$r1, $p2],
-				    [$r2, $p1],
-				    [$r2, $p2],
-				   ) {
-			if ($checks->[0] eq $checks->[1]) {
-			    if ($stage == STAGE_SEARCH_FROM) {
-				$found_from{$file} = [$deb_r, [$checks->[0]], [$checks->[1]], [$n,$r_i-1]];
-			    } else { # STAGE_SEARCH_TO
-				if ($found_from{$file}) {
-				    my $found_to = [$deb_r, [$checks->[0]], [$checks->[1]], [$n,$r_i-1]];
-				    push @included, [$file, $found_from{$file}, $found_to];
-				    delete $found_from{$file};
-				}
-			    }
-			    next RECORD;
+		my $res_coords = is_crossing_fence($r1,$r2,$fence_coords);
+		if ($res_coords) {
+		    my $res = [$deb_r, @$res_coords, [$n,$r_i-1]];
+		    if ($stage == STAGE_SEARCH_FROM) {
+			$found_from{$file} = $res;
+		    } else { # STAGE_SEARCH_TO
+			if ($found_from{$file}) {
+			    my $found_to = $res;;
+			    push @included, [$file, $found_from{$file}, $found_to];
+			    delete $found_from{$file};
 			}
 		    }
-		    if (VectorUtil::intersect_lines(split(/,/, $p1),
-						    split(/,/, $p2),
-						    split(/,/, $r1),
-						    split(/,/, $r2),
-						   )) {
-			if ($stage == STAGE_SEARCH_FROM) {
-			    $found_from{$file} = [$deb_r, [$r1,$r2], [$p1,$p2], [$n,$r_i-1]];
-			} else { # STAGE_SEARCH_TO
-			    if ($found_from{$file}) {
-				my $found_to = [$deb_r, [$r1,$r2], [$p1,$p2], [$n,$r_i-1]];
-				push @included, [$file, $found_from{$file}, $found_to];
-				delete $found_from{$file};
-			    }
-			}
-			next RECORD;
-		    }
+		    next RECORD;
 		}
 	    }
 	}
@@ -580,6 +557,30 @@ sub next_stage {
     for my $i (0 .. $#stages-1) {
 	if ($this_stage eq $stages[$i]) {
 	    return $stages[$i+1];
+	}
+    }
+    undef;
+}
+
+sub is_crossing_fence {
+    my($r1, $r2, $fence_coords) = @_;
+    for my $p_i (0 .. $#$fence_coords-1) {
+	my($p1, $p2) = ($fence_coords->[$p_i],$fence_coords->[$p_i+1]);
+	for my $checks ([$r1, $p1],
+			[$r1, $p2],
+			[$r2, $p1],
+			[$r2, $p2],
+		       ) {
+	    if ($checks->[0] eq $checks->[1]) {
+		return [[$checks->[0]], [$checks->[1]]];
+	    }
+	}
+	if (VectorUtil::intersect_lines(split(/,/, $p1),
+					split(/,/, $p2),
+					split(/,/, $r1),
+					split(/,/, $r2),
+				       )) {
+	    return [[$r1,$r2], [$p1,$p2]];
 	}
     }
     undef;
