@@ -310,8 +310,8 @@ Skalitzer Str./Zeughofstr.	3nocross::ignrte 12328,10442 12401,10461 12545,10496
 Skalitzer Str. -> Zeughofstr.: Skalitzer Str./Zeughofstr.	3::igndisp 12328,10442 12401,10461 12456,10563
 Zeughofstr. -> Skalitzer Str.: Skalitzer Str./Zeughofstr.	3::igndisp 12456,10563 12401,10461 12545,10496
 Stralauer/Damaschkestr.	3nocross::ignrte 13678,10685 13779,10642 13919,10583
-Stralauer Allee -> Danneckerstr.: Stralauer/Damaschkestr.	3::igndisp 13678,10685 13779,10642 13854,10858
-Danneckerstr. -> Stralauer Allee: Stralauer/Damaschkestr.	3::igndisp 13854,10858 13779,10642 13919,10583
+Stralauer Allee -> Danneckerstr.: Stralauer/Damaschkestr.	3::igndisp 13678,10685 13779,10642 13856,10864
+Danneckerstr. -> Stralauer Allee: Stralauer/Damaschkestr.	3::igndisp 13856,10864 13779,10642 13919,10583
 Skalitzer/Admiralstr.	3nocross::ignrte 11393,10390 11335,10375 11316,10372
 Skalitzer Str. -> Admiralstr.: Skalitzer/Admiralstr.	3::igndisp 11393,10390 11335,10375 11325,10317
 Admiralstr. -> Skalitzer Str.: Skalitzer/Admiralstr.	3::igndisp 11325,10317 11335,10375 11316,10372
@@ -321,7 +321,7 @@ Lintruper Str.	1 10307,922 10380,757
 Edison-/Siemensstr.	3 17992,6436 17962,6674 17860,6644 17766,6616
 Edisonstr.	1 17962,6674 17992,6436
 Brückenstr./Edisonstr.	1 17992,6436 17952,6246 17930,6175 17900,6072
-Müggelheimer Str.	3nocross::ignrte 22686,4310 22556,4386 22451,4441 22419,4457 22396,4464
+Müggelheimer Str.	3nocross::ignrte 22674,4309 22556,4386 22451,4441 22419,4457 22396,4464
 Karlstr. -> Müggelheimer Str.: Müggelheimer Str.	3::igndisp 22458,4134 22556,4386 22451,4441
 Spitzerstr. -> Müggelheimer Str.: Müggelheimer Str.	3::igndisp 22425,4370 22451,4441 22419,4457
 Müggelheimer Str. -> Spitzerstr.: Müggelheimer Str.	3::igndisp 22556,4386 22451,4441 22425,4370

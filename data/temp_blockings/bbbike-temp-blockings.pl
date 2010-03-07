@@ -2068,7 +2068,7 @@ EOF
        text  => '"Bridge Partie", Modersohnbrücke von 21.06.2005, 06.00 Uhr bis 22.06.2005, 06:00 Uhr gesperrt ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 14026,10869 14043,10928 14081,11057 14102,11133 14139,11269
+userdel	2 14026,10869 14043,10928 14076,11057 14096,11134 14134,11272
 EOF
      },
      { from  => 1118949539, # 2005-06-16 21:18
@@ -5067,7 +5067,7 @@ EOF
        text  => 'Simon-Dach-Str.: Bauarbeiten an der Wühlischstr., Einbahnstraße, bis 2006-09-15 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1::inwork 13890,11411 13954,11647
+userdel	1::inwork 13888,11405 13954,11647
 EOF
      },
      { from  => 1152363870, # 2006-07-08 15:04
@@ -13142,7 +13142,7 @@ EOF
        text  => 'Simplonstr. zwischen Lenbachstr. und Matkowskystr. bis 24.12.2008 gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 14597,11069 14530,11137
+userdel	2::inwork 14601,11074 14530,11137
 EOF
      },
      { from  => 1229377415, # 2008-12-15 22:43
@@ -13533,7 +13533,7 @@ EOF
        text  => 'Bauarbeiten in der Simplonstr., Straße gesperrt',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork; 14597,11069 14530,11137
+userdel	q4::inwork; 14601,11074 14530,11137
 userdel	q4::inwork 14530,11137 14465,11195
 EOF
      },

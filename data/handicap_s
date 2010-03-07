@@ -212,9 +212,9 @@ Mussehlstr.: Bordsteine (Bayernring und Wolffring)	q3 8836,8564 8756,8453 8711,8
 (Fritz-Br‰uning-Promenade): Bordsteine, Fuﬂg‰nger	q3 8731,8020 8620,8018
 (Teltowkanal, Nordufer): Fuﬂg‰nger (eigentlich f¸r Radfahrer verboten)	q2 8750,5173 9118,5328 9145,5323 9182,5332
 (Kynaststr. - Uferwanderweg): Fuﬂg‰nger	q1 14843,10621 14906,10587
-(Kynaststr. - Paul-und-Paula-Ufer): Fuﬂg‰nger	q1 14821,10478 14864,10451
-Am Rummelsburger See: Fuﬂg‰nger, kurvenreich	q1 15787,9321 15819,9430 15749,9558 15741,9590 15703,9605 15600,9695 15626,9710 15583,9779 15545,9818 15465,9860 15347,9922 15295,10022 15260,10048 15314,10121 15261,10167 15204,10201 15134,10243 15101,10263 15044,10297 14892,10411 14864,10451 14884,10508 14906,10587 14937,10598 14990,10581 15100,10637 15248,10562
-Am Rummelsburger See: teilweise enge Kurven, Fuﬂg‰nger an schˆnen Tagen	q2 15453,10415 15469,10329 15496,10277 15518,10234 15604,10204 15601,10179 15645,10147 15713,10035 15786,9957 15790,9920 15828,9875 15931,9846
+(Kynaststr. - Paul-und-Paula-Ufer): Fuﬂg‰nger	q1 14821,10478 14868,10467
+Am Rummelsburger See: Fuﬂg‰nger, kurvenreich	q1 15787,9321 15819,9430 15749,9558 15741,9590 15703,9605 15600,9695 15626,9710 15583,9779 15545,9818 15465,9860 15347,9922 15295,10022 15260,10048 15314,10121 15261,10167 15204,10201 15134,10243 15101,10263 15044,10297 14892,10411 14864,10451 14868,10467 14884,10508 14906,10587 14937,10598 14990,10581 15100,10637 15248,10562
+Am Rummelsburger See: teilweise enge Kurven, Fuﬂg‰nger an schˆnen Tagen	q2 15453,10415 15457,10342 15496,10277 15518,10234 15604,10204 15601,10179 15645,10147 15713,10035 15786,9957 15790,9920 15828,9875 15931,9846
 Unterf¸hrung unter Adlergestell und S-Bahn ist sehr eng, nicht f¸r Anh‰nger geeignet	q3 20939,2413 20810,2398
 Vorfahrt Reichstagsgeb‰ude: Fuﬂg‰nger	q3 8400,12417 8399,12616
 Am Teltowkanal: kurverreich und recht eng	q1 3743,1385 3695,1308 3619,1207 3458,1063 3366,1007
@@ -472,7 +472,7 @@ Uferweg: Fuﬂg‰nger, Biergarten	q3 3747,12679 3862,12675
 Uferweg: Fuﬂg‰nger	q1 3862,12675 3938,12687 4147,12699 4206,12691 4242,12684
 (Neues Ufer - Kaiserin-Augusta-Allee): Fuﬂg‰nger	q1 4456,12918 4514,12936 4581,13066 4576,13115 4547,13139 4561,13233
 Bundesratufer: Fuﬂg‰nger	q2 5938,12848 5922,12765
-Sonntagstr.: Richtung S-Bahnhof viele Fuﬂg‰nger	q3 14798,10985 14752,11041
+Sonntagstr.: Richtung S-Bahnhof viele Fuﬂg‰nger	q3 14845,10954 14798,10985 14752,11041
 BouchÈstr.: Bodenschwellen	q0 13489,9456 13352,9308
 BouchÈstr.: Bodenschwellen	q0 13645,9621 13867,9864
 Radenzer Str.: zwei Bodenschwellen	q1 16220,6277 16304,6358
@@ -547,6 +547,9 @@ Cheruskerpark: Fuﬂg‰nger	q1 7437,8712 7403,8693 7369,8583 7352,8390 7283,8265 72
 (Rhinstr. - Arendsweg/Landsberger Allee): Bordsteine	q3 17230,14206 17221,14268
 (Georg-Knorr-Str. - Landsberger Allee): Rampe	q3 19151,15007 19152,14999 19127,14984 19156,14987 19157,14979
 (Georg-Knorr-Str. - Frank-Schweitzer-Str.): Unterf¸hrung, Fuﬂg‰nger	q2 19157,14979 19171,14938 19175,14926
+(Rudolfplatz, Park): Fuﬂg‰nger, Bordsteine, Radfahren verboten, ggfs. schieben	q3 14026,10869 13896,10851
+(Hoeppnerstr. - Hessenring): eng, Fuﬂg‰nger	q3 8376,7440 8446,7524 8549,7622
+(Kolonie Z‰hringer Korso): eng	q3 8553,7795 8554,7746 8573,7710 8549,7622
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q3 11805,19071 11937,19175
 Ebersstr.: Sch¸ler	q2 7245,8583 7292,8631
 Straﬂe 103 (Niederschˆnhausen): enge Straﬂe	q1 10914,20065 11051,19789
@@ -1222,7 +1225,7 @@ Jahnstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 11500,91
 Schulenburgring: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 9027,8431 9022,8581 9006,8602
 Neue Schˆnhauser Str.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q1::igndisp; 10527,13257 10423,13215 10310,13227
 Kirchhofstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 13188,7590 13117,7471 13027,7368
-Niemannstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 14252,11368 14211,11229
+Niemannstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 14254,11377 14211,11229
 Bjˆrnsonstr: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q1::igndisp; 10209,16674 10197,16528
 Eichhornstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 8232,11414 8258,11254
 Paul-Junius-Str.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q2::igndisp; 15084,12975 15085,13105

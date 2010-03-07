@@ -1462,16 +1462,16 @@ Di, 16.02.2010
 13596,10722   Stralauer Allee/Ehrenbergstr.      W->O                 19:06:59
 13596,10722   Stralauer Allee/Ehrenbergstr.      W->O       19:07:44
 13596,10722   Stralauer Allee/Ehrenbergstr.      W->N       19:08:18
-14007,10802   Modersohnstr./Corinthstr./Am Rudo  W->O       19:09:32
-14139,11269   Revaler Str./Modersohnstr.         S->N                 19:11:30
-14139,11269   Revaler Str./Modersohnstr.         S->N       19:12:17
+14011,10812   Modersohnstr./Corinthstr./Am Rudo  W->O       19:09:32
+14134,11272   Revaler Str./Modersohnstr.         S->N                 19:11:30
+14134,11272   Revaler Str./Modersohnstr.         S->N       19:12:17
 14211,11552   Wühlischstr./Gärtnerstr.           S->N                 19:12:43
 
 #WPTFILE: /home/e/eserte/src/bbbike/misc/gps_data/ampelschaltung/20100217.wpt
 # Punkt       Kreuzung                           Dir    Zyk grün      rot
 # ----------------------------------------------------------------------------
 Mi, 17.02.2010
-14139,11269   Revaler Str./Modersohnstr.         N->S       09:30:07
+14134,11272   Revaler Str./Modersohnstr.         N->S       09:30:07
 13596,10722   Stralauer Allee/Ehrenbergstr.      N->S                 09:33:38
 13596,10722   Stralauer Allee/Ehrenbergstr.      N->S       09:34:37
 13332,10832   Am Oberbaum/Stralauer Allee/Warsc  O->W                 09:35:05
@@ -1508,13 +1508,13 @@ Mi, 17.02.2010
 13332,10832   Am Oberbaum/Stralauer Allee/Warsc  S->N       19:18:44
 13596,10722   Stralauer Allee/Ehrenbergstr.      W->O       19:19:43
 13596,10722   Stralauer Allee/Ehrenbergstr.      W->N       19:20:18
-14007,10802   Modersohnstr./Corinthstr./Am Rudo  W->O       19:26:01
-14007,10802   Modersohnstr./Corinthstr./Am Rudo  W->O                 19:26:15
-14007,10802   Modersohnstr./Corinthstr./Am Rudo  W->O       19:27:34
-14007,10802   Modersohnstr./Corinthstr./Am Rudo  W->O                 19:27:45
-14139,11269   Revaler Str./Modersohnstr.         S->N                 19:31:01
-14139,11269   Revaler Str./Modersohnstr.         S->N       19:31:47
-14139,11269   Revaler Str./Modersohnstr.         S->N                 19:32:31
+14011,10812   Modersohnstr./Corinthstr./Am Rudo  W->O       19:26:01
+14011,10812   Modersohnstr./Corinthstr./Am Rudo  W->O                 19:26:15
+14011,10812   Modersohnstr./Corinthstr./Am Rudo  W->O       19:27:34
+14011,10812   Modersohnstr./Corinthstr./Am Rudo  W->O                 19:27:45
+14134,11272   Revaler Str./Modersohnstr.         S->N                 19:31:01
+14134,11272   Revaler Str./Modersohnstr.         S->N       19:31:47
+14134,11272   Revaler Str./Modersohnstr.         S->N                 19:32:31
 14211,11552   Wühlischstr./Gärtnerstr.           S->N                 19:33:49
 14211,11552   Wühlischstr./Gärtnerstr.           S->N       19:34:26
 14211,11552   Wühlischstr./Gärtnerstr.           S->N                 19:35:13
@@ -1612,11 +1612,11 @@ Fr, 19.02.2010
 13588,11490   Warschauer Str./Revaler Str.       S->N       20:10:56
 13588,11490   Warschauer Str./Revaler Str.       S->N                 20:11:28
 13588,11490   Warschauer Str./Revaler Str.       S->N       20:12:06
-14139,11269   Revaler Str./Modersohnstr.         W->O                 20:15:38
-14139,11269   Revaler Str./Modersohnstr.         W->O       20:16:32
-14139,11269   Revaler Str./Modersohnstr.         W->O                 20:16:50
-14139,11269   Revaler Str./Modersohnstr.         W->O       20:17:42
-14139,11269   Revaler Str./Modersohnstr.         W->O                 20:17:58
+14134,11272   Revaler Str./Modersohnstr.         W->O                 20:15:38
+14134,11272   Revaler Str./Modersohnstr.         W->O       20:16:32
+14134,11272   Revaler Str./Modersohnstr.         W->O                 20:16:50
+14134,11272   Revaler Str./Modersohnstr.         W->O       20:17:42
+14134,11272   Revaler Str./Modersohnstr.         W->O                 20:17:58
 14211,11552   Wühlischstr./Gärtnerstr.           S->N                 20:18:34
 14211,11552   Wühlischstr./Gärtnerstr.           S->N       20:19:25
 14211,11552   Wühlischstr./Gärtnerstr.           S->N                 20:19:44
@@ -1858,7 +1858,7 @@ Fr, 26.02.2010
 13454,11119                                      S->N       19:48:28
 13541,11355   Warschauer Str./Helsingforser Str  S->N                 19:48:53
 13541,11355   Warschauer Str./Helsingforser Str  S->N       19:49:27
-14139,11269   Revaler Str./Modersohnstr.         W->O                 19:51:09
+14134,11272   Revaler Str./Modersohnstr.         W->O                 19:51:09
 
 #WPTFILE: /home/e/eserte/src/bbbike/misc/gps_data/ampelschaltung/20100302.wpt
 # Punkt       Kreuzung                           Dir    Zyk grün      rot
@@ -1867,8 +1867,8 @@ Di, 02.03.2010
 13919,10583   Stralauer Allee/Modersohnstr.      W->O                 18:38:48
 13919,10583   Stralauer Allee/Modersohnstr.      W->O       18:39:28
 13919,10583   Stralauer Allee/Modersohnstr.      W->N       18:39:28
-14007,10802   Modersohnstr./Corinthstr./Am Rudo  S->N       18:40:02
-14139,11269   Revaler Str./Modersohnstr.         S->N       18:41:47
+14011,10812   Modersohnstr./Corinthstr./Am Rudo  S->N       18:40:02
+14134,11272   Revaler Str./Modersohnstr.         S->N       18:41:47
 
 # Anmerkungen:
 #  Kreuzung:
