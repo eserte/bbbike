@@ -4124,7 +4124,7 @@ sub display_route {
 		   Speed => \%speed_map,
 		   Power => \%power_map,
 		   ($sess ? (Session => $sess->{_session_id}) : ()),
-		   (!$data_is_wgs84 ? (Path => [ map { join ",", @$_ } @{ $r->path }]) : ()), # 
+		   Path => [ map { join ",", @$_ } @{ $r->path }],
 		   LongLatPath => [ map {
 		       join ",", convert_data_to_wgs84(@$_)
 		   } @{ $r->path }],
