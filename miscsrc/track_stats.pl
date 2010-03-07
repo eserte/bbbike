@@ -46,6 +46,7 @@ my $ignore_rx;
 my $start_stage;
 my $state_file;
 my $sortby = "difftime";
+my $outbbd;
 my $v;
 GetOptions("stage=s" => \$start_stage,
 	   "state=s" => \$state_file,
@@ -56,6 +57,8 @@ GetOptions("stage=s" => \$start_stage,
 	   "gpsmandir=s" => \$gpsman_dir,
 
 	   "sortby=s" => \$sortby,
+
+	   "outbbd=s" => \$outbbd,
 
 	   "v+" => \$v,
 	  ) or die "usage?";
@@ -198,6 +201,7 @@ sub stage_filtertracks {
 sub stage_trackdata {
     my $included = $state->{included};
     my @results;
+    my @outbbd_records;
     my %seen_device;
     for my $trackdef (@$included) {
 	my($file, $fromdef, $todef) = @$trackdef;
@@ -214,6 +218,7 @@ sub stage_trackdata {
 		next;
 	    }
 	}
+	my @outbbd_coords;
 	my $stage = 'from';
 	my $result;
 	my $length = 0;
@@ -278,14 +283,22 @@ sub stage_trackdata {
 				   vehicles => \%vehicles,
 				  };
 			$stage = 'to';
+			if ($outbbd) {
+			    if ($intersect_wpt) {
+				push @outbbd_coords, $intersect_wpt->Longitude.",".$intersect_wpt->Latitude;
+			    } else {
+				push @outbbd_coords, $wpt2->Longitude.",".$wpt2->Latitude;
+			    }
+			}
 		    }
 		} else {	# $stage eq 'to'
-		    $length += $chunk->wpt_dist($chunk->Points->[$wpt_i-1], $chunk->Points->[$wpt_i]);
+		    my($wpt1,$wpt2) = ($chunk->Points->[$wpt_i-1], $chunk->Points->[$wpt_i]);
+		    $length += $chunk->wpt_dist($wpt1, $wpt2);
+		    push @outbbd_coords, $wpt1->Longitude.",".$wpt1->Latitude if $outbbd;
 		    if (($points[$wpt_i-1] eq $to1 &&
 			 $points[$wpt_i  ] eq $to2) ||
 			($points[$wpt_i-1] eq $to2 &&
 			 $points[$wpt_i  ] eq $to1)) {
-			my($wpt1,$wpt2) = ($chunk->Points->[$wpt_i-1], $chunk->Points->[$wpt_i]);
 			my($epoch1,$epoch2) = ($wpt1->Comment_to_unixtime($chunk), $wpt2->Comment_to_unixtime($chunk));
 			my $epoch;
 			my($intersect_wpt) = eval { _schnittpunkt_as_wpt([$to1,$to2],[$to_fence1,$to_fence2]) };
@@ -321,11 +334,32 @@ sub stage_trackdata {
 			}
 
 			push @results, $result;
+
+			if ($outbbd) {
+			    if ($intersect_wpt) {
+				push @outbbd_coords, $intersect_wpt->Longitude.",".$intersect_wpt->Latitude;
+			    } else {
+				push @outbbd_coords, $wpt1->Longitude.",".$wpt1->Latitude;
+			    }
+			    push @outbbd_records, {result => $result, coords => \@outbbd_coords};
+			}
+
 			last PARSE_TRACK;
 		    }
 		}
 	    }
 	}
+    }
+
+    if ($outbbd) {
+	open my $ofh, ">", $outbbd or die "Can't write to $outbbd: $!";
+	print $ofh "#: map: polar\n#:\n";
+	for my $outbbd_record (@outbbd_records) {
+	    my($result, $coords) = @{$outbbd_record}{qw(result coords)};
+	    print $ofh "difftime=$result->{difftime} length=$result->{length}\tX @$coords\n";
+	}
+	close $ofh
+	    or die "Error while closing $outbbd: $!";
     }
 
     $state->{results} = \@results;
