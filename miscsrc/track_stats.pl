@@ -47,6 +47,7 @@ my $start_stage;
 my $state_file;
 my $sortby = "difftime";
 my $outbbd;
+my $detect_pause;
 my $v;
 GetOptions("stage=s" => \$start_stage,
 	   "state=s" => \$state_file,
@@ -59,6 +60,7 @@ GetOptions("stage=s" => \$start_stage,
 	   "sortby=s" => \$sortby,
 
 	   "outbbd=s" => \$outbbd,
+	   "detectpause=i" => \$detect_pause,
 
 	   "v+" => \$v,
 	  ) or die "usage?";
@@ -226,8 +228,21 @@ sub stage_trackdata {
 	my $current_vehicle;
 	my $current_brand;
 	my %vehicle_to_brand;
-    PARSE_TRACK: for my $chunk (@{ $gps->Chunks }) {
-	    no warnings 'once';
+    PARSE_TRACK: for my $chunk_i (0 .. $#{ $gps->Chunks }) {
+	    my $chunk = $gps->Chunks->[$chunk_i];
+	    if ($detect_pause && $chunk_i >= 1 && $result) {
+		my $last_chunk = $gps->Chunks->[$chunk_i-1];
+		my $last_wpt = $last_chunk->Points->[-1];
+		my $this_wpt = $chunk->Points->[0];
+		my $diff_epoch = $this_wpt->Comment_to_unixtime($chunk) - $last_wpt->Comment_to_unixtime($last_chunk);
+		if ($diff_epoch >= $detect_pause) {
+		    if ($v) {
+			warn "Pause detection fired for file $file (between chunk borders)...\n";
+		    }
+		    $result = undef;
+		    $stage = 'from'; # restart search...
+		}
+	    }
 	    my @point_objs = @{ $chunk->Points };
 	    my @points = map {
 		join(",", $Karte::Polar::obj->trim_accuracy($_->Longitude, $_->Latitude));
@@ -293,13 +308,21 @@ sub stage_trackdata {
 		    }
 		} else {	# $stage eq 'to'
 		    my($wpt1,$wpt2) = ($chunk->Points->[$wpt_i-1], $chunk->Points->[$wpt_i]);
+		    my($epoch1,$epoch2) = ($wpt1->Comment_to_unixtime($chunk), $wpt2->Comment_to_unixtime($chunk));
+		    if ($detect_pause && $epoch2-$epoch1 >= $detect_pause) {
+			if ($v) {
+			    warn "Pause detection fired for file $file (within a chunk)...\n";
+			}
+			$result = undef;
+			$stage = 'from'; # restart search
+			next;
+		    }
 		    $length += $chunk->wpt_dist($wpt1, $wpt2);
 		    push @outbbd_coords, $wpt1->Longitude.",".$wpt1->Latitude if $outbbd;
 		    if (($points[$wpt_i-1] eq $to1 &&
 			 $points[$wpt_i  ] eq $to2) ||
 			($points[$wpt_i-1] eq $to2 &&
 			 $points[$wpt_i  ] eq $to1)) {
-			my($epoch1,$epoch2) = ($wpt1->Comment_to_unixtime($chunk), $wpt2->Comment_to_unixtime($chunk));
 			my $epoch;
 			my($intersect_wpt) = eval { _schnittpunkt_as_wpt([$to1,$to2],[$to_fence1,$to_fence2]) };
 			if ($@) {
