@@ -273,9 +273,15 @@ while(1) {
 		    }
 		    next;
 		}
-		my $key = "$r->[Strassen::NAME]/$rx0,$ry0/$rx1,$ry1";
+		my $coords;
+		if (abs($dir_r-$dir_fuzzy) >= pi/2) {
+		    $coords = "$rx1,$ry1 $rx0,$ry0";
+		} else {
+		    $coords = "$rx0,$ry0 $rx1,$ry1";
+		}
+		my $key = "$r->[Strassen::NAME]/$coords";
 		if (!$seen{$key}) {
-		    print "$r->[Strassen::NAME]/$near->[$inx]{StreetObj}[Strassen::NAME]\t$outcat $rx0,$ry0 $rx1,$ry1\n";
+		    print "$r->[Strassen::NAME]/$near->[$inx]{StreetObj}[Strassen::NAME]\t$outcat $coords\n";
 		    $seen{$key}++;
 		}
 	    }
