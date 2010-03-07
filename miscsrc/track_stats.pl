@@ -111,8 +111,8 @@ if (!$stages{$start_stage}) {
 
 # Get tracks intersecting both lines
 sub stage_filtertracks {
-    my(@from, @to);
-    parse_intersection_lines(\@from, \@to);
+    my(@from, @vias, @to);
+    parse_intersection_lines(\@from, \@vias, \@to);
 
     my $trks = Strassen->new($tracks_file);
     $trks->make_grid(#Exact => 1, # XXX Eats a lot of memory, so better not use it yet...
@@ -121,7 +121,8 @@ sub stage_filtertracks {
     my @included;
 
     my %ns;
-    for my $def (\@from, \@to) {
+    my @fences = (\@from, @vias, \@to);
+    for my $def (@fences) {
 	my @p = @$def;
 	for my $p_i (0 .. $#p-1) {
 	    my($p1, $p2) = ($p[$p_i], $p[$p_i+1]);
@@ -137,10 +138,9 @@ sub stage_filtertracks {
 	}
     }
 
-    use constant STAGE_SEARCH_FROM => 1;
-    use constant STAGE_SEARCH_TO  => 2;
-    my $stage = STAGE_SEARCH_FROM;
+    my $stage = 0;
     my %found_from;
+    my %found_via;
     # Order records by appearance in file
     for my $n (sort { $a <=> $b } keys %ns) {
 	my $r = $trks->get($n);
@@ -149,16 +149,32 @@ sub stage_filtertracks {
 	my($file) = $r->[Strassen::NAME] =~ m{^(\S+)};
     RECORD: for my $r_i (1 .. $#{ $r->[Strassen::COORDS] }) {
 	    my($r1,$r2) = @{$r->[Strassen::COORDS]}[$r_i-1,$r_i];
-	    for my $stage (STAGE_SEARCH_FROM, STAGE_SEARCH_TO) {
-		my $fence_coords = $stage == STAGE_SEARCH_FROM ? \@from : \@to;
+	    for my $stage (0 .. $#fences) {
+		my $fence_coords = $fences[$stage];
 		my $res_coords = is_crossing_fence($r1,$r2,$fence_coords);
 		if ($res_coords) {
 		    my $res = [$deb_r, @$res_coords, [$n,$r_i-1]];
-		    if ($stage == STAGE_SEARCH_FROM) {
+		    if ($stage == 0) { # STAGE_SEARCH_FROM
 			$found_from{$file} = $res;
-		    } else { # STAGE_SEARCH_TO
+		    } elsif ($stage > 0 && $stage < $#fences) {
 			if ($found_from{$file}) {
-			    my $found_to = $res;;
+			    # XXX streng genommen müssten auch alle anderen vias vorher geprüft werden...!
+			    $found_via{$file}{$stage} = 1;
+			}
+		    } elsif ($stage == $#fences) { # STAGE_SEARCH_TO
+			if ($found_from{$file}) {
+			    my $found_all_vias = 1;
+			    for (1 .. $#fences-1) {
+				if (!$found_via{$file}{$_}) {
+				    if ($v && $v >= 2) {
+					warn "Did not found via nr. $_ for $file, skipping...\n";
+				    }
+				    $found_all_vias = 0;
+				    last;
+				}
+			    }
+			    next if !$found_all_vias;
+			    my $found_to = $res;
 			    push @included, [$file, $found_from{$file}, $found_to];
 			    delete $found_from{$file};
 			}
@@ -171,8 +187,9 @@ sub stage_filtertracks {
 
     $state->{included} = \@included;
     $state->{stage} = 'filtertracks';
-    $state->{from} = \@from,
-    $state->{to}   = \@to,
+    $state->{from} = \@from;
+    $state->{vias} = \@vias;
+    $state->{to}   = \@to;
     save_state();
 }
 
@@ -246,7 +263,7 @@ sub stage_trackdata {
 		$result->{vehicles}->{$vehicle_label}++;
 	    }
 	    for my $wpt_i (1 .. $#points) {
-		if ($v && $v >= 2) {
+		if ($v && $v >= 3) {
 		    warn "$file $stage " . $point_objs[$wpt_i]->Comment . " | $from1 $from2 | $points[$wpt_i-1] $points[$wpt_i] | " . join(" ", map { Karte::Polar::ddd2dms($_) } map { split /,/ } $points[$wpt_i-1], $points[$wpt_i])."\n";
 		}
 		if ($stage eq 'from') {
@@ -356,7 +373,7 @@ sub stage_trackdata {
 	print $ofh "#: map: polar\n#:\n";
 	for my $outbbd_record (@outbbd_records) {
 	    my($result, $coords) = @{$outbbd_record}{qw(result coords)};
-	    print $ofh "difftime=$result->{difftime} length=$result->{length}\tX @$coords\n";
+	    print $ofh "$result->{file} difftime=$result->{difftime} length=$result->{length}\tX @$coords\n";
 	}
 	close $ofh
 	    or die "Error while closing $outbbd: $!";
@@ -510,12 +527,12 @@ sub guess_date {
 }
 
 sub parse_intersection_lines {
-    my($from_ref, $to_ref) = @_;
+    my($from_ref, $vias_ref, $to_ref) = @_;
 
     my $usage = sub {
 	my $msg = shift;
 	if ($msg) { warn $msg . "\n" }
-	die "usage: $0 [options] from1 from2 ... : to1 to2 ...";
+	die "usage: $0 [options] from1 from2 ... : [via1 via2 ... : ] to1 to2 ...";
     };
     if (!@ARGV) {
 	# get from state
@@ -525,30 +542,34 @@ sub parse_intersection_lines {
 	    $usage->("Cannot get from/to points from state file, please specify on command line.");
 	}
 	@$from_ref = @{ $state->{from} };
+	@$vias_ref = @{ $state->{vias} || [] }; # may be empty
 	@$to_ref   = @{ $state->{to} };
     } else {
-	my $var = $from_ref;
-	my $colon_seen;
+	my @fences = []; # from, vias, to
+	my $var = $fences[-1];
 	for my $i (0 .. $#ARGV) {
 	    if ($ARGV[$i] eq ':') {
-		if ($colon_seen) {
-		    $usage->("Colon have to appear exactly once.");
+		if (@$var < 2) {
+		    $usage->("At least two points need to be supplied per from/via/to.");
 		}
-		$colon_seen = 1;
-		if (@$from_ref < 2) {
-		    $usage->("At least two from points need to be supplied.");
-		}
-		$var = $to_ref;
+		push @fences, [];
+		$var = $fences[-1];
 		next;
 	    }
 	    push @$var, $ARGV[$i];
 	}
-	if (!$colon_seen) {
+	if (@fences < 2) {
 	    $usage->("Colon have to be used to separate from and to points.");
 	}
-	if (@$to_ref < 2) {
+	if (@{$fences[-1]} < 2) {
 	    $usage->("At least two to points need to be supplied.");
 	}
+
+	@$from_ref = @{$fences[0]};
+	if (@fences >= 3) {
+	    @$vias_ref = @fences[1..$#fences-1];
+	}
+	@$to_ref   = @{$fences[-1]};
     }
 }
 
