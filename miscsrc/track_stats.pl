@@ -48,6 +48,7 @@ my $state_file;
 my $sortby = "difftime";
 my $outbbd;
 my $detect_pause;
+my @filter_stat;
 my $v;
 GetOptions("stage=s" => \$start_stage,
 	   "state=s" => \$state_file,
@@ -61,6 +62,8 @@ GetOptions("stage=s" => \$start_stage,
 
 	   "outbbd=s" => \$outbbd,
 	   "detectpause=i" => \$detect_pause,
+
+	   'filterstat=s@' => \@filter_stat,
 
 	   "v+" => \$v,
 	  ) or die "usage?";
@@ -388,6 +391,19 @@ sub stage_trackdata {
 # Calculate statistics on data, total and per-device
 sub stage_statistics {
     my @results = @{ $state->{results} };
+    for my $filter_stat_rule (@filter_stat) {
+	if (my($key, $op, $val) = $filter_stat_rule =~ m{^(.*?)(==|!=|=~|!~|<|<=|>|>=)(.*)$}) {
+	    my $code = '$_->{' . $key . '} ' . $op . ' ' . $val;
+	    warn "code: $code\n" if $v;
+	    @results = grep {
+		my $rv = eval $code;
+		die $@ if $@;
+		$rv;
+	    } @results;
+	} else {
+	    die "Cannot parse filterstat rule '$filter_stat_rule'";
+	}	
+    }
     my %seen_device = %{ $state->{seen_device} };
 
     #my @cols = grep { /^!/ } keys %{ $results[0] };
@@ -404,13 +420,17 @@ sub stage_statistics {
 	$s{ALL}->add_data(map { $_->{$numeric_field} } @results);
 
 	for my $device (keys %seen_device) {
-	    $s{$device} = Statistics::Descriptive::Full->new;
 	    my @filtered_results = grep { $_->{device} eq $device } @results;
-	    $s{$device}->add_data(map { $_->{$numeric_field} } @filtered_results);
-	    $count_per_device{$device} = scalar @filtered_results;
+	    my @vals = map { $_->{$numeric_field} } @filtered_results;
+	    if (@vals) {
+		$s{$device} = Statistics::Descriptive::Full->new;
+		$s{$device}->add_data(@vals);
+		$count_per_device{$device} = scalar @filtered_results;
+	    }
 	}
 
 	for my $device ('ALL', keys %seen_device) {
+	    next if !$s{$device};
 	    no strict 'refs';
 	    $stats{$device}->{median}->{$col}             = &{"format_" . $numeric_field}($s{$device}->median);
 	    $stats{$device}->{mean}->{$col}               = &{"format_" . $numeric_field}($s{$device}->mean);
@@ -424,7 +444,8 @@ sub stage_statistics {
     $state->{cols}  = \@cols;
     $state->{count_per_device} = \%count_per_device;
     $state->{stage} = 'statistics';
-    save_state();
+
+    save_state() unless @filter_stat;
 }
 
 # Sort and print table
@@ -656,13 +677,17 @@ __END__
 
  Select two points forming the "start line" and two points forming the "goal line"
 
- Run the stage 1 of the programm (may take longer to create the grid):
+ Run the programm:
 
-   ./track_stats.pl <coord1> <coord2> <coord3> <coord4> -stage1 /tmp/something
+   ./track_stats.pl <coord1> <coord2> : <coord3> <coord4> -state cache/somefile -state output
 
- Run the stage 2 of the programm
+ Force recalculation (or just delete the cached state file):
 
-   ./track_stats.pl -stage2 /tmp/something
+   ./track_stats.pl <coord1> <coord2> : <coord3> <coord4> -state cache/somefile -state begin
+
+ Add some filters on the statistics:
+
+   ./track_stats.pl <coord1> <coord2> : <coord3> <coord4> -state cache/somefile -state statistics -filterstat 'file=~/2010/'
 
 =head1 TODO
 
