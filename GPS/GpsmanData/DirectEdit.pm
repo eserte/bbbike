@@ -47,6 +47,14 @@ sub split_track {
     $self->{GpsmanData}->{LineInfo}->line_inserted($first_i);
 }
 
+sub split_trackseg {
+    my($self, $first_i) = @_;
+    my $lines = $self->{Lines};
+    my $new_line = "!TS:";
+    splice @$lines, $first_i, 0, $new_line;
+    $self->{GpsmanData}->{LineInfo}->line_inserted($first_i);
+}
+
 sub change_track_attributes {
     my($self, $line, $name, $track_attrs) = @_;
     die "Name is missing" if !$name;

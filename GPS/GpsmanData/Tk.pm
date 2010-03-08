@@ -120,6 +120,9 @@ sub Populate {
 	    $popup_menu->command(-label => "Split track",
 				 -command => [$w, '_split_track'] # XXX should be only visible for waypoint lines
 				);
+	    $popup_menu->command(-label => "Split track segment",
+				 -command => [$w, '_split_trackseg'] # XXX should be only visible for waypoint lines
+				);
 	    $popup_menu->command(-label => "Set accuracy",
 				 -command => [$w, '_set_accuracy'] # XXX should be only visible for waypoint lines
 				);
@@ -494,6 +497,22 @@ sub _split_track {
 	$self->reload;
     }
     $t->destroy;
+}
+
+sub _split_trackseg {
+    my($self) = @_;
+    my %ret = $self->_edit_preparations(-expect => "wpt");
+    my($line, $line_content, $direct_edit) = @ret{qw(line line_content direct_edit)};
+
+    my $yesno = $self->messageBox(-icon => 'question',
+				  -type => 'YesNo',
+				  -message => 'Split track segment?',
+				 );
+    if ($yesno =~ m{yes}i) {
+	$direct_edit->split_trackseg($line);
+	$direct_edit->flush;
+	$self->reload;
+    }
 }
 
 sub _edit_track_attributes {
