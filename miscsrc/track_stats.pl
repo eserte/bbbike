@@ -225,6 +225,7 @@ sub stage_trackdata {
 	my $current_vehicle;
 	my $current_brand;
 	my %vehicle_to_brand;
+	my $altimeter_is_broken = ($gps->Chunks->[0]->TrackAttrs->{'srt:altimeter'}||'') =~ /broken/;
     PARSE_TRACK: for my $chunk_i (0 .. $#{ $gps->Chunks }) {
 	    my $chunk = $gps->Chunks->[$chunk_i];
 	    if ($detect_pause && $chunk_i >= 1 && $result) {
@@ -340,8 +341,8 @@ sub stage_trackdata {
 			$result->{file} = $file;
 			$result->{device} = guess_device($result);
 			$seen_device{$result->{device}} = 1;
-			$result->{diffalt} = $chunk->Points->[$wpt_i]->Altitude - $result->{from2}->Altitude;
-			if ($length) {
+			$result->{diffalt} = !$altimeter_is_broken ? $chunk->Points->[$wpt_i]->Altitude - $result->{from2}->Altitude : undef;
+			if ($length and defined $result->{diffalt}) {
 			    $result->{mount} = 100 * $result->{diffalt} / $length;
 			} else {
 			    $result->{mount} = undef;
@@ -417,15 +418,15 @@ sub stage_statistics {
 
 	my %s;
 	$s{ALL} = Statistics::Descriptive::Full->new;
-	$s{ALL}->add_data(map { $_->{$numeric_field} } @results);
+	$s{ALL}->add_data(grep { defined } map { $_->{$numeric_field} } @results);
 
 	for my $device (keys %seen_device) {
 	    my @filtered_results = grep { $_->{device} eq $device } @results;
-	    my @vals = map { $_->{$numeric_field} } @filtered_results;
+	    my @vals = grep { defined } map { $_->{$numeric_field} } @filtered_results;
 	    if (@vals) {
 		$s{$device} = Statistics::Descriptive::Full->new;
 		$s{$device}->add_data(@vals);
-		$count_per_device{$device} = scalar @filtered_results;
+		$count_per_device{$device} = scalar @vals;
 	    }
 	}
 
@@ -508,7 +509,7 @@ sub save_state {
     sub format_difftime { sprintf "%8s", s2hms($_[0]) }
     sub format_fromtime { strftime("%T", localtime $_[0]) }
     sub format_file     { $_[0] }
-    sub format_diffalt  { sprintf "%.1f", $_[0] }
+    sub format_diffalt  { defined $_[0] ? sprintf "%.1f", $_[0] : undef }
     sub format_mount    { defined $_[0] ? sprintf "%.1f", $_[0] : undef }
     sub format_device   { $_[0] }
 }
