@@ -636,14 +636,25 @@ sub _schnittpunkt {
     my($x11,$y11,$x12,$y12) = map { split/,/ } @$l1;
     my($x21,$y21,$x22,$y22) = map { split/,/ } @$l2;
 
-    my $m1 = ($y12-$y11)/($x12-$x11);
-    my $m2 = ($y22-$y21)/($x22-$x21);
+    my $x1_delta = $x12-$x11;
+    my $x2_delta = $x22-$x21;
 
-    my $x = ($m1*$x11-$m2*$x21+$y21-$y11)/($m1-$m2);
-    # XXX check if $x is really between $x11..$x12 and $x21..$x22
-    my $y = ($x-$x11)*$m1+$y11;
-    # the same: my $y = ($x-$x21)*$m2+$y21;
-    ($x, $y);
+    if ($x1_delta == 0) {
+	my $y2_delta = $y22-$y21;
+	($x11, $y21 + ($x11-$x21)*$y2_delta/$x2_delta);
+    } elsif ($x2_delta == 0) {
+	my $y1_delta = $y12-$y11;
+	($x21, $y11 + ($x21-$x11)*$y1_delta/$x1_delta);
+    } else {
+	my $m1 = ($y12-$y11)/$x1_delta;
+	my $m2 = ($y22-$y21)/$x2_delta;
+
+	my $x = ($m1*$x11-$m2*$x21+$y21-$y11)/($m1-$m2);
+	# XXX check if $x is really between $x11..$x12 and $x21..$x22
+	my $y = ($x-$x11)*$m1+$y11;
+	# the same: my $y = ($x-$x21)*$m2+$y21;
+	($x, $y);
+    }
 }
 
 sub _schnittpunkt_as_wpt {
