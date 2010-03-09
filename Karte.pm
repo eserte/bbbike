@@ -295,17 +295,17 @@ if (!Getopt::Long::GetOptions("from=s" => \$frommap,
 
 my $conv = sub {
     my $coord = shift;
-    print join(",", $Karte::map{$frommap}->map2map($Karte::map{$tomap},
-						   split/,/, $coord)), "\n";
+    join(",", $Karte::map{$tomap}->trim_accuracy($Karte::map{$frommap}->map2map($Karte::map{$tomap},
+										split/,/, $coord)));
 };
 
 if (@ARGV) {
-    $conv->(shift);
+    print join(' ', map { $conv->($_) } @ARGV), "\n";
 } else {
     while(<>) {
 	chomp;
 	my $c = $_;
-	$conv->($c);
+	print $conv->($c), "\n";
     }
 }
 
@@ -313,7 +313,7 @@ sub usage {
     Karte::preload(":all");
     my $valid_maps = join("\n", map { "- $_ (" . $Karte::map{$_}->name . ")" } sort keys %Karte::map);
     die <<EOF;
-Usage: $^X $0 [-from map] [-to map] -- x,y
+Usage: $^X $0 [-from map] [-to map] -- x,y [x,y ...]
 Where map is any of:
 $valid_maps
 EOF
