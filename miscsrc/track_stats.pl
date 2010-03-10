@@ -417,8 +417,11 @@ sub stage_statistics {
 	next if $numeric_field !~ m{^(difftime|length|velocity|diffalt|mount)$};
 
 	my %s;
-	$s{ALL} = Statistics::Descriptive::Full->new;
-	$s{ALL}->add_data(grep { defined } map { $_->{$numeric_field} } @results);
+	my @filtered_vals = grep { defined } map { $_->{$numeric_field} } @results;
+	if (@filtered_vals) {
+	    $s{ALL} = Statistics::Descriptive::Full->new;
+	    $s{ALL}->add_data(@filtered_vals);
+	}
 
 	for my $device (keys %seen_device) {
 	    my @filtered_results = grep { $_->{device} eq $device } @results;
