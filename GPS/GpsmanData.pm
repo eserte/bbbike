@@ -1132,6 +1132,17 @@ sub write {
 
 sub wpt_dist { shift->GPS::GpsmanData::wpt_dist(@_) }
 
+sub flat_track {
+    my($self) = @_;
+    my @track;
+    for my $chunk (@{ $self->Chunks }) {
+	for my $wpt (@{ $chunk->Track }) {
+	    push @track, $wpt;
+	}
+    }
+    @track;
+}
+
 1;
 
 __END__
