@@ -50,6 +50,7 @@ my $outbbd;
 my $detect_pause;
 my @filter_stat;
 my $v;
+my $tsv;
 GetOptions("stage=s" => \$start_stage,
 	   "state=s" => \$state_file,
 
@@ -65,6 +66,7 @@ GetOptions("stage=s" => \$start_stage,
 
 	   'filterstat=s@' => \@filter_stat,
 
+	   "tsv" => \$tsv,
 	   "v+" => \$v,
 	  ) or die "usage?";
 
@@ -468,18 +470,25 @@ sub stage_output {
     die "Invalid -sortby" if !exists $results[0]->{$sortby};
     @results = sort { $a->{$sortby} <=> $b->{$sortby} } @results;
 
-    my $tb = Text::Table->new('', map { /^!(.*)/; $1 } @cols);
-    $tb->load(map { [ '', @{$_}{@cols} ] } @results);
-    for my $device ('ALL', keys %seen_device) {
-	$tb->load(['---']);
-	if ($device ne 'ALL') {
-	    $tb->load(["- $device ($count_per_device{$device})"]);
+    if ($tsv) {
+	for (@results) {
+	    no warnings 'uninitialized';
+	    print join("\t", @{$_}{@cols}), "\n";
 	}
-	for my $stat_method (keys %{ $stats{$device} }) {
-	    $tb->load([$stat_method, map { $stats{$device}->{$stat_method}->{$_} || '' } @cols]);
+    } else {
+	my $tb = Text::Table->new('', map { /^!(.*)/; $1 } @cols);
+	$tb->load(map { [ '', @{$_}{@cols} ] } @results);
+	for my $device ('ALL', keys %seen_device) {
+	    $tb->load(['---']);
+	    if ($device ne 'ALL') {
+		$tb->load(["- $device ($count_per_device{$device})"]);
+	    }
+	    for my $stat_method (keys %{ $stats{$device} }) {
+		$tb->load([$stat_method, map { $stats{$device}->{$stat_method}->{$_} || '' } @cols]);
+	    }
 	}
+	print $tb->table, "\n";
     }
-    print $tb->table, "\n";
 }
 
 # Pseudo stage: dump state
