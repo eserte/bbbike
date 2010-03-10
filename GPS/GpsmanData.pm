@@ -720,6 +720,9 @@ sub create_cache {
 sub push_waypoint {
     my($self, $wpt) = @_;
     if (!$self->Track) {
+	if (!defined $self->Type) {
+	    $self->Type(TYPE_TRACK);
+	}
 	$self->Track([]);
     }
     push @{ $self->Track }, $wpt;
