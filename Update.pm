@@ -84,7 +84,7 @@ sub update_http {
 	    die;
 	}
 	$ua = new LWP::UserAgent;
-	$ua->agent("$main::progname/$main::VERSION (LWP::UserAgent/$LWP::VERSION)");
+	$ua->agent("$main::progname/$main::VERSION (LWP::UserAgent/$LWP::VERSION) ($^O)");
 ## sieperl does not have compress::zlib, also decoded_content is not available
 # 	if (eval { require Compress::Zlib; 1 }) {
 # 	    $ua->default_headers->push_header('Accept-Encoding' => 'gzip');
@@ -99,7 +99,7 @@ sub update_http {
 	require Http;
 	Http->VERSION(3.15); # correct handling of Host: ...
 	$Http::user_agent = $Http::user_agent if 0; # peacify -w
-	$Http::user_agent = "$main::progname/$main::VERSION (Http/$Http::VERSION)";
+	$Http::user_agent = "$main::progname/$main::VERSION (Http/$Http::VERSION) ($^O)";
     }
     $main::c = $main::c; # peacify -w
     $main::progress->Init(-dependents => $main::c,
