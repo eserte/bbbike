@@ -3988,10 +3988,12 @@ if (!$MM_DRAG_IS_OBSOLETE) {
 		       -variable => \$verbose,
 		       -command => \&set_verbose);
 
-    $opbm->command
-	(-label => M"Daten-Update über das Internet",
-	 -command => \&update_via_internet,
-	);
+    if (!$city_obj->is_osm_source) {
+	$opbm->command
+	    (-label => M"Daten-Update über das Internet",
+	     -command => \&update_via_internet,
+	    );
+    }
 
     $opbm->command(-label => M"Alarmliste",
 		   -command => sub {
