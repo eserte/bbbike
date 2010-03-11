@@ -182,6 +182,7 @@ sub stage_filtertracks {
 			    my $found_to = $res;
 			    push @included, [$file, $found_from{$file}, $found_to];
 			    delete $found_from{$file};
+			    delete $found_via{$file};
 			}
 		    }
 		    next RECORD;
