@@ -17131,4 +17131,13 @@ EOF
 userdel	q4::inwork; 17476,4337 17507,4216
 EOF
      },
+     { from  => 1268336756, # 2010-03-11 20:45
+       until => 1272664799, # 2010-04-30 23:59
+       text  => 'Fennstr. (Treptow) Richtung Schnellerstr. zwischen Michael-Brückner-Str. und Schnellerstr. Baustelle, Fahrtrichtung gesperrt. Ebenso ist die Britzer Str. Richtung Michael-Brückner-Str. ab Schnellerstr. gesperrt. (bis Ende 04/2010)',
+       type  => 'gesperrt',
+       source_id => 'IM_015284',
+       data  => <<EOF,
+userdel	1::inwork 18370,5511 18307,5440 18214,5354 18080,5376 18245,5551
+EOF
+     },
     );

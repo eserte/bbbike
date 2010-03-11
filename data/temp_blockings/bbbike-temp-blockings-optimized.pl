@@ -1514,6 +1514,16 @@ userdel	q4::inwork; 10829,18083 10907,18109 10938,18147 10989,18172 11137,18358 
          'data' => 'userdel	q4::inwork; 17476,4337 17507,4216
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_015284',
+         'until' => 1272664799,
+         'text' => 'Fennstr. (Treptow) Richtung Schnellerstr. zwischen Michael-Brückner-Str. und Schnellerstr. Baustelle, Fahrtrichtung gesperrt. Ebenso ist die Britzer Str. Richtung Michael-Brückner-Str. ab Schnellerstr. gesperrt. (bis Ende 04/2010)',
+         'from' => 1268336756,
+         'id' => 2019,
+         'data' => 'userdel	1::inwork 18370,5511 18307,5440 18214,5354 18080,5376 18245,5551
+',
+         'type' => 'gesperrt'
        }
      
 );
