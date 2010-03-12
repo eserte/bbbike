@@ -26,7 +26,7 @@ use vars qw($icon %city_border_points);
 use CGI qw();
 use Encode qw(encode);
 
-use BBBikeUtil qw(bbbike_root m2km);
+use BBBikeUtil qw(bbbike_root m2km kmh2ms s2ms);
 use Strassen::MultiStrassen;
 use Strassen::Util;
 
@@ -36,6 +36,9 @@ sub Mfmt { sprintf M(shift), @_ } # XXX
 
 use vars qw($LIMIT_LB);
 $LIMIT_LB = 12;
+
+use vars qw($PEDES_MS);
+$PEDES_MS = kmh2ms(5);
 
 sub register {
     my $pkg = __PACKAGE__;
@@ -147,8 +150,14 @@ sub choose {
 				-width => 50,
 				-height => $LIMIT_LB,
 			       )->pack(qw(-side left -fill both -expand 1));
-    my $b = $t->Button(-text => 'Search',
-		      )->pack(qw(-fill x));
+    my $expected_foottime;
+    my $b;
+    {
+	my $f = $t->Frame->pack(qw(-fill x -expand 1));
+	$b = $f->Button(-text => 'Search',
+		       )->pack(qw(-fill x -expand 1 -side left));
+	$f->Label(-textvariable => \$expected_foottime)->pack(qw(-side left));
+    }
 
     my(@start_stops, @goal_stops);
     for my $def ([\@start_stops, $start, $start_lb],
@@ -181,13 +190,30 @@ sub choose {
 		if ($cat !~ m{^[US]$}) {
 		    $name .= "$cat; ";
 		}
-		$name .= m2km($stop->{Dist}, 1) . ']';
-
+		$name .= m2km($stop->{Dist}, 1);
+		my $time = $stop->{Dist} / $PEDES_MS;
+		$stop->{Time} = $time;
+		$name .= ", ";
+		$name .= s2ms($time) . " min";
+		$name .= "]";
 		$lb->insert('end', $name); # XXX show maybe on map, somehow?
 	    }
 	    $lb->selectionSet(0);
 	}
     }
+
+    my $adjust_expected_foottime = sub {
+	my $total_time = 0;
+	for my $def ([$start_lb, \@start_stops],
+		     [$goal_lb,  \@goal_stops],
+		    ) {
+	    my($lb, $stops) = @$def;
+	    my($cursel) = $lb->curselection;
+	    $total_time += $stops->[$cursel]->{Time};
+	}
+	$expected_foottime = 'Expected foot time: ' . s2ms($total_time) . ' min';
+    };
+    $t->afterIdle($adjust_expected_foottime);
 
     for my $def ([$start_lb, \@start_stops],
 		 [$goal_lb,  \@goal_stops],
@@ -200,6 +226,7 @@ sub choose {
 				       -clever_center => 1,
 				      );
 		  });
+	$lb->bind('<<ListboxSelect>>' => $adjust_expected_foottime);
     }
 
     $b->configure(-command => sub {
