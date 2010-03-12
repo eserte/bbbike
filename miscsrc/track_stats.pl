@@ -224,7 +224,6 @@ sub stage_trackdata {
 	my $stage = 'from';
 	my $result;
 	my $length = 0;
-	my @vehicles;
 	my $current_vehicle;
 	my $current_brand;
 	my %vehicle_to_brand;
