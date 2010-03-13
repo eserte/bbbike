@@ -3316,6 +3316,11 @@ unless ($skip_features{"sehenswuerdigkeiten"}) {
 			   }
 		       }
 		      );
+    if ($devel_host) { # XXX
+	$sb2m->checkbutton(-label => M"Straßenbahnschienen meiden",
+			   -variable => \$tram_optimization,
+			  );
+    }
     unless ($skip_features{"green"}) {
 	$sb2m->cascade(-label => M("Grüne Wege")."...");
 	my $gwm = $sb2m->Menu(-title => M"Grüne Wege");
@@ -5029,6 +5034,7 @@ sub handle_options {
 	 ['radwegeoptimierung','!',0, var => \$radwege_optimierung,
 	  label => M"Radwege-Optimierung"],
 	 ['N_RW_optimization', '!', 0, var => \$N_RW_optimization, nogui => 1],
+	 ['tram_optimization', '!', 0, var => \$tram_optimization, nogui => 1],
 	 ['greenoptimierung', '=i', 0, choices => [0,1,2],
 	  longhelp => "0: ".M("egal")."\n".
 	  "1: ".M("bevorzugen")."\n".
@@ -16543,6 +16549,20 @@ sub search_route {
 				"N_RW" => 1 };
 		$extra_args{RadwegeStrcat} =
 		    {Net => $N_RW_net,
+		     Penalty => $penalty,
+		    };
+	    }
+	}
+
+	if ($tram_optimization) {
+	    if (!$tram_net) {
+		$tram_net = StrassenNetz->new(Strassen->new('comments_tram')); # XXX -orig?
+		$tram_net->make_net_cat;
+	    }
+	    if ($tram_net) {
+		my $penalty = { "CS"   => 4 }; # XXX about 20km/h -> 5km/h
+		$extra_args{Tram} =
+		    {Net => $tram_net,
 		     Penalty => $penalty,
 		    };
 	    }

@@ -555,6 +555,7 @@ BEGIN {
 	HasUnlitStreets => "\$",
 	HasSteigung => "\$",
 	HasTragen => "\$",
+	HasTram => "\$",
 	Velocity => "\$",
 	HasAbbiegen => "\$",
 	Statistics => "\$",
@@ -696,6 +697,17 @@ sub build_penalty_code {
                             $steigung_penalty->{$norm_steigung} = $steigung_penalty_sub->($norm_steigung);
                         }
                         $pen *= $steigung_penalty->{$norm_steigung}; # Steigungsaufschlag
+		    }
+';
+    }
+    if ($sc->HasTram) {
+	$penalty_code .= '
+		    if (defined $last_node and
+                        exists $tram_net->{$last_node}{$next_node}) {
+			my $cat = $tram_net->{$last_node}{$next_node};
+			if (exists $tram_penalty->{$cat}) {
+                            $pen *= $tram_penalty->{$cat};
+                        }
 		    }
 ';
     }
@@ -1128,6 +1140,7 @@ sub search {
 		    exists $args{Steigung}  ||
 		    exists $args{Abbiegen}  ||
 		    exists $args{Tragen}    ||
+		    exists $args{Tram}      ||
 		    exists $self->{BlockingNet}
 		   );
     $sc->HasBlocked(exists $self->{BlockingNet});
@@ -1147,6 +1160,7 @@ sub search {
     $sc->HasSteigung      (exists $args{Steigung});
     $sc->HasAbbiegen      (exists $args{Abbiegen} and exists $args{Ampeln});
     $sc->HasTragen        (exists $args{Tragen} and exists $args{Velocity});
+    $sc->HasTram          (exists $args{Tram});
     $sc->UserDefPenaltySub(exists $args{UserDefPenaltySub});
 
     # Ausgabe einer Statistik
@@ -1210,10 +1224,14 @@ sub search {
 	$category_order = $args{Abbiegen}->{Order} || die "No order";
 	$abbiegen_penalty = $args{Abbiegen}->{Penalty} || die "No penalty";
     }
-
     my($blocked_net);
     if (exists $self->{BlockingNet}) {
 	$blocked_net = $self->{BlockingNet}->{Net};
+    }
+    my($tram_net, $tram_penalty);
+    if (exists $args{Tram}) {
+	$tram_net = $args{Tram}->{Net}->{Net};
+	$tram_penalty = $args{Tram}->{Penalty} || die "No penalty";
     }
     my $user_def_penalty_sub = $args{UserDefPenaltySub};
 

@@ -226,6 +226,7 @@ use vars qw($radwege_optimierung $radwege_net $N_RW_optimization $N_RW_net
 	   );
 use vars qw($strcat_optimierung $strcat_net %strcat_speed
 	    @strcat_order);
+use vars qw($tram_net $tram_optimization);
 # XXX use curr_selection instead of inslauf_selection some day
 use vars qw($steigung_net %steigung_penalty_env $steigung_penalty
 	    $curr_selection @inslauf_selection @ext_selection
