@@ -275,6 +275,8 @@ EOF
 		     add_new_layer("str", "$bbbike_rootdir/misc/abdeckung.bbd");
 		 }
 		],
+		layer_checkbutton('Exits (ÖPNV)', 'str',
+				  _maybe_orig_file("$main::datadir/exits")),
 	       ],
 	      ],
 	      [Cascade => $do_compound->('OSM Live data', $MultiMap::images{OpenStreetMap}), -menuitems =>
