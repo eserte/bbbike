@@ -229,8 +229,7 @@ Ahrensfelder Chaussee: Radstreifen in Bau, bis 2008-10	? 20160,18301 20460,18420
 #: by: http://www.morgenpost.de/content/2006/09/20/bezirke/855150.html
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20060915.1800.47562.html
 #: XXX Name der Straße? Der Pharus-Verlag meint "Wilhelm-Kabus-Str."; hier auch erwähnt: http://spdnet.sozi.info/berlin/thf-schoeneberg/fraktempschoen/dl/aktinfo0706.pdf und http://www.spd-fraktion-tempelhof-schoeneberg.de/index.php?seite=522&s=1&menu=1
-#: last_checked: 2009-12-15 (Fahrbahn wird verbreitert)
-#: next_check: 2010-03-01
+#: last_checked: 2010-03-14 (Asphaltierung an der Naumannstr. fehlt)
 Wilhelm-Kabus-Str.: Bauarbeiten beginnen 2007, die Naumannstr. wird später verkehrsberuhigt	?::projected 7716,8048 7844,8049 7861,8217 7893,8327 7942,8380 8078,8772
 #: next_check: 2010-12-31
 Verbindung zwischen Leuthener Platz und General-Pape-Str. (evtl. mit Verlängerung) inkl. Brücke über die Bahnstrecke für Fußgänger und Radfahrer, Realisierung bis 2010-12-31	?::projected 7716,8356 7837,8354 7893,8327 8088,8283 8264,8289
@@ -388,6 +387,8 @@ Kleistpark: im Sommer bis 21 Uhr geöffnet, im Winter bis 18 Uhr	? 7209,9507 7246
 #
 #: section isolated entries vvv
 #: section ignorieren vvv
+#: by: anonymous:
+Rainweg: schlechtes Kopfsteinpflaster, Q3, enge Straße (ohne Kategorisierung)	? 25006,-3014 24978,-2960 25014,-2866 25118,-2805
 #: by: constantin(g):
 Heisterbachstr.: guter Beton, Q0	? 28421,889 28520,998 28672,1172 28763,1276
 #: by: anonymous:
@@ -509,9 +510,6 @@ Biegen - Müllrose: existiert hier ein Radweg (wahrscheinlich ab 2006-10-31)	? 79
 Werderscher Damm: existiert hier ein Radweg in Höhe Kaserne (wahrscheinlich ab 2006-11-30)?	? -18542,-2568 -18733,-2697 -19640,-3173
 B5: existiert ein Radweg in Höhe Wusterhausen (wahrscheinlich ab 2006-09-29)?	? -54140,51565 -54518,51910 -54926,52781
 B246: existiert ein Radweg bei Nächst Neuendorf (wahrscheinlich ab 2006-11-15)?	? 11412,-19943 11136,-20007
-#: by: http://www.berlin.de/ba-spandau/presse/archi
-#: by: rjoop
-Askanierring: an der Verbindung zwischen Fehrbelliner Tor und Streitstr. wird gearbeitet, zukünftig asphaltiert	? -3631,16224 -3040,16246
 #: XXX_indoor str_cont_ausnahme
 Havelschanze: Qualität?	? -3040,16246 -2641,16222 -2560,16212
 Havelschanze: Qualität?	? -2641,16222 -2633,16283 -2545,16291
@@ -1645,7 +1643,6 @@ Annenstr. (Biesdorf): Qualität?	? 20371,14204 20467,14196
 Annenstr. (Biesdorf): Qualität?	? 20631,14221 20878,14198 21087,14183 21287,14163
 Hiltrudstr.: Qualität?	? 21261,13922 21272,14036 21287,14163 21302,14282 21329,14488
 Roggensteig: Qualität?	? 20885,12877 20918,13159 20930,13273
-Weizenweg: Qualität?	? 20847,13280 20836,13170 20802,12890 20780,12702 20773,12621 20746,12402
 Hirseweg: Qualität?	? 20743,13184 20836,13170 20918,13159 21003,13152 21113,13142 21214,13126
 Sensenpfad: Qualität?	? 21101,12661 21176,12627
 Ährenweg: Qualität?	? 21028,12536 21134,12471 21123,12352 21107,12183
@@ -1711,7 +1708,6 @@ Straße 96 (Buckow): Qualität?	? 11190,1622 11170,1517
 Glimmerweg: Qualität? Einbahnstraße, auch für Radfahrer gültig?	? 11005,1541 11170,1517 11349,1483 11436,1513 11538,1550 11713,1622
 Basaltweg: Qualität?	? 11042,1352 10999,1474 11005,1541 11025,1657
 Graphitweg: Qualität?	? 10950,1315 10914,1413 10911,1483 10943,1661
-Bernsteinring: Qualität?	? 11374,1689 11549,1721 11582,1742 11587,1774 11570,1825 11550,1847 11465,1855 11355,1801
 Kreideweg: Qualität?	? 10748,2233 10840,2196 10886,2167
 Bimssteinweg: Qualität?	? 10907,2207 10985,2173
 Almweg: Qualität?	? 10526,2694 10542,2757
@@ -2126,11 +2122,6 @@ Stabholzgarten/Am Wall: Befindet sich hier ein Zebrastreifen?	? -3370,14115
 #: XXX: genaue Lage?
 #: note: http://www.berlin.de/ba-spandau/presse/archiv/20080807.0735.106603.html
 Carossastr.: Qualität?	? -2595,16808 -2946,16869
-#: XXX: genaue Lage?
-#: note: http://www.berlin.de/ba-spandau/presse/archiv/20080807.0735.106603.html
-Am Maselakepark: Qualität?	? -2955,16418 -2939,16495 -2661,16446 -2595,16808
-#: note: http://www.berlin.de/ba-spandau/presse/archiv/20080807.0735.106603.html
-Bamihlstr.: Qualität?	? -2595,16808 -2579,16899 -2563,17004
 #: XXX zumindest zwischen Löcknitz- und Flakenseestr. "bituminöse" Decke, laut http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20080811.1415.106769.html
 Möllenseestr.: Qualität?	? 26400,5449 26358,5403 26364,5288 26367,5211 26350,5167 26299,5061 26299,5041
 Wupatzseestr.: Qualität?	? 26196,5477 26213,5403 26224,5285
@@ -2802,7 +2793,6 @@ Ebelallee: Qualität?	? 27184,-6794 27294,-6794
 Moßkopfring: Qualität?	? 27292,-6641 27294,-6683 27308,-6742 27294,-6794 27285,-6861 27288,-6944 27311,-6962 27359,-6969 27458,-6806 27466,-6764
 Zeuthener Weg: Qualität?	? 27466,-6764 27308,-6742
 Fichtengrund: Qualität?	? 24922,-3063 24882,-2945 24872,-2868 24868,-2739
-Rainweg: Qualität?	? 25006,-3014 24978,-2960 25014,-2866 25118,-2805
 Erlengrund: Qualität?	? 25373,-2797 25336,-2727 25312,-2636 25318,-2580 25308,-2526 25275,-2472
 Siedlers Eck: Qualität?	? 25461,-2744 25421,-2672
 Wendel-Hipler-Weg: Qualität?	? 25631,-2642 25516,-2449
@@ -3714,7 +3704,6 @@ Straße 182: Qualität?	? 17088,-135 17122,-270 17147,-573
 Straße 184: Qualität?	? 17222,-560 17147,-573 17054,-597
 Timmendorfer Weg: Qualität?	? 17879,-3 18011,83 18085,137
 Altrader Weg: Qualität? Kann man die Waltersdorfer Chaussee in Höhe des Altrader Wegs überqueren?	? 18077,-13 17946,-100
-Am Klarpfuhl: Qualität? Besteht (für Radfahrer) eine direkte Verbindung zum Mauerweg?	? 18085,137 18249,-114 18230,-233 18195,-277
 Marthashof: existiert die Straße schon? Qualität?	? 10459,14721 10559,14756
 Locarnoweg: Qualität? Ist die Straße eine Spielstraße?	? 3290,2135 3369,2135
 Glandzeile: Qualität? Ist die Straße eine Spielstraße?	? 3369,2135 3369,2216
@@ -4958,7 +4947,6 @@ Privatstr. 10: Qualität?	? 17167,17145 17160,17068
 Privatstr. 10: Qualität?	? 17141,17070 17134,16988 17129,16914 17120,16849 17117,16774
 Privatstr. 12: Qualität?	? 17182,17375 17420,17282
 Nienhagener Str.: Qualität?	? 16365,18335 16469,18409 16534,18457
-Kühlungsborner Str.: Qualität?	? 16445,18571 16385,18524 16297,18468 16171,18429
 Reriker Str.: Qualität?	? 16144,18521 16268,18551 16350,18575 16385,18524 16469,18409
 Themarer Str.: Qualität?	? 18424,14791 18412,14712 18357,14631
 Straße 158: Qualität?	? 17895,15050 17839,15173 17847,15197 17740,15254
@@ -5581,3 +5569,4 @@ Radweg zwischen Linthe und Brück: Qualität?	? -30940,-28490 -31197,-28211 -32763
 Schönower Str. (Teltow): Qualität?	? 1684,-927 1722,-773 1713,-652 1677,-582 1612,-505 1457,-470
 #: XXX: laut http://www.nationaler-radverkehrsplan.de/neuigkeiten/news.php?id=2339 mit Radweg
 Zeppelinufer (Teltow): Qualität?	? 1457,-470 1338,-426 1134,-370 818,-298
+Am Klarpfuhl - Mauerweg: besteht eine Verbindung für Radfahrer? Qualität?	? 18195,-277 18218,-325

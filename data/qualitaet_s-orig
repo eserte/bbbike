@@ -376,6 +376,7 @@ Petersburger Platz: Kopfsteinpflaster	Q2 13558,12766 13467,12978
 Pettenkoferstr Str.: Kopfsteinpflaster	Q2 15117,12106 15098,12213
 Pettenkoferstr Str.: Asphalt, einige gepflasterte Bodenschwellen	Q0- 15098,12213 15054,12323 15042,12353 15009,12441 14999,12462 14935,12596 14842,12826
 Marktstr., Fahrbahn Richtung Osten: Kopfsteinpflaster	Q2-; 15279,10862 15144,10905
+Martkstr., Fahrbahn Richten Wegen: frostbedingte Schlaglöcher	Q1-; 14988,11130 14994,11120 15060,11006 15085,10956 15113,10916 15144,10905 15279,10862
 Gryphiusstr.: Kopfsteinpflaster	Q2 14367,11276 14395,11356 14434,11465 14496,11620 14513,11657 14550,11732
 Jungstr.: Kopfsteinpflaster	Q2 14550,11732 14623,11867 14675,11964
 Oberhofer Platz: Kopfsteinpflaster	Q2 5406,2110 5376,2097 5431,1956 5437,1941 5469,1949
@@ -630,7 +631,7 @@ Maienwerderweg: teils Waldweg (OK), teils mäßiger Asphalt	Q1 2239,18225 1549,177
 (Der Breite Weg): Waldweg, zügig befahrbar	Q2+ 1549,17718 1663,18166
 #: by: Thomas Heuving
 #: note: laut ADFC-Karte mäßig befahrbar
-(Uferweg): gut befahrbarer Waldweg	Q1 -389,17140 -280,17229 -266,17335 -215,17385 -141,17377 61,17495 110,17489 151,17537 187,17663 235,17704 260,17788 258,17880 381,18186 416,18386 448,18476 496,18514 586,18540 680,18631 757,18673 768,18742 970,18919 1006,18972 1122,19036 1189,19018 1200,18969 1369,18958 1457,18969 1490,18950
+(Uferweg): gut befahrbarer Waldweg	Q1 -431,17169 -384,17155 -280,17229 -266,17335 -215,17385 -141,17377 61,17495 110,17489 151,17537 187,17663 235,17704 260,17788 258,17880 381,18186 416,18386 448,18476 496,18514 586,18540 680,18631 757,18673 768,18742 970,18919 1006,18972 1122,19036 1189,19018 1200,18969 1369,18958 1457,18969 1490,18950
 Sembritzkistr.: mäßiges Kopfsteinpflaster	Q2 6854,4931 6856,4963 6923,5057 6949,5096 7018,5201 7095,5317 7157,5418 7186,5453 7203,5488 7252,5583 7230,5696
 #: by: Benjamin Hersch:
 Sembritzkistr.: Asphalt	Q0 6860,4799 6854,4931
@@ -1231,7 +1232,7 @@ Caroline-Tübbecke-Ufer: Parkweg	Q1 14996,9809 15153,9749 15367,9691
 (Wendenwiese): Parkweg	Q1 15367,9691 15399,9679 15465,9626 15512,9680
 (Alt-Stralau - Spreeufer): Parkweg	Q1 15020,9875 14996,9809
 Tunnelstr. - Bartholomäusufer: Parkweg	Q1 15502,9693 15583,9779
-Am Rummelsburger See: glatt gepflastert	Q0 15248,10562 15453,10415
+Am Rummelsburger See: glatt gepflastert	Q0 15248,10562 15320,10510 15453,10415
 (Rummelsburger Ufer - Emma-Ihrer-Str.): glatt gepflastert	Q0 15453,10415 15550,10361
 Am Rummelsburger See: Parkweg	Q2+ 15453,10415 15457,10342 15496,10277 15518,10234 15604,10204 15601,10179 15645,10147 15713,10035 15786,9957 15790,9920 15828,9875 15931,9846
 Am Rummelsburger See: Betonweg	Q0- 15931,9846 16000,9784 16046,9746
@@ -2109,7 +2110,7 @@ Ringslebenstr.: unbefestigter Weg	Q2 13811,1430 13851,1460
 Mauerweg: Asphalt	Q0 14433,1739 14641,1771 14676,1777 14784,1725 14876,1686 15200,737 15333,378 15423,150 15480,6 15538,-30 15559,-78 15606,-104 15640,-149
 (Am Rudower Fließ): Parkweg	Q1 15640,-149 15733,-69 15814,9 15843,4 15891,53 15949,53
 Waßmannsdorfer Chaussee: asphaltiert mit Straßenschäden	Q1 16373,-496 16273,-824
-(Mauerweg): Asphalt	Q0 18127,-367 18256,-309
+(Mauerweg): Asphalt	Q0 18127,-367 18218,-325 18256,-309
 (Landschaftspark Rudow): Gehwegplatten	Q0- 18336,-103 17973,428
 Am Espenpfuhl: Kopfsteinpflaster	Q2 17920,391 17973,428
 #: add_fragezeichen: tatsächlich Kopfsteinpflaster?
@@ -3052,6 +3053,10 @@ Rietzestr.: Asphalt	Q0 12693,15225 12472,15356
 ######################################################################
 #: by: anonymous vvv
 # 
+#: note: http://www.berlin.de/ba-spandau/presse/archiv/20080807.0735.106603.html
+Am Maselakepark: sehr gute Qualität	Q0 -2955,16418 -2939,16495 -2661,16446 -2595,16808
+#: note: http://www.berlin.de/ba-spandau/presse/archiv/20080807.0735.106603.html
+Bamihlstr.: sehr gute Qualität	Q0 -2595,16808 -2579,16899 -2563,17004
 #: note: enge Straße, aber q0
 Am Elsenbruch: Beton	Q0 5524,4066 5573,3960 5593,3935
 Huntestr.: guter Beton	Q0- 1913,1000 1960,1096 2055,1198 2166,1256
@@ -7932,6 +7937,8 @@ Albulaweg: guter Beton	Q0 10150,2006 10344,1944 10486,1908 10541,1889
 Albulaweg: Verbundsteinpflaster	Q0- 10541,1889 10593,1875
 Faulhornweg: guter Beton	Q0 10344,1944 10383,2088
 Weilburgstr.: Asphalt	Q0 11120,-976 11305,-952 11503,-926 11598,-915 11695,-906 11790,-894 11878,-885
+#: note: Eintrag "einige Fußgänger, q2" ignoriert
+Bernsteinring: Beton	Q0 11374,1689 11549,1721 11582,1742 11587,1774 11570,1825 11550,1847 11465,1855 11355,1801
 #: by: ^^^
 #: by: Kai (regionalorenz): vvv
 Kasinoweg: guter Asphalt	Q0 2624,24710 2444,24950 2364,24886
@@ -9118,8 +9125,10 @@ Lössauer Str.: guter Asphalt	Q0 16816,15092 17230,15083
 #: by: Jessica (prusseit):
 Ingridpfad: guter Asphalt	Q0 6182,2727 6304,2825 6357,2863
 #: by: Andrea (andbeh):
+#: confirmed_by: Juliane ... Rothmaler (Q2)
+#: corrected_by: Juliane ... Rothmaler (mäßiger Asphalt -> mäßiger Beton)
 #: corrected_by: srt/policy (Q2 -> Q1-)
-Klothildestr.: mäßiger Asphalt	Q1- 10812,20011 10948,19737 11018,19597 11048,19531 11068,19494
+Klothildestr.: mäßiger Beton	Q1- 10812,20011 10948,19737 11018,19597 11048,19531 11068,19494
 #: by: Joachim Fock:
 #: note: Tempo-30-Zone
 Glarner Str.: Asphalt	Q0 3732,2455 3726,2209
@@ -9596,6 +9605,13 @@ Wiesenpromenade: guter Asphalt	Q0 23675,5810 23758,5846 23874,5870
 Waldmüllerstr.: guter Asphalt	Q0 1558,1805 1658,1852 1747,1887
 #: by: Oliver (...Pinguin):
 Wildganssteig: mäßiges Verbundsteinpflaster	Q2+ -1602,22422 -1301,22347 -956,22262 -762,22216 -677,22194 -540,22172 -452,22145 -362,22105
+#: by: Marina Kaese
+Kühlungsborner Str.: guter Asphalt	Q0 16445,18571 16385,18524 16297,18468 16171,18429
+#: by: Sabine Dreyer
+Am Klarpfuhl: Kopfsteinpflaster	Q2 18085,137 18249,-114 18230,-233 18195,-277
+#: by: stefan (sk ap):
+#: note: Eintrag "q2" (ohne weitere Angaben) in "Q1-" mit eingeflossen
+Weizenweg: mäßiger Asphalt	Q1- 20847,13280 20836,13170 20802,12890 20780,12702 20773,12621 20746,12402
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206

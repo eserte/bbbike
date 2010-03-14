@@ -684,6 +684,9 @@ Zeltinger Platz	1s 2404,25187 2355,25252 2395,25273 2446,25265 2490,25211 2486,2
 Ludolfinger Platz	1s 2277,25033 2245,25016 2205,25042 2192,25083 2216,25117 2277,25094 2285,25059 2277,25033
 Sewanstr. - Balatonstr.	1s 17705,10232 17741,10386
 Hönower Str. (Karlshorst) (Ausweichen auf Sandbankette möglich)	1s 18377,9366 18490,9387
+Straßenbahntrasse	3nocross::ignrte 15639,10469 15408,10638 15383,10656
+Hauptstr. (Rummelsburg) [Wohngebiet] -> Hauptstr.: Straßenbahntrasse	3::igndisp 15358,10562 15408,10638 15383,10656
+Hauptstr. -> Hauptstr. (Rummelsburg) [Wohngebiet]: Straßenbahntrasse	3::igndisp 15639,10469 15408,10638 15358,10562
 Grünstreifen	3nocross::ignrte 13649,14899 13749,15013 13838,15113
 Kniprodestr. -> Altenescher Weg: Grünstreifen	3::igndisp 13838,15113 13749,15013 13856,14944
 Altenescher Weg -> Kniprodestr.: Grünstreifen	3::igndisp 13856,14944 13749,15013 13649,14899
@@ -1674,7 +1677,7 @@ Vicki-Baum-Str.: noch in Bau, gesperrt	2:inwork 15823,10300 15753,10353 15688,10
 Alice-und-Hella-Hirsch-Ring: noch in Bau, gesperrt	2:inwork 15788,10252 15823,10300
 Lina-Morgenstern-Str.: noch in Bau, gesperrt	2:inwork 15716,10303 15753,10353
 Zur Boyenstr.: Bauarbeiten	2:inwork 7925,14442 7828,14405
-Kynaststraße: Abriss und Neubau bis ca. 2010-03-01	2:inwork 14988,11130 14897,10935 14881,10864 14867,10802 14828,10628 14802,10505 14795,10473 14766,10372 14724,10297
+Kynaststraße: Abriss und Neubau	2:inwork 14988,11130 14897,10935 14881,10864 14867,10802 14828,10628 14802,10505 14795,10473 14766,10372 14724,10297
 Brücke im Tiergarten: gesperrt	2:inwork 6406,11784 6467,11780
 Behlertstr.	1 -12370,-354 -12500,-339 -12621,-359 -12821,-417
 tragen (Treppe)	0:30:-82 2279,5112

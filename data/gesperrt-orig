@@ -846,6 +846,7 @@ Hönower Str. (Karlshorst) (Ausweichen auf Sandbankette möglich)	1s:q2 18377,9366
 # gesperrte Wegführung (nicht möglich zu umgehen --- wenn es eine
 # Umgehung gibt, sollte sie in comments_path-orig als PI; kommentiert sein)
 # 
+Hauptstr.: Straßenbahntrasse	3nocross 15639,10469 15408,10638 15383,10656
 #: by: Heike Steinhardt ("eher nicht empfehlenswert")
 Kniprodestr.: Grünstreifen	3nocross 13649,14899 13749,15013 13838,15113
 An der Wuhlheide: Mittelstreifen	3nocross 19578,6165 19405,6276 19276,6359
@@ -1468,8 +1469,8 @@ Wegedornbrücke: Vollsperrung, Neubau	2:inwork 20385,593 20442,564 20510,530
 Am Spreekanal: Bauarbeiten	2:inwork 10084,12228 9996,12401
 #: next_check: 2011-03-01
 Rathausbrücke: gesperrt bis März 2011 (Neubau)	2:inwork 10362,12351 10422,12395
-#: last_checked: 2009-10-17 vvv
-#: next_check: 2010-03-01 vvv
+#: last_checked: 2010-03-13 vvv
+#: next_check: 2010-05-01 vvv
 Vicki-Baum-Str.: noch in Bau, gesperrt	2:inwork 15990,10185 15894,10251
 Vicki-Baum-Str.: noch in Bau, gesperrt	2:inwork 15823,10300 15753,10353 15688,10400
 Alice-und-Hella-Hirsch-Ring: noch in Bau, gesperrt	2:inwork 15788,10252 15823,10300
@@ -1478,7 +1479,9 @@ Lina-Morgenstern-Str.: noch in Bau, gesperrt	2:inwork 15716,10303 15753,10353
 #: last_checked ^^^
 #: last_checked: 2009-09-19
 Zur Boyenstr.: Bauarbeiten	2:inwork 7925,14442 7828,14405
-Kynaststraße: Abriss und Neubau bis ca. 2010-03-01	2:inwork 14988,11130 14897,10935 14881,10864 14867,10802 14828,10628 14802,10505 14795,10473 14766,10372 14724,10297
+#: last_checked: 2010-03-14
+#: note: zumindest auf der östlichen Seite wird ein Radweg entstehen
+Kynaststraße: Abriss und Neubau	2:inwork 14988,11130 14897,10935 14881,10864 14867,10802 14828,10628 14802,10505 14795,10473 14766,10372 14724,10297
 #: last_checked: 2009-09-12
 Brücke im Tiergarten: gesperrt	2:inwork 6406,11784 6467,11780
 #
