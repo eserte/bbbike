@@ -3383,25 +3383,41 @@ sub search_coord {
 	    }
 	    $qualitaet_net->make_net_cat;
 	}
-	my $penalty;
+	my %penalty;
+	my %max_limit;
 	if ($q->param('pref_quality') eq 'Q0') {
-	    $penalty = { "Q0" => 1,
+	    %penalty = ( "Q0" => 1,
 			 "Q1" => 1.2,
 			 "Q2" => 1.6,
-			 "Q3" => 2 };
+			 "Q3" => 2 );
+	    %max_limit = ( Q1 => $velocity_kmh / 25,
+			   Q2 => $velocity_kmh / 16,
+			   Q3 => $velocity_kmh / 10 );
 	} else {
-	    $penalty = { "Q0" => 1,
+	    %penalty = ( "Q0" => 1,
 			 "Q1" => 1,
 			 "Q2" => 1.5,
-			 "Q3" => 1.8 };
-	    # Bei hohen Geschwindigkeiten doch noch Q1-Optimierung machen:
-	    if ($velocity_kmh > 25) {
-		$penalty->{Q1} = $velocity_kmh / 25;
+			 "Q3" => 1.8 );
+	    %max_limit = ( Q1 => $velocity_kmh / 25,
+			   Q2 => $velocity_kmh / 18,
+			   Q3 => $velocity_kmh / 13 );
+	}
+	my $min_limit = $velocity_kmh / 5;
+	for my $q (keys %max_limit) {
+	    if ($penalty{$q} < $max_limit{$q}) {
+		$penalty{$q} = $max_limit{$q};
+	    }
+	}
+	if ($velocity_kmh > 5) {
+	    for my $q (keys %penalty) {
+		if ($penalty{$q} > $min_limit) {
+		    $penalty{$q} = $min_limit;
+		}
 	    }
 	}
 	$extra_args{Qualitaet} =
 	    {Net => $qualitaet_net,
-	     Penalty => $penalty,
+	     Penalty => \%penalty,
 	    };
 
     }
