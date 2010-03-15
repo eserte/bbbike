@@ -3316,11 +3316,6 @@ unless ($skip_features{"sehenswuerdigkeiten"}) {
 			   }
 		       }
 		      );
-    if ($devel_host) { # XXX
-	$sb2m->checkbutton(-label => M"Straßenbahnschienen meiden",
-			   -variable => \$tram_optimization,
-			  );
-    }
     unless ($skip_features{"green"}) {
 	$sb2m->cascade(-label => M("Grüne Wege")."...");
 	my $gwm = $sb2m->Menu(-title => M"Grüne Wege");
@@ -3361,6 +3356,11 @@ unless ($skip_features{"sehenswuerdigkeiten"}) {
     unless ($skip_features{"nolighting"}) {
 	$sb2m->checkbutton(-label => M"Unbeleuchtete Straßen meiden",
 			   -variable => \$unlit_streets_optimization,
+			  );
+    }
+    if ($advanced) { # XXX
+	$sb2m->checkbutton(-label => M"Straßenbahnschienen meiden",
+			   -variable => \$tram_optimization,
 			  );
     }
     unless ($skip_features{"hoehe"}) {
