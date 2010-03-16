@@ -5,7 +5,7 @@
 # $Id: gpsman_split.pl,v 1.9 2008/08/08 20:01:44 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2004 Slaven Rezic. All rights reserved.
+# Copyright (C) 2004,2010 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -20,11 +20,13 @@ use File::Path;
 my $do;
 my $do_mark_as_inexact;
 my $do_mark_with_question;
+my $do_split_ampelschaltung;
 my $destdir = "/tmp/gpsmansplit";
 
 if (!GetOptions("bydate" => sub { $do = "by_date" },
 		"markasinexact!" => \$do_mark_as_inexact,
 		"markwithquestion!" => \$do_mark_with_question,
+		"splitampelschaltung!" => \$do_split_ampelschaltung,
 		"destdir=s" => \$destdir,
 	       )) {
     usage();
@@ -33,7 +35,12 @@ if (!GetOptions("bydate" => sub { $do = "by_date" },
 my $file = shift || usage("gpsman file missing");
 my $ext = ".UNKNOWN";
 
-mkpath([$destdir], 1, 0777);
+mkpath($destdir, 1, 0777);
+my $destdir_ampelschaltung;
+if ($do_split_ampelschaltung) {
+    $destdir_ampelschaltung = "$destdir/ampelschaltung";
+    mkpath($destdir_ampelschaltung, 1, 0777);
+}
 
 $do = "" if !defined $do;
 if ($do eq 'by_date') {
@@ -71,7 +78,8 @@ if ($do eq 'by_date') {
 			$y = 2000+$y;
 		    }
 		    $m = monthabbrev_number($m);
-		    my $f = sprintf("$destdir/%04d%02d%02d$ext", $y, $m, $d);
+		    my $dir = ($do_split_ampelschaltung && m{symbol=buoy_white_(red|green)}) ? $destdir_ampelschaltung : $destdir;
+		    my $f = sprintf("$dir/%04d%02d%02d$ext", $y, $m, $d);
 		    close OUT if defined fileno(OUT);
 		    if ($file_seen{$f}) {
 			open(OUT, ">>$f") or die "Can't append to $f: $!";
@@ -132,12 +140,13 @@ sub usage {
 	print STDERR "$msg\n";
     }
     die <<EOF;
-usage: $0 [-bydate] [-markasinexact | -markwithquestion] [-destdir directory] gpsmanfile
+usage: $0 [-bydate] [-splitampelschaltung] [-markasinexact | -markwithquestion] [-destdir directory] gpsmanfile
 
--markasinexact:    add "~" to elevation to mark the point as inexact
--markwithquestion: add "?" to elevation to mark the point as questionable
--destdir:          use another destination directory than $destdir
--bydate:           split the data by date
+-markasinexact:       add "~" to elevation to mark the point as inexact
+-markwithquestion:    add "?" to elevation to mark the point as questionable
+-destdir:             use another destination directory than $destdir
+-bydate:              split the data by date
+-splitampelschaltung: split waypoints marked with buoy_white_red/green symbols into separate directory
 EOF
 }
 
