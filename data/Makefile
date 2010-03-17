@@ -1141,7 +1141,7 @@ do-checks:	.check_empty_lines \
 	.check_housenumbers .check_sehenswuerdigkeit \
 	.check_green .check_green2 \
 	.check_brunnels .check_brunnels2 \
-	.check_comments_ferry \
+	.check_comments_ferry .check_comments_route \
 	.check_comments_cyclepath_2 .check_comments_danger_2 \
 	.check_comments_ferry_2 .check_comments_mount_2 \
 	.check_comments_tram_2 .check_comments_kfzverkehr_2 \
@@ -1397,6 +1397,17 @@ GESPERRT_CATRX='^(0:\d+(:-?\d+)?|1|1s(:q\d)?|2|3|3nocross|BNP:\d+(:-?\d+(:traile
 
 .check_comments_ferry:	comments_ferry faehren
 	$(CHECK_NEIGHBOUR) -type standard -against faehren -data comments_ferry
+	@touch $@
+
+.check_comments_route: comments_route strassen landstrassen landstrassen2 comments_ferry fragezeichen fragezeichen-orig
+	$(CHECK_NEIGHBOUR) -type standard \
+	    -against strassen \
+	    -against landstrassen \
+	    -against landstrassen2 \
+	    -against comments_ferry \
+	    -against fragezeichen \
+	    -against fragezeichen-orig \
+	    -data comments_route
 	@touch $@
 
 .for i in cyclepath danger ferry mount tram kfzverkehr scenic

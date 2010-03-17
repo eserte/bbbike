@@ -1527,10 +1527,11 @@ userdel	q4::inwork; 10829,18083 10907,18109 10938,18147 10989,18172 11137,18358 
        },
        {
          'until' => 1276898399,
-         'text' => 'Die Leipziger Str. ist zwischen Mauerstr. und Charlottenstr. Richtung Alexanderstr. wegen Bauarbeiten gesperrt. Zu Einbahnstraßen werden Mauer-, Krausen- und Charlottenstr. Dauer: 15. März 2010 bis 18. Juni 2010 ',
+         'text' => 'Die Leipziger Str. ist zwischen Mauerstr. und Charlottenstr. Richtung Alexanderstr. wegen Bauarbeiten gesperrt. Zu Einbahnstraßen werden Teile der Mauer-, Krausen-, Charlottenstr. und Friedrichstr. Dauer: 15. März 2010 bis 18. Juni 2010 ',
          'from' => 1268521200,
          'id' => 2020,
          'data' => 'userdel	q4::inwork; 9268,11590 9444,11616 9569,11631 9581,11523 9456,11513 9331,11497 9268,11590
+userdel	q4::inwork; 9456,11513 9444,11616
 ',
          'type' => 'gesperrt'
        }
