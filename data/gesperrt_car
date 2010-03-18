@@ -482,9 +482,9 @@ Katharinenstr. -> Clayallee: Mittelstreifen	3::igndisp 1180,4136 1232,4129 1279,
 Mittelstreifen	3nocross::ignrte 21358,13909 21398,13906 21576,13898
 Fridolinweg -> Cecilienstr.: Mittelstreifen	3::igndisp 21412,14023 21398,13906 21576,13898
 Cecilienstr. -> Fridolinweg: Mittelstreifen	3::igndisp 21358,13909 21398,13906 21412,14023
-Mittelstreifen	3nocross::ignrte -1655,16813 -1710,16735 -1746,16667
+Mittelstreifen	3nocross::ignrte -1675,16813 -1710,16735 -1746,16667
+Daumstr. -> Glindowseestr.: Mittelstreifen	3::igndisp -1675,16813 -1710,16735 -1553,16695
 Glindowseestr. -> Daumstr.: Mittelstreifen	3::igndisp -1553,16695 -1710,16735 -1746,16667
-Daumstr. -> Glindowseestr.: Mittelstreifen	3::igndisp -1655,16813 -1710,16735 -1553,16695
 Karlstr.	1 22556,4386 22458,4134
 Mittelstreifen	3nocross::ignrte 21400,18817 21335,18679 21251,18508
 Klandorfer Str. -> Märkische Allee: Mittelstreifen	3::igndisp 21377,18663 21335,18679 21251,18508
@@ -651,9 +651,9 @@ Delbrückstr.	1 12743,6645 12468,6592
 Emser Str.	1 13058,7165 12872,7134
 Stuthirtenweg: Gitter	3 13453,1218 13552,1265 13628,1334
 Stuthirtenweg: Gitter	3 13628,1334 13552,1265 13453,1218
-Abbiegen verboten	3nocross::ignrte 10512,12039 10431,11945 10391,11898
-Gertraudenstr. -> Petripl.: Abbiegen verboten	3::igndisp 10391,11898 10431,11945 10385,11985
-Petripl. -> Gertraudenstr.: Abbiegen verboten	3::igndisp 10385,11985 10431,11945 10512,12039
+Abbiegen verboten	3nocross::ignrte 10512,12039 10460,11979 10391,11898
+Petripl. -> Gertraudenstr.: Abbiegen verboten	3::igndisp 10418,12016 10460,11979 10512,12039
+Gertraudenstr. -> Petripl.: Abbiegen verboten	3::igndisp 10391,11898 10460,11979 10418,12016
 Abbiegen verboten	3nocross::ignrte 10313,11805 10299,11786 10240,11740
 Gertraudenstr. -> Kurstr.: Abbiegen verboten	3::igndisp 10240,11740 10299,11786 10274,11805
 Kurstr. -> Gertraudenstr.: Abbiegen verboten	3::igndisp 10274,11805 10299,11786 10313,11805
@@ -953,3 +953,11 @@ Lenther Steig	1 1024,14889 1037,14814 1042,14721
 Mittelstreifen	3nocross::ignrte 6157,7685 6083,7582 5955,7406
 Hauptstr. -> Wielandstr.: Mittelstreifen	3::igndisp 6157,7685 6083,7582 6081,7215
 Wielandstr. -> Hauptstr.: Mittelstreifen	3::igndisp 6081,7215 6083,7582 5955,7406
+Fehmarner Str.	1 6710,14776 6528,15000
+Mittelstreifen	3nocross::ignrte 1962,11417 1837,11398 1629,11363
+Soorstr. -> Soorstr.: Mittelstreifen	3::igndisp 1878,11268 1837,11398 1799,11517
+Soorstr. -> Kaiserdamm: Mittelstreifen	3::igndisp 1878,11268 1837,11398 1629,11363
+Kaiserdamm -> Soorstr.: Mittelstreifen	3::igndisp 1962,11417 1837,11398 1878,11268
+Soorstr. -> Soorstr.: Mittelstreifen	3::igndisp 1799,11517 1837,11398 1878,11268
+Soorstr. -> Kaiserdamm: Mittelstreifen	3::igndisp 1799,11517 1837,11398 1962,11417
+Kaiserdamm -> Soorstr.: Mittelstreifen	3::igndisp 1629,11363 1837,11398 1799,11517

@@ -66,10 +66,10 @@ Apeldorner Weg: Bordsteine	CP; 3952,8980 3932,8989 3868,8759
 Apeldorner Weg: kein Straßenname ausgeschildert; Weg verläuft westl. direkt an der BAB (104)	CS 3848,8689 3868,8759 3932,8989
 (Wallenbergstr. - Rudolstätter Str.): Bordsteine	CP; 3964,8559 4029,8482 4139,8485
 (Wallenbergstr. - Rudolstätter Str.): Bordsteine	CP; 4139,8356 4029,8482 4139,8485
-Virchowweg: Gelände der Charité	CS 8548,13577 8503,13553 8379,13457 8371,13399 8434,13310 8596,13086 8628,13033
-Hufelandweg: Gelände der Charité	CS 8503,13553 8554,13476 8504,13441 8538,13388 8582,13355 8618,13306 8631,13159 8632,13133 8596,13086
+Virchowweg: Gelände der Charité	CS 8548,13577 8503,13553 8379,13457 8371,13399 8434,13310 8602,13075 8628,13033
+Hufelandweg: Gelände der Charité	CS 8503,13553 8554,13476 8504,13441 8538,13388 8582,13355 8618,13306 8630,13172 8632,13133 8602,13075
 Bonhoefferweg: Gelände der Charité	CS 8538,13388 8487,13351 8434,13310
-Sauerbruchweg: Gelände der Charité	CS 8487,13351 8631,13159
+Sauerbruchweg: Gelände der Charité	CS 8487,13351 8555,13260 8605,13200 8630,13172
 (Luisenstr. - Hufelandweg): Gelände der Charité	CS 8665,13353 8582,13355
 (Reichsstr. - Westendallee): Privatstraße	CS 269,12576 151,12541
 (Guerickestr. - Einsteinufer): Privatstraße	CS 4642,12275 4711,12411
@@ -115,12 +115,12 @@ Begasstr. - Riemenschneiderweg: Hausdurchfahrten	CS 6513,7005 6662,7018 6770,702
 Gartentor, Zufahrt zum Gemeindehaus (dürfte immer offen sein)	CS 2201,43954
 Freienbrinker Saum: die Straße führt am Waldrand entlang, in der Dunkelheit ist mit Wildschweinen zu rechnen	CS 30124,4664 30254,4692 30369,4697 30478,4715 30527,4724 30588,4720 30636,4717 30686,4731 30810,4765 30857,4770 30913,4766 31011,4750 31118,4768 31209,4781 31224,4775 31311,4742 31364,4711 31424,4658
 (Deutschhofer Allee - Unter den Birken): in der Dämmerung ist mit Wildschweinen zu rechnen	CS 21940,8158 22077,8104 22199,8028 22600,7711
-Petriplatz: zusätzliche Ausschilderung "Zur Brüderstr."	CS; 10431,11945 10385,11985
+Petriplatz: zusätzliche Ausschilderung "Zur Brüderstr."	CS; 10460,11979 10418,12016
 DB-Gelände: bei starken Regenfällen regelmäßig eine große und tiefe Pfütze, die die Durchfahrt erschwert	CS 14093,10909 14043,10928
 Straße 77: die Straße ist nicht ausgeschildert	CS 15402,12390 15315,12360
 Drosselbartweg: Radfahren erlaubt	CS 13899,18833 13909,18835 13953,18842 13967,18842 13993,18833 14061,18791 14206,18700 14218,18674 14222,18666
 (Seeburger Str./Seecktstr. - Bullengraben): Zufahrt über Supermarktparkplatz	CS; -4299,13304 -4354,13377
-Straße R: Privatstraße, Höchstgeschwindigkeit 20 km/h	CS -198,16187 -267,16246 -315,16286 -386,16347 -460,16408 -542,16475 -629,16546 -698,16603 -786,16666
+Straße R: Privatstraße, Höchstgeschwindigkeit 20 km/h	CS -203,16168 -267,16246 -315,16286 -386,16347 -460,16408 -542,16475 -629,16546 -719,16608 -784,16658 -792,16659
 Straße Y: Privatstraße, Höchstgeschwindigkeit 20 km/h	CS -629,16546 -671,16488
 Zur Pariser Str.: Hausdurchfahrt benutzen	CS; 5464,9914 5416,9928
 Kreisverkehr	Roundabout 11393,10390
@@ -137,7 +137,7 @@ Tordurchfahrt	CS 9341,6163 9367,6160
 (Wetzlarer Str. - Stern-Center): Weg entlang der Schnellstraße	CS -8970,-3923 -8975,-3946 -8708,-4025 -8687,-4015 -8634,-4035 -8579,-4074 -8448,-4098 -8324,-4087 -8096,-4106 -8038,-4093
 An den Haselbüschen: Sackgasse, kein Durchgang zur Daumstr.	CS; -1273,15539 -1291,15580 -1402,15592
 Pfähle und hohe Bordsteine	CP2 2211,4280 2254,4376
-Uferweg am Plötzensee	CS 5618,14981 5518,15236 5291,15424 5050,15643 5084,15415 5018,15228
+Uferweg am Plötzensee	CS 5618,14981 5518,15236 5291,15424 5050,15643 5084,15415 5005,15213
 (Im Schäferfeld - Wetzlarer Str.): am Baggersee entlang	CS -8563,-3805 -8562,-3849 -8661,-3971 -8982,-3860 -9002,-3896 -8970,-3923
 (Eichborndamm - General-Woyna-Str.): Weg parallel zur S-Bahn-Trasse	CS 4232,18981 4285,18983 4353,18986 4475,18998 4577,19009
 Paul-Francke-Str.: Privatstraße durch die Genossenschaftssiedlung des Beamtenwohnungsvereins	CS 9901,18522 10006,18502 10013,18545 9994,18595 9916,18610
@@ -193,3 +193,4 @@ ausgeschildert "zu den Häusern Hosemannstr. 50 - 39"	CP2; 12642,15668 12463,1577
 Philosophenweg: Privatstraße	CS 16073,12883 16074,12778
 Innovationspark Köpenick	CS 21683,6946 21498,7153 21475,7500 21497,7597 21546,7635
 entlang der Mauritiusschule	CS 15634,11656 15482,11729 15417,11681
+Vereinsweg (Charlottenburg): Privatstraße	CS 2828,11731 2855,11752 2907,11755 2934,11747

@@ -264,7 +264,7 @@ Kolk/Behnitz/Möllentordamm	1 -3042,14682 -3028,14640 -2951,14617 -2942,14666 -30
 Hertelstr.	1 4893,6900 4787,6899
 Karl-Marx-Platz	1 12980,7597 13100,7626
 Karl-Marx-Platz	1 13100,7626 12991,7549
-Olympischer Platz	1 -157,11943 -505,11882 -514,11991 -272,12039 -193,12051 -99,12019
+Olympischer Platz	1 -157,11943 -505,11882 -514,11991 -272,12039 -193,12051 -110,12019
 Aristotelessteig	1 18452,9755 18435,9639 18660,9599
 Markelstr.	1 5268,6305 5020,6434
 Berlinickestr.	1 5088,5495 5016,5401
@@ -292,7 +292,6 @@ Amalienpark	1 10905,18671 10950,18499 10860,18650
 Im Amseltal	1 1962,25214 1982,25108
 Gundelfinger Str.	1 18735,9421 18697,9153 18653,8922 18609,8717
 Dorotheenstr.	1 18653,8922 18770,8898
-Fehmarner Str.	1 6710,14776 6528,15000
 Alte Späthbrücke	2 14437,5080 14535,5137
 Katzengraben	1 22451,4749 22465,4690
 Schwiegersteig	1 1134,14721 1130,14823 1109,14911
@@ -524,6 +523,10 @@ Friedensplatz	1 8971,6154 8994,6144 9003,6121 8996,6106 8976,6094 8952,6109 8944
 Westhafenstr.: Tor kann geschlossen sein	2 6083,14564 6025,14539 6015,14516 5997,14444 5920,14422 5217,14255
 Frank-Schweitzer-Str.	1 19350,14997 19175,14926 19113,14901 19117,14875 19255,14911
 (Schulze-Boysen-Str. - Wilhelm-Guddorf-Str.)	1 15417,11681 15482,11729 15634,11656
+Hufelandweg	1s 8630,13172 8618,13306 8582,13355
+Sauerbruchweg	1s 8487,13351 8555,13260 8605,13200 8630,13172
+Rahel-Hirsch-Weg	1 8586,13440 8600,13448 8581,13487 8554,13476 8586,13440
+Hempelsteig	1 -787,13147 -525,13034 -472,12961
 Am Neuen Garten	1 -12166,1384 -12212,1201 -12276,831 -12302,718 -12323,635 -12332,585 -12582,127
 Leistikowstr.	1 -12512,810 -12302,718
 Hochstraße	3nocross::ignrte -11399,-1339 -11461,-1424 -11540,-1543
@@ -1392,9 +1395,9 @@ Unter den Eichen -> Reichensteiner Weg: Mittelstreifen, Tunnelrampe	3::igndisp 3
 Mittelstreifen	3nocross::ignrte 11785,9437 11757,9509 11745,9541
 Kottbusser Damm -> Pflügerstr.: Mittelstreifen	3::igndisp 11745,9541 11757,9509 11934,9538
 Pflügerstr. -> Kottbusser Damm: Mittelstreifen	3::igndisp 11934,9538 11757,9509 11785,9437
-Mittelstreifen	3nocross::ignrte 10350,11846 10391,11898 10431,11945
+Mittelstreifen	3nocross::ignrte 10350,11846 10391,11898 10460,11979
 Gertraudenstr. -> Kleine Gertraudenstr.: Mittelstreifen	3::igndisp 10350,11846 10391,11898 10364,11896
-Kleine Gertraudenstr. -> Gertraudenstr.: Mittelstreifen	3::igndisp 10364,11896 10391,11898 10431,11945
+Kleine Gertraudenstr. -> Gertraudenstr.: Mittelstreifen	3::igndisp 10364,11896 10391,11898 10460,11979
 breiter Mittelstreifen, enge Querungsmöglichkeit nur für Fußgänger, Bordsteine	3nocross::ignrte 6181,8181 6246,8222 6325,8259
 Nymphenburger Str. -> Heylstr.: breiter Mittelstreifen, enge Querungsmöglichkeit nur für Fußgänger, Bordsteine	3::igndisp 6163,8398 6246,8222 6325,8259
 Heylstr. -> Nymphenburger Str.: breiter Mittelstreifen, enge Querungsmöglichkeit nur für Fußgänger, Bordsteine	3::igndisp 6181,8181 6246,8222 6163,8398
@@ -1421,6 +1424,7 @@ Altheider Str. -> Adlergestell: Mittelstreifen	3::igndisp 19871,3600 19812,3561 
 Adlergestell -> Seidenbaustr.: Mittelstreifen	3::igndisp 19812,3561 19857,3514 19966,3596
 Seidenbaustr. -> Adlergestell: Mittelstreifen	3::igndisp 19966,3596 19857,3514 19904,3464
 Mittelstreifen	3nocross::ignrte 19676,3705 19633,3751 19587,3801
+tragen (5 Stufen)	0:10:-187 8587,13436
 tragen (16 Stufen)	0:20:75 7487,5477
 tragen (ca. 30 Stufen)	0:35:-219 19976,5
 tragen (ca. 30 Stufen)	0:35:-221 19932,61
@@ -1448,8 +1452,8 @@ tragen (ca. 30 Stufen)	0:30:-90 -13733,-1856
 tragen (21 Stufen)	0:30:-127 15091,21172
 tragen (Treppe)	0:30:-267 1471,-311
 tragen (ca. 20 Stufen)	0:30:-221 730,13286
-tragen (Treppe)	0:30:-90 3281,15792
-tragen (Treppe)	0:30:-235 3361,15784
+tragen (Treppe)	0:30:-105 3281,15792
+tragen (ca. 35 Stufen)	0:30:-235 3361,15784
 tragen (ca. 40 Stufen)	0:30:56 1761,3208
 tragen (ca. 30 Stufen)	0:30:53 17757,11761
 tragen (15 Stufen)	0:30:-198 4710,23263
@@ -1545,6 +1549,9 @@ Rampe und 8 weite Stufen	0:25:76 16065,6126
 tragen (Treppe, 12 Stufen)	0:15:-23 5475,7906
 tragen (Treppe, ca. 20 Stufen)	0:25:-108 19163,14981
 tragen (Treppe, ca. 20 Stufen)	0:25:-12 19160,14935
+Schranke, Durchfahrtsbreite nur 80cm	BNP:3:78:trailer=no -1342,13134
+Schranke, Durchfahrtsbreite nur 60cm	BNP:3:-232:trailer=no -784,16658
+Drängelgitter	BNP:3:-12:trailer=10 -992,16688
 Drängelgitter	BNP:2:-266:trailer=5 18583,2972
 Drängelgitter	BNP:2:90:trailer=5 18390,2972
 Drängelgitter	BNP:2:90:trailer=5 18361,2972
@@ -1668,15 +1675,12 @@ Schranke, kann auch mit Anhänger umfahren werden	BNP:1:-168 49137,24422
 Drängelgitter	BNP:3:24:trailer=6 3644,8456
 Poller, Abstand 80cm (mit Anhänger über Gehweg umfahren)	BNP:1:1:trailer=10 7816,5682
 Brücke über A10: Sperrung vom 15.02.2010 bis 01.10.2010	2:inwork 15337,24593 15490,24848
-Kreuzstr.: Bauarbeiten, voll gesperrt	2:inwork 10231,11940 10209,11918
 Wegedornbrücke: Vollsperrung, Neubau	2:inwork 20385,593 20442,564 20510,530
-Am Spreekanal: Bauarbeiten	2:inwork 10084,12228 9996,12401
 Rathausbrücke: gesperrt bis März 2011 (Neubau)	2:inwork 10362,12351 10422,12395
 Vicki-Baum-Str.: noch in Bau, gesperrt	2:inwork 15990,10185 15894,10251
 Vicki-Baum-Str.: noch in Bau, gesperrt	2:inwork 15823,10300 15753,10353 15688,10400
 Alice-und-Hella-Hirsch-Ring: noch in Bau, gesperrt	2:inwork 15788,10252 15823,10300
 Lina-Morgenstern-Str.: noch in Bau, gesperrt	2:inwork 15716,10303 15753,10353
-Zur Boyenstr.: Bauarbeiten	2:inwork 7925,14442 7828,14405
 Kynaststraße: Abriss und Neubau	2:inwork 14988,11130 14897,10935 14881,10864 14867,10802 14828,10628 14802,10505 14795,10473 14766,10372 14724,10297
 Brücke im Tiergarten: gesperrt	2:inwork 6406,11784 6467,11780
 Behlertstr.	1 -12370,-354 -12500,-339 -12621,-359 -12821,-417
@@ -1884,7 +1888,6 @@ Virchowweg: schmale Toreinfahrt, Fußgänger und Bordstein	0:10:86 8548,13577
 tragen (ca. 20 Stufen)	0:45:-98 8536,12758
 tragen (35 Stufen)	0:45:-108 8507,12873
 tragen (35 Stufen)	0:45:-57 8480,12909
-Hufelandweg	1s 8631,13159 8618,13306 8582,13355
 Fröhner Str.	1 -4294,11673 -4413,11628 -4573,11545
 Bocksfeldstr.	1 -4300,11720 -4090,11707
 Roedeliusweg	1 -4413,11628 -4431,11779
