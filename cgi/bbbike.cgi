@@ -2856,7 +2856,7 @@ sub make_crossing_choose_html {
 	    }
 	    for (@kreuzung) {
 		if (m{^\s*$}) {
-		    $_ = '(' . M"Straﬂe ohne Namen" . ')';
+		    $_ = '(' . M("Straﬂe ohne Namen") . ')';
 		}
 	    }
 	    {
