@@ -16,6 +16,8 @@ package VMZTool;
 use strict;
 our $VERSION = '0.01';
 
+use HTML::FormatText 2;
+use HTML::TreeBuilder;
 use LWP::UserAgent ();
 use URI ();
 use URI::QueryParam ();
@@ -47,6 +49,7 @@ sub new {
     my $self = bless {}, $class;
     $self->{ua} = LWP::UserAgent->new;
     $self->{xmlp} = XML::LibXML->new;
+    $self->{formatter} = HTML::FormatText->new(leftmargin => 0, rightmargin => 60);
     eval { require Hash::Util; Hash::Util::lock_keys($self) }; warn $@ if $@;
     $self;
 }
@@ -166,22 +169,13 @@ sub parse {
 sub parse_mappage {
     my($self, $file, $data) = @_;
     open my $fh, $file or die "Can't open $file: $!";
-    my $p = $self->{xmlp};
     while(<$fh>) {
 	if (m{new GInfoWindowTab\("Aktuell","(.*)"\)}) {
 	    my $chunk = '<html><body>'.$1.'</body></html>';
-	    $chunk =~ s{&}{&amp;}g;
-	    my $doc = $p->parse_html_string($chunk);
-	    my $root = $doc->documentElement;
-
-	    my @br_nodes = $root->findnodes('.//br');
-	    for (@br_nodes) {
-		$_->replaceNode(XML::LibXML::Text->new("\n"));
-	    }
-
-	    my $text = $root->textContent;
+	    my $htmltb = HTML::TreeBuilder->new;
+	    my $tree = $htmltb->parse($chunk);
+	    my $text = $self->{formatter}->format($tree);
 	    _trim $text;
-
 	    if ($text =~ s{Stand der Daten: \d+\.\d+\.\d{4} \d{2}:\d{2}:\d{2} \((.*?)\)}{}) {
 		my $id = $1;
 		if (exists $data->{id2rec}->{$id}) {
