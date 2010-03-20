@@ -1,12 +1,11 @@
-#
-# $Id: Makefile,v 1.8 2008/01/24 21:05:07 eserte Exp $
-#
-
 BBBIKEVER!=		perl -I../.. -MBBBikeVar -e 'print $$BBBike::WINDOWS_VERSION'
 BBBIKEDEVELVER!=	perl -I../.. -MBBBikeVar -e 'print $$BBBike::VERSION'
 
 #all: setup.exe
-all: show-instructions make-windows-installer
+#all: show-instructions make-windows-installer
+all:
+	@echo "Please read this file for the new strawberry rules"
+	@false
 
 show-instructions:
 	-@if [ "$(BBBIKEVER)" != $(BBBIKEDEVELVER) ] ; then \
@@ -45,7 +44,8 @@ patch-winbindist:
 	fi
 
 bbbike.iss: make-BBBikeVar.tpl make-winbindist patch-winbindist bbbike.tpl.iss
-	tpage --debug=undef --define VERSION=$(BBBIKEVER) --eval_perl bbbike.tpl.iss > bbbike.iss
+	tpage --debug=undef --define use_strawberry=1 --define VERSION=$(BBBIKEVER) --eval_perl bbbike.tpl.iss > bbbike.iss~
+	mv bbbike.iss~ bbbike.iss
 
 make-windows-installer: bbbike.iss
 	cp bbbike.iss /tmp/BBBike-$(BBBIKEVER)-Windows/
@@ -76,7 +76,8 @@ devel:
 #    /cygdrive/c/WINDOWS/system32/cmd.exe /c bbbike-snapshot-20091228.iss
 
 bbbike-strawberry-dist: make-BBBikeVar.tpl
-	tpage --debug=undef --define use_strawberry=1 --define VERSION=3.17-DEVEL --eval_perl bbbike.tpl.iss > bbbike.iss
+	tpage --debug=undef --define use_strawberry=1 --define VERSION=3.17-DEVEL --eval_perl bbbike.tpl.iss > bbbike.iss~
+	mv bbbike.iss~ bbbike.iss
 
 bbbike-strawberry-snapshot-dist: make-BBBikeVar.tpl
 	env SNAPSHOTDATE=`perl -MPOSIX=strftime -e 'print strftime "%Y%m%d", localtime'` sh -c 'tpage --debug=undef --define use_strawberry=1 --define VERSION=snapshot-$$SNAPSHOTDATE --eval_perl bbbike.tpl.iss > bbbike-snapshot-$$SNAPSHOTDATE.iss && chmod 755 bbbike-snapshot-$$SNAPSHOTDATE.iss'
