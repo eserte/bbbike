@@ -173,6 +173,17 @@ if ($rcs2log) {
     $bbbike_makefile_admin .= "RCS2LOG?=$rcs2log\n";
 }
 
+my $fbsdportsdir;
+my $fbsdportsdir_is_current = 0;
+if ($^O eq 'freebsd') {
+    if (-d "/usr/local/src/ports-current/ports") {
+	$fbsdportsdir = "/usr/local/src/ports-current/ports";
+	$fbsdportsdir_is_current = 1;
+    } else {
+	$fbsdportsdir = "/usr/ports";
+    }
+}
+
 $bbbike_makefile_admin .= <<'EOF'
 #### RSYNCS ###############################################################
 # XXX check which of the rsyncs are not obsolete!
@@ -532,9 +543,13 @@ pod-projdocs:
 ######################################################################
 # FreeBSD
 
+EOF
+. <<"EOF"
 fbsdport:
-	cd port/freebsd && env TMPDIR=$(TMPDIR) ./mkport.pl
+	cd port/freebsd && env TMPDIR=\$(TMPDIR) ./mkport.pl -portsdir $fbsdportsdir
 
+EOF
+. <<'EOF'
 #XXX -useversion devel NYI
 #fbsdport-devel:
 #	cd port/freebsd && env TMPDIR=$(TMPDIR) ./mkport.pl -useversion devel
@@ -550,10 +565,20 @@ fbsdportdiff: fbsdport do-fbsdportdiff
 
 fbsdportdiff-devel: fbsdport-devel do-fbsdportdiff
 
+EOF
+. <<"EOF"
 do-fbsdportdiff:
-	makepatch /usr/ports/german/BBBike $(TMPDIR)/BBBike > $(TMPDIR)/bbbike-freebsdport.diff
-#	-cd $(TMPDIR) && diff --new-file -u /usr/ports/german/BBBike BBBike > $(TMPDIR)/bbbike-freebsdport.diff
+	if @{[ $fbsdportsdir_is_current ? "true" : "false" ]} ; \\
+	then \\
+	    echo "NOTE: make sure that ports-current is really current"; \\
+	    makepatch --exclude 'work/*' $fbsdportsdir/german/BBBike \$(TMPDIR)/BBBike > \$(TMPDIR)/bbbike-freebsdport.diff; \\
+	else \\
+	    echo "WARNING: diff'ing against possibly outdated ports tree"; \\
+	    makepatch --exclude 'work/*' $fbsdportsdir/german/BBBike \$(TMPDIR)/BBBike > \$(TMPDIR)/bbbike-freebsdport.diff ; \\
+	fi
 
+EOF
+. <<'EOF'
 VARPORTDIR=/var/tmp/BBBike
 TMPPORTDIR=$(TMPDIR)/BBBike
 
