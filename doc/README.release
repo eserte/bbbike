@@ -10,6 +10,12 @@ Reihenfolge bei Dist-Erstellung
   Das kann auch passieren, sobald die Distribution auf Sourceforge
   ist.
 
+> Falls geplant ist, ein neues Debian-Release zu machen:
+  Versionsnummer $DEBIAN_VERSION in BBBikeVar.pm ändern.
+
+> $FREEBSD_VERSION in BBBikeVar.pm soll erst inkrementiert werden, sobald
+  das neue i386-Binary bei FreeBSD existiert.
+
 $ perl Makefile.PL
   (Makefile mit neuer Versionsnummer erzeugen)
 
@@ -36,7 +42,7 @@ $ cd data; make slow-checks; cd ..
 $ make distdir2
   (erstellt eine Distribution in BBBike-x.xx und in /tmp)
 
-> Usage-Abschnitt in bbbike.pod ändern (optional)
+> Optional: Usage-Abschnitt in bbbike.pod ändern
 
 *** TEST **********************************************************************
 
@@ -68,15 +74,7 @@ $ cd ..
 
 > unter Windows testen (Anleitung in ports/windows/Makefile)
 
-*** VC ************************************************************************
-
-> im Emacs C-x v d aufrufen und alle Dateien einchecken
-
-  Schneller gelockte Dateien finden:
-
-  find . \! -path "*Attic*" -a -name "*,v" -print0 | xargs -0 grep -l '^locks$'
-
-> Releaseinformationen auffrischen (make ChangeLog, CHANGES editieren)
+> Releaseinformationen auffrischen (CHANGES editieren)
 
 *** DISTRIBUTIONS *************************************************************
 
@@ -87,11 +85,16 @@ $ make fbsdport-distfiles-link
 
 $ make alldist
 
-> Windows-Distribution mit inno setup bauen:
+> Windows-Distribution mit inno setup bauen (Anleitung in
+  ports/windows/Makefile)
 
-$ cd port/windows && make
+> Windows-Executable nach ~/src/bbbike-aux/distfiles kopieren und
+  einchecken.
 
-> Den Rest des Windows-Setups auf der Windows-Maschine erledigen.
+> in port/freebsd/Makefile.tmpl PORTREVISION auf 1 setzen
+
+> /usr/local/src/ports-current per ftp aktualisieren
+  (ftp://ftp.freebsd.org/pub/FreeBSD/ports/ports-current)
 
 > evtl. "make fbsdportdiff" ausführen und /tmp/bbbike-freebsdport.diff
   per eye-view überprüfen
@@ -103,16 +106,18 @@ $ cd port/windows && make
 $ rm -rf BBBike-x.xx
   (Testdistribution löschen, falls sie noch nicht gelöscht ist)
 
-$ rcsignore
-  (vielleicht auch früher ausführen)
+> Debian-Paket bauen: auf einer Debian-Maschine in ports/debian "make"
+  eingeben, dann mit "dpkg --install" installieren und kurz testen.
+  Falls OK, nach ~/src/bbbike-aux/distfiles kopieren und einchecken.
+  Auf der Hauptmaschine per "git fetch" und "rebase" holen.
 
-$ make rcslabel
+> alles einchecken
 
-$ make cvs-chain
+> (annotated) Tag erstellen: git tag -a RELEASE_._..
 
-> Im CVS-Verzeichnis work/bbbike
+$ git push
 
-$ cvs tag RELEASE_X_XX
+$ git push --tags
 
 > Versionsnummer in BBBikeVar.pm erhöhen und mit "-DEVEL" versehen
 
@@ -120,20 +125,13 @@ $ cvs tag RELEASE_X_XX
 
 Update der Sourcen auf Sourceforge
 
-$ cd distfiles
+> Drei Distfiles der aktuellen Version sollten sich in
+  ~/src/bbbike-aux/distfiles befinden und sollten nach SourceForge
+  kopiert werden.
 
-$ lftp upload.sourceforge.net
+$ prove t/cgihead2.t
 
-lftp$ cd incoming
-
-lftp$ put BBBike-X.XX.tar.gz
-
-Im Browser auf Sourceforge einloggen und File Release für BBBike starten.
-Release Name ist X.XX.
-"Change Log" aus Changes kopieren und "Preserve Formatting" anwählen!
-
-> Nach dem Update auf Sourceforge $SF_BBBIKE_LATEST_RELEASE_ID in
-BBBikeVar.pm ändern
+  überprüft die Downloads
 
 ----------------------------------------------------------------------
 
@@ -141,8 +139,9 @@ Update der veränderlichen HTML-Dateien auf bbbike.sourceforge.net
 
 > zur Zeit händisch
 
-  Achten auf: wann gibt es welche Distribution? Dann in BBBikeVar.pm
-  eintragen und die Bytes-Zahl korrigieren.
+  Achten auf: wann gibt es welche Distribution (Windows, Debian,
+  FreeBSD)? Dann in BBBikeVar.pm eintragen und die Bytes-Zahl
+  korrigieren.
 
 $ cd ~/src/bbbike/projects/bbbike.sourceforge.net && make update rsync
 
@@ -154,12 +153,12 @@ $ cd ~/src/bbbike/projects/bbbike.sourceforge.net && make update rsync
 
 Update des CGI-Teasers:
 
-> in bbbike-teaser.pl teaser_perltk_newrelease() auskommentieren und
-teaser_perltk() einkommentieren
+> in bbbike-teaser.pl teaser_perltk_newrelease() aktiviere und damit
+  teaser_perltk() deaktivieren
 
 ----------------------------------------------------------------------
 
-Update der CGI-Version auf www.radzeit.de:
+Update der CGI-Version auf dem Live-Rechner:
 
 Zuerst mit deploy-local einen lokalen Test zuerst fahren.
 
@@ -203,16 +202,6 @@ $ make test
 
 $ perl cgi2.t
   (evtl., da sehr zeitaufwendig; /var/log/httpd-error.log dabei überprüfen)
-
-======================================================================
-
-Beispieleintrag für /usr/local/etc/rsyncd.conf:
-
-[bbbike_data]
-path = /home/e/eserte/src/bbbike/data
-use chroot = true
-exclude = *
-include from = /home/e/eserte/src/bbbike/data/.rsync_include
 
 ======================================================================
 
