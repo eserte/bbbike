@@ -1,0 +1,223 @@
+Reihenfolge bei Dist-Erstellung
+-------------------------------
+
+*** BUILD *********************************************************************
+
+> Versionsnummer in BBBikeVar.pm ($VERSION und $STABLE_VERSION) ändern. 
+
+> Falls geplant ist, ein neues Windows-Release zu machen:
+  Versionsnummer $WINDOWS_VERSION in BBBikeVar.pm ändern.
+  Das kann auch passieren, sobald die Distribution auf Sourceforge
+  ist.
+
+$ perl Makefile.PL
+  (Makefile mit neuer Versionsnummer erzeugen)
+
+$ make predist
+
+  oder ausführlich:
+
+	$ cd data; make; cd ..
+
+	$ make extmod
+	  (externe Module bauen und installieren)
+
+	$ ./miscsrc/link_ext_mod.pl
+
+	$ make distcheck
+
+> fehlende Dateien in MANIFEST eintragen (und mit make distcheck
+  erneut kontrollieren)
+
+$ cd data; make slow-checks; cd ..
+
+> Falls Zeit ist: auch "make really-slow-checks" laufen lassen.
+
+$ make distdir2
+  (erstellt eine Distribution in BBBike-x.xx und in /tmp)
+
+> Usage-Abschnitt in bbbike.pod ändern (optional)
+
+*** TEST **********************************************************************
+
+# Erweiterungen kompilieren und Tests laufen lassen. Zwei Tests in
+# cgihead2.t werden fehlschlagen, weil die neue Distribution noch
+# nicht online ist.
+
+$ make ext test
+
+$ cd BBBike-x.xx && perl Makefile.PL && make all test install && perl ./bbbike -public
+
+> wichtigste Tests:
+
+  > Route auf Karte auswählen
+
+  > Rückweg
+
+  > Start/Ziel im Straßenauswahl-Fenster auswählen
+
+  > Scrollen mit Windrose, Hand, Mousewheel und Scrollbar
+
+  > Overview-Fenster
+
+  > Zuschalten von R-Bahn, Landstraßen, Orten, Sehenswürdigkeiten
+
+> Genaue Testsuite siehe doc/tests.pod
+
+$ cd ..
+
+> unter Windows testen (Anleitung in ports/windows/Makefile)
+
+*** VC ************************************************************************
+
+> im Emacs C-x v d aufrufen und alle Dateien einchecken
+
+  Schneller gelockte Dateien finden:
+
+  find . \! -path "*Attic*" -a -name "*,v" -print0 | xargs -0 grep -l '^locks$'
+
+> Releaseinformationen auffrischen (make ChangeLog, CHANGES editieren)
+
+*** DISTRIBUTIONS *************************************************************
+
+$ make fbsdport-distfiles-link
+
+> Das folgende könnte fehlschlagen, weil /tmp/BBBike-X.XX schon
+  existiert. In diesem Fall das temporäre Verzeichnis entfernen.
+
+$ make alldist
+
+> Windows-Distribution mit inno setup bauen:
+
+$ cd port/windows && make
+
+> Den Rest des Windows-Setups auf der Windows-Maschine erledigen.
+
+> evtl. "make fbsdportdiff" ausführen und /tmp/bbbike-freebsdport.diff
+  per eye-view überprüfen
+
+> FreeBSD-port überprüfen:
+  cd /tmp/BBBike && make all install
+  wenn OK => send-pr schicken
+
+$ rm -rf BBBike-x.xx
+  (Testdistribution löschen, falls sie noch nicht gelöscht ist)
+
+$ rcsignore
+  (vielleicht auch früher ausführen)
+
+$ make rcslabel
+
+$ make cvs-chain
+
+> Im CVS-Verzeichnis work/bbbike
+
+$ cvs tag RELEASE_X_XX
+
+> Versionsnummer in BBBikeVar.pm erhöhen und mit "-DEVEL" versehen
+
+======================================================================
+
+Update der Sourcen auf Sourceforge
+
+$ cd distfiles
+
+$ lftp upload.sourceforge.net
+
+lftp$ cd incoming
+
+lftp$ put BBBike-X.XX.tar.gz
+
+Im Browser auf Sourceforge einloggen und File Release für BBBike starten.
+Release Name ist X.XX.
+"Change Log" aus Changes kopieren und "Preserve Formatting" anwählen!
+
+> Nach dem Update auf Sourceforge $SF_BBBIKE_LATEST_RELEASE_ID in
+BBBikeVar.pm ändern
+
+----------------------------------------------------------------------
+
+Update der veränderlichen HTML-Dateien auf bbbike.sourceforge.net
+
+> zur Zeit händisch
+
+  Achten auf: wann gibt es welche Distribution? Dann in BBBikeVar.pm
+  eintragen und die Bytes-Zahl korrigieren.
+
+$ cd ~/src/bbbike/projects/bbbike.sourceforge.net && make update rsync
+
+> Achtung: zurzeit sieht es so aus, als ob chmod fehlschlägt; somit
+  kann bbbike.cgi etc. die falschen Rechte haben, das muss dann
+  händisch korrigiert werden!
+
+----------------------------------------------------------------------
+
+Update des CGI-Teasers:
+
+> in bbbike-teaser.pl teaser_perltk_newrelease() auskommentieren und
+teaser_perltk() einkommentieren
+
+----------------------------------------------------------------------
+
+Update der CGI-Version auf www.radzeit.de:
+
+Zuerst mit deploy-local einen lokalen Test zuerst fahren.
+
+$ cd ~/src/bbbike/projects/www.radzeit.de && make deploy
+
+----------------------------------------------------------------------
+
+Update der CGI-Version an der TU:
+
+	make distdir
+	rsync -a BBBike-3.17-DEVEL/ eserte@user.cs.tu-berlin.de:www/bbbike.new/
+	rsync -a cgi/bbbike-cs-umzug.html user.cs.tu-berlin.de:www/bbbike.new/cgi/bbbike-cs-umzug.html
+
+> Die vorläufige Adresse
+  http://user.cs.tu-berlin.de/~eserte/bbbike/cgi/bbbike.new.cgi
+  testen. Der Umzugshinweis darf nicht fehlen!
+
+	ssh user.cs.tu-berlin.de 'mv www/bbbike www/bbbike.old && mv www/bbbike.new www/bbbike'
+
+> Die richtige Adresse
+  http://user.cs.tu-berlin.de/~eserte/bbbike/cgi/bbbike.cgi testen.
+
+----------------------------------------------------------------------
+
+Entferntes Update von www/bbbike-tmp:
+
+> Im Browser das lokale BBBike-CGI mit dem Parameter create_all_maps=1
+  aufrufen.
+
+$ cd ~/www/bbbike-tmp
+
+$ rsync -Pvz berlin_map_* fiesta.cs.tu-berlin.de:www/bbbike-tmp
+
+======================================================================
+
+Automatisierte Tests:
+
+im Verzeichnis t:
+
+$ make test
+
+$ perl cgi2.t
+  (evtl., da sehr zeitaufwendig; /var/log/httpd-error.log dabei überprüfen)
+
+======================================================================
+
+Beispieleintrag für /usr/local/etc/rsyncd.conf:
+
+[bbbike_data]
+path = /home/e/eserte/src/bbbike/data
+use chroot = true
+exclude = *
+include from = /home/e/eserte/src/bbbike/data/.rsync_include
+
+======================================================================
+
+BBBike-Beta aktualisieren:
+
+$ rsync -e "ssh -2" -a ~/src/bbbike/cgi/bbbike.cgi root@www.radzeit.de:/var/www/domains/radzeit.de/www/cgi-bin/bbbike2.cgi
+$ rsync -e "ssh -2" -a ~/src/bbbike/cgi/bbbike2-radzeit.cgi.config root@www.radzeit.de:/var/www/domains/radzeit.de/www/BBBike/cgi/bbbike2.cgi.config
+
