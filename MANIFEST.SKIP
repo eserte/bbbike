@@ -253,8 +253,11 @@ cgi/GNUmakefile$
 cgi/gridserv.cgi$
 ^data/comments_route_img/
 ^data/kneipen.yml$
+^data/label$
 ^data/exits$
 ^data/Makefile$
+^data/Makefile.garmin$
+^data/Makefile.mapfiles$
 ^data/comments_danger$
 ^Strassen/QuadTree.pm$
 ^Strassen/StrassenNetzNew.pm$
@@ -271,7 +274,6 @@ cgi/gridserv.cgi$
 ^data/.rsync_include$
 ^data_corrected/
 ^data_berlin_and_potsdam/
-^data/Makefile.mapfiles
 # XXX maybe include this into the dist?
 ^data/temp_blockings/
 ^bbbike_novacom.config$
