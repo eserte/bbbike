@@ -76,7 +76,7 @@ devel:
 #    /cygdrive/c/WINDOWS/system32/cmd.exe /c bbbike-snapshot-20091228.iss
 
 bbbike-strawberry-dist: make-BBBikeVar.tpl
-	tpage --debug=undef --define use_strawberry=1 --define VERSION=3.17-DEVEL --eval_perl bbbike.tpl.iss > bbbike.iss~
+	tpage --debug=undef --define use_strawberry=1 --define VERSION=3.17 --eval_perl bbbike.tpl.iss > bbbike.iss~
 	mv bbbike.iss~ bbbike.iss
 
 bbbike-strawberry-snapshot-dist: make-BBBikeVar.tpl
