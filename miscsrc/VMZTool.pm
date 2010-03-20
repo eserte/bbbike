@@ -34,19 +34,38 @@ use Karte::Polar;
 use Karte::Standard;
 
 use constant MELDUNGSLISTE_URL => 'http://asp.vmzberlin.com/VMZ_LSBB_MELDUNGEN_WEB/Meldungsliste.jsp?back=true';
+use constant MELDUNGSKARTE_URL => 'http://asp.vmzberlin.com/VMZ_LSBB_MELDUNGEN_WEB/Meldungskarte.jsp?back=true&map=true';
+
+sub _trim ($);
 
 my $date_rx = qr{[0123]\d\.[01]\d\.\d{4}};
 my $time_rx = qr{[012]\d:[0-5]\d Uhr};
 my $de_num_rx = qr{(ein|einen|zwei|drei|vier|fünf|\d)}; # für Fahrstreifen
 
-sub new { bless {}, shift }
+sub new {
+    my $class = shift;
+    my $self = bless {}, $class;
+    $self->{ua} = LWP::UserAgent->new;
+    $self->{xmlp} = XML::LibXML->new;
+    eval { require Hash::Util; Hash::Util::lock_keys($self) }; warn $@ if $@;
+    $self;
+}
 
 sub fetch {
     my($self, $file) = @_;
-    my $ua = LWP::UserAgent->new;
+    my $ua = $self->{ua};
     my $resp = $ua->mirror(MELDUNGSLISTE_URL, $file);
     if (!$resp->is_success) {
 	die "Failed while fetching " . MELDUNGSLISTE_URL . ": " . $resp->as_string;
+    }
+}
+
+sub fetch_mappage {
+    my($self, $file) = @_;
+    my $ua = $self->{ua};
+    my $resp = $ua->mirror(MELDUNGSKARTE_URL, $file);
+    if (!$resp->is_success) {
+	die "Failed while fetching " . MELDUNGSKARTE_URL . ": " . $resp->as_string;
     }
 }
 
@@ -72,7 +91,7 @@ sub parse {
 	    $payload .= $_;
 	}
     }
-    my $p = XML::LibXML->new;
+    my $p = $self->{xmlp};
     while ($payload =~ m{(.*?)(?:<br><b>|\s+</font>\s+</body>)}gs) {
 	my $chunk = '<html><body><b>'.$1.'</body></html>';
 	$chunk =~ s{&}{&amp;}g;
@@ -114,9 +133,7 @@ sub parse {
 	    }
 	    pop @lines if $lines[-1] eq '';
 	    for (@lines) {
-		s{^\s+}{};
-		s{\s+$}{};
-		s{\s+}{ }g;
+		_trim $_;
 	    }
 	    $record->{text} = join("\n", @lines);
 	    
@@ -146,6 +163,39 @@ sub parse {
     );
 }
 
+sub parse_mappage {
+    my($self, $file, $data) = @_;
+    open my $fh, $file or die "Can't open $file: $!";
+    my $p = $self->{xmlp};
+    while(<$fh>) {
+	if (m{new GInfoWindowTab\("Aktuell","(.*)"\)}) {
+	    my $chunk = '<html><body>'.$1.'</body></html>';
+	    $chunk =~ s{&}{&amp;}g;
+	    my $doc = $p->parse_html_string($chunk);
+	    my $root = $doc->documentElement;
+
+	    my @br_nodes = $root->findnodes('.//br');
+	    for (@br_nodes) {
+		$_->replaceNode(XML::LibXML::Text->new("\n"));
+	    }
+
+	    my $text = $root->textContent;
+	    _trim $text;
+
+	    if ($text =~ s{Stand der Daten: \d+\.\d+\.\d{4} \d{2}:\d{2}:\d{2} \((.*?)\)}{}) {
+		my $id = $1;
+		if (exists $data->{id2rec}->{$id}) {
+		    $data->{id2rec}->{$id}->{detailed_text} = $text;
+		} else {
+		    warn "Strange: id $id does not occur in dataset";
+		}
+	    } else {
+		warn "WARN: cannot parse 'Stand der Daten' out of text";
+	    }
+	}
+    }
+}
+
 sub as_bbd {
     my($self, $place2rec, $old_store) = @_;
     my $old_id2rec = $old_store ? $old_store->{id2rec} : undef;
@@ -172,8 +222,7 @@ EOF
 	    pop @lines;
 	    if (@lines == 1) {
 		$lines[0] =~ s{\s\(.*?\)}{}g;
-		$lines[0] =~ s{^(Baustelle|Bauarbeiten),\s+}{};
-		$lines[0] =~ s{(,\s*)?
+		$lines[0] =~ s{(,\s*)?\b
 			       (Fahrbahn\s(teilweise\s)?auf\s$de_num_rx\sFahrstreifen\sje\sRichtung\sverengt
 			       |Fahrbahn\s(teilweise\s)?auf\s$de_num_rx\sFahrstreifen\sverengt
 			       |Fahrbahn\s(teilweise\s)?je\sRichtung\sauf\s$de_num_rx\sFahrstreifen\sverengt
@@ -197,7 +246,9 @@ EOF
 			       |Ampeln\sin\sBetrieb
 			       |Stau\szu\serwarten
 			       |Staugefahr
-			       )}{}xg;
+			       |Bauarbeiten
+			       |Baustelle
+			       )}{}xgi;
 		if ($lines[0] eq '') {
 		    push @attribs, 'IGNORE';
 		}
@@ -213,7 +264,8 @@ EOF
 	    push @attribs, 'CHANGED';
 	}
 	my($sx,$sy) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($rec->{lon},$rec->{lat}));
-	(my $text = $rec->{text}) =~ s{\n}{ }g;
+	my $text = $rec->{detailed_text} || $rec->{text};
+	$text =~ s{\n}{ }g;
 	$s .= join(", ", @attribs) . "¦" .
 	    ($rec->{place} ne 'Berlin' ? $rec->{place} . ": " : '') .
 		$text . "¦" . $rec->{id} . "¦" . $rec->{map_url} . "\tX $sx,$sy\n";
@@ -232,6 +284,12 @@ EOF
 	}
     }
     $s;
+}
+
+sub _trim ($) {
+    $_[0] =~ s{^ +}{};
+    $_[0] =~ s{ +$}{};
+    $_[0] =~ s{ +}{ }g;
 }
 
 return 1 if caller;
@@ -258,17 +316,21 @@ if ($old_store_file) {
 
 my $vmz = VMZTool->new;
 my($tmpfh, $file);
+my($tmp2fh, $mapfile);
 if ($do_fetch) {
-    ($tmpfh,$file) = tempfile(UNLINK => 1) or die $!;
-    eval { $vmz->fetch($file) };
+    ($tmpfh,$file)     = tempfile(UNLINK => 1) or die $!;
+    ($tmp2fh,$mapfile) = tempfile(UNLINK => 1) or die $!;
+    eval { $vmz->fetch($file); $vmz->fetch_mappage($mapfile) };
     if ($@) {
 	$File::Temp::KEEP_ALL = 1;
 	die $@;
     }
 } else {
-    $file = "$ENV{HOME}/trash/Meldungsliste.jsp?back=true";
+    $file    = "$ENV{HOME}/trash/Meldungsliste.jsp?back=true";
+    $mapfile = "$ENV{HOME}/trash/Meldungskarte.jsp?back=true&map=true&x=52.1034702789087&y=14.270757485947728&zoom=13&meldungId=LS%2FO-SG33-F%2F10%2F027";
 }
 my %res = $vmz->parse($file);
+$vmz->parse_mappage($mapfile, \%res);
 my $bbd = $vmz->as_bbd($res{place2rec}, $old_store);
 if ($new_store_file) {
     YAML::Syck::DumpFile($new_store_file, \%res);
