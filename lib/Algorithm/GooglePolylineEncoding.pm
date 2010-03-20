@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2009 Slaven Rezic. All rights reserved.
+# Copyright (C) 2009,2010 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -13,9 +13,11 @@
 
 package Algorithm::GooglePolylineEncoding;
 
+use 5.006; # sprintf("%b")
+
 use strict;
 use vars qw($VERSION);
-$VERSION = '0.01';
+$VERSION = '0.02';
 
 sub encode_number {
 #   1. Take the initial signed value:
@@ -113,6 +115,71 @@ sub encode_level {
     join '', @chunks;
 }
 
+# Translated this php script
+# <http://unitstep.net/blog/2008/08/02/decoding-google-maps-encoded-polylines-using-php/>
+# to perl
+sub decode_polyline {
+    my($encoded) = @_;
+
+    my $length = length $encoded;
+    my $index = 0;
+    my @points;
+    my $lat = 0;
+    my $lng = 0;
+
+    while ($index < $length) {
+	# The encoded polyline consists of a latitude value followed
+	# by a longitude value. They should always come in pairs. Read
+	# the latitude value first.
+	for my $val (\$lat, \$lng) {
+	    my $shift = 0;
+	    my $result = 0;
+	    # Temporary variable to hold each ASCII byte.
+	    my $b;
+	    do {
+		# The `ord(substr($encoded, $index++))` statement returns
+		# the ASCII code for the character at $index. Subtract 63
+		# to get the original value. (63 was added to ensure
+		# proper ASCII characters are displayed in the encoded
+		# polyline string, which is `human` readable)
+		$b = ord(substr($encoded, $index++, 1)) - 63;
+
+		# AND the bits of the byte with 0x1f to get the original
+		# 5-bit `chunk. Then left shift the bits by the required
+		# amount, which increases by 5 bits each time. OR the
+		# value into $results, which sums up the individual 5-bit
+		# chunks into the original value. Since the 5-bit chunks
+		# were reversed in order during encoding, reading them in
+		# this way ensures proper summation.
+		$result |= ($b & 0x1f) << $shift;
+		$shift += 5;
+	    }
+		# Continue while the read byte is >= 0x20 since the last
+		# `chunk` was not OR'd with 0x20 during the conversion
+		# process. (Signals the end)
+		while ($b >= 0x20);
+
+	    use integer; # see last paragraph of "Integer Arithmetic" in perlop.pod
+
+	    # Check if negative, and convert. (All negative values have the last bit
+	    # set)
+	    my $dtmp = (($result & 1) ? ~($result >> 1) : ($result >> 1));
+
+	    # Compute actual latitude (resp. longitude) since value is
+	    # offset from previous value.
+	    $$val += $dtmp;
+	}
+
+	# The actual latitude and longitude values were multiplied by
+	# 1e5 before encoding so that they could be converted to a 32-bit
+	# integer representation. (With a decimal accuracy of 5 places)
+	# Convert back to original values.
+	push @points, {lat => $lat * 1e-5, lon => $lng * 1e-5};
+    }
+
+    @points;
+}
+
 1;
 
 __END__
@@ -146,8 +213,9 @@ dependencies.
 =item encode_polyline(@polyline)
 
 Take an array of C<< {lat => ..., lon => ...} >> hashrefs and return
-an encoded polyline. Latitudes and longitudes should be expressed as
-decimal degrees (DD; L<http://en.wikipedia.org/wiki/Decimal_degrees>).
+an encoded polyline string. Latitudes and longitudes should be
+expressed as decimal degrees (DD;
+L<http://en.wikipedia.org/wiki/Decimal_degrees>).
 
 =item encode_level($level)
 
@@ -158,6 +226,11 @@ Return an encoded level.
 Return just an encoded number (which may be a single longitude, or
 latitude, or delta).
 
+=item decode_polyline($encoded)
+
+Take an encoded polyline string and return a list of C<< {lat => ...,
+lon => ...} >> hashrefs.
+
 =back
 
 =head1 AUTHOR
@@ -166,7 +239,7 @@ Slaven Rezic <srezic@cpan.org>
 
 =head1 COPYRIGHT
 
-Copyright (c) 2009 Slaven Rezic. All rights reserved.
+Copyright (c) 2009,2010 Slaven Rezic. All rights reserved.
 This module is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.
 

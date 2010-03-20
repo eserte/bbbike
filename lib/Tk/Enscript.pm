@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Enscript.pm,v 1.10 2007/10/29 22:57:00 eserte Exp $
+# $Id: Enscript.pm,v 1.11 2009/10/24 20:16:31 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2007 Slaven Rezic. All rights reserved.
@@ -24,7 +24,7 @@ use vars qw(%media %postscript_to_x11_font
 @ISA = qw(Exporter);
 @EXPORT = qw(enscript);
 
-$VERSION = sprintf "%d.%02d", q$Revision: 1.10 $ =~ /(\d+)\.(\d+)/;
+$VERSION = sprintf "%d.%02d", q$Revision: 1.11 $ =~ /(\d+)\.(\d+)/;
 
 parse_cfg();
 
@@ -72,7 +72,8 @@ sub enscript {
     my $c = $t->Canvas(-width => $width, -height => $height);
     $t->withdraw;
 
-    my($llx, $lly, $urx, $ury) = @{$args{-bbox}} if exists $args{-bbox};
+    my($llx, $lly, $urx, $ury);
+    ($llx, $lly, $urx, $ury) = @{$args{-bbox}} if exists $args{-bbox};
 
     $llx = $args{-llx} || $media_desc{LLX};
     $lly = $args{-lly} || $media_desc{LLY};
