@@ -377,6 +377,10 @@ EOF
 	      ],
 	      [Cascade => $do_compound->("VMZ/LBVS Archive"), -menuitems =>
 	       [
+		[Button => "Show recent VMZ diff (new version)",
+		 -command => sub { show_new_vmz_diff() },
+		],
+		"-",
 		[Button => "Show recent VMZ diff",
 		 -command => sub { show_vmz_diff() },
 		],
@@ -754,7 +758,7 @@ sub _vmz_lbvs_splitter {
     my($type, $content, $id);
     if ($line =~ m{¦}) {
 	# new style
-	($type, $content, $id) = split /¦/, $line, 3;
+	($type, $content, $id) = split /¦/, $line; # ignore everything after 3rd column
     } else {
 	($type, $content) = split /:\s+/, $line, 2;
     }
@@ -773,10 +777,22 @@ sub show_vmz_diff {
 
 sub show_lbvs_diff {
     my($version) = @_;
-    main::plot("str",'l', -draw => 1);
-    main::make_net();
+    unless ($main::str_draw{l}) {
+	main::plot("str",'l', -draw => 1);
+	main::make_net();
+    }
     if (defined $version) { $version = ".$version" }
     show_any_diff("$vmz_lbvs_directory/difflbvs.bbd$version", "lbvs");
+}
+
+sub show_new_vmz_diff {
+    my($version) = @_;
+    unless ($main::str_draw{l}) {
+	main::plot("str",'l', -draw => 1);
+	main::make_net();
+    }
+    if (defined $version) { $version = ".$version" }
+    show_any_diff("$vmz_lbvs_directory/diffnewvmz.bbd$version", "newvmz");
 }
 
 sub show_any_diff {
