@@ -1,24 +1,38 @@
-BBBike RELEASE 3.17 (XXXX-XX-XX)
+BBBike RELEASE 3.17 (2010-03-20)
 
 bbbike (ptk)
-- better representation of temporary blockings (XXX still in work)
 - new search settings: child seat, trailer
 - visualization of impossible passings with trailers
 - better street labelling, but only in "lazy" mode and on X11 and with
   Perl/Tk built with XFT=yes
-- improvements for BBBike @ World (osm) data
-- new weather sources: metar data (only in git)
+- improvements for BBBike @ World (OpenStreetMap) data
+- new weather sources: metar data (enabled only in git version)
+- experimental tram railway optimization (only in advanced mode)
+- "fragezeichen" layer is available also in non-advanced mode
+- some work on winter optimization
 - various bugfixes
 
 Data
-- many updates, currently more than 8000 streets in Berlin
+- many updates, currently more than 8400 streets in Berlin
 - the "kneipen" file is now deprecated (because not maintained for a
   long time)
 - new file routing_helper-orig (routes which are "invisible" on the map)
+- new file ortsschilder
+- new category NH for streets (not completely activated)
 
 Modules
+- some improvements on PDF creation
+- create maps using Google Maps Static API
+- removed interface to berliner-stadtplan.com
 
 Plugins
+- some work on geocoding plugin (e.g. added Cloudmade and Bing interfaces)
+- osm plugin for downloading and displaying OpenStreetMap data
+  (only in git version)
+- fixes for Panoramio plugin (because of API changes)
+- MultiMap additions: link to Map Compare by Geofabrik
+- new FahrinfoQuery plugin (only in git version)
+- new Kauperts plugin (only in git version)
 
 Install
 - Windows package is now using a modern Strawberry Perl instead of the
@@ -27,13 +41,19 @@ Install
 
 CGI
 - new search settings: child seat, trailer
+- bbbikegooglemap has support for OpenStreetMap-based maps
+  (mapnik, cycle, tiles@home)
+- bbbikegooglemap uses now GMap API v2 and enables wheelmouse zooming
 
 Misc
 - bbbike source code moved to github: http://github.com/eserte/bbbike
-  The old CVS repository is still updated at times.
-- more complete and faster  implementation of osm2bbd, the OpenStreetMap
+  The old CVS repository is still updated from time to time.
+- more complete and faster implementation of osm2bbd, the OpenStreetMap
   to BBBike data converter (only in git)
 - gpx2bbd is faster (only in git)
+- bbd2kml (only in git)
+- very experimental work on a real navigation system with speech support
+  (only in git)
 
 ----------------------------------------------------------------------
 

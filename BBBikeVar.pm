@@ -16,11 +16,11 @@
 
 package BBBike;
 
-$VERSION	   = '3.17-DEVEL'; # remove "-DEVEL" for releases
-$STABLE_VERSION	   = '3.16';
-$WINDOWS_VERSION   = '3.16'; # Windows distribution
-$DEBIAN_VERSION    = '3.16-1'; # including revision
-$FREEBSD_VERSION   = '3.16'; # (XXX nowhere used?)
+$VERSION	   = '3.17'; # remove "-DEVEL" for releases
+$STABLE_VERSION	   = '3.17';
+$WINDOWS_VERSION   = '3.17'; # Windows distribution
+$DEBIAN_VERSION    = '3.17-1'; # including revision
+$FREEBSD_VERSION   = '3.17'; # (XXX nowhere used?)
 
 $EMAIL_OLD	   = 'eserte@cs.tu-berlin.de';
 $EMAIL		   = 'slaven@rezic.de';

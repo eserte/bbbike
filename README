@@ -19,7 +19,7 @@ Stand; auch sind nicht alle Betriebssysteme erhältlich.
 
 Die aktuellste BBBike-Archivdatei findet man im Verzeichnis
 L<http://sourceforge.net/projects/bbbike/files/BBBike/> . Die aktuelle Sourcedatei ist
-L<http://heanet.dl.sourceforge.net/project/bbbike/BBBike/3.16/BBBike-3.16.tar.gz> .
+L<http://heanet.dl.sourceforge.net/project/bbbike/BBBike/3.17/BBBike-3.17.tar.gz> .
 
 =head3 FreeBSD
 
@@ -47,10 +47,10 @@ mindestens die Version 5.005 benötigt.
 Danach kann BBBike ausgepackt werden:
 
 
-	zcat BBBike-3.16.tar.gz | tar xfv -
+	zcat BBBike-3.17.tar.gz | tar xfv -
 
 Falls perl/Tk (eine möglichst neue Version, z.B. 804.028 or 800.025) nicht
-installiert ist: in das Verzeichnis C<BBBike-3.16>
+installiert ist: in das Verzeichnis C<BBBike-3.17>
 wechseln und als Superuser
 
 
@@ -110,7 +110,7 @@ von Perl/Tk auf Mac OS X bekommt man in der comp.lang.perl.tk Newsgroup
 
 Folgende Anleitung habe ich von Wolfram Kroll erhalten:
 
-L<http://heanet.dl.sourceforge.net/project/bbbike/BBBike/3.16/BBBike-3.16.tar.gz> und (von
+L<http://heanet.dl.sourceforge.net/project/bbbike/BBBike/3.17/BBBike-3.17.tar.gz> und (von
 L<http://www.cpan.org>) perl-5.8.4-stable.tar.gz, Tk-804.027.tar.gz
 besorgt.
 
@@ -159,7 +159,7 @@ Mac OS Classic wird nicht unterstützt.
 
 BBBike und Perl benötigen ca. 32 MB an Festplattenspeicher.
 
-Einfach die Datei L<http://heanet.dl.sourceforge.net/project/bbbike/BBBike/3.16/BBBike-3.16-Windows.exe> laden und starten.
+Einfach die Datei L<http://heanet.dl.sourceforge.net/project/bbbike/BBBike/3.17/BBBike-3.17-Windows.exe> laden und starten.
 Damit wird das Installationsprogramm gestartet.
 
 =head3 Alternative Windows Installation (1)
@@ -189,13 +189,13 @@ enthalten und muss nicht separat installiert werden.
 
 =item *
 
-L<BBBike-3.16.tar.gz|http://heanet.dl.sourceforge.net/project/bbbike/BBBike/3.16/BBBike-3.16-Windows.exe>
+L<BBBike-3.17.tar.gz|http://heanet.dl.sourceforge.net/project/bbbike/BBBike/3.17/BBBike-3.17-Windows.exe>
 downloaden und mit WinZip auspacken. Das
 ausgepackte Verzeichnis wird später nicht mehr verschoben.
 
 =item *
 
-In der Eingabeaufforderung oder im Explorer zum Verzeichnis BBBike-3.16
+In der Eingabeaufforderung oder im Explorer zum Verzeichnis BBBike-3.17
 wechseln und
 
 
@@ -341,7 +341,7 @@ C<lib/Text/ScriptTemplate.pm> von Taisuke Yamada, C<lib/enum.pm> von
 Zenin, C<ext/Strassen-Inline/heap.[ch]> der Internet Software
 Consortium, C<ext/BBBikeXS/sqrt.c> von Eyal Lebedinsky.
 
-C<BBBike-3.16-Windows.zip> enthält einen Teil der
+C<BBBike-3.17-Windows.zip> enthält einen Teil der
 C<SiePerl>-Distribution, siehe
 L<http://www.cpan.org/authors/id/G/GR/GRAHAMC/>
 

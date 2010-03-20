@@ -18,7 +18,7 @@ the newest state and maybe your operating system is not covered.
 
 You can find the newest source distribution file of BBBike in the directory
 L<http://sourceforge.net/projects/bbbike/files/BBBike/> . The current source version is
-L<http://heanet.dl.sourceforge.net/project/bbbike/BBBike/3.16/BBBike-3.16.tar.gz> .
+L<http://heanet.dl.sourceforge.net/project/bbbike/BBBike/3.17/BBBike-3.17.tar.gz> .
 
 =head3 FreeBSD
 
@@ -46,11 +46,11 @@ perl5 at L<http://www.perl.com>. You need at least version 5.005.
 Next step is to extract the BBBike distribution:
 
 
-	zcat BBBike-3.16.tar.gz | tar xfv -
+	zcat BBBike-3.17.tar.gz | tar xfv -
 
 If perl/Tk (the recommended version is 804.028 or 800.025) is not installed:
 change to the directory
-C<BBBike-3.16> and type as super user:
+C<BBBike-3.17> and type as super user:
 
 
 	perl -I`pwd` -MCPAN -e shell
@@ -107,7 +107,7 @@ L<http://groups.google.com>).
 
 The following instructions are from Wolfram Kroll:
 
-Get L<http://heanet.dl.sourceforge.net/project/bbbike/BBBike/3.16/BBBike-3.16.tar.gz> and (from
+Get L<http://heanet.dl.sourceforge.net/project/bbbike/BBBike/3.17/BBBike-3.17.tar.gz> and (from
 L<http://www.cpan.org>) perl-5.8.4-stable.tar.gz, Tk-804.027.tar.gz
 
 =over
@@ -155,7 +155,7 @@ Mac OS Classic is not supported.
 BBBike and Perl need approx. 32 MB hard disk space.
 
 Download the file
-L<http://heanet.dl.sourceforge.net/project/bbbike/BBBike/3.16/BBBike-3.16-Windows.exe> and just start it for the installation
+L<http://heanet.dl.sourceforge.net/project/bbbike/BBBike/3.17/BBBike-3.17-Windows.exe> and just start it for the installation
 program.
 
 =head3 Alternative Windows Installation (1)
@@ -185,14 +185,14 @@ does not need to be installed.
 =item *
 
 Download
-C<BBBike-3.16.tar.gz|http://heanet.dl.sourceforge.net/project/bbbike/BBBike/3.16/BBBike-3.16-Windows.exe>
+C<BBBike-3.17.tar.gz|http://heanet.dl.sourceforge.net/project/bbbike/BBBike/3.17/BBBike-3.17-Windows.exe>
 and extract this file with 
 WinZip. The unpacked directory will not move in the later
 installation.
 
 =item *
 
-Open the explorer, change to the BBBike-3.16 directory and call
+Open the explorer, change to the BBBike-3.17 directory and call
 
 
 	install.pl.
@@ -334,7 +334,7 @@ C<lib/Text/ScriptTemplate.pm> by Taisuke Yamada, C<lib/enum.pm> by
 Zenin, C<ext/Strassen-Inline/heap.[ch]> by Internet Software
 Consortium, C<ext/BBBikeXS/sqrt.c> by Eyal Lebedinsky.
 
-C<BBBike-3.16-Windows.zip> contains a partial C<SiePerl>
+C<BBBike-3.17-Windows.zip> contains a partial C<SiePerl>
 distribution, see
 L<http://www.cpan.org/authors/id/G/GR/GRAHAMC/>
 
