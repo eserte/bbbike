@@ -15,7 +15,11 @@ use ExtUtils::Manifest;
 use File::Basename;
 use Getopt::Long;
 
-#use lib ".."; # falls als make_bundle gestartet
+BEGIN {
+    if ($0 =~ m{make_.*bundle}) {
+	chdir "..";
+    }
+}
 
 use BBBikeVar;
 
