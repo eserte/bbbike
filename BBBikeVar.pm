@@ -57,11 +57,6 @@ $BBBIKE_UPDATE_DIST_CGI = "http://www.bbbike.de/cgi-bin/bbbike-snapshot.cgi";
 $BBBIKE_WAP	   = 'http://bbbike.de/wap';
 $BBBIKE_DIRECT_WAP = 'http://bbbike.de/cgi-bin/wapbbbike.cgi';
 
-# Sourceforge IDs (not visible anymore)
-$SF_BBBIKE_GROUP_ID = 19142;
-$SF_BBBIKE_PACKAGE_ID = 14052;
-$SF_BBBIKE_LATEST_RELEASE_ID = 571125; # this is 3.16, change for new releases!
-
 # Distribution directory for scripts. Unfortunately there's no directory
 # index available anymore at sourceforge...
 $DISTDIR	   = 'http://heanet.dl.sourceforge.net/project/bbbike';
