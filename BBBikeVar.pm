@@ -20,7 +20,7 @@ $VERSION	   = '3.17'; # remove "-DEVEL" for releases
 $STABLE_VERSION	   = '3.17';
 $WINDOWS_VERSION   = '3.17'; # Windows distribution
 $DEBIAN_VERSION    = '3.17-1'; # including revision
-$FREEBSD_VERSION   = '3.16'; # (used on download page)
+$FREEBSD_VERSION   = '3.16'; # (used on download page and bbbikevar.t)
 
 $EMAIL_OLD	   = 'eserte@cs.tu-berlin.de';
 $EMAIL		   = 'slaven@rezic.de';
