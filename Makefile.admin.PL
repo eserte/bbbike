@@ -176,8 +176,8 @@ if ($rcs2log) {
 my $fbsdportsdir;
 my $fbsdportsdir_is_current = 0;
 if ($^O eq 'freebsd') {
-    if (-d "/usr/local/src/ports-current/ports") {
-	$fbsdportsdir = "/usr/local/src/ports-current/ports";
+    if (-d "$ENV{HOME}/work2/freebsd/ports") {
+	$fbsdportsdir = "$ENV{HOME}/work2/freebsd/ports";
 	$fbsdportsdir_is_current = 1;
     } else {
 	$fbsdportsdir = "/usr/ports";
@@ -570,8 +570,10 @@ EOF
 do-fbsdportdiff:
 	if @{[ $fbsdportsdir_is_current ? "true" : "false" ]} ; \\
 	then \\
-	    echo "NOTE: make sure that ports-current is really current"; \\
-	    makepatch --exclude 'work/*' $fbsdportsdir/german/BBBike \$(TMPDIR)/BBBike > \$(TMPDIR)/bbbike-freebsdport.diff; \\
+	    echo "INFO: first updating ports directory..."; \\
+	    (cd $fbsdportsdir/german/BBBike && cvs update); \\
+	    echo "INFO: now creating patch..."; \\
+	    makepatch --exclude-vc --exclude 'work/*' $fbsdportsdir/german/BBBike \$(TMPDIR)/BBBike > \$(TMPDIR)/bbbike-freebsdport.diff; \\
 	else \\
 	    echo "WARNING: diff'ing against possibly outdated ports tree"; \\
 	    makepatch --exclude 'work/*' $fbsdportsdir/german/BBBike \$(TMPDIR)/BBBike > \$(TMPDIR)/bbbike-freebsdport.diff ; \\
