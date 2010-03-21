@@ -3125,6 +3125,7 @@ Alpenveilchenweg: Asphalt	Q0 21953,10936 22028,10968
 Heidekrautweg: Asphalt	Q0 21982,10874 22053,10911
 #: note: ^^^
 Petkusser Str.: schlechtes Kopfsteinpflaster	Q3+ 10506,-2642 10573,-2891 10606,-3017 10655,-3135
+Petkusser Str.: schlechtes Kopfsteinpflaster	Q3 10655,-3135 10735,-3142
 #: by: pauline (herda):
 Bachstr. (Bohnsdorf): guter Beton	Q0 22749,-969 22918,-903 23329,-732
 #: by: Bärbel Buch:
@@ -4686,7 +4687,7 @@ Schulstr. (Pankow): mäßiger Asphalt	Q1 10755,18231 10582,18159 10473,18113
 Trelleborger Str.: kaputter Asphalt, Schlaglöcher	Q1 11243,17421 11256,17291 11272,17139 11267,17017 11270,16890 11281,16743 11278,16609 11287,16515 11289,16423
 #: by: Richard Kempter:
 #: XXX: mit "25 km/h" notiert?
-Saalower Str.: schlechtes Kopfsteinpflaster	Q3 10655,-3135 10735,-3142 10949,-3161 11144,-3179 11274,-3126
+Saalower Str.: schlechtes Kopfsteinpflaster	Q3 10735,-3142 10949,-3161 11144,-3179 11274,-3126
 #: by: Andreas Debus:
 Nahariyastr.: sehr guter Asphalt	Q0 11717,-1204 11739,-1384 11778,-1706 11784,-1809
 #: by: Jana Eberhart:
@@ -9724,6 +9725,11 @@ Eschenallee (Rosenthal): guter Asphalt	Q0 9460,20644 9479,20535 9498,20435
 Breddiner Weg: Asphalt	Q0 -8312,15151 -8229,15505
 #: by: Julia Hermes:
 Straße 49 (Heinersdorf): guter Asphalt	Q0 12780,17318 12609,17405 12500,17460 12407,17508
+#: by: Roland Mohrbacher vvv
+Falckensteinstr. (Lichtenrade): schlechte Fahrbahnqualität (Feldstein-Belag)	Q3 10638,-2638 10638,-2735 10679,-2842 10751,-3030 10767,-3064
+Paplitzer Str.: schlechte Fahrbahnqualität (Feldstein-Belag)	Q3 10735,-3142 10767,-3064 10783,-3033 10831,-2919 10884,-2795 10900,-2756 10927,-2687 10949,-2635
+Paplitzer Str.: asphaltiert	Q0 10949,-2635 10989,-2543 11021,-2464 11027,-2448
+#: by: ^^^
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206
