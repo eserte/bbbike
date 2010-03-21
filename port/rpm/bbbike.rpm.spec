@@ -1,19 +1,33 @@
-### DO NOT EDIT! CREATED AUTOMATICALLY! ###
+### DO NOT EDIT! CREATED AUTOMATICALLY BY ./mkrpm.pl! ###
 %define __prefix        %{_prefix}
 Name: BBBike
-Version: 3.16
-Release: 3
+Version: 3.17
+Release: 1
 Copyright: GPL
 Group: Applications/Productivity
 Requires: perl >= 5.005, perl-tk >= 800
 Prefix: %{__prefix}
 URL: http://bbbike.sourceforge.net
 Packager: slaven@rezic.de
-Source: http://heanet.dl.sourceforge.net/sourceforge/bbbike/BBBike-3.16.tar.gz
+Source: http://heanet.dl.sourceforge.net/project/bbbike/BBBike/3.17/BBBike-3.17.tar.gz
 Summary: A route-finder for cyclists in Berlin and Brandenburg
 
 %description
 A route-finder for cyclists in Berlin and Brandenburg.
+BBBike is now ported to 125 other cities around the world - thanks to 
+the OpenStreetMap  project. For more information see the BBBike @ World 
+homepage http://www.bbbike.org
+------------------------------------------------------------------------
+BBBike is an information system for cyclists in Berlin and 
+Brandenburg (Germany). It has the following features:
+* Displays a map with streets, railways, rivers, parks, altitude, and 
+  other features 
+* Finds and shows routes between two points
+* Route-finder can be customized to match the cyclist's preferences: 
+  fastest/nicest route, take wind directions and hills into account, etc.)
+* Bike power calculator 
+* Automatically fetches the current Berlin weather data
+------------------------------------------------------------------------
 Mit BBBike koennen Fahrrad-Routen in Berlin und Umgebung automatisch
 oder manuell erstellt werden.
 BBBike liefert unter anderem die Antwort auf folgende Fragen:
@@ -285,7 +299,6 @@ WWW: @BBBIKE_SF_WWW@
 %{__prefix}/BBBike/data/inaccessible_strassen
 %{__prefix}/BBBike/data/innerberliner_grenze
 %{__prefix}/BBBike/data/kneipen
-%{__prefix}/BBBike/data/label
 %{__prefix}/BBBike/data/landstrassen
 %{__prefix}/BBBike/data/landstrassen2
 %{__prefix}/BBBike/data/mount
@@ -408,7 +421,6 @@ WWW: @BBBIKE_SF_WWW@
 %{__prefix}/BBBike/ext/VirtArray/README
 %{__prefix}/BBBike/ext/VirtArray/VirtArray.pm
 %{__prefix}/BBBike/ext/VirtArray/VirtArray.xs
-%{__prefix}/BBBike/ext/VirtArray/test.pl
 %{__prefix}/BBBike/ext/VirtArray/typemap
 %{__prefix}/BBBike/ext/inline2dist.pl
 %{__prefix}/BBBike/gnome/BBBikeDoc.tmpl
