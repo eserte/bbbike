@@ -91,7 +91,7 @@ sub _find_all_plugins_perl {
     require File::Find;
     my @p;
     my $wanted = sub {
-	if (   $File::Find::name =~ m{^\Q$topdir\E/projects/} # the www.radzeit.de directories
+	if (   $File::Find::name =~ m{^\Q$topdir\E/projects/} # e.g. the directories for live bbbike.de deployments
 	    || $File::Find::name =~ m{^\Q$topdir\E/BBBike-\d+\.\d+(-DEVEL)?/} # distdir
 	    || $File::Find::name =~ m{/(CVS|RCS|\.svn|\.git)/}) {
 	    $File::Find::prune = 1;

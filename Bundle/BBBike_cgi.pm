@@ -1,6 +1,6 @@
 # -*- perl -*-
 
-package Bundle::BBBike_radzeit;
+package Bundle::BBBike_cgi;
 
 $VERSION = sprintf("%d.%02d", q$Revision: 1.3 $ =~ /(\d+)\.(\d+)/);
 
@@ -10,11 +10,11 @@ __END__
 
 =head1 NAME
 
-Bundle::BBBike_radzeit - A bundle to install radzeit dependencies of BBBike
+Bundle::BBBike_cgi - A bundle to install cgi dependencies of BBBike
 
 =head1 SYNOPSIS
 
- perl -I`pwd` -MCPAN -e 'install Bundle::BBBike_radzeit'
+ perl -I`pwd` -MCPAN -e 'install Bundle::BBBike_cgi'
 
 =head1 CONTENTS
 
@@ -27,7 +27,7 @@ Apache::Session::Counted	- optionale aber sehr zu empfehlende Session-Verwaltung
 
 XML::Simple	- optional für XML-Dumps der BBBike-Route
 
-XML::Parser	- optional für UAProf parsing (alternative wäre XML::SAX::PurePerl)
+XML::Parser	- optional für UAProf parsing (bevorzugt wird allerdings XML::LibXML::SAX oder XML::SAX::PurePerl)
 
 YAML	- optional für YAML-Dumps der BBBike-Route sowie fuer temp_blockings
 
@@ -62,7 +62,7 @@ WWW::Mechanize::FormFiller	- Für Testen des CGI-Interfaces
 
 =head1 DESCRIPTION
 
-Module für die Installation auf radzeit.de.
+Module für eine CGI-Installation.
 
 =head1 AUTHOR
 

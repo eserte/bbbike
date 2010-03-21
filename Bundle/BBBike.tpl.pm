@@ -13,8 +13,8 @@ __END__
             SET shortname = "all";
         CASE "small";
 	    SET shortname = "only mandatory";
-	CASE "radzeit";
-	    SET shortname = "radzeit";
+	CASE "cgi";
+	    SET shortname = "cgi";
 	CASE "windist";
 	    SET shortname = "windows distribution";
 	CASE "";
@@ -48,8 +48,8 @@ Dieses BE<uuml>ndel listet nur die notwendigen Module
 fE<uuml>r BBBike auf.
 
 This bundle lists only mandatory perl modules for BBBike.
-[% ELSIF type == "radzeit" -%]
-Module für die Installation auf radzeit.de.
+[% ELSIF type == "cgi" -%]
+Module für eine CGI-Installation.
 [% ELSIF type == "windist" -%]
 Module für die binäre Windows-Distribution.
 [% ELSE -%]

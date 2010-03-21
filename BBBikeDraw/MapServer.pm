@@ -4,7 +4,7 @@
 # $Id: MapServer.pm,v 1.45 2009/04/04 11:30:20 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003-2008 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003-2008,2010 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -58,6 +58,7 @@ $VERSION = sprintf("%d.%02d", q$Revision: 1.45 $ =~ /(\d+)\.(\d+)/);
     }
 
     # XXX How to code the preferences better?
+    # XXX needed also for biokovo_default
     sub vran_default {
 	my $self = shift->new;
 	my $HOME = "/home/e/eserte";
@@ -108,61 +109,6 @@ $VERSION = sprintf("%d.%02d", q$Revision: 1.45 $ =~ /(\d+)\.(\d+)/);
 	$self->TemplateMap("brb-ipaq.map-tpl");
 	$self->ImageSuffix($args{ImageType} || "png");
 	$self->FontsList("fonts-vran.list");
-	$self;
-    }
-
-    # Also used for bbbike.de
-    sub radzeit_default {
-	my $self = shift->new;
-	my $apache_root;
-	my $htdocs;
-        my $fontslist;
-	if (-d "/var/www/domains/radzeit.de/www/BBBike/data/") {
-	    # new radzeit.de
-	    $apache_root = "/var/www/domains/radzeit.de/www";
-	    $htdocs = "public";
-            $fontslist = "fonts-radzeit.list";
-	} else {
-	    $apache_root = "/usr/local/apache/radzeit";
-	    $htdocs = "htdocs";
-            $fontslist = "fonts-radzeit-old.list";
-	}
-	$self->BbbikeDir("$apache_root/BBBike");
-	$self->MapserverMapDir("$apache_root/$htdocs/mapserver/brb");
-	$self->MapserverBinDir("$apache_root/cgi-bin");
-	$self->MapserverRelurl("/mapserver/brb");
-	$self->MapserverUrl("http://bbbike.de/mapserver/brb");
-	$self->TemplateMap("brb.map-tpl");
-	$self->ImageSuffix("png");
-        $self->FontsList($fontslist);
-	$self;
-    }
-
-    sub radzeit_herceg_de_default {
-	my $self = shift->new;
-	my $apache_root = "/home/e/eserte/src/bbbike/projects/www.radzeit.de";
-	$self->BbbikeDir("$apache_root/BBBike");
-	if (-d "$apache_root/public/mapserver/brb") {
-	    # new radzeit.de
-	    $self->MapserverMapDir("$apache_root/public/mapserver/brb");
-	} else {
-	    $self->MapserverMapDir("$apache_root/htdocs/mapserver/brb");
-	}
-	#$self->MapserverBinDir("$apache_root/cgi-bin");
-	#$self->MapserverBinDir("/usr/local/src/mapserver/mapserver-3.6.4");
-	if ($Config::Config{archname} =~ /amd64/) {
-	    notice_once "Use latest CVS version (amd64)...";
-	    $self->MapserverBinDir("/usr/local/src/work/mapserver-amd64");
-	} else {
-	    $self->MapserverBinDir("/usr/local/src/work/mapserver");
-	}
-	$self->MapserverRelurl("/mapserver/brb");
-	$self->MapserverUrl("http://radzeit.herceg.de/mapserver/brb"); # herceg.local some day
-	$self->TemplateMap("brb.map-tpl");
-	$self->ImageSuffix("png");
-	#$self->FontsList("fonts-radzeit.list");
-	#$self->FontsList("fonts-vran.list");
-	$self->FontsList("fonts-biokovo.list");
 	$self;
     }
 
@@ -268,19 +214,9 @@ $VERSION = sprintf("%d.%02d", q$Revision: 1.45 $ =~ /(\d+)\.(\d+)/);
 	    my $conf = $self->get("Conf");
 	    if (!$conf) {
 		require Sys::Hostname;
-		if (defined $ENV{SERVER_NAME} &&
-		    $ENV{SERVER_NAME} =~ /radzeit\.de$/ &&
-		    $ENV{SERVER_NAME} !~ /bbbike2\.radzeit\.de$/ # not for debian-based install
-		   ) {
-		    $conf = BBBikeDraw::MapServer::Conf->radzeit_default;
-		} elsif (defined $ENV{SERVER_NAME} &&
+		if      (defined $ENV{SERVER_NAME} &&
 			 $ENV{SERVER_NAME} =~ /bbbike\.de$/) {
 		    $conf = BBBikeDraw::MapServer::Conf->bbbike_cgi_conf;
-		} elsif (defined $ENV{SERVER_NAME} &&
-			 $ENV{SERVER_NAME} =~ /radzeit\.herceg\.(de|local)$/) {
-		    $conf = BBBikeDraw::MapServer::Conf->radzeit_herceg_de_default;
-		} elsif (Sys::Hostname::hostname() =~ /vran\.herceg\.(de|local)$/) {
-		    $conf = BBBikeDraw::MapServer::Conf->vran_default;
 		} elsif (Sys::Hostname::hostname() =~ /herceg\.(de|local)$/) {
 		    $conf = BBBikeDraw::MapServer::Conf->biokovo_default;
 		} else {

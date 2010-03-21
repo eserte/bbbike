@@ -7,11 +7,7 @@
 .endif
 
 # should this be here?
-.if ${HOSTNAME} == "slaven.radzeit.de"
-MAPFILES_ROOT_DIR?=	../../public/mapserver/brb
-.else
 MAPFILES_ROOT_DIR?=	../mapserver/brb
-.endif
 MAPFILES_DATA_DIR=	$(MAPFILES_ROOT_DIR)/data
 MAPFILES_IMG_DIR=	$(MAPFILES_ROOT_DIR)/graphics
 
@@ -34,8 +30,6 @@ CONVERT_RADWEGE=	${MISCSRCDIR}/convert_radwege
 MAPSERVER_BIN_DIR?=	/usr/local/bin
 .elif ${HOSTNAME} == "biokovo-amd64.herceg.de"
 MAPSERVER_BIN_DIR?=	/usr/local/src/work/mapserver-amd64
-.elif ${HOSTNAME} == "slaven.radzeit.de"
-MAPSERVER_BIN_DIR?=	/usr/local/src/mapserver
 .else
 MAPSERVER_BIN_DIR?=	/usr/bin
 .endif

@@ -820,8 +820,8 @@ bundles:
 	if [ ! -h Bundle/make_small_bundle ] ; then \
 	    ln -s ../Makefile.PL Bundle/make_small_bundle; \
 	fi
-	if [ ! -h Bundle/make_radzeit_bundle ] ; then \
-	    ln -s ../Makefile.PL Bundle/make_radzeit_bundle; \
+	if [ ! -h Bundle/make_cgi_bundle ] ; then \
+	    ln -s ../Makefile.PL Bundle/make_cgi_bundle; \
 	fi
 	if [ ! -h Bundle/make_windist_bundle ] ; then \
 	    ln -s ../Makefile.PL Bundle/make_windist_bundle; \
@@ -829,7 +829,7 @@ bundles:
 	cd Bundle && \
 	    $(FULLPERL) make_bundle && \
 	    $(FULLPERL) make_small_bundle && \
-	    $(FULLPERL) make_radzeit_bundle && \
+	    $(FULLPERL) make_cgi_bundle && \
 	    $(FULLPERL) make_windist_bundle
 
 # OSD bundles are not supported anymore

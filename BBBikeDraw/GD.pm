@@ -148,7 +148,6 @@ sub init {
 	      '/usr/local/lib/X11/fonts/TTF/luxisr.ttf',
 	      '/usr/X11R6/lib/X11/fonts/TTF/luxisr.ttf',
 	      '/usr/share/fonts/truetype/ttf-dejavu/DejaVuSansCondensed.ttf', # found on Debian
-	      '/var/www/domains/radzeit.de/www/public/mapserver/brb/fonts/LucidaSansRegular.ttf', # private @ radzeit
 	     ]);
 
 	$TTF_CITY ||= $self->search_ttf_font
@@ -160,7 +159,6 @@ sub init {
 	      '/usr/local/lib/X11/fonts/TTF/luxisr.ttf',
 	      '/usr/X11R6/lib/X11/fonts/TTF/luxisr.ttf',
 	      '/usr/share/fonts/truetype/ttf-dejavu/DejaVuSansCondensed.ttf', # found on Debian
-	      '/var/www/domains/radzeit.de/www/public/mapserver/brb/fonts/luxisr.ttf' # private @ radzeit
 	     ]);
 
 	$TTF_TITLE ||= $self->search_ttf_font

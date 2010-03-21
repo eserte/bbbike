@@ -203,10 +203,3 @@ $ make test
 $ perl cgi2.t
   (evtl., da sehr zeitaufwendig; /var/log/httpd-error.log dabei überprüfen)
 
-======================================================================
-
-BBBike-Beta aktualisieren:
-
-$ rsync -e "ssh -2" -a ~/src/bbbike/cgi/bbbike.cgi root@www.radzeit.de:/var/www/domains/radzeit.de/www/cgi-bin/bbbike2.cgi
-$ rsync -e "ssh -2" -a ~/src/bbbike/cgi/bbbike2-radzeit.cgi.config root@www.radzeit.de:/var/www/domains/radzeit.de/www/BBBike/cgi/bbbike2.cgi.config
-

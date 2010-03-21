@@ -51,7 +51,9 @@ use BBBikeUtil qw(is_in_path);
 # New logfile since 2004-09-28 ca.
 #$logfile = "$ENV{HOME}/www/log/radzeit.combined_log";
 # Again the old name since 2005-06-XX ca.
-$logfile = "$ENV{HOME}/www/log/radzeit.de-access_log";
+#$logfile = "$ENV{HOME}/www/log/radzeit.de-access_log";
+# New server since 2009-12-XX
+$logfile = "$ENV{HOME}/www/log/bbbike.hosteurope/bbbike.de_access.log";
 
 # load test config file
 my $config_file = dirname(File::Spec->rel2abs(__FILE__)) . "/test.config";

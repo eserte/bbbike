@@ -25,7 +25,7 @@ use BBBikeVar;
 
 my $action;
 GetOptions('action=s' => \$action)
-    or die "usage: $^X $0 [-action make_bundle|make_small_bundle|make_windist_bundle|make_radzeit_bundle]";
+    or die "usage: $^X $0 [-action make_bundle|make_small_bundle|make_windist_bundle|make_cgi_bundle]";
 
 my $author = 'Slaven Rezic (' . $BBBike::EMAIL . ')',
 my $abstract = "BBBike - ein Routenplaner für Radfahrer in Berlin und Brandenburg";
@@ -43,7 +43,7 @@ use constant REQTABLE_DESC    => 4;
 use constant REQTABLE_LONGDESC=> 5;
 
 use constant REQ_BBBIKE_TK      => 1; # mandatory for the Perl/Tk version
-use constant REQ_BBBIKE_RADZEIT => 2; # mandatory for the web package on radzeit
+use constant REQ_BBBIKE_CGI     => 2; # mandatory for a full cgi install
 use constant REQ_BBBIKE_WINDIST => 4; # for windows distribution (not yet!)
 # ... 4, 8, 16 ...
 
@@ -290,9 +290,9 @@ if ($action) {
     } elsif ($action eq 'make_small_bundle') {
 	$make_bundle = "small";
 	$type_bundle = 0;
-    } elsif ($action eq 'make_radzeit_bundle') {
-	$make_bundle = "radzeit";
-	$type_bundle = REQ_BBBIKE_RADZEIT;
+    } elsif ($action eq 'make_cgi_bundle') {
+	$make_bundle = "cgi";
+	$type_bundle = REQ_BBBIKE_CGI;
     } elsif ($action eq 'make_windist_bundle') {
 	$make_bundle = "windist";
 	$type_bundle = REQ_BBBIKE_WINDIST;
@@ -313,7 +313,7 @@ my(%prereq, @prereq);
 if ($make_bundle) {
     exit make_bundle()         if $make_bundle eq 'normal';
     exit make_small_bundle()   if $make_bundle eq 'small';
-    exit make_radzeit_bundle() if $make_bundle eq 'radzeit';
+    exit make_cgi_bundle()     if $make_bundle eq 'cgi';
     exit make_windist_bundle() if $make_bundle eq 'windist';
     die "Should not happen: unhandled value <$make_bundle>";
 }
@@ -374,8 +374,8 @@ sub make_small_bundle {
     make_general_bundle(REQ_BBBIKE_TK, "BBBike_small.pm");
 }
 
-sub make_radzeit_bundle {
-    make_general_bundle(REQ_BBBIKE_RADZEIT, "BBBike_radzeit.pm");
+sub make_cgi_bundle {
+    make_general_bundle(REQ_BBBIKE_CGI, "BBBike_cgi.pm");
 }
 
 sub make_windist_bundle {
@@ -419,7 +419,7 @@ sub make_general_bundle {
     $t->process("BBBike.tpl.pm", { type_num => $type,
 				   type => {0,                  "full",
 					    REQ_BBBIKE_TK,      "small",
-					    REQ_BBBIKE_RADZEIT, "radzeit",
+					    REQ_BBBIKE_CGI,     "cgi",
 					    REQ_BBBIKE_WINDIST, "windist",
 					   }->{$type},
 				   file => $file,
@@ -560,12 +560,12 @@ EOF
 	cd ext && $(MAKE) build test PERL=$(FULLPERL)
 EOF
     }
-    if (-r "projects/www.radzeit.de/Makefile") {
+    if (0 && -r "projects/bbbike.de-hosteurope/Makefile") {
 	$out .= <<'EOF';
-	cd projects/www.radzeit.de && $(MAKE) deploy-local
+	cd projects/bbbike.de-hosteurope && $(MAKE) deploy-local
 EOF
     }
-    if (-r "projects/radlstadtplan_muenchen/Makefile.PL") {
+    if (0 && -r "projects/radlstadtplan_muenchen/Makefile.PL") {
 	$out .= <<'EOF';
 	cd projects/radlstadtplan_muenchen && $(PERL) Makefile.PL && $(MAKE) test
 EOF
