@@ -190,11 +190,11 @@ sub teaser_beta {
 	    return ();
 	    # XXX There's no beta version in English yet!
 	    <<EOF;
-<div class="teaser">What's new in the <a href="$bbbike_url?info=1#beta" style="font-weight:bold;">next version</a> of www.bbbike.de?</div>
+<div class="teaser">What's new in the <a href="$bbbike_url?info=1#beta" style="font-weight:normal;">next version</a> of www.bbbike.de?</div>
 EOF
 	} else {
 	    <<EOF;
-<div class="teaser">Was gibt es in der <a href="$bbbike_url?info=1#beta" style="font-weight:bold;">nächsten Version</a> von www.bbbike.de?</div>
+<div class="teaser">Was gibt es in der <a href="$bbbike_url?info=1#beta" style="font-weight:normal;">nächsten Version</a> von www.bbbike.de?</div>
 EOF
 	}
     } else {
@@ -225,13 +225,13 @@ sub teaser_other_cities {
     if ($lang eq 'en') {
 	<<EOF;
 <div class="teaser">
-  <b>@{[ $is_new ? "NEW and " : "" ]}BETA</b>: <a href="$url">BBBike for other cities</a>
+  <a href="$url" style="font-weight:bold;">BBBike \@ World</a><br/>BBBike for other cities
 </div>
 EOF
     } else {
 	<<EOF;
 <div class="teaser">
-  <b>@{[ $is_new ? "NEU und " : "" ]}BETA</b>: <a href="$url">BBBike für andere Städte</a>
+  <a href="$url" style="font-weight:bold;">BBBike \@ World</a><br/>BBBike für andere Städte
 </div>
 EOF
     }
