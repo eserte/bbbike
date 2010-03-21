@@ -9096,11 +9096,11 @@ EOF
 userdel	q4::inwork -32153,-176 -32143,-211 -31993,-726 -31991,-1024
 EOF
      },
-     { from  => undef, # 
-       until => 1270065106, # 2010-03-31 21:51
-       text  => 'Rudower Chaussee (Treptow - Köpenick) in beiden Richtungen Höhe S-Bahn Brücke Adlershof Baustelle, Straße vollständig gesperrt, als Fußgänger kann man passieren',
+     { from  => 1179453600, # 2007-05-18 04:00
+       until => 1279544400, # 2010-07-19 15:00
+       text  => 'Rudower Chaussee (Treptow - Köpenick) in beiden Richtungen Höhe S-Bahn Brücke Adlershof Baustelle, Straße vollständig gesperrt, als Fußgänger kann man passieren ',
        type  => 'handicap',
-       source_id => 'IM_006107',
+       source_id => 'IM_005525',
        data  => <<EOF,
 userdel	q4::inwork 19904,3464 19732,3340
 EOF
@@ -13916,9 +13916,9 @@ EOF
 userdel	2::inwork 596,11951 585,11830 572,11698 563,11601
 EOF
      },
-     { from  => 1241501417, # 2009-05-05 07:30
-       until => 1304200800, # 2011-05-01 00:00
-       text  => 'Kantstr. zwischen Hardebergstr. und Joachimstaler Str. gesperrt (bis 2011)',
+     { from  => 1241419680, # 2009-05-04 08:48
+       until => 1309438800, # 2011-06-30 15:00
+       text  => 'Kantstr. zwischen Hardebergstr. und Joachimstaler Str. gesperrt (bis 2011) ',
        type  => 'gesperrt',
        source_id => 'IM_012523',
        data  => <<EOF,
@@ -14283,9 +14283,9 @@ EOF
 userdel	2::inwork -19058,11636 -19029,11660 -18750,11919
 EOF
      },
-     { from  => 1243886249, # 2009-06-01 21:57
-       until => 1298934000, # 2011-03-01 00:00
-       text  => 'Pasewalker Str. (Pankow) stadteinwärts zwischen Marienstr. und Anschlussstelle A114 Baustelle, Fahrtrichtung gesperrt ist eingerichtet (bis Frühjahr 2011)',
+     { from  => 1243863900, # 2009-06-01 15:45
+       until => 1300635900, # 2011-03-20 16:45
+       text  => 'Pasewalker Str. (Pankow) stadteinwärts zwischen Marienstr. und Anschlussstelle A114 Baustelle, Fahrtrichtung gesperrt ist eingerichtet (bis Frühjahr 2011) ',
        type  => 'handicap',
        source_id => 'IM_012907',
        data  => <<EOF,
@@ -14502,9 +14502,9 @@ EOF
 userdel	q4::inwork; 12479,17811 12736,17998
 EOF
      },
-     { from  => 1246207933, # 2009-06-28 18:52
-       until => 1304200799, # 2011-04-30 23:59
-       text  => 'Kastanienallee (Rosenthal) Richtung Dietzgenstr. zwischen Hauptstr. und Friedrich-Engels-Str. Baustelle, Fahrtrichtung gesperrt (bis 04.2011)',
+     { from  => 1245658920, # 2009-06-22 10:22
+       until => 1303304400, # 2011-04-20 15:00
+       text  => 'Kastanienallee (Rosenthal) Richtung Dietzgenstr. zwischen Hauptstr. und Friedrich-Engels-Str. Baustelle, Fahrtrichtung gesperrt (bis 04.2011) ',
        type  => 'handicap',
        source_id => 'IM_013223',
        data  => <<EOF,
@@ -16167,7 +16167,7 @@ EOF
        text  => 'L 026 Brüssow - Prenzlau zw. Baumgarten und Prenzlau Grundhafter Straßenbau Vollsperrung 21.09.2009-30.12.2010 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 45417,105402 44804,104617 44521,104406 42811,104370 42331,104097 41975,103618 41700,103365
+userdel	2::inwork 45393,105220 44963,104618 44698,104375 44487,104325 42804,104235 42306,103942 42002,103540 41700,103365
 EOF
      },
      { from  => 1253397600, # 2009-09-20 00:00
@@ -16300,7 +16300,7 @@ userdel	2::inwork -26509,76113 -26787,75950 -27091,75809 -27371,75722
 EOF
      },
      { from  => 1254002400, # 2009-09-27 00:00
-       until => 1272664800, # 2010-05-01 00:00
+       until => 1269163006, # 2010-05-01 00:00 1272664800
        text  => 'L 054 Vetschau - Burg OL Vetschau, Kreuz. J.-Gagarin-/Bahnhofstr. Neubau Kreisverkehr Vollsperrung 28.09.2009-30.04.2010 ',
        type  => 'handicap',
        data  => <<EOF,
@@ -17122,8 +17122,8 @@ EOF
 userdel	2::inwork 34326,2915 34142,2742
 EOF
      },
-     { from  => undef, # 
-       until => undef, # XXX
+     { from  => 1265125080, # 2010-02-02 16:38
+       until => 1270044000, # 2010-03-31 16:00
        text  => 'Winckelmannstr. (Johannisthal) Richtung Segelfliegerdamm zwischen Herweghstr. und Köpenicker Str. Baustelle, gesperrt. Das Abbiegen vom Sterndamm in die Winckelmannstr. ist nicht möglich.',
        type  => 'handicap',
        source_id => 'IM_015007',
@@ -17156,6 +17156,59 @@ EOF
        permanent => 1,
        data  => <<EOF,
 	2::temp 8554,12593 8540,12420
+EOF
+     },
+     { from  => 1267950480, # 2010-03-07 09:28
+       until => 1274536800, # 2010-05-22 16:00
+       text  => 'Pappelallee - Stahlheimer Str. (Prenzlauer Berg): Gleisbauarbeiten, Fahrtrichtung gesperrt Richtung Schönhauser Allee zwischen Wisbyer Str. und Danziger Str. (bis vorauss. 22.05.2010 16:00)',
+       type  => 'handicap',
+       source_id => 'IM_015288',
+       data  => <<EOF,
+userdel	q4::inwork; 11727,16358 11618,16183 11554,16075 11550,16068 11500,15988 11455,15916 11393,15823 11373,15789 11301,15668 11183,15485 11119,15385 10881,15047
+EOF
+     },
+     { from  => 1269113469, # 2010-03-20 20:31
+       until => 1285884000, # 2010-10-01 00:00
+       text  => 'Altlandsberg: Straßen - und Rohrleitungsbau OD Wegendorf, 15.03.2010 bis 30.09.2010',
+       type  => 'handicap',
+       source_id => 'LSO-SG33-F10025',
+       data  => <<EOF,
+userdel	q4::inwork 34125,22128 34176,22704
+EOF
+     },
+     { from  => 1269113662, # 2010-03-20 20:34
+       until => 1274392800, # 2010-05-21 00:00
+       text  => 'Straßenausbau in der OD Blankenfelde zw. Zossener Damm und H.-Heine-Str. 17.03.2010 bis 20.05.2010 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 10115,-8276 10448,-7582
+EOF
+     },
+     { from  => 1269162211, # 2010-03-21 10:03
+       until => 1277935200, # 2010-07-01 00:00
+       text  => 'Lübben (Spreewald): Straßenbau OD Lübben, 28.09.2009 bis 30.06.2010 ',
+       type  => 'handicap',
+       source_id => 'LSS-SG33-W09248',
+       data  => <<EOF,
+userdel	q4::inwork 43923,-52746 44496,-51922
+EOF
+     },
+     { from  => 1269162391, # 2010-03-21 10:06
+       until => 1288476000, # 2010-10-31 00:00
+       text  => 'Nuthetal: Kanal-und Straßenbauarbeiten L 771 OD Saarmund, 21.09.2009 bis 30.10.2010 ',
+       type  => 'handicap',
+       source_id => 'LSW-SG33-P09598-1',
+       data  => <<EOF,
+userdel	q4::inwork -8457,-11261 -8332,-10598
+EOF
+     },
+     { from  => 1261436400, # 2009-12-22 00:00
+       until => 1270072800, # 2010-04-01 00:00
+       text  => 'Schenkenberg: Grundhafter Straßenbau L 26 Prenzlau - A 20 23.12.09 - 31.03.10 ',
+       type  => 'gesperrt',
+       source_id => 'LSO-SG33-E09214',
+       data  => <<EOF,
+userdel	2::inwork 42804,104235 44487,104325
 EOF
      },
     );
