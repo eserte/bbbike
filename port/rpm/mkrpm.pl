@@ -5,7 +5,7 @@
 # $Id: mkrpm.pl,v 1.9 2008/03/01 21:30:48 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999 Slaven Rezic. All rights reserved.
+# Copyright (C) 1999,2010 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -68,7 +68,7 @@ print RPM <<EOF;
 Name: BBBike
 Version: $bbbike_version
 Release: $release
-Copyright: GPL
+Copyright: Slaven Rezic
 Group: Applications/Productivity
 Requires: perl >= 5.005, perl-tk >= 800
 Prefix: %{__prefix}
@@ -83,6 +83,8 @@ if (open(COMMENT, "$bbbike_descr")) {
     while(<COMMENT>) {
 	chomp;
 	next if (/^\s*$/);
+	no strict 'refs';
+	s{\@(.*?)\@}{${"BBBike::".$1}}eg;
 	print RPM "$_\n";
     }
     close COMMENT;
@@ -135,7 +137,7 @@ ln -s %{_prefix}/BBBike/bbbike %{_prefix}/bin/bbbike
 close RPM;
 
 warn "Building rpm...\n";
-system("rpm -bb bbbike.rpm.spec");
+system('rpm', "-bb", "bbbike.rpm.spec");
 
 open(REL, ">.rpm.release") or die "Can't write release info";
 print REL "$bbbike_version $release\n";

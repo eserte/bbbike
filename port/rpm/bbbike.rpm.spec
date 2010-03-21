@@ -2,8 +2,8 @@
 %define __prefix        %{_prefix}
 Name: BBBike
 Version: 3.17
-Release: 1
-Copyright: GPL
+Release: 0
+Copyright: Slaven Rezic
 Group: Applications/Productivity
 Requires: perl >= 5.005, perl-tk >= 800
 Prefix: %{__prefix}
@@ -40,7 +40,7 @@ BBBike liefert unter anderem die Antwort auf folgende Fragen:
 * Auf welchen Strassen fahre ich, wenn ich von A nach B kommen will?
 * Wo habe ich Gegenwind- und Rueckenwindstrecken?
 * Wo gibt es Steigungen und Gefaelle?
-WWW: @BBBIKE_SF_WWW@
+WWW: http://bbbike.sourceforge.net
 
 
 %files
