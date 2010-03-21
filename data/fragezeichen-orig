@@ -450,7 +450,8 @@ Weiﬂdornweg (Potsdam): guter Asphalt, Q0	? -17514,45 -17497,80 -17462,89 -17441,
 Weiﬂdornweg (Potsdam): guter Asphalt, Q0	? -17497,80 -17547,167 -17565,207
 #: by: ^^^
 #: by: anonymous (2x):
-Druckerkehre: guter Beton, Q1 (note: q3 wegen "kurzer Straﬂe/Sackgasse" ignoriert, zweiter Anonymous hat nur q1 verwendet)	? 16657,1124 16669,1166 16698,1198
+#: by: Michael Walter:
+Druckerkehre: guter Beton, Q1 (note: q3 wegen "kurzer Straﬂe/Sackgasse" ignoriert, zweiter Anonymous hat nur q1 verwendet, Michael: einige Fuﬂg‰nger, q0)	? 16657,1124 16669,1166 16698,1198
 #: by: Sarah (sweetblngirl):
 Karlstr. (Rehfelde): m‰ﬂiger loser Sandweg, Q2	? 43666,15719 43602,16024
 #: by: Axel Giesow:
@@ -3385,8 +3386,6 @@ Ringallee/Zur Ringallee: Name der Straﬂe (Ringallee oder Zur Ringallee)? Qualit‰
 #: XXX laut osm "paved"
 Zur Ringallee: Name der Straﬂe ("Zur Ringallee" oder anders?)? Qualit‰t?	? 13614,17650 13582,17738 13586,17830 13640,17921 13740,17977 13830,17990 13958,17966 14047,17894 14101,17817 14124,17730 14161,17681
 Straﬂe 56 (Heinersdorf): Qualit‰t der Straﬂe? Kann die Berliner Str. in Hˆhe Straﬂe 56 ¸berquert werden oder ist das wegen der Straﬂenbahngleise nicht mˆglich?	? 12448,17679 12587,17603
-#: XXX Eintrag in Berlin.coords.data fehlt
-Straﬂe 49 (Heinersdorf): Qualit‰t der Straﬂe?	? 12780,17318 12609,17405 12500,17460 12407,17508
 Zeuschelstr.: Qualit‰t?	? 12022,23058 11788,23229 11629,23360 11560,23421 11128,23746
 #: XXX Eintrag in str_cont_ausnahme notwendig
 Rupertweg: Qualit‰t?	? 11629,23360 11600,23317 11536,23231
@@ -3710,7 +3709,6 @@ Straﬂe 87 (Rosenthal): Qualit‰t?	? 9091,20425 9025,20372
 Straﬂe 101 (Niederschˆnhausen): Qualit‰t?	? 9235,20125 9360,20152
 Straﬂe 97: Qualit‰t?	? 9359,20197 9415,20215 9611,20234 9727,20251
 Taufsteinweg: Qualit‰t?	? 9295,20632 9311,20489 9324,20386
-Eschenallee (Rosenthal): Qualit‰t?	? 9460,20644 9479,20535 9498,20435
 #: XXX_indoor: osm meint "Akazienstr.", ist aber wahrscheinlich falsch!
 Akazienallee (Rosenthal): Qualit‰t?	? 9547,20670 9615,20469 9627,20443
 Abajstr.: Qualit‰t?	? 9479,20535 9311,20489
@@ -4728,6 +4726,7 @@ Straﬂe 140 (Rosenthal): Qualit‰t?	? 8605,21248 8680,21208 8753,21253 8826,21369
 Straﬂe 141 (Rosenthal): Qualit‰t?	? 8811,21379 8851,21453
 Straﬂe 142 (Rosenthal): Qualit‰t?	? 8851,21453 8927,21403
 Rosenthaler Grenzweg: Qualit‰t?	? 10380,20720 10501,20759 10609,20796 11244,21003
+#: XXX laut Carsten Kienitz: Q1, q1, 30er-Zone (R¸ckfrage!)
 Straﬂe 52b: Qualit‰t?	? 10600,20839 11236,21058
 Straﬂe 127: Qualit‰t?	? 8321,22269 8256,22098 8234,22024
 Straﬂe 128: Qualit‰t? Genaue Lage der Straﬂe?	? 7778,21030 7921,20996
@@ -4808,7 +4807,6 @@ Ernst-Bruch-Zeile: Qualit‰t?	? -6242,13371 -6084,13427 -6062,13432 -5976,13465 -
 Pietschweg: Qualit‰t?	? -6395,13121 -6360,12970
 #: XXX_indoor bei osm falsch geschrieben?
 Spieroweg: Qualit‰t?	? -6595,13198 -6563,13403
-Breddiner Weg: Qualit‰t?	? -8312,15151 -8229,15505
 Neunkircher Steig: Qualit‰t?	? -8682,14489 -8637,14720 -8617,14848 -8584,15023 -8573,15073
 Sundhauser Gang: Qualit‰t?	? -8584,15023 -8471,15000
 Sulzbacher Steig: Qualit‰t?	? -8617,14848 -8443,14826
@@ -5164,7 +5162,6 @@ Amselstr. (Karow): Qualit‰t?	? 15117,23634 15295,23508 15428,23413
 Wotanstr. (Karow): Qualit‰t?	? 15033,23432 15072,23535 15117,23634 15179,23755 15256,23861
 Hagenstr. (Karow): Qualit‰t?	? 15249,23279 15176,23168 15037,22974 14950,22853
 Grundackerweg: Qualit‰t?	? 15310,23085 15229,22840
-Leobsch¸tzer Str.: Qualit‰t?	? 14776,23612 14756,23622 14651,23667 14614,23684 14550,23712
 Straﬂe 94: Qualit‰t?	? 14982,24192 14901,24090 14716,23819 14647,23833 14550,23712 14465,23623 14447,23562
 Sandbergstr.: Qualit‰t?	? 14575,23538 14447,23562 14382,23574 14316,23586
 Lˆnsstr.: Qualit‰t?	? 14109,23278 14338,23187
@@ -5516,3 +5513,5 @@ Baumgarten - Gr¸now: Qualit‰t?	? 45393,105220 45647,104851 45619,104429 45554,10
 #: XXX_indoor: bei osm falsch geschrieben?
 Leo-Hendrik-Baekeland-Str. (Erkner): Qualit‰t?	? 34603,2615 34549,2640 34416,2848 34391,3099
 Julius-R¸tgers-Str. (Erkner): Qualit‰t?	? 34293,3076 34391,3099 34416,3127 34671,3421 34553,3539
+Kirchstr. (Schˆnefeld): Qualit‰t?	? 17933,-2344 17916,-2287 17738,-2094 17647,-1890
+Kirchstr. (Schˆnefeld): Qualit‰t?	? 17586,-1937 17738,-2094
