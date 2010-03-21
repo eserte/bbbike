@@ -372,13 +372,17 @@ EOF
 # 		],
 	       ]
 	      ],
-	      [Button => $do_compound->('VMZ/LBVS lister'),
-	       -command => sub { show_vmz_lbvs_files() },
+	      [Button => $do_compound->('VMZ'),
+	       -command => sub { newvmz_process() },
 	      ],
-	      [Cascade => $do_compound->("VMZ/LBVS Archive"), -menuitems =>
+	      [Cascade => $do_compound->("Old VMZ/LBVS stuff"), -menuitems =>
 	       [
 		[Button => "Show recent VMZ diff (new version)",
 		 -command => sub { show_new_vmz_diff() },
+		],
+		"-",
+		[Button => $do_compound->('VMZ/LBVS lister'),
+		 -command => sub { show_vmz_lbvs_files() },
 		],
 		"-",
 		[Button => "Show recent VMZ diff",
@@ -723,6 +727,21 @@ sub md5_file {
     my $digest = $ctx->hexdigest;
 }
 
+sub newvmz_process {
+    my $bbd = "$vmz_lbvs_directory/diffnewvmz.bbd";
+    rename $bbd, "$vmz_lbvs_directory/diffnewvmz.old.bbd";
+    my @cmd = ($^X, "$bbbike_rootdir/miscsrc/VMZTool.pm",
+	       "-oldstore", "$vmz_lbvs_directory/newvmz.yaml",
+	       "-newstore", "$vmz_lbvs_directory/newvmz.new.yaml",
+	       "-outbbd", $bbd,
+	      );
+    system(@cmd);
+    if (!-s $bbd) {
+	main::status_message("Error while running @cmd, no bbd file $bbd created", "die");
+    }
+    show_new_vmz_diff();
+}
+
 sub show_vmz_lbvs_files {
     require File::Basename;
     my $t = $main::top->Toplevel(-title => "VMZ/LBVS files");
@@ -855,6 +874,25 @@ sub show_any_diff {
 			    if ($listener && Tk::Exists($listener)) {
 				fill_vmz_lbvs_files($listener);
 				$listener->raise;
+			    }
+			    if ($diff_type eq 'newvmz') {
+				{
+				    my @rename = ("$vmz_lbvs_directory/newvmz.yaml", "$vmz_lbvs_directory/newvmz.old.yaml");
+				    rename $rename[0], $rename[1]
+					or main::status_message("Cannot rename @rename: $!", "warn");
+				}
+				{
+				    my @rename = ("$vmz_lbvs_directory/newvmz.new.yaml", "$vmz_lbvs_directory/newvmz.yaml");
+				    rename $rename[0], $rename[1]
+					or main::status_message("Cannot rename @rename: $!", "warn");
+				}
+				require File::Copy;
+				require POSIX;
+				my $today = POSIX::strftime("%Y%m%d", localtime);
+				my @copy = ("$vmz_lbvs_directory/newvmz.yaml",
+					    "$vmz_lbvs_directory/archive/newvmz-$today.yaml");
+				File::Copy::copy(@copy)
+					or main::status_message("Cannot copy @copy: $!", "warn");
 			    }
 			    $t->destroy;
 			}
