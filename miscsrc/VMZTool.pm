@@ -265,7 +265,7 @@ EOF
 		$text . "¦" . $rec->{id} . "¦" . $rec->{map_url} . "\tX $sx,$sy\n";
     };
     my %seen_id;
-    for my $place (sort { $place2rec->{$a}->{lon} <=> $place2rec->{$b}->{lon} } keys %$place2rec) {
+    for my $place (sort { $place2rec->{$a}->[0]->{lon} <=> $place2rec->{$b}->[0]->{lon} } keys %$place2rec) {
 	my $recs = $place2rec->{$place};
 	for my $rec (@$recs) {
 	    $seen_id{$rec->{id}}++;
@@ -296,22 +296,28 @@ my $old_store_file;
 my $new_store_file;
 my $out_bbd;
 my $do_fetch = 1;
+my $do_test;
 GetOptions("oldstore=s" => \$old_store_file,
 	   "newstore=s" => \$new_store_file,
 	   "outbbd=s" => \$out_bbd,
 	   "fetch!" => \$do_fetch,
+	   "test!" => \$do_test,
 	  )
     or die "usage?";
 
 my $old_store;
 if ($old_store_file) {
+    local $YAML::Syck::ImplicitUnicode = 1;
     $old_store = YAML::Syck::LoadFile($old_store_file);
 }
 
 my $vmz = VMZTool->new;
 my($tmpfh, $file);
 my($tmp2fh, $mapfile);
-if ($do_fetch) {
+if ($do_test) {
+    $file    = "$ENV{HOME}/trash/Meldungsliste.jsp?back=true";
+    $mapfile = "$ENV{HOME}/trash/Meldungskarte.jsp?back=true&map=true&x=52.1034702789087&y=14.270757485947728&zoom=13&meldungId=LS%2FO-SG33-F%2F10%2F027";
+} elsif ($do_fetch) {
     ($tmpfh,$file)     = tempfile(UNLINK => 1) or die $!;
     ($tmp2fh,$mapfile) = tempfile(UNLINK => 1) or die $!;
     eval { $vmz->fetch($file); $vmz->fetch_mappage($mapfile) };
@@ -319,14 +325,19 @@ if ($do_fetch) {
 	$File::Temp::KEEP_ALL = 1;
 	die $@;
     }
-} else {
-    $file    = "$ENV{HOME}/trash/Meldungsliste.jsp?back=true";
-    $mapfile = "$ENV{HOME}/trash/Meldungskarte.jsp?back=true&map=true&x=52.1034702789087&y=14.270757485947728&zoom=13&meldungId=LS%2FO-SG33-F%2F10%2F027";
 }
-my %res = $vmz->parse($file);
-$vmz->parse_mappage($mapfile, \%res);
+my %res;
+if ($file && $mapfile) {
+    %res = $vmz->parse($file);
+    $vmz->parse_mappage($mapfile, \%res);
+} else {
+    local $YAML::Syck::ImplicitUnicode = 1;
+    my $res = YAML::Syck::LoadFile($new_store_file);
+    %res = %$res;
+}
 my $bbd = $vmz->as_bbd($res{place2rec}, $old_store);
-if ($new_store_file) {
+if ($new_store_file && $do_fetch) {
+    local $YAML::Syck::ImplicitUnicode = 1;
     YAML::Syck::DumpFile($new_store_file, \%res);
 }
 if ($out_bbd) {
@@ -338,6 +349,10 @@ if ($out_bbd) {
 }
 
 __END__
+
+=head1 NAME
+
+VMZTool - parse road work information for Berlin and Brandenburg
 
 =head1 TODO
 
@@ -360,6 +375,10 @@ First-time usage:
 
     perl miscsrc/VMZTool.pm -oldstore /tmp/oldvmz.yaml -newstore ~/cache/misc/newvmz.yaml -outbbd ~/cache/misc/diffnewvmz.bbd
 
-Regular usage: TBD
+Regular usage:
+
+    perl miscsrc/VMZTool.pm -oldstore ~/cache/misc/newvmz.yaml -newstore ~/cache/misc/newvmz.yaml.new -outbbd ~/cache/misc/diffnewvmz.bbd
+    mv ~/cache/misc/newvmz.yaml ~/cache/misc/newvmz.yaml.old
+    mv ~/cache/misc/newvmz.yaml.new ~/cache/misc/newvmz.yaml
 
 =cut
