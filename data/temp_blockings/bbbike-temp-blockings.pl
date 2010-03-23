@@ -17211,4 +17211,22 @@ EOF
 userdel	2::inwork 42804,104235 44487,104325
 EOF
      },
+     { from  => 1267945200, # 2010-03-07 08:00
+       until => 1275314400, # 2010-05-31 16:00
+       text  => 'Emmentaler Str. (Reinickendorf) Richtung Residenzstr. zwischen Klemkestr. und Armbrustweg: Baustelle, Fahrtrichtung gesperrt, 08.03.2010 08:00 Uhr bis 31.05.2010 16:00 Uhr ',
+       type  => 'handicap',
+       source_id => 'IM_015285',
+       data  => <<EOF,
+userdel	q4::inwork; 7855,18697 7758,18535 7693,18481
+EOF
+     },
+     { from  => 1269727200, # 2010-03-27 23:00
+       until => 1275084000, # 2010-05-29 00:00
+       text  => 'Vollsperrung zw. Läsikow und Rohrlack ab 29.03.10 bis 28.05.2010 ',
+       type  => 'gesperrt',
+       source_id => 'LSW-SG33-K10024',
+       data  => <<EOF,
+userdel	2::inwork -44683,45909 -46141,45772
+EOF
+     },
     );
