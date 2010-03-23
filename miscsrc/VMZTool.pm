@@ -202,6 +202,8 @@ EOF
 	my @attribs;
 	if (grep { m{^A} } @{ $rec->{strassen} }) {
 	    push @attribs, 'IGNORE';
+	} elsif (grep { m{Tunnel Tiergarten Spreebogen} } @{ $rec->{strassen} }) { # Berlin specialities
+	    push @attribs, 'IGNORE';
 	} elsif ($rec->{place} eq 'Berlin') {
 	    # special ignore detection for Berlin
 	    my @lines = split /\n/, $rec->{text};
