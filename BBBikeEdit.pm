@@ -2950,27 +2950,58 @@ sub choose_bbd_file_for_penalty {
     $bbd_penalty_file = $f;
 }
 
+# Handles
+# - line penalties
+# - point penalties
+#
+# Line penalties are specified using $bbd_penalty_koeff.
+# Point penalties are only used if
+# - the user has set a reference speed (not reference power)
+# - the points are specified with categories in the form "something:losttime"
+#
+# If the active reference speed is changed, then the penalty net needs
+# to be rebuild to take into effect.
+#
+# The penalty net can be inverted. This is only possible for line
+# penalties.
 sub build_bbd_penalty_for_search {
     if (!defined $bbd_penalty_file) {
 	choose_bbd_file_for_penalty();
 	return if (!defined $bbd_penalty_file);
     }
+
+    my $active_speed_ms;
+    if (keys %main::active_speed_power &&
+	$main::active_speed_power{Type} eq "speed") {
+	my $i = $main::active_speed_power{Index};
+	$active_speed_ms = BBBikeUtil::kmh2ms($main::speed[$i]);
+    }
+
     require Strassen::Core;
     my $s = new Strassen $bbd_penalty_file;
     die "Can't get $bbd_penalty_file" if !$s;
     $s->init;
     my $penalty = {};
+    my $point_penalty = {};
     while(1) {
 	my $r = $s->next;
-	last if !@{ $r->[Strassen::COORDS()] };
-	for my $i (0 .. $#{ $r->[Strassen::COORDS()] }-1) {
-	    # XXX beide Richtungen???
-	    $penalty->{$r->[Strassen::COORDS()]->[$i] . "," . $r->[Strassen::COORDS()]->[$i+1]}++;
-	    $penalty->{$r->[Strassen::COORDS()]->[$i+1] . "," . $r->[Strassen::COORDS()]->[$i]}++;
+	my @c = @{ $r->[Strassen::COORDS()] };
+	last if !@c;
+	if (@c == 1 && $active_speed_ms) {
+	    if (my($time_lost) = $r->[Strassen::CAT()] =~ m{^.*?:(\d+)}) {
+		$point_penalty->{$c[0]} = $time_lost * $active_speed_ms;
+	    }
+	} else {
+	    for my $i (0 .. $#c-1) {
+		# XXX beide Richtungen???
+		$penalty->{$c[$i] . "," . $c[$i+1]} = 1;
+		$penalty->{$c[$i+1] . "," . $c[$i]} = 1;
+	    }
 	}
     }
 
     if ($bbd_penalty_invert) {
+	# XXX point_penalty kann nicht invertiert werden!
 	warn M"Die Bedeutung der Penalty-Daten invertieren...\n";
 	my $new_penalty = {};
 	if (!$main::net) {
@@ -2983,10 +3014,10 @@ sub build_bbd_penalty_for_search {
 		my $k12 = "$k1,$k2";
 		my $k21 = "$k2,$k1";
 		if (!exists $penalty->{$k12}) {
-		    $new_penalty->{$k12}++;
+		    $new_penalty->{$k12} = 1;
 		}
 		if (!exists $penalty->{$k21}) {
-		    $new_penalty->{$k21}++;
+		    $new_penalty->{$k21} = 1;
 		}
 	    }
 	}
@@ -3002,6 +3033,9 @@ sub build_bbd_penalty_for_search {
 		$pen *= $bbd_penalty_koeff;
 	    }
 	    #warn "Hit penalty node $next_node\n";#XXX
+	}
+	if (exists $point_penalty->{$next_node}) {
+	    $pen += $point_penalty->{$next_node};
 	}
 	$pen;
     };
