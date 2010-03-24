@@ -182,9 +182,14 @@ Allee der Kosmonauten: Bau von Radwegen oder -streifen	?::inwork 19173,13478 190
 #: last_checked: 2010-03-18
 #: next_check: 2010-06-01
 Fasanenstr.: Öffnung der Einbahnstraße für Radfahrer	? 5268,11274 5247,10992 5242,10918 5229,10716 5207,10399
+#: last_checked: 2010-03-24
+#: next_check: 2010-06-01
+Braunschweiger Str.: Asphaltierung	? 13047,7234 13150,7254 13322,7294 13369,7307 13487,7337
+#: last_checked: 2010-03-24
+#: next_check: 2010-06-01
+Teilestr.: Radverkehrsanlagen	? 10254,5921 10404,5969 10526,6008 10614,6047 10789,6031 11174,5996 11257,6015 11322,5989
 #: next_check: 2010-03-01 vvv
 Radwegbau Welzower Steig	?::inwork 6320,21777 6370,21689 6428,21648 6478,21652 6508,21646 6529,21620 6576,21414
-Braunschweiger Str.: Asphaltierung	? 13047,7234 13150,7254 13322,7294 13369,7307 13487,7337
 #: last_checked: 2009-09-27
 Radverkehrsanlagen um den Knotenpunkt Weißenseer Weg/Konrad-Wolf-Str.	? 14843,15007 15052,14585 15164,14392
 Radverkehrsanlagen um den Knotenpunkt Weißenseer Weg/Konrad-Wolf-Str.	? 14754,14406 15052,14585 15272,14691
@@ -199,7 +204,6 @@ Alt-Biesdorf/Alt-Kaulsdorf (südliche Seite): Bau von Radwegen	? 21108,11628 2125
 Puccinistr.: Asphaltierung	? 13700,15501 13776,15546
 Borussenstr.: Asphaltstreifen	? -3882,2441 -3913,2327 -3965,2240 -4164,1993
 Ringstr.: Radverkehrsanlagen	? 9021,3878 8766,4038 8605,4138 8399,4244 8159,4354 8098,4376 7990,4420 7921,4451 7690,4552
-Teilestr.: Radverkehrsanlagen	? 10254,5921 10404,5969 10526,6008 10614,6047 10789,6031 11174,5996 11257,6015 11322,5989
 Fürstenwalder Allee: Bau von Radverkehrsanlagen	? 29713,4456 29728,4435 29813,4314 29850,4288 29901,4264 29959,4235 30210,4046 30351,3939 30456,3794 30518,3753 30650,3698 31139,3497 31366,3404 31447,3372 31632,3297 31863,3257 31999,3234 32829,3105 33111,3064 33593,2893
 #: next_check ^^^
 #: by: ^^^
@@ -226,9 +230,9 @@ Alt-Blankenburg: Bau von Radwegen	?::inwork; 13592,20785 13576,20849 13915,20944
 #: next_check ^^^
 #: by ^^^
 #: by: http://www.berlin.de/ba-neukoelln/presse/archiv/20081118.1520.114696.html
-#: last_checked: 2009-08-05
-#: next_check: 2010-03-01
-Schwarzer Weg: Wiedereröffnung im Frühjahr 2009 (im Juli aber noch keinerlei Anzeichen zu sehen)	?::projected 13938,7938 13957,8209 13939,8228
+#: last_checked: 2010-03-24
+#: next_check: 2010-05-01
+Schwarzer Weg: im März 2010 noch Bauarbeiten	?::inwork 13938,7938 13957,8209 13939,8228
 #XXX del An der Spandauer Brücke: neue Straßenführung	?::inwork 10309,12854 10398,12903 10427,12921 10371,13006
 #XXXdel : by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0802/nachricht2958.html;#: note: laut daniel.geraskov noch eine Baustelle;#: last_checked: 2008-06-23;Oranienburger Str.: Existiert in Richtung Hackescher Markt zwischen Friedrichstraße und Linienstraße eine Radspur?	?; 9215,13392 9281,13374
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0802/nachricht2961.html
@@ -3915,7 +3919,6 @@ Heidereiterweg (Potsdam): Qualität?	? -11105,-4023 -10978,-4247 -10924,-4319 -10
 Nuthestr.: existieren durchgängig Radwege zwischen Berliner Str. und Alt Nowawes?	? -11142,-1675 -11226,-1445 -11356,-1317 -11463,-1232 -11549,-1169
 Am Berg: Qualität?	? 23010,4506 22959,4576
 Iselbergplatz: Qualität?	? 23523,13368 23646,13346
-Juliushof: Qualität?	? 13127,6545 13147,6471 13095,6460
 Steffenshagener Str.: Qualität?	? 22947,10998 22983,11098 23159,11097
 Rosenhagener Str.: Qualität?	? 23135,10990 23159,11097
 Auf der Höh: Qualität?	? 22898,11125 22782,11127

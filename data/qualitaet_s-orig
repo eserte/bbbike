@@ -3014,6 +3014,9 @@ Hauptweg - Uferweg: Asphalt	Q0 4777,15398 4754,15388
 (Am Hohenzollernkanal): Asphalt	Q0 4754,15388 4664,15491 4459,15723 4273,15740 4224,15779 4216,15799 4390,15913 4390,15923 4383,15939 4369,15950 4131,16017 4089,15978
 (Am Hohenzollernkanal): Asphalt	Q0 4084,15859 4055,15795 3982,15793 3924,15768 3775,15768
 (Am Hohenzollernkanal): Asphalt	Q0 -238,16095 -910,16608
+Juliushof: Asphalt	Q0 13127,6545 13143,6499 13142,6453
+Juliushof: Asphalt	Q0 13168,6444 13142,6453 13070,6449
+Teupitzer Str.: Asphalt mit Schäden	Q1 13985,8415 13965,8273
 ######################### User Contributions #################################
 #: by: Dominik Seelow vvv
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
@@ -4146,7 +4149,8 @@ Iranische Str.: Kopfsteinpflaster	Q2 8092,16485 7875,16509 7728,16538 7707,16543
 Reinholdstr.: mäßiges Kopfsteinpflaster	Q2 12833,6796 12953,6820 13014,6833
 Bruno-Bauer-Str.: Kopfsteinpflaster	Q2 12816,6870 12833,6796 12843,6750 12860,6667 12876,6589 12893,6527
 #: note: laut Bild von Gabi:
-Juliusstr.: Kopfsteinpflaster	Q2 13195,6560 13127,6545 12902,6495 12779,6478 12553,6423
+#: corrected_by: srt (Q2 -> Q2-)
+Juliusstr.: Kopfsteinpflaster	Q2- 13195,6560 13127,6545 12902,6495 12779,6478 12553,6423
 Walterstr.: Kopfsteinpflaster	Q2 13125,6717 13014,6833 12983,6904 12934,6967
 Kranoldplatz: Kopfsteinpflaster	Q2 12833,6796 12715,6775
 Kranoldplatz: Kopfsteinpflaster	Q2 12726,6727 12843,6750
