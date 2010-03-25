@@ -234,7 +234,11 @@ berlin-test-osm2bbd-postprocess2:
 
 ######################################################################
 # Building for garmin with custom .typ file
-# Currently works only on mosor
+
+MKGMAP_VER?=	1624
+MKGMAP?=	java -Xmx1024m -jar /usr/local/src/mkgmap-r${MKGMAP_VER}/mkgmap.jar
+
+# on mosor: /usr/lib/jvm/java-6-sun/bin/java -jar /opt/mkgmap-r1247/mkgmap.jar
 
 bbbikemap-for-garmin:	/tmp/gmapsupp.img
 	@echo "Set the garmin device into USB mass storage mode."
@@ -248,15 +252,15 @@ bbbikemap-for-garmin:	/tmp/gmapsupp.img
 	cd ../data && ${MAKE} ../tmp/bbbike_routable.osm
 
 /tmp/gmapsupp.img: /tmp/bbbike_routable.img
-	[ -r /home/eserte/src/bbbike-aux/mkgmap/typ/M000002a.TYP ]
+	[ -r ${HOME}/src/bbbike-aux/mkgmap/typ/M000002a.TYP ]
 	cd /tmp && \
-	    /usr/lib/jvm/java-6-sun/bin/java -jar /opt/mkgmap-r1247/mkgmap.jar --family-id=42 \
-	       --gmapsupp bbbike_routable.img /home/eserte/src/bbbike-aux/mkgmap/typ/M000002a.TYP
+	    ${MKGMAP} --family-id=42 \
+	       --gmapsupp bbbike_routable.img ${HOME}/src/bbbike-aux/mkgmap/typ/M000002a.TYP
 
 /tmp/bbbike_routable.img: ../tmp/bbbike_routable.osm
-	[ -r /home/eserte/src/bbbike-aux/mkgmap/srt-style ]
+	[ -r ${HOME}/src/bbbike-aux/mkgmap/srt-style ]
 	cd /tmp && \
-	    /usr/lib/jvm/java-6-sun/bin/java -Xmx1024m -jar /opt/mkgmap-r1247/mkgmap.jar --mapname=12117006 \
-	        --latin1 --draw-priority=5 --style-file=/home/eserte/src/bbbike-aux/mkgmap/srt-style \
-	        /home/eserte/src/bbbike/tmp/bbbike_routable.osm  && \
+	    ${MKGMAP} --mapname=12117006 \
+	        --latin1 --draw-priority=5 --style-file=${HOME}/src/bbbike-aux/mkgmap/srt-style \
+	        ${HOME}/src/bbbike/tmp/bbbike_routable.osm  && \
 	    mv -f 12117006.img bbbike_routable.img 

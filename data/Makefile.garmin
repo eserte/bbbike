@@ -310,11 +310,12 @@ ${PERSISTENTTMPDIR}/dresden_osm.img:	${PERSISTENTTMPDIR}/dresden.osm
 ######################################################################
 # bbd2osm stuff
 
+BBD2OSM_FRAGEZEICHEN_SOURCE=	${PERSISTENTTMPDIR}/fragezeichen-outdoor-nextcheck.bbd
 BBD2OSM_MAPSET_ALL_SOURCES=	strassen landstrassen landstrassen2 \
-				gesperrt ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd
+				gesperrt ${BBD2OSM_FRAGEZEICHEN_SOURCE}
 
 ${PERSISTENTTMPDIR}/bbbike_routable.osm:	${BBD2OSM} ${BBD2OSM_MAPSET_ALL_SOURCES}
-	${BBD2OSM} > ${PERSISTENTTMPDIR}/bbbike_routable.osm~
+	${BBD2OSM} -fragezeichen ${BBD2OSM_FRAGEZEICHEN_SOURCE} > ${PERSISTENTTMPDIR}/bbbike_routable.osm~
 	mv ${PERSISTENTTMPDIR}/bbbike_routable.osm~ ${PERSISTENTTMPDIR}/bbbike_routable.osm
 
 ${PERSISTENTTMPDIR}/bbbike_routable.img:	${PERSISTENTTMPDIR}/bbbike_routable.osm
