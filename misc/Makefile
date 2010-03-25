@@ -251,13 +251,12 @@ bbbikemap-for-garmin:	/tmp/gmapsupp.img
 ../tmp/bbbike_routable.osm:
 	cd ../data && ${MAKE} ../tmp/bbbike_routable.osm
 
-/tmp/gmapsupp.img: /tmp/bbbike_routable.img
-	[ -r ${HOME}/src/bbbike-aux/mkgmap/typ/M000002a.TYP ]
+/tmp/gmapsupp.img: /tmp/bbbike_routable.img ${HOME}/src/bbbike-aux/mkgmap/typ/M000002a.TYP
 	cd /tmp && \
 	    ${MKGMAP} --family-id=42 \
 	       --gmapsupp bbbike_routable.img ${HOME}/src/bbbike-aux/mkgmap/typ/M000002a.TYP
 
-/tmp/bbbike_routable.img: ../tmp/bbbike_routable.osm
+/tmp/bbbike_routable.img: ../tmp/bbbike_routable.osm ${HOME}/src/bbbike-aux/mkgmap/srt-style/*
 	[ -r ${HOME}/src/bbbike-aux/mkgmap/srt-style ]
 	cd /tmp && \
 	    ${MKGMAP} --mapname=12117006 \
