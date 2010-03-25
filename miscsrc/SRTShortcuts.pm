@@ -269,6 +269,8 @@ EOF
 				  "$bbbike_rootdir/tmp/unique-matches.bbd"),
 		layer_checkbutton('Unique matches since 2008', 'str',
 				  "$bbbike_rootdir/tmp/unique-matches-since2008.bbd"),
+		layer_checkbutton('Unique matches since 2009', 'str',
+				  "$bbbike_rootdir/tmp/unique-matches-since2009.bbd"),
 		[Button => "Abdeckung",
 		 -command => sub {
 		     local $main::p_draw{'pp-all'} = 1;
