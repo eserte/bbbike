@@ -71,6 +71,7 @@ my %node_id;
 my %oneway;
 my %no_access;
 my %speed0;
+my @remember_quality;
 
 my %cat_to_highway = ('B'  => 'primary',
 		      'HH' => 'primary',
@@ -139,6 +140,9 @@ if ($single_file) {
     do_file("$datadir/strassen", \&handle_highway_like);
     do_file("$datadir/landstrassen", \&handle_highway_like);
     do_file("$datadir/landstrassen2", \&handle_highway_like);
+
+    dump_quality();
+	
     if (!$fragezeichen_file) {
 	$fragezeichen_file = -r "$datadir/../tmp/fragezeichen-nextcheck.bbd" ? "$datadir/../tmp/fragezeichen-nextcheck.bbd" : "$datadir/fragezeichen";
     }
@@ -233,9 +237,23 @@ sub handle_handicap_like {
 	if ($cat_hin =~ m{^[qQ][34]$}) {
 	    $speed0{$node_ids[$node_id_i-1].' '.$node_ids[$node_id_i]} = 1; # XXX correct direction
 	}
-	if (defined $cat_rueck && $cat_rueck =~ m{^[qQ][34]$}) {
-	    $speed0{$node_ids[$node_id_i].' '.$node_ids[$node_id_i-1]} = 1;
+	if (defined $cat_rueck) {
+	    if ($cat_rueck =~ m{^[qQ][34]$}) {
+		$speed0{$node_ids[$node_id_i].' '.$node_ids[$node_id_i-1]} = 1;
+	    }
 	}
+    }
+
+    my($quality_hin) = $cat_hin =~ m{^Q(\d+)}; # XXX maybe support for +/-?
+    my $quality = $quality_hin;
+    if (defined $cat_rueck) {
+	my($quality_rueck) = $cat_rueck =~ m{^Q(\d+)}; # XXX maybe support for +/-?
+	if (defined $quality_rueck && (!defined $quality_hin || $quality_rueck > $quality_hin)) {
+	    $quality = $quality_rueck;
+	}
+    }
+    if (defined $quality) {
+	push @remember_quality, [\@node_ids, $quality];
     }
 }
 
@@ -650,6 +668,19 @@ sub _xmlify {
     $_[0] =~ s{"}{&#34;}g;
     $_[0] =~ s{<}{&#60;}g;
     $_[0] =~ s{>}{&#62;}g;
+}
+
+sub dump_quality {
+    for my $def (@remember_quality) {
+	my($node_ids, $quality) = @$def;
+	print $wayfh qq{<way id="$next_way_id" visible="true">\n};
+	for my $node_id (@$node_ids) {
+	    print $wayfh qq{  <nd ref="$node_id"/>\n};
+	}
+	print $wayfh qq{  <tag k="bbbike:quality" v="Q$quality" />\n};
+	print $wayfh qq{</way>\n};
+	$next_way_id++;
+    }
 }
 
 __END__
