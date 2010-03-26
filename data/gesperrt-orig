@@ -136,7 +136,7 @@ Giesebrechtstr.	1 3915,10684 4006,10585 4157,10418
 Bethaniendamm	1 12055,11331 12012,11235 11950,11157 11852,11102 11816,11084 11640,11067 11458,11136
 Engeldamm	1 11473,11180 11656,11106 11800,11118 11921,11185 12026,11348
 Pannierstr.	1 12202,8895 12242,8972
-Stolzenfelsstr.	1 19468,8168 19425,8140 19333,8165 19171,8280 18949,8437 18787,8540 18722,8582
+Stolzenfelsstr.	1 19436,8183 19425,8140 19333,8165 19171,8280 18949,8437 18787,8540 18722,8582
 Dönhoffstr.	1 18726,8633 18609,8717 18514,8773 18447,8818 18372,8869 18296,8920 18201,8984 18124,9056
 Bersarinplatz	1 13742,12538 13698,12544 13678,12571 13686,12611 13701,12628 13747,12642 13767,12626 13776,12571 13742,12538
 Petersburger Platz	1 13467,12978 13558,12766
@@ -672,6 +672,7 @@ Hufelandweg	1s:q3 8630,13172 8618,13306 8582,13355
 Sauerbruchweg	1s:q3 8487,13351 8555,13260 8605,13200 8630,13172
 Rahel-Hirsch-Weg	1 8586,13440 8600,13448 8581,13487 8554,13476 8586,13440
 Hempelsteig	1 -787,13147 -525,13034 -472,12961
+Kaulsdorfer Str.	1 22075,6967 22049,7085
 ######################################################################
 #
 # Potsdam
@@ -1098,6 +1099,8 @@ Adlergestell: Mittelstreifen	3nocross 19676,3705 19633,3751 19587,3801
 # Stellen, an denen getragen werden muß:
 # die Zahl hinter dem ":" entspricht ungefähr den verlorenen Sekunden
 # 
+tragen (37 Stufen in 5 Abschnitten)	0:45 30706,3829
+tragen (26 Stufen)	0:30 31596,4379
 tragen (5 Stufen)	0:10 8587,13436
 tragen (16 Stufen)	0:20 7487,5477
 #: note: Luftbild (Stufenanzahl)
@@ -1274,6 +1277,7 @@ tragen (Treppe, ca. 20 Stufen)	0:25 19160,14935
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+enges Drängelgitter	BNP:5::trailer=no 30862,3816
 Schranke, Durchfahrtsbreite nur 80cm	BNP:3::trailer=no -1342,13134
 Schranke, Durchfahrtsbreite nur 60cm	BNP:3::trailer=no -784,16658
 #: note: lichte Breite etwa 120cm, aber ungünstig versetzt
@@ -1414,7 +1418,7 @@ Drängelgitter	BNP:5 3831,8674
 Schranke (Krankenhaus Herzberge)	BNP:1 17247,13519
 Schranke (Krankenhaus Herzberge)	BNP:2 17780,13468
 Drängelgitter (S-Bhf. Grunewald)	BNP:10 731,9103
-Drängelgitter (vor der Straßenbahnhaltestelle)	BNP:5 29092,4761
+Drängelgitter (vor der Straßenbahnhaltestelle)	BNP:5 29103,4765
 Schranke	BNP:5 32192,5915
 Schranke, schwer passierbar	BNP:10 7625,9376
 Schranke	BNP:5 7612,9446
@@ -1474,7 +1478,7 @@ Brücke über A10: Sperrung vom 15.02.2010 bis 01.10.2010	2:inwork 15337,24593 154
 Wegedornbrücke: Vollsperrung, Neubau	2:inwork 20385,593 20442,564 20510,530
 #: next_check: 2011-03-01
 Rathausbrücke: gesperrt bis März 2011 (Neubau)	2:inwork 10362,12351 10422,12395
-#: last_checked: 2010-03-13 vvv
+#: last_checked: 2010-03-26 vvv
 #: next_check: 2010-05-01 vvv
 Vicki-Baum-Str.: noch in Bau, gesperrt	2:inwork 15990,10185 15894,10251
 Vicki-Baum-Str.: noch in Bau, gesperrt	2:inwork 15823,10300 15753,10353 15688,10400
@@ -1482,7 +1486,7 @@ Alice-und-Hella-Hirsch-Ring: noch in Bau, gesperrt	2:inwork 15788,10252 15823,10
 Lina-Morgenstern-Str.: noch in Bau, gesperrt	2:inwork 15716,10303 15753,10353
 #: next_check ^^^
 #: last_checked ^^^
-#: last_checked: 2010-03-14
+#: last_checked: 2010-03-26
 #: next_check: 2010-03-31
 #: note: zumindest auf der östlichen Seite wird ein Radweg entstehen
 Kynaststraße: Abriss und Neubau	2:inwork 14988,11130 14897,10935 14881,10864 14867,10802 14828,10628 14802,10505 14795,10473 14766,10372 14724,10297

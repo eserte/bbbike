@@ -1089,7 +1089,7 @@ check-forever:
 
 # Like check-forever, but build first, then check (all calls the check target)
 all-forever:
-	-nice ${FOREVER_TWO_ERRORS} ${MAKE} all
+	-nice ${FOREVER_TWO_ERRORS} ${MAKE} ${PERSISTENTTMPDIR}/fragezeichen-outdoor-nextcheck.bbd all
 	@-alarm -nicedown
 	@-xterm-conf -deiconify -raise
 	xmessage "all-forever failed"

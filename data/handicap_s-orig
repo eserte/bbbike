@@ -291,7 +291,7 @@ Fritz-Schiff-Weg: Fuﬂg‰nger	q1 13465,12502 13484,12436 13472,12337
 (Molkenmarkt - Parochialstr.): Bordsteine	q2 10738,12364 10831,12371
 (Crellestr. - Julius-Leber-Br¸cke): Fuﬂg‰nger	q2 7535,9087 7555,8978 7509,8929 7497,8916
 (Fischerinsel, Spreekanalufer): Fuﬂg‰nger	q1 10364,11896 10329,11842 10373,11781 10517,11795 10672,11870 10776,11942 10824,11992
-(Baikalstr. - Rummelsburger Str.): Fuﬂg‰nger	q1 17281,10598 17228,10860
+(Baikalstr. - Rummelsburger Str.): Fuﬂg‰nger	q1 17281,10598 17249,10666 17249,10702 17228,10860
 Verl. P¸cklerstr.: Fuﬂg‰nger, Hundeauslaufgebiet	q1 1558,6729 1364,6691 1170,6654 967,6620 905,6631 880,6645 832,6607 778,6603 698,6567 546,6583 369,6594 306,6582 218,6571
 Weimarer Str.: Fuﬂg‰nger	q1 4092,11338 4077,11226
 Norwegerstr. - Behmstr.: Rampe	q2 10022,16237 10026,16165 10055,16104 10045,16157
@@ -637,6 +637,7 @@ Saatwinkler Steg, Rohrbruchwiesen: einige Fuﬂg‰nger	q1+ -993,16682 -992,16688 -9
 Maselakepark: Fuﬂg‰nger	q1 -2391,16607 -2418,16609 -2445,16610 -2504,16558 -2510,16357
 Maselakepark: Fuﬂg‰nger	q1 -2587,16600 -2632,16347
 Nordhafen: Fuﬂg‰nger	q1 -2477,16351 -2510,16357 -2632,16347 -2779,16330 -2972,16399 -2972,16420
+(Gr¸nheider Weg - Fredersdorfer Weg): starker Anstieg, nicht f¸r Fahrr‰der geeignet	q4 30867,3806 30862,3816 30849,3843 30823,3866
 ######################### User Contributions #################################
 #: by: Michael Kiekbusch
 #: corrected_by: srt/policy (q4 -> q3-)
@@ -1208,7 +1209,8 @@ Glauberstr.: viele parkende Autos, daher eng	q1 5556,984 5455,1150 5421,1205 541
 #: by: Florian (berlin):
 (Darbystr. - Falkenseer Chaussee): schmal, aber auch mit H‰nger passierbar	q1 -5505,15859 -5526,15757
 #: by: Pythagoras:
-Mittelheide: enge Straﬂe	q1 22724,6608 22858,6535 23033,6511 23135,6500 23220,6520 23299,6541 23375,6579 23482,6649 23593,6663
+#: corrected_by: srt (q1 -> q0-)
+Mittelheide: enge Straﬂe	q0- 22724,6608 22858,6535 23033,6511 23135,6500 23220,6520 23299,6541 23375,6579 23482,6649 23593,6663
 #: by: Steffen Ryll:
 Platanenstr.: teilweise recht eng	q1 9355,19789 9489,19826 9840,19923 10137,19993
 #: by: Michael Dinter: vvv

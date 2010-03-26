@@ -1221,7 +1221,7 @@ EOF
        text  => 'Volksradstr. (Friedrichsfelde) in beiden Richtungen Baustelle, Straße vollständig gesperrt (bis 23.05.2005)',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 17475,10442 17511,10577 17565,10782 17621,10994
+userdel	q4 17475,10442 17511,10577 17527,10640 17569,10801 17621,10994
 userdel	q4 17475,10442 17427,10259
 EOF
      },
@@ -4601,7 +4601,7 @@ EOF
        text  => 'L 338 Rahnsdorfer Str. OD Schöneiche, Brücke über Jägergraben Brückenneubau Vollsperrung 07.06.2006-30.11.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 30221,7373 30118,8128
+userdel	2::inwork 30274,7380 30118,8128
 EOF
      },
      { from  => 1150581600, # 2006-06-18 00:00
@@ -6631,7 +6631,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_004066',
        data  => <<EOF,
-userdel	2::inwork 25585,6050 25776,6054 25967,6125 26139,6188 26247,6228 28794,7219 29168,7350
+userdel	2::inwork 25585,6050 25776,6054 25967,6125 26139,6188 26247,6228 28586,7139 29168,7350 29192,7368
 EOF
      },
      { from  => 1163286000, # 2006-11-12 00:00
@@ -9028,7 +9028,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006066',
        data  => <<EOF,
-userdel	2::inwork 30090,5436 30041,5329
+userdel	2::inwork 30090,5436 30074,5402 30041,5329
 EOF
      },
      { from  => 1184450400, # 2007-07-15 00:00

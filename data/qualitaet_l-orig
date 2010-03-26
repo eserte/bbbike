@@ -1563,7 +1563,7 @@ Petershagen: kleinteiliges Kopfsteinpflaster, OK	Q1 74683,385 74246,584 73775,83
 #: add_fragezeichen: wie ist die Qualität ab Berliner Str. Richtung Süden: genauso schlecht?
 Rüdersdorfer Str. (Schöneiche): schlechtes bis mäßiges Kopfsteinpflaster	Q3 31512,7971 31446,7915
 #: add_fragezeichen: wie ist die Qualität ab Berliner Str. Richtung Süden?
-Brandenburgische Str.: Betonstraße	Q0 30496,7915 30587,8490
+Brandenburgische Str.: Betonstraße	Q0 30512,7909 30587,8490
 Gothenstr. (Bansin): Asphalt mit kurzen Kopfsteinpflasterschwellen	Q0- 56493,173943 56793,173800
 Gothenstr. (Bansin): Feldweg	Q2 56793,173800 56846,173731 57159,173640 57315,173465 57343,173415
 Am Kanal (Bansin): Feldweg	Q2 57315,173465 57375,173475 57534,173650
@@ -2147,6 +2147,20 @@ Bergerstr. (Eberswalde): Asphalt	Q0 37731,48228 37525,48270 37418,48290 37128,48
 (Glumestr. - Marmorpalais): Asphalt	Q1 -12276,554 -12115,409
 #: by: http://www.nationaler-radverkehrsplan.de/neuigkeiten/news.php?id=2669
 Kopfsteinpflaster mit asphaltierten Randstreifen	Q0 29436,69960 29092,69954 28795,69970 28214,70120 27727,70536
+Mühlenstr.: Asphalt	Q0 25507,7428 25770,7325
+Waldstr.: schlechtes Kopfsteinpflaster, Ausweichen auf Gehweg möglich	Q3+ 29192,7368 29261,7346 29324,7326 29457,7137 29675,7021
+Waldstr.: Radweg mit Verbundsteinpflaster, Fahrbahn schlechtes Kopfsteinpflaster	Q1+; 29675,7021 29812,6996 29938,6993 30180,6942 30324,6911
+Waldstr.: schlechtes Kopfsteinpflaster, Ausweichen auf Gehweg möglich	Q3+; 30324,6911 30180,6942 29938,6993 29812,6996 29675,7021
+Käthe-Kollwitz-Str.: schlechtes Kopfsteinpflaster, Ausweichen auf Gehweg möglich	Q3+ 30602,6366 30864,6379
+Rahnsdorfer Str.: Kleinsteinpflaster	Q1- 30309,6841 30324,6911 30356,7039
+Karl-Marx-Str. (Schöneiche): unbefestigter Weg	Q2- 30381,6711 30431,6717
+Karl-Marx-Str. (Schöneiche): Asphalt	Q0 30431,6717 30557,6731
+Karl-Marx-Str. (Schöneiche): Kopfsteinpflaster	Q2 30557,6731 30802,6760
+Brandenburgische Str.: Verbundsteinpflasterradwege, Kleinpflaster auf Fahrbahn	Q1+ 30495,7350 30557,6731
+Brandenburgische Str.: Verbundsteinpflasterradwege, betonierte Fahrbahn	Q1+ 30557,6731 30602,6366
+Brandenburgische Str.: Verbundsteinpflasterradwege, gepflasterte Fahrbahn	Q1+ 30602,6366 30648,5979
+Hamburger Str.: Asphalt	Q0 30871,6356 31007,6343 31080,6454 31416,6774
+(Schöneiche - Woltersdorf): Waldweg	Q2+ 31007,6343 31016,6269 31030,6168 31027,6076
 ######################### User Contributions #################################
 #: by: Aaron Schaar: vvv
 Hermannswerder: guter Asphalt	Q0 -13718,-2991 -14301,-2871 -14577,-3068 -14740,-3262
@@ -3195,8 +3209,9 @@ Hubertushöhe - Storkow	Q0 49223,-18292 49090,-18279 48968,-18131 48887,-18098 48
 #: by: Thomas Stockheim: vvv
 Am Vogelherd (Waldesruh, Dahlwitz-Hoppegarten): loser Sandweg	Q3 25228,7462 25179,7853 25175,7953
 Heinrich-Heine-Promenade (Waldesruh): glatt asphaltiert	Q0 25175,7953 25115,8033 25047,8086 24953,8152 24885,8208 24852,8235 24797,8246 24767,8251
-Mühlenstr.: Kopfsteinpflaster	Q2 25437,7460 25397,7452
-Mühlenstr.: schlechter Asphalt	Q2 25397,7452 25275,7461
+Mühlenstr.: Kopfsteinpflaster	Q2 25507,7428 25437,7460 25417,7457
+#: corrected_by: srt (Q2 -> Q1-)
+Mühlenstr.: schlechter Asphalt	Q1- 25417,7457 25269,7432
 #: by: ^^^
 #: by: Axel Dörrie:
 Stadtheide: guter Asphalt	Q0 -15432,-2763 -15504,-2984 -15537,-3091 -15501,-3122
