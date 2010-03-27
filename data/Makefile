@@ -173,10 +173,14 @@ persistent-tmp:	${PERSISTENTTMPDIR}/.check_fragezeichen-outdoor-nextcheck.bbd \
 persistent-tmp:	${PERSISTENTTMPDIR}/XXX-$(i).bbd
 .endfor
 
-# even slower (about four minutes)
+# more checks, but even slower (about four minutes)
 really-slow-checks:	check-crossings-important \
-			check-nearest \
-			check-crossings-less-important
+			check-nearest
+
+# this adds also "check-crossings-less-important", but the results of
+# these checks there were never looked at, so really not important...
+unimportant-slow-checks:	really-slow-checks \
+				check-crossings-less-important
 
 ######################################################################
 # DATA FILE TARGETS
