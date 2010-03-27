@@ -632,6 +632,8 @@ Maienwerderweg: teils Waldweg (OK), teils mäßiger Asphalt	Q1 2239,18225 1549,177
 #: by: Thomas Heuving
 #: note: laut ADFC-Karte mäßig befahrbar
 (Uferweg): gut befahrbarer Waldweg	Q1 -431,17169 -384,17155 -280,17229 -266,17335 -215,17385 -141,17377 61,17495 110,17489 151,17537 187,17663 235,17704 260,17788 258,17880 381,18186 416,18386 448,18476 496,18514 586,18540 680,18631 757,18673 768,18742 970,18919 1006,18972 1122,19036 1189,19018 1200,18969 1369,18958 1457,18969 1490,18950
+#: XXX Asphaltierung steht laut Tsp vom 2003-10-26 an
+#: next_check: 2010-06-01
 Sembritzkistr.: mäßiges Kopfsteinpflaster	Q2 6854,4931 6856,4963 6923,5057 6949,5096 7018,5201 7095,5317 7157,5418 7186,5453 7203,5488 7252,5583 7230,5696
 #: by: Benjamin Hersch:
 Sembritzkistr.: Asphalt	Q0 6860,4799 6854,4931
@@ -681,7 +683,7 @@ Wuhlewanderweg: guter Asphalt	Q0 22025,6612 22097,6414 22146,6338 22214,6271 222
 Wuhlewanderweg: guter Verbundsteinbelag	Q0 22240,6118 22135,5882 22079,5873
 Wuhlewanderweg: Verbundsteine, teilweise etwas uneben	Q1 22079,5873 21846,5856 21744,5804 21608,5690
 Hämmerlingstr.: mäßiger Asphalt	Q1 22084,5774 22090,5673 22095,5585
-Dorfstr.: schlechtes Kopfsteinpflaster, teilweise gut befahrbare Banketten	Q2 30357,3555 30319,3511 30281,3479 30201,3375 30188,3301 29902,3104 29954,3037
+Dorfstr.: schlechtes Kopfsteinpflaster, teilweise gut befahrbare Banketten	Q2 30357,3555 30319,3511 30281,3479 30201,3375 30188,3301 29902,3104 29959,3031
 Dorfstr. (Rahnsdorf): unbefestigter Weg	Q2 30319,3511 30293,3520 30267,3520 30240,3503
 Dorfstr. (Rahnsdorf): Asphalt	Q0 30240,3503 30224,3483 30201,3375
 Mühlenweg: Kopfsteinpflaster	Q2 30345,3661 30360,3605 30357,3555
@@ -709,7 +711,7 @@ Schwarzer Weg (Oberschöneweide): unbefestiger Weg, teilweise recht schmal	Q2 172
 Möllhausenufer: Kopfsteinpflaster	Q2 23305,1147 23408,1170 23520,1194 23608,1210
 Möllhausenufer: asphaltiert	Q0 23608,1210 23747,1243
 Am Langen See: Waldweg, meist OK, teilweise Wurzeln und grober Kies	Q1- 23747,1243 23869,1282 23889,1338 24068,1279 24307,1135 24400,1005 24653,928 24829,827 24949,806 25333,834 25543,879 25744,839 25853,778 25922,645 25969,593 26041,443 26016,259 26089,176 26124,111 26246,73 26274,-33 26407,-160 26479,-119 26576,-278 26628,-313 26687,-316 26751,-460 26944,-639 26952,-744 27141,-785 27329,-1183 27365,-1357 27357,-1545
-Zur Fähre: Waldweg	Q2 28973,3296 29061,3358 29084,3331
+Zur Fähre: Waldweg	Q2 28958,3273 29061,3358 29084,3331
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20060629.1530.43277.html)
 #: by: http://www.radzeit.de/gallery2/v/Radfahren+in+der+Stadt/Treptow-Koepenick/R_1_Mueggelsee_003.JPG.html
 Radweg am Müggelsee: asphaltiert	Q0 28829,3295 28723,3283 28695,3245 28485,3206 27984,2995 27732,2671 27528,2469 27314,2282 27218,2300 26802,2374 26460,2428 26026,2532 25948,2474
@@ -8364,6 +8366,8 @@ Müngersdorfer Str.: teils guter, teils mäßiger Asphalt	Q1 20430,-17 20479,-196 2
 #: note "Gehweg ist aus Zuckersand"
 Keltensteig: schlechtes Kopfsteinpflaster	Q3 20302,1613 20369,1476
 #: by: Dieter Sobkowski: vvv
+#: note: "enge Straße", aber ohne weitere Angabe
+Schillerhof: guter Asphalt	Q0 6928,17154 7069,17204
 #: note: "einige Fußgänger" ignoriert
 Fährallee: guter Asphalt	Q0 27190,-6165 27058,-6150 26863,-6318 26710,-6404
 Jackyallee: guter Asphalt	Q0 27058,-6150 27036,-6064
@@ -9906,6 +9910,9 @@ Falckensteinstr. (Lichtenrade): schlechte Fahrbahnqualität (Feldstein-Belag)	Q3 
 Paplitzer Str.: schlechte Fahrbahnqualität (Feldstein-Belag)	Q3 10735,-3142 10767,-3064 10783,-3033 10831,-2919 10884,-2795 10900,-2756 10927,-2687 10949,-2635
 Paplitzer Str.: asphaltiert	Q0 10949,-2635 10989,-2543 11021,-2464 11027,-2448
 #: by: ^^^
+#: by: Thomas Stolle
+#: note: 30er-Zone
+Haeftenzeile: guter Asphalt	Q0 2134,14440 2142,14573
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206

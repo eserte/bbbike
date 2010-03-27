@@ -1615,6 +1615,35 @@ userdel	q3::inwork; 9456,11513 9444,11616
          'data' => 'userdel	2::inwork -44683,45909 -46141,45772
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => '96400995',
+         'until' => 1272664800,
+         'text' => 'Petershagen/Eggersdorf: Straßenausbau OD Petershagen zw. Bahngleise und Clara-Zetkin-Str. 22.03.2010 bis 30.04.2010 ',
+         'from' => 1269727554,
+         'id' => 2030,
+         'data' => 'userdel	q4::inwork 36666,14172 36677,14087 36654,13977 35900,13643 35427,13624
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1275688800,
+         'text' => 'Kanal- und Leitungsbauarbeiten Neuruppin, OT Karwe, Vollsperrung 25.03.2010 bis 04.06.2010 ',
+         'from' => 1269727743,
+         'id' => 2031,
+         'data' => 'userdel	q4::inwork -27035,49829 -27196,50015 -27421,50349
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'LSO-SG33-F10029',
+         'until' => 1271541600,
+         'text' => 'Deckenerneuerung B 246, Wendisch Rietz - Storkow 25.03.2010 bis 17.04.2010 ',
+         'from' => 1269728021,
+         'id' => 2032,
+         'data' => 'userdel	2::inwork 50359,-20087 49368,-19096
+',
+         'type' => 'gesperrt'
        }
      
 );
