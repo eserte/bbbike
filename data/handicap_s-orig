@@ -291,7 +291,8 @@ Fritz-Schiff-Weg: Fußgänger	q1 13465,12502 13484,12436 13472,12337
 (Molkenmarkt - Parochialstr.): Bordsteine	q2 10738,12364 10831,12371
 (Crellestr. - Julius-Leber-Brücke): Fußgänger	q2 7535,9087 7555,8978 7509,8929 7497,8916
 (Fischerinsel, Spreekanalufer): Fußgänger	q1 10364,11896 10329,11842 10373,11781 10517,11795 10672,11870 10776,11942 10824,11992
-(Baikalstr. - Rummelsburger Str.): Fußgänger	q1 17281,10598 17249,10666 17249,10702 17228,10860
+(Baikalstr. - Rummelsburger Str.): Fußgänger	q1 17281,10598 17249,10666
+(Baikalstr. - Rummelsburger Str.): Fußgänger	q1 17249,10702 17228,10860
 Verl. Pücklerstr.: Fußgänger, Hundeauslaufgebiet	q1 1558,6729 1364,6691 1170,6654 967,6620 905,6631 880,6645 832,6607 778,6603 698,6567 546,6583 369,6594 306,6582 218,6571
 Weimarer Str.: Fußgänger	q1 4092,11338 4077,11226
 Norwegerstr. - Behmstr.: Rampe	q2 10022,16237 10026,16165 10055,16104 10045,16157
@@ -638,6 +639,8 @@ Maselakepark: Fußgänger	q1 -2391,16607 -2418,16609 -2445,16610 -2504,16558 -2510
 Maselakepark: Fußgänger	q1 -2587,16600 -2632,16347
 Nordhafen: Fußgänger	q1 -2477,16351 -2510,16357 -2632,16347 -2779,16330 -2972,16399 -2972,16420
 (Grünheider Weg - Fredersdorfer Weg): starker Anstieg, nicht für Fahrräder geeignet	q4 30867,3806 30862,3816 30849,3843 30823,3866
+Seidenbienenweg: sehr eng	q4 31914,2767 31909,2802 31884,2841
+(entlang des Tränkegrabens): Fußgänger, Radfahren erlaubt	q2+ 16900,9861 17011,9950 17137,10098 17149,10160 17137,10238 17160,10376 17249,10666 17249,10702 17310,10714 17415,10694 17527,10640 17625,10615 17705,10621 17847,10629 17897,10607 17999,10584 18059,10556 18150,10543
 ######################### User Contributions #################################
 #: by: Michael Kiekbusch
 #: corrected_by: srt/policy (q4 -> q3-)
@@ -1583,7 +1586,7 @@ Spachtelweg: enge Straße	q1 5900,20487 5970,20353
 #: note: Fußgänger (kein Fußweg)
 Leuenberger Zeile: eng	q1 2852,19546 2789,19600 2684,19765
 #: by: Jessica (gluecksmarie):
-(Hoernlestr. - Gehsener Str.): Fußgänger, zwei Rampen an Fußgängertreppe	q3 22351,6756 22391,6815
+(Hoernlestr. - Gehsener Str.): Fußgänger, zwei Rampen an Fußgängertreppe	q3 22351,6756 22395,6821
 #: by: Hartmut Schröder
 #: corrected_by: srt/policy (q3 -> q2)
 Waldstr.: Bodenschwellen vor der Schule	q2 20540,4285 20623,4227
