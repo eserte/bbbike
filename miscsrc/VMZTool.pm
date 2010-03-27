@@ -224,6 +224,7 @@ EOF
 			       |Fahrbahn\s(teilweise\s)?je\sRichtung\sauf\s$de_num_rx\sFahrstreifen\sverengt
 			       |Fahrbahn\svon\s$de_num_rx\sauf\s$de_num_rx\sFahrstreifen\sreduziert
 			       |Fahrbahn\svon\s$de_num_rx\sFahrstreifen\sreduziert
+			       |$de_num_rx\sFahrstreifen\sje\sRichtung\sgesperrt
 			       |($de_num_rx|linker|rechter|mittlerer)\sFahrstreifen\sgesperrt
 			       |veränderte\sVerkehrsführung\sim\sBaustellenbereich
 			       |Fahrstreifenverschwenkung\sund\sFahrbahnverengung
