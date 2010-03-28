@@ -4,7 +4,7 @@
 # $Id: BBBikeProfil.pm,v 1.17 2006/08/24 20:17:05 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999,2002,2006 Slaven Rezic. All rights reserved.
+# Copyright (C) 1999,2002,2006,2010 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -20,6 +20,7 @@
 
 package BBBikeProfil;
 use BBBikeUtil;
+use Strassen::Util;
 use strict;
 use vars qw();
 
@@ -110,7 +111,7 @@ sub Redraw {
     for(my $i=0; $i<$#coords; $i++) {
 	my($x1,$y1, $x2,$y2) = (@{ $coords[$i] },
 				@{ $coords[$i+1] });
-	my $dist = CORE::sqrt(sqr($x2-$x1)+sqr($x2-$x1));
+	my $dist = Strassen::Util::strecke([$x1,$y1],[$x2,$y2]);
 	push @dist, $dist[$#dist] + $dist;
     }
 
@@ -198,7 +199,7 @@ sub Redraw {
     }
 
     if ($hoehen_meter) {
-	$label->configure(-text => M("Höhenmeter") . ": $hoehen_meter m");
+	$label->configure(-text => M("Höhenmeter") . sprintf(": %.1fm", $hoehen_meter));
     } else {
 	$label->configure(-text => "");
     }
