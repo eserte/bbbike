@@ -463,9 +463,6 @@ Weißdornweg (Potsdam): guter Asphalt, Q0	? -17503,27 -17445,49 -17404,45 -17398,
 Weißdornweg (Potsdam): guter Asphalt, Q0	? -17514,45 -17497,80 -17462,89 -17441,73 -17398,61
 Weißdornweg (Potsdam): guter Asphalt, Q0	? -17497,80 -17547,167 -17565,207
 #: by: ^^^
-#: by: anonymous (2x):
-#: by: Michael Walter:
-Druckerkehre: guter Beton, Q1 (note: q3 wegen "kurzer Straße/Sackgasse" ignoriert, zweiter Anonymous hat nur q1 verwendet, Michael: einige Fußgänger, q0)	? 16657,1124 16669,1166 16698,1198
 #: by: Sarah (sweetblngirl):
 Karlstr. (Rehfelde): mäßiger loser Sandweg, Q2	? 43666,15719 43602,16024
 #: by: Axel Giesow:
@@ -1361,8 +1358,6 @@ Britzer Park - Weg entlang der U-Bahn-Betriebswerkstatt: Qualität (laut ADFC-Kar
 Johannisthaler Chaussee - Lipschitzallee: Qualität (laut ADFC-Karte gut geeignet)? Teile des Weges heißen "Martin-Luther-King-Weg", welche genau?	? 13931,2579 13988,2614 14087,2494 14224,2368 14324,2298 14511,2205
 Wublitzbrücke - Töplitz: Qualität (wahrscheinlich Feld- oder Waldweg)?	? -21681,702 -22045,765 -22525,1230 -22911,1634 -23105,2016 -23207,2284
 Nattwerder - Golm: Qualität (wahrscheinlich Feldweg)?	? -21043,1586 -20807,1383 -20955,978 -21221,764
-Lüderitzstr.: Qualität der Straße zwischen Transvaalstr. und Kameruner Str.?	? 6215,16340 6349,16213 6503,16068
-#XXX del: wegen BBI: Kienberg: Qualität? Straßenname?	? 19900,-2656 19827,-2688 19698,-2836 19418,-3703 19035,-3877
 Kirchstr. - An der Dorfkirche: Qualität (laut ADFC-Karte gut geeignet)?	? 8263,1061 8216,1028 8162,907 8173,839
 An der Dorfkirche: Qualität (laut ADFC-Karte gut geeignet)?	? 8173,839 8114,722
 B198 - Althüttendorf: Qualität?	? 37199,61240 36968,61684 36889,61715 36864,62166 36791,62367 36748,62422
@@ -1717,7 +1712,6 @@ Sattlerstr.: Qualität?	? 16056,2034 16177,1943 16290,1678
 Gürtlerweg: Qualität?	? 16002,1964 16106,1886
 Seilerweg: Qualität?	? 16447,1483 16489,1453 16547,1439
 Seilerweg - Neuköllner Str.: Durchfahrt für Radfahrer möglich? Qualität? Nachts beleuchtet?	? 16547,1439 16605,1424 16643,1460
-Bäckerstr.: Qualität?	? 16726,1074 16700,1104 16657,1124
 Bäckerstr. - Buchbinderweg: Durchfahrt für Radfahrer möglich? Qualität? Nachts beleuchtet?	? 16657,1124 16567,1142 16485,1162
 Straße 482: Qualität?	? 11120,1384 11146,1413 11155,1456
 Straße 96 (Buckow): Qualität?	? 11190,1622 11170,1517
@@ -1829,7 +1823,6 @@ Eitelsdorfer Str.: Qualität?	? 22869,7095 22810,7120 22690,7146 22501,7192 22272
 Pflanzgartenplatz: Qualität?	? 22656,7412 22685,7480
 Dammheidestr.: Qualität?	? 22880,7351 22745,7388 22656,7412 22554,7437
 Straße 3a: Qualität?	? 16689,3056 16740,3131 16793,3176
-Paplitzer Str.: Ist der Abschnitt zwischen Goltzstr. und Kirchbachstr. als Einbahnstraße ausgewiesen, und falls ja, gilt die Einbahnstraßenregelung auch für Radfahrer?	? 11027,-2448 11080,-2035
 Deutschtaler Str.: Qualität?	? 17344,1060 17492,843 17640,626 17811,374 17854,314 17946,179 18011,83 18077,-13 18230,-233
 Großziethen: wie weit in Richtung Süden gehen die Radwege?	? 13124,216 13165,-34 13176,-161 13225,-681 13230,-712 13309,-1268
 #: XXX etwas widersprüchlich: Snoopsoul schreibt "schlechtes Kopfsteinpflaster", die ADFC-Karte vergibt für den nördlichen Abschnitt "gut befahrbar", außerdem werden Teilstücke vom Bus befahren
@@ -2485,12 +2478,13 @@ Nespersteig: Qualität?	? 9340,-829 9379,-935
 Norstedter Weg: Qualität?	? 9732,379 9777,364 9812,348 9838,327
 Passauer Str. (Lichtenrade): Qualität?	? 11842,-2230 11882,-2326
 #: XXX fehlt in Berlin.coords.data
+#: XXX wahrscheinlich schlechter Feldstein-Belag
 Seydlitzplatz: Qualität?	? 10900,-2756 10958,-2760
+#: XXX wahrscheinlich schlechter Feldstein-Belag
 Scharnhorststr. (Lichtenrade): Qualität?	? 10958,-2760 11112,-2728
 Scheerbartweg: Qualität?	? 9616,-186 9719,-187
 Schwalbachstr.: Qualität?	? 11376,32 11399,15 11427,-87 11465,-210
 Sodenstr.: Qualität?	? 11858,-1189 11853,-1134 11794,-935 11790,-894
-Steinmetzstr. (Lichtenrade): Qualität?	? 10573,-2891 10679,-2842 10770,-2796 10828,-2774 10884,-2795
 Tutzinger Str.: Qualität?	? 12203,-2259 12019,-2683
 Warnitzer Str. (Lichtenrade): Qualität?	? 10510,-235 10584,-432
 Baderseestr.: Qualität?	? 22493,1325 22575,1157
@@ -3726,7 +3720,6 @@ Annweilerweg: Qualität?	? 28545,1373 28445,1460 28327,1525
 #: XXX_indoor: fehlt bei osm
 Siefersheimer Str.: Qualität?	? 28672,1172 28596,1233
 Landhausring: Qualität?	? 21710,12798 21866,12763 21893,12783 21900,12820 21880,12858 21729,12894
-S-Bahnhofunterführung Friedenau: existieren hier Treppen, die zwischen Dürerplatz und Bahnhofstr. überwunden werden müssen?	? 6243,7033 6151,7078
 #: XXX laut osm surface=cobblestone
 Lorcher Str.: Qualität zwischen Binger Str. und Rüdesheimer Str.?	? 4271,6990 4160,7043 4059,7038
 Lötschbergstr.: Qualität? Ist der nördliche Abschnitt eine Einbahnstraße? Wenn ja, nur für Autos oder auch für Radfahrer?	? 20114,11233 20135,11269 20140,11343 20150,11512 20161,11715
@@ -4312,9 +4305,9 @@ Stephaniweg: Qualität?	? 4855,1616 4836,1659 4779,1699
 Kirchmeisterweg: Qualität?	? 4980,1870 4958,1844 5007,1718 5035,1723
 Heinrichstr. (Lichterfelde): Qualität?	? 4433,1800 4542,1729 4605,1633
 Hortensienplatz: Qualität? Offen für Autos? Gibt es irgendwo eine Treppe?	? 4156,4784 4116,4850
+#: XXX Reaumurstr oder Réaumurstr?
 Reaumurstr.: Qualität?	? 4948,562 4748,453 4505,465 4279,459
 (Reaumurstr. - Fürstenstr.): Können Radfahrer am S-Bhf. Lichterfelde Süd von Reaumurstr. zur Fürstenstr. fahren?	? 4279,459 4218,439 4158,461 4136,505
-Landweg: Qualität?	? 5061,409 4759,436 4748,453
 #: XXX_indoor: bei osm ohne Straßennamen
 Waadter Zeile: Qualität? Für Autos gesperrt? Existiert eine Verbindung zur Goerzallee?	? 3726,2209 3729,2126
 Straße 40 (Lichtenrade): Qualität?	? 11015,-1357 11003,-1303
@@ -4820,7 +4813,6 @@ Grenzgrabenstr.: Qualität?	? 18422,15590 18429,15165
 Hohengraper Weg: Qualität?	? 16684,16457 16718,16545 16808,16710 16804,16729
 Gerzlower Str.: Qualität?	? 16801,16501 16718,16545 16623,16554
 Tamseler Str.: Qualität?	? 16555,16658 16639,16671 16804,16729 17007,16764
-Rackwitzer Str.: Qualität?	? 16617,16796 16772,16852 16981,16900
 Privatstr. 1: Qualität?	? 16887,17349 17089,17369 17167,17331
 Privatstr. 2: Qualität?	? 16902,17278 17026,17292 17161,17289 17300,17265 17403,17235
 Privatstr. 3: Qualität?	? 16918,17204 17027,17219 17153,17216 17375,17165
@@ -4882,8 +4874,6 @@ Osningweg: Qualität?	? -5077,16162 -5102,16086
 Schulzenstr.: Qualität?	? -5012,14573 -4977,14761 -4947,14873
 Augusta-Ufer: Qualität? Wie ist die richtige Schreibweise? Nachts beleuchtet?	? -3479,14387 -3440,14498 -3331,14628 -3255,14685
 Petzoldtweg: Qualität?	? -4378,14388 -4371,14464 -4341,14580
-#: XXX_indoor bei osm ohne Namen
-Lutherstr. (Niederschönhausen): Qualität?	? 9159,19818 9333,19853
 #: XXX_indoor bei osm ohne Namen
 Dehmelstr.: Qualität?	? 8962,19798 9048,19816 9159,19818
 #: XXX_indoor bei osm ohne Namen
