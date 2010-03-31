@@ -371,7 +371,7 @@ Rückerstr.: mäßiger Asphalt	Q1 10597,13647 10535,13509
 #: by: Andreas Mühlhausen (neu gemacht):
 Knaackstr.: Asphalt	Q0 11229,14422 11316,14360 11358,14331 11418,14290 11506,14230
 Immanuelkirchstr.: Kopfsteinpflaster	Q2 11506,14230 11727,14111 11946,13993
-Bersarinplatz: Kopfsteinpflaster auf der Fahrbahn, Radwege OK	Q1- 13701,12628 13686,12611 13678,12571 13698,12544 13742,12538 13776,12571 13767,12626 13747,12642 13701,12628
+Bersarinplatz: Kopfsteinpflaster auf der Fahrbahn, Radwege OK	Q1- 13695,12643 13686,12611 13678,12571 13698,12544 13742,12538 13761,12578 13767,12626 13747,12642 13695,12643
 Petersburger Platz: Kopfsteinpflaster	Q2 13558,12766 13467,12978
 Pettenkoferstr Str.: Kopfsteinpflaster	Q2 15117,12106 15098,12213
 Pettenkoferstr Str.: Asphalt, einige gepflasterte Bodenschwellen	Q0- 15098,12213 15054,12323 15042,12353 15009,12441 14999,12462 14935,12596 14842,12826
@@ -3298,6 +3298,7 @@ Rietzestr.: Asphalt	Q0 12693,15225 12472,15356
 ######################################################################
 #: by: anonymous vvv
 # 
+Am Kurzen Weg: Asphalt	Q0 -7185,14574 -7172,14459 -7180,14351
 #: note: http://www.berlin.de/ba-spandau/presse/archiv/20080807.0735.106603.html
 Am Maselakepark: sehr gute Qualität	Q0 -2955,16418 -2939,16495 -2661,16446 -2595,16808
 #: note: http://www.berlin.de/ba-spandau/presse/archiv/20080807.0735.106603.html
@@ -9936,6 +9937,9 @@ Lüderitzstr.: schlechter Beton, zahlreiche Schlaglöcher	Q2 6349,16213 6503,16068
 #: by: Uwe Borgenhagen:
 #: note: gemeinsamer Rad+Fußweg
 (Mauerweg - Matthäusweg): Asphalt	Q0 14876,1686 14962,1667
+#: by: Sebastian Bralant:
+# q1, enge Straße, RW6, aber Qualität fehlte
+Nidwaldener Zeile: Verbundsteinpflaster	Q1+ 3581,2211 3581,2105
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206

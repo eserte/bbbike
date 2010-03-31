@@ -1098,8 +1098,9 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
          'type' => 'gesperrt'
        },
        {
-         'until' => 1270072800,
-         'text' => 'L 621 Döllinger Straße OL Hohenleipisch, zw. Goethestr. u. Abzw. L62 Berliner Str. Straßen- und Kanalarbeiten Vollsperrung 24.08.2009-31.03.2010 ',
+         'source_id' => 'LS/S-SG33-C/09/208',
+         'until' => 1275343200,
+         'text' => 'L 621 Döllinger Straße OL Hohenleipisch, zw. Goethestr. u. Abzw. L62 Berliner Str. Straßen- und Kanalarbeiten Vollsperrung 24.08.2009-31.05.2010',
          'from' => 1250978400,
          'id' => 1848,
          'data' => 'userdel	q4::inwork 23464,-101227 23305,-100904 23220,-100874
@@ -1587,9 +1588,9 @@ userdel	q3::inwork; 9456,11513 9444,11616
          'type' => 'handicap'
        },
        {
-         'source_id' => 'LSO-SG33-E09214',
-         'until' => 1270072800,
-         'text' => 'Schenkenberg: Grundhafter Straßenbau L 26 Prenzlau - A 20 23.12.09 - 31.03.10 ',
+         'source_id' => 'LS/O-SG33-E/09/214',
+         'until' => 1275084000,
+         'text' => 'Schenkenberg: Grundhafter Straßenbau L 26 Prenzlau - A 20 23.12.09 - 28.05.10',
          'from' => 1261436400,
          'id' => 2027,
          'data' => 'userdel	2::inwork 42804,104235 44487,104325
@@ -1618,9 +1619,9 @@ userdel	q3::inwork; 9456,11513 9444,11616
        },
        {
          'source_id' => '96400995',
-         'until' => 1272664800,
-         'text' => 'Petershagen/Eggersdorf: Straßenausbau OD Petershagen zw. Bahngleise und Clara-Zetkin-Str. 22.03.2010 bis 30.04.2010 ',
-         'from' => 1269727554,
+         'until' => 1277935200,
+         'text' => 'Petershagen/Eggersdorf: Straßenausbau OD Petershagen zw. Bahngleise und Clara-Zetkin-Str. 22.03.2010 bis 30.06.2010 ',
+         'from' => 1270015036,
          'id' => 2030,
          'data' => 'userdel	q4::inwork 36666,14172 36677,14087 36654,13977 35900,13643 35427,13624
 ',
@@ -1642,6 +1643,26 @@ userdel	q3::inwork; 9456,11513 9444,11616
          'from' => 1269728021,
          'id' => 2032,
          'data' => 'userdel	2::inwork 50359,-20087 49368,-19096
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_015434',
+         'until' => 1291734000,
+         'text' => 'Erkstr. (Neukölln): Baustelle, Fahrtrichtung gesperrt (bis Mitte 12.2010) Richtung Sonnenallee, 29.03.2010 12:41 Uhr bis 07.12.2010 16:00 Uhr',
+         'from' => 1269772860,
+         'id' => 2033,
+         'data' => 'userdel	q4::inwork; 12598,8390 12771,8439
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'LSO-SG33-F10034',
+         'until' => 1272060000,
+         'text' => 'Prötzel: Durchlassbau und Straßenbauarbeiten Prötzel -> Harnekop Sternbeck, 29.03.2010 bis 23.04.2010 ',
+         'from' => 1270015833,
+         'id' => 2034,
+         'data' => 'userdel	2::inwork 49820,27138 49875,28845
 ',
          'type' => 'gesperrt'
        }
