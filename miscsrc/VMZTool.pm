@@ -229,6 +229,7 @@ EOF
 			       |veränderte\sVerkehrsführung\sim\sBaustellenbereich
 			       |Fahrstreifenverschwenkung\sund\sFahrbahnverengung
 			       |Fahrstreifenverschwenkung
+			       |Fahrbahnverengung\swegen\s\S+
 			       |Behinderungen\sdurch\sParkplatzsuchverkehr
 			       |bitte\sumfahren\sSie\sden\sBereich\sweiträumig
 			       |Gefahr\sdurch\sstockenden\sVerkehr
