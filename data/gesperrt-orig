@@ -678,6 +678,8 @@ Kaulsdorfer Str.	1 22075,6967 22049,7085
 Steintr‰gerweg	1 12987,2220 13023,2093
 #: by: anonymous and osm
 Am Kurzen Weg	1 -7180,14351 -7172,14459 -7185,14574
+Straﬂenbahnwendestelle Virchowstr.	1 12916,13368 13081,13457
+Am Friedrichshain	1 12065,13851 12104,13913 12147,13887 12106,13828
 ######################################################################
 #
 # Potsdam
@@ -856,6 +858,7 @@ Hˆnower Str. (Karlshorst) (Ausweichen auf Sandbankette mˆglich)	1s:q2 18377,9366
 # gesperrte Wegf¸hrung (nicht mˆglich zu umgehen --- wenn es eine
 # Umgehung gibt, sollte sie in comments_path-orig als PI; kommentiert sein)
 # 
+Landsberger Allee: Straﬂenbahntrasse	3nocross 12878,13229 12979,13280 13078,13330
 Hauptstr.: Straﬂenbahntrasse	3nocross 15639,10469 15408,10638 15383,10656
 #: by: Heike Steinhardt ("eher nicht empfehlenswert")
 Kniprodestr.: Gr¸nstreifen	3nocross 13649,14899 13749,15013 13838,15113
@@ -921,7 +924,7 @@ Prenzlauer Promenade: Straﬂenbahntrasse	3nocross 12091,16209 12097,16263 12077,1
 Prenzlauer Promenade: Straﬂenbahntrasse	3nocross 12054,16517 12077,16380 12097,16263
 Petersburger Str.: Straﬂenbahntrasse	3nocross 13626,12797 13579,12904 13537,13003
 Petersburger Str.: Straﬂenbahntrasse	3nocross 13537,13003 13487,13115 13437,13228
-Petersburger Str.: Straﬂenbahntrasse	3nocross 13334,13459 13381,13354 13393,13326 13437,13228
+Petersburger Str.: Straﬂenbahntrasse	3nocross 13330,13468 13381,13354 13393,13326 13437,13228
 #: note: ^^^
 Stubenrauchstr.: Bahntrasse	3nocross 16635,2796 16677,2856 16779,2993
 #: note: Luftbild:
@@ -999,7 +1002,7 @@ Frankfurter Allee: unbequem passierbarer Mittelstreifen	3nocross 14208,12235 142
 Frankfurter Allee: unbequem passierbarer Mittelstreifen	3nocross 14381,12205 14427,12197 14488,12188
 Frankfurter Allee: unbequem passierbarer Mittelstreifen	3nocross 13785,12292 13885,12279 14208,12235
 Leipziger Str.: unbequem passierbarer Mittelstreifen	3nocross 9701,11656 9898,11679 9981,11689
-#Landsberger Allee: Mittelstreifen	3nocross 13089,13323 13161,13360 13241,13405 13334,13459
+#Landsberger Allee: Mittelstreifen	3nocross 13089,13323 13161,13360 13241,13405 13330,13468
 Greifswalder Str.: Mittelstreifen mit Straﬂenbahn	3nocross 12177,14335 12228,14404 12266,14460 12317,14535
 Greifswalder Str.: Mittelstreifen mit Straﬂenbahn	3nocross 12422,14692 12473,14763 12520,14833 12584,14928
 Greifswalder Str.: Mittelstreifen mit Straﬂenbahn	3nocross 12709,15112 12737,15154 12870,15342
@@ -1586,7 +1589,7 @@ Greifswalder Str.	3nocross 12422,14692 12473,14763 12520,14833
 Danziger Str.	3nocross 12630,14306 12425,14459 12317,14535
 #: note: Luftbild:
 Greifswalder Str.: Straﬂenbahntrasse	3nocross 13098,15592 13229,15692 13316,15758
-Dietrich-Bonhoeffer-Str.	1 12578,14237 12266,14460
+Dietrich-Bonhoeffer-Str.	1 12556,14230 12266,14460
 tragen (3 einzelne Stufen)	0:15 13079,14320
 Achtung, schlecht sichtbare Kette!	BNP:5 13485,14054
 Treppe	0:20 12867,14648
@@ -1605,13 +1608,13 @@ tragen (Treppe)	0:20 5371,4609
 tragen (16 Stufen)	0:45 5469,4543
 tragen (Treppe)	0:20 12387,13107
 Schranke	BNP:10 12605,13356
-tragen (ca. 5 x 9 Stufen)	0:120 13858,13709
+tragen (ca. 5 x 9 Stufen)	0:120 13853,13712
 Danziger Str.: Straﬂenbahnschienen	3nocross 12901,14093 12975,13990 13037,13897 13100,13803
 Danziger Str.: Straﬂenbahnschienen	3nocross 13100,13803 13166,13707 13225,13620
 Pintschstr.	1 13342,13185 13438,12965
 Landsberger Allee	3nocross 12386,13085 12585,13118 12685,13135
 Landsberger Allee	3nocross 20525,15571 20641,15622 20796,15667
-Landsberger Allee: Straﬂenbahntrasse	3nocross 13640,13597 13708,13623 13862,13688
+Landsberger Allee: Straﬂenbahntrasse	3nocross 13635,13605 13702,13634 13854,13701
 #: by: jˆrg (schalkau):
 #: confirmed_by: srt
 Landsberger Allee	3nocross 17254,14451 17533,14484 17848,14523

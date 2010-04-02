@@ -3789,10 +3789,10 @@ EOF
        type  => 'handicap',
        source_id => 'IM_002530',
        data  => <<EOF,
-userdel	q4 12438,14054 12499,14136
-userdel	q4 12438,14054 12380,13975
-userdel	q4 12578,14237 12630,14306
-userdel	q4 12578,14237 12499,14136
+userdel	q4 12423,14066 12486,14143
+userdel	q4 12423,14066 12361,13985
+userdel	q4 12556,14230 12630,14306
+userdel	q4 12556,14230 12486,14143
 EOF
      },
      { from  => 1142632575, # 2006-03-17 22:56
@@ -16514,9 +16514,9 @@ EOF
 userdel	2::inwork 3314,15782 3564,16294
 EOF
      },
-     { from  => 1260481458, # 2009-12-10 22:44
-       until => 1270072799, # 2010-03-31 23:59
-       text  => 'Neustädtische Kirchstr. (Mitte) Richtung Reichtagsufer zwischen Dorotheenstr. und Unter den Linden Baustelle, Fahrtrichtung gesperrt (bis Ende 03/2010)',
+     { from  => 1270235189, # 2010-04-02 21:06
+       until => 1283205600, # 2010-08-31 00:00
+       text  => 'Neustädtische Kirchstr. (Mitte) Richtung Reichtagsufer zwischen Dorotheenstr. und Unter den Linden Baustelle, Fahrtrichtung gesperrt bis 30.08.2010 16:00 Uhr ',
        type  => 'handicap',
        source_id => 'IM_014421',
        data  => <<EOF,
@@ -17123,9 +17123,9 @@ EOF
 userdel	2::inwork 34326,2915 34142,2742
 EOF
      },
-     { from  => 1265125080, # 2010-02-02 16:38
-       until => 1270044000, # 2010-03-31 16:00
-       text  => 'Winckelmannstr. (Johannisthal) Richtung Segelfliegerdamm zwischen Herweghstr. und Köpenicker Str. Baustelle, gesperrt. Das Abbiegen vom Sterndamm in die Winckelmannstr. ist nicht möglich.',
+     { from  => 1270235299, # 2010-04-02 21:08
+       until => 1272664800, # 2010-05-01 00:00
+       text  => 'Winckelmannstr. (Johannisthal) Richtung Segelfliegerdamm zwischen Herweghstr. und Köpenicker Str. Baustelle, gesperrt. Das Abbiegen vom Sterndamm in die Winckelmannstr. ist nicht möglich. Dauer: bis 30.04.2010 16:00 Uhr ',
        type  => 'handicap',
        source_id => 'IM_015007',
        data  => <<EOF,
@@ -17272,6 +17272,51 @@ EOF
        source_id => 'LSO-SG33-F10034',
        data  => <<EOF,
 userdel	2::inwork 49820,27138 49875,28845
+EOF
+     },
+     { from  => 1270235418, # 2010-04-02 21:10
+       until => 1275343200, # 2010-06-01 00:00
+       text  => 'Michendorf: Verbot für Fahrzeuge zw. Potsdamer Str. und Am Plan 27.10.2008 bis 31.05.2010 ',
+       type  => 'handicap',
+       source_id => '86901199',
+       data  => <<EOF,
+userdel	q4::inwork -12915,-10753 -12337,-10735
+EOF
+     },
+     { from  => 1270235498, # 2010-04-02 21:11
+       until => 1275343200, # 2010-06-01 00:00
+       text  => 'Steinhöfel: Kanal- und Straßenbauarbeiten Ortslage Heinersdorf, Verbot für Fahrzeuge 07.09.2009 bis 31.05.2010 ',
+       type  => 'handicap',
+       source_id => 'LSO-SG33-F09177',
+       data  => <<EOF,
+userdel	q4::inwork 65618,6296 65528,6253 65365,6281 65225,6403
+EOF
+     },
+     { from  => 1270235590, # 2010-04-02 21:13
+       until => 1285020000, # 2010-09-21 00:00
+       text  => 'Grünheide (Mark): Brückenbauarbeiten OD Kienbaum 24.02.2010 bis 20.09.2010 ',
+       type  => 'gesperrt',
+       source_id => 'LSO-SG33-F10015',
+       data  => <<EOF,
+userdel	2::inwork 48220,6698 48051,6849
+EOF
+     },
+     { from  => 1270235686, # 2010-04-02 21:14
+       until => 1272664800, # 2010-05-01 00:00
+       text  => 'Prenzlau: Verbot für Fahrzeuge Brücke über die Ücker 24.03.2010 bis 30.04.2010 ',
+       type  => 'gesperrt',
+       source_id => 'LSO-SG33-E09126.2',
+       data  => <<EOF,
+userdel	2::inwork 39239,101950 39066,102017
+EOF
+     },
+     { from  => 1270235753, # 2010-04-02 21:15
+       until => 1270504799, # 2010-04-05 23:59
+       text  => 'Müllerstr. (Wedding): Veranstaltung, gesperrt (bis vorauss. 05.04.2010 23:59) in beiden Richtungen zwischen Nazarthkirchstr. und Seestr. ',
+       type  => 'gesperrt',
+       source_id => 'IM_015451',
+       data  => <<EOF,
+userdel	2::temp 6790,16018 6914,15908 6936,15888 7043,15793 7129,15717 7198,15656
 EOF
      },
     );

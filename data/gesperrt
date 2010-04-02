@@ -531,6 +531,8 @@ Kaulsdorfer Str.	1 22075,6967 22049,7085
 (KGA Rahnsdorf Süd, Birkenweg): kein Durchfangsverkehr, abgesperrtes Tor	2 30345,3277 30389,3314 30393,3437 30378,3501
 Steinträgerweg	1 12987,2220 13023,2093
 Am Kurzen Weg	1 -7180,14351 -7172,14459 -7185,14574
+Straßenbahnwendestelle Virchowstr.	1 12916,13368 13081,13457
+Am Friedrichshain	1 12065,13851 12104,13913 12147,13887 12106,13828
 Am Neuen Garten	1 -12166,1384 -12212,1201 -12276,831 -12302,718 -12323,635 -12332,585 -12582,127
 Leistikowstr.	1 -12512,810 -12302,718
 Hochstraße	3nocross::ignrte -11399,-1339 -11461,-1424 -11540,-1543
@@ -693,6 +695,8 @@ Zeltinger Platz	1s 2404,25187 2355,25252 2395,25273 2446,25265 2490,25211 2486,2
 Ludolfinger Platz	1s 2277,25033 2245,25016 2205,25042 2192,25083 2216,25117 2277,25094 2285,25059 2277,25033
 Sewanstr. - Balatonstr.	1s 17705,10232 17741,10386
 Hönower Str. (Karlshorst) (Ausweichen auf Sandbankette möglich)	1s 18377,9366 18490,9387
+Straßenbahntrasse	3nocross::ignrte 12878,13229 12979,13280 13078,13330
+Landsberger Allee -> Virchowstr.: Straßenbahntrasse	3::igndisp 12878,13229 12979,13280 12916,13368
 Straßenbahntrasse	3nocross::ignrte 15639,10469 15408,10638 15383,10656
 Hauptstr. (Rummelsburg) [Wohngebiet] -> Hauptstr.: Straßenbahntrasse	3::igndisp 15358,10562 15408,10638 15383,10656
 Hauptstr. -> Hauptstr. (Rummelsburg) [Wohngebiet]: Straßenbahntrasse	3::igndisp 15639,10469 15408,10638 15358,10562
@@ -830,8 +834,8 @@ Matternstr. -> Petersburger Str.: Straßenbahntrasse	3::igndisp 13798,13003 13579
 Straßenbahntrasse	3nocross::ignrte 13537,13003 13487,13115 13437,13228
 Ebelingstr. -> Petersburger Str.: Straßenbahntrasse	3::igndisp 13610,13169 13487,13115 13537,13003
 Petersburger Str. -> Ebelingstr.: Straßenbahntrasse	3::igndisp 13437,13228 13487,13115 13610,13169
-Straßenbahntrasse	3nocross::ignrte 13334,13459 13381,13354 13393,13326 13437,13228
-An der Brauerei -> Petersburger Str.: Straßenbahntrasse	3::igndisp 13283,13311 13381,13354 13334,13459
+Straßenbahntrasse	3nocross::ignrte 13330,13468 13381,13354 13393,13326 13437,13228
+An der Brauerei -> Petersburger Str.: Straßenbahntrasse	3::igndisp 13283,13311 13381,13354 13330,13468
 Petersburger Str. -> An der Brauerei: Straßenbahntrasse	3::igndisp 13393,13326 13381,13354 13283,13311
 Heidenfeldstr. -> Petersburger Str.: Straßenbahntrasse	3::igndisp 13433,13346 13393,13326 13437,13228
 Petersburger Str. -> Heidenfeldstr.: Straßenbahntrasse	3::igndisp 13381,13354 13393,13326 13433,13346
@@ -1150,9 +1154,9 @@ Leipziger Str. -> Jerusalemer Str.: unbequem passierbarer Mittelstreifen	3::ignd
 Mittelstreifen mit Straßenbahn	3nocross::ignrte 12177,14335 12228,14404 12266,14460 12317,14535
 Greifswalder Str. -> Jablonskistr.: Mittelstreifen mit Straßenbahn	3::igndisp 12177,14335 12228,14404 11955,14531
 Jablonskistr. -> Greifswalder Str.: Mittelstreifen mit Straßenbahn	3::igndisp 11955,14531 12228,14404 12266,14460
-Greifswalder Str. -> Dietrich-Bonhoeffer-Str.: Mittelstreifen mit Straßenbahn	3::igndisp 12317,14535 12266,14460 12578,14237
+Greifswalder Str. -> Dietrich-Bonhoeffer-Str.: Mittelstreifen mit Straßenbahn	3::igndisp 12317,14535 12266,14460 12556,14230
 Chodowieckistr. -> Greifswalder Str.: Mittelstreifen mit Straßenbahn	3::igndisp 11992,14599 12266,14460 12317,14535
-Chodowieckistr. -> Dietrich-Bonhoeffer-Str.: Mittelstreifen mit Straßenbahn	3::igndisp 11992,14599 12266,14460 12578,14237
+Chodowieckistr. -> Dietrich-Bonhoeffer-Str.: Mittelstreifen mit Straßenbahn	3::igndisp 11992,14599 12266,14460 12556,14230
 Greifswalder Str. -> Chodowieckistr.: Mittelstreifen mit Straßenbahn	3::igndisp 12228,14404 12266,14460 11992,14599
 Mittelstreifen mit Straßenbahn	3nocross::ignrte 12422,14692 12473,14763 12520,14833 12584,14928
 Olga-Benario-Prestes-Str. -> Greifswalder Str.: Mittelstreifen mit Straßenbahn	3::igndisp 12653,14653 12473,14763 12422,14692
@@ -1513,7 +1517,7 @@ unter der S-Bahn-Brücke tragen	0:30:-172 3730,18992
 tragen (31 Stufen) oder Aufzug (Storkower Str.)	0:30:-71 14530,13269
 tragen (41 Stufen) oder Aufzug (Storkower Str.)	0:40:-116 14481,13143
 tragen (zum Uferweg an den Treptowers, 24 Stufen)	0:35:-45 14383,10036
-tragen (Mühsamstr.)	0:30:-117 13253,12625
+tragen (Mühsamstr.)	0:30:-114 13253,12625
 tragen (34 Stufen)	0:40:40 14787,10972
 tragen (33 Stufen)	0:40:13 14764,10877
 tragen (Durchgang unter der U-Bahn zur Warschauer Str., 15 Stufen)	0:20:-255 13437,10992
@@ -1795,7 +1799,7 @@ Eugen-Schönhaar-Str. -> Danziger Str.: Danziger Str.	3::igndisp 12496,14515 1242
 Straßenbahntrasse	3nocross::ignrte 13098,15592 13229,15692 13316,15758
 Cohnstr. -> Greifswalder Str.: Straßenbahntrasse	3::igndisp 13197,15734 13229,15692 13316,15758
 Greifswalder Str. -> Cohnstr.: Straßenbahntrasse	3::igndisp 13098,15592 13229,15692 13197,15734
-Dietrich-Bonhoeffer-Str.	1 12578,14237 12266,14460
+Dietrich-Bonhoeffer-Str.	1 12556,14230 12266,14460
 tragen (3 einzelne Stufen)	0:15:-234 13079,14320
 Achtung, schlecht sichtbare Kette!	BNP:5:-121 13485,14054
 Treppe	0:20:-62 12867,14648
@@ -1813,7 +1817,7 @@ tragen (Treppe)	0:20:-62 5371,4609
 tragen (16 Stufen)	0:45:-158 5469,4543
 tragen (Treppe)	0:20:-177 12387,13107
 Schranke	BNP:10 12605,13356
-tragen (ca. 5 x 9 Stufen)	0:120:0 13858,13709
+tragen (ca. 5 x 9 Stufen)	0:120:35 13853,13712
 Straßenbahnschienen	3nocross::ignrte 12901,14093 12975,13990 13037,13897 13100,13803
 Danziger Str. -> Margarete-Sommer-Str.: Straßenbahnschienen	3::igndisp 13037,13897 12975,13990 12879,13889
 Danziger Str. -> Margarete-Sommer-Str.: Straßenbahnschienen	3::igndisp 13037,13897 12975,13990 12972,13970
@@ -1838,9 +1842,9 @@ Landsberger Allee -> Ernst-Zinna-Weg: Landsberger Allee	3::igndisp 12386,13085 1
 Landsberger Allee	3nocross::ignrte 20525,15571 20641,15622 20796,15667
 Landsberger Allee -> Alt-Marzahn: Landsberger Allee	3::igndisp 20796,15667 20641,15622 20658,15589
 Alt-Marzahn -> Landsberger Allee: Landsberger Allee	3::igndisp 20658,15589 20641,15622 20525,15571
-Straßenbahntrasse	3nocross::ignrte 13640,13597 13708,13623 13862,13688
-Landsberger Allee -> Otto-Ostrowski-Str.: Straßenbahntrasse	3::igndisp 13862,13688 13708,13623 13769,13487
-Otto-Ostrowski-Str. -> Landsberger Allee: Straßenbahntrasse	3::igndisp 13769,13487 13708,13623 13640,13597
+Straßenbahntrasse	3nocross::ignrte 13635,13605 13702,13634 13854,13701
+Landsberger Allee -> Otto-Ostrowski-Str.: Straßenbahntrasse	3::igndisp 13854,13701 13702,13634 13769,13487
+Otto-Ostrowski-Str. -> Landsberger Allee: Straßenbahntrasse	3::igndisp 13769,13487 13702,13634 13635,13605
 Landsberger Allee	3nocross::ignrte 17254,14451 17533,14484 17848,14523
 Schalkauer Str. -> Landsberger Allee: Landsberger Allee	3::igndisp 17514,14613 17533,14484 17848,14523
 Landsberger Allee -> Schalkauer Str.: Landsberger Allee	3::igndisp 17254,14451 17533,14484 17514,14613

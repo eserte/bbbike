@@ -1060,15 +1060,6 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        undef,
-       {
-         'until' => 1270072800,
-         'text' => 'B 005 Frankfurter Straße OL Heinersdorf Kanal- u. Straßenbauarbeiten Vollsperrung 07.09.2009-31.03.2010 ',
-         'from' => 1252188000,
-         'id' => 1835,
-         'data' => 'userdel	q4::inwork 66009,6118 65618,6296 65528,6253 65365,6281 65225,6403
-',
-         'type' => 'handicap'
-       },
        undef,
        undef,
        undef,
@@ -1077,15 +1068,8 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        undef,
-       {
-         'until' => 1270072800,
-         'text' => 'L 077 Langerwisch - Saarmund OD Langerwisch, zw. Potsdamer Str. u. Am Plan Straßenbau Vollsperrung 17.06.2009-31.03.2010 ',
-         'from' => 1245103200,
-         'id' => 1844,
-         'data' => 'userdel	q4::inwork -13211,-10642 -12915,-10753
-',
-         'type' => 'handicap'
-       },
+       undef,
+       undef,
        undef,
        undef,
        {
@@ -1290,9 +1274,9 @@ userdel	q4::inwork; 10829,18083 10907,18109 10938,18147 10989,18172 11137,18358 
        undef,
        {
          'source_id' => 'IM_014421',
-         'until' => 1270072799,
-         'text' => 'Neustädtische Kirchstr. (Mitte) Richtung Reichtagsufer zwischen Dorotheenstr. und Unter den Linden Baustelle, Fahrtrichtung gesperrt (bis Ende 03/2010)',
-         'from' => 1260481458,
+         'until' => 1283205600,
+         'text' => 'Neustädtische Kirchstr. (Mitte) Richtung Reichtagsufer zwischen Dorotheenstr. und Unter den Linden Baustelle, Fahrtrichtung gesperrt bis 30.08.2010 16:00 Uhr ',
+         'from' => 1270235189,
          'id' => 1946,
          'data' => 'userdel	q4::inwork; 9141,12320 9130,12433 9123,12500
 ',
@@ -1500,9 +1484,9 @@ userdel	q4::inwork; 10829,18083 10907,18109 10938,18147 10989,18172 11137,18358 
        },
        {
          'source_id' => 'IM_015007',
-         'until' => 1270044000,
-         'text' => 'Winckelmannstr. (Johannisthal) Richtung Segelfliegerdamm zwischen Herweghstr. und Köpenicker Str. Baustelle, gesperrt. Das Abbiegen vom Sterndamm in die Winckelmannstr. ist nicht möglich.',
-         'from' => 1265125080,
+         'until' => 1272664800,
+         'text' => 'Winckelmannstr. (Johannisthal) Richtung Segelfliegerdamm zwischen Herweghstr. und Köpenicker Str. Baustelle, gesperrt. Das Abbiegen vom Sterndamm in die Winckelmannstr. ist nicht möglich. Dauer: bis 30.04.2010 16:00 Uhr ',
+         'from' => 1270235299,
          'id' => 2018,
          'data' => 'userdel	q4::inwork; 17476,4337 17507,4216
 ',
@@ -1663,6 +1647,56 @@ userdel	q3::inwork; 9456,11513 9444,11616
          'from' => 1270015833,
          'id' => 2034,
          'data' => 'userdel	2::inwork 49820,27138 49875,28845
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => '86901199',
+         'until' => 1275343200,
+         'text' => 'Michendorf: Verbot für Fahrzeuge zw. Potsdamer Str. und Am Plan 27.10.2008 bis 31.05.2010 ',
+         'from' => 1270235418,
+         'id' => 2035,
+         'data' => 'userdel	q4::inwork -12915,-10753 -12337,-10735
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'LSO-SG33-F09177',
+         'until' => 1275343200,
+         'text' => 'Steinhöfel: Kanal- und Straßenbauarbeiten Ortslage Heinersdorf, Verbot für Fahrzeuge 07.09.2009 bis 31.05.2010 ',
+         'from' => 1270235498,
+         'id' => 2036,
+         'data' => 'userdel	q4::inwork 65618,6296 65528,6253 65365,6281 65225,6403
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'LSO-SG33-F10015',
+         'until' => 1285020000,
+         'text' => 'Grünheide (Mark): Brückenbauarbeiten OD Kienbaum 24.02.2010 bis 20.09.2010 ',
+         'from' => 1270235590,
+         'id' => 2037,
+         'data' => 'userdel	2::inwork 48220,6698 48051,6849
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'LSO-SG33-E09126.2',
+         'until' => 1272664800,
+         'text' => 'Prenzlau: Verbot für Fahrzeuge Brücke über die Ücker 24.03.2010 bis 30.04.2010 ',
+         'from' => 1270235686,
+         'id' => 2038,
+         'data' => 'userdel	2::inwork 39239,101950 39066,102017
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_015451',
+         'until' => 1270504799,
+         'text' => 'Müllerstr. (Wedding): Veranstaltung, gesperrt (bis vorauss. 05.04.2010 23:59) in beiden Richtungen zwischen Nazarthkirchstr. und Seestr. ',
+         'from' => 1270235753,
+         'id' => 2039,
+         'data' => 'userdel	2::temp 6790,16018 6914,15908 6936,15888 7043,15793 7129,15717 7198,15656
 ',
          'type' => 'gesperrt'
        }

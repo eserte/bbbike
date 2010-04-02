@@ -250,13 +250,13 @@ John-Schehr-Str. -> Greifswalder Str.: Straﬂenbahn	3::igndisp 12573,14581 12422,
 Straﬂenbahntrasse	3nocross::ignrte 12709,15112 12737,15154 12870,15342
 Greifswalder Str. -> Naugarder Str.: Straﬂenbahntrasse	3::igndisp 12709,15112 12737,15154 12693,15225
 Naugarder Str. -> Greifswalder Str.: Straﬂenbahntrasse	3::igndisp 12693,15225 12737,15154 12870,15342
-Straﬂenbahn	3nocross::ignrte 13550,13560 13640,13597 13708,13623
-Fritz-Riedel-Str. -> Hausburgstr.: Straﬂenbahn	3::igndisp 13521,13781 13640,13597 13706,13460
-Fritz-Riedel-Str. -> Landsberger Allee: Straﬂenbahn	3::igndisp 13521,13781 13640,13597 13708,13623
-Hausburgstr. -> Fritz-Riedel-Str.: Straﬂenbahn	3::igndisp 13706,13460 13640,13597 13521,13781
-Hausburgstr. -> Landsberger Allee: Straﬂenbahn	3::igndisp 13706,13460 13640,13597 13550,13560
-Landsberger Allee -> Fritz-Riedel-Str.: Straﬂenbahn	3::igndisp 13550,13560 13640,13597 13521,13781
-Landsberger Allee -> Hausburgstr.: Straﬂenbahn	3::igndisp 13708,13623 13640,13597 13706,13460
+Straﬂenbahn	3nocross::ignrte 13543,13568 13635,13605 13702,13634
+Fritz-Riedel-Str. -> Hausburgstr.: Straﬂenbahn	3::igndisp 13521,13781 13635,13605 13706,13460
+Fritz-Riedel-Str. -> Landsberger Allee: Straﬂenbahn	3::igndisp 13521,13781 13635,13605 13702,13634
+Landsberger Allee -> Fritz-Riedel-Str.: Straﬂenbahn	3::igndisp 13543,13568 13635,13605 13521,13781
+Hausburgstr. -> Fritz-Riedel-Str.: Straﬂenbahn	3::igndisp 13706,13460 13635,13605 13521,13781
+Hausburgstr. -> Landsberger Allee: Straﬂenbahn	3::igndisp 13706,13460 13635,13605 13543,13568
+Landsberger Allee -> Hausburgstr.: Straﬂenbahn	3::igndisp 13702,13634 13635,13605 13706,13460
 Straﬂenbahn	3nocross::ignrte 21398,15671 21475,15705 21694,15802
 Landsberger Allee -> Pˆhlbergstr: Straﬂenbahn	3::igndisp 21694,15802 21475,15705 21491,15671
 Pˆhlbergstr -> Landsberger Allee: Straﬂenbahn	3::igndisp 21491,15671 21475,15705 21398,15671
