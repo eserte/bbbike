@@ -165,10 +165,13 @@ EOF
 	    ($mmf,
 	     [
 	      [Button => $do_compound->("Set penalty: unique matches (alltime)"),
-	       -command => sub { set_penalty() },
+	       -command => sub { set_penalty('tmp/unique-matches.bbd') },
 	      ],
 	      [Button => $do_compound->("Set penalty: unique matches (since 2008)"),
-	       -command => sub { set_penalty_2008() },
+	       -command => sub { set_penalty('tmp/unique-matches-since2008.bbd') },
+	      ],
+	      [Button => $do_compound->("Set penalty: unique matches (since 2009)"),
+	       -command => sub { set_penalty('tmp/unique-matches-since2009.bbd') },
 	      ],
 	      [Button => $do_compound->("Set penalty fragezeichen"),
 	       -command => sub { set_penalty_fragezeichen() },
@@ -1033,18 +1036,11 @@ sub find_nearest_hoehe {
 }
 
 sub set_penalty {
+    my $filefrag = shift;
     require BBBikeEdit;
     $main::bbd_penalty = 1;
     $BBBikeEdit::bbd_penalty_invert = 0;
-    $BBBikeEdit::bbd_penalty_file = "$bbbike_rootdir/tmp/unique-matches.bbd";
-    BBBikeEdit::build_bbd_penalty_for_search();
-}
-
-sub set_penalty_2008 {
-    require BBBikeEdit;
-    $main::bbd_penalty = 1;
-    $BBBikeEdit::bbd_penalty_invert = 0;
-    $BBBikeEdit::bbd_penalty_file = "$bbbike_rootdir/tmp/unique-matches-since2008.bbd";
+    $BBBikeEdit::bbd_penalty_file = "$bbbike_rootdir/$filefrag";
     BBBikeEdit::build_bbd_penalty_for_search();
 }
 
