@@ -90,7 +90,7 @@ sub get_street_choices {
     my $conv = sub {
 	my(@s) = split(/\|/,$_[0]);
 	if (defined $s[3] && $s[3] ne "") {
-	    "$s[0] ($s[1])";
+	    $s[0] . ($s[1] ne "" ? " ($s[1])" : "");
 	} else {
 	    undef;
 	}
