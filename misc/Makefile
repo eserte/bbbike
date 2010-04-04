@@ -236,7 +236,11 @@ berlin-test-osm2bbd-postprocess2:
 # Building for garmin with custom .typ file
 
 MKGMAP_VER?=	1624
+.if exists(/opt/mkgmap-r$(MKGMAP_VER)/mkgmap.jar)
+MKGMAP?=	java -Xmx1024m -jar /opt/mkgmap-r${MKGMAP_VER}/mkgmap.jar
+.else
 MKGMAP?=	java -Xmx1024m -jar /usr/local/src/mkgmap-r${MKGMAP_VER}/mkgmap.jar
+.endif
 
 # on mosor: /usr/lib/jvm/java-6-sun/bin/java -jar /opt/mkgmap-r1247/mkgmap.jar
 
@@ -253,13 +257,15 @@ bbbikemap-for-garmin:	/tmp/gmapsupp.img
 
 /tmp/gmapsupp.img: /tmp/bbbike_routable.img ${HOME}/src/bbbike-aux/mkgmap/typ/M000002a.TYP
 	cd /tmp && \
-	    ${MKGMAP} --family-id=42 \
+	    ${MKGMAP} --family-id=42 --family-name="Slavens Map" \
 	       --gmapsupp bbbike_routable.img ${HOME}/src/bbbike-aux/mkgmap/typ/M000002a.TYP
 
 /tmp/bbbike_routable.img: ../tmp/bbbike_routable.osm ${HOME}/src/bbbike-aux/mkgmap/srt-style/*
 	[ -r ${HOME}/src/bbbike-aux/mkgmap/srt-style ]
 	cd /tmp && \
-	    ${MKGMAP} --mapname=12117006 \
-	        --latin1 --draw-priority=5 --style-file=${HOME}/src/bbbike-aux/mkgmap/srt-style \
+	    ${MKGMAP} --description="BBBike Routable" --mapname=12117006 \
+		--country-name=Germany --country-abbr=DE \
+		--region-name=Berlin --region-abbr=BER \
+	        --latin1 --net --route --draw-priority=5 --style-file=${HOME}/src/bbbike-aux/mkgmap/srt-style \
 	        ${HOME}/src/bbbike/tmp/bbbike_routable.osm  && \
 	    mv -f 12117006.img bbbike_routable.img 
