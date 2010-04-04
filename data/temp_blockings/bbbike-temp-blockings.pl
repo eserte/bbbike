@@ -13763,7 +13763,7 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Anwohner haben den Uferweg versperrt',
+       text  => 'Anwohner haben den Uferweg am Griebnitzsee versperrt',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp -8625,-1176 -8700,-997 -8813,-933 -8913,-813 -9103,-813 -9239,-739 -9337,-668 -9365,-610 -9454,-434 -9562,-325
@@ -17317,6 +17317,14 @@ EOF
        source_id => 'IM_015451',
        data  => <<EOF,
 userdel	2::temp 6790,16018 6914,15908 6936,15888 7043,15793 7129,15717 7198,15656
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Anwohner haben den Uferweg am Groß Glienicker See versperrt',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::temp -9668,6171 -9622,5804 -9640,5723 -9727,5573
 EOF
      },
     );

@@ -71,7 +71,7 @@ Lˆwenbruch: Kopfsteinpflaster	Q2 5044,-12402 5002,-12551 4555,-12852
 Diedersdorf: Pflastersteine, OK	Q1 7558,-7093 7390,-7184 7378,-7406 7309,-7482 7506,-7471
 Diedersdorf: Kopfsteinpflaster, OK	Q1 7506,-7471 7981,-7165
 Arcostr.: Asphalt	Q0 10323,-3150 10309,-3191
-Arcostr.: m‰ﬂiges bis schlechtes Kopfsteinpflaster	Q3 10309,-3191 10242,-3345 10184,-3499 10088,-3740
+Arcostr.: m‰ﬂiges bis schlechtes Kopfsteinpflaster	Q3 10309,-3191 10277,-3262 10184,-3499 10088,-3740
 Arcostr.: Asphalt	Q0 10088,-3740 10070,-3790 9971,-3985
 Groﬂ-Kienitz: schlechtes Kopfsteinpflaster	Q3 14702,-8736 14913,-9037 15109,-8950
 Am F‰ngersee: Feld- und Waldwege, grˆﬂtenteils gut befahrbar (20 km/h), einige Stellen mit tiefen Sand	Q2 38908,19853 38889,20172 39128,20574 39130,20957 39431,21380 39367,21528 39251,21678 39439,21968 39372,22521
@@ -142,7 +142,7 @@ Wandlitz: Kopfsteinpflaster, OK	Q1 13546,37474 13908,37983 14449,38733 14498,388
 Altlandsberg: Kopfsteinpflaster	Q2 31887,17453 32100,18012 32115,18106 32224,18110 32293,18093 32513,18082
 Altlandsberg: Kopfsteinpflaster	Q2 32100,18012 32181,18009 32224,18110
 Altlandsberg: Kopfsteinpflaster	Q2 32293,18093 32325,18434
-Groﬂ-Glienicke: Kopfsteinpflaster, OK	Q1 -9413,7175 -9476,7033 -9640,6971
+Groﬂ-Glienicke: Kopfsteinpflaster, OK	Q1 -9413,7175 -9476,7033 -9616,6980 -9640,6971
 Werder, Am Bahnhof: Kopfsteinpflaster	Q2 -21462,-2657 -21636,-2101 -22042,-2060
 Golm, Weinmeisterstr.: sandige Straﬂe	Q2 -19578,-674 -19044,-737 -18981,-566
 #: add_fragezeichen: welche Nummer des F-Wegs?
@@ -871,7 +871,7 @@ Kopfsteinpflaster	Q2 -19190,7296 -19187,6709 -19514,6643
 Ruhlsdorf - G¸terfelde: m‰ﬂiger/schlechter Feldweg	Q2 1132,-3612 -256,-3961 -1812,-4210 -2493,-4385 -2534,-4606
 #XXX existiert nicht mehr, del?	Q0 2471,-6025 2031,-5468 1592,-5527
 	Q0 1622,-5649 1533,-5628 1343,-5420 296,-5328 -1095,-4973 -1809,-4792 -2534,-4606 -3368,-4430 -3418,-4525 -3446,-4709 -3596,-4687 -3796,-4612 -3871,-4437 -4457,-4197 -4661,-4172 -4819,-4154 -5736,-3629 -6277,-3348 -6553,-3235 -6810,-3151 -7060,-3124 -7487,-3097 -7497,-3096 -7577,-3093 -7668,-3092 -7774,-3091 -7878,-3090 -8005,-3056 -8137,-2997 -8283,-2917 -8361,-2875 -8417,-2867 -8500,-2856
-	Q0 -13036,342 -13062,535 -13058,702 -13042,807 -13038,856 -13039,894 -13091,1150 -13108,1278 -13113,1356 -13115,1379 -13125,1508 -13133,1698 -13134,1758 -13141,1933 -13152,2169 -13375,2950 -13387,2987 -13567,3403 -13784,3900 -13778,4492 -13690,5212 -13578,5396 -13261,5566 -13143,5587 -12865,5567 -12181,5611 -10923,6318 -10206,6756 -10090,6868 -9996,7037 -9928,7459 -8634,9626 -8628,9803 -8677,10083 -8697,10653 -8906,11139 -9262,11890 -9524,12215
+	Q0 -13036,342 -13062,535 -13058,702 -13042,807 -13038,856 -13039,894 -13091,1150 -13108,1278 -13113,1356 -13115,1379 -13125,1508 -13133,1698 -13134,1758 -13141,1933 -13152,2169 -13375,2950 -13387,2987 -13567,3403 -13703,3717 -13784,3900 -13783,3919 -13778,4492 -13690,5212 -13578,5396 -13261,5566 -13143,5587 -12865,5567 -12645,5573 -12179,5629 -10927,6333 -10206,6756 -10090,6868 -9996,7037 -9928,7459 -8634,9626 -8628,9803 -8677,10083 -8697,10653 -8906,11139 -9262,11890 -9524,12215
 	Q0 -13561,117 -13529,226 -13507,308 -13486,385 -13456,500 -13546,527 -14053,677
 Erich-Mendelsohn-Allee: Asphalt	Q0 -14235,298 -14216,372 -14198,449 -14174,486 -14053,677 -13995,773 -13961,836 -13903,941 -13853,1018 -13804,1088 -13772,1139 -13695,1276
 Hermann-Mattern-Promenade: Asphalt	Q0 -14216,721 -14131,858 -14094,917 -14053,985 -13985,1096 -13914,1218 -13893,1255 -13841,1341 -13795,1420
@@ -1984,14 +1984,22 @@ Wasserstr.: Kopfsteinpflaster	Q2 -9883,-161 -9795,-230
 #: by: anonymous ("Schlaglˆcher")
 Domstr. (Potsdam): asphaltiert, aber mit Schlaglˆchern	Q1- -9438,-1260 -9278,-1293 -9228,-1296 -9090,-1293  -9035,-1291 -8667,-1287
 Am Klubhaus: Kopfsteinpflaster	Q2 -8429,-1805 -8788,-1852
-Sacrower Allee (Groﬂ Glienicke): Asphalt	Q0 -10090,6868 -10059,6832 -10055,6715 -10053,6676 -10052,6640 -10052,6563 -10040,6021 -10036,5795
+Sacrower Allee (Groﬂ Glienicke): Asphalt	Q0 -10090,6868 -10059,6832 -10057,6804 -10055,6715 -10053,6676 -10052,6640 -10052,6563 -10045,6292 -10040,6021 -10036,5795
 #: by: osm (surface=cobblestone)
 Sacrower Allee (Groﬂ Glienicke): Kopfsteinpflaster	Q2 -10036,5795 -10046,5464
 #: by: osm (surface=paved)
 Sacrower Allee (Groﬂ Glienicke): Asphalt	Q0 -10046,5464 -10036,5310 -9986,5176 -9935,5070
-#: note: ˆstlich der Sacrower Allee by osm
-Richard-Wagner-Str. (Groﬂ Glienicke): Asphalt	Q0 -9730,5802 -9847,5798 -9945,5797 -10036,5795 -10140,5794 -10195,5794 -10234,5804 -10347,5874 -10467,5948
-Dorfstr. (Groﬂ Glienicke): Asphalt	Q0 -9476,7033 -9547,6865 -9557,6773 -9582,6643 -9642,6538
+Richard-Wagner-Str. (Groﬂ Glienicke): Asphalt	Q0 -9730,5802 -9847,5798 -9945,5797 -10036,5795
+#: XXX_indoor: bei osm "surface=paved"
+Richard-Wagner-Str. (Groﬂ Glienicke): Kopfsteinpflaster	Q2 -10036,5795 -10140,5794 -10195,5794 -10234,5804 -10347,5874 -10467,5948
+Dorfstr. (Groﬂ Glienicke): Asphalt	Q0 -9476,7033 -9547,6865 -9567,6773 -9593,6646 -9642,6538
+Bergstr. (Groﬂ Glienicke): Verbundsteinpflaster	Q0- -9722,6549 -9642,6538
+Hechtsprung (Groﬂ Glienicke): Schotter	Q2 -10154,6284 -10045,6292
+Hechtsprung (Groﬂ Glienicke): Asphalt	Q0 -10045,6292 -9962,6295 -9860,6288 -9703,6278
+Ernst-Th‰lmann-Str. (Groﬂ Glienicke): Plattenweg	Q2 -10148,6021 -10040,6021
+Ernst-Th‰lmann-Str. (Groﬂ Glienicke): Asphalt	Q0 -10040,6021 -9957,6028 -9855,6034 -9727,6035
+An der Sporthalle (Groﬂ Glienicke): Verbundsteinpflaster	Q1 -9689,6334 -9753,6338 -9851,6363
+(Potsdamer Chaussee - Dorfstr.): Asphalt	Q0 -9616,6980 -9565,6954 -9547,6865
 M¸ndeseerundweg: schottriger/sandiger Weg	Q2+ 50403,70708 50497,70796 50594,70755 50678,70738 50758,70752 50871,70761
 Pinnow - Frauenhagen: Asphalt	Q0 55703,74309 55612,74354 55164,74111 54952,74078
 Pinnow - Schˆnermark: halb Schotter/fester Sand, halb Kopfsteinpflaster	Q2 55164,74111 55038,74516
@@ -2161,6 +2169,9 @@ Brandenburgische Str.: Verbundsteinpflasterradwege, betonierte Fahrbahn	Q1+ 3055
 Brandenburgische Str.: Verbundsteinpflasterradwege, gepflasterte Fahrbahn	Q1+ 30602,6366 30648,5979
 Hamburger Str.: Asphalt	Q0 30871,6356 31007,6343 31080,6454 31416,6774
 (Schˆneiche - Woltersdorf): Waldweg	Q2+ 31007,6343 31016,6269 31030,6168 31027,6076
+Birkenweg (Groﬂ Glienicke): Asphalt	Q0 -10055,6715 -10091,6716 -10127,6716 -10177,6711
+#: note: beleuchtet
+Am Park: Asphalt	Q0 -9413,7175 -9118,7286
 ######################### User Contributions #################################
 #: by: Aaron Schaar: vvv
 Hermannswerder: guter Asphalt	Q0 -13718,-2991 -14301,-2871 -14577,-3068 -14740,-3262
@@ -2651,7 +2662,7 @@ Pestalozzistr.: Asphalt	Q0 -9653,-2100 -9698,-2328 -9723,-2451
 #: by: rjoop: vvv
 Am Park: Asphalt	Q0 -9118,7286 -8968,7328
 #: note: laut "Berliner Umland" witterungsabh‰ngige Strecke
-Mauerweg am Groﬂ-Glienicker See: Asphalt, einige Fugen	Q0- -9118,7286 -9168,7172 -9154,7073 -9175,7037 -9446,6860 -9490,6650 -9668,6171 -9622,5804 -9640,5723 -9727,5573 -9763,5555
+Mauerweg am Groﬂ-Glienicker See: Asphalt, einige Fugen	Q0- -9118,7286 -9168,7172 -9154,7073 -9175,7037 -9446,6860 -9490,6650 -9616,6309 -9668,6171 -9622,5804 -9640,5723 -9727,5573 -9763,5555
 Seeburger Chaussee: Asphalt	Q0 -8634,9626 -8595,9582 -8564,9423 -8634,8630 -8719,8161 -8878,8089 -9077,7923 -9150,7720
 Seeburger Chaussee: m‰ﬂiger Asphalt	Q1 -9150,7720 -9097,7649 -9088,7599
 Edisonstr.: Sand	Q3 -10696,15970 -10722,16134
@@ -3348,7 +3359,7 @@ Wockninstr. - ‹ckeritz, Strand: Waldweg	Q2+ 51557,179407 51660,179531 51738,1797
 Karlsruher Str.: guter Asphalt	Q0 27016,14509 27073,14138
 #: by: Stefan Byczynski:
 #: note: "Straﬂe f¸hrt an einer Badestelle vorbei, im Bereich ist verst‰rkt mit Fuﬂg‰ngern und dicht parkenden Autos zu rechnen. Dann sehr eng. Linienbusverkehr."
-Seenpromenade (Groﬂ Glienicke): sehr guter Asphalt	Q0 -9642,6538 -9703,6278 -9728,6173 -9727,6035 -9730,5802 -9763,5555 -9777,5489 -9766,5437 -9671,5382
+Seenpromenade (Groﬂ Glienicke): sehr guter Asphalt	Q0 -9642,6538 -9689,6334 -9703,6278 -9728,6173 -9727,6035 -9730,5802 -9763,5555 -9777,5489 -9766,5437 -9671,5382
 #: by: ulrike (ub6):
 #: add_fragezeichen: Sind Teilabschnitte der Straﬂe "In der Aue" asphaltiert?
 #: XXX: zumindest die Verbindung zwischen den Tschaikowskiwegen!

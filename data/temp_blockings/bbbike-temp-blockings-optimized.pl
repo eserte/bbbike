@@ -576,7 +576,7 @@ userdel	q4::inwork; 10350,13376 10527,13257
        undef,
        {
          'until' => undef,
-         'text' => 'Anwohner haben den Uferweg versperrt',
+         'text' => 'Anwohner haben den Uferweg am Griebnitzsee versperrt',
          'from' => undef,
          'id' => 1625,
          'data' => 'userdel	2::temp -8625,-1176 -8700,-997 -8813,-933 -8913,-813 -9103,-813 -9239,-739 -9337,-668 -9365,-610 -9454,-434 -9562,-325
@@ -1697,6 +1697,15 @@ userdel	q3::inwork; 9456,11513 9444,11616
          'from' => 1270235753,
          'id' => 2039,
          'data' => 'userdel	2::temp 6790,16018 6914,15908 6936,15888 7043,15793 7129,15717 7198,15656
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => undef,
+         'text' => 'Anwohner haben den Uferweg am Groß Glienicker See versperrt',
+         'from' => undef,
+         'id' => 2040,
+         'data' => 'userdel	2::temp -9668,6171 -9622,5804 -9640,5723 -9727,5573
 ',
          'type' => 'gesperrt'
        }

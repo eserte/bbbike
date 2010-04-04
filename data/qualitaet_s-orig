@@ -3171,6 +3171,8 @@ Schwarzmeerstr. [Wohngebiet]: asphaltiert	Q0 17708,10768 17751,10904
 Schwarzmeerstr. [Wohngebiet]: Beton	Q1 17751,10904 17838,10878 17855,10873
 Am Lindenplatz: Verbundsteinpflaster	Q1 17838,10878 17856,10961
 Bahrendorfer Str.: Beton	Q0 21707,7661 21736,7489 21771,7466 21865,7403 21956,7428
+Außenweg: unbefestigte Straße	Q2 -7783,8524 -7431,8255 -7425,8153 -7460,7826 -7418,7842
+Borkumer Str.: Asphalt	Q0 -3662,13797 -3849,13848
 ######################### User Contributions #################################
 #: by: Dominik Seelow vvv
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
@@ -9938,15 +9940,23 @@ Druckerkehre: guter Beton	Q0 16657,1124 16669,1166 16698,1198
 Lüderitzstr.: Kopfsteinpflaster	Q2 6215,16340 6349,16213
 Lüderitzstr.: schlechter Beton, zahlreiche Schlaglöcher	Q2 6349,16213 6503,16068
 #: by: ^^^
-#: by: Uwe Borgenhagen:
+#: by: Uwe Borgenhagen: vvv
 #: note: gemeinsamer Rad+Fußweg
 (Mauerweg - Matthäusweg): Asphalt	Q0 14876,1686 14962,1667
+#: note: derzeit (2010-03) liegt viel Erde/Laub, dass man den Asphalt nicht sehen kann
+(Matthäusweg - Friedrich-Kayßler-Weg): Asphalt	Q0 14996,1564 14962,1667
+#: by: ^^^
 #: by: Sebastian Bralant:
 # q1, enge Straße, RW6, aber Qualität fehlte
 Nidwaldener Zeile: Verbundsteinpflaster	Q1+ 3581,2211 3581,2105
 #: by: Nicole Meyer:
 #: note: enge Straße, q0
 Annaburger Str.: mäßiger Beton	Q1- 25237,14627 25097,14585 24981,14550
+#: by: Michaela (mivo...):
+#: note: laut osm unpaved, track grade2
+(An der Bahn): schlechter fester Sandweg, viele Schlaglöcher	Q3 12239,19664 12547,20154 12835,20637
+#: by: terrorpaul:
+Hornetweg: mäßiger Asphalt	Q1- 20147,14570 20183,14645 20231,14745 20261,14806 20322,14940
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206
