@@ -552,11 +552,40 @@ sub handle_cycleway_like {
 	$node_id;
     } @{ $r->[Strassen::COORDS] };
 
+    my $extra_tags_for_dualdir = sub {
+	my $extra_tags = '';
+	my $hin_mandatory   = ($cat_hin||'') eq 'RW2';
+	my $rueck_mandatory = ($cat_rueck||'') eq 'RW8';
+	if ($hin_mandatory && $rueck_mandatory) {
+	    $extra_tags .= qq{  <tag k="bbbike:usage" v="mandatory" />\n};
+	} elsif ($hin_mandatory || $rueck_mandatory) {
+	    $extra_tags .= qq{  <tag k="bbbike:usage" v="mixed" />\n};
+	} elsif (!$hin_mandatory && !$rueck_mandatory) {
+	    $extra_tags .= qq{  <tag k="bbbike:usage" v="optional" />\n};
+	} else {
+	    $extra_tags .= qq{  <tag k="bbbike:usage" v="unknown" />\n};
+	}
+	$extra_tags;
+    };
+
     for my $def ([$cat_hin, +1], [$cat_rueck, -1]) {
 	my($cat, $direction) = @$def;
 	next if !defined $cat || $cat eq '';
 	my $extra_tags;
-	if ($cat eq 'RW' || $cat eq 'RW?' || $cat eq 'RW8?') {
+	# Check for Zweirichtungsradweg first
+	if (($cat_hin||'') =~ m{^(RW|RW1|RW2|RW\?)$} && ($cat_rueck||'') =~ m{^(RW8|RW8\?|RW9)$}) {
+	    if ($direction == +1) {
+		$extra_tags .= qq{  <tag k="cycleway" v="track" />\n};
+		$extra_tags .= qq{  <tag k="bbbike:cycleway_type" v="dualdir" />\n};
+		$extra_tags .= $extra_tags_for_dualdir->();
+	    }
+	} elsif (($cat_rueck||'') =~ m{^(RW|RW1|RW2|RW\?)$} && ($cat_hin||'') =~ m{^(RW8|RW8\?|RW9)$}) {
+	    if ($direction == -1) {
+		$extra_tags .= qq{  <tag k="cycleway" v="track" />\n};
+		$extra_tags .= qq{  <tag k="bbbike:cycleway_type" v="dualdir" />\n};
+		$extra_tags .= $extra_tags_for_dualdir->();
+	    }
+	} elsif ($cat eq 'RW' || $cat eq 'RW?' || $cat eq 'RW8?') {
 	    $extra_tags .= qq{  <tag k="cycleway" v="track" />\n};
 	    $extra_tags .= qq{  <tag k="bbbike:usage" v="unknown" />\n};
 	} elsif ($cat eq 'RW1' || $cat eq 'RW9') {
@@ -576,6 +605,9 @@ sub handle_cycleway_like {
 	    $extra_tags .= qq{  <tag k="bbbike:usage" v="unknown" />\n};
 	} elsif ($cat eq 'RW5') {
 	    $extra_tags .= qq{  <tag k="psv" v="yes" />\n};
+	    if ($r->[Strassen::NAME()] =~ m{(Busspur ist immer gültig|Busspur gilt immer)}) {
+		$extra_tags .= qq{  <tag k="bbbike:times" v="always" />\n};
+	    }
 	} elsif ($cat eq 'RW5?') {
 	    $extra_tags .= qq{  <tag k="psv" v="yes" />\n};
 	    $extra_tags .= qq{  <tag k="bbbike:times" v="unknown" />\n};
