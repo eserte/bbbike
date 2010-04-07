@@ -20174,13 +20174,23 @@ sub load_photo {
 	    if ($file =~ /.xpm$/ && !$small_icons) {
 		$photo = $top->Pixmap(@name, -file => Tk::findINC($file));
 	    } else {
-		my $path = file_name_is_absolute($file) ? $file : "$FindBin::RealBin/images/$file";
-		$path = try_image_suffix($path);
-		if (defined $path && -r $path) {
-		    $photo = $top->Photo(@name, -file => $path);
+		my $path;
+		if (file_name_is_absolute($file)) {
+		    $path = $file;
 		} else {
-		    warn "Could not find photo, try <$file> in some \@INC dirs...\n"; # XXX should never happen?
-		    $photo = $top->Photo(@name, -file => Tk::findINC($file));
+		    for my $try_file ((-d "$datadir/images" ? "$datadir/images/$file" : ()),
+				      "$FindBin::RealBin/images/$file",
+				     ) {
+			$path = try_image_suffix($try_file);
+			if (defined $path && -r $path) {
+			    $photo = $top->Photo(@name, -file => $path);
+			    last;
+			}
+		    }
+		    if (!$photo) {
+			warn "Could not find photo, try <$file> in some \@INC dirs...\n"; # XXX should never happen?
+			$photo = $top->Photo(@name, -file => Tk::findINC($file));
+		    }
 		}
 	    }
 	    if ($small_icons && $photo) {
