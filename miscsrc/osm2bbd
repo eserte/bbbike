@@ -399,7 +399,12 @@ if ($experiments{'polar_coord_hack'}) {
 	}
     }
     if (!defined $lat) {
-	die "Cannot apply polar_coord_hack experiment, because the center could not be determined";
+	die <<EOF;
+Cannot apply polar_coord_hack experiment, because the center could not
+apply polar_coorbe determined. Most commonly this happens because the
+osm file does not have a <bound> tag (e.g. because it was created
+using osmosis). To fix this, set manually the -center option.
+EOF
 	# XXX should read the bboxes of all files
     }
     my $newx1 = cos(Math::Trig::deg2rad($lat))*111_000; # XXX 111km is rough for one degree
