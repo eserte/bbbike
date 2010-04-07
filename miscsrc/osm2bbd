@@ -1162,7 +1162,7 @@ for my $osm_file (@osm_files) {
 		    if ($oneway =~ m{^(?:yes|true)$}) {
 			if ($is_motorway ||
 			    (exists $tag{'bicycle'} && $tag{'bicycle'} eq 'opposite') || # seen in Würzburg, Äußere Pleich, but no documentation/discussion for it
-			    (exists $tag{'cycleway'} && $tag{'cycleway'} eq 'opposite') # described in http://wiki.openstreetmap.org/wiki/DE:Germany_roads_tagging
+			    (exists $tag{'cycleway'} && $tag{'cycleway'} =~ m{^opposite(?:$|_lane|_track)$}) # described in http://wiki.openstreetmap.org/wiki/DE:Germany_roads_tagging
 			   ) {
 			    push @or, ['gesperrt_car', '1', reversed => $reversed];
 			} else {
