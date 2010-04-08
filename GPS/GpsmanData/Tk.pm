@@ -445,10 +445,12 @@ sub _track_attributes_editor {
     }
     my $fill_brands = sub {
 	my($vehicle) = @_;
-	if (exists $self->cget(-vehiclestobrands)->{$vehicle}) {
-	    $brands_be->configure(-choices => $self->cget(-vehiclestobrands)->{$vehicle});
-	} else {
-	    $brands_be->configure(-choices => []);
+	if ($brands_be) {
+	    if ($self->cget(-vehiclestobrands) && exists $self->cget(-vehiclestobrands)->{$vehicle}) {
+		$brands_be->configure(-choices => $self->cget(-vehiclestobrands)->{$vehicle});
+	    } else {
+		$brands_be->configure(-choices => []);
+	    }
 	}
     };
     Tk::grid($t->Label(-text => "Vehicle"),
