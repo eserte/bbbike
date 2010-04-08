@@ -16516,11 +16516,13 @@ EOF
      },
      { from  => 1270235189, # 2010-04-02 21:06
        until => 1283205600, # 2010-08-31 00:00
-       text  => 'Neustädtische Kirchstr. (Mitte) Richtung Reichtagsufer zwischen Dorotheenstr. und Unter den Linden Baustelle, Fahrtrichtung gesperrt bis 30.08.2010 16:00 Uhr ',
+       text  => 'Neustädtische Kirchstr. (Mitte) Richtung Unter den Linden zwischen Dorotheenstr. und Unter den Linden Baustelle, Fahrtrichtung gesperrt bis 30.08.2010 16:00 Uhr ',
        type  => 'handicap',
        source_id => 'IM_014421',
        data  => <<EOF,
-userdel	q4::inwork; 9141,12320 9130,12433 9123,12500
+userdel	2::inwork; 9123,12500 9130,12433
+Kein Durchgang von Mittelstr. zur Neustädtischen Kirchstr., auch nicht für Fußgänger	2::inwork 9343,12464 9130,12433
+userdel	q4::inwork; 9130,12433 9141,12320
 EOF
      },
      { from  => 1255467829, # 2009-10-13 23:03

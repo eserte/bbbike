@@ -1275,10 +1275,12 @@ userdel	q4::inwork; 10829,18083 10907,18109 10938,18147 10989,18172 11137,18358 
        {
          'source_id' => 'IM_014421',
          'until' => 1283205600,
-         'text' => 'Neustädtische Kirchstr. (Mitte) Richtung Reichtagsufer zwischen Dorotheenstr. und Unter den Linden Baustelle, Fahrtrichtung gesperrt bis 30.08.2010 16:00 Uhr ',
+         'text' => 'Neustädtische Kirchstr. (Mitte) Richtung Unter den Linden zwischen Dorotheenstr. und Unter den Linden Baustelle, Fahrtrichtung gesperrt bis 30.08.2010 16:00 Uhr ',
          'from' => 1270235189,
          'id' => 1946,
-         'data' => 'userdel	q4::inwork; 9141,12320 9130,12433 9123,12500
+         'data' => 'userdel	2::inwork; 9123,12500 9130,12433
+Kein Durchgang von Mittelstr. zur Neustädtischen Kirchstr., auch nicht für Fußgänger	2::inwork 9343,12464 9130,12433
+userdel	q4::inwork; 9130,12433 9141,12320
 ',
          'type' => 'handicap'
        },
@@ -1690,16 +1692,7 @@ userdel	q3::inwork; 9456,11513 9444,11616
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_015451',
-         'until' => 1270504799,
-         'text' => 'Müllerstr. (Wedding): Veranstaltung, gesperrt (bis vorauss. 05.04.2010 23:59) in beiden Richtungen zwischen Nazarthkirchstr. und Seestr. ',
-         'from' => 1270235753,
-         'id' => 2039,
-         'data' => 'userdel	2::temp 6790,16018 6914,15908 6936,15888 7043,15793 7129,15717 7198,15656
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => undef,
          'text' => 'Anwohner haben den Uferweg am Groß Glienicker See versperrt',
