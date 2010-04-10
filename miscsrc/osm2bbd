@@ -574,7 +574,7 @@ for my $osm_file (@osm_files) {
 	    $next1->() if exists $node2ll{$id};
 	    my $lat = $node->getAttribute('lat');
 	    my $lon = $node->getAttribute('lon');
-	    $node2ll{$id} = $conv->($lon,$lat);
+	    my $ll = $node2ll{$id} = $conv->($lon,$lat);
 
 	    my %tag;
 	    tie %tag, 'Tie::IxHash' if SORTED_TAGS;
@@ -621,7 +621,7 @@ for my $osm_file (@osm_files) {
 			# so resolve it later.
 			# XXX Maybe this should cause a warning? But currently "normal" railway stations
 			# do not have a "station" tag, just light_rail and subway
-			resolve_node_later("railway", $name, $node2ll{$id});
+			resolve_node_later("railway", $name, $ll);
 			$next2->();
 		    }
 		} elsif ($railway_cat =~ m{^(?:crossing|level_crossing)$}) {
@@ -672,7 +672,7 @@ for my $osm_file (@osm_files) {
 			$cat = 1;
 		    }
 		    push @or, ["orte", $cat];
-		    $place_to_population{$node2ll{$id}} = $population;
+		    $place_to_population{$ll} = $population;
 		} else {
 		    if ($place eq 'hamlet' || $place eq 'suburb' || $place eq 'locality') {
 			push @or, ["orte", 0];
@@ -735,7 +735,7 @@ for my $osm_file (@osm_files) {
 		if (exists $tag{'url'}) {
 		    push @{$out{$out_file}}, ["#: url: $tag{url}"];
 		}
-		push @{$out{$out_file}}, [$name, [$node2ll{$id}], $cat];
+		push @{$out{$out_file}}, [$name, [$ll], $cat];
 	    }
 	}
     }
