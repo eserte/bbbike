@@ -2062,13 +2062,15 @@ sub show_bbbike_suggest_toplevel {
     my($ofh,$sorted_zipfile) = File::Temp::tempfile(SUFFIX => ".data", UNLINK => 1);
     my $srcfile;
     my $is_opensearch_file;
-    for my $def (["$main::datadir/opensearch.streetnames", 1],
-		 ["$main::datadir/Berlin.coords.data", 0],
+    my $is_utf8;
+    for my $def (["$main::datadir/opensearch.streetnames", 1, 1],
+		 ["$main::datadir/Berlin.coords.data", 0, 0],
 		) {
-	my($try_srcfile, $try_is_opensearch_file) = @$def;
+	my($try_srcfile, $try_is_opensearch_file, $try_is_utf8) = @$def;
 	if (-s $try_srcfile) {
 	    $srcfile = $try_srcfile;
 	    $is_opensearch_file = $try_is_opensearch_file;
+	    $is_utf8 = $try_is_utf8;
 	    last;
 	}
     }
@@ -2077,9 +2079,10 @@ sub show_bbbike_suggest_toplevel {
 	return;
     }
     {
-	local $ENV{LANG} = $ENV{LC_CTYPE} = $ENV{LC_ALL} = 'C';
+	local $ENV{LANG} = $ENV{LC_CTYPE} = $ENV{LC_ALL} = $is_utf8 ? 'en_US.utf8' : 'C';
 	open my $fh, "-|", 'sort', $srcfile
 	    or die "Cannot sort $srcfile: $!";
+	binmode $fh, ':utf8' if $is_utf8;
 	while(<$fh>) {
 	    if ($is_opensearch_file) {
 		chomp;
