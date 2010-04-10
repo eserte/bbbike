@@ -1462,8 +1462,10 @@ sort_by_population_and_category();
 if ($parsefor) {
     output_data(\*STDOUT, $out{"-"});
 } else {
-    if (!mkdir $o) {
-	die "Cannot create output directory <$o>: $!" if !$f;
+    if (!-d $o) {
+	if (!mkdir $o) {
+	    die "Cannot create output directory <$o>: $!" if !$f;
+	}
     }
     chdir $o
 	or die "Cannot chdir to $o: $!";
