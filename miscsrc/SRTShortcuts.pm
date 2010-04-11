@@ -2062,6 +2062,7 @@ sub show_bbbike_suggest_toplevel {
     my($ofh,$sorted_zipfile) = File::Temp::tempfile(SUFFIX => ".data", UNLINK => 1);
     my $srcfile;
     my $is_opensearch_file;
+    my %alias2street;
     my $is_utf8;
     for my $def (["$main::datadir/opensearch.streetnames", 1, 1],
 		 ["$main::datadir/Berlin.coords.data", 0, 0],
@@ -2086,8 +2087,11 @@ sub show_bbbike_suggest_toplevel {
 	while(<$fh>) {
 	    if ($is_opensearch_file) {
 		chomp;
-		my($street) = split /\t/, $_;
-		print $ofh join("|", $street, "", "", "0,0"), "\n";
+		my($alias, $street) = split /\t/, $_;
+		print $ofh join("|", $alias, "", "", "0,0"), "\n";
+		if ($street) {
+		    $alias2street{$alias} = $street;
+		}
 	    } else {
 		print $ofh $_;
 	    }
@@ -2115,6 +2119,9 @@ sub show_bbbike_suggest_toplevel {
 		 main::status_message("Strange, no match for $str (@cityparts) found...", 'die') if (!@match);
 		 $coord = $match[0]->[PLZ::LOOK_COORD()];
 	     } else {
+		 if (exists $alias2street{$str}) {
+		     $str = $alias2street{$str};
+		 }
 		 my $s = $main::str_obj{s} || die "No strassen object available";
 		 $s->init;
 		 while(1) {
