@@ -256,7 +256,7 @@ rsync-vran-spiff-hermes:
 # CVS handling (mirror to the now deprecated CVS repository, but
 # automatic pushes still occur)
 
-CVS_DIR=${HOME}/work/bbbike
+CVS_DIR=${HOME}/work/bbbike.CVS
 
 # old name was cvs-everything:
 cvs-chain:	copy-to-cvs \
