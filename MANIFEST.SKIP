@@ -45,7 +45,7 @@ patch\.gz$
 ^data/.*\.inx\d+$
 ^data/.*\.lock$
 ^README.admin$
-^README.tt$
+^README.tpl$
 ^CRASH/
 ^cache\b
 ^cdrom/

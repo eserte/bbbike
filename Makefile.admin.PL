@@ -507,12 +507,12 @@ predist:
 
 CLEAN_AFTER_POD2HTML=$(RM_F) pod2html-*cache pod2htm?.?~~
 
-README:	README.tt BBBikeVar.pm
-	tpage --define lang=DE --eval_perl README.tt > README~
+README:	README.tpl BBBikeVar.pm
+	tpage --define lang=DE --eval_perl README.tpl > README~
 	mv README~ README
 
-README.english: README.tt BBBikeVar.pm
-	tpage --define lang=EN --eval_perl README.tt > README.english~
+README.english: README.tpl BBBikeVar.pm
+	tpage --define lang=EN --eval_perl README.tpl > README.english~
 	mv README.english~ README.english
 
 EOF
