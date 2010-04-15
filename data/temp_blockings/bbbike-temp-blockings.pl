@@ -4782,7 +4782,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'INKO_82301_COPY_1',
        data  => <<EOF,
-userdel	2::inwork -915,22935 -760,22980 -728,22990 -656,23011
+userdel	2::inwork -915,22935 -774,22977 -728,22990 -656,23011
 EOF
      },
      { from  => 1149976800, # 2006-06-11 00:00

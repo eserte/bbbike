@@ -1811,6 +1811,16 @@ userdel	q3::inwork; 9456,11513 9444,11616
          'data' => 'userdel	q4::inwork 18301,50512 18022,49766 17638,49090
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => 'LSO-SG33-F10040',
+         'until' => 1271887200,
+         'text' => 'Zeschdorf: Straßenausbau zwischen Alt Zeschdorf und Abzweig B 167 14.04.2010 bis 21.04.2010 ',
+         'from' => 1271281409,
+         'id' => 2052,
+         'data' => 'userdel	2::inwork 81301,3881 82314,4413 82765,4636
+',
+         'type' => 'gesperrt'
        }
      
 );
