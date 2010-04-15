@@ -1,10 +1,9 @@
 # -*- perl -*-
 
 #
-# $Id: GeocoderPlugin.pm,v 1.6 2008/07/19 18:27:14 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2007,2008 Slaven Rezic. All rights reserved.
+# Copyright (C) 2007,2008,2010 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -25,7 +24,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION $geocoder_toplevel);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.6 $ =~ /(\d+)\.(\d+)/);
+$VERSION = 2.00;
 
 BEGIN {
     if (!eval '
@@ -99,8 +98,22 @@ sub geocoder_dialog {
 
     my $gcf = $geocoder_toplevel->LabFrame(-label => 'Geocoding modules', -labelside => 'acrosstop'
 					  )->pack(-fill => 'x', -expand => 1);
-    my $geocoder_api = 'Yahoo';
-    my %apis = ('Google' => { 'new' => sub {
+    my $geocoder_api = 'My_Google_v3';
+    my %apis = ('My_Google_v3' => {
+				   'label' => 'Google v3 (without API key)',
+				   'require' => sub { },
+				   'new' => sub { Geo::Coder::My_Google_v3->new },
+				   'extract_loc' => sub {
+				       my $location = shift;
+				       @{$location->{geometry}{location}}{qw(lng lat)};
+				   },
+				   'extract_addr' => sub {
+				       my $location = shift;
+				       $location->{formatted_address} . "\n" .
+					   join(",", @{$location->{geometry}{location}}{qw(lng lat)});
+				   },
+				  },
+		'Google' => { 'new' => sub {
 				  my $apikey = do {
 				      my $file = "$ENV{HOME}/.googlemapsapikey";
 				      open my $fh, $file
@@ -295,6 +308,35 @@ sub geocoder_dialog {
 	my $loc = $args{location};
 	my($res) = $self->{cloudmade}->find($loc, {results=>1});
 	$res;
+    }
+}
+
+{
+    package Geo::Coder::My_Google_v3;
+    sub new { bless {}, shift }
+    sub geocode {
+	my($self, %args) = @_;
+	my $loc = $args{location};
+	require CGI;
+	CGI->import(qw(-oldstyle_urls));
+	require LWP::UserAgent; # should be already loaded anyway
+	require JSON::XS;
+	my $ua = LWP::UserAgent->new;
+	$ua->timeout(10);
+	my $url = 'http://maps.google.com/maps/api/geocode/json?' . CGI->new({address => $loc,
+									      sensor => 'false'})->query_string;
+	my $resp = $ua->get($url);
+	if ($resp->is_success) {
+	    my $content = $resp->decoded_content(charset => "none");
+	    my $res = JSON::XS->new->utf8->decode($content);
+	    if ($res->{status} eq 'OK') {
+		return $res->{results}->[0];
+	    } else {
+		main::status_message("Fetching $url did not return OK status", "error");
+	    }
+	} else {
+	    main::status_message("Fetching $url failed: " . $resp->status_line, "error");
+	}
     }
 }
 
