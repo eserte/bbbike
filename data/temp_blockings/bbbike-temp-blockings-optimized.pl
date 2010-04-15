@@ -499,7 +499,7 @@ push @temp_blocking,
          'text' => 'Reichenberger Str., Einbahnstraße Richtung Kottbusser Tor',
          'from' => 1260212611,
          'id' => 1563,
-         'data' => 'userdel	1::inwork 12229,10014 12398,9938 12556,9862
+         'data' => 'userdel	1::inwork 12398,9938 12556,9862 12714,9792 12834,9738
 ',
          'type' => 'gesperrt'
        },
@@ -1701,6 +1701,116 @@ userdel	q3::inwork; 9456,11513 9444,11616
          'data' => 'userdel	2::temp -9668,6171 -9622,5804 -9640,5723 -9727,5573
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => '101100040',
+         'until' => 1275775200,
+         'text' => 'Althüttendorf: Grundhafter Ausbau im Bereich der AS Chorin, westl. Seite 12.04.2010 bis 05.06.2010 ',
+         'from' => 1271280104,
+         'id' => 2041,
+         'data' => 'userdel	2::inwork 35000,60912 35215,60669 35255,60090
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => '107300037',
+         'until' => 1279317600,
+         'text' => 'Angermünde: Grundhafter Straßen- und Kanalbau OL Angermünde, R.-Breitscheid-Str., 06.04.2010 bis 16.07.2010 ',
+         'from' => 1271280213,
+         'id' => 2042,
+         'data' => 'userdel	q4::inwork 48657,68265 49286,68297 49503,68415
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_015512',
+         'until' => 1291129200,
+         'text' => 'Klemkestr. (Reinickendorf): Baustelle, Fahrtrichtung Richtung Residenzstr. zwischen Str. vor Schönholz und Emmentaler Strgesperrt. 12.04.2010 12:00 Uhr bis 30.11.2010 16:00 Uhr',
+         'from' => 1270980000,
+         'id' => 2043,
+         'data' => 'userdel	q4::inwork; 8182,18761 8066,18754 7886,18742 7855,18697
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_015518',
+         'until' => 1319984100,
+         'text' => 'Heinrich-Mann-Str. (Pankow): Baustelle, gesperrt in beiden Richtungen zwischen Cottastr. und Grabbeallee. 12.04.2010 14:00 Uhr bis 30.10.2011 15:15 Uhr',
+         'from' => 1270987200,
+         'id' => 2044,
+         'data' => 'userdel	q4::inwork 9881,18354 9821,18392
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'LSO-SG33-E10030',
+         'until' => 1283292000,
+         'text' => 'Hoppegarten: Deckenerneuerung Hönow - Mehrow Vollsperrung zw. Hönow, Grenzweg bis Mehrow, Altlandsberger Weg 12.04.2010 bis 31.08.2010 ',
+         'from' => 1271281013,
+         'id' => 2045,
+         'data' => 'userdel	2::inwork 25170,18422 25654,17351
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'LSO-SG33-E10027',
+         'until' => 1273701600,
+         'text' => 'Liebenwalde: Deckenerneuerung Klosterfelde - Zerpenschleuse 07.04.2010 bis 12.05.2010 ',
+         'from' => 1271281052,
+         'id' => 2046,
+         'data' => 'userdel	2::inwork 16050,46166 16134,45616
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'LSS-SG33-C10063',
+         'until' => 1273183200,
+         'text' => 'Massen-Niederlausitz: Deckenerneuerung Lieskau - Massen Standorte: B96 12.04.2010 bis 06.05.2010 ',
+         'from' => 1271281087,
+         'id' => 2047,
+         'data' => 'userdel	2::inwork 37473,-85957 37200,-85763 36941,-85640
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'LSW-SG33-K10017',
+         'until' => 1293145200,
+         'text' => 'Neuruppin: Ersatzneubau der Brücke L 164, 06.04.2010 bis 23.12.2010 ',
+         'from' => 1271281149,
+         'id' => 2048,
+         'data' => 'userdel	2::inwork -20021,54750 -20798,54347
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'LSW-SG33-K10037',
+         'until' => 1277157600,
+         'text' => 'Rheinsberg: Straßenausbau und Bau einer Verkehrsinsel am Ortsausgang in FR Flecken Zechlin Ortslage Dorf Zechlin Umleitung innerorts 06.04.2010 bis 21.06.2010 ',
+         'from' => 1271281188,
+         'id' => 2049,
+         'data' => 'userdel	q4::inwork -33491,80874 -33511,80553
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => '106900153',
+         'until' => 1277935200,
+         'text' => 'Stahnsdorf: Straßenbau zw. OA Schenkenhorst und KVK Nudow Vollsperrung 12.04.2010 bis 30.06.2010 ',
+         'from' => 1271281239,
+         'id' => 2050,
+         'data' => 'userdel	2::inwork -4503,-8506 -4020,-7973 -3596,-7607
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'LSO-SG33-E10026',
+         'until' => 1288389600,
+         'text' => 'Wandlitz: Straßenbau (Ausbau OD) OD Zerpenschleuse 06.04.2010 bis 29.10.2010 ',
+         'from' => 1271281324,
+         'id' => 2051,
+         'data' => 'userdel	q4::inwork 18301,50512 18022,49766 17638,49090
+',
+         'type' => 'handicap'
        }
      
 );
