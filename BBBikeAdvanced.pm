@@ -2411,6 +2411,11 @@ sub find_canvas_item_file {
 	$e->edit_temp_blockings;
     } elsif ($name && $name =~ m{file://(/\S+)}) {
 	start_emacsclient($1);
+    } elsif ($name && $name =~ m{gnus:(\S+)}) {
+	my $group_article = $1;
+	my($group, $article) = $group_article =~ m{^(.*):(.*)$};
+	my $eval = qq{(progn (require 'org) (org-follow-gnus-link "$group" "$article"))};
+	start_emacsclient_eval($eval);
     } elsif (defined $abk && (exists $str_file{$abk} ||
 			 exists $p_file{$abk})) {
 	my($p_f, $str_f);
@@ -2448,6 +2453,13 @@ sub find_canvas_item_file {
 sub start_emacsclient {
     my($filename, $linenumber) = @_;
     my @cmd = ('emacsclient', '-n', ($linenumber ? '+'.$linenumber : ()), $filename);
+    system @cmd;
+    main::status_message("Command @cmd failed: $?", "warn") if $? != 0;
+}
+
+sub start_emacsclient_eval {
+    my($eval) = @_;
+    my @cmd = ('emacsclient', '-n', "-e", $eval);
     system @cmd;
     main::status_message("Command @cmd failed: $?", "warn") if $? != 0;
 }
