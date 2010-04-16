@@ -7233,7 +7233,7 @@ sub set_bindings {
 			   Tk::Babybike::handle_button1_scribble($c,$c->XEvent);
 		       } elsif ($map_mode eq MM_URL_SELECT) {
 			   my($url) = grep { $_ } map {
-			       my($url) = $_ =~ m{(http://\S+)};
+			       my($url) = $_ =~ m{(https?://\S+)};
 			       defined $url ? $url : undef;
 			   } $c->gettags("current");
 			   if ($url) {
