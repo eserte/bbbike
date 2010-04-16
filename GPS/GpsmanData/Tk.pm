@@ -446,7 +446,7 @@ sub _track_attributes_editor {
     my $fill_brands = sub {
 	my($vehicle) = @_;
 	if ($brands_be) {
-	    if ($self->cget(-vehiclestobrands) && exists $self->cget(-vehiclestobrands)->{$vehicle}) {
+	    if ($self->cget(-vehiclestobrands) && $vehicle && exists $self->cget(-vehiclestobrands)->{$vehicle}) {
 		$brands_be->configure(-choices => $self->cget(-vehiclestobrands)->{$vehicle});
 	    } else {
 		$brands_be->configure(-choices => []);
