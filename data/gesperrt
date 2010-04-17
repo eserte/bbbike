@@ -534,6 +534,7 @@ Straßenbahnwendestelle Virchowstr.	1 12916,13368 13081,13457
 Am Friedrichshain	1 12065,13851 12104,13913 12147,13887 12106,13828
 Potsdamer Chausee: explizit für Radfahrer verboten	1 -8797,7638 -8405,7751
 Bösensteinweg	1 9943,1543 9847,1571 9771,1641
+Wesenberger Ring	1 13030,3664 13129,3809 13165,3850 13206,3854 13229,3836 13238,3794 13206,3674 13162,3576
 Am Neuen Garten	1 -12166,1384 -12212,1201 -12276,831 -12302,718 -12323,635 -12332,585 -12582,127
 Leistikowstr.	1 -12512,810 -12302,718
 Hochstraße	3nocross::ignrte -11399,-1339 -11461,-1424 -11540,-1543
@@ -698,6 +699,9 @@ Zeltinger Platz	1s 2404,25187 2355,25252 2395,25273 2446,25265 2490,25211 2486,2
 Ludolfinger Platz	1s 2277,25033 2245,25016 2205,25042 2192,25083 2216,25117 2277,25094 2285,25059 2277,25033
 Sewanstr. - Balatonstr.	1s 17705,10232 17741,10386
 Hönower Str. (Karlshorst) (Ausweichen auf Sandbankette möglich)	1s 18377,9366 18490,9387
+Mittelstreifen mit hoher Kante	3nocross::ignrte 13796,5262 13820,5203 13889,4954
+Teterower Str. -> Buschkrugallee: Mittelstreifen mit hoher Kante	3::igndisp 13717,5175 13820,5203 13796,5262
+Buschkrugallee -> Teterower Str.: Mittelstreifen mit hoher Kante	3::igndisp 13889,4954 13820,5203 13717,5175
 Straßenbahntrasse	3nocross::ignrte 12878,13229 12979,13280 13078,13330
 Landsberger Allee -> Virchowstr.: Straßenbahntrasse	3::igndisp 12878,13229 12979,13280 12916,13368
 Straßenbahntrasse	3nocross::ignrte 15639,10469 15408,10638 15383,10656
@@ -1710,6 +1714,7 @@ Alice-und-Hella-Hirsch-Ring: noch in Bau, gesperrt	2:inwork 15788,10252 15823,10
 Lina-Morgenstern-Str.: noch in Bau, gesperrt	2:inwork 15716,10303 15753,10353
 Kynaststraße: Abriss und Neubau	2:inwork 14988,11130 14897,10935 14881,10864 14867,10802 14828,10628 14802,10505 14795,10473 14766,10372 14724,10297
 Brücke im Tiergarten: gesperrt	2:inwork 6406,11784 6467,11780
+Matkowskystr.: wegen Bauarbeiten gesperrt	2:inwork 14530,11137 14509,11060
 Behlertstr.	1 -12370,-354 -12500,-339 -12621,-359 -12821,-417
 tragen (Treppe)	0:30:-82 2279,5112
 tragen (Treppe)	0:15:-136 2211,5120

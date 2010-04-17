@@ -683,6 +683,8 @@ Am Friedrichshain	1 12065,13851 12104,13913 12147,13887 12106,13828
 Potsdamer Chausee: explizit für Radfahrer verboten	1 -8797,7638 -8405,7751
 #: by: Maria Hach
 Bösensteinweg	1 9943,1543 9847,1571 9771,1641
+#: by: Manfred Brühl
+Wesenberger Ring	1 13030,3664 13129,3809 13165,3850 13206,3854 13229,3836 13238,3794 13206,3674 13162,3576
 ######################################################################
 #
 # Potsdam
@@ -863,6 +865,8 @@ Hönower Str. (Karlshorst) (Ausweichen auf Sandbankette möglich)	1s:q2 18377,9366
 # gesperrte Wegführung (nicht möglich zu umgehen --- wenn es eine
 # Umgehung gibt, sollte sie in comments_path-orig als PI; kommentiert sein)
 # 
+#: by: ruth mantei:
+Buschkrugallee: Mittelstreifen mit hoher Kante	3nocross 13796,5262 13820,5203 13889,4954
 Landsberger Allee: Straßenbahntrasse	3nocross 12878,13229 12979,13280 13078,13330
 Hauptstr.: Straßenbahntrasse	3nocross 15639,10469 15408,10638 15383,10656
 #: by: Heike Steinhardt ("eher nicht empfehlenswert")
@@ -1516,6 +1520,8 @@ Lina-Morgenstern-Str.: noch in Bau, gesperrt	2:inwork 15716,10303 15753,10353
 Kynaststraße: Abriss und Neubau	2:inwork 14988,11130 14897,10935 14881,10864 14867,10802 14828,10628 14802,10505 14795,10473 14766,10372 14724,10297
 #: last_checked: 2009-09-12
 Brücke im Tiergarten: gesperrt	2:inwork 6406,11784 6467,11780
+#: last_checked: 2010-04-17
+Matkowskystr.: wegen Bauarbeiten gesperrt	2:inwork 14530,11137 14509,11060
 #
 #: section ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #: section in Brandenburg vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv

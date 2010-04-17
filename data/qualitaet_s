@@ -2899,8 +2899,10 @@ Bahrendorfer Str.: Beton	Q0 21707,7661 21736,7489 21771,7466 21865,7403 21956,74
 Außenweg: unbefestigte Straße	Q2 -7783,8524 -7431,8255 -7425,8153 -7460,7826 -7418,7842
 Borkumer Str.: Asphalt	Q0 -3662,13797 -3849,13848
 Emmy-Zehden-Weg: Asphalt	Q0 4903,15105 4810,15000
-Kirchweg: schlechtes Kopfsteinpflaster, Ausweichen auf Gehweg üblich	Q3 -2912,1829 -2981,1925 -3019,1998 -3031,2184 -3030,2266
-Kirchweg: asphaltiert	Q0 -3030,2266 -3109,2306 -3211,2405 -3244,2436 -3235,2496 -3280,2507
+Kirchweg: asphaltiert	Q0 -2912,1829 -2981,1925 -3019,1998
+Kirchweg: schlechtes Kopfsteinpflaster, Ausweichen auf Gehweg üblich	Q3 -3019,1998 -3031,2184
+Kirchweg: asphaltiert	Q0 -3031,2184 -3030,2266
+Kirchweg: schlechtes Kopfsteinpflaster, Ausweichen auf Gehweg üblich	Q3 -3030,2266 -3109,2306 -3211,2405 -3244,2436 -3235,2496 -3280,2507
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
 Riemeisterstr.: mäßiges Kopfsteinpflaster, aber asphaltierte Radwege	Q1 346,4833 294,4916 158,5103 103,5123
 Pücklerstr.: Fahrbahn mit schlechtem Kopfsteinpflaster, Radweg OK	Q1 2688,7067 2576,7026 2465,6984 2403,6962 2266,6911 2155,6873 2130,6865 2054,6840 1961,6820
@@ -5345,7 +5347,7 @@ Straße 41 (Karow): Asphalt	Q0 15013,22472 15087,22573 15154,22674 15169,22770
 Feldzeugmeisterstr. (Haselhorst): guter Asphalt	Q0 -663,14996 -634,15012 -558,15123 -556,15128 -528,15171 -532,15184
 Telramundweg: guter Asphalt	Q0 5206,4432 5284,4390
 Reimerswalder Steig: guter Beton	Q0 -1870,22999 -1764,23260
-(Weg entlang der U-Bahn-Betriebswerkstatt): teils guter Asphalt, teils schlechte Schotterpiste	Q2 13162,3576 13356,3467 13624,3355 13740,3252
+(Weg entlang der U-Bahn-Betriebswerkstatt): teils guter Asphalt, teils schlechte Schotterpiste	Q2 13162,3576 13384,3426 13624,3355 13740,3252
 Attilagarten: Kopfsteinpflaster	Q2 8491,5150 8435,5239
 (Wilhelm-Kuhr-Str. - Wollankstr.): Asphalt	Q1 9303,17965 9314,17943 9341,17917
 (Wilhelm-Kuhr-Str. - Wollankstr.): fester Sandweg	Q1 9341,17917 9348,17885 9363,17868 9396,17863
@@ -6561,6 +6563,19 @@ Rübezahlweg: wassergebundene Decke	Q2 14743,18839 14698,18967 14664,19057 14622,
 Charles-H.-King-Str.: guter Beton	Q0 -1248,2451 -1401,2391 -1604,2324
 Rohrweihstr.: guter Asphalt	Q0 -2141,19681 -2103,19833 -2073,19990 -2055,20129 -2020,20309 -1991,20312
 Am Waldhaus: Asphalt	Q0 -2664,1255 -2753,1490 -2847,1705 -2912,1829
+Flakenseestr.: mäßiger Beton	Q1 26492,5099 26350,5167 26211,5239
+Laubsängerweg: mäßiger Asphalt	Q1 14761,3580 14725,3617 14655,3687 14594,3712 14568,3731 14484,3796 14453,3823 14387,3875 14324,3938
+Tränkeweg: guter Asphalt	Q0 14453,3823 14806,4125
+Kolkrabenweg: schlechter Asphalt	Q2 14655,3687 14885,3891
+Eilertstr.: Asphalt	Q0 398,1183 278,1351 119,1442
+McNair-Promenade: gutes Verbundsteinpflaster	Q1 2163,1499 2077,1460 1975,1413 1882,1376 1785,1338
+Steinäckerstr.: schlechtes Kopfsteinpflaster	Q3 2637,2973 3027,2958
+Sophienstr. (Lichterfelde): Asphalt	Q0 3632,3943 3768,4045
+Ingostr.: schlechtes Kopfsteinpflaster	Q3 7901,4726 7970,4640
+Augsburger Platz: Kopfsteinpflaster	Q2 11696,-2272 11676,-2173
+Augsburger Platz: Kopfsteinpflaster	Q2 11649,-2283 11625,-2179
+Teterower Str.: asphaltiert, einige Baumwurzeln	Q1 13820,5203 13717,5175 13626,5153
+Wesenberger Ring: gute Qualität	Q1 13162,3576 13206,3674 13238,3794 13229,3836 13206,3854 13165,3850 13129,3809 13030,3664
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206
 Richard-Ermisch-Str.: Asphalt	Q0 14250,13281 14224,13206 14207,13152 14177,13065 14163,13025 14130,12926 14096,12827
 Zum Langen Jammer: Kopfsteipflaster, Gehweg besser	Q2 14686,12873 14405,12953
