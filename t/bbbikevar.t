@@ -26,10 +26,20 @@ BEGIN {
 
 BEGIN { plan tests => 1 }
 
-my $ports_dir = "/usr/ports";
-my $bbbike_bsd_port = $ports_dir . "/german/BBBike";
+my $ports_dir;
+for my $try_ports_dir ("/home/e/eserte/work2/freebsd/ports", # private, usually more up-to-date
+		       "/usr/ports",
+		      ) {
+    if (-d $try_ports_dir) {
+	$ports_dir = $try_ports_dir;
+	last;
+    }
+}
 
 SKIP: {
+    skip("No BSD ports available on this system", 1)
+	if !$ports_dir;
+    my $bbbike_bsd_port = $ports_dir . "/german/BBBike";
     skip("No BSD port for BBBike available on this system", 1)
 	if ! -d $bbbike_bsd_port;
     chdir $bbbike_bsd_port or die "Can't chdir to $bbbike_bsd_port: $!";
