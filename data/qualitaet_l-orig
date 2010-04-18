@@ -126,7 +126,7 @@ Erkner Richtung Tasdorf: Kopfsteinpflaster/schlechter Radweg	Q2; 34271,3184 3448
 Heinersdorf: Kopfsteinpflaster	Q2 5943,-2117 5773,-2075
 Heinersdorf: rauher Asphalt	Q1 5773,-2075 5559,-2032
 Heinersdorf: schlechtes Kopfsteinpflaster, sandiger Rand evtl. OK	Q3 5559,-2032 4985,-2373 4283,-2370
-Iserstr.: Kopfsteinpflaster	Q2 -282,-1184 -150,-1457
+Iserstr.: Kopfsteinpflaster	Q2 -248,-1160 -173,-1397
 #: add_fragezeichen: Stimmt das oder ist das Stück in Sputendorf auch asphaltiert?
 Sputendorf: teilweise Kopfsteinpflaster, OK	Q1 -1316,-7721 -1734,-7716 -2500,-7557
 #: add_fragezeichen: Stimmt das noch immer?
@@ -860,7 +860,7 @@ Kopfsteinpflaster	Q2 -19190,7296 -19187,6709 -19514,6643
 	Q0 -16280,-6747 -15811,-6533 -15472,-6233 -15275,-5928 -15228,-5678 -14947,-5405 -14795,-5169 -14710,-4977 -14712,-4614 -14267,-4206 -14119,-3845 -14095,-3670 -14031,-3554 -14038,-3356 -13771,-3023 -13718,-2991 -13481,-2956 -13381,-2943 -13155,-2913 -13062,-2901
 	Q0 -13062,-2901 -13021,-2784 -13003,-2754 -12929,-2659 -12756,-2437 -12719,-2283 -12653,-2206 -12431,-2096
 	Q0 -17643,-7028 -17703,-7228 -18009,-7528
-	Q0 -5736,-3629 -5156,-3192 -4885,-3087 -4456,-2968 -3950,-2743 -3650,-2609 -3521,-2552 -2984,-2184 -2831,-1956 -2477,-1717 -2276,-1621 -2073,-1525 -1668,-1709 -1453,-1715 -1303,-1758 -1143,-1759 -705,-1564 -282,-1184 -71,-1037 348,-743 465,-662 741,-584 925,-684 1212,-706 1346,-762 1453,-746
+	Q0 -5736,-3629 -5156,-3192 -4885,-3087 -4456,-2968 -3950,-2743 -3650,-2609 -3521,-2552 -2984,-2184 -2831,-1956 -2477,-1717 -2276,-1621 -2073,-1525 -1668,-1709 -1453,-1715 -1303,-1758 -1143,-1759 -705,-1564 -248,-1160 -71,-1037 348,-743 465,-662 586,-627 741,-584 925,-684 1212,-706 1346,-762 1453,-746
 	Q0 3450,543 3417,524 3112,331 2947,220 2459,-109 2331,-228 2215,-328 1974,-440 1677,-582 1453,-746
 	Q0 -5201,-35443 -5698,-35202 -5785,-34882
 	Q0 -5785,-34882 -6231,-34800 -6593,-34717 -7472,-34234 -8812,-33517
@@ -1014,7 +1014,7 @@ Hellsee - Biesenthal: "Radfahrer müssen hier ab und zu das Rad schieben"	Q3 2266
 #: according_to: http://home.arcor.de/hoge-online/std_tlw/s_t23.jpg
 Ruhlsdorfer Str.: Asphalt	Q0 86,-2903 -1520,-1832 -1715,-1767
 #: according_to: http://home.arcor.de/hoge-online/std_tlw/s_t24.jpg
-Iserstr.: Asphalt	Q0 -150,-1457 86,-2903
+Iserstr.: Asphalt	Q0 -173,-1397 86,-2903
 #Hohen Neuendorf, Bahnhofstr.: Kopfsteinpflaster, OK	Q1 2853,28918 2353,29078
 #Hohen Neuendorf, Bahnhofstr.: Kopfsteinpflaster, OK, auf Radweg umfahrbar	Q1 2353,29078 2071,29185 1596,29362
 Eggersdorf - Altlandsberg: teilweise etwas unebener Asphalt	Q0 38171,15125 36539,16154 36087,16319 35807,16563 35196,17190 35225,17557
@@ -1055,7 +1055,7 @@ Wilkendorfer Weg: schlechtes Kopfsteinpflaster mit schmalen Verbundsteinstreifen
 Strausberg, Am Roten Hof: grober Schotter	Q3 44471,21631 44158,21724
 Strausberg, Am Roten Hof: Feldweg	Q2 44158,21724 44112,21743 44103,21921
 Strausberg, Am Tofstich: Feldweg, einige wenige sandige Stellen	Q2 44112,21743 44009,21631 43881,21593 43406,21325
-Strausberg - Tiefensee: sehr guter Asphalt	Q0 43584,20871 43498,21028 43406,21325 43343,21459 43365,21675 43345,21745 43266,21790 43109,21939 42959,22368 42950,22546 42404,22684 42021,22780 41887,22959 41553,23243 41315,23410 40956,23662 40655,25779
+Strausberg - Tiefensee: sehr guter Asphalt	Q0 43584,20871 43498,21028 43406,21325 43343,21459 43363,21629 43345,21745 43266,21790 43109,21939 42959,22368 42950,22546 42404,22684 42021,22780 41887,22959 41553,23243 41315,23410 40956,23662 40655,25779
 Gielsdorf - Wesendahl: überwiegend guter Asphalt	Q0 41887,22959 41705,22792 41653,22744 40575,22409 39578,22450 39372,22521 39337,22638 39261,22692 38770,22609 38547,22511 38437,22462 38159,22171
 Wesendahl - Hirschfelde: mäßiger bis guter Asphalt	Q1 38437,22462 38520,22567 38678,22862 38593,24171 38562,24659
 Hirschfelde: sehr guter Asphalt	Q0 36901,26234 37353,25904 37458,25848
@@ -1063,7 +1063,7 @@ Hirschfelde - Gielsdorf: überweigend guter Asphalt mit einigen schadhaften Stell
 # soweit vom westlichen Ende einsehbar:
 nach Wilkendorf: guter Asphalt	Q0 42950,22546 43247,22560
 # soweit vom westlichen Ende einsehbar:
-Bergstr. (Strausberg): schlechtes Kopfsteinpflaster mit schmalen Asphaltstreifen	Q2 43365,21675 44103,21921
+Bergstr. (Strausberg): schlechtes Kopfsteinpflaster mit schmalen Asphaltstreifen	Q2 43363,21629 44103,21921
 # soweit vom südlichen Ende einsehbar:
 Hirschfelde - (Schönfeld): schlechtes Kopfsteinpflaster	Q3 36528,26746 35667,28095
 Bahnhofstr. (Strausberg): Asphalt	Q0 40266,14531 39515,14603 38881,14606
@@ -1437,7 +1437,7 @@ Plantagenstr.: Asphalt	Q0 -9837,-1612 -9860,-1550 -9902,-1445
 #: confirmed_by: Aimo Raasch:
 Karl-Gruhl-Str.: Asphalt	Q0 -9837,-1612 -9905,-1627 -10102,-1522 -10119,-1515 -10369,-1374
 Oderstr.: Betonstraße	Q1 818,-298 595,-310
-Oderstr.: Asphalt	Q0 595,-310 -425,-935 -882,-1220
+Oderstr.: Asphalt	Q0 595,-310 525,-347 240,-519 -395,-920 -882,-1220
 Brandenburger Str.: grobes Pflaster	Q1 -12883,-976 -13005,-1002 -13173,-1039 -13289,-1071 -13410,-1101 -13556,-1140
 Brandenburger Str.: etwas besseres Kopfsteinpflaster	Q1- -12883,-976 -12784,-956
 # von der Bahn aus gesehen: vvv
@@ -2638,6 +2638,7 @@ Kopernikusstr.: heftiges Kopfsteinpflaster	Q3 -9723,-2451 -9963,-2253
 Wattstr.: Kopfsteinpflaster	Q2 -10360,-1934 -10350,-1997 -10398,-2134 -10426,-2231 -10454,-2339
 Heinrich-von-Kleist-Str.: Kopfsteinpflaster	Q2 -10032,-2196 -10050,-2246 -10078,-2339
 #: confirmed_by: http://www.potsdam.de/cms/beitrag/10046472/620526/ ("Granitpflaster")
+#: confirmed_by: Sissi (P)
 Siemensstr.: Kopfsteinpflaster	Q3 -10467,-2018 -10398,-2134 -10295,-2168 -10050,-2246
 Fultonstr.: Asphalt (mit wenig Kopfsteinpflaster auf Höhe Siemenstr.)	Q0 -10327,-2262 -10295,-2168 -10255,-2039
 Stephensonstr.: Kopfsteinpflaster	Q2 -10128,-2114 -10114,-2090 -9954,-2051
@@ -3430,3 +3431,10 @@ Fritz-Zubeil-Str.: guter Asphalt	Q0 -8997,-3762 -9123,-3655 -9212,-3609 -9356,-3
 #: note: "war bisher immer sogar mit Rennradreifen befahrbar"
 An der Wetzlarer Bahn (Potsdam): unbefestigter Weg, bei Regen große Pfützen	Q2 -9306,-4259 -9642,-4916 -9996,-5596
 #: by: ^^^
+#: by: Peter Piecha:
+#: note: Privatstraße
+Ahornweg (Groß Glienicke): Verbundsteinpflaster	Q0- -10052,6640 -10138,6646 -10183,6650 -10315,6646
+#: by: anonymous
+Bussardheck (Glienicke/Nordbahn): Asphalt	Q0 5820,24725 5981,24725 6119,24714 6146,24691 6151,24606
+#: by: anonymous
+Stralsunder Str.: guter Asphalt	Q0 -509,38106 -600,38284 -653,38379 -687,38443 -764,38590 -790,38671 -853,38856

@@ -85,7 +85,7 @@ Radweg (?)	RW 39968,3795 40463,4020 41051,4427 41275,5229 41987,5693
 Gorinsee - Schönwalde: Zweirichtungsradweg auf der südl. Seite	RW 14341,30839 12955,30436 12466,30452
 Feinsplit-Radweg	RW 41806,-40762 42075,-40337 42152,-39572 41675,-38268 41687,-38100 41731,-37743
 asphaltierter Radweg auf der nördlichen Seite, enge Stelle an der Bahnüberführung	RW 8303,28478 7546,28255 7365,28253 7125,28106 5939,27781
-Gemeinsamer Geh- und Radweg, Verbundsteinpflaster	RW -150,-1457 86,-2903
+Gemeinsamer Geh- und Radweg, Verbundsteinpflaster	RW -173,-1397 86,-2903
 Gemeinsamer Geh- und Radweg, Verbundsteinpflaster	RW -1853,-2412 -2049,-2165
 Bansin: Zweirichtungsradweg (Verbundsteinpflaster) auf der nördlichen Seite	RW 56175,173875 56327,173853 56381,173849
 Bansin: Zweirichtungsradweg (Verbundsteinpflaster) auf der östlichen Seite	RW 56381,173849 56493,173943 56546,174049
@@ -129,10 +129,10 @@ Zeppelinstr.: gemeinsamer Rad- und Gehweg, teilweise sehr eng	RW2;RW2 -13556,-11
 B1, Zeppelinstr.: teilweise Radweg, teilweise Radspur	RW2;RW2 -14859,-2384 -15060,-2626 -15276,-2868 -15431,-3043 -15501,-3122 -15669,-3311
 Geschwister-Scholl-Str.: Radweg	RW; -14115,-1678 -14151,-1656
 Zehlendorfer Str.: Radweg auf Gehweg	RW 1460,-372 1473,-420 1457,-470 1378,-676 1346,-762
-Oderstr.: Verbundsteinpflasterradweg, teilweise Zweirichtungsradweg, oft wechselnde Seite	RW 595,-310 -425,-935 -882,-1220
+Oderstr.: Verbundsteinpflasterradweg, teilweise Zweirichtungsradweg, oft wechselnde Seite	RW 595,-310 525,-347 240,-519 -395,-920 -882,-1220
 Zehlendorfer Damm: Radweg	RW -1436,-887 -1378,-1022 -1348,-1098 -1503,-1328 -1573,-1477
 Geschwister-Scholl-Str.: Radweg auf Gehweg	RW2;RW2 -14909,-1818 -14733,-1812 -14612,-1809
-Thomas-Müntzer-Damm: Radweg (Verbundsteinpflaster)	RW -840,-185 -775,-304 -551,-731 -502,-803
+Thomas-Müntzer-Damm: Radweg (Verbundsteinpflaster)	RW -840,-185 -775,-304 -543,-691 -513,-736
 Am Kanal: Radspur	RW4;RW4 -12317,-1212 -12549,-1277 -12666,-1311
 Am Kanal: Radspur	RW4; -12666,-1311 -12674,-1313 -12718,-1327
 Am Kanal: Radweg	RW2; -12718,-1327 -12839,-1342
@@ -293,9 +293,9 @@ Eichhorst - Finowfurt: asphaltierter Zweirichtungsradweg auf der östlichen Seite
 Eichhorst - Finowfurt: asphaltierter Zweirichtungsradweg auf der westlichen Seite	RW 25395,53549 25347,53338
 Am Bahnhof Bernau: Suggestivstreifen	RW 22868,30412 22904,30359
 	RW 2246,31162 2219,31171 2173,31187 2126,31207 2042,31236 1931,31275 1918,31279 1762,31318 1737,31303
-	RW4;RW2 1346,-762 1212,-706 925,-684 741,-584 465,-662 348,-743
+	RW4;RW2 1346,-762 1212,-706 925,-684 741,-584 586,-627 465,-662 348,-743
 	RW4;RW4 348,-743 -71,-1037
-Gemeinsamer Rad- und Gehweg	RW2;RW2 -71,-1037 -282,-1184 -705,-1564 -1143,-1759 -1303,-1758 -1453,-1715 -1668,-1709 -2073,-1525 -2276,-1621 -2477,-1717 -2831,-1956 -2984,-2184 -3521,-2552 -3650,-2609
+Gemeinsamer Rad- und Gehweg	RW2;RW2 -71,-1037 -248,-1160 -705,-1564 -1143,-1759 -1303,-1758 -1453,-1715 -1668,-1709 -2073,-1525 -2276,-1621 -2477,-1717 -2831,-1956 -2984,-2184 -3521,-2552 -3650,-2609
 Alte Schildower Str.: Gehweg für Radfahrer freigegeben	RW1; 4958,24418 5019,24484 5168,24614
 Alte Schildower Str.: Gehweg für Radfahrer freigegeben	RW1;RW1 5212,24652 5265,24642 5443,24589 5608,24610
 Radspur	RW3;RW3 -13199,1691 -13133,1698
@@ -436,3 +436,4 @@ asphaltierter Zweirichtungsradweg auf der östlichen Seite	RW -14279,-9832 -14518
 Zweirichtungsradweg auf der südlichen Seite	RW -14428,-10433 -13597,-10497 -13433,-10557 -13211,-10642
 eigener Radweg neben der Straße	RW2;RW8 35728,17428 35618,17440 35225,17557 34813,17682 34154,17882 33961,17989 33133,18131 32941,18121
 	RW 16488,29880 16279,29196 16066,28510 16008,28424 15777,28037
+	RW6;RW6 -10052,6640 -10138,6646 -10183,6650 -10315,6646

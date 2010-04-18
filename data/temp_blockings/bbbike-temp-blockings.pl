@@ -5225,7 +5225,7 @@ EOF
      },
      { from  => 1163442022, # 2006-11-13 19:20
        until => 1167675622, # 2007-01-01 19:20
-       text  => 'Josef-Orlopp-Str. (Lichtenberg) in Richtung Siegfriedstr., zwischen Vulkanstr. und Siegfreidstr. Baustelle, Fahrtrichtung gesperrt (bis 2007)',
+       text  => 'Josef-Orlopp-Str. (Lichtenberg) in Richtung Siegfriedstr., zwischen Vulkanstr. und Siegfriedstr. Baustelle, Fahrtrichtung gesperrt (bis 2007)',
        type  => 'gesperrt',
        source_id => 'IM_004084',
        data  => <<EOF,
@@ -7049,7 +7049,7 @@ EOF
        text  => 'L 090 Dr.-Külz-Str. OD Glindow, zw. Alte Str. und Alpenstr. Kanal- und Straßenbau Vollsperrung 11.06.2007-31.12.2007 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork -22914,-5137 -22867,-5778
+userdel	q4::inwork -22862,-5171 -22867,-5778
 EOF
      },
      { from  => 1171051156, # 2007-02-09 20:59
@@ -13198,7 +13198,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_011081',
        data  => <<EOF,
-userdel	1::inwork 10742,19632 10377,19565 10249,19541
+userdel	1::inwork 10742,19632 10439,19576 10377,19565 10249,19541
 userdel	1::inwork 10614,19907 10742,19632
 EOF
      },
@@ -17109,11 +17109,12 @@ EOF
      },
      { from  => 1265027979, # 2010-02-01 13:39
        until => 1272664799, # 2010-04-30 23:59
-       text  => 'Blankenburger Str. (Pankow) Richtung Dietzgenstr. zwischen Siegfriedstr. und Dietzgenstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 04/2010)',
+       text  => 'Blankenburger Str. (Pankow) Richtung Dietzgenstr. zwischen Siegfriedstr. und Dietzgenstr. Baustelle, Fahrtrichtung gesperrt, sowie Einbahnstraßenregelung in der Siegfriedstr. (bis Ende 04/2010)',
        type  => 'handicap',
        source_id => 'IM_011081',
        data  => <<EOF,
-userdel	q4::inwork; 10742,19632 10377,19565 10249,19541
+userdel	q4::inwork; 10742,19632 10439,19576 10377,19565 10249,19541
+userdel	q4::inwork; 10614,19907 10742,19632
 EOF
      },
      { from  => 1265413596, # 2010-02-06 00:46
@@ -17435,6 +17436,15 @@ EOF
        source_id => 'LSO-SG33-F10040',
        data  => <<EOF,
 userdel	2::inwork 81301,3881 82314,4413 82765,4636
+EOF
+     },
+     { from  => 1271624843, # 2010-04-18 23:07
+       until => 1291158000, # 2010-12-01 00:00
+       text  => 'Prötzel: Kanal- und Straßenbauarbeiten Ortsdurchfahrt Prötzel, 29.03.2010 bis 30.11.2010 ',
+       type  => 'handicap',
+       source_id => 'LSO-SG33-F10022',
+       data  => <<EOF,
+userdel	q4::inwork 49255,26084 49808,26346
 EOF
      },
     );

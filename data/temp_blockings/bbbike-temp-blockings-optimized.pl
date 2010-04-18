@@ -1467,10 +1467,11 @@ userdel	q4::inwork; 9130,12433 9141,12320
        {
          'source_id' => 'IM_011081',
          'until' => 1272664799,
-         'text' => 'Blankenburger Str. (Pankow) Richtung Dietzgenstr. zwischen Siegfriedstr. und Dietzgenstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 04/2010)',
+         'text' => 'Blankenburger Str. (Pankow) Richtung Dietzgenstr. zwischen Siegfriedstr. und Dietzgenstr. Baustelle, Fahrtrichtung gesperrt, sowie Einbahnstraßenregelung in der Siegfriedstr. (bis Ende 04/2010)',
          'from' => 1265027979,
          'id' => 2016,
-         'data' => 'userdel	q4::inwork; 10742,19632 10377,19565 10249,19541
+         'data' => 'userdel	q4::inwork; 10742,19632 10439,19576 10377,19565 10249,19541
+userdel	q4::inwork; 10614,19907 10742,19632
 ',
          'type' => 'handicap'
        },
@@ -1622,16 +1623,7 @@ userdel	q3::inwork; 9456,11513 9444,11616
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'LSO-SG33-F10029',
-         'until' => 1271541600,
-         'text' => 'Deckenerneuerung B 246, Wendisch Rietz - Storkow 25.03.2010 bis 17.04.2010 ',
-         'from' => 1269728021,
-         'id' => 2032,
-         'data' => 'userdel	2::inwork 50359,-20087 49368,-19096
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_015434',
          'until' => 1291734000,
@@ -1821,6 +1813,16 @@ userdel	q3::inwork; 9456,11513 9444,11616
          'data' => 'userdel	2::inwork 81301,3881 82314,4413 82765,4636
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'LSO-SG33-F10022',
+         'until' => 1291158000,
+         'text' => 'Prötzel: Kanal- und Straßenbauarbeiten Ortsdurchfahrt Prötzel, 29.03.2010 bis 30.11.2010 ',
+         'from' => 1271624843,
+         'id' => 2053,
+         'data' => 'userdel	q4::inwork 49255,26084 49808,26346
+',
+         'type' => 'handicap'
        }
      
 );

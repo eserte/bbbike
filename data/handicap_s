@@ -10,6 +10,7 @@ Varian-Fry-Str.: Baustelle, Fahrbahn gesperrt	q4::inwork 8389,11378 8374,11479
 General-Pape-Str.: Baustelle, Fahrbahn Richtung Norden gesperrt	q4::inwork; 7959,7609 7921,7728 7950,7840
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 9475,12365 9462,12481 9454,12558
 Universitätsstr.: wegen Bauarbeiten Richtung Unter den Linden gesperrt	q4::inwork; 9580,12581 9601,12380
+Planckstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 9434,12669 9385,12809 9383,12915
 Varziner Str.: Bauarbeiten, Einbahnstraßenregelung zwischen Bundesallee und Varziner Platz (offen Richtung Südwestkorso)	q4::inwork; 5458,7866 5356,7862
 Varziner Platz: Bauarbeiten, es muss geschoben werden	q4::inwork 5458,7866 5492,7868 5517,7869
 Wuhlewanderweg: steiler Anstieg, Fußgänger	q4; 21998,12204 21970,12153
@@ -570,6 +571,7 @@ Nordhafen: Fußgänger	q1 -2477,16351 -2510,16357 -2632,16347 -2779,16330 -2972,16
 (Grünheider Weg - Fredersdorfer Weg): starker Anstieg, nicht für Fahrräder geeignet	q4 30867,3806 30862,3816 30849,3843 30823,3866
 Seidenbienenweg: sehr eng	q4 31914,2767 31909,2802 31884,2841
 (entlang des Tränkegrabens): Fußgänger, Radfahren erlaubt	q2 16900,9861 17011,9950 17137,10098 17149,10160 17137,10238 17160,10376 17249,10666 17249,10702 17310,10714 17415,10694 17527,10640 17625,10615 17705,10621 17847,10629 17897,10607 17999,10584 18059,10556 18150,10543
+Hortensienplatz: einige Fußgänger, Bordsteine	q3 4156,4784 4121,4841 4116,4850
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q3 11805,19071 11937,19175
 Ebersstr.: Schüler	q2 7245,8583 7292,8631
 Straße 103 (Niederschönhausen): enge Straße	q1 10914,20065 11051,19789
@@ -614,7 +616,7 @@ Bahnhofstr. (Friedenau): enge Straße	q1 6082,7066 6151,7078 6157,7117
 Hugo-Heimann-Str.: enge, leicht kurvige Straße	q1 14120,1991 14165,2106 14229,2177 14453,2087 14587,2032
 (Am Invalidenfriedhof - Scharnhorststr.): Radfahren verboten, Schieben	q4 8119,13912 8216,13987
 Am Gemeindepark: enge Straße	q1 7172,2343 7215,2442 7208,2534 7199,2559 7165,2571 7034,2586 6751,2708 6679,2701
-Maurerweg: enge Straße	q1 12864,2191 12835,2470 12825,2573 12810,2751 12807,2958
+Maurerweg: enge Straße	q1 12864,2191 12844,2382 12835,2470 12825,2573 12810,2751 12807,2958
 (Uferweg): kurvenreich, ausreichende Breite	q1 -431,17169 -384,17155 -280,17229 -266,17335 -215,17385 -141,17377 61,17495 110,17489 151,17537 187,17663 235,17704 260,17788 258,17880 381,18186 416,18386 448,18476 496,18514 586,18540 680,18631 757,18673 768,18742 970,18919 1006,18972 1122,19036 1189,19018 1200,18969 1369,18958 1457,18969 1490,18950
 Gustav-Zahnke-Str.: enge Straße	q1 14428,13596 14408,13513 14331,13537
 Propst-Süßmilch-Weg: Fußgängerzone	q2 856,3188 709,3229 649,3221
@@ -1238,6 +1240,11 @@ Charles-H.-King-Str.: enge Straße	q1 -1248,2451 -1401,2391 -1604,2324
 Rohrweihstr.: enge Straße	q1 -2141,19681 -2103,19833 -2073,19990 -2055,20129 -2020,20309 -1991,20312
 Kolkrabenweg: enge Straße	q1 14655,3687 14885,3891
 Teterower Str.: enge Straße	q1 13820,5203 13717,5175 13626,5153
+Seepromenade: enge Straße	q1 -4582,7213 -4559,7216 -4549,7243
+Münchener Str. (Lichtenrade): enge Straße	q1 11384,-1983 11380,-2100 11388,-2202 11433,-2320 11496,-2484 11523,-2617 11545,-2724
+Lachtaubenweg: enge Straße	q1 -1827,20216 -1823,20298 -1838,20471
+Elstergasse: enge Straße, rechts und links versetzt parkende Autos	q1 -1596,20184 -1827,20216 -1971,20231
+Wesenberger Ring: enge Straße	q1 13162,3576 13206,3674 13238,3794 13229,3836 13206,3854 13165,3850 13129,3809 13030,3664
 Dennewitzplatz: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 7906,10098 7866,9918
 Eichborndamm: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 4240,19019 4232,18981
 Dorotheenstr. (Straßenbahn): gegen die Einbahnstraßenrichtung, ggfs. schieben	q2::igndisp; 9454,12558 9330,12529
