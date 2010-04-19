@@ -6813,7 +6813,7 @@ sub generate_plot_functions {
 			    $street_photo = $steigung_photo if $steigung_photo;
 			    $street_anchor = "s";
 			    $street_delta = $street_photo->width/2+2;
-			} elsif ($abk eq 'comm-tram') {
+			} elsif ($abk eq 'comm-tram' || $abk eq 'nl') {
 			    $street_photo = get_symbol_scale($abk);
 			    $street_delta = 0; # XXX
 			} elsif (@addinfo_hin # ignore @addinfo_rueck for now
@@ -15226,7 +15226,7 @@ sub scale_width {
     foreach (qw(lsa-X lsa-B lsa-B0 lsa-F lsa-Zbr rest kn vf-Vf vf-Kz u b), ($XXX_use_old_R_symbol ? () : ('r'))) {
 	$c->itemconfigure($_ . '-fg', -image => get_symbol_scale($_, $scale));
     }
-    foreach (qw(e comm-tram)) {
+    foreach (qw(e comm-tram nl)) {
 	$c->itemconfigure($_ . '-img', -image => get_symbol_scale($_, $scale));
     }
 
@@ -15602,6 +15602,18 @@ sub get_symbol_scale {
 	    $filename = 'strassenbahn'
 	} elsif ($myscale >= 1*$mod) {
 	    $filename = 'strassenbahn_klein';
+	}
+	my $photo;
+	if ($filename) {
+	    $photo = load_photo($top, $filename, -persistent => 1);
+	}
+	return $photo;
+    } elsif ($tag eq 'nl') {
+	my $filename;
+	if ($myscale > 8*$mod) {
+	    $filename = 'night'
+	} elsif ($myscale >= 2*$mod) {
+	    $filename = 'night_klein';
 	}
 	my $photo;
 	if ($filename) {
