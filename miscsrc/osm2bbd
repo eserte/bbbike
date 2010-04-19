@@ -1196,6 +1196,11 @@ for my $osm_file (@osm_files) {
 			];
 		}
 
+		if (exists $tag{lit} && $tag{lit} eq 'no') {
+		    push @or,
+			['nolighting', 'NL', name => ''];
+		}
+
 		my $rcn_ref = $tag{'rcn_ref'};
 		my $lcn_ref = $tag{'lcn_ref'};
 		if ($rcn_ref) {
@@ -1400,7 +1405,7 @@ for my $osm_file (@osm_files) {
 		if ($args{reversed}) {
 		    @nodes = reverse @nodes;
 		}
-		if ($args{name}) {
+		if (defined $args{name}) {
 		    $name = $args{name};
 		}
 
