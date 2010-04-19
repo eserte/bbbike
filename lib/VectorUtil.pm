@@ -25,7 +25,7 @@ require Exporter;
 		get_polygon_center
 		point_in_grid point_in_polygon move_point_orthogonal
 		intersect_rectangles enclosed_rectangle normalize_rectangle
-		azimuth offset_line
+		azimuth offset_line bbox_of_polygon
 	       );
 
 sub pi () { 4 * atan2(1, 1) } # 3.141592653
@@ -405,6 +405,25 @@ sub offset_line {
     }
 
     (\@offset_pnts_right, \@offset_pnts_left);
+}
+
+sub bbox_of_polygon {
+    my($poly) = @_;
+    my $minx = my $maxx = $poly->[0][0];
+    my $miny = my $maxy = $poly->[0][1];
+    for my $p (@$poly) {
+	if ($p->[0] > $maxx) {
+	    $maxx = $p->[0];
+	} elsif ($p->[0] < $minx) {
+	    $minx = $p->[0];
+	}
+	if ($p->[1] > $maxy) {
+	    $maxy = $p->[1];
+	} elsif ($p->[1] < $miny) {
+	    $miny = $p->[1];
+	}
+    }
+    [$minx,$miny,$maxx,$maxy];
 }
 
 # REPO BEGIN

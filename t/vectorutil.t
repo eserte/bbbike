@@ -20,9 +20,9 @@ BEGIN {
     }
 }
 
-plan tests => 8;
+plan tests => 11;
 
-use_ok('VectorUtil', 'intersect_rectangles', 'normalize_rectangle', 'enclosed_rectangle');
+use_ok('VectorUtil', 'intersect_rectangles', 'normalize_rectangle', 'enclosed_rectangle', 'bbox_of_polygon');
 
 {
     my @r = (0,0,1,1);
@@ -70,6 +70,12 @@ use_ok('VectorUtil', 'intersect_rectangles', 'normalize_rectangle', 'enclosed_re
     my @outer = (0,0,3,3);
     my @inner = (-2,-2,-1,-1);
     ok(!enclosed_rectangle(@outer, @inner), "not enclosed");
+}
+
+{
+    is_deeply(bbox_of_polygon([[0,0]]), [0,0,0,0], 'bbox: one-point polygon');
+    is_deeply(bbox_of_polygon([[0,0],[10,0],[0,10],[10,10]]), [0,0,10,10], 'bbox: square');
+    is_deeply(bbox_of_polygon([[10,10],[10,0],[0,10],[0,0]]), [0,0,10,10], 'bbox: square backwards');
 }
     
 __END__
