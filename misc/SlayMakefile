@@ -3,6 +3,7 @@
 	use strict;
 	use vars qw($ABS_LOCAL_BBBIKE_DIR $BBBIKE_DATA_DIR $BBBIKE_MISCSRC_DIR $BBBIKE_TMP_DIR);
 	use Cwd qw(realpath);
+	use File::Compare qw(compare);
 	use File::Temp qw(tempdir);
 	use IPC::Run qw(run);
 
@@ -30,6 +31,7 @@ fragezeichen_list:	$BBBIKE_DATA_DIR/fragezeichen \
 	{
 		mkdir "$BBBIKE_TMP_DIR/fragezeichen_list"
 		    if !-d "$BBBIKE_TMP_DIR/fragezeichen_list";
+		chmod 0755, "$BBBIKE_TMP_DIR/fragezeichen_list";
 		my $tmpdir = tempdir(CLEANUP => 1) or die;
 		my $ot = Strassen->new("$BBBIKE_DATA_DIR/berlin_ortsteile");
 		my %citypart2polygon;
@@ -88,26 +90,34 @@ fragezeichen_list:	$BBBIKE_DATA_DIR/fragezeichen \
 
 			my $basename = BBBikeUtil::umlauts_to_german($citypart) . ".html";
 			$basename =~ s{ }{_}g;
-			push @links, {label => $citypart, href => $basename};
+			push @links, {label => $citypart, href => $basename, count => $fz->count};
 			my $ofile = "$BBBIKE_TMP_DIR/fragezeichen_list/" . $basename;
 			open my $ofh, ">", "$ofile~" or die "Can't write to $ofile~: $!";
 			binmode $ofh, ":utf8";
 			print $ofh qq{<html><head><title>BBBike: Fragezeichen in $citypart</title><meta http-equiv="content-type" content="text/html; charset=utf-8"></title><body>};
-			print $ofh "<h1>Fragezeichen in $citypart</h1>";
+			print $ofh "<h1>Fragezeichen: $citypart</h1>";
 			print $ofh $citypart_html;
-			print $ofh qq{</body></html>};
+			print $ofh qq{<br/><a href="index.html">Liste der Ortsteile</a><br/></body></html>};
 			close $ofh or die $!;
-			rename "$ofile~", $ofile or die "Can't rename $ofile~: $!";
+			if (!-f $ofile || compare("$ofile~", $ofile) != 0) {
+				chmod 0644, "$ofile~";
+				rename "$ofile~", $ofile or die "Can't rename $ofile~: $!";
+			} else {
+				unlink "$ofile~";
+			}
 		}
 
 		@links = sort { $a->{label} cmp $b->{label} } @links;
-		open my $ofh, ">", "$BBBIKE_TMP_DIR/fragezeichen_list/index.html" or die $!;
+		my $index_file = "$BBBIKE_TMP_DIR/fragezeichen_list/index.html";
+		open my $ofh, ">", "$index_file~" or die "While writing to $index_file~: $!";
 		binmode $ofh, ":utf8";
 		print $ofh qq{<html><head><title>BBBike: Fragezeichen</title><meta http-equiv="content-type" content="text/html; charset=utf-8"></title><body>};
 		print $ofh "<h1>BBBike: Fragezeichen</h1>";
 		for my $link (@links) {
-			print $ofh qq{<a href="$link->{href}">$link->{label}</a><br/>\n}; # XXX escaping?
+			print $ofh qq{<a href="$link->{href}">$link->{label}</a> ($link->{count})<br/>\n}; # XXX escaping?
 		}
 		print $ofh qq{</body></html>};
 		close $ofh or die $!;
+		chmod 0644, "$index_file~";
+		rename "$index_file~", $index_file or die "While renaming $index_file~: $!";
 	}
