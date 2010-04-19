@@ -1,0 +1,113 @@
+# -*- makefile -*-
+{
+	use strict;
+	use vars qw($ABS_LOCAL_BBBIKE_DIR $BBBIKE_DATA_DIR $BBBIKE_MISCSRC_DIR $BBBIKE_TMP_DIR);
+	use Cwd qw(realpath);
+	use File::Temp qw(tempdir);
+	use IPC::Run qw(run);
+
+	$ABS_LOCAL_BBBIKE_DIR =	realpath("..");
+	$BBBIKE_DATA_DIR      = "$ABS_LOCAL_BBBIKE_DIR/data";
+	$BBBIKE_MISCSRC_DIR   = "$ABS_LOCAL_BBBIKE_DIR/miscsrc";
+	$BBBIKE_TMP_DIR       = "$ABS_LOCAL_BBBIKE_DIR/tmp";
+
+	require lib;
+	lib->import($ABS_LOCAL_BBBIKE_DIR, "$ABS_LOCAL_BBBIKE_DIR/lib");
+	require Strassen::Core;
+	require VectorUtil;
+	require BBBikeVar;
+	require BBBikeUtil;
+}
+
+all:
+
+#$BBBIKE_TMP_DIR/fragezeichen_list/index.html
+fragezeichen_list:	$BBBIKE_DATA_DIR/fragezeichen \
+						$BBBIKE_DATA_DIR/berlin_ortsteile \
+						$BBBIKE_MISCSRC_DIR/bbd2mapservhtml.pl \
+						$BBBIKE_MISCSRC_DIR/grepstrassen \
+						SlayMakefile
+	{
+		mkdir "$BBBIKE_TMP_DIR/fragezeichen_list"
+		    if !-d "$BBBIKE_TMP_DIR/fragezeichen_list";
+		my $tmpdir = tempdir(CLEANUP => 1) or die;
+		my $ot = Strassen->new("$BBBIKE_DATA_DIR/berlin_ortsteile");
+		my %citypart2polygon;
+		my %citypart2bbox;
+		while (1) {
+			my $r = $ot->next;
+			my @c = @{ $r->[Strassen::COORDS()] };
+			last if !@c;
+			my $name = $r->[Strassen::NAME()];
+			my $poly = [ map { [split /,/] } @c ];
+			push @{ $citypart2polygon{$name} }, $poly;
+			push @{ $citypart2bbox{$name} }, VectorUtil::bbox_of_polygon($poly);
+		}
+
+		my %citypart2fz;
+		my $fz = Strassen->new("$BBBIKE_DATA_DIR/fragezeichen");
+		while(1) {
+			my $r = $fz->next;
+			my @c = @{ $r->[Strassen::COORDS()] };
+			last if !@c;
+			@c = map { [split /,/] } @c;
+			CITYPART: while(my($citypart, $polygons) = each %citypart2polygon) {
+				for my $polygon_i (0 .. $#$polygons) {
+					my $polygon = $polygons->[$polygon_i];
+					my $bbox = $citypart2bbox{$citypart}->[$polygon_i];
+					for my $c (@c) {
+						# XXX using point_in_polygon is somewhat rough, probably should use something like line_in_polygon
+						if (VectorUtil::point_in_grid(@$c, @$bbox) &&
+						    VectorUtil::point_in_polygon($c, $polygon)) {
+		#warn "yes for $r->[Strassen::NAME()] in $citypart";
+							my $s = $citypart2fz{$citypart};
+							if (!$s) {
+								$s = $citypart2fz{$citypart} = Strassen->new;
+							}
+							$s->push($r);
+							next CITYPART;
+						}
+					}
+				}
+			}
+		}
+
+		my @links;
+		while(my($citypart, $fz) = each %citypart2fz) {
+			@{ $fz->{Data} } = sort @{ $fz->{Data} };
+			my $bbd = $fz->as_string;
+			my @cmd = ("$BBBIKE_MISCSRC_DIR/bbd2mapservhtml.pl",
+				   '-bbbikeurl', 'http://localhost/bbbike/cgi/bbbike.cgi', # XXX geht from BBBikeVar or so
+				   '-email', $BBBike::EMAIL,
+				   '-partialhtml', '-linklist',
+				   '-mapscale', '1:6000',
+				  );
+			my $err;
+			my $citypart_html;
+			run \@cmd, \$bbd, \$citypart_html, \$err or die "Failed: @cmd: $?";
+
+			my $basename = BBBikeUtil::umlauts_to_german($citypart) . ".html";
+			$basename =~ s{ }{_}g;
+			push @links, {label => $citypart, href => $basename};
+			my $ofile = "$BBBIKE_TMP_DIR/fragezeichen_list/" . $basename;
+			open my $ofh, ">", "$ofile~" or die "Can't write to $ofile~: $!";
+			binmode $ofh, ":utf8";
+			print $ofh qq{<html><head><title>BBBike: Fragezeichen in $citypart</title><meta http-equiv="content-type" content="text/html; charset=utf-8"></title><body>};
+			print $ofh "<h1>Fragezeichen in $citypart</h1>";
+			print $ofh $citypart_html;
+			print $ofh qq{</body></html>};
+			close $ofh or die $!;
+			rename "$ofile~", $ofile or die "Can't rename $ofile~: $!";
+		}
+
+		@links = sort { $a->{label} cmp $b->{label} } @links;
+		open my $ofh, ">", "$BBBIKE_TMP_DIR/fragezeichen_list/index.html" or die $!;
+		binmode $ofh, ":utf8";
+		print $ofh qq{<html><head><title>BBBike: Fragezeichen</title><meta http-equiv="content-type" content="text/html; charset=utf-8"></title><body>};
+		print $ofh "<h1>BBBike: Fragezeichen</h1>";
+		for my $link (@links) {
+			print $ofh qq{<a href="$link->{href}">$link->{label}</a><br/>\n}; # XXX escaping?
+		}
+		print $ofh qq{</body></html>};
+		close $ofh or die $!;
+	}
