@@ -13283,7 +13283,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_011184',
        data  => <<EOF,
-#: last_checked: 2010-02-25
+#: last_checked: 2010-04-19
 userdel	q4::inwork; 10350,13376 10527,13257
 EOF
      },
@@ -17150,7 +17150,8 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	q4::inwork; 9268,11590 9444,11616 9569,11631 9581,11523 9456,11513 9331,11497 9268,11590
-userdel	q3::inwork; 9456,11513 9444,11616
+userdel	q2::inwork; 9456,11513 9444,11616
+userdel	q3::inwork 9444,11616 9432,11702
 EOF
      },
      { from  => undef, # 
