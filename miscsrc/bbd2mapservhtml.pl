@@ -31,6 +31,8 @@ use BBBikeVar;
 use CGI qw();
 use URI::Escape qw(uri_escape);
 
+my $COORD_SEP = '!'; # "!" for older bbbike.cgi
+
 my $bbbike_url = $BBBike::BBBIKE_DIRECT_WWW;
 my $email = $BBBike::EMAIL;
 my @layers;
@@ -48,6 +50,7 @@ my $imagetype = "mapserver";
 my $title = "Mapserver/BBBike";
 my @custom_link_defs;
 my $do_routelist_button = 1;
+my $link_target;
 
 my $save_cmdline = "$0 @ARGV";
 
@@ -86,6 +89,7 @@ if (!GetOptions("bbbikeurl=s" => \$bbbike_url,
 		'althandling!' => \$do_alternatives_handling,
 		'customlink=s@' => \@custom_link_defs,
 		'routelistbutton!' => \$do_routelist_button,
+		'linktarget=s' => \$link_target,
 	       )) {
     require Pod::Usage;
     Pod::Usage::pod2usage(2);
@@ -127,6 +131,8 @@ if (defined $center_spec && $center_spec ne "") {
     }
 }
 
+my $target_attr = $link_target ? qq{ target="$link_target"} : '';
+
 my $html_header = <<EOF;
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"> <!-- -*-html-*- -->
 <html><head>
@@ -154,7 +160,7 @@ EOF
 }
 $html_header .= <<EOF;
 </head>
-<body @{[ $do_linklist ? '' : 'onload="autosubmit()"' ]}>
+<body@{[ $do_linklist ? '' : ' onload="autosubmit()"' ]}>
 EOF
 
 my $html;
@@ -339,10 +345,10 @@ sub lines_to_coords {
     # XXX instead of int() should something like best_accuracy be used
     my @coords =
 	map {
-	    join "!", map {
+	    join $COORD_SEP, map {
 		join ",", map { int } split /,/, $_
 	    } @$_
-	} @lines; # "!" for older bbbike.cgi
+	} @lines;
     @coords;
 }
 
@@ -361,7 +367,7 @@ sub generate_single_html {
     die "usage? " . join(" ", %args) if keys %args;
 
     my $html = <<EOF;
-<form style='margin-bottom:0px;' action="$bbbike_url" method="post">
+<form style='margin-bottom:0px;' action="$bbbike_url" method="post"$target_attr>
  <input type="hidden" name="imagetype" value="$imagetype" />
  <input type="hidden" name="scope" value="wideregion" />
 EOF
@@ -416,16 +422,17 @@ EOF
 	    } elsif ($1 eq 'NAME') {
 		$repl = uri_escape($label);
 	    } elsif ($1 eq 'FIRST_COORD') {
-		$repl = uri_escape($coords[0]);
+		$repl = uri_escape((split /$COORD_SEP/, $coords[0])[0]);
 	    } elsif ($1 eq 'CENTER_COORD') {
-		$repl = uri_escape($coords[$#coords/2]);
+		my @single_coords = map { split /$COORD_SEP/, $_ } @coords;
+		$repl = uri_escape($single_coords[$#single_coords/2]);
 	    } else {
 		die "Should never happen: \$1 = $1";
 	    }
 	    $repl;
 	}eg;
 	$html .= <<EOF;
- <a style="text-decoration:none;" href="@{[ CGI::escapeHTML($url) ]}"><button>@{[ CGI::escapeHTML($link_label) ]}</button></a>
+ <a style="text-decoration:none;" href="@{[ CGI::escapeHTML($url) ]}"$target_attr><button>@{[ CGI::escapeHTML($link_label) ]}</button></a>
 EOF
     }
     $html .= <<EOF;
@@ -448,7 +455,7 @@ bbd2mapservhtml.pl - create a mapserver route from a bbd or bbr file
                     [-layer layername [-layer ...]]
                     [-initmapext {width}x{height}] [-mapscale scale]
 		    [-center x,y] [-centernearest]
-		    [-partialhtml] [-linklist] [-preferalias]
+		    [-partialhtml] [-linklist] [-linktarget ...] [-preferalias]
 		    [-title title] [-imagetype ...]
 		    [-onlyonedirection] [-althandling]
 		    [-customlink "url label" ...] [-noroutelistbutton]
@@ -519,6 +526,10 @@ option is useful for automatic inclusion into a pre-made html page.
 
 Create a link list with one street per line.
 
+=item -linktarget framename
+
+This will be added to use a specific frame for form and link targets.
+
 =item -headlines
 
 Create headlines from "section" blocks.
@@ -582,6 +593,31 @@ Don't create a button to the route list.
 =back
 
 If I<file> is not given, then read from standard input.
+
+=head1 EXAMPLE
+
+=head2 Using iframes
+
+Here's an example for building a static page which uses the upper half
+for the link list and the lower half of the screen for the target of
+the link (map, route list, or custom link).
+
+The HTML header may look like this:
+
+    <html>
+      <head>...</head>
+      <body style="margin:0px;">
+        <div style="width:100%; height:50%; overflow:scroll; padding:0px;">
+
+Here insert the output of C<bbd2mapservhtml.pl -partialhtml -linklist
+-linktarget int_frame ...>.
+
+Following the HTML footer:
+
+        </div>
+        <iframe style="width:100%; height:50%; border:0px;" name="int_frame"></iframe>
+      </body>
+    </html>
 
 =head1 AUTHOR
 
