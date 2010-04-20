@@ -713,10 +713,10 @@ sub set_draw_elements {
 	if ($_ eq 'all') {
 	    $self->{Draw} = ['title', 'ampel', 'berlin', 'wasser',
 			     'faehren',
-			     'flaechen', 'ubahn', 'sbahn', 'rbahn', 'str',
+			     'flaechen', 'sehenswuerdigkeit', 'ubahn', 'sbahn', 'rbahn', 'str',
 			     'ort', 'wind',
 			     'strname', 'ubahnname', 'sbahnname',
-			     'radwege', 'qualitaet', 'handicap', 'blocked',
+			     'comments_route', 'radwege', 'qualitaet', 'handicap', 'blocked',
 			     'mount'];
 	    if ($self->{Scope} =~ /^(wide)?region$/) {
 		push @{ $self->{Draw} }, 'landstr';

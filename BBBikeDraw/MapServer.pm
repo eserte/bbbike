@@ -180,10 +180,10 @@ $VERSION = sprintf("%d.%02d", q$Revision: 1.45 $ =~ /(\d+)\.(\d+)/);
 		    ColorGreyBg ColorWhite ColorYellow ColorRed ColorGreen
 		    ColorMiddleGreen ColorDarkGreen ColorLightGreen ColorDarkBlue
 		    ColorLightBlue ColorRose ColorBlack
-		    OnFlaechen OnGewaesser OnStrassen OnUBahn OnSBahn OnRBahn
+		    OnFlaechen OnSehenswuerdigkeit OnGewaesser OnStrassen OnUBahn OnSBahn OnRBahn
 		    OnAmpeln OnOrte OnFaehren OnGrenzen OnFragezeichen OnObst
 		    OnRoute OnStartFlag OnGoalFlag OnMarkerPoint OnTitle
-		    OnRadwege OnQualitaet OnHandicap OnBlocked OnMount
+		    OnRadwege OnRadrouten OnQualitaet OnHandicap OnBlocked OnMount
 		    StartFlagPoints GoalFlagPoints MarkerPoint TitleText
 		    RouteCoords MultiRouteCoords
 		    MapserverDir MapserverRelurl MapserverUrl
@@ -413,6 +413,8 @@ sub draw_map {
 	    $im->OnGewaesser(1);
 	} elsif ($_ eq 'flaechen') {
 	    $im->OnFlaechen(1);
+	} elsif ($_ eq 'sehenswuerdigkeit') {
+	    $im->OnSehenswuerdigkeit(1);
 	} elsif ($_ eq 'faehren') {
 	    $im->OnFaehren(1);
 	} elsif ($_ eq 'ubahn') {
@@ -433,6 +435,8 @@ sub draw_map {
 	    $im->OnObst(1);
 	} elsif ($_ eq 'radwege') {
 	    $im->OnRadwege(1);
+	} elsif ($_ eq 'comments_route') {
+	    $im->OnRadrouten(1);
 	} elsif ($_ eq 'qualitaet') {
 	    $im->OnQualitaet(1);
 	} elsif ($_ eq 'handicap') {
