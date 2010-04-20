@@ -18,20 +18,16 @@
 	require VectorUtil;
 	require BBBikeVar;
 	require BBBikeUtil;
-}
 
-all:
+	sub do_fragezeichen_list {
+		my($do_local) = @_;
 
-#$BBBIKE_TMP_DIR/fragezeichen_list/index.html
-fragezeichen_list:	$BBBIKE_DATA_DIR/fragezeichen \
-						$BBBIKE_DATA_DIR/berlin_ortsteile \
-						$BBBIKE_MISCSRC_DIR/bbd2mapservhtml.pl \
-						$BBBIKE_MISCSRC_DIR/grepstrassen \
-						SlayMakefile
-	{
-		mkdir "$BBBIKE_TMP_DIR/fragezeichen_list"
-		    if !-d "$BBBIKE_TMP_DIR/fragezeichen_list";
-		chmod 0755, "$BBBIKE_TMP_DIR/fragezeichen_list";
+		my $dir                 = $do_local ? "$BBBIKE_TMP_DIR/fragezeichen_list_local" : "$BBBIKE_TMP_DIR/fragezeichen_list";
+		my $bbbikeurl           = $do_local ? 'http://localhost/bbbike/cgi/bbbike.cgi' : 'http://www.bbbike.de/cgi-bin/bbbike.cgi';
+		my $fragezeichenformurl = $do_local ? 'http://localhost/bbbike/html/fragezeichenform.html' : 'http://www.bbbike.de/BBBike/html/fragezeichenform.html';
+
+		mkdir $dir if !-d $dir;
+		chmod 0755, $dir;
 		my $tmpdir = tempdir(CLEANUP => 1) or die;
 		my $ot = Strassen->new("$BBBIKE_DATA_DIR/berlin_ortsteile");
 		my %citypart2polygon;
@@ -79,12 +75,13 @@ fragezeichen_list:	$BBBIKE_DATA_DIR/fragezeichen \
 			@{ $fz->{Data} } = sort @{ $fz->{Data} };
 			my $bbd = $fz->as_string;
 			my @cmd = ("$BBBIKE_MISCSRC_DIR/bbd2mapservhtml.pl",
-				   '-bbbikeurl', 'http://localhost/bbbike/cgi/bbbike.cgi', # XXX geht from BBBikeVar or so
+				   '-bbbikeurl', $bbbikeurl,
 				   '-email', $BBBike::EMAIL,
 				   '-partialhtml', '-linklist',
 				   '-mapscale', '1:6000',
-				   '-customlink', 'http://localhost/bbbike/html/fragezeichenform.html?supplied_coord=$CENTER_COORD;strname=$NAME;strname_html=$NAME_HTML Eintragen',
+				   '-customlink', $fragezeichenformurl . '?supplied_coord=$CENTER_COORD;strname=$NAME;strname_html=$NAME_HTML Eintragen',
 				   '-noroutelistbutton',
+				   '-linktarget', 'int_frame',
 				  );
 			my $err;
 			my $citypart_html;
@@ -93,13 +90,14 @@ fragezeichen_list:	$BBBIKE_DATA_DIR/fragezeichen \
 			my $basename = BBBikeUtil::umlauts_to_german($citypart) . ".html";
 			$basename =~ s{ }{_}g;
 			push @links, {label => $citypart, href => $basename, count => $fz->count};
-			my $ofile = "$BBBIKE_TMP_DIR/fragezeichen_list/" . $basename;
+			my $ofile = "$dir/" . $basename;
 			open my $ofh, ">", "$ofile~" or die "Can't write to $ofile~: $!";
 			binmode $ofh, ":utf8";
-			print $ofh qq{<html><head><title>BBBike: Fragezeichen in $citypart</title><meta http-equiv="content-type" content="text/html; charset=utf-8"></title><body>};
+			print $ofh qq{<html><head><title>BBBike: Fragezeichen in $citypart</title><meta http-equiv="content-type" content="text/html; charset=utf-8"></title><body style="margin:0px;"><div style="width:100%; height:50%; overflow:scroll; padding:0px;"><div style="padding:5px;">};
 			print $ofh "<h1>Fragezeichen: $citypart</h1>";
 			print $ofh $citypart_html;
-			print $ofh qq{<br/><a href="index.html">Liste der Ortsteile</a><br/></body></html>};
+			print $ofh qq{<br/><a href="index.html">Liste der Ortsteile</a><br/>};
+			print $ofh qq{</div></div><iframe style="width:100%; height:50%; border:0px;" name="int_frame"></iframe></body></html>};
 			close $ofh or die $!;
 			if (!-f $ofile || compare("$ofile~", $ofile) != 0) {
 				chmod 0644, "$ofile~";
@@ -110,7 +108,7 @@ fragezeichen_list:	$BBBIKE_DATA_DIR/fragezeichen \
 		}
 
 		@links = sort { $a->{label} cmp $b->{label} } @links;
-		my $index_file = "$BBBIKE_TMP_DIR/fragezeichen_list/index.html";
+		my $index_file = "$dir/index.html";
 		open my $ofh, ">", "$index_file~" or die "While writing to $index_file~: $!";
 		binmode $ofh, ":utf8";
 		print $ofh qq{<html><head><title>BBBike: Fragezeichen</title><meta http-equiv="content-type" content="text/html; charset=utf-8"></title><body>};
@@ -123,4 +121,36 @@ fragezeichen_list:	$BBBIKE_DATA_DIR/fragezeichen \
 		chmod 0644, "$index_file~";
 		rename "$index_file~", $index_file or die "While renaming $index_file~: $!";
 		"";
+	}
+
+	use vars qw(@DO_FRAGEZEICHEN_LIST_DEPS);
+	@DO_FRAGEZEICHEN_LIST_DEPS = ("$BBBIKE_DATA_DIR/fragezeichen",
+				      "$BBBIKE_DATA_DIR/berlin_ortsteile",
+				      "$BBBIKE_MISCSRC_DIR/bbd2mapservhtml.pl",
+				      "$BBBIKE_MISCSRC_DIR/grepstrassen",
+				      "SlayMakefile",
+				     );
+}
+
+all:
+
+fragezeichen-list:		{ "$BBBIKE_TMP_DIR/fragezeichen_list/index.html" }
+
+{ "$BBBIKE_TMP_DIR/fragezeichen_list/index.html" } :		{ @DO_FRAGEZEICHEN_LIST_DEPS }
+	{
+		do_fragezeichen_list();
+	}
+
+fragezeichen-list-local:	{ "$BBBIKE_TMP_DIR/fragezeichen_list_local/index.html" }
+
+{ "$BBBIKE_TMP_DIR/fragezeichen_list_local/index.html" } :	{ @DO_FRAGEZEICHEN_LIST_DEPS }
+	{
+		do_fragezeichen_list("local");
+	}
+
+rsync-fragezeichen-list:	fragezeichen-list
+	{
+		my @cmd = (qw(rsync -avz), "$BBBIKE_TMP_DIR/fragezeichen_list/", 'root@bbbike.de:/root/work/bbbike-webserver/BBBike/tmp/fragezeichen_list/');
+		system @cmd;
+		die "@cmd failed: $?" if $? != 0;
 	}
