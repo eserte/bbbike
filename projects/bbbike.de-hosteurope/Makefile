@@ -77,7 +77,8 @@ DEPLOY_TARGETS=			prepare-bbbike-data \
 				rsync \
 				init-environment \
 				test \
-				create-all-maps
+				create-all-maps \
+				post-deploy-info
 
 # only bbbike data, no program, no mapserver
 DEPLOY_DATA_TARGETS=		prepare-bbbike-data \
@@ -726,3 +727,13 @@ init-environment:
 
 init-local-environment:
 	lwp-request -m GET '${LOCAL_CGI_URL}/bbbike.cgi?init_environment=1'
+
+post-deploy-info:
+	@echo "**********************************************************************"
+	@echo "Consider to do the following things now:"
+	@echo "* Update git repo of webserver:"
+	@echo "    $(HOME)/src/bbbike-aux/misc/bbbike-checkin-hosteurope.pl -after-sync"
+	@echo "* Send all messages in GNUS' drafts folder"
+	@echo "* Update the fragezeichen_list pages:"
+	@echo "    cd $(HOME)/src/bbbike/misc && slaymake rsync-fragezeichen-list"
+	@echo ""
