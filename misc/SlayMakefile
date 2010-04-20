@@ -83,6 +83,8 @@ fragezeichen_list:	$BBBIKE_DATA_DIR/fragezeichen \
 				   '-email', $BBBike::EMAIL,
 				   '-partialhtml', '-linklist',
 				   '-mapscale', '1:6000',
+				   '-customlink', 'http://localhost/bbbike/html/fragezeichenform.html?supplied_coord=$CENTER_COORD;strname=$NAME;strname_html=$NAME_HTML Eintragen',
+				   '-noroutelistbutton',
 				  );
 			my $err;
 			my $citypart_html;
@@ -120,4 +122,5 @@ fragezeichen_list:	$BBBIKE_DATA_DIR/fragezeichen \
 		close $ofh or die $!;
 		chmod 0644, "$index_file~";
 		rename "$index_file~", $index_file or die "While renaming $index_file~: $!";
+		"";
 	}
