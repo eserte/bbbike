@@ -29,6 +29,7 @@ use Object::Iterate qw(iterate);
 use Getopt::Long;
 use BBBikeVar;
 use CGI qw();
+use URI::Escape qw(uri_escape);
 
 my $bbbike_url = $BBBike::BBBIKE_DIRECT_WWW;
 my $email = $BBBike::EMAIL;
@@ -45,6 +46,8 @@ my $do_alternatives_handling;
 my $preferalias;
 my $imagetype = "mapserver";
 my $title = "Mapserver/BBBike";
+my @custom_link_defs;
+my $do_routelist_button = 1;
 
 my $save_cmdline = "$0 @ARGV";
 
@@ -81,6 +84,8 @@ if (!GetOptions("bbbikeurl=s" => \$bbbike_url,
 		'title=s' => \$title,
 		'onlyonedirection!' => \$only_one_direction,
 		'althandling!' => \$do_alternatives_handling,
+		'customlink=s@' => \@custom_link_defs,
+		'routelistbutton!' => \$do_routelist_button,
 	       )) {
     require Pod::Usage;
     Pod::Usage::pod2usage(2);
@@ -88,6 +93,11 @@ if (!GetOptions("bbbikeurl=s" => \$bbbike_url,
 
 if (!@layers) {
     push @layers, qw(sbahn rbahn wasser flaechen str grenzen ort fragezeichen);
+}
+
+for (@custom_link_defs) {
+    my($url, $label) = split /\s+/, $_, 2;
+    $_ = { url => $url, label => $label };
 }
 
 my $bbd_file = shift || "-";
@@ -177,7 +187,7 @@ if ($do_linklist) {
 
 	my @common_html_args = (
 				maplabel       => " Karte ",
-				$current_ignore_routelist ? () : (routelistlabel => " Routenliste "),
+				$current_ignore_routelist || !$do_routelist_button ? () : (routelistlabel => " Routenliste "),
 			       );
 
 	push @html, generate_single_html(coords => \@coords,
@@ -279,7 +289,7 @@ if ($do_linklist) {
 				 (defined $center ? (center => find_nearest_to_center(\@lines, $center)) : ()),
 				 label => undef,
 				 maplabel       => " Karte ",
-				 routelistlabel => " Routenliste ",
+				 ($do_routelist_button ? (routelistlabel => " Routenliste ") : ()),
 				 single => 1,
 				);
 				 
@@ -396,6 +406,28 @@ EOF
  <input type="submit" onclick='this.form.showroutelist.value="1";' value="@{[ CGI::escapeHTML($routelistlabel) ]}" />
 EOF
     }
+    for my $custom_link_def (@custom_link_defs) {
+	my $url = $custom_link_def->{url};
+	my $link_label = $custom_link_def->{label}; # XXX fallback?
+	$url =~ s{\$(NAME_HTML|NAME|FIRST_COORD|CENTER_COORD)}{
+	    my $repl;
+	    if      ($1 eq 'NAME_HTML') {
+		$repl = uri_escape($label_html || CGI::escapeHTML($label));
+	    } elsif ($1 eq 'NAME') {
+		$repl = uri_escape($label);
+	    } elsif ($1 eq 'FIRST_COORD') {
+		$repl = uri_escape($coords[0]);
+	    } elsif ($1 eq 'CENTER_COORD') {
+		$repl = uri_escape($coords[$#coords/2]);
+	    } else {
+		die "Should never happen: \$1 = $1";
+	    }
+	    $repl;
+	}eg;
+	$html .= <<EOF;
+ <a style="text-decoration:none;" href="@{[ CGI::escapeHTML($url) ]}"><button>@{[ CGI::escapeHTML($link_label) ]}</button></a>
+EOF
+    }
     $html .= <<EOF;
 </form>
 EOF
@@ -417,8 +449,9 @@ bbd2mapservhtml.pl - create a mapserver route from a bbd or bbr file
                     [-initmapext {width}x{height}] [-mapscale scale]
 		    [-center x,y] [-centernearest]
 		    [-partialhtml] [-linklist] [-preferalias]
-		    [-title title]
-		    [-imagetype ...]
+		    [-title title] [-imagetype ...]
+		    [-onlyonedirection] [-althandling]
+		    [-customlink "url label" ...] [-noroutelistbutton]
 		    [file]
 
 =head1 DESCRIPTION
@@ -515,6 +548,36 @@ and C<< ;radroute >>).
 Handling of alternative routes. This option in hand-optimized for
 F<comments_route> and may be changed in future or even vanish
 completely.
+
+=item -customlink "url label"
+
+Create another link with the given label and URL. This option may be
+given multiple times. The URL will have the following variables
+replaced:
+
+=over
+
+=item C<$NAME>
+
+name of current record
+
+=item C<$NAME_HTML>
+
+name of current record, as HTML
+
+=item C<$FIRST_COORD>
+
+first coordinate as I<X,Y>
+
+=item C<$CENTER_COORD>
+
+middle coordinate
+
+=back
+
+=item -noroutelistbutton
+
+Don't create a button to the route list.
 
 =back
 
