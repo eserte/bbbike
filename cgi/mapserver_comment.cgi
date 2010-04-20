@@ -352,7 +352,7 @@ eval {
 		    coordsystem => "bbbike",
 		    maptype     => "hybrid",
 		    mapmode     => "addroute",
-		    zoom        => 1,
+		    zoom        => 17,
 		})->query_string;
 	}
 	print header(-cookie => $cookie),
