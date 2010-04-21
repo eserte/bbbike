@@ -1824,6 +1824,25 @@ userdel	q3::inwork 9444,11616 9432,11702
          'data' => 'userdel	q4::inwork 49255,26084 49808,26346
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => 1272340800,
+         'text' => 'Sanierung des Bahnübergangs Bahnübergang zw. Gransee und Altlüdersdorf - vom 19.04.2010 22:00 Uhr bis 27.04.2010 06:00 Uhr Vollsperrung',
+         'from' => 1271707200,
+         'id' => 2054,
+         'data' => 'userdel	2::inwork -5575,69050 -5511,69122 -5146,69565
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'LSO-SG33-E10039',
+         'until' => 1293836400,
+         'text' => 'Brückenneubau und Straßenerneuerung OD Wandlitz 21.04.2010 bis 31.12.2010 ',
+         'from' => 1271829813,
+         'id' => 2055,
+         'data' => 'userdel	2::inwork 13546,37474 14470,37191
+',
+         'type' => 'gesperrt'
        }
      
 );

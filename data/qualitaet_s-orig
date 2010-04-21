@@ -3508,6 +3508,7 @@ Nidecksteig: schlechter Sandweg	Q3 -8059,15014 -8041,15132
 Hirtsieferzeile: guter Asphalt	Q0 15086,2856 15086,2881 15172,2971
 Krˆpeliner Str.: guter Beton	Q0 18010,18648 17999,18540 18006,18525 18049,18471 18040,18448
 Neumagener Str.: guter Asphalt	Q0 14923,16914 14910,17010 14897,17093 14881,17209
+Neumagener Str.: guter Asphalt	Q0 14900,17213 14870,17293 14900,17423
 Knˆterichpfad: Asphalt	Q0 -7842,14683 -7808,14939 -7783,15059
 Tristanstr.: m‰ﬂiges Kopfsteinpflaster	Q2 -4315,1594 -4239,1512 -4049,1535 -3968,1547 -3813,1545
 Kr‰henfuﬂzeile: Asphalt	Q0 15888,23814 16010,23734 16223,23584
@@ -5161,6 +5162,7 @@ Archenholdstr.: schlechtes Kopfsteinpflaster	Q3 16892,10731 16964,10902 17062,11
 Kissinger Platz: Beton	Q0 3110,8052 2999,8060
 #: by: von Marene Effenberger vvv
 Hibiskusweg: Asphalt	Q0 13497,18087 13434,18019 13269,17852 13247,17825
+#: confirmed_by: anonymous
 Clematisweg: Asphalt	Q0 13269,17852 13200,18081 13178,18148
 Irisweg: Asphalt	Q0 13288,18086 13303,17962 13306,17933
 Irisweg: Asphalt	Q0 13303,17962 13376,18036 13381,18058
@@ -10026,7 +10028,9 @@ Boenkestr.: guter Asphalt	Q0 14756,23622 14539,23306 14314,22944 14276,22914 142
 #: by: birgit (...knabe) vvv
 #: note: "enge Straﬂe" ohne Kategorisierung
 Schlawer Str.: m‰ﬂiger Asphalt, teilweise sehr uneben	Q2+ -324,4410 -349,4466 -376,4521 -401,4572 -474,4679 -519,4737
-Lindenfelser Weg: m‰ﬂiger Asphalt	Q1- -963,4869 -857,4725 -753,4578 -690,4519 -649,4484 -638,4413 -595,4385 -548,4326 -420,4159
+#: note: der Lindenfelser Weg ist mit Gaslaternen beleuchtet
+Lindenfelser Weg: Parkweg	Q1 -963,4869 -857,4725 -753,4578
+Lindenfelser Weg: Verbundsteinpflaster	Q1 -753,4578 -690,4519 -649,4484 -638,4413 -595,4385 -548,4326 -420,4159
 #: by: ^^^
 #: by: Frei (simone):
 Deutsche Str.: Kopfsteinpflaster	Q2 7148,17999 7227,18010 7418,18051

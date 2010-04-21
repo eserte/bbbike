@@ -17448,4 +17448,21 @@ EOF
 userdel	q4::inwork 49255,26084 49808,26346
 EOF
      },
+     { from  => 1271707200, # 2010-04-19 22:00
+       until => 1272340800, # 2010-04-27 06:00
+       text  => 'Sanierung des Bahnübergangs Bahnübergang zw. Gransee und Altlüdersdorf - vom 19.04.2010 22:00 Uhr bis 27.04.2010 06:00 Uhr Vollsperrung',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -5575,69050 -5511,69122 -5146,69565
+EOF
+     },
+     { from  => 1271829813, # 2010-04-21 08:03
+       until => 1293836400, # 2011-01-01 00:00
+       text  => 'Brückenneubau und Straßenerneuerung OD Wandlitz 21.04.2010 bis 31.12.2010 ',
+       type  => 'gesperrt',
+       source_id => 'LSO-SG33-E10039',
+       data  => <<EOF,
+userdel	2::inwork 13546,37474 14470,37191
+EOF
+     },
     );
