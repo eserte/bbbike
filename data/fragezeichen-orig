@@ -329,7 +329,7 @@ Hauptstr.: enger Mittelstreifen, für Anhänger recht knapp (-> 3nocross)	? 6608,8
 Für Anhänger sehr unbequem zu passieren (Betonblöcke und Barrieren, max. 90cm lichte Breite)	? 9777,10719 9805,10791 9786,10971
 #: XXX_prog:
 Potsdamer Str. oder Hauptstr.: Richtung Norden Hauptstr., Richtung Süden Potsdamer Str.	? 7479,9357 7517,9454
-#: XXX_indoor:
+#: XXX:
 Zur Eisackstr.: ist sogar ausgeschildert, sollte vielleicht aufgenommen werden	? 6409,8026 6429,7876
 #: XXX_prog: vvv
 Rheinstr.: beginnt bereits hier, aber nur in Richtung Süden	? 5928,7370 5902,7334
@@ -1836,7 +1836,7 @@ Frau-Holle-Str.: Qualität?	? 23471,6776 23412,6753 23261,6683
 Hoernlestr.: Qualität?	? 22645,6431 22509,6519 22301,6683 22265,6689 22192,6659
 Hoernlestr. - Gehsener Str.: Qualität des Sackgassenabschnitts?	? 22301,6683 22351,6756
 Hoernlestr. - Gehsener Str.: Durchfahrt für Radfahrer möglich? Durchfart für Autos möglich? Ausschilderung? Qualität?	? 22351,6756 22395,6821
-#: XXX_indoor: fehlt bei osm
+#: XXX_osm: fehlt bei osm
 Schönecker Weg: Qualität?	? 22330,6973 22358,7093
 Eitelsdorfer Str.: Qualität?	? 22869,7095 22810,7120 22690,7146 22501,7192 22272,7242
 Pflanzgartenplatz: Qualität?	? 22656,7412 22685,7480
@@ -2074,7 +2074,7 @@ Oelsnitzer Str.: Qualität?	? 23989,14307 24099,14355 24133,14444 24162,14487
 U-Bhf. Cottbusser Platz - Auerbacher Ring: Art des Wegbeschaffenheit (Beton, Asphalt, Feinsplitt, oder etwas anderes)?	? 23563,14473 23592,14469 23635,14475 23669,14461
 Maxie-Wander-Str. - Kastanienallee: Durchfahrt für Radfahrer möglich? Qualität?	? 23826,14292 23877,14315
 Sandbacher Weg: Qualität?	? 23504,-938 23407,-981 23073,-1119 22845,-1210 22720,-1255 22482,-1226 22322,-1207 22146,-1183 21930,-1159
-#: XXX_indoor: in plaetze-orig übernehmen, sobald der Sandbacher Weg in strassen ist
+#: XXX: in plaetze-orig übernehmen, sobald der Sandbacher Weg in strassen ist
 Sandbacher Platz: Pl	? 22720,-1255
 Wiesenstr. (Bohnsdorf): Qualität?	? 22795,-1055 22973,-978 23356,-825 23502,-770
 Birkenweg (Bohnsdorf): Qualität?	? 23429,-1139 23407,-981
@@ -2964,7 +2964,7 @@ Gesellschaftstr.: Qualität?	? 8123,17255 8354,17270 8459,17275
 Aegirstr.: Qualität?	? 8154,17301 8240,17304
 #: XXX: zumindest an der Reginhardstr. Kopfsteinpflaster, aber Q2 oder Q3? Reginhardstr. ist Vorfahrtstr.!
 Neptunstr.: Qualität? Kann man als Radfahrer zur Gesellschaftstr. fahren?	? 8185,17352 8281,17357 8324,17362 8345,17350 8354,17270
-#: XXX_indoor bei osm falsch geschrieben?
+#: XXX_osm bei osm falsch geschrieben?
 Stegeweg: Qualität?	? 6869,18721 6879,18737 6910,18861 6960,19047
 Rosentreterpromenade - Ziekowstr.: Qualität? Ist dieser Weg als Radroute 1 ausgeschildert?	? 4159,21170 4060,21147 3649,21102 3456,21071 2911,20953 2571,20886
 Waldpark Steinberg - Waidmannsluster Damm/Dianastr.: Qualität?	? 3443,21908 3532,21894 3634,21936 3726,21838
@@ -3115,7 +3115,7 @@ Kohlmeisenweg: Qualität?	? 14991,3547 14954,3447
 Hainleiteweg: Qualität?	? -4805,15596 -4772,15702
 Tangermünder Weg: Qualität?	? -4294,15525 -4137,15512
 Am Heimhort: Qualität?	? -4317,15298 -4117,15255 -4084,15264
-#: XXX_indoor str_cont_ausnahme
+#: XXX str_cont_ausnahme
 Germersheimer Platz: Qualität?	? -4332,15179 -4495,15198
 Germersheimer Platz: Qualität?	? -4499,15152 -4338,15137
 Merziger Str.: Qualität?	? -4622,15186 -4497,15176
@@ -3128,7 +3128,7 @@ Boraweg: Qualität? Ist die Straße eine Einbahnstraße? Wenn ja, gilt die Einbahns
 Sibyllenstr.: Qualität?	? 6544,3235 6484,3292 6429,3286 6359,3256 6308,3204
 Reginenweg: Qualität? Ist der Weg für Radfahrer befahrbar? Nachts beleuchtet?	? 6484,3292 6482,3327 6426,3425
 Saarburger Str.: Qualität?	? 6529,3480 6635,3520
-#: XXX_indoor: bei osm falsch geschrieben (str. statt weg)?
+#: XXX_osm: bei osm falsch geschrieben (str. statt weg)?
 Karutzseeweg: Qualität?	? 25948,4823 25943,4931 25941,5069
 Emrichstr.: Qualität?	? 25369,4790 25349,4851 25359,5100 25255,5117
 Pfeiffergasse: Qualität?	? 25481,4820 25473,4786
@@ -3219,7 +3219,7 @@ Helensee - Frankfurt: Qualität?	? 85840,-13209 86390,-12552
 Jakobshagen - Warthe: Qualität?	? 19350,88924 19321,88931 19185,88853 18934,88885 18462,89075 18218,89121 17978,89265 17842,89823 16743,90110 16377,90072
 Weg an der Kaserne Hottengrund: Ist dieser Weg öffentlich zugänglich? Wie ist die Qualität für Radfahrer?	? -8510,3849 -8538,3880 -8599,3888 -8633,3863 -8839,3994 -8894,4146 -9076,4382 -9267,4500
 #: XXX laut anonymous "Kopfsteinpflaster", aber ohne weitere Kategorisierung:
-#: XXX_indoor str_cont_ausnahme fehlt (zwei Abschnitte!)
+#: XXX str_cont_ausnahme fehlt (zwei Abschnitte!)
 Hirseländerweg: Qualität?	? 28301,1467 28327,1525 28369,1616 28502,1827 28557,1907 28640,2015 28695,2093 28717,2121 28829,2269 28916,2333 28993,2391 29070,2446 29192,2543
 Hirseländerweg: Qualität?	? 28036,1136 28106,1211
 Tychyer Str.: Qualität?	? 21398,11482 21305,11363
@@ -3319,6 +3319,7 @@ Ringallee/Zur Ringallee: Name der Straße (Ringallee oder Zur Ringallee)? Qualitä
 #: XXX Teleatlas und osm widersprechen sich beim Namen:
 #: XXX laut osm "paved"
 Zur Ringallee: Name der Straße ("Zur Ringallee" oder anders?)? Qualität?	? 13614,17650 13582,17738 13586,17830 13640,17921 13740,17977 13830,17990 13958,17966 14047,17894 14101,17817 14124,17730 14161,17681
+Zur Ringallee: Name der Straße ("Zur Ringallee" oder anders?)? Qualität?	? 14206,17743 14177,17798 14177,17877 14132,17954 13958,17966
 Straße 56 (Heinersdorf): Qualität der Straße? Kann die Berliner Str. in Höhe Straße 56 überquert werden oder ist das wegen der Straßenbahngleise nicht möglich?	? 12448,17679 12587,17603
 Zeuschelstr.: Qualität?	? 12022,23058 11788,23229 11629,23360 11560,23421 11128,23746
 #: XXX Eintrag in str_cont_ausnahme notwendig
@@ -3376,7 +3377,7 @@ Mögeldorfer Weg: Qualität? Teile der Straße für Autos gesperrt?	? -3245,16826 -3
 Klingenhofer Steig: Qualität?	? -3555,16846 -3564,17007 -3567,17137
 Kleinreuther Weg: Qualität?	? -3636,16844 -3673,17068
 Walldürner Weg: Qualität?	? -3376,17149 -3353,17274 -3292,17361 -3186,17415 -3092,17420
-#: XXX_indoor: bei osm Straßenname falsch
+#: XXX_osm: bei osm Straßenname falsch
 Breubergweg: Qualität? Können Radfahrer direkt zum Michelstadter Weg fahren?	? -3353,17274 -3206,17263
 Reußstr.: Qualität?	? -3023,16925 -3129,16931 -3238,16948
 Blankestr.: Qualität?	? 5193,17428 5314,17558 5334,17592
@@ -3571,10 +3572,10 @@ Gütergotzer Str.: Qualität?	? -652,1823 -624,1718 -472,1724 -418,1787
 Radtkestr.: Qualität?	? 29,1877 18,1928 -34,2147
 Thürstr.: Qualität?	? 93,2014 26,2179
 Dallwitzstr.: Qualität?	? 104,2220 163,2091 146,2073 93,2014 79,1992 18,1928
-#: XXX_indoor: bei osm falsch (mit Bindestrichen) geschrieben
+#: XXX_osm: bei osm falsch (mit Bindestrichen) geschrieben
 Am Weißen Steg: Qualität?	? 294,2322 329,2246
 Grenzpfad: Qualität?	? 436,2295 271,2129
-#: XXX_indoor: bei osm falsch geschrieben (steig)
+#: XXX_osm: bei osm falsch geschrieben (steig)
 Rotherstieg: Qualität? Ist der Weg ausgeschildert? Nachts beleuchtet? Dürfen Radfahrer ihn benutzen?	? 244,2165 163,2091
 Bismarckstr. (Zehlendorf): Qualität?	? 146,2073 243,1820
 Karolinenstr. (Zehlendorf): Qualität?	? 345,1977 444,2008 524,2031
@@ -3655,15 +3656,15 @@ Am Bauernwäldchen: Qualität?	? 28583,883 28859,1198
 Gersweilerstr.: Qualität?	? 28748,885 28751,923 28925,1117
 Gersweileraue: Qualität?	? 28925,1117 29060,1179
 Becherbacher Str.: Qualität?	? 28925,1117 28914,1157 28859,1198 28763,1276 28591,1421
-#: XXX_indoor: osm meint "Birkenweiler Str." (falsch!)
+#: XXX_osm: osm meint "Birkenweiler Str." (falsch!)
 Birkweilerstr.: Qualität?	? 28520,998 28348,1147
 #: XXX heißen Teile der Straße "Norheimer Str."?
 #: oldname: Straße 635
 Müggellandstr.: Qualität?	? 28488,1307 28301,1467 28137,1616 28052,1606 27804,1337
 Kirsteinstr.: Qualität?	? 28632,1469 28495,1575 28369,1616 28205,1630 28137,1616
-#: XXX_indoor: bei osm falsch geschrieben
+#: XXX_osm: bei osm falsch geschrieben
 Annweilerweg: Qualität?	? 28545,1373 28445,1460 28327,1525
-#: XXX_indoor: fehlt bei osm
+#: XXX_osm: fehlt bei osm
 Siefersheimer Str.: Qualität?	? 28672,1172 28596,1233
 Landhausring: Qualität?	? 21710,12798 21866,12763 21893,12783 21900,12820 21880,12858 21729,12894
 #: XXX laut osm surface=cobblestone
@@ -3702,7 +3703,7 @@ Geraldweg: Qualität?	? 20910,8704 20834,8694 20677,8695 20555,8694 20553,8641
 Wateweg: Qualität?	? 21122,8370 21131,8525 21115,8618 21141,8715 21136,8735 21124,8792
 Guntramstr.: Qualität?	? 21050,8202 21166,8195
 Erwinstr.: Qualität?	? 21047,8110 21169,8112
-#: XXX_indoor: bei osm falsch geschrieben (Amselnstr)
+#: XXX_osm: bei osm falsch geschrieben (Amselnstr)
 Anselmstr.: Qualität?	? 21044,7996 21142,7995 21233,8022
 Irmastr.: Qualität?	? 21040,7872 21203,7872 21331,7937
 Breitenfelder Str.: Qualität?	? 21250,8006 21319,8078
@@ -3738,7 +3739,7 @@ Sadowastr. (Kaulsdorf): Qualität?	? 22760,8770 22586,8686 22242,8536 22158,8503 
 Weidenstr.: Qualität?	? 22941,8834 22786,8940 22644,9044
 Arndtstr. (Mahlsdorf, Kaulsdorf): Qualität?	? 22871,8582 22919,8647 23007,8788 23082,8892 23176,9037
 Buchenstr.: Qualität?	? 22514,8848 22586,8961 22644,9044 22699,9137
-#: XXX_indoor: bei osm ohne Namen und zu kurz
+#: XXX_osm: bei osm ohne Namen und zu kurz
 Güstrower Str.: Qualität?	? 23921,13465 24078,13431 24117,13423 24345,13366
 Brachetweg: Qualität?	? 23569,10693 23544,10591 23561,10572
 Maipfad: Qualität?	? 23569,10693 23715,10665
@@ -3758,14 +3759,14 @@ Rosa-Valetti-Str.: Qualität?	? 24405,10383 24618,10601 24639,10622 24662,10632
 Lutherstr. (Mahlsdorf): Qualität?	? 24420,10029 24718,9966
 Müllerstr. (Mahlsdorf): Qualität?	? 24501,10222 24792,10162 24923,10097 25200,9939 25385,9842 25543,9755
 #: XXX fehlt in Berlin.coords.data ZIP=12623
-#: XXX_indoor: falsche Schreibweise bei osm (getrennt)
+#: XXX_osm: falsche Schreibweise bei osm (getrennt)
 Langenbeckplatz: Qualität?	? 25030,9626 25095,9627 25086,9733 25020,9728 25030,9626
 Zipser Weg: Qualität?	? 25086,9733 25130,9816 25200,9939
 Spitzwegstr.: Qualität?	? 25237,9595 25095,9627
 Jahnstr. (Mahlsdorf): Qualität?	? 24617,9545 24470,9628
 Levensauer Str.: Qualität?	? 24519,9349 24360,9411 24190,9484
 Bruchsaler Str.: Qualität?	? 24205,9520 23932,9564 23584,9629
-#: XXX_indoor bei osm als Bruchsaler Str. bezeichnet
+#: XXX_osm bei osm als Bruchsaler Str. bezeichnet
 Karlsruher Str. (Mahlsdorf): Qualität?	? 23582,9591 23584,9629 23585,9672 23528,9680
 #: XXX Eintrag in str_cont_ausnahme fehlt:
 Weitzgründer Str.: Qualität?	? 23717,9509 23673,9414
@@ -3789,7 +3790,7 @@ Kastanienallee (Mahlsdorf): Qualität?	? 23833,8095 23995,8066 24081,8048 24137,8
 Donathstr.: Qualität?	? 24081,8048 24059,7918
 Ravensteinstr.: Qualität?	? 24389,7793 24255,7821
 Erich-Baron-Weg: Qualität?	? 24229,7700 24238,7751 24255,7821 24288,8008 24313,8170 24342,8321 24367,8497 24367,8632 24239,8701 24102,8772 23927,8864
-#: XXX_indoor: Teile schon in BRB
+#: XXX: Teile schon in BRB
 Rüsternallee: Qualität?	? 23982,8994 24156,8904 24294,8827 24405,8771 24512,8759 24558,8730 24635,8714 24751,8637 24813,8594 24857,8567 24905,8533
 Heidestr. (Mahlsdorf): Qualität?	? 24484,8507 24604,8485 24729,8470
 Bütower Str.: Qualität?	? 24690,8796 24632,8836 24525,8910 24358,8976 24207,9035 24032,9111
@@ -3825,7 +3826,7 @@ Kunersdorfer Str. (Potsdam): Qualität? Kann die Heinrich-Mann-Allee in Höhe Kune
 Am Brunnen (Potsdam): Qualität?	? -11547,-3502 -11543,-3461 -11672,-3345 -11789,-3212
 Waldstr. (Potsdam): Qualität?	? -11152,-3498 -11278,-3596 -11414,-3703
 Kottmeierstr. (Potsdam): Qualität?	? -11504,-3502 -11423,-3638
-#: XXX_indoor str_cont_ausnahme
+#: XXX str_cont_ausnahme
 Heidereiterweg (Potsdam): Qualität?	? -11278,-3596 -11166,-3744
 Heidereiterweg (Potsdam): Qualität?	? -11173,-3758 -11137,-3880 -11114,-3961 -11083,-4002
 Heidereiterweg (Potsdam): Qualität?	? -11105,-4023 -10978,-4247 -10924,-4319 -10899,-4355
@@ -3839,7 +3840,7 @@ Auf der Höh: Qualität?	? 22898,11125 22782,11127
 Straße 199 (Französisch Buchholz, Niederschönhausen): Qualität?	? 11632,20086 11553,20253 11684,20377 11840,20528
 Verlängerte Mozartstr.: Qualität?	? 21864,6928 21920,6835
 Verlängerte Müggelbergallee: gibt es diese Straße? Qualität?	? 23107,1680 23231,1707
-# XXX_indoor Anderson bei tvojpl, Edmund bei osm
+#: XXX Anderson bei tvojpl, Edmund bei osm
 Edmundweg: existiert hier eine Straße unter dem Namen "Andersonweg" oder "Edmundweg"? Qualität?	? 23064,2147 22872,2107
 #: oldname: Straße 241
 Am Marienhain: Qualität?	? 22638,3366 22662,3205
@@ -3890,7 +3891,7 @@ Woglindestr.: Qualität?	? 8476,19603 8516,19535
 Hundingstr.: Qualität?	? 8776,19578 8686,19725
 Frickastr.: Qualität?	? 8686,19725 8642,19808 8560,19942
 Wermuthweg: Qualität? Kann die Johannisthaler Chausse in Höhe Wermuthweg überquert werden?	? 13661,2207 13672,2221 13816,2258 13827,2280 13838,2310 13835,2354 13709,2551
-#: XXX_indoor: bei osm falsch geschrieben ("Nimitz")
+#: XXX_osm: bei osm falsch geschrieben ("Nimitz")
 Anna-Nemitz-Weg: Qualität? Nachts beleuchtet?	? 13943,2284 13905,2381 13885,2377 13872,2497 13900,2513 13898,2582 13914,2601
 Tiefenseer Str.: Qualität?	? 7425,21219 7450,21018
 #: XXX nicht in Berlin.coords.data enthalten:
@@ -3899,12 +3900,12 @@ Steinkirchener Str.: Qualität?	? 6300,21208 6081,21182 5993,21172 5898,21161 580
 Sagritzer Weg: Qualität?	? 6167,21319 6074,21304 5980,21289 5888,21279
 Guhlener Zeile: Qualität?	? 5888,21279 5898,21161
 Senziger Zeile: Qualität?	? 5980,21289 5993,21172
-#: XXX_indoor: bei osm falsch geschrieben (ohne h):
+#: XXX_osm: bei osm falsch geschrieben (ohne h):
 Mehrower Zeile: Qualität?	? 6074,21304 6081,21182
 Wallenroder Str.: Qualität?	? 5661,21739 5989,22006
 Engelroder Weg: Qualität?	? 6269,21748 6253,21778 6211,21863 6175,21913
 Ulrichsteiner Weg: Qualität?	? 6093,21648 6073,21678 6016,21739 5976,21777
-#: XXX_indoor: bei osm vermutlich falsch geschrieben (ohne r):
+#: XXX_osm: bei osm vermutlich falsch geschrieben (ohne r):
 Frischborner Weg: Qualität?	? 5816,21479 5747,21532 5697,21575
 Angersbacher Pfad: Qualität?	? 5604,21400 5747,21532
 Eugen-Roth-Weg: Qualität?	? 20072,13070 20068,13036 20048,12830
@@ -3917,14 +3918,14 @@ Breitachzeile: Qualität?	? 2735,20154 2803,20199
 Prendener Zeile: Qualität?	? 3155,20416 3132,20514
 Marzahnstr.: Qualität? Können Radfahrer direkt zur Oeserstr. fahren?	? 2762,20648 2793,20550 2810,20455 2825,20387
 Stillachzeile: Qualität?	? 2645,20300 2567,20239
-#: XXX_indoor: bei osm vermutlich falsch geschrieben (a statt e)
+#: XXX_osm: bei osm vermutlich falsch geschrieben (a statt e)
 Reppener Zeile: Qualität?	? 2848,19686 2764,19804
 Trepliner Weg: Qualität?	? 2684,19765 2790,19910 2779,19923 2837,20015
 Am Tegelgrund: Qualität?	? 458,22295 408,22184 368,22080
 Im Waldwinkel: Qualität? Einbahnstraße?	? 242,22427 200,22251
-#: XXX_indoor: bei osm vermutlich falsch geschrieben (nur ein f)
+#: XXX_osm: bei osm vermutlich falsch geschrieben (nur ein f)
 Rausendorffweg: Qualität?	? -49,22605 -83,22536 -113,22451
-#: XXX_indoor: bei osm falsch geschrieben
+#: XXX_osm: bei osm falsch geschrieben
 Martin-Rudloff-Weg: Qualität?	? -127,22653 -159,22590
 Beyschlagstr.: Qualität? Einbahnstraße (teilweise)?	? 408,22184 200,22251 5,22384 18,22563
 Am Dorfteich: Qualität?	? -83,22536 -159,22590 -237,22640
@@ -3933,11 +3934,11 @@ Wolburgsweg: Qualität?	? -5727,15818 -5710,15950 -5663,16359
 Haackzeile: Qualität?	? -5875,15994 -5710,15950
 Netphener Weg: Qualität? Nachts beleuchtet? Für Autos gesperrt?	? -5146,15059 -5159,14957 -5199,14835
 Staakener Feldstr.: Qualität?	? -7464,13904 -7534,13936 -7595,13963 -7647,13985
-#: XXX_indoor bei osm vermutlich falsch geschrieben
+#: XXX_osm bei osm vermutlich falsch geschrieben
 Mühlenbachring: Qualität?	? -7534,13936 -7556,13894 -7564,13817 -7637,13822 -7674,13827 -7665,13945 -7647,13985
 Mühlendorfstr.: Qualität?	? -7637,13822 -7630,13889 -7595,13963
 Filmwerkeweg: Qualität?	? -7050,13807 -7046,13918
-#: XXX_indoor: bei osm vermutlich falsch geschrieben
+#: XXX_osm: bei osm vermutlich falsch geschrieben
 Barmbeker Weg: Qualität?	? -6659,14142 -6641,14044 -6622,13945 -6610,13840
 Wandsbeker Weg: Qualität?	? -6641,14044 -6542,14057
 Köhlbrandweg: Qualität?	? -6517,13977 -6542,14057
@@ -3950,12 +3951,12 @@ Borkumer Str.: Qualität des westlichen Abschnitts?	? -3965,13870 -3849,13848
 Jadeweg: Qualität? Einbahnstraße?	? -4011,13656 -3878,13636 -3850,13756
 Stritteweg: Qualität? Sind Teile der Straße für Autos gesperrt?	? -5202,11347 -5223,11250 -5229,11230 -5236,11204 -5259,11135
 Ernemannzeile: Qualität?	? -5750,12128 -5702,12098
-#: XXX_indoor: Achtung, fehlt bei osm, andere Straßen sind wahrscheinlich verschoben!
+#: XXX_osm: Achtung, fehlt bei osm, andere Straßen sind wahrscheinlich verschoben!
 Voigtländerzeile: Qualität?	? -5736,12054 -5782,12090
 Orelzeile: Qualität?	? -5845,12004 -5786,11965
 Bauersfeldzeile: Qualität?	? -5858,11955 -5806,11926
 Wiesengrund (Staaken): Qualität?	? -7334,13058 -7377,13051 -7439,13047 -7481,13055 -7507,13059
-#: XXX_indoor: Straßenname bei osm möglicherweise falsch (Helma Ring)
+#: XXX_osm: Straßenname bei osm möglicherweise falsch (Helma Ring)
 Helma-Bogen: Qualität?	? -7377,13051 -7379,13105 -7481,13111 -7481,13055
 Am Rain: Qualität?	? -8033,13204 -7883,13166
 Am Gartenstadtweg: Qualität? Einbahnstraße?	? 21528,533 21591,542 21658,575 21677,586 21686,633 21614,659 21591,542
@@ -3963,21 +3964,21 @@ Mandelblütenweg: Qualität?	? 21538,475 21596,481 21676,500
 Sternblütenweg: Qualität?	? 21596,481 21617,387
 #: XXX street name mismatch: Westerwald vs. Westerland, ask again (was entry by: marionrohde, Asphalt Q0)
 Westerwaldstr.: Qualität?	? -5039,15618 -5023,15688 -5000,15769 -5010,15787 -5056,15800 -5066,15820 -5036,15923 -5019,15970 -4951,16116
-#: XXX_indoor: bei osm evtl. falsch geschrieben (Bürstedter statt Bürstadter)
+#: XXX_osm: bei osm evtl. falsch geschrieben (Bürstedter statt Bürstadter)
 Bürstadter Weg: Qualität? Ist die Straße eine Spielstraße? Ist die Straße (teilweise) eine Einbahnstraße? Wenn ja, nur für Autofahrer oder auch für Radfahrer?	? -760,4542 -847,4553 -862,4542
 Alsbacher Weg: Qualität? Ist die Straße eine Spielstraße?	? -847,4553 -824,4635
-#: XXX_indoor: bei osm evtl. falsch geschrieben (großes D)
+#: XXX_osm: bei osm evtl. falsch geschrieben (großes D)
 Von-der-Trenck-Str.: Qualität?	? -3245,1427 -3065,1565
 Barnhelmstr.: Qualität?	? -3192,1343 -2976,1418 -2753,1490 -2698,1509
 Tellheimstr.: Qualität?	? -3094,1183 -2902,1296
 Waldhauswinkel: Qualität?	? -2847,1705 -2784,1728
 Blücherstr. (Zehlendorf): Qualität?	? -268,3441 -156,3522
 Zinnowweg: Qualität? Für Radfahrer befahrbar? Nachts beleuchtet?	? -420,4159 -343,4056 -162,3827 -92,3724 -90,3645 -135,3567
-#: XXX_indoor: fehlt evtl. bei osm
+#: XXX_osm: fehlt evtl. bei osm
 Grumbacher Weg: Qualität?	? -531,4599 -591,4558
-#: XXX_indoor: bei osm evtl. falsch geschrieben
+#: XXX_osm: bei osm evtl. falsch geschrieben
 Jugenheimer Weg: Qualität? Für Radfahrer offen?	? -517,4463 -472,4476 -424,4495 -376,4521 -319,4550 -268,4588
-#: XXX_indoor: bei osm evtl. falsch geschrieben
+#: XXX_osm: bei osm evtl. falsch geschrieben
 Heppenheimer Weg: Qualität? Für Radfahrer offen?	? -500,4409 -459,4422 -404,4442 -349,4466 -283,4495 -227,4538
 Ottmachauer Steig: Qualität? Für Radfahrer offen?	? -442,4691 -424,4717 -311,4637
 Selmaplatz: Qualität?	? -361,4334 -408,4302
@@ -3992,7 +3993,7 @@ Mutter-Mochow-Weg: Qualität? Nachts beleuchtet?	? -1959,2305 -1849,2043
 Verlängerung der Benschstr.: Qualität? Nachts beleuchtet? Existiert eine Verbindung zur Lissabonallee?	? -1592,1852 -1590,1985 -1618,2137 -1631,2260 -1604,2324
 Münchowstr.: Qualität?	? -3907,2438 -4084,2356
 Paul-Krause-Str.: Qualität? Existiert eine Verbindung (Treppe, Rampe) zur Borussenstr.?	? -4084,2356 -3983,2280
-#: XXX_indoor: bei osm evtl. falsch geschrieben
+#: XXX_osm: bei osm evtl. falsch geschrieben
 Nickisch-Rosenegk-Str.: Qualität?	? -2761,2895 -2709,3104
 Palmzeile: Qualität?	? -2800,2750 -2711,2802 -2656,2897 -2603,3128 -2587,3185
 Parallelstr. (Nikolassee): Qualität? Existiert eine Treppe (wieviele Stufen?) zur Borussenstr.?	? -3742,2287 -3804,2352 -3801,2410 -3820,2479
@@ -4036,7 +4037,7 @@ Sorbenstr.: Qualität?	? 20428,1241 20382,1109 20357,1037
 Frankenstr. (Altglienicke): Qualität?	? 20252,901 20307,1055
 #: XXX benötigt str_cont_ausnahme-Eintrag
 Lutizenstr.: Qualität?	? 20432,997 20357,1037 20307,1055 20262,1072 20184,1099
-#: XXX_indoor dieser Abschnitt bei osm ohne Straßennamen
+#: XXX_osm dieser Abschnitt bei osm ohne Straßennamen
 Lutizenstr.: Qualität?	? 20450,1022 20542,938 20582,903 20607,881
 Kattenstr.: Qualität?	? 20245,1213 20184,1099 20143,1035
 Gotenstr. (Altglienicke): Qualität?	? 20172,1242 20245,1213 20295,1200
@@ -4070,29 +4071,29 @@ Dahlienstr.: Qualität?	? 24107,4309 24126,4402 24170,4560
 Kleingartenstr.: Qualität?	? 24126,4402 24075,4417 24022,4442 23988,4482
 Cedernstr.: Qualität?	? 23878,4406 23988,4482 24078,4595
 Schrebergasse: Qualität? Für Radfahrer befahrbar? Nachts beleuchtet?	? 23850,4497 23925,4555 23980,4633
-#: XXX_indoor: bei osm evtl. falsch geschrieben (Bindestriche!)
+#: XXX_osm: bei osm evtl. falsch geschrieben (Bindestriche!)
 Am Maria-Jankowski-Park: Qualität?	? 22087,5404 22018,5452
 Am Generalshof: Qualität? Kann man als Radfahrer direkt zur Lindestr. fahren?	? 22164,5441 22167,5416 22075,5320
-#: XXX_indoor: bei osm evtl. falsch geschrieben (kein ß)
+#: XXX_osm: bei osm evtl. falsch geschrieben (kein ß)
 Am Schloßberg: Qualität?	? 22791,4457 22866,4352
 Am Amtsgraben: geht die Straße Richtung Westen weiter? Qualität?	? 22963,4435 22927,4400 22866,4352 22800,4322
 #: XXX Straße fehlt in Berlin.coords.data und bei LOR
 Neptunweg: Qualität?	? 22893,4532 22858,4567
-#: XXX_indoor: fehlt bei osm
+#: XXX_osm: fehlt bei osm
 Ambacher Str.: Qualität?	? 21944,7122 21967,7048
 Daheimstr.: Qualität?	? 21324,4986 21268,4992 21271,5065
 Gloriastr.: Qualität?	? 21306,4876 21272,4889 21202,4985 21155,5061
 Spinnpfad: Qualität?	? 21202,4985 21207,5056
 Militscher Weg: Qualität?	? 21170,4706 21152,4635 21139,4421 21206,4387
 Fehleweg: Qualität?	? 22962,2939 23025,2957
-#: XXX_indoor: fehlt bei osm
+#: XXX_osm: fehlt bei osm
 Stahnweg: Qualität?	? 22995,2823 23063,2842
 Friedenstr. (Köpenick): Qualität?	? 21993,6133 22033,6144 22141,6143
 Jostweg (Köpenick): Qualität?	? 21244,3571 21164,3812 21141,3958
 Pestalozzistr. (Köpenick): Qualität?	? 21357,3705 21503,3592
 Olmweg: Qualität? Kann man als Radfahrer bis zur Grünauer Str. fahren?	? 21295,3658 21352,3599 21384,3495 21617,3287
 Waldpromenade: Qualität? Nachts beleuchtet? Für Autos offen?	? 24388,7698 24229,7700 24074,7695 24028,7697 23939,7761 23792,7861 23481,8119 23385,8217 22871,8582
-#: XXX_indoor: bei osm evtl. falsch geschrieben
+#: XXX_osm: bei osm evtl. falsch geschrieben
 Scharzhofberger Str.: Qualität?	? 6746,3587 6827,3676
 Alsheimer Str.: Qualität?	? 6618,3817 6717,3924
 Beselerstr.: Qualität?	? 7034,2586 6960,2406
@@ -4102,13 +4103,13 @@ Hirzbacher Weg: Qualität?	? 6377,1671 6378,1700 6322,1807
 Retzowstr.: Qualität?	? 6337,2271 6446,2111 6477,2058
 Lerbacher Weg: Qualität?	? 6768,2143 6901,2122 7013,2146
 Melanchthonstr. (Lankwitz): Qualität? Ist die Straße eine Einbahnstraße? Wenn ja, nur für Autofahrer oder auch für Radfahrer?	? 6925,3336 6795,3178
-#: XXX_indoor: fehlt bei osm
+#: XXX_osm: fehlt bei osm
 Privatweg: Qualität?	? 8252,2614 8289,2478
 Rehauer Pfad: Qualität?	? 7587,3411 7626,3554
 Lienzer Pfad: Qualität? Wo genau liegt die Straße?	? 10444,2234 10489,2165
 Egisheimer Weg: Qualität?	? 12008,1896 12033,1929
 Fläzsteinpfad: Qualität? Nachts beleuchtet?	? 12476,2106 12498,2025 12561,1931
-#: XXX_indoor benötigt str_cont_ausnahme-Eintrag
+#: XXX benötigt str_cont_ausnahme-Eintrag
 Alt-Buckow: Qualität der Nebenstraße? Einbahnstraße auch für Radfahrer?	? 12817,2031 12561,1931 12574,1866
 Lindholzweg: Qualität?	? 12512,1650 12489,1444 12475,1292 12460,1168
 Straße 44 (Buckow): Qualität?	? 12460,1168 12227,1227 12125,1282
@@ -4116,13 +4117,13 @@ Sprosserweg: Qualität?	? 14865,3068 14933,3158
 Eugen-Bolz-Kehre: Qualität?	? 14812,2661 14935,2795
 Anna-Siemsen-Weg: Qualität?	? 14411,2568 14332,2565 14264,2562
 Gaudigweg: Qualität?	? 14332,2565 14334,2446
-#: XXX_indoor: fehlt bei osm
+#: XXX_osm: fehlt bei osm
 Kerschensteinerweg: Qualität?	? 14483,2500 14455,2469 14454,2367
-#: XXX_indoor: fehlt bei osm
+#: XXX_osm: fehlt bei osm
 Lenzelpfad: Qualität?	? 15318,2079 15213,2076 15213,2094 15126,2107 15124,2090 15066,2089
 Turfweg: Qualität?	? 13336,2151 13362,2000
 Uhuweg: Qualität?	? 14204,3029 14056,3106
-#: XXX_indoor: fehlt bei osm
+#: XXX_osm: fehlt bei osm
 #: XXX: Schreibweise von "kleinen" ist unklar: klein oder groß? Kauperts, RV und LOR meinen klein, aber laut Luise wird der Tümpel "Kleiner Pfuhl" genannt. Was meint die Rechtschreibung?
 Zum kleinen Pfuhl: Qualität? Sackgasse für Autos? Müssen Bordsteine zur Marienfelder Chaussee überwunden werden?	? 12127,1564 12162,1651 12158,1684
 Straße 99: Qualität?	? 11538,1550 11497,1650
@@ -4130,7 +4131,7 @@ Am Rudower Waldrand: Qualität?	? 15425,424 15476,332 15600,116 15707,-6
 Zwerghuhnweg: Qualität?	? 15476,332 15565,379 15657,436 15731,476 15803,522
 Lachshuhnweg: Qualität?	? 15731,476 15789,386 15859,297 15927,245
 Welsumerpfad: Qualität?	? 15995,328 15927,245 15860,156 15783,72 15707,-6 15615,-92
-#: XXX_indoor: bei osm falsch geschrieben
+#: XXX_osm: bei osm falsch geschrieben
 Lakenfelderweg: Qualität?	? 15944,368 16008,446 16068,525 16085,547 16116,581
 Minorkaweg: Qualität?	? 15831,484 15925,541 16008,628
 Seidenhuhnweg: Qualität?	? 16008,446 16074,389
@@ -4158,7 +4159,7 @@ Herzblattweg: Qualität?	? 17338,1835 17270,1921 17286,2053
 Ritterspornweg: Qualität?	? 17440,2068 17514,2139 17553,2157 17657,2213
 Fingerhutweg: Qualität?	? 17477,2397 17364,2479
 Wischmattenweg: Qualität?	? 17721,2232 17880,2152 17920,2231
-#: XXX_indoor fehlt bei Berlin.coords.data
+#: XXX fehlt bei Berlin.coords.data
 Kiefwiesensteig: Qualität?	? 17880,2152 17901,2075
 An der Nachtbucht: Qualität?	? 17889,1971 18052,2012
 Hofjagdweg: Qualität?	? 17829,1758 18103,1820
@@ -4172,56 +4173,56 @@ Straße 230: Qualität?	? 15277,1201 15315,1108
 Straße 229: Qualität?	? 15426,1041 15374,1086 15323,1215 15254,1396 15245,1459
 Söderblomweg: Qualität?	? 15245,1459 15217,1463 15117,1456 15049,1455 15033,1455
 Straße 179 (Rudow): Qualität?	? 16642,393 16705,326 16790,150 16817,-7
-#: XXX_indoor fehlt bei osm
+#: XXX_osm fehlt bei osm
 Gisbertzweg: Qualität?	? 17242,-80 17215,94 17205,167
-#: XXX_indoor fehlt bei osm
+#: XXX_osm fehlt bei osm
 Nikolaus-Ehlen-Weg: Qualität?	? 17308,-36 17215,94 17176,90
 Hafenstr.: Qualität?	? 17541,2454 17629,2606
 Löheweg: Qualität?	? 15049,1455 15055,1562
 Mathilde-Vaerting-Weg: Qualität? Wo genau befindet sich der Weg?	? 17620,-345 17634,-367
 Narkauer Weg: Qualität?	? 17678,307 17811,374
 Straße 228: Qualität?	? 15597,703 15517,689 15501,686 15375,663
-#: XXX_indoor fehlt bei osm
+#: XXX_osm fehlt bei osm
 Radeberger Weg: Qualität?	? 15966,965 16083,1013
-#: XXX_indoor fehlt bei osm
+#: XXX_osm fehlt bei osm
 Rochlitzer Weg: Qualität?	? 15999,880 16117,927
-#: XXX_indoor fehlt bei osm
+#: XXX_osm fehlt bei osm
 Schleffiner Str.: Qualität?	? 17168,654 17159,703 17106,783 17035,775
-#: XXX_indoor fehlt bei osm
+#: XXX_osm fehlt bei osm
 Sebnitzer Weg: Qualität?	? 16278,1047 16227,997
-#: XXX_indoor fehlt bei osm
+#: XXX_osm fehlt bei osm
 Straße 180: Qualität? Wo liegt die Straße genau?	? 16739,193 16765,165
-#: XXX_indoor fehlt bei osm
+#: XXX_osm fehlt bei osm
 Straße 18s: Qualität? Wo liegt die Straße genau?	? 18167,2198 18255,2088
-#: XXX_indoor fehlt bei osm, falsch geschrieben bei tvojpl.
+#: XXX_osm fehlt bei osm, falsch geschrieben bei tvojpl.
 Straße 223: Qualität?	? 15520,887 15469,864 15436,836 15356,742 15375,663 15417,545
-#: XXX_indoor fehlt bei osm
+#: XXX_osm fehlt bei osm
 Straße 224: Qualität?	? 15501,686 15436,836
-#: XXX_indoor fehlt bei osm
+#: XXX_osm fehlt bei osm
 Straße 225: Qualität?	? 15517,689 15533,611 15417,545
 Will-Meisel-Weg: Qualität?	? 18023,833 17937,951 17839,905
 Akazienstr. (Lichterfelde): Qualität?	? 5103,2311 5136,2235
 Frauenstr.: Qualität?	? 4963,2318 5056,2481
 Schillerstr. (Lichterfelde): Qualität?	? 5033,2279 5071,2169 4995,2090
-#: XXX_indoor bei osm falsch geschrieben (str statt weg)
-#: XXX_indoor str_cont_ausnahme-Eintrag 
+#: XXX_osm bei osm falsch geschrieben (str statt weg)
+#: XXX str_cont_ausnahme-Eintrag 
 Hochbergweg: Qualität?	? 4902,2058 4839,2195 4813,2256
 Hochbergweg: Qualität?	? 4796,2271 4714,2285
 Hochbergplatz: Qualität? Gibt es hier eine Einbahnstraßenregelung?	? 4818,2279 4824,2266 4813,2256 4803,2257 4796,2271 4803,2280 4818,2279
 Altenauer Weg: Qualität? Können Radfahrer direkt zur Geraer Str. fahren?	? 5275,1446 5419,1395 5435,1390
 Blaumeisenweg: Qualität? Einbahnstraßenregelung?	? 5251,1543 5194,1690
-#: XXX_indoor bei osm falsch geschrieben
+#: XXX_osm bei osm falsch geschrieben
 Schöffenstr.: Qualität? Wo genau geht die Schöffenstr. in die Lange Straße über?	? 5048,1651 5132,1672 5194,1690 5261,1718
 An der Schäferei: Qualität?	? 5678,1674 5752,1856
 Draisweg: Qualität?	? 5364,1049 5408,1076 5493,935
 Jenbacher Weg: geht der Jenbacher Weg bis zur Osdorfer Str. weiter?	? 5671,52 5415,-113
 Brüderstr. (Lichterfelde): Qualität?	? 3061,3695 3193,3793
 Dorstener Str.: Qualität? Einbahnstraßenregelung?	? 3691,566 3590,644
-#: XXX_indoor fehlt bei osm
+#: XXX_osm fehlt bei osm
 Ellen-Widmann-Pfad: Existiert die Straße schon? Qualität? Wo liegt die Straße genau?	? 3750,2285 3830,2285
-#: XXX_indoor fehlt bei osm
+#: XXX_osm fehlt bei osm
 Ines-Bolla-Pfad: Existiert die Straße schon? Qualität? Wo liegt die Straße genau?	? 3747,2335 3854,2332
-#: XXX_indoor fehlt bei osm
+#: XXX_osm fehlt bei osm
 Maggy-Breittmayer-Pfad: Existiert die Straße schon? Qualität? Wo liegt die Straße genau?	? 3747,2383 3880,2382
 Fahrenheitstr.: Qualität?	? 4768,840 4510,669
 Hochstr. (Lichterfelde): Qualität?	? 4717,1618 4898,1368 4897,1346
@@ -4233,7 +4234,7 @@ Heinrichstr. (Lichterfelde): Qualität?	? 4433,1800 4542,1729 4605,1633
 #: XXX Reaumurstr oder Réaumurstr?
 Reaumurstr.: Qualität?	? 4948,562 4748,453 4505,465 4279,459
 (Reaumurstr. - Fürstenstr.): Können Radfahrer am S-Bhf. Lichterfelde Süd von Reaumurstr. zur Fürstenstr. fahren?	? 4279,459 4218,439 4158,461 4136,505
-#: XXX_indoor: bei osm ohne Straßennamen
+#: XXX_osm: bei osm ohne Straßennamen
 Waadter Zeile: Qualität? Für Autos gesperrt? Existiert eine Verbindung zur Goerzallee?	? 3726,2209 3729,2126
 Straße 40 (Lichtenrade): Qualität?	? 11015,-1357 11003,-1303
 Baggerseestr.: Qualität?	? 20281,11341 20346,11337 20413,11334
@@ -4242,30 +4243,30 @@ Schrodaer Str.: Qualität? Genauer Verlauf der Straße?	? 20092,10840 19964,10834 
 #: XXX laut osm "track"
 Garziner Platz: Qualität?	? 20945,10286 20947,10137
 Joachim-Ringelnatz-Str.: Qualität?	? 21960,13776 22150,13783 22118,13954 22050,14212
-#: XXX_indoor bei osm als "Alwineweg" bezeichnet
+#: XXX_osm bei osm als "Alwineweg" bezeichnet
 Völklinger Str.: Qualität?	? 21814,14407 21940,14413 22003,14400
-#: XXX_indoor fehlt bei osm
+#: XXX_osm fehlt bei osm
 Kleiner-Heufalter-Weg: Wo genau ist die Straße? Qualität?	? 21486,10642 21508,10690
 Stawesdamm: Qualität? Für Autos gesperrt? Kann man als Radfahrer die Straße Alt-Biesdorf erreichen?	? 20622,11469 20634,11627
 (Blumberger Damm - Wuhle): Qualität? Für Autos gesperrt? Nachts beleuchtet?	? 21450,14576 21822,14480 21948,14501 22003,14510 22054,14480 22172,14287 22415,14151
 Wuhleweg: Qualität?	? 22237,11215 22021,11157
 Am Barnim: Qualität?	? 24229,10843 24113,10462
 Großmannstr.: Qualität?	? 24405,10383 24369,10393 24265,10421 24113,10462
-#: XXX_indoor: bei osm ohne Straßennamen
+#: XXX_osm: bei osm ohne Straßennamen
 Kethelitzweg: Qualität?	? 24363,10818 24335,10729 24271,10528 24265,10421
-#: XXX_indoor: str_cont_ausnahme
+#: XXX: str_cont_ausnahme
 #: XXX anonymous meint "Q2, Asphalt", aber welcher von den beiden Abschnitten?
-#: XXX_indoor: bei osm ohne Straßennamen
+#: XXX_osm: bei osm ohne Straßennamen
 Parlerstr.: Qualität? Kann man als Radfahrer direkt zur Elsenstr. fahren?	? 24369,10393 24512,10652 24548,10695
 Parlerstr.: Qualität?	? 24194,10050 24261,10175 24354,10335 24405,10383
-#: XXX_indoor: bei osm ohne Straßennamen
+#: XXX_osm: bei osm ohne Straßennamen
 Margaretenstr. (Mahlsdorf): Qualität?	? 24618,10601 24512,10652 24335,10729 24293,10744
-#: XXX_indoor: fehlt bei osm, stattdessen führt hier der Gartenweg entlang (zu weit!)
+#: XXX_osm: fehlt bei osm, stattdessen führt hier der Gartenweg entlang (zu weit!)
 Birkensteinweg: Qualität?	? 26983,13220 27007,13147
-#: XXX_indoor: bei osm ohne Straßennamen
+#: XXX_osm: bei osm ohne Straßennamen
 #: XXX laut tvojpl. etc. gehts weiter Richtung Süden bis Ravensteiner Promenade, aber nicht erkennbar
 Erpetaler Weg: Qualität?	? 24593,7455 24637,7438 24620,7290
-#: XXX_indoor: fehlt bei osm
+#: XXX_osm: fehlt bei osm
 Frans-Hals-Str.: Qualität?	? 25663,12927 25761,12852
 Albrecht-Dürer-Str.: Qualität östlich der Lemkestr.?	? 25701,12975 25800,12900 25843,12865
 Ginsterweg: Qualität?	? 26175,14088 26167,14221
@@ -4285,21 +4286,21 @@ Am Wiesenhang: Qualität?	? 23550,12627 23582,12661 23633,12674 23678,12659 23713
 Hauptweg (Kaulsdorf): Qualität?	? 23649,12591 23678,12659 23695,12708 23714,12756
 Mittelweg (Kaulsdorf): Qualität?	? 23610,12605 23633,12674 23649,12724 23669,12772
 Finsterberger Str.: Qualität?	? 23233,12406 23129,12496 23086,12565
-#: XXX_indoor: bei osm ohne Straßennamen
+#: XXX_osm: bei osm ohne Straßennamen
 Jurek-Becker-Str.: Qualität?	? 22001,10421 22049,10392 21995,10221 21907,10238
-#: XXX_indoor: bei osm "platz" und nicht "straße"
+#: XXX_osm: bei osm "platz" und nicht "straße"
 Ludwig-Turek-Str.: Qualität?	? 24435,13137 24347,13154
-#: XXX_indoor: fehlt teilweise bei osm, außerdem ohne Straßennamen
+#: XXX_osm: fehlt teilweise bei osm, außerdem ohne Straßennamen
 Tolstoistr.: Qualität?	? 24317,13006 24335,13102 24347,13154 24364,13269
-#: XXX_indoor bei osm falsch geschrieben?
+#: XXX_osm bei osm falsch geschrieben?
 Gunterweg: Qualität?	? 15716,4255 15833,4435
 Gernotweg: Qualität?	? 15768,4218 15887,4400
 Uteweg: Qualität?	? 15814,4158 15947,4361
 Gudrunweg: Qualität?	? 15868,4116 16001,4325
 Ortwinweg: Qualität?	? 15932,4082 16061,4285
-#: XXX_indoor bei osm falsch geschrieben?
+#: XXX_osm bei osm falsch geschrieben?
 Volkerweg: Qualität?	? 16039,4057 16151,4226
-#: XXX_indoor bei osm falsch geschrieben?
+#: XXX_osm bei osm falsch geschrieben?
 Eschenweg: Qualität?	? 16031,4608 16203,4495
 Fliederstr. (Baumschulenweg): Qualität?	? 16179,4838 16354,4720 16547,4590
 Mittelweg (Baumschulenweg): Qualität?	? 16554,5022 16436,4844 16407,4800 16354,4720 16327,4680 16293,4630 16258,4578 16203,4495 16177,4457
@@ -4310,7 +4311,7 @@ Westweg: Qualität?	? 16001,4570 16031,4608 16116,4741 16151,4796 16179,4838 1623
 Gründerstr. (Baumschulenweg): Qualität?	? 16116,4741 16293,4630
 Hasensteg: Qualität?	? 16146,4974 16231,4915 16407,4800 16604,4668
 Kleinbauersweg: Qualität?	? 16445,4454 16346,4520 16258,4578
-#: XXX_indoor bei osm falsch geschrieben?
+#: XXX_osm bei osm falsch geschrieben?
 Kurze Str.: Qualität?	? 16427,4334 16550,4529 16518,4551
 Laurinsteg: Qualität?	? 15930,4464 15843,4524
 Lindenweg (Baumschulenweg): Qualität?	? 16436,4844 16261,4961
@@ -4345,14 +4346,14 @@ Gustelstr.: Qualität?	? 18968,924 19053,1159
 Harrosteig: Qualität?	? 19086,562 19200,858
 Markulfweg: Qualität?	? 19184,540 19295,831
 Mundolfstr.: Qualität?	? 19281,518 19389,804
-#: XXX_indoor: str_cont_ausnahme-Eintrag
+#: XXX: str_cont_ausnahme-Eintrag
 Brunolfweg: Qualität?	? 19272,838 19290,894
 Brunolfweg: Qualität?	? 19334,997 19392,1092
 Guntherstr. (Altglienicke): Qualität?	? 18694,136 18785,370 18850,550
 Nibelungenweg: Qualität?	? 18892,330 18785,370 18719,394
 Gärtnerweg: Qualität?	? 19607,-474 19633,-314 19643,-254 19672,-228
 Mirabellenweg: Qualität?	? 19633,-314 19574,-306
-#: XXX_indoor: bei osm wahrscheinlich falsch?
+#: XXX_osm: bei osm wahrscheinlich falsch?
 Mittelweg (Altglienicke): Name der Straße? Qualität?	? 19879,-378 20248,-397 20300,-416
 Hornkleepfad: Qualität?	? 18750,1522 18830,1497
 Pfarrwöhrde: Qualität?	? 19164,2001 19194,2157
@@ -4367,7 +4368,7 @@ Am Alten Friedhof: Qualität?	? 19181,1996 19122,1839 19037,1630 18974,1559
 Teichrohrweg: Qualität?	? 19016,1895 18925,1681 18888,1658
 Rübezahlallee: Qualität?	? 19583,1538 19534,1582 19240,1674 19164,1708
 Semmelweisstr.: Qualität westlich der Wegedornstr.?	? 18928,2234 18847,2237 18741,2275 18700,2282
-#: XXX_indoor: bei osm falsch geschrieben? und der südliche Abschnitt nicht benannt?
+#: XXX_osm: bei osm falsch geschrieben? und der südliche Abschnitt nicht benannt?
 Iselersteig: Qualität?	? 18826,2117 18847,2237 18852,2323
 Am Glinigk: Qualität?	? 18741,2275 18743,2331
 Zur Rothen Laake: Qualität?	? 18909,2321 18852,2323 18743,2331 18711,2333
@@ -4387,22 +4388,15 @@ Clara-Zetkin-Platz: Qualität? Stimmt der Straßenname? Für Radfahrer befahrbar?	?
 Clara-Zetkin-Weg: Qualität? Stimmt der Verlauf des Weges? Für Radfahrer befahrbar?	? 22606,12949 22775,12984
 Mylauer Weg: Qualität? Stimmt der Verlauf?	? 24133,14444 24017,14613 23852,14521
 Peter-Edel-Str.: Qualität?	? 23237,13683 23252,13778 23215,13787 23240,13938
-# XXX del: existiert nicht: Richard-Hörnke-Str.: Qualität? Stimmt der Straßenname?	? 30030,3475 30094,3475
-# XXX del: existiert nicht: Richard-Hörnke-Str.: Qualität? Stimmt der Straßenname?	? 30121,3482 30219,3512
-#XXX del Alter Hegemeisterweg: Qualität? Nachts beleuchtet?	? 29898,5149 29903,5017 29830,4739 29792,4624 29712,4548
-#XXX del Am Mühlenfließ: Qualität?	? 29982,4525 29905,4592
-#XXX del (Am Mühlenfließ - Alter Hegemeisterweg): Qualität? Nachts beleuchtet?	? 29905,4592 29848,4636 29792,4624
-#: XXX_indoor bei osm falsch geschrieben?
+#: XXX_osm bei osm falsch geschrieben?
 Springeberger Weg: Qualität?	? 29947,4268 29930,4455
-# XXX del, existiert nicht!: Straße 5d: Qualität? Stimmt der Straßenname?	? 30814,3875 30971,3906
-# XXX del, existiert nicht! Fußweg 475: Existiert der Weg? Qualität?	? 30757,3974 30785,4104
 Alsenzer Weg: Qualität? Ist die Straße teilweise eine Einbahnstraße?	? 27548,598 27751,819 27798,872 27863,943 28036,1136
 Hallgarter Steig: Qualität?	? 27894,364 27961,321 28042,304 28058,155 28086,90 28083,-34 28065,-114 28042,-152
 Am Steilhang: Qualität?	? 27929,126 27983,98 27941,53
 Erlenbacher Steig: Qualität?	? 28065,-114 27992,-57 27918,12 27879,46
-#: XXX bei osm falsch geschrieben?
+#: XXX_osm bei osm falsch geschrieben?
 Horchheimer Weg: Qualität?	? 27879,46 27929,126 27949,182
-#: XXX_indoor str_cont_ausnahme-Eintrag
+#: XXX str_cont_ausnahme-Eintrag
 Rinntaler Steig: Qualität?	? 27918,12 27993,10 28015,24 28036,62
 Rinntaler Steig: Qualität?	? 28015,24 28035,0 28083,-34
 Münchweilersteig: Qualität?	? 27992,-57 28035,0
@@ -4414,10 +4408,10 @@ Wiesbacher Weg: Qualität?	? 28207,734 28101,798 28065,819
 Elmsteiner Weg: Qualität?	? 27393,732 27567,936
 #: oldname: Straße 611
 Wolfsteiner Weg: Qualität?	? 27329,786 27497,981
-#: XXX_indoor mit dem anderen Straßenteil verbinden
+#: XXX mit dem anderen Straßenteil verbinden
 Johann-Jacob-Baeyer-Str.: Qualität?	? 27863,943 27810,987 27568,1188
 Weg A: Qualität?	? 27783,792 27859,875 27929,955
-#: XXX bei osm ohne Straßennamen?
+#: XXX_osm bei osm ohne Straßennamen?
 Weg B: Qualität? Stimmt der Straßenname?	? 27817,761 27895,848 27963,916
 Weg C: Qualität?	? 27855,731 27932,816 27988,884
 Weg D: Qualität?	? 27896,695 27972,783 28022,841
@@ -4428,9 +4422,9 @@ Weg H: Qualität?	? 27961,699 28083,592
 Weg J: Qualität?	? 27831,548 27798,576 27762,608
 Weg K: Qualität?	? 27798,576 27750,527
 Weg L: Qualität? Oder heißt die Straße "Weg I"?	? 27783,493 27750,527 27714,554
-#: XXX_indoor fehlt bei osm
+#: XXX_osm fehlt bei osm
 Weg M: Qualität?	? 27880,347 27752,458
-#: XXX_indoor fehlt bei osm
+#: XXX_osm fehlt bei osm
 Weg N: Qualität?	? 27836,286 27700,402
 Weg O: Qualität? Stimmt der Straßenname?	? 27762,608 27714,554
 Weg O: Qualität? Stimmt der Straßenname?	? 27621,535 27817,761
@@ -4446,13 +4440,13 @@ Steinbrechgang: Qualität?	? 28649,1831 28600,1772
 #: oldname: Straße 647
 Zur Drachenwiese: Qualität?	? 28731,1749 28681,1688
 Lettweilerstr.: Qualität?	? 28965,2151 29299,2454
-#: XXX_indoor bei osm noch nicht unbenannt:
+#: XXX_osm bei osm noch nicht unbenannt:
 #: oldname: Straße 695
 Zum Rehwinkel: Qualität?	? 28993,2391 28749,2595
-#: XXX_indoor bei osm noch nicht unbenannt:
+#: XXX_osm bei osm noch nicht unbenannt:
 #: oldname: Straße 696:
 An der Himmelswiese: Qualität?	? 29070,2446 28809,2660
-#: XXX_indoor bei osm noch nicht unbenannt:
+#: XXX_osm bei osm noch nicht unbenannt:
 #: oldname: Straße 659
 Hinter der Düne: Qualität?	? 29414,2373 29299,2454 29192,2543 28898,2775
 Straße 34 (Müggelheim): Qualität?	? 29958,2877 29993,2913 30094,2916 30196,2877 30259,2843
@@ -4466,8 +4460,8 @@ Siedlung Schönhorst (Lindenstr.): Qualität?	? 31063,2191 31136,2318 31191,2402
 #: XXX osm meint "sand"
 Siedlung Schönhorst (Feldstr.): Qualität?	? 31136,2318 31304,2336 31331,2452 31371,2458
 Siedlung Schönhorst (Bergstr.): Qualität?	? 31143,2422 31191,2402 31261,2424 31286,2490
-#: XXX_indoor bei osm falsch geschrieben?
-#: XXX_indoor Eintrag in green-orig!
+#: XXX_osm bei osm falsch geschrieben?
+#: XXX Eintrag in green-orig!
 Grottewitzwanderweg: Qualität? Für Radfahrer befahrbar? Nachts beleuchtet?	? 28042,-152 27852,-279 27825,-371 27703,-406 27624,-480 27605,-661 27573,-757 27603,-906 27574,-1044 27578,-1153 27559,-1365
 Straße 606 a: Heißt dieser Abschnitt des Weges "Straße 606 a"?	? 27151,729 27202,770
 Amselweg: Qualität?	? 22169,14 22303,67
@@ -4494,7 +4488,7 @@ Atlantisring: Qualität? Ist die Straße eine Spielstraße?	? 21727,-1002 21753,-87
 Quaritzer Str.: Qualität?	?  21360,-455 21291,-446 21259,-467 21253,-501
 Schirmpilzstr.: Qualität? Gibt es eine Verbindung zur Kleinen Lindenstr.?	? 21409,-1745 21484,-1459 21493,-1434 21570,-1219
 Boviststr.: Qualität?	? 21520,-1773 21574,-1474
-#: XXX_indoor str_cont_ausnahme-Eintrag
+#: XXX str_cont_ausnahme-Eintrag
 Kleine Spechtstr.: Qualität?	? 21574,-1474 21526,-1452
 Kleine Spechtstr.: Qualität?	? 21484,-1459 21493,-1434 21390,-1396 21303,-1345
 Champignonstr.: Qualität?	? 21291,-1114 21387,-1033 21406,-1012
@@ -4503,15 +4497,15 @@ Spechtstr. (Bohnsdorf): Qualität?	? 22027,-1548 21887,-1528 21760,-1521 21676,-1
 Teichhuhnsteig: Qualität?	? 22692,-1434 22690,-1376 22720,-1255
 Eichbuschweg: Qualität?	? 23051,-1302 22845,-1210
 Eichbuschplatz: Qualität?	? 22845,-1210 22804,-1137
-#: XXX_indoor fehlt bei osm, evtl. noch in Bau vvv
+#: XXX_osm fehlt bei osm, evtl. noch in Bau vvv
 Buschwindröschenweg: Qualität?	? 21354,142 21379,33
 Weidenkätzchenweg: Qualität?	? 21421,158 21447,47
 Kletterrosenweg: Qualität?	? 21382,149 21354,289
 Wilhelmine-Duncker-Str.: Qualität?	? 21487,173 21457,289
 Ringelblumenweg: Qualität?	? 21618,193 21595,271
 Mohnblütenweg: Qualität?	? 21712,215 21694,295
-#: XXX_indoor ^^^
-#: XXX_indoor bei osm ohne Namen
+#: XXX_osm ^^^
+#: XXX_osm bei osm ohne Namen
 Rosenweg (Bohnsdorf): Qualität?	? 20362,-511 20567,-313
 Dünenweg: Qualität?	? 3089,21238 3056,21310
 Staffelder Weg: Qualität?	? 3395,20660 3287,20739
@@ -4520,7 +4514,7 @@ An der Heide: Qualität?	? 3125,20614 3116,20651 3103,20712
 Am Rosensteg: Qualität? Kann man als Radfahrer direkt zum Nordgraben fahren?	? 3116,20651 3080,20647 3067,20708 3062,20735
 Am Brunnen: Qualität? Kann man als Radfahrer direkt zum Nordgraben fahren?	? 3062,20735 3028,20894
 Myrtenweg: Qualität?	? 3062,20735 2944,20715
-#: XXX_indoor str_cont_ausnahme-Eintrag
+#: XXX str_cont_ausnahme-Eintrag
 Havelmüllerweg: Qualität?	? 3306,20773 3139,20837 3078,20857
 Havelmüllerweg: Qualität?	? 2976,20871 2915,20875
 Kehrwieder: Qualität?	? 3067,20708 3103,20712 3143,20722
@@ -4543,16 +4537,16 @@ Semmelweg: Qualität? Sind die Abschnitte im Wald für den Autoverkehr gesperrt? N
 Straße A: Qualität?	? 1179,15892 1268,15916 1275,15854
 Straße B: Genaue Lage der Straße? Qualität?	? 1233,15889 1207,15868
 #: note ^^^
-#: XXX_indoor fehlt bei osm
+#: XXX_osm fehlt bei osm
 Virgiliusstr.: Qualität?	? 2696,21648 2678,21669
 Wickeder Str.: Qualität?	? 2556,18855 2599,18842 2707,18849
 Am Tempelgraben: Qualität?	? 8288,20128 8315,19993 8325,19934
 Hermann-Günther-Str.: Qualität?	? 8235,20109 8259,19978 8272,19908
 Rhapsodieweg: Qualität?	? 8554,20270 8489,20423
 Boleroweg: Qualität?	? 8372,20411 8489,20423 8619,20436
-#: XXX_indoor bei osm falsch geschrieben?
+#: XXX_osm bei osm falsch geschrieben?
 César-Franck-Str.: Qualität?	? 8351,20492 8472,20495
-#: XXX_indoor bei osm ohne Namen:
+#: XXX_osm bei osm ohne Namen:
 Maurice-Ravel-Str.: Qualität?	? 8671,20355 8619,20436 8596,20487 8561,20569
 Sonatenweg: Qualität?	? 8596,20487 8654,20492
 Kabelitzweg: Qualität?	? 8351,20492 8035,20451
@@ -4594,7 +4588,7 @@ Narzissenpfad: Qualität?	? -7387,14951 -7523,14969
 Quittensteig: Qualität?	? -7634,15064 -7613,15192
 Georg-Schroeder-Str.: Qualität?	? -7513,15368 -7507,15449 -7588,15656 -7637,15793 -7642,15840
 Albrechtshofer Weg: Qualität?	? -7517,15858 -7642,15840 -7747,15842 -7865,15867 -7975,15904
-#: XXX_indoor: str_cont_ausnahme-Eintrag
+#: XXX: str_cont_ausnahme-Eintrag
 Reckeweg: Qualität?	? -5723,14939 -5845,14955 -6006,14923 -6361,15054 -6467,15109 -6841,15212
 Reckeweg: Qualität?	? -6888,15139 -6892,15223 -7133,15287 -7155,15233
 Straße 603: Qualität?	? -6861,15129 -6841,15212 -6831,15249 -6824,15274
@@ -4625,17 +4619,17 @@ Querweg: Qualität?	? -8098,12340 -7967,12333 -7819,12321
 Talweg: Qualität?	? -7948,12634 -8078,12647 -8205,12644 -8324,12644 -8413,12651
 Am Wäldchen: Qualität?	? -8324,12644 -8359,12112
 Im Grund: Qualität?	? -8235,12144 -8205,12644
-#: XXX_indoor bei osm ohne Namen
+#: XXX_osm bei osm ohne Namen
 Am Zeppelinpark: Straße fertiggestellt? Qualität?	? -8358,13340 -8417,13785 -8509,14109
-#: XXX_indoor bei osm ohne Namen
+#: XXX_osm bei osm ohne Namen
 Am alten Gaswerk: Qualität?	? -8243,14183 -8284,14334 -8287,14411
 An der Spitze: Qualität?	? -8756,13356 -8847,13363 -8846,13398 -8702,13400
 Anschützweg: Qualität?	? -5953,12263 -5988,12221 -6071,12120
 Hensoldtweg: Qualität?	? -6081,12264 -6144,12187
 Messterweg: Qualität?	? -6171,12309 -6081,12264 -5988,12221
-#: XXX_indoor fehlt bei Berlin.coords.data und LOR
+#: XXX fehlt bei Berlin.coords.data und LOR
 Akazienweg (Staaken): Qualität?	? -6527,11731 -6305,12048
-#: XXX_indoor fehlt bei Berlin.coords.data und LOR
+#: XXX fehlt bei Berlin.coords.data und LOR
 Rebenweg (Staaken): Qualität?	? -6266,12017 -6483,11710
 Pinneberger Weg: Qualität?	? -6261,14161 -6163,14161 -6065,14160 -5887,14147 -5816,14136
 Aumühler Str.: Qualität?	? -6163,14161 -6150,14021
@@ -4650,7 +4644,7 @@ Blankensteinweg: Qualität?	? -6125,13540 -6084,13427
 Eduard-Bernstein-Weg: Qualität?	? -6010,13586 -5976,13465
 Ernst-Bruch-Zeile: Qualität?	? -6242,13371 -6084,13427 -6062,13432 -5976,13465 -5898,13491
 Pietschweg: Qualität?	? -6395,13121 -6360,12970
-#: XXX_indoor bei osm falsch geschrieben?
+#: XXX_osm bei osm falsch geschrieben?
 Spieroweg: Qualität?	? -6595,13198 -6563,13403
 Neunkircher Steig: Qualität?	? -8682,14489 -8637,14720 -8617,14848 -8584,15023 -8573,15073
 Sundhauser Gang: Qualität?	? -8584,15023 -8471,15000
@@ -4702,11 +4696,11 @@ Fasoltstr.: Qualität?	? 12681,18431 12749,18564 12755,18573 12794,18656 12838,18
 Donarstr.: Qualität?	? 12749,18564 12683,18597 12651,18613 12619,18612
 Straße 45 (Blankenburg): Qualität?	? 14540,20298 14503,20341 14455,20388
 Mittelstr. (Blankenburg): Qualität?	? 13912,20650 14320,20580 14482,20547
-#: XXX_indoor bei osm falsch (Mittelstr. statt Str. 46)?
+#: XXX_osm bei osm falsch (Mittelstr. statt Str. 46)?
 Straße 46 (Blankenburg): Qualität?	? 14482,20547 14685,20504
 Kirchstr. (Blankenburg): Qualität?	? 14721,20690 14515,20727 14236,20773
 Straße 24: Qualität?	? 14538,20819 14484,20832
-#: XXX_indoor bei osm falsch (str 52 statt 42)?
+#: XXX_osm bei osm falsch (str 52 statt 42)?
 Straße 42 (Blankenburg): Qualität?	? 14559,20889 14751,20876
 Villacher Str.: Qualität?	? 14734,21109 14634,21135 14580,21146
 Rheinfelsstr.: Qualität?	? 13698,21969 13505,22081
@@ -4719,19 +4713,19 @@ Straße 150: Qualität?	? 17579,15565 17640,15583 17707,15443 17706,15420
 #: XXX gibt es auch einen Abschnitt an der Ferdinand-Schultze-Str.?
 Straße 155: Qualität?	? 17657,15427 17706,15420 17782,15389
 Treffurter Str.: Qualität?	? 17895,15050 17958,14920 18007,14818 18067,14700 18119,14599
-#: XXX_indoor str_cont_ausnahme-Eintrag
+#: XXX str_cont_ausnahme-Eintrag
 Worbiser Str.: Qualität? Kann die Rhinstr. überquert werden?	? 17700,14844 17886,14899
 Worbiser Str.: Qualität?	? 17907,14904 17958,14920
-#: XXX_indoor str_cont_ausnahme-Eintrag
+#: XXX str_cont_ausnahme-Eintrag
 Allendorfer Weg: Qualität? Kann die Rhinstr. überquert werden?	? 17794,14640 17991,14684
 Allendorfer Weg: Qualität?	? 18016,14688 18067,14700 18119,14709
 Allendorfer Weg: Qualität?	? 18232,14753 18286,14782
-#: XXX_indoor str_cont_ausnahme-Eintrag
+#: XXX str_cont_ausnahme-Eintrag
 Witzenhauser Str.: Qualität?	? 17750,14736 17937,14795
 Witzenhauser Str.: Qualität? Sind Teile für Autos gesperrt?	? 17990,14808 18007,14818 18052,14835 18170,14890 18222,14917 18282,14940 18318,14923 18424,14791
-#: XXX_indoor bei osm ohne Namen
+#: XXX_osm bei osm ohne Namen
 Bürknersfelder Str.: Qualität?	? 18176,15160 18429,15165 18553,15169 18702,15248
-#: XXX_indoor bei osm ohne Namen
+#: XXX_osm bei osm ohne Namen
 Grenzgrabenstr.: Qualität?	? 18422,15590 18429,15165
 Gerzlower Str.: Qualität?	? 16801,16501 16718,16545 16623,16554
 Tamseler Str.: Qualität?	? 16555,16658 16639,16671 16804,16729 17007,16764
@@ -4752,12 +4746,12 @@ Straße 155: Qualität? Kann die Rhinstr. überquert werden?	? 17409,15454 17640,15
 Straße 109: Qualität?	? 17342,15386 17435,15379 17533,15363 17588,15355
 Straße 133 (Alt-Hohenschönhausen): Qualität?	? 17588,15355 17762,14993
 Straße 134 (Alt-Hohenschönhausen): Qualität?	? 17533,15363 17718,14979
-#: XXX_indoor bei osm falsch geschrieben?
+#: XXX_osm bei osm falsch geschrieben?
 Langer-See-Str.: Qualität? Kann die Daumstr. überquert werden?	? -1710,16735 -1857,16766
 Schwielowseestr.: Qualität? Kann die Daumstr. überquert werden?	? -1746,16667 -1856,16694 -1872,16631 -1765,16603
 Zernseestr.: Qualität? Kann die Daumstr. überquert werden?	? -1783,16533 -1841,16545
 Templiner-See-Str.: Qualität? Kann die Daumstr. überquert werden?	? -1798,16465 -1855,16479
-#: XXX_indoor bei osm falsch geschrieben?
+#: XXX_osm bei osm falsch geschrieben?
 Hunckemüllerweg: Qualität?	? -558,15123 -504,15092
 Merianweg: Qualität?	? -2956,18203 -2965,18219 -3098,18320
 Doehlweg: Qualität?	? -3096,18119 -3154,18183
@@ -4782,7 +4776,7 @@ Portaer Str.: Qualität?	? -5590,15313 -5527,15285 -5442,15282 -5355,15277
 Iserlohner Str.: Qualität?	? -5575,15512 -5531,15522 -5481,15526 -5426,15528 -5396,15515 -5319,15477
 Lüdinghauser Weg: Qualität?	? -5442,15282 -5396,15515
 Gütersloher Weg: Qualität?	? -5527,15285 -5481,15526
-#: XXX_indoor in osm falsch geschrieben?
+#: XXX_osm in osm falsch geschrieben?
 Mülheimer Str.: Qualität?	? -5531,15522 -5473,15742
 Oberhauser Str.: Qualität?	? -5426,15528 -5373,15714
 Knüllweg: Qualität?	? -5221,15714 -5198,15799
@@ -4792,21 +4786,21 @@ Osningweg: Qualität?	? -5077,16162 -5102,16086
 Schulzenstr.: Qualität?	? -5012,14573 -4977,14761 -4947,14873
 Augusta-Ufer: Qualität? Wie ist die richtige Schreibweise? Nachts beleuchtet?	? -3479,14387 -3440,14498 -3331,14628 -3255,14685
 Petzoldtweg: Qualität?	? -4378,14388 -4371,14464 -4341,14580
-#: XXX_indoor bei osm ohne Namen
+#: XXX_osm bei osm ohne Namen
 Dehmelstr.: Qualität?	? 8962,19798 9048,19816 9159,19818
-#: XXX_indoor bei osm ohne Namen
+#: XXX_osm bei osm ohne Namen
 Zollbrücker Str.: Qualität?	? 9023,19936 9048,19816
 Mittelsteg: Qualität?	? 8340,18984 8211,19082 8209,19107 8136,19159 8062,19212 7981,19269 7930,19282 7805,19359
 Straße 79: Qualität?	? 7877,19507 7805,19359 7797,19345
-#: XXX_indoor bei osm ohne Namen
+#: XXX_osm bei osm ohne Namen
 Neuer Steg: Qualität?	? 8277,19210 8209,19107
-#: XXX_indoor bei osm ohne Namen
+#: XXX_osm bei osm ohne Namen
 Kreuzsteg: Qualität?	? 8099,19276 8062,19212
-#: XXX_indoor bei osm ohne Namen
+#: XXX_osm bei osm ohne Namen
 Friedensteg: Qualität?	? 8029,19353 7981,19269 7959,19231
-#: XXX_indoor fehlt bei osm
+#: XXX_osm fehlt bei osm
 Feldsteg: Qualität?	? 8136,19159 8106,19110
-#: XXX_indoor bei osm ohne Namen
+#: XXX_osm bei osm ohne Namen
 Frühlingstr.: Qualität?	? 8583,18668 8660,18679
 Kleine Homeyerstr.: Qualität?	? 9814,18678 9828,18742 9638,18797 9613,18758
 Straße 201: Qualität? Einbahnstraßenregelung?	? 9532,18819 9366,18669
@@ -4816,21 +4810,21 @@ Johann-Jacob-Engel-Str.: Qualität?	? 20746,18534 20699,18654 20793,18901
 Am Dörferweg: Qualität?	? 20793,18901 20861,18931
 Kundtanger: Qualität?	? 20861,18931 20858,18961 20853,19037 20833,19037 20799,18942 20858,18961
 Am Gehrensee: Qualität?	? 21165,18715 21137,18782
-#: XXX_indoor fehlt bei osm
+#: XXX_osm fehlt bei osm
 An den Auen: Qualität? Genaue Lage der Straße?	? 21208,19027 21258,18969 21260,18900
 Julius-Meyen-Str.: Qualität? Spielstraße?	? 20643,18701 20557,18733 20494,18755
 Wildschwansteig: Qualität?	? -487,21631 -603,21642 -726,21683
-#: XXX_indoor str_cont_ausnahme-Eintrag
+#: XXX str_cont_ausnahme-Eintrag
 Haselhuhnweg: Qualität?	? -722,21718 -941,21779
 Haselhuhnweg: Qualität?	? -918,21975 -929,21851 -941,21779 -946,21742
 Bläßhuhnweg: Qualität?	? -1178,21786 -1150,21830 -1136,22029
 Am Südfeld: Qualität?	? -1198,21801 -1213,21553
-#: XXX_indoor: bei osm falsch geschrieben?
+#: XXX_osm: bei osm falsch geschrieben?
 Bekassinenweg: Qualität?	? -1452,21978 -1368,22091 -1359,22126 -1340,22219 -1301,22347 -1267,22480
 Am Fuchsbau: Qualität?	? -1412,22685 -1447,22522
-#: XXX_indoor: bei osm ohne Namen
+#: XXX_osm: bei osm ohne Namen
 Bergemannweg: Qualität? Für Autos gesperrt?	? -985,22025 -1359,22126
-#: XXX_indoor: str_cont_ausnahme-Eintrag
+#: XXX: str_cont_ausnahme-Eintrag
 Borgfelder Steig: Qualität?	? -2348,22704 -2384,22775 -2383,22830
 Borgfelder Steig: Qualität?	? -2376,22862 -2327,22968
 Fürstenauer Weg: Qualität?	? -2176,22789 -2195,22836 -2190,22934
@@ -4838,34 +4832,34 @@ Hademarscher Weg: Qualität?	? -2377,22689 -2286,22523 -2238,22481
 Meldorfer Steig: Qualität?	? -1943,22187 -1928,22265
 Norddorfer Pfad: Qualität?	? -1795,22230 -1808,22158 -1823,22036
 Hemmingstedter Weg: Qualität?	? -2266,22101 -2082,22074 -1823,22036 -1778,22027
-#: XXX_indoor bei osm falsch geschrieben?
+#: XXX_osm bei osm falsch geschrieben?
 Niebüller Weg: Qualität?	? -1778,22027 -1786,21928 -1789,21882
 Fährstr.: Qualität?	? -2949,22149 -3090,22200 -3256,22134 -3419,22102 -3437,22104
-#: XXX_indoor: bei osm "Fährstr."
+#: XXX_osm: bei osm "Fährstr."
 Verlängerte Fährstr.: Qualität?	? -3419,22102 -3412,22058 -3407,22028 -3402,21994 -3397,21946 -3394,21915 -3367,21860
 Straße 366: Qualität?	? -3011,21997 -3281,22011
 Straße 367: Qualität?	? -3256,22134 -3281,22011 -3281,21894
-#: XXX_indoor: bei osm "Straße 367"
+#: XXX_osm: bei osm "Straße 367"
 Straße 368: Qualität?	? -3310,21892 -3281,21894 -3240,21896
-#: XXX_indoor: fehlt bei osm: vvv
+#: XXX_osm: fehlt bei osm: vvv
 Schlütersteig: Qualität?	? -3412,22058 -3355,22063
 Meistergasse: Qualität?	? -3407,22028 -3348,22035
 Kleine Brüderstr.: Qualität?	? -3402,21994 -3345,22001
 Erlenweg: Qualität?	? -3397,21946 -3360,21951
 Fliederweg: Qualität?	? -3394,21915 -3363,21916
-#: XXX_indoor ^^^
-#: XXX_indoor bei osm falsch geschrieben?
+#: XXX_osm ^^^
+#: XXX_osm bei osm falsch geschrieben?
 Güttlandring: Qualität?	? -1855,24072 -1911,24039 -1928,23984 -1854,23964 -1812,23976
 Löblauer Pfad: Qualität? Spielstraße?	? -1806,23947 -1720,23923
 Krumminer Weg: Qualität?	? -2168,23607 -2287,23634
 Zempiner Steig: Qualität?	? -2132,23697 -2253,23721
 Lubminer Pfad: Qualität?	? -2071,23850 -2216,23880
-#: XXX_indoor: str_cont_ausnahme-Eintrag
-#: XXX_indoor: fehlt bei Berlin.coords.data
+#: XXX: str_cont_ausnahme-Eintrag
+#: XXX: fehlt bei Berlin.coords.data
 Anglersiedlung: Qualität?	? -1935,24187 -1981,24197 -2190,24232 -2245,24241
 Anglersiedlung: Qualität?	? -2190,24232 -2204,24165 -2014,24126 -1981,24197
 Letzkauer Steig: Qualität?	? -2052,23227 -2208,23296 -2215,23280 -2241,23288
-#: XXX_indoor: fehlt bei Berlin.coords.data
+#: XXX: fehlt bei Berlin.coords.data
 Rotwildpfad: Qualität?	? -1359,22126 -1641,22189
 Ponyweg: Qualität?	? 2063,26727 2014,26726
 Mustangweg: Qualität?	? 2119,26608 2068,26609 2017,26612
@@ -4887,7 +4881,7 @@ Holzweidepfad: Qualität? Kann die Lindauer Str. überquert werden?	? 5791,18778 5
 Thaterstr.: Qualität? Kann die Residenzstr. überquert werden?	? 7445,17968 7195,17908
 Henricistr.: Qualität?	? 5858,19437 5996,19471
 Brodersenstr.: Qualität?	? 6033,19611 5885,19920 5804,20047
-#: XXX_indoor bei osm falsch geschrieben?
+#: XXX_osm bei osm falsch geschrieben?
 Olbrichweg: Qualität?	? 5787,19326 5879,19352
 Knauerstr.: Qualität?	? 5996,19471 6003,19461 6084,19297
 Kossätenstr.: Qualität?	? 5495,19571 5417,19570 5369,19560
@@ -4895,7 +4889,7 @@ Frommpromenade: Qualität? Kann die Oranienburger Str. überquert werden?	? 5469,2
 Jathoweg: Qualität?	? 5307,20437 5266,20299 5259,20186
 Am Klauswerder: Qualität?	? 5335,20671 5236,20747 5170,20673
 Göschenstr.: Qualität?	? 5297,21243 5015,21036
-#: XXX_indoor fehlt bei osm
+#: XXX_osm fehlt bei osm
 Rorschacher Zeile: Qualität? Kann die Residenzstr. überquert werden?	? 7299,18395 7203,18360 7198,18307
 Schwartzstr.: Qualität?	? 8565,17930 8415,17902
 Windmühlenweg: Qualität?	? 7004,22881 6950,23023
@@ -4904,13 +4898,13 @@ Kornweg: Qualität?	? 6892,22843 6837,22974
 Mühlsteinweg: Qualität?	? 6836,22824 6780,22947
 Mehlweg: Qualität?	? 6779,22804 6723,22924
 Auf dem Mühlenberg: Qualität?	? 6723,22924 6780,22947 6837,22974 6891,22997 6950,23023
-#: XXX_indoor str_cont_ausnahme-Eintrag
-#: XXX_indoor fehlt bei osm
+#: XXX str_cont_ausnahme-Eintrag
+#: XXX_osm fehlt bei osm
 Am Fölzberg: Qualität?	? 6714,23010 6830,23080 6865,23103
 Am Fölzberg: Qualität?	? 6830,23080 6779,23139
-#: XXX_indoor bei osm ohne Namen
+#: XXX_osm bei osm ohne Namen
 Feldlerchenweg: Qualität?	? 7109,22919 6912,23237
-#: XXX_indoor bei osm ohne Namen
+#: XXX_osm bei osm ohne Namen
 Grünspechtweg: Qualität?	? 7171,22942 6967,23278
 Straße 494: Qualität?	? 7923,23225 8119,22798
 Am Priesteracker: Qualität?	? 4245,21105 4107,21059
@@ -4920,16 +4914,16 @@ Michelbacher Zeile: Qualität?	? 5800,22204 5708,22275
 Lißberger Zeile: Qualität?	? 5846,22258 5758,22334
 Dietrichinger Weg: Qualität?	? 5136,21738 5037,21659
 Mauschbacher Steig: Qualität?	? 5210,21636 5111,21565 5037,21659 4967,21755 5067,21831
-#: XXX_indoor bei osm falsch geschrieben?
+#: XXX_osm bei osm falsch geschrieben?
 Grebenhainer Weg: Qualität?	? 5628,21279 5479,21386
 Ilbeshäuser Weg: Qualität?	? 5568,21185 5413,21329
 Sommerfelder Str.: Qualität?	? 3219,19329 3243,19391 3297,19429
 Puchertweg: Qualität?	? 4613,19279 4520,19347
 Eisenhartsteig: Qualität?	? 4840,19587 4734,19618 4654,19644
-#: XXX_indoor fehlt bei osm
+#: XXX_osm fehlt bei osm
 Primusweg: Qualität?	? 5731,19824 5651,19953
 Killisch-von-Horn-Weg: Qualität?	? 9590,18082 9707,17941
-#: XXX_indoor str_cont_ausnahme-Eintrag
+#: XXX str_cont_ausnahme-Eintrag
 Straße 179 (Französisch Buchholz): Qualität?	? 12015,23508 12093,23793 12104,23808
 Straße 179 (Französisch Buchholz): Qualität?	? 12093,23793 11971,23899 11941,23882
 Straße 180 (Französisch Buchholz): Qualität?	? 12426,23722 12269,23711 12104,23808
@@ -4939,7 +4933,7 @@ Tomatenweg: Qualität?	? 12389,23097 12434,23109 12485,22940 12501,22890 12503,22
 Straße 103 (Französisch Buchholz): Qualität?	? 12666,23223 12559,23569
 Straße 76: Qualität?	? 12766,22668 12532,22858
 Straße 77 (Französisch Buchholz): Qualität?	? 12836,22763 12608,22943 12589,22948 12526,22972
-#: XXX_indoor str_cont_ausnahme-Eintrag
+#: XXX str_cont_ausnahme-Eintrag
 Straße 89 (Französisch Buchholz): Qualität?	? 12532,22858 12589,22948
 Straße 89 (Französisch Buchholz): Qualität?	? 12608,22943 12699,22971
 Straße 175: Qualität?	? 12532,22858 12532,22894 12526,22972 12510,23010 12597,23040
@@ -4955,12 +4949,12 @@ Straße 163: Qualität?	? 12732,22024 12724,21943
 Straße 164: Qualität?	? 12666,22036 12687,22200
 Straße 165: Qualität?	? 12757,22021 12771,22189
 Gellertstr. (Französisch Buchholz): Qualität?	? 12841,21925 12724,21943 12649,21948 12448,21971
-#: XXX_indoor str_cont_ausnahme-Eintrag
+#: XXX str_cont_ausnahme-Eintrag
 August-Siebke-Str.: Qualität?	? 12837,21876 12646,21918
 August-Siebke-Str.: Qualität?	? 12829,21814 12621,21862 12646,21918 12649,21948
 Viktoriastr. (Französisch Buchholz): Qualität?	? 12467,22147 12362,22131
 Parkstr. (Französisch Buchholz): Qualität?	? 12630,22277 12488,22305 12393,22332 12205,22367 12179,22369
-#: XXX_indoor bei osm als "Guyotstr" bezeichnet
+#: XXX_osm bei osm als "Guyotstr" bezeichnet
 Henrionweg: Qualität? Für Radfahrer befahrbar?	? 11095,21768 11153,21753 11145,21698
 Chantieweg: Qualität?	? 11425,21650 11408,21537
 Straße 30 (Französisch Buchholz): Qualität?	? 11696,21493 11756,21594
@@ -4977,19 +4971,19 @@ Karestr.: Qualität?	? 15453,24474 15414,24418 15344,24315
 #: XXX Existiert hier ein Straßenname? evtl. str_cont_ausnahme-Eintrag notwendig
 Pfannschmidtstr.: Qualität?	? 15536,24417 15498,24362 15423,24251
 Ballonplatz: Qualität?	? 15591,24137 15661,24250
-#: XXX_indoor bei osm als "Beerbaumstr." bezeichnet
-#: XXX_indoor fehlt bei Berlin.coords.data
+#: XXX_osm bei osm als "Beerbaumstr." bezeichnet
+#: XXX fehlt bei Berlin.coords.data
 Chronisteneck: Qualität?	? 15692,24040 15730,24051 15759,24033 15843,23980
 Beerbaumstr.: Qualität?	? 15843,23980 15906,24088 15948,24151
 (Beerbaumstr. - Karower Chaussee): Qualität? Nachts beleuchtet?	? 15948,24151 16021,24243 16123,24232
 Lanzelotstr.: Qualität?	? 16139,24162 16081,24056 16029,23964 15987,23876 15966,23836
-#: XXX_indoor str_cont_ausnahme-Eintrag
+#: XXX str_cont_ausnahme-Eintrag
 Erekweg: Qualität?	? 16091,24182 16139,24162
 Erekweg: Qualität?	? 16127,24024 16186,24108 16469,23877 16439,23823
 Nerthusweg: Qualität?	? 16031,24087 16081,24056 16127,24024 16156,24003 16439,23823 16515,23753 16578,23731
 Ebenrotsteig: Qualität?	? 16578,23731 16770,23593
 Swantewitstr.: Qualität?	? 15987,23876 16060,23830 16330,23647 16699,23402
-#: XXX_indoor bei osm ohne Namen
+#: XXX_osm bei osm ohne Namen
 Bohrerzeile: Qualität?	? 16156,24003 16106,23913 16060,23830 16010,23734 15963,23632
 Bedeweg: Qualität?	? 16436,23313 16523,23454 16683,23354 16732,23319
 Straße 74 (Karow): Qualität?	? 15776,23185 15627,23255
@@ -5006,24 +5000,24 @@ Straße 86: Qualität?	? 13805,22935 13726,22860 13699,22834
 Straße 100: Qualität?	? 13690,23083 13671,23030 13622,22944
 Straße 101 (Karow): Qualität?	? 13622,22944 13726,22860
 Kreuzburger Str.: Qualität?	? 14545,23141 14501,22858
-#: XXX_indoor bei osm als Kerkowstr. bezeichnet:
+#: XXX_osm bei osm als Kerkowstr. bezeichnet:
 Rybniker Str.: : Qualität?	? 14597,22842 14482,22731 14406,22633 14346,22550
-#: XXX_indoor bei osm als Spinolastr. bezeichnet:
+#: XXX_osm bei osm als Spinolastr. bezeichnet:
 Bunzlauer Str.: Qualität?	? 14721,22821 14699,22678 14684,22583 14608,22479 14572,22436
 Steinauer Str.: Qualität?	? 14950,22853 14937,22784 14913,22662 14910,22648 14891,22551 14872,22448
 Nahestr.: Qualität?	? 14195,22657 14308,22574 14346,22550 14425,22481
 Siegstr.: Qualität?	? 14308,22574 14162,22366
 Straße 10 (Karow): Qualität?	? 14162,22366 14278,22281
-#: XXX_indoor bei osm "Straße 10"
+#: XXX_osm bei osm "Straße 10"
 Straße 40 (Karow): Qualität? Heißt die Straße tatsächlich so?	? 14278,22281 14661,21987
 Straße 36 (Karow): Qualität?	? 14720,22062 14661,21987 14625,21927 14563,21817
-#: XXX_indoor bei osm "Straße 33"
+#: XXX_osm bei osm "Straße 33"
 Straße 38 (Karow): Qualität? Heißt die Straße tatsächlich so?	? 14511,21847 14563,21817
 Straße 39 (Karow): Qualität?	? 14625,21927 14742,21843
 Straße 48 (Karow): Qualität?	? 14885,21827 15053,22039 15202,22210 15377,22452
 Tarnowitzer Str.: Qualität?	? 15154,22370 15013,22472 14891,22551
 Straße 34 (Karow): Qualität?	? 15087,22573 14913,22662
-#: XXX_indoor bei osm teilweise Straße 73
+#: XXX_osm bei osm teilweise Straße 73
 Straße 72 (Karow): Qualität?	? 15527,23033 15691,22949 15797,22939
 Straße 73 (Karow): Qualität?	? 15709,22999 15797,22939 15850,22905 15983,22814 16090,22745 16280,22618 16442,22505
 Straße 62: Qualität?	? 16280,22618 16336,22718 16389,22860
@@ -5039,9 +5033,9 @@ Straße 69: Qualität?	? 15434,22604 15638,22473 15898,22296
 Straße 58: Qualität?	? 15638,22473 15547,22345 15450,22232
 Straße 42 (Karow): Qualität?	? 15271,22527 15377,22452 15442,22412 15547,22345 15705,22236 15740,22238 15759,22208
 Kolonie Am Teichberg: Qualität?	? 15705,22236 15672,22127
-#: XXX_indoor fehlt bei Berlin.coords.data
+#: XXX fehlt bei Berlin.coords.data
 Straße 68: Qualität?	? 15759,22208 15869,22131
-#: XXX_indoor fehlt bei Berlin.coords.data
+#: XXX fehlt bei Berlin.coords.data
 Straße 65: Qualität?	? 15869,22131 15757,21979
 Straße 67: Qualität?	? 15430,22196 15452,22180 15757,21979 15973,21836
 Straße 43: Qualität?	? 15094,22290 15202,22210 15353,22105
@@ -5054,14 +5048,14 @@ Straße 51: Qualität?	? 15325,21777 15377,21921
 Straße 44 (Karow): Qualität?	? 15464,21894 15377,21921 15281,21960 15121,22016 15053,22039 14932,22083
 Straße 46 (Karow): Qualität?	? 14953,21680 14819,21711 14690,21764
 Straße 27: Qualität?	? 14747,21472 14617,21490 14541,21360 14509,21337
-#: XXX_indoor bei osm ohne Namen
+#: XXX_osm bei osm ohne Namen
 Blanchardstr.: Qualität?	? 15130,24012 15189,24120
-#: XXX_indoor fehlt bei osm
+#: XXX_osm fehlt bei osm
 Gatterweg: Qualität? Genaue Lage der Straße?	? 16388,22890 16504,22903
 Hentzeweg: Qualität? Genaue Lage der Straße?	? 16465,23091 16528,23006
-#: XXX_indoor fehlt bei osm
+#: XXX_osm fehlt bei osm
 Kurze-Enden-Weg: Qualität?	? 15235,23886 15321,23979
-#: XXX_indoor fehlt bei osm
+#: XXX_osm fehlt bei osm
 Nordische Str.: Qualität? Genaue Lage der Straße?	? 15128,21837 15176,21964
 Ebersdorfer Str.: Qualität?	? -4818,13347 -4932,13318 -5033,13284 -5137,13248 -5217,13232
 Ebersdorfer Platz: Qualität?	? -5062,13347 -5161,13308
@@ -5072,11 +5066,11 @@ Schwimmerweg: Qualität?	? -3584,11177 -3642,11216 -3673,11216
 Paddlerweg: Qualität?	? -3559,11227 -3625,11250 -3679,11248
 Rudererweg: Qualität?	? -3534,11277 -3570,11289 -3689,11291
 Lankestrand: Qualität?	? -3689,11291 -3679,11248 -3673,11216
-#: XXX_indoor fehlt bei osm
+#: XXX_osm fehlt bei osm
 Am Kirchenland: Qualität? Genaue Lage der Straße?	? -6821,16028 -6752,16015
 Salchendorfer Weg: Qualität?	? -5123,15298 -4972,15297
 Henri-Dunant-Platz: Pl	? -4972,15297
-#: XXX_indoor fehlt bei osm
+#: XXX_osm fehlt bei osm
 Pfefferweg: Qualität?	? -5849,16199 -5767,16177
 Rockenhausener Str.: Qualität?	? -4338,15137 -4244,15127
 Am Posseberg: Qualität?	? 12632,25569 12436,25580 12396,25478 12138,24989 12261,24851
@@ -5084,23 +5078,23 @@ Arkenberger Damm: Qualität?	? 12396,25478 12324,25514 11964,25488 11871,25582
 Straße 174 (Rheingoldstr.): Existiert diese Straße überhaupt? Wo befindet sie sich? Qualität?	? 18934,558 18789,586
 #: XXX kommt man überhaupt auf die Insel rauf?
 Straße 31 (Rahnsdorf): Qualität? Genaue Lage?	? 29616,3070 29338,3219
-#: XXX_indoor fehlt bei osm
+#: XXX_osm fehlt bei osm
 Straße 89 (Niederschönhausen): Qualität?	? 8606,20063 8703,19917
-#: XXX_indoor fehlt bei osm
+#: XXX_osm fehlt bei osm
 Straße 87 (Blankenburg): Qualität?	? 13441,22298 13476,22345
-#: XXX_indoor bei osm ohne Namen
+#: XXX_osm bei osm ohne Namen
 Straße 73 (Niederschönhausen): Qualität?	? 9453,19383 9458,19329
 Straße 39 (Blankenburg): Qualität?	? 15114,21034 15138,21002 15052,20725 15018,20624
-#: XXX_indoor fehlt bei osm
+#: XXX_osm fehlt bei osm
 Straße 46 (Heinersdorf): Qualität?	? 12928,17801 12755,17723 12587,17603 12500,17460
 Straße 41 (Niederschönhausen): Qualität?	? 11425,19978 11355,20123 11285,20260
 Straße 39 (Niederschönhausen): Qualität?	? 11355,20123 11240,20069
 #: oldname: Alpenberger Str.
-#: XXX_indoor bei osm mit alten Namen?
+#: XXX_osm bei osm mit alten Namen?
 Straße 4 (Buch): Qualität? Stimmt der Straßenname, oder ist es die Alpenberger Str.?	? 17881,25951 18015,25653
 Straße 28 (Französisch Buchholz): Qualität?	? 11522,21519 11509,21439 11503,21406
 Straße 18a: Qualität?	? 11217,21565 11297,21593 11347,21589
-#: XXX_indoor fehlt bei osm
+#: XXX_osm fehlt bei osm
 Straße 145: Qualität?	? 11077,21858 11170,21876
 Darßer Bogen: Qualität?	? 15226,17900 15450,17861
 Kapellenweg (Blankenfelde): Qualität?	? 10287,23275 10373,23353 10418,23396 10456,23441 10493,23487 10549,23550 10667,23684 10971,23838
@@ -5133,7 +5127,7 @@ Albert-Wilkening-Str. (Potsdam): Qualität? Öffentliche Straße?	? -8501,-2285 -85
 Lilian-Harvey-Str. (Potsdam): Qualität? Öffentliche Straße?	? -8653,-2195 -8677,-2331
 Friedrich-Holländer-Str. (Potsdam): Qualität? Öffentliche Straße?	? -8702,-2330 -8727,-2473
 Joseph-von-Sternberg-Str. (Potsdam): Qualität? Öffentliche Straße?	? -8623,-2492 -8605,-2400 -8596,-2346 -8574,-2204
-#: XXX_indoor fehlt in Potsdam.coords.data
+#: XXX fehlt in Potsdam.coords.data
 Quentin-Tarantino-Str. (Potsdam): Qualität? Öffentliche Straße?	? -8489,-2220 -8501,-2285 -8503,-2362
 Alfred-Hirschmeier-Str. (Potsdam): Qualität? Öffentliche Straße?	? -8503,-2362 -8512,-2417 -8548,-2645
 Billy-Wilder-Platz (Potsdam): Qualität? Öffentliche Straße?	? -8605,-2400 -8512,-2417
@@ -5216,10 +5210,10 @@ Weidenhof (Potsdam): Qualität?	? -10224,-3730 -10371,-3724 -10374,-3651
 Inselhof (Potsdam): Qualität?	? -10206,-3685 -10021,-3683 -10020,-3655
 Käthe-Kollwitz-Str. (Potsdam): Qualität?	? -10634,-4001 -10594,-3966 -10362,-4158
 Tiroler Damm (Potsdam): Qualität?	? -10400,-4212 -10362,-4158 -10304,-4090 -10267,-4025 -10165,-3954 -10140,-3918
-#: XXX_indoor str_cont_ausnahme-Eintrag
+#: XXX str_cont_ausnahme-Eintrag
 Unter den Eichen (Potsdam): Qualität?	? -10304,-4090 -10215,-4169
 Unter den Eichen (Potsdam): Qualität?	? -10170,-4416 -10102,-4346 -10048,-4288 -10021,-4258
-#: XXX_indoor str_cont_ausnahme-Eintrag
+#: XXX str_cont_ausnahme-Eintrag
 Eduard-Claudius-Str. (Potsdam): Qualität?	? -10725,-4032 -10714,-4011 -10682,-3960
 Eduard-Claudius-Str. (Potsdam): Qualität?	? -10714,-4011 -10584,-4147 -10542,-4204
 Eduard-Claudius-Str. (Potsdam): Qualität?	? -10463,-4157 -10542,-4204 -10615,-4254
@@ -5243,7 +5237,7 @@ Ravensbergweg (Potsdam): Qualität? Ist die Heinrich-Mann-Allee an dieser Stelle 
 Am Plantagenhaus (Potsdam): Qualität?	? -11003,-3941 -10827,-4172
 Hegemeisterweg (Potsdam): Qualität?	? -11192,-4385 -11117,-4349 -10978,-4247
 Am Försteracker (Potsdam): Qualität?	? -10924,-4319 -10915,-4308 -10827,-4172 -10748,-4065 -10725,-4032
-#: XXX_indoor str_cont_ausnahme-Eintrag
+#: XXX str_cont_ausnahme-Eintrag
 Hasensprung (Potsdam): Qualität?	? -11153,-4512 -10899,-4355 -10888,-4346
 Hasensprung (Potsdam): Qualität?	? -10915,-4308 -10888,-4346 -10840,-4403
 Zum Jagenstein (Potsdam): Qualität?	? -10824,-4434 -10722,-4618 -10659,-4750 -10596,-4892 -10453,-4819 -10359,-4780
@@ -5335,7 +5329,7 @@ Am Klarpfuhl - Mauerweg: besteht eine Verbindung für Radfahrer? Qualität?	? 1819
 #: by: http://fahrrad.wikia.com/wiki/Fahrradstra%C3%9Fe/Liste_von_Fahrradstra%C3%9Fen#Berlin
 Lauenburger Str.: Ist die Lauenburger Str. eine Fahrradstraße?	? 5883,4985 5909,5072 5939,5169 5976,5293 6002,5424 6019,5785 6018,5884 6017,5975 6008,6067 6019,6087 6014,6160 5996,6238 5925,6311 5865,6373 5803,6403
 Baumgarten - Grünow: Qualität?	? 45393,105220 45647,104851 45619,104429 45554,104267 45590,103655 46020,102452 45794,102248 45805,102072
-#: XXX_indoor: bei osm falsch geschrieben?
+#: XXX_osm: bei osm falsch geschrieben?
 Leo-Hendrik-Baekeland-Str. (Erkner): Qualität?	? 34603,2615 34549,2640 34416,2848 34391,3099
 Julius-Rütgers-Str. (Erkner): Qualität?	? 34293,3076 34391,3099 34416,3127 34671,3421 34553,3539
 Am Wuhleufer: gibt es auch im südlichen Abschnitt einen Radweg?	? 21498,7153 21683,6946 21774,6880
