@@ -605,7 +605,7 @@ dist-any:	# build-all
 	-mkdir $(RADZEIT_DIST_DIR)/tmp
 	chmod ugo+rx $(RADZEIT_DIST_DIR)/tmp
 	cd $(RADZEIT_DIST_DIR) && \
-	    $(MAKE) $(MAKEFLAGS) TARGET=$(TARGET) ABS_LOCAL_BBBIKE_DIR=$(ABS_LOCAL_BBBIKE_DIR) all sternfahrt2007
+	    $(MAKE) $(MAKEFLAGS) TARGET=$(TARGET) ABS_LOCAL_BBBIKE_DIR=$(ABS_LOCAL_BBBIKE_DIR) all
 
 ######################################################################
 # Download: http://mapserver.gis.umn.edu/dist/mapserver-3.6.4.tar.gz
