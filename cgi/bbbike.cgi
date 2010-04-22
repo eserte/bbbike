@@ -2127,7 +2127,11 @@ EOF
 		last if ++$out_i > $max_matches;
 		my $strasse2val;
 		my $is_ort = $s->[MATCHREF_ISORT_INDEX];
-		print "<label><input onclick='set_street_in_berlinmap(\"$type\", $out_i);' type=radio name=" . $type . "2";
+		print "<label><input";
+		if ($nice_berlinmap) {
+		    print " onclick='set_street_in_berlinmap(\"$type\", $out_i);'";
+		}
+		print " type=radio name=" . $type . "2";
 		if ($is_ort && $multiorte) {
 		    my($ret) = $multiorte->get_by_name($s->[0]);
 		    my $xy;
