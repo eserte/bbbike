@@ -23,8 +23,8 @@
 		my($do_local) = @_;
 
 		my $dir                 = $do_local ? "$BBBIKE_TMP_DIR/fragezeichen_list_local" : "$BBBIKE_TMP_DIR/fragezeichen_list";
-		my $bbbikeurl           = $do_local ? 'http://localhost/bbbike/cgi/bbbike.cgi' : 'http://www.bbbike.de/cgi-bin/bbbike.cgi';
-		my $fragezeichenformurl = $do_local ? 'http://localhost/bbbike/html/fragezeichenform.html' : 'http://www.bbbike.de/BBBike/html/fragezeichenform.html';
+		my $bbbikeurl           = $do_local ? '/bbbike/cgi/bbbike.cgi' : 'http://www.bbbike.de/cgi-bin/bbbike.cgi';
+		my $fragezeichenformurl = $do_local ? '/bbbike/html/fragezeichenform.html' : 'http://www.bbbike.de/BBBike/html/fragezeichenform.html';
 
 		mkdir $dir if !-d $dir;
 		chmod 0755, $dir;
