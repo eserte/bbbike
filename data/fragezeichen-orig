@@ -434,6 +434,8 @@ Kleistpark: im Sommer bis 21 Uhr geöffnet, im Winter bis 18 Uhr	? 7209,9507 7246
 #
 #: section isolated entries vvv
 #: section ignorieren vvv
+#: by: M. Hoffmann:
+Lokistr.: mäßiger Asphalt (-> Q1-), q0	? 12683,18597 12717,18662
 #: by: Ralf Donle:
 Oskar-Pollner-Str. (Teltow): Asphalt, Q0, RW6	? 2296,-1876 2240,-2113 2197,-2279 2163,-2396 2145,-2494 2091,-2668
 #: by: anonymous:
@@ -2076,7 +2078,6 @@ Maxie-Wander-Str. - Kastanienallee: Durchfahrt für Radfahrer möglich? Qualität?	
 Sandbacher Weg: Qualität?	? 23504,-938 23407,-981 23073,-1119 22845,-1210 22720,-1255 22482,-1226 22322,-1207 22146,-1183 21930,-1159
 #: XXX: in plaetze-orig übernehmen, sobald der Sandbacher Weg in strassen ist
 Sandbacher Platz: Pl	? 22720,-1255
-Wiesenstr. (Bohnsdorf): Qualität?	? 22795,-1055 22973,-978 23356,-825 23502,-770
 Birkenweg (Bohnsdorf): Qualität?	? 23429,-1139 23407,-981
 Birkenstr. (Bohnsdorf): Qualität?	? 23407,-981 23378,-903 23356,-825 23329,-732
 Falkenstr.: Qualität?	? 22362,-1509 22369,-1453 22382,-1338
@@ -2610,7 +2611,6 @@ Gnomenplatz: Qualität?	? 14682,18178 14702,18064
 Jötunsteig: Qualität?	? 14731,18171 14839,18185 14872,18298 14887,18362 14881,18428 14874,18449 14836,18562 14789,18701 14745,18827
 Am Graben, nördlicher Weg: Qualität? Für Autos gesperrt?	? 14277,18684 14348,18711 14406,18731 14465,18750 14522,18764 14565,18777 14601,18792 14647,18808 14692,18823 14743,18839
 Aschenbrödelweg: Qualität? Für Autos gesperrt?	? 14367,18849 14406,18731
-Gebrüder-Grimm-Weg: Qualität?	? 14277,18684 14265,18747 14269,18812 14278,18840 14292,18863 14324,18916 14358,18973 14391,19026 14433,19093 14457,19132 14482,19174 14507,19214 14573,19281
 Sieben-Raben-Weg: Qualität? Für Autos gesperrt?	? 14465,18750 14422,18874 14401,18918 14370,18965 14358,18973 14223,19055 14094,19134 13989,19187
 Astridstr.: Qualität?	? 16384,19678 16393,19940 16397,20069 16400,20146
 Däumlingsweg: Qualität? Für Autos gesperrt?	? 14348,18711 14316,18805 14301,18827 14278,18840
@@ -2996,6 +2996,7 @@ Gilgestr.: Qualität?	? -1181,2913 -1100,2697
 Veronikasteig: Qualität?	? -1403,3047 -1226,3102
 Joachimstr. (Zehlendorf): Qualität?	? -1654,2909 -1575,2934 -1500,2964
 Am Heidehof: Qualität?	? -1612,2785 -1571,2669 -1410,2726
+#: XXX laut Ursel Stapelfeldt "gut befahrbares Kopfsteinpflaster", aber das ist etwas lange her...
 Eiderstedter Weg: Qualität?	? -2096,3402 -2038,3252 -1961,3021 -1951,2995 -1945,2975 -1858,2695
 Reifträgerweg: Qualität?	? -2367,3006 -2529,3220 -2638,3281 -2763,3359
 #: XXX: laut OSM ein footway
@@ -3038,8 +3039,6 @@ Pfarrer-Wenke-Weg: Qualität?	? 11767,935 11940,946
 #: XXX ein anonymer Eintrag war nicht klar: "Asphalt Q1" (die gesamte Straße?), "Radweg" (???)
 Azaleenstr.: Qualität? Qualität jenseits der Birkenstr.? Gibt es einen Zugang für Radfahrer zum Uferweg?	? 23443,4524 23544,4541 23634,4563 23701,4584 23798,4642 23869,4733 23874,4924 23858,4927 23796,4929
 Mönchmühlenstr.: laut osm ist die Straße teilweise für den Kfz-Verkehr gesperrt, stimmt das?	? 8780,26384 8684,26216 8570,26107 8302,25963
-#: XXX ein anonymer Eintrag war nicht klar: "Asphalt Q3"
-Im Wolfsgartenfeld: Qualität?	? 5338,19843 5340,19895 5299,20104
 #: XXX anonymous meint "fester Sandweg", aber beiderseits der Birkenstr. asphaltiert! vvv
 Jägerstr. (Kaulsdorf): Qualität zwischen Eichenstr. und Dammheide?	? 22669,8498 22639,8565 22586,8686 22532,8807 22514,8848 22431,8912
 Jägerstr. (Kaulsdorf): Qualität zwischen Tieflandstr. und Waldstr?	? 22190,9043 22027,9131 21951,9157 21849,9145
@@ -4689,7 +4688,6 @@ Grimselweg: Qualität?	? 13704,18364 13777,18438 13815,18524 13826,18604 13816,18
 Asgardstr.: Qualität?	? 12387,19454 12424,19542
 Sleipnerplatz: Qualität?	? 12921,18691 12838,18734 12829,18775
 Hildestr.: Qualität?	? 12684,18859 12623,18756 12609,18730 12616,18630 12619,18612 12627,18506 12606,18464
-Lokistr.: Qualität?	? 12683,18597 12717,18662
 Frostr.: Qualität?	? 12545,18625 12616,18630
 Erdastr.: Qualität?	? 12861,18505 12818,18543 12755,18573
 Fasoltstr.: Qualität?	? 12681,18431 12749,18564 12755,18573 12794,18656 12838,18734

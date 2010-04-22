@@ -3315,6 +3315,8 @@ Rietzestr.: Asphalt	Q0 12693,15225 12472,15356
 ######################################################################
 #: by: anonymous vvv
 # 
+#: note: enge Straße, aber q0
+Wiesenstr. (Bohnsdorf): mäßiger Beton	Q1- 22795,-1055 22973,-978 23356,-825 23502,-770
 Grünefelder Str.: guter Asphalt	Q0 -4879,16718 -4875,16928 -4871,17197
 Grabenstr. (Bohnsdorf): mäßiger Asphalt	Q1- 22315,490 22288,413 22319,295 22387,223 22530,190 22683,201
 #: note: "q4, einige Fußgänger" ignoriert
@@ -10108,8 +10110,10 @@ Winterhuder Weg: neu geteert	Q0 -6945,14085 -6938,14229
 Winterhuder Weg: alte große Betonplatten und Sand	Q1 -6938,14229 -6937,14262
 Billstedter Pfad: mäßiger Beton	Q1- -6938,14229 -6864,14224
 #: by: ^^^
-#: by: Hermann Weiß
+#: by: Hermann Weiß vvv
 Rübezahlweg: wassergebundene Decke	Q2 14743,18839 14698,18967 14664,19057 14622,19123 14571,19172 14507,19214 14375,19296 14241,19379 14030,19510
+Gebrüder-Grimm-Weg: guter fester Sandweg	Q1 14277,18684 14265,18747 14269,18812 14278,18840 14292,18863 14324,18916 14358,18973 14391,19026 14433,19093 14457,19132 14482,19174 14507,19214 14573,19281
+#: by: ^^^
 #: by: T.Geske:
 #: confirmed_by: Katinka Matthes ("gut", entweder Asphalt oder Beton)
 Charles-H.-King-Str.: guter Beton	Q0 -1248,2451 -1401,2391 -1604,2324
@@ -10194,6 +10198,10 @@ Elstergasse: guter Beton	Q0- -1596,20184 -1827,20216 -1971,20231
 #: by: ^^^
 #: by: Robert Büttner:
 Gerdsmeyerweg: Beton, gute Qualität	Q0- 8165,5444 8161,5399 8130,5353 8036,5309
+#: by: Rikert-Mueller:
+#: note: 30er-Zone
+#: note: anonymous meinte: "schlechter Asphalt"
+Im Wolfsgartenfeld: mäßiger Asphalt	Q2+ 5338,19843 5340,19895 5307,20067
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206
@@ -11686,8 +11694,8 @@ Heideläuferweg: Asphalt	Q1 13010,2085 13043,1984 13070,1642 13073,1559 13089,135
 Dröpkeweg: Asphalt	Q0 13070,1642 13181,1645 13288,1647 13397,1657 13507,1659 13531,1588 13657,1587
 #: by: ^^^
 #: by: Stephan Lohse [AM] vvv
-#: add_fragezeichen: Ist der Abschnitt der Siegfriedstr. zwischen Herthaplatz und Blankenburger Str. mittlerweile besser asphaltiert?
-Siegfriedstr. (Niederschönhausen): Asphalt	Q2 10614,19907 10742,19632
+#: corrected_by: Juliane ... Rothmaler & Axel Schumacher (Q2 -> Q0)
+Siegfriedstr. (Niederschönhausen): Asphalt	Q0 10614,19907 10742,19632
 #: confirmed_by: Juliane ... Rothmaler (and added Schlaglöcher)
 Siegfriedstr. (Niederschönhausen): Asphalt, Schlaglöcher	Q2 10742,19632 10806,19490 10857,19379
 #: by: ^^^
