@@ -2978,7 +2978,7 @@ sub reset_html {
 		   qq'@{[defined $strrouten{$default_routen} ? $strrouten{$default_routen} : 0]},',
 		   qq'@{[ $default_ampel?"true":"false" ]},',
 		   qq'@{[defined $strgreen{$default_green} ? $strgreen{$default_green} : 0]},',
-		   qq'@{[defined $strspecialvehicle{$default_specialvehicle} ? $strspecialvehicle{$default_specialvehicle} : 0]}',
+		   qq'@{[defined $strspecialvehicle{$default_specialvehicle} ? $strspecialvehicle{$default_specialvehicle} : 0]},',
 		   qq'@{[defined $strunlit{$default_unlit} ? $strunlit{$default_unlit} : 0]},',
 		   qq'@{[defined $strwinter{$default_winter} ? $strwinter{$default_winter} : 0]}',
 		   qq'); enable_settings_buttons(); return false;">',
