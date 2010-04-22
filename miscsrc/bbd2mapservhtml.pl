@@ -51,6 +51,7 @@ my $title = "Mapserver/BBBike";
 my @custom_link_defs;
 my $do_routelist_button = 1;
 my $link_target;
+my $bad_browser_compat = 1; # e.g. IE7/8
 
 my $save_cmdline = "$0 @ARGV";
 
@@ -431,9 +432,16 @@ EOF
 	    }
 	    $repl;
 	}eg;
-	$html .= <<EOF;
+	if ($bad_browser_compat) {
+	    # IE8 cannot handle <a><button>...</>
+	    $html .= <<EOF;
+ <a style="text-decoration:none;" href="@{[ CGI::escapeHTML($url) ]}"$target_attr>@{[ CGI::escapeHTML($link_label) ]}</a>
+EOF
+	} else {
+	    $html .= <<EOF;
  <a style="text-decoration:none;" href="@{[ CGI::escapeHTML($url) ]}"$target_attr><button>@{[ CGI::escapeHTML($link_label) ]}</button></a>
 EOF
+	}
     }
     $html .= <<EOF;
 </form>
