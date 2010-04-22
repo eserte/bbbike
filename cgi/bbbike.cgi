@@ -741,7 +741,7 @@ $require_Karte = sub {
     undef $require_Karte;
 };
 
-$VERSION = 10.001;
+$VERSION = 10.002;
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -1524,11 +1524,15 @@ sub choose_form {
 	   ) {
 	    $nice_berlinmap = $nice_abcmap = 1;
 	    $prefer_png = 1;
-	} elsif ($bi->is_browser_version("MSIE", 5.0, 5.4999)) {
+	} elsif ($bi->is_browser_version("MSIE", 5.0, 9999999)) { # mit IE 8 getestet
 	    $nice_berlinmap = $nice_abcmap = 1;
-	} elsif ($bi->is_browser_version("Opera", 7.0, 7.9999)) { # Mit 8.x wird nur einmalig beim Enter gehighlighted $nice_berlinmap = $nice_abcmap = 1;
+	    # png was for long time unsupported by IE
+	} elsif ($bi->is_browser_version("Opera", 9.0, 9999999)) { # mit 9.80 getestet
+	    $nice_berlinmap = $nice_abcmap = 0; # the multiple street chooser would work, but cannot be set separately from $nice_berlinmap
 	    $prefer_png = 1;
-	} elsif ($bi->is_browser_version("Konqueror", 3.0, 3.9999)) { # andere nicht getestet
+	} elsif ($bi->is_browser_version("Opera", 7.0, 7.9999)) { # Mit 8.x wird nur einmalig beim Enter gehighlighted
+	    $prefer_png = 1;
+	} elsif ($bi->is_browser_version("Konqueror", 3.0, 3.9999)) { # still broken with 3.5
 	    $nice_berlinmap = $nice_abcmap = 0;
 	    $prefer_png = 1;
 	} elsif ($bi->is_browser_version("Safari", 419, 9999999)) {
