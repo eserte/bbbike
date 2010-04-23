@@ -13315,11 +13315,12 @@ userdel	q4::inwork; 11242,11720 11324,11689 11574,11594
 EOF
      },
      { from  => 1238347506, # 2009-03-29 19:25
-       until => 1262300400, # 2010-01-01 00:00
-       text  => 'Köthener Str. (Kreuzberg) zwischen Bernburger Str. und Hallesches Ufer Baustelle, Einbahnstraße Richtung Norden (bis Anfang 2010)',
+       until => undef, # 2010-01-01 00:00 1262300400
+       text  => 'Köthener Str. (Kreuzberg) zwischen Bernburger Str. und Hallesches Ufer Baustelle, Einbahnstraße Richtung Norden',
        type  => 'handicap',
        source_id => 'IM_011637',
        data  => <<EOF,
+#: last_checked: 2010-04-23
 userdel	q4::inwork; 8536,11063 8483,10900 8443,10777
 EOF
      },
@@ -17269,9 +17270,9 @@ EOF
 userdel	q4::inwork; 12598,8390 12771,8439
 EOF
      },
-     { from  => 1270015833, # 2010-03-31 08:10
-       until => 1272060000, # 2010-04-24 00:00
-       text  => 'Prötzel: Durchlassbau und Straßenbauarbeiten Prötzel -> Harnekop Sternbeck, 29.03.2010 bis 23.04.2010 ',
+     { from  => 1272051674, # 2010-04-23 21:41
+       until => 1273269600, # 2010-05-08 00:00
+       text  => 'Prötzel: Durchlassbau und Straßenbauarbeiten Prötzel -> Harnekop Sternbeck, 29.03.2010 bis 07.05.2010 ',
        type  => 'gesperrt',
        source_id => 'LSO-SG33-F10034',
        data  => <<EOF,
@@ -17463,6 +17464,53 @@ EOF
        source_id => 'LSO-SG33-E10039',
        data  => <<EOF,
 userdel	2::inwork 13546,37474 14470,37191
+EOF
+     },
+     { from  => 1272051749, # 2010-04-23 21:42
+       until => 1273269600, # 2010-05-08 00:00
+       text  => 'Ausbau der L 38 zwischen Alt Zeschdorf und Abzweig B 167, 29.03.2010 bis 07.05.2010 ',
+       type  => 'gesperrt',
+       source_id => 'LSO-SG33-F10040',
+       data  => <<EOF,
+userdel	2::inwork 83070,5097 82765,4636 82314,4413 81301,3881
+EOF
+     },
+     { from  => 1271654040, # 2010-04-19 07:14
+       until => 1272472200, # 2010-04-28 18:30
+       text  => 'Birkbuschstr. (Steglitz): Straße vollständig gesperrt, Fahrbahnschäden in beiden Richtungen zwischen Klingsorstr. und Haydnstr. 20.04.2010 07:14 Uhr bis 28.04.2010 18:30 Uhr ',
+       type  => 'handicap',
+       source_id => 'IM_015553',
+       data  => <<EOF,
+userdel	q4::inwork 5271,4547 5161,4664 5137,4691 5076,4762
+EOF
+     },
+     { from  => 1271855220, # 2010-04-21 15:07
+       until => 1272472200, # 2010-04-28 18:30
+       text  => 'Oranienburger Straße (Mitte): Straße vollständig gesperrt, Grund: Wasserrohrbruch, in Richtung Friedrichstr. zwischen Hackescher Markt und Monbijouplatz. 22.04.2010 15:07 Uhr bis 28.04.2010 18:30 Uhr',
+       type  => 'handicap',
+       source_id => 'IM_015575',
+       data  => <<EOF,
+userdel	q4::inwork 10220,13098 10077,13100 9932,13109
+EOF
+     },
+     { from  => 1271865600, # 2010-04-21 18:00
+       until => 1272290400, # 2010-04-26 16:00
+       text  => 'Straße des 17. Juni (Tiergarten) zwischen Yitzhak-Rabin-Str. und Brandenburger Tor: Veranstaltung (Kinderfest), Straße vollständig gesperrt, ebenfalls gesperrt: Ebertstr. zwischen Behrenstr. und Scheidemannstr., 22.04.2010 18:00 Uhr bis 26.04.2010 16:00 Uhr',
+       type  => 'gesperrt',
+       source_id => 'IM_015533',
+       data  => <<EOF,
+userdel	2::temp 8573,12325 8540,12420
+userdel	2::temp 8595,12066 8600,12165 8538,12245 8214,12205 8089,12190 8055,12186
+userdel	2::temp 8538,12245 8546,12279 8570,12302
+EOF
+     },
+     { from  => 1271743200, # 2010-04-20 08:00
+       until => 1272132000, # 2010-04-24 20:00
+       text  => 'Ziegelstr. (Mitte): Veranstaltung, Straße vollständig gesperrt, 21.04.2010 08:00 Uhr bis 24.04.2010 20:00 Uhr ',
+       type  => 'gesperrt',
+       source_id => 'IM_015565',
+       data  => <<EOF,
+userdel	2::temp 9259,13050 9413,13071 9553,13079
 EOF
      },
     );

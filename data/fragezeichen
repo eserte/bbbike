@@ -460,8 +460,6 @@ Beelitz - Schlunkendorf - Kähnsdorf: Qualität? Nur für Radfahrer offen (von Schl
 Schildower Weg, Teil des Barnimer Dörferwegs: Qualität (laut ADFC-Karte mäßig oder schlecht geeignet)?	? 8415,24361 8212,24258 8198,24225 7956,24083 7887,24043 7874,24035
 Möllersfelder Weg - Schillingweg: Qualität (möglicherweise guter Feldweg)? Teil des Barnimer Dörferwegs?	? 10799,24194 11101,23708
 (Am Schloss Schönhausen): Qualität? Für Autofahrer befahrbar?	? 10390,19069 10322,19046 10278,19072 10249,19148 10223,19223 10243,19267 10308,19297
-Schloßallee - Blankenburger Str.: Qualität (laut ADFC-Karte gut geeignet)?	? 10636,19289 10503,19371 10489,19406
-Blankenburger Str. [20a-26e]: Qualität (laut ADFC-Karte gut geeignet)?	? 10489,19406 10439,19576
 Blaubeerweg: Qualität (laut ADFC-Karte mäßig geeignet)?	? 10932,22184 10993,21948 11000,21858 11060,21694
 Mazetstr.: Qualität (laut ADFC-Karte überwiegend gut geeignet)?	? 10993,21948 11056,21978 11231,22065 11347,22122 11461,22179
 Revierförsterei Blankenfelde - Blankenfelder Chaussee: Qualität (laut ADFC-Karte gut geeignet)?	? 9747,22694 9469,22606
@@ -864,7 +862,6 @@ Tannenweg (Potsdam): Qualität?	? -9434,164 -9440,193 -9405,204 -9453,425 -9494,4
 (Wannseestr. - Tannenstr.): genaue Straßenbezeichnungen? Qualität?	? -9568,56 -9381,89 -9389,170
 Berntweg: Qualität?	? 13161,1991 13181,1645
 Großcreutzweg: Qualität?	? 13514,1823 13502,1797 13507,1659
-Doevelweg: Qualität?	? 13241,1113 13197,1247 13190,1355
 Futhzeile: Qualität?	? 12941,1256 13092,1265
 Reinowzeile: Qualität?	? 13453,1218 13417,1333 13413,1363
 Auf der Planweide: Qualität?	? 13871,1473 13794,1799
@@ -1557,7 +1554,7 @@ Waldvogelweg: Qualität?	? 21416,2139 21385,2146 21301,2189
 Zur Uferbahn: Qualität?	? 23085,898 22952,821 22902,796 22766,778
 Entlang der Straßenbahntrasse: Qualität?	? 22766,778 22555,772 22392,885 22344,931 22304,913
 Allée Marie Curie: Qualität?	? 4596,21629 4589,21606 4502,21525 4510,21506
-Allée Pierre de Coubertin: Qualität? Für Autos offen?	? 4510,21506 4537,21497 4604,21541 4646,21630 4631,21656 4698,21705
+Allée Pierre de Coubertin: Qualität? Für Autos offen?	? 4510,21506 4537,21497 4589,21525 4646,21630 4631,21656 4698,21705
 Am Ansitz: Qualität?	? 3913,21977 3855,22055
 Am Leitbruch: Qualität? Für Autos gesperrt?	? 4062,22069 4130,21961
 Am Wechsel: Qualität?	? 3771,21910 3722,21970 3681,21999 3688,22018
@@ -1574,7 +1571,6 @@ Nach der Höhe: Qualität?	? 4254,22174 4308,22058 4355,21967
 Nagolder Pfad: Qualität?	? 4771,22696 4648,22632 4526,22567
 Pforzheimer Str.: Qualität?	? 4907,22885 5095,22982 5143,22934 5210,22865
 Tiefenbronner Weg: Qualität?	? 4907,22885 4945,22799 4996,22708
-Rue Georges Vallerey: Qualität?	? 4650,21466 4741,21523 4775,21522
 Rue Lamartine: Qualität?	? 4437,21775 4497,21694
 Straße 199 (Waidmannslust): Qualität?	? 4837,22180 4924,22223 4999,22199
 Straße 167 (Waidmannslust): Qualität?	? 4999,22199 4971,22138
@@ -1684,7 +1680,6 @@ Froschkönigweg: Qualität? Für Autos gesperrt?	? 14179,18649 14171,18666 14064,18
 Schreckhornweg: Qualität? Für Autos gesperrt?	? 14030,19510 13951,19307 13924,19237 13909,19133 13903,18979 13902,18953 13899,18833 13892,18762 13898,18721 13916,18678 13945,18612 13950,18567
 Isegrimweg: Qualität? Für Autos gesperrt?	? 14522,18764 14481,18893 14458,18943 14431,18986 14391,19026 14256,19107 14126,19188 14063,19226 14008,19251
 Lindwurmweg: Qualität?	? 14658,18505 14836,18562 14927,18590
-Niflheimweg: Qualität?	? 14643,18550 14553,18525
 Reineke-Fuchs-Weg: Qualität? Für Autos gesperrt?	? 14698,18967 14651,18950 14603,18934 14558,18920 14521,18907 14481,18893 14422,18874 14394,18876 14324,18916 14189,19000 14059,19079 13971,19125 13936,19132 13909,19133
 Ricardastr.: Qualität?	? 16459,19946 16471,19825
 Rotkäppchenweg: Qualität? Für Autos gesperrt?	? 14692,18823 14651,18950 14621,19025 14578,19089 14528,19140 14482,19174 14349,19255 14216,19338
@@ -2543,7 +2538,6 @@ Locarnoweg: Qualität? Ist die Straße eine Spielstraße?	? 3290,2135 3369,2135
 Glandzeile: Qualität? Ist die Straße eine Spielstraße?	? 3369,2135 3369,2216
 Sittener Zeile: Qualität? Ist die Straße eine Spielstraße?	? 3443,2215 3443,2138 3513,2135
 Reinacher Zeile: Qualität? Ist die Straße eine Spielstraße?	? 3516,2213 3513,2135
-Anna-Mackenroth-Weg: Qualität? Ist die Straße eine Spielstraße? Ist die Straße eine Einbahnstraße, und wenn ja, gilt das auch für Radfahrer?	? 3641,2459 3633,2210
 Ginkgoweg: Qualität?	? 16934,3571 16784,3441
 Hederichweg: Qualität?	? 16801,3413 16784,3441 16727,3520 16657,3619 16589,3715 16536,3797
 Straße 207 (Grüne Aue): Qualität? Wie ist die Straße ausgeschildert?	? 16838,3620 16727,3520
@@ -2723,7 +2717,6 @@ Iselbergplatz: Qualität?	? 23523,13368 23646,13346
 Steffenshagener Str.: Qualität?	? 22947,10998 22983,11098 23159,11097
 Rosenhagener Str.: Qualität?	? 23135,10990 23159,11097
 Auf der Höh: Qualität?	? 22898,11125 22782,11127
-Straße 199 (Französisch Buchholz, Niederschönhausen): Qualität?	? 11632,20086 11553,20253 11684,20377 11840,20528
 Verlängerte Mozartstr.: Qualität?	? 21864,6928 21920,6835
 Verlängerte Müggelbergallee: gibt es diese Straße? Qualität?	? 23107,1680 23231,1707
 Edmundweg: existiert hier eine Straße unter dem Namen "Andersonweg" oder "Edmundweg"? Qualität?	? 23064,2147 22872,2107
@@ -2964,7 +2957,6 @@ Straße 99: Qualität?	? 11538,1550 11497,1650
 Am Rudower Waldrand: Qualität?	? 15425,424 15476,332 15600,116 15707,-6
 Zwerghuhnweg: Qualität?	? 15476,332 15565,379 15657,436 15731,476 15803,522
 Lachshuhnweg: Qualität?	? 15731,476 15789,386 15859,297 15927,245
-Welsumerpfad: Qualität?	? 15995,328 15927,245 15860,156 15783,72 15707,-6 15615,-92
 Lakenfelderweg: Qualität?	? 15944,368 16008,446 16068,525 16085,547 16116,581
 Minorkaweg: Qualität?	? 15831,484 15925,541 16008,628
 Seidenhuhnweg: Qualität?	? 16008,446 16074,389
@@ -3335,7 +3327,6 @@ Orangensteig: Qualität?	? -7521,15045 -7511,15160
 Narzissenpfad: Qualität?	? -7387,14951 -7523,14969
 Quittensteig: Qualität?	? -7634,15064 -7613,15192
 Georg-Schroeder-Str.: Qualität?	? -7513,15368 -7507,15449 -7588,15656 -7637,15793 -7642,15840
-Albrechtshofer Weg: Qualität?	? -7517,15858 -7642,15840 -7747,15842 -7865,15867 -7975,15904
 Reckeweg: Qualität?	? -5723,14939 -5845,14955 -6006,14923 -6361,15054 -6467,15109 -6841,15212
 Reckeweg: Qualität?	? -6888,15139 -6892,15223 -7133,15287 -7155,15233
 Straße 603: Qualität?	? -6861,15129 -6841,15212 -6831,15249 -6824,15274
@@ -3430,11 +3421,9 @@ Schächentaler Weg: Qualität?	? 13705,18617 13650,18686
 Grimselweg: Qualität?	? 13704,18364 13777,18438 13815,18524 13826,18604 13816,18705 13788,18774 13759,18824
 Asgardstr.: Qualität?	? 12387,19454 12424,19542
 Sleipnerplatz: Qualität?	? 12921,18691 12838,18734 12829,18775
-Hildestr.: Qualität?	? 12684,18859 12623,18756 12609,18730 12616,18630 12619,18612 12627,18506 12606,18464
 Frostr.: Qualität?	? 12545,18625 12616,18630
 Erdastr.: Qualität?	? 12861,18505 12818,18543 12755,18573
 Fasoltstr.: Qualität?	? 12681,18431 12749,18564 12755,18573 12794,18656 12838,18734
-Donarstr.: Qualität?	? 12749,18564 12683,18597 12651,18613 12619,18612
 Straße 45 (Blankenburg): Qualität?	? 14540,20298 14503,20341 14455,20388
 Mittelstr. (Blankenburg): Qualität?	? 13912,20650 14320,20580 14482,20547
 Straße 46 (Blankenburg): Qualität?	? 14482,20547 14685,20504
@@ -3973,6 +3962,7 @@ Jägerstr. (Wilhelmstadt): Ist die Straße teilweise verkehrsberuhigt?	? -3724,129
 Im Schönower Park: Qualität?	? 1081,2381 1012,2353 959,2349
 Im Schönower Park: Qualität?	? 959,2304 959,2349 956,2395
 Elbestr. (Teltow): Qualität?	? 348,-743 347,-784 288,-1040 213,-1180 145,-1262 109,-1291 4,-1363 -173,-1397 -248,-1400
+Rue Georges Vallerey - Allée Pierre de Coubertin: Qualität?	? 4650,21466 4634,21457 4589,21525
 # added from ampeln-orig
 geschlossen bei Bedarf (?) (Zbr)	? 27657,-11741
 S-Bahn alle 20 Minuten, Regionalbahn halbstündlich (?) (B)	? 40248,14503
@@ -3997,6 +3987,7 @@ Steilpfad (In welche Richtung verläuft die Steigung? Gibt es hier eine Einbahnst
 Schönfließer Str. (Frohnau) (Qualität?)	? 3145,26256 3347,26272 3360,26275 3490,26306 3638,26357
 Stadtheidestr. (Ist die Stadtheidestr. eine Einbahnstraße? Wenn ja, in welche Richtung ist sie offen und gilt die Einbahnstraßenregelung auch für Radfahrer oder nur für Autofahrer?)	? -3573,16006 -3684,15982
 (Allee der Kosmonauten - Biesdorfer Promenade) (Qualität? (laut ADFC-Karte gut geeignet))	? 19837,13531 19826,13444 19835,13152 20068,13036
+Straße 199 (Französisch Buchholz, Niederschönhausen) (Wie ist die Qualität der Straße 199?)	? 11632,20086 11553,20253 11684,20377 11840,20528
 Ferdinand-Buisson-Str. (Qualität der Straße?)	? 12331,20963 12459,21010 12570,21058 12762,21140 12837,21229 12885,21282 12939,21345 12948,21421 12953,21502 12994,21719 13008,21783 13050,21994
 (Uferweg) (Ist der Name "Uferweg" offiziell (mit Beschilderung?)?)	? -431,17169 -384,17155 -280,17229 -266,17335 -215,17385 -141,17377 61,17495 110,17489 151,17537 187,17663 235,17704 260,17788 258,17880 381,18186 416,18386 448,18476 496,18514 586,18540 680,18631 757,18673 768,18742 970,18919 1006,18972 1122,19036 1189,19018 1200,18969 1369,18958 1457,18969 1490,18950
 Straße Z (ist die Straße Z ebenfalls asphaltiert?)	? -638,16459 -671,16488 -708,16516

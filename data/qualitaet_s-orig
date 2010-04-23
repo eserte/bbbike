@@ -752,7 +752,9 @@ Pankeweg: asphaltiert	Q0 12377,20636 12207,20351 12122,20307 11995,19759
 Schloßallee: Asphalt	Q0 11883,19739 11730,19684 11472,19593 11312,19537 11273,19521
 Schloßallee: Parkweg, OK	Q1 11273,19521 11081,19456 10857,19379 10636,19289 10525,19255
 #: by: rjoop
+#: confirmed_by: Juliane ... Rothmaler
 Pankeweg, Schloßpark Schönhausen: Asphalt	Q0 10636,19289 10592,19249 10509,18981 10496,18704
+#: confirmed_by: Juliane ... Rothmaler
 Pankeweg, Bürgerpark: Parkweg, OK	Q1 9909,18333 9882,18318 9855,18322 9716,18290 9713,18322 9424,18276 9304,18165 9310,18108
 #: XXX geraten:
 Bürgerpark: Parkweg	Q1 9460,18053 9479,18217 9701,18256 9716,18290
@@ -4076,8 +4078,10 @@ Straße 462	Q0 5068,17384 4914,17399
 Duisburger Str.: Asphalt	Q0 3874,10153 4183,10144
 #: by: ute s:
 Rhinower Str.: Kopfsteinpflaster	Q2 10722,15921 10713,15746
-#: by: Clemens Bley:
+#: by: Clemens Bley: vvv
 Am Springebruch: Verbundsteinpflaster	Q1 6130,23062 6258,22899
+Rue Georges Vallerey: guter Beton	Q0- 4650,21466 4741,21523 4775,21522
+#: by: ^^^
 #: by: Patrik Marschalik: vvv
 Worpsweder Str.: gute Qualität	Q0 6191,4923 6203,5138
 Wilseder Str.: Asphalt	Q0 6295,5132 6288,4906
@@ -10213,6 +10217,34 @@ Schmale Gasse: Asphalt	Q0 23883,4328 24055,4348 24075,4417
 #: by: chris (wierte...):
 #: note: "Straße durch Einfamilienhaussiedlung, bei Gegenverkehr mit LKW´s kann es manchmal etwas eng werden, rechts und links neben dem Asphalt ist ausgefahrender Sand-/Schotterbelag"
 Bitburger Str.: mäßiger Asphalt	Q1- 16645,17449 16595,17508 16522,17541 16346,17561 15839,17634 15548,17684 15515,17717 15478,17724 15439,17698 15220,17729
+#: by: Thomas (theo...)
+Albrechtshofer Weg: guter Asphalt	Q0 -7517,15858 -7642,15840 -7747,15842 -7865,15867 -7975,15904
+#: by: M. Hoffmann: vvv
+#: note: q0
+Lokistr.: mäßiger Asphalt	Q1- 12683,18597 12717,18662
+#: note: q0
+Donarstr.: mäßiger Asphalt	Q1- 12749,18564 12683,18597 12651,18613 12619,18612
+#: note: q0
+Hildestr.: mäßiger Asphalt	Q1- 12684,18859 12623,18756 12609,18730 12616,18630 12619,18612 12627,18506 12606,18464
+#: by: ^^^
+#: by: Juliane ... Rothmaler: vvv
+Blankenburger Str. [20a-26e]: Betonplatten	Q0- 10489,19406 10439,19576
+#: note: laut ADFC-Karte gut geeignet
+(Schloßallee - Blankenburger Str.): Parkweg	Q1 10636,19289 10503,19371 10489,19406
+#: by: ^^^
+#: by: Holger (holgi...):
+#: note: q1, aber ohne weitere Angaben
+Niflheimweg: guter Asphalt	Q0 14643,18550 14553,18525
+#: by: Andreas (...hallermann):
+Anna-Mackenroth-Weg: Verbundsteinpflaster	Q1 3641,2459 3633,2210
+#: by: J. Schley:
+#: note: q0
+Doevelweg: guter Beton	Q0- 13241,1113 13197,1247 13190,1355
+#: by: annett.scholze: vvv
+Welsumerpfad: Mischung aus Kopfsteinpflaster, unbefestigter Straße und Schlaglöchern	Q2 15995,328 15927,245 15860,156 15783,72 15707,-6 15615,-92
+#: confirmed_by: Claudia Schulz ("neu gemacht" -> "Asphalt", Rw6)
+Straße 199 (Rudow): Asphalt	Q0 15565,379 15667,199 15783,72
+#: by: ^^^
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206

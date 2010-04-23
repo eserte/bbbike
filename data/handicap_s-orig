@@ -12,12 +12,12 @@
 Schloßplatz: Behinderungen durch Bauarbeiten möglich	q3::inwork 10170,12261 10063,12438
 #: last_checked: 2009-12-25
 Caroline-Michaelis-Str.: Bauarbeiten, Ausweichen auf Gehweg	q4::inwork 9061,14050 9125,13973
-#: last_checked: 2010-04-19
+#: last_checked: 2010-04-23
 Fahrbahn der Mauerstr. wegen Bauarbeiten gesperrt	q4::inwork 9405,11413 9331,11497
 #: last_checked: 2010-02-02
 #: next_check: 2010-05-31
 Hauptstr. (Friedrichshain-Kreuzberg): Baustelle, Radfahrer können langsam passieren	q3::inwork 14906,10820 14794,10844 14717,10855
-#: last_checked: 2010-03-18
+#: last_checked: 2010-04-23
 Varian-Fry-Str.: Baustelle, Fahrbahn gesperrt	q4::inwork 8389,11378 8374,11479
 #: last_checked: 2010-03-14
 General-Pape-Str.: Baustelle, Fahrbahn Richtung Norden gesperrt	q4::inwork; 7959,7609 7921,7728 7950,7840
@@ -104,7 +104,7 @@ Tiergarten: Parkweg	q1 7663,11946 7570,11855 7223,11897 7073,11798 6778,11742 65
 Tiergarten: Parkweg	q1 7816,12150 7827,12105 7832,12036 7822,11952 7801,11875 7795,11823 7777,11787 7772,11749 7796,11681 7816,11571
 (Bremer Weg - Fasanerieallee): Parkweg	q1 6342,11878 6379,11843 6406,11784 6467,11780 6540,11754
 Parkweg: enge Brücke, Fußweg	q2 14310,9692 14351,9757 14448,9922 14453,9929 14558,10082 14597,10129 14626,10162 14652,10201
-#: last_checked: 2010-03-18
+#: last_checked: 2010-04-23
 #: next_check: 2010-08-01
 #: note: Eröffnung des Hotels im Dezember 2010
 Spittelmarkt: Gehweg, wegen Bauarbeiten eng	q3::inwork 10166,11592 10153,11666 10213,11728
@@ -1818,3 +1818,5 @@ Elstergasse: enge Straße, rechts und links versetzt parkende Autos	q1 -1596,2018
 Wesenberger Ring: enge Straße	q1 13162,3576 13206,3674 13238,3794 13229,3836 13206,3854 13165,3850 13129,3809 13030,3664
 #: by: PS (peter.sch...):
 Schmale Gasse: enge Straße	q1 23883,4328 24055,4348 24075,4417
+#: by: Thomas (theo...)
+Albrechtshofer Weg: enge Straße	q1 -7517,15858 -7642,15840 -7747,15842 -7865,15867 -7975,15904
