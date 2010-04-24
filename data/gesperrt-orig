@@ -180,7 +180,7 @@ Baerwaldstr.	1 10361,9755 10357,9813 10424,9958 10467,10051 10500,10081
 Baerwaldstr.	1 10500,10081 10513,10038 10480,9949 10408,9800 10361,9755
 Dittersbacher Weg	1 7865,3344 7859,3181
 Anzengruberstr.	1 13042,8395 12865,8346 12689,8289
-Nalepastr. am Rundfunkgebäude	2 17076,8443 17042,7748
+Nalepastr. am Rundfunkgebäude	2 17076,8443 17059,8097
 Kirchstr.	1 22196,4847 22234,4789 22243,4710 22284,4653 22312,4593
 Kietzer Str.	1 22312,4593 22358,4521 22396,4464
 Ontarioseestr.	1 18552,10135 18577,10023 18408,10041 18339,10048
@@ -687,6 +687,9 @@ Bösensteinweg	1 9943,1543 9847,1571 9771,1641
 Wesenberger Ring	1 13030,3664 13129,3809 13165,3850 13206,3854 13229,3836 13238,3794 13206,3674 13162,3576
 #: by: Andreas (...hallermann)
 Anna-Mackenroth-Weg	1 3633,2210 3641,2459
+Fuchsbau	1 17590,7828 17651,7973
+Drosselstieg	1 17683,7958 17747,8107
+Blaurackenweg	1 17532,8125 17647,8071 17613,7989
 ######################################################################
 #
 # Potsdam
@@ -1510,8 +1513,8 @@ Brücke über A10: Sperrung vom 15.02.2010 bis 01.10.2010	2:inwork 15337,24593 154
 Wegedornbrücke: Vollsperrung, Neubau	2:inwork 20385,593 20442,564 20510,530
 #: next_check: 2011-03-01
 Rathausbrücke: gesperrt bis März 2011 (Neubau)	2:inwork 10362,12351 10422,12395
-#: last_checked: 2010-03-26 vvv
-#: next_check: 2010-05-01 vvv
+#: last_checked: 2010-04-24 vvv
+#: next_check: 2010-07-01 vvv
 Vicki-Baum-Str.: noch in Bau, gesperrt	2:inwork 15990,10185 15894,10251
 Vicki-Baum-Str.: noch in Bau, gesperrt	2:inwork 15823,10300 15753,10353 15688,10400
 Alice-und-Hella-Hirsch-Ring: noch in Bau, gesperrt	2:inwork 15788,10252 15823,10300
@@ -1524,6 +1527,10 @@ Lina-Morgenstern-Str.: noch in Bau, gesperrt	2:inwork 15716,10303 15753,10353
 Kynaststraße: Abriss und Neubau	2:inwork 14988,11130 14897,10935 14881,10864 14867,10802 14828,10628 14802,10505 14795,10473 14766,10372 14724,10297
 #: last_checked: 2009-09-12
 Brücke im Tiergarten: gesperrt	2:inwork 6406,11784 6467,11780
+#: by: tobias wirnsberger
+#: last_checked: 2010-04-24 (by Matthias Stief)
+#: next_check: 2011-01-01
+Unterführung unter Adlergestell und Bahn: wegen Brückenerneuerung gesperrt	2:inwork 20810,2398 20939,2413
 #
 #: section ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #: section in Brandenburg vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv

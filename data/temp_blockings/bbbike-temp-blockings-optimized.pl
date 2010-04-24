@@ -1884,16 +1884,7 @@ userdel	q3::inwork 9444,11616 9432,11702
          'data' => 'userdel	2::temp 8573,12325 8540,12420
 userdel	2::temp 8595,12066 8600,12165 8538,12245 8214,12205 8089,12190 8055,12186
 userdel	2::temp 8538,12245 8546,12279 8570,12302
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'source_id' => 'IM_015565',
-         'until' => 1272132000,
-         'text' => 'Ziegelstr. (Mitte): Veranstaltung, Straße vollständig gesperrt, 21.04.2010 08:00 Uhr bis 24.04.2010 20:00 Uhr ',
-         'from' => 1271743200,
-         'id' => 2060,
-         'data' => 'userdel	2::temp 9259,13050 9413,13071 9553,13079
+userdel	2::temp 8538,12245 8610,12254
 ',
          'type' => 'gesperrt'
        }

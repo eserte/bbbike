@@ -4858,7 +4858,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'INKO_64281_COPY_1',
        data  => <<EOF,
-userdel	2 20692,3951 20834,4035 21053,4162 21137,4221 21174,4250 21182,4336 21206,4387 21332,4655
+userdel	2 20692,3951 20772,3999 20788,4008 20834,4035 21053,4162 21137,4221 21174,4250 21182,4336 21206,4387 21332,4655
 EOF
      },
      { from  => 1151101431, # 2006-06-24 00:23
@@ -12671,12 +12671,10 @@ userdel	2::inwork 15301,53802 15886,54280 17031,55218 17658,55401 17733,55423
 EOF
      },
      { from  => undef, # 
-       until => Time::Local::timelocal(reverse(2009-1900,12-1,31,23,59,59)), # XXX schätzungsweise ein Jahr gesperrt
+       until => 1272120180, # -> überführt nach gesperrt-orig
        text  => 'Unterführung unter Adlergestell und Bahn wegen Brückenerneuerung gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
-#: by: tobias wirnsberger
-#: last_checked: 2009-05-31 (http://www.baustellen-doku.info/projekte/goerlitzer-bahn_berlin_baumschulenweg_schoeneweide_adlershof_s-bahn/20090531/baustellen-bild-44.html)
 userdel	2::inwork 20810,2398 20939,2413
 EOF
      },
@@ -17502,6 +17500,7 @@ EOF
 userdel	2::temp 8573,12325 8540,12420
 userdel	2::temp 8595,12066 8600,12165 8538,12245 8214,12205 8089,12190 8055,12186
 userdel	2::temp 8538,12245 8546,12279 8570,12302
+userdel	2::temp 8538,12245 8610,12254
 EOF
      },
      { from  => 1271743200, # 2010-04-20 08:00

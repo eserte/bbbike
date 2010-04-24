@@ -160,16 +160,21 @@ Wohngebiet Carlsgarten: Sind schon weitere Straßen gebaut (z.B. Johanna-Hofer-St
 Mauerweg: evtl. existiert hier bereits ein geschotterter Radweg parallel zur Straße	? -8799,3778 -9064,3667 -9156,3451 -9399,3297 -9530,3165 -9999,2615 -10105,2458
 #: last_checked: 2009-12-29
 Pyramidenring/Rhinstr.: Ampel in Bau	?::inwork 18166,14277
+#
 #: last_checked: 2010-03-23
+#: next_check: 2010-10-01
 #: XXX Eintrag in Berlin.coords.data fehlt: PLZ=10117
 #: XXX genaue Lage?
 Prinzengasse: existiert sie schon, wenn ja: wie ist die Qualität?	?::inwork 9952,12292 10029,12313
 #: last_checked: 2010-03-23 vvv
+#: next_check: 2010-10-01 vvv
 #: XXX Eintrag in Berlin.coords.data fehlt: PLZ=10117
 Falkoniergasse: Qualität?	?::inwork 9945,12180 9915,12259
 #: XXX Eintrag in Berlin.coords.data fehlt: PLZ=10117
 Werdersche Rosenstr.: Qualität?	?::inwork 9915,12259 9941,12268
+#: next_check ^^^
 #: last_checked ^^^
+#
 #: next_check: 2010-05-01
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/presse/archiv/20091119.1240.146739.html
 Baumaßnahmen in der Parkanlage am Schlachtensee, teilweise ist der Uferweg gesperrt (bis zum Frühjahr 2010): danach hat der Weg eine neue wassergebundene Decke	?::inwork -2521,3637 -2396,3666 -2174,3718 -2014,3826 -1980,3872 -1974,3933 -1996,4063 -1944,4140 -1706,3971 -1624,3956 -1558,3965 -1468,3995 -1380,4108
@@ -293,8 +298,8 @@ Segelfliegerdamm (Zernsdorf - Niederlehme): in Planung/Bau	?::inwork 29192,-1063
 # Scheint nicht zu passieren; außerdem ist wahrscheinlich die Verbindung zur Westtangente gemeint: Verlängerung des Tempelhofer Weges: wird zugemacht (2006-03-01)	? 7073,8081 7139,8079 7268,8008
 #: by: berliner-stadtplan.com
 #: by: http://www.berlinonline.de/berliner-kurier/archiv/.bin/dump.fcgi/2005/1110/berlin/0033/index.html
-#: next_check: 2009-08-01
-Grenzweg: Brücke über die Spree bzw. Straßenverbindung zwischen Rummelsburger Landstraße und Schnellerstr. soll 2009 fertig werden	?::inwork 17082,7189 16954,7096
+#: next_check: 2013-01-01
+Grenzweg: geplante Brücke über die Spree bzw. Straßenverbindung zwischen Rummelsburger Landstraße und Schnellerstr.	?::projected 17082,7189 16954,7096
 # XXX del laut http://www.berlin.lsvd.de/cms/index.php?option=com_content&task=view&id=184&Itemid=175 nicht mehr in Planung, keine weiteren Treffer im Web! Magnus-Hirschfeld-Steg: laut Tsp geplant	? 7360,12430 7437,12368
 # XXX del Gramzow: nach Abschluss der Bauarbeiten kein Kopfsteinpflaster mehr?	? 50109,89725 49930,89857
 # XXX del next_check: 2005-11-30 Großziethen: Kopfsteinpflaster nur Richtung Süden, nach den Arbeiten kein Kopfsteinpflaster mehr?	?; 12984,1011 13124,216 13165,-34 13176,-161 13225,-681 13230,-712 13309,-1268
@@ -464,8 +469,9 @@ Ditfurter Str.: guter Asphalt, Q0	? 13887,21714 13950,21935
 Mühlenbecker Damm (Basdorf): guter Asphalt, Q0	? 11985,34691 11951,34673 11940,34622 11815,34165 11693,33578 11620,33302
 #: by: Hartmut Swolensky:
 Tulpenstr. (Basdorf): mäßiger fester Sandweg, Q2	? 12621,33862 12871,33921
-#: by: anonymous:
-Am Lückefeld (Mahlow): Asphalt, Radweg	? 13267,-4926 13049,-4788 12977,-4783 12841,-4989 12680,-5230 12782,-5284 12837,-5273 13194,-5021 13267,-4926
+#: by: mopedfahrerrr:
+#: confirmed_by: anonymous:
+Am Lückefeld (Mahlow): guter Asphalt, Radweg	? 13267,-4926 13049,-4788 12977,-4783 12841,-4989 12680,-5230 12782,-5284 12837,-5273 13194,-5021 13267,-4926
 #: by: anonymous:
 Straße 41 (Müggelheim): fester Sandweg, Q2	? 30265,2382 30320,2472 30317,2536 30338,2552 30444,2738 30469,2742 30504,2798 30593,2748 30541,2664
 #: by: Aniko Timar:
@@ -593,7 +599,6 @@ Schenkenberg - Dauer: Qualität (zumindest in Schenkenberg noch asphaltiert)?	? 4
 Dauer - Tornow: Qualität?	? 44745,108948 45265,108797 46428,109624 46174,110110 45766,110618 46075,110850 46272,110976 46317,111103 46685,111038 47335,110888
 Ortsteil Eichwerder? (laut S-Bahn-Wanderheft)	? 20625,28887
 Sputendorfer Str.: laut http://home.arcor.de/hoge-online/std_tlw/std_tlw00.htm sieht die Straße gut aus, wie sieht es weiter südlich Richtung Sputendorf aus?	? -2049,-2165 -1853,-2412 -1834,-3968 -1812,-4210
-Müllerstr. (Spandau): Qualität?	? -3216,15155 -3138,15259
 Kirchhofstr.: Qualität?	? -3034,15217 -3138,15259 -3235,15307 -3295,15356
 Kirchhofstr. - Schönwalder Str. (am Koeltzepark): Existiert eine Durchfahrt für Radfahrer? Qualität?	? -3295,15356 -3359,15426
 Lasiuszeile: Qualität?	? -3260,15550 -3293,15481
@@ -851,8 +856,6 @@ Petershagen - Penkun: Qualität (möglicherweise Platten- und/oder unbefestigter F
 Petershagen - Penkun: Qualität?	? 65112,98837 65149,99482
 Petershagen - Schönfeld: Qualität?	? 66328,94287 66438,94341 66703,94518 67038,94677 67087,94741 67132,94835 67193,94859 67379,94926 67928,95210 68674,95847 68729,95981 68735,96087 68750,96276 68735,96398 68756,96471 69031,96974 69049,97087 69003,97550 68964,97629 68954,97815
 Luckow - Penkun: Qualität?	? 63948,94326 64062,94762 64262,96387 65112,98837
-#: last_checked: 2009-08-08
-Laut "Berliner Umland" verläuft die R1 hier entlang, aber es gibt (noch) keine Ausschilderung	? 17527,7812 17590,7828 17678,7850 17775,7874 17987,7973 18287,7815 18325,7778 18409,7776
 #: XXX Genaue Wegführung?
 Eberswalde - Spechthausen: Qualität? Straßennamen?	? 35362,48503 35312,48225 35485,48132 35428,47961
 #: XXX Genaue Wegführung?
@@ -1933,7 +1936,6 @@ Gurlittstr.: Qualität?	? 7213,5062 6949,5096
 #: XXX: osm meint cycleway, foot=yes, keine Überquerungsmöglichkeit
 Kottesteig: Qualität? Für Autofahrer gesperrt? Kann der Munsterdamm in Höhe Kottesteig überquert werden?	? 6868,5262 6806,5230 6767,5233
 Doldenweg: Qualität? Für Autofahrer gesperrt?	? 7424,4821 7487,4802
-Elbeweg: Qualität? Für Autofahrer gesperrt?	? 17211,7265 17135,7223 17061,7323 16949,7484 16934,7570 16902,7652 16869,7713
 Neckarsulmer Str.: Qualität?	? 7482,4416 7533,4293 7537,4257 7589,4147
 Rottweiler Str.: Qualität?	? 7368,4342 7487,4104
 #: XXX renepost@... meint Q2 ohne weitere Angaben und enge Straße q4!
@@ -2249,6 +2251,7 @@ Melker Str.: Qualität? Zufahrt zum Dahlemer Weg für Radfahrer möglich?	? 1616,15
 Türksteinweg: Qualität? Existiert ein direkter Zugang zum Heinrich-Laehr-Park?	? 1181,1169 1321,1199 1359,1204
 Türksteinweg: Qualität?	? 1321,1199 1274,1376 1198,1662
 Im Gartenheim: Qualität?	? 5707,4777 5690,4744 5659,4761 5677,4794
+#: XXX zweifelhafter Eintrag von anonymous: fester Sandweg, Q2
 Unter den Rüstern: Qualität?	? 6266,4361 6174,4434 6100,4495
 Ahornweg (Wartenberg): Qualität?	? 18879,18954 18947,19168 19019,19396 19070,19572
 Hauptweg (Wartenberg): Qualität?	? 18737,18380 18761,18480 18923,18941 18997,19157 19066,19380 19125,19557
@@ -2743,13 +2746,7 @@ Seddinpromenade: Qualität?	? 28856,-2813 28734,-2838 28678,-2814 28596,-2844 285
 Seddinhütte: Qualität?	? 27891,-2988 27901,-2972
 Hochwaldsteig: Qualität	? -4741,7003 -4995,7042 -5050,7058 -5127,7090 -5163,7090
 Im Eulengrund: Qualität?	? -5336,6834 -5202,7045 -5163,7090 -5014,7295
-Am Kiefernhang: Qualität?	? -5189,6890 -5137,6960 -5090,7005 -5050,7058 -4982,7164 -4927,7248
-Havelmatensteig: Qualität?	? -4969,7272 -4907,7372 -4824,7535
-Krielower Weg: Qualität?	? -4610,7213 -4606,7279 -4623,7335 -4640,7493
 Karlsbergallee: Qualität?	? -4806,6901 -4787,6927 -4741,7003 -4674,7094
-Marquardter Weg: Qualität?	? -5279,7113 -5218,7070 -5202,7045
-Uetzer Steig: Qualität?	? -4907,7372 -4720,7345 -4663,7335 -4623,7335
-Besingweg: Qualität?	? -4982,7164 -4680,7114 -4674,7094
 Alt-Gatow: Qualität der Abzweigung Am Wiesenhaus?	? -4578,8336 -4509,8385 -4494,8411 -4504,8457 -4540,8535
 Am Wiesenhaus: Qualität?	? -4509,8385 -4383,8380
 Weiter Blick: Qualität?	? -4680,8340 -5093,8398 -5266,8424
@@ -5358,3 +5355,7 @@ Im Schönower Park: Qualität?	? 959,2304 959,2349 956,2395
 Elbestr. (Teltow): Qualität?	? 348,-743 347,-784 288,-1040 213,-1180 145,-1262 109,-1291 4,-1363 -173,-1397 -248,-1400
 #: XXX NN, laut Clemens Bley für Radfahrer offen
 Rue Georges Vallerey - Allée Pierre de Coubertin: Qualität?	? 4650,21466 4634,21457 4589,21525
+#: XXX laut Juliane (alberts) mit "Stufen für den Wasserablauf"
+Havel-Ufer - Kladower Damm: Qualität? Nachts beleuchtet?	? -4511,7503 -4638,7521 -4696,7530 -4729,7518 -4758,7533 -4824,7535 -4897,7555 -4967,7567
+#: XXX laut Juliane (alberts) der westliche Abschnitt "Trampelpfad", der östliche Abschnitt mit Nadelöhr, Qualität ist "mittel"
+Gatower Str. - Havel-Ufer: Qualität? Nachts beleuchtet?	? -4780,9838 -4666,9844 -4622,9839 -4593,9774 -4571,9764
