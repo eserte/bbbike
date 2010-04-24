@@ -650,7 +650,7 @@ winbindist: winbindist-pre
 
 # Debian packages needed for (subparts of) BBBike, loosely
 # categorized:
-DEB_DEVEL=	git-core cvs bison byacc flex g++ apt-show-versions pmake gcc \
+DEB_DEVEL=	git-core bison byacc flex g++ apt-show-versions pmake gcc \
 		libc6-dev libinline-perl strace rsync less make
 DEB_TEST=	libimage-info-perl libwww-mechanize-perl
 DEB_DRAW=	libgd2-xpm libgd2-xpm-dev perlmagick libimager-perl \
