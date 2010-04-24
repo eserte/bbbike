@@ -13,11 +13,18 @@
 #
 
 use strict;
+use FindBin;
+use lib ("$FindBin::RealBin/..", "$FindBin::RealBin/../lib");
+
 use Encode qw(decode);
 use File::Glob qw(bsd_glob);
 use Getopt::Long;
 use MIME::Parser;
 use Safe;
+
+use Karte::Polar;
+use Karte::Standard;
+use PLZ;
 
 my $d;
 my $do_gnus_links = 1;
@@ -36,6 +43,8 @@ print <<EOF;
 #:
 EOF
 
+my $plz = PLZ->new;
+
 for my $f (bsd_glob("$maildir/*")) {
     next if !-f $f;
     print STDERR "$f...\n" if $d;
@@ -47,7 +56,7 @@ for my $f (bsd_glob("$maildir/*")) {
     for my $part ($entity->parts) {
 	my $bodyh = $part->bodyhandle;
 	for my $line ($bodyh->as_lines) {
-	    if ($line =~ /(\$(supplied_coord|supplied_strname|strname|author|encoding).*)/) {
+	    if ($line =~ /(\$(supplied_coord|supplied_strname|strname|author|email|encoding|comment|route).*)/) {
 		my($code, $key) = ($1, $2);
 		my $val = $cpt->reval($code);
 		$data{$key} = $val;
@@ -55,16 +64,39 @@ for my $f (bsd_glob("$maildir/*")) {
 	}
 	if ($data{encoding}) {
 	    for my $val (values %data) {
-		$val = decode($data{encoding}, $val);
+		if (Encode::_utf8_off($val)) {
+		    $val = decode($data{encoding}, $val);
+		}
 	    }
 	}
     }
+    my($coord, $name);
     if ($data{supplied_coord}) {
-	my $name = $data{strname} || $data{supplied_strname};
-	my $author = $data{author} || "anonymous";
+	$coord = $data{supplied_coord};
+	$name = $data{strname} || $data{supplied_strname};
+    } elsif ($data{route}) {
+	my($polarcoord) = split /\s+/, $data{route};
+	$coord = join(",", $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard(split /,/, $polarcoord)));
+	$name = $data{comment};
+    } elsif ($data{strname}) {
+	my @res = $plz->look_loop($data{strname},
+				  Agrep => 'default',
+				  LookCompat => 1,
+				 );
+	if (@res) {
+	    $name = $res[0]->[PLZ::LOOK_NAME()];
+	    $coord = $res[0]->[PLZ::LOOK_COORD()];
+	}
+    }
+    my $author = $data{author} || $data{email} || "anonymous";
+    my $link = $do_gnus_links ? "gnus:nnml+private:$group_article" : "file://$f";
+    if ($coord) {
 	s{[\t\n]}{ }g for ($name, $author);
-	my $link = $do_gnus_links ? "gnus:nnml+private:$group_article" : "file://$f";
-	print "$name (by $author) $link\tX $data{supplied_coord}\n";
+	print "$name (by $author) $link\tX $coord\n";
+    } else {
+	my $name = ($data{strname} || $data{supplied_strname} || '???');
+	s{[\t\n]}{ }g for ($name, $author);
+	print "# unknown: strname=$name author=$author $link\n";
     }
 }
 
