@@ -17,6 +17,7 @@ use FindBin;
 use lib ("$FindBin::RealBin/..", "$FindBin::RealBin/../lib");
 
 use Encode qw(decode);
+use File::Basename qw(basename);
 use File::Glob qw(bsd_glob);
 use Getopt::Long;
 use MIME::Parser;
@@ -45,7 +46,7 @@ EOF
 
 my $plz = PLZ->new;
 
-for my $f (bsd_glob("$maildir/*")) {
+for my $f (map { $_->[1] } sort { $a->[0] <=> $b->[0] } map { [basename($_), $_] } bsd_glob("$maildir/*")) {
     next if !-f $f;
     print STDERR "$f...\n" if $d;
     my $entity = $mp->parse_open($f);
