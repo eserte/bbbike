@@ -6465,7 +6465,7 @@ sub generate_plot_functions {
 
 		if ($cat_hin =~ /^F:(.*)$/) { # Fläche, no $cat_rueck handling here
 		    $category = $1;
-		    my($color, $rest) = split(/\|/, $category);
+		    my($color, $rest) = split(/\|/, $category, 2);
 		    my $stipple = ($layer_category_stipple{$abk} && $layer_category_stipple{$abk}{$category}) || $layer_stipple{$abk} || $category_stipple{$category};
 		    if (defined $rest && $rest ne "") {
 			if ($rest =~ $complex_IMG_qr) {
