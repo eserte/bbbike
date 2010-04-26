@@ -567,7 +567,8 @@ Gleimtunnel: Kopfsteinpflaster (noch)	Q2 10122,15647 9917,15613
 Gleimstr: Kopfsteinpflaster (noch)	Q2 9917,15613 9734,15579
 Nordufer: Asphalt	Q0 5618,14981 5937,14824 5991,14832
 Seydlitzstr.: Kopfsteinpflaster	Q2 7655,13539 7419,13416 7295,13346 7263,13331 7131,13261
-Stolzenfelsstr.: schlechter Asphalt	Q1 18722,8582 18787,8540 18949,8437
+Stolzenfelsstr.: Verbundsteinpflaster	Q0- 18722,8582 18787,8540
+Stolzenfelsstr.: schlechter Asphalt	Q1 18787,8540 18949,8437
 Dorfstr.: schlechtes Kopfsteinpflaster	Q3 22484,11270 22516,11418 22496,11474 22469,11627 22313,11688
 Dorfstr.: schlechtes Kopfsteinpflaster	Q3 22260,11742 22313,11688 22496,11474
 Dorfstr.: Kopfsteinpflaster	Q2 22260,11742 22149,11870 22112,11936 22140,11958
@@ -3327,6 +3328,7 @@ Rietzestr.: Asphalt	Q0 12693,15225 12472,15356
 ######################################################################
 #: by: anonymous vvv
 # 
+Trollblumenweg: guter Asphalt	Q0 16041,3718 15860,3838 15647,3977
 Müllerstr. (Spandau): Asphalt	Q0 -3216,15155 -3138,15259
 #: note: enge Straße, aber q0
 Wiesenstr. (Bohnsdorf): mäßiger Beton	Q1- 22795,-1055 22973,-978 23356,-825 23502,-770
@@ -6272,8 +6274,8 @@ Feuerweg: guter Beton	Q0 4873,19879 4858,19707
 #: by: Bernhard Eggert:
 Isenburger Weg: guter Beton	Q0 -7978,14419 -7952,14632 -7940,14690 -7908,14955 -7867,15185 -7819,15342
 #: by: Felix (Hartung):
-#: add_fragezeichen: Genaue Fahrbahnbeschaffenheit der Güntherstr. (Asphalt, Beton, Kopfsteinpflaster ...)?
-Güntherstr.: mäßiger Belag	Q2 17976,8106 17913,8243 17774,8342
+#: corrected_by: srt (mäßiger Belag -> schlechtes Kopfsteinpflaster)
+Güntherstr.: schlechtes Kopfsteinpflaster	Q3 17976,8106 17913,8243 17774,8342
 #: by: Jörg (studi):
 #: corrected_by: srt (schlechtes Kopfsteinpflaster, Q3 -> kleinteiliges Kopfsteinpflaster, Q2+)
 Merler Weg: kleinteiliges Kopfsteinpflaster	Q2+ 19180,13219 18852,13269
@@ -8629,8 +8631,10 @@ Klemkepark - Kopenhagener Str./Freiheitsweg: wassergebundene Decke	Q1 7574,18874
 #: by: Ilka vvv
 #: note: erlaubte Höchstgeschwindigkeit 10 km/h
 #: confirmed_by: Christian Marwitz meint "Unebener Weg mit teilweise Schienen und Betonflächen... Bodenmängel":
+#: corrected_by: srt: (Q3 -> Q2+, kein Kopfsteinpflaster)
+Hönower Wiesenweg: Beton mit alten Bahngleisen	Q2+ 17308,9090 17335,8971 17375,8847 17416,8767 17483,8644 17554,8458 17624,8353
 #: corrected_by: srt: (Q3 -> Q2)
-Hönower Wiesenweg: Kopfsteinpflaster und Beton mit alten Bahngleisen	Q2 17308,9090 17335,8971 17375,8847 17416,8767 17483,8644 17554,8458 17624,8353 17708,8316 17751,8284
+Hönower Wiesenweg: Kopfsteinpflaster und Beton mit alten Bahngleisen	Q2 17624,8353 17708,8316 17751,8284
 #: corrected_by: srt: (Q3 -> Q2)
 Hönower Wiesenweg: Kopfsteinpflaster und Sandweg mit Schlaglöchern	Q2 17751,8284 17803,8203 17852,8155
 #: by: ^^^
@@ -10270,6 +10274,8 @@ Welsumerpfad: Mischung aus Kopfsteinpflaster, unbefestigter Straße und Schlaglöc
 #: confirmed_by: Claudia Schulz ("neu gemacht" -> "Asphalt", Rw6)
 Straße 199 (Rudow): Asphalt	Q0 15565,379 15667,199 15783,72
 #: by: ^^^
+#: by: Micha (mueller):
+Freudstr.: guter Asphalt	Q0 -7003,16188 -6990,16321 -6982,16403 -6980,16452 -7037,16469
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206

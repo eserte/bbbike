@@ -538,7 +538,8 @@ Gleimtunnel: Kopfsteinpflaster (noch)	Q2 10122,15647 9917,15613
 Gleimstr: Kopfsteinpflaster (noch)	Q2 9917,15613 9734,15579
 Nordufer: Asphalt	Q0 5618,14981 5937,14824 5991,14832
 Seydlitzstr.: Kopfsteinpflaster	Q2 7655,13539 7419,13416 7295,13346 7263,13331 7131,13261
-Stolzenfelsstr.: schlechter Asphalt	Q1 18722,8582 18787,8540 18949,8437
+Stolzenfelsstr.: Verbundsteinpflaster	Q0 18722,8582 18787,8540
+Stolzenfelsstr.: schlechter Asphalt	Q1 18787,8540 18949,8437
 Dorfstr.: schlechtes Kopfsteinpflaster	Q3 22484,11270 22516,11418 22496,11474 22469,11627 22313,11688
 Dorfstr.: schlechtes Kopfsteinpflaster	Q3 22260,11742 22313,11688 22496,11474
 Dorfstr.: Kopfsteinpflaster	Q2 22260,11742 22149,11870 22112,11936 22140,11958
@@ -2987,6 +2988,7 @@ An der Spreeschanze: asphaltiert	Q0 -2623,14396 -2600,14436 -2597,14532
 Zitadelle: Kopfsteinpflaster	Q2 -2646,14525 -2652,14559 -2656,14582 -2668,14635 -2682,14681 -2688,14703 -2704,14748 -2735,14848 -2622,14876 -2591,14783 -2704,14748
 Behnitz: Kopfsteinpflaster	Q2 -2951,14617 -2993,14568 -3014,14559
 Rietzestr.: Asphalt	Q0 12693,15225 12472,15356
+Trollblumenweg: guter Asphalt	Q0 16041,3718 15860,3838 15647,3977
 Müllerstr. (Spandau): Asphalt	Q0 -3216,15155 -3138,15259
 Wiesenstr. (Bohnsdorf): mäßiger Beton	Q1 22795,-1055 22973,-978 23356,-825 23502,-770
 Grünefelder Str.: guter Asphalt	Q0 -4879,16718 -4875,16928 -4871,17197
@@ -4694,7 +4696,7 @@ Nietheweg: guter Beton	Q0 4750,19881 4873,19879 4920,19928
 Rotbuchenweg: guter Beton	Q0 4611,19769 4753,19728 4858,19707 4904,19690
 Feuerweg: guter Beton	Q0 4873,19879 4858,19707
 Isenburger Weg: guter Beton	Q0 -7978,14419 -7952,14632 -7940,14690 -7908,14955 -7867,15185 -7819,15342
-Güntherstr.: mäßiger Belag	Q2 17976,8106 17913,8243 17774,8342
+Güntherstr.: schlechtes Kopfsteinpflaster	Q3 17976,8106 17913,8243 17774,8342
 Merler Weg: kleinteiliges Kopfsteinpflaster	Q2 19180,13219 18852,13269
 Hugo-Heimann-Str.: guter Asphalt	Q0 14120,1991 14165,2106 14229,2177 14453,2087 14587,2032
 Klutstr.: mäßiges Kopfsteinpflaster	Q2 26057,5553 25757,5536
@@ -5903,7 +5905,8 @@ Noéweg: schlechte Schwarzdecke, Loch an Lock	Q3 11108,22445 10994,22289
 Königsteinstr. (Blankenburg): asphaltiert	Q0 13395,22365 13476,22345 13541,22300 13613,22250 13695,22210 13795,22131
 Kolonie Dreieck - Klemkepark: wassergebundene Decke	Q1 8260,18765 8188,18819 8101,18846 7988,18861 7850,18881 7794,18881 7793,18894 7710,18902 7621,18894 7574,18874
 Klemkepark - Kopenhagener Str./Freiheitsweg: wassergebundene Decke	Q1 7574,18874 7576,18837 7480,18828 7394,18820 7332,18818 7313,18781 7248,18793
-Hönower Wiesenweg: Kopfsteinpflaster und Beton mit alten Bahngleisen	Q2 17308,9090 17335,8971 17375,8847 17416,8767 17483,8644 17554,8458 17624,8353 17708,8316 17751,8284
+Hönower Wiesenweg: Beton mit alten Bahngleisen	Q2 17308,9090 17335,8971 17375,8847 17416,8767 17483,8644 17554,8458 17624,8353
+Hönower Wiesenweg: Kopfsteinpflaster und Beton mit alten Bahngleisen	Q2 17624,8353 17708,8316 17751,8284
 Hönower Wiesenweg: Kopfsteinpflaster und Sandweg mit Schlaglöchern	Q2 17751,8284 17803,8203 17852,8155
 Frank-Zappa-Str.: guter Beton	Q0 18598,14575 18896,14649 18868,14745 18938,14768
 Birkhuhnweg: Asphalt	Q0 15150,3470 15042,3527 14991,3547 14911,3568 14854,3587 14811,3597 14761,3580
@@ -6645,6 +6648,7 @@ Anna-Mackenroth-Weg: Verbundsteinpflaster	Q1 3641,2459 3633,2210
 Doevelweg: guter Beton	Q0 13241,1113 13197,1247 13190,1355
 Welsumerpfad: Mischung aus Kopfsteinpflaster, unbefestigter Straße und Schlaglöchern	Q2 15995,328 15927,245 15860,156 15783,72 15707,-6 15615,-92
 Straße 199 (Rudow): Asphalt	Q0 15565,379 15667,199 15783,72
+Freudstr.: guter Asphalt	Q0 -7003,16188 -6990,16321 -6982,16403 -6980,16452 -7037,16469
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206
 Richard-Ermisch-Str.: Asphalt	Q0 14250,13281 14224,13206 14207,13152 14177,13065 14163,13025 14130,12926 14096,12827
 Zum Langen Jammer: Kopfsteipflaster, Gehweg besser	Q2 14686,12873 14405,12953
