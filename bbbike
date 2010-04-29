@@ -17442,7 +17442,11 @@ sub add_custom_layers_to_net {
 	if ($val) { # XXX del? && $abk =~ /^L\d/) {
 	    eval {
 		if (!$str_obj{$abk}) {
-		    $str_obj{$abk} = new Strassen $str_file{$abk};
+		    my $s = Strassen->new($str_file{$abk});
+		    if ($abk eq 'fz') {
+			$s = $s->grepstreets(sub { $_->[Strassen::CAT] !~ m{(?:projected|inwork)} });
+		    }
+		    $str_obj{$abk} = $s;
 		}
 		push @$net_source, $str_obj{$abk};
 		push @$net_source_abk, $abk;
