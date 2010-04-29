@@ -173,7 +173,8 @@ EOF
 		is($agent->ct, "image/png", "It's a png (from $testname)")
 		    or diag "Tried to upload $filename";
 		my $content = $agent->content;
-		cmp_ok($content, "ne", "", "Non-empty content");
+		cmp_ok($content, "ne", "", "Non-empty content")
+		    or diag "Error for uploaded file $filename";
 		if ($do_display) {
 		    do_display(\$content, "png");
 		}
@@ -191,7 +192,8 @@ EOF
 		
 		is($agent->ct, "application/pdf", "It's a pdf (from $testname)");
 		my $content = $agent->content;
-		cmp_ok($content, "ne", "", "Non-empty content");
+		cmp_ok($content, "ne", "", "Non-empty content")
+		    or diag "Error for uploaded file $filename";
 		if ($do_display) {
 		    do_display(\$content, "pdf");
 		}
