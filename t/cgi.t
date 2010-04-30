@@ -85,7 +85,7 @@ if (!@urls) {
 }
 
 my $ortsuche_tests = 11;
-plan tests => (187 + $ortsuche_tests) * scalar @urls;
+plan tests => (189 + $ortsuche_tests) * scalar @urls;
 
 my $hdrs;
 if (defined &Compress::Zlib::memGunzip && $do_accept_gzip) {
@@ -692,6 +692,33 @@ for my $cgiurl (@urls) {
 	like($content, qr{\QThomas-Müntzer-Damm (Kleinmachnow)/Warthestr. (Teltow)\E}, "No simplification possible between different places");
     }
 
+    XXX: 
+    {   # The "Müller Breslau"-Bug (from the Berlin PM wiki page)
+	#
+	# The problem may happen with a bbbike.cgi link with just
+	# "zielname" set to an inexact street name. If the user now
+	# enters the start street, then under some circumstances the
+	# crossing chooser is not presented for the start street
+	#
+	# More specifically, this happens because bbbike.cgi
+	# determines that there's zielname without zielc (which
+	# usually should not happen) and decides to restart to
+	# choose_form(). Here finding a start street with multiple
+	# zips (e.g. for "Invalidenstr") failed, because the
+	# comma-separated zips were not properly split up into an
+	# array ref for PLZ.pm
+
+	$req = HTTP::Request->new
+	    ('GET', "$action?" . CGI->new({ start => "invalidenstr",
+					    zielname => "müller-breslau-str",
+					  })->query_string);
+	$res = $ua->request($req);
+	ok($res->is_success, "The Mueller-Breslau request")
+	    or diag(Dumper($res));
+	$content = uncompr($res);
+	like($content, qr{Invalidenstr\..*Ecke.*Müller-Breslau-Str\..*Ecke}s, "'Ecke' for both crossings");
+    }
+
 #     {
 # 	# fragezeichen streets not in crossing
 # 	$req = HTTP::Request->new
@@ -749,7 +776,6 @@ for my $cgiurl (@urls) {
 	BBBikeTest::like_long_data($resp->content, qr{Genaue Kreuzung angeben});
     }
 
-    XXX: 
     {
 	if ($CGI::VERSION == 3.33) {
 	    # but see below for other bad CGI versions...

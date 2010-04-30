@@ -741,7 +741,7 @@ $require_Karte = sub {
     undef $require_Karte;
 };
 
-$VERSION = 10.002;
+$VERSION = 10.003;
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -1595,7 +1595,7 @@ sub choose_form {
 
 	    my @extra;
 	    if ($$zipref ne '') {
-		push @extra, Citypart => $$zipref;
+		push @extra, Citypart => [ split /\s*,\s*/, $$zipref ];
 	    }
 	    next if $$oneref =~ /^\s*$/;
 	    $$oneref = PLZ::norm_street($$oneref);
@@ -2621,12 +2621,17 @@ sub get_kreuzung {
     if ((!defined $start and !defined $start_c) ||
 	(!defined $ziel  and !defined $ziel_c)) {
 	local $^W = 0;
-	if (!defined $start and !defined $start_c) {
-	    warn "Fehler: Start <$start_str/position $start> kann nicht zugeordnet werden.\n";
-	}
-	if (!defined $ziel and !defined $ziel_c) {
-	    warn "Fehler: Ziel <$ziel_str/position $ziel> kann nicht zugeordnet werden.\n";
-	}
+	## In the past, I emitted a warning if this happen. But
+	## it seems that there are half-legal use cases, like specifying
+	## a link with just a zielname, so don't warn anymore
+	##
+	#if (!defined $start and !defined $start_c) {
+	#    warn "Fehler: Start <$start_str/position $start> kann nicht zugeordnet werden.\n";
+	#}
+	#if (!defined $ziel and !defined $ziel_c) {
+	#    warn "Fehler: Ziel <$ziel_str/position $ziel> kann nicht zugeordnet werden.\n";
+	#}
+
 	# Mostly this error comes from mistyped user input, so try to do
 	# the best and redirect to the start page:
 	$q->param('start', $start_str);
