@@ -19,7 +19,7 @@ Fahrbahn der Mauerstr. wegen Bauarbeiten gesperrt	q4::inwork 9405,11413 9331,114
 Hauptstr. (Friedrichshain-Kreuzberg): Baustelle, Radfahrer kˆnnen langsam passieren	q3::inwork 14906,10820 14794,10844 14717,10855
 #: last_checked: 2010-04-23
 Varian-Fry-Str.: Baustelle, Fahrbahn gesperrt	q4::inwork 8389,11378 8374,11479
-#: last_checked: 2010-03-14
+#: last_checked: 2010-04-29
 General-Pape-Str.: Baustelle, Fahrbahn Richtung Norden gesperrt	q4::inwork; 7959,7609 7921,7728 7950,7840
 #: last_checked: 2010-04-19
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraﬂe Richtung S¸den	q4::inwork; 9475,12365 9462,12481 9454,12558
@@ -34,6 +34,9 @@ Matkowskystr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 14530,11137 14509,11060
 Varziner Str.: Bauarbeiten, Einbahnstraﬂenregelung zwischen Bundesallee und Varziner Platz (offen Richtung S¸dwestkorso)	q4::inwork; 5458,7866 5356,7862
 Varziner Platz: Bauarbeiten, es muss geschoben werden	q4::inwork 5458,7866 5492,7868 5517,7869
 #: next_check ^^^
+#: last_checked: 2010-04-29
+#: next_check: 2011-01-01
+Rathausstr.: Baustelle vor dem Roten Rathaus, eng	q3::inwork 10601,12521 10704,12595
 #: by: ^^^
 # 
 #: temporary ^^^
@@ -651,6 +654,7 @@ Seidenbienenweg: sehr eng	q4 31914,2767 31909,2802 31884,2841
 Hortensienplatz: einige Fuﬂg‰nger, Bordsteine	q3 4156,4784 4121,4841 4116,4850
 (Lustgarten entlang des Spreekanals): Fuﬂg‰nger	q2 10063,12438 9956,12617 9948,12631
 Blaurackenweg: enge Straﬂe, spielende Kinder	q1 17613,7989 17647,8071 17532,8125
+Adolf-Scheidt-Platz: enge Straﬂe, Gegenverkehr	q2; 8731,8050 8765,8050 8783,8020 8769,7994 8731,7990
 ######################### User Contributions #################################
 #: by: Michael Kiekbusch
 #: corrected_by: srt/policy (q4 -> q3-)
@@ -1779,7 +1783,7 @@ Nidwaldener Zeile: enge Straﬂe	q1 3581,2211 3581,2105
 #: note: nachts "q4" wegen fehlender Beleuchtung und B‰umen
 (Marthastr. - Dietzgenstr.): einige B‰ume auf dem Weg	q1 10383,19911 10167,19797
 #: by: birgit (...knabe)
-Lindenfelser Weg: Fuﬂg‰nger, Bordsteinkanten am Hirschhorner Weg	q1 -963,4869 -857,4725 -753,4578 -690,4519 -649,4484 -638,4413 -595,4385 -548,4326 -420,4159
+Lindenfelser Weg: Fuﬂg‰nger, Bordsteinkanten am Hirschhorner Weg	q1 -963,4869 -857,4725 -816,4668 -753,4578 -690,4519 -649,4484 -638,4413 -595,4385 -548,4326 -420,4159
 #: by: anonymous
 Pertisauer Weg: enge Straﬂe	q1 6199,1104 6176,1023 6167,933 6163,822 6186,652
 #: by: Michael Rehfeldt

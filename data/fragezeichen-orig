@@ -133,6 +133,9 @@ Lindenstr. bekommt Radspuren	?::projected 9795,10512 9770,10590 9777,10719 9805,
 #: section ignorieren vvv
 #: section Straßen in Bau und Planung vvv
 # 
+#: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20100427.1545.293579.html
+#: next_check: 2010-12-01
+Treskowallee: Radweg wird gebaut	?::inwork; 18816,9705 18800,9743 18758,9847 18737,9901
 #: note: ehemaliger Flughafen Tempelhof vvv
 #: next_check: 2010-05-08 vvv
 Südliche Startbahn	?::inwork 9461,7190 9509,7195 9677,7206 11359,7307 11518,7314 11570,7315
@@ -280,7 +283,7 @@ Ahrensfelder Chaussee: Radstreifen in Bau, bis 2008-10	? 20160,18301 20460,18420
 #: by: http://www.morgenpost.de/content/2006/09/20/bezirke/855150.html
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20060915.1800.47562.html
 #: XXX Name der Straße? Der Pharus-Verlag meint "Wilhelm-Kabus-Str."; hier auch erwähnt: http://spdnet.sozi.info/berlin/thf-schoeneberg/fraktempschoen/dl/aktinfo0706.pdf und http://www.spd-fraktion-tempelhof-schoeneberg.de/index.php?seite=522&s=1&menu=1
-#: last_checked: 2010-04-18 (Asphaltierung an der Naumannstr. fehlt)
+#: last_checked: 2010-04-29 (Asphaltierung an der Naumannstr. fehlt)
 #: next_check: 2010-06-01
 Wilhelm-Kabus-Str.: neue Straße wird gebaut, die Naumannstr. wird später verkehrsberuhigt	?::projected 7716,8048 7844,8049 7861,8217 7893,8327 7942,8380 8078,8772
 #: next_check: 2010-12-31
@@ -3941,7 +3944,6 @@ Sternblütenweg: Qualität?	? 21596,481 21617,387
 Westerwaldstr.: Qualität?	? -5039,15618 -5023,15688 -5000,15769 -5010,15787 -5056,15800 -5066,15820 -5036,15923 -5019,15970 -4951,16116
 #: XXX_osm: bei osm evtl. falsch geschrieben (Bürstedter statt Bürstadter)
 Bürstadter Weg: Qualität? Ist die Straße eine Spielstraße? Ist die Straße (teilweise) eine Einbahnstraße? Wenn ja, nur für Autofahrer oder auch für Radfahrer?	? -760,4542 -847,4553 -862,4542
-Alsbacher Weg: Qualität? Ist die Straße eine Spielstraße?	? -847,4553 -824,4635
 #: XXX_osm: bei osm evtl. falsch geschrieben (großes D)
 Von-der-Trenck-Str.: Qualität?	? -3245,1427 -3065,1565
 Barnhelmstr.: Qualität?	? -3192,1343 -2976,1418 -2753,1490 -2698,1509
@@ -4924,7 +4926,6 @@ Parkstr. (Französisch Buchholz): Qualität?	? 12630,22277 12488,22305 12393,22332
 #: XXX_osm bei osm als "Guyotstr" bezeichnet
 Henrionweg: Qualität? Für Radfahrer befahrbar?	? 11095,21768 11153,21753 11145,21698
 Chantieweg: Qualität?	? 11425,21650 11408,21537
-Straße 30 (Französisch Buchholz): Qualität?	? 11696,21493 11756,21594
 Le Pavillon-Str.: Qualität?	? 11927,21703 11830,21727 11745,21742
 La Famille-Str.: Qualität?	? 11795,21354 11948,21366 11982,21392
 Le Bonheur-Str.: Qualität?	? 11774,21288 11954,21292 11948,21366

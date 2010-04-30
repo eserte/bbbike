@@ -1846,26 +1846,6 @@ userdel	q3::inwork 9444,11616 9432,11702
          'data' => 'userdel	2::inwork 83070,5097 82765,4636 82314,4413 81301,3881
 ',
          'type' => 'gesperrt'
-       },
-       {
-         'source_id' => 'IM_015553',
-         'until' => 1272472200,
-         'text' => 'Birkbuschstr. (Steglitz): Straße vollständig gesperrt, Fahrbahnschäden in beiden Richtungen zwischen Klingsorstr. und Haydnstr. 20.04.2010 07:14 Uhr bis 28.04.2010 18:30 Uhr ',
-         'from' => 1271654040,
-         'id' => 2057,
-         'data' => 'userdel	q4::inwork 5271,4547 5161,4664 5137,4691 5076,4762
-',
-         'type' => 'handicap'
-       },
-       {
-         'source_id' => 'IM_015575',
-         'until' => 1272472200,
-         'text' => 'Oranienburger Straße (Mitte): Straße vollständig gesperrt, Grund: Wasserrohrbruch, in Richtung Friedrichstr. zwischen Hackescher Markt und Monbijouplatz. 22.04.2010 15:07 Uhr bis 28.04.2010 18:30 Uhr',
-         'from' => 1271855220,
-         'id' => 2058,
-         'data' => 'userdel	q4::inwork 10220,13098 10077,13100 9932,13109
-',
-         'type' => 'handicap'
        }
      
 );

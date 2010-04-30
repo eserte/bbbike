@@ -169,7 +169,8 @@ unklare Ausschilderung, Zeichen 237 ist nur zur Geibelstr. hin gerichtet	RW1; 10
 	RW1; 10775,9686 10558,9763
 unklare Ausschilderung, Zeichen 237 auf halber Strecke ist durchgekreuzt (offiziell oder nicht?)	RW1; 10775,9686 11023,9597
 	RW1; 11023,9597 10775,9686
-	RW2;RW2 11023,9597 11075,9576 11274,9492
+	RW2;RW2 11023,9597 11075,9576
+	RW2;RW1 11075,9576 11274,9492
 vorhandener Radweg ist abgesperrt	RW0; 11274,9492 11509,9392
 unklare Ausschilderung, Zeichen 237 auf halber Strecke ist nur senkrecht zur Fahrtrichtung einsehbar	RW1; 11509,9392 11274,9492
 	RW2;RW1 11509,9392 11775,9234
@@ -741,7 +742,7 @@ Busspur gilt Mo-Fr 7-9 Uhr und 14-18 Uhr	RW5; 6460,8688 6449,8807 6449,8845 6445
 	RW6;RW6 7655,9188 7583,9115
 	RW6;RW6 7491,9061 7320,8939
 	RW1;RW1 7446,8200 7497,8168 7582,8123 7639,8091 7716,8048
-	RW1;RW4? 7717,7879 7717,7759
+	RW2;RW4? 7717,7879 7717,7759
 	RW0;RW1 7713,8600 7716,8356
 	RW0;RW2 7716,8356 7716,8048
 	RW2;RW0 4327,8887 4325,8998 4325,9082 4325,9159 4339,9224 4377,9258
@@ -1022,7 +1023,7 @@ benutzungspflichtiger Radweg auf den letzten Metern	RW0; 11998,8872 11824,8995
 #: confirmed_by: srt
 	RW0;RW1 7959,7609 7979,7525
 	RW1;RW1 7979,7525 7946,7411
-	RW1;RW1 7600,7605 7717,7759
+	RW1;RW2 7600,7605 7717,7759
 	RW1;RW2 8204,6958 8319,7084
 Busspur ist immer gültig; beginnt erst wenige Meter vor der Alboinstr.	RW0; 8447,6964 8319,7084
 #: by: http://www.panoramio.com/photo/12285831 & Luftbild

@@ -150,7 +150,7 @@ Lilienthalstr.: Asphalt	Q0 10675,8940 10653,8831
 Lilienthalstr.: unbefestigte Straße	Q2 10653,8831 10627,8706
 Lilienthalstr.: Asphalt	Q0 10627,8706 10598,8563
 Weichselstr.: mäßiges Kopfsteinpflaster, 15-17 km/h	Q2- 12330,8636 12394,8729 12483,8834 12590,8977 12681,9083 12761,9190 12851,9309 12844,9351
-Treptower Str.: mäßiges Kopfsteinpflaster mit vereinzelten Asphaltflicken, 17 km/h	Q0 13857,8601 14015,8798 14145,8971
+Treptower Str.: Asphalt	Q0 13857,8601 14015,8798 14145,8971
 Pfarrstr.: mäßiges Kopfsteinpflaster	Q2 15279,10862 15359,11115 15458,11306
 Pfarrstr.: sehr guter Asphalt	Q0 15458,11306 15477,11338
 Schulze-Boysen-Str: sehr guter Asphalt	Q0 15477,11338 15498,11380
@@ -250,7 +250,7 @@ Ritterstr.: Kopfsteinpflaster	Q2 10585,10766 10498,10806 10397,10852 10103,10989
 Adalbertstr.: Kopfsteinpflaster, Asphaltstreifen neben den parkenden Autos	Q1; 11656,11106 11726,11265 11807,11479
 Adalbertstr.: Kopfsteinpflaster	Q2; 11807,11479 11726,11265 11656,11106
 Oderstr.: Fahrbahn Kopfsteinpflaster, Radwege nur mäßiges Verbundsteinpflaster	Q2+ 11607,7145 11616,7089 11652,6879
-Friedelstr.: mäßiges, teilweise auch schlechtes Kopfsteinpflaster (max. 16 km/h)	Q2 12066,9558 12047,9429 12074,9217 12078,9065
+Friedelstr.: mäßiges, teilweise auch schlechtes Kopfsteinpflaster (max. 16 km/h)	Q2- 12066,9558 12047,9429 12074,9217 12078,9065
 Friedelstr.: mäßiges Kopfsteinpflaster	Q2 12088,9775 12081,9680 12066,9558
 Naglerstr.: Kopfsteinpflaster und zusätzlich Bodenschwellen	Q2 13575,10963 13496,10763
 Rotherstr.: Kopfsteinpflaster	Q2 14011,10812 13896,10851 13856,10864
@@ -263,7 +263,7 @@ Volkmarstr.: Kopfsteinpflaster	Q2 9661,5224 9690,5255 9955,5376 10230,5498
 Str. 229: Kopfsteinpflaster mit asphaltierten Banketten	Q2 11072,4335 11152,4316 11244,4325
 Reuterstr.: Kopfsteinpflaster	Q2 12148,9209 12146,9384 12148,9426 12150,9545
 Lenaustr.: Kopfsteinpflaster	Q2 12148,9426 12047,9429 11954,9415 11803,9390
-Pflügerstr.: mäßiges, teilweise auch schlechtes Kopfsteinpflaster (max. 16 km/h)	Q2 12480,9394 12333,9470 12316,9477 12150,9545
+Pflügerstr.: mäßiges, teilweise auch schlechtes Kopfsteinpflaster (max. 16 km/h)	Q2- 12480,9394 12333,9470 12316,9477 12150,9545
 Pflügerstr.: Kopfsteinpflaster	Q2 12150,9545 12066,9558 11934,9538 11757,9509
 Liberdastr.: Kopfsteinpflaster	Q2 12150,9545 12207,9632 12250,9691
 Pannierstr.: Kopfsteinpflaster	Q2 12242,8972 12202,8895
@@ -1689,8 +1689,8 @@ Debenzer Str.: Asphalt	Q0 20143,10731 20426,10854 20578,10949
 Wilhelmsbrücker Str.: Asphalt	Q0 20510,11162 20370,11168
 Brachfelder Str.: Asphalt	Q0 20370,11168 20365,11025 20364,10970 20426,10854
 Gladauer Weg: Asphalt	Q0 20351,11473 20346,11337 20342,11250 20370,11168
-Langer Weg: fester Sand, 20 km/h und mehr möglich	Q2 20682,9842 20690,9546
-Langer Weg: Schotter, 20 km/h und mehr möglich	Q2 20690,9546 20688,9444 20686,9297 20681,8963 20677,8695
+Langer Weg: fester Sand, 20 km/h und mehr möglich	Q2+ 20682,9842 20690,9546
+Langer Weg: Schotter, 20 km/h und mehr möglich	Q2+ 20690,9546 20688,9444 20686,9297 20681,8963 20677,8695
 Langer Weg: Asphalt	Q0 20677,8695 20677,8446
 Hadubrandweg: Sandweg	Q2 20573,8444 20677,8446
 Hadubrandweg: Asphalt	Q0 20677,8446 20821,8438 20918,8383
@@ -3201,6 +3201,7 @@ Kirchweg: schlechtes Kopfsteinpflaster, Ausweichen auf Gehweg üblich	Q3 -3030,22
 Hortensienplatz: Gehwegplatten	Q0- 4156,4784 4121,4841 4116,4850
 (Lustgarten entlang des Spreekanals): wassergebundene Decke	Q1 10063,12438 9956,12617 9948,12631
 (Unterführung S-Bhf. Rummelsburg): Beton, Gehwegplatten	Q1 15383,10656 15419,10706 15433,10765
+Werner-Voß-Damm: Asphalt mit Schäden	Q1+ 8263,7611 8378,7623 8465,7699 8512,7757 8553,7795 8642,7876
 ######################### User Contributions #################################
 #: by: Dominik Seelow vvv
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
@@ -3328,6 +3329,7 @@ Rietzestr.: Asphalt	Q0 12693,15225 12472,15356
 ######################################################################
 #: by: anonymous vvv
 # 
+Straße 30 (Französisch Buchholz): Asphalt	Q0 11696,21493 11756,21594
 Korbmacherweg: guter Asphalt	Q0 16352,1226 16375,1313
 Trollblumenweg: guter Asphalt	Q0 16041,3718 15860,3838 15647,3977
 Müllerstr. (Spandau): Asphalt	Q0 -3216,15155 -3138,15259
@@ -10054,7 +10056,7 @@ Boenkestr.: guter Asphalt	Q0 14756,23622 14539,23306 14314,22944 14276,22914 142
 #: note: "enge Straße" ohne Kategorisierung
 Schlawer Str.: Verbundsteinpflaster, teilweise sehr uneben	Q2+ -324,4410 -349,4466 -376,4521 -401,4572 -474,4679 -519,4737
 #: note: der Lindenfelser Weg ist mit Gaslaternen beleuchtet
-Lindenfelser Weg: Parkweg	Q1 -963,4869 -857,4725 -753,4578
+Lindenfelser Weg: Parkweg	Q1 -963,4869 -857,4725 -816,4668 -753,4578
 Lindenfelser Weg: Verbundsteinpflaster	Q1 -753,4578 -690,4519 -649,4484 -638,4413 -595,4385 -548,4326 -420,4159
 #: by: ^^^
 #: by: Frei (simone):
@@ -10281,6 +10283,8 @@ Freudstr.: guter Asphalt	Q0 -7003,16188 -6990,16321 -6982,16403 -6980,16452 -703
 Röbeler Weg: Kopfsteinpflaster	Q2 24831,10711 24826,10597 24759,10507
 #: by: Thomas Kunz:
 Heimgartenstr.: Asphalt	Q0 23537,4238 23657,4255 23880,4280 24107,4309
+#: by: Inga Henkel:
+Alsbacher Weg: guter Beton	Q0- -847,4553 -824,4635
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206
