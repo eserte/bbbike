@@ -10,8 +10,7 @@
 # 
 #: last_checked: 2010-04-19
 Schloßplatz: Behinderungen durch Bauarbeiten möglich	q3::inwork 10170,12261 10063,12438
-#: last_checked: 2009-12-25
-Caroline-Michaelis-Str.: Bauarbeiten, Ausweichen auf Gehweg	q4::inwork 9061,14050 9125,13973
+#XXX del #: last_checked: 2009-12-25 Caroline-Michaelis-Str.: Bauarbeiten, Ausweichen auf Gehweg	q4::inwork 9061,14050 9125,13973
 #: last_checked: 2010-04-23
 Fahrbahn der Mauerstr. wegen Bauarbeiten gesperrt	q4::inwork 9405,11413 9331,11497
 #: last_checked: 2010-02-02
@@ -38,6 +37,8 @@ Varziner Platz: Bauarbeiten, es muss geschoben werden	q4::inwork 5458,7866 5492,
 #: next_check: 2011-01-01
 Rathausstr.: Baustelle vor dem Roten Rathaus, eng	q3::inwork 10601,12521 10704,12595
 #: by: ^^^
+#: last_checked: 2010-04-30
+Jägerstr.: Einbahnstraße	q4::inwork; 9394,11996 9201,11968
 # 
 #: temporary ^^^
 ######################################################################
@@ -655,6 +656,8 @@ Hortensienplatz: einige Fußgänger, Bordsteine	q3 4156,4784 4121,4841 4116,4850
 (Lustgarten entlang des Spreekanals): Fußgänger	q2 10063,12438 9956,12617 9948,12631
 Blaurackenweg: enge Straße, spielende Kinder	q1 17613,7989 17647,8071 17532,8125
 Adolf-Scheidt-Platz: enge Straße, Gegenverkehr	q2; 8731,8050 8765,8050 8783,8020 8769,7994 8731,7990
+Am Britzer Garten - Straße 229: steile Brücke	q3 11103,3960 11104,3981
+Am Britzer Garten - Straße 229: enger Weg; Fußgänger	q2 11104,3981 11111,4055
 ######################### User Contributions #################################
 #: by: Michael Kiekbusch
 #: corrected_by: srt/policy (q4 -> q3-)

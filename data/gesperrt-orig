@@ -259,7 +259,6 @@ Travestr.	1 14835,11840 14897,11801 14977,11754
 Müggelstr.	1 14897,11801 14965,11921
 Schmollerplatz/str.	1 13244,9410 13184,9340 13209,9325
 Isarstr.	1 12349,8464 12368,8356
-#: XXX prüfen: sind überall hier Einbahnstraßen?
 Zionskirchplatz	1 10306,14247 10277,14350 10315,14386 10365,14372 10389,14274
 Ohmstr.	1 11324,11689 11378,11856
 Anton-Saefkow-Str.	1 13186,14397 13084,14472 13013,14523 12901,14594 12874,14608 12782,14676 12723,14714 12520,14833
@@ -346,6 +345,7 @@ Schöppinger Str.	1 3691,566 3648,531 3569,469
 #: by: anonymous:
 Arberstr.	1 19424,9502 19407,9232
 #: by: Frank Ottens:
+#: confirmed_by: srt
 Hanne Nüte	1 13675,4855 13695,4859 13758,4926 13761,4992 13717,5175
 Parchimer Str.	1 22292,12198 22228,12274 22212,12349 22212,12422 22256,12489 22253,12570 22271,12623 22310,12637
 #: by: Sascha (hurdler)
@@ -362,6 +362,7 @@ Spreepark	2 16023,8860 16161,8852
 Staakener Str.	1 -4112,14242 -4390,14257
 Langensteiner Weg	1 7282,4716 7335,4879 7437,4855
 #: by: Susanne Kuby:
+#: confirmed_by: srt
 Lowise-Reuter-Ring	1 13680,4715 13589,4681 13560,4681 13511,4695 13482,4718 13468,4766 13476,4812 13503,4846 13540,4861 13574,4862 13639,4850 13675,4855
 #: by: Gisela Mauer:
 Pfahlerstr.	1 5301,18447 5423,18438 5541,18435
@@ -399,6 +400,7 @@ Halbauer Weg	1 7722,3142 7719,3219 7734,3290 7753,3371
 Amfortasweg	1 5214,4445 5173,4471 5144,4498 5067,4434 5150,4345
 #: by: Jürgen Jacobi:
 Onkel-Bräsig-Str.	1 13324,4784 13305,4504
+#: confirmed_by: srt
 Hüsung	1 13324,4784 13400,4788 13468,4766
 Hüsung	1s 13468,4766 13397,4762 13324,4784
 #: by: Christoph Winkelmann:
@@ -468,8 +470,6 @@ Becherweg	1 6227,18299 6232,18435 6226,18590 6217,18619
 #: by: Oliver Kunze:
 Hirschhorner Weg	1 -760,4542 -753,4578 -741,4660 -793,4754 -820,4772
 Feldspatweg	1 11190,1622 11369,1585 11407,1592
-#: add_fragezeichen: Gilt die Einbahnstraßenregelung auch für Radfahrer oder nur für Autofahrer?
-Liningstr.	1 13574,4862 13534,5111
 #: by: Werner Braun:
 Eisvogelweg	1 528,4747 542,4699 595,4594 635,4524 661,4492 691,4474
 #: by: Katharina Achazi:
@@ -534,6 +534,7 @@ Alt-Wittenau	1 4597,20778 4649,20771 4953,20624 5117,20517 4935,20574 4726,20690
 #: by: Florian (olf-kcots):
 Miningstr.	1 13444,5097 13455,4995 13432,4900 13466,4889 13503,4846
 #: by: Lutz Behrens:
+#: confirmed_by: srt
 Dörchläuchtingstr.	1 13511,4695 13486,4650 13485,4496
 #: by: Stefanie Töpper
 Biesenthaler Str. (Hohenschönhausen)	1 17239,14719 17074,14704 17063,14797
@@ -1121,6 +1122,7 @@ Adlergestell: Mittelstreifen	3nocross 19676,3705 19633,3751 19587,3801
 # Stellen, an denen getragen werden muß:
 # die Zahl hinter dem ":" entspricht ungefähr den verlorenen Sekunden
 # 
+tragen (ca. 17 Stufen)	0:22 13779,4929
 tragen (8 Stufen)	0:15 9956,12617
 tragen (6 Stufen)	0:10 4121,4841
 #: by: Uwe Borgenhagen
@@ -1192,7 +1194,7 @@ tragen (ca. 35 Stufen)	0:30 7621,7105
 tragen (ca. 35 Stufen)	0:30 7655,7096
 #: note: Luftbild (Stufenanzahl)
 tragen (30 Stufen)	0:30 15571,4168
-tragen (steile Treppe)	0:30 15156,6034
+tragen (26 Stufen, steile Treppe)	0:30 15156,6034
 tragen (Treppe)	0:30 4808,3404
 tragen (zwei Treppen, je ca. 10 Stufen)	0:30 8822,16873
 tragen (Treppe)	0:30 14390,5443

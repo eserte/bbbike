@@ -394,7 +394,6 @@ Schulenburgstr. (Reinickendorf)	1 5345,18675 5547,18665
 Becherweg	1 6227,18299 6232,18435 6226,18590 6217,18619
 Hirschhorner Weg	1 -760,4542 -753,4578 -741,4660 -793,4754 -820,4772
 Feldspatweg	1 11190,1622 11369,1585 11407,1592
-Liningstr.	1 13574,4862 13534,5111
 Eisvogelweg	1 528,4747 542,4699 595,4594 635,4524 661,4492 691,4474
 Kreutzerweg	1 4834,4102 4848,4069 4836,4041 4629,3916
 Hornblendeweg	1 10440,1283 10415,1323 10402,1362 10425,1400 10510,1441 10594,1468 10638,1442 10659,1370
@@ -1449,6 +1448,7 @@ Altheider Str. -> Adlergestell: Mittelstreifen	3::igndisp 19871,3600 19812,3561 
 Adlergestell -> Seidenbaustr.: Mittelstreifen	3::igndisp 19812,3561 19857,3514 19966,3596
 Seidenbaustr. -> Adlergestell: Mittelstreifen	3::igndisp 19966,3596 19857,3514 19904,3464
 Mittelstreifen	3nocross::ignrte 19676,3705 19633,3751 19587,3801
+tragen (ca. 17 Stufen)	0:22:-98 13779,4929
 tragen (8 Stufen)	0:15:-210 9956,12617
 tragen (6 Stufen)	0:10:-211 4121,4841
 tragen (ca. 25 Stufen)	0:30:-243 6160,7074
@@ -1500,7 +1500,7 @@ tragen (ca. 10 Stufen)	0:20:-257 -6442,14286
 tragen (ca. 35 Stufen)	0:30:-75 7621,7105
 tragen (ca. 35 Stufen)	0:30:-75 7655,7096
 tragen (30 Stufen)	0:30:-53 15571,4168
-tragen (steile Treppe)	0:30:-213 15156,6034
+tragen (26 Stufen, steile Treppe)	0:30:-213 15156,6034
 tragen (Treppe)	0:30:-117 4808,3404
 tragen (zwei Treppen, je ca. 10 Stufen)	0:30:-246 8822,16873
 tragen (Treppe)	0:30:0 14390,5443

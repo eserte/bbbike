@@ -15885,7 +15885,7 @@ userdel	q4::inwork -62269,19881 -62333,20390
 EOF
      },
      { from  => 1252188000, # 2009-09-06 00:00
-       until => 1275343200, # 2010-06-01 00:00
+       until => 1272607615, # 2010-06-01 00:00 1275343200
        text  => 'B 087 Leipziger Straße Brücke über den Elsterkolk in Herzberg Brückenneubau halbseitig gesperrt; Einbahnstraße 07.09.2009-31.05.2010 ',
        type  => 'handicap',
        data  => <<EOF,
@@ -16863,10 +16863,11 @@ EOF
 userdel	2::inwork 36927,105345 36726,106236 36665,106354 36137,106832 35674,106889
 EOF
      },
-     { from  => 1257634800, # 2009-11-08 00:00
-       until => 1259967600, # 2009-12-05 00:00
-       text  => 'L 601 Finsterwalde - Doberlug-Kirchhain OD Lugau, zw. Abzw. Hennersdorfer Str. u. Abzw. Ha Straßenbauarbeiten Vollsperrung 09.11.2009-04.12.2009 ',
+     { from  => 1272607127, # 2010-04-30 07:58
+       until => 1273874400, # 2010-05-15 00:00
+       text  => 'L 601 Finsterwalde - Doberlug-Kirchhain OD Lugau, zw. Abzw. Hennersdorfer Str. u. Abzw. Ha Straßenbauarbeiten Vollsperrung 09.11.2009 bis 14.05.2010 ',
        type  => 'gesperrt',
+       source_id => 'LSS-SG33-C09248',
        data  => <<EOF,
 userdel	2::inwork 28028,-88225 26392,-88322 25763,-88254 25470,-88145 24969,-87998 24927,-87720
 EOF
@@ -17402,9 +17403,9 @@ EOF
 userdel	2::inwork -20021,54750 -20798,54347
 EOF
      },
-     { from  => 1271281188, # 2010-04-14 23:39
-       until => 1277157600, # 2010-06-22 00:00
-       text  => 'Rheinsberg: Straßenausbau und Bau einer Verkehrsinsel am Ortsausgang in FR Flecken Zechlin Ortslage Dorf Zechlin Umleitung innerorts 06.04.2010 bis 21.06.2010 ',
+     { from  => 1272607378, # 2010-04-30 08:02
+       until => 1272924000, # 2010-05-04 00:00
+       text  => 'Rheinsberg: Straßenausbau und Bau einer Verkehrsinsel Ortslage Dorf Zechlin, 06.04.2010 bis 03.05.2010 ',
        type  => 'handicap',
        source_id => 'LSW-SG33-K10037',
        data  => <<EOF,
@@ -17474,8 +17475,8 @@ userdel	2::inwork 83070,5097 82765,4636 82314,4413 81301,3881
 EOF
      },
      { from  => 1271654040, # 2010-04-19 07:14
-       until => 1272472200, # 2010-04-28 18:30
-       text  => 'Birkbuschstr. (Steglitz): Straße vollständig gesperrt, Fahrbahnschäden in beiden Richtungen zwischen Klingsorstr. und Haydnstr. 20.04.2010 07:14 Uhr bis 28.04.2010 18:30 Uhr ',
+       until => 1273249800, # 2010-05-07 18:30
+       text  => 'Birkbuschstr. (Steglitz): Straße vollständig gesperrt, Fahrbahnschäden in beiden Richtungen zwischen Klingsorstr. und Haydnstr. 20.04.2010 07:14 Uhr bis 07.05.2010 18:30 Uhr ',
        type  => 'handicap',
        source_id => 'IM_015553',
        data  => <<EOF,
@@ -17510,6 +17511,24 @@ EOF
        source_id => 'IM_015565',
        data  => <<EOF,
 userdel	2::temp 9259,13050 9413,13071 9553,13079
+EOF
+     },
+     { from  => 1272607309, # 2010-04-30 08:01
+       until => 1273183200, # 2010-05-07 00:00
+       text  => 'Höhenland: Verbot für Fahrzeuge Steinbeck-Brunow und umgekehrt 20.04.2010 bis 06.05.2010 ',
+       type  => 'gesperrt',
+       source_id => 'LSO-SG33-F10045',
+       data  => <<EOF,
+userdel	2::inwork 43155,35936 44203,35121
+EOF
+     },
+     { from  => 1272214500, # 2010-04-25 18:55
+       until => 1273870500, # 2010-05-14 22:55
+       text  => 'Roelckestr. (Weißensee) gesperrt, Baustelle In beiden Richtungen zwischen Pistoriusstr. und Gäblerstr. 26.04.2010 18:55 Uhr bis 14.05.2010 22:55 Uhr ',
+       type  => 'handicap',
+       source_id => 'IM_015593',
+       data  => <<EOF,
+userdel	q4::inwork 13104,16522 13272,16672
 EOF
      },
     );
