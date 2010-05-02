@@ -7,7 +7,7 @@ NON_EMPTY_FILES=	strassen gesperrt
 all:	Berlin.coords.data ${EMPTY_FILES}
 
 Berlin.coords.data:	strassen
-	perl -I../.. -I../../lib -MStrassen::Core -e 'Strassen->new_stream(shift)->read_stream(sub { my $$r = shift; print "$$r->[0]|||$$r->[1][0]\n" })' ${.CURDIR}/strassen > Berlin.coords.data~
+	perl -I../.. -I../../lib -MStrassen::Core -MStrassen::Strasse -e 'Strassen->new_stream(shift)->read_stream(sub { my $$r = shift; my($$s,@cps) = Strasse::split_street_citypart($$r->[0]); @cps = "" if !@cps; for my $$cp (@cps) { print "$$s|$$cp||$$r->[1][0]\n" }})' ${.CURDIR}/strassen > Berlin.coords.data~
 	chmod 644 Berlin.coords.data~
 	mv Berlin.coords.data~ Berlin.coords.data
 
