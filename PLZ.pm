@@ -54,6 +54,7 @@ use constant FILE_CITYPART => 1;
 use constant FILE_ZIP      => 2; # this is not valid for FMT_NORMAL
 use constant FILE_COORD    => 3;
 use constant FILE_INDEX    => 4;
+use constant FILE_STRTYPE  => 5; # This is a placeholder, and not implemented now!
 
 use constant FILE_ZIP_FMT_NORMAL => 4; # this is only valid for FMT_NORMAL
 
@@ -181,6 +182,7 @@ use constant LOOK_CITYPART => 1;
 use constant LOOK_ZIP      => 2;
 use constant LOOK_COORD    => 3;
 use constant LOOK_INDEX    => 4;
+use constant LOOK_STRTYPE  => 5; # This is a placeholder, and not implemented now!
 
 # XXX make gzip-aware
 # Argumente: (Beschreibung fehlt XXX)
@@ -880,6 +882,38 @@ sub find_streets_in_text {
 	}
     }
     \@res;
+}
+
+sub get_street_type {
+    my($self, $look_result) = @_;
+    if (defined $look_result->[LOOK_STRTYPE]) { # This is not yet defined, but maybe some day?
+	$look_result->[LOOK_STRTYPE];
+    } else {
+	my $name = $look_result->[LOOK_NAME];
+	if      ($name =~ m{(^Kolonie\s
+			    |^KGA\s
+			    |\s\(Kolonie\)$
+			    )}x) {
+	    return 'orchard';
+	} elsif ($name =~ m{^[SU]-Bhf\s}) {
+	    return 'railway station';
+	} elsif ($name =~ m{\s\(Gaststätte\)$}) {
+	    return 'restaurant';
+	} elsif ($name =~ m{\s\(Siedlung\)$}) {
+	    return 'settlement'; # XXX English wording?
+	} elsif ($name =~ m{\s\(Insel\)$}) {
+	    return 'island';
+	} else {
+	    return 'street';
+	}
+    }
+}
+
+# This method may be removed or renamed one day!
+sub _populate_street_type {
+    my($self, $look_result) = @_;
+    my $type = $self->get_street_type($look_result);
+    $look_result->[LOOK_STRTYPE] = $type;
 }
 
 return 1 if caller();
