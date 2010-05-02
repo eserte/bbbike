@@ -59,12 +59,16 @@ update-from-andreasm:
 	cd $(HOME)/src/bbbike/data && make check all
 
 sparkassen_osm.bbd:	../data_berlin_osm_bbbike/_unhandled
-	perl -nle '/(^Sparkasse|Berliner Sparkasse|operator:Sparkasse)/ and do { s{\tX }{\tIMG:/home/e/eserte/images/icons/sparkasse.gif }; print }' ../data_berlin_osm_bbbike/_unhandled > sparkassen_osm.bbd~
+	(echo "#: encoding: utf-8"; \
+	 echo "#:"; \
+	 perl -nle '/(^Sparkasse|Berliner Sparkasse|operator:Sparkasse)/ and do { s{\tX }{\tIMG:${BBBIKEAUXDIR}/images/sparkasse.gif }; print }' ../data_berlin_osm_bbbike/_unhandled) > sparkassen_osm.bbd~
 	mv sparkassen_osm.bbd~ sparkassen_osm.bbd
 
-citibank_osm.bbd:	../data_berlin_osm_bbbike/_unhandled
-	perl -nle '/citibank/i and do { s{\tX }{\tIMG:/home/e/eserte/images/icons/citibank.gif }; print }' ../data_berlin_osm_bbbike/_unhandled > citibank_osm.bbd~
-	mv citibank_osm.bbd~ citibank_osm.bbd
+targobank_osm.bbd:	../data_berlin_osm_bbbike/_unhandled
+	(echo "#: encoding: utf-8"; \
+	 echo "#:"; \
+	 perl -nle '/(citibank|targobank)/i and do { s{\tX }{\tIMG:${BBBIKEAUXDIR}/images/targobank.png }; print }' ../data_berlin_osm_bbbike/_unhandled) > targobank_osm.bbd~
+	mv targobank_osm.bbd~ targobank_osm.bbd
 
 upload-personal: $(HOME)/.bbbike/personal.wpt
 	gpsman readput GPSMan WP $(HOME)/.bbbike/personal.wpt
