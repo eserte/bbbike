@@ -258,10 +258,13 @@ sub agrep {
 
 # Sucht Straße anhand des Bezirkes.
 # $bezirk may be in the form "citypart1, citypart2, ..."
+# Return value is context-sensitive:
+#   in list context, return list of positions
+#   in scalar context, return position of first match or undef
 ### AutoLoad Sub
 sub choose_street {
     my($str, $strasse, $bezirk, %args) = @_;
-    my @bezirk = split /\s*,\s*/, $bezirk;
+    my @bezirk = defined $bezirk ? (split /\s*,\s*/, $bezirk) : ();
     my @pos;
     $str->init;
     while(1) {

@@ -26,7 +26,7 @@ BEGIN {
 	use Tie::File;
 	1;
     }) {
-	print "1..0 # skip no Test::More and/or FIle::Temp module\n";
+	print "1..0 # skip no Test::More and/or File::Temp module\n";
 	exit;
     }
 }
@@ -35,12 +35,48 @@ my $v;
 GetOptions("v" => \$v)
     or die "usage: $0 [-v]";
 
-plan tests => 52;
+plan tests => 58;
 
 use_ok("Strassen::CoreHeavy");
 
 my $tempdatadir = tempdir(CLEANUP => 1);
 die if !$tempdatadir;
+
+######################################################################
+
+{
+    # Important: to avoid clashes with cached original data
+    # This is the same prefix as in cgi/bbbike-test.cgi.config
+    local $Strassen::Util::cacheprefix = $Strassen::Util::cacheprefix = "test_b_de";
+
+    my $s = Strassen->new("$FindBin::RealBin/data/strassen");
+
+    {
+	my @res = $s->choose_street('Dudenstr.');
+	is($s->get($res[0])->[Strassen::NAME()], 'Dudenstr.', 'choose_street result (list context)');
+
+	my $res = $s->choose_street('Dudenstr.');
+	is($s->get($res)->[Strassen::NAME()], 'Dudenstr.', 'choose_street result (scalar context)');
+    }
+
+    {
+	my @res = $s->choose_street('Ackerstr.', 'Gesundbrunnen');
+	like($s->get($res[0])->[Strassen::NAME()], qr{Ackerstr.*Gesundbrunnen}, 'choose_street result with citypart (list context)');
+
+	my $res = $s->choose_street('Ackerstr.', 'Gesundbrunnen');
+	like($s->get($res)->[Strassen::NAME()], qr{Ackerstr.*Gesundbrunnen}, 'choose_street result with citypart (scalar context)');
+    }
+
+    {
+	my @res = $s->choose_street('This street does not exist');
+	is(scalar @res, 0, 'No results (list context)');
+
+	my $res = $s->choose_street('This street does not exist');
+	is($res, undef, 'No results (scalar context)');
+    }
+}
+
+######################################################################
 
 my $bbd1 = "$tempdatadir/onlytest_1.bbd";
 
@@ -238,7 +274,6 @@ my $ms3 = MultiStrassen->new(@multibbd);
 
     unlike("@warnings", qr{Mismatching coord systems.*polar.*bbbike}, "No warning for mismatched coord systems");
 }
-
 
 ######################################################################
 # Helpers
