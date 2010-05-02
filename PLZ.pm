@@ -903,6 +903,8 @@ sub get_street_type {
 	    return 'settlement'; # XXX English wording?
 	} elsif ($name =~ m{\s\(Insel\)$}) {
 	    return 'island';
+	} elsif ($name =~ m{\s\(geplant\)$}) {
+	    return 'projected street';
 	} else {
 	    return 'street';
 	}
