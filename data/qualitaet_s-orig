@@ -384,7 +384,7 @@ Jungstr.: Kopfsteinpflaster	Q2 14550,11732 14623,11867 14675,11964
 Oberhofer Platz: Kopfsteinpflaster	Q2 5406,2110 5376,2097 5431,1956 5437,1941 5469,1949
 Kieler Str.: Kopfsteinpflaster, OK	Q1 5124,5750 5052,5788
 Düppelstr.: Kopfsteinpflaster	Q2 5124,5750 4991,5531
-Königstr.: schlechtes Kopfsteinpflaster	Q3 630,2998 548,3023 516,3021 441,2987 292,2905 200,2855 104,2802 12,2752 -81,2699 -155,2658 -287,2583
+Königstr.: schlechtes Kopfsteinpflaster	Q3 630,2998 548,3023 516,3021 441,2987 292,2905 200,2855 104,2802 12,2752 -81,2699 -155,2658 -197,2634 -287,2583
 Königsweg: Waldweg, mäßig bis OK	Q2+ -3161,975 -3407,834 -3511,776 -4184,400 -4248,367 -5960,-604 -6411,-868 -6807,-1093 -6928,-1076
 Königsweg: Waldweg, mäßig bis OK	Q2+ -1082,2140 -1303,2003 -1592,1852 -2043,1596 -2618,1281
 Sonntagstr.: Kopfsteinpflaster	Q2 14434,11465 14535,11327 14598,11245 14669,11152 14752,11041 14798,10985 14845,10954
@@ -3335,6 +3335,7 @@ Rietzestr.: Asphalt	Q0 12693,15225 12472,15356
 ######################################################################
 #: by: anonymous vvv
 # 
+Schwanenfeldstr.: guter Asphalt	Q0 4546,14803 4473,14646
 Straße 30 (Französisch Buchholz): Asphalt	Q0 11696,21493 11756,21594
 Korbmacherweg: guter Asphalt	Q0 16352,1226 16375,1313
 Trollblumenweg: guter Asphalt	Q0 16041,3718 15860,3838 15647,3977
@@ -3673,7 +3674,7 @@ Gembitzer Str.: guter Asphalt	Q0 16815,16214 16889,16378 16948,16482 17059,16560
 #: note: der Eintrag hat explizit nur den Abschnitt Alt-Lankwitz - Kamenzer Damm erwähnt. Laut ADFC-Karte ist die gesamte Strecke "gut geeignet":
 Wedellstr.: Asphalt	Q0 7517,2574 7489,2787 7498,2845 7528,2964 7500,3081 7463,3182 7472,3308 7481,3334 7501,3432
 Schöningstr.: guter Asphalt	Q0 6103,16635 6154,16693 6281,16841
-Klaustaler Str.: mäßiger Asphalt	Q1 11309,19267 11351,19169 11384,19067 11439,18890 11469,18799 11483,18753 11462,18743 11501,18648
+Klaustaler Str.: mäßiger Asphalt	Q1 11309,19267 11351,19169 11384,19067 11439,18890 11463,18817 11469,18799 11483,18753 11462,18743 11501,18648
 Köhlerstr.: gutes Kopfsteinpflaster	Q1 2765,3184 2832,3372 2890,3561 2962,3827
 #: note: laut ADFC-Karte teilweise gut und mäßig
 Marie-Elisabeth-von-Humboldt-Str.: mäßiger Asphalt	Q1 20624,18485 20598,18560 20643,18701 20694,18857 20855,19299 20987,19604
@@ -5754,7 +5755,7 @@ Hartriegelstr.: Beton	Q0- 18724,5022 18918,4971 19184,4888 19251,4879 19402,4900
 Allendeweg: Asphalt	Q0 23001,4382 22963,4435 22893,4532
 #: note: laut ADFC-Karte ebenfalls schlecht geeignet
 #: confirmed_by: srt (zumindest das nördliche Ende)
-Kattunsteig: sandiger Waldweg	Q3 19760,4875 19765,4760 19710,4760 19715,4410 19731,4329 19771,4273 19753,4241
+Kattunsteig: sandiger Waldweg	Q3 19760,4875 19762,4823 19710,4760 19715,4410 19731,4329 19771,4273 19753,4241
 #: note: "Note 3":
 #: note: laut ADFC-Karte gut geeignet
 #: corrected_by: srt (einige Schlaglöcher, Q1 -> Asphalt, Q0)
@@ -10256,9 +10257,12 @@ Im Wolfsgartenfeld: mäßiger Asphalt	Q2+ 5338,19843 5340,19895 5307,20067
 Erlenstr. (Köpenick): guter Asphalt	Q0 23879,4233 23880,4280 23883,4328 23878,4406 23850,4497 23826,4539
 Schmale Gasse: Asphalt	Q0 23883,4328 24055,4348 24075,4417
 #: by: ^^^
-#: by: chris (wierte...):
+#: by: chris (wierte...): vvv
 #: note: "Straße durch Einfamilienhaussiedlung, bei Gegenverkehr mit LKW´s kann es manchmal etwas eng werden, rechts und links neben dem Asphalt ist ausgefahrender Sand-/Schotterbelag"
-Bitburger Str.: mäßiger Asphalt	Q1- 16645,17449 16595,17508 16522,17541 16346,17561 15839,17634 15548,17684 15515,17717 15478,17724 15439,17698 15220,17729
+Bitburger Str.: mäßiger Asphalt	Q1- 16645,17449 16595,17508 16522,17541 16346,17561 15839,17634 15548,17684
+Bitburger Str.: Waldweg, kann an feuchten Tagen etwas schlammig werden	Q2 15548,17684 15515,17717 15478,17724 15439,17698
+Bitburger Str.: mäßiger Asphalt	Q1- 15439,17698 15220,17729
+#: by: ^^^
 #: by: Thomas (theo...)
 Albrechtshofer Weg: guter Asphalt	Q0 -7517,15858 -7642,15840 -7747,15842 -7865,15867 -7975,15904
 #: by: M. Hoffmann: vvv
@@ -10295,6 +10299,15 @@ Röbeler Weg: Kopfsteinpflaster	Q2 24831,10711 24826,10597 24759,10507
 Heimgartenstr.: Asphalt	Q0 23537,4238 23657,4255 23880,4280 24107,4309
 #: by: Inga Henkel:
 Alsbacher Weg: guter Beton	Q0- -847,4553 -824,4635
+#: by: Anke Hirschfelder:
+#: note: "q1, einige Fußgänger" ignoriert
+Westhofener Weg: Asphalt	Q0 -2352,2418 -2667,2325 -2647,2240 -2603,2162
+#: by: Markus Brandt:
+Kissingenplatz: guter Asphalt	Q0 11489,17980 11448,18051 11405,17985
+#: by: Ralf M. (hicom...):
+#: note: "q0, Bordsteinkanten" ignoriert
+#: note: unklarer Eintrag von anonymous: Asphalt ohne weitere Angabe
+Mühlweg: guter Asphalt	Q0 24629,5831 24666,5726 24700,5633
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206

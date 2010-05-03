@@ -1130,17 +1130,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        },
        undef,
        undef,
-       {
-         'source_id' => 'IM_014098',
-         'until' => 1272751199,
-         'text' => 'Miraustr. (Reinickendorf) stadteinwärts zwischen Innungsstr. un
-d Breitenbachstr. Baustelle, Fahrtrichtung gesperrt (bis Anfang 05/2010)',
-         'from' => 1252440431,
-         'id' => 1860,
-         'data' => 'userdel	q4::inwork; 4014,19433 4170,19079 4195,19043
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,

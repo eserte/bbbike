@@ -315,7 +315,7 @@ Am Ausblick|Frohnau|13465|1402,24851
 Am Bachrain|Kaulsdorf|12621|23645,12780
 Am Bahndamm (Kolonie)|Mariendorf|12107|7870,3994
 Am Bahndamm|Köpenick|12555|22043,6309
-Am Bahndamm|Zehlendorf|14163|
+Am Bahndamm|Zehlendorf|14163|-83,2538
 Am Bahnhof Grunewald|Grunewald|14193|884,8954
 Am Bahnhof Jungfernheide|Charlottenburg|10589|4003,13837
 Am Bahnhof Rudow (Siedlung)|Rudow|12355|16432,719
@@ -420,7 +420,7 @@ Am Glockenturm|Westend|14053|-1284,11733
 Am Goldmannpark|Friedrichshagen|12587|25708,5960
 Am Graben|Karlshorst|10318|
 Am Graben|Stadtrandsiedlung Malchow|13088|14858,18886
-Am Großen Fenster|Nikolassee|14129|
+Am Großen Fenster|Nikolassee|14129|-4693,4431
 Am Großen Rohrpfuhl|Rudow|12355|16684,837
 Am Großen Wannsee|Wannsee|14109|-5773,2317
 Am Grünen Anger|Johannisthal|12487|17859,5036
@@ -519,7 +519,7 @@ Am Moosbruch|Kaulsdorf|12621|21523,9124
 Am Müggelberg|Müggelheim|12559|26968,1230
 Am Müggelsee|Köpenick|12559|26006,2615
 Am Mühlenberg|Schöneberg|10825|6120,8640
-Am Mühlenfließ|Rahnsdorf|12589|29714,4657
+Am Mühlenfließ|Rahnsdorf|12589|29982,4525
 Am Niederfeld|Kaulsdorf|12621|22741,11060
 Am Nordbahnhof|Mitte|10115|9059,13937
 Am Nordgraben|Französisch Buchholz|13127|10993,21729
@@ -569,7 +569,7 @@ Am Rohrbusch|Lübars|13469|5932,23881
 Am Rohrgarten|Nikolassee|14163|-1763,1865
 Am Rollberg|Rosenthal|13158|9614,20959
 Am Rosenanger|Frohnau|13465|3499,24544
-Am Rosengarten|Marzahn|12681|
+Am Rosengarten|Marzahn|12681|18707,12225
 Am Rosenhag|Kaulsdorf|12623|24925,13592
 Am Rosenhag|Mahlsdorf|12623|24925,13592
 Am Rosensteg|Tegel|13509|3170,20563
@@ -684,8 +684,8 @@ Am Wriezener Bahnhof|Friedrichshain|10243|12790,11840
 Am Wuhleufer|Köpenick|12555|21475,7500
 Am Zeppelinpark|Staaken|13591|-8417,13785
 Am Zeughaus|Mitte|10117|9948,12522
-Am Zeuthener See|Schmöckwitz|12527|
-Am Zingergraben|Niederschönhausen|13156|
+Am Zeuthener See (Kolonie)|Schmöckwitz|12527|27044,-2892
+Am Zingergraben|Niederschönhausen|13156|8866,21520
 Am Zirkus|Mitte|10117|9206,13013
 Am Zwirngraben|Mitte|10178|10262,13010
 Amalienhofstr.|Wilhelmstadt|13581|-4893,13066
@@ -741,7 +741,7 @@ An der Bucht|Rummelsburg|10317|15465,10481
 An der Dorfkirche|Marienfelde|12277|8039,834
 An der Felgenlake|Falkenhagener Feld|13589|-6750,15277
 An der Fließwiese|Westend|14052|-839,12836
-An der Gatower Heide|Kladow|14089|
+An der Gatower Heide|Kladow|14089|-8408,7429
 An der Hasenfurt|Heiligensee|13503|-992,22546
 An der Havelspitze|Hakenfelde|13587|-2137,16578
 An der Heide|Tegel|13509|3224,20586
@@ -817,7 +817,7 @@ Angerweg|Rosenthal|13158|8598,20153
 Anglerverein Einigkeit (Kolonie)|Hakenfelde|13587|-1980,17857
 Anglerverein Frühauf (Kolonie)|Hakenfelde|13587|-2063,17977
 Anglerverein Plötze (Kolonie)|Hakenfelde|13587|-2124,18051
-Anglerweg|Schmöckwitz|12527|30097,-3653
+Anglerweg|Schmöckwitz|12527|30228,-3669
 Anhalter Str.|Kreuzberg|10963|9197,10993
 Anhaltinerstr.|Zehlendorf|14163|179,2559
 Anklamer Str.|Mitte|10115|10120,14446
@@ -1033,10 +1033,8 @@ Badstr.|Gesundbrunnen|13357|8672,16291
 Baedekerweg|Staaken|13593|-5281,12610
 Baerwaldstr.|Kreuzberg|10961|10143,9248
 Baggerseestr.|Biesdorf|12683|20348,11333
-Bahnhaus 16|Friedrichshagen|12587|
 Bahnhaus Grünau|Grünau|12527|
 Bahnhaus Wuhlheide|Oberschöneweide|12459|
-Bahnhäuser Rahnsdorf|Rahnsdorf|12589|
 Bahnhaus|Grünau|12527|
 Bahnhofstr.|Alt-Hohenschönhausen|13055|16656,15562
 Bahnhofstr.|Blankenburg|13129|12814,20648
@@ -1422,7 +1420,7 @@ Birkenstr.|Moabit|10551|6061,13993
 Birkenstr.|Moabit|10559|6061,13993
 Birkenwäldchen (Kolonie)|Westend|14050|1429,12745
 Birkenweg (Kolonie)|Charlottenburg-Nord|13627|3602,15469
-Birkenweg|Adlershof|12439|
+Birkenweg|Adlershof|12439|19864,4607
 Birkenweg|Bohnsdorf|12526|23247,-960
 Birkenweg|Hakenfelde|13587|-3090,17985
 Birkenwerderstr.|Märkisches Viertel|13439|6829,20699
@@ -1731,9 +1729,9 @@ Breite Str.|Pankow|13187|10244,18081
 Breite Str.|Schmargendorf|14199|2838,7596
 Breite Str.|Spandau|13597|-2937,14368
 Breite Str.|Steglitz|12167|5059,4852
+Breitehorn (Kolonie)|Gatow|14089|-4845,6064
 Breitehornweg|Gatow|14089|-5186,6746
 Breitehornweg|Kladow|14089|-5186,6746
-Breitehorn|Gatow|14089|-5186,6746
 Breitenbachplatz|Dahlem|14195|3950,6671
 Breitenbachplatz|Steglitz|14195|3950,6671
 Breitenbachplatz|Wilmersdorf|14195|3950,6671
@@ -1741,7 +1739,7 @@ Breitenbachstr.|Wittenau|13509|3980,18969
 Breitenfelder Str.|Biesdorf|12683|21184,8090
 Breitensteinweg|Zehlendorf|14165|699,341
 Breiter Weg|Johannisthal|12487|17295,5343
-Breites Fenn|Johannisthal|12487|
+Breites Fenn (Kolonie)|Johannisthal|12487|17172,5228
 Breitkopfstr.|Reinickendorf|13409|7649,18233
 Breitscheidplatz|Charlottenburg|10789|5903,10865
 Breitunger Weg|Britz|12349|11757,2082
@@ -4450,14 +4448,14 @@ Havelchaussee|Westend|14055|-3499,7898
 Havelchaussee|Wilhelmstadt|13597|-3499,7898
 Haveleck (Kolonie)|Haselhorst|13599|-1541,16910
 Haveleck|Wannsee|14109|-5919,3092
-Havelfreunde|Kladow|14089|
+Havelfreunde (Kolonie)|Kladow|14089|-5529,5770
 Havelländer Ring|Hellersdorf|12629|23343,15390
 Havelmatensteig|Gatow|14089|-4789,7373
 Havelmüllerweg|Tegel|13509|3317,20699
 Havelschanze|Hakenfelde|13587|-2594,16098
 Havelstr.|Spandau|13597|-3013,14488
 Havelweg|Grunewald|14193|-3451,8840
-Havelwiese|Kladow|14089|
+Havelwiese (Kolonie)|Kladow|14089|-5219,5880
 Havemannstr.|Marzahn|12689|21632,18332
 Havensteinstr.|Lankwitz|12249|6402,2707
 Havermannstr.|Britz|12359|13748,4989
