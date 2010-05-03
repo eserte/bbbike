@@ -20194,6 +20194,7 @@ sub load_photo {
 		my $path;
 		if (file_name_is_absolute($file)) {
 		    $path = $file;
+		    $photo = $top->Photo(@name, -file => $path);
 		} else {
 		    for my $try_file ((-d "$datadir/images" ? "$datadir/images/$file" : ()),
 				      "$FindBin::RealBin/images/$file",
