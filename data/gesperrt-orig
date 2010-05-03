@@ -337,7 +337,7 @@ Karl-Bonhoeffer-Nervenklinik: für Unbefugte nicht befahrbar, Strafvollzug	2 4997
 Schöneberger Südgelände: Radfahren verboten, Eintritt 1 Euro	2 7605,7109 7621,7105 7655,7096 7666,7093
 Schöneberger Südgelände: Radfahren verboten, Eintritt 1 Euro	2 7666,7093 7344,6104 7296,5872
 Prießnitzstr.	1 11549,19258 11407,19186 11351,19169
-Klaustaler Str.	1 11439,18890 11384,19067
+Klaustaler Str.	1 11384,19067 11439,18890
 Paracelsusstr.	1 11599,19171 11549,19258 11543,19279 11575,19296 11613,19312 11671,19204
 Wormbacher Weg	1 3791,338 3782,397 3648,531
 Schwelmer Str.	1 3676,311 3569,469 3497,574
@@ -691,6 +691,12 @@ Anna-Mackenroth-Weg	1 3633,2210 3641,2459
 Fuchsbau	1 17590,7828 17651,7973
 Drosselstieg	1 17683,7958 17747,8107
 Blaurackenweg	1 17532,8125 17647,8071 17613,7989
+#: by: ewa_maria:
+Harzburger Str. (Pankow), Klaustaler Str...	1s:q4 11442,18736 11419,18801 11463,18817 11469,18799 11483,18753 11462,18743 11442,18736
+#: by: Andy (compstars)
+#: confirmed_by: Luftbild
+#: XXX_indoor bei osm falsch herum
+Faucherweg	1 -1307,14801 -1251,14772 -1207,14781 -1141,14814 -896,14888
 ######################################################################
 #
 # Potsdam
@@ -1758,7 +1764,7 @@ Karl-Pokern-Str.	1 25860,5067 25860,5159 25857,5184 26026,5179 26028,5153 26034,
 Karl-Pokern-Str.	1 25860,5159 26028,5153
 Kubornstr.	1 15857,12682 15832,12518 15819,12498 15800,12353
 Lindenufer	1 -3275,14114 -3135,14183
-#: by: http://www.berlin.de/ba-spandau/presse/archiv/20051205.1215.33112.html
+#: by: (URL existiert nicht mehr) http://www.berlin.de/ba-spandau/presse/archiv/20051205.1215.33112.html
 Mauerstr.	1 -3316,14169 -3275,14114
 Groscurthstr.	1 16423,24935 16467,25092 16530,25276 16572,25407 16485,25485 16439,25442
 Friedrich-Richter-Str.	1 16264,24764 16284,24745 16217,24651
