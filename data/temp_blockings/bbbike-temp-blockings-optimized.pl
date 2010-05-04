@@ -1714,16 +1714,7 @@ userdel	q3::inwork 9444,11616 9432,11702
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'LSW-SG33-K10037',
-         'until' => 1272924000,
-         'text' => 'Rheinsberg: Straßenausbau und Bau einer Verkehrsinsel Ortslage Dorf Zechlin, 06.04.2010 bis 03.05.2010 ',
-         'from' => 1272607378,
-         'id' => 2049,
-         'data' => 'userdel	q4::inwork -33491,80874 -33511,80553
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => '106900153',
          'until' => 1277935200,

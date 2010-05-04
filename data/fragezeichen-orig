@@ -442,6 +442,8 @@ Kleistpark: im Sommer bis 21 Uhr geöffnet, im Winter bis 18 Uhr	? 7209,9507 7246
 #
 #: section isolated entries vvv
 #: section ignorieren vvv
+#: by: anonymous:
+Grünauer Str. (Bohnsdorf): guter Asphalt, Q0	? 23056,-499 22990,-406 22926,-340
 #: by: Katrin (...knapp)
 Miersdorfer Str.: guter Beton, Q0-	? 25902,-2486 25783,-2288 25755,-2239
 #: by: Eddie Haas:
@@ -842,8 +844,10 @@ Crossiw - Gellmersdorf: Qualität?	? 54909,66268 54715,64807 54474,64173 54646,63
 Gellmersdorf - Lüderitz: Qualität?	? 54723,63351 54755,63252 54631,63129 54662,62850 55100,61175 55462,60387 55444,60035
 Grillenweg: Qualität? Stimmt der Straßen/Wegname? Ausschilderung vorhanden? nachts beleuchtet?	? 24285,5472 24236,5594 24225,5619 24216,5748 24197,5791 24150,5854 24126,5874 24111,5922 24122,6007
 #: note: Siehe auch (URL existiert nicht mehr) http://www.pds-fraktion-treptow-koepenick.de/drucksache-5-908.html. Jupiterstr./Altglienicke aus der Datenbank herausnehmen.
-#: XXX Oder heißt sie weiterhin Jupiterstr.? Unklarer Eintrag von isabell komoll: mäßiger Asphalt, Fußgängerzone???
+#: XXX Oder heißt sie weiterhin Jupiterstr.? Unklarer Eintrag von isabell komoll: mäßiger Asphalt, Fußgängerzone??? vvv
 Str. 125a in "Kleine Usedomstr." umbenannt?	? 19497,1035 19541,1135
+Jupiterstr.: Oder heißt die Straße "Jupiterstr."?	? 19497,1035 19541,1135
+#: XXX ^^^
 Usedomstr.: Qualität?	? 19541,1135 19575,1239 19610,1349 19638,1436
 #: by: (URL existiert nicht mehr) http://www.pds-fraktion-treptow-koepenick.de/drucksache-5-871.html
 Umbenenunng zu "Zu den Gosener Bergen"?	? 30640,-2803 30721,-2321
@@ -2082,7 +2086,6 @@ Goethestr. (Bohnsdorf): Qualität?	? 23134,-720 23089,-609 23035,-507
 Lessingstr. (Bohnsdorf): Qualität?	? 23239,-679 23193,-569 23148,-487
 Amorstr.: Qualität?	? 22638,-705 22745,-650 22938,-555 23035,-507 23056,-499 23148,-487
 Apollostr.: Qualität?	? 22696,-579 22990,-406
-Grünauer Str. (Bohnsdorf): Qualität?	? 23056,-499 22990,-406 22926,-340
 #: XXX widersprüchliche Angaben: Dieter Lubitz: Asphalt (2008-11), Bina: schlechtes Kopfsteinpflaster (2008-08)
 Chamissostr. (Hakenfelde): Qualität?	? -2579,16899 -2838,16951 -3017,16984
 #: XXX Falls "Goldbeckweg", dann sollten die Qualitätsangaben von Julia hier auch berücksichtigt werden:
@@ -2477,6 +2480,8 @@ Am Wechsel: Qualität?	? 3771,21910 3722,21970 3681,21999 3688,22018
 Büchenbronner Steig: Qualität?	? 5291,23072 5357,23004
 Ettenheimer Pfad: Qualität?	? 4898,22459 4938,22405 5075,22153
 Höllentalweg: Qualität?	? 5108,22156 5168,22197 5209,22229
+#: XXX_osm bei osm auch als "Eutinger Weg" gekennzeichnet:
+Florastr.: Qualität?	? 4360,22576 4437,22655
 Eutinger Weg: Qualität?	? 4437,22655 4531,22697 4593,22702
 Gutachstr.: Qualität?	? 4586,22769 4593,22702 4648,22632 4716,22535 4800,22418
 Benekendorffstr.: Qualität der Benekendorffstr. zwischen Oraniendamm und Düsterhauptstr (möglicherweise Kopfsteinpflaster)?	? 4533,22399 4616,22478
@@ -2729,7 +2734,7 @@ Grünauer Weg: Qualität?	? 25182,-2915 25118,-2805 25090,-2757 25041,-2675 24981,
 Alter Radelander Weg: Qualität?	? 24981,-2573 23457,35
 Krähenhorst: Qualität?	? 25288,-2849 25254,-2792
 #: XXX Forstweg bei Pharus, nichts bei RV, "Wernsdorfer" bei Google und osm
-Wernsdorfer Str. oder Forstweg: welche Bezeichnung hat diese Straße?	? 30390,-3443 30533,-3124
+Forstweg: Welche Bezeichnung hat diese Straße: Wernsdorfer Str. oder Forstweg?	? 30390,-3443 30533,-3124
 Hirtenfließ: Qualität?	? 24777,-3149 24705,-3053
 Finkengasse: Qualität?	? 24668,-3212 24598,-3108
 Seddinpromenade: Qualität?	? 28000,-3147 28013,-3048
@@ -2817,7 +2822,7 @@ Lerchenstr.: Qualität? Ist die Straße eine Einbahnstraße? Wenn ja, gilt die Einb
 Storchenstr.: Qualität? Ist die Straße eine Einbahnstraße? Wenn ja, gilt die Einbahnstraßenregelung nur für Autofahrer oder auch für Radfahrer?	? -8675,7148 -8793,7115
 Johann-Landefeldt-Str.: Qualität?	? -8619,7012 -8598,7018 -8532,7041 -8466,7064 -8404,7087 -8341,7108 -8275,7131 -8207,7156 -8138,7182 -8074,7204 -8011,7229 -7948,7252 -8032,7437 -8055,7489
 Rex-Waite-Str.: Qualität?	? -8658,7157 -8597,7184 -8534,7212 -8472,7240 -8412,7267 -8348,7292 -8283,7325 -8215,7354 -8155,7379 -8090,7408 -8032,7437
-#: XXX_indoor bei osm nur "Gatower Heide"
+#: XXX_osm bei osm nur "Gatower Heide"
 An der Gatower Heide: Qualität?	? -8055,7489 -8121,7478 -8191,7466 -8258,7454 -8335,7441 -8408,7429 -8476,7417 -8547,7404 -8615,7392 -8682,7381 -8728,7376 -8738,7365
 Auguste-Piccard-Str.: Qualität?	? -8532,7041 -8597,7184 -8682,7381
 Edmund-Rumpler-Str.: Qualität?	? -8404,7087 -8472,7240 -8547,7404
@@ -4579,6 +4584,11 @@ Am Kleinen Platz: Qualität? Einbahnstraßenregelung?	? -7292,14811 -7248,14826
 Am Krummen Weg: Qualität? Einbahnstraßenregelung? Geht der Weg bis zur Hackbuschstr. weiter?	? -7248,14826 -7169,14849 -7095,14871 -7024,14880 -6886,14885
 Am Krug: Qualität? Für Autos gesperrt?	? -7149,14768 -7015,14772
 Querweg: Qualität?	? -8098,12340 -7967,12333 -7819,12321
+#: XXX_osm fehlt bei osm
+#: XXX str_cont_ausnahme-Eintrag fehlt
+Siedlungsweg: Qualität?	? -7806,12417 -7819,12321 -7824,12249
+Siedlungsweg: Qualität?	? -7819,12321 -7670,12310
+(Hahnebergweg - Am Fort): Qualität? Nachts beleuchtet?	? -7375,12577 -7436,12564 -7477,12530 -7502,12442 -7522,12423 -7595,12387 -7663,12383 -7806,12417 -7959,12439
 Talweg: Qualität?	? -7948,12634 -8078,12647 -8205,12644 -8324,12644 -8413,12651
 Am Wäldchen: Qualität?	? -8324,12644 -8359,12112
 Im Grund: Qualität?	? -8235,12144 -8205,12644
@@ -5245,8 +5255,10 @@ Strandschloßweg: Qualität? Ausgeschildert? Für Autos gesperrt? Nachts beleuchtet
 Sportallee: Qualität? Für Autos gesperrt? Nachts beleuchtet?	? 22577,1002 22368,1081
 #: XXX fehlt in Berlin.coords.data
 Rue René Laennec: Qualität?	? 3684,16788 3608,16765
+#: XXX_osm bei osm auch Elsa-Rendschmidt-Weg, aber wahrscheinlich falsch
+Sarkauer Allee: Qualität?	? -1471,11416 -1574,11484
 #: XXX fehlt in Berlin.coords.data
-Elsa-Rendschmidt-Weg: Qualität? Können Radfahrer hier fahren? Existieren Treppen?	? -1471,11416 -1574,11484 -1593,11501 -1635,11535 -1750,11719
+Elsa-Rendschmidt-Weg: Qualität? Können Radfahrer hier fahren? Existieren Treppen?	? -1574,11484 -1593,11501 -1635,11535 -1750,11719
 (Waldweg): Qualität? Führt hier die Route 6 entlang?	? 1859,21541 1610,21721 1556,22050 1588,22209 1524,22368 1415,22552 1476,22938 1559,23039 1534,23277 1382,23505 902,23844
 Führen hier die Routen 3 und 6 entlang?	? 905,24113 931,23965 902,23844
 #: XXX fehlt in Berlin.coords.data
@@ -5364,3 +5376,4 @@ Birkenweg (Adlershof): Qualität?	? 20084,4388 19864,4607 19710,4760 19642,4838
 Klaustaler Str.: Ist die Klaustaler Str. zwischen Harzburger Str. und Bleicheroder Str. eine Einbahnstraße? Wenn ja, gilt die Einbahnstraßenregelung nur für Autos oder auch für Radfahrer?	? 11463,18817 11439,18890
 #: XXX: unklarer Eintrag von anonymous für "Gatower Str. Seeburg" (es existiert aber nur ein "Weg"): fester Sandweg, q1, NN
 Gatower Weg (Seeburg): Qualität?	? -8607,11262 -8596,11184 -8451,11071 -8327,10979 -8274,10938
+Slatdorpweg: Für Radfahrer befahrbar? Qualität? Nachts beleuchtet? Existiert ein direkter Zugang zur Lindenthaler Allee?	? -1637,3596 -1478,3498 -1168,3290
