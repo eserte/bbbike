@@ -3840,6 +3840,7 @@ sub temp_blockings_editor {
 	     my $btxt = $real_txt->get("1.0", "end");
 	     $btxt =~ s/^(?:NEW|CHANGED|UNCHANGED|REMOVED)(,\s+\((coords|text)\))?\s*//;
 	     $btxt =~ s/[;,]\s+(?:eine\s+)?umleitung\s+ist\s+(?:ausgeschildert|eingerichtet)//i;
+	     $btxt =~ s/[;,]\s+umleitung\s+ausgeschildert//i;
 	     $btxt =~ s/[;,]\s+umleitung//i;
 	     $btxt =~ s/[;,]\s+hohe\s+staugefahr//i;
 	     $btxt =~ s/\s*\(\d{1,2}:\d{2}\)\s*$//; # seen in vmz records
