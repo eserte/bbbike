@@ -139,20 +139,26 @@ sub parse {
 		_trim $_;
 	    }
 	    $record->{text} = join("\n", @lines);
+	    my $formatted_text;
 	    
 	    my @strassen;
-	    for (reverse @lines) { # typically 2nd last line, so start from end
+	    for(my $line_i = $#lines; $line_i >= 0; $line_i--) { # typically 2nd last line, so start from end
+		local $_ = $lines[$line_i];
 		if (m{^Stra(?:ss|ß)en:\s*(.*)}) {
 		    @strassen = split /\s*,\s*/, $1;
+		    $formatted_text = $1 . ($line_i >= 1 ? ": " . join("\n", @lines[0..$line_i-1]) : "");
 		    $record->{strassen} = \@strassen;
 		    last;
 		}
 	    }
 	    if ($lines[-1] =~ m{^($date_rx)(?:\s($time_rx))?\sbis\s($date_rx)(?:\s($time_rx))?}) {
 		@{$record}{qw(from_date from_time to_date to_time)} = ($1,$2,$3,$4);
+		$formatted_text .= ", $lines[-1]";
 	    } else {
 		warn "Cannot parse date/time from $lines[-1]";
 	    }
+
+	    $record->{formatted_text} = $formatted_text;
 
 	    push @records, $record;
 	}
@@ -262,7 +268,7 @@ EOF
 	    push @attribs, 'CHANGED';
 	}
 	my($sx,$sy) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($rec->{lon},$rec->{lat}));
-	my $text = $rec->{detailed_text} || $rec->{text};
+	my $text = $rec->{formatted_text} || $rec->{detailed_text} || $rec->{text};
 	$text =~ s{\n}{ }g;
 	$s .= join(", ", @attribs) . "¦" .
 	    ($rec->{place} ne 'Berlin' ? $rec->{place} . ": " : '') .
