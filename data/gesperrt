@@ -342,7 +342,6 @@ Waldowstr.	1 5536,18234 5537,18309 5541,18435 5541,18451 5543,18555 5545,18590 5
 Kienhorststr.	1 5543,18555 5324,18560
 Halbauer Weg	1 7722,3142 7719,3219 7734,3290 7753,3371
 Amfortasweg	1 5214,4445 5173,4471 5144,4498 5067,4434 5150,4345
-Onkel-Bräsig-Str.	1 13324,4784 13305,4504
 Hüsung	1 13324,4784 13400,4788 13468,4766
 Hüsung	1s 13468,4766 13397,4762 13324,4784
 Karl-Egon-Str.	1 18372,8869 18406,9052 18430,9199 18457,9343
@@ -1232,8 +1231,8 @@ Lichtenberger Str. -> Neue Blumenstr.: Mittelstreifen	3::igndisp 12028,12519 120
 unbequem passierbarer Mittelstreifen	3nocross::ignrte 7696,7562 7859,7486 7946,7411
 Suadicanistr. -> Sachsendamm: unbequem passierbarer Mittelstreifen	3::igndisp 7858,7506 7859,7486 7946,7411
 Sachsendamm -> Suadicanistr.: unbequem passierbarer Mittelstreifen	3::igndisp 7696,7562 7859,7486 7858,7506
-Mittelstreifen	3nocross::ignrte 12598,8390 12582,8408 12540,8458
-Boddinstr. -> Karl-Marx-Str.: Mittelstreifen	3::igndisp 12368,8356 12582,8408 12540,8458
+Mittelstreifen	3nocross::ignrte 12598,8390 12582,8408 12562,8432 12540,8458
+Boddinstr. -> Karl-Marx-Str.: Mittelstreifen	3::igndisp 12368,8356 12582,8408 12562,8432
 unbequemes Überqueren wegen parkender Autos	3nocross::ignrte 12830,8031 12865,7923 12898,7832
 Karl-Marx-Str. -> Saltykowstr.: unbequemes Überqueren wegen parkender Autos	3::igndisp 12898,7832 12865,7923 12726,7887
 Mittelstreifen (nicht unpassierbar, aber unbequem)	3nocross::ignrte 11632,8302 11767,8330 11898,8362

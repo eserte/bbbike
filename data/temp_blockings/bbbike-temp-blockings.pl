@@ -6241,7 +6241,7 @@ EOF
        text  => 'Karl-Marx-Straße, Straßenfest zwischen Flughafenstr. und Thomasstr, gesperrt, Dauer: 14.10.2006 05:00 Uhr bis 16.10.2006 00:00 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::temp 12500,8504 12540,8458 12582,8408 12598,8390 12639,8344 12689,8289 12714,8249 12753,8187 12794,8103 12830,8031 12865,7923 12898,7832 12914,7785 12980,7597
+userdel	2::temp 12500,8504 12540,8458 12562,8432 12582,8408 12598,8390 12639,8344 12689,8289 12714,8249 12753,8187 12794,8103 12830,8031 12865,7923 12898,7832 12914,7785 12980,7597
 EOF
      },
      { from  => 1161032658, # 2006-10-16 23:04
@@ -15785,12 +15785,11 @@ EOF
 userdel	q4::inwork 17746,11748 17744,11703 17741,11607
 EOF
      },
-     { from  => 1252440431, # 2009-09-08 22:07
-       until => 1272751199, # 2010-05-01 23:59
-       text  => 'Miraustr. (Reinickendorf) stadteinwärts zwischen Innungsstr. un
-d Breitenbachstr. Baustelle, Fahrtrichtung gesperrt (bis Anfang 05/2010)',
+     { from  => 1252228140, # 2009-09-06 11:09
+       until => 1275314400, # 2010-05-31 16:00
+       text  => 'Miraustr. (Reinickendorf): Baustelle, Fahrtrichtung gesperrt (bis Ende 05/2010) stadteinwärts zwischen Innungsstr. und Breitenbachstr., 07.09.2009 11:09 Uhr bis 31.05.2010 16:00 Uhr ',
        type  => 'handicap',
-       source_id => 'IM_014098', # auch: http://www.berlin.de/ba-reinickendorf/presse/archiv/20090831.1205.137093.html
+       source_id => 'IM_014098',
        data  => <<EOF,
 userdel	q4::inwork; 4014,19433 4170,19079 4195,19043
 EOF
@@ -16094,10 +16093,11 @@ userdel	q4::temp 8595,12066 8600,12165 8538,12245 8546,12279 8570,12302 8573,123
 userdel	q4::temp 6828,12031 7383,12095 7816,12150 8055,12186 8089,12190 8214,12205 8538,12245 8610,12254
 EOF
      },
-     { from  => 1253397600, # 2009-09-20 00:00
-       until => 1275256800, # 2010-05-31 00:00
-       text  => 'K 6910 Am Wasser OD Schwielowsee, zw. Hellwegbaumarkt und Mühlenbergstr. Kanal- u. Straßenbau halbseitig gesperrt; Einbahnstraße 21.09.2009-30.05.2010 ',
+     { from  => 1273091418, # 2010-05-05 22:30
+       until => 1280613600, # 2010-08-01 00:00
+       text  => 'Schwielowsee: K6910: Kanal- und Straßenbau OL Geltow Richtungsverkehr zw. Mühlenbergstr. und B 1, 30.03.2009 bis 31.07.2010 ',
        type  => 'handicap',
+       source_id => '96900159',
        data  => <<EOF,
 userdel	q4::inwork; -19013,-5247 -19112,-5226 -19332,-5240
 EOF
@@ -17107,9 +17107,9 @@ EOF
 userdel	2::inwork -24240,6075 -24731,6194
 EOF
      },
-     { from  => 1265027979, # 2010-02-01 13:39
-       until => 1272664799, # 2010-04-30 23:59
-       text  => 'Blankenburger Str. (Pankow) Richtung Dietzgenstr. zwischen Siegfriedstr. und Dietzgenstr. Baustelle, Fahrtrichtung gesperrt, sowie Einbahnstraßenregelung in der Siegfriedstr. (bis Ende 04/2010)',
+     { from  => 1231063200, # 2009-01-04 11:00
+       until => 1283259600, # 2010-08-31 15:00
+       text  => 'Blankenburger Str. (Pankow): Baustelle, Fahrtrichtung gesperrt (bis Ende 08.2010) Richtung Dietzgenstr. zwischen Siegfriedstr. und Dietzgenstr. sowie Einbahnstraßenregelung in der Siegfriedstr., 05.01.2009 11:00 Uhr bis 31.08.2010 15:00 Uhr ',
        type  => 'handicap',
        source_id => 'IM_011081',
        data  => <<EOF,
@@ -17135,9 +17135,9 @@ EOF
 userdel	q4::inwork; 17476,4337 17507,4216
 EOF
      },
-     { from  => 1268336756, # 2010-03-11 20:45
-       until => 1272664799, # 2010-04-30 23:59
-       text  => 'Fennstr. (Treptow) Richtung Schnellerstr. zwischen Michael-Brückner-Str. und Schnellerstr. Baustelle, Fahrtrichtung gesperrt. Ebenso ist die Britzer Str. Richtung Michael-Brückner-Str. ab Schnellerstr. gesperrt. (bis Ende 04/2010)',
+     { from  => 1267956000, # 2010-03-07 11:00
+       until => 1275314400, # 2010-05-31 16:00
+       text  => 'Fennstr. (Treptow): Baustelle, Fahrtrichtung gesperrt. Ebenso ist die Britzer Str. Richtung Michael-Brückner-Str. ab Schnellerstr. gesperrt. (bis Ende 05.2010) Richtung Schnellerstr. zwischen Michael-Brückner-Str. und Schnellerstr., 08.03.2010 11:00 Uhr bis 31.05.2010 16:00 Uhr ',
        type  => 'gesperrt',
        source_id => 'IM_015284',
        data  => <<EOF,
@@ -17288,7 +17288,7 @@ userdel	q4::inwork -12915,-10753 -12337,-10735
 EOF
      },
      { from  => 1270235498, # 2010-04-02 21:11
-       until => 1275343200, # 2010-06-01 00:00
+       until => 1273092248, # 2010-06-01 00:00 1275343200
        text  => 'Steinhöfel: Kanal- und Straßenbauarbeiten Ortslage Heinersdorf, Verbot für Fahrzeuge 07.09.2009 bis 31.05.2010 ',
        type  => 'handicap',
        source_id => 'LSO-SG33-F09177',
@@ -17523,12 +17523,57 @@ userdel	2::inwork 43155,35936 44203,35121
 EOF
      },
      { from  => 1272214500, # 2010-04-25 18:55
-       until => 1273870500, # 2010-05-14 22:55
+       until => 1273092296, # 2010-05-14 22:55 1273870500
        text  => 'Roelckestr. (Weißensee) gesperrt, Baustelle In beiden Richtungen zwischen Pistoriusstr. und Gäblerstr. 26.04.2010 18:55 Uhr bis 14.05.2010 22:55 Uhr ',
        type  => 'handicap',
        source_id => 'IM_015593',
        data  => <<EOF,
 userdel	q4::inwork 13104,16522 13272,16672
+EOF
+     },
+     { from  => 1272956400, # 2010-05-04 09:00
+       until => 1311948000, # 2011-07-29 16:00
+       text  => 'Blankenburger Chaussee (Karow): Baustelle, Fahrtrichtung gesperrt (Ende 07.2011) stadteinwärts zwwischen Bahnhofstr. und Tarnowitzer Str., 05.05.2010 09:00 Uhr bis 29.07.2011 16:00 Uhr ',
+       type  => 'handicap',
+       source_id => 'IM_015680',
+       data  => <<EOF,
+userdel	q4::inwork; 15428,22736 15271,22527 15154,22370
+EOF
+     },
+     { from  => 1272860220, # 2010-05-03 06:17
+       until => 1273237200, # 2010-05-07 15:00
+       text  => 'Siemensstr. (Oberschöneweide): geplatzte Wasserleitung, Straße vollständig gesperrt in beiden Richtungen zwischen Wilhelminenhofstr. und Edisonstr., 04.05.2010 06:17 Uhr bis 07.05.2010 15:00 Uhr ',
+       type  => 'handicap',
+       source_id => 'IM_015641',
+       data  => <<EOF,
+userdel	q4::inwork 17962,6674 17860,6644 17766,6616 17614,6571
+EOF
+     },
+     { from  => 1273091803, # 2010-05-05 22:36
+       until => 1277935200, # 2010-07-01 00:00
+       text  => 'Wandlitz: B273: Instandsetzung von Winterschäden OD Wandlitz Ri. Wensickendorf Richtung Wensickendorf gesperrt, 04.05.2009 bis 30.06.2010 ',
+       type  => 'handicap',
+       source_id => 'LSO-SG33-E10043',
+       data  => <<EOF,
+userdel	q4::inwork; 13546,37474 13237,37524 12812,37567
+EOF
+     },
+     { from  => 1272786420, # 2010-05-02 09:47
+       until => 1275055200, # 2010-05-28 16:00
+       text  => 'Zeltinger Str. (Reinickendorf): Baustelle, Fahrtrichtung gesperrt (bis Ende 05.2010) Richtung Zeltinger Platz zwischen Schönfließer Str. und Zerndorfer Weg, 03.05.2010 09:47 Uhr bis 28.05.2010 16:00 Uhr ',
+       type  => 'handicap',
+       source_id => 'IM_015638',
+       data  => <<EOF,
+userdel	q4::inwork; 3112,26253 3057,26075 2994,25873 2941,25822
+EOF
+     },
+     { from  => 1273092119, # 2010-05-05 22:41
+       until => 1293836400, # 2011-01-01 00:00
+       text  => 'Zernitz-Lohm: L141: Ersatzneubau einer Brücke ; Vollsperrung mit örtlicher Umfahrung bei Zernitz, Brücke über die Neue Jäglitz Umfahrung mit LSA, 05.05.2010 bis 31.12.2010 ',
+       type  => 'gesperrt',
+       source_id => 'LSW-SG33-K10053',
+       data  => <<EOF,
+userdel	2::inwork -60868,50275 -60612,50931
 EOF
      },
     );

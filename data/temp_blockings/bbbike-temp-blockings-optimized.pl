@@ -1130,7 +1130,16 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        },
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'IM_014098',
+         'until' => 1275314400,
+         'text' => 'Miraustr. (Reinickendorf): Baustelle, Fahrtrichtung gesperrt (bis Ende 05/2010) stadteinwärts zwischen Innungsstr. und Breitenbachstr., 07.09.2009 11:09 Uhr bis 31.05.2010 16:00 Uhr ',
+         'from' => 1252228140,
+         'id' => 1860,
+         'data' => 'userdel	q4::inwork; 4014,19433 4170,19079 4195,19043
+',
+         'type' => 'handicap'
+       },
        undef,
        undef,
        undef,
@@ -1207,9 +1216,10 @@ userdel	q4::inwork; 10829,18083 10907,18109 10938,18147 10989,18172 11137,18358 
        undef,
        undef,
        {
-         'until' => 1275256800,
-         'text' => 'K 6910 Am Wasser OD Schwielowsee, zw. Hellwegbaumarkt und Mühlenbergstr. Kanal- u. Straßenbau halbseitig gesperrt; Einbahnstraße 21.09.2009-30.05.2010 ',
-         'from' => 1253397600,
+         'source_id' => '96900159',
+         'until' => 1280613600,
+         'text' => 'Schwielowsee: K6910: Kanal- und Straßenbau OL Geltow Richtungsverkehr zw. Mühlenbergstr. und B 1, 30.03.2009 bis 31.07.2010 ',
+         'from' => 1273091418,
          'id' => 1896,
          'data' => 'userdel	q4::inwork; -19013,-5247 -19112,-5226 -19332,-5240
 ',
@@ -1440,7 +1450,17 @@ userdel	q4::inwork; 9130,12433 9141,12320
 ',
          'type' => 'gesperrt'
        },
-       undef,
+       {
+         'source_id' => 'IM_011081',
+         'until' => 1283259600,
+         'text' => 'Blankenburger Str. (Pankow): Baustelle, Fahrtrichtung gesperrt (bis Ende 08.2010) Richtung Dietzgenstr. zwischen Siegfriedstr. und Dietzgenstr. sowie Einbahnstraßenregelung in der Siegfriedstr., 05.01.2009 11:00 Uhr bis 31.08.2010 15:00 Uhr ',
+         'from' => 1231063200,
+         'id' => 2016,
+         'data' => 'userdel	q4::inwork; 10742,19632 10439,19576 10377,19565 10249,19541
+userdel	q4::inwork; 10614,19907 10742,19632
+',
+         'type' => 'handicap'
+       },
        {
          'source_id' => 'IM_015001',
          'until' => 1309471199,
@@ -1452,7 +1472,16 @@ userdel	q4::inwork; 9130,12433 9141,12320
          'type' => 'handicap'
        },
        undef,
-       undef,
+       {
+         'source_id' => 'IM_015284',
+         'until' => 1275314400,
+         'text' => 'Fennstr. (Treptow): Baustelle, Fahrtrichtung gesperrt. Ebenso ist die Britzer Str. Richtung Michael-Brückner-Str. ab Schnellerstr. gesperrt. (bis Ende 05.2010) Richtung Schnellerstr. zwischen Michael-Brückner-Str. und Schnellerstr., 08.03.2010 11:00 Uhr bis 31.05.2010 16:00 Uhr ',
+         'from' => 1267956000,
+         'id' => 2019,
+         'data' => 'userdel	1::inwork 18370,5511 18307,5440 18214,5354 18080,5376 18245,5551
+',
+         'type' => 'gesperrt'
+       },
        {
          'until' => 1276898399,
          'text' => 'Die Leipziger Str. ist zwischen Mauerstr. und Charlottenstr. Richtung Alexanderstr. wegen Bauarbeiten gesperrt. Zu Einbahnstraßen werden Teile der Mauer-, Krausen-, Charlottenstr. und Friedrichstr. Dauer: 15. März 2010 bis 18. Juni 2010 ',
@@ -1603,16 +1632,7 @@ userdel	q3::inwork 9444,11616 9432,11702
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'LSO-SG33-F09177',
-         'until' => 1275343200,
-         'text' => 'Steinhöfel: Kanal- und Straßenbauarbeiten Ortslage Heinersdorf, Verbot für Fahrzeuge 07.09.2009 bis 31.05.2010 ',
-         'from' => 1270235498,
-         'id' => 2036,
-         'data' => 'userdel	q4::inwork 65618,6296 65528,6253 65365,6281 65225,6403
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'LSO-SG33-F10015',
          'until' => 1285020000,
@@ -1790,15 +1810,56 @@ userdel	q3::inwork 9444,11616 9432,11702
 ',
          'type' => 'gesperrt'
        },
+       undef,
        {
-         'source_id' => 'IM_015593',
-         'until' => 1273870500,
-         'text' => 'Roelckestr. (Weißensee) gesperrt, Baustelle In beiden Richtungen zwischen Pistoriusstr. und Gäblerstr. 26.04.2010 18:55 Uhr bis 14.05.2010 22:55 Uhr ',
-         'from' => 1272214500,
-         'id' => 2062,
-         'data' => 'userdel	q4::inwork 13104,16522 13272,16672
+         'source_id' => 'IM_015680',
+         'until' => 1311948000,
+         'text' => 'Blankenburger Chaussee (Karow): Baustelle, Fahrtrichtung gesperrt (Ende 07.2011) stadteinwärts zwwischen Bahnhofstr. und Tarnowitzer Str., 05.05.2010 09:00 Uhr bis 29.07.2011 16:00 Uhr ',
+         'from' => 1272956400,
+         'id' => 2063,
+         'data' => 'userdel	q4::inwork; 15428,22736 15271,22527 15154,22370
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_015641',
+         'until' => 1273237200,
+         'text' => 'Siemensstr. (Oberschöneweide): geplatzte Wasserleitung, Straße vollständig gesperrt in beiden Richtungen zwischen Wilhelminenhofstr. und Edisonstr., 04.05.2010 06:17 Uhr bis 07.05.2010 15:00 Uhr ',
+         'from' => 1272860220,
+         'id' => 2064,
+         'data' => 'userdel	q4::inwork 17962,6674 17860,6644 17766,6616 17614,6571
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'LSO-SG33-E10043',
+         'until' => 1277935200,
+         'text' => 'Wandlitz: B273: Instandsetzung von Winterschäden OD Wandlitz Ri. Wensickendorf Richtung Wensickendorf gesperrt, 04.05.2009 bis 30.06.2010 ',
+         'from' => 1273091803,
+         'id' => 2065,
+         'data' => 'userdel	q4::inwork; 13546,37474 13237,37524 12812,37567
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_015638',
+         'until' => 1275055200,
+         'text' => 'Zeltinger Str. (Reinickendorf): Baustelle, Fahrtrichtung gesperrt (bis Ende 05.2010) Richtung Zeltinger Platz zwischen Schönfließer Str. und Zerndorfer Weg, 03.05.2010 09:47 Uhr bis 28.05.2010 16:00 Uhr ',
+         'from' => 1272786420,
+         'id' => 2066,
+         'data' => 'userdel	q4::inwork; 3112,26253 3057,26075 2994,25873 2941,25822
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'LSW-SG33-K10053',
+         'until' => 1293836400,
+         'text' => 'Zernitz-Lohm: L141: Ersatzneubau einer Brücke ; Vollsperrung mit örtlicher Umfahrung bei Zernitz, Brücke über die Neue Jäglitz Umfahrung mit LSA, 05.05.2010 bis 31.12.2010 ',
+         'from' => 1273092119,
+         'id' => 2067,
+         'data' => 'userdel	2::inwork -60868,50275 -60612,50931
+',
+         'type' => 'gesperrt'
        }
      
 );

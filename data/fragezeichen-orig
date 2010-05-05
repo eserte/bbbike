@@ -10,9 +10,10 @@
 #: section projektierte Radstreifen der Verkehrsverwaltung vvv
 #
 #: last_checked: 2010-03-23
-#: next_check: 2010-06-01
+#: next_check: 2011-01-01
 #: XXX: die ersten Meter in der Breiten Str. sind noch Baustelle ohne Radspuren
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0709/nachricht2788.html
+#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1004/nachricht3862.html Bauarbeiten werden im Oktober 2011 abgeschloßen sein
 Breite Str./Werderscher Markt	?::inwork 10267,12305 10170,12261 10109,12238 10091,12232 10035,12209 9972,12184
 #: last_checked: 2007-07-15
 Löhleinstraße	?::projected 2717,5578 2499,5144 2454,5067 2288,4932
@@ -133,6 +134,11 @@ Lindenstr. bekommt Radspuren	?::projected 9795,10512 9770,10590 9777,10719 9805,
 #: section ignorieren vvv
 #: section Straßen in Bau und Planung vvv
 # 
+#: next_check: 2010-07-15 (public)
+Börnicke - Staffelde: Bau von Radwegen	?::inwork -21772,30661 -20747,31713 -19914,32444 -19361,33130 -19129,33814 -18939,34241 -18555,34920 -18212,35362
+#: by: http://www.berlin.de/ba-pankow/presse/archiv/20100430.1155.294011.html
+#: next_check: 2011-10-01
+Blankenburger Chaussee: Radwege werden angelegt	?::inwork 15154,22370 15271,22527 15428,22736
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20100427.1545.293579.html
 #: next_check: 2010-12-01
 Treskowallee: Radweg wird gebaut	?::inwork; 18816,9705 18800,9743 18758,9847 18737,9901
@@ -270,8 +276,8 @@ Alt-Blankenburg: Bau von Radwegen	?::inwork; 13592,20785 13576,20849 13915,20944
 #: next_check ^^^
 #: by ^^^
 #: by: http://www.berlin.de/ba-neukoelln/presse/archiv/20081118.1520.114696.html
-#: last_checked: 2010-03-24
-#: next_check: 2010-05-01
+#: last_checked: 2010-05-05
+#: next_check: 2010-05-21
 Schwarzer Weg: im März 2010 noch Bauarbeiten	?::inwork 13938,7938 13957,8209 13939,8228
 #XXX del An der Spandauer Brücke: neue Straßenführung	?::inwork 10309,12854 10398,12903 10427,12921 10371,13006
 #XXXdel : by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0802/nachricht2958.html;#: note: laut daniel.geraskov noch eine Baustelle;#: last_checked: 2008-06-23;Oranienburger Str.: Existiert in Richtung Hackescher Markt zwischen Friedrichstraße und Linienstraße eine Radspur?	?; 9215,13392 9281,13374
@@ -5377,3 +5383,5 @@ Klaustaler Str.: Ist die Klaustaler Str. zwischen Harzburger Str. und Bleicherod
 #: XXX: unklarer Eintrag von anonymous für "Gatower Str. Seeburg" (es existiert aber nur ein "Weg"): fester Sandweg, q1, NN
 Gatower Weg (Seeburg): Qualität?	? -8607,11262 -8596,11184 -8451,11071 -8327,10979 -8274,10938
 Slatdorpweg: Für Radfahrer befahrbar? Qualität? Nachts beleuchtet? Existiert ein direkter Zugang zur Lindenthaler Allee?	? -1637,3596 -1478,3498 -1168,3290
+#: XXX laut Pressemitteilung beleuchtet
+"Grüne Fuge": Qualität? Nachts beleuchtet? Ausschilderung? Bordsteine?	? 15140,11811 15122,11834 15121,11899
