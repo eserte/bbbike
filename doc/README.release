@@ -169,11 +169,12 @@ $ cd ~/src/bbbike/projects/www.radzeit.de && make deploy
 Update der CGI-Version an der TU:
 
 	make distdir
-	rsync -a BBBike-3.17-DEVEL/ eserte@user.cs.tu-berlin.de:www/bbbike.new/
-	rsync -a cgi/bbbike-cs-umzug.html user.cs.tu-berlin.de:www/bbbike.new/cgi/bbbike-cs-umzug.html
+	rsync -az BBBike-3.17-DEVEL/ eserte@user.cs.tu-berlin.de:www/bbbike.new/
+	rsync -az cgi/bbbike-cs-umzug.html user.cs.tu-berlin.de:www/bbbike.new/cgi/bbbike-umzug.html
+	rsync -az cgi/bbbike-cs.cgi.config user.cs.tu-berlin.de:www/bbbike.new/cgi/bbbike.cgi.config
 
 > Die vorläufige Adresse
-  http://user.cs.tu-berlin.de/~eserte/bbbike/cgi/bbbike.new.cgi
+  http://user.cs.tu-berlin.de/~eserte/bbbike.new/cgi/bbbike.cgi
   testen. Der Umzugshinweis darf nicht fehlen!
 
 	ssh user.cs.tu-berlin.de 'mv www/bbbike www/bbbike.old && mv www/bbbike.new www/bbbike'
