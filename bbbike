@@ -13025,7 +13025,7 @@ sub enterroute {
 	my $b_str = join(" / ", @l);
 	if (defined $str && 1) {
 	    my $bi_str = balloon_info_from_all_tags($c);
-	    $bi_str =~ s{\Q$str\E\n?}{};
+	    $bi_str =~ s{\Q$str\E\n?}{} if $bi_str;
 	    $b_str .= "\n" . $bi_str if $bi_str;
 	}
 	$c_balloon->Popup($b_str);
