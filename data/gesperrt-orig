@@ -700,9 +700,8 @@ Faucherweg	1 -1307,14801 -1251,14772 -1207,14781 -1141,14814 -896,14888
 #
 # Potsdam
 # 
-Am Neuen Garten	1 -12166,1384 -12212,1201 -12276,831 -12302,718 -12323,635 -12332,585 -12582,127
-#: add_fragezeichen: Ist die Leistikowstr. für Radfahrer in entgegengesetzter Richtung geöffnet?
-Leistikowstr.	1 -12512,810 -12302,718
+Am Neuen Garten	1 -12166,1384 -12212,1201 -12276,831 -12302,718
+Am Neuen Garten	1 -12332,585 -12582,127
 #: XXX_outdoor: überprüfen! Können Radfahrer vielleicht die linke Straßenseite nutzen?
 Humboldtring/Hans-Marchwitza-Ring: Hochstraße	3nocross -11399,-1339 -11461,-1424 -11540,-1543
 #: by: Christoph Ewert:
@@ -1307,7 +1306,7 @@ tragen (Treppe)	0:30 6017,12931
 tragen (Treppe, 4 Stufen)	0:10 38056,48407
 tragen (Treppe, 9 Stufen)	0:15 14331,17016
 tragen (4 Stufen)	0:10 12871,15882
-Rampe und 8 weite Stufen	0:25 16065,6126
+Rampe und flache Treppe (8 Stufen)	0:25 16065,6126
 tragen (Treppe, 12 Stufen)	0:15 5475,7906
 tragen (Treppe, ca. 20 Stufen)	0:25 19163,14981
 tragen (Treppe, ca. 20 Stufen)	0:25 19160,14935
@@ -1510,6 +1509,8 @@ Poller, Abstand 80cm (mit Anhänger über Gehweg umfahren)	BNP:1::trailer=10 7816,
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: last_checked: 2010-05-09
+Bertiniweg: gesperrt, wird evtl. später neu geöffnet	2:inwork -12710,1713 -12642,1781 -12636,1804 -12604,1857 -12605,1927 -12593,1946 -12542,1959
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1002/nachricht3772.html
 #: next_check: 2010-10-01
 Brücke über A10: Sperrung vom 15.02.2010 bis 01.10.2010	2:inwork 15337,24593 15490,24848

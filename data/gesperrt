@@ -539,8 +539,8 @@ Drosselstieg	1 17683,7958 17747,8107
 Blaurackenweg	1 17532,8125 17647,8071 17613,7989
 Harzburger Str. (Pankow), Klaustaler Str...	1s 11442,18736 11419,18801 11463,18817 11469,18799 11483,18753 11462,18743 11442,18736
 Faucherweg	1 -1307,14801 -1251,14772 -1207,14781 -1141,14814 -896,14888
-Am Neuen Garten	1 -12166,1384 -12212,1201 -12276,831 -12302,718 -12323,635 -12332,585 -12582,127
-Leistikowstr.	1 -12512,810 -12302,718
+Am Neuen Garten	1 -12166,1384 -12212,1201 -12276,831 -12302,718
+Am Neuen Garten	1 -12332,585 -12582,127
 Hochstraße	3nocross::ignrte -11399,-1339 -11461,-1424 -11540,-1543
 Humboldtring -> Hans-Marchwitza-Ring: Hochstraße	3::igndisp -11399,-1339 -11461,-1424 -11358,-1491
 Hans-Marchwitza-Ring -> Humboldtring: Hochstraße	3::igndisp -11358,-1491 -11461,-1424 -11540,-1543
@@ -1583,7 +1583,7 @@ tragen (Treppe)	0:30:-7 6017,12931
 tragen (Treppe, 4 Stufen)	0:10:86 38056,48407
 tragen (Treppe, 9 Stufen)	0:15:-149 14331,17016
 tragen (4 Stufen)	0:10:-246 12871,15882
-Rampe und 8 weite Stufen	0:25:76 16065,6126
+Rampe und flache Treppe (8 Stufen)	0:25:76 16065,6126
 tragen (Treppe, 12 Stufen)	0:15:-23 5475,7906
 tragen (Treppe, ca. 20 Stufen)	0:25:-108 19163,14981
 tragen (Treppe, ca. 20 Stufen)	0:25:-12 19160,14935
@@ -1714,6 +1714,7 @@ Drängelgitter	BNP:3:-157 63721,42792
 Schranke, kann auch mit Anhänger umfahren werden	BNP:1:-168 49137,24422
 Drängelgitter	BNP:3:24:trailer=6 3644,8456
 Poller, Abstand 80cm (mit Anhänger über Gehweg umfahren)	BNP:1:1:trailer=10 7816,5682
+Bertiniweg: gesperrt, wird evtl. später neu geöffnet	2:inwork -12710,1713 -12642,1781 -12636,1804 -12604,1857 -12605,1927 -12593,1946 -12542,1959
 Brücke über A10: Sperrung vom 15.02.2010 bis 01.10.2010	2:inwork 15337,24593 15490,24848
 Wegedornbrücke: Vollsperrung, Neubau	2:inwork 20385,593 20442,564 20510,530
 Rathausbrücke: gesperrt bis März 2011 (Neubau)	2:inwork 10362,12351 10422,12395

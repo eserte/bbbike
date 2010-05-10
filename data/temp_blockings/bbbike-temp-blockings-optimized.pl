@@ -1612,16 +1612,7 @@ userdel	q3::inwork 9444,11616 9432,11702
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'LSO-SG33-F10034',
-         'until' => 1273269600,
-         'text' => 'Prötzel: Durchlassbau und Straßenbauarbeiten Prötzel -> Harnekop Sternbeck, 29.03.2010 bis 07.05.2010 ',
-         'from' => 1272051674,
-         'id' => 2034,
-         'data' => 'userdel	2::inwork 49820,27138 49875,28845
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => '86901199',
          'until' => 1275343200,
@@ -1714,16 +1705,7 @@ userdel	q3::inwork 9444,11616 9432,11702
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'LSS-SG33-C10063',
-         'until' => 1273183200,
-         'text' => 'Massen-Niederlausitz: Deckenerneuerung Lieskau - Massen Standorte: B96 12.04.2010 bis 06.05.2010 ',
-         'from' => 1271281087,
-         'id' => 2047,
-         'data' => 'userdel	2::inwork 37473,-85957 37200,-85763 36941,-85640
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'LSW-SG33-K10017',
          'until' => 1293145200,
@@ -1777,39 +1759,12 @@ userdel	q3::inwork 9444,11616 9432,11702
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'LSO-SG33-F10040',
-         'until' => 1273269600,
-         'text' => 'Ausbau der L 38 zwischen Alt Zeschdorf und Abzweig B 167, 29.03.2010 bis 07.05.2010 ',
-         'from' => 1272051749,
-         'id' => 2056,
-         'data' => 'userdel	2::inwork 83070,5097 82765,4636 82314,4413 81301,3881
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'source_id' => 'IM_015553',
-         'until' => 1273249800,
-         'text' => 'Birkbuschstr. (Steglitz): Straße vollständig gesperrt, Fahrbahnschäden in beiden Richtungen zwischen Klingsorstr. und Haydnstr. 20.04.2010 07:14 Uhr bis 07.05.2010 18:30 Uhr ',
-         'from' => 1271654040,
-         'id' => 2057,
-         'data' => 'userdel	q4::inwork 5271,4547 5161,4664 5137,4691 5076,4762
-',
-         'type' => 'handicap'
-       },
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'LSO-SG33-F10045',
-         'until' => 1273183200,
-         'text' => 'Höhenland: Verbot für Fahrzeuge Steinbeck-Brunow und umgekehrt 20.04.2010 bis 06.05.2010 ',
-         'from' => 1272607309,
-         'id' => 2061,
-         'data' => 'userdel	2::inwork 43155,35936 44203,35121
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
+       undef,
        undef,
        {
          'source_id' => 'IM_015680',
@@ -1821,16 +1776,7 @@ userdel	q3::inwork 9444,11616 9432,11702
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_015641',
-         'until' => 1273237200,
-         'text' => 'Siemensstr. (Oberschöneweide): geplatzte Wasserleitung, Straße vollständig gesperrt in beiden Richtungen zwischen Wilhelminenhofstr. und Edisonstr., 04.05.2010 06:17 Uhr bis 07.05.2010 15:00 Uhr ',
-         'from' => 1272860220,
-         'id' => 2064,
-         'data' => 'userdel	q4::inwork 17962,6674 17860,6644 17766,6616 17614,6571
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'LSO-SG33-E10043',
          'until' => 1277935200,

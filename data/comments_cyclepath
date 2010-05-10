@@ -36,9 +36,10 @@ Alt Nowawes: asphaltierte Radwege	RW -10973,-1764 -10884,-1653 -10841,-1599 -106
 B2: asphaltierter Zweirichtungsradweg auf der südöstlichen Seite	RW8;RW2 -10090,6868 -10206,6756 -10927,6333 -12179,5629 -12645,5573 -12865,5567 -13143,5587 -13261,5566 -13578,5396 -13690,5212 -13778,4492
 B2: Radstreifen	RW4;RW4 -13778,4492 -13783,3919 -13784,3900 -13703,3717
 B2: Gehweg für Radfahrer frei	RW1;RW1 -13703,3717 -13567,3403 -13387,2987 -13375,2950
-B2: asphaltierter Zweirichtungsradweg auf der östlichen Seite	RW8;RW2 -13375,2950 -13152,2169 -13141,1933
+B2: asphaltierter Zweirichtungsradweg auf der östlichen Seite	RW8;RW2 -13375,2950 -13152,2169 -13141,1945 -13141,1933
 B2: gemeinsamer Rad- und Gehweg, asphaltiert	RW2;RW2 -13141,1933 -13134,1758 -13133,1698 -13125,1508 -13115,1379 -13113,1356 -13108,1278 -13091,1150 -13039,894 -13038,856 -13042,807 -13058,702 -13062,535 -13036,342 -13091,-8 -13111,-136
 B273: Radweg	RW2;RW2 -13556,-1182 -13556,-1140 -13560,-1106 -13576,-1026 -13625,-902 -13815,-749 -14034,-571 -14134,-468 -14409,-371 -14546,-121 -14587,80 -14650,201 -14737,300
+B273: Radweg	RW2;RW2 -14737,300 -14841,404 -14859,421 -15046,527 -15059,535 -15123,570 -15145,582 -15158,589 -15298,668 -15508,785
 B273: Radweg	RW -18731,5799 -18804,5992 -18962,6183 -19576,6450 -19787,6551 -20023,6826
 Berliner Str., Erkner: Radweg	RW 33593,2893 33894,2825 34142,2742
 Friedrichstr., Erkner: Radweg auf Gehweg	RW 34142,2742 34175,2637 34250,2546 34443,1951
@@ -144,9 +145,9 @@ Neuglobsow - Fürstenberg: straßenbegleitender asphaltierter Radweg	RW -14354,815
 Großwoltersdorf - Menu: straßenbegleitender asphaltierter Radweg	RW -12250,73762 -12381,74147 -12575,74512 -13537,75287 -13950,75662 -14862,76637
 Heinrich-Mann-Allee: parallele Nebenstraße	;RW -11152,-3498 -11311,-3322 -11438,-3179 -11656,-2944
 Heinrich-Mann-Allee: Radweg (auf Gehweg)	RW -11656,-2944 -11770,-2743 -11912,-2587 -11995,-2500 -12318,-2192
-Amundsenstr.: Richtung Norden Radspur, Richtung Süden asphaltierter Radweg	RW4;RW2 -15581,444 -15589,578 -15527,795
-B273: Gemeinsamer Geh- und Radweg, Verbundsteinpflaster, benutzungspflichtig	RW2; -15527,795 -15557,809 -16023,1042 -16640,1304 -16766,1399 -16905,1503 -16897,1518 -16782,1767 -16706,1911
-B273: Radweg, Betonplatten, benutzungspflichtig	RW2; -16640,1304 -16023,1042 -15557,809 -15527,795
+Amundsenstr.: Richtung Norden Radspur, Richtung Süden asphaltierter Radweg	RW4;RW2 -15556,429 -15571,612 -15508,785
+B273: Gemeinsamer Geh- und Radweg, Verbundsteinpflaster, benutzungspflichtig	RW2; -15508,785 -15557,809 -16023,1042 -16640,1304 -16727,1370 -16766,1399 -16905,1503 -16897,1518 -16840,1639 -16782,1767 -16706,1911
+B273: Radweg, Betonplatten, benutzungspflichtig	RW2; -16640,1304 -16023,1042 -15557,809 -15508,785
 Am Neuen Palais: Radspuren	RW4;RW4 -15757,-1758 -15799,-1352
 Geschwister-Scholl-Str.: Gehweg für Radfahrer freigegeben	RW1; -14909,-1818 -15275,-1791 -15757,-1758
 Reiterweg: Radweg	RW2; -13068,-115 -13111,-136
@@ -196,7 +197,7 @@ Rathenow: überwiegend Suggestivstreifen	RW -62839,21218 -62285,21020 -61627,2078
 Päwesin - Brandenburg: benutzungspflichtiger asphaltierter Zweirichtungsradweg auf der östlichen Seite	RW -36502,10426 -36630,10198 -37029,9856 -37071,9625 -37035,9143 -37495,8583 -37541,7333
 Gutenpaaren - Zachow: teilweise mit Radwegen (Gehweg bzw. Radstreifen)	RW -33196,7156 -32754,7349 -31846,7839 -31583,7939 -31328,7955
 Brückenkopf: benutzungspflichtiger asphaltierter Zweirichtungsradweg auf der südlichen Seite	RW -30706,8406 -29594,8467 -28778,8193 -28216,8171 -27406,8069
-Pappelallee: benutzungspflichtiger Zweirichtungsradweg auf der nördlichen Seite	RW2;RW8 -13091,-8 -13240,32 -13367,66 -13436,84 -13561,117 -13794,178 -13811,182 -13945,217 -14235,298 -14435,357 -14547,388 -14676,418
+Pappelallee: benutzungspflichtiger Zweirichtungsradweg auf der nördlichen Seite	RW2;RW8 -13091,-8 -13240,32 -13367,66 -13436,84 -13561,117 -13794,178 -13811,182 -13945,217 -14098,260 -14235,298 -14435,357 -14547,388 -14676,418 -14859,421
 Brentanoweg: verkehrsberuhigt	RW6 -13406,-396 -13452,-358 -13581,-307
 Ulanenweg (Potsdam): verkehrsberuhigt	RW6 -13155,-379 -13285,-360 -13311,-365 -13415,-350 -13452,-358
 Bruno-Taut-Str.: verkehrsberuhigt	RW6 -13067,1506 -12939,1493
@@ -358,6 +359,16 @@ Waldstr.: Radweg mit Verbundsteinpflaster	RW2; 29675,7021 29812,6996 29938,6993 
 Brandenburgische Str.: gemeinsamer Rad- und Gehweg	RW2;RW2 30495,7350 30557,6731 30602,6366 30648,5979
 Birkenweg (Groß Glienicke): verkehrsberuhigt	RW6;RW6 -10055,6715 -10091,6716 -10127,6716 -10177,6711 -10183,6650
 	RW3;RW3 -10715,472 -10826,469
+	RW6;RW6 -12408,1176 -12325,1145 -12411,881
+	RW6;RW6 -13344,160 -13322,259
+	RW6;RW6 -14763,-412 -14801,-4 -14793,159 -14737,300
+	RW6;RW6 -15556,429 -15086,63 -15023,13 -14949,-45
+	RW6;RW6 -15015,851 -15001,891 -14992,927 -15080,954 -15175,988 -15159,1050 -15281,1086
+	RW6;RW6 -15080,954 -15098,889
+	RW6;RW6 -15159,1050 -14974,988 -14826,932
+	RW6;RW6 -14974,988 -14992,927
+	RW6;RW6 -15001,891 -14870,850
+	RW3; -14650,201 -14663,310 -14676,418
 	RW 16953,35907 17114,35904 18082,36115 18440,36179 19193,36011
 Industriestr. (Dahlwitz-Hoppegarten): gegenläufiger Radweg, rotes Betonpflaster	RW 25938,11837 26042,11798 26222,11726 26555,11601 26794,11513 26880,11479
 	RW 1596,29362 1631,29260 1748,29003 1805,28879 1838,28808 1896,28681 2015,28414
