@@ -3215,10 +3215,18 @@ Willstätterstr.: Asphalt	Q0 14193,6556 14306,6651
 (Rundkurs auf dem Flughafen Tempelhof): Beton	Q0 9525,7558 9518,7609 9611,7934 9710,8143 9884,8265 10042,8270 10563,8223
 (Rundkurs auf dem Flughafen Tempelhof - Eingang Tempelhofer Damm): Asphalt	Q0- 9525,7558 9431,7425
 (Rundkurs auf dem Flughafen Tempelhof - Eingang Tempelhofer Damm): Verbundsteinpflaster	Q0- 9431,7425 9392,7339 9302,7294 9242,7286
+(Rundkurs auf dem Flughafen Tempelhof): teils sehr guter Asphalt	Q0+ 11463,7785 11470,7744 11543,7369 11570,7315 11575,7249 11407,7198 11310,7071 11128,6967 10944,6790 10746,6693 10558,6661 10282,6692 10023,6806 9792,6964 9681,7075 9509,7195
+#: XXX_outdoor: prüfen
+(Rundkurs auf dem Flughafen Tempelhof): Asphalt oder Beton	Q0 9509,7195 9545,7426 9525,7558
+(Südliche Landebahn): Asphalt	Q0+ 9461,7190 9509,7195 9677,7206 11359,7307 11518,7314 11570,7315
 #: XXX_outdoor: laut Wikipedia, vor Ort prüfen
-(Südliche Startbahn): Asphalt	Q0 9461,7190 9509,7195 9677,7206 11359,7307 11518,7314 11570,7315
-#: XXX_outdoor: laut Wikipedia, vor Ort prüfen
-(Nördliche Startbahn): Asphalt	Q0 9518,7609 11279,7768 11381,7775 11449,7784
+(Nördliche Landebahn): Asphalt	Q0 9518,7609 11279,7768 11381,7775 11463,7785
+(Nördliche Landebahn - Eingang Oderstr./Herrfurthstr.): Asphalt	Q0 11463,7785 11439,7894
+(Eingang Oderstr./Herrfurthstr. - Flughafen Tempelhof): Asphalt	Q0 11472,7899 11458,7897 11439,7894
+(Strecke an der nordöstlichen Begrenzung): Asphalt	Q0 11439,7894 11418,8015 11327,8007 11303,8089 11143,8139 11005,8064 10640,8366
+(Weg parallel zur Oderstr.): Asphalt	Q0 11458,7897 11489,7748 11507,7647 11528,7528 11547,7432 11570,7315
+(Flughafen Tempelhof - Eingang Oderstr.): Asphalt	Q0 11575,7249 11606,7260
+(Eingang Tempelhofer Damm - südliche Landebahn): Asphalt	Q0 9302,7294 9351,7241 9461,7190
 ######################### User Contributions #################################
 #: by: Dominik Seelow vvv
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3528,4118 3768,4045

@@ -1814,13 +1814,22 @@ userdel	q3::inwork 9444,11616 9432,11702
          'from' => undef,
          'id' => 2068,
          'data' => '(Eingang Columbiadamm - Rundkurs auf dem Flughafen Tempelhof)	2::temp 10691,8532 10640,8366 10563,8223
-(Rundkurs auf dem Flughafen Tempelhof)	2::temp 11449,7784 11543,7369 11570,7315 11575,7249 11407,7198 11310,7071 11128,6967 10944,6790 10746,6693 10558,6661 10282,6692 10023,6806 9792,6964 9681,7075 9509,7195 9545,7426 9525,7558
+(Rundkurs auf dem Flughafen Tempelhof)	2::temp 11463,7785 11470,7744 11543,7369 11570,7315 11575,7249 11407,7198 11310,7071 11128,6967 10944,6790 10746,6693 10558,6661 10282,6692 10023,6806 9792,6964 9681,7075 9509,7195 9545,7426 9525,7558
 (Rundkurs auf dem Flughafen Tempelhof)	2::temp 9525,7558 9518,7609 9611,7934 9710,8143 9884,8265 10042,8270 10563,8223
 (Rundkurs auf dem Flughafen Tempelhof)	2::temp 10563,8223 10729,8152 10924,7987 11090,7916 11264,7882 11355,7871 11381,7775
 (Rundkurs auf dem Flughafen Tempelhof - Eingang Tempelhofer Damm)	2::temp 9525,7558 9431,7425 9392,7339 9302,7294 9242,7286
-(Südliche Startbahn)	2::temp 9461,7190 9509,7195 9677,7206 11359,7307 11518,7314 11570,7315
-(Nördliche Startbahn)	2::temp 9518,7609 11279,7768 11381,7775 11449,7784
-#: note: ^^^
+(Südliche Landebahn)	2::temp 9461,7190 9509,7195 9677,7206 11359,7307 11518,7314 11570,7315
+(Nördliche Landebahn)	2::temp 9518,7609 11279,7768 11381,7775 11463,7785
+(Nördliche Landebahn - Eingang Oderstr./Herrfurthstr.)	2::temp 11463,7785 11439,7894
+(Eingang Oderstr./Herrfurthstr. - Flughafen Tempelhof)	2::temp 11472,7899 11458,7897 11439,7894
+(Strecke an der nordöstlichen Begrenzung)	2::temp 11439,7894 11418,8015 11327,8007 11303,8089 11143,8139 11005,8064 10640,8366
+(Weg parallel zur Oderstr.)	2::temp 11458,7897 11489,7748 11507,7647 11528,7528 11547,7432 11570,7315
+(Eingang Kienitzer Str.)	2::temp 11498,7750 11489,7748 11479,7746 11470,7744
+(Flughafen Tempelhof - Eingang Allerstr.)	2::temp 11507,7647 11515,7654
+(Flughafen Tempelhof - Eingang Okerstr.)	2::temp 11528,7528 11536,7533
+(Flughafen Tempelhof - Eingang Leinestr.)	2::temp 11547,7432 11553,7437
+(Flughafen Tempelhof - Eingang Oderstr.)	2::temp 11575,7249 11606,7260
+(Eingang Tempelhofer Damm - südliche Landebahn)	2::temp 9302,7294 9351,7241 9461,7190
 '
        }
      
