@@ -13243,7 +13243,7 @@ userdel	1::inwork -25441,21563 -25466,21523 -25542,21416
 EOF
      },
      { from  => 1260212611, # undef
-       until => undef, # 
+       until => 1273690257, # undef
        text  => 'Reichenberger Str., Einbahnstraße Richtung Kottbusser Tor',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -17581,13 +17581,14 @@ EOF
        text  => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich. Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
        permanent => 1,
        data  => <<EOF,
-(Eingang Columbiadamm - Rundkurs auf dem Flughafen Tempelhof)	2::temp 10691,8532 10640,8366 10563,8223
+(Eingang Columbiadamm - Rundkurs auf dem Flughafen Tempelhof)	2::temp 10691,8532 10640,8366 10598,8270 10575,8218
+(Eingang Columbiadamm - Rundkurs auf dem Flughafen Tempelhof)	2::temp 10598,8270 10729,8152
 (Rundkurs auf dem Flughafen Tempelhof)	2::temp 11463,7785 11470,7744 11543,7369 11570,7315 11575,7249 11407,7198 11310,7071 11128,6967 10944,6790 10746,6693 10558,6661 10282,6692 10023,6806 9792,6964 9681,7075 9509,7195 9545,7426 9525,7558
-(Rundkurs auf dem Flughafen Tempelhof)	2::temp 9525,7558 9518,7609 9611,7934 9710,8143 9884,8265 10042,8270 10563,8223
-(Rundkurs auf dem Flughafen Tempelhof)	2::temp 10563,8223 10729,8152 10924,7987 11090,7916 11264,7882 11355,7871 11381,7775
-(Rundkurs auf dem Flughafen Tempelhof - Eingang Tempelhofer Damm)	2::temp 9525,7558 9431,7425 9392,7339 9302,7294 9242,7286
+(Rundkurs auf dem Flughafen Tempelhof)	2::temp 9525,7558 9518,7609 9611,7934 9710,8143 9884,8265 10042,8270 10575,8218
+(Rundkurs auf dem Flughafen Tempelhof)	2::temp 10575,8218 10729,8152 10924,7987 11090,7916 11264,7882 11355,7871 11381,7775 11460,7447 11518,7314
+(Rundkurs auf dem Flughafen Tempelhof - Eingang Tempelhofer Damm)	2::temp 9525,7558 9431,7425 9392,7339 9300,7312 9302,7294 9242,7286
 (Südliche Landebahn)	2::temp 9461,7190 9509,7195 9677,7206 11359,7307 11518,7314 11570,7315
-(Nördliche Landebahn)	2::temp 9518,7609 11279,7768 11381,7775 11463,7785
+(Nördliche Landebahn)	2::temp 9351,7600 9518,7609 9654,7621 11279,7768 11381,7775 11463,7785
 (Nördliche Landebahn - Eingang Oderstr./Herrfurthstr.)	2::temp 11463,7785 11439,7894
 (Eingang Oderstr./Herrfurthstr. - Flughafen Tempelhof)	2::temp 11472,7899 11458,7897 11439,7894
 (Strecke an der nordöstlichen Begrenzung)	2::temp 11439,7894 11418,8015 11327,8007 11303,8089 11143,8139 11005,8064 10640,8366
