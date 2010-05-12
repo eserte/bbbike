@@ -1,3 +1,17 @@
+2010-05-12  Slaven Rezic  <slaven@rezic.de>
+
+	* Unerwartete GPS-Genauigkeit: ein mögliches Attribut bei Straßen in
+	BBBike ist die Breite der Straße. Dieses wird in Zukunft dafür
+	verwendet, um optional Straßen in ihrer tatsächlichen Breite auf der
+	Perl/Tk-Karte zu zeichnen.
+
+	Heute war ich auf dem Flughafen Tempelhof unterwegs und habe mit dem
+	alten GPS-Gerät (ein Garmin emap) die Breite der nördlichen Landebahn
+	vermessen. Das Ergebnis: 43m. Dann habe ich bei Wikipedia
+	(http://de.wikipedia.org/wiki/Flughafen_Berlin-Tempelhof) nachgeschaut:
+	stimmt exakt, dort steht auch 43m! Diese GPS-Genauigkeit habe ich nicht
+	erwartet.
+
 2009-10-06  Slaven Rezic  <slaven@rezic.de>
 
 	* Bad Benchmarks: Eine goldene Regel beim Benchmarken: immer prüfen, ob
