@@ -1371,16 +1371,7 @@ userdel	q4::inwork; 9130,12433 9141,12320
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'LSS-SG33-C09248',
-         'until' => 1273874400,
-         'text' => 'L 601 Finsterwalde - Doberlug-Kirchhain OD Lugau, zw. Abzw. Hennersdorfer Str. u. Abzw. Ha Straßenbauarbeiten Vollsperrung 09.11.2009 bis 14.05.2010 ',
-         'from' => 1272607127,
-         'id' => 1987,
-         'data' => 'userdel	2::inwork 28028,-88225 26392,-88322 25763,-88254 25470,-88145 24969,-87998 24927,-87720
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1687,16 +1678,7 @@ userdel	q3::inwork 9444,11616 9432,11702
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'LSO-SG33-E10027',
-         'until' => 1273701600,
-         'text' => 'Liebenwalde: Deckenerneuerung Klosterfelde - Zerpenschleuse 07.04.2010 bis 12.05.2010 ',
-         'from' => 1271281052,
-         'id' => 2046,
-         'data' => 'userdel	2::inwork 16050,46166 16134,45616
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'source_id' => 'LSW-SG33-K10017',
