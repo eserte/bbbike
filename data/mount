@@ -297,7 +297,6 @@ Steigung 2.7% (Koenigsallee)	St; 834,8067 850,8128
 Steigung 2.7% (Wissmannstr. (Neukölln))	St; 11767,9026 11769,8515
 Steigung 2.6% (Knobelsdorffstr.)	St; 2330,11762 2236,11753
 Steigung 2.6% (Chamierstr.)	St; 15801,15706 15840,15806
-Steigung 2.6% (Altonaer Str. (Hansaviertel, Tiergarten))	St; 6020,12492 5967,12525
 Steigung 2.6% (Quastenhornweg)	St; -7557,4340 -7473,4306
 Steigung 2.6% (Heerstr. (Westend, Wilhelmstadt, Staaken))	St; 21,11167 231,11198
 Steigung 2.6% (Uferpromenade)	St; -8879,6914 -8606,6978
@@ -714,6 +713,7 @@ Steigung 1.6% (Heesestr. (Steglitz))	St; 5290,5704 5287,5622
 Steigung 1.6% (Manetstr.)	St; 16251,15629 16036,15722
 Steigung 1.6% (Alte Schönhauser Str.)	St; 10718,13625 10746,13673
 Steigung 1.6% (Kurfürstendamm)	St; 2963,10078 2938,10071
+Steigung 1.6% (Kladower Damm)	St; -4906,7666 -4967,7567
 Steigung 1.6% (Hubertusallee)	St; 2316,8857 2331,9178
 Steigung 1.6% (Mühlenfeldstr.)	St; 2757,22310 2587,22332
 Steigung 1.6% (Bornholmer Str.)	St; 9455,16609 9514,16603
@@ -845,7 +845,6 @@ Steigung 1.4% (Schäferstr. (Wannsee))	St; -7474,341 -7587,312
 Steigung 1.4% (Siegfriedstr. (Neukölln))	St; 12872,7134 12843,7093
 Steigung 1.4% ((Havel-Ufer Gatow))	St; -4546,9381 -4506,9395
 Steigung 1.4% (Schönagelstr.)	St; 21602,15908 21220,15741
-Steigung 1.4% (Sobernheimer Str.)	St; 27932,665 27940,675
 Steigung 1.4% (Potsdamer Chaussee (Zehlendorf, Nikolassee))	St; -2074,2258 -2280,2177
 Steigung 1.4% (Köpenicker Str. (Altglienicke, Adlershof))	St; 19728,1660 19679,1571
 Steigung 1.4% (Schönagelstr.)	St; 21617,16061 21602,15908
@@ -903,7 +902,6 @@ Steigung 1.3% (Kronprinzessinnenweg)	St; -4280,2539 -4188,2674
 Steigung 1.3% (Teplitzer Str.)	St; 2132,8422 2129,8333
 Steigung 1.3% (Bayerischer Platz)	St; 6053,9224 6063,9106
 Steigung 1.3% (Morusstr.)	St; 12521,7701 12478,7878
-Steigung 1.3% (Kladower Damm)	St; -4906,7666 -4967,7567
 Steigung 1.3% (Krampenburger Weg)	St; 28062,568 27952,435
 Steigung 1.3% (Fürstenbrunner Weg)	St; 1488,13454 1545,13418
 Steigung 1.3% (Platanenallee)	St; 1657,11737 1499,11777
@@ -940,14 +938,12 @@ Steigung 1.3% (Tapiauer Allee)	St; -648,10820 -573,10903
 Steigung 1.3% (Falkentaler Steig)	St; 2903,24264 2873,24313
 Steigung 1.3% (Rodenbacher Gang: Qualität?)	St; 28004,617 27893,490
 Steigung 1.3% (Reichweilerweg: Qualität?)	St; 28004,617 28062,568
-Steigung 1.3% (Hornbacher Weg: Qualität zwischen Berghauser Str. und Sobernheimer Str.?)	St; 27817,761 27855,731
 Steigung 1.3% (Kurze Str. (Hermsdorf))	St; 2932,24056 3012,24107
 Steigung 1.3% (Attilastr.)	St; 7310,4308 7368,4342
 Steigung 1.3% (Gotha-Allee)	St; 109,12853 77,12764
 Steigung 1.3% (Weinbergsweg)	St; 10177,13766 10193,13816
 Steigung 1.3% (Lindenstr. (Kreuzberg))	St; 9856,10358 9873,10285
 Steigung 1.3% (Meiningenallee)	St; 522,12577 541,12727
-Steigung 1.3% (Hornbacher Weg: Qualität zwischen Berghauser Str. und Sobernheimer Str.?)	St; 27855,731 27896,695
 Steigung 1.3% (Nogatstr.)	St; 12632,7137 12451,7100
 Steigung 1.3% (Küfersteig)	St; -4380,10891 -4356,10988
 Steigung 1.3% (Am Beelitzhof)	St; -3907,2438 -3882,2441
@@ -1020,8 +1016,8 @@ Steigung 1.2% (Kreuzbergstr.)	St; 8598,9264 8475,9240
 Steigung 1.2% (Brixplatz)	St; 179,12434 269,12462
 Steigung 1.2% (Hochkirchstr.)	St; 8079,9194 8081,9120
 Steigung 1.2% (Am Niederfeld)	St; 23575,10972 23135,10990
-Steigung 1.2% (Weg B: Qualität? Stimmt der Straßenname?)	St; 27963,916 27895,848
 Steigung 1.2% (Weg E: Qualität?)	St; 27963,916 27929,955
+Steigung 1.2% (Weg B: Qualität? Stimmt der Straßenname?)	St; 27963,916 27895,848
 Steigung 1.2% (Metzer Str. (Prenzlauer Berg))	St; 11016,14081 11160,14002
 Steigung 1.2% (Gatower Str.)	St; -4789,11225 -4821,11143
 Steigung 1.2% (Sobernheimer Str.)	St; 27932,665 27831,548
@@ -1163,6 +1159,7 @@ Steigung 1.1% (Havelchaussee)	St; -4072,5227 -3947,5129
 Steigung 1.1% (Schirwindter Allee)	St; -1471,11416 -1505,11307
 Steigung 1.1% (Kranoldplatz (Neukölln))	St; 12833,6796 12715,6775
 Steigung 1.1% (Alter Schönefelder Weg: Qualität? Einbahnstraßenregelung?)	St; 19655,1670 19632,1593
+Steigung 1.0% (Preußenstr. (Qualität?))	St; 20693,1447 20711,1406
 Steigung 1.0% (Alt-Mahlsdorf)	St; 24654,11265 24824,11256
 Steigung 1.0% (Maulbronner Ufer)	St; 7308,4080 7487,4104
 Steigung 1.0% (Erdener Str.)	St; 1782,9270 1757,9282
@@ -1190,6 +1187,7 @@ Steigung 1.0% (Sachsendamm)	St; 7696,7562 7600,7605
 Steigung 1.0% (Lottumstr.)	St; 10703,13832 10649,13860
 Steigung 1.0% (Peschkestr.)	St; 5533,6517 5657,6451
 Steigung 1.0% (Nagolder Pfad: Qualität?)	St; 4648,22632 4526,22567
+Steigung 1.0% (Preußenstr. (Qualität?))	St; 20668,1524 20693,1447
 Steigung 1.0% (Lauterberger Str.)	St; 12160,5997 12154,6063
 Steigung 1.0% (Ystader Str.)	St; 10398,15797 10374,15894
 Steigung 1.0% (Rauschener Allee)	St; -328,10971 -346,11121
@@ -1199,6 +1197,7 @@ Steigung 1.0% (Falkstr.)	St; 12179,7979 12178,7985
 Steigung 1.0% (Sachsendamm)	St; 7600,7605 7491,7675
 Steigung 1.0% (Lindenstr. (Wannsee))	St; -6282,1828 -6368,1809
 Steigung 1.0% (Chemnitzer Str.)	St; 22484,11270 22436,11054
+Steigung 1.0% (Teutonenstr. (Altglienicke): Qualität?)	St; 20700,1363 20585,1396
 Steigung 1.0% (Maximilianstr. (Pankow))	St; 10774,17277 10911,17275
 Steigung 1.0% (Wiesenstr. (Gesundbrunnen))	St; 8683,15354 8607,15426
 Steigung 1.0% (Altenburger Allee)	St; 633,12416 723,12400

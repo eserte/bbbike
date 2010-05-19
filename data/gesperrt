@@ -1449,6 +1449,9 @@ Altheider Str. -> Adlergestell: Mittelstreifen	3::igndisp 19871,3600 19812,3561 
 Adlergestell -> Seidenbaustr.: Mittelstreifen	3::igndisp 19812,3561 19857,3514 19966,3596
 Seidenbaustr. -> Adlergestell: Mittelstreifen	3::igndisp 19966,3596 19857,3514 19904,3464
 Mittelstreifen	3nocross::ignrte 19676,3705 19633,3751 19587,3801
+Straßenbahngleise	3nocross::ignrte 17579,15565 17542,15648 17488,15766
+Str. 156 -> Rhinstr.: Straßenbahngleise	3::igndisp 17570,15658 17542,15648 17579,15565
+Rhinstr. -> Str. 156: Straßenbahngleise	3::igndisp 17488,15766 17542,15648 17570,15658
 tragen (19 Stufen)	0:25:78 11479,7746
 tragen (ca. 17 Stufen)	0:22:-98 13779,4929
 tragen (8 Stufen)	0:15:-210 9956,12617
@@ -1588,6 +1591,7 @@ Rampe und flache Treppe (8 Stufen)	0:25:76 16065,6126
 tragen (Treppe, 12 Stufen)	0:15:-23 5475,7906
 tragen (Treppe, ca. 20 Stufen)	0:25:-108 19163,14981
 tragen (Treppe, ca. 20 Stufen)	0:25:-12 19160,14935
+Einfahrsperre für Autos	BNP:2:7:trailer=6 19003,9800
 sehr enge Stelle	BNP:0:-188:trailer=no 31909,2802
 enges Drängelgitter	BNP:5:-206:trailer=no 30862,3816
 Schranke, Durchfahrtsbreite nur 80cm	BNP:3:78:trailer=no -1342,13134

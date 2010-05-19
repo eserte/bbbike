@@ -1120,6 +1120,8 @@ Schildhornstreifen: Mittelstreifen vor dem Autobahnanschluss	3nocross 4292,6558 
 Adlergestell: Mittelstreifen	3nocross 19735,3643 19812,3561 19857,3514 19904,3464
 #: note: Luftbild:
 Adlergestell: Mittelstreifen	3nocross 19676,3705 19633,3751 19587,3801
+#: by: Thomas Pörs:
+Rhinstr.: Straßenbahngleise	3nocross 17579,15565 17542,15648 17488,15766
 #
 ####################################################################
 #
@@ -1317,6 +1319,9 @@ tragen (Treppe, ca. 20 Stufen)	0:25 19160,14935
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+#: by: hannes Peters:
+#: note: "mit Anhänger eng, aber langsam passierbar"
+Einfahrsperre für Autos	BNP:2::trailer=6 19003,9800
 #: XXX_prog: "künstlicher" Eintrag, um Anhänger auszusperren, siehe auch handicap_s
 sehr enge Stelle	BNP:0::trailer=no 31909,2802
 enges Drängelgitter	BNP:5::trailer=no 30862,3816

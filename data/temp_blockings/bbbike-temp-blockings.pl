@@ -17207,9 +17207,9 @@ EOF
 userdel	q4::inwork -8457,-11261 -8332,-10598
 EOF
      },
-     { from  => 1261436400, # 2009-12-22 00:00
-       until => 1275084000, # 2010-05-29 00:00
-       text  => 'Schenkenberg: Grundhafter Straßenbau L 26 Prenzlau - A 20 23.12.09 - 28.05.10',
+     { from  => 1238191200, # 2009-03-27 23:00
+       until => 1293750000, # 2010-12-31 00:00
+       text  => 'Schenkenberg: L26: Grundhafter Straßenbau Prenzlau - A 20, 28.03.2009 23:00 Uhr bis 30.12.2010 ',
        type  => 'gesperrt',
        source_id => 'LS/O-SG33-E/09/214',
        data  => <<EOF,
@@ -17376,9 +17376,9 @@ EOF
 userdel	2::inwork 25170,18422 25654,17351
 EOF
      },
-     { from  => 1271281052, # 2010-04-14 23:37
-       until => 1273701600, # 2010-05-13 00:00
-       text  => 'Liebenwalde: Deckenerneuerung Klosterfelde - Zerpenschleuse 07.04.2010 bis 12.05.2010 ',
+     { from  => 1274300034, # 2010-05-19 22:13
+       until => 1274479200, # 2010-05-22 00:00
+       text  => 'Liebenwalde: B109: Deckenerneuerung Klosterfelde - Zerpenschleuse, 07.04.2010 bis 21.05.2010 ',
        type  => 'gesperrt',
        source_id => 'LSO-SG33-E10027',
        data  => <<EOF,
@@ -17599,6 +17599,60 @@ EOF
 (Flughafen Tempelhof - Eingang Leinestr.)	2::temp 11547,7432 11553,7437
 (Flughafen Tempelhof - Eingang Oderstr.)	2::temp 11575,7249 11606,7260
 (Eingang Tempelhofer Damm - südliche Landebahn)	2::temp 9302,7294 9351,7241 9461,7190
+EOF
+     },
+     { from  => 1263121920, # 2010-01-10 12:12
+       until => 1275314400, # 2010-05-31 16:00
+       text  => 'Lahnstr. (Neukölln): Baustelle, Fahrtrichtung gesperrt (bis Ende 05.2010) Richtung Grenzallee zwischen Naumburger Str. und Mierstr., 11.01.2010 12:12 Uhr bis 31.05.2010 16:00 Uhr ',
+       type  => 'handicap',
+       source_id => 'IM_014905',
+       data  => <<EOF,
+userdel	q4::inwork; 13627,7047 13500,7018 13278,6967
+EOF
+     },
+     { from  => 1274300387, # 2010-05-19 22:19
+       until => 1280181600, # 2010-07-27 00:00
+       text  => 'Oberkrämer: L17: grundhafter Ausbau der Ortsdurchfahrt OD Schwante zw. Ortseingang und Kreisverkehr, 17.05.2010 bis 26.07.2010 ',
+       type  => 'handicap',
+       source_id => 'LS/O-SG33-E/10/042',
+       data  => <<EOF,
+userdel	q4::inwork -11307,35852 -11541,36139
+EOF
+     },
+     { from  => 1274001000, # 2010-05-16 11:10
+       until => 1276264800, # 2010-06-11 16:00
+       text  => 'Otternbuchtstr. (Spandau): Baustelle, Fahrtrichtung gesperrt (bis voraus. Ende 05/2010) Richtung Nonnendammallee zwischen Motardstr. und Nonnendammallee, 17.05.2010 11:10 Uhr bis 11.06.2010 16:00 Uhr ',
+       type  => 'handicap',
+       source_id => 'IM_015726',
+       data  => <<EOF,
+userdel	q4::inwork; -269,14178 -245,14343 -248,14518
+EOF
+     },
+     { from  => 1274188260, # 2010-05-18 15:11
+       until => 1276876800, # 2010-06-18 18:00
+       text  => 'Stuttgarter Platz (Charlottenburg): Baustelle, Fahrtrichtung gesperrt (bis Mitte 06/2010) Richtung Kaiser-Friedrich-Str. ab Wilmersdorfer Str., 19.05.2010 15:11 Uhr bis 18.06.2010 18:00 Uhr ',
+       type  => 'handicap',
+       source_id => 'IM_015738',
+       data  => <<EOF,
+userdel	q4::inwork; 3827,10980 3546,10962
+EOF
+     },
+     { from  => 1273997280, # 2010-05-16 10:08
+       until => 1274450880, # 2010-05-21 16:08
+       text  => 'Westfälische Str. (Wilmersdorf): Baustelle, Fahrtrichtung gesperrt (bis Ende 05/2010) Richtung Kurfürstendamm zwischen Joachim-Friedrich-Str. und Johann-Sigismund-Str., 17.05.2010 10:08 Uhr bis 21.05.2010 16:08 Uhr ',
+       type  => 'handicap',
+       source_id => 'IM_015724',
+       data  => <<EOF,
+userdel	q4::inwork; 3092,9886 2938,9935
+EOF
+     },
+     { from  => 1274019000, # 2010-05-16 16:10
+       until => 1275318720, # 2010-05-31 17:12
+       text  => 'Wiltbergstr. (Pankow): Baustelle, für beide Richtungen nur ein Fahrstreifen abwechselnd frei (bis ca. Ende 05/2010) in beiden Richtungen zwischen Alt-Buch und Röbellweg, 17.05.2010 16:10 Uhr bis 31.05.2010 17:12 Uhr ',
+       type  => 'handicap',
+       source_id => 'IM_015731',
+       data  => <<EOF,
+userdel	q3::inwork 16414,25575 16294,25683 16194,25743 16166,25767 16114,25827 16045,25907
 EOF
      },
     );
