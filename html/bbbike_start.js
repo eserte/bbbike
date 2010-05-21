@@ -1,5 +1,5 @@
-// bbbike_start.js 1.16
-// (c) 2001-2002,2009 Slaven Rezic. All rights reserved.
+// bbbike_start.js
+// (c) 2001-2002,2009,2010 Slaven Rezic. All rights reserved.
 // See comment in bbbike.cgi regarding x/ygridwidth
 
 var all_above_layer = new Array();
@@ -158,7 +158,12 @@ function any_highlight(type, Evt) {
       Evt = window.event;
       x = Math.floor((Evt.offsetX-below.style.left)/xgridwidth)*xgridwidth;
       y = Math.floor((Evt.offsetY-below.style.top)/ygridwidth)*ygridwidth+offset;
-      above.style.clip = "rect("+y+" "+(x+xgridwidth)+" "+(y+ygridwidth)+" "+x+")";
+      if (window.navigator.appName == "Microsoft Internet Explorer" && document.documentMode) { // IE8 and later
+	above.style.clip = "rect("+y+"px,"+(x+xgridwidth)+"px,"+(y+ygridwidth)+"px,"+x+"px)";
+      } else {
+	// pre-IE8
+	above.style.clip = "rect("+y+" "+(x+xgridwidth)+" "+(y+ygridwidth)+" "+x+")";
+      }
     } else {
       above = find_layer(type + "above");
       below = find_layer(type + "below");

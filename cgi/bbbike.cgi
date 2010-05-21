@@ -1809,7 +1809,7 @@ sub choose_form {
     }
     if ($nice_berlinmap || $nice_abcmap) {
 	push @extra_headers, -onLoad => $onloadscript,
-	     -script => [{-src => $bbbike_html . "/bbbike_start.js?v=1.16"},
+	     -script => [{-src => $bbbike_html . "/bbbike_start.js?v=1.17"},
 			 ($nice_berlinmap
 			  ? {-code => qq{set_bbbike_images_dir('$bbbike_images')}}
 			  : ()
