@@ -437,6 +437,10 @@ Kleistpark: im Sommer bis 21 Uhr geöffnet, im Winter bis 18 Uhr	? 7209,9507 7246
 #
 #: section isolated entries vvv
 #: section ignorieren vvv
+#: by: W. Collin:
+Barlachweg: Beton, Q0	? 8393,828 8322,862
+#: by: Stefanie Rudolf:
+Jacob-Wins-Str. (Hohen Neuendorf): guter Asphalt, Q0	? 928,28943 960,29015 1028,29155 1006,29190 908,29185 849,29062
 #: by: anonymous:
 Grünauer Str. (Bohnsdorf): guter Asphalt, Q0	? 23056,-499 22990,-406 22926,-340
 #: by: Katrin (...knapp)
@@ -914,8 +918,6 @@ Zühlen - Binenwalde: Qualität?	? -30695,73610 -30962,73512 -31387,73037 -31537,7
 #: unverified_by: http://www.ruppin.de/rheinsberg/freizeit/sport/radw_zechlh.html
 Beerenbusch - Zechlinerhütte: Qualität?	? -22787,81662 -23550,82037 -24975,82587 -26520,83231
 Neuglobsow - Rheinsberg: laut http://www.ruppin.de/rheinsberg/freizeit/sport/radw_neuglobsow.html teilweise Waldweg, teilweise Radweg?	? -14354,81575 -14795,81699 -14946,81614 -15229,81572 -15596,81274 -15943,81207 -16224,80970 -16961,80707 -17299,80205 -17707,79391 -17901,79432 -18074,79390 -18050,79047 -18179,78812 -18200,78576 -18350,78427 -18393,78235 -18544,78020
-#: XXX ein anonymer Eintrag hat einen (diesen?) Mittelweg mit "loser Sandweg" attributiert:
-Mittelweg (Altglienicke): Qualität (laut ADFC-Karte mäßig geeignet)?	? 20252,901 20171,698 20133,599 20075,450 20035,348
 Neubrandenburg: Hinterste Mühle - Stadt (Waldweg), wie geht es weiter?	? -78,126443 -112,126528 -62,126684 -96,126768 -231,126900 -428,127368 -493,127450 -671,127478
 Hof Sternhagen - Lindenhagen: Qualität (Deckenerneuerung 5/2005)?	? 35466,92211 34375,92125 33537,92937 33412,93612 33342,94000
 Beenz - Kröchlendorff: Qualität (zumindest die Kröchlendorffer Seite ist asphaltiert)?	? 30850,95280 30813,95463 30179,95743 29814,96060 28388,96768
@@ -2053,7 +2055,6 @@ Oelsnitzer Str.: Qualität?	? 23989,14307 24099,14355 24133,14444 24162,14487
 #: XXX laut uv.weber gute Qualität, aber ohne genauere Angabe:
 U-Bhf. Cottbusser Platz - Auerbacher Ring: Art des Wegbeschaffenheit (Beton, Asphalt, Feinsplitt, oder etwas anderes)?	? 23563,14473 23592,14469 23635,14475 23669,14461
 Maxie-Wander-Str. - Kastanienallee: Durchfahrt für Radfahrer möglich? Qualität?	? 23826,14292 23877,14315
-Sandbacher Weg: Qualität?	? 23504,-938 23407,-981 23073,-1119 22845,-1210 22720,-1255 22482,-1226 22322,-1207 22146,-1183 21930,-1159
 #: XXX: in plaetze-orig übernehmen, sobald der Sandbacher Weg in strassen ist
 Sandbacher Platz: Pl	? 22720,-1255
 Birkenweg (Bohnsdorf): Qualität?	? 23429,-1139 23407,-981
@@ -2258,7 +2259,6 @@ Steinkauzgasse: Qualität?	? -1324,19640 -1193,19587 -1102,19564
 Rauhfußgasse: Qualität?	? -1276,19759 -1157,19711 -1071,19689
 An der Krähenheide: Qualität?	? -1102,19564 -1071,19689 -1045,19793
 Gabelweihstr.: Qualität?	? -1492,19370 -1557,19457 -1681,19593
-Dohlenstr.: Qualität?	? -1584,19363 -1557,19457 -1508,19578 -1419,19815 -1364,19982
 Dorndreherweg: Qualität?	? -1364,19982 -1414,20145 -1473,20181 -1578,20228
 Wilhelm-Ostwald-Str.: Qualität?	? 19933,2474 20116,2639
 Armenische Str.: Qualität?	? 7216,16552 7285,16638 7177,16715 7150,16760 7147,16791
@@ -2668,7 +2668,6 @@ Scheibenbergstr. - Blenheimstr.: Durchfahrt für Radfahrer möglich? Qualität?	? 2
 Schragenfeldstr.: Qualität?	? 20980,14914 21027,14886 21083,14878 21097,14907 21097,14997 21201,14994
 Sitzendorfer Str.: Qualität?	? 21962,17152 21915,17159 21812,17174 21677,17195
 Intzestr.: Qualität?	? 8624,821 8528,869 8434,915 8358,951
-Barlachweg: Qualität?	? 8393,828 8322,862
 Tullaweg: Qualität?	? 8358,750 8393,828 8434,915 8464,990
 Tullaweg - An der Heilandsweide: Qualität?	? 8464,990 8492,1050
 Gebertstr.: Qualität?	? 8451,711 8528,869
@@ -2957,7 +2956,6 @@ Bergengruenstr.: Qualität? Gibt es eine Durchfahrtmöglichkeit zur Potsdamer Chau
 Gilgestr.: Qualität?	? -1181,2913 -1100,2697
 Veronikasteig: Qualität?	? -1403,3047 -1226,3102
 Joachimstr. (Zehlendorf): Qualität?	? -1654,2909 -1575,2934 -1500,2964
-Am Heidehof: Qualität?	? -1612,2785 -1571,2669 -1410,2726
 #: XXX laut Ursel Stapelfeldt "gut befahrbares Kopfsteinpflaster", aber das ist etwas lange her...
 Eiderstedter Weg: Qualität?	? -2096,3402 -2038,3252 -1961,3021 -1951,2995 -1945,2975 -1858,2695
 Reifträgerweg: Qualität?	? -2367,3006 -2529,3220 -2638,3281 -2763,3359
@@ -3956,7 +3954,6 @@ Mettkauer Weg: Qualität?	? 22064,-492 22034,-631
 Schlichtingsheimer Weg: Qualität?	? 22150,-498 22167,-553 22162,-648
 Prieborner Str.: Qualität?	? 21758,-1714 21752,-1619 21760,-1521 21794,-1260 21828,-1015 21868,-611
 Agnes-Hacker-Str.: Qualität?	? 19964,264 19895,355
-Lehmusstr.: führt die Straße weiter bis zur Mittelstr.?	? 20098,359 20075,450
 #: XXX benötigt str_cont_ausnahme-Eintrag
 Wolfmarsteig: Qualität (jenseits und diesseits der Bahnstrecke)?	? 19614,839 19692,805 19779,763 19864,724 19884,714 19966,673 20046,635 20133,599 20246,553 20354,500
 Wolfmarsteig: Qualität (jenseits und diesseits der Bahnstrecke)?	? 20415,468 20447,452
@@ -5377,3 +5374,4 @@ Werner-Nerlich-Bogen (Potsdam-Bornim): Qualität?	? -15954,1639 -16000,1727 -1602
 Heckenstr. (Potsdam-Bornim): Qualität?	? -16840,1639 -16958,1706 -17248,1784
 Am Großen Herzberg (Potsdam-Bornim oder Eiche): Qualität?	? -17419,551 -17083,624 -16939,671
 Herzbergstr., Verlängerung nach Eiche: Qualität?	? -17083,624 -17098,554 -17220,212
+Eichenallee (Hohen Neuendorf): Qualität?	? 1542,28700 1379,28792 1221,28876 1124,28923 1040,28973 960,29015 849,29062 655,29094 464,29099 401,29122

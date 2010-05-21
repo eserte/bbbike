@@ -3359,6 +3359,7 @@ Rietzestr.: Asphalt	Q0 12693,15225 12472,15356
 ######################################################################
 #: by: anonymous vvv
 # 
+Sandbacher Weg: guter Asphalt	Q0 23504,-938 23407,-981 23073,-1119 22845,-1210 22720,-1255 22482,-1226 22322,-1207 22146,-1183 21930,-1159
 Schwanenfeldstr.: guter Asphalt	Q0 4546,14803 4473,14646
 Straße 30 (Französisch Buchholz): Asphalt	Q0 11696,21493 11756,21594
 Korbmacherweg: guter Asphalt	Q0 16352,1226 16375,1313
@@ -6878,6 +6879,10 @@ Friedrich-Wilhelm-Str.: Kopfsteinpflaster	Q2 8385,5907 8622,5867 8801,5844 8988,
 #: by: Thomas Pörs:
 Drachenfelsstr.: guter Asphalt	Q0- 18945,8547 18951,8574 18956,8618 18945,8660 18927,8702 18899,8744 18857,8790
 #: by: Andrea Kliche: vvv
+#: note: ein anonymer Eintrag hat einen (diesen?) Mittelweg mit "loser Sandweg" attributiert:
+#: corrected_by: srt (Q2 -> Q0) "kein radweg, viele parkende autos, daher mäßig befahrbar"
+Mittelweg (Altglienicke): Beton	Q0 20252,901 20171,698 20133,599 20075,450 20035,348
+Mittelweg (Altglienicke): Beton	Q0 20098,359 20075,450
 Ecksteinweg: mäßiges Kopfsteinpflaster	Q2 17830,5324 17765,5406 17736,5441
 Waiblinger Weg: mäßiger Asphalt	Q1 17830,5324 17803,5303 17771,5278
 #: note: auch by anonymous:
@@ -8567,6 +8572,7 @@ Lahmertstr.: Asphalt	Q0 22328,2084 22236,2029 22220,2018 22130,1961
 #: confirmed_by: srt
 Gondeker Str.: Asphalt	Q0 16333,6544 16474,6675
 #: by: Lino Schüpfer:
+#: XXX: Katharina Pöggel meint: Asphalt, Q0
 Rudolf-Beyendorff-Ring: gutes Kopfsteinpflaster	Q1 6196,2204 6257,2120 6223,2097 6170,2060 6150,2089 6201,2125 6223,2097
 #: by: Mirco (jumbler):
 Uslarer Str.: guter Asphalt	Q0 25094,13362 24967,13438 24924,13461 24833,13484 24709,13513 24557,13549 24444,13549 24371,13561 24347,13465
@@ -10368,6 +10374,11 @@ Straße 156: unbefestigt	Q2 17570,15658 17542,15648
 #: by: ^^^
 #: by: Wilke (no complete email):
 Futhzeile: schlechtes Kopfsteinpflaster	Q3 12941,1256 13092,1265
+#: by: tanya lucas:
+#: note: "q4" ohne weitere Angaben ignoriert
+Am Heidehof: mäßiges Kopfsteinpflaster	Q2 -1612,2785 -1571,2669 -1410,2726
+#: by: Gerd (...jaeger...):
+Dohlenstr.: Asphalt	Q0 -1584,19363 -1557,19457 -1508,19578 -1419,19815 -1364,19982
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206
