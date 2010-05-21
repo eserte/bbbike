@@ -22,9 +22,9 @@ require Time::Local;
        text  => "Gesperrte Straßen am 28.5. zwischen 14 Und 24 Uhr während des Kirchentages (im Bereich Pariser Platz - Unter den Linden - Friedrichstr. - Gendarmenmarkt)",
        type  => "handicap",
      },
-     { from  => 1180032943, # 2007-05-24 20:55 PERIODISCH!
-       until => 1180389600, # 2007-05-29 00:00
-       text  => 'Straßenfest rund um den Blücherplatz, 25.05.2007, 0.00 Uhr bis 29.05.2007, 0.00 Uhr ',
+     { from  => Time::Local::timelocal(reverse(2010-1900,5-1,21,0,0,0)), # PERIODISCH!
+       until => Time::Local::timelocal(reverse(2010-1900,5-1,24,23,59,59)), # PERIODISCH!
+       text  => 'Straßenfest rund um den Blücherplatz, 21.05.2010 bis 24.05.2010',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp 9521,10010 9827,10051
@@ -45,9 +45,9 @@ userdel auto	3 9689,10124 9827,10051 9837,9856
 userdel auto	3 9579,10122 9599,10175 9593,10238
 EOF
      },
-     { from  => 1243679400, # 2009-05-30 12:30 PERIODISCH!
-       until => 1243798200, # 2009-05-31 21:30
-       text  => 'Karneval der Kulturen, 31.05.2009, 12.30 Uhr bis 21.30 Uhr ',
+     { from  => Time::Local::timelocal(reverse(2010-1900,5-1,23,0,0,0)), # PERIODISCH!
+       until => Time::Local::timelocal(reverse(2010-1900,5-1,23,23,59,25)), # PERIODISCH!
+       text  => 'Karneval der Kulturen, 23.05.2009',
        type  => 'gesperrt',
        file  => "karneval-der-kulturen.bbd",
      },
