@@ -1153,7 +1153,7 @@ Cremzow: sehr guter Asphalt	Q0 51178,106442 51391,106540
 Cremzow - Klockow: Feldweg in der Qualität eines Trampelpfads	Q3 51030,106885 50419,108545
 Rollberg: Feldweg, teilweise etwas sandig	Q2 53527,102597 53396,102754
 Neuer Garten: Parkweg	Q1 -11615,853 -11715,959 -11818,993 -11871,1087 -12081,1168 -12094,1273 -12139,1325
-Neuer Garten: Parkweg	Q1 -11510,810 -11562,918 -11575,1031 -11537,1206 -11544,1262 -11580,1281 -11871,1185 -11990,1214 -12124,1359 -12141,1357
+Neuer Garten: Parkweg, viel Schotter	Q1- -11510,810 -11562,918 -11575,1031 -11537,1206 -11544,1262 -11580,1281 -11871,1185 -11990,1214 -12124,1359 -12141,1357
 Seestr.: Kopfsteinpflaster	Q2 -11903,-71 -11866,103 -11796,240 -11707,315
 Seestr.: schlechtes Kopfsteinpflaster, bessere Banketten	Q3;Q2 -11707,315 -11609,400 -11584,452 -11581,559
 Seestr.: Kopfsteinpflaster	Q2 -11581,559 -11650,590
@@ -2212,6 +2212,7 @@ Ludwig-Lesser-Str. (Potsdam): Verbundsteinpflaster	Q0- -13971,1415 -13941,1353 -
 Kirchstr. (Gramzow): Asphalt	Q0 49640,90243 49651,90395
 Kirchstr. (Gramzow): Kleinsteinpflaster	Q2+ 49651,90395 49655,90469
 Schulstr. (Gramzow): Kleinsteinpflaster	Q2+ 49655,90469 49841,90479
+Zum Wasserturm (Potsdam): Asphalt	Q0 -11996,-2192 -11993,-2095 -11828,-2110 -11837,-2223
 ######################### User Contributions #################################
 #: by: Aaron Schaar: vvv
 Hermannswerder: guter Asphalt	Q0 -13718,-2991 -14301,-2871 -14577,-3068 -14740,-3262
@@ -3471,7 +3472,7 @@ Wiesenstr. (Potsdam): guter Beton	Q0- -11711,-1749 -11605,-1820 -11535,-1869 -11
 #: by: Maren (...nowy) vvv
 Fritz-Zubeil-Str.: guter Asphalt	Q0 -8997,-3762 -9123,-3655 -9212,-3609 -9356,-3546 -9531,-3408 -9642,-3257 -9845,-2990 -9806,-2861 -9788,-2785 -9767,-2718 -9716,-2543 -9692,-2462
 #: note: "war bisher immer sogar mit Rennradreifen befahrbar"
-An der Wetzlarer Bahn (Potsdam): unbefestigter Weg, bei Regen große Pfützen	Q2 -9306,-4259 -9642,-4916 -9996,-5596
+An der Wetzlarer Bahn (Potsdam): unbefestigter Weg, bei Regen große Pfützen	Q2 -9306,-4259 -9642,-4916 -10015,-5551
 #: by: ^^^
 #: by: Peter Piecha:
 #: note: Privatstraße
@@ -3488,3 +3489,5 @@ Heinrich-Heine-Str. (Blankenfelde): guter Asphalt	Q0 11427,-7836 11342,-7813 104
 #: by: Mark Brunner:
 #: note: q1 ohne weitere Angaben ignoriert
 Ribbeckstr. (Potsdam): guter Asphalt	Q0 -14763,-412 -14801,-4 -14793,159 -14737,300
+#: by: Norbert Ricardo:
+Caputher Heuweg: schlechter Beton	Q2 -10188,-5486 -10288,-5562 -10431,-5655 -10535,-5751 -10641,-5814

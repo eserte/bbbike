@@ -696,6 +696,7 @@ Harzburger Str. (Pankow), Klaustaler Str...	1s:q4 11442,18736 11419,18801 11463,
 #: confirmed_by: Luftbild
 #: XXX_indoor bei osm falsch herum
 Faucherweg	1 -1307,14801 -1251,14772 -1207,14781 -1141,14814 -896,14888
+Römerweg	1s:q2 19236,9710 19450,9728 19459,9842
 ######################################################################
 #
 # Potsdam
@@ -1122,6 +1123,8 @@ Adlergestell: Mittelstreifen	3nocross 19735,3643 19812,3561 19857,3514 19904,346
 Adlergestell: Mittelstreifen	3nocross 19676,3705 19633,3751 19587,3801
 #: by: Thomas Pörs:
 Rhinstr.: Straßenbahngleise	3nocross 17579,15565 17542,15648 17488,15766
+Potsdamer Chaussee: Mittelstreifen	3nocross -1249,2590 -1085,2653 -984,2692 -870,2737
+Potsdamer Chaussee: Mittelstreifen	3nocross -870,2737 -756,2787 -567,2869 -512,2883 -391,2914
 #
 ####################################################################
 #
@@ -1321,7 +1324,8 @@ tragen (Treppe, ca. 20 Stufen)	0:25 19160,14935
 # 
 #: by: hannes Peters:
 #: note: "mit Anhänger eng, aber langsam passierbar"
-Einfahrsperre für Autos	BNP:2::trailer=6 19003,9800
+#: confirmed_by: srt
+Einfahrsperre für Autos	BNP:0::trailer=2 19003,9800
 #: XXX_prog: "künstlicher" Eintrag, um Anhänger auszusperren, siehe auch handicap_s
 sehr enge Stelle	BNP:0::trailer=no 31909,2802
 enges Drängelgitter	BNP:5::trailer=no 30862,3816
@@ -1780,6 +1784,7 @@ Groscurthstr.	1 16369,25230 16458,25193 16428,25107
 #: by: Martha Wimmer [AM]
 Sonnenallee	3nocross 14617,7243 14693,7168 14803,7056
 Treskowallee: Straßenbahntrasse	3nocross 18631,10167 18690,10016 18698,9996 18737,9901
+Treskowallee: Straßenbahntrasse	3nocross 18800,9743 18763,9837 18737,9901
 #: by: Christian Schweda [AM]
 Treskowallee: Straßenbahn	3nocross 18872,9568 18857,9606 18816,9705
 Treskowallee: Straßenbahn	3nocross 18800,9743 18816,9705 18857,9606

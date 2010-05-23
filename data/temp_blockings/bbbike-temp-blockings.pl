@@ -17629,7 +17629,7 @@ userdel	q4::inwork; -269,14178 -245,14343 -248,14518
 EOF
      },
      { from  => 1274188260, # 2010-05-18 15:11
-       until => 1276876800, # 2010-06-18 18:00
+       until => 1274612350, # 2010-06-18 18:00 1276876800
        text  => 'Stuttgarter Platz (Charlottenburg): Baustelle, Fahrtrichtung gesperrt (bis Mitte 06/2010) Richtung Kaiser-Friedrich-Str. ab Wilmersdorfer Str., 19.05.2010 15:11 Uhr bis 18.06.2010 18:00 Uhr ',
        type  => 'handicap',
        source_id => 'IM_015738',

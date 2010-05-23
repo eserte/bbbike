@@ -2592,16 +2592,7 @@ userdel	q3::inwork 9444,11616 9432,11702
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_015288',
-         'until' => 1274536800,
-         'text' => 'Pappelallee - Stahlheimer Str. (Prenzlauer Berg): Gleisbauarbeiten, Fahrtrichtung gesperrt Richtung Schönhauser Allee zwischen Wisbyer Str. und Danziger Str. (bis vorauss. 22.05.2010 16:00)',
-         'from' => 1267950480,
-         'id' => 2022,
-         'data' => 'userdel	q4::inwork; 11727,16358 11618,16183 11554,16075 11550,16068 11500,15988 11455,15916 11393,15823 11373,15789 11301,15668 11183,15485 11119,15385 10881,15047
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'LSO-SG33-F10025',
          'until' => 1285884000,
@@ -2776,16 +2767,7 @@ userdel	q3::inwork 9444,11616 9432,11702
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'LSO-SG33-E10027',
-         'until' => 1274479200,
-         'text' => 'Liebenwalde: B109: Deckenerneuerung Klosterfelde - Zerpenschleuse, 07.04.2010 bis 21.05.2010 ',
-         'from' => 1274300034,
-         'id' => 2046,
-         'data' => 'userdel	2::inwork 16050,46166 16134,45616
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'source_id' => 'LSW-SG33-K10017',
@@ -2944,26 +2926,8 @@ userdel	q3::inwork 9444,11616 9432,11702
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_015738',
-         'until' => 1276876800,
-         'text' => 'Stuttgarter Platz (Charlottenburg): Baustelle, Fahrtrichtung gesperrt (bis Mitte 06/2010) Richtung Kaiser-Friedrich-Str. ab Wilmersdorfer Str., 19.05.2010 15:11 Uhr bis 18.06.2010 18:00 Uhr ',
-         'from' => 1274188260,
-         'id' => 2072,
-         'data' => 'userdel	q4::inwork; 3827,10980 3546,10962
-',
-         'type' => 'handicap'
-       },
-       {
-         'source_id' => 'IM_015724',
-         'until' => 1274450880,
-         'text' => 'Westfälische Str. (Wilmersdorf): Baustelle, Fahrtrichtung gesperrt (bis Ende 05/2010) Richtung Kurfürstendamm zwischen Joachim-Friedrich-Str. und Johann-Sigismund-Str., 17.05.2010 10:08 Uhr bis 21.05.2010 16:08 Uhr ',
-         'from' => 1273997280,
-         'id' => 2073,
-         'data' => 'userdel	q4::inwork; 3092,9886 2938,9935
-',
-         'type' => 'handicap'
-       },
+       undef,
+       undef,
        {
          'source_id' => 'IM_015731',
          'until' => 1275318720,

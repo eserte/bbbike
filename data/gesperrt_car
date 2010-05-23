@@ -984,3 +984,11 @@ Am Krongut - Katharinenstr.: Betonkübel	3 -15085,144 -15086,63 -15023,13
 Am Krongut - Katharinenstr.: Betonkübel	3 -15085,144 -15086,63 -15556,429
 Fliederweg - Vogelweide: Poller	3 -12633,1484 -12928,1646 -12926,1494
 Fliederweg - Vogelweide: Poller	3 -12633,1484 -12928,1646 -12928,1686
+Mittelstreifen	3nocross::ignrte 452,3133 255,3085 161,3062
+Ahornstr. -> Potsdamer Str.: Mittelstreifen	3::igndisp 292,2905 255,3085 161,3062
+Potsdamer Str. -> Ahornstr.: Mittelstreifen	3::igndisp 452,3133 255,3085 292,2905
+Mittelstreifen	3nocross::ignrte -151,2975 -49,3003 50,3031 161,3062
+Düppelstr. -> Potsdamer Str.: Mittelstreifen	3::igndisp 12,2752 -49,3003 -151,2975
+Potsdamer Str. -> Düppelstr.: Mittelstreifen	3::igndisp 50,3031 -49,3003 12,2752
+Mittelstr. -> Potsdamer Str.: Mittelstreifen	3::igndisp 104,2802 50,3031 -49,3003
+Potsdamer Str. -> Mittelstr.: Mittelstreifen	3::igndisp 161,3062 50,3031 104,2802

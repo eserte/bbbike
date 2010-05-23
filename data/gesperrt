@@ -539,6 +539,7 @@ Drosselstieg	1 17683,7958 17747,8107
 Blaurackenweg	1 17532,8125 17647,8071 17613,7989
 Harzburger Str. (Pankow), Klaustaler Str...	1s 11442,18736 11419,18801 11463,18817 11469,18799 11483,18753 11462,18743 11442,18736
 Faucherweg	1 -1307,14801 -1251,14772 -1207,14781 -1141,14814 -896,14888
+Rˆmerweg	1s 19236,9710 19450,9728 19459,9842
 Am Neuen Garten	1 -12166,1384 -12212,1201 -12276,831 -12302,718
 Am Neuen Garten	1 -12332,585 -12582,127
 Hochstraﬂe	3nocross::ignrte -11399,-1339 -11461,-1424 -11540,-1543
@@ -1452,6 +1453,13 @@ Mittelstreifen	3nocross::ignrte 19676,3705 19633,3751 19587,3801
 Straﬂenbahngleise	3nocross::ignrte 17579,15565 17542,15648 17488,15766
 Str. 156 -> Rhinstr.: Straﬂenbahngleise	3::igndisp 17570,15658 17542,15648 17579,15565
 Rhinstr. -> Str. 156: Straﬂenbahngleise	3::igndisp 17488,15766 17542,15648 17570,15658
+Mittelstreifen	3nocross::ignrte -1249,2590 -1085,2653 -984,2692 -870,2737
+Potsdamer Chaussee -> Kaunstr.: Mittelstreifen	3::igndisp -1085,2653 -984,2692 -999,2726
+Kaunstr. -> Potsdamer Chaussee: Mittelstreifen	3::igndisp -999,2726 -984,2692 -870,2737
+Mittelstreifen	3nocross::ignrte -870,2737 -756,2787 -567,2869 -512,2883 -391,2914
+Niklasstr. -> Potsdamer Chaussee: Mittelstreifen	3::igndisp -791,2819 -756,2787 -567,2869
+Potsdamer Chaussee -> Niklasstr.: Mittelstreifen	3::igndisp -870,2737 -756,2787 -791,2819
+Hohentwielst. -> Potsdamer Chaussee: Mittelstreifen	3::igndisp -479,2715 -567,2869 -756,2787
 tragen (19 Stufen)	0:25:78 11479,7746
 tragen (ca. 17 Stufen)	0:22:-98 13779,4929
 tragen (8 Stufen)	0:15:-210 9956,12617
@@ -1591,7 +1599,7 @@ Rampe und flache Treppe (8 Stufen)	0:25:76 16065,6126
 tragen (Treppe, 12 Stufen)	0:15:-23 5475,7906
 tragen (Treppe, ca. 20 Stufen)	0:25:-108 19163,14981
 tragen (Treppe, ca. 20 Stufen)	0:25:-12 19160,14935
-Einfahrsperre f¸r Autos	BNP:2:7:trailer=6 19003,9800
+Einfahrsperre f¸r Autos	BNP:0:7:trailer=2 19003,9800
 sehr enge Stelle	BNP:0:-188:trailer=no 31909,2802
 enges Dr‰ngelgitter	BNP:5:-206:trailer=no 30862,3816
 Schranke, Durchfahrtsbreite nur 80cm	BNP:3:78:trailer=no -1342,13134
@@ -2078,6 +2086,9 @@ Treskowallee -> Weg entlang der Bahnstrecke: Straﬂenbahntrasse	3::igndisp 18737,
 Treskowallee -> Richard-Kolkwitz-Weg: Straﬂenbahntrasse	3::igndisp 18690,10016 18698,9996 18715,10003
 Weg entlang der Bahnstrecke -> Richard-Kolkwitz-Weg: Straﬂenbahntrasse	3::igndisp 18445,9887 18698,9996 18715,10003
 Weg entlang der Bahnstrecke -> Treskowallee: Straﬂenbahntrasse	3::igndisp 18445,9887 18698,9996 18690,10016
+Straﬂenbahntrasse	3nocross::ignrte 18800,9743 18763,9837 18737,9901
+Brascheweg -> Treskowallee: Straﬂenbahntrasse	3::igndisp 18810,9850 18763,9837 18800,9743
+Treskowallee -> Brascheweg: Straﬂenbahntrasse	3::igndisp 18737,9901 18763,9837 18810,9850
 Straﬂenbahn	3nocross::ignrte 18872,9568 18857,9606 18816,9705
 Treskowallee -> Rheinpfalzallee: Straﬂenbahn	3::igndisp 18816,9705 18857,9606 18931,9629
 Rheinpfalzallee -> Treskowallee: Straﬂenbahn	3::igndisp 18931,9629 18857,9606 18872,9568

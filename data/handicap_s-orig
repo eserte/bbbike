@@ -20,9 +20,9 @@ Hauptstr. (Friedrichshain-Kreuzberg): Baustelle, Radfahrer können langsam passie
 Varian-Fry-Str.: Baustelle, Fahrbahn gesperrt	q4::inwork 8389,11378 8374,11479
 #: last_checked: 2010-04-29
 General-Pape-Str.: Baustelle, Fahrbahn Richtung Norden gesperrt	q4::inwork; 7959,7609 7921,7728 7950,7840
-#: last_checked: 2010-04-19
+#: last_checked: 2010-05-22
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 9475,12365 9462,12481 9454,12558
-#: last_checked: 2010-04-19
+#: last_checked: 2010-05-22
 Universitätsstr.: wegen Bauarbeiten Richtung Unter den Linden gesperrt	q4::inwork; 9580,12581 9601,12380
 #: last_checked: 2010-04-18
 Planckstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 9434,12669 9385,12809 9383,12915
@@ -658,8 +658,11 @@ Blaurackenweg: enge Straße, spielende Kinder	q1 17613,7989 17647,8071 17532,8125
 Adolf-Scheidt-Platz: enge Straße, Gegenverkehr	q2; 8731,8050 8765,8050 8783,8020 8769,7994 8731,7990
 Am Britzer Garten - Straße 229: steile Brücke	q3 11103,3960 11104,3981
 Am Britzer Garten - Straße 229: enger Weg; Fußgänger	q2 11104,3981 11111,4055
-#: by: Markus Brandt:
-Kissingenplatz: Bordsteine	q4 11405,17985 11398,17962
+Kaunstr.: Fußgänger	q1 -999,2726 -984,2692
+(Römerweg - Weg entlang der Bahnstrecke): enger Weg	q2 18445,9887 18421,9764
+Brascheweg: enge Straße	q1 18881,9865 18810,9850
+Brascheweg: Fußgänger, Bordstein	q2 18810,9850 18763,9837
+Rudolf-Grosse-Str.: Fußgänger	q1 19141,9709 19142,9755
 ######################### User Contributions #################################
 #: by: Michael Kiekbusch
 #: corrected_by: srt/policy (q4 -> q3-)
@@ -1840,3 +1843,5 @@ Dualastr.: enge Straße	q1 6019,15841 5848,15685
 #: by: hannes Peters:
 #: corrected_by: srt/policy (q3 -> q1)
 (Horterweg - Römerweg): einige Fußgänger	q1 19005,9816 19003,9800 18994,9707
+#: by: Markus Brandt:
+Kissingenplatz: Bordsteine	q4 11405,17985 11398,17962
