@@ -68,7 +68,7 @@ my @uris = ("$rooturl/bbbike.cgi",
     # which hopefully returns a non-zero exit value on problems and prints a
     # lot of diagnostics to stdout/stderr
 
-    local $TODO = "The validator seems to have a bug with fragments...";
+    #XXX del: local $TODO = "The validator seems to have a bug with fragments...";
 
     my $validator = W3C::LogValidator::LinkChecker->new(\%config);
     $validator->uris(@uris);
