@@ -352,6 +352,18 @@ SYMBOL
   STYLE 1 20 END
 END
 
+[% IF 0 %]
+SYMBOL
+  NAME 'oneway_arrow'
+  TYPE VECTOR
+#  POINTS 2 0 4 2 3 2 3 6 1 6 1 2 0 2 2 0 END
+  POINTS 3 0 6 3 4 3 4 7 2 7 2 3 0 3 3 0 END
+  FILLED TRUE
+  STYLE 1 20 END
+  GAP 20
+END
+[% END %]
+
 ## Does not work with mapserver-3.6.6, but with mapserver-4.01-tobe
 SYMBOL
   NAME 'oneway_left'
