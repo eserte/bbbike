@@ -2003,14 +2003,35 @@ LAYER
   LABELITEM "NAME"
 
   CLASSITEM 'CAT'
-[% BLOCK CLASS_R_BHF -%]
   CLASS
     EXPRESSION /^R[ABC]?$/
     COLOR 0 128 0
     SYMBOL 'circle'
+    SIZE 6
+    MINSCALE 75000
+  END
+  CLASS
+    EXPRESSION /^R[ABC]?$/
+    SYMBOL '[% IMAGE_DIR %]/eisenbahn_klein.[% IMAGE_SUFFIX %]'
+    MINSCALE 25000
+    MAXSCALE 75000
+  END
+  CLASS
+    EXPRESSION /^R[ABC]?$/
+    SYMBOL '[% IMAGE_DIR %]/eisenbahn.[% IMAGE_SUFFIX %]'
+    MINSCALE 15000
+    MAXSCALE 25000
+  END
+  CLASS
+    EXPRESSION /^R[ABC]?$/
+    SYMBOL '[% IMAGE_DIR %]/eisenbahn.[% IMAGE_SUFFIX %]'
+    MAXSCALE 15000
+    ## XXX The next LABEL section seems to produce crashes with newer
+    ## Mapservers (4.x). Probably also the LABEL in ubahnhof.
+    ## Or maybe it's the regexp in EXPRESSION? If I leave LABEL as is
+    ## and replace the EXPRESSION with a string EXPRESSION or a much
+    ## simpler regexp, then it also works.
     LABEL
-      MINFEATURESIZE 40
-      MINDISTANCE 150
       POSITION auto
       TYPE truetype
       FONT "lucida"
@@ -2018,14 +2039,7 @@ LAYER
       COLOR 0 128 0
       OUTLINECOLOR 225 225 225
     END
-    SIZE [% size %]
-    [% IF maxscale %]MAXSCALE [% maxscale %][% END %]
-    [% IF minscale %]MINSCALE [% minscale %][% END %]
   END
-[% END -%]
-[% PROCESS CLASS_R_BHF size=6 minscale=20000 maxscale=undef -%]
-[% PROCESS CLASS_R_BHF size=8 minscale=10000 maxscale=20000 -%]
-[% PROCESS CLASS_R_BHF size=10 minscale=undef maxscale=10000 -%]
 
   TEMPLATE "query.html"
   HEADER "query_header2.html"
