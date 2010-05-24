@@ -57,7 +57,7 @@ if (!GetOptions("w=i" => \$w,
 		"h=i" => \$h,
 		"geometry=s" => \$geometry,
 		"bbox=s" => \$bbox,
-		"drawtypes=s" => sub { @drawtypes = split /,/, $_[1] },
+		"drawtypes|layers=s" => sub { @drawtypes = split /,/, $_[1] },
 		"restrict=s" => sub { @restrict = split /,/, $_[1] },
 		"drawscalebar!" => \$draw_scale_bar,
 		"o=s" => \$outfile,
@@ -249,6 +249,7 @@ usage: $0 [options]
 -bbox x1,y1,x2,y2          Use the specified bounding box from the source map
 -drawtypes type1,type2,... Draw the specified types. By default only streets
                            are drawn.
+-layers type1,type2,..     Alias for drawtypes
 -routefile file		   Draw the specified bbr file (some other GPS file
 			   formats are also supported)
 -markerpoint x,y           Draw a marker
@@ -276,7 +277,8 @@ usage: $0 [options]
 -minplacecat cat           Draw places with at least the specified category.
 -[no]drawscalebar          Draw scale bar. Default is true.
 -fontsizescale float       Scale default font sizes for place labels.
--bg|-background color      Specify background color (as GD colors)
+-bg|-background color      Specify background color (as GD colors).
+                           Use "transparent" for a transparent background.
 -q			   Be quiet.
 -debug                     Turn debugging on.
 EOF
