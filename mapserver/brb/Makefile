@@ -111,6 +111,7 @@ MAPSERVER_RELURL=	/bbbike/mapserver/brb				# ***
 MAPSERVER_PROG_RELURL?=	/cgi/mapserv.cgi				# ***
 MAPSERVER_URL=		http://$(HOST)$(MAPSERVER_RELURL)
 MAPSERVER_PROG_URL?=	http://$(HOST)$(MAPSERVER_PROG_RELURL)
+MAPSERVER_VERSION!=	perl -e '`shp2img -v` =~ m/mapserver version (\S+)/i and print $$1'
 # Filesystem path of the mapserv binary:
 MAPSERVER_PROG_FSPATH?=	/home/e/eserte/www/cgi/mapserv.cgi		# ***
 IMAGE_DIR=		$(LOCAL_BBBIKE_DIR)/images
