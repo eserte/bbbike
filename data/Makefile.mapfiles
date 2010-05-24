@@ -386,11 +386,11 @@ $(MAPFILES_DATA_DIR)/ampeln.shp:	ampeln
 	$(BBD2ESRI) -shapetype point -o $(MAPFILES_DATA_DIR)/ampeln ampeln
 
 $(MAPFILES_DATA_DIR)/gesperrt.shp:	gesperrt
-	$(BBD2ESRI) -onewayhack -shapetype polyline \
+	$(BBD2ESRI) -onewayhack -shapetype polyline -filter \
 	     -o $(MAPFILES_DATA_DIR)/gesperrt gesperrt
 
 $(MAPFILES_DATA_DIR)/gesperrt_point.shp:	gesperrt
-	$(BBD2ESRI) -onewayhack -shapetype point \
+	$(BBD2ESRI) -onewayhack -shapetype point -filter \
 	     -o $(MAPFILES_DATA_DIR)/gesperrt_point gesperrt
 
 # Shorten both ends of each "gesperrt" street by 30 meters

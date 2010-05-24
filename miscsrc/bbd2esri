@@ -33,6 +33,7 @@ use BBBikeUtil qw(rad2deg);
 
 my $outprefix;
 my $shapetype = "polyline";
+my $filter_shapetype = 0;
 my $type = "";
 my $imagetype;
 my $onewayhack;
@@ -58,6 +59,7 @@ my $stadt_strassen_rx = qr/$stadt_strassen_rx0/;
 
 if (!GetOptions("o=s" => \$outprefix,
 		"shptype|shapetype=s" => \$shapetype,
+		"filter!" => \$filter_shapetype,
 		"type=s" => \$type,
 		"imagetype=s" => \$imagetype,
 		"onewayhack!" => \$onewayhack,
@@ -68,7 +70,7 @@ if (!GetOptions("o=s" => \$outprefix,
 		"polar!" => \$polar,
 		"igndisp!" => \$handle_igndisp,
 	       )) {
-    die "usage $0: [-o outprefix] [-shptype shapetype] [-type type]
+    die "usage $0: [-o outprefix] [-shptype shapetype] [-[no]filter] [-type type]
 	[-imagetype imagetype] [-onewayhack] [-qualityshack] [-igndisp]
 	[-city city] [-country country]
 	[-dbfencoding encoding] [-polar]
@@ -115,7 +117,9 @@ if ($shapetype eq 'auto') {
 		     );
 } else {
     create_shape_file(-shapetype => $shapetype,
-		      -type => $type);
+		      -type => $type,
+		      -filter => $filter_shapetype,
+		     );
 }
 
 my($glob_rec_no, $glob_min_x, $glob_min_y, $glob_max_x, $glob_max_y);
