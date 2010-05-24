@@ -44,7 +44,7 @@ patch\.gz$
 ^data/.*\.inx$
 ^data/.*\.inx\d+$
 ^data/.*\.lock$
-^README.admin$
+^doc/README.release$
 ^README.tpl$
 ^CRASH/
 ^cache\b
@@ -66,8 +66,10 @@ patch\.gz$
 ^BBBike-\d\.\d+/
 ^BBBike-\d\.\d+-DEVEL/
 ^Bundle/BBBike.tpl.pm$
+^Bundle/BBBike_cgi.pm$
 ^Bundle/BBBike_radzeit.pm$
 ^Bundle/BBBike_windist.pm$
+^Bundle/make_cgi_bundle$
 ^Bundle/make_radzeit_bundle$
 ^Bundle/make_bundle$
 ^Bundle/make_small_bundle$
