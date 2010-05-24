@@ -29,7 +29,8 @@ $VERSION = sprintf("%d.%02d", q$Revision: 1.45 $ =~ /(\d+)\.(\d+)/);
     use base qw(Class::Accessor);
     __PACKAGE__->mk_accessors(qw(BbbikeDir MapserverMapDir MapserverBinDir
 				 MapserverRelurl MapserverUrl TemplateMap
-				 ImageSuffix FontsList MapserverVersion));
+				 ImageSuffix FontsList
+				 MapserverVersion MapserverDriver));
 
     use vars qw($QUIET);
 
@@ -194,7 +195,8 @@ $VERSION = sprintf("%d.%02d", q$Revision: 1.45 $ =~ /(\d+)\.(\d+)/);
 		    StartFlagPoints GoalFlagPoints MarkerPoint TitleText
 		    RouteCoords MultiRouteCoords
 		    MapserverDir MapserverRelurl MapserverUrl
-		    BbbikeDir ImageDir ImageSuffix FontsList MapserverVersion
+		    BbbikeDir ImageDir ImageSuffix FontsList
+		    MapserverVersion MapserverDriver
 		   );
     @computed_accessors = qw(Conf ImageType);
 
@@ -258,17 +260,25 @@ $VERSION = sprintf("%d.%02d", q$Revision: 1.45 $ =~ /(\d+)\.(\d+)/);
 	my $mapserver_dir = $conf->MapserverMapDir;
 	my $shp2img_path = $conf->shp2img_path;
 
-	if (!defined $conf->MapserverVersion) {
+	if (!defined $conf->MapserverVersion ||
+	    !defined $conf->MapserverDriver) {
 	    if (open my $fh, "-|", $shp2img_path, "-v") {
 		my $version_line = <$fh>;
-		if (defined $version_line && $version_line =~ m{mapserver\s+version\s+(\d+)}i) {
-		    $conf->MapserverVersion($1);
+		if (defined $version_line) {
+		    if ($version_line =~ m{mapserver\s+version\s+(\d+)}i) {
+			$conf->MapserverVersion($1);
+		    }
+##XXX enable if there's better AGG support
+# 		    if ($version_line =~ m{\bSUPPORTS=AGG\b}) {
+# 			$conf->MapserverDriver('AGG');
+# 		    }
 		}
 	    }
 	}
 
 	$self->MapserverDir($mapserver_dir);
-	for my $var (qw(MapserverRelurl MapserverUrl ImageSuffix FontsList MapserverVersion)) {
+	for my $var (qw(MapserverRelurl MapserverUrl ImageSuffix FontsList
+			MapserverVersion MapserverDriver)) {
 	    $self->$var($conf->$var());
 	}
 

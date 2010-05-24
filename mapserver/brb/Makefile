@@ -112,6 +112,7 @@ MAPSERVER_PROG_RELURL?=	/cgi/mapserv.cgi				# ***
 MAPSERVER_URL=		http://$(HOST)$(MAPSERVER_RELURL)
 MAPSERVER_PROG_URL?=	http://$(HOST)$(MAPSERVER_PROG_RELURL)
 MAPSERVER_VERSION!=	perl -e '`shp2img -v` =~ m/mapserver version (\S+)/i and print $$1'
+#XXX enable some day: MAPSERVER_DRIVER!=	perl -e '`shp2img -v` =~ m/SUPPORTS=AGG/ ? print "AGG" : print "GD"'
 # Filesystem path of the mapserv binary:
 MAPSERVER_PROG_FSPATH?=	/home/e/eserte/www/cgi/mapserv.cgi		# ***
 IMAGE_DIR=		$(LOCAL_BBBIKE_DIR)/images
@@ -220,6 +221,7 @@ ALL_TPL_DEFINES=\
 	--define MAPSERVER_PROG_URL="$(MAPSERVER_PROG_URL)" \
 	--define MAPSERVER_PROG_FSPATH="$(MAPSERVER_PROG_FSPATH)" \
 	--define MAPSERVER_VERSION="$(MAPSERVER_VERSION)" \
+	--define MAPSERVER_DRIVER="$(MAPSERVER_DRIVER)" \
 	--define IMAGE_DIR="$(IMAGE_DIR)" \
 	--define BBBIKE_HTML_RELURL="$(BBBIKE_HTML_RELURL)" \
 	--define BBBIKE_URL="$(BBBIKE_URL)" \
