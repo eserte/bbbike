@@ -1218,7 +1218,7 @@ tragen (Treppen zur U-Bahnbrücke, 2 x 3 Stufen)	0:20 2301,4917
 tragen (Treppen zur U-Bahnbrücke, 2 x 3 Stufen)	0:20 2181,4835
 tragen (Eisenbahnbrücke Templiner See)	0:60 -15537,-4535
 tragen (Eisenbahnbrücke Templiner See)	0:60 -15652,-4441
-tragen (Eisenbahnbrücke Caputh)	0:60 -18009,-7528
+tragen (Eisenbahnbrücke Caputh)	0:60 -18002,-7496
 tragen (Eisenbahnbrücke Caputh)	0:60 -17978,-7375
 tragen (Eisenbahnbrücke Werder)	0:60 -21048,-2029
 tragen (Eisenbahnbrücke Werder)	0:60 -21210,-2058
@@ -1636,9 +1636,9 @@ tragen (3 Stufen) oder schmale Rampe benutzen	0:5 12982,14629
 tragen (8 Stufen)	0:15 5575,5801
 tragen (12 Stufen)	0:20 5581,5828
 Althoffplatz	1 5687,5586 5609,5584 5573,5622 5613,5672 5683,5672
-Elisenstr.: tragen (3 Stufen)	0:15 5808,5332
+Elisenstr.: tragen (3 Stufen)	0:15 5810,5340
 tragen (9 Stufen)	0:30 5822,5388
-tragen (3 x 10 Stufen)	0:90 5478,4792
+tragen (3 x 10 Stufen)	0:90 5535,4756
 tragen (8 Stufen)	0:30 5466,4765
 tragen (Treppe)	0:20 5371,4609
 #: XXX Was ist das hier? Ein Drängelgitter, eine Schranke?
@@ -1983,6 +1983,7 @@ Poller	BNP:0 -585,36153
 # (entlang Umgehungsbahn) / Einfahrt Kleingartenanlage
 Poller	BNP:5 -2228,37131
 # (entlang Umgehungsbahn) / Schmalkaldener Str.
+#: add_fragezeichen: wo genau ist der Poller: an der KGA oder an der Umgehungsbahn?
 Poller	BNP:5 -1889,37093
 # Fliederweg (Ostende)
 Poller	BNP:0 -1790,39587
