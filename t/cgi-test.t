@@ -206,13 +206,11 @@ SKIP: {
     }
 
     {
-	local $TODO = "Should not return an empty document";
 	my $resp = bbbike_cgi_search +{%noroute_params, output_as => 'gpx-track'}, 'No route, GPX track output';
 	gpxlint_string($resp->decoded_content(charset => 'none'));
     }
 
     {
-	local $TODO = "Should not return an empty document";
 	my $resp = bbbike_cgi_search +{%noroute_params, output_as => 'kml-track'}, 'No route, KML track output';
 	kmllint_string($resp->decoded_content(charset => 'none'));
     }

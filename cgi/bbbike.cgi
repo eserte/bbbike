@@ -3692,7 +3692,7 @@ sub display_route {
 	    );
 	my $s = Strassen->new_from_data("$startname - $zielname\tX " .
 					join(" ", map { "$_->[0],$_->[1]" }
-					     @{ $r->path }) . "\n");
+					     @{ $r->path || [] }) . "\n");
 	my $s_gpx = Strassen::GPX->new($s);
 	print $s_gpx->bbd2gpx(-as => "track");
 	return;
@@ -3707,7 +3707,7 @@ sub display_route {
 	    );
 	my $s = Strassen->new_from_data("$startname - $zielname\tX " .
 					join(" ", map { "$_->[0],$_->[1]" }
-					     @{ $r->path }) . "\n");
+					     @{ $r->path || [] }) . "\n");
 	my $s_kml = Strassen::KML->new($s);
 	print $s_kml->bbd2kml;
 	return;
