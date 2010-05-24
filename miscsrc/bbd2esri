@@ -57,6 +57,8 @@ Neuruppin Mittenwalde));
 my $stadt_strassen_rx0 = "\\((?:" . join("|", map { quotemeta } @stadt_strassen) . ")\\)";
 my $stadt_strassen_rx = qr/$stadt_strassen_rx0/;
 
+use constant Strassen_SHORTCAT => Strassen::LAST + 1;
+
 if (!GetOptions("o=s" => \$outprefix,
 		"shptype|shapetype=s" => \$shapetype,
 		"filter!" => \$filter_shapetype,
@@ -191,16 +193,16 @@ sub create_shape_file {
 
 	    next if $handle_igndisp && $_->[Strassen::CAT] =~ /::igndisp/;
 
-	    $_->[Strassen::CAT] =~ s/::.*//; # XXX hin/rueck XXX :: will change
+	    ($_->[Strassen_SHORTCAT] = $_->[Strassen::CAT]) =~ s/::.*//;
 
 	    if ($filter && $shapetype eq 'polygon') {
-		if ($_->[Strassen::CAT] !~ /^F:/) {
+		if ($_->[Strassen_SHORTCAT] !~ /^F:/) {
 		    next;
 		} else {
-		    $_->[Strassen::CAT] =~ s/^F://;
+		    $_->[Strassen_SHORTCAT] =~ s/^F://;
 		}
 	    }
-	    next if ($filter && $shapetype ne 'polygon' && $_->[Strassen::CAT] =~ /^F:/);
+	    next if ($filter && $shapetype ne 'polygon' && $_->[Strassen_SHORTCAT] =~ /^F:/);
 
 	    if ($filter && $shapetype eq 'point') {
 		if (@{$_->[Strassen::COORDS]} > 1) {
@@ -211,24 +213,24 @@ sub create_shape_file {
 
 	    if (defined $imagetype) {
 		# change extension
-		$_->[Strassen::CAT] =~ s/(IMG:[^|]*\.)[^|]+/$1$imagetype/;
+		$_->[Strassen_SHORTCAT] =~ s/(IMG:[^|]*\.)[^|]+/$1$imagetype/;
 	    }
 	    # XXX should really find a better solution here:
-	    if ($_->[Strassen::CAT] =~ /(.*);(.*)/) {
-		$_->[Strassen::CAT] = ($1 eq '' ? $2 : $1);
+	    if ($_->[Strassen_SHORTCAT] =~ /(.*);(.*)/) {
+		$_->[Strassen_SHORTCAT] = ($1 eq '' ? $2 : $1);
 	    }
 	    # XXX Remove the extra info part in gesperrt files
 	    # (the category should really be better named using the ::
 	    # syntax)!	    
-	    if ($file =~ /gesperrt/ && $_->[Strassen::CAT] =~ /^(.*?):/) {
-		$_->[Strassen::CAT] = $1;
+	    if ($file =~ /gesperrt/ && $_->[Strassen_SHORTCAT] =~ /^(.*?):/) {
+		$_->[Strassen_SHORTCAT] = $1;
 	    }
-	    if ($onewayhack && $_->[Strassen::CAT] eq '1') {
+	    if ($onewayhack && $_->[Strassen_SHORTCAT] eq '1') {
 		for my $res (oneway_hack($_)) {
 		    $create_esri_and_dbf_record->($res);
 		}
 	    } elsif ($qualityshack) {
-		if ($_->[Strassen::CAT] ne "Q0") {
+		if ($_->[Strassen_SHORTCAT] ne "Q0") {
 		    $create_esri_and_dbf_record->($_);
 		}
 	    } else {
@@ -281,7 +283,7 @@ sub create_shape_file {
 	or die "While writing to $outprefix.shx: $!";
 
     my @max_length;
-    my $fields = 6;
+    my $fields = 7;
     {
 	no warnings;
 	for my $i (0 .. $fields-1) {
@@ -292,7 +294,7 @@ sub create_shape_file {
     unlink "$outprefix.dbf";
     my $newtable = XBase->create
 	("name" => "$outprefix.dbf",
-	 "field_names" => [ "NAME", "CAT", "FULLNAME", "STRNR", "CAT_IMG", "CAT_ANCHOR" ],
+	 "field_names" => [ "NAME", "CAT", "FULLNAME", "STRNR", "CAT_IMG", "CAT_ANCHOR", "ANGLE" ],
 	 "field_types" => [ ("C") x $fields ],
 	 "field_lengths" => [ @max_length ],
 	 "field_decimals" => [ (undef) x $fields ]);
@@ -378,6 +380,7 @@ sub create_dbf_record {
     my $str_nr = "";
     my $cat_img = "";
     my $cat_anchor = "";
+    my $angle = "";
     if (exists $args{-type} && $args{-type} =~ /^street/) {
 	($displayname) = $s_rec->[Strassen::NAME] =~ /^([^\(]+)/;
 	if (!defined $displayname) {
@@ -410,8 +413,8 @@ sub create_dbf_record {
 	    }
 	}
     }
-    if ($s_rec->[Strassen::CAT] =~ /\|/) {
-	my(@t) = split /\|/, $s_rec->[Strassen::CAT];
+    if ($s_rec->[Strassen_SHORTCAT] =~ /\|/) {
+	my(@t) = split /\|/, $s_rec->[Strassen_SHORTCAT];
 	foreach (@t) {
 	    if (/^IMG:(.*)/) {
 		$cat_img = $1;
@@ -420,8 +423,11 @@ sub create_dbf_record {
 	    }
 	}
     }
-    [$displayname, $s_rec->[Strassen::CAT], $s_rec->[Strassen::NAME],
-     $str_nr, $cat_img, $cat_anchor];
+    if ($s_rec->[Strassen::CAT] =~ m{^(?:BNP|0):[^:]*:(-?\d+)}) {
+	$angle = -$1;
+    }
+    [$displayname, $s_rec->[Strassen_SHORTCAT], $s_rec->[Strassen::NAME],
+     $str_nr, $cat_img, $cat_anchor, $angle];
 }
 
 sub get_bbox {
@@ -523,9 +529,10 @@ sub oneway_hack {
 	my $cat = ($dir < 0 ? "1_right" : "1_left");
 	for (@{ $res{$dir} }) {
 	    my $r = [];
-	    $r->[Strassen::NAME]   = $d->[Strassen::NAME];
-	    $r->[Strassen::CAT]    = $cat;
-	    $r->[Strassen::COORDS] = $_;
+	    $r->[Strassen::NAME]    = $d->[Strassen::NAME];
+	    $r->[Strassen::CAT]     = $cat;
+	    $r->[Strassen::COORDS]  = $_;
+	    $r->[Strassen_SHORTCAT] = $cat;
 	    push @res, $r;
 	}
     }

@@ -1800,14 +1800,28 @@ LAYER
   CLASS
     EXPRESSION 'BNP'
     NAME "Drängelgitter, Schranken (bis 1:8000)"
-    SYMBOL '[% IMAGE_DIR %]/legend_narrowpassage.[% IMAGE_SUFFIX %]'
     MAXSCALE 8000
+[% IF MAPSERVER_VERSION >= 5 -%]
+    STYLE
+      SYMBOL '[% IMAGE_DIR %]/legend_narrowpassage.[% IMAGE_SUFFIX %]'
+      ANGLE [ANGLE]
+    END
+[% ELSE -%]
+    SYMBOL '[% IMAGE_DIR %]/legend_narrowpassage.[% IMAGE_SUFFIX %]'
+[% END -%]
   END
   CLASS
     EXPRESSION '0'
     NAME "Tragen erforderlich (bis 1:8000)"
-    SYMBOL '[% IMAGE_DIR %]/legend_carry.[% IMAGE_SUFFIX %]'
     MAXSCALE 8000
+[% IF MAPSERVER_VERSION >= 5 -%]
+    STYLE
+      SYMBOL '[% IMAGE_DIR %]/legend_carry.[% IMAGE_SUFFIX %]'
+      ANGLE [ANGLE]
+    END
+[% ELSE -%]
+    SYMBOL '[% IMAGE_DIR %]/legend_carry.[% IMAGE_SUFFIX %]'
+[% END -%]
   END
 
   TEMPLATE "query.html"
