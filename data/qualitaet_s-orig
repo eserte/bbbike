@@ -3701,6 +3701,7 @@ Schreberstr.: guter Asphalt	Q0 1426,2607 1447,2755 1437,2925
 Lockenhuhnweg: schlechtes Kopfsteinpflaster	Q3 16642,393 16555,464 16491,517 16422,575
 Eschelberger Weg: Asphalt	Q0 22116,9585 21954,9640 21822,9681 21692,9727
 Heinrich-Seidel-Str.: mäßiges Kopfsteinpflaster	Q2 6360,4654 6414,4723 6464,4779 6531,4865
+#: confirmed_by: srt (südlich der Ehrlichstr.)
 Stühlinger Str.: schlechtes Kopfsteinpflaster	Q3 18283,8273 18391,8425 18494,8569
 Laudaer Str.: schlechtes Kopfsteinpflaster	Q3 11453,17666 11540,17684 11579,17692 11686,17710 11785,17729 11843,17737
 #: note: die restlichen Angaben waren zweifelhaft: Schrittgeschwindigkeit, Radspur
@@ -5681,6 +5682,7 @@ Nicolaistr.: Kopfsteinpflaster	Q2 6171,3400 6139,3473 6110,3538 6042,3689 5959,3
 #: by: Marco Schmidt
 Barbarastr.: Asphalt	Q0 6374,2844 6357,2863 6320,2909 6371,2955 6451,3034
 #: by: Thede:
+#: confirmed_by: srt (südlich der Ehrlichstr.)
 Heiligenberger Str.: schlechtes Kopfsteinpflaster	Q3 18269,8161 18328,8187 18351,8222 18461,8377 18557,8525
 #: by: Rasmus (pries):
 Katteweg: Beton	Q0 -3017,1056 -3094,1183 -3192,1343 -3245,1427
@@ -9071,8 +9073,9 @@ Schillerstr. (Lichterfelde): schlechtes Kopfsteinpflaster	Q3 4429,2396 4568,2424
 #: by: Sabine (3113sf):
 Lehndorffstr.: schlechtes Kopfsteinpflaster	Q3 18401,8636 18397,8611 18407,8592 18428,8588 18448,8602
 Lehndorffstr.: schlechtes Kopfsteinpflaster	Q3 18407,8592 18322,8470
+#: confirmed_by: srt (südlich der Ehrlichstr.)
 Lehndorffstr.: glatter/ausgebesserter Asphalt	Q0- 18322,8470 18221,8328 18215,8316 18269,8161 18333,8059 18412,7985
-#: confirmed_by: anonymous
+#: confirmed_by: anonymous, srt
 Eginhardstr.: schlechtes Kopfsteinpflaster	Q3 18615,8269 18490,8104 18412,7985
 #: XXX ^^^
 #: by: Hans-Eberhard Heß:
@@ -10477,6 +10480,14 @@ Heinrichstr. (Lichterfelde): guter Beton	Q0- 4433,1800 4542,1729 4605,1633
 #: XXX osm meint "cobblestone", aber ich kann mich auch an losen Sand erinnern...
 Am Großen Fenster: teilweise sehr sandige Stellen	Q3- -4033,4596 -4182,4495 -4671,4524 -4757,4444 -4839,4159 -4918,4087
 #: by: ^^^
+#: by: Denny (...dolph): 
+Sadowastr. (Kaulsdorf): schlechtes Kopfsteinpflaster	Q3 22760,8770 22586,8686 22242,8536 22158,8503 22101,8489
+#: by: Katrin Ahrens:
+#: note: "schmale asphaltdecke, die ca. 2 jahre alt ist. diese teilen sich autos, radfahrer und fußgänger. das ganze gebiet ist ... zone 30"
+Zipser Weg: Asphalt	Q0 25086,9733 25130,9816 25200,9939
+#: by: Wicharz:
+#: confirmed_by: anonymous
+Ruben-Wolf-Str.: gutes Verbundsteinpflaster	Q1+ 19906,217 19785,361
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206
@@ -11643,6 +11654,7 @@ Gielower Str.: Beton mit asphaltierten Ausbesserungen	Q2 13394,4373 13626,4304 1
 (Parkweg Johannisthaler Chaussee - Gutschmidtstr.): Verbundsteine, wassergebundene Decke	Q1 13944,2708 13904,2787 13807,2863 13778,2987 13740,3252 13748,3301 13629,3511
 #: by: ^^^
 #: by: Richard Klemm [AM] vvv
+#: confirmed_by: srt (südlich der Ehrlichstr.)
 Üderseestr.: Kopfsteinpflaster	Q3 18135,8404 18225,8532 18331,8685
 #: corrected_by: Sabine (3113sf) (Q2 -> Q1)
 #: confirmed_by: srt (westlich der Liepnitzstr.)

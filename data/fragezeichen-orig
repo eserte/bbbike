@@ -141,6 +141,7 @@ Bˆrnicke - Staffelde: Bau von Radwegen	?::inwork -21772,30661 -20747,31713 -1991
 Blankenburger Chaussee: Radwege werden angelegt	?::inwork 15154,22370 15271,22527 15428,22736
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20100427.1545.293579.html
 #: next_check: 2010-12-01
+#: last_checked: 2010-05-25
 Treskowallee: Radweg wird gebaut	?::inwork; 18816,9705 18800,9743 18763,9837 18737,9901
 #: last_checked: 2010-03-18 vvv
 Zeuthener-See-Weg	?::projected -1647,16573 -1584,16557
@@ -2219,6 +2220,8 @@ Olpererweg: Qualit‰t?	? 10950,3602 10866,3611
 Schareckstr.: Qualit‰t?	? 10866,3611 10841,3441
 Straﬂe 483: Qualit‰t?	? 10841,3441 10925,3425
 Pohligstr.: Qualit‰t?	? 8969,3074 9000,3065
+#: XXX zumindest von Am Tierpark aus gesehen: Beton
+#: XXX evtl. sind Teile der Straﬂe als "Am Tierpark" ausgeschildert
 Kˆpitzer Str.: Qualit‰t?	? 18409,11348 18392,11420 18317,11402 18272,11552 18390,11597 18381,11655 18557,11660
 Am Karpfenpfuhl: Qualit‰t?	? 2253,2689 2358,2669 2539,2748
 Mˆllerpfad: Qualit‰t?	? 2396,2485 2394,2558 2358,2669
@@ -3479,8 +3482,6 @@ Am Alten Fenn: Qualit‰t?	? 17037,4794 17060,4848 17119,4931 17246,5089 17266,513
 Melli-Beese-Str. - Parkweg: gibt es f¸r Radfahrer eine Verbindung zwischen Melli-Besse-Str. und dem Weg im Landschaftspark?	? 17870,3965 17877,3979
 Rennbahnstr./Gustav-Adolf-Str.: gibt es eine Ampel an der Kreuzung Rennbahnstr./Gustav-Adolf-Str.?	? 13708,17453
 Spiekermannstr.: Ist die Spiekermannstr. eine Tempo-30-Straﬂe oder eine Spielstraﬂe?	? 12054,16517 11919,16495 11844,16483 11663,16458
-#: XXX anonymous meinte: Verbundsteinpflaster, Q1, viele Fuﬂg‰nger, q1; lieber nachfragen!
-Ruben-Wolf-Str.: Qualit‰t? Ist die Straﬂe f¸r Autos offen?	? 19906,217 19785,361
 Kesperhof: Qualit‰t? Ist die Straﬂe eine Spielstraﬂe?	? -1768,1882 -1734,1806
 Flererhof: Qualit‰t? Ist die Straﬂe eine Spielstraﬂe?	? -1698,1927 -1655,1847
 Waldrebensteig: Qualit‰t? Ist die Straﬂe eine Spielstraﬂe?	? -2014,1981 -2174,1933
@@ -3645,7 +3646,6 @@ Am Moosbruch: Qualit‰t?	? 21645,9085 21492,9131
 Seebadstr./Scharnauer Str.: Qualit‰t? Straﬂenname westlich der Waldstr.?	? 22117,8801 22036,8834
 Scharnauer Str.: Qualit‰t?	? 21996,8716 22036,8834 21924,8886 21780,8892 21694,8886 21645,8861 21540,8815
 Ahornstr. (Kaulsdorf): Qualit‰t?	? 22262,8664 22137,8651 22073,8645
-Sadowastr. (Kaulsdorf): Qualit‰t?	? 22760,8770 22586,8686 22242,8536 22158,8503 22101,8489
 Weidenstr.: Qualit‰t?	? 22941,8834 22786,8940 22644,9044
 Arndtstr. (Mahlsdorf, Kaulsdorf): Qualit‰t?	? 22871,8582 22919,8647 23007,8788 23082,8892 23176,9037
 Buchenstr.: Qualit‰t?	? 22514,8848 22586,8961 22644,9044 22699,9137
@@ -3671,7 +3671,6 @@ M¸llerstr. (Mahlsdorf): Qualit‰t?	? 24501,10222 24792,10162 24923,10097 25200,99
 #: XXX fehlt in Berlin.coords.data ZIP=12623
 #: XXX_osm: falsche Schreibweise bei osm (getrennt)
 Langenbeckplatz: Qualit‰t?	? 25030,9626 25095,9627 25086,9733 25020,9728 25030,9626
-Zipser Weg: Qualit‰t?	? 25086,9733 25130,9816 25200,9939
 Spitzwegstr.: Qualit‰t?	? 25237,9595 25095,9627
 Jahnstr. (Mahlsdorf): Qualit‰t?	? 24617,9545 24470,9628
 Levensauer Str.: Qualit‰t?	? 24519,9349 24360,9411 24190,9484

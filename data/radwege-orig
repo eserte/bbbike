@@ -1361,8 +1361,6 @@ Radweg beginnt etwa 40 Meter vor der Kreuzung	RW2; 27022,-2761 27100,-2752
 #: by: Lino Schüpfer:
 	RW6;RW6 6196,2204 6257,2120 6223,2097 6170,2060 6150,2089 6201,2125 6223,2097
 	RW3; 17072,8714 17375,8847
-#: XXX teilweise noch nicht fertig
-#: last_checked: 2010-03-26
 die letzten Meter sind benutzungspflichtig	RW3; 17375,8847 17729,8850
 	RW4; 17729,8850 17375,8847
 die letzten 50 Meter werden auf dem Gehweg geführt	RW4; 17375,8847 17072,8714
@@ -1480,10 +1478,10 @@ am Anfang gibt es einen benutzungspflichtigen Radweg von 80 Metern Länge, danach
 am Anfang gibt es einen kurzen benutzungspflichtigen Radweg, danach ist der Gehweg für Radfahrer frei	RW1; 18206,13817 18187,14039 18184,14078 18181,14110 18166,14277
 Gehweg für Radfahrer frei; am Ende gibt es 60 Meter benutzungspflichtigen Radweg	RW1; 18166,14277 18181,14110 18184,14078 18187,14039 18206,13817
 Gehweg für Radfahrer frei; am Ende gibt es 80 Meter Radweg	RW1; 18206,13817 18234,13500
-	RW2; 18215,12132 18216,12239
+	RW2;RW 18215,12132 18216,12239
 	RW4; 18216,12239 18216,12262 18220,12450 18234,13500
 	RW4; 18234,13500 18220,12450 18216,12262
-	RW4?; 18216,12262 18216,12239 18215,12132
+	RW; 18216,12262 18216,12239
 	RW3; 20097,13549 20186,13533
 	RW1;RW1 22605,15111 22726,15082 22886,15095
 	RW1;RW1 23082,15329 22968,15315 22897,15287 22886,15095 22892,14937 22969,14840 23104,14827
