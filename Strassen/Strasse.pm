@@ -136,6 +136,7 @@ sub short {
 #    B1: (Potsdam -) Berlin
 # depending on the traveling direction.
 # Street numbers like "B1" or "F2.2" are recognized.
+# A trailing " (...)" or ", ..." is always left at the end.
 # Arguments:
 #   $backwards: reverse the direction
 #   -unicode => 1: use unicode characters, if appropriate
@@ -166,8 +167,8 @@ sub beautify_landstrasse {
     $str;
 }
 
-# Turn "(Berlin - Potsdam)" or "Berlin - Potsdam" into Berlin
-# or leave the name unchanged.
+# Turn "(Berlin - Potsdam)" or "Berlin - Potsdam" into Berlin (the
+# start) or leave the name unchanged.
 sub get_first_part {
     my($str) = @_;
     if ($str =~ /^\((.+?)\)/) {
@@ -180,6 +181,8 @@ sub get_first_part {
     }
 }
 
+# Turn "(Berlin - Potsdam)" or "Berlin - Potsdam" into Potsdam (the
+# destination) or leave the name unchanged.
 sub get_last_part {
     my($str) = @_;
     if ($str =~ /^\((.+?)\)/) {
