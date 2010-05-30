@@ -1539,16 +1539,7 @@ userdel	q3::inwork 9444,11616 9432,11702
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'LSW-SG33-K10024',
-         'until' => 1275084000,
-         'text' => 'Vollsperrung zw. Läsikow und Rohrlack ab 29.03.10 bis 28.05.2010 ',
-         'from' => 1269727200,
-         'id' => 2029,
-         'data' => 'userdel	2::inwork -44683,45909 -46141,45772
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => '96400995',
          'until' => 1277935200,
@@ -1745,16 +1736,7 @@ userdel	q3::inwork 9444,11616 9432,11702
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_015638',
-         'until' => 1275055200,
-         'text' => 'Zeltinger Str. (Reinickendorf): Baustelle, Fahrtrichtung gesperrt (bis Ende 05.2010) Richtung Zeltinger Platz zwischen Schönfließer Str. und Zerndorfer Weg, 03.05.2010 09:47 Uhr bis 28.05.2010 16:00 Uhr ',
-         'from' => 1272786420,
-         'id' => 2066,
-         'data' => 'userdel	q4::inwork; 3112,26253 3057,26075 2994,25873 2941,25822
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'LSW-SG33-K10053',
          'until' => 1293836400,

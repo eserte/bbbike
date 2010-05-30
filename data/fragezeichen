@@ -1691,8 +1691,6 @@ Keuperweg: Qualität?	? 10795,1251 10737,1397
 Schneekoppenweg: Qualität?	? 8179,2630 8208,2771
 Felgentreustr.: Qualität?	? 8129,2390 8030,2423 7934,2471 7801,2527
 Bruno-Möhring-Str.: Qualität?	? 8217,1866 8281,1998
-Welterpfad: Qualität?	? 8110,2076 8048,1945 8009,1852 7994,1750 7991,1724 7899,1544 7814,1376 7787,1361
-Welterpfad: Qualität?	? 7830,1345 7814,1376
 Kaiserallee: Qualität zwischen Friedrichrodaer Str. und Beyrodtstr.?	? 7710,1646 7729,1624 7899,1544 7981,1505
 Kaiserallee: Qualität zwischen Marienfelder Allee und Kirchstr.?	? 8152,1425 8283,1354 8383,1311
 Domagkstr.: Qualität?	? 8034,1171 8163,1110 8263,1061
@@ -2273,7 +2271,7 @@ Reußstr.: Qualität?	? -3023,16925 -3129,16931 -3238,16948
 Blankestr.: Qualität?	? 5193,17428 5314,17558 5334,17592
 Reuterstr. (Reinickendorf): Qualität?	? 5314,17558 5307,17582 5318,17617 5363,17667
 Seeburg - Heerstr.: Qualität? Gibt es hier Wegweiser oder Straßennamen?	? -9467,12248 -9210,13338
-Bernauer Str.: Wo genau befinden sich Radspuren, wo befinden sich Radwege?	? -168,16269 127,17176 255,17528 600,18472 901,18732 1229,18750 1405,18749 1659,18747 1967,18743 2175,18740 2602,18737 2643,18738 2821,18831
+Bernauer Str.: existieren östlich der Neheimer Str. Radwege oder Radspuren?	? 1229,18750 1405,18749 1659,18747 1967,18743 2175,18740 2602,18737 2643,18738 2821,18831
 Quickborner Str.: Wo genau befinden sich Radspuren, wo befinden sich Radwege?	? 7416,22349 7072,22905 6890,23213 6839,23300 6770,23417
 Fritz-Rumpf-Str. (Potsdam): Ist die Straße bereits fertiggestellt? Qualität?	? -11307,133 -11388,270
 Leonardo-da-Vinci-Str. (Potsdam): Ist die Straße bereits fertiggestellt? Qualität?	? -11390,72 -11609,400
@@ -2342,7 +2340,6 @@ Sulzer Str.: Qualität?	? 13720,21761 13825,21730 13887,21714 13938,21700 14017,2
 Urbacher Str.: Qualität?	? 14262,21607 14227,21657 14156,21753 14064,21838 13950,21935 13853,22006
 Jungbornstr.: Qualität?	? 13915,20944 13875,21077 13878,21122 13910,21280 13978,21496 14017,21673 14064,21838
 Ahornallee (Blankenburg): Qualität?	? 14096,21243 14157,21442 14227,21657
-Rhönstr.: Qualität?	? 13598,21360 13415,21442 13371,21462
 Ilsenburgstr.: Qualität?	? 13729,21779 13652,21799 13478,21532 13415,21442 13287,21224 13215,21077 13219,21002
 Eifelstr.: Qualität?	? 13580,21286 13351,21237 13287,21224
 Vogesenstr.: Qualität?	? 13351,21237 13368,21142
@@ -2572,7 +2569,6 @@ Eichenhofweg: Qualität?	? 24056,9798 24299,9746
 Rosa-Valetti-Str.: Qualität?	? 24405,10383 24618,10601 24639,10622 24662,10632
 Lutherstr. (Mahlsdorf): Qualität?	? 24420,10029 24718,9966
 Müllerstr. (Mahlsdorf): Qualität?	? 24501,10222 24792,10162 24923,10097 25200,9939 25385,9842 25543,9755
-Langenbeckplatz: Qualität?	? 25030,9626 25095,9627 25086,9733 25020,9728 25030,9626
 Spitzwegstr.: Qualität?	? 25237,9595 25095,9627
 Jahnstr. (Mahlsdorf): Qualität?	? 24617,9545 24470,9628
 Levensauer Str.: Qualität?	? 24519,9349 24360,9411 24190,9484
@@ -2657,7 +2653,6 @@ Stegeweg (Neu-Hohenschönhausen): Qualität?	? 19409,18397 19579,18933
 (Weg durch Falkenberger Krugwiesen): Qualität? Nachts beleuchtet?	? 18646,17345 18680,17422 18784,17525 18831,17663 19102,17879 19111,18040 19212,18205 19251,18252 19249,18351 19291,18456
 Zum Forsthaus: Qualität?	? 21814,13256 21956,13221
 Wasserweg (Baumschulenweg): Kolonieweg, Qualität?	? 15370,4690 15212,4611
-Straße 7 (Blankenburg): Qualität?	? 13371,21462 13345,21468 13158,21471 13093,21472
 Malchower Str.: Qualität?	? 13182,19832 12586,20131 12547,20154
 Sigurdstr.: Qualität?	? 12632,19310 12674,19188 12706,19107
 Straße 5 (Heinersdorf): Qualität?	? 12674,19188 12631,19169
@@ -3194,7 +3189,6 @@ Feldmarkweg: Qualität?	? 3304,21205 3314,21165 3458,21206 3450,21244
 Königsweg (Tegel): Qualität?	? 2131,20406 2184,20616
 Lichtweg: Qualität?	? 1390,18651 1302,18398
 Liesborner Weg: Qualität?	? 1719,19093 1642,19116 1610,19034 1677,18989
-Semmelweg: Qualität? Sind die Abschnitte im Wald für den Autoverkehr gesperrt? Nachts beleuchtet?	? 1229,18750 1101,18611 915,18352 766,18083 492,17831 396,17648 255,17528
 Straße A: Qualität?	? 1179,15892 1268,15916 1275,15854
 Straße B: Genaue Lage der Straße? Qualität?	? 1233,15889 1207,15868
 Virgiliusstr.: Qualität?	? 2696,21648 2678,21669
@@ -3928,6 +3922,10 @@ Herzbergstr., Verlängerung nach Eiche: Qualität?	? -17083,624 -17098,554 -17220,
 Eichenallee (Hohen Neuendorf): Qualität?	? 1542,28700 1379,28792 1221,28876 1124,28923 1040,28973 960,29015 849,29062 655,29094 464,29099 401,29122
 nördlich der Elsenborner Str.: hier entsteht eine neue Straße	? 21939,10179 21946,10217
 Fortsetzung der Mieltschiner Str.: hat dieser Stummel einen Straßennamen?	? 22051,10201 22001,10216
+Breitscheidstr. (Glienicke): Qualität östlich der Schönfließer Str.?	? 4244,25914 4292,25894 4394,25887 4579,25865 4690,25853 4795,25838 4888,25829 4985,25863 5085,25906
+Heinrich-Heine-Str. (Glienicke): Qualität südlich der Clara-Zetkin-Str.?	? 4844,25231 4862,25056 4863,25002 4880,24833
+Feldstr. (Dahlewitz): Qualität?	? 12180,-8466 12184,-8518 12180,-8556 12193,-8681 12198,-8833
+Ruppiner Str. (Falkensee): Qualität nördlich der Eberswalder Str.?	? -10845,19025 -10829,19222 -10811,19428
 # added from ampeln-orig
 geschlossen bei Bedarf (?) (Zbr)	? 27657,-11741
 S-Bahn alle 20 Minuten, Regionalbahn halbstündlich (?) (B)	? 40248,14503

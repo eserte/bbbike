@@ -2798,7 +2798,7 @@ EOF
        text  => 'L 201; (Nauener Chaussee); OD Falkensee, zw. F.-Ludwig-Jahn-Str. u. Innstr. Straßenbauarbeiten halbseitig gesperrt; Einbahnstraße 14.09.2005-30.09.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 -12601,19517 -12074,19052
+userdel	q4 -12601,19517 -12161,19075
 EOF
      },
      { from  => 1126994400, # 2005-09-18 00:00
@@ -2926,7 +2926,7 @@ EOF
        text  => 'L 201; (Nauener Chaussee); OD Falkensee, zw. F.-Ludwig-Jahn-Str. u. Innstr. Straßenbauarbeiten halbseitig gesperrt; Einbahnstraße 14.09.2005-30.10.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 -12601,19517 -12074,19052
+userdel	q4 -12601,19517 -12161,19075
 EOF
      },
      { from  => 1128549600, # 2005-10-06 00:00
@@ -5647,7 +5647,7 @@ EOF
        text  => 'L 201 OD Falkensee OD Falkensee, Falkenhagener Str. Straßenbau Vollsperrung 28.08.2006-31.07.2007 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork -10661,17873 -10926,17992
+userdel	q4::inwork -10661,17873 -10806,17958 -10926,17992
 EOF
      },
      { from  => 1156976097, # 2006-08-31 00:14

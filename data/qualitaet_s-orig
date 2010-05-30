@@ -3294,6 +3294,9 @@ Am Binsengrund: Asphalt	Q0 21264,10237 21429,10207
 Am Binsengrund: Asphalt	Q0 21435,10255 21566,10222
 #: XXX_osm laut osm "track"
 Garziner Platz: Asphalt	Q0 20945,10286 20947,10137
+Eberhard-Roters-Platz: Asphalt	Q0 9026,8916 8990,8915 8954,8914
+Alte Brauerei: Asphalt	Q0 8954,8914 8953,8886 8814,8881
+(Zufahrt zum Viktoria-Quartier): Asphalt	Q0 9111,9036 9026,8916
 ######################### User Contributions #################################
 #: by: Dominik Seelow vvv
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
@@ -5194,6 +5197,7 @@ Rue Diderot: Asphalt	Q0 4525,21714 4596,21629
 #: note: auch laut ADFC-Karte gut befahrbar
 (Weg parallel zur S-Bahn): Asphalt	Q0 27068,5723 27096,5828 30041,5329
 #: by: David wolff:
+#: confirmed_by: http://www.panoramio.com/photo/8300196
 Burgwallstr.: Kopfsteinpflaster, Straßenschäden	Q2 12993,21112 13065,21267 13107,21357 13136,21419 13158,21471 13171,21532 13182,21639 13192,21697 13220,21761 13270,21870 13315,21969 13392,22014 13505,22081 13609,22143 13682,22139 13762,22064
 #: by: Andreas Aurenz: vvv
 Am Breiten Luch: Asphalt	Q0 17531,17802 17650,17605 17729,17448 17784,17357 17872,17226 17907,17161
@@ -10482,12 +10486,27 @@ Am Großen Fenster: teilweise sehr sandige Stellen	Q3- -4033,4596 -4182,4495 -467
 #: by: ^^^
 #: by: Denny (...dolph): 
 Sadowastr. (Kaulsdorf): schlechtes Kopfsteinpflaster	Q3 22760,8770 22586,8686 22242,8536 22158,8503 22101,8489
-#: by: Katrin Ahrens:
+#: by: Katrin Ahrens: vvv
 #: note: "schmale asphaltdecke, die ca. 2 jahre alt ist. diese teilen sich autos, radfahrer und fußgänger. das ganze gebiet ist ... zone 30"
 Zipser Weg: Asphalt	Q0 25086,9733 25130,9816 25200,9939
+Langenbeckplatz: Asphalt	Q0 25030,9626 25095,9627 25086,9733 25020,9728 25030,9626
+#: by: ^^^
 #: by: Wicharz:
 #: confirmed_by: anonymous
 Ruben-Wolf-Str.: gutes Verbundsteinpflaster	Q1+ 19906,217 19785,361
+#: by: Max Mütze vvv
+Straße 7 (Blankenburg): mäßiger Asphalt	Q1- 13371,21462 13345,21468 13158,21471 13093,21472
+#: XXX Ist das die regelmäßig überschwemmte Straße? wosch fragen, wäre ein Kandidat für permanent temporary blockings
+#: note: "einige Fußgänger" ignoriert
+Rhönstr.: schlechtes Kopfsteinpflaster	Q3 13598,21360 13415,21442 13371,21462
+#: by: ^^^
+#: by: Jörg Henke:
+Semmelweg: mehr oder weniger guter Sandweg	Q1- 1229,18750 1101,18611 915,18352 766,18083 492,17831 396,17648 255,17528
+#: by: Cornelia Mohr: vvv
+#: note: "enge Straße" ohne weitere Kategorisierung
+Welterpfad: mäßiges Kopfsteinpflaster	Q2 8110,2076 8048,1945 8009,1852 7994,1750 7991,1724 7899,1544 7814,1376 7787,1361
+Welterpfad: mäßiges Kopfsteinpflaster	Q2 7830,1345 7814,1376
+#: by: ^^^
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206
