@@ -1,9 +1,10 @@
-#: #: -*- coding: iso-8859-1 -*-
-#: title.de: Bahnhöfe
+#: #: -*- coding: utf-8 -*-
+#: encoding: utf-8
+#: title.de: BahnhÃ¶fe
 #: title.en: Railway stations
 #:
-Groß Kreutz	R -32016,-190
-Götz	R -35459,-224
+GroÃŸ Kreutz	R -32016,-190
+GÃ¶tz	R -35459,-224
 Brandenburg Hbf	R -46266,-1576
 Werder (Havel)	RC -21828,-2017
 Park Sanssouci	RC -15988,-1651
@@ -22,26 +23,26 @@ Berlin-Lichterfelde Ost	RB 5440,2601
 Erkner	RC 34218,2881
 Fangschleuse	RC 39180,600
 Hangelsberg	R 46013,-87
-Fürstenwalde (Spree)	R 55263,-3509
-Berkenbrück	R 62527,-4485
+FÃ¼rstenwalde (Spree)	R 55263,-3509
+BerkenbrÃ¼ck	R 62527,-4485
 Briesen (Mark)	R 70410,-5531
 Jacobsdorf (Mark)	R 75478,-6977
 Pillgram	R 78352,-6456
 Frankfurt (O)-Rosengarten	R 83331,-6407
 Frankfurt (Oder)	R 88514,-6346
 #: note: erstes Alias ist der offizielle Name (nach DB-Schreibart)
-#: alias: Berlin-Schönefeld Flughafen
-#: alias: Flughafen Berlin-Schönefeld
-Berlin-Schönefeld	RC 18055,-1466
-Berlin-Hohenschönhausen	RB 17607,18021
+#: alias: Berlin-SchÃ¶nefeld Flughafen
+#: alias: Flughafen Berlin-SchÃ¶nefeld
+Berlin-SchÃ¶nefeld	RC 18055,-1466
+Berlin-HohenschÃ¶nhausen	RB 17607,18021
 Berlin-Karow	RB 14608,23364
 Bernau	RC 22841,30263
 Melchow	R 29509,41269
 Biesenthal	R 28311,39218
-Rüdnitz	RC 25726,34974
+RÃ¼dnitz	RC 25726,34974
 Berlin-Lichtenberg	RB 16778,11789
-Berlin-Schöneweide	RC 17711,5556
-Königs Wusterhausen	RC 26358,-11950
+Berlin-SchÃ¶neweide	RC 17711,5556
+KÃ¶nigs Wusterhausen	RC 26358,-11950
 Berlin-Spandau	RB -3663,14083
 Albrechtshof	RB -8380,15635
 Finkenkrug	RC -13390,17659
@@ -50,14 +51,14 @@ Seegefeld	RC -9349,15982
 Birkenwerder (b Bln)	RC 2136,31373
 Zeesen	R 26672,-15428
 Bestensee	R 26727,-17991
-Teupitz-Groß Köris	R 27949,-26971
+Teupitz-GroÃŸ KÃ¶ris	R 27949,-26971
 Halbe	R 31477,-32547
 Oderin	R 33384,-36450
 Brand (Niederlausitz)	R 33067,-41376
-Schönwalde (Spreewald)	R 36962,-45621
+SchÃ¶nwalde (Spreewald)	R 36962,-45621
 Lubolz	R 40155,-48954
-Lübben	R 43878,-51288
-Lübbenau (Spreewald)	R 49789,-59862
+LÃ¼bben	R 43878,-51288
+LÃ¼bbenau (Spreewald)	R 49789,-59862
 Raddusch	R 54813,-65044
 Vetschau	R 58287,-67886
 Kunersdorf	R 65614,-69976
@@ -66,9 +67,9 @@ Cottbus	R 74670,-71679
 Drebkau	R 67931,-82643
 Neupetershain	R 63919,-88103
 Bahnsdorf	R 60794,-90756
-Beelitz-Heilstätten	R -21560,-16569
+Beelitz-HeilstÃ¤tten	R -21560,-16569
 Borkheide	R -26380,-20185
-Brück (Mark)	R -32726,-25134
+BrÃ¼ck (Mark)	R -32726,-25134
 Baitz	R -37650,-27751
 Belzig	R -43747,-30975
 Wiesenburg (Mark)	R -54747,-35332
@@ -83,20 +84,20 @@ Eberswalde Hbf.	R 36315,48006
 Britz	R 37898,52485
 #: alias: Chorin-Kloster
 Chorin	R 41143,55887
-Angermünde	R 49537,68462
+AngermÃ¼nde	R 49537,68462
 Golzow (b Eberswalde)	R 38211,56944
-Alt Hüttendorf	R 35261,61767
+Alt HÃ¼ttendorf	R 35261,61767
 Joachimsthal Kaiserbahnhof	R 33202,62538
 Joachimsthal	R 32757,64358
 Friedrichswalde (b Eberswalde)	R0 29531,69814
 Ringenwalde (b Templin)	R0 29767,72721
-Götschendorf	R0 26811,76231
+GÃ¶tschendorf	R0 26811,76231
 Milmersdorf	R0 24914,77407
 Templin-Ahrensdorf	R0 20433,78961
 Paulinenaue	R -36876,29064
 Friesack (Mark)	R -45827,38663
 Neustadt (Dosse)	R -54951,48347
-Glöwen	R -80274,53857
+GlÃ¶wen	R -80274,53857
 Bad Wilsnack	R -89553,59810
 Wittenberge	R -102378,64686
 Brieselang	RC -16944,19074
@@ -104,60 +105,60 @@ Nauen	R -25037,22273
 Golm	RC -18752,-155
 Marquardt	RC -18868,5376
 Priort	RC -19003,11857
-Fürstenwalde (Spree) Süd	R 57300,-6161
+FÃ¼rstenwalde (Spree) SÃ¼d	R 57300,-6161
 Bad Saarow-Pieskow	R 55840,-11737
-Bad Saarow-Pieskow Süd	R0 56271,-14149
+Bad Saarow-Pieskow SÃ¼d	R0 56271,-14149
 Pfaffendorf (Mark)	R0 61919,-15513
-Görzig	R0 63873,-18582
-Groß Rietz	R0 65755,-20078
+GÃ¶rzig	R0 63873,-18582
+GroÃŸ Rietz	R0 65755,-20078
 Genshagener Heide	RC 773,-9022
 Saarmund	RC -7311,-9420
 Medienstadt Babelsberg	RC -8504,-2983
-Potsdam-Rehbrücke	RC -10063,-5703
+Potsdam-RehbrÃ¼cke	RC -10063,-5703
 Wilhelmshorst	RC -11995,-8631
-Blankenfelde (Kreis Teltow-Fläming)	RC 11620,-7638
+Blankenfelde (Kreis Teltow-FlÃ¤ming)	RC 11620,-7638
 Dahlewitz	RC 11916,-8926
 Rangsdorf	RC 12689,-12237
 Dabendorf	R 13303,-18833
 Zossen	R 13431,-20775
-Wünsdorf-Waldstadt	R 15545,-26610
+WÃ¼nsdorf-Waldstadt	R 15545,-26610
 Neuhof	R 16387,-29522
 Baruth (Mark)	R 18690,-38440
 Klasdorf	R 21020,-42586
-Golßen (Niederlausitz)	R 23193,-47694
+GolÃŸen (Niederlausitz)	R 23193,-47694
 Drahnsdorf	R 23772,-54417
 Luckau-Uckro	R 25796,-61489
 Walddrehna	R 26513,-70163
 Doberlug-Kirchhain	R 23340,-86911
-Rückersdorf	R 24113,-93224
+RÃ¼ckersdorf	R 24113,-93224
 Hohenleipisch	R 24321,-100627
 Finsterwalde (Elster)	R 33232,-85117
 Uebigau	R 5165,-91360
 Beutersitz	R 9534,-90687
-Schönborn	R 16901,-89222
+SchÃ¶nborn	R 16901,-89222
 Ludwigsfelde	RC 1617,-12044
 Teltow	RC 3620,-2183
-Großbeeren	RC 2735,-6109
+GroÃŸbeeren	RC 2735,-6109
 Birkengrund	RC 1875,-10129
 Thyrow	RC 1071,-18033
 Trebbin	R -666,-21019
 Woltersdorf (b Luckenwalde)	R -2833,-32291
 Luckenwalde	R -5185,-35289
-Jüterbog	R -12286,-45931
+JÃ¼terbog	R -12286,-45931
 Hennigsdorf (bei Berlin)	RC -3389,25653
 Hohen Neuendorf West	RC 1023,29499
 Oranienburg	RC -672,38539
-Löwenberg (Mark)	R -4935,54265
-Grüneberg	R -3329,51114
+LÃ¶wenberg (Mark)	R -4935,54265
+GrÃ¼neberg	R -3329,51114
 Nassenheide	R -1451,45464
 Sachsenhausen (Nordb)	R -558,40520
 Gransee	R -6766,65969
 Dannenwalde	R -6044,74616
-Fürstenberg	R -9110,86517
+FÃ¼rstenberg	R -9110,86517
 Neustrelitz	R -13963,105660
 Herzberg (Mark)	R -19634,55184
 Grieben (b Gransee)	R -14608,54966
-Löwenberg (Mark) Dorf	R -7661,54585
+LÃ¶wenberg (Mark) Dorf	R -7661,54585
 Lindow	R -19439,61399
 Rheinsberg (Mark)	R -25318,75961
 Bergsdorf	R -315,58852
@@ -167,10 +168,10 @@ Vogelsang	R 7894,70146
 Hammelspring	R 11310,73962
 Templin	R 14930,78702
 Templin Stadt	R 16309,79309
-Templin Fährkrug	R0 18947,81344
+Templin FÃ¤hrkrug	R0 18947,81344
 Kreuzkrug	R0 21864,83909
 Mittenwalde (b Templin)	R0 26223,87256
-Haßleben	R0 28020,90451
+HaÃŸleben	R0 28020,90451
 Beenz	R0 31324,95360
 Prenzlau Vorstadt	R0 37106,100775
 Prenzlau	R 39987,102437
@@ -188,11 +189,11 @@ Tiefensee	R 38906,30514
 Niederlehme	RC 27744,-11230
 Zernsdorf	RC 30540,-11482
 Kablow	R 32518,-11375
-Friedersdorf (b Königs Wusterhausen)	R 36939,-12446
+Friedersdorf (b KÃ¶nigs Wusterhausen)	R 36939,-12446
 Kummersdorf (b Storkow)	R 42883,-13964
 Storkow (Mark)	R 46168,-16562
-Hubertushöhe	R 49185,-18431
-Scharmützelsee	R 52274,-21413
+HubertushÃ¶he	R 49185,-18431
+ScharmÃ¼tzelsee	R 52274,-21413
 Lindenberg-Glienicke	R 59078,-21714
 Buckow (b Beeskow)	R 63298,-23314
 Beeskow	R 68917,-24373
@@ -200,20 +201,20 @@ Oegeln	R 71817,-24971
 Schneeberg	R 74244,-25777
 Grunow (Niederlausitz)	R 77470,-25460
 Mixdorf	R 78476,-21816
-Müllrose	R 81032,-17104
+MÃ¼llrose	R 81032,-17104
 Helenesee	R 83667,-13242
 Frankfurt (O)-Neuberesinchen	R 88647,-7503
 Kraftwerk Finkenheerd	R 90604,-14439
 Finkenheerd	R 90236,-15987
 Wiesenau	R 91224,-17937
 Ziltendorf	R 93637,-21564
-Eisenhüttenstadt	R 96550,-27095
+EisenhÃ¼ttenstadt	R 96550,-27095
 Neuzelle	R 95946,-32565
 Wellmitz	R 100667,-36394
 Coschen	R 100954,-41174
 Velten (Mark)	RC -5713,30692
-Schönerlinde	RC 11754,27432
-Schönwalde	RC 11966,29491
+SchÃ¶nerlinde	RC 11754,27432
+SchÃ¶nwalde	RC 11966,29491
 Basdorf	RC 11957,34472
 Wandlitz	RC 14082,37744
 Wandlitzsee	RC 14605,39023
@@ -221,24 +222,24 @@ Klosterfelde	R 15493,42945
 Lottschesee	R 16159,45652
 Ruhlsdorf-Zerpenschleuse	R 18999,48836
 Klandorf	R 19881,52733
-Groß Schönebeck (Schorfheide)	R 18644,55554
+GroÃŸ SchÃ¶nebeck (Schorfheide)	R 18644,55554
 Herrensee	R 43033,14393
 Rehfelde	R 45524,14275
-Müncheberg (Mark)	R 57788,14133
+MÃ¼ncheberg (Mark)	R 57788,14133
 Obersdorf	R 62186,15614
 Trebnitz (Mark)	R 65626,15786
 Alt Rosenthal	R 69626,17157
 Seelow Gusow	R 74655,18271
 Golzow	R 85564,18758
 Gorgast	R 88278,18856
-Küstrin-Kietz	R 92076,19533
+KÃ¼strin-Kietz	R 92076,19533
 Kostrzyn	R 94630,21978
 Beelitz Stadt	R -18700,-19044
 Elsholz	R -19456,-22887
 Buchholz (Zauche)	R -21643,-27151
 Treuenbrietzen	R -25765,-35573
-Treuenbrietzen Süd	R -24010,-37129
-Jüterbog Altes Lager	R -16643,-43721
+Treuenbrietzen SÃ¼d	R -24010,-37129
+JÃ¼terbog Altes Lager	R -16643,-43721
 Oehna	R -12496,-52968
 Linda (Elster)	R -9770,-61926
 Holzdorf (Elster)	R -7629,-69884
@@ -249,13 +250,13 @@ Elsterwerda Biehla	R 20632,-103673
 Plessa	R 27064,-103786
 Ruhland	R 44530,-105196
 Elsterwerda	R 20441,-105131
-Prösen Ost	R 19478,-108805
+PrÃ¶sen Ost	R 19478,-108805
 Frauenhain	R 19747,-113446
 Zabeltitz	R 20648,-117376
-Großenhain Cottbusser Bahnhof	R 21343,-123775
+GroÃŸenhain Cottbusser Bahnhof	R 21343,-123775
 Priestewitz	R 20447,-128357
 Niederau	R 24092,-136541
-Weinböhla	R 24183,-138430
+WeinbÃ¶hla	R 24183,-138430
 Coswig (Dresden)	R 25511,-142501
 Radebeul-Naundorf	R 26870,-143860
 Niederwartha	R 27370,-145572
@@ -276,25 +277,25 @@ Altranft	R 55935,40605
 Bad Freienwalde	R 52760,43485
 Falkenberg (Mark)	R 47413,45515
 Niederfinow	R 45331,47899
-Zühlsdorf	RC 9929,36358
+ZÃ¼hlsdorf	RC 9929,36358
 Wensickendorf	RC 8698,38671
 Strausberg	RC 39652,14539
-Bärenklau	RC -7654,32774
+BÃ¤renklau	RC -7654,32774
 Vehlefanz	RC -9562,34675
 Schwante	R -11222,36087
 Kremmen	R -14754,38167
 Beetz-Sommerfeld	R -16228,43906
 Wustrau-Altfriesack	R -25033,49754
 Sieversdorf	R0 -58610,44799
-Großderschau	R0 -59903,43873
+GroÃŸderschau	R0 -59903,43873
 Rhinow	R0 -61615,37516
 Spaatz	R0 -63988,32086
 Hohennauen	R0 -62868,28400
-Kirchmöser	R -56057,-4550
+KirchmÃ¶ser	R -56057,-4550
 Wusterwitz	R -59436,-3522
 Genthin	R -74167,-1786
 #: XXX_prog: versetzte Bahnsteige
-Güsen (bei Genthin)	R -86191,-9657
+GÃ¼sen (bei Genthin)	R -86191,-9657
 Burg (bei Magdeburg)	R -95337,-16504
 Gerwisch	R -101800,-27384
 Biederitz	R -103467,-30131
@@ -307,20 +308,20 @@ Krahne	R0 -46753,-10695
 Golzow Nord	R0 -44099,-14043
 Golzow	R0 -43834,-15999
 Dippmannsdorf	R0 -44473,-20342
-Lütte	R0 -42363,-23226
+LÃ¼tte	R0 -42363,-23226
 Fredersdorf	R0 -41750,-25552
-Großwudicke	R -69474,19047
+GroÃŸwudicke	R -69474,19047
 Rathenow Nord	R0 -61414,21999
 Rathenow	R -61015,20262
-Mögelin	R -62604,16023
+MÃ¶gelin	R -62604,16023
 Premnitz Nord	R -62408,13202
-Premnitz Süd	R -60828,12097
-Döberitz	R -58572,11613
+Premnitz SÃ¼d	R -60828,12097
+DÃ¶beritz	R -58572,11613
 Pritzerbe	R -53832,9331
 Fohrde	R -52166,4834
 Brandenburg Altstadt	R -48681,-566
 Staaken	RB -7506,14349
-Dallgow-Döberitz	RC -13131,14910
+Dallgow-DÃ¶beritz	RC -13131,14910
 Wustermark	RC -21187,15667
 Buschow (Rathenow)	R -42628,19726
 Nennhausen	R -50618,20357
@@ -335,20 +336,20 @@ Cottbus/Merzdorf (alt)	R0 78711,-69388
 Teichland	R 81307,-64063
 Neuendorf	R0 81599,-65282
 Peitz Ost	R 82983,-61229
-Jänschwalde	R 86725,-58587
-Jänschwalde Ost	R 89329,-57355
+JÃ¤nschwalde	R 86725,-58587
+JÃ¤nschwalde Ost	R 89329,-57355
 Kerkwitz	R 95147,-53629
 Guben	R 100190,-47937
 Calau (Niederlausitz)	R 51278,-73558
-Schöllnitz	R 52946,-79539
-Altdöbern	R 53525,-83043
-Großräschen	R 54031,-89812
+SchÃ¶llnitz	R 52946,-79539
+AltdÃ¶bern	R 53525,-83043
+GroÃŸrÃ¤schen	R 54031,-89812
 Seditz Ost	R 56844,-94111
 Senftenberg	R 53602,-96980
 Gollmitz	R 44819,-77554
 Weisen	R -100641,66986
 Perleberg	R -96458,72069
-Groß Pankow	R -83113,78142
+GroÃŸ Pankow	R -83113,78142
 Pritzwalk	R -73845,80916
 Heiligengrabe	R -63304,81411
 Liebenthal	R -59912,81663
@@ -366,11 +367,11 @@ Wusterhausen (Dosse)	R -54833,52477
 Kyritz	R -59441,58518
 Blumenthal (Mark)	R -63634,73318
 Sarnow	R -70587,77643
-Wilmersdorf (bei Angermünde)	R 42234,79175
+Wilmersdorf (bei AngermÃ¼nde)	R 42234,79175
 Warnitz (Uckermark)	R 41026,87058
 Seehausen (Uckermark)	R 41459,91179
 Passow (Uckermark)	R 56446,83578
-Schönow (Uckermark)	R 59910,87650
+SchÃ¶now (Uckermark)	R 59910,87650
 Casekow	R 63537,90840
 Petershagen (Uckermark)	R 66435,93817
 Tantow	R 72783,97221
@@ -383,25 +384,25 @@ Jatznick	R 44204,133763
 Ferdinandshof	R 40228,140118
 Ducherow	R 34323,151403
 Anklam	R 27625,161637
-Klein Bünzow	R 21923,169163
-Züssow	R 16925,174504
+Klein BÃ¼nzow	R 21923,169163
+ZÃ¼ssow	R 16925,174504
 Karlsburg	R 21024,175581
 Buddenhagen	R 25875,177788
 Hohendorf	R 29098,180702
 Wolgast	R 31675,182600
 Wolgast Hafen	R 32443,183584
-Wolgast Fähre	R 33150,184035
-Bannemin-Mölschow	R 36212,185764
+Wolgast FÃ¤hre	R 33150,184035
+Bannemin-MÃ¶lschow	R 36212,185764
 Trassenheide	R 38447,186930
 Zinnowitz	R 40706,186351
 Trassenmoor	R 38371,187961
 Karlshagen	R 35752,190824
-Peenemünde	R 31820,193161
+PeenemÃ¼nde	R 31820,193161
 Zempin	R 44639,185320
 Koserow	R 47334,183074
-Kölpinsee	R 49020,181944
+KÃ¶lpinsee	R 49020,181944
 Stubbenfelde	R 49683,181262
-Ückeritz	R 50862,179612
+Ãœckeritz	R 50862,179612
 Schmollensee	R 52718,176170
 Bansin	R 56362,174162
 Heringsdorf	R 58962,172675
@@ -416,14 +417,14 @@ Schulzendorf	R0 55571,30338
 Bergholz (bei Potsdam)	R0 -11202,-7672
 Schmachtenhagen	RC 5206,41006
 Waldsieversdorf	R0 56750,15927
-Buckow (Märk. Schweiz)	R0 56094,18067
-Blöhnsdorf	R -23068,-50864
+Buckow (MÃ¤rk. Schweiz)	R0 56094,18067
+BlÃ¶hnsdorf	R -23068,-50864
 Zahna	R -30568,-54978
 Lutherstadt Wittenberg	R -38507,-60943
 Coswig	R -52563,-58750
 Dessau	R -67535,-64457
-Roßlau	R -67486,-59433
-Thießen	R -63570,-51051
+RoÃŸlau	R -67486,-59433
+ThieÃŸen	R -63570,-51051
 Hamburg Hauptbahnhof	R -223006,123633
 Hamburg Dammtor	R -224102,124311
 Hamburg Altona	R -227774,123332
@@ -435,7 +436,7 @@ Kiekebusch (bei Cottbus)	R 78125,-75187
 #: alias: Berlin Hauptbahnhof
 Berlin Hauptbahnhof (Lehrter Bahnhof)	RA 7998,13244
 Potsdamer Platz	RA 8522,11503
-Berlin Südkreuz (Papestr.)	RA 7869,7674
+Berlin SÃ¼dkreuz (Papestr.)	RA 7869,7674
 Berlin-Gesundbrunnen	RA 9299,15930
 #: section Parkeisenbahn Wuhlheide vvv
 Betriebswerk	RP 19643,6764
@@ -445,13 +446,13 @@ Hauptbahnhof	RP 20033,5965
 Wuhlheide	RP 20712,7135
 Badesee	RP 20301,6882
 Haus Natur und Umwelt	RP 20195,6680
-Freilichtbühne	RP 19958,6302
+FreilichtbÃ¼hne	RP 19958,6302
 #: section ^^^
-Löcknitz	R 63435,117794
+LÃ¶cknitz	R 63435,117794
 Kratzeburg	R -23104,113110
-Klockow (bei Waren/Müritz)	R -28272,117778
+Klockow (bei Waren/MÃ¼ritz)	R -28272,117778
 Kargow	R -35536,120898
-Waren (Müritz)	R -41069,123226
+Waren (MÃ¼ritz)	R -41069,123226
 Warenshof	R -43482,124201
 Schwenzin	R -45799,124790
 Jabel (Meckl)	R -50234,125664
@@ -468,12 +469,12 @@ Neetzka	R 14677,125530
 Oertzenhof	R 19558,123907
 Strasburg (Uckerm)	R 31301,123799
 Blumenhagen	R 39344,125420
-Groß Kiesow	R 12183,178919
-Greifswald Süd	R 6342,185776
+GroÃŸ Kiesow	R 12183,178919
+Greifswald SÃ¼d	R 6342,185776
 Greifswald	R 4499,187588
 Miltzow	R -7255,199212
 Stralsund	R -15792,211124
-Köthen	R -84040,-74389
+KÃ¶then	R -84040,-74389
 Osternienburg	R -81310,-70886
 Elsnigk (Anh)	R -79369,-70021
 Dessau-Mosigkau	R -73342,-67336

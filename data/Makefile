@@ -377,7 +377,7 @@ rbahn: rbahn-orig Makefile $(CONVERT_ORIG_FILE)
 
 rbahnhof:	rbahnhof-orig
 	-@$(WRITEABLE) $@
-	$(CONVERT_ORIG) rbahnhof-orig > rbahnhof~
+	$(CONVERT_ORIG) -keep-directive alias -unutf8ify rbahnhof-orig > rbahnhof~
 	mv rbahnhof~ rbahnhof
 	-@$(READONLY) $@
 

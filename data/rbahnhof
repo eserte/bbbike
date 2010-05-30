@@ -1,4 +1,5 @@
 #: #: -*- coding: iso-8859-1 -*-
+#: encoding: iso-8859-1
 #: title.de: Bahnhöfe
 #: title.en: Railway stations
 #:
@@ -28,6 +29,8 @@ Jacobsdorf (Mark)	R 75478,-6977
 Pillgram	R 78352,-6456
 Frankfurt (O)-Rosengarten	R 83331,-6407
 Frankfurt (Oder)	R 88514,-6346
+#: alias: Berlin-Schönefeld Flughafen
+#: alias: Flughafen Berlin-Schönefeld
 Berlin-Schönefeld	RC 18055,-1466
 Berlin-Hohenschönhausen	RB 17607,18021
 Berlin-Karow	RB 14608,23364
@@ -77,6 +80,7 @@ Michendorf	RC -14536,-10396
 Seddin	RC -17623,-13232
 Eberswalde Hbf.	R 36315,48006
 Britz	R 37898,52485
+#: alias: Chorin-Kloster
 Chorin	R 41143,55887
 Angermünde	R 49537,68462
 Golzow (b Eberswalde)	R 38211,56944
@@ -422,6 +426,8 @@ Spremberg	R 80105,-91209
 Bagenz	R 81908,-82220
 Neuhausen (bei Cottbus)	R 81298,-79351
 Kiekebusch (bei Cottbus)	R 78125,-75187
+#: alias: Lehrter Bahnhof
+#: alias: Berlin Hauptbahnhof
 Berlin Hauptbahnhof (Lehrter Bahnhof)	RA 7998,13244
 Potsdamer Platz	RA 8522,11503
 Berlin Südkreuz (Papestr.)	RA 7869,7674
