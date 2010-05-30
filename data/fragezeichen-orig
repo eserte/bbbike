@@ -1525,6 +1525,7 @@ Grünberg - Woddow: wahrscheinlich schlechtes Kopfsteinpflaster, kaum Banketten v
 Grünberg - Battin: Qualität? zumindest am nördlichen Ende asphaltiert	? 59868,106575 59862,106288 59768,105990 59719,105670 59680,105514 59774,105301
 Battinsthal - Penkun: Qualität? zumindest am nördlichen Ende asphaltiert	? 65975,103506 65883,103056 66039,102017 66127,101413
 Welsow - Kerkow: Qualität (höchstwahrscheinlich asphaltiert)?	? 49734,74527 49777,74463 49811,74177 49969,74149 50100,74058 50121,73960 50176,73842 50213,73705 50191,73574 50131,73439 50027,73351 49966,73257 49945,73025 50000,72647 49975,72419 49011,71344
+#: XXX zumindest am südlichen Ende stimmt Asphalt
 Tantow - Rossow - Stettin: Qualität (laut osm Asphalt)?	? 74028,98863 74201,99192 74939,100000 75140,100530 75143,100700 75207,100834 75210,101020 75326,101099 75359,101157 75359,101224
 # XXX hier gibt es nix : by: http://www.berlinonline.de/berliner-zeitung/archiv/.bin/dump.fcgi/2007/0512/lokales/0052/index.html Zufahrtstraße zur Brücke am Nottekanal: Wo genau verläuft die Zufahrtstraße? Qualität? Radwege? Laut Berliner Zeitung ist die Brücke mittlerweile fertig	? 26418,-10758 27031,-10349 27012,-10751 27081,-10851 26895,-11124
 Hafenstr. (KW): Qualität?	? 26895,-11124 26815,-11398 26767,-11721 26713,-11908
@@ -1542,7 +1543,6 @@ Hobrechtsfelde - Gorinsee: Qualität (wahrscheinlich fester Sandweg)?	? 16279,291
 Demnitz - L28: nördlicher Teil asphaltiert, Rest auch?	? 34171,142029 34186,141681 34232,141608
 B109 - Gneventhin: Asphalt oder Kopfsteinpflaster?	? 38188,163465 38133,163017 38283,162634
 Gartz: Name der Straße?	? 75956,90435 75975,90313 76008,90307 76023,90222
-Schwedt: Name der Straße?	? 69061,73583 69085,73549 69238,73315
 Oder - Vierraden: Name der Straße? Qualität?	? 71262,74987 70164,75201
 Casekow, Blumberger Weg: Qualität (zumindest südliches Ende asphaltiert)?	? 63296,90222 63266,90262 63034,90338 62867,90399 63156,90694
 Blankensee - Bismarck: Qualität?	? 70132,119360 70251,118039
@@ -1554,7 +1554,7 @@ Lassan - Anklam: Qualität?	? 37809,172428 37577,172172 37273,171892 37090,171843
 Murchin - Daugzin: Qualität?	? 30231,167202 30045,167370 29826,167541 29631,167516 29521,167650 29302,167394 28814,167333 28522,167382 27912,167626 27766,167711 27473,167763 27303,167797
 Libnow - Lassan: Qualität (möglicherweise nur ein Feldweg)?	? 31996,167054 32020,167181 32132,167279 32157,167349 32145,167413 31739,168418
 # XXX del? Keine Links in Google hierzu - gibt es überhaupt eine Fähre? Rankwitz - Lassen: Daten zur Fähre	? 43031,170709 42343,170953 38875,172989 37809,172428
-Freest - Peenemünde, Fähre (Telefon 038371-20829 oder 0170-1607371): Wann fährt hier die Fähre?	? 28887,192995 29771,193403 30100,193330 30496,192617 31301,192513 31355,192739
+Freest - Peenemünde, Fähre (Telefon 038371-20829 oder 0170-1607371): Wann fährt hier die Fähre?	? 28887,192995 29771,193403 30250,193525 30746,192592 31301,192513 31355,192739
 Niederschlemaer Weg: Qualität?	? 18447,1727 18444,1782 18425,1831
 Lorenzstr./Parallelstr.: Ampel?	? 5720,2081
 #: XXX unklarer anonymer Eintrag:
@@ -1921,6 +1921,7 @@ Genthin, westliche Umgehungsstraße: Ist die Straße für Radfahrer befahrbar?	? -7
 Aken - Mennewitz: hinter der Abbiegung nach Micheln fängt der Asphalt, durchgängig bis Mennewitz?	? -82075,-64262 -83089,-64250 -83286,-64330 -83794,-64295 -83875,-64288 -84563,-64090
 #: XXX ein anonymer Kommentar war nicht klar genug ("Asphalt" ohne weitere Qualitätsbestimmung)
 Brigittenstr.: Qualität? Können Radfahrer zur Kaiser-Wilhelm-Straße durchfahren?	? 6044,3110 6138,3022 6208,2954 6226,2936 6244,2910 6304,2825
+#: XXX zumindest in Höhe der ehem. Bahnübergänge schlechtes Kopfsteinpflaster
 Hintersee - Ahlbeck: Qualität?	? 66135,136956 66005,137087 65889,137419 65809,137545 65797,137678 65701,137799 65666,138036 65599,138296 65357,138798 65158,138985 65161,139048 64864,139559 64220,140595 64147,140739 63881,141088 63850,141191 63843,141267 63825,141282 63767,141332 63780,141553 63741,141644 63294,142022 62897,142175 62583,142213 62200,142145 61593,141874 61512,141859 61297,141889 61245,141840 61213,141745 61083,141649 60993,141629 60885,141524
 Ueckermünde: Qualität? Radwege?	? 53773,148858 53226,148833 52892,148819 52724,148719 52574,148662 52427,148565 52087,148346 52032,148357
 #: by: http://www.berlin.de/ba-neukoelln/presse/archiv/20080516.1245.100630.html (laut URL ist die Einbahnstraßenregelung bis Ende 2010 gedreht)
@@ -1995,7 +1996,6 @@ Am Langen Grund (Großziethen): Qualität?	? 12647,-1187 12652,-1142 12629,-1134 1
 Am Langen Grund (Großziethen): Qualität?	? 12703,-1057 12629,-1046 12556,-1033 12517,-1042
 #: XXX ^^^
 Loddin: Qualität (wahrscheinlich Verbundsteinpflaster oder Kopfsteinpflaster)	? 47917,180585 47868,180623
-Alte Strandstraße: Qualität? Gibt es hier einen Radweg?	? 40952,186220 40853,186070 40837,185903 40751,185719 40722,185530
 #: XXX: beide Enden sehen gut aus:
 Strecke zwischen Usedom und Abzweig Welzin: Qualität?	? 44868,163300 43477,164369 43370,164591
 Laehrstr. - Heinrich-Laehr-Park: existiert eine Durchfahrt zum Heinrich-Laehr-Park?	? 1142,1350 1274,1376 1312,1383

@@ -241,8 +241,10 @@ Lychen: Radweg auf Gehweg	RW 2745,89716 2797,89387
 Lychen - Fürstenberg: Verbundsteinpflasterradweg auf Gehweg	RW 2797,89387 2480,89399 2111,89378 1907,89597 1544,89701 1090,89570
 Lychen - Fürstenberg: asphaltierter Zweirichtungsradweg auf der nördlichen Seite	RW 1090,89570 627,89430 234,89271
 Fürstenberg: Verbundsteinpflasterradweg auf Gehweg, teilweise sehr eng	RW -8777,85887 -8775,85947 -8738,86096 -8726,86224 -8711,86273 -8641,86541
-Tassow - Schönfeld: Verbundsteinpflaster-Zweirichtungsradweg auf der westlichen Seite	RW 72960,97477 72583,97595 72309,97699 72151,97918
+Tassow - Schönfeld: Verbundsteinpflaster-Radweg	RW; 72960,97477 72583,97595 72309,97699
+Tassow - Schönfeld: Verbundsteinpflaster-Zweirichtungsradweg auf der westlichen Seite	RW 72309,97699 72151,97918
 Tassow - Schönfeld: asphaltierter Zweirichtungsradweg auf der westlichen Seite	RW 72151,97918 72038,98101 71684,98650 71282,98881
+Sommersdorf: Verbundsteinpflaster-Radweg	RW2;RW8 61657,98779 61457,98750
 Kamp - Anklam: Zweirichtungsradweg auf der westlichen Seite	RW 28842,161837 28567,161564 28473,161345
 Bargischow - Anklam: Radweg, teilweise als Zweirichtungsradweg	RW 28473,161345 28139,161441 27778,161482 27589,161496
 Dahlewitz: Zweirichtungsradweg auf Gehweg, südlichen Seite	RW 11875,-8728 11791,-8700 11555,-8625
@@ -443,11 +445,18 @@ Verbundsteinpflasterradweg	RW 50367,179588 50643,179755
 Zweirichtungsradweg auf der westlichen Seite, Verbundsteinfpflaster	RW 50643,179755 50593,179823 49750,180975 49689,181083 49491,181430
 Zweirichtungsradweg auf der westlichen Seite, asphaltiert	RW 49491,181430 49461,181471 49410,181538 49006,181826
 Zweirichtungsradweg auf der südwestlichen Seite, Verbundsteinpflaster	RW 49006,181826 48898,181937
-Radweg	RW 48898,181937 48723,182124 48411,182343 48129,182607 47672,183028
+Radweg	RW 48898,181937 48723,182124 48411,182343
+	RW2;RW8 48411,182343 48129,182607 47672,183028
+Radweg auf Deich	RW 47172,184530 47149,184545 46620,184885 45963,185140
 Radweg	RW 50643,179755 50843,179488
+Verbundsteinpflastergehweg für Radfahrer frei	RW1;RW1 40952,186220 40853,186070 40837,185903 40751,185719 40722,185530
 Zweirichtungsradweg auf der östlichen Seite	RW -13051,-3101 -13092,-3798 -13687,-4949 -13723,-6401 -13593,-6956 -13593,-7127 -13997,-8760 -13973,-8969 -14060,-9016 -14149,-9371 -14279,-9832 -14364,-10176 -14428,-10433
 asphaltierter Zweirichtungsradweg auf der östlichen Seite	RW -14279,-9832 -14518,-9621 -14790,-9271 -15120,-8806 -15805,-7964 -15951,-7768 -16023,-7721 -16029,-7600 -15989,-7410 -16187,-7211
 Zweirichtungsradweg auf der südlichen Seite	RW -14428,-10433 -13597,-10497 -13433,-10557 -13211,-10642
 eigener Radweg neben der Straße	RW2;RW8 35728,17428 35618,17440 35225,17557 34813,17682 34154,17882 33961,17989 33133,18131 32941,18121
 	RW 16488,29880 16279,29196 16066,28510 16008,28424 15777,28037
 	RW6;RW6 -10052,6640 -10138,6646 -10183,6650 -10315,6646
+asphaltiert	RW8;RW2 37400,188601 37064,189140 36607,189766 35988,190394
+Verbundsteinpflaster	RW;RW 37400,188601 37796,187862 37881,187596 38017,187425
+etwas breitere Seitenstreifen, ca. 0.5m	RW3;RW3 35470,191333 35198,191966 35230,192082 35653,192391 35684,192550 34993,193887 34411,193747 34151,193949
+	RW6;RW6 69085,73607 69061,73583
