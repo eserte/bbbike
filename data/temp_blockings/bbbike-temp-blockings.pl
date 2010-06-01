@@ -6507,7 +6507,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_003935',
        data  => <<EOF,
-userdel	q4::inwork; 14881,10864 14897,10935 14988,11130
+userdel	q4::inwork; 14894,10861 14919,10954 14950,11049 14988,11130
 EOF
      },
      { from  => 1155592800, # 2006-08-15 00:00
@@ -10352,7 +10352,7 @@ EOF
        text  => 'Bauarbeiten am Ostkreuz, Verbindungsstraße könnte für die Durchfahrt gesperrt sein',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 14724,10297 14764,10303 14794,10336 14821,10478 14836,10524 14843,10621 14882,10732
+userdel	2::inwork 14673,10180 14764,10303 14794,10336 14821,10478 14832,10512 14843,10621 14882,10732
 EOF
      },
      { from  => undef, # 
@@ -11492,7 +11492,7 @@ EOF
        text  => 'Untere Kynaststr.: Restbauarbeiten, Straße könnte u.U. bis zum 2.6.2008 gesperrt sein',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 14724,10297 14764,10303 14794,10336 14821,10478 14836,10524 14843,10621 14882,10732 14906,10820
+userdel	2::inwork 14673,10180 14764,10303 14794,10336 14821,10478 14832,10512 14843,10621 14882,10732 14906,10820
 EOF
      },
      { from  => undef, # 
@@ -11517,7 +11517,7 @@ EOF
        text  => 'Kynaststraße wird ab 2.6.2008 gesperrt. Unter Umständen wird dann die Untere Kynaststraße befahrbar sein.',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 14988,11130 14897,10935 14881,10864 14867,10802 14828,10628 14802,10505
+userdel	2::inwork 14988,11130 14950,11049 14919,10954 14894,10861 14880,10808 14828,10628 14805,10518
 EOF
      },
      { from  => 1211493600, # 2008-05-23 00:00
@@ -17092,12 +17092,13 @@ EOF
 userdel	q4::inwork -17930,-19476 -18615,-19264
 EOF
      },
-     { from  => 1240437600, # 2009-04-23 00:00
-       until => 1275343200, # 2010-06-01 00:00
-       text  => 'L 090 Eisenbahnstraße OD Werder, zw. Kesselgrund- u. Gartenstraße Rohrleit.-,Straßen-u.Gehwegbau halbseitig gesperrt; Einbahnstraße 24.04.2009-31.05.2010 ',
+     { from  => 1275342093, # 2010-05-31 23:41
+       until => 1276293600, # 2010-06-12 00:00
+       text  => 'Werder (Havel): L90: Rohrleitungsbau / Straßenbau / Gehweg OD Werder zw. Kesselgrund- und Gartenstraße - 2. BA Richtungsverkehr zw. AS Phöben und Werder, 13.03.2009 bis 11.06.2010 ',
        type  => 'handicap',
+       source_id => 'LS/W-SG33-P/09/109-8',
        data  => <<EOF,
-userdel	q4::inwork -21524,-2998 -22042,-2060
+userdel	q4::inwork; -22042,-2060 -21524,-2998
 EOF
      },
      { from  => 1252879200, # 2009-09-14 00:00
@@ -17654,6 +17655,15 @@ EOF
        source_id => 'IM_015731',
        data  => <<EOF,
 userdel	q3::inwork 16414,25575 16294,25683 16194,25743 16166,25767 16114,25827 16045,25907
+EOF
+     },
+     { from  => 1275342035, # 2010-05-31 23:40
+       until => 1282946400, # 2010-08-28 00:00
+       text  => 'Treuenbrietzen: L82: Bau Schmutzwasser- und Trinkwasserleitungen OL Marzahna, 27.05.2010 bis 27.08.2010 ',
+       type  => 'gesperrt',
+       source_id => '106900348',
+       data  => <<EOF,
+userdel	2::inwork -29601,-47258 -30976,-45652
 EOF
      },
     );

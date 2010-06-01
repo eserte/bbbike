@@ -825,16 +825,7 @@ userdel	q4::inwork 10422,12395 10476,12432
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_013876',
-         'until' => 1275343199,
-         'text' => 'Friedrich-Engels-Str. (Pankow) stadteinwärts zwischen Platanenstr. und Pastor-Niemöller-Platz Baustelle, Fahrtrichtung gesperrt (bis Ende 05/2010)',
-         'from' => 1251530039,
-         'id' => 1802,
-         'data' => 'userdel	q4::inwork; 9355,19789 9408,19707 9468,19599 9606,19510 9729,19426 9791,19363
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1075,25 +1066,8 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        undef,
-       {
-         'until' => 1275343200,
-         'text' => 'L 303 Brücke über die DB AG bei Eggersdorf Brückenersatzneubau Vollsperrung 07.09.2009-31.05.2010 ',
-         'from' => 1252188000,
-         'id' => 1847,
-         'data' => 'userdel	2::inwork 38540,14138 38569,14332 38535,14602 38637,14790
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'source_id' => 'LS/S-SG33-C/09/208',
-         'until' => 1275343200,
-         'text' => 'L 621 Döllinger Straße OL Hohenleipisch, zw. Goethestr. u. Abzw. L62 Berliner Str. Straßen- und Kanalarbeiten Vollsperrung 24.08.2009-31.05.2010',
-         'from' => 1250978400,
-         'id' => 1848,
-         'data' => 'userdel	q4::inwork 23464,-101227 23305,-100904 23220,-100874
-',
-         'type' => 'handicap'
-       },
+       undef,
+       undef,
        undef,
        {
          'source_id' => 'IM_013995',
@@ -1123,16 +1097,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        },
        undef,
        undef,
-       {
-         'source_id' => 'IM_014098',
-         'until' => 1275314400,
-         'text' => 'Miraustr. (Reinickendorf): Baustelle, Fahrtrichtung gesperrt (bis Ende 05/2010) stadteinwärts zwischen Innungsstr. und Breitenbachstr., 07.09.2009 11:09 Uhr bis 31.05.2010 16:00 Uhr ',
-         'from' => 1252228140,
-         'id' => 1860,
-         'data' => 'userdel	q4::inwork; 4014,19433 4170,19079 4195,19043
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1280,15 +1245,7 @@ userdel	q4::inwork; 9130,12433 9141,12320
          'type' => 'handicap'
        },
        undef,
-       {
-         'until' => 1275343200,
-         'text' => 'Verkehreinschränkungen in der Magdalenenstraße und am Roedeliusplatz bis Mai 2010, Einbahnstraßenregelung in Fahrtrichtung Normannenstraße ',
-         'from' => 1255468338,
-         'id' => 1948,
-         'data' => 'userdel	q4::inwork; 16159,12301 16158,12191 16127,11950
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1417,11 +1374,12 @@ userdel	q4::inwork; 9130,12433 9141,12320
          'type' => 'handicap'
        },
        {
-         'until' => 1275343200,
-         'text' => 'L 090 Eisenbahnstraße OD Werder, zw. Kesselgrund- u. Gartenstraße Rohrleit.-,Straßen-u.Gehwegbau halbseitig gesperrt; Einbahnstraße 24.04.2009-31.05.2010 ',
-         'from' => 1240437600,
+         'source_id' => 'LS/W-SG33-P/09/109-8',
+         'until' => 1276293600,
+         'text' => 'Werder (Havel): L90: Rohrleitungsbau / Straßenbau / Gehweg OD Werder zw. Kesselgrund- und Gartenstraße - 2. BA Richtungsverkehr zw. AS Phöben und Werder, 13.03.2009 bis 11.06.2010 ',
+         'from' => 1275342093,
          'id' => 2014,
-         'data' => 'userdel	q4::inwork -21524,-2998 -22042,-2060
+         'data' => 'userdel	q4::inwork; -22042,-2060 -21524,-2998
 ',
          'type' => 'handicap'
        },
@@ -1456,16 +1414,7 @@ userdel	q4::inwork; 10614,19907 10742,19632
          'type' => 'handicap'
        },
        undef,
-       {
-         'source_id' => 'IM_015284',
-         'until' => 1275314400,
-         'text' => 'Fennstr. (Treptow): Baustelle, Fahrtrichtung gesperrt. Ebenso ist die Britzer Str. Richtung Michael-Brückner-Str. ab Schnellerstr. gesperrt. (bis Ende 05.2010) Richtung Schnellerstr. zwischen Michael-Brückner-Str. und Schnellerstr., 08.03.2010 11:00 Uhr bis 31.05.2010 16:00 Uhr ',
-         'from' => 1267956000,
-         'id' => 2019,
-         'data' => 'userdel	1::inwork 18370,5511 18307,5440 18214,5354 18080,5376 18245,5551
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1276898399,
          'text' => 'Die Leipziger Str. ist zwischen Mauerstr. und Charlottenstr. Richtung Alexanderstr. wegen Bauarbeiten gesperrt. Zu Einbahnstraßen werden Teile der Mauer-, Krausen-, Charlottenstr. und Friedrichstr. Dauer: 15. März 2010 bis 18. Juni 2010 ',
@@ -1529,16 +1478,7 @@ userdel	q3::inwork 9444,11616 9432,11702
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_015285',
-         'until' => 1275314400,
-         'text' => 'Emmentaler Str. (Reinickendorf) Richtung Residenzstr. zwischen Klemkestr. und Armbrustweg: Baustelle, Fahrtrichtung gesperrt, 08.03.2010 08:00 Uhr bis 31.05.2010 16:00 Uhr ',
-         'from' => 1267945200,
-         'id' => 2028,
-         'data' => 'userdel	q4::inwork; 7855,18697 7758,18535 7693,18481
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'source_id' => '96400995',
@@ -1571,16 +1511,7 @@ userdel	q3::inwork 9444,11616 9432,11702
          'type' => 'handicap'
        },
        undef,
-       {
-         'source_id' => '86901199',
-         'until' => 1275343200,
-         'text' => 'Michendorf: Verbot für Fahrzeuge zw. Potsdamer Str. und Am Plan 27.10.2008 bis 31.05.2010 ',
-         'from' => 1270235418,
-         'id' => 2035,
-         'data' => 'userdel	q4::inwork -12915,-10753 -12337,-10735
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'source_id' => 'LSO-SG33-F10015',
@@ -1773,16 +1704,7 @@ userdel	q3::inwork 9444,11616 9432,11702
 (Eingang Tempelhofer Damm - südliche Landebahn)	2::temp 9302,7294 9351,7241 9461,7190
 '
        },
-       {
-         'source_id' => 'IM_014905',
-         'until' => 1275314400,
-         'text' => 'Lahnstr. (Neukölln): Baustelle, Fahrtrichtung gesperrt (bis Ende 05.2010) Richtung Grenzallee zwischen Naumburger Str. und Mierstr., 11.01.2010 12:12 Uhr bis 31.05.2010 16:00 Uhr ',
-         'from' => 1263121920,
-         'id' => 2069,
-         'data' => 'userdel	q4::inwork; 13627,7047 13500,7018 13278,6967
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'LS/O-SG33-E/10/042',
          'until' => 1280181600,
@@ -1805,15 +1727,16 @@ userdel	q3::inwork 9444,11616 9432,11702
        },
        undef,
        undef,
+       undef,
        {
-         'source_id' => 'IM_015731',
-         'until' => 1275318720,
-         'text' => 'Wiltbergstr. (Pankow): Baustelle, für beide Richtungen nur ein Fahrstreifen abwechselnd frei (bis ca. Ende 05/2010) in beiden Richtungen zwischen Alt-Buch und Röbellweg, 17.05.2010 16:10 Uhr bis 31.05.2010 17:12 Uhr ',
-         'from' => 1274019000,
-         'id' => 2074,
-         'data' => 'userdel	q3::inwork 16414,25575 16294,25683 16194,25743 16166,25767 16114,25827 16045,25907
+         'source_id' => '106900348',
+         'until' => 1282946400,
+         'text' => 'Treuenbrietzen: L82: Bau Schmutzwasser- und Trinkwasserleitungen OL Marzahna, 27.05.2010 bis 27.08.2010 ',
+         'from' => 1275342035,
+         'id' => 2075,
+         'data' => 'userdel	2::inwork -29601,-47258 -30976,-45652
 ',
-         'type' => 'handicap'
+         'type' => 'gesperrt'
        }
      
 );

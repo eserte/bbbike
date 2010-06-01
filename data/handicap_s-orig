@@ -13,9 +13,7 @@ Schloßplatz: Behinderungen durch Bauarbeiten möglich	q3::inwork 10170,12261 1006
 #XXX del #: last_checked: 2009-12-25 Caroline-Michaelis-Str.: Bauarbeiten, Ausweichen auf Gehweg	q4::inwork 9061,14050 9125,13973
 #: last_checked: 2010-04-23
 Fahrbahn der Mauerstr. wegen Bauarbeiten gesperrt	q4::inwork 9405,11413 9331,11497
-#: last_checked: 2010-02-02
-#: next_check: 2010-05-31
-Hauptstr. (Friedrichshain-Kreuzberg): Baustelle, Radfahrer können langsam passieren	q3::inwork 14906,10820 14794,10844 14717,10855
+#XXX del: last_checked: 2010-02-02, #: next_check: 2010-05-31, Hauptstr. (Friedrichshain-Kreuzberg): Baustelle, Radfahrer können langsam passieren	q3::inwork 14906,10820 14794,10844 14717,10855
 #: last_checked: 2010-04-23
 Varian-Fry-Str.: Baustelle, Fahrbahn gesperrt	q4::inwork 8389,11378 8374,11479
 #: last_checked: 2010-04-29
@@ -108,7 +106,7 @@ Tiergarten: Parkweg	q1 7663,11946 7570,11855 7223,11897 7073,11798 6778,11742 65
 Tiergarten: Parkweg	q1 7816,12150 7827,12105 7832,12036 7822,11952 7801,11875 7795,11823 7777,11787 7772,11749 7796,11681 7816,11571
 (Bremer Weg - Fasanerieallee): Parkweg	q1 6342,11878 6379,11843 6406,11784 6467,11780 6540,11754
 Parkweg: enge Brücke, Fußweg	q2 14310,9692 14351,9757 14448,9922 14453,9929 14558,10082 14597,10129 14626,10162 14652,10201
-#: last_checked: 2010-04-23
+#: last_checked: 2010-05-31
 #: next_check: 2010-08-01
 #: note: Eröffnung des Hotels im Dezember 2010
 Spittelmarkt: Gehweg, wegen Bauarbeiten eng	q3::inwork 10166,11592 10153,11666 10213,11728
@@ -1280,7 +1278,7 @@ Rosenorter Steig: enge Straße	q1 -1349,23497 -1451,23525 -1535,23575 -1617,23624
 #: by: Alfred Zudse:
 Straße 40 (Blankenburg): enge Straße	q1 14893,20583 14945,20748 15035,21026
 #: by: Andreas Vildman:
-(Mörchinger Str. - Berliner Str.): Fußgänger	q2 1360,3253 1358,3257 1338,3300
+(Mörchinger Str. - Berliner Str.): Fußgänger	q2 1393,3183 1388,3197 1338,3300
 #: by: Liana (lumielle):
 Sanddornstr.: enge Straße	q1 19184,4888 19199,4954 19191,5075 19173,5139
 #: by: Catherina Haags:

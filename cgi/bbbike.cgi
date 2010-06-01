@@ -670,7 +670,7 @@ $newstreetform_encoding = "";
 			   Dahlwitz-Hoppegarten Woltersdorf Rüdersdorf Werder Hennigsdorf Schwanebeck Hönow Ahrensfelde Großziethen
 		          ), "Hohen Neuendorf", "Königs Wusterhausen", "Schöneiche bei Berlin", "Neuenhagen bei Berlin",
 			"Petershagen bei Berlin", 'Dallgow-Döberitz', "Schönefeld", "Gosen", "Zepernick", "Röntgental",
-			"Glienicke/Nordbahn",
+			"Glienicke/Nordbahn", "Dahlewitz",
 		       );
 $outer_berlin_qr = "^(?:" . join("|", map { quotemeta } @outer_berlin_places) . ")\$"; $outer_berlin_qr = qr{$outer_berlin_qr};
 
