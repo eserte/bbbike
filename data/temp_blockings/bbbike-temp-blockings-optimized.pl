@@ -1704,7 +1704,16 @@ userdel	q3::inwork 9444,11616 9432,11702
 (Eingang Tempelhofer Damm - südliche Landebahn)	2::temp 9302,7294 9351,7241 9461,7190
 '
        },
-       undef,
+       {
+         'source_id' => 'IM_014905',
+         'until' => 1338472800,
+         'text' => 'Lahnstr. (Neukölln): Baustelle, Fahrtrichtung gesperrt (bis Mitte 2012) Richtung Grenzallee zwischen Naumburger Str. und Mierstr., 11.01.2010 12:12 Uhr bis 31.05.2012 16:00 Uhr ',
+         'from' => 1263121920,
+         'id' => 2069,
+         'data' => 'userdel	q4::inwork; 13627,7047 13500,7018 13278,6967
+',
+         'type' => 'handicap'
+       },
        {
          'source_id' => 'LS/O-SG33-E/10/042',
          'until' => 1280181600,
@@ -1737,6 +1746,26 @@ userdel	q3::inwork 9444,11616 9432,11702
          'data' => 'userdel	2::inwork -29601,-47258 -30976,-45652
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'http://www.berlin.de/ba-lichtenberg/presse/archiv/20100528.1110.297131.html',
+         'until' => 1285883999,
+         'text' => 'Marksburgstraße, Bauarbeiten zwischen Treskowallee und Hentigstraße, 31.05. bis 30.09., Fahrbahn gesperrt',
+         'from' => 1275170400,
+         'id' => 2076,
+         'data' => 'userdel	q4::inwork 18809,9133 18697,9153 18586,9172
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'http://www.berlin.de/ba-lichtenberg/presse/archiv/20100528.1110.297131.html',
+         'until' => 1288652399,
+         'text' => 'Marksburgstraße, Bauarbeiten zwischen Hentigstraße und Sangeallee, 15.08. bis 01.11., Fahrbahn gesperrt ',
+         'from' => 1281736800,
+         'id' => 2077,
+         'data' => 'userdel	q4::inwork 18586,9172 18511,9185 18430,9199 18319,9218
+',
+         'type' => 'handicap'
        }
      
 );

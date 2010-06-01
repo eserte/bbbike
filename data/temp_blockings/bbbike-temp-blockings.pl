@@ -17604,8 +17604,8 @@ EOF
 EOF
      },
      { from  => 1263121920, # 2010-01-10 12:12
-       until => 1275314400, # 2010-05-31 16:00
-       text  => 'Lahnstr. (Neukölln): Baustelle, Fahrtrichtung gesperrt (bis Ende 05.2010) Richtung Grenzallee zwischen Naumburger Str. und Mierstr., 11.01.2010 12:12 Uhr bis 31.05.2010 16:00 Uhr ',
+       until => 1338472800, # 2012-05-31 16:00
+       text  => 'Lahnstr. (Neukölln): Baustelle, Fahrtrichtung gesperrt (bis Mitte 2012) Richtung Grenzallee zwischen Naumburger Str. und Mierstr., 11.01.2010 12:12 Uhr bis 31.05.2012 16:00 Uhr ',
        type  => 'handicap',
        source_id => 'IM_014905',
        data  => <<EOF,
@@ -17664,6 +17664,24 @@ EOF
        source_id => '106900348',
        data  => <<EOF,
 userdel	2::inwork -29601,-47258 -30976,-45652
+EOF
+     },
+     { from  => 1275170400, # 2010-05-30 00:00
+       until => 1285883999, # 2010-09-30 23:59
+       text  => 'Marksburgstraße, Bauarbeiten zwischen Treskowallee und Hentigstraße, 31.05. bis 30.09., Fahrbahn gesperrt',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-lichtenberg/presse/archiv/20100528.1110.297131.html',
+       data  => <<EOF,
+userdel	q4::inwork 18809,9133 18697,9153 18586,9172
+EOF
+     },
+     { from  => 1281736800, # 2010-08-14 00:00
+       until => 1288652399, # 2010-11-01 23:59
+       text  => 'Marksburgstraße, Bauarbeiten zwischen Hentigstraße und Sangeallee, 15.08. bis 01.11., Fahrbahn gesperrt ',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-lichtenberg/presse/archiv/20100528.1110.297131.html',
+       data  => <<EOF,
+userdel	q4::inwork 18586,9172 18511,9185 18430,9199 18319,9218
 EOF
      },
     );
