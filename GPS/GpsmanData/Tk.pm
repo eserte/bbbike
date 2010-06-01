@@ -162,6 +162,7 @@ sub Populate {
        -selectforeground => [$real_dv],
        -velocity => ['PASSIVE', undef, undef, 'absolute'],
        -vehiclestobrands => ['PASSIVE', undef, undef, undef],
+       -gpsdevices => ['PASSIVE', undef, undef, undef],
       );
 }
 
@@ -474,6 +475,15 @@ sub _track_attributes_editor {
 	     $t->Entry(-textvariable => \$track_attrs_ref->{'srt:event'}));
     Tk::grid($t->Label(-text => "Frequency"),
 	     $t->Entry(-textvariable => \$track_attrs_ref->{'srt:frequency'}));
+    if ($self->cget(-gpsdevices)) {
+	Tk::grid($t->Label(-text => 'GPS Device'),
+		 $t->BrowseEntry(-textvariable => \$track_attrs_ref->{'srt:device'},
+				 -autolimitheight => 1,
+				 -autolistwidth => 1,
+				 -listheight => 4, # hmmm, -autolimitheight does not work? or do i misunderstand this option?
+				 -choices => $self->cget(-gpsdevices),
+				));
+    }
     my $weiter;
     Tk::grid($t->Button(-text => 'Ok', -command => sub { $weiter = +1 }),
 	     $t->Button(-text => 'Cancel', -command => sub { $weiter = -1 }));
@@ -782,8 +792,8 @@ extension attribute C<srt:vehicle> is used.
 =item *
 
 Subtracks (track chunks) may be created, with values for the extension
-attributes C<srt:vehicle>, C<srt:brand>, C<srt:comment>, and
-C<srt:frequency>.
+attributes C<srt:vehicle>, C<srt:brand>, C<srt:comment>,
+C<srt:frequency>, and C<srt:device>.
 
 =item *
 

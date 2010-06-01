@@ -1564,6 +1564,10 @@ sub gps_data_viewer {
     if (-r "$gps_data_dir/vehicles_brands.yml" && eval { require YAML::Syck; 1 }) {
 	$vehicles_to_brands = YAML::Syck::LoadFile("$gps_data_dir/vehicles_brands.yml");
     }
+    my $gps_devices;
+    if (-r "$gps_data_dir/gps_devices.yml" && eval { require YAML::Syck; 1 }) {
+	$gps_devices = YAML::Syck::LoadFile("$gps_data_dir/gps_devices.yml");
+    }
 
     $gps_view = $t->GpsmanData(-command => sub {
 				   my(%args) = @_;
@@ -1580,6 +1584,7 @@ sub gps_data_viewer {
 			       -selectbackground => 'green',
 			       -velocity => 'per_vehicle',
 			       -vehiclestobrands => $vehicles_to_brands,
+			       -gpsdevices => $gps_devices,
 			      )->pack(qw(-fill both -expand 1));
 
     {
