@@ -53,8 +53,10 @@ my $acc_streets_track                = "$bbbike_rootdir/tmp/streets-accurate.bbd
 my $acc_cat_streets_track            = "$bbbike_rootdir/tmp/streets-accurate-categorized.bbd";
 my $acc_cat_split_streets_track      = "$bbbike_rootdir/tmp/streets-accurate-categorized-split.bbd";
 my %acc_cat_split_streets_byyear_track;
-$acc_cat_split_streets_byyear_track{2008} = "$bbbike_rootdir/tmp/streets-accurate-categorized-split-since2008.bbd";
-$acc_cat_split_streets_byyear_track{2009} = "$bbbike_rootdir/tmp/streets-accurate-categorized-split-since2009.bbd";
+my @acc_cat_split_streets_years = (2008..2010);
+for my $year (@acc_cat_split_streets_years) {
+    $acc_cat_split_streets_byyear_track{$year} = "$bbbike_rootdir/tmp/streets-accurate-categorized-split-since$year.bbd";
+}
 my $other_tracks                     = "$bbbike_rootdir/tmp/other-tracks.bbd";
 
 use vars qw($hm_layer);
@@ -194,7 +196,7 @@ EOF
 		       add_any_streets_bbd($acc_cat_split_streets_byyear_track{$year});
 		   },
 		  ]
-	      } (2008, 2009)
+	      } @acc_cat_split_streets_years
 	      ),
 	      [Cascade => $do_compound->("Add other streets...bbd"), -menuitems =>
 	       [
