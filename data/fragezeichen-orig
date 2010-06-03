@@ -41,12 +41,12 @@ Falkenberger Chaussee im Bereich Bhf. Hohenschönhausen	?::projected 17400,17790 
 #: next_check: 2010-09-15
 Zossener Str./Lindenstr.	?::projected 9856,10358 9873,10285 9865,10227 9858,10199 9837,10117 9827,10051
 #
-#: last_checked: 2010-03-17
-#: next_check: 2010-06-01
+#: last_checked: 2010-06-03
+#: next_check: 2010-09-01
 Michaelbrücke/Michaelkirchstr.	?::projected 11768,12006 11716,11914 11676,11839 11574,11594 11498,11417
 #
-#: last_checked: 2010-03-23
-#: next_check: 2010-06-01
+#: last_checked: 2010-06-03
+#: next_check: 2010-09-01
 # auch im Tsp 2010-03-26 erwähnt
 Fischerinsel	?::projected 10512,12039 10672,11870
 #
@@ -88,8 +88,8 @@ Müllerstr.	?::projected 6790,16018 6680,16116 6608,16180 6450,16325 6444,16331 6
 #
 #: by: Tagesspiegel vom 2009-04-12, soll 2009 realisiert werden
 #: corrected_by: MoPo 2009-08-01, soll 2010 realisiert werden
-#: last_checked: 2010-03-17
-#: next_check: 2010-06-01
+#: last_checked: 2010-06-03
+#: next_check: 2010-09-01
 Annenstr./Heinrich-Heine-Platz	?::projected 11349,11227 11249,11268 11091,11379 10915,11535 10819,11664
 #
 #: by: Tagesspiegel vom 2009-04-12, soll 2009 realisiert werden
@@ -117,11 +117,13 @@ Blankenburger Str. erhält beiderseitig Radfahrstreifen zwischen Dietzgen- und Si
 Wollankstr.: Angebotsstreifen werden bis Herbst 2011 eingerichtet	?::projected 9549,17625 9590,17662 9624,17693 9663,17734 9727,17804 9791,17877 9832,17925 9870,17971 9978,18104 10027,18165 10089,18180
 #
 #: by: Tagesspiegel vom 2010-03-31
-#: next_check: 2010-06-01
+#: last_checked: 2010-06-03
+#: next_check: 2010-09-01
 Rüdersdorfer Str. bekommt Radspuren	?::projected 13066,11854 12891,12008 12822,12067
 #
 #: by: Tagesspiegel vom 2010-03-26
-#: next_check: 2010-06-01
+#: last_checked: 2010-06-03
+#: next_check: 2010-09-01
 Lindenstr. bekommt Radspuren	?::projected 9795,10512 9770,10590 9777,10719 9805,10791 9829,10830 9935,11067 9973,11150 10020,11262
 #
 #: section ^^^
@@ -3480,7 +3482,6 @@ Melli-Beese-Str.: Wie ist die Qualität der Straße im nördlichen Abschnitt (viell
 Straße an der Parkanlage: Qualität? Stimmt der Straßenname? Spielstraße?	? 17827,3549 17892,3550
 Hanuschkestr.: Qualität? Spielstraße?	? 17892,3537 17974,3536
 Walter-Huth-Str.: Ist ein Abschnitt der Straße verkehrsberuhigt? Welcher genau?	? 17832,3740 17896,3738 17927,3737 17976,3735
-Ellernweg: Qualität?	? 17303,4824 17428,4792 17542,4772
 Am Alten Fenn: Qualität?	? 17037,4794 17060,4848 17119,4931 17246,5089 17266,5134 17291,5201 17297,5260 17300,5423 17366,5551
 Melli-Beese-Str. - Parkweg: gibt es für Radfahrer eine Verbindung zwischen Melli-Besse-Str. und dem Weg im Landschaftspark?	? 17870,3965 17877,3979
 Rennbahnstr./Gustav-Adolf-Str.: gibt es eine Ampel an der Kreuzung Rennbahnstr./Gustav-Adolf-Str.?	? 13708,17453
@@ -5336,7 +5337,6 @@ nördlich der Elsenborner Str.: hier entsteht eine neue Straße	? 21939,10179 2194
 #: XXX: Qualität: unbefestigte Straße, Q2-
 Fortsetzung der Mieltschiner Str.: hat dieser Stummel einen Straßennamen?	? 22051,10201 22001,10216
 Breitscheidstr. (Glienicke): Qualität östlich der Schönfließer Str.?	? 4244,25914 4292,25894 4394,25887 4579,25865 4690,25853 4795,25838 4888,25829 4985,25863 5085,25906
-Heinrich-Heine-Str. (Glienicke): Qualität südlich der Clara-Zetkin-Str.?	? 4844,25231 4862,25056 4863,25002 4880,24833
 #: XXX laut osm "unpaved", Tina Carl hat keine Range angegeben
 Ruppiner Str. (Falkensee): Qualität nördlich der Eberswalder Str.?	? -10845,19025 -10829,19222 -10811,19428
 Uferweg Eiswerderbrücke - Nordhafen: Qualität? Nachts beleuchtet? Wird der Havelradweg hier offiziell entlang geführt?	? -2715,15519 -2662,15642 -2642,15647 -2599,15724 -2510,16045 -2474,16280 -2507,16292
