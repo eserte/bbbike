@@ -2,14 +2,14 @@
  [%- IF data.${inputname}.defined %]value="[% data.${inputname} | html %]"[% END -%]
 [% END -%]
 [% BLOCK radio_checked %]
- [%- IF data.${inputname} == val %]checked[% END %]
+ [%- IF data.${inputname} == val %] checked[% END %]
 [% END -%]
 [% BLOCK range %]
     <td>
       [%- inputname = "${cat}range_1" -%]
      <label>
       <input type="radio" name="[% inputname %]" value="whole"
-       [%- IF !data.${inputname}.defined || data.${inputname} == "whole" %]checked[% END %] />
+       [%- IF !data.${inputname}.defined || data.${inputname} == "whole" %] checked[% END %] />
       gesamte Straße
      </label><br />
      <label>
@@ -39,7 +39,7 @@
        [%- radioid   = inputname _ "_" _  val -%]
        <td>
         <input id="[% radioid | html %]" style="margin-right:1em;" type="radio" name="[% inputname %]" value="[% val | html %]"
-        [%- INCLUDE radio_checked %] /></td>
+        [%- IF checked %] checked[% ELSE %][% INCLUDE radio_checked %][% END %] /></td>
        <td><label for="[% radioid | html %]">[% IF text %][% text | html_line_break %][% ELSE %][% val | html_line_break %][% END %]</label>
 [% IF helpurl -%]
         <a class="yellowbox" style="text-decoration:none" target="newstreetform_help" href="[% helpurl %]">?</a>
@@ -161,8 +161,8 @@ function init() {
 [% IF is_fragezeichen_form -%]
    <tr><td colspan="3"><hr /></td></tr>
    <tr>
-    <td style="vertical-align:top;">
-     Kommentar zu:
+    <td style="vertical-align:top; text-align:right; padding-right:1em;">
+     <b>Frage</b>:
     </td>
     <td>
 [% IF fragezeichen.title -%]
@@ -173,7 +173,13 @@ function init() {
     </td>
    </tr>
    <tr>
+[% IF fragezeichen.questions -%]
     <td></td>
+[% ELSE -%]
+    <td style="vertical-align:top; text-align:right; padding-right:1em;">
+     <b>Antwort</b>:
+    </td>
+[% END -%]
     <td>
 [% IF fragezeichen.questions -%]
 [%   FOR question = fragezeichen.questions -%]
@@ -313,7 +319,7 @@ function init() {
 [% INCLUDE radiocell cat="sperre" type="cat" val="BNP" text="Drängelgitter/Schranke an der Kreuzung" entryname="sperre_BNP" helpurl="http://www.adfc-bergstrasse.de/radverkehrsplanung/umlaufsperren.htm" %]
 [% INCLUDE radiocell cat="sperre" type="cat" val="0" text="Treppe, Rad muss getragen werden" entryname="sperre_carry" %]
 [% INCLUDE radiocell cat="sperre" type="cat" val="2" text="Straße vollkommen gesperrt für Radfahrer" %]
-[% INCLUDE radiocell cat="sperre" type="cat" val="-" text="(keine Angabe/unbekannt)" %]
+[% INCLUDE radiocell cat="sperre" type="cat" val="-" checked="1" text="(keine Angabe/unbekannt)" %]
      </table>
     </td>
    </tr>
