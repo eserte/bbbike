@@ -10352,7 +10352,7 @@ EOF
        text  => 'Bauarbeiten am Ostkreuz, Verbindungsstraße könnte für die Durchfahrt gesperrt sein',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 14673,10180 14764,10303 14794,10336 14821,10478 14832,10512 14843,10621 14882,10732
+userdel	2::inwork 14688,10167 14765,10279 14794,10336 14821,10478 14832,10512 14843,10621 14882,10732
 EOF
      },
      { from  => undef, # 
@@ -11492,7 +11492,7 @@ EOF
        text  => 'Untere Kynaststr.: Restbauarbeiten, Straße könnte u.U. bis zum 2.6.2008 gesperrt sein',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 14673,10180 14764,10303 14794,10336 14821,10478 14832,10512 14843,10621 14882,10732 14906,10820
+userdel	2::inwork 14688,10167 14765,10279 14794,10336 14821,10478 14832,10512 14843,10621 14882,10732 14906,10820
 EOF
      },
      { from  => undef, # 
@@ -17682,6 +17682,24 @@ EOF
        source_id => 'http://www.berlin.de/ba-lichtenberg/presse/archiv/20100528.1110.297131.html',
        data  => <<EOF,
 userdel	q4::inwork 18586,9172 18511,9185 18430,9199 18319,9218
+EOF
+     },
+     { from  => 1275679548, # 2010-06-04 21:25
+       until => 1275948000, # 2010-06-08 00:00
+       text  => 'Erkner: L30: 18. Heimatfest OL Erkner, 03.06.2010 bis 07.06.2010 ',
+       type  => 'gesperrt',
+       source_id => '106700635',
+       data  => <<EOF,
+userdel	2::temp 34443,1951 34250,2546
+EOF
+     },
+     { from  => 1275537600, # 2010-06-03 06:00
+       until => 1275861540, # 2010-06-06 23:59
+       text  => 'Neue Krugallee (Treptow): Veranstaltung, gesperrt. Ebenso gesperrt Bulgarische Str. zw. Neue Krugallee und Parkplatz (bis 06.06.10 24.00 Uhr) in beiden Richtungen zw. Bulgarische Str. und Am Plänterwald, 04.06.2010 06:00 Uhr bis 06.06.2010 23:59 Uhr ',
+       type  => 'handicap',
+       source_id => 'IM_015813',
+       data  => <<EOF,
+userdel	q4::temp 15793,8984 15673,8901 15591,8848 15714,8633
 EOF
      },
     );
