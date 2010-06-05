@@ -773,7 +773,7 @@ sub KDEInstall {      # XXX ersetzt makefile für freebsd-port
 	%kdedirs = $kde->kde_dirs(-writable => 1);
     }
 
-    if ($type eq 'user' || (!defined %kdedirs && $type eq 'best')) {
+    if ($type eq 'user' || (!%kdedirs && $type eq 'best')) {
 	my $homedir = _get_homedir();
 	if (defined $homedir) {
 	    %kdedirs = $kde->kde_dirs(-prefix => "$homedir/.kde",
@@ -785,7 +785,7 @@ sub KDEInstall {      # XXX ersetzt makefile für freebsd-port
 
     $type = 'root' if ($type eq 'best');
 
-    if (!defined %kdedirs) {
+    if (!%kdedirs) {
 	Print
 	    M"Keine Verzeichnisse für die KDE-Installation gefunden.\n";
 	goto KDEEND;

@@ -759,7 +759,7 @@ $delim = '!'; # wegen Mac nicht ¦ verwenden!
 #XXX shared variable ! my $header_written;
 use vars qw($header_written);
 
-if (defined %Apache::) {
+if (%Apache::) {
     # workaround for "use lib" problem with Apache::Registry
     'lib'->import(@extra_libs);
 }
