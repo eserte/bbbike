@@ -3304,6 +3304,14 @@ Garziner Platz: Asphalt	Q0 20945,10286 20947,10137
 Eberhard-Roters-Platz: Asphalt	Q0 9026,8916 8990,8915 8954,8914
 Alte Brauerei: Asphalt	Q0 8954,8914 8953,8886 8814,8881
 (Zufahrt zum Viktoria-Quartier): Asphalt	Q0 9111,9036 9026,8916
+(Saarower Weg - Fürstenwalder Allee): unbefestigter Weg	Q2 31041,3794 30987,3583 30993,3557
+Hartlebenstr.: Beton	Q0- 26080,5946 26073,5847 26062,5776
+#: note: zwischen Löcknitz- und Flakenseestr. "bituminöse" Decke, laut http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20080811.1415.106769.html, der Rest per Augenschein bestätigt
+Möllenseestr.: Beton	Q0 26400,5449 26358,5403 26364,5288 26367,5211 26350,5167 26299,5061 26299,5041
+Wupatzseestr.: Beton	Q0 26196,5477 26213,5403 26224,5285
+Peetzseestr.: Beton	Q0 26162,5283 26167,5240 26174,5058
+Ingrid-Goltzsche-Schwarz-Str.: Beton	Q0 25009,5593 25012,5729 25012,5754
+Werlseestr.: Beton	Q0 26062,5776 26199,5643 26270,5563 26400,5449 26570,5300
 ######################### User Contributions #################################
 #: by: Dominik Seelow vvv
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
@@ -9435,7 +9443,7 @@ Estersstr.: schlechtes Kopfsteinpflaster	Q3 8152,2059 8233,2231
 #: note: "enge Straße", aber ohne schlechtere Kategorisierung, "teilweise parkende PKW"
 Steigerwaldstr.: Beton	Q0 -4710,15530 -4701,15563 -4639,15726 -4655,15803 -4656,15839 -4653,15896 -4630,15978
 #: by: Heike Richter:
-#: confirmed_by: srt (zumindest der südöstliche Abschnitt)
+#: confirmed_by: srt (zumindest der südöstliche Abschnitt, sowie an der Baumschulenstr.)
 Frauenlobstr.: guter Asphalt	Q0 15697,6678 15830,6579 15954,6481 16043,6414 16220,6277
 #: by: Robert (klemm):
 #: note: unklarer Eintrag von SOTAREone: Kopfsteinpflaster Q2 (OK, aber tatsächlich die gesamte Straße?), aber Fußgängerzone q1, Radweg???
@@ -11519,12 +11527,12 @@ Karl-Pokern-Str.: Asphalt	Q0 26079,5057 26034,5056 25984,5070 25941,5069 25860,5
 Karl-Pokern-Str.: Beton	Q1 25860,5067 25860,5159 25857,5184 26026,5179 26028,5153 26034,5056
 Karl-Pokern-Str.: Beton	Q1 25860,5159 26028,5153
 #: confirmed_by: srt
-Rahnsdorfer Str. (Friedrichshagen): sehr guter Asphalt	Q0 26611,5301 26570,5300 26488,5292 26364,5288 26224,5285 26162,5283 26069,5280 25739,5242
+Rahnsdorfer Str. (Friedrichshagen): sehr guter Asphalt	Q0+ 26611,5301 26570,5300 26488,5292 26364,5288 26224,5285 26162,5283 26069,5280 25739,5242
 #: confirmed_by: srt
 #: note: an der Bölschestr. kurzer Abschnitt mit Verbundsteinpflaster
 Aßmannstr.: guter Asphalt	Q0 25738,5228 25539,5237 25264,5253 25121,5286 25039,5295 25018,5294 25002,5296
 #: corrected_by: Erik Boß
-Aßmannstr.: gut befahrbarer Platten-Betonweg	Q0 25039,5295 25039,5304 25048,5727 25012,5729 25012,5754
+Aßmannstr.: gut befahrbarer Platten-Betonweg	Q0 25039,5295 25039,5304 25048,5727 25012,5729
 #: corrected_by: srt (Q2 -> Q2-)
 Scharnweberstr. (Friedrichshagen): Kopfsteinpflaster	Q2- 25720,4832 25724,4919 25729,5002 25732,5065 25738,5228
 Scharnweberstr. (Friedrichshagen): Asphalt	Q0 25738,5228 25739,5242 25743,5311

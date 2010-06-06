@@ -1091,7 +1091,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
          'text' => 'Wendenschloßstr. (Köpenick) Richtung Müggelheimer Str. zwischen Salvador-Allende-Str. und Landjägerstr. Baustelle, Fahrtrichtung gesperrt (bis Mitte 2010)',
          'from' => undef,
          'id' => 1857,
-         'data' => 'userdel	q4::inwork; 23451,4877 23363,4846 22959,4576 22893,4532 22862,4511 22832,4491 22791,4457 22740,4415
+         'data' => 'userdel	q4::inwork; 23451,4877 23363,4846 23055,4640 22959,4576 22893,4532 22862,4511 22832,4491 22791,4457 22740,4415
 ',
          'type' => 'handicap'
        },
@@ -1490,15 +1490,7 @@ userdel	q3::inwork 9444,11616 9432,11702
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1275688800,
-         'text' => 'Kanal- und Leitungsbauarbeiten Neuruppin, OT Karwe, Vollsperrung 25.03.2010 bis 04.06.2010 ',
-         'from' => 1269727743,
-         'id' => 2031,
-         'data' => 'userdel	q4::inwork -27035,49829 -27196,50015 -27421,50349
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'source_id' => 'IM_015434',
@@ -1519,7 +1511,7 @@ userdel	q3::inwork 9444,11616 9432,11702
          'text' => 'Grünheide (Mark): Brückenbauarbeiten OD Kienbaum 24.02.2010 bis 20.09.2010 ',
          'from' => 1270235590,
          'id' => 2037,
-         'data' => 'userdel	2::inwork 48220,6698 48051,6849
+         'data' => 'userdel	2::inwork 48182,6806 48027,6894
 ',
          'type' => 'gesperrt'
        },
@@ -1534,16 +1526,7 @@ userdel	q3::inwork 9444,11616 9432,11702
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => '101100040',
-         'until' => 1275775200,
-         'text' => 'Althüttendorf: Grundhafter Ausbau im Bereich der AS Chorin, westl. Seite 12.04.2010 bis 05.06.2010 ',
-         'from' => 1271280104,
-         'id' => 2041,
-         'data' => 'userdel	2::inwork 35000,60912 35215,60669 35255,60090
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => '107300037',
          'until' => 1279317600,

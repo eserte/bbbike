@@ -120,8 +120,8 @@ Hobrechtsfelde	Q0 16488,29880 16279,29196 16066,28510 16008,28424
 Hobrechtsfelde - Buch bis zur Kurve Hobrechtsfelder Chaussee	Q0 16008,28424 15777,28037
 Bötzow: Kopfsteinpflaster	Q2 -7640,26928 -8182,26706 -8488,26599
 Hennigsdorf: Kopfsteinpflaster OK	Q1 -3450,26512 -3306,25887 -3018,25556
-Berliner Str. (Erkner): Kopfsteinpflaster, Radwege OK	Q1 33593,2893 33894,2825 34142,2742
-Erkner Richtung Tasdorf: Kopfsteinpflaster	Q2; 34142,2742 34326,2915 34293,3076 34271,3184
+Berliner Str. (Erkner): Fahrbahn und Radweg Richtung Berlin Asphalt, Radweg Richtung Osten Verbundsteinpflaster	Q0 33547,2904 33894,2825 34142,2742
+#XXX del: Erkner Richtung Tasdorf: Kopfsteinpflaster	Q2; 34142,2742 34326,2915 34293,3076 34271,3184
 Erkner Richtung Tasdorf: Kopfsteinpflaster/schlechter Radweg	Q2; 34271,3184 34486,4276 34574,4552
 Heinersdorf: Kopfsteinpflaster	Q2 5943,-2117 5773,-2075
 Heinersdorf: rauher Asphalt	Q1 5773,-2075 5559,-2032
@@ -792,8 +792,8 @@ Wartenberger Str.: sehr guter Asphalt	Q0+ 18600,20875 18596,20965 18293,21340 18
 	Q0 34343,5362 33943,5568 33389,5751
 	Q0 32380,6938 31587,7909 31512,7971 31221,8312
 	Q0 25659,11125 26449,10953 26596,10921 26892,10666 27209,10666 27499,10859 27817,10875 29194,10899 29752,10895 30678,10923 31871,10926 32900,10962 33475,10842 34256,10645 35862,10265 36599,10112
-	Q0 55562,-4726 55447,-4585 55447,-4432 55447,-4247 55131,-3906 54292,-3563 54087,-3548 53537,-3500 51850,-3075 51037,-2631 49664,-2109 49210,-1776 48262,-1512 47950,-1412 47484,-1058 47015,-713 46718,-631 46462,-409 45787,-225 45462,-18 45037,31 43456,337 42843,102 39333,-1072
-	Q0 41987,5693 41275,5229 41051,4427 40463,4020 39968,3795 39645,3307 39534,3037 39243,2759 39044,2686 38636,2578 38023,2687 37712,2659 37084,2693 36771,2581 36719,2420 36403,2465 35453,2207 34990,2148 34742,2111 34620,2046 34443,1951
+	Q0 55536,-4725 55447,-4585 55447,-4432 55447,-4247 55131,-3906 54292,-3563 54087,-3548 53953,-3535 53537,-3500 51859,-3098 51037,-2631 49664,-2109 49210,-1776 48518,-1559 47882,-1378 47778,-1308 47484,-1058 46969,-672 46718,-631 46354,-369 45787,-225 45424,-11 45247,7 45037,31 43880,303 43456,337 42926,155 39341,-1057
+	Q0 41987,5693 41275,5229 41051,4427 40463,4020 39968,3795 39645,3307 39534,3037 39243,2759 39044,2686 38636,2578 38023,2687 37712,2659 37084,2693 36771,2581 36719,2420 36402,2471 35453,2207 35088,2160 34990,2148 34742,2111 34620,2046 34443,1951
 	Q0 41806,-40762 42075,-40337 42152,-39572 41675,-38268 41687,-38100 41731,-37743
 	Q0 41731,-37743 41512,-37406 41006,-37256 40118,-36709 39478,-36702 39284,-36826 39087,-36914 38650,-36450 38648,-36241 38775,-36150 38864,-35989
 	Q0 35518,-32837 35641,-32578
@@ -1565,11 +1565,10 @@ Ziegelbergstr.: Kopfsteinpflaster	Q2 -797,127710 -621,127728 -390,127731 -405,12
 #: add_fragezeichen: welche Seite war das? wahrscheinlich in Richtung Süden
 Briesen: halbseitig Kopfsteinpflaster	Q2 70326,-5505 70549,-5215
 #: add_fragezeichen: nach den Bauarbeiten (2007-05-10) guter Asphalt?
-Briesen - Petersdorf: guter bis mäßiger Asphalt	Q0 70549,-5215 71331,-5118 73292,-4598 74238,-3970
-Petersdorf - Treplin: sehr guter Asphalt	Q0 74238,-3970 74606,-3837 75224,-3791 75828,-2982 76522,-2274 76525,-2065 76615,-1975 76665,-1850 77075,-1861 77833,-697 78103,-165 78034,231
+Briesen - Petersdorf: guter bis mäßiger Asphalt	Q0- 70549,-5215 71331,-5118 73292,-4598 74238,-3970
+Petersdorf - Treplin: sehr guter Asphalt	Q0+ 74238,-3970 74606,-3837 75224,-3791 75828,-2982 76522,-2274 76525,-2065 76615,-1975 76665,-1850 77075,-1861 77833,-697 78103,-165 78034,231
 Müncheberg: Kopfsteinpflaster	Q2 60803,11559 60643,11590 60484,11681 60475,11734 60306,11906
-#: add_fragezeichen: nach den Bauarbeiten (2006-09-30) Asphalt?
-Petershagen: kleinteiliges Kopfsteinpflaster, OK	Q1 74683,385 74246,584 73775,831
+Petershagen: Asphalt	Q0+ 74683,385 74197,607 73775,831
 #: add_fragezeichen: wie ist die Qualität ab Berliner Str. Richtung Süden: genauso schlecht?
 Rüdersdorfer Str. (Schöneiche): schlechtes bis mäßiges Kopfsteinpflaster	Q3 31512,7971 31446,7915
 #: add_fragezeichen: wie ist die Qualität ab Berliner Str. Richtung Süden?
@@ -1628,7 +1627,7 @@ Goethestr./Prenzlau - Seelübbe: Feldweg	Q2 40850,99777 41170,98927 41197,98927 4
 #: note: laut Bild: http://adfc.jgr.de/alternativradroute/d3150.html
 Wüste Kunersdorf: Asphalt	Q0 86307,581 86129,933 86185,1110 85905,1461
 #: note: laut Bild: http://adfc.jgr.de/alternativradroute/d3132.html
-Kliestow, Alter Bahndamm: Asphalt	Q0 86602,-3062 86555,-2783
+Kliestow, Alter Bahndamm: Asphalt	Q0 86616,-3048 86555,-2783
 #: note: laut Bild: http://adfc.jgr.de/alternativradroute/d3134.html und http://adfc.jgr.de/alternativradroute/d3141.html
 #: add_fragezeichen: Qualität des Feldwegs mäßig und nicht schlecht?
 Kliestow - Wüste Kunersdorf: Feldwege	Q3 86555,-2783 86261,-1514 85834,181 86307,581
@@ -2220,6 +2219,22 @@ Kirchstr. (Gramzow): Asphalt	Q0 49640,90243 49651,90395
 Kirchstr. (Gramzow): Kleinsteinpflaster	Q2+ 49651,90395 49655,90469
 Schulstr. (Gramzow): Kleinsteinpflaster	Q2+ 49655,90469 49841,90479
 Zum Wasserturm (Potsdam): Asphalt	Q0 -11996,-2192 -11993,-2095 -11828,-2110 -11837,-2223
+Franz-Mehring-Str. (Frankfurt): Asphalt	Q0 88433,-5722 88440,-5572 88373,-5465 88280,-5402 88192,-5414 88148,-5201
+Bahnhofstr. (Frankfurt): Asphalt	Q0 88412,-6148 88409,-6032 88430,-5923 88433,-5722
+Georgenthal - Wilmersdorf: leicht welliger Asphalt	Q0- 71321,1319 71098,1130 70201,969 69806,656 69726,655
+Wilmersdorf: Asphalt	Q0 69726,655 69364,652 69361,524 69424,251 69400,146
+Wilmersdorf - Briesen: rauer Asphalt	Q0- 69400,146 69326,-170 68928,-608 68820,-897 68742,-1301 68205,-2720
+#: note: seen from RE
+Hangelsberg - Kienbaum: Asphalt	Q0 45787,-225 45836,-8
+#: note: seen from RE
+Hangelsberg - Kienbaum: mäßiger Beton	Q1- 45836,-8 45968,619
+Briesen - Berkenbrück: sehr guter Asphalt	Q0+ 68205,-2720 67498,-1928 67324,-1856 67223,-1765 66948,-2038 66878,-2078 66051,-2423 65854,-2562 65816,-2687 65638,-2821 64980,-3141 64470,-3222 63787,-3692 63523,-3781 62692,-4215 62507,-4444 62486,-4480
+Am Bhf. Berkenbrück kurz Kopfsteinpflaster	Q2 62486,-4480 62471,-4512
+Berkenbrück - Fürstenwalde: sehr guter Asphalt	Q0+ 62471,-4512 62162,-4487 61796,-4627 61514,-4837 61387,-5051 60918,-4953 60784,-5060 60687,-5131 60003,-5190 59449,-5351 58861,-5262 58249,-5090 58135,-5057 58097,-5045
+Eisenbahnstr. (Fürstenwalde): Fahrbahn Asphalt, Radweg Richtung Süden Verbundsteinpflaster	Q0 55447,-4247 55456,-4023 55401,-3599
+Am Bahnhof, Karl-Marx-Str. (Fürstenwalde): Asphalt	Q0 55401,-3599 55304,-3583 55131,-3906
+#: note: zumindest das südliche Ende
+Leo-Hendrik-Baekeland-Str. (Erkner): Asphalt	Q0 34603,2615 34549,2640 34416,2848 34391,3099
 ######################### User Contributions #################################
 #: by: Aaron Schaar: vvv
 Hermannswerder: guter Asphalt	Q0 -13718,-2991 -14301,-2871 -14577,-3068 -14740,-3262

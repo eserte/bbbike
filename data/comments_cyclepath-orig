@@ -48,8 +48,9 @@ B2: gemeinsamer Rad- und Gehweg, asphaltiert	RW2;RW2 -13141,1933 -13134,1758 -13
 B273: Radweg	RW2;RW2 -13556,-1182 -13556,-1140 -13560,-1106 -13576,-1026 -13625,-902 -13815,-749 -14034,-571 -14134,-468 -14409,-371 -14546,-121 -14587,80 -14650,201 -14737,300
 B273: Radweg	RW2;RW2 -14737,300 -14841,404 -14859,421 -15046,527 -15059,535 -15123,570 -15145,582 -15158,589 -15298,668 -15508,785
 B273: Radweg	RW -18731,5799 -18804,5992 -18962,6183 -19576,6450 -19787,6551 -20023,6826
-Berliner Str., Erkner: Radweg	RW 33593,2893 33894,2825 34142,2742
-Friedrichstr., Erkner: Radweg auf Gehweg	RW 34142,2742 34175,2637 34250,2546 34443,1951
+Berliner Str. (Erkner): Verbundsteinpflasterradweg	RW2; 33547,2904 33894,2825 34142,2742
+Berliner Str. (Erkner): asphaltierter Radweg	RW2; 34142,2742 33894,2825 33547,2904
+Friedrichstr. (Erkner): Radweg auf Gehweg	RW 34142,2742 34175,2637 34250,2546 34443,1951
 Erkner - Tasdorf: (schlechter) Radweg	RW 34271,3184 34486,4276 34574,4552
 Zechlinerhütte - Rheinsberg: Radweg mit gutem Asphalt	RW -27053,82717 -26940,82461 -26806,82333 -26541,82132 -26511,81861 -26435,81684 -26499,80944 -26009,79227 -25923,78844 -25439,77907 -25459,77650 -25671,77176 -25760,76840 -25801,76494 -25728,76368 -25728,76256
 Hennickendorf - Ahrensdorf: breiter asphaltierter Radweg	RW -9594,-27471 -9298,-27089 -9016,-26788 -8893,-26326 -8511,-25814 -8128,-25535 -7894,-25017 -7586,-24667 -7310,-24388 -6700,-24539 -5997,-24621 -5200,-24423
@@ -92,8 +93,8 @@ Alte, parallel verlaufende asphaltierte Allee ist für Radfahrer befahrbar	RW 213
 Radweg	RW 22543,-15510 22865,-15325 23123,-14619 23346,-14193
 Radwegstreifen (Verbundsteinpflaster)	RW3;RW3 25912,-11956 25949,-11945 26078,-11992 26296,-12053
 Radwegstreifen (Verbundsteinpflaster)	RW3;RW3 26296,-12053 26299,-11896
-#: XXX: wahrscheinlich auch weiter Richtung Osten:
-Breiter Verbundsteinradweg für beide Richtungen auf der nördlichen Seite	RW 34990,2148 35453,2207 36403,2465 36719,2420
+Breiter Verbundsteinradweg für beide Richtungen auf der nördlichen Seite	RW8;RW2 34990,2148 35088,2160 35453,2207 36402,2471 36719,2420 37085,2201
+Radwege bzw. Gehwege frei für Radfahrer	RW 37085,2201 37129,2175 37364,2132 37449,1992 37870,1620 38164,1564 38642,1798 38732,1821 39212,1762
 Verbundsteinradweg für beide Richtungen, etwas abseits der Straße	RW 36719,2420 36771,2581 37084,2693 37712,2659 38023,2687 38636,2578
 #: XXX: genaue Position und Qualität?
 Radweg (?)	RW 39243,2759 39534,3037
@@ -198,7 +199,7 @@ Niederneuendorfer Str.: Zweirichtungsradweg	RW -3497,20003 -3371,19864 -3171,196
 Röpersdorf: Radfahren auf Gehweg erlaubt	RW 38562,97687 38615,98224
 Badeweg Prenzlau: Zweirichtungsradweg	RW 38939,101112 39106,101231
 Uckerpromenade: gemeinsamer Geh- und Radweg, überwiegend fester Sand	RW 39106,101231 39275,101193 39474,100982 39671,100750 40056,99762
-asphaltierter Zweirichtungsradweg auf der südlichen Seite	RW 77835,204 77326,287 76840,600 75743,878 75117,598 74815,386 74683,385
+asphaltierter Zweirichtungsradweg auf der südlichen Seite	RW8;RW2 77835,204 77326,287 76839,583 76082,756 75743,878 75452,725 75117,598 74815,386 74683,385
 Mölschow - Trassenheide: Radweg	RW 37100,186740 37881,187596
 Trassenheide - Ostsee: Radweg	RW 38056,187615 38435,187917 38457,187932 38762,188150
 #: add_fragezeichen: nicht ganz sicher:
@@ -422,6 +423,10 @@ Birkenweg (Groß Glienicke): verkehrsberuhigt	RW6;RW6 -10055,6715 -10091,6716 -10
 	RW6;RW6 -14974,988 -14992,927
 	RW6;RW6 -15001,891 -14870,850
 	RW3; -14650,201 -14663,310 -14676,418
+teils Asphalt, teils Verbundsteinpflaster	RW8;RW2 39341,-1057 39264,-832 39259,612 39250,1024 39311,1219 39321,1349 39212,1762
+Radweg existiert, zumindest auf der östlichen Seite	RW 87906,-5239 87553,-4939 87418,-4660
+	RW2; 55401,-3599 55456,-4023 55447,-4247
+überwiegend asphaltiert	RW8;RW2 48518,-1559 47882,-1378 47778,-1308 47484,-1058 46969,-672 46718,-631 46354,-369 45787,-225 45424,-11 45247,7 45037,31 43880,303 43456,337 42926,155 39341,-1057
 ######################### User Contributions #################################
 #: by: Tagesspiegel
 	RW 16953,35907 17114,35904 18082,36115 18440,36179 19193,36011
