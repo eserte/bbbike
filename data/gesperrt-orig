@@ -698,6 +698,15 @@ Harzburger Str. (Pankow), Klaustaler Str...	1s:q4 11442,18736 11419,18801 11463,
 Faucherweg	1 -1307,14801 -1251,14772 -1207,14781 -1141,14814 -896,14888
 Römerweg	1s:q2 19236,9710 19450,9728 19459,9842
 Michaelkirchplatz	1 11415,11392 11498,11417
+#: by: Ulrike Orlowski vvv
+#: XXX_osm Einbahnstraßen fehlen bei osm vvv
+Berenhorststr.	1 4816,17712 4862,17934
+Berenhorststr.	1 4905,18142 4862,17934
+Von-der-Gablentz-Str.	1 5151,17658 4946,17701 4893,17698 4816,17712
+#: XXX_osm ^^^
+#: by: ^^^
+#: by: Christian (i8pp):
+Kemmannweg	1 -4207,14473 -4117,14458 -4049,14419 -3937,14340 -3911,14331 -3819,14302
 ######################################################################
 #
 # Potsdam
@@ -1519,8 +1528,10 @@ Poller, Abstand 80cm (mit Anhänger über Gehweg umfahren)	BNP:1::trailer=10 7816,
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
-#: last_checked: 2010-05-09
-Bertiniweg: gesperrt, wird evtl. später neu geöffnet	2:inwork -12710,1713 -12642,1781 -12636,1804 -12604,1857 -12605,1927 -12593,1946 -12542,1959
+#: by: Ulrike Orlowski
+#: by: http://asp.vmzberlin.com/VMZ_LSBB_MELDUNGEN_WEB/Meldungskarte.jsp?back=true&map=true&x=52.53578&y=13.31063&zoom=13&meldungId=IM_014510
+#: next_check: 2011-06-30
+Radweg parallel zur Autobahn ist wegen Bauarbeiten am BAB gesperrt	2:inwork 5062,14681 4676,14534 3707,14303 3595,14277
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1002/nachricht3772.html
 #: next_check: 2010-10-01
 Brücke über A10: Sperrung vom 15.02.2010 bis 01.10.2010	2:inwork 15337,24593 15490,24848
@@ -1555,6 +1566,8 @@ Unterführung unter Adlergestell und Bahn: wegen Brückenerneuerung gesperrt	2:inw
 #: section in Brandenburg vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # XXX del #: last_checked: 2009-08-29 Rückbau der Fr.-Ebert-Str. zwischen Breite Str. und Platz der Einheit, Bauarbeiten bis Ende 2009. Umfahrung über Alten Markt notwendig.	1:inwork -12659,-1700 -12758,-1654 -12755,-1585 -12773,-1544
 # XXX del #: last_checked: 2009-08-29 Rückbau der Fr.-Ebert-Str., kein Zugang zur Schwertfegerstr.	2:inwork -12870,-1493 -12795,-1499
+#: last_checked: 2010-05-09
+Bertiniweg: gesperrt, wird evtl. später neu geöffnet	2:inwork -12710,1713 -12642,1781 -12636,1804 -12604,1857 -12605,1927 -12593,1946 -12542,1959
 #: section ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #: temporary ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #: section ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

@@ -541,6 +541,10 @@ Harzburger Str. (Pankow), Klaustaler Str...	1s 11442,18736 11419,18801 11463,188
 Faucherweg	1 -1307,14801 -1251,14772 -1207,14781 -1141,14814 -896,14888
 Römerweg	1s 19236,9710 19450,9728 19459,9842
 Michaelkirchplatz	1 11415,11392 11498,11417
+Berenhorststr.	1 4816,17712 4862,17934
+Berenhorststr.	1 4905,18142 4862,17934
+Von-der-Gablentz-Str.	1 5151,17658 4946,17701 4893,17698 4816,17712
+Kemmannweg	1 -4207,14473 -4117,14458 -4049,14419 -3937,14340 -3911,14331 -3819,14302
 Am Neuen Garten	1 -12166,1384 -12212,1201 -12276,831 -12302,718
 Am Neuen Garten	1 -12332,585 -12582,127
 Hochstraße	3nocross::ignrte -11399,-1339 -11461,-1424 -11540,-1543
@@ -1727,7 +1731,7 @@ Drängelgitter	BNP:3:-157 63721,42792
 Schranke, kann auch mit Anhänger umfahren werden	BNP:1:-168 49137,24422
 Drängelgitter	BNP:3:24:trailer=6 3644,8456
 Poller, Abstand 80cm (mit Anhänger über Gehweg umfahren)	BNP:1:1:trailer=10 7816,5682
-Bertiniweg: gesperrt, wird evtl. später neu geöffnet	2:inwork -12710,1713 -12642,1781 -12636,1804 -12604,1857 -12605,1927 -12593,1946 -12542,1959
+Radweg parallel zur Autobahn ist wegen Bauarbeiten am BAB gesperrt	2:inwork 5062,14681 4676,14534 3707,14303 3595,14277
 Brücke über A10: Sperrung vom 15.02.2010 bis 01.10.2010	2:inwork 15337,24593 15490,24848
 Wegedornbrücke: Vollsperrung, Neubau	2:inwork 20385,593 20442,564 20510,530
 Rathausbrücke: gesperrt bis März 2011 (Neubau)	2:inwork 10362,12351 10422,12395
@@ -1738,6 +1742,7 @@ Lina-Morgenstern-Str.: noch in Bau, gesperrt	2:inwork 15716,10303 15753,10353
 Kynaststraße: Bauarbeiten im südlichen Abschnitt	2:inwork 14652,10201 14724,10297 14766,10372 14795,10473 14805,10518
 Brücke im Tiergarten: gesperrt	2:inwork 6406,11784 6467,11780
 Unterführung unter Adlergestell und Bahn: wegen Brückenerneuerung gesperrt	2:inwork 20810,2398 20939,2413
+Bertiniweg: gesperrt, wird evtl. später neu geöffnet	2:inwork -12710,1713 -12642,1781 -12636,1804 -12604,1857 -12605,1927 -12593,1946 -12542,1959
 Behlertstr.	1 -12370,-354 -12500,-339 -12621,-359 -12821,-417
 tragen (Treppe)	0:30:-82 2279,5112
 tragen (Treppe)	0:15:-136 2211,5120

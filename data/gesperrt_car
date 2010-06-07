@@ -607,6 +607,8 @@ Mittelstreifen	3nocross::ignrte 10539,662 10590,525 10617,452 10620,445
 Dielingsgrund -> Lichtenrader Damm: Mittelstreifen	3::igndisp 10782,587 10590,525 10617,452
 Lichtenrader Damm -> Dielingsgrund: Mittelstreifen	3::igndisp 10539,662 10590,525 10782,587
 Mittelstreifen	3nocross::ignrte 10638,403 10676,299 10713,197 10737,132
+Lichtenrader Damm -> Schwebelstr.: Mittelstreifen	3::igndisp 10676,299 10713,197 10903,263
+Schwebelstr. -> Lichtenrader Damm: Mittelstreifen	3::igndisp 10903,263 10713,197 10737,132
 Straßenbahntrasse	3nocross::ignrte 20281,14361 20269,14256 20241,14016
 Annenstr. -> Allee der Kosmonauten: Straßenbahntrasse	3::igndisp 20376,14244 20269,14256 20241,14016
 Allee der Kosmonauten -> Annenstr.: Straßenbahntrasse	3::igndisp 20281,14361 20269,14256 20376,14244
