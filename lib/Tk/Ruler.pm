@@ -1,10 +1,9 @@
 # -*- perl -*-
 
 #
-# $Id: Ruler.pm,v 1.1 2002/11/03 14:10:29 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2000-2002 Slaven Rezic. All rights reserved.
+# Copyright (C) 2000-2002,2010 Slaven Rezic. All rights reserved.
 #
 
 package Tk::Ruler;
@@ -24,7 +23,7 @@ use base qw(Tk::Frame);
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.1 $ =~ /(\d+)\.(\d+)/);
+$VERSION = 1.2;
 
 Construct Tk::Widget 'Ruler';
 
@@ -93,6 +92,7 @@ sub rulerGrid {
 	($args{-row},
 	 -weight => 0,
 	);
+    $w;
 }
 
 sub rulerPack {
@@ -110,6 +110,6 @@ __END__
 
 =head1 COPYRIGHT
 
-(c) 2000-2002 Slaven Rezic
+(c) 2000-2002,2010 Slaven Rezic
 
 =cut
