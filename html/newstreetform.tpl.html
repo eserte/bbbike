@@ -81,24 +81,24 @@ function init() {
 
   var strname_html;
   if (location.search) {
-    var search = unescape(location.search);
-    if (search.match(/strname=([^;&]*)/)) {
-      frm.supplied_strname.value = RegExp.$1;
+    var loc_search = location.search;
+    if (loc_search.match(/strname=([^;&]*)/)) {
+      frm.supplied_strname.value = unescape(RegExp.$1);
     }
-    if (search.match(/bezirk=([^;&]*)/)) {
-      frm.supplied_bezirk.value = RegExp.$1;
+    if (loc_search.match(/bezirk=([^;&]*)/)) {
+      frm.supplied_bezirk.value = unescape(RegExp.$1);
     }
-    if (search.match(/ort=([^;&]*)/)) {
-      frm.supplied_ort.value = RegExp.$1;
+    if (loc_search.match(/ort=([^;&]*)/)) {
+      frm.supplied_ort.value = unescape(RegExp.$1);
     }
-    if (search.match(/plz=([^;&]*)/)) {
-      frm.supplied_plz.value = RegExp.$1;
+    if (loc_search.match(/plz=([^;&]*)/)) {
+      frm.supplied_plz.value = unescape(RegExp.$1);
     }
-    if (search.match(/coord=([^;&]*)/)) {
-      frm.supplied_coord.value = RegExp.$1;
+    if (loc_search.match(/coord=([^;&]*)/)) {
+      frm.supplied_coord.value = unescape(RegExp.$1);
     }
-    if (search.match(/strname_html=([^;&]*)/)) {
-      strname_html = RegExp.$1;
+    if (loc_search.match(/strname_html=([^;&]*)/)) {
+      strname_html = unescape(RegExp.$1);
     }
   }
 
@@ -166,7 +166,7 @@ function init() {
     </td>
     <td>
 [% IF fragezeichen.title -%]
-     <span style="font-style:italic;">[% fragezeichen.title | html %]</span>
+     <span id="fragezeichen_text" style="font-style:italic;">[% fragezeichen.title | html %]</span>
 [% ELSE -%]
      <span id="fragezeichen_text" style="font-style:italic;">[% data.supplied_strname %]</span>
 [% END -%]
