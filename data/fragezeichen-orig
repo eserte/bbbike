@@ -217,7 +217,10 @@ Asphaltierung im Ramingrünzug	?::inwork -3776,14419 -3906,14517 -3941,14603 -401
 Radwegbau Welzower Steig	?::inwork 6320,21777 6223,21952 6257,22005 6111,22155 6082,22183 6052,22185 6026,22227 5993,22260 5984,22280 5939,22330 5929,22339
 Radverbindung zwischen Bernhard-Lichtenberg-Str. und Goerdelerdamm	? 3174,14253 3229,14224
 Asphaltierung gemeinsamer Geh- und Radweg (Schönholzer Heide)	? 7857,19693 7849,19614 7940,19521 8170,19308 8277,19210 8334,19157 8359,19162
+#: last_checked: 2010-06-09
 Alt-Biesdorf (nördliche Seite): Bau von Radwegen	?; 22242,11269 21960,11269 21860,11278 21750,11319 21624,11379 21398,11482 21311,11528
+#: last_checked: 2010-06-09
+Alt-Biesdorf/Alt-Kaulsdorf (südliche Seite): Bau von Radwegen	? 21108,11628 21251,11560 21311,11528 21398,11482 21624,11379 21750,11319 21860,11278 21960,11269 22242,11269 22326,11266 22484,11270
 #: last_checked: 2009-10-17
 Allee der Kosmonauten: Bau von Radwegen oder -streifen	?::inwork 19173,13478 19059,13474 18875,13467 18783,13469
 #: by ^^^
@@ -225,11 +228,11 @@ Allee der Kosmonauten: Bau von Radwegen oder -streifen	?::inwork 19173,13478 190
 #: last_checked: 2010-03-18
 #: next_check: 2010-06-01
 Fasanenstr.: Öffnung der Einbahnstraße für Radfahrer	? 5268,11274 5247,10992 5242,10918 5229,10716 5207,10399
-#: last_checked: 2010-03-24
-#: next_check: 2010-06-01
+#: last_checked: 2010-06-08
+#: next_check: 2010-09-01
 Braunschweiger Str.: Asphaltierung	? 13047,7234 13150,7254 13322,7294 13369,7307 13487,7337
-#: last_checked: 2010-03-24
-#: next_check: 2010-06-01
+#: last_checked: 2010-06-08
+#: next_check: 2010-09-01
 Teilestr.: Radverkehrsanlagen	? 10254,5921 10404,5969 10526,6008 10614,6047 10789,6031 11174,5996 11257,6015 11322,5989
 #: last_checked: 2010-06-06
 #: next_check: 2010-09-01
@@ -244,7 +247,6 @@ Biesterfelder Str.: Asphaltierung eines Teilstücks	? 17102,16464 17010,16349 169
 #: last_checked: 2009-11-26
 Suermondtstr.: Schaffung von Radverkehrsanlagen	? 16964,16042 16961,16042 16660,16165 16515,16207 16416,16236 16260,16282 16095,16331 15919,16383
 Hansastr.: Schaffung von Radverkehrsanlagen	? 14650,15750 14823,15776 14934,15860 15124,16104 15187,16185 15432,16500
-Alt-Biesdorf/Alt-Kaulsdorf (südliche Seite): Bau von Radwegen	? 21108,11628 21251,11560 21311,11528 21398,11482 21624,11379 21750,11319 21860,11278 21960,11269 22242,11269 22326,11266 22484,11270
 # XXX Radwegeverbindung im Zuge der TR7 Springpfuhl - Lea-Grundig-Str.
 #: last_checked: 2009-11-16
 Puccinistr.: Asphaltierung	? 13700,15501 13776,15546
@@ -1708,7 +1710,7 @@ Buolstr.: Qualität?	? 559,15342 429,15284 283,15237
 #: XXX: ein anonymer Eintrag existiert, aber nach der Beschreibung hat sich das eher wie Rohrdamm als Köttgenstr. angehört...
 Köttgenstr.: Qualität?	? 473,15169 556,15175 613,15195
 Sternfelder Str.: Qualität?	? 386,14162 367,13991 371,13863 182,13878 169,13851
-Adolfstr.: Qualität?	? 22756,11268 22751,11381 22743,11540 22734,11662 22633,11769
+Adolfstr. (Kaulsdorf): Qualität des nördlichen Abschnitts?	? 22751,11381 22743,11540 22734,11662 22633,11769
 Senziger Str.: Qualität?	? 22191,11999 22224,11963 22263,11911 22301,11879 22333,11846
 Münsterberger Weg: Qualität zwischen Gielsdorfer Str. und Frettchenweg?	? 23883,11416 24034,11363
 Münsterberger Weg: Qualität zwischen Gielsdorfer und Neuenhagener Str.? Nachts beleuchtet?	? 24173,11328 24034,11363
@@ -3027,7 +3029,6 @@ Patrizierweg (Potsdam): Qualität östlich der Mendelssohn-Bartholdy-Str.?	? -7855
 Gluckstr. (Potsdam): Qualität?	? -7832,-2864 -7491,-2904
 #: XXX unklarer Eintrag von Oliver Haase, "Bordsteinkanten"
 Mottlaupfad: Schrittgeschwindigkeit, vielleicht weil Spielstraße?	? -1901,23554 -2070,23631
-Dramburger Str.: Qualität? Gibt es eine Verbindung zum Wuhlewanderweg? Wenn ja, wie ist die Qualität?	? 21495,10600 21560,10471
 Kemberger Str.: Gibt es einen Radweg in der Kemberger Straße? Ist dieser benutzungspflichtig?	? 22314,17916 22215,17784 22191,17751 22148,17687 22022,17519 22002,17492 21913,17376
 Scharfschwerdtstr. (Hohen Neuendorf): Qualität?	? 1364,27953 1426,28065 1456,28125 1453,28175 1448,28276 1432,28356 1489,28451 1536,28550 1698,28742 1838,28808
 Hugo-Wolf-Steig: Qualität?	? 23168,1335 23053,1308
@@ -3107,9 +3108,7 @@ Lampesteig: Qualität?	? 7534,18588 7520,18701
 Waldenburger Str.: Qualität des südlichen Abschnitts?	? 22307,9762 22387,9873
 Kaulsdorfer Gärten: Qualität?	? 21859,9822 21893,9902
 Norastr.: Qualität?	? 22140,9830 22231,9817 22307,9762
-Lenbachstr. (Kaulsdorf): Qualität des nördlichen Abschnitts?	? 22327,10685 22251,10700 21979,10686 21938,10664
 Lenbachstr. (Kaulsdorf): Qualität des südlichen Abschnitts?	? 21679,10186 21718,10013
-Penkuner Weg: Qualität?	? 22738,10605 22785,10781 22865,11007
 Eichhornstr. (Kaulsdorf): Qualität?	? 22458,9532 22501,9369
 Fichtenstr.: Qualität?	? 22212,9508 22200,9430 22154,9237
 Tuchmacherweg: Qualität?	? 8473,18979 8616,19065
@@ -3143,7 +3142,6 @@ Weg an der Kaserne Hottengrund: Ist dieser Weg öffentlich zugänglich? Wie ist di
 #: XXX str_cont_ausnahme fehlt (zwei Abschnitte!)
 Hirseländerweg: Qualität?	? 28301,1467 28327,1525 28369,1616 28502,1827 28557,1907 28640,2015 28695,2093 28717,2121 28829,2269 28916,2333 28993,2391 29070,2446 29192,2543
 Hirseländerweg: Qualität?	? 28036,1136 28106,1211
-Tychyer Str.: Qualität?	? 21398,11482 21305,11363
 #: XXX Sebastian Koch war sich hier nicht sicher
 Gartenstr. - Tychyer Str.: Ist der Weg nachts beleuchtet?	? 21217,11328 21255,11314 21286,11319 21305,11363
 Arno-Philippsthal-Str.: Qualität?	? 20640,11469 20636,11342
@@ -3579,7 +3577,8 @@ Siefersheimer Str.: Qualität?	? 28672,1172 28596,1233
 Landhausring: Qualität?	? 21710,12798 21866,12763 21893,12783 21900,12820 21880,12858 21729,12894
 #: XXX laut osm surface=cobblestone
 Lorcher Str.: Qualität zwischen Binger Str. und Rüdesheimer Str.?	? 4271,6990 4160,7043 4059,7038
-Lötschbergstr.: Qualität? Ist der nördliche Abschnitt eine Einbahnstraße? Wenn ja, nur für Autos oder auch für Radfahrer?	? 20114,11233 20135,11269 20140,11343 20150,11512 20161,11715
+#: XXX ja, der nördliche Teil ist Einbahnstraße für alle
+Lötschbergstr.: Qualität?	? 20114,11233 20135,11269 20140,11343 20150,11512 20161,11715
 Ernstroder Weg: Qualität?	? 19984,11557 19966,11394
 Schmellwitzer Weg: Qualität?	? 20005,11383 19984,11319 19801,11360
 Bruchgrabenweg: Qualität?	? 20114,11233 20089,11227 19976,11238 19858,11249 19795,11256
@@ -3641,13 +3640,6 @@ Arndtstr. (Mahlsdorf, Kaulsdorf): Qualität?	? 22871,8582 22919,8647 23007,8788 2
 Buchenstr.: Qualität?	? 22514,8848 22586,8961 22644,9044 22699,9137
 #: XXX_osm: bei osm ohne Namen und zu kurz
 Güstrower Str.: Qualität?	? 23921,13465 24078,13431 24117,13423 24345,13366
-Brachetweg: Qualität?	? 23569,10693 23544,10591 23561,10572
-Maipfad: Qualität?	? 23569,10693 23715,10665
-Pfingstweg: Qualität?	? 23596,10848 23668,10823 23750,10797
-Osterpfad: Qualität?	? 23668,10823 23639,10743
-Nebelsteig: Qualität?	? 23561,10572 23534,10446
-Heuetsteig: Qualität?	? 23561,10572 23681,10552
-Hornungweg: Qualität?	? 23792,10926 23750,10797 23715,10665 23681,10552 23638,10408
 Balsaminenweg: Qualität?	? 23837,10279 23732,9850 23714,9776
 Georginenweg: Qualität?	? 23950,10250 23891,10027 23840,9819 23823,9759
 Lavendelweg: Qualität?	? 24058,10222 23999,10004 23945,9790 23931,9741
@@ -3728,9 +3720,7 @@ Heidereiterweg (Potsdam): Qualität?	? -11105,-4023 -10978,-4247 -10924,-4319 -10
 Nuthestr.: existieren durchgängig Radwege zwischen Berliner Str. und Alt Nowawes?	? -11142,-1675 -11226,-1445 -11356,-1317 -11463,-1232 -11549,-1169
 Am Berg: Qualität?	? 23010,4506 22959,4576
 Iselbergplatz: Qualität?	? 23523,13368 23646,13346
-Steffenshagener Str.: Qualität?	? 22947,10998 22983,11098 23159,11097
-Rosenhagener Str.: Qualität?	? 23135,10990 23159,11097
-Auf der Höh: Qualität?	? 22898,11125 22782,11127
+Steffenshagener Str.: Qualität des nördlichen Abschnitts?	? 22983,11098 23159,11097
 Verlängerte Mozartstr.: Qualität?	? 21864,6928 21920,6835
 Verlängerte Müggelbergallee: gibt es diese Straße? Qualität?	? 23107,1680 23231,1707
 #: XXX Anderson bei tvojpl, Edmund bei osm

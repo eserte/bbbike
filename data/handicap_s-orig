@@ -12,10 +12,10 @@
 #: next_check: 2010-09-01
 Schloﬂplatz: Behinderungen durch Bauarbeiten mˆglich	q3::inwork 10170,12261 10063,12438
 #XXX del #: last_checked: 2009-12-25 Caroline-Michaelis-Str.: Bauarbeiten, Ausweichen auf Gehweg	q4::inwork 9061,14050 9125,13973
-#: last_checked: 2010-04-23
+#: last_checked: 2010-06-06
 Fahrbahn der Mauerstr. wegen Bauarbeiten gesperrt	q4::inwork 9405,11413 9331,11497
 #XXX del: last_checked: 2010-02-02, #: next_check: 2010-05-31, Hauptstr. (Friedrichshain-Kreuzberg): Baustelle, Radfahrer kˆnnen langsam passieren	q3::inwork 14906,10820 14794,10844 14717,10855
-#: last_checked: 2010-04-23
+#: last_checked: 2010-06-06
 Varian-Fry-Str.: Baustelle, Fahrbahn gesperrt	q4::inwork 8389,11378 8374,11479
 #: last_checked: 2010-05-13
 General-Pape-Str.: Baustelle, Fahrbahn Richtung Norden gesperrt	q4::inwork; 7959,7609 7921,7728 7950,7840
@@ -23,7 +23,7 @@ General-Pape-Str.: Baustelle, Fahrbahn Richtung Norden gesperrt	q4::inwork; 7959
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraﬂe Richtung S¸den	q4::inwork; 9475,12365 9462,12481 9454,12558
 #: last_checked: 2010-05-22
 Universit‰tsstr.: wegen Bauarbeiten Richtung Unter den Linden gesperrt	q4::inwork; 9580,12581 9601,12380
-#: last_checked: 2010-04-18
+#: last_checked: 2010-06-05
 Planckstr.: wegen Bauarbeiten eine Einbahnstraﬂe Richtung S¸den	q4::inwork; 9434,12669 9385,12809 9383,12915
 #: next_check: 2010-10-01
 Matkowskystr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 14530,11137 14509,11060
@@ -662,6 +662,14 @@ Kaunstr.: Fuﬂg‰nger	q1 -999,2726 -984,2692
 Brascheweg: enge Straﬂe	q1 18881,9865 18810,9850
 Brascheweg: Fuﬂg‰nger, Bordstein	q2 18810,9850 18763,9837
 Rudolf-Grosse-Str.: Fuﬂg‰nger	q1 19141,9709 19142,9755
+Nebelsteig: enge Straﬂe	q1+ 23561,10572 23534,10446
+Heuetsteig: enge Straﬂe	q1+ 23561,10572 23681,10552
+Hornungweg: enge Straﬂe	q1+ 23792,10926 23750,10797 23715,10665 23681,10552 23638,10408
+Brachetweg: enge Straﬂe	q1+ 23569,10693 23544,10591 23561,10572
+Maipfad: enge Straﬂe	q1+ 23569,10693 23715,10665
+Pfingstweg: enge Straﬂe	q1+ 23596,10848 23668,10823 23750,10797
+Osterpfad: enge Straﬂe	q1+ 23668,10823 23639,10743
+(Kressenweg - Waldenburger Str.): eng, Fuﬂg‰nger	q2 23522,10456 23468,10423 23431,10435 23193,10426 23024,10455 22978,10451
 ######################### User Contributions #################################
 #: by: Michael Kiekbusch
 #: corrected_by: srt/policy (q4 -> q3-)
@@ -1230,7 +1238,7 @@ Sodtkestr.: enge Straﬂe	q1 12221,15514 12302,15664 12382,15802 12423,15875
 #: by: Dennis (jansen):
 Glauberstr.: viele parkende Autos, daher eng	q1 5556,984 5455,1150 5421,1205 5411,1259
 #: by: Mario (saric):
-(Templerzeile - Gˆtzstr.): Parkweg, Fuﬂg‰nger, teilweise mit Radweg	q1 9681,6180 9683,6199 9708,6493
+(Templerzeile - Gˆtzstr.): Parkweg, Fuﬂg‰nger, teilweise mit Radweg	q1 9681,6180 9683,6199 9695,6336 9708,6493
 #: by: Florian (berlin):
 (Darbystr. - Falkenseer Chaussee): schmal, aber auch mit H‰nger passierbar	q1 -5505,15859 -5526,15757
 #: by: Pythagoras:
@@ -1716,7 +1724,7 @@ Kulmseestr.: einige Fuﬂg‰nger	q1 20252,12262 20303,12230
 #: by: Sebastian Koch:
 (Gartenstr. - Tychyer Str.): sehr enger Trampelpfad	q2 21217,11328 21255,11314 21286,11319 21305,11363
 #: by: Elke Ortloff:
-Eisweg: enge Straﬂe	q1 23562,10934 23577,10915 23608,10902 23596,10848 23561,10712 23569,10693
+Eisweg: enge Straﬂe	q1+ 23569,10956 23577,10915 23608,10902 23596,10848 23561,10712 23569,10693
 #: by: Manuela Baumg‰rtel:
 Lauxweg: enge Straﬂe	q1 8979,3347 8921,3208
 #: by: Esther Helmert:

@@ -1749,16 +1749,6 @@ userdel	q3::inwork 9444,11616 9432,11702
          'data' => 'userdel	q4::inwork 18586,9172 18511,9185 18430,9199 18319,9218
 ',
          'type' => 'handicap'
-       },
-       {
-         'source_id' => '106700635',
-         'until' => 1275948000,
-         'text' => 'Erkner: L30: 18. Heimatfest OL Erkner, 03.06.2010 bis 07.06.2010 ',
-         'from' => 1275679548,
-         'id' => 2078,
-         'data' => 'userdel	2::temp 34443,1951 34250,2546
-',
-         'type' => 'gesperrt'
        }
      
 );
