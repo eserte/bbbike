@@ -230,7 +230,7 @@ check:
 
 clean-cache-files-on-remote:
 	-${SSH_PROG_AND_ARGS} -l ${BBBIKE_HOSTEUROPE_USER} ${BBBIKE_HOSTEUROPE_SSH_HOST} \
-	    rm /tmp/b_de_\*
+	    rm /tmp/b_de_\* /tmp/bbbike_\*.cache
 
 RSYNC_RULES=		check-rsync-ok \
 			do-rsync \
