@@ -1289,7 +1289,7 @@ Voltastr. (Siemensstadt): Qualität? Kann der Siemensdamm in Höhe der Straße über
 Wehneltsteig: Kann der Siemensdamm in Höhe des Wehneltsteigs überquert werden?	? 1256,14217 1305,14384
 Hefnersteig: Qualität? Ist die Straße eine Einbahnstraße? Wenn ja, gilt die Einbahnstraßenregelung nur für Autofahrer oder auch für Radfahrer? Kann der Siemensdamm in Höhe der Straße überquert werden?	? 1420,14369 1364,14191
 Nonnendamm: Qualität? Name der Brücke?	? 2028,13801 2149,13775 2176,13703 2217,13689 2283,13741 2430,13717 2548,13796
-Fluchthornweg: Qualität? Kann der Mariendorfer Damm in Höhe des Fluchthornwegs überquert werden?	? 10172,1657 10094,1634 10046,1464
+Fluchthornweg/Ma'damm: Kann der Mariendorfer Damm in Höhe des Fluchthornwegs überquert werden?	? 10172,1657 10094,1634
 Raucheckweg: Qualität? Kann der Mariendorfer Damm in Höhe des Raucheckwegs überquert werden?	? 10003,1768 10056,1754 10127,1778
 Göllweg: Qualität? Wie kann der Mariendorfer Damm in Höhe des Göllwegs am Besten überquert werden?	? 10239,1481 10119,1435 10046,1464 9931,1502
 Olpererweg: Qualität?	? 10950,3602 10866,3611
@@ -2023,10 +2023,7 @@ Gluckstr. (Potsdam): Qualität?	? -7832,-2864 -7491,-2904
 Mottlaupfad: Schrittgeschwindigkeit, vielleicht weil Spielstraße?	? -1901,23554 -2070,23631
 Kemberger Str.: Gibt es einen Radweg in der Kemberger Straße? Ist dieser benutzungspflichtig?	? 22314,17916 22215,17784 22191,17751 22148,17687 22022,17519 22002,17492 21913,17376
 Scharfschwerdtstr. (Hohen Neuendorf): Qualität?	? 1364,27953 1426,28065 1456,28125 1453,28175 1448,28276 1432,28356 1489,28451 1536,28550 1698,28742 1838,28808
-Hugo-Wolf-Steig: Qualität?	? 23168,1335 23053,1308
-Peter-Gast-Weg: Qualität?	? 23144,1439 23030,1414
 Hirtengarten: Qualität?	? 23654,2051 23634,2148 23638,2185
-Waldnesselweg: Qualität? Ist der Straßenname offiziell?	? 23652,3722 23663,3502
 Richard-Wagner-Str. (Groß Glienicke): Qualität im westlichen Abschnitt?	? -10234,5804 -10347,5874 -10467,5948
 Silzer Weg: Qualität?	? 5688,312 5795,371 5867,412 5925,417
 Silzer Weg: Qualität?	? 5929,389 6130,449
@@ -2601,13 +2598,6 @@ Iselbergplatz: Qualität?	? 23523,13368 23646,13346
 Steffenshagener Str.: Qualität des nördlichen Abschnitts?	? 22983,11098 23159,11097
 Verlängerte Mozartstr.: Qualität?	? 21864,6928 21920,6835
 Verlängerte Müggelbergallee: gibt es diese Straße? Qualität?	? 23107,1680 23231,1707
-Edmundweg: existiert hier eine Straße unter dem Namen "Andersonweg" oder "Edmundweg"? Qualität?	? 23064,2147 22872,2107
-Am Marienhain: Qualität?	? 22638,3366 22662,3205
-Marienhütter Weg: Qualität?	? 22553,3363 22561,3271 22569,3201
-Zum Dahmeufer: Qualität?	? 22303,3201 22405,3214 22472,3221
-Bockmühlenweg: Qualität?	? 22403,3250 22470,3255 22561,3271
-Straße 239: Qualität? Ebenfalls in "Bockmühlenweg" umbenannt?	? 22470,3255 22472,3221 22475,3187
-Straße 236: Qualität? Ist der Straßenname richtig? Verlauf der Straße?	? 22356,3351 22346,3293
 Warnitzer Str. (Neu-Hohenschönhausen): Qualität?	? 17894,17925 17956,17927 17994,17958 18010,17972 18109,17861 18179,17915 18214,17876
 Warnitzer Str. (Neu-Hohenschönhausen): Qualität?	? 17994,17958 17962,18010 18041,18073 18147,17961 18304,18071
 Haagstr.: Qualität? Gilt die Einbahnstraßenregelung auch für Radfahrer?	? -3030,2349 -2882,2373 -2920,2472
@@ -3993,7 +3983,6 @@ Zeppelinstr.: kleinteiliges, unebenes Kopfsteinpflaster (ist der Abschnitt der Z
 Kohlweißlingstr.: Verbundsteinpflaster (Qualität: Verbundsteinpflaster oder Asphalt?)	? 21723,10920 21765,10834
 Distelfalterstr.: Verbundsteinpflaster (Qualität: Verbundsteinpflaster oder Asphalt?)	? 21723,10920 21605,10866
 Gerhard-Winkler-Weg: Kopfsteinpflaster (tatsächlich Kopfsteinpflaster?)	? 17338,1336 17293,1309
-Grenzweg: Kopfsteinpflaster (Ist mittlerweile der gesamte Grenzweg asphaltiert?)	? 17681,7589 17295,7336
 Barkenhof: guter Asphalt (Ist der Barkenhof eine Spielstraße?)	? -1892,1732 -1921,1826
 Haßfurter Weg: mäßiger Asphalt (Kopfsteinpflaster oder Asphalt?)	? 11835,18301 11796,18482
 (unter der S-Bahn): Verbundsteinpflaster (tatsächlich Verbundsteinpflaster?)	? 9699,-600 9520,-641

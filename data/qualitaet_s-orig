@@ -721,7 +721,7 @@ Weg am Teufelssee: Waldweg	Q1 -886,9447 -942,9251 -1047,9123
 Schwarzer Weg (Oberschöneweide): unbefestigter Weg, holprig	Q2 17299,8140 17297,7752
 Schwarzer Weg (Oberschöneweide): asphaltiert, mit leichten Schäden	Q0- 17297,7752 17301,7645 17295,7336
 Schwarzer Weg (Oberschöneweide): unbefestiger Weg, teilweise recht schmal	Q2 17295,7336 17296,7156
-Möllhausenufer: Kopfsteinpflaster	Q2 23305,1147 23408,1170 23520,1194 23608,1210
+Möllhausenufer: Kopfsteinpflaster	Q2 23295,1145 23408,1170 23520,1194 23608,1210
 Möllhausenufer: asphaltiert	Q0 23608,1210 23747,1243
 Am Langen See: Waldweg, meist OK, teilweise Wurzeln und grober Kies	Q1- 23747,1243 23869,1282 23889,1338 24068,1279 24307,1135 24400,1005 24653,928 24829,827 24949,806 25333,834 25543,879 25744,839 25853,778 25922,645 25969,593 26041,443 26016,259 26089,176 26124,111 26246,73 26274,-33 26407,-160 26479,-119 26576,-278 26628,-313 26687,-316 26751,-460 26944,-639 26952,-744 27141,-785 27329,-1183 27365,-1357 27357,-1545
 Zur Fähre: Waldweg	Q2 28958,3273 29061,3358 29084,3331
@@ -810,7 +810,7 @@ Mügelbergallee: Kopfsteinpflaster	Q2 23185,1649 23278,1668
 Müggelbergplatz: Kopfsteinpflaster	Q2 23293,1697 23278,1668 23303,1650 23321,1678 23293,1697
 Mügelbergallee: Kopfsteinpflaster	Q2 23321,1678 23409,1699 23669,1759
 (Müggelbergallee - Straße zum Müggelturm): Waldweg, meist OK	Q1- 23669,1759 24265,1891 24889,1743
-(Müggelbergallee - Müggelheimer Damm): Waldweg, meist OK	Q1- 24265,1891 24528,1949 24628,2062
+(Müggelbergallee - Müggelheimer Damm): Waldweg, meist OK	Q1- 24265,1891 24528,1949 24630,2034
 Str. 790/791: holpriger Fahrweg	Q2 30546,-3072 30588,-3000 30599,-2827 30640,-2803 30703,-2841 30727,-2911 30710,-3037 30588,-3000
 Wernsdorfer Str.: teilweise Kopfsteinpflaster	Q2 30533,-3124 30537,-3140 30439,-3371 30390,-3443
 Wassersportallee: schlechtes Kopfsteinpflaster	Q3 22655,1450 22756,1524
@@ -1535,7 +1535,9 @@ Bebelplatz: Kopfsteinpflaster, OK	Q1 9795,12293 9869,12297
 Metzer Str.: Kopfsteinpflaster	Q2 10933,14122 11016,14081 11160,14002 11389,13887
 Kollwitzplatz: Kopfsteinpflaster	Q2 11285,14515 11317,14564
 Ekhofplatz: Kopfsteinpflaster	Q2 23343,1454 23382,1429 23360,1390 23325,1418 23343,1454
-Ekhofstr.: Kopfsteinpflaster	Q2 23158,1379 23243,1398 23325,1418
+Ekhofstr.: Asphalt	Q0; 23158,1379 23243,1398
+Ekhofstr.: Kopfsteinpflaster	Q2; 23243,1398 23158,1379
+Ekhofstr.: Kopfsteinpflaster	Q2 23243,1398 23325,1418
 Ekhofstr.: Kopfsteinpflaster	Q2 23382,1429 23464,1449 23552,1468 23562,1470
 Pappelplatz (Mitte): alte Berliner Gehwegplatten	Q1 9750,14132 9663,14036
 Am Krögel: kleinteiliges Kopfsteinpflaster	Q1 10766,12184 10772,12288
@@ -2582,7 +2584,6 @@ Treskowstr. (Oberschöneweide): kleinteiliges, unebenes Kopfsteinpflaster	Q2 1933
 Verl. Rathenaustr.: Asphalt	Q0 19276,6359 19407,6660
 Fuststr.: kleinteiliges Kopfsteinpflaster	Q2 17934,7029 17823,7203
 Fuststr.: Kopfsteinpflaster	Q2 17823,7203 17743,7328
-#: add_fragezeichen: Ist mittlerweile der gesamte Grenzweg asphaltiert?
 Grenzweg: Kopfsteinpflaster	Q2- 17681,7589 17295,7336
 Grenzweg: Asphalt	Q0- 17295,7336 17211,7265
 Asternplatz: Kopfsteinpflaster	Q2 3710,4728 3775,4632
@@ -2671,7 +2672,7 @@ Joseph-Schmidt-Str.: Asphalt	Q0 15260,6310 15255,6531 15275,6554
 #: note: Stefan (moehres) meint Asphalt, Q1
 Johanna-Tesch-Str.: Beton	Q0- 19715,5185 19743,5271 19756,5313 19928,5365 20030,5334 19998,5226 19930,5247 19919,5214 19743,5271
 Müggelpark: Kleinpflastersteine	Q1 25658,4619 25692,4727
-(Müggelturm - Müggelheim): Asphalt, teilweise mit Wurzelschäden	Q1+ 25626,1314 26302,1048 26425,942 26682,769 26783,721 27021,721 27151,729 27202,770
+(Müggelturm - Müggelheim): Asphalt, teilweise mit Wurzelschäden	Q1+ 24973,1690 25626,1314 26302,1048 26425,942 26682,769 26783,721 27021,721 27151,729 27202,770
 Ludwigshöheweg: Asphalt	Q0 27202,770 27263,839 27428,1026 27514,1129 27568,1188 27615,1245 27741,1394
 Grünstadter Weg: Asphalt	Q0 27074,863 27202,770 27410,590 27667,368
 Pfalz-Zweibrücker Weg: Asphalt	Q0 27280,1119 27356,1086 27428,1026
@@ -3333,6 +3334,18 @@ Auf der Höh: unbefestigte Straße	Q2 22898,11125 22782,11127
 Adolfstr. (Kaulsdorf): schlechtes Kopfsteinpflaster	Q3 22756,11268 22751,11381
 Tychyer Str.: Asphalt	Q0 21398,11482 21305,11363
 (Kressenweg - Waldenburger Str.): ein/zweispuriger Pfad	Q2 23522,10456 23468,10423 23431,10435 23193,10426 23024,10455 22978,10451
+Waldnesselweg: Asphalt	Q0 23652,3722 23663,3502
+Peter-Gast-Weg: Kopfsteinpflaster	Q2 23144,1439 23030,1414
+Hugo-Wolf-Steig: Kopfsteinpflaster	Q2 23168,1335 23053,1308
+Am Marienhain: Asphalt	Q0 22638,3366 22662,3205
+Marienhütter Weg: Asphalt	Q0 22553,3363 22561,3271
+Marienhütter Weg: unbefestigte Straße	Q2 22561,3271 22569,3201
+Bockmühlenweg: unbefestigte Straße	Q2 22402,3262 22468,3266
+Bockmühlenweg: Asphalt	Q0 22468,3266 22561,3271
+Bockmühlenweg: Asphalt	Q0 22468,3266 22470,3229
+Bockmühlenweg: unbefestigte Straße	Q2 22470,3229 22475,3187
+Zum Dahmeufer: unbefestigte, holprige Straße	Q2- 22470,3229 22283,3217
+Zum Dahmeufer: Pfad	Q2- 22283,3217 22233,3212
 ######################### User Contributions #################################
 #: by: Dominik Seelow vvv
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
@@ -6907,8 +6920,12 @@ Gürtelstr.: guter Asphalt	Q0 13459,15653 13409,15687 13316,15758
 Gürtelstr.: schlechtes Kopfsteinpflaster	Q3 13459,15653 13574,15585 13606,15571 13700,15501
 Allee der Kosmonauten - Biesdorfer Promenade: Asphalt	Q0 19821,13604 19826,13444 19835,13152 20068,13036
 #: by: ^^^
-#: by: Rainer Mischke:
-Niebergallstr.: mäßiges Kopfsteinpflaster	Q2 23106,1628 23144,1439 23158,1379 23168,1335 23202,1192
+#: by: Rainer Mischke: vvv
+Niebergallstr.: mäßiges Kopfsteinpflaster	Q2 23106,1628 23144,1439
+Niebergallstr.: Asphalt	Q0; 23144,1439 23158,1379
+Niebergallstr.: mäßiges Kopfsteinpflaster	Q2; 23158,1379 23144,1439
+Niebergallstr.: mäßiges Kopfsteinpflaster	Q2 23158,1379 23168,1335 23202,1192
+#: by: ^^^
 #: by: Liesbet (m-...):
 Kissinger Str. (Steglitz): asphaltiert	Q0 6198,6270 6214,6132 6222,5996
 #: by: Thomas (bergen):
@@ -7143,9 +7160,12 @@ Speerweg: gut befahrbare Verbundsteine	Q1+ 911,25155 940,25120 987,25089
 Speerweg: Asphalt	Q0 987,25089 1039,25086 1173,25114
 #: corrected_by ^^^
 #: by: ^^^
-#: by: stefan: (sw-...)
+#: by: stefan: (sw-...) vvv
 #: corrected_by: srt (schlechtes Kopfsteinpflaster -> Kopfsteinpflaster, OK)
-Pohlestr.: Kopfsteinpflaster OK	Q1 22855,3902 22831,4070 22812,4236
+Pohlestr.: Kopfsteinpflaster OK	Q1 22855,3902 22831,4070
+#: confirmed_by: srt (hier tatsächlich schlecht)
+Pohlestr.: schlechtes Kopfsteinpflaster	Q3 22831,4070 22812,4236
+#: by: ^^^
 #: by: Sandra Hummel: vvv
 Pfändnerweg: sehr viele Straßenschäden	Q2- -8634,5065 -8508,5023
 Pfändnerweg: asphaltiert	Q0 -8508,5023 -8406,4983
@@ -10591,6 +10611,8 @@ Elfenallee: Kopfsteinpflaster	Q2+ 12260,21583 12249,21626 12312,21762 12332,2191
 #: by: Ursel Stapelfeldt
 #: note: laut anonymous "Kopfsteinpflaster", Q2, zusammen macht das Q2+
 Eiderstedter Weg: gut befahrbares Kopfsteinpflaster	Q2+ -2096,3402 -2038,3252 -1961,3021 -1951,2995 -1945,2975 -1858,2695
+#: by: evy (...princes):
+Fluchthornweg: mäßiger Beton	Q1- 10172,1657 10094,1634 10046,1464
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206

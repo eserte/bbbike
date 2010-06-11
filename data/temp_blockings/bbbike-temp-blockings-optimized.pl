@@ -1707,16 +1707,7 @@ userdel	q3::inwork 9444,11616 9432,11702
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_015726',
-         'until' => 1276264800,
-         'text' => 'Otternbuchtstr. (Spandau): Baustelle, Fahrtrichtung gesperrt (bis voraus. Ende 05/2010) Richtung Nonnendammallee zwischen Motardstr. und Nonnendammallee, 17.05.2010 11:10 Uhr bis 11.06.2010 16:00 Uhr ',
-         'from' => 1274001000,
-         'id' => 2071,
-         'data' => 'userdel	q4::inwork; -269,14178 -245,14343 -248,14518
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
