@@ -1208,11 +1208,11 @@ if (defined $q->param('begin')) {
     print CGI->redirect(-uri => $res{imgurl});
     exit 0;
 } elsif (defined $q->param('startchar')) {
-    choose_ch_form($q->param('startchar'), 'start');
+    choose_ch_form($q->param('startchar'), 'start', $q->param('startort'));
 } elsif (defined $q->param('viachar')) {
-    choose_ch_form($q->param('viachar'), 'via');
+    choose_ch_form($q->param('viachar'), 'via', $q->param('viaort'));
 } elsif (defined $q->param('zielchar')) {
-    choose_ch_form($q->param('zielchar'), 'ziel');
+    choose_ch_form($q->param('zielchar'), 'ziel', $q->param('zielort'));
 } elsif (defined $q->param('startc') and
 	 defined $q->param('zielc')) {
     if (!$q->param('pref_seen')) {
@@ -1553,24 +1553,29 @@ sub choose_form {
 	# Darstellung eines Vias nicht erwünscht
 	next if ($type eq 'via' and $$oneref eq 'NO');
 
-	if ($$nameref eq '' && $$oneref eq '' && defined $ort && $ort =~ $outer_berlin_qr) {
-	    my $orte = get_orte();
-	    my $coords;
-	    eval {
-		$orte->grepstreets(sub {
-				       my($name) = $_->[Strassen::NAME] =~ m{^([^|]+)};
-				       if ($name eq $ort) {
-					   $coords = $_->[Strassen::COORDS][0];
-					   die "break loop";
-				       }
-				   });
-	    };
-	    if ($coords) {
-		$q->param($type.'c', $coords);
-		$$nameref = $ort;
-		next;
-	    }
-	}
+## The idea behind this block: if only the place was selected (without
+## a particular street), then choose the center of the place.
+## Unfortunately this breaks currently the "Zurück zum
+## Eingabeformular" from a abc page, so it's commented out currently.
+## XXX
+# 	if ($$nameref eq '' && $$oneref eq '' && defined $ort && $ort =~ $outer_berlin_qr) {
+# 	    my $orte = get_orte();
+# 	    my $coords;
+# 	    eval {
+# 		$orte->grepstreets(sub {
+# 				       my($name) = $_->[Strassen::NAME] =~ m{^([^|]+)};
+# 				       if ($name eq $ort) {
+# 					   $coords = $_->[Strassen::COORDS][0];
+# 					   die "break loop";
+# 				       }
+# 				   });
+# 	    };
+# 	    if ($coords) {
+# 		$q->param($type.'c', $coords);
+# 		$$nameref = $ort;
+# 		next;
+# 	    }
+# 	}
 
 	# Überprüfen, ob eine Straße in PLZ vorhanden ist.
 	if ($$nameref eq '' && $$oneref ne '') {
@@ -1967,10 +1972,18 @@ EOF
 	    if (defined $coord and (!defined $$nameref or $$nameref eq '')) {
 		print crossing_text($coord);
 	    } else {
-		print "$$nameref\n";
+		print "$$nameref";
+		if ($$ortref) {
+		    print " ($$ortref)";
+		}
+		print "\n";
 	    }
 	    print "<input type=hidden name=" . $type
 	      . "name value=\"$$nameref\">\n";
+	    if ($$ortref) {
+		print "<input type=hidden name=" . $type
+		    . "ort value=\"$$ortref\">\n";
+	    }
 	    if (defined $q->param($type . "plz")) {
 		print "<input type=hidden name=${type}plz value=\""
 		  . $q->param($type . "plz") . "\">\n";
@@ -2199,8 +2212,9 @@ EOF
 EOF
 		for my $place (sort @outer_berlin_places) {
 		    next if $place eq 'Potsdam'; # special case, Potsdam dualism
+		    my $selectedhtml = defined $$ortref && $place eq $$ortref ? ' selected' : '';
 		    print <<EOF;
-  <option value="$place">$place</option>
+  <option value="$place"$selectedhtml>$place</option>
 EOF
 		}
 		print <<EOF;
@@ -2402,10 +2416,15 @@ EOF
 }
 
 sub choose_ch_form {
-    my($search_char, $search_type) = @_;
+    my($search_char, $search_type, $search_ort) = @_;
     my $use_javascript = ($bi->{'can_javascript'} &&
 			  !$bi->{'javascript_incomplete'});
     my $printtype = ucfirst($search_type);
+    my $per_char_filtering = 0;
+    if (!defined $search_ort || ($search_ort eq '' || $search_ort eq 'Berlin/Potsdam')) {
+	undef $search_ort;
+	$per_char_filtering = 1;
+    }
 
 #XXX Diese locale-Manipulation mit choose_all_form verbinden, und Sortierung
 #    in eigene Subroutine auslagern.
@@ -2421,12 +2440,13 @@ sub choose_ch_form {
     };
     http_header(@weak_cache);
     header();
+
     print "<b>" . M($printtype) . "</b>";
-    print " (" . M("Anfangsbuchstabe") . " <b>$search_char</b>)<br>\n";
-    my $next_char =
-      (ord($search_char) < ord('Z') ? chr(ord($search_char)+1) : undef);
-    my $prev_char =
-      (ord($search_char) > ord('A') ? chr(ord($search_char)-1) : undef);
+    if ($per_char_filtering) {
+	print " (" . M("Anfangsbuchstabe") . " <b>$search_char</b>)";
+    }
+    print "<br>\n";
+
     print "<form action=\"$bbbike_script\" name=Charform>\n";
     if (!$use_javascript) {
 	print qq{<input type=submit value="} . M("Weiter") . qq{ &gt;&gt;"><br>};
@@ -2450,24 +2470,54 @@ sub choose_ch_form {
 				  ? '[UÜ]'
 				  : $search_char)));
     my @strlist;
-    {
-	my $str = get_streets();
-	$str->init;
-	eval q{ # eval wegen /o
+    if (defined $search_ort) {
+	# Pick streets outside of Berlin/Potsdam. Show whole list, do
+	# not filter by $search_char
+	eval {
+	    my $landstr = MultiStrassen->new('landstrassen', 'landstrassen2');
+	    $landstr->init;
+	    eval q{ # eval wegen /o
+	    while(1) {
+		my $ret = $landstr->next;
+	        last if !@{$ret->[1]};
+	        my $name = $ret->[0];
+		next if $name !~ s{\s+\(
+				     \Q$search_ort\E # search for the place
+				     (?:     # without any subparts
+                                      |-(.*) # or with a subpart
+				     )
+				   \)}{}ox;
+		my $longname = defined $1 ? "$name ($1)" : undef;
+		if (defined $longname) {
+		    # remove Bundesstraßen name in the long name
+		    $longname =~ s{\s+\(B\d+\)}{};
+		}
+		push @strlist, defined $longname ? { short => $name, long => $longname } : $name;
+	    }
+	};
+	};
+	warn $@ if $@;
+    } else {
+	{
+	    # Pick streets in Berlin (or the main city) only, filtered
+	    # by $search_char
+	    my $str = get_streets();
+	    $str->init;
+	    eval q{ # eval wegen /o
 	    while(1) {
 	        my $ret = $str->next;
 	        last if !@{$ret->[1]};
 	        my $name = $ret->[0];
-	        push(@strlist, $name) if $name =~ /$regex_char/oi;
+	        push @strlist, $name if $name =~ /$regex_char/oi;
 	    }
         };
-    }
-    eval {
-	# Include Potsdam streets
-	# XXX Special case, look for another solution in other cities!
-	my $landstr = Strassen->new("landstrassen");
-	$landstr->init;
-	eval q{ # eval wegen /o
+	}
+	eval {
+	    # Include Potsdam streets
+	    # XXX Special case, look for another solution in other cities!
+	    my $landstr = Strassen->new("landstrassen");
+	    $landstr->init;
+	    eval q{ # eval wegen /o
 	    while(1) {
 		my $ret = $landstr->next;
 	        last if !@{$ret->[1]};
@@ -2476,14 +2526,19 @@ sub choose_ch_form {
 		if ($name =~ /$regex_char/oi) {
 		    # remove Bundesstraßen name here:
 		    $name =~ s{\s+\(B\d+\)}{};
-		    push(@strlist, $name);
+		    push @strlist, $name;
 		}
 	    }
 	};
-    };
-    warn $@ if $@;
+	};
+	warn $@ if $@;
+    }
 
-    @strlist = sort @strlist;
+    @strlist =
+	map { $_->[1] }
+	    sort { $a->[0] cmp $b->[0] }
+		map { [ref $_ ? $_->{short} : $_, $_] }
+		    @strlist;
 
     print
       "<label><input type=radio name=" . $search_type . "name value=\"\"" ,
@@ -2492,20 +2547,33 @@ sub choose_ch_form {
       ($use_javascript ? "(" . M("Zurück zum Eingabeformular") . ")" : "(" . M("nicht gesetzt") . ")"),
       "</label><br>\n";
 
+    my $seen_anchor;
     my $last_name;
     for(my $i = 0; $i <= $#strlist; $i++) {
 	my $name = $strlist[$i];
+	my $longname;
+	if (ref $name) {
+	    ($name, $longname) = @{$name}{qw(short long)};
+	}
 	if (defined $last_name and $name eq $last_name) {
 	    next;
 	} else {
 	    $last_name = $name;
 	}
 	my $html_name = BBBikeCGIUtil::my_escapeHTML($name);
+	my $html_longname;
+	if (defined $longname) {
+	    $html_longname = BBBikeCGIUtil::my_escapeHTML($longname);
+	}	    
+	if (!$per_char_filtering && !$seen_anchor && uc(substr($name,0,1)) ge $search_char) {
+	    print '<a name="start"></a>';
+	    $seen_anchor++;
+	}
 	print
 	  "<label><input type=radio name=" . $search_type . "name value=\"$html_name\"",
 	  ($use_javascript ? " onclick=\"document.Charform.submit()\"" : ""),
 	  "> ",
-	  $html_name,
+	  (defined $html_longname ? $html_longname : $html_name),
 	  "</label><br>\n";
     }
 
@@ -2513,12 +2581,24 @@ sub choose_ch_form {
     if (!$use_javascript) {
 	print qq{<input type=submit value="} . M("Weiter") . qq{ &gt;&gt;"><br><br>\n};
     }
-    print M("andere") . " " . M($printtype . "stra&szlig;e") . ":<br>\n";
-    abc_link($search_type);
+    if ($per_char_filtering) {
+	print M("andere") . " " . M($printtype . "stra&szlig;e") . ":<br>\n";
+	abc_link($search_type);
+    }
     footer();
     print "<input type=hidden name=scope value='" .
 	(defined $q->param("scope") ? $q->param("scope") : "") . "'>";
+    if (defined $search_ort) {
+	print "<input type=hidden name=${search_type}ort value='$search_ort'>\n";
+    }
     print "</form>\n";
+    if ($use_javascript && $seen_anchor) {
+	print <<EOF;
+<script type="text/javascript"><!--
+location.hash = "start";
+// --></script>
+EOF
+    }
     print $q->end_html;
 }
 
