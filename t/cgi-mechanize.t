@@ -101,7 +101,7 @@ if (!@browsers) {
 @browsers = map { "$_ BBBikeTest/1.0" } @browsers;
 
 my $outer_berlin_tests = 30;
-my $tests = 110 + $outer_berlin_tests;
+my $tests = 113 + $outer_berlin_tests;
 plan tests => $tests * @browsers;
 
 if ($WWW::Mechanize::VERSION == 1.32) {
@@ -233,7 +233,27 @@ for my $browser (@browsers) {
 	$agent->submit();
 	my_tidy_check($agent);
 
-	$like_long_data->(qr/Route/, "On the route result page");
+	$on_a_particular_page->('routeresult');
+	$like_long_data->(qr/Methfesselstr.*
+			     Kreuzbergstr.*
+			     Mehringdamm.*
+			     Blücherstr.*
+			     Blücherplatz.*
+			     Waterloo-Ufer.*
+			     Gitschiner.Str.*
+			     Wassertorplatz.*
+			     Skalitzer.Str.*
+			     Oppelner.Str.*
+			     Oberbaumstr.*
+			     Oberbaumbrücke.*
+			     Am.Oberbaum.*
+			     Warschauer.Str.*
+			     Revaler.Str.*
+			     Libauer.Str.*
+			     Kopernikusstr.*
+			     Wühlischstr.*
+			     Sonntagstr.
+			    /xs, 'Route list between Duden..Sonntag');
 
 	my $has_ausweichroute = ($agent->forms)[0]->attr("name") =~ /Ausweichroute/;
 	{
@@ -283,6 +303,25 @@ for my $browser (@browsers) {
 	my_tidy_check($agent);
 
 	$on_a_particular_page->('routeresult');
+	$like_long_data->(qr/Böcklinstr.*
+			     Wühlischstr.*
+			     Boxhagener.Str.*
+			     Karlshorster.Str.*
+			     Nöldnerstr.*
+			     Lückstr.*
+			     Sewanstr.*
+			     Dathepromenade.*
+			     Erieseering.*
+			     Sewanstr.*
+			     Am.Tierpark.*
+			     Richard-Kolkwitz-Weg.*
+			     Rägeliner.Str.*
+			     # skipping some streets, because coverage not yet good here
+			     # Heerstr.* # the one in Kaulsdorf # probably only crossed, so not in route list?
+			     Grünauer.Str.*
+			     Regattastr.*
+			     Adlergestell
+			    /xs, 'Route list between Sonntag..Adlergestell');
 	{
 	    my $formnr = (($agent->forms)[0]->attr("name") =~ /Ausweichroute/ ? 3 : 2);
 	    $agent->form_number($formnr);
@@ -421,7 +460,7 @@ for my $browser (@browsers) {
 	$agent->submit;
 	my_tidy_check($agent);
 
-	$like_long_data->(qr{genaue kreuzung}i, "On the crossing page");
+	$on_a_particular_page->('crossing');
 	$like_long_data->(qr/Kuhfort(er )?damm/i, "Expected start crossing");
 	$like_long_data->(qr/Mangerstr/, "Expected goal crossing");
 
@@ -774,6 +813,7 @@ EOF
     ######################################################################
     # streets in plaetze in Potsdam
 
+ XXX: { ; }
     {
 
 	$get_agent->();
@@ -795,12 +835,16 @@ EOF
 	$agent->submit();
 	my_tidy_check($agent);
 	$on_a_particular_page->('routeresult');
+	$like_long_data->(qr/Zur.Historischen.Mühle.*
+			     Schopenhauerstr.*
+			     Breite.Str.*
+			     Lange.Brücke
+			    /xs, 'Route list between Sanssouci and Potsdam Hbf');
     }
 
     ######################################################################
     # outer Berlin
 
- XXX: { ; }
  SKIP: {
 	# Is bbbike2.cgi available?
 	my $can_bbbike2_cgi;
