@@ -85,7 +85,7 @@ if (!@urls) {
 }
 
 my $ortsuche_tests = 11;
-plan tests => (189 + $ortsuche_tests) * scalar @urls;
+plan tests => (192 + $ortsuche_tests) * scalar @urls;
 
 my $hdrs;
 if (defined &Compress::Zlib::memGunzip && $do_accept_gzip) {
@@ -559,10 +559,12 @@ for my $cgiurl (@urls) {
 	    or diag $url;
     }
 
+ XXX: 
     for my $imagetype (
 		       "gif", "png", "jpeg",
 		       "svg", "mapserver",
 		       "pdf", "pdf-auto", "pdf-landscape",
+		       "googlemaps",
 		      ) {
     SKIP: {
 	    my $tests = 3;
@@ -692,7 +694,6 @@ for my $cgiurl (@urls) {
 	like($content, qr{\QThomas-Müntzer-Damm (Kleinmachnow)/Warthestr. (Teltow)\E}, "No simplification possible between different places");
     }
 
-    XXX: 
     {   # The "Müller Breslau"-Bug (from the Berlin PM wiki page)
 	#
 	# The problem may happen with a bbbike.cgi link with just
