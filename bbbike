@@ -4798,9 +4798,9 @@ sub handle_options {
 	 M"Plot-Attribute",
 	 ['outline','!',0,
 	  label => M"Outline zeichnen", var => \$all_outline],
-	 ['ampel','!',1,	alias=>[qw(ampeln|lsa)],
+	 ['ampel','!',1,	alias=>[qw(ampeln|lsa)], # should be moved to strecken/punkte
 	  label => M"Ampeln zeichnen", var => \$init_p_draw{'lsa'}],
-	 ['lsamaybe','!',undef, nogui => 1,
+	 ['lsamaybe','!',undef, nogui => 1, # XXX remove this option???
 	  label => M"unsichere Ampeln", var => sub { $str_restrict{'lsa'} = {qw(? 1 X 0 B 0 F 0)} }],
 	 ['plothoehe','!',0,
 	  label => M"Höhenangaben zeichnen",	var => \$init_p_draw{'hoehe'}],
@@ -5441,6 +5441,9 @@ sub load_photos {
     $andreaskr_klein_photo = load_photo($top, 'andreaskr_klein');
     $andreaskr_klein2_photo= load_photo($top, 'andreaskr_klein2');
     $andreaskr_photo     = load_photo($top, 'andreaskr');
+    $andreaskr_grey_klein_photo = load_photo($top, 'andreaskr_klein', -palette => 256);
+    $andreaskr_grey_klein2_photo= load_photo($top, 'andreaskr_klein2', -palette => 256);
+    $andreaskr_grey_photo       = load_photo($top, 'andreaskr', -palette => 256);
     $kreisverkehr_photo  = load_photo($top, 'kreisverkehr');
     $windrose2_photo     = load_photo($top, 'windrose2');
     $kneipen_photo       = load_photo($top, 'glas');
@@ -6915,13 +6918,15 @@ EOF
 		    # keine Verwendung von _coord_as_string
 		    $c->createImage
 		      ($x, $y,
-		       -image => ($category =~ m{^(B|B0)$}
+		       -image => ($category eq 'B'
 			          ? $andreaskr_photo
-			          : $category eq 'Zbr'
-				    ? $zugbruecke_photo
-				    : $category eq 'F'
-				      ? $ampelf_photo
-			              : $ampel_photo
+				  : $category eq 'B0'
+				    ? $andreaskr_grey_photo
+			            : $category eq 'Zbr'
+				      ? $zugbruecke_photo
+				      : $category eq 'F'
+				        ? $ampelf_photo
+			                : $ampel_photo
 			         ),
 		       -tags => ["$abk-fg", "$xx,$yy", $pointname,
 			         "$abk-" . $category . "-fg",
@@ -10901,12 +10906,13 @@ sub plot_point {
 	$c->delete($_) for (@del_tags);
     }
 
-    my($ampel_photo, $ampelf_photo, $andreaskr_photo, $zugbruecke_photo);
+    my($ampel_photo, $ampelf_photo, $andreaskr_photo, $andreaskr_grey_photo, $zugbruecke_photo);
     if ($abk eq 'lsa') {
 	undef %ampeln;
 	$ampel_photo      = get_symbol_scale('lsa-X');
 	$ampelf_photo     = get_symbol_scale('lsa-F');
 	$andreaskr_photo  = get_symbol_scale('lsa-B');
+	$andreaskr_grey_photo = get_symbol_scale('lsa-B0');
 	$zugbruecke_photo = get_symbol_scale('lsa-Zbr');
 	$c->delete('lsas'); # Ampelschaltung-Symbole löschen
 	$c->delete('lsas-t'); # Ampelschaltung-Symbole löschen
@@ -15491,13 +15497,23 @@ sub get_symbol_scale {
 	} else {
 	    return undef;
 	}
-    } elsif ($tag =~ m{^lsa-B0?$}) {
+    } elsif ($tag =~ m{^lsa-B$}) {
 	if ($myscale > 4*$mod) {
 	    return $andreaskr_photo;
 	} elsif ($scale >= 2*$mod) {
 	    return $andreaskr_klein_photo;
 	} elsif ($scale >= 0.5*$mod) {
 	    return $andreaskr_klein2_photo;
+	} else {
+	    return undef;
+	}
+    } elsif ($tag =~ m{^lsa-B0$}) {
+	if ($myscale > 4*$mod) {
+	    return $andreaskr_grey_photo;
+	} elsif ($scale >= 2*$mod) {
+	    return $andreaskr_grey_klein_photo;
+	} elsif ($scale >= 0.5*$mod) {
+	    return $andreaskr_grey_klein2_photo;
 	} else {
 	    return undef;
 	}
@@ -20183,7 +20199,17 @@ sub load_photo {
 	require Data::Dumper;
 	die "File missing in load_photo, called in " . Dumper(caller);
     }
-    return $photo{$file} if exists $photo{$file};
+
+    my $cache_key = $file;
+    my %photo_args;
+    for my $key (qw(-palette)) {
+	if (exists $args{$key}) {
+	    my $val = $photo_args{$key} = delete $args{$key};
+	    $cache_key .= "-$key:$val";
+	}
+    }
+    return $photo{$cache_key} if exists $photo{$cache_key};
+
     my $photo;
     unless ($lowmem) {
 	eval {
@@ -20194,27 +20220,28 @@ sub load_photo {
 		my $path;
 		if (file_name_is_absolute($file)) {
 		    $path = $file;
-		    $photo = $top->Photo(@name, -file => $path);
+		    $photo = $top->Photo(@name, -file => $path, %photo_args);
 		} else {
 		    for my $try_file ((-d "$datadir/images" ? "$datadir/images/$file" : ()),
 				      "$FindBin::RealBin/images/$file",
 				     ) {
 			$path = try_image_suffix($try_file);
 			if (defined $path && -r $path) {
-			    $photo = $top->Photo(@name, -file => $path);
+			    $photo = $top->Photo(@name, -file => $path, %photo_args);
 			    last;
 			}
 		    }
 		    if (!$photo) {
 			warn "Could not find photo, try <$file> in some \@INC dirs...\n"; # XXX should never happen?
-			$photo = $top->Photo(@name, -file => Tk::findINC($file));
+			$photo = $top->Photo(@name, -file => Tk::findINC($file), %photo_args);
 		    }
 		}
 	    }
 	    if ($small_icons && $photo) {
 		# XXX setting of @name missing
 		my $small_photo = $top->Photo(-width => $photo->width/2,
-					      -height => $photo->height/2);
+					      -height => $photo->height/2,
+					      %photo_args);
 		$small_photo->copy($photo, -subsample => 2, 2);
 		$photo->delete;
 		$photo = $small_photo;
@@ -20222,7 +20249,7 @@ sub load_photo {
 	};warn $@ if $@;
     }
     if ($args{-persistent}) {
-	$photo{$file} = $photo;
+	$photo{$cache_key} = $photo;
     }
     $photo;
 }

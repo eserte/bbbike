@@ -50,6 +50,7 @@ use vars qw(
      $kreuzung_photo $kreuzung_klein_photo
      $kreisverkehr_photo
      $andreaskr_photo $andreaskr_klein_photo $andreaskr_klein2_photo
+     $andreaskr_grey_photo $andreaskr_grey_klein_photo $andreaskr_grey_klein2_photo
      %obst_photo
      $windrose2_photo $usercross_photo
      $strasse_photo $landstrasse_photo $ort_photo $hs_photo
