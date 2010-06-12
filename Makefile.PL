@@ -279,7 +279,7 @@ if ($^O eq 'MSWin32') {
     $os = "unix";
 }
 
-my $admin_makefile = "./Makefile.admin.PL";
+my $admin_makefile = "./Makefile_admin_PL";
 
 my $make_bundle;
 my $type_bundle = 0;

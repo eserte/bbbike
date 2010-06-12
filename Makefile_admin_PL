@@ -1,10 +1,9 @@
 # -*- perl -*-
 
 #
-# $Id: Makefile.admin.PL,v 1.76 2008/12/31 16:33:42 eserte Exp eserte $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2002,2003,2004,2005,2006,2007,2008,2009 Slaven Rezic. All rights reserved.
+# Copyright (C) 2002,2003,2004,2005,2006,2007,2008,2009,2010 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -718,7 +717,7 @@ pardist:
 
 ########################################################################
 
-Makefile : Makefile.admin.PL
+Makefile : Makefile_admin_PL
 
 alldist: bbbikedoc dist dist_mv makepatch fbsdport fbsdport-distfiles-link \
 	 winbindist ChangeLog
