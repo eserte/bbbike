@@ -1,3 +1,24 @@
+2010-06-12  Slaven Rezic  <slaven@rezic.de>
+
+	* Falsche Straßennamen: letzten Donnerstag (10. Juni) war die Webversion
+	von BBBike mehr oder weniger kaputt. Beim Datenupdate kam es zu einer
+	Inkonsistenz zwischen den Daten und Cachedateien, so dass zwar
+	geografisch die richtigen Routen berechnet wurden, aber diese teilweise
+	falschen Straßennamen zugeordnet wurden. Zum Glück haben den Fehler zwei
+	User gemeldet, so dass ich es überhaupt bemerkt habe und durch ein
+	Löschen aller Cachedateien das Problem beheben konnte.
+
+	Für die Zukunft heißt das:
+	- Nach dem Datenupdate werden *alle* alten Cachedateien gelöscht
+	  (bislang wurde nur ein Teil gelöscht).
+	- Der cgi-mechanize.t-Test wurde erweitert, so dass einige
+	  Routenergebnisse Straße für Straße geprüft werden.
+
+	Perfekt ist das noch immer nicht. Das Datenupdate ist nicht ganz atomar,
+	so dass während eines kurzen Zeitfensters beim Update noch immer
+	Probleme auftauchen können. Aber hoffentlich ist das Zeitfenster recht
+	klein, auch dank "rsync --delay-updates".
+
 2010-05-12  Slaven Rezic  <slaven@rezic.de>
 
 	* Unerwartete GPS-Genauigkeit: ein mögliches Attribut bei Straßen in
