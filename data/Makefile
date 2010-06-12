@@ -1741,6 +1741,11 @@ show-used-directives:
 
 sort-coords.data:	sort-Berlin.coords.data sort-Potsdam.coords.data
 
+# XXX It is considered to use a platform-independent approach to
+# do the sorting. A favorite approach is using Unicode::Collate, a
+# core perl module. But some problems:
+# - the diff is huge, mainly due to a bug in FreeBSD's "sort -f" implementation
+# - Unicode::Collate is significantly slower
 .for city in Berlin Potsdam
 sort-$(city).coords.data:
 	[ "`uname`" = FreeBSD ] && true || (echo "Sorting probably not correct on `uname`"; false)
