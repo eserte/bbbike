@@ -238,6 +238,99 @@ use Msg; # This call has to be in bbbike!
     }
 }
 
+# XXX This is a hack until I decide how to do custom create_page best.
+{
+    package My::Tk::Getopt;
+    use vars qw(@ISA);
+    @ISA = ('Tk::Getopt');
+
+    BEGIN { *M = \&main::M }
+
+    sub _create_page {
+	my $self = shift;
+	my $current_top  = $_[2];
+	if ($current_top eq lc(M("Strecken/Punkte"))) {
+	    my $current_page = $_[0];
+	    my $optnote      = $_[1];
+	    $current_page = $optnote->{$current_top} if !defined $current_page;
+	    my $optlist      = $_[3];
+
+	    my %opt2opt;
+	    for my $optdef (@{$optlist->{$current_top}}) {
+		$opt2opt{$optdef->[0]} = $optdef;
+	    }
+	    #use Hash::Util qw(lock_keys); lock_keys %opt2opt;
+
+	    $current_page->Label(
+				 -text => M"Strecken und Punkte, die beim Start von BBBike\ngezeichnet werden sollen.",
+				 -justify => 'left',
+				)->pack(-anchor => 'w');
+	    my $f = $current_page->Frame->pack(-anchor => 'w');
+	    Tk::grid('x',
+		     $f->Label(-text => "Berlin"), # XXX not for osm-data, there should be only one column here!
+		     $f->Label(-text => M"Umland"),
+		     $f->Label(-text => M"jwd"),
+		    );
+	    Tk::grid($f->Label(-text => M"Straßen"),
+		     $f->Checkbutton(-variable => $self->varref($opt2opt{'str'})),
+		     $f->Checkbutton(-variable => $self->varref($opt2opt{'landstr'})),
+		     $f->Checkbutton(-variable => $self->varref($opt2opt{'landstrjwd'})),
+	    );
+	    Tk::grid($f->Label(-text => M("Orte")."/".M("Ortsteile")),
+		     $f->Checkbutton(-variable => $self->varref($opt2opt{'ortsteil'})),
+		     $f->Checkbutton(-variable => $self->varref($opt2opt{'ort'})),
+		     $f->Checkbutton(-variable => $self->varref($opt2opt{'ortjwd'})),
+		    );
+	    Tk::grid($f->Label(-text => M"Gewässer"),
+		     $f->Checkbutton(-variable => $self->varref($opt2opt{'wasserstadt'})),
+		     $f->Checkbutton(-variable => $self->varref($opt2opt{'wasserumland'})),
+		     $f->Checkbutton(-variable => $self->varref($opt2opt{'wasserjwd'})),
+		    );
+
+	    require Tk::Ruler;
+	    $f->Ruler(-padx => 2)->rulerGrid(-columnspan => 4);
+
+	    Tk::grid($f->Label(-text => M"Radwege"),
+		     $f->Checkbutton(-variable => $self->varref($opt2opt{'cyclepath'})), '-', '-');
+	    Tk::grid($f->Label(-text => M"Radrouten"),
+		     $f->Checkbutton(-variable => $self->varref($opt2opt{'cycleroute'})), '-', '-');
+	    Tk::grid($f->Label(-text => M"Grüne Wege"),
+		     $f->Checkbutton(-variable => $self->varref($opt2opt{'greenway'})), '-', '-');
+	    Tk::grid($f->Label(-text => M("Ampeln")."/".M("Bahnübergänge")),
+		     $f->Checkbutton(-variable => $self->varref($opt2opt{'ampel'})), '-', '-');
+	    Tk::grid($f->Label(-text => M"Fähren"),
+		     $f->Checkbutton(-variable => $self->varref($opt2opt{'faehre'})), '-', '-');
+	    Tk::grid($f->Label(-text => M"Flächen"),
+		     $f->Checkbutton(-variable => $self->varref($opt2opt{'flaeche'})), '-', '-');
+	    Tk::grid($f->Label(-text => M"Sehenswürdigkeiten"),
+		     $f->Checkbutton(-variable => $self->varref($opt2opt{'sehenswuerdigkeiten'})), '-', '-');
+	    Tk::grid($f->Label(-text => M"Fragezeichen"),
+		     $f->Checkbutton(-variable => $self->varref($opt2opt{'fragezeichen'})), '-', '-');
+
+	    $f->Ruler(-padx => 2)->rulerGrid(-columnspan => 4);
+
+	    Tk::grid('x',
+		     $f->Label(-text => M"Linien"),
+		     $f->Label(-text => M"Bahnhöfe"),
+		    );
+	    Tk::grid($f->Label(-text => M"U-Bahn"),
+		     $f->Checkbutton(-variable => $self->varref($opt2opt{'ubahn'})),
+		     $f->Checkbutton(-variable => $self->varref($opt2opt{'ubahnhof'})),
+		    );
+	    Tk::grid($f->Label(-text => M"S-Bahn"),
+		     $f->Checkbutton(-variable => $self->varref($opt2opt{'sbahn'})),
+		     $f->Checkbutton(-variable => $self->varref($opt2opt{'sbahnhof'})),
+		    );
+	    Tk::grid($f->Label(-text => M"Regionalbahn"), #XXX translation is missing
+		     $f->Checkbutton(-variable => $self->varref($opt2opt{'rbahn'})),
+		     $f->Checkbutton(-variable => $self->varref($opt2opt{'rbahnhof'})),
+		    );
+	} else {
+	    $self->SUPER::_create_page(@_);
+	}
+    }
+}
+
 ## DEBUG_BEGIN
 #BEGIN{mymstat("before use your");}
 ## DEBUG_END
@@ -4446,6 +4539,11 @@ if (defined $set_mode && $set_mode eq 'edit') {
 if ($init_p_draw{'pp'} && !defined $set_mode) {
     $p_draw{'pp'} = 1;
 }
+# XXX hack: if any of $wasserstadt/umland/... is set, then
+# $init_str_draw{w} should also be set
+if ($wasserstadt || $wasserumland || $str_far_away{w}) {
+    $init_str_draw{w} = 1;
+}
 foreach (keys %init_str_draw) {
     $str_draw{$_} = $init_str_draw{$_};
     eval {
@@ -4787,19 +4885,27 @@ sub handle_options {
 	 ['flaeche','!',1,	alias=>[qw(flaechen)],
 	  label => M"Flächen",	var => \$init_str_draw{'f'}],
 	 ['ort','!',0,	alias=>[qw(orte)],
-	  label => M"Orte",		var => \$init_p_draw{'o'}],
+	  label => M"Orte",	var => \$init_p_draw{'o'}],
+	 ['ortsteil','!',0,	alias=>[qw(ortsteile)],
+	  label => M"Ortsteile",var => \$init_str_draw{'gBO'}],
 	 ['ortjwd','!',0,
 	  label => M"Orte jwd",	var => \$p_far_away{'o'}],
 	 ['sehenswuerdigkeiten','!',0,
 	  label => M"Sehenswürdigkeiten", var => \$init_str_draw{'v'}],
+	 ['cyclepath', '!',0,	alias => [qw(radweg radwege)],
+	  label => M"Radwege",	var => \$init_str_draw{'rw'}],
+	 ['cycleroute', '!',0,	alias => [qw(radroute radrouten)],
+	  label => M"Radrouten", var => \$init_str_draw{'comm-route'}],
+	 ['greenway', '!',0,	alias => [qw(gruenerweg gruenewege)],
+	  label => M"Grüne Wege", var => \$init_str_draw{'gr'}],
+	 ['ampel','!',1,	alias=>[qw(ampeln|lsa)],
+	  label => M"Ampeln zeichnen", var => \$init_p_draw{'lsa'}],
 	 ['fragezeichen','!',0,
 	  label => M"Fragezeichen",	var => \$init_str_draw{'fz'}],
 
 	 M"Plot-Attribute",
 	 ['outline','!',0,
 	  label => M"Outline zeichnen", var => \$all_outline],
-	 ['ampel','!',1,	alias=>[qw(ampeln|lsa)], # should be moved to strecken/punkte
-	  label => M"Ampeln zeichnen", var => \$init_p_draw{'lsa'}],
 	 ['lsamaybe','!',undef, nogui => 1, # XXX remove this option???
 	  label => M"unsichere Ampeln", var => sub { $str_restrict{'lsa'} = {qw(? 1 X 0 B 0 F 0)} }],
 	 ['plothoehe','!',0,
@@ -5322,7 +5428,8 @@ speicherplatzsparender.",
     } else {
 	$Tk::Getopt::x11_pass_through = 1;
 	pre_check_arguments(); # sets $public
-	$opt = new Tk::Getopt
+#	$opt = Tk::Getopt->new
+	$opt = My::Tk::Getopt->new
 	    (-opttable => \@opttable,
 	     -filename => defined $config_file ? $config_file : catfile($bbbike_configdir, ($public ? "config_publictest" : "config")),
 	     -useerrordialog => 1,
