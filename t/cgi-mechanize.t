@@ -865,7 +865,7 @@ EOF
 
 	{
 	    $get_agent->();
-	    $agent->get($cgiurl);
+	    $agent->get($bbbike2_url);
 	    my $form = $agent->current_form;
 	    $form->value('startort', 'Oranienburg');
 	    simulate_abc_click($agent, 'start', 'A');
@@ -905,6 +905,7 @@ EOF
 	    $on_a_particular_page->('crossing');
 	}
 
+	# Test works with bbbike.cgi and bbbike2.cgi
 	$get_agent->();
 	$agent->get($cgiurl);
 	my $form = $agent->current_form;
@@ -928,6 +929,7 @@ EOF
 	    $like_long_data->(qr/$expected_place/, "Expected place on route ($expected_place)");
 	}
 
+	# Test works with bbbike.cgi and bbbike2.cgi
 	{
 	    $get_agent->();
 	    $agent->get($cgiurl);
