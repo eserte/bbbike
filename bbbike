@@ -13633,6 +13633,29 @@ sub show_info {
 	    }
 	}
 
+	if ($advanced && grep { $_ eq 'fz' } @tags) {
+	    $need_indentation = 1; # XXX unless I have an icon
+	    $info_text->insert("end", "fragezeichenform",
+			       ["link$linkcount", ($need_indentation ? "iconindent" : ())]);
+	    $show_url->($linkcount, sub {
+			    require CGI;
+			    my $fragezeichen_comment = $strname;
+			    if ($Tk::VERSION >= 804) {
+				$fragezeichen_comment = Encode::encode("iso-8859-1", $fragezeichen_comment);
+			    }
+			    CGI->import('-oldstyle_urls');
+			    my $qs = CGI->new({strname => $fragezeichen_comment,
+					       strname_html => CGI::escapeHTML($fragezeichen_comment),
+					       supplied_coord => $real_coords,
+					      })->query_string;
+			    # XXX $BBBIKE_UPDATE_WWW shows also to root bbbike directory at server
+			    my $url = "$BBBike::BBBIKE_UPDATE_WWW/html/fragezeichenform.html?$qs";
+			    $url;
+			});
+	    $info_text->insert("end", "\n");
+	    $linkcount++;
+	}
+
 	my($mapscale_scale) = $mapscale =~ /:\s*(\d+)/;
 
 	if (!$google_photo) {
