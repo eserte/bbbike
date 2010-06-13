@@ -14668,7 +14668,7 @@ userdel	2::inwork -8893,85743 -9850,84800
 EOF
      },
      { from  => 1261769245, # 2009-12-25 20:27
-       until => 1277935199, # 2010-06-30 23:59
+       until => 1276408849, # 2010-06-30 23:59 1277935199
        text  => 'Markgrafenstr. (Mitte) Richtung Behrenstr. zwischen Mohrenstr. und Französische Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 06.10)',
        type  => 'handicap',
        source_id => 'IM_013316',
@@ -15567,7 +15567,7 @@ EOF
        text  => 'B 001 Bundesgrenze Polen - Küstrin Kietz Vorflutbrücke bei Küstrin Kietz Brückeninstandsetzung Vollsperrung 17.08.2009-28.02.2010 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 92955,20065 93405,20640
+userdel	2::inwork 92925,19897 92970,19935 92970,20194 93096,20241 93405,20640
 EOF
      },
      { from  => 1252188000, # 2009-09-06 00:00
@@ -17654,7 +17654,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_015731',
        data  => <<EOF,
-userdel	q3::inwork 16414,25575 16294,25683 16194,25743 16166,25767 16114,25827 16045,25907
+userdel	q3::inwork 16414,25575 16294,25683 16220,25716 16166,25767 16114,25827 16045,25907
 EOF
      },
      { from  => 1275342035, # 2010-05-31 23:40

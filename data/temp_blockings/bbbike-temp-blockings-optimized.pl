@@ -729,16 +729,7 @@ userdel	q4::inwork 10422,12395 10476,12432
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_013316',
-         'until' => 1277935199,
-         'text' => 'Markgrafenstr. (Mitte) Richtung Behrenstr. zwischen Mohrenstr. und Französische Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 06.10)',
-         'from' => 1261769245,
-         'id' => 1732,
-         'data' => 'userdel	q4::inwork; 9679,11834 9668,11928 9656,12021 9643,12127
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1373,16 +1364,7 @@ userdel	q4::inwork; 9130,12433 9141,12320
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'LS/W-SG33-P/09/109-8',
-         'until' => 1276293600,
-         'text' => 'Werder (Havel): L90: Rohrleitungsbau / Straßenbau / Gehweg OD Werder zw. Kesselgrund- und Gartenstraße - 2. BA Richtungsverkehr zw. AS Phöben und Werder, 13.03.2009 bis 11.06.2010 ',
-         'from' => 1275342093,
-         'id' => 2014,
-         'data' => 'userdel	q4::inwork; -22042,-2060 -21524,-2998
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1277935200,
          'text' => 'L 092 AS Potsdam-Nord - Ketzin Brücke über den Schleusenkanal bei Paretz Brückenneubau, Straßenbau Vollsperrung 15.09.2009-30.06.2010 ',

@@ -707,6 +707,8 @@ Von-der-Gablentz-Str.	1 5151,17658 4946,17701 4893,17698 4816,17712
 #: by: ^^^
 #: by: Christian (i8pp):
 Kemmannweg	1 -4207,14473 -4117,14458 -4049,14419 -3937,14340 -3911,14331 -3819,14302
+#: by: jan (...matrix):
+Privatstr. 13	1 13171,17335 13103,17280 13018,17264
 ######################################################################
 #
 # Potsdam
@@ -1141,6 +1143,8 @@ Potsdamer Chaussee: Mittelstreifen	3nocross -870,2737 -756,2787 -567,2869 -512,2
 # Stellen, an denen getragen werden muß:
 # die Zahl hinter dem ":" entspricht ungefähr den verlorenen Sekunden
 # 
+#: by: Klaus Didrich:
+tragen oder Aufzug	0:30 4158,461
 tragen (19 Stufen)	0:25 11479,7746
 tragen (ca. 17 Stufen)	0:22 13779,4929
 tragen (8 Stufen)	0:15 9956,12617
@@ -1246,7 +1250,8 @@ tragen (Brücke Tegeler Hafen)	0:60 1166,20330
 tragen? (Fußgängerbrücke)	0:120 19762,-160
 tragen (Stufen), mit MTB befahrbar	0:30 5725,11644
 tragen (20 Stufen)	0:25 13138,9897
-unter der S-Bahn-Brücke tragen	0:30 3730,18992
+unter der S-Bahn-Brücke tragen (5 Stufen)	0:10 3726,18982
+unter der S-Bahn-Brücke tragen (5 Stufen)	0:10 3738,19007
 tragen (31 Stufen) oder Aufzug (Storkower Str.)	0:30 14530,13269
 tragen (41 Stufen) oder Aufzug (Storkower Str.)	0:40 14481,13143
 tragen (zum Uferweg an den Treptowers, 24 Stufen)	0:35 14383,10036
@@ -1325,6 +1330,8 @@ Rampe und flache Treppe (8 Stufen)	0:25 16065,6126
 tragen (Treppe, 12 Stufen)	0:15 5475,7906
 tragen (Treppe, ca. 20 Stufen)	0:25 19163,14981
 tragen (Treppe, ca. 20 Stufen)	0:25 19160,14935
+#: by: rjoop, keine Stufenangabe!
+tragen (Treppe)	0:30 89344,-5795
 #
 ###################################################################
 # Drängelgitter (BLOCKED_NARROWPASSAGE)
