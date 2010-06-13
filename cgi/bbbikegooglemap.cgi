@@ -257,7 +257,7 @@ sub get_html {
     --></style>
   </head>
   <body onload="init()" onunload="GUnload()" class="nonWaitMode">
-    <div id="map" style="width:100%; height:70%; min-height:500px;"></div>
+    <div id="map" style="width:100%; height:75%; min-height:500px;"></div>
     <script type="text/javascript">
     //<![CDATA[
 
@@ -357,6 +357,15 @@ sub get_html {
 	    }
 	    document.getElementById("wpt").innerHTML = "";
         }
+
+	var editboxDiv = document.getElementById("editbox");
+	if (editboxDiv) {
+	    if (currentMode == "addroute" || currentMode == "addwpt") {
+	        editboxDiv.style.visibility = "visible";
+	    } else {
+	        editboxDiv.style.visibility = "hidden";
+	    }
+	}
     }
 
     function addCoordsToRoute(point) {
@@ -998,9 +1007,11 @@ EOF
     $html .= <<EOF;
     </div>
 
+<!-- XXXX del
 <div id="commentlink" class="boxed" style="display:none;">
   <a href="#" onclick="show_comment(); return false;">Kommentar zu Route und Waypoints senden</a>
 </div>
+-->
 
 <div style="float:left; width:45%; margin-top:0.5cm; ">
 
@@ -1023,8 +1034,8 @@ EOF
 	       id="mapmode_addroute"
                type="radio" name="mapmode" value="addroute" /></td>
     <td><label for="mapmode_addroute">Mit Mausklicks eine Route erstellen</label><br/><!-- XXX remove colored "klicks" some time -->
-        <a href="javascript:deleteLastPoint()">Letzten Punkt löschen</a>
-        <a href="javascript:resetOrUndoRoute()" id="routedellink">Route löschen</a></td>
+<!--        <a href="javascript:deleteLastPoint()">Letzten Punkt löschen</a>
+        <a href="javascript:resetOrUndoRoute()" id="routedellink">Route löschen</a>--></td>
    </tr>
 EOF
     if ($is_beta) {
@@ -1084,6 +1095,15 @@ EOF
   </div>
   
 </form>
+
+<!-- should come before commentform to be lower in the layer stack -->
+<div id="editbox" class="boxed" style="position:fixed; top:15px; left:85px; background:white; visibility:hidden; font-size:smaller; ">
+  <a href="javascript:deleteLastPoint()">Letzten Punkt löschen</a>
+  <a href="javascript:resetOrUndoRoute()" id="routedellink">Route löschen</a><br/>
+  <div id="commentlink" style="display:none;">
+    <a href="#" onclick="show_comment(); return false;">Kommentar zu Route und Waypoints senden</a>
+  </div>
+</div>
 
 <form id="commentform" style="position:fixed; top:20px; left: 20px; border:1px solid black; padding:4px; background:white; visibility:hidden;">
   <table>
