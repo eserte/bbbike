@@ -4507,7 +4507,10 @@ $sx->grid(-row => 1, -column => 0, -sticky => 'ew');
     $balloon->configure(-statusbar => $status_label);
 }
 
-$splash_screen->Update(0.4) if $splash_screen;
+use constant UPDATE_FRAC_BEFORE_PLOTTING => 0.4;
+use constant UPDATE_FRAC_AFTER_PLOTTING => 0.7;
+
+$splash_screen->Update(UPDATE_FRAC_BEFORE_PLOTTING) if $splash_screen;
 
 ##### initiales Zeichnen ######################################
 ## DEBUG_BEGIN
@@ -4544,6 +4547,9 @@ if ($init_p_draw{'pp'} && !defined $set_mode) {
 if ($wasserstadt || $wasserumland || $str_far_away{w}) {
     $init_str_draw{w} = 1;
 }
+my $_update_steps = ((grep { $init_str_draw{$_} } keys %init_str_draw) +
+		     (grep { $init_p_draw{$_} } keys %init_p_draw));
+my $_update_i = 0;
 foreach (keys %init_str_draw) {
     $str_draw{$_} = $init_str_draw{$_};
     eval {
@@ -4552,6 +4558,7 @@ foreach (keys %init_str_draw) {
     if ($@ && !$no_original_datadir) {
 	die $@;
     }
+    $splash_screen->Update((($_update_i++)/$_update_steps)*(UPDATE_FRAC_AFTER_PLOTTING - UPDATE_FRAC_BEFORE_PLOTTING)+UPDATE_FRAC_BEFORE_PLOTTING);
 }
 foreach (keys %init_p_draw) {
     if ($_ eq 'pp' && defined $set_mode) {
@@ -4565,6 +4572,7 @@ foreach (keys %init_p_draw) {
     if ($@ && !$no_original_datadir) {
 	die $@;
     }
+    $splash_screen->Update((($_update_i++)/$_update_steps)*(UPDATE_FRAC_AFTER_PLOTTING - UPDATE_FRAC_BEFORE_PLOTTING)+UPDATE_FRAC_BEFORE_PLOTTING);
 }
 # Höhen einlesen
 read_hoehe()  if $show_grade || $steigung_optimierung || $use_hoehe;
@@ -4586,7 +4594,7 @@ if (!$search_route_flag && !(defined $set_mode && $set_mode eq 'edit')) {
 ## DEBUG_END
 $progress->FinishGroup;
 
-$splash_screen->Update(0.7) if $splash_screen;
+$splash_screen->Update(UPDATE_FRAC_AFTER_PLOTTING) if $splash_screen;
 
 set_bindings();
 
