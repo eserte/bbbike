@@ -1167,10 +1167,10 @@ userdel	q4::inwork; 10829,18083 10907,18109 10938,18147 10989,18172 11137,18358 
        {
          'source_id' => '96900159',
          'until' => 1280613600,
-         'text' => 'Schwielowsee: K6910: Kanal- und Straßenbau OL Geltow Richtungsverkehr zw. Mühlenbergstr. und B 1, 30.03.2009 bis 31.07.2010 ',
-         'from' => 1273091418,
+         'text' => 'Schwielowsee: K6910: Kanal- und Straßenbau OL Geltow Richtungsverkehr zw. Mühlenbergstr. und B 1, Vollsperrung für Deckeneinbau, bis 31.07.2010',
+         'from' => 1276547726,
          'id' => 1896,
-         'data' => 'userdel	q4::inwork; -19013,-5247 -19112,-5226 -19332,-5240
+         'data' => 'userdel	q4::inwork -19013,-5247 -19112,-5226 -19332,-5240
 ',
          'type' => 'handicap'
        },
@@ -1722,6 +1722,38 @@ userdel	q3::inwork 9444,11616 9432,11702
          'data' => 'userdel	q4::inwork 18586,9172 18511,9185 18430,9199 18319,9218
 ',
          'type' => 'handicap'
+       },
+       undef,
+       undef,
+       {
+         'source_id' => '106800201',
+         'until' => 1291158000,
+         'text' => 'Neuruppin: K6828: Straßenbau OL Karwe, 14.06.2010 bis 30.11.2010',
+         'from' => 1276547925,
+         'id' => 2080,
+         'data' => 'userdel	2::inwork -27035,49829 -25968,49631
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => '106401098',
+         'until' => 1292626800,
+         'text' => 'Rehfelde: K6419: Straßenausbau OL Rehfelde, zw. Bahnhofstraße und Kreisverkehr, 07.06.2010 bis 17.12.2010 ',
+         'from' => 1276547986,
+         'id' => 2081,
+         'data' => 'userdel	q4::inwork 45856,14437 44121,14615
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'LS/W-SG33-K/10/066',
+         'until' => 1293663600,
+         'text' => 'Wusterhausen/Dosse: K6806, B167: Straßenbauarbeiten OD Metzelthin , 07.06.2010 bis 29.12.2010 ',
+         'from' => 1276548087,
+         'id' => 2082,
+         'data' => 'userdel	2::inwork -50068,51237 -51018,51135
+',
+         'type' => 'gesperrt'
        }
      
 );

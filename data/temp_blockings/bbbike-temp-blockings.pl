@@ -16094,13 +16094,13 @@ userdel	q4::temp 8595,12066 8600,12165 8538,12245 8546,12279 8570,12302 8573,123
 userdel	q4::temp 6828,12031 7383,12095 7816,12150 8055,12186 8089,12190 8214,12205 8538,12245 8610,12254
 EOF
      },
-     { from  => 1273091418, # 2010-05-05 22:30
+     { from  => 1276547726, # 2010-06-14 22:35
        until => 1280613600, # 2010-08-01 00:00
-       text  => 'Schwielowsee: K6910: Kanal- und Straßenbau OL Geltow Richtungsverkehr zw. Mühlenbergstr. und B 1, 30.03.2009 bis 31.07.2010 ',
+       text  => 'Schwielowsee: K6910: Kanal- und Straßenbau OL Geltow Richtungsverkehr zw. Mühlenbergstr. und B 1, Vollsperrung für Deckeneinbau, bis 31.07.2010',
        type  => 'handicap',
        source_id => '96900159',
        data  => <<EOF,
-userdel	q4::inwork; -19013,-5247 -19112,-5226 -19332,-5240
+userdel	q4::inwork -19013,-5247 -19112,-5226 -19332,-5240
 EOF
      },
      { from  => 1253138400, # 2009-09-17 00:00
@@ -17700,6 +17700,33 @@ EOF
        source_id => 'IM_015813',
        data  => <<EOF,
 userdel	q4::temp 15793,8984 15673,8901 15591,8848 15714,8633
+EOF
+     },
+     { from  => 1276547925, # 2010-06-14 22:38
+       until => 1291158000, # 2010-12-01 00:00
+       text  => 'Neuruppin: K6828: Straßenbau OL Karwe, 14.06.2010 bis 30.11.2010',
+       type  => 'gesperrt',
+       source_id => '106800201',
+       data  => <<EOF,
+userdel	2::inwork -27035,49829 -25968,49631
+EOF
+     },
+     { from  => 1276547986, # 2010-06-14 22:39
+       until => 1292626800, # 2010-12-18 00:00
+       text  => 'Rehfelde: K6419: Straßenausbau OL Rehfelde, zw. Bahnhofstraße und Kreisverkehr, 07.06.2010 bis 17.12.2010 ',
+       type  => 'handicap',
+       source_id => '106401098',
+       data  => <<EOF,
+userdel	q4::inwork 45856,14437 44121,14615
+EOF
+     },
+     { from  => 1276548087, # 2010-06-14 22:41
+       until => 1293663600, # 2010-12-30 00:00
+       text  => 'Wusterhausen/Dosse: K6806, B167: Straßenbauarbeiten OD Metzelthin , 07.06.2010 bis 29.12.2010 ',
+       type  => 'gesperrt',
+       source_id => 'LS/W-SG33-K/10/066',
+       data  => <<EOF,
+userdel	2::inwork -50068,51237 -51018,51135
 EOF
      },
     );
