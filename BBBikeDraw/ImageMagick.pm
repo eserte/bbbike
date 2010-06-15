@@ -719,6 +719,78 @@ sub draw_scale {
 #      }
   }
 
+# XXX wip, not yet finished
+sub draw_custom_places {
+    my($self, $mapping_str) = @_;
+    my(@l) = split /;/, $mapping_str;
+    my %mapping;
+    for (@l) {
+	$_ = [split /,/, $_];
+	$mapping{$_->[0]} = { @{$_}[1..$#$_] };
+    }
+    my $im        = $self->{Image};
+    my $transpose = $self->{Transpose};
+    my $p = $self->_get_orte;
+
+    my $cp = Strassen->new("orte_city");
+    $cp->init;
+    while(1) {
+	my $s = $cp->next_obj;
+	last if $s->is_empty;
+	if ($s->name eq 'Mitte') {
+	    $p->push(["Berlin", $s->coords, $s->category]);
+	}
+    }
+
+    # XXX not correct?
+    my $anchor_to_gravity = sub {
+	my $anchor = shift;
+	return () if !$anchor;
+	(gravity => {'nw' => 'NorthWest',
+		     'w'  => 'West',
+		     'sw' => 'SouthWest',
+		     's'  => 'South',
+		     'se' => 'SouthEast',
+		     'e'  => 'East',
+		     'ne' => 'NorthEast',
+		    }->{$anchor}
+	);
+    };
+
+#XXX missing:
+#    my %ort_font = %{ $self->get_ort_font_mapping };
+    $p->init;
+    while(1) {
+	my $s = $p->next_obj;
+	last if $s->is_empty;
+	my $cat = $s->category;
+	my($x0,$y0) = @{$s->coord_as_list(0)};
+	my($x, $y) = &$transpose(@{$s->coord_as_list(0)});
+	my $ort = $s->name;
+	# Anhängsel löschen (z.B. "b. Berlin")
+	$ort =~ s/\|.*$//;
+	next if !exists $mapping{$ort};
+	$im->Draw(primitive => 'circle', points => [$x-3, $y-3, $x+3, $y+3], stroke => $black);
+ 	$im->Annotate(text => $ort,
+		      #font => XXX,
+		      family => 'sans serif', # XXX or this
+		      pointsize => 7, # XXX configurable
+		      stroke => $black,
+		      undercolor => $grey_bg, # XXX is this outline?
+		      $anchor_to_gravity->($mapping{$ort}->{-anchor}),
+		      x => $x,
+		      y => $y,
+		     );
+# 	    (#$ort_font{$cat} || &GD::Font::Small,
+# 	     $x, $y,
+# 	     $ort,
+# 	     $black, $grey_bg,
+# 	     -padx => 4,
+# 	     -anchor => $mapping{$ort}->{-anchor},
+# 	    );
+    }
+}
+
 #  sub make_imagemap {
 #      my $self = shift;
 #      my $fh = shift || confess "No file handle supplied";
