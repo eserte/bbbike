@@ -1,9 +1,32 @@
-The images are (will be) used in BBBikeGPS.pm. The file naming is stupid, but
-this is localization to the end...
+The images are (will be) used in BBBikeGPS.pm. The file naming is
+stupid: it depends on the localization of the device!
 
-----------------------------------------------------------------------
-See upload instructions at:
-http://74.125.39.104/search?q=cache:UC2hJEhowy4J:www.4lagig-deluxe.de/2008/01/12/benutzerdefinierte-wegpunktsymbole/
+Upload instructions:
+
+* Get the xImage program from Garmin. At the time of writing, it can
+  be found here: http://www8.garmin.com/support/agree.jsp?id=545
+
+* Install it (sorry, Windows only) and start it.
+
+* Select "Get images from the GPS" and then the Image type for the
+  waypoint symbols (this label is already localized).
+
+* Select all images and download them. Now you should have files
+  named like "Simbol tocke 001.bmp" (depending on the localization) on
+  your hard disk.
+
+* Rename the images in the bike2008 subdirectory to match the
+  localized file names. I do this automatically like this:
+
+    rsync -a bike2008/ /tmp/bike2008/
+    cd /tmp/bike2008/
+    rename 's/^/Simbol tocke /' *.bmp
+
+* Put these files in place of the downloaded ones.
+
+* Now start again xImage. This time use "Send images to the GPS".
+  Again select the same image type, and select all images. Finish the
+  upload.
 
 ----------------------------------------------------------------------
 Current bike2008 bmps in order, as HCx matrix
