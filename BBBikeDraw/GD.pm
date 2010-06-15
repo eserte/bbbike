@@ -1129,9 +1129,9 @@ sub _adjust_anchor {
 	($dx,$dy) = $get_bounds->();
     }
     if ($anchor =~ /^n/) {
-	$y -= ($dy + $pady);
+	$y -= ($dy - $pady);
     } elsif ($anchor =~ /^s/) {
-	$y += $pady;
+	$y -= $pady;
     } else {
 	$y -= ($dy/4 + $pady);
     }
