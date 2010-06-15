@@ -180,7 +180,7 @@ if ($use_cgi_settings) {
 	# Nauen <-> Strausberg
 	$bbox = '-25901,-11471,43275,34695';
 	$includepotsdam = 1;
-	$custom_places = "Bernau;Königs Wusterhausen,-anchor,e;Teltow,-anchor,nc;Velten;Hennigsdorf,-anchor,e;Ahrensfelde,-anchor,nw;Michendorf;Mahlow;Werder,-anchor,nc;Strausberg,-anchor,e;Nauen,-anchor,w;Oranienburg;Zossen;Falkensee,-anchor,e";
+	$custom_places = "Bernau;Königs Wusterhausen,-anchor,e;Teltow,-anchor,nc;Velten;Hennigsdorf,-anchor,e;Ahrensfelde,-anchor,nw;Michendorf;Mahlow;Werder,-anchor,nc;Strausberg,-anchor,se;Nauen,-anchor,w;Oranienburg;Zossen;Falkensee,-anchor,e;Großbeeren,-anchor,nc;Erkner;Rüdersdorf,-anchor,sc;Blumberg,-anchor,sc;Basdorf;Kremmen";
 	$img_w = 280;
 	$img_h = 240;
 	$suffix = "_".$img_w."x".$img_h;

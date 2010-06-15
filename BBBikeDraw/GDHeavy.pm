@@ -236,7 +236,7 @@ sub draw_custom_places {
 	     $x, $y,
 	     BBBikeDraw::GD->patch_string($ort),
 	     $BBBikeDraw::GD::black, $BBBikeDraw::GD::grey_bg,
-	     -padx => 4,
+	     -padx => 4, -pady => 2,
 	     -anchor => $mapping{$ort}->{-anchor},
 	    );
     }
