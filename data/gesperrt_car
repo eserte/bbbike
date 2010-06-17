@@ -999,3 +999,6 @@ Eisenbahnstr. (Fürstenwalde)	1 55401,-3599 55456,-4023 55447,-4247
 Krebsgang	1 14693,7168 14792,7192
 Methfesselstr.: Durchfahrt verboten (aber baulich möglich)	3 9150,9152 9125,9078 9115,9046
 Methfesselstr.: Durchfahrt verboten (aber baulich möglich)	3 9115,9046 9125,9078 9150,9152
+Neue Filandastr./Filandatr.	3nocross::ignrte 5687,5486 5671,5389 5659,5313
+Filandastr. -> Neue Filandastr.: Neue Filandastr./Filandatr.	3::igndisp 5637,5401 5671,5389 5687,5486
+Neue Filandastr. -> Filandastr.: Neue Filandastr./Filandatr.	3::igndisp 5659,5313 5671,5389 5637,5401
