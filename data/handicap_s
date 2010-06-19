@@ -15,6 +15,7 @@ Varziner Str.: Bauarbeiten, Einbahnstraﬂenregelung zwischen Bundesallee und Varz
 Varziner Platz: Bauarbeiten, es muss geschoben werden	q4::inwork 5458,7866 5492,7868 5517,7869
 Rathausstr.: Baustelle vor dem Roten Rathaus, eng	q3::inwork 10601,12521 10704,12595
 J‰gerstr.: Einbahnstraﬂe	q4::inwork; 9394,11996 9201,11968
+Taubenstr.: Einbahnstraﬂe	q4::inwork; 9406,11899 9208,11872
 Wuhlewanderweg: steiler Anstieg, Fuﬂg‰nger	q4; 21998,12204 21970,12153
 Wuhlewanderweg: steiles Gef‰lle, Fuﬂg‰nger	q4; 21970,12153 21998,12204
 Caroline-Michaelis-Str.: Bordsteine	q3 9125,13973 9151,13941
@@ -1279,6 +1280,10 @@ Langenbeckplatz: enge Straﬂe	q1 25030,9626 25095,9627 25086,9733 25020,9728 2503
 Beerbaumstr.: enge Straﬂe	q1 15692,24040 15730,24051 15759,24033 15843,23980 15906,24088
 (Beerbaumstr. - Karower Chaussee): schmal	q2 15906,24088 15948,24151
 Ossietzkyplatz: Parkplatz	q4 10249,19541 10215,19532 10228,19480
+Heppenheimer Weg: Fuﬂg‰nger	q2 -500,4409 -459,4422 -404,4442 -349,4466 -283,4495 -227,4538
+Straﬂe 206: enge Straﬂe	q1; 13406,17382 13321,17318 13247,17262
+Straﬂe 245 (Weiﬂensee): enge Straﬂe	q1 13590,17368 13271,17589
+(Querweg durch die Dauerkolonie Togo): einige Fuﬂg‰nger	q1 5900,16817 5712,16604
 Dennewitzplatz: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 7906,10098 7866,9918
 Eichborndamm: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 4240,19019 4232,18981
 Dorotheenstr. (Straﬂenbahn): gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q2::igndisp; 9454,12558 9330,12529
@@ -1292,6 +1297,7 @@ Hufelandweg: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 8630,
 Sauerbruchweg: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 8487,13351 8555,13260 8605,13200 8630,13172
 Harzburger Str. (Pankow), Klaustaler Str...: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 11442,18736 11419,18801 11463,18817 11469,18799 11483,18753 11462,18743 11442,18736
 Rˆmerweg: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q2::igndisp; 19236,9710 19450,9728 19459,9842
+Straﬂe 206: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q2::igndisp; 13247,17262 13321,17318 13406,17382
 Josef-Nawrocki-Str.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 25802,4823 25819,4688 25720,4719 25692,4727 25565,4764 25552,4829
 Askanischer Platz: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q2::igndisp; 8882,10905 8938,10872 8983,10846 9022,10857
 Helbigstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 20109,4087 20339,3779 20362,3750

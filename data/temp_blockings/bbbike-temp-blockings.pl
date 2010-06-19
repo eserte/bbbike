@@ -480,10 +480,11 @@ EOF
        text  => 'Gleimstraße zwischen Schönhauser Allee und Ystarder Straße in beiden Richtungen gesperrt, Bauarbeiten. Dauer: bis voraussichtlich 07.07.2004',
        type  => 'handicap',
      },
-     { from  => undef, # 
-       until => 1150666200, # 2006-06-18 23:30
-       text  => 'Badstr. (Wedding) in beiden Richtungen, zwischen Pankstr. und Behmstr. Veranstaltung, Straße vollständig gesperrt (bis 18.06.2006 23:30 Uhr) Seifenkistenrennen und Straßenfest in der Badstr.',
+     { from  => 1276833600, # 2010-06-18 06:00
+       until => 1277071140, # 2010-06-20 23:59
+       text  => 'Badstraße (Wedding): Veranstaltung, gesperrt (bis 21.06.10, 0 Uhr) in beiden Richtungen zwischen Pankstraße und Behmstraße, 19.06.2010 06:00 Uhr bis 20.06.2010 23:59 Uhr ',
        type  => 'gesperrt',
+       source_id => 'IM_015896',
        file  => 'badstr.bbd',
      },
      { from  => 1087462800, # 2004-06-17 11:00
@@ -509,7 +510,7 @@ EOF
        text  => 'Müllerstr. (Wedding) in beiden Richtungen zwischen Londoner Str. und Transvaalstr. Veranstaltung, Straße vollständig gesperrt (bis 17.07.2005 24 Uhr)',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 6019,16712 5937,16784 5777,16924
+userdel	2 6019,16712 5937,16784 5900,16817 5777,16924
 userdel	2 6019,16712 6103,16635
 userdel	2 6103,16635 6208,16546 6311,16457
 EOF
@@ -8398,7 +8399,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005655',
        data  => <<EOF,
-userdel	2::temp 6311,16457 6208,16546 6103,16635 6019,16712 5937,16784 5777,16924
+userdel	2::temp 6311,16457 6208,16546 6103,16635 6019,16712 5937,16784 5900,16817 5777,16924
 EOF
      },
      { from  => 1180783165, # 2007-06-02 13:19
@@ -13281,7 +13282,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_011184',
        data  => <<EOF,
-#: last_checked: 2010-04-19
+#: last_checked: 2010-06-18
 userdel	q4::inwork; 10350,13376 10527,13257
 EOF
      },
@@ -17147,8 +17148,8 @@ userdel	1::inwork 18370,5511 18307,5440 18214,5354 18080,5376 18245,5551
 EOF
      },
      { from  => 1268521200, # 2010-03-14 00:00
-       until => 1276898399, # 2010-06-18 23:59
-       text  => 'Die Leipziger Str. ist zwischen Mauerstr. und Charlottenstr. Richtung Alexanderstr. wegen Bauarbeiten gesperrt. Zu Einbahnstraßen werden Teile der Mauer-, Krausen-, Charlottenstr. und Friedrichstr. Dauer: 15. März 2010 bis 18. Juni 2010 ',
+       until => Time::Local::timelocal(reverse(2010-1900,6-1,25,15,0,0)), # was: 1276898399, # 2010-06-18 23:59
+       text  => 'Die Leipziger Str. ist zwischen Mauerstr. und Charlottenstr. Richtung Alexanderstr. wegen Bauarbeiten gesperrt. Zu Einbahnstraßen werden Teile der Mauer-, Krausen-, Charlottenstr. und Friedrichstr. Dauer: 15. März 2010 bis 25. Juni 2010 ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	q4::inwork; 9268,11590 9444,11616 9569,11631 9581,11523 9456,11513 9331,11497 9268,11590
@@ -17782,6 +17783,42 @@ userdel auto	3 7131,10331 7033,10396 7245,10499
 userdel auto	3 7131,10331 7033,10328 7060,10221
 userdel auto	3 6716,11439 6825,11486 7171,11510
 userdel auto	3 7245,10499 7033,10396 7131,10331
+EOF
+     },
+     { from  => 1276783200, # 2010-06-17 16:00
+       until => 1277089200, # 2010-06-21 05:00
+       text  => 'Frohnauer Brücke (Reinickendorf): Veranstaltung, gesperrt (bis 21.06.10, 5 Uhr) und Zeltinger Platz sowie Ludolfinger Platz, 18.06.2010 16:00 Uhr bis 21.06.2010 05:00 Uhr ',
+       type  => 'handicap',
+       source_id => 'IM_015895',
+       data  => <<EOF,
+userdel	q4::temp 2404,25187 2277,25094
+EOF
+     },
+     { from  => 1276833600, # 2010-06-18 06:00
+       until => 1276977600, # 2010-06-19 22:00
+       text  => 'Gotzkwoskystraße (Tiergarten): Veranstaltung, gesperrt (bis 22 Uhr) in beide Richtungen zwischen Alt-Moabit und Turmstraße, 19.06.2010 06:00 Uhr bis 19.06.2010 22:00 Uhr ',
+       type  => 'handicap',
+       source_id => 'IM_015893',
+       data  => <<EOF,
+userdel	q4::temp 5368,13406 5358,13207 5328,13019
+EOF
+     },
+     { from  => 1276833600, # 2010-06-18 06:00
+       until => 1276966800, # 2010-06-19 19:00
+       text  => 'Lipschitzallee (Neukölln): Veranstaltung, gesperrt (bis 19 Uhr) in beiden Richtungen zwischen Fritz-Erler-Allee und Rudower Straße, 19.06.2010 06:00 Uhr bis 19.06.2010 19:00 Uhr ',
+       type  => 'gesperrt',
+       source_id => 'IM_015892',
+       data  => <<EOF,
+userdel	q4::temp 14935,2530 15088,2691 15140,2778 15235,2938 15271,3058
+EOF
+     },
+     { from  => 1276790400, # 2010-06-17 18:00
+       until => 1277085600, # 2010-06-21 04:00
+       text  => 'Melchow: L200: Gleisbauarbeiten Bahnübergang bei Melchow , 18.06.2010 18:00 Uhr bis 21.06.2010 04:00 Uhr ',
+       type  => 'gesperrt',
+       source_id => '106000270',
+       data  => <<EOF,
+userdel	2::inwork 30143,41500 29553,41441 29468,41438
 EOF
      },
     );

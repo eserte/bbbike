@@ -545,6 +545,7 @@ Berenhorststr.	1 4816,17712 4862,17934
 Berenhorststr.	1 4905,18142 4862,17934
 Von-der-Gablentz-Str.	1 5151,17658 4946,17701 4893,17698 4816,17712
 Kemmannweg	1 -4207,14473 -4117,14458 -4049,14419 -3937,14340 -3911,14331 -3819,14302
+Straße 206	1s 13247,17262 13321,17318 13406,17382
 Privatstr. 13	1 13171,17335 13103,17280 13018,17264
 Preunelstr.	1 13012,17332 12965,17324 12930,17302 12865,17381
 Am Neuen Garten	1 -12166,1384 -12212,1201 -12276,831 -12302,718
@@ -739,6 +740,8 @@ Armbrustweg -> Klemkestr.: Mittelstreifen	3::igndisp 7626,18606 7609,18707 7520,
 Straßenbahntrasse	3nocross::ignrte 14619,16682 14608,16772 14559,16912
 Caseler Str. -> Berliner Allee: Straßenbahntrasse	3::igndisp 14700,16790 14608,16772 14619,16682
 Berliner Allee -> Caseler Str.: Straßenbahntrasse	3::igndisp 14559,16912 14608,16772 14700,16790
+Straßenbahntrasse	3nocross::ignrte 13401,15821 13432,15843 13540,15928
+Streustr. -> Berliner Allee: Straßenbahntrasse	3::igndisp 13269,15927 13432,15843 13540,15928
 Gülzower Str.: Mittelstreifen	3 22603,12359 22388,12190 22424,12183
 Mittelstreifen	3nocross::ignrte 5350,21251 5357,21199 5391,21003
 Cyclopstr. -> Oranienburger Str.: Mittelstreifen	3::igndisp 5297,21243 5357,21199 5350,21251

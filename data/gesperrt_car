@@ -1002,3 +1002,8 @@ Methfesselstr.: Durchfahrt verboten (aber baulich möglich)	3 9115,9046 9125,9078
 Neue Filandastr./Filandatr.	3nocross::ignrte 5687,5486 5671,5389 5659,5313
 Filandastr. -> Neue Filandastr.: Neue Filandastr./Filandatr.	3::igndisp 5637,5401 5671,5389 5687,5486
 Neue Filandastr. -> Filandastr.: Neue Filandastr./Filandatr.	3::igndisp 5659,5313 5671,5389 5637,5401
+Mittelstreifen	3nocross::ignrte 6019,16712 5937,16784 5900,16817 5777,16924
+Liverpooler Str. -> Müllerstr.: Mittelstreifen	3::igndisp 5995,16836 5937,16784 6019,16712
+Müllerstr. -> Liverpooler Str.: Mittelstreifen	3::igndisp 5900,16817 5937,16784 5995,16836
+Querweg durch die Dauerkolonie Togo -> Müllerstr.: Mittelstreifen	3::igndisp 5712,16604 5900,16817 5777,16924
+Müllerstr. -> Querweg durch die Dauerkolonie Togo: Mittelstreifen	3::igndisp 5937,16784 5900,16817 5712,16604

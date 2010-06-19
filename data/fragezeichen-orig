@@ -85,7 +85,7 @@ Schnellerstr.	?::projected 18245,5551 18370,5511 18680,5413 18984,5318 19031,531
 #: corrected_by: MoPo 2009-08-01, soll 2010 realisiert werden
 # auch im Tsp vom 2010-03-26 erwähnt
 #: next_check: 2010-06-01
-Müllerstr.	?::projected 6790,16018 6680,16116 6608,16180 6450,16325 6444,16331 6433,16342 6311,16457 6208,16546 6103,16635 6019,16712 5937,16784 5777,16924 5589,17081 5504,17153
+Müllerstr.	?::projected 6790,16018 6680,16116 6608,16180 6450,16325 6444,16331 6433,16342 6311,16457 6208,16546 6103,16635 6019,16712 5937,16784 5900,16817 5777,16924 5589,17081 5504,17153
 #
 #: by: Tagesspiegel vom 2009-04-12, soll 2009 realisiert werden
 #: corrected_by: MoPo 2009-08-01, soll 2010 realisiert werden
@@ -2272,8 +2272,6 @@ Heubuder Str.: Qualität?	? 8973,17301 8880,17342
 Frauenfelder Weg: Qualität?	? 7339,17006 7441,17009 7647,17037
 Greenwicher Str.: Qualität?	? 5662,17158 5556,17254 5496,17306
 Themsestr.: Qualität?	? 5847,17018 5909,16967 6017,17073 6177,17258 6168,17309 6091,17346
-#: XXX Überqueren der Müllerstr. für Autos nicht möglich:
-Liverpooler Str.: Qualität?	? 5937,16784 5995,16836 6149,16958
 Tessiner Weg: Qualität?	? 7077,17186 7184,17208
 Tromsöer Str.: Qualität?	? 8197,16809 8243,16889
 Windsorer Str.: Qualität?	? 6476,17108 6556,17204
@@ -2368,8 +2366,6 @@ Piesporter Str. - Liebermannstr.: Ist die Abkürzung eine Einbahnstraße? Qualität
 Perler Str. (Weißensee): Qualität?	? 15799,17406 15785,17303 15818,17083
 Perler Str. (Alt-Hohenschönhausen): Qualität?	? 15827,17509 15839,17634 15851,17722
 Perler Str. - Darßer Str.: Qualität?	? 15851,17722 15780,17860 15783,17915
-Straße 206: Qualität? Ist die Straße eine Einbahnstraße? Wenn ja, gilt die Einbahnstraßenregelung nur für Autofahrer oder auch für Radfahrer?	? 13247,17262 13321,17318 13406,17382
-Straße 210: Qualität?	? 13161,17468 13321,17318
 Straße 250: Qualität?	? 16023,17175 16156,17315
 Straße 251: Qualität?	? 16083,17111 16212,17204
 Weg an der Kolonie am Nordgraben: Qualität? Kann man zur Roedernallee und zum Fräsersteig durchfahren?	? 5846,20279 5912,20308 5977,20337 6040,20364 6097,20398 6152,20452 6176,20482 6165,20517 6184,20550
@@ -2870,10 +2866,8 @@ Drosselweg (Karlshorst): Qualität? Ist der Straßenname offiziell?	? 19946,9328 2
 Habichtweg (Karlshorst): Qualität? Ist der Straßenname offiziell?	? 20108,8583 20173,8580
 Amselweg (Karlshorst): Qualität? Ist der Straßenname offiziell?	? 20091,9330 20150,8962 20172,8703 20173,8580 20174,8443
 Spechtweg (Karlshorst): Qualität? Ist der Straßenname offiziell?	? 20006,8706 20089,8706 20172,8703
-Agavensteig (Karlshorst): Qualität östlich der Eibenallee?	? 19759,8212 19780,8230 19794,8240 19845,8242 19909,8242 19998,8241
 Anemonensteig (Karlshorst): Qualität östlich des Birkenknicks?	? 19925,7958 19958,7998 19986,8035 20014,8071
 Kiefernallee (Karlshorst): Qualität östlich des Birkenknicks?	? 19779,8088 19820,8123 19851,8153 19937,8200
-Eibenallee (Karlshorst): Qualität?	? 20037,7928 19958,7998 19820,8123 19759,8212 19698,8310
 #: XXX laut Luise wurde diese Straße vermutlich als "Am Hochwald" bezeichnet
 Hochwaldstr. (Karlshorst): Qualität?	? 19713,8319 19650,8370 19451,8385
 #: XXX weitere Wege führen laut osm den Namen "Birkenallee"
@@ -3178,7 +3172,6 @@ Stützkow - Alt-Gatow: Qualität?	? 61584,66212 61540,66359 61445,66368 61289,6661
 #: XXX: benötigt Eintrag in Berlin.coords.data
 Max-Liebermann-Allee: Qualität? Über welche Straße erfolgt der Zugang?	? -6422,1932 -6331,2094 -6273,2194
 Friedrich-Wilhelm-Str. (Reinickendorf): Qualität?	? 7615,18204 7418,18051
-Straße 245 (Weißensee): Qualität?	? 13590,17368 13271,17589
 Marthastr. (Wilhelmsruh): Qualität?	? 8000,19819 8234,19936
 Anton-Webern-Weg: Qualität?	? 8131,20287 8282,20329
 Strawinskystr.: Qualität?	? 8069,20408 8242,20434 8359,20449
@@ -3452,7 +3445,7 @@ Hanuschkestr.: Qualität? Spielstraße?	? 17892,3537 17974,3536
 Walter-Huth-Str.: Ist ein Abschnitt der Straße verkehrsberuhigt? Welcher genau?	? 17832,3740 17896,3738 17927,3737 17976,3735
 Am Alten Fenn: Qualität?	? 17037,4794 17060,4848 17119,4931 17246,5089 17266,5134 17291,5201 17297,5260 17300,5423 17366,5551
 Melli-Beese-Str. - Parkweg: gibt es für Radfahrer eine Verbindung zwischen Melli-Besse-Str. und dem Weg im Landschaftspark?	? 17870,3965 17877,3979
-Rennbahnstr./Gustav-Adolf-Str.: gibt es eine Ampel an der Kreuzung Rennbahnstr./Gustav-Adolf-Str.?	? 13708,17453
+#XXX by jan (...matrix): nein --- Rennbahnstr./Gustav-Adolf-Str.: gibt es eine Ampel an der Kreuzung Rennbahnstr./Gustav-Adolf-Str.?	? 13708,17453
 Spiekermannstr.: Ist die Spiekermannstr. eine Tempo-30-Straße oder eine Spielstraße?	? 12054,16517 11919,16495 11844,16483 11663,16458
 Kesperhof: Qualität? Ist die Straße eine Spielstraße?	? -1768,1882 -1734,1806
 Flererhof: Qualität? Ist die Straße eine Spielstraße?	? -1698,1927 -1655,1847
@@ -3480,7 +3473,10 @@ Siepesteig: Qualität?	? 194,1055 115,1043 84,1174 91,1202
 #: XXX laut osm "paved"
 An den Hubertshäusern: Qualität?	? -2049,2359 -1940,2400 -1963,2461 -2069,2429
 Straße 16: Qualität?	? 13031,17775 13034,17895
-(Straße 49 - Straße 56): Qualität des Radweges?	? 12609,17405 12671,17528 12587,17603
+#: XXX_osm: bei osm ohne Namen und zu kurz
+#: XXX fehlt bei Berlin.coords.data
+Straße 45 (Heinersdorf): Qualität? Ist der Straßennamen offiziell und auch so ausgeschildert?	? 12609,17405 12671,17528 12812,17615 12924,17676 12929,17705
+Verbindung zwischen Straße 45 und Straße 46: Qualität? Für Autos gesperrt?	? 12671,17528 12587,17603
 #: XXX benötigt Eintrag in str_cont_ausnahme:
 Eigerstr.: Qualität?	? 12825,17870 12882,17895 12902,17933 12945,17958 13036,18010 13043,18126 13042,18152
 Eigerstr.: Qualität?	? 12991,17877 12945,17958 12912,18008 13025,18126 13043,18126
@@ -3831,8 +3827,6 @@ Zinnowweg: Qualität? Für Radfahrer befahrbar? Nachts beleuchtet?	? -420,4159 -34
 Grumbacher Weg: Qualität?	? -531,4599 -591,4558
 #: XXX_osm: bei osm evtl. falsch geschrieben
 Jugenheimer Weg: Qualität? Für Radfahrer offen?	? -517,4463 -472,4476 -424,4495 -376,4521 -319,4550 -268,4588
-#: XXX_osm: bei osm evtl. falsch geschrieben
-Heppenheimer Weg: Qualität? Für Radfahrer offen?	? -500,4409 -459,4422 -404,4442 -349,4466 -283,4495 -227,4538
 Ottmachauer Steig: Qualität? Für Radfahrer offen?	? -442,4691 -424,4717 -311,4637
 Selmaplatz: Qualität?	? -361,4334 -408,4302
 Gustav-Krone-Str.: Qualität?	? 1514,208 1507,301
@@ -4928,7 +4922,7 @@ Straße 145: Qualität?	? 11077,21858 11170,21876
 Darßer Bogen: Qualität?	? 15226,17900 15450,17861
 Kapellenweg (Blankenfelde): Qualität?	? 10287,23275 10373,23353 10418,23396 10456,23441 10493,23487 10549,23550 10667,23684 10971,23838
 Weg B (Blankenfelde): Qualität?	? 10493,23487 10629,23222
-Gehrenseestr./Hohenschönhauser Str.: Wo genau hört die eine Straße auf und die andere an?	? 18738,16957 18465,16761
+#XXX del: Antwort von jan (...matrix): An der Kreuzung --- Gehrenseestr./Hohenschönhauser Str.: Wo genau hört die eine Straße auf und die andere an?	? 18738,16957 18465,16761
 #: XXX fehlt in Berlin.coords.data
 Schwarze-Pumpe-Weg: Qualität?	? 19349,15984 19192,15979 19081,16020
 Georg-Knorr-Str.: Heißt die Verbindung zwischen Boxberger und Landsberger so? Qualität?	? 19352,15639 19350,15573 19296,15472 19428,15126

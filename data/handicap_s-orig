@@ -12,7 +12,7 @@
 #: next_check: 2010-09-01
 Schloﬂplatz: Behinderungen durch Bauarbeiten mˆglich	q3::inwork 10170,12261 10063,12438
 #XXX del #: last_checked: 2009-12-25 Caroline-Michaelis-Str.: Bauarbeiten, Ausweichen auf Gehweg	q4::inwork 9061,14050 9125,13973
-#: last_checked: 2010-06-06
+#: last_checked: 2010-06-18
 Fahrbahn der Mauerstr. wegen Bauarbeiten gesperrt	q4::inwork 9405,11413 9331,11497
 #XXX del: last_checked: 2010-02-02, #: next_check: 2010-05-31, Hauptstr. (Friedrichshain-Kreuzberg): Baustelle, Radfahrer kˆnnen langsam passieren	q3::inwork 14906,10820 14794,10844 14717,10855
 #: last_checked: 2010-06-06
@@ -36,8 +36,10 @@ Varziner Platz: Bauarbeiten, es muss geschoben werden	q4::inwork 5458,7866 5492,
 #: next_check: 2011-01-01
 Rathausstr.: Baustelle vor dem Roten Rathaus, eng	q3::inwork 10601,12521 10704,12595
 #: by: ^^^
-#: last_checked: 2010-04-30
+#: last_checked: 2010-06-18
 J‰gerstr.: Einbahnstraﬂe	q4::inwork; 9394,11996 9201,11968
+#: last_checked: 2010-06-18
+Taubenstr.: Einbahnstraﬂe	q4::inwork; 9406,11899 9208,11872
 # 
 #: temporary ^^^
 ######################################################################
@@ -1870,3 +1872,13 @@ Beerbaumstr.: enge Straﬂe	q1 15692,24040 15730,24051 15759,24033 15843,23980 159
 #: by: Sabine Bernsmann-...:
 #: note: Das hier ist ein Pseudo-Eintrag, um das Routing davon abzuhalten, diese Straﬂe zu w‰hlen.
 Ossietzkyplatz: Parkplatz	q4 10249,19541 10215,19532 10228,19480
+#: by: Jan Kretzschmar
+#: corrected_by: srt/policy (q4 -> q2)
+Heppenheimer Weg: Fuﬂg‰nger	q2 -500,4409 -459,4422 -404,4442 -349,4466 -283,4495 -227,4538
+#: by: jan (...matrix): vvv
+#: XXX_prog: Gegenrichtung ist durch 1s:q2 abgedeckt, sollte besser gelˆst sein...
+Straﬂe 206: enge Straﬂe	q1; 13406,17382 13321,17318 13247,17262
+Straﬂe 245 (Weiﬂensee): enge Straﬂe	q1 13590,17368 13271,17589
+#: by: ^^^
+#: by: Joachim Faust:
+(Querweg durch die Dauerkolonie Togo): einige Fuﬂg‰nger	q1 5900,16817 5712,16604

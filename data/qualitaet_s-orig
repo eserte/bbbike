@@ -1099,9 +1099,12 @@ Charlottenstr.: mäßiger Asphalt	Q1 9454,12558 9462,12481 9475,12365
 Mohrenstr.: Asphalt	Q0 9220,11781 9418,11804
 Jägerstr.: Asphalt	Q0 9108,11961 9201,11968
 #: XXX vielleicht nach den Bauarbeiten besser?
-#: next_check: 2010-06-01
-#: last_checked: 2010-04-19
+#: next_check: 2010-09-01
+#: last_checked: 2010-06-18
 Jägerstr.: Asphalt mit Schäden	Q1 9201,11968 9394,11996
+#: XXX vielleicht nach den Bauarbeiten besser?
+#: next_check: 2010-09-01
+#: last_checked: 2010-06-18
 Taubenstr.: Asphaltschäden, alte Straßenbahnschienen	Q1 9406,11899 9208,11872 9144,11866
 südlicher Uferweg an der Krummen Lanke: Waldweg, überwiegend OK, einige sandige Stellen	Q1 -1274,4367 -1245,4414 -1185,4450 -1139,4575 -1134,4706 -971,4971 -724,5080 -604,5228 -593,5280 -579,5320
 nördlicher/westlicher Uferweg an der Krummen Lanke: Waldweg, überwiegend OK	Q1 -579,5320 -603,5317 -676,5323 -731,5291 -795,5233 -888,5172 -1098,5062 -1180,5020 -1243,4939 -1298,4815 -1298,4584 -1287,4486 -1272,4450 -1245,4414
@@ -2452,6 +2455,12 @@ Lahnsteiner Str.: Beton	Q1 18877,8973 18968,8959
 Wiesengrundstr. (Karlshorst): holpriger unbefestigter Fahrweg	Q2 19468,8168 19550,8230 19599,8256
 Agavensteig (Karlshorst): holpriger unbefestigter Fahrweg	Q2 19550,8230 19723,8068 19746,8042 19892,7917 20031,7794
 Agavensteig (Karlshorst): holpriger unbefestigter Fahrweg	Q2 19723,8068 19725,8122 19734,8182 19759,8212
+#: by: jan (...matrix)
+#: note: genauer Wortlaut: "alles dreck/erde mit löchern, die jedes jahr mit schutt gefüllt werden, in dieser gegend"
+Agavensteig (Karlshorst): holpriger unbefestigter Fahrweg	Q2 19759,8212 19780,8230 19794,8240 19845,8242 19909,8242 19998,8241
+#: by: jan (...matrix)
+#: note: genauer Wortlaut: "alles dreck/erde mit löchern, die jedes jahr mit schutt gefüllt werden, in dieser gegend"
+Eibenallee (Karlshorst): holpriger unbefestigter Fahrweg	Q2 20037,7928 19958,7998 19820,8123 19759,8212 19698,8310
 Kiefernallee (Karlshorst): holpriger unbefestigter Fahrweg	Q2 19666,7988 19746,8042 19779,8088
 Gasag (Karlshorst): holpriger unbefestigter Fahrweg	Q2 19599,8256 19482,8359 19451,8360 19453,8310 19550,8230
 Anemonensteig (Karlshorst): holpriger unbefestigter Fahrweg	Q2 19843,7866 19892,7917 19925,7958
@@ -3351,6 +3360,7 @@ Gloriastr.: Asphalt	Q0 21306,4876 21272,4889 21202,4985 21155,5061
 Daheimstr.: Asphalt	Q0 21324,4986 21268,4992 21271,5065
 (Spindlersfelder Str. - Ernst-Grube-Park): sehr gutes Verbundsteinpflaster	Q0 21143,5402 21168,5292 21208,5291 21362,5289
 (Ernst-Grube-Park): Parkweg	Q1 21345,5157 21329,5192 21208,5291
+Mollergasse: Kleinsteinpflaster	Q1 9892,12596 9894,12564
 ######################### User Contributions #################################
 #: by: Dominik Seelow vvv
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
@@ -4394,7 +4404,7 @@ Hosemannstr.: schlechtes Kopfsteinpflaster	Q3 23653,12122 23707,12258 23725,1230
 # auch: Radweghinweis
 Togostr.	Q0 6564,15821 6530,15849 6401,15956 6260,16081
 Togostr.	Q0 6260,16081 6244,16096 6104,16223
-Togostr.	Q0 6104,16223 6005,16313 5906,16403 5602,16718 5315,16936
+Togostr.	Q0 6104,16223 6005,16313 5906,16403 5712,16604 5602,16718 5315,16936
 #: by: ^^^
 #: by: Hanswalter Schramm: vvv
 #: note: widerspricht dem Eintrag von Beate Wolter (Asphalt, Q0):
@@ -8152,8 +8162,12 @@ Knollstr.: Kopfsteinpflaster	Q2 17242,-80 17308,-36 17362,-1 17429,42 17488,80 1
 Mareyzeile: guter Beton	Q0 -6013,12009 -6013,12041 -5880,12209 -5872,12235
 #: by: Peter Kunz:
 Zieselweg: mäßiger Beton	Q1- 2511,22590 2513,22737 2500,22867 2418,22878
-#: by: Joachim Faust:
+#: by: Joachim Faust: vvv
+(Querweg durch die Dauerkolonie Togo): guter Asphalt	Q0 5900,16817 5712,16604
+#: note: "q1" ohne weitere Angaben ignoriert
+Liverpooler Str.: Asphalt	Q0 5937,16784 5995,16836 6149,16958
 Gottschalkstr.: Asphalt	Q0 9399,17496 9265,17585 9160,17656
+#: by: ^^^
 #: by: Thomas Kummer:
 Großenhainer Weg: schlechtes Kopfsteinpflaster	Q3 15758,1179 15831,1227 15880,1291
 #: by: Frank- R. Hoffmann:
@@ -10652,6 +10666,10 @@ Fluchthornweg: mäßiger Beton	Q1- 10172,1657 10094,1634 10046,1464
 #: by: Harry (meinberlin...):
 Kleiberweg: guter Beton	Q0 15239,3815 15358,4016
 #: by: jan (...matrix): vvv
+#: note: "enge Straße", aber q0
+Straße 210: guter Asphalt	Q0 13161,17468 13321,17318
+Straße 206: mäßiger Asphalt	Q1- 13247,17262 13321,17318 13406,17382
+Straße 245 (Weißensee): mäßiger Asphalt	Q1- 13590,17368 13271,17589
 #: note: laut anonymous Kopfsteinpflaster, Q2, enge Straße, q0, keine Angaben zu einer Einbahnstraße
 Privatstr. 13: schlechtes Kopfsteinpflaster	Q3 13018,17264 13103,17280 13171,17335
 Preunelstr.: schlechtes Kopfsteinpflaster	Q3 12865,17381 12930,17302 12965,17324 13012,17332
@@ -10678,6 +10696,8 @@ Breitkopfstr.: mäßiges Kopfsteinpflaster	Q2 7789,17853 7772,17915 7736,18005 768
 #: by: Susan Leung:
 #: note: "enge Straße", aber q0
 Filandastr.: Kopfsteinpflaster	Q2 5671,5389 5637,5401 5527,5217
+#: by: Jan Kretzschmar
+Heppenheimer Weg: mäßiges Verbundsteinpflaster	Q2+ -500,4409 -459,4422 -404,4442 -349,4466 -283,4495 -227,4538
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206
