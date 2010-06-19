@@ -4,12 +4,12 @@
 # $Id: Wind.pm,v 1.7 2003/12/20 22:46:48 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998, 1999 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998, 1999, 2010 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: eserte@cs.tu-berlin.de
-# WWW:  http://user.cs.tu-berlin.de/~eserte/
+# Mail: srezic@cpan.org
+# WWW:  http://bbbike.sourceforge.net
 #
 
 package Met::Wind;
@@ -21,27 +21,33 @@ require Exporter;
 @ISA = qw(Exporter);
 @EXPORT = qw(wind_velocity wind_dir wind_chill);
 
-$VERSION = '0.03';
+$VERSION = '0.04';
+
+use constant INX_BEAUFORT => 0;
+use constant INX_LOC_DE   => 1;
+use constant INX_MS       => 2;
+use constant INX_KMH      => 3;
+use constant INX_LOC_EN   => 4;
 
 @wind_table = 
-# Beaufort   german            m/s   km/h
-  ([ 0, 'Stille',              0.2,   0.7],
-   [ 1, 'leiser Zug',          1.5,   5.4],
-   [ 2, 'leichte Brise',       3.3,  11.9],
-   [ 3, 'schwache Brise',      5.4,  19.4],
-   [ 4, 'mäßige Brise',        7.9,  28.4],
-   [ 5, 'frische Brise',      10.7,  38.5],
-   [ 6, 'starker Wind',       13.8,  49.7],
-   [ 7, 'steifer Wind',       17.1,  61.6],
-   [ 8, 'stürmischer Wind',   20.7,  74.5],
-   [ 9, 'Sturm',              24.4,  87.8],
-   [10, 'schwerer Sturm',     28.4, 102.2],
-   [11, 'orkanartiger Sturm', 32.6, 117.4],
-   [12, 'Orkan',              36.9, 132.8],
-   [13, 'Orkan',              41.4, 149.0],
-   [14, 'Orkan',              46.1, 166.0],
-   [15, 'Orkan',              50.9, 183.2],
-   [16, 'Orkan',              56.0, 201.6],
+# Beaufort   German            m/s   km/h  English
+  ([ 0, 'Stille',              0.2,   0.7, "calm"],
+   [ 1, 'leiser Zug',          1.5,   5.4, "light air"],
+   [ 2, 'leichte Brise',       3.3,  11.9, "light breeze"],
+   [ 3, 'schwache Brise',      5.4,  19.4, "gentle breeze"],
+   [ 4, 'mäßige Brise',        7.9,  28.4, "moderate breeze"],
+   [ 5, 'frische Brise',      10.7,  38.5, "fresh breeze"],
+   [ 6, 'starker Wind',       13.8,  49.7, "strong breeze"],
+   [ 7, 'steifer Wind',       17.1,  61.6, "moderate gale"],
+   [ 8, 'stürmischer Wind',   20.7,  74.5, "gale"],
+   [ 9, 'Sturm',              24.4,  87.8, "strong gale"],
+   [10, 'schwerer Sturm',     28.4, 102.2, "storm"],
+   [11, 'orkanartiger Sturm', 32.6, 117.4, "violent storm"],
+   [12, 'Orkan',              36.9, 132.8, "hurricane-force"],
+   [13, 'Orkan',              41.4, 149.0, "hurricane-force"],
+   [14, 'Orkan',              46.1, 166.0, "hurricane-force"],
+   [15, 'Orkan',              50.9, 183.2, "hurricane-force"],
+   [16, 'Orkan',              56.0, 201.6, "hurricane-force"],
   );
 
 sub wind_velocity {
@@ -49,17 +55,19 @@ sub wind_velocity {
     my($in_num, $in_unit) = _num_unit($in, 'm/s');
     $out_unit = _normalize_unit($out_unit);
 
-    if ($out_unit eq 'beaufort' || $out_unit eq 'text_de') {
-	my $out_col = ($out_unit eq 'beaufort' ? 0 : 1);
+    if ($out_unit eq 'beaufort' || $out_unit =~ m{^text_(?:de|en)$}) {
+	my $out_col = _unit_to_col($out_unit);
 	my $in_col;
 	if ($in_unit eq 'beaufort') {
-	    $in_col = 0;
+	    $in_col = INX_BEAUFORT;
 	} elsif ($in_unit eq 'text_de') {
-	    $in_col = 1;
+	    $in_col = INX_LOC_DE;
+	} elsif ($in_unit eq 'text_en') {
+	    $in_col = INX_LOC_EN;
 	} elsif ($in_unit eq 'm/s') {
-	    $in_col = 2;
+	    $in_col = INX_MS;
 	} else {
-	    $in_col = 3;
+	    $in_col = INX_KMH;
 	    if ($in_unit eq 'mi/h') {
 		$in_num = _mih_kmh($in_num);
 	    } elsif ($in_unit eq 'sm/h') {
@@ -71,7 +79,7 @@ sub wind_velocity {
 	my $last = 0;
 	foreach (@wind_table) {
 #warn "@$_";
-	    if ($in_col == 1) {
+	    if ($in_col == INX_BEAUFORT) {
 		if ($_->[$in_col] eq $in_num) {
 		    return $_->[$out_col];
 		}
@@ -84,13 +92,13 @@ sub wind_velocity {
 	    }
 	}
 	return undef; # XXXX
-    } elsif ($in_unit eq 'beaufort' || $in_unit eq 'text_de') {
-	my $in_col = ($in_unit eq 'text_de' ? 1 : 0);
+    } elsif ($in_unit eq 'beaufort' || $in_unit =~ m{^text_(?:de|en)$}) {
+	my $in_col = _unit_to_col($in_unit);
 	my $out_col;
 	if ($out_unit eq 'm/s') {
-	    $out_col = 2;
+	    $out_col = INX_MS;
 	} else {
-	    $out_col = 3;
+	    $out_col = INX_KMH;
 	}
 	my $out_num;
 	my $last = 0;
@@ -169,8 +177,17 @@ sub _normalize_unit {
     my $unit = shift;
     if    ($unit eq 'kn')          { 'sm/h' }
     elsif ($unit =~ /^beaufort$/i) { 'beaufort' }
-    elsif ($unit =~ /^text/i)      { 'text_de' } # XXX other langs
+    elsif ($unit =~ /^text_en/i)   { 'text_en' }
+    elsif ($unit =~ /^text/i)      { 'text_de' }
     else                           { $unit }
+}
+
+sub _unit_to_col {
+    my $unit = shift;
+    if    ($unit eq 'beaufort') { INX_BEAUFORT }
+    elsif ($unit eq 'text_de')  { INX_LOC_DE   }
+    elsif ($unit eq 'text_en')  { INX_LOC_EN   }
+    else                        { undef        }
 }
 
 sub _mih_kmh { $_[0] * 1.609344 }

@@ -1,46 +1,30 @@
-# Before `make install' is performed this script should be runnable with
-# `make test'. After `make install' it should work as `perl test.pl'
-
-######################### We start with some black magic to print on failure.
-
-# Change 1..1 below to 1..last_test_to_print .
-# (It may become useful if the test is moved to ./t subdirectory.)
-
-BEGIN { $| = 1; print "1..15\n"; }
-END {print "not ok 1\n" unless $loaded;}
+use strict;
 use FindBin;
 use lib "$FindBin::RealBin/../lib";
-use Met::Wind;
-$loaded = 1;
-print "ok 1\n";
 
-######################### End of black magic.
+use Test::More;
+my $tk_tests = 2;
+plan tests => 19 + $tk_tests;
 
-# Insert your test code below (better if it prints "ok 13"
-# (correspondingly "not ok 13") depending on the success of chunk 13
-# of the test code):
+use_ok 'Met::Wind', 'wind_velocity';
 
-$num = 2;
 foreach ([text_de => 'Stille', beaufort => 0],
 	 [text_de => 'Stille', 'm/s'    => 0.1],
+	 [text_en => 'calm',   beaufort => 0],
+	 [text_en => 'calm',  'm/s'    => 0.1],
 	 ['m/s'   => 17.2,     beaufort => 8],
 	 ['km/h'  => 117.4,    text_de  => 'orkanartiger Sturm'],
+	 ['km/h'  => 117.4,    text_en  => 'violent storm'],
 	 ['m/s'   => 10,       'km/h'   => 36],
 	 ['mi/h'  => 1,        'km/h'   => 1.609344],
 	 ['km/h'  => 1852,     'sm/h'   => 1000],
 	 ['km/h'  => 36,       'm/s'    => 10],
 	) {
-    if (wind_velocity([$_->[1], $_->[0]], $_->[2]) ne $_->[3]) {
-	print "not ";
-    }
-    print "ok $num\n";
-    $num++;
+    is wind_velocity([$_->[1], $_->[0]], $_->[2]), $_->[3],
+	"Check for $_->[1] $_->[0]] => $_->[2]";
     if ($_->[0] !~ /^text/) {
-	if (wind_velocity("$_->[1] $_->[0]", $_->[2]) ne  $_->[3]) {
-	    print "not ";
-	}
-	print "ok $num\n";
-	$num++;
+	is wind_velocity("$_->[1] $_->[0]", $_->[2]), $_->[3],
+	    "Check for $_->[1] $_->[0]] => $_->[2]";
     }
 }
 
@@ -94,14 +78,22 @@ if (0) {
     close W;
 }
 
-use Tk;
-$top = new MainWindow;
-$tl = Met::Wind::beaufort_table($top);
-$tl2 = Met::Wind::beaufort_table($top,
-				 -popover => undef,
-				 -command => sub { warn "@_" });
-$tl->update;
-unless ($ENV{INTERACTIVE}) {
-    $top->destroy;
+SKIP: {
+    skip "Tk is required for this test", $tk_tests
+	if !eval { require Tk; 1 };
+    my $mw = eval { MainWindow->new };
+    skip "Cannot create main window", $tk_tests
+	if !$mw;
+    $mw->geometry('+0+0');
+    my $tl = Met::Wind::beaufort_table($mw);
+    ok(Tk::Exists($tl), 'Beaufort table window exists');
+    my $tl2 = Met::Wind::beaufort_table($mw,
+					-popover => undef,
+					-command => sub { warn "@_" });
+    ok(Tk::Exists($tl2), 'Other beaufort table window exists');
+    $tl->update;
+    unless ($ENV{INTERACTIVE}) {
+	$mw->destroy;
+    }
+    Tk::MainLoop();
 }
-MainLoop;
