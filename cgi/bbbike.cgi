@@ -845,9 +845,10 @@ use vars qw(%handicap_speed);
 		   "q3" => 13,
 		   "q2" => 18,
 		   "q1" => 25,
+		   'Q'  => 8, # XXX this is for ferries, and should probably be finer granulated
 		  );
 
-@pref_keys = qw/speed cat quality ampel green specialvehicle unlit winter fragezeichen/;
+@pref_keys = qw/speed cat quality ampel green specialvehicle unlit ferry winter fragezeichen/;
 
 CGI->import('-no_xhtml');
 
@@ -3034,7 +3035,8 @@ sub set_cookie {
 }
 
 use vars qw($default_speed $default_cat $default_quality
-	    $default_ampel $default_routen $default_green $default_specialvehicle $default_unlit $default_winter
+	    $default_ampel $default_routen $default_green $default_specialvehicle
+	    $default_unlit $default_ferry $default_winter
 	    $default_fragezeichen);
 
 sub get_settings_defaults {
@@ -3052,6 +3054,7 @@ sub get_settings_defaults {
     }
     $default_specialvehicle = (defined $c{"pref_specialvehicle"} ? $c{"pref_specialvehicle"} : '');
     $default_unlit   = (defined $c{"pref_unlit"}   ? $c{"pref_unlit"}   : "");
+    $default_ferry   = (defined $c{"pref_ferry"}   ? $c{"pref_ferry"}   : "");
     $default_winter  = (defined $c{"pref_winter"}  ? $c{"pref_winter"}  : "");
     $default_fragezeichen = (defined $c{"pref_fragezeichen"} ? $c{"pref_fragezeichen"} : "");
 }
@@ -3064,6 +3067,7 @@ sub reset_html {
 	my(%strgreen)  = ("" => 0, "GR1" => 1, "GR2" => 2);
 	my(%strspecialvehicle) = ('' => 0, 'trailer' => 1, 'childseat' => 2);
 	my(%strunlit)  = ("" => 0, "NL" => 1);
+	my(%strferry)  = ("" => 0, "use" => 1);
 	my(%strwinter) = ("" => 0, "WI1" => 1, "WI2" => 2);
 
 	get_settings_defaults();
@@ -3078,6 +3082,7 @@ sub reset_html {
 		   qq'@{[defined $strgreen{$default_green} ? $strgreen{$default_green} : 0]},',
 		   qq'@{[defined $strspecialvehicle{$default_specialvehicle} ? $strspecialvehicle{$default_specialvehicle} : 0]},',
 		   qq'@{[defined $strunlit{$default_unlit} ? $strunlit{$default_unlit} : 0]},',
+		   qq'@{[defined $strferry{$default_ferry} ? $strferry{$default_ferry} : 0]},',
 		   qq'@{[defined $strwinter{$default_winter} ? $strwinter{$default_winter} : 0]}',
 		   qq'); enable_settings_buttons(); return false;">',
 		  );
@@ -3119,6 +3124,10 @@ sub settings_html {
 			      'value="' . $val . '" ' .
 			      ($default_unlit eq $val ? "selected" : "")
 			};
+    my $ferry_checked = sub { my $val = shift;
+			      'value="' . $val . '" ' .
+			      ($default_ferry eq $val ? "selected" : "")
+			  };
     my $winter_checked = sub { my $val = shift;
 			      'value="' . $val . '" ' .
 			      ($default_winter eq $val ? "selected" : "")
@@ -3190,6 +3199,11 @@ EOF
 <option @{[ $specialvehicle_checked->("childseat") ]}>@{[ M("Kindersitz mit Kind") ]}
 </select></td></tr>
 EOF
+    if ($is_beta) { # XXX should go into standard version some day!
+	print <<EOF;
+<tr><td>@{[ M("Fähren benutzen") ]}:</td><td><input type=checkbox name="pref_ferry" value="use" @{[ $default_ferry?"checked":"" ]}></td></tr>
+EOF
+    }
     if ($use_winter_optimization) {
 	print <<EOF;
 <tr>
@@ -3446,13 +3460,17 @@ sub search_coord {
     # Winteroptimierung aktiv ist (hauptsächlich wegen temp_blockings)
     if (1) {
 	if (!$handicap_net) {
+	    my @in_files = ('handicap_s');
 	    if ($scope eq 'region' || $scope eq 'wideregion') {
-		$handicap_net =
-		    new StrassenNetz(MultiStrassen->new("handicap_s",
-							"handicap_l"));
+		push @in_files, 'handicap_l';
+	    }
+	    if ($q->param('pref_ferry') && $q->param('pref_ferry') eq 'use') {
+		push @in_files, 'faehren';
+	    }
+	    if (@in_files == 1) {
+		$handicap_net = StrassenNetz->new(Strassen->new(@in_files));
 	    } else {
-		$handicap_net =
-		    new StrassenNetz(Strassen->new("handicap_s"));
+		$handicap_net = StrassenNetz->new(MultiStrassen->new(@in_files));
 	    }
 	    $handicap_net->make_net_cat;
 	}
@@ -3464,6 +3482,7 @@ sub search_coord {
 	    my $q_cat = "q$q";
 	    $penalty->{$q_cat} = 1 if !exists $penalty->{$q_cat} || $penalty->{$q_cat} < 1;
 	}
+
 	$extra_args{Handicap} =
 	    {Net => $handicap_net,
 	     Penalty => $penalty,
@@ -3950,6 +3969,9 @@ sub display_route {
 		    if ($scope eq 'region' || $scope eq 'wideregion') {
 			push @comment_files, "handicap_l";
 		    }
+		}
+		if ($q->param('pref_ferry') && $q->param('pref_ferry') eq 'use') {
+		    push @comment_files, 'comments_ferry';
 		}
 
 		for my $s (@comment_files) {
@@ -4589,6 +4611,20 @@ EOF
 	    $radwege_net->make_net_cat;
 	}
 
+	my %cat_to_title = ( NN => M("Weg ohne Kfz"),
+			     N  => M("Nebenstraße"),
+			     NH => M("wichtige Nebenstraße"),
+			     H  => M("Hauptstraße"),
+			     HH => M("wichtige Hauptstraße"),
+			     B  => M("Bundesstraße"),
+			     fz => M("unbekannte Strecke"),
+			     Q  => M("Fähre"),
+			   );
+	my %rw_to_title = ( RW => M("Radweg/spur"),
+			    BS => M("Busspur"),
+			    NF => M("Nebenfahrbahn"),
+			  );
+
   	my $odd = 0;
 	my $etappe_i = -1;
 	for my $etappe (@out_route) {
@@ -4661,20 +4697,10 @@ EOF
 			    $rw = $longest_rw || "";
 			}
 			if ($cat) {
-			    my $cat_title = { NN => "Weg ohne Kfz",
-					      N  => "Nebenstraße",
-					      NH => "wichtige Nebenstraße",
-					      H  => "Hauptstraße",
-					      HH => "wichtige Hauptstraße",
-					      B  => "Bundesstraße",
-					      fz => "unbekannte Strecke",
-					    }->{$cat};
+			    my $cat_title = $cat_to_title{$cat};
 			    my $rw_title;
 			    if ($rw) {
-				$rw_title = { RW => "Radweg/spur",
-					      BS => "Busspur",
-					      NF => "Nebenfahrbahn",
-					    }->{$rw};
+				$rw_title = $rw_to_title{$rw};
 			    }
 			    my $title = $cat_title;
 			    if ($rw_title) {
@@ -5767,6 +5793,12 @@ sub get_streets {
 		push @f, $addnet;
 	    }
 	}
+    }
+
+    # XXX do not use Strassen::StrassenNetz::add_faehre, so better
+    # display in route list is possible
+    if (defined $q->param('pref_ferry') && $q->param('pref_ferry') eq 'use') {
+	push @f, 'faehren';
     }
 
     # Should be last:

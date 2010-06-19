@@ -85,7 +85,7 @@ if (!@urls) {
 }
 
 my $ortsuche_tests = 11;
-plan tests => (192 + $ortsuche_tests) * scalar @urls;
+plan tests => (198 + $ortsuche_tests) * scalar @urls;
 
 my $hdrs;
 if (defined &Compress::Zlib::memGunzip && $do_accept_gzip) {
@@ -559,7 +559,6 @@ for my $cgiurl (@urls) {
 	    or diag $url;
     }
 
- XXX: 
     for my $imagetype (
 		       "gif", "png", "jpeg",
 		       "svg", "mapserver",
@@ -692,6 +691,38 @@ for my $cgiurl (@urls) {
 	$content = uncompr($res);
 	like($content, qr{\QDudenstr./Mehringdamm/Platz der Luftbrücke/Tempelhofer Damm\E}, "No simplification for Berlin crossings needed");
 	like($content, qr{\QThomas-Müntzer-Damm (Kleinmachnow)/Warthestr. (Teltow)\E}, "No simplification possible between different places");
+    }
+
+ XXX: 
+    {
+	my %common_args = ( startc=>'16720,6845',
+			    zielc=>'17202,8391',
+			    startname=>'Schnellerstr.',
+			    zielname=>'Hegemeisterweg (Karlshorst)',
+			    pref_speed=>20,
+			    pref_seen=>1,
+			  );
+	$req = HTTP::Request->new
+	    ('GET', "$action?" . CGI->new({%common_args,
+					   pref_ferry=>'use',
+					  })->query_string);
+	$res = $ua->request($req);
+	ok($res->is_success, 'Request with ferry=use')
+	    or diag(Dumper($res));
+	$content = uncompr($res);
+	like($content, qr{F11.*Baumschulenstr.*Wilhelmstrand}, 'Found use of ferry F11');
+	like($content, qr{Überfahrt.*kostet}, 'Found tariff information for ferry');
+
+	$req = HTTP::Request->new
+	    ('GET', "$action?" . CGI->new({%common_args,
+					   pref_ferry=>'',
+					  })->query_string);
+	$res = $ua->request($req);
+	ok($res->is_success, 'Request without ferry=use')
+	    or diag(Dumper($res));
+	$content = uncompr($res);
+	unlike($content, qr{F11.*Baumschulenstr.*Wilhelmstrand}, 'No use of ferry F11');
+	unlike($content, qr{Überfahrt.*kostet}, 'No tariff information for ferry');			    
     }
 
     {   # The "Müller Breslau"-Bug (from the Berlin PM wiki page)

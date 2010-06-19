@@ -121,6 +121,12 @@ a.ms:visited { color:#333333; }
   vertical-align:middle;
   text-align:center;
 }
+.catQ { /* ferry */
+  background-color:#a0a0ff;
+  background-image:url(../images/ferry.png);
+  background-repeat:no-repeat;
+  background-position:1px 1px;
+}
 
 .catcell {
   width:10px;
