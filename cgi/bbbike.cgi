@@ -5126,9 +5126,13 @@ EOF
     if (@weather_res) {
 	my(@res) = @weather_res;
 	print "<center><table border=0 bgcolor=\"#d0d0d0\">\n";
-	print "<tr><td colspan=2>${fontstr}<b>" . link_to_met() . "Aktuelle Wetterdaten ($res[0], $res[1])</a></b>$fontend</td>";
-	print "<tr><td>${fontstr}Temperatur:$fontend</td><td>${fontstr}$res[2] °C$fontend</td></tr>\n";
-	print "<tr><td>${fontstr}Windrichtung:$fontend</td><td>${fontstr}$res[4]$fontend&nbsp;</td></tr>\n";
+	print "<tr><td colspan=2>${fontstr}<b>" . link_to_met() . M("Aktuelle Wetterdaten") . " ($res[0], $res[1])</a></b>$fontend</td>";
+	print "<tr><td>${fontstr}" . M("Temperatur") . ":$fontend</td><td>${fontstr}$res[2] °C$fontend</td></tr>\n";
+	my $wind_dir = $res[4];
+	if ($lang eq 'en') {
+	    $wind_dir =~ s{O$}{E}; # the only difference between de and en: east/ost
+	}
+	print "<tr><td>${fontstr}" . M("Windrichtung") . ":$fontend</td><td>${fontstr}$wind_dir$fontend&nbsp;</td></tr>\n";
 	my($kmh, $windtext);
 	eval { local $SIG{'__DIE__'};
 	       require Met::Wind;
@@ -5138,9 +5142,9 @@ EOF
 		   $kmh = sprintf("%d",$kmh); # keine Pseudogenauigkeit, bitte
 	       }
 	       $windtext = Met::Wind::wind_velocity([$res[5], 'm/s'],
-						    'text_de');
+						    $lang eq 'en' ? 'text_en' : 'text_de');
 	   };
-	print "<tr><td>${fontstr}Windgeschwindigkeit:$fontend</td><td>${fontstr}";
+	print "<tr><td>${fontstr}" . M("Windgeschwindigkeit") . ":$fontend</td><td>${fontstr}";
 	if (defined $kmh) {
 	    print "$kmh km/h";
 	} else {
