@@ -932,6 +932,9 @@ for my $osm_file (@osm_files) {
 		    } elsif ($surface eq 'concrete') {
 			$quality_cat = 'Q0';
 			@quality_name = 'Beton';
+		    } elsif ($surface eq 'concrete_plates') {
+			$quality_cat = 'Q2+';
+			@quality_name = 'Plattenweg';
 		    } elsif ($surface eq 'cobblestone') {
 			$quality_cat = 'Q2';
 			@quality_name = 'Kopfsteinpflaster';
