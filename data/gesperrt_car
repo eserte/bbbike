@@ -997,8 +997,8 @@ Potsdamer Str. -> Mittelstr.: Mittelstreifen	3::igndisp 161,3062 50,3031 104,280
 Am Heidehof	1 -1410,2726 -1571,2669 -1612,2785
 Eisenbahnstr. (Fürstenwalde)	1 55401,-3599 55456,-4023 55447,-4247
 Krebsgang	1 14693,7168 14792,7192
-Methfesselstr.: Durchfahrt verboten (aber baulich möglich)	3 9150,9152 9125,9078 9115,9046
-Methfesselstr.: Durchfahrt verboten (aber baulich möglich)	3 9115,9046 9125,9078 9150,9152
+Methfesselstr.: Durchfahrt gesperrt (Poller)	3 9150,9152 9125,9078 9115,9046
+Methfesselstr.: Durchfahrt gesperrt (Poller)	3 9115,9046 9125,9078 9150,9152
 Neue Filandastr./Filandatr.	3nocross::ignrte 5687,5486 5671,5389 5659,5313
 Filandastr. -> Neue Filandastr.: Neue Filandastr./Filandatr.	3::igndisp 5637,5401 5671,5389 5687,5486
 Neue Filandastr. -> Filandastr.: Neue Filandastr./Filandatr.	3::igndisp 5659,5313 5671,5389 5637,5401
@@ -1007,3 +1007,7 @@ Liverpooler Str. -> Müllerstr.: Mittelstreifen	3::igndisp 5995,16836 5937,16784 
 Müllerstr. -> Liverpooler Str.: Mittelstreifen	3::igndisp 5900,16817 5937,16784 5995,16836
 Querweg durch die Dauerkolonie Togo -> Müllerstr.: Mittelstreifen	3::igndisp 5712,16604 5900,16817 5777,16924
 Müllerstr. -> Querweg durch die Dauerkolonie Togo: Mittelstreifen	3::igndisp 5937,16784 5900,16817 5712,16604
+Zobtener Str.: Durchfahrt gesperrt (Poller)	3 16734,9990 16539,10097 16148,10329
+Zobtener Str.: Durchfahrt gesperrt (Poller)	3 16148,10329 16539,10097 16734,9990
+Waldowallee - Am Carlsgarten: Durchfahrt gesperrt (Betonblöcke)	3 19558,8064 19504,8003 19468,7962
+Waldowallee - Am Carlsgarten: Durchfahrt gesperrt (Betonblöcke)	3 19468,7962 19504,8003 19558,8064

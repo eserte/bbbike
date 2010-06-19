@@ -1066,6 +1066,7 @@ Stromstr.: unpassierbarer Mittelstreifen	3nocross 6183,13083 6165,12985 6156,129
 Märkische Allee: Linksabbiegen verboten	3nocross 20109,16305 20219,16523 20339,16752
 #: XXX: wahrscheinlich (ich wurde durch einen anonymen Kommentar bestätigt)
 Märkische Allee: Linksabbiegen verboten	3nocross 20512,17101 20691,17463 20717,17516 20843,17745 20889,17838 20912,17872 21009,18055
+Märkische Allee: Mittelstreifen	3nocross 19896,11688 19918,11891 19956,12239
 Falkenberger Chaussee: Linksabbiegen wegen Straßenbahn nicht möglich	3nocross 17400,17790 17703,17990 17843,18078
 Stralauer Allee: unbequemes Abbiegen	3nocross 13332,10832 13389,10808 13496,10763 13596,10722
 Stralauer Allee: unbequemes Abbiegen	3nocross 13596,10722 13678,10685 13779,10642
@@ -1344,6 +1345,7 @@ tragen (Treppe)	0:30 89344,-5795
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+Schranke	BNP:3::trailer=no 17826,9630
 #: by: hannes Peters:
 #: note: "mit Anhänger eng, aber langsam passierbar"
 #: confirmed_by: srt

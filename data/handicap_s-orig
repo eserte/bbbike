@@ -40,6 +40,8 @@ Rathausstr.: Baustelle vor dem Roten Rathaus, eng	q3::inwork 10601,12521 10704,1
 Jägerstr.: Einbahnstraße	q4::inwork; 9394,11996 9201,11968
 #: last_checked: 2010-06-18
 Taubenstr.: Einbahnstraße	q4::inwork; 9406,11899 9208,11872
+#: last_checked: 2010-06-19
+Am Carlsgarten: Bauarbeiten	q4::inwork 19468,7962 19372,8012 19334,8046
 # 
 #: temporary ^^^
 ######################################################################
@@ -493,7 +495,7 @@ Grazer Platz: Fußgänger, Bordsteine	q2 6546,6720 6530,6786 6529,6798
 (Nordmannzeile - Vorarlberger Damm): Fußgänger	q1 7220,7442 7314,7451
 Achenbachpromenade: Fußgänger, Radfahren erlaubt	q1 8763,8780 8748,8587 8715,8459
 Wildensteiner Str.: enge Straße	q1 18528,8331 18416,8163 18365,8094 18333,8059
-(Am Carlsgarten - Waldowallee): enger Abschnitt under der Bahnbrücke	q2 19468,7962 19558,8064
+(Am Carlsgarten - Waldowallee): enger Abschnitt under der Bahnbrücke	q2 19468,7962 19504,8003 19558,8064
 Linienstr./Oranienburger Str.: Fußgänger	q2 9225,13389 9296,13397
 Fontanestr.: zwei Schwellen, können umfahren werden	q1+ 18240,6845 18254,6679
 Kiautschoustr.: Fußgänger, Bordsteine	q3 6837,14848 6853,14854
@@ -672,6 +674,8 @@ Maipfad: enge Straße	q1+ 23569,10693 23715,10665
 Pfingstweg: enge Straße	q1+ 23596,10848 23668,10823 23750,10797
 Osterpfad: enge Straße	q1+ 23668,10823 23639,10743
 (Kressenweg - Waldenburger Str.): eng, Fußgänger	q2 23522,10456 23468,10423 23431,10435 23193,10426 23024,10455 22978,10451
+(Weg entlang der Bahnstrecke): eng	q2 17425,9605 17438,9619 17474,9603 17694,9600 17826,9630 17866,9639
+Kurzer Weg (Karlshorst): kurvig und eng	q2 20334,7753 20451,7744 20503,7848
 ######################### User Contributions #################################
 #: by: Michael Kiekbusch
 #: corrected_by: srt/policy (q4 -> q3-)

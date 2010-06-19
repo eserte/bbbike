@@ -16,6 +16,7 @@ Varziner Platz: Bauarbeiten, es muss geschoben werden	q4::inwork 5458,7866 5492,
 Rathausstr.: Baustelle vor dem Roten Rathaus, eng	q3::inwork 10601,12521 10704,12595
 J‰gerstr.: Einbahnstraﬂe	q4::inwork; 9394,11996 9201,11968
 Taubenstr.: Einbahnstraﬂe	q4::inwork; 9406,11899 9208,11872
+Am Carlsgarten: Bauarbeiten	q4::inwork 19468,7962 19372,8012 19334,8046
 Wuhlewanderweg: steiler Anstieg, Fuﬂg‰nger	q4; 21998,12204 21970,12153
 Wuhlewanderweg: steiles Gef‰lle, Fuﬂg‰nger	q4; 21970,12153 21998,12204
 Caroline-Michaelis-Str.: Bordsteine	q3 9125,13973 9151,13941
@@ -427,7 +428,7 @@ Grazer Platz: Fuﬂg‰nger, Bordsteine	q2 6546,6720 6530,6786 6529,6798
 (Nordmannzeile - Vorarlberger Damm): Fuﬂg‰nger	q1 7220,7442 7314,7451
 Achenbachpromenade: Fuﬂg‰nger, Radfahren erlaubt	q1 8763,8780 8748,8587 8715,8459
 Wildensteiner Str.: enge Straﬂe	q1 18528,8331 18416,8163 18365,8094 18333,8059
-(Am Carlsgarten - Waldowallee): enger Abschnitt under der Bahnbr¸cke	q2 19468,7962 19558,8064
+(Am Carlsgarten - Waldowallee): enger Abschnitt under der Bahnbr¸cke	q2 19468,7962 19504,8003 19558,8064
 Linienstr./Oranienburger Str.: Fuﬂg‰nger	q2 9225,13389 9296,13397
 Fontanestr.: zwei Schwellen, kˆnnen umfahren werden	q1 18240,6845 18254,6679
 Kiautschoustr.: Fuﬂg‰nger, Bordsteine	q3 6837,14848 6853,14854
@@ -593,6 +594,8 @@ Maipfad: enge Straﬂe	q1 23569,10693 23715,10665
 Pfingstweg: enge Straﬂe	q1 23596,10848 23668,10823 23750,10797
 Osterpfad: enge Straﬂe	q1 23668,10823 23639,10743
 (Kressenweg - Waldenburger Str.): eng, Fuﬂg‰nger	q2 23522,10456 23468,10423 23431,10435 23193,10426 23024,10455 22978,10451
+(Weg entlang der Bahnstrecke): eng	q2 17425,9605 17438,9619 17474,9603 17694,9600 17826,9630 17866,9639
+Kurzer Weg (Karlshorst): kurvig und eng	q2 20334,7753 20451,7744 20503,7848
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q3 11805,19071 11937,19175
 Ebersstr.: Sch¸ler	q2 7245,8583 7292,8631
 Straﬂe 103 (Niederschˆnhausen): enge Straﬂe	q1 10914,20065 11051,19789

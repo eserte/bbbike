@@ -2460,7 +2460,7 @@ userdel	q3::inwork 9444,11616 9432,11702
          'text' => 'Nuthetal: Kanal-und Straßenbauarbeiten L 771 OD Saarmund, 21.09.2009 bis 30.10.2010 ',
          'from' => 1269162391,
          'id' => 2026,
-         'data' => 'userdel	q4::inwork -8457,-11261 -8332,-10598
+         'data' => 'userdel	q4::inwork -8433,-11290 -8293,-10599
 ',
          'type' => 'handicap'
        },

@@ -642,7 +642,7 @@ EOF
        text  => 'L 73; (B246-Fresdorf-Wildenbruch-B2); OD Wildenbruch, zw. Potsdamer Str. u. Dorfstr.; Straßenbauarbeiten; Vollsperrung; 23.08.2004-29.08.2004',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 -12325,-13958 -12177,-13787
+userdel	q4 -12283,-13901 -12154,-13801
 EOF
      },
      { from  => undef, # 
@@ -770,7 +770,7 @@ EOF
        text  => 'L 771; (Gröben-Saarmund); Autobahnbrücke südl. Saarmund Brückenabriss u. -neubau Vollsperrung 08.09.2004-10.09.2004 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 -8879,-12309 -8457,-11261
+userdel	2 -8879,-12309 -8433,-11290
 EOF
      },
      { from  => 1094176800, # 2004-09-03 04:00
@@ -1463,11 +1463,11 @@ EOF
        text  => 'Im Zeitraum vom 14.02.2005 bis 30.04.2005 besteht für die L 73 zwischen Langerwisch und Wildenbruch Vollsperrung auf Grund von Bauarbeiten. ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 -12156,-13509 -12221,-13124
-userdel	2 -12156,-13509 -12177,-13787
-userdel	2 -12372,-12676 -12221,-13124
-userdel	2 -12372,-12676 -12443,-12223 -12459,-12120
-userdel	2 -12337,-10735 -12433,-11898 -12459,-12120
+userdel	2 -12104,-13586 -12221,-13124
+userdel	2 -12104,-13586 -12154,-13801
+userdel	2 -12344,-12547 -12221,-13124
+userdel	2 -12344,-12547 -12373,-12221 -12373,-12118
+userdel	2 -12305,-10732 -12369,-11903 -12373,-12118
 EOF
      },
      { from  => 1108684644, # 2005-02-18 00:57
@@ -2177,7 +2177,7 @@ EOF
        text  => 'L 793; (Schönhagen-Ludwigsfelde); zw. Abzw. Gröben und Siethen Straßenbauarbeiten Vollsperrung 29.06.2005-02.09.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 -2542,-13926 -3801,-14252
+userdel	2 -2542,-13926 -3842,-14180
 EOF
      },
      { from  => 1119909600, # 2005-06-28 00:00
@@ -2185,7 +2185,7 @@ EOF
        text  => 'L 793; (Schönhagen-Ludwigsfelde); zw. OD Jütchendorf und Abzw. Gröben Straßenbauarbeiten Vollsperrung 29.06.2005-02.09.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 -3694,-14508 -4077,-14595
+userdel	2 -3717,-14467 -4077,-14595
 userdel	2 -4504,-14978 -4077,-14595
 EOF
      },
@@ -6104,7 +6104,7 @@ EOF
        text  => 'K 6904 Gröben-KG-K6903 Nudow zw. Abzw. Nudow und Fahlhorst Bau Eisenbahnüberführung Vollsperrung 24.07.2006-30.03.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork -6631,-9207 -6181,-10412
+userdel	2::inwork -6631,-9207 -6223,-10366
 EOF
      },
      { from  => 1159826400, # 2006-10-03 00:00
@@ -14449,7 +14449,7 @@ EOF
        text  => 'K 6905 Langerwisch - Wilhelmshorst - B 2 OD Langerwisch, Abzw. Wilhelmshorst Straßenbau Vollsperrung 13.06.2009-13.06.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork -12312,-10337 -12337,-10735
+userdel	q4::inwork -12312,-10337 -12305,-10732
 EOF
      },
      { from  => 1250200800, # 2009-08-14 00:00
@@ -14457,7 +14457,7 @@ EOF
        text  => 'L 077 Langerwisch - Saarmund OD Langerwisch, zw. Nahkauf u. Beelitzer Str. Straßenbau Vollsperrung 15.08.2009-30.08.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork -12915,-10753 -12337,-10735
+userdel	q4::inwork -12915,-10753 -12305,-10732
 EOF
      },
      { from  => 1244584800, # 2009-06-10 00:00
@@ -17207,7 +17207,7 @@ EOF
        type  => 'handicap',
        source_id => 'LSW-SG33-P09598-1',
        data  => <<EOF,
-userdel	q4::inwork -8457,-11261 -8332,-10598
+userdel	q4::inwork -8433,-11290 -8293,-10599
 EOF
      },
      { from  => 1238191200, # 2009-03-27 23:00
@@ -17287,7 +17287,7 @@ EOF
        type  => 'handicap',
        source_id => '86901199',
        data  => <<EOF,
-userdel	q4::inwork -12915,-10753 -12337,-10735
+userdel	q4::inwork -12915,-10753 -12305,-10732
 EOF
      },
      { from  => 1270235498, # 2010-04-02 21:11
