@@ -1,45 +1,67 @@
 #:# -*- coding: iso-8859-1 -*-
 #: title: Fähren
 #:
-#: as_of: 2002-07
-Fährzeiten der Havelfähre: Sommer: Mo-So 6-22h; Winter: Mo-Fr 6-19h, Sa-So 9-18h; Wartezeit bis 15 Minuten; Preis 1 EUR für eine Person mit Fahrrad	CS -26784,5756 -26840,5684
-#XXX del: by: http://www.binnenfaehren.de/ Sacrow - Glienicker Brücke: Fährzeiten Sacrow: April bis August: di-fr 11-19 Uhr stündlich, sa +so 17-20 Uhr, September und Oktober: mi-fr 11-17, sa + so 11-18 Uhr stündlich. Fährzeiten Krampnitz: April bis Oktober sa+so 10:30 und 13:30 ab Glienicker Brücke, 12 und 15 Uhr ab Krampnitz	CS -10086,1886 -10218,1628 -10746,876 -10826,469
+# 
+#: by: http://www.faszination-havel.de/faehren-167-24-1-11-15.html
+#: by: http://www.caputher-touristencenter.de/seite16.htm
+Fähre Caputh (Havel): pro Person 0,50 Euro, pro Fahrrad 0,50 Euro; Fährzeiten im Sommer 6 bis 22 Uhr; Fährzeiten im Winter Mo-Fr 6 bis 20 Uhr, am Wochenende ab 7 Uhr	CS -17643,-7028 -17728,-6975
+# 
+#: as_of: 2006-04
+#: by: http://www.faszination-havel.de/faehren-167-24-1-11-15.html
+#: by: http://www.ketzin.info/index.php/F%C3%A4hre
+Fähre Ketzin (Havel): Fährzeiten im Sommer Mo-So 6-20 Uhr; Fährzeiten im Winter Mo-Fr 6.00-9:00 und 15:00-19:00 Uhr, Sa/So 9:00-18:00 Uhr; Preis 1 EUR für eine Person mit Fahrrad	CS -26784,5756 -26840,5684
+# 
 #: url: http://www.potsdamer-wassertaxi.de/ vvv
 #: as_of: 2010 vvv
-Meierei - Sacrow: Potsdamer Wassertaxi, im Sommer am Wochenende 6x täglich, pro Person 3 Euro, pro Fahrrad 1 Euro	CS -12149,1436 -12057,1530 -11789,1502 -11323,1330 -10320,1494 -10098,1745 -10086,1886
-Sacrow - Krughorn: Potsdamer Wassertaxi, im Sommer am Wochenende 6x täglich,pro Person 3 Euro, pro Fahrrad 1 Euro	CS -10086,1886 -10044,1567
-Park Babelsberg - Schiffbauergasse: Potsdamer Wassertaxi, im Sommer am Wochenende 6x täglich,pro Person 3 Euro, pro Fahrrad 1 Euro	CS -11189,-805 -11355,-664 -11666,-728
+Meierei - Sacrow: Potsdamer Wassertaxi; im Sommer am Wochenende 6x täglich; pro Person 3 Euro, pro Fahrrad 1 Euro	CS -12149,1436 -12057,1530 -11789,1502 -11323,1330 -10320,1494 -10098,1745 -10086,1886
+Sacrow - Krughorn: Potsdamer Wassertaxi; im Sommer am Wochenende 6x täglich; pro Person 3 Euro, pro Fahrrad 1 Euro	CS -10086,1886 -10044,1567
+Park Babelsberg - Schiffbauergasse: Potsdamer Wassertaxi; im Sommer am Wochenende 6x täglich; pro Person 3 Euro, pro Fahrrad 1 Euro	CS -11189,-805 -11355,-664 -11666,-728
 #: as_of ^^^
 #: url: ^^^
-F1 (Auf dem Kiewitt - Hermannswerder): im 15-Minuten-Abstand von ca. 7 bis 18 Uhr	CS -14107,-2278 -14081,-2516
-#: by: http://berlin.bahninfo.de/inselwannsee.html
-F10 (Wannsee - Kladow): stündlich werktags zwischen 6 und 19 Uhr (im Winter bis 18 Uhr), samstag von 7 bis 19 Uhr und am Sonntag von 10 bis 18 Uhr (im Winter bis 16 Uhr), BVG-Tarif, ca. 20 Minuten Fahrzeit	CS -4892,1487 -5029,1713 -5171,2450 -5285,2795 -5519,3167 -6605,4019 -6797,4562 -6842,4744
+# 
+#: as_of: 2010-04
+#: by: http://www.swp-potsdam.de/swp/media/05-verkehr_1/fahrplaene_pdf/fahrplanwechsel_1_4_10/F1_2010-04-01_taeglich_Stand_2010-01-28.pdf
+F1 (Auf dem Kiewitt - Hermannswerder): im 15-Minuten-Abstand von ca. 7 bis 18 Uhr; VBB-Tarif	CS -14107,-2278 -14081,-2516
+# 
+#: by: http://www.fahrinfo-berlin.de/Fahrinfo/bin/tb/query.bin/S_wannsee_bhf_beAlt_kladow_berli.pdf?pathinfo=/dn&dwn=sc/scm2utgcgiycygw8_1_1.pdf
+#: as_of: 2010-06
+F10 (Wannsee - Kladow): stündlich werktags zwischen 6 und 19 Uhr (im Winter bis 18 Uhr), am Samstag von 7 bis 19 Uhr und am Sonntag von 10 bis 20 Uhr (im Winter bis 16 Uhr); BVG-Tarif; ca. 20 Minuten Fahrzeit	CS -4892,1487 -5029,1713 -5171,2450 -5285,2795 -5519,3167 -6605,4019 -6797,4562 -6842,4744
 #: as_of: 2010-05
 F11 (Baumschulenstr. - Wilhelmstrand): Mo-Fr von ca. 6 bis 20 Uhr im 10/20-Minuten-Abstand; Sa/So von ca. 9 bis 20 Uhr im 20/30-Minuten-Abstand. Die Überfahrt kostet 1,30 Euro pro Person und 1 Euro pro Fahrrad/Kind bzw. BVG-Tarif.	CS 16649,7570 16796,7715
-F12 (Dahme): von ca. 6 bis 19 Uhr alle 10 bis 20 Minuten, Sa/So im 20/30-Minuten-Abstand	CS 22756,1524 23068,1618
-F21 (Krampe): stündlich von ca. 10 bis 18 Uhr, Mo keine Fahrten, Saisonbetrieb (ca. April - Anfang Oktober)	CS 27089,-2263 27300,-2138 27528,-2056 27613,-1911 27531,-1745 27397,-1655 27323,-1671
-F21 (Krampe): stündlich von ca. 10 bis 18 Uhr, Mo keine Fahrten, Saisonbetrieb (ca. April - Anfang Oktober)	CS 27323,-1671 27517,-1667 27637,-1556 27758,-1358
-F23: nicht montags, ca. stündlich von 10 bis 18 Uhr, VBB-Tarif, Saisonbetrieb (ca. April - Anfang Oktober)	CS 29406,3776 29367,3690 29395,3572 29297,3456 29131,3489 29084,3331 29113,3324 29195,3191 29553,2934 29569,2909 29604,2931 29797,2918 29945,3001 29959,3031
-F24 (Spree): nicht montags, ca. stündlich von 11 bis 19 Uhr, VBB-Tarif, Saisonbetrieb (ca. April - Anfang Oktober)	CS 29959,3031 29968,2986
+#: as_of: 2010-06
+F12 (Dahme): von ca. 6 bis 19 Uhr alle 10 bis 20 Minuten, Sa/So im 20/30-Minuten-Abstand; BVG-Tarif	CS 22756,1524 23068,1618
+#: by: http://www.fahrinfo-berlin.de/Fahrinfo/bin/tb/query.bin/Krampenburg_berlZum_seeblick_ber.pdf?pathinfo=/dn&dwn=vk/vkmectkcgiytwiw8_1_1.pdf
+#: as_of: 2010-06
+F21 (Krampe): Mo keine Fahrten; stündlich von ca. 10 bis 18 Uhr; Saisonbetrieb (ca. April - Anfang Oktober); BVG-Tarif; ca. 14 Minuten Fahrzeit	CS 27089,-2263 27300,-2138 27528,-2056 27613,-1911 27531,-1745 27397,-1655 27323,-1671
+#XXX del: F21 (Krampe): stündlich von ca. 10 bis 18 Uhr, Mo keine Fahrten, Saisonbetrieb (ca. April - Anfang Oktober)	CS 27323,-1671 27517,-1667 27637,-1556 27758,-1358
+#: by: http://www.fahrinfo-berlin.de/Fahrinfo/bin/tb/query.bin/MueggelwerderwegKruggasse_berlin.pdf?pathinfo=/dn&dwn=45/45iamtmciihp9iw8_1_1.pdf
+#: as_of: 2010-06
+F23: nicht montags, ca. stündlich von 10 bis 18 Uhr; Saisonbetrieb (ca. April - Anfang Oktober); BVG-Tarif; ca. 25 Minuten Fahrzeit zwischen Müggelwerderweg und Kruggasse	CS 29406,3776 29367,3690 29395,3572 29297,3456 29131,3489 29084,3331 29113,3324 29195,3191 29553,2934 29569,2909 29604,2931 29797,2918 29945,3001 29959,3031
+#: by: http://www.fahrinfo-berlin.de/Fahrinfo/bin/tb/query.bin/Spreewiesen_berlKruggasse_berlin.pdf?pathinfo=/dn&dwn=8u/8ug2stkciiytyi4c_1_1.pdf
+#: as_of: 2010-06
+F24 (Spree): nicht montags, ca. stündlich von 11 bis 19 Uhr; Saisonbetrieb (ca. April - Anfang Oktober); BVG-Tarif; ca. 5 Minuten Fahrzeit	CS 29959,3031 29968,2986
 #: as_of: 2008-07
 Karniner Fähre: Die Fähre verkehrt vom 1.Mai bis 3.Oktober (11-17 Uhr) regelmäßig zwischen Kamp und Karnin (Zollhafen sowie Naturhafen). Der Fährmann Herr Christof Reimann kann unter 0177-2834504 erreicht werden. Die Überfahrt kostet 5 Euro für Person und 2,50 Euro pro Fahrrad/Kind/Anhänger.	CS 38674,160390 37644,160344 38049,160420 38325,160573
-#: as_of: 2007-06 vvv
+#
 #: by: Tagesspiegel-Beitrag; korrigierte Preise, Fahrzeiten und Telefonnummer laut http://www.suedwestbezirk.de/insel.html: vvv
-Valentinswerder - Tegelort: pro Person 0,80 Euro, pro Fahrrad 0,20 Euro, halbstündlich zwischen 6 und 20 Uhr (ab Valentinswerder zehn Minuten nach der vollen und fünf Minuten nach der halben Stunde), Tel. 030-3356835	CS -1557,17415 -1581,17488 -1575,17651 -1694,17839
-Saatwinkel - Valentinswerder: pro Person 0,80 Euro, pro Fahrrad 0,20 Euro, stündlich (ab Saatwinkel zur vollen Stunde), Tel. 030-3356835	CS -825,17058 -1196,17045 -1548,17237 -1592,17328 -1557,17415
-Aalemannufer: weniger als 1,30 Euro pro Person+Fahrrad, Fahrzeiten bei Bedarf zwischen 6 und 20 Uhr, Tel. 030-3356835	CS -1989,18378 -1834,18414
-#: by: ^^^
+#: as_of: 2007-06 vvv
+Valentinswerder - Tegelort: pro Person 0,80 Euro, pro Fahrrad 0,20 Euro; halbstündlich zwischen 6 und 20 Uhr (ab Valentinswerder zehn Minuten nach der vollen und fünf Minuten nach der halben Stunde); Tel. 030-3356835	CS -1557,17415 -1581,17488 -1575,17651 -1694,17839
+Saatwinkel - Valentinswerder: pro Person 0,80 Euro, pro Fahrrad 0,20 Euro; stündlich (ab Saatwinkel zur vollen Stunde); Tel. 030-3356835	CS -825,17058 -1196,17045 -1548,17237 -1592,17328 -1557,17415
 #: as_of: ^^^
+#: by: http://vilmoskoerte.wordpress.com/2007/04/06/autofaehre-tegeler-see-in-berlin/ (Preis)
+#: as_of: 2007-04
+Aalemannufer: 0,70 Euro pro Person mit Fahrrad; Fahrzeiten bei Bedarf im Sommer zwischen 6 und 20 Uhr, im Winter zwischen 6 und 19 Uhr, So ab 8 Uhr; Tel. 030-3356835	CS -1989,18378 -1834,18414
+#: by: ^^^
+#
 #: as_of: 2007-06
-Ueckermünde - Kamminke: Telefon 039771-22426, ab Ueckermünde 8.10, 15.10, ab Kamminke 10.00 (nicht Di & Do), 16.40 (Do auch 20.00), Fr keine Fahrten, Fahrzeit ca. 85 min, 12,50 Euro pro Person, 5 Euro pro Fahrrad	CS 51569,148772 51617,148854 51599,149009 51468,149262 51480,149326 51652,149541 51861,149731 52254,149954 52364,150079 52468,150198 52562,150273 52897,150432 54232,151154 60953,161075 61965,163336 61886,163467
-#: according_to: http://www.suedwestbezirk.de/insel.html vvv
-Fähre nach Lindwerder: Fahrpreis Erwachsene 1 Euro, Fahrzeiten bei Bedarf außer montags, Tel. 030-8036584	CS -3669,6573 -3799,6578
+Ueckermünde - Kamminke: Telefon 039771-22426; ab Ueckermünde 8.10, 15.10, ab Kamminke 10.00 (nicht Di & Do), 16.40 (Do auch 20.00), Fr keine Fahrten; Fahrzeit ca. 85 min; 12,50 Euro pro Person, 5 Euro pro Fahrrad	CS 51569,148772 51617,148854 51599,149009 51468,149262 51480,149326 51652,149541 51861,149731 52254,149954 52364,150079 52468,150198 52562,150273 52897,150432 54232,151154 60953,161075 61965,163336 61886,163467
+#: by: http://www.suedwestbezirk.de/insel.html vvv
+Fähre nach Lindwerder: Fahrpreis Erwachsene 1 Euro; Fahrzeiten bei Bedarf außer montags; Tel. 030-8036584	CS -3669,6573 -3799,6578
 #: by: http://www.berlin-tourist-information.de/cgi-bin/sehenswertes.pl?id=13520
 #: as_of: 2008-08
-Pfaueninsel: Fahrpreis Erwachsene 2 Euro, ermäßigt 1 Euro, Fahrzeiten zwischen Mai und August von 8 bis 21 Uhr und nach Bedarf, ansonsten seltener, Tel. 030-80109742	CS -8564,2276 -8649,2350
-#: according_to: ^^^
-#: by: Andreas Titz:
-Fähre Grabowsee: täglich von 8 bis 20 Uhr; Erwachsene und Fahrräder je 0,50 EUR, Kinder 0,25 EUR	CS 1860,42884 1907,42835
+Pfaueninsel: Fahrpreis Erwachsene 2 Euro, ermäßigt 1 Euro; Fahrzeiten zwischen Mai und August von 8 bis 21 Uhr und nach Bedarf, ansonsten seltener; Tel. 030-80109742	CS -8564,2276 -8649,2350
+#: by: ^^^
+#XXX del: Fähre fährt nicht mehr (http://www.radpartie.de/blog/wordpress/radweg-berlin-kopenhagen-keine-faehre, http://www.rad-spannerei.de/blog/2010/03/24/faehre-friedrichsthal-verkehrt-nicht-mehr/) #: by: Andreas Titz: Fähre Grabowsee: täglich von 8 bis 20 Uhr; Erwachsene und Fahrräder je 0,50 EUR, Kinder 0,25 EUR	CS 1860,42884 1907,42835
 #: by: http://www.elberadweg.de/content/faehrverbindungen.php?lg=de
 Fähre Prettin: Mai-Sep: Mo-Fr 5.00-21.00, Sa, So 6.30-20.00; Okt-Apr: Mo-Fr 5.00-20.00; Sa, So 6.30-20.00; pro Person 0,50 EUR, bis 6 frei, pro Fahrrad 0,50 EUR	CS -22145,-84746 -22231,-84833
 #: as_of: 2007-08
