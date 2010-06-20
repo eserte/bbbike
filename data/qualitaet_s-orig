@@ -3642,6 +3642,7 @@ Jean-Calas-Weg: asphaltiert	Q0 11991,22885 11551,23221 11536,23231 11459,23295
 Ernst-Haeckel-Str.: guter Asphalt	Q0 24365,12712 24421,12887 24438,12929 24462,12975 24502,13049 24609,13219 24746,13384 24833,13484 24880,13539 24910,13590 24938,13688
 #: note: "leichtes" Kopfsteinpflaster
 Stubenrauchstr. (Zehlendorf): Kopfsteinpflaster	Q2 1368,1991 1333,2083 1209,2371 1121,2583 1036,2781
+#: confirmed_by: Thomas Döring:
 Forster Str. (Hellersdorf): guter Asphalt	Q0 25237,14627 25365,14667 25397,14563 25418,14538
 Biebersdorfer Weg: guter Asphalt	Q0 26780,-1468 26663,-1443 26566,-1406 26495,-1366 26448,-1326
 #: confirmed_by: srt
@@ -10115,8 +10116,10 @@ Luisenstr. (Lichterfelde, Lankwitz): schlechtes Kopfsteinpflaster	Q3 5788,2274 5
 #: by: Jutta Marquark:
 #: note "glaube ich"
 Chrysanthemenstr.: Asphalt	Q0 14137,13987 14241,13941
-#: by: Claus Wiedenhöft:
+#: by: Claus Wiedenhöft: vvv
 Weißkugelweg: Verbundsteinpflaster	Q1 10543,3069 10533,3001
+Weißkugelweg: asphaltiert	Q0 10543,3069 10560,3182
+#: by: ^^^
 #: by: Kai Lilie:
 Kolibriweg: guter Beton	Q1 14034,3390 13822,3494
 #: by: Sabine Pechstein: vvv
@@ -10751,6 +10754,12 @@ Heppenheimer Weg: mäßiges Verbundsteinpflaster	Q2+ -500,4409 -459,4422 -404,4442
 #: by: Christoph (kai...):
 #: note: "Bordsteinkanten", q1 ignoriert
 Sarntaler Weg: guter Beton	Q0 5836,509 5742,671 5710,726 5781,770 5781,800
+#: by: Thomas (dubau...):
+Zerbster Str. (Hellersdorf): guter Beton	Q0- 24451,15181 24413,15372 24357,15429 24346,15505 24324,15519 24169,15497
+#: by: c.keusch:
+Jaehnstr.: guter Asphalt	Q0 -461,3522 -575,3684
+#: by: Fred (ramme...):
+An der Fließwiese: schlechtes Verbundsteinpflaster	Q2 -998,12689 -1022,12743 -1020,12801 -962,12951 -950,13091 -912,13106 -815,13067
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206
