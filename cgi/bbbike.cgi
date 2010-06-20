@@ -5811,8 +5811,8 @@ sub get_streets {
 	my @f = @f;
 	if ($use_cooked_street_data) {
 	    @f = map {
-		#$_ eq "fragezeichen" ? $_ :
-		"$_-cooked"
+		# Note: no "cooked" version for faehren available
+		$_ eq "faehren" ? $_ : "$_-cooked"
 	    } @f;
 	}
 	eval {
