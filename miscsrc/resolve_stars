@@ -66,6 +66,7 @@ my $s2 = Strassen->new_stream($file_to_change, UseLocalDirectives => 1);
 my $new_s = Strassen->new;
 $s2->read_stream(sub {
     local $_ = shift;
+    my $dir = shift;
     my @res_begin;
     my @res_end;
     if (@{ $_->[Strassen::COORDS] } > 2) {
@@ -92,7 +93,7 @@ $s2->read_stream(sub {
 	}
     }
     if (!@res_begin && !@res_end) {
-	$new_s->push_ext($_, $s2->get_directive);
+	$new_s->push_ext($_, $dir);
     } else {
 	@res_begin = ($_->[Strassen::COORDS][0])  if !@res_begin;
 	@res_end   = ($_->[Strassen::COORDS][-1]) if !@res_end;
@@ -105,7 +106,7 @@ $s2->read_stream(sub {
 		    [$begin,
 		     @{$_->[Strassen::COORDS]}[1..$#{$_->[Strassen::COORDS]}-1],
 		     $end];
-		$new_s->push_ext(\@r, $s2->get_directive);
+		$new_s->push_ext(\@r, $dir);
 	    }
 	}
     }
