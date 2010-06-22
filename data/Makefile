@@ -175,7 +175,8 @@ persistent-tmp:	${PERSISTENTTMPDIR}/XXX-$(i).bbd
 
 # more checks, but even slower (about four minutes)
 really-slow-checks:	check-crossings-important \
-			check-nearest
+			check-nearest \
+			check-urls
 
 # this adds also "check-crossings-less-important", but the results of
 # these checks there were never looked at, so really not important...
@@ -1599,6 +1600,11 @@ ${PERSISTENTTMPDIR}/crossings_gewaesser_ignore.bbd:	\
 	    -o $@~ -against brunnels \
 	    strassen wasserstrassen
 	mv $@~ $@
+
+check-urls: ${PERSISTENTTMPDIR}/url_checks.log
+
+${PERSISTENTTMPDIR}/url_checks.log:	comments_route-orig comments_ferry-orig
+	${PERL} ${MISCSRCDIR}/url_checker.pl -v -log ${PERSISTENTTMPDIR}/url_checks.log $>
 
 ######################################################################
 # Checks for unhandled streets
