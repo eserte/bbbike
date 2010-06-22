@@ -1,3 +1,57 @@
+2010-06-22  Slaven Rezic  <slaven@rezic.de>
+
+	* Rechtspfeil: ich würde gerne die hässliche Notation
+
+	    ((VonStraße) - ZurStraße)
+
+	durch die etwas weniger hässliche Notation
+
+	    (VonStraße → ZurStraße)
+
+	zu ersetzen. Allerdings stellt sich die Frage: kann man sicher sein,
+	dass überall der Pfeil sichtbar ist? Klar, alles kann heutzutage utf-8
+	und Unicode. Das sagt aber nichts darüber aus, ob auch alle in Unicode
+	aufgelisteten Zeichen in allen Fonts verfügbar sein. Mein Emacs kann
+	z.B. den Rechtspfeil oben nicht darstellen, wahrscheinlich, weil meine
+	Version von LucidaSansTypewriter dieses Zeichen nicht hat.
+
+	In der Unicode-NamesList habe ich mir einige Kandidaten für den
+	Rechtspfeil angeschaut:
+
+		→ rightwards arrow
+		↣ with tail
+		↦ from bar
+		⇏ double with stroke
+		⇒ double
+		⇨ white
+		⇰ white from wall
+		⇾ open headed
+
+	Kein Problem in Seamonkey unter FreeBSD, alle Zeichen werden
+	dargestellt. Ebenso auf dem Opera. Firefox auf dem Windows-Rechner
+	stellt auch alle Zeichen dar, aber "white from wall" erzeugt irgendwie
+	einen riesigen vertikalen Freiraum. IE8 auf dem gleichen Rechner hat
+	dagegen keine Probleme. Bei beiden Browsern werden auch unterschiedliche
+	Fonts verwendet, wobei der im Firefox verwendete Font nicht besonders
+	schöne Pfeile hat.
+
+	OK, das waren die leichten Browser. Wie sieht's auf dem Nokia N95 aus?
+	Eigentlich könnte ich mit meiner Untersuchung aufhören, denn hier wird
+	nur der erste Pfeil (rightwards arrow) angezeigt. Der Vollständigkeit
+	halber probiere ich auch Opera Mini auf dem gleichen Gerät aus. Hmmm,
+	kein einziger Pfeil wird als solcher angezeigt. Lynx verwendet für
+	"rightwards arrow" und "double" eine akzeptable Ersatzdarstellung (ich
+	habe nur ein latin1-Terminal). Der Rest wird als Entity angezeigt. w3m
+	zeigt nur Fragezeichen. Wenn ich das Terminal auf utf8 umschalte, dann
+	verschwinden die Fragezeichen und ich sehe nichts --- wahrscheinlich
+	werden jetzt Unicode-Zeichen angezeigt, die mein Terminal-Font nicht
+	unterstützt.
+
+	Conclusio? Vielleicht könnte ich den Pfeil vorsichtig verwenden, z.B.
+	nur, wenn es sich um einen Desktop-Browser handelt. Oder ich warte
+	nochmal ein Jahr ab. Oder ich verwende einfach eine vorsintflutliche
+	ASCII-Kombination: -> oder => oder wenigstens iso-8859-1: -»
+
 2010-06-12  Slaven Rezic  <slaven@rezic.de>
 
 	* Falsche Straßennamen: letzten Donnerstag (10. Juni) war die Webversion
