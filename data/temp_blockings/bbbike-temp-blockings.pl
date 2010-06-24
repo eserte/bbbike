@@ -17148,7 +17148,7 @@ userdel	1::inwork 18370,5511 18307,5440 18214,5354 18080,5376 18245,5551
 EOF
      },
      { from  => 1268521200, # 2010-03-14 00:00
-       until => Time::Local::timelocal(reverse(2010-1900,6-1,25,15,0,0)), # was: 1276898399, # 2010-06-18 23:59
+       until => 1277320989, # Time::Local::timelocal(reverse(2010-1900,6-1,25,15,0,0)), # was: 1276898399, # 2010-06-18 23:59
        text  => 'Die Leipziger Str. ist zwischen Mauerstr. und Charlottenstr. Richtung Alexanderstr. wegen Bauarbeiten gesperrt. Zu Einbahnstraßen werden Teile der Mauer-, Krausen-, Charlottenstr. und Friedrichstr. Dauer: 15. März 2010 bis 25. Juni 2010 ',
        type  => 'gesperrt',
        data  => <<EOF,

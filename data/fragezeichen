@@ -1266,7 +1266,6 @@ Husstr.: Qualität? Ist die Straße eine Einbahnstraße? Wenn ja, gilt die Einbahns
 Vimystr.: Qualität?	? 19795,3945 19763,3959 19703,3979 19627,4004 19596,4035
 Am Schweizerhof: Qualität? Können Radfahrer zum Parkweg durchfahren?	? 1524,1924 1432,1964 1368,1991 1258,1961 1177,1940
 Prinz-Handjery-Str.: Qualität?	? 1358,1695 1258,1961 1104,2328 1081,2381 1008,2568 940,2722
-Am Vierstückenpfuhl: Qualität?	? 1333,2083 1377,2102 1422,2259
 Herbergerweg: Qualität? Sind Teile der Straße für Autos gesperrt?	? 960,2534 921,2565 869,2567 772,2538
 Leo-Baeck-Str. - Seehofstr.: Qualität? Für Radfahrer befahrbar?	? 1478,1721 1432,1904 1432,1964 1461,2073 1452,2095 1488,2242
 Mühlenstr. - Hampsteadstr.: Qualität? Für Radfahrer befahrbar?	? 1603,2615 1631,2722 1647,2759 1634,2914
@@ -1478,17 +1477,16 @@ Schwalbachstr.: Qualität?	? 11376,32 11399,15 11427,-87 11465,-210
 Sodenstr.: Qualität?	? 11858,-1189 11853,-1134 11794,-935 11790,-894
 Tutzinger Str.: Qualität?	? 12203,-2259 12019,-2683
 Warnitzer Str. (Lichtenrade): Qualität?	? 10510,-235 10584,-432
-Baderseestr.: Qualität?	? 22493,1325 22575,1157
 Chiemseestr.: Qualität?	? 22204,1496 22334,1553
 Dahmestr. (Grünau): Qualität?	? 22466,2030 22538,1878 22662,1638
-Eibseestr.: Qualität? Heißt der Platz an der Kirche "Don-Ugoletti-Platz"?	? 22449,1569 22462,1547 22560,1377
+Don-Ugoletti-Platz: Qualität? Heißt der Platz an der Kirche "Don-Ugoletti-Platz"?	? 22449,1569 22462,1547
 Fuchsbau (Grünau): Qualität?	? 21421,2268 21416,2139 21414,2085 21385,2031
 Rabindranath-Tagore-Str.: Qualität?	? 23457,35 23540,591 23469,640
 Kochelseestr.: Qualität?	? 22462,1547 22364,1487 22247,1409 22163,1363
 Königsseestr.: Qualität?	? 22448,1824 22538,1878 22617,1925
 Laubnitzer Pfad: Qualität?	? 22995,745 23067,786
 Steinbindeweg: Qualität?	? 23237,508 23137,650 23067,786 23085,898
-Parksteig: Qualität? Ist der nördliche Teil des Weges für Autos gesperrt?	? 22577,1002 22521,1134 22453,1294
+Parksteig: Qualität des Abschnitts zwischen Libboldallee und Büxensteinallee? Ist dieser Teil ebenfalls für Autos gesperrt?	? 22577,1002 22521,1134
 Schilfsängersteig: Qualität?	? 21454,1976 21406,2005 21385,2031 21353,2061 21351,2079 21323,2105 21271,2131
 Straße 901: Qualität?	? 23501,797 23497,705 23469,640
 Straße 902: Qualität?	? 23497,705 23574,689
@@ -1894,7 +1892,6 @@ Himmelsteig: Qualität?	? -635,4856 -515,4820 -455,4808
 Im Kinderland: Qualität?	? -455,4808 -465,4794 -515,4820
 Ithweg: Qualität?	? -323,5031 -301,4948 -265,4864 -190,4776
 Süntelsteig: Qualität?	? -188,5061 -145,4916 -97,4849
-Deisterpfad: Qualität?	? 10,4932 -6,4997 -17,5066 -21,5099
 Goethestr. (Zehlendorf): Qualität?	? -843,4116 -881,4001 -1013,3804 -1204,3662 -1340,3602 -1426,3565 -1461,3569
 Kleiststr. (Zehlendorf): Qualität?	? -968,4184 -1032,3991 -1086,3907 -1230,3780
 Schlickweg: Qualität?	? -1683,3723 -1731,3833 -1734,3905
@@ -2012,8 +2009,6 @@ Sibyllenstr.: Qualität?	? 6544,3235 6484,3292 6429,3286 6359,3256 6308,3204
 Reginenweg: Qualität? Ist der Weg für Radfahrer befahrbar? Nachts beleuchtet?	? 6484,3292 6482,3327 6426,3425
 Saarburger Str.: Qualität?	? 6529,3480 6635,3520
 Karutzseeweg: Qualität?	? 25948,4823 25943,4931 25941,5069
-Emrichstr.: Qualität?	? 25369,4790 25349,4851 25359,5100 25255,5117
-Pfeiffergasse: Qualität?	? 25481,4820 25473,4786
 Lesewitzer Steig: Qualität?	? -1619,23336 -1535,23575
 Liessauer Pfad: Qualität?	? -1520,23308 -1451,23525
 Rautensteig: Qualität?	? -1282,23315 -1244,23478
@@ -2543,7 +2538,6 @@ Am Berg: Qualität?	? 23010,4506 22959,4576
 Iselbergplatz: Qualität?	? 23523,13368 23646,13346
 Steffenshagener Str.: Qualität des nördlichen Abschnitts?	? 22983,11098 23159,11097
 Verlängerte Mozartstr.: Qualität?	? 21864,6928 21920,6835
-Verlängerte Müggelbergallee: gibt es diese Straße? Qualität?	? 23107,1680 23231,1707
 Warnitzer Str. (Neu-Hohenschönhausen): Qualität?	? 17894,17925 17956,17927 17994,17958 18010,17972 18109,17861 18179,17915 18214,17876
 Warnitzer Str. (Neu-Hohenschönhausen): Qualität?	? 17994,17958 17962,18010 18041,18073 18147,17961 18304,18071
 Haagstr.: Qualität? Gilt die Einbahnstraßenregelung auch für Radfahrer?	? -3030,2349 -2882,2373 -2920,2472
@@ -2653,7 +2647,6 @@ Hoiruper Str.: Qualität?	? -3440,3015 -3515,3110
 Im Kieferngrund: Qualität?	? 261,4420 221,4412 208,4424 148,4402 156,4375 209,4393 221,4412
 Ladenstr.: Qualität? Für Radfahrer befahrbar?	? 374,4779 171,4677
 Mutter-Mochow-Weg: Qualität? Nachts beleuchtet?	? -1959,2305 -1849,2043
-Verlängerung der Benschstr.: Qualität? Nachts beleuchtet? Existiert eine Verbindung zur Lissabonallee?	? -1592,1852 -1590,1985 -1618,2137 -1631,2260 -1604,2324
 Münchowstr.: Qualität?	? -3907,2438 -4084,2356
 Paul-Krause-Str.: Qualität? Existiert eine Verbindung (Treppe, Rampe) zur Borussenstr.?	? -4084,2356 -3983,2280
 Nickisch-Rosenegk-Str.: Qualität?	? -2761,2895 -2709,3104

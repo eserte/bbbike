@@ -33,6 +33,7 @@ use vars qw(%filetype_to_cat %file_to_cat);
 			  sub { /^0:\d+(:-?\d+)?$/ },
 			  sub { /^BNP:\d+(:-?\d+(:trailer=(no|\d+))?)?$/ },
 			  sub { /^1s(:q\d)?$/ },
+			  '1::igndisp',
 			 ],
      "fragezeichen"   => [qw(? ?? F:? F:??)],
      "handicap"	      => [qw(q0 q1 q2 q3 q4)],
