@@ -21,7 +21,7 @@ restrict_bbd_data.pl - Restrict bbd data to a given bounding box
 
     restrict_bbd_data.pl
         [ -bbox x1,y1,x2,y2 | -in file1,... | -notin file1,... |
-          -polygon "x1,y1 x2,y2 ..."]
+          -polygon "x1,y1 x2,y2 ..." | -polygon-bbd file ...]
         -scope [city|region|wideregion] | -strdata file1,file2,...
         -o outputfile
 
@@ -43,7 +43,11 @@ bbd files specified with C<-in>/C<-notin> may be used to restrict by
 points (not) contained in these files.
 
 C<-polygon> takes an option in the format "x1,y1 x2,y2 ...". Note that
-the spaces in the option value must be quoted for the shell.
+the spaces in the option value must be quoted for the shell. This
+option may be used multiple times.
+
+C<-polygon-bbd> takes a bbd file containing polygons. This option may
+be used multiple times.
 
 =cut
 
@@ -62,6 +66,7 @@ eval 'use BBBikeXS';
 
 my @bbox_s;
 my @contains_polygons_s;
+my @contains_polygons_bbd;
 my @in;
 my @notin;
 my $scope = "city";
@@ -77,6 +82,7 @@ sub usage {
 
 if (!GetOptions('bbox=s@' => \@bbox_s,
 		'polygon=s@' => \@contains_polygons_s,
+		'polygon-bbd=s@' => \@contains_polygons_bbd,
 		"scope=s" => \$scope,
 		"datadir=s@" => \@Strassen::datadirs,
 		"str|strdata=s" => \$strdata,
@@ -92,7 +98,7 @@ if (!GetOptions('bbox=s@' => \@bbox_s,
 }
 
 usage() if @ARGV;
-usage() if (!@bbox_s && !@contains_polygons_s && !@in && !@notin);
+usage() if (!@bbox_s && !@contains_polygons_s && !@contains_polygons_bbd && !@in && !@notin);
 my @bboxes;
 if (@bbox_s) {
     for my $bbox_s (@bbox_s) {
@@ -104,11 +110,27 @@ if (@bbox_s) {
 	push @bboxes, \@bbox;
     }
 }
+
 my @contains_polygons;
+if (@contains_polygons_bbd) {
+    for my $bbd_file (@contains_polygons_bbd) {
+	my $s = Strassen->new($bbd_file);
+	$s->read_stream
+	    (sub {
+		 my($r) = @_;
+		 push @contains_polygons, [map { [split /,/] } @{ $r->[Strassen::COORDS] } ];
+		 if ($r->[Strassen::COORDS][0] ne $r->[Strassen::COORDS][-1]) {
+		     push @{ $contains_polygons[-1] }, [split /,/, $r->[Strassen::COORDS][0]]; # close polygon
+		 }
+	     });
+    }
+}
 if (@contains_polygons_s) {
     for (@contains_polygons_s) {
 	push @contains_polygons, [map { [split /,/] } split / /];
     }
+} 
+if (@contains_polygons) {
     require VectorUtil;
 }
 
