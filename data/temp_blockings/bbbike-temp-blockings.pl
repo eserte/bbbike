@@ -1493,8 +1493,8 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 14694,5230 14744,5211 14808,5202 14988,5214
-userdel	2 14988,5214 15038,5235 15183,5480
-userdel	2 15183,5480 15382,5687
+userdel	2 14988,5214 15038,5235 15190,5490
+userdel	2 15190,5490 15363,5668 15382,5687
 EOF
      },
      { from  => 1113429600, # 2005-04-14 00:00
@@ -14632,7 +14632,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_013302',
        data  => <<EOF,
-userdel	1::inwork 15382,5687 15183,5480
+userdel	1::inwork 15382,5687 15363,5668 15190,5490
 EOF
      },
      { from  => undef, # 
@@ -17102,10 +17102,11 @@ EOF
 userdel	q4::inwork; -22042,-2060 -21524,-2998
 EOF
      },
-     { from  => 1252879200, # 2009-09-14 00:00
-       until => 1277935200, # 2010-07-01 00:00
-       text  => 'L 092 AS Potsdam-Nord - Ketzin Brücke über den Schleusenkanal bei Paretz Brückenneubau, Straßenbau Vollsperrung 15.09.2009-30.06.2010 ',
+     { from  => 1277442923, # 2010-06-25 07:15
+       until => 1277503200, # 2010-06-26 00:00
+       text  => 'Potsdam: L92: Brückenneubau - Straßenbau Brücke über den Schleusenkanal bei Paretz, 15.09.2009 bis 25.06.2010',
        type  => 'gesperrt',
+       source_id => 'LS/W-SG33-P/09/467-1',
        data  => <<EOF,
 userdel	2::inwork -24240,6075 -24731,6194
 EOF
@@ -17586,21 +17587,21 @@ EOF
        data  => <<EOF,
 (Eingang Columbiadamm - Rundkurs auf dem Flughafen Tempelhof)	2::temp 10691,8532 10640,8366 10598,8270 10575,8218
 (Eingang Columbiadamm - Rundkurs auf dem Flughafen Tempelhof)	2::temp 10598,8270 10729,8152
-(Rundkurs auf dem Flughafen Tempelhof)	2::temp 11463,7785 11470,7744 11543,7369 11570,7315 11575,7249 11407,7198 11310,7071 11128,6967 10944,6790 10746,6693 10558,6661 10282,6692 10023,6806 9792,6964 9681,7075 9509,7195 9545,7426 9525,7558
+(Rundkurs auf dem Flughafen Tempelhof)	2::temp 11463,7785 11470,7744 11543,7369 11593,7314 11598,7264 11407,7198 11310,7071 11128,6967 10944,6790 10746,6693 10558,6661 10282,6692 10023,6806 9792,6964 9681,7075 9509,7195 9545,7426 9525,7558
 (Rundkurs auf dem Flughafen Tempelhof)	2::temp 9525,7558 9518,7609 9611,7934 9710,8143 9884,8265 10042,8270 10575,8218
 (Rundkurs auf dem Flughafen Tempelhof)	2::temp 10575,8218 10729,8152 10924,7987 11090,7916 11264,7882 11355,7871 11381,7775 11460,7447 11518,7314
 (Rundkurs auf dem Flughafen Tempelhof - Eingang Tempelhofer Damm)	2::temp 9525,7558 9431,7425 9392,7339 9300,7312 9302,7294 9242,7286
-(Südliche Landebahn)	2::temp 9461,7190 9509,7195 9677,7206 11359,7307 11518,7314 11570,7315
+(Südliche Landebahn)	2::temp 9461,7190 9509,7195 9677,7206 11359,7307 11518,7314 11593,7314
 (Nördliche Landebahn)	2::temp 9351,7600 9518,7609 9654,7621 11279,7768 11381,7775 11463,7785
 (Nördliche Landebahn - Eingang Oderstr./Herrfurthstr.)	2::temp 11463,7785 11439,7894
 (Eingang Oderstr./Herrfurthstr. - Flughafen Tempelhof)	2::temp 11472,7899 11458,7897 11439,7894
 (Strecke an der nordöstlichen Begrenzung)	2::temp 11439,7894 11418,8015 11327,8007 11303,8089 11143,8139 11005,8064 10640,8366
-(Weg parallel zur Oderstr.)	2::temp 11458,7897 11489,7748 11507,7647 11528,7528 11547,7432 11570,7315
+(Weg parallel zur Oderstr.)	2::temp 11458,7897 11489,7748 11507,7647 11528,7528 11547,7432 11554,7382 11593,7314
 (Eingang Kienitzer Str.)	2::temp 11498,7750 11489,7748 11479,7746 11470,7744
 (Flughafen Tempelhof - Eingang Allerstr.)	2::temp 11507,7647 11515,7654
 (Flughafen Tempelhof - Eingang Okerstr.)	2::temp 11528,7528 11536,7533
 (Flughafen Tempelhof - Eingang Leinestr.)	2::temp 11547,7432 11553,7437
-(Flughafen Tempelhof - Eingang Oderstr.)	2::temp 11575,7249 11606,7260
+(Flughafen Tempelhof - Eingang Oderstr.)	2::temp 11598,7264 11608,7267
 (Eingang Tempelhofer Damm - südliche Landebahn)	2::temp 9302,7294 9351,7241 9461,7190
 EOF
      },
@@ -17849,6 +17850,26 @@ userdel	2::temp 6778,11742 7073,11798 6809,11979
 userdel	2::temp 8091,11992 8089,12041
 userdel	2::temp 8018,12131 7827,12105 7460,12054 7663,11946 7570,11855 7223,11897 7073,11798 7163,11738 6980,11583
 userdel	2::temp 7460,12054 6857,11992
+EOF
+     },
+     { from  => 1277355600, # 2010-06-24 07:00
+       until => 1277762400, # 2010-06-29 00:00
+       text  => 'Bergmannstraße (Kreuzberg): Veranstaltung, gesperrt (bis ca. 28.06.10, 0 Uhr) in beiden Richtungen zwischen Mehringdamm und Zossener Straße, 25.06.2010 07:00 Uhr bis 28.06.2010 ',
+       type  => 'handicap',
+       source_id => 'IM_015920',
+       data  => <<EOF,
+userdel	q4::temp 9248,9350 9300,9341 9489,9309 9505,9306 9632,9280 9689,9266 9753,9252
+userdel auto	3 9487,9209 9505,9306 9524,9426
+userdel auto	3 9524,9426 9505,9306 9487,9209
+EOF
+     },
+     { from  => 1277443049, # 2010-06-25 07:17
+       until => 1324422000, # 2011-12-21 00:00
+       text  => 'Cottbus: L511: Straßen- und Kanalbauarbeiten Cottbus, OT Sielow , 20.06.2010 bis 20.12.2011 ',
+       type  => 'handicap',
+       source_id => '105200001',
+       data  => <<EOF,
+userdel	q4::inwork 73237,-66975 73640,-67643
 EOF
      },
     );

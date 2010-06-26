@@ -714,8 +714,8 @@ Zeltinger Platz	1s 2404,25187 2355,25252 2395,25273 2446,25265 2490,25211 2486,2
 Ludolfinger Platz	1s 2277,25033 2245,25016 2205,25042 2192,25083 2216,25117 2277,25094 2285,25059 2277,25033
 Sewanstr. - Balatonstr.	1s 17705,10232 17741,10386
 Hönower Str. (Karlshorst) (Ausweichen auf Sandbankette möglich)	1s 18377,9366 18490,9387
-Mittelstreifen mit hoher Kante	3nocross::ignrte 13796,5262 13820,5203 13889,4954
-Teterower Str. -> Buschkrugallee: Mittelstreifen mit hoher Kante	3::igndisp 13717,5175 13820,5203 13796,5262
+Mittelstreifen mit hoher Kante	3nocross::ignrte 13809,5257 13820,5203 13889,4954
+Teterower Str. -> Buschkrugallee: Mittelstreifen mit hoher Kante	3::igndisp 13717,5175 13820,5203 13809,5257
 Buschkrugallee -> Teterower Str.: Mittelstreifen mit hoher Kante	3::igndisp 13889,4954 13820,5203 13717,5175
 Straßenbahntrasse	3nocross::ignrte 12878,13229 12979,13280 13078,13330
 Landsberger Allee -> Virchowstr.: Straßenbahntrasse	3::igndisp 12878,13229 12979,13280 12916,13368
@@ -1478,6 +1478,7 @@ Mittelstreifen	3nocross::ignrte -870,2737 -756,2787 -567,2869 -512,2883 -391,291
 Niklasstr. -> Potsdamer Chaussee: Mittelstreifen	3::igndisp -791,2819 -756,2787 -567,2869
 Potsdamer Chaussee -> Niklasstr.: Mittelstreifen	3::igndisp -870,2737 -756,2787 -791,2819
 Hohentwielst. -> Potsdamer Chaussee: Mittelstreifen	3::igndisp -479,2715 -567,2869 -756,2787
+tragen (14 Stufen)	0:30:82 15133,5869
 tragen oder Aufzug	0:30:-249 4158,461
 tragen (19 Stufen)	0:25:78 11479,7746
 tragen (ca. 17 Stufen)	0:22:-98 13779,4929
@@ -1618,6 +1619,8 @@ tragen (Treppe, 12 Stufen)	0:15:-23 5475,7906
 tragen (Treppe, ca. 20 Stufen)	0:25:-108 19163,14981
 tragen (Treppe, ca. 20 Stufen)	0:25:-12 19160,14935
 tragen (Treppe)	0:30:70 89344,-5795
+Drängelgitter	BNP:3:-82 -4651,9842
+enge Umfahrung	BNP:3:-90:trailer=no 14529,5851
 Schranke	BNP:3:-102:trailer=no 17826,9630
 Einfahrsperre für Autos	BNP:0:7:trailer=2 19003,9800
 sehr enge Stelle	BNP:0:-188:trailer=no 31909,2802

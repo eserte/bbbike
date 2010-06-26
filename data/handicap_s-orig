@@ -17,7 +17,7 @@ Fahrbahn der Mauerstr. wegen Bauarbeiten gesperrt	q4::inwork 9405,11413 9331,114
 #XXX del: last_checked: 2010-02-02, #: next_check: 2010-05-31, Hauptstr. (Friedrichshain-Kreuzberg): Baustelle, Radfahrer kˆnnen langsam passieren	q3::inwork 14906,10820 14794,10844 14717,10855
 #: last_checked: 2010-06-06
 Varian-Fry-Str.: Baustelle, Fahrbahn gesperrt	q4::inwork 8389,11378 8374,11479
-#: last_checked: 2010-05-13
+#: last_checked: 2010-06-26
 General-Pape-Str.: Baustelle, Fahrbahn Richtung Norden gesperrt	q4::inwork; 7959,7609 7921,7728 7950,7840
 #: last_checked: 2010-05-22
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraﬂe Richtung S¸den	q4::inwork; 9475,12365 9462,12481 9454,12558
@@ -588,7 +588,7 @@ Luitpoldstr.: Schulhof	q3 6611,9879 6670,9887
 Weg am Tempodrom: Fuﬂg‰nger, eng, kurvig	q2 8854,10712 8798,10678 8738,10704 8700,10766
 Kienheideweg: Fuﬂg‰nger, Bordsteine	q2 13136,5593 13331,5640
 Kienheideweg: Fuﬂg‰nger	q1 13331,5640 13414,5655
-Kienheideweg - Buschkrugallee: Fuﬂg‰nger	q1 13511,5675 13603,5695
+Kienheideweg - Buschkrugallee: Fuﬂg‰nger	q1 13511,5675 13612,5698
 Thomashˆhe: Fuﬂg‰nger, f¸r Radfahrer verboten, ggfs. schieben	q2 12682,7514 12644,7688
 Lessinghˆhe: Fuﬂg‰nger, f¸r Radfahrer verboten, ggfs. schieben	q2 12644,7688 12602,7907 12583,7974
 Elli-Voigt-Str.: Bodenschwellen	q3 15833,13596 15831,13760
@@ -1896,3 +1896,5 @@ Forster Str. (Hellersdorf): enge Straﬂe	q1 25237,14627 25365,14667 25397,14563 2
 #: by: katrin peters:
 #: corrected_by: srt/policy (q2 -> q1)
 Deisterpfad: Fuﬂg‰nger	q1 -17,5066 -21,5099
+#: by: anonymous:
+Tessiner Weg: enge Straﬂe	q1 7077,17186 7184,17208

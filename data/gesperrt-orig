@@ -895,7 +895,7 @@ Hönower Str. (Karlshorst) (Ausweichen auf Sandbankette möglich)	1s:q2 18377,9366
 # Umgehung gibt, sollte sie in comments_path-orig als PI; kommentiert sein)
 # 
 #: by: ruth mantei:
-Buschkrugallee: Mittelstreifen mit hoher Kante	3nocross 13796,5262 13820,5203 13889,4954
+Buschkrugallee: Mittelstreifen mit hoher Kante	3nocross 13809,5257 13820,5203 13889,4954
 Landsberger Allee: Straßenbahntrasse	3nocross 12878,13229 12979,13280 13078,13330
 Hauptstr.: Straßenbahntrasse	3nocross 15639,10469 15408,10638 15383,10656
 #: by: Heike Steinhardt ("eher nicht empfehlenswert")
@@ -1152,6 +1152,7 @@ Potsdamer Chaussee: Mittelstreifen	3nocross -870,2737 -756,2787 -567,2869 -512,2
 # Stellen, an denen getragen werden muß:
 # die Zahl hinter dem ":" entspricht ungefähr den verlorenen Sekunden
 # 
+tragen (14 Stufen)	0:30 15133,5869
 #: by: Klaus Didrich:
 tragen oder Aufzug	0:30 4158,461
 tragen (19 Stufen)	0:25 11479,7746
@@ -1347,6 +1348,10 @@ tragen (Treppe)	0:30 89344,-5795
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+#: by: Juliane (alberts...)
+#: XXX genaue Position des Drängelgitters?
+Drängelgitter	BNP:3 -4651,9842
+enge Umfahrung	BNP:3::trailer=no 14529,5851
 Schranke	BNP:3::trailer=no 17826,9630
 #: by: hannes Peters:
 #: note: "mit Anhänger eng, aber langsam passierbar"
