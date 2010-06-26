@@ -28,7 +28,7 @@ require Exporter;
 	     kmh2ms
 	     STAT_MODTIME);
 @EXPORT_OK = qw(min max first sum ms2kmh clone bbbike_root
-		s2hms s2hm_or_ms save_pwd);
+		s2hms s2hm_or_s save_pwd);
 
 use constant STAT_MODTIME => 9;
 
@@ -127,13 +127,13 @@ sub s2ms {
     sprintf "%d:%02d", $s/60, int($s%60);
 }
 
-# seconds as HH:MM or MM:SS, with unit
-sub s2hm_or_ms {
+# seconds as "HH:MM h" or "SS sec"
+sub s2hm_or_s {
     my $s = shift;
     if ($s < 1 || $s >= 60) {
 	s2hm($s) . ' h';
     } else {
-	s2ms($s) . ' min';
+	int($s%60) . ' sec';
     }
 }
 
