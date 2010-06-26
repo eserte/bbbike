@@ -197,7 +197,7 @@ use File::Basename;
 #BEGIN{mymstat("before BBBikeUtil");}
 ## DEBUG_END
 use BBBikeUtil;
-use BBBikeUtil qw(min max first clone);
+use BBBikeUtil qw(min max first clone s2hm_or_ms);
 use BBBikeTkUtil qw(pack_buttonframe);
 use BBBikeVar;
 use BBBikeCalc;
@@ -14993,7 +14993,7 @@ sub updatekm {
 	    $ampelstatus_label_text =
 		"$ampel_count " .
 		    ($ampel_count > 1 ? M"Ampeln" : M"Ampel") .
-			" (-" . s2ms($lost_time_s) . " min)";
+			" (-" . s2hm_or_ms($lost_time_s) . ")";
 	}
     } else {
 	$ampelstatus_label_text = "";
@@ -15017,7 +15017,7 @@ sub updatekm {
 	    $ampelstatus_label_text .=
 		"\n" .
 		    Mfmt("%dx tragen", $tragen_count) .
-			" (-" . s2ms($lost_time_tragen_s) . " min)";
+			" (-" . s2hm_or_ms($lost_time_tragen_s) . ")";
 	}
     }
 
@@ -15071,8 +15071,9 @@ sub updatekm {
 	  (defined $lost_time_s && $ampel_count->{"speed"}[$i]
 	   ? $lost_time_s/3600 : 0);
 	$time_h += ($lost_time_tragen_s+$lost_time_narrowpassage_s)/3600;
-	$act_value{TimeSeconds}->[$i] = $time_h*3600;
-	$act_value{Time}->[$i] = h2hm($time_h) . " h";
+	my $time_s = $time_h*3600;
+	$act_value{TimeSeconds}->[$i] = $time_s;
+	$act_value{Time}->[$i] = s2hm_or_ms($time_s);
     }
 
     if ($bikepwr) {
@@ -15082,7 +15083,7 @@ sub updatekm {
 	       ? $lost_time_s : 0);
 	    $time += ($lost_time_tragen_s+$lost_time_narrowpassage_s)/3600;
 	    $act_value{PowerTimeSeconds}->[$i] = $time;
-	    $act_value{PowerTime}->[$i] = s2hm($time) . " h";
+	    $act_value{PowerTime}->[$i] = s2hm_or_ms($time);
 	    if (!$edit_mode && !$edit_normal_mode) {
 		$calories_power[$i] = float_prec($bikepwr_cal[$i], 1);
 	    } else {

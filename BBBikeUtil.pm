@@ -1,10 +1,9 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeUtil.pm,v 1.32 2008/12/30 15:41:26 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998-2009 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998-2010 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -14,7 +13,7 @@
 
 package BBBikeUtil;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.32 $ =~ /(\d+)\.(\d+)/);
+$VERSION = 1.33;
 
 use strict;
 use vars qw(@ISA @EXPORT @EXPORT_OK);
@@ -28,7 +27,8 @@ require Exporter;
 	     cp850_iso iso_cp850 nil
 	     kmh2ms
 	     STAT_MODTIME);
-@EXPORT_OK = qw(min max first sum ms2kmh clone bbbike_root s2hms save_pwd);
+@EXPORT_OK = qw(min max first sum ms2kmh clone bbbike_root
+		s2hms s2hm_or_ms save_pwd);
 
 use constant STAT_MODTIME => 9;
 
@@ -125,6 +125,16 @@ sub s2hms {
 sub s2ms {
     my $s = shift;
     sprintf "%d:%02d", $s/60, int($s%60);
+}
+
+# seconds as HH:MM or MM:SS, with unit
+sub s2hm_or_ms {
+    my $s = shift;
+    if ($s < 1 || $s >= 60) {
+	s2hm($s) . ' h';
+    } else {
+	s2ms($s) . ' min';
+    }
 }
 
 # gebrochene Stunden in HH:MM-Schreibweise
