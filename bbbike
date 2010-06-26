@@ -4547,8 +4547,8 @@ if ($init_p_draw{'pp'} && !defined $set_mode) {
 if ($wasserstadt || $wasserumland || $str_far_away{w}) {
     $init_str_draw{w} = 1;
 }
-my $_update_steps = ((grep { $init_str_draw{$_} } keys %init_str_draw) +
-		     (grep { $init_p_draw{$_} } keys %init_p_draw));
+my $_update_steps = ((scalar keys %init_str_draw) +
+		     (scalar keys %init_p_draw));
 my $_update_i = 0;
 foreach (keys %init_str_draw) {
     $str_draw{$_} = $init_str_draw{$_};
