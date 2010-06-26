@@ -1103,6 +1103,14 @@ sub has_track {
     0;
 }
 
+sub has_route {
+    my($self) = @_;
+    for my $chunk (@{ $self->Chunks }) {
+	return 1 if ($chunk->Type eq $chunk->TYPE_ROUTE);
+    }
+    0;
+}
+
 sub push_chunk {
     my($self, $chunk) = @_;
     if (!$self->Chunks) {

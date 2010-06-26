@@ -195,6 +195,33 @@ sub load_gpx {
 	    }
 	} elsif ($wpt_or_trk->name =~ m{^(?:metadata|extensions)$}) {
 	    # ignore
+	} elsif ($wpt_or_trk->name eq 'rte') {
+	    my $rte = $wpt_or_trk;
+	    my $gpsman_rte = GPS::GpsmanData->new;
+	    $gpsman_rte->Type($gpsman_rte->TYPE_ROUTE);
+	    # XXX Name? TrackAttrs?
+	    my @data;
+	    for my $rte_child ($rte->children) {
+		if ($rte_child->name eq 'rtept') {
+		    my($lat, $lon) = $latlong2xy_twig->($rte_child);
+		    my $wpt = GPS::Gpsman::Waypoint->new;
+		    my $name = '';
+		    for my $rtept_child ($rte_child->children) {
+			if ($rtept_child->name eq 'name') {
+			    $name = $rtept_child->children_text;
+			    last;
+			}
+		    }
+		    $wpt->Ident($name);
+		    $wpt->Accuracy(0);
+		    $wpt->Latitude($lat);
+		    $wpt->Longitude($lon);
+		    $wpt->Comment(''); # XXX get from somewhere?
+		    push @data, $wpt;
+		}
+	    }
+	    $gpsman_rte->Track(\@data);
+	    push @{ $gpsman->{Chunks} }, $gpsman_rte;
 	} else {
 	    die "No support for " . $wpt_or_trk->name . " planned";
 	}

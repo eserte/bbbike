@@ -646,7 +646,7 @@ sub BBBikeGPS::do_draw_gpsman_data {
     require Strassen;
     $s = Strassen->new;
     my $s_speed;
-    if ($gps->has_track && $draw_gpsman_data_s) {
+    if (($gps->has_track || $gps->has_route) && $draw_gpsman_data_s) {
 	$s_speed = Strassen->new;
     }
     my $whole_dist = 0;
@@ -663,6 +663,7 @@ sub BBBikeGPS::do_draw_gpsman_data {
     my $brand;
     my %brand; # per vehicle
     foreach my $chunk (@{ $gps->Chunks }) {
+	my $is_route = $chunk->Type == GPS::GpsmanData::TYPE_ROUTE();
 	# Code taken from gpsman2bbd.pl:
 	my $trackattrs = $chunk->TrackAttrs ? $chunk->TrackAttrs : {};
 	if ($trackattrs->{"srt:vehicle"}) {
@@ -685,7 +686,7 @@ sub BBBikeGPS::do_draw_gpsman_data {
 	    my($x,$y) = map { int } $Karte::map{"polar"}->map2map($main::coord_system_obj, $wpt->Longitude, $wpt->Latitude);
 	    my($x0,$y0) = ($main::coord_system eq 'standard' ? ($x,$y) : map { int } $Karte::map{"polar"}->map2standard($wpt->Longitude, $wpt->Latitude));
 	    my $alt = $wpt->Altitude;
-	    $alt =~ s{^\?}{}; # XXX remove the "question mark" hack from altitudes, should really be done in GPS::GpsmanData!
+	    $alt =~ s{^\?}{} if defined $alt; # XXX remove the "question mark" hack from altitudes, should really be done in GPS::GpsmanData!
 	    my $acc = $wpt->Accuracy;
 	    my $pointname;
 	    if ($draw_point_names) {
@@ -700,20 +701,21 @@ sub BBBikeGPS::do_draw_gpsman_data {
 			    " long=" . Karte::Polar::dms_human_readable("long", Karte::Polar::ddd2dms($wpt->Longitude)) .
 				" lat=" . Karte::Polar::dms_human_readable("lat", Karte::Polar::ddd2dms($wpt->Latitude));
 	    }
-	    my $cat = "#0000a0";
+	    my $p_cat = "#0000a0";
 	    if ($symbol_to_img && $wpt->Symbol && exists $symbol_to_img->{$wpt->Symbol}) {
-		$cat = "IMG:$symbol_to_img->{$wpt->Symbol}";
+		$p_cat = "IMG:$symbol_to_img->{$wpt->Symbol}";
 	    }
-	    my $l = [$pointname, ["$x,$y"], $cat];
+	    my $l = [$pointname, ["$x,$y"], $p_cat];
 	    $s->push($l);
 	    if ($s_speed) {
 		my $time = $wpt->Comment_to_unixtime($chunk);
+		$time = 0 if $is_route; # set pseudo time for routes, to force display
 		if (defined $time) {
 		    if ($last_wpt) {
 			my($last_x,$last_y,$last_x0,$last_y0,$last_time,$last_alt,$last_acc) = @$last_wpt;
 			my $legtime = $time-$last_time;
 			# Do not check for $legtime==0 --- saved tracks do not
-			# have any time at all!
+			# have any time at all! Also routes do not have.
 			if (abs($legtime) < 60*$max_gap && !$is_new_chunk) {
 			    my $dist = sqrt(($x0-$last_x0)**2 + ($y0-$last_y0)**2);
 			    if ($last_accurate_wpt && $acc <= $accuracy_level) {
@@ -751,30 +753,32 @@ sub BBBikeGPS::do_draw_gpsman_data {
 			    $path_graph_elem->accuracy($max_acc);
 			    push @add_wpt_prop, $path_graph_elem;
 
-			    my $color = "#000000";
-			    if ($max_acc <= $accuracy_level) {
+			    my $s_cat = "#000000";
+			    if ($is_route) {
+				$s_cat = 'Rte';
+			    } elsif ($max_acc <= $accuracy_level) {
 				if (defined $speed) {
 				    if (!defined $max_speed || $max_speed < $speed) {
 					$max_speed = $speed;
 				    }
 				    if (!$solid_coloring) {
-					$color = $cfc_mapping->{int($speed)};
+					$s_cat = $cfc_mapping->{int($speed)};
 				    }
 				}
-				if (!defined $color) {
+				if (!defined $s_cat) {
 				    my(@sorted) = sort { $a <=> $b } keys %$cfc_mapping;
 				    if (defined $speed && $speed <= $sorted[0]) {
-					$color = $cfc_mapping->{$sorted[0]};
+					$s_cat = $cfc_mapping->{$sorted[0]};
 				    } else {
-					$color = $cfc_mapping->{$sorted[-1]};
+					$s_cat = $cfc_mapping->{$sorted[-1]};
 				    }
 				}
 			    } elsif ($max_acc >= 2) {
-				#$color = "#e4c8e4"; # GPSs~~ from bbbike
-				$color = "#e2e2e2";
+				#$s_cat = "#e4c8e4"; # GPSs~~ from bbbike
+				$s_cat = "#e2e2e2";
 			    } else {
-				#$color = "#f4c0f4"; # GPSs~
-				$color = "#eeeeee"; # GPSs~
+				#$s_cat = "#f4c0f4"; # GPSs~
+				$s_cat = "#eeeeee"; # GPSs~
 			    }
 
 			    {
@@ -794,7 +798,7 @@ sub BBBikeGPS::do_draw_gpsman_data {
 				    $c1 =  $main::coord_system_obj->coordsys . $c1;
 				    $c2 =  $main::coord_system_obj->coordsys . $c2;
 				}
-				$s_speed->push([$name, [$c1, $c2], $color]);
+				$s_speed->push([$name, [$c1, $c2], $s_cat]);
 			    }
 			}
 		    }
@@ -840,6 +844,9 @@ sub BBBikeGPS::do_draw_gpsman_data {
 	    # the -orig suffix
 	    $real_speed_outfile = $speed_outfile . "-orig";
 	}
+	$s_speed->set_global_directives({ 'line_dash.Rte' => ["5, 5"],
+					  'category_color.Rte' => ['#000000'],
+					});
 	$s_speed->write($real_speed_outfile);
 	my $abk = main::plot_layer('str',$speed_outfile);
 	$plotted_layer_info->{"str-$abk"}++ if defined $abk;
