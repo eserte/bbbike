@@ -2088,7 +2088,7 @@ EOF
 				   plz => $plz,
 				   coord => $xy,
 				  })->query_string;
-		my $report_nearest = $strasse !~ /^[su]-bhf/i && !$is_usable_without_strassen{$index||""};
+		my $report_nearest = _is_real_street($strasse) && !$is_usable_without_strassen{$index||""};
 		if ($report_nearest) {
 		    print qq{<i>$strasse</i> } . M("ist nicht bekannt") . qq{ (<a target="newstreetform" href="$bbbike_html/newstreetform${newstreetform_encoding}.html?$qs">} . M("diese Straße eintragen") . qq{</a>).<br>\n};
 		} else {
@@ -7326,6 +7326,18 @@ sub convert_wgs84_to_data {
 	$require_Karte->() if $require_Karte;
 	$Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($x,$y));
     }
+}
+
+# Is this a real street, which might is reportable via newstreetform?
+sub _is_real_street {
+    my $street = shift;
+    require PLZ;
+    # XXX hack: get_street_type needs a look result
+    my $look_result = [];
+    $look_result->[PLZ::LOOK_NAME()] = $street;
+    # XXX hack: should get_street_type be callable as a static method?
+    my $type = PLZ->get_street_type($look_result);
+    $type eq 'street' || $type eq 'projected street';
 }
 
 ######################################################################

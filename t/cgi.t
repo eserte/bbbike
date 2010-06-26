@@ -2,10 +2,9 @@
 # -*- perl -*-
 
 #
-# $Id: cgi.t,v 1.66 2009/07/26 21:06:36 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998,2000,2003,2004,2006 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998,2000,2003,2004,2006,2010 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -85,7 +84,7 @@ if (!@urls) {
 }
 
 my $ortsuche_tests = 11;
-plan tests => (198 + $ortsuche_tests) * scalar @urls;
+plan tests => (200 + $ortsuche_tests) * scalar @urls;
 
 my $hdrs;
 if (defined &Compress::Zlib::memGunzip && $do_accept_gzip) {
@@ -693,7 +692,6 @@ for my $cgiurl (@urls) {
 	like($content, qr{\QThomas-Müntzer-Damm (Kleinmachnow)/Warthestr. (Teltow)\E}, "No simplification possible between different places");
     }
 
- XXX: 
     {
 	my %common_args = ( startc=>'16720,6845',
 			    zielc=>'17202,8391',
@@ -749,6 +747,29 @@ for my $cgiurl (@urls) {
 	    or diag(Dumper($res));
 	$content = uncompr($res);
 	like($content, qr{Invalidenstr\..*Ecke.*Müller-Breslau-Str\..*Ecke}s, "'Ecke' for both crossings");
+    }
+
+ XXX: 
+    {   # All street types (as defined in PLZ.pm) except "streets"
+        # should provide automatically the nearest crossing to the
+        # Berlin.coords.data coordinate. Note that this should also
+        # happen for railway stations --- this is already tested in
+        # cgi-mechanize.t
+
+	$req = HTTP::Request->new
+	    ('GET', "$action?" . CGI->new({ start2 => 'Westend (Kolonie)!Westend!14050!935,12882!0', # note: multiple results with "Westend"
+					    via    => 'Weinbergshöhe',
+					    ziel2  => 'Eiswerder (Insel)!Hakenfelde!13585!-2318,15601!0', # note: multiple results with "Eiswerder"
+					    scope  => 0,
+					  })->query_string);
+	$res = $ua->request($req);
+	ok($res->is_success, 'Westend/Weinbergshoehe/Eiswerder')
+	    or diag(Dumper($res));
+	$content = uncompr($res);
+	BBBikeTest::like_long_data($content, qr{   Die[ ]nächste[ ]Kreuzung[ ]ist.*
+						   Die[ ]nächste[ ]Kreuzung[ ]ist.*
+						   Die[ ]nächste[ ]Kreuzung[ ]ist
+					   }xs, 'Find automatically next crossing for non-streets');
     }
 
 #     {
