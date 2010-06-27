@@ -2063,11 +2063,21 @@ EOF
 		    $shown_unknown_street_helper = 1;
 		}
 
-		my $qs = CGI->new({strname => $$oneref,
-				   ($$ortref ? (ort => $$ortref) : ()),
-				  })->query_string;
-		print qq{<a target="newstreetform" href="$bbbike_html/newstreetform${newstreetform_encoding}.html?$qs">} . M("Diese Straﬂe neu in die BBBike-Datenbank eintragen") . qq{</a><br><br>\n};
-		print M(qq{Oder einen anderen Straﬂennamen versuchen}) . qq{:<br>\n};
+		# XXX Temporary solution to avoid unusable
+		# newstreetform mails:
+		if (   $$oneref !~ m{\b\d{5}\b} # keine PLZ
+		    && $$oneref !~ m{\b(?:Berlin|Potsdam)\b}i
+		    && $$oneref !~ m{,}
+		   ) {
+		    my $qs = CGI->new({strname => $$oneref,
+				       ($$ortref ? (ort => $$ortref) : ()),
+				      })->query_string;
+		    print qq{<a target="newstreetform" href="$bbbike_html/newstreetform${newstreetform_encoding}.html?$qs">} . M("Diese Straﬂe neu in die BBBike-Datenbank eintragen") . qq{</a><br><br>\n};
+		    print M(qq{Oder einen anderen Straﬂennamen versuchen}) . qq{:<br>\n};
+		} else {
+		    warn "*** Avoid unusable newstreetform mail for <$$oneref>\n";
+		    print M(qq{Einen anderen Straﬂennamen versuchen}) . qq{:<br>\n};
+		}
 	    } else {
 		print M(qq{Einen anderen Straﬂennamen versuchen}) . qq{:<br>\n};
 	    }
