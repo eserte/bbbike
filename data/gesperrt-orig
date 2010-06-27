@@ -610,7 +610,7 @@ Schulstr. (Tegel)	1 1953,20149 1794,20110
 Natalissteig	1 1202,14935 1223,14824 1226,14714
 Straße 12 (Neukölln): gesperrt für Fahrzeuge aller Art (außer BAB-Versorgung)	2 13883,6682 13881,6634 13915,6592
 Alt-Biesdorf	1 20375,11694 20435,11698 20575,11698 21108,11628
-Alt-Biesdorf	1 21108,11628 20963,11618 20549,11659 20375,11694
+Alt-Biesdorf	1 21108,11628 20963,11618 20633,11651 20549,11659 20375,11694
 #: by: Frank Winterlich:
 Privatstr. 14	1s:q3 13159,17196 13103,17280
 #: by: Ilka Gomoll, osm
@@ -715,6 +715,7 @@ Preunelstr.	1 13012,17332 12965,17324 12930,17302 12865,17381
 #: by: ^^^
 Mollstr. (Richtungsfahrbahn)	1::igndisp 11723,13139 11843,13090 11904,13075 11958,13079 11985,13075
 Mollstr. (Richtungsfahrbahn)	1::igndisp 11985,13075 11966,13074 11905,13069 11881,13072 11839,13083 11739,13131 11723,13139
+Lötschbergstr.	1s:q3 20161,11715 20150,11512
 ######################################################################
 #
 # Potsdam
@@ -898,6 +899,7 @@ Hönower Str. (Karlshorst) (Ausweichen auf Sandbankette möglich)	1s:q2 18377,9366
 Buschkrugallee: Mittelstreifen mit hoher Kante	3nocross 13809,5257 13820,5203 13889,4954
 Landsberger Allee: Straßenbahntrasse	3nocross 12878,13229 12979,13280 13078,13330
 Hauptstr.: Straßenbahntrasse	3nocross 15639,10469 15408,10638 15383,10656
+Hauptstr.: Straßenbahntrasse	3nocross 16004,10204 16114,10123 16138,10105
 #: by: Heike Steinhardt ("eher nicht empfehlenswert")
 Kniprodestr.: Grünstreifen	3nocross 13649,14899 13749,15013 13838,15113
 An der Wuhlheide: Mittelstreifen	3nocross 19578,6165 19405,6276 19276,6359
@@ -1064,11 +1066,11 @@ Sachsendamm: unbequem passierbarer Mittelstreifen	3nocross 7696,7562 7859,7486 7
 Karl-Marx-Str.: Mittelstreifen	3nocross 12598,8390 12582,8408 12562,8432 12540,8458
 Karl-Marx-Str.: unbequemes Überqueren wegen parkender Autos	3nocross 12830,8031 12865,7923 12898,7832
 Flughafenstr.: Mittelstreifen (nicht unpassierbar, aber unbequem)	3nocross 11632,8302 11767,8330 11898,8362
-Stromstr.: unpassierbarer Mittelstreifen	3nocross 6183,13083 6165,12985 6156,12918 6150,12875
+Stromstr.: unpassierbarer Mittelstreifen	3nocross 6183,13083 6165,12985 6157,12933 6150,12875
 Märkische Allee: Linksabbiegen verboten	3nocross 20109,16305 20219,16523 20339,16752
 #: XXX: wahrscheinlich (ich wurde durch einen anonymen Kommentar bestätigt)
 Märkische Allee: Linksabbiegen verboten	3nocross 20512,17101 20691,17463 20717,17516 20843,17745 20889,17838 20912,17872 21009,18055
-Märkische Allee: Mittelstreifen	3nocross 19896,11688 19918,11891 19956,12239
+Märkische Allee: Mittelstreifen	3nocross 19896,11688 19918,11891 19939,12068 19947,12140 20002,12492
 Falkenberger Chaussee: Linksabbiegen wegen Straßenbahn nicht möglich	3nocross 17400,17790 17703,17990 17843,18078
 Stralauer Allee: unbequemes Abbiegen	3nocross 13332,10832 13389,10808 13496,10763 13596,10722
 Stralauer Allee: unbequemes Abbiegen	3nocross 13596,10722 13678,10685 13779,10642
@@ -1567,9 +1569,9 @@ Wegedornbrücke: Vollsperrung, Neubau	2:inwork 20385,593 20442,564 20510,530
 Rathausbrücke: gesperrt bis März 2011 (Neubau)	2:inwork 10362,12351 10422,12395
 #: last_checked: 2010-06-17 vvv
 #: next_check: 2010-09-01 vvv
-Vicki-Baum-Str.: noch in Bau, gesperrt	2:inwork 15990,10185 15894,10251
+#XXX del Vicki-Baum-Str.: noch in Bau, gesperrt	2:inwork 15990,10185 15894,10251
 Vicki-Baum-Str.: noch in Bau, gesperrt	2:inwork 15823,10300 15753,10353 15688,10400
-Alice-und-Hella-Hirsch-Ring: noch in Bau, gesperrt	2:inwork 15788,10252 15823,10300
+#XXX del Alice-und-Hella-Hirsch-Ring: noch in Bau, gesperrt	2:inwork 15788,10252 15823,10300
 Lina-Morgenstern-Str.: noch in Bau, gesperrt	2:inwork 15716,10303 15753,10353
 #: next_check ^^^
 #: last_checked ^^^
@@ -1744,7 +1746,7 @@ tragen (Treppe, 14 Stufen)	0:30 7931,12876
 Joachim-Karnatz-Allee	1 7142,12584 7131,12615
 Joachim-Karnatz-Allee	1 7175,12630 7187,12598
 Ingeborg-Drewitz-Allee	1 7365,12775 7388,12746 7539,12754 7538,12729 7418,12725 7367,12729 7343,12758
-tragen (Treppe)	0:30 5730,12264
+tragen (Treppe)	0:30 5714,12279
 Altonaer Str.: Mittelstreifen schlecht zu queren	3nocross 6020,12492 6086,12446 6178,12387
 tragen (Treppe)	0:30 8159,13042
 tragen (Treppe)	0:30 8276,13041
@@ -1877,7 +1879,7 @@ Seekorso	1 -7913,6931 -7965,6888 -8023,6842 -8081,6792 -8133,6751 -8185,6707 -82
 Schöneicher Str. (Alt-Hohenschönhausen)	1 16694,15658 16658,15627 16628,15532 16584,15489
 Schöneicher Str. (Alt-Hohenschönhausen)	1 16675,15688 16628,15642 16597,15552 16550,15503
 #: by: Daniel Pepper [AM]
-tragen (Treppe)	0:45 5964,12540
+tragen (Treppe)	0:45 5946,12553
 Stormstr. (Potsdam)	1 -15243,-2459 -15168,-2529 -15060,-2626
 #: by: Andreas Titz vvv
 #: append_comment Oranienburg vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv

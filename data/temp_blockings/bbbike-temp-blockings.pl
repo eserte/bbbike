@@ -17853,8 +17853,8 @@ userdel	2::temp 7460,12054 6857,11992
 EOF
      },
      { from  => 1277355600, # 2010-06-24 07:00
-       until => 1277762400, # 2010-06-29 00:00
-       text  => 'Bergmannstraße (Kreuzberg): Veranstaltung, gesperrt (bis ca. 28.06.10, 0 Uhr) in beiden Richtungen zwischen Mehringdamm und Zossener Straße, 25.06.2010 07:00 Uhr bis 28.06.2010 ',
+       until => 1277675940, # 2010-06-27 23:59
+       text  => 'Bergmannstraße (Kreuzberg): Veranstaltung, Straße vollständig gesperrt (bis vorauss. 27.06.2010 23:59) in beiden Richtungen zwischen Mehringdamm und Zossener Str., 25.06.2010 07:00 Uhr bis 27.06.2010 23:59 Uhr ',
        type  => 'handicap',
        source_id => 'IM_015920',
        data  => <<EOF,
@@ -17870,6 +17870,14 @@ EOF
        source_id => '105200001',
        data  => <<EOF,
 userdel	q4::inwork 73237,-66975 73640,-67643
+EOF
+     },
+     { from  => 1277589600, # 2010-06-27 00:00
+       until => 1279576799, # 2010-07-19 23:59
+       text  => 'Instandsetzung des Radweges Königsweg zwischen Eichkampstraße und Hüttenweg, ab 28.06.2010 für drei Wochen komplett gesperrt',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -903,6923 -643,7252 -348,7641 425,8766
 EOF
      },
     );
