@@ -83,6 +83,10 @@ sub wind_velocity {
 		if ($_->[$in_col] eq $in_num) {
 		    return $_->[$out_col];
 		}
+	    } elsif ($in_unit =~ m{^text}) {
+		if ($_->[$in_col] eq $in_num) {
+		    return $_->[$out_col];
+		}
 	    } else {
 		if ($_->[$in_col] >= $in_num &&
 		    $last <= $in_num) {

@@ -4,7 +4,7 @@ use lib "$FindBin::RealBin/../lib";
 
 use Test::More;
 my $tk_tests = 2;
-plan tests => 19 + $tk_tests;
+plan tests => 23 + $tk_tests;
 
 use_ok 'Met::Wind', 'wind_velocity';
 
@@ -12,6 +12,10 @@ foreach ([text_de => 'Stille', beaufort => 0],
 	 [text_de => 'Stille', 'm/s'    => 0.1],
 	 [text_en => 'calm',   beaufort => 0],
 	 [text_en => 'calm',  'm/s'    => 0.1],
+	 [text_de => 'Sturm',  beaufort => 9],
+	 [text_de => 'Sturm', 'km/h'    => 81.15], # Mitte des Bereichs 74.5..87.8
+	 [text_en => 'strong gale', beaufort => 9],
+	 [text_en => 'strong gale', 'km/h'   => 81.15],
 	 ['m/s'   => 17.2,     beaufort => 8],
 	 ['km/h'  => 117.4,    text_de  => 'orkanartiger Sturm'],
 	 ['km/h'  => 117.4,    text_en  => 'violent storm'],
@@ -41,6 +45,7 @@ if (0) {
 	warn "$_: $de_text, $ms m/s, $kmh km/h, $mih mi/h, $kn kn\n";
     }
     warn "\nText:\n";
+    no warnings 'once';
     foreach (@Met::Wind::wind_table) {
 	my $de_text = $_->[1];
 	my($bft, $ms, $kmh, $mih, $kn) =
