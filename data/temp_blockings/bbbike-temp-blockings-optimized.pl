@@ -1773,18 +1773,7 @@ userdel	2::temp 7460,12054 6857,11992
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_015920',
-         'until' => 1277675940,
-         'text' => 'Bergmannstraße (Kreuzberg): Veranstaltung, Straße vollständig gesperrt (bis vorauss. 27.06.2010 23:59) in beiden Richtungen zwischen Mehringdamm und Zossener Str., 25.06.2010 07:00 Uhr bis 27.06.2010 23:59 Uhr ',
-         'from' => 1277355600,
-         'id' => 2089,
-         'data' => 'userdel	q4::temp 9248,9350 9300,9341 9489,9309 9505,9306 9632,9280 9689,9266 9753,9252
-userdel auto	3 9487,9209 9505,9306 9524,9426
-userdel auto	3 9524,9426 9505,9306 9487,9209
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => '105200001',
          'until' => 1324422000,

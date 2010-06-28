@@ -1471,7 +1471,7 @@ Sodenstr.: Qualität?	? 11858,-1189 11853,-1134 11794,-935 11790,-894
 Tutzinger Str.: Qualität?	? 12203,-2259 12019,-2683
 Warnitzer Str. (Lichtenrade): Qualität?	? 10510,-235 10584,-432
 Chiemseestr.: Qualität?	? 22204,1496 22334,1553
-Dahmestr. (Grünau): Qualität?	? 22466,2030 22538,1878 22662,1638
+Dahmestr. (Grünau): Qualität des nördlichen Abschnitts (ebenfalls Kopfsteinpflaster?)?	? 22466,2030 22538,1878
 Don-Ugoletti-Platz: Qualität? Heißt der Platz an der Kirche "Don-Ugoletti-Platz"?	? 22449,1569 22462,1547
 Fuchsbau (Grünau): Qualität?	? 21421,2268 21416,2139 21414,2085 21385,2031
 Rabindranath-Tagore-Str.: Qualität?	? 23457,35 23540,591 23469,640
@@ -1479,7 +1479,6 @@ Kochelseestr.: Qualität?	? 22462,1547 22364,1487 22247,1409 22163,1363
 Königsseestr.: Qualität?	? 22448,1824 22538,1878 22617,1925
 Laubnitzer Pfad: Qualität?	? 22995,745 23067,786
 Steinbindeweg: Qualität?	? 23237,508 23137,650 23067,786 23085,898
-Parksteig: Qualität des Abschnitts zwischen Libboldallee und Büxensteinallee? Ist dieser Teil ebenfalls für Autos gesperrt?	? 22577,1002 22521,1134
 Schilfsängersteig: Qualität?	? 21454,1976 21406,2005 21385,2031 21353,2061 21351,2079 21323,2105 21271,2131
 Straße 901: Qualität?	? 23501,797 23497,705 23469,640
 Straße 902: Qualität?	? 23497,705 23574,689
@@ -1960,7 +1959,6 @@ Gluckstr. (Potsdam): Qualität?	? -7832,-2864 -7491,-2904
 Mottlaupfad: Schrittgeschwindigkeit, vielleicht weil Spielstraße?	? -1901,23554 -2070,23631
 Kemberger Str.: Gibt es einen Radweg in der Kemberger Straße? Ist dieser benutzungspflichtig?	? 22314,17916 22215,17784 22191,17751 22148,17687 22022,17519 22002,17492 21913,17376
 Scharfschwerdtstr. (Hohen Neuendorf): Qualität?	? 1364,27953 1426,28065 1456,28125 1453,28175 1448,28276 1432,28356 1489,28451 1536,28550 1698,28742 1838,28808
-Hirtengarten: Qualität?	? 23654,2051 23634,2148 23638,2185
 Richard-Wagner-Str. (Groß Glienicke): Qualität im westlichen Abschnitt?	? -10234,5804 -10347,5874 -10467,5948
 Silzer Weg: Qualität?	? 5688,312 5795,371 5867,412 5925,417
 Silzer Weg: Qualität?	? 5929,389 6130,449
@@ -2176,7 +2174,6 @@ Bernauer Str.: existieren östlich der Neheimer Str. Radwege oder Radspuren?	? 12
 Quickborner Str.: Wo genau befinden sich Radspuren, wo befinden sich Radwege?	? 7416,22349 7072,22905 6890,23213 6839,23300 6770,23417
 Fritz-Rumpf-Str. (Potsdam): Ist die Straße bereits fertiggestellt? Qualität?	? -11307,133 -11388,270
 Leonardo-da-Vinci-Str. (Potsdam): Ist die Straße bereits fertiggestellt? Qualität?	? -11390,72 -11609,400
-Flansweg: Qualität des östlichen Abschnitts?	? 23384,3563 23452,3613
 Pfalz-Zweibrücker Weg: Qualität zwischen Am Müggelberg und Enkenbacher Weg?	? 27170,1149 27280,1119
 Hornbacher Weg: Qualität zwischen Berghauser Str. und Sobernheimer Str.?	? 27658,877 27751,819 27783,792 27817,761 27855,731 27896,695 27932,665
 Appelbacher Weg: Qualität am nordwestlichen Ende (an der Philipp-Jacob-Rauch-Str.)?	? 27476,1287 27468,1279 27450,1182
@@ -2680,9 +2677,6 @@ Hirteplatz: Qualität?	? 23766,5281 23756,5280 23746,5276 23743,5268 23744,5262 2
 Neuer Weg: Qualität?	? 23660,5307 23492,5334
 Neuer Weg: Qualität?	? 23469,5340 23427,5349
 Grünfließer Gang: Qualität? Nachts beleuchtet?	? 23696,5529 23681,5565 23675,5810
-Erpeweg: Qualität?	? 23729,5940 23758,5846
-Brandenburgplatz: Qualität?	? 23346,5723 23328,5737
-Waldstr. (Köpenick): Qualität?	? 23328,5737 23327,5817
 Gladiolenstr.: Qualität?	? 23544,4541 23541,4439 23537,4238
 Birkenstr. (Köpenick): Qualität?	? 24170,4560 24078,4595 23980,4633 23934,4661 23947,4673 23869,4733
 Am Spielplatz: Qualität? Für Radfahrer befahrbar? Nachts beleuchtet?	? 23878,4406 23766,4376 23658,4359
@@ -2698,8 +2692,6 @@ Neptunweg: Qualität?	? 22893,4532 22858,4567
 Ambacher Str.: Qualität?	? 21944,7122 21967,7048
 Spinnpfad: Qualität?	? 21202,4985 21207,5056
 Militscher Weg: Qualität?	? 21170,4706 21152,4635 21139,4421 21206,4387
-Fehleweg: Qualität?	? 22962,2939 23025,2957
-Stahnweg: Qualität?	? 22995,2823 23063,2842
 Friedenstr. (Köpenick): Qualität?	? 21993,6133 22033,6144 22141,6143
 Jostweg (Köpenick): Qualität?	? 21244,3571 21164,3812 21141,3958
 Olmweg: Qualität? Kann man als Radfahrer bis zur Grünauer Str. fahren?	? 21295,3658 21352,3599 21384,3495 21617,3287
@@ -3661,7 +3653,6 @@ Verlängerte Köpenicker Str.: Qualität? Permanent offen? Können Radfahrer über St
 Katzengraben: Qualität im südlichen Abschnitt?	? 22475,4658 22469,4677 22465,4690
 Spindlergasse: Qualität?	? 22469,4677 22515,4694
 Strandschloßweg: Qualität? Ausgeschildert? Für Autos gesperrt? Nachts beleuchtet?	? 23368,3894 23749,3883 23925,3886 24147,3888 25052,3877 25262,3828
-Sportallee: Qualität? Für Autos gesperrt? Nachts beleuchtet?	? 22577,1002 22368,1081
 Rue René Laennec: Qualität?	? 3684,16788 3608,16765
 Sarkauer Allee: Qualität?	? -1471,11416 -1574,11484
 Elsa-Rendschmidt-Weg: Qualität? Können Radfahrer hier fahren? Existieren Treppen?	? -1574,11484 -1593,11501 -1635,11535 -1750,11719
@@ -3779,7 +3770,6 @@ Striewitzweg (Teltow): Qualität in den verschiedenen Abschnitten der Straße? Ist
 Bau einer Radfahrer- und Fußgängerbrücke in Friedrichsthal	?::inwork 1860,42884 1907,42835
 Altdöbern - Calau: Qualität?	? 55259,-83091 55388,-83077 55768,-82862 54521,-79452 54572,-78865 54600,-77483 53827,-76082
 Don-Ugoletti-Platz - Regattastr.: Qualität? Für Radfahrer befahrbar?	? 22449,1569 22478,1602 22549,1644
-Am Sudhaus: wo genau verläuft die Straße? Qualität?	? 12148,8174 12227,8190
 Kutscherweg (Potsdam): Qualität? Einbahnstraße, auch für Radfahrer gültig?	? -13627,-150 -13781,-109
 # added from ampeln-orig
 geschlossen bei Bedarf (?) (Zbr)	? 27657,-11741
@@ -3888,6 +3878,7 @@ Zeppelinstr.: kleinteiliges, unebenes Kopfsteinpflaster (ist der Abschnitt der Z
 Kohlweißlingstr.: Verbundsteinpflaster (Qualität: Verbundsteinpflaster oder Asphalt?)	? 21723,10920 21765,10834
 Distelfalterstr.: Verbundsteinpflaster (Qualität: Verbundsteinpflaster oder Asphalt?)	? 21723,10920 21605,10866
 Gerhard-Winkler-Weg: Kopfsteinpflaster (tatsächlich Kopfsteinpflaster?)	? 17338,1336 17293,1309
+Anemonenstr.: asphaltiert (Ist die Anemonenstr. asphaltiert oder gepflastert?)	? 23541,4439 23651,4467 23826,4539 23934,4661
 Barkenhof: guter Asphalt (Ist der Barkenhof eine Spielstraße?)	? -1892,1732 -1921,1826
 Haßfurter Weg: mäßiger Asphalt (Kopfsteinpflaster oder Asphalt?)	? 11835,18301 11796,18482
 (unter der S-Bahn): Verbundsteinpflaster (tatsächlich Verbundsteinpflaster?)	? 9699,-600 9520,-641

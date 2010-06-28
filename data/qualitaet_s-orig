@@ -3408,7 +3408,7 @@ An der Eiche (Karlshorst): unbefestigter Fahrweg, Gras	Q2- 19952,8174 19914,8150
 Hasensprung (Karlshorst): unbefestigter Fahrweg	Q2 20055,7985 20032,7993 19980,8041 19851,8153 19780,8230
 Birkenknick: unbefestigter Fahrweg	Q2 20035,7866 19922,7960 19779,8088
 Am Wriezener Bahnhof: Asphalt	Q0 12900,11515 12959,11631 12993,11717
-Parksteig: Asphalt	Q0 22521,1134 22453,1294
+Parksteig: Asphalt	Q0 22577,1002 22521,1134 22453,1294
 Baderseestr.: Asphalt	Q0 22493,1325 22575,1157
 Eibseestr.: Kopfsteinpflaster	Q2 22462,1547 22560,1377
 Pfeiffergasse: mäßiges Kleinkopfsteinpflaster	Q2 25477,4832 25473,4786
@@ -3452,6 +3452,17 @@ Bruchgrabenweg: Asphalt	Q0 20114,11233 20089,11227 19976,11238 19858,11249 19795
 Vorstadtweg: Asphalt	Q0 19858,11249 19840,11000 19831,10916
 #: note: keine Gehwege
 Rundweg: Asphalt	Q0 19976,11238 19967,11140 19926,11048 19868,11002 19840,11000
+Büxensteinallee: Asphalt	Q0 22766,1226 22575,1157 22521,1134
+Büxensteinallee: Kleinsteinpflaster, leicht uneben	Q1 22521,1134 22368,1081 22228,1071
+(Sportallee): Waldweg	Q1 22577,1002 22368,1081
+Dahmestr. (Grünau): schlechtes Kopfsteinpflaster	Q3+ 22538,1878 22662,1638
+Hirtengarten: Asphalt	Q0 23654,2051 23634,2148 23638,2185
+Stahnweg: Asphalt	Q0 22995,2823 23063,2842
+Fehleweg: Asphalt	Q0 22962,2939 23025,2957
+Brandenburgplatz: betoniert	Q0 23346,5723 23328,5737
+Waldstr. (Köpenick): Kopfsteinpflaster	Q2 23328,5737 23327,5817
+Seelenbinderstr.: Asphalt	Q0 23333,5710 23346,5723 23634,5873
+Erpeweg: unbefestigte Straße	Q2 23729,5940 23758,5846
 ######################### User Contributions #################################
 #: by: Dominik Seelow vvv
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
@@ -3494,7 +3505,10 @@ Voltastr.: Kopfsteinpflaster	Q2 9041,14896 9206,14987 9361,15066 9566,15188
 Zechliner Str.: Asphalt	Q0 16310,14378 16284,14601 16537,14635 16534,14740
 Buschiner Str.: Asphalt	Q0 20160,13287 20263,13271 20364,13255 20482,13241 20600,13232 20746,13209
 Stangeweg: Beton	Q0 21407,16257 21473,16238 21534,16188 21598,16055
-Anemonenstr.: asphaltiert	Q0 23439,4420 23541,4439 23651,4467 23826,4539 23934,4661
+#: corrected_by: srt (asphaltiert, Q0 -> glattes Kopfsteinpflaster, Q1+)
+Anemonenstr.: glattes Kopfsteinpflaster	Q1+ 23439,4420 23541,4439
+#: add_fragezeichen: Ist die Anemonenstr. asphaltiert oder gepflastert?
+Anemonenstr.: asphaltiert	Q0 23541,4439 23651,4467 23826,4539 23934,4661
 Sella-Hasse-Str.: Asphalt	Q0 20901,16916 20843,16829 20771,16690 20948,16612
 Eisfalterweg: Asphalt	Q0 21543,11064 21640,11107
 #: corrected_by: srt (Asphalt Q0 -> Verbundsteinpflaster Q0-)
@@ -3756,7 +3770,8 @@ Maxie-Wander-Str.: Asphalt	Q0 23352,13655 23397,13905 23424,14045 23581,14154 23
 Kosleckweg: schlechtes Kopfsteinpflaster	Q3 9995,4375 10010,4606
 Edeltrautweg: guter Asphalt	Q0 -1809,18413 -1846,18778
 Axenstr.: guter Asphalt	Q0 13894,18121 13802,18230 13704,18364 13595,18523 13557,18575
-Rießerseestr.: Kopfsteinpflaster	Q2 22570,1607 22662,1638 22732,1668
+#: corrected_by: srt (Kopfsteinpflaster -> Asphalt)
+Rießerseestr.: Asphalt	Q0 22570,1607 22662,1638 22732,1668
 Maximilian-Kolbe-Str.: guter Qualität	Q0 -6660,9953 -6603,9918 -6324,9778
 Erlenstr.: mäßiges Kopfsteinpflaster	Q2 4802,4921 4878,4839 4951,4920
 Hellersdorfer Promenade: guter Beton	Q1 24131,15109 24112,15236 24094,15360 24076,15481
@@ -10322,6 +10337,7 @@ Grammestr.: guter Asphalt	Q0 1057,14389 1028,14251
 Rombsweg: schlechtes Kopfsteinpflaster	Q3 444,2008 484,1879
 #: by: K. Wieker: vvv
 #: corrected_by: srt/policy (Q3 -> Q2)
+#: confirmed_by: srt
 Hirschsprung: schlechter Asphalt	Q2 23837,5978 23874,5870
 Wiesenpromenade: guter Asphalt	Q0 23675,5810 23758,5846 23874,5870
 #: by: ^^^
