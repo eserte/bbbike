@@ -600,7 +600,7 @@ Friedrich-Engels-Str.: Kopfsteinpflaster	Q2 9355,19789 9333,19853 9300,19949 926
 Friedrich-Engels-Str.: Kopfsteinpflaster, Radweg auf asphaltierter Nebenfahrbahn	Q0- 8900,20601 8789,20763 8764,20799 8698,20897 8610,21000 8513,21099 8400,21180 8316,21240 8277,21257
 Quickborner Str.: Kopfsteinpflaster	Q2 8170,21304 8022,21476
 # mittlerweile asphaltiert: Quickborner Str.: m‰ﬂiges bis schlechtes Kopfsteinpflaster	Q2 7072,22905 6890,23213 6839,23300 6770,23417
-#: by: Christian Lange: 
+#: by: Christian Lange:
 Quickborner Str.: asphaltiert	Q0 7416,22349 7072,22905 6890,23213 6839,23300 6770,23417
 Marheinekeplatz: Kopfsteinpflaster	Q2 9759,9307 9892,9286 10004,9268
 Schleiermacherstr.: Kopfsteinpflaster	Q2 10001,9234 10004,9268 10032,9456 10067,9667 10135,9806
@@ -1688,9 +1688,10 @@ Straﬂe 8: Asphalt	Q0 19227,20270 19261,20344 19354,20607
 Innsbrucker Str.: Verbundsteinpflaster	Q1 6244,8597 6263,8456
 Im Dol: Fahrbahn gutes Kopfsteinpflaster, Radwege	Q1 3216,6393 3147,6384 3077,6375
 Im Dol: Asphalt	Q0 1757,5976 1811,5973 1912,6024 1946,6042 2193,6214 2219,6231 2367,6336 2499,6428 2562,6473 2611,6495 2659,6499 2742,6488 2934,6385 3077,6375
+#: note: MichaelM meint "Beton"
 Elvirasteig: Asphalt	Q0 -1530,3323 -1495,3444 -1478,3498 -1468,3537 -1461,3569 -1444,3655 -1422,3785 -1409,3834 -1392,3915 -1360,4014 -1323,4111 -1278,4239 -1234,4341
-#: XXX was von beiden?
-Quermatenweg: Asphalt oder Beton	Q0 -1096,4267 -1025,4422 -927,4638 -857,4725 -820,4772 -670,4903 -469,4995 -323,5031 -253,5049 -188,5061 -114,5077 -21,5099 103,5123
+#: by: MichaelM
+Quermatenweg: Asphalt	Q0 -1096,4267 -1025,4422 -927,4638 -857,4725 -820,4772 -670,4903 -469,4995 -323,5031 -253,5049 -188,5061 -114,5077 -21,5099 103,5123
 Matterhornstr: ¸berwiegend guter Asphalt	Q0 -1155,3255 -1187,3264 -1360,3314 -1530,3323 -1628,3311 -1707,3313 -1782,3311 -1885,3319 -1981,3353 -2096,3402 -2137,3408 -2243,3371 -2350,3312 -2381,3297 -2529,3220 -2587,3185 -2642,3135 -2709,3104 -2867,3045 -3023,2965 -3118,2913 -3139,2900
 Altvaterstr.: schlechtes Kopfsteinpflaster	Q3 -2295,3523 -2446,3462 -2503,3447 -2560,3450 -2763,3359 -2920,3246
 Altvaterstr.: Asphalt	Q0 -2920,3246 -3032,3166 -3117,3107
@@ -2036,7 +2037,7 @@ Perelsplatz: kleinteiliges Kopfsteinpflaster	Q1 5809,7712 5636,7709
 Krottnaurerstr.: schlechtes Kopfsteinpflaster	Q3 -2920,3246 -2890,3135 -2867,3045
 Krottnaurerstr.: asphaltiert	Q0 -2867,3045 -2847,2893
 Mˆvenstr. (Wannsee): asphaltiert, aber teilweise Baumwurzeln	Q1 -10269,445 -10252,414
-Trabener Str.: m‰ﬂiger Asphalt	Q2+	 1981,9865 2133,9996
+Trabener Str.: m‰ﬂiger Asphalt	Q2+ 1981,9865 2133,9996
 Gubener Str.: Asphalt mit Sch‰den	Q1 13198,12311 13243,12222 13326,12056 13339,12029 13352,12003
 Slabystr.: sehr guter Asphalt	Q0 19273,5866 19180,6020 19033,6167
 Gauﬂstr.: sehr guter Asphalt	Q0 19180,6020 19290,6114
@@ -2399,7 +2400,7 @@ Birkenstr. (Kaulsdorf): Asphalt	Q0 22268,8718 22293,8858
 Birkenstr. (Kaulsdorf): gutes Kopfsteinpflaster	Q1 22293,8858 22320,8973 22351,9149
 Birkenstr. (Kaulsdorf): Asphalt	Q0 22351,9149 22449,9296 22501,9369 22544,9393 22718,9442
 Eichenstr. (Kaulsdorf): Asphalt	Q0 22494,9036 22596,9202 22624,9244 22697,9291 22830,9361
-Elsenstr. (Kaulsdorf): Asphalt	Q0  22697,9291 22918,9148
+Elsenstr. (Kaulsdorf): Asphalt	Q0 22697,9291 22918,9148
 Seebadstr. (Kaulsdorf, Mahlsdorf): m‰ﬂiger Beton	Q2+ 22886,9017 22918,9148 22947,9277
 Parkstr. (Mahlsdorf): Asphalt	Q0 23047,9186 23095,9206 23342,9095
 Werbellinstr. (Mahlsdorf): Asphalt	Q0 23072,9341 23335,9216 23328,9190 23374,9172
@@ -3602,6 +3603,8 @@ Strehlener Str.: Asphalt	Q0 22652,10392 22538,10477 22403,10523
 ######################################################################
 #: by: anonymous vvv
 # 
+#: note: Wohngebiet, q0
+Recklinghauser Weg: guter Beton	Q0 -5374,15082 -5361,15195 -5355,15277 -5319,15477 -5278,15641
 Georg-Schroeder-Str.: guter Asphalt	Q0 -7513,15368 -7507,15449 -7588,15656 -7637,15793 -7642,15840
 Tessiner Weg: guter Asphalt	Q0 7077,17186 7184,17208
 Am Vierst¸ckenpfuhl: Asphalt	Q0 1333,2083 1377,2102 1422,2259
@@ -5124,7 +5127,7 @@ Kavalierstr.: Asphalt	Q0 10784,18426 10721,18575 10625,18831
 #: by: baatz (n):
 Groscurthstr.: Asphalt	Q0 16583,25440 16572,25407 16530,25276 16467,25092 16423,24935
 #: by: Joerg (Ziegler): vvv
-Linderoder Weg:  m‰ﬂiger fester Sandweg	Q2 23252,792 23209,728 23137,650 23091,618 23037,604
+Linderoder Weg: m‰ﬂiger fester Sandweg	Q2 23252,792 23209,728 23137,650 23091,618 23037,604
 Birkheidering: m‰ﬂiger fester Sandweg	Q2 23209,728 23256,668 23292,601 23293,576 23237,508 23170,468 23042,545 23037,604 23018,697 22995,745 22957,812
 #: by: ^^^
 #: by: karsten grenz: vvv
@@ -6846,7 +6849,7 @@ Wackenbergstr.: Kopfsteinpflaster	Q2 10812,20011 10888,20051 10914,20065 11007,2
 Wackenbergstr.: Betonplatten	Q1 11007,20112 11285,20260 11419,20327 11535,20383
 Wackenbergstr.: unbefestigt (Schlagloch-Sandpiste)	Q2- 11535,20383 11558,20414 11630,20476 11718,20551 11797,20601
 #: by: ^^^
-#: by: Marlen Caemmerer 
+#: by: Marlen Caemmerer
 Okarinastr.: Schotter, Mulden in der Straﬂe	Q3 11558,20414 11506,20507 11424,20653 11421,20674 11435,20709 11502,20781 11569,20845 11657,20915
 #: by: Christian (chriskeys):
 #: corrected_by: srt (gut -> m‰ﬂig, zumindest der nˆrdliche Abschnitt)
@@ -6873,7 +6876,7 @@ Theklastr.: m‰ﬂiger Asphalt, unebener Belag	Q1 3738,2821 3737,2671 3732,2455
 (Weg an der Markuskirche): guter Asphalt	Q0 6342,4783 6288,4704
 Alt-Schˆnow: schlechtes Kopfsteinpflaster	Q3 1375,-27 1147,-72
 #: by: ^^^
-#: by: Jens L. 
+#: by: Jens L.
 Bondickstr.: Kopfsteinpflaster	Q2 3605,21589 3753,21686 4032,21892 4130,21961 4308,22058
 #: by: daniel (without @):
 Baluschekweg: Asphalt	Q0 -5914,13575 -5898,13491 -5877,13375 -5859,13270 -5822,13088 -5784,12858
@@ -6960,7 +6963,7 @@ Groﬂer Spreering: guter Asphalt	Q0 -1020,14084 -1002,14162 -792,14258 -650,14355
 Tollerstr.: schlechtes Kopfsteinpflaster	Q3 7749,19693 7769,19736 7807,19811 7838,19884 7885,19975
 #: by: Nagel, Isolde:
 Parksiedlung Spruch: Verbundsteinpflaster	Q0- 10578,1840 11031,1739 11136,1782 11205,1776
-#: by: Silke D¸rrhauer 
+#: by: Silke D¸rrhauer
 #: by: Rieﬂ (roriess)
 Oxforder Str.: Asphalt	Q0 6547,17037 6636,17147
 #: by: Rieﬂ (roriess)
@@ -7050,7 +7053,7 @@ Bornhagenweg: Kopfsteinpflaster	Q2 11174,-1719 11241,-1740 11318,-1779 11445,-18
 Bornhagenweg: Asphalt	Q0 11445,-1846 11666,-1825 11784,-1809 12058,-1785
 #: by: ^^^
 #: by: jenny (jeenz):
-Nixenstr.: guter Asphalt	Q0  20428,5841 20371,5753
+Nixenstr.: guter Asphalt	Q0 20428,5841 20371,5753
 #: by: Bettina Weyh:
 Wolgaster Str.: Asphalt	Q0 9924,14785 9843,14949
 #: by: Rosemarie Heyne: vvv
@@ -7222,7 +7225,7 @@ Teschendorfer Weg: guter Beton	Q0 7280,20895 7093,20874 6955,20859
 Woelckpromenade: guter Asphalt	Q0 13632,16305 13726,16506 13706,16535 13756,16620 13855,16729
 #: by: Martina (flomo007...):
 Stockumer Str.: guter Asphalt	Q0 2146,18839 2268,18852 2382,18834 2504,18836 2556,18855 2579,18896 2585,19091
-#: by: Diethelm Wandelburg 
+#: by: Diethelm Wandelburg
 Gawanstr.: Beton	Q0 1747,24606 1542,24676 1400,24693 1300,24687 1225,24723 1112,24821
 #: by: Johannes D‰lken: vvv
 Karmeliterweg: guter Asphalt	Q0 854,24387 1033,24429 1156,24494 1250,24533 1330,24553 1410,24562 1458,24561
@@ -7796,7 +7799,7 @@ Zum Kappgraben: Asphalt	Q0 16094,23554 16223,23584 16303,23603
 Zum Kappgraben: Asphalt	Q0 16303,23603 16330,23647
 Zum Kappgraben: Asphalt	Q0 16330,23647 16344,23671 16416,23705 16482,23736 16498,23735 16537,23727 16560,23729 16578,23731 16663,23765 16711,23779 16717,23845
 #: by: ^^^
-#: by: Max Janke 
+#: by: Max Janke
 #: confirmed_by: Bernd Sprenger (guter Asphalt)
 Siedlungsring (Karow): sehr guter Asphalt	Q0 16139,24162 16245,24159 16357,24093 16473,24045 16900,23884 16887,23860 16717,23845 16664,23845 16600,23881 16542,23954 16512,23979 16462,24012
 #: by: Ingrid Br¸njes:
@@ -8226,7 +8229,7 @@ Kuhligkshofstr.: Asphalt	Q0 4991,5531 4911,5428 4869,5386 4821,5345
 Thyssenstr.: guter Asphalt	Q0 6288,19403 6084,19297 5856,19204
 Sittestr.: Asphalt	Q0 5856,19204 5830,19206 5819,19218 5810,19244
 #: by: ^^^
-#: by: rolf boje 
+#: by: rolf boje
 Flˆtnerweg: m‰ﬂiger Beton	Q1- 5751,19443 5676,19424 5714,19290 5781,19236 5810,19244
 #: by: thomas reuter:
 #: note: laut ADFC-Karte "m‰ﬂig geeignet"
@@ -8415,7 +8418,7 @@ Im Hufenschlag: m‰ﬂiger Asphalt	Q1- 4546,19073 4500,19064 4471,19124 4423,19195 
 Jenny-Lind-Str.: m‰ﬂiger Asphalt	Q1 11531,17250 11645,17271 11768,17296
 #: by: Katjana Brennecke:
 Sandhofweg: gutes Verbundsteinpflaster	Q1 5848,272 5795,371 5757,434 5688,402 5644,381
-#: by:  Alexander Nieruch:
+#: by: Alexander Nieruch:
 #: note "Durchfahrt nicht zu empfehlen"
 #: corrected_by: srt (Asphalt/Kopfsteinpflaster, Q2- -> betoniert, Q0)
 Hielscherstr.: betoniert	Q0 7522,19804 7556,19882
@@ -8478,7 +8481,7 @@ Eisvogelweg: Kopfsteinpflaster	Q2 691,4474 661,4492 635,4524 595,4594 542,4699 5
 K¸lzer Str.: Asphalt	Q0 5674,5901 5659,5871 5642,5851 5601,5826
 #: by: Andrea (winnie puh):
 Frankenwaldstr.: guter Asphalt	Q0 -5473,15742 -5452,15804 -5426,15856 -5377,16017 -5356,16064 -5292,16239
-#: by: Peter Sautier 
+#: by: Peter Sautier
 Sollingzeile: Asphalt	Q0 -5356,16064 -5252,16025
 #: by: Salmanzig: vvv
 #: corrected_by: Wolfhard Schleese (Kopfsteinpflaster Q2 -> guter Beton)
@@ -8603,7 +8606,7 @@ Dihlmannstr.: Fahrbahn Kopfsteinpflaster, paralleler Radweg glatt gepflaster	Q1 
 #: by: ^^^
 #: by: Ines Junge: vvv
 Im Eichengrund: gutes Kopfsteinpflaster	Q1 976,15195 921,15359 901,15386 885,15435 877,15474
-#: confirmed_by: Oliver 
+#: confirmed_by: Oliver
 Im Heidewinkel: schlechtes Kopfsteinpflaster	Q3 1065,15229 981,15490
 Im Heidewinkel: schlechtes Kopfsteinpflaster	Q3 772,15460 877,15474 981,15490 968,15576
 #: by: ^^^
@@ -9126,7 +9129,7 @@ Birnbaumring: fester Sandweg	Q2 8661,24952 8751,24988 8791,25019 8825,25052 8871
 #: by: Tine (no mail):
 #: confirmed_by: anonymous
 St.-Galler-Str.: Asphalt	Q0 6418,18491 6584,18474 6597,18473 6704,18462
-#: by: Pimpke (Schmidt): 
+#: by: Pimpke (Schmidt):
 Oeserstr.: guter Asphalt	Q0 2645,20300 2770,20336 2995,20386 3155,20416 3344,20453 3485,20479
 #: by: Jˆrg Krieger: vvv
 #: confirmed_by: anonymous ("guter Asphalt")
@@ -9858,7 +9861,7 @@ Klothildestr.: m‰ﬂiger Beton	Q1- 10812,20011 10948,19737 11018,19597 11048,19531
 #: note: Tempo-30-Zone
 Glarner Str.: Asphalt	Q0 3732,2455 3726,2209
 #: by: Dennis Lucke-Schenk: vvv
-#: note: "Die Strasse ist befestigt und betoniert( kein befestigter B¸rgersteig)  mit einigen Schlaglˆchern und Ausbesserungen, aber f¸r jeden Typ von Fahrrad geeignet. Die Schlaglˆcher sind nur f¸r die Autos bedeutsam."
+#: note: "Die Strasse ist befestigt und betoniert( kein befestigter B¸rgersteig) mit einigen Schlaglˆchern und Ausbesserungen, aber f¸r jeden Typ von Fahrrad geeignet. Die Schlaglˆcher sind nur f¸r die Autos bedeutsam."
 Braunfelsstr.: betoniert	Q0 11668,-171 11633,-64 11564,195 11560,253
 #: note: "Betonierte Strasse. Gut f¸r alle Fahrradtypen. Wenn Trocken Sand auf der Strasse."
 Kambergstr.: betoniert	Q0 11330,-91 11427,-87 11530,-75 11633,-64 11677,-58
@@ -9978,10 +9981,11 @@ Am Langen Weg: guter Asphalt	Q0 -7013,14578 -7011,14693 -7015,14772 -7024,14880 
 #: by: Mark Treseler
 #: note: Q2 eingetragen, aber auch q3 wegen Kopfsteinpflaster
 Alvenslebenplatz: schlechtes Kopfsteinpflaster	Q3 10789,-2451 10833,-2509 10874,-2449
-#: by: ruth (mantei): 
+#: by: ruth (mantei):
 Upstallweg: guter Beton	Q0 9275,3753 9261,3791 9264,3874
 #: by: Isabel (easybelli):
-Hermannstr. (Zehlendorf): guter Asphalt	Q0 -1093,4529 -1025,4422 -947,4303 -851,4148 -843,4116
+#: corrected_by: MichaelM (Asphalt -> Beton)
+Hermannstr. (Zehlendorf): guter Beton	Q0 -1093,4529 -1025,4422 -947,4303 -851,4148 -843,4116
 #: by: Christian Schmidt-G¸tter:
 Groﬂkopfstr.: guter Asphalt	Q0 5167,17725 5363,17667
 #: by: Alexander Presber:
@@ -10231,11 +10235,11 @@ Zwingenberger Weg: guter Beton	Q0 -519,4737 -552,4698 -581,4662
 #: by: arndt rimpler:
 #: confirmed_by: srt
 Ochtumweg: m‰ﬂiger Beton	Q1 13990,14729 13795,14876
-#: by: Doreen Platz 
+#: by: Doreen Platz
 Oehlertplatz: Asphalt	Q0 6892,5330 6932,5311 6950,5320 6951,5338 6939,5352 6896,5347
 #: by: Sascha (saschajana@...)
 Narzissenweg (Altglienicke): Asphalt	Q1 20246,553 20206,464 20214,375
-#: by: Wilde (thwila) 
+#: by: Wilde (thwila)
 Schwarzkoppenstr.: Beton	Q0 19843,357 19937,246
 #: by: Carina (cyndi9227): vvv
 #: add_fragezeichen: gibt es eine Einbahnstraﬂenregelung in der Sch¸tzenstraﬂe, und wenn ja, gilt diese auch f¸r Radfahrer?
@@ -10246,7 +10250,7 @@ Sch¸tzenstr. (Altglienicke): Beton	Q0 19465,-907 19529,-1061
 Sch¸tzenstr. (Altglienicke): Beton	Q0 19599,-885 19588,-860 19550,-775
 #: add_fragezeichen ^^^
 #: by: ^^^
-#: by: Ulrich Dalkmann 
+#: by: Ulrich Dalkmann
 Saint-ExupÈry-Str.: Verbundsteinpflaster	Q1 -8207,7012 -8140,6898 -8087,6806
 #: by: connie zipser: vvv
 #: note: laut http://www.berlin.de/ba-spandau/presse/archiv/20071129.1255.89932.html ab 2008-02-01 neu asphaltiert, Q0, nicht mehr eng
@@ -10257,9 +10261,9 @@ Buchwaldzeile: Feldweg	Q2+ -4682,8292 -4680,8340 -4671,8458 -4664,8532 -4683,865
 Buchwaldzeile: Katzenkopfpflaster	Q2- -4786,8847 -4862,9079
 Plievierstr.: geteert	Q0 -4590,8666 -4683,8650
 #: by: ^^^
-#: by: Dirk Schmidt 
+#: by: Dirk Schmidt
 Vietzer Zeile: guter Asphalt	Q0 2789,19600 2848,19686 2906,19771
-#: by: Hans-Peter Ott 
+#: by: Hans-Peter Ott
 Drenziger Zeile: m‰ﬂiger Asphalt	Q1 2906,19771 2790,19910
 #: by: Claudia Oll, franziska.schaefer vvv
 Tubaweg: Asphalt	Q0 11828,20625 11782,20693 11771,20706
@@ -10734,7 +10738,7 @@ Heinrichstr. (Lichterfelde): guter Beton	Q0- 4433,1800 4542,1729 4605,1633
 #: XXX osm meint "cobblestone", aber ich kann mich auch an losen Sand erinnern...
 Am Groﬂen Fenster: teilweise sehr sandige Stellen	Q3- -4033,4596 -4182,4495 -4671,4524 -4757,4444 -4839,4159 -4918,4087
 #: by: ^^^
-#: by: Denny (...dolph): 
+#: by: Denny (...dolph):
 Sadowastr. (Kaulsdorf): schlechtes Kopfsteinpflaster	Q3 22760,8770 22586,8686 22242,8536 22158,8503 22101,8489
 #: by: Katrin Ahrens: vvv
 #: note: "schmale asphaltdecke, die ca. 2 jahre alt ist. diese teilen sich autos, radfahrer und fuﬂg‰nger. das ganze gebiet ist ... zone 30"
@@ -10839,15 +10843,45 @@ Zerbster Str. (Hellersdorf): guter Beton	Q0- 24451,15181 24413,15372 24357,15429
 Jaehnstr.: guter Asphalt	Q0 -461,3522 -575,3684
 #: by: Fred (ramme...):
 An der Flieﬂwiese: schlechtes Verbundsteinpflaster	Q2 -998,12689 -1022,12743 -1020,12801 -962,12951 -950,13091 -912,13106 -815,13067
-#: by: MichaelM:
+#: by: MichaelM: vvv
 #: note: "Privatstraﬂe/Parkplatzzufahrt, nachts kaum beleuchtet; im Winter auch mal nicht gut ger‰umt"
 #: note: q2 wegen "Parkverkehr" und "kurvenreich" ignoriert
-(Benschallee - Lissabonallee): Asphalt	Q0 -1592,1852 -1590,1985 -1618,2137 -1631,2260 -1604,2324
+(Benschallee - Lissabonallee): Asphalt	Q0 -1592,1852 -1590,1985 -1612,2123
+Lissabonallee [Parkplatzzufahrt]: Asphalt	Q0 -1537,2152 -1612,2123
+Fuﬂweg am McDrive: wassergebundene Decke	Q1 1614,5738 1736,5850
+(Hermannstr. - Krumme Lanke): Waldweg	Q1 -1093,4529 -1134,4706
+Maerckerweg: guter Belag (Asphalt oder Beton)	Q1+ 7559,2375 7578,2536
+Altenauer Weg: Asphalt oder Beton, guter Zustand	Q1+ 5275,1446 5419,1395
+Altenauer Weg: Trampelpfad	Q2 5419,1395 5435,1390
+Goethestr. (Zehlendorf): grobes Kopfsteinpflaster	Q3 -843,4116 -881,4001 -1013,3804 -1204,3662 -1340,3602 -1426,3565 -1461,3569
+#: note: q1, "Bestens zu fahren, aber keine Rennstrecke. Straﬂenbeleuchtung ist zumindest vorhanden, wenn auch wg. B‰umen und Alter nicht sehr hell."
+Meisenstr.: Asphalt	Q0 1613,5258 1964,5196
+Gelfertstr.: Asphalt	Q0 2030,5833 1980,5663 1933,5483 1965,5337 1964,5196 1964,5070 1969,4978 1995,4947 2025,4935 2081,4940 2109,4929 2135,4903 2169,4854
+#: note: "¸belstes"
+Bergengruenstr.: schlechtes Kopfsteinpflaster	Q3 -1500,2964 -1561,3128 -1628,3311
+#: note: "ordentlicher Asphalt, nur Anwohnerverkehr, da Sackgasse f¸r Autos"
+Bergengruenstr.: Asphalt	Q0 -1349,2581 -1410,2726 -1456,2844 -1500,2964
+Bergengruenstr.: Fuﬂweg/Trampelpfad	Q2 -1340,2554 -1349,2581
+#: by: ^^^
 #: by: katrin peters:
 Deisterpfad: guter Asphalt	Q0 10,4932 -6,4997 -17,5066 -21,5099
 #: by: Benny (...meier):
 #: note: "enge Straﬂe", aber q0
 Sibyllenstr.: m‰ﬂiger Asphalt	Q1 6544,3235 6484,3292 6429,3286 6359,3256 6308,3204
+#: by: Christin (...quast):
+#: note: "Wohnsiedlung"
+Schneeberger Str.: guter Asphalt	Q0 23826,14292 23910,14115 23887,14028
+#: by: Markus Mokosch vvv
+Kreppfuhlweg: schlecht asphaltiert bzw. betoniert	Q2 24731,13847 24635,13772
+Reiﬂigerstr.: schlecht asphaltiert bzw. betoniert	Q2 24539,13427 24557,13549 24582,13672 24610,13747 24635,13772
+#: by: ^^^
+#: by: paul-panter...
+Kastanienallee (Mahlsdorf): m‰ﬂiges Kopfsteinpflaster	Q2 23833,8095 23995,8066 24081,8048 24137,8038 24288,8008 24417,7984
+#: by: Simona (2004):
+#: note: ignoriert: q3, "kleine Wohnsiedlung"
+Robert-Koch-Str.: fester Sandweg, schlechte Qualit‰t	Q3 23962,12973 24142,12943 24421,12887
+#: by: Ulrike Hoffmann:
+Brodenbacher Weg: guter Beton	Q0 14897,17093 15178,17134 15278,17152
 ######################################################################
 #: by: Andreas M¸hlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206
@@ -11327,7 +11361,11 @@ Am Waldfriedhof: Beton	Q0 928,4996 964,5141 1000,5184 1081,5260 1102,5280 1131,5
 Taylorstr.: Asphalt	Q0 1535,5155 1557,5187 1567,5228 1556,5327 1581,5463 1541,5499 1482,5525 1279,5435 1212,5353
 Flanaganstr.: Asphalt	Q0 1086,5491 1358,5618 1540,5752 1596,5754 1614,5738 1614,5711 1581,5524 1541,5499
 Flanaganstr.: Asphalt	Q0 1482,5525 1482,5573 1461,5599 1424,5613 1358,5618
-Sprungschanzenweg: Asphalt	Q0 577,5258 158,5103
+#: by: MichaelM:
+Flanaganstr.: guter Beton	Q0- 1596,5754 1622,5794 1640,5876
+#: corrected_by: MichaelM (Asphalt, Q0 -> m‰ﬂiger Beton, Q1)
+#: note: MichaelM: "Qualit‰t ist ausreichend. Relativ enge Wohnstraﬂe."
+Sprungschanzenweg: m‰ﬂiger Beton	Q0 577,5258 158,5103
 Marshallstr.: Asphalt	Q0 1330,4867 1311,4951 1295,5038 1319,5100 1385,5214
 Hochsitzweg: Kopfsteinpflaster	Q1 294,4916 310,4924 388,4951 472,4974 549,4992 625,5004 755,5017
 Am Hegewinkel: Kopfsteinpflaster	Q1 245,5066 310,5084 389,5111 469,5138 544,5165 622,5192
@@ -11705,6 +11743,7 @@ Am Anger: asphaltiert	Q0 2313,5111 2458,5212
 #: note: auch zwei anonymene Eintr‰ge "gute Qualit‰t" und "Asphalt":
 Auf dem Grat: Asphalt	Q0 1644,5397 1812,5365 1842,5342 1965,5337 2062,5314 2075,5075 2081,4940
 Auf dem Grat: Asphalt	Q0 1812,5365 1803,5390 1802,5418 1656,5446
+#: confirmed_by: MichaelM
 Kehler Weg: asphaltiert	Q0 2027,4792 2025,4935
 Bitscher Str.: asphaltiert	Q0 1884,4811 1939,4949 1969,4978
 Darﬂer Str.: m‰ﬂiger Beton	Q1 15281,18025 15568,17962 15715,17930 15783,17915 15881,17899 16277,17830 16468,17792 16492,17787 16671,17672 16779,17521 16837,17440
@@ -12379,9 +12418,9 @@ Katzwanger Steig: Asphalt	Q1 -8204,6068 -8084,5932 -7987,5831 -7954,5798 -7851,5
 Bechsteinweg: Asphalt	Q0 -8204,6068 -8225,6075 -8250,6078 -8382,6000 -8389,5971 -8350,5948
 Bechsteinweg	Q0 -8350,5948 -8262,5901
 Johann-Ewald-Weg: Asphalt	Q1 -8389,5971 -8409,5980 -8502,5930 -8534,5849
-#: by: Malte 
+#: by: Malte
 Haltrichweg: Asphalt	Q0 -8350,5948 -8403,5838
-#: by: Malte 
+#: by: Malte
 Haltrichweg: sandiger Waldweg	Q2 -8403,5838 -8470,5716
 Gredinger Str.: Asphalt	Q0 -7864,5885 -7909,5840
 Gredinger Str.: m‰ﬂiger Asphalt mit Schlaglˆchern	Q2 -7909,5840 -7954,5798
