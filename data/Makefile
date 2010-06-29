@@ -1516,7 +1516,7 @@ check-line-lengths:	.check_line_lengths
 	@touch $@
 
 count-streets:
-	@echo -n "Berlin:        "; grep -v "^(" strassen | ${CUT} -f1 -d"(" | sort -u | wc -l
+	@echo -n "Berlin:        "; grep -v "^(" strassen | grep -v '\[.*\]' | ${CUT} -f1 -d"(" | sort -u | wc -l
 	@echo -n "Landstraﬂen:   "; grep -v "^#" landstrassen landstrassen2 | ${CUT} -f1 | sort -u | wc -l
 	@echo -n "  Potsdam:     "; fgrep "(Potsdam)" landstrassen | grep -v "^(" | ${CUT} -f1 -d"(" | sort -u | wc -l
 	@echo -n "  Oranienburg: "; grep -v "^#" landstrassen | fgrep "(Oranienburg" | ${CUT} -f1 -d"(" | sort -u | wc -l
