@@ -2,10 +2,9 @@
 # -*- perl -*-
 
 #
-# $Id: mapserver_comment.cgi,v 1.52 2009/04/04 11:16:46 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003-2008 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003-2010 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -104,7 +103,7 @@ eval {
     my $by     = $author || $email;
     my $by_long = $author ? $author . ($email ? " <$email>" : "") : $email ? $email . ($author ? " ($author)" : "") : "unknown";
 
-    my $subject = param("subject") || "BBBike/Mapserver-Kommentar";
+    my $subject = param("subject") || "BBBike-Kommentar";
     if ($by) {
 	$subject .= " von $by";
     }
@@ -488,7 +487,7 @@ The full name of the sender.
 
 =item subject
 
-The subject for the Mail. It defaults to "BBBike/Mapserver-Kommentar".
+The subject for the Mail. It defaults to "BBBike-Kommentar".
 
 =item mapx
 
