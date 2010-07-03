@@ -52,7 +52,7 @@ $OLD_AGREP = 0 unless defined $OLD_AGREP;
 use constant FILE_NAME     => 0;
 use constant FILE_CITYPART => 1;
 use constant FILE_ZIP      => 2; # this is not valid for FMT_NORMAL
-use constant FILE_COORD    => 3;
+use constant FILE_COORD    => 3; # the "identification" coordinate
 use constant FILE_INDEX    => 4;
 use constant FILE_STRTYPE  => 5; # This is a placeholder, and not implemented now!
 
@@ -393,10 +393,15 @@ sub look {
 }
 
 # Argument: an array of references (the output of look())
-# Combine streets which are probably the same (same coord, same citypart
-# and/or same
-# zip code)
+# Combine records which form the same street (though same identification coordinate)
 # Returned value has the same format as the input
+#
+# Historical note: before 2010-07 this function did also guesses by
+# checking same citypart and/or same zip code. Unfortunately there are
+# actually two pairs of same-named streets in Berlin (Schoenhauser
+# Str. and Waldstr.) which have the same zip code though being
+# different. Previously Berlin.coords.data did not use the coordinate
+# as an id.
 sub combine {
     my($self, @in) = @_;
     my %out;
@@ -409,9 +414,9 @@ sub combine {
 	if (exists $out{$s->[LOOK_NAME]}) {
 	    foreach my $r (@{ $out{$s->[LOOK_NAME]} }) {
 		my $eq_coord = $s->[LOOK_COORD] && $s->[LOOK_COORD] eq $r->[LOOK_COORD];
-		my $eq_cp = grep { $s->[LOOK_CITYPART] eq $_ } grep { $_ ne "" } @{ $r->[LOOK_CITYPART] };
-		my $eq_zp = grep { $s->[LOOK_ZIP]      eq $_ } grep { $_ ne "" } @{ $r->[LOOK_ZIP] };
-		if ($eq_cp || $eq_zp || $eq_coord) {
+		if ($eq_coord) {
+		    my $eq_cp = grep { $s->[LOOK_CITYPART] eq $_ } grep { $_ ne "" } @{ $r->[LOOK_CITYPART] };
+		    my $eq_zp = grep { $s->[LOOK_ZIP]      eq $_ } grep { $_ ne "" } @{ $r->[LOOK_ZIP] };
 		    push @{ $r->[LOOK_CITYPART] }, $s->[LOOK_CITYPART]
 			unless $eq_cp;
 		    push @{ $r->[LOOK_ZIP] }, $s->[LOOK_ZIP]
@@ -984,7 +989,8 @@ print "*** Errors: $errors\n";
 # Ein Kuriosum in Berlin: sowohl die Waldstr. in Grünau als auch die
 # Waldstr. in Schmöckwitz haben die gleiche PLZ 12527. Erschwerend kommt
 # hinzu, dass Grünau (früher Köpenick) und Schmöckwitz (früher Treptow)
-# heute im gleichen Bezirk liegen. Lösung zurzeit: ignorieren.
+# heute im gleichen Bezirk liegen. Siehe auch combine() für die derzeitige
+# Lösung des Problems.
 
 # Weiterer Fall: es gibt zweimal den Mittelweg, PLZ 12524, aber in
 # unterschiedlichen Stadtteilen im gleichen Bezirk: Altglienicke und
