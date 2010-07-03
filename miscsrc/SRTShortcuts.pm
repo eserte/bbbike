@@ -422,11 +422,11 @@ EOF
 	      [Button => $do_compound->('Real street widths'),
 	       -command => sub { real_street_widths() },
 	      ],
-	      [Button => $do_compound->('Search while type'),
-	       -command => sub { tk_suggest() },
-	      ],
-	      [Button => $do_compound->('Search while type (using BBBikeSuggest)'),
+	      [Button => $do_compound->('Search while type (Berlin/Potsdam streets)'),
 	       -command => sub { show_bbbike_suggest_toplevel() },
+	      ],
+	      [Button => $do_compound->('Search while type (everything)'),
+	       -command => sub { tk_suggest() },
 	      ],
 	      [Cascade => $do_compound->('Situation at point'), -menuitems =>
 	       [
@@ -2071,12 +2071,19 @@ sub show_bbbike_suggest_toplevel {
     my $is_opensearch_file;
     my %alias2street;
     my $is_utf8;
+    my $plz;
     for my $def (["$main::datadir/opensearch.streetnames", 1, 1],
-		 ["$main::datadir/Berlin.coords.data", 0, 0],
+		 ["$main::datadir/Berlin.coords.data", 0, 0], # check for this file, but possibly use the combined cache file
 		) {
 	my($try_srcfile, $try_is_opensearch_file, $try_is_utf8) = @$def;
 	if (-s $try_srcfile) {
-	    $srcfile = $try_srcfile;
+	    if (!$is_opensearch_file) {
+		$plz = main::make_plz();
+		$srcfile = $plz->{File};
+		main::status_message("Should never happen: Keine PLZ-Datenbank vorhanden!", 'die') if (!$plz);
+	    } else {
+		$srcfile = $try_srcfile;
+	    }
 	    $is_opensearch_file = $try_is_opensearch_file;
 	    $is_utf8 = $try_is_utf8;
 	    last;
@@ -2115,8 +2122,6 @@ sub show_bbbike_suggest_toplevel {
 	     my $str = $w->get;
 	     my $coord;
 	     if (!$is_opensearch_file) {
-		 my $plz = main::make_plz();
-		 main::status_message("Keine PLZ-Datenbank vorhanden!", 'die') if (!$plz);
 		 ($str,my(@cityparts)) = Strasse::split_street_citypart($str);
 		 my($matchref) = $plz->look_loop
 		     ($str, Agrep => 3, Max => 1,
