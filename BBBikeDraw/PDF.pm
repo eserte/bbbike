@@ -111,7 +111,7 @@ sub init {
     $self->allocate_colors_and_fonts;
     $self->set_category_colors;
     $self->set_category_outline_colors;
-    $self->set_category_widths;
+    $self->set_category_widths; # Note: will be called again in draw_map (with $m argument)
 
     # grey background
     $page->rectangle(@$page_bbox);
@@ -179,6 +179,14 @@ sub draw_map {
     my $self = shift;
     my $im        = $self->{Image};
     my $transpose = $self->{Transpose};
+
+    {
+	my $m = ($self->{Xk} > 0.06  ? 1   :
+		 $self->{Xk} > 0.04  ? 0.8 :
+		 $self->{Xk} > 0.02  ? 0.6 :
+		                       0.4);
+	$self->set_category_widths($m);
+    }
 
     $self->_get_nets;
     $self->{FlaechenPass} = 1;
