@@ -810,7 +810,7 @@ Bremer Str.: Kopfsteinpflaster	Q2 5956,14168 5943,14049
 Bremer Str.: einige Stellen mit Kopfsteinpflaster	Q1 5943,14049 5907,13746 5882,13548
 Bremer Str.: Asphalt	Q0 5882,13548 5868,13441 5857,13342
 Zum Langen See: Kopfsteinpflaster	Q2 23325,2070 23390,1785 23409,1699 23464,1449 23520,1194
-Mügelbergallee: Kopfsteinpflaster	Q2 23106,1628 23185,1649 23278,1668
+Mügelbergallee: Kopfsteinpflaster	Q2 23102,1637 23185,1649 23278,1668
 Müggelbergplatz: Kopfsteinpflaster	Q2 23293,1697 23278,1668 23303,1650 23321,1678 23293,1697
 Mügelbergallee: Kopfsteinpflaster	Q2 23321,1678 23409,1699 23669,1759
 (Müggelbergallee - Straße zum Müggelturm): Waldweg, meist OK	Q1- 23669,1759 24265,1891 24889,1743
@@ -1296,7 +1296,7 @@ Vorfahrt Reichstagsgebäude: Kopfsteinpflaster, OK	Q1 8400,12417 8399,12616
 Hagenauer Str.: Kopfsteinpflaster	Q2 11154,14985 11187,14763
 Kolmarer Str.: Kopfsteinpflaster	Q2 11299,14112 11354,14187 11418,14290
 südliches Spreeufer: kleinteiliges Kopfsteinpflaster	Q1 7670,12576 7710,12585 7745,12603
-südliches Spreeufer: glattes Pflaster	Q1 7745,12603 7782,12623 7934,12734 8006,12853 8032,12889 8056,12921 8099,12953 8169,12963 8235,12969 8310,12947 8361,12925 8427,12871 8462,12824 8473,12753 8495,12651 8554,12593
+südliches Spreeufer: glattes Pflaster	Q1 7745,12603 7782,12623 7934,12734 8006,12853 8032,12889 8056,12921 8099,12953 8169,12963 8235,12969 8310,12947 8361,12925 8427,12871 8462,12824 8473,12753 8495,12651 8596,12576
 Glasbläserallee: Verbundsteinpflaster	Q0 14747,10108 14835,10272 14888,10385
 Fischzug: Asphalt	Q0 14835,10272 14920,10225 14993,10188 15050,10160 15090,10140
 Fischzug: Kopfsteinpflaster, teilweise auch Verbundsteinpflaster	Q2 15090,10140 15153,10112 15219,10079
@@ -3464,6 +3464,13 @@ Brandenburgplatz: betoniert	Q0 23346,5723 23328,5737
 Waldstr. (Köpenick): Kopfsteinpflaster	Q2 23328,5737 23327,5817
 Seelenbinderstr.: Asphalt	Q0 23333,5710 23346,5723 23634,5873
 Erpeweg: unbefestigte Straße	Q2 23729,5940 23758,5846
+Tegernseestr.: Asphalt	Q0 22287,1165 22209,1278 22163,1363 22128,1443 22095,1572
+Kochelseestr.: Asphalt	Q0 22462,1547 22364,1487
+Kochelseestr.: schlechtes Kopfsteinpflaster	Q3 22364,1487 22247,1409
+Kochelseestr.: Asphalt	Q0 22247,1409 22163,1363
+Walchenseestr.: Asphalt	Q0 22453,1294 22364,1487 22334,1553
+Don-Ugoletti-Platz: Kopfsteinpflaster	Q2 22449,1569 22462,1547
+Don-Ugoletti-Platz - Regattastr.: Beton	Q1 22449,1569 22478,1602 22549,1644
 ######################### User Contributions #################################
 #: by: Dominik Seelow vvv
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
@@ -7072,7 +7079,7 @@ Gürtelstr.: schlechtes Kopfsteinpflaster	Q3 13459,15653 13574,15585 13606,15571 
 Allee der Kosmonauten - Biesdorfer Promenade: Asphalt	Q0 19821,13604 19826,13444 19835,13152 20068,13036
 #: by: ^^^
 #: by: Rainer Mischke: vvv
-Niebergallstr.: mäßiges Kopfsteinpflaster	Q2 23106,1628 23144,1439
+Niebergallstr.: mäßiges Kopfsteinpflaster	Q2 23102,1637 23144,1439
 Niebergallstr.: Asphalt	Q0; 23144,1439 23158,1379
 Niebergallstr.: mäßiges Kopfsteinpflaster	Q2; 23158,1379 23144,1439
 Niebergallstr.: mäßiges Kopfsteinpflaster	Q2 23158,1379 23168,1335 23202,1192
@@ -9015,7 +9022,9 @@ Frank-Zappa-Str.: guter Beton	Q0 18598,14575 18896,14649 18868,14745 18938,14768
 #: confirmed_by: Dominik (germanredsquad) ("gut"):
 Birkhuhnweg: Asphalt	Q0 15150,3470 15042,3527 14991,3547 14911,3568 14854,3587 14811,3597 14761,3580
 #: by: Michael Weihrauch: vvv
+#: confirmed_by: srt
 Ammerseestr.: guter Asphalt	Q0 22367,1230 22280,1351 22247,1409
+#: confirmed_by: srt
 Ammerseestr.: schlechtes Kopfsteinpflaster	Q3 22247,1409 22218,1463 22204,1496
 Ammerseestr.: guter Asphalt	Q0 22204,1496 22178,1589 22166,1636
 #: by: ^^^
@@ -10882,6 +10891,9 @@ Kastanienallee (Mahlsdorf): mäßiges Kopfsteinpflaster	Q2 23833,8095 23995,8066 2
 Robert-Koch-Str.: fester Sandweg, schlechte Qualität	Q3 23962,12973 24142,12943 24421,12887
 #: by: Ulrike Hoffmann:
 Brodenbacher Weg: guter Beton	Q0 14897,17093 15178,17134 15278,17152
+#: by: Katharina (wer):
+#: note: "einige Fußgänger, q0" ignoriert
+Straße 44 (Karow): guter Asphalt	Q0 15464,21894 15377,21921 15281,21960 15121,22016 15053,22039 14932,22083
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206

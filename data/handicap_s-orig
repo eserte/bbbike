@@ -191,7 +191,7 @@ Am Volkspark: Parkweg	q1 5745,8194 5934,8220
 Karl-Marx-Str. - Marchlewskistr.: Gehweg	q2 12869,12425 12950,12340 12985,12303
 Lange Str. [vor Kaufhof]: Fußgänger	q2 12409,11902 12522,11837
 Gotenstr./Cheruskerstr. - Kolonnenstr.: Fußgänger	q2 7488,8768 7548,8879
-Nettelbeckplatz: Fußgänger	q2 8035,15411 7989,15412 7891,15417
+Nettelbeckplatz: Fußgänger	q2 8030,15399 7989,15412 7891,15417
 Nettelbeckplatz: Fußgänger	q2 7953,15362 7989,15412
 Nettelbeckplatz: Fußgänger	q2 7987,15501 7989,15412
 Volkspark Wilmersdorf: kombinierter Rad- und Fußweg	q1 5919,8417 5805,8352 5666,8345 5533,8478 5481,8506
@@ -682,6 +682,8 @@ Emrichstr. [Wohngebiet]: enge Straße	q1 25353,4939 25443,4936 25453,5091 25467,5
 Büxensteinallee: enger Weg	q1 22521,1134 22368,1081 22228,1071
 Büxensteinallee: Marktstände, Fußgänger	q3 22228,1071 22162,1067
 (Sportallee): Fußgänger	q1 22577,1002 22368,1081
+#: XXX_prog: Bordstein am Don-Ugoletti-Platz und an der Regattastr., falls man links abbiegt
+Don-Ugoletti-Platz - Regattastr.: Fußgänger, Bordsteine	q1 22449,1569 22478,1602 22549,1644
 ######################### User Contributions #################################
 #: by: Michael Kiekbusch
 #: corrected_by: srt/policy (q4 -> q3-)
@@ -937,7 +939,7 @@ Albestr.: enge Straße	q1 5422,7461 5448,7436 5640,7435 5811,7433
 #: by: Michael Dinter:
 Leuthener Str.: enge Straße	q1 7411,8364 7494,8364 7578,8358 7640,8359 7716,8356
 #: by: Wilfried Flade:
-südliches Spreeufer: besonders an Wochenenden tagsüber sehr viele Fußgänger	q2 7745,12603 7782,12623 7934,12734 8006,12853 8032,12889 8056,12921 8099,12953 8169,12963 8235,12969 8310,12947 8361,12925 8427,12871 8462,12824 8473,12753 8495,12651 8554,12593
+südliches Spreeufer: besonders an Wochenenden tagsüber sehr viele Fußgänger	q2 7745,12603 7782,12623 7934,12734 8006,12853 8032,12889 8056,12921 8099,12953 8169,12963 8235,12969 8310,12947 8361,12925 8427,12871 8462,12824 8473,12753 8495,12651 8596,12576
 #: by: Julia (jbrauch):
 Berchtesgadener Str.: Fußgänger, Bordsteine	q2 6361,9175 6360,9194
 #: by: Uta Voigt:
@@ -1913,3 +1915,5 @@ Ladenstr.: Einkaufsstraße, viele Fußgänger	q4 374,4779 171,4677
 #: note: "Angabe zur eingeschränkten Geschwindigkeit ist meine Empfehlung, man KANN auch schneller, aber es ist dann nicht toll (parkende Autos, Seitenstraßen, bisschen wellig, bisschen eng). Für PKW ist hier Tempo 30."
 Gelfertstr.	q0- 2030,5833 1980,5663 1933,5483 1965,5337 1964,5196 1964,5070 1969,4978 1995,4947 2025,4935 2081,4940 2109,4929 2135,4903 2169,4854
 #: by: ^^^
+#: by: Christin (...quast)::
+(Maxie-Wander-Str. - Kastanienallee): Fußgängerweg	q1 23826,14292 23877,14315
