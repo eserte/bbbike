@@ -1426,7 +1426,7 @@ Prieroser Str.: Qualität?	? 28540,-19744 28842,-19704 29515,-19702
 Neubrücker Str.: Qualität?	? 28231,-19792 28336,-19948
 Neubrücker Str.: Qualität?	? 28363,-19964 28514,-20071
 Bellevuepark: ist ein Weg für Radfahrer offiziell freigegeben?	? 22798,5731 22790,5568 22733,5569 22701,5428 22628,5340
-Idsteiner Str.: Qualität (laut ADFC-Karte zwischen Königsweg und Hegauer Weg mäsig, danach bis Ludwigsfelder Str. gut geeignet)?	? -163,1564 -285,2015 -326,2177 -409,2510
+Idsteiner Str.: Qualität (laut ADFC-Karte zwischen Hegauer Weg und Ludwigsfelder Str. gut geeignet)?	? -163,1564 -285,2015
 #: XXX: schien mir von der S-Bahn so auszusehen: hinter dem Knick Asphalt
 Bülowstr. (Zehlendorf): Qualität zwischen "Knick" und Fürstenstr?	? -426,2978 -662,2998
 Bülowstr. (Zehlendorf): Qualität (laut ADFC-Karte bis auf einen kleinen Abschnitt am Mexikoplatz gut geeignet)?	? -662,2998 -872,3133 -1052,3276 -1054,3328
@@ -1654,8 +1654,6 @@ Hertwigswalder Steig: Art der Fahrbahn (Beton, Asphalt ...)?	? 22812,12129 22917
 Hartmannsweilerweg: Ist der Hartmannsweilerweg (abschnittsweise) eine Einbahnstraße? Nur für Autofahrer oder auch für Radfahrer?	? 17,3471 41,3510 16,3744
 #: XXX Angaben von unklar: Marc (michgibsnich): Kopfsteinpflaster, Q2, aber Busspur? Bordsteinkanten?
 Sperberstr. (Konradshöhe): Qualität?	? -1681,19955 -1869,19974 -2073,19990 -2216,20003
-#: XXX Eintrag von Reinhard Stenzel ("Q2") fraglich: die Straße führt laut luise-berlin nicht zum Königsweg
-Radolfzeller Weg: Qualität?	? -35,2434 -4,2413 23,2356
 #: XXX anonymous meint Asphalt ohne weitere Angaben und erwähnt keine Einbahnstraße
 Zellerfelder Str.: Qualität? Einbahnstraße? Auch für Radfahrer?	? 11468,19106 11526,18929
 Oranienburger Str. - Wilhelm-Gericke-Str.: kann man als Radfahrer direkt von der Oranienburger Str. in die Wilhelm-Gericke-Str. gelangen	? 5545,19909 5598,19912
@@ -1834,7 +1832,6 @@ Heidekrugstr.: Qualität des nördlichen Abschnitts?	? 23482,6649 23489,6463
 Uhlenhorster Str.: Qualität?	? 23353,6384 23299,6541 23261,6683 23217,6779
 Rautendeleinweg: Qualität?	? 23164,6753 23112,6867 23082,6925 23052,6957 22985,7007
 Frau-Holle-Str.: Qualität?	? 23471,6776 23412,6753 23261,6683
-Hoernlestr.: Qualität?	? 22645,6431 22509,6519 22301,6683 22265,6689 22192,6659
 Hoernlestr. - Gehsener Str.: Qualität des Sackgassenabschnitts?	? 22301,6683 22351,6756
 Hoernlestr. - Gehsener Str.: Durchfahrt für Radfahrer möglich? Durchfart für Autos möglich? Ausschilderung? Qualität?	? 22351,6756 22395,6821
 #: XXX_osm: fehlt bei osm
@@ -2790,7 +2787,6 @@ Leonardo-da-Vinci-Str.: Qualität?	? -8566,6951 -8490,6962 -8421,6976 -8350,6987 
 Jules-Verne-Str.: Qualität?	? -8458,6721 -8377,6764 -8318,6797 -8260,6831 -8201,6863 -8140,6898 -8080,6933 -8016,6969 -7958,7004 -7900,7036
 Lerchenstr.: Qualität? Ist die Straße eine Einbahnstraße? Wenn ja, gilt die Einbahnstraßenregelung nur für Autofahrer oder auch für Radfahrer?	? -8793,7115 -8802,7049 -8801,6977 -8619,7012
 Storchenstr.: Qualität? Ist die Straße eine Einbahnstraße? Wenn ja, gilt die Einbahnstraßenregelung nur für Autofahrer oder auch für Radfahrer?	? -8675,7148 -8793,7115
-Johann-Landefeldt-Str.: Qualität?	? -8619,7012 -8598,7018 -8532,7041 -8466,7064 -8404,7087 -8341,7108 -8275,7131 -8207,7156 -8138,7182 -8074,7204 -8011,7229 -7948,7252 -8032,7437 -8055,7489
 Rex-Waite-Str.: Qualität?	? -8658,7157 -8597,7184 -8534,7212 -8472,7240 -8412,7267 -8348,7292 -8283,7325 -8215,7354 -8155,7379 -8090,7408 -8032,7437
 #: XXX_osm bei osm nur "Gatower Heide"
 An der Gatower Heide: Qualität?	? -8055,7489 -8121,7478 -8191,7466 -8258,7454 -8335,7441 -8408,7429 -8476,7417 -8547,7404 -8615,7392 -8682,7381 -8728,7376 -8738,7365
@@ -2881,19 +2877,15 @@ Rondellstr.: Qualität (Laut OpenStreetMap Kopfsteinpflaster)?	? -179,3204 -123,3
 Waldstr. (Zehlendorf): Qualität (Laut OpenStreetMap Kopfsteinpflaster)?	? -205,3063 -123,3111
 Werderstr. (Zehlendorf): Qualität (Laut OpenStreetMap Kopfsteinpflaster)? Gibt es eine Durchfahrtmöglichkeit zur Potsdamer Str., und wenn ja, kann die Potsdamer Str. dort auch überquert werden?	? -431,3225 -309,3016
 Bischweilerstr.: Qualität?	? -342,3967 -397,3925 -310,3804 -250,3846
-Himmelsteig: Qualität?	? -635,4856 -515,4820 -455,4808
-Im Kinderland: Qualität?	? -455,4808 -465,4794 -515,4820
+Im Kinderland: Qualität?	? -458,4779 -547,4827
 Ithweg: Qualität?	? -323,5031 -301,4948 -265,4864 -190,4776
-Süntelsteig: Qualität?	? -188,5061 -145,4916 -97,4849
 Kleiststr. (Zehlendorf): Qualität?	? -968,4184 -1032,3991 -1086,3907 -1230,3780
 Schlickweg: Qualität?	? -1683,3723 -1731,3833 -1734,3905
 #: XXX: zur Straße Am Schlachtensee hin für Autos gesperrt.
 Flachsweg (Zehlendorf): Qualität?	? -1856,3877 -1803,3757 -1785,3716 -1787,3690
-Bergengruenstr.: Qualität nördlich der Matterhornstr.?	? -1759,3634 -1628,3311
 #: XXX: NN zur Potsdamer Chaussee
 Gilgestr.: Qualität? Ist es möglich, als Radfahrer bis zur Potsdamer Chaussee zu fahren	? -1181,2913 -1100,2697 -1085,2653
 Veronikasteig: Qualität?	? -1403,3047 -1226,3102
-Joachimstr. (Zehlendorf): Qualität?	? -1654,2909 -1575,2934 -1500,2964
 Reifträgerweg: Qualität?	? -2367,3006 -2529,3220 -2638,3281 -2763,3359
 #: XXX: laut OSM ein footway
 Strömannstr.: Ist die Strömannstr. zwischen Achillesstr. und Zum Kappgraben für Autofahrer gesperrt?	? 15899,23508 15963,23632
@@ -3030,9 +3022,6 @@ Grünz - Radewitz: Qualität?	? 59477,99336 59588,99540 59496,99728 59670,99855
 Kummerow - Woltersdorf: Qualität (an der östlichen Seite: Feldweg)?	? 63468,83897 63719,84166 63909,84187 65384,85315
 Kummerow - Kunow: Qualität?	? 63202,83842 63468,83897 63701,83897 64030,83689 64199,83388 64560,83095 65187,82762 65732,81931 65968,82128 66459,82296 66731,82468 66943,82495
 Kummerow - Jamikow: Qualität?	? 63202,83842 62902,83983 61889,84194 61022,84291
-#: XXX unsicherer Eintrag von anonymous: Asphalt, Q2, keine Einbahnstraße erwähnt, falsch geschriebener Straßenname
-#: XXX ein anderer Eintrag von anonymous: Beton, Q2, viele Schlaglöcher, q3
-Huttwiler Weg: Qualität? Ist die Straße eine Einbahnstraße? Wenn ja, gilt die Einbahnstraßenregelung nur für Autofahrer oder auch für Radfahrer?	? 7071,18232 7120,18295 7098,18383 7035,18413 6961,18453 6913,18460
 Ragazer Str.: Kann die Lindauer Allee in Höhe der Ragazer Str. überquert werden?	? 7035,18413 7119,18582
 Walliser Str.: Qualität? Ist die Durchfahrt zur Lindauer Allee für Autofahrer gesperrt?	? 6887,18330 6913,18460 6924,18599
 Gamsbartweg: Qualität?	? 7599,18421 7551,18515
@@ -3916,7 +3905,6 @@ Ranunkelweg: Qualität?	? 16905,2603 16788,2461 16666,2437
 Windenweg: Qualität? Existiert für Radfahrer eine Verbindung zur Stubenrauchstr.?	? 16342,2338 16392,2299
 Kleestr.: Qualität?	? 16484,2313 16392,2299 16325,2207 16318,2146 16303,2032
 Meldenweg: Qualität?	? 16303,2032 16482,2012
-Kornblumenring: Qualität?	? 16484,2313 16678,2330 16812,2347 16899,2344 16954,2314 17076,2164 17080,2074 17069,1986 16941,1883 16924,1895 16828,2006 16797,2017
 Lupinenweg: Qualität? Existiert für Radfahrer eine Verbindung zur Prierosser Str.?	? 16924,1895 16863,1844
 Kalmusweg: Qualität?	? 16591,1843 16512,1892 16449,1911
 Bocksbartweg: Qualität?	? 16629,1995 16519,1912 16512,1892
@@ -5069,8 +5057,6 @@ Schönower Str. (Teltow): Qualität?	? 1684,-927 1722,-773 1713,-652 1677,-582 161
 #: XXX: laut http://www.nationaler-radverkehrsplan.de/neuigkeiten/news.php?id=2339 mit Radweg
 Zeppelinufer (Teltow): Qualität?	? 1457,-470 1338,-426 1134,-370 818,-298
 Am Klarpfuhl - Mauerweg: besteht eine Verbindung für Radfahrer? Qualität?	? 18195,-277 18218,-325
-#: by: http://fahrrad.wikia.com/wiki/Fahrradstra%C3%9Fe/Liste_von_Fahrradstra%C3%9Fen#Berlin
-Lauenburger Str.: Ist die Lauenburger Str. eine Fahrradstraße?	? 5883,4985 5909,5072 5939,5169 5976,5293 6002,5424 6019,5785 6018,5884 6017,5975 6008,6067 6019,6087 6014,6160 5996,6238 5925,6311 5865,6373 5803,6403
 Baumgarten - Grünow: Qualität?	? 45393,105220 45647,104851 45619,104429 45554,104267 45590,103655 46020,102452 45794,102248 45805,102072
 Julius-Rütgers-Str. (Erkner): Qualität?	? 34293,3076 34391,3099 34416,3127 34671,3421 34553,3539
 Am Wuhleufer: gibt es auch im südlichen Abschnitt einen Radweg?	? 21498,7153 21683,6946 21774,6880

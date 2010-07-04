@@ -17039,9 +17039,9 @@ EOF
 userdel	2::inwork 18702,39267 19045,39387
 EOF
      },
-     { from  => 1261682930, # 2009-12-24 20:28
-       until => 1308175199, # 2011-06-15 23:59
-       text  => 'Eisenhutweg (Adlershof) Richtung Rudower Chaussee zwischen Stubenrauchstr. und Rudower Chaussee Baustelle, Fahrtrichtung gesperrt (bis Mitte 2011)',
+     { from  => 1261046820, # 2009-12-17 11:47
+       until => 1314882000, # 2011-09-01 15:00
+       text  => 'Eisenhutweg (Adlershof): Baustelle, Fahrtrichtung Richtung Rudower Chaussee gesperrt, 18.12.2009 11:47 Uhr bis 01.09.2011 15:00 Uhr ',
        type  => 'handicap',
        source_id => 'IM_014849',
        data  => <<EOF,
@@ -17607,11 +17607,11 @@ EOF
      },
      { from  => 1263121920, # 2010-01-10 12:12
        until => 1338472800, # 2012-05-31 16:00
-       text  => 'Lahnstr. (Neukölln): Baustelle, Fahrtrichtung gesperrt (bis Mitte 2012) Richtung Grenzallee zwischen Naumburger Str. und Mierstr., 11.01.2010 12:12 Uhr bis 31.05.2012 16:00 Uhr ',
+       text  => 'Lahnstr. (Neukölln): Baustelle, Fahrtrichtung gesperrt (bis Mitte 2012) Richtung Grenzallee zwischen Niemetzstr. und Mittelbuschweg, 11.01.2010 12:12 Uhr bis 31.05.2012 16:00 Uhr ',
        type  => 'handicap',
        source_id => 'IM_014905',
        data  => <<EOF,
-userdel	q4::inwork; 13627,7047 13500,7018 13278,6967
+userdel	q4::inwork; 13891,7107 13627,7047 13500,7018
 EOF
      },
      { from  => 1274300387, # 2010-05-19 22:19
@@ -17878,6 +17878,40 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork -903,6923 -643,7252 -348,7641 425,8766
+EOF
+     },
+     { from  => 1278267896, # 2010-07-04 20:24
+       until => 1293836400, # 2011-01-01 00:00
+       text  => 'Tauche: B87: Ausbau der Ortslage Trebatsch hier: Vollsperrung der Spreebrücke B 87, Ortslage Trebatsch, 24.02.2010 bis 31.12.2010 ',
+       type  => 'gesperrt',
+       source_id => 'LS/O-SG33-F/10/013',
+       data  => <<EOF,
+userdel	2::inwork 63609,-34428 63520,-34874
+EOF
+     },
+     { from  => 1278267949, # 2010-07-04 20:25
+       until => 1280527200, # 2010-07-31 00:00
+       text  => 'Wandlitz: L315: Grundhafter Ausbau der L 315 unter Vollsperrung Prenden - Klosterfelde, 26.04.2010 bis 30.07.2010 ',
+       type  => 'gesperrt',
+       source_id => 'LS/O-SG33-E/10/041',
+       data  => <<EOF,
+userdel	2::inwork 19609,43128 19107,43180 18720,43107 17840,43420 17394,43597 17006,43801 16258,43457 15783,43227 15632,43100 14941,42957
+EOF
+     },
+     { from  => 1279836000, # 2010-07-23 00:00
+       until => 1280613600, # 2010-08-01 00:00
+       text  => 'Alt-Rudow zwischen Köpenicker Straße und Neudecker vom 24.07.2010 bis zum 31.07.2010 vollständig gesperrt. Die Einbahnstraßenregelung Am Hanfgraben wird umgekehrt. ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 16849,1437 16960,1282
+EOF
+     },
+     { from  => 1278270043, # 2010-07-04 21:00
+       until => 1280613599, # 2010-07-31 23:59
+       text  => 'Wilhelminenhofstraße zwischen Rathenau- und Firlstraße vom 7. bis 31. Juli 2010 in beiden Richtungen für den Fahrzeugverkehr gesperrt; die Rathenaustraße in Richtung Plönzeile als Einbahnstraße ausgewiesen.',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork; 18970,6110 18861,6000 18766,6067 18670,6132 18574,6197 18473,6265
 EOF
      },
     );

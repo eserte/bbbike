@@ -3610,6 +3610,7 @@ Strehlener Str.: Asphalt	Q0 22652,10392 22538,10477 22403,10523
 ######################################################################
 #: by: anonymous vvv
 # 
+Johann-Landefeldt-Str.: Asphalt	Q0 -8619,7012 -8598,7018 -8532,7041 -8466,7064 -8404,7087 -8341,7108 -8275,7131 -8207,7156 -8138,7182 -8074,7204 -8011,7229 -7948,7252 -8032,7437 -8055,7489
 #: note: Wohngebiet, q0
 Recklinghauser Weg: guter Beton	Q0 -5374,15082 -5361,15195 -5355,15277 -5319,15477 -5278,15641
 Georg-Schroeder-Str.: guter Asphalt	Q0 -7513,15368 -7507,15449 -7588,15656 -7637,15793 -7642,15840
@@ -9231,8 +9232,10 @@ Hagenower Ring - Am Luchgraben: gewalzter Sandweg	Q1 17009,19104 17021,19258 170
 #: confirmed_by: anonymous:
 Busonistr.: Asphalt	Q0 14865,23388 15033,23432 15167,23470 15295,23508 15324,23534 15426,23678 15471,23746 15520,23824 15552,23880 15569,23908 15601,23963 15675,24086 15745,24194 15760,24217
 #: by: benjamin (where_are_you...) vvv
+#: confirmed_by: Peter...Rybczyk: vvv
 Köllnische Str.: schlechtes Kopfsteinpflaster	Q3 19031,5316 18999,5237 18942,5236 18820,5275 18659,5330
 Köllnische Str.: sehr guter Asphalt	Q0 18659,5330 18307,5440
+#: confirmed_by: ^^^
 #: by: ^^^
 #: by: Ruth Berendes-... vvv
 Delmer Steig: Asphalt	Q0 12011,1361 11954,1407 11922,1445 11895,1489
@@ -10853,6 +10856,17 @@ Jaehnstr.: guter Asphalt	Q0 -461,3522 -575,3684
 #: by: Fred (ramme...):
 An der Fließwiese: schlechtes Verbundsteinpflaster	Q2 -998,12689 -1022,12743 -1020,12801 -962,12951 -950,13091 -912,13106 -815,13067
 #: by: MichaelM: vvv
+#: note: "Anwohnerstraße, Asphalt, guter Belag, sehr gut zu fahren."
+Süntelsteig: Asphalt	Q0 -188,5061 -145,4916 -97,4849
+#: note: "... aus gegossenen Beton-Abschnitten hergestellt, manche haben sich gehoben und bilden Kanten"
+Himmelsteig: Beton	Q1 -635,4856 -547,4827 -455,4808
+#: note: Eintrag von Reinhard Stenzel ("Q2") fraglich: die Straße führt laut luise-berlin nicht zum Königsweg
+Radolfzeller Weg: breiter Sandweg	Q2 -35,2434 -4,2413 23,2356
+#: note: "optimal zu fahren (asphaltiert und breit, zwischen Hegauer und Berlepsch (etwas/wenig) Durchgangsverkehr. sonst nur Anliegerverkehr)"
+#: note: laut ADFC-Karte zwischen Königsweg und Hegauer Weg mäßig
+Idsteiner Str.: asphaltiert	Q0 -285,2015 -326,2177 -409,2510
+#: note: "Ausgeprägtes Kopfsteinpflaster, schlechte Befahrbarkeit."
+Joachimstr. (Zehlendorf): schlechtes Kopfsteinpflaster	Q3 -1654,2909 -1575,2934 -1500,2964
 #: note: "Privatstraße/Parkplatzzufahrt, nachts kaum beleuchtet; im Winter auch mal nicht gut geräumt"
 #: note: q2 wegen "Parkverkehr" und "kurvenreich" ignoriert
 (Benschallee - Lissabonallee): Asphalt	Q0 -1592,1852 -1590,1985 -1612,2123
@@ -10866,6 +10880,8 @@ Goethestr. (Zehlendorf): grobes Kopfsteinpflaster	Q3 -843,4116 -881,4001 -1013,3
 #: note: q1, "Bestens zu fahren, aber keine Rennstrecke. Straßenbeleuchtung ist zumindest vorhanden, wenn auch wg. Bäumen und Alter nicht sehr hell."
 Meisenstr.: Asphalt	Q0 1613,5258 1964,5196
 Gelfertstr.: Asphalt	Q0 2030,5833 1980,5663 1933,5483 1965,5337 1964,5196 1964,5070 1969,4978 1995,4947 2025,4935 2081,4940 2109,4929 2135,4903 2169,4854
+#: note: "Kopfsteinpflastergebirge"
+Bergengruenstr.: schlechtes Kopfsteinpflaster	Q3 -1759,3634 -1628,3311
 #: note: "übelstes"
 Bergengruenstr.: schlechtes Kopfsteinpflaster	Q3 -1500,2964 -1561,3128 -1628,3311
 #: note: "ordentlicher Asphalt, nur Anwohnerverkehr, da Sackgasse für Autos"
@@ -10894,6 +10910,16 @@ Brodenbacher Weg: guter Beton	Q0 14897,17093 15178,17134 15278,17152
 #: by: Katharina (wer):
 #: note: "einige Fußgänger, q0" ignoriert
 Straße 44 (Karow): guter Asphalt	Q0 15464,21894 15377,21921 15281,21960 15121,22016 15053,22039 14932,22083
+#: by: Sophie Baudach:
+#: note: "glatter dunkler Straßenbelag... die Straße ist z.B. schön zum skaten..."
+Hoernlestr.: Asphalt	Q0+ 22645,6431 22509,6519 22301,6683 22265,6689 22192,6659
+#: by: arnulf knorr:
+#: note: anonymous meinte: Asphalt, Q2, keine Einbahnstraße erwähnt, falsch geschriebener Straßenname
+#: note: ein anderer anonymous meinte: Beton, Q2, viele Schlaglöcher, q3
+Huttwiler Weg: mäßiger Asphalt	Q1- 7071,18232 7120,18295 7098,18383 7035,18413 6961,18453 6913,18460
+#: by: Yvonne Goedecke
+#: note: "q0, Wohngebiet"
+Kornblumenring: guter Asphalt	Q0 16484,2313 16678,2330 16812,2347 16899,2344 16954,2314 17076,2164 17080,2074 17069,1986 16941,1883 16924,1895 16828,2006 16797,2017
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206

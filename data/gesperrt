@@ -552,6 +552,7 @@ Mollstr. (Richtungsfahrbahn)	1::igndisp 11723,13139 11843,13090 11904,13075 1195
 Mollstr. (Richtungsfahrbahn)	1::igndisp 11985,13075 11966,13074 11905,13069 11881,13072 11839,13083 11739,13131 11723,13139
 Lötschbergstr.	1s 20161,11715 20150,11512
 Brodenbacher Weg	1 15178,17134 14897,17093
+Huttwiler Weg	1 6913,18460 6961,18453 7035,18413 7098,18383 7120,18295 7071,18232
 Am Neuen Garten	1 -12166,1384 -12212,1201 -12276,831 -12302,718
 Am Neuen Garten	1 -12332,585 -12582,127
 Hochstraße	3nocross::ignrte -11399,-1339 -11461,-1424 -11540,-1543
@@ -802,6 +803,8 @@ Mittelstreifen	3nocross::ignrte 11002,1211 11155,1273 11198,1291
 Muschelkalkweg -> Marienfelder Chaussee: Mittelstreifen	3::igndisp 11120,1384 11155,1273 11198,1291
 Marienfelder Chaussee -> Muschelkalkweg: Mittelstreifen	3::igndisp 11002,1211 11155,1273 11120,1384
 Straßenbahntrasse	3nocross::ignrte 22539,6258 22645,6431 22682,6495
+Mahlsdorfer Str. -> Hoernlestr.: Straßenbahntrasse	3::igndisp 22539,6258 22645,6431 22509,6519
+Hoernlestr. -> Mahlsdorfer Str.: Straßenbahntrasse	3::igndisp 22509,6519 22645,6431 22682,6495
 Mittelstreifen	3nocross::ignrte 11021,17889 11045,17893 11111,17905
 Kissingenstr. -> Stubnitzstr.: Mittelstreifen	3::igndisp 11021,17889 11045,17893 11102,17942
 Stubnitzstr. -> Kissingenstr.: Mittelstreifen	3::igndisp 11102,17942 11045,17893 11111,17905

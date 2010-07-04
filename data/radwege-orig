@@ -1320,7 +1320,7 @@ gemeinsamer Rad- und Gehweg	RW2; 20549,11659 20633,11651 20963,11618 21108,11628
 	RW2;RW0 28176,5167 28376,5079 29089,4759 29714,4461
 #: note: (URL existiert nicht mehr) http://www.stadtentwicklung.berlin.de/verkehr/radverkehr/infrastruktur/de/radweg01.shtml
 	RW;RW0 23950,5342 24074,5279 24681,4943 24798,4895 25010,4807
-	RW1;RW2 23402,5483 23591,5495
+	RW1;RW2 23402,5483 23492,5488 23519,5490 23591,5495
 	RW2;RW2 23402,5483 23404,5325 23420,5159 23429,5048 23441,4956 23451,4877
 	RW1;RW1 16428,7144 16507,7254
 	RW2;RW1 15723,6151 15758,6204
@@ -2618,3 +2618,7 @@ benutzungspflichtiger Radweg auf den letzten Metern	RW0; 17919,6968 17962,6674
 Radweg endet nach wenigen Metern	RW0; 23402,5483 23333,5710
 #: by: Charis Eichentopf
 	RW6;RW6 17832,3740 17896,3738 17927,3737 17976,3735
+#: by: http://fahrrad.wikia.com/wiki/Fahrradstra%C3%9Fe/Liste_von_Fahrradstra%C3%9Fen#Berlin
+#: by: Frank Baumeister:
+#: add_fragezeichen: Gilt die Fahrradstraﬂe in der gesamten Lauenburger Str. oder nur in einem Teilabschnitt?
+	RW7;RW7 5883,4985 5909,5072 5939,5169 5976,5293 6002,5424 6019,5785 6018,5884 6017,5975 6008,6067 6019,6087 6014,6160 5996,6238 5925,6311 5865,6373 5803,6403
