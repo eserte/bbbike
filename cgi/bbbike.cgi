@@ -7140,7 +7140,7 @@ sub load_teaser {
 sub filename_from_route {
     my($startname, $zielname, $type) = @_;
     for ($startname, $zielname) {
-	$_ = lc $_;
+	$_ = lc BBBikeUtil::umlauts_to_german($_);
 	s{[^a-z0-9_]}{}g;
     }
     $type = "route" if !$type;
