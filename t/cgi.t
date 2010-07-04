@@ -84,7 +84,7 @@ if (!@urls) {
 }
 
 my $ortsuche_tests = 11;
-plan tests => (200 + $ortsuche_tests) * scalar @urls;
+plan tests => (209 + $ortsuche_tests) * scalar @urls;
 
 my $hdrs;
 if (defined &Compress::Zlib::memGunzip && $do_accept_gzip) {
@@ -184,9 +184,11 @@ for my $cgiurl (@urls) {
 	    is($res->content_type, 'application/x-palm-database',
 	       "Correct mime type for palmdoc");
 	    like($content, qr/Dudenstr/, "Expected palmdoc content");
+	    like($res->header('Content-Disposition'), qr{attachment; filename=.*\.pdb$}, 'PDB filename');
 	} elsif ($output_as eq 'perldump') {
 	    is($res->content_type, 'text/plain',
 	       "Correct mime type for perl dump");
+	    like($res->header('Content-Disposition'), qr{attachment; filename=.*\.txt$}, 'Perl dump has .txt extension');
 	    my $route = $cpt->reval($content);
 	    is(ref $route, 'HASH', "perldump is a hash");
 	    is(ref $route->{Route}, 'ARRAY', "Route member found");
@@ -201,13 +203,16 @@ for my $cgiurl (@urls) {
 		   "Expected content-type for $output_as");
 	    }
 	} elsif ($output_as eq 'xml') {
+	    like($res->header('Content-Disposition'), qr{attachment; filename=.*\.xml$}, 'xml filename');
 	    xmllint_string($content, "xmllint check for $output_as");
 	} elsif ($output_as =~ m{^( gpx-track
 				 |  gpx-route
 				 )$}x) {
+	    like($res->header('Content-Disposition'), qr{attachment; filename=.*\.gpx$}, 'gpx filename');
 	    gpxlint_string($content, "xmllint check with gpx schema for $output_as");
 	} elsif ($output_as eq 'kml-track') {
 	    is($res->content_type, 'application/vnd.google-earth.kml+xml', "The KML mime type");
+	    like($res->header('Content-Disposition'), qr{attachment; filename=.*\.kml$}, 'kml filename');
 	    kmllint_string($content, "xmllint check for $output_as");
 	}
     }
@@ -558,6 +563,7 @@ for my $cgiurl (@urls) {
 	    or diag $url;
     }
 
+ XXX: 
     for my $imagetype (
 		       "gif", "png", "jpeg",
 		       "svg", "mapserver",
@@ -594,6 +600,7 @@ for my $cgiurl (@urls) {
 		  "It's a PDF");
 		ok(defined uncompr($res), "The PDF is non-empty");
 		display($res);
+		like($res->header('Content-Disposition'), qr{inline; filename=.*\.pdf$}, 'PDF filename'); # unfortunately in this case (missing session?) there's no nice filename from route start/endpoint
 	    } elsif ($imagetype =~ /svg/) {
 		is($res->header('Content_Type'), "image/svg+xml",
 		  "It's a SVG image");
@@ -749,7 +756,6 @@ for my $cgiurl (@urls) {
 	like($content, qr{Invalidenstr\..*Ecke.*Müller-Breslau-Str\..*Ecke}s, "'Ecke' for both crossings");
     }
 
- XXX: 
     {   # All street types (as defined in PLZ.pm) except "streets"
         # should provide automatically the nearest crossing to the
         # Berlin.coords.data coordinate. Note that this should also
