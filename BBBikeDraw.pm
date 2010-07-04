@@ -275,6 +275,7 @@ sub dimension_from_route {
     }
 
     # etwas Luft lassen
+    # The factor 0.06 is equivalent to about 1.8cm margin on a DIN A4 page.
     $min_x -= int(0.06*($max_x-$min_x));
     $min_y -= int(0.06*($max_y-$min_y));
     $max_x += int(0.06*($max_x-$min_x));
