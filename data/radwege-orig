@@ -970,7 +970,7 @@ Busspur gilt Mo-Fr 6-20 Uhr und Sa 8-14 Uhr	RW5; 13923,9405 13973,9465
 Busspur gilt Mo-Fr 6-20 Uhr und Sa 8-14 Uhr; die letzten 20 Meter werden als benutzungspflichtiger Radweg auf dem Gehweg geführt	RW5; 13973,9465 14089,9610
 Radwegauffahrt abgesperrt (dahinter kommt auch nichts)	RW0; 14089,9610 13973,9465
 	RW6;RW6 15142,9931 15219,10079
-relativ schmale Radspuren	RW3;RW3 14918,11249 15016,11431 15055,11505 15101,11590 15202,11789 15248,11880
+relativ schmale Radspuren	RW3;RW3 14918,11249 15016,11431 15055,11505 15106,11598 15202,11789 15248,11880
 	RW2;RW2 15361,12071 15294,11964 15248,11880
 	RW2; 15164,14392 15256,14237
 die ersten Meter mit benutzungspflichtigen Radweg	RW0; 15256,14237 15164,14392
@@ -2613,8 +2613,9 @@ benutzungspflichtiger Radweg auf den letzten Metern	RW0; 17919,6968 17962,6674
 #: note: aber nicht von Klaus Didrich bestätigt
 #: corrected_by: srt/Luftbild (nur eine Seite)
 	RW; 4948,562 4748,453 4505,465
-	RW3; 12822,12067 12891,12008
-	RW4?;RW4? 12744,11904 12822,12067
+	RW3;RW3 12822,12067 12891,12008
+	RW4?;RW3 12744,11904 12822,12067
+einige Meter Radspur an der Rüdersdorfer Str.	RW0;RW0 12822,12067 12850,12286
 Radweg endet nach wenigen Metern	RW0; 23402,5483 23333,5710
 #: by: Charis Eichentopf
 	RW6;RW6 17832,3740 17896,3738 17927,3737 17976,3735

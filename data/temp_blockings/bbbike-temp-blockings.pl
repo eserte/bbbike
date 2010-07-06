@@ -5052,7 +5052,7 @@ EOF
        type  => 'handicap',
        source_id => 'INKO_83811',
        data  => <<EOF,
-userdel	q4::inwork 14918,11249 15016,11431 15055,11505 15101,11590
+userdel	q4::inwork 14918,11249 15016,11431 15055,11505 15106,11598
 EOF
      },
      { from  => 1152228595, # 2006-07-07 01:29
@@ -6701,7 +6701,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_004587',
        data  => <<EOF,
-userdel	q4::inwork; 15361,12071 15294,11964 15248,11880 15202,11789 15101,11590
+userdel	q4::inwork; 15361,12071 15294,11964 15248,11880 15202,11789 15106,11598
 EOF
      },
      { from  => undef, # 
@@ -13542,7 +13542,7 @@ EOF
        text  => 'Jessnerstr. wegen Bauarbeiten in Richtung Süden nicht befahrbar, bis Oktober 2009',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork; 15080,11905 14977,11754 14941,11689 14849,11539
+userdel	q4::inwork; 15080,11905 14977,11754 14946,11697 14849,11539
 EOF
      },
      { from  => 1238954738, # 2009-04-05 20:05

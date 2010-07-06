@@ -143,7 +143,7 @@ XXX:
 	no warnings qw(qw);
 	my $route = [ map { [ split /,/ ] }
 		      qw(
-			 14794,11770 14855,11737 14837,11706 14764,11591
+			 14794,11770 14856,11740 14837,11706 14764,11591
 			) ];
 	my $comment;
 	($comment) = $net->get_point_comment($route, 0, undef);

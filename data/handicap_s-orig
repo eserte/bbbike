@@ -684,6 +684,7 @@ B¸xensteinallee: Marktst‰nde, Fuﬂg‰nger	q3 22228,1071 22162,1067
 (Sportallee): Fuﬂg‰nger	q1 22577,1002 22368,1081
 #: XXX_prog: Bordstein am Don-Ugoletti-Platz und an der Regattastr., falls man links abbiegt
 Don-Ugoletti-Platz - Regattastr.: Fuﬂg‰nger, Bordsteine	q1 22449,1569 22478,1602 22549,1644
+(Dossestr. - Scharnweberstr.): Fuﬂg‰nger, Radfahren erlaubt	q1 15140,11811 15122,11834 15121,11899
 ######################### User Contributions #################################
 #: by: Michael Kiekbusch
 #: corrected_by: srt/policy (q4 -> q3-)
@@ -1425,8 +1426,11 @@ Schenkestr.: enge Straﬂe	q1 17961,8312 17794,8429
 #: by: anonymous
 #: corrected_by: srt/policy (q2 -> q1)
 Knˆterichpfad: enge Straﬂe, Gartensiedlung	q1 -7842,14683 -7808,14939 -7783,15059
-#: by: Tweety87...:
-Hartmannsweilerweg: enge Straﬂe	q1 17,3471 41,3510 16,3744 -1,3857 -36,3924 -219,4149
+#: by: Tweety87...: vvv
+#: XXX_prog: Gegenrichtung ist durch 1s:q4 abgedeckt, sollte besser gelˆst sein...
+Hartmannsweilerweg: enge Straﬂe	q1; 17,3471 41,3510 16,3744
+Hartmannsweilerweg: enge Straﬂe	q1 16,3744 -1,3857 -36,3924 -219,4149
+#: by: ^^^
 #: by: Susanna (wells):
 Zietenstr. (Lankwitz): enge Straﬂe	q1 6196,2204 6108,2326 6065,2443 5971,2691
 (Hˆhensteig - Buntzelstr.): Fuﬂg‰nger	q1 21835,242 21996,268 22168,327
@@ -1920,3 +1924,6 @@ Gelfertstr.	q0- 2030,5833 1980,5663 1933,5483 1965,5337 1964,5196 1964,5070 1969
 #: by: arnulf knorr:
 #: corrected_by: srt/policy (q2 -> q1)
 Huttwiler Weg: enge Straﬂe	q1 7071,18232 7120,18295 7098,18383 7035,18413 6961,18453 6913,18460
+#: by: Katharina (wer):
+#: note: "so breit, das ein breiteres Auto durchpasst"
+Nordische Str.: enge Straﬂe	q1 15126,21799 15209,21985
