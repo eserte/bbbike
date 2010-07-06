@@ -128,6 +128,13 @@ Rüdersdorfer Str. bekommt Radspuren	?::projected 13066,11854 12891,12008
 #: next_check: 2010-09-01
 Lindenstr. bekommt Radspuren	?::projected 9795,10512 9770,10590 9777,10719 9805,10791 9829,10830 9935,11067 9973,11150 10020,11262
 #
+#: XXX http://fahrrad.wikia.com/wiki/Fahrradstra%C3%9Fe/Liste_von_Fahrradstra%C3%9Fen#Berlin -> ja
+#: XXX Frank Baumeister: -> ja
+#: XXX von Almuth Jörns und MichaelM widersprochen -> nein
+#: last_checked: 2010-07
+#: next_check: 2010-10-01
+Fahrradstraße in der Lauenburger Str.	?::projected 5883,4985 5909,5072 5939,5169 5976,5293 6002,5424 6019,5785 6018,5884 6017,5975 6008,6067 6019,6087 6014,6160 5996,6238 5925,6311 5865,6373 5803,6403
+# 
 #: section ^^^
 #: section ^^^
 #
@@ -291,8 +298,8 @@ Ahrensfelder Chaussee: Radstreifen in Bau, bis 2008-10	? 20160,18301 20460,18420
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20060915.1800.47562.html
 #: by: http://www.cdu-fraktion-tk.de/image/inhalte/file/Amtsblatt_Nr__2010-14.pdf (Name der Straße)
 #: XXX Eintrag in Berlin.coords.data fehlt
-#: last_checked: 2010-06-15 (Asphaltierung an der Naumannstr. fehlt)
-#: next_check: 2010-08-01
+#: last_checked: 2010-07-06 (Asphaltierung an der Naumannstr. fehlt)
+#: next_check: 2010-08-15
 Wilhelm-Kabus-Str.: neue Straße wird gebaut, die Naumannstr. wird später verkehrsberuhigt	?::projected 7716,8048 7844,8049 7861,8217 7893,8327 7942,8380 8078,8772
 #: next_check: 2010-12-31
 Verbindung zwischen Leuthener Platz und General-Pape-Str. (evtl. mit Verlängerung) inkl. Brücke über die Bahnstrecke für Fußgänger und Radfahrer, Realisierung bis 2010-12-31	?::projected 7716,8356 7837,8354 7893,8327 8088,8283 8264,8289
@@ -369,7 +376,7 @@ Weitere Radwegverschwnekungen, siehe Track vom 25. April 2009	? 19389,11761 1900
 #: by: http://www.morgenpost.de/bezirke/mitte/article800710/Fahrradstrassen_in_Berlin.html
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0808/nachricht3157.html
 #: last_checked: 2010-06-23
-Prinzregentenstr.: Ist die Prinzregentenstr. mittlerweile eine Fahrradstraße? Wenn ja, gilt die Fahrradstraßenregelung für die gesamte Straße oder nur einen Teilabschnitt?	? 5630,7875 5635,8011 5641,8137 5669,8207 5666,8345 5660,8591 5655,8828 5647,9022 5633,9263 5628,9353 5630,9592
+Prinzregentenstr.: Ist die Prinzregentenstr. mittlerweile eine Fahrradstraße? Wenn ja, gilt die Fahrradstraßenregelung für die gesamte Straße oder nur einen Teilabschnitt?	? 5660,8591 5655,8828 5647,9022 5633,9263 5628,9353 5630,9592
 #: XXX_prog: verbessern, wenn der entsprechende Routingtext besser aussehen würde (also z.B. "nach rechts und sofort wieder nach links")
 Kleineweg: ist hier leicht versetzt	? 9130,7804 9131,7652 9120,7600
 Reinickendorfer Route 5, wo geht es weiter?	? 6558,18947 6442,18839
@@ -792,7 +799,6 @@ Gertrud-Droste-Platz (Potsdam): Qualität?	? -9470,-1031 -9515,-1059
 Gertrud-Droste-Platz (Potsdam): Qualität?	? -9457,-1053 -9500,-1086
 #: oldname ^^^
 Donarstr. (Potsdam): Qualität?	? -9515,-1059 -9584,-1030
-Lutherstr. (Potsdam): Qualität?	? -10332,-1653 -10368,-1622 -10449,-1588
 Hermann-Maaß-Str.: Qualität?	? -9470,-1031 -9457,-1053 -9421,-1103 -9390,-1145 -9353,-1194 -9204,-1194 -9176,-1188
 An der Sternwarte - Hermann-Maaß-Str.: In welche Richtung verläuft das Gefälle?	? -9816,-604 -9762,-625
 Baldurstr. (Potsdam): Qualität?	? -9534,-1230 -9498,-1132 -9500,-1086 -9515,-1059
@@ -1429,7 +1435,6 @@ Neubrücker Str.: Qualität?	? 28231,-19792 28336,-19948
 Neubrücker Str.: Qualität?	? 28363,-19964 28514,-20071
 Bellevuepark: ist ein Weg für Radfahrer offiziell freigegeben?	? 22798,5731 22790,5568 22733,5569 22701,5428 22628,5340
 Idsteiner Str.: Qualität (laut ADFC-Karte zwischen Hegauer Weg und Ludwigsfelder Str. gut geeignet)?	? -163,1564 -285,2015
-Bülowstr. (Zehlendorf): Qualität (laut ADFC-Karte bis auf einen kleinen Abschnitt am Mexikoplatz gut geeignet)?	? -662,2998 -872,3133 -1052,3276 -1054,3328
 #: by: (URL existiert nicht mehr) http://www.berlin.de/ba-steglitz-zehlendorf/presse/archiv/20060505.1315.39412.html (Freigabe Radfahrer)
 Jochen-Klepper-Weg: Qualität (laut ADFC-Karte teilweise gut geeignet)?	? -3030,2266 -2784,2358 -2690,2385 -2372,2477
 #: XXX zumindest im Norden "wassergebundene Decke" und NN
@@ -2197,7 +2202,6 @@ Eigenheimgasse: Qualität?	? 19736,3858 19791,3849
 Husstr.: Qualität? Ist die Straße eine Einbahnstraße? Wenn ja, gilt die Einbahnstraßenregelung nur für Autofahrer oder auch für Radfahrer?	? 19633,3751 19736,3858 19763,3959 19815,4148
 Vimystr.: Qualität?	? 19795,3945 19763,3959 19703,3979 19627,4004 19596,4035
 Am Schweizerhof: Qualität? Können Radfahrer zum Parkweg durchfahren?	? 1524,1924 1432,1964 1368,1991 1258,1961 1177,1940
-Prinz-Handjery-Str.: Qualität?	? 1358,1695 1258,1961 1104,2328 1081,2381 1008,2568 940,2722
 Herbergerweg: Qualität? Sind Teile der Straße für Autos gesperrt?	? 960,2534 921,2565 869,2567 772,2538
 Leo-Baeck-Str. - Seehofstr.: Qualität? Für Radfahrer befahrbar?	? 1478,1721 1432,1904 1432,1964 1461,2073 1452,2095 1488,2242
 Mühlenstr. - Hampsteadstr.: Qualität? Für Radfahrer befahrbar?	? 1603,2615 1631,2722 1647,2759 1634,2914
@@ -2868,7 +2872,6 @@ Biesalskistr.: Qualität? Kann die Clayallee in Höhe Biesalskistr. überquert werd
 Markgrafenstr. (Zehlendorf): Qualität?	? 475,2811 441,2987
 Werderstr. (Zehlendorf): Qualität (Laut OpenStreetMap Kopfsteinpflaster)? Gibt es eine Durchfahrtmöglichkeit zur Potsdamer Str., und wenn ja, kann die Potsdamer Str. dort auch überquert werden?	? -431,3225 -309,3016
 Im Kinderland: Qualität?	? -458,4779 -547,4827
-Ithweg: Qualität?	? -323,5031 -301,4948 -265,4864 -190,4776
 Kleiststr. (Zehlendorf): Qualität?	? -968,4184 -1032,3991 -1086,3907 -1230,3780
 Schlickweg: Qualität?	? -1683,3723 -1731,3833 -1734,3905
 #: XXX: zur Straße Am Schlachtensee hin für Autos gesperrt.
@@ -3012,7 +3015,6 @@ Kummerow - Woltersdorf: Qualität (an der östlichen Seite: Feldweg)?	? 63468,8389
 Kummerow - Kunow: Qualität?	? 63202,83842 63468,83897 63701,83897 64030,83689 64199,83388 64560,83095 65187,82762 65732,81931 65968,82128 66459,82296 66731,82468 66943,82495
 Kummerow - Jamikow: Qualität?	? 63202,83842 62902,83983 61889,84194 61022,84291
 Ragazer Str.: Kann die Lindauer Allee in Höhe der Ragazer Str. überquert werden?	? 7035,18413 7119,18582
-Walliser Str.: Qualität? Ist die Durchfahrt zur Lindauer Allee für Autofahrer gesperrt?	? 6887,18330 6913,18460 6924,18599
 Gamsbartweg: Qualität?	? 7599,18421 7551,18515
 Lampesteig: Qualität?	? 7534,18588 7520,18701
 Waldenburger Str.: Qualität des südlichen Abschnitts?	? 22307,9762 22387,9873
@@ -4597,7 +4599,6 @@ Bieler Str.: Qualität? Kann die Aroser Str. überquert werden?	? 6815,17871 6711,
 Bürgerstr. (Reinickendorf): Qualität?	? 8605,18216 8823,18252
 #: XXX laut osm cobblestone
 Dahnstr.: Qualität?	? 5303,17914 5287,17815
-Grünrockweg: Qualität?	? 7377,18498 7274,18462
 #: XXX anonymous meint: "enge Straße, q0", aber keine weiteren Angaben
 Pfifferlingweg: Qualität? Kann die Lindauer Str. überquert werden?	? 5635,18776 5634,18587 5636,18518
 Rundpfuhlweg: Qualität? Kann die Lindauer Str. überquert werden?	? 5713,18777 5715,18586

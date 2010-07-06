@@ -2648,7 +2648,8 @@ Herzbergstr.: betoniert/Verbundsteinpflaster	Q0- 17232,13518 17300,13459 17330,1
 Rumeyplan: Asphalt mit Sch‰den	Q1 8694,7691 8815,7722 8902,7763 8967,7821
 #: note: laut ADFC-Karte bis auf einen kleinen Abschnitt am Mexikoplatz gut geeignet - nicht best‰tigt
 #: note: von der S-Bahn aus geseheb:
-B¸lowstr. (Zehlendorf): Kopfsteinpflaster	Q2 -662,2998 -872,3133 -1052,3276 -1054,3328
+#: confirmed_by: MichaelM (Kopfsteinpflaster, sogar Q2 -> Q2-)
+B¸lowstr. (Zehlendorf): m‰ﬂiges Kopfsteinpflaster, viele Wellen und Reparaturstellen	Q2- -662,2998 -872,3133 -1052,3276 -1054,3328
 #: by: Bassemir
 #: note: "schmale asphaltierte Straﬂe"
 M‰ckeritzstr.: asphaltiert	Q0 1361,14431 1320,14440 1262,14510 1244,14558 1235,14609
@@ -10866,6 +10867,8 @@ Jaehnstr.: guter Asphalt	Q0 -461,3522 -575,3684
 #: by: Fred (ramme...):
 An der Flieﬂwiese: schlechtes Verbundsteinpflaster	Q2 -998,12689 -1022,12743 -1020,12801 -962,12951 -950,13091 -912,13106 -815,13067
 #: by: MichaelM: vvv
+#: note: "25 km/h sind drin"
+Ithweg: Betonstraﬂe im mittelm‰ﬂigen Zustand	Q1+ -323,5031 -301,4948 -265,4864 -190,4776
 #: note: "vergleichbar / genau wie Rhumeweg nebenan"
 Veronikasteig: m‰ﬂiges Kopfsteinpflaster	Q2 -1403,3047 -1226,3102
 #: note: "perfekter Asphalt/Beton (25km/h+)"
@@ -10947,13 +10950,18 @@ Nordische Str.: gepflastert	Q2 15126,21799 15209,21985
 #: by: Sophie Baudach:
 #: note: "glatter dunkler Straﬂenbelag... die Straﬂe ist z.B. schˆn zum skaten..."
 Hoernlestr.: Asphalt	Q0+ 22645,6431 22509,6519 22301,6683 22265,6689 22192,6659
-#: by: arnulf knorr:
+#: by: arnulf knorr: vvv
 #: note: anonymous meinte: Asphalt, Q2, keine Einbahnstraﬂe erw‰hnt, falsch geschriebener Straﬂenname
 #: note: ein anderer anonymous meinte: Beton, Q2, viele Schlaglˆcher, q3
 Huttwiler Weg: m‰ﬂiger Asphalt	Q1- 7071,18232 7120,18295 7098,18383 7035,18413 6961,18453 6913,18460
+Walliser Str.: guter Asphalt	Q0 6887,18330 6913,18460 6921,18560
+#: by: ^^^
 #: by: Yvonne Goedecke
 #: note: "q0, Wohngebiet"
 Kornblumenring: guter Asphalt	Q0 16484,2313 16678,2330 16812,2347 16899,2344 16954,2314 17076,2164 17080,2074 17069,1986 16941,1883 16924,1895 16828,2006 16797,2017
+#: by: Schreitm¸ller
+#: note: "q0, enge Straﬂe"
+Prinz-Handjery-Str.: schlechtes Kopfsteinpflaster	Q3 1358,1695 1258,1961 1104,2328 1081,2381 1008,2568 940,2722
 ######################################################################
 #: by: Andreas M¸hlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206
