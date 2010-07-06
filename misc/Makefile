@@ -80,7 +80,7 @@ $(HOME)/.bbbike/personal.wpt:	$(HOME)/.bbbike/personal.bbd
 # OSM downloads
 
 OSM_DOWNLOAD_DIR=	download/osm
-GERMANY_STATES=		berlin brandenburg hamburg hessen mecklenburg-vorpommern sachsen sachsen-anhalt
+GERMANY_STATES=		berlin brandenburg hamburg hessen mecklenburg-vorpommern sachsen sachsen-anhalt schleswig-holstein
 GERMANY_STATES_RULES=	${GERMANY_STATES:S/^/download-/:S/$/.osm.bz2/}
 EUROPE_COUNTRIES=	germany croatia bosnia-herzegovina czech_republic
 EUROPE_COUNTRIES_RULES=	${EUROPE_COUNTRIES:S/^/download-/:S/$/.osm.bz2/}
@@ -271,6 +271,6 @@ bbbikemap-for-garmin:	/tmp/gmapsupp.img
 	    ${MKGMAP} --description="BBBike Routable" --mapname=12117006 \
 		--country-name=Germany --country-abbr=DE \
 		--region-name=Berlin --region-abbr=BER \
-	        --latin1 --net --route --draw-priority=5 --style-file=${BBBIKEAUXDIR}/mkgmap/srt-style \
+	        --latin1 --net --route --draw-priority=15 --style-file=${BBBIKEAUXDIR}/mkgmap/srt-style \
 	        ${HOME}/src/bbbike/tmp/bbbike_routable.osm  && \
 	    mv -f 12117006.img bbbike_routable.img 
