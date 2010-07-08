@@ -33,7 +33,8 @@ EOF
 # http://rt.cpan.org/Ticket/Display.html?id=25123)
 # 0.34 has additional problems: it depends on Syntax::Highlight::Universal,
 # which fails nearly everywhere, and the Pod-ProjectsDocs tarball is
-# broken because of some additional dot files from MacOSX
+# broken because of some additional dot files from MacOSX.
+# 0.38 has no progress on the Syntax::Highlight::Universal issue.
 
 my $bbbike_html_rule;
 my $pod2html = is_in_path("mpod2html");
