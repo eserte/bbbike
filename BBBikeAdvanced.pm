@@ -1306,6 +1306,7 @@ sub set_line_coord_interactive {
 		    }
 		}
 	    } else {
+		# DDD or BBBike coordinates
 		while ($s =~ /([-+]?[0-9\.]+),([-+]?[0-9\.]+)/g) {
 		    my($x,$y) = ($1,$2);
 		    my $_map = $map;
@@ -1321,6 +1322,8 @@ sub set_line_coord_interactive {
 		    }
 		    push @coords, [$x,$y];
 		}
+
+		# DMS coordinates with trailing NESW
 		while ($s =~ m{(\d+)°(\d+)'(\d+(?:\.\d+)?)"([NS]).*?(\d+)°(\d+)'(\d+(?:\.\d+)?)"([EW])}g) {
 		    # sigh, it seems that I have to use the ugly $1...$8 list :-(
 		    my($lat_deg,$lat_min,$lat_sec,$lat_sgn,
@@ -1328,6 +1331,18 @@ sub set_line_coord_interactive {
 		    my $lat = $lat_deg + $lat_min/60 + $lat_sec/3600;
 		    $lat *= -1 if $lat_sgn =~ m{s}i;
 		    my $lon = $lon_deg + $lon_min/60 + $lon_sec/3600;
+		    $lon *= -1 if $lon_sgn =~ m{w}i;
+		    my($x,$y) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($lon,$lat));
+		    push @coords, [$x,$y];
+		}
+
+		# DMM coordinates with preceding NESW
+		while ($s =~ m{([NS])(\d+)°\s*([\d\.]+).*?([EW])(\d+)°\s*([\d\.]+)}g) {
+		    my($lat_sgn,$lat_deg,$lat_min,
+		       $lon_sgn,$lon_deg,$lon_min) = ($1,$2,$3,$4,$5,$6);
+		    my $lat = $lat_deg + $lat_min/60;
+		    $lat *= -1 if $lat_sgn =~ m{s}i;
+		    my $lon = $lon_deg + $lon_min/60;
 		    $lon *= -1 if $lon_sgn =~ m{w}i;
 		    my($x,$y) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($lon,$lat));
 		    push @coords, [$x,$y];
