@@ -17607,11 +17607,11 @@ EOF
      },
      { from  => 1263121920, # 2010-01-10 12:12
        until => 1338472800, # 2012-05-31 16:00
-       text  => 'Lahnstr. (Neukölln): Baustelle, Fahrtrichtung gesperrt (bis Mitte 2012) Richtung Grenzallee zwischen Niemetzstr. und Mittelbuschweg, 11.01.2010 12:12 Uhr bis 31.05.2012 16:00 Uhr ',
+       text  => 'Lahnstr. (Neukölln): Baustelle, Richtung Osten gesperrt (bis Mitte 2012) zwischen Niemetzstr. und Mittelbuschweg, 11.01.2010 12:12 Uhr bis 31.05.2012 16:00 Uhr ',
        type  => 'handicap',
        source_id => 'IM_014905',
        data  => <<EOF,
-userdel	q4::inwork; 13891,7107 13627,7047 13500,7018
+userdel	q4::inwork; 13500,7018 13627,7047 13891,7107
 EOF
      },
      { from  => 1274300387, # 2010-05-19 22:19
@@ -17912,6 +17912,15 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork; 18970,6110 18861,6000 18766,6067 18670,6132 18574,6197 18473,6265
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Johannes-Kraatz-Str.: Tor, Zugang könnte versperrt sein',
+       type  => 'gesperrt',
+       permanent => 1,
+       data  => <<EOF,
+userdel	2::temp 18870,5833 18932,5926
 EOF
      },
     );

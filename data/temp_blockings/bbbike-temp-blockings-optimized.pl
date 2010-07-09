@@ -1609,10 +1609,10 @@ userdel	q4::inwork; 10614,19907 10742,19632
        {
          'source_id' => 'IM_014905',
          'until' => 1338472800,
-         'text' => 'Lahnstr. (Neukölln): Baustelle, Fahrtrichtung gesperrt (bis Mitte 2012) Richtung Grenzallee zwischen Niemetzstr. und Mittelbuschweg, 11.01.2010 12:12 Uhr bis 31.05.2012 16:00 Uhr ',
+         'text' => 'Lahnstr. (Neukölln): Baustelle, Richtung Osten gesperrt (bis Mitte 2012) zwischen Niemetzstr. und Mittelbuschweg, 11.01.2010 12:12 Uhr bis 31.05.2012 16:00 Uhr ',
          'from' => 1263121920,
          'id' => 2069,
-         'data' => 'userdel	q4::inwork; 13891,7107 13627,7047 13500,7018
+         'data' => 'userdel	q4::inwork; 13500,7018 13627,7047 13891,7107
 ',
          'type' => 'handicap'
        },
@@ -1785,6 +1785,16 @@ userdel	2::temp 7460,12054 6857,11992
          'data' => 'userdel	q4::inwork; 18970,6110 18861,6000 18766,6067 18670,6132 18574,6197 18473,6265
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => undef,
+         'permanent' => 1,
+         'text' => 'Johannes-Kraatz-Str.: Tor, Zugang könnte versperrt sein',
+         'from' => undef,
+         'id' => 2096,
+         'data' => 'userdel	2::temp 18870,5833 18932,5926
+',
+         'type' => 'gesperrt'
        }
      
 );
