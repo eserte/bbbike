@@ -270,7 +270,6 @@ bbbikemap-for-garmin:	/tmp/gmapsupp.img
 	cd /tmp && \
 	    ${MKGMAP} --description="BBBike Routable" --mapname=12117006 \
 		--country-name=Germany --country-abbr=DE \
-		--region-name=Berlin --region-abbr=BER \
 	        --latin1 --net --route --draw-priority=15 --style-file=${BBBIKEAUXDIR}/mkgmap/srt-style \
 	        ${HOME}/src/bbbike/tmp/bbbike_routable.osm  && \
 	    mv -f 12117006.img bbbike_routable.img 
