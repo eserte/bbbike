@@ -727,7 +727,7 @@ Schwarzer Weg (Oberschˆneweide): asphaltiert, mit leichten Sch‰den	Q0- 17297,775
 Schwarzer Weg (Oberschˆneweide): unbefestiger Weg, teilweise recht schmal	Q2 17295,7336 17296,7156
 Mˆllhausenufer: Kopfsteinpflaster	Q2 23295,1145 23408,1170 23520,1194 23608,1210
 Mˆllhausenufer: asphaltiert	Q0 23608,1210 23747,1243
-Am Langen See: Waldweg, meist OK, teilweise Wurzeln und grober Kies	Q1- 23747,1243 23869,1282 23889,1338 24068,1279 24307,1135 24400,1005 24653,928 24829,827 24949,806 25333,834 25543,879 25744,839 25853,778 25922,645 25969,593 26041,443 26016,259 26089,176 26124,111 26246,73 26274,-33 26407,-160 26479,-119 26576,-278 26628,-313 26687,-316 26700,-344 26751,-460 26944,-639 26952,-744 27141,-785 27329,-1183 27365,-1357 27357,-1545
+Am Langen See: Waldweg, meist OK, teilweise Wurzeln und grober Kies	Q1- 23747,1243 23869,1282 23889,1338 24068,1279 24307,1135 24400,1005 24653,928 24829,827 24949,806 25333,834 25543,879 25744,839 25853,778 25922,645 25969,593 26041,443 26016,259 26089,176 26124,111 26246,73 26274,-33 26407,-160 26479,-119 26576,-278 26628,-313 26687,-316 26700,-344 26751,-460 26944,-639 26952,-744 27103,-773 27136,-804 27205,-1012 27225,-1115 27329,-1241 27365,-1357 27357,-1545
 Zur F‰hre: Waldweg	Q2 28958,3273 29061,3358 29084,3331
 #: by: (URL existiert nicht mehr) http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20060629.1530.43277.html)
 #: by: (URL existiert nicht mehr) http://www.radzeit.de/gallery2/v/Radfahren+in+der+Stadt/Treptow-Koepenick/R_1_Mueggelsee_003.JPG.html
@@ -778,11 +778,11 @@ B¸rgerpark: Parkweg	Q1 9460,18053 9479,18217 9701,18256 9716,18290
 Ossietzkystr.: Kopfsteinpflaster, OK	Q1 10390,19069 10440,18910 10474,18785 10496,18704
 Ossietzkystr.: Asphalt, Parkstreifen mit Kopfsteinpflaster	Q0 10496,18704 10532,18601 10565,18507 10609,18384
 Dietzgenstr.: schlechtes Kopfsteinpflaster	Q3 10228,19480 10308,19297
-Schˆnerlinder Weg: holpriger Weg	Q2 15130,24012 14982,24192 14923,24264 14869,24391
+Schˆnerlinder Weg: Asphalt	Q0 15130,24012 14982,24192 14923,24264 14869,24391
 zum Schˆnerlinder Weg: Waldweg, OK	Q1 14869,24391 14462,24862
 zum Schˆnerlinder Weg: Feldweg	Q2 14462,24862 14389,24879 14231,24922 14029,24753
 Hofzeichendamm: Verbundsteine	Q0 16546,22940 16315,23094
-Krontaler Str.: Kopfsteinpflaster	Q2 13884,22879 13976,22813 14122,22708
+Krontaler Str.: Kopfsteinpflaster	Q2 13884,22879 13976,22813 14109,22714
 Gr¸ntaler Str.: Kopfsteinpflaster	Q2 9757,16912 9604,16760 9455,16609
 Zur Hagelberger Str.: Kopfsteinpflaster	Q2 8773,9524 8648,9526
 Saubuchtweg: guter Waldweg	Q1 -3073,9061 -2983,8841 -2965,8705 -2962,8493 -2981,8350 -2975,8172 -2890,7994 -2859,7946 -2804,7915 -2677,7696 -2675,7622 -2639,7452 -2563,7353 -2546,7240 -2524,7141 -2547,7055 -2549,6948 -2634,6907 -2668,6862
@@ -3530,6 +3530,10 @@ Paul-Tropp-Str.: Asphalt	Q0 19105,5699 19042,5607
 Gottfried-Klemm-Str.: Asphalt	Q0 19042,5607 18925,5688 18818,5756
 Ernst-Ziesel-Str.: Asphalt	Q0 18877,5618 18771,5686
 Antoniuskirchstr.: Asphalt	Q0 18125,6694 18152,6745 18122,6773 18069,6753
+#: note: von der S-Bahn aus gesehen: vvv
+Scharfensteinstr.: Kopfsteinpflaster	Q2 13545,21738 13270,21870
+Gutenfelsstr.: Kopfsteinpflaster	Q2 13479,21633 13220,21761
+#: note ^^^
 ######################### User Contributions #################################
 #: by: Dominik Seelow vvv
 Viktoriastr.: m‰ﬂiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
@@ -4036,7 +4040,7 @@ Gembitzer Str.: guter Asphalt	Q0 16815,16214 16889,16378 16948,16482 17059,16560
 #: note: der Eintrag hat explizit nur den Abschnitt Alt-Lankwitz - Kamenzer Damm erw‰hnt. Laut ADFC-Karte ist die gesamte Strecke "gut geeignet":
 Wedellstr.: Asphalt	Q0 7517,2574 7489,2787 7498,2845 7528,2964 7500,3081 7463,3182 7472,3308 7481,3334 7501,3432
 Schˆningstr.: guter Asphalt	Q0 6103,16635 6154,16693 6281,16841
-Klaustaler Str.: m‰ﬂiger Asphalt	Q1 11309,19267 11351,19169 11384,19067 11439,18890 11463,18817 11469,18799 11483,18753 11462,18743 11501,18648
+Klaustaler Str.: m‰ﬂiger Asphalt	Q1 11309,19267 11351,19169 11384,19067 11439,18890 11463,18817 11469,18799 11483,18753 11462,18743 11492,18665
 Kˆhlerstr.: gutes Kopfsteinpflaster	Q1 2765,3184 2832,3372 2890,3561 2962,3827
 #: note: laut ADFC-Karte teilweise gut und m‰ﬂig
 Marie-Elisabeth-von-Humboldt-Str.: m‰ﬂiger Asphalt	Q1 20624,18485 20598,18560 20643,18701 20694,18857 20855,19299 20987,19604
@@ -5885,10 +5889,14 @@ Hennensteig: Kopfsteinpflaster	Q2 15860,156 15760,253 15657,436 15598,526
 #: by: Hans-Reiner Padberg: vvv
 #: note: "schweres" Kopfsteinpflaster
 Kirchblick: Kopfsteinpflaster	Q2 -1981,3353 -1972,3418 -2014,3564
-#: add_fragezeichen: wo genau sind die Kopfsteinpflaster-/Asphaltabschnitte?
+#: confirmed_by: MichaelM
+#: XXX wird wohl absehbar neu gemacht werden
+#: last_checked: 2010-07-01
 Salzachstr.: unbefestigt, fester Erdboden	Q2 -2103,3536 -2014,3564
-Salzachstr.: schlechtes Kopfsteinpfaster	Q3 -2014,3564 -1940,3620 -1882,3643 -1759,3634 -1637,3596 -1593,3507
-Salzachstr.: Asphalt	Q0 -1593,3507 -1495,3444 -1360,3314
+#: confirmed_by: MichaelM (genaues Ende an Hausnummer 41)
+Salzachstr.: schlechtes Kopfsteinpflaster	Q3 -2014,3564 -1940,3620 -1882,3643 -1759,3634 -1695,3614
+#: confirmed_by: MichaelM (genaues Ende an Hausnummer 41)
+Salzachstr.: Asphalt	Q0 -1695,3614 -1637,3596 -1593,3507 -1495,3444 -1360,3314
 (Weg am Waldfriedhof Dahlem): fester Sandweg, Wurzeln	Q2 1051,5525 825,5420 541,5306
 (Waldweg parallel zur Flanaganstr. zwischen H¸ttenweg und Im Jagen): fester Sandweg, Wurzeln	Q2 1051,5525 1697,5938
 #: by: ^^^
@@ -7048,7 +7056,8 @@ Windsteiner Weg: guter Asphalt	Q0 914,598 856,546 790,527 712,517 635,511 585,50
 #: by: Philipp Schwendke:
 Schillerstr.: Kopfsteinpflaster	Q2 -1013,3804 -1086,3907 -1174,4029 -1230,4078 -1323,4111
 #: by: friedolin Turowski:
-Scharfestr.: guter Asphalt	Q0 935,3430 758,3417 574,3388
+#: corrected_by: Camillo Krawczyk (guter Asphalt, Q0 -> m‰ﬂiges Kopfsteinpflaster, Q2)
+Scharfestr.: m‰ﬂiges Kopfsteinpflaster	Q2 935,3430 758,3417 574,3388
 #: by: T. Kallwass (gstk): vvv
 Anna-Seghers-Str.: schlechtes Kopfsteinpflaster	Q3 19884,4018 19821,4018 19795,3945 19790,3893 19791,3849 19804,3830
 #: confirmed_by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20071126.1325.89712.html
@@ -9117,6 +9126,7 @@ Flutstr.: am Rand m‰ﬂiges Kopfsteinpflaster, in der Mitte eine gute asphaltierte
 Rudower Str. (Kˆpenick): grˆﬂtenteils gutes Kopfsteinpflaster	Q1- 21370,4442 21546,4457 21585,4459 21775,4470
 #: by: ^^^
 #: by: Reinhard Stenzel: vvv
+Kesperhof: guter Asphalt	Q0 -1768,1882 -1734,1806
 Salemer Steig: m‰ﬂiger Beton	Q1- -441,4354 -459,4422 -472,4476 -493,4529 -531,4599 -558,4639 -581,4662
 #: by: ^^^
 #: by: Birgit Weisenburger:
@@ -10517,7 +10527,9 @@ Heimkehlenstr.: guter Asphalt	Q0 5543,1706 5433,1763 5421,1786
 #: by: hardy: vvv
 Kernerstr.: m‰ﬂiger Asphalt	Q1- 14185,22803 14043,22903 13950,22969
 #: note: Kat(82) meint hingegen: Asphalt, Q2 zwischen Bahnhofstr. und Krontaler Str.
-Boenkestr.: guter Asphalt	Q0 14756,23622 14539,23306 14314,22944 14276,22914 14246,22900 14185,22803 14122,22708 13983,22513
+#: corrected_by: srt (Asphalt -> Kopfsteinpflaster/unbefestigter Weg)
+Boenkestr.: Kopfsteinpflaster/unbefestigter Weg	Q2- 14756,23622 14539,23306
+Boenkestr.: guter Asphalt	Q0 14539,23306 14314,22944 14276,22914 14246,22900 14185,22803 14109,22714 14057,22617 13983,22513
 #: by: ^^^
 #: by: birgit (...knabe) vvv
 #: note: "enge Straﬂe" ohne Kategorisierung
@@ -10932,6 +10944,7 @@ Jaehnstr.: guter Asphalt	Q0 -461,3522 -575,3684
 #: by: Fred (ramme...):
 An der Flieﬂwiese: schlechtes Verbundsteinpflaster	Q2 -998,12689 -1022,12743 -1020,12801 -962,12951 -950,13091 -912,13106 -815,13067
 #: by: MichaelM: vvv
+(G‰nsebl¸mchenweg - Parkplatz): Trampelpfad	Q3 -1618,2137 -1612,2123
 Gilgestr.: Asphalt	Q0 -1181,2913 -1100,2697
 Gilgestr.: gepflasterter Fuﬂweg	Q1 -1100,2697 -1085,2653
 #: note: "am unteren Ende von 'm‰ﬂig'"
@@ -11031,12 +11044,34 @@ Walliser Str.: guter Asphalt	Q0 6887,18330 6913,18460 6921,18560
 #: note: "q0, Wohngebiet"
 Kornblumenring: guter Asphalt	Q0 16484,2313 16678,2330 16812,2347 16899,2344 16954,2314 17076,2164 17080,2074 17069,1986 16941,1883 16924,1895 16828,2006 16797,2017
 #: by: Schreitm¸ller
+#: note: "Wohngebiet"
+#: note: ein anonymous meinte: guter Asphalt, Q0, enge Straﬂe, q1
+#: note: ein anderer meinte: Kopfsteinpflaster, Q2
+Im Schˆnower Park: guter Beton	Q0 1081,2381 1012,2353 959,2349
+Im Schˆnower Park: guter Beton	Q0 959,2304 959,2349 956,2395
 #: note: "q0, enge Straﬂe"
 Prinz-Handjery-Str.: schlechtes Kopfsteinpflaster	Q3 1358,1695 1258,1961 1104,2328 1081,2381 1008,2568 940,2722
 #: by: Nicole Walz:
 Stieffring: guter Asphalt	Q0 4150,15304 4236,15344 4163,15494 4080,15458
 #: by: Nicole Slowinski:
 Rodestr.: Asphalt	Q0 29176,1897 29357,2113
+#: by: Ulf Rathje:
+#: note: "q0, enge Straﬂe"
+Fichtenweg: m‰ﬂiger Asphalt	Q1- -3000,18192 -2967,18033 -2949,17946 -2963,17872
+#: by: Christine Briese:
+Wickramstr.: guter Veronikasteig	Q1 -8050,5560 -8119,5441 -8406,4983 -8416,4917
+#: by: Lars (mula):
+Am Priesteracker: m‰ﬂiger Beton	Q2+ 4245,21105 4107,21059
+#: by: A. Kohn:
+Kollostr.: guter Asphalt	Q0 9665,4392 9677,4518 9695,4638
+#: by: blauklaus...
+#: note: "q0, enge Straﬂe"
+Sitzendorfer Str.: guter Asphalt	Q0 21962,17152 21915,17159 21812,17174 21677,17195
+#: by: Mandy Jattke:
+#: note: "wenig Verkehr, da Nebenstraﬂe zu Gartenkolonie und Einfamilienh‰usern."
+Drausnitzer Str.: guter Asphalt	Q0 21625,8735 21540,8815 21512,8857 21508,8988
+#: by: Gonsolo:
+Straﬂe 106: fester Sandweg	Q1 14574,14646 14592,14682 14678,14853 14828,15050
 ######################################################################
 #: by: Andreas M¸hlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206

@@ -1076,7 +1076,16 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'IM_014045',
+         'until' => 1292594400,
+         'text' => 'Wendenschloßstr. (Köpenick): Baustelle, Fahrtrichtung gesperrt Richtung Müggelheimer Str. zwischen Salvador-Allende-Str. und Landjägerstr., 01.09.2009 12:01 Uhr bis 17.12.2010 15:00 Uhr ',
+         'from' => 1251712860,
+         'id' => 1857,
+         'data' => 'userdel	q4::inwork; 23451,4877 23363,4846 23055,4640 22959,4576 22893,4532 22862,4511 22832,4491 22791,4457 22740,4415
+',
+         'type' => 'handicap'
+       },
        undef,
        undef,
        undef,
@@ -1119,8 +1128,9 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
          'text' => 'Bauarbeiten in der Berliner Straße in Pankow ab Anfang Oktober 2009, Einbahnstraße Richtung Breite Str.; die Hadlichstr. ab Damerowstraße Einbahnstraße in Richtung Berliner Straße',
          'from' => 1254261600,
          'id' => 1885,
-         'data' => '#: XXX nach den Bauarbeiten fällt evtl. das Kopfsteinpflaster weg
-#: next_check: 2010-03-01
+         'data' => '#: XXX nach den Bauarbeiten fällt evtl. das Kopfsteinpflaster weg, es wird zumindest Richtung Norden Radwege geben
+#: last_checked: 2010-07-11
+#: next_check: 2010-10-01
 userdel	q4::inwork; 10680,18380 10755,18231 10829,18083 10846,17992
 userdel	q4::inwork; 10829,18083 10907,18109 10938,18147 10989,18172 11137,18358 11025,18531
 ',
@@ -1758,16 +1768,7 @@ userdel	2::temp 7460,12054 6857,11992
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'LS/O-SG33-E/10/041',
-         'until' => 1280527200,
-         'text' => 'Wandlitz: L315: Grundhafter Ausbau der L 315 unter Vollsperrung Prenden - Klosterfelde, 26.04.2010 bis 30.07.2010 ',
-         'from' => 1278267949,
-         'id' => 2093,
-         'data' => 'userdel	2::inwork 19609,43128 19107,43180 18720,43107 17840,43420 17394,43597 17006,43801 16258,43457 15783,43227 15632,43100 14941,42957
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1280613600,
          'text' => 'Alt-Rudow zwischen Köpenicker Straße und Neudecker vom 24.07.2010 bis zum 31.07.2010 vollständig gesperrt. Die Einbahnstraßenregelung Am Hanfgraben wird umgekehrt. ',
@@ -1793,6 +1794,36 @@ userdel	2::temp 7460,12054 6857,11992
          'from' => undef,
          'id' => 2096,
          'data' => 'userdel	2::temp 18870,5833 18932,5926
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => '106401308',
+         'until' => 1289602800,
+         'text' => 'Buckow (Märkische Schweiz), Stadt: K6413: Deckenerneuerung, Instandsetzung Durchlässe Bollersdorf - Buckow, 08.07.2010 bis 12.11.2010 ',
+         'from' => 1278970058,
+         'id' => 2097,
+         'data' => 'userdel	q4::inwork 55377,20271 55292,20466 55207,20563 55131,20837
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'LS/O-SG33-F/10/089',
+         'until' => 1282428000,
+         'text' => 'Lebus: B112: Instandsetzungsarbeiten Brücke über das Alt Zeschdorfer Fließ bei Lebus - OT Wüste Kunersdorf, 08.07.2010 07:00 Uhr bis 21.08.2010 ',
+         'from' => 1278478800,
+         'id' => 2098,
+         'data' => 'userdel	2::inwork 87344,3693 86769,1414
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'LS/S-SG33-W/10/140',
+         'until' => 1282773600,
+         'text' => 'Zossen: B96: Deckenerneuerung Wünsdorf - Zossen, 12.07.2010 bis 25.08.2010 ',
+         'from' => 1278970267,
+         'id' => 2099,
+         'data' => 'userdel	2::inwork 15118,-24016 15693,-26169
 ',
          'type' => 'gesperrt'
        }
