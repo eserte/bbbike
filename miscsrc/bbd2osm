@@ -590,7 +590,7 @@ sub handle_city_like {
     } else {
 	$place = 'hamlet';
     }
-    get_node_ids($r, { name  => $r->[Strassen::NAME],
+    get_node_ids($r, { name  => format_place_label($r->[Strassen::NAME]),
 		       place => $place,
 		     });
 }
@@ -598,7 +598,7 @@ sub handle_city_like {
 sub handle_city_limit_like {
     my($r) = @_;
     my $attribs = { traffic_sign => 'city_limit',
-		    name         => $r->[Strassen::NAME],
+		    name         => format_place_label($r->[Strassen::NAME]),
 		  };
     get_node_ids($r, $attribs);
 }
@@ -817,6 +817,12 @@ sub shorten_label {
 	}
     }
     $s;
+}
+
+sub format_place_label {
+    my $s = shift;
+    my($name, $add) = split /\|/, $s;
+    $name . (defined $add ? ' ' . $add : '');
 }
 
 __END__
