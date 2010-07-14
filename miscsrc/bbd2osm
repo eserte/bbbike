@@ -28,7 +28,7 @@ use Strassen::Strasse;
 
 sub usage () {
     die <<EOF;
-usage: $0 [-ignore-missing] [-use-orig] [-quiet] [datadir]
+usage: $0 [-ignore-missing] [-use-orig] [-quiet] [-debug] [datadir]
        $0 [-type area|waterway|highway|railway|ferry] -single bbdfile
 
 Either convert a whole bbbike data directory, or convert a single bbd
@@ -43,6 +43,7 @@ my $ignore_missing;
 my $use_orig;
 my $shorten_for_garmin;
 my $quiet;
+my $debug;
 GetOptions("single=s" => \$single_file,
 	   "type=s" => \$single_file_type,
 	   "fragezeichen=s" => \$fragezeichen_file,
@@ -50,6 +51,7 @@ GetOptions("single=s" => \$single_file,
 	   "use-orig!" => \$use_orig,
 	   "shorten-for-garmin!" => \$shorten_for_garmin,
 	   "quiet!" => \$quiet,
+	   "debug!" => \$debug,
 	  )
     or usage;
 
@@ -808,7 +810,7 @@ sub shorten_label {
 	    if ($abbrev_level > MAX_LABEL_LENGTH) {
 		$s =~ s{$ABBREV_WORD_RX}{$ABBREV_WORD_DEFS{$1}}g;
 		if (length $s > MAX_LABEL_LENGTH) {
-		    warn "Label <$s> too long and may not be shortened further...\n" unless $quiet;
+		    warn "Label <$s> too long and may not be shortened further...\n" if $debug;
 		}
 		last;
 	    }
