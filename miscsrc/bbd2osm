@@ -25,6 +25,7 @@ use Karte::Polar;
 use Karte::Standard;
 use Strassen::Core;
 use Strassen::Strasse;
+use VectorUtil qw(get_polygon_center);
 
 sub usage () {
     die <<EOF;
@@ -157,6 +158,7 @@ if ($single_file) {
     do_file("$datadir/orte", \&handle_city_like);
     do_file("$datadir/orte2", \&handle_city_like);
     do_file("$datadir/ortsschilder", \&handle_city_limit_like);
+    do_file("$datadir/berlin_ortsteile", \&handle_berlin_citypart_like);
 
     do_file("$datadir/comments_ferry", \&handle_ferry_info_like);
 
@@ -175,9 +177,9 @@ if ($single_file) {
 
     do_file("$datadir/faehren", \&handle_ferry_like);
 
-    do_file("$datadir/strassen", \&handle_highway_like);
-    do_file("$datadir/landstrassen", \&handle_highway_like);
-    do_file("$datadir/landstrassen2", \&handle_highway_like);
+    do_file("$datadir/strassen", \&handle_berlin_highway_like);
+    do_file("$datadir/landstrassen", \&handle_anywhere_highway_like);
+    do_file("$datadir/landstrassen2", \&handle_anywhere_highway_like);
 
     dump_quality();
 	
@@ -295,8 +297,11 @@ sub handle_handicap_like {
     }
 }
 
-sub handle_highway_like {
-    my($r, $dir) = @_;
+sub handle_berlin_highway_like   { _handle_highway_like('Berlin', @_) }
+sub handle_anywhere_highway_like { _handle_highway_like(undef, @_) }
+
+sub _handle_highway_like {
+    my($city, $r, $dir) = @_;
 
     my($cat) = $r->[Strassen::CAT] =~ m{^([^:]+)};
     if ($cat eq 'Pl') {
@@ -345,6 +350,32 @@ sub handle_highway_like {
     my($name, @cityparts) = Strasse::split_street_citypart($r->[Strassen::NAME]);
     _xmlify($name);
 
+    # This is the most reasonable scheme to set is_in/addr tags, to
+    # get it best working in the "Find" screen of Garmin:
+    #
+    # for streets in Berlin (defined $city):
+    # * is_in:county => "Berlin"
+    # * addr:city => first citypart (if any)
+    #
+    # for streets outside Berlin (@cityparts exist)
+    # * addr:city => first citypart (usually there is exactly one)
+    #
+    # If any of these tags is set, then also set addr:country
+    my %is_in;
+    if (defined $city) {
+	$is_in{'is_in:county'} = $city; # XXX lying for Berlin, so we have cityparts in addr:city and Berlin in is_in:county
+	if (@cityparts) {
+	    $is_in{'addr:city'} = $cityparts[0];
+	}
+    } else {
+	if (@cityparts) {
+	    $is_in{'addr:city'} = $cityparts[0];
+	}
+    }
+    if (%is_in) {
+	$is_in{'addr:country'} = 'DE'; # XXX not always true, some streets are in Poland and Czech Republic
+    }
+
     for my $segment (@segments) {
 	my @node_ids = @{$segment->[0]};
 	my($oneway, $oneway_reversed, $no_access, $speed0, $speed0_reversed) = @{$segment->[1]};
@@ -361,6 +392,10 @@ sub handle_highway_like {
 	    print $wayfh qq{  <nd ref="$node_id"/>\n};
 	}
 	print $wayfh qq{  <tag k="name" v="$name" />\n};
+	while(my($k,$v) = each %is_in) {
+	    _xmlify($v);
+	    print $wayfh qq{  <tag k="$k" v="$v" />\n};
+	}
 	if ($any_speed0) {
 	    print $wayfh qq{  <tag k="highway" v="footway" />\n};
 	    print $wayfh qq{  <tag k="bicycle" v="yes" />\n};
@@ -605,6 +640,23 @@ sub handle_city_limit_like {
     get_node_ids($r, $attribs);
 }
 
+sub handle_berlin_citypart_like {
+    my($r) = @_;
+    my($sxy) = join ",", get_polygon_center(map { split/,/ } @{ $r->[Strassen::COORDS] });
+    get_node_id($sxy, { place => 'suburb',
+			name  => $r->[Strassen::NAME],
+			'is_in:county' => 'Berlin',
+			'addr:country' => 'DE',
+		      });
+    # And add Berlin:
+    if ($r->[Strassen::NAME] eq 'Mitte') {
+	get_node_id($sxy, { place => 'county', # XXX lying
+			    name  => 'Berlin',
+			    'addr:country' => 'DE',
+			  });
+    }
+}
+
 sub handle_cycleway_like {
     my($r, $dir) = @_;
     my($cat_hin, $cat_rueck);
@@ -739,6 +791,12 @@ sub get_node_ids {
     @node_ids;
 }
 
+sub get_node_id {
+    my($sxy, $attribs) = @_;
+    my($px,$py) = $Karte::Polar::obj->trim_accuracy($Karte::Polar::obj->standard2map(split /,/, $sxy));
+    maybe_add_node($px, $py, $attribs);
+}
+
 sub get_node_id_from_center {
     my($r, $attribs) = @_;
     my $c = $r->[Strassen::COORDS];
@@ -864,5 +922,3 @@ Implement handling of BNP:...
 Slaven Rezic
 
 =cut
-
-
