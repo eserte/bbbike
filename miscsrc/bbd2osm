@@ -41,12 +41,14 @@ my $single_file_type;
 my $fragezeichen_file;
 my $ignore_missing;
 my $use_orig;
+my $shorten_for_garmin;
 my $quiet;
 GetOptions("single=s" => \$single_file,
 	   "type=s" => \$single_file_type,
 	   "fragezeichen=s" => \$fragezeichen_file,
 	   "ignore-missing!" => \$ignore_missing,
 	   "use-orig!" => \$use_orig,
+	   "shorten-for-garmin!" => \$shorten_for_garmin,
 	   "quiet!" => \$quiet,
 	  )
     or usage;
@@ -58,6 +60,34 @@ if (!$single_file) {
 } else {
     @ARGV and usage;
 }
+
+######################################################################
+# Max. length on Garmin devices (at least etrex vista hcx) is 151
+use constant MAX_LABEL_LENGTH => 151;
+use constant MAX_ABBREV_LEVEL => 4;
+my %ABBREV_WORD_DEFS = ( 'Uhr' => 'h',
+			 'und' => '&',
+			 'Montag' => 'Mo',
+			 'montags' => 'mo',
+			 'Freitag' => 'Fr',
+			 'freitags' => 'fr',
+			 'Samstag' => 'Sa',
+			 'Sonntag' => 'So',
+			 'pro Person' => 'p.P.',
+			 'Euro' => "\x{20ac}",
+			 'EUR' => "\x{20ac}",
+			 'bis' => '-',
+			 'stündlich' => 'stündl.',
+			 'täglich' => 'tägl.',
+			 'Minuten' => 'Min',
+			 'April' => 'Apr',
+			 'August' => 'Aug',
+			 'Oktober' => 'Okt',
+			 'Fahrzeit' => 'Fahrzt.',
+		       );
+my $ABBREV_WORD_RX = '(' . join("|", map { '\b'.quotemeta($_).'\b' } keys %ABBREV_WORD_DEFS) . ')';
+$ABBREV_WORD_RX = qr{$ABBREV_WORD_RX};
+######################################################################
 
 my($nodefh, $nodefile) = tempfile(UNLINK => 1, SUFFIX => "_node.xml");
 binmode $nodefh, ':utf8';
@@ -459,7 +489,9 @@ sub handle_ferry_like {
 sub handle_ferry_info_like {
     my($r, $dir) = @_;
 
-    get_node_id_from_center($r, { note => $r->[Strassen::NAME] });
+    my $label = shorten_label($r->[Strassen::NAME]);
+
+    get_node_id_from_center($r, { note => $label });
 }
 
 sub handle_area_like {
@@ -766,6 +798,25 @@ sub dump_quality {
 	print $wayfh qq{</way>\n};
 	$next_way_id++;
     }
+}
+
+sub shorten_label {
+    my $s = shift;
+    if ($shorten_for_garmin) {
+	my $abbrev_level = 1;
+	while (length $s > MAX_LABEL_LENGTH) {
+	    if ($abbrev_level > MAX_LABEL_LENGTH) {
+		$s =~ s{$ABBREV_WORD_RX}{$ABBREV_WORD_DEFS{$1}}g;
+		if (length $s > MAX_LABEL_LENGTH) {
+		    warn "Label <$s> too long and may not be shortened further...\n" unless $quiet;
+		}
+		last;
+	    }
+	    $s = Strasse::short($s, $abbrev_level);
+	    $abbrev_level++;
+	}
+    }
+    $s;
 }
 
 __END__
