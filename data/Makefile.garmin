@@ -315,7 +315,7 @@ BBD2OSM_MAPSET_ALL_SOURCES=	strassen landstrassen landstrassen2 \
 				gesperrt ${BBD2OSM_FRAGEZEICHEN_SOURCE}
 
 ${PERSISTENTTMPDIR}/bbbike_routable.osm:	${BBD2OSM} ${BBD2OSM_MAPSET_ALL_SOURCES}
-	${BBD2OSM} -fragezeichen ${BBD2OSM_FRAGEZEICHEN_SOURCE} > ${PERSISTENTTMPDIR}/bbbike_routable.osm~
+	${BBD2OSM} -shorten-for-garmin -fragezeichen ${BBD2OSM_FRAGEZEICHEN_SOURCE} > ${PERSISTENTTMPDIR}/bbbike_routable.osm~
 	mv ${PERSISTENTTMPDIR}/bbbike_routable.osm~ ${PERSISTENTTMPDIR}/bbbike_routable.osm
 
 ${PERSISTENTTMPDIR}/bbbike_routable.img:	${PERSISTENTTMPDIR}/bbbike_routable.osm
