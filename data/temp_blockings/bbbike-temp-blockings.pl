@@ -17951,4 +17951,12 @@ EOF
 userdel	2::inwork 15118,-24016 15693,-26169
 EOF
      },
+     { from  => 1279050848, # 2010-07-13 21:54
+       until => 1283291999, # 2010-08-31 23:59
+       text  => 'Fahrbahnsanierung in der Pestalozzistraße zwischen Wielandstraße und Schlüterstraße, ab Montag, 12.07.2010 bis Ende August 2010, nur einspurig in Fahrtrichtung Wielandstraße befahrbar.',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork; 4433,11213 4556,11206
+EOF
+     },
     );

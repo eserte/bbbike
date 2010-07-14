@@ -1826,6 +1826,15 @@ userdel	2::temp 7460,12054 6857,11992
          'data' => 'userdel	2::inwork 15118,-24016 15693,-26169
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => 1283291999,
+         'text' => 'Fahrbahnsanierung in der Pestalozzistraße zwischen Wielandstraße und Schlüterstraße, ab Montag, 12.07.2010 bis Ende August 2010, nur einspurig in Fahrtrichtung Wielandstraße befahrbar.',
+         'from' => 1279050848,
+         'id' => 2100,
+         'data' => 'userdel	q4::inwork; 4433,11213 4556,11206
+',
+         'type' => 'handicap'
        }
      
 );
