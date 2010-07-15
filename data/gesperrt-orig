@@ -728,6 +728,8 @@ Hartmannsweilerweg	1s:q4 16,3744 41,3510 17,3471
 Alsenzer Weg	1s:q3 27751,819 27798,872 27863,943 27968,1060
 #: by: Ulf Rathje:
 Fichtenweg	1 -2963,17872 -2949,17946 -2967,18033 -3000,18192
+#: by: anonymous
+Johann-Landefeldt-Str.	1 -8598,7018 -8532,7041 -8466,7064 -8404,7087 -8341,7108 -8275,7131 -8207,7156
 ######################################################################
 #
 # Potsdam
@@ -1169,6 +1171,14 @@ Potsdamer Chaussee: Mittelstreifen	3nocross -870,2737 -756,2787 -567,2869 -512,2
 # Stellen, an denen getragen werden muﬂ:
 # die Zahl hinter dem ":" entspricht ungef‰hr den verlorenen Sekunden
 # 
+#: by: MichaelM vvv
+#: note: "kr‰ftige Stufen"
+tragen (4 Stufen)	0:10 -215,3787
+tragen (insgesamt 11 Stufen in zwei Abs‰tzen)	0:20 -18,5083
+#: XXX_prog: Label verbessern, die doppelte Verwendung von "Stufen" vermeiden
+tragen, langgezogene Stufen (4 Stufen)	0:10 -1460,3487
+tragen, relativ steile Treppe (13 Stufen)	0:20 -1495,3509
+#: by: ^^^
 tragen (14 Stufen)	0:30 15133,5869
 #: by: Klaus Didrich:
 tragen (2 x 14 Stufen) oder Aufzug	0:30 4158,461

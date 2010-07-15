@@ -3292,6 +3292,10 @@ Zitadelle: Kopfsteinpflaster	Q2 -2646,14525 -2652,14559 -2656,14582 -2668,14635 
 Behnitz: Kopfsteinpflaster	Q2 -2951,14617 -2993,14568 -3014,14559
 Rietzestr.: Asphalt	Q0 12693,15225 12472,15356
 Strehlener Str.: Asphalt	Q0 22652,10392 22538,10477 22403,10523
+Wermuthweg: Asphalt	Q0 13661,2207 13672,2221 13816,2258 13827,2280 13838,2310 13835,2354 13709,2551
+Haeselerstr. (Lichtenrade): guter Asphalt	Q0 10404,-2398 10513,-2397 10563,-2432
+Pappritzstr.: guter Asphalt	Q0 7562,1796 7675,1885 7736,1969 7741,2096
+Lindenblütenstr.: guter Asphalt	Q0 21703,388 21676,500 21658,575
 Crivitzer Str.: guter Asphalt	Q0 17807,18267 17670,18435 17580,18548
 Johann-Landefeldt-Str.: Asphalt	Q0 -8619,7012 -8598,7018 -8532,7041 -8466,7064 -8404,7087 -8341,7108 -8275,7131 -8207,7156 -8138,7182 -8074,7204 -8011,7229 -7948,7252 -8032,7437 -8055,7489
 Recklinghauser Weg: guter Beton	Q0 -5374,15082 -5361,15195 -5355,15277 -5319,15477 -5278,15641
@@ -4495,6 +4499,8 @@ Brodowiner Ring: Asphalt	Q0 22215,16343 22192,16165 22290,16146 22400,16226 2240
 Parsteiner Ring: Asphalt	Q0 22406,16309 22428,16462 22321,16553 22250,16468 22215,16343
 Bauhüttenweg: Asphalt	Q0 12703,2454 12835,2470 12948,2484 13064,2499 13180,2514 13238,2521 13302,2554 13348,2588
 Elberfelder Str.: schlechtes Kopfsteinpflaster	Q3 5766,13175 5755,12998 5749,12834 5734,12673
+Benfeyweg: guter Asphalt	Q0 -8553,5329 -8638,5362 -8731,5401 -8797,5428 -8814,5428
+Schambachweg: mäßiger Asphalt	Q1 -8638,5362 -8735,5116 -8762,5033
 Zimmerstr. (Wilhelmstadt): Gehwegplatten	Q0 -3962,12973 -3942,12957
 Zimmerstr. (Wilhelmstadt): Kopfsteinpflaster	Q2 -3942,12957 -3834,12911 -3724,12917 -3667,12919
 Reiherbeize: Kopfsteinpflaster	Q2 593,4262 444,4498
@@ -5575,7 +5581,7 @@ Florastr. (Steglitz): Asphalt	Q0 5315,6103 5275,6096 5234,6086
 Im Amtmannsgarten: Asphalt	Q0 12643,1706 12609,1780 12560,1764 12487,1727
 Pieskower Weg: Asphalt	Q0 13131,15175 13105,15122 13070,15063 12894,15165 12864,15185 12931,15300
 Pieskower Weg: Asphalt	Q0 12894,15165 12812,15053
-Aprikosensteig: guter Beton	Q0 15445,4878 15474,4845 15558,4758 15558,4757 15608,4722 15690,4668 15774,4612 15863,4554
+Aprikosensteig: guter Beton	Q0 15445,4878 15474,4845 15558,4758 15608,4722 15690,4668 15774,4612 15863,4554
 Aprikosensteig: guter Beton	Q0 15474,4845 15364,4748
 Brandaustr.: guter Asphalt	Q0 9391,1235 9370,1262 9367,1296 9411,1406 9519,1650
 Glaschkestr.: Kopfsteinpflaster	Q2 16159,12301 16144,12388 16147,12424
@@ -6725,7 +6731,7 @@ Altenescher Weg: Betonplatten z.T. mit Absätzen	Q1 14051,14822 13856,14944 13749
 Am Teufelsbruch: Asphalt	Q0 -2678,18396 -2673,18634
 Zum Erlengrund: Asphalt	Q0 -2605,18393 -2595,18629
 Zu den Fichtewiesen: Asphalt	Q0 -2535,18391 -2523,18627
-Rustweg: OK	Q0 -2827,18639 -2673,18634 -2595,18629 -2523,18627 -2454,18620 -2455,18620
+Rustweg: OK	Q0 -2827,18639 -2673,18634 -2595,18629 -2523,18627 -2455,18620
 (Rustweg - Uferweg): feste Sandstraße mit Schlaglöchern	Q2 -2455,18620 -2282,18615
 Libellenstr.: schlechtes Kopfsteinpflaster	Q3 -3703,2137 -3699,2085 -3707,2037 -3742,1980 -3738,1929 -3602,1799 -3559,1760
 Girlitzweg: guter Beton	Q0 15273,3269 15321,3332 15373,3403
@@ -6762,6 +6768,8 @@ Thujaweg: guter Beton	Q0 15721,5211 15621,5034 15445,4878
 Paul-Dessau-Str.: Beton	Q1 20787,16294 20811,16283 20833,16219 20764,16073 20707,16054 20656,16077
 Eisweg: guter Asphalt	Q0 23569,10956 23577,10915 23608,10902 23596,10848 23561,10712 23569,10693
 Landenhäuser Weg: guter Beton	Q0 5676,21354 5604,21400 5549,21447
+(Marienfelder Allee - Hildburghauser Str., Grünzug): fester Sandweg	Q1 7501,83 7231,236 7032,533 7023,694 7058,844
+Berntweg: Asphalt	Q0 13161,1991 13181,1645
 Pfabener Weg: Asphalt	Q0 6998,69 7184,150
 Wiesauer Str.: Asphalt	Q0 7231,25 7184,150 7162,200
 Lenaustr. (Lichtenrade): Verbundsteinpflaster, unbefestigte Seitenstreifen, Pflasterung renovierungsbedürftig"	Q2 10380,757 10281,749 10237,749 10179,744 10021,741
@@ -7090,6 +7098,9 @@ Sarntaler Weg: guter Beton	Q0 5836,509 5742,671 5710,726 5781,770 5781,800
 Zerbster Str. (Hellersdorf): guter Beton	Q0 24451,15181 24413,15372 24357,15429 24346,15505 24324,15519 24169,15497
 Jaehnstr.: guter Asphalt	Q0 -461,3522 -575,3684
 An der Fließwiese: schlechtes Verbundsteinpflaster	Q2 -998,12689 -1022,12743 -1020,12801 -962,12951 -950,13091 -912,13106 -815,13067
+Sven-Hedin-Platz: kleingepflasterter Fußweg/glatter Grünanlagenweg	Q1 -208,3793 -215,3787 -329,3702
+Slatdorpweg: uneben	Q2 -1637,3596 -1495,3509 -1478,3498
+Slatdorpweg: breiter Waldweg	Q1 -1478,3498 -1460,3487 -1144,3276
 (Hegauer Weg - Königsweg): wassergebunden, gut zu fahren	Q1 -84,2376 -174,2616
 (Gänseblümchenweg - Parkplatz): Trampelpfad	Q3 -1618,2137 -1612,2123
 Gilgestr.: Asphalt	Q0 -1181,2913 -1100,2697
@@ -7126,7 +7137,7 @@ Bergengruenstr.: schlechtes Kopfsteinpflaster	Q3 -1759,3634 -1628,3311
 Bergengruenstr.: schlechtes Kopfsteinpflaster	Q3 -1500,2964 -1561,3128 -1628,3311
 Bergengruenstr.: Asphalt	Q0 -1349,2581 -1410,2726 -1456,2844 -1500,2964
 Bergengruenstr.: Fußweg/Trampelpfad	Q2 -1340,2554 -1349,2581
-Deisterpfad: guter Asphalt	Q0 10,4932 -6,4997 -17,5066 -21,5099
+Deisterpfad: gute Betonplatten	Q0 10,4932 -6,4997 -17,5066 -18,5083 -21,5099
 Sibyllenstr.: mäßiger Asphalt	Q1 6544,3235 6484,3292 6429,3286 6359,3256 6308,3204
 Schneeberger Str.: guter Asphalt	Q0 23826,14292 23910,14115 23887,14028
 Kreppfuhlweg: schlecht asphaltiert bzw. betoniert	Q2 24731,13847 24635,13772
@@ -7152,6 +7163,9 @@ Kollostr.: guter Asphalt	Q0 9665,4392 9677,4518 9695,4638
 Sitzendorfer Str.: guter Asphalt	Q0 21962,17152 21915,17159 21812,17174 21677,17195
 Drausnitzer Str.: guter Asphalt	Q0 21625,8735 21540,8815 21512,8857 21508,8988
 Straße 106: fester Sandweg	Q1 14574,14646 14592,14682 14678,14853 14828,15050
+Mandelblütenweg: Asphalt	Q0 21538,475 21596,481 21676,500
+Krontalstr.: guter Asphalt	Q0 11569,-219 11530,-75 11451,114 11407,113
+(Mauerweg - Töpchiner Weg): wassergebundene Decke	Q1 11794,550 11691,554 11598,587
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206
 Richard-Ermisch-Str.: Asphalt	Q0 14250,13281 14224,13206 14207,13152 14177,13065 14163,13025 14130,12926 14096,12827
 Zum Langen Jammer: Kopfsteipflaster, Gehweg besser	Q2 14686,12873 14405,12953

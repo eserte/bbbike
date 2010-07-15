@@ -556,6 +556,7 @@ Huttwiler Weg	1 6913,18460 6961,18453 7035,18413 7098,18383 7120,18295 7071,1823
 Hartmannsweilerweg	1s 16,3744 41,3510 17,3471
 Alsenzer Weg	1s 27751,819 27798,872 27863,943 27968,1060
 Fichtenweg	1 -2963,17872 -2949,17946 -2967,18033 -3000,18192
+Johann-Landefeldt-Str.	1 -8598,7018 -8532,7041 -8466,7064 -8404,7087 -8341,7108 -8275,7131 -8207,7156
 Am Neuen Garten	1 -12166,1384 -12212,1201 -12276,831 -12302,718
 Am Neuen Garten	1 -12332,585 -12582,127
 Hochstraße	3nocross::ignrte -11399,-1339 -11461,-1424 -11540,-1543
@@ -1498,6 +1499,10 @@ Mittelstreifen	3nocross::ignrte -870,2737 -756,2787 -567,2869 -512,2883 -391,291
 Niklasstr. -> Potsdamer Chaussee: Mittelstreifen	3::igndisp -791,2819 -756,2787 -567,2869
 Potsdamer Chaussee -> Niklasstr.: Mittelstreifen	3::igndisp -870,2737 -756,2787 -791,2819
 Hohentwielst. -> Potsdamer Chaussee: Mittelstreifen	3::igndisp -479,2715 -567,2869 -756,2787
+tragen (4 Stufen)	0:10:49 -215,3787
+tragen (insgesamt 11 Stufen in zwei Absätzen)	0:20:-183 -18,5083
+tragen, langgezogene Stufen (4 Stufen)	0:10:-58 -1460,3487
+tragen, relativ steile Treppe (13 Stufen)	0:20:-58 -1495,3509
 tragen (14 Stufen)	0:30:82 15133,5869
 tragen (2 x 14 Stufen) oder Aufzug	0:30:-249 4158,461
 tragen (19 Stufen)	0:25:78 11479,7746

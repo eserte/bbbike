@@ -3673,6 +3673,11 @@ Strehlener Str.: Asphalt	Q0 22652,10392 22538,10477 22403,10523
 ######################################################################
 #: by: anonymous vvv
 # 
+#: note: "enge Straße", aber ohne weitere Kategorisierung
+Wermuthweg: Asphalt	Q0 13661,2207 13672,2221 13816,2258 13827,2280 13838,2310 13835,2354 13709,2551
+Haeselerstr. (Lichtenrade): guter Asphalt	Q0 10404,-2398 10513,-2397 10563,-2432
+Pappritzstr.: guter Asphalt	Q0 7562,1796 7675,1885 7736,1969 7741,2096
+Lindenblütenstr.: guter Asphalt	Q0 21703,388 21676,500 21658,575
 #: note: laut ADFC-Karte/neu gut geeignet
 Crivitzer Str.: guter Asphalt	Q0 17807,18267 17670,18435 17580,18548
 Johann-Landefeldt-Str.: Asphalt	Q0 -8619,7012 -8598,7018 -8532,7041 -8466,7064 -8404,7087 -8341,7108 -8275,7131 -8207,7156 -8138,7182 -8074,7204 -8011,7229 -7948,7252 -8032,7437 -8055,7489
@@ -5566,6 +5571,8 @@ Bauhüttenweg: Asphalt	Q0 12703,2454 12835,2470 12948,2484 13064,2499 13180,2514 
 #: by: o. schumacher:
 Elberfelder Str.: schlechtes Kopfsteinpflaster	Q3 5766,13175 5755,12998 5749,12834 5734,12673
 #: by: Anna Tamborini: vvv
+Benfeyweg: guter Asphalt	Q0 -8553,5329 -8638,5362 -8731,5401 -8797,5428 -8814,5428
+Schambachweg: mäßiger Asphalt	Q1- -8638,5362 -8735,5116 -8762,5033
 Zimmerstr. (Wilhelmstadt): Gehwegplatten	Q0 -3962,12973 -3942,12957
 Zimmerstr. (Wilhelmstadt): Kopfsteinpflaster	Q2 -3942,12957 -3834,12911 -3724,12917 -3667,12919
 Reiherbeize: Kopfsteinpflaster	Q2 593,4262 444,4498
@@ -7802,7 +7809,7 @@ Pieskower Weg: Asphalt	Q0 13131,15175 13105,15122 13070,15063 12894,15165 12864,
 Pieskower Weg: Asphalt	Q0 12894,15165 12812,15053
 #: by: ^^^
 #: by: Britta Hauchwitz: vvv
-Aprikosensteig: guter Beton	Q0 15445,4878 15474,4845 15558,4758 15558,4757 15608,4722 15690,4668 15774,4612 15863,4554
+Aprikosensteig: guter Beton	Q0 15445,4878 15474,4845 15558,4758 15608,4722 15690,4668 15774,4612 15863,4554
 Aprikosensteig: guter Beton	Q0 15474,4845 15364,4748
 #: by: ^^^
 #: by: Randi:
@@ -10114,7 +10121,7 @@ Altenescher Weg: Betonplatten z.T. mit Absätzen	Q1 14051,14822 13856,14944 13749
 Am Teufelsbruch: Asphalt	Q0 -2678,18396 -2673,18634
 Zum Erlengrund: Asphalt	Q0 -2605,18393 -2595,18629
 Zu den Fichtewiesen: Asphalt	Q0 -2535,18391 -2523,18627
-Rustweg: OK	Q0 -2827,18639 -2673,18634 -2595,18629 -2523,18627 -2454,18620 -2455,18620
+Rustweg: OK	Q0 -2827,18639 -2673,18634 -2595,18629 -2523,18627 -2455,18620
 (Rustweg - Uferweg): feste Sandstraße mit Schlaglöchern	Q2 -2455,18620 -2282,18615
 #: by: ^^^
 #: by: Timm (wille):
@@ -10202,6 +10209,9 @@ Eisweg: guter Asphalt	Q0 23569,10956 23577,10915 23608,10902 23596,10848 23561,1
 #: note: "ruhige Nebenstraße, Tempo 30"
 Landenhäuser Weg: guter Beton	Q0 5676,21354 5604,21400 5549,21447
 #: by: Bernhard Husch: vvv
+#: note: laut ADFC-Karte "gut geeignet"
+(Marienfelder Allee - Hildburghauser Str., Grünzug): fester Sandweg	Q1 7501,83 7231,236 7032,533 7023,694 7058,844
+Berntweg: Asphalt	Q0 13161,1991 13181,1645
 Pfabener Weg: Asphalt	Q0 6998,69 7184,150
 Wiesauer Str.: Asphalt	Q0 7231,25 7184,150 7162,200
 #: note: "enge Straße" ohne weitere Kategorisierung
@@ -10776,6 +10786,8 @@ Röbeler Weg: Kopfsteinpflaster	Q2 24831,10711 24826,10597 24759,10507
 #: by: Thomas Kunz:
 Heimgartenstr.: Asphalt	Q0 23537,4238 23657,4255 23880,4280 24107,4309
 #: by: Inga Henkel:
+#: confirmed_by: MichaelM ("große Betonsegmente")
+#: note: (by MichaelM): "Fußgängerzone", Radfahren ausdrücklich erlaubt, Geschwindigkeitsbegrenzung 10km/h
 Alsbacher Weg: guter Beton	Q0- -847,4553 -824,4635
 #: by: Anke Hirschfelder:
 #: note: "q1, einige Fußgänger" ignoriert
@@ -10945,6 +10957,9 @@ Jaehnstr.: guter Asphalt	Q0 -461,3522 -575,3684
 #: by: Fred (ramme...):
 An der Fließwiese: schlechtes Verbundsteinpflaster	Q2 -998,12689 -1022,12743 -1020,12801 -962,12951 -950,13091 -912,13106 -815,13067
 #: by: MichaelM: vvv
+Sven-Hedin-Platz: kleingepflasterter Fußweg/glatter Grünanlagenweg	Q1 -208,3793 -215,3787 -329,3702
+Slatdorpweg: uneben	Q2 -1637,3596 -1495,3509 -1478,3498
+Slatdorpweg: breiter Waldweg	Q1 -1478,3498 -1460,3487 -1144,3276
 (Hegauer Weg - Königsweg): wassergebunden, gut zu fahren	Q1 -84,2376 -174,2616
 (Gänseblümchenweg - Parkplatz): Trampelpfad	Q3 -1618,2137 -1612,2123
 Gilgestr.: Asphalt	Q0 -1181,2913 -1100,2697
@@ -11009,7 +11024,8 @@ Bergengruenstr.: Asphalt	Q0 -1349,2581 -1410,2726 -1456,2844 -1500,2964
 Bergengruenstr.: Fußweg/Trampelpfad	Q2 -1340,2554 -1349,2581
 #: by: ^^^
 #: by: katrin peters:
-Deisterpfad: guter Asphalt	Q0 10,4932 -6,4997 -17,5066 -21,5099
+#: corrected_by: MichaelM (Asphalt -> Beton)
+Deisterpfad: gute Betonplatten	Q0- 10,4932 -6,4997 -17,5066 -18,5083 -21,5099
 #: by: Benny (...meier):
 #: note: "enge Straße", aber q0
 Sibyllenstr.: mäßiger Asphalt	Q1 6544,3235 6484,3292 6429,3286 6359,3256 6308,3204
@@ -11074,6 +11090,12 @@ Sitzendorfer Str.: guter Asphalt	Q0 21962,17152 21915,17159 21812,17174 21677,17
 Drausnitzer Str.: guter Asphalt	Q0 21625,8735 21540,8815 21512,8857 21508,8988
 #: by: Gonsolo:
 Straße 106: fester Sandweg	Q1 14574,14646 14592,14682 14678,14853 14828,15050
+#: by: Marc Braunfisch:
+Mandelblütenweg: Asphalt	Q0 21538,475 21596,481 21676,500
+#: by: Niels (nathelbiya): vvv
+Krontalstr.: guter Asphalt	Q0 11569,-219 11530,-75 11451,114 11407,113
+(Mauerweg - Töpchiner Weg): wassergebundene Decke	Q1 11794,550 11691,554 11598,587
+#: by: ^^^
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206
