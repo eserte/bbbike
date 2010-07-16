@@ -75,7 +75,7 @@ Germanenstr. (oder nur das kleine Stück bis Waldsteg?)	?::projected 8396,19071 8
 Neuendorfer Str.	?::projected -2883,15571 -2856,15687 -2869,15782 -2886,15867 -2915,15994 -3040,16246
 Goerzallee	?::projected 4164,2717 4065,2576 3983,2454 3805,2196 3700,2045 3640,1959 3584,1877 3425,1647 3199,1455 3140,1411 2843,1281 2663,1199 2527,1136 2515,1131 2404,1078 2372,1043 2333,1003 2147,811 1946,604 1940,587 1834,339 1765,294
 Lankwitzer Str.	?::projected 8955,3521 8599,3441 8478,3414 8347,3382 8259,3349 8080,3260 8039,3242
-#: last_checked: 2010-07-07
+#: last_checked: 2010-07-16
 #: next_check: 2010-09-01
 Schnellerstr.	?::projected 18245,5551 18370,5511 18680,5413 18984,5318 19031,5316 19328,5304 19405,5284
 #: next_check ^^^
@@ -2030,7 +2030,6 @@ Travemünder Str.: Qualität?	? 8695,16525 8759,16665 8759,16684
 #: XXX: nicht vergessen: auch in brunnels eintragen!
 Fußgängerbrücke: Für Radfahrer befahrbar? Existieren Rampen oder Treppen? Qualität?	? 13192,21697 13046,21734 13008,21783
 Blumenthalstr.: Qualität südlich der Uhlandstr. (fängt auch mit Kopfsteinpflaster an)?	? 9120,20015 9159,19818 9177,19745 9195,19644 9214,19533 9231,19440 9249,19351 9258,19290
-Schüßlerplatz: Ist der Schüßlerplatz gepflastert? Gibt es hier eine Einbahnstraße?	? 22284,4653 22355,4660
 Rue Racine: Qualität?	? 4339,21600 4334,21540 4307,21506 4254,21495 4204,21536 4198,21615 4209,21703
 #: XXX unklarer Eintrag von Ulrich Sziede: gute Qualität, Radweg?
 Schefferweg: Qualität?	? 7432,2400 7425,2461
@@ -3336,7 +3335,6 @@ Melli-Beese-Str.: Wie ist die Qualität der Straße im nördlichen Abschnitt (viell
 #: XXX missing in Berlin.coords.data
 Straße an der Parkanlage: Qualität? Stimmt der Straßenname? Spielstraße?	? 17827,3549 17892,3550
 Hanuschkestr.: Qualität? Spielstraße?	? 17892,3537 17974,3536
-Am Alten Fenn: Qualität?	? 17037,4794 17060,4848 17119,4931 17246,5089 17266,5134 17291,5201 17297,5260 17300,5423 17366,5551
 Melli-Beese-Str. - Parkweg: gibt es für Radfahrer eine Verbindung zwischen Melli-Besse-Str. und dem Weg im Landschaftspark?	? 17870,3965 17877,3979
 #XXX by jan (...matrix): nein --- Rennbahnstr./Gustav-Adolf-Str.: gibt es eine Ampel an der Kreuzung Rennbahnstr./Gustav-Adolf-Str.?	? 13708,17453
 Spiekermannstr.: Ist die Spiekermannstr. eine Tempo-30-Straße oder eine Spielstraße?	? 12054,16517 11919,16495 11844,16483 11663,16458
@@ -5113,10 +5111,6 @@ Mauswieselweg: Qualität? Wo liegt die Straße genau?	? 26289,12772
 #: by: http://www.cdu-fraktion-tk.de/image/inhalte/file/Amtsblatt43.pdf
 #: XXX fehlt in Berlin.coords.data plz=12623
 Dürergärten: Qualität? Wo liegt die Straße genau?	? 25880,12849 25880,12751
-#: XXX fehlt in Berlin.coords.data plz=10317
-#: last_checked: 2010-07-09 (und nicht gefunden)
-#: next_check: 2010-10-01
-Zur Alten Flussbadeanstalt: Qualität? Wo liegt die Straße genau?	? 16407,9647 16390,9494
 #: XXX laut MichaelM "Bordstein"
 (Rondellstr. - Potsdamer Str.): Qualität? Nachts beleuchtet?	? -102,3078 -49,3003
 #: XXX_osm bei osm ohne Namen
@@ -5126,5 +5120,4 @@ Börnicke - Staffelde: existieren Radwege zwischen Börnicke und Staffelde?	? -217
 #: XXX fehlt bei Berlin.coords.data
 #: note: Name ab 2010-08-16
 Sotzmannstr.: Qualität? Ist das tatsächlich die Sotzmannstr.?	? -4629,12835 -4558,12992 -4610,13010 -4601,13112 -4634,13173
-#: XXX wahrscheinlich Waldweg, sehr wahrscheinlich unbeleuchtet und green2
-Kiefholzstr./Rixdorfer Str. - Königsheideweg/Mittelweg: Qualität?	? 16861,5935 16816,5831 16670,5473 16611,5333 16530,5137 16554,5022
+Kietzer Str.: Ist die Kietzer Str. eine Einbahnstraße?	? 22312,4593 22358,4521 22396,4464

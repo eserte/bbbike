@@ -43,7 +43,7 @@ Brockenstr.: Kopfsteinpflaster	Q2 13575,8593 13687,8734
 Sinsheimer Weg: schlechtes Kopfsteinpflaster, aber Ausweichen auf Parkplatz möglich	Q2 13687,8734 13774,8849
 Sinsheimer Weg: Betonstraße	Q0 13774,8849 13837,8932
 Donaustr.: schlechtes bis mäßiges Kopfsteinpflaster	Q2 12150,8891 12202,8895 12394,8729 12549,8616 12649,8535
-Donaustr.: Kopfsteinpflaster	Q2 12865,8346 12918,8232
+Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12918,8232
 Friesenstr.: mäßiges Kopfsteinpflaster	Q2 9801,8683 9801,8889 9799,8962 9797,9063 9795,9162 9793,9241
 Heimstr.: mäßiges Kopfsteinpflaster	Q2 9958,8966 9959,9050 9962,9151 9973,9232
 Lilienthalstr.: mäßiges Kopfsteinpflaster, mäßiger und enger Radweg	Q2 10705,9234 10709,9192 10748,9054 10675,8940
@@ -1455,7 +1455,7 @@ Tiergartenstr. (Biesdorf): Kopfsteinpflaster	Q2 21037,7751 21179,7754 21304,7783
 Bismarcksfelder Str.: fester Sandweg, holprig	Q2 21435,7798 21496,7815 21561,7867 21598,7922
 (Bellevuepark): mäßiger Asphalt	Q1 22798,5731 22790,5568 22733,5569 22701,5428 22628,5340
 Am Krusenick: guter Asphalt	Q0 22726,5332 22754,4893 22673,4812
-Lindenstr.: äußere Fahrstreifen mit Kopfsteinpflaster	Q2 22101,5064 22196,4847
+Lindenstr.: äußere Fahrstreifen mit Kopfsteinpflaster	Q2 22128,5003 22196,4847
 Lienhardweg: asphaltiert	Q0 22958,2005 23099,2031 23209,2050 23325,2070 23433,2085 23535,2111
 Bendigstr.: Kopfsteinpflaster	Q2 23433,2085 23448,2013 23497,1812
 Logauweg: Kopfsteinpflaster	Q2 23390,1785 23497,1812 23627,1835
@@ -1874,6 +1874,7 @@ Südtorweg: wassergebundene Decke	Q1 -503,11782 -750,11740
 Südtorweg: asphaltiert	Q0 -750,11740 -794,11732 -940,11708
 Erkstr.: Asphalt mit Schäden	Q0 12598,8390 12771,8439
 Erkstr.: Asphalt	Q0 12771,8439 12902,8470 12925,8494
+Donaustr: Beton	Q0 12649,8535 12771,8439
 Straße 645: Asphalt	Q0 11441,8280 11426,8107 11450,7921 11472,7899
 Oderstr.: Asphalt	Q0 11472,7899 11498,7750 11515,7654 11536,7533 11553,7437 11562,7393 11601,7362 11615,7284 11608,7267 11593,7237 11607,7145
 Jollenseglerstr.: Verbundsteinpflaster	Q0 14921,10047 14879,9961
@@ -2323,7 +2324,7 @@ Siegfried-Berger-Str.: Kopfsteinpflaster	Q2 22849,2856 22766,2838 22762,2859 223
 Wasserstr. (Oberschöneweide): Verbundsteinpflaster	Q1 19697,5835 19681,5924
 Waldowstr. (Oberschöneweide): kleinteiliges, unebenes Kopfsteinpflaster	Q2 19388,5883 19325,6105
 Treskowstr. (Oberschöneweide): kleinteiliges, unebenes Kopfsteinpflaster	Q2 19333,6165 19405,6276
-Verl. Rathenaustr.: Asphalt	Q0 19276,6359 19407,6660
+Verl. Rathenaustr.: Asphalt	Q0 19276,6359 19372,6579 19407,6660
 Fuststr.: kleinteiliges Kopfsteinpflaster	Q2 17934,7029 17823,7203
 Fuststr.: Kopfsteinpflaster	Q2 17823,7203 17743,7328
 Grenzweg: Kopfsteinpflaster	Q2 17681,7589 17295,7336
@@ -3212,6 +3213,13 @@ Ernst-Ziesel-Str.: Asphalt	Q0 18877,5618 18771,5686
 Antoniuskirchstr.: Asphalt	Q0 18125,6694 18152,6745 18122,6773 18069,6753
 Scharfensteinstr.: Kopfsteinpflaster	Q2 13545,21738 13270,21870
 Gutenfelsstr.: Kopfsteinpflaster	Q2 13479,21633 13220,21761
+Schüßlerplatz: Kopfsteinpflaster	Q2 22284,4653 22355,4660
+Zur Alten Flussbadeanstalt: Straße in Bau	Q2 16432,9673 16347,9594 16290,9670
+(Königsheideweg - Am Alten Fenn): Pfad	Q2 17037,4794 17060,4848
+(Am Alten Fenn - Südostallee): Feinschotterweg	Q2 17295,5387 17300,5423 17366,5551
+Am Alten Fenn: Feinschotterweg	Q1 17060,4848 17119,4931 17246,5089 17266,5134 17291,5201 17297,5260 17295,5387
+(Kiefholzstr./Rixdorfer Str. - Königsheide): Waldweg, Schotter und sandige Stellen	Q2 16861,5935 16816,5831 16670,5473 16611,5333 16591,5284
+(Königsheide - Königsheideweg): Waldweg, etwas Schotter	Q1 15868,5587 16591,5284 16827,5187 16899,5146 17009,5016 16966,4847 16959,4831
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
 Riemeisterstr.: mäßiges Kopfsteinpflaster, aber asphaltierte Radwege	Q1 346,4833 294,4916 158,5103 103,5123
 Pücklerstr.: Fahrbahn mit schlechtem Kopfsteinpflaster, Radweg OK	Q1 2688,7067 2576,7026 2465,6984 2403,6962 2266,6911 2155,6873 2130,6865 2054,6840 1961,6820
@@ -4791,8 +4799,7 @@ Allendeweg: Asphalt	Q0 23001,4382 22963,4435 22893,4532
 Kattunsteig: sandiger Waldweg	Q3 19760,4875 19762,4823 19710,4760 19715,4410 19731,4329 19771,4273 19753,4241
 Bärenlauchstr.: Asphalt	Q0 19737,5176 19744,5063 19755,4962 19760,4907 19760,4875
 Rudower Str. (Niederschöneweide): Mitte der Fahrbahn Kopfsteinpflaster, Seiten mit löchrigem Beton	Q1 18695,5076 18641,5260 18659,5330
-Rudower Str. (Niederschöneweide): einige Schlaglöcher	Q1 18659,5330 18680,5413
-Rudower Str. (Niederschöneweide): Asphalt	Q0 18680,5413 18695,5453
+Rudower Str. (Niederschöneweide): Asphalt	Q0 18659,5330 18680,5413 18695,5453
 Paul-Schwenk-Str.: Beton	Q0 19613,14728 19579,14783 19588,14847 19646,14917 19856,14926 19872,14954 19902,14945
 Martha-Arendsee-Str. guter Beton	Q0 19593,14472 19593,14523 19539,14594 19536,14657 19613,14728 19765,14737 19800,14726
 Kattegatstr.: Asphalt	Q0 9475,17557 9323,17667 9197,17762

@@ -1707,37 +1707,7 @@ userdel	q4::inwork; 10614,19907 10742,19632
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_015899',
-         'until' => 1279231140,
-         'text' => 'Straße des 17. Juni (Tiergarten): FIFA Fan Fest, Straße vollständig gesperrt (bis 15. Juli, 24 Uhr) in beiden Richtungen zwischen Großer Stern und Eberstr., ebenso Yitzhak-Rabin-Str. sowie der östliche Tiergarten, 19.06.2010 16:00 Uhr bis 15.07.2010 23:59 Uhr ',
-         'from' => 1276869600,
-         'id' => 2088,
-         'data' => 'userdel	2::temp 8055,12186 7816,12150 7383,12095 6828,12031
-userdel	2::temp 8089,12190 8055,12186 8119,12414
-userdel auto	3 7460,12054 7383,12095 7039,12314
-userdel auto	3 7827,12105 7816,12150 7875,12363
-userdel auto	3 7875,12363 7816,12150 7827,12105
-userdel auto	3 7039,12314 7383,12095 7460,12054
-userdel	2::temp 7382,11588 7163,11738 7287,11763 7535,11677
-userdel	2::temp 8021,11636 8016,11770 7801,11875 7663,11946
-userdel	2::temp 7796,11681 7816,11571
-userdel	2::temp 8022,12016 8016,11770 7852,11721
-userdel	2::temp 7816,12150 7875,12363
-userdel	2::temp 7711,11558 7669,11586 7591,11639
-userdel	2::temp 8055,12186 8048,12135 8034,12093
-userdel	2::temp 7822,11952 7832,12036
-userdel	2::temp 8172,11679 8016,11770 8156,11863 8223,11796
-userdel	2::temp 7696,11621 7735,11656
-userdel	2::temp 7039,12314 7383,12095
-userdel	2::temp 7795,11823 7777,11787
-userdel	2::temp 6778,11742 7073,11798 6809,11979
-userdel	2::temp 8091,11992 8089,12041
-userdel	2::temp 8018,12131 7827,12105 7460,12054 7663,11946 7570,11855 7223,11897 7073,11798 7163,11738 6980,11583
-userdel	2::temp 7460,12054 6857,11992
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'source_id' => '105200001',

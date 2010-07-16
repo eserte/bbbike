@@ -438,7 +438,6 @@ Heimat	1 1032,1325 994,1485 968,1479 941,1603
 Techowpromenade	1 5219,20467 5185,20358 5173,20275 5170,20182
 (Kastanienallee - Schönhauser Allee)	1 10884,14952 10838,14962
 Lossebergplatz	1 16070,23566 16094,23554 16095,23539 16079,23535 16064,23547 16070,23566
-#: XXX Annahme, da Radweg am Dammfuß verläuft
 Spindlersfelder Str.	2 21308,3680 21127,4180 21121,4234 21080,4702 21075,4769 21065,4957
 Rathausstr.:	1 15651,12214 15628,12246 15576,12315 15537,12367
 Alt-Marzahn	1 21112,15396 21042,15428 20967,15458 20796,15559 20903,15545 20988,15505 21051,15464 21112,15396
@@ -730,6 +729,8 @@ Alsenzer Weg	1s:q3 27751,819 27798,872 27863,943 27968,1060
 Fichtenweg	1 -2963,17872 -2949,17946 -2967,18033 -3000,18192
 #: by: anonymous
 Johann-Landefeldt-Str.	1 -8598,7018 -8532,7041 -8466,7064 -8404,7087 -8341,7108 -8275,7131 -8207,7156
+Schüßlerplatz	1 22284,4653 22355,4660
+Karlstr. (Köpenick)	1 22556,4386 22458,4134
 ######################################################################
 #
 # Potsdam
@@ -1375,6 +1376,7 @@ tragen (Treppe)	0:30 89344,-5795
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+Schranke	BNP:3::trailer=10 16966,4847
 #: by: Juliane (alberts...)
 #: XXX genaue Position des Drängelgitters?
 Drängelgitter	BNP:3 -4651,9842
