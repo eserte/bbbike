@@ -1474,16 +1474,7 @@ userdel	q4::inwork; 10614,19907 10742,19632
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'source_id' => '107300037',
-         'until' => 1279317600,
-         'text' => 'Angermünde: Grundhafter Straßen- und Kanalbau OL Angermünde, R.-Breitscheid-Str., 06.04.2010 bis 16.07.2010 ',
-         'from' => 1271280213,
-         'id' => 2042,
-         'data' => 'userdel	q4::inwork 48657,68265 49286,68297 49503,68415
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'IM_015512',
          'until' => 1291129200,

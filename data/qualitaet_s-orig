@@ -714,7 +714,7 @@ Biberpelzstr.: Beton	Q0 31396,2713 31236,2702 30962,2787
 Biberpelzstr.: Asphalt	Q0 31984,2386 31924,2523 31789,2636 31703,2707 31647,2729 31565,2762 31514,2755
 Biberpelzstr.: Asphalt	Q0 31463,2748 31434,2729
 #: by: Sandra Falkenhagen [AM]
-(Pelzlake): Asphalt	Q0 32245,1914 32204,1892 32121,1850 31944,1859 31789,1787 31185,2026 31063,2191
+(Pelzlake): Asphalt	Q0 32155,1863 32121,1850 31944,1859 31789,1787 31185,2026 31063,2191
 Am Kleinen Müggelsee: asphaltierter Waldweg	Q0 29992,2404 29902,2379 29738,2467 29532,2556 28878,2896 28796,2918 28764,2955 28753,3066 28729,3084
 Koppelweg (Britz): Asphalt	Q0 12543,4386 12288,4378 12231,4365 12173,4350 11937,4353 11814,4351 11744,4346 11671,4343 11576,4339 11480,4335 11376,4331 11244,4325
 Limastr.: Kopfsteinpflaster	Q2 -1102,3345 -1118,3356 -1195,3503 -1204,3662 -1230,3780 -1277,3854 -1360,4014
@@ -800,10 +800,14 @@ Eichgestell: Beton	Q0 19751,6514 19590,6590
 Eichgestell: Asphalt	Q0 19590,6590 19407,6660 19052,6823
 Eichgestell: Parkweg, OK	Q1 19052,6823 18186,7200 18052,7148 18003,7144
 Sobernheimer Str.: Kopfsteinpflaster/Asphalt	Q2 27609,305 27667,368 27700,402 27734,437 27752,458 27783,493 27831,548 27932,665 27940,675 27961,699 28003,747 28051,803 28065,819 28188,962
-An der Krampe: Waldweg, OK	Q1 28520,281 28430,259 28349,364 28300,364 28310,269 28265,157 28265,68 28213,-45 28199,-346 28107,-336 28008,-390 27978,-473 27847,-665
+Zur Revierförsterei: Waldweg	Q1 28521,246 28521,300
+Zur Revierförsterei: Beton	Q0- 28521,300 28538,452
+Zur Revierförsterei: Verbundsteinpflaster	Q1+ 28538,452 28660,542
+An der Krampe: Waldweg, OK	Q1 28521,246 28450,242 28391,305 28303,309 28310,269 28265,157 28265,68 28213,-45 28206,-258 28143,-335 28107,-336 28008,-390 27978,-473 27847,-665
 An der Krampe: schlechter Waldweg, Wurzeln	Q3 27847,-665 27803,-742 27759,-995 27727,-1078 27767,-1217 27758,-1358 27765,-1654 27695,-2161 27718,-2301 27932,-2444 27985,-2389 28144,-2262 28116,-2127 28163,-2013
-Am Seddinsee: Waldweg	Q2 28163,-2013 28338,-2265 28443,-2317 28527,-2347 28568,-2346 28794,-2258 28898,-1986 28841,-1872
-Am Seddinsee: teils schlechter Waldweg	Q3 28841,-1872 29229,-1676 29204,-1545 29334,-1343 29475,-1275 29602,-1051 30028,-891 30162,-747 30218,-529 30570,-351 30778,-326
+#: note "Referenzfläche"
+Am Seddinsee: sich selbst überlassener Waldweg	Q3 28163,-2013 28338,-2265 28443,-2317 28527,-2347 28568,-2346 28742,-2264 28892,-1955 28862,-1816
+Am Seddinsee: teils schlechter Waldweg	Q3 28862,-1816 28887,-1795 28935,-1819 28957,-1810 28958,-1779 28999,-1784 29149,-1742 29162,-1704 29229,-1676 29204,-1545 29334,-1343 29475,-1275 29602,-1051 30028,-891 30125,-734 30218,-529 30570,-351 30778,-326
 Zum Seddinsee: teils schlechter Waldweg	Q3 30839,106 30859,-6 30778,-326
 Melchiorstr.: mäßiger Asphalt	Q1 11921,11185 11726,11265
 Melchiorstr.: mäßiger Asphalt	Q1; 11726,11265 11542,11342
@@ -1486,6 +1490,8 @@ Scharnweberstr.: Asphalt	Q0 19495,6029 19650,5920
 Alt-Köpenick: Kopfsteinpflaster, zwischen den Schienen Asphalt	Q0 22196,4847 22175,4730 22138,4661 22111,4562
 Alt-Köpenick: Kopfsteinpflaster	Q2 22111,4562 22093,4499
 Katzengraben, Schüßlerplatz: Kopfsteinpflaster	Q2 22439,4838 22451,4749 22465,4690 22395,4678
+Katzengraben: Kopfsteinpflaster	Q2 22475,4658 22469,4677 22465,4690
+Spindlergasse: Kopfsteinpflaster	Q2 22469,4677 22515,4694
 Futranplatz: Kopfsteinpflaster	Q2 22451,4749 22388,4737
 Steinstr.: Kopfsteinpflaster	Q2 -7909,-2375 -7996,-2293
 (zum Anhalter Steg): teils asphaltiert, teils Bohlenweg	Q1 8659,10239 8685,10317 8726,10351
@@ -3171,7 +3177,7 @@ Lassallestr. (Wilhelmshagen): Asphalt	Q0- 31783,4162 31793,4072 31822,3982 31856
 Schettkatstr.: Asphalt	Q0 31783,4162 31876,4162 32017,4165
 Erknerstr.: Asphalt	Q0 31967,4381 31987,4332 32017,4165 32046,4089 32081,4021 32120,3977 32229,3892
 Wiebelskircher Weg: Asphalt	Q0- 31876,4162 31880,4092 31903,4020 31966,3902 32030,3839 32108,3793 32162,3774 32230,3766
-Fahlenbergstr.: Asphalt	Q0 31997,3753 31986,3646 31983,3518
+Fahlenbergstr.: Asphalt	Q0 31997,3753 31986,3646 31983,3518 31978,3237 31967,2966 31999,2812 32031,2723
 Grünelinder Str.: Asphalt	Q0 31863,3257 31865,3375 31870,3484 31876,3568 31909,3703
 Schönblicker Str.: Asphalt	Q0 31695,3690 31661,3665 31670,3604 31724,3592 31756,3620 31745,3679 31695,3690
 Nickelswalder Str.: Asphalt	Q0 31632,3297 31674,3409 31715,3508 31729,3551 31724,3592
@@ -3524,7 +3530,10 @@ Straße zum Müggelhort: Asphalt	Q0 27761,2124 27599,1521
 (Zum Hotel Müggelsee): Beton	Q0- 26713,2064 26805,2381 26868,2580
 Müggelschlößchenweg: Asphalt	Q0 25396,4417 25132,4385 24181,4270 24135,4264 23879,4233 23753,4218
 Müggelschlößchenweg: Beton	Q0 23753,4218 23655,4205 23435,4179
-Strandschloßweg: Beton	Q0 23368,3894 23749,3883
+Strandschloßweg: Beton	Q0 23368,3894 23749,3883 23925,3886
+Strandschloßweg: Feinschotter	Q1 23925,3886 24147,3888 24321,3886
+Strandschloßweg: Waldweg, Wurzeln	Q2 24321,3886 24869,3879
+Strandschloßweg: Waldweg, Schotter	Q1- 24869,3879 25052,3877 25262,3828
 Johannes-Kraatz-Str.: Asphalt	Q0 18932,5926 18870,5833 18818,5756 18771,5686
 Peter-Behrens-Str.: Asphalt	Q0 19024,5830 18925,5688 18877,5618
 Paul-Tropp-Str.: Asphalt	Q0 19105,5699 19042,5607
@@ -3544,6 +3553,24 @@ Zur Alten Flussbadeanstalt: Straße in Bau	Q2- 16432,9673 16347,9594 16290,9670
 Am Alten Fenn: Feinschotterweg	Q1- 17060,4848 17119,4931 17246,5089 17266,5134 17291,5201 17297,5260 17295,5387
 (Kiefholzstr./Rixdorfer Str. - Königsheide): Waldweg, Schotter und sandige Stellen	Q2+ 16861,5935 16816,5831 16670,5473 16611,5333 16591,5284
 (Königsheide - Königsheideweg): Waldweg, etwas Schotter	Q1- 15868,5587 16591,5284 16827,5187 16899,5146 17009,5016 16966,4847 16959,4831
+Dämeritzstr.: Asphalt	Q0 32512,2621 32445,2716
+Ahornstr. (Hessenwinkel): Asphalt	Q0 32998,2827 32952,2786 32952,2743 32888,2717 32801,2710 32643,2695
+Lutherstr.: Asphalt	Q0 32829,3105 32802,2932 32790,2792 32801,2710
+Lutherstr.: unbefestigte Straße	Q2 32801,2710 32809,2656
+Triglawstr.: Kleinsteinpflaster	Q1 32207,2001 32217,1978
+Baldurstr. (Hessenwinkel): Asphalt	Q0 32239,1929 32361,1926
+Wodanstr. (Hessenwinkel): Asphalt	Q0 32400,1793 32361,1926 32341,1996
+Triglawstr. - Russenbrücke: Kleinsteinpflaster	Q1 32245,1914 32155,1863
+Weg Q: unbefestigter Weg	Q2- 28644,560 28733,665
+Krampenburger Weg: gepflastert	Q1- 28331,877 28207,734 28185,709 28126,641 28083,592 28062,568 27952,435 27894,364 27880,347 27859,322 27836,286
+Wiesbacher Weg: Asphalt	Q0 28207,734 28101,798 28065,819
+Weg F: unbefestigte Straße	Q2 28101,798 28085,776 28185,709
+Weg G: unbefestigte Straße	Q2 28003,747 28126,641
+Weg H: unbefestigte Straße	Q2 27961,699 28083,592
+Zur Hirtenwiese: Asphalt	Q0 27273,-106 26700,-344
+Am Maria-Jankowski-Park: Kopfsteinpflaster	Q2 22087,5404 22018,5452
+(Lindenstr. - Bahnhofstr.): Kleinsteinpflaster	Q1 22017,5159 22046,5305 22043,5346
+Am Generalshof: Kopfsteinpflaster	Q2 22164,5441 22167,5416 22046,5305
 ######################### User Contributions #################################
 #: by: Dominik Seelow vvv
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
@@ -5270,6 +5297,7 @@ Stewardstr.: Asphalt	Q0 755,5017 928,4996
 Stewardstr.: mäßiger Asphalt (einige Straßenschäden)	Q1 928,4996 1138,4974 1311,4951
 #: by: ^^^
 #: by: Jörg Krüger:
+#: confirmed_by: srt (südwestl. Ende)
 Meisenheimer Str.: guter Asphalt	Q0 28624,582 28713,682 28784,762 28845,831 28896,888 29098,1148
 #: by: josef: (oetzijo):
 Hohenbornweg: guter Asphalt	Q0 7846,1718 7754,1806 7675,1885
@@ -7798,8 +7826,8 @@ Hauffstr.: Asphalt	Q0 15635,11195 15694,11125 15740,11028 15756,10966
 #: by: Axel Barkschat:
 Richard-Willstätter-Str.: Asphalt	Q0 19592,2462 19794,2629 19978,2790
 #: by: Patrick Kröhl:
-#: XXX prüfen, am Müggelschlößchenweg sah es eher wie Beton aus
-Alfred-Randt-Str.: guter Asphalt	Q0 23749,3868 23925,3869 23925,3886 23922,3973 23971,4020 24293,4017 24296,4096 24293,4227 24140,4227 24135,4264
+#: corrected_by: srt (Asphalt -> Beton)
+Alfred-Randt-Str.: Beton	Q0 23749,3868 23925,3869 23925,3886 23922,3973 23971,4020 24293,4017 24296,4096 24293,4227 24140,4227 24135,4264
 #: by: Hubertus Fuerther:
 Grünfinkenweg: guter Asphalt	Q0 22312,48 22451,95 22515,109 22591,105 22631,50
 #: by: Krolop:
@@ -8310,6 +8338,7 @@ Popperstr.: guter Asphalt	Q0 8828,2841 8895,3094 8969,3074
 #: confirmed_by: srt
 Waldschützpfad: schlechtes Kopfsteinpflaster	Q3 30020,4273 30082,4506 30124,4664
 #: by: mario (bockmann):
+#: confirmed_by: srt ("unbefestigt")
 Weg P: schlechter Sandweg	Q3 28512,704 28651,859 28689,886
 #: by: Alain Hugonnet:
 Mudrastr.: mäßiger Beton	Q1- 7489,2787 7384,2763 7308,2734 7289,2699 7324,2559 7370,2400

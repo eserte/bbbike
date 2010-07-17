@@ -249,7 +249,7 @@ Braunschweiger Str.: Asphaltierung	? 13047,7234 13150,7254 13322,7294 13369,7307
 Teilestr.: Radverkehrsanlagen	? 10254,5921 10404,5969 10526,6008 10614,6047 10789,6031 11174,5996 11257,6015 11322,5989
 #: last_checked: 2010-06-06
 #: next_check: 2010-09-01
-Fürstenwalder Allee: Bau von Radverkehrsanlagen	? 29714,4461 29728,4435 29813,4314 29850,4288 29901,4264 29959,4235 30037,4176 30210,4046 30351,3939 30456,3794 30518,3753 30650,3698 30993,3557 31139,3497 31366,3404 31447,3372 31632,3297 31863,3257 31999,3234 32829,3105 33111,3064 33547,2904
+Fürstenwalder Allee: Bau von Radverkehrsanlagen	? 29714,4461 29728,4435 29813,4314 29850,4288 29901,4264 29959,4235 30037,4176 30210,4046 30351,3939 30456,3794 30518,3753 30650,3698 30993,3557 31139,3497 31366,3404 31447,3372 31632,3297 31863,3257 31978,3237 32829,3105 33111,3064 33547,2904
 #: next_check: 2010-03-01 vvv
 Radwegbau Welzower Steig	?::inwork 6320,21777 6370,21689 6428,21648 6478,21652 6508,21646 6529,21620 6576,21414
 #: last_checked: 2009-09-27
@@ -2201,9 +2201,6 @@ Leo-Baeck-Str. - Seehofstr.: Qualität? Für Radfahrer befahrbar?	? 1478,1721 1432
 Mühlenstr. - Hampsteadstr.: Qualität? Für Radfahrer befahrbar?	? 1603,2615 1631,2722 1647,2759 1634,2914
 Von-Canstein-Str. (Dahlwitz-Hoppegarten): Qualität?	? 26880,11479 26957,11450 27007,11422 27165,11294
 # XXX del: hier existiert keine öffentliche Straße: Straße 14 (Neukölln): Qualität? Offen? Ausgeschildert?	? 14133,6187 14116,6277
-Dämeritzstr.: Qualität?	? 32512,2621 32445,2716
-Wodanstr. (Hessenwinkel): Qualität?	? 32400,1793 32361,1926 32341,1996
-Baldurstr. (Hessenwinkel): Qualität?	? 32239,1929 32361,1926
 Elisabethweg: Qualität?	? 10359,18646 10336,18701 10474,18785
 Hasseroder Str.: Qualität?	? 11469,18799 11535,18817
 Obernburger Weg: Qualität?	? 11686,17710 11700,17629 11711,17569
@@ -3414,7 +3411,6 @@ Geinsheimer Weg: Qualität?	? 29065,892 29042,891 28968,891 28931,889 28896,888 2
 #: oldname: Straße 691
 Zur Großen Krampe: Qualität?	? 28813,598 28772,632 28762,641 28733,665 28713,682 28617,765
 Weg S: Qualität?	? 28677,524 28772,632
-Weg Q: Qualität?	? 28644,560 28733,665
 Weg R: Qualität?	? 28762,641 28832,720 28784,762
 Weg T: Qualität?	? 28830,774 28865,816
 Weg T: Qualität?	? 28892,844 28931,889
@@ -3779,9 +3775,6 @@ Dahlienstr.: Qualität?	? 24107,4309 24126,4402 24170,4560
 Kleingartenstr.: Qualität?	? 24126,4402 24075,4417 24022,4442 23988,4482
 Cedernstr.: Qualität?	? 23878,4406 23988,4482 24078,4595
 Schrebergasse: Qualität? Für Radfahrer befahrbar? Nachts beleuchtet?	? 23850,4497 23925,4555 23980,4633
-#: XXX_osm: bei osm evtl. falsch geschrieben (Bindestriche!)
-Am Maria-Jankowski-Park: Qualität?	? 22087,5404 22018,5452
-Am Generalshof: Qualität? Kann man als Radfahrer direkt zur Lindestr. fahren?	? 22164,5441 22167,5416 22075,5320
 #: XXX_osm: bei osm evtl. falsch geschrieben (kein ß)
 Am Schloßberg: Qualität?	? 22791,4457 22866,4352
 Am Amtsgraben: geht die Straße Richtung Westen weiter? Qualität?	? 22963,4435 22927,4400 22866,4352 22800,4322
@@ -4094,11 +4087,8 @@ Horchheimer Weg: Qualität?	? 27879,46 27929,126 27949,182
 Rinntaler Steig: Qualität?	? 27918,12 27993,10 28015,24 28036,62
 Rinntaler Steig: Qualität?	? 28015,24 28035,0 28083,-34
 Münchweilersteig: Qualität?	? 27992,-57 28035,0
-Wiesbacher Weg: Qualität?	? 28207,734 28101,798 28065,819
 Weg E: Qualität?	? 27929,955 27963,916 27988,884 28022,841 28051,803
-Weg F: Qualität?	? 28101,798 28085,776 28185,709
-Weg G: Qualität?	? 27859,875 27895,848 27932,816 27972,783 28003,747 28126,641
-Weg H: Qualität?	? 27961,699 28083,592
+Weg G: Qualität nordwestlich der Soberheimer Str.?	? 27859,875 27895,848 27932,816 27972,783 28003,747
 #XXX ex. nicht, jedenfalls nicht hier: Weg O: Qualität? Stimmt der Straßenname?	? 27621,535 27817,761
 Kallbacher Str.: Qualität nordwestl. der Straße "Zur Drachenwiese"?	? 28731,1749 28649,1831 28557,1907 28446,1998
 #: oldname: Straße 653
@@ -4910,11 +4900,6 @@ Straße 433: Stimmt der Straßenname? Qualität?	? 9846,817 9956,852 10034,991
 Hermann-Wundrich-Platz: Qualität? Nachts beleuchtet? Ausgeschildert?	? 11174,-1719 11129,-1772 11095,-1846 11070,-1853
 #: XXX fehlt in Berlin.coords.data
 Verlängerte Köpenicker Str.: Qualität? Permanent offen? Können Radfahrer über Straße F zur Straße "Am Wuhleufer" fahren?	? 21016,7325 21245,7084
-Katzengraben: Qualität im südlichen Abschnitt?	? 22475,4658 22469,4677 22465,4690
-#: XXX fehlt in Berlin.coords.data
-Spindlergasse: Qualität?	? 22469,4677 22515,4694
-#: XXX der östliche Abschnitt hat eine wassergebundene Decke, NN und bestimmt nicht beleuchtet
-Strandschloßweg: Qualität? Nachts beleuchtet?	? 23749,3883 23925,3886 24147,3888 25052,3877 25262,3828
 #: XXX fehlt in Berlin.coords.data
 Rue René Laennec: Qualität?	? 3684,16788 3608,16765
 #: XXX_osm bei osm auch Elsa-Rendschmidt-Weg, aber wahrscheinlich falsch
