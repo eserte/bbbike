@@ -372,7 +372,7 @@ Heimat	1 1032,1325 994,1485 968,1479 941,1603
 Techowpromenade	1 5219,20467 5185,20358 5173,20275 5170,20182
 (Kastanienallee - Schönhauser Allee)	1 10884,14952 10838,14962
 Lossebergplatz	1 16070,23566 16094,23554 16095,23539 16079,23535 16064,23547 16070,23566
-Spindlersfelder Str.	2 21308,3680 21127,4180 21121,4234 21080,4702 21075,4769 21065,4957
+Spindlersfelder Str.	2 21324,3691 21215,3919 21143,4150 21130,4239 21080,4702 21075,4769 21065,4957
 Rathausstr.:	1 15651,12214 15628,12246 15576,12315 15537,12367
 Alt-Marzahn	1 21112,15396 21042,15428 20967,15458 20796,15559 20903,15545 20988,15505 21051,15464 21112,15396
 Bonifaziusstr.	1 2635,21559 2699,21401 2714,21369 2728,21336 2760,21269 2840,21141
@@ -562,6 +562,8 @@ Johann-Landefeldt-Str.	1 -8598,7018 -8532,7041 -8466,7064 -8404,7087 -8341,7108 
 Schüßlerplatz	1 22284,4653 22355,4660
 Karlstr. (Köpenick)	1 22556,4386 22458,4134
 Eichenstr./Lindenstr.	1 32162,2542 32316,2468 32467,2582
+Moosstr. [Wohngebiet]	1 19210,5150 19233,5076 19236,5025 19241,4958 19306,4969 19294,5033 19255,5164
+Abtstr./Platz der Befreiung	1 20066,3466 19990,3416 20038,3357
 Am Neuen Garten	1 -12166,1384 -12212,1201 -12276,831 -12302,718
 Am Neuen Garten	1 -12332,585 -12582,127
 Hochstraße	3nocross::ignrte -11399,-1339 -11461,-1424 -11540,-1543
@@ -1491,7 +1493,12 @@ Adlergestell -> Altheider Str.: Mittelstreifen	3::igndisp 19735,3643 19812,3561 
 Altheider Str. -> Adlergestell: Mittelstreifen	3::igndisp 19871,3600 19812,3561 19857,3514
 Adlergestell -> Seidenbaustr.: Mittelstreifen	3::igndisp 19812,3561 19857,3514 19966,3596
 Seidenbaustr. -> Adlergestell: Mittelstreifen	3::igndisp 19966,3596 19857,3514 19904,3464
-Mittelstreifen	3nocross::ignrte 19676,3705 19633,3751 19587,3801
+Mittelstreifen	3nocross::ignrte 19735,3643 19676,3705 19633,3751 19587,3801
+Am Adlergestell -> Adlergestell: Mittelstreifen	3::igndisp 19755,3780 19676,3705 19735,3643
+Adlergestell -> Am Adlergestell: Mittelstreifen	3::igndisp 19633,3751 19676,3705 19755,3780
+Husstr. -> Adlergestell: Mittelstreifen	3::igndisp 19736,3858 19633,3751 19676,3705
+Adlergestell -> Husstr.: Mittelstreifen	3::igndisp 19587,3801 19633,3751 19736,3858
+Silberberger -> Adlergestell: Abbiegen verboten	3 19804,3697 19735,3643 19812,3561
 Straßenbahngleise	3nocross::ignrte 17579,15565 17542,15648 17488,15766
 Str. 156 -> Rhinstr.: Straßenbahngleise	3::igndisp 17570,15658 17542,15648 17579,15565
 Rhinstr. -> Str. 156: Straßenbahngleise	3::igndisp 17488,15766 17542,15648 17570,15658
@@ -1504,6 +1511,13 @@ Mittelstreifen	3nocross::ignrte -870,2737 -756,2787 -567,2869 -512,2883 -391,291
 Niklasstr. -> Potsdamer Chaussee: Mittelstreifen	3::igndisp -791,2819 -756,2787 -567,2869
 Potsdamer Chaussee -> Niklasstr.: Mittelstreifen	3::igndisp -870,2737 -756,2787 -791,2819
 Hohentwielst. -> Potsdamer Chaussee: Mittelstreifen	3::igndisp -479,2715 -567,2869 -756,2787
+Straßenbahntrasse	3nocross::ignrte 22123,5452 22087,5404 22043,5346 21954,5229
+Bhf.str. -> Am Maria-Jankowski-Park: Straßenbahntrasse	3::igndisp 22043,5346 22087,5404 22018,5452
+Am Maria-Jankowski-Park -> Bhf.str.: Straßenbahntrasse	3::igndisp 22018,5452 22087,5404 22123,5452
+Lindenstr. -> Bhf.str.: Straßenbahntrasse	3::igndisp 22046,5305 22043,5346 21954,5229
+Straßenbahngleise	3nocross::ignrte 20834,4035 21053,4162 21146,4229
+Freystadter Weg -> Ottomar-Geschke-Str.: Straßenbahngleise	3::igndisp 21017,4220 21053,4162 21146,4229
+Dörpfeldstr. -> Freystadter Weg: Straßenbahngleise	3::igndisp 20834,4035 21053,4162 21017,4220
 tragen (4 Stufen)	0:10:49 -215,3787
 tragen (insgesamt 11 Stufen in zwei Absätzen)	0:20:-183 -18,5083
 tragen, langgezogene Stufen (4 Stufen)	0:10:-58 -1460,3487
@@ -1649,6 +1663,9 @@ tragen (Treppe, 12 Stufen)	0:15:-23 5475,7906
 tragen (Treppe, ca. 20 Stufen)	0:25:-108 19163,14981
 tragen (Treppe, ca. 20 Stufen)	0:25:-12 19160,14935
 tragen (Treppe)	0:30:70 89344,-5795
+Schranke	BNP:3:-35:trailer=10 22801,4443
+Schranke	BNP:1:-48:trailer=3 21617,3287
+Schranke	BNP:1:-93:trailer=3 21984,2897
 Schranke	BNP:3:14:trailer=10 16966,4847
 Drängelgitter	BNP:3:-82 -4651,9842
 enge Umfahrung	BNP:3:-90:trailer=no 14529,5851
@@ -1785,8 +1802,7 @@ Radweg parallel zur Autobahn ist wegen Bauarbeiten am BAB gesperrt	2:inwork 5062
 Brücke über A10: Sperrung vom 15.02.2010 bis 01.10.2010	2:inwork 15337,24593 15490,24848
 Wegedornbrücke: Vollsperrung, Neubau	2:inwork 20385,593 20442,564 20510,530
 Rathausbrücke: gesperrt bis März 2011 (Neubau)	2:inwork 10362,12351 10422,12395
-Vicki-Baum-Str.: noch in Bau, gesperrt	2:inwork 15823,10300 15753,10353 15688,10400
-Lina-Morgenstern-Str.: noch in Bau, gesperrt	2:inwork 15716,10303 15753,10353
+Vicki-Baum-Str.: noch in Bau, gesperrt	2:inwork 15753,10353 15688,10400
 Kynaststraße: Bauarbeiten im südlichen Abschnitt	2:inwork 14652,10201 14724,10297 14766,10372 14795,10473 14805,10518
 Brücke im Tiergarten: gesperrt	2:inwork 6406,11784 6467,11780
 Unterführung unter Adlergestell und Bahn: wegen Brückenerneuerung gesperrt	2:inwork 20810,2398 20939,2413

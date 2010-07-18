@@ -1796,6 +1796,17 @@ userdel	q4::inwork; 10614,19907 10742,19632
          'data' => 'userdel	q4::inwork; 4433,11213 4556,11206
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => undef,
+         'permanent' => 1,
+         'text' => 'Gewerbegebiet: Privatstraßen, u.U. Durchfahrt nicht gestattet',
+         'from' => undef,
+         'id' => 2101,
+         'data' => '#: note: allerdings keine Hinweise auf eine verbotene Durchfahrt gesehen
+(Gewerbegebiet)	2 21617,3287 21826,3129 21770,2936 21816,2919 21939,2894 21984,2897 22004,2904
+',
+         'type' => 'gesperrt'
        }
      
 );

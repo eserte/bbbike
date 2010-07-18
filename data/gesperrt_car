@@ -146,7 +146,7 @@ Stellmacherweg	1 13151,2958 13453,2930
 Hittorfstr	1 2442,4806 2469,4882 2516,4936 2587,4965
 Lefèvrestr.	1 5360,6642 5215,6643
 Kühlebornweg	1 5161,4664 5075,4600 5004,4709
-Gartenstr.	1 22467,3889 22275,4032 22246,4106 22273,4216
+Gartenstr.	1 22467,3889 22275,4032 22261,4105 22273,4216
 Wichmannstr.	1 6462,11069 6552,11006 6681,10959 6824,10904
 Lützowufer	1 6873,11011 6732,11106 6626,11178 6582,11202
 Mulackstr.	1 10304,13575 10406,13543 10535,13509 10640,13471
@@ -777,6 +777,8 @@ Rheinsteinstr. -> Ehrenfelsstr.: Straßenbahntrasse	3::igndisp 18868,8731 18734,8
 Ehrenfelsstr. -> Treskowallee: Straßenbahntrasse	3::igndisp 18843,8612 18734,8682 18729,8650
 Lötzener Allee	1 574,10577 452,10669 474,10869 495,11090
 keine Abbiegemöglichkeit	3nocross::ignrte 20064,3278 20010,3340 19904,3464
+Weerthstr. -> Adlergestell: keine Abbiegemöglichkeit	3::igndisp 20038,3357 20010,3340 20064,3278
+Adlergestell -> Weerthstr.: keine Abbiegemöglichkeit	3::igndisp 19904,3464 20010,3340 20038,3357
 Mittelstreifen	3nocross::ignrte 5542,11075 5459,11135 5268,11274
 Jebensstr. -> Hardenbergstr.: Mittelstreifen	3::igndisp 5587,11397 5459,11135 5542,11075
 Hardenbergstr. -> Jebensstr.: Mittelstreifen	3::igndisp 5268,11274 5459,11135 5587,11397
@@ -942,6 +944,8 @@ Mittelstreifen	3nocross::ignrte 11543,10015 11623,9841 11673,9720
 Kottbusser Damm -> Schinkestr.: Mittelstreifen	3::igndisp 11543,10015 11623,9841 11734,9856
 Schinkestr. -> Kottbusser Damm: Mittelstreifen	3::igndisp 11734,9856 11623,9841 11673,9720
 Mittelstreifen	3nocross::ignrte 19735,3643 19676,3705 19633,3751
+Am Adlergestell -> Adlergestell: Mittelstreifen	3::igndisp 19755,3780 19676,3705 19735,3643
+Adlergestell -> Am Adlergestell: Mittelstreifen	3::igndisp 19633,3751 19676,3705 19755,3780
 Mittelstreifen	3nocross::ignrte 19472,3922 19587,3801 19633,3751
 Adlergestell -> Steinbachstr.: Mittelstreifen	3::igndisp 19472,3922 19587,3801 19673,3888
 Überqueren des Mittelstreifens verboten	3nocross::ignrte 18057,14549 18183,14573 18365,14607
@@ -1017,3 +1021,6 @@ Pflanzenkübel	3 -1604,2324 -1401,2391 -1248,2451
 Pflanzenkübel	3 -1248,2451 -1401,2391 -1604,2324
 Pflanzenkübel	3 -1371,2268 -1401,2391 -1248,2451
 Pflanzenkübel	3 -1248,2451 -1401,2391 -1371,2268
+Husstr.	1 19815,4148 19763,3959 19736,3858 19633,3751
+Genossenschaftsstr.	1 20304,3714 20285,3739 20290,3756 20145,3954 20067,4054
+Gemeinschaftsstr.	1 20067,4054 20109,4087

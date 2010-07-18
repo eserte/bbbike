@@ -364,7 +364,7 @@ Langhoffstr.: enge Straﬂe, Gegenverkehr	q1 19817,14454 19818,14064
 (Frankfurter Allee, Nebenfahrbahn zur Hauptfahrbahn): Bordsteinabsenkung, aber eng	q3 16535,11920 16512,11894
 Zum Schlachtensee: wegen der groﬂen Steigung/Gef‰lles nur Schrittgeschwindigkeit mˆglich	q4 -1663,4218 -1592,4268
 (Treseburger Ufer - Rungiusstr.): nur f¸r Fuﬂg‰nger erlaubt	q4 12699,5909 13064,5953
-(Bellevuepark): nur f¸r Fuﬂg‰nger erlaubt	q4 22798,5731 22790,5568 22733,5569 22701,5428 22628,5340
+(Bellevuepark): nur f¸r Fuﬂg‰nger erlaubt	q4 22798,5731 22794,5583 22733,5569 22701,5428 22628,5340
 Walter-Nicklitz-Promenade: eng und kurvenreich, Fuﬂg‰nger	q2 8290,15304 8321,15386 8290,15406 8310,15449
 Gropiusstr.: Uferweg sehr eng, Fuﬂg‰nger	q2 8389,16214 8543,16364
 Pankeweg: Fuﬂg‰nger	q1 8286,14635 8316,14667 8263,14838 8248,14900 8266,15134
@@ -498,6 +498,8 @@ Wildensteiner Str.: enge Straﬂe	q1 18528,8331 18416,8163 18365,8094 18333,8059
 (Am Carlsgarten - Waldowallee): enger Abschnitt under der Bahnbr¸cke	q2 19468,7962 19504,8003 19558,8064
 Linienstr./Oranienburger Str.: Fuﬂg‰nger	q2 9225,13389 9296,13397
 Fontanestr.: zwei Schwellen, kˆnnen umfahren werden	q1+ 18240,6845 18254,6679
+#: note: wenn keine Autos illegalerweise an diesen Stellen parken
+Triniusstr.: zwei Schwellen, kˆnnen umfahren werden	q1+ 18417,6775 18339,6660
 Kiautschoustr.: Fuﬂg‰nger, Bordsteine	q3 6837,14848 6853,14854
 (Warschauer Br¸cke - Tamara-Danz-Str.): Fuﬂg‰nger, Bordsteine	q4 13493,11217 13513,11206 13503,11179 13479,11147
 (Blenheimstr. - B‰rensteinstr.): Fuﬂg‰nger	q1 21163,15289 21312,15268
@@ -1308,8 +1310,7 @@ Rosenorter Steig: enge Straﬂe	q1 -1349,23497 -1451,23525 -1535,23575 -1617,23624
 Straﬂe 40 (Blankenburg): enge Straﬂe	q1 14893,20583 14945,20748 15035,21026
 #: by: Andreas Vildman:
 (Mˆrchinger Str. - Berliner Str.): Fuﬂg‰nger	q2 1393,3183 1388,3197 1338,3300
-#: by: Liana (lumielle):
-Sanddornstr.: enge Straﬂe	q1 19184,4888 19199,4954 19191,5075 19173,5139
+# XXX del #: by: Liana (lumielle): --- corrected_by: srt q1 -> q0 --- Sanddornstr.: enge Straﬂe	q1 19184,4888 19199,4954 19191,5075 19173,5139
 #: by: Catherina Haags:
 Biesentaler Str.: Bodenschwellen	q1 9024,16855 9245,16758
 #: by: anonymous

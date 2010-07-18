@@ -423,7 +423,6 @@ Johannes-Itten-Str.	1 12797,16983 12850,16911 12813,16884
 #: add_fragezeichen: Gilt die Einbahnstraßenregelung auch für Radfahrer oder nur für Autofahrer?
 Riensbergstr.	1 -740,15306 -764,15480
 Saganer Str.: Bahngelände	2 16654,9748 16710,9702 16747,9695 17020,9463 17231,9186 17271,9159
-#: add_fragezeichen: Gilt die Einbahnstraßenregelung auch für Radfahrer oder nur für Autofahrer?
 Triniusstr.	1 18339,6660 18273,6606
 Franz-Stenzer-Str.	1 19876,15644 19974,15594 20044,15585 20111,15609 20181,15658 20399,15744 20508,15792 20586,15947 20610,15993 20636,16046
 #: XXX_indoor bei osm fehlt oneway
@@ -440,7 +439,7 @@ Heimat	1 1032,1325 994,1485 968,1479 941,1603
 Techowpromenade	1 5219,20467 5185,20358 5173,20275 5170,20182
 (Kastanienallee - Schönhauser Allee)	1 10884,14952 10838,14962
 Lossebergplatz	1 16070,23566 16094,23554 16095,23539 16079,23535 16064,23547 16070,23566
-Spindlersfelder Str.	2 21308,3680 21127,4180 21121,4234 21080,4702 21075,4769 21065,4957
+Spindlersfelder Str.	2 21324,3691 21215,3919 21143,4150 21130,4239 21080,4702 21075,4769 21065,4957
 Rathausstr.:	1 15651,12214 15628,12246 15576,12315 15537,12367
 Alt-Marzahn	1 21112,15396 21042,15428 20967,15458 20796,15559 20903,15545 20988,15505 21051,15464 21112,15396
 Bonifaziusstr.	1 2635,21559 2699,21401 2714,21369 2728,21336 2760,21269 2840,21141
@@ -734,6 +733,8 @@ Johann-Landefeldt-Str.	1 -8598,7018 -8532,7041 -8466,7064 -8404,7087 -8341,7108 
 Schüßlerplatz	1 22284,4653 22355,4660
 Karlstr. (Köpenick)	1 22556,4386 22458,4134
 Eichenstr./Lindenstr.	1 32162,2542 32316,2468 32467,2582
+Moosstr. [Wohngebiet]	1 19210,5150 19233,5076 19236,5025 19241,4958 19306,4969 19294,5033 19255,5164
+Abtstr./Platz der Befreiung	1 20066,3466 19990,3416 20038,3357
 ######################################################################
 #
 # Potsdam
@@ -1161,14 +1162,15 @@ Max-Born-Str.: Straßenbahntrasse	3nocross 19053,2890 19021,2946 18951,3069
 Prellerweg: Mittelstreifen	3nocross 6765,5863 6895,5873 7078,5887
 Ostseestr.: Mittelstreifen	3nocross 12091,16209 12237,16119 12352,16048
 Schildhornstreifen: Mittelstreifen vor dem Autobahnanschluss	3nocross 4292,6558 4320,6540 4423,6477
-#: note: Luftbild:
 Adlergestell: Mittelstreifen	3nocross 19735,3643 19812,3561 19857,3514 19904,3464
-#: note: Luftbild:
-Adlergestell: Mittelstreifen	3nocross 19676,3705 19633,3751 19587,3801
+Adlergestell: Mittelstreifen	3nocross 19735,3643 19676,3705 19633,3751 19587,3801
+Silberberger -> Adlergestell: Abbiegen verboten	3 19804,3697 19735,3643 19812,3561
 #: by: Thomas Pörs:
 Rhinstr.: Straßenbahngleise	3nocross 17579,15565 17542,15648 17488,15766
 Potsdamer Chaussee: Mittelstreifen	3nocross -1249,2590 -1085,2653 -984,2692 -870,2737
 Potsdamer Chaussee: Mittelstreifen	3nocross -870,2737 -756,2787 -567,2869 -512,2883 -391,2914
+Bahnhofstr.: Straßenbahntrasse	3nocross 22123,5452 22087,5404 22043,5346 21954,5229
+Dörpfeldstr.: Straßenbahngleise	3nocross 20834,4035 21053,4162 21146,4229
 #
 ####################################################################
 #
@@ -1379,6 +1381,9 @@ tragen (Treppe)	0:30 89344,-5795
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+Schranke	BNP:3::trailer=10 22801,4443
+Schranke	BNP:1::trailer=3 21617,3287
+Schranke	BNP:1::trailer=3 21984,2897
 Schranke	BNP:3::trailer=10 16966,4847
 #: by: Juliane (alberts...)
 #: XXX genaue Position des Drängelgitters?
@@ -1597,12 +1602,13 @@ Brücke über A10: Sperrung vom 15.02.2010 bis 01.10.2010	2:inwork 15337,24593 154
 Wegedornbrücke: Vollsperrung, Neubau	2:inwork 20385,593 20442,564 20510,530
 #: next_check: 2011-03-01
 Rathausbrücke: gesperrt bis März 2011 (Neubau)	2:inwork 10362,12351 10422,12395
-#: last_checked: 2010-06-17 vvv
-#: next_check: 2010-09-01 vvv
+#: last_checked: 2010-07-18 vvv
+#: next_check: 2010-11-01 vvv
 #XXX del Vicki-Baum-Str.: noch in Bau, gesperrt	2:inwork 15990,10185 15894,10251
-Vicki-Baum-Str.: noch in Bau, gesperrt	2:inwork 15823,10300 15753,10353 15688,10400
+#XXX del Vicki-Baum-Str.: noch in Bau, gesperrt	2:inwork 15823,10300 15753,10353
+Vicki-Baum-Str.: noch in Bau, gesperrt	2:inwork 15753,10353 15688,10400
 #XXX del Alice-und-Hella-Hirsch-Ring: noch in Bau, gesperrt	2:inwork 15788,10252 15823,10300
-Lina-Morgenstern-Str.: noch in Bau, gesperrt	2:inwork 15716,10303 15753,10353
+# XXX del Lina-Morgenstern-Str.: noch in Bau, gesperrt	2:inwork 15716,10303 15753,10353
 #: next_check ^^^
 #: last_checked ^^^
 #: last_checked: 2010-07-05

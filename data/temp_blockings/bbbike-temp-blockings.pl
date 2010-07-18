@@ -2635,7 +2635,7 @@ EOF
        text  => 'Glienicker Straße zwischen Grünauer Straße und Nipkowstraße Richtung Adlergestell wegen Bauarbeiten gesperrt bis 15.10.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4; 21823,4210 21679,4059 21496,3849 21489,3841 21411,3760 21357,3705 21330,3697 21308,3680 21295,3658 21244,3571 21198,3522 21153,3484 21055,3415 20967,3343 20832,3170
+userdel	q4; 21823,4210 21679,4059 21496,3849 21489,3841 21411,3760 21357,3705 21324,3691 21308,3644 21275,3607 21244,3571 21198,3522 21153,3484 21055,3415 20967,3343 20832,3170
 EOF
      },
      { from  => 1125351382, # 2005-08-29 23:36
@@ -4143,7 +4143,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 21182,4336 21174,4250
-userdel	2 21053,4162 21137,4221 21174,4250
+userdel	2 21053,4162 21146,4229 21174,4250
 EOF
      },
      { from  => 1151002800, # 2006-06-22 21:00
@@ -4152,7 +4152,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 21182,4336 21174,4250
-userdel	2 21053,4162 21137,4221 21174,4250
+userdel	2 21053,4162 21146,4229 21174,4250
 EOF
      },
      { from  => 1145209261, # 2006-04-16 19:41
@@ -4859,7 +4859,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'INKO_64281_COPY_1',
        data  => <<EOF,
-userdel	2 20692,3951 20772,3999 20788,4008 20834,4035 21053,4162 21137,4221 21174,4250 21182,4336 21206,4387 21332,4655
+userdel	2 20692,3951 20772,3999 20788,4008 20834,4035 21053,4162 21146,4229 21174,4250 21182,4336 21206,4387 21332,4655
 EOF
      },
      { from  => 1151101431, # 2006-06-24 00:23
@@ -12292,7 +12292,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_009456',
        data  => <<EOF,
-userdel	2::inwork 21153,3484 21198,3522 21244,3571 21295,3658 21308,3680
+userdel	2::inwork 21153,3484 21198,3522 21244,3571 21275,3607 21308,3644 21324,3691
 EOF
      },
      { from  => 1219523390, # 2008-08-23 22:29
@@ -14222,7 +14222,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_012799',
        data  => <<EOF,
-userdel	q4::inwork 21244,3571 21295,3658 21308,3680
+userdel	q4::inwork 21244,3571 21275,3607 21308,3644 21324,3691
 EOF
      },
      { from  => 1255162601, # 2009-10-10 10:16
@@ -17957,6 +17957,16 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork; 4433,11213 4556,11206
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Gewerbegebiet: Privatstraßen, u.U. Durchfahrt nicht gestattet',
+       type  => 'gesperrt',
+       permanent => 1,
+       data  => <<EOF,
+#: note: allerdings keine Hinweise auf eine verbotene Durchfahrt gesehen
+(Gewerbegebiet)	2 21617,3287 21826,3129 21770,2936 21816,2919 21939,2894 21984,2897 22004,2904
 EOF
      },
     );
