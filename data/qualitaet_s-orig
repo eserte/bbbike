@@ -480,7 +480,7 @@ Kanner Str.: Asphalt mit kleinen Sch‰den	Q1 13373,7432 13487,7337
 Unstrutstr.: Asphalt	Q0 13487,7337 13495,7249
 Kˆnigsheideweg: Asphalt	Q0 16279,5170 16062,5242 15870,5251 15738,5369 15382,5687
 Uferweg: fester Sandweg	Q1 16646,8561 16546,8852 16459,9017 16319,9149 16259,9182 16129,9189 15969,9102 15793,8984
-Uferweg: asphaltiert	Q0 16678,7475 16649,7570 16619,7831 16692,8166 16646,8561
+Uferweg: asphaltiert, einige Wurzelsch‰den	Q0- 16678,7475 16649,7570 16619,7831 16692,8166 16646,8561
 Bˆcklinstr.: Kopfsteinpflaster	Q2 14674,11370 14598,11245
 Berliner Str.: Kopfsteinpflaster	Q2 12736,17998 12479,17811
 #: corrected_by: Hartmut Schrˆder (Q2 -> Q3)
@@ -678,9 +678,7 @@ Alt-Britz: schlechtes Kopfsteinpflaster	Q3 12560,4290 12596,4320 12678,4389 1283
 Bendastr.: asphaltiert	Q0 12689,6905 12702,6846
 #: by: Gabi Sieber (confirmed):
 Bendastr.: asphaltiert	Q0 12702,6846 12715,6775 12722,6748 12726,6727 12743,6645
-#: note: laut radzeit 3/2006 sind Teile der Bendastr. asphaltiert worden
-Bendastr.: Kopfsteinpflaster	Q0 12743,6645 12756,6578 12779,6478
-Bendastr.: asphaltiert	Q0 12779,6478 12793,6407 12804,6377
+Bendastr.: asphaltiert	Q0 12743,6645 12756,6578 12779,6478 12793,6407 12804,6377
 Ilsestr.: Asphalt	Q0 12664,7013 12645,7087 12632,7137 12613,7236 12601,7284 12585,7357 12561,7472
 Ilsenhof: kleinteiliges Kopfsteinpflaster	Q1 12601,7284 12465,7250
 Jonasstr.: Kopfsteinpflaster	Q2 12221,7271 12396,7312 12585,7357 12703,7370
@@ -695,7 +693,7 @@ Fritz-Kˆnig-Weg: Asphalt	Q0 17042,7685 17297,7752 17527,7812
 Weg 7: unbefestigter Weg	Q2- 17042,7685 16902,7652
 Elbeweg: Asphalt	Q0 16873,7733 16902,7652 16934,7570
 Elbeweg: unbefestigter Weg, holprig	Q2- 16934,7570 16949,7484 17061,7323 17135,7223 17211,7265
-Spreeschlosstr.: Asphalt	Q0 17042,7748 16873,7733 16796,7715
+Spreeschlossstr.: Asphalt	Q0 17042,7748 16873,7733 16796,7715
 Futranplatz: Kopfsteinpflaster	Q2 22377,4836 22439,4838
 Schierker Str.: Kopfsteinpflaster	Q2 12259,7164 12421,7197 12613,7236 12722,7261 12843,7290 12908,7305 13003,7316 13034,7319
 Hˆnower Weg: m‰ﬂiger Asphalt	Q1; 16900,9861 16925,9852 16984,9857 17378,9715
@@ -756,6 +754,9 @@ Orankeweg: asphaltiert	Q0 14934,15860 15305,15858 15395,15852 15453,15848
 #: corrected_by: srt (Q3 -> Q3+)
 Orankestr.: schlechtes Kopfsteinpflaster	Q3+ 16331,15486 15996,15620 15877,15673 15801,15706 15665,15765
 Orankestrand: guter Parkweg	Q1 15871,16399 15782,16277 15731,16208 15664,16115 15599,16077 15479,16072
+#: XXX Nach den Bauarbeiten vielleicht durchg‰ngig asphaltiert? Wie werden sich die Verschwenkungen auswirken?
+#: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20100714.1400.303010.html
+#: next_check: 2011-10-01
 Degnerstr.: Wechsel zwischen m‰ﬂigen Asphalt und Kopfsteinpflaster	Q2 16801,16501 16849,16551 17017,16716
 Genslerstr.: Kopfsteinpflaster	Q2 16898,15453 16849,15263 16835,15188 16816,15092 16799,15007 16783,14927 16765,14842
 #: corrected_by: srt
@@ -2187,7 +2188,7 @@ Waﬂmannsdorfer Chaussee: asphaltiert mit Straﬂensch‰den	Q1 16373,-496 16273,-824
 Am Espenpfuhl: Kopfsteinpflaster	Q2 17920,391 17973,428
 #: add_fragezeichen: tats‰chlich Kopfsteinpflaster?
 Gerhard-Winkler-Weg: Kopfsteinpflaster	Q2 17338,1336 17293,1309
-Gerhard-Winkler-Weg: Kopfsteinpflaster	Q0 17293,1309 17202,1269
+Gerhard-Winkler-Weg: Asphalt	Q0 17293,1309 17202,1269
 Deutschtaler Str.: m‰ﬂiges bis schlechtes Kopfsteinpflaster	Q2- 17120,1394 17202,1269 17344,1060
 Selgenauer Weg: Beton	Q0 17526,1540 17460,1645 17386,1728
 Selgenauer Weg: Asphalt	Q0 17386,1728 17288,1719 17241,1750

@@ -3,8 +3,8 @@ push @temp_blocking,
 (
        {
          'source_id' => 'IM_005525',
-         'until' => 1279544400,
-         'text' => 'Rudower Chaussee (Treptow - Köpenick) in beiden Richtungen Höhe S-Bahn Brücke Adlershof Baustelle, Straße vollständig gesperrt, als Fußgänger kann man passieren ',
+         'until' => 1293112800,
+         'text' => 'Rudower Chaussee (Treptow - Köpenick) in beiden Richtungen Höhe S-Bahn Brücke Adlershof Baustelle, Straße vollständig gesperrt, als Fußgänger kann man passieren (bis Ende 2010)',
          'from' => 1179453600,
          'id' => 1079,
          'data' => 'userdel	q4::inwork 19904,3464 19732,3340
@@ -1710,15 +1710,7 @@ userdel	q4::inwork; 10614,19907 10742,19632
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1279576799,
-         'text' => 'Instandsetzung des Radweges Königsweg zwischen Eichkampstraße und Hüttenweg, ab 28.06.2010 für drei Wochen komplett gesperrt',
-         'from' => 1277589600,
-         'id' => 2091,
-         'data' => 'userdel	2::inwork -903,6923 -643,7252 -348,7641 425,8766
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'LS/O-SG33-F/10/013',
          'until' => 1293836400,
@@ -1807,6 +1799,26 @@ userdel	q4::inwork; 10614,19907 10742,19632
 (Gewerbegebiet)	2 21617,3287 21826,3129 21770,2936 21816,2919 21939,2894 21984,2897 22004,2904
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'http://www.berlin.de/ba-lichtenberg/presse/archiv/20100714.1400.303010.html',
+         'until' => 1320102000,
+         'text' => 'Degnerstr., Bauarbeiten, Einbahnstraße in Richtung Süden, bis Oktober 2011',
+         'from' => 1279577078,
+         'id' => 2102,
+         'data' => 'userdel	q4::inwork; 16692,16253 16801,16501 16849,16551 17017,16716
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_016077',
+         'until' => 1283526000,
+         'text' => 'Schmidt-Knobelsdorf-Straße (Spandau): Baustelle, Einbahnstraße in Richtung Lutoner Str., 19.07.2010 09:00 Uhr bis 03.09.2010 17:00 Uhr',
+         'from' => 1279436400,
+         'id' => 2103,
+         'data' => 'userdel	q4::inwork; -5030,13017 -4629,12835 -4277,12675 -4239,12626
+',
+         'type' => 'handicap'
        }
      
 );

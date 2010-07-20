@@ -3333,8 +3333,8 @@ EOF
        text  => 'B 169 OU Senftenberg Bau Ortsumfahrung Vollsperrung 06.11.2003-30.05.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 54357,-96691 54884,-96292
-userdel	q4 55158,-95910 54884,-96292
+userdel	q4 54286,-96624 54755,-96239
+userdel	q4 54755,-96239
 EOF
      },
      { from  => 1129413600, # 2005-10-16 00:00
@@ -9098,8 +9098,8 @@ userdel	q4::inwork -32153,-176 -32143,-211 -31993,-726 -31991,-1024
 EOF
      },
      { from  => 1179453600, # 2007-05-18 04:00
-       until => 1279544400, # 2010-07-19 15:00
-       text  => 'Rudower Chaussee (Treptow - Köpenick) in beiden Richtungen Höhe S-Bahn Brücke Adlershof Baustelle, Straße vollständig gesperrt, als Fußgänger kann man passieren ',
+       until => Time::Local::timelocal(reverse(2010-1900,12-1,23,15,0,0)), # 1279544400, # 2010-07-19 15:00
+       text  => 'Rudower Chaussee (Treptow - Köpenick) in beiden Richtungen Höhe S-Bahn Brücke Adlershof Baustelle, Straße vollständig gesperrt, als Fußgänger kann man passieren (bis Ende 2010)',
        type  => 'handicap',
        source_id => 'IM_005525',
        data  => <<EOF,
@@ -17967,6 +17967,24 @@ EOF
        data  => <<EOF,
 #: note: allerdings keine Hinweise auf eine verbotene Durchfahrt gesehen
 (Gewerbegebiet)	2 21617,3287 21826,3129 21770,2936 21816,2919 21939,2894 21984,2897 22004,2904
+EOF
+     },
+     { from  => 1279577078, # 2010-07-20 00:04
+       until => 1320102000, # 2011-11-01 00:00
+       text  => 'Degnerstr., Bauarbeiten, Einbahnstraße in Richtung Süden, bis Oktober 2011',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-lichtenberg/presse/archiv/20100714.1400.303010.html',
+       data  => <<EOF,
+userdel	q4::inwork; 16692,16253 16801,16501 16849,16551 17017,16716
+EOF
+     },
+     { from  => 1279436400, # 2010-07-18 09:00
+       until => 1283526000, # 2010-09-03 17:00
+       text  => 'Schmidt-Knobelsdorf-Straße (Spandau): Baustelle, Einbahnstraße in Richtung Lutoner Str., 19.07.2010 09:00 Uhr bis 03.09.2010 17:00 Uhr',
+       type  => 'handicap',
+       source_id => 'IM_016077',
+       data  => <<EOF,
+userdel	q4::inwork; -5030,13017 -4629,12835 -4277,12675 -4239,12626
 EOF
      },
     );

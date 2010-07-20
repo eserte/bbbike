@@ -446,7 +446,7 @@ Kanner Str.: Asphalt mit kleinen Schäden	Q1 13373,7432 13487,7337
 Unstrutstr.: Asphalt	Q0 13487,7337 13495,7249
 Königsheideweg: Asphalt	Q0 16279,5170 16062,5242 15870,5251 15738,5369 15382,5687
 Uferweg: fester Sandweg	Q1 16646,8561 16546,8852 16459,9017 16319,9149 16259,9182 16129,9189 15969,9102 15793,8984
-Uferweg: asphaltiert	Q0 16678,7475 16649,7570 16619,7831 16692,8166 16646,8561
+Uferweg: asphaltiert, einige Wurzelschäden	Q0 16678,7475 16649,7570 16619,7831 16692,8166 16646,8561
 Böcklinstr.: Kopfsteinpflaster	Q2 14674,11370 14598,11245
 Berliner Str.: Kopfsteinpflaster	Q2 12736,17998 12479,17811
 Handjerystr.: schlechtes Kopfsteinpflaster	Q3 20967,3343 20906,3433 20833,3519 20683,3693 20546,3865
@@ -616,8 +616,7 @@ Sangerhauser Weg: Verbundsteine	Q1 10748,2412 10933,2606 10934,2670 11025,2766 1
 Alt-Britz: schlechtes Kopfsteinpflaster	Q3 12560,4290 12596,4320 12678,4389 12836,4649 12905,4761 13015,5062
 Bendastr.: asphaltiert	Q0 12689,6905 12702,6846
 Bendastr.: asphaltiert	Q0 12702,6846 12715,6775 12722,6748 12726,6727 12743,6645
-Bendastr.: Kopfsteinpflaster	Q0 12743,6645 12756,6578 12779,6478
-Bendastr.: asphaltiert	Q0 12779,6478 12793,6407 12804,6377
+Bendastr.: asphaltiert	Q0 12743,6645 12756,6578 12779,6478 12793,6407 12804,6377
 Ilsestr.: Asphalt	Q0 12664,7013 12645,7087 12632,7137 12613,7236 12601,7284 12585,7357 12561,7472
 Ilsenhof: kleinteiliges Kopfsteinpflaster	Q1 12601,7284 12465,7250
 Jonasstr.: Kopfsteinpflaster	Q2 12221,7271 12396,7312 12585,7357 12703,7370
@@ -632,7 +631,7 @@ Fritz-König-Weg: Asphalt	Q0 17042,7685 17297,7752 17527,7812
 Weg 7: unbefestigter Weg	Q2 17042,7685 16902,7652
 Elbeweg: Asphalt	Q0 16873,7733 16902,7652 16934,7570
 Elbeweg: unbefestigter Weg, holprig	Q2 16934,7570 16949,7484 17061,7323 17135,7223 17211,7265
-Spreeschlosstr.: Asphalt	Q0 17042,7748 16873,7733 16796,7715
+Spreeschlossstr.: Asphalt	Q0 17042,7748 16873,7733 16796,7715
 Futranplatz: Kopfsteinpflaster	Q2 22377,4836 22439,4838
 Schierker Str.: Kopfsteinpflaster	Q2 12259,7164 12421,7197 12613,7236 12722,7261 12843,7290 12908,7305 13003,7316 13034,7319
 Hönower Weg: mäßiger Asphalt	Q1; 16900,9861 16925,9852 16984,9857 17378,9715
@@ -1924,7 +1923,7 @@ Waßmannsdorfer Chaussee: asphaltiert mit Straßenschäden	Q1 16373,-496 16273,-824
 (Landschaftspark Rudow): Gehwegplatten	Q0 18336,-103 17973,428
 Am Espenpfuhl: Kopfsteinpflaster	Q2 17920,391 17973,428
 Gerhard-Winkler-Weg: Kopfsteinpflaster	Q2 17338,1336 17293,1309
-Gerhard-Winkler-Weg: Kopfsteinpflaster	Q0 17293,1309 17202,1269
+Gerhard-Winkler-Weg: Asphalt	Q0 17293,1309 17202,1269
 Deutschtaler Str.: mäßiges bis schlechtes Kopfsteinpflaster	Q2 17120,1394 17202,1269 17344,1060
 Selgenauer Weg: Beton	Q0 17526,1540 17460,1645 17386,1728
 Selgenauer Weg: Asphalt	Q0 17386,1728 17288,1719 17241,1750
