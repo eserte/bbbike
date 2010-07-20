@@ -384,6 +384,7 @@ Talstr.	1 11776,16753 11825,16666
 #: by: ^^^
 #: by: friedolin Turowski:
 #: note: Camillo Krawczyk meint: auch für Radfahrer
+#: confirmed_by: MichaelM (Regelung für alle gleich)
 Scharfestr.	1 758,3417 935,3430
 Junker-Jörg-Str.	1 18545,9395 18511,9185 18471,8957 18447,8818
 Walter-Felsenstein-Str.	1 20438,16715 20617,16614 20770,16962
@@ -512,8 +513,6 @@ Geisenheimer Str.	1 4391,7258 4462,7137 4530,7021
 #: by: Matthias Müller:
 Teutonenstr. (Nikolassee)	1 -3519,2180 -3610,2237 -3689,2267 -3742,2287
 Straße zum FEZ	1 20716,6029 20593,6082 20428,6157 20453,6211 20623,6136 20708,6089
-#: by: Camillo Krawczyk
-Malchiner Str.	1 13866,4481 13869,4626 13836,4759
 #: by: Butch Coolidge:
 Paul-Francke-Str.	1 9916,18610 9994,18595 10013,18545 10006,18502 9901,18522
 #: by: Theo Schallon:
@@ -721,10 +720,13 @@ Brodenbacher Weg	1 15178,17134 14897,17093
 #: by: arnulf knorr:
 #: XXX_osm: Einbahnstraße fehlt bei osm
 Huttwiler Weg	1 6913,18460 6961,18453 7035,18413 7098,18383 7120,18295 7071,18232
-#: by: MichaelM
+#: by: MichaelM vvv
+Markgrafenstr. (Zehlendorf)	1 475,2811 441,2987
+Bürstadter Weg	1 -847,4553 -760,4542
 #: XXX_osm: Einbahnstraße fehlt bei osm
 #: note: "Fährt man verbotenerweise doch verkehrt herum ein, ist ein Ausweichen auf den Gehweg nötig, wenn jemand entgegenkommt, weil zu eng"
 Hartmannsweilerweg	1s:q4 16,3744 41,3510 17,3471
+#: by: ^^^
 Alsenzer Weg	1s:q3 27751,819 27798,872 27863,943 27968,1060
 #: by: Ulf Rathje:
 Fichtenweg	1 -2963,17872 -2949,17946 -2967,18033 -3000,18192
@@ -917,6 +919,8 @@ Hönower Str. (Karlshorst) (Ausweichen auf Sandbankette möglich)	1s:q2 18377,9366
 # gesperrte Wegführung (nicht möglich zu umgehen --- wenn es eine
 # Umgehung gibt, sollte sie in comments_path-orig als PI; kommentiert sein)
 # 
+#: by: Rainer (ghostviewer...)
+Aroser Allee: Mittelstreifen	3nocross 6689,17911 6711,17839 6739,17749
 #: by: ruth mantei:
 Buschkrugallee: Mittelstreifen mit hoher Kante	3nocross 13809,5257 13820,5203 13889,4954
 Landsberger Allee: Straßenbahntrasse	3nocross 12878,13229 12979,13280 13078,13330
@@ -1178,6 +1182,7 @@ Dörpfeldstr.: Straßenbahngleise	3nocross 20834,4035 21053,4162 21146,4229
 # die Zahl hinter dem ":" entspricht ungefähr den verlorenen Sekunden
 # 
 #: by: MichaelM vvv
+tragen (2 Stufen)	0:5 -1550,3883
 #: note: "kräftige Stufen"
 tragen (4 Stufen)	0:10 -215,3787
 tragen (insgesamt 11 Stufen in zwei Absätzen)	0:20 -18,5083
@@ -1756,6 +1761,8 @@ schieben (steile Treppe mit seitlicher Rampe)	0:180 1256,7841
 schieben (steile Treppe mit seitlicher Rampe)	0:180 1319,7444
 Clayallee: Mittlestreifen wg. Leitplanke nicht zu queren	3nocross 1955,7531 1967,7561 1987,7593 2036,7653
 Clayallee: Mittelstreifen schlecht zu queren	3nocross 2116,7740 2094,7719 2036,7653
+#: by: MichaelM
+Clayallee: Mittelstreifen	3nocross 1136,3878 1152,3918 1203,4047
 Am Zirkus	1 9239,12923 9170,13031 9145,13020 9118,13070
 Adele-Schreiber-Krieger-Str.	1s 8737,12757 8596,12748
 Virchowweg: schmale Toreinfahrt, Fußgänger und Bordstein	0:10 8548,13577

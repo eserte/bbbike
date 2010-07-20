@@ -841,7 +841,7 @@ Medebacher Weg: Kopfsteinpflaster	Q2 1840,19990 1863,19925 1886,19835
 Brünowplatz: Kopfsteinpflaster	Q2 1825,20047 1804,20009 1840,19990 1862,20025 1825,20047
 Miraustr.: Asphalt, mäßig	Q0 3321,20545 3344,20453 3390,20265 3581,20008 3645,19921 3820,19688
 Miraustr.: guter Asphalt	Q0 3820,19688 4014,19433
-Miraustr.: sehr schlechtes Kopfsteinpflaster	Q3 4014,19433 4170,19079 4195,19043
+Miraustr.: Asphalt	Q0 4014,19433 4170,19079 4195,19043
 Schaperstr.: Asphalt	Q0 5706,10216 5597,10299 5450,10338
 Bleibtreustr.: Kopfsteinpflaster	Q2 4728,11195 4722,11030 4714,10950 4701,10837 4685,10689
 Wilhelmsaue: Kopfsteinpflaster	Q2 5164,8740 5206,8731 5228,8729 5346,8720 5510,8709
@@ -3226,8 +3226,8 @@ Zur Alten Flussbadeanstalt: Straße in Bau	Q2 16432,9673 16347,9594 16290,9670
 (Königsheideweg - Am Alten Fenn): Pfad	Q2 17037,4794 17060,4848
 (Am Alten Fenn - Südostallee): Feinschotterweg	Q2 17295,5387 17300,5423 17366,5551
 Am Alten Fenn: Feinschotterweg	Q1 17060,4848 17119,4931 17246,5089 17266,5134 17291,5201 17297,5260 17295,5387
-(Kiefholzstr./Rixdorfer Str. - Königsheide): Waldweg, Schotter und sandige Stellen	Q2 16861,5935 16816,5831 16670,5473 16611,5333 16591,5284
-(Königsheide - Königsheideweg): Waldweg, etwas Schotter	Q1 15868,5587 16591,5284 16827,5187 16899,5146 17009,5016 16966,4847 16959,4831
+(Kiefholzstr./Rixdorfer Str. - Königsheide): Waldweg, Schotter und sandige Stellen	Q1 16861,5935 16816,5831 16670,5473 16611,5333 16591,5284
+(Königsheide - Königsheideweg): Waldweg, etwas Schotter	Q1 15868,5587 16497,5323 16591,5284 16827,5187 16899,5146 17009,5016 16966,4847 16959,4831
 Dämeritzstr.: Asphalt	Q0 32512,2621 32445,2716
 Ahornstr. (Hessenwinkel): Asphalt	Q0 32998,2827 32952,2786 32952,2743 32888,2717 32801,2710 32643,2695
 Lutherstr.: Asphalt	Q0 32829,3105 32802,2932 32790,2792 32801,2710
@@ -4565,7 +4565,7 @@ Schambachweg: mäßiger Asphalt	Q1 -8638,5362 -8735,5116 -8762,5033
 Zimmerstr. (Wilhelmstadt): Gehwegplatten	Q0 -3962,12973 -3942,12957
 Zimmerstr. (Wilhelmstadt): Kopfsteinpflaster	Q2 -3942,12957 -3834,12911 -3724,12917 -3667,12919
 Reiherbeize: Kopfsteinpflaster	Q2 593,4262 444,4498
-Im Fischtal: gutes Kopfsteinpflaster	Q1 723,4572 691,4474 666,4339 593,4262 510,4202 354,4152
+Im Fischtal: gutes Kopfsteinpflaster	Q1 723,4572 703,4511 691,4474 666,4339 593,4262 510,4202 354,4152
 Archenholdstr.: schlechtes Kopfsteinpflaster	Q3 16892,10731 16964,10902 17062,11130 17153,11342 17275,11626
 Kissinger Platz: Beton	Q0 3110,8052 2999,8060
 Hibiskusweg: Asphalt	Q0 13497,18087 13434,18019 13269,17852 13247,17825
@@ -6059,7 +6059,7 @@ Gabainstr.: guter Beton	Q0 7481,3334 7611,3308 7734,3290
 Am Pfingstberg: glatter Beton	Q0 3311,24150 3271,24283 3225,24431 3187,24491 3157,24489 3125,24533 3122,24571 3131,24614
 Randowstr.: guter Beton	Q0 18017,17716 18118,17795 18214,17876 18269,17807 18412,17920 18563,18040 18709,18159
 Philipp-Franck-Weg: mäßiges Kopfsteinpflaster	Q2 -6585,502 -6634,671
-Hirschhorner Weg: gutes Verbundsteinpflaster	Q1 -820,4772 -793,4754 -741,4660 -753,4578 -760,4542 -763,4462
+Hirschhorner Weg: Beton	Q1 -820,4772 -793,4754 -741,4660 -753,4578 -760,4542 -763,4462
 Wröhmännerstr.: guter Beton	Q0 -3080,15091 -3040,15082 -2955,15129 -2915,15152
 Wröhmännerstr.: Asphalt mit Schäden	Q1 -2915,15152 -2890,15231
 Calvinstr.: Beton	Q0 3051,22856 2982,22893
@@ -7159,6 +7159,15 @@ Sarntaler Weg: guter Beton	Q0 5836,509 5742,671 5710,726 5781,770 5781,800
 Zerbster Str. (Hellersdorf): guter Beton	Q0 24451,15181 24413,15372 24357,15429 24346,15505 24324,15519 24169,15497
 Jaehnstr.: guter Asphalt	Q0 -461,3522 -575,3684
 An der Fließwiese: schlechtes Verbundsteinpflaster	Q2 -998,12689 -1022,12743 -1020,12801 -962,12951 -950,13091 -912,13106 -815,13067
+Biesalskistr.: Asphalt	Q0 881,4429 949,4366 987,4293 1026,4207
+Biesalskistr.: gut gepflastert	Q1 1026,4207 1061,4098 1130,3930
+Biesalskistr.: gepflastert	Q1 1130,3930 1152,3918
+Idsteiner Str.: Verbundsteinpflaster	Q0 -163,1564 -227,1805 -285,2015
+Markgrafenstr. (Zehlendorf): sehr schlechtes Kopfsteinpflaster	Q3 475,2811 441,2987
+Rötheweg: gute wassergebundene Decke sowie schlechter Asphalt	Q2 -1444,3655 -1488,3750
+Rötheweg: sehr schlecht geflickter Asphalt	Q2 -1488,3750 -1550,3883 -1554,3889
+Rötheweg: guter Asphalt	Q0 -1554,3889 -1624,3956
+Bürstadter Weg: Beton	Q1 -760,4542 -847,4553 -862,4542
 Sven-Hedin-Platz: kleingepflasterter Fußweg/glatter Grünanlagenweg	Q1 -208,3793 -215,3787 -329,3702
 Slatdorpweg: uneben	Q2 -1637,3596 -1495,3509 -1478,3498
 Slatdorpweg: breiter Waldweg	Q1 -1478,3498 -1460,3487 -1144,3276
@@ -7228,6 +7237,21 @@ Mandelblütenweg: Asphalt	Q0 21538,475 21596,481 21676,500
 Krontalstr.: guter Asphalt	Q0 11569,-219 11530,-75 11451,114 11407,113
 (Mauerweg - Töpchiner Weg): wassergebundene Decke	Q1 11794,550 11691,554 11598,587
 Lönsstr.: guter Asphalt	Q0 14109,23278 14338,23187
+Boca-Raton-Str.: guter Asphalt	Q0 -2170,17024 -2152,17108
+Straße 265: loser Sandweg, schwer zu befahren	Q3 -4751,9033 -4771,9033 -4862,9079 -5650,9471 -6306,9794 -6324,9778
+Reimerweg: guter Asphalt	Q0 -6590,12606 -6791,12429
+Spieroweg: mäßiger Asphalt	Q1 -6595,13198 -6563,13403
+Pietschweg: guter Asphalt	Q0 -6395,13121 -6360,12970
+Räcknitzer Steig: guter Asphalt	Q0 -5480,12793 -5535,12631
+Bolteweg: guter Asphalt	Q0 -5975,12827 -6029,13033 -6079,13208
+Prisdorfer Str.: guter Asphalt	Q0 -5887,13894 -5906,14102 -5887,14147 -5874,14242
+Springerzeile: guter Asphalt	Q0 -5877,13375 -6035,13333 -6220,13289 -6595,13198
+Griesingerstr.: guter Beton	Q0 -6603,17532 -6612,17487 -6595,17456 -6822,16927 -6515,16793
+Reclamweg: guter Asphalt	Q0 -5196,12452 -5126,12425
+Heusingerstr.: guter Beton	Q0 8584,3133 8792,3082
+Porschestr.: Asphalt	Q0 8584,3133 8599,3441
+Bieler Str.: Kleinpflaster, relativ eben	Q1 6815,17871 6711,17839
+Straße 129: schlechter Sandweg	Q3 7802,21173 7929,21103
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206
 Richard-Ermisch-Str.: Asphalt	Q0 14250,13281 14224,13206 14207,13152 14177,13065 14163,13025 14130,12926 14096,12827
 Zum Langen Jammer: Kopfsteipflaster, Gehweg besser	Q2 14686,12873 14405,12953

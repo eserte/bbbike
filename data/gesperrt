@@ -419,7 +419,6 @@ Baumgartensteg	1 -2882,13474 -2937,13399
 Geisenheimer Str.	1 4391,7258 4462,7137 4530,7021
 Teutonenstr. (Nikolassee)	1 -3519,2180 -3610,2237 -3689,2267 -3742,2287
 Straﬂe zum FEZ	1 20716,6029 20593,6082 20428,6157 20453,6211 20623,6136 20708,6089
-Malchiner Str.	1 13866,4481 13869,4626 13836,4759
 Paul-Francke-Str.	1 9916,18610 9994,18595 10013,18545 10006,18502 9901,18522
 Zellerfelder Str.	1 11526,18929 11468,19106
 Storkower - Einsteinstr.	1 13110,14879 13143,14935 13185,14912 13151,14855
@@ -555,6 +554,8 @@ Mollstr. (Richtungsfahrbahn)	1::igndisp 11985,13075 11966,13074 11905,13069 1188
 Lˆtschbergstr.	1s 20161,11715 20150,11512
 Brodenbacher Weg	1 15178,17134 14897,17093
 Huttwiler Weg	1 6913,18460 6961,18453 7035,18413 7098,18383 7120,18295 7071,18232
+Markgrafenstr. (Zehlendorf)	1 475,2811 441,2987
+B¸rstadter Weg	1 -847,4553 -760,4542
 Hartmannsweilerweg	1s 16,3744 41,3510 17,3471
 Alsenzer Weg	1s 27751,819 27798,872 27863,943 27968,1060
 Fichtenweg	1 -2963,17872 -2949,17946 -2967,18033 -3000,18192
@@ -729,6 +730,9 @@ Zeltinger Platz	1s 2404,25187 2355,25252 2395,25273 2446,25265 2490,25211 2486,2
 Ludolfinger Platz	1s 2277,25033 2245,25016 2205,25042 2192,25083 2216,25117 2277,25094 2285,25059 2277,25033
 Sewanstr. - Balatonstr.	1s 17705,10232 17741,10386
 Hˆnower Str. (Karlshorst) (Ausweichen auf Sandbankette mˆglich)	1s 18377,9366 18490,9387
+Mittelstreifen	3nocross::ignrte 6689,17911 6711,17839 6739,17749
+Aroser Allee -> Bieler Str.: Mittelstreifen	3::igndisp 6689,17911 6711,17839 6815,17871
+Bieler Str. -> Aroser Allee: Mittelstreifen	3::igndisp 6815,17871 6711,17839 6739,17749
 Mittelstreifen mit hoher Kante	3nocross::ignrte 13809,5257 13820,5203 13889,4954
 Teterower Str. -> Buschkrugallee: Mittelstreifen mit hoher Kante	3::igndisp 13717,5175 13820,5203 13809,5257
 Buschkrugallee -> Teterower Str.: Mittelstreifen mit hoher Kante	3::igndisp 13889,4954 13820,5203 13717,5175
@@ -1518,6 +1522,7 @@ Lindenstr. -> Bhf.str.: Straﬂenbahntrasse	3::igndisp 22046,5305 22043,5346 21954
 Straﬂenbahngleise	3nocross::ignrte 20834,4035 21053,4162 21146,4229
 Freystadter Weg -> Ottomar-Geschke-Str.: Straﬂenbahngleise	3::igndisp 21017,4220 21053,4162 21146,4229
 Dˆrpfeldstr. -> Freystadter Weg: Straﬂenbahngleise	3::igndisp 20834,4035 21053,4162 21017,4220
+tragen (2 Stufen)	0:5:-204 -1550,3883
 tragen (4 Stufen)	0:10:49 -215,3787
 tragen (insgesamt 11 Stufen in zwei Abs‰tzen)	0:20:-183 -18,5083
 tragen, langgezogene Stufen (4 Stufen)	0:10:-58 -1460,3487
@@ -1994,6 +1999,8 @@ Hohenzollerndamm -> Kronberger Str.: Mittlestreifen wg. Leitplanke nicht zu quer
 Mittelstreifen schlecht zu queren	3nocross::ignrte 2116,7740 2094,7719 2036,7653
 Kˆnigsmarckstr. -> Hohenzollerndamm: Mittelstreifen schlecht zu queren	3::igndisp 1971,7738 2094,7719 2116,7740
 Hohenzollerndamm -> Kˆnigsmarckstr.: Mittelstreifen schlecht zu queren	3::igndisp 2036,7653 2094,7719 1971,7738
+Mittelstreifen	3nocross::ignrte 1136,3878 1152,3918 1203,4047
+Biesalskistr. -> Clayallee: Mittelstreifen	3::igndisp 1130,3930 1152,3918 1203,4047
 Am Zirkus	1 9239,12923 9170,13031 9145,13020 9118,13070
 Adele-Schreiber-Krieger-Str.	1s 8737,12757 8596,12748
 Virchowweg: schmale Toreinfahrt, Fuﬂg‰nger und Bordstein	0:10:86 8548,13577
