@@ -5,6 +5,7 @@
 PERL=			perl
 
 BBBIKEDIR?=		${.CURDIR}/..
+BBBIKETMPDIR?=		${BBBIKEDIR}/tmp
 BBBIKEAUXDIR?=		${HOME}/src/bbbike-aux
 MISCSRCDIR?=		${BBBIKEDIR}/miscsrc
 DATADIR?=		${BBBIKEDIR}/data
@@ -17,6 +18,8 @@ TARGETS=	ampelschaltung.txt
 # XXX sp of writable/writeable?
 WRITEABLE=	chmod u+w,ugo+r
 READONLY=	chmod ugo+r,ugo-w
+
+TODAY_DATE!=	date +'%Y%m%d'
 
 all:	check validate targets
 
@@ -249,27 +252,61 @@ MKGMAP?=	java -Xmx1024m -jar /usr/local/src/mkgmap-r${MKGMAP_VER}/mkgmap.jar
 
 # on mosor: /usr/lib/jvm/java-6-sun/bin/java -jar /opt/mkgmap-r1247/mkgmap.jar
 
-bbbikemap-for-garmin:	/tmp/gmapsupp.img
+bbbikemap-for-garmin:	${BBBIKETMPDIR}/bbbike_routable_gmapsupp.img
 	@echo "Set the garmin device into USB mass storage mode."
 	@echo "Then execute:"
 	@echo "   mount /mnt/garmin"
-	@echo "   cp /tmp/gmapsupp.img /mnt/garmin/garmin/gmapsupp.img"
+	@echo "   cp ${BBBIKETMPDIR}/bbbike_routable_gmapsupp.img /mnt/garmin/garmin/gmapsupp.img"
 	@echo "   umount /mnt/garmin"
 
-.PHONY: ../tmp/bbbike_routable.osm
-../tmp/bbbike_routable.osm:
-	cd ../data && ${MAKE} ../tmp/bbbike_routable.osm
+.PHONY: ${BBBIKETMPDIR}/bbbike_routable.osm
+${BBBIKETMPDIR}/bbbike_routable.osm:
+	cd ../data && ${MAKE} ${BBBIKETMPDIR}/bbbike_routable.osm
 
-/tmp/gmapsupp.img: /tmp/bbbike_routable.img ${BBBIKEAUXDIR}/mkgmap/typ/M000002a.TYP
-	cd /tmp && \
+${BBBIKETMPDIR}/bbbike_routable_gmapsupp.img: ${BBBIKETMPDIR}/bbbike_routable.img ${BBBIKEAUXDIR}/mkgmap/typ/M000002a.TYP
+	cd ${BBBIKETMPDIR} && \
 	    ${MKGMAP} --family-id=42 --family-name="Slavens Map" \
 	       --gmapsupp bbbike_routable.img ${BBBIKEAUXDIR}/mkgmap/typ/M000002a.TYP
+	mv ${BBBIKETMPDIR}/gmapsupp.img ${BBBIKETMPDIR}/bbbike_routable_gmapsupp.img
 
-/tmp/bbbike_routable.img: ../tmp/bbbike_routable.osm ${BBBIKEAUXDIR}/mkgmap/srt-style/*
+${BBBIKETMPDIR}/bbbike_routable.img: ${BBBIKETMPDIR}/bbbike_routable.osm ${BBBIKEAUXDIR}/mkgmap/srt-style/*
 	[ -r ${BBBIKEAUXDIR}/mkgmap/srt-style ]
-	cd /tmp && \
+	cd ${BBBIKETMPDIR} && \
 	    ${MKGMAP} --description="BBBike Routable" --mapname=12117006 \
 		--country-name=Germany --country-abbr=DE \
 	        --latin1 --net --route --draw-priority=15 --style-file=${BBBIKEAUXDIR}/mkgmap/srt-style \
-	        ${HOME}/src/bbbike/tmp/bbbike_routable.osm  && \
+	        ${BBBIKETMPDIR}/bbbike_routable.osm  && \
 	    mv -f 12117006.img bbbike_routable.img 
+
+######################################################################
+# Sourceforge release targets
+
+do-garmindata-dist:	${BBBIKETMPDIR}/bbbike_routable_gmapsupp.img
+	rm -rf /tmp/bbbike-b_de-garmin
+	mkdir /tmp/bbbike-b_de-garmin
+	(echo "Eine auf BBBike-Daten basierende Berlin-Karte für Garmin-Geräte."; \
+	 echo "Erzeugt mithilfe von mkgmap."; \
+	 echo ""; \
+	 echo "Einschränkungen:"; \
+	 echo "* Zurzeit ist es nicht möglich, die Karte zusammen mit anderen"; \
+	 echo "  Karten gleichzeitig zu installieren. Es ist empfohlen, von"; \
+	 echo "  einer bereits installierten Karte ein Backup zu machen."; \
+	 echo ""; \
+	 echo "Installation:"; \
+	 echo "* Das Garmin-Gerät über USB an einen PC anschließen und mounten"; \
+	 echo "  oder alternativ die Micro-SD-Karte in ein Kartenlesegerät legen."; \
+	 echo "* Eine existierende .../garmin/gmapsupp.img sollte gesichert werden."; \
+	 echo "* Die Datei bbbike_routable_gmapsupp.img als .../garmin/gmapsupp.img kopieren."; \
+	 echo ""; \
+	 echo "Fragen per E-Mail an: slaven AT rezic DOT de"; \
+	) | perl -pe 's{$$}{\r}' > /tmp/bbbike-b_de-garmin/README.txt
+	rsync --archive --cvs-exclude ${BBBIKETMPDIR}/bbbike_routable_gmapsupp.img /tmp/bbbike-b_de-garmin/
+	cd /tmp && \
+	    zip -r bbbike-b_de-garmin-$(TODAY_DATE).zip bbbike-b_de-garmin
+
+garmindata-sf-release:	do-garmindata-dist
+	@echo "Really upload bbbike-b_de-garmin-$(TODAY_DATE).zip to SourceForge?"
+	@cd /tmp && ls -l bbbike-b_de-garmin-$(TODAY_DATE).zip
+	@echo "Press CTRL-C to abort. Return to continue release."
+	@read yn
+	cd /tmp && sf-upload -groupid 19142 -packageid 207826 -r $(TODAY_DATE) -f bbbike-b_de-garmin-$(TODAY_DATE).zip

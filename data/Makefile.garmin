@@ -323,33 +323,3 @@ ${PERSISTENTTMPDIR}/bbbike_routable.img:	${PERSISTENTTMPDIR}/bbbike_routable.osm
 	    ${MKGMAP_ROUTABLE} --description="BBBike Routable" --mapname=12117006 --country-name=Germany --country-abbr=DE --region-name=Berlin --region-abbr=BER --latin1 --net --route --draw-priority=5 ${PERSISTENTTMPDIR}/bbbike_routable.osm && \
 	    mv 12117006.img bbbike_routable.img )
 
-######################################################################
-# Sourceforge release targets
-
-do-garmindata-dist:	${PERSISTENTTMPDIR}/bbbikequal.img
-	rm -rf /tmp/bbbike-b_de-garmin
-	mkdir /tmp/bbbike-b_de-garmin
-	(echo "Eine auf BBBike-Daten basierende Berlin-Karte für Garmin-Geräte."; \
-	 echo "Erzeugt mithilfe von www.cgpsmapper.com."; \
-	 echo ""; \
-	 echo "Einschränkungen:"; \
-	 echo "* Zurzeit ist es nicht möglich, die Karte zusammen mit anderen"; \
-	 echo "  Karten gleichzeitig zu installieren. Es ist empfohlen, von"; \
-	 echo "  einer bereits installierten Karte ein Backup zu machen."; \
-	 echo "* Die erzeugte Karte ist nicht routing-fähig."; \
-	 echo ""; \
-	 echo "Installation:"; \
-	 echo "* Das Garmin-Gerät über USB an einen PC anschließen und mounten."; \
-	 echo "* Eine existierende .../garmin/gmapsupp.img sollte gesichert werden."; \
-	 echo "* Die Datei bbbikequal.img als .../garmin/gmapsupp.img kopieren."; \
-	) > /tmp/bbbike-b_de-garmin/README.txt
-	rsync --archive --cvs-exclude ../tmp/bbbikequal.img /tmp/bbbike-b_de-garmin/
-	cd /tmp && \
-	    tar cfvz bbbike-b_de-garmin-$(TODAY_DATE).tar.gz bbbike-b_de-garmin
-
-garmindata-sf-release:	do-garmindata-dist
-	@echo "Really upload bbbike-b_de-garmin-$(TODAY_DATE).tar.gz to SourceForge?"
-	@cd /tmp && ls -l bbbike-b_de-garmin-$(TODAY_DATE).tar.gz
-	@echo "Press CTRL-C to abort. Return to continue release."
-	@read yn
-	cd /tmp && sf-upload -groupid 19142 -packageid 207826 -r $(TODAY_DATE) -f bbbike-b_de-garmin-$(TODAY_DATE).tar.gz
