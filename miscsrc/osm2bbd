@@ -651,6 +651,9 @@ for my $osm_file (@osm_files) {
 	    } elsif (exists $tag{'barrier'} && $tag{'barrier'} eq 'cycle_barrier') {
 		$name = $lang eq 'en' ? 'Cycle barrier' : 'Drängelgitter' if !$name;
 		push @or, ['gesperrt', 'BNP:5', name => $name];
+	    } elsif (exists $tag{'barrier'} && $tag{'barrier'} eq 'gate') {
+		$name = $lang eq 'en' ? 'Gate' : 'Tor' if !$name;
+		push @or, ['gesperrt', 'BNP:10', name => $name];
 	    } elsif (exists $tag{'place'}) {
 		my $place = $tag{'place'};
 		my $population = exists $tag{'population'} ? $tag{'population'} : $tag{'openGeoDB:population'};
