@@ -7689,7 +7689,7 @@ Autor: Slaven Rezic<br>
 <a href="mailto:@{[ $BBBike::EMAIL ]}?subject=BBBike">E-Mail:</a> <a href="mailto:@{[ $BBBike::EMAIL ]}?subject=BBBike">@{[ $BBBike::EMAIL ]}</a><br>
 <a href="@{[ $BBBike::HOMEPAGE ]}">Homepage:</a> <a href="@{[ $BBBike::HOMEPAGE ]}">@{[ $BBBike::HOMEPAGE ]}</a><br>
 Telefon: @{[ CGI::escapeHTML("+49-172-1661969") ]}<br>
-Slaven Rezi&#x107; (Tomi&#x107;), Donji Crna&#x10d;, BiH-88220 &#x160;iroki Brijeg<br>
+Slaven Rezi&#x107; (Tomi&#x107;)<br>Donji Crna&#x10d;, BiH-88220 &#x160;iroki Brijeg<br>Seumestr. 31, 10245 Berlin<br>
 </center>
 <p>
 EOF
