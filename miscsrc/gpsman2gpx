@@ -2,10 +2,9 @@
 # -*- perl -*-
 
 #
-# $Id: gpsman2gpx,v 1.1 2005/10/05 21:25:07 eserte Exp eserte $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2005,2009 Slaven Rezic. All rights reserved.
+# Copyright (C) 2005,2009,2010 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -26,7 +25,7 @@ my $file = shift || usage;
 usage if (@ARGV);
 
 my $self = GPS::GpsmanData::Any->load($file);
-print $self->as_gpx;
+print $self->as_gpx(symtocmt => 1);
 
 
 __END__
