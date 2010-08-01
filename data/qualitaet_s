@@ -1460,7 +1460,7 @@ Tiergartenstr. (Biesdorf): Kopfsteinpflaster	Q2 21037,7751 21179,7754 21304,7783
 Bismarcksfelder Str.: fester Sandweg, holprig	Q2 21435,7798 21496,7815 21561,7867 21598,7922
 (Bellevuepark): m‰ﬂiger Asphalt	Q1 22798,5731 22794,5583 22733,5569 22701,5428 22628,5340
 Am Krusenick: guter Asphalt	Q0 22726,5332 22754,4893 22673,4812
-Lindenstr.: ‰uﬂere Fahrstreifen mit Kopfsteinpflaster	Q2 22128,5003 22196,4847
+Lindenstr.: ‰uﬂere Fahrstreifen mit Kopfsteinpflaster	Q2 22154,4923 22196,4847
 Lienhardweg: asphaltiert	Q0 22958,2005 23099,2031 23209,2050 23325,2070 23433,2085 23535,2111
 Bendigstr.: Kopfsteinpflaster	Q2 23433,2085 23448,2013 23497,1812
 Logauweg: Kopfsteinpflaster	Q2 23390,1785 23497,1812 23627,1835
@@ -3352,6 +3352,7 @@ Zitadelle: Kopfsteinpflaster	Q2 -2646,14525 -2652,14559 -2656,14582 -2668,14635 
 Behnitz: Kopfsteinpflaster	Q2 -2951,14617 -2993,14568 -3014,14559
 Rietzestr.: Asphalt	Q0 12693,15225 12472,15356
 Strehlener Str.: Asphalt	Q0 22652,10392 22538,10477 22403,10523
+Straﬂe 45 (Blankenburg): Asphalt	Q0 14540,20298 14503,20341 14455,20388
 Fahrenheitstr.: Beton	Q0 4768,840 4510,669
 Wermuthweg: Asphalt	Q0 13661,2207 13672,2221 13816,2258 13827,2280 13838,2310 13835,2354 13709,2551
 Haeselerstr. (Lichtenrade): guter Asphalt	Q0 10404,-2398 10513,-2397 10563,-2432
@@ -4285,7 +4286,7 @@ Greifenhagener Str.: Kopfsteinpflaster	Q2 11214,16043 11253,16118 11295,16199 11
 Zermatter Str.: Kopfsteinpflaster besserer Qualit‰t	Q1 6631,17721 6739,17749 6841,17781
 Zermatter Str.: Betonplatten, gut	Q1 6376,17687 6512,17696 6631,17721
 (Um den Sch‰fersee): gute befestigte Sandwege	Q1 7501,17525 7490,17632 7415,17696 7320,17718 7218,17700 7189,17666 7193,17554 7222,17471
-Baseler Str. (Reinickendorf): Kopfsteinpflaster	Q2 6792,17951 6815,17871 6841,17781 6886,17649 6908,17583 6995,17322
+Baseler Str. (Reinickendorf): Kopfsteinpflaster	Q2 6792,17951 6815,17871 6841,17781 6886,17649 6900,17608 6908,17583 6995,17322
 Mudrackzeile: asphaltiert	Q0 6886,17649 6950,17669 7020,17690 6985,17812
 Mariabrunner Weg: asphaltiert	Q0 6985,17812 6909,17796 6841,17781
 Walderseestr.: m‰ﬂiges bis schlechtes Kopfsteinpflaster	Q2 7309,17159 7614,17245
@@ -6798,6 +6799,9 @@ Libellenstr.: schlechtes Kopfsteinpflaster	Q3 -3703,2137 -3699,2085 -3707,2037 -
 Girlitzweg: guter Beton	Q0 15273,3269 15321,3332 15373,3403
 Girlitzweg: Asphalt	Q0 15176,3136 15273,3269
 Kernbeiﬂerweg: betoniert	Q0 15321,3332 15253,3383
+Janusz-Korczak-Str.: guter Asphalt	Q0 24303,15070 24232,15060 24215,15057 24139,15046 24063,15035 23960,15021 23841,15004 23778,14995 23708,14989
+Janusz-Korczak-Str.: guter Asphalt	Q0 23778,14995 23787,14919 23798,14826 23815,14721
+Peter-Weiss-Gasse: gutes Verbundsteinpflaster	Q1 24037,14854 24102,14928 24151,14982 24215,15057
 Am Fort: schlechtes Kopfsteinpflaster	Q3 -8056,12916 -7967,12879 -7942,12844 -7948,12634 -7959,12439 -7967,12333 -7976,12217
 Thuner Str.: guter Beton	Q0 3293,2218 3290,2135 3286,2006 3286,1912
 Bernhard-B‰stlein-Str.: Beton	Q1 15348,13996 15487,14047 15595,14041 15593,13768 15661,13764 15698,13765
@@ -7250,8 +7254,16 @@ Griesingerstr.: guter Beton	Q0 -6603,17532 -6612,17487 -6595,17456 -6822,16927 -
 Reclamweg: guter Asphalt	Q0 -5196,12452 -5126,12425
 Heusingerstr.: guter Beton	Q0 8584,3133 8792,3082
 Porschestr.: Asphalt	Q0 8584,3133 8599,3441
+Porschestr.: Beton, teilweise mit Asphalt geflickt	Q0 8572,2960 8584,3133
+Opelweg: Asphalt	Q0 8906,2822 8828,2841
+Opelweg: Verbundsteinpflaster	Q1 8828,2841 8735,2866
 Bieler Str.: Kleinpflaster, relativ eben	Q1 6815,17871 6711,17839
 Straﬂe 129: schlechter Sandweg	Q3 7802,21173 7929,21103
+Dammheidestr.: Kopfsteinpflaster	Q2 22880,7351 22745,7388 22656,7412 22554,7437
+Grindelwaldweg: Asphalt	Q0 6908,17583 6797,17568
+Hottengrundweg: guter Asphalt	Q0 -8637,4741 -8086,4504
+Kleestr.: guter Asphalt	Q0 16484,2313 16392,2299 16325,2207 16318,2146 16303,2032
+Jungbornstr.: m‰ﬂiges Kopfsteinpflaster	Q2 13915,20944 13875,21077 13878,21122 13910,21280 13978,21496 14017,21673 14064,21838
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206
 Richard-Ermisch-Str.: Asphalt	Q0 14250,13281 14224,13206 14207,13152 14177,13065 14163,13025 14130,12926 14096,12827
 Zum Langen Jammer: Kopfsteipflaster, Gehweg besser	Q2 14686,12873 14405,12953

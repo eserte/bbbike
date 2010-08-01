@@ -322,7 +322,7 @@ Spreeuferweg - Elisabeth-Abegg-Str.: Rampe	q3 7923,12872 7885,12821
 (südliche Fahrbahn des Sachsendamms - Naturpark Schöneberg): Rampe	q2 7696,7562 7744,7538 7710,7547 7750,7528
 Heidenfeldstr.: Gehweg	q1 13433,13346 13393,13326
 (Gudrunstr. - Lichtenberger Brücke): Gehweg, Bordsteine	q2 16870,11920 16884,11889 16851,11852
-Grünstr.: Fußgängerzone	q2 22111,4562 22162,4546 22214,4548 22312,4593
+Grünstr.: Fußgängerzone, Radfahren erlaubt	q2 22111,4562 22162,4546 22214,4548 22312,4593
 Schloßplatz Köpenick: Fußgänger, Straßenbahn, Lieferverkehr	q2 22111,4562 22093,4499
 (Karlsgartenstr. - Hasenheide): Parkweg, Fußgänger	q1 11627,8485 11508,8491 11333,8582 11250,8585
 #: note: Radfahren erlaubt
@@ -1960,8 +1960,10 @@ Reclamweg: Bordsteinkanten	q2 -5196,12452 -5126,12425
 #: by: ^^^
 #: by: Rainer (ghostviewer): vvv
 #: note: "Eilige Anwohner mit Auto quetschen sich gern mal zum Überholen vorbei"
-Baseler Str. (Reinickendorf): enge Straße	q1 6792,17951 6815,17871 6841,17781 6886,17649 6908,17583 6995,17322
+Baseler Str. (Reinickendorf): enge Straße	q1 6792,17951 6815,17871 6841,17781 6886,17649 6900,17608 6908,17583 6995,17322
 Bieler Str.: enge Straße	q1 6815,17871 6711,17839
 #: by: ^^^
 #: by: Frank (...engel)
 Straße 129: enge Straße	q1 7802,21173 7929,21103
+#: by: Wanda (schramms):
+Hottengrundweg: enge Straße	q1 -8637,4741 -8086,4504

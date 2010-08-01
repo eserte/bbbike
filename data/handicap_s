@@ -267,7 +267,7 @@ Spreeuferweg - Elisabeth-Abegg-Str.: Rampe	q3 7923,12872 7885,12821
 (s¸dliche Fahrbahn des Sachsendamms - Naturpark Schˆneberg): Rampe	q2 7696,7562 7744,7538 7710,7547 7750,7528
 Heidenfeldstr.: Gehweg	q1 13433,13346 13393,13326
 (Gudrunstr. - Lichtenberger Br¸cke): Gehweg, Bordsteine	q2 16870,11920 16884,11889 16851,11852
-Gr¸nstr.: Fuﬂg‰ngerzone	q2 22111,4562 22162,4546 22214,4548 22312,4593
+Gr¸nstr.: Fuﬂg‰ngerzone, Radfahren erlaubt	q2 22111,4562 22162,4546 22214,4548 22312,4593
 Schloﬂplatz Kˆpenick: Fuﬂg‰nger, Straﬂenbahn, Lieferverkehr	q2 22111,4562 22093,4499
 (Karlsgartenstr. - Hasenheide): Parkweg, Fuﬂg‰nger	q1 11627,8485 11508,8491 11333,8582 11250,8585
 (Am Rixdorfer Teich): Parkweg, Fuﬂg‰nger	q1 11250,8585 11104,8559 11020,8596 10957,8573 10911,8457
@@ -1328,13 +1328,15 @@ Kollostr.: enge Straﬂe	q1 9665,4392 9677,4518 9695,4638
 Prisdorfer Str.: enge Straﬂe	q1 -5887,13894 -5906,14102 -5887,14147 -5874,14242
 Janischweg: enge Straﬂe	q1 537,14919 481,15088 473,15169 453,15173 431,15230 429,15284
 Reclamweg: Bordsteinkanten	q2 -5196,12452 -5126,12425
-Baseler Str. (Reinickendorf): enge Straﬂe	q1 6792,17951 6815,17871 6841,17781 6886,17649 6908,17583 6995,17322
+Baseler Str. (Reinickendorf): enge Straﬂe	q1 6792,17951 6815,17871 6841,17781 6886,17649 6900,17608 6908,17583 6995,17322
 Bieler Str.: enge Straﬂe	q1 6815,17871 6711,17839
 Straﬂe 129: enge Straﬂe	q1 7802,21173 7929,21103
+Hottengrundweg: enge Straﬂe	q1 -8637,4741 -8086,4504
 Dennewitzplatz: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 7906,10098 7866,9918
 Eichborndamm: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 4240,19019 4232,18981
 Dorotheenstr. (Straﬂenbahn): gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q2::igndisp; 9454,12558 9330,12529
 Revaler Str. (Straﬂenbahn): gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 13588,11490 13473,11456
+Kietzer Str.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 22383,4483 22396,4464
 Schwartzkopffstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 8776,14364 8607,14253
 Stiftsweg: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 11025,18531 11268,18851
 Erkelenzdamm: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 11117,10326 11094,10261

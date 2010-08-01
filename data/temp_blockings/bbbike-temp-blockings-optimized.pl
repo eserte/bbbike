@@ -746,9 +746,9 @@ userdel	q4::inwork 10422,12395 10476,12432
        undef,
        {
          'source_id' => 'IM_013617',
-         'until' => 1280613599,
-         'text' => 'Hobrechtsfelder Chaussee - Bucher Str. in beiden Richtungen in Höhe der Autobahnüberführung (BAB 10) Brückenneubau, Straße vollständig gesperrt (bis Ende 07/2010)',
-         'from' => 1247723819,
+         'until' => 1281016800,
+         'text' => 'Hobrechtsfelder Chaussee - Bucher Str.: Brückenneubau, Straße vollständig gesperrt, 14.07.2009 09:00 Uhr bis 05.08.2010 16:00 Uhr',
+         'from' => 1247468400,
          'id' => 1747,
          'data' => 'userdel	2::inwork 14314,25193 14219,25013 14029,24753
 ',
@@ -1076,16 +1076,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_014045',
-         'until' => 1292594400,
-         'text' => 'Wendenschloßstr. (Köpenick): Baustelle, Fahrtrichtung gesperrt Richtung Müggelheimer Str. zwischen Salvador-Allende-Str. und Landjägerstr., 01.09.2009 12:01 Uhr bis 17.12.2010 15:00 Uhr ',
-         'from' => 1251712860,
-         'id' => 1857,
-         'data' => 'userdel	q4::inwork; 23451,4877 23363,4846 23055,4640 22959,4576 22893,4532 22862,4511 22832,4491 22791,4457 22740,4415
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1122,20 +1113,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'http://www.berlin.de/ba-pankow/presse/archiv/20090903.1100.137516.html',
-         'until' => 1333231199,
-         'text' => 'Bauarbeiten in der Berliner Straße in Pankow ab Anfang Oktober 2009, Einbahnstraße Richtung Breite Str.; die Hadlichstr. ab Damerowstraße Einbahnstraße in Richtung Berliner Straße',
-         'from' => 1254261600,
-         'id' => 1885,
-         'data' => '#: XXX nach den Bauarbeiten fällt evtl. das Kopfsteinpflaster weg, es wird zumindest Richtung Norden Radwege geben
-#: last_checked: 2010-07-11
-#: next_check: 2010-10-01
-userdel	q4::inwork; 10680,18380 10755,18231 10829,18083 10846,17992
-userdel	q4::inwork; 10829,18083 10907,18109 10938,18147 10989,18172 11137,18358 11025,18531
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => undef,
          'permanent' => 1,
@@ -1165,16 +1143,7 @@ userdel	q4::inwork; 10829,18083 10907,18109 10938,18147 10989,18172 11137,18358 
        undef,
        undef,
        undef,
-       {
-         'source_id' => '96900159',
-         'until' => 1280613600,
-         'text' => 'Schwielowsee: K6910: Kanal- und Straßenbau OL Geltow Richtungsverkehr zw. Mühlenbergstr. und B 1, Vollsperrung für Deckeneinbau, bis 31.07.2010',
-         'from' => 1276547726,
-         'id' => 1896,
-         'data' => 'userdel	q4::inwork -19013,-5247 -19112,-5226 -19332,-5240
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1617,16 +1586,7 @@ userdel	q4::inwork; 10614,19907 10742,19632
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'LS/O-SG33-E/10/042',
-         'until' => 1280181600,
-         'text' => 'Oberkrämer: L17: grundhafter Ausbau der Ortsdurchfahrt OD Schwante zw. Ortseingang und Kreisverkehr, 17.05.2010 bis 26.07.2010 ',
-         'from' => 1274300387,
-         'id' => 2070,
-         'data' => 'userdel	q4::inwork -11307,35852 -11541,36139
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1722,24 +1682,8 @@ userdel	q4::inwork; 10614,19907 10742,19632
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1280613600,
-         'text' => 'Alt-Rudow zwischen Köpenicker Straße und Neudecker vom 24.07.2010 bis zum 31.07.2010 vollständig gesperrt. Die Einbahnstraßenregelung Am Hanfgraben wird umgekehrt. ',
-         'from' => 1279836000,
-         'id' => 2094,
-         'data' => 'userdel	q4::inwork 16849,1437 16960,1282
-',
-         'type' => 'handicap'
-       },
-       {
-         'until' => 1280613599,
-         'text' => 'Wilhelminenhofstraße zwischen Rathenau- und Firlstraße vom 7. bis 31. Juli 2010 in beiden Richtungen für den Fahrzeugverkehr gesperrt; die Rathenaustraße in Richtung Plönzeile als Einbahnstraße ausgewiesen.',
-         'from' => 1278270043,
-         'id' => 2095,
-         'data' => 'userdel	q4::inwork; 18970,6110 18861,6000 18766,6067 18670,6132 18574,6197 18473,6265
-',
-         'type' => 'handicap'
-       },
+       undef,
+       undef,
        {
          'until' => undef,
          'permanent' => 1,
@@ -1817,6 +1761,104 @@ userdel	q4::inwork; 10614,19907 10742,19632
          'from' => 1279436400,
          'id' => 2103,
          'data' => 'userdel	q4::inwork; -5030,13017 -4629,12835 -4277,12675 -4239,12626
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => '101100060',
+         'until' => 1281304800,
+         'text' => 'Nauen: L201: Brückeninstandsetzung Alt Brieselang - B273 Brücke Höhe AS Falkensee, 17.05.2010 09:00 Uhr bis 08.08.2010 ',
+         'from' => 1273993200,
+         'id' => 2104,
+         'data' => 'userdel	2::inwork -19282,23081 -17931,23152
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => '106401404',
+         'until' => 1281132000,
+         'text' => 'Wriezen: K6436: Verlegung OPAL Erdgasleitung Wriezen - Altgaul, 07.07.2010 bis 06.08.2010 ',
+         'from' => 1280677738,
+         'id' => 2105,
+         'data' => 'userdel	2::inwork 58456,36743 58206,37275
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => '105100738',
+         'until' => 1288303200,
+         'text' => 'Brandenburg an der Havel: L93: Ausbau Bahnübergang Wilhelmsdorfer Landstraße, 27.07.2010 bis 28.10.2010 01:00 Uhr ',
+         'from' => 1280677929,
+         'id' => 2106,
+         'data' => 'userdel	q4::inwork -48338,-2586 -48114,-2344 -47938,-2184
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => '105100738_1',
+         'until' => 1288303200,
+         'text' => 'Brandenburg an der Havel: L93: Ausbau Bahnübergang Ziesarer Landstraße, 27.07.2010 bis 28.10.2010 01:00 Uhr',
+         'from' => 1280678128,
+         'id' => 2107,
+         'data' => 'userdel	q4::inwork -49042,-3647 -48542,-2958 -48338,-2586
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => '106200475',
+         'until' => 1293836400,
+         'text' => 'Lichterfeld-Schacksdorf: L60: Straßenbau Lauchhammer - Licherfelde, 22.07.2010 14:00 Uhr bis 31.12.2010 ',
+         'from' => 1279713600,
+         'id' => 2108,
+         'data' => 'userdel	2::inwork 37809,-92300 37918,-93202 37419,-94853 37230,-95682
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => '096401484',
+         'until' => 1282168800,
+         'text' => 'Petershagen/Eggersdorf: K6422: Kanal-/Leitungsbau (TW) OL Petershagen, 03.08.2009 bis 18.08.2010 ',
+         'from' => 1280678341,
+         'id' => 2109,
+         'data' => 'userdel	q4::inwork 35900,13643 35427,13624
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_016116',
+         'until' => 1292598000,
+         'text' => 'Tucholskystr. (Mitte): Baustelle, Straße vollständig gesperrt zwischen Oranienburger Str. und Auguststr., 30.07.2010 13:48 Uhr bis 17.12.2010 16:00 Uhr ',
+         'from' => 1280404080,
+         'id' => 2110,
+         'data' => 'userdel	q4::inwork 9605,13248 9651,13406
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20100720.1055.303592.html',
+         'until' => 1281823199,
+         'text' => 'Sperrung der Eisenacher Straße zwischen dem Blumberger Damm und der Gothaer Straße vom 02. August bis zum 14. August 2010 ',
+         'from' => 1280687843,
+         'id' => 2111,
+         'data' => 'userdel	q4::inwork 22605,15111 22449,15127 22409,15128 22343,15115 22059,15153
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1284069600,
+         'text' => 'Einbahnstraßenregelung in der Wasserwerkstr., Richtung Pionierstraße offen, vom 09.08.2010 bis zum 09.09.2010 ',
+         'from' => 1281218400,
+         'id' => 2112,
+         'data' => 'userdel	q4::inwork; -5806,16403 -5830,16356 -5849,16199 -5875,15994 -5911,15877
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1282341600,
+         'text' => 'Fahrbahnsanierung am Dahlemer Weg vom 02.08.2010 bis 20.08.2010, zwischen der McNair-Promenade und der Seehofstraße in Richtung Norden gesperrt ',
+         'from' => 1280613600,
+         'id' => 2113,
+         'data' => 'userdel	q4::inwork; 1785,1338 1825,1534 1848,1647 1854,1677 1873,1772 1945,2127
 ',
          'type' => 'handicap'
        }
