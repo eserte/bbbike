@@ -697,13 +697,13 @@ sub handle_cycleway_like {
 	next if !defined $cat || $cat eq '';
 	my $extra_tags;
 	# Check for Zweirichtungsradweg first
-	if (($cat_hin||'') =~ m{^(RW|RW1|RW2|RW\?)$} && ($cat_rueck||'') =~ m{^(RW8|RW8\?|RW9)$}) {
+	if (($cat_hin||'') =~ m{^(RW|RW1|RW2|RW\?)$} && ($cat_rueck||'') =~ m{^(RW8|RW8\?|RW9|RW9\?)$}) {
 	    if ($direction == +1) {
 		$extra_tags .= qq{  <tag k="cycleway" v="track" />\n};
 		$extra_tags .= qq{  <tag k="bbbike:cycleway_type" v="dualdir" />\n};
 		$extra_tags .= $extra_tags_for_dualdir->();
 	    }
-	} elsif (($cat_rueck||'') =~ m{^(RW|RW1|RW2|RW\?)$} && ($cat_hin||'') =~ m{^(RW8|RW8\?|RW9)$}) {
+	} elsif (($cat_rueck||'') =~ m{^(RW|RW1|RW2|RW\?)$} && ($cat_hin||'') =~ m{^(RW8|RW8\?|RW9|RW9\?)$}) {
 	    if ($direction == -1) {
 		$extra_tags .= qq{  <tag k="cycleway" v="track" />\n};
 		$extra_tags .= qq{  <tag k="bbbike:cycleway_type" v="dualdir" />\n};
