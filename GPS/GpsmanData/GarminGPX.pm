@@ -323,12 +323,44 @@ use vars qw(%garmin_id_to_garmin_gpx_symbol_name);
 # until here
 );
 
+# XXX The user defined symbols; currently hardcoded to the bike2008 set
+my $garmin_user_id_to_name;
+sub _setup_garmin_user_id_to_name {
+    if (!$garmin_user_id_to_name) {
+	$garmin_user_id_to_name = {};
+	require BBBikeUtil;
+	my $userdef_symbol_mapping = BBBikeUtil::bbbike_root()."/misc/garmin_userdef_symbols/bike2008/mapping";
+	my $fh;
+	if (!open $fh, $userdef_symbol_mapping) {
+	    warn "Cannot open $userdef_symbol_mapping: $!";
+	    return;
+	}
+	while(<$fh>) {
+	    chomp;
+	    next if m{^$} || m{^#};
+	    my($iconname, $label) = split /\t/, $_, 2;
+	    if (my($id) = $iconname =~ m{^(\d+)\.bmp$}) {
+		$id += 7680;
+		$garmin_user_id_to_name->{$id} = $label;
+	    } else {
+		warn "Cannot parse line $_ in $userdef_symbol_mapping, ignoring...";
+	    }
+	}
+    }
+}
+
 sub gpsman_symbol_to_garmin_symbol_name {
     my($gpsman_symbol) = @_;
-    my $id = $gpsman_symbol_name_to_garmin_id{$gpsman_symbol};
-    return if !defined $id;
-    my $name = $garmin_id_to_garmin_gpx_symbol_name{$id};
-    $name;
+    if ($gpsman_symbol =~ m{^user:(\d+)$}) {
+	my $user_id = $1;
+	_setup_garmin_user_id_to_name();
+	return $garmin_user_id_to_name->{$user_id};
+    } else {
+	my $id = $gpsman_symbol_name_to_garmin_id{$gpsman_symbol};
+	return if !defined $id;
+	my $name = $garmin_id_to_garmin_gpx_symbol_name{$id};
+	$name;
+    }
 }
 
 1;

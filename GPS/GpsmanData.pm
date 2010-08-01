@@ -432,6 +432,8 @@ sub parse_waypoint_line {
 			# no warning
 		    } elsif (/^GD109:(dtyp|class|colour|attrs|depth|state|country|ete)=/) {
 			# also no warning
+		    } elsif (/^GD110:(attrs|cat|class|colour|country|depth|dtyp|ete|state|temp|time)=/) {
+			# also no warning
 		    } else {
 			warn "Ignore $_";
 		    }
@@ -1085,33 +1087,9 @@ sub as_gpx {
 		my $wptxml = $gpx->addNewChild(undef, "wpt");
 		$wptxml->setAttribute("lat", $wpt->Latitude);
 		$wptxml->setAttribute("lon", $wpt->Longitude);
-		my $namexml = $wptxml->addNewChild(undef, "name");
-		$namexml->appendText($wpt->Ident);
 
-		my $symbol = $wpt->Symbol;
-		if (defined $symbol && length $symbol) {
-		    if ($symbol =~ m{user:}) {
-			# nop
-		    } else {
-			$symbol = GPS::GpsmanData::GarminGPX::gpsman_symbol_to_garmin_symbol_name($symbol);
-		    }
-		    if (defined $symbol) {
-			my $symbolxml = $wptxml->addNewChild(undef, 'sym');
-			$symbolxml->appendText($symbol);
-
-			if ($sym_to_cmt) {
-			    my $commentxml = $wptxml->addNewChild(undef, 'cmt');
-			    $commentxml->appendText($symbol);
-			}
-		    }
-		}
-
-		## normally not useful --- it's the date/time
-		#my $comment = $wpt->Comment;
-		#if (defined $comment and length $comment) {
-		#    my $commentxml = $wptxml->addNewChild(undef, 'cmt');
-		#    $commentxml->appendText($comment);
-		#}
+		# Note: order of child elements is important for
+		# schema validation
 
 		my $altitude = $wpt->Altitude;
 		if (defined $altitude and length $altitude) {
@@ -1125,6 +1103,30 @@ sub as_gpx {
 		    my $timexml = $wptxml->addNewChild(undef, 'time');
 		    $timexml->appendText(POSIX::strftime("%FT%TZ", gmtime($epoch)));
 		}
+
+		my $namexml = $wptxml->addNewChild(undef, "name");
+		$namexml->appendText($wpt->Ident);
+
+		my $symbol = $wpt->Symbol;
+		if (defined $symbol && length $symbol) {
+		    $symbol = GPS::GpsmanData::GarminGPX::gpsman_symbol_to_garmin_symbol_name($symbol);
+		    if (defined $symbol) {
+			if ($sym_to_cmt) {
+			    my $commentxml = $wptxml->addNewChild(undef, 'cmt');
+			    $commentxml->appendText($symbol);
+			}
+
+			my $symbolxml = $wptxml->addNewChild(undef, 'sym');
+			$symbolxml->appendText($symbol);
+		    }
+		}
+
+		## normally not useful --- it's the date/time
+		#my $comment = $wpt->Comment;
+		#if (defined $comment and length $comment) {
+		#    my $commentxml = $wptxml->addNewChild(undef, 'cmt');
+		#    $commentxml->appendText($comment);
+		#}
 	    }
 	} elsif ($chunk->Type eq $chunk->TYPE_TRACK) {
 	    my $trkxml = $gpx->addNewChild(undef, "trk");
