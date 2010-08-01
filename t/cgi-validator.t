@@ -2,7 +2,6 @@
 # -*- perl -*-
 
 #
-# $Id: cgi-validator.t,v 1.12 2009/04/04 11:26:03 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -41,6 +40,11 @@ BEGIN {
 
 BEGIN { plan tests => 3 }
 
+{
+    use POSIX qw(strftime);
+    use constant TODO_CSS_VALIDATOR_PROBLEM => "2010-08-15T12:00:00" gt strftime("%FT%T", localtime) && 'See https://rt.cpan.org/Ticket/Display.html?id=59930';
+}
+
 my %config = ("verbose" => 0,
 	      AuthorizedExtensions => ".html .xhtml .phtml .htm .shtml .php .svg .xml / .cgi",
 	     );
@@ -78,6 +82,8 @@ my @uris = ("$rooturl/bbbike.cgi",
 }
 
 {
+    local $TODO = TODO_CSS_VALIDATOR_PROBLEM;
+
     my $validator = W3C::LogValidator::CSSValidator->new(\%config);
     $validator->uris(@uris);
     my %results = $validator->process_list;
