@@ -981,6 +981,8 @@ Langhoffstr. -> Allee der Kosmonauten: Straßenbahntrasse	3::igndisp 19821,13604 
 Allee der Kosmonauten -> Biesdorfer Promenade: Straßenbahntrasse	3::igndisp 19894,13535 19837,13531 19826,13444
 Biesdorfer Promenade -> Allee der Kosmonauten: Straßenbahntrasse	3::igndisp 19826,13444 19837,13531 19807,13529
 Straßenbahntrasse	3nocross::ignrte 10765,16486 10699,16492 10620,16497
+Tegnerstr. -> Bornholmer Str.: Straßenbahntrasse	3::igndisp 10708,16579 10699,16492 10765,16486
+Bornholmer Str. -> Tegnerstr.: Straßenbahntrasse	3::igndisp 10620,16497 10699,16492 10708,16579
 Straßenbahntrasse	3nocross::ignrte 10620,16497 10533,16505 10458,16509
 Aalesunder Str. -> Bornholmer Str.: Straßenbahntrasse	3::igndisp 10549,16650 10533,16505 10620,16497
 Bornholmer Str. -> Aalesunder Str.: Straßenbahntrasse	3::igndisp 10458,16509 10533,16505 10549,16650
@@ -1307,7 +1309,11 @@ Märkische Allee -> Alt-Friedrichsfelde: Mittelstreifen	3::igndisp 19896,11688 19
 Haydnstr. -> Märkische Allee: Mittelstreifen	3::igndisp 20006,12128 19947,12140 19939,12068
 Märkische Allee -> Haydnstr.: Mittelstreifen	3::igndisp 20002,12492 19947,12140 20006,12128
 Linksabbiegen wegen Straßenbahn nicht möglich	3nocross::ignrte 17400,17790 17703,17990 17843,18078
+Falkenberger Chaussee -> Pablo-Picasso-Str.: Linksabbiegen wegen Straßenbahn nicht möglich	3::igndisp 17843,18078 17703,17990 17906,17746
+Pablo-Picasso-Str. -> Grünanlage Egon-Erwin-Kisch-Str.: Linksabbiegen wegen Straßenbahn nicht möglich	3::igndisp 17906,17746 17703,17990 17678,18171
+Pablo-Picasso-Str. -> Falkenberger Chaussee: Linksabbiegen wegen Straßenbahn nicht möglich	3::igndisp 17906,17746 17703,17990 17400,17790
 Grünanlage Egon-Erwin-Kisch-Str. -> Falkenberger Chaussee: Linksabbiegen wegen Straßenbahn nicht möglich	3::igndisp 17678,18171 17703,17990 17843,18078
+Grünanlage Egon-Erwin-Kisch-Str. -> Pablo-Picasso-Str.: Linksabbiegen wegen Straßenbahn nicht möglich	3::igndisp 17678,18171 17703,17990 17906,17746
 Falkenberger Chaussee -> Grünanlage Egon-Erwin-Kisch-Str.: Linksabbiegen wegen Straßenbahn nicht möglich	3::igndisp 17400,17790 17703,17990 17678,18171
 unbequemes Abbiegen	3nocross::ignrte 13332,10832 13389,10808 13496,10763 13596,10722
 Warschauer Pl. -> Stralauer Allee: unbequemes Abbiegen	3::igndisp 13471,10983 13389,10808 13496,10763
