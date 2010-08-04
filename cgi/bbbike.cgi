@@ -6163,9 +6163,9 @@ sub adjust_scope_for_search {
 	return;
     }
 
-    my $city_border = eval { Strassen->new("berlin") };
+    my $city_border = eval { MultiStrassen->new("berlin", "upgrade_scope_hint") };
     if (!$city_border) {
-	warn "Cannot get border file";
+	warn "Cannot get border file (berlin and/or upgrade_scope_hint)";
 	return;
     }
 

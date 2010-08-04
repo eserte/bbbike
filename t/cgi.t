@@ -84,7 +84,7 @@ if (!@urls) {
 }
 
 my $ortsuche_tests = 11;
-plan tests => (209 + $ortsuche_tests) * scalar @urls;
+plan tests => (217 + $ortsuche_tests) * scalar @urls;
 
 my $hdrs;
 if (defined &Compress::Zlib::memGunzip && $do_accept_gzip) {
@@ -174,8 +174,8 @@ for my $cgiurl (@urls) {
 	my $content = uncompr($res);
 	if ($output_as eq '' || $output_as eq 'print') {
 	    is($res->content_type, 'text/html', "Expected content type");
-	    ok($content =~ /L.*nge:.*(\d[\d.,]+).*km/ && $1 > 0,
-	       "Length text found");
+	    my $len = extract_length($content);
+	    ok($len && $len > 0, "Length text found");
 	    # minor changes in the data may change the initial direction,
 	    # both "Osten" and "Norden" already happened
 	    like($content, qr/nach\s+(Norden|Osten)/, "Direction is correct");
@@ -384,6 +384,41 @@ for my $cgiurl (@urls) {
     }
 
     {
+	my $content;
+
+	# optimal route crosses Berlin border (using upgrade_scope_hint)
+	# Falkenseer Platz -> Ruppiner Chaussee
+	$res = $ua->get("$action?startc=-3220%2C14716&pref_seen=1&zielc=-1287%2C23752");
+	ok($res->is_success, "Falkenseer Platz - Ruppiner Chaussee")
+	    or diag(Dumper($res));
+	$content = uncompr($res);
+	BBBikeTest::like_long_data($content, qr/(An der Havel|\(Spandau -\) Hennigsdorf)/,
+				   "Shorter route on the western side of the Havel", ".html");
+	BBBikeTest::unlike_long_data($content, qr/Maienwerderweg/,
+				     "Not using the eastern side of the Havel", ".html");
+	my $len = extract_length($content);
+	cmp_ok($len, "<=", 14.5, "Shorter route"); # eastern in 14.6km
+    }
+
+ XXX:
+    {
+	my $content;
+
+	# optimal route crosses Berlin border (using upgrade_scope_hint)
+	# Wannsee -> Kladow
+	$res = $ua->get("$action?startc=-4869%2C1389&pref_seen=1&zielc=-7108%2C5072");
+	ok($res->is_success, "Wannsee - Kladow")
+	    or diag(Dumper($res));
+	$content = uncompr($res);
+	BBBikeTest::like_long_data($content, qr/(Nedlitzer Str|Gutsstr)/,
+				   "Shorter route via Potsdam and Sacrow", ".html");
+	BBBikeTest::unlike_long_data($content, qr/Heerstr/,
+				     "Not using the eastern side of the Havel", ".html");
+	my $len = extract_length($content);
+	cmp_ok($len, "<=", 22.0, "Shorter route"); # eastern in 22.2km
+    }
+
+    {
 	# Test "inaccessible" feature
 	my $inacc_xy = "21306,381"; # B96a
 	$req = new HTTP::Request
@@ -563,7 +598,6 @@ for my $cgiurl (@urls) {
 	    or diag $url;
     }
 
- XXX: 
     for my $imagetype (
 		       "gif", "png", "jpeg",
 		       "svg", "mapserver",
@@ -983,4 +1017,10 @@ sub my_uri_escape {
     return undef unless defined($toencode);
     $toencode=~s/([^a-zA-Z0-9_.~-])/uc sprintf("%%%02x",ord($1))/eg;
     return $toencode;
+}
+
+sub extract_length {
+    my($content) = @_;
+    my($len) = $content =~ /L.*nge:.*?(\d[\d.,]+).*km/;
+    $len;
 }

@@ -85,6 +85,10 @@ COMPUTED_TARGETS+=	wasserstrassen-lowres
 COMPUTED_TARGETS+=	kneipen
 COMPUTED_TARGETS+=	fragezeichen-cooked
 
+# These are not computed, but useful mentioned here for fixing
+# permissions
+NON_TARGETS=		upgrade_scope_hint
+
 COOKED_TARGETS=		strassen-cooked landstrassen-cooked landstrassen2-cooked
 TARGETS+=	${SOURCE_TARGETS} ${COOKED_TARGETS} ${COMPUTED_TARGETS}
 BBD_TARGETS=	${TARGETS:S/^ampelschaltung$//:S/^multi_bez_str$//:S/^temp_blockings\/bbbike-temp-blockings-optimized.pl//}
@@ -139,7 +143,7 @@ targets-clean:
 	mv -f ${TARGETS} /tmp/old-data/
 
 fix-permissions:
-	$(READABLE) $(TARGETS) temp_blockings/bbbike-temp-blockings.pl temp_blockings/*.bbd
+	$(READABLE) $(TARGETS) $(NON_TARGETS) temp_blockings/bbbike-temp-blockings.pl temp_blockings/*.bbd
 
 # Useful checks, but normally too slow for a quick build
 # XXX merge with sort-Berlin.coords.data rule below?
@@ -726,7 +730,7 @@ ${_img_gif_${img}}: ${_img_png_${img}}
 # MORE HELPER TARGETS
 
 # This also creates .rsync_include
-.modified:	${TARGETS}
+.modified:	${TARGETS} ${NON_TARGETS}
 	${PERL} ${MISCSRCDIR}/create_modified
 
 multi_bez_str:	multi_bez_str-orig
