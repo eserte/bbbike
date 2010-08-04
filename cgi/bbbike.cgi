@@ -98,7 +98,7 @@ use vars qw($VERSION $VERBOSE $WAP_URL
 	    $newstreetform_encoding
 	    $use_region_image
 	    $include_outer_region @outer_berlin_places $outer_berlin_qr
-	    $warn_message $use_utf8 $data_is_wgs84
+	    $warn_message $use_utf8 $data_is_wgs84 $osm_data
 	   );
 # XXX This may be removed one day
 use vars qw($use_cooked_street_data);
@@ -658,13 +658,21 @@ $use_utf8 = 0;
 
 =item $data_is_wgs84
 
-Set to a true value if the data is using wgs84 coordinates instead of
+Set to a true value if data is using wgs84 coordinates instead of
 the home-brew bbbike format. Probably only useful for data converted
 from OpenStreetMap.
 
 =cut
 
 $data_is_wgs84 = 0;
+
+=item $osm_data
+
+Set to a true value if data originates from OpenStreetMap.
+
+=cut
+
+$osm_data = 0;
 
 =back
 
@@ -6145,6 +6153,8 @@ sub upgrade_scope {
 # NOTE: this is only valid for city=b_de. Other cities should use other
 # border files (XXX -> Geography::....)
 sub adjust_scope_for_search {
+    return if $osm_data;
+
     my($coordsref) = @_;
     return if $q->param("scope") && $q->param("scope") ne 'city'; # already bigger scope
 
@@ -7152,6 +7162,7 @@ sub filename_from_route {
 }
 
 sub outside_berlin_and_potsdam {
+    return if $osm_data;
     my($c) = @_;
     my $result = 0;
     eval {
@@ -7174,6 +7185,7 @@ sub outside_berlin_and_potsdam {
 }
 
 sub outside_berlin {
+    return if $osm_data;
     my($c) = @_;
     my $result = 0;
     eval {
