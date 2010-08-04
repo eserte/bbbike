@@ -3748,6 +3748,9 @@ Strehlener Str.: Asphalt	Q0 22652,10392 22538,10477 22403,10523
 ######################################################################
 #: by: anonymous vvv
 # 
+#: confirmed_by: srt (zumindest Kopfsteinpflaster s¸dlich der Uhlandstr.)
+Blumenthalstr.: schlechtes Kopfsteinpflaster	Q3 9120,20015 9159,19818 9177,19745 9195,19644 9214,19533 9231,19440 9249,19351 9258,19290
+Stegeweg (Falkenberg): m‰ﬂiges Kopfsteinpflaster	Q2 19409,18397 19579,18933
 Vierlandenstr.: Asphalt	Q0 20822,14594 20761,14589 20591,14575 20520,14570
 #: note: "einige Fuﬂg‰nger, q2" ignoriert
 Straﬂe 27: m‰ﬂige wassergebundene Decke	Q2 14747,21472 14617,21490 14541,21360 14509,21337
@@ -11219,7 +11222,8 @@ Boca-Raton-Str.: guter Asphalt	Q0 -2170,17024 -2152,17108
 #: note: "Die ganze Straﬂe ist ein loser Sandweg, f¸r Radfahrer schwer zu befahren, und wenn dann nur in Schrittgeschwindigkeit"
 Straﬂe 265: loser Sandweg, schwer zu befahren	Q3- -4751,9033 -4771,9033 -4862,9079 -5650,9471 -6306,9794 -6324,9778
 Reimerweg: guter Asphalt	Q0 -6590,12606 -6791,12429
-Spieroweg: m‰ﬂiger Asphalt	Q1 -6595,13198 -6563,13403
+#: XXX "75m sind Sandweg", aber wo genau? -> Anfrage geschickt
+Spieroweg: schlechter Asphalt	Q2 -6595,13198 -6563,13403
 Pietschweg: guter Asphalt	Q0 -6395,13121 -6360,12970
 R‰cknitzer Steig: guter Asphalt	Q0 -5480,12793 -5535,12631
 Bolteweg: guter Asphalt	Q0 -5975,12827 -6029,13033 -6079,13208
@@ -11255,7 +11259,7 @@ Bieler Str.: Kleinpflaster, relativ eben	Q1 6815,17871 6711,17839
 #: by: Frank (...engel)
 Straﬂe 129: schlechter Sandweg	Q3 7802,21173 7929,21103
 #: by: Marie-Louise Oehlschl‰gel:
-Dammheidestr.: Kopfsteinpflaster	Q2 22880,7351 22745,7388 22656,7412 22554,7437
+Dammheidestr.: schlechtes Kopfsteinpflaster	Q3 22880,7351 22745,7388 22656,7412 22554,7437
 #: by: Christoph Eydinger: vvv
 Grindelwaldweg: Asphalt	Q0 6908,17583 6797,17568
 #: note: "nicht grade das beste"
@@ -11269,8 +11273,10 @@ Kleestr.: guter Asphalt	Q0 16484,2313 16392,2299 16325,2207 16318,2146 16303,203
 Jungbornstr.: m‰ﬂiges Kopfsteinpflaster	Q2 13915,20944 13875,21077 13878,21122 13910,21280 13978,21496 14017,21673 14064,21838
 #: by: Pluskal:
 Gohliser Str.: guter Asphalt	Q0 25569,15140 25578,15238 25590,15342 25374,15368
-#: by: Langen (uwe):
+#: by: Langen (uwe): vvv
 Karlsburger Weg: guter Beton	Q0- 21653,9004 21645,9085 21634,9195 21628,9372 21635,9422
+Oybinweg: guter Asphalt	Q0 21707,9433 21635,9422 21575,9451
+#: by: ^^^
 #: by: Lorenz (wuensch):
 Tegnerstr.: schlechtes Kopfsteinpflaster	Q3 10699,16492 10708,16579
 #: by: Helga (ugp...):
@@ -11281,10 +11287,15 @@ Militscher Weg: Asphalt, Straﬂensch‰den	Q1+ 21170,4706 21152,4635 21139,4421 212
 #: by: Kurt Kratz:
 Hochwaldsteig: m‰ﬂiger Beton	Q1 -4741,7003 -4995,7042 -5050,7058 -5127,7090 -5163,7090
 #: by: Fabi (otto...):
-#: XXX m‰ﬂig oder schlecht? Anfrage gestellt..
-Krumme Str. (Lichterfelde): Kopfsteinpflaster	Q2 4366,3513 4305,3572 4357,3625
+Krumme Str. (Lichterfelde): m‰ﬂiges Kopfsteinpflaster	Q2 4366,3513 4305,3572 4357,3625
 #: by: B. Zinke:
 Barmbeker Weg: guter Asphalt	Q0 -6659,14142 -6641,14044 -6622,13945 -6610,13840
+#: by: Hubertus Habbel:
+Eichenweg: guter Asphalt	Q0 -3079,17905 -3069,17950 -3083,18010
+#: by: (e.) Fleischmann: vvv
+Grumsiner Str.: guter Beton	Q0 22053,16462 22081,16600 22152,16695
+Grumsiner Str.: guter Beton	Q0 22081,16600 21908,16634
+#: by: ^^^
 ######################################################################
 #: by: Andreas M¸hlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206
