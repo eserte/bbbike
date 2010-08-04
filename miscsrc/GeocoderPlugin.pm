@@ -244,6 +244,17 @@ sub geocoder_dialog {
 				 },
 				 'label' => 'Cloudmade (needs API key)',
 			       },
+		'OSM' => { 'require' => sub { require Geo::Coder::OSM },
+			   'new' => sub { Geo::Coder::OSM->new },
+			   'extract_addr' => sub {
+			       my $loc = shift;
+			       $loc->{display_name};
+			   },
+			   'extract_loc' => sub {
+			       my $loc = shift;
+			       ($loc->{lon}, $loc->{lat});
+			   },
+			 },
 		# Other geocoding services:
 		#
 		# - Geo::Coder::Mapquest: requires an API key and is
