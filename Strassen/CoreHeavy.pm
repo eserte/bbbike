@@ -71,6 +71,8 @@ sub union {
 sub new_with_removed_points {
     my($self, $to_remove, %args) = @_;
     my $new_s = Strassen->new;
+    require Storable;
+    $new_s->set_global_directives(Storable::dclone($self->get_global_directives));
     require Strassen::Kreuzungen;
     my $kr = Kreuzungen->new_from_strassen(Strassen => $to_remove);
     my $h = $kr->{Hash};

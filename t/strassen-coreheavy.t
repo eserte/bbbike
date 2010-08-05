@@ -35,7 +35,7 @@ my $v;
 GetOptions("v" => \$v)
     or die "usage: $0 [-v]";
 
-plan tests => 58;
+plan tests => 59;
 
 use_ok("Strassen::CoreHeavy");
 
@@ -157,6 +157,14 @@ my $s3 = Strassen->new($bbd1);
     is($diff->count, 0, "Nothing added");
     is(scalar(@$delref), 1, "One record deleted");
     is($delref->[0], 1, "Index of deleted record");
+}
+
+{
+    my $s = Strassen->new;
+    $s->set_global_directives({something => ["foobar"]});
+    my $inaccessible_points_s = Strassen->new;
+    my $new_s = $s->new_with_removed_points($inaccessible_points_s);
+    is_deeply($new_s->get_global_directives, $s->get_global_directives, 'Global directives still the same');
 }
 
 ######################################################################
