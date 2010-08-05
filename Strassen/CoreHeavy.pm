@@ -1,9 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: CoreHeavy.pm,v 1.44 2009/02/15 20:49:18 eserte Exp $
-#
-# Copyright (c) 1995-2001 Slaven Rezic. All rights reserved.
+# Copyright (c) 1995-2001,2010 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
 # terms of the GNU General Public License, see the file COPYING.
 #
@@ -71,8 +69,7 @@ sub union {
 sub new_with_removed_points {
     my($self, $to_remove, %args) = @_;
     my $new_s = Strassen->new;
-    require Storable;
-    $new_s->set_global_directives(Storable::dclone($self->get_global_directives));
+    $new_s->_clone_some_globals($self);
     require Strassen::Kreuzungen;
     my $kr = Kreuzungen->new_from_strassen(Strassen => $to_remove);
     my $h = $kr->{Hash};
@@ -517,10 +514,12 @@ sub get_linenumber {
 }
 
 # Resets iterator
+# XXX does not preserve global directives (yet)
 ### AutoLoad Sub
 sub filter_region {
     my($s, $type, $x1,$y1, $x2,$y2) = @_;
     my $new_s = Strassen->new;
+    $new_s->_clone_some_globals($s);
     $s->init;
     while(1) {
 	my $r = $s->next;
@@ -542,6 +541,7 @@ sub filter_region {
 }
 
 # Resets iterator
+# XXX does not preserve global directives (yet)
 # Arguments: -date (optional, default is today)
 #            -negpos (optional, default is 0=negative, matches are deleted)
 ### AutoLoad Sub
@@ -557,6 +557,7 @@ sub filter_date {
     my $neg_pos = $args{-negpos} || 0;
 
     my $new_s = Strassen->new;
+    $new_s->_clone_some_globals($s);
     $s->init;
     while(1) {
 	my $r = $s->next;
@@ -848,9 +849,7 @@ sub get_anti_conversion {
 sub grepstreets {
     my($s, $sub, %args) = @_;
     my $new_s = Strassen->new;
-    $new_s->{DependentFiles} = [ $s->dependent_files ];
-    require Storable;
-    $new_s->set_global_directives(Storable::dclone($s->get_global_directives));
+    $new_s->_clone_some_globals($s);
     if ($args{-idadd}) {
 	my $id = $new_s->id;
 	$new_s->{Id} = $id . "_" . $args{-idadd};
@@ -963,6 +962,13 @@ sub douglas_peucker {
 	    $aIndex = $fIndex;
 	}
     }
+}
+
+sub _clone_some_globals {
+    my($new_s, $s) = @_;
+    $new_s->{DependentFiles} = [ $s->dependent_files ];
+    require Storable;
+    $new_s->set_global_directives(Storable::dclone($s->get_global_directives));
 }
 
 1;
