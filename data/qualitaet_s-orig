@@ -11222,8 +11222,9 @@ Boca-Raton-Str.: guter Asphalt	Q0 -2170,17024 -2152,17108
 #: note: "Die ganze Straße ist ein loser Sandweg, für Radfahrer schwer zu befahren, und wenn dann nur in Schrittgeschwindigkeit"
 Straße 265: loser Sandweg, schwer zu befahren	Q3- -4751,9033 -4771,9033 -4862,9079 -5650,9471 -6306,9794 -6324,9778
 Reimerweg: guter Asphalt	Q0 -6590,12606 -6791,12429
-#: XXX "75m sind Sandweg", aber wo genau? -> Anfrage geschickt
-Spieroweg: schlechter Asphalt	Q2 -6595,13198 -6563,13403
+Spieroweg: Sandweg	Q2 -6563,13403 -6575,13317
+Spieroweg: schlechter Asphalt	Q2 -6575,13317 -6595,13198
+Spieroweg: Sandweg	Q2 -6595,13198 -6626,13049
 Pietschweg: guter Asphalt	Q0 -6395,13121 -6360,12970
 Räcknitzer Steig: guter Asphalt	Q0 -5480,12793 -5535,12631
 Bolteweg: guter Asphalt	Q0 -5975,12827 -6029,13033 -6079,13208
@@ -11280,6 +11281,7 @@ Oybinweg: guter Asphalt	Q0 21707,9433 21635,9422 21575,9451
 #: by: Lorenz (wuensch):
 Tegnerstr.: schlechtes Kopfsteinpflaster	Q3 10699,16492 10708,16579
 #: by: Helga (ugp...):
+#: confirmed_by: Max Liegenwer
 Hyazinthenstr.: mäßiges Kopfsteinpflaster	Q2 3527,4608 3587,4514 3597,4494
 #: by: Britta Fehse
 #: confirmed_by: srt (nur der nördliche Abschnitt)
@@ -11296,6 +11298,10 @@ Eichenweg: guter Asphalt	Q0 -3079,17905 -3069,17950 -3083,18010
 Grumsiner Str.: guter Beton	Q0 22053,16462 22081,16600 22152,16695
 Grumsiner Str.: guter Beton	Q0 22081,16600 21908,16634
 #: by: ^^^
+#: by: Katrin Voigt:
+Am Wiesengrund: sehr gutes Verbundsteinpflaster	Q0- 8081,20785 8146,20773 8252,20816 8311,20820
+#: by: Wolfgang (...schmidt)
+Straße 9 (Wartenberg): guter Asphalt	Q0 19397,20407 19384,20439 19430,20561 19501,20537 19526,20511
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206
