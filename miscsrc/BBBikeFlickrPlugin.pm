@@ -104,7 +104,9 @@ sub show_mini_images {
 	     },
 	    );
 
+	my $seen_photos = 0;
 	for my $photo_node ($group_photos->findnodes('/rsp/photos/photo')) {
+	    $seen_photos++;
 	    my($lon, $lat) = ($photo_node->getAttribute('longitude'),
 			      $photo_node->getAttribute('latitude'));
 	    my $id = $photo_node->getAttribute('id');
@@ -123,6 +125,8 @@ sub show_mini_images {
 		$main::c->createImage($tx,$ty, -image => $p, -tags => ['flickr', $page_url, "ImageURL: $photo_url"]);
 	    }
 	}
+
+	main::status_message("Flickr API returned $seen_photos photo(s) within visible area", "info");
     };
     my $err = $@;
     main::DecBusy($main::top);
