@@ -18059,8 +18059,8 @@ EOF
 userdel	q4::inwork 22605,15111 22449,15127 22409,15128 22343,15115 22059,15153
 EOF
      },
-     { from  => 1281218400, # 2010-08-08 00:00
-       until => 1284069600, # 2010-09-10 00:00
+     { from  => 1281128604, # 2010-08-08 00:00 1281218400
+       until => 1281128608, # 2010-09-10 00:00 1284069600 --- wird auf September verschoben
        text  => 'Einbahnstraßenregelung in der Wasserwerkstr., Richtung Pionierstraße offen, vom 09.08.2010 bis zum 09.09.2010 ',
        type  => 'handicap',
        data  => <<EOF,
@@ -18073,6 +18073,33 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork; 1785,1338 1825,1534 1848,1647 1854,1677 1873,1772 1945,2127
+EOF
+     },
+     { from  => 1280635200, # 2010-08-01 06:00
+       until => 1285941600, # 2010-10-01 16:00
+       text  => 'Lehrter Str. (Moabit): Baustelle, Straße vollständig gesperrt in beiden Richtungen zwischen Invalidenstr. und Seydlitzstr., 02.08.2010 06:00 Uhr bis 01.10.2010 16:00 Uhr ',
+       type  => 'handicap',
+       source_id => 'IM_016121',
+       data  => <<EOF,
+userdel	q4::inwork 7764,13236 7643,13461 7660,13506 7655,13539
+EOF
+     },
+     { from  => 1280985970, # 2010-08-05 07:26
+       until => 1282946400, # 2010-08-28 00:00
+       text  => 'Plessa: K6208: Gleisbauarbeiten und Umbau des BÜ, Straßen- und Schwarzdeckeneinbau OL Kahla, Bahnübergang, 03.08.2010 bis 27.08.2010 ',
+       type  => 'gesperrt',
+       source_id => '106200364',
+       data  => <<EOF,
+userdel	2::inwork 23805,-103848 24165,-103467 25237,-102574
+EOF
+     },
+     { from  => 1281391200, # 2010-08-10 00:00
+       until => 1282427999, # 2010-08-21 23:59
+       text  => 'In der Zeit vom 11.08. bis voraussichtlich 21.08. wird die Dessauer Straße zwischen Köthener Straße und Schwarzwurzelstraße auf Grund von Fahrbahnsanierungsarbeiten voll gesperrt. ',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20100804.0935.305087.html',
+       data  => <<EOF,
+userdel	q4::inwork 20576,17994 20460,18030 20351,18066 20256,18096 20232,18123 20186,18238
 EOF
      },
     );

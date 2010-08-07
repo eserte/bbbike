@@ -74,9 +74,14 @@ Lankwitzer Str.	?::projected 8955,3521 8599,3441 8478,3414 8347,3382 8259,3349 8
 #: next_check: 2010-09-01
 Schnellerstr.	?::projected 18245,5551 18370,5511 18680,5413 18984,5318 19031,5316 19328,5304 19405,5284
 # 
+#: by: http://www.berlin.de/ba-spandau/presse/archiv/20100803.1545.305011.html
 #: last_checked: 2010-03-18
-#: next_check: 2010-09-01
-Neuendorfer Str.	?::projected -2883,15571 -2856,15687 -2869,15782 -2886,15867 -2915,15994 -3040,16246
+#: next_check: 2010-12-01
+Neuendorfer Str.	?::projected -2883,15571 -2856,15687 -2869,15782
+#: by: http://www.berlin.de/ba-spandau/presse/archiv/20100803.1545.305011.html
+#: last_checked: 2010-03-18
+#: next_check: 2010-08-24 (public)
+Neuendorfer Str.: Radspuren werden ab 9. August 2010 markiert	?::inwork -2869,15782 -2886,15867 -2915,15994 -3040,16246
 # 
 #: next_check: 2010-03-01 vvv
 Joachim-Friedrich-Str.	?::projected 3067,9592 3069,9622 3083,9796 3092,9886 3108,10069 3111,10116 3132,10499
@@ -114,7 +119,9 @@ Kniprodestr.	?::projected 13838,15113 13749,15013 13649,14899 13438,14675
 #: by: Tagesspiegel vom 2009-04-12, soll 2009 realisiert werden
 #: corrected_by: MoPo 2009-08-01, soll 2010 realisiert werden
 #: last_checked: 2010-03-18
-Streitstr. (werden die vorhandenen Bordsteinradwege ersetzt)?	?::projected -3040,16246 -3050,16429 -3046,16548 -3043,16601 -3031,16807 -3023,16925 -3018,16974 -3017,16984 -3009,17090 -3006,17128 -2959,17507 -2934,17594
+#: by: http://www.berlin.de/ba-spandau/presse/archiv/20100803.1545.305011.html
+#: next_check: 2010-12-01
+Streitstr. (werden die vorhandenen Bordsteinradwege ersetzt)?	?::projected -3040,16246 -3050,16429 -3046,16548 -3043,16601 -3031,16807 -3023,16925 -3018,16974 -3017,16984 -3009,17090
 #
 #: by: http://www.berlin.de/ba-pankow/presse/archiv/20081128.1050.115446.html
 #: next_check: 2010-05-01
@@ -151,6 +158,10 @@ Fahrradstraße in der Lauenburger Str.	?::projected 5883,4985 5909,5072 5939,5169
 #: section ignorieren vvv
 #: section Straßen in Bau und Planung vvv
 # 
+An der Barthschen Promenade: vielleicht wird die Straße in Zukunft sich hier befinden	?::projected 8954,8914 8814,8917
+#: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20100804.1210.305109.html
+#: next_check: 2010-10-07
+Neubau eines Uferwegs an der HTW (Fuß- und Radweg)	?::inwork 19177,5560 19020,5532 18846,5548 18654,5717
 #: next_check: 2010-08-01
 Karl-Liebknecht-Str.: Radstreifen nach den Bauarbeiten?	?::inwork 10920,13139 11015,13264 11021,13271 11087,13359
 #: last_checked: 2010-06-28
@@ -346,6 +357,9 @@ Fußgängerbrücke über den Nordhafen in Planung	?::projected -2506,16315 -2510,163
 # Das heißt diese Strecken werden nicht bei einer erweiterten Suche aufgenommen
 # und dem CGI-Benutzer auch nicht präsentiert.
 # 
+#: XXX Eintrag in Berlin.coords.data würde fehlen
+Werner-Düttmann-Platz: existiert hier eine Straße diesen Namens?	? 11359,9422 11334,9357 11250,9386
+Landschaftspark Herzberge: gibt es hier vielleicht weitere Verbindungswege? Park einzeichnen?	? 17277,13224 17679,13233 17683,13073 17293,13058 17277,13224
 Bellevuepark: hier scheint ein Weg für Radfahrer freigegeben zu sein. Prüfen, Qualität und Beleuchtung?	? 22851,5321 22853,5566 22794,5583
 Kattunsteig: Verläuft der Kattunsteig hier? Nördlicher Abschnitt ist ein breiter Schotterweg - wie geht's im Süden weiter?	? 19762,4823 19759,4711 19771,4273
 #: by: MichaelM
@@ -1139,15 +1153,8 @@ Bahnhofstr. (Eichwalde): Qualität?	? 26102,-2822 25730,-3091 25567,-3189 25400,-
 August-Bebel-Allee (Eichwalde): Qualität?	? 24901,-3076 25085,-3477 25320,-4049 25368,-4182
 (Hüttenweg - Jagdschloß Grunewald): Wegführung? Qualität (fester Waldweg)?	? 869,6085 866,6328 880,6645
 (Waldweg Grunewald): Wegführung? Qualität (fester Waldweg)?	? 1512,6553 1364,6691
-#: section ignorieren vvv
-#: XXX was bedeutet "neu"??? vvv
-Ilmenauer Str.: neu	? 2551,8183 2552,8419
-Carl-Ludwig-Schleich-Promenade: neu	? 2315,8431 2316,8469 2316,8593 2317,8616
-Carl-Ludwig-Schleich-Promenade: neu	? 2279,8638 2317,8616 2353,8636
-(Zum Hubertussee): neu	? 2190,8903 2170,8841 2155,8793 2214,8752 2268,8746 2298,8712
-(Am Hubertussee): neu	? 2299,8675 2279,8674 2233,8670 2153,8693 1949,8788 1902,8814 1807,8893
-#: XXX ^^^
-#: section ^^^
+Carl-Ludwig-Schleich-Promenade: Qualität? Nachts beleuchtet? Ausgeschildert?	? 2315,8431 2316,8469 2316,8593 2317,8616
+Carl-Ludwig-Schleich-Promenade: Qualität? Nachts beleuchtet? Ausgeschildert?	? 2279,8638 2317,8616 2353,8636
 Heinrich-Zille-Weg: Qualität?	? 815,12653 1070,13309
 (Spandauer Damm - Fürstenbrunnerweg): Qualität?	? 1459,12475 1601,12908 1551,13377
 #: next_check: 2005-12-01
@@ -2199,7 +2206,7 @@ Türksteinweg: Qualität? Existiert ein direkter Zugang zum Heinrich-Laehr-Park?	?
 Türksteinweg: Qualität?	? 1321,1199 1274,1376 1198,1662
 Im Gartenheim: Qualität?	? 5707,4777 5690,4744 5659,4761 5677,4794
 Ahornweg (Wartenberg): Qualität?	? 18879,18954 18947,19168 19019,19396 19070,19572
-Hauptweg (Wartenberg): Qualität?	? 18737,18380 18761,18480 18923,18941 18997,19157 19066,19380 19125,19557
+Hauptweg (Wartenberg, Neu-Hohenschönhausen): Qualität?	? 18737,18380 18761,18480 18923,18941 18997,19157 19066,19380 19125,19557
 Lindenweg (Wartenberg): Qualität?	? 18983,18906 19061,19145 19129,19360 19186,19541
 Akazienweg (Wartenberg): Qualität?	? 19043,18876 19125,19130 19190,19340 19248,19525
 Genossenschaftsweg: Qualität?	? 17900,18972 17956,19139
@@ -2337,9 +2344,6 @@ Hanowsteig: Qualität?	? 11318,-1779 11341,-1755 11525,-1736 11509,-1602 11494,-1
 Hanowsteig - Tietjenstr.: Besteht für Radfahrer eine Verbindung? Qualität?	? 11525,-1736 11581,-1731 11657,-1721
 Carl-Steffeck-Str.: Qualität?	? 11494,-1468 11246,-1496
 Rennsteig: Qualität?	? 11666,-1209 11659,-1152 11600,-950 11598,-915
-#: XXX benötigt Eintrag in str_cont_ausnahme:
-#: XXX: note: zur Straße 9 hin kurzes Stück nur für Radfahrer und Fußgänger
-Krontalstr.: Qualität des südlichen Abschnitts zwischen Groß-Ziethener und Straße 9?	? 11761,-1199 11756,-1144 11696,-936 11695,-906 11680,-792 11666,-675 11654,-559 11645,-505 11644,-451
 Königsteinstr. (Lichtenrade): Qualität?	? 11259,-555 11264,-605 11278,-719 11291,-834 11305,-952 11310,-996 11495,-1128 11551,-1114
 Marie-Juchacz-Str. (Potsdam): Qualität?	? -7369,-5648 -7398,-5650 -7472,-5652 -7537,-5620 -7592,-5565 -7655,-5517 -7713,-5470 -7767,-5415
 Marie-Hannemann-Str. (Potsdam): Qualität?	? -7796,-5447 -7767,-5415 -7678,-5326 -7633,-5279 -7597,-5240 -7569,-5240
@@ -2533,7 +2537,11 @@ Froschkönigweg: Qualität? Für Autos gesperrt?	? 14179,18649 14171,18666 14064,18
 Schreckhornweg: Qualität? Für Autos gesperrt?	? 14030,19510 13951,19307 13924,19237 13909,19133 13903,18979 13902,18953 13899,18833 13892,18762 13898,18721 13916,18678 13945,18612 13950,18567
 Isegrimweg: Qualität? Für Autos gesperrt?	? 14522,18764 14481,18893 14458,18943 14431,18986 14391,19026 14256,19107 14126,19188 14063,19226 14008,19251
 Lindwurmweg: Qualität?	? 14658,18505 14836,18562 14927,18590
-Reineke-Fuchs-Weg: Qualität? Für Autos gesperrt?	? 14698,18967 14651,18950 14603,18934 14558,18920 14521,18907 14481,18893 14422,18874 14394,18876 14324,18916 14189,19000 14059,19079 13971,19125 13936,19132 13909,19133
+#: XXX missing in Berlin.coords.data:
+#: XXX laut Bild bei http://de.wikipedia.org/w/index.php?title=Datei:Stadtrandsiedlung_Malchow_Malchower_Aue_01.jpg&filetimestamp=20100413165438 könnte es grober Asphalt sein und zumindest die nördl. Zufahrt zum Parkplatz offen für Autos
+Malchower Aue: Qualität? Ausgeschildert? Für Autos gesperrt?	? 14858,18886 14830,19018 14830,19143
+#: XXX_osm: meint "Reinicke"
+Reineke-Fuchs-Weg: Qualität? Für Autos gesperrt? Heißt der Weg "Reinicke" oder "Reineke"?	? 14698,18967 14651,18950 14603,18934 14558,18920 14521,18907 14481,18893 14422,18874 14394,18876 14324,18916 14189,19000 14059,19079 13971,19125 13936,19132 13909,19133
 Ricardastr.: Qualität?	? 16459,19946 16471,19825
 Rotkäppchenweg: Qualität? Für Autos gesperrt?	? 14692,18823 14651,18950 14621,19025 14578,19089 14528,19140 14482,19174 14349,19255 14216,19338
 Schneewittchenweg: Qualität? Für Autos gesperrt?	? 14191,19294 14323,19215 14457,19132 14506,19092 14561,19024 14588,18978 14603,18934 14647,18808
@@ -3556,7 +3564,7 @@ Midgardstr.: Qualität?	? 12861,19072 12799,19242 12760,19344 12722,19452 12657,1
 Straße 1 (Heinersdorf): Qualität?	? 12894,19526 12788,19555
 Fafnerstr. (Heinersdorf): Qualität?	? 13040,19573 12909,19609 12705,19703
 Straße 42 (Heinersdorf): Qualität?	? 13233,18151 13212,18217
-Steffenstr.: Qualität? Ist die Straße für den öffentlichen Verkehr offen?	? 15580,14880 15536,14956 15425,15080
+Steffenstr.: Qualität? Ist die Straße für den öffentlichen Verkehr offen? Ist die Straße ausgeschildert?	? 15580,14880 15536,14956 15425,15080
 Straße 18 (Niederschönhausen): Qualität?	? 10802,20516 10705,20739
 Walhallastr.: Qualität?	? 8304,19475 8404,19559 8476,19603 8555,19648 8621,19683 8686,19725 8743,19755
 Straße 90: Qualität?	? 8573,19766 8642,19808
@@ -3569,7 +3577,7 @@ Wermuthweg: Kann die Johannisthaler Chausse in Höhe Wermuthweg überquert werden?
 #: XXX_osm: bei osm falsch geschrieben ("Nimitz")
 Anna-Nemitz-Weg: Qualität? Nachts beleuchtet?	? 13943,2284 13905,2381 13885,2377 13872,2497 13900,2513 13898,2582 13914,2601
 Tiefenseer Str.: Qualität?	? 7425,21219 7450,21018
-#: XXX nicht in Berlin.coords.data enthalten:
+#: XXX fehlt bei Berlin.coords.data, PLZ=13439:
 Gandenitzer Weg: Qualität? Nachts beleuchtet?	? 7469,21223 7448,21504 7549,21524 7545,21667 7529,21693
 Steinkirchener Str.: Qualität?	? 6300,21208 6081,21182 5993,21172 5898,21161 5807,21150
 Sagritzer Weg: Qualität?	? 6167,21319 6074,21304 5980,21289 5888,21279
@@ -3729,7 +3737,6 @@ Waldpromenade: Qualität? Nachts beleuchtet? Für Autos offen?	? 24388,7698 24229,
 Scharzhofberger Str.: Qualität?	? 6746,3587 6827,3676
 Alsheimer Str.: Qualität?	? 6618,3817 6717,3924
 Beselerstr.: Qualität?	? 7034,2586 6960,2406
-Frankentaler Ufer: Qualität? Für Radfahrer befahrbar? Nachts beleuchtet?	? 7159,4023 7132,4028 7096,4051 6890,4124 6859,4085
 Goldaper Str.: Qualität?	? 6134,1929 6195,1969 6211,2010 6278,2057
 Hirzbacher Weg: Qualität?	? 6377,1671 6378,1700 6322,1807
 Retzowstr.: Qualität?	? 6337,2271 6446,2111 6477,2058
@@ -5015,3 +5022,5 @@ Börnicke - Staffelde: existieren Radwege zwischen Börnicke und Staffelde?	? -217
 Sotzmannstr.: Qualität? Ist das tatsächlich die Sotzmannstr.?	? -4629,12835 -4558,12992 -4610,13010 -4601,13112 -4634,13173
 #: XXX mit Sicherheit: green2, NL
 Königsheide - Johannisthaler Chaussee: Qualität?	? 16670,5473 16569,5380 16497,5323 16320,5187 16279,5170
+#: XXX fehlt bei Berlin.coords.data:
+Märkische Zeile: gibt es tatsächlich einen Weg diesen Namens hier? Für Radfahrer relevant?	? 6855,21481 6874,21183

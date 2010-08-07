@@ -744,16 +744,7 @@ userdel	q4::inwork 10422,12395 10476,12432
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_013617',
-         'until' => 1281016800,
-         'text' => 'Hobrechtsfelder Chaussee - Bucher Str.: Brückenneubau, Straße vollständig gesperrt, 14.07.2009 09:00 Uhr bis 05.08.2010 16:00 Uhr',
-         'from' => 1247468400,
-         'id' => 1747,
-         'data' => 'userdel	2::inwork 14314,25193 14219,25013 14029,24753
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1844,21 +1835,43 @@ userdel	q4::inwork; 10614,19907 10742,19632
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1284069600,
-         'text' => 'Einbahnstraßenregelung in der Wasserwerkstr., Richtung Pionierstraße offen, vom 09.08.2010 bis zum 09.09.2010 ',
-         'from' => 1281218400,
-         'id' => 2112,
-         'data' => 'userdel	q4::inwork; -5806,16403 -5830,16356 -5849,16199 -5875,15994 -5911,15877
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1282341600,
          'text' => 'Fahrbahnsanierung am Dahlemer Weg vom 02.08.2010 bis 20.08.2010, zwischen der McNair-Promenade und der Seehofstraße in Richtung Norden gesperrt ',
          'from' => 1280613600,
          'id' => 2113,
          'data' => 'userdel	q4::inwork; 1785,1338 1825,1534 1848,1647 1854,1677 1873,1772 1945,2127
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_016121',
+         'until' => 1285941600,
+         'text' => 'Lehrter Str. (Moabit): Baustelle, Straße vollständig gesperrt in beiden Richtungen zwischen Invalidenstr. und Seydlitzstr., 02.08.2010 06:00 Uhr bis 01.10.2010 16:00 Uhr ',
+         'from' => 1280635200,
+         'id' => 2114,
+         'data' => 'userdel	q4::inwork 7764,13236 7643,13461 7660,13506 7655,13539
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => '106200364',
+         'until' => 1282946400,
+         'text' => 'Plessa: K6208: Gleisbauarbeiten und Umbau des BÜ, Straßen- und Schwarzdeckeneinbau OL Kahla, Bahnübergang, 03.08.2010 bis 27.08.2010 ',
+         'from' => 1280985970,
+         'id' => 2115,
+         'data' => 'userdel	2::inwork 23805,-103848 24165,-103467 25237,-102574
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20100804.0935.305087.html',
+         'until' => 1282427999,
+         'text' => 'In der Zeit vom 11.08. bis voraussichtlich 21.08. wird die Dessauer Straße zwischen Köthener Straße und Schwarzwurzelstraße auf Grund von Fahrbahnsanierungsarbeiten voll gesperrt. ',
+         'from' => 1281391200,
+         'id' => 2116,
+         'data' => 'userdel	q4::inwork 20576,17994 20460,18030 20351,18066 20256,18096 20232,18123 20186,18238
 ',
          'type' => 'handicap'
        }
