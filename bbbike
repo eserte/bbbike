@@ -743,7 +743,9 @@ if ($devel_host) {
 # Hook init
 foreach (qw(before_plot after_plot new_route del_route after_resize
 	    after_new_layer after_delete_layer
-	    after_change_visibility after_change_stacking)) {
+	    after_change_visibility after_change_stacking
+	    delete_background_images
+	  )) {
     new Hooks $_;
 }
 

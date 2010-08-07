@@ -41,6 +41,10 @@ sub register {
 	  callback_3 => sub { show_flickr_menu(@_) },
 	  ($flickr_bbbike_icon ? (icon => $flickr_bbbike_icon) : ()),
 	};
+    Hooks::get_hooks("delete_background_images")->add
+	    (sub {
+		 delete_flickr_images();
+	     }, __PACKAGE__);
 }
 
 sub _create_icon {
@@ -80,7 +84,7 @@ sub show_mini_images {
 	($minx,$maxx) = ($maxx,$minx) if $minx > $maxx;
 	($miny,$maxy) = ($maxy,$miny) if $miny > $maxy;
 
-	delete_flickr_images();
+	Hooks::get_hooks("delete_background_images")->execute;
 	for (@photos) {
 	    eval { $_->delete }; warn $@ if $@;
 	}
@@ -131,8 +135,8 @@ sub show_flickr_menu {
     if (!Tk::Exists($w->{"FlickrMenu"})) {
 	my $flickr_menu = $w->Menu(-title => "Flickr",
 				   -tearoff => 0);
-	$flickr_menu->command(-label => "Flickr-Bilder löschen",
-			      -command => sub { delete_flickr_images() },
+	$flickr_menu->command(-label => "Flickr- und andere Bilder löschen",
+			      -command => sub { Hooks::get_hooks("delete_background_images")->execute },
 			     );
 	$w->{"FlickrMenu"} = $flickr_menu;
     }

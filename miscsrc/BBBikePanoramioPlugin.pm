@@ -39,6 +39,10 @@ sub register {
 	  callback_3 => sub { show_panoramio_menu(@_) },
 	  ($panoramio_bbbike_icon ? (icon => $panoramio_bbbike_icon) : ()),
 	};
+    Hooks::get_hooks("delete_background_images")->add
+	    (sub {
+		 delete_panoramio_images();
+	     }, __PACKAGE__);
 }
 
 sub _create_icon {
@@ -85,7 +89,7 @@ sub show_mini_images {
 	($minx,$maxx) = ($maxx,$minx) if $minx > $maxx;
 	($miny,$maxy) = ($maxy,$miny) if $miny > $maxy;
 
-	$main::c->delete("panoramio");
+	Hooks::get_hooks("delete_background_images")->execute;
 	for (@photos) {
 	    eval { $_->delete }; warn $@ if $@;
 	}
@@ -158,8 +162,8 @@ sub show_panoramio_menu {
     if (!Tk::Exists($w->{"PanoramioMenu"})) {
 	my $panoramio_menu = $w->Menu(-title => "Panoramio",
 				      -tearoff => 0);
-	$panoramio_menu->command(-label => "Panoramio-Bilder löschen",
-				 -command => sub { delete_panoramio_images() },
+	$panoramio_menu->command(-label => "Panoramio- und andere Bilder löschen",
+				 -command => sub { Hooks::get_hooks("delete_background_images")->execute },
 				);
 	$w->{"PanoramioMenu"} = $panoramio_menu;
     }
