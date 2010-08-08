@@ -357,10 +357,11 @@ Fußgängerbrücke über den Nordhafen in Planung	?::projected -2506,16315 -2510,163
 # Das heißt diese Strecken werden nicht bei einer erweiterten Suche aufgenommen
 # und dem CGI-Benutzer auch nicht präsentiert.
 # 
+#: XXX_indoor
+Körnerpark oder Körnerplatz?	? 23421,8251 23318,8333 23378,8416 23483,8342
 #: XXX Eintrag in Berlin.coords.data würde fehlen
 Werner-Düttmann-Platz: existiert hier eine Straße diesen Namens?	? 11359,9422 11334,9357 11250,9386
 Landschaftspark Herzberge: gibt es hier vielleicht weitere Verbindungswege? Park einzeichnen?	? 17277,13224 17679,13233 17683,13073 17293,13058 17277,13224
-Bellevuepark: hier scheint ein Weg für Radfahrer freigegeben zu sein. Prüfen, Qualität und Beleuchtung?	? 22851,5321 22853,5566 22794,5583
 Kattunsteig: Verläuft der Kattunsteig hier? Nördlicher Abschnitt ist ein breiter Schotterweg - wie geht's im Süden weiter?	? 19762,4823 19759,4711 19771,4273
 #: by: MichaelM
 #: XXX_prog:
@@ -560,10 +561,6 @@ Place Molière: guter Beton, Q0, enge Straße, q1	? 4334,21540 4367,21525 4392,214
 Ederkopfweg: guter Asphalt, Q0	? -4729,14958 -4761,14961 -4807,14990 -4879,15008
 #: by: Sara Köhler
 Eiserfelder Ring: guter Beton, Q0	? -4720,15087 -4856,15089 -4881,15111 -4883,15175 -4862,15193 -4713,15191
-#: by: H. Schmidt:
-#: confirmed_by: Patty (kuki...)
-#: confirmed_by: Josefine Grünhagen
-Heribaldstr.: Asphalt, Q0	? 25029,10462 25022,10715
 #: by: Marco (...ma11): vvv
 Weißdornweg (Potsdam): guter Asphalt, Q0	? -17503,27 -17445,49 -17404,45 -17398,61 -17389,94 -17341,133 -17220,212
 Weißdornweg (Potsdam): guter Asphalt, Q0	? -17514,45 -17497,80 -17462,89 -17441,73 -17398,61
@@ -1446,7 +1443,6 @@ Selchow - Kiekebusch: Qualität zwischen Kreuzung Diepensee-Rotberg und Kreuzung 
 Prieroser Str.: Qualität?	? 28540,-19744 28842,-19704 29515,-19702
 Neubrücker Str.: Qualität?	? 28231,-19792 28336,-19948
 Neubrücker Str.: Qualität?	? 28363,-19964 28514,-20071
-Bellevuepark: ist ein Weg für Radfahrer offiziell freigegeben?	? 22798,5731 22794,5583
 #: by: (URL existiert nicht mehr) http://www.berlin.de/ba-steglitz-zehlendorf/presse/archiv/20060505.1315.39412.html (Freigabe Radfahrer)
 Jochen-Klepper-Weg: Qualität (laut ADFC-Karte teilweise gut geeignet)?	? -3030,2266 -2784,2358 -2690,2385 -2372,2477
 #: XXX zumindest im Norden "wassergebundene Decke" und NN
@@ -1829,7 +1825,8 @@ Deutschtaler Str.: Qualität?	? 17344,1060 17492,843 17640,626 17811,374 17854,31
 Großziethen: wie weit in Richtung Süden gehen die Radwege?	? 13124,216 13165,-34 13176,-161 13225,-681 13230,-712 13309,-1268
 #: XXX etwas widersprüchlich: Snoopsoul schreibt "schlechtes Kopfsteinpflaster", die ADFC-Karte vergibt für den nördlichen Abschnitt "gut befahrbar", außerdem werden Teilstücke vom Bus befahren
 #: note: Harry Marschke meint: "Guter Zustand, weitgehend neu asphaltiert. Tempo-30-Zone, teilweise keine ausgebauten Bürgersteige (Einfamilienhaus-Bebauung mit Siedlungscharakter). Lediglich der zur B1 gelegene Teil ist in etwas schlechterem Zustand (teilweise DDR-Beton, "Schleichverkehr"). "
-Pilgramer Str.: Asphalt/Beton. Welcher Abschnitt ist betoniert, welcher asphaltiert?	? 25144,11215 25149,10695 25150,10555 25148,10483 25135,10449 25112,10415 25048,10317 24984,10204 24923,10097 24854,9975 24793,9860 24713,9715 24617,9545 24566,9456 24519,9349 24471,9241 24412,9103 24358,8976 24294,8827 24239,8701 24217,8521 24195,8348 24167,8196 24137,8038 24112,7907 24087,7776 24074,7695
+Pilgramer Str.: Asphalt/Beton. Welcher Abschnitt ist betoniert, welcher asphaltiert, welcher gepflastert?	? 25048,10317 24984,10204 24923,10097 24854,9975 24793,9860 24713,9715
+Pilgramer Str.: Qualität zwischen Ruhlsdorfer Str. und Kastanienallee?	? 24167,8196 24137,8038
 #: XXX laut Jan Qualität gut, Verbundsteinpflaster, Radweg vorhanden, einige Fußgänger. Leider hat er keine E-Mail-Adresse hinterlassen, so dass ich nicht nachfragen kann, ob es sich um einen Zweirichtungsradweg handelt.
 #: XXX laut http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20091002.1235.141155.html asphaltiert (auf jeden Fall ab November 2009)
 Coloniaallee: Qualität? Existiert hier ein Radweg?	? 20051,-344 20052,-239 20046,-160 20036,-122 20010,-71 19972,-19
@@ -2287,6 +2284,7 @@ Grollstr.: Qualität?	? 16522,26599 16415,26481
 Schmetstorpweg: Qualität?	? 16547,26309 16463,26389
 Ernst-Ludwig-Heim-Str.: Qualität?	? 16682,24758 16613,24643 16487,24721
 Theodor-Brugsch-Str.: Qualität?	? 16602,25126 16633,25116 16801,25057 16960,24955
+#: XXX Eintrag von anonymous: guter Asphalt, Radwege (aber ich sehe keine Radwege im Luftbild)
 Georg-Benjamin-Str.: Qualität?	? 16633,25116 16589,24977 16736,24912 16868,24858 16960,24955 17031,25008
 Sudauer Str.: Qualität?	? 17259,26148 17215,26263 17202,26324 17229,26400 17310,26452 17418,26518
 Nadrauer Str.: Qualität?	? 17215,26263 17367,26349
@@ -2864,10 +2862,8 @@ Jägerstr. (Kaulsdorf): Qualität zwischen Tieflandstr. und Waldstr?	? 22190,9043 
 #: XXX ^^^
 Birkenstr. (Kaulsdorf): Qualität südlich der Seebadstr.?	? 22242,8536 22262,8664 22268,8718
 Eichenstr. (Mahlsdorf): Qualität südlich der Ulmenstr.?	? 22394,8734 22431,8912 22494,9036
-#: XXX anonymous meint "mäßiges Kopfsteinpflaster", aber zumindest der nördliche Teil ist betoniert
-Seebadstr. (Kaulsdorf, Mahlsdorf): Qualität südwestlich der Bergedorfer Str.?	? 22117,8801 22268,8718 22310,8700 22394,8734 22532,8807 22700,8867 22786,8940 22886,9017
-Werbellinstr. (Mahlsdorf): Qualität östlich der Weitzgründer Str.?	? 23541,9091 23704,9019 23946,8909
-Friedenstr. (Mahlsdorf): Qualität östlich der Weitzgründer Str.?	? 23596,9220 23755,9150 24001,9037
+#: XXX anonymous meint "mäßiges Kopfsteinpflaster", aber zumindest der nördliche Teil ist betoniert, dann asphaltiert
+Seebadstr. (Kaulsdorf, Mahlsdorf): Qualität südwestlich der Ulmenstr.?	? 22117,8801 22268,8718 22310,8700 22394,8734 22532,8807 22700,8867
 Gielsdorfer Str.: Qualität?	? 24019,11264 24018,11320 24034,11363 24094,11521 24063,11535 24071,11573 24089,11665 24121,11795 24132,11859 24137,11930
 Hornsteiner Weg: Qualität westlich des Finkenwalder Wegs?	? 23474,11391 23389,11390
 Püttlinger Str.: südlich des Frankenholzer Wegs: Qualität? Für Autos gesperrt?	? 21275,11942 21273,11882
@@ -2961,7 +2957,6 @@ Kaulsdorfer Gärten: Qualität?	? 21859,9822 21893,9902
 Norastr.: Qualität?	? 22140,9830 22231,9817 22307,9762
 Lenbachstr. (Kaulsdorf): Qualität des südlichen Abschnitts?	? 21679,10186 21718,10013
 Eichhornstr. (Kaulsdorf): Qualität?	? 22458,9532 22501,9369
-Fichtenstr.: Qualität?	? 22212,9508 22200,9430 22154,9237
 Tuchmacherweg: Qualität?	? 8473,18979 8616,19065
 Pankower Str.: Qualität? Ist die Durchfahrt zur Pasewalker Str. für Autos gesperrt?	? 11627,19907 11814,19991 11839,19982 11910,19968 11931,19965
 Grünlandweg: Qualität?	? 4026,20428 3956,20457 3887,20526 3861,20575
@@ -3044,13 +3039,10 @@ Anton-Webern-Weg: Qualität?	? 8131,20287 8282,20329
 Strawinskystr.: Qualität?	? 8069,20408 8242,20434 8359,20449
 Seegerstr.: Qualität?	? 7640,20304 7711,20463
 Andanteweg: Qualität?	? 8293,20303 8400,20339
-Wickenweg: Qualität?	? 24056,9798 24043,9769 24019,9722 24002,9691 23932,9564 23887,9463 23838,9351 23798,9263 23755,9150 23704,9019 23643,8868
 #: XXX anonymous meint Q2, aber ohne weitere Angaben, und q4 weil Privatstraße
 Straße 574 (Rudow): Qualität?	? 18023,833 18203,586 18306,655 18123,906
 Exiner Str.: Qualität?	? 17415,494 17274,705 17134,908
 Rahnsdorfer Str. (???): Qualität? In welchem Ortsteil befindet sich dieser Abschnitt?	? 25781,9966 26321,9868
-Karlstr. (Mahlsdorf): Qualität?	? 24826,10597 24916,10539 25029,10462 25112,10415 25257,10326
-Iglauer Str.: Qualität?	? 25148,10483 25317,10457 25351,10452
 Schneewittchenstr. (Altglienicke): Qualität?	? 19460,1430 19369,1515 19207,1592 19132,1628
 Drebkauer Str.: Qualität?	? 6330,20742 6117,20738
 Lieberoser Str.: Qualität?	? 6366,20902 5929,20882
@@ -3450,58 +3442,11 @@ Am Moosbruch: Qualität?	? 21645,9085 21492,9131
 Seebadstr./Scharnauer Str.: Qualität? Straßenname westlich der Waldstr.?	? 22117,8801 22036,8834
 Scharnauer Str.: Qualität?	? 21996,8716 22036,8834 21924,8886 21780,8892 21694,8886 21645,8861 21540,8815
 Ahornstr. (Kaulsdorf): Qualität?	? 22262,8664 22137,8651 22073,8645
-Weidenstr.: Qualität?	? 22941,8834 22786,8940 22644,9044
-Arndtstr. (Mahlsdorf, Kaulsdorf): Qualität?	? 22871,8582 22919,8647 23007,8788 23082,8892 23176,9037
-Buchenstr.: Qualität?	? 22514,8848 22586,8961 22644,9044 22699,9137
 #: XXX_osm: bei osm ohne Namen und zu kurz
 Güstrower Str.: Qualität?	? 23921,13465 24078,13431 24117,13423 24345,13366
-Balsaminenweg: Qualität?	? 23837,10279 23732,9850 23714,9776
-Georginenweg: Qualität?	? 23950,10250 23891,10027 23840,9819 23823,9759
-Lavendelweg: Qualität?	? 24058,10222 23999,10004 23945,9790 23931,9741
-Butterblumensteig: Qualität?	? 23603,9883 23732,9850 23840,9819 23945,9790 24043,9769
-#: XXX fehlt in Berlin.coords.data ZIP=12623
-Korianderweg: Qualität?	? 23574,9782 23714,9776 23823,9759 23931,9741 24019,9722
-Eichenhofweg: Qualität?	? 24056,9798 24299,9746
-Rosa-Valetti-Str.: Qualität?	? 24405,10383 24618,10601 24639,10622 24662,10632
-Lutherstr. (Mahlsdorf): Qualität?	? 24420,10029 24718,9966
-Müllerstr. (Mahlsdorf): Qualität?	? 24501,10222 24792,10162 24923,10097 25200,9939 25385,9842 25543,9755
-Spitzwegstr.: Qualität?	? 25237,9595 25095,9627
-Jahnstr. (Mahlsdorf): Qualität?	? 24617,9545 24470,9628
-Levensauer Str.: Qualität?	? 24519,9349 24360,9411 24190,9484
-Bruchsaler Str.: Qualität?	? 24205,9520 23932,9564 23584,9629
 #: XXX_osm bei osm als Bruchsaler Str. bezeichnet
 Karlsruher Str. (Mahlsdorf): Qualität?	? 23582,9591 23584,9629 23585,9672 23528,9680
-#: XXX Eintrag in str_cont_ausnahme fehlt:
-Weitzgründer Str.: Qualität?	? 23717,9509 23673,9414
-Weitzgründer Str.: Qualität?	? 23643,9330 23596,9220 23541,9091 23469,8929
-Freiburger Str.: Qualität?	? 23550,9369 23583,9448 23838,9351 23918,9312 24085,9237
-Durlacher Str. (Mahlsdorf): Qualität?	? 23972,9439 23918,9312
-Klopstockstr. (Mahlsdorf): Qualität?	? 23415,8948 23291,8758 23220,8648 23118,8495 23086,8449
-Lessingstr. (Mahlsdorf): Qualität?	? 23532,8907 23392,8694 23317,8582 23210,8425 23180,8379
-Herderstr. (Mahlsdorf): Qualität?	? 23633,8872 23569,8775 23482,8636
-Herweghstr. (Mahlsdorf): Qualität?	? 23569,8775 23719,8690 23867,8606
-Seestr. (Mahlsdorf): Qualität?	? 23382,8413 23479,8344 23590,8260 23684,8194 23833,8095
-Attinghausenweg: Qualität?	? 23736,8464 23651,8353 23590,8260 23525,8174 23481,8119
-Wildenbruchstr. (Mahlsdorf): Qualität?	? 23684,8194 23621,8095 23594,8053
-Ullrichstr.: Qualität?	? 24108,8364 24132,8529
-Rotdornallee: Qualität?	? 23873,8698 24089,8674
-Ebereschenallee (Mahlsdorf): Qualität?	? 23866,8566 24071,8539 24132,8529 24217,8521 24367,8497
-Willestr.: Qualität?	? 23803,7906 23961,7877
-Kiekemaler Str.: Qualität?	? 23949,7805 24087,7776 24238,7751
-Vierradener Weg: Qualität?	? 23972,7937 24059,7918 24112,7907
-Donathstr.: Qualität?	? 24081,8048 24059,7918
-Ravensteinstr.: Qualität?	? 24389,7793 24255,7821
-Erich-Baron-Weg: Qualität?	? 24229,7700 24238,7751 24255,7821 24288,8008 24313,8170 24342,8321 24367,8497 24367,8632 24239,8701 24102,8772 23927,8864
-#: XXX: Teile schon in BRB
-Rüsternallee: Qualität?	? 23982,8994 24156,8904 24294,8827 24405,8771 24512,8759 24558,8730 24635,8714 24751,8637 24813,8594 24857,8567 24905,8533
-Heidestr. (Mahlsdorf): Qualität?	? 24484,8507 24604,8485 24729,8470
-Bütower Str.: Qualität?	? 24690,8796 24632,8836 24525,8910 24358,8976 24207,9035 24032,9111
-Bausdorfstr. (Mahlsdorf): Qualität?	? 24085,9237 24261,9168 24412,9103
-Schlüterstr. (Mahlsdorf): Qualität?	? 24635,7990 24607,7843 24603,7820
-#: XXX: bei osm fängt die Fortsetzung Karl-Marx-Str. schon in Berlin an. Richtig?
-Eberleinstr.: Qualität?	? 24767,7776 24800,7950 24812,7999
-Hochwieser Str.: Qualität?	? 25196,10214 25257,10326 25272,10349 25317,10457
-Banater Str.: Qualität?	? 25272,10349 25361,10321
+Rüsternallee (Waldesruh): Qualität? Heißt dieser Abschnitt noch immer Rüsternallee oder bereits Schoppenhauerstr.?	? 24813,8594 24857,8567 24905,8533
 #: XXX fehlt in Berlin.coords.data
 Franz-Ehrlich-Str.: Qualität?	? 19732,3340 19767,3307 19890,3186
 #: XXX fehlt in Berlin.coords.data
@@ -3732,7 +3677,7 @@ Schrebergasse: Qualität? Für Radfahrer befahrbar? Nachts beleuchtet?	? 23850,449
 Ambacher Str.: Qualität?	? 21944,7122 21967,7048
 Spinnpfad: Qualität?	? 21202,4985 21207,5056
 Friedenstr. (Köpenick): Qualität?	? 21993,6133 22033,6144 22141,6143
-Waldpromenade: Qualität? Nachts beleuchtet? Für Autos offen?	? 24388,7698 24229,7700 24074,7695 24028,7697 23939,7761 23792,7861 23481,8119 23385,8217 22871,8582
+# XXX del nur ein sehr enger Weg vorhanden --- lohnt nicht --- Waldpromenade: Qualität? Nachts beleuchtet? Für Autos offen?	? 23481,8119 23385,8217 22865,8588
 #: XXX_osm: bei osm evtl. falsch geschrieben
 Scharzhofberger Str.: Qualität?	? 6746,3587 6827,3676
 Alsheimer Str.: Qualität?	? 6618,3817 6717,3924
@@ -3879,30 +3824,17 @@ Völklinger Str.: Qualität?	? 21814,14407 21940,14413 22003,14400
 Kleiner-Heufalter-Weg: Wo genau ist die Straße? Qualität?	? 21486,10642 21508,10690
 (Blumberger Damm - Wuhle): Qualität? Für Autos gesperrt? Nachts beleuchtet?	? 21450,14576 21822,14480 21948,14501 22003,14510 22054,14480 22172,14287 22415,14151
 Wuhleweg: Qualität?	? 22237,11215 22021,11157
-Am Barnim: Qualität?	? 24229,10843 24113,10462
-Großmannstr.: Qualität?	? 24405,10383 24369,10393 24265,10421 24113,10462
-#: XXX_osm: bei osm ohne Straßennamen
-Kethelitzweg: Qualität?	? 24363,10818 24335,10729 24271,10528 24265,10421
-#: XXX: str_cont_ausnahme
-#: XXX anonymous meint "Q2, Asphalt", aber welcher von den beiden Abschnitten?
-#: XXX_osm: bei osm ohne Straßennamen
-Parlerstr.: Qualität? Kann man als Radfahrer direkt zur Elsenstr. fahren?	? 24369,10393 24512,10652 24548,10695
-Parlerstr.: Qualität?	? 24194,10050 24261,10175 24354,10335 24405,10383
-#: XXX_osm: bei osm ohne Straßennamen
-Margaretenstr. (Mahlsdorf): Qualität?	? 24618,10601 24512,10652 24335,10729 24293,10744
 #: XXX_osm: fehlt bei osm, stattdessen führt hier der Gartenweg entlang (zu weit!)
 Birkensteinweg: Qualität?	? 26983,13220 27007,13147
 #: XXX_osm: bei osm ohne Straßennamen
 #: XXX laut tvojpl. etc. gehts weiter Richtung Süden bis Ravensteiner Promenade, aber nicht erkennbar
-Erpetaler Weg: Qualität?	? 24593,7455 24637,7438 24620,7290
+Erpetaler Weg: Qualität?	? 24637,7438 24620,7290
 #: XXX_osm: fehlt bei osm
 Frans-Hals-Str.: Qualität?	? 25663,12927 25761,12852
 Albrecht-Dürer-Str.: Qualität östlich der Lemkestr.?	? 25701,12975 25800,12900 25843,12865
 Ginsterweg: Qualität?	? 26175,14088 26167,14221
 Kirschstr.: Qualität? Heißt die Straße tatsächlich so? Oder noch "Am Schlehdorn"?	? 25924,14072 25934,14238
 Fichtengrund: Qualität? Heißt die Straße tatsächlich so? Oder noch "An den Siedlergärten"?	? 25778,14058 25772,14191
-Gustavstr. (Mahlsdorf): Qualität? Wo liegt die Straße genau?	? 24928,10731 25022,10715
-Straße 48 (Mahlsdorf): Qualität?	? 25149,10695 25089,10697
 Götzkeweg: Qualität?	? 27319,13589 27414,13508
 Kötteritzweg: Qualität?	? 27063,13479 27141,13394 27190,13327 27217,13287
 Simrockplatz: Qualität?	? 24606,12856 24669,12966
@@ -5024,3 +4956,7 @@ Sotzmannstr.: Qualität? Ist das tatsächlich die Sotzmannstr.?	? -4629,12835 -455
 Königsheide - Johannisthaler Chaussee: Qualität?	? 16670,5473 16569,5380 16497,5323 16320,5187 16279,5170
 #: XXX fehlt bei Berlin.coords.data:
 Märkische Zeile: gibt es tatsächlich einen Weg diesen Namens hier? Für Radfahrer relevant?	? 6855,21481 6874,21183
+Erich-Baron-Weg: ist die Straße zwischen Kastanienallee und Akazienallee tatsächlich schlecht gepflastert?	? 24288,8008 24313,8170 24342,8321
+Pilsener Str.: wo genau fängt die Asphaltierung in der Pilsener an?	? 24370,9542 24404,9527
+Langenbeckstr.: ist die gesamte Straße asphaltiert?	? 24793,9860 25020,9728
+Hultschiner Damm: existieren zwischen Elsenstr. und Mahlsdorf in beiden Richtungen Radwege?	? 24740,10992 24654,11265

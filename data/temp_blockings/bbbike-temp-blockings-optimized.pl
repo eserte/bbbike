@@ -1765,16 +1765,7 @@ userdel	q4::inwork; 10614,19907 10742,19632
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => '106401404',
-         'until' => 1281132000,
-         'text' => 'Wriezen: K6436: Verlegung OPAL Erdgasleitung Wriezen - Altgaul, 07.07.2010 bis 06.08.2010 ',
-         'from' => 1280677738,
-         'id' => 2105,
-         'data' => 'userdel	2::inwork 58456,36743 58206,37275
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => '105100738',
          'until' => 1288303200,

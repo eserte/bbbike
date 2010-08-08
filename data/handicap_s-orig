@@ -365,7 +365,8 @@ Langhoffstr.: enge Straße, Gegenverkehr	q1 19817,14454 19818,14064
 (Frankfurter Allee, Nebenfahrbahn zur Hauptfahrbahn): Bordsteinabsenkung, aber eng	q3 16535,11920 16512,11894
 Zum Schlachtensee: wegen der großen Steigung/Gefälles nur Schrittgeschwindigkeit möglich	q4 -1663,4218 -1592,4268
 (Treseburger Ufer - Rungiusstr.): nur für Fußgänger erlaubt	q4 12699,5909 13064,5953
-(Bellevuepark): nur für Fußgänger erlaubt	q4 22798,5731 22794,5583 22733,5569 22701,5428 22628,5340
+(Bellevuepark): einige Fußgänger	q1 22798,5731 22794,5583 22855,5554 22835,5452 22851,5321
+(Bellevuepark): nur für Fußgänger erlaubt	q4 22794,5583 22733,5569 22701,5428 22628,5340
 Walter-Nicklitz-Promenade: eng und kurvenreich, Fußgänger	q2 8290,15304 8321,15386 8290,15406 8310,15449
 Gropiusstr.: Uferweg sehr eng, Fußgänger	q2 8389,16214 8543,16364
 Pankeweg: Fußgänger	q1 8286,14635 8316,14667 8263,14838 8248,14900 8266,15134
@@ -693,6 +694,8 @@ Chiemseestr.: enge Straße	q1 22204,1496 22334,1553
 (Am Alten Fenn - Südostallee): teilweise recht eng, Anhänger sollten parallelen Weg benutzen	q2 17295,5387 17300,5423 17366,5551
 (Dämeritzstr. - Dämeritzsee): Radfahren verboten	q4 32512,2621 32558,2562
 (Lindenstr. - Bahnhofstr.): gemeinsamer Rad- und Gehweg	q1 22017,5159 22046,5305 22043,5346
+Waldpromenade: eng	q2 23792,7861 23710,7940 23668,7967
+Waldpromenade: eng	q2 23579,8037 23481,8119
 ######################### User Contributions #################################
 #: by: Michael Kiekbusch
 #: corrected_by: srt/policy (q4 -> q3-)

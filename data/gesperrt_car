@@ -321,12 +321,12 @@ Lintruper Str.	1 10307,922 10380,757
 Edison-/Siemensstr.	3 17992,6436 17962,6674 17860,6644 17766,6616
 Edisonstr.	1 17962,6674 17992,6436
 Brückenstr./Edisonstr.	1 17992,6436 17952,6246 17930,6175 17900,6072
-Müggelheimer Str.	3nocross::ignrte 22674,4309 22556,4386 22451,4441 22419,4457 22396,4464
+Müggelheimer Str.	3nocross::ignrte 22674,4309 22556,4386 22451,4441 22419,4457 22383,4470
 Karlstr. -> Müggelheimer Str.: Müggelheimer Str.	3::igndisp 22458,4134 22556,4386 22451,4441
 Spitzerstr. -> Müggelheimer Str.: Müggelheimer Str.	3::igndisp 22425,4370 22451,4441 22419,4457
 Müggelheimer Str. -> Spitzerstr.: Müggelheimer Str.	3::igndisp 22556,4386 22451,4441 22425,4370
 Müggelheimer Str. -> Gartenstr.: Müggelheimer Str.	3::igndisp 22451,4441 22419,4457 22382,4361
-Gartenstr. -> Müggelheimer Str.: Müggelheimer Str.	3::igndisp 22382,4361 22419,4457 22396,4464
+Gartenstr. -> Müggelheimer Str.: Müggelheimer Str.	3::igndisp 22382,4361 22419,4457 22383,4470
 Gropiusstr.	1 8543,16364 8389,16214
 Osloer Str.	3nocross::ignrte 8503,16716 8721,16689 8759,16684 8939,16668
 Osloer Str. -> Pankeweg: Osloer Str.	3::igndisp 8503,16716 8721,16689 8804,16881
@@ -758,7 +758,7 @@ Schönhauser Allee: Abbiegen verboten	3 10703,13832 10779,13793 10832,13877
 Straßenbahntrasse	3nocross::ignrte 21796,4517 21775,4470 21773,4440
 Rudower Str. -> Grünauer Str.: Straßenbahntrasse	3::igndisp 21585,4459 21775,4470 21796,4517
 Grünauer Str. -> Rudower Str.: Straßenbahntrasse	3::igndisp 21773,4440 21775,4470 21585,4459
-Kietz	1 22273,4216 22292,4279 22312,4329 22334,4383 22339,4396 22364,4429 22396,4464
+Kietz	1 22273,4216 22292,4279 22312,4329 22334,4383 22339,4396 22364,4429 22383,4470
 Mittelstreifen	3nocross::ignrte 5705,13359 5857,13342 5956,13330
 Bremer Str. -> Turmstr.: Mittelstreifen	3::igndisp 5868,13441 5857,13342 5956,13330
 Turmstr. -> Bremer Str.: Mittelstreifen	3::igndisp 5705,13359 5857,13342 5868,13441
@@ -1029,3 +1029,5 @@ Gemeinschaftsstr.	1 20067,4054 20109,4087
 Malchiner Str.	1 13866,4481 13869,4626 13836,4759
 Kirchstr.: nur Linienverkehr erlaubt	2 22312,4593 22284,4653
 Behrenstr./Bebelplatz	1 9801,12245 9743,12239 9700,12234 9631,12227
+Theodorstr.: Poller	3 24928,10737 24921,10705 24916,10539
+Theodorstr.: Poller	3 24916,10539 24921,10705 24928,10737
