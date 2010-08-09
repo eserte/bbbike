@@ -101,7 +101,7 @@ if (!@browsers) {
 @browsers = map { "$_ BBBikeTest/1.0" } @browsers;
 
 my $outer_berlin_tests = 30;
-my $tests = 113 + $outer_berlin_tests;
+my $tests = 112 + $outer_berlin_tests;
 plan tests => $tests * @browsers;
 
 if ($WWW::Mechanize::VERSION == 1.32) {
@@ -694,12 +694,13 @@ EOF
 
 	$like_long_data->(qr/brandenburger tor.*potsdam/i, "Potsdam alternative selected");
 
-	$agent->submit;
-	my_tidy_check($agent);
-
 	# Search normally
 	$agent->submit;
 	my_tidy_check($agent);
+
+	## This is now the map:
+	#$agent->submit;
+	#my_tidy_check($agent);
 
 	# Back to crossings form again
 	$agent->back;
@@ -960,6 +961,9 @@ sub my_tidy_check {
     my($agent) = @_;
     if (!$agent->response->is_success) {
 	return fail("No success for URL <" . $agent->uri . ">, status line <" . $agent->response->status_line . ">");
+    }
+    if ($agent->response->content_type !~ m{html}) {
+	diag "WARN: the answer does not look like HTML, but is " . $agent->response->content_type . ". Expect failures!";
     }
     my $uri = $agent->uri;
     if (!$v) {
