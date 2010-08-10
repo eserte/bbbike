@@ -1570,10 +1570,10 @@ userdel	q4::inwork; 10614,19907 10742,19632
        {
          'source_id' => 'IM_014905',
          'until' => 1338472800,
-         'text' => 'Lahnstr. (Neukölln): Baustelle, Richtung Osten gesperrt (bis Mitte 2012) zwischen Niemetzstr. und Mittelbuschweg, 11.01.2010 12:12 Uhr bis 31.05.2012 16:00 Uhr ',
+         'text' => 'Lahnstr. (Neukölln): Baustelle mit prov. Ampel, für beide Richtungen nur ein Fahrstreifen abwechselnd frei, zwischen Mierstr. und Mittelbuschweg, 11.01.2010 12:12 Uhr bis 31.05.2012 16:00 Uhr ',
          'from' => 1263121920,
          'id' => 2069,
-         'data' => 'userdel	q4::inwork; 13500,7018 13627,7047 13891,7107
+         'data' => 'userdel	q4::inwork 13500,7018 13627,7047 13891,7107
 ',
          'type' => 'handicap'
        },
@@ -1755,16 +1755,7 @@ userdel	q4::inwork; 10614,19907 10742,19632
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => '101100060',
-         'until' => 1281304800,
-         'text' => 'Nauen: L201: Brückeninstandsetzung Alt Brieselang - B273 Brücke Höhe AS Falkensee, 17.05.2010 09:00 Uhr bis 08.08.2010 ',
-         'from' => 1273993200,
-         'id' => 2104,
-         'data' => 'userdel	2::inwork -19282,23081 -17931,23152
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'source_id' => '105100738',
@@ -1865,6 +1856,16 @@ userdel	q4::inwork; 10614,19907 10742,19632
          'data' => 'userdel	q4::inwork 20576,17994 20460,18030 20351,18066 20256,18096 20232,18123 20186,18238
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => 'LS/W-SG33-P/10/410',
+         'until' => 1322694000,
+         'text' => 'Nuthetal: L77, L771: Bau OU Güterfelde, Berliner Straße / Stahnsdorfer Damm, 09.08.2010 08:00 Uhr bis 30.11.2011 ',
+         'from' => 1281247200,
+         'id' => 2117,
+         'data' => 'userdel	2::inwork -2815,-3574 -3368,-4430
+',
+         'type' => 'gesperrt'
        }
      
 );

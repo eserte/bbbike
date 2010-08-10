@@ -3689,7 +3689,10 @@ Freiburger Str.: Beton	Q0 23838,9351 23918,9312 24085,9237
 Bruchsaler Str.: Asphalt	Q0 24205,9520 23932,9564 23584,9629
 Eichenhofweg: schlechtes Kopfsteinpflaster	Q3 24056,9798 24299,9746
 Elsenstr. (Mahlsdorf): Beton	Q0 24639,10766 24363,10818 24229,10843
-Elsenstr. (Mahlsdorf): Asphalt	Q0 24229,10843 23792,10926
+#: note: verlängert bis "Am Niederfeld" von anonymous
+Elsenstr. (Mahlsdorf): Asphalt	Q0 24229,10843 23792,10926 23575,10972
+#: note: anonymous meinte nur "mäßig", aber ich habe es nicht so schlecht in Erinnerung
+Am Niederfeld: Beton	Q0- 22436,11054 22552,11029 22634,11024 22755,11013 22865,11007 22947,10998 23135,10990 23575,10972
 Kethelitzweg: unbefestigter Weg	Q2 24363,10818 24271,10528 24265,10421
 Am Barnim: unbefestigter Weg	Q2 24229,10843 24113,10462
 Großmannstr.: Asphalt	Q0 24405,10383 24369,10393 24265,10421 24113,10462
@@ -11467,6 +11470,11 @@ Frankentaler Ufer: alter, unebener Plattenweg; starke Vegetation	Q2 7159,4023 71
 #: confirmed_by: Josefine Grünhagen
 #: confirmed_by: srt
 Heribaldstr.: Asphalt	Q0 25029,10462 25022,10715
+#: by: cd.cj...
+Rühmkorffstr.: guter Beton	Q0 5697,1098 5620,1153 5573,1211
+#: by: Waltraud (...50hz...)
+#: note: 30er-Zone
+Schmidtstr.: guter Asphalt	Q0 23412,12562 23299,12600 23086,12565 22980,12545
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206

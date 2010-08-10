@@ -17608,11 +17608,11 @@ EOF
      },
      { from  => 1263121920, # 2010-01-10 12:12
        until => 1338472800, # 2012-05-31 16:00
-       text  => 'Lahnstr. (Neukölln): Baustelle, Richtung Osten gesperrt (bis Mitte 2012) zwischen Niemetzstr. und Mittelbuschweg, 11.01.2010 12:12 Uhr bis 31.05.2012 16:00 Uhr ',
+       text  => 'Lahnstr. (Neukölln): Baustelle mit prov. Ampel, für beide Richtungen nur ein Fahrstreifen abwechselnd frei, zwischen Mierstr. und Mittelbuschweg, 11.01.2010 12:12 Uhr bis 31.05.2012 16:00 Uhr ',
        type  => 'handicap',
        source_id => 'IM_014905',
        data  => <<EOF,
-userdel	q4::inwork; 13500,7018 13627,7047 13891,7107
+userdel	q4::inwork 13500,7018 13627,7047 13891,7107
 EOF
      },
      { from  => 1274300387, # 2010-05-19 22:19
@@ -18100,6 +18100,15 @@ EOF
        source_id => 'http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20100804.0935.305087.html',
        data  => <<EOF,
 userdel	q4::inwork 20576,17994 20460,18030 20351,18066 20256,18096 20232,18123 20186,18238
+EOF
+     },
+     { from  => 1281247200, # 2010-08-08 08:00
+       until => 1322694000, # 2011-12-01 00:00
+       text  => 'Nuthetal: L77, L771: Bau OU Güterfelde, Berliner Straße / Stahnsdorfer Damm, 09.08.2010 08:00 Uhr bis 30.11.2011 ',
+       type  => 'gesperrt',
+       source_id => 'LS/W-SG33-P/10/410',
+       data  => <<EOF,
+userdel	2::inwork -2815,-3574 -3368,-4430
 EOF
      },
     );
