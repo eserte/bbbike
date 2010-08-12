@@ -103,7 +103,6 @@ GetOptions("reload!" => \$do_reload,
 	  )
     or usage;
 
-activate_socksproxy($socksproxy) if $socksproxy;
 
 my $ua = eval {
     require LWP::UserAgent;
@@ -119,6 +118,7 @@ my $ua = eval {
 if ($@) {
     warn "Cannot load LWP::UserAgent, will fallback to wget or curl...\n";
 }
+activate_socksproxy($socksproxy) if $socksproxy;
 
 my @reload;
 if ($do_reload) {
