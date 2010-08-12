@@ -43,19 +43,6 @@ my $ltlnqr = qr{([-+]?\d+(?:\.\d+)?)};
 my $osm_download_file_qr       = qr{/download_$ltlnqr,$ltlnqr,$ltlnqr,$ltlnqr\.osm(?:\.gz|\.bz2)?$};
 my $short_osm_download_file_qr =           qr{$ltlnqr,$ltlnqr,$ltlnqr,$ltlnqr\.osm(?:\.gz|\.bz2)?$};
 
-my $ua = eval {
-    require LWP::UserAgent;
-    my $ua = LWP::UserAgent->new;
-    ## the download server seems to block this user agent -> use the LWP default
-    #$ua->agent("downloadosm/$VERSION LWP/$LWP::VERSION [part of BBBike]");
-    $ua->default_headers->push_header("Accept-Encoding" => "gzip");
-    $ua->timeout(TIMEOUT);
-    $ua;
-};
-if ($@) {
-    warn "Cannot load LWP::UserAgent, will fallback to wget or curl...\n";
-}
-
 my $debug = 1;
 my $do_reload;
 my $min_age;
@@ -66,6 +53,7 @@ my $ystep = 0.01;
 my $do_round;
 my $do_report;
 my $socksproxy;
+my $timeout = TIMEOUT;
 
 sub usage () {
     die <<EOF;
@@ -86,6 +74,7 @@ Second form: refresh existing osm files downloaded with this tool
 -report:   just report what URLs would be loaded to STDOUT
 
 -socksproxy=socks://host:port 	set socks proxy
+-timeout seconds 	set timeout, default $timeout
 
 With -reload:
 -minage days: download only files which are older than days days
@@ -110,10 +99,26 @@ GetOptions("reload!" => \$do_reload,
 	   "round!" => \$do_round,
 	   "report!" => \$do_report,
 	   "socksproxy=s" => \$socksproxy,
+	   "timeout=i" => \$timeout,
 	  )
     or usage;
 
 activate_socksproxy($socksproxy) if $socksproxy;
+
+my $ua = eval {
+    require LWP::UserAgent;
+    my $ua = LWP::UserAgent->new;
+    #$ua->agent("The Hare and the Hedgehog");
+
+    ## the download server seems to block this user agent -> use the LWP default
+    $ua->agent("downloadosm/$VERSION LWP/$LWP::VERSION [part of BBBike]");
+    $ua->default_headers->push_header("Accept-Encoding" => "gzip");
+    $ua->timeout($timeout);
+    $ua;
+};
+if ($@) {
+    warn "Cannot load LWP::UserAgent, will fallback to wget or curl...\n";
+}
 
 my @reload;
 if ($do_reload) {
@@ -322,11 +327,11 @@ sub download_osm_tile {
 	    my @cmd;
 	    if ($ua) {
 	    } elsif (is_in_path("wget")) {
-		@cmd = ('wget', '--timeout=' . TIMEOUT);
+		@cmd = ('wget', '--timeout=' . $timeout);
 		push @cmd, '--verbose' if $debug >= 2;
 		push @cmd, '-O', $dest, $url;
 	    } elsif (is_in_path("curl")) {
-		@cmd = ('curl', '-s', '-S', '-f', '-m', TIMEOUT); 
+		@cmd = ('curl', '-s', '-S', '-f', '-m', $timeout); 
 		push(@cmd, '--verbose') if $debug >= 2;
 		push(@cmd, ('-o', $dest, $url));
 	    } else {
