@@ -74,7 +74,7 @@ Second form: refresh existing osm files downloaded with this tool
 -report:   just report what URLs would be loaded to STDOUT
 
 -socksproxy=socks://host:port 	set socks proxy
--timeout seconds 	set timeout, default $timeout
+-timeout seconds 	set timeout, (default $timeout seconds)
 
 With -reload:
 -minage days: download only files which are older than days days
