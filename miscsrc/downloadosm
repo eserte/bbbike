@@ -34,7 +34,7 @@ sub save_pwd (&);
 
 our $VERSION = "0.02";
 
-use constant TIMEOUT => 600;
+use constant TIMEOUT => 60;
 
 use vars qw($OSM_API_URL);
 $OSM_API_URL = "http://www.openstreetmap.org/api/0.6";
