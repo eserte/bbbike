@@ -383,7 +383,6 @@ Ballonfahrerweg - Werner-Voß-Damm	3 7979,7525 7959,7609 8263,7611
 General-Pape-Str. - Werner-Voß-Damm	3 7921,7728 7959,7609 8263,7611
 Rubensstr. - Baumeisterstr.	3 6389,7196 6367,7356 6283,7231
 Mittelstreifen	3nocross::ignrte 13010,8422 13042,8395 13107,8343
-Sonnenallee -> Anzengruberstr.: Mittelstreifen	3::igndisp 13107,8343 13042,8395 12865,8346
 Anzengruberstr. -> Sonnenallee: Mittelstreifen	3::igndisp 12865,8346 13042,8395 13010,8422
 Max-Born-Str./Rudower Chaussee	3nocross::ignrte 19071,2746 19111,2777 19206,2848
 Rudower Chaussee -> Max-Born-Str.: Max-Born-Str./Rudower Chaussee	3::igndisp 19071,2746 19111,2777 19064,2867
@@ -1031,3 +1030,4 @@ Kirchstr.: nur Linienverkehr erlaubt	2 22312,4593 22284,4653
 Behrenstr./Bebelplatz	1 9801,12245 9743,12239 9700,12234 9631,12227
 Theodorstr.: Poller	3 24928,10737 24921,10705 24916,10539
 Theodorstr.: Poller	3 24916,10539 24921,10705 24928,10737
+Anzengruberstr.	1 13042,8395 12865,8346

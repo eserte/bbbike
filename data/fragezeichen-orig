@@ -2816,9 +2816,6 @@ Gertrudstr. (Hermsdorf): Qualität?	? 4566,24389 4565,24327 4614,24233 4737,24064
 #XXX del: Antwort ist ja: Ahornstr. (Zehlendorf): Kann die Potsdamer Str. in Höhe Ahornstr. überquert werden?	? 292,2905 255,3085
 Werderstr. (Zehlendorf): Qualität (Laut OpenStreetMap Kopfsteinpflaster)? Gibt es eine Durchfahrtmöglichkeit zur Potsdamer Str., und wenn ja, kann die Potsdamer Str. dort auch überquert werden?	? -431,3225 -309,3016
 Im Kinderland: Qualität?	? -458,4779 -547,4827
-Schlickweg: Qualität?	? -1683,3723 -1731,3833 -1734,3905
-#: XXX: zur Straße Am Schlachtensee hin für Autos gesperrt.
-Flachsweg (Zehlendorf): Qualität?	? -1856,3877 -1803,3757 -1785,3716 -1787,3690
 Reifträgerweg: Qualität?	? -2367,3006 -2529,3220 -2638,3281 -2763,3359
 #: XXX: laut OSM ein footway
 Strömannstr.: Ist die Strömannstr. zwischen Achillesstr. und Zum Kappgraben für Autofahrer gesperrt?	? 15899,23508 15963,23632
@@ -2952,7 +2949,6 @@ Ragazer Str.: Kann die Lindauer Allee in Höhe der Ragazer Str. überquert werden?
 Gamsbartweg: Qualität?	? 7599,18421 7551,18515
 Lampesteig: Qualität?	? 7534,18588 7520,18701
 Waldenburger Str.: Qualität des südlichen Abschnitts?	? 22307,9762 22387,9873
-Kaulsdorfer Gärten: Qualität?	? 21859,9822 21893,9902
 Norastr.: Qualität?	? 22140,9830 22231,9817 22307,9762
 Lenbachstr. (Kaulsdorf): Qualität des südlichen Abschnitts?	? 21679,10186 21718,10013
 Eichhornstr. (Kaulsdorf): Qualität?	? 22458,9532 22501,9369
@@ -3481,9 +3477,6 @@ Verlängerte Mozartstr.: Qualität?	? 21864,6928 21920,6835
 # XXX del: nein, keine Straße (auch aus Berlin.coords.data herausgenommen) --- Verlängerte Müggelbergallee: gibt es diese Straße? Qualität?	? 23107,1680 23231,1707
 # XXX del: nein, keine Straße, jedenfalls keine öffentliche: #: XXX Anderson ist die südlichere, Edmund die nördlichere Straße. Qualität: wassergebunden, Q2+	? 23064,2147 22872,2107
 #XXX ex nicht: Straße 236: Qualität? Ist der Straßenname richtig? Verlauf der Straße?	? 22356,3351 22346,3293
-#: XXX benötigt Eintrag in str_cont_ausnahme
-Warnitzer Str. (Neu-Hohenschönhausen): Qualität?	? 17894,17925 17956,17927 17994,17958 18010,17972 18109,17861 18179,17915 18214,17876
-Warnitzer Str. (Neu-Hohenschönhausen): Qualität?	? 17994,17958 17962,18010 18041,18073 18147,17961 18304,18071
 Haagstr.: Qualität? Gilt die Einbahnstraßenregelung auch für Radfahrer?	? -3030,2349 -2882,2373 -2920,2472
 Im Mittelbusch: Qualität?	? -2737,2222 -2837,2194 -2934,2186 -3031,2184 -3132,2168 -3156,2134 -3227,2048 -3249,2002
 Albiger Weg: Qualität?	? -2837,2194 -2841,2258 -2929,2255 -2934,2186
@@ -3542,7 +3535,7 @@ Rue du Dr Roux: Qualität?	? 3606,16453 3612,16526 3632,16565 3627,16645 3711,166
 Rue Dominique Larrey: Qualität?	? 3735,16651 3624,16445
 Breitachzeile: Qualität?	? 2735,20154 2803,20199
 Prendener Zeile: Qualität?	? 3155,20416 3132,20514
-Marzahnstr.: Qualität? Können Radfahrer direkt zur Oeserstr. fahren?	? 2762,20648 2793,20550 2810,20455 2825,20387
+Marzahnstr.: Können Radfahrer direkt zur Oeserstr. fahren?	? 2810,20455 2825,20387
 Stillachzeile: Qualität?	? 2645,20300 2567,20239
 #: XXX_osm: bei osm vermutlich falsch geschrieben (a statt e)
 Reppener Zeile: Qualität?	? 2848,19686 2764,19804
@@ -3590,14 +3583,10 @@ Von-der-Trenck-Str.: Qualität?	? -3245,1427 -3065,1565
 Barnhelmstr.: Qualität?	? -3192,1343 -2976,1418 -2753,1490 -2698,1509
 Tellheimstr.: Qualität?	? -3094,1183 -2902,1296
 Waldhauswinkel: Qualität?	? -2847,1705 -2784,1728
-Blücherstr. (Zehlendorf): Qualität?	? -268,3441 -156,3522
 Zinnowweg: Qualität? Für Radfahrer befahrbar? Nachts beleuchtet?	? -420,4159 -343,4056 -162,3827 -92,3724 -90,3645 -135,3567
 Ottmachauer Steig: Qualität? Für Radfahrer offen?	? -442,4691 -424,4717 -311,4637
 Selmaplatz: Qualität?	? -361,4334 -408,4302
 Gustav-Krone-Str.: Qualität?	? 1514,208 1507,301
-#: XXX laut osm 2m breit
-#: laut MichaelM gemeinsamer Rad- und Fußweg
-Gänseblümchenweg: Qualität? Nachts beleuchtet?	? -1717,2084 -1618,2137 -1631,2260
 Hoiruper Str.: Qualität?	? -3440,3015 -3515,3110
 Im Kieferngrund: Qualität?	? 261,4420 221,4412 208,4424 148,4402 156,4375 209,4393 221,4412
 #: XXX evtl. existiert eine Verbindung zur Parforceheide
@@ -3844,7 +3833,6 @@ Am Wiesenhang: Qualität?	? 23550,12627 23582,12661 23633,12674 23678,12659 23713
 #: XXX fehlt bei Berlin.coords.data
 Hauptweg (Kaulsdorf): Qualität?	? 23649,12591 23678,12659 23695,12708 23714,12756
 Mittelweg (Kaulsdorf): Qualität?	? 23610,12605 23633,12674 23649,12724 23669,12772
-Finsterberger Str.: Qualität?	? 23233,12406 23129,12496 23086,12565
 #: XXX_osm: bei osm ohne Straßennamen
 Jurek-Becker-Str.: Qualität?	? 22001,10421 22049,10392 21995,10221 21907,10238
 #: XXX_osm: bei osm "platz" und nicht "straße"

@@ -1110,7 +1110,7 @@ Neue Blumenstr.: gutes Kopfsteinpflaster	Q1 12006,12464 12118,12462
 Blumenstr.: gutes Kopfsteinpflaster	Q1 12118,12462 12125,12490 12306,12459 12305,12440 12345,12435
 Blumenstr.: Asphalt	Q0 12118,12462 12305,12440
 Fritschestr.: mäßiges bis schlechtes Kopfsteinpflaster	Q3 3291,11832 3251,12025
-Hebbelstr.: gutes Pflaster	Q1 3117,11852 3251,12025 3258,12035 3295,12068
+Hebbelstr.: gutes Gehwegpflaster	Q1 3117,11852 3251,12025 3258,12035 3295,12068
 Am Comeniusplatz: Kopfsteinpflaster	Q2 13275,11830 13406,11896
 Josef-Orlopp-Str.: Asphalt	Q0 15912,13153 16426,13145 16863,13138
 Landsberger Allee: Radwege nur mit mäßiger Qualität (Bordsteinkanten!)	Q1 16843,14420 17254,14451 17533,14484 17848,14523 18057,14549 18183,14573 18365,14607 18433,14620 18556,14687 18794,14819
@@ -3458,6 +3458,8 @@ Zitadelle: Kopfsteinpflaster	Q2 -2646,14525 -2652,14559 -2656,14582 -2668,14635 
 Behnitz: Kopfsteinpflaster	Q2 -2951,14617 -2993,14568 -3014,14559
 Rietzestr.: Asphalt	Q0 12693,15225 12472,15356
 Strehlener Str.: Asphalt	Q0 22652,10392 22538,10477 22403,10523
+Warnitzer Str. (Neu-Hohenschönhausen): guter Asphalt	Q0 17894,17925 17956,17927 17994,17958 18010,17972 18109,17861 18179,17915 18214,17876
+Warnitzer Str. (Neu-Hohenschönhausen): guter Asphalt	Q0 17994,17958 17962,18010 18041,18073 18147,17961 18304,18071
 Blumenthalstr.: schlechtes Kopfsteinpflaster	Q3 9120,20015 9159,19818 9177,19745 9195,19644 9214,19533 9231,19440 9249,19351 9258,19290
 Stegeweg (Falkenberg): mäßiges Kopfsteinpflaster	Q2 19409,18397 19579,18933
 Vierlandenstr.: Asphalt	Q0 20822,14594 20761,14589 20591,14575 20520,14570
@@ -7284,6 +7286,12 @@ Sarntaler Weg: guter Beton	Q0 5836,509 5742,671 5710,726 5781,770 5781,800
 Zerbster Str. (Hellersdorf): guter Beton	Q0 24451,15181 24413,15372 24357,15429 24346,15505 24324,15519 24169,15497
 Jaehnstr.: guter Asphalt	Q0 -461,3522 -575,3684
 An der Fließwiese: schlechtes Verbundsteinpflaster	Q2 -998,12689 -1022,12743 -1020,12801 -962,12951 -950,13091 -912,13106 -815,13067
+Blücherstr. (Zehlendorf): grobes Kopfsteinpflaster	Q3 -268,3441 -156,3522
+Schlickweg: sehr grobes Pflaster	Q3 -1683,3723 -1731,3833 -1734,3905
+Flachsweg (Zehlendorf): Kopfsteinpflaster, Fugen mit Asphalt vergossen	Q1 -1856,3877 -1803,3757
+Flachsweg (Zehlendorf): raues Granitpflaster	Q1 -1803,3757 -1785,3716 -1787,3690
+Gänseblümchenweg: Verbundsteinpflaster	Q1 -1717,2084 -1618,2137
+Gänseblümchenweg: Kleinpflaster	Q1 -1618,2137 -1631,2260
 Biesalskistr.: Asphalt	Q0 881,4429 949,4366 987,4293 1026,4207
 Biesalskistr.: gut gepflastert	Q1 1026,4207 1061,4098 1130,3930
 Biesalskistr.: gepflastert	Q1 1130,3930 1152,3918
@@ -7416,6 +7424,8 @@ Frankentaler Ufer: alter, unebener Plattenweg; starke Vegetation	Q2 7159,4023 71
 Heribaldstr.: Asphalt	Q0 25029,10462 25022,10715
 Rühmkorffstr.: guter Beton	Q0 5697,1098 5620,1153 5573,1211
 Schmidtstr.: guter Asphalt	Q0 23412,12562 23299,12600 23086,12565 22980,12545
+Finsterberger Str.: fester Sandweg	Q2 23233,12406 23129,12496 23086,12565
+Marzahnstr.: guter Asphalt	Q0 2762,20648 2793,20550 2810,20455 2825,20387
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206
 Richard-Ermisch-Str.: Asphalt	Q0 14250,13281 14224,13206 14207,13152 14177,13065 14163,13025 14130,12926 14096,12827
 Zum Langen Jammer: Kopfsteipflaster, Gehweg besser	Q2 14686,12873 14405,12953
