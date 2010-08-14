@@ -646,7 +646,7 @@ comments_cyclepath: comments_cyclepath-orig ${ALL_STREETS} ${PERSISTENTTMPDIR}/g
 	    $(CONVERT2HAFAS) -basefile comments_cyclepath-orig - | \
 	    ${RESOLVE_STARS} -sperrefile ${PERSISTENTTMPDIR}/gesperrt-without-nocross \
 	        ${ALL_STREETS} - | \
-	    ${REPLACESTRASSEN} -catexpr 's/\?//' \
+	    ${REPLACESTRASSEN} -catexpr 's/\?//g' \
 		> $@~ && \
 	mv $@~ $@
 	-@$(READONLY) $@
