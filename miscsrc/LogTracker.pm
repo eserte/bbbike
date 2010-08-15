@@ -225,6 +225,12 @@ sub add_button {
 		   stop_new_online_tracking();
 	       },
 	      ],
+	      "-",
+	      [Button => 'Replay accesslog',
+	       -command => sub {
+		   replay_accesslog();
+	       },
+	      ],
               "-",
               [Button => "Delete this menu",
                -command => sub {
@@ -1079,6 +1085,47 @@ EOF
     }
 }
 
+sub replay_accesslog {
+    my $file = $main::top->getOpenFile;
+    return if !defined $file;
+    open my $fh, $file
+	or main::status_message("Can't open $file: $!", 'die');
+    # convert to inotifywait-styled file
+    require File::Temp;
+    my($ofh,$ofile) = File::Temp::tempfile(SUFFIX => "_inotify.log", UNLINK => 1)
+	or main::status_message("Can't create temporary file: $!", 'die');
+    my $found_lines = 0;
+    while(<$fh>) {
+	if (m{coordssession=([^& ]+)}) {
+	    print $ofh "/tmp/coordssession/ CLOSE_WRITE,CLOSE $1\n";
+	    $found_lines++;
+	}
+    }
+    close $fh;
+    close $ofh
+	or main::status_message("Problem while writing $ofile: $!");
+    $found_lines
+	or do {
+	    main::status_message("No coordssession lines found in logfile", "warn");
+	    return;
+	};
+
+    open $LOG_TRACKER_FH, $ofile
+	or main::status_message("Can't open temporary file $ofile: $!", 'die');
+
+    if ($LOG_TRACKER_SSH) {
+	stop_online_tracking();
+    }
+    require Net::OpenSSH;
+    $LOG_TRACKER_SSH = Net::OpenSSH->new(
+					 $SETUP_NEW_ONLINE_TRACKING_TEST ? 'localhost' : 'bbbike.de',
+					 master_stdout_discard => 1, # does not work together with ptksh
+					 master_stderr_discard => 1,
+					);
+    $LOG_TRACKER_SSH->error
+	and die "Couldn't establish SSH connection: " . $LOG_TRACKER_SSH->error;
+    $main::top->fileevent($LOG_TRACKER_FH, 'readable', sub { new_online_tracking() });
+}
 
 ######################################################################
 # REPO BEGIN
