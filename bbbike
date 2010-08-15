@@ -13443,8 +13443,9 @@ sub show_info {
 			     )->pack(-fill => "x");
 	    toplevel_checker($info_top);
 	} else {
-	    $info_top = $toplevel{$tl_tag}
-	};
+	    $info_top = $toplevel{$tl_tag};
+	    soft_flash($info_text);
+	}
 	
 	my $link_menu = $info_text->Menu(-title => M"Linkmenü",
 					 -tearoff => 0);
@@ -21354,6 +21355,24 @@ sub balloon_info_from_all_tags {
 }
 
 sub get_special_vehicle { !defined $special_vehicle_rb || $special_vehicle_rb eq 'normal' ? '' : $special_vehicle_rb }
+
+# Currently works only if the original background is white
+sub soft_flash {
+    my $w = shift;
+    # XXX Could be a little bit smoother...
+    my @color_states = ('#ffe126', '#ffdb00', '#ffe126', '#ffe960', '#ffec74', '#fff19a', '#fff6be', '#ffffff');
+    my $color_i = 0;
+    my $next_color_state;
+    $next_color_state = sub {
+	return if !Tk::Exists($w);
+	$w->configure(-background => $color_states[$color_i]);
+	$color_i++;
+	if ($color_i <= $#color_states) {
+	    $w->after(100, $next_color_state);
+	}
+    };
+    $next_color_state->();
+}
 
 # REPO BEGIN
 # REPO NAME tk_sleep /home/e/eserte/work/srezic-repository 
