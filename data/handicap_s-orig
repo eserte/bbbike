@@ -8,8 +8,8 @@
 #
 #: temporary vvv
 # 
-#: last_checked: 2010-06-03
-#: next_check: 2010-09-01
+#: last_checked: 2010-08-14
+#: next_check: 2010-11-01
 Schloßplatz: Behinderungen durch Bauarbeiten möglich	q3::inwork 10170,12261 10063,12438
 #XXX del #: last_checked: 2009-12-25 Caroline-Michaelis-Str.: Bauarbeiten, Ausweichen auf Gehweg	q4::inwork 9061,14050 9125,13973
 #: last_checked: 2010-06-18
@@ -19,11 +19,11 @@ Fahrbahn der Mauerstr. wegen Bauarbeiten gesperrt	q4::inwork 9405,11413 9331,114
 Varian-Fry-Str.: Baustelle, Fahrbahn gesperrt	q4::inwork 8389,11378 8374,11479
 #: last_checked: 2010-06-26
 General-Pape-Str.: Baustelle, Fahrbahn Richtung Norden gesperrt	q4::inwork; 7959,7609 7921,7728 7950,7840
-#: last_checked: 2010-05-22
+#: last_checked: 2010-08-14
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 9475,12365 9462,12481 9454,12558
-#: last_checked: 2010-05-22
+#: last_checked: 2010-08-14
 Universitätsstr.: wegen Bauarbeiten Richtung Unter den Linden gesperrt	q4::inwork; 9580,12581 9601,12380
-#: last_checked: 2010-06-05
+#: last_checked: 2010-08-14
 Planckstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 9434,12669 9385,12809 9383,12915
 #: next_check: 2010-10-01
 Matkowskystr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 14530,11137 14509,11060
@@ -255,7 +255,8 @@ Spreepromenade am DomAquarée: Fußgänger, Cafés	q3 10300,12587 10249,12658 10219,
 St.-Wolfgang-Str.: Fußgänger, Cafés	q3 10219,12701 10285,12744 10360,12793
 Spreegasse: Fußgänger, Cafés	q3 10249,12658 10309,12700 10387,12760
 Heiligengeistgasse: Fußgänger, Cafés, sehr eng	q4 10285,12744 10309,12700 10352,12627
-zur Gormannstr.: Bordstein	q4 10350,13376 10372,13436
+#: XXX_prog: sollte BS werden
+zur Gormannstr.: Bordstein	q3 10350,13376 10372,13436
 #: note: Flohmarkt ist in temp_blockings erwähnt:
 Am Zeughaus: Fußgänger	q2 9919,12613 9950,12522 9984,12426
 Steinmetzstr.: Fußgängerzone, Radfahren erlaubt	q1 7625,9771 7648,9944 7698,10147
@@ -342,6 +343,7 @@ Färberstr. - Uferweg: sehr eng	q2 21675,4989 21665,5035 21684,5079
 Uferweg, Mentzelpark: Fußgänger	q1 21487,5425 21600,5221 21684,5079 21735,5003 21769,4973
 Uferweg, Mentzelpark: Fußgänger, eng	q3 21769,4973 21821,4918 21834,4889
 (Mentzelpark): Fußgänger	q1 21769,4973 21778,4916 21834,4889 21848,4882
+(Mentzelpark): Fußgänger	q1 21726,4896 21741,4889 21778,4916
 Heinrich-Lassen-Park: Fußgänger (aber Radfahren ist erlaubt!)	q1 6664,8787 6740,8682 6815,8691 6912,8617
 (Uferweg am Nordhafen): Fußgänger	q1 7753,14528 7695,14545 7498,14658
 An der Malche: teilweise eng und kurvig	q1 1127,20434 1060,20557 995,20590 921,20562 864,20646 673,20800
@@ -696,6 +698,7 @@ Chiemseestr.: enge Straße	q1 22204,1496 22334,1553
 (Lindenstr. - Bahnhofstr.): gemeinsamer Rad- und Gehweg	q1 22017,5159 22046,5305 22043,5346
 Waldpromenade: eng	q2 23792,7861 23710,7940 23668,7967
 Waldpromenade: eng	q2 23579,8037 23481,8119
+Ernst-Grube-Park: Radfahren verboten, ggfs. schieben	q3 21345,5157 21329,5192 21208,5291
 ######################### User Contributions #################################
 #: by: Michael Kiekbusch
 #: corrected_by: srt/policy (q4 -> q3-)

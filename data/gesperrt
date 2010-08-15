@@ -566,6 +566,7 @@ Eichenstr./Lindenstr.	1 32162,2542 32316,2468 32467,2582
 Moosstr. [Wohngebiet]	1 19210,5150 19233,5076 19236,5025 19241,4958 19306,4969 19294,5033 19255,5164
 Abtstr./Platz der Befreiung	1 20066,3466 19990,3416 20038,3357
 Kreisverkehr Waldowplatz	1 19283,6123 19282,6152 19303,6170 19333,6165 19345,6150 19344,6119 19325,6105 19290,6114 19283,6123
+Paddlerweg: Privatweg, Tor	2 -3559,11227 -3625,11250 -3679,11248
 Am Neuen Garten	1 -12166,1384 -12212,1201 -12276,831 -12302,718
 Am Neuen Garten	1 -12332,585 -12582,127
 Hochstraße	3nocross::ignrte -11399,-1339 -11461,-1424 -11540,-1543
@@ -1256,11 +1257,11 @@ Küselstr. -> Zelterstr.: Straßenbahntrasse	3::igndisp 12058,15621 11967,15700 11
 Mittelstreifen mit Straßenbahn	3nocross::ignrte 11712,14868 11610,14886 11545,14897
 Rykestr. -> Danziger Str.: Mittelstreifen mit Straßenbahn	3::igndisp 11526,14693 11610,14886 11545,14897
 Danziger Str. -> Rykestr.: Mittelstreifen mit Straßenbahn	3::igndisp 11712,14868 11610,14886 11526,14693
-Mittelstreifen mit Straßenbahn	3nocross::ignrte 10746,13673 10640,13700 10569,13719 10471,13745
+Mittelstreifen mit Straßenbahn	3nocross::ignrte 10746,13673 10640,13700 10569,13719 10463,13747
 Angermünder Str. -> Torstr.: Mittelstreifen mit Straßenbahn	3::igndisp 10703,13832 10640,13700 10746,13673
 Torstr. -> Angermünder Str.: Mittelstreifen mit Straßenbahn	3::igndisp 10569,13719 10640,13700 10703,13832
 Christinenstr. -> Torstr.: Mittelstreifen mit Straßenbahn	3::igndisp 10599,13775 10569,13719 10640,13700
-Torstr. -> Christinenstr.: Mittelstreifen mit Straßenbahn	3::igndisp 10471,13745 10569,13719 10599,13775
+Torstr. -> Christinenstr.: Mittelstreifen mit Straßenbahn	3::igndisp 10463,13747 10569,13719 10599,13775
 Linksabbiegen verboten (und unbequem)	3nocross::ignrte 8192,9619 8097,9650 7938,9694
 Katzlerstr. -> Yorckstr.: Linksabbiegen verboten (und unbequem)	3::igndisp 8035,9437 8097,9650 7938,9694
 Yorckstr. -> Katzlerstr.: Linksabbiegen verboten (und unbequem)	3::igndisp 8192,9619 8097,9650 8035,9437
@@ -1920,7 +1921,7 @@ tragen (8 Stufen)	0:30:-157 5466,4765
 tragen (Treppe)	0:20:-62 5371,4609
 (Stadtpark Steglitz)	BNP:15:-108 5765,4693
 tragen (16 Stufen)	0:45:-158 5469,4543
-tragen (Treppe)	0:20:-177 12387,13107
+tragen (6 Stufen)	0:20:-177 12387,13107
 Schranke	BNP:10 12605,13356
 tragen (ca. 5 x 9 Stufen)	0:120:35 13853,13712
 Straßenbahnschienen	3nocross::ignrte 12901,14093 12975,13990 13037,13897 13100,13803

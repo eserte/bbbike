@@ -9,7 +9,7 @@
 #: section ignorieren vvv
 #: section projektierte Radstreifen der Verkehrsverwaltung vvv
 #
-#: last_checked: 2010-03-23
+#: last_checked: 2010-08-14
 #: next_check: 2011-01-01
 #: XXX: die ersten Meter in der Breiten Str. sind noch Baustelle ohne Radspuren
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0709/nachricht2788.html
@@ -45,8 +45,8 @@ Zossener Str./Lindenstr.	?::projected 9856,10358 9873,10285 9865,10227 9858,1019
 #: next_check: 2010-09-01
 Michaelbrücke/Michaelkirchstr.	?::projected 11768,12006 11716,11914 11676,11839 11574,11594 11498,11417
 #
-#: last_checked: 2010-06-25
-#: next_check: 2010-09-01
+#: last_checked: 2010-08-14
+#: next_check: 2010-12-01
 # auch im Tsp 2010-03-26 erwähnt
 Fischerinsel	?::projected 10512,12039 10672,11870
 #
@@ -54,12 +54,12 @@ Fischerinsel	?::projected 10512,12039 10672,11870
 #: next_check: 2010-06-01
 Stülerstr.	?::projected 6825,11486 6716,11439 6692,11365 6679,11319 6630,11247 6606,11222
 #
-#: last_checked: 2010-06-23
-#: next_check: 2010-09-01
+#: last_checked: 2010-08-14
+#: next_check: 2010-11-01
 Danziger Str.	?::projected 11712,14868 11879,14771 11990,14714 12040,14688 12128,14640 12317,14535 12425,14459 12630,14306 12729,14227 12901,14093 12975,13990 13037,13897 13100,13803 13166,13707 13225,13620 13228,13615 13330,13468
 #
-#: last_checked: 2010-06-23
-#: next_check: 2010-09-01
+#: last_checked: 2010-08-14
+#: next_check: 2010-11-01
 Kniprodestr./Am Friedrichshain	?::projected 12901,14093 12784,13961 12695,13864 12654,13819 12571,13798 12403,13755 12204,13719 12161,13711 12038,13685 11868,13646 11785,13625 11762,13619 11706,13635
 #
 #: last_checked: 2010-04-06
@@ -132,8 +132,8 @@ Blankenburger Str. erhält beiderseitig Radfahrstreifen zwischen Dietzgen- und Si
 Wollankstr.: Angebotsstreifen werden bis Herbst 2011 eingerichtet	?::projected 9549,17625 9590,17662 9624,17693 9663,17734 9727,17804 9791,17877 9832,17925 9870,17971 9978,18104 10027,18165 10089,18180
 #
 #: by: Tagesspiegel vom 2010-03-31
-#: last_checked: 2010-06-24
-#: next_check: 2010-09-01
+#: last_checked: 2010-08-14
+#: next_check: 2010-12-01
 Rüdersdorfer Str. bekommt Radspuren	?::projected 13066,11854 12891,12008
 #
 #: by: Tagesspiegel vom 2010-03-26
@@ -164,7 +164,7 @@ An der Barthschen Promenade: vielleicht wird die Straße in Zukunft sich hier bef
 Neubau eines Uferwegs an der HTW (Fuß- und Radweg)	?::inwork 19177,5560 19020,5532 18846,5548 18654,5717
 #: next_check: 2010-08-01
 Karl-Liebknecht-Str.: Radstreifen nach den Bauarbeiten?	?::inwork 10920,13139 11015,13264 11021,13271 11087,13359
-#: last_checked: 2010-06-28
+#: last_checked: 2010-08-14
 #: check_frequency: 365d (public)
 Am Sudhaus: wo genau verläuft die Straße? Qualität?	? 12148,8174 12227,8190
 #: last_checked: 2010-07-07
@@ -201,13 +201,11 @@ Mauerweg: evtl. existiert hier bereits ein geschotterter Radweg parallel zur Str
 #: last_checked: 2009-12-29
 Pyramidenring/Rhinstr.: Ampel in Bau	?::inwork 18166,14277
 #
-#: last_checked: 2010-03-23
-#: next_check: 2010-10-01
+#: last_checked: 2010-08-14 vvv
+#: next_check: 2010-11-01 vvv
 #: XXX Eintrag in Berlin.coords.data fehlt: PLZ=10117
 #: XXX genaue Lage?
 Prinzengasse: existiert sie schon, wenn ja: wie ist die Qualität?	?::inwork 9952,12292 10029,12313
-#: last_checked: 2010-03-23 vvv
-#: next_check: 2010-10-01 vvv
 #: XXX Eintrag in Berlin.coords.data fehlt: PLZ=10117
 Falkoniergasse: Qualität?	?::inwork 9945,12180 9915,12259
 #: XXX Eintrag in Berlin.coords.data fehlt: PLZ=10117
@@ -291,7 +289,8 @@ Romain-Rolland-Str.: nach den Bauarbeiten vielleicht asphaltiert?	? 12562,18483 
 #: next_check: 2009-12-31:
 Boitzenburg - Hardenbeck: straßenbegleitender Radweg in Vorbereitung, Realisierung bis Ende 2009	?::inwork 22233,95712 21980,95754 21160,95892 20914,96092 20696,96135 20064,95650 19336,95235 19032,95142
 Laut Uckermark-Kurier: 2.7km Radweg auf ehem. Bahndamm zwischen L15 undf K7332 bei Hardenbeck (Radweg "Spur der Steine", Templin - Fürstenwerder), Baubeginn Anfang 2009, Asphalt ca. 3m breit; wo genau???	?::inwork 16377,90072 15782,90862 15738,90942 15410,92053 15661,93732 15688,93829 15748,93928 15841,94009 16435,94298 17677,94900 17796,95008 17912,95192 18001,95435 18507,96268 18676,96867 18954,97944 19022,98128 19442,99078 19582,99411
-#: last_checked: 2010-04-30:
+#: last_checked: 2010-08-14
+#: next_check: 2010-11-01
 Choriner Str.: die Choriner Str. soll eine Fahrradstraße werden	? 10480,13871 10489,13942 10502,14070 10558,14176 10629,14299 10870,14689 10893,14705
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20081110.1105.113814.html
 #: last_checked: 2009-11-19:
@@ -3268,12 +3267,6 @@ Lauchstädter Weg: Qualität?	? 15952,719 15872,902 15804,1061 15758,1179 15699,12
 Pirnaer Str.: Qualität?	? 16042,772 15999,880 15970,954 15966,965 15935,1043 15901,1120
 #: XXX unklarer Eintrag von bene...finti: Asphalt, enge Straße, q0, vielleicht war auch die Onkel-Bräsig-Str. gemeint
 Siebenendenweg: Qualität? Ist die gesamte Straße für Autos gesperrt?	? 404,3970 21,4434 -62,4564
-#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0803/nachricht2984.html
-#: last_checked: 2009-07-30
-#: XXX laut MoPo früher fertig:
-#: next_check: 2009-09-30
-#: XXX laut anonymen Eintrag existieren Radwege (2009-12), aber Eintrag ohne Angabe zur Benutzungspflicht
-Eberswalder Str.: Existieren bereits Radwege zwischen Schönhauser Allee und Topsstraße? Falls ja: sind die Radwege benutzungspflichtig (d.h. existieren Radwegschilder)?	?::inwork 10618,15076 10881,15047
 #: XXX Eintrag von Birgit Poethke, aber unklar, ob sie genau diesen Weg meint: "Q3, fester Sandweg, q2, viele Fußgänger, nachts unbeleuchtet"
 TR4 durch den Volkspark Jungfernheide: Qualität/Wegbeschaffenheit? Nachts beleuchtet?	? 1468,15194 1510,15067 1550,15014 2367,14836 2527,14832 2683,14878 2675,14744
 #: XXX an der Nieberstr. noch asphaltiert. Radfahren explizit erlaubt. green1 (mindestens) eintragen
@@ -3337,7 +3330,9 @@ Straße 184: Qualität?	? 17222,-560 17147,-573 17054,-597
 #: XXX anonymous meint: "Kopfsteinpflaster", aber ohne genauere Kategorisierung
 Timmendorfer Weg: Qualität?	? 17879,-3 18011,83 18085,137
 Altrader Weg: Qualität? Kann man die Waltersdorfer Chaussee in Höhe des Altrader Wegs überqueren?	? 18077,-13 17946,-100
-Marthashof: existiert die Straße schon? Qualität?	? 10459,14721 10559,14756
+#: last_checked: 2010-08-14
+#: next_check: 2011-02-01
+Marthashof: Qualität nach den Bauarbeiten?	?::inwork 10440,14730 10550,14770
 Locarnoweg: Qualität? Ist die Straße eine Spielstraße?	? 3290,2135 3369,2135
 Glandzeile: Qualität? Ist die Straße eine Spielstraße?	? 3369,2135 3369,2216
 Sittener Zeile: Qualität? Ist die Straße eine Spielstraße?	? 3443,2215 3443,2138 3513,2135
@@ -3662,7 +3657,6 @@ Cedernstr.: Qualität?	? 23878,4406 23988,4482 24078,4595
 Schrebergasse: Qualität? Für Radfahrer befahrbar? Nachts beleuchtet?	? 23850,4497 23925,4555 23980,4633
 #: XXX_osm: fehlt bei osm
 Ambacher Str.: Qualität?	? 21944,7122 21967,7048
-Spinnpfad: Qualität?	? 21202,4985 21207,5056
 Friedenstr. (Köpenick): Qualität?	? 21993,6133 22033,6144 22141,6143
 # XXX del nur ein sehr enger Weg vorhanden --- lohnt nicht --- Waldpromenade: Qualität? Nachts beleuchtet? Für Autos offen?	? 23481,8119 23385,8217 22865,8588
 #: XXX_osm: bei osm evtl. falsch geschrieben
@@ -4534,7 +4528,6 @@ Hettnerweg: Qualität?	? -5217,13232 -5295,13415 -5333,13515
 Földerichplatz: Qualität? Für Radfahrer Zugang zur Adamstr. möglich?	? -3941,12376 -3941,12545 -3942,12559
 Kerstenweg: Qualität? Für Radfahrer befahrbar? Kann die Wilhelmstr. überquert werden?	? -3705,13386 -3813,13404
 Schwimmerweg: Qualität?	? -3584,11177 -3642,11216 -3673,11216
-Paddlerweg: Qualität?	? -3559,11227 -3625,11250 -3679,11248
 Rudererweg: Qualität?	? -3534,11277 -3570,11289 -3689,11291
 Lankestrand: Qualität?	? -3689,11291 -3679,11248 -3673,11216
 #: XXX_osm fehlt bei osm
