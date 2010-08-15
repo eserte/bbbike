@@ -4825,9 +4825,6 @@ EOF
 		    my $href = $bbbike_script;
 		    print qq{<a style="padding:0 0.5cm 0 0.5cm;" href="$href?} . $qq2->query_string . qq{">KML</a>};
 		}
-		if ($can_gpx || $can_kml) {
-		    print experimental_label();
-		}
 		if ($can_gpsies_link) {
 		    my $qq2 = CGI->new($q->query_string);
 		    $qq2->param('output_as', "gpx-track");
