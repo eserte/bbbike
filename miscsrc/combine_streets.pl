@@ -78,11 +78,13 @@ sub make_long_streets {
     }
 
     my $s = Strassen->new($strfile);
+    $encoding = $s->get_global_directive('encoding') || $encoding;
     my $out = $s->make_long_streets;
     $out->set_global_directives({ encoding => [$encoding] }) if $encoding;
     $out->write("-");
 }
 
+# XXX what about encoding here?
 sub combine_same_streets {
     my $strfile = shift || die "strfile?";
     my $s = Strassen->new($strfile);
