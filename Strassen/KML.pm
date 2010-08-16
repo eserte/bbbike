@@ -209,7 +209,7 @@ EOF
       <LineString>
         <extrude>1</extrude>
         <tessellate>1</tessellate>
-        <altitudeMode>absolute</altitudeMode>
+        <altitudeMode>clampToGround</altitudeMode>
         <coordinates> 
 @{[ xml($coords) ]}
         </coordinates>
