@@ -1797,16 +1797,7 @@ userdel	q4::inwork; 10614,19907 10742,19632
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20100720.1055.303592.html',
-         'until' => 1281823199,
-         'text' => 'Sperrung der Eisenacher Straße zwischen dem Blumberger Damm und der Gothaer Straße vom 02. August bis zum 14. August 2010 ',
-         'from' => 1280687843,
-         'id' => 2111,
-         'data' => 'userdel	q4::inwork 22605,15111 22449,15127 22409,15128 22343,15115 22059,15153
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => 1282341600,

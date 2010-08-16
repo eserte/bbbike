@@ -1174,9 +1174,9 @@ Südstern: Kopfsteinpflaster	Q2 10647,9337 10617,9353 10580,9361
 Samariterstr.: Kopfsteinpflaster	Q2 14488,12188 14538,12371 14570,12478 14588,12542 14591,12555 14596,12573 14599,12584 14628,12682 14661,12798
 Fanningerstr.: Kopfsteinpflaster	Q2 16261,12224 16359,12207 16445,12193
 Fanningerstr.: Asphalt	Q0 16445,12193 16556,12180 16657,12168 16794,12144 16890,12135 16994,12122 17092,12107 17139,12100
-#: add_fragezeichen: mäßiges oder schlechtes Kopfsteinpflaster?
-#: XXX Robert Buettner meint: "90% schlechtes Kopfsteinpflaster"
-Marienhöher Weg: Kopfsteinpflaster	Q2 8353,5188 8203,5203 8115,5086 8052,5009 7986,4984 7913,4996 7873,5024 7851,5125 7944,5237
+#: note: Robert Buettner meint: "90% schlechtes Kopfsteinpflaster"
+#: note: guylian meint: "mäßig", go with him
+Marienhöher Weg: mäßiges Kopfsteinpflaster	Q2 8353,5188 8203,5203 8115,5086 8052,5009 7986,4984 7913,4996 7873,5024 7851,5125 7944,5237
 Maulbronner Ufer: Parkweg	Q1 7161,4091 6904,4162
 (Luckeweg - Hildburghauser Str.): Parkweg	Q1 7531,581 7599,725
 Voigtstr.: Kopfsteinpflaster	Q2 14702,12157 14748,12314 14776,12418 14798,12502 14801,12517 14814,12626 14842,12826
@@ -3723,6 +3723,8 @@ Paddlerweg: Kopfsteinpflaster	Q2 -3559,11227 -3625,11250 -3679,11248
 (Ernst-Grube-Str. - S-Bahngleise): Asphalt	Q0 21343,5140 21231,5086 21183,5077 21147,5081 21081,5096
 Spinnpfad: Asphalt	Q0 21194,4996 21203,5054
 (Mentzelstr. - Mentzelpark): Asphalt	Q0 21726,4896 21741,4889 21778,4916
+#: by: http://www.flickr.com/photos/30482855@N04/4895832123/in/pool-gwb
+Zwischen den Giebeln: Asphalt	Q0 -7225,14572 -7221,14692
 ######################### User Contributions #################################
 #: by: Dominik Seelow vvv
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
@@ -3862,6 +3864,8 @@ Strehlener Str.: Asphalt	Q0 22652,10392 22538,10477 22403,10523
 ######################################################################
 #: by: anonymous vvv
 # 
+#: note: "gut zu fahren"
+(ehem. Autobahnbrücke): guter Beton	Q1 -5359,-1298 -5364,-1204
 Warnitzer Str. (Neu-Hohenschönhausen): guter Asphalt	Q0 17894,17925 17956,17927 17994,17958 18010,17972 18109,17861 18179,17915 18214,17876
 Warnitzer Str. (Neu-Hohenschönhausen): guter Asphalt	Q0 17994,17958 17962,18010 18041,18073 18147,17961 18304,18071
 #: confirmed_by: srt (zumindest Kopfsteinpflaster südlich der Uhlandstr.)
@@ -11413,6 +11417,12 @@ Griesingerstr.: guter Beton	Q0- -6603,17532 -6612,17487 -6595,17456 -6822,16927 
 Reclamweg: guter Asphalt	Q0 -5196,12452 -5126,12425
 #: by: ^^^
 #: by: Roland Krause vvv
+#: note: "besonders an der Ecke Straße 133"
+Straße 109: sehr schlechter Asphalt, viele Schlaglöcher, teilweise guckt Kopfsteinpflaster hervor	Q2- 17342,15386 17435,15379 17533,15363 17588,15355
+#: note: "sehr schmale Straße"
+Straße 133 (Alt-Hohenschönhausen): guter Asphalt	Q0 17588,15355 17762,14993
+#: note: "sehr schmale Straße"
+Straße 134 (Alt-Hohenschönhausen): guter Asphalt	Q0 17533,15363 17718,14979
 Privatstr. 1: mäßiger Asphalt	Q2 16887,17349 17089,17369 17167,17331
 Privatstr. 2: mäßiger Asphalt, unebene Fahrbahn, diverse kleine Schlaglöcher	Q1- 16902,17278 17026,17292 17161,17289 17300,17265 17403,17235
 Privatstr. 3: mäßiger Asphalt, unebene Fahrbahn, diverse kleine Schlaglöcher	Q1- 16918,17204 17027,17219 17153,17216 17375,17165
@@ -11497,6 +11507,10 @@ Finsterberger Str.: fester Sandweg	Q2 23233,12406 23129,12496 23086,12565
 #: by: Silke (...duerrhauer)
 #: note: "Kleine Holperer, aber keine großen Beeinträchtigungen"
 Marzahnstr.: guter Asphalt	Q0- 2762,20648 2793,20550 2810,20455 2825,20387
+#: by: guylian vvv
+#: note: "beleuchtet", "Pfosten"
+Gerdsmeyerweg - Marienhöher Weg: Asphalt	Q0 8036,5309 7944,5237
+#: by: ^^^
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206

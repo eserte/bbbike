@@ -639,11 +639,8 @@ Clémentweg: Qualität (laut ADFC-Karte gut geeignet)?	? 11723,22749 11285,23079
 #: XXX Eintrag in Berlin.coords.data fehlt
 Dr.-Dorsch-Allee: Qualität (laut ADFC-Karte gut geeignet)?	? 11285,23079 10855,23403
 Ludwig-Renn-Str.: Einbahnstraße auch für Radfahrer?	? 20843,16829 21017,16737
-Stolper Weg: Qualität? Bis wo (vom Europarc aus) ist Autoverkehr vorhanden? Radwege? Genaue Straßennamen?	? -4709,-728 -4884,-907 -5335,-1090 -6147,-1125 -6411,-868
-#: by: Message-ID: <dpqsm6$vmc$02$1@news.t-online.com> ist die Brücke offen für Fußgänger
-#: by: (URL existiert nicht mehr) http://archiv.tagesspiegel.de/archiv/17.08.2006/2687539.asp (offen)
-#: by: http://www.michael-cramer.eu/show/229623.html (offen)
-Albrechts Teerofen - Stopler Weg (ehem. Autobahnbrücke): Qualität?	? -5359,-1298 -5335,-1090
+Stolper Weg: Qualität? Bis wo (vom Europarc aus) ist Autoverkehr vorhanden? Radwege? Genaue Straßennamen?	? -4709,-728 -5233,-902 -5380,-990 -5799,-1108 -5901,-1257 -6051,-1169 -6411,-868
+(Albrechts Teerofen - Stopler Weg): Qualität?	? -5364,-1204 -5380,-990
 Arkenberge: wo genau ist die Durchfahrt für Autos gesperrt	? 10370,26352 10308,26376 10112,26349
 Weg am Tegeler Fließ: Durchfahrt möglich? Qualität (wahrscheinlich sandiger Weg?)?	?? 7736,24239 7627,24190 7594,24200 7402,24144 7315,24082 7207,24103 7039,24077 6930,24045 6870,24061 6716,23949 6609,23892
 Seenpromenade (Groß Glienicke): Qualität des südlichen Abschnitts?	? -9617,5086 -9678,4874
@@ -1689,7 +1686,6 @@ Sensenpfad: Qualität?	? 21101,12661 21176,12627
 Ährenweg: Qualität?	? 21028,12536 21134,12471 21123,12352 21107,12183
 Garbenpfad: Qualität?	? 21031,12364 21015,12190
 Tejastr.: Qualität?	? 7830,4667 7897,4585
-Gerdsmeyerweg - Marienhöher Weg: Durchfahrt für Radfahrer möglich? Qualität?	? 8036,5309 7944,5237
 Popitzweg - Halemweg: ist der Weg über der U-Bahn auch für Radfahrer befahrbar? Qualität? Geht es über den Halemweg noch weiter?	? 1881,14425 2126,14392 2254,14387 2380,14392
 Haeftenzeile - Weg über der U-Bahn: Durchfahrt für Radfahrer möglich? Qualität?	? 2134,14440 2126,14392
 Schuckertplatz: Qualität?	? 1343,14972 1351,15057
@@ -1910,7 +1906,7 @@ Am Hanffgraben: Qualität? Gilt die Einbahnstraßenregelung auch für Radfahrer?	? 
 Irmfriedstr.: Qualität?	? 21737,13844 21758,13934 21764,13981 21766,13995 21794,14229 21814,14407 21822,14480
 Mettlacher Str.: Qualität?	? 21794,14229 21918,14219 22007,14209 22050,14212
 Mündeseerundweg: Qualität? Wie geht's weiter Richtung Südosten?	? 50871,70761 50974,70635 51004,70617 51078,70609 51223,70542 51343,70458 51421,70384 51551,70236 51732,69987
-Deitmerstr.: Können Radfahrer den Mittelstreifen an der Schloßstr. überqueren?	? 5048,5904
+# XXX del --- laut guylian ex. abgeflachter Bordstein am Mittelstreifen --- Deitmerstr.: Können Radfahrer den Mittelstreifen an der Schloßstr. überqueren?	? 5048,5904
 Hermesweg: Qualität?	? 6116,4707 6072,4606
 Gurlittstr.: Qualität?	? 7213,5062 6949,5096
 #: XXX: anonymous meint: Pfad vom Munsterdamm zum Oehlertring, ca. 5 Stufen -> aber wo genau?
@@ -3927,6 +3923,7 @@ Bodo-Uhse-Str.: Qualität?	? 23115,13261 23161,13480
 Lubminer Str.: Qualität?	? 22527,12683 22415,12681 22407,12901
 Clara-Zetkin-Platz: Qualität? Stimmt der Straßenname? Für Radfahrer befahrbar?	? 22554,13011 22606,12949 22615,12906
 Clara-Zetkin-Weg: Qualität? Stimmt der Verlauf des Weges? Für Radfahrer befahrbar?	? 22606,12949 22775,12984
+#: XXX laut anonymous "Beton" ohne weitere Angaben (außerdem fehlt eine Verknüpfung zum restlichen Netz)
 Mylauer Weg: Qualität? Stimmt der Verlauf?	? 24133,14444 24017,14613 23852,14521
 Peter-Edel-Str.: Qualität?	? 23237,13683 23252,13778 23215,13787 23240,13938
 #: XXX_osm bei osm falsch geschrieben?
@@ -4114,7 +4111,6 @@ Luftschifferweg: Qualität?	? -6898,14715 -6634,14690
 Eckenerweg: Qualität?	? -6890,14840 -6621,14798
 Straße 331: Qualität?	? -6611,14302 -6603,14427
 Eschenwinkel: Qualität?	? -7172,14459 -6922,14437
-Zwischen den Giebeln: Qualität?	? -7225,14572 -7221,14692
 Beim Pfarrhof: Qualität? Einbahnstraßenregelung?	? -7304,14567 -7292,14811
 Am Kleinen Platz: Qualität? Einbahnstraßenregelung?	? -7292,14811 -7248,14826
 Am Krummen Weg: Qualität? Einbahnstraßenregelung? Geht der Weg bis zur Hackbuschstr. weiter?	? -7248,14826 -7169,14849 -7095,14871 -7024,14880 -6886,14885
@@ -4225,9 +4221,6 @@ Reriker Str.: Qualität?	? 16144,18521 16268,18551 16350,18575 16385,18524 16469,
 Themarer Str.: Qualität?	? 18424,14791 18412,14712 18357,14631
 Straße 158: Qualität?	? 17895,15050 17839,15173 17847,15197 17740,15254
 Straße 155: Qualität? Kann die Rhinstr. überquert werden?	? 17409,15454 17640,15431
-Straße 109: Qualität?	? 17342,15386 17435,15379 17533,15363 17588,15355
-Straße 133 (Alt-Hohenschönhausen): Qualität?	? 17588,15355 17762,14993
-Straße 134 (Alt-Hohenschönhausen): Qualität?	? 17533,15363 17718,14979
 #: XXX_osm bei osm falsch geschrieben?
 Langer-See-Str.: Qualität? Kann die Daumstr. überquert werden?	? -1710,16735 -1857,16766
 Schwielowseestr.: Qualität? Kann die Daumstr. überquert werden?	? -1746,16667 -1856,16694 -1872,16631 -1765,16603
