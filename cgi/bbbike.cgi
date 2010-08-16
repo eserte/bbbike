@@ -4337,6 +4337,7 @@ sub display_route {
 	    }
 	    my $s = Strassen->new_from_data(@data);
 	    my $s_gpx = Strassen::GPX->new($s);
+	    $s_gpx->{"GlobalDirectives"}->{"map"}[0] = "polar" if $data_is_wgs84;
 	    print $s_gpx->bbd2gpx(-as => "route");
 	} else { # xml
 	    require XML::Simple;
