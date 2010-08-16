@@ -3820,6 +3820,7 @@ sub display_route {
 					join(" ", map { "$_->[0],$_->[1]" }
 					     @{ $r->path || [] }) . "\n");
 	my $s_gpx = Strassen::GPX->new($s);
+	$s_gpx->{"GlobalDirectives"}->{"map"}[0] = "polar" if $data_is_wgs84;
 	print $s_gpx->bbd2gpx(-as => "track");
 	return;
     }
@@ -3835,6 +3836,7 @@ sub display_route {
 					join(" ", map { "$_->[0],$_->[1]" }
 					     @{ $r->path || [] }) . "\n");
 	my $s_kml = Strassen::KML->new($s);
+	$s_kml->{"GlobalDirectives"}->{"map"}[0] = "polar" if $data_is_wgs84;
 	print $s_kml->bbd2kml;
 	return;
     }
