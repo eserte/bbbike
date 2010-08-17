@@ -3217,7 +3217,10 @@ EOF
 <option @{[ $specialvehicle_checked->("childseat") ]}>@{[ M("Kindersitz mit Kind") ]}
 </select></td></tr>
 EOF
-    if ($is_beta) { # XXX should go into standard version some day!
+    if (!$osm_data || do {
+	my $geo = get_geography_object();
+	$geo && $geo->can('skip_feature') && !$geo->skip_feature('faehren')
+    }) {
 	print <<EOF;
 <tr><td>@{[ M("Fähren benutzen") ]}:</td><td><input type=checkbox name="pref_ferry" value="use" @{[ $default_ferry?"checked":"" ]}></td></tr>
 EOF
