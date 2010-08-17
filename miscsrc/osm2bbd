@@ -1721,16 +1721,17 @@ sub output_meta {
     $meta{center} = [split /,/, $center] if defined $center;
     $meta{source} = 'osm';
     #$meta{source_files} = \@osm_files; # XXX hmmm, too many?
-    $meta{skip_features} = {green        => 1,
-			    landstrassen => 1,
-			    nolighting   => 1,
-			    obst         => 1,
+    $meta{coordsys} = $map ? $map : 'wgs84';
+    $meta{skip_features} = {green        => 1, # no support in osm data
+			    obst         => 1, # -"-
+			    landstrassen => 1, # no scoping with osm data
+			    wasserumland => 1, # -"-
+			    wideregion   => 1, # -"-
 			    vbb          => 1, # even in Berlin, because we don't have the VBB zone info
-			    wasserumland => 1,
-			    wideregion   => 1,
+			    # following are skipped if no data was found
+			    (!$out{nolighting} || !@{ $out{nolighting} } ? (nolighting => 1) : ()),
 			    (!$out{faehren} || !@{ $out{faehren} } ? (faehren => 1) : ()),
 			   };
-    $meta{coordsys} = $map ? $map : 'wgs84';
     for my $def (['u-bahn', ['ubahn', 'ubahnhof']],
 		 ['s-bahn', ['sbahn', 'sbahnhof']],
 		 ['r-bahn', ['rbahn', 'rbahnhof']],
