@@ -61,6 +61,11 @@ sub center_name { shift->{center_name} }
 
 sub bbox { shift->{bbox} }
 sub skip_features { %{ shift->{skip_features} || {} } }
+sub skip_feature {
+    my($self, $feature) = @_;
+    return if !$self->{skip_features};
+    $self->{skip_features}->{$feature};
+}    
 
 sub is_osm_source { (shift->{source}||'') eq 'osm' }
 
