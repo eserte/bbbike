@@ -113,6 +113,12 @@ sub register {
 	  callback_3_std => sub { showmap_url_yahoo_de(@_) },
 	  ($images{YahooDe} ? (icon => $images{YahooDe}) : ()),
 	};
+    $main::info_plugins{__PACKAGE__ . "_Bing"} =
+	{ name => "bing (Bird's eye)",
+	  callback => sub { showmap_bing(@_) },
+	  callback_3_std => sub { showmap_url_bing(@_) },
+	  ($images{Bing} ? (icon => $images{Bing}) : ()),
+	};
     $main::info_plugins{__PACKAGE__ . '_AllMaps'} =
 	{ name => 'All Maps',
 	  callback => sub { show_links_to_all_maps(@_) },
@@ -403,6 +409,18 @@ HlLViVbDGDl7NE9/5z6+bmwRqnIgk2b6xQJf1suvROSabZmzv4bouB62ZdZJpoAxQ4TOdFK7
 21NS8QMtbZRlvVIlVJ27fWp4qJ5sW+auRRoGSsC4qo7q74YXReQS0GZb5kyz3Y/aA47rfazd
 QuC4XqExrlgs/vOYbtYInjQ7pmKxKLFmSmzLnARcYCTacwP0B/bXAvRRlokcAAAAAElFTkSu
 QmCC
+EOF
+    }
+
+    if (!defined $images{Bing}) {
+	$images{Bing} = $main::top->Photo
+	    (-format => 'gif',
+	     -data => <<EOF);
+R0lGODlhEAAQAIQPAP+mFf+sJP+xMv+3Qf+8UP/Hbf/Ne//Tiv/Ymf/ep//jtv/pxf/u0//0
+4v/58P//////////////////////////////////////////////////////////////////
+/yH5BAEKABAALAAAAAAQABAAAAVaICCOZGme5UAMaLk8S0u+MRAQ6/kySPP8PwVhBmwccIXX
+IzFSJgKlwg8hUkJNiYdDpHg0UIefyPAblgK+r4ihNZAIbAdLFED8HIuF78GYkwQGCnkLRzKG
+hyMhADs=
 EOF
     }
 }
@@ -756,6 +774,24 @@ sub showmap_url_yahoo_de {
 sub showmap_yahoo_de {
     my(%args) = @_;
     my $url = showmap_url_yahoo_de(%args);
+    start_browser($url);
+}
+
+######################################################################
+# Bing
+
+sub showmap_url_bing {
+    my(%args) = @_;
+    my $px = $args{px};
+    my $py = $args{py};
+    my $scale = 17 - log(($args{mapscale_scale})/3000)/log(2);
+    sprintf "http://www.bing.com/maps/default.aspx?v=2&cp=%s~%s&style=o&lvl=%s&sp=Point.%s_%s____",
+	$py, $px, $scale, $py, $px;
+}
+
+sub showmap_bing {
+    my(%args) = @_;
+    my $url = showmap_url_bing(%args);
     start_browser($url);
 }
 
