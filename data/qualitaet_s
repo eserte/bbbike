@@ -32,7 +32,7 @@ B96a: Radweg Richtung N, OK	Q0 9228,23643 9146,23843 8984,24078 8891,24330 8826,
 Hobrechtsfelder Chaussee (bis Kurve): OK	Q0 15589,27116 15231,26587 14859,26029 14472,25449 14314,25193 14219,25013
 Hobrechtsfelder Chaussee (ab Kurve)	Q0 15589,27116 15711,27928 15777,28037
 Wisbyer Str.: Asphalt	Q0 11019,16465 11289,16423 11397,16405 11448,16398 11470,16394 11542,16384 11632,16373 11673,16367 11727,16358 11750,16354 11808,16343 11829,16339 11889,16328 11936,16302 12026,16247 12091,16209
-Weserstr.: Kopfsteinpflaster, schmale Verbundsteinpflaster-Radwege	Q1 11881,9202 11993,9211 12074,9217 12148,9209
+Weserstr.: Kopfsteinpflaster, schmale Verbundsteinpflaster-Radwege	Q1 11888,9189 11993,9211 12074,9217 12148,9209
 Weserstr.: asphaltiert, schmale Verbundsteinpflaster-Radwege	Q0 12148,9209 12180,9193 12322,9124
 Weserstr.: Kopfsteinpflaster, schmale Verbundsteinpflaster-Radwege	Q1 12322,9124 12402,9080 12480,9037 12531,9009 12590,8977 12740,8862 12881,8750 13029,8632 13124,8562 13217,8493 13384,8354 13566,8212 13724,8090
 Jessnerstr.: Asphalt mit Aufpflasterungen	Q0 15080,11905 14977,11754 14946,11697 14849,11539
@@ -458,7 +458,8 @@ Görlitzer Park: teils fester sandiger Weg	Q1 12671,10042 12686,10045 12690,10062
 Görlitzer Park: teils fester sandiger Weg	Q1 12761,10195 12769,10211 12774,10222
 Görlitzer Park: teils fester sandiger Weg	Q1 13145,9920 12869,10071 12802,10097
 Görlitzer Park: teils fester sandiger Weg	Q1 12670,10160 12559,10220 12459,10256 12406,10368 12328,10442
-Görlitzer Park: teils fester sandiger Weg	Q1 12817,9964 12855,10035 12869,10071 12904,10141 12911,10156
+Görlitzer Park: teils fester sandiger Weg, bei Regen Pfützen	Q1 12817,9964 12855,10035 12869,10071
+Görlitzer Park: Gehwegplatten	Q1 12869,10071 12904,10141 12911,10156
 Görlitzer Park, Rondell: teils fester sandiger Weg	Q1 12802,10097 12737,10051 12690,10062 12659,10119 12670,10160 12712,10192 12761,10195 12801,10146 12802,10097
 Görlitzer Park: asphaltiert	Q0 12802,10097 12670,10160
 Görlitzer Park: teils fester sandiger Weg	Q1 12507,10130 12509,10189 12559,10220
@@ -3385,6 +3386,8 @@ Paddlerweg: Kopfsteinpflaster	Q2 -3559,11227 -3625,11250 -3679,11248
 Spinnpfad: Asphalt	Q0 21194,4996 21203,5054
 (Mentzelstr. - Mentzelpark): Asphalt	Q0 21726,4896 21741,4889 21778,4916
 Zwischen den Giebeln: Asphalt	Q0 -7225,14572 -7221,14692
+(Urbanstr. - Werner-Düttmann-Platz): schlechtes Kopfsteinpflaster	Q3 11383,9446 11378,9305
+(Werner-Düttmann-Platz - Graefestr.): schlechtes Kopfsteinpflaster	Q3 11378,9305 11208,9345
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
 Riemeisterstr.: mäßiges Kopfsteinpflaster, aber asphaltierte Radwege	Q1 346,4833 294,4916 158,5103 103,5123
 Pücklerstr.: Fahrbahn mit schlechtem Kopfsteinpflaster, Radweg OK	Q1 2688,7067 2576,7026 2465,6984 2403,6962 2266,6911 2155,6873 2130,6865 2054,6840 1961,6820
@@ -7434,9 +7437,13 @@ Straße 9 (Wartenberg): guter Asphalt	Q0 19397,20407 19384,20439 19430,20561 1950
 Frankentaler Ufer: alter, unebener Plattenweg; starke Vegetation	Q2 7159,4023 7132,4028 7096,4051 6890,4124 6859,4085
 Heribaldstr.: Asphalt	Q0 25029,10462 25022,10715
 Rühmkorffstr.: guter Beton	Q0 5697,1098 5620,1153 5573,1211
+Steinheilpfad: Betonplatten	Q0 5585,1275 5573,1211 5455,1150
 Schmidtstr.: guter Asphalt	Q0 23412,12562 23299,12600 23086,12565 22980,12545
 Finsterberger Str.: fester Sandweg	Q2 23233,12406 23129,12496 23086,12565
 Marzahnstr.: guter Asphalt	Q0 2762,20648 2793,20550 2810,20455 2825,20387
+Annastr.: schlechtes Kopfsteinpflaster	Q3 5863,2825 5930,2671
+Ruthstr.: mäßiges Kopfsteinpflaster	Q2 6129,3203 6224,3112
+Saarburger Str.: guter Beton	Q0 6529,3480 6635,3520
 Gerdsmeyerweg - Marienhöher Weg: Asphalt	Q0 8036,5309 7944,5237
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206
 Richard-Ermisch-Str.: Asphalt	Q0 14250,13281 14224,13206 14207,13152 14177,13065 14163,13025 14130,12926 14096,12827

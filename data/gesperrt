@@ -732,6 +732,9 @@ Zeltinger Platz	1s 2404,25187 2355,25252 2395,25273 2446,25265 2490,25211 2486,2
 Ludolfinger Platz	1s 2277,25033 2245,25016 2205,25042 2192,25083 2216,25117 2277,25094 2285,25059 2277,25033
 Sewanstr. - Balatonstr.	1s 17705,10232 17741,10386
 Hönower Str. (Karlshorst) (Ausweichen auf Sandbankette möglich)	1s 18377,9366 18490,9387
+unbequem passierbarer Mittelstreifen (hohe Kanten)	3nocross::ignrte 11274,9492 11383,9446 11509,9392
+Werner-Düttmann-Pl. -> Urbanstr.: unbequem passierbarer Mittelstreifen (hohe Kanten)	3::igndisp 11378,9305 11383,9446 11274,9492
+Urbanstr. -> Werner-Düttmann-Pl.: unbequem passierbarer Mittelstreifen (hohe Kanten)	3::igndisp 11509,9392 11383,9446 11378,9305
 Mittelstreifen	3nocross::ignrte 6689,17911 6711,17839 6739,17749
 Aroser Allee -> Bieler Str.: Mittelstreifen	3::igndisp 6689,17911 6711,17839 6815,17871
 Bieler Str. -> Aroser Allee: Mittelstreifen	3::igndisp 6815,17871 6711,17839 6739,17749
@@ -2374,3 +2377,4 @@ Am Tierpark, linker Gehweg	1::igndisp 18715,10003 18647,10172
 Alt-Friedrichsfelde, linker Gehweg	1::igndisp 18228,11656 18556,11688 18778,11742 19005,11767 19750,11730
 Landsberger Allee, linker Gehweg	1::igndisp 15430,14272 15256,14237
 Sonnenallee, linker Gehweg	1::igndisp 13457,8069 13474,8060
+Urbanstr.	1::igndisp 11861,9183 11888,9189
