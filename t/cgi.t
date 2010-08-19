@@ -81,6 +81,10 @@ if (!@urls) {
     #} else {
     #	diag "Skipping tests on $url2";
     #}
+    my $bbbike_config_file = "$FindBin::RealBin/../cgi/bbbike.cgi.config";
+    if (!-e $bbbike_config_file) {
+	diag "Cannot find BBBike config file $bbbike_config_file, some tests may fail!";
+    }
 }
 
 my $ortsuche_tests = 11;
