@@ -31,7 +31,7 @@ BEGIN {
     }
 }
 
-BEGIN { plan tests => 9 }
+BEGIN { plan tests => 10 }
 
 my $cookie_jar_file = File::Temp::tempnam(File::Spec->tmpdir, "bbbike_cookies_");
 END { unlink $cookie_jar_file if defined $cookie_jar_file }
@@ -79,7 +79,7 @@ my $pref = {speed => 20,
     $mech->cookie_jar($cookie_jar);
     my $res = $mech->get("$bbbike_cgi?$qs");
     ok($res->is_success);
-    for my $q (qw(speed cat quality ampel green fragezeichen)) {
+    for my $q (qw(speed cat quality ampel green fragezeichen ferry)) {
 	is($mech->current_form->value("pref_$q"), $pref->{$q}, "Expected preference $q");
     }
 }
