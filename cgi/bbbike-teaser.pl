@@ -39,6 +39,7 @@ sub teaser {
 				#teaser_sternfahrt_changes(),
 				#teaser_dobli(),
 				_teaser_is_iphone() ? teaser_iphone() : (),
+				teaser_twitter(),
 			       ];
     $teasers_optional{"en"} = [],
     $teasers_mandatory{"en"} = [
@@ -53,6 +54,7 @@ sub teaser {
 				#teaser_sternfahrt_changes(),
 				#teaser_dobli(),
 				_teaser_is_iphone() ? teaser_iphone() : (),
+				teaser_twitter(),
 			       ];
 
     my $use_lang = $lang eq 'en' ? "en" : "de";
@@ -153,6 +155,23 @@ sub teaser_link {
 <div class="teaser"><a href="$bbbike_url?info=1#link">Link auf BBBike setzen</a></div>
 EOF
 }
+
+sub teaser_twitter {
+    if ($lang eq 'en') {
+	<<EOF;
+<div class="teaser">
+<a href="http://twitter.com/BBBikeDE/"><img style="border:0px;" src="http://www.bbbike.org/images/tweetn.png" title="Follow BBBike on Twitter" alt=""></a>
+</div>
+EOF
+    } else {
+	<<EOF;
+<div class="teaser">
+<a href="http://twitter.com/BBBikeDE/"><img style="border:0px;" src="http://www.bbbike.org/images/tweetn.png" title="Folge BBBike auf Twitter" alt=""></a>
+</div>
+EOF
+   }
+}
+
 
 sub teaser_mapserver {
     my $mapserver_url;
