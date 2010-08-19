@@ -18,7 +18,7 @@ use strict;
 use vars qw($VERSION);
 $VERSION = sprintf("%d.%02d", q$Revision: 1.10 $ =~ /(\d+)\.(\d+)/);
 
-sub encode_possible_utf8_params {
+sub decode_possible_utf8_params {
     my($q, $from, $to) = @_;
     eval {
 	require Encode;

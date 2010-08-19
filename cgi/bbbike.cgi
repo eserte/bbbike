@@ -862,7 +862,7 @@ CGI->import('-no_xhtml');
 
 $q = new CGI;
 # Used for $use_utf8=1
-eval{BBBikeCGIUtil::encode_possible_utf8_params($q);};warn $@ if $@;
+eval{BBBikeCGIUtil::decode_possible_utf8_params($q);};warn $@ if $@;
 
 undef $g_str; # XXX because it may already contain landstrassen etc.
 undef $net; # dito

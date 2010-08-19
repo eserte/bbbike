@@ -29,7 +29,7 @@ use_ok("BBBikeCGIUtil");
 
 {
     my $q = CGI->new({movemap => "Süd"});
-    BBBikeCGIUtil::encode_possible_utf8_params($q, "not_used", "not_used");
+    BBBikeCGIUtil::decode_possible_utf8_params($q, "not_used", "not_used");
     is($q->param("movemap"), "Süd");
 }
 
@@ -38,7 +38,7 @@ SKIP: {
 	if !eval { require Encode; 1 };
     my $sued_utf8 = Encode::encode("utf-8", "Süd");
     my $q = CGI->new({movemap => $sued_utf8});
-    BBBikeCGIUtil::encode_possible_utf8_params($q, "not_used", "not_used");
+    BBBikeCGIUtil::decode_possible_utf8_params($q, "not_used", "not_used");
     my $success = is($q->param("movemap"), "Süd");
     if (!$success && $Encode::VERSION lt "2.08") {
 	diag "Failure expected with this Encode version ($Encode::VERSION)";
