@@ -129,10 +129,11 @@ sub show_mini_images {
 			 $rec->{latitude}  > $maxy || $rec->{latitude}  < $miny);
 		my($sx,$sy) = $Karte::Polar::obj->map2standard($rec->{longitude}, $rec->{latitude});
 		my($tx,$ty) = main::transpose($sx,$sy);
-		my($fh, $imgfile) = tempfile(UNLINK => 1, SUFFIX => "_panoramio.jpg");
-		my $resp = $ua->get($rec->{photo_file_url}, ':content_file' => $imgfile);
+		my($fh, $tempfile) = tempfile(UNLINK => 1, SUFFIX => "_panoramio.jpg");
+		my $resp = $ua->get($rec->{photo_file_url}, ':content_file' => $tempfile);
 		if ($resp->is_success) {
-		    my $p = $main::c->Photo(-file => $imgfile);
+		    my $p = $main::c->Photo(-file => $tempfile);
+		    unlink $tempfile; # delete temporary as soon as possible
 		    push @photos, $p;
 		    close $fh; # also unlinks file
 		    (my $medium_url = $rec->{photo_file_url}) =~ s{/thumbnail/}{/medium/};

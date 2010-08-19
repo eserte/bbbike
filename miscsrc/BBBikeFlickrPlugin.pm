@@ -136,10 +136,11 @@ sub show_mini_images {
 	    my $page_url = "http://www.flickr.com/photos/$owner/$id";
 	    my($sx,$sy) = $Karte::Polar::obj->map2standard($lon, $lat);
 	    my($tx,$ty) = main::transpose($sx,$sy);
-	    my($fh, $imgfile) = tempfile(UNLINK => 1, SUFFIX => "_flickr.jpg");
-	    my $resp = $ua->get($thumb_url, ':content_file' => $imgfile);
+	    my($fh, $tempfile) = tempfile(UNLINK => 1, SUFFIX => "_flickr.jpg");
+	    my $resp = $ua->get($thumb_url, ':content_file' => $tempfile);
 	    if ($resp->is_success) {
-		my $p = $main::c->Photo(-file => $imgfile);
+		my $p = $main::c->Photo(-file => $tempfile);
+		unlink $tempfile; # delete temporary as soon as possible
 		push @photos, $p;
 		close $fh; # also unlinks file
 		$main::c->createImage($tx,$ty, -image => $p, -tags => ['flickr', $page_url, "ImageURL: $photo_url"]);
