@@ -13890,6 +13890,20 @@ sub show_info {
 	    $linkcount++;
 	}
 
+	my($px0,$py0,$px1,$py1);
+	{
+	    my($x0,$y0,$x1,$y1) = $c->get_corners;
+	    my($sx0,$sy0,$sx1,$sy1) = (anti_transpose($x0,$y0),
+				       anti_transpose($x1,$y1));
+	    if ($city_obj->can("standard_to_polar")) {
+		($px0,$px0) = $city_obj->standard_to_polar($sx0,$sy0);
+		($px1,$px1) = $city_obj->standard_to_polar($sx1,$sy1);
+	    } else {
+		($px0,$py0) = $Karte::Polar::obj->trim_accuracy($coord_system_obj->map2map($Karte::Polar::obj, $sx0, $sy0));
+		($px1,$py1) = $Karte::Polar::obj->trim_accuracy($coord_system_obj->map2map($Karte::Polar::obj, $sx1, $sy1));
+	    }
+	}
+
 	for my $key (keys %info_plugins) {
 	    my $plugin = $info_plugins{$key};
 
@@ -13897,6 +13911,10 @@ sub show_info {
 			street => $strname,
 			px => $px,
 			py => $py,
+			px0 => $px0, # left
+			px1 => $px1, # right
+			py0 => $py0, # top
+			py1 => $py1, # bottom
 			mapscale_scale => $mapscale_scale,
 			tags => \@tags,
 		       );
