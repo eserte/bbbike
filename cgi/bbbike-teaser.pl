@@ -157,19 +157,34 @@ EOF
 }
 
 sub teaser_twitter {
-    if ($lang eq 'en') {
-	<<EOF;
+    if (1) { # purely textual
+	if ($lang eq 'en') {
+	    <<'EOF';
+<div class="teaser"><a href="http://twitter.com/BBBikeDE/">BBBikeDE @ Twitter</a>
+</div>
+EOF
+	} else {
+	    <<'EOF';
+<div class="teaser">
+<a href="http://twitter.com/BBBikeDE/">BBBikeDE bei Twitter</a>
+</div>
+EOF
+	}
+    } else { # graphical
+	if ($lang eq 'en') {
+	    <<EOF;
 <div class="teaser">
 <a href="http://twitter.com/BBBikeDE/"><img style="border:0px;" src="http://www.bbbike.org/images/tweetn.png" title="Follow BBBike on Twitter" alt=""></a>
 </div>
 EOF
-    } else {
-	<<EOF;
+	} else {
+	    <<EOF;
 <div class="teaser">
 <a href="http://twitter.com/BBBikeDE/"><img style="border:0px;" src="http://www.bbbike.org/images/tweetn.png" title="Folge BBBike auf Twitter" alt=""></a>
 </div>
 EOF
-   }
+	}
+    }
 }
 
 
