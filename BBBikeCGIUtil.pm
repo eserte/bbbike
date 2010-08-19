@@ -1,10 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeCGIUtil.pm,v 1.10 2009/04/04 11:08:44 eserte Exp $
-# Author: Slaven Rezic
-#
-# Copyright (C) 2006 Slaven Rezic. All rights reserved.
+# Copyright (C) 2006,2010 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -16,10 +13,10 @@ package BBBikeCGIUtil;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.10 $ =~ /(\d+)\.(\d+)/);
+$VERSION = 1.11;
 
 sub decode_possible_utf8_params {
-    my($q, $from, $to) = @_;
+    my($q) = @_;
     eval {
 	require Encode;
 	local $^W = 0; # version not numeric warning
