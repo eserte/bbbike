@@ -235,6 +235,8 @@ my @req_table =
    'Geocoding über Cloudmade'],
   [qw/Geo::Coder::OSM	0	all	0	plugin/,
    'Geocoding mit OpenStreetMap-Daten'],
+  [qw/Flickr::API	0	all	0	plugin/,
+   'Flickr-Bilder in BBBike anzeigen'],
 
   [qw/Image::Info	1.29	all	0	test/],
   [qw/Test::More	0	all	0	test/],

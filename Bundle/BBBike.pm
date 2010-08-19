@@ -181,6 +181,10 @@ Geo::Coder::Bing	- Geocoding über Bing
 
 Geo::Cloudmade	- Geocoding über Cloudmade
 
+Geo::Coder::OSM	- Geocoding mit OpenStreetMap-Daten
+
+Flickr::API	- Flickr-Bilder in BBBike anzeigen
+
 Image::Info 1.29
 
 Test::More
