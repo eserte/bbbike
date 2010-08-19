@@ -814,23 +814,10 @@ EOF
 generatemods: Strassen/Generated.pm
 
 bundles:
-	if [ ! -h Bundle/make_bundle ] ; then \
-	    ln -s ../Makefile.PL Bundle/make_bundle; \
-	fi
-	if [ ! -h Bundle/make_small_bundle ] ; then \
-	    ln -s ../Makefile.PL Bundle/make_small_bundle; \
-	fi
-	if [ ! -h Bundle/make_cgi_bundle ] ; then \
-	    ln -s ../Makefile.PL Bundle/make_cgi_bundle; \
-	fi
-	if [ ! -h Bundle/make_windist_bundle ] ; then \
-	    ln -s ../Makefile.PL Bundle/make_windist_bundle; \
-	fi
-	cd Bundle && \
-	    $(FULLPERL) make_bundle && \
-	    $(FULLPERL) make_small_bundle && \
-	    $(FULLPERL) make_cgi_bundle && \
-	    $(FULLPERL) make_windist_bundle
+	$(FULLPERL) Makefile.PL -action make_bundle && \
+	    $(FULLPERL) Makefile.PL -action make_small_bundle && \
+	    $(FULLPERL) Makefile.PL -action make_cgi_bundle && \
+	    $(FULLPERL) Makefile.PL -action make_windist_bundle
 
 # OSD bundles are not supported anymore
 bundles-osd:
