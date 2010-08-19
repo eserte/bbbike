@@ -1777,16 +1777,7 @@ userdel	q4::inwork; 10614,19907 10742,19632
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => '096401484',
-         'until' => 1282168800,
-         'text' => 'Petershagen/Eggersdorf: K6422: Kanal-/Leitungsbau (TW) OL Petershagen, 03.08.2009 bis 18.08.2010 ',
-         'from' => 1280678341,
-         'id' => 2109,
-         'data' => 'userdel	q4::inwork 35900,13643 35427,13624
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'IM_016116',
          'until' => 1292598000,
@@ -1845,6 +1836,16 @@ userdel	q4::inwork; 10614,19907 10742,19632
          'from' => 1281247200,
          'id' => 2117,
          'data' => 'userdel	2::inwork -2815,-3574 -3368,-4430
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => '106900748',
+         'until' => 1291158000,
+         'text' => 'Belzig: K6933: Brückeninstandsetzung / Streckenausbau Bad Belzig - Borne, 16.08.2010 bis 30.11.2010 ',
+         'from' => 1282168322,
+         'id' => 2118,
+         'data' => 'userdel	2::inwork -45941,-31977 -46134,-32389 -46514,-32785
 ',
          'type' => 'gesperrt'
        }

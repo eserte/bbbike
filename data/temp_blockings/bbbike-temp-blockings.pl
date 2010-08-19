@@ -18110,4 +18110,13 @@ EOF
 userdel	2::inwork -2815,-3574 -3368,-4430
 EOF
      },
+     { from  => 1282168322, # 2010-08-18 23:52
+       until => 1291158000, # 2010-12-01 00:00
+       text  => 'Belzig: K6933: Brückeninstandsetzung / Streckenausbau Bad Belzig - Borne, 16.08.2010 bis 30.11.2010 ',
+       type  => 'gesperrt',
+       source_id => '106900748',
+       data  => <<EOF,
+userdel	2::inwork -45941,-31977 -46134,-32389 -46514,-32785
+EOF
+     },
     );
