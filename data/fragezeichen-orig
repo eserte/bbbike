@@ -158,6 +158,7 @@ Fahrradstraße in der Lauenburger Str.	?::projected 5883,4985 5909,5072 5939,5169
 #: section ignorieren vvv
 #: section Straßen in Bau und Planung vvv
 # 
+#: next_check: 2011-05-01
 An der Barthschen Promenade: vielleicht wird die Straße in Zukunft sich hier befinden	?::projected 8954,8914 8814,8917
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20100804.1210.305109.html
 #: next_check: 2010-10-07
@@ -233,7 +234,10 @@ Neuer Garten: neue Radwegverbindung zwischen Gotischer Bibliothek und Alleestr.	
 #: by: (URL existiert nicht mehr) http://www.potsdam.de/cms/beitrag/10058808/757395/
 #: next_check: 2010-08-01
 #: last_checked: 2010-05-22
-Am Neuen Garten/Alleestr.: Planung von Schutzstreifen	?::inwork -12265,-418 -12370,-354 -12435,-222 -12505,-60 -12528,-11 -12557,11 -12637,-8 -12661,-14 -12840,-69 -12961,-136 -13068,-115 -13111,-136
+Am Neuen Garten: Planung von Schutzstreifen	?::inwork -12265,-418 -12370,-354 -12435,-222 -12505,-60 -12528,-11 -12557,11
+#: next_check: 2010-08-01
+#: last_checked: 2010-05-22
+Alleestr.: Planung von Schutzstreifen	?::inwork -12557,11 -12637,-8 -12661,-14 -12840,-69 -12961,-136 -13068,-115 -13111,-136
 #: XXX Zugleich Benennung von "Alter Markt" (im Gegensatz zum auch vorhandenen "Am Alten Markt") in der Gegend
 Humboldtstr. (Potsdam): alte Straße wird hier wieder benannt	?::inwork -12771,-1633 -12766,-1598
 #: by: MoPo 2009-08-01, soll 2009 realisiert werden vvv
@@ -314,8 +318,8 @@ Ahrensfelder Chaussee: Radstreifen in Bau, bis 2008-10	? 20160,18301 20460,18420
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20060915.1800.47562.html
 #: by: http://www.cdu-fraktion-tk.de/image/inhalte/file/Amtsblatt_Nr__2010-14.pdf (Name der Straße)
 #: XXX Eintrag in Berlin.coords.data fehlt
-#: last_checked: 2010-07-06 (Asphaltierung an der Naumannstr. fehlt)
-#: next_check: 2010-08-15
+#: last_checked: 2010-08-19 (Asphaltierung an der Naumannstr. fehlt)
+#: next_check: 2010-10-15
 Wilhelm-Kabus-Str.: neue Straße wird gebaut, die Naumannstr. wird später verkehrsberuhigt	?::projected 7716,8048 7844,8049 7861,8217 7893,8327 7942,8380 8078,8772
 #: next_check: 2010-12-31
 Verbindung zwischen Leuthener Platz und General-Pape-Str. (evtl. mit Verlängerung) inkl. Brücke über die Bahnstrecke für Fußgänger und Radfahrer, Realisierung bis 2010-12-31	?::projected 7716,8356 7837,8354 7893,8327 8088,8283 8264,8289
@@ -1139,8 +1143,7 @@ Spreeradweg: Qualität? ausgeschildert?	? 35912,-1171 35978,-1196 36008,-1254 361
 Steinfurth - Spreeradweg: Qualität?	? 35828,-2672 35879,-2595 36001,-2511 36267,-2143 36290,-2080 36257,-1948 36308,-1922 36387,-1760
 Spreeradweg - Straße nach Hangelsberg: Qualität?	? 37316,-2196 37458,-2229 37613,-2204 37644,-1788 37560,-1526 37565,-1455 37661,-1285 37532,-1145 37527,-1102 37598,-1021 37684,-950 37892,-866 38002,-856 38294,-896 38563,-873 38697,-909 39142,-1089 39341,-1057
 Hangelsberg - A10: Qualität? Für Radfahrer überhaupt benutzbar?	? 37527,-1102 37397,-1192 36991,-1329 36678,-1432
-Gosener Str. (Eichwalde): Qualität?	? 26186,-2832 26102,-2822 25580,-2673
-Bahnhofstr. (Eichwalde): Qualität?	? 26102,-2822 25730,-3091 25567,-3189 25400,-3285 25290,-3350 25179,-3418 25085,-3477
+Gosener Str. (Eichwalde): Qualität westlich der Bahnhofstr.?	? 26102,-2822 25580,-2673
 August-Bebel-Allee (Eichwalde): Qualität?	? 24901,-3076 25085,-3477 25320,-4049 25368,-4182
 (Hüttenweg - Jagdschloß Grunewald): Wegführung? Qualität (fester Waldweg)?	? 869,6085 866,6328 880,6645
 (Waldweg Grunewald): Wegführung? Qualität (fester Waldweg)?	? 1512,6553 1364,6691
