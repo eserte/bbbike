@@ -2004,7 +2004,9 @@ my $handicap_check_index;
 my $sperre_check_index;
 my $ampeln_check_index;
 my $fragezeichen_check_index;
+my $nolighting_check_index;
 my $gruene_wege_check_index;
+my $vorfahrt_check_index;
 unless($skip_features{"strassen"}) {
     $strasse_photo = load_photo($misc_frame, 'strasse');
     $strasse_check = $misc_frame->$Checkbutton
@@ -2204,7 +2206,9 @@ unless($skip_features{"strassen"}) {
 	$strcm->checkbutton(-label => M"Unbeleuchtete Straßen",
 			    -variable => \$str_draw{'nl'},
 			    -command => sub { plot('str','nl') },
+			    -accelerator => 'Shift-N',
 			   );
+	$nolighting_check_index = $strcm->index('last');
     }
     unless ($skip_features{"green"}) {
 	$strcm->checkbutton(-label => M"Grüne Wege",
@@ -2218,7 +2222,9 @@ unless($skip_features{"strassen"}) {
 	$strcm->checkbutton(-label => M"Vorfahrt",
 			    -variable => \$p_draw{'vf'},
 			    -command => sub { plot('p','vf') },
+			    -accelerator => 'Shift-V',
 			   );
+	$vorfahrt_check_index = $strcm->index('last');
     }
 
     $strcm->cascade(-label => M"Kommentare");
@@ -4328,8 +4334,12 @@ if (!$MM_DRAG_IS_OBSOLETE) {
 		       $strcm->invoke($handicap_check_index) if $strcm && defined $handicap_check_index;
 		   }
 	       });
+    bind_nomod($top, '<N>' => sub { $strcm->invoke($nolighting_check_index) })
+	if defined $nolighting_check_index;
     bind_nomod($top, '<G>' => sub { $strcm->invoke($gruene_wege_check_index) })
 	if defined $gruene_wege_check_index;
+    bind_nomod($top, '<V>' => sub { $strcm->invoke($vorfahrt_check_index) })
+	if defined $vorfahrt_check_index;
     bind_nomod($top, "<question>" => sub {
 	$strcm->invoke($fragezeichen_check_index)
     })
