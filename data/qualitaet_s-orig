@@ -3730,6 +3730,10 @@ Zwischen den Giebeln: Asphalt	Q0 -7225,14572 -7221,14692
 (Urbanstr. - Werner-Düttmann-Platz): schlechtes Kopfsteinpflaster	Q3 11383,9446 11378,9305
 #: note: mit absichtlichen "Holpern"
 (Werner-Düttmann-Platz - Graefestr.): schlechtes Kopfsteinpflaster	Q3 11378,9305 11208,9345
+#: by: christian (...chrisb...):
+Schäferstege - Parkanlage: guter Asphalt	Q0 13366,20897 13332,20898 13298,20917 13244,20903
+#: XXX: von der Bahn aus gesehen, genauere Qualität prüfen!
+(Teerofenweg): Waldweg	Q2+ -7067,-36 -6411,-868
 ######################### User Contributions #################################
 #: by: Dominik Seelow vvv
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
@@ -10391,6 +10395,9 @@ Rustweg: OK	Q0 -2827,18639 -2673,18634 -2595,18629 -2523,18627 -2455,18620
 #: by: ^^^
 #: by: Timm (wille):
 Libellenstr.: schlechtes Kopfsteinpflaster	Q3 -3703,2137 -3699,2085 -3707,2037 -3742,1980 -3738,1929 -3602,1799 -3559,1760
+#: by: T.Wille:
+#: corrected_by: srt/policy ("mäßige Qualität" -> Q1)
+Jänickestr. - Dahlemer Weg: Asphalt, teilweise Verbundsteinpflaster	Q1 1702,1278 1742,1118
 #: by: Alexandra (kaffeeschluerfer): vvv
 Girlitzweg: guter Beton	Q0- 15273,3269 15321,3332 15373,3403
 Girlitzweg: Asphalt	Q0 15176,3136 15273,3269
@@ -11515,6 +11522,18 @@ Finsterberger Str.: fester Sandweg	Q2 23233,12406 23129,12496 23086,12565
 #: note: "Kleine Holperer, aber keine großen Beeinträchtigungen"
 Marzahnstr.: guter Asphalt	Q0- 2762,20648 2793,20550 2810,20455 2825,20387
 #: by: guylian vvv
+#: note: anonymous meinte "Asphalt" ohne weitere Qualitätsbestimmung
+Brigittenstr.: guter, teils mäßiger Asphalt	Q1 6044,3110 6138,3022 6208,2954
+Brigittenstr.: guter, teils mäßiger Asphalt	Q1 6226,2936 6244,2910 6304,2825
+Ruthstr.: mäßiger Asphalt	Q1 6371,2955 6330,3005
+#: note: Robert Buettner meint: "breite Parkwege"
+(Marienhöhe): Asphalt	Q0 8070,5325 8075,5307 8116,5276 8115,5245 8052,5154 8115,5086
+#: note: using DSC00014.JPG
+#: note: Laternen existieren
+#: note: Robert Buettner meinte "Treppe mit 6 Stufen, Fußweg"
+(Attilastr. - Marienhöher Weg): Kleinsteinpflaster	Q1 8018,4823 8002,4903 7986,4984
+#: note: Der Weg ist prinzipiell befahrbar, beleuchtet und von sehr guter Qualität. Auf beiden Einfahrten stehen aber Schilder, dass Radfahren verboten ist. Auf der Seite der Charlottenstraße ist ein Tor, wo aber kein Schloss drin ist, also immer offen.
+Reginenweg: Asphalt	Q0 6484,3292 6482,3327 6431,3417 6426,3425
 Annastr.: schlechtes Kopfsteinpflaster	Q3 5863,2825 5930,2671
 Ruthstr.: mäßiges Kopfsteinpflaster	Q2 6129,3203 6224,3112
 Saarburger Str.: guter Beton	Q0 6529,3480 6635,3520

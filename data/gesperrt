@@ -625,9 +625,9 @@ Zimmerstr.	1 -13646,-1168 -13876,-1226
 Platz der Einheit	1 -12755,-1131 -12741,-1197 -12718,-1327
 Puschkinallee	1 -13042,807 -12912,783 -12868,738 -12827,629 -12815,554 -12811,533
 Geschwister-Scholl-Str.	1 -14215,-1687 -14151,-1656 -14115,-1678
-Straßenbahntrasse	3nocross::ignrte -12773,-1544 -12795,-1499 -12833,-1365
-Friedrich-Ebert-Str. -> Schwertfegerstr.: Straßenbahntrasse	3::igndisp -12773,-1544 -12795,-1499 -12870,-1493
-Schwertfegerstr. -> Friedrich-Ebert-Str.: Straßenbahntrasse	3::igndisp -12870,-1493 -12795,-1499 -12833,-1365
+Straßenbahntrasse	3nocross::ignrte -12780,-1545 -12793,-1498 -12833,-1365
+Friedrich-Ebert-Str. -> Schwertfegerstr.: Straßenbahntrasse	3::igndisp -12780,-1545 -12793,-1498 -12870,-1493
+Schwertfegerstr. -> Friedrich-Ebert-Str.: Straßenbahntrasse	3::igndisp -12870,-1493 -12793,-1498 -12833,-1365
 tragen (Treppe, 75 Stufen und etliche Rampenabschnitte)	0:180:-201 -13772,-623
 Brücke mittlerweile gesperrt	2 -19183,7299 -19150,7320
 Prof.-Dr.-Helmert-Str.: Schranke	BNP:3:-93 -7969,-1659
@@ -1533,6 +1533,7 @@ Lindenstr. -> Bhf.str.: Straßenbahntrasse	3::igndisp 22046,5305 22043,5346 21954
 Straßenbahngleise	3nocross::ignrte 20834,4035 21053,4162 21146,4229
 Freystadter Weg -> Ottomar-Geschke-Str.: Straßenbahngleise	3::igndisp 21017,4220 21053,4162 21146,4229
 Dörpfeldstr. -> Freystadter Weg: Straßenbahngleise	3::igndisp 20834,4035 21053,4162 21017,4220
+tragen, mehrere Treppen à 3 Stufen	0:30:-191 8002,4903
 tragen, enge Treppe (11 Stufen)	0:20:-259 7132,4028
 tragen (64 Stufen)	0:100:-158 -1720,3940
 tragen (2 Stufen)	0:5:-204 -1550,3883
@@ -1817,6 +1818,7 @@ Drängelgitter	BNP:3:-157 63721,42792
 Schranke, kann auch mit Anhänger umfahren werden	BNP:1:-168 49137,24422
 Drängelgitter	BNP:3:24:trailer=6 3644,8456
 Poller, Abstand 80cm (mit Anhänger über Gehweg umfahren)	BNP:1:1:trailer=10 7816,5682
+Tor	BNP:3:-209 6431,3417
 Radweg parallel zur Autobahn ist wegen Bauarbeiten am BAB gesperrt	2:inwork 5062,14681 4676,14534 3707,14303 3595,14277
 Brücke über A10: Sperrung vom 15.02.2010 bis 01.10.2010	2:inwork 15337,24593 15490,24848
 Wegedornbrücke: Vollsperrung, Neubau	2:inwork 20385,593 20442,564 20510,530

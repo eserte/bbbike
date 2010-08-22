@@ -1790,15 +1790,7 @@ userdel	q4::inwork; 10614,19907 10742,19632
        },
        undef,
        undef,
-       {
-         'until' => 1282341600,
-         'text' => 'Fahrbahnsanierung am Dahlemer Weg vom 02.08.2010 bis 20.08.2010, zwischen der McNair-Promenade und der Seehofstraße in Richtung Norden gesperrt ',
-         'from' => 1280613600,
-         'id' => 2113,
-         'data' => 'userdel	q4::inwork; 1785,1338 1825,1534 1848,1647 1854,1677 1873,1772 1945,2127
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'IM_016121',
          'until' => 1285941600,

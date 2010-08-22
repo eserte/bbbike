@@ -787,7 +787,7 @@ Zimmerstr.	1 -13646,-1168 -13876,-1226
 Platz der Einheit	1 -12755,-1131 -12741,-1197 -12718,-1327
 Puschkinallee	1 -13042,807 -12912,783 -12868,738 -12827,629 -12815,554 -12811,533
 Geschwister-Scholl-Str.	1 -14215,-1687 -14151,-1656 -14115,-1678
-Friedrich-Ebert-Str.: Straßenbahntrasse	3nocross -12773,-1544 -12795,-1499 -12833,-1365
+Friedrich-Ebert-Str.: Straßenbahntrasse	3nocross -12780,-1545 -12793,-1498 -12833,-1365
 #: XXX_prog: Treppe sollte besser als -13733,-722 -13772,-623 -13784,-537 dargestellt sein, wenn es geht
 tragen (Treppe, 75 Stufen und etliche Rampenabschnitte)	0:180 -13772,-623
 #: by: rjoop
@@ -1184,6 +1184,8 @@ Dörpfeldstr.: Straßenbahngleise	3nocross 20834,4035 21053,4162 21146,4229
 # Stellen, an denen getragen werden muß:
 # die Zahl hinter dem ":" entspricht ungefähr den verlorenen Sekunden
 # 
+#: by: guylian (+ photo)
+tragen, mehrere Treppen à 3 Stufen	0:30 8002,4903
 #: by: Violet Schäfer:
 tragen, enge Treppe (11 Stufen)	0:20 7132,4028
 #: by: MichaelM vvv
@@ -1592,6 +1594,9 @@ Drängelgitter	BNP:3 63721,42792
 Schranke, kann auch mit Anhänger umfahren werden	BNP:1 49137,24422
 Drängelgitter	BNP:3::trailer=6 3644,8456
 Poller, Abstand 80cm (mit Anhänger über Gehweg umfahren)	BNP:1::trailer=10 7816,5682
+#: by: guylian
+#: note: ohne Schloss, also immer offen
+Tor	BNP:3 6431,3417
 #
 ############################################################################
 #
@@ -1636,8 +1641,8 @@ Unterführung unter Adlergestell und Bahn: wegen Brückenerneuerung gesperrt	2:inw
 #
 #: section ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #: section in Brandenburg vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
-# XXX del #: last_checked: 2009-08-29 Rückbau der Fr.-Ebert-Str. zwischen Breite Str. und Platz der Einheit, Bauarbeiten bis Ende 2009. Umfahrung über Alten Markt notwendig.	1:inwork -12659,-1700 -12758,-1654 -12755,-1585 -12773,-1544
-# XXX del #: last_checked: 2009-08-29 Rückbau der Fr.-Ebert-Str., kein Zugang zur Schwertfegerstr.	2:inwork -12870,-1493 -12795,-1499
+# XXX del #: last_checked: 2009-08-29 Rückbau der Fr.-Ebert-Str. zwischen Breite Str. und Platz der Einheit, Bauarbeiten bis Ende 2009. Umfahrung über Alten Markt notwendig.	1:inwork -12659,-1700 -12758,-1654 -12755,-1585 -12780,-1545
+# XXX del #: last_checked: 2009-08-29 Rückbau der Fr.-Ebert-Str., kein Zugang zur Schwertfegerstr.	2:inwork -12870,-1493 -12793,-1498
 #: last_checked: 2010-05-09
 Bertiniweg: gesperrt, wird evtl. später neu geöffnet	2:inwork -12710,1713 -12642,1781 -12636,1804 -12604,1857 -12605,1927 -12593,1946 -12542,1959
 #: section ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

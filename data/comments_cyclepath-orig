@@ -27,7 +27,7 @@ Rudolf-Breitscheid-Str.: Suggestivstreifen	RW3; -10446,-1947 -10360,-1934 -10235
 B101: Zweirichtungsradweg auf der östlichen Seite	RW 5943,-2117 5836,-2309 5627,-2671 5394,-3053
 Potsdam - Teltow: enger Zweirichtungsradweg auf der nördlichen Seite	RW8;RW2 -5736,-3629 -5156,-3192 -4885,-3087 -4456,-2968 -3950,-2743 -3650,-2609
 Lichterfelder Allee, Teltow: Radweg vorhanden	RW 3450,543 3417,524 3112,331 2947,220 2459,-109 2331,-228 2215,-328 1974,-440 1677,-582 1453,-746
-Lange Brücke, Friedrich-Ebert-Str.: beidseitiger Radweg vorhanden	RW2;RW2 -12431,-2096 -12493,-1896 -12567,-1817 -12659,-1700 -12758,-1654 -12755,-1585 -12773,-1544 -12795,-1499 -12833,-1365 -12839,-1342
+Lange Brücke, Friedrich-Ebert-Str.: beidseitiger Radweg vorhanden	RW2;RW2 -12431,-2096 -12493,-1896 -12567,-1817 -12659,-1700 -12758,-1654 -12772,-1577 -12780,-1545 -12793,-1498 -12833,-1365 -12839,-1342
 Breite Str., Potsdam: Radweg vorhanden	RW2;RW2 -12758,-1654 -12940,-1625 -13238,-1569 -13375,-1546 -13516,-1517 -13764,-1460 -13879,-1445
 Hreinrich-Mann-Allee: Radweg	RW;RW -12431,-2096 -12318,-2192
 Brauhausberg: Radstreifen	RW4;RW4 -12318,-2192 -12355,-2263 -12362,-2288 -12462,-2568 -12476,-2605
@@ -80,6 +80,7 @@ Zweirichtungsradweg auf der östl. Seite, Qualität unbekannt	RW -7533,24138 -7734
 Zweirichtungsradweg auf der östl. Seite, asphaltiert	RW -10377,20973 -10576,19951 -10581,19871 -10000,18629
 Suggestivstreifen	RW4?;RW4? -11114,-2104 -10983,-2088 -10772,-2153 -10673,-2128
 Radweg auf Gehweg	RW2;RW2 -12213,-2131 -12098,-2173
+	RW4; -12213,-2131 -12431,-2096
 Radweg auf Gehweg	RW2;RW -12098,-2173 -11996,-2192 -11837,-2223 -11781,-2235 -11681,-2256
 Radweg auf Gehweg	RW;RW -11681,-2256 -11601,-2197 -11507,-2130 -11114,-2104
 #: add_fragezeichen: Gibt es in der Großbeerenstr. einen Radweg oder Radstreifen?
@@ -304,7 +305,7 @@ Radweg zwischen Wandlitz und Klosterfelde: 2m breiter Zweirichtungsradweg	RW 135
 Wetzlarer Str.: gemeinsamer Geh- und Zweirichtungsradweg auf der westlichen Seite	RW8?;RW -9088,-3962 -9047,-3889 -9015,-3831 -8997,-3762 -8943,-3646 -8846,-3474 -8500,-2856
 Bahnstr. (Michendorf): gemeinsamer Geh- und Zweirichtungsradweg auf der westlichen Seite	RW -14705,-10543 -14831,-10652 -15012,-10820 -15137,-10935 -15182,-10981
 Borkheide - Borkwalde: Zweirichtungsradweg auf der westlichen Seite	RW -26258,-20094 -26809,-18383
-Am Neuen Markt: verkehrsberuhigt	RW6;RW6 -12795,-1499 -12870,-1493 -12865,-1462 -12913,-1451 -12975,-1363 -12976,-1356
+Am Neuen Markt: verkehrsberuhigt	RW6;RW6 -12793,-1498 -12870,-1493 -12865,-1462 -12913,-1451 -12975,-1363 -12976,-1356
 Mittelstr. (Potsdam): verkehrsberuhigt	RW6;RW6 -12884,-769 -12712,-734 -12545,-698
 Kiepenheuerallee	RW3; -13546,527 -13456,500
 Kiepenheuerallee/Am Schragen: Radspuren	RW3;RW3 -13456,500 -13311,462 -13203,434 -13157,394 -13094,347 -13036,342
@@ -432,6 +433,7 @@ teils Asphalt, teils Verbundsteinpflaster	RW8;RW2 39341,-1057 39264,-832 39259,6
 Radweg existiert, zumindest auf der östlichen Seite	RW 87906,-5239 87553,-4939 87418,-4660
 	RW2; 55401,-3599 55456,-4023 55447,-4247
 überwiegend asphaltiert	RW8;RW2 48518,-1559 47882,-1378 47778,-1308 47484,-1058 46969,-672 46718,-631 46354,-369 45787,-225 45424,-11 45247,7 45037,31 43880,303 43456,337 42926,155 39341,-1057
+nicht besonders breite Schutzstreifen	RW3;RW3 -12637,-8 -12661,-14 -12840,-69 -12961,-136 -13068,-115
 ######################### User Contributions #################################
 #: by: Tagesspiegel
 	RW 16953,35907 17114,35904 18082,36115 18440,36179 19193,36011
@@ -461,7 +463,7 @@ Wahlsdorf - Niebendorf-Heinsdorf: asphaltierter straßenbegleitender Radweg, Flae
 Schleusenweg: Radweg	RW -2760,-740 -3003,432
 #: by: ^^^
 #: by: Torsten Fleischmann:
-zwischen B2 und mindestens Autobahnbrücke: auf der nördlichen Seite verlaufender gemeinsamer Rad/Fußweg (in beiden Richtungen benutzungspflichtig), der stellenweise nur ca. 2,5m breit ist	RW 22178,30343 21872,30139 21561,30131 21172,29984 21085,29942
+zwischen B2 und mindestens Autobahnbrücke: auf der nördlichen Seite verlaufender gemeinsamer Rad/Fußweg (in beiden Richtungen benutzungspflichtig), der stellenweise nur ca. 2,5m breit ist	RW 22178,30343 21872,30139 21561,30131 21117,29968 21085,29942
 #: by: Andreas Mühlhausen: vvv
 #: note: von Andreas von Nauen bis Kienberg verifiziert:
 B273: sehr guter Zweirichtungsradweg	RW -24957,22740 -24366,23575 -23897,24448 -23732,24811 -23641,24954 -22574,25597 -22376,26392 -22736,27452 -22711,27592 -22416,28080 -22224,28832 -21704,30257 -21772,30661
