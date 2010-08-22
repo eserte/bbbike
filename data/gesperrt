@@ -567,6 +567,9 @@ Moosstr. [Wohngebiet]	1 19210,5150 19233,5076 19236,5025 19241,4958 19306,4969 1
 Abtstr./Platz der Befreiung	1 20066,3466 19990,3416 20038,3357
 Kreisverkehr Waldowplatz	1 19283,6123 19282,6152 19303,6170 19333,6165 19345,6150 19344,6119 19325,6105 19290,6114 19283,6123
 Paddlerweg: Privatweg, Tor	2 -3559,11227 -3625,11250 -3679,11248
+Joachimstr.	1s 22009,5593 21907,5517 21789,5427
+Cardinalstr.	1s 21901,5728 21828,5623 21709,5543
+Fuchsbergeweg	1s 20595,9558 20592,9298
 Am Neuen Garten	1 -12166,1384 -12212,1201 -12276,831 -12302,718
 Am Neuen Garten	1 -12332,585 -12582,127
 Hochstraße	3nocross::ignrte -11399,-1339 -11461,-1424 -11540,-1543
@@ -793,9 +796,9 @@ Elsenpfuhlstr. -> Am Nordgraben: Mittelstreifen	3::igndisp 5405,20072 5399,20106
 Mittelstreifen	3nocross::ignrte 7263,4281 7310,4308 7368,4342
 Ludwigsburger Weg -> Attilastr.: Mittelstreifen	3::igndisp 7254,4396 7310,4308 7368,4342
 Attilastr. -> Ludwigsburger Weg: Mittelstreifen	3::igndisp 7263,4281 7310,4308 7254,4396
-Straßenbahn	3nocross::ignrte 18003,7144 17934,7029 17919,6978
+Straßenbahn	3nocross::ignrte 18010,7133 17934,7029 17919,6978
 Edisonstr. -> Fuststr.: Straßenbahn	3::igndisp 17919,6978 17934,7029 17823,7203
-Fuststr. -> Edisonstr.: Straßenbahn	3::igndisp 17823,7203 17934,7029 18003,7144
+Fuststr. -> Edisonstr.: Straßenbahn	3::igndisp 17823,7203 17934,7029 18010,7133
 Mittelstreifen	3nocross::ignrte -5039,15618 -5154,15651 -5373,15714 -5473,15742
 Falkenseer Chaussee -> Remscheider Str.: Mittelstreifen	3::igndisp -5039,15618 -5154,15651 -5192,15517
 Remscheider Str. -> Falkenseer Chaussee: Mittelstreifen	3::igndisp -5192,15517 -5154,15651 -5373,15714
@@ -963,14 +966,14 @@ Heidenauer Str. -> Riesaer Str.: Straßenbahntrasse	3::igndisp 24146,14594 24097,
 Riesaer Str. -> Heidenauer Str.: Straßenbahntrasse	3::igndisp 24020,14737 24097,14575 24146,14594
 Straßenbahntrasse	3nocross::ignrte 24198,14454 24162,14487 24120,14526
 Straßenbahntrasse	3nocross::ignrte 24721,14293 24870,14244 24930,14225 24983,14208 25095,14171
-wegen Überführung nicht überquerbar	3nocross::ignrte 17527,7812 17681,7589 17839,7365 18003,7144
+wegen Überführung nicht überquerbar	3nocross::ignrte 17527,7812 17681,7589 17839,7365 18010,7133
 Wattstr. -> Rummelsburger Landstr.: wegen Überführung nicht überquerbar	3::igndisp 17647,7280 17681,7589 17527,7812
 Wattstr. -> Grenzweg: wegen Überführung nicht überquerbar	3::igndisp 17647,7280 17681,7589 17295,7336
 Rummelsburger Str. -> Wattstr.: wegen Überführung nicht überquerbar	3::igndisp 17839,7365 17681,7589 17647,7280
 Rummelsburger Str. -> Grenzweg: wegen Überführung nicht überquerbar	3::igndisp 17839,7365 17681,7589 17295,7336
 Grenzweg -> Rummelsburger Landstr.: wegen Überführung nicht überquerbar	3::igndisp 17295,7336 17681,7589 17527,7812
 Mentelinstr. -> Rummelsburger Str.: wegen Überführung nicht überquerbar	3::igndisp 17743,7328 17839,7365 17681,7589
-Rummelsburger Str. -> Mentelinstr.: wegen Überführung nicht überquerbar	3::igndisp 18003,7144 17839,7365 17743,7328
+Rummelsburger Str. -> Mentelinstr.: wegen Überführung nicht überquerbar	3::igndisp 18010,7133 17839,7365 17743,7328
 Mittelstreifen nicht passierbar	3nocross::ignrte 4469,8037 4659,7982 4793,7992
 Detmolder Str. -> Aachener Str.: Mittelstreifen nicht passierbar	3::igndisp 4572,7936 4659,7982 4609,8013
 Aachener Str. -> Detmolder Str.: Mittelstreifen nicht passierbar	3::igndisp 4609,8013 4659,7982 4793,7992
@@ -1052,6 +1055,9 @@ Paderborner Str. -> Düsseldorfer Str.: Tunneleinfahrt Adenauerplatz	3::igndisp 3
 Straßenbahntrasse	3nocross::ignrte 18809,9133 18790,9018 18770,8898
 Bopparder Str. -> Treskowallee: Straßenbahntrasse	3::igndisp 18881,9002 18790,9018 18770,8898
 Treskowallee -> Bopparder Str.: Straßenbahntrasse	3::igndisp 18809,9133 18790,9018 18881,9002
+Straßenbahntrasse	3nocross::ignrte 18010,7133 18086,7243 18382,7724
+Eichgestell -> Treskowallee: Straßenbahntrasse	3::igndisp 18186,7200 18086,7243 18010,7133
+Treskowallee -> Eichgestell: Straßenbahntrasse	3::igndisp 18382,7724 18086,7243 18186,7200
 unbequem passierbarer Mittelstreifen	3nocross::ignrte 5463,9961 5464,9914 5466,9859
 Regensburger Str. -> Pariser Str.: unbequem passierbarer Mittelstreifen	3::igndisp 5541,9923 5464,9914 5416,9928
 Pariser Str. -> Regensburger Str.: unbequem passierbarer Mittelstreifen	3::igndisp 5416,9928 5464,9914 5541,9923
@@ -1669,7 +1675,7 @@ tragen (Treppe)	0:30:-43 -633,12739
 tragen (Treppe)	0:30:-118 -7418,181
 tragen (Treppe, ca. 50 Stufen)	0:50:-64 -6933,14317
 tragen (Treppe, ca. 50 Stufen)	0:50:2 -6934,14291
-tragen (Treppe)	0:30:-237 20673,7260
+tragen (Treppe)	0:30:-233 20673,7260
 tragen (Treppe, ca. 6 Stufen)	0:15:-222 15488,8508
 tragen (Treppe, 50 Stufen)	0:50:-151 -12328,1941
 tragen (Treppe, 18 Stufen)	0:18:-72 8709,12605

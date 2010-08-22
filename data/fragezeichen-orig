@@ -2153,8 +2153,6 @@ Quedlinburger Str. - Stendaler Str. [Nebenfahrbahn]: Für Radfahrer passierbar? Q
 Eichenallee: Qualität?	? 21105,9538 21253,9547
 Eichenallee: Qualität?	? 21343,9546 21414,9545
 Elsenallee: Qualität?	? 21379,9380 21265,9402 21101,9409
-Dankratweg: Qualität?	? 20857,9542 20690,9546 20595,9558 20514,9579 20460,9593
-Dankratweg - Am Waldberg: Ist die Verbindung für Radfahrer befahrbar? Qualität?	? 20460,9593 20408,9604 20338,9718 20335,9866
 Am Schweizerhof: Qualität? Können Radfahrer zum Parkweg durchfahren?	? 1524,1924 1432,1964 1368,1991 1258,1961 1177,1940
 Herbergerweg: Qualität? Sind Teile der Straße für Autos gesperrt?	? 960,2534 921,2565 869,2567 772,2538
 #: XXX laut anonymous: "Auf jeden Fall befahrbar! Mäßig bis gut!", aber leider keine genauen Angaben zur Wegbeschaffenheit
@@ -3146,7 +3144,7 @@ Otterstr.: Qualität?	? 19105,-376 19072,-474 19028,-548
 Uranusstr.: Qualität?	? 18952,-603 18904,-573 18827,-537 18590,-429
 Blindschleichengang: Qualität?	? 19257,-482 19270,-417 19310,-243 19341,-129
 Molchstr.: Qualität?	? 19310,-243 19208,-224
-Bahnweg: Qualität?	? 19659,-168 19509,-283
+Bahnweg (Altglienicke): Qualität?	? 19659,-168 19509,-283
 Quittenweg: Qualität?	? 19509,-283 19488,-186 19546,12 19592,137
 Renettenweg: Qualität?	? 19691,107 19592,137 19518,167
 Pfirsichweg (Altglienicke): Qualität?	? 19664,215 19549,257
@@ -3371,34 +3369,15 @@ Siefersheimer Str.: Qualität?	? 28672,1172 28596,1233
 Landhausring: Qualität?	? 21710,12798 21866,12763 21893,12783 21900,12820 21880,12858 21729,12894
 #: XXX laut osm surface=cobblestone
 Lorcher Str.: Qualität zwischen Binger Str. und Rüdesheimer Str.?	? 4271,6990 4160,7043 4059,7038
-Dubickstr.: Qualität?	? 21252,8928 21200,8929 21079,8931
-Arnfriedstr.: Qualität?	? 21079,8931 20932,8956 20873,8963
-#: XXX laut osm track grade1
-Arnfriedweg: Qualität?	? 20873,8963 20799,8965 20681,8963 20598,8964 20535,8964
-#: XXX laut osm track grade3
-Bahnweg: Qualität?	? 20598,9298 20598,8964
-#: XXX laut osm track grade3
-Bahnweg: Qualität?	? 20514,9579 20514,9299
-#: XXX laut osm track grade2 und oneway
-Fuchsbergeweg: Qualität? Tatsächlich eine Einbahnstraße?	? 20595,9558 20592,9298
-#: XXX laut osm track grade2
-Schulgasse: Qualität?	? 20688,9444 20868,9444
 Geraldstr.: Qualität jenseits der Alberichstr.?	? 20967,8720 20910,8704
-Geraldstr.: Qualität Richtung Wuhleweg? Für Autos gesperrt?	? 21072,8742 21136,8735 21183,8731
 #: XXX laut osm track grade1
 Geraldweg: Qualität?	? 20910,8704 20834,8694 20677,8695 20555,8694 20553,8641
-#: XXX laut osm track grade3
-Wateweg: Qualität?	? 21122,8370 21131,8525 21115,8618 21141,8715 21136,8735 21124,8792
-Erwinstr.: Qualität?	? 21047,8110 21169,8112
-#: XXX_osm: bei osm falsch geschrieben (Amselnstr)
-Anselmstr.: Qualität?	? 21044,7996 21142,7995 21233,8022
-Breitenfelder Str.: Qualität?	? 21250,8006 21319,8078
-Brachliner Str.: Qualität?	? 21318,7948 21458,8091
-Blütenauer Str.: Qualität?	? 21393,7881 21529,8019
 Damerauer Allee: Qualität?	? 21663,8246 21450,8408 21415,8435 21323,8481
 #: XXX laut osm track grade1
 Straße 19 (Kaulsdorf): Qualität?	? 21450,8408 21420,8362 21376,8297
+#: XXX str_cont_ausnahme fehlt, den bekannten westlichen Abschnitt nicht vergessen!
 Bischofstaler Str.: Qualität?	? 21759,7856 21614,7773 21570,7751
+Bischofstaler Str.: unbefestigter Weg, aber ausgeschildert	? 21468,7727 21542,7752
 Piepertswinkel: Qualität?	? 21594,7233 21600,7293 21628,7371 21671,7375 21710,7266
 Piepertswinkel: Qualität?	? 21600,7293 21666,7267 21710,7266 21785,7284 21875,7300
 Hohenkircher Allee: Qualität?	? 21736,7489 21741,7450 21751,7400 21785,7284
@@ -3408,9 +3387,6 @@ Egersfelder Allee: Qualität?	? 21741,7450 21771,7466 21862,7529
 Klingenburger Str.: Qualität?	? 21671,7375 21751,7400
 Görsdorfer Str.: Qualität?	? 21846,7096 21879,7044 21918,6939
 Zum Wuhleblick: Qualität?	? 22075,6967 21938,6931 21918,6939 21888,6944
-Verlängerte Hämmerlingstr.: Qualität?	? 21729,6989 21683,6946 21543,6807
-Rombiner Weg: Qualität?	? 21712,6800 21833,6810
-Schmale Str.: Qualität?	? 21984,6317 22029,6353
 Münsterwalder Str.: Qualität?	? 21703,8756 21645,8861
 Nordheimer Str.: Qualität?	? 21819,8770 21780,8892 21764,8952 21756,9025
 Am Birkenwerder: Qualität?	? 21756,9025 21732,9216 21707,9433 21695,9577
@@ -3455,7 +3431,6 @@ Heidereiterweg (Potsdam): Qualität?	? -11105,-4023 -10978,-4247 -10924,-4319 -10
 Nuthestr.: existieren durchgängig Radwege zwischen Berliner Str. und Alt Nowawes?	? -11142,-1675 -11226,-1445 -11356,-1317 -11463,-1232 -11549,-1169
 Iselbergplatz: Qualität?	? 23523,13368 23646,13346
 Steffenshagener Str.: Qualität des nördlichen Abschnitts?	? 22983,11098 23159,11097
-Verlängerte Mozartstr.: Qualität?	? 21864,6928 21920,6835
 # XXX del: nein, keine Straße (auch aus Berlin.coords.data herausgenommen) --- Verlängerte Müggelbergallee: gibt es diese Straße? Qualität?	? 23107,1680 23231,1707
 # XXX del: nein, keine Straße, jedenfalls keine öffentliche: #: XXX Anderson ist die südlichere, Edmund die nördlichere Straße. Qualität: wassergebunden, Q2+	? 23064,2147 22872,2107
 #XXX ex nicht: Straße 236: Qualität? Ist der Straßenname richtig? Verlauf der Straße?	? 22356,3351 22346,3293
@@ -3645,7 +3620,6 @@ Cedernstr.: Qualität?	? 23878,4406 23988,4482 24078,4595
 Schrebergasse: Qualität? Für Radfahrer befahrbar? Nachts beleuchtet?	? 23850,4497 23925,4555 23980,4633
 #: XXX_osm: fehlt bei osm
 Ambacher Str.: Qualität?	? 21944,7122 21967,7048
-Friedenstr. (Köpenick): Qualität?	? 21993,6133 22033,6144 22141,6143
 # XXX del nur ein sehr enger Weg vorhanden --- lohnt nicht --- Waldpromenade: Qualität? Nachts beleuchtet? Für Autos offen?	? 23481,8119 23385,8217 22865,8588
 #: XXX_osm: bei osm evtl. falsch geschrieben
 Scharzhofberger Str.: Qualität?	? 6746,3587 6827,3676
@@ -4709,8 +4683,6 @@ Straße 433: Stimmt der Straßenname? Qualität?	? 9846,817 9956,852 10034,991
 #: XXX fehlt in Berlin.coords.data
 Hermann-Wundrich-Platz: Qualität? Nachts beleuchtet? Ausgeschildert?	? 11174,-1719 11129,-1772 11095,-1846 11070,-1853
 #: XXX fehlt in Berlin.coords.data
-Verlängerte Köpenicker Str.: Qualität? Permanent offen? Können Radfahrer über Straße F zur Straße "Am Wuhleufer" fahren?	? 21016,7325 21245,7084
-#: XXX fehlt in Berlin.coords.data
 Rue René Laennec: Qualität?	? 3684,16788 3608,16765
 #: XXX_osm bei osm auch Elsa-Rendschmidt-Weg, aber wahrscheinlich falsch
 Sarkauer Allee: Qualität?	? -1471,11416 -1574,11484
@@ -4751,7 +4723,6 @@ Zeppelinufer (Teltow): Qualität?	? 1457,-470 1338,-426 1134,-370 818,-298
 Am Klarpfuhl - Mauerweg: besteht eine Verbindung für Radfahrer? Qualität?	? 18195,-277 18218,-325
 Baumgarten - Grünow: Qualität?	? 45393,105220 45647,104851 45619,104429 45554,104267 45590,103655 46020,102452 45794,102248 45805,102072
 Julius-Rütgers-Str. (Erkner): Qualität?	? 34293,3076 34391,3099 34416,3127 34671,3421 34553,3539
-Am Wuhleufer: gibt es auch im südlichen Abschnitt einen Radweg?	? 21498,7153 21683,6946 21774,6880
 #: XXX nicht beleuchtet!
 Saarower Weg: Qualität des Abschnitts im Wald?	? 31206,3874 31350,3908 31417,3912 31450,3938
 #: XXX wahrscheinlich asphaltiert, zumindest an der B2

@@ -2967,7 +2967,7 @@ EOF
        text  => 'Ehrlichstr. (Lichtenberg) zwischen Wildensteiner Str. und Treskowallee Baustelle, gesperrt (bis 23.10.2005)',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 18147,8583 18225,8532 18322,8470 18391,8425 18461,8377 18528,8331 18615,8269 18683,8232
+userdel	q4 18147,8583 18225,8532 18322,8470 18391,8425 18461,8377 18528,8331 18615,8269 18676,8236
 EOF
      },
      { from  => undef, # 
@@ -5558,7 +5558,7 @@ EOF
        text  => 'Hegemeisterweg ist vom 7. August 2006 bis zum 30. November 2006 nicht benutzbar. ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 17775,7874 17987,7973 18287,7815 18325,7778 18378,7727
+userdel	2::inwork 17775,7874 17987,7973 18287,7815 18325,7778 18382,7724
 EOF
      },
      { from  => 1156975200, # 2006-08-31 00:00
@@ -6508,7 +6508,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_003935',
        data  => <<EOF,
-userdel	q4::inwork; 14894,10861 14919,10954 14950,11049 14988,11130
+userdel	q4::inwork; 14902,10859 14923,10954 14950,11049 14988,11130
 EOF
      },
      { from  => 1155592800, # 2006-08-15 00:00
@@ -6948,7 +6948,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_004560',
        data  => <<EOF,
-userdel	1::inwork 18528,8331 18615,8269 18683,8232
+userdel	1::inwork 18528,8331 18615,8269 18676,8236
 EOF
      },
      { from  => 1169496024, # 2007-01-22 21:00
@@ -11518,7 +11518,7 @@ EOF
        text  => 'Kynaststraße wird ab 2.6.2008 gesperrt. Unter Umständen wird dann die Untere Kynaststraße befahrbar sein.',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 14988,11130 14950,11049 14919,10954 14894,10861 14880,10808 14828,10628 14805,10518
+userdel	2::inwork 14988,11130 14950,11049 14923,10954 14902,10859 14880,10808 14828,10628 14805,10518
 EOF
      },
      { from  => 1211493600, # 2008-05-23 00:00

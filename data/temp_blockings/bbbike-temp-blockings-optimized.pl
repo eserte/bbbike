@@ -1685,16 +1685,7 @@ userdel	q4::inwork; 10614,19907 10742,19632
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'LS/O-SG33-F/10/089',
-         'until' => 1282428000,
-         'text' => 'Lebus: B112: Instandsetzungsarbeiten Brücke über das Alt Zeschdorfer Fließ bei Lebus - OT Wüste Kunersdorf, 08.07.2010 07:00 Uhr bis 21.08.2010 ',
-         'from' => 1278478800,
-         'id' => 2098,
-         'data' => 'userdel	2::inwork 87344,3693 86769,1414
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'LS/S-SG33-W/10/140',
          'until' => 1282773600,
@@ -1811,16 +1802,7 @@ userdel	q4::inwork; 10614,19907 10742,19632
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20100804.0935.305087.html',
-         'until' => 1282427999,
-         'text' => 'In der Zeit vom 11.08. bis voraussichtlich 21.08. wird die Dessauer Straße zwischen Köthener Straße und Schwarzwurzelstraße auf Grund von Fahrbahnsanierungsarbeiten voll gesperrt. ',
-         'from' => 1281391200,
-         'id' => 2116,
-         'data' => 'userdel	q4::inwork 20576,17994 20460,18030 20351,18066 20256,18096 20232,18123 20186,18238
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'LS/W-SG33-P/10/410',
          'until' => 1322694000,
