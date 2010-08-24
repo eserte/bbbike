@@ -166,7 +166,7 @@ Neubau eines Uferwegs an der HTW (Fuß- und Radweg)	?::inwork 19177,5560 19020,55
 #: next_check: 2010-08-01
 Karl-Liebknecht-Str.: Radstreifen nach den Bauarbeiten?	?::inwork 10920,13139 11015,13264 11021,13271 11087,13359
 #: last_checked: 2010-08-14
-#: check_frequency: 365d (public)
+#: next_check 2010-08-24 (drei Hausnummern sind vergeben worden?!)
 Am Sudhaus: wo genau verläuft die Straße? Qualität?	? 12148,8174 12227,8190
 #: last_checked: 2010-07-07
 #: next_check: 2010-10-01 (public)
@@ -1917,7 +1917,6 @@ Mergentheimer Str.: Qualität?	? 7263,4281 7300,4207 7308,4080
 Lörracher Str.: Qualität? Hat die Crailsheimer Vorfahrt vor der Lörracher?	? 7118,4540 7282,4478
 Wüllenweberweg: Qualität?	? 4276,3202 4303,3260 4342,3366
 Chlumer Str.: Qualität?	? 4013,4547 4039,4500
-Gräfenberger Weg: Qualität?	? 2384,2964 2346,3077 2256,3172
 Luzerner Str.: Qualität?	? 3317,1884 3431,1883 3584,1877
 Engelberger Str.: Qualität? Für Autos gesperrt?	? 3431,1883 3430,1998
 Aarberger Str.: Qualität?	? 3577,2000 3581,2105
@@ -3163,6 +3162,7 @@ B109: Hat die B109 in Basdorf einen Radweg? Ist der Radweg asphaltiert? Wie brei
 Basdorf: Qualität des Radwegs entlang der Bahnstrecke?	? 12034,35012 12083,35157 12681,35785 12761,35942
 Straße 35: Qualität? Nachts beleuchtet?	? 30265,2382 30045,2477 29985,2504
 Akazienhof: Qualität?	? 21798,839 21748,746
+#: XXX: florian (...wessels) meint: "gut"
 Rütlistr.: Qualität? Kann man als Radfahrer weiter zur Baseler Str. fahren?	? 7107,17342 7068,17485
 #: XXX laut osm: bicycle=yes
 Schäfersee - Baseler Str.: Qualität? Für Radfahrer offiziell befahrbar? Nachts beleuchtet?	? 7189,17666 7181,17678 6900,17608
@@ -4312,7 +4312,7 @@ Dahnstr.: Qualität?	? 5303,17914 5287,17815
 Pfifferlingweg: Qualität? Kann die Lindauer Str. überquert werden?	? 5635,18776 5634,18587 5636,18518
 Rundpfuhlweg: Qualität? Kann die Lindauer Str. überquert werden?	? 5713,18777 5715,18586
 Holzweidepfad: Qualität? Kann die Lindauer Str. überquert werden?	? 5791,18778 5795,18585
-Thaterstr.: Qualität? Kann die Residenzstr. überquert werden?	? 7445,17968 7195,17908
+Thaterstr.: Kann die Residenzstr. in Höhe Thaterstr. überquert werden?	? 7445,17968 7195,17908
 Henricistr.: Qualität?	? 5858,19437 5996,19471
 Brodersenstr.: Qualität?	? 6033,19611 5885,19920 5804,20047
 #: XXX_osm bei osm falsch geschrieben?
@@ -4891,3 +4891,9 @@ Erich-Baron-Weg: ist die Straße zwischen Kastanienallee und Akazienallee tatsäch
 Pilsener Str.: wo genau fängt die Asphaltierung in der Pilsener an?	? 24370,9542 24404,9527
 Langenbeckstr.: ist die gesamte Straße asphaltiert?	? 24793,9860 25020,9728
 Hultschiner Damm: existieren zwischen Elsenstr. und Mahlsdorf in beiden Richtungen Radwege?	? 24740,10992 24654,11265
+#: XXX fehlt in Berlin.coords.data, PLZ=12526:
+Alexander-Meißner-Str.: Qualität? Ist die Straße schon komplett fertiggestellt?	? 19894,-835 20078,-1029 20387,-1369 20431,-1896
+#: XXX fehlt in Berlin.coords.data, PLZ=12526:
+Ludwig-Prandtl-Str.: Qualität? Ist die Straße schon komplett fertiggestellt?	? 19684,-1221 19871,-1192 19924,-1157 20078,-1029 20243,-870
+#: by: http://www.cdu-fraktion-tk.de/image/inhalte/file/Amtsblatt_Nr__30.pdf
+B96a - Schützenstr.: Wo genau liegt die Verbindungsstraße? Qualität?	? 19858,-843 19869,-816

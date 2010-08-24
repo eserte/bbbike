@@ -993,7 +993,6 @@ Mergentheimer Str.: Qualität?	? 7263,4281 7300,4207 7308,4080
 Lörracher Str.: Qualität? Hat die Crailsheimer Vorfahrt vor der Lörracher?	? 7118,4540 7282,4478
 Wüllenweberweg: Qualität?	? 4276,3202 4303,3260 4342,3366
 Chlumer Str.: Qualität?	? 4013,4547 4039,4500
-Gräfenberger Weg: Qualität?	? 2384,2964 2346,3077 2256,3172
 Luzerner Str.: Qualität?	? 3317,1884 3431,1883 3584,1877
 Engelberger Str.: Qualität? Für Autos gesperrt?	? 3431,1883 3430,1998
 Aarberger Str.: Qualität?	? 3577,2000 3581,2105
@@ -3025,7 +3024,7 @@ Dahnstr.: Qualität?	? 5303,17914 5287,17815
 Pfifferlingweg: Qualität? Kann die Lindauer Str. überquert werden?	? 5635,18776 5634,18587 5636,18518
 Rundpfuhlweg: Qualität? Kann die Lindauer Str. überquert werden?	? 5713,18777 5715,18586
 Holzweidepfad: Qualität? Kann die Lindauer Str. überquert werden?	? 5791,18778 5795,18585
-Thaterstr.: Qualität? Kann die Residenzstr. überquert werden?	? 7445,17968 7195,17908
+Thaterstr.: Kann die Residenzstr. in Höhe Thaterstr. überquert werden?	? 7445,17968 7195,17908
 Henricistr.: Qualität?	? 5858,19437 5996,19471
 Brodersenstr.: Qualität?	? 6033,19611 5885,19920 5804,20047
 Olbrichweg: Qualität?	? 5787,19326 5879,19352
@@ -3466,6 +3465,9 @@ Erich-Baron-Weg: ist die Straße zwischen Kastanienallee und Akazienallee tatsäch
 Pilsener Str.: wo genau fängt die Asphaltierung in der Pilsener an?	? 24370,9542 24404,9527
 Langenbeckstr.: ist die gesamte Straße asphaltiert?	? 24793,9860 25020,9728
 Hultschiner Damm: existieren zwischen Elsenstr. und Mahlsdorf in beiden Richtungen Radwege?	? 24740,10992 24654,11265
+Alexander-Meißner-Str.: Qualität? Ist die Straße schon komplett fertiggestellt?	? 19894,-835 20078,-1029 20387,-1369 20431,-1896
+Ludwig-Prandtl-Str.: Qualität? Ist die Straße schon komplett fertiggestellt?	? 19684,-1221 19871,-1192 19924,-1157 20078,-1029 20243,-870
+B96a - Schützenstr.: Wo genau liegt die Verbindungsstraße? Qualität?	? 19858,-843 19869,-816
 # added from ampeln-orig
 geschlossen bei Bedarf (?) (Zbr)	? 27657,-11741
 S-Bahn alle 20 Minuten, Regionalbahn halbstündlich (?) (B)	? 40248,14503
@@ -3484,7 +3486,6 @@ Jugendplatz (Qualität?)	? 1191,14513 1262,14510
 (Grenzweg) (Ist der Grenzweg ausgeschildert?)	? 3707,14303 3735,14419 3765,14746
 Rosa-Reinglass-Steig (Ist die Straße für Autos gesperrt?)	? -2878,15304 -2856,15383
 (Grünhofer Weg - Bullengraben) (liegt hier Kopfsteinpflaster oder Verbundsteinpflaster?)	? -4349,13567 -4357,13415
-Britzer Allee (Ist die gesamte Britzer Allee zu "Chris-Gueffroy-Allee" umbenannt worden oder nur ein Teil?)	? 15190,6243 15159,6205 15146,6154 15146,6054 15143,5936 15141,5870 15141,5800 15141,5785 15143,5705 15146,5592 15165,5506 15190,5490
 Charlottenstr. (Biesdorf) (Qualität zwischen Allee der Kosmonauten und dem anderen Teil der Charlottenstr?)	? 20657,14446 20647,14341
 Steilpfad (In welche Richtung verläuft die Steigung? Gibt es hier eine Einbahnstraße? Wenn ja, auch für Radfahrer, oder nur für Autos?)	? 3280,21477 3376,21224
 Schönfließer Str. (Frohnau) (Qualität?)	? 3145,26256 3347,26272 3360,26275 3490,26306 3638,26357
@@ -3581,6 +3582,7 @@ Mechthildstr.: mäßiger Asphalt/Kopfsteinpflaster (ist die Mechthildstr. nördlich
 Miethepfad: Verbundsteinpflaster (Miethepfad zwischen Poleigrund und Weg unter der S-Bahnbrücke: tatsächlich Verbundsteinpflaster oder betoniert/asphaltiert?)	? 9520,-641 9561,-748
 Alter Bernauer Heerweg: Kopfsteinpflaster (Alter Bernauer Heerweg westlich der Bezirksgrenze: Kopfsteinpflaster oder wassergebundene Decke?)	? 6641,22756 6779,22804 6836,22824 6892,22843 6948,22862 7004,22881 7072,22905 7109,22919 7171,22942 7782,23172 7923,23225 8145,23301
 Corneliusstr. (Lankwitz): gut asphaltiert (wie ist die Qualität der Corneliusstr. zwischen Nicolaistr. und Leonorenstr.?)	? 6042,3689 6221,3767 6376,3835
+Gräfenberger Weg: schlechte Fahrbahnqualität (Liegt Kopfsteinpflaster im Gräfenberger Weg?)	? 2384,2964 2346,3077 2256,3172
 Schrimmer Weg: schlechtes Kopfsteinpflaster (gilt das "schlechte Kopfsteinpflaster" auch für den Gehweg-Abschnitt Richtung Waltersdorfer Chaussee?)	? 17879,127 17818,93
 Amalienhofstr.: schlechtes Kopfsteinpflaster (wie ist die Qualität zwischen Ulrikenstr. und Lutoner Str.?)	? -5118,13053 -5100,13081 -5073,13097 -4871,13178 -4771,13214
 Am Rundling: Fahrbahn derzeit noch Sand, bald tw. gepflastert (Ist die Straße "Am Rundling" mittlerweile gepflastert oder asphaltiert? Ist die Straße eine Spielstraße?)	? 17927,3737 17926,3829
@@ -3656,6 +3658,7 @@ Marzahner Promenade - Mühlenbecker Weg: Fußgänger (Stimmt das?)	? 20222,15519 20
 Barsekowstr. (unbeleuchtet?)	? 5344,4672 5417,4647 5476,4626 5589,4617
 Stadtpark Steglitz (unbeleuchtet?)	? 5589,4617 5656,4621 5709,4674 5765,4693 5931,4659 6107,4718
 (Stadtpark Steglitz) (unbeleuchtet?)	? 5797,4846 5826,4819 5909,4798 5945,4828 6018,4850
+Britzer-Allee-Brücke (Heißt die Brücke "Britzer-Allee-Brücke" oder "Britzer Brücke"?)	? 15146,6054 15143,5936
 B404 (was ist hier oben?)	? -197853,130794 -197527,130848
 Jugendweg (Gilt die Einbahnstraßenregelung auch für Radfahrer oder nur für Autofahrer?)	? 1191,14513 1059,14515 1037,14515 998,14516 942,14517 842,14518
 Kienhorststr. (Gilt die Einbahnstraßenregelung zwischen Ollenhauerstr. und Waldowstr. auch für Radfahrer oder nur für Autofahrer?)	? 5543,18555 5324,18560

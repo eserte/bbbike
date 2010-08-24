@@ -706,7 +706,7 @@ Wuhlewanderweg: Parkweg	Q1 21599,7904 21587,7865 21542,7752 21538,7684
 Wuhlewanderweg: guter Asphalt	Q0 21629,7921 21616,7863 21570,7751 21604,7715 21620,7647 21613,7521 21590,7414 21574,7244 21590,7211 21888,6944 21976,6848 22056,6613
 Wuhlewanderweg: guter Asphalt	Q0 22030,6600 22097,6414 22146,6338 22214,6271 22236,6233 22238,6195
 Wuhlewanderweg: guter Verbundsteinbelag	Q0 22240,6118 22135,5882 22079,5873
-Wuhlewanderweg: Verbundsteine, teilweise etwas uneben	Q1 22079,5873 21846,5856 21744,5804 21608,5690
+Wuhlewanderweg: Verbundsteine, teilweise etwas uneben	Q1 22079,5873 21846,5856 21744,5804 21602,5685
 Hämmerlingstr.: Asphalt	Q0 21683,6946 21774,6880 21833,6810 21861,6719 21913,6554 21984,6317 22000,6245 22033,6144 22066,6028 22079,5873 22089,5776 22092,5673 22095,5585
 Dorfstr.: schlechtes Kopfsteinpflaster, teilweise gut befahrbare Banketten	Q2 30357,3555 30319,3511 30281,3479 30201,3375 30188,3301 29902,3104 29959,3031
 Dorfstr. (Rahnsdorf): unbefestigter Weg	Q2 30319,3511 30293,3520 30267,3520 30240,3503
@@ -859,7 +859,7 @@ Marksburgstr.: mäßiger Asphalt	Q1 18809,9133 18697,9153 18586,9172
 Marksburgstr.: mäßiger Asphalt	Q1 18586,9172 18511,9185 18430,9199 18319,9218
 Walkürenstr.: Asphalt	Q0- 18069,9289 18006,9335
 Walkürenstr.: Kopfsteinpflaster	Q2 18006,9335 17735,9533
-Tannhäuserstr.: Kopfsteinpflaster	Q2 18095,9665 17890,9580 17735,9533 17549,9529
+Tannhäuserstr.: Kopfsteinpflaster	Q2 18125,9676 17890,9580 17735,9533 17549,9529
 (am Schloß Schönhausen): Kopfsteinpflaster	Q1 10308,19297 10350,19182 10390,19069
 Stedingerweg: Asphalt und Kopfsteinpflaster	Q2 13947,14513 13933,14622
 Hauptstr: sandiger und hoplriger Fahrweg	Q3 9675,26957 9577,26725 9713,26457
@@ -3610,7 +3610,7 @@ Gewerbegebiet: Asphalt	Q0 21617,3287 21826,3129 21770,2936
 Gewerbegebiet: Beton	Q0 21770,2936 21816,2919 21939,2894 21984,2897 22004,2904
 Am Schloßberg: Asphalt	Q0 22791,4457 22801,4443 22866,4352
 Am Amtsgraben: Trampelpfad	Q2 22927,4400 22866,4352
-Am Amtsgraben: Asphalt	Q0 22866,4352 22800,4322
+Am Amtsgraben: Asphalt	Q0 22866,4352 22806,4331
 Am Berg: Asphalt	Q0 23010,4506 22959,4576
 (Neptunweg/Nixenweg): unbefestigte Wege	Q2 22893,4532 22858,4567
 #: note: laut ADFC-Karte mäßig geeignet
@@ -3916,6 +3916,7 @@ Strehlener Str.: Asphalt	Q0 22652,10392 22538,10477 22403,10523
 ######################################################################
 #: by: anonymous vvv
 # 
+Thaterstr.: schlechtes Kopfsteinpflaster	Q3 7445,17968 7195,17908
 #: note: "gut zu fahren"
 (ehem. Autobahnbrücke): guter Beton	Q1 -5359,-1298 -5364,-1204
 Warnitzer Str. (Neu-Hohenschönhausen): guter Asphalt	Q0 17894,17925 17956,17927 17994,17958 18010,17972 18109,17861 18179,17915 18214,17876
@@ -4585,7 +4586,7 @@ Guineastr.: Kopfsteinpflaster	Q2 6431,15700 6282,15830 6129,15970 5988,16099
 #: by: Mick (christopher mack): vvv
 Troppauer Str.: Kopfsteinpflaster	Q2 2289,3331 2400,3375 2510,3447 2684,3520
 Jägerndorfer Zeile: asphaltiert	Q0 2746,3699 2712,3602 2684,3520
-Jägerndorfer Zeile: Kopfsteinpflaster	Q2 2684,3520 2632,3411 2595,3356 2518,3258 2436,3180 2346,3077 2207,2917
+Jägerndorfer Zeile: Kopfsteinpflaster	Q2 2684,3520 2632,3411 2595,3356 2518,3258 2436,3180 2346,3077 2194,2930
 #: corrected_by: Petra Lubrich: (mäßiges Kopfsteinpflaster -> Asphalt)
 Ellwanger Str.: Asphalt	Q0 7450,4397 7382,4503 7324,4582 7166,4643
 Hünefeldzeile: Asphalt	Q0 7363,4700 7324,4582
@@ -5227,8 +5228,8 @@ Schwendenerstr.: Asphalt	Q0 3426,5292 3321,5212
 Schwendenerstr.: Kopfsteinpflaster	Q2 3321,5212 3166,5119 3072,5062 2996,5005 2905,4907 2841,4793 2762,4713
 Takustr.: Asphalt	Q0 2909,5674 2953,5606
 Takustr.: Kopfsteinpflaster	Q2 2953,5606 3079,5411 3209,5214 3321,5212
-Dahlemer Weg - Jägerndorfer Str./Weißwasserweg: Radweg mit Gehwegplatten	Q0 2119,2790 2207,2917
-Weißwasserweg: Asphalt	Q0 2207,2917 2384,2964
+Dahlemer Weg - Jägerndorfer Str./Weißwasserweg: Radweg mit Gehwegplatten	Q0 2144,2913 2194,2930
+Weißwasserweg: Asphalt	Q0 2194,2930 2199,2916 2384,2964
 Weißwasserweg: Beton	Q0 2384,2964 2476,2987
 Weißwasserweg: Kopfsteinpflaster	Q2 2476,2987 2594,3009 2661,3021
 Mendelssohnstr.: Asphalt	Q0 11539,13425 11490,13463 11451,13495 11392,13528 11346,13441 11306,13386
@@ -6314,8 +6315,11 @@ Wollankstr.: Asphalt	Q0 9978,18104 10027,18165 10089,18180
 Havelstr.: Asphalt	Q0 -3150,14631 -3122,14557 -3107,14535 -3054,14498
 #: by: Karl Schlicke:
 Klärwerkstr.: Asphalt	Q0 -1284,13340 -1258,13552
-#: by: Günter Lewanzik:
+#: by: Günter Lewanzik: vvv
+#: add_fragezeichen: Liegt Kopfsteinpflaster im Gräfenberger Weg?
+Gräfenberger Weg: schlechte Fahrbahnqualität	Q3 2384,2964 2346,3077 2256,3172
 Ringstr.: Kopfsteinpflaster	Q2 2701,3064 2781,3122 3011,3303 3050,3333 3184,3427 3228,3455 3375,3544 3507,3635
+#: by: ^^^
 #: by: Steffi Liebig:
 Herwarthstr.: Asphalt	Q0 4722,2771 4622,2787 4440,2752 4382,2658 4383,2613
 #: by: Patryk (bigoudi): vvv
@@ -6581,7 +6585,7 @@ Kunigundenstr.: Kopfsteinpflaster	Q2 8943,5428 8865,5468
 #: by: Michael Korok: vvv
 #: corrected_by: srt ("schlecht" entfernt, Q3->Q2)
 Oettingstr.: Kopfsteinpflaster	Q2 21828,5623 21907,5517
-Cardinalstr.: schlechtes Kopfsteinpflaster	Q3 21709,5543 21828,5623 21901,5728
+Cardinalstr.: schlechtes Kopfsteinpflaster	Q3 21706,5541 21828,5623 21901,5728
 Joachimstr. (Köpenick): guter Asphalt	Q0 21789,5427 21907,5517 22009,5593
 #: by: ^^^
 #: by: Silke (eng):
@@ -12399,6 +12403,7 @@ Spandauer Burgwall: Asphalt	Q0 -3783,13261 -3726,13276 -3649,13288 -3600,13267 -
 Brüderstr. (Wilhelmstadt): Gehwegplatten	Q1 -3999,12912 -3967,12891
 Brüderstr. (Wilhelmstadt): Kopfsteinpflaster	Q2 -3967,12891 -3849,12845 -3733,12848
 Brüderstr. (Wilhelmstadt): Asphalt	Q0 -3733,12848 -3658,12854
+#: confirmed_by: Bianca Schumacher
 Brüderstr. (Wilhelmstadt): Kopfsteinpflaster	Q2 -3658,12854 -3392,12928
 Konkordiastr.: Kopfsteinpflaster	Q2 -4080,12370 -4084,12557 -4053,12632 -4026,12720
 Schulenburgstr.: Asphalt	Q0 -3159,12962 -3210,12913 -3301,12864 -3437,12834 -3650,12762
