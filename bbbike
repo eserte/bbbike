@@ -4196,7 +4196,7 @@ if (!$MM_DRAG_IS_OBSOLETE) {
 	$hpbm->entryconfigure("last", -menu => $m2);
 	for my $doc_def (["doc/TODO.pod", M"To-Do-Liste"],
 			 ["doc/links.pod", M"Linkliste"],
-			 ["doc/watchsites.pod", M"Watchsites"],
+			 ["doc/watchsites.org", M"Watchsites"],
 			 ["doc/qualitaetskategorien.html", M"Qualitätskategorien"],
 			 ["doc/HOWTO_edit_bbbike_data.html", M"Daten in BBBike editieren"],
 			 ["doc/bbd.pod", M"Beschreibung des bbd-Formats"],
@@ -4223,7 +4223,10 @@ if (!$MM_DRAG_IS_OBSOLETE) {
 			     if ($@) {
 				 status_message($@, "die");
 			     }
-			 }  
+			 }
+		     } elsif ($file =~ m{\.org$}) {
+			 require BBBikeAdvanced;
+			 start_emacsclient("$FindBin::RealBin/$file");
 		     } else {
 			 require WWWBrowser;
 			 my $url = "file:$full_path";
