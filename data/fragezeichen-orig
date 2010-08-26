@@ -318,11 +318,11 @@ Ahrensfelder Chaussee: Radstreifen in Bau, bis 2008-10	? 20160,18301 20460,18420
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20060915.1800.47562.html
 #: by: http://www.cdu-fraktion-tk.de/image/inhalte/file/Amtsblatt_Nr__2010-14.pdf (Name der Straße)
 #: XXX Eintrag in Berlin.coords.data fehlt
-#: last_checked: 2010-08-19 (Asphaltierung an der Naumannstr. fehlt)
+#: last_checked: 2010-08-26
 #: next_check: 2010-10-15
 Wilhelm-Kabus-Str.: neue Straße wird gebaut, die Naumannstr. wird später verkehrsberuhigt	?::projected 7716,8048 7844,8049 7861,8217 7893,8327 7942,8380 8078,8772
-#: next_check: 2010-12-31
-Verbindung zwischen Leuthener Platz und General-Pape-Str. (evtl. mit Verlängerung) inkl. Brücke über die Bahnstrecke für Fußgänger und Radfahrer, Realisierung bis 2010-12-31	?::projected 7716,8356 7837,8354 7893,8327 8088,8283 8264,8289
+#: next_check: 2011-12-31
+Verbindung zwischen Leuthener Platz und General-Pape-Str. (evtl. mit Verlängerung) inkl. Brücke über die Bahnstrecke für Fußgänger und Radfahrer (4m breit), Realisierung bis 2011-12-31	?::projected 7716,8356 7837,8354 7893,8327 8088,8283 8264,8289
 #: by: (URL existiert nicht mehr) http://www.berlin.de/ba-steglitz-zehlendorf/presse/archiv/20060109.1050.33932.html
 #: last_checked: 2008-03 (by steffi silvermidi)
 Blanckertzweg: Radwege in Planung (ebenso östlicher Teil der Hildburghauser Str.)	?::projected 4806,1360 4706,1293 4634,1245 4542,1188
@@ -1188,7 +1188,7 @@ Göttin - Neu-Töplitz: Qualität? Ausschilderung?	? -24098,4329 -23819,4206 -23597
 Göttin - Neu-Töplitz (längere Alternativstrecke): Qualität? Ausschilderung?	? -24098,4329 -23927,4682 -23439,4685 -22782,4597 -22836,4190 -22906,4136 -22909,4076
 Beelitz - Schlunkendorf - Kähnsdorf: Qualität? Nur für Radfahrer offen (von Schlunkendorf bis Kähnsdorf)?	? -15840,-19875 -15820,-18897 -15477,-18643 -15211,-18664 -15160,-18324 -15198,-18059 -14322,-17043 -14233,-16484 -14270,-15906
 Möllersfelder Weg - Schillingweg: Qualität (möglicherweise guter Feldweg)? Teil des Barnimer Dörferwegs?	? 10799,24194 11101,23708
-(Am Schloss Schönhausen): Qualität? Für Autofahrer befahrbar?	? 10390,19069 10322,19046 10278,19072 10249,19148 10223,19223 10243,19267 10308,19297
+#XXX del --- den Weg gibt es so nicht. Ricardo März hat einen etwas kleineren Bogen als "Fußweg", Sand-/Kiesweg mit matschigen Stellen bezeichnet, wahrscheinlich eher uninteressant --- (Am Schloss Schönhausen): Qualität? Für Autofahrer befahrbar?	? 10390,19069 10322,19046 10278,19072 10249,19148 10223,19223 10243,19267 10308,19297
 #: XXX: zumindestens für den südlichen Abschnitt bestätigt, aber auf dem Luftbild sieht es so aus, als ob ein kleiner Abschnitt asphaltiert sein könnte:
 Blaubeerweg: Qualität (laut ADFC-Karte mäßig geeignet)?	? 10932,22184 10993,21948 11000,21858 11060,21694
 Mazetstr.: Qualität (laut ADFC-Karte überwiegend gut geeignet)?	? 10993,21948 11056,21978 11231,22065 11347,22122 11461,22179
@@ -4888,7 +4888,6 @@ Königsheide - Johannisthaler Chaussee: Qualität?	? 16670,5473 16569,5380 16497,5
 #: XXX fehlt bei Berlin.coords.data:
 Märkische Zeile: gibt es tatsächlich einen Weg diesen Namens hier? Für Radfahrer relevant?	? 6855,21481 6874,21183
 Erich-Baron-Weg: ist die Straße zwischen Kastanienallee und Akazienallee tatsächlich schlecht gepflastert?	? 24288,8008 24313,8170 24342,8321
-Pilsener Str.: wo genau fängt die Asphaltierung in der Pilsener an?	? 24370,9542 24404,9527
 Langenbeckstr.: ist die gesamte Straße asphaltiert?	? 24793,9860 25020,9728
 Hultschiner Damm: existieren zwischen Elsenstr. und Mahlsdorf in beiden Richtungen Radwege?	? 24740,10992 24654,11265
 #: XXX fehlt in Berlin.coords.data, PLZ=12526:

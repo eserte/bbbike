@@ -1574,9 +1574,9 @@ userdel	q4::inwork; 10614,19907 10742,19632
        undef,
        {
          'source_id' => '106900348',
-         'until' => 1282946400,
-         'text' => 'Treuenbrietzen: L82: Bau Schmutzwasser- und Trinkwasserleitungen OL Marzahna, 27.05.2010 bis 27.08.2010 ',
-         'from' => 1275342035,
+         'until' => 1286575200,
+         'text' => 'Treuenbrietzen: L82: Bau Schmutzwasser- und Trinkwasserleitungen OL Marzahna, 27.05.2010 bis 08.10.2010',
+         'from' => 1274820117,
          'id' => 2075,
          'data' => 'userdel	2::inwork -29601,-47258 -30976,-45652
 ',
@@ -1686,16 +1686,7 @@ userdel	q4::inwork; 10614,19907 10742,19632
          'type' => 'handicap'
        },
        undef,
-       {
-         'source_id' => 'LS/S-SG33-W/10/140',
-         'until' => 1282773600,
-         'text' => 'Zossen: B96: Deckenerneuerung Wünsdorf - Zossen, 12.07.2010 bis 25.08.2010 ',
-         'from' => 1278970267,
-         'id' => 2099,
-         'data' => 'userdel	2::inwork 15118,-24016 15693,-26169
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1283291999,
          'text' => 'Fahrbahnsanierung in der Pestalozzistraße zwischen Wielandstraße und Schlüterstraße, ab Montag, 12.07.2010 bis Ende August 2010, nur einspurig in Fahrtrichtung Wielandstraße befahrbar.',

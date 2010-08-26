@@ -4047,7 +4047,8 @@ Kurstr. (Spandau): Kopfsteinpflaster	Q2 -3077,15367 -3041,15434 -3006,15534 -298
 An der Margaretenhöhe: mäßiger Asphalt, viele Straßenschäden	Q2+ 16736,19193 16681,19382 16621,19961 16597,20170
 Heinickeweg: mäßiger Asphalt	Q1 2207,14576 2210,14696 2224,14825
 #: note: laut ADFC-Karte gut geeignet
-Stille Str.: guter Asphalt	Q0 10184,18875 10128,19110
+#: confirmed_by: Ricardo März ("guter, aber nicht sehr guter Straßenbelag")
+Stille Str.: guter Asphalt	Q0- 10184,18875 10115,19105
 Jean-Calas-Weg: asphaltiert	Q0 11991,22885 11551,23221 11536,23231 11459,23295
 Ernst-Haeckel-Str.: guter Asphalt	Q0 24365,12712 24421,12887 24438,12929 24462,12975 24502,13049 24609,13219 24746,13384 24833,13484 24880,13539 24910,13590 24938,13688
 #: note: "leichtes" Kopfsteinpflaster
@@ -4717,7 +4718,7 @@ Boris-Pasternak-Weg: guter Asphalt	Q0 9976,19059 10055,18831
 Majakowskiring: schlechtes Kopfsteinpflaster	Q3 9987,18757 9937,18741
 Majakowskiring: asphaltiert mit den üblichen Schlaglöchern	Q1 10373,18889 10307,18915 10184,18875 10162,18867 10055,18831 9987,18757 10041,18697 10203,18762 10354,18814 10373,18889
 Majakowskiring: asphaltiert mit den üblichen Schlaglöchern	Q1 10440,18910 10373,18889
-Güllweg: mäßiges Kopfsteinpflaster	Q2 10128,19110 10068,19276 10059,19304 10018,19429
+Güllweg: mäßiges Kopfsteinpflaster	Q2 10115,19105 10068,19276 10059,19304 10018,19429
 #: by: ^^^
 #: by: U. Gauger: vvv
 Buchholzer Str.: Asphalt	Q0 10917,15525 11055,15504 11183,15485
@@ -9668,9 +9669,10 @@ Rossinistr.: mäßiger Asphalt	Q1 13456,15760 13401,15821
 #: by: olli (bolliolli): vvv
 #: note: "q1" ohne Begründung ignoriert:
 #: corrected_by: srt (Asphalt -> glattes Pflaster)
-Pilsener Str.: glattes Pflaster	Q1 24227,9574 24370,9542
+#: note: das östliche Ende der Pflasterung nicht ganz klar, leicht bestätigt von Wenke (menzel):
+Pilsener Str.: glattes Pflaster	Q1 24227,9574 24370,9542 24404,9527
 #: confirmed_by: srt
-Pilsener Str.: Asphalt	Q0 24370,9542 24404,9527 24566,9456 24721,9387 24853,9312 24992,9234
+Pilsener Str.: Asphalt	Q0 24404,9527 24566,9456 24721,9387 24853,9312 24992,9234
 #: corrected_by: srt (Asphalt -> Beton)
 Pilsener Str.: Beton	Q0 24992,9234 25112,9151 25169,9114
 #: by: ^^^
@@ -11588,6 +11590,9 @@ Saarburger Str.: guter Beton	Q0 6529,3480 6635,3520
 #: note: "beleuchtet", "Pfosten"
 Gerdsmeyerweg - Marienhöher Weg: Asphalt	Q0 8036,5309 7944,5237
 #: by: ^^^
+#: by: Ricardo März:
+#: note: "guter, aber nicht sehr guter Straßenbelag"
+Tschaikowskistr.: guter Asphalt	Q0- 9501,18902 9876,19026 9976,19059 10115,19105 10249,19148
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206

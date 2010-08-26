@@ -17659,9 +17659,9 @@ EOF
 userdel	q3::inwork 16414,25575 16294,25683 16220,25716 16166,25767 16114,25827 16045,25907
 EOF
      },
-     { from  => 1275342035, # 2010-05-31 23:40
-       until => 1282946400, # 2010-08-28 00:00
-       text  => 'Treuenbrietzen: L82: Bau Schmutzwasser- und Trinkwasserleitungen OL Marzahna, 27.05.2010 bis 27.08.2010 ',
+     { from  => 1274820117, # 2010-05-25 22:41
+       until => 1286575200, # 2010-10-09 00:00
+       text  => 'Treuenbrietzen: L82: Bau Schmutzwasser- und Trinkwasserleitungen OL Marzahna, 27.05.2010 bis 08.10.2010',
        type  => 'gesperrt',
        source_id => '106900348',
        data  => <<EOF,
