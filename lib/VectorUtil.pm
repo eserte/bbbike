@@ -1,10 +1,9 @@
 # -*- perl -*-
 
 #
-# $Id: VectorUtil.pm,v 1.20 2009/02/14 13:39:28 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999,2001,2004,2008 Slaven Rezic. All rights reserved.
+# Copyright (C) 1999,2001,2004,2008,2010 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -16,7 +15,7 @@ package VectorUtil;
 
 use strict;
 use vars qw($VERSION $VERBOSE @ISA @EXPORT_OK);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.20 $ =~ /(\d+)\.(\d+)/);
+$VERSION = 1.21;
 
 require Exporter;
 @ISA = 'Exporter';
@@ -25,7 +24,7 @@ require Exporter;
 		get_polygon_center
 		point_in_grid point_in_polygon move_point_orthogonal
 		intersect_rectangles enclosed_rectangle normalize_rectangle
-		azimuth offset_line bbox_of_polygon
+		azimuth offset_line bbox_of_polygon combine_bboxes
 	       );
 
 sub pi () { 4 * atan2(1, 1) } # 3.141592653
@@ -407,6 +406,7 @@ sub offset_line {
     (\@offset_pnts_right, \@offset_pnts_left);
 }
 
+# Return [$minx,$miny,$maxx,$maxy]
 sub bbox_of_polygon {
     my($poly) = @_;
     my $minx = my $maxx = $poly->[0][0];
@@ -421,6 +421,25 @@ sub bbox_of_polygon {
 	    $maxy = $p->[1];
 	} elsif ($p->[1] < $miny) {
 	    $miny = $p->[1];
+	}
+    }
+    [$minx,$miny,$maxx,$maxy];
+}
+
+sub combine_bboxes {
+    my(@bboxes) = @_;
+    return if !@bboxes;
+    my($minx,$miny,$maxx,$maxy) = @{$bboxes[0]};
+    for my $bbox (@bboxes) {
+	if ($bbox->[2] > $maxx) {
+	    $maxx = $bbox->[2];
+	} elsif ($bbox->[0] < $minx) {
+	    $minx = $bbox->[0];
+	}
+	if ($bbox->[3] > $maxy) {
+	    $maxy = $bbox->[3];
+	} elsif ($bbox->[1] < $miny) {
+	    $miny = $bbox->[1];
 	}
     }
     [$minx,$miny,$maxx,$maxy];

@@ -2,7 +2,6 @@
 # -*- perl -*-
 
 #
-# $Id: vectorutil.t,v 1.2 2009/01/17 21:25:30 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -20,9 +19,10 @@ BEGIN {
     }
 }
 
-plan tests => 11;
+plan tests => 12;
 
-use_ok('VectorUtil', 'intersect_rectangles', 'normalize_rectangle', 'enclosed_rectangle', 'bbox_of_polygon');
+use_ok('VectorUtil', 'intersect_rectangles', 'normalize_rectangle',
+       'enclosed_rectangle', 'bbox_of_polygon', 'combine_bboxes');
 
 {
     my @r = (0,0,1,1);
@@ -76,6 +76,13 @@ use_ok('VectorUtil', 'intersect_rectangles', 'normalize_rectangle', 'enclosed_re
     is_deeply(bbox_of_polygon([[0,0]]), [0,0,0,0], 'bbox: one-point polygon');
     is_deeply(bbox_of_polygon([[0,0],[10,0],[0,10],[10,10]]), [0,0,10,10], 'bbox: square');
     is_deeply(bbox_of_polygon([[10,10],[10,0],[0,10],[0,0]]), [0,0,10,10], 'bbox: square backwards');
+}
+
+{
+    is_deeply(combine_bboxes([-2,-3,4,5],
+			     [5,6,7,8],
+			     [0,0,0,0],
+			    ), [-2,-3,7,8], 'combine_bboxes');
 }
     
 __END__
