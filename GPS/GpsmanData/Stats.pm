@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2009 Slaven Rezic. All rights reserved.
+# Copyright (C) 2009,2010 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,12 +15,12 @@ package GPS::GpsmanData::Stats;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '0.01';
+$VERSION = '0.02';
 
 BEGIN {
     # I don't want to depend on a non-core accessor module:
     no strict 'refs';
-    for (qw(GpsmanData Accuracy Stats
+    for (qw(GpsmanData Accuracy Stats Areas
 	  )) {
 	my $acc = $_;
 	*{$acc} = sub {
@@ -40,6 +40,9 @@ sub new {
     $self->GpsmanData($gpsmandata);
     my $accuracy = defined $args{accuracy} ? delete $args{accuracy} : 0;
     $self->Accuracy($accuracy);
+    if (exists $args{areas}) {
+	$self->Areas(delete $args{areas});
+    }
     die 'Unhandled arguments: ' . join(' ', %args) if %args;
     $self;
 }
@@ -62,6 +65,8 @@ sub run_stats {
 
     my($start_wpt, $farthest_wpt, $goal_wpt);
     my $max_dist_from_start;
+
+    my($area_bbox, $name_to_poly) = $self->_process_areas;
 
     for my $chunk (@{ $gpsmandata->Chunks }) {
 	next if $chunk->Type ne $chunk->TYPE_TRACK;
@@ -180,6 +185,25 @@ sub run_stats {
     unshift @route_wpts, $start_wpt if defined $start_wpt;
     push @route_wpts, $goal_wpt if defined $goal_wpt;
 
+    my @route_areas;
+    if ($area_bbox) {
+	for my $route_wpt (@route_wpts) {
+	    my($x,$y) = ($route_wpt->Longitude, $route_wpt->Latitude);
+	FIND_AREA: {
+		if (VectorUtil::point_in_grid($x,$y,@$area_bbox)) {
+		    while(my($name,$poly) = each %$name_to_poly) {
+			if (VectorUtil::point_in_polygon([$x,$y], $poly)) {
+			    keys %$name_to_poly; # reset iterator!!!
+			    push @route_areas, $name;
+			    last FIND_AREA;
+			}
+		    }
+		}
+		push @route_areas, undef; # unknown area
+	    }
+	}
+    }
+
     my %per_vehicle_stats;
     for my $chunk_stat (@chunk_stats) {
 	if (defined(my $vehicle = $chunk_stat->{vehicle})) {
@@ -207,6 +231,7 @@ sub run_stats {
 		   vehicles  => [keys %vehicles],
 		   bbox      => [$bbox_minx, $bbox_miny, $bbox_maxx, $bbox_maxy],
 		   route     => [map { $_->Longitude . ',' . $_->Latitude } @route_wpts],
+		   route_aras => [@route_areas],
 		 });
 }
 
@@ -239,6 +264,31 @@ sub human_readable {
     $stats;
 }
 
+######################################################################
+# Helpers
+sub _process_areas {
+    my($self) = @_;
+    my $area_bbox;
+    my $name_to_poly;
+    if ($self->Areas) {
+	require VectorUtil;
+	my $s = $self->Areas;
+	$s->init_for_iterator(__PACKAGE__);
+	my @bboxes;
+	my $convsub = $s->get_conversion(-tomap => 'polar');
+	while() {
+	    my $r = $s->next_for_iterator(__PACKAGE__);
+	    my @c = @{ $r->[Strassen::COORDS()] };
+	    last if !@c;
+	    my $poly = [map { [split(/,/, $convsub->($_))] } @c];
+	    push @bboxes, VectorUtil::bbox_of_polygon($poly);
+	    $name_to_poly->{$r->[Strassen::NAME()]} = $poly;
+	}
+	$area_bbox = VectorUtil::combine_bboxes(@bboxes);
+    }
+    ($area_bbox, $name_to_poly);
+}
+
 1;
 
 __END__
@@ -248,6 +298,11 @@ __END__
 Dump statistics for a track:
 
     perl -MGPS::GpsmanData::Any -MGPS::GpsmanData::Stats -MYAML -e '$g = GPS::GpsmanData::Any->load(shift); $s = GPS::GpsmanData::Stats->new($g); $s->run_stats; print Dump $s->human_readable' /tmp/20090829.trk
+
+Dump statistics for a track with Berlin and Potsdam area detection
+(using the "areas" parameter):
+
+    perl -Ilib -MStrassen::MultiStrassen -MGPS::GpsmanData::Any -MGPS::GpsmanData::Stats -MYAML -e '$areas = MultiStrassen->new("data/berlin_ortsteile", "data/potsdam"); $g = GPS::GpsmanData::Any->load(shift); $s = GPS::GpsmanData::Stats->new($g, areas => $areas); $s->run_stats; print Dump $s->human_readable' misc/gps_data/20100821.trk
 
 Dump statistics for all tracks in F<misc/gps_data>:
 
