@@ -1,5 +1,6 @@
 #:# -*- coding: iso-8859-1 -*-
 #: title: sonstige Kommentare
+#: category_image.culdesac: ../misc/verkehrszeichen/Zeichen_357.svg:12x12=1:12000,xxx
 #
 # z.B.: path finding helper (maybe candidates for comments_path):
 #       * "ausgeschildert als"
@@ -210,6 +211,169 @@ Kreisverkehr	Roundabout -4229,-463
 Kreisverkehr	Roundabout 68016,72528
 #: XXX_prog ^^^
 #: section ^^^
+#
+######################################################################
+# cul-de-sac
+#: section: ignorieren vvv
+	culdesac 9104,9262
+	culdesac 9149,8961
+	culdesac 8376,8859
+	culdesac 8979,10485
+#: XXX_osm exit=no fehlt bei osm
+	culdesac 13046,8048
+	culdesac 8581,10020
+	culdesac 8553,10287
+	culdesac 8796,11393
+	culdesac 10111,9942
+	culdesac 9666,10848
+	culdesac 10538,10899
+	culdesac 12615,9132
+	culdesac 13325,10565
+	culdesac 12582,11103
+	culdesac 13377,11345
+	culdesac 13730,11074
+	culdesac 14087,11467
+#: XXX_prog should not use the term "Sackgasse" at this point --- "S-Bahneingang" or so would be better
+	culdesac 14845,10954
+	culdesac 15079,10108
+	culdesac 16290,9670
+	culdesac 15842,9891
+	culdesac 15716,10065
+	culdesac 15567,10235
+	culdesac 13659,12193
+	culdesac 15101,11231
+	culdesac 15418,11816
+	culdesac 15766,11680
+	culdesac 13007,9347
+	culdesac 13103,9478
+	culdesac 12910,8929
+#: XXX_osm fehlt komplett
+	culdesac 12090,7865
+	culdesac 12295,8154
+	culdesac 12465,7250
+	culdesac 13070,6449
+	culdesac 13168,6444
+	culdesac 13732,6314
+	culdesac 13992,6213
+	culdesac 14133,6187
+	culdesac 13688,6739
+#: XXX_prog keine echte Sackgasse, sondern Schranke zum Betriebsgelände
+	culdesac 14306,6651
+	culdesac 14531,6959
+	culdesac 13654,7710
+	culdesac 13306,7765
+	culdesac 14989,8536
+	culdesac 14757,8655
+	culdesac 14327,9117
+	culdesac 14305,9213
+	culdesac 13966,9340
+	culdesac 16074,12778
+	culdesac 15231,12929
+	culdesac 15295,12234
+#: XXX_prog keine echte Sackgasse, Zugang zum S-Bahnhof, evtl. kann mit q4 verlängert werden
+	culdesac 15175,12180
+	culdesac 11506,11851
+	culdesac 6890,10581
+	culdesac 6877,10492
+#: XXX_prog keine echte Sackgasse, Gewerbegelände
+	culdesac 8139,8023
+	culdesac 8315,8189
+	culdesac 8839,8132
+	culdesac 8839,7904
+	culdesac 8263,7465
+#: XXX_prog: Ausnahme: würde zurzeit nicht automatisch als Sackgasse erkannt werden
+	culdesac 8952,7719
+	culdesac 8945,6873
+	culdesac 7973,7295
+	culdesac 6608,7306
+	culdesac 6505,7381
+	culdesac 6499,7535
+	culdesac 6499,7690
+	culdesac 6711,7846
+	culdesac 6009,8101
+	culdesac 7270,12870
+	culdesac 5405,12292
+	culdesac 5300,12406
+	culdesac 5277,12551
+	culdesac 2467,12525
+	culdesac 3594,11372
+#: XXX_prog keine echte Sackgasse, im Park geht's weiter
+	culdesac 2405,10131
+	culdesac 2212,9755
+	culdesac 3364,9142
+	culdesac 7872,13685
+	culdesac 9153,12925
+	culdesac 9106,13008
+	culdesac 9114,13217
+	culdesac 9853,13511
+	culdesac 9793,13549
+	culdesac 9399,14143
+	culdesac 10363,15933
+	culdesac 10550,15610
+	culdesac 11499,15710
+	culdesac 11476,15030
+	culdesac 12367,15396
+	culdesac 12234,15151
+#: XXX_prog: Ausnahme: würde zurzeit nicht automatisch als Sackgasse erkannt werden
+	culdesac 12104,13913
+	culdesac 13299,14212
+	culdesac 14428,13507
+	culdesac 14331,13537
+	culdesac 14227,13567
+	culdesac 14263,13739
+	culdesac 9351,7600
+	culdesac 5570,7939
+	culdesac 5068,7965
+	culdesac 4873,7967
+	culdesac 4087,8204
+	culdesac 5710,7820
+	culdesac 5806,7796
+	culdesac 8262,8317
+#: XXX nicht mehr lange ... Wilhelm-Kabus-Str. kommt!
+	culdesac 7942,8380
+	culdesac 4405,8697
+	culdesac 8814,8881
+	culdesac 8950,8954
+	culdesac 8950,9021
+	culdesac 7144,9150
+	culdesac 6753,9474
+	culdesac 13628,10396
+	culdesac 7064,10467
+	culdesac 8382,11224
+	culdesac 8354,11230
+	culdesac 8373,11301
+	culdesac 8404,11290
+	culdesac 2422,11700
+	culdesac 2327,11659
+	culdesac 2242,11892
+	culdesac 10209,11918
+	culdesac 11115,12083
+#: XXX Überprüfen, ob man die Service-Straßen mit aufnehmen sollte...
+	culdesac 13166,12232
+	culdesac 12997,12361
+	culdesac 11250,12268
+	culdesac 9894,12564
+	culdesac 4242,12684
+	culdesac 4421,12727
+	culdesac 10390,12842
+	culdesac 10734,12850
+	culdesac 4461,12896
+	culdesac 4495,13107
+	culdesac 11082,13134
+	culdesac 7861,13203
+	culdesac 4223,13949
+	culdesac 12001,13863
+	culdesac 13824,13771
+#: XXX_prog Zugang zum Poststadion, nicht als "Sackgasse" kennzeichnen
+	culdesac 7203,13695
+#: XXX_prog Zugang zum Bad, nicht als "Sackgasse" kennzeichnen
+	culdesac 7344,13435
+	culdesac 2439,13389
+	culdesac 10998,13382
+	culdesac 10898,13260
+	culdesac 4087,13257
+#: section ^^^
+######################################################################
 #: by: Dagmar Schilka
 (Spießweg - Hermsdorfer Str.): Rad- und Fußweg	CS 4827,20862 4644,20952
 #: by: Gertschie:
