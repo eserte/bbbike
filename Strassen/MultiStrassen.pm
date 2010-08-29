@@ -146,7 +146,7 @@ sub read_data {
 }
 
 # XXX Hack: autoloader does not work for inherited methods
-for my $method (qw(agrep bbox bboxes pos_from_name choose_street new_with_removed_points sort_records_by_cat make_coord_to_pos)) {
+for my $method (qw(agrep bbox bboxes pos_from_name choose_street new_with_removed_points sort_records_by_cat make_coord_to_pos grepstreets)) {
     my $code = 'sub ' . $method . ' { shift->Strassen::' . $method . '(@_) }';
     #warn $code;
     eval $code;
