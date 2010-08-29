@@ -6650,9 +6650,16 @@ sub generate_plot_functions {
 		    }
 
 		} elsif ($cat_hin =~ $complex_IMG_qr) {
-		    my $img = maybe_expand_image_file($1, $str_file{$abk}, "data");
+		    my $img_spec = $1;
 		    my $anchor = ($2 ? $2 : "c");
-		    my $p = image_from_file($top, $img);
+		    my $p;
+		    my $img = maybe_expand_image_file($img_spec, $str_file{$abk}, "data");
+		    if (!$img) {
+			# XXX get_image_for_str is actually more powerful, and should maybe replace maybe_expand_image_file+image_from_file?
+			$p = get_image_for_str($img_spec, $img_spec, $abk);
+		    } else {
+			$p = image_from_file($top, $img);
+		    }
 		    # XXX this is leaking (photo never deleted...)
 		    # XXX $abk-XXX => $abk-fg or $abk-img ?
 		    # XXX use $abk-fg for now (scaling works!)
@@ -21206,6 +21213,11 @@ sub get_image_for_p {
     get_image_for_any($base, $file, $abk, 'p');
 }
 
+sub get_image_for_str {
+    my($base, $file, $abk) = @_;
+    get_image_for_any($base, $file, $abk, 'str');
+}
+
 sub get_image_for_any {
     my($base, $file, $abk, $type) = @_;
     
@@ -21226,7 +21238,11 @@ sub get_image_for_any {
 	    # p/str-Objekt existiert. Somit kann $p/str_file{$abk}
 	    # leer sein und der dirname-Aufruf meckern (fileparse()
 	    # need a valid pathname)
-	    my $dir = dirname($type eq 'p' ? $p_file{$abk} : $str_file{$abk});
+	    my $abspath = $type eq 'p' ? $p_file{$abk} : $str_file{$abk};
+	    if ($abspath !~ m{^/}) { # XXX windows compat? Should check for all occurences of this pattern and replace by function!
+		$abspath = "$datadir/$abspath";
+	    }
+	    my $dir = dirname($abspath);
 	    if ($is_svg) {
 		# XXX move svg stuff to some general-purpose function or module
 		if (!defined $w) {
