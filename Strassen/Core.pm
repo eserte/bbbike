@@ -265,6 +265,7 @@ sub read_from_fh {
     my $preserve_line_info = $args{PreserveLineInfo} || 0;
     my $preserve_comments  = $args{PreserveComments} || 0;
 
+    local $_;
     while (<$fh>) {
 	if (/^\#:\s*([^\s:]+):?\s*(.*)$/) {
 	    my($directive, $value_and_marker) = ($1, $2);
