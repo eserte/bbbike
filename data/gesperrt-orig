@@ -245,7 +245,7 @@ Stolbergstr.	1 8850,6421 8834,6639
 Richnowstr.	1 8946,6501 8850,6421
 Menzelstr.	1 6185,6469 6155,6722
 Cranachstr.	1 6303,6736 6324,6480 6338,6312
-Boddinstr.	1 12582,8408 12368,8356 12216,8323 12104,8299 11920,8252
+Boddinstr.	1 12582,8408 12368,8356 12216,8323 12168,8313 12104,8299 11920,8252
 Schlangenbader Str.	1 3968,7906 3964,7742
 Tannenweg	1 -3023,17889 -3012,17940 -3028,18024
 Erlenweg	1 -3228,18103 -3327,18007
@@ -1010,6 +1010,7 @@ Rudower Chaussee: Mittelstreifen	3nocross 16135,2135 16028,2261 15957,2330
 #: note: Luftbild:
 Rudower Chaussee: Mittelstreifen	3 19498,3054 19475,3074 19426,3024
 Sterndamm: Straßenbahntrasse	3nocross 17601,5090 17542,4772 17520,4649
+Sterndamm: Straßenbahntrasse	3nocross 17645,5328 17601,5090 17542,4772
 Alt-Biesdorf: unbequemes Passieren des Mittelstreifens	3nocross 21960,11269 22242,11269 22326,11266
 Konrad-Wolf-Str./Große-Leege-Str.: wegen Absperrgitter nicht überquerbar	3nocross 16961,16042 16917,16001 16819,15912
 Knoten am Flughafen Tegel: Mittelstreifen nicht passierbar	3nocross 2996,15771 2960,15847 2913,15944 2819,16141
@@ -1182,6 +1183,8 @@ Potsdamer Chaussee: Mittelstreifen	3nocross -1249,2590 -1085,2653 -984,2692 -870
 Potsdamer Chaussee: Mittelstreifen	3nocross -870,2737 -756,2787 -567,2869 -512,2883 -391,2914
 Bahnhofstr.: Straßenbahntrasse	3nocross 22123,5452 22087,5404 22043,5346 21954,5229
 Dörpfeldstr.: Straßenbahngleise	3nocross 20834,4035 21053,4162 21146,4229
+#: note: theoretisch wäre das Linksabbiegen von der Fahrbahn aus möglich, aber der Radweg ist benutzungspflichtig
+Ernst-Ruska-Ufer: Lärmschutzwand	3nocross 18496,2471 18656,2465 18929,2454
 #
 ####################################################################
 #
@@ -1305,9 +1308,7 @@ tragen (Spreetunnel, ca. 50 Stufen)	0:60 25658,4619
 tragen (Spreetunnel, 50 Stufen)	0:60 25571,4553
 tragen (Brücke Tegeler Hafen)	0:60 1227,20281
 tragen (Brücke Tegeler Hafen)	0:60 1166,20330
-# XXX del (Neubau einer Brücke): XXX ja, siehe osm-Karte. Richtung Rosestr. scheint noch eine Treppe zu sein. tragen? (Fußgängerbrücke)	0:120 20442,564
-#: XXX ja, siehe osm-Karte.
-tragen? (Fußgängerbrücke)	0:120 19762,-160
+# osm_XXX hier ist keine Treppe --- XXX del --- tragen? (Fußgängerbrücke)	0:120 19762,-160
 tragen (Stufen), mit MTB befahrbar	0:30 5725,11644
 tragen (20 Stufen)	0:25 13138,9897
 unter der S-Bahn-Brücke tragen (5 Stufen)	0:10 3726,18982
@@ -1398,6 +1399,9 @@ tragen (Treppe)	0:30 89344,-5795
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+Drängelgitter	BNP:3::trailer=10 19974,-341
+Drängelgitter	BNP:3::trailer=10 19975,-320
+Schranke (lichte Breite ca. 100cm)	BNP:2::trailer=7 19140,1439
 Schranke	BNP:1::trailer=3 23807,7842
 Schranke	BNP:3::trailer=10 22801,4443
 Schranke	BNP:1::trailer=3 21617,3287
@@ -1425,6 +1429,7 @@ Drängelgitter	BNP:2::trailer=5 18361,2972
 Drängelgitter	BNP:2::trailer=5 18220,2973
 Drängelgitter	BNP:2::trailer=5 18167,2724
 Drängelgitter	BNP:2::trailer=5 17621,4063
+Drängelgitter	BNP:2::trailer=5 18018,3276
 #: note: lichte Breite beträgt 90cm
 Schranke	BNP:2::trailer=6 16368,7425
 Drängelgitter	BNP:3::trailer=10 23012,3598
@@ -1612,32 +1617,31 @@ Tor	BNP:3 6431,3417
 #: by: http://asp.vmzberlin.com/VMZ_LSBB_MELDUNGEN_WEB/Meldungskarte.jsp?back=true&map=true&x=52.53578&y=13.31063&zoom=13&meldungId=IM_014510
 #: next_check: 2011-06-30
 Radweg parallel zur Autobahn ist wegen Bauarbeiten am BAB gesperrt	2:inwork 5062,14681 4676,14534 3707,14303 3595,14277
+# 
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1002/nachricht3772.html
 #: next_check: 2010-10-01
 Brücke über A10: Sperrung vom 15.02.2010 bis 01.10.2010	2:inwork 15337,24593 15490,24848
-#XXX del: last_checked: 2009-09-18, #: next_check: 2010-04-01, Kreuzstr.: Bauarbeiten, voll gesperrt	2:inwork 10231,11940 10209,11918
+# 
 #: next_check: 2010-12-31
 #: XXX der Neubau wird "N" oder "NH" sein und Radwege haben
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0907/nachricht3563.html
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1005/nachricht3870.html
 Wegedornbrücke: Vollsperrung, Neubau	2:inwork 20385,593 20442,564 20510,530
+# 
 #: next_check: 2011-03-01
 Rathausbrücke: gesperrt bis März 2011 (Neubau)	2:inwork 10362,12351 10422,12395
-#: last_checked: 2010-07-18 vvv
-#: next_check: 2010-11-01 vvv
-#XXX del Vicki-Baum-Str.: noch in Bau, gesperrt	2:inwork 15990,10185 15894,10251
-#XXX del Vicki-Baum-Str.: noch in Bau, gesperrt	2:inwork 15823,10300 15753,10353
+# 
+#: last_checked: 2010-08-28
+#: next_check: 2010-11-01
 Vicki-Baum-Str.: noch in Bau, gesperrt	2:inwork 15753,10353 15688,10400
-#XXX del Alice-und-Hella-Hirsch-Ring: noch in Bau, gesperrt	2:inwork 15788,10252 15823,10300
-# XXX del Lina-Morgenstern-Str.: noch in Bau, gesperrt	2:inwork 15716,10303 15753,10353
-#: next_check ^^^
-#: last_checked ^^^
+# 
 #: last_checked: 2010-07-05
 #: next_check: 2011-03-01
 Kynaststraße: Bauarbeiten im südlichen Abschnitt	2:inwork 14652,10201 14724,10297 14766,10372 14795,10473 14805,10518
-#XXX del 14988,11130 14897,10935 14881,10864 14867,10802 14828,10628 14802,10505 14795,10473 14766,10372 14724,10297
+# 
 #: last_checked: 2009-09-12
 Brücke im Tiergarten: gesperrt	2:inwork 6406,11784 6467,11780
+# 
 #: by: tobias wirnsberger
 #: last_checked: 2010-04-24 (by Matthias Stief)
 #: next_check: 2011-01-01

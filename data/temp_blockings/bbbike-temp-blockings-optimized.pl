@@ -1306,15 +1306,7 @@ userdel	q4::inwork; 9130,12433 9141,12320
        undef,
        undef,
        undef,
-       {
-         'until' => 1282946400,
-         'text' => 'B 246 Clara-Zetkin-Straße OD Beelitz, zw. Trebbiner Str. u. Brücker Str. Kanal- u. Straßenbauarbeiten halbseitig gesperrt; Einbahnstraße 29.05.2009-27.08.2010 ',
-         'from' => 1243461600,
-         'id' => 2013,
-         'data' => 'userdel	q4::inwork -17930,-19476 -18615,-19264
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        {
@@ -1783,16 +1775,7 @@ userdel	q4::inwork; 10614,19907 10742,19632
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => '106200364',
-         'until' => 1282946400,
-         'text' => 'Plessa: K6208: Gleisbauarbeiten und Umbau des BÜ, Straßen- und Schwarzdeckeneinbau OL Kahla, Bahnübergang, 03.08.2010 bis 27.08.2010 ',
-         'from' => 1280985970,
-         'id' => 2115,
-         'data' => 'userdel	2::inwork 23805,-103848 24165,-103467 25237,-102574
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'source_id' => 'LS/W-SG33-P/10/410',

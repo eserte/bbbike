@@ -219,7 +219,7 @@ Stolbergstr.	1 8850,6421 8834,6639
 Richnowstr.	1 8946,6501 8850,6421
 Menzelstr.	1 6185,6469 6155,6722
 Cranachstr.	1 6303,6736 6324,6480 6338,6312
-Boddinstr.	1 12582,8408 12368,8356 12216,8323 12104,8299 11920,8252
+Boddinstr.	1 12582,8408 12368,8356 12216,8323 12168,8313 12104,8299 11920,8252
 Schlangenbader Str.	1 3968,7906 3964,7742
 Tannenweg	1 -3023,17889 -3012,17940 -3028,18024
 Erlenweg	1 -3228,18103 -3327,18007
@@ -919,6 +919,13 @@ Waldstr. -> Ellernweg: Straßenbahntrasse	3::igndisp 17580,4761 17542,4772 17428,
 Waldstr. -> Sterndamm: Straßenbahntrasse	3::igndisp 17580,4761 17542,4772 17520,4649
 Sterndamm -> Waldstr.: Straßenbahntrasse	3::igndisp 17601,5090 17542,4772 17580,4761
 Sterndamm -> Ellernweg: Straßenbahntrasse	3::igndisp 17520,4649 17542,4772 17428,4792
+Straßenbahntrasse	3nocross::ignrte 17645,5328 17601,5090 17542,4772
+Sterndamm -> Pietschkerstr.: Straßenbahntrasse	3::igndisp 17645,5328 17601,5090 17652,5082
+Staudenweg -> Sterndamm: Straßenbahntrasse	3::igndisp 17493,5112 17601,5090 17645,5328
+Staudenweg -> Pietschkerstr.: Straßenbahntrasse	3::igndisp 17493,5112 17601,5090 17652,5082
+Sterndamm -> Staudenweg: Straßenbahntrasse	3::igndisp 17542,4772 17601,5090 17493,5112
+Pietschkerstr. -> Staudenweg: Straßenbahntrasse	3::igndisp 17652,5082 17601,5090 17493,5112
+Pietschkerstr. -> Sterndamm: Straßenbahntrasse	3::igndisp 17652,5082 17601,5090 17542,4772
 unbequemes Passieren des Mittelstreifens	3nocross::ignrte 21960,11269 22242,11269 22326,11266
 Möwenweg -> Alt-Biesdorf: unbequemes Passieren des Mittelstreifens	3::igndisp 22237,11215 22242,11269 21960,11269
 Möwenweg -> Wuhlewanderweg: unbequemes Passieren des Mittelstreifens	3::igndisp 22237,11215 22242,11269 22244,11311
@@ -1539,6 +1546,9 @@ Lindenstr. -> Bhf.str.: Straßenbahntrasse	3::igndisp 22046,5305 22043,5346 21954
 Straßenbahngleise	3nocross::ignrte 20834,4035 21053,4162 21146,4229
 Freystadter Weg -> Ottomar-Geschke-Str.: Straßenbahngleise	3::igndisp 21017,4220 21053,4162 21146,4229
 Dörpfeldstr. -> Freystadter Weg: Straßenbahngleise	3::igndisp 20834,4035 21053,4162 21017,4220
+Lärmschutzwand	3nocross::ignrte 18496,2471 18656,2465 18929,2454
+Ernst-Ruska-Ufer -> North-Willys-Str.: Lärmschutzwand	3::igndisp 18496,2471 18656,2465 18644,2582
+North-Willys-Str. -> Ernst-Ruska-Ufer: Lärmschutzwand	3::igndisp 18644,2582 18656,2465 18929,2454
 tragen, mehrere Treppen à 3 Stufen	0:30:-191 8002,4903
 tragen, enge Treppe (11 Stufen)	0:20:-259 7132,4028
 tragen (64 Stufen)	0:100:-158 -1720,3940
@@ -1627,7 +1637,6 @@ tragen (Spreetunnel, ca. 50 Stufen)	0:60:17 25658,4619
 tragen (Spreetunnel, 50 Stufen)	0:60:52 25571,4553
 tragen (Brücke Tegeler Hafen)	0:60:-256 1227,20281
 tragen (Brücke Tegeler Hafen)	0:60:-231 1166,20330
-tragen? (Fußgängerbrücke)	0:120:-202 19762,-160
 tragen (Stufen), mit MTB befahrbar	0:30:-69 5725,11644
 tragen (20 Stufen)	0:25:16 13138,9897
 unter der S-Bahn-Brücke tragen (5 Stufen)	0:10:-180 3726,18982
@@ -1688,6 +1697,9 @@ tragen (Treppe, 12 Stufen)	0:15:-23 5475,7906
 tragen (Treppe, ca. 20 Stufen)	0:25:-108 19163,14981
 tragen (Treppe, ca. 20 Stufen)	0:25:-12 19160,14935
 tragen (Treppe)	0:30:70 89344,-5795
+Drängelgitter	BNP:3:2:trailer=10 19974,-341
+Drängelgitter	BNP:3:-177:trailer=10 19975,-320
+Schranke (lichte Breite ca. 100cm)	BNP:2:-137:trailer=7 19140,1439
 Schranke	BNP:1:-234:trailer=3 23807,7842
 Schranke	BNP:3:-35:trailer=10 22801,4443
 Schranke	BNP:1:-48:trailer=3 21617,3287
@@ -1704,10 +1716,11 @@ Schranke, Durchfahrtsbreite nur 60cm	BNP:3:-232:trailer=no -784,16658
 Drängelgitter	BNP:3:-12:trailer=10 -992,16688
 Drängelgitter	BNP:2:-266:trailer=5 18583,2972
 Drängelgitter	BNP:2:90:trailer=5 18390,2972
-Drängelgitter	BNP:2:90:trailer=5 18361,2972
+Drängelgitter	BNP:2:-265:trailer=5 18361,2972
 Drängelgitter	BNP:2:90:trailer=5 18220,2973
 Drängelgitter	BNP:2:-165:trailer=5 18167,2724
 Drängelgitter	BNP:2:-71:trailer=5 17621,4063
+Drängelgitter	BNP:2:-88:trailer=5 18018,3276
 Schranke	BNP:2:82:trailer=6 16368,7425
 Drängelgitter	BNP:3:-101:trailer=10 23012,3598
 Schranke	BNP:1:-135:trailer=3 14395,8071
