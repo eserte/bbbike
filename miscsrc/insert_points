@@ -1118,7 +1118,7 @@ sub emacs_lockfile {
     my $file = shift;
     my $lock_file;
     if ($file =~ m{/.*?$}) {
-	($lock_file = $file) =~ s{/(.*?)$}{/.#$1};
+	($lock_file = $file) =~ s{/([^/]+)$}{/.#$1};
     } else {
 	$lock_file = '.#' . $file;
     }
