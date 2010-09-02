@@ -27,11 +27,8 @@ Universitätsstr.: wegen Bauarbeiten Richtung Unter den Linden gesperrt	q4::inwor
 Planckstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 9434,12669 9385,12809 9383,12915
 #: next_check: 2010-10-01
 Matkowskystr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 14530,11137 14509,11060
-#: by: Uta Rahmann vvv
-#: next_check: 2010-10-01 vvv
-Varziner Str.: Bauarbeiten, Einbahnstraßenregelung zwischen Bundesallee und Varziner Platz (offen Richtung Südwestkorso)	q4::inwork; 5458,7866 5356,7862
-Varziner Platz: Bauarbeiten, es muss geschoben werden	q4::inwork 5458,7866 5492,7868 5517,7869
-#: next_check ^^^
+# XXX del --- #: by: Uta Rahmann vvv --- #: next_check: 2010-10-01 vvv --- Varziner Str.: Bauarbeiten, Einbahnstraßenregelung zwischen Bundesallee und Varziner Platz (offen Richtung Südwestkorso)	q4::inwork; 5458,7866 5356,7862
+# XXX del --- Varziner Platz: Bauarbeiten, es muss geschoben werden	q4::inwork 5458,7866 5492,7868 5517,7869
 #: last_checked: 2010-04-29
 #: next_check: 2011-01-01
 Rathausstr.: Baustelle vor dem Roten Rathaus, eng	q3::inwork 10601,12521 10704,12595

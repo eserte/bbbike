@@ -1174,18 +1174,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_014421',
-         'until' => 1283205600,
-         'text' => 'Neustädtische Kirchstr. (Mitte) Richtung Unter den Linden zwischen Dorotheenstr. und Unter den Linden Baustelle, Fahrtrichtung gesperrt bis 30.08.2010 16:00 Uhr ',
-         'from' => 1270235189,
-         'id' => 1946,
-         'data' => 'userdel	2::inwork; 9123,12500 9130,12433
-Kein Durchgang von Mittelstr. zur Neustädtischen Kirchstr., auch nicht für Fußgänger	2::inwork 9343,12464 9130,12433
-userdel	q4::inwork; 9130,12433 9141,12320
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1309,17 +1298,7 @@ userdel	q4::inwork; 9130,12433 9141,12320
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_011081',
-         'until' => 1283259600,
-         'text' => 'Blankenburger Str. (Pankow): Baustelle, Fahrtrichtung gesperrt (bis Ende 08.2010) Richtung Dietzgenstr. zwischen Siegfriedstr. und Dietzgenstr. sowie Einbahnstraßenregelung in der Siegfriedstr., 05.01.2009 11:00 Uhr bis 31.08.2010 15:00 Uhr ',
-         'from' => 1231063200,
-         'id' => 2016,
-         'data' => 'userdel	q4::inwork; 10742,19632 10439,19576 10377,19565 10249,19541
-userdel	q4::inwork; 10614,19907 10742,19632
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'IM_015001',
          'until' => 1309471199,
@@ -1437,16 +1416,7 @@ userdel	q4::inwork; 10614,19907 10742,19632
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'LSO-SG33-E10030',
-         'until' => 1283292000,
-         'text' => 'Hoppegarten: Deckenerneuerung Hönow - Mehrow Vollsperrung zw. Hönow, Grenzweg bis Mehrow, Altlandsberger Weg 12.04.2010 bis 31.08.2010 ',
-         'from' => 1271281013,
-         'id' => 2045,
-         'data' => 'userdel	2::inwork 25170,18422 25654,17351
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        {
@@ -1679,15 +1649,7 @@ userdel	q4::inwork; 10614,19907 10742,19632
        },
        undef,
        undef,
-       {
-         'until' => 1283291999,
-         'text' => 'Fahrbahnsanierung in der Pestalozzistraße zwischen Wielandstraße und Schlüterstraße, ab Montag, 12.07.2010 bis Ende August 2010, nur einspurig in Fahrtrichtung Wielandstraße befahrbar.',
-         'from' => 1279050848,
-         'id' => 2100,
-         'data' => 'userdel	q4::inwork; 4433,11213 4556,11206
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => undef,
          'permanent' => 1,

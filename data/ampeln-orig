@@ -404,7 +404,8 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 3501,11096
 	X 3830,10351
 	X 3813,10435
-	X 3795,11098
+# allerdings mit relativ langen Grünphasen für Fußgänger
+	F 3795,11098
 	X 4289,11060
 	X 4245,10435
 	F 4172,10406
@@ -1517,7 +1518,7 @@ nur Richtung O	X 8142,7221
 	X -4351,12460
 	X 419,12397
 	X 1286,11834
-	X 1883,11070
+	F 1854,11089
 	X 3358,12258
 	X 10453,-2133
 	X 10747,-2129
@@ -1668,7 +1669,7 @@ nur Richtung O	X 8142,7221
 	X 3970,11664
 	X 3460,11441
 	X 3481,11224
-	X 2854,11085
+	F 2865,11086
 	X 2766,11512
 	X 3617,12352
 	X 4572,7936
