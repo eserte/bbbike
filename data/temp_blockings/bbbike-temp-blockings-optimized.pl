@@ -1174,7 +1174,18 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'IM_014421',
+         'until' => 1285336800,
+         'text' => 'Neustädtische Kirchstr. (Mitte) Richtung Unter den Linden zwischen Dorotheenstr. und Unter den Linden Baustelle, Fahrtrichtung gesperrt bis 24.09.2010 16:00 Uhr ',
+         'from' => 1270235189,
+         'id' => 1946,
+         'data' => 'userdel	2::inwork; 9123,12500 9130,12433
+Kein Durchgang von Mittelstr. zur Neustädtischen Kirchstr., auch nicht für Fußgänger	2::inwork 9343,12464 9130,12433
+userdel	q4::inwork; 9130,12433 9141,12320
+',
+         'type' => 'handicap'
+       },
        undef,
        undef,
        undef,
@@ -1298,7 +1309,17 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'IM_011081',
+         'until' => 1284382800,
+         'text' => 'Blankenburger Str. (Pankow): Baustelle, Fahrtrichtung gesperrt Richtung Dietzgenstr. zwischen Siegfriedstr. und Dietzgenstr. sowie Einbahnstraßenregelung in der Siegfriedstr., 05.01.2009 11:00 Uhr bis 13.09.2010 ',
+         'from' => 1231063200,
+         'id' => 2016,
+         'data' => 'userdel	q4::inwork; 10742,19632 10439,19576 10377,19565 10249,19541
+userdel	q4::inwork; 10614,19907 10742,19632
+',
+         'type' => 'handicap'
+       },
        {
          'source_id' => 'IM_015001',
          'until' => 1309471199,
@@ -1671,16 +1692,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_016077',
-         'until' => 1283526000,
-         'text' => 'Schmidt-Knobelsdorf-Straße (Spandau): Baustelle, Einbahnstraße in Richtung Lutoner Str., 19.07.2010 09:00 Uhr bis 03.09.2010 17:00 Uhr',
-         'from' => 1279436400,
-         'id' => 2103,
-         'data' => 'userdel	q4::inwork; -5030,13017 -4629,12835 -4277,12675 -4239,12626
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        {
@@ -1758,6 +1770,45 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
          'data' => 'userdel	2::inwork -45941,-31977 -46134,-32389 -46514,-32785
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => '106000506',
+         'until' => 1292972400,
+         'text' => 'Bernau bei Berlin: L314: Verlegung Trinkwasser/ Sanierung Schmutzwasser, Ausbau nördl. Geh- und Radweg OD Bernau, Zepernicker Chaussee zw. Elbestr. und Autobahnbrücke gesperrt, 30.08.2010 bis 21.12.2010 ',
+         'from' => 1283547955,
+         'id' => 2119,
+         'data' => 'userdel	q4::inwork; 20537,29285 21085,29942
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_016276',
+         'until' => 1283630400,
+         'text' => 'Boxhagener Str. (Friedrichshain): Bauarbeiten an der Eisenbahnüberführung, Straße vollständig gesperrt (bis 04.09., 22 Uhr) in beiden Richtungen zwischen zwischen Kynaststr. und Neue Bahnhofstr., 03.09.2010 22:00 Uhr bis 04.09.2010 22:00 Uhr ',
+         'from' => 1283457600,
+         'id' => 2120,
+         'data' => 'userdel	2::inwork 14918,11249 14988,11130
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_016256',
+         'until' => 1285000200,
+         'text' => 'Romain-Rolland-Str. (Heinersdorf): Baustelle, Fahrtrichtung gesperrt (bis Ende 09/2010) Richtung Hohenschönhausen zwischen Rothenbachstr. und Berliner Str., 01.09.2010 08:51 Uhr bis 20.09.2010 18:30 Uhr ',
+         'from' => 1283237460,
+         'id' => 2121,
+         'data' => 'userdel	q4::inwork; 12575,18275 12606,18215 12693,18081 12736,17998
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => undef,
+         'text' => 'Mariannenstr. zwischen Skalitzer Str. und Heinrichplatz: Fahrbahn gesperrt',
+         'from' => undef,
+         'id' => 2122,
+         'data' => 'userdel	q4::inwork 11722,10533 11671,10402
+',
+         'type' => 'handicap'
        }
      
 );

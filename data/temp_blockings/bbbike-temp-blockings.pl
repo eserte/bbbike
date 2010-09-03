@@ -16516,8 +16516,8 @@ userdel	2::inwork 3314,15782 3564,16294
 EOF
      },
      { from  => 1270235189, # 2010-04-02 21:06
-       until => 1283205600, # 2010-08-31 00:00
-       text  => 'Neustädtische Kirchstr. (Mitte) Richtung Unter den Linden zwischen Dorotheenstr. und Unter den Linden Baustelle, Fahrtrichtung gesperrt bis 30.08.2010 16:00 Uhr ',
+       until => Time::Local::timelocal(reverse(2010-1900,9-1,24,16,0,0)), # 1283205600, # 2010-08-31 00:00
+       text  => 'Neustädtische Kirchstr. (Mitte) Richtung Unter den Linden zwischen Dorotheenstr. und Unter den Linden Baustelle, Fahrtrichtung gesperrt bis 24.09.2010 16:00 Uhr ',
        type  => 'handicap',
        source_id => 'IM_014421',
        data  => <<EOF,
@@ -17112,8 +17112,8 @@ userdel	2::inwork -24240,6075 -24731,6194
 EOF
      },
      { from  => 1231063200, # 2009-01-04 11:00
-       until => 1283259600, # 2010-08-31 15:00
-       text  => 'Blankenburger Str. (Pankow): Baustelle, Fahrtrichtung gesperrt (bis Ende 08.2010) Richtung Dietzgenstr. zwischen Siegfriedstr. und Dietzgenstr. sowie Einbahnstraßenregelung in der Siegfriedstr., 05.01.2009 11:00 Uhr bis 31.08.2010 15:00 Uhr ',
+       until => Time::Local::timelocal(reverse(2010-1900,9-1,13,15,0,0)), # 1283259600, # 2010-08-31 15:00
+       text  => 'Blankenburger Str. (Pankow): Baustelle, Fahrtrichtung gesperrt Richtung Dietzgenstr. zwischen Siegfriedstr. und Dietzgenstr. sowie Einbahnstraßenregelung in der Siegfriedstr., 05.01.2009 11:00 Uhr bis 13.09.2010 ',
        type  => 'handicap',
        source_id => 'IM_011081',
        data  => <<EOF,
@@ -18117,6 +18117,41 @@ EOF
        source_id => '106900748',
        data  => <<EOF,
 userdel	2::inwork -45941,-31977 -46134,-32389 -46514,-32785
+EOF
+     },
+     { from  => 1283547955, # 2010-09-03 23:05
+       until => 1292972400, # 2010-12-22 00:00
+       text  => 'Bernau bei Berlin: L314: Verlegung Trinkwasser/ Sanierung Schmutzwasser, Ausbau nördl. Geh- und Radweg OD Bernau, Zepernicker Chaussee zw. Elbestr. und Autobahnbrücke gesperrt, 30.08.2010 bis 21.12.2010 ',
+       type  => 'handicap',
+       source_id => '106000506',
+       data  => <<EOF,
+userdel	q4::inwork; 20537,29285 21085,29942
+EOF
+     },
+     { from  => 1283457600, # 2010-09-02 22:00
+       until => 1283630400, # 2010-09-04 22:00
+       text  => 'Boxhagener Str. (Friedrichshain): Bauarbeiten an der Eisenbahnüberführung, Straße vollständig gesperrt (bis 04.09., 22 Uhr) in beiden Richtungen zwischen zwischen Kynaststr. und Neue Bahnhofstr., 03.09.2010 22:00 Uhr bis 04.09.2010 22:00 Uhr ',
+       type  => 'gesperrt',
+       source_id => 'IM_016276',
+       data  => <<EOF,
+userdel	2::inwork 14918,11249 14988,11130
+EOF
+     },
+     { from  => 1283237460, # 2010-08-31 08:51
+       until => 1285000200, # 2010-09-20 18:30
+       text  => 'Romain-Rolland-Str. (Heinersdorf): Baustelle, Fahrtrichtung gesperrt (bis Ende 09/2010) Richtung Hohenschönhausen zwischen Rothenbachstr. und Berliner Str., 01.09.2010 08:51 Uhr bis 20.09.2010 18:30 Uhr ',
+       type  => 'handicap',
+       source_id => 'IM_016256',
+       data  => <<EOF,
+userdel	q4::inwork; 12575,18275 12606,18215 12693,18081 12736,17998
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Mariannenstr. zwischen Skalitzer Str. und Heinrichplatz: Fahrbahn gesperrt',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 11722,10533 11671,10402
 EOF
      },
     );
