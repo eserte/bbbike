@@ -194,12 +194,19 @@ Beetzseeweg: Qualität?	? -1765,16603 -1689,16584
 Röddelinseeweg: Qualität?	? -1783,16533 -1704,16518
 Wolzenseeweg: Qualität?	? -1798,16465 -1715,16449
 #: note ^^^
-#: last_checked: 2010-09-02
+# 
 #: next_check: 2011-09-30
 #: by: http://www.potsdam.de/cms/beitrag/10061626/966975/
-Mangerstr.: Bauarbeiten bis September 2011, danach asphaltiert	?::inwork -11669,-138 -11751,-58 -11831,-70 -11903,-71 -12000,-156 -12064,-284 -12108,-291 -12265,-418
+Mangerstr.: Bauarbeiten bis September 2011, danach asphaltiert	?::inwork -11669,-138 -11751,-58 -11831,-70 -11903,-71 -12000,-156 -12064,-284
+# 
+#: last_checked: 2010-09-02
+#: next_check: 2010-12-15
+#: by: http://www.potsdam.de/cms/beitrag/10067476/966975/
+Mangerstr.: Bauarbeiten bis Dezember 2010, danach asphaltiert	?::inwork -12064,-284 -12108,-291 -12265,-418
+# 
 #: by: http://www.potsdam.de/cms/beitrag/10056300/757395/
 Mauerweg: evtl. existiert hier bereits ein geschotterter Radweg parallel zur Straße	? -8799,3778 -9064,3667 -9156,3451 -9399,3297 -9530,3165 -9999,2615 -10105,2458
+# 
 #: last_checked: 2009-12-29
 Pyramidenring/Rhinstr.: Ampel in Bau	?::inwork 18166,14277
 #
@@ -1797,7 +1804,6 @@ Hoernlestr. - Gehsener Str.: Qualität des Sackgassenabschnitts?	? 22301,6683 223
 Hoernlestr. - Gehsener Str.: Durchfahrt für Radfahrer möglich? Durchfart für Autos möglich? Ausschilderung? Qualität?	? 22351,6756 22395,6821
 #: XXX_osm: fehlt bei osm
 Schönecker Weg: Qualität?	? 22330,6973 22358,7093
-Eitelsdorfer Str.: Qualität?	? 22869,7095 22810,7120 22690,7146 22501,7192 22272,7242
 Pflanzgartenplatz: Qualität?	? 22656,7412 22685,7480
 Straße 3a: Qualität?	? 16689,3056 16740,3131 16793,3176
 Deutschtaler Str.: Qualität?	? 17344,1060 17492,843 17640,626 17811,374 17854,314 17946,179 18011,83 18077,-13 18230,-233
@@ -2738,7 +2744,6 @@ Münsingerstr.: Qualität?	? -3598,14587 -3535,14408
 Martin-Albertz-Weg: Qualität?	? -3535,14408 -3587,14389
 Altstädter Ring - Münsingerstr./Martin-Albertz-Weg: Qualität?	? -3498,14413 -3535,14408
 Kurze Str. (Spandau): Qualität?	? -3582,15244 -3555,15377
-Kleine Mittelstr.: Qualität?	? -3536,15450 -3414,15460
 #: XXX gesehen bei OpenStreetMap
 Heinrich-Kleist-Str. (Potsdam): existiert eine Verbindung zur Walter-Klausch-Str.?	? -10142,-2540 -10158,-2591 -10080,-2632
 Kleewall (Potsdam): Qualität?	? -9806,-2861 -9693,-2899
@@ -3218,7 +3223,6 @@ Siebenendenweg: Qualität? Ist die gesamte Straße für Autos gesperrt?	? 404,3970 
 TR4 durch den Volkspark Jungfernheide: Qualität/Wegbeschaffenheit? Nachts beleuchtet?	? 1468,15194 1510,15067 1550,15014 2367,14836 2527,14832 2683,14878 2675,14744
 #: XXX an der Nieberstr. noch asphaltiert. Radfahren explizit erlaubt. green1 (mindestens) eintragen
 Weg am Johannisthaler Park: Qualität? Nachts beleuchtet?	? 17760,4867 17659,4849 17580,4761
-Spiekermannstr.: Ist die Spiekermannstr. eine Tempo-30-Straße oder eine Spielstraße?	? 12054,16517 11919,16495 11844,16483 11663,16458
 Waldrebensteig: Qualität? Ist die Straße eine Spielstraße?	? -2014,1981 -2174,1933
 Satzkorner Weg: Qualität?	? -1133,1640 -1133,1616
 Menzer Weg: Qualität?	? -1062,1675 -1054,1616
@@ -4034,7 +4038,6 @@ Sundhauser Gang: Qualität?	? -8584,15023 -8471,15000
 Sulzbacher Steig: Qualität?	? -8617,14848 -8443,14826
 Lohrer Pfad: Qualität? Teilweise für Autos gesperrt?	? -8443,14826 -8439,14844 -8295,14948
 Oberdorfer Steig: Qualität? Teilweise für Autos gesperrt?	? -8316,14460 -8289,14664 -8281,14739 -8270,14782 -8213,14837
-Hinter den Gärten: Qualität?	? -6700,15653 -6718,15447
 Hochhausweg: Qualität? Wo genau geht die Straße in die Straße 600 über?	? -6755,15682 -6890,15692 -6977,15706
 Straße 600: Qualität?	? -6977,15706 -7072,15719 -7160,15726
 Am Hüllepfuhl: Qualität?	? -6924,15411 -6890,15692 -6854,16039 -6836,16141
@@ -4802,8 +4805,6 @@ Börnicke - Staffelde: existieren Radwege zwischen Börnicke und Staffelde?	? -217
 #: XXX fehlt bei Berlin.coords.data
 #: note: Name ab 2010-08-16
 Sotzmannstr.: Qualität? Ist das tatsächlich die Sotzmannstr.?	? -4629,12835 -4558,12992 -4610,13010 -4601,13112 -4634,13173
-#: XXX mit Sicherheit: green2, NL
-Königsheide - Johannisthaler Chaussee: Qualität?	? 16670,5473 16569,5380 16497,5323 16320,5187 16279,5170
 #: XXX fehlt bei Berlin.coords.data:
 Märkische Zeile: gibt es tatsächlich einen Weg diesen Namens hier? Für Radfahrer relevant?	? 6855,21481 6874,21183
 Erich-Baron-Weg: ist die Straße zwischen Kastanienallee und Akazienallee tatsächlich schlecht gepflastert?	? 24288,8008 24313,8170 24342,8321
@@ -4826,3 +4827,8 @@ Juister Weg: Qualität? Genaue Lage?	? 3319,6958 3353,6931
 #: XXX fehlt in Berlin.coords.data
 #: by: http://www.cdu-fraktion-tk.de/image/inhalte/file/Amtsblatt_Nr__31_pdf.pdf
 Magnolienring: Qualität? Genaue Lage?	? 3405,6945 3527,6882
+#: XXX wo genau?
+#: by: http://www.potsdam.de/cms/beitrag/10068669/966975/
+Radwegbau in Golmer Chaussee und Wublitzstr.	?::inwork -17691,1634 -18091,1642 -18350,1540 -18688,1177 -18718,1243 -18673,1785 -18728,2153 -18989,2236 -19233,2251 -19439,2221 -19656,2362 -20009,2396
+#: by: http://www.potsdam.de/cms/beitrag/10064125/966975/
+Alleestr./Weinmeinsterstr.: existiert hier eine Ampel?	? -12557,11

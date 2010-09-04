@@ -1809,6 +1809,25 @@ userdel	q4::inwork; 10614,19907 10742,19632
          'data' => 'userdel	q4::inwork 11722,10533 11671,10402
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => 1285883999,
+         'text' => 'Die Charlottenstraße zwischen Hermann-Elflein-Straße und Schopenhauerstraße ist für den Bau von Hausanschlüssen halbseitig gesperrt. Im Baubereich ist eine Einbahnstraße in Richtung Wilhelmgalerie eingerichtet. Die Arbeiten dauern bis voraus. 30.09.2010. ',
+         'from' => 1283623066,
+         'id' => 2123,
+         'data' => 'userdel	q4::inwork; -13392,-1196 -13516,-1225
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'http://www.potsdam.de/cms/beitrag/10067788/966975/',
+         'until' => 1343685600,
+         'text' => 'Für die Arbeiten an der Brücke des Friedens in Neu Fahrland wird der Lerchensteig auf der gesamten Baulänge zwischen Nedlitzer Straße und Am Golfplatz voll gesperrt . Der Zeitraum für diese Arbeiten ist vom 09.08.2010 bis ca. 30.07.2012 geplant ',
+         'from' => 1281218400,
+         'id' => 2124,
+         'data' => 'userdel	q4::inwork -13387,2987 -13581,3075 -13840,2956 -14382,3066
+',
+         'type' => 'handicap'
        }
      
 );

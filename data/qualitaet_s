@@ -3600,6 +3600,7 @@ Zitadelle: Kopfsteinpflaster	Q2 -2646,14525 -2652,14559 -2656,14582 -2668,14635 
 Behnitz: Kopfsteinpflaster	Q2 -2951,14617 -2993,14568 -3014,14559
 Rietzestr.: Asphalt	Q0 12693,15225 12472,15356
 Strehlener Str.: Asphalt	Q0 22652,10392 22538,10477 22403,10523
+Kleine Mittelstr.: Kopfsteinpflaster	Q2 -3536,15450 -3414,15460
 Thaterstr.: schlechtes Kopfsteinpflaster	Q3 7445,17968 7195,17908
 (ehem. Autobahnbrücke): guter Beton	Q1 -5359,-1298 -5364,-1204
 Warnitzer Str. (Neu-Hohenschönhausen): guter Asphalt	Q0 17894,17925 17956,17927 17994,17958 18010,17972 18109,17861 18179,17915 18214,17876
@@ -4164,6 +4165,7 @@ Reichnerweg: Verbundsteinpflaster	Q1 10726,739 10539,662
 Eugen-Schönhaar-Str.: Beton	Q0 12723,14714 12653,14653 12573,14581 12496,14515 12425,14459
 Jablonskistr.: mäßiges Kopfsteinpflaster	Q2 12228,14404 11955,14531 11662,14695
 Margaretenstr.: schlechtes Kopfsteinpflaster	Q3 3142,4173 3501,4435
+Eitelsdorfer Str.: Asphalt	Q0 22869,7095 22810,7120 22690,7146 22501,7192 22272,7242
 Käthe-Niederkirchner-Str.: schlechtes Kopfsteinpflaster	Q3 12403,13755 12398,13792 12280,13880 12119,13980 11991,14060
 Haubachstr.: Asphalt	Q0 3295,12068 3384,12060 3507,12076 3643,12092 3782,12104
 Hoyerswerdaer Str.: Beton	Q0 25045,14946 25181,15028 25292,14981 25312,14910
@@ -4589,7 +4591,8 @@ Diedenhofer Str.: Kopfsteinpflaster	Q2 11188,14184 11316,14360
 Straßburger Str.: Kopfsteinpflaster	Q2 10902,13604 11060,13865 11160,14002 11262,14136
 Potsdamer Str. (Lichterfelde): Kopfsteinpflaster	Q2 3193,3793 3375,3544 3492,3371 3599,3242 3646,3154 3646,3034 3644,2937 3641,2827
 Dessauerstr.: mäßiges Kopfsteinpflaster	Q2 6725,2494 6651,2479 6465,2356 6337,2271 6232,2201 6196,2204 6021,2071 5865,1975
-Geibelstr. (Lichtenrade): Verbundsteinpflaster	Q0 10143,-1026 10143,-987 10126,-834 10124,-790 10082,-671 10064,-628 10034,-546 10018,-494 9991,-413 9968,-345 9861,-44 9826,48 9789,150
+Geibelstr. (Lichtenrade): gepflastert	Q2 10143,-1026 10143,-987 10126,-834 10124,-790 10082,-671 10064,-628 10034,-546 10018,-494 9991,-413 9968,-345
+Geibelstr. (Lichtenrade): sehr schlechtes und welliges Kopfsteinpflaster	Q3 9968,-345 9861,-44 9826,48 9789,150
 Rosenheimer Str.: Asphalt	Q0 6851,9365 6717,9339 6446,9328 6357,9322 6239,9344
 Rosenheimer Str.: Verbundsteinpflaster	Q0 6239,9344 6164,9329
 Rosenheimer Str.: Asphalt	Q0 6164,9329 6070,9322
@@ -4745,7 +4748,8 @@ Neukirchstr.: loser Sandweg	Q2 12885,18329 12751,18401
 Neukirchstr.: Kopfsteinpflaster	Q2 12751,18401 12681,18431 12606,18464 12562,18483
 Markelstr.: Kopfsteinpflaster	Q1 4588,6675 4679,6620 4901,6505
 Markelstr.: asphaltiert	Q0 4901,6505 5020,6434 5268,6305
-Neanderstr.: Asphalt	Q0 9815,-805 9828,-768 9822,-608 9808,-339 9812,-41 9826,48
+Neanderstr.: gepflastert	Q2 9815,-805 9828,-768 9822,-608 9808,-339
+Neanderstr.: sehr schlechtes und welliges Kopfsteinpflaster	Q3 9808,-339 9812,-41 9826,48
 Bredowstr.: mäßiges Kopfsteinpflaster	Q2 6011,13330 6008,13529 6005,13734 6021,14017
 Heilbronner Str.: Asphalt	Q0 6131,9241 6164,9329 6123,9544 6109,9729
 Wigandstaler Str.: Asphalt	Q0 13037,16957 12923,17133 12780,17318
@@ -7588,6 +7592,8 @@ Ruthstr.: mäßiges Kopfsteinpflaster	Q2 6129,3203 6224,3112
 Saarburger Str.: guter Beton	Q0 6529,3480 6635,3520
 Gerdsmeyerweg - Marienhöher Weg: Asphalt	Q0 8036,5309 7944,5237
 Tschaikowskistr.: guter Asphalt	Q0 9501,18902 9876,19026 9976,19059 10115,19105 10249,19148
+(Königsheide - Johannisthaler Chaussee): guter breiter Waldweg	Q1 16670,5473 16569,5380 16497,5323 16320,5187 16279,5170
+Hinter den Gärten: guter Asphalt	Q0 -6700,15653 -6718,15447
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206
 Richard-Ermisch-Str.: Asphalt	Q0 14250,13281 14224,13206 14207,13152 14177,13065 14163,13025 14130,12926 14096,12827
 Zum Langen Jammer: Kopfsteipflaster, Gehweg besser	Q2 14686,12873 14405,12953

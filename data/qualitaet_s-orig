@@ -3934,7 +3934,9 @@ Borussiastr.: Asphalt	Q0 8645,6781 8743,6778 8831,6780 9046,6784 9241,6791 9511,
 Renate-Privatstr.: mäßiger Asphalt mit Schlaglöchern	Q1 8686,5536 8710,5735
 #: by ^^^
 #: by: Volker
-Spiekermannstr.: Kopfsteinpflaster	Q2 11663,16458 11844,16483 11919,16495 12054,16517
+#: confirmed_by: Frank Lausch (even "schlechtes", so corrected Q2 -> Q2-)
+#: note: 30er-Zone (by F. Lausch)
+Spiekermannstr.: Kopfsteinpflaster	Q2- 11663,16458 11844,16483 11919,16495 12054,16517
 #: by: Klaus Feuerstein
 Kirschweg: Beton	Q1 13869,2658 13914,2601 13931,2579 13953,2551 13948,2418 14078,2390
 #: by: Daniel Küstner: vvv
@@ -4008,6 +4010,7 @@ Strehlener Str.: Asphalt	Q0 22652,10392 22538,10477 22403,10523
 ######################################################################
 #: by: anonymous vvv
 # 
+Kleine Mittelstr.: Kopfsteinpflaster	Q2 -3536,15450 -3414,15460
 Thaterstr.: schlechtes Kopfsteinpflaster	Q3 7445,17968 7195,17908
 #: note: "gut zu fahren"
 (ehem. Autobahnbrücke): guter Beton	Q1 -5359,-1298 -5364,-1204
@@ -4781,6 +4784,8 @@ Jablonskistr.: mäßiges Kopfsteinpflaster	Q2 12228,14404 11955,14531 11662,14695
 #: by: Anne Geschke
 Margaretenstr.: schlechtes Kopfsteinpflaster	Q3 3142,4173 3501,4435
 #: by: Susanne Grittner: vvv
+#: note: "Bei der Querung der Filehner Straße ist Kopfsteinpflaster verlegt. Ansonsten ist die Eitelsdorfer Straße kompflett asphaltiert und gut befahrbar."
+Eitelsdorfer Str.: Asphalt	Q0 22869,7095 22810,7120 22690,7146 22501,7192 22272,7242
 Käthe-Niederkirchner-Str.: schlechtes Kopfsteinpflaster	Q3 12403,13755 12398,13792 12280,13880 12119,13980 11991,14060
 Haubachstr.: Asphalt	Q0 3295,12068 3384,12060 3507,12076 3643,12092 3782,12104
 #: by: ^^^
@@ -5489,9 +5494,12 @@ Straßburger Str.: Kopfsteinpflaster	Q2 10902,13604 11060,13865 11160,14002 11262
 Potsdamer Str. (Lichterfelde): Kopfsteinpflaster	Q2 3193,3793 3375,3544 3492,3371 3599,3242 3646,3154 3646,3034 3644,2937 3641,2827
 #: by: harald kuendgen:
 Dessauerstr.: mäßiges Kopfsteinpflaster	Q2 6725,2494 6651,2479 6465,2356 6337,2271 6232,2201 6196,2204 6021,2071 5865,1975
-#: by: funda:
-#: XXX: Monika Winkel meint aber: schlechtes Kopfsteinpflaster, Q3 -> Anfrage gestellt
-Geibelstr. (Lichtenrade): Verbundsteinpflaster	Q0 10143,-1026 10143,-987 10126,-834 10124,-790 10082,-671 10064,-628 10034,-546 10018,-494 9991,-413 9968,-345 9861,-44 9826,48 9789,150
+#: by: funda: vvv
+#: corrected_by: Monika Winkel (Verbundsteinpflaster Q0 -> Kopfsteinpflaster Q2 ("kleinere Pflastersteine")
+Geibelstr. (Lichtenrade): gepflastert	Q2 10143,-1026 10143,-987 10126,-834 10124,-790 10082,-671 10064,-628 10034,-546 10018,-494 9991,-413 9968,-345
+#: corrected_by: Monika Winkel (Verbundsteinpflaster Q0 -> Kopfsteinpflaster Q3)
+Geibelstr. (Lichtenrade): sehr schlechtes und welliges Kopfsteinpflaster	Q3 9968,-345 9861,-44 9826,48 9789,150
+#: by: ^^^
 #: by: Jörg (sch8374...) vvv
 Rosenheimer Str.: Asphalt	Q0 6851,9365 6717,9339 6446,9328 6357,9322 6239,9344
 #: corrected_by: srt (was Asphalt, Q0)
@@ -5782,9 +5790,12 @@ Neukirchstr.: Kopfsteinpflaster	Q2 12751,18401 12681,18431 12606,18464 12562,184
 Markelstr.: Kopfsteinpflaster	Q1 4588,6675 4679,6620 4901,6505
 Markelstr.: asphaltiert	Q0 4901,6505 5020,6434 5268,6305
 #: by: ^^^
-#: by: René Hartmann:
-#: XXX: Monika Winkel meint aber: schlechtes Kopfsteinpflaster, Q3 -> Anfrage gestellt
-Neanderstr.: Asphalt	Q0 9815,-805 9828,-768 9822,-608 9808,-339 9812,-41 9826,48
+#: by: René Hartmann: vvv
+#: corrected_by: Monika Winkel (Asphalt Q0 -> Kopfsteinpflaster Q2 ("kleinere Pflastersteine"))
+Neanderstr.: gepflastert	Q2 9815,-805 9828,-768 9822,-608 9808,-339
+#: corrected_by: Monika Winkel (Asphalt Q0 -> Kopfsteinpflaster Q3)
+Neanderstr.: sehr schlechtes und welliges Kopfsteinpflaster	Q3 9808,-339 9812,-41 9826,48
+#: by: ^^^
 #: by: martinstag:
 Bredowstr.: mäßiges Kopfsteinpflaster	Q2 6011,13330 6008,13529 6005,13734 6021,14017
 #: by: Handan (aktas):
@@ -11702,6 +11713,10 @@ Gerdsmeyerweg - Marienhöher Weg: Asphalt	Q0 8036,5309 7944,5237
 #: by: Ricardo März:
 #: note: "guter, aber nicht sehr guter Straßenbelag"
 Tschaikowskistr.: guter Asphalt	Q0- 9501,18902 9876,19026 9976,19059 10115,19105 10249,19148
+#: by: sabrina (brinchen...):
+(Königsheide - Johannisthaler Chaussee): guter breiter Waldweg	Q1- 16670,5473 16569,5380 16497,5323 16320,5187 16279,5170
+#: by: Peter (borrmann-...)
+Hinter den Gärten: guter Asphalt	Q0 -6700,15653 -6718,15447
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206
