@@ -3165,7 +3165,7 @@ sub settings_html {
 </select></td></tr>
 <tr><td>@{[ M("Bevorzugter Straßenbelag") ]}:</td><td><select $bi->{hfill} name="pref_quality">
 <option @{[ $qual_checked->("") ]}>@{[ M("egal") ]}
-<option @{[ $qual_checked->("Q2") ]}>@{[ M("Kopfsteinpflaster vermeiden") ]}
+<option @{[ $qual_checked->("Q2") ]}>@{[ M("Kopfsteinpflaster und schlechte Fahrbahnen vermeiden") ]}
 <option @{[ $qual_checked->("Q0") ]}>@{[ M("nur sehr gute Beläge bevorzugen (rennradtauglich)") ]}
 </select></td></tr>
 EOF

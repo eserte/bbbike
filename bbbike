@@ -8811,7 +8811,7 @@ sub enter_opt_preferences {
 	require Tk::Optionmenu;
 	my $name2inx =
 	    {M"egal" => 0,
-	     M"Kopfsteinpflaster vermeiden" => 1,
+	     M"Kopfsteinpflaster und schlechte Fahrbahnen vermeiden" => 1,
 	     M"nur sehr gute Beläge bevorzugen (rennradtauglich)" => 2,
 	     M"freie Eingabe" => 3,
 	    };
