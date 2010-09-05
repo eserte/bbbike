@@ -1831,7 +1831,7 @@ EOF
        text  => 'Berliner Allee Richtung stadtauwärts, zwischen Langhanstr. und Lindenallee Baustelle, Fahrtrichtung gesperrt (bis Ende 2005)',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4; 13540,15928 13623,15954 13630,15956 13737,15994 13826,16026 14014,16106 14067,16127 14248,16202 14371,16252
+userdel	q4; 13540,15928 13623,15954 13630,15956 13737,15994 13826,16026 14014,16106 14045,16120 14248,16202 14371,16252
 EOF
      },
      { from  => 1138319749, # 2006-01-27 00:55
@@ -3557,7 +3557,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_002437',
        data  => <<EOF,
-userdel	q4; 14067,16127 13788,16240
+userdel	q4; 14045,16120 13788,16240
 EOF
      },
      { from  => 1138319443, # 2006-01-27 00:50
@@ -8961,7 +8961,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.berlin.de/ba-pankow/presse/archiv/20070703.1505.81257.html',
        data  => <<EOF,
-userdel	1::inwork 12667,16699 12604,16731 12486,16791 12257,16876 12241,16900
+userdel	1::inwork 12667,16699 12602,16727 12472,16783 12257,16876 12241,16900
 EOF
      },
      { from  => 1183704492, # 2007-07-06 08:48
@@ -10813,7 +10813,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006024',
        data  => <<EOF,
-userdel	1::inwork 12257,16876 12486,16791 12604,16731 12667,16699
+userdel	1::inwork 12257,16876 12472,16783 12602,16727 12667,16699
 EOF
      },
      { from  => 1201647600, # 2008-01-30 00:00
@@ -17974,7 +17974,7 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-lichtenberg/presse/archiv/20100714.1400.303010.html',
        data  => <<EOF,
-userdel	q4::inwork; 16692,16253 16801,16501 16849,16551 17017,16716
+userdel	q4::inwork; 16692,16253 16806,16496 16849,16551 17017,16716
 EOF
      },
      { from  => 1279436400, # 2010-07-18 09:00

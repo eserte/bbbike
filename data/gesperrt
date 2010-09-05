@@ -207,7 +207,7 @@ Sybel-/Waitzstr.	1 3883,10577 3800,10580 3744,10668 3734,10756
 Aﬂmannstr.	1 25012,5729 25048,5727 25039,5304 25039,5295
 Schˆnblicker Str.	1 31670,3604 31661,3665 31695,3690 31745,3679 31756,3620 31724,3592 31670,3604
 Bayerische Str.	1 4296,10004 4349,10247
-Knorrpromenade	1 14417,11641 14362,11492
+Knorrpromenade	1 14424,11639 14369,11489
 Hoppestr.	1 8617,18310 8482,18284
 Herbststr.	1 8465,18365 8634,18401
 Ruhwaldweg: Schranke gesperrt	2 773,13375 758,13334
@@ -484,7 +484,7 @@ Straﬂe 12 (Neukˆlln): gesperrt f¸r Fahrzeuge aller Art (auﬂer BAB-Versorgung)	2 
 Alt-Biesdorf	1 20375,11694 20435,11698 20575,11698 21108,11628
 Alt-Biesdorf	1 21108,11628 20963,11618 20633,11651 20549,11659 20375,11694
 Privatstr. 14	1s 13159,17196 13103,17280
-Bernkasteler Str.	1 15208,16939 15015,16908 14923,16901 14923,16914
+Bernkasteler Str.	1s 15208,16939 15015,16908 14923,16901 14923,16914
 Wiedenbr¸cker Weg	1 4207,1113 4220,1175 4148,1275
 Am Langen Weg:	1 -7033,14984 -7024,14880 -7015,14772 -7011,14693 -7013,14578
 Hans-Sachs-Str.	1 3141,4023 3214,4066
@@ -551,7 +551,7 @@ Preunelstr.	1 13012,17332 12965,17324 12930,17302 12865,17381
 Mollstr. (Richtungsfahrbahn)	1::igndisp 11723,13139 11843,13090 11904,13075 11958,13079 11985,13075
 Mollstr. (Richtungsfahrbahn)	1::igndisp 11985,13075 11966,13074 11905,13069 11881,13072 11839,13083 11739,13131 11723,13139
 Lˆtschbergstr.	1s 20161,11715 20150,11512
-Brodenbacher Weg	1 15178,17134 14897,17093
+Brodenbacher Weg	1s 15178,17134 14897,17093
 Huttwiler Weg	1 6913,18460 6961,18453 7035,18413 7098,18383 7120,18295 7071,18232
 Markgrafenstr. (Zehlendorf)	1 475,2811 441,2987
 B¸rstadter Weg	1 -847,4553 -760,4542
@@ -569,6 +569,7 @@ Paddlerweg: Privatweg, Tor	2 -3559,11227 -3625,11250 -3679,11248
 Joachimstr.	1s 22009,5593 21907,5517 21789,5427
 Cardinalstr.	1s 21901,5728 21828,5623 21706,5541
 Fuchsbergeweg	1s 20595,9558 20592,9298
+Piesporter Str. - Liebermannstr.	1 15217,17284 15267,17349 15280,17352
 Am Neuen Garten	1 -12166,1384 -12212,1201 -12276,831 -12302,718
 Am Neuen Garten	1 -12332,585 -12582,127
 Hochstraﬂe	3nocross::ignrte -11399,-1339 -11461,-1424 -11540,-1543
@@ -1526,9 +1527,17 @@ Adlergestell -> Am Adlergestell: Mittelstreifen	3::igndisp 19633,3751 19676,3705
 Husstr. -> Adlergestell: Mittelstreifen	3::igndisp 19736,3858 19633,3751 19676,3705
 Adlergestell -> Husstr.: Mittelstreifen	3::igndisp 19587,3801 19633,3751 19736,3858
 Silberberger -> Adlergestell: Abbiegen verboten	3 19804,3697 19735,3643 19812,3561
-Straﬂenbahngleise	3nocross::ignrte 17579,15565 17542,15648 17488,15766
-Str. 156 -> Rhinstr.: Straﬂenbahngleise	3::igndisp 17570,15658 17542,15648 17579,15565
-Rhinstr. -> Str. 156: Straﬂenbahngleise	3::igndisp 17488,15766 17542,15648 17570,15658
+Straﬂenbahngleise	3nocross::ignrte 17488,15766 17532,15645 17569,15561 17626,15433 17829,15015
+Str. 156 -> Rhinstr.: Straﬂenbahngleise	3::igndisp 17570,15658 17532,15645 17569,15561
+Rhinstr. -> Str. 156: Straﬂenbahngleise	3::igndisp 17488,15766 17532,15645 17570,15658
+Str. 150 -> Rhinstr.: Straﬂenbahngleise	3::igndisp 17640,15583 17569,15561 17626,15433
+Rhinstr. -> Str. 150: Straﬂenbahngleise	3::igndisp 17532,15645 17569,15561 17640,15583
+Str. 155 -> Rhinstr.: Straﬂenbahngleise	3::igndisp 17599,15435 17626,15433 17569,15561
+Str. 155 -> Str. 155: Straﬂenbahngleise	3::igndisp 17599,15435 17626,15433 17657,15427
+Rhinstr. -> Str. 155: Straﬂenbahngleise	3::igndisp 17569,15561 17626,15433 17657,15427
+Rhinstr. -> Str. 155: Straﬂenbahngleise	3::igndisp 17829,15015 17626,15433 17599,15435
+Str. 155 -> Str. 155: Straﬂenbahngleise	3::igndisp 17657,15427 17626,15433 17599,15435
+Str. 155 -> Rhinstr.: Straﬂenbahngleise	3::igndisp 17657,15427 17626,15433 17829,15015
 Mittelstreifen	3nocross::ignrte -1249,2590 -1085,2653 -984,2692 -870,2737
 Gilgestr. -> Potsdamer Chaussee: Mittelstreifen	3::igndisp -1100,2697 -1085,2653 -984,2692
 Potsdamer Chaussee -> Gilgestr.: Mittelstreifen	3::igndisp -1249,2590 -1085,2653 -1100,2697
@@ -1548,6 +1557,12 @@ Dˆrpfeldstr. -> Freystadter Weg: Straﬂenbahngleise	3::igndisp 20834,4035 21053,4
 L‰rmschutzwand	3nocross::ignrte 18496,2471 18656,2465 18929,2454
 Ernst-Ruska-Ufer -> North-Willys-Str.: L‰rmschutzwand	3::igndisp 18496,2471 18656,2465 18644,2582
 North-Willys-Str. -> Ernst-Ruska-Ufer: L‰rmschutzwand	3::igndisp 18644,2582 18656,2465 18929,2454
+Straﬂenbahntrasse	3nocross::ignrte 14843,15007 14828,15050 14650,15750
+Straﬂenbahntrasse	3nocross::ignrte 16460,17214 16578,17285 16837,17440
+Neuzeller Weg -> Hansastr.: Straﬂenbahntrasse	3::igndisp 16658,17142 16578,17285 16460,17214
+Hansastr. -> Neuzeller Weg: Straﬂenbahntrasse	3::igndisp 16837,17440 16578,17285 16658,17142
+tragen (22 Stufen)	0:30:-84 17599,15435
+tragen (22 Stufen)	0:30:-79 17657,15427
 tragen, mehrere Treppen ‡ 3 Stufen	0:30:-191 8002,4903
 tragen, enge Treppe (11 Stufen)	0:20:-259 7132,4028
 tragen (64 Stufen)	0:100:-158 -1720,3940
@@ -1696,6 +1711,9 @@ tragen (Treppe, 12 Stufen)	0:15:-23 5475,7906
 tragen (Treppe, ca. 20 Stufen)	0:25:-108 19163,14981
 tragen (Treppe, ca. 20 Stufen)	0:25:-12 19160,14935
 tragen (Treppe)	0:30:70 89344,-5795
+Dr‰ngelgitter	BNP:3:-111:trailer=10 18059,14838
+Dr‰ngelgitter	BNP:3:-115:trailer=10 18170,14890
+Schranke	BNP:1:-209:trailer=3 15568,14901
 Dr‰ngelgitter	BNP:3:2:trailer=10 19974,-341
 Dr‰ngelgitter	BNP:3:-177:trailer=10 19975,-320
 Schranke (lichte Breite ca. 100cm)	BNP:2:-137:trailer=7 19140,1439
@@ -1837,6 +1855,7 @@ Schranke, kann auch mit Anh‰nger umfahren werden	BNP:1:-168 49137,24422
 Dr‰ngelgitter	BNP:3:24:trailer=6 3644,8456
 Poller, Abstand 80cm (mit Anh‰nger ¸ber Gehweg umfahren)	BNP:1:1:trailer=10 7816,5682
 Tor	BNP:3:-209 6431,3417
+Rhinstr.: neues Wohngebiet, Weg gesperrt	2:inwork 18015,13846 17300,14133
 Radweg parallel zur Autobahn ist wegen Bauarbeiten am BAB gesperrt	2:inwork 5062,14681 4676,14534 3707,14303 3595,14277
 Br¸cke ¸ber A10: Sperrung vom 15.02.2010 bis 01.10.2010	2:inwork 15337,24593 15490,24848
 Wegedornbr¸cke: Vollsperrung, Neubau	2:inwork 20385,593 20442,564 20510,530
@@ -2231,6 +2250,8 @@ Dr‰ngelgitter	BNP:5:81 5875,807
 Dr‰ngelgitter	BNP:5:74 5860,805
 Dr‰ngelgitter	BNP:5:62 5682,767
 Straﬂenbahn	3nocross::ignrte 16837,17440 16947,17506 17159,17631
+Falkenberger Chaussee -> R¸dickenstr.: Straﬂenbahn	3::igndisp 17159,17631 16947,17506 16992,17472
+R¸dickenstr. -> Falkenberger Chaussee: Straﬂenbahn	3::igndisp 16992,17472 16947,17506 16837,17440
 Rudolf-Reusch-Str. [Wohngebiet]	1 15732,12562 15657,12562 15657,12648 15732,12650
 Letteallee	1 8226,17479 8110,17470 8014,17475 7845,17460 7684,17435
 Mickestr.	1 8185,17352 8134,17398 8110,17470

@@ -1688,7 +1688,7 @@ userdel	q4::inwork; 10614,19907 10742,19632
          'text' => 'Degnerstr., Bauarbeiten, Einbahnstraße in Richtung Süden, bis Oktober 2011',
          'from' => 1279577078,
          'id' => 2102,
-         'data' => 'userdel	q4::inwork; 16692,16253 16801,16501 16849,16551 17017,16716
+         'data' => 'userdel	q4::inwork; 16692,16253 16806,16496 16849,16551 17017,16716
 ',
          'type' => 'handicap'
        },
@@ -1781,16 +1781,7 @@ userdel	q4::inwork; 10614,19907 10742,19632
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_016276',
-         'until' => 1283630400,
-         'text' => 'Boxhagener Str. (Friedrichshain): Bauarbeiten an der Eisenbahnüberführung, Straße vollständig gesperrt (bis 04.09., 22 Uhr) in beiden Richtungen zwischen zwischen Kynaststr. und Neue Bahnhofstr., 03.09.2010 22:00 Uhr bis 04.09.2010 22:00 Uhr ',
-         'from' => 1283457600,
-         'id' => 2120,
-         'data' => 'userdel	2::inwork 14918,11249 14988,11130
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_016256',
          'until' => 1285000200,

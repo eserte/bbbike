@@ -1,6 +1,7 @@
 #:# -*- coding: iso-8859-1 -*-
 #: title: sonstige Kommentare
 #: category_image.culdesac: ../misc/verkehrszeichen/Zeichen_357.svg:12x12=1:12000,xxx
+#: category_image.culdesac_pseudo: ../misc/verkehrszeichen/Zeichen_357.svg:8x8=1:12000,xxx
 #
 # z.B.: path finding helper (maybe candidates for comments_path):
 #       * "ausgeschildert als"
@@ -214,7 +215,200 @@ Kreisverkehr	Roundabout 68016,72528
 #
 ######################################################################
 # cul-de-sac
+#
+# Noch nicht ganz klar, was mit diesen Daten gemacht werden soll.
+# Zum einen kann überprüft werden, ob eine Sackgasse tatsächlich eine
+# Sackgasse ist oder nur ein Datenfehler.
+#
 #: section: ignorieren vvv
+	culdesac 19700,9040
+	culdesac 19495,9278
+	culdesac 19416,8668
+	culdesac 19449,8455
+	culdesac 19686,8428
+	culdesac 19721,8452
+	culdesac 19740,8481
+	culdesac 20293,8440
+	culdesac 20258,8413
+	culdesac 20319,8350
+	culdesac 20503,7848
+	culdesac 18949,8107
+	culdesac 19110,8105
+	culdesac 19128,8131
+	culdesac 18715,9589
+	culdesac 18353,9570
+	culdesac 18125,9676
+	culdesac 18021,9127
+	culdesac 17961,8932
+	culdesac 17915,8900
+	culdesac 17733,8202
+	culdesac 17658,8216
+	culdesac 17597,8258
+Weiterfahrt auf der Abteiinsel möglich	culdesac_pseudo 15675,9090
+Weiterfahrt durch die Kleingartenanlage möglich, allerdings nur tagsüber während des Sommers	culdesac_pseudo 15960,17220
+	culdesac 15450,17861
+	culdesac 16109,17784
+	culdesac 16480,16873
+	culdesac 16555,16658
+	culdesac 16684,16457
+	culdesac 17342,15386
+	culdesac 17782,15389
+	culdesac 17740,15254
+	culdesac 17579,14777
+	culdesac 17629,14627
+	culdesac 17907,14904
+	culdesac 17990,14808
+	culdesac 18016,14688
+	culdesac 18119,14709
+	culdesac 18232,14753
+	culdesac 18071,15100
+	culdesac 18176,15160
+	culdesac 17400,14511
+	culdesac 16962,15440
+	culdesac 16678,14478
+	culdesac 18626,13820
+	culdesac 17698,13124
+	culdesac 15746,12209
+	culdesac 16079,12432
+	culdesac 16541,12064
+	culdesac 17230,12481
+	culdesac 18766,13257
+	culdesac 18707,12225
+	culdesac 19410,12601
+	culdesac 19431,13160
+	culdesac 19312,13211
+	culdesac 19918,13459
+	culdesac 20037,12707
+	culdesac 20001,12368
+	culdesac 19909,12097
+	culdesac 19706,12086
+	culdesac 19971,11872
+	culdesac 20302,12056
+	culdesac 20448,11839
+	culdesac 20738,11915
+	culdesac 20779,11801
+	culdesac 20836,11768
+	culdesac 20839,12209
+	culdesac 20930,13273
+	culdesac 20847,13280
+	culdesac 20467,14196
+	culdesac 21362,14028
+	culdesac 20520,14570
+	culdesac 22569,2096
+	culdesac 22617,1925
+	culdesac 22732,1668
+	culdesac 22756,1524
+	culdesac 23068,1638
+	culdesac 23030,1414
+	culdesac 23053,1308
+	culdesac 23202,1192
+	culdesac 22958,2005
+	culdesac 23627,1835
+	culdesac 23693,2061
+	culdesac 23638,2185
+	culdesac 23705,2517
+	culdesac 24071,2990
+	culdesac 23063,2842
+	culdesac 23025,2957
+	culdesac 23098,3201
+	culdesac 22381,2834
+	culdesac 22356,3351
+	culdesac 22402,3262
+	culdesac 22233,3212
+	culdesac 22475,3187
+	culdesac 22569,3201
+	culdesac 22662,3205
+	culdesac 22820,3713
+	culdesac 22903,3691
+	culdesac 23033,3741
+	culdesac 22268,4424
+	culdesac 22252,4362
+	culdesac 22076,4422
+	culdesac 22515,4694
+	culdesac 22475,4658
+	culdesac 22806,4331
+	culdesac 23001,4382
+Weiterfahrt in Kleingartenanlage möglich	culdesac_pseudo 22858,4567
+	culdesac 21901,5117
+	culdesac 21498,5023
+	culdesac 21271,5065
+	culdesac 21203,5054
+	culdesac 21081,5096
+	culdesac 22049,6364
+	culdesac 22141,6143
+	culdesac 21993,6133
+	culdesac 22234,5921
+	culdesac 22018,5452
+	culdesac 21729,6989
+Weiterfahrt in den Innovationspark möglich	culdesac_pseudo 21284,7043
+	culdesac 21967,7048
+	culdesac 22330,6973
+	culdesac 21920,6835
+	culdesac 21815,6947
+	culdesac 22627,7516
+	culdesac 22730,7737
+	culdesac 22173,7806
+	culdesac 22279,7672
+	culdesac 22375,7643
+	culdesac 21788,8133
+	culdesac 21319,8078
+	culdesac 20977,8191
+	culdesac 21996,8716
+	culdesac 22073,8645
+	culdesac 22101,8489
+	culdesac 22165,8446
+	culdesac 22522,8506
+	culdesac 22669,8498
+	culdesac 22976,8526
+	culdesac 23086,8449
+	culdesac 23180,8379
+	culdesac 23293,8292
+	culdesac 23392,8208
+	culdesac 24768,8087
+	culdesac 24592,7778
+	culdesac 23582,9591
+	culdesac 22212,9508
+	culdesac 22862,9886
+	culdesac 21893,9902
+	culdesac 22096,10090
+	culdesac 21907,10238
+	culdesac 21907,10455
+	culdesac 21548,10329
+	culdesac 21539,10435
+	culdesac 20868,9444
+	culdesac 20535,8964
+	culdesac 20553,8641
+	culdesac 20573,8444
+	culdesac 20220,8976
+	culdesac 19950,9234
+	culdesac 19946,9328
+	culdesac 20091,9330
+	culdesac 20016,9914
+	culdesac 20208,9932
+	culdesac 19810,10155
+	culdesac 19487,10205
+	culdesac 19599,9747
+	culdesac 19912,10543
+	culdesac 19831,10916
+	culdesac 20279,10516
+	culdesac 19023,10088
+	culdesac 18925,10064
+	culdesac 18843,10028
+	culdesac 18598,10661
+	culdesac 18520,10913
+	culdesac 17308,9090
+	culdesac 16654,9748
+	culdesac 16479,17447
+	culdesac 16212,17204
+	culdesac 16156,17315
+	culdesac 15818,17083
+	culdesac 15799,17406
+	culdesac 15635,17432
+	culdesac 15540,17443
+	culdesac 15449,17426
+	culdesac 15378,17414
+	culdesac 15455,16984
+	culdesac 16429,13021
 	culdesac 9104,9262
 	culdesac 9149,8961
 	culdesac 8376,8859
@@ -233,8 +427,7 @@ Kreisverkehr	Roundabout 68016,72528
 	culdesac 13377,11345
 	culdesac 13730,11074
 	culdesac 14087,11467
-#: XXX_prog should not use the term "Sackgasse" at this point --- "S-Bahneingang" or so would be better
-	culdesac 14845,10954
+Zugang zur S-Bahn	culdesac_pseudo 14845,10954
 	culdesac 15079,10108
 	culdesac 16290,9670
 	culdesac 15842,9891
@@ -257,8 +450,7 @@ Kreisverkehr	Roundabout 68016,72528
 	culdesac 13992,6213
 	culdesac 14133,6187
 	culdesac 13688,6739
-#: XXX_prog keine echte Sackgasse, sondern Schranke zum Betriebsgelände
-	culdesac 14306,6651
+Schranke zum Betriebsgelände	culdesac_pseudo 14306,6651
 	culdesac 14531,6959
 	culdesac 13654,7710
 	culdesac 13306,7765
@@ -270,13 +462,11 @@ Kreisverkehr	Roundabout 68016,72528
 	culdesac 16074,12778
 	culdesac 15231,12929
 	culdesac 15295,12234
-#: XXX_prog keine echte Sackgasse, Zugang zum S-Bahnhof, evtl. kann mit q4 verlängert werden
-	culdesac 15175,12180
+Zugang zum S-Bahnhof	culdesac_pseudo 15175,12180
 	culdesac 11506,11851
 	culdesac 6890,10581
 	culdesac 6877,10492
-#: XXX_prog keine echte Sackgasse, Gewerbegelände
-	culdesac 8139,8023
+Zugang zum Gewerbegelände	culdesac_pseudo 8139,8023
 	culdesac 8315,8189
 	culdesac 8839,8132
 	culdesac 8839,7904
@@ -297,8 +487,7 @@ Kreisverkehr	Roundabout 68016,72528
 	culdesac 5277,12551
 	culdesac 2467,12525
 	culdesac 3594,11372
-#: XXX_prog keine echte Sackgasse, im Park geht's weiter
-	culdesac 2405,10131
+Weiterfahrt in den Friedhof möglich	culdesac_pseudo 2405,10131
 	culdesac 2212,9755
 	culdesac 3364,9142
 	culdesac 7872,13685
@@ -321,7 +510,6 @@ Kreisverkehr	Roundabout 68016,72528
 	culdesac 14331,13537
 	culdesac 14227,13567
 	culdesac 14263,13739
-	culdesac 9351,7600
 	culdesac 5570,7939
 	culdesac 5068,7965
 	culdesac 4873,7967
@@ -364,10 +552,8 @@ Kreisverkehr	Roundabout 68016,72528
 	culdesac 4223,13949
 	culdesac 12001,13863
 	culdesac 13824,13771
-#: XXX_prog Zugang zum Poststadion, nicht als "Sackgasse" kennzeichnen
-	culdesac 7203,13695
-#: XXX_prog Zugang zum Bad, nicht als "Sackgasse" kennzeichnen
-	culdesac 7344,13435
+Zugang zum Poststadion	culdesac_pseudo 7203,13695
+Zugang zum Bad	culdesac_pseudo 7344,13435
 	culdesac 2439,13389
 	culdesac 10998,13382
 	culdesac 10898,13260
@@ -509,3 +695,7 @@ Verlängerte Köpenicker Str.: nicht ausgeschildert	CP2; 21016,7325 21284,7043
 Kirchhofweg: nicht ausgeschildert	CS 11608,7267 11687,7284 12180,7387
 (Landschaftspark Johannisthal): Nord-Süd-Strecke	CS 18229,2973 18228,2989 18046,3192 18027,3276 17997,3535 17976,3735 17953,3955
 Weidenweg (Altglienicke) [21B-21K]: Privatweg	CS 19879,-378 20050,-386 20248,-397 20300,-416
+Steffenstr.: nicht ausgeschildert, Zufahrt zum Sportforum	CP2; 15580,14880 15568,14901
+Hohenschönhauser Str.: ausgeschildert "Zu den Sport- und Tennisplätzen"	CP2; 14754,14406 14682,14572
+An den Feldtmanngärten: Privatstraße, 10km/h	CS 15810,17512 15802,17446 15537,17484 15271,17439
+Segitzdamm: als Oranienplatz ausgeschildert	CP2; 11159,10769 11133,10704

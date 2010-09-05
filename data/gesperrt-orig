@@ -234,7 +234,7 @@ Sybel-/Waitzstr.	1 3883,10577 3800,10580 3744,10668 3734,10756
 Aßmannstr.	1 25012,5729 25048,5727 25039,5304 25039,5295
 Schönblicker Str.	1 31670,3604 31661,3665 31695,3690 31745,3679 31756,3620 31724,3592 31670,3604
 Bayerische Str.	1 4296,10004 4349,10247
-Knorrpromenade	1 14417,11641 14362,11492
+Knorrpromenade	1 14424,11639 14369,11489
 Hoppestr.	1 8617,18310 8482,18284
 Herbststr.	1 8465,18365 8634,18401
 Ruhwaldweg: Schranke gesperrt	2 773,13375 758,13334
@@ -612,7 +612,8 @@ Alt-Biesdorf	1 21108,11628 20963,11618 20633,11651 20549,11659 20375,11694
 #: by: Frank Winterlich:
 Privatstr. 14	1s:q3 13159,17196 13103,17280
 #: by: Ilka Gomoll, osm
-Bernkasteler Str.	1 15208,16939 15015,16908 14923,16901 14923,16914
+#: confirmed_by: srt
+Bernkasteler Str.	1s:q3 15208,16939 15015,16908 14923,16901 14923,16914
 #: add_fragezeichen: Ist der Wiedenbrücker Weg eine Einbahnstraße? Wenn ja, gilt die Einbahnstraßenregelung nur für Autofahrer oder auch für Radfahrer?
 Wiedenbrücker Weg	1 4207,1113 4220,1175 4148,1275
 #: by: Kamai:
@@ -715,7 +716,8 @@ Mollstr. (Richtungsfahrbahn)	1::igndisp 11723,13139 11843,13090 11904,13075 1195
 Mollstr. (Richtungsfahrbahn)	1::igndisp 11985,13075 11966,13074 11905,13069 11881,13072 11839,13083 11739,13131 11723,13139
 Lötschbergstr.	1s:q3 20161,11715 20150,11512
 #: by: Ulrike Hoffmann:
-Brodenbacher Weg	1 15178,17134 14897,17093
+#: confirmed_by: srt
+Brodenbacher Weg	1s:q3 15178,17134 14897,17093
 #: by: arnulf knorr:
 #: XXX_osm: Einbahnstraße fehlt bei osm
 Huttwiler Weg	1 6913,18460 6961,18453 7035,18413 7098,18383 7120,18295 7071,18232
@@ -742,6 +744,7 @@ Paddlerweg: Privatweg, Tor	2 -3559,11227 -3625,11250 -3679,11248
 Joachimstr.	1s:q3 22009,5593 21907,5517 21789,5427
 Cardinalstr.	1s:q3 21901,5728 21828,5623 21706,5541
 Fuchsbergeweg	1s:q3 20595,9558 20592,9298
+Piesporter Str. - Liebermannstr.	1 15217,17284 15267,17349 15280,17352
 ######################################################################
 #
 # Potsdam
@@ -1177,20 +1180,24 @@ Schildhornstreifen: Mittelstreifen vor dem Autobahnanschluss	3nocross 4292,6558 
 Adlergestell: Mittelstreifen	3nocross 19735,3643 19812,3561 19857,3514 19904,3464
 Adlergestell: Mittelstreifen	3nocross 19735,3643 19676,3705 19633,3751 19587,3801
 Silberberger -> Adlergestell: Abbiegen verboten	3 19804,3697 19735,3643 19812,3561
-#: by: Thomas Pörs:
-Rhinstr.: Straßenbahngleise	3nocross 17579,15565 17542,15648 17488,15766
+#: by: Thomas Pörs & srt:
+Rhinstr.: Straßenbahngleise	3nocross 17488,15766 17532,15645 17569,15561 17626,15433 17829,15015
 Potsdamer Chaussee: Mittelstreifen	3nocross -1249,2590 -1085,2653 -984,2692 -870,2737
 Potsdamer Chaussee: Mittelstreifen	3nocross -870,2737 -756,2787 -567,2869 -512,2883 -391,2914
 Bahnhofstr.: Straßenbahntrasse	3nocross 22123,5452 22087,5404 22043,5346 21954,5229
 Dörpfeldstr.: Straßenbahngleise	3nocross 20834,4035 21053,4162 21146,4229
 #: note: theoretisch wäre das Linksabbiegen von der Fahrbahn aus möglich, aber der Radweg ist benutzungspflichtig
 Ernst-Ruska-Ufer: Lärmschutzwand	3nocross 18496,2471 18656,2465 18929,2454
+Indira-Gandhi-Str.: Straßenbahntrasse	3nocross 14843,15007 14828,15050 14650,15750
+Hansastr.: Straßenbahntrasse	3nocross 16460,17214 16578,17285 16837,17440
 #
 ####################################################################
 #
 # Stellen, an denen getragen werden muß:
 # die Zahl hinter dem ":" entspricht ungefähr den verlorenen Sekunden
 # 
+tragen (22 Stufen)	0:30 17599,15435
+tragen (22 Stufen)	0:30 17657,15427
 #: by: guylian (+ photo)
 tragen, mehrere Treppen à 3 Stufen	0:30 8002,4903
 #: by: Violet Schäfer:
@@ -1399,6 +1406,9 @@ tragen (Treppe)	0:30 89344,-5795
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+Drängelgitter	BNP:3::trailer=10 18059,14838
+Drängelgitter	BNP:3::trailer=10 18170,14890
+Schranke	BNP:1::trailer=3 15568,14901
 Drängelgitter	BNP:3::trailer=10 19974,-341
 Drängelgitter	BNP:3::trailer=10 19975,-320
 Schranke (lichte Breite ca. 100cm)	BNP:2::trailer=7 19140,1439
@@ -1612,6 +1622,10 @@ Tor	BNP:3 6431,3417
 #: section temporäre Sperrungen (Baustellen etc.) vvvvvvvvvvvvvvvvvvvvvvvvvv
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+# 
+#: last_checked: 2010-09-05
+#: next_check: 2011-09-01
+Rhinstr.: neues Wohngebiet, Weg gesperrt	2:inwork 18015,13846 17300,14133
 # 
 #: by: Ulrike Orlowski
 #: by: http://asp.vmzberlin.com/VMZ_LSBB_MELDUNGEN_WEB/Meldungskarte.jsp?back=true&map=true&x=52.53578&y=13.31063&zoom=13&meldungId=IM_014510
