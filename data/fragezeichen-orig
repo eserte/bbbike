@@ -37,12 +37,12 @@ Falkenberger Chaussee im Bereich Bhf. Hohenschönhausen	?::projected 17400,17790 
 #: by: ^^^
 #
 #: by: MoPo 2009-08-01, soll 2010 realisiert werden vvv
-#: last_checked: 2010-07-05
-#: next_check: 2010-09-15
+#: last_checked: 2010-09-01
+#: next_check: 2010-12-01
 Zossener Str./Lindenstr.	?::projected 9856,10358 9873,10285 9865,10227 9858,10199 9837,10117 9827,10051
 #
-#: last_checked: 2010-06-03
-#: next_check: 2010-09-01
+#: last_checked: 2010-09-07
+#: next_check: 2010-12-07
 Michaelbrücke/Michaelkirchstr.	?::projected 11768,12006 11716,11914 11676,11839 11574,11594 11498,11417
 #
 #: last_checked: 2010-08-14
@@ -101,8 +101,8 @@ Müllerstr.	?::projected 6790,16018 6680,16116 6608,16180 6450,16325 6444,16331 6
 #
 #: by: Tagesspiegel vom 2009-04-12, soll 2009 realisiert werden
 #: corrected_by: MoPo 2009-08-01, soll 2010 realisiert werden
-#: last_checked: 2010-06-03
-#: next_check: 2010-09-01
+#: last_checked: 2010-09-07
+#: next_check: 2010-12-07
 Annenstr./Heinrich-Heine-Platz	?::projected 11349,11227 11249,11268 11091,11379 10915,11535 10819,11664
 #
 #: by: Tagesspiegel vom 2009-04-12, soll 2009 realisiert werden
@@ -132,13 +132,13 @@ Blankenburger Str. erhält beiderseitig Radfahrstreifen zwischen Dietzgen- und Si
 Wollankstr.: Angebotsstreifen werden bis Herbst 2011 eingerichtet	?::projected 9549,17625 9590,17662 9624,17693 9663,17734 9727,17804 9791,17877 9832,17925 9870,17971 9978,18104 10027,18165 10089,18180
 #
 #: by: Tagesspiegel vom 2010-03-31
-#: last_checked: 2010-08-14
+#: last_checked: 2010-09-07
 #: next_check: 2010-12-01
 Rüdersdorfer Str. bekommt Radspuren	?::projected 13066,11854 12891,12008
 #
 #: by: Tagesspiegel vom 2010-03-26
-#: last_checked: 2010-07-05
-#: next_check: 2010-09-01
+#: last_checked: 2010-09-01
+#: next_check: 2010-12-01
 Lindenstr. bekommt Radspuren	?::projected 9795,10512 9770,10590 9777,10719 9805,10791 9829,10830 9935,11067 9973,11150 10020,11262
 #
 #: XXX http://fahrrad.wikia.com/wiki/Fahrradstra%C3%9Fe/Liste_von_Fahrradstra%C3%9Fen#Berlin -> ja
@@ -270,7 +270,7 @@ Teilestr.: Radverkehrsanlagen	? 10254,5921 10404,5969 10526,6008 10614,6047 1078
 #: last_checked: 2010-06-06
 #: next_check: 2010-09-01
 Fürstenwalder Allee: Bau von Radverkehrsanlagen	? 29714,4461 29728,4435 29813,4314 29850,4288 29901,4264 29959,4235 30037,4176 30210,4046 30351,3939 30456,3794 30518,3753 30650,3698 30993,3557 31139,3497 31366,3404 31447,3372 31632,3297 31863,3257 31978,3237 32829,3105 33111,3064 33547,2904
-#: next_check: 2010-03-01 vvv
+#: next_check: 2010-03-01
 Radwegbau Welzower Steig	?::inwork 6320,21777 6370,21689 6428,21648 6478,21652 6508,21646 6529,21620 6576,21414
 # 
 #: last_checked: 2010-09-05 vvv
@@ -1893,7 +1893,6 @@ Irmfriedstr.: Qualität?	? 21737,13844 21758,13934 21764,13981 21766,13995 21794,
 Mettlacher Str.: Qualität?	? 21794,14229 21918,14219 22007,14209 22050,14212
 Mündeseerundweg: Qualität? Wie geht's weiter Richtung Südosten?	? 50871,70761 50974,70635 51004,70617 51078,70609 51223,70542 51343,70458 51421,70384 51551,70236 51732,69987
 # XXX del --- laut guylian ex. abgeflachter Bordstein am Mittelstreifen --- Deitmerstr.: Können Radfahrer den Mittelstreifen an der Schloßstr. überqueren?	? 5048,5904
-Hermesweg: Qualität?	? 6116,4707 6072,4606
 Gurlittstr.: Qualität?	? 7213,5062 6949,5096
 #: XXX: anonymous meint: Pfad vom Munsterdamm zum Oehlertring, ca. 5 Stufen -> aber wo genau?
 #: XXX: osm meint cycleway, foot=yes, keine Überquerungsmöglichkeit
@@ -2178,7 +2177,6 @@ Rilkepfad: Qualität? Zufahrt zum Dahlemer Weg für Radfahrer möglich?	? 1645,1486
 Melker Str.: Qualität? Zufahrt zum Dahlemer Weg für Radfahrer möglich?	? 1616,1594 1778,1659 1848,1647
 Türksteinweg: Qualität? Existiert ein direkter Zugang zum Heinrich-Laehr-Park?	? 1181,1169 1321,1199 1359,1204
 Türksteinweg: Qualität?	? 1321,1199 1274,1376 1198,1662
-Im Gartenheim: Qualität?	? 5707,4777 5690,4744 5659,4761 5677,4794
 Ahornweg (Wartenberg): Qualität?	? 18879,18954 18947,19168 19019,19396 19070,19572
 Hauptweg (Wartenberg, Neu-Hohenschönhausen): Qualität?	? 18737,18380 18761,18480 18923,18941 18997,19157 19066,19380 19125,19557
 Lindenweg (Wartenberg): Qualität?	? 18983,18906 19061,19145 19129,19360 19186,19541
@@ -4815,4 +4813,3 @@ Radwegbau in Golmer Chaussee und Wublitzstr.	?::inwork -17691,1634 -18091,1642 -
 Alleestr./Weinmeinsterstr.: existiert hier eine Ampel?	? -12557,11
 Perler Str. - Darßer Str.: Qualität des Fuß/Radwegs? Nachts beleuchtet?	? 15851,17722 16256,17651 16358,17627 16751,17560
 An der Oskar-Schindler-Schule: Qualität?	? 16256,17651 16277,17830
-Neuer Zugang zum ehem. Flughafen am Peter-Strasser-Weg	? 9240,7797 9340,7801 9351,7600

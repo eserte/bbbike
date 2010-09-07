@@ -537,7 +537,7 @@ Weiterfahrt in den Friedhof möglich	culdesac_pseudo 2405,10131
 	culdesac 10209,11918
 	culdesac 11115,12083
 #: XXX Überprüfen, ob man die Service-Straßen mit aufnehmen sollte...
-	culdesac 13166,12232
+	culdesac
 	culdesac 12997,12361
 	culdesac 11250,12268
 	culdesac 9894,12564
@@ -558,6 +558,8 @@ Zugang zum Bad	culdesac_pseudo 7344,13435
 	culdesac 10998,13382
 	culdesac 10898,13260
 	culdesac 4087,13257
+	culdesac 5650,4809
+	culdesac 5573,4851
 #: section ^^^
 ######################################################################
 #: by: Dagmar Schilka
@@ -668,6 +670,8 @@ Eingang Allerstr. kann nachts nicht als Ausgang benutzt werden	CS; 11507,7647 11
 Eingang Okerstr. kann nachts nicht als Ausgang benutzt werden	CS; 11528,7528 11536,7533
 Eingang Leinestr. kann nachts nicht als Ausgang benutzt werden	CS; 11547,7432 11553,7437
 Eingang Oderstr. kann nachts nicht als Ausgang benutzt werden	CS; 11598,7264 11608,7267
+Eingang Peter-Strasser-Weg kann nachts nicht als Ausgang benutzt werden	CS; 9281,7795 9240,7797
+Eingang Columbiadamm/Golßener Str. kann nachts nicht als Ausgang benutzt werden	CS; 10360,8521 10384,8628
 #: note: ^^^
 Weg zwischen Habermannsee und Butzensee	CS 23522,10456 23468,10423 23431,10435 23193,10426 23024,10455 22978,10451
 Mollergasse: Straße ist nicht ausgeschildert	CS 9892,12596 9894,12564
@@ -699,3 +703,5 @@ Steffenstr.: nicht ausgeschildert, Zufahrt zum Sportforum	CP2; 15580,14880 15568
 Hohenschönhauser Str.: ausgeschildert "Zu den Sport- und Tennisplätzen"	CP2; 14754,14406 14682,14572
 An den Feldtmanngärten: Privatstraße, 10km/h	CS 15810,17512 15802,17446 15537,17484 15271,17439
 Segitzdamm: als Oranienplatz ausgeschildert	CP2; 11159,10769 11133,10704
+#: by: guylian
+Im Gartenheim: offiziell Einfahrt verboten; an beiden Eingängen Tore, aber ohne Schloss	CS 5707,4777 5690,4744 5659,4761 5677,4794
