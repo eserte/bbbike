@@ -275,8 +275,9 @@ EOF
 	eval {
 	    ($start_date, $end_date, $prewarn_days, $rx_matched)
 		= BBBikeEditUtil::parse_dates($btxt);
-	    # Delta 1s for Today_and_Now tests
-	    cmp_ok(abs($start_date - $start_date_expected), "<=" , 1, $label)
+	    # Delta 10s for Today_and_Now tests (formerly this was 1s,
+	    # but could be too small for loaded systems)
+	    cmp_ok(abs($start_date - $start_date_expected), "<=" , 10, $label)
 		or $errors++;
 	    my $test_end_date = $end_date_expected;
 	    if (!defined $test_end_date) {
