@@ -284,6 +284,10 @@ EOF
 		],
 		layer_checkbutton('Exits (ÖPNV)', 'str',
 				  _maybe_orig_file("$main::datadir/exits")),
+		layer_checkbutton('Kneipen/Cafes', 'str',
+				  "$bbbike_rootdir/data_berlin_osm/kneipen"),
+		layer_checkbutton('Restaurants', 'str',
+				  "$bbbike_rootdir/data_berlin_osm/restaurants"),
 	       ],
 	      ],
 	      [Cascade => $do_compound->('OSM Live data', $MultiMap::images{OpenStreetMap}), -menuitems =>
