@@ -29,7 +29,7 @@ Reichsstr.: wird der vorhandene Radweg zugunsten eines Angebotsstreifens aufgege
 #
 #: by: MoPo 2009-08-01, soll 2009 realisiert werden vvv
 # auch im Tsp vom 2010-03-26 erwähnt
-#: last_checked: 2010-03-18
+#: last_checked: 2010-09-08
 Tiergartenstr.	?::projected 8172,11679 8021,11636 7816,11571 7717,11540 7600,11513 7504,11512 7435,11514 7356,11517 7293,11519 7171,11510 6825,11486
 #: last_checked: 2009-11-21
 Grunewaldstr. (Steglitz)	?::projected 4861,5581 4671,5697 4520,5793 4419,5842 4291,5895 4172,5918 4010,5888 3931,5825 3850,5801 3707,5758
@@ -50,8 +50,8 @@ Michaelbrücke/Michaelkirchstr.	?::projected 11768,12006 11716,11914 11676,11839 
 # auch im Tsp 2010-03-26 erwähnt
 Fischerinsel	?::projected 10512,12039 10672,11870
 #
-#: last_checked: 2010-03-18
-#: next_check: 2010-06-01
+#: last_checked: 2010-09-08
+#: next_check: 2010-12-08
 Stülerstr.	?::projected 6825,11486 6716,11439 6692,11365 6679,11319 6630,11247 6606,11222
 #
 #: last_checked: 2010-08-14
@@ -62,10 +62,6 @@ Danziger Str.	?::projected 11712,14868 11879,14771 11990,14714 12040,14688 12128
 #: next_check: 2010-11-01
 Kniprodestr./Am Friedrichshain	?::projected 12901,14093 12784,13961 12695,13864 12654,13819 12571,13798 12403,13755 12204,13719 12161,13711 12038,13685 11868,13646 11785,13625 11762,13619 11706,13635
 #
-#: last_checked: 2010-04-06
-#: next_check: 2010-06-01
-Alt-Moabit	?::projected 5975,13256 6214,13225
-# 
 #: last_checked: 2010-07 (by Roland Krause)
 #: next_check: 2010-12-31
 Lankwitzer Str.	?::projected 8955,3521 8599,3441 8478,3414 8347,3382 8259,3349 8080,3260 8039,3242
@@ -327,10 +323,9 @@ Ahrensfelder Chaussee: Radstreifen in Bau, bis 2008-10	? 20160,18301 20460,18420
 #: by: http://www.morgenpost.de/content/2006/09/20/bezirke/855150.html
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20060915.1800.47562.html
 #: by: http://www.cdu-fraktion-tk.de/image/inhalte/file/Amtsblatt_Nr__2010-14.pdf (Name der Straße)
-#: XXX Eintrag in Berlin.coords.data fehlt
-#: last_checked: 2010-08-26
-#: next_check: 2010-10-15
-Wilhelm-Kabus-Str.: neue Straße wird gebaut, die Naumannstr. wird später verkehrsberuhigt	?::projected 7716,8048 7844,8049 7861,8217 7893,8327 7942,8380 8078,8772
+#: last_checked: 2010-09-08
+#: next_check: 2010-09-15
+Wilhelm-Kabus-Str.: neue Straße wird demnächst freigegeben, die Naumannstr. wird später verkehrsberuhigt	?::inwork 7716,8048 7793,8043 7834,8085 7859,8252 7893,8327 7942,8380 8078,8772
 #: next_check: 2011-12-31
 Verbindung zwischen Leuthener Platz und General-Pape-Str. (evtl. mit Verlängerung) inkl. Brücke über die Bahnstrecke für Fußgänger und Radfahrer (4m breit), Realisierung bis 2011-12-31	?::projected 7716,8356 7837,8354 7893,8327 8088,8283 8264,8289
 #: by: (URL existiert nicht mehr) http://www.berlin.de/ba-steglitz-zehlendorf/presse/archiv/20060109.1050.33932.html
@@ -381,7 +376,6 @@ Kattunsteig: Verläuft der Kattunsteig hier? Nördlicher Abschnitt ist ein breiter
 #: by: MichaelM
 #: XXX_prog:
 Bordsteinkante	? -824,4635
-Bartningallee oder Kirchstr. oder Moabiter Brücke?	? 6580,12775 6608,12858
 Rinkartstr. oder Heidekampweg?	? 15697,6688 15672,6663
 #: XXX_prog:
 Tränkegrabenweg/Sewanstr.: Bordsteine	? 17160,10376
@@ -4798,7 +4792,6 @@ B96a - Schützenstr.: Wo genau liegt die Verbindungsstraße? Qualität?	? 19858,-84
 Wehrmathen/Uranusstr. - Siriusstr./Ortolfstr.: Qualität? Dürfen Radfahrer hier fahren?	? 18904,-573 18928,-506 18950,-490 18997,-351
 Wegedornstr.: Qualität der Wegedornstr. östlich Salierstr.?	? 19930,815 20171,698 20337,616 20385,593
 Kramnitzer Weg: Qualität der Verlängerung nach Westen hin? Existiert eine Ausschilderung	? -9353,5012 -9395,5025 -9537,5083 -9617,5086
-Platz vor dem Neuen Tor: Qualität des Fußwegs? Bordsteine?	? 8594,13637 8601,13580
 Schlesinger Str.: existiert ein Zugang von der Schlesinger Str. zum Uferweg?	? 4968,13060 4973,13083
 #: XXX fehlt in Berlin.coords.data
 #: by: http://www.cdu-fraktion-tk.de/image/inhalte/file/Amtsblatt_Nr__31_pdf.pdf

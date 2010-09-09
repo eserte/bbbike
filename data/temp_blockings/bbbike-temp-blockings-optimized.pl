@@ -1823,6 +1823,15 @@ userdel	q4::inwork; 10614,19907 10742,19632
          'data' => 'userdel	q4::inwork -13387,2987 -13581,3075 -13840,2956 -14382,3066
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => undef,
+         'text' => 'Die Wilhelm-Kabus-Str. ist noch nicht komplett fertig gestellt. Unter Umständen ist die Durchfahrt nicht möglich!',
+         'from' => undef,
+         'id' => 2125,
+         'data' => '	2::inwork 7716,8048 7793,8043 7834,8085 7859,8252 7893,8327 7942,8380 8078,8772
+',
+         'type' => 'handicap'
        }
      
 );
