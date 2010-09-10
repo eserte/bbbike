@@ -1,0 +1,72 @@
+aeroway=airport [0x07 resolution 18]
+aeroway=aerodrome [0x07 resolution 18]
+aeroway=terminal [0x13 resolution 20]
+
+amenity=kindergarten [0x0a resolution 18]
+amenity=college [0x0a resolution 18]
+amenity=grave_yard [0x1a resolution 18]
+amenity=hospital [0x0b resolution 18]
+amenity=parking [0x05 resolution 21]
+amenity=school [0x0a resolution 20]
+amenity=supermarket [0x08 resolution 21]
+amenity=university [0x0a resolution 18]
+
+landuse=allotments [0x4e resolution 20]
+landuse=basin [0x3f resolution 18]
+landuse=cemetary [0x1a resolution 18]
+landuse=cemetery [0x1a resolution 18]
+landuse=commercial [0x0c resolution 18]
+landuse=construction [0x0c resolution 20]
+landuse=farm [0x4e resolution 18]
+landuse=farmyard [0x4e resolution 18]
+landuse=forest [0x50 resolution 18]
+landuse=greenfield [0x17 resolution 18]
+landuse=industrial [0x0c resolution 18]
+landuse=meadow [0x17 resolution 18]
+landuse=military [0x04 resolution 18]
+landuse=quarry [0x0c resolution 18]
+landuse=recreation_ground [0x19 resolution 18]
+landuse=reservoir [0x3f resolution 18]
+landuse=retail [0x08 resolution 20]
+landuse=village_green [0x17 resolution 20]
+landuse=vineyard [0x4e resolution 20]
+
+leisure=common [0x17 resolution 20]
+leisure=garden [0x17 resolution 20]
+leisure=golf_course [0x18 resolution 20]
+leisure=marina [0x09 resolution 20]
+leisure=nature_reserve [0x16 resolution 18]
+leisure=park [0x17 resolution 20]
+leisure=pitch [0x19 resolution 20]
+leisure=playground [0x17 resolution 20]
+leisure=sports_center | leisure=sports_centre [0x19 resolution 20]
+leisure=stadium [0x19 resolution 19]
+leisure=track [0x19 resolution 18]
+leisure=water_park [0x09 resolution 18]
+
+military=airfield [0x04 resolution 18]
+military=barracks [0x04 resolution 18]
+military=danger_area [0x04 resolution 18]
+military=range [0x04 resolution 18]
+
+natural=sea [0x32 resolution 10]
+natural=glacier [0x4d resolution 16]
+natural=marsh [0x51 resolution 20]
+natural=mud [0x51 resolution 20]
+natural=scrub [0x4f resolution 20]
+natural=water [0x3c resolution 20]
+natural=wood [0x50 resolution 18]
+
+place=village [0x03 resolution 18]
+
+shop=* [0x08 resolution 20]
+
+# squares and plazas
+highway=pedestrian & area=yes [0x17 resolution 20]
+# other highways that have area=yes set must be parking lots
+highway=* & area=yes [0x05 resolution 21]
+
+waterway=riverbank [0x46 resolution 20]
+
+# building tag should be last
+building=* [0x13 resolution 24]

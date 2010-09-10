@@ -1,0 +1,118 @@
+aeroway=runway [0x27 resolution 20]
+
+# Contours take their name from the elevation setting.
+contour=elevation & contour_ext=elevation_minor
+	{ name '${ele|conv:m=>ft}'; }
+	[0x20 resolution 23]
+contour=elevation & contour_ext=elevation_medium
+	{ name '${ele|conv:m=>ft}'; }
+	[0x21 resolution 21]
+contour=elevation & contour_ext=elevation_major
+	{ name '${ele|conv:m=>ft}'; }
+	[0x22 resolution 20]
+contour=elevation | contour_ext=elevation
+	{ name '${ele|conv:m=>ft}'; }
+	[0x21 resolution 20]
+
+# Set highway names to include the reference if there is one
+highway=motorway {name '${ref|highway-symbol:hbox} ${name}' | '${ref|highway-symbol:hbox}' | '${name}' }
+highway=trunk {name '${ref|highway-symbol:hbox} ${name}' | '${ref|highway-symbol:hbox}' | '${name}' }
+highway=primary {name '${ref|highway-symbol:box} ${name}' | '${ref|highway-symbol:box}' | '${name}' }
+highway=secondary {name '${ref|highway-symbol:oval} ${name}' | '${ref|highway-symbol:oval}' | '${name}' }
+highway=* {name '${ref} ${name}' | '${ref}' | '${name}' }
+
+junction=roundabout & highway=trunk [0x0c road_class=3 road_speed=5 resolution 16]
+junction=roundabout & highway=primary [0x0c road_class=3 road_speed=4 resolution 19]
+junction=roundabout & highway=secondary [0x0c road_class=2 road_speed=3 resolution 20]
+junction=roundabout & highway=tertiary [0x0c road_class=1 road_speed=3 resolution 20]
+junction=roundabout & highway=unclassified [0x0c road_class=1 road_speed=2 resolution 21]
+junction=roundabout [0x0c road_class=0 road_speed=1 resolution 21]
+
+# Convert generic path to most specific
+highway=path & bicycle=designated {set highway=cycleway }
+highway=path & horse=designated {set highway=bridleway }
+highway=path & foot=designated {set highway=footway }
+
+cycleway=* {name '${name}' }
+psv=* {name '${name}' }
+
+cycleway=track & bbbike:cycleway_type=dualdir {add access = no; add bicycle = yes; add foot = yes} [0x3b resolution 23]
+
+cycleway=track & bbbike:usage=mandatory {add access = no; add bicycle = yes; add foot = yes} [0x2f resolution 23]
+cycleway=track & bbbike:usage=optional {add access = no; add bicycle = yes; add foot = yes} [0x30 resolution 23]
+cycleway=track & bbbike:usage=unknown {add access = no; add bicycle = yes; add foot = yes} [0x31 resolution 23]
+
+cycleway=lane & bbbike:usage=mandatory {add access = no; add bicycle = yes; add foot = yes} [0x34 resolution 23]
+cycleway=lane & bbbike:usage=optional {add access = no; add bicycle = yes; add foot = yes} [0x35 resolution 23]
+cycleway=lane & bbbike:usage=unknown {add access = no; add bicycle = yes; add foot = yes} [0x36 resolution 23]
+
+psv=yes & bbbike:times=unknown [0x33 resolution 23]
+psv=yes & bbbike:times=always [0x32 resolution 23]
+psv=yes [0x3a resolution 23]
+
+bbbike:quality=Q1 [0x39 resolution 23]
+bbbike:quality=Q2 [0x38 resolution 23]
+bbbike:quality=Q3 [0x37 resolution 23]
+
+highway=bridleway {add access = no; add bicycle = yes; add foot = yes} [0x16 road_class=0 road_speed=0 resolution 23]
+highway=byway [0x16 road_class=0 road_speed=0 resolution 23]
+highway=cycleway {add access = no; add bicycle = yes; add foot = yes} [0x16 road_class=0 road_speed=1 resolution 21]
+highway=footway {add access = no; add foot = yes} [0x16 road_class=0 road_speed=0 resolution 23]
+highway=minor [0x06 road_class=1 road_speed=2 resolution 21]
+highway=motorway {add oneway = yes; add bicycle = no; add foot = no } [0x01 road_class=4 road_speed=6 resolution 12]
+highway=motorway_link {add oneway = yes; add bicycle = no; add foot = no } [0x09 road_class=4 road_speed=3 resolution 16]
+highway=pedestrian & area!=yes {add access = no; add foot = yes} [0x06 road_class=0 road_speed=0 resolution 22]
+highway=primary & bicycle=no [0x123 road_class=3 road_speed=4 resolution 19]
+highway=primary & oneway=yes [0x103 road_class=3 road_speed=4 resolution 19]
+highway=primary [0x03 road_class=3 road_speed=4 resolution 19]
+highway=primary_link [0x08 road_class=3 road_speed=3 resolution 19]
+(highway=residential | highway=living_street) & bicycle=no [0x126 road_class=0 road_speed=2 resolution 21]
+(highway=residential | highway=living_street) & oneway=yes [0x106 road_class=0 road_speed=2 resolution 21]
+highway=residential | highway=living_street [0x06 road_class=0 road_speed=2 resolution 21]
+highway=secondary & bicycle=no [0x124 road_class=2 road_speed=3 resolution 20]
+highway=secondary & oneway=yes [0x104 road_class=2 road_speed=3 resolution 20]
+highway=secondary [0x04 road_class=2 road_speed=3 resolution 20]
+highway=secondary_link [0x08 road_class=2 road_speed=2 resolution 20]
+highway=path {add access = no; add bicycle = yes; add foot = yes} [0x16 road_class=0 road_speed=0 resolution 23]
+highway=service [0x07 road_class=0 road_speed=1 resolution 22]
+highway=steps {add access = no; add foot = yes} [0x16 road_class=0 road_speed=0 resolution 23]
+highway=tertiary & bicycle=no [0x125 road_class=1 road_speed=3 resolution 20]
+highway=tertiary & oneway=yes [0x105 road_class=1 road_speed=3 resolution 20]
+highway=tertiary [0x05 road_class=1 road_speed=3 resolution 20]
+highway=tertiary_link [0x08 road_class=1 road_speed=2 resolution 20]
+highway=track [0x0a road_class=0 road_speed=1 resolution 21]
+highway=trunk  [0x02 road_class=3 road_speed=5 resolution 16]
+highway=trunk_link [0x09 road_class=3 road_speed=3 resolution 16]
+highway=unclassified | highway=road [0x06 road_class=1 road_speed=2 resolution 21]
+highway=unsurfaced [0x0a road_class=0 road_speed=1 resolution 21]
+
+# Mop up any unrecognised highway types
+highway=* & area!=yes [0x07 ]
+
+natural=coastline [0x15 resolution 12]
+power=line [0x29 resolution 20]
+
+railway=light_rail [0x2d resolution 17]
+railway=rail [0x14 resolution 17]
+railway=subway [0x2e resolution 17]
+railway=tram [0x14 resolution 18]
+railway=platform {add access = no; add foot = yes} [0x16 road_class=0 road_speed=0 resolution 23]
+
+# XXX 0x1a or 0x1b?
+route=ferry [0x1a road_class=0 road_speed=0 resolution 18]
+
+waterway=canal [0x1f resolution 21]
+waterway=drain [0x1f resolution 22]
+waterway=river [0x1f resolution 18]
+waterway=stream [0x18 resolution 22]
+
+man_made=pipeline {name '${operator}'} [0x28 resolution 23]
+
+# The following boundary styles are after the highway rules because ways
+# are frequently tagged with both and we want the highway to take priority.
+boundary=administrative [0x1c resolution 18]
+boundary=national [0x1e resolution 17]
+boundary=political [0x1c resolution 17]
+
+# SRT
+FIXME=* {name '${FIXME}'} [0x2c resolution 17]

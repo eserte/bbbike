@@ -1,0 +1,7 @@
+
+#
+# You can have rules for relations.  Usually you will set tags on the
+# elements that make up the relation.
+#
+# eg. type=route & route=bus { apply { set route=bus; add rn='${route_no}' ; }}
+#

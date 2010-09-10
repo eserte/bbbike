@@ -1,0 +1,17 @@
+
+#
+# Style options.
+#
+
+# The name tag determines what tag is used as the name of a
+# feature.  Usually this is just 'name' but you might want something
+# more specific such as name:en or another language variant.
+# You can specify a list here, the first one that exists will be
+# used
+#
+# Example:
+# name_tag = name:en, int_name, name
+
+# The levels specification for this style
+#
+levels = 0:24, 1:22, 2:20, 3:18, 4:16
