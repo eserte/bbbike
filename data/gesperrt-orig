@@ -189,8 +189,8 @@ Degnerstr. (außer Tram)	1 16448,15593 16475,15659
 Henriette-Herz-Platz	1 10371,13006 10255,12959
 Savignyplatz	1 4921,11017 4920,10933 4868,10934 4817,10943 4827,11025 4835,11092 4880,11088 4926,11081 4921,11017
 Dresdener Str./Oranienplatz	1 11258,10682 11234,10739
-Gutsmuthsstr.	1 5311,6383 5065,6515
-Bornstr.	1 5210,6522 5347,6443
+Gutsmuthsstr.	1 5312,6382 5065,6515
+Bornstr.	1 5210,6522 5346,6443
 Schildhornstr.	1 4903,6221 4962,6218 5165,6119
 Schildhornstr.	1 5137,6066 5047,6116 4903,6221
 Atzpodienstr.	1 16485,12384 16445,12193 16413,11906
@@ -293,7 +293,7 @@ Karl-Marx-Platz	1 12980,7597 13100,7626
 Karl-Marx-Platz	1 13100,7626 12991,7549
 Olympischer Platz	1 -157,11943 -505,11882 -514,11991 -272,12039 -193,12051 -110,12019
 Aristotelessteig	1 18452,9755 18435,9639 18660,9599
-Markelstr.	1 5268,6305 5020,6434
+Markelstr.	1 5269,6305 5020,6434
 Berlinickestr.	1 5088,5495 5016,5401
 #: by: Lea:
 Florapromenade	1 10211,17432 10321,17453 10311,17764
@@ -746,6 +746,7 @@ Cardinalstr.	1s:q3 21901,5728 21828,5623 21706,5541
 Fuchsbergeweg	1s:q3 20595,9558 20592,9298
 Piesporter Str. - Liebermannstr.	1 15217,17284 15267,17349 15280,17352
 (Marchlewskistr. - Gubener Str.)	1s:q3 13168,12219 13173,12202 13097,12166
+Alter Schönefelder Weg	1 19595,1546 19632,1593 19655,1670 19669,1729 19743,1804
 ######################################################################
 #
 # Potsdam
@@ -1191,6 +1192,7 @@ Dörpfeldstr.: Straßenbahngleise	3nocross 20834,4035 21053,4162 21146,4229
 Ernst-Ruska-Ufer: Lärmschutzwand	3nocross 18496,2471 18656,2465 18929,2454
 Indira-Gandhi-Str.: Straßenbahntrasse	3nocross 14843,15007 14828,15050 14650,15750
 Hansastr.: Straßenbahntrasse	3nocross 16460,17214 16578,17285 16837,17440
+Groß-Berliner Damm: Mittelstreifen	3nocross 18928,3701 18882,3750 18854,3781 18235,4449
 #
 ####################################################################
 #
@@ -1401,12 +1403,16 @@ tragen (Treppe, ca. 20 Stufen)	0:25 19163,14981
 tragen (Treppe, ca. 20 Stufen)	0:25 19160,14935
 #: by: rjoop, keine Stufenangabe!
 tragen (Treppe)	0:30 89344,-5795
+tragen, langgezogene Stufen (13 Stufen)	0:25 20704,1383
 #
 ###################################################################
 # Drängelgitter (BLOCKED_NARROWPASSAGE)
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+Drängelgitter	BNP:3::trailer=10 20564,18
+Drängelgitter	BNP:3::trailer=10 20412,-21
+Drängelgitter	BNP:3::trailer=no 20345,398
 Drängelgitter	BNP:3::trailer=10 18059,14838
 Drängelgitter	BNP:3::trailer=10 18170,14890
 Schranke	BNP:1::trailer=3 15568,14901
@@ -1440,6 +1446,7 @@ Drängelgitter	BNP:2::trailer=5 18361,2972
 Drängelgitter	BNP:2::trailer=5 18220,2973
 Drängelgitter	BNP:2::trailer=5 18167,2724
 Drängelgitter	BNP:2::trailer=5 17621,4063
+Drängelgitter	BNP:2::trailer=5 18833,3781
 Drängelgitter	BNP:2::trailer=5 18018,3276
 #: note: lichte Breite beträgt 90cm
 Schranke	BNP:2::trailer=6 16368,7425
@@ -1624,6 +1631,9 @@ Tor	BNP:3 6431,3417
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: last_checked: 2010-09-11
+Wagner-Régeny-Str.: Straße ist fertig, aber noch gesperrt	2:inwork 19487,3593 19377,3721
+# 
 #: last_checked: 2010-09-05
 #: next_check: 2011-09-01
 Rhinstr.: neues Wohngebiet, Weg gesperrt	2:inwork 18015,13846 17300,14133
@@ -1637,11 +1647,12 @@ Radweg parallel zur Autobahn ist wegen Bauarbeiten am BAB gesperrt	2:inwork 5062
 #: next_check: 2010-10-01
 Brücke über A10: Sperrung vom 15.02.2010 bis 01.10.2010	2:inwork 15337,24593 15490,24848
 # 
+#: last_checked: 2010-09-11
 #: next_check: 2010-12-31
 #: XXX der Neubau wird "N" oder "NH" sein und Radwege haben
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0907/nachricht3563.html
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1005/nachricht3870.html
-Wegedornbrücke: Vollsperrung, Neubau	2:inwork 20385,593 20442,564 20510,530
+Wegedornbrücke: Vollsperrung, Neubau	2:inwork 20385,593 20442,564 20510,530 20534,501
 # 
 #: next_check: 2011-03-01
 Rathausbrücke: gesperrt bis März 2011 (Neubau)	2:inwork 10362,12351 10422,12395

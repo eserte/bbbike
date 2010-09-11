@@ -1832,6 +1832,46 @@ userdel	q4::inwork; 10614,19907 10742,19632
          'data' => '	2::inwork 7716,8048 7793,8043 7834,8085 7859,8252 7893,8327 7942,8380 8078,8772
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_016326',
+         'until' => 1284328740,
+         'text' => 'Rheinstraße (Friedenau): Veranstaltung, Straße vollständig gesperrt (bis ca. 12.09.10, 24 Uhr) in beiden Richtungen zwischen Walther-Schreiber-Platz und Saarstraße ',
+         'from' => 1284091200,
+         'id' => 2126,
+         'data' => 'userdel	2::temp 5370,6486 5424,6584 5533,6753 5654,6941
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_016305',
+         'until' => 1284337800,
+         'text' => 'Bahnhofstraße (Lichtenrade): Veranstaltung, Straße vollständig gesperrt (bis ca. 13.09.10, 2 Uhr) in beiden Richtungen zwischen Goltzstr. und Steinstr. ',
+         'from' => 1284091200,
+         'id' => 2127,
+         'data' => 'userdel	q4::temp 10310,-2136 10453,-2133 10509,-2131 10631,-2130 10747,-2129 10983,-2116
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_016308',
+         'until' => 1284336000,
+         'text' => 'Breite Straße (Pankow): Veranstaltung, Straße vollständig gesperrt (bis 13.09.10, 2 Uhr morgens) in beiden Richtungen zwischen Mühlenstr. und Berliner Str.',
+         'from' => 1284091200,
+         'id' => 2128,
+         'data' => 'userdel	q4::temp 10240,18193 10320,18197 10487,18270 10660,18345 10680,18380 10609,18384 10567,18366 10502,18338 10463,18321 10281,18241
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_016302',
+         'until' => 1284332400,
+         'text' => 'Turmstraße (Moabit): Veranstaltung, Straße vollständig gesperrt (bis 13.09.10, 1 Uhr morgens) in beiden Richtungen zwischen Stromstr. und Waldstr.',
+         'from' => 1284001200,
+         'id' => 2129,
+         'data' => 'userdel	2::temp 5368,13406 5560,13382 5705,13359 5857,13342 5956,13330 6011,13330 6112,13327 6228,13324
+',
+         'type' => 'gesperrt'
        }
      
 );
