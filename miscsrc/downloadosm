@@ -37,7 +37,9 @@ our $VERSION = "0.02";
 use constant TIMEOUT => 60;
 
 use vars qw($OSM_API_URL);
-$OSM_API_URL = "http://www.openstreetmap.org/api/0.6";
+#$OSM_API_URL = "http://www.openstreetmap.org/api/0.6";
+#$OSM_API_URL = "http://xapi.openstreetmap.org/api/0.6";
+$OSM_API_URL = "http://osmxapi.hypercube.telascience.org/api/0.6";
 
 my $ltlnqr = qr{([-+]?\d+(?:\.\d+)?)};
 my $osm_download_file_qr       = qr{/download_$ltlnqr,$ltlnqr,$ltlnqr,$ltlnqr\.osm(?:\.gz|\.bz2)?$};
@@ -320,6 +322,9 @@ sub download_osm_tile {
 			}
 			rename $dest, "$dest.gz"
 			    or die "Cannot rename $dest to $dest.gz: $!";
+		    } elsif ($dest !~ m{\.gz$}) {
+			system('gzip', '-f', $dest);
+			die "gzip $dest: $@" if $? != 0;
 		    }
 		}
 	    }
