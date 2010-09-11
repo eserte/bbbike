@@ -82,6 +82,7 @@ With -reload:
 -minage days: download only files which are older than days days
               handy if a download process aborted and should be
               restarted
+-osm-api-url URL (default $OSM_API_URL )
 
 For all of Berlin use:
     $0 -o destdir 13.01 52.33 13.77 52.68
@@ -102,6 +103,7 @@ GetOptions("reload!" => \$do_reload,
 	   "report!" => \$do_report,
 	   "socksproxy=s" => \$socksproxy,
 	   "timeout=i" => \$timeout,
+	   "osm-api-url" => \$OSM_API_URL,
 	  )
     or usage;
 
