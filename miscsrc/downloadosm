@@ -103,7 +103,7 @@ GetOptions("reload!" => \$do_reload,
 	   "report!" => \$do_report,
 	   "socksproxy=s" => \$socksproxy,
 	   "timeout=i" => \$timeout,
-	   "osm-api-url" => \$OSM_API_URL,
+	   "osm-api-url=s" => \$OSM_API_URL,
 	  )
     or usage;
 
