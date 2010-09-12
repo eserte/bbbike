@@ -904,6 +904,8 @@ sub get_street_type {
 	    return 'orchard';
 	} elsif ($name =~ m{^[SU]-Bhf\s}) {
 	    return 'railway station';
+	} elsif ($name =~ m{\s\(Park\)$}) {
+	    return 'park';
 	} elsif ($name =~ m{\s\(Gaststätte\)$}) {
 	    return 'restaurant';
 	} elsif ($name =~ m{\s\(Siedlung\)$}) {
