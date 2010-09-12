@@ -2,7 +2,6 @@
 #: title: Höhenpunkte
 #:
 66.0	X 8943,9098
-66.0	X 8883,9089
 # 1:1000-Karten
 35.8	X 5018,12322
 36.4	X 4999,12289
@@ -23,9 +22,13 @@
 34.1	X 5356,11500
 # 1:4000- und 1:5000-Karten
 48.3	X 8982,8781
+53.6	X 9091,9054
 53.6	X 9115,9046
+53.6	X 9111,9036
 35.0	? 22162,1067
 39.7	X 22172,194
+# extrapolated
+39.7	X 22145,208
 44.5	X 18127,-367
 36.3	? 25008,2889
 # die Rund-um-Berlin-Karte gibt hier 35.3 an:
@@ -133,6 +136,8 @@
 57.6	X 1747,11719
 59.5	X 1574,11379
 60.1	X 1532,11280
+# extrapolated, to avoid steigung_stat problems
+60.1	X 1541,11271
 34.4	X 3006,11093
 58.5	X 1459,12475
 58.8	X 797,12659
@@ -421,8 +426,7 @@
 # guesses
 # Methfesselstr. unten
 37.8	? 9211,9354
-# Müggelberg (Aussichtsturm)
-92.3	X 25716,1492
+# XXX steht erhöht, abseits der Straße --- # Müggelberg (Aussichtsturm) --- 92.3	X 25676,1508
 # Platz der Luftbrücke
 51	??? 9229,8785
 # Rund-um-Berlin-Karten (ungefähre Angaben, weil z.B. die Position nicht
@@ -638,11 +642,32 @@
 43	X 20369,1476
 # per Barometer ausgerechnet
 38	X 21169,1279
+# per Barometer ausgerechnet
+38	X 21278,1205
 # Barometer/hm96
 38.5	X 18361,1926
 # Barometer/hm96
 45.5	X 11177,8985
+# Barometer/hm96
+35.8	X 19266,1968
+# Barometer/hm96
+44	X 19206,1809
+# old GPS+hm96/extrapolated to help steigung_stat
+37	X 21497,1042
 # manuell aus hm96.dat ####################################################
+83.8	X 25676,1508
+81.9	X 25716,1492
+52.6	X 25438,1638
+37.3	X 25269,1598
+50.2	X 19412,1387
+40.7	X 18425,1831
+60.0	X 8827,9086
+65.0	X 8883,9089
+# ca.
+40.0	X 9007,9264
+65.0	X 8962,9048
+# Punkt liegt 30m weiter; helps for steigung_stat problems
+46.0	X 9617,16590
 51.5	X -6234,2055
 # Punkt liegt 20m weiter
 54.0	X 27410,590
@@ -655,16 +680,20 @@
 45.1	X 27658,877
 # Punkt liegt 20m weiter
 45.5	X 27952,435
-# interpoliert, um unnötiges "Raten" in steigung_stat zu vermeiden
+# interpoliert, um unnötiges "Raten" in steigung_stat zu vermeiden vvv
 52.5	X -5097,7361
+49.5	X -6282,1828
+# ^^^
 45.0	X -4967,7567
 41.6	X 17526,1540
 36.7	X 17860,2061
 37.2	X 17764,2032
 42.5	X 17809,1855
+43.1	X 17909,1881
 44.1	X 17855,1629
 37.3	X 18113,2126
 43.2	X 18198,1814
+42.9	X 18266,1715
 # grob interpoliert:
 36.2	X 18881,2062
 43.9	X 18839,1715
@@ -796,6 +825,8 @@
 38.6	X 3356,21534
 44.2	X 3430,21327
 51.0	X -7712,407
+# interpolated to avoid steigung_stat problems
+56.4	X -7714,529
 45.3	X -7632,204
 59.5	X -7716,599
 53.9	X -7556,559
@@ -830,6 +861,8 @@
 49.1	X 6854,4931
 47.0	X 7091,4760
 44.1	X -6762,5133
+# interpolated to avoid steigung_stat problems
+45.6	X -6747,5169
 47.0	X -6731,5202
 48.8	X -7182,5498
 46.5	X -7045,5745
@@ -884,6 +917,8 @@
 36.4	X -6869,8150
 43.5	X 21648,-276
 35.3	X 21798,839
+# interpolated to help steigung_stat
+35.9	X 21683,906
 40.1	X 22004,-489
 48.6	X 21202,727
 49.1	X 21164,476
@@ -998,6 +1033,8 @@
 47.4	X -82,11330
 51.9	X -391,11322
 42.6	X 8182,9240
+# interpolated to avoid steigung_stat problems
+42.0	X 8183,9260
 45.6	X 8100,9240
 44.3	X 8102,9262
 46.1	X 2077,9212
@@ -1643,6 +1680,7 @@
 46.3	X 8353,5188
 50.7	X 8203,5203
 54.3	X 7873,5024
+54.6	X 7807,4975
 52.2	X -7257,4581
 50.5	X 11769,8515
 36.3	X 11767,9026
@@ -1699,6 +1737,10 @@
 50.0	X 11250,8585
 51.8	X 11627,8485
 49.4	X 12104,8299
+# interpolated to help steigung_stat
+47.8	X 12168,8313
+50.0	X 12116,8247
+48.5	X 12177,8263
 52.6	X 11920,8252
 40.1	X 12170,8548
 48.9	X 12221,7271
