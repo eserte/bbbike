@@ -643,6 +643,21 @@
 # Barometer/hm96
 45.5	X 11177,8985
 # manuell aus hm96.dat ####################################################
+51.5	X -6234,2055
+# Punkt liegt 20m weiter
+54.0	X 27410,590
+# Punkt liegt 20m weiter
+56.1	X 27202,770
+37.1	X 27804,1337
+# Punkt liegt 20m weiter
+46.4	X 27428,1026
+# Punkt liegt 20m weiter
+45.1	X 27658,877
+# Punkt liegt 20m weiter
+45.5	X 27952,435
+# interpoliert, um unnötiges "Raten" in steigung_stat zu vermeiden
+52.5	X -5097,7361
+45.0	X -4967,7567
 41.6	X 17526,1540
 36.7	X 17860,2061
 37.2	X 17764,2032

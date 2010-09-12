@@ -746,7 +746,6 @@ Rohrwebereck: Sind da noch Stichstraßen oder sind das nur Garagenzufahrten?	? -1
 Hertwigswalder Steig: Art der Fahrbahn (Beton, Asphalt ...)?	? 22812,12129 22917,12239 23019,12356 23033,12367
 Sperberstr. (Konradshöhe): Qualität?	? -1681,19955 -1869,19974 -2073,19990 -2216,20003
 Zellerfelder Str.: Qualität? Einbahnstraße? Auch für Radfahrer?	? 11468,19106 11526,18929
-Oranienburger Str. - Wilhelm-Gericke-Str.: kann man als Radfahrer direkt von der Oranienburger Str. in die Wilhelm-Gericke-Str. gelangen	? 5545,19909 5598,19912
 Glaserweg: Qualität?	? 10187,872 10237,749
 Humboldtstr. (Lichtenrade): Qualität?	? 10469,-52 10353,-94 10214,-142
 Rudolf-Pechel-Str.: Qualität?	? 9991,-413 9913,-432 9920,-513 10018,-494
@@ -754,7 +753,6 @@ Fontanestr. (Lichtenrade): Qualität des östlichen Abschnitts?	? 10508,-519 10450
 Fontanestr. (Lichtenrade): Qualität des westlichen Abschnitts? Ist die Zufahrt zur Neanderstr. für Autos gesperrt, aber für Radfahrer möglich?	? 9699,-600 9779,-605 9822,-608
 Ekensunder Weg: Qualität?	? 10481,-995 10365,-996 10260,-993 10143,-987 10082,-986
 Dossestr. (Lichtenrade): Qualität?	? 10082,-986 10030,-1066 9925,-1106
-Rhinstr. (Lichtenrade): Qualität?	? 10030,-1066 10134,-1138 10147,-1273 10155,-1320 10181,-1348 10248,-1346
 Hendonstr.: Qualität?	? 10531,-1633 10449,-1646 10421,-1681 10409,-1954
 Ostheimer Str.: Qualität?	? 10662,1072 10738,906
 Wingerter Str.: Qualität?	? 10827,1140 10845,1026 10851,929
@@ -1916,7 +1914,6 @@ bei Gollwitz: fehlendes Stück des Havelradwegs? Qualität?	? -40352,2075 -40343,1
 Zützen - ehem. B2: Qualität?	? 66091,69964 65762,70023 65345,70168 65207,70639
 Oder-Neiße-Radweg - Stützkow: Qualität?	? 61783,66148 61731,66250 61584,66212
 Stützkow - Alt-Gatow: Qualität?	? 61584,66212 61540,66359 61445,66368 61289,66610 60834,66986 60458,66859 60100,66606 60068,66610
-Max-Liebermann-Allee: Qualität? Über welche Straße erfolgt der Zugang?	? -6422,1932 -6331,2094 -6273,2194
 Friedrich-Wilhelm-Str. (Reinickendorf): Qualität?	? 7615,18204 7418,18051
 Marthastr. (Wilhelmsruh): Qualität?	? 8000,19819 8234,19936
 Anton-Webern-Weg: Qualität?	? 8131,20287 8282,20329
@@ -1997,7 +1994,6 @@ Walldürner Weg: Qualität?	? -3376,17149 -3353,17274 -3292,17361 -3186,17415 -309
 Breubergweg: Qualität? Können Radfahrer direkt zum Michelstadter Weg fahren?	? -3353,17274 -3206,17263
 Reußstr.: Qualität?	? -3023,16925 -3129,16931 -3238,16948
 Seeburg - Heerstr.: Qualität? Gibt es hier Wegweiser oder Straßennamen?	? -9467,12248 -9210,13338
-Bernauer Str.: existieren östlich der Neheimer Str. Radwege oder Radspuren?	? 1229,18750 1405,18749 1659,18747 1967,18743 2175,18740 2602,18737 2643,18738 2821,18831
 Quickborner Str.: Wo genau befinden sich Radspuren, wo befinden sich Radwege?	? 7416,22349 7072,22905 6890,23213 6839,23300 6770,23417
 Fritz-Rumpf-Str. (Potsdam): Ist die Straße bereits fertiggestellt? Qualität?	? -11307,133 -11388,270
 Leonardo-da-Vinci-Str. (Potsdam): Ist die Straße bereits fertiggestellt? Qualität?	? -11390,72 -11609,400
@@ -3166,9 +3162,6 @@ Zum Teufelssee (Potsdam): Qualität?	? -10150,-5260 -10254,-5307 -10397,-5379 -10
 Liefelds Grund (Potsdam): Qualität?	? -10397,-5379 -10344,-5504 -10482,-5572
 Moosglöckchenweg (Potsdam): Qualität?	? -10535,-5751 -10630,-5553
 Am Springbruch (Potsdam): Qualität?	? -10641,-5814 -10721,-5678 -10659,-5648
-Am Löwentor: Qualität?	? -6021,2068 -6145,2091 -6171,2128 -6273,2194 -6336,2234
-Am kleinen Anger: Qualität? Wird "kleinen" klein oder groß geschrieben?	? -6496,1976 -6404,2126 -6331,2094
-An der Obstwiese: Qualität?	? -6331,2094 -6234,2055 -6290,1969
 Am Kirschgarten: bereits fertiggestellt? Qualität?	? 11724,21156 11831,21104 11937,21043 11944,21220 11876,21218 11831,21104
 Am Konsulat: Qualität?	? 9962,19757 9990,19644 9916,19625
 Adlerhorst: Qualität?	? 21131,2454 21133,2406 21185,2341
@@ -3180,8 +3173,8 @@ Straße 432: Stimmt der Straßenname? Qualität? Kann man als Radfahrer zur Straße 
 Straße 433: Stimmt der Straßenname? Qualität?	? 9846,817 9956,852 10034,991
 Hermann-Wundrich-Platz: Qualität? Nachts beleuchtet? Ausgeschildert?	? 11174,-1719 11129,-1772 11095,-1846 11070,-1853
 Rue René Laennec: Qualität?	? 3684,16788 3608,16765
-Sarkauer Allee: Qualität?	? -1471,11416 -1574,11484
-Elsa-Rendschmidt-Weg: Qualität? Können Radfahrer hier fahren? Existieren Treppen?	? -1574,11484 -1593,11501 -1635,11535 -1750,11719
+Elsa-Rendschmidt-Weg: Wieviele Stufen hat die Treppe zur Sarkauer Allee?	? -1574,11484 -1593,11501
+Elsa-Rendschmidt-Weg: Qualität? Können Radfahrer hier fahren?	? -1593,11501 -1635,11535 -1750,11719
 (Waldweg): Qualität? Führt hier die Route 6 entlang?	? 1859,21541 1610,21721 1556,22050 1588,22209 1524,22368 1415,22552 1476,22938 1559,23039 1534,23277 1382,23505 902,23844
 Führen hier die Routen 3 und 6 entlang?	? 905,24113 931,23965 902,23844
 Straupitzer Steig: Qualität?	? 6768,21515 6777,21335
@@ -3205,6 +3198,7 @@ Julius-Rütgers-Str. (Erkner): Qualität?	? 34293,3076 34391,3099 34416,3127 34671
 Saarower Weg: Qualität des Abschnitts im Wald?	? 31206,3874 31350,3908 31417,3912 31450,3938
 Am Kirchberg (Neu Fahrland): Qualität?	? -13783,3919 -13925,3928 -14507,4057 -14632,4093 -14725,4141 -14777,4143
 Ebereschenweg (Groß Glienicke): Qualität? verkehrsberuhigt?	? -10127,6716 -10138,6646
+Hainbuchenweg (Groß Glienicke): Qualität?	? -10178,6691 -10227,6693 -10236,6648
 Rotdornweg (Groß Glienicke): Qualität? verkehrsberuhigt?	? -10091,6716 -10095,6664
 Theodor-Fontane-Str. (Groß Glienicke): Qualität?	? -9854,6890 -9835,6841 -9835,6791
 Hermann-Krone-Weg (Groß Glienicke): Qualität?	? -9746,6850 -9746,6789
@@ -3213,6 +3207,7 @@ An der Kirche (Groß Glienicke): Qualität?	? -10057,6804 -9835,6791 -9746,6789 -9
 An der Kirche (Groß Glienicke): Qualität?	? -10053,6676 -9717,6669
 Bergstr. (Groß Glienicke): Qualität?	? -10272,6569 -10052,6563 -9722,6549
 Wendensteig (Groß Glienicke): Qualität?	? -10157,6361 -10154,6284 -10148,6021 -10140,5794 -10141,5704 -10161,5459 -10174,5357 -10102,5131 -10080,5069
+Am Schlahn (Groß Glienicke): Qualität?	? -10494,6586 -10446,6449 -10444,6363 -10489,6050 -10467,5948 -10487,5846 -10521,5770
 Christophorusweg (Groß Glienicke): Qualität?	? -9962,6295 -9957,6028 -9945,5797
 Sankt-Anna-Str. (Groß Glienicke): Qualität?	? -9860,6288 -9855,6034 -9847,5798
 Tristanstr. (Groß Glienicke): Qualität?	? -9945,5797 -9955,5482 -9916,5334 -9875,5231 -9808,5103
@@ -3351,6 +3346,7 @@ Schönfließer Str. (Frohnau) (Qualität?)	? 3145,26256 3347,26272 3360,26275 3490,
 (Borkzeile - Petersenweg) (Nachts beleuchtet?)	? -4185,14572 -4081,14550 -3985,14582 -3941,14603 -3919,14617
 Stadtheidestr. (Ist die Stadtheidestr. eine Einbahnstraße? Wenn ja, in welche Richtung ist sie offen und gilt die Einbahnstraßenregelung auch für Radfahrer oder nur für Autofahrer?)	? -3573,16006 -3684,15982
 (Allee der Kosmonauten - Biesdorfer Promenade) (Qualität? (laut ADFC-Karte gut geeignet))	? 19837,13531 19826,13444 19835,13152 20068,13036
+Am kleinen Anger (Wird "kleinen" klein oder groß geschrieben?)	? -6496,1976 -6404,2126 -6331,2094
 (Forst Düppel) (Ist dieser Weg als "Sieben-Raben-Weg" ausgeschildert?)	? -6009,559 -6306,251 -6353,189 -6542,105 -6956,-30 -7067,-36
 (Hegauer Weg - Königsweg) (kleine Törchen an beiden Enden --- Ist der Weg nachts geschlossen?)	? -84,2376 -174,2616
 Straße 199 (Französisch Buchholz, Niederschönhausen) (Wie ist die Qualität der Straße 199?)	? 11632,20086 11553,20253 11684,20377 11840,20528
@@ -3418,7 +3414,7 @@ Müncheberg, Turm (genaue Bezeichnung?)	? 60803,11559
 Müncheberg, Turm (genaue Bezeichnung?)	? 60306,11906
 Edelhofdamm: Kopfsteinpflaster (Kopfsteinpflaster zwischen Oranienburger Chaussee und Enkircher Straße?)	? 3463,25611 3273,25516 3171,25495
 Zepernicker Str: Kopfsteinpflaster, OK (Wie ist das Kopfsteinpflaster in der Zepernicker Str.: gut oder mäßig?)	? 17218,26121 17013,25874
-An der Nordbahn: mäßiges Pflaster (?) (Wie genau ist die Fahrbahnbeschaffenheit hier (Asphalt, Beton, Kopfsteinpflaster, ...)?)	? 6669,20129 6365,20402 6289,20468
+An der Nordbahn: mäßiges Pflaster (?) (Wie genau ist die Fahrbahnbeschaffenheit hier (Asphalt, Beton, Kopfsteinpflaster, ...)?)	? 6669,20129 6365,20402
 Dorfstr.: schlechtes Kopfsteinpflaster (Hat die Dorfstr. noch immer schlechtes Kopfsteinpflaster oder ist sie mittlerweile asphaltiert?)	? 22496,11474 22469,11627 22313,11688
 Dorfstr.: schlechtes Kopfsteinpflaster (Hat die Dorfstr. noch immer schlechtes Kopfsteinpflaster oder ist sie mittlerweile asphaltiert?)	? 22260,11742 22313,11688 22496,11474
 Dorfstr.: Kopfsteinpflaster (Hat die Dorfstr. noch immer Kopfsteinpflaster oder ist sie mittlerweile asphaltiert?)	? 22260,11742 22149,11870 22112,11936 22140,11958

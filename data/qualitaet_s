@@ -335,7 +335,7 @@ Kurfürstenstr.: Kopfsteinpflaster	Q2 7633,10394 7744,10372 7850,10351 8061,10310
 (Im Jagen, Verlängerung): Waldweg	Q1 1375,6138 1057,6461 909,6584 905,6631
 Jahnstr: Kopfsteinpflaster	Q2 11509,9392 11500,9116
 Mauerweg: teilweise nur mäßiger Asphalt	Q1 7725,21247 7289,20618 7083,20584 6601,20542 6487,20512 6436,20477 6365,20452
-An der Nordbahn: mäßiges Pflaster (?)	Q1 6669,20129 6365,20402 6289,20468
+An der Nordbahn: mäßiges Pflaster (?)	Q1 6669,20129 6365,20402
 An der Nordbahn: Verbundsteinpflaster	Q1 8647,18567 8597,18554 8558,18597 8562,18642
 An der Nordbahn: teilweise mäßiger Asphalt (Wellen, Schlaglöcher)	Q1 8562,18642 8476,18773
 An der Nordbahn: teilweise mäßiger Asphalt (Wellen, Schlaglöcher)	Q2 8369,18769 8237,18880 7512,19480
@@ -7086,6 +7086,7 @@ Benjamin-Vogelsdorff-Str.: Asphalt	Q0 10479,18007 10355,17963
 Klausdorfer Weg: schlechtes Kopfsteinpflaster	Q3 10505,-2552 10648,-2547 10833,-2544 10989,-2543
 Irmgardstr.: schlechtes Kopfsteinpflaster	Q3 974,4669 960,4660 881,4429 863,4363 865,4288 908,4175
 Pfarrer-Lenzel-Str.: guter Beton	Q0 9724,20291 9565,20312
+(Oranienburger Str. - Wilhelm-Gericke-Str.): Gehwegpflasterung	Q1 5545,19909 5598,19912
 Frank-L.-Howley-Weg: Asphalt	Q0 2408,1144 2233,1528
 Hirschpfad: schlechtes Kopfsteinpflaster	Q3 22522,8506 22639,8565 22809,8633 22865,8588
 Ketschendorfer Weg: mäßiger Asphalt	Q1 20361,14118 20461,14110 20620,14092 20856,14073 20938,14066 21074,14058 21272,14036
@@ -7755,6 +7756,12 @@ Tschaikowskistr.: guter Asphalt	Q0 9501,18902 9876,19026 9976,19059 10115,19105 
 (Königsheide - Johannisthaler Chaussee): guter breiter Waldweg	Q1 16670,5473 16569,5380 16497,5323 16320,5187 16279,5170
 Hinter den Gärten: guter Asphalt	Q0 -6700,15653 -6718,15447
 Hohengraper Weg: guter Asphalt	Q0 16684,16457 16718,16545 16808,16710 16804,16729
+Rhinstr. (Lichtenrade): guter Asphalt	Q0 10030,-1066 10134,-1138 10147,-1273 10155,-1320 10181,-1348 10248,-1346
+Sarkauer Allee: fester Sandweg	Q2 -1471,11416 -1574,11484
+Max-Liebermann-Allee: Asphalt	Q0 -6422,1932 -6331,2094 -6273,2194
+An der Obstwiese: Asphalt	Q0 -6331,2094 -6234,2055 -6290,1969
+Am kleinen Anger: Asphalt	Q0 -6496,1976 -6404,2126 -6331,2094
+Am Löwentor: Asphalt	Q0 -6021,2068 -6145,2091 -6171,2128 -6273,2194 -6336,2234
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206
 Richard-Ermisch-Str.: Asphalt	Q0 14250,13281 14224,13206 14207,13152 14177,13065 14163,13025 14130,12926 14096,12827
 Zum Langen Jammer: Kopfsteipflaster, Gehweg besser	Q2 14686,12873 14405,12953
@@ -8246,7 +8253,6 @@ Dickensweg: Asphalt	Q0 -1536,11176 -1434,11172 -1386,11172 -1297,11184 -1062,112
 Ragniter Allee: Asphalt	Q0 -1039,11034 -1062,11214
 Bronteweg: Beton	Q1 -1386,11172 -1391,11103 -1477,11108
 Swiftweg: Asphalt	Q0 -948,11270 -966,11382
-Elsa-Rendschmidt-Weg: Asphalt/Sand	Q2 -1471,11416 -1574,11484
 Insterburgallee: Kopfsteinpflaster	Q2 231,11198 200,11428 159,11612
 Mohrunger Allee: Kopfsteinpflaster	Q2 -68,11156 -82,11330 -64,11426 -33,11517
 Stuhmer Allee: Kopfsteinpflaster	Q2 -391,11322 -82,11330

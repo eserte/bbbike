@@ -361,7 +361,7 @@ Kurfürstenstr.: Kopfsteinpflaster	Q2 7633,10394 7744,10372 7850,10351 8061,10310
 Jahnstr: Kopfsteinpflaster	Q2 11509,9392 11500,9116
 Mauerweg: teilweise nur mäßiger Asphalt	Q1 7725,21247 7289,20618 7083,20584 6601,20542 6487,20512 6436,20477 6365,20452
 #: add_fragezeichen: Wie genau ist die Fahrbahnbeschaffenheit hier (Asphalt, Beton, Kopfsteinpflaster, ...)?
-An der Nordbahn: mäßiges Pflaster (?)	Q1 6669,20129 6365,20402 6289,20468
+An der Nordbahn: mäßiges Pflaster (?)	Q1 6669,20129 6365,20402
 An der Nordbahn: Verbundsteinpflaster	Q1+ 8647,18567 8597,18554 8558,18597 8562,18642
 An der Nordbahn: teilweise mäßiger Asphalt (Wellen, Schlaglöcher)	Q1 8562,18642 8476,18773
 An der Nordbahn: teilweise mäßiger Asphalt (Wellen, Schlaglöcher)	Q2 8369,18769 8237,18880 7512,19480
@@ -10481,8 +10481,10 @@ Klausdorfer Weg: schlechtes Kopfsteinpflaster	Q3 10505,-2552 10648,-2547 10833,-
 #: by: timm wille:
 #: correction_of: anonymous (guter Asphalt, Q0)
 Irmgardstr.: schlechtes Kopfsteinpflaster	Q3 974,4669 960,4660 881,4429 863,4363 865,4288 908,4175
-#: by: Rudolf Kionke
+#: by: Rudolf Kionke vvv
 Pfarrer-Lenzel-Str.: guter Beton	Q0 9724,20291 9565,20312
+(Oranienburger Str. - Wilhelm-Gericke-Str.): Gehwegpflasterung	Q1 5545,19909 5598,19912
+#: by: ^^^
 #: by: Sigrid Kohn:
 Frank-L.-Howley-Weg: Asphalt	Q0 2408,1144 2233,1528
 #: by: Maike Fährmann:
@@ -11943,6 +11945,19 @@ Hinter den Gärten: guter Asphalt	Q0 -6700,15653 -6718,15447
 #: by: Lange Angela
 #: confirmed_by: srt
 Hohengraper Weg: guter Asphalt	Q0- 16684,16457 16718,16545 16808,16710 16804,16729
+#: by: karsten (...boelter)
+#: note: "enge Straße", aber ohne weitere Kategorisierung
+Rhinstr. (Lichtenrade): guter Asphalt	Q0 10030,-1066 10134,-1138 10147,-1273 10155,-1320 10181,-1348 10248,-1346
+#: by: Ch. Wojciekowski:
+Sarkauer Allee: fester Sandweg	Q2 -1471,11416 -1574,11484
+#: by: Jan Fehlberg: vvv
+#: note: 30er-Zone
+Max-Liebermann-Allee: Asphalt	Q0 -6422,1932 -6331,2094 -6273,2194
+An der Obstwiese: Asphalt	Q0 -6331,2094 -6234,2055 -6290,1969
+Am kleinen Anger: Asphalt	Q0 -6496,1976 -6404,2126 -6331,2094
+#: note: 30er-Zone
+Am Löwentor: Asphalt	Q0 -6021,2068 -6145,2091 -6171,2128 -6273,2194 -6336,2234
+#: by: ^^^
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206
@@ -12469,7 +12484,6 @@ Dickensweg: Asphalt	Q0 -1536,11176 -1434,11172 -1386,11172 -1297,11184 -1062,112
 Ragniter Allee: Asphalt	Q0 -1039,11034 -1062,11214
 Bronteweg: Beton	Q1 -1386,11172 -1391,11103 -1477,11108
 Swiftweg: Asphalt	Q0 -948,11270 -966,11382
-Elsa-Rendschmidt-Weg: Asphalt/Sand	Q2 -1471,11416 -1574,11484
 Insterburgallee: Kopfsteinpflaster	Q2 231,11198 200,11428 159,11612
 Mohrunger Allee: Kopfsteinpflaster	Q2 -68,11156 -82,11330 -64,11426 -33,11517
 Stuhmer Allee: Kopfsteinpflaster	Q2 -391,11322 -82,11330
