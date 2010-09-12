@@ -42,6 +42,7 @@ my $orig = 0;
 my $min_mount;
 my $sperre_file;
 my $tolerant;
+my $die_on_fatal;
 
 # -orig is obsolete!
 if (!GetOptions("i=s" => \$i,
@@ -53,10 +54,11 @@ if (!GetOptions("i=s" => \$i,
 		"minmount=f" => \$min_mount,
 		"sperre=s" => \$sperre_file,
 		"tolerant!" => \$tolerant,
+		"die-on-fatal!" => \$die_on_fatal,
 		"v+" => \$v,
 	       )) {
     die "usage: $0 [-str strassen.bbd [-str ...]] [-i hoehe.bbd] [-sperre gesperrt.bbd] [-o output.bbd]
-                   [-[no]commentscompatible] [-[no]gefaelle] [-[no]orig] [-tolerant] [-v]
+                   [-[no]commentscompatible] [-[no]gefaelle] [-[no]orig] [-tolerant] [-die-on-fatal] [-v]
 
 Default for -str: $strfile_default
 Default for -i: $i
@@ -353,6 +355,9 @@ sub better_make_net_steigung {
 *** Should not happen: Steigung in both directions???
 ";
 	    warn join("\n", @errors);
+	    if ($die_on_fatal) {
+		die "*** You need to add additional elevation points!\n";
+	    }
 	}
     }
 

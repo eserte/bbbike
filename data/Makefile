@@ -687,7 +687,7 @@ housenumbers:	housenumbers-orig
 
 mount:	strassen fragezeichen hoehe gesperrt
 	-@$(WRITEABLE) $@
-	$(STEIGUNG_STAT) -minmount 1.0 -commentscompatible -sperre gesperrt \
+	$(STEIGUNG_STAT) -die-on-fatal -minmount 1.0 -commentscompatible -sperre gesperrt \
 		-str strassen -str fragezeichen -i hoehe -o $@~
 	mv $@~ $@
 	-@$(READONLY) $@
