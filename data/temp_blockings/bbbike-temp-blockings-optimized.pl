@@ -1309,17 +1309,7 @@ userdel	q4::inwork; 9130,12433 9141,12320
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_011081',
-         'until' => 1284382800,
-         'text' => 'Blankenburger Str. (Pankow): Baustelle, Fahrtrichtung gesperrt Richtung Dietzgenstr. zwischen Siegfriedstr. und Dietzgenstr. sowie Einbahnstraßenregelung in der Siegfriedstr., 05.01.2009 11:00 Uhr bis 13.09.2010 ',
-         'from' => 1231063200,
-         'id' => 2016,
-         'data' => 'userdel	q4::inwork; 10742,19632 10439,19576 10377,19565 10249,19541
-userdel	q4::inwork; 10614,19907 10742,19632
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'IM_015001',
          'until' => 1309471199,
@@ -1395,10 +1385,10 @@ userdel	q4::inwork; 10614,19907 10742,19632
        undef,
        undef,
        {
-         'source_id' => 'LSO-SG33-F10015',
-         'until' => 1285020000,
-         'text' => 'Grünheide (Mark): Brückenbauarbeiten OD Kienbaum 24.02.2010 bis 20.09.2010 ',
-         'from' => 1270235590,
+         'source_id' => 'LS/O-SG33-F/10/015',
+         'until' => 1288389600,
+         'text' => 'Grünheide (Mark): L385: Brückenbauarbeiten OD Kienbaum, 24.02.2010 bis 29.10.2010 01:00 Uhr ',
+         'from' => 1284411978,
          'id' => 2037,
          'data' => 'userdel	2::inwork 48182,6806 48027,6894
 ',
@@ -1833,45 +1823,29 @@ userdel	q4::inwork; 10614,19907 10742,19632
 ',
          'type' => 'handicap'
        },
+       undef,
+       undef,
+       undef,
+       undef,
        {
-         'source_id' => 'IM_016326',
-         'until' => 1284328740,
-         'text' => 'Rheinstraße (Friedenau): Veranstaltung, Straße vollständig gesperrt (bis ca. 12.09.10, 24 Uhr) in beiden Richtungen zwischen Walther-Schreiber-Platz und Saarstraße ',
-         'from' => 1284091200,
-         'id' => 2126,
-         'data' => 'userdel	2::temp 5370,6486 5424,6584 5533,6753 5654,6941
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'source_id' => 'IM_016305',
-         'until' => 1284337800,
-         'text' => 'Bahnhofstraße (Lichtenrade): Veranstaltung, Straße vollständig gesperrt (bis ca. 13.09.10, 2 Uhr) in beiden Richtungen zwischen Goltzstr. und Steinstr. ',
-         'from' => 1284091200,
-         'id' => 2127,
-         'data' => 'userdel	q4::temp 10310,-2136 10453,-2133 10509,-2131 10631,-2130 10747,-2129 10983,-2116
+         'source_id' => 'IM_016334',
+         'until' => 1286550000,
+         'text' => 'Dorfplatz (Bohnsdorf): Baustelle, Fahrtrichtung gesperrt Richtung A 117 zwischen Grünbergallee und Buntzelstr., 13.09.2010 08:00 Uhr bis 08.10.2010 17:00 Uhr ',
+         'from' => 1284271200,
+         'id' => 2130,
+         'data' => 'userdel	q4::inwork; 20827,-537 20881,-564 20995,-542 21074,-485
 ',
          'type' => 'handicap'
        },
        {
-         'source_id' => 'IM_016308',
-         'until' => 1284336000,
-         'text' => 'Breite Straße (Pankow): Veranstaltung, Straße vollständig gesperrt (bis 13.09.10, 2 Uhr morgens) in beiden Richtungen zwischen Mühlenstr. und Berliner Str.',
-         'from' => 1284091200,
-         'id' => 2128,
-         'data' => 'userdel	q4::temp 10240,18193 10320,18197 10487,18270 10660,18345 10680,18380 10609,18384 10567,18366 10502,18338 10463,18321 10281,18241
+         'source_id' => 'IM_016338',
+         'until' => 1285851600,
+         'text' => 'Neuer Hönower Weg (Dahlwitz-Hoppegarten): Baustelle, Straße vollständig gesperrt in beiden Richtungen zwischen Industriestr. und Wiesenstr., 13.09.2010 09:00 Uhr bis 30.09.2010 15:00 Uhr ',
+         'from' => 1284274800,
+         'id' => 2131,
+         'data' => 'userdel	q4::inwork 26880,11479 27272,11970
 ',
          'type' => 'handicap'
-       },
-       {
-         'source_id' => 'IM_016302',
-         'until' => 1284332400,
-         'text' => 'Turmstraße (Moabit): Veranstaltung, Straße vollständig gesperrt (bis 13.09.10, 1 Uhr morgens) in beiden Richtungen zwischen Stromstr. und Waldstr.',
-         'from' => 1284001200,
-         'id' => 2129,
-         'data' => 'userdel	2::temp 5368,13406 5560,13382 5705,13359 5857,13342 5956,13330 6011,13330 6112,13327 6228,13324
-',
-         'type' => 'gesperrt'
        }
      
 );

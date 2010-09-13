@@ -17300,11 +17300,11 @@ EOF
 userdel	q4::inwork 65618,6296 65528,6253 65365,6281 65225,6403
 EOF
      },
-     { from  => 1270235590, # 2010-04-02 21:13
-       until => 1285020000, # 2010-09-21 00:00
-       text  => 'Grünheide (Mark): Brückenbauarbeiten OD Kienbaum 24.02.2010 bis 20.09.2010 ',
+     { from  => 1284411978, # 2010-09-13 23:06
+       until => 1288389600, # 2010-10-30 00:00
+       text  => 'Grünheide (Mark): L385: Brückenbauarbeiten OD Kienbaum, 24.02.2010 bis 29.10.2010 01:00 Uhr ',
        type  => 'gesperrt',
-       source_id => 'LSO-SG33-F10015',
+       source_id => 'LS/O-SG33-F/10/015',
        data  => <<EOF,
 userdel	2::inwork 48182,6806 48027,6894
 EOF
@@ -18217,6 +18217,24 @@ EOF
        source_id => 'IM_016302',
        data  => <<EOF,
 userdel	2::temp 5368,13406 5560,13382 5705,13359 5857,13342 5956,13330 6011,13330 6112,13327 6228,13324
+EOF
+     },
+     { from  => 1284271200, # 2010-09-12 08:00
+       until => 1286550000, # 2010-10-08 17:00
+       text  => 'Dorfplatz (Bohnsdorf): Baustelle, Fahrtrichtung gesperrt Richtung A 117 zwischen Grünbergallee und Buntzelstr., 13.09.2010 08:00 Uhr bis 08.10.2010 17:00 Uhr ',
+       type  => 'handicap',
+       source_id => 'IM_016334',
+       data  => <<EOF,
+userdel	q4::inwork; 20827,-537 20881,-564 20995,-542 21074,-485
+EOF
+     },
+     { from  => 1284274800, # 2010-09-12 09:00
+       until => 1285851600, # 2010-09-30 15:00
+       text  => 'Neuer Hönower Weg (Dahlwitz-Hoppegarten): Baustelle, Straße vollständig gesperrt in beiden Richtungen zwischen Industriestr. und Wiesenstr., 13.09.2010 09:00 Uhr bis 30.09.2010 15:00 Uhr ',
+       type  => 'handicap',
+       source_id => 'IM_016338',
+       data  => <<EOF,
+userdel	q4::inwork 26880,11479 27272,11970
 EOF
      },
     );
