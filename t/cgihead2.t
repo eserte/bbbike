@@ -97,6 +97,15 @@ for my $url (@compat_urls) {
 
 for my $var (@var) {
     for my $url (@{ $url{$var} }) {
+
+	# XXX requesting bbbike-snapshot.cgi sometimes fails, with
+	# really long request times. Doing first a head against the
+	# debug version to have the timings in the errorlog
+	# XXX remove this some day...
+	if ($url eq $BBBike::BBBIKE_UPDATE_DIST_CGI) {
+	    $ua->head('http://bbbike.de/cgi-bin/bbbike-snapshot-debug.cgi');
+	}
+
 	check_url($url, $var);
     }
 }
