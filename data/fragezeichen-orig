@@ -120,8 +120,9 @@ Kniprodestr.	?::projected 13838,15113 13749,15013 13649,14899 13438,14675
 Streitstr. (werden die vorhandenen Bordsteinradwege ersetzt)?	?::projected -3040,16246 -3050,16429 -3046,16548 -3043,16601 -3031,16807 -3023,16925 -3018,16974 -3017,16984 -3009,17090
 #
 #: by: http://www.berlin.de/ba-pankow/presse/archiv/20081128.1050.115446.html
-#: next_check: 2010-05-01
-Blankenburger Str. erhält beiderseitig Radfahrstreifen zwischen Dietzgen- und Siegfriedstr.	?::projected 10249,19541 10377,19565 10439,19576 10742,19632
+#: last_checked: 2010-09-08 (Ricardo März)
+#: next_check: 2010-12-01
+Blankenburger Str. erhält beiderseitig Radfahrstreifen zwischen Dietzgen- und Siegfriedstr.	?::inwork 10249,19541 10377,19565 10439,19576 10742,19632
 #
 #: by: http://www.berlin.de/ba-pankow/presse/archiv/20090921.0650.139568.html
 #: next_check: 2011-10-01
@@ -314,7 +315,6 @@ Alt-Blankenburg: Bau von Radwegen	?::inwork; 14050,20955 13915,20944 13562,20913
 Alt-Blankenburg: Bau von Radwegen	?::inwork; 13592,20785 13576,20849 13915,20944 14050,20955
 #: next_check ^^^
 #: by ^^^
-#XXX del: by: http://www.berlin.de/ba-neukoelln/presse/archiv/20081118.1520.114696.html#: last_checked: 2010-05-05#: next_check: 2010-05-21 Schwarzer Weg: im März 2010 noch Bauarbeiten	?::inwork 13938,7938 13957,8209 13939,8228
 #XXX del An der Spandauer Brücke: neue Straßenführung	?::inwork 10309,12854 10398,12903 10427,12921 10371,13006
 #XXXdel : by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0802/nachricht2958.html;#: note: laut daniel.geraskov noch eine Baustelle;#: last_checked: 2008-06-23;Oranienburger Str.: Existiert in Richtung Hackescher Markt zwischen Friedrichstraße und Linienstraße eine Radspur?	?; 9215,13392 9281,13374
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0802/nachricht2961.html
@@ -367,6 +367,9 @@ Fußgängerbrücke über den Nordhafen in Planung	?::projected -2506,16315 -2510,163
 # Das heißt diese Strecken werden nicht bei einer erweiterten Suche aufgenommen
 # und dem CGI-Benutzer auch nicht präsentiert.
 # 
+#: by: http://www.berlin.de/ba-neukoelln/presse/archiv/20100907.1300.309668.html
+Schwarzer Weg: existiert dieser Straßenname in der Realität? Evtl. als Alias eintragen?	? 13938,7938 13957,8209 13939,8228
+Neuköllner Tor: überprüfen, und dann nach sehenswuerdigkeit-orig, next to Neukölln Arcaden	? 13131,7066 13141,7009 13266,7033 13257,7094
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1009/nachricht4030.html
 Situation auf der Lohmühleninsel: Schwellen, Beleuchtung?	? 13535,10184 13506,10146 13371,9974 13333,9929
 Rampe zur Lohmühleninsel: nicht mehr so steil?	? 13221,10005 13237,9995 13267,10036
