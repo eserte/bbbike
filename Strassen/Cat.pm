@@ -37,7 +37,7 @@ use vars qw(%filetype_to_cat %file_to_cat);
 			 ],
      "fragezeichen"   => [qw(? ?? F:? F:??)],
      "handicap"	      => [qw(q0 q1 q2 q3 q4)],
-     "landstrassen"   => [qw(B HH H N NN Pl)],
+     "landstrassen"   => [qw(B HH H NH N NN Pl)],
      "mount"   	      => [qw(St Gf CS)],
      "orte"	      => [qw(0 1 2 3 4 5 6)],
      "qualitaet"      => [qw(Q0 Q1 Q2 Q3)],
