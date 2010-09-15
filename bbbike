@@ -10534,11 +10534,13 @@ sub plot_sperre {
 		}
 		my $tags = [$abk, $sub_cat,
 			    $ret->[Strassen::NAME], $abk.'-'.$pos];
-		for my $i (0 .. $#kreuzungen - 1) {
+
+		my $plot_one = sub {
+		    my($p_ref, $inx) = @_;
 		    my($x1,$y1) =
-			transpose(@{Strassen::to_koord1($kreuzungen[$i])});
+			transpose(@{Strassen::to_koord1($p_ref->[$inx])});
 		    my($x2,$y2) =
-			transpose(@{Strassen::to_koord1($kreuzungen[$i+1])});
+			transpose(@{Strassen::to_koord1($p_ref->[$inx+1])});
 		    my($xm,$ym) = (int(($x2-$x1)/2+$x1), int(($y2-$y1)/2+$y1));
 
 		    if ($cat eq StrassenNetz::BLOCKED_ONEWAY ||
@@ -10588,6 +10590,27 @@ sub plot_sperre {
 					-image => $car_photo,
 					-anchor => shift(@anchors),
 					-tags => [$abk, $sub_cat,$ret->[Strassen::NAME], $abk.'-'.$pos]);
+		    }
+		};
+
+		if ($advanced) { # XXX decide one day if this should be the default
+		    # "Sparse plotting": only one symbol between a
+		    # crossing-limited hop.
+		    my @hops = split_by_crossings(@kreuzungen);
+		    for my $hop (@hops) {
+			my $inx;
+			if ($cat eq StrassenNetz::BLOCKED_ONEWAY ||
+			    $cat eq StrassenNetz::BLOCKED_ONEWAY_STRICT) {
+			    $inx = $#{$hop}-1;
+			} elsif ($cat eq StrassenNetz::BLOCKED_COMPLETE) {
+			    $inx = int($#{$hop}/2);
+			}
+			$plot_one->($hop, $inx);
+		    }
+		} else {
+		    # Plot symbol on every segment in the line
+		    for my $inx (0 .. $#kreuzungen-1) {
+			$plot_one->(\@kreuzungen, $inx);
 		    }
 		}
 	    }
@@ -10645,6 +10668,24 @@ sub _line_shorten {
 sub line_shorten_begin { _line_shorten(shift, 1, 0) }
 sub line_shorten       { _line_shorten(shift, 1, 1) }
 sub line_shorten_end   { _line_shorten(shift, 0, 1) }
+
+sub split_by_crossings {
+    my @p = @_;
+    return () if !@p;
+    my $crossings = all_crossings();
+    my @ret = [$p[0]];
+    if (@p > 2) {
+	for my $p_i (1 .. $#p-1) {
+	    my $p = $p[$p_i];
+	    push @{ $ret[-1] }, $p;
+	    if (exists $crossings->{$p}) {
+		push @ret, [$p];
+	    }
+	}
+    }
+    push @{ $ret[-1] }, $p[-1];
+    @ret;
+}
 
 sub get_temp_blockings_files {
     my $temp_blockings_dir = "$datadir/temp_blockings";
