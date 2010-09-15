@@ -1786,15 +1786,7 @@ userdel	q4::inwork; 9130,12433 9141,12320
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => undef,
-         'text' => 'Mariannenstr. zwischen Skalitzer Str. und Heinrichplatz: Fahrbahn gesperrt',
-         'from' => undef,
-         'id' => 2122,
-         'data' => 'userdel	q4::inwork 11722,10533 11671,10402
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1285883999,
          'text' => 'Die Charlottenstraße zwischen Hermann-Elflein-Straße und Schopenhauerstraße ist für den Bau von Hausanschlüssen halbseitig gesperrt. Im Baubereich ist eine Einbahnstraße in Richtung Wilhelmgalerie eingerichtet. Die Arbeiten dauern bis voraus. 30.09.2010. ',
@@ -1814,15 +1806,7 @@ userdel	q4::inwork; 9130,12433 9141,12320
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => undef,
-         'text' => 'Die Wilhelm-Kabus-Str. ist noch nicht komplett fertig gestellt. Unter Umständen ist die Durchfahrt nicht möglich!',
-         'from' => undef,
-         'id' => 2125,
-         'data' => '	2::inwork 7716,8048 7793,8043 7834,8085 7859,8252 7893,8327 7942,8380 8078,8772
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,

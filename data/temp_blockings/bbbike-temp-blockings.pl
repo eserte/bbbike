@@ -18150,8 +18150,8 @@ EOF
 userdel	q4::inwork; 12575,18275 12606,18215 12693,18081 12736,17998
 EOF
      },
-     { from  => undef, # 
-       until => undef, # XXX
+     { from  => 1284532129, # undef
+       until => 1284532135, # XXX undef
        text  => 'Mariannenstr. zwischen Skalitzer Str. und Heinrichplatz: Fahrbahn gesperrt',
        type  => 'handicap',
        data  => <<EOF,
@@ -18175,8 +18175,8 @@ EOF
 userdel	q4::inwork -13387,2987 -13581,3075 -13840,2956 -14382,3066
 EOF
      },
-     { from  => undef, #
-       until => undef, #
+     { from  => 1284532162, # undef
+       until => 1284532308, # undef
        text  => 'Die Wilhelm-Kabus-Str. ist noch nicht komplett fertig gestellt. Unter Umständen ist die Durchfahrt nicht möglich!',
        type  => 'handicap',
        data  => <<EOF,
