@@ -6005,6 +6005,9 @@ sub define_item_attribs {
 	 'B'  => 10,
 	 'BAB'=> 10,
 	 'W'  => 12);
+    %category_point_size =
+	('?' => 10,
+	);
     %outline_color =
 	('s' => 'grey70',
 	 'l' => 'grey70',
@@ -6748,9 +6751,10 @@ sub generate_plot_functions {
 			}
 
 			# dicken Punkt zeichnen
+			my $width = $category_point_size{$cat_hin} || 5; # XXX skalieren
 			$item = $c->createLine(@coordlist, @coordlist,
 				       -fill => $this_color_hin,
-				       -width => 5, # XXX skalieren
+				       -width => $width,
 				       -capstyle => $capstyle_round,
 				       -tags => [$abk, $strname,
 						 $abk."-".$cat_hin, $abk."-".$i,

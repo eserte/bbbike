@@ -104,7 +104,7 @@ use vars qw(
      %layer_name %layer_icon
      %layer_category_dash %category_dash
      %layer_category_capstyle %category_capstyle
-     %layer_category_size %category_size %outline_color
+     %layer_category_size %category_size %category_point_size %outline_color
      %layer_category_color %category_color
      %layer_category_stipple %layer_stipple %category_stipple
      %str_color %p_color %p_width
