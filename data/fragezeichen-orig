@@ -321,13 +321,8 @@ Alt-Blankenburg: Bau von Radwegen	?::inwork; 13592,20785 13576,20849 13915,20944
 B96a: Neubau der Radwege (gemeinsam mit Gehweg); wahrscheinlich wird der Radstreifen dann aufgehoben (bis 2010-01-01)	?::inwork 9228,23643 9146,23843 8984,24078 8891,24330 8826,24501 8682,24883 8665,24941 8661,24952 8571,25180 8548,25239 8493,25378
 #: by: (URL existiert nicht mehr) http://www.berlin.de/ba-lichtenberg/presse/archiv/20080327.1225.97044.html
 Ahrensfelder Chaussee: Radstreifen in Bau, bis 2008-10	? 20160,18301 20460,18420 20582,18468 20624,18485 20746,18534 20915,18601 21165,18715 21278,18786 21332,18819
-#: by: http://www.berliner-stadtplan.com/topic/bln/str/x_wgs/22.04/y_wgs/28.92/from/form.html
-#: by: http://www.morgenpost.de/content/2006/09/20/bezirke/855150.html
-#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20060915.1800.47562.html
-#: by: http://www.cdu-fraktion-tk.de/image/inhalte/file/Amtsblatt_Nr__2010-14.pdf (Name der Straße)
-#: last_checked: 2010-09-08
-#: next_check: 2010-09-15
-Wilhelm-Kabus-Str.: neue Straße wird demnächst freigegeben, die Naumannstr. wird später verkehrsberuhigt; Ampelanlagen an den Kreuzungen Naumannstr. und Kolonnenstr. werden entstehen	?::inwork 7716,8048 7793,8043 7834,8085 7859,8252 7893,8327 7942,8380 8078,8772
+# XXX del ---: by: http://www.berliner-stadtplan.com/topic/bln/str/x_wgs/22.04/y_wgs/28.92/from/form.html --- #: by: http://www.morgenpost.de/content/2006/09/20/bezirke/855150.html --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20060915.1800.47562.html --- #: by: http://www.cdu-fraktion-tk.de/image/inhalte/file/Amtsblatt_Nr__2010-14.pdf (Name der Straße) --- #: last_checked: 2010-09-08 --- #: next_check: 2010-09-15 --- Wilhelm-Kabus-Str.: neue Straße wird demnächst freigegeben, die Naumannstr. wird später verkehrsberuhigt; Ampelanlagen an den Kreuzungen Naumannstr. und Kolonnenstr. werden entstehen	?::inwork 7716,8048 7793,8043 7834,8085 7859,8252 7893,8327 7942,8380 8078,8772
+Wilhelm-Kabus-Str./Naumannstr.: Ampelanlange in Bau	?::inwork 7716,8048
 #: next_check: 2011-12-31
 Verbindung zwischen Leuthener Platz und General-Pape-Str. (evtl. mit Verlängerung) inkl. Brücke über die Bahnstrecke für Fußgänger und Radfahrer (4m breit), Realisierung bis 2011-12-31	?::projected 7716,8356 7837,8354 7893,8327 8088,8283 8264,8289
 #: by: (URL existiert nicht mehr) http://www.berlin.de/ba-steglitz-zehlendorf/presse/archiv/20060109.1050.33932.html
@@ -370,9 +365,8 @@ Fußgängerbrücke über den Nordhafen in Planung	?::projected -2506,16315 -2510,163
 #: by: http://www.berlin.de/ba-neukoelln/presse/archiv/20100907.1300.309668.html
 Schwarzer Weg: existiert dieser Straßenname in der Realität? Evtl. als Alias eintragen?	? 13938,7938 13957,8209 13939,8228
 Neuköllner Tor: überprüfen, und dann nach sehenswuerdigkeit-orig, next to Neukölln Arcaden	? 13131,7066 13141,7009 13266,7033 13257,7094
-#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1009/nachricht4030.html
-Situation auf der Lohmühleninsel: Schwellen, Beleuchtung?	? 13535,10184 13506,10146 13371,9974 13333,9929
-Rampe zur Lohmühleninsel: nicht mehr so steil?	? 13221,10005 13237,9995 13267,10036
+# XXX del --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1009/nachricht4030.html --- Situation auf der Lohmühleninsel: Schwellen, Beleuchtung?	? 13535,10184 13535,10184 13371,9974 13333,9929
+# XXX del --- Rampe zur Lohmühleninsel: nicht mehr so steil?	? 13221,10005 13237,9995 13267,10036
 #: XXX_prog
 Bordsteinkante Richtung Westen	? 17183,17385
 #: XXX_indoor

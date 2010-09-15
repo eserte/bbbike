@@ -77,7 +77,8 @@ Segitzdamm: Asphalt	Q0 10987,10360 10975,10334
 Segitzdamm: Kopfsteinpflaster	Q2 10975,10334 10988,10268 10923,10113
 Graefestr.: Kopfsteinpflaster, teils OK, teils uneben	Q1 11274,9492 11311,9576 11346,9655 11411,9810
 Graefestr.: mäßiges Kopfsteinpflaster	Q2 11507,10004 11411,9810
-Paul-Lincke-Ufer: Kopfsteinpflaster	Q2 11512,10105 11735,10022 11946,9913 12119,9823 12286,9739 12439,9660 12591,9584 12712,9523
+Paul-Lincke-Ufer: Kopfsteinpflaster	Q2 11512,10105 11735,10022 11946,9913 12119,9823 12286,9739 12439,9660 12591,9584
+Paul-Lincke-Ufer: Kopfsteinpflaster	Q2 12591,9584 12712,9523
 Maybachufer: Kopfsteinpflaster	Q2 11543,10015 11669,9987 11880,9874 12088,9775
 Maybachufer: Asphalt	Q0 12088,9775 12250,9691 12412,9610 12563,9536
 Maybachufer: Asphalt	Q0 12563,9536 12764,9433 12844,9351 12871,9356
@@ -1188,8 +1189,7 @@ Okerstr.: Kopfsteinpflaster	Q2 11536,7533 11654,7559 11779,7582 11903,7607 12090
 Lasdehner Str.: Kopfsteinpflaster	Q2 13520,12264 13470,12190 13375,12062
 Erich-Steinfurth-Str.: Kopfsteinpflaster	Q2 12596,11696 12453,11790 12366,11808
 Rütlistr.: Kopfsteinpflaster	Q2 12480,9037 12490,9056 12565,9200 12620,9293
-(Am Flutgraben): Verbundsteinpflaster	Q1 13333,9929 13371,9974 13506,10146
-(Am Flutgraben): Kopfsteinpflaster	Q2 13506,10146 13535,10184
+(Am Flutgraben): Gehwegpflasterung	Q1 13333,9929 13371,9974 13535,10184
 Schleusenufer: Kopfsteinpflaster	Q2 13487,10227 13628,10396
 Schmollerplatz: Beton	Q1 13271,9516 13293,9468
 Wildenbruchplatz: schlechtes bis mäßiges Kopfsteinpflaster	Q3 13135,8766 13218,8693 13314,8624
@@ -3661,6 +3661,7 @@ Gotenstr. (Altglienicke): schlechtes Kopfsteinpflaster	Q3 20206,1230 20240,1215 
 Kattenstr.: schlechtes Kopfsteinpflaster	Q3 20240,1215 20178,1106 20138,1042
 Werderstr. (Altglienicke): schlechtes Kopfsteinpflaster	Q3 20064,1777 20028,1673
 (Privatstraße im Gewerbegebiet): Verbundsteinpflaster	Q1 20116,2639 20218,2730
+(Südstern - Blücherstr.): Asphalt	Q0 10670,9286 10647,9337
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
 Riemeisterstr.: mäßiges Kopfsteinpflaster, aber asphaltierte Radwege	Q1 346,4833 294,4916 158,5103 103,5123
 Pücklerstr.: Fahrbahn mit schlechtem Kopfsteinpflaster, Radweg OK	Q1 2688,7067 2576,7026 2465,6984 2403,6962 2266,6911 2155,6873 2130,6865 2054,6840 1961,6820
