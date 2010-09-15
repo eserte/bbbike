@@ -11048,6 +11048,7 @@ sub config_symbol {
 	    $c->itemconfigure('b-S0-fg', -image => get_symbol_scale('b-S0'));
 	} elsif ($abk eq 'r') {
 	    $c->itemconfigure('r-R0-fg', -image => get_symbol_scale('r-R0'));
+	    $c->itemconfigure('r-RP-fg', -image => get_symbol_scale('r-RP'));
 	}
 	$c->itemconfigure($tag_label, -font => "$sans_serif_font_family -12");
 	change_label_visibility($c, undef, undef, ["$abk-label"]);
@@ -15462,7 +15463,7 @@ sub scale_width {
     foreach (qw(lsa-X lsa-B lsa-B0 lsa-F lsa-Zbr rest kn vf-Vf vf-Kz u b), ($XXX_use_old_R_symbol ? () : ('r'))) {
 	$c->itemconfigure($_ . '-fg', -image => get_symbol_scale($_, $scale));
     }
-    foreach (qw(u-U0 b-S0 r-R0)) { # overwrite the previous settings of u,b,r
+    foreach (qw(u-U0 b-S0 r-R0 r-RP)) { # overwrite the previous settings of u,b,r
 	$c->itemconfigure($_ . '-fg', -image => get_symbol_scale($_, $scale));
     }
     foreach (qw(e comm-tram nl)) {
@@ -15793,6 +15794,14 @@ sub get_symbol_scale {
 	} else {
 	    return (-width => 3, -font => undef);
 	}
+    } elsif ($tag eq 'r-RP') {
+	my $filename;
+	if ($myscale >= 2*$mod) {
+	    $filename = 'eisenbahn_klein';
+	} elsif ($myscale >= 1*$mod) {
+	    $filename = 'eisenbahn_mini';
+	}
+	return load_photo($top, $filename, -persistent => 1);
     } elsif ($tag eq 'r' || $tag eq 'r-R0') {
 	my $filename;
 	if ($myscale > 2*$mod) {
