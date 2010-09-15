@@ -57,6 +57,9 @@ BEGIN {
 
 BEGIN {
     my $nosplash = grep { $_ eq '-nosplash' } @ARGV;
+    # save cmdline arguments; Tk::ProgressSplash would eat
+    # X11-specific options (maybe a bug there?)
+    my @save_ARGV = @ARGV; @ARGV = ();
     if ($] >= 5.005 && !$^C && !$^P && !$nosplash) {
 	# XXX don't know whether this is a Tk400 or an old perl problem
 	eval {
@@ -71,6 +74,7 @@ BEGIN {
 		 240, 90, "BBBike", 1);
 	}; warn $@ if $@;
     }
+    @ARGV = @save_ARGV;
     if ($nosplash) { $use_logo = 0 }
 
     local $^W;
