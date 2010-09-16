@@ -533,11 +533,11 @@ sub show_image_viewer {
 	} elsif ($use_viewer eq 'xzgv') {
 	    my @xzgv_args;
 	    if ($geometry eq 'maxpect') {
-		push @xzgv_args, '--zoom'; # --zoom-reduce-only not working as advertized
+		push @xzgv_args, '--zoom-reduce-only'; # note that --zoom-reduce-only may not work for some versions of xzgv
 	    } elsif ($geometry eq 'half') {
-		push @xzgv_args, '--zoom', '--geometry', '50%x50%';
+		push @xzgv_args, '--zoom-reduce-only', '--geometry', '50%x50%';
 	    } elsif ($geometry eq 'third') {
-		push @xzgv_args, '--zoom', '--geometry', '33%x33%';
+		push @xzgv_args, '--zoom-reduce-only', '--geometry', '33%x33%';
 	    } # XXX need impl. for image-half and image-third
 	    viewer_xzgv(@xzgv_args, $abs_file);
 	} elsif ($use_viewer eq '_wwwbrowser') {
@@ -604,7 +604,7 @@ sub orig_viewer {
     if ($^O eq 'MSWin32') {
 	viewer_browser(@_);
     } elsif (is_in_path("xzgv")) {
-	viewer_xzgv("--zoom", @_);
+	viewer_xzgv("--zoom-reduce-only", @_);
     } else {
 	viewer_display(imagemagick_maxpect_args(), @_);
     }
