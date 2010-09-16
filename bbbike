@@ -4577,7 +4577,8 @@ foreach (keys %init_str_draw) {
     if ($@ && !$no_original_datadir) {
 	die $@;
     }
-    $splash_screen->Update((($_update_i++)/$_update_steps)*(UPDATE_FRAC_AFTER_PLOTTING - UPDATE_FRAC_BEFORE_PLOTTING)+UPDATE_FRAC_BEFORE_PLOTTING);
+    $splash_screen->Update((($_update_i++)/$_update_steps)*(UPDATE_FRAC_AFTER_PLOTTING - UPDATE_FRAC_BEFORE_PLOTTING)+UPDATE_FRAC_BEFORE_PLOTTING)
+	if $splash_screen;
 }
 foreach (keys %init_p_draw) {
     if ($_ eq 'pp' && defined $set_mode) {
@@ -4591,7 +4592,8 @@ foreach (keys %init_p_draw) {
     if ($@ && !$no_original_datadir) {
 	die $@;
     }
-    $splash_screen->Update((($_update_i++)/$_update_steps)*(UPDATE_FRAC_AFTER_PLOTTING - UPDATE_FRAC_BEFORE_PLOTTING)+UPDATE_FRAC_BEFORE_PLOTTING);
+    $splash_screen->Update((($_update_i++)/$_update_steps)*(UPDATE_FRAC_AFTER_PLOTTING - UPDATE_FRAC_BEFORE_PLOTTING)+UPDATE_FRAC_BEFORE_PLOTTING)
+	if $splash_screen;
 }
 # Höhen einlesen
 read_hoehe()  if $show_grade || $steigung_optimierung || $use_hoehe;
