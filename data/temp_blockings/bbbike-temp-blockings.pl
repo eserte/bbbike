@@ -17112,8 +17112,8 @@ userdel	2::inwork -24240,6075 -24731,6194
 EOF
      },
      { from  => 1231063200, # 2009-01-04 11:00
-       until => Time::Local::timelocal(reverse(2010-1900,9-1,13,15,0,0)), # 1283259600, # 2010-08-31 15:00
-       text  => 'Blankenburger Str. (Pankow): Baustelle, Fahrtrichtung gesperrt Richtung Dietzgenstr. zwischen Siegfriedstr. und Dietzgenstr. sowie Einbahnstraßenregelung in der Siegfriedstr., 05.01.2009 11:00 Uhr bis 13.09.2010 ',
+       until => Time::Local::timelocal(reverse(2010-1900,10-1,15,15,0,0)), # 1283259600, # 2010-08-31 15:00
+       text  => 'Blankenburger Str. (Pankow): Baustelle, Fahrtrichtung gesperrt Richtung Dietzgenstr. zwischen Siegfriedstr. und Dietzgenstr. sowie Einbahnstraßenregelung in der Siegfriedstr., 05.01.2009 11:00 Uhr bis 15.10.2010 ',
        type  => 'handicap',
        source_id => 'IM_011081',
        data  => <<EOF,
@@ -18235,6 +18235,24 @@ EOF
        source_id => 'IM_016338',
        data  => <<EOF,
 userdel	q4::inwork 26880,11479 27272,11970
+EOF
+     },
+     { from  => 1284361200, # 2010-09-13 09:00
+       until => 1285945200, # 2010-10-01 17:00
+       text  => 'Köpenicker Str. (Biesdorf): Baustelle, für beide Richtungen nur ein Fahrstreifen abwechselnd frei, zwischen Tiergartenstr. und Köpenicker Allee, 14.09.2010 09:00 Uhr bis 01.10.2010 17:00 Uhr ',
+       type  => 'handicap',
+       source_id => 'IM_016343',
+       data  => <<EOF,
+userdel	q3::inwork 21027,7432 21032,7590 21037,7751
+EOF
+     },
+     { from  => 1284666529, # 2010-09-16 21:48
+       until => 1293750000, # 2010-12-31 00:00
+       text  => 'Schenkenberg: L26: Grundhafter Straßenbau mit Ausbau des Knotenpunktes mit der K 7344 Prenzlau - A 20, 13.09.2010 bis 30.12.2010 ',
+       type  => 'gesperrt',
+       source_id => 'LS/O-SG33-E/09/214-7',
+       data  => <<EOF,
+userdel	2::inwork 46581,105900 47587,106693
 EOF
      },
     );
