@@ -10618,6 +10618,9 @@ sub plot_sperre {
 			    $inx = $#{$hop}-1;
 			} elsif ($cat eq StrassenNetz::BLOCKED_COMPLETE) {
 			    $inx = int($#{$hop}/2);
+			} else {
+			    # may happen for "q4" entries from temp-blockings
+			    $inx = 0; # dummy, to avoid warnings
 			}
 			$plot_one->($hop, $inx);
 		    }
