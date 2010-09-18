@@ -5592,6 +5592,7 @@ sub load_photos {
     $inwork_photo        = load_photo($top, 'inwork');
     $achtung_photo       = load_photo($top, 'achtung');
     $cal_photo           = load_photo($top, 'cal');
+    $night_photo	 = load_photo($top, 'night');
     $ferry_photo         = load_photo($top, 'ferry');
     $ferry_klein_photo   = load_photo($top, 'ferry_klein');
     $zugbruecke_photo    = load_photo($top, 'zugbruecke');
@@ -10583,16 +10584,19 @@ sub plot_sperre {
 
 		    my @anchors = qw(nw sw ne se);
 
-		    if ($addinfo{'inwork'} && $inwork_photo) {
-			$c->createImage($xm,$ym,
-					-anchor => shift(@anchors),
-					-image => $inwork_photo,
-					-tags => $tags);
-		    } elsif ($addinfo{'temp'} && $cal_photo) {
-			$c->createImage($xm,$ym,
-					-anchor => shift(@anchors),
-					-image => $cal_photo,
-					-tags => $tags);
+		    # Add an additional icon
+		    for my $check (['inwork', $inwork_photo],
+				   ['temp',   $cal_photo],
+				   ['night',  $night_photo],
+				  ) {
+			my($addinfo, $photo) = @$check;
+			if ($addinfo{$addinfo} && $photo) {
+			    $c->createImage($xm,$ym,
+					    -anchor => shift(@anchors),
+					    -image => $photo,
+					    -tags => $tags);
+			    last;
+			}
 		    }
 
 		    if ($is_car && $car_photo) {
@@ -15877,14 +15881,11 @@ sub get_symbol_scale {
 	}
 	return $photo;
     } elsif ($tag eq 'nl') {
-	my $filename;
-	if ($myscale > 8*$mod) {
-	    $filename = 'night'
-	} elsif ($myscale >= 2*$mod) {
-	    $filename = 'night_klein';
-	}
 	my $photo;
-	if ($filename) {
+	if ($myscale > 8*$mod) {
+	    $photo = $night_photo;
+	} elsif ($myscale >= 2*$mod) {
+	    my $filename = 'night_klein';
 	    $photo = load_photo($top, $filename, -persistent => 1);
 	}
 	return $photo;

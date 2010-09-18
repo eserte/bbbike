@@ -58,7 +58,7 @@ use vars qw(
      $kneipen_photo $kneipen_klein_photo
      $essen_photo $essen_klein_photo $kino_klein_photo
      $search_photo $search_pref_photo $steigung_photo $gefaelle_photo
-     $inwork_photo $achtung_photo $cal_photo $star_photo $newlayer_photo
+     $inwork_photo $achtung_photo $cal_photo $night_photo $star_photo $newlayer_photo
      $menuarrow_photo $ferry_photo $ferry_klein_photo $blocked_photo
      $notrailer_photo
      $google_photo $bbbike_google_photo $wikipedia_photo
