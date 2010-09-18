@@ -17582,7 +17582,25 @@ EOF
      },
      { from  => undef, #
        until => undef, #
-       text  => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich. Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+       text  => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich ' .
+                do {
+		    # by: http://www.gruen-berlin.de/parks-gaerten/tempelhofer-park/benutzerinfo-park/oeffnungszeiten/
+		    my $mon = (localtime)[4]+1;
+		    my $until = { 1 => '(im Januar von 7.30 bis 17.00 Uhr)',
+				  2 => '(im Februar von 7.00 bis 18.00 Uhr)',
+				  3 => '(im März bis 19.00 Uhr)',
+				  4 => '(im April bis 20.30 Uhr)',
+				  5 => '(im Mai bis 21.30 Uhr)',
+				  6 => '(im Juni bis 22.30 Uhr)',
+				  7 => '(im Juli bis 22.30 Uhr)',
+				  8 => '(im August bis 21.30 Uhr)',
+				  9 => '(im September bis 20.30 Uhr)',
+				  10 => '(im Oktober bis 19.00 Uhr)',
+				  11 => '(im November von 7.00 bis 18.00 Uhr)',
+				  12 => '(im Dezember von 7.30 bis 17.00 Uhr)',
+				}->{$mon};
+		    $until || '';
+		} . '. Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
        permanent => 1,
        data  => <<EOF,
 (Eingang Columbiadamm - Rundkurs auf dem Flughafen Tempelhof)	2::temp 10691,8532 10640,8366 10598,8270 10575,8218
@@ -18253,6 +18271,15 @@ EOF
        source_id => 'LS/O-SG33-E/09/214-7',
        data  => <<EOF,
 userdel	2::inwork 46581,105900 47587,106693
+EOF
+     },
+     { from  => 1284745737, # 2010-09-17 19:48
+       until => 1356994800, # 2013-01-01 00:00
+       text  => 'Braunschweiger Str./Karl-Marx-Str.: Abbiegen nicht möglich (bzw. nur auf dem Gehweg) bis 31.12.2012 16:00 Uhr',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	3 13150,7254 13047,7234 13058,7165
+userdel	3 13150,7254 13047,7234 13034,7319
 EOF
      },
     );

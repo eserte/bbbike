@@ -1517,7 +1517,7 @@ userdel	q4::inwork; 10614,19907 10742,19632
        {
          'until' => undef,
          'permanent' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich. Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im September bis 20.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'from' => undef,
          'id' => 2068,
          'data' => '(Eingang Columbiadamm - Rundkurs auf dem Flughafen Tempelhof)	2::temp 10691,8532 10640,8366 10598,8270 10575,8218
@@ -1858,6 +1858,16 @@ userdel	q4::inwork; 10614,19907 10742,19632
          'from' => 1284666529,
          'id' => 2133,
          'data' => 'userdel	2::inwork 46581,105900 47587,106693
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1356994800,
+         'text' => 'Braunschweiger Str./Karl-Marx-Str.: Abbiegen nicht möglich (bzw. nur auf dem Gehweg) bis 31.12.2012 16:00 Uhr',
+         'from' => 1284745737,
+         'id' => 2134,
+         'data' => 'userdel	3 13150,7254 13047,7234 13058,7165
+userdel	3 13150,7254 13047,7234 13034,7319
 ',
          'type' => 'gesperrt'
        }
