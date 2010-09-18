@@ -583,7 +583,7 @@ userdel	2::temp -8087,-1453 -8151,-1470 -8306,-1454
          'text' => 'Rathausstr. (Mitte) Richtung Alexanderplatz zwischen Breitestr. und Poststr. Baustelle, Straße vollständig gesperrt (bis März 2011)',
          'from' => 1242770815,
          'id' => 1627,
-         'data' => 'userdel	q4::inwork 10267,12305 10362,12351
+         'data' => 'userdel	q4::inwork 10281,12310 10362,12351
 userdel	q4::inwork 10422,12395 10476,12432
 ',
          'type' => 'handicap'
@@ -937,7 +937,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
          'text' => 'Karl-August-Platz, Weimarer Str.: Mi 08.00-13.00 und Sa 08.00-14.00 Wochenmarkt, Behinderungen möglich',
          'from' => undef,
          'id' => 1819,
-         'data' => '	q4::temp 4092,11338 4077,11226
+         'data' => '	q4::temp 4101,11347 4101,11233
 ',
          'type' => 'gesperrt'
        },
@@ -1798,8 +1798,8 @@ userdel	q4::inwork; 10614,19907 10742,19632
        },
        undef,
        {
-         'until' => 1285883999,
-         'text' => 'Die Charlottenstraße zwischen Hermann-Elflein-Straße und Schopenhauerstraße ist für den Bau von Hausanschlüssen halbseitig gesperrt. Im Baubereich ist eine Einbahnstraße in Richtung Wilhelmgalerie eingerichtet. Die Arbeiten dauern bis voraus. 30.09.2010. ',
+         'until' => 1291157999,
+         'text' => 'Die Charlottenstraße zwischen Hermann-Elflein-Straße und Schopenhauerstraße ist für den Bau von Hausanschlüssen halbseitig gesperrt. Im Baubereich ist eine Einbahnstraße in Richtung Wilhelmgalerie eingerichtet. Die Arbeiten dauern bis voraus. Ende November 2010. ',
          'from' => 1283623066,
          'id' => 2123,
          'data' => 'userdel	q4::inwork; -13392,-1196 -13516,-1225

@@ -3,6 +3,8 @@
 #: note: XXX_* categorization done 2008-01-26
 #: note: "Parkweg" sollte hier vielleicht nicht verwendet werden, sondern nur in qualitaet_s-orig? Oder wenigstens die gleichen Wege nicht in beiden Dateien so benannt werden? Oder wenigstens beim Ausgeben der Routenliste doppelte ausfiltern?
 #:
+Niederlagstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9972,12184 9939,12296 9951,12318
+Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9890,12161 9913,12068
 Schloﬂplatz: Behinderungen durch Bauarbeiten mˆglich	q3::inwork 10170,12261 10063,12438
 Varian-Fry-Str.: Baustelle, Fahrbahn gesperrt	q4::inwork 8389,11378 8374,11479
 General-Pape-Str.: Baustelle, Fahrbahn Richtung Norden gesperrt	q4::inwork; 7959,7609 7921,7728 7950,7840
@@ -35,10 +37,10 @@ Gorkistr.: reger Fuﬂg‰ngerverkehr (Fuﬂg‰ngerzone)	q3 2049,20292 2116,20314 2295,
 Alt-Tegel: reger Fuﬂg‰ngerverkehr (Fuﬂg‰ngerzone)	q4 1907,20265 2029,20331
 Breitscheidplatz: starker Fuﬂg‰ngerverkehr, oft Veranstaltungen	q4 5656,10876 5652,11004
 Breitscheidplatz: starker Fuﬂg‰ngerverkehr, oft Veranstaltungen	q4 5782,10884 5829,10964
-Wilmersdorfer Str.: starker Fuﬂg‰ngerverkehr (Fuﬂg‰ngerzone), nachts und sonntags Radfahren erlaubt	q4 3723,11457 3751,11334 3770,11231 3795,11098 3827,10980
+Wilmersdorfer Str.: starker Fuﬂg‰ngerverkehr (Fuﬂg‰ngerzone), nachts und sonntags Radfahren erlaubt	q4 3723,11457 3749,11344 3770,11231 3795,11098 3827,10980
 (An der M¸ggelspree): Fuﬂg‰nger	q2 23441,4956 23461,5054 23620,5096 23776,5040 23982,5030 24233,4878 24398,4842 24834,4541 25030,4421 25131,4400 25200,4420 25315,4474 25403,4480 25479,4540 25565,4549
 Am M¸ggelsee: Fuﬂg‰nger	q2 25474,2848 25667,2787 25857,2654 26006,2615 26151,2624 26339,2667 26457,2660 26627,2610 26868,2580 27135,2500 27173,2444 27267,2414 27372,2434 27517,2523 27565,2569 27743,2842 27822,2910 27945,3006 28292,3150 28496,3253
-Pestalozzistr.: Fuﬂg‰ngerzone	q3 3721,11230 3770,11231 3822,11224
+Pestalozzistr.: Fuﬂg‰ngerzone	q3 3721,11230 3770,11231 3822,11231
 (Zufahrt am NKZ): Bordsteine, Fuﬂg‰nger/Lieferverkehr	q3 11291,10438 11311,10505 11343,10528
 Alexanderplatz: Fuﬂg‰ngerverkehr	q2 11139,13008 10970,12822 10923,12779
 Dircksenstr.: langsame Straﬂenbahnen, Fuﬂg‰nger	q2 10970,12822 10849,12944
@@ -251,7 +253,7 @@ Fritz-Schiff-Weg: Fuﬂg‰nger	q1 13465,12502 13484,12436 13472,12337
 (Baikalstr. - Rummelsburger Str.): Fuﬂg‰nger	q1 17281,10598 17249,10666
 (Baikalstr. - Rummelsburger Str.): Fuﬂg‰nger	q1 17249,10702 17228,10860
 Verl. P¸cklerstr.: Fuﬂg‰nger, Hundeauslaufgebiet	q1 1558,6729 1364,6691 1170,6654 967,6620 905,6631 880,6645 832,6607 778,6603 698,6567 546,6583 369,6594 306,6582 218,6571
-Weimarer Str.: Fuﬂg‰nger	q1 4092,11338 4077,11226
+Weimarer Str.: Fuﬂg‰nger	q1 4101,11347 4101,11233
 Norwegerstr. - Behmstr.: Rampe	q2 10022,16237 10026,16165 10055,16104 10045,16157
 Marzahner Promenade - M¸hlenbecker Weg: Fuﬂg‰nger	q1 20222,15519 20181,15658 20150,15678
 Rosemeyerweg: Fuﬂg‰nger	q1 -3758,2678 -3956,2787 -4001,2858
@@ -409,7 +411,7 @@ Mauerweg: Fuﬂg‰nger	q1 4406,-910 4038,-362 4046,-299 4034,-255 3982,-181 3941,-1
 Bayernring: enge Straﬂe	q1 8371,8543 8455,8567 8616,8605
 Bulgarische Str.: kein Radweg, Gehweg benutzen	q2; 15591,8848 15383,8662 15166,8489
 Hedwigskirchgasse: Bordsteine, Fuﬂg‰nger	q2 9743,12239 9756,12139
-Zufahrt Franz-Mehring-Platz: Bordstein	q1 12739,12124 12699,12041
+Zufahrt Franz-Mehring-Platz: Bordstein	q1 12740,12128 12699,12041
 Am Flutgraben: Fuﬂg‰nger, sechs Bodenschwellen	q3 13535,10184 13371,9974
 Am Flutgraben: Fuﬂg‰nger	q1 13371,9974 13333,9929
 (Uferweg zum Ernst-Heilmann-Steg): sanfte Rampe, Fuﬂg‰nger	q2 13237,9995 13267,10036

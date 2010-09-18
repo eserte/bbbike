@@ -227,7 +227,6 @@ Knaackstr.	1 11056,15009 11030,14979 11101,14768
 Hagenplatz	1 1149,8538 1094,8398
 Branitzer Platz	1 1346,12053 1311,12084 1311,12122 1334,12152 1374,12164 1407,12134 1414,12091 1386,12058 1346,12053
 Reutlinger Str.	1 7676,4216 7601,4485
-Sybelstr.	1 4006,10585 4256,10583
 Sybelstr.	1 4006,10585 3978,10582 3883,10577
 Sybel-/Waitzstr.	1 3883,10577 3800,10580 3744,10668 3734,10756
 #: by: Erik Boß:
@@ -308,7 +307,7 @@ Am Bäkequell	1 4593,5235 4656,5101
 Sella-Hasse-Str.	1 20948,16612 20771,16690 20843,16829
 Buggenhagenstr.	1 14425,13780 14370,13615
 Schollenhof	1 3238,21448 3155,21572 3236,21601 3280,21477
-Siegfried-Aufhäuser-Platz	1 13939,7504 13928,7529 13942,7556 13967,7556
+Siegfried-Aufhäuser-Platz	1 13952,7497 13941,7522 13953,7548 13980,7548
 Saltykowstr.	1 12726,7887 12865,7923
 # XXX del: XXX_indoor: evtl. nach temp-blockings verschieben (Drorystr. - Braunschweiger Str., Spielplatz): nachts werden die Tore geschlossen	2 13520,7485 13601,7366
 Barbarastr.	1 6451,3034 6371,2955 6320,2909 6357,2863 6374,2844
@@ -997,7 +996,7 @@ Blumberger Damm: Mittelstreifen	3nocross 21378,14490 21408,14591 21521,14943
 #: note: Luftbild
 Blumberger Damm: Mittelstreifen	3nocross 21694,15802 21674,15675 21669,15637 21647,15496
 #: note: Luftbild
-Blumberger Damm: Straßenbahntrasse	3nocross 21232,15465 21187,15350 21163,15289
+Allee der Kosmonauten: Straßenbahntrasse	3nocross 21232,15465 21187,15350 21163,15289
 Schönholzer Str.: Straßenbahn auf der Fahrbahn	3nocross 10089,18180 10054,18210 9909,18333
 #: by: stefan: (sw-...)
 Müggelheimer Str.: Straßenbahntrasse	3nocross 22674,4309 22812,4236 22965,4124
@@ -1079,7 +1078,9 @@ Lewishamstr.: abgesperrter Mittelstreifen	3nocross 3592,10869 3631,10784 3644,10
 Lewishamstr: Straßentunnelrampe	3nocross 3644,10759 3739,10576 3771,10511 3813,10435
 Klingelhöferstr: unbequem passierbarer Mittelstreifen	3nocross 6825,11486 6851,11346 6880,11110
 Bornholmer Str.: Straßenbahn auf Mittelstreifen	3nocross 10197,16528 9998,16547 9883,16557 9816,16565
-Bornholmer Str.: Straßenbahn auf Mittelstreifen	3nocross 9514,16603 9617,16590 9816,16565
+Bornholmer Str.: Straßenbahn auf Mittelstreifen	3nocross 9514,16603 9617,16590 9781,16569 9816,16565
+Osloer Str.: Straßenbahntrasse	3nocross 7687,16770 7763,16779 8144,16750
+Seestr.: Straßenbahntrasse	3nocross 7403,16575 7456,16620 7606,16746
 Seestr.: Straßenbahntrasse	3nocross 7231,16418 7051,16264 6965,16190
 Föhrer Str.: Mittelstreifen	3nocross 6528,15000 6561,15041 6630,15100
 Frankfurter Allee: unbequem passierbarer Mittelstreifen	3nocross 14208,12235 14291,12220 14381,12205
@@ -1097,9 +1098,9 @@ Prenzlauer Allee: Mittelstreifen mit Straßenbahn, aber Ampel in der Nähe	3nocros
 Prenzlauer Allee: Mittelstreifen mit Straßenbahn, hier aber Fußgängerfurt vorhanden	3nocross 11712,14868 11681,14759 11662,14695
 #: XXX_prog: eine Überquerungsmöglichkeit existiert 60m weiter südlich
 Prenzlauer Allee: Mittelstreifen mit Straßenbahn	3nocross 12071,16130 12030,15968 11997,15834
-#: note: Luftbild:
 Prenzlauer Allee: Straßenbahntrasse	3nocross 11941,15586 11967,15700 11997,15834
 Danziger Str.: Mittelstreifen mit Straßenbahn	3nocross 11712,14868 11610,14886 11545,14897
+Danziger Str.: Mittelstreifen mit Straßenbahn	3nocross 12317,14535 12128,14640 12040,14688
 Torstr.: Mittelstreifen mit Straßenbahn	3nocross 10746,13673 10640,13700 10569,13719 10463,13747
 Yorckstr.: Linksabbiegen verboten (und unbequem)	3nocross 8192,9619 8097,9650 7938,9694
 An den Treptowers: unbequemes Überqueren, stark befahrene Straße	3nocross 14501,10169 14405,10027 14289,9870
@@ -1156,9 +1157,9 @@ Hauptstr.: Mittelstreifen	3nocross 6687,8385 6765,8480 6912,8617 6990,8685
 Am Tierpark: Straßenbahntrasse	3nocross 18631,10167 18585,10278 18554,10354 18446,10620
 Mühlenstr.: Mittelstreifen ohne Überquerungshilfe	3nocross 12497,11459 12539,11416 12576,11375 12641,11288
 Mühlenstr.: Mittelstreifen ohne Überquerungshilfe	3nocross 12990,11006 13080,10956 13144,10921
-Klingelhöferstr.: Mittelstreifen	3 6692,11365 6851,11346 6880,11110
-Klingelhöferstr.: Mittelstreifen	3 7103,11247 6851,11346 6880,11110
-Klingelhöferstr.: Mittelstreifen	3 6880,11110 6851,11346 6692,11365
+#XXX del --- Klingelhöferstr.: Mittelstreifen	3 6692,11365 6851,11346 6880,11110
+#XXX del --- Klingelhöferstr.: Mittelstreifen	3 7103,11247 6851,11346 6880,11110
+#XXX del --- Klingelhöferstr.: Mittelstreifen	3 6880,11110 6851,11346 6692,11365
 Raoul-Wallenberg-Str.: Straßenbahntrasse	3nocross 21158,15885 21220,15741 21235,15641
 Adlergestell: Straßenbahntrasse	3nocross 26871,-2500 26698,-2322 26286,-1901
 Blumberger Damm: Mittelstreifen	3nocross 21599,15213 21626,15357 21647,15496
@@ -1196,6 +1197,7 @@ Ernst-Ruska-Ufer: Lärmschutzwand	3nocross 18496,2471 18656,2465 18929,2454
 Indira-Gandhi-Str.: Straßenbahntrasse	3nocross 14843,15007 14828,15050 14650,15750
 Hansastr.: Straßenbahntrasse	3nocross 16460,17214 16578,17285 16837,17440
 Groß-Berliner Damm: Mittelstreifen	3nocross 18928,3701 18882,3750 18854,3781 18235,4449
+Stromstr.: Mittelstreifen	3nocross 6228,13324 6235,13517 6230,13596
 #
 ####################################################################
 #
@@ -1634,6 +1636,10 @@ Tor	BNP:3 6431,3417
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: last_checked: 2010-09-18
+#: next_check: 2010-11-01
+Großer Weg: Bauarbeiten, Weg wird neu gemacht	2:inwork 6809,11570 6980,11583
+# 
 #: last_checked: 2010-09-11
 Wagner-Régeny-Str.: Straße ist fertig, aber noch gesperrt	2:inwork 19487,3593 19377,3721
 # 
@@ -1801,7 +1807,7 @@ Kniprodestr.: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3nocros
 (Treppe zur Putlitzbrücke): tragen, ca. 35 Stufen	0:40 6253,14184
 #: by: rjoop
 (Treppe zur Putlitzbrücke): tragen, 35 Stufen	0:40 6209,14245
-An der Putlitzbrücke: Mittelstreifen schlecht zu überqueren	3nocross 6226,13951 6230,14184 6234,14247 6237,14309
+An der Putlitzbrücke: Mittelstreifen schlecht zu überqueren	3nocross 6226,13951 6228,14077 6230,14184 6234,14247 6237,14309
 Rathenower Str.: schwierig zu querender Mittelstreifen	3nocross 7195,13046 7207,13118 7131,13261
 Eichkatzweg	1 1137,9921 1026,9772 925,9644
 Lärchenweg	1 1046,9989 1093,9952 1137,9921 1157,9907 1238,9869
@@ -1834,7 +1840,7 @@ Theodor-Heuss-Weg	1s 9197,14562 9128,14461 9081,14363
 #: corrected_by: srt/new_policy (0:40 -> 0:20, matches better the 10 steps)
 tragen / schieben (Treppe 10 Stufen oder wilder Weg)	0:20 9223,14608
 Tor	BNP:5 3326,12730
-Herderstr. (Charlottenburg)	1 4451,11558 4435,11343
+Herderstr. (Charlottenburg)	1 4452,11570 4434,11360
 tragen (Treppe, 14 Stufen)	0:30 7931,12876
 Joachim-Karnatz-Allee	1 7142,12584 7131,12615
 Joachim-Karnatz-Allee	1 7175,12630 7187,12598

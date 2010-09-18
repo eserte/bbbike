@@ -201,7 +201,6 @@ Knaackstr.	1 11056,15009 11030,14979 11101,14768
 Hagenplatz	1 1149,8538 1094,8398
 Branitzer Platz	1 1346,12053 1311,12084 1311,12122 1334,12152 1374,12164 1407,12134 1414,12091 1386,12058 1346,12053
 Reutlinger Str.	1 7676,4216 7601,4485
-Sybelstr.	1 4006,10585 4256,10583
 Sybelstr.	1 4006,10585 3978,10582 3883,10577
 Sybel-/Waitzstr.	1 3883,10577 3800,10580 3744,10668 3734,10756
 Aßmannstr.	1 25012,5729 25048,5727 25039,5304 25039,5295
@@ -280,7 +279,7 @@ Am Bäkequell	1 4593,5235 4656,5101
 Sella-Hasse-Str.	1 20948,16612 20771,16690 20843,16829
 Buggenhagenstr.	1 14425,13780 14370,13615
 Schollenhof	1 3238,21448 3155,21572 3236,21601 3280,21477
-Siegfried-Aufhäuser-Platz	1 13939,7504 13928,7529 13942,7556 13967,7556
+Siegfried-Aufhäuser-Platz	1 13952,7497 13941,7522 13953,7548 13980,7548
 Saltykowstr.	1 12726,7887 12865,7923
 Barbarastr.	1 6451,3034 6371,2955 6320,2909 6357,2863 6374,2844
 Leipziger Platz	1 8572,11506 8580,11468 8624,11436 8703,11441 8735,11474 8733,11524 8729,11558 8682,11590 8601,11581 8569,11543 8572,11506
@@ -1215,9 +1214,15 @@ Treppe zum Kolonnenweg -> Treppe zum Kolonnenweg: Straßenbahn auf Mittelstreifen
 Treppe zum Kolonnenweg -> Treppe zum Kolonnenweg: Straßenbahn auf Mittelstreifen	3::igndisp 9982,16527 9998,16547 9983,16561
 Treppe zum Kolonnenweg -> Bornholmer Str.: Straßenbahn auf Mittelstreifen	3::igndisp 9982,16527 9998,16547 9883,16557
 Bornholmer Str. -> Treppe zum Kolonnenweg: Straßenbahn auf Mittelstreifen	3::igndisp 9883,16557 9998,16547 9983,16561
-Straßenbahn auf Mittelstreifen	3nocross::ignrte 9514,16603 9617,16590 9816,16565
-Bornholmer Str. -> Sonderburger Str.: Straßenbahn auf Mittelstreifen	3::igndisp 9816,16565 9617,16590 9603,16468
+Straßenbahn auf Mittelstreifen	3nocross::ignrte 9514,16603 9617,16590 9781,16569 9816,16565
 Sonderburger Str. -> Bornholmer Str.: Straßenbahn auf Mittelstreifen	3::igndisp 9603,16468 9617,16590 9514,16603
+Bornholmer Str. -> Sonderburger Str.: Straßenbahn auf Mittelstreifen	3::igndisp 9781,16569 9617,16590 9603,16468
+Straßenbahntrasse	3nocross::ignrte 7687,16770 7763,16779 8144,16750
+Osloer Str. -> Louise-Schroeder-Pl.: Straßenbahntrasse	3::igndisp 7687,16770 7763,16779 7745,16889
+Louise-Schroeder-Pl. -> Osloer Str.: Straßenbahntrasse	3::igndisp 7745,16889 7763,16779 8144,16750
+Straßenbahntrasse	3nocross::ignrte 7403,16575 7456,16620 7606,16746
+Seestr. -> Iranische Str.: Straßenbahntrasse	3::igndisp 7606,16746 7456,16620 7707,16543
+Iranische Str. -> Seestr.: Straßenbahntrasse	3::igndisp 7707,16543 7456,16620 7403,16575
 Straßenbahntrasse	3nocross::ignrte 7231,16418 7051,16264 6965,16190
 Seestr. -> Malplaquetstr.: Straßenbahntrasse	3::igndisp 7231,16418 7051,16264 7162,16163
 Malplaquetstr. -> Seestr.: Straßenbahntrasse	3::igndisp 7162,16163 7051,16264 6965,16190
@@ -1279,6 +1284,9 @@ Küselstr. -> Zelterstr.: Straßenbahntrasse	3::igndisp 12058,15621 11967,15700 11
 Mittelstreifen mit Straßenbahn	3nocross::ignrte 11712,14868 11610,14886 11545,14897
 Rykestr. -> Danziger Str.: Mittelstreifen mit Straßenbahn	3::igndisp 11526,14693 11610,14886 11545,14897
 Danziger Str. -> Rykestr.: Mittelstreifen mit Straßenbahn	3::igndisp 11712,14868 11610,14886 11526,14693
+Mittelstreifen mit Straßenbahn	3nocross::ignrte 12317,14535 12128,14640 12040,14688
+Lilli-Henoch-Str. -> Danziger Str.: Mittelstreifen mit Straßenbahn	3::igndisp 12189,14767 12128,14640 12317,14535
+Danziger Str. -> Lilli-Henoch-Str.: Mittelstreifen mit Straßenbahn	3::igndisp 12040,14688 12128,14640 12189,14767
 Mittelstreifen mit Straßenbahn	3nocross::ignrte 10746,13673 10640,13700 10569,13719 10463,13747
 Angermünder Str. -> Torstr.: Mittelstreifen mit Straßenbahn	3::igndisp 10703,13832 10640,13700 10746,13673
 Torstr. -> Angermünder Str.: Mittelstreifen mit Straßenbahn	3::igndisp 10569,13719 10640,13700 10703,13832
@@ -1459,9 +1467,6 @@ Am Postbahnhof -> Mühlenstr.: Mittelstreifen ohne Überquerungshilfe	3::igndisp 1
 Mittelstreifen ohne Überquerungshilfe	3nocross::ignrte 12990,11006 13080,10956 13144,10921
 Hedwig-Wachenheim-Str. -> Mühlenstr.: Mittelstreifen ohne Überquerungshilfe	3::igndisp 13150,11101 13080,10956 13144,10921
 Mühlenstr. -> Hedwig-Wachenheim-Str.: Mittelstreifen ohne Überquerungshilfe	3::igndisp 12990,11006 13080,10956 13150,11101
-Klingelhöferstr.: Mittelstreifen	3 6692,11365 6851,11346 6880,11110
-Klingelhöferstr.: Mittelstreifen	3 7103,11247 6851,11346 6880,11110
-Klingelhöferstr.: Mittelstreifen	3 6880,11110 6851,11346 6692,11365
 Straßenbahntrasse	3nocross::ignrte 21158,15885 21220,15741 21235,15641
 Raoul-Wallenberg-Str. -> Schönagelstr.: Straßenbahntrasse	3::igndisp 21158,15885 21220,15741 21602,15908
 Schönagelstr. -> Raoul-Wallenberg-Str.: Straßenbahntrasse	3::igndisp 21602,15908 21220,15741 21235,15641
@@ -1570,6 +1575,8 @@ Hansastr. -> Neuzeller Weg: Straßenbahntrasse	3::igndisp 16837,17440 16578,17285
 Mittelstreifen	3nocross::ignrte 18928,3701 18882,3750 18854,3781 18235,4449
 Landschaftspark Johannisthal -> Groß-Berliner Damm: Mittelstreifen	3::igndisp 18592,3743 18882,3750 18854,3781
 Landschaftspark Johannisthal -> Groß-Berliner Damm: Mittelstreifen	3::igndisp 18833,3781 18854,3781 18235,4449
+Mittelstreifen	3nocross::ignrte 6228,13324 6235,13517 6230,13596
+Stromstr. -> Bugenhagenstr.: Mittelstreifen	3::igndisp 6228,13324 6235,13517 6104,13522
 tragen (22 Stufen)	0:30:-84 17599,15435
 tragen (22 Stufen)	0:30:-79 17657,15427
 tragen, mehrere Treppen à 3 Stufen	0:30:-191 8002,4903
@@ -1869,6 +1876,7 @@ Schranke, kann auch mit Anhänger umfahren werden	BNP:1:-168 49137,24422
 Drängelgitter	BNP:3:24:trailer=6 3644,8456
 Poller, Abstand 80cm (mit Anhänger über Gehweg umfahren)	BNP:1:1:trailer=10 7816,5682
 Tor	BNP:3:-209 6431,3417
+Großer Weg: Bauarbeiten, Weg wird neu gemacht	2:inwork 6809,11570 6980,11583
 Wagner-Régeny-Str.: Straße ist fertig, aber noch gesperrt	2:inwork 19487,3593 19377,3721
 Rhinstr.: neues Wohngebiet, Weg gesperrt	2:inwork 18015,13846 17300,14133
 Radweg parallel zur Autobahn ist wegen Bauarbeiten am BAB gesperrt	2:inwork 5062,14681 4676,14534 3707,14303 3595,14277
@@ -2041,9 +2049,9 @@ Kniprodestr. -> Volkspark Anton Saefkow: schlecht zu querender Mittelstreifen (B
 Volkspark Anton Saefkow -> Kniprodestr.: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3::igndisp 13266,14541 13301,14516 13367,14588
 (Treppe zur Putlitzbrücke): tragen, ca. 35 Stufen	0:40:90 6253,14184
 (Treppe zur Putlitzbrücke): tragen, 35 Stufen	0:40:-172 6209,14245
-Mittelstreifen schlecht zu überqueren	3nocross::ignrte 6226,13951 6230,14184 6234,14247 6237,14309
+Mittelstreifen schlecht zu überqueren	3nocross::ignrte 6226,13951 6228,14077 6230,14184 6234,14247 6237,14309
 An der Putlitzbrücke -> Treppe zur Putlitzbrücke: Mittelstreifen schlecht zu überqueren	3::igndisp 6234,14247 6230,14184 6253,14184
-Treppe zur Putlitzbrücke -> An der Putlitzbrücke: Mittelstreifen schlecht zu überqueren	3::igndisp 6253,14184 6230,14184 6226,13951
+Treppe zur Putlitzbrücke -> An der Putlitzbrücke: Mittelstreifen schlecht zu überqueren	3::igndisp 6253,14184 6230,14184 6228,14077
 An der Putlitzbrücke -> Treppe zur Putlitzbrücke: Mittelstreifen schlecht zu überqueren	3::igndisp 6230,14184 6234,14247 6209,14245
 Treppe zur Putlitzbrücke -> An der Putlitzbrücke: Mittelstreifen schlecht zu überqueren	3::igndisp 6209,14245 6234,14247 6237,14309
 schwierig zu querender Mittelstreifen	3nocross::ignrte 7195,13046 7207,13118 7131,13261
@@ -2090,7 +2098,7 @@ tragen/schieben (40 Stufen, Rampe)	0:120:-260 -4768,11016
 Theodor-Heuss-Weg	1s 9197,14562 9128,14461 9081,14363
 tragen / schieben (Treppe 10 Stufen oder wilder Weg)	0:20:-150 9223,14608
 Tor	BNP:5:81 3326,12730
-Herderstr. (Charlottenburg)	1 4451,11558 4435,11343
+Herderstr. (Charlottenburg)	1 4452,11570 4434,11360
 tragen (Treppe, 14 Stufen)	0:30:81 7931,12876
 Joachim-Karnatz-Allee	1 7142,12584 7131,12615
 Joachim-Karnatz-Allee	1 7175,12630 7187,12598

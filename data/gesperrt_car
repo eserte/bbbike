@@ -331,16 +331,23 @@ Gropiusstr.	1 8543,16364 8389,16214
 Osloer Str.	3nocross::ignrte 8503,16716 8721,16689 8759,16684 8939,16668
 Osloer Str. -> Pankeweg: Osloer Str.	3::igndisp 8503,16716 8721,16689 8804,16881
 Pankeweg -> Osloer Str.: Osloer Str.	3::igndisp 8804,16881 8721,16689 8759,16684
+Travemünder Str. -> Stockholmer Str.: Osloer Str.	3::igndisp 8759,16665 8759,16684 8783,16710
+Travemünder Str. -> Osloer Str.: Osloer Str.	3::igndisp 8759,16665 8759,16684 8721,16689
+Travemünder Str. -> Pankeweg, teilweise als Walter-Nicklitz-Promenade gekennzeichnet: Osloer Str.	3::igndisp 8759,16665 8759,16684 8776,16718
+Travemünder Str. -> Travemünder Str.: Osloer Str.	3::igndisp 8759,16665 8759,16684 8659,16494
+Stockholmer Str. -> Travemünder Str.: Osloer Str.	3::igndisp 8783,16710 8759,16684 8759,16665
 Stockholmer Str. -> Travemünder Str.: Osloer Str.	3::igndisp 8783,16710 8759,16684 8659,16494
 Stockholmer Str. -> Osloer Str.: Osloer Str.	3::igndisp 8783,16710 8759,16684 8939,16668
 Osloer Str. -> Stockholmer Str.: Osloer Str.	3::igndisp 8721,16689 8759,16684 8783,16710
 Osloer Str. -> Pankeweg, teilweise als Walter-Nicklitz-Promenade gekennzeichnet: Osloer Str.	3::igndisp 8721,16689 8759,16684 8776,16718
+Pankeweg, teilweise als Walter-Nicklitz-Promenade gekennzeichnet -> Travemünder Str.: Osloer Str.	3::igndisp 8776,16718 8759,16684 8759,16665
 Pankeweg, teilweise als Walter-Nicklitz-Promenade gekennzeichnet -> Stockholmer Str.: Osloer Str.	3::igndisp 8776,16718 8759,16684 8783,16710
 Pankeweg, teilweise als Walter-Nicklitz-Promenade gekennzeichnet -> Travemünder Str.: Osloer Str.	3::igndisp 8776,16718 8759,16684 8659,16494
 Pankeweg, teilweise als Walter-Nicklitz-Promenade gekennzeichnet -> Osloer Str.: Osloer Str.	3::igndisp 8776,16718 8759,16684 8939,16668
 Travemünder Str. -> Stockholmer Str.: Osloer Str.	3::igndisp 8659,16494 8759,16684 8783,16710
 Travemünder Str. -> Osloer Str.: Osloer Str.	3::igndisp 8659,16494 8759,16684 8721,16689
 Travemünder Str. -> Pankeweg, teilweise als Walter-Nicklitz-Promenade gekennzeichnet: Osloer Str.	3::igndisp 8659,16494 8759,16684 8776,16718
+Osloer Str. -> Travemünder Str.: Osloer Str.	3::igndisp 8939,16668 8759,16684 8759,16665
 Osloer Str. -> Travemünder Str.: Osloer Str.	3::igndisp 8939,16668 8759,16684 8659,16494
 Müllerstr./Lindower Str.	3nocross::ignrte 7929,15006 7754,15160 7611,15286
 Lynarstr. -> Müllerstr.: Müllerstr./Lindower Str.	3::igndisp 7629,15078 7754,15160 7611,15286
@@ -1037,3 +1044,17 @@ Poller	3 8601,13580 8594,13637 8588,13673
 Mittelstreifen	3nocross::ignrte 11888,9189 11803,9390 11785,9437
 Kottbusser Damm -> Lenaustr.: Mittelstreifen	3::igndisp 11785,9437 11803,9390 11954,9415
 Lenaustr. -> Kottbusser Damm: Mittelstreifen	3::igndisp 11954,9415 11803,9390 11888,9189
+Einfahrt in Pfarrstr. nicht möglich	3 15359,11115 15458,11306 15322,11335
+Einfahrt in Pfarrstr. nicht möglich	3 15359,11115 15458,11306 15477,11338
+Einfahrt in Pfarrstr. nicht möglich	3 15359,11115 15458,11306 15578,11241
+Einfahrt in Pfarrstr. nicht möglich	3 15359,11115 15279,10862 15144,10905
+Einfahrt in Pfarrstr. nicht möglich	3 15359,11115 15279,10862 15272,10790
+Einfahrt in Pfarrstr. nicht möglich	3 15359,11115 15279,10862 15353,10870
+Mittelinsel	3nocross::ignrte 4345,11710 4331,11554 4312,11354
+Schillerstr. -> Leibnizstr.: Mittelinsel	3::igndisp 4452,11570 4331,11554 4312,11354
+Schillerstr. -> Schillerstr.: Mittelinsel	3::igndisp 4452,11570 4331,11554 4156,11522
+Leibnizstr. -> Schillerstr.: Mittelinsel	3::igndisp 4312,11354 4331,11554 4156,11522
+Leibnizstr. -> Schillerstr.: Mittelinsel	3::igndisp 4345,11710 4331,11554 4452,11570
+Schillerstr. -> Schillerstr.: Mittelinsel	3::igndisp 4156,11522 4331,11554 4452,11570
+Schillerstr. -> Leibnizstr.: Mittelinsel	3::igndisp 4156,11522 4331,11554 4345,11710
+Sybelstr.	1 4006,10585 4256,10583

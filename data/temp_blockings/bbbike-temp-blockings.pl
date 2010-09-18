@@ -2082,7 +2082,7 @@ userdel	2 10091,12232 10035,12209 9972,12184
 userdel	2 9812,12145 9890,12161
 userdel	2 9890,12161 9972,12184
 userdel	2 10170,12261 10109,12238
-userdel	2 10170,12261 10267,12305
+userdel	2 10170,12261 10281,12310
 EOF
      },
      { from  => 1118988173, # 2005-06-17 08:02
@@ -13784,7 +13784,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_012342',
        data  => <<EOF,
-userdel	q4::inwork 10267,12305 10362,12351
+userdel	q4::inwork 10281,12310 10362,12351
 userdel	q4::inwork 10422,12395 10476,12432
 EOF
      },
@@ -15431,7 +15431,7 @@ EOF
        type  => 'gesperrt',
        permanent => 1,
        data  => <<EOF,
-	q4::temp 4092,11338 4077,11226
+	q4::temp 4101,11347 4101,11233
 EOF
      },
      { from  => undef, #
@@ -18177,8 +18177,8 @@ userdel	q4::inwork 11722,10533 11671,10402
 EOF
      },
      { from  => 1283623066, # 2010-09-04 19:57
-       until => 1285883999, # 2010-09-30 23:59
-       text  => 'Die Charlottenstraße zwischen Hermann-Elflein-Straße und Schopenhauerstraße ist für den Bau von Hausanschlüssen halbseitig gesperrt. Im Baubereich ist eine Einbahnstraße in Richtung Wilhelmgalerie eingerichtet. Die Arbeiten dauern bis voraus. 30.09.2010. ',
+       until => 1291157999, # 2010-11-30 23:59:59
+       text  => 'Die Charlottenstraße zwischen Hermann-Elflein-Straße und Schopenhauerstraße ist für den Bau von Hausanschlüssen halbseitig gesperrt. Im Baubereich ist eine Einbahnstraße in Richtung Wilhelmgalerie eingerichtet. Die Arbeiten dauern bis voraus. Ende November 2010. ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork; -13392,-1196 -13516,-1225

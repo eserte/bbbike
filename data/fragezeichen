@@ -245,7 +245,6 @@ Prötzeler Ring: Qualität laut ADFC-Karte gut	? 21951,15918 21980,15857 22055,156
 Heinestr./Ahrensfelde: laut ADFC-Karte nur mäßig für Radfahrer geeignet	? 20987,19604 21010,19692 21303,19918
 Cottbusser Platz: laut ADFC-Karte gute Qualität	? 23297,14772 23288,14719 23298,14685 23379,14514
 Schillingweg: laut ADFC-Karte mäßig bis gut geeignet	? 11514,24284 11259,23928 11224,23879 11190,23832 11128,23746 11101,23708 10855,23403 10717,23258 10700,23251 10629,23222 10396,23128 9890,22932
-Wriezener/Osloer Str.: ist das Abbiegen wegen der Straßenbahn möglich?	? 9210,16638
 Eisenbahnbrücke über der Elbe: laut <cp6net$f0g$1@zeppelin.rz.uni-potsdam.de> ist die Eisenbahnbrücke für Fußgänger begehbar, laut <cn2fr0taoncnlu6s84inbhgpo8lq0u0bh2@4ax.com> sogar offizieller Bestandteil des Elbe-Radwegs	? -92087,-49506 -91387,-49350
 Weg entlang der Elbe: Qualität?	? -91387,-49350 -91150,-49775 -90062,-50750 -89709,-51230
 Fresdorf - Kähnsdorf: Qualität?	? -11553,-15502 -12187,-15175 -12289,-15205 -12402,-15326 -12765,-15415 -12909,-15368 -13133,-15396 -13607,-15551
@@ -764,7 +763,6 @@ Happestr.: Qualität?	? 10955,-769 10953,-812 10968,-987 10976,-1070
 Schumpeterstr.: Qualität? Ist die Straße eine Spielstraße?	? 10979,-1093 10993,-1256 11003,-1303
 Happestr. - Schumpeterstr.: Gibt es für Radfahrer eine Verbindung?	? 10976,-1070 10979,-1093
 Weißenthurmstr.: Qualität?	? 10968,-987 11120,-976
-Kronbergstr.: Qualität?	? 11099,-857 11291,-834 11490,-809 11680,-792 11844,-773
 Großbeerenstr. (Lichterfelde): Qualität?	? 4939,1148 5050,1133 5167,1116
 Smyrnaer Weg: Qualität?	? 10248,3897 10348,3888
 Hollabergweg (Marienfelde): Qualität?	? 9140,1255 9236,1484 9351,1745
@@ -1033,7 +1031,6 @@ Jägerstieg - B96: existiert eine Verbindung? Qualität? Für Autos gesperrt? Nacht
 Weg zwischen Goerdelersteg und Beusselstr.: existiert auch ein Weg zwischen Westhafenkanal und Autobahn? Wenn ja, wie ist die Qualität?	? 3619,14183 5086,14536
 Bohrauer Pfad: Qualität?	? 20981,4628 20827,4655 20716,4691
 Gartenweg (Kolonie Wendenheide): Qualität? Offizieler Name des Weges? Für Autos gesperrt?	? 20850,4225 20716,4549 20684,4596
-Travemünder Str.: Qualität?	? 8695,16525 8759,16665 8759,16684
 Fußgängerbrücke: Für Radfahrer befahrbar? Existieren Rampen oder Treppen? Qualität?	? 13192,21697 13046,21734 13008,21783
 Rue Racine: Qualität?	? 4339,21600 4334,21540 4307,21506 4254,21495 4204,21536 4198,21615 4209,21703
 Schefferweg: Qualität?	? 7432,2400 7425,2461
@@ -1217,7 +1214,7 @@ An der Krähenheide: Qualität?	? -1102,19564 -1071,19689 -1045,19793
 Gabelweihstr.: Qualität?	? -1492,19370 -1557,19457 -1681,19593
 Dorndreherweg: Qualität?	? -1364,19982 -1414,20145 -1473,20181 -1578,20228
 Armenische Str.: Qualität?	? 7216,16552 7285,16638 7177,16715 7150,16760 7147,16791
-Syrische Str.: Qualität? Kann man als Radfahrer zur Seestr. durchfahren? Kann man die Seestr. hier überqueren?	? 7106,16646 7216,16552 7263,16508 7295,16477
+Syrische Str.: Qualität? Kann man die Seestr. hier überqueren?	? 7106,16646 7216,16552 7263,16508 7295,16477
 Fischhauser Weg: Qualität? Kann man als Radfahrer zum Pankeweg gelangen?	? 8951,17717 9006,17690
 Zechliner Str. (Gesundbrunnen): Qualität?	? 8950,17219 8846,17266 8751,17307
 Fordoner Str.: Qualität?	? 8846,17266 8880,17342
@@ -3321,6 +3318,7 @@ An der Oskar-Schindler-Schule: Qualität?	? 16256,17651 16277,17830
 Radweg BU: Qualität? Straßenname?	? 17668,26607 17964,26823
 Radweg BU: Qualität? Straßenname?	? 17376,26582 17418,26518
 Teltowkanal - Rudower Höhe: Qualität? Nachts beleuchtet?	? 18426,2476 18518,2370 18567,2218 18580,2121
+Radweg in der Bergstraße: wo genau?	? -17968,7253 -18232,6565
 # added from ampeln-orig
 geschlossen bei Bedarf (?) (Zbr)	? 27657,-11741
 S-Bahn alle 20 Minuten, Regionalbahn halbstündlich (?) (B)	? 40248,14503
@@ -3418,7 +3416,6 @@ Dorfstr.: schlechtes Kopfsteinpflaster (Hat die Dorfstr. noch immer schlechtes K
 Dorfstr.: schlechtes Kopfsteinpflaster (Hat die Dorfstr. noch immer schlechtes Kopfsteinpflaster oder ist sie mittlerweile asphaltiert?)	? 22260,11742 22313,11688 22496,11474
 Dorfstr.: Kopfsteinpflaster (Hat die Dorfstr. noch immer Kopfsteinpflaster oder ist sie mittlerweile asphaltiert?)	? 22260,11742 22149,11870 22112,11936 22140,11958
 Kleine Lindenstr.: holpriger Fahrweg (Ist die Kleine Lindenstr. mittlerweile asphaltiert?)	? 21531,-1140 21459,-1086 21387,-1033 21306,-975
-Haydnstr.: Kopfsteinpflaster (wie ist die Qualität der Haydnstr.?)	? 4521,4484 4613,4515 4681,4537 4785,4557 4870,4609 5004,4709
 Parforceweg: Waldweg? (Ist der Parforceweg ein "gewöhnlicher" Waldweg?)	? -643,7252 -728,7310 -1008,7427 -1142,7493 -1308,7558 -1328,7597 -1787,7932 -1843,8128 -2028,8270 -2078,8217 -2117,8204 -2156,8208 -2294,8232 -2386,8282
 Kohlweißlingstr.: Verbundsteinpflaster (Qualität: Verbundsteinpflaster oder Asphalt?)	? 21723,10920 21765,10834
 Distelfalterstr.: Verbundsteinpflaster (Qualität: Verbundsteinpflaster oder Asphalt?)	? 21723,10920 21605,10866
