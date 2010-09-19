@@ -231,7 +231,7 @@ sub run_stats {
 		   vehicles  => [keys %vehicles],
 		   bbox      => [$bbox_minx, $bbox_miny, $bbox_maxx, $bbox_maxy],
 		   route     => [map { $_->Longitude . ',' . $_->Latitude } @route_wpts],
-		   route_aras => [@route_areas],
+		   route_areas => [@route_areas],
 		 });
 }
 
