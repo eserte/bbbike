@@ -46,6 +46,7 @@ my $debug;
 my $relative_paths;
 my $out_file;
 my $max_delta = 180;
+my $for_person;
 
 my $lax_iso_date_qr = qr{^(\d{4})\D*(\d{2})\D*(\d{2})T(\d{2})\D(\d{2})\D(\d{2})};
 my $clock_qr        = qr{^\d{1,2}:\d{2}(:\d{2})?};
@@ -69,6 +70,7 @@ usage: $0
 	  [-anchor nw|n|ne|e|se|s|sw] [-thumbnailsize pixels]
           [-converter Image::GD::Thumbnail|ImageMagick|ImageMagick+exiftool|best|fast]
 	  [-recreatethumbnails] [-rel|-relativepaths] [-o file]
+	  [-person ...]
           [-v] [-debug] image ...
 EOF
 }
@@ -85,6 +87,7 @@ GetOptions("gpsdatadir=s" => \$gps_data_dir,
 	   "converter=s" => \$converter,
 	   "recreatethumbnails" => \$recreate_thumbnails,
 	   "rel|relativepaths!" => \$relative_paths,
+	   "person=s" => \$for_person,
 	   "o=s" => \$out_file,
 	   "v!" => \$v,
 	   "debug" => \$debug,
@@ -392,7 +395,15 @@ sub get_image_location {
 	my $last_wpt;
 	my $delta;
     CHUNKS: {
+	    my $current_gps_person;
 	    for my $chunk (@{ $gps->Chunks }) {
+		if ($for_person) {
+		    my $new_gps_person = $chunk->TrackAttrs && $chunk->TrackAttrs->{'srt:person'};
+		    if ($new_gps_person) {
+			$current_gps_person = $new_gps_person;
+		    }
+		    next CHUNKS if $current_gps_person && $current_gps_person ne $for_person;
+		}
 		for my $wpt (@{ $chunk->Track }) {
 		    my $wpt_epoch = $wpt->Comment_to_unixtime($chunk);
 		    if ($wpt_epoch > $epoch) {
@@ -784,6 +795,8 @@ version
  * Instructions needed on how to create
    a bundle suitable for sharing with other people
  * GPX support
+ * document options!
+   * -person: use only GPS tracks with no srt:person tag or a matching srt:person tag
 
 =head1 SEE ALSO
 
