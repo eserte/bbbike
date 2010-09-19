@@ -1660,6 +1660,11 @@ sub tk_interface {
 
     sub convert_from_route {
 	my($self, $route, %args) = @_;
+
+	# do not delete the following, needed also in simplify_for_gps
+	my $waypointlength = $args{-waypointlength};
+	my $waypointcharset = $args{-waypointcharset};
+
 	require File::Temp;
 	require GPS::Gpsbabel;
 	require Route::Simplify;
@@ -1681,9 +1686,13 @@ sub tk_interface {
 	close $ofh;
 	my $gpsb = GPS::Gpsbabel->new;
 	my $dev = !$args{'-gpsdevice'} || $args{'-gpsdevice'} =~ /usb/i ? "usb:" : $args{'-gpsdevice'};
+	my $output_type = join(",", "garmin",
+			       ($waypointlength ? "snlen=$waypointlength" : ()),
+			       ($waypointcharset && $waypointcharset ne 'simpleascii' ? "snwhite=1" : ()),
+			      );
 	$gpsb->run_gpsbabel(["-r",
 			     "-i", "gpx", "-f", $ofile,
-			     "-o", "garmin", "-F", $dev,
+			     "-o", $output_type, "-F", $dev,
 			    ]);
     }
 
