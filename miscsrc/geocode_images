@@ -386,29 +386,33 @@ sub get_image_location {
     }
 
     if ($filename) {
-	my $gps = GPS::GpsmanData->new;
+	my $gps = GPS::GpsmanMultiData->new;
 	$gps->load($filename);
 	my $got_wpt;
 	my $last_wpt;
 	my $delta;
-	for my $wpt (@{ $gps->Track }) {
-	    my $wpt_epoch = $wpt->Comment_to_unixtime($gps);
-	    if ($wpt_epoch > $epoch) {
-		if ($last_wpt &&
-		    abs($last_wpt->Comment_to_unixtime($gps) - $epoch) <
-		    abs($wpt_epoch - $epoch)) {
-		    $got_wpt = $last_wpt;
-		} else {
-		    $got_wpt = $wpt;
+    CHUNKS: {
+	    for my $chunk (@{ $gps->Chunks }) {
+		for my $wpt (@{ $chunk->Track }) {
+		    my $wpt_epoch = $wpt->Comment_to_unixtime($chunk);
+		    if ($wpt_epoch > $epoch) {
+			if ($last_wpt &&
+			    abs($last_wpt->Comment_to_unixtime($chunk) - $epoch) <
+			    abs($wpt_epoch - $epoch)) {
+			    $got_wpt = $last_wpt;
+			} else {
+			    $got_wpt = $wpt;
+			}
+			last CHUNKS;
+		    }
+		    $last_wpt = $wpt;
 		}
-		last;
 	    }
-	    $last_wpt = $wpt;
 	}
 	if (!$got_wpt) {
-	    $got_wpt = $gps->Track->[-1];
+	    $got_wpt = ($gps->flat_track)[-1];
 	}
-	$delta = abs($got_wpt->Comment_to_unixtime($gps) - $epoch);
+	$delta = abs($got_wpt->Comment_to_unixtime($gps->Chunks->[0]) - $epoch);
 	if ($got_wpt) {
 	    return { Latitude  => $got_wpt->Latitude,
 		     Longitude => $got_wpt->Longitude,
