@@ -24,7 +24,7 @@ use lib $FindBin::RealBin;
 use BBBikeTest qw(gpxlint_string);
 use File::Temp qw(tempfile);
 
-plan tests => 11;
+plan tests => 17;
 
 use_ok 'GPS::GpsmanData';
 
@@ -69,6 +69,37 @@ EOF
     like($root->findvalue('/gpx/wpt/cmt'), qr{Punkt}, 'Found a user-def symbol name')
 	or diag "Please check the mapping in the bike2008 directory";
     like($root->findvalue('/gpx/wpt/cmt'), qr{Pizza}, 'Found an official symbol name');
+}
+
+{
+    my $trk_sample_file = <<'EOF';
+% Written by GPSManager 13-Jul-2004 18:19:37 (CET)
+% Edit at your own risk!
+
+!Format: DMS 2 WGS 84
+!Creation: no
+
+!T:	ACTIVE LOG	width=2	colour=#8b0000	GD312:display=|c"	srt:vehicle=pedes
+	13-Jul-2004 10:59:43	N52 31 55.2	E13 27 47.7	~13.1151123047
+	13-Jul-2004 11:00:00	N52 31 54.7	E13 27 46.6	~13.1151123047
+!T:	ACTIVE LOG 12	srt:vehicle=u-bahn
+	13-Jul-2004 11:19:07	N52 30 46.3	E13 31 57.2	15.9990234375
+	13-Jul-2004 11:19:23	N52 30 49.6	E13 32 10.1	15.5184326172
+!TS:
+EOF
+
+    my $gps = GPS::GpsmanMultiData->new;
+    $gps->parse($trk_sample_file);
+
+    is(scalar @{ $gps->Chunks }, 3, 'Expected number of chunks');
+
+    is($gps->Chunks->[0]->TrackAttrs->{'srt:vehicle'}, 'pedes', 'Expected attribute');
+    is($gps->Chunks->[1]->TrackAttrs->{'srt:vehicle'}, 'u-bahn', 'Expected attribute in 2nd chunk');
+
+    my @flat_wpt = $gps->flat_track;
+    is(scalar(@flat_wpt), 4, 'Found four wpts in track');
+    is($flat_wpt[0]->Latitude, 52.532, 'Expected first latitude');
+    like($flat_wpt[-1]->Latitude, qr{^52.5137}, 'Expected last latitude');
 }
 
 __END__
