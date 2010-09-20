@@ -1787,16 +1787,7 @@ userdel	q4::inwork; 10614,19907 10742,19632
          'type' => 'handicap'
        },
        undef,
-       {
-         'source_id' => 'IM_016256',
-         'until' => 1285000200,
-         'text' => 'Romain-Rolland-Str. (Heinersdorf): Baustelle, Fahrtrichtung gesperrt (bis Ende 09/2010) Richtung Hohenschönhausen zwischen Rothenbachstr. und Berliner Str., 01.09.2010 08:51 Uhr bis 20.09.2010 18:30 Uhr ',
-         'from' => 1283237460,
-         'id' => 2121,
-         'data' => 'userdel	q4::inwork; 12575,18275 12606,18215 12693,18081 12736,17998
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => 1291157999,
@@ -1871,6 +1862,36 @@ userdel	q4::inwork; 10614,19907 10742,19632
 userdel	3 13150,7254 13047,7234 13034,7319
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_016372',
+         'until' => 1286370000,
+         'text' => 'Friedrichstr. (Mitte): Baustelle, Fahrtrichtung Richtung Chausseestr. gesperrt zwischen Dorotheenstr. und Georgenstr., 20.09.2010 04:00 Uhr bis 06.10.2010 15:00 Uhr ',
+         'from' => 1284861600,
+         'id' => 2135,
+         'data' => 'userdel	q4::inwork; 9330,12529 9314,12652
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'LS/O-SG33-E/10/086',
+         'until' => 1288562400,
+         'text' => 'Kremmen: B273: Abbruch der Brücke bei Kremmen, 20.09.2010 bis 31.10.2010 01:00 Uhr ',
+         'from' => 1285014030,
+         'id' => 2136,
+         'data' => 'userdel	2::inwork -17964,36290 -17262,37425
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20100920.1135.311271.html',
+         'until' => 1286402399,
+         'text' => 'Fahrbahnerneuerung im Zabel-Krüger-Damm zwischen Schluchseestraße und Albtalweg, Einbahnstraße Richtung Oraniendamm, vom 22. September 2010 bis zum 6. Oktober 2010 ',
+         'from' => 1285020000,
+         'id' => 2137,
+         'data' => 'userdel	q4::inwork; 5006,22507 5142,22581 5260,22634 5368,22669
+',
+         'type' => 'handicap'
        }
      
 );

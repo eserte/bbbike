@@ -645,7 +645,7 @@ B246: existiert ein Radweg bei Nächst Neuendorf (wahrscheinlich ab 2006-11-15)?	
 Clémentweg: Qualität (laut ADFC-Karte gut geeignet)?	? 11723,22749 11285,23079
 #: XXX Eintrag in Berlin.coords.data fehlt
 Dr.-Dorsch-Allee: Qualität (laut ADFC-Karte gut geeignet)?	? 11285,23079 10855,23403
-Ludwig-Renn-Str.: Einbahnstraße auch für Radfahrer?	? 20843,16829 21017,16737
+Ludwig-Renn-Str.: Einbahnstraße auch für Radfahrer?	? 20861,16819 21017,16737
 Stolper Weg: Qualität? Bis wo (vom Europarc aus) ist Autoverkehr vorhanden? Radwege? Genaue Straßennamen?	? -4709,-728 -5233,-902 -5380,-990 -5799,-1108 -5901,-1257 -6051,-1169 -6411,-868
 (Albrechts Teerofen - Stopler Weg): Qualität?	? -5364,-1204 -5380,-990
 Arkenberge: wo genau ist die Durchfahrt für Autos gesperrt	? 10370,26352 10308,26376 10112,26349
@@ -2023,7 +2023,8 @@ Asnièresstr.: Qualität?	? -2044,17003 -2119,17015 -2170,17024 -2212,17031
 Ashdodstr.: Qualität?	? -2234,16939 -2212,17031
 Brücke über den Maselakekanal: Gibt es hier eine Treppe oder Rampe? Name der Brücke?	? -2152,17108 -2140,17171
 Am Maselakekanal: Qualität? Führt die Radroute Berlin-Kopenhagen hier entlang? Kann der Weg als "grüner Weg" bezeichnet werden?	? -2140,17171 -2502,17233 -2606,17272
-Dingolfinger Str.: Qualität? Führt die Straße zur Walsheimer Str.? Kann der Blumberger Damm in Höhe der Dingolfinger Str. überquert werden?	? 21135,11799 21233,11781 21352,11701
+#: XXX die Straße ist asphaltiert, Q0
+Dingolfinger Str.: Führt die Straße zur Walsheimer Str.? Kann der Blumberger Damm in Höhe der Dingolfinger Str. überquert werden?	? 21135,11799 21233,11781 21352,11701
 Nottepfad: Qualität?	? -8837,4688 -8820,4823 -8806,4957
 Nieplitzsteig: Qualität?	? -8642,4789 -8727,4795 -8745,4812 -8820,4823
 #: XXX anonymous meint: Asphalt, Q2, enge Straße, q2, sagt aber nichts zur Einbahnstraße
@@ -2533,11 +2534,11 @@ Proellstr.: Qualität?	? 8630,1077 8765,1363
 Schomburgstr.: Qualität?	? 8642,1422 8700,1557
 Hennickendorfer Weg: Qualität?	? 21731,15748 21908,15718 22055,15698
 Hirschfelder Weg: Qualität?	? 21674,15675 21719,15666 22101,15601
-Spitzmühler Str.: Qualität?	? 21669,15637 21706,15626 21796,15608 21885,15591 21976,15578 22088,15557
 Zinndorfer Str.: Qualität?	? 21647,15496 21680,15489 21769,15470 21860,15455 21951,15442
 #: XXX missing in Berlin.coords.data:
 Amselhainer Weg: Qualität?	? 21885,15591 21860,15455
 Pritzhagener Weg: Qualität?	? 21718,15198 21743,15336 21757,15420 21769,15470 21796,15608
+#: XXX an der Mehrower Allee betoniert:
 Oberweißbacher Str.: Qualität? Im Mittelteil für Autos gesperrt?	? 21602,16866 21608,16903 21633,17027 21684,17023 21748,17013 21881,16988
 #: XXX Eintrag von Andreas (Howitz): guter Asphalt, enge Straße q2, aber keine Angaben zur Einbahnstraße
 Trusetaler Str.: Qualität? Sind Teile der Straße Einbahnstraße?	? 21390,16903 21431,17055 21451,17189 21352,17210 21360,17261 21285,17276 21225,17286 21154,17296 21081,17329 21012,17360 20911,17414
@@ -4738,3 +4739,5 @@ Radweg BU: Qualität? Straßenname?	? 17376,26582 17418,26518
 Teltowkanal - Rudower Höhe: Qualität? Nachts beleuchtet?	? 18426,2476 18518,2370 18567,2218 18580,2121
 #: by: http://www.potsdam.de/cms/beitrag/10068810/966975/
 Radweg in der Bergstraße: wo genau?	? -17968,7253 -18232,6565
+#: XXX asphaltiert, unbeleuchtet
+Weg entlang der S-Bahn: wie weit Richtung Norden geht es weiter?	? 20048,16317 20451,17120

@@ -304,7 +304,7 @@ Cosimaplatz	1 5490,7651 5458,7683 5493,7717 5528,7683 5490,7651
 Reiherbeize	1 444,4498 593,4262
 Mendelssohnstr.	1 11598,13598 11550,13642 11545,13690
 Am Bäkequell	1 4593,5235 4656,5101
-Sella-Hasse-Str.	1 20948,16612 20771,16690 20843,16829
+Sella-Hasse-Str.	1 20948,16612 20791,16679 20861,16819
 Buggenhagenstr.	1 14425,13780 14370,13615
 Schollenhof	1 3238,21448 3155,21572 3236,21601 3280,21477
 Siegfried-Aufhäuser-Platz	1 13952,7497 13941,7522 13953,7548 13980,7548
@@ -385,7 +385,7 @@ Talstr.	1 11776,16753 11825,16666
 #: confirmed_by: MichaelM (Regelung für alle gleich)
 Scharfestr.	1 758,3417 935,3430
 Junker-Jörg-Str.	1 18545,9395 18511,9185 18471,8957 18447,8818
-Walter-Felsenstein-Str.	1 20438,16715 20617,16614 20770,16962
+Walter-Felsenstein-Str.	1 20438,16715 20617,16614 20767,16903
 (Raoul-Wallenberg-Str. - Walter-Felsenstein-Str.)	1 20394,16162 20487,16392
 #: add_fragezeichen: Gilt die Einbahnstraßenregelung auch für Radfahrer oder nur für Autofahrer?
 Jugendweg	1 1191,14513 1059,14515 1037,14515 998,14516 942,14517 842,14518
@@ -992,7 +992,7 @@ Bahntrasse	3nocross 15875,1796 15835,1747 15799,1690 15729,1573 15639,1422
 Zossener Str.: Straßenbahntrasse	3nocross 23080,15700 23218,15671 23411,15632 23568,15603 23617,15594
 Schloßstr.: Mittelstreifen	3nocross 4741,5309 4748,5357 4861,5581
 #: note: Luftbild
-Blumberger Damm: Mittelstreifen	3nocross 21378,14490 21408,14591 21521,14943
+Blumberger Damm: Mittelstreifen	3nocross 21378,14490 21408,14591 21537,14932
 #: note: Luftbild
 Blumberger Damm: Mittelstreifen	3nocross 21694,15802 21674,15675 21669,15637 21647,15496
 #: note: Luftbild
@@ -1635,6 +1635,17 @@ Tor	BNP:3 6431,3417
 #: section temporäre Sperrungen (Baustellen etc.) vvvvvvvvvvvvvvvvvvvvvvvvvv
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+# 
+#: last_checked: 2010-09-20
+#: next_check: 2010-12-01
+#: note: Eröffnung des Hotels im Dezember 2010
+#: XXX Neubewertung für handicap_s notwendig!
+Spittelmarkt: wegen Bauarbeiten gesperrt	2:inwork 10166,11592 10153,11666 10213,11728
+# 
+#: by: http://www.kondorwessels.com/index.php?id=356 (Fertigstellung)
+#: last_checked: 2010-09-20
+#: next_check: 2011-03-01
+Elisabeth-Mara-Str.: Bauarbeiten bis zum Frühjahr 2011	2:inwork 10506,11567 10320,11627
 # 
 #: last_checked: 2010-09-18
 #: next_check: 2010-11-01

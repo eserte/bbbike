@@ -276,7 +276,7 @@ Cosimaplatz	1 5490,7651 5458,7683 5493,7717 5528,7683 5490,7651
 Reiherbeize	1 444,4498 593,4262
 Mendelssohnstr.	1 11598,13598 11550,13642 11545,13690
 Am Bäkequell	1 4593,5235 4656,5101
-Sella-Hasse-Str.	1 20948,16612 20771,16690 20843,16829
+Sella-Hasse-Str.	1 20948,16612 20791,16679 20861,16819
 Buggenhagenstr.	1 14425,13780 14370,13615
 Schollenhof	1 3238,21448 3155,21572 3236,21601 3280,21477
 Siegfried-Aufhäuser-Platz	1 13952,7497 13941,7522 13953,7548 13980,7548
@@ -332,7 +332,7 @@ Czarnikauer Str.	1 10613,16403 10449,16415 10225,16436
 Talstr.	1 11776,16753 11825,16666
 Scharfestr.	1 758,3417 935,3430
 Junker-Jörg-Str.	1 18545,9395 18511,9185 18471,8957 18447,8818
-Walter-Felsenstein-Str.	1 20438,16715 20617,16614 20770,16962
+Walter-Felsenstein-Str.	1 20438,16715 20617,16614 20767,16903
 (Raoul-Wallenberg-Str. - Walter-Felsenstein-Str.)	1 20394,16162 20487,16392
 Jugendweg	1 1191,14513 1059,14515 1037,14515 998,14516 942,14517 842,14518
 Boschpoler Platz	1 20540,13773 20665,13759
@@ -874,12 +874,16 @@ Zossener Str. -> Teupitzer Str.: Straßenbahntrasse	3::igndisp 23411,15632 23568,
 Mittelstreifen	3nocross::ignrte 4741,5309 4748,5357 4861,5581
 Wrangelstr. -> Schloßstr.: Mittelstreifen	3::igndisp 4640,5411 4748,5357 4861,5581
 Schloßstr. -> Wrangelstr.: Mittelstreifen	3::igndisp 4741,5309 4748,5357 4640,5411
-Mittelstreifen	3nocross::ignrte 21378,14490 21408,14591 21521,14943
-Blumberger Damm -> Fridolinweg: Mittelstreifen	3::igndisp 21521,14943 21408,14591 21450,14576
+Mittelstreifen	3nocross::ignrte 21378,14490 21408,14591 21537,14932
+Blumberger Damm -> Fridolinweg: Mittelstreifen	3::igndisp 21537,14932 21408,14591 21450,14576
 Fridolinweg -> Blumberger Damm: Mittelstreifen	3::igndisp 21450,14576 21408,14591 21378,14490
 Mittelstreifen	3nocross::ignrte 21694,15802 21674,15675 21669,15637 21647,15496
+Pöhlbergstr. -> Spitzmühler Str.: Mittelstreifen	3::igndisp 21497,15639 21669,15637 21706,15626
 Pöhlbergstr. -> Blumberger Damm: Mittelstreifen	3::igndisp 21497,15639 21669,15637 21674,15675
 Blumberger Damm -> Pöhlbergstr.: Mittelstreifen	3::igndisp 21647,15496 21669,15637 21497,15639
+Spitzmühler Str. -> Pöhlbergstr.: Mittelstreifen	3::igndisp 21706,15626 21669,15637 21497,15639
+Spitzmühler Str. -> Blumberger Damm: Mittelstreifen	3::igndisp 21706,15626 21669,15637 21647,15496
+Blumberger Damm -> Spitzmühler Str.: Mittelstreifen	3::igndisp 21674,15675 21669,15637 21706,15626
 Straßenbahntrasse	3nocross::ignrte 21232,15465 21187,15350 21163,15289
 Allee der Kosmonauten -> Alt-Marzahn: Straßenbahntrasse	3::igndisp 21163,15289 21187,15350 21139,15376
 Alt-Marzahn -> Allee der Kosmonauten: Straßenbahntrasse	3::igndisp 21139,15376 21187,15350 21232,15465
@@ -1876,6 +1880,8 @@ Schranke, kann auch mit Anhänger umfahren werden	BNP:1:-168 49137,24422
 Drängelgitter	BNP:3:24:trailer=6 3644,8456
 Poller, Abstand 80cm (mit Anhänger über Gehweg umfahren)	BNP:1:1:trailer=10 7816,5682
 Tor	BNP:3:-209 6431,3417
+Spittelmarkt: wegen Bauarbeiten gesperrt	2:inwork 10166,11592 10153,11666 10213,11728
+Elisabeth-Mara-Str.: Bauarbeiten bis zum Frühjahr 2011	2:inwork 10506,11567 10320,11627
 Großer Weg: Bauarbeiten, Weg wird neu gemacht	2:inwork 6809,11570 6980,11583
 Wagner-Régeny-Str.: Straße ist fertig, aber noch gesperrt	2:inwork 19487,3593 19377,3721
 Rhinstr.: neues Wohngebiet, Weg gesperrt	2:inwork 18015,13846 17300,14133

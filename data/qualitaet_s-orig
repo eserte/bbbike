@@ -4017,6 +4017,7 @@ Werderstr. (Altglienicke): schlechtes Kopfsteinpflaster	Q3 20064,1777 20028,1673
 (Südstern - Blücherstr.): Asphalt	Q0 10670,9286 10647,9337
 Liebigstr.: gepflastert	Q1 14229,12311 14166,12323
 Travemünder Str.: Kopfsteinpflaster	Q2 8695,16525 8759,16665 8759,16684
+Spitzmühler Str.: Asphalt	Q0 21669,15637 21706,15626 21796,15608 21885,15591 21976,15578 22088,15557
 ######################### User Contributions #################################
 #: by: Dominik Seelow vvv
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
@@ -4063,7 +4064,7 @@ Stangeweg: Beton	Q0 21407,16257 21473,16238 21534,16188 21598,16055
 Anemonenstr.: glattes Kopfsteinpflaster	Q1+ 23439,4420 23541,4439
 #: add_fragezeichen: Ist die Anemonenstr. asphaltiert oder gepflastert?
 Anemonenstr.: asphaltiert	Q0 23541,4439 23651,4467 23826,4539 23934,4661
-Sella-Hasse-Str.: Asphalt	Q0 20901,16916 20843,16829 20771,16690 20948,16612
+Sella-Hasse-Str.: Asphalt	Q0 20901,16916 20861,16819 20791,16679 20948,16612
 Eisfalterweg: Asphalt	Q0 21543,11064 21640,11107
 #: corrected_by: srt (Asphalt Q0 -> Verbundsteinpflaster Q0-)
 Eisfalterweg: Verbundsteinpflaster	Q0- 21640,11107 21776,11179
@@ -4882,7 +4883,7 @@ Stahnsdorfer Damm: teilweise asphaltiert, teilweise Waldweg	Q2 -4184,400 -3875,8
 #: by: ^^^
 #: by: Trine: vvv
 Ringenwalder Str.: Asphalt	Q0 22495,16165 22463,16218 22406,16309 22215,16343 22097,16375
-Ringenwalder Str.: Asphalt	Q0 22088,16341 21801,16392
+Ringenwalder Str.: Asphalt	Q0 22088,16341 21862,16381
 #: by: ^^^
 #: by: "sportwart":
 Schönholzer Str.: Asphalt	Q0 9838,14640 10043,14735
@@ -5811,7 +5812,7 @@ Zugdamer Steig: Beton	Q0 -1982,23386 -2122,23453
 Kapaunenstr.: schlechtes Kopfsteinpflaster	Q3 16234,-450 16259,-368 16291,-261 16395,86 16469,262 16555,464
 #: by: David Herrmann:
 #: note: auch laut ADFC-Karte gut geeignet
-Glambecker Ring: guter Asphalt	Q0 21824,16506 21885,16494 22053,16462 22111,16451 22187,16437 22278,16590 22220,16637 22152,16695 22050,16781 21889,16817
+Glambecker Ring: guter Asphalt	Q0 21824,16506 21885,16494 22053,16462 22111,16451 22187,16437 22278,16590 22220,16637 22152,16695 22050,16781 21944,16805 21889,16817
 #: by: Susanne Hillenkamp:
 Borgmannstr.: guter Asphalt	Q0 22513,5747 22531,5871 22539,5956 22544,6037
 #: by: Thomas Ludwig: vvv
@@ -6354,7 +6355,7 @@ Bernhard-Lichtenberg-Str.: Kopfsteinpflaster	Q2 12371,14615 12496,14515 12685,14
 #: by: thomas gärtner:
 Gemsenpfad: fester Sandweg	Q1 -796,22588 -746,22739 -657,22854
 #: by: Stefan:
-Ludwig-Renn-Str.: Asphalt	Q0 20479,16124 20504,16204 20567,16320 20750,16226 20787,16294 20865,16440 20948,16612 21017,16737 20843,16829
+Ludwig-Renn-Str.: Asphalt	Q0 20479,16124 20504,16204 20567,16320 20750,16226 20787,16294 20865,16440 20948,16612 21017,16737 20861,16819
 #: by: Marita:
 (Waldweg über den Beyschlagtunnel): mäßiger fester Sandweg	Q2 332,22372 742,22666
 #: by: Mannitou:
@@ -8514,7 +8515,8 @@ Ghanastr.: guter Asphalt	Q0 5423,17076 5358,17132 5257,17046 5255,17007 5315,169
 #: by: guenther (m...berlin):
 Hauptweg (Biesdorf): schlechter Sandweg	Q3+ 20821,8438 20834,8694 20799,8965 20802,9297
 #: by: Norika:
-#: XXX: unklarer Eintrag: einige Fußgänger, q4?
+#: confirmed_by: srt
+#: note: einige Fußgänger, q4 ignoriert
 Schleusinger Str.: Beton	Q0 21170,16942 21177,16989 21197,17119 21211,17212 21225,17286
 #: by: Johanna (reugsner):
 Borodinstr.: mäßiges Kopfsteinpflaster	Q2 13573,15801 13609,15706 13645,15609
@@ -10856,7 +10858,8 @@ Lauinger Str.: Asphalt	Q0 21537,11256 21305,11363 21221,11398
 #: note: "reiner Trampelpfad... sehr eng... nur für könner"
 (Gartenstr. - Tychyer Str.): loser Sandweg	Q3 21217,11328 21255,11314 21286,11319 21305,11363
 #: note: "unbefahrene alte Betonstraße.. Sackgasse"
-Gartenstr. (Biesdorf): alte Betonstraße	Q2 21138,11271 21162,11287 21192,11324 21217,11328
+#: corrected_by: srt (Q2 -> Q1-)
+Gartenstr. (Biesdorf): alte Betonstraße	Q1- 21138,11271 21162,11287 21192,11324 21217,11328
 #: by: ^^^
 #: by: Andreas Kadgien:
 #: note: "ohne Schäden"

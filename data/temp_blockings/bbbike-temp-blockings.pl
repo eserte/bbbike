@@ -18283,4 +18283,31 @@ userdel	3 13150,7254 13047,7234 13058,7165
 userdel	3 13150,7254 13047,7234 13034,7319
 EOF
      },
+     { from  => 1284861600, # 2010-09-19 04:00
+       until => 1286370000, # 2010-10-06 15:00
+       text  => 'Friedrichstr. (Mitte): Baustelle, Fahrtrichtung Richtung Chausseestr. gesperrt zwischen Dorotheenstr. und Georgenstr., 20.09.2010 04:00 Uhr bis 06.10.2010 15:00 Uhr ',
+       type  => 'handicap',
+       source_id => 'IM_016372',
+       data  => <<EOF,
+userdel	q4::inwork; 9330,12529 9314,12652
+EOF
+     },
+     { from  => 1285014030, # 2010-09-20 22:20
+       until => 1288562400, # 2010-10-31 23:00
+       text  => 'Kremmen: B273: Abbruch der Brücke bei Kremmen, 20.09.2010 bis 31.10.2010 01:00 Uhr ',
+       type  => 'gesperrt',
+       source_id => 'LS/O-SG33-E/10/086',
+       data  => <<EOF,
+userdel	2::inwork -17964,36290 -17262,37425
+EOF
+     },
+     { from  => 1285020000, # 2010-09-21 00:00
+       until => 1286402399, # 2010-10-06 23:59
+       text  => 'Fahrbahnerneuerung im Zabel-Krüger-Damm zwischen Schluchseestraße und Albtalweg, Einbahnstraße Richtung Oraniendamm, vom 22. September 2010 bis zum 6. Oktober 2010 ',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20100920.1135.311271.html',
+       data  => <<EOF,
+userdel	q4::inwork; 5006,22507 5142,22581 5260,22634 5368,22669
+EOF
+     },
     );
