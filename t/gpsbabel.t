@@ -81,14 +81,16 @@ SKIP: {
     }
 
     eval {
-	$gpsb->run_gpsbabel(["-this", "-is", "-invalid"]);
+	$gpsb->run_gpsbabel(["-XYZ", "-ABC"]);
     };
     my $err = $@;
     like($err, qr{A problem occurred.*gpsbabel}, "Error with run_gpsbabel");
  SKIP: {
 	skip("IPC::Run needed for additional error messages", 1)
 	    if !eval { require IPC::Run; 1 };
-	like($err, qr{Nothing to do.*gpsbabel -h.*for command-line options}, "Additional error message");
+	like($err, qr{(Unknown\soption # behaviour with gpsbabel 1.4.x
+		      |Nothing\sto\sdo.*gpsbabel\s-h.*for\scommand-line\soptions # behaviour with 1.3.x
+		      )}x, "Additional error message");
     }
 
  SKIP: {
