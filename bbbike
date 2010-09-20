@@ -18052,7 +18052,7 @@ sub make_comments_net {
 # Erzeugt einen Hash aller Kreuzungen
 ### AutoLoad Sub
 sub all_crossings {
-    if (!keys %$crossings) {
+    if (!%$crossings) {
 	my $s = $multistrassen ? $multistrassen : $str_obj{'s'};
 	return if !$s;
 	$crossings = $s->all_crossings(RetType => 'hash',
