@@ -15814,7 +15814,11 @@ sub get_symbol_scale {
 	} elsif ($myscale >= 1*$mod) {
 	    $filename = 'eisenbahn_mini';
 	}
-	return load_photo($top, $filename, -persistent => 1);
+	if ($filename) {
+	    return load_photo($top, $filename, -persistent => 1);
+	} else {
+	    return undef;
+	}
     } elsif ($tag eq 'r' || $tag eq 'r-R0') {
 	my $filename;
 	if ($myscale > 2*$mod) {
