@@ -9676,20 +9676,24 @@ sub send_route_to_gps {
 	status_message(M"Keine Route", "infodlg");
 	return;
     }
-    if ($os eq 'win' && $gps_device eq 'USB') {
-	if ($devel_host) {
-	    status_message("NOTE: Fallback to gpsbabel or MapSource, because there's no USB support in perl-GPS", "infodlg");
-	}
+    if ($os eq 'win') {
+	# Assume that the windows distribution has gpsbabel bundled,
+	# so always prefer this one
 	require GPS::Gpsbabel;
-	if (!GPS::Gpsbabel->gpsbabel_available) {
+	if (GPS::Gpsbabel->gpsbabel_available) {
+	    gps_interface('BBBikeGPS::GpsbabelSend', -noloading => 1);
+	} else {
 	    require BBBikeGPS;
 	    if (GPS::BBBikeGPS::MapSourceSend->has_mapsource) {
 		gps_interface('BBBikeGPS::MapSourceSend', -noloading => 1);
 	    } else {
-		my $recommended_path = GPS::Gpsbabel->gpsbabel_recommended_path;
-		my $download_location = GPS::Gpsbabel->gpsbabel_download_location;
-		# XXX use hypertext_widget
-		status_message(<<EOF, "die");
+		if ($gps_device ne 'USB' && eval { require GPS::DirectGarmin; 1 }) {
+		    gps_interface('DirectGarmin');
+		} else {
+		    my $recommended_path = GPS::Gpsbabel->gpsbabel_recommended_path;
+		    my $download_location = GPS::Gpsbabel->gpsbabel_download_location;
+		    # XXX use hypertext_widget
+		    status_message(<<EOF, "die");
 Das Programm gpsbabel wird zur Übertragung zum GPS-Gerät benötigt und muss noch installiert werden. gpsbabel gibt es hier zum Download:
 $download_location
 
@@ -9697,9 +9701,8 @@ Die heruntergeladene .zip-Datei sollte im Verzeichnis
 $recommended_path
 ausgepackt werden.
 EOF
+		}
 	    }
-	} else {
-	    gps_interface('BBBikeGPS::GpsbabelSend', -noloading => 1);
 	}
     } else {
 	gps_interface('DirectGarmin');
