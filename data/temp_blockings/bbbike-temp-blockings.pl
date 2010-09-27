@@ -650,8 +650,8 @@ EOF
        text  => 'Bachstraße: In beiden Richtungen Störungen durch Rohrbruch, gesperrt bis Do 12:00 ',
        type  => 'handicap',
       data  => <<EOF,
-userdel	q4 6020,12492 5951,12353 5938,12281 5874,12165 5798,12021
-userdel	q4 5771,11887 5787,11966 5798,12021
+userdel	q4 6020,12492 5951,12353 5938,12281 5874,12165 5790,12026
+userdel	q4 5758,11895 5775,11975 5790,12026
 EOF
      },
      { from  => 1093125600, # 2004-08-22 00:00
@@ -1385,7 +1385,7 @@ userdel	q4 6828,12031 7383,12095
 userdel	q4 6828,12031 6787,12099
 userdel	q4 8775,12457 8540,12420
 userdel	q4 8737,12098 8595,12066
-userdel	q4 6642,12010 5901,11902
+userdel	q4 6642,12010 5900,11913
 userdel	q4 6642,12010 6685,11954
 userdel	q4 8595,12066 8600,12165
 userdel	q4 8540,12420 8573,12325
@@ -2222,7 +2222,7 @@ EOF
        text  => 'Holzendorffstraße zwischen Rönnestraße und Gervinusstraße Brückenarbeiten, Straße gesperrt. Dauer: bis 15.09.2005, 17.00 Uhr ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 3049,10719 3093,10594
+userdel	2 3041,10732 3093,10594
 EOF
      },
      { from  => 1121378400, # 2005-07-15 00:00
@@ -4306,7 +4306,7 @@ EOF
        text  => 'Holtzendorffstr. zwischen Rönnestr. und Gervinusstr. in beiden Richtungen Brückenarbeiten gesperrt bis 05.05.06, 15:00 Uhr ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 3093,10594 3049,10719
+userdel	2::inwork 3093,10594 3041,10732
 EOF
      },
      { from  => 1146768809, # 2006-05-04 20:53
@@ -4952,7 +4952,7 @@ userdel	2::temp 6653,12067 6642,12010 6685,11954 6744,11936 6809,11979 6828,1203
 userdel	2::temp 6540,11754 6685,11954
 userdel	2::temp 6825,11486 6809,11570 6778,11742 6744,11936
 userdel	2::temp 6653,12067 6178,12387
-userdel	2::temp 5901,11902 6642,12010
+userdel	2::temp 5900,11913 6642,12010
 userdel	2::temp 7039,12314 6787,12099
 EOF
      },
@@ -5324,7 +5324,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_003144',
        data  => <<EOF,
-userdel	1::inwork 11323,12484 11209,12430 11092,12375 11084,12395 11056,12461 10954,12635
+userdel	1::inwork 11323,12484 11209,12430 11092,12375 11084,12395 11059,12450 10954,12635
 userdel	1::inwork 10954,12635 11057,12715 11105,12764 11134,12793
 EOF
      },
@@ -12094,7 +12094,7 @@ EOF
        source_id => 'IM_009465',
        data  => <<EOF,
 userdel	2::temp 6787,12099 6754,12108 6725,12113 6690,12104 6653,12067
-userdel	2::temp 6178,12387 6653,12067 6642,12010 5901,11902
+userdel	2::temp 6178,12387 6653,12067 6642,12010 5900,11913
 userdel	2::temp 6642,12010 6685,11954 6744,11936 6809,11979 6828,12031 7383,12095 7816,12150 8055,12186 8089,12190 8214,12205 8538,12245
 userdel	2::temp 6744,11936 6778,11742
 userdel	2::temp 6828,12031 6787,12099 7039,12314
@@ -16517,8 +16517,8 @@ userdel	2::inwork 3314,15782 3564,16294
 EOF
      },
      { from  => 1270235189, # 2010-04-02 21:06
-       until => Time::Local::timelocal(reverse(2010-1900,9-1,24,16,0,0)), # 1283205600, # 2010-08-31 00:00
-       text  => 'Neustädtische Kirchstr. (Mitte) Richtung Unter den Linden zwischen Dorotheenstr. und Unter den Linden Baustelle, Fahrtrichtung gesperrt bis 24.09.2010 16:00 Uhr ',
+       until => Time::Local::timelocal(reverse(2010-1900,9-1,28,16,0,0)), # 1283205600, # 2010-08-31 00:00
+       text  => 'Neustädtische Kirchstr. (Mitte) Richtung Unter den Linden zwischen Dorotheenstr. und Unter den Linden Baustelle, Fahrtrichtung gesperrt bis 28.09.2010 16:00 Uhr ',
        type  => 'handicap',
        source_id => 'IM_014421',
        data  => <<EOF,
@@ -17610,7 +17610,7 @@ EOF
 (Eingang Columbiadamm/Golßener Str. - Rundkurs auf dem Flughafen Tempelhof)	2::night 10384,8628 10360,8521 10298,8245
 (Rundkurs auf dem Flughafen Tempelhof)	2::night 11463,7785 11470,7744 11543,7369 11593,7314 11598,7264 11407,7198 11310,7071 11128,6967 10944,6790 10746,6693 10558,6661 10282,6692 10023,6806 9792,6964 9681,7075 9509,7195 9545,7426 9525,7558
 (Rundkurs auf dem Flughafen Tempelhof)	2::night 9525,7558 9518,7609 9611,7934 9710,8143 9884,8265 10042,8270 10298,8245 10575,8218
-(Rundkurs auf dem Flughafen Tempelhof)	2::night 10575,8218 10729,8152 10924,7987 11090,7916 11264,7882 11355,7871 11381,7775 11460,7447 11518,7314
+(Rundkurs auf dem Flughafen Tempelhof)	2::night 10575,8218 10729,8152 10909,8003 11090,7916 11264,7882 11355,7871 11381,7775 11460,7447 11518,7314
 (Rundkurs auf dem Flughafen Tempelhof - Eingang Tempelhofer Damm)	2::night 9525,7558 9431,7425 9392,7339 9300,7312 9302,7294 9242,7286
 (Weg parallel zum Tempelhofer Damm)	2::night  9300,7312 9281,7651 9281,7795
 (Eingang Peter-Strasser-Weg)	2::night 9281,7795 9240,7797
@@ -17619,7 +17619,8 @@ EOF
 (Nördliche Landebahn)	2::night 9351,7600 9518,7609 9654,7621 11279,7768 11381,7775 11463,7785
 (Nördliche Landebahn - Eingang Oderstr./Herrfurthstr.)	2::night 11463,7785 11439,7894
 (Eingang Oderstr./Herrfurthstr. - Flughafen Tempelhof)	2::night 11472,7899 11458,7897 11439,7894
-(Strecke an der nordöstlichen Begrenzung)	2::night 11439,7894 11418,8015 11327,8007 11303,8089 11143,8139 11005,8064 10640,8366 10360,8521
+(Strecke an der nordöstlichen Begrenzung - Rundkurs)	2::night 11005,8064 10909,8003
+(Strecke an der nordöstlichen Begrenzung)	2::night 11439,7894 11418,8015 11327,8007 11303,8089 11143,8139 11005,8064 10803,8251 10640,8366 10360,8521
 (Weg parallel zur Oderstr.)	2::night 11458,7897 11489,7748 11507,7647 11528,7528 11547,7432 11554,7382 11593,7314
 (Eingang Kienitzer Str.)	2::night 11498,7750 11489,7748 11479,7746 11470,7744
 (Flughafen Tempelhof - Eingang Allerstr.)	2::night 11507,7647 11515,7654
@@ -17781,8 +17782,8 @@ userdel auto	3 6192,10542 6223,10634 6250,10701
 userdel auto	3 8522,12239 8538,12245 8522,12187
 userdel auto	3 7103,11247 6851,11346 6692,11365
 userdel auto	3 6719,10347 6753,10446 6745,10619
-userdel auto	3 6573,11943 6642,12010 5901,11902
-userdel auto	3 5901,11902 6642,12010 6573,11943
+userdel auto	3 6573,11943 6642,12010 5900,11913
+userdel auto	3 5900,11913 6642,12010 6573,11943
 userdel auto	3 6692,11365 6851,11346 7103,11247
 userdel auto	3 5681,10696 5782,10884 5829,10964
 userdel auto	3 7875,12363 7816,12150 7827,12105

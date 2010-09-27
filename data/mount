@@ -44,7 +44,7 @@ Steigung 6.8% (Ruhwaldweg)	St; 758,13334 721,13296
 Steigung 6.8% (Teufelsseechaussee [Auffahrt zum ehem. Horchposten])	St; -817,9533 -883,9664
 Steigung 6.6% (Alt-Kladow)	St; -6947,4861 -7080,4896
 Steigung 6.6% (Rohrsängersteig)	St; -6879,4775 -6947,4861
-Steigung 6.4% (Nach der Höhe: Qualität?)	St; 4355,21967 4308,22058
+Steigung 6.4% (Nach der Höhe)	St; 4355,21967 4308,22058
 Steigung 6.3% ((Verlängerte Waldallee))	St; -8929,5984 -8917,5986
 Steigung 6.3% ((Verlängerte Waldallee))	St; -9054,5984 -9031,5984
 Steigung 6.3% ((Verlängerte Waldallee))	St; -9031,5984 -8929,5984
@@ -85,6 +85,7 @@ Steigung 5.4% (Hasensprung (Grunewald))	St; 1366,8986 1330,9038
 Steigung 5.4% (Reinholdstr.)	St; 13014,6833 12953,6820
 Steigung 5.4% (Hasensprung (Grunewald))	St; 1386,8959 1366,8986
 Steigung 5.3% (Teufelsseechaussee [Auffahrt zum ehem. Horchposten])	St; -943,9826 -935,9846
+Steigung 5.3% (Nach der Höhe)	St; 4254,22174 4308,22058
 Steigung 5.3% (Teufelsseechaussee [Auffahrt zum ehem. Horchposten])	St; -923,9757 -943,9826
 Steigung 5.2% (Am Stichkanal)	St; 2733,871 2659,962
 Steigung 5.1% (Koblanckstr.)	St; -5883,1948 -6021,2068
@@ -402,7 +403,6 @@ Steigung 2.5% (Spandauer Damm)	St; -205,12985 -129,12947
 Steigung 2.5% (Menzelstr. (Schöneberg))	St; 6141,6878 6143,6853
 Steigung 2.5% (Drössestr.)	St; 21078,1168 20971,1046
 Steigung 2.5% (Erdener Str.)	St; 1757,9282 1704,9293
-Steigung 2.5% (Nach der Höhe: Qualität?)	St; 4254,22174 4308,22058
 Steigung 2.5% (Straße am Schildhorn)	St; -3597,9446 -3456,9479
 Steigung 2.5% (Inselstr. (Nikolassee))	St; -5021,4110 -5243,4212
 Steigung 2.5% (Koenigsallee)	St; 1623,8923 1541,8857
@@ -414,7 +414,6 @@ Steigung 2.5% (Havelchaussee)	St; -3423,9642 -3361,9535
 Steigung 2.5% (Zur Haveldüne)	St; -4793,10711 -4700,10704
 Steigung 2.5% (Inselstr. (Nikolassee))	St; -4964,4100 -5021,4110
 Steigung 2.5% (Tempelhofer Ufer)	St; 8724,10327 8804,10303
-Steigung 2.5% (Waidmannsluster Damm)	St; 4371,22234 4254,22174
 Steigung 2.5% (Flughafenstr.)	St; 12195,8436 12068,8409
 Steigung 2.5% (Straße am Schildhorn)	St; -3456,9479 -3423,9642
 Steigung 2.5% (Rembrandtstr. (Schöneberg))	St; 6243,7033 6141,6878
@@ -544,7 +543,7 @@ Steigung 2.1% (Hochstr. (Gesundbrunnen))	St; 9059,16038 8923,15850
 Steigung 2.1% (Kaiserdamm)	St; 2191,11451 2109,11441
 Steigung 2.1% (Kreuzbergstr.)	St; 8475,9240 8389,9087
 Steigung 2.1% (Fürstenbrunner Weg)	St; 1901,13061 1935,12761
-Steigung 2.1% (Mittelweg (Neukölln))	St; 12923,7611 12781,7691
+Steigung 2.1% (Mittelweg (Neukölln))	St; 12923,7611 12771,7679
 Steigung 2.1% (Imchenallee)	St; -6811,4893 -6474,5144
 Steigung 2.1% (Uferpromenade)	St; -8950,6853 -8934,6893
 Steigung 2.1% (Kranzallee)	St; -901,10901 -1021,10889
@@ -606,10 +605,9 @@ Steigung 2.0% (Lepsiusstr.)	St; 4558,5863 4520,5793
 Steigung 2.0% (Arndtstr. (Kreuzberg))	St; 9674,9179 9617,9185
 Steigung 2.0% (Ritterfelddamm)	St; -7551,5508 -7389,5294
 Steigung 2.0% (Christburger Str.)	St; 11920,14468 11642,14625
-Steigung 2.0% (Verl. Pücklerstr. (?))	St; 546,6583 369,6594
+Steigung 2.0% (Verl. Pücklerstr. (Existieren Straßenschilder für die "Verlängerte Pücklerstr."?))	St; 546,6583 369,6594
 Steigung 2.0% (Oranienburger Str. (Wittenau))	St; 5210,21636 5136,21738
 Steigung 2.0% (Paulsborner Str.)	St; 3202,9583 3127,9522
-Steigung 2.0% (Mittelweg (Neukölln))	St; 12644,7688 12521,7701
 Steigung 2.0% (Lindenallee (Westend))	St; 1664,12332 1638,12250
 Steigung 2.0% (Straße zum Löwen)	St; -5901,1562 -5867,1449
 Steigung 2.0% (Endestr.)	St; -6039,1683 -6054,1608
@@ -622,8 +620,8 @@ Steigung 2.0% (Wegedornstr.)	St; 18881,2062 18863,1950
 Steigung 2.0% ((zur Depothalle))	St; 8409,8904 8389,9087
 Steigung 2.0% (Saltykowstr.)	St; 12865,7923 12726,7887
 Steigung 2.0% (Hüttenweg (Grunewald, Dahlem))	St; 441,6435 486,6404
-Steigung 2.0% (Verl. Pücklerstr. (?))	St; 369,6594 306,6582
-Steigung 2.0% (Verl. Pücklerstr. (?))	St; 306,6582 218,6571
+Steigung 2.0% (Verl. Pücklerstr. (Existieren Straßenschilder für die "Verlängerte Pücklerstr."?))	St; 369,6594 306,6582
+Steigung 2.0% (Verl. Pücklerstr. (Existieren Straßenschilder für die "Verlängerte Pücklerstr."?))	St; 306,6582 218,6571
 Steigung 2.0% (Stralsunder Str. (Gesundbrunnen))	St; 9341,14701 9517,14785
 Steigung 2.0% (Gabelsbergerstr.)	St; 14381,12205 14451,12396
 Steigung 2.0% (Delbrückstr. (Neukölln))	St; 12860,6667 12743,6645
@@ -642,6 +640,7 @@ Steigung 1.9% (Silbersteinstr.)	St; 12983,6904 12816,6870
 Steigung 1.9% (Albrechtstr. (Steglitz))	St; 5088,5495 4991,5531
 Steigung 1.9% (Böttgerstr.)	St; 8720,15914 8923,15850
 Steigung 1.9% (Neue Kantstr.)	St; 2252,11037 2016,11034
+Steigung 1.9% (Mittelweg (Neukölln))	St; 12647,7672 12520,7694
 Steigung 1.9% (Sensburger Allee)	St; 326,11391 456,11233
 Steigung 1.9% (Glasower Str.)	St; 12876,6589 12756,6578
 Steigung 1.9% (Gutachstr.: Qualität?)	St; 4716,22535 4800,22418
@@ -777,6 +776,7 @@ Steigung 1.7% (Kopfstr.)	St; 12220,7822 12176,7811
 Steigung 1.7% (Nußbaumallee)	St; 1795,12247 1732,12224
 Steigung 1.6% (Schwedter Str. (Mitte, Prenzlauer Berg))	St; 10122,15647 10101,15751
 Steigung 1.6% (Feuerbachstr.)	St; 5390,6299 5560,6344
+Steigung 1.6% (Mittelweg (Neukölln))	St; 12771,7679 12698,7677
 Steigung 1.6% (Olympischer Platz)	St; -272,12039 -514,11991
 Steigung 1.6% (Spandauer Damm)	St; -442,13058 -264,13009
 Steigung 1.6% (Pardemannstr.: Qualität?)	St; -7449,348 -7461,381
@@ -838,7 +838,6 @@ Steigung 1.5% (Quermatenweg)	St; 103,5123 -21,5099
 Steigung 1.5% (Seebadstr. (Kladow))	St; -8864,6289 -8773,6284
 Steigung 1.5% (Gatower Str.)	St; -4780,9838 -4784,9894
 Steigung 1.5% (Delbrückstr. (Grunewald, Schmargendorf))	St; 1623,8923 1767,8853
-Steigung 1.5% (Mittelweg (Neukölln))	St; 12521,7701 12335,7770
 Steigung 1.5% (Fontanestr. (Grunewald))	St; 972,8626 1043,8550
 Steigung 1.5% (Flughafenstr.)	St; 12500,8504 12349,8464
 Steigung 1.5% (Knausstr. (Steglitz, Schöneberg))	St; 6042,6686 6027,6722
@@ -891,6 +890,7 @@ Steigung 1.4% (Schönagelstr.)	St; 21640,16279 21617,16061
 Steigung 1.4% (Danziger Str.)	St; 12317,14535 12128,14640
 Steigung 1.4% (Stuhmer Allee)	St; -82,11330 -391,11322
 Steigung 1.4% (Schäferstr. (Wannsee))	St; -7449,348 -7474,341
+Steigung 1.4% (Mittelweg (Neukölln))	St; 12520,7694 12335,7770
 Steigung 1.4% (Königstr. (Wannsee))	St; -6006,1234 -5952,1245
 Steigung 1.4% (Eichkampstr.)	St; 693,9129 890,9399
 Steigung 1.4% (Oderberger Str.)	St; 10723,14772 10840,14706
@@ -917,7 +917,6 @@ Steigung 1.4% (Bergstr. (Steglitz))	St; 5290,5704 5465,5726
 Steigung 1.4% (Nogatstr.)	St; 12865,7192 12740,7162
 Steigung 1.4% (Koenigsallee)	St; 1932,9263 2056,9446
 Steigung 1.4% ((Havel-Ufer Gatow))	St; -4460,9456 -4442,9625
-Steigung 1.4% (Mittelweg (Neukölln))	St; 12781,7691 12697,7689
 Steigung 1.4% (Delbrückstr. (Neukölln))	St; 13125,6717 12981,6689
 Steigung 1.4% (Schäferstr. (Wannsee))	St; -7474,341 -7587,312
 Steigung 1.4% (Siegfriedstr. (Neukölln))	St; 12872,7134 12843,7093
@@ -971,7 +970,6 @@ Steigung 1.3% (Monumentenstr.)	St; 8180,9099 8081,9120
 Steigung 1.3% (Kronprinzessinnenweg)	St; -4280,2539 -4188,2674
 Steigung 1.3% (Teplitzer Str.)	St; 2132,8422 2129,8333
 Steigung 1.3% (Bayerischer Platz)	St; 6053,9224 6063,9106
-Steigung 1.3% (Morusstr.)	St; 12521,7701 12478,7878
 Steigung 1.3% (Fürstenbrunner Weg)	St; 1488,13454 1545,13418
 Steigung 1.3% (Platanenallee)	St; 1657,11737 1499,11777
 Steigung 1.3% (Tapiauer Allee)	St; -651,10781 -648,10820
@@ -1024,6 +1022,7 @@ Steigung 1.2% (Reichsstr.)	St; 481,12319 628,12138
 Steigung 1.2% (Appelbacher Weg)	St; 27453,1229 27450,1182
 Steigung 1.2% (Olympischer Platz)	St; -110,12019 -193,12051
 Steigung 1.2% (Weinmeisterhornweg)	St; -4564,11180 -4789,11225
+Steigung 1.2% (Morusstr.)	St; 12520,7694 12478,7878
 Steigung 1.2% (Grunewaldstr. (Steglitz))	St; 4172,5918 4291,5895
 Steigung 1.2% (Bernauer Str. (Gesundbrunnen))	St; 9410,14410 9472,14478
 Steigung 1.2% (Straßburger Str. (Prenzlauer Berg))	St; 11160,14002 11262,14136
@@ -1113,7 +1112,6 @@ Steigung 1.1% (Karl-Marx-Str.)	St; 13081,7014 13095,6926
 Steigung 1.1% (Max-Urich-Str.)	St; 8953,14758 9041,14896
 Steigung 1.1% (Mansfelder Str.)	St; 4158,9109 4102,9164
 Steigung 1.1% (Eichkampstr.)	St; 693,9129 676,9104
-Steigung 1.1% (Mittelweg (Neukölln))	St; 12697,7689 12644,7688
 Steigung 1.1% (Stallupöner Allee)	St; -1490,10734 -1306,10756
 Steigung 1.1% (Usedomer Str.)	St; 9275,14846 9437,14926
 Steigung 1.1% (Alexandrinenstr.)	St; 10122,10294 10083,10192
@@ -1196,6 +1194,7 @@ Steigung 1.1% (Jonasstr. (Neukölln))	St; 12703,7370 12585,7357
 Steigung 1.1% (Havelchaussee)	St; -3947,5129 -3872,4953
 Steigung 1.1% (Ilsestr. (Neukölln))	St; 12632,7137 12645,7087
 Steigung 1.1% (Herulerweg)	St; -4380,10891 -4482,10914
+Steigung 1.1% (Mittelweg (Neukölln))	St; 12698,7677 12647,7672
 Steigung 1.1% (Columbiadamm)	St; 9801,8683 9570,8715
 Steigung 1.1% (Belziger Str.)	St; 7110,9024 7315,9156
 Steigung 1.1% (Oberfeldstr.)	St; 20599,11938 20610,12050

@@ -498,7 +498,17 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'IM_011184',
+         'until' => undef,
+         'text' => 'Weinmeisterstr. (Mitte) in Richtung Alexanderplatz gesperrt',
+         'from' => undef,
+         'id' => 1567,
+         'data' => '#: last_checked: 2010-09-23
+userdel	q4::inwork; 10350,13376 10527,13257
+',
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
@@ -1176,8 +1186,8 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        {
          'source_id' => 'IM_014421',
-         'until' => 1285336800,
-         'text' => 'Neustädtische Kirchstr. (Mitte) Richtung Unter den Linden zwischen Dorotheenstr. und Unter den Linden Baustelle, Fahrtrichtung gesperrt bis 24.09.2010 16:00 Uhr ',
+         'until' => 1285682400,
+         'text' => 'Neustädtische Kirchstr. (Mitte) Richtung Unter den Linden zwischen Dorotheenstr. und Unter den Linden Baustelle, Fahrtrichtung gesperrt bis 28.09.2010 16:00 Uhr ',
          'from' => 1270235189,
          'id' => 1946,
          'data' => 'userdel	2::inwork; 9123,12500 9130,12433
@@ -1526,7 +1536,7 @@ userdel	q4::inwork; 10614,19907 10742,19632
 (Eingang Columbiadamm/Golßener Str. - Rundkurs auf dem Flughafen Tempelhof)	2::night 10384,8628 10360,8521 10298,8245
 (Rundkurs auf dem Flughafen Tempelhof)	2::night 11463,7785 11470,7744 11543,7369 11593,7314 11598,7264 11407,7198 11310,7071 11128,6967 10944,6790 10746,6693 10558,6661 10282,6692 10023,6806 9792,6964 9681,7075 9509,7195 9545,7426 9525,7558
 (Rundkurs auf dem Flughafen Tempelhof)	2::night 9525,7558 9518,7609 9611,7934 9710,8143 9884,8265 10042,8270 10298,8245 10575,8218
-(Rundkurs auf dem Flughafen Tempelhof)	2::night 10575,8218 10729,8152 10924,7987 11090,7916 11264,7882 11355,7871 11381,7775 11460,7447 11518,7314
+(Rundkurs auf dem Flughafen Tempelhof)	2::night 10575,8218 10729,8152 10909,8003 11090,7916 11264,7882 11355,7871 11381,7775 11460,7447 11518,7314
 (Rundkurs auf dem Flughafen Tempelhof - Eingang Tempelhofer Damm)	2::night 9525,7558 9431,7425 9392,7339 9300,7312 9302,7294 9242,7286
 (Weg parallel zum Tempelhofer Damm)	2::night  9300,7312 9281,7651 9281,7795
 (Eingang Peter-Strasser-Weg)	2::night 9281,7795 9240,7797
@@ -1535,7 +1545,8 @@ userdel	q4::inwork; 10614,19907 10742,19632
 (Nördliche Landebahn)	2::night 9351,7600 9518,7609 9654,7621 11279,7768 11381,7775 11463,7785
 (Nördliche Landebahn - Eingang Oderstr./Herrfurthstr.)	2::night 11463,7785 11439,7894
 (Eingang Oderstr./Herrfurthstr. - Flughafen Tempelhof)	2::night 11472,7899 11458,7897 11439,7894
-(Strecke an der nordöstlichen Begrenzung)	2::night 11439,7894 11418,8015 11327,8007 11303,8089 11143,8139 11005,8064 10640,8366 10360,8521
+(Strecke an der nordöstlichen Begrenzung - Rundkurs)	2::night 11005,8064 10909,8003
+(Strecke an der nordöstlichen Begrenzung)	2::night 11439,7894 11418,8015 11327,8007 11303,8089 11143,8139 11005,8064 10803,8251 10640,8366 10360,8521
 (Weg parallel zur Oderstr.)	2::night 11458,7897 11489,7748 11507,7647 11528,7528 11547,7432 11554,7382 11593,7314
 (Eingang Kienitzer Str.)	2::night 11498,7750 11489,7748 11479,7746 11470,7744
 (Flughafen Tempelhof - Eingang Allerstr.)	2::night 11507,7647 11515,7654

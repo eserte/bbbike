@@ -45,7 +45,7 @@ Holtei von S - Boxhagener	3 14575,11407 14639,11512 14577,11582
 Boxhagener von W - Holtei	3 14577,11582 14639,11512 14710,11626
 Holtei von N - Boxhagener	3 14710,11626 14639,11512 14771,11345
 Boxhagener von E - Holtei	3 14771,11345 14639,11512 14575,11407
-Bachstr. - 17. Juni (?)	3 5798,12021 5787,11966 5771,11887 5901,11902
+Bachstr. - 17. Juni (?)	3 5790,12026 5775,11975 5758,11895 5900,11913
 Fasanen - Hertzallee (nur f¸r BVG frei)	3 5456,11742 5360,11510 5356,11500 5587,11397
 Fasanenstr.	1 5198,10234 5207,10399
 Naumannstr. - Kolonnenstr.	3 7713,8600 7709,8777 7642,8815
@@ -120,8 +120,8 @@ Schendelgasse	1 10653,13493 10703,13467 10767,13443
 Mulackstr.	1 10304,13575 10406,13543 10535,13509 10640,13471
 Hirtenstr. - Karl-Liebknecht-Str.	3 10923,13317 11015,13264 11021,13271 11087,13359
 Karl-Liebknecht-Str. - Hirtenstr.	3 10920,13139 11015,13264 10923,13317
-Parochialstr.	1 10954,12394 11040,12415
-Waisenstr.	1 11040,12415 11025,12450 11056,12461
+Parochialstr.	1 10952,12401 11040,12415
+Waisenstr.	1 11040,12415 11032,12439 11059,12450
 Waisenstr.	1 11040,12415 11049,12386 11094,12243
 Grimmstr.	1 11163,9903 11200,9889
 Sonnenallee - Tellstr.	3 12242,8972 12320,8927 12402,9080
@@ -674,8 +674,8 @@ Grunerstr. -> J¸denstr.: Mittelstreifen	3::igndisp 10878,12560 10800,12461 10831
 J¸denstr. -> J¸denstr.: Mittelstreifen	3::igndisp 10831,12371 10800,12461 10778,12493
 J¸denstr. -> Grunerstr.: Mittelstreifen	3::igndisp 10831,12371 10800,12461 10738,12364
 Grunerstr. -> J¸denstr.: Mittelstreifen	3::igndisp 10738,12364 10800,12461 10778,12493
-Klosterstr. -> Grunerstr.: Mittelstreifen	3::igndisp 10954,12394 10878,12560 10800,12461
-Grunerstr. -> Klosterstr.: Mittelstreifen	3::igndisp 10954,12635 10878,12560 10954,12394
+Klosterstr. -> Grunerstr.: Mittelstreifen	3::igndisp 10952,12401 10878,12560 10800,12461
+Grunerstr. -> Klosterstr.: Mittelstreifen	3::igndisp 10954,12635 10878,12560 10952,12401
 Bayernring	1 8616,8605 8455,8567 8371,8543
 Georg-Hermann-Allee (Potsdam): (teilweise) Einbahnstraﬂe	1 -13429,1069 -13418,1668
 Mittelstreifen	3nocross::ignrte -3002,13442 -2977,13424 -2967,13417 -2937,13399 -2706,13291

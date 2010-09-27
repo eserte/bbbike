@@ -79,9 +79,11 @@ Neuendorfer Str.	?::projected -2883,15571 -2856,15687 -2869,15782
 #: next_check: 2010-08-24 (public)
 Neuendorfer Str.: Radspuren werden ab 9. August 2010 markiert	?::inwork -2869,15782 -2886,15867 -2915,15994 -3040,16246
 # 
+#: next_check: 2010-11-01
+Uhlandstr.	?::projected 4984,9675 5004,9842 5026,10038 5036,10139 5063,10384
+# 
 #: next_check: 2010-03-01 vvv
 Joachim-Friedrich-Str.	?::projected 3067,9592 3069,9622 3083,9796 3092,9886 3108,10069 3111,10116 3132,10499
-Uhlandstr.	?::projected 4984,9675 5004,9842 5026,10038 5036,10139 5063,10384
 Poelchaustr.	?::projected 20343,14429 20184,14435 20059,14441 19817,14454 19687,14469 19593,14472 19395,14477
 Germanenstr. (oder nur das kleine Stück bis Waldsteg?)	?::projected 8396,19071 8359,19162 8304,19475 8268,19558 8234,19634 8233,19695 8231,19806 8242,19869 8234,19936
 Goerzallee	?::projected 4164,2717 4065,2576 3983,2454 3805,2196 3700,2045 3640,1959 3584,1877 3425,1647 3199,1455 3140,1411 2843,1281 2663,1199 2527,1136 2515,1131 2404,1078 2372,1043 2333,1003 2147,811 1946,604 1940,587 1834,339 1765,294
@@ -141,8 +143,8 @@ Lindenstr. bekommt Radspuren	?::projected 9795,10512 9770,10590 9777,10719 9805,
 #: XXX http://fahrrad.wikia.com/wiki/Fahrradstra%C3%9Fe/Liste_von_Fahrradstra%C3%9Fen#Berlin -> ja
 #: XXX Frank Baumeister: -> ja
 #: XXX von Almuth Jörns und MichaelM widersprochen -> nein
-#: last_checked: 2010-07
-#: next_check: 2010-10-01
+#: last_checked: 2010-09-01
+#: next_check: 2011-01-01
 Fahrradstraße in der Lauenburger Str.	?::projected 5883,4985 5909,5072 5939,5169 5976,5293 6002,5424 6019,5785 6018,5884 6017,5975 6008,6067 6019,6087 6014,6160 5996,6238 5925,6311 5865,6373 5803,6403
 # 
 #: section ^^^
@@ -403,12 +405,6 @@ Zeitverlust beim Überqueren der Charlottenstraße	? -3091,14220 -3135,14183 -3275
 Radweg auf Alt-Biesdorf hier verschwenkt	? 20114,11719 20025,11747
 #: XXX_prog:
 Weitere Radwegverschwnekungen, siehe Track vom 25. April 2009	? 19389,11761 19004,11780
-# XXX #: last_checked: 2009-04-25: Antwort: nein. Rägeliner Str.: evtl. wird die Straße neu gewalzt?	?::inwork 19959,10443 20025,10337
-#: by: http://www.morgenpost.de/content/2008/02/03/berlin/944972.html
-#: by: http://www.morgenpost.de/bezirke/mitte/article800710/Fahrradstrassen_in_Berlin.html
-#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0808/nachricht3157.html
-#: last_checked: 2010-06-23
-Prinzregentenstr.: Ist die Prinzregentenstr. mittlerweile eine Fahrradstraße? Wenn ja, gilt die Fahrradstraßenregelung für die gesamte Straße oder nur einen Teilabschnitt?	? 5660,8591 5655,8828 5647,9022
 #: XXX_prog: verbessern, wenn der entsprechende Routingtext besser aussehen würde (also z.B. "nach rechts und sofort wieder nach links")
 Kleineweg: ist hier leicht versetzt	? 9130,7804 9131,7652 9120,7600
 Reinickendorfer Route 5, wo geht es weiter?	? 6558,18947 6442,18839
@@ -684,7 +680,7 @@ Rudow - Kleinziethen: Qualität?	? 15118,-970 15100,-1008 14652,-1410 14341,-1751
 Mozartweg - Radweg: Qualität der Verbindung?	? 18659,850 18735,832
 # XXX del it's elsewhere: Mauerweg Rudow: Qualität (laut "Berliner Umland" gut geeigneter Radweg)?	? 18609,375 18724,1053 18610,1077
 # XXX del it's elsewhere: Mauerweg Rudow: Existiert hier ein Verbindung vom Niederschlemaer Weg aus? Qualität (laut "Berliner Umland" witterungsabhängige Strecke)?	? 18677,1249 18614,1453 18584,1575 18447,1727
-# XXX del hier ist wirklich kein Weg, aber bald etwas parallel zur Autobahn: Mauerweg Rudow: Qualität (laut "Berliner Umland" witterungsabhängige Strecke)?	? 18365,1914 18378,2246
+# XXX del hier ist wirklich kein Weg, aber bald etwas parallel zur Autobahn: Mauerweg Rudow: Qualität (laut "Berliner Umland" witterungsabhängige Strecke)?	? 18365,1914 18343,2204
 Diedersdorfer Weg - Marienfelder Allee, Kolonie Amstelveen: Qualität (laut ADFC-Karte gut befahrbar)? Wie ist die genaue Wegführung am Diedersdorfer Weg?	? 7781,-182 7540,18 7501,83
 # ansonsten gleiche Wegbeschaffenheit wie der kreuzende Weg:
 Am Marderberg, kreuzender Weg: genaue Wegführung?	? 14288,19459 14328,19527 14201,19946
@@ -2292,7 +2288,6 @@ Carl-Steffeck-Str.: Qualität?	? 11494,-1468 11246,-1496
 Rennsteig: Qualität?	? 11666,-1209 11659,-1152 11600,-950 11598,-915
 Königsteinstr. (Lichtenrade): Qualität?	? 11259,-555 11264,-605 11278,-719 11291,-834 11305,-952 11310,-996 11495,-1128 11551,-1114
 Marie-Juchacz-Str. (Potsdam): Qualität?	? -7369,-5648 -7398,-5650 -7472,-5652 -7537,-5620 -7592,-5565 -7655,-5517 -7713,-5470 -7767,-5415
-Marie-Hannemann-Str. (Potsdam): Qualität?	? -7796,-5447 -7767,-5415 -7678,-5326 -7633,-5279 -7597,-5240 -7569,-5240
 Margarete-Buber-Neumann-Str. (Potsdam): Qualität?	? -7784,-4963 -7689,-5039
 Karoline-Schulze-Str. (Potsdam): Qualität?	? -7844,-5026 -7747,-5102
 Munthestr. (Potsdam): Qualität?	? -7487,-5048 -7484,-5140
@@ -2358,9 +2353,9 @@ Eutinger Weg: Qualität?	? 4437,22655 4531,22697 4593,22702
 Gutachstr.: Qualität?	? 4586,22769 4593,22702 4648,22632 4716,22535 4800,22418
 Benekendorffstr.: Qualität der Benekendorffstr. zwischen Oraniendamm und Düsterhauptstr (möglicherweise Kopfsteinpflaster)?	? 4533,22399 4616,22478
 Halalistr.: Qualität?	? 4147,22309 4174,22328 4209,22338 4280,22383
+#: by: http://farm5.static.flickr.com/4122/4998979916_367325226d_b.jpg (Kopfsteinpflaster)
 Hochjagdstr.: Qualität?	? 3947,22000 4032,21892 4098,21809
 Lierbacher Weg: Qualität?	? 5152,22809 5260,22634
-Nach der Höhe: Qualität?	? 4254,22174 4308,22058 4355,21967
 Nagolder Pfad: Qualität?	? 4771,22696 4648,22632 4526,22567
 Pforzheimer Str.: Qualität?	? 4907,22885 5095,22982 5143,22934 5210,22865
 Tiefenbronner Weg: Qualität?	? 4907,22885 4945,22799 4996,22708
@@ -2850,7 +2845,6 @@ Rotkehlchenweg (Buckow): Qualität? Kann man als Radfahrer zum Kormoranweg fahren
 Rotschwanzweg: Qualität?	? 13852,3721 14128,3620
 #: XXX anonymous meint: Asphalt, Q0, q2 ohne weitere Angaben, aber RW1???
 Zaunkönigweg: Qualität?	? 13818,3623 13995,3541
-Trappenpfad: Qualität?	? 14387,3875 14737,4175
 Hochspannungsweg (Buckow): Qualität?	? 14725,3617 14768,3651 14858,3768
 Grasmückenweg: Qualität?	? 14911,3568 14877,3475
 Kohlmeisenweg: Qualität?	? 14991,3547 14954,3447
@@ -3012,7 +3006,6 @@ Rupertweg: Qualität?	? 11629,23360 11600,23317 11536,23231
 Rupertweg: Qualität?	? 11551,23221 11505,23160 11449,23088
 Vienweg: Qualität?	? 11977,22801 11505,23160
 Schützenstr. (Französisch Buchholz): Qualität?	? 11959,22696 11449,23088 11353,23154
-Cunistr.: Qualität?	? 11693,22482 11240,22803
 Tiriotstr.: Qualität?	? 11765,22198 11484,22406 11235,22590
 Favierweg: Qualität?	? 10876,22613 10979,22769
 #: XXX Teleatlas/kauperts/Berlin.coords.data und osm widersprechen sich beim Namen
@@ -3732,8 +3725,6 @@ Clara-Zetkin-Weg: Qualität? Stimmt der Verlauf des Weges? Für Radfahrer befahrba
 #: XXX laut anonymous "Beton" ohne weitere Angaben (außerdem fehlt eine Verknüpfung zum restlichen Netz)
 Mylauer Weg: Qualität? Stimmt der Verlauf?	? 24133,14444 24017,14613 23852,14521
 Peter-Edel-Str.: Qualität?	? 23237,13683 23252,13778 23215,13787 23240,13938
-#: XXX_osm bei osm falsch geschrieben?
-Springeberger Weg: Qualität?	? 29947,4268 29930,4455
 Hallgarter Steig: Qualität?	? 27894,364 27961,321 28042,304 28058,155 28086,90 28083,-34 28065,-114 28042,-152
 Am Steilhang: Qualität?	? 27929,126 27983,98 27941,53
 Erlenbacher Steig: Qualität?	? 28065,-114 27992,-57 27918,12 27879,46

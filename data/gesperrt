@@ -29,7 +29,7 @@ Erkelenzdamm etc.	1 11258,10682 11244,10653 11210,10668 11145,10510 11109,10423 
 Erkelenzdamm etc.	1 11094,10261 11038,10247 10967,10092
 Überführung Daimlerstr.	1 8651,2197 8588,2176 8559,2203 8552,2243 8606,2376
 Großer Stern	1 6725,12113 6754,12108 6787,12099 6828,12031 6809,11979 6744,11936 6685,11954 6642,12010 6653,12067 6690,12104 6725,12113
-Ernst-Reuter-Platz	1 4770,11820 4867,11835 4906,11772 4897,11727 4842,11679 4780,11702 4747,11751 4770,11820
+Ernst-Reuter-Platz	1 4763,11834 4854,11843 4905,11785 4885,11735 4838,11697 4781,11708 4737,11768 4763,11834
 Theodor-Heuss-Platz	1 1381,11335 1403,11428 1574,11379 1532,11280 1450,11309 1381,11335
 Halenseestr.	1 2112,10488 2069,10330 2229,10045 2268,9976 2300,9883 2369,9779 2415,9765
 Halenseestr.	1 2394,9714 2360,9754 2297,9827
@@ -1092,8 +1092,8 @@ Brachvogelstr. -> Zossener Str.: unbequem passierbarer Mittelstreifen	3::igndisp
 Waterloo-Ufer -> Brachvogelstr.: unbequem passierbarer Mittelstreifen	3::igndisp 9825,10206 9858,10199 9884,10192
 Waterloo-Ufer -> Zossener Str.: unbequem passierbarer Mittelstreifen	3::igndisp 9825,10206 9858,10199 9865,10227
 Straßentunnelrampe	3nocross::ignrte 10878,12560 10954,12635 11057,12715 11105,12764
-Littenstr. -> Grunerstr.: Straßentunnelrampe	3::igndisp 11056,12461 10954,12635 10878,12560
-Grunerstr. -> Littenstr.: Straßentunnelrampe	3::igndisp 11057,12715 10954,12635 11056,12461
+Littenstr. -> Grunerstr.: Straßentunnelrampe	3::igndisp 11059,12450 10954,12635 10878,12560
+Grunerstr. -> Littenstr.: Straßentunnelrampe	3::igndisp 11057,12715 10954,12635 11059,12450
 Dircksenstr. -> Grunerstr.: Straßentunnelrampe	3::igndisp 11156,12581 11057,12715 10954,12635
 Dircksenstr. -> Dircksenstr.: Straßentunnelrampe	3::igndisp 11156,12581 11057,12715 11030,12741
 Grunerstr. -> Dircksenstr.: Straßentunnelrampe	3::igndisp 10954,12635 11057,12715 11030,12741
@@ -1888,7 +1888,7 @@ Rhinstr.: neues Wohngebiet, Weg gesperrt	2:inwork 18015,13846 17300,14133
 Radweg parallel zur Autobahn ist wegen Bauarbeiten am BAB gesperrt	2:inwork 5062,14681 4676,14534 3707,14303 3595,14277
 Brücke über A10: Sperrung vom 15.02.2010 bis 01.10.2010	2:inwork 15337,24593 15490,24848
 Wegedornbrücke: Vollsperrung, Neubau	2:inwork 20385,593 20442,564 20510,530 20534,501
-Rathausbrücke: gesperrt bis März 2011 (Neubau)	2:inwork 10362,12351 10422,12395
+Rathausbrücke: gesperrt (Neubau), Fertigstellung 2011 oder 2012	2:inwork 10362,12351 10422,12395
 Vicki-Baum-Str.: noch in Bau, gesperrt	2:inwork 15753,10353 15688,10400
 Kynaststraße: Bauarbeiten im südlichen Abschnitt	2:inwork 14652,10201 14724,10297 14766,10372 14795,10473 14805,10518
 Brücke im Tiergarten: gesperrt	2:inwork 6406,11784 6467,11780
