@@ -13536,8 +13536,8 @@ sub show_info {
 	    my($url) = @_;
 	    $show_info_url = $url if defined $url;
 
-	    # Primary selection (for emacs, only works 1st time for xterm/mozilla...)
 	    $info_top->SelectionOwn;
+	    $info_top->SelectionHandle; # calling this mysteriously solves the closure problem...
 	    $info_top->SelectionHandle(\&handle_show_info_url);
 	};
 	$link_menu->command
@@ -14071,6 +14071,7 @@ sub show_info {
 		$info_text->tagBind
 		    ("link$linkcount", "<ButtonRelease-1>" => sub {
 			 $info_text->SelectionOwn;
+			 $info_text->SelectionHandle; # calling this mysteriously solves the closure problem...
 			 $info_text->SelectionHandle(sub { return $uri });
 			 main::status_message("Geo URI $uri in selection", "info");
 		     });
