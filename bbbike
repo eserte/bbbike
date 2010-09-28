@@ -14038,18 +14038,6 @@ sub show_info {
 	    $linkcount++;
 	}
 
-	# Das war der letzte Link
-	for (1 .. $linkcount) {
-	    $info_text->tagConfigure("link$_", -underline => 1,
-				     -foreground => "blue3");
-	    $info_text->tagBind("link$_", "<Enter>" => sub {
-				    $info_text->configure(-cursor => "hand2");
-				});
-	    $info_text->tagBind("link$_", "<Leave>" => sub {
-				    $info_text->configure(-cursor => undef);
-				});
-	}
-
 	{
 	    $info_text->insert("end", "\n\n" . M("Koordinaten") . "\n", "bold");
 	    if (@polarcoord) {
@@ -14074,8 +14062,33 @@ sub show_info {
 	    if (defined $etrs_east) {
 		$info_text->insert("end", "ETRS 89:\t$etrs_east/$etrs_north\n");
 	    }
+	    if (defined $px && defined $py) {
+		$info_text->insert("end", "URI:\t");
+		my $uri = "geo:$py,$px";
+		$info_text->insert("end", $uri, ["link$linkcount"]);
+		$info_text->insert("end", "\n");
+		$info_text->tagBind
+		    ("link$linkcount", "<ButtonRelease-1>" => sub {
+			 $info_text->SelectionOwn;
+			 $info_text->SelectionHandle(sub { return $uri });
+			 main::status_message("Geo URI $uri in selection", "info");
+		     });
+		$linkcount++;
+	    }
 	    $info_text->insert("end", "BBBike:\t$sx,$sy\n");
 	    $info_text->insert("end", "\n");
+	}
+
+	# Das war der letzte Link
+	for (1 .. $linkcount) {
+	    $info_text->tagConfigure("link$_", -underline => 1,
+				     -foreground => "blue3");
+	    $info_text->tagBind("link$_", "<Enter>" => sub {
+				    $info_text->configure(-cursor => "hand2");
+				});
+	    $info_text->tagBind("link$_", "<Leave>" => sub {
+				    $info_text->configure(-cursor => undef);
+				});
 	}
 
 	eval {
