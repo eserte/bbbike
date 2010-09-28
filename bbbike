@@ -13952,10 +13952,11 @@ sub show_info {
 
 	    my(@x) = Karte::Polar::ddd2dms($px);
 	    my(@y) = Karte::Polar::ddd2dms($py);
-	    push @x, $x[0] < 0 ? "W" : "E";
-	    push @y, $y[0] < 0 ? "S" : "N";
+	    push @x, $x[0] < 0 ? do { $x[0] *= -1; "W" } : "E";
+	    push @y, $y[0] < 0 ? do { $y[0] *= -1; "S" } : "N";
 	    #my $url = "http://stable.toolserver.org/geohack/geohack.php?params=" . join("_", @y, @x) . "_type:landmark_region:DE-BE";
-	    my $url = "http://toolserver.org/~geohack/geohack.php?params=" . join("_", @y, @x) . "_type:landmark_region:DE-BE";
+	    my $url = "http://toolserver.org/~geohack/geohack.php?params=" . join("_", @y, @x) .
+		($city_obj->cityname eq 'Berlin' ? "_type:landmark_region:DE-BE" : '');
 
 	    my $need_indentation;
 	    if ($wikipedia_photo) {
