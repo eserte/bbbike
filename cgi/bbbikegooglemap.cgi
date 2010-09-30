@@ -244,7 +244,8 @@ sub get_html {
     <link rel="stylesheet" type="text/css" href="$bbbikeroot/html/bbbike.css"><!-- XXX only for radzeit/hosteurope -->
     <link type="image/gif" rel="shortcut icon" href="$bbbikeroot/images/bbbike_google.gif"><!-- XXX only for radzeit/hosteurope -->
 <!--    <script src="http://maps.google.com/maps?file=api&v=2&key=$google_api_key" type="text/javascript"></script>-->
-    <script src="http://maps.google.com/jsapi?key=$google_api_key" type="text/javascript"></script>
+<!--    <script src="http://maps.google.com/jsapi?key=$google_api_key" type="text/javascript"></script>-->
+    <script src="http://www.google.com/jsapi?key=$google_api_key" type="text/javascript"></script>
     <script type="text/javascript">
       google.load("maps", "2");
     </script>
