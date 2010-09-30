@@ -1,10 +1,9 @@
 # -*- perl -*-
 
 #
-# $Id: MultiMap.pm,v 1.19 2008/07/11 21:40:53 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2006,2007 Slaven Rezic. All rights reserved.
+# Copyright (C) 2006,2007,2010 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -12,8 +11,8 @@
 # WWW:  http://www.rezic.de/eserte/
 #
 
-# Description (en): Link to GoYellow, WikiMapia, MultiMap and other maps
-# Description (de): Links zu GoYellow, WikiMapia, MultiMap und anderen Karten
+# Description (en): Link to OpenStreetMap, WikiMapia, Bing and other maps
+# Description (de): Links zu OpenStreetMap, WikiMapia, Bing und anderen Karten
 package MultiMap;
 
 use BBBikePlugin;
@@ -21,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.19 $ =~ /(\d+)\.(\d+)/);
+$VERSION = 1.20;
 
 use vars qw(%images);
 
@@ -34,24 +33,35 @@ sub register {
 	  callback_3_std => sub { showmap_url_deinplan(@_) },
 	  ($images{Pharus} ? (icon => $images{Pharus}) : ()),
 	};
-    $main::info_plugins{__PACKAGE__ . "_GoYellow"} =
-	{ name => "GoYellow",
-	  callback => sub { showmap_goyellow(@_) },
-	  callback_3_std => sub { showmap_url_goyellow(@_) },
-	  ($images{GoYellow} ? (icon => $images{GoYellow}) : ()),
-	};
+    if (0) {
+	# 2010-09-30: website still exists, but map does not work with
+	# three browsers (Seamonkey 1, Firefox 3, Chrome)
+	$main::info_plugins{__PACKAGE__ . "_GoYellow"} =
+	    { name => "GoYellow",
+	      callback => sub { showmap_goyellow(@_) },
+	      callback_3_std => sub { showmap_url_goyellow(@_) },
+	      ($images{GoYellow} ? (icon => $images{GoYellow}) : ()),
+	    };
+    }
     $main::info_plugins{__PACKAGE__ . "_WikiMapia"} =
 	{ name => "WikiMapia",
 	  callback => sub { showmap_wikimapia(@_) },
 	  callback_3_std => sub { showmap_url_wikimapia(@_) },
 	  ($images{WikiMapia} ? (icon => $images{WikiMapia}) : ()),
 	};
-    $main::info_plugins{__PACKAGE__ . "_ClickRoute"} =
-	{ name => "ClickRoute",
-	  callback => sub { showmap_clickroute(@_) },
-	  callback_3_std => sub { showmap_url_clickroute(@_) },
-	  ($images{ClickRoute} ? (icon => $images{ClickRoute}) : ()),
-	};
+    if (0) {
+	# From the homepage (2010-09-30):
+	# "2010-02-05
+	# Sorry, because of a hardware failure, this site is currently disabled.
+	# As soon as i have time i will bring it back to live. For further questions, use the feedback form."
+	# So probably permanently down
+	$main::info_plugins{__PACKAGE__ . "_ClickRoute"} =
+	    { name => "ClickRoute",
+	      callback => sub { showmap_clickroute(@_) },
+	      callback_3_std => sub { showmap_url_clickroute(@_) },
+	      ($images{ClickRoute} ? (icon => $images{ClickRoute}) : ()),
+	    };
+    }
     $main::info_plugins{__PACKAGE__ . "_OpenStreetMap"} =
 	{ name => "OpenStreetMap",
 	  callback => sub { showmap_openstreetmap(@_) },
@@ -64,6 +74,7 @@ sub register {
 	  callback_3_std => sub { showmap_url_mapcompare(@_) },
 	  ($images{Geofabrik} ? (icon => $images{Geofabrik}) : ()),
 	};
+    # Uses now the same maps as Bing
     $main::info_plugins{__PACKAGE__ . "_MultiMap"} =
 	{ name => "MultiMap",
 	  callback => sub { showmap(@_) },
@@ -76,19 +87,26 @@ sub register {
 	  callback_3_std => sub { showmap_url_bvgstadtplan(@_) },
 	  ($images{BvgStadtplan} ? (icon => $images{BvgStadtplan}) : ()),
 	};
-## Does not work anymore: URL gets redirected to http://intl.local.live.com/ page.
-#     $main::info_plugins{__PACKAGE__ . "_LiveCom"} =
-# 	{ name => "maps.live.com",
-# 	  callback => sub { showmap_livecom(@_) },
-# 	  callback_3_std => sub { showmap_url_livecom(@_) },
-# 	  ($images{LiveCom} ? (icon => $images{LiveCom}) : ()),
-# 	};
-    $main::info_plugins{__PACKAGE__ . "_BikeMapDe"} =
-	{ name => "bikemap.de",
-	  callback => sub { showmap_bikemapde(@_) },
-	  callback_3_std => sub { showmap_url_bikemapde(@_) },
-	  ($images{BikeMapDe} ? (icon => $images{BikeMapDe}) : ()),
-	};
+    if (0) {
+	# Does not work anymore: URL gets redirected to
+	# http://intl.local.live.com/ page.
+	$main::info_plugins{__PACKAGE__ . "_LiveCom"} =
+	    { name => "maps.live.com",
+	      callback => sub { showmap_livecom(@_) },
+	      callback_3_std => sub { showmap_url_livecom(@_) },
+	      ($images{LiveCom} ? (icon => $images{LiveCom}) : ()),
+	    };
+    }
+    if (0) {
+	# Site exists, but is not anymore linkable
+	$main::info_plugins{__PACKAGE__ . "_BikeMapDe"} =
+	    { name => "bikemap.de",
+	      callback => sub { showmap_bikemapde(@_) },
+	      callback_3_std => sub { showmap_url_bikemapde(@_) },
+	      ($images{BikeMapDe} ? (icon => $images{BikeMapDe}) : ()),
+	    };
+    }
+    # Down: 2010-09-30
     $main::info_plugins{__PACKAGE__ . "_BerlinerStadtplan24"} =
 	{ name => "www.berliner-stadtplan24.com",
 	  callback => sub { showmap_berliner_stadtplan24(@_) },
