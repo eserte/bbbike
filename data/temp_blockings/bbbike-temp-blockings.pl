@@ -16517,8 +16517,8 @@ userdel	2::inwork 3314,15782 3564,16294
 EOF
      },
      { from  => 1270235189, # 2010-04-02 21:06
-       until => Time::Local::timelocal(reverse(2010-1900,9-1,28,16,0,0)), # 1283205600, # 2010-08-31 00:00
-       text  => 'Neustädtische Kirchstr. (Mitte) Richtung Unter den Linden zwischen Dorotheenstr. und Unter den Linden Baustelle, Fahrtrichtung gesperrt bis 28.09.2010 16:00 Uhr ',
+       until => Time::Local::timelocal(reverse(2010-1900,9-1,30,16,0,0)), # 1283205600, # 2010-08-31 00:00
+       text  => 'Neustädtische Kirchstr. (Mitte) Richtung Unter den Linden zwischen Dorotheenstr. und Unter den Linden Baustelle, Fahrtrichtung gesperrt bis 30.09.2010 16:00 Uhr ',
        type  => 'handicap',
        source_id => 'IM_014421',
        data  => <<EOF,

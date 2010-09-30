@@ -1186,8 +1186,8 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        {
          'source_id' => 'IM_014421',
-         'until' => 1285682400,
-         'text' => 'Neustädtische Kirchstr. (Mitte) Richtung Unter den Linden zwischen Dorotheenstr. und Unter den Linden Baustelle, Fahrtrichtung gesperrt bis 28.09.2010 16:00 Uhr ',
+         'until' => 1285855200,
+         'text' => 'Neustädtische Kirchstr. (Mitte) Richtung Unter den Linden zwischen Dorotheenstr. und Unter den Linden Baustelle, Fahrtrichtung gesperrt bis 30.09.2010 16:00 Uhr ',
          'from' => 1270235189,
          'id' => 1946,
          'data' => 'userdel	2::inwork; 9123,12500 9130,12433
