@@ -864,7 +864,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
          'text' => 'Schloßpark Charlottenburg: bei Dunkelheit geschlossen',
          'from' => undef,
          'id' => 1811,
-         'data' => '	2::night 3296,12719 3231,12749 3127,12793 3055,12973 2997,13402 2950,13552
+         'data' => '	2::night 3332,12742 3231,12749 3127,12793 3055,12973 3020,13234 2996,13255 2980,13332 3003,13355 2953,13489 2950,13552
 ',
          'type' => 'gesperrt'
        },

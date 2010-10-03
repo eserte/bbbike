@@ -423,7 +423,7 @@ Schillerpromenade: Kopfsteinpflaster	Q2 11665,8130 11695,8005
 Schillerpromenade: Kopfsteinpflaster	Q2 11717,7895 11738,7790 11755,7704 11779,7582 11797,7492
 Säntisstr.: Kopfsteinpflaster	Q2 8892,802 8743,681 8533,512
 Alt-Marienfelde: Kopfsteinpflaster	Q2 8742,475 8533,512 8484,529 8258,662 8114,722 8000,729 7855,771
-Alt-Marienfelde: schlechtes Kopfsteinpflaster	Q3 8000,729 8208,626 8258,662
+Alt-Marienfelde: schlechtes Kopfsteinpflaster	Q3 8000,729 8194,617 8258,662
 Ratiborstr.: Kopfsteinpflaster	Q2 12712,9523 12724,9545 12834,9738
 Kirchhofstr.: schlechtes Kopfsteinpflaster	Q3 13177,7644 13188,7590 13117,7471 13027,7368
 Kirchhofstr.: relativ glattes Kopfsteinpflaster	Q2 13003,7316 12909,7181 12872,7134
@@ -1607,7 +1607,8 @@ Quellenweg: Schotterweg	Q2 1610,13380 1551,13377 1506,13376 1301,13338 1219,1331
 Werkring: Beton	Q0 -990,13502 -975,13574 -978,13665 -1000,13764 -1084,13933 -1188,13988
 Sophienwerderweg: Asphalt	Q0 -1188,13988 -1575,14098 -2396,14245
 (Uferweg): wassergebundene Decke	Q1 4242,12684 4206,12691 4147,12699 3938,12687 3862,12675 3747,12679 3641,12753 3559,12793 3572,12866 3547,12864 3510,12809 3444,12804
-(Schloßpark Charlottenburg, westlicher Weg): wassergebundene Decke	Q1 2858,13583 2775,13479 2659,13425 2602,13418 2625,13229 2688,12701 2717,12463
+(Schloßpark Charlottenburg, westlicher Weg): wassergebundene Decke	Q1 2858,13530 2813,13416 2685,13380 2607,13374 2625,13229 2688,12701 2717,12463
+(Schloßpark Charlottenburg): wassergebundene Decke	Q1 2953,13489 2925,13516 2858,13530
 (Sophie-Charlotten-Str. - Schloßpark Charlottenburg): wassergebundene Decke	Q1 2295,13031 2331,13173 2419,13232 2466,13232 2534,13214 2625,13229
 Trendelenburgstr.: Asphalt	Q0 2740,11076 2845,10840
 (Uferweg): wassergebundene Decke	Q1 5185,13078 5144,13075 5076,13116 4940,13168 4742,13157
@@ -3692,7 +3693,7 @@ Vergissmeinnichtweg: Asphalt	Q0 21608,85 21582,185
 (Grünbergallee - Schwalbenweg): Gehwegplatten	Q1 20288,-511 20205,-548
 Glienicker Str. (Bohnsdorf): Asphalt	Q0 20790,-537 20785,-488
 Glienicker Str. (Bohnsdorf): schlechtes Kopfsteinpflaster	Q3 20785,-488 20757,-218
-Quaritzer Str.: schlechtes Kopfsteinpflaster	Q3 N 21360,-455 21291,-446 21259,-467 21252,-500
+Quaritzer Str.: schlechtes Kopfsteinpflaster	Q3 21360,-455 21291,-446 21259,-467 21252,-500
 Quaritzer Str.: Kopfsteinpflaster	Q2 21252,-500 21245,-533
 Sausenberger Str.: schlechtes Kopfsteinpflaster	Q3 21458,-488 21463,-434 21468,-338 21463,-280
 Sausenberger Str.: mäßiges Kopfsteinpflaster	Q2 21451,-561 21458,-488
@@ -4765,7 +4766,7 @@ Hittorfstr.: Asphalt	Q1 2212,4600 2290,4709
 Hittorfstr: Kopfsteinpflaster	Q2 2290,4709 2381,4737 2442,4806 2469,4882 2516,4936 2587,4965
 Lefèvrestr.: Asphalt	Q0 4987,6902 4993,6812 5014,6752 5040,6706 5137,6651 5215,6643 5360,6642
 Paulsenstr.: Asphalt	Q0 4423,6477 4500,6612 4528,6711
-(Spreeufer zwischen Schloßpark Charlottenburg und Fürstenbrunner Weg): wassergebundene Decke	Q1 3296,12719 3231,12749 3127,12793 3055,12973 2997,13402 2950,13552 2922,13594 2859,13686 2777,13712 2568,13662 2260,13540 1951,13647 1826,13587 1753,13587 1512,13511 1198,13526 1144,13528
+(Spreeufer zwischen Schloßpark Charlottenburg und Fürstenbrunner Weg): wassergebundene Decke	Q1 3231,12749 3127,12793 3055,12973 3020,13234 2996,13255 2980,13332 3003,13355 2953,13489 2950,13552 2922,13594 2859,13686 2777,13712 2568,13662 2260,13540 1951,13647 1826,13587 1753,13587 1512,13511 1198,13526 1144,13528
 (Spreeufer): wassergebundene Decke	Q1 -307,13279 -278,13322 76,13296 438,13324 848,13497 1144,13528
 Moltkestr.: mäßiges Kopfsteinpflaster	Q2 4596,3738 4487,3802 4293,3951 4234,4020
 Moltkestr.: eher schlechtes Kopfsteinpflaster	Q3 4234,4020 4092,4217 4012,4325 3926,4438
@@ -8273,7 +8274,7 @@ Jonasstr.: Kopfsteinpflaster	Q2 5956,13433 5964,13535
 Arminusstr.: Asphalt	Q0 5956,13433 5868,13441
 Tile-Wardenberg-Str.: Kopfsteinpflaster	Q2 5740,12419 5616,12500 5585,12518 5556,12536 5486,12581 5376,12661
 Solinger Str.: Kopfsteinpflaster	Q2 5734,12673 5673,12581 5616,12500
-(Unterführung Schloßbrücke): teilweise Parkweg, teilweise gutes Kopfsteinpflaster	Q1 3396,12741 3326,12730 3231,12749
+(Unterführung Schloßbrücke): teilweise Parkweg, teilweise gutes Kopfsteinpflaster	Q1 3396,12741 3332,12742 3231,12749
 Sesenheimer Str.: Asphalt	Q0 3844,11649 3866,11473
 Sesenheimer Str.: Asphalt	Q0 3866,11473 3874,11380
 Sesenheimer Str.: Kopfsteinpflaster	Q2 3874,11380 3877,11347
@@ -8444,8 +8445,8 @@ Wulfsheinstr.: Asphalt	Q0 3060,12311 3207,12325
 Stallstr.: Asphalt	Q0 3050,12394 3204,12416
 Saldernstr.: Asphalt	Q0 2390,11468 2405,11587 2422,11700
 Siemenssteg: Holzbohlen	Q2 4129,12619 4128,12637 4124,12706 4124,12721
-Eosanderstr.: Asphalt	Q0 3617,12352 3610,12480 3605,12552 3454,12607 3345,12580
-Eosanderstr.: Kopfsteinpflaster	Q1 3345,12580 3272,12581
+Eosanderstr.: Asphalt	Q0 3617,12352 3610,12480 3605,12552 3454,12607 3344,12611
+Eosanderstr.: Kopfsteinpflaster	Q1 3344,12611 3271,12609
 Brauhofstr.: Asphalt	Q0 3468,12423 3490,12463 3610,12480 3747,12495
 Behaimstr. (Charlottenburg): Asphalt	Q0 3496,12176 3635,12187 3770,12202
 Thrasoltstr.: Asphalt	Q0 3513,11998 3650,12013 3785,12028

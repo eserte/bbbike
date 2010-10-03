@@ -174,7 +174,8 @@ Fuggerstr.: Gehweg	q2 6128,10319 6020,10351
 Pfalzburger Str.: Gehweg	q2 4905,10069 4909,10119
 Ludwigkirchplatz: Gehweg	q2 4905,10069 4863,10077
 (Tilla-Durieux-Park): Fußgänger	q2 8467,11125 8410,11143
-(Rad- und Wanderweg an Spree und Landwehrkanal): Fußgänger, teilweise eng	q2 3358,12718 3396,12741 3476,12735 3582,12704 3763,12624 3888,12618 4131,12641 4340,12578 4529,12570 4642,12491 4829,12357 5045,12243 5147,12164 5261,12004 5361,11910
+(Rad- und Wanderweg an Spree und Landwehrkanal): Fußgänger, teilweise eng	q2 3358,12718 3396,12741
+(Rad- und Wanderweg an Spree und Landwehrkanal): Fußgänger, teilweise eng	q2 3396,12741 3476,12735 3582,12704 3763,12624 3888,12618 4131,12641 4340,12578 4529,12570 4642,12491 4829,12357 5045,12243 5147,12164 5261,12004 5361,11910
 Spreeufer: Fußgänger, besonders an schönen Tagen	q2 10166,12777 10105,12855 9977,12912 9944,12921 9930,12947 9900,12942 9714,12995
 Spreeufer: Fußgänger	q1 9707,12974 9557,12992 9533,12994 9508,12991 9271,12952
 Henriette-Herz-Platz: Straßenbahn	q2 10132,12941 10255,12959 10371,13006
@@ -664,7 +665,7 @@ Jeverstr.: eng	q1 5681,5743 5681,5768 5679,5853 5677,5868 5674,5901 5699,5949 57
 Friedrichstr. (Lichterfelde): Fuß- und Radweg	q1 2890,3561 2712,3602
 Rampen	q3 1610,13380 1551,13377
 (Krankenhausgelände): eher schmaler Gehweg	q1 2688,12701 2555,12686
-(Schloßpark Charlottenburg, westlicher Weg): Fußgänger	q1 2858,13583 2775,13479 2659,13425 2602,13418 2625,13229 2688,12701 2717,12463
+(Schloßpark Charlottenburg, westlicher Weg): Fußgänger	q1 2858,13530 2813,13416 2685,13380 2607,13374 2625,13229 2688,12701 2717,12463
 (Uferweg): teilweise relativ schmal, Fußgänger	q1 5185,13078 5144,13075 5076,13116 4940,13168 4742,13157 4751,13245
 Sparrstr. - Triftstr.: Gehweg	q1 7303,15173 7241,15293
 (Max-Lingner-Str. - Maximilianstr.): schmaler Fußweg und Parkplatz	q2 11107,17340 10906,17331
@@ -753,7 +754,7 @@ Hüttenweg: keine abgesenkten Bordsteine an der Kreuzung "Auf dem Grat"	q1 1964,5
 (Südpark): Fußgänger	q1 -3707,11693 -3712,11714 -3732,11772 -3826,11901 -3883,12053 -3985,12056 -4040,12050
 (Südpark): Fußgänger	q1 -4009,11789 -4004,11814 -4070,12006 -4040,12050 -4085,12081 -4117,12199 -4169,12368
 (Glühwürmchenweg - Pionierstr.): Wohngebiet	q1 -5960,16441 -6018,16250
-Schloßpark Charlottenburg: Fußgänger	q1 3296,12719 3231,12749 3127,12793 3055,12973 2997,13402 2950,13552
+Schloßpark Charlottenburg: Fußgänger	q1 3231,12749 3127,12793 3055,12973 3020,13234 2996,13255 2980,13332 3003,13355 2953,13489 2950,13552
 Spreeweg: eng und unübersichtlich	q2 2950,13552 2922,13594 2859,13686 2777,13712 2568,13662 2260,13540
 Lefèvrestr.: enge Straße	q1 4987,6902 4993,6812 5014,6752 5040,6706 5137,6651 5215,6643
 (Paul-Löbe-Allee - südl. Spreeufer): Biergarten am HDKDW	q4 7741,12581 7670,12576
@@ -873,7 +874,8 @@ Vineta Platz: Fußgänger	q2 9942,14936 10029,14974 10111,15018
 Vineta Platz: Fußgänger	q2 9904,15014 9988,15057 10071,15096
 Ruppiner Str.: Fußgänger	q1 9904,15014 9918,14986 9942,14936
 Swinemünder Str.: Fußgänger	q1 10085,14863 10029,14974 9988,15057 9929,15174 9853,15333 9734,15579
-(Unterführung Schloßbrücke): Fußgänger, teilweise eng	q2 3396,12741 3326,12730 3231,12749
+(Unterführung Schloßbrücke): Fußgänger, teilweise eng	q2 3396,12741 3332,12742
+(Unterführung Schloßbrücke): Fußgänger, sehr eng	q3 3332,12742 3231,12749
 Sesenheimer Str.: Fußgänger, Bordsteine	q2 3866,11473 3874,11380
 (südliches Spreeufer): Fußgänger	q2 5186,12843 5173,12973 5128,13012 4973,13083 4837,13091 4733,13076 4711,13055 4644,13003 4627,12951 4599,12789 4759,12681
 (Heisenbergstr. - südliches Spreeufer): Fußgänger	q2 5065,13010 5128,13012
@@ -902,7 +904,7 @@ Rossitter Weg: Fußgänger (nur bei Veranstaltungen ein Problem)	q0 -107,12220 -12
 (Dahlienweg): Fußgänger	q2 3797,13499 3795,13541 3796,13575
 (Lambertstr. - Lise-Meitner-Str.): Fußgänger, schmal	q3 3508,13727 3717,13743
 (Bonhoefferufer - Tegler Weg): Fußgänger	q2 3154,12936 3164,13067
-Eosanderstr.: Fußgänger	q1 3345,12580 3272,12581
+Eosanderstr.: Fußgänger	q1 3344,12611 3271,12609
 Siemenssteg: Fußgänger, schmal	q2 4129,12619 4128,12637 4124,12706 4124,12721
 (Müllerstr. - Gerichtstr.): Fußgänger	q2 7611,15286 7723,15417
 (südliches Spreeufer): Fußgänger	q2 5579,12231 5714,12290 5796,12372 5940,12564 6001,12699 6045,12830 6123,12887 6182,12900
