@@ -1,0 +1,72 @@
+#!/usr/bin/perl -w
+# -*- perl -*-
+
+#
+# Author: Slaven Rezic
+#
+# Copyright (C) 2010 Slaven Rezic. All rights reserved.
+# This program is free software; you can redistribute it and/or
+# modify it under the same terms as Perl itself.
+#
+# Mail: slaven@rezic.de
+# WWW:  http://www.rezic.de/eserte/
+#
+
+use strict;
+use Getopt::Long;
+
+sub usage () {
+    die <<EOF;
+usage: $0 --move x,y x,y --coords x,y ...
+EOF
+}
+
+my @move;
+my @coords;
+usage if
+    !GetOptions("move=s{2}" => \@move,
+		"coords=s{1,}" => \@coords,
+	       );
+usage if @ARGV;
+usage if (!@move || !@coords);
+
+my($mx1,$my1,$mx2,$my2) = ((split /,/, $move[0]),
+			   (split /,/, $move[1])
+			  );
+my $xd = $mx2 - $mx1;
+my $yd = $my2 - $my1;
+
+print join(" ", map {
+    my($x,$y) = split /,/;
+    $x += $xd;
+    $y += $yd;
+    "$x,$y";
+} @coords);
+print "\n";
+
+__END__
+
+=head1 NAME
+
+move_coords - move coordinates
+
+=head1 DESCRIPTION
+
+=head2 HOWTO
+
+Select in BBBike (while being in edit mode) two points which mark the
+movement.
+
+The coordinates are in the X11 selection and may be pasted into the
+command line after:
+
+    ./miscsrc/move_coords --move 
+
+Now add
+
+    --coords
+
+to the command line and finallly copy'n'paste the coordinates of the
+feature to be moved.
+
+=cut
