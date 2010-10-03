@@ -112,7 +112,7 @@ Tiergarten: Parkweg	q1 8021,11636 8016,11770
 Tiergarten: Parkweg	q1 7663,11946 7570,11855 7223,11897 7073,11798 6778,11742 6540,11754
 Tiergarten: Parkweg	q1 7816,12150 7827,12105 7832,12036 7822,11952 7801,11875 7795,11823 7777,11787 7772,11749 7796,11681 7816,11571
 (Bremer Weg - Fasanerieallee): Parkweg	q1 6342,11878 6379,11843 6406,11784 6467,11780 6540,11754
-Parkweg: enge Brücke, Fußweg	q2 14310,9692 14351,9757 14448,9922 14453,9929 14558,10082 14597,10129 14626,10162 14652,10201
+Parkweg: enge Brücke, Fußweg	q2 14310,9692 14351,9757 14404,9847 14448,9922 14453,9929 14558,10082 14597,10129 14626,10162 14652,10201
 Spittelmarkt: Gehweg	q1 10369,11728 10240,11740
 Beuthstr. - Spittelmarkt: Gehweg	q1 10229,11618 10213,11728
 Hasenheide: Parkweg	q1 11271,8325 11282,8428 11250,8585 11177,8985 11128,9100 11136,9183
@@ -611,7 +611,7 @@ Fußgängerbrücke Storkower Str.: Fußgänger	q2 14481,13143 14524,13271 14530,13269
 Lemgoer Str.: Fußgänger, Bordsteine	q2 14341,17030 14331,17016 14328,17011
 (Uferweg am Kanal): gemeinsamer Rad- und Gehweg	q1 16425,6445 16275,6275 16263,6248 16098,6134 16065,6126 16044,6120
 Am Haselbusch: Radfahren verboten, ggfs. schieben	q1 17411,4979 17356,5011
-(Allmersweg - Groß-Berliner Damm): Fußgänger, Bordsteine	q3 17789,5189 17742,5174
+(Allmersweg - Groß-Berliner Damm): Fußgänger, Bordsteine	q3 17789,5189 17735,5170
 #: XXX_prog: für Anhänger q3
 Sportfliegerstr.: drei Bodenschwellen, nicht umfahrbar	q2 18157,4742 18343,4545
 Karl-Otto-Reinsch-Str.: Fußgänger	q1 19603,3207 19524,3286
@@ -711,6 +711,13 @@ Witzenhauser Str.: Fußgänger	q2 18059,14838 18170,14890
 Schattenweg: Fußgänger, spielende Kinder	q2 19928,319 19897,292 19865,263 19806,206 19691,107
 (Wegedornbrücke - Müngersdorfer Str.): sehr enger Weg	q3 20462,540 20409,478 20345,398 20338,386
 (Leberblumenweg - Goldsternweg): eng	q1 20591,2060 20550,2194
+(Unterführung S-Bhf. Treptower Park): Fußgänger	q4 14289,9870 14339,9876 14404,9847
+(Lindenblütenstr. - Mohnblütenweg): teilweise recht eng, Fußgänger	q3 21703,388 21707,365 21671,328
+(Lindenblütenstr. - Mohnblütenweg): Fußgänger	q1 21671,328 21684,328 21688,312
+#: XXX_prog: für Anhänger gesperrt
+(Kleine Lindenstr. - Schirmpilzstr.): sehr eng, für Anhänger nicht geeignet	q4 21528,-1134 21570,-1219
+Fraustadter Weg: enge, unübersichtliche Straße	q1 21885,-483 21940,-542 21934,-617
+Schilfsängersteig: eng	q3 21385,2031 21372,2043
 ######################### User Contributions #################################
 #: by: Michael Kiekbusch
 #: corrected_by: srt/policy (q4 -> q3-)

@@ -5392,7 +5392,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_003258',
        data  => <<EOF,
-userdel	q4::inwork 20205,-548 20354,-569 20362,-511
+userdel	q4::inwork 20205,-548 20252,-571 20354,-569 20362,-511
 EOF
      },
      { from  => undef, # 
@@ -9221,7 +9221,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006195',
        data  => <<EOF,
-userdel	2::inwork 20362,-511 20354,-569 20205,-548
+userdel	2::inwork 20362,-511 20354,-569 20252,-571 20205,-548
 EOF
      },
      { from  => 1188428040, # 2007-08-30 00:54
@@ -14941,7 +14941,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_013726',
        data  => <<EOF,
-userdel	q4::inwork; 21968,-15 22108,82 22145,208
+userdel	q4::inwork; 21968,-15 21977,-8 22108,82 22145,208
 EOF
      },
      { from  => 1248559200, # 2009-07-26 00:00
@@ -15169,7 +15169,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_013726', # auch: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/
        data  => <<EOF,
-userdel	q4::inwork; 21355,-309 21118,-459
+userdel	q4::inwork; 21355,-309 21235,-354 21157,-413 21120,-444
 EOF
      },
      { from  => 1249154403, # 2009-08-01 21:20
@@ -18246,7 +18246,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_016334',
        data  => <<EOF,
-userdel	q4::inwork; 20827,-537 20881,-564 20995,-542 21074,-485
+userdel	q4::inwork; 20827,-537 20890,-546 20986,-529 21074,-475
 EOF
      },
      { from  => 1284274800, # 2010-09-12 09:00
@@ -18310,6 +18310,24 @@ EOF
        source_id => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20100920.1135.311271.html',
        data  => <<EOF,
 userdel	q4::inwork; 5006,22507 5142,22581 5260,22634 5368,22669
+EOF
+     },
+     { from  => 1285855200, # 2010-09-30 16:00
+       until => 1286164800, # 2010-10-04 06:00
+       text  => 'Boxhagener Str. (Friedrichshain/Lichtenberg): Baustelle, Straße vollständig gesperrt (bis vorauss. 04.10.2010 06:00) in beiden Richtungen zwischen Neue Bahnhofstr. und Kynaststr., 01.10.2010 16:00 Uhr bis 04.10.2010 06:00 Uhr ',
+       type  => 'handicap',
+       source_id => 'IM_016440',
+       data  => <<EOF,
+userdel	q4::inwork 14918,11249 14988,11130
+EOF
+     },
+     { from  => 1287036000, # 2010-10-14 08:00
+       until => 1287064800, # 2010-10-14 16:00
+       text  => 'Die Fahrbahn des Groß-Glienicker-Wegs wird zwischen Buchwaldzeile und Kladower Damm erneuert, Vollsperrung am 14.10.2010 zwischen 8.00 und 16.00 Uhr ',
+       type  => 'gesperrt',
+       source_id => 'http://www.berlin.de/ba-spandau/presse/archiv/20100930.1500.312639.html',
+       data  => <<EOF,
+userdel	2::inwork -4578,8336 -4682,8292
 EOF
      },
     );

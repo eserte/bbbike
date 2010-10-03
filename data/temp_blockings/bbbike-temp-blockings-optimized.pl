@@ -1184,18 +1184,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_014421',
-         'until' => 1285855200,
-         'text' => 'Neustädtische Kirchstr. (Mitte) Richtung Unter den Linden zwischen Dorotheenstr. und Unter den Linden Baustelle, Fahrtrichtung gesperrt bis 30.09.2010 16:00 Uhr ',
-         'from' => 1270235189,
-         'id' => 1946,
-         'data' => 'userdel	2::inwork; 9123,12500 9130,12433
-Kein Durchgang von Mittelstr. zur Neustädtischen Kirchstr., auch nicht für Fußgänger	2::inwork 9343,12464 9130,12433
-userdel	q4::inwork; 9130,12433 9141,12320
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1355,16 +1344,7 @@ userdel	q4::inwork; 10614,19907 10742,19632
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'source_id' => 'LSO-SG33-F10025',
-         'until' => 1285884000,
-         'text' => 'Altlandsberg: Straßen - und Rohrleitungsbau OD Wegendorf, 15.03.2010 bis 30.09.2010',
-         'from' => 1269113469,
-         'id' => 2023,
-         'data' => 'userdel	q4::inwork 34125,22128 34176,22704
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        {
@@ -1528,7 +1508,7 @@ userdel	q4::inwork; 10614,19907 10742,19632
        {
          'until' => undef,
          'permanent' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im September bis 20.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Oktober bis 19.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'from' => undef,
          'id' => 2068,
          'data' => '(Eingang Columbiadamm - Rundkurs auf dem Flughafen Tempelhof)	2::night 10691,8532 10640,8366 10598,8270 10575,8218
@@ -1581,16 +1561,7 @@ userdel	q4::inwork; 10614,19907 10742,19632
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'http://www.berlin.de/ba-lichtenberg/presse/archiv/20100528.1110.297131.html',
-         'until' => 1285883999,
-         'text' => 'Marksburgstraße, Bauarbeiten zwischen Treskowallee und Hentigstraße, 31.05. bis 30.09., Fahrbahn gesperrt',
-         'from' => 1275170400,
-         'id' => 2076,
-         'data' => 'userdel	q4::inwork 18809,9133 18697,9153 18586,9172
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'http://www.berlin.de/ba-lichtenberg/presse/archiv/20100528.1110.297131.html',
          'until' => 1288652399,
@@ -1755,16 +1726,7 @@ userdel	q4::inwork; 10614,19907 10742,19632
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_016121',
-         'until' => 1285941600,
-         'text' => 'Lehrter Str. (Moabit): Baustelle, Straße vollständig gesperrt in beiden Richtungen zwischen Invalidenstr. und Seydlitzstr., 02.08.2010 06:00 Uhr bis 01.10.2010 16:00 Uhr ',
-         'from' => 1280635200,
-         'id' => 2114,
-         'data' => 'userdel	q4::inwork 7764,13236 7643,13461 7660,13506 7655,13539
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        {
@@ -1830,30 +1792,12 @@ userdel	q4::inwork; 10614,19907 10742,19632
          'text' => 'Dorfplatz (Bohnsdorf): Baustelle, Fahrtrichtung gesperrt Richtung A 117 zwischen Grünbergallee und Buntzelstr., 13.09.2010 08:00 Uhr bis 08.10.2010 17:00 Uhr ',
          'from' => 1284271200,
          'id' => 2130,
-         'data' => 'userdel	q4::inwork; 20827,-537 20881,-564 20995,-542 21074,-485
+         'data' => 'userdel	q4::inwork; 20827,-537 20890,-546 20986,-529 21074,-475
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_016338',
-         'until' => 1285851600,
-         'text' => 'Neuer Hönower Weg (Dahlwitz-Hoppegarten): Baustelle, Straße vollständig gesperrt in beiden Richtungen zwischen Industriestr. und Wiesenstr., 13.09.2010 09:00 Uhr bis 30.09.2010 15:00 Uhr ',
-         'from' => 1284274800,
-         'id' => 2131,
-         'data' => 'userdel	q4::inwork 26880,11479 27272,11970
-',
-         'type' => 'handicap'
-       },
-       {
-         'source_id' => 'IM_016343',
-         'until' => 1285945200,
-         'text' => 'Köpenicker Str. (Biesdorf): Baustelle, für beide Richtungen nur ein Fahrstreifen abwechselnd frei, zwischen Tiergartenstr. und Köpenicker Allee, 14.09.2010 09:00 Uhr bis 01.10.2010 17:00 Uhr ',
-         'from' => 1284361200,
-         'id' => 2132,
-         'data' => 'userdel	q3::inwork 21027,7432 21032,7590 21037,7751
-',
-         'type' => 'handicap'
-       },
+       undef,
+       undef,
        {
          'source_id' => 'LS/O-SG33-E/09/214-7',
          'until' => 1293750000,
@@ -1903,6 +1847,26 @@ userdel	3 13150,7254 13047,7234 13034,7319
          'data' => 'userdel	q4::inwork; 5006,22507 5142,22581 5260,22634 5368,22669
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_016440',
+         'until' => 1286164800,
+         'text' => 'Boxhagener Str. (Friedrichshain/Lichtenberg): Baustelle, Straße vollständig gesperrt (bis vorauss. 04.10.2010 06:00) in beiden Richtungen zwischen Neue Bahnhofstr. und Kynaststr., 01.10.2010 16:00 Uhr bis 04.10.2010 06:00 Uhr ',
+         'from' => 1285855200,
+         'id' => 2138,
+         'data' => 'userdel	q4::inwork 14918,11249 14988,11130
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'http://www.berlin.de/ba-spandau/presse/archiv/20100930.1500.312639.html',
+         'until' => 1287064800,
+         'text' => 'Die Fahrbahn des Groß-Glienicker-Wegs wird zwischen Buchwaldzeile und Kladower Damm erneuert, Vollsperrung am 14.10.2010 zwischen 8.00 und 16.00 Uhr ',
+         'from' => 1287036000,
+         'id' => 2139,
+         'data' => 'userdel	2::inwork -4578,8336 -4682,8292
+',
+         'type' => 'gesperrt'
        }
      
 );
