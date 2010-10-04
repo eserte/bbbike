@@ -269,6 +269,14 @@ ${PERSISTENTTMPDIR}/croatia_osm.img:
 	-rm -f ${PERSISTENTTMPDIR}/croatia.osm
 
 # routable
+${PERSISTENTTMPDIR}/bosnia_herzegovina_osm.img:
+	cd ${PERSISTENTTMPDIR} && ( \
+	    bzcat ${MISCDIR}/download/osm/bosnia-herzegovina.osm.bz2 > bosnia-herzegovina.osm && \
+	    ${MKGMAP_ROUTABLE} --description="Bosnia-Herzegovina Routable OSM" --mapname=12117012 --country-name=Bosnia-Herzegovina --country-abbr=BA --net --route bosnia-herzegovina.osm && \
+	    mv 12117012.img bosnia_herzegovina_osm.img )
+	-rm -f ${PERSISTENTTMPDIR}/bosnia_herzegovina.osm
+
+# routable
 ${PERSISTENTTMPDIR}/dalmatia_osm.img:
 	${COMBINE_OSM} ${MISCDIR}/download/osm/dalmatien/download*.osm.gz > ${PERSISTENTTMPDIR}/dalmatia.osm
 	cd ${PERSISTENTTMPDIR} && ( \
