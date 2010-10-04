@@ -3107,10 +3107,10 @@ userdel	2 -12531,-790 -12515,-889 -12512,-911 -12575,-1031
 userdel	2 -12531,-790 -12219,-726
 userdel	2 -12531,-790 -12693,-827
 userdel	2 -12045,-757 -12148,-934
-userdel	2 -12148,-934 -12231,-1078
+userdel	2 -12148,-934 -12248,-1107
 userdel	2 -12148,-934 -12100,-962
 userdel	2 -11910,-945 -12100,-962
-userdel	2 -12285,-1174 -12231,-1078
+userdel	2 -12285,-1174 -12248,-1107
 userdel	2 -12285,-1174 -12359,-1096 -12488,-999
 userdel	2 -12488,-999 -12553,-1025
 userdel	2 -12262,-612 -12219,-726
@@ -3119,8 +3119,8 @@ userdel	2 -12575,-1031 -12768,-1069
 userdel	2 -12575,-1031 -12553,-1025
 userdel	2 -12553,-1025 -12552,-1096 -12552,-1233 -12549,-1277
 userdel	2 -12078,-1068 -12070,-1153
-userdel	2 -12078,-1068 -12020,-1062
-userdel	2 -12078,-1068 -12231,-1078
+userdel	2 -12078,-1068 -11960,-1041
+userdel	2 -12078,-1068 -12248,-1107
 userdel	2 -12078,-1068 -12100,-962
 userdel	2 -12768,-1069 -12784,-956
 userdel	2 -12571,-581 -12545,-698
@@ -18328,6 +18328,31 @@ EOF
        source_id => 'http://www.berlin.de/ba-spandau/presse/archiv/20100930.1500.312639.html',
        data  => <<EOF,
 userdel	2::inwork -4578,8336 -4682,8292
+EOF
+     },
+     { from  => 1266102000, # 2010-02-14 00:00
+       until => 1286488800, # 2010-10-08 00:00
+       text  => 'Brücke über A10: Sperrung vom 15.02.2010 bis 08.10.2010 ',
+       type  => 'gesperrt',
+       source_id => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1010/nachricht4072.html',
+       data  => <<EOF,
+	2:inwork 15337,24593 15490,24848
+EOF
+     },
+     { from  => 1286661600, # 2010-10-10 00:00
+       until => 1287784800, # 2010-10-23 00:00
+       text  => 'Einbahnstraßenregelung in der Wasserwerkstr. vom 11.10.2010 bis zum 22.10.2010 zwischen Pfefferweg und Pionierstraße.',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork; -5806,16403 -5830,16356 -5849,16199
+EOF
+     },
+     { from  => 1287957600, # 2010-10-25 00:00
+       until => 1288998000, # 2010-11-06 00:00
+       text  => 'Einbahnstraßenregelung in der Wasserwerkstr. zwischen Falkenseer Chaussee und Pfefferweg vom 25.10 bis 05.11.2010',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork; -5849,16199 -5875,15994 -5911,15877
 EOF
      },
     );

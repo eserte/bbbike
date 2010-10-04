@@ -32,15 +32,15 @@ Breite Str., Potsdam: Radweg vorhanden	RW2;RW2 -12758,-1654 -12940,-1625 -13238,
 Hreinrich-Mann-Allee: Radweg	RW;RW -12431,-2096 -12318,-2192
 Brauhausberg: Radstreifen	RW4;RW4 -12318,-2192 -12355,-2263 -12362,-2288 -12462,-2568 -12476,-2605
 Berliner Str. (B1): Radweg	RW2; -12317,-1212 -12285,-1174
-Berliner Str. (B1): beidseitiger Radweg	RW2;RW2 -12285,-1174 -12231,-1078 -12148,-934 -12045,-757
+Berliner Str. (B1): beidseitiger Radweg	RW2;RW2 -12285,-1174 -12248,-1107 -12148,-934 -12045,-757
 Berliner Str. (B1): Radweg	RW2; -10826,469 -11018,348
-Berliner Str. (B1): Radweg	RW; -11018,348 -11122,271 -11307,133 -11390,72 -11494,-4 -11584,-66 -11669,-138 -11723,-220 -11877,-478 -11935,-574 -12045,-757
-Berliner Str. (B1): teilweise parallele Nebenstraße, teilweise Radweg	RW1; -12045,-757 -11935,-574 -11877,-478 -11723,-220 -11669,-138 -11584,-66 -11494,-4 -11390,72 -11307,133 -11122,271 -11018,348 -10826,469
+Berliner Str. (B1): Radweg	RW; -11018,348 -11122,271 -11307,133 -11390,72 -11494,-4 -11584,-66 -11669,-138 -11723,-220 -11877,-478 -11886,-493 -11935,-574 -12045,-757
+Berliner Str. (B1): teilweise parallele Nebenstraße, teilweise Radweg	RW1; -12045,-757 -11935,-574 -11886,-493 -11877,-478 -11723,-220 -11669,-138 -11584,-66 -11494,-4 -11390,72 -11307,133 -11122,271 -11018,348 -10826,469
 	RW6;RW6 -11392,762 -11231,696 -11106,644 -10857,487
-#: XXX Radwegführung nach Verschwenkung der Straßenbahn begutachten (evtl. jetzt Zweirichtungsradweg)
-Humboldtbrücke: Radweg vorhanden und wegen Kfz-Straße zwingend benutzungspflichtig	RW2;RW2 -12045,-757 -11875,-925 -11613,-1125
-Nuthestr.: Radweg vorhanden und wegen Kfz-Straße zwingend benutzungspflichtig	RW2; -11549,-1169 -11613,-1125
-Nuthestr.: Radweg vorhanden und wegen Kfz-Straße zwingend benutzungspflichtig	RW2; -11613,-1125 -11549,-1169 -11463,-1232 -11356,-1317
+#XXX del --- #: XXX Radwegführung nach Verschwenkung der Straßenbahn begutachten (evtl. jetzt Zweirichtungsradweg)
+#XXX del --- Humboldtbrücke: Radweg vorhanden und wegen Kfz-Straße zwingend benutzungspflichtig	RW2;RW2 -12045,-757 -11869,-907 -11613,-1125
+#XXX del --- Nuthestr.: Radweg vorhanden und wegen Kfz-Straße zwingend benutzungspflichtig	RW2; -11549,-1169 -11613,-1125
+#XXX del --- Nuthestr.: Radweg vorhanden und wegen Kfz-Straße zwingend benutzungspflichtig	RW2; -11613,-1125 -11549,-1169 -11463,-1232 -11356,-1317
 Alt Nowawes: asphaltierte Radwege	RW;RW -10973,-1764 -10925,-1705 -10884,-1653 -10841,-1599 -10606,-1303 -10581,-1271 -10505,-1166 -10338,-950 -10154,-828
 B2: asphaltierter Zweirichtungsradweg auf der südöstlichen Seite	RW8;RW2 -10090,6868 -10206,6756 -10494,6586 -10927,6333 -12179,5629 -12645,5573 -12865,5567 -13143,5587 -13261,5566 -13578,5396 -13690,5212 -13778,4492
 B2: Radstreifen	RW4;RW4 -13778,4492 -13779,4233 -13783,3919 -13784,3900 -13703,3717

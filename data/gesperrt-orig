@@ -753,6 +753,7 @@ Boppstr.	1s:q2 11785,9437 11560,9524
 Südstern	1 10713,9260 10625,9259 10564,9292
 Südstern	1 10564,9292 10639,9304 10670,9286 10713,9260
 Pitschener Str.	1s:q3 21774,-436 21719,-397 21637,-381
+Herrfurthstr.	1s:q3 11979,8014 11823,7980
 ######################################################################
 #
 # Potsdam
@@ -784,18 +785,16 @@ Hans-Thoma-Str.	1 -12219,-726 -12262,-612 -12306,-496
 Behlertstr.	1 -12265,-418 -12194,-463 -12106,-699 -12045,-757
 Hebbelstr.	1 -12621,-359 -12571,-581
 Potsdamer Damm	2 -5736,-3629 -6119,-3907 -6426,-4014
-Nuthestr.	2 -6426,-4014 -6787,-4026 -7187,-4049 -7426,-4035 -8128,-4073 -8407,-4066 -9021,-3865 -10321,-2800 -10547,-2606 -10898,-2375 -11070,-2123 -11142,-1675 -11226,-1445 -11356,-1317
 Rudolf-Moos-Str. - Nuthestr.	2 -10281,-2690 -10321,-2800
 Kleine Gasse	1 -13272,-1168 -13287,-1231
 Bäckerstr.	1 -13314,-1226 -13287,-1231 -13203,-1246
 Spornstr.	1 -13220,-1416 -13350,-1403
-#: XXX ja?
-Nuthestr.	1 -11356,-1317 -11463,-1232 -11549,-1169
-Nuthestr.: nicht passierbarer Mittelstreifen	3nocross -12045,-757 -11875,-925 -11613,-1125 -11549,-1169 -11463,-1232 -11356,-1317
+Nuthestr.: Kfz-Straße	2 -6426,-4014 -6787,-4026 -7187,-4049 -7426,-4035 -8128,-4073 -8407,-4066 -9021,-3865 -10321,-2800 -10547,-2606 -10898,-2375 -11070,-2123 -11116,-1681 -11140,-1564 -11226,-1445 -11386,-1313 -11613,-1125 -11869,-907 -12045,-757
+Nuthestr.: nicht passierbarer Mittelstreifen	3nocross -12045,-757 -11869,-907 -11613,-1125 -11386,-1313
 Breite Str.: nicht passierbarer Mittelstreifen	3nocross -13238,-1569 -13375,-1546 -13516,-1517
 Lange Brücke: Straßenbahntrasse	3nocross -12758,-1654 -12659,-1700 -12567,-1817
 Feuerbachstr.	1 -14140,-1390 -13879,-1445
-Rudolf-Breitscheid-Str.	2 -11056,-1726 -11142,-1675
+Rudolf-Breitscheid-Str.	2 -11056,-1726 -11116,-1681
 Geschwister-Scholl-Str.	1 -14330,-1762 -14215,-1687 -14151,-1656 -14115,-1678
 Zimmerstr.	1 -13646,-1168 -13876,-1226
 Platz der Einheit	1 -12755,-1131 -12741,-1197 -12718,-1327
@@ -1641,6 +1640,8 @@ Tor	BNP:3 6431,3417
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: last_checked: 2010-10-03
+Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12748
 #: last_checked: 2010-09-20
 #: next_check: 2010-12-01
 #: note: Eröffnung des Hotels im Dezember 2010
@@ -1668,9 +1669,7 @@ Rhinstr.: neues Wohngebiet, Weg gesperrt	2:inwork 18015,13846 17300,14133
 #: next_check: 2011-06-30
 Radweg parallel zur Autobahn ist wegen Bauarbeiten am BAB gesperrt	2:inwork 5062,14681 4676,14534 3707,14303 3595,14277
 # 
-#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1002/nachricht3772.html
-#: next_check: 2010-10-01
-Brücke über A10: Sperrung vom 15.02.2010 bis 01.10.2010	2:inwork 15337,24593 15490,24848
+#XXX del --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1002/nachricht3772.html --- #: next_check: 2010-10-01 --- Brücke über A10: Sperrung vom 15.02.2010 bis 01.10.2010	2:inwork 15337,24593 15490,24848
 # 
 #: last_checked: 2010-09-11
 #: next_check: 2010-12-31

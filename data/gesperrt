@@ -578,6 +578,7 @@ Boppstr.	1s 11785,9437 11560,9524
 Südstern	1 10713,9260 10625,9259 10564,9292
 Südstern	1 10564,9292 10639,9304 10670,9286 10713,9260
 Pitschener Str.	1s 21774,-436 21719,-397 21637,-381
+Herrfurthstr.	1s 11979,8014 11823,7980
 Am Neuen Garten	1 -12166,1384 -12212,1201 -12276,831 -12302,718
 Am Neuen Garten	1 -12332,585 -12582,127
 Hochstraße	3nocross::ignrte -11399,-1339 -11461,-1424 -11540,-1543
@@ -604,23 +605,12 @@ Hans-Thoma-Str.	1 -12219,-726 -12262,-612 -12306,-496
 Behlertstr.	1 -12265,-418 -12194,-463 -12106,-699 -12045,-757
 Hebbelstr.	1 -12621,-359 -12571,-581
 Potsdamer Damm	2 -5736,-3629 -6119,-3907 -6426,-4014
-Nuthestr.	2 -6426,-4014 -6787,-4026 -7187,-4049 -7426,-4035 -8128,-4073 -8407,-4066 -9021,-3865 -10321,-2800 -10547,-2606 -10898,-2375 -11070,-2123 -11142,-1675 -11226,-1445 -11356,-1317
 Rudolf-Moos-Str. - Nuthestr.	2 -10281,-2690 -10321,-2800
 Kleine Gasse	1 -13272,-1168 -13287,-1231
 Bäckerstr.	1 -13314,-1226 -13287,-1231 -13203,-1246
 Spornstr.	1 -13220,-1416 -13350,-1403
-Nuthestr.	1 -11356,-1317 -11463,-1232 -11549,-1169
-nicht passierbarer Mittelstreifen	3nocross::ignrte -12045,-757 -11875,-925 -11613,-1125 -11549,-1169 -11463,-1232 -11356,-1317
-Nuthestr. -> Holzmarktstr.: nicht passierbarer Mittelstreifen	3::igndisp -11613,-1125 -11875,-925 -11910,-945
-Holzmarktstr. -> Nuthestr.: nicht passierbarer Mittelstreifen	3::igndisp -11910,-945 -11875,-925 -12045,-757
-Nuthestr. -> Uferweg: nicht passierbarer Mittelstreifen	3::igndisp -11875,-925 -11613,-1125 -11657,-1018
-Uferweg -> Nuthestr.: nicht passierbarer Mittelstreifen	3::igndisp -11698,-1104 -11613,-1125 -11875,-925
-Uferweg -> Uferweg: nicht passierbarer Mittelstreifen	3::igndisp -11698,-1104 -11613,-1125 -11657,-1018
-Uferweg -> Uferweg: nicht passierbarer Mittelstreifen	3::igndisp -11657,-1018 -11613,-1125 -11698,-1104
-Uferweg -> Nuthestr.: nicht passierbarer Mittelstreifen	3::igndisp -11657,-1018 -11613,-1125 -11549,-1169
-Nuthestr. -> Uferweg: nicht passierbarer Mittelstreifen	3::igndisp -11549,-1169 -11613,-1125 -11698,-1104
-Am Babelsberger Park -> Nuthestr.: nicht passierbarer Mittelstreifen	3::igndisp -11460,-1098 -11549,-1169 -11463,-1232
-Nuthestr. -> Am Babelsberger Park: nicht passierbarer Mittelstreifen	3::igndisp -11613,-1125 -11549,-1169 -11460,-1098
+Nuthestr.: Kfz-Straße	2 -6426,-4014 -6787,-4026 -7187,-4049 -7426,-4035 -8128,-4073 -8407,-4066 -9021,-3865 -10321,-2800 -10547,-2606 -10898,-2375 -11070,-2123 -11116,-1681 -11140,-1564 -11226,-1445 -11386,-1313 -11613,-1125 -11869,-907 -12045,-757
+nicht passierbarer Mittelstreifen	3nocross::ignrte -12045,-757 -11869,-907 -11613,-1125 -11386,-1313
 nicht passierbarer Mittelstreifen	3nocross::ignrte -13238,-1569 -13375,-1546 -13516,-1517
 Straßenbahntrasse	3nocross::ignrte -12758,-1654 -12659,-1700 -12567,-1817
 Mercure-Hotel -> Am Alten Markt: Straßenbahntrasse	3::igndisp -12681,-1726 -12659,-1700 -12643,-1694
@@ -630,7 +620,7 @@ Am Alten Markt -> Mercure-Hotel: Straßenbahntrasse	3::igndisp -12643,-1694 -1265
 Am Alten Markt -> Lange Brücke: Straßenbahntrasse	3::igndisp -12643,-1694 -12659,-1700 -12567,-1817
 Lange Brücke -> Am Alten Markt: Straßenbahntrasse	3::igndisp -12758,-1654 -12659,-1700 -12643,-1694
 Feuerbachstr.	1 -14140,-1390 -13879,-1445
-Rudolf-Breitscheid-Str.	2 -11056,-1726 -11142,-1675
+Rudolf-Breitscheid-Str.	2 -11056,-1726 -11116,-1681
 Geschwister-Scholl-Str.	1 -14330,-1762 -14215,-1687 -14151,-1656 -14115,-1678
 Zimmerstr.	1 -13646,-1168 -13876,-1226
 Platz der Einheit	1 -12755,-1131 -12741,-1197 -12718,-1327
@@ -1884,13 +1874,13 @@ Schranke, kann auch mit Anhänger umfahren werden	BNP:1:-168 49137,24422
 Drängelgitter	BNP:3:24:trailer=6 3644,8456
 Poller, Abstand 80cm (mit Anhänger über Gehweg umfahren)	BNP:1:1:trailer=10 7816,5682
 Tor	BNP:3:-209 6431,3417
+Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12748
 Spittelmarkt: wegen Bauarbeiten gesperrt	2:inwork 10166,11592 10153,11666 10213,11728
 Elisabeth-Mara-Str.: Bauarbeiten bis zum Frühjahr 2011	2:inwork 10506,11567 10320,11627
 Großer Weg: Bauarbeiten, Weg wird neu gemacht	2:inwork 6809,11570 6980,11583
 Wagner-Régeny-Str.: Straße ist fertig, aber noch gesperrt	2:inwork 19487,3593 19377,3721
 Rhinstr.: neues Wohngebiet, Weg gesperrt	2:inwork 18015,13846 17300,14133
 Radweg parallel zur Autobahn ist wegen Bauarbeiten am BAB gesperrt	2:inwork 5062,14681 4676,14534 3707,14303 3595,14277
-Brücke über A10: Sperrung vom 15.02.2010 bis 01.10.2010	2:inwork 15337,24593 15490,24848
 Wegedornbrücke: Vollsperrung, Neubau	2:inwork 20385,593 20442,564 20510,530 20534,501
 Rathausbrücke: gesperrt (Neubau), Fertigstellung 2011 oder 2012	2:inwork 10362,12351 10422,12395
 Vicki-Baum-Str.: noch in Bau, gesperrt	2:inwork 15753,10353 15688,10400

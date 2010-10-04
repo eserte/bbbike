@@ -1848,16 +1848,7 @@ userdel	3 13150,7254 13047,7234 13034,7319
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_016440',
-         'until' => 1286164800,
-         'text' => 'Boxhagener Str. (Friedrichshain/Lichtenberg): Baustelle, Straße vollständig gesperrt (bis vorauss. 04.10.2010 06:00) in beiden Richtungen zwischen Neue Bahnhofstr. und Kynaststr., 01.10.2010 16:00 Uhr bis 04.10.2010 06:00 Uhr ',
-         'from' => 1285855200,
-         'id' => 2138,
-         'data' => 'userdel	q4::inwork 14918,11249 14988,11130
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'http://www.berlin.de/ba-spandau/presse/archiv/20100930.1500.312639.html',
          'until' => 1287064800,
@@ -1867,6 +1858,34 @@ userdel	3 13150,7254 13047,7234 13034,7319
          'data' => 'userdel	2::inwork -4578,8336 -4682,8292
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1010/nachricht4072.html',
+         'until' => 1286488800,
+         'text' => 'Brücke über A10: Sperrung vom 15.02.2010 bis 08.10.2010 ',
+         'from' => 1266102000,
+         'id' => 2140,
+         'data' => '	2:inwork 15337,24593 15490,24848
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1287784800,
+         'text' => 'Einbahnstraßenregelung in der Wasserwerkstr. vom 11.10.2010 bis zum 22.10.2010 zwischen Pfefferweg und Pionierstraße.',
+         'from' => 1286661600,
+         'id' => 2141,
+         'data' => 'userdel	q4::inwork; -5806,16403 -5830,16356 -5849,16199
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1288998000,
+         'text' => 'Einbahnstraßenregelung in der Wasserwerkstr. zwischen Falkenseer Chaussee und Pfefferweg vom 25.10 bis 05.11.2010',
+         'from' => 1287957600,
+         'id' => 2142,
+         'data' => 'userdel	q4::inwork; -5849,16199 -5875,15994 -5911,15877
+',
+         'type' => 'handicap'
        }
      
 );
