@@ -902,7 +902,7 @@ sub get_street_type {
 			    |\s\(Kolonie\)$
 			    )}x) {
 	    return 'orchard';
-	} elsif ($name =~ m{^[SU]-Bhf\s}) {
+	} elsif ($name =~ m{^[SU]-Bhf\.?\s}) {
 	    return 'railway station';
 	} elsif ($name =~ m{\s\(Park\)$}) {
 	    return 'park';
