@@ -195,3 +195,10 @@ a.ms:visited { color:#333333; }
   font-weight:bold;
   font-size:larger;
 }
+
+/* Ausweichroute */
+.altroutebox {
+  background-color: #ffcc66;
+  padding:3px;
+  text-align:center;
+}

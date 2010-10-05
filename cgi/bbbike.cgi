@@ -4429,7 +4429,7 @@ sub display_route {
 		$hidden .= $q->hidden(-name => $key,
 				      -default => [$q->param($key)]);
 	    }
-	    print qq{<center><form name="Ausweichroute" action="} .
+	    print qq{<form class="altroutebox" name="Ausweichroute" action="} .
 		BBBikeCGIUtil::my_url($q) . qq{" } . (@affecting_blockings > 1 ? qq{onSubmit="return test_temp_blockings_set()"} : "") . qq{>};
 	    print $hidden;
 	    if ($sess) {
@@ -4437,7 +4437,7 @@ sub display_route {
 				 -default => $sess->{_session_id},
 				);
 	    }
-	    print M("Ereignisse, die die Route betreffen k&ouml;nnen") . ":<br>";
+	    print "<b>" . M("Ereignisse, die die Route betreffen k&ouml;nnen") . "</b>:<br>";
 	    for my $tb (@affecting_blockings) {
 		my $lost_time_info = $tb->{lost_time}{$velocity_kmh};
 		print "<input type=\"" .
@@ -4450,8 +4450,8 @@ sub display_route {
 		print "<br>";
 	    }
 	    print <<EOF;
-<input type=submit value="@{[ M("Ausweichroute suchen") ]}"><hr>
-</form></center><p>
+<input type=submit value="@{[ M("Ausweichroute suchen") ]}">
+</form><p>
 EOF
 	}
 	if (@custom && !$printmode) {
