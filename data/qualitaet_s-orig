@@ -148,7 +148,7 @@ Belziger Str.: Asphalt	Q0 7315,9156 7110,9024
 Suadicanistr.: Asphalt	Q0 7859,7486 7858,7506
 Suadicanistr.: glatt gepflastert	Q0 7858,7506 7854,7572
 Lilienthalstr.: Asphalt	Q0 10675,8940 10653,8831
-Lilienthalstr.: unbefestigte Straße	Q2 10653,8831 10627,8706
+Lilienthalstr.: unbefestigte Straße	Q2+ 10653,8831 10627,8706
 Lilienthalstr.: Asphalt	Q0 10627,8706 10598,8563
 Weichselstr.: mäßiges Kopfsteinpflaster, 15-17 km/h	Q2- 12330,8636 12394,8729 12483,8834 12590,8977 12681,9083 12761,9190 12851,9309 12844,9351
 Treptower Str.: Asphalt	Q0 13857,8601 14015,8798 14145,8971
@@ -3391,7 +3391,7 @@ Am Binsengrund: Asphalt	Q0 21435,10255 21566,10222
 Garziner Platz: Asphalt	Q0 20945,10286 20947,10137
 Eberhard-Roters-Platz: Asphalt	Q0 9026,8916 8990,8915 8954,8914
 Alte Brauerei: Asphalt	Q0 8954,8914 8953,8886 8814,8881
-(Zufahrt zum Viktoria-Quartier): Asphalt	Q0 9111,9036 9026,8916
+(Zufahrt zum Viktoria-Quartier): Asphalt	Q0 9111,9036 9099,9034 9052,8934 9026,8916
 (Saarower Weg - Fürstenwalder Allee): unbefestigter Weg	Q2 31041,3794 30987,3583 30993,3557
 Hartlebenstr.: Beton	Q0- 26080,5946 26073,5847 26062,5776
 #: note: zwischen Löcknitz- und Flakenseestr. "bituminöse" Decke, laut http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20080811.1415.106769.html, der Rest per Augenschein bestätigt
@@ -4134,6 +4134,7 @@ Fuchsbau (Grünau): Asphalt	Q0 21421,2268 21416,2139 21414,2085 21385,2031
 Waldvogelweg: Asphalt	Q0 21416,2139 21385,2146 21301,2189
 Adlerhorst: fester Sandweg	Q2+ 21111,2451 21123,2409 21185,2341
 (Adlergestell - Am Kanal): Asphalt	Q0 21041,2259 21050,2267 20946,2397
+Werner-Loebermann-Weg: Asphalt	Q0 9268,8029 9268,8331 9292,8404
 ######################### User Contributions #################################
 #: by: Dominik Seelow vvv
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
@@ -12108,6 +12109,9 @@ Am Löwentor: Asphalt	Q0 -6021,2068 -6145,2091 -6171,2128 -6273,2194 -6336,2234
 #: note: q2 mit der Angabe "keine Einschränkung" ignoriert
 #: note: anonymer Eintrag ignoriert: fester Sandweg, Q1, q2 ohne weitere Angaben
 Kronbergstr.: guter Asphalt	Q0 11099,-857 11291,-834 11490,-809 11680,-792 11844,-773
+#: by: Heidi Kochan:
+#: note: q2 (wegen der "vielen Seitenstraßen") ignoriert
+Königsteinstr. (Lichtenrade): guter Asphalt	Q0 11259,-555 11264,-605 11278,-719 11291,-834 11305,-952 11310,-996 11495,-1128 11551,-1114
 #: by: Jörg Lehmann:
 Nach der Höhe: schlechtes Kopfsteinpflaster	Q3 4254,22174 4308,22058 4355,21967
 #: by: Angelika Fiedler:
@@ -12117,6 +12121,11 @@ Springeberger Weg: schlechtes Kopfsteinpflaster; Gehwege teils gepflastert, meis
 #: by: Caroline Heine:
 #: note: q1, einige Fußgänger ignoriert
 Döhlauer Pfad: Asphalt	Q0 7879,3455 7800,3435
+#: by: Lothar Goltzsche:
+An der Dorfkirche: Asphalt	Q0 8173,839 8114,722
+#: by: Holger Hartung:
+#: note: q3, "z.T. unübersichtlich" ignoriert
+Bottroper Weg: mäßiger Beton	Q1- 2133,18885 2015,18854 1864,18856
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206

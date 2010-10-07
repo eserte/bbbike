@@ -366,6 +366,8 @@ Lichterfeld - Besucherbergwerk F60: Radweg in Bau	? 37870,-89814 37883,-89858 37
 Radweg von Penkow nach Malchow: beidseitig, asphaltiert, 2,25m breit, 2008-08-01 fertiggestellt	? -54521,116188 -55301,116578 -57151,117294 -57614,117523 -57683,117755 -58208,117685
 #: last_checked: 2010-03-18
 Fußgängerbrücke über den Nordhafen in Planung	?::projected -2506,16315 -2510,16357
+#: next_check: 2010-10-30
+Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-17188 17398,-17485
 #: section ^^^
 #: section ^^^
 #
@@ -493,8 +495,10 @@ Kleistpark: im Sommer bis 21 Uhr geöffnet, im Winter bis 18 Uhr	? 7209,9507 7246
 #: section isolated entries vvv
 #: section ignorieren vvv
 # 
+#: by: anonymous:
+Fischerstieg (Bindow): guter Asphalt, Q0	? 34954,-14689 34843,-14689 34717,-14742 34639,-14721
 #: by: anonymous vvv
-#: XXX str_cont_ausnahme-Eintrag
+#: XXX str_cont_ausnahme-Eintrag fehlt
 Rinntaler Steig: mäßiger Asphalt (einige Fußgänger, q1 ignorieren)	? 27918,12 27993,10 28015,24 28036,62
 Rinntaler Steig: mäßiger Asphalt (einige Fußgänger, q1 ignorieren)	? 28015,24 28035,0 28083,-34
 #: by: ^^^
@@ -1426,8 +1430,8 @@ Britzer Park - Weg entlang der U-Bahn-Betriebswerkstatt: Qualität (laut ADFC-Kar
 Johannisthaler Chaussee - Lipschitzallee: Qualität (laut ADFC-Karte gut geeignet)? Teile des Weges heißen "Martin-Luther-King-Weg", welche genau?	? 13931,2579 13988,2614 14087,2494 14224,2368 14324,2298 14511,2205
 Wublitzbrücke - Töplitz: Qualität (wahrscheinlich Feld- oder Waldweg)?	? -21681,702 -22045,765 -22525,1230 -22911,1634 -23105,2016 -23207,2284
 Nattwerder - Golm: Qualität (wahrscheinlich Feldweg)?	? -21043,1586 -20807,1383 -20955,978 -21221,764
-Kirchstr. - An der Dorfkirche: Qualität (laut ADFC-Karte gut geeignet)?	? 8263,1061 8216,1028 8162,907 8173,839
-An der Dorfkirche: Qualität (laut ADFC-Karte gut geeignet)?	? 8173,839 8114,722
+#: XXX mit green1 kennzeichnen
+Kirchstr. - An der Dorfkirche: Qualität (laut ADFC-Karte gut geeignet)? Nachts beleuchtet?	? 8263,1061 8216,1028 8162,907 8173,839
 B198 - Althüttendorf: Qualität?	? 37199,61240 36968,61684 36889,61715 36864,62166 36791,62367 36748,62422
 Althüttendorf - Joachimsthal: Qualität?	? 36730,62544 36450,62349 36188,62343 36029,62495 35798,62477 35292,62513 34987,62623 34524,62903 33939,63348 33732,63567 33592,63860 33592,64079 33500,64073 33421,64098 33080,63939
 Nördlich des Grimnitzsees: Qualität?	? 33689,65780 34018,65700 34347,65737 35176,65603 35786,65517 36377,65481 36681,65304 36864,64841 37193,64609 37266,64603 37608,64317 38095,64055 38327,63933
@@ -1826,7 +1830,6 @@ Breckerfelder Pfad: Qualität?	? 1457,18237 1501,18429
 Letmather Weg: Qualität?	? 1524,18221 1546,18317 1557,18421
 #: XXX ein anonymer Eintrag schrieb: Asphalt, Q1, aber meinte vielleicht nicht diese Straße hier:
 Werdohler Weg: Qualität?	? 1309,18288 1390,18256 1457,18237 1524,18221 1596,18214 1672,18205 1760,18200 1848,18199 1936,18209 2022,18225
-Bottroper Weg: Qualität?	? 2133,18885 2015,18854 1864,18856
 Emstaler Platz: Qualität? Für Autos gesperrt?	? 1864,18856 1632,18855 1631,18958
 Kirchgasse (Tegel): Qualität? Für Autos gesperrt?	? 1630,20097 1669,19982
 Dacheroedenstr.: Qualität?	? 1407,20563 1387,20621 1377,20737
@@ -2271,7 +2274,6 @@ Hanowsteig: Qualität?	? 11318,-1779 11341,-1755 11525,-1736 11509,-1602 11494,-1
 Hanowsteig - Tietjenstr.: Besteht für Radfahrer eine Verbindung? Qualität?	? 11525,-1736 11581,-1731 11657,-1721
 Carl-Steffeck-Str.: Qualität?	? 11494,-1468 11246,-1496
 Rennsteig: Qualität?	? 11666,-1209 11659,-1152 11600,-950 11598,-915
-Königsteinstr. (Lichtenrade): Qualität?	? 11259,-555 11264,-605 11278,-719 11291,-834 11305,-952 11310,-996 11495,-1128 11551,-1114
 Marie-Juchacz-Str. (Potsdam): Qualität?	? -7369,-5648 -7398,-5650 -7472,-5652 -7537,-5620 -7592,-5565 -7655,-5517 -7713,-5470 -7767,-5415
 Margarete-Buber-Neumann-Str. (Potsdam): Qualität?	? -7784,-4963 -7689,-5039
 Karoline-Schulze-Str. (Potsdam): Qualität?	? -7844,-5026 -7747,-5102
@@ -4664,4 +4666,3 @@ Weg entlang der S-Bahn: wie weit Richtung Norden geht es weiter?	? 20048,16317 2
 Asphaltierter Radweg Richtung Waltersdorf/Flughafen Schönefeld: wie geht es weiter?	? 21306,-975 21284,-1008 21273,-1057 21237,-1108
 #: XXX Eintrag in Berlin.coords.data fehlt
 Kirchsteig: Qualität? Stimmt der Straßenname?	? 22007,711 21894,561
-Werner-Loebermann-Weg: wie weit Richtung Norden geht es weiter?	? 9269,8303 9298,8334 9295,8400

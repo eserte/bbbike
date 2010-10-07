@@ -17630,13 +17630,13 @@ EOF
 (Eingang Tempelhofer Damm - südliche Landebahn)	2::night 9302,7294 9351,7241 9461,7190
 EOF
      },
-     { from  => 1263121920, # 2010-01-10 12:12
-       until => 1338472800, # 2012-05-31 16:00
-       text  => 'Lahnstr. (Neukölln): Baustelle mit prov. Ampel, für beide Richtungen nur ein Fahrstreifen abwechselnd frei, zwischen Mierstr. und Mittelbuschweg, 11.01.2010 12:12 Uhr bis 31.05.2012 16:00 Uhr ',
+     { from  => 1286097120, # 2010-10-03 11:12
+       until => 1312034400, # 2011-07-30 16:00
+       text  => 'Lahnstr. (Neukölln): Baustelle, Fahrtrichtung gesperrt Richtung Grenzallee zwischen Mierstr. und Niemetzstr., 04.10.2010 11:12 Uhr bis 30.07.2011 16:00 Uhr ',
        type  => 'handicap',
        source_id => 'IM_014905',
        data  => <<EOF,
-userdel	q4::inwork 13500,7018 13627,7047 13891,7107
+userdel	q4::inwork; 13627,7047 13891,7107
 EOF
      },
      { from  => 1274300387, # 2010-05-19 22:19

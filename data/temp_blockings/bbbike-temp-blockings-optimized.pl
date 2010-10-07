@@ -1538,11 +1538,11 @@ userdel	q4::inwork; 10614,19907 10742,19632
        },
        {
          'source_id' => 'IM_014905',
-         'until' => 1338472800,
-         'text' => 'Lahnstr. (Neukölln): Baustelle mit prov. Ampel, für beide Richtungen nur ein Fahrstreifen abwechselnd frei, zwischen Mierstr. und Mittelbuschweg, 11.01.2010 12:12 Uhr bis 31.05.2012 16:00 Uhr ',
-         'from' => 1263121920,
+         'until' => 1312034400,
+         'text' => 'Lahnstr. (Neukölln): Baustelle, Fahrtrichtung gesperrt Richtung Grenzallee zwischen Mierstr. und Niemetzstr., 04.10.2010 11:12 Uhr bis 30.07.2011 16:00 Uhr ',
+         'from' => 1286097120,
          'id' => 2069,
-         'data' => 'userdel	q4::inwork 13500,7018 13627,7047 13891,7107
+         'data' => 'userdel	q4::inwork; 13627,7047 13891,7107
 ',
          'type' => 'handicap'
        },
@@ -1818,16 +1818,7 @@ userdel	3 13150,7254 13047,7234 13034,7319
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_016372',
-         'until' => 1286370000,
-         'text' => 'Friedrichstr. (Mitte): Baustelle, Fahrtrichtung Richtung Chausseestr. gesperrt zwischen Dorotheenstr. und Georgenstr., 20.09.2010 04:00 Uhr bis 06.10.2010 15:00 Uhr ',
-         'from' => 1284861600,
-         'id' => 2135,
-         'data' => 'userdel	q4::inwork; 9330,12529 9314,12652
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'LS/O-SG33-E/10/086',
          'until' => 1288562400,

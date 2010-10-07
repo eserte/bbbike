@@ -129,18 +129,18 @@ for my $kr ($kr1, $kr2) {
 	is($situation{action}, 'right', q{It's "right"});
     }
 
-    # Viktoria-Quartier -> Methfesselstr.
+    # Rudolfplatz
     {
-	my %situation = situation_at_point_inorder($kr, qw(9026,8916 9111,9036 9063,8935));
+	my %situation = situation_at_point_inorder($kr, qw(13886,10939 14026,10869 13896,10851));
 	is($situation{action}, 'sharp-right', q{It's "sharp-right"});
 	if ($kr == $kr2) {
-	    is($situation{traffic_rule}, '', "Here's nothing else"); # XXX rechts-vor-links?
+	    is($situation{traffic_rule}, '', "Here's nothing else");
 	}
     }
 
-    # Methfesselstr. -> Viktoria-Quartier
+    # Rudolfplatz (rück)
     {
-	my %situation = situation_at_point_inorder($kr, qw(9063,8935 9111,9036 9026,8916));
+	my %situation = situation_at_point_inorder($kr, qw(13896,10851 14026,10869 13886,10939));
 	is($situation{action}, 'sharp-left', q{It's "sharp-left"});
     }
 
@@ -282,6 +282,7 @@ for my $kr ($kr1, $kr2) {
 
 sub situation_at_point_inorder {
     my($kr, $before_point, $at_point, $after_point) = @_;
+    local $Test::Builder::Level = $Test::Builder::Level + 1;
     my %situation = situation_at_point_inorder_unchecked($kr, $before_point, $at_point, $after_point);
     local $TODO = ""; # these should always pass, regardless of the current $TODO setting
     ok($situation{before_street}, "Got street before - $before_point $at_point");
