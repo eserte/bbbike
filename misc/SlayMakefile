@@ -70,7 +70,7 @@
 			}
 		}
 
-		my @links;
+		my %citypart2link;
 		while(my($citypart, $fz) = each %citypart2fz) {
 			@{ $fz->{Data} } = sort @{ $fz->{Data} };
 			my $bbd = $fz->as_string;
@@ -89,7 +89,7 @@
 
 			my $basename = BBBikeUtil::umlauts_to_german($citypart) . ".html";
 			$basename =~ s{ }{_}g;
-			push @links, {label => $citypart, href => $basename, count => $fz->count};
+			$citypart2link{$citypart} = {label => $citypart, href => $basename, count => $fz->count};
 			my $ofile = "$dir/" . $basename;
 			open my $ofh, ">", "$ofile~" or die "Can't write to $ofile~: $!";
 			binmode $ofh, ":utf8";
@@ -107,19 +107,25 @@
 			}
 		}
 
-		@links = sort { $a->{label} cmp $b->{label} } @links;
 		my $index_file = "$dir/index.html";
 		open my $ofh, ">", "$index_file~" or die "While writing to $index_file~: $!";
 		binmode $ofh, ":utf8";
 		print $ofh qq{<html><head><title>BBBike: Fragezeichen</title><meta http-equiv="content-type" content="text/html; charset=utf-8"></title><body>};
 		print $ofh "<h1>BBBike: Fragezeichen</h1>";
 		my $total_count = 0;
-		for my $link (@links) {
-			print $ofh qq{<a href="$link->{href}">$link->{label}</a> ($link->{count})<br/>\n}; # XXX escaping?
-			$total_count += $link->{count};
+		for my $citypart (sort keys %citypart2polygon) {
+			my $link = $citypart2link{$citypart};
+			if ($link) {
+				print $ofh qq{<a href="$link->{href}">$link->{label}</a> ($link->{count})<br/>\n}; # XXX escaping?
+				$total_count += $link->{count};
+			} else {
+				print $ofh qq{<span style="color:green;">$citypart</span> (0)<br/>\n}; # XXX escaping?
+			}
 		}
 		print $ofh "<hr/>";
 		print $ofh "Insgesamt: $total_count Fragezeichen-Einträge";
+		print $ofh "<hr/>";
+		print $ofh qq{<a href="http://www.bbbike.de">BBBike</a>\n};
 		print $ofh qq{</body></html>};
 		close $ofh or die $!;
 		chmod 0644, "$index_file~";
