@@ -4133,8 +4133,9 @@ Schilfsängersteig: Asphalt	Q0 21372,2043 21353,2061 21351,2079 21323,2105 21271,
 Fuchsbau (Grünau): Asphalt	Q0 21421,2268 21416,2139 21414,2085 21385,2031
 Waldvogelweg: Asphalt	Q0 21416,2139 21385,2146 21301,2189
 Adlerhorst: fester Sandweg	Q2+ 21111,2451 21123,2409 21185,2341
-(Adlergestell - Am Kanal): Asphalt	Q0 21041,2259 21050,2267 20946,2397
+(Adlergestell - Am Kanal): Asphalt	Q0 21041,2259 21050,2267 20946,2397 20939,2413
 Werner-Loebermann-Weg: Asphalt	Q0 9268,8029 9268,8331 9292,8404
+Alexander-Meißner-Str.: Asphalt	Q0 19894,-835 20078,-1029
 ######################### User Contributions #################################
 #: by: Dominik Seelow vvv
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
@@ -6586,9 +6587,7 @@ Arabisweg: Beton	Q0 17764,2317 17721,2232 17709,2208 17668,2187
 Resselsteig: Asphalt	Q0 5309,1130 5364,1049 5327,1026 5424,882
 #: by: Suse Andersen:
 Tillmannsweg: kleinteiliges Pflaster	Q1 -4368,1731 -4373,1910 -4287,2079 -4326,2141
-#: by: Sirko:
-#: XXX evtl. war hier nicht die Treppe, sondern die fahrbare Verbindung gemeint?
-(Am Kanal - Adlergestell): loser Beton	Q2 20939,2413 20946,2397 20939,2389 20928,2378
+#XXX del --- : by: Sirko: --- #: XXX evtl. war hier nicht die Treppe, sondern die fahrbare Verbindung gemeint? --- (Am Kanal - Adlergestell): loser Beton	Q2 20939,2413 20946,2397 20939,2389 20928,2378
 #: by: Jan (Flauschm...): vvv
 Titusweg: Beton	Q0 2573,21008 2556,21070 2473,21275 2404,21445
 Hieronymusweg: Beton	Q0 2556,21070 2691,21136
@@ -12992,7 +12991,7 @@ Kehler Weg: asphaltiert	Q0 2027,4792 2025,4935
 Bitscher Str.: asphaltiert	Q0 1884,4811 1939,4949 1969,4978
 #: corrected_by: srt (Q1 -> Q0-)
 Darßer Str.: Beton	Q0- 15230,18021 15568,17962 15715,17930 15783,17915 15881,17899 16277,17830 16468,17792 16563,17759 16671,17672 16751,17560 16779,17521 16837,17440
-Gehrenseestr.: Beton	Q0 18313,16643 18465,16761 18738,16957
+Gehrenseestr.: Beton	Q0 18313,16643 18465,16761 18568,16835 18738,16957
 #: by: Jens Velten [AM] vvv
 Heubergerweg: Beton	Q1 17387,4446 17276,4539 17225,4568 17171,4575 17125,4565 17075,4525 17025,4462
 #: corrected_by: srt (Beton -> Asphalt)

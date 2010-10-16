@@ -381,6 +381,8 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 # Das heißt diese Strecken werden nicht bei einer erweiterten Suche aufgenommen
 # und dem CGI-Benutzer auch nicht präsentiert.
 # 
+Poßweg: evtl. Eintrag in brunnels notwendig - Name der Brücke?	? -429,4043 -472,4090
+Altkanzlerstr.: evtl. Eintrag in brunnels notwendig - Name der Brücke?	? -222,4300 -151,4228
 #: XXX_prog
 Bordsteinkante Richtung Westen	? 17183,17385
 #: XXX_indoor
@@ -3157,6 +3159,7 @@ Lößnitzer Weg: Qualität?	? 15655,556 15597,703 15579,745 15520,887 15505,923 154
 Lauchstädter Weg: Qualität?	? 15952,719 15872,902 15804,1061 15758,1179 15699,1258 15591,1332
 Pirnaer Str.: Qualität?	? 16042,772 15999,880 15970,954 15966,965 15935,1043 15901,1120
 #: XXX unklarer Eintrag von bene...finti: Asphalt, enge Straße, q0, vielleicht war auch die Onkel-Bräsig-Str. gemeint
+#: XXX eventuell ein Eintrag in brunnels-orig notwendig
 Siebenendenweg: Qualität? Ist die gesamte Straße für Autos gesperrt?	? 404,3970 21,4434 -62,4564
 #: XXX Eintrag von Birgit Poethke, aber unklar, ob sie genau diesen Weg meint: "Q3, fester Sandweg, q2, viele Fußgänger, nachts unbeleuchtet"
 TR4 durch den Volkspark Jungfernheide: Qualität/Wegbeschaffenheit? Nachts beleuchtet?	? 1468,15194 1510,15067 1550,15014 2367,14836 2527,14832 2683,14878 2675,14744
@@ -3427,6 +3430,7 @@ Von-der-Trenck-Str.: Qualität?	? -3245,1427 -3065,1565
 Barnhelmstr.: Qualität?	? -3192,1343 -2976,1418 -2753,1490 -2698,1509
 Tellheimstr.: Qualität?	? -3094,1183 -2902,1296
 Waldhauswinkel: Qualität?	? -2847,1705 -2784,1728
+#: XXX Eintrag in brunnels-orig notwendig?
 Zinnowweg: Qualität? Für Radfahrer befahrbar? Nachts beleuchtet?	? -420,4159 -343,4056 -162,3827 -92,3724 -90,3645 -135,3567
 Ottmachauer Steig: Qualität? Für Radfahrer offen?	? -442,4691 -424,4717 -311,4637
 Selmaplatz: Qualität?	? -361,4334 -408,4302
@@ -4632,8 +4636,7 @@ Märkische Zeile: gibt es tatsächlich einen Weg diesen Namens hier? Für Radfahrer
 Erich-Baron-Weg: ist die Straße zwischen Kastanienallee und Akazienallee tatsächlich schlecht gepflastert?	? 24288,8008 24313,8170 24342,8321
 Langenbeckstr.: ist die gesamte Straße asphaltiert?	? 24793,9860 25020,9728
 Hultschiner Damm: existieren zwischen Elsenstr. und Mahlsdorf in beiden Richtungen Radwege?	? 24740,10992 24654,11265
-#: XXX fehlt in Berlin.coords.data, PLZ=12526:
-Alexander-Meißner-Str.: Qualität? Ist die Straße schon komplett fertiggestellt?	? 19894,-835 20078,-1029 20387,-1369 20431,-1896
+Alexander-Meißner-Str.: Qualität? Ist die Straße schon komplett fertiggestellt? Gibt es auch im südlichen Teil Radwege?	? 20078,-1029 20387,-1369 20431,-1896
 #: XXX fehlt in Berlin.coords.data, PLZ=12526:
 Ludwig-Prandtl-Str.: Qualität? Ist die Straße schon komplett fertiggestellt?	? 19684,-1221 19871,-1192 19924,-1157 20078,-1029 20243,-870
 #: by: http://www.cdu-fraktion-tk.de/image/inhalte/file/Amtsblatt_Nr__30.pdf
@@ -4666,3 +4669,5 @@ Weg entlang der S-Bahn: wie weit Richtung Norden geht es weiter?	? 20048,16317 2
 Asphaltierter Radweg Richtung Waltersdorf/Flughafen Schönefeld: wie geht es weiter?	? 21306,-975 21284,-1008 21273,-1057 21237,-1108
 #: XXX Eintrag in Berlin.coords.data fehlt
 Kirchsteig: Qualität? Stimmt der Straßenname?	? 22007,711 21894,561
+#: last_checked: 2010-10-16
+Am Seegraben/Alexander-Meißner-Str.: Ampel in Vorbereitung	?::inwork 19894,-835

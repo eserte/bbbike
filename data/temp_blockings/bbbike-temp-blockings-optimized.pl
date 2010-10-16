@@ -1309,17 +1309,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_011081',
-         'until' => 1287147600,
-         'text' => 'Blankenburger Str. (Pankow): Baustelle, Fahrtrichtung gesperrt Richtung Dietzgenstr. zwischen Siegfriedstr. und Dietzgenstr. sowie Einbahnstraßenregelung in der Siegfriedstr., 05.01.2009 11:00 Uhr bis 15.10.2010 ',
-         'from' => 1231063200,
-         'id' => 2016,
-         'data' => 'userdel	q4::inwork; 10742,19632 10439,19576 10377,19565 10249,19541
-userdel	q4::inwork; 10614,19907 10742,19632
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'IM_015001',
          'until' => 1309471199,
@@ -1551,16 +1541,7 @@ userdel	q4::inwork; 10614,19907 10742,19632
        undef,
        undef,
        undef,
-       {
-         'source_id' => '106900348',
-         'until' => 1286575200,
-         'text' => 'Treuenbrietzen: L82: Bau Schmutzwasser- und Trinkwasserleitungen OL Marzahna, 27.05.2010 bis 08.10.2010',
-         'from' => 1274820117,
-         'id' => 2075,
-         'data' => 'userdel	2::inwork -29601,-47258 -30976,-45652
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'source_id' => 'http://www.berlin.de/ba-lichtenberg/presse/archiv/20100528.1110.297131.html',
@@ -1786,16 +1767,7 @@ userdel	q4::inwork; 10614,19907 10742,19632
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_016334',
-         'until' => 1286550000,
-         'text' => 'Dorfplatz (Bohnsdorf): Baustelle, Fahrtrichtung gesperrt Richtung A 117 zwischen Grünbergallee und Buntzelstr., 13.09.2010 08:00 Uhr bis 08.10.2010 17:00 Uhr ',
-         'from' => 1284271200,
-         'id' => 2130,
-         'data' => 'userdel	q4::inwork; 20827,-537 20890,-546 20986,-529 21074,-475
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        {
@@ -1829,37 +1801,10 @@ userdel	3 13150,7254 13047,7234 13034,7319
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20100920.1135.311271.html',
-         'until' => 1286402399,
-         'text' => 'Fahrbahnerneuerung im Zabel-Krüger-Damm zwischen Schluchseestraße und Albtalweg, Einbahnstraße Richtung Oraniendamm, vom 22. September 2010 bis zum 6. Oktober 2010 ',
-         'from' => 1285020000,
-         'id' => 2137,
-         'data' => 'userdel	q4::inwork; 5006,22507 5142,22581 5260,22634 5368,22669
-',
-         'type' => 'handicap'
-       },
        undef,
-       {
-         'source_id' => 'http://www.berlin.de/ba-spandau/presse/archiv/20100930.1500.312639.html',
-         'until' => 1287064800,
-         'text' => 'Die Fahrbahn des Groß-Glienicker-Wegs wird zwischen Buchwaldzeile und Kladower Damm erneuert, Vollsperrung am 14.10.2010 zwischen 8.00 und 16.00 Uhr ',
-         'from' => 1287036000,
-         'id' => 2139,
-         'data' => 'userdel	2::inwork -4578,8336 -4682,8292
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'source_id' => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1010/nachricht4072.html',
-         'until' => 1286488800,
-         'text' => 'Brücke über A10: Sperrung vom 15.02.2010 bis 08.10.2010 ',
-         'from' => 1266102000,
-         'id' => 2140,
-         'data' => '	2:inwork 15337,24593 15490,24848
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
+       undef,
        {
          'until' => 1287784800,
          'text' => 'Einbahnstraßenregelung in der Wasserwerkstr. vom 11.10.2010 bis zum 22.10.2010 zwischen Pfefferweg und Pionierstraße.',
