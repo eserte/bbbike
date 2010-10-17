@@ -48,17 +48,18 @@ foreach my $def (@test_defs) {
 
     my($got_dir, $got_angle) = Strassen::Util::abbiegen_s(@$def);
     is($got_dir, $dir);
-    ok(approx_angle($got_angle, $angle));
+    is_approx_angle($got_angle, $angle);
 
     my(@p) = map {[split /,/]} @$def;
     ($got_dir, $got_angle) = Strassen::Util::abbiegen(@p);
     is($got_dir, $dir);
-    ok(approx_angle($got_angle, $angle));
+    is_approx_angle($got_angle, $angle);
 }
 
-sub approx_angle {
+sub is_approx_angle {
     my($a1, $a2) = @_;
-    (abs($a1-$a2) < 2)
+    local $Test::Builder::Level = $Test::Builder::Level + 1;
+    cmp_ok(abs($a1-$a2), "<", 1);
 }
 
 __END__
