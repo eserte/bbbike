@@ -23,7 +23,7 @@ BEGIN {
     }
 }
 
-plan tests => 3 + 7 + 6;
+plan tests => 3 + 7 + 6 + 1;
 
 use_ok 'BBBikeUtil', 'bbbike_root';
 
@@ -49,5 +49,13 @@ is($bbbike_root, realpath(dirname(dirname(realpath($0)))), "Expected value for b
     is(BBBikeUtil::m2km(5,3,2),    '0.005 km', 'significant though below two digits');
     is(BBBikeUtil::m2km(50,3,1),   '0.050 km');
 }
+
+{
+    # See also abbiegen.t and Strassen::Util::abbiegen for the same
+    # problem
+    my($angle,$dir) = BBBikeUtil::schnittwinkel(12960,8246,12918,8232,12792,8190);
+    is($angle, 0, 'No nan on schnittwinkel call');
+}
+
 
 __END__

@@ -201,11 +201,14 @@ sub schnittwinkel {
     my $y2 = $p2y-$pmy;
     my $richtung = ($x1*$y2-$y1*$x2 > 0 ? 'l' : 'r');
     my $winkel = 0;
+    my $acos_arg = ($x1*$x2+$y1*$y2) /
+		   (sqrt(sqr($x1)+sqr($y1)) *
+		    sqrt(sqr($x2)+sqr($y2)));
+    # protect from floating point inaccuracies
+    if    ($acos_arg >  1) { $acos_arg = 1 }
+    elsif ($acos_arg < -1) { $acos_arg = -1 }
     eval {
-	$winkel = &$acos( ($x1*$x2+$y1*$y2) /
-			  (sqrt(sqr($x1)+sqr($y1)) * 
-			   sqrt(sqr($x2)+sqr($y2)))
-			);
+	$winkel = &$acos($acos_arg);
     };
     ($winkel, $richtung);
 }
