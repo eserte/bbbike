@@ -38,6 +38,10 @@ my @test_defs = (
 		 # Spitzkehren
 		 [qw/r 168 1131,12193 631,13750 893,13287/],
 		 [qw/l 166 2006,13856 1687,13775 3325,13768/],
+		 # straight on; previously caused "nan" because of
+		 # floating point inaccuracies
+		 [qw/r 0 12960,8246 12918,8232 12792,8190/],
+		 [qw/r 0 12792,8190 12918,8232 12960,8246/],
 		);
 
 plan tests => @test_defs * 4;
