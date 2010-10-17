@@ -155,6 +155,7 @@ sub string_to_coord ($) { split /,/, $_[0] }
 # Diese Funktion gilt nur, wenn die Koordinaten im Standard-Koordinatensystem
 # sind (X-Koordinaten wachsen nach rechts und Y-Koordinaten nach oben).
 # Argumente sind drei Punkte in der Form [x1,y1], ...
+# See also BBBikeUtil::schnittwinkel for a very similar function.
 ### AutoLoad Sub
 sub abbiegen {
     my($p0,$p1,$p2) = @_;

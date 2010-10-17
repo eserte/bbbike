@@ -178,6 +178,7 @@ sub rad2deg { ($_[0]*180)/pi }
 # Eingabe: $p1(x|y) und $p2(x|y): ‰uﬂere Punkte
 #          $pm(x|y): Punkt in der Mitte (Schnittpunkt)
 # Ausgabe: (Winkel in radians, Richtung l oder r)
+# See also Strassen::Util::abbiegen for a very similar function.
 sub schnittwinkel {
     my($p1x, $p1y, $pmx, $pmy, $p2x, $p2y) = @_;
     return (pi,'l') if $p1x==$p2x && $p1y==$p2y; # avoid nan
