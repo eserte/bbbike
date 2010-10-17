@@ -42,6 +42,8 @@ my @test_defs = (
 		 # floating point inaccuracies
 		 [qw/r 0 12960,8246 12918,8232 12792,8190/],
 		 [qw/r 0 12792,8190 12918,8232 12960,8246/],
+		 # umkehren
+		 [qw/u 180 1131,12193 631,13750 1131,12193/],
 		);
 
 plan tests => @test_defs * 4;
