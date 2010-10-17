@@ -579,6 +579,7 @@ S¸dstern	1 10713,9260 10625,9259 10564,9292
 S¸dstern	1 10564,9292 10639,9304 10670,9286 10713,9260
 Pitschener Str.	1s 21774,-436 21719,-397 21637,-381
 Herrfurthstr.	1s 11979,8014 11823,7980
+Dankratstr.	1s 21105,9538 20943,9543
 Am Neuen Garten	1 -12166,1384 -12212,1201 -12276,831 -12302,718
 Am Neuen Garten	1 -12332,585 -12582,127
 Hochstraﬂe	3nocross::ignrte -11399,-1339 -11461,-1424 -11540,-1543
@@ -1726,6 +1727,8 @@ tragen (Treppe, ca. 20 Stufen)	0:25:-108 19163,14981
 tragen (Treppe, ca. 20 Stufen)	0:25:-12 19160,14935
 tragen (Treppe)	0:30:70 89344,-5795
 tragen, langgezogene Stufen (13 Stufen)	0:25:-168 20704,1383
+Pfosten (lichte Breite ca. 100cm)	BNP:0:-147:trailer=5 21356,8267
+Pfosten (lichte Breite ca. 100cm)	BNP:0:-146:trailer=5 21368,8285
 Dr‰ngelgitter	BNP:3:-108:trailer=10 20564,18
 Dr‰ngelgitter	BNP:3:-105:trailer=10 20412,-21
 Dr‰ngelgitter	BNP:3:38:trailer=no 20345,398
@@ -1874,6 +1877,10 @@ Schranke, kann auch mit Anh‰nger umfahren werden	BNP:1:-168 49137,24422
 Dr‰ngelgitter	BNP:3:24:trailer=6 3644,8456
 Poller, Abstand 80cm (mit Anh‰nger ¸ber Gehweg umfahren)	BNP:1:1:trailer=10 7816,5682
 Tor	BNP:3:-209 6431,3417
+Mauerstr.: Einbiegen in die Behrenstr. nicht mˆglich	3 9076,12054 9064,12156 9054,12154
+Mauerstr.: Einbiegen in die Behrenstr. nicht mˆglich	3 9076,12054 9064,12156 9164,12172
+Behrenstr.: Einbiegen in die Mauerstr. nicht mˆglich	3 9054,12154 9064,12156 9076,12054
+Behrenstr.: Einbiegen in die Mauerstr. nicht mˆglich	3 9164,12172 9064,12156 9076,12054
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12748
 Spittelmarkt: wegen Bauarbeiten gesperrt	2:inwork 10166,11592 10153,11666 10213,11728
 Elisabeth-Mara-Str.: Bauarbeiten bis zum Fr¸hjahr 2011	2:inwork 10506,11567 10320,11627
@@ -2227,9 +2234,6 @@ Treskowallee -> Weg entlang der Bahnstrecke: Straﬂenbahntrasse	3::igndisp 18737,
 Treskowallee -> Richard-Kolkwitz-Weg: Straﬂenbahntrasse	3::igndisp 18690,10016 18698,9996 18715,10003
 Weg entlang der Bahnstrecke -> Richard-Kolkwitz-Weg: Straﬂenbahntrasse	3::igndisp 18445,9887 18698,9996 18715,10003
 Weg entlang der Bahnstrecke -> Treskowallee: Straﬂenbahntrasse	3::igndisp 18445,9887 18698,9996 18690,10016
-Straﬂenbahntrasse	3nocross::ignrte 18800,9743 18763,9837 18737,9901
-Brascheweg -> Treskowallee: Straﬂenbahntrasse	3::igndisp 18810,9850 18763,9837 18800,9743
-Treskowallee -> Brascheweg: Straﬂenbahntrasse	3::igndisp 18737,9901 18763,9837 18810,9850
 Straﬂenbahn	3nocross::ignrte 18872,9568 18857,9606 18816,9705
 Treskowallee -> Rheinpfalzallee: Straﬂenbahn	3::igndisp 18816,9705 18857,9606 18931,9629
 Rheinpfalzallee -> Treskowallee: Straﬂenbahn	3::igndisp 18931,9629 18857,9606 18872,9568
@@ -2438,6 +2442,8 @@ Poller (Birkenwerder)	BNP:0:0 1207,33025
 An den Kanalwiesen (Wendisch Rietz)	1 51857,-20420 51900,-20326 51916,-20240
 Kreuzung Sewanstr./Am Tierpark	1::igndisp 18647,10172 18631,10167
 Am Tierpark, linker Gehweg	1::igndisp 18715,10003 18647,10172
+Treskowallee, linker Gehweg	1::igndisp 18748,9922 18715,10003
+Kreuzung Gregoroviusweg/Treskowallee	1::igndisp 18737,9901 18748,9922
 Alt-Friedrichsfelde, linker Gehweg	1::igndisp 18228,11656 18556,11688 18778,11742 19005,11767 19750,11730
 Landsberger Allee, linker Gehweg	1::igndisp 15430,14272 15256,14237
 Sonnenallee, linker Gehweg	1::igndisp 13457,8069 13474,8060

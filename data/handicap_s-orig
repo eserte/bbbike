@@ -8,6 +8,9 @@
 #
 #: temporary vvv
 # 
+#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1010/nachricht4088.html
+#: next_check: 2012-06-01
+Behrenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8861,12125 9054,12154 9064,12156 9164,12172
 #: last_checked: 2010-09-30
 #: XXX nach den Bauarbeiten: wahrscheinlich Q0- -> Q0
 Reichstagufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9117,12705 9209,12795 9280,12883
@@ -45,6 +48,7 @@ Am Carlsgarten: Bauarbeiten	q4::inwork 19468,7962 19372,8012 19334,8046
 Wuhlewanderweg: steiler Anstieg, Fußgänger	q4; 21998,12204 21970,12153
 Wuhlewanderweg: steiles Gefälle, Fußgänger	q4; 21970,12153 21998,12204
 #: XXX ^^^
+(An der Wuhle, östliches Ufer): Fußgänger	q1 21323,8481 21333,8355 21371,8289 21594,8107 21627,8024 21629,7921
 Caroline-Michaelis-Str.: Bordsteine	q3 9125,13973 9151,13941
 Pappelplatz (Mitte): gemeinsamer Fuß- und Radweg	q2 9750,14132 9663,14036
 (Frankfurter Allee - Liebigstr.): Fußgänger	q2 13885,12279 13905,12374
@@ -431,7 +435,7 @@ Wuhlewanderweg: Fußgänger	q1 22244,11311 22280,11284
 Wuhlewanderweg: enge Unterführung	q3 22280,11284 22271,11218
 Wuhlewanderweg: Fußgänger	q1 22271,11218 22237,11215
 Wuhlewanderweg: Fußgänger	q1 22238,6195 22236,6233 22214,6271 22146,6338 22097,6414 22030,6600 22056,6613 21976,6848 21888,6944 21590,7211 21574,7244 21590,7414 21613,7521 21620,7647 21604,7715 21570,7751 21616,7863 21629,7921 21599,7904 21593,7934 21568,8052 21351,8259 21337,8273 21276,8374 21185,8483 21183,8731 21192,8839 21210,8883 21252,8928 21280,8954 21351,9066
-Wuhlewanderweg: Fußgänger	q1 21386,9052 21468,9230 21524,9488 21587,9609 21633,9731 21678,9817 21686,9876
+Wuhlewanderweg: Fußgänger	q1 21385,9049 21468,9230 21524,9488 21587,9609 21633,9731 21678,9817 21686,9876
 Wuhlewanderweg: Fußgänger	q1 21611,9893 21619,9993 21566,10222 21581,10329 21608,10403 21646,10510 21657,10519 21791,10623 21830,10679 21867,10733 21950,10776 22060,10778 22097,10812 22160,10834
 Heinrich-Dathe-Platz: Fußgänger	q2 18512,10337 18484,10411 18394,10348
 Dathepromenade: Fußgänger	q1 18394,10348 18320,10318 18302,10289 18314,10260 18101,10169 18048,10169
@@ -713,6 +717,16 @@ Schattenweg: Fußgänger, spielende Kinder	q2 19928,319 19897,292 19865,263 19806,
 (Kleine Lindenstr. - Schirmpilzstr.): sehr eng, für Anhänger nicht geeignet	q4 21528,-1134 21570,-1219
 Fraustadter Weg: enge, unübersichtliche Straße	q1 21885,-483 21940,-542 21934,-617
 Schilfsängersteig: eng	q3 21385,2031 21372,2043
+#: XXX_prog: für Anhänger q4
+#: XXX_prog: Bordstein (BS) am südlichen Ende
+Hoernlestr.: Rampe oder 10 weite Stufen	q3 22366,6779 22351,6756
+#: XXX_prog: für Anhänger relevant (q1 oder so)
+Filehner Str.: zwei Bodenschwellen	q0 22395,6821 22428,6874 22448,6957 22474,7065
+#: XXX_prog: für Anhänger relevant (q1 oder so)
+Wongrowitzer Steig: Bodenschwelle	q0 22474,7065 22358,7093
+#: XXX_prog: für Anhänger relevant (q1 oder so)
+Wirsitzer Weg: Bodenschwelle	q0 22448,6957 22641,6918
+# konflikt mit anderen Mittelheide-Eintrag! --- : XXX_prog: für Anhänger relevant (q1 oder so) --- Mittelheide: zwei Bodenschwellen	q0 23135,6500 23220,6520 23299,6541
 ######################### User Contributions #################################
 #: by: Michael Kiekbusch
 #: corrected_by: srt/policy (q4 -> q3-)
@@ -1364,8 +1378,10 @@ Schieritzstr.: enge Straße	q1 12463,15774 12642,15668 12821,15565 12966,15478
 Siedlungsring (Karow): schlecht überaschaubar	q1 16139,24162 16245,24159 16357,24093 16473,24045 16900,23884 16887,23860 16717,23845 16664,23845 16600,23881 16542,23954 16512,23979 16462,24012
 #: by: karsten (kasi):
 Würzburger Str.: enge Straße	q1 11681,-1951 11886,-1930 11919,-1927 12082,-1908 12167,-1898 12216,-1891
-#: by: guenther (m...berlin):
-Hauptweg (Biesdorf): enger Weg	q2 20821,8438 20834,8694 20799,8965 20802,9297
+#: by: guenther (m...berlin): vvv
+# corrected_by: srt (removed): --- Hauptweg (Biesdorf): enger Weg	q2 20821,8438 20834,8694
+Hauptweg (Biesdorf): enger Weg	q2 20834,8694 20799,8965 20802,9297
+#: by: ^^^
 Hallichpromenade: Fußweg	q2 5388,20606 5447,20614
 #: by: paula* (gwendolen...):
 Allmendeweg: enge Straße	q1 2990,22018 3063,21821 3071,21801 3155,21572
@@ -1663,8 +1679,6 @@ Spachtelweg: enge Straße	q1 5900,20487 5970,20353
 #: confirmed_by: anonymous
 #: note: Fußgänger (kein Fußweg)
 Leuenberger Zeile: eng	q1 2852,19546 2789,19600 2684,19765
-#: by: Jessica (gluecksmarie):
-(Hoernlestr. - Gehsener Str.): Fußgänger, zwei Rampen an Fußgängertreppe	q3 22351,6756 22395,6821
 #: by: Hartmut Schröder
 #: corrected_by: srt/policy (q3 -> q2)
 Waldstr.: Bodenschwellen vor der Schule	q2 20540,4285 20623,4227

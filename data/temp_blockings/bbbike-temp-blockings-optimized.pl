@@ -1694,16 +1694,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'source_id' => 'IM_016116',
-         'until' => 1292598000,
-         'text' => 'Tucholskystr. (Mitte): Baustelle, Straße vollständig gesperrt zwischen Oranienburger Str. und Auguststr., 30.07.2010 13:48 Uhr bis 17.12.2010 16:00 Uhr ',
-         'from' => 1280404080,
-         'id' => 2110,
-         'data' => 'userdel	q4::inwork 9605,13248 9651,13406
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1820,6 +1811,16 @@ userdel	3 13150,7254 13047,7234 13034,7319
          'from' => 1287957600,
          'id' => 2142,
          'data' => 'userdel	q4::inwork; -5849,16199 -5875,15994 -5911,15877
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20101007.1035.313571.html',
+         'until' => 1287957600,
+         'text' => 'Fahrbahnsanierung Paulsborner Straße zwischen Brandenburgische Straße und Westfälische Straße, Vom 18.10.2010 bis 24.10.2010 ',
+         'from' => 1287315670,
+         'id' => 2143,
+         'data' => 'userdel	q4::inwork; 3431,9763 3467,9793 3587,9905 3620,9936 3706,10039 3747,10094 3852,10236
 ',
          'type' => 'handicap'
        }

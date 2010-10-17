@@ -754,6 +754,7 @@ Südstern	1 10713,9260 10625,9259 10564,9292
 Südstern	1 10564,9292 10639,9304 10670,9286 10713,9260
 Pitschener Str.	1s:q3 21774,-436 21719,-397 21637,-381
 Herrfurthstr.	1s:q3 11979,8014 11823,7980
+Dankratstr.	1s:q3 21105,9538 20943,9543
 ######################################################################
 #
 # Potsdam
@@ -1419,6 +1420,8 @@ tragen, langgezogene Stufen (13 Stufen)	0:25 20704,1383
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+Pfosten (lichte Breite ca. 100cm)	BNP:0::trailer=5 21356,8267
+Pfosten (lichte Breite ca. 100cm)	BNP:0::trailer=5 21368,8285
 Drängelgitter	BNP:3::trailer=10 20564,18
 Drängelgitter	BNP:3::trailer=10 20412,-21
 Drängelgitter	BNP:3::trailer=no 20345,398
@@ -1640,8 +1643,17 @@ Tor	BNP:3 6431,3417
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: next_check: 2012-06-01 vvv
+#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1010/nachricht4088.html
+Mauerstr.: Einbiegen in die Behrenstr. nicht möglich	3 9076,12054 9064,12156 9054,12154
+Mauerstr.: Einbiegen in die Behrenstr. nicht möglich	3 9076,12054 9064,12156 9164,12172
+Behrenstr.: Einbiegen in die Mauerstr. nicht möglich	3 9054,12154 9064,12156 9076,12054
+Behrenstr.: Einbiegen in die Mauerstr. nicht möglich	3 9164,12172 9064,12156 9076,12054
+#: next_check: ^^^
+# 
 #: last_checked: 2010-10-03
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12748
+# 
 #: last_checked: 2010-09-20
 #: next_check: 2010-12-01
 #: note: Eröffnung des Hotels im Dezember 2010
@@ -1681,7 +1693,7 @@ Wegedornbrücke: Vollsperrung, Neubau	2:inwork 20385,593 20442,564 20510,530 2053
 #: next_check: 2011-09-01
 Rathausbrücke: gesperrt (Neubau), Fertigstellung 2011 oder 2012	2:inwork 10362,12351 10422,12395
 # 
-#: last_checked: 2010-10-02
+#: last_checked: 2010-10-17
 #: next_check: 2011-03-01
 Vicki-Baum-Str.: noch in Bau, gesperrt	2:inwork 15753,10353 15688,10400
 # 
@@ -1936,7 +1948,7 @@ Groscurthstr.	1 16369,25230 16458,25193 16428,25107
 #: by: Martha Wimmer [AM]
 Sonnenallee	3nocross 14617,7243 14693,7168 14752,7108 14803,7056
 Treskowallee: Straßenbahntrasse	3nocross 18631,10167 18690,10016 18698,9996 18737,9901
-Treskowallee: Straßenbahntrasse	3nocross 18800,9743 18763,9837 18737,9901
+#XXX del --- Treskowallee: Straßenbahntrasse	3nocross 18800,9743 18763,9837 18737,9901
 #: by: Christian Schweda [AM]
 Treskowallee: Straßenbahn	3nocross 18872,9568 18857,9606 18816,9705
 Treskowallee: Straßenbahn	3nocross 18800,9743 18816,9705 18857,9606

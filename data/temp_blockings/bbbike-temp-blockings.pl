@@ -18066,7 +18066,7 @@ userdel	q4::inwork 35900,13643 35427,13624
 EOF
      },
      { from  => 1280404080, # 2010-07-29 13:48
-       until => 1292598000, # 2010-12-17 16:00
+       until => 1287309900, # 1292598000 2010-12-17 16:00
        text  => 'Tucholskystr. (Mitte): Baustelle, Straße vollständig gesperrt zwischen Oranienburger Str. und Auguststr., 30.07.2010 13:48 Uhr bis 17.12.2010 16:00 Uhr ',
        type  => 'handicap',
        source_id => 'IM_016116',
@@ -18353,6 +18353,15 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork; -5849,16199 -5875,15994 -5911,15877
+EOF
+     },
+     { from  => 1287315670, # 2010-10-17 13:41
+       until => 1287957600, # 2010-10-25 00:00
+       text  => 'Fahrbahnsanierung Paulsborner Straße zwischen Brandenburgische Straße und Westfälische Straße, Vom 18.10.2010 bis 24.10.2010 ',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20101007.1035.313571.html',
+       data  => <<EOF,
+userdel	q4::inwork; 3431,9763 3467,9793 3587,9905 3620,9936 3706,10039 3747,10094 3852,10236
 EOF
      },
     );
