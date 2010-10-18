@@ -24,7 +24,7 @@ use lib $FindBin::RealBin;
 use BBBikeTest qw(gpxlint_string);
 use File::Temp qw(tempfile);
 
-plan tests => 17;
+plan tests => 18;
 
 use_ok 'GPS::GpsmanData';
 
@@ -100,6 +100,9 @@ EOF
     is(scalar(@flat_wpt), 4, 'Found four wpts in track');
     is($flat_wpt[0]->Latitude, 52.532, 'Expected first latitude');
     like($flat_wpt[-1]->Latitude, qr{^52.5137}, 'Expected last latitude');
+
+    my $gpx = $gps->as_gpx(symtocmt => 1);
+    gpxlint_string($gpx);
 }
 
 __END__

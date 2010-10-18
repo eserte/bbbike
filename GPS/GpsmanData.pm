@@ -113,6 +113,56 @@ struct('GPS::Gpsman::Waypoint' =>
 			: (undef, undef);
     }
 
+    sub as_gpx {
+	my($wpt, $xmlnode, $chunk, %args) = @_;
+	
+	$xmlnode->setAttribute("lat", $wpt->Latitude);
+	$xmlnode->setAttribute("lon", $wpt->Longitude);
+
+	# Note: order of child elements is important for
+	# schema validation
+
+	my $altitude = $wpt->Altitude;
+	if (defined $altitude and length $altitude) {
+	    my $elexml = $xmlnode->addNewChild(undef, 'ele');
+	    $elexml->appendText($altitude);
+	}
+
+	my $epoch = $wpt->Comment_to_unixtime($chunk);
+	if (defined $epoch) {
+	    require POSIX;
+	    my $timexml = $xmlnode->addNewChild(undef, 'time');
+	    $timexml->appendText(POSIX::strftime("%FT%TZ", gmtime($epoch)));
+	}
+
+	my $ident = $wpt->Ident;
+	if (defined $ident && length $ident) { # undefined for track waypoints
+	    my $namexml = $xmlnode->addNewChild(undef, "name");
+	    $namexml->appendText($ident);
+	}
+
+	my $symbol = $wpt->Symbol;
+	if (defined $symbol && length $symbol) {
+	    $symbol = GPS::GpsmanData::GarminGPX::gpsman_symbol_to_garmin_symbol_name($symbol);
+	    if (defined $symbol) {
+		if ($args{symtocmt}) {
+		    my $commentxml = $xmlnode->addNewChild(undef, 'cmt');
+		    $commentxml->appendText($symbol);
+		}
+
+		my $symbolxml = $xmlnode->addNewChild(undef, 'sym');
+		$symbolxml->appendText($symbol);
+	    }
+	}
+
+	## normally not useful --- it's the date/time
+	#my $comment = $wpt->Comment;
+	#if (defined $comment and length $comment) {
+	#    my $commentxml = $wptxml->addNewChild(undef, 'cmt');
+	#    $commentxml->appendText($comment);
+	#}
+    }
+
 }
 
 # for GPS.pm
@@ -1080,61 +1130,19 @@ sub as_gpx {
     $gpx->setAttribute("creator", "GPS::GpsmanData $GPS::GpsmanData::VERSION - http://www.bbbike.de");
     $gpx->setNamespace("http://www.w3.org/2001/XMLSchema-instance","xsi");
     $gpx->setNamespace("http://www.topografix.com/GPX/1/1");
-    $gpx->setAttribute("xsi:schemaLocation", "http://www.topografix.com/GPX/1/0 http://www.topografix.com/GPX/1/0/gpx.xsd");
+    $gpx->setAttribute("xsi:schemaLocation", "http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd");
     for my $chunk (@{ $self->Chunks }) {
 	if ($chunk->Type eq $chunk->TYPE_WAYPOINT) {
 	    for my $wpt (@{ $chunk->Waypoints }) {
 		my $wptxml = $gpx->addNewChild(undef, "wpt");
-		$wptxml->setAttribute("lat", $wpt->Latitude);
-		$wptxml->setAttribute("lon", $wpt->Longitude);
-
-		# Note: order of child elements is important for
-		# schema validation
-
-		my $altitude = $wpt->Altitude;
-		if (defined $altitude and length $altitude) {
-		    my $elexml = $wptxml->addNewChild(undef, 'ele');
-		    $elexml->appendText($altitude);
-		}
-
-		my $epoch = $wpt->Comment_to_unixtime($chunk);
-		if (defined $epoch) {
-		    require POSIX;
-		    my $timexml = $wptxml->addNewChild(undef, 'time');
-		    $timexml->appendText(POSIX::strftime("%FT%TZ", gmtime($epoch)));
-		}
-
-		my $namexml = $wptxml->addNewChild(undef, "name");
-		$namexml->appendText($wpt->Ident);
-
-		my $symbol = $wpt->Symbol;
-		if (defined $symbol && length $symbol) {
-		    $symbol = GPS::GpsmanData::GarminGPX::gpsman_symbol_to_garmin_symbol_name($symbol);
-		    if (defined $symbol) {
-			if ($sym_to_cmt) {
-			    my $commentxml = $wptxml->addNewChild(undef, 'cmt');
-			    $commentxml->appendText($symbol);
-			}
-
-			my $symbolxml = $wptxml->addNewChild(undef, 'sym');
-			$symbolxml->appendText($symbol);
-		    }
-		}
-
-		## normally not useful --- it's the date/time
-		#my $comment = $wpt->Comment;
-		#if (defined $comment and length $comment) {
-		#    my $commentxml = $wptxml->addNewChild(undef, 'cmt');
-		#    $commentxml->appendText($comment);
-		#}
+		$wpt->as_gpx($wptxml, $chunk, symtocmt => $sym_to_cmt);
 	    }
 	} elsif ($chunk->Type eq $chunk->TYPE_TRACK) {
 	    my $trkxml = $gpx->addNewChild(undef, "trk");
 	    my $trksegxml = $trkxml->addNewChild(undef, "trkseg");
 	    for my $wpt (@{ $chunk->Track }) {
 		my $trkptxml = $trksegxml->addNewChild(undef, "trkpt");
-		$trkptxml->setAttribute("lat", $wpt->Latitude);
-		$trkptxml->setAttribute("lon", $wpt->Longitude);
+		$wpt->as_gpx($trkptxml, $chunk, symtocmt => $sym_to_cmt);
 	    }
 	}
     }
