@@ -458,7 +458,7 @@ sub parse_track_line {
 
     # This are the only diffs to TYPE_WAYPOINT:
     # The "~" and "?" thingies are a private extension
-    my($acc,$alt) = $f[4] =~ /^(~*|\?)(.*)/;
+    my($acc,$alt) = $f[4] =~ /^([~?]*)(.*)/;
     $wpt->Accuracy(length($acc)); # 0=accurate, 2=very inaccurate
     $wpt->Altitude($alt);
     $wpt;
