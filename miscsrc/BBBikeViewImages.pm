@@ -407,7 +407,14 @@ sub show_image_viewer {
 		    $p->delete;
 		    $p = $new_p;
 		}
-		$image_viewer_toplevel->Subwidget("ImageLabel")->configure(-image => $p);
+		my $image_label_widget = $image_viewer_toplevel->Subwidget("ImageLabel");
+		$image_label_widget->configure(-image => $p);
+		# Force quadratic toplevel
+		if ($p->width > $p->height) {
+		    $image_label_widget->packConfigure(-pady => ($p->width - $p->height)/2, -padx => 0);
+		} else {
+		    $image_label_widget->packConfigure(-padx => ($p->height - $p->width)/2, -pady => 0);
+		}
 
 		my $next_image_index = sub {
 		    my($dir) = @_;
