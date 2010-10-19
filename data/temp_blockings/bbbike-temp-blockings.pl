@@ -18364,4 +18364,22 @@ EOF
 userdel	q4::inwork; 3431,9763 3467,9793 3587,9905 3620,9936 3706,10039 3747,10094 3852,10236
 EOF
      },
+     { from  => 1287892800, # 2010-10-24 06:00
+       until => 1288368000, # 2010-10-29 18:00
+       text  => 'Vollsperrung aufgrund von Straßenbaumaßnahmen im Staehleweg in Berlin-Reinickendorf vom 25.10.2010, 6.00 Uhr bis 29.10.2010, 18.00 Uhr ',
+       type  => 'gesperrt',
+       source_id => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20101013.1345.314376.html',
+       data  => <<EOF,
+userdel	2::inwork 2061,27612 2345,27670
+EOF
+     },
+     { from  => 1287295200, # 2010-10-17 08:00
+       until => 1301317200, # 2011-03-28 15:00
+       text  => 'Grünauer Str./Waltersdorfer Str. (Bohnsdorf bzw. Waltersdorf): Baustelle, Straße vollständig gesperrt, in beiden Richtungen zwischen Waldstr. und Apfelweg (ob der Radweg betroffen ist, ist unbekannt), 18.10.2010 08:00 Uhr bis 28.03.2011 15:00 Uhr',
+       type  => 'gesperrt',
+       source_id => 'IM_016525',
+       data  => <<EOF,
+userdel	2::inwork 21687,-3601 21696,-2925 22003,-1625
+EOF
+     },
     );

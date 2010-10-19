@@ -157,6 +157,10 @@ Fahrradstraﬂe in der Lauenburger Str.	?::projected 5883,4985 5909,5072 5939,5169
 #: section ignorieren vvv
 #: section Straﬂen in Bau und Planung vvv
 # 
+#: last_checked: 2010-07-11
+#: next_check: 2010-10-30
+Berliner Str.: nach den Bauarbeiten f‰llt evtl. das Kopfsteinpflaster weg, es wird zumindest Richtung Norden Radwege geben	?::inwork 10680,18380 10755,18231 10829,18083 10846,17992
+# 
 #: last_checked: 2010-10-02 vvv
 #: next_check: 2011-09-01 vvv
 Wilhelmine-Duncker-Str.	?::projected 21487,173 21457,289
@@ -381,6 +385,8 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 # Das heiﬂt diese Strecken werden nicht bei einer erweiterten Suche aufgenommen
 # und dem CGI-Benutzer auch nicht pr‰sentiert.
 # 
+#: 
+Feuerbachstr./Fregestr.: gibt es hier einen Zebrastreifen?	? 5596,6369
 #: XXX_indoor: nach handicap_s-orig ¸betragen
 #: next_check: 2010-11-30
 Behrenstr.: Verl‰ngerung der Einbahnstraﬂenregelung ab Dezember 2010	? 9164,12172 9373,12197
