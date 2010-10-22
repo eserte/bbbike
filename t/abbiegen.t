@@ -19,7 +19,7 @@ BEGIN {
 	print "1..0 # skip no Test::More module\n";
 	exit;
     }
-    #$^W = 0;
+    $^W = 0; # cease "Possible attempt to separate words with commas"
 }
 
 my @test_defs = (
