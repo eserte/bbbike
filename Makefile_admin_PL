@@ -157,22 +157,6 @@ my $EXTMODCPAN = join(" ", @EXTMODCPAN);
 my $EXTMODPERL = join(" ", @EXTMODPERL);
 
 ######################################################################
-# ChangeLog
-my $rcs2log = is_in_path("rcs2log");
-if (!$rcs2log) {
-    for my $candidate ("/usr/local/libexec/emacs/21.3/i386--freebsd/rcs2log",
-		       "/usr/local/libexec/emacs/21.3/amd64--freebsd/rcs2log",
-		       "/usr/local/libexec/emacs/21.3/$Config{archname}/rcs2log",
-		      ) {
-	if (-x $candidate) {
-	    $rcs2log = $candidate;
-	    last;
-	}
-    }
-}
-if ($rcs2log) {
-    $bbbike_makefile_admin .= "RCS2LOG?=$rcs2log\n";
-}
 
 my $fbsdportsdir;
 my $fbsdportsdir_is_current = 0;
@@ -526,10 +510,6 @@ clean_pod2html:
 
 EOF
 . "bbbikedoc:	README README.english $all_html doc/HOWTO_edit_bbbike_data.html\n" . <<'EOF'
-
-# XXX this will fail if there is no symlink to the original libexec position
-ChangeLog:
-	${RCS2LOG} `find . -name "*,v" -a ! -path "./projects/*" -a ! -path "./misc/gps_data/*" -a ! -path "./Attic/*"` > ChangeLog
 
 clean_cache:
 	echo rm -rf cache/*
