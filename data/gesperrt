@@ -580,6 +580,7 @@ Südstern	1 10564,9292 10639,9304 10670,9286 10713,9260
 Pitschener Str.	1s 21774,-436 21719,-397 21637,-381
 Herrfurthstr.	1s 11979,8014 11823,7980
 Dankratstr.	1s 21105,9538 20943,9543
+Helen-Ernst-Str., hinter der o2-Arena: bei Veranstaltungen gesperrt	2 13240,11279 13056,11329
 Am Neuen Garten	1 -12166,1384 -12212,1201 -12276,831 -12302,718
 Am Neuen Garten	1 -12332,585 -12582,127
 Hochstraße	3nocross::ignrte -11399,-1339 -11461,-1424 -11540,-1543
@@ -1877,10 +1878,11 @@ Schranke, kann auch mit Anhänger umfahren werden	BNP:1:-168 49137,24422
 Drängelgitter	BNP:3:24:trailer=6 3644,8456
 Poller, Abstand 80cm (mit Anhänger über Gehweg umfahren)	BNP:1:1:trailer=10 7816,5682
 Tor	BNP:3:-209 6431,3417
-Mauerstr.: Einbiegen in die Behrenstr. nicht möglich	3 9076,12054 9064,12156 9054,12154
-Mauerstr.: Einbiegen in die Behrenstr. nicht möglich	3 9076,12054 9064,12156 9164,12172
-Behrenstr.: Einbiegen in die Mauerstr. nicht möglich	3 9054,12154 9064,12156 9076,12054
-Behrenstr.: Einbiegen in die Mauerstr. nicht möglich	3 9164,12172 9064,12156 9076,12054
+Brüderstr.: Bauarbeiten, gesperrt	2:inwork 10385,11985 10284,12113
+Mauerstr.: Einbiegen in die Behrenstr. nicht möglich	3:inwork 9076,12054 9064,12156 9054,12154
+Mauerstr.: Einbiegen in die Behrenstr. nicht möglich	3:inwork 9076,12054 9064,12156 9164,12172
+Behrenstr.: Einbiegen in die Mauerstr. nicht möglich	3:inwork 9054,12154 9064,12156 9076,12054
+Behrenstr.: Einbiegen in die Mauerstr. nicht möglich	3:inwork 9164,12172 9064,12156 9076,12054
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12748
 Spittelmarkt: wegen Bauarbeiten gesperrt	2:inwork 10166,11592 10153,11666 10213,11728
 Elisabeth-Mara-Str.: Bauarbeiten bis zum Frühjahr 2011	2:inwork 10506,11567 10320,11627

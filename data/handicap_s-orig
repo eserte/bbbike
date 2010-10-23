@@ -14,9 +14,9 @@ Behrenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8861,12125 9054,1215
 #: last_checked: 2010-09-30
 #: XXX nach den Bauarbeiten: wahrscheinlich Q0- -> Q0
 Reichstagufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9117,12705 9209,12795 9280,12883
-#: last_checked: 2010-09-18
+#: last_checked: 2010-10-22
 Niederlagstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9972,12184 9939,12296 9951,12318
-#: last_checked: 2010-09-18
+#: last_checked: 2010-10-22
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9890,12161 9913,12068
 #: last_checked: 2010-09-18
 #: next_check: 2010-11-01
@@ -727,6 +727,7 @@ Wongrowitzer Steig: Bodenschwelle	q0 22474,7065 22358,7093
 #: XXX_prog: für Anhänger relevant (q1 oder so)
 Wirsitzer Weg: Bodenschwelle	q0 22448,6957 22641,6918
 # konflikt mit anderen Mittelheide-Eintrag! --- : XXX_prog: für Anhänger relevant (q1 oder so) --- Mittelheide: zwei Bodenschwellen	q0 23135,6500 23220,6520 23299,6541
+(Valeska-Gert-Str. - Am Postbahnhof): Fußgänger	q1 12807,11287 12713,11372
 ######################### User Contributions #################################
 #: by: Michael Kiekbusch
 #: corrected_by: srt/policy (q4 -> q3-)
