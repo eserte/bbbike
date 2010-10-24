@@ -581,6 +581,9 @@ Pitschener Str.	1s 21774,-436 21719,-397 21637,-381
 Herrfurthstr.	1s 11979,8014 11823,7980
 Dankratstr.	1s 21105,9538 20943,9543
 Helen-Ernst-Str., hinter der o2-Arena: bei Veranstaltungen gesperrt	2 13240,11279 13056,11329
+Bruno-Taut-Ring	1 13833,3665 13682,3718 13628,3781 13626,3867 13673,3915 13726,3928 13909,3845
+Havermannstr.	1s 13803,4932 13889,4954
+Rambowstr.	1s 13853,4759 13825,4850 13803,4932
 Am Neuen Garten	1 -12166,1384 -12212,1201 -12276,831 -12302,718
 Am Neuen Garten	1 -12332,585 -12582,127
 Hochstraße	3nocross::ignrte -11399,-1339 -11461,-1424 -11540,-1543
@@ -744,6 +747,12 @@ Bieler Str. -> Aroser Allee: Mittelstreifen	3::igndisp 6815,17871 6711,17839 673
 Mittelstreifen mit hoher Kante	3nocross::ignrte 13809,5257 13820,5203 13889,4954
 Teterower Str. -> Buschkrugallee: Mittelstreifen mit hoher Kante	3::igndisp 13717,5175 13820,5203 13809,5257
 Buschkrugallee -> Teterower Str.: Mittelstreifen mit hoher Kante	3::igndisp 13889,4954 13820,5203 13717,5175
+Mittelstreifen mit hoher Kante	3nocross::ignrte 14119,4153 14048,4363 14010,4475
+Korlinweg -> Buschkrugallee: Mittelstreifen mit hoher Kante	3::igndisp 13964,4333 14048,4363 14010,4475
+Buschkrugallee -> Korlinweg: Mittelstreifen mit hoher Kante	3::igndisp 14119,4153 14048,4363 13964,4333
+Mittelstreifen mit hoher Kante	3nocross::ignrte 13928,4775 13906,4875 13889,4954
+Buschkrugallee -> Dürtenstr.: Mittelstreifen mit hoher Kante	3::igndisp 13928,4775 13906,4875 13874,4867
+Dürtenstr. -> Buschkrugallee: Mittelstreifen mit hoher Kante	3::igndisp 13874,4867 13906,4875 13889,4954
 Straßenbahntrasse	3nocross::ignrte 12878,13229 12979,13280 13078,13330
 Landsberger Allee -> Virchowstr.: Straßenbahntrasse	3::igndisp 12878,13229 12979,13280 12916,13368
 Straßenbahntrasse	3nocross::ignrte 15639,10469 15408,10638 15383,10656
@@ -1577,6 +1586,7 @@ Landschaftspark Johannisthal -> Groß-Berliner Damm: Mittelstreifen	3::igndisp 18
 Landschaftspark Johannisthal -> Groß-Berliner Damm: Mittelstreifen	3::igndisp 18833,3781 18854,3781 18235,4449
 Mittelstreifen	3nocross::ignrte 6228,13324 6235,13517 6230,13596
 Stromstr. -> Bugenhagenstr.: Mittelstreifen	3::igndisp 6228,13324 6235,13517 6104,13522
+tragen (4 Stufen)	0:10:-109 13874,4867
 tragen (22 Stufen)	0:30:-84 17599,15435
 tragen (22 Stufen)	0:30:-79 17657,15427
 tragen, mehrere Treppen à 3 Stufen	0:30:-191 8002,4903
@@ -1878,6 +1888,12 @@ Schranke, kann auch mit Anhänger umfahren werden	BNP:1:-168 49137,24422
 Drängelgitter	BNP:3:24:trailer=6 3644,8456
 Poller, Abstand 80cm (mit Anhänger über Gehweg umfahren)	BNP:1:1:trailer=10 7816,5682
 Tor	BNP:3:-209 6431,3417
+Tor	BNP:10:-146 16145,4217
+Drängelgitter (lichte Breite ca. 100cm)	BNP:3:-145:trailer=10 16497,3453
+Schranke und Pfosten	BNP:3:-233:trailer=10 15028,4272
+Schranke (lichte Breite ca. 120cm)	BNP:2:-50:trailer=8 14448,4501
+Schranke (lichte Breite ca. 120cm)	BNP:2:-53:trailer=8 14709,4307
+Schranke (lichte Breite ca. 100cm)	BNP:3:-45:trailer=10 15179,3901
 Brüderstr.: Bauarbeiten, gesperrt	2:inwork 10385,11985 10284,12113
 Mauerstr.: Einbiegen in die Behrenstr. nicht möglich	3:inwork 9076,12054 9064,12156 9054,12154
 Mauerstr.: Einbiegen in die Behrenstr. nicht möglich	3:inwork 9076,12054 9064,12156 9164,12172

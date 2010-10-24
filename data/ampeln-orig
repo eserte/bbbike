@@ -560,7 +560,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 14119,4153
 	X 13809,5257
 	X 14375,2981
-	X 14980,3253
+	X 14994,3245
 	X 15957,2330
 	X 16135,2135
 	X 16908,1217
@@ -906,6 +906,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 4056,7280
 	X 4391,7258
 	X 13217,11936
+#: note: Ausfahrt Klinikum Neukölln
 	X 14316,3863
 	X 9981,11689
 	X 3952,8980
@@ -1904,7 +1905,9 @@ S-Bahn ca. alle 10 Minuten	B 10865,-4464
 	B0 20593,6082
 #: note: ^^^
 #: section ^^^
-	B0 16684,3325
+	B0 16670,3325
+	B0 16500,3458
+	B0 16826,3054
 	B0 8626,10121
 	F 6276,10401
 	F 8985,13034
@@ -2534,6 +2537,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X 8078,8772
 	F 9781,16569
 #: note: provisorische Ampel
+#: note: Ausfahrt Neuköllner Tor
 	X 13078,7033
 #: XXX_prog: Ampel gilt nur in Richtung Nordwest, in der anderen Richtung nur für Linksabbieger
 	X 20451,2869
@@ -2541,6 +2545,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X 20064,3278
 	F 3995,12173
 	F 22031,9142
+	F 15356,3759
 ################################################################################
 # note: Potsdam vvv
 #: by: http://www.potsdam.de/cms/beitrag/10067917/966975/

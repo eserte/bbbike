@@ -1493,8 +1493,8 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 14694,5230 14744,5211 14808,5202 14988,5214
-userdel	2 14988,5214 15038,5235 15190,5490
-userdel	2 15190,5490 15363,5668 15382,5687
+userdel	2 14988,5214 15038,5235 15183,5480
+userdel	2 15183,5480 15363,5668 15382,5687
 EOF
      },
      { from  => 1113429600, # 2005-04-14 00:00
@@ -6292,7 +6292,7 @@ EOF
        text  => 'Vollsperrung der Springbornstraße. Dauer: 04.10.2006 bis 31.08.2007. ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 16934,3571 17142,3393
+userdel	q4::inwork 16942,3579 17034,3517 17142,3393
 EOF
      },
      { from  => 1161197339, # 2006-10-18 20:48
@@ -14632,7 +14632,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_013302',
        data  => <<EOF,
-userdel	1::inwork 15382,5687 15363,5668 15190,5490
+userdel	1::inwork 15382,5687 15363,5668 15183,5480
 EOF
      },
      { from  => undef, # 

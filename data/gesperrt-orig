@@ -757,6 +757,9 @@ Herrfurthstr.	1s:q3 11979,8014 11823,7980
 Dankratstr.	1s:q3 21105,9538 20943,9543
 #: note: ansonsten Durchfahrt verboten
 Helen-Ernst-Str., hinter der o2-Arena: bei Veranstaltungen gesperrt	2 13240,11279 13056,11329
+Bruno-Taut-Ring	1 13833,3665 13682,3718 13628,3781 13626,3867 13673,3915 13726,3928 13909,3845
+Havermannstr.	1s:q3 13803,4932 13889,4954
+Rambowstr.	1s:q3 13853,4759 13825,4850 13803,4932
 ######################################################################
 #
 # Potsdam
@@ -942,6 +945,8 @@ Urbanstr.: unbequem passierbarer Mittelstreifen (hohe Kanten)	3nocross 11274,949
 Aroser Allee: Mittelstreifen	3nocross 6689,17911 6711,17839 6739,17749
 #: by: ruth mantei:
 Buschkrugallee: Mittelstreifen mit hoher Kante	3nocross 13809,5257 13820,5203 13889,4954
+Buschkrugallee: Mittelstreifen mit hoher Kante	3nocross 14119,4153 14048,4363 14010,4475
+Buschkrugallee: Mittelstreifen mit hoher Kante	3nocross 13928,4775 13906,4875 13889,4954
 Landsberger Allee: Straßenbahntrasse	3nocross 12878,13229 12979,13280 13078,13330
 Hauptstr.: Straßenbahntrasse	3nocross 15639,10469 15408,10638 15383,10656
 Hauptstr.: Straßenbahntrasse	3nocross 16004,10204 16114,10123 16138,10105
@@ -1211,6 +1216,7 @@ Warschauer Brücke: unbequem zu überqueren, zusätzlich Geländer am Gehweg	3nocros
 # Stellen, an denen getragen werden muß:
 # die Zahl hinter dem ":" entspricht ungefähr den verlorenen Sekunden
 # 
+tragen (4 Stufen)	0:10 13874,4867
 tragen (22 Stufen)	0:30 17599,15435
 tragen (22 Stufen)	0:30 17657,15427
 #: by: guylian (+ photo)
@@ -1301,7 +1307,6 @@ tragen (ca. 10 Stufen)	0:20 -6442,14286
 tragen (ca. 35 Stufen)	0:30 7621,7105
 #: note: Luftbild (Stufenanzahl)
 tragen (ca. 35 Stufen)	0:30 7655,7096
-#: note: Luftbild (Stufenanzahl)
 tragen (30 Stufen)	0:30 15571,4168
 tragen (26 Stufen, steile Treppe)	0:30 15156,6034
 tragen (Treppe)	0:30 4808,3404
@@ -1639,6 +1644,12 @@ Poller, Abstand 80cm (mit Anhänger über Gehweg umfahren)	BNP:1::trailer=10 7816,
 #: by: guylian
 #: note: ohne Schloss, also immer offen
 Tor	BNP:3 6431,3417
+Tor	BNP:10 16145,4217
+Drängelgitter (lichte Breite ca. 100cm)	BNP:3::trailer=10 16497,3453
+Schranke und Pfosten	BNP:3::trailer=10 15028,4272
+Schranke (lichte Breite ca. 120cm)	BNP:2::trailer=8 14448,4501
+Schranke (lichte Breite ca. 120cm)	BNP:2::trailer=8 14709,4307
+Schranke (lichte Breite ca. 100cm)	BNP:3::trailer=10 15179,3901
 #
 ############################################################################
 #
