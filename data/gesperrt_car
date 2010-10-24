@@ -1002,8 +1002,12 @@ Mittelstreifen	3nocross::ignrte 452,3133 255,3085 161,3062
 Ahornstr. -> Potsdamer Str.: Mittelstreifen	3::igndisp 292,2905 255,3085 161,3062
 Potsdamer Str. -> Ahornstr.: Mittelstreifen	3::igndisp 452,3133 255,3085 292,2905
 Mittelstreifen	3nocross::ignrte -151,2975 -49,3003 50,3031 161,3062
+Düppelstr. -> Rondellstr.: Mittelstreifen	3::igndisp 12,2752 -49,3003 -102,3078
 Düppelstr. -> Potsdamer Str.: Mittelstreifen	3::igndisp 12,2752 -49,3003 -151,2975
+Rondellstr. -> Düppelstr.: Mittelstreifen	3::igndisp -102,3078 -49,3003 12,2752
+Rondellstr. -> Potsdamer Str.: Mittelstreifen	3::igndisp -102,3078 -49,3003 50,3031
 Potsdamer Str. -> Düppelstr.: Mittelstreifen	3::igndisp 50,3031 -49,3003 12,2752
+Potsdamer Str. -> Rondellstr.: Mittelstreifen	3::igndisp -151,2975 -49,3003 -102,3078
 Mittelstr. -> Potsdamer Str.: Mittelstreifen	3::igndisp 104,2802 50,3031 -49,3003
 Potsdamer Str. -> Mittelstr.: Mittelstreifen	3::igndisp 161,3062 50,3031 104,2802
 Am Heidehof	1 -1410,2726 -1571,2669 -1612,2785

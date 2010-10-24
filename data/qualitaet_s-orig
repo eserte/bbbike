@@ -4254,6 +4254,8 @@ Havermannstr.: Asphalt	Q0 13803,4932 13889,4954
 Rambowstr.: Asphalt	Q0 13803,4932 13825,4850 13853,4759
 Dürtenstr.: Asphalt	Q1 13785,4839 13825,4850
 Dürtenstr.: Gehwegplatten	Q1 13825,4850 13874,4867 13906,4875
+#: note: kein Durchgang zur Rhinstraße möglich (Rohre!)
+Worbiser Str.: unbefestigt	Q2 17907,14904 17958,14920
 ######################### User Contributions #################################
 #: by: Dominik Seelow vvv
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
@@ -11999,6 +12001,8 @@ Bischweilerstr.: Betonsegmente	Q0- -342,3967 -397,3925 -310,3804 -250,3846
 Querstr.: schlechtes Kopfsteinpflaster	Q3 -5,3286 137,3396
 #: note: laut osm Kopfsteinpflaster
 Rondellstr.: schlechtes Kopfsteinpflaster	Q3 -179,3204 -123,3111 -102,3078
+#: note: nachts beleuchtet (by MichaelM):
+(Rondellstr. - Potsdamer Str.): glattes kleinteiliges Natursteinpflaster	Q1 -102,3078 -49,3003
 #: note: laut osm Kopfsteinpflaster
 Waldstr. (Zehlendorf): schlechtes Kopfsteinpflaster	Q3 -205,3063 -123,3111
 #: note: "Anwohnerstraße, Asphalt, guter Belag, sehr gut zu fahren."
@@ -12299,6 +12303,19 @@ An der Dorfkirche: Asphalt	Q0 8173,839 8114,722
 #: by: Holger Hartung:
 #: note: q3, "z.T. unübersichtlich" ignoriert
 Bottroper Weg: mäßiger Beton	Q1- 2133,18885 2015,18854 1864,18856
+#: by: Josef Schepers vvv
+Siepesteig: guter Asphalt	Q0 194,1055 115,1043 84,1174 91,1202
+#: by: ^^^
+#: by: Arnim Tobehn:
+#: note: enge Straße, aber q0
+Worbiser Str.: guter Asphalt	Q0 17700,14844 17886,14899
+#: by: Erik Dormann:
+Zechliner Str. (Gesundbrunnen): schlechtes Kopfsteinpflaster	Q3 8950,17219 8846,17266 8751,17307
+#: by: birgit (r.....)
+Oppenheimer Weg: Asphalt und Kopfsteinpflaster	Q1 3485,25112 3480,25187 3434,25295 3387,25331 3266,25374 3225,25374
+#: by: Hans (Richter):
+#: note: confirmed_by: anonymous
+Werdohler Weg: guter Asphalt	Q0 1309,18288 1390,18256 1457,18237 1524,18221 1596,18214 1672,18205 1760,18200 1848,18199 1936,18209 2022,18225
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206
