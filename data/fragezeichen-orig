@@ -344,12 +344,20 @@ Alt-Blankenburg: Bau von Radwegen	?::inwork; 13592,20785 13576,20849 13915,20944
 B96a: Neubau der Radwege (gemeinsam mit Gehweg); wahrscheinlich wird der Radstreifen dann aufgehoben (bis 2010-01-01)	?::inwork 9228,23643 9146,23843 8984,24078 8891,24330 8826,24501 8682,24883 8665,24941 8661,24952 8571,25180 8548,25239 8493,25378
 #: by: (URL existiert nicht mehr) http://www.berlin.de/ba-lichtenberg/presse/archiv/20080327.1225.97044.html
 Ahrensfelder Chaussee: Radstreifen in Bau, bis 2008-10	? 20160,18301 20460,18420 20582,18468 20624,18485 20746,18534 20915,18601 21165,18715 21278,18786 21332,18819
-# XXX del ---: by: http://www.berliner-stadtplan.com/topic/bln/str/x_wgs/22.04/y_wgs/28.92/from/form.html --- #: by: http://www.morgenpost.de/content/2006/09/20/bezirke/855150.html --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20060915.1800.47562.html --- #: by: http://www.cdu-fraktion-tk.de/image/inhalte/file/Amtsblatt_Nr__2010-14.pdf (Name der Straße) --- #: last_checked: 2010-09-08 --- #: next_check: 2010-09-15 --- Wilhelm-Kabus-Str.: neue Straße wird demnächst freigegeben, die Naumannstr. wird später verkehrsberuhigt; Ampelanlagen an den Kreuzungen Naumannstr. und Kolonnenstr. werden entstehen	?::inwork 7716,8048 7793,8043 7834,8085 7859,8252 7893,8327 7942,8380 8078,8772
-#: last_checked: 2010-09-16
-#: next_check: 2010-09-23
-Wilhelm-Kabus-Str./Naumannstr.: Ampelanlage in Bau	?::inwork 7716,8048
+# XXX del ---: by: http://www.berliner-stadtplan.com/topic/bln/str/x_wgs/22.04/y_wgs/28.92/from/form.html --- #: by: http://www.morgenpost.de/content/2006/09/20/bezirke/855150.html --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20060915.1800.47562.html --- #: by: http://www.cdu-fraktion-tk.de/image/inhalte/file/Amtsblatt_Nr__2010-14.pdf (Name der Straße) --- #: last_checked: 2010-09-08 --- #: next_check: 2010-09-15 --- Wilhelm-Kabus-Str.: neue Straße wird demnächst freigegeben, die Naumannstr. wird später verkehrsberuhigt; Ampelanlagen an den Kreuzungen Naumannstr. und Kolonnenstr. werden entstehen	?::inwork 7725,8033 7793,8043 7834,8085 7859,8252 7893,8327 7942,8380 8078,8772
+# 
+#: last_checked: 2010-10-29
+#: next_check: 2010-11-30
+Wilhelm-Kabus-Str./Naumannstr.: Ampelanlage in Bau	?::inwork 7725,8033
+# 
+#: last_checked: 2010-10-29
 #: next_check: 2011-12-31
-Verbindung zwischen Leuthener Platz und General-Pape-Str. (evtl. mit Verlängerung) inkl. Brücke über die Bahnstrecke für Fußgänger und Radfahrer (4m breit), Realisierung bis 2011-12-31	?::projected 7716,8356 7837,8354 7893,8327 8088,8283 8264,8289
+Verbindung zwischen Leuthener Platz und General-Pape-Str. (evtl. mit Verlängerung) inkl. Brücke über die Bahnstrecke für Fußgänger und Radfahrer (4m breit), Realisierung bis 2011-12-31	?::projected 7716,8356 7837,8354 7893,8327 8088,8283
+# 
+#: last_checked: 2010-10-29
+#: next_check: 2010-12-31
+Verbindung zwischen Leuthener Platz und General-Pape-Str. (evtl. mit Verlängerung) inkl. Brücke über die Bahnstrecke für Fußgänger und Radfahrer (4m breit), Realisierung bis 2011-12-31	?::projected 8088,8283 8264,8289
+# 
 #: by: (URL existiert nicht mehr) http://www.berlin.de/ba-steglitz-zehlendorf/presse/archiv/20060109.1050.33932.html
 #: last_checked: 2008-03 (by steffi silvermidi)
 Blanckertzweg: Radwege in Planung (ebenso östlicher Teil der Hildburghauser Str.)	?::projected 4806,1360 4706,1293 4634,1245 4542,1188
@@ -390,6 +398,7 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 # und dem CGI-Benutzer auch nicht präsentiert.
 # 
 #: 
+Havelwiesen: genaue Lage der Grünanlage?	? -2526,16779 -2427,16779 -2422,16656 -2504,16663
 Feuerbachstr./Fregestr.: gibt es hier einen Zebrastreifen?	? 5596,6369
 #: XXX_indoor: nach handicap_s-orig übetragen
 #: next_check: 2010-11-30
@@ -1820,7 +1829,6 @@ Oelder Weg: Qualität?	? 1967,18743 1965,18686 1965,18651 1974,18616
 Finnentroper Weg: Qualität?	? 2117,18632 2162,18452 2199,18304 2210,18262
 Betzdorfer Pfad: Qualität?	? 2199,18304 2278,18335
 Plettenberger Pfad: Qualität?	? 1869,18608 1903,18429 1924,18311 1936,18209
-Borkener Weg: Qualität?	? 1375,18209 1390,18256 1448,18436 1507,18629
 Breckerfelder Pfad: Qualität?	? 1457,18237 1501,18429
 Letmather Weg: Qualität?	? 1524,18221 1546,18317 1557,18421
 Emstaler Platz: Qualität? Für Autos gesperrt?	? 1864,18856 1632,18855 1631,18958
@@ -3984,7 +3992,6 @@ Am Fölzberg: Qualität?	? 6830,23080 6779,23139
 Feldlerchenweg: Qualität?	? 7109,22919 6912,23237
 #: XXX_osm bei osm ohne Namen
 Grünspechtweg: Qualität?	? 7171,22942 6967,23278
-Straße 494: Qualität?	? 7923,23225 8119,22798
 Eichenroder Ring: Qualität?	? 5645,22019 5594,22119 5660,22153 5700,22085
 Blitzenroder Ring: Qualität?	? 5752,22147 5669,22219 5708,22275 5758,22334 5804,22390 5893,22314
 Michelbacher Zeile: Qualität?	? 5800,22204 5708,22275
@@ -4555,5 +4562,5 @@ Asphaltierter Radweg Richtung Waltersdorf/Flughafen Schönefeld: wie geht es weit
 Kirchsteig: Qualität? Stimmt der Straßenname?	? 22007,711 21894,561
 #: last_checked: 2010-10-16
 Am Seegraben/Alexander-Meißner-Str.: Ampel in Vorbereitung	?::inwork 19894,-835
-#: XXX by birgitr.....
-Oppenheimer Weg: Verlauf der Steigung?	? 3485,25112 3480,25187 3434,25295 3387,25331 3266,25374 3225,25374
+#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1010/nachricht4100.html
+Havelwiesen: Qualität des Weges? Nachts beleuchtet? Genauer Verlauf?	? -2595,16808 -2391,16788

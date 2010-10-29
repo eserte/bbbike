@@ -703,7 +703,7 @@ EOF
        text  => 'Die Naumannstraße ist zwischen Torgauer Straße und Tempelhofer Weg von 27.08.04, 07.00 Uhr bis 28.08.04, 20.00 Uhr gesperrt. Grund Bauarbeiten.',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 7716,8048 7717,7879 7717,7759
+userdel	2 7725,8033 7713,8001 7717,7879 7717,7759
 EOF
      },
      { from  => 1093730400, # 2004-08-29 00:00
@@ -1043,7 +1043,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_002432',
        data  => <<EOF,
-userdel	q4 7717,7759 7717,7879 7716,8048
+userdel	q4 7717,7759 7717,7879 7713,8001 7725,8033
 EOF
      },
      { from  => 1097964000, # 2004-10-17 00:00
@@ -3182,7 +3182,7 @@ EOF
        source_id => 'LMS_1129024102795',
        data  => <<EOF,
 userdel	q4; 7713,8600 7709,8777
-userdel	q4; 7716,8048 7716,8356
+userdel	q4; 7710,8051 7716,8356
 EOF
      },
      { from  => 1130792769, # 2005-10-31 22:06
@@ -16333,7 +16333,7 @@ EOF
        type  => 'handicap',
        source_id => 'LMS_157063303',
        data  => <<EOF,
-userdel	q4::inwork 7709,8777 7713,8600 7716,8356 7716,8048 7717,7879 7717,7759
+userdel	q4::inwork 7709,8777 7713,8600 7716,8356 7710,8051 7725,8033 7713,8001 7717,7879 7717,7759
 EOF
      },
      { from  => 1255816800, # 2009-10-18 00:00
@@ -16584,7 +16584,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_014786',
        data  => <<EOF,
-userdel	q4::inwork; 7716,8356 7716,8048 7717,7879
+userdel	q4::inwork; 7716,8356 7710,8051 7725,8033 7713,8001 7717,7879
 EOF
      },
      { from  => 1259938062, # 
@@ -18201,7 +18201,7 @@ EOF
        text  => 'Die Wilhelm-Kabus-Str. ist noch nicht komplett fertig gestellt. Unter Umständen ist die Durchfahrt nicht möglich!',
        type  => 'handicap',
        data  => <<EOF,
-	2::inwork 7716,8048 7793,8043 7834,8085 7859,8252 7893,8327 7942,8380 8078,8772
+	2::inwork 7725,8033 7793,8043 7834,8085 7859,8252 7893,8327 7942,8380 8078,8772
 EOF
      },
      { from  => 1284091200, # 2010-09-10 06:00
@@ -18380,6 +18380,15 @@ EOF
        source_id => 'IM_016525',
        data  => <<EOF,
 userdel	2::inwork 21687,-3601 21696,-2925 22003,-1625
+EOF
+     },
+     { from  => 1288036570, # 2010-10-25 21:56
+       until => 1288825199, # 2010-11-03 23:59
+       text  => 'Der Steg Am Rohrbusch wird repariert Die Montage beginnt am Montag, dem 25.10.2010. Der Steg wird voraussichtlich am 3. November 2010 für die Öffentlichkeit wieder geöffnet.',
+       type  => 'gesperrt',
+       source_id => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20101025.1235.315920.html',
+       data  => <<EOF,
+userdel	2::inwork 5535,24016 5645,23968
 EOF
      },
     );

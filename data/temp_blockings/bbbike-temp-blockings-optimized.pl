@@ -1663,26 +1663,8 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        undef,
-       {
-         'source_id' => '105100738',
-         'until' => 1288303200,
-         'text' => 'Brandenburg an der Havel: L93: Ausbau Bahnübergang Wilhelmsdorfer Landstraße, 27.07.2010 bis 28.10.2010 01:00 Uhr ',
-         'from' => 1280677929,
-         'id' => 2106,
-         'data' => 'userdel	q4::inwork -48338,-2586 -48114,-2344 -47938,-2184
-',
-         'type' => 'handicap'
-       },
-       {
-         'source_id' => '105100738_1',
-         'until' => 1288303200,
-         'text' => 'Brandenburg an der Havel: L93: Ausbau Bahnübergang Ziesarer Landstraße, 27.07.2010 bis 28.10.2010 01:00 Uhr',
-         'from' => 1280678128,
-         'id' => 2107,
-         'data' => 'userdel	q4::inwork -49042,-3647 -48542,-2958 -48338,-2586
-',
-         'type' => 'handicap'
-       },
+       undef,
+       undef,
        {
          'source_id' => '106200475',
          'until' => 1293836400,
@@ -1806,26 +1788,8 @@ userdel	3 13150,7254 13047,7234 13034,7319
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20101007.1035.313571.html',
-         'until' => 1287957600,
-         'text' => 'Fahrbahnsanierung Paulsborner Straße zwischen Brandenburgische Straße und Westfälische Straße, Vom 18.10.2010 bis 24.10.2010 ',
-         'from' => 1287315670,
-         'id' => 2143,
-         'data' => 'userdel	q4::inwork; 3431,9763 3467,9793 3587,9905 3620,9936 3706,10039 3747,10094 3852,10236
-',
-         'type' => 'handicap'
-       },
-       {
-         'source_id' => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20101013.1345.314376.html',
-         'until' => 1288368000,
-         'text' => 'Vollsperrung aufgrund von Straßenbaumaßnahmen im Staehleweg in Berlin-Reinickendorf vom 25.10.2010, 6.00 Uhr bis 29.10.2010, 18.00 Uhr ',
-         'from' => 1287892800,
-         'id' => 2144,
-         'data' => 'userdel	2::inwork 2061,27612 2345,27670
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        {
          'source_id' => 'IM_016525',
          'until' => 1301317200,
@@ -1833,6 +1797,16 @@ userdel	3 13150,7254 13047,7234 13034,7319
          'from' => 1287295200,
          'id' => 2145,
          'data' => 'userdel	2::inwork 21687,-3601 21696,-2925 22003,-1625
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20101025.1235.315920.html',
+         'until' => 1288825199,
+         'text' => 'Der Steg Am Rohrbusch wird repariert Die Montage beginnt am Montag, dem 25.10.2010. Der Steg wird voraussichtlich am 3. November 2010 für die Öffentlichkeit wieder geöffnet.',
+         'from' => 1288036570,
+         'id' => 2146,
+         'data' => 'userdel	2::inwork 5535,24016 5645,23968
 ',
          'type' => 'gesperrt'
        }
