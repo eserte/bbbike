@@ -938,9 +938,16 @@ git-backup:
 
 test-with-protocol: permission
 	[ -d $(HOME)/log ] || mkdir $(HOME)/log
-	-$(MAKE) ext
-	DATE=`date +%Y%m%d`; export HARNESS_NOTTY=1; export HARNESS_TIMER=1; export BBBIKE_LONG_TESTS=1; $(MAKE) test >$(HOME)/log/bbbike-test-$$DATE 2>&1 || echo "$(MAKE) test failed, please look at $(HOME)/log/bbbike-test-$$DATE for output"
-	DATE=`date +%Y%m%d`; (cd data && $(MAKE) all slow-checks really-slow-checks >$(HOME)/log/bbbike-test-data-$$DATE 2>&1) || echo "$(MAKE) all slow-checks really-slow-checks failed, please look at $(HOME)/log/bbbike-test-data-$$DATE for output"
+	DATE=`date +%Y%m%d`;\
+	    export HARNESS_NOTTY=1;\
+	    export HARNESS_TIMER=1;\
+	    export BBBIKE_LONG_TESTS=1;\
+	    $(MAKE) ext   >$(HOME)/log/bbbike-test-$$DATE 2>&1;\
+	    $(MAKE) test >>$(HOME)/log/bbbike-test-$$DATE 2>&1 ||\
+		echo "$(MAKE) test failed, please look at $(HOME)/log/bbbike-test-$$DATE for output"
+	DATE=`date +%Y%m%d`;\
+	    (cd data && $(MAKE) all slow-checks really-slow-checks >$(HOME)/log/bbbike-test-data-$$DATE 2>&1) ||\
+		echo "$(MAKE) all slow-checks really-slow-checks failed, please look at $(HOME)/log/bbbike-test-data-$$DATE for output"
 
 EOF
 ;
