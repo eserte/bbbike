@@ -18391,4 +18391,31 @@ EOF
 userdel	2::inwork 5535,24016 5645,23968
 EOF
      },
+     { from  => 1288479600, # 2010-10-31 01:00
+       until => 1291157999, # 2010-11-30 23:59
+       text  => 'Werneuchener Straße: zwischen Konrad-Wolf-Straße und Große-Leege-Straße wird die Fahrbahn instand gesetzt. Für den Zeitraum vom 1. bis 30. November wird die Werneuchener Straße zur Einbahnstraße von der Konrad-Wolf-Straße aus in Richtung Große-Leege-Straße.',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-lichtenberg/presse/archiv/20101028.1120.316439.html',
+       data  => <<EOF,
+userdel	q4::inwork; 16430,15168 16376,15209 16319,15229 16119,15302
+EOF
+     },
+     { from  => 1288384501, # 2010-10-29 22:35
+       until => 1291503600, # 2010-12-05 00:00
+       text  => 'Kremmen: B273: Abbruch der Brücke bei Kremmen, Kremmen - Staffelde, 20.09.2010 bis 04.12.2010 ',
+       type  => 'gesperrt',
+       source_id => 'LS/O-SG33-E/10/086',
+       data  => <<EOF,
+userdel	2::inwork -17114,37670 -17262,37425
+EOF
+     },
+     { from  => 1288134000, # 2010-10-27 01:00
+       until => 1291158000, # 2010-12-01 00:00
+       text  => 'Schöneiche bei Berlin: L302, L338: Gleis- und Straßenbau (Knotenumbau L302/L338) OL Schöneiche Knoten Rahnsdorfer Str. Vollsperrung, 28.10.2010 01:00 Uhr bis 30.11.2010 ',
+       type  => 'handicap',
+       source_id => '106701877',
+       data  => <<EOF,
+userdel	q4::inwork 30290,8562 30118,8128
+EOF
+     },
     );
