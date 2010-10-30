@@ -758,8 +758,9 @@ Dankratstr.	1s:q3 21105,9538 20943,9543
 #: note: ansonsten Durchfahrt verboten
 Helen-Ernst-Str., hinter der o2-Arena: bei Veranstaltungen gesperrt	2 13240,11279 13056,11329
 Bruno-Taut-Ring	1 13833,3665 13682,3718 13628,3781 13626,3867 13673,3915 13726,3928 13909,3845
-Havermannstr.	1s:q3 13803,4932 13889,4954
+Havermannstr.	1s:q3 13803,4932 13892,4955
 Rambowstr.	1s:q3 13853,4759 13825,4850 13803,4932
+Arabisweg	1s:q3 17721,2232 17772,2331
 ######################################################################
 #
 # Potsdam
@@ -944,9 +945,9 @@ Urbanstr.: unbequem passierbarer Mittelstreifen (hohe Kanten)	3nocross 11274,949
 #: by: Rainer (ghostviewer...)
 Aroser Allee: Mittelstreifen	3nocross 6689,17911 6711,17839 6739,17749
 #: by: ruth mantei:
-Buschkrugallee: Mittelstreifen mit hoher Kante	3nocross 13809,5257 13820,5203 13889,4954
-Buschkrugallee: Mittelstreifen mit hoher Kante	3nocross 14119,4153 14048,4363 14010,4475
-Buschkrugallee: Mittelstreifen mit hoher Kante	3nocross 13928,4775 13906,4875 13889,4954
+Buschkrugallee: Mittelstreifen mit hoher Kante	3nocross 13809,5257 13824,5204 13892,4955
+Buschkrugallee: Mittelstreifen mit hoher Kante	3nocross 14119,4153 14048,4363 14023,4475
+Buschkrugallee: Mittelstreifen mit hoher Kante	3nocross 13939,4778 13914,4877 13892,4955
 Landsberger Allee: Straßenbahntrasse	3nocross 12878,13229 12979,13280 13078,13330
 Hauptstr.: Straßenbahntrasse	3nocross 15639,10469 15408,10638 15383,10656
 Hauptstr.: Straßenbahntrasse	3nocross 16004,10204 16114,10123 16138,10105
@@ -1019,12 +1020,11 @@ Petersburger Str.: Straßenbahntrasse	3nocross 13537,13003 13487,13115 13437,1322
 Petersburger Str.: Straßenbahntrasse	3nocross 13330,13468 13381,13354 13393,13326 13437,13228
 #: note: ^^^
 Stubenrauchstr.: Bahntrasse	3nocross 16635,2796 16677,2856 16779,2993
-#: note: Luftbild:
 Stubenrauchstr.: Bahntrasse	3nocross 16182,2200 16242,2279 16306,2364
 #: note: Luftbild:
-Stubenrauchstr.: Bahntrasse	3nocross 16475,2586 16573,2715 16635,2796
+Stubenrauchstr.: Bahntrasse	3nocross 16547,2680 16573,2715 16635,2796
 #: note: Luftbild:
-Rudower Chaussee: Mittelstreifen	3nocross 16135,2135 16028,2261 15957,2330
+Rudower Chaussee: Mittelstreifen	3nocross 16135,2135 16028,2261 15980,2318
 #: note: Luftbild:
 Rudower Chaussee: Mittelstreifen	3 19498,3054 19475,3074 19426,3024
 Sterndamm: Straßenbahntrasse	3nocross 17601,5090 17542,4772 17520,4649
@@ -1210,6 +1210,8 @@ Hansastr.: Straßenbahntrasse	3nocross 16460,17214 16578,17285 16837,17440
 Groß-Berliner Damm: Mittelstreifen	3nocross 18928,3701 18882,3750 18854,3781 18235,4449
 Stromstr.: Mittelstreifen	3nocross 6228,13324 6235,13517 6230,13596
 Warschauer Brücke: unbequem zu überqueren, zusätzlich Geländer am Gehweg	3nocross 13476,11174 13493,11217
+Waltersdorfer Chaussee: Mittelstreifen	3nocross 18009,-193 17946,-100 17879,-3
+Neuköllner Str.: Mittelstreifen	3nocross 16698,1392 16643,1460 16450,1691
 #
 ####################################################################
 #
@@ -1312,7 +1314,7 @@ tragen (26 Stufen, steile Treppe)	0:30 15156,6034
 tragen (Treppe)	0:30 4808,3404
 tragen (zwei Treppen, je ca. 10 Stufen)	0:30 8822,16873
 tragen (Treppe)	0:30 14390,5443
-tragen (Treppe)	0:30 14335,5425
+tragen (Treppe)	0:30 14340,5414
 tragen (ca. 35 Stufen)	0:30 18180,12262
 tragen (S-Bhf. Marzahn)	0:30 19571,15417
 tragen (S-Bhf. Marzahn)	0:30 19638,15431
@@ -1428,6 +1430,8 @@ tragen, langgezogene Stufen (13 Stufen)	0:25 20704,1383
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+Schranke	BNP:4::trailer=10 15200,2754
+Pfosten (lichte Breite ca. 120cm)	BNP:0::trailer=5 18727,1040
 Pfosten (lichte Breite ca. 100cm)	BNP:0::trailer=5 21356,8267
 Pfosten (lichte Breite ca. 100cm)	BNP:0::trailer=5 21368,8285
 Drängelgitter	BNP:3::trailer=10 20564,18
@@ -1571,7 +1575,7 @@ Drängelgitter	BNP:5::trailer=10 14453,9929
 #: note: Breite der Vorbeifahrmöglichkeit >90cm
 Drängelgitter mit asphaltierer Vorbeifahrmöglichkeit	BNP:2::trailer=4 14558,10082
 Drängelgitter mit asphaltierer Vorbeifahrmöglichkeit	BNP:2::trailer=4 14597,10129
-Drängelgitter mit asphaltierer Vorbeifahrmöglichkeit	BNP:2::trailer=4 14626,10162
+# XXX währen der Bauarbeiten entfernt (2010-10) --- wird es jemals wieder eingesetzt? --- Drängelgitter mit asphaltierer Vorbeifahrmöglichkeit	BNP:2::trailer=4 14626,10162
 #: note: 90cm Öffnung, 90cm zum versetzten Gitter -> 63cm lichte Breite
 Drängelgitter	BNP:3::trailer=no 12904,10141
 Schranke (Privatstr.)	BNP:5 25039,5304

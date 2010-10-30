@@ -1375,16 +1375,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'LS/O-SG33-F/10/015',
-         'until' => 1288389600,
-         'text' => 'Grünheide (Mark): L385: Brückenbauarbeiten OD Kienbaum, 24.02.2010 bis 29.10.2010 01:00 Uhr ',
-         'from' => 1284411978,
-         'id' => 2037,
-         'data' => 'userdel	2::inwork 48182,6806 48027,6894
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        {
@@ -1433,16 +1424,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        },
        undef,
        undef,
-       {
-         'source_id' => 'LSO-SG33-E10026',
-         'until' => 1288389600,
-         'text' => 'Wandlitz: Straßenbau (Ausbau OD) OD Zerpenschleuse 06.04.2010 bis 29.10.2010 ',
-         'from' => 1271281324,
-         'id' => 2051,
-         'data' => 'userdel	q4::inwork 18301,50512 18022,49766 17638,49090
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'source_id' => 'LSO-SG33-F10022',

@@ -217,7 +217,7 @@ Spandauer Str. -> Gustav-Böß-Str.: Spandauer Str. (Mitte)	3::igndisp 10644,12469
 Spandauer Str. -> Am Nußbaum: Spandauer Str. (Mitte)	3::igndisp 10684,12423 10644,12469 10626,12455
 Am Nußbaum -> Spandauer Str.: Spandauer Str. (Mitte)	3::igndisp 10626,12455 10644,12469 10601,12521
 Siegfriedstr.	1 12340,6947 12477,6975 12664,7013 12810,7047 12843,7093 12872,7134
-Onkel-Herse-Str.	1 13680,4715 13757,4729 13836,4759 13853,4759 13928,4775
+Onkel-Herse-Str.	1 13680,4715 13757,4729 13836,4759 13853,4759 13939,4778
 Paulstr.	3nocross::ignrte 7064,12419 7095,12571 7102,12613
 Joachim-Karnatz-Allee -> Paulstr.: Paulstr.	3::igndisp 7142,12584 7095,12571 7064,12419
 Paulstr. -> Joachim-Karnatz-Allee: Paulstr.	3::igndisp 7102,12613 7095,12571 7142,12584
@@ -626,8 +626,12 @@ Schweiggerweg	1 2081,14570 2079,14704 2099,14852
 Jungfernheideweg	1 1465,14963 1423,14679 1361,14431
 Dihlmannstr.: Radweg existiert	1 651,15091 755,15123 851,15155 957,15189 976,15195 1065,15229
 Bahntrasse	3nocross::ignrte 16135,2135 16056,2034 16002,1964 15875,1796 15835,1747
+Zwickauer Damm -> Ladenpassage U Zwickauer Damm: Bahntrasse	3::igndisp 16002,1964 16056,2034 16005,2058
 Zwickauer Damm -> Sattlerstr.: Bahntrasse	3::igndisp 16135,2135 16056,2034 16177,1943
 Sattlerstr. -> Zwickauer Damm: Bahntrasse	3::igndisp 16177,1943 16056,2034 16002,1964
+Sattlerstr. -> Ladenpassage U Zwickauer Damm: Bahntrasse	3::igndisp 16177,1943 16056,2034 16005,2058
+Ladenpassage U Zwickauer Damm -> Zwickauer Damm: Bahntrasse	3::igndisp 16005,2058 16056,2034 16135,2135
+Ladenpassage U Zwickauer Damm -> Sattlerstr.: Bahntrasse	3::igndisp 16005,2058 16056,2034 16177,1943
 Zwickauer Damm -> Gürtlerweg: Bahntrasse	3::igndisp 16056,2034 16002,1964 16106,1886
 Gürtlerweg -> Zwickauer Damm: Bahntrasse	3::igndisp 16106,1886 16002,1964 15875,1796
 Theodor-Loos-Weg -> Schriftsetzerweg: Bahntrasse	3::igndisp 15818,1834 15875,1796 15967,1718
@@ -641,7 +645,9 @@ Bürgerstr. -> Buschkrugallee: Mittelstreifen	3::igndisp 13239,6344 13307,6359 13
 Buschkrugallee -> Bürgerstr.: Mittelstreifen	3::igndisp 13323,6322 13307,6359 13239,6344
 Gieselerstr.	1 4606,9023 4619,9200
 Wiener Str., Görlitzer Ufer	1 13026,9854 13086,9825 13136,9883 13227,10001
-Mittelstreifen	3nocross::ignrte 15957,2330 15804,2512 15736,2593
+Mittelstreifen	3nocross::ignrte 15980,2318 15804,2512 15736,2593
+Primelweg -> Neuköllner Str.: Mittelstreifen	3::igndisp 15862,2588 15804,2512 15980,2318
+Neuköllner Str. -> Primelweg: Mittelstreifen	3::igndisp 15736,2593 15804,2512 15862,2588
 Freiertweg - Lichtenrader Damm	3 10827,467 10638,403 10676,299
 Glasbläserallee: Tore versperren die Durchfahrt, Radfahrer können passieren	2 14888,10385 14835,10272
 Hornstr.	1 8779,9851 8988,9783 8980,9751 8779,9812
@@ -695,6 +701,7 @@ Ofener Str. -> Sansibarstr.: Mittelstreifen	3::igndisp 6256,16601 6208,16546 610
 Ofener Str. -> Müllerstr.: Mittelstreifen	3::igndisp 6256,16601 6208,16546 6311,16457
 B110 nach Swinoujscie: kein Grenzübergang für Autos	2 62279,166179 62213,166173
 Mittelstreifen	3nocross::ignrte 16643,1460 16698,1392 16815,1278
+Neuköllner Str. -> Am Hanffgraben: Mittelstreifen	3::igndisp 16643,1460 16698,1392 16805,1488
 Mittelstreifen	3nocross::ignrte 13151,14855 13110,14879 12812,15053
 Einsteinstr. -> Storkower Str.: Mittelstreifen	3::igndisp 13143,14935 13110,14879 13151,14855
 Storkower Str. -> Einsteinstr.: Mittelstreifen	3::igndisp 12812,15053 13110,14879 13143,14935
@@ -981,7 +988,7 @@ Steinträgerweg: Poller	3 12987,2220 12963,2365 12948,2484
 Steinträgerweg: Poller	3 12948,2484 12963,2365 12987,2220
 Im Rosengrund: Anliegerstraße	2:Anlieger 11576,4339 11601,4242 11619,4146 11633,4117 11684,3919
 Haselsteig: Anliegerstraße, nördliche Einfahrt per Schranke gesperrt	2:Anlieger 11480,4335 11547,4127 11563,4099 11567,4085 11610,3891
-Teterower Str.	1 13717,5175 13820,5203
+Teterower Str.	1 13717,5175 13824,5204
 Hanns-Braun-Str.: bewachte Schranke	2 -515,12407 -671,12311 -1015,12106
 Weg 7: Sackgasse	3 17042,7685 16902,7652 16873,7733
 Weg 7: Sackgasse	3 17042,7685 16902,7652 16934,7570
@@ -1067,3 +1074,4 @@ Sybelstr.	1 4006,10585 4256,10583
 Hüttendorfer Weg	1 21409,-109 21463,-280
 Brückenstr.: Anlieger frei	1 17728,5756 17900,6072
 Passauer -> Lietzenburger	3 6033,10403 6020,10351 6147,10383
+Am Hanffgraben	1 16805,1488 16698,1392

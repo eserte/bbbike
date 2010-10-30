@@ -582,8 +582,9 @@ Herrfurthstr.	1s 11979,8014 11823,7980
 Dankratstr.	1s 21105,9538 20943,9543
 Helen-Ernst-Str., hinter der o2-Arena: bei Veranstaltungen gesperrt	2 13240,11279 13056,11329
 Bruno-Taut-Ring	1 13833,3665 13682,3718 13628,3781 13626,3867 13673,3915 13726,3928 13909,3845
-Havermannstr.	1s 13803,4932 13889,4954
+Havermannstr.	1s 13803,4932 13892,4955
 Rambowstr.	1s 13853,4759 13825,4850 13803,4932
+Arabisweg	1s 17721,2232 17772,2331
 Am Neuen Garten	1 -12166,1384 -12212,1201 -12276,831 -12302,718
 Am Neuen Garten	1 -12332,585 -12582,127
 Hochstraße	3nocross::ignrte -11399,-1339 -11461,-1424 -11540,-1543
@@ -744,15 +745,15 @@ Urbanstr. -> Werner-Düttmann-Pl.: unbequem passierbarer Mittelstreifen (hohe Kan
 Mittelstreifen	3nocross::ignrte 6689,17911 6711,17839 6739,17749
 Aroser Allee -> Bieler Str.: Mittelstreifen	3::igndisp 6689,17911 6711,17839 6815,17871
 Bieler Str. -> Aroser Allee: Mittelstreifen	3::igndisp 6815,17871 6711,17839 6739,17749
-Mittelstreifen mit hoher Kante	3nocross::ignrte 13809,5257 13820,5203 13889,4954
-Teterower Str. -> Buschkrugallee: Mittelstreifen mit hoher Kante	3::igndisp 13717,5175 13820,5203 13809,5257
-Buschkrugallee -> Teterower Str.: Mittelstreifen mit hoher Kante	3::igndisp 13889,4954 13820,5203 13717,5175
-Mittelstreifen mit hoher Kante	3nocross::ignrte 14119,4153 14048,4363 14010,4475
-Korlinweg -> Buschkrugallee: Mittelstreifen mit hoher Kante	3::igndisp 13964,4333 14048,4363 14010,4475
+Mittelstreifen mit hoher Kante	3nocross::ignrte 13809,5257 13824,5204 13892,4955
+Teterower Str. -> Buschkrugallee: Mittelstreifen mit hoher Kante	3::igndisp 13717,5175 13824,5204 13809,5257
+Buschkrugallee -> Teterower Str.: Mittelstreifen mit hoher Kante	3::igndisp 13892,4955 13824,5204 13717,5175
+Mittelstreifen mit hoher Kante	3nocross::ignrte 14119,4153 14048,4363 14023,4475
+Korlinweg -> Buschkrugallee: Mittelstreifen mit hoher Kante	3::igndisp 13964,4333 14048,4363 14023,4475
 Buschkrugallee -> Korlinweg: Mittelstreifen mit hoher Kante	3::igndisp 14119,4153 14048,4363 13964,4333
-Mittelstreifen mit hoher Kante	3nocross::ignrte 13928,4775 13906,4875 13889,4954
-Buschkrugallee -> Dürtenstr.: Mittelstreifen mit hoher Kante	3::igndisp 13928,4775 13906,4875 13874,4867
-Dürtenstr. -> Buschkrugallee: Mittelstreifen mit hoher Kante	3::igndisp 13874,4867 13906,4875 13889,4954
+Mittelstreifen mit hoher Kante	3nocross::ignrte 13939,4778 13914,4877 13892,4955
+Dürtenstr. -> Buschkrugallee: Mittelstreifen mit hoher Kante	3::igndisp 13874,4867 13914,4877 13892,4955
+Buschkrugallee -> Dürtenstr.: Mittelstreifen mit hoher Kante	3::igndisp 13939,4778 13914,4877 13874,4867
 Straßenbahntrasse	3nocross::ignrte 12878,13229 12979,13280 13078,13330
 Landsberger Allee -> Virchowstr.: Straßenbahntrasse	3::igndisp 12878,13229 12979,13280 12916,13368
 Straßenbahntrasse	3nocross::ignrte 15639,10469 15408,10638 15383,10656
@@ -921,10 +922,12 @@ Krokusstr. -> Stubenrauchstr.: Bahntrasse	3::igndisp 16739,2736 16677,2856 16635
 Bahntrasse	3nocross::ignrte 16182,2200 16242,2279 16306,2364
 Mohnweg -> Stubenrauchstr.: Bahntrasse	3::igndisp 16114,2377 16242,2279 16306,2364
 Stubenrauchstr. -> Mohnweg: Bahntrasse	3::igndisp 16182,2200 16242,2279 16114,2377
-Bahntrasse	3nocross::ignrte 16475,2586 16573,2715 16635,2796
-Stubenrauchstr. -> Fuchsienweg: Bahntrasse	3::igndisp 16475,2586 16573,2715 16376,2862
+Bahntrasse	3nocross::ignrte 16547,2680 16573,2715 16635,2796
+Stubenrauchstr. -> Fuchsienweg: Bahntrasse	3::igndisp 16547,2680 16573,2715 16376,2862
 Fuchsienweg -> Stubenrauchstr.: Bahntrasse	3::igndisp 16376,2862 16573,2715 16635,2796
-Mittelstreifen	3nocross::ignrte 16135,2135 16028,2261 15957,2330
+Mittelstreifen	3nocross::ignrte 16135,2135 16028,2261 15980,2318
+Ampferweg -> Neuköllner Str.: Mittelstreifen	3::igndisp 16042,2280 16028,2261 16135,2135
+Neuköllner Str. -> Ampferweg: Mittelstreifen	3::igndisp 15980,2318 16028,2261 16042,2280
 Rudower Chaussee: Mittelstreifen	3 19498,3054 19475,3074 19426,3024
 Straßenbahntrasse	3nocross::ignrte 17601,5090 17542,4772 17520,4649
 Ellernweg -> Waldstr.: Straßenbahntrasse	3::igndisp 17428,4792 17542,4772 17580,4761
@@ -1586,6 +1589,12 @@ Landschaftspark Johannisthal -> Groß-Berliner Damm: Mittelstreifen	3::igndisp 18
 Landschaftspark Johannisthal -> Groß-Berliner Damm: Mittelstreifen	3::igndisp 18833,3781 18854,3781 18235,4449
 Mittelstreifen	3nocross::ignrte 6228,13324 6235,13517 6230,13596
 Stromstr. -> Bugenhagenstr.: Mittelstreifen	3::igndisp 6228,13324 6235,13517 6104,13522
+Mittelstreifen	3nocross::ignrte 18009,-193 17946,-100 17879,-3
+Altrader Weg -> Waltersdorfer Chaussee: Mittelstreifen	3::igndisp 18008,-58 17946,-100 18009,-193
+Waltersdorfer Chaussee -> Altrader Weg: Mittelstreifen	3::igndisp 17879,-3 17946,-100 18008,-58
+Mittelstreifen	3nocross::ignrte 16698,1392 16643,1460 16450,1691
+Seilerweg -> Neuköllner Str.: Mittelstreifen	3::igndisp 16605,1424 16643,1460 16450,1691
+Neuköllner Str. -> Seilerweg: Mittelstreifen	3::igndisp 16698,1392 16643,1460 16605,1424
 tragen (4 Stufen)	0:10:-109 13874,4867
 tragen (22 Stufen)	0:30:-84 17599,15435
 tragen (22 Stufen)	0:30:-79 17657,15427
@@ -1654,8 +1663,8 @@ tragen (30 Stufen)	0:30:-53 15571,4168
 tragen (26 Stufen, steile Treppe)	0:30:-213 15156,6034
 tragen (Treppe)	0:30:-117 4808,3404
 tragen (zwei Treppen, je ca. 10 Stufen)	0:30:-246 8822,16873
-tragen (Treppe)	0:30:0 14390,5443
-tragen (Treppe)	0:30:90 14335,5425
+tragen (Treppe)	0:30:11 14390,5443
+tragen (Treppe)	0:30:-253 14340,5414
 tragen (ca. 35 Stufen)	0:30:-108 18180,12262
 tragen (S-Bhf. Marzahn)	0:30:-195 19571,15417
 tragen (S-Bhf. Marzahn)	0:30:-155 19638,15431
@@ -1738,6 +1747,8 @@ tragen (Treppe, ca. 20 Stufen)	0:25:-108 19163,14981
 tragen (Treppe, ca. 20 Stufen)	0:25:-12 19160,14935
 tragen (Treppe)	0:30:70 89344,-5795
 tragen, langgezogene Stufen (13 Stufen)	0:25:-168 20704,1383
+Schranke	BNP:4:-216:trailer=10 15200,2754
+Pfosten (lichte Breite ca. 120cm)	BNP:0:-69:trailer=5 18727,1040
 Pfosten (lichte Breite ca. 100cm)	BNP:0:-147:trailer=5 21356,8267
 Pfosten (lichte Breite ca. 100cm)	BNP:0:-146:trailer=5 21368,8285
 Drängelgitter	BNP:3:-108:trailer=10 20564,18
@@ -1833,7 +1844,6 @@ Schranke	BNP:5:-102 12571,7899
 Drängelgitter	BNP:5:34:trailer=10 14453,9929
 Drängelgitter mit asphaltierer Vorbeifahrmöglichkeit	BNP:2:39:trailer=4 14558,10082
 Drängelgitter mit asphaltierer Vorbeifahrmöglichkeit	BNP:2:41:trailer=4 14597,10129
-Drängelgitter mit asphaltierer Vorbeifahrmöglichkeit	BNP:2:33:trailer=4 14626,10162
 Drängelgitter	BNP:3:-153:trailer=no 12904,10141
 Schranke (Privatstr.)	BNP:5:-180 25039,5304
 Schranke	BNP:2:85:trailer=4 9907,11752
