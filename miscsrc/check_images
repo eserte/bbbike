@@ -53,7 +53,8 @@ iterate {
     TRY: {
 	    if ($f !~ m{^\.(gif|png|xpm|jpg)$}) {
 		foreach my $dir (@imagedir) {
-		    last TRY if (-e "$dir/$f.gif"); # for now, only check for gifs, because we cannot rely on Tk::PNG or Tk::JPEG
+		    last TRY if (-e "$dir/$f.gif");
+		    last TRY if (-e "$dir/$f.png"); # we're modern and also accept PNGs
 		}
 	    }
 	    # suffix probably already there
