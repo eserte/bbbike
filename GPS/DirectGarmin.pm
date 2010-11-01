@@ -319,7 +319,12 @@ sub convert_from_route {
 				      $wpt->{importance} < 0 ? $waypointsymbol_unimportant :
 				      $waypointsymbol
 				     );
-	    my $wptdata = {lat => $wpt->{lat}, lon => $wpt->{lon}, ident => make_bytes($wpt->{ident}), smbl => $use_waypointsymbol};
+	    my $wptdata = {lat       => $wpt->{lat},
+			   lon       => $wpt->{lon},
+			   ident     => make_bytes($wpt->{ident}),
+			   smbl      => $use_waypointsymbol, # not really used with wpt_class=0x80
+			   wpt_class => 0x80, # this is a routepoint
+			  };
 	    push @d, [$gps->GRMN_RTE_WPT_DATA, $handler->pack_Rte_wpt_data($wptdata)];
 	    push @{$self->{'debugdata'}}, $wpt;
 	}
