@@ -29,6 +29,9 @@ use vars qw($xadd_anchor $yadd_anchor @extra_tags $ignore);
 use BBBikeGlobalVars;
 use vars qw($XXX_use_old_R_symbol);
 
+# Additional debug output for drawing of grids if true:
+use constant BBBIKELAZY_EXTRA_VERBOSE => 0;
+
 # @defs_p_o @defs_p_o_abk
 use vars qw(@defs_str @defs_p
 	    @defs_str_abk
@@ -491,7 +494,7 @@ sub BBBikeLazy::plotstr_on_demand {
 
 	    foreach my $grid (@grids) {
 		if ($lazy_str{$abk}->{Grid}{$grid}) {
-		    warn "Drawing new grid for str/$abk: $grid\n" if $verbose;
+		    warn "Drawing new grid for str/$abk: $grid\n" if BBBIKELAZY_EXTRA_VERBOSE && $verbose;
 		    $something_new++;
 		    foreach my $strpos (@{ $lazy_str{$abk}->{Grid}{$grid} }) {
 			if (!$lazy_str_drawn{$abk}->{$strpos}) {
@@ -565,7 +568,7 @@ sub BBBikeLazy::plotstr_on_demand {
 
 	    foreach my $grid (@grids) {
 		if ($lazy_p{$abk}->{Grid}{$grid}) {
-		    warn "Drawing new grid for p/$abk: $grid\n" if $verbose;
+		    warn "Drawing new grid for p/$abk: $grid\n" if BBBIKELAZY_EXTRA_VERBOSE && $verbose;
 		    $something_new++;
 		    foreach my $strpos (@{ $lazy_p{$abk}->{Grid}{$grid} }) {
 			if (!$lazy_p_drawn{$abk}->{$strpos}) {
@@ -604,7 +607,7 @@ sub BBBikeLazy::plotstr_on_demand {
 
 		foreach my $grid (@grids) {
 		    if ($lazy_p{$abk}->{Grid}{$grid}) {
-			warn "Drawing new grid: $grid\n" if $verbose;
+			warn "Drawing new grid: $grid\n" if BBBIKELAZY_EXTRA_VERBOSE && $verbose;
 			$something_new++;
 			foreach my $strpos (@{ $lazy_p{$abk}->{Grid}{$grid} }) {
 			    if (!$lazy_p_drawn{$abk}->{$strpos}) {
@@ -631,7 +634,7 @@ sub BBBikeLazy::plotstr_on_demand {
 
 		foreach my $grid (@grids) {
 		    if ($lazy_p{$abk}->{Grid}{$grid}) {
-			warn "Drawing new grid: $grid\n" if $verbose;
+			warn "Drawing new grid: $grid\n" if BBBIKELAZY_EXTRA_VERBOSE && $verbose;
 			foreach my $strpos (@{ $lazy_p{$abk}->{Grid}{$grid} }) {
 			    if (!$lazy_p_drawn{$abk}->{$strpos}) {
 				my $r = $lazy_p{$abk}->get($strpos);
@@ -653,7 +656,7 @@ sub BBBikeLazy::plotstr_on_demand {
 		$gx-=5; $gy-=0;
 		warn $grid; $grid = "$gx,$gy"; warn $grid;
 		if ($lazy_p{$abk}->{Grid}{$grid}) {
-		    warn "Drawing new grid for p/$abk: $grid [subs])\n" if $verbose;
+		    warn "Drawing new grid for p/$abk: $grid [subs])\n" if BBBIKELAZY_EXTRA_VERBOSE && $verbose;
 		    $something_new++;
 		    foreach my $strpos (@{ $lazy_p{$abk}->{Grid}{$grid} }) {
 			if (!$lazy_p_drawn{$abk}->{$strpos}) {
