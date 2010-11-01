@@ -1337,16 +1337,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'LSW-SG33-P09598-1',
-         'until' => 1288476000,
-         'text' => 'Nuthetal: Kanal-und Straßenbauarbeiten L 771 OD Saarmund, 21.09.2009 bis 30.10.2010 ',
-         'from' => 1269162391,
-         'id' => 2026,
-         'data' => 'userdel	q4::inwork -8433,-11290 -8293,-10599
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'LS/O-SG33-E/09/214',
          'until' => 1293750000,
@@ -1480,7 +1471,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        {
          'until' => undef,
          'permanent' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Oktober bis 19.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im November von 7.00 bis 18.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'from' => undef,
          'id' => 2068,
          'data' => '(Eingang Columbiadamm - Rundkurs auf dem Flughafen Tempelhof)	2::night 10691,8532 10640,8366 10598,8270 10575,8218
@@ -1746,16 +1737,7 @@ userdel	3 13150,7254 13047,7234 13034,7319
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'source_id' => 'LS/O-SG33-E/10/086',
-         'until' => 1288562400,
-         'text' => 'Kremmen: B273: Abbruch der Brücke bei Kremmen, 20.09.2010 bis 31.10.2010 01:00 Uhr ',
-         'from' => 1285014030,
-         'id' => 2136,
-         'data' => 'userdel	2::inwork -17964,36290 -17262,37425
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
