@@ -5,10 +5,6 @@
 # Author: Slaven Rezic
 #
 
-# This script is currently misnamed, as it checks data download from
-# the live server, not specifically from the (non-existent) radzeit
-# server
-
 use strict;
 use FindBin;
 use lib ("$FindBin::RealBin/..",
