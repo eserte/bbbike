@@ -7371,6 +7371,13 @@ sub set_bindings {
 
     # Stack in tkstadtware für dragging angucken! XXX
     $c->CanvasBind("<1>" => sub {
+		       if ($MM_DRAG_IS_OBSOLETE) {
+			   my $e = $c->XEvent;
+			   ($canvas_drag_x, $canvas_drag_y) = ($e->x, $e->y);
+			   $c->scan('mark', $canvas_drag_x, $canvas_drag_y);
+			   $maybe_canvas_drag = 1;
+		       }
+
 		       if ($map_mode =~ /^BBBike/) {
 			   my $button_callback = $map_mode . '::button';
 			   if (defined &$button_callback) {
@@ -7398,7 +7405,8 @@ sub set_bindings {
 			   }
 		       }
 
-		       if ($map_mode eq MM_DRAG || $MM_DRAG_IS_OBSOLETE) {
+		       # XXX duplicated code, see above
+		       if ($map_mode eq MM_DRAG) {
 			   my $e = $c->XEvent;
 			   ($canvas_drag_x, $canvas_drag_y) = ($e->x, $e->y);
 			   $c->scan('mark', $canvas_drag_x, $canvas_drag_y);
