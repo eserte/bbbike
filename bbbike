@@ -16289,16 +16289,15 @@ sub show_overview_populate {
     if ($center_name) {
 	$arrow_update = sub {
 	    $overview_canvas->delete('berlinarrow');
-	    require Geometry;
 	    my($cx1,$cy1,$cx2,$cy2) = $overview_canvas->get_corners;
 	    # Ersten Schnittpunkt (inneres Rechteck) ermitteln
-	    my($ix1,$iy1) = Geometry::get_intersection
+	    my($ix1,$iy1) = VectorUtil::intersect_line_rectangle
 		($cx1+($cx2-$cx1)/2, $cy1+($cy2-$cy1)/2, $ov_center_x,$ov_center_y,
 		 $cx1+15,$cy1+15,$cx2-15,$cy2-15);
 	    if (defined $ix1 and defined $iy1) {
 		# zweiten Schnittpunkt ermitteln (aktuelle Canvasgrenze)
-		my($ix2,$iy2) = Geometry::get_intersection($ix1,$iy1,$ov_center_x,$ov_center_y,
-							   $cx1,$cy1,$cx2,$cy2);
+		my($ix2,$iy2) = VectorUtil::intersect_line_rectangle($ix1,$iy1,$ov_center_x,$ov_center_y,
+								     $cx1,$cy1,$cx2,$cy2);
 		if (defined $ix2 and defined $iy2) {
 		    # Distance to center (in Berlin: Brandenburger Tor)
 		    my $entf = Strassen::Util::strecke

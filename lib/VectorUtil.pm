@@ -299,6 +299,54 @@ sub intersect_lines {
     1;
 }
 
+# Previously in Geometry.pm as get_intersection
+sub intersect_line_rectangle {
+    my($x1,$y1, $x2,$y2,
+       $rectx1,$recty1,$rectx2,$recty2) = @_;
+
+    # normieren
+    if ($y1 > $y2) {
+	($x1, $x2, $y1, $y2) = ($x2, $x1, $y2, $y1);
+    }
+
+    # obere Kante
+    if ($y2 > $recty1 && $y1 < $recty1) {
+	my $ix = $x1 + ($x2-$x1)/($y2-$y1)*($recty1-$y1);
+	if ($ix >= $rectx1 and $ix <= $rectx2) {
+	    return ($ix, $recty1);
+	}
+    }
+
+    # untere Kante
+    if ($y2 > $recty2 && $y1 < $recty2) {
+	my $ix = $x1 + ($x2-$x1)/($y2-$y1)*($recty2-$y1);
+	if ($ix >= $rectx1 and $ix <= $rectx2) {
+	    return ($ix, $recty2);
+	}
+    }
+
+    # normieren
+    if ($x1 > $x2) {
+	($x1, $x2, $y1, $y2) = ($x2, $x1, $y2, $y1);
+    }
+
+    # linke Kante
+    if ($x2 > $rectx1 && $x1 < $rectx1) {
+	my $iy = $y1 + ($y2-$y1)/($x2-$x1)*($rectx1-$x1);
+	if ($iy >= $recty1 and $iy <= $recty2) {
+	    return ($rectx1, $iy);
+	}
+    }
+
+    # rechte Kante
+    if ($x2 > $rectx2 && $x1 < $rectx2) {
+	my $iy = $y1 + ($y2-$y1)/($x2-$x1)*($rectx2-$x1);
+	if ($iy >= $recty1 and $iy <= $recty2) {
+	    return ($rectx2, $iy);
+	}
+    }
+}
+
 sub point_in_grid {
     my($x1,$y1,$gridx1,$gridy1,$gridx2,$gridy2) = @_;
     return ($x1 >= $gridx1 && $x1 <= $gridx2 &&
