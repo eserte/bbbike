@@ -1516,16 +1516,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'http://www.berlin.de/ba-lichtenberg/presse/archiv/20100528.1110.297131.html',
-         'until' => 1288652399,
-         'text' => 'Marksburgstraße, Bauarbeiten zwischen Hentigstraße und Sangeallee, 15.08. bis 01.11., Fahrbahn gesperrt ',
-         'from' => 1281736800,
-         'id' => 2077,
-         'data' => 'userdel	q4::inwork 18586,9172 18511,9185 18430,9199 18319,9218
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        {
@@ -1764,16 +1755,7 @@ userdel	3 13150,7254 13047,7234 13034,7319
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20101025.1235.315920.html',
-         'until' => 1288825199,
-         'text' => 'Der Steg Am Rohrbusch wird repariert Die Montage beginnt am Montag, dem 25.10.2010. Der Steg wird voraussichtlich am 3. November 2010 für die Öffentlichkeit wieder geöffnet.',
-         'from' => 1288036570,
-         'id' => 2146,
-         'data' => 'userdel	2::inwork 5535,24016 5645,23968
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'http://www.berlin.de/ba-lichtenberg/presse/archiv/20101028.1120.316439.html',
          'until' => 1291157999,
