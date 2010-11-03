@@ -64,7 +64,6 @@ my @pods =
      [qw(README.english  doc/README.english.html),"README for BBBike"],
      [qw(bbbike.pod      doc/bbbike.html),        "Dokumentation für BBBike"],
      [qw(doc/links.pod   doc/links.html),     "Links"],
-     [qw(doc/watchsites.pod   doc/watchsites.html),     "Links mit stets aktuellem Inhalt"],
      [qw(doc/bbd.pod     doc/bbd.html),           "BBD file format"],
      [qw(doc/bbbike_internals.pod  doc/bbbike_internals.html),        "BBBike Internals"],
      );
@@ -80,7 +79,6 @@ $all_html:	$all_pods Makefile
 	mv bbd.html doc/
 	mv bbbike_internals.html doc/
 	mv links.html doc/
-	mv watchsites.html doc/
 	mv podindex.html doc/
 	mv bbbike.html doc/
 	mv README.html doc/
