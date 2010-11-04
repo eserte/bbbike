@@ -466,12 +466,12 @@ sub show_image_viewer {
 		if (defined $prev_inx) {
 		    $image_viewer_toplevel->Subwidget("PrevButton")->configure(-command => [@cmd_args, $prev_inx],
 									       -state => "normal");
-		    for my $key ('BackSpace', 'Left') {
+		    for my $key ('BackSpace', 'b', 'Left') {
 			$image_viewer_toplevel->bind("<$key>" => sub { show_image_viewer(@args, $prev_inx) });
 		    }
 		} else {
 		    $image_viewer_toplevel->Subwidget("PrevButton")->configure(-state => "disabled");
-		    for my $key ('BackSpace', 'Left') {
+		    for my $key ('BackSpace', 'b', 'Left') {
 			$image_viewer_toplevel->bind("<$key>" => \&Tk::NoOp);
 		    }
 		}
