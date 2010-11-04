@@ -503,7 +503,8 @@ sub show_image_viewer {
 		# current image being first in list. Unfortunately,
 		# look how complicated it is to get to $abs_file :-(
 		$image_viewer_toplevel->Subwidget("OrigButton")->configure(-command => [\&orig_viewer, $abs_file]);
-		$image_viewer_toplevel->bind("<o>" => sub { orig_viewer($abs_file) });
+		# o=orig, z=zoom (latter matches the binding in xzgv)
+		$image_viewer_toplevel->bind("<$_>" => sub { orig_viewer($abs_file) }) for ('o', 'z');
 
 		$image_viewer_toplevel->Subwidget("NOfMLabel")->configure(-text => $this_index_in_array->() . "/" . @$all_image_inx);
 
