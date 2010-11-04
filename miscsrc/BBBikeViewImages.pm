@@ -314,7 +314,10 @@ sub show_image_viewer {
 		if (!defined $image_viewer_toplevel) {
 		    $image_viewer_toplevel = $main::toplevel{"BBBikeViewImages_Viewer"};
 		} else {
-		    my $f = $image_viewer_toplevel->Frame->pack(-fill => "x", -side => "bottom");
+		    # Button bar is unusually at the top. This is to
+		    # have the button controls always in the same
+		    # place.
+		    my $f = $image_viewer_toplevel->Frame->pack(-fill => "x", -side => "top");
 
 		    my $first_button = $f->Button(-class => "SmallBut", -text => "|<")->pack(-side => "left");
 		    $image_viewer_toplevel->Advertise(FirstButton => $first_button);
