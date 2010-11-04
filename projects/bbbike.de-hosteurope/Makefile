@@ -94,7 +94,8 @@ DEPLOY_LOCAL_NO_TEST_TARGETS=	prepare-bbbike-data \
 				init-local-environment
 
 DEPLOY_LOCAL_TARGETS=		${DEPLOY_LOCAL_NO_TEST_TARGETS} \
-				test-local
+				test-local \
+				post-deploy-local-info
 
 DEPLOY_LOCAL_DATA_TARGETS=	prepare-bbbike-data \
 				prepare-bbbike-dist \
@@ -727,6 +728,14 @@ init-environment:
 
 init-local-environment:
 	lwp-request -m GET '${LOCAL_CGI_URL}/bbbike.cgi?init_environment=1'
+
+post-deploy-local-info:
+	@echo "**********************************************************************"
+	@echo "Consider to do the following things now:"
+	@echo "* Update git repo of webserver:"
+	@echo "    $(HOME)/src/bbbike-aux/misc/bbbike-checkin-hosteurope.pl -update"
+	@echo "* Go live:"
+	@echo "    ${MAKE} deploy"
 
 post-deploy-info:
 	@echo "**********************************************************************"
