@@ -32,6 +32,7 @@ sub register {
 	{ name => "Merkaartor/JOSM (via URL)",
 	  callback => sub { merkaartor_via_url(@_) },
 	  callback_3_std => sub { merkaartor_url(@_) },
+	  allmaps => 0, # do not show in allmaps list
 	  #XXX ($images{Pharus} ? (icon => $images{Pharus}) : ()),
 	};
 }

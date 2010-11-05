@@ -813,7 +813,7 @@ sub show_links_to_all_maps {
     my(%args) = @_;
     my %all_maps = map {
 	my $desc = $main::info_plugins{$_};
-	$desc && $desc->{callback_3_std} ?
+	$desc && $desc->{callback_3_std} && (!exists $desc->{allmaps} || $desc->{allmaps}) ?
 	    ($desc->{name} => $desc->{callback_3_std}->(%args)) : ();
     } keys %main::info_plugins;
     my $tl_tag = 'MultiMap_AllMaps';
