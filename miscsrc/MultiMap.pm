@@ -97,15 +97,12 @@ sub register {
 	      ($images{LiveCom} ? (icon => $images{LiveCom}) : ()),
 	    };
     }
-    if (0) {
-	# Site exists, but is not anymore linkable
-	$main::info_plugins{__PACKAGE__ . "_BikeMapDe"} =
-	    { name => "bikemap.de",
-	      callback => sub { showmap_bikemapde(@_) },
-	      callback_3_std => sub { showmap_url_bikemapde(@_) },
-	      ($images{BikeMapDe} ? (icon => $images{BikeMapDe}) : ()),
-	    };
-    }
+    $main::info_plugins{__PACKAGE__ . "_BikeMapNet"} =
+	{ name => "bikemap.net",
+	  callback => sub { showmap_bikemapnet(@_) },
+	  callback_3_std => sub { showmap_url_bikemapnet(@_) },
+	  ($images{BikeMapNet} ? (icon => $images{BikeMapNet}) : ()),
+	};
     # Down: 2010-09-30
     $main::info_plugins{__PACKAGE__ . "_BerlinerStadtplan24"} =
 	{ name => "www.berliner-stadtplan24.com",
@@ -294,11 +291,11 @@ HAjAANEIDxbklBDAAlOCAS8OzaCwIcSELXuuqPDSR8+JDhoCAgA7
 EOF
     }
 
-    if (!defined $images{BikeMapDe}) {
+    if (!defined $images{BikeMapNet}) {
 	# Fetched http://www.bikemap.de/static/images/header/logo.de.gif
 	# and converted using Gimp (cropped manually and scaled to 16px height)
 	# mmencode the result
-	$images{BikeMapDe} = $main::top->Photo
+	$images{BikeMapNet} = $main::top->Photo
 	    (-format => 'gif',
 	     -data => <<EOF);
 R0lGODlhEAAKAMZzAASbygWbyhOZxRGaxxSZxRKbxxOeyhGgzBagyhyfyR2fyR6lzx2n0Suj
@@ -666,22 +663,19 @@ sub showmap_deinplan {
 ######################################################################
 # bikemap.de
 
-sub showmap_url_bikemapde {
+sub showmap_url_bikemapnet {
     my(%args) = @_;
 
     my $px = $args{px};
     my $py = $args{py};
     my $scale = 17 - log(($args{mapscale_scale})/3000)/log(2);
-    if ($scale > 13) {
-	$scale = 13; # zu wenig Details (=Routen) bei niedrigeren Stufen
-    }
-    sprintf "http://www.bikemap.de/#lt=%s&ln=%s&z=%d&t=0",
+    sprintf "http://www.bikemap.net/#lat=%s&lng=%s&zoom=%d&type=0",
 	$py, $px, $scale;
 }
 
-sub showmap_bikemapde {
+sub showmap_bikemapnet {
     my(%args) = @_;
-    my $url = showmap_url_bikemapde(%args);
+    my $url = showmap_url_bikemapnet(%args);
     start_browser($url);
 }
 
