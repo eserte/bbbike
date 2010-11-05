@@ -518,8 +518,8 @@ userdel	q4::inwork; 10350,13376 10527,13257
          'text' => 'Köthener Str. (Kreuzberg) zwischen Bernburger Str. und Hallesches Ufer Baustelle, Einbahnstraße Richtung Norden',
          'from' => 1238347506,
          'id' => 1571,
-         'data' => '#: last_checked: 2010-09-22
-userdel	q4::inwork; 8536,11063 8483,10900 8443,10777
+         'data' => '#: last_checked: 2010-11-05
+userdel	q4::inwork; 8483,10900 8443,10777
 ',
          'type' => 'handicap'
        },
@@ -1709,9 +1709,9 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        {
          'source_id' => 'LS/O-SG33-E/09/214-7',
-         'until' => 1293750000,
-         'text' => 'Schenkenberg: L26: Grundhafter Straßenbau mit Ausbau des Knotenpunktes mit der K 7344 Prenzlau - A 20, 13.09.2010 bis 30.12.2010 ',
-         'from' => 1284666529,
+         'until' => 1306620000,
+         'text' => 'Schenkenberg: L26: Bauarbeiten, Prenzlau - A 20 zw. AS Prenzlau-Ost und Abzweig Schenkenberg, 13.09.2010 bis 28.05.2011 ',
+         'from' => 1288905888,
          'id' => 2133,
          'data' => 'userdel	2::inwork 46581,105900 47587,106693
 ',
@@ -1783,6 +1783,26 @@ userdel	3 13150,7254 13047,7234 13034,7319
          'from' => 1288134000,
          'id' => 2149,
          'data' => 'userdel	q4::inwork 30290,8562 30118,8128
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_016598',
+         'until' => 1301580000,
+         'text' => 'Niederkirchnerstr. (Mitte): Baustelle, Fahrtrichtung gesperrt in Richtung Wilhelmstr., 29.10.2010 09:00 Uhr bis 31.03.2011 16:00 Uhr ',
+         'from' => 1288249200,
+         'id' => 2150,
+         'data' => 'userdel	q4::inwork; 8720,11226 8948,11257 9162,11286
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_016591',
+         'until' => 1289577600,
+         'text' => 'Pankgrafenstraße (Karow): Baustelle, für beide Richtungen nur ein Fahrstreifen abwechselnd frei, Regelung mit provisorischen Ampeln (bis ca. Mitte 11/2010) in beiden Richtungen Höhe Bucher Str./Revierförsterei, 29.10.2010 06:00 Uhr bis 12.11.2010 17:00 Uhr ',
+         'from' => 1288238400,
+         'id' => 2151,
+         'data' => 'userdel	q4::inwork 13220,23679 13953,23497
 ',
          'type' => 'handicap'
        }

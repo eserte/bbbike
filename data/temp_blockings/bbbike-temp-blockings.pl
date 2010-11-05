@@ -13319,8 +13319,8 @@ EOF
        type  => 'handicap',
        source_id => 'IM_011637',
        data  => <<EOF,
-#: last_checked: 2010-09-22
-userdel	q4::inwork; 8536,11063 8483,10900 8443,10777
+#: last_checked: 2010-11-05
+userdel	q4::inwork; 8483,10900 8443,10777
 EOF
      },
      { from  => 1244065177, # 2009-06-03 23:39
@@ -18267,9 +18267,9 @@ EOF
 userdel	q3::inwork 21027,7432 21032,7590 21037,7751
 EOF
      },
-     { from  => 1284666529, # 2010-09-16 21:48
-       until => 1293750000, # 2010-12-31 00:00
-       text  => 'Schenkenberg: L26: Grundhafter Straßenbau mit Ausbau des Knotenpunktes mit der K 7344 Prenzlau - A 20, 13.09.2010 bis 30.12.2010 ',
+     { from  => 1288905888, # 2010-11-04 22:24
+       until => 1306620000, # 2011-05-29 00:00
+       text  => 'Schenkenberg: L26: Bauarbeiten, Prenzlau - A 20 zw. AS Prenzlau-Ost und Abzweig Schenkenberg, 13.09.2010 bis 28.05.2011 ',
        type  => 'gesperrt',
        source_id => 'LS/O-SG33-E/09/214-7',
        data  => <<EOF,
@@ -18416,6 +18416,24 @@ EOF
        source_id => '106701877',
        data  => <<EOF,
 userdel	q4::inwork 30290,8562 30118,8128
+EOF
+     },
+     { from  => 1288249200, # 2010-10-28 09:00
+       until => 1301580000, # 2011-03-31 16:00
+       text  => 'Niederkirchnerstr. (Mitte): Baustelle, Fahrtrichtung gesperrt in Richtung Wilhelmstr., 29.10.2010 09:00 Uhr bis 31.03.2011 16:00 Uhr ',
+       type  => 'handicap',
+       source_id => 'IM_016598',
+       data  => <<EOF,
+userdel	q4::inwork; 8720,11226 8948,11257 9162,11286
+EOF
+     },
+     { from  => 1288238400, # 2010-10-28 06:00
+       until => 1289577600, # 2010-11-12 17:00
+       text  => 'Pankgrafenstraße (Karow): Baustelle, für beide Richtungen nur ein Fahrstreifen abwechselnd frei, Regelung mit provisorischen Ampeln (bis ca. Mitte 11/2010) in beiden Richtungen Höhe Bucher Str./Revierförsterei, 29.10.2010 06:00 Uhr bis 12.11.2010 17:00 Uhr ',
+       type  => 'handicap',
+       source_id => 'IM_016591',
+       data  => <<EOF,
+userdel	q4::inwork 13220,23679 13953,23497
 EOF
      },
     );
