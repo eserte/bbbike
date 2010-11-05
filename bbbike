@@ -14024,8 +14024,13 @@ sub show_info {
 		$need_indentation = 1;
 	    }
 
-	    $info_text->insert("end", $plugin->{name} . "\n",
+	    $info_text->insert("end", $plugin->{name},
 			       ["link$linkcount", $need_indentation ? 'iconindent' : ()]);
+	    if ($plugin->{using_current_region}) {
+		$info_text->insert('end', " \x{2610}" # BALLOT BOX
+				  );
+	    }
+	    $info_text->insert('end', "\n");
 	    $info_text->tagBind
 		("link$linkcount", "<ButtonRelease-1>" => sub {
 		     $plugin->{callback}->(@args);

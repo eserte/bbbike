@@ -35,6 +35,7 @@ sub register {
     _create_icon();
     $main::info_plugins{$pkg} =
 	{ name => "Panoramio on BBBike",
+	  using_current_region => 1,
 	  callback => sub { show_mini_images(@_) },
 	  callback_3 => sub { show_panoramio_menu(@_) },
 	  ($panoramio_bbbike_icon ? (icon => $panoramio_bbbike_icon) : ()),

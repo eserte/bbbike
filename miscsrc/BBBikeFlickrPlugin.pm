@@ -37,6 +37,7 @@ sub register {
     _create_icon();
     $main::info_plugins{$pkg} =
 	{ name => "Flickr on BBBike",
+	  using_current_region => 1,
 	  callback => sub { show_mini_images(@_) },
 	  callback_3 => sub { show_flickr_menu(@_) },
 	  ($flickr_bbbike_icon ? (icon => $flickr_bbbike_icon) : ()),
