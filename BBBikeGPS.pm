@@ -1603,6 +1603,8 @@ sub tk_interface {
 			  'small_city'
 			 );
 	    $gpsman_wpt->Symbol($symbol);
+	    $gpsman_wpt->HiddenAttributes({'GD110:class'=>'|C$'}); # XXX setting waypoint class to 0x80 (map point waypoint)
+	    							   # XXX There should be better support in Gps::GpsmanData for this
 	    $gd->push_waypoint($gpsman_wpt);
 	}
 	$gd->as_string;

@@ -64,7 +64,7 @@ use GPS::Util; # for eliminate_umlauts
 use Class::Struct;
 struct('GPS::Gpsman::Waypoint' =>
        [map {($_ => "\$")}
-	qw(Ident Comment Latitude Longitude ParsedLatitude ParsedLongitude Altitude NewTrack Symbol Accuracy DisplayOpt DateTime)
+	qw(Ident Comment Latitude Longitude ParsedLatitude ParsedLongitude Altitude NewTrack Symbol Accuracy DisplayOpt DateTime HiddenAttributes)
        ]
       );
 {
@@ -111,6 +111,24 @@ struct('GPS::Gpsman::Waypoint' =>
 		: $wpt->Latitude
 		    ? GPS::GpsmanData::convert_lat_long_to_gpsman_DMS($wpt->Latitude, $wpt->Longitude)
 			: (undef, undef);
+    }
+
+    sub DumpHiddenAttributes {
+	my($wpt) = @_;
+	my $hidden_attributes = $wpt->HiddenAttributes;
+	if ($hidden_attributes && ref $hidden_attributes) {
+	    my @fields;
+	    while(my($k,$v) = each %$hidden_attributes) {
+		push @fields, $k.'='.$v;
+	    }
+	    if (@fields) {
+		return join "\t", @fields;
+	    } else {
+		return;
+	    }
+	} else {
+	    return;
+	}
     }
 
     sub as_gpx {
@@ -477,6 +495,7 @@ sub parse_waypoint_line {
 	    } elsif (/^dispopt=(.*)/) {
 		$wpt->DisplayOpt($1);
 	    } else {
+		# XXX maybe parse these into HiddenAttributes?
 		if ($^W) {
 		    if (/^GD108:(class|colour|attrs|depth|state|country)=/) {
 			# no warning
@@ -865,6 +884,7 @@ sub body_as_string {
 		       (defined $wpt->Altitude ? "alt=".$wpt->Altitude : ()),
 		       (defined $wpt->Symbol ? "symbol=".$wpt->Symbol : ()),
 		       (defined $wpt->DisplayOpt ? "dispopt=".$wpt->DisplayOpt : ()),
+		       (defined $wpt->HiddenAttributes ? $wpt->DumpHiddenAttributes : ()),
 		      )
 		. "\n";
 	}
@@ -880,7 +900,9 @@ sub body_as_string {
 		       (defined $wpt->DateTime ? $wpt->DateTime :
 			defined $wpt->Comment ? $wpt->Comment : ""),
 		       $wpt->DMS_output($self),
-		       (defined $wpt->Altitude ? ($wpt->Accuracy ? '~'x$wpt->Accuracy : '') . $wpt->Altitude : ""))
+		       (defined $wpt->Altitude ? ($wpt->Accuracy ? '~'x$wpt->Accuracy : '') . $wpt->Altitude : ""),
+		       (defined $wpt->HiddenAttributes ? $wpt->DumpHiddenAttributes : ()),
+		      )
 		. "\n";
 	}
     } elsif ($self->Type == TYPE_ROUTE) {
@@ -895,6 +917,7 @@ sub body_as_string {
 		       (defined $wpt->Comment ? $wpt->Comment : ""),
 		       $wpt->DMS_output($self),
 		       (defined $wpt->Symbol ? "symbol=".$wpt->Symbol : ()),
+		       (defined $wpt->HiddenAttributes ? $wpt->DumpHiddenAttributes : ()),
 		      )
 		. "\n";
 	}

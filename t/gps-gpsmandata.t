@@ -24,7 +24,7 @@ use lib $FindBin::RealBin;
 use BBBikeTest qw(gpxlint_string);
 use File::Temp qw(tempfile);
 
-plan tests => 20;
+plan tests => 21;
 
 use_ok 'GPS::GpsmanData';
 
@@ -132,5 +132,40 @@ EOF
 
     is scalar @{ $gps->Track }, 2;
 }
+
+{
+    # parts taken from BBBikeGPS::GpsmanRoute
+    my $gd = GPS::GpsmanData->new;
+    $gd->change_position_format("DDD");
+    $gd->Type(GPS::GpsmanData::TYPE_ROUTE());
+    $gd->Name('Test route');
+    for my $wpt (
+		 { ident => "wpt1", lat => 52.5, lon => 13.5},
+		 { ident => "wpt2", lat => 52.6, lon => 13.6},
+		) {
+	my $gpsman_wpt = GPS::Gpsman::Waypoint->new;
+	$gpsman_wpt->Ident($wpt->{ident});
+	$gpsman_wpt->Latitude($wpt->{lat});
+	$gpsman_wpt->Longitude($wpt->{lon});
+	my $symbol = 'small_city';
+	$gpsman_wpt->Symbol($symbol);
+	$gpsman_wpt->HiddenAttributes({'GD110:class'=>'|C$'}); # XXX setting waypoint class to 0x80 (map point waypoint)
+							       # XXX There should be better support in Gps::GpsmanData for this
+	$gd->push_waypoint($gpsman_wpt);
+    }
+    my $gpsman_rte = $gd->as_string;
+    my $expected = <<'EOF';
+% Written by t/gps-gpsmandata.t [GPS::GpsmanData]
+
+!Format: DMS 0 WGS 84
+!Creation: no
+
+!R:	Test route
+wpt1		N52 30 00.0	E13 30 00.0	symbol=small_city	GD110:class=|C$
+wpt2		N52 36 00.0	E13 35 59.9	symbol=small_city	GD110:class=|C$
+EOF
+    is $gpsman_rte, $expected;
+}
+
 
 __END__
