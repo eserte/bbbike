@@ -12012,7 +12012,9 @@ sub mark_point {
 	    $c->center_view($tx, $ty);
 	}
     }
-    eval { local $SIG{__DIE__}; $c->lower('show', $args{'-type'}) };
+    unless ($args{'-dont_mark'}) {
+	eval { local $SIG{__DIE__}; $c->lower('show', $args{'-type'}) };
+    }
 }
 
 sub clever_center {
@@ -12054,6 +12056,8 @@ sub clever_center {
 #               [[x3,y3],[x4,y4]], # second line
 #              ]
 #   -scrollto => [x,y]
+#   -dont_mark => 1: don't mark
+#   -dont_center => 1: don't center
 ### AutoLoad Sub
 sub mark_street {
     my(%args) = @_;
@@ -12165,7 +12169,9 @@ sub mark_street {
 	    }
 	}
     }
-    eval { local $SIG{__DIE__}; $c->lower('show', $args{'-type'}) };
+    unless ($args{'-dont_mark'}) {
+	eval { local $SIG{__DIE__}; $c->lower('show', $args{'-type'}) };
+    }
 }
 
 sub delete_markers {
