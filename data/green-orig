@@ -734,7 +734,7 @@ Waldweg (Rahnsdorf)	green1 31670,4365 31700,4493 31734,4624
 (Eingang Tempelhofer Damm - südliche Landebahn)	green1 9302,7294 9351,7241 9461,7190
 #: note: ^^^
 #: note: Not really that green, but defining this helps to avoid Ma'damm when pref_green=GR1 is set. Anregung von Reiner Hundsdoerfer.
-Hirzerweg	green1 9541,2096 9487,2391 9437,2649 9416,2781 9350,3081
+Hirzerweg	green1 9541,2096 9487,2391 9437,2649 9416,2781 9359,3083
 (Am Havelufer)	green2 -4072,5227 -3956,4875 -4033,4596
 Am Großen Fenster	green2 -4033,4596 -4182,4495 -4671,4524 -4757,4444 -4839,4159 -4918,4087
 (Dramburger Str. - Wuhlewanderweg)	green2 21560,10471 21608,10403
@@ -786,3 +786,6 @@ Altglienicker Aue	green1 19925,70 19844,162
 (Schloßpark Charlottenburg)	green2 2858,13530 2876,13594 2921,13618 3003,13634
 	green1 8305,1148 8492,1050 8539,1025 8687,950
 Seilerweg - Neuköllner Str.	green2 16547,1439 16605,1424 16643,1460
+#: by: ahmBerlin
+(Am Maselakekanal)	green2 -2140,17171 -2502,17233 -2606,17272
+Hochspannungsweg	green1 12606,2477 12390,2379 12363,2367 11747,2091

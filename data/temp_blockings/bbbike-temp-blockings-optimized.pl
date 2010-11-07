@@ -1734,15 +1734,7 @@ userdel	3 13150,7254 13047,7234 13034,7319
        undef,
        undef,
        undef,
-       {
-         'until' => 1288998000,
-         'text' => 'Einbahnstraßenregelung in der Wasserwerkstr. zwischen Falkenseer Chaussee und Pfefferweg vom 25.10 bis 05.11.2010',
-         'from' => 1287957600,
-         'id' => 2142,
-         'data' => 'userdel	q4::inwork; -5849,16199 -5875,15994 -5911,15877
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        {
