@@ -46,8 +46,9 @@ my $strassen_orig_tests = 5;
 my $zebrastreifen_tests = 3;
 my $encoding_tests = 10;
 my $multistrassen_tests = 11;
+my $initless_tests = 3;
 
-plan tests => $basic_tests + $doit_tests + $strassen_orig_tests + $zebrastreifen_tests + $encoding_tests + $multistrassen_tests;
+plan tests => $basic_tests + $doit_tests + $strassen_orig_tests + $zebrastreifen_tests + $encoding_tests + $multistrassen_tests + $initless_tests;
 
 goto XXX if $do_xxx;
 
@@ -419,5 +420,32 @@ EOF
     }
 
 }
-    
+
+{
+    # init-less operation
+    my $data = <<EOF;
+Heinrich-Heine	? 10885,10928 10939,11045 11034,11249 11095,11389 11242,11720
+EOF
+    {
+	my $s = Strassen->new_from_data_string($data);
+	my $r = $s->next;
+	is $r->[Strassen::NAME], 'Heinrich-Heine';
+    }
+
+    {
+	my $s = Strassen->new_from_data_ref([split /\n/, $data]);
+	my $r = $s->next;
+	is $r->[Strassen::NAME], 'Heinrich-Heine';
+    }
+
+    {
+	my($tmpfh,$tmpfile) = tempfile(UNLINK => 1);
+	print $tmpfh $data;
+	close $tmpfh or die $!;
+	my $s = Strassen->new($tmpfile);
+	my $r = $s->next;
+	is $r->[Strassen::NAME], 'Heinrich-Heine';
+    }
+}
+
 __END__

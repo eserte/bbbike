@@ -186,7 +186,7 @@ sub new {
 	}
     }
 
-    $self->{Pos}   = 0;
+    $self->{Pos}   = -1;
 
     $self;
 }
@@ -388,7 +388,7 @@ sub new_from_data_ref {
     my($class, $data_ref) = @_;
     my $self = {};
     $self->{Data} = $data_ref;
-    $self->{Pos}  = 0;
+    $self->{Pos}  = -1;
     bless $self, $class;
 }
 
@@ -397,7 +397,7 @@ sub new_from_data_ref {
 ### AutoLoad Sub
 sub new_from_data_string {
     my($class, $string, %args) = @_;
-    my $self = { Pos => 0 };
+    my $self = { Pos => -1 };
     bless $self, $class;
     my $fh;
     if ($] >= 5.008) {
