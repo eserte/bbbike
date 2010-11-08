@@ -1797,6 +1797,26 @@ userdel	3 13150,7254 13047,7234 13034,7319
          'data' => 'userdel	q4::inwork 13220,23679 13953,23497
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20101105.1400.317649.html',
+         'until' => 1291503600,
+         'text' => 'Bauarbeiten in der Klemkestraße zwischen Kopenhagener Straße und Emmentaler Straße vom 10.11.2010 bis 04.12.2010; Einbahnstraße in Richtung Emmentaler Straße ',
+         'from' => 1289257200,
+         'id' => 2152,
+         'data' => 'userdel	q4::inwork; 7855,18697 7785,18730 7690,18716 7609,18707 7520,18701 7492,18699 7434,18695 7320,18688 7217,18681
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'http://www.potsdam.de/cms/beitrag/10070344/966975/',
+         'until' => 1304200800,
+         'text' => 'Steinstraße: Für den Bau eines Schmutzwasserkanals ist die Steinstraße zwischen Mendelssohn-Bartholdy-Straße und Bernhard-Beyer-Straße für den Kfz-Verkehr gesperrt. Die Arbeiten werden bis voraussichtlich April 2011 andauern.',
+         'from' => 1289156455,
+         'id' => 2153,
+         'data' => 'userdel	q4::inwork -7750,-2431 -7909,-2375 -7996,-2293
+',
+         'type' => 'handicap'
        }
      
 );

@@ -157,6 +157,12 @@ Fahrradstraße in der Lauenburger Str.	?::projected 5883,4985 5909,5072 5939,5169
 #: section ignorieren vvv
 #: section Straßen in Bau und Planung vvv
 # 
+#: by: http://www.potsdam.de/cms/beitrag/10070965/966975/
+#: next_check: 2011-11-01
+Rudolf-Breitscheid-Str.: nach den Bauarbeiten wird es in Richtung Westen eine 2m breite Radspur geben sowie in Richtung Osten einen asphaltierter Radweg	?::inwork -10973,-1764 -10773,-1828 -10702,-1851 -10678,-1860
+#: by: http://www.potsdam.de/cms/beitrag/10069329/966975/
+Hegelallee (Potsdam): asphaltierter Radweg fertiggestellt?	?::inwork -13625,-902 -13468,-847 -13433,-831 -13231,-763 -13137,-728 -13067,-706
+# 
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1010/nachricht4107.html
 #: next_check: 2011-01-15
 Uferweg am Salzhof: entsteht 2011, genauer Verlauf? Qualität? nachts beleuchtet?	?::inwork -1872,15676 -1931,15974 -1922,16205 -1939,16427
@@ -338,7 +344,7 @@ Choriner Str.: die Choriner Str. soll eine Fahrradstraße werden	? 10480,13871 10
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20081110.1105.113814.html
 #: last_checked: 2010-10-23:
 #: next_check: 2011-04-30:
-Eisenhutweg: Radwege entstehen im Zuge der Bauarbeiten bis 2011-09-30	?::inwork 17894,2783 17741,2824 17525,3029 17274,3267 17142,3393
+Eisenhutweg: Radwege entstehen im Zuge der Bauarbeiten bis September 2011	?::inwork 17894,2783 17741,2824 17525,3029 17274,3267 17142,3393
 #: by: http://www.berlin.de/ba-pankow/presse/archiv/20081119.1005.114651.html (confirmed_by: MoPo 2009-08-01, soll 2009 realisiert werden) vvv
 #: next_check: 2009-07-24: vvv
 Alt-Blankenburg: Bau von Radwegen	?::inwork; 14050,20955 13915,20944 13562,20913 13576,20849 13592,20785
@@ -404,7 +410,7 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 # Das heißt diese Strecken werden nicht bei einer erweiterten Suche aufgenommen
 # und dem CGI-Benutzer auch nicht präsentiert.
 # 
-#: 
+#:
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/36re.pdf/file
 Fichtenweg: Teilstück als Straßenland eingezogen?	? -2949,17946 -2963,17872
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/39re.pdf/file
@@ -500,8 +506,6 @@ Pappelstr. -> Kastanienallee: hier verliert man durchaus 2 1/2 Minuten bei der Ü
 Radweg in Zepernick, beidseitig, auf der südöstlichen Seite: genauer Beginn- und Endpunkt?	? 18292,26726 19364,27415 19534,27833
 Uferpromenade Tegelort/Heiligensee: genaueres zur Qualität und zur Fußgängerfrequenz!	? -2285,19053 -2251,19216 -2250,19361 -2279,19503 -2266,19692 -2248,19849 -2216,20003 -2205,20141 -2146,20345 -2044,20524
 Stintgraben und See	? 1584,39467 1930,39739 1864,40227 2186,40991 2056,41586 1860,42350
-#: XXX_indoor (evtl. Barometer-Aufzeichnungen prüfen)
-Viktoriapark: 40m Höhe	? 9007,9264
 Raddusch: entfällt der Regionalbahnhof?	? 54813,-65044
 #XXX del: nördlicher Radweg auf der Bulgarischen Str.: siehe Message-ID: <1kl0p5nkwlmb1.dlg@tebe.my-fqdn.de>	? 15166,8489 15383,8662 15580,8839
 Route Lychen - Feldberg: wie sieht der Routenverlauf aus? Qualität?	? 627,89430 551,89619
@@ -2464,6 +2468,7 @@ Domagkstr.: Qualität?	? 8034,1171 8163,1110 8263,1061
 Prechtlstr.: Qualität?	? 8535,1125 8630,1077 8724,1027
 Proellstr.: Qualität?	? 8630,1077 8765,1363
 Schomburgstr.: Qualität?	? 8642,1422 8700,1557
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/45re.pdf/file (alle Hausnummern eingezogen; existiert die Straße noch?)
 Hennickendorfer Weg: Qualität?	? 21731,15748 21908,15718 22055,15698
 Hirschfelder Weg: Qualität?	? 21674,15675 21719,15666 22101,15601
 Zinndorfer Str.: Qualität?	? 21647,15496 21680,15489 21769,15470 21860,15455 21951,15442
