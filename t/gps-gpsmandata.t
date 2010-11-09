@@ -154,8 +154,8 @@ EOF
 	$gd->push_waypoint($gpsman_wpt);
     }
     my $gpsman_rte = $gd->as_string;
+    $gpsman_rte =~ s{^% Written by .*\[GPS::GpsmanData\]\n}{}; # normalize
     my $expected = <<'EOF';
-% Written by t/gps-gpsmandata.t [GPS::GpsmanData]
 
 !Format: DMS 0 WGS 84
 !Creation: no
