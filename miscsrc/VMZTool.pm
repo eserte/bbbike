@@ -14,10 +14,11 @@
 package VMZTool;
 
 use strict;
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 use HTML::FormatText 2;
 use HTML::TreeBuilder;
+use HTML::Tree;
 use LWP::UserAgent ();
 use URI ();
 use URI::QueryParam ();
@@ -37,6 +38,8 @@ use Karte::Standard;
 
 use constant MELDUNGSLISTE_URL => 'http://asp.vmzberlin.com/VMZ_LSBB_MELDUNGEN_WEB/Meldungsliste.jsp?back=true';
 use constant MELDUNGSKARTE_URL => 'http://asp.vmzberlin.com/VMZ_LSBB_MELDUNGEN_WEB/Meldungskarte.jsp?back=true&map=true';
+
+use constant MELDUNGSLISTE_BERLIN_URL => 'http://www.vmz-info.de/web/guest/2?p_p_id=simaps_WAR_simapsportlet_INSTANCE_ovXy&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&p_p_col_id=column-1&p_p_col_count=1&_simaps_WAR_simapsportlet_INSTANCE_ovXy_cmd=traffic&_simaps_WAR_simapsportlet_INSTANCE_ovXy_submenu=traffic_construction';
 
 sub _trim ($);
 
@@ -69,6 +72,15 @@ sub fetch_mappage {
     my $resp = $ua->mirror(MELDUNGSKARTE_URL, $file);
     if (!$resp->is_success) {
 	die "Failed while fetching " . MELDUNGSKARTE_URL . ": " . $resp->as_string;
+    }
+}
+
+sub fetch_berlin_summary {
+    my($self, $file) = @_;
+    my $ua = $self->{ua};
+    my $resp = $ua->mirror(MELDUNGSLISTE_BERLIN_URL, $file);
+    if (!$resp->is_success) {
+	die "Failed while fetching " . MELDUNGSLISTE_BERLIN_URL . ": " . $resp->as_string;
     }
 }
 
@@ -196,6 +208,106 @@ sub parse_mappage {
     }
 }
 
+sub parse_berlin_summary {
+    my($self, $summary_file, $detail_file) = @_;
+
+    my %place2rec;
+    my %id2rec;
+
+    my $place = 'Berlin';
+
+    my $id_to_points;
+    my $fetch_idtopoints = sub {
+	return $id_to_points if $id_to_points;
+	my($href) = @_;
+	my $content;
+	if (defined $detail_file) {
+	    $content = do { open my $fh, '<:utf8', $detail_file or die $!; local $/; <$fh> };
+	} else {
+	    my $resp = $self->{ua}->get($href);
+	    if (!$resp->is_success) {
+		die "No success fetching $href: " . $resp->status_line;
+	    }
+	    $content = $resp->decoded_content;
+	}
+
+	my @chunks = split /function _simaps_WAR_simapsportlet_INSTANCE_ovXy_marker/, $content;
+	shift @chunks;
+	$chunks[-1] =~ s{function removeFolderMessages.*}{}s;
+	for my $chunk (@chunks) {
+	    my $id;
+	    if ($chunk =~ m{INSTANCE_ovXy_markerTM_([A-Za-z0-9_]+)'}) {
+		$id = $1;
+	    }
+	    if (defined $id) {
+		my @points;
+		while($chunk =~ m{new GLatLng\(([\d\.]+),([\d\.]+)\)}g) {
+		    my($y, $x) = ($1, $2);
+		    push @points, { lon => $x, lat => $y };
+		}
+		$id_to_points->{$id} = \@points;
+	    }
+	}
+    };
+
+    my $htmltb = HTML::TreeBuilder->new;
+    my $html = do { open my $fh, '<:utf8', $summary_file or die $!; local $/; <$fh> };
+    my $tree = $htmltb->parse($html);
+    my $table = $tree->look_down('_tag', 'table',
+				 'id', 'project')
+	or die "Cannot find table id=project";
+
+    for my $tr ($table->look_down('_tag', 'tr')) {
+	my(@td) = $tr->look_down('_tag', 'td');
+	# first td has warning image
+	my $warn_img = $td[0]->look_down('_tag', 'img');
+	my $type = 'unknown';
+	if ($warn_img) {
+	    my $img_src = $warn_img->attr('src');
+	    if ($img_src =~ m{/signs/(.*)\.(?:gif|png)}) {
+		$type = $1;
+	    } else {
+		warn "Cannot get warning type from '$img_src'";
+	    }
+	}
+	my $a = $td[1]->look_down('_tag', 'a');
+	my $a_href;
+	my $id;
+	if ($a) {
+	    $a_href = $a->attr('href');
+	    if ($a_href) {
+		if ($a_href =~ m{Xy_markerTM_([^&;]+)}) {
+		    $id = $1;
+		}
+		$a_href = URI->new_abs($a_href, MELDUNGSLISTE_BERLIN_URL)->as_string;
+		$fetch_idtopoints->($a_href);
+	    }
+	}
+	my $text = $self->{formatter}->format($td[1]);
+	$text =~ s{^\n+}{}; $text =~ s{\n+$}{};
+	$text =~ s{^\s*Straße:\s+}{}m;
+	$text =~ s{^\s*Abschnitt:\s+}{}m;
+	$text =~ s{^\s*Stand:\s+\d+\.\d+\.\d+\s+\d+:\d+\s+}{}sm;
+
+	if (defined $id) { # currently we cannot use entries without id
+	    my $record = { place  => $place,
+			   id     => $id,
+			   points => $id_to_points->{$id},
+			   type   => $type,
+			   href   => $a_href,
+			   text   => $text,
+			 };
+	    push @{ $place2rec{$place} }, $record;
+	    $id2rec{$id} = $record;
+	}
+    }
+
+    (place2rec => \%place2rec,
+     id2rec    => \%id2rec,
+     parsed_at => scalar(localtime),
+    );
+}
+
 sub as_bbd {
     my($self, $place2rec, $old_store) = @_;
     my $old_id2rec = $old_store ? $old_store->{id2rec} : undef;
@@ -267,12 +379,21 @@ EOF
 	} else {
 	    push @attribs, 'CHANGED';
 	}
-	my($sx,$sy) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($rec->{lon},$rec->{lat}));
 	my $text = $rec->{formatted_text} || $rec->{detailed_text} || $rec->{text};
 	$text =~ s{\n}{ }g;
+	my @coords;
+	if ($rec->{points}) {
+	    @coords =
+		map { "$_->[0],$_->[1]" }
+		    map { [$Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($_->{lon},$_->{lat}))] }
+			@{ $rec->{points} };
+	} else {
+	    my($sx,$sy) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($rec->{lon},$rec->{lat}));
+	    @coords = "$sx,$sy";
+	}
 	$s .= join(", ", @attribs) . "¦" .
 	    ($rec->{place} ne 'Berlin' ? $rec->{place} . ": " : '') .
-		$text . "¦" . $rec->{id} . "¦" . $rec->{map_url} . "\tX $sx,$sy\n";
+		$text . "¦" . $rec->{id} . "¦" . $rec->{map_url} . "\tX @coords\n";
     };
     my %seen_id;
     for my $place (sort { $place2rec->{$a}->[0]->{lon} <=> $place2rec->{$b}->[0]->{lon} } keys %$place2rec) {
@@ -324,17 +445,28 @@ if ($old_store_file) {
 my $vmz = VMZTool->new;
 my($tmpfh, $file);
 my($tmp2fh, $mapfile);
+my($tmp3fh, $berlinsummaryfile);
+my(undef,   $berlindetailfile);
 if ($do_test) {
-    $file    = "$ENV{HOME}/trash/Meldungsliste.jsp?back=true";
-    $mapfile = "$ENV{HOME}/trash/Meldungskarte.jsp?back=true&map=true&x=52.1034702789087&y=14.270757485947728&zoom=13&meldungId=LS%2FO-SG33-F%2F10%2F027";
+    my $samples_dir = "$ENV{HOME}/src/bbbike-aux/samples";
+    $file       = "$samples_dir/Meldungsliste.jsp?back=true";
+    $mapfile    = "$samples_dir/Meldungskarte.jsp?back=true&map=true&x=52.1034702789087&y=14.270757485947728&zoom=13&meldungId=LS%2FO-SG33-F%2F10%2F027";
+    $berlinsummaryfile = "$samples_dir/berlin_summary";
+    $berlindetailfile  = "$samples_dir/berlin_detail";
 } elsif ($do_fetch) {
     ($tmpfh,$file)     = tempfile(UNLINK => 1) or die $!;
     ($tmp2fh,$mapfile) = tempfile(UNLINK => 1) or die $!;
-    eval { $vmz->fetch($file); $vmz->fetch_mappage($mapfile) };
+    ($tmp3fh,$berlinsummaryfile) = tempfile(UNLINK => 1) or die $!;
+    eval {
+	$vmz->fetch($file);
+	$vmz->fetch_mappage($mapfile);
+	$vmz->fetch_berlin_summary($berlinsummaryfile);
+    };
     if ($@) {
 	$File::Temp::KEEP_ALL = 1;
 	die $@;
     }
+    
 }
 my %res;
 if ($file && $mapfile) {
@@ -344,6 +476,15 @@ if ($file && $mapfile) {
     local $YAML::Syck::ImplicitUnicode = 1;
     my $res = YAML::Syck::LoadFile($new_store_file);
     %res = %$res;
+}
+if ($berlinsummaryfile) {
+    my %berlin_res = $vmz->parse_berlin_summary($berlinsummaryfile, $berlindetailfile);
+    while(my($id,$rec) = each %{ $berlin_res{id2rec} }) {
+	if (!exists $res{id2rec}->{$id}) {
+	    $res{id2rec}->{$id} = $rec;
+	    push @{ $res{place2rec}->{$rec->{place}} }, $rec;
+	}
+    }
 }
 my $bbd = $vmz->as_bbd($res{place2rec}, $old_store);
 if ($new_store_file && $do_fetch) {
@@ -364,16 +505,6 @@ __END__
 
 VMZTool - parse road work information for Berlin and Brandenburg
 
-=head1 TODO
-
- * should the URL be stored in the bbd somewhere?
- * implement process
-  * fetch and temporarily store MELDUNGSLISTE_URL
-  * parse the fetched data (in case of errors: do not unlink)
-  * store the parsed data
-  * get old data (either last marked as checked or previous set)
-  * call as_bbd and write down the bbd file
-
 =head1 SYNOPSIS
 
 Conversion between old vmz file into new format for "removed"
@@ -390,5 +521,23 @@ Regular usage:
     perl miscsrc/VMZTool.pm -oldstore ~/cache/misc/newvmz.yaml -newstore ~/cache/misc/newvmz.yaml.new -outbbd ~/cache/misc/diffnewvmz.bbd
     mv ~/cache/misc/newvmz.yaml ~/cache/misc/newvmz.yaml.old
     mv ~/cache/misc/newvmz.yaml.new ~/cache/misc/newvmz.yaml
+
+=head1 DESCRIPTION
+
+ * process
+  * fetch and temporarily store MELDUNGSLISTE_URL
+  * parse the fetched data (in case of errors: do not unlink)
+  * store the parsed data
+  * get old data (either last marked as checked or previous set)
+  * call as_bbd and write down the bbd file
+
+=head1 NOTES
+
+Two VMZ sources are used: the first (MELDUNGSLISTE_URL and
+MELDUNGSKARTE_URL) contains records in Berlin and Brandenburg. The 2nd
+(MELDUNGSLISTE_BERLIN_URL) contains additional records in Berlin. If
+records appear in both sources, then the first one is used. The 1st
+source has only one-point coordinates, while the 2nd may contain
+multiple coordinates.
 
 =cut
