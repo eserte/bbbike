@@ -285,7 +285,8 @@ sub parse_berlin_summary {
 	}
 	my $text = $self->{formatter}->format($td[1]);
 	$text =~ s{^\n+}{}; $text =~ s{\n+$}{};
-	$text =~ s{^\s*Straße:\s+}{}m;
+	$text =~ s{^\s*Straße:\s+(.*)}{$1}m;
+	my $strasse = $1;
 	$text =~ s{^\s*Abschnitt:\s+}{}m;
 	$text =~ s{^\s*Stand:\s+\d+\.\d+\.\d+\s+\d+:\d+\s+}{}sm;
 
@@ -296,6 +297,7 @@ sub parse_berlin_summary {
 			   type   => $type,
 			   href   => $a_href,
 			   text   => $text,
+			   strassen => [$strasse],
 			 };
 	    push @{ $place2rec{$place} }, $record;
 	    $id2rec{$id} = $record;
