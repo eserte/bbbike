@@ -1817,6 +1817,66 @@ userdel	3 13150,7254 13047,7234 13034,7319
          'data' => 'userdel	q4::inwork -7750,-2431 -7909,-2375 -7996,-2293
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_016620',
+         'until' => 1290351600,
+         'text' => 'Hönower Straße (Mahlsdorf): Baustelle, Fahrtrichtung gesperrt Richtung Hönow zwischen Fritz-Reuter-Str. und Linderhofstr., 08.11.2010 11:21 Uhr bis 21.11.2010 16:00 Uhr ',
+         'from' => 1289125260,
+         'id' => 2154,
+         'data' => 'userdel	q4::inwork; 24556,12172 24530,12296
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'INKO_104287',
+         'until' => 1289602799,
+         'text' => 'Friedrichstr. (Mitte) in beiden Richtungen zwischen Unter den Linden und Behrenstr. Baustelle, Fahrbahn gesperrt, Fußgänger können passieren (bis vorauss. 12.11.2010 20:00) ',
+         'from' => 1289373706,
+         'id' => 2155,
+         'data' => 'userdel	q4::inwork 9358,12351 9369,12253
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'INKO_103995',
+         'until' => 1289861999,
+         'text' => 'Kastanienallee (Mitte) in beiden Richtungen Höhe Zionskirchstr. Baustelle, Straße vollständig gesperrt (bis Mitte 11/2010) ',
+         'from' => 1289373786,
+         'id' => 2156,
+         'data' => 'userdel	q4::inwork 10511,14418 10426,14262 10370,14158
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'INKO_103947',
+         'until' => 1291157999,
+         'text' => 'Lückstr. (Rummelsburg) Richtung Nöldnerplatz zwischen Emanuelstr. und Giselastr. Baustelle, Fahrtrichtung gesperrt (bis Ende 11.2010) ',
+         'from' => 1289373844,
+         'id' => 2157,
+         'data' => 'userdel	q4::inwork; 16303,10760 16153,10818
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => '106402691',
+         'until' => 1289448000,
+         'text' => 'Strausberg: L34: Gleisbauarbeiten OL Strausberg, Bahnübergang vom 10.11. 08:30 bis 11.11.10 05:00 Uhr ',
+         'from' => 1289372400,
+         'id' => 2158,
+         'data' => 'userdel	2::inwork 43131,19792 43686,19241
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'INKO_104132',
+         'until' => 1289790000,
+         'text' => 'Teltower Damm (Zehlendorf) in beiden Richtungen zwischen Anhaltinerstr. und Machnower Str. Geplant ab: 12.11.2010 18 Uhr, Baustelle, Straße vollständig gesperrt (Einbau einer Hilfsbrücke) (bis vorauss. 15.11.2010 04:00)',
+         'from' => 1289494800,
+         'id' => 2159,
+         'data' => 'userdel	2::inwork 749,2616 725,2702
+',
+         'type' => 'gesperrt'
        }
      
 );
