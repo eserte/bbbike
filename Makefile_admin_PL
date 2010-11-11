@@ -646,8 +646,8 @@ DEB_DATA=	libstring-approx-perl libdbd-xbase-perl libxml-parser-perl \
 		libyaml-perl libyaml-syck-perl libjson-xs-perl \
 		libtext-unidecode-perl libdata-compare-perl agrep
 DEB_MISC=	libdate-calc-perl
-# If apache2 is installed, then do not install apache-perl!
-DEB_CGI=	libapache-session-perl apache-perl libfile-counterfile-perl
+# If apache-perl is installed, then do not install apache2!
+DEB_CGI=	libapache-session-perl apache2 libfile-counterfile-perl
 DEB_MAPSERVER=	mapserver-bin cgi-mapserver
 
 # Debian packages from own repo
@@ -666,6 +666,27 @@ DEB_ALL_CGI=	$(DEB_DEVEL)      \
 		$(DEB_CGI)        \
 		$(DEB_MAPSERVER)  
 
+# Complete list of required modules for full operation.
+# This is what is available on a typical debian/lenny system
+DEB_ALL=	libalgorithm-diff-perl libapache-session-perl libarchive-zip-perl \
+		libbsd-resource-perl libclass-accessor-perl libdata-compare-perl \
+		libdate-pcalc-perl libdb-file-lock-perl libdbd-mysql-perl \
+		libdbd-xbase-perl libdbi-perl libdbix-class-perl libdevel-leak-perl \
+		libfile-readbackwards-perl libflickr-api-perl libfont-afm-perl \
+		libgd-gd2-perl libgeo-coder-google-perl libgeo-distance-perl \
+		libgeo-distance-xs-perl libgeo-metar-perl libimage-exiftool-perl \
+		libimage-info-perl libimager-perl libinline-perl libipc-run-perl \
+		libjson-xs-perl libmailtools-perl libmime-lite-perl libmldbm-perl \
+		libobject-realize-later-perl libpdf-create-perl \
+		libstatistics-descriptive-perl libstring-approx-perl libsvg-perl \
+		libtemplate-perl libtest-differences-perl libtest-simple-perl \
+		libtext-csv-xs-perl libtext-table-perl libtext-unidecode-perl \
+		libtie-ixhash-perl libtk-gbarr-perl libtk-histentry-perl libtk-pod-perl \
+		libwww-mechanize-formfiller-perl libwww-mechanize-perl libwww-perl \
+		libwww-shorten-perl libx11-protocol-perl libxml-libxml-perl \
+		libxml-parser-perl libxml-sax-perl libxml-simple-perl libxml-twig-perl \
+		libyaml-perl libyaml-syck-perl perl perl-modules perl-tk perlmagick
+
 install-debian-for-cgi:	install-debian-packages-for-cgi \
 			install-debian-owndebs-for-cgi
 
@@ -673,17 +694,13 @@ install-debian-packages-for-cgi:
 	aptitude install ${DEB_ALL_CGI}
 
 # Assumes own deb packages are in ~/work/mydebs
+# XXX Does not work: dpkg expects full filenames, not package names!
 install-debian-owndebs-for-cgi:
 	cd ${HOME}/work/mydebs && \
 	    dpkg --install ${OWN_DEB}
 
-# Not used:
-install-debian-perlmods-for-cgi-via-cpan:
-	cpan CPAN
-	cpan PDF::Image::GIFImage Apache::Session::Counted \
-	     Object::Iterate Palm::PalmDoc SVG WWW::Mechanize::FormFiller
-# Manchmal scheint hier -f (force) notwendig zu sein...
-	cpan CDB_File
+install-debian-packages-for-all:
+	aptitude install ${DEB_ALL}
 
 ######################################################################
 # par
