@@ -1590,6 +1590,9 @@ Landschaftspark Johannisthal -> Groß-Berliner Damm: Mittelstreifen	3::igndisp 18
 Landschaftspark Johannisthal -> Groß-Berliner Damm: Mittelstreifen	3::igndisp 18833,3781 18854,3781 18235,4449
 Mittelstreifen	3nocross::ignrte 6228,13324 6235,13517 6230,13596
 Stromstr. -> Bugenhagenstr.: Mittelstreifen	3::igndisp 6228,13324 6235,13517 6104,13522
+unbequem zu überqueren, zusätzlich Geländer am Gehweg	3nocross::ignrte 13476,11174 13493,11217 13541,11355
+Warschauer Str. -> Tamara-Danz-Str.: unbequem zu überqueren, zusätzlich Geländer am Gehweg	3::igndisp 13541,11355 13493,11217 13513,11206
+Tamara-Danz-Str. -> Warschauer Str.: unbequem zu überqueren, zusätzlich Geländer am Gehweg	3::igndisp 13513,11206 13493,11217 13476,11174
 Mittelstreifen	3nocross::ignrte 18009,-193 17946,-100 17879,-3
 Altrader Weg -> Waltersdorfer Chaussee: Mittelstreifen	3::igndisp 18008,-58 17946,-100 18009,-193
 Waltersdorfer Chaussee -> Altrader Weg: Mittelstreifen	3::igndisp 17879,-3 17946,-100 18008,-58
@@ -1878,8 +1881,8 @@ Drängelgitter	BNP:10:-84 7158,9509
 Drängelgitter	BNP:5:-51 -6162,16287
 Drängelgitter	BNP:5:-193 38562,100725
 Drängelgitter	BNP:5:3 38662,97200
-Schwingtor an der Luiseninsel	BNP:10:-142 7696,11621
-Schwingtor an der Luiseninsel	BNP:10:-131 7735,11656
+Schwingtor an der Luiseninsel	BNP:5:-142 7696,11621
+Schwingtor an der Luiseninsel	BNP:5:-131 7735,11656
 Schranke	BNP:1:12:trailer=5 25558,997
 enges Drängelgitter	BNP:5:90 100,3
 Drängelgitter	BNP:4:-101 13909,18835
@@ -1912,7 +1915,6 @@ Behrenstr.: Einbiegen in die Mauerstr. nicht möglich	3:inwork 9164,12172 9064,12
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12748
 Spittelmarkt: wegen Bauarbeiten gesperrt	2:inwork 10166,11592 10153,11666 10213,11728
 Elisabeth-Mara-Str.: Bauarbeiten bis zum Frühjahr 2011	2:inwork 10506,11567 10320,11627
-Großer Weg: Bauarbeiten, Weg wird neu gemacht	2:inwork 6809,11570 6980,11583
 Wagner-Régeny-Str.: Straße ist fertig, aber noch gesperrt	2:inwork 19487,3593 19377,3721
 Rhinstr.: neues Wohngebiet, Weg gesperrt	2:inwork 18015,13846 17300,14133
 Radweg parallel zur Autobahn ist wegen Bauarbeiten am BAB gesperrt	2:inwork 5062,14681 4676,14534 3707,14303 3595,14277

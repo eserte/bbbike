@@ -446,7 +446,8 @@ Fontanestr.: Asphalt	Q0 11632,8302 11645,8212 11665,8130
 Weisestr.: unebenes Kopfsteinpflaster	Q2- 11767,8330 11770,8292 11773,8231 11786,8165 11823,7980 11859,7815 11879,7720 11903,7607 11923,7516
 Selchower Str.: unebenes Kopfsteinpflaster	Q2- 11532,8104 11665,8130
 Selchower Str.: Asphalt	Q0 11665,8130 11786,8165 11933,8198
-Mahlower Str.: Kopfsteinpflaster	Q2 11523,8178 11645,8212 11773,8231 11920,8252
+Mahlower Str.: Kopfsteinpflaster	Q2 11523,8178 11645,8212
+Mahlower Str.: Asphalt	Q0 11645,8212 11773,8231 11920,8252
 Boddinstr.: Kopfsteinpflaster	Q2 11920,8252 12104,8299
 Boddinstr.: teilweise Asphalt auf der Fahrbahn	Q1 12104,8299 12168,8313 12216,8323
 Boddinstr.: Kopfsteinpflaster	Q2 12216,8323 12368,8356 12582,8408
@@ -457,7 +458,7 @@ Morusstr.: schlechtes Kopfsteinpflaster	Q3 12407,8177 12426,8115
 Falkstr.: Asphalt	Q0 12162,8055 12178,7985 12179,7979
 Falkstr.: Kopfsteinpflaster	Q2 12179,7979 12220,7822
 (Falkstr. - Mittelweg): Verbundsteinpflaster	Q1 12220,7822 12224,7799
-Schillerpromenade: Kopfsteinpflaster	Q2 11665,8130 11695,8005
+Schillerpromenade: Kopfsteinpflaster	Q2- 11665,8130 11695,8005
 Schillerpromenade: Kopfsteinpflaster	Q2 11717,7895 11738,7790 11755,7704 11779,7582 11797,7492
 S‰ntisstr.: Kopfsteinpflaster	Q2 8892,802 8743,681 8533,512
 Alt-Marienfelde: Kopfsteinpflaster	Q2 8742,475 8533,512 8484,529 8258,662 8114,722 8000,729 7855,771
@@ -520,7 +521,7 @@ Groﬂer Weg: asphaltiert	Q0 7535,11677 7591,11639 7669,11586 7711,11558 7717,1154
 Groﬂe Sternallee: Parkweg	Q1 6809,11979 7073,11798 7163,11738 7382,11588 7504,11512
 (Hiroshimastr. - Groﬂe Sternallee): Parkweg	Q1 7356,11517 7382,11588
 Bellevueallee: Parkweg	Q1 7039,12314 7383,12095 7460,12054 7663,11946 7801,11875 8016,11770 8172,11679
-Ahornsteig: Parkweg	Q1 7669,11586 7696,11621 7735,11656 7796,11681 7852,11721 8016,11770
+Ahornsteig: Parkweg	Q1 7669,11586 7696,11621 7735,11656 7796,11681 7901,11684 8016,11770
 Ahornsteig: kleinteiliges Pflaster und wassergebundene Decke	Q1 8016,11770 8156,11863 8222,11881 8284,11905 8453,12099 8522,12187 8538,12245
 Tiergarten: wassergebundene Decke	Q1 8223,11796 8156,11863 8091,11992 8089,12041 8107,12145
 Tiergarten: Parkweg	Q1 8021,11636 8016,11770 8022,12016
@@ -12690,6 +12691,9 @@ Apeldorner Weg: wassergebundene Decke	Q1 3848,8689 3868,8759 3932,8989
 Bechstedter Weg: Asphalt	Q0 3482,9028 3661,8815
 Zum Bechstedter Weg: Asphalt	Q1 3661,8815 3701,8849
 M¸nstersche Str.: Kleinpflaster	Q1 3763,9642 3699,9613
+#: XXX nach den Bauarbeiten vielleicht Q0?
+#: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20101111.1155.318374.html
+#: next_check: 2010-11-19
 Ruhrstr.: Asphalt	Q1 3983,9343 4230,9229
 Hektorstr.: Asphalt	Q1 3189,10141 3206,10458
 Walter-Benjamin-Platz: Gehwegplatten	Q0 4256,10583 4381,10583

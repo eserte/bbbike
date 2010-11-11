@@ -1210,7 +1210,7 @@ Indira-Gandhi-Str.: Straßenbahntrasse	3nocross 14843,15007 14828,15050 14650,157
 Hansastr.: Straßenbahntrasse	3nocross 16460,17214 16578,17285 16837,17440
 Groß-Berliner Damm: Mittelstreifen	3nocross 18928,3701 18882,3750 18854,3781 18235,4449
 Stromstr.: Mittelstreifen	3nocross 6228,13324 6235,13517 6230,13596
-Warschauer Brücke: unbequem zu überqueren, zusätzlich Geländer am Gehweg	3nocross 13476,11174 13493,11217
+Warschauer Brücke: unbequem zu überqueren, zusätzlich Geländer am Gehweg	3nocross 13476,11174 13493,11217 13541,11355
 Waltersdorfer Chaussee: Mittelstreifen	3nocross 18009,-193 17946,-100 17879,-3
 Neuköllner Str.: Mittelstreifen	3nocross 16698,1392 16643,1460 16450,1691
 #
@@ -1621,9 +1621,11 @@ Drängelgitter	BNP:5 -6162,16287
 # in Brandenburg:
 Drängelgitter	BNP:5 38562,100725
 Drängelgitter	BNP:5 38662,97200
-#: by: Corinna Meyer (und Robert Joop): vvv
-Schwingtor an der Luiseninsel	BNP:10 7696,11621
-Schwingtor an der Luiseninsel	BNP:10 7735,11656
+#: by: Corinna Meyer: vvv
+#: confirmed_by: rjoop & srt vvv
+Schwingtor an der Luiseninsel	BNP:5 7696,11621
+Schwingtor an der Luiseninsel	BNP:5 7735,11656
+#: by: ^^^
 #: by: ^^^
 Schranke	BNP:1::trailer=5 25558,997
 enges Drängelgitter	BNP:5 100,3
@@ -1689,10 +1691,7 @@ Spittelmarkt: wegen Bauarbeiten gesperrt	2:inwork 10166,11592 10153,11666 10213,
 #: last_checked: 2010-09-20
 #: next_check: 2011-03-01
 Elisabeth-Mara-Str.: Bauarbeiten bis zum Frühjahr 2011	2:inwork 10506,11567 10320,11627
-# 
-#: last_checked: 2010-09-18
-#: next_check: 2010-11-01
-Großer Weg: Bauarbeiten, Weg wird neu gemacht	2:inwork 6809,11570 6980,11583
+#XXX del --- # #: last_checked: 2010-09-18 --- #: next_check: 2010-11-01 ---Großer Weg: Bauarbeiten, Weg wird neu gemacht	2:inwork 6809,11570 6980,11583
 # 
 #: last_checked: 2010-09-11
 Wagner-Régeny-Str.: Straße ist fertig, aber noch gesperrt	2:inwork 19487,3593 19377,3721

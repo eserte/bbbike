@@ -1858,16 +1858,7 @@ userdel	3 13150,7254 13047,7234 13034,7319
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => '106402691',
-         'until' => 1289448000,
-         'text' => 'Strausberg: L34: Gleisbauarbeiten OL Strausberg, Bahnübergang vom 10.11. 08:30 bis 11.11.10 05:00 Uhr ',
-         'from' => 1289372400,
-         'id' => 2158,
-         'data' => 'userdel	2::inwork 43131,19792 43686,19241
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'INKO_104132',
          'until' => 1289790000,
@@ -1877,6 +1868,19 @@ userdel	3 13150,7254 13047,7234 13034,7319
          'data' => 'userdel	2::inwork 749,2616 725,2702
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20101111.1155.318374.html',
+         'until' => 1290186000,
+         'text' => 'Ruhrstraße zwischen Konstanzer Straße und Hohenzollerndamm wird ab Montag, dem 15.11. bis Freitag, dem 19.11.2010 instandgesetzt, Vollsperrung ',
+         'from' => 1289800800,
+         'id' => 2160,
+         'data' => 'userdel	q4::inwork 3983,9343 4230,9229
+userdel	q4::inwork 12690,10062 12659,10119
+userdel	q4::inwork 12855,10035 12817,9964
+userdel	q4::inwork 9268,11590 9058,11564 8733,11524
+',
+         'type' => 'handicap'
        }
      
 );
