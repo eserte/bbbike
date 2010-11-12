@@ -1770,8 +1770,8 @@ userdel	3 13150,7254 13047,7234 13034,7319
        },
        {
          'source_id' => '106701877',
-         'until' => 1291158000,
-         'text' => 'Schöneiche bei Berlin: L302, L338: Gleis- und Straßenbau (Knotenumbau L302/L338) OL Schöneiche Knoten Rahnsdorfer Str. Vollsperrung, 28.10.2010 01:00 Uhr bis 30.11.2010 ',
+         'until' => 1292367600,
+         'text' => 'Schöneiche bei Berlin: L302, L338: Gleis- und Straßenbau (Knotenumbau L302/L338) OL Schöneiche Knoten Rahnsdorfer Str. Vollsperrung, 28.10.2010 01:00 Uhr bis 14.12.2010 ',
          'from' => 1288134000,
          'id' => 2149,
          'data' => 'userdel	q4::inwork 30290,8562 30118,8128
@@ -1788,16 +1788,7 @@ userdel	3 13150,7254 13047,7234 13034,7319
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_016591',
-         'until' => 1289577600,
-         'text' => 'Pankgrafenstraße (Karow): Baustelle, für beide Richtungen nur ein Fahrstreifen abwechselnd frei, Regelung mit provisorischen Ampeln (bis ca. Mitte 11/2010) in beiden Richtungen Höhe Bucher Str./Revierförsterei, 29.10.2010 06:00 Uhr bis 12.11.2010 17:00 Uhr ',
-         'from' => 1288238400,
-         'id' => 2151,
-         'data' => 'userdel	q4::inwork 13220,23679 13953,23497
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20101105.1400.317649.html',
          'until' => 1291503600,
@@ -1838,16 +1829,7 @@ userdel	3 13150,7254 13047,7234 13034,7319
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'INKO_103995',
-         'until' => 1289861999,
-         'text' => 'Kastanienallee (Mitte) in beiden Richtungen Höhe Zionskirchstr. Baustelle, Straße vollständig gesperrt (bis Mitte 11/2010) ',
-         'from' => 1289373786,
-         'id' => 2156,
-         'data' => 'userdel	q4::inwork 10511,14418 10426,14262 10370,14158
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'INKO_103947',
          'until' => 1291157999,
@@ -1881,6 +1863,16 @@ userdel	q4::inwork 12855,10035 12817,9964
 userdel	q4::inwork 9268,11590 9058,11564 8733,11524
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => 'LS/S-SG33-W/10/146',
+         'until' => 1290293999,
+         'text' => 'Unterspreewald: B179: Brückenneubau Bauwerk 502 Brücke über die alte Spree bei Leibsch ab 16.11.-20.11.10 Vollsperrung ',
+         'from' => 1289775600,
+         'id' => 2161,
+         'data' => 'userdel	2::inwork 43875,-35850 44731,-35697
+',
+         'type' => 'gesperrt'
        }
      
 );

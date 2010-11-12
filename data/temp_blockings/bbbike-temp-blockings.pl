@@ -650,7 +650,7 @@ EOF
        text  => 'Bachstraße: In beiden Richtungen Störungen durch Rohrbruch, gesperrt bis Do 12:00 ',
        type  => 'handicap',
       data  => <<EOF,
-userdel	q4 6020,12492 5951,12353 5938,12281 5874,12165 5790,12026
+userdel	q4 6020,12492 5951,12353 5938,12281 5874,12165 5807,12070 5790,12026
 userdel	q4 5758,11895 5775,11975 5790,12026
 EOF
      },
@@ -18410,8 +18410,8 @@ userdel	2::inwork -17114,37670 -17262,37425
 EOF
      },
      { from  => 1288134000, # 2010-10-27 01:00
-       until => 1291158000, # 2010-12-01 00:00
-       text  => 'Schöneiche bei Berlin: L302, L338: Gleis- und Straßenbau (Knotenumbau L302/L338) OL Schöneiche Knoten Rahnsdorfer Str. Vollsperrung, 28.10.2010 01:00 Uhr bis 30.11.2010 ',
+       until => 1292367600, # 2010-12-15 00:00
+       text  => 'Schöneiche bei Berlin: L302, L338: Gleis- und Straßenbau (Knotenumbau L302/L338) OL Schöneiche Knoten Rahnsdorfer Str. Vollsperrung, 28.10.2010 01:00 Uhr bis 14.12.2010 ',
        type  => 'handicap',
        source_id => '106701877',
        data  => <<EOF,
@@ -18473,7 +18473,7 @@ userdel	q4::inwork 9358,12351 9369,12253
 EOF
      },
      { from  => 1289373786, # 2010-11-10 08:23
-       until => 1289861999, # 2010-11-15 23:59
+       until => 1289594954, # 2010-11-15 23:59 1289861999
        text  => 'Kastanienallee (Mitte) in beiden Richtungen Höhe Zionskirchstr. Baustelle, Straße vollständig gesperrt (bis Mitte 11/2010) ',
        type  => 'handicap',
        source_id => 'INKO_103995',
@@ -18518,6 +18518,15 @@ userdel	q4::inwork 3983,9343 4230,9229
 userdel	q4::inwork 12690,10062 12659,10119
 userdel	q4::inwork 12855,10035 12817,9964
 userdel	q4::inwork 9268,11590 9058,11564 8733,11524
+EOF
+     },
+     { from  => 1289775600, # 2010-11-15 00:00
+       until => 1290293999, # 2010-11-20 23:59
+       text  => 'Unterspreewald: B179: Brückenneubau Bauwerk 502 Brücke über die alte Spree bei Leibsch ab 16.11.-20.11.10 Vollsperrung ',
+       type  => 'gesperrt',
+       source_id => 'LS/S-SG33-W/10/146',
+       data  => <<EOF,
+userdel	2::inwork 43875,-35850 44731,-35697
 EOF
      },
     );
