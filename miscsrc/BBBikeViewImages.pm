@@ -410,6 +410,9 @@ sub show_image_viewer {
 		    $p->delete;
 		    $p = $new_p;
 		}
+		# XXX Should check via exif if image is about to be
+		# rotated. If so, then use Tk::PhotoRotate or
+		# something similar
 		my $image_label_widget = $image_viewer_toplevel->Subwidget("ImageLabel");
 		$image_label_widget->configure(-image => $p);
 		# Force quadratic toplevel
@@ -581,7 +584,7 @@ sub viewer_xv {
 
 sub viewer_xzgv {
     my(@args) = @_;
-    my @cmd = ("xzgv", @args);
+    my @cmd = ("xzgv", "--exif-orient", @args);
     main::status_message("@cmd", "info");
     my $pid = fork;
     die if !defined $pid;
