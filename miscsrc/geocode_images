@@ -9,7 +9,7 @@
 #
 
 use strict;
-our $VERSION = 1.30;
+our $VERSION = 1.31;
 
 use Cwd qw(realpath);
 use File::Spec;
@@ -611,8 +611,57 @@ sub create_thumbnail_ImageMagick {
 	warn "@cmd failed: $?";
 	return undef;
     } else {
+	maybe_correct_orientation($file, $dest);
 	return $dest;
     }
+}
+
+sub maybe_correct_orientation {
+    my($orig, $thumbnail) = @_;
+    return if !is_in_path('jpegtran'); # XXX should fallback to Image::JpegTran if available
+    my $info = ImageInfo($orig, ["Orientation"],{PrintConv => 1});
+    if ($info && defined $info->{Orientation}) {
+	my $rotated_file;
+	my $orientation = $info->{Orientation};
+	if ($orientation eq 'Horizontal (normal)') {
+	    # do nothing
+	} elsif ($orientation eq 'Rotate 90 CW') {
+	    $rotated_file = _run_jpegtran(['-rotate', 90], $thumbnail);
+	} elsif ($orientation eq 'Rotate 180') {
+	    $rotated_file = _run_jpegtran(['-rotate', 180], $thumbnail);
+	} elsif ($orientation eq 'Rotate 270 CW') {
+	    $rotated_file = _run_jpegtran(['-rotate', 270], $thumbnail);
+	} else {
+	    # ignore
+	}
+	if (defined $rotated_file) {
+	    rename $rotated_file, $thumbnail
+		or die "Cannot rename $rotated_file to $thumbnail: $!";
+	}
+    }
+}
+
+sub _run_jpegtran {
+    my($args, $file) = @_;
+    my @cmd = ("jpegtran", @$args, $file);
+    warn "Running @cmd...\n" if $v;
+    open my $ifh, "-|", @cmd
+	or die "While running @cmd: $!";
+    binmode $ifh;
+    my $dest = "$file.$$";
+    open my $ofh, ">", $dest
+	or die "While writing $dest: $!";
+    binmode $ofh;
+    local $/ = \4096;
+    while(<$ifh>) {
+	print $ofh $_;
+    }
+    close $ofh
+	or die "While writing to $dest: $!";
+    close $ifh
+	or die "While running @cmd: $!";
+
+    $dest;
 }
 
 sub get_cam_delta {
