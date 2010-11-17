@@ -66,8 +66,8 @@ Kniprodestr./Am Friedrichshain	?::projected 12901,14093 12784,13961 12695,13864 
 #: next_check: 2010-12-31
 Lankwitzer Str.	?::projected 8955,3521 8599,3441 8478,3414 8347,3382 8259,3349 8080,3260 8039,3242
 # 
-#: last_checked: 2010-07-16
-#: next_check: 2010-09-01
+#: last_checked: 2010-11-14
+#: next_check: 2011-01-01
 Schnellerstr.	?::projected 18245,5551 18370,5511 18680,5413 18984,5318 19031,5316 19328,5304 19405,5284
 # 
 #: by: http://www.berlin.de/ba-spandau/presse/archiv/20100803.1545.305011.html
@@ -157,9 +157,18 @@ Fahrradstraße in der Lauenburger Str.	?::projected 5883,4985 5909,5072 5939,5169
 #: section ignorieren vvv
 #: section Straßen in Bau und Planung vvv
 # 
+#: by: http://www.berlin.de/ba-pankow/presse/archiv/20101116.0930.319072.html
+#: next_check: 2012-01-01
+Fr.-Engels-Str.: Fahrradstreifen werden angelegt, Baubeginn ist Herbst 2011	?::inwork 9355,19789 9333,19853 9300,19949 9266,20048 9235,20125 9149,20336
+# 
+#: by: http://www.berlin.de/ba-pankow/presse/archiv/20101117.1135.319249.html
+#: next_check: 2011-11-01
+Kastanienallee: Fahrradstreifen werden angelegt (bis 2012-09-01)	?::inwork 10534,14460 10723,14772 10838,14962 10881,15047
+# 
 #: by: http://www.potsdam.de/cms/beitrag/10070965/966975/
 #: next_check: 2011-11-01
 Rudolf-Breitscheid-Str.: nach den Bauarbeiten wird es in Richtung Westen eine 2m breite Radspur geben sowie in Richtung Osten einen asphaltierter Radweg	?::inwork -10973,-1764 -10773,-1828 -10702,-1851 -10678,-1860
+# 
 #: by: http://www.potsdam.de/cms/beitrag/10069329/966975/
 Hegelallee (Potsdam): asphaltierter Radweg fertiggestellt?	?::inwork -13625,-902 -13468,-847 -13433,-831 -13231,-763 -13137,-728 -13067,-706
 # 
@@ -3294,6 +3303,7 @@ Am Dorfteich: Qualität?	? -83,22536 -159,22590 -237,22640
 Iznikstr.: Qualität?	? -2133,16934 -2119,17015
 Wolburgsweg: Qualität?	? -5727,15818 -5710,15950 -5663,16359
 Haackzeile: Qualität?	? -5875,15994 -5710,15950
+#: by: http://www.flickr.com/photos/30482855@N04/5174220754/in/pool-39413187@N00/ (keine Durchfahrt für Autos, Pfosten/Sperre am südl. Ende)
 Netphener Weg: Qualität? Nachts beleuchtet? Für Autos gesperrt?	? -5146,15059 -5159,14957 -5199,14835
 Staakener Feldstr.: Qualität?	? -7464,13904 -7534,13936 -7595,13963 -7647,13985
 Mühlendorfstr.: Qualität?	? -7637,13822 -7630,13889 -7595,13963
@@ -4535,3 +4545,7 @@ Budapester Weg: Qualität? Nachts beleuchtet? Wo liegt der Weg genau? Ausschilder
 #: XXX fehlt in Berlin.coords.data
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/37re.pdf/file
 Elisabeth-Schwarzhaupt-Platz: liegt er an der Kreuzung Invalidenstr/Gartenstr?	? 9383,13978
+Wartenberger Str.: abknickende Vorfahrt?	? 17400,17790 17356,17856 17557,17999
+# 
+#: by: http://www.berlin.de/ba-steglitz-zehlendorf/presse/archiv/20101112.1040.318520.html
+Platz M: Wo genau befindet sich der "Platz M"? Ist der Platz ausgeschildert?	? 3366,5654

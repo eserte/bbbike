@@ -18529,4 +18529,41 @@ EOF
 userdel	2::inwork 43875,-35850 44731,-35697
 EOF
      },
+     { from  => 1290294000, # 2010-11-21 00:00
+       until => 1291503599, # 2010-12-04 23:59
+       text  => 'Vollsperrung Falkentaler Steig in Berlin-Reinickendorf aufgrund von Straßenbaumaßnahmen im Ausführungszeitraum 22.11. bis 04.12.2010',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20101117.1500.319282.html',
+       data  => <<EOF,
+userdel	q4::inwork 2492,24325 2708,24383
+userdel	q4::inwork 3367,23654 3311,23677 3235,23781 3161,23888 3012,24107
+EOF
+     },
+     { from  => 1290029417, # 2010-11-17 22:30
+       until => 1293836400, # 2011-01-01 00:00
+       text  => 'Bad Freienwalde (Oder): B167: Neubau Durchlass Brücke über die Feldbahn bei Bad Freienwalde (Höhe Recyclingzentrum), 17.11.2010 bis 31.12.2010',
+       type  => 'gesperrt',
+       source_id => 'LS/O-SG33-F/10/170',
+       data  => <<EOF,
+userdel	2::inwork 50799,43130 50169,43407
+EOF
+     },
+     { from  => 1289892300, # 2010-11-16 08:25
+       until => 1290780000, # 2010-11-26 15:00
+       text  => 'Wasserwerkstr. (Spandau): Baustelle, Straße vollständig gesperrt in beiden Richtungen zwischen Falkenseer Chaussee und Pionierstr., 17.11.2010 08:25 Uhr bis 26.11.2010 15:00 Uhr ',
+       type  => 'handicap',
+       source_id => 'IM_016640',
+       data  => <<EOF,
+userdel	q4::inwork -5806,16403 -5830,16356 -5849,16199 -5875,15994 -5911,15877
+EOF
+     },
+     { from  => 1290029645, # 2010-11-17 22:34
+       until => 1292713200, # 2010-12-19 00:00
+       text  => 'Wustermark: K6304: Straßenneubau OD Priort (zw. Kartzow und Priort), 15.11.2010 bis 18.12.2010',
+       type  => 'handicap',
+       source_id => '106300839',
+       data  => <<EOF,
+userdel	q4::inwork -19268,10819 -19323,11087 -19149,11495
+EOF
+     },
     );

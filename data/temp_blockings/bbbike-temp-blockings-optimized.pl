@@ -1590,16 +1590,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => '106401308',
-         'until' => 1289602800,
-         'text' => 'Buckow (Märkische Schweiz), Stadt: K6413: Deckenerneuerung, Instandsetzung Durchlässe Bollersdorf - Buckow, 08.07.2010 bis 12.11.2010 ',
-         'from' => 1278970058,
-         'id' => 2097,
-         'data' => 'userdel	q4::inwork 55377,20271 55292,20466 55207,20563 55131,20837
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1819,16 +1810,7 @@ userdel	3 13150,7254 13047,7234 13034,7319
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'INKO_104287',
-         'until' => 1289602799,
-         'text' => 'Friedrichstr. (Mitte) in beiden Richtungen zwischen Unter den Linden und Behrenstr. Baustelle, Fahrbahn gesperrt, Fußgänger können passieren (bis vorauss. 12.11.2010 20:00) ',
-         'from' => 1289373706,
-         'id' => 2155,
-         'data' => 'userdel	q4::inwork 9358,12351 9369,12253
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'source_id' => 'INKO_103947',
@@ -1841,16 +1823,7 @@ userdel	3 13150,7254 13047,7234 13034,7319
          'type' => 'handicap'
        },
        undef,
-       {
-         'source_id' => 'INKO_104132',
-         'until' => 1289790000,
-         'text' => 'Teltower Damm (Zehlendorf) in beiden Richtungen zwischen Anhaltinerstr. und Machnower Str. Geplant ab: 12.11.2010 18 Uhr, Baustelle, Straße vollständig gesperrt (Einbau einer Hilfsbrücke) (bis vorauss. 15.11.2010 04:00)',
-         'from' => 1289494800,
-         'id' => 2159,
-         'data' => 'userdel	2::inwork 749,2616 725,2702
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20101111.1155.318374.html',
          'until' => 1290186000,
@@ -1873,6 +1846,47 @@ userdel	q4::inwork 9268,11590 9058,11564 8733,11524
          'data' => 'userdel	2::inwork 43875,-35850 44731,-35697
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20101117.1500.319282.html',
+         'until' => 1291503599,
+         'text' => 'Vollsperrung Falkentaler Steig in Berlin-Reinickendorf aufgrund von Straßenbaumaßnahmen im Ausführungszeitraum 22.11. bis 04.12.2010',
+         'from' => 1290294000,
+         'id' => 2162,
+         'data' => 'userdel	q4::inwork 2492,24325 2708,24383
+userdel	q4::inwork 3367,23654 3311,23677 3235,23781 3161,23888 3012,24107
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'LS/O-SG33-F/10/170',
+         'until' => 1293836400,
+         'text' => 'Bad Freienwalde (Oder): B167: Neubau Durchlass Brücke über die Feldbahn bei Bad Freienwalde (Höhe Recyclingzentrum), 17.11.2010 bis 31.12.2010',
+         'from' => 1290029417,
+         'id' => 2163,
+         'data' => 'userdel	2::inwork 50799,43130 50169,43407
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_016640',
+         'until' => 1290780000,
+         'text' => 'Wasserwerkstr. (Spandau): Baustelle, Straße vollständig gesperrt in beiden Richtungen zwischen Falkenseer Chaussee und Pionierstr., 17.11.2010 08:25 Uhr bis 26.11.2010 15:00 Uhr ',
+         'from' => 1289892300,
+         'id' => 2164,
+         'data' => 'userdel	q4::inwork -5806,16403 -5830,16356 -5849,16199 -5875,15994 -5911,15877
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => '106300839',
+         'until' => 1292713200,
+         'text' => 'Wustermark: K6304: Straßenneubau OD Priort (zw. Kartzow und Priort), 15.11.2010 bis 18.12.2010',
+         'from' => 1290029645,
+         'id' => 2165,
+         'data' => 'userdel	q4::inwork -19268,10819 -19323,11087 -19149,11495
+',
+         'type' => 'handicap'
        }
      
 );
