@@ -1831,9 +1831,6 @@ userdel	3 13150,7254 13047,7234 13034,7319
          'from' => 1289800800,
          'id' => 2160,
          'data' => 'userdel	q4::inwork 3983,9343 4230,9229
-userdel	q4::inwork 12690,10062 12659,10119
-userdel	q4::inwork 12855,10035 12817,9964
-userdel	q4::inwork 9268,11590 9058,11564 8733,11524
 ',
          'type' => 'handicap'
        },
