@@ -818,7 +818,7 @@ EOF
        text  => 'Gleim-Tunnel: Baustelle, Straße vollständig gesperrt (bis 01.10.2004)',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 9917,15613 10122,15647
+userdel	2 9917,15613 9992,15625 10122,15647
 EOF
      },
      { from  => 1094421600, # 2004-09-06 00:00
@@ -1125,7 +1125,7 @@ EOF
        text  => 'Gleimstr. (Mitte) in beiden Richtungen zwischen Gleimtunnel und Graunstr. Baustelle, Straße vollständig gesperrt (bis 29.11.2004)',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 9917,15613 10122,15647
+userdel	2 9917,15613 9992,15625 10122,15647
 EOF
      },
      { from  => 1098828000, # 2004-10-27 00:00
@@ -4210,7 +4210,7 @@ EOF
        text  => 'Karlsruher Straße zwischen Kurfürstendamm und Heilbronner Straße, Baustelle, Straße gesperrt. Dauer: 19.04.2006 bis 21.04.2006 jeweils zwischen 07.00 Uhr und 20.00 Uhr ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 2965,10522 2938,10071
+userdel	2 2985,10534 2963,10078
 EOF
      },
      { from  => 1145343600, # 2006-04-18 09:00

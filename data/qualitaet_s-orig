@@ -581,8 +581,10 @@ Freiheit: Kopfsteinpflaster	Q2 22377,4836 22196,4847
 Schwedter Str. (Mauerpark): Kopfsteinpflaster	Q2 10336,14975 10238,15316 10186,15463 10122,15647
 Norwegerstr.: mäßiger Asphalt	Q1- 9967,16514 9975,16425
 Norwegerstr.: Asphalt	Q0 9975,16425 9996,16328 10022,16237
-Gleimtunnel: Kopfsteinpflaster (noch)	Q2 10122,15647 9917,15613
-Gleimstr: Kopfsteinpflaster (noch)	Q2 9917,15613 9734,15579
+#: note: public imagery
+Gleimtunnel: Fahrbahn Kopfsteinpflaster, Radwege asphaltiert	Q0 10122,15647 9992,15625
+#: by: http://www.flickr.com/photos/ametzelchen/5192911244/in/pool-1053396@N21/
+Gleimstr: Asphalt	Q0 9992,15625 9917,15613 9734,15579
 Nordufer: Asphalt	Q0 5618,14981 5937,14824 5991,14832
 Seydlitzstr.: Kopfsteinpflaster	Q2 7655,13539 7419,13416 7295,13346 7263,13331 7131,13261
 Stolzenfelsstr.: Verbundsteinpflaster	Q0- 18722,8582 18787,8540
@@ -1728,7 +1730,8 @@ Im Dol: Asphalt	Q0 1757,5976 1811,5973 1912,6024 1946,6042 2193,6214 2219,6231 2
 #: note: MichaelM meint "Beton"
 Elvirasteig: Asphalt	Q0 -1530,3323 -1495,3444 -1478,3498 -1468,3537 -1461,3569 -1444,3655 -1422,3785 -1409,3834 -1392,3915 -1360,4014 -1323,4111 -1278,4239 -1234,4341
 #: by: MichaelM
-Quermatenweg: Asphalt	Q0 -1096,4267 -1025,4422 -927,4638 -857,4725 -820,4772 -670,4903 -469,4995 -323,5031 -253,5049 -188,5061 -114,5077 -21,5099 103,5123
+#: corrected_by: srt (Asphalt -> Asphalt und Beton, siehe http://farm5.static.flickr.com/4144/5190716473_c6a9f95017.jpg)
+Quermatenweg: Asphalt und Beton	Q0 -1096,4267 -1025,4422 -927,4638 -857,4725 -820,4772 -670,4903 -469,4995 -323,5031 -253,5049 -188,5061 -114,5077 -21,5099 103,5123
 Matterhornstr: überwiegend guter Asphalt	Q0 -1155,3255 -1187,3264 -1360,3314 -1530,3323 -1628,3311 -1707,3313 -1782,3311 -1885,3319 -1981,3353 -2096,3402 -2137,3408 -2243,3371 -2350,3312 -2381,3297 -2529,3220 -2587,3185 -2642,3135 -2709,3104 -2867,3045 -3023,2965 -3118,2913 -3139,2900
 Altvaterstr.: schlechtes Kopfsteinpflaster	Q3 -2295,3523 -2446,3462 -2503,3447 -2560,3450 -2763,3359 -2920,3246
 Altvaterstr.: Asphalt	Q0 -2920,3246 -3032,3166 -3117,3107
@@ -5603,7 +5606,7 @@ Försterweg: Waldweg, etwas holprig	Q2 -1978,20928 -1968,20850 -1400,20615 -1253,
 #: by: hoffmannbeck:
 Rüdnitzer Zeile: mäßiger Beton	Q1 3581,20008 3513,19961 3402,20109 3331,20056
 #: by: Rita:
-Johann-Sigismund-Str.: mäßiges Kopfsteinpflaster	Q2 2898,9794 2938,9935 2963,10078
+Johann-Sigismund-Str.: mäßiges Kopfsteinpflaster	Q2 2898,9794 2938,9935 2985,10084
 #: by: S Breddermann:
 Ueckermünder Str.: Asphalt	Q0 9996,16328
 #: by: Werner Braun: vvv
