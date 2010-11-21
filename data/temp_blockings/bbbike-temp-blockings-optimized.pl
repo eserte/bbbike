@@ -504,7 +504,7 @@ push @temp_blocking,
          'text' => 'Weinmeisterstr. (Mitte) in Richtung Alexanderplatz gesperrt',
          'from' => undef,
          'id' => 1567,
-         'data' => '#: last_checked: 2010-09-23
+         'data' => '#: last_checked: 2010-11-19
 userdel	q4::inwork; 10350,13376 10527,13257
 ',
          'type' => 'gesperrt'
@@ -1802,8 +1802,8 @@ userdel	3 13150,7254 13047,7234 13034,7319
        },
        {
          'source_id' => 'IM_016620',
-         'until' => 1290351600,
-         'text' => 'Hönower Straße (Mahlsdorf): Baustelle, Fahrtrichtung gesperrt Richtung Hönow zwischen Fritz-Reuter-Str. und Linderhofstr., 08.11.2010 11:21 Uhr bis 21.11.2010 16:00 Uhr ',
+         'until' => 1290405600,
+         'text' => 'Hönower Straße (Mahlsdorf): Baustelle, Fahrtrichtung gesperrt Richtung Hönow zwischen Fritz-Reuter-Str. und Linderhofstr., 08.11.2010 11:21 Uhr bis 22.11.2010 07:00 Uhr ',
          'from' => 1289125260,
          'id' => 2154,
          'data' => 'userdel	q4::inwork; 24556,12172 24530,12296
@@ -1824,26 +1824,8 @@ userdel	3 13150,7254 13047,7234 13034,7319
        },
        undef,
        undef,
-       {
-         'source_id' => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20101111.1155.318374.html',
-         'until' => 1290186000,
-         'text' => 'Ruhrstraße zwischen Konstanzer Straße und Hohenzollerndamm wird ab Montag, dem 15.11. bis Freitag, dem 19.11.2010 instandgesetzt, Vollsperrung ',
-         'from' => 1289800800,
-         'id' => 2160,
-         'data' => 'userdel	q4::inwork 3983,9343 4230,9229
-',
-         'type' => 'handicap'
-       },
-       {
-         'source_id' => 'LS/S-SG33-W/10/146',
-         'until' => 1290293999,
-         'text' => 'Unterspreewald: B179: Brückenneubau Bauwerk 502 Brücke über die alte Spree bei Leibsch ab 16.11.-20.11.10 Vollsperrung ',
-         'from' => 1289775600,
-         'id' => 2161,
-         'data' => 'userdel	2::inwork 43875,-35850 44731,-35697
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        {
          'source_id' => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20101117.1500.319282.html',
          'until' => 1291503599,
@@ -1884,6 +1866,16 @@ userdel	q4::inwork 3367,23654 3311,23677 3235,23781 3161,23888 3012,24107
          'data' => 'userdel	q4::inwork -19268,10819 -19323,11087 -19149,11495
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_016647',
+         'until' => 1290396600,
+         'text' => 'Oberspreestr. (Köpenick): Baustelle, Straße vollständig gesperrt, in beiden Richtungen zwischen Bruno-Bürgel-Weg und Moosstr., 19.11.2010 22:00 Uhr bis 22.11.2010 04:30 Uhr ',
+         'from' => 1290114000,
+         'id' => 2166,
+         'data' => 'userdel	2::inwork 19328,5304 19405,5284 19445,5271
+',
+         'type' => 'gesperrt'
        }
      
 );

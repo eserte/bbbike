@@ -13282,7 +13282,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_011184',
        data  => <<EOF,
-#: last_checked: 2010-09-23
+#: last_checked: 2010-11-19
 userdel	q4::inwork; 10350,13376 10527,13257
 EOF
      },
@@ -18455,8 +18455,8 @@ userdel	q4::inwork -7750,-2431 -7909,-2375 -7996,-2293
 EOF
      },
      { from  => 1289125260, # 2010-11-07 11:21
-       until => 1290351600, # 2010-11-21 16:00
-       text  => 'Hönower Straße (Mahlsdorf): Baustelle, Fahrtrichtung gesperrt Richtung Hönow zwischen Fritz-Reuter-Str. und Linderhofstr., 08.11.2010 11:21 Uhr bis 21.11.2010 16:00 Uhr ',
+       until => 1290405600, # 2010-11-22 07:00
+       text  => 'Hönower Straße (Mahlsdorf): Baustelle, Fahrtrichtung gesperrt Richtung Hönow zwischen Fritz-Reuter-Str. und Linderhofstr., 08.11.2010 11:21 Uhr bis 22.11.2010 07:00 Uhr ',
        type  => 'handicap',
        source_id => 'IM_016620',
        data  => <<EOF,
@@ -18561,6 +18561,15 @@ EOF
        source_id => '106300839',
        data  => <<EOF,
 userdel	q4::inwork -19268,10819 -19323,11087 -19149,11495
+EOF
+     },
+     { from  => 1290114000, # 2010-11-18 22:00
+       until => 1290396600, # 2010-11-22 04:30
+       text  => 'Oberspreestr. (Köpenick): Baustelle, Straße vollständig gesperrt, in beiden Richtungen zwischen Bruno-Bürgel-Weg und Moosstr., 19.11.2010 22:00 Uhr bis 22.11.2010 04:30 Uhr ',
+       type  => 'gesperrt',
+       source_id => 'IM_016647',
+       data  => <<EOF,
+userdel	2::inwork 19328,5304 19405,5284 19445,5271
 EOF
      },
     );

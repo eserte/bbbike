@@ -106,7 +106,8 @@ Annenstr./Heinrich-Heine-Platz	?::projected 11349,11227 11249,11268 11091,11379 
 #: by: Tagesspiegel vom 2009-04-12, soll 2009 realisiert werden
 #: corrected_by: MoPo 2009-08-01, soll 2010 realisiert werden
 # auch im Tsp vom 2010-03-26 erwähnt
-#: next_check: 2010-06-01
+#: next_check: 2011-02-01
+#: last_checked: 2010-11-19
 Müllerstr./Chausseestr.	?::projected 8346,14576 8286,14635 8246,14675 8153,14769 8138,14786 8057,14876
 #
 #: by: Tagesspiegel vom 2009-04-12, soll 2009 realisiert werden
@@ -378,8 +379,8 @@ Wilhelm-Kabus-Str./Naumannstr.: Ampelanlage in Bau	?::inwork 7725,8033
 #: next_check: 2011-12-31
 Verbindung zwischen Leuthener Platz und General-Pape-Str. (evtl. mit Verlängerung) inkl. Brücke über die Bahnstrecke für Fußgänger und Radfahrer (4m breit), Realisierung bis 2011-12-31	?::projected 7716,8356 7837,8354 7893,8327 8088,8283
 # 
-#: last_checked: 2010-10-29
-#: next_check: 2010-12-31
+#: last_checked: 2010-11-19
+#: next_check: 2011-01-15
 Verbindung zwischen Leuthener Platz und General-Pape-Str. (evtl. mit Verlängerung) inkl. Brücke über die Bahnstrecke für Fußgänger und Radfahrer (4m breit), Realisierung bis 2011-12-31	?::projected 8088,8283 8264,8289
 # 
 #: by: (URL existiert nicht mehr) http://www.berlin.de/ba-steglitz-zehlendorf/presse/archiv/20060109.1050.33932.html
@@ -528,7 +529,6 @@ Route Lychen - Templin: wie sieht der Routenverlauf aus? Qualität?	? 2480,89399 
 Runebergweg/Sibeliusweg: Runebergweg hat starkes Gefälle und Sibeliusweg hat leichtes Gefälle, aber laut hm96.dat sieht es andersrum aus --- da muss ich mit Höhenmesser langfahren	? -6904,5175 -6747,5169 -6787,5076
 #: XXX_prog: Drängelgitter auch auf dem Mittelstreifen Sonnenallee. Kann zurzeit nicht dargestellt werden.
 Drängelgitter	? 15496,6314 15504,6328 15516,6357
-Saaleckplatz: genauer einzeichnen, Qualität?	? 5167,1116 5162,1100 5190,1053 5217,1068 5186,1117
 #: XXX_indoor:
 Arkonaplatz: Markt, zumindest sonntags, vielleicht auch an anderen Tagen?	? 10228,14564 10189,14649
 #: section ^^^
@@ -1704,8 +1704,10 @@ Happestr.: Qualität?	? 10955,-769 10953,-812 10968,-987 10976,-1070
 Schumpeterstr.: Qualität? Ist die Straße eine Spielstraße?	? 10979,-1093 10993,-1256 11003,-1303
 Happestr. - Schumpeterstr.: Gibt es für Radfahrer eine Verbindung?	? 10976,-1070 10979,-1093
 Weißenthurmstr.: Qualität?	? 10968,-987 11120,-976
-#: XXX der anonyme Eintrag meinte bestimmt die in Kreuzberg
-Großbeerenstr. (Lichterfelde): Qualität?	? 4939,1148 5050,1133 5167,1116
+#: XXX möglicherweise betoniert (public imagery)
+Großbeerenstr. (Lichterfelde): Qualität?	? 4939,1148 5050,1133
+#: XXX möglicherweise Kopfsteinpflaster (public imagery)
+Großbeerenstr. (Lichterfelde): Qualität?	? 5050,1133 5162,1110
 Smyrnaer Weg: Qualität?	? 10248,3897 10348,3888
 Hollabergweg (Marienfelde): Qualität?	? 9140,1255 9236,1484 9351,1745
 Annenstr. (Biesdorf): Qualität?	? 20371,14204 20467,14196
@@ -1771,6 +1773,7 @@ Röthspitzenweg: Qualität?	? 9867,3092 9891,3203 9911,3310
 Hoeftweg: Qualität?	? 9675,3150 9683,3185 9655,3270 9701,3357
 Marconistr.: Qualität?	? 9125,3435 9032,3447
 Straße 7 (Mariendorf): Qualität?	? 9208,4215 9197,4315
+#: XXX laut öffentlichen Fotos betoniert
 Kochstr. (Mariendorf): Qualität?	? 8962,4590 8972,4505
 #: note: kein offizieller Straßenname, nachts unbeleuchtet
 Reulestr. - Kochstr.: Durchfahrt für Radfahrer möglich? Qualität?	? 8858,4579 8962,4590
@@ -2551,7 +2554,6 @@ Seddinpromenade: Qualität?	? 28000,-3147 28013,-3048
 Seddinpromenade: Qualität?	? 28856,-2813 28734,-2838 28678,-2814 28596,-2844 28535,-2834 28397,-2913 28241,-3045 28053,-3065 28013,-3048 27891,-2988 27837,-2991 27804,-3064 27749,-3120
 Seddinhütte: Qualität?	? 27891,-2988 27901,-2972
 Im Eulengrund: Qualität?	? -5336,6834 -5202,7045 -5163,7090 -5014,7295
-Karlsbergallee: Qualität?	? -4806,6901 -4787,6927 -4741,7003 -4674,7094
 Alt-Gatow: Qualität der Abzweigung Am Wiesenhaus?	? -4578,8336 -4509,8385 -4494,8411 -4504,8457 -4540,8535
 Am Wiesenhaus: Qualität?	? -4509,8385 -4383,8380
 Weiter Blick: Qualität?	? -4680,8340 -5093,8398 -5266,8424
@@ -3082,6 +3084,7 @@ Pfarrhufenweg: Qualität?	? 25601,13058 25681,13163
 Feldrain: Qualität?	? 25666,13725 25607,13459 25609,13225 25681,13163 25730,13130
 #: XXX benötigt Eintrag in str_cont_ausnahme, evtl. gibt es einen Pfad für Fußgänger/Radfahrer zwischen beiden Teilen
 Marderweg: Qualität?	? 25708,13310 25723,13328 25718,13356 25729,13415 25751,13456
+#: XXX dieser Abschnitt ist unbefestigt (by public imagery)
 Marderweg: Qualität?	? 25872,13191 25817,13235
 Hermelinweg: Qualität?	? 25515,13769 25591,14042
 Altonaer Str. (Mahlsdorf): Qualität?	? 26363,13277 26267,13363 26190,13426 26120,13486
@@ -3315,6 +3318,7 @@ Flottbeker Weg: Qualität?	? -6438,14094 -6261,14123
 Neue Str. (Staaken): Qualität?	? -6413,14010 -6245,14037
 Haberlandweg: Qualität?	? -6610,13840 -6604,13770 -6561,13615
 Nordenhamer Str.: Qualität?	? -4170,13809 -4182,13691
+#: XXX möglicherweise Beton, nochmal prüfen
 Borkumer Str.: Qualität des westlichen Abschnitts?	? -3965,13870 -3849,13848
 Jadeweg: Qualität? Einbahnstraße?	? -4011,13656 -3878,13636 -3850,13756
 Stritteweg: Qualität? Sind Teile der Straße für Autos gesperrt?	? -5202,11347 -5223,11250 -5229,11230 -5236,11204 -5259,11135
@@ -3471,10 +3475,8 @@ Hochbergplatz: Qualität? Gibt es hier eine Einbahnstraßenregelung?	? 4818,2279 4
 Blaumeisenweg: Qualität? Einbahnstraßenregelung?	? 5251,1543 5194,1690
 #: XXX_osm bei osm falsch geschrieben
 Schöffenstr.: Qualität? Wo genau geht die Schöffenstr. in die Lange Straße über?	? 5048,1651 5132,1672 5194,1690 5261,1718
-An der Schäferei: Qualität?	? 5678,1674 5752,1856
 Draisweg: Qualität?	? 5364,1049 5408,1076 5493,935
 Jenbacher Weg: geht der Jenbacher Weg bis zur Osdorfer Str. weiter?	? 5671,52 5415,-113
-Brüderstr. (Lichterfelde): Qualität?	? 3061,3695 3193,3793
 Dorstener Str.: Qualität? Einbahnstraßenregelung?	? 3691,566 3590,644
 #: XXX_osm fehlt bei osm
 Ellen-Widmann-Pfad: Existiert die Straße schon? Qualität? Wo liegt die Straße genau?	? 3750,2285 3830,2285
@@ -3513,7 +3515,6 @@ Fichtengrund: Qualität? Heißt die Straße tatsächlich so? Oder noch "An den Siedl
 Götzkeweg: Qualität?	? 27319,13589 27414,13508
 Kötteritzweg: Qualität?	? 27063,13479 27141,13394 27190,13327 27217,13287
 Simrockplatz: Qualität?	? 24606,12856 24669,12966
-Stettiner Str. (Mahlsdorf): Qualität?	? 26847,14002 26615,14054
 #: XXX laut osm track grade2
 Am Bachrain: Qualität?	? 23813,12534 23816,12615 23781,12698 23714,12756 23669,12772 23578,12768 23513,12733 23452,12663
 Im Augarten: Qualität?	? 23503,12644 23553,12703 23649,12724 23695,12708 23755,12642 23766,12551
@@ -4103,8 +4104,6 @@ Arkenberger Damm: Qualität?	? 12396,25478 12324,25514 11964,25488 11871,25582
 #: XXX kommt man überhaupt auf die Insel rauf?
 Straße 31 (Rahnsdorf): Qualität? Genaue Lage?	? 29616,3070 29338,3219
 #: XXX_osm fehlt bei osm
-Straße 89 (Niederschönhausen): Qualität?	? 8606,20063 8703,19917
-#: XXX_osm fehlt bei osm
 Straße 87 (Blankenburg): Qualität?	? 13441,22298 13476,22345
 #: XXX_osm bei osm ohne Namen
 Straße 73 (Niederschönhausen): Qualität?	? 9453,19383 9458,19329
@@ -4549,3 +4548,4 @@ Wartenberger Str.: abknickende Vorfahrt?	? 17400,17790 17356,17856 17557,17999
 # 
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/presse/archiv/20101112.1040.318520.html
 Platz M: Wo genau befindet sich der "Platz M"? Ist der Platz ausgeschildert?	? 3366,5654
+Fahrenheitstr. - Celsiusstr.: Existiert eine Durchfahrt für Radfahrer? Qualität?	? 4510,669 4436,621

@@ -753,7 +753,8 @@ Happestr.: Qualität?	? 10955,-769 10953,-812 10968,-987 10976,-1070
 Schumpeterstr.: Qualität? Ist die Straße eine Spielstraße?	? 10979,-1093 10993,-1256 11003,-1303
 Happestr. - Schumpeterstr.: Gibt es für Radfahrer eine Verbindung?	? 10976,-1070 10979,-1093
 Weißenthurmstr.: Qualität?	? 10968,-987 11120,-976
-Großbeerenstr. (Lichterfelde): Qualität?	? 4939,1148 5050,1133 5167,1116
+Großbeerenstr. (Lichterfelde): Qualität?	? 4939,1148 5050,1133
+Großbeerenstr. (Lichterfelde): Qualität?	? 5050,1133 5162,1110
 Smyrnaer Weg: Qualität?	? 10248,3897 10348,3888
 Hollabergweg (Marienfelde): Qualität?	? 9140,1255 9236,1484 9351,1745
 Annenstr. (Biesdorf): Qualität?	? 20371,14204 20467,14196
@@ -1496,7 +1497,6 @@ Seddinpromenade: Qualität?	? 28000,-3147 28013,-3048
 Seddinpromenade: Qualität?	? 28856,-2813 28734,-2838 28678,-2814 28596,-2844 28535,-2834 28397,-2913 28241,-3045 28053,-3065 28013,-3048 27891,-2988 27837,-2991 27804,-3064 27749,-3120
 Seddinhütte: Qualität?	? 27891,-2988 27901,-2972
 Im Eulengrund: Qualität?	? -5336,6834 -5202,7045 -5163,7090 -5014,7295
-Karlsbergallee: Qualität?	? -4806,6901 -4787,6927 -4741,7003 -4674,7094
 Alt-Gatow: Qualität der Abzweigung Am Wiesenhaus?	? -4578,8336 -4509,8385 -4494,8411 -4504,8457 -4540,8535
 Am Wiesenhaus: Qualität?	? -4509,8385 -4383,8380
 Weiter Blick: Qualität?	? -4680,8340 -5093,8398 -5266,8424
@@ -2257,10 +2257,8 @@ Hochbergweg: Qualität?	? 4796,2271 4714,2285
 Hochbergplatz: Qualität? Gibt es hier eine Einbahnstraßenregelung?	? 4818,2279 4824,2266 4813,2256 4803,2257 4796,2271 4803,2280 4818,2279
 Blaumeisenweg: Qualität? Einbahnstraßenregelung?	? 5251,1543 5194,1690
 Schöffenstr.: Qualität? Wo genau geht die Schöffenstr. in die Lange Straße über?	? 5048,1651 5132,1672 5194,1690 5261,1718
-An der Schäferei: Qualität?	? 5678,1674 5752,1856
 Draisweg: Qualität?	? 5364,1049 5408,1076 5493,935
 Jenbacher Weg: geht der Jenbacher Weg bis zur Osdorfer Str. weiter?	? 5671,52 5415,-113
-Brüderstr. (Lichterfelde): Qualität?	? 3061,3695 3193,3793
 Dorstener Str.: Qualität? Einbahnstraßenregelung?	? 3691,566 3590,644
 Ellen-Widmann-Pfad: Existiert die Straße schon? Qualität? Wo liegt die Straße genau?	? 3750,2285 3830,2285
 Ines-Bolla-Pfad: Existiert die Straße schon? Qualität? Wo liegt die Straße genau?	? 3747,2335 3854,2332
@@ -2288,7 +2286,6 @@ Fichtengrund: Qualität? Heißt die Straße tatsächlich so? Oder noch "An den Siedl
 Götzkeweg: Qualität?	? 27319,13589 27414,13508
 Kötteritzweg: Qualität?	? 27063,13479 27141,13394 27190,13327 27217,13287
 Simrockplatz: Qualität?	? 24606,12856 24669,12966
-Stettiner Str. (Mahlsdorf): Qualität?	? 26847,14002 26615,14054
 Am Bachrain: Qualität?	? 23813,12534 23816,12615 23781,12698 23714,12756 23669,12772 23578,12768 23513,12733 23452,12663
 Im Augarten: Qualität?	? 23503,12644 23553,12703 23649,12724 23695,12708 23755,12642 23766,12551
 Am Wiesenhang: Qualität?	? 23550,12627 23582,12661 23633,12674 23678,12659 23713,12613 23713,12569
@@ -2773,7 +2770,6 @@ Rockenhausener Str.: Qualität?	? -4338,15137 -4244,15127
 Am Posseberg: Qualität?	? 12632,25569 12436,25580 12396,25478 12138,24989 12261,24851
 Arkenberger Damm: Qualität?	? 12396,25478 12324,25514 11964,25488 11871,25582
 Straße 31 (Rahnsdorf): Qualität? Genaue Lage?	? 29616,3070 29338,3219
-Straße 89 (Niederschönhausen): Qualität?	? 8606,20063 8703,19917
 Straße 87 (Blankenburg): Qualität?	? 13441,22298 13476,22345
 Straße 73 (Niederschönhausen): Qualität?	? 9453,19383 9458,19329
 Straße 39 (Blankenburg): Qualität?	? 15114,21034 15138,21002 15052,20725 15018,20624
@@ -3076,6 +3072,7 @@ Budapester Weg: Qualität? Nachts beleuchtet? Wo liegt der Weg genau? Ausschilder
 Elisabeth-Schwarzhaupt-Platz: liegt er an der Kreuzung Invalidenstr/Gartenstr?	? 9383,13978
 Wartenberger Str.: abknickende Vorfahrt?	? 17400,17790 17356,17856 17557,17999
 Platz M: Wo genau befindet sich der "Platz M"? Ist der Platz ausgeschildert?	? 3366,5654
+Fahrenheitstr. - Celsiusstr.: Existiert eine Durchfahrt für Radfahrer? Qualität?	? 4510,669 4436,621
 # added from ampeln-orig
 geschlossen bei Bedarf (?) (Zbr)	? 27657,-11741
 S-Bahn alle 20 Minuten, Regionalbahn halbstündlich (?) (B)	? 40248,14503
@@ -3172,7 +3169,7 @@ Müncheberg, Turm (genaue Bezeichnung?)	? 60306,11906
 Edelhofdamm: Kopfsteinpflaster (Kopfsteinpflaster zwischen Oranienburger Chaussee und Enkircher Straße?)	? 3463,25611 3273,25516 3171,25495
 Zepernicker Str: Kopfsteinpflaster, OK (Wie ist das Kopfsteinpflaster in der Zepernicker Str.: gut oder mäßig?)	? 17218,26121 17013,25874
 An der Nordbahn: mäßiges Pflaster (?) (Wie genau ist die Fahrbahnbeschaffenheit hier (Asphalt, Beton, Kopfsteinpflaster, ...)?)	? 6669,20129 6365,20402
-Dorfstr.: schlechtes Kopfsteinpflaster (Hat die Dorfstr. noch immer schlechtes Kopfsteinpflaster oder ist sie mittlerweile asphaltiert?)	? 22496,11474 22469,11627 22313,11688
+Dorfstr.: schlechtes Kopfsteinpflaster (Hat die Dorfstr. noch immer schlechtes Kopfsteinpflaster oder ist sie mittlerweile asphaltiert?)	? 22506,11445 22496,11474 22469,11627 22313,11688
 Dorfstr.: schlechtes Kopfsteinpflaster (Hat die Dorfstr. noch immer schlechtes Kopfsteinpflaster oder ist sie mittlerweile asphaltiert?)	? 22260,11742 22313,11688 22496,11474
 Dorfstr.: Kopfsteinpflaster (Hat die Dorfstr. noch immer Kopfsteinpflaster oder ist sie mittlerweile asphaltiert?)	? 22260,11742 22149,11870 22112,11936 22140,11958
 Parforceweg: Waldweg? (Ist der Parforceweg ein "gewöhnlicher" Waldweg?)	? -643,7252 -728,7310 -1008,7427 -1142,7493 -1308,7558 -1328,7597 -1787,7932 -1843,8128 -2028,8270 -2078,8217 -2117,8204 -2156,8208 -2294,8232 -2386,8282

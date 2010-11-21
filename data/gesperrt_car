@@ -349,13 +349,13 @@ Travemünder Str. -> Osloer Str.: Osloer Str.	3::igndisp 8659,16494 8759,16684 87
 Travemünder Str. -> Pankeweg, teilweise als Walter-Nicklitz-Promenade gekennzeichnet: Osloer Str.	3::igndisp 8659,16494 8759,16684 8776,16718
 Osloer Str. -> Travemünder Str.: Osloer Str.	3::igndisp 8939,16668 8759,16684 8759,16665
 Osloer Str. -> Travemünder Str.: Osloer Str.	3::igndisp 8939,16668 8759,16684 8659,16494
-Müllerstr./Lindower Str.	3nocross::ignrte 7929,15006 7754,15160 7611,15286
+Müllerstr./Lindower Str.	3nocross::ignrte 7929,15006 7819,15103 7754,15160 7611,15286
 Lynarstr. -> Müllerstr.: Müllerstr./Lindower Str.	3::igndisp 7629,15078 7754,15160 7611,15286
 Lynarstr. -> Lindower Str.: Müllerstr./Lindower Str.	3::igndisp 7629,15078 7754,15160 7953,15362
 Müllerstr. -> Lindower Str.: Müllerstr./Lindower Str.	3::igndisp 7611,15286 7754,15160 7953,15362
-Müllerstr. -> Lynarstr.: Müllerstr./Lindower Str.	3::igndisp 7929,15006 7754,15160 7629,15078
 Lindower Str. -> Lynarstr.: Müllerstr./Lindower Str.	3::igndisp 7953,15362 7754,15160 7629,15078
-Lindower Str. -> Müllerstr.: Müllerstr./Lindower Str.	3::igndisp 7953,15362 7754,15160 7929,15006
+Lindower Str. -> Müllerstr.: Müllerstr./Lindower Str.	3::igndisp 7953,15362 7754,15160 7819,15103
+Müllerstr. -> Lynarstr.: Müllerstr./Lindower Str.	3::igndisp 7819,15103 7754,15160 7629,15078
 Adolfstr.	1 7796,15590 7817,15418
 Mimosenweg	2 17668,2187 17657,2213
 Straßenbahntrasse	3nocross::ignrte 14621,16563 14619,16672 14619,16682 14608,16772 14559,16912
@@ -1077,3 +1077,6 @@ Passauer -> Lietzenburger	3 6033,10403 6020,10351 6147,10383
 Am Hanffgraben	1 16805,1488 16698,1392
 Rütlistr.: Durchfahrt verboten	2 12565,9200 12490,9056
 Wustermarker Str.:	1 -4385,14305 -4556,14349
+Berliner Str.	3nocross::ignrte 10859,17854 10871,17722 10892,17491
+Borkumstr. -> Berliner Str.: Berliner Str.	3::igndisp 10956,17735 10871,17722 10892,17491
+Berliner Str. -> Borkumstr.: Berliner Str.	3::igndisp 10859,17854 10871,17722 10956,17735
