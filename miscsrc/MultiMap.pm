@@ -26,6 +26,7 @@ use vars qw(%images);
 
 sub register {
     _create_images();
+    my $lang = $Msg::lang || 'de';
     # this order will be reflected in show_info
     $main::info_plugins{__PACKAGE__ . "_DeinPlan"} =
 	{ name => "Pharus (dein-plan)",
@@ -62,10 +63,16 @@ sub register {
 	      ($images{ClickRoute} ? (icon => $images{ClickRoute}) : ()),
 	    };
     }
+    $main::info_plugins{__PACKAGE__ . "_OpenStreetMap_Marker"} =
+	{ name => "OpenStreetMap " . ($lang eq 'de' ? '(mit Marker)' : '(with marker)'),
+	  callback => sub { showmap_openstreetmap(osmmarker => 1, @_) },
+	  callback_3_std => sub { showmap_url_openstreetmap(osmmarker => 1, @_) },
+	  ($images{OpenStreetMap} ? (icon => $images{OpenStreetMap}) : ()),
+	};
     $main::info_plugins{__PACKAGE__ . "_OpenStreetMap"} =
-	{ name => "OpenStreetMap",
-	  callback => sub { showmap_openstreetmap(@_) },
-	  callback_3_std => sub { showmap_url_openstreetmap(@_) },
+	{ name => "OpenStreetMap " . ($lang eq 'de' ? '(ohne Marker)' : '(without marker)'),
+	  callback => sub { showmap_openstreetmap(osmmarker => 0, @_) },
+	  callback_3_std => sub { showmap_url_openstreetmap(osmmarker => 0, @_) },
 	  ($images{OpenStreetMap} ? (icon => $images{OpenStreetMap}) : ()),
 	};
     $main::info_plugins{__PACKAGE__ . "_MapCompare"} =
@@ -546,10 +553,12 @@ sub showmap_url_openstreetmap {
 
     my $px = $args{px};
     my $py = $args{py};
+    my $with_marker = $args{osmmarker};
+    my $mpfx = $with_marker ? 'm' : ''; # "marker prefix"
 
     my $scale = 17 - log(($args{mapscale_scale})/3000)/log(2);
-    sprintf "http://www.openstreetmap.org/index.html?lat=%s&lon=%s&zoom=%d",
-	$py, $px, $scale;
+    sprintf "http://www.openstreetmap.org/index.html?%slat=%s&%slon=%s&zoom=%d",
+	$mpfx, $py, $mpfx, $px, $scale;
 }
 
 sub showmap_openstreetmap {
