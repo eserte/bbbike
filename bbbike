@@ -10950,7 +10950,8 @@ sub show_blockings {
 	$blockings_toplevel = $toplevel{'temp_blockings'};
 	$_->destroy for ($blockings_toplevel->children);
     }
-    $blockings_toplevel->geometry(int($top->screenwidth*0.7)."x200");
+    my $toplevel_width = int($top->screenwidth*0.7);
+    $blockings_toplevel->geometry($toplevel_width."x200");
 
     # priority
     my $footer = $blockings_toplevel->Frame->pack(qw(-fill x -side bottom));
@@ -10988,31 +10989,41 @@ sub show_blockings {
 	$hl->headerCreate(1, -text => M"Sperrung");
 	$hl->headerCreate(2, -text => M"Dauer");
 	$hl->columnWidth(0, 80);
+	my $descr_width = $toplevel_width - 200;
+	$hl->columnWidth(1, $descr_width);
 
 	require Tk::ItemStyle;
-	my $header_style = $hl->ItemStyle('text', -foreground => 'blue3');
-	my $nopad_style = $hl->ItemStyle('window', -pady => 0, -padx => 0);
+	my(%header_style, %nopad_style, %descr_style, %text_style, %bg_color);
+	for my $key (qw(odd even)) {
+	    my $bg_color = $key eq 'even' ? $hl->cget('-background') : '#dddddd';
+	    $bg_color{$key} = $bg_color;
+	    $header_style{$key} = $hl->ItemStyle('text', -foreground => 'blue3', -font => $font{'bold'}, -background => $bg_color);
+	    $nopad_style{$key} = $hl->ItemStyle('window', -anchor => 'nw', -pady => 0, -padx => 0); # no -background available here
+	    $descr_style{$key} = $hl->ItemStyle('text', -wraplength => $descr_width-4, -anchor => 'nw', -background => $bg_color);
+	    $text_style{$key} = $hl->ItemStyle('text', -background => $bg_color);
+	}
 
 	my %seen_temp_blockings_on_route;
 	my $path_i = 0;
 
 	my $add_line = sub {
 	    my($name, $index) = @_;
-	    $hl->add($path_i, -itemtype => 'window', -style => $nopad_style,
+	    my $key = $path_i % 2 == 0 ? 'even' : 'odd';
+	    $hl->add($path_i, -itemtype => 'window', -style => $nopad_style{$key},
 		     -widget => $hl->Checkbutton(-variable => \$temp_blockings_on_route_active{$name},
 						 -onvalue => 1,
 						 -offvalue => 0,
-						 -background => $hl->cget('-background'),
+						 -background => $bg_color{$key},
 						 -highlightthickness => 0,
 						),
 		     (defined $index ? (-data => $index) : ()),
 		    );
 	    if (my($desc, $date_spec) = $name =~ m{^(.*)\s\[(.*?)\]$}) {
-		$hl->itemCreate($path_i, 1, -text => $desc);
-		$hl->itemCreate($path_i, 2, -text => $date_spec);
+		$hl->itemCreate($path_i, 1, -text => $desc, -style => $descr_style{$key});
+		$hl->itemCreate($path_i, 2, -text => $date_spec, -style => $text_style{$key});
 	    } else {
 		warn "Could not parse '$name'";
-		$hl->itemCreate($path_i, 1, -text => $name);
+		$hl->itemCreate($path_i, 1, -text => $name, -style => $descr_style{$key});
 	    }
 	    $path_i++;
 	};
@@ -11028,8 +11039,11 @@ sub show_blockings {
 	for my $name (@temp_blockings_on_route_active) {
 	    next if $seen_temp_blockings_on_route{$name};
 	    if (!$not_used_header_shown) {
+		my $key = $path_i % 2 == 0 ? 'even' : 'odd';
 		$hl->add($path_i);
-		$hl->itemCreate($path_i, 1, -text => "Bereits aktivierte Sperrungen", -style => $header_style);
+		$hl->itemCreate($path_i, 0, -style => $text_style{$key});
+		$hl->itemCreate($path_i, 1, -text => "Bereits aktivierte Sperrungen", -style => $header_style{$key});
+		$hl->itemCreate($path_i, 2, -style => $text_style{$key});
 		$path_i++;
 		$not_used_header_shown++;
 	    }
