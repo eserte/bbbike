@@ -10914,12 +10914,20 @@ sub check_path_in_blockings_net_continue {
 	if (exists $net->{$xy0} && exists $net->{$xy0}{$xy1}) {
 	    my($pos) = $current_temp_blockings_net->net2name($xy0, $xy1);
 	    if (defined $pos) {
-		my $r   = $current_temp_blockings_ms->get($pos);
-		my $dir = $current_temp_blockings_ms->get_directives($pos);
-		if (!$temp_blockings_on_route{$r->[Strassen::NAME]}) {
-		    push @temp_blockings_on_route, $r->[Strassen::NAME];
+		my $r = $current_temp_blockings_ms->get($pos);
+		my $blocking_text = $r->[Strassen::NAME];
+		if (!exists $temp_blockings_on_route{$blocking_text}) {
+		    push @temp_blockings_on_route, $blocking_text;
 		}
-		push @{ $temp_blockings_on_route{$r->[Strassen::NAME]} }, [$r, $dir];
+		$current_temp_blockings_ms->init;
+		while() {
+		    my $r = $current_temp_blockings_ms->next;
+		    my @c = @{ $r->[Strassen::COORDS] };
+		    last if !@c;
+		    if ($r->[Strassen::NAME] eq $blocking_text) {
+			push @{ $temp_blockings_on_route{$blocking_text} }, [$r];
+		    }
+		}
 	    }
 	}
     }
