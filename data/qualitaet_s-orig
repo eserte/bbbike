@@ -1573,7 +1573,9 @@ Brommystr.: Kopfsteinpflaster	Q2 12521,11016 12582,11103
 (Fischzug - Uferweg): Holzbohlenweg	Q1 15219,10079 15260,10048
 (Strela-Park): Parkweg	Q1 15400,9742 15465,9860
 #: confirmed_by: anonymous (for Fischerhüttenstr. und Beerenstr., "zeimlich schlecht", but q1?)
-Busseallee: Kopfsteinpflaster	Q2 161,3062 71,3179 -5,3286 -156,3522 -219,3619
+Busseallee: Kopfsteinpflaster	Q2 161,3062 71,3179
+#: note: public imagery
+Busseallee: Asphalt	Q0 71,3179 -5,3286 -156,3522 -219,3619
 Hallesches Tor: Beton	Q0 9593,10238 9599,10175
 Bebelplatz: Kopfsteinpflaster, OK	Q1 9795,12293 9869,12297
 Metzer Str.: Kopfsteinpflaster	Q2 10933,14122 11016,14081 11160,14002 11389,13887
@@ -2104,7 +2106,10 @@ Mauerweg Lichterfelde: sehr guter Asphalt	Q0 4038,-362 4046,-299 4034,-255 3982,
 Mauerweg Lichterfelde: Asphalt mit Fugen	Q1 4038,-362 4406,-910
 Alexanderufer: Asphalt	Q0 8321,13033 8315,13181 8314,13323
 Alexanderufer: Asphalt	Q0 8314,13323 8356,13404 8365,13431 8354,13523 8337,13541
-Koppenstr.: Asphalt mit Schäden	Q1+ 12525,12151 12575,12223 12606,12471
+#: XXX Bauarbeiten, danach wahrscheinlich Q0
+#: last_checked: 2010-11-23
+Koppenstr.: Asphalt mit Schäden	Q1+ 12525,12151 12575,12223
+Koppenstr.: Asphalt mit Schäden	Q1+ 12575,12223 12606,12471
 #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/de/bild_tvo_april_2007_2.shtml
 (Weg unterhalb der Spindlersfelder Str.): Verbundsteinpflaster	Q0- 21089,4731 21146,4229 21170,4111 21260,3848 21324,3691
 #: by: http://www.reinickendorf.de/index_7745_de.html
@@ -4903,7 +4908,10 @@ Thomas-Mann-Str.: Asphalt	Q0 13101,15191 13132,15239 13240,15408
 Löwensteinring: Asphalt	Q0 14812,2661 14599,2451 14497,2486 14483,2500 14411,2568 14407,2746 14500,2864
 Dusekestr.: mäßiger Beton	Q2+ 10473,18113 10498,18014 10479,18007 10525,17862 10548,17817
 Schongauerstr.: guter Asphalt	Q0 26540,12993 26676,13155 26825,13331
-Beuckestr.: Kopfsteinpflaster	Q2 578,2704 505,2714 344,2679 249,2653 86,2615 45,2592
+Beuckestr.: Kopfsteinpflaster	Q2 578,2704 505,2714
+#: corrected_by: srt (Kopfsteinpflaster -> Asphalt, public imagery)
+Beuckestr.: Asphalt	Q0 505,2714 344,2679 249,2653
+Beuckestr.: Kopfsteinpflaster	Q2 249,2653 86,2615 45,2592
 Beuckestr.: Kopfsteinpflaster	Q2 505,2714 537,2772
 Beuckestr.: Kopfsteinpflaster	Q2 86,2615 45,2644
 Langensteiner Weg: gutes Kopfsteinpflaster	Q1 7282,4716 7335,4879 7437,4855
@@ -4986,7 +4994,9 @@ Zachertstr.: Beton	Q0 17070,11375 17153,11342 17245,11312 17317,11289 17500,1125
 Belziger Ring: Asphalt	Q0 22215,17784 22059,17842 21931,17818 21882,17748 21968,17714 21995,17754 22148,17687
 Blesener Zeile: Asphalt	Q0 3214,20629 3395,20660
 Moorweg: Asphalt	Q0 3137,22088 3081,22048 2990,22018 2868,21945 2824,21896 2783,21773 2696,21648 2635,21559 2621,21538 2522,21494 2404,21445
-Kaunstr.: Kopfsteinpflaster	Q2 -1132,3234 -1070,2924 -999,2726
+Kaunstr.: Kopfsteinpflaster	Q2 -1132,3234 -1070,2924
+#: corrected_by: srt (Kopfsteinpflaster -> Asphalt, public imagery)
+Kaunstr.: Asphalt	Q0 -1070,2924 -999,2726
 Moselstr. (Friedenau): Asphalt	Q0 5684,6942 5824,6974
 Grenzweg (Lichtenrade): mäßiger Asphalt	Q1 9798,-1288 9738,-1290 9721,-1290 9603,-1293 9456,-1303
 #: corrected_by: srt (Asphalt/Kopfsteinpflaster -> schlechtes Kopfsteinpflaster)
@@ -8582,7 +8592,8 @@ Theodorstr. (Mahlsdorf): mäßiger Beton/Asphalt	Q1- 24923,10774 24913,10884 24899
 #: by: JP (jr92):
 Herbsteiner Str.: mäßiger Asphalt	Q1- 5824,21604 6016,21739 6211,21863
 #: by: christian Reich:
-Katharinenstr. (Zehlendorf): gutes Verbundsteinpflaster	Q1 679,3880 763,3916 861,3996 914,4040 949,4055 1061,4098 1180,4136 1232,4129
+#: corrected_by: srt (Verbundsteinpflaster -> Kopfsteinpflaster, public imagery)
+Katharinenstr. (Zehlendorf): gutes Kopfsteinpflaster	Q1 679,3880 763,3916 861,3996 914,4040 949,4055 1061,4098 1180,4136 1232,4129
 #: by: Hartmut Horacek:
 Severingstr.: guter Beton	Q0 13455,2465 13494,2512 13526,2568 13566,2673 13612,2853 13631,2938 13650,3025 13659,3074 13694,3074 13692,3024 13650,3025
 #: by: Vera (without @):

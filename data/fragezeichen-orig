@@ -37,13 +37,10 @@ Falkenberger Chaussee im Bereich Bhf. Hohenschönhausen	?::projected 17400,17790 
 #: by: ^^^
 #
 #: by: MoPo 2009-08-01, soll 2010 realisiert werden vvv
-#: last_checked: 2010-11-05
-#: next_check: 2011-02-01
-Zossener Str./Lindenstr.	?::projected 9856,10358 9873,10285
-#
-#: last_checked: 2010-11-06
+#: last_checked: 2010-11-23
 #: next_check: 2011-01-15
-Michaelbrücke/Michaelkirchstr.	?::projected 11768,12006 11716,11914 11676,11839 11574,11594 11498,11417
+Zossener Str./Lindenstr.	?::projected 9856,10358 9873,10285
+# XXX del --- ##: last_checked: 2010-11-06 --- #: next_check: 2011-01-15 --- Michaelbrücke/Michaelkirchstr.	?::projected 11768,12006 11716,11914 11676,11839 11574,11594 11498,11417
 #
 #: last_checked: 2010-10-22
 #: next_check: 2011-01-01
@@ -99,8 +96,8 @@ Müllerstr.	?::projected 6790,16018 6680,16116 6608,16180 6450,16325 6444,16331 6
 #
 #: by: Tagesspiegel vom 2009-04-12, soll 2009 realisiert werden
 #: corrected_by: MoPo 2009-08-01, soll 2010 realisiert werden
-#: last_checked: 2010-09-07
-#: next_check: 2010-12-07
+#: last_checked: 2010-11-23
+#: next_check: 2011-01-15
 Annenstr./Heinrich-Heine-Platz	?::projected 11349,11227 11249,11268 11091,11379 10915,11535 10819,11664
 #
 #: by: Tagesspiegel vom 2009-04-12, soll 2009 realisiert werden
@@ -132,7 +129,7 @@ Blankenburger Str. erhält beiderseitig Radfahrstreifen zwischen Dietzgen- und Si
 Wollankstr.: Angebotsstreifen werden bis Herbst 2011 eingerichtet	?::projected 9549,17625 9590,17662 9624,17693 9663,17734 9727,17804 9791,17877 9832,17925 9870,17971 9978,18104 10027,18165 10089,18180
 #
 #: by: Tagesspiegel vom 2010-03-31
-#: last_checked: 2010-11-06
+#: last_checked: 2010-11-23
 #: next_check: 2011-02-01
 Rüdersdorfer Str. bekommt Radspuren	?::projected 13066,11854 12891,12008
 #
@@ -4549,3 +4546,6 @@ Wartenberger Str.: abknickende Vorfahrt?	? 17400,17790 17356,17856 17557,17999
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/presse/archiv/20101112.1040.318520.html
 Platz M: Wo genau befindet sich der "Platz M"? Ist der Platz ausgeschildert?	? 3366,5654
 Fahrenheitstr. - Celsiusstr.: Existiert eine Durchfahrt für Radfahrer? Qualität?	? 4510,669 4436,621
+Kummerower Ring - Feldberger Ring: existiert eine Durchfahrt für Radfahrer? Qualität?	? 22615,13734 22672,13751
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/47re.pdf/file
+Ehm-Welk-Str. - Feldberger Ring: existiert eine Durchfahrt für Radfahrer? Qualität?	? 22723,13638 22672,13751 22664,13811 22702,13825

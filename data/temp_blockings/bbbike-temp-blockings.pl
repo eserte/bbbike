@@ -18482,7 +18482,7 @@ userdel	q4::inwork 10511,14418 10426,14262 10370,14158
 EOF
      },
      { from  => 1289373844, # 2010-11-10 08:24
-       until => 1291157999, # 2010-11-30 23:59
+       until => 1290544815, # 2010-11-30 23:59 1291157999
        text  => 'Lückstr. (Rummelsburg) Richtung Nöldnerplatz zwischen Emanuelstr. und Giselastr. Baustelle, Fahrtrichtung gesperrt (bis Ende 11.2010) ',
        type  => 'handicap',
        source_id => 'INKO_103947',
@@ -18526,8 +18526,8 @@ EOF
 userdel	2::inwork 43875,-35850 44731,-35697
 EOF
      },
-     { from  => 1290294000, # 2010-11-21 00:00
-       until => 1291503599, # 2010-12-04 23:59
+     { from  => 1290546446, # --- ausgesetzt 1290294000, # 2010-11-21 00:00
+       until => 1290546455, # --- ausgesetzt 1291503599, # 2010-12-04 23:59
        text  => 'Vollsperrung Falkentaler Steig in Berlin-Reinickendorf aufgrund von Straßenbaumaßnahmen im Ausführungszeitraum 22.11. bis 04.12.2010',
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20101117.1500.319282.html',
@@ -18570,6 +18570,14 @@ EOF
        source_id => 'IM_016647',
        data  => <<EOF,
 userdel	2::inwork 19328,5304 19405,5284 19445,5271
+EOF
+     },
+     { from  => 1290380400, # 2010-11-22 00:00
+       until => 1291762800, # 2010-12-08 00:00
+       text  => 'Bauarbeiten in der Donizettistraße zwischen Mozart- und Schubertstraße, 23.11.2010-7.12.2010',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 25167,12119 25290,12088
 EOF
      },
     );
