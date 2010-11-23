@@ -195,17 +195,21 @@ TARGET=devpc01
 .else
 TARGET=bbbike.hosteurope.herceg.de
 .endif
+.elif make(automatic-deployment)
+# no TARGET=
 .else
 .error "Please set TARGET to hosteurope or bbbike.hosteurope.herceg.de"
 .endif
 .endif
 
+.ifdef TARGET
 .if ${TARGET} == "devpc01"
 MAPSERVER_EXE=	$(HOME)/work2/mapserver/mapserv.cgi
 LOCAL_URL=	http://localhost:8080/bbbike
 LOCAL_CGI_URL=	http://localhost:8080/bbbike/cgi
 LOCAL_HTML_URL=	http://localhost:8080/bbbike
 DATA_DIR=	data
+.endif
 .endif
 
 LOCAL_MAPSERVER_URL=	http://www/cgi-bin/mapserv
@@ -220,7 +224,9 @@ BBBIKECGI=		bbbike2.cgi
 TARGET_OS_DIST=		unknown
 .endif
 
+.ifdef TARGET
 .include "${BBBIKE_ROOT_DIR}/mapserver/brb/Makefile.${TARGET}.inc"
+.endif
 
 all:
 
@@ -747,3 +753,10 @@ post-deploy-info:
 	@echo "* Send all messages in GNUS' drafts folder"
 	@echo "* Push BBBike git repo to github"
 	@echo ""
+
+automatic-deployment:
+	$(HOME)/src/bbbike-aux/misc/bbbike-checkin-hosteurope.pl -update
+	nice ${MAKE} deploy-local NO_PARALLEL=1
+	${MAKE} deploy
+	cd ${BBBIKE_ROOT_DIR}/misc && slaymake rsync-fragezeichen-list
+	$(HOME)/src/bbbike-aux/misc/bbbike-checkin-hosteurope.pl -after-sync
