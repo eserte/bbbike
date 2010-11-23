@@ -549,11 +549,12 @@ sub BBBikeLazy::plotstr_on_demand {
 				: 0);
 	    # ^^^
 	    # XXX Duplikate in plot_point:
-	    my($ampel_photo, $ampelf_photo, $andreaskr_photo, $zugbruecke_photo);
+	    my($ampel_photo, $ampelf_photo, $andreaskr_photo, $andreaskr_grey_photo, $zugbruecke_photo);
 	    if ($abk eq 'lsa') {
 		$ampel_photo      = get_symbol_scale('lsa-X');
 		$ampelf_photo     = get_symbol_scale('lsa-F');
 		$andreaskr_photo  = get_symbol_scale('lsa-B');
+		$andreaskr_grey_photo = get_symbol_scale('lsa-B0');
 		$zugbruecke_photo = get_symbol_scale('lsa-Zbr');
 	    }
 	    # ^^^
