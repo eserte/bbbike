@@ -1819,16 +1819,7 @@ userdel	3 13150,7254 13047,7234 13034,7319
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_016640',
-         'until' => 1290780000,
-         'text' => 'Wasserwerkstr. (Spandau): Baustelle, Straße vollständig gesperrt in beiden Richtungen zwischen Falkenseer Chaussee und Pionierstr., 17.11.2010 08:25 Uhr bis 26.11.2010 15:00 Uhr ',
-         'from' => 1289892300,
-         'id' => 2164,
-         'data' => 'userdel	q4::inwork -5806,16403 -5830,16356 -5849,16199 -5875,15994 -5911,15877
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => '106300839',
          'until' => 1292713200,
@@ -1846,6 +1837,16 @@ userdel	3 13150,7254 13047,7234 13034,7319
          'from' => 1290380400,
          'id' => 2167,
          'data' => 'userdel	q4::inwork 25167,12119 25290,12088
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20101126.1415.320541.html',
+         'until' => 1291014000,
+         'text' => 'Sachsendamm zwischen Gotenstr. und Priesterweg Richtung S-Bhf. Schöneberg wegen Bauarbeiten gesperrt, 26. November 2010 abends bis 29. November 2010 frühmorgens',
+         'from' => 1290803792,
+         'id' => 2168,
+         'data' => 'userdel	q4::inwork; 7491,7675 7316,7814
 ',
          'type' => 'handicap'
        }

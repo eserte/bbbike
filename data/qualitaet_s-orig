@@ -2830,8 +2830,10 @@ Seebeckstr.: Kopfsteinpflaster	Q2+ 8495,18566 8425,18542
 Fontanestr.: betoniert	Q0 7209,19928 7223,19826 7324,19795 7522,19804
 (Fontanestr. - Kopenhagener Str.): asphaltiert, mit Löchern	Q2+ 7522,19804 7518,19762 7617,19748
 Straße 33 (Wilhelmsruh): teilweise unbefestigt	Q2 7603,19713 7675,19677
+#: note: public imagery
+Am Krähenberg: Verbundsteinpflaster	Q1 -1630,20086 -1723,20096
 #: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20090925.0930.140105.html
-Am Krähenberg: Beton	Q0 -1630,20086 -1927,20118 -2055,20129 -2205,20141
+Am Krähenberg: Beton	Q0 -1723,20096 -1927,20118 -2055,20129 -2205,20141
 #: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20090925.0930.140105.html
 Klamannstr.: Beton	Q0 5870,18387 5845,18435 5856,18569 5992,18651 6009,18755
 #: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20090925.0930.140105.html
@@ -4377,6 +4379,8 @@ An der Schäferei: Asphalt	Q0 5678,1674 5752,1856
 Brüderstr. (Lichterfelde): schlechtes Kopfsteinpflaster	Q3 3044,3680 3061,3695
 Brüderstr. (Lichterfelde): mäßiges Kopfsteinpflaster	Q2 3061,3695 3193,3793
 Stettiner Str. (Mahlsdorf): Asphalt	Q0 26615,14054 26847,14002 26888,13976 26906,13960
+Waldkauzstr.: Beton	Q0 -510,19239 -666,19401 -884,19726 -1048,19779 -1202,19877
+Waldkauzstr.: Verbundsteinpflaster	Q1+ -1202,19877 -1364,19982 -1521,20041 -1630,20086
 #: note ^^^
 ######################### User Contributions #################################
 #: by: Dominik Seelow vvv
@@ -4526,6 +4530,8 @@ Strehlener Str.: Asphalt	Q0 22652,10392 22538,10477 22403,10523
 ######################################################################
 #: by: anonymous vvv
 # 
+#: confirmed_by: srt (public imagery)
+Hänflingsteig: Kopfsteinpflaster	Q2 20238,14549 20147,14570 20093,14591 19905,14650 19830,14668 19777,14673
 Kleine Mittelstr.: Kopfsteinpflaster	Q2 -3536,15450 -3414,15460
 Thaterstr.: schlechtes Kopfsteinpflaster	Q3 7445,17968 7195,17908
 #: note: "gut zu fahren"
@@ -5610,8 +5616,8 @@ Schwarzspechtweg: Asphalt	Q0 -1787,19341 -1954,19348 -2053,19352 -2173,19357 -22
 Schwarzspechtweg: Asphalt	Q0 -2173,19357 -2184,19143
 Rallenweg: asphaltiert	Q0 -2360,20965 -1978,20928
 #: note: die ADFC-Karte meint hier "mäßig geeignet"
-Mühlenweg: Waldweg	Q1 -1978,20928 -1843,20925 -1700,20971 -1559,20931 -1040,20962 -843,20940 -750,20878 -290,20665 -46,20553 112,20568 595,20764 673,20800
-Försterweg: Waldweg, etwas holprig	Q2 -1978,20928 -1968,20850 -1400,20615 -1253,20546 -1243,20471 -1050,20281 -871,20225 -823,20184
+Mühlenweg: Waldweg	Q1 -1978,20928 -1843,20925 -1700,20971 -1559,20931 -1040,20962 -843,20940 -750,20878 -329,20685 -46,20553 112,20568 595,20764 673,20800
+Försterweg: Waldweg, etwas holprig	Q2 -1978,20928 -1968,20850 -1400,20615 -1253,20546 -1243,20471 -1050,20281 -871,20225 -842,20200
 #: by: ^^^
 #: by: hoffmannbeck:
 Rüdnitzer Zeile: mäßiger Beton	Q1 3581,20008 3513,19961 3402,20109 3331,20056

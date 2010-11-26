@@ -18580,4 +18580,13 @@ EOF
 userdel	q4::inwork 25167,12119 25290,12088
 EOF
      },
+     { from  => 1290803792, # 2010-11-26 21:36
+       until => 1291014000, # 2010-11-29 08:00
+       text  => 'Sachsendamm zwischen Gotenstr. und Priesterweg Richtung S-Bhf. Schöneberg wegen Bauarbeiten gesperrt, 26. November 2010 abends bis 29. November 2010 frühmorgens',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20101126.1415.320541.html',
+       data  => <<EOF,
+userdel	q4::inwork; 7491,7675 7316,7814
+EOF
+     },
     );

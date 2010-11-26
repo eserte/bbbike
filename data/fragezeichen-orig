@@ -42,10 +42,7 @@ Falkenberger Chaussee im Bereich Bhf. Hohenschönhausen	?::projected 17400,17790 
 Zossener Str./Lindenstr.	?::projected 9856,10358 9873,10285
 # XXX del --- ##: last_checked: 2010-11-06 --- #: next_check: 2011-01-15 --- Michaelbrücke/Michaelkirchstr.	?::projected 11768,12006 11716,11914 11676,11839 11574,11594 11498,11417
 #
-#: last_checked: 2010-10-22
-#: next_check: 2011-01-01
-# auch im Tsp 2010-03-26 erwähnt
-Fischerinsel	?::projected 10512,12039 10672,11870
+#XXX --- #: last_checked: 2010-10-22 --- #: next_check: 2011-01-01 --- # auch im Tsp 2010-03-26 erwähnt --- Fischerinsel	?::projected 10512,12039 10672,11870
 #
 #: last_checked: 2010-11-11
 #: next_check: 2010-12-15
@@ -97,7 +94,7 @@ Müllerstr.	?::projected 6790,16018 6680,16116 6608,16180 6450,16325 6444,16331 6
 #: by: Tagesspiegel vom 2009-04-12, soll 2009 realisiert werden
 #: corrected_by: MoPo 2009-08-01, soll 2010 realisiert werden
 #: last_checked: 2010-11-23
-#: next_check: 2011-01-15
+#: next_check: 2010-12-15
 Annenstr./Heinrich-Heine-Platz	?::projected 11349,11227 11249,11268 11091,11379 10915,11535 10819,11664
 #
 #: by: Tagesspiegel vom 2009-04-12, soll 2009 realisiert werden
@@ -154,6 +151,13 @@ Fahrradstraße in der Lauenburger Str.	?::projected 5883,4985 5909,5072 5939,5169
 #
 #: section ignorieren vvv
 #: section Straßen in Bau und Planung vvv
+#
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/48re.pdf/file
+#: by: http://www.maerkischeallgemeine.de/cms/beitrag/11913676/61759/Bau-der-neuen-Erschliessungsstrasse-auf-altem-Industriegelaende-in.html
+#: XXX fehlt in Berlin.coords.data
+#: note: wird Radwege bekommen
+#: next_check: 2011-06-15
+Wohlrabedamm: Wo genau wird die Straße liegen? Fertigstellungsdatum?	?::inwork 990,14062 1624,13956 1882,14127
 # 
 #: by: http://www.berlin.de/ba-pankow/presse/archiv/20101116.0930.319072.html
 #: next_check: 2012-01-01
@@ -420,6 +424,10 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 # und dem CGI-Benutzer auch nicht präsentiert.
 # 
 #:
+#: by: Tagesspiegel vom 2010-11-23
+Schloßstr.: Radstreifen, wo genau?	? 5165,6119 5137,6066 5099,5994 5099,5994 5083,5964 5048,5904 5024,5863 5000,5816 4984,5788 4963,5754 4900,5648 4861,5581
+#: by: Tagesspiegel vom 2010-11-23
+Prinzenstr.: gibt es hier Radstreifen?	? 8939,16668 8926,16572 8788,16264
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/36re.pdf/file
 Fichtenweg: Teilstück als Straßenland eingezogen?	? -2949,17946 -2963,17872
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/39re.pdf/file
@@ -1039,7 +1047,7 @@ Neulögow - Seilershof: Qualität?	? -8775,72512 -8174,72513 -8034,72635 -7937,729
 #: XXX laut anonymen Eintrag Radweg; keine Verbindung zum restlichen Netz:
 Hermsdorfer Str. (Hohen Neuendorf): Qualität?	? 621,29356 625,29868
 #XXX hier scheint keine direkte Verbindung zu sein: (Dorfstr. (Tiefwerder) - Heerstr.): Qualität?	? -2916,12195 -2953,12015 -2918,11678 -2835,11467
-Försterweg: Qualität (wahrscheinlich ein holpriger Waldweg)?	? -823,20184 -571,19834 -475,19746 -384,19740 -250,19815 -146,19806 6,19817
+Försterweg: Qualität (wahrscheinlich ein holpriger Waldweg)?	? -842,20200 -571,19834 -475,19746 -384,19740 -250,19815 -146,19806 6,19817
 Liebenwalde - Zehdenick [Berlin - Kopenhagen]: Qualität? Nur für Radfahrer?	? 8574,51776 8510,52025 8083,52074 8001,52273 8081,53068 7981,54068 7918,54093 7925,54743 8083,55925 7827,56669 7962,57318 7937,57706 7581,58350 7568,58668 7681,59556 7587,60006 7481,60368 7475,60393 7075,60862 6362,61350 5993,61743 5437,63156 5318,63337 5112,63250 4948,63424
 Zehdenick - Burgwall/Marienthal [Berlin - Kopenhagen]: Qualität? Nur für Radfahrer?	? 3500,63893 3731,65818 3212,66343 3350,67075 3187,67481 2656,68100 2831,68281 2925,69200 2850,69212 2850,69618 2737,69975 2731,70156 2406,70381 2387,70443 2412,70506 2350,70775 2200,70818 2037,71025 1918,71193 1912,71400 1712,71537 650,71562
 Zabelsdorf - Dannenwalde [Berlin - Kopenhagen]: Qualität? Nur für Radfahrer?	? -1143,71100 -1987,71562 -2768,71868 -4125,72768 -5425,73225 -6006,73781
@@ -2143,7 +2151,7 @@ Rabenstr.: Qualität?	? -1788,19663 -1721,19658 -1663,19632 -1508,19578 -1374,195
 Milanstr.: Qualität?	? -1428,19381 -1374,19524 -1324,19640 -1284,19742 -1276,19759 -1240,19849 -1240,19869
 Steinkauzgasse: Qualität?	? -1324,19640 -1193,19587 -1102,19564
 Rauhfußgasse: Qualität?	? -1276,19759 -1157,19711 -1071,19689
-An der Krähenheide: Qualität?	? -1102,19564 -1071,19689 -1045,19793
+An der Krähenheide: Qualität?	? -1102,19564 -1071,19689 -1048,19779
 Gabelweihstr.: Qualität?	? -1492,19370 -1557,19457 -1681,19593
 Dorndreherweg: Qualität?	? -1364,19982 -1414,20145 -1473,20181 -1578,20228
 Armenische Str.: Qualität?	? 7216,16552 7285,16638 7177,16715 7150,16760 7147,16791
@@ -2173,7 +2181,6 @@ Gurkensteig: Qualität?	? 8548,25239 8654,25299 8735,25366
 Wiesenweg (Blankenfelde): Qualität?	? 8571,25180 8631,25217 8656,25251 8706,25262 8722,25296 8776,25332
 Kiesweg: Qualität?	? 9863,26000 10108,26150
 Schwalbenflug: Qualität? Kann man als Radfahrer zur Poelchaustr. fahren?	? 20093,14591 20068,14516 20059,14477 20059,14441
-Hänflingsteig: Qualität?	? 20238,14549 20147,14570 20093,14591 19905,14650 19830,14668 19777,14673
 Dompfaffenweg: Qualität?	? 20068,14516 19729,14564
 Kaiserkronenweg: Qualität?	? 20183,14645 20030,14731 20012,14756 19966,14783
 Am Schmeding: Qualität?	? 19905,14650 19966,14783 19989,14828 20009,14867 20116,15057 20319,15358
@@ -4549,3 +4556,8 @@ Fahrenheitstr. - Celsiusstr.: Existiert eine Durchfahrt für Radfahrer? Qualität?
 Kummerower Ring - Feldberger Ring: existiert eine Durchfahrt für Radfahrer? Qualität?	? 22615,13734 22672,13751
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/47re.pdf/file
 Ehm-Welk-Str. - Feldberger Ring: existiert eine Durchfahrt für Radfahrer? Qualität?	? 22723,13638 22672,13751 22664,13811 22702,13825
+# 
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/48re.pdf/file
+#: note: Privatstraße
+#: XXX fehlt in Berlin.coords.data
+Amelieweg: Qualität? Wo liegt die Straße genau?	? 22822,12387 22736,12412

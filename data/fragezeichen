@@ -286,7 +286,7 @@ Sonnenberg - Rauschendorf: Qualität?	? -12156,67931 -11319,68272 -10685,69040 -1
 Rauschendorf - Neulögow: Qualität?	? -10466,69247 -10399,69296 -10393,69338 -10368,69424 -9265,70801 -9253,70868 -9058,71794 -9247,72391 -9125,72659
 Neulögow - Seilershof: Qualität?	? -8775,72512 -8174,72513 -8034,72635 -7937,72970 -7851,73171 -7839,73769 -7486,74341 -7455,74445
 Hermsdorfer Str. (Hohen Neuendorf): Qualität?	? 621,29356 625,29868
-Försterweg: Qualität (wahrscheinlich ein holpriger Waldweg)?	? -823,20184 -571,19834 -475,19746 -384,19740 -250,19815 -146,19806 6,19817
+Försterweg: Qualität (wahrscheinlich ein holpriger Waldweg)?	? -842,20200 -571,19834 -475,19746 -384,19740 -250,19815 -146,19806 6,19817
 Liebenwalde - Zehdenick [Berlin - Kopenhagen]: Qualität? Nur für Radfahrer?	? 8574,51776 8510,52025 8083,52074 8001,52273 8081,53068 7981,54068 7918,54093 7925,54743 8083,55925 7827,56669 7962,57318 7937,57706 7581,58350 7568,58668 7681,59556 7587,60006 7481,60368 7475,60393 7075,60862 6362,61350 5993,61743 5437,63156 5318,63337 5112,63250 4948,63424
 Zehdenick - Burgwall/Marienthal [Berlin - Kopenhagen]: Qualität? Nur für Radfahrer?	? 3500,63893 3731,65818 3212,66343 3350,67075 3187,67481 2656,68100 2831,68281 2925,69200 2850,69212 2850,69618 2737,69975 2731,70156 2406,70381 2387,70443 2412,70506 2350,70775 2200,70818 2037,71025 1918,71193 1912,71400 1712,71537 650,71562
 Zabelsdorf - Dannenwalde [Berlin - Kopenhagen]: Qualität? Nur für Radfahrer?	? -1143,71100 -1987,71562 -2768,71868 -4125,72768 -5425,73225 -6006,73781
@@ -1132,7 +1132,7 @@ Rabenstr.: Qualität?	? -1788,19663 -1721,19658 -1663,19632 -1508,19578 -1374,195
 Milanstr.: Qualität?	? -1428,19381 -1374,19524 -1324,19640 -1284,19742 -1276,19759 -1240,19849 -1240,19869
 Steinkauzgasse: Qualität?	? -1324,19640 -1193,19587 -1102,19564
 Rauhfußgasse: Qualität?	? -1276,19759 -1157,19711 -1071,19689
-An der Krähenheide: Qualität?	? -1102,19564 -1071,19689 -1045,19793
+An der Krähenheide: Qualität?	? -1102,19564 -1071,19689 -1048,19779
 Gabelweihstr.: Qualität?	? -1492,19370 -1557,19457 -1681,19593
 Dorndreherweg: Qualität?	? -1364,19982 -1414,20145 -1473,20181 -1578,20228
 Armenische Str.: Qualität?	? 7216,16552 7285,16638 7177,16715 7150,16760 7147,16791
@@ -1158,7 +1158,6 @@ Gurkensteig: Qualität?	? 8548,25239 8654,25299 8735,25366
 Wiesenweg (Blankenfelde): Qualität?	? 8571,25180 8631,25217 8656,25251 8706,25262 8722,25296 8776,25332
 Kiesweg: Qualität?	? 9863,26000 10108,26150
 Schwalbenflug: Qualität? Kann man als Radfahrer zur Poelchaustr. fahren?	? 20093,14591 20068,14516 20059,14477 20059,14441
-Hänflingsteig: Qualität?	? 20238,14549 20147,14570 20093,14591 19905,14650 19830,14668 19777,14673
 Dompfaffenweg: Qualität?	? 20068,14516 19729,14564
 Kaiserkronenweg: Qualität?	? 20183,14645 20030,14731 20012,14756 19966,14783
 Am Schmeding: Qualität?	? 19905,14650 19966,14783 19989,14828 20009,14867 20116,15057 20319,15358
@@ -3075,6 +3074,7 @@ Platz M: Wo genau befindet sich der "Platz M"? Ist der Platz ausgeschildert?	? 3
 Fahrenheitstr. - Celsiusstr.: Existiert eine Durchfahrt für Radfahrer? Qualität?	? 4510,669 4436,621
 Kummerower Ring - Feldberger Ring: existiert eine Durchfahrt für Radfahrer? Qualität?	? 22615,13734 22672,13751
 Ehm-Welk-Str. - Feldberger Ring: existiert eine Durchfahrt für Radfahrer? Qualität?	? 22723,13638 22672,13751 22664,13811 22702,13825
+Amelieweg: Qualität? Wo liegt die Straße genau?	? 22822,12387 22736,12412
 # added from ampeln-orig
 geschlossen bei Bedarf (?) (Zbr)	? 27657,-11741
 S-Bahn alle 20 Minuten, Regionalbahn halbstündlich (?) (B)	? 40248,14503
@@ -3168,6 +3168,7 @@ Gransee (Gehronsee (auch laut Regio-Atlas, Tsp, Wikipedia, osm), Geronsee (Tippf
 Barthels Pfuhl (oder Barth*o*ls Pfuhl?)	? -23662,80950 -23775,80837 -23675,80725 -23587,80825 -23587,80912
 Müncheberg, Turm (genaue Bezeichnung?)	? 60803,11559
 Müncheberg, Turm (genaue Bezeichnung?)	? 60306,11906
+(Gibt es in der Heiligenseestraße zwischen Elchdamm und Konradshöher Str. Radwege?)	? -410,21496 -249,21420 -130,21396
 Edelhofdamm: Kopfsteinpflaster (Kopfsteinpflaster zwischen Oranienburger Chaussee und Enkircher Straße?)	? 3463,25611 3273,25516 3171,25495
 Zepernicker Str: Kopfsteinpflaster, OK (Wie ist das Kopfsteinpflaster in der Zepernicker Str.: gut oder mäßig?)	? 17218,26121 17013,25874
 An der Nordbahn: mäßiges Pflaster (?) (Wie genau ist die Fahrbahnbeschaffenheit hier (Asphalt, Beton, Kopfsteinpflaster, ...)?)	? 6669,20129 6365,20402
