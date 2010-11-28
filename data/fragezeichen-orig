@@ -171,8 +171,7 @@ Kastanienallee: Fahrradstreifen werden angelegt (bis 2012-09-01)	?::inwork 10534
 #: next_check: 2011-11-01
 Rudolf-Breitscheid-Str.: nach den Bauarbeiten wird es in Richtung Westen eine 2m breite Radspur geben sowie in Richtung Osten einen asphaltierter Radweg	?::inwork -10973,-1764 -10773,-1828 -10702,-1851 -10678,-1860
 # 
-#: by: http://www.potsdam.de/cms/beitrag/10069329/966975/
-Hegelallee (Potsdam): asphaltierter Radweg fertiggestellt?	?::inwork -13625,-902 -13468,-847 -13433,-831 -13231,-763 -13137,-728 -13067,-706
+#XXX del --- #: by: http://www.potsdam.de/cms/beitrag/10069329/966975/ --- Hegelallee (Potsdam): asphaltierter Radweg fertiggestellt?	?::inwork -13625,-902 -13468,-847 -13433,-831 -13231,-763 -13137,-728 -13067,-706
 # 
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1010/nachricht4107.html
 #: next_check: 2011-01-15
@@ -256,7 +255,7 @@ Mauerweg: evtl. existiert hier bereits ein geschotterter Radweg parallel zur Str
 Pyramidenring/Rhinstr.: Ampel in Bau	?::inwork 18166,14277
 #
 #: last_checked: 2010-09-18 vvv
-#: next_check: 2011-01-01 vvv
+#: next_check: 2011-02-01 vvv
 #: XXX Eintrag in Berlin.coords.data fehlt: PLZ=10117
 #: XXX genaue Lage?
 Prinzengasse: existiert sie schon, wenn ja: wie ist die Qualität?	?::inwork 9952,12292 10029,12313
@@ -4561,3 +4560,9 @@ Ehm-Welk-Str. - Feldberger Ring: existiert eine Durchfahrt für Radfahrer? Qualit
 #: note: Privatstraße
 #: XXX fehlt in Berlin.coords.data
 Amelieweg: Qualität? Wo liegt die Straße genau?	? 22822,12387 22736,12412
+#: by: Germar Molter: vvv
+#: note: unbeleuchtet
+#: XXX genaue Lage?
+Radweg nördl. des Krankenhauses Herzberge	? 17203,13519 17167,13655 17110,13811 17095,13972 17154,14093 17300,14133 18015,13846
+Herzbergstr. - Siegfriedstr.	? 17167,13655 17056,13784 16875,13834
+#: by: ^^^

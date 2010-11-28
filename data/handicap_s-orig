@@ -11,7 +11,7 @@
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1010/nachricht4088.html
 #: next_check: 2012-06-01
 Behrenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8861,12125 9054,12154 9064,12156 9164,12172
-#: last_checked: 2011-11-12
+#: last_checked: 2011-11-27
 Reichstagufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9117,12705 9209,12795 9280,12883
 #: last_checked: 2010-10-22
 Niederlagstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9972,12184 9939,12296 9951,12318
@@ -29,11 +29,11 @@ Schloßplatz: Behinderungen durch Bauarbeiten möglich, einige Stufen	q3::inwork 1
 Varian-Fry-Str.: Baustelle, Fahrbahn gesperrt	q4::inwork 8389,11378 8374,11479
 #: last_checked: 2010-10-29
 General-Pape-Str.: Baustelle, Fahrbahn Richtung Norden gesperrt	q4::inwork; 7959,7609 7921,7728 7950,7840
-#: last_checked: 2010-11-06
+#: last_checked: 2010-11-28
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 9475,12365 9462,12481 9454,12558
-#: last_checked: 2010-11-06
+#: last_checked: 2010-11-28
 Universitätsstr.: wegen Bauarbeiten Richtung Unter den Linden gesperrt	q4::inwork; 9580,12581 9601,12380
-#: last_checked: 2010-10-31
+#: last_checked: 2010-11-28
 Planckstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 9434,12669 9385,12809 9383,12915
 #: next_check: 2011-03-01
 Matkowskystr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 14530,11137 14509,11060
@@ -45,6 +45,11 @@ Rathausstr.: Baustelle vor dem Roten Rathaus, eng	q4::inwork 10601,12521 10704,1
 Jägerstr.: Einbahnstraße	q4::inwork; 9394,11996 9201,11968
 #: last_checked: 2010-06-19
 Am Carlsgarten: Bauarbeiten	q4::inwork 19468,7962 19372,8012 19334,8046
+# 
+#: next_check: 2011-09-01 vvv
+Rathausstr. zwischen Breitestr. und Poststr.: Fahrbahn wegen Brückenbauarbeiten gesperrt	q4::inwork 10281,12310 10362,12351
+Rathausstr. zwischen Breitestr. und Poststr.: Fahrbahn wegen Brückenbauarbeiten gesperrt	q4::inwork 10422,12395 10476,12432
+#: next_check: ^^^
 # 
 #: temporary ^^^
 ######################################################################

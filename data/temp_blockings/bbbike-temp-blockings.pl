@@ -229,19 +229,19 @@ userdel	2 15758,10578 15982,10765 16032,10842
 userdel	2 15758,10578 15639,10469
 EOF
      },
-     { from  => undef,
+     { from  => undef, # note: periodisch, siehe unten
        until => Time::Local::timelocal(reverse(2006,12-1,9,23,59,59)),
        text  => 'Richardplatz Alt-Rixdorfer Weihnachtsmarkt, gesperrt. Dauer: bis 09.12.2006. ',
        type  => 'gesperrt',
        file  => 'rixdorfer_weihnachtsmarkt.bbd',
      },
-     { from  => 1102672800, # 2004-12-10 11:00
-       until => 1102805999, # 2004-12-11 23:59
+     { from  => 1290962654, # PERIODISCH! # früher: 1102672800, # 2004-12-10 11:00
+       until => 1293145199, # PERIODISCH! # früher: 1102805999, # 2004-12-11 23:59
        file  => 'spandauer_weihnachtsmarkt.bbd',
        text  => 'Spandauer Weihnachtsmarkt',
        type  => 'gesperrt',
      },
-     { from  => 1070600400, # 2003-12-05 06:00
+     { from  => 1070600400, # 2003-12-05 06:00 # note: periodisch, siehe unten
        until => 1070838000, # 2003-12-08 00:00
        file  => 'sophienstr.bbd',
        text  => 'Sophienstraße zwischen Rosenthaler Straße und Große Hamburger Straße wegen 8. Umwelt - und Weihnachtsmarkt für den Fahrzeugverkehr gesperrt (keine Wendemöglichkeit für Lkw). Dauer : 6.12.2003 / 06.00 Uhr bis 7.12.2003 / 24.00 Uhr ',
@@ -1145,7 +1145,7 @@ userdel	q4 38264,50086 38174,49717 38022,49097
 userdel	q4 38264,50086 38476,50514 38845,51258
 EOF
      },
-     { from  => 1196895600, # 2007-12-06 00:00
+     { from  => 1196895600, # 2007-12-06 00:00 # note: periodisch, siehe unten
        until => 1197154800, # 2007-12-09 00:00
        text  => 'Richardplatz Neukölln Straßensperrung Weihnachtsmarkt 7.12.2007-8.12.2007 ',
        type  => 'gesperrt',
@@ -1258,15 +1258,16 @@ EOF
 userdel	q4 13225,-681 13176,-161 13165,-34 13124,216 13165,-34 13176,-161 13225,-681 13230,-712 13309,-1268
 EOF
      },
-     { from  => 1102654800, # 2004-12-10 06:00
-       until => 1102892400, # 2004-12-13 00:00
-       text  => 'Sophienstraße, zwischen Große Hamburger Straße und Rosenthaler Straße, für den Fahrzeugverkehr gesperrt (9. Umwelt- und Weihnachtsmarkt). Dauer: 11.12.2004 06:00 Uhr bis 12.12.2004 24:00 Uhr ',
+     { from  => 1291417200, # PERIODISCH! # früher: 1102654800, # 2004-12-10 06:00
+       until => 1291589999, # PERIODISCH! # früher: 1102892400, # 2004-12-13 00:00
+       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt. 04.12. - 05.12.2010 ',
        type  => 'gesperrt',
        data  => <<EOF,
+#: next_check: 2010-12-06 (nächste Termine: 11.12. - 12.12.2010, 18.12. - 19.12.2010)
 userdel	2 9986,13412 10317,13248
 EOF
      },
-     { from  => 1102050000, # 2004-12-03 06:00
+     { from  => 1102050000, # 2004-12-03 06:00 # note: periodisch, siehe unten
        until => 1102204800, # 2004-12-05 01:00
        text  => 'Bahnhofstr. zwischen Goltzstr. und Steinstraße Weihnachstsmarkt, in beiden Richtungen gesperrt. Dauer: 04.12.2004, 06:00 Uhr bis 05.12.2004, 01:00 Uhr',
        type  => 'gesperrt',
@@ -1339,7 +1340,7 @@ EOF
 userdel	2 -59612,-27488 -59438,-27447 -59410,-27340
 EOF
      },
-     { from  => 1102980646, # 2004-12-14 00:30
+     { from  => 1102980646, # 2004-12-14 00:30 # note: periodisch, siehe unten
        until => 1104015600, # 2004-12-26 00:00
        text  => 'Weihnachtsmarkt am Opernpalais, bis 25.12.2004',
        type  => 'gesperrt',
@@ -1348,7 +1349,7 @@ userdel	2 9890,12161 9869,12297 9852,12409
 userdel	2 9801,12245 9795,12293 9780,12401
 EOF
      },
-     { from  => undef, #
+     { from  => undef, # # note: gibt es nicht mehr
        until => 1135551600, # 2005-12-26 00:00
        text  => 'Weihnachtsmarkt am Schloßplatz, bis 25.12.2005',
        type  => 'gesperrt',
@@ -3251,14 +3252,14 @@ EOF
 userdel	1 -1668,-1709 -1715,-1767 -1921,-1931 -2049,-2165
 EOF
      },
-     { from  => 1132411558, # 2005-11-19 15:45
-       until => 1136069999, # 2005-12-31 23:59
-       text  => 'Weihnachtsmarkt an der Gedächtniskirche, bis 2005-12-31',
+     { from  => 1290380400, # PERIODISCH! # früher: 1132411558, # 2005-11-19 15:45
+       until => 1294009199, # PERIODISCH! # früher: 1136069999, # 2005-12-31 23:59
+       text  => 'Weihnachtsmarkt an der Gedächtniskirche, vom 22. November 2010 bis 2. Januar 2011',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4 5829,10964 5782,10884
 userdel	q4 5656,10876 5652,11004
-userdel	q4; 5652,11004 5716,10978 5829,10964
+#XXX del - userdel	q4; 5652,11004 5716,10978 5829,10964
 EOF
      },
      { from  => 1132606608, # 2005-11-21 21:56
@@ -3453,12 +3454,12 @@ EOF
 userdel	2::inwork -19908,17940 -18793,18169
 EOF
      },
-     { from  => 1165660181, # 2006-12-09 11:29
-       until => 1165708800, # 2006-12-10 01:00
-       text  => 'Bahnhofstr. (Lichtenrade) in beiden Richtungen zwischen Steinstr. und Goltzstr. Veranstaltung, Straße vollständig gesperrt (Weihnachtsmarkt) (bis 10.12.2006 01:00 Uhr) ',
+     { from  => 1291417200, # PERIODISCH! # früher: 1165660181, # 2006-12-09 11:29
+       until => 1291590000, # PERIODISCH! # früher: 1165708800, # 2006-12-10 01:00
+       text  => 'Lichtenrader Weihnachtsmarkt: Bahnhofstr. (Lichtenrade) in beiden Richtungen zwischen Steinstr. und Goltzstr gesperrt (04.12.2010 bis 05.12.2010) ',
        type  => 'gesperrt',
-       source_id => 'IM_004172',
        data  => <<EOF,
+#: next_check: 2010-12-06 (zweites Wochenende vom 11.12.2010 bis 12.12.2010)
 userdel	q4 10310,-2136 10453,-2133 10509,-2131 10631,-2130 10747,-2129 10983,-2116
 EOF
      },
@@ -6643,16 +6644,17 @@ EOF
 userdel	2::inwork -31993,-726 -32143,-211 -32153,-176
 EOF
      },
-     { from  => 1163480400, # 2006-11-14 06:00
-       until => 1167433200, # 2006-12-30 00:00
-       text  => 'Bereich Oberwallstr., Niederlagstr., Hinter der Katholischen Kirche, Am Schinkelplatz gesperrt Grund : Veranstaltung (Weihnachtsmarkt am Opernpalais) Dauer: 15.11.2006 06:00 Uhr bis 29.12.2006 24:00 Uhr ',
+     { from  => 1290380400, # PERIODISCH! # früher: 1163480400, # 2006-11-14 06:00
+       until => 1293404399, # PERIODISCH! # früher: 1167433200, # 2006-12-30 00:00
+       text  => 'Weihnachtsmarkt am Opernpalais: der Bereich Oberwallstr., Niederlagstr., Am Schinkelplatz gesperrt, vom 22.11.-26.12.2010',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::temp 9890,12161 9869,12297 9795,12293 9780,12401
-userdel	2::temp 9869,12297 9852,12409
-userdel	2::temp 9801,12245 9812,12145
-userdel	2::temp 9994,12368 9943,12364 9951,12318 9939,12296 9972,12184
-userdel	2::temp 9934,12418 9943,12364
+userdel	2::temp 9994,12368 9943,12364 9934,12418
+userdel	2::temp 9996,12401 10058,12290 10008,12274 9994,12368 9996,12401 9984,12426
+userdel	2::temp 10058,12290 10091,12232
+userdel	2::temp 9943,12364 9951,12318 9939,12296 9972,12184
+userdel	2::temp 10010,12259 10035,12209
+userdel	2::temp 9852,12409 9869,12297 9890,12161
 EOF
      },
      { from  => 1163718000, # 2006-11-17 00:00
@@ -10510,7 +10512,7 @@ EOF
 userdel	q4::inwork 2940,90332 2565,89990 2745,89716
 EOF
      },
-     { from  => undef, # 
+     { from  => undef, # # note: verlegt (Opernpalais)
        until => 1199141999, # 2007-12-31 23:59
        text  => 'Weihnachtsmarkt ',
        type  => 'gesperrt',
@@ -10518,7 +10520,7 @@ EOF
 userdel	2::inwork 9700,12234 9679,12388
 EOF
      },
-     { from  => undef, # 
+     { from  => undef, # # note: existiert nicht mehr
        until => 1199141999, # 2007-12-31 23:59
        text  => 'Weihnachtsmarkt',
        type  => 'gesperrt',
@@ -13780,8 +13782,8 @@ userdel	q4::temp 22196,4847 22175,4730 22138,4661 22111,4562 22093,4499
 EOF
      },
      { from  => 1242770815, # 2009-05-20 00:06
-       until => 1301608800, # 2011-04-01 00:00
-       text  => 'Rathausstr. (Mitte) Richtung Alexanderplatz zwischen Breitestr. und Poststr. Baustelle, Straße vollständig gesperrt (bis März 2011)',
+       until => 1290963632, # 1301608800, # 2011-09-01 00:00 # -> handicap_s-orig
+       text  => 'Rathausstr. (Mitte) Richtung Alexanderplatz zwischen Breitestr. und Poststr. Baustelle, Straße vollständig gesperrt (bis Ende 2011)',
        type  => 'handicap',
        source_id => 'IM_012342',
        data  => <<EOF,
@@ -16876,17 +16878,17 @@ EOF
 userdel	2::inwork 28028,-88225 26392,-88322 25763,-88254 25470,-88145 24969,-87998 24927,-87720
 EOF
      },
-     { from  => 1258045387, # 2009-11-12 18:03
-       until => 1262300399, # 2009-12-31 23:59
-       text  => 'Voltairestr.: Durchfahrt wegen des Weihnachtsmarkts am Alexanderplatz nicht oder nur schwer möglich',
+     { from  => 1290960699, # PERIODISCH! # früher: 1258045387, # 2009-11-12 18:03
+       until => 1293836399, # PERIODISCH! # früher: 1262300399, # 2009-12-31 23:59
+       text  => 'Voltairestr.: Durchfahrt wegen des Weihnachtsmarkts am Einkaufszentrum Alexa nicht oder nur schwer möglich',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp 11209,12430 11323,12484
 EOF
      },
-     { from  => 1258207217, # 2009-11-14 15:00
-       until => 1262300399, # 2009-12-31 23:59
-       text  => 'Gendarmenmarkt: Weihnachtsmarkt, Durchfahrt nicht oder nur schwer möglich',
+     { from  => 1290960699, # PERIODISCH! # früher: 1258207217, # 2009-11-14 15:00
+       until => 1293836399, # PERIODISCH! # früher: 1262300399, # 2009-12-31 23:59
+       text  => 'Gendarmenmarkt: Weihnachtsmarkt, Durchfahrt nicht möglich (Eintritt!)',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp 9526,11911 9668,11928
@@ -16952,19 +16954,18 @@ EOF
 userdel	q4::inwork -4630,-36012 -4603,-35730
 EOF
      },
-     { from  => undef, # 
-       until => 1262300399, # 2009-12-31 23:59
-       text  => 'Weihnachtsmarkt am Potsdamer Platz',
+     { from  => 1290380400, # PERIODISCH! # undef, # 
+       until => 1293404400, # PERIODISCH! # früher: 1262300399, # 2009-12-31 23:59
+       text  => 'Weihnachtsmarkt am Potsdamer Platz vom 22.11.2010 - 26.12.2010',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp 8479,11493 8481,11447 8389,11378
 EOF
      },
-     { from  => 1259959719, # 2009-12-04 21:48
-       until => 1260140400, # 2009-12-07 00:00
-       text  => 'Richardplatz (Neukölln) und die Durchfahrt aller angrenzenden Straßen Rixdorfer Weihnachtsmarkt, Straße vollständig gesperrt (bis 6.12.2009, 24 Uhr)',
+     { from  => 1291330800, # PERIODISCH! # früher: 1259959719, # 2009-12-04 21:48
+       until => 1291589999, # PERIODISCH! # früher: 1260140400, # 2009-12-07 00:00
+       text  => 'Richardplatz (Neukölln) und die Durchfahrt aller angrenzenden Straßen Rixdorfer Weihnachtsmarkt, Straße vollständig gesperrt (03.12.2010 bis 05.12.2010)',
        type  => 'gesperrt',
-       source_id => 'IM_014741',
        file  => 'rixdorfer_weihnachtsmarkt.bbd',
      },
      { from  => 1212876000, # 2008-06-08 00:00
@@ -16999,9 +17000,9 @@ EOF
 userdel	2::inwork -2521,3637 -2396,3666 -2174,3718 -2014,3826 -1980,3872 -1974,3933 -1996,4063 -1944,4140 -1706,3971 -1624,3956 -1558,3965 -1468,3995 -1380,4108
 EOF
      },
-     { from  => 1259794800, # 2009-12-03 00:00
-       until => 1260745199, # 2009-12-13 23:59
-       text  => 'Alt-Köpenicker Weihnachtsmarkt vom 4.12. bis zum 13.12.2009',
+     { from  => 1291330800, # PERIODISCH! # früher: 1259794800, # 2009-12-03 00:00
+       until => 1292194799, # PERIODISCH! # früher: 1260745199, # 2009-12-13 23:59
+       text  => 'Alt-Köpenicker Weihnachtsmarkt vom 3. Dezember 2010 bis zum 12. Dezember 2010',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp 22111,4562 22162,4546 22214,4548
