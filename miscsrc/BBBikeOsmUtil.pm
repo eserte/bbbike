@@ -119,26 +119,32 @@ sub mirror_and_plot_osm_files {
 		    main::status_message("File '$file' does not have the expected pattern '$osm_download_file_qr'", "die");
 		}
 		my($this_x0,$this_y0,$this_x1,$this_y1) = ($1, $2, $3, $4);
-		my $url = "$OSM_API_URL/map?bbox=$this_x0,$this_y0,$this_x1,$this_y1";
-		main::status_message("Mirror $url ...", "info"); $main::top->update;
-		main::IncBusy($main::top);
-		eval {
-		    my $resp = $ua->mirror($url, $file);
-		    if (!$resp->is_success) {
-			die "Could not mirror $url: " . $resp->status_line . "\n";
-		    } else {
-			no warnings 'uninitialized'; # content-encoding header may be missing
-			if ($resp->header('content-encoding') eq 'gzip' && $file !~ m{\.gz$}) {
-			    warn "Rename $file -> $file.gz...\n"; # XXX debug
-			    rename $file, "$file.gz"
-				or die "Cannot rename $file to $file.gz: $!";
-			    $file = "$file.gz"; # change @$osm_files_ref
+		my $success = 0;
+		my $err;
+		for my $rooturl ($OSM_API_URL, $OSM_FALLBACK_API_URL) {
+		    my $url = "$rooturl/map?bbox=$this_x0,$this_y0,$this_x1,$this_y1";
+		    main::status_message("Mirror $url ...", "info"); $main::top->update;
+		    main::IncBusy($main::top);
+		    eval {
+			my $resp = $ua->mirror($url, $file);
+			if (!$resp->is_success) {
+			    die "Could not mirror $url: " . $resp->status_line . "\n";
+			} else {
+			    no warnings 'uninitialized'; # content-encoding header may be missing
+			    if ($resp->header('content-encoding') eq 'gzip' && $file !~ m{\.gz$}) {
+				warn "Rename $file -> $file.gz...\n"; # XXX debug
+				rename $file, "$file.gz"
+				    or die "Cannot rename $file to $file.gz: $!";
+				$file = "$file.gz"; # change @$osm_files_ref
+				$success = 1;
+			    }
 			}
-		    }
-		};
-		my $err = $@;
-		main::DecBusy($main::top);
-		if ($err) {
+		    };
+		    $err = $@;
+		    main::DecBusy($main::top);
+		    last if $success;
+		}
+		if (!$success) {
 		    main::status_message($err, 'die');
 		}
 	    }
