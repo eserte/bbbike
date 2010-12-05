@@ -62,7 +62,7 @@ my $splitlonglines = 1; # XXX this may change once BBBikeXS has no length restri
 my $xmlparser;
 
 my %experiments;
-my %known_experiments = map {($_,1)} qw(add_postal_code coastline_hack polar_coord_hack);
+my %known_experiments = map {($_,1)} qw(add_postal_code coastline_hack polar_coord_hack handle_relations);
 
 sub usage () {
     <<EOF;
@@ -179,6 +179,7 @@ my %resolved;
 my @bbox_wgs84;
 my %global_directives;
 my %place_to_population;
+my $handle_relations = $experiments{'handle_relations'};
 
 %global_directives =
     (
@@ -459,7 +460,11 @@ eval {
     $tp = Time::Progress->new;
     $tp->attr(min => 0, max => 2 * $#osm_files + 1);
     $tp->restart;
-    print STDERR "Two passes are following: nodes and ways\n";
+    if ($handle_relations) {
+	print STDERR "Three passes are following: nodes, ways, and relations\n";
+    } else {
+	print STDERR "Two passes are following: nodes and ways\n";
+    }
 };
 
 ######################################################################
@@ -627,7 +632,7 @@ for my $osm_file (@osm_files) {
 		} elsif ($railway_cat =~ m{^(?:crossing|level_crossing)$}) {
 		    push @or, ["ampeln", "B"];
 		} elsif ($railway_cat eq 'tram_stop') { # takes precedence over highway=bus_stop
-		    add_underline(\@or, '_oepnv', 'Tram');
+		    add_underline(\@or, '_oepnv', 'Tramstop');
 		} else {
 		    $unhandled{"node-railway=$railway_cat"}++;
 		}
@@ -636,7 +641,7 @@ for my $osm_file (@osm_files) {
 		if ($highway_cat eq 'traffic_signals') {
 		    push @or, ["ampeln", "X"];
 		} elsif ($highway_cat eq 'bus_stop') {
-		    add_underline(\@or, "_oepnv", "Bus");
+		    add_underline(\@or, "_oepnv", "Busstop");
 		} elsif ($highway_cat eq 'crossing' &&
 			 ((exists $tag{crossing} && ($tag{crossing} eq 'uncontrolled' || $tag{crossing} eq 'zebra')) ||
 			  (exists $tag{crossing_ref} && $tag{crossing_ref} eq 'zebra'))
@@ -747,6 +752,7 @@ for my $osm_file (@osm_files) {
 ######################################################################
 # WAYS
 my %seenway;
+my %way2nodes;
 for my $osm_file (@osm_files) {
     if ($v) {
 	if ($tp) {
@@ -824,6 +830,10 @@ for my $osm_file (@osm_files) {
 	    my $is_area = sub {
 		$nodes[0] == $nodes[-1];
 	    };
+
+	    if ($handle_relations) {
+		$way2nodes{$id} = \@nodes;
+	    }
 
 	    my $name   = $tag{'name'} || '';
 	    my $height = exists $tag{'height'} ? $tag{'height'} : $tag{'ele'};
@@ -1464,6 +1474,136 @@ for my $osm_file (@osm_files) {
 	}
     }
 }
+
+######################################################################
+# RELATIONS
+if ($handle_relations) {
+    my %seenrelation;
+    for my $osm_file (@osm_files) {
+	if ($v) {
+	    if ($tp) {
+		print STDERR $tp->report("\r  relations done %p elapsed: %L, ETA %E (" . substr(basename($osm_file),0,28) . ")", $osm_file_i++);
+	    } else {
+		warn "Parse $osm_file for relations...\n";
+	    }
+	}
+	my($dom, $reader) = open_osm($osm_file);
+	if ($dom) { die "NYI: no relation support with XML::LibXML, use XML::LibXML::Reader" }
+	set_info_handler($osm_file, $dom, $reader);
+
+    PARSE: {
+	    $reader->nextElement('relation') == 1 or last PARSE;
+	    if (DO_ASSERTS) {
+		$reader->name eq 'relation'
+		    or parse_warning($reader, "searching for <relation>");
+	    }
+
+	    my $next1 = sub {
+		if ($reader) {
+		    $reader->skipSiblings if $reader->depth == 2;
+		    my $res = $reader->nextSiblingElement;
+		    if (DO_ASSERTS) {
+			($res == 0 || $reader->name =~ m{^(?:relation)}) or
+			    parse_warning($reader, "after skipping a relation");
+		    }
+		}
+		no warnings 'exiting';
+		next;
+	    };
+
+	    while(do {
+		no warnings 'uninitialized';
+		($reader && $reader->name eq 'relation');
+	    }) {
+		my $relation = $reader;
+		my $id = $relation->getAttribute('id');
+		$next1->() if exists $seenrelation{$id};
+		$seenrelation{$id} = 1;
+
+		my @members;
+		my %tag;
+		tie %tag, 'Tie::IxHash' if SORTED_TAGS;
+		$reader->nextElement == 1 or last;
+		while(1) {
+		    my $node_name = $reader->name;
+		    if ($node_name eq 'member') {
+			push @members, { type => $reader->getAttribute('type'),
+					 ref  => $reader->getAttribute('ref'),
+					 role => $reader->getAttribute('role'),
+				       };
+		    } elsif ($node_name eq 'tag') {
+			$tag{$reader->getAttribute('k')} = $reader->getAttribute('v');
+		    } else {
+			last;
+		    }
+		    $reader->nextElement == 1 or last;
+		}
+
+		## In the Berlin data there's only one relation tagged
+		## with visible=no (why not false?), so probably wrong
+		## and does not need to be handled
+		#$next1->() if $tag{'visible'} && $tag{'visible'} eq 'false';
+
+		my @or;
+		my $name   = $tag{'name'} || '';
+
+		if (my $route = $tag{'route'}) {
+		    if ($route eq 'bicycle') {
+			for my $member (@members) {
+			    my $role = $member->{role} || '';
+			    my $cat = ($role eq 'forward' ? 'radroute;' :
+				       $role eq 'backward' ? ';radroute' : 'radroute');
+			    push @or, ['comments_route', $cat, $member];
+			}
+		    } elsif ($route eq 'bus') {
+			for my $member (@members) {
+			    my $role = $member->{role} || '';
+			    my $cat = ($role eq 'forward' ? 'Bus;' :
+				       $role eq 'backward' ? ';Bus' : 'Bus');
+			    push @or, ['_oepnv', $cat, $member];
+			}
+		    }
+		}
+
+	    OUTPUT_RECORD: for my $or (@or) {
+		    my($out_file, $cat, $member, %args) = @$or;
+
+		    my $name = $name;
+		    if ($args{name}) {
+			$name = $args{name};
+		    }
+
+		    my $member_id = $member->{'ref'};
+		    if (!exists $way2nodes{$member_id}) {
+			## Don't warn; it's usual that not all
+			## relation members are part of the osm
+			## download:
+			#warn "Member '$member_id' in relation '$id' is missing";
+		    } else {
+			my $out_array = $out{$out_file};
+			my @coords = map { $node2ll{$_} } @{ $way2nodes{$member_id} };
+			if (0 && $out_array) {
+			    # Check for continuations:
+			    my $last_record = $out_array->[-1];
+			    if ($last_record->[0] eq $name &&
+				$last_record->[1][-1] eq $coords[0] &&
+				$last_record->[2] eq $cat
+			       ) {
+				pop @coords;
+				push @{$last_record->[1]}, @coords;
+				next OUTPUT_RECORD;
+			    }
+			}
+			push @$out_array, [$name, \@coords, $cat];
+		    }
+		}
+	    }
+	}
+    }
+}
+
+######################################################################
+# POST PROCESSING
 
 resolve_node_fallback();
 sort_by_population_and_category();
