@@ -17357,8 +17357,8 @@ userdel	q4::inwork 48657,68265 49286,68297 49503,68415
 EOF
      },
      { from  => 1270980000, # 2010-04-11 12:00
-       until => 1291129200, # 2010-11-30 16:00
-       text  => 'Klemkestr. (Reinickendorf): Baustelle, Fahrtrichtung Richtung Residenzstr. zwischen Str. vor Schönholz und Emmentaler Strgesperrt. 12.04.2010 12:00 Uhr bis 30.11.2010 16:00 Uhr',
+       until => 1293807600, # 2010-12-31 16:00
+       text  => 'Klemkestr. (Reinickendorf): Baustelle, Richtung Residenzstr. zwischen Str. vor Schönholz und Emmentaler Str., 12.04.2010 12:00 Uhr bis 31.12.2010 16:00 Uhr ',
        type  => 'handicap',
        source_id => 'IM_015512',
        data  => <<EOF,
@@ -18136,9 +18136,9 @@ EOF
 userdel	2::inwork -2815,-3574 -3368,-4430
 EOF
      },
-     { from  => 1282168322, # 2010-08-18 23:52
-       until => 1291158000, # 2010-12-01 00:00
-       text  => 'Belzig: K6933: Brückeninstandsetzung / Streckenausbau Bad Belzig - Borne, 16.08.2010 bis 30.11.2010 ',
+     { from  => 1290975348, # 2010-11-28 21:15
+       until => 1292626800, # 2010-12-18 00:00
+       text  => 'Belzig: K6933: Brückeninstandsetzung / Streckenausbau Bad Belzig - Borne, 16.08.2010 bis 17.12.2010 ',
        type  => 'gesperrt',
        source_id => '106900748',
        data  => <<EOF,
@@ -18527,11 +18527,12 @@ EOF
 userdel	2::inwork 43875,-35850 44731,-35697
 EOF
      },
-     { from  => 1290546446, # --- ausgesetzt 1290294000, # 2010-11-21 00:00
-       until => 1290546455, # --- ausgesetzt 1291503599, # 2010-12-04 23:59
-       text  => 'Vollsperrung Falkentaler Steig in Berlin-Reinickendorf aufgrund von Straßenbaumaßnahmen im Ausführungszeitraum 22.11. bis 04.12.2010',
+     { from  => 1290585600, #1290546446, # --- ausgesetzt 1290294000, # 2010-11-21 00:00
+       until => 1291654800, #1290546455, # --- ausgesetzt 1291503599, # 2010-12-04 23:59
+       text  => 'Vollsperrung Falkentaler Steig in Berlin-Reinickendorf aufgrund von Straßenbaumaßnahmen, 24.11.2010 09:00 Uhr bis 06.12.2010 18:00 Uhr',
        type  => 'handicap',
-       source_id => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20101117.1500.319282.html',
+#       source_id => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20101117.1500.319282.html',
+       source_id => 'IM_016682',
        data  => <<EOF,
 userdel	q4::inwork 2492,24325 2708,24383
 userdel	q4::inwork 3367,23654 3311,23677 3235,23781 3161,23888 3012,24107

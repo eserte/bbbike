@@ -663,8 +663,8 @@ Prenzlauer Allee [Wohngebiet]	1 12154,15902 12030,15968
 Blumenstr.	1 12125,12490 12306,12459 12305,12440
 Blumenstr.	1 12305,12440 12118,12462
 Friedensplatz	1 8971,6154 8994,6144 9003,6121 8996,6106 8976,6094 8952,6109 8944,6127 8955,6147 8971,6154
-#: by: anonymous
-Westhafenstr.: Tor kann geschlossen sein	2 6083,14564 6025,14539 6015,14516 5997,14444 5920,14422 5217,14255
+#: by: anonymous and public imagery
+Westhafenstr.: Tor kann geschlossen sein; Unbefugten ist das Betreten nicht gestattet	2 6083,14564 6025,14539 6015,14516 5997,14444 5920,14422 5217,14255
 Frank-Schweitzer-Str.	1 19350,14997 19175,14926 19113,14901 19117,14875 19255,14911
 (Schulze-Boysen-Str. - Wilhelm-Guddorf-Str.)	1 15417,11681 15482,11729 15634,11656
 Hufelandweg	1s:q3 8630,13172 8618,13306 8582,13355
@@ -1704,9 +1704,7 @@ Elisabeth-Mara-Str.: Bauarbeiten bis zum Frühjahr 2011	2:inwork 10506,11567 1032
 #: last_checked: 2010-09-11
 Wagner-Régeny-Str.: Straße ist fertig, aber noch gesperrt	2:inwork 19487,3593 19377,3721
 # 
-#: last_checked: 2010-09-05
-#: next_check: 2011-09-01
-Rhinstr.: neues Wohngebiet, Weg gesperrt	2:inwork 18015,13846 17300,14133
+#XXX del --- #: last_checked: 2010-09-05 --- #: next_check: 2011-09-01 --- Rhinstr.: neues Wohngebiet, Weg gesperrt	2:inwork 18015,13846 17300,14133
 # 
 #: by: Ulrike Orlowski
 #: by: http://asp.vmzberlin.com/VMZ_LSBB_MELDUNGEN_WEB/Meldungskarte.jsp?back=true&map=true&x=52.53578&y=13.31063&zoom=13&meldungId=IM_014510

@@ -2503,8 +2503,8 @@ userdel	2::temp 9516,12010 9656,12021
        undef,
        {
          'source_id' => 'IM_015512',
-         'until' => 1291129200,
-         'text' => 'Klemkestr. (Reinickendorf): Baustelle, Fahrtrichtung Richtung Residenzstr. zwischen Str. vor Schönholz und Emmentaler Strgesperrt. 12.04.2010 12:00 Uhr bis 30.11.2010 16:00 Uhr',
+         'until' => 1293807600,
+         'text' => 'Klemkestr. (Reinickendorf): Baustelle, Richtung Residenzstr. zwischen Str. vor Schönholz und Emmentaler Str., 12.04.2010 12:00 Uhr bis 31.12.2010 16:00 Uhr ',
          'from' => 1270980000,
          'id' => 2043,
          'data' => 'userdel	q4::inwork; 8182,18761 8066,18754 7886,18742 7855,18697
@@ -2538,16 +2538,7 @@ userdel	2::temp 9516,12010 9656,12021
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'LSO-SG33-F10022',
-         'until' => 1291158000,
-         'text' => 'Prötzel: Kanal- und Straßenbauarbeiten Ortsdurchfahrt Prötzel, 29.03.2010 bis 30.11.2010 ',
-         'from' => 1271624843,
-         'id' => 2053,
-         'data' => 'userdel	q4::inwork 49255,26084 49808,26346
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'source_id' => 'LSO-SG33-E10039',
@@ -2592,7 +2583,7 @@ userdel	2::temp 9516,12010 9656,12021
        {
          'until' => undef,
          'permanent' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im November von 7.00 bis 18.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Dezember von 7.30 bis 17.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'from' => undef,
          'id' => 2068,
          'data' => '(Eingang Columbiadamm - Rundkurs auf dem Flughafen Tempelhof)	2::night 10691,8532 10640,8366 10598,8270 10575,8218
@@ -2640,16 +2631,7 @@ userdel	2::temp 9516,12010 9656,12021
        undef,
        undef,
        undef,
-       {
-         'source_id' => '106800201',
-         'until' => 1291158000,
-         'text' => 'Neuruppin: K6828: Straßenbau OL Karwe, 14.06.2010 bis 30.11.2010',
-         'from' => 1276547925,
-         'id' => 2080,
-         'data' => 'userdel	2::inwork -27035,49829 -25968,49631
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => '106401098',
          'until' => 1292626800,
@@ -2771,9 +2753,9 @@ userdel	2::temp 9516,12010 9656,12021
        },
        {
          'source_id' => '106900748',
-         'until' => 1291158000,
-         'text' => 'Belzig: K6933: Brückeninstandsetzung / Streckenausbau Bad Belzig - Borne, 16.08.2010 bis 30.11.2010 ',
-         'from' => 1282168322,
+         'until' => 1292626800,
+         'text' => 'Belzig: K6933: Brückeninstandsetzung / Streckenausbau Bad Belzig - Borne, 16.08.2010 bis 17.12.2010 ',
+         'from' => 1290975348,
          'id' => 2118,
          'data' => 'userdel	2::inwork -45941,-31977 -46134,-32389 -46514,-32785
 ',
@@ -2792,15 +2774,7 @@ userdel	2::temp 9516,12010 9656,12021
        undef,
        undef,
        undef,
-       {
-         'until' => 1291157999,
-         'text' => 'Die Charlottenstraße zwischen Hermann-Elflein-Straße und Schopenhauerstraße ist für den Bau von Hausanschlüssen halbseitig gesperrt. Im Baubereich ist eine Einbahnstraße in Richtung Wilhelmgalerie eingerichtet. Die Arbeiten dauern bis voraus. Ende November 2010. ',
-         'from' => 1283623066,
-         'id' => 2123,
-         'data' => 'userdel	q4::inwork; -13392,-1196 -13516,-1225
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'http://www.potsdam.de/cms/beitrag/10067788/966975/',
          'until' => 1343685600,
@@ -2860,16 +2834,7 @@ userdel	3 13150,7254 13047,7234 13034,7319
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'source_id' => 'http://www.berlin.de/ba-lichtenberg/presse/archiv/20101028.1120.316439.html',
-         'until' => 1291157999,
-         'text' => 'Werneuchener Straße: zwischen Konrad-Wolf-Straße und Große-Leege-Straße wird die Fahrbahn instand gesetzt. Für den Zeitraum vom 1. bis 30. November wird die Werneuchener Straße zur Einbahnstraße von der Konrad-Wolf-Straße aus in Richtung Große-Leege-Straße.',
-         'from' => 1288479600,
-         'id' => 2147,
-         'data' => 'userdel	q4::inwork; 16430,15168 16376,15209 16319,15229 16119,15302
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'LS/O-SG33-E/10/086',
          'until' => 1291503600,
@@ -2929,7 +2894,17 @@ userdel	3 13150,7254 13047,7234 13034,7319
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'IM_016682',
+         'until' => 1291654800,
+         'text' => 'Vollsperrung Falkentaler Steig in Berlin-Reinickendorf aufgrund von Straßenbaumaßnahmen, 24.11.2010 09:00 Uhr bis 06.12.2010 18:00 Uhr',
+         'from' => 1290585600,
+         'id' => 2162,
+         'data' => 'userdel	q4::inwork 2492,24325 2708,24383
+userdel	q4::inwork 3367,23654 3311,23677 3235,23781 3161,23888 3012,24107
+',
+         'type' => 'handicap'
+       },
        {
          'source_id' => 'LS/O-SG33-F/10/170',
          'until' => 1293836400,
@@ -2958,16 +2933,6 @@ userdel	3 13150,7254 13047,7234 13034,7319
          'from' => 1290380400,
          'id' => 2167,
          'data' => 'userdel	q4::inwork 25167,12119 25290,12088
-',
-         'type' => 'handicap'
-       },
-       {
-         'source_id' => 'http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20101126.1415.320541.html',
-         'until' => 1291014000,
-         'text' => 'Sachsendamm zwischen Gotenstr. und Priesterweg Richtung S-Bhf. Schöneberg wegen Bauarbeiten gesperrt, 26. November 2010 abends bis 29. November 2010 frühmorgens',
-         'from' => 1290803792,
-         'id' => 2168,
-         'data' => 'userdel	q4::inwork; 7491,7675 7316,7814
 ',
          'type' => 'handicap'
        }

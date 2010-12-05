@@ -1079,3 +1079,8 @@ Wustermarker Str.:	1 -4385,14305 -4556,14349
 Berliner Str.	3nocross::ignrte 10859,17854 10871,17722 10892,17491
 Borkumstr. -> Berliner Str.: Berliner Str.	3::igndisp 10956,17735 10871,17722 10892,17491
 Berliner Str. -> Borkumstr.: Berliner Str.	3::igndisp 10859,17854 10871,17722 10956,17735
+Lietzenburger Str.	3nocross::ignrte 5063,10384 5207,10399 5329,10422
+Fasanenstr. -> Fasanenstr.: Lietzenburger Str.	3::igndisp 5229,10716 5207,10399 5198,10234
+Fasanenstr. -> Lietzenburger Str.: Lietzenburger Str.	3::igndisp 5229,10716 5207,10399 5329,10422
+Lietzenburger Str. -> Fasanenstr.: Lietzenburger Str.	3::igndisp 5329,10422 5207,10399 5198,10234
+Lietzenburger Str. -> Fasanenstr.: Lietzenburger Str.	3::igndisp 5063,10384 5207,10399 5229,10716

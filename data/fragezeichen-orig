@@ -48,12 +48,12 @@ Zossener Str./Lindenstr.	?::projected 9856,10358 9873,10285
 #: next_check: 2010-12-15
 Stülerstr.	?::projected 6825,11486 6716,11439 6692,11365 6679,11319 6630,11247 6606,11222
 #
-#: last_checked: 2010-09-18
-#: next_check: 2011-01-01
+#: last_checked: 2010-12-01
+#: next_check: 2011-02-01
 Danziger Str.	?::projected 11712,14868 11879,14771 11990,14714 12040,14688 12128,14640 12317,14535 12425,14459 12630,14306 12729,14227 12901,14093 12975,13990 13037,13897 13100,13803 13166,13707 13225,13620 13228,13615 13330,13468
 #
-#: last_checked: 2010-08-14
-#: next_check: 2010-11-01
+#: last_checked: 2010-12-01
+#: next_check: 2011-02-01
 Kniprodestr./Am Friedrichshain	?::projected 12901,14093 12784,13961 12695,13864 12654,13819 12571,13798 12403,13755 12204,13719 12161,13711 12038,13685 11868,13646 11785,13625 11762,13619 11706,13635
 #
 #: last_checked: 2010-07 (by Roland Krause)
@@ -744,9 +744,9 @@ Marschallstr.: Qualität?	? -3708,15831 -3542,15871
 Rudow - Kleinziethen: Qualität?	? 15118,-970 15100,-1008 14652,-1410 14341,-1751 14119,-2010 13912,-2428 13857,-2452 13732,-2659 13540,-2681
 Diedersdorfer Weg - Marienfelder Allee, Kolonie Amstelveen: Qualität (laut ADFC-Karte gut befahrbar)? Wie ist die genaue Wegführung am Diedersdorfer Weg?	? 7781,-182 7540,18 7501,83
 # ansonsten gleiche Wegbeschaffenheit wie der kreuzende Weg:
-Am Marderberg, kreuzender Weg: genaue Wegführung?	? 14288,19459 14328,19527 14201,19946
+Am Marderberg, kreuzender Weg: genaue Wegführung?	? 14288,19459 14328,19527 14205,19918
 #: note: laut anonymen Eintrag "fester Sandweg", "für Autoverkehr gesperrt":
-Am Fließ: befahrbar, Qualität?	? 14751,19882 14386,20237 14263,20352 14128,20410 13991,20425 13955,20452 13938,20548 13584,20621
+Am Fließ: befahrbar, Qualität?	? 14751,19847 14386,20237 14263,20352 14128,20410 13991,20425 13955,20452 13938,20548 13584,20621
 Schönerlinder Str.: ist die Radwegbenutzungspflicht nördlich der Autobahnbrücke (Berliner Ring) auch aufgehoben?	? 12957,26186 13192,26628 13267,26891
 Parforceweg: Qualität (das östliche Ende sieht nur mäßig aus)?	? -643,7252 -728,7310 -1008,7427 -1142,7493 -1308,7558 -1328,7597 -1787,7932 -1843,8128 -2028,8270 -2078,8217 -2117,8204 -2156,8208 -2294,8232 -2386,8282
 Verlängerung Verbindungschaussee: Qualität?	? -2834,5578 -3605,4520
@@ -3624,7 +3624,6 @@ Freilandweg: Qualität?	? 3071,21801 3156,21832
 Feldmarkweg: Qualität?	? 3304,21205 3314,21165 3458,21206 3450,21244
 Königsweg (Tegel): Qualität?	? 2131,20406 2184,20616
 Lichtweg: Qualität?	? 1390,18651 1302,18398
-Liesborner Weg: Qualität?	? 1719,19093 1642,19116 1610,19034 1677,18989
 #: note: Siemenssiedlung am Hohenzollernkanal III (HOKA III) vvv
 Straße A: Qualität?	? 1179,15892 1268,15916 1275,15854
 Straße B: Genaue Lage der Straße? Qualität?	? 1233,15889 1207,15868
@@ -4560,9 +4559,3 @@ Ehm-Welk-Str. - Feldberger Ring: existiert eine Durchfahrt für Radfahrer? Qualit
 #: note: Privatstraße
 #: XXX fehlt in Berlin.coords.data
 Amelieweg: Qualität? Wo liegt die Straße genau?	? 22822,12387 22736,12412
-#: by: Germar Molter: vvv
-#: note: unbeleuchtet
-#: XXX genaue Lage?
-Radweg nördl. des Krankenhauses Herzberge	? 17203,13519 17167,13655 17110,13811 17095,13972 17154,14093 17300,14133 18015,13846
-Herzbergstr. - Siegfriedstr.	? 17167,13655 17056,13784 16875,13834
-#: by: ^^^
