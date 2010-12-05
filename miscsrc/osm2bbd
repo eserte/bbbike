@@ -1848,6 +1848,7 @@ sub set_info_handler {
 	    $msg .= sprintf ", bytes consumed %d, line %d, current node name '%s', id=%s", $reader->byteConsumed, $reader->lineNumber, $reader->name, $reader->getAttribute('id');
 	}
 	print STDERR $msg, "\n";
+	print STDERR "Memory: ", join(", ", currmem()), "\n";
 	require Carp; Carp::carp('Currently');
     };
 }
@@ -1894,6 +1895,59 @@ sub is_interactive {
 	1;
     } else {
 	0;
+    }
+}
+# REPO END
+
+# REPO BEGIN
+# REPO NAME currmem /home/e/eserte/work/srezic-repository 
+# REPO MD5 00fa532c42d6ade32b01e3fad34331a4
+
+=item currmem([$pid])
+
+=for category System
+
+Return ($mem, $realmem) of the current process or process $pid, if $pid
+is given.
+
+On Linux, an even shorter alternative for getting the virtual memory is:
+
+    cat /proc/$$/stat | cut -d" " -f 23
+
+=cut
+
+sub currmem {
+    my $pid = shift || $$;
+    no warnings 'portable'; # because of possible large hex values on 64bit systems
+    if ($^O eq 'freebsd' && open(MAP, "dd if=/proc/$pid/map bs=64k 2>/dev/null |")) { # FreeBSD
+	my $mem = 0;
+	my $realmem = 0;
+	while(<MAP>) {
+	    my(@l) = split /\s+/;
+	    my $delta = (hex($l[1])-hex($l[0]));
+	    $mem += $delta;
+	    if ($l[11] ne 'vnode') {
+		$realmem += $delta;
+	    }
+	}
+	close MAP;
+	($mem, $realmem);
+    } elsif ($^O eq 'linux' && open(MAP, "/proc/$pid/maps")) { # Linux
+	my $mem = 0;
+	my $realmem = 0;
+	while(<MAP>) {
+	    my(@l) = split /\s+/;
+	    my($start,$end) = split /-/, $l[0];
+	    my $delta = (hex($end)-hex($start));
+	    $mem += $delta;
+	    if (!defined $l[5] || $l[5] eq '') {
+		$realmem += $delta;
+	    }
+	}
+	close MAP;
+	($mem, $realmem);
+    } else {
+	undef;
     }
 }
 # REPO END
