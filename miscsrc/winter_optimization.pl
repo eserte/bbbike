@@ -81,12 +81,23 @@ my %usability_desc =
 	do_cobblestone_opt => 0,
 	do_tram_opt        => 0,
        )
+     : $winter_hardness eq 'XXX_busroute'
+     ? (cat_to_usability => { NN => 1,
+			      N  => 1,
+			      NH => 6,
+			      H  => 6,
+			      HH => 6,
+			      B  => 6,
+			    },
+	do_busroute_opt     => 1,
+       )
      : die "winter-hardness should be snowy, very_snowy, or dry_cold"
     );
 my %cat_to_usability   = %{ $usability_desc{cat_to_usability} };
 my $do_cobblestone_opt =    $usability_desc{do_cobblestone_opt};
 my $do_kfz_adjustment  =    $usability_desc{do_kfz_adjustment};
 my $do_tram_opt        =    $usability_desc{do_tram_opt};
+my $do_busroute_opt    =    $usability_desc{do_busroute_opt};
 my $do_cyclepath_opt   = 0; # Bei Winterwetter können Radwege komplett ignoriert werden
 my $do_bridge_opt      = 0; # I don't think anymore bridges are critical (and mostly if you have to use one, then usually you cannot avoid it at all)
 
@@ -128,6 +139,10 @@ if ($do_kfz_adjustment) {
 }
 if ($do_tram_opt) {
     $str{"tram"} = Strassen->new("comments_tram");
+}
+if ($do_busroute_opt) {
+    my($busroute_file) = create_busroute();
+    $str{"busroute"} = Strassen->new($busroute_file);
 }
 #lock_keys %str;
 
@@ -247,6 +262,13 @@ while(my($k1,$v) = each %{ $net{"s"}->{Net} }) {
 		}
 	    }
 
+	    if ($do_busroute_opt) {
+		my $busroute = $net{"busroute"}->{Net}{$k1}{$k2};
+		if (defined $busroute && $res < 6) {
+		    $res = 6;
+		}
+	    }
+
 	    if    ($res < 0) { $res = 0 }
 	    elsif ($res > 6) { $res = 6 }
 	}
@@ -296,6 +318,17 @@ sub create_strassen_with_NH {
 	["$FindBin::RealBin/replacestrassen", "-catexpr", 's/.*/NN::igndisp/'],
 	">>", $tmpfile) or die $!;
     $tmpfile
+}
+
+sub create_busroute {
+    my $cmo = "$FindBin::RealBin/../data/comments_misc-orig";
+    -r $cmo or die "Cannot read $cmo";
+    use File::Temp qw(tempfile);
+    use IPC::Run qw(run);
+    my($tmpfh,$tmpfile) = tempfile(SUFFIX => ".bbd", UNLINK => 1);
+    run(["$FindBin::RealBin/grepstrassen", "-catrx", '^busroute_N', $cmo],
+	">", $tmpfile) or die $!;
+    $tmpfile;
 }
 
 __END__
