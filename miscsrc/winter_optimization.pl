@@ -23,18 +23,25 @@ use Strassen;
 eval 'use BBBikeXS';
 #use Hash::Util qw(lock_keys);
 use Getopt::Long;
-use Storable qw(store);
 use Fcntl qw(LOCK_EX LOCK_NB);
 
 my $do_display = 0;
 my $one_instance = 0;
 my $winter_hardness = 'snowy';
+my $as_json;
 
 if (!GetOptions("display" => \$do_display,
 		"one-instance" => \$one_instance,
 		"winter-hardness=s" => \$winter_hardness,
+		"as-json" => \$as_json,
 	       )) {
-    die "usage: $0 [-display] [-one-instance] [-winter-hardness snowy|very_snowy|dry_cold]\n";
+    die "usage: $0 [-display] [-one-instance] [-as-json] [-winter-hardness snowy|very_snowy|dry_cold]\n";
+}
+
+if ($as_json) {
+    require JSON::XS;
+} else {
+    require Storable;
 }
 
 # compat for old integers
@@ -101,7 +108,7 @@ my $do_busroute_opt    =    $usability_desc{do_busroute_opt};
 my $do_cyclepath_opt   = 0; # Bei Winterwetter können Radwege komplett ignoriert werden
 my $do_bridge_opt      = 0; # I don't think anymore bridges are critical (and mostly if you have to use one, then usually you cannot avoid it at all)
 
-my $outfile = "$FindBin::RealBin/../tmp/winter_optimization." . $winter_hardness . ".st";
+my $outfile = "$FindBin::RealBin/../tmp/winter_optimization." . $winter_hardness . "." . ($as_json ? 'json' : 'st');
 
 my $lock_file = "/tmp/winter_optimization.lck";
 if ($one_instance) {
@@ -297,7 +304,15 @@ while(my($k1,$v) = each %{ $net{"s"}->{Net} }) {
     }
 }
 
-store($net, "$outfile.$$~");
+if ($as_json) {
+    my $json = JSON::XS->new->ascii->encode($net);
+    open my $ofh, ">", "$outfile.$$~"
+	or die "Cannot write to $outfile.$$~: $!";
+    print $ofh $json;
+    close $ofh or die $!;
+} else {
+    Storable::nstore($net, "$outfile.$$~");
+}
 chmod 0644, "$outfile.$$~";
 rename "$outfile.$$~", $outfile
     or die "Can't rename from $outfile.$$~ to $outfile: $!";

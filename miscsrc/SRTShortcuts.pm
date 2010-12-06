@@ -63,6 +63,8 @@ use vars qw($hm_layer);
 
 use vars qw($show_situation_at_point_for_route);
 use vars qw(%want_plot_type_file %layer_for_type_file);
+use vars qw($want_winter_optimization);
+$want_winter_optimization = '' if !defined $want_winter_optimization;
 
 sub register {
     my $pkg = __PACKAGE__;
@@ -457,6 +459,29 @@ EOF
 		   require "$bbbike_rootdir/miscsrc/TrafficLightCircuitGPSTracking.pm";
 		   TrafficLightCircuitGPSTracking::tk_gui($main::top);
 	       },
+	      ],
+	      [Cascade => $do_compound->("Winter optimization"), -menuitems =>
+	       [
+		[Radiobutton => "Disable",
+		 -variable => \$want_winter_optimization,
+		 -value => '',
+		 -command => sub {
+		     do_winter_optimization(undef);
+		 },
+		],
+		(
+		 map {
+		     my $winter_hardness = $_;
+		     [Radiobutton => $winter_hardness,
+		      -variable => \$want_winter_optimization,
+		      -value => $winter_hardness,
+		      -command => sub {
+			  do_winter_optimization($winter_hardness);
+		      },
+		    ];
+		 } qw(XXX_busroute snowy very_snowy dry_cold)
+		),
+	       ],
 	      ],
 	      "-",
 	      [Cascade => $do_compound->("Rare or old"), -menu => $rare_or_old_menu],
@@ -2199,6 +2224,74 @@ sub garmin_devcap {
 	       -command => sub {
 		   $t->destroy;
 	       })->pack(qw(-side left));
+}
+
+######################################################################
+# Winter optimization
+sub do_winter_optimization {
+    my($winter_hardness) = @_;
+    if (!defined $winter_hardness) {
+	delete $main::penalty_subs{'winteroptimization'};
+    } else {
+	# XXX Taken from bbbike.cgi and changed slightly
+	require JSON::XS;
+	my $penalty;
+	for my $try (1 .. 2) {
+	    for my $dir ("$bbbike_rootdir/tmp", @Strassen::datadirs) {
+		my $f = "$dir/winter_optimization.$winter_hardness.json";
+		if (-r $f && -s $f) {
+		    my $json = do { open my $fh, $f or die $!; local $/; <$fh> };
+		    $penalty = JSON::XS->new->decode($json);
+		    #$penalty = Storable::retrieve($f);
+		    last;
+		}
+	    }
+	    if (!$penalty) {
+		if ($try == 2) {
+		    die "Can't find winter_optimization.$winter_hardness.json in @Strassen::datadirs and cannot build...";
+		} else {
+		    my @cmd = ($^X, "$bbbike_rootdir/miscsrc/winter_optimization.pl", "-as-json", "-winter-hardness", $winter_hardness, "-one-instance");
+		    main::IncBusy($main::top);
+		    eval {
+			system @cmd;
+			if ($? != 0) {
+			    die "The command <@cmd> failed";
+			}
+		    };
+		    my $err = $@;
+		    main::DecBusy($main::top);
+		    if ($err) {
+			# Reset everything
+			delete $main::penalty_subs{'winteroptimization'};
+			$want_winter_optimization = '';
+			main::status_message($err, "die");
+		    }
+		}
+	    } else {
+		last;
+	    }
+	}
+
+	my $koeff = 1;
+##XXX implement?
+# 	if ($q->param('pref_winter') eq 'WI1') {
+# 	    $koeff = 0.5;
+# 	}
+
+	$main::penalty_subs{'winteroptimization'} = sub {
+	    my($pen, $next_node, $last_node) = @_;
+	    if (exists $penalty->{$last_node.",".$next_node}) {
+		my $this_penalty = $penalty->{$last_node.",".$next_node};
+		$this_penalty = $koeff * $this_penalty + (100-$koeff*100)
+		    if $koeff != 1;
+		if ($this_penalty < 1) {
+		    $this_penalty = 1;
+		}		# avoid div by zero or negative values
+		$pen *= (100 / $this_penalty);
+	    }
+	    $pen;
+	};
+    }
 }
 
 1;
