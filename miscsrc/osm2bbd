@@ -1563,6 +1563,11 @@ if ($handle_relations) {
 			    push @or, ['_oepnv', $cat, $member];
 			}
 		    }
+		} elsif ($tag{boundary} && $tag{boundary} eq 'administrative') {
+		    my $admin_level = $tag{admin_level} || '?';
+		    for my $member (@members) {
+			push @or, ['_boundary', 'Z'.$admin_level, $member];
+		    }
 		}
 
 	    OUTPUT_RECORD: for my $or (@or) {
@@ -1580,16 +1585,17 @@ if ($handle_relations) {
 			## download:
 			#warn "Member '$member_id' in relation '$id' is missing";
 		    } else {
+			$out{$out_file} ||= [];
 			my $out_array = $out{$out_file};
 			my @coords = map { $node2ll{$_} } @{ $way2nodes{$member_id} };
-			if (0 && $out_array) {
+			if ($out_array) {
 			    # Check for continuations:
 			    my $last_record = $out_array->[-1];
 			    if ($last_record->[0] eq $name &&
 				$last_record->[1][-1] eq $coords[0] &&
 				$last_record->[2] eq $cat
 			       ) {
-				pop @coords;
+				shift @coords;
 				push @{$last_record->[1]}, @coords;
 				next OUTPUT_RECORD;
 			    }
