@@ -138,16 +138,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1291589999,
-         'text' => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt. 04.12. - 05.12.2010 ',
-         'from' => 1291417200,
-         'id' => 166,
-         'data' => '#: next_check: 2010-12-06 (nächste Termine: 11.12. - 12.12.2010, 18.12. - 19.12.2010)
-userdel	2 9986,13412 10317,13248
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -408,16 +399,7 @@ userdel	q4 5656,10876 5652,11004
        undef,
        undef,
        undef,
-       {
-         'until' => 1291590000,
-         'text' => 'Lichtenrader Weihnachtsmarkt: Bahnhofstr. (Lichtenrade) in beiden Richtungen zwischen Steinstr. und Goltzstr gesperrt (04.12.2010 bis 05.12.2010) ',
-         'from' => 1291417200,
-         'id' => 417,
-         'data' => '#: next_check: 2010-12-06 (zweites Wochenende vom 11.12.2010 bis 12.12.2010)
-userdel	q4 10310,-2136 10453,-2133 10509,-2131 10631,-2130 10747,-2129 10983,-2116
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2388,14 +2370,7 @@ userdel	2::temp 9516,12010 9656,12021
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1291589999,
-         'text' => 'Richardplatz (Neukölln) und die Durchfahrt aller angrenzenden Straßen Rixdorfer Weihnachtsmarkt, Straße vollständig gesperrt (03.12.2010 bis 05.12.2010)',
-         'from' => 1291330800,
-         'file' => 'rixdorfer_weihnachtsmarkt.bbd',
-         'id' => 1998,
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2835,16 +2810,7 @@ userdel	3 13150,7254 13047,7234 13034,7319
        },
        undef,
        undef,
-       {
-         'source_id' => 'LS/O-SG33-E/10/086',
-         'until' => 1291503600,
-         'text' => 'Kremmen: B273: Abbruch der Brücke bei Kremmen, Kremmen - Staffelde, 20.09.2010 bis 04.12.2010 ',
-         'from' => 1288384501,
-         'id' => 2148,
-         'data' => 'userdel	2::inwork -17114,37670 -17262,37425
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => '106701877',
          'until' => 1292367600,
@@ -2866,16 +2832,7 @@ userdel	3 13150,7254 13047,7234 13034,7319
          'type' => 'handicap'
        },
        undef,
-       {
-         'source_id' => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20101105.1400.317649.html',
-         'until' => 1291503600,
-         'text' => 'Bauarbeiten in der Klemkestraße zwischen Kopenhagener Straße und Emmentaler Straße vom 10.11.2010 bis 04.12.2010; Einbahnstraße in Richtung Emmentaler Straße ',
-         'from' => 1289257200,
-         'id' => 2152,
-         'data' => 'userdel	q4::inwork; 7855,18697 7785,18730 7690,18716 7609,18707 7520,18701 7492,18699 7434,18695 7320,18688 7217,18681
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'http://www.potsdam.de/cms/beitrag/10070344/966975/',
          'until' => 1304200800,
@@ -2894,17 +2851,7 @@ userdel	3 13150,7254 13047,7234 13034,7319
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_016682',
-         'until' => 1291654800,
-         'text' => 'Vollsperrung Falkentaler Steig in Berlin-Reinickendorf aufgrund von Straßenbaumaßnahmen, 24.11.2010 09:00 Uhr bis 06.12.2010 18:00 Uhr',
-         'from' => 1290585600,
-         'id' => 2162,
-         'data' => 'userdel	q4::inwork 2492,24325 2708,24383
-userdel	q4::inwork 3367,23654 3311,23677 3235,23781 3161,23888 3012,24107
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'LS/O-SG33-F/10/170',
          'until' => 1293836400,
