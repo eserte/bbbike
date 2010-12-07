@@ -98,6 +98,36 @@ my %usability_desc =
 			    },
 	do_busroute_opt     => 1,
        )
+     : $winter_hardness eq 'grade1' # frischer Schnee: nur HH gut befahrbar, H und NH mit Abstufungen
+     ? (cat_to_usability => { NN => 1,
+			      N  => 1,
+			      NH => 2,
+			      H  => 2,
+			      HH => 6,
+			      B  => 6,
+			    },
+       )
+     : $winter_hardness eq 'grade2' # nach 2-3 Tagen: HH, H, NH, Bus gut befahrbar
+     ? (cat_to_usability => { NN => 1,
+			      N  => 1,
+			      NH => 6,
+			      H  => 6,
+			      HH => 6,
+			      B  => 6,
+			    },
+	do_busroute_opt     => 1,
+       )
+     : $winter_hardness eq 'grade3' # nach 3-4 Tagen: HH, H, NH, N gut befahrbar (außer RW6)
+     ? (cat_to_usability => { NN => 1,
+			      N  => 6,
+			      NH => 6,
+			      H  => 6,
+			      HH => 6,
+			      B  => 6,
+			    },
+	do_busroute_opt     => 1,
+	do_living_street_opt => 1,
+       )
      : die "winter-hardness should be snowy, very_snowy, or dry_cold"
     );
 my %cat_to_usability   = %{ $usability_desc{cat_to_usability} };
@@ -107,6 +137,7 @@ my $do_tram_opt        =    $usability_desc{do_tram_opt};
 my $do_busroute_opt    =    $usability_desc{do_busroute_opt};
 my $do_cyclepath_opt   = 0; # Bei Winterwetter können Radwege komplett ignoriert werden
 my $do_bridge_opt      = 0; # I don't think anymore bridges are critical (and mostly if you have to use one, then usually you cannot avoid it at all)
+my $do_living_street_opt = 0;
 
 my $outfile = "$FindBin::RealBin/../tmp/winter_optimization." . $winter_hardness . "." . ($as_json ? 'json' : 'st');
 
@@ -138,7 +169,7 @@ if ($do_bridge_opt) {
     $str{"br"} = Strassen->new("brunnels");
 }
 $str{"qs"} = Strassen->new("qualitaet_s");
-if ($do_cyclepath_opt) {
+if ($do_cyclepath_opt || $do_living_street_opt) {
     $str{"rw"} = Strassen->new("radwege_exact");
 }
 if ($do_kfz_adjustment) {
@@ -210,6 +241,16 @@ while(my($k1,$v) = each %{ $net{"s"}->{Net} }) {
 		    if ($rw =~ /^RW(2|8|)$/) {
 			$res = 1;
 			push @reason, "Radweg";
+		    }
+		}
+	    }
+
+	    if ($do_living_street_opt) {
+		my $rw = $net{"rw"}->{Net}{$k1}{$k2};
+		if (defined $rw) {
+		    if ($rw =~ /^RW6$/) {
+			$res = 1;
+			push @reason, "verkehrsberuhigter Bereich";
 		    }
 		}
 	    }

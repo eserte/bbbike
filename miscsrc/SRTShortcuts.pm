@@ -471,15 +471,19 @@ EOF
 		],
 		(
 		 map {
-		     my $winter_hardness = $_;
-		     [Radiobutton => $winter_hardness,
-		      -variable => \$want_winter_optimization,
-		      -value => $winter_hardness,
-		      -command => sub {
-			  do_winter_optimization($winter_hardness);
-		      },
-		    ];
-		 } qw(XXX_busroute snowy very_snowy dry_cold)
+		     if ($_ eq '-') {
+			 '-';
+		     } else {
+			 my $winter_hardness = $_;
+			 [Radiobutton => $winter_hardness,
+			  -variable => \$want_winter_optimization,
+			  -value => $winter_hardness,
+			  -command => sub {
+			      do_winter_optimization($winter_hardness);
+			  },
+			 ];
+		     }
+		 } qw(- XXX_busroute - snowy very_snowy dry_cold - grade1 grade2 grade3)
 		),
 	       ],
 	      ],
