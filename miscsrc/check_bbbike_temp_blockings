@@ -226,6 +226,7 @@ sub _output_future {
     # Sortieren nach dem nächsten Ereignis (Beginn oder Ende)
     no warnings 'uninitialized';
     my $id = 0;
+    my @errors;
     for my $o (map  { $_->[1] }
 	       sort { $a->[0] <=> $b->[0] }
 	       map  {
@@ -258,8 +259,17 @@ sub _output_future {
 		    $id,
 			$name, format_date($o->{from}),
 			    format_date($o->{until});
+		# 'file' entries are not allowed anymore in
+		# "optimized" files, because it's possibly downloaded
+		# during bbbike data updates
+		if ($o->{file}) {
+		    push @errors, "Found 'file' entry in record id $id";
+		}
 	    }
 	}
+    }
+    if (@errors) {
+	die "Found the following errors:\n" . join("\n", @errors);
     }
 }
 
