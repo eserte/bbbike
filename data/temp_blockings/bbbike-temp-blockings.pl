@@ -233,13 +233,23 @@ EOF
        until => Time::Local::timelocal(reverse(2006,12-1,9,23,59,59)),
        text  => 'Richardplatz Alt-Rixdorfer Weihnachtsmarkt, gesperrt. Dauer: bis 09.12.2006. ',
        type  => 'gesperrt',
-       file  => 'rixdorfer_weihnachtsmarkt.bbd',
+       #file  => 'rixdorfer_weihnachtsmarkt.bbd', # XXX do not use anymore!!!
+       data => '', # dummy
      },
      { from  => 1290962654, # PERIODISCH! # früher: 1102672800, # 2004-12-10 11:00
        until => 1293145199, # PERIODISCH! # früher: 1102805999, # 2004-12-11 23:59
-       file  => 'spandauer_weihnachtsmarkt.bbd',
        text  => 'Spandauer Weihnachtsmarkt',
        type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 -3275,14407 -3231,14383 -3204,14368 -3155,14340
+userdel	2 -3275,14407 -3338,14333
+userdel	2 -3150,14631 -3185,14556 -3205,14512 -3228,14468 -3275,14407
+userdel	2 -3275,14407 -3350,14446 -3393,14470 -3410,14479 -3440,14498 -3481,14523
+userdel	2 -3227,14260 -3155,14340
+userdel	2 -3227,14260 -3293,14304 -3338,14333
+userdel	2 -3552,14082 -3457,14189 -3409,14241 -3338,14333
+userdel	2 -3014,14559 -3039,14522 -3054,14498 -3089,14440 -3110,14408 -3142,14358 -3155,14340
+EOF
      },
      { from  => 1070600400, # 2003-12-05 06:00 # note: periodisch, siehe unten
        until => 1070838000, # 2003-12-08 00:00
@@ -1150,7 +1160,8 @@ EOF
        text  => 'Richardplatz Neukölln Straßensperrung Weihnachtsmarkt 7.12.2007-8.12.2007 ',
        type  => 'gesperrt',
        source_id => 'IM_007405',
-       file  => 'rixdorfer_weihnachtsmarkt.bbd',
+       #file  => 'rixdorfer_weihnachtsmarkt.bbd', # XXX do not use anymore!!!
+       data => '', # dummy
      },
      { from  => 1100038749, # 2004-11-09 23:19
        until => 1100559600, # 2004-11-16 00:00
@@ -16966,7 +16977,18 @@ EOF
        until => 1291589999, # PERIODISCH! # früher: 1260140400, # 2009-12-07 00:00
        text  => 'Richardplatz (Neukölln) und die Durchfahrt aller angrenzenden Straßen Rixdorfer Weihnachtsmarkt, Straße vollständig gesperrt (03.12.2010 bis 05.12.2010)',
        type  => 'gesperrt',
-       file  => 'rixdorfer_weihnachtsmarkt.bbd',
+       data  => <<EOF,
+userdel	2 13423,7707 13426,7674
+userdel	2 13423,7707 13297,7654
+userdel	2 13426,7674 13400,7642 13303,7622
+userdel	2 12980,7597 13100,7626 13177,7644
+userdel	2 13188,7590 13177,7644
+userdel	2 13188,7590 13303,7622
+userdel	2 13297,7654 13303,7622
+userdel	2 13297,7654 13177,7644
+userdel auto	3 13446,7879 13423,7707 13426,7674 13560,7646
+userdel auto	3 13560,7646 13426,7674 13423,7707 13446,7879
+EOF
      },
      { from  => 1212876000, # 2008-06-08 00:00
        until => 1264978800, # 2010-02-01 00:00

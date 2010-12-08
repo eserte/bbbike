@@ -5,8 +5,16 @@ push @temp_blocking,
          'until' => 1293145199,
          'text' => 'Spandauer Weihnachtsmarkt',
          'from' => 1290962654,
-         'file' => 'spandauer_weihnachtsmarkt.bbd',
          'id' => 36,
+         'data' => 'userdel	2 -3275,14407 -3231,14383 -3204,14368 -3155,14340
+userdel	2 -3275,14407 -3338,14333
+userdel	2 -3150,14631 -3185,14556 -3205,14512 -3228,14468 -3275,14407
+userdel	2 -3275,14407 -3350,14446 -3393,14470 -3410,14479 -3440,14498 -3481,14523
+userdel	2 -3227,14260 -3155,14340
+userdel	2 -3227,14260 -3293,14304 -3338,14333
+userdel	2 -3552,14082 -3457,14189 -3409,14241 -3338,14333
+userdel	2 -3014,14559 -3039,14522 -3054,14498 -3089,14440 -3110,14408 -3142,14358 -3155,14340
+',
          'type' => 'gesperrt'
        },
        undef,
@@ -2449,16 +2457,7 @@ userdel	2::temp 9516,12010 9656,12021
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_015434',
-         'until' => 1291734000,
-         'text' => 'Erkstr. (Neukölln): Baustelle, Fahrtrichtung gesperrt (bis Mitte 12.2010) Richtung Sonnenallee, 29.03.2010 12:41 Uhr bis 07.12.2010 16:00 Uhr',
-         'from' => 1269772860,
-         'id' => 2033,
-         'data' => 'userdel	q4::inwork; 12598,8390 12771,8439
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2870,16 +2869,6 @@ userdel	3 13150,7254 13047,7234 13034,7319
          'from' => 1290029645,
          'id' => 2165,
          'data' => 'userdel	q4::inwork -19268,10819 -19323,11087 -19149,11495
-',
-         'type' => 'handicap'
-       },
-       undef,
-       {
-         'until' => 1291762800,
-         'text' => 'Bauarbeiten in der Donizettistraße zwischen Mozart- und Schubertstraße, 23.11.2010-7.12.2010',
-         'from' => 1290380400,
-         'id' => 2167,
-         'data' => 'userdel	q4::inwork 25167,12119 25290,12088
 ',
          'type' => 'handicap'
        }
