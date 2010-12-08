@@ -1193,7 +1193,9 @@ Maulbronner Ufer: Parkweg	Q1 7161,4091 6904,4162
 (Luckeweg - Hildburghauser Str.): Parkweg	Q1 7531,581 7599,725
 Voigtstr.: Kopfsteinpflaster	Q2 14702,12157 14748,12314 14776,12418 14798,12502 14801,12517 14814,12626 14842,12826
 Friedrichshaller Str.: Kopfsteinpflaster	Q2 3083,7587 2911,7686 2786,7721 2774,7655
-Christburger Str.: Kopfsteinpflaster	Q2 11642,14625 11920,14468 12177,14335
+Christburger Str.: Kopfsteinpflaster	Q2 11642,14625 11920,14468
+#: note: public imagery
+Christburger Str.: Asphalt	Q0 11920,14468 12177,14335
 Pasteurstr.: Kopfsteinpflaster	Q2 12486,14143 12608,14070 12784,13961
 Ebelingstr.: Kopfsteinpflaster	Q2 13487,13115 13610,13169 13707,13206
 Cuvrystr.: Asphalt	Q0 13053,10088 13132,10239
@@ -4527,6 +4529,7 @@ Rietzestr.: Asphalt	Q0 12693,15225 12472,15356
 Strehlener Str.: Asphalt	Q0 22652,10392 22538,10477 22403,10523
 #: by: ahmBerlin
 (Am Maselakekanal): Asphalt	Q0 -2140,17171 -2502,17233 -2606,17272
+Cotheniusstr.: Asphalt	Q0 13228,13615 13430,13733
 ######################################################################
 #: by: anonymous vvv
 # 
@@ -5033,8 +5036,6 @@ Beifußweg: mäßiger Beton	Q1 15307,3683 15611,3448 15921,3215
 #: confirmed_by: Raimund Bayer
 Egestorffstr.: Asphalt	Q0 9147,-1022 9123,-1321 9093,-1670
 Dorotheenstr.: Asphalt	Q0 22643,4058 22831,4070 22965,4124
-#: note: sehr plausibel (allerdings war der östliche Teil definitiv asphaltiert!):
-Cotheniusstr.: Kopfsteinpflaster	Q2 13228,13615 13430,13733
 Loreleystr.: Asphalt	Q0 19171,8280 19228,8350 19275,8419 19326,8493
 Görresstr.: Asphalt	Q0 5318,7424 5272,7458 5158,7560 5066,7668
 Presselstr.: schlechtes Kopfsteinpflaster	Q3 6107,4718 6183,4785 6185,4839 6191,4923
