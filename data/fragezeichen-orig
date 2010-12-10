@@ -377,6 +377,7 @@ Wilhelm-Kabus-Str./Naumannstr.: Ampelanlage in Bau	?::inwork 7725,8033
 # 
 #: last_checked: 2010-10-29
 #: next_check: 2011-12-31
+#: by: http://www.stadtumbau-berlin.de/O-W-Gruenzug-Fussgaenger-und-Radfahrersteg.4699.0.html
 Verbindung zwischen Leuthener Platz und General-Pape-Str. (evtl. mit Verlängerung) inkl. Brücke über die Bahnstrecke für Fußgänger und Radfahrer (4m breit), Realisierung bis 2011-12-31	?::projected 7716,8356 7837,8354 7893,8327 8088,8283
 # 
 #: last_checked: 2010-11-19
@@ -431,8 +432,7 @@ Prinzenstr.: gibt es hier Radstreifen?	? 8939,16668 8926,16572 8788,16264
 Fichtenweg: Teilstück als Straßenland eingezogen?	? -2949,17946 -2963,17872
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/39re.pdf/file
 Straße wird eingezogen	? 14908,9939 14956,10028
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/41re.pdf/file
-Traberweg: Einziehung von Straßenland: was bedeutet das hier?	? 18351,8222 18416,8163 18490,8104 18570,8025
+#XXX del --- : by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/41re.pdf/file --- wahrscheinlich bedeutet das gar nichts --- Traberweg: Einziehung von Straßenland: was bedeutet das hier?	? 18351,8222 18416,8163 18490,8104 18570,8025
 Havelwiesen: genaue Lage der Grünanlage?	? -2526,16779 -2427,16779 -2422,16656 -2504,16663
 Feuerbachstr./Fregestr.: gibt es hier einen Zebrastreifen?	? 5596,6369
 #: XXX_indoor: nach handicap_s-orig übetragen
@@ -1908,6 +1908,7 @@ Rütliplatz: Qualität?	? 2951,2112 2995,2111
 Weißdornweg: Qualität?	? 2852,2342 3003,2339
 Murtener Str.: Qualität?	? 2746,2590 2809,2615 3015,2606 3163,2598
 Trienter Str.: Qualität?	? 10229,16927 10228,17025 10226,17098 10228,17191 10228,17231
+#: note: Einbahnstraße nur für Autos offen von der Müllerstr. aus (http://www.flickr.com/photos/epha/5243994267/in/pool-39413187@N00/)
 Kongostr.: Qualität? Ist die Straße zwischen Togostr. und Guineastr. für Autos gesperrt?	? 6450,16325 6349,16213 6258,16111 6244,16096 6202,16041 6129,15970
 Sambesistr.: Qualität?	? 5968,15914 5787,15741
 Ugandastr.: Qualität?	? 6071,15768 5906,15623
@@ -4558,4 +4559,10 @@ Ehm-Welk-Str. - Feldberger Ring: existiert eine Durchfahrt für Radfahrer? Qualit
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/48re.pdf/file
 #: note: Privatstraße
 #: XXX fehlt in Berlin.coords.data
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/50re.pdf/file (Hausnummern 1..21)
 Amelieweg: Qualität? Wo liegt die Straße genau?	? 22822,12387 22736,12412
+(Welzower Steig - Zabel-Krüger-Damm): Qualität? Nachts beleuchtet? Führt hier die Radroute 2 entlang?	? 5929,22339 5821,22435
+(Welzower Steig - Zabel-Krüger-Damm): Qualität? Nachts beleuchtet? Führt hier die Radroute 2 entlang?	? 5828,22446 5619,22766
+(Zabel-Krüger-Damm - Benekendorffstr.): Qualität? Nachts beleuchtet? Führt hier die Radroute 2 entlang?	? 5574,22747 5521,22825 5357,23004
+(Zehntwerderweg - Hermsdorfer See): Qualität? Nachts beleuchtet? Führt hier die Radroute 2 entlang?	? 5291,23072 5232,23139
+(Weg am Packereigraben): Qualität? Nachts beleuchtet?	? 5895,22493 5828,22446 5821,22435 5783,22418 5668,22283 5619,22168 5490,22095 5373,22089 5177,22142 5108,22156 5033,22122 4917,22119 4884,22097
