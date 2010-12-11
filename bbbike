@@ -13882,6 +13882,9 @@ sub show_info {
 	if (!$bbbike_google_photo) {
 	    $bbbike_google_photo = load_photo($top, 'bbbike_google');
 	}
+	if (!$google_streetview_photo) {
+	    $google_streetview_photo = load_photo($top, 'google_streetview');
+	}
 
 	{
 	    my @bbbike_google_map_defs = (($devel_host
@@ -13957,8 +13960,8 @@ sub show_info {
 	    $info_text->insert("end", "\n");
 	    $linkcount++;
 
-	    if ($google_photo) {
-		$info_text->imageCreate("end", -image => $google_photo,
+	    if ($google_streetview_photo) {
+		$info_text->imageCreate("end", -image => $google_streetview_photo,
 					-align => "bottom", -padx => 2, -pady => 1);
 	    }
 
