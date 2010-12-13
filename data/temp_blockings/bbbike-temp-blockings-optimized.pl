@@ -2457,7 +2457,16 @@ userdel	2::temp 9516,12010 9656,12021
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'IM_015434',
+         'until' => 1293116400,
+         'text' => 'Erkstr. (Neukölln): Baustelle, Fahrtrichtung gesperrt (bis Mitte 12.2010) Richtung Sonnenallee, 29.03.2010 12:41 Uhr bis 23.12.2010 16:00 Uhr',
+         'from' => 1269772860,
+         'id' => 2033,
+         'data' => 'userdel	q4::inwork; 12598,8390 12771,8439
+',
+         'type' => 'handicap'
+       },
        undef,
        undef,
        undef,
@@ -2871,6 +2880,29 @@ userdel	3 13150,7254 13047,7234 13034,7319
          'data' => 'userdel	q4::inwork -19268,10819 -19323,11087 -19149,11495
 ',
          'type' => 'handicap'
+       },
+       undef,
+       undef,
+       undef,
+       {
+         'source_id' => 'INKO_104731',
+         'until' => 1293836399,
+         'text' => 'Hermann-Hesse-Str. (Pankow) Richtung Pastor-Niemöller-Platz zwischen Tschaikowskistr.und Pastor-Niemöller-Platz Baustelle, Fahrtrichtung gesperrt (bis Ende 12/2010) ',
+         'from' => 1292184575,
+         'id' => 2169,
+         'data' => 'userdel	q4::inwork; 9501,18902 9681,19179 9811,19302
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'LS/O-SG33-E/10/086',
+         'until' => 1293145200,
+         'text' => 'Kremmen: B273: Abbruch der Brücke bei Kremmen Kremmen - Staffelde, bis 23.12.2010',
+         'from' => 1292184708,
+         'id' => 2170,
+         'data' => 'userdel	2::inwork -17114,37670 -17262,37425
+',
+         'type' => 'gesperrt'
        }
      
 );

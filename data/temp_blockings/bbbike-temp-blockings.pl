@@ -3465,12 +3465,11 @@ EOF
 userdel	2::inwork -19908,17940 -18793,18169
 EOF
      },
-     { from  => 1291417200, # PERIODISCH! # früher: 1165660181, # 2006-12-09 11:29
-       until => 1291590000, # PERIODISCH! # früher: 1165708800, # 2006-12-10 01:00
+     { from  => 1291417200, # PERIODISCH! 2. und 3. Advent # früher: 1165660181, # 2006-12-09 11:29
+       until => 1291590000, # PERIODISCH! 2. und 3. Advent # früher: 1165708800, # 2006-12-10 01:00
        text  => 'Lichtenrader Weihnachtsmarkt: Bahnhofstr. (Lichtenrade) in beiden Richtungen zwischen Steinstr. und Goltzstr gesperrt (04.12.2010 bis 05.12.2010) ',
        type  => 'gesperrt',
        data  => <<EOF,
-#: next_check: 2010-12-06 (zweites Wochenende vom 11.12.2010 bis 12.12.2010)
 userdel	q4 10310,-2136 10453,-2133 10509,-2131 10631,-2130 10747,-2129 10983,-2116
 EOF
      },
@@ -17290,8 +17289,8 @@ userdel	2::inwork 50359,-20087 49368,-19096
 EOF
      },
      { from  => 1269772860, # 2010-03-28 12:41
-       until => 1291734000, # 2010-12-07 16:00
-       text  => 'Erkstr. (Neukölln): Baustelle, Fahrtrichtung gesperrt (bis Mitte 12.2010) Richtung Sonnenallee, 29.03.2010 12:41 Uhr bis 07.12.2010 16:00 Uhr',
+       until => Time::Local::timelocal(reverse(2010-1900,12-1,23,16,0,0)), # 1291734000, # 2010-12-07 16:00
+       text  => 'Erkstr. (Neukölln): Baustelle, Fahrtrichtung gesperrt (bis Mitte 12.2010) Richtung Sonnenallee, 29.03.2010 12:41 Uhr bis 23.12.2010 16:00 Uhr',
        type  => 'handicap',
        source_id => 'IM_015434',
        data  => <<EOF,
@@ -18611,6 +18610,24 @@ EOF
        source_id => 'http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20101126.1415.320541.html',
        data  => <<EOF,
 userdel	q4::inwork; 7491,7675 7316,7814
+EOF
+     },
+     { from  => 1292184575, # 2010-12-12 21:09
+       until => 1293836399, # 2010-12-31 23:59
+       text  => 'Hermann-Hesse-Str. (Pankow) Richtung Pastor-Niemöller-Platz zwischen Tschaikowskistr.und Pastor-Niemöller-Platz Baustelle, Fahrtrichtung gesperrt (bis Ende 12/2010) ',
+       type  => 'gesperrt',
+       source_id => 'INKO_104731',
+       data  => <<EOF,
+userdel	q4::inwork; 9501,18902 9681,19179 9811,19302
+EOF
+     },
+     { from  => 1292184708, # 2010-12-12 21:11
+       until => 1293145200, # 2010-12-24 00:00
+       text  => 'Kremmen: B273: Abbruch der Brücke bei Kremmen Kremmen - Staffelde, bis 23.12.2010',
+       type  => 'gesperrt',
+       source_id => 'LS/O-SG33-E/10/086',
+       data  => <<EOF,
+userdel	2::inwork -17114,37670 -17262,37425
 EOF
      },
     );
