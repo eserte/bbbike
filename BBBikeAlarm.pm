@@ -463,8 +463,7 @@ sub tk_leave {
     my $end_time = $args{-epoch} || end_time($time);
     my $text = $args{-text};
     $text = "Leave" if !defined $text || $text eq "";
-    $text =~ s/[\"\\]//g; # XXX quote properly
-    bg_system("$^X $FindBin::RealBin/BBBikeAlarm.pm -tk -time $end_time -text \"$text\"");
+    bg_system($^X, "$FindBin::RealBin/BBBikeAlarm.pm", "-tk", "-time", $end_time, "-text", $text, "-encoding", "utf-8");
 }
 
 sub palm_leave {
@@ -1177,6 +1176,7 @@ sub restart_alarms {
 	while(my($k,$v) = each %$pids) {
 	    my(@l) = split /\t/, $v;
 	    my($host, $pid, $time, $desc) = @l;
+	    $desc = _decode_desc($desc);
 	    my $state = "unknown";
 	    if ($host eq $this_host) {
 		if (!kill(0 => $pid)) {
@@ -1200,6 +1200,7 @@ sub show_all {
 	while(my($k,$v) = each %$pids) {
 	    my(@l) = split /\t/, $v;
 	    my($host, $pid, $time, $desc) = @l;
+	    $l[3] = _decode_desc($desc);
 	    my $state = "unknown";
 	    if ($host eq $this_host) {
 		$state = (kill(0 => $pid) ? M("läuft") : M("läuft nicht"));
@@ -1232,7 +1233,8 @@ sub add_tk_alarm {
 
     eval {
 	my $pids = open_dbm(-readonly => 0);
-	$pids->{$this_host.":".$pid} = join("\t", $this_host, $pid, $time, $desc);
+	my $desc_octets = _encode_desc($desc);
+	$pids->{$this_host.":".$pid} = join("\t", $this_host, $pid, $time, $desc_octets);
 	untie %$pids;
     };
     warn $@ if $@;
@@ -1340,6 +1342,22 @@ sub time2epoch {
     }
 }
 
+sub _decode_desc {
+    my $v = shift;
+    if (eval { require Encode; 1 }) {
+	$v = Encode::decode('utf-8', $v);
+    }
+    $v;
+}
+
+sub _encode_desc {
+    my $v = shift;
+    if (eval { require Encode; 1 }) {
+	$v = Encode::encode('utf-8', $v);
+    }
+    $v;
+}
+
 # REPO BEGIN
 # REPO NAME is_in_path /home/e/eserte/src/repository 
 # REPO MD5 1aa226739da7a8178372aa9520d85589
@@ -1403,12 +1421,28 @@ sub CenterWindow {
 # REPO NAME bg_system /home/e/eserte/src/repository 
 # REPO MD5 aa3191a2004671b54fd024be12389d0d
 sub bg_system {
-    my($cmd) = @_;
-    #warn "cmd=$cmd\n";
+    my(@args) = @_;
     if ($^O eq 'MSWin32') {
-	system 1, $cmd;
+	for (@args) {
+	    s/[\"\\]//g; # XXX quote properly
+	}
+	system 1, "@args";
     } else {
-	system "$cmd &";
+	my $pid1 = fork;
+	die "Cannot fork: $!" if !defined $pid1;
+	if (!$pid1) {
+	    my $pid2 = fork;
+	    if (!defined $pid2) {
+		warn "Cannot fork: $!";
+		CORE::exit(1);
+	    }
+	    if (!$pid2) {
+		exec @args;
+		warn "Cannot exec @args: $!";
+		CORE::exit(2);
+	    }
+	    CORE::exit(0);
+	}
     }
 }
 # REPO END
@@ -1427,6 +1461,7 @@ my $interactive_small;
 my $ask;
 my $show_all;
 my $restart;
+my $encoding;
 require Getopt::Long;
 if (!Getopt::Long::GetOptions("-tk!" => \$use_tk,
 			      "-time=s" => \$time,
@@ -1434,16 +1469,21 @@ if (!Getopt::Long::GetOptions("-tk!" => \$use_tk,
 			      "-interactive!" => \$interactive,
 			      "-interactive-small!" => \$interactive_small,
 			      "-ask!" => \$ask,
+			      "-encoding=s" => \$encoding,
 			      "showall|list" => \$show_all,
 			      "restart" => \$restart,
 			     )) {
     die "Usage $0 [-tk [-ask]] [-time hh:mm] [-text message]
 		  [-interactive | -interactive-small]
-                  [-showall|-list] [-restart]
+                  [-showall|-list] [-restart] [-encoding ...]
 ";
 }
 
 $time = BBBikeAlarm::time2epoch($time) if defined $time;
+if (defined $text && defined $encoding) {
+    require Encode;
+    $text = Encode::decode($encoding, $text);
+}
 
 if ($interactive || $interactive_small) {
     require Tk;
@@ -1485,7 +1525,7 @@ From cmdline:
 
     perl BBBikeAlarm.pm [-tk [-ask]] [-time hh:mm] [-text message]
 		  [-interactive | -interactive-small]
-                  [-showall|-list] [-restart]
+                  [-showall|-list] [-restart] [-encoding ...]
 
 From script:
 
