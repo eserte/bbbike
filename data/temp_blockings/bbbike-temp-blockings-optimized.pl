@@ -2383,15 +2383,7 @@ userdel	2::temp 9516,12010 9656,12021
        undef,
        undef,
        undef,
-       {
-         'until' => 1292194799,
-         'text' => 'Alt-Köpenicker Weihnachtsmarkt vom 3. Dezember 2010 bis zum 12. Dezember 2010',
-         'from' => 1291330800,
-         'id' => 2003,
-         'data' => 'userdel	2::temp 22111,4562 22162,4546 22214,4548
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
