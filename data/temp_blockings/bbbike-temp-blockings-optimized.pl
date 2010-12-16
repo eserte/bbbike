@@ -2811,16 +2811,7 @@ userdel	3 13150,7254 13047,7234 13034,7319
        undef,
        undef,
        undef,
-       {
-         'source_id' => '106701877',
-         'until' => 1292367600,
-         'text' => 'Schöneiche bei Berlin: L302, L338: Gleis- und Straßenbau (Knotenumbau L302/L338) OL Schöneiche Knoten Rahnsdorfer Str. Vollsperrung, 28.10.2010 01:00 Uhr bis 14.12.2010 ',
-         'from' => 1288134000,
-         'id' => 2149,
-         'data' => 'userdel	q4::inwork 30290,8562 30118,8128
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'IM_016598',
          'until' => 1301580000,
