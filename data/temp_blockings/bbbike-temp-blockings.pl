@@ -1269,12 +1269,11 @@ EOF
 userdel	q4 13225,-681 13176,-161 13165,-34 13124,216 13165,-34 13176,-161 13225,-681 13230,-712 13309,-1268
 EOF
      },
-     { from  => 1291417200, # PERIODISCH! # früher: 1102654800, # 2004-12-10 06:00
-       until => 1291589999, # PERIODISCH! # früher: 1102892400, # 2004-12-13 00:00
-       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt. 04.12. - 05.12.2010 ',
+     { from  => 1292626800, # PERIODISCH, Advents-Wochenenden! # früher: 1102654800, # 2004-12-10 06:00
+       until => 1292799599, # PERIODISCH, Advents-Wochenenden! # früher: 1102892400, # 2004-12-13 00:00
+       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt. 18.12. - 19.12.2010 ',
        type  => 'gesperrt',
        data  => <<EOF,
-#: next_check: 2010-12-06 (nächste Termine: 11.12. - 12.12.2010, 18.12. - 19.12.2010)
 userdel	2 9986,13412 10317,13248
 EOF
      },
@@ -14857,9 +14856,10 @@ userdel	2::inwork 12431,52894 12615,52952 13967,53380 15301,53802 15886,54280 17
 EOF
      },
      { from  => 1247954400, # 2009-07-19 00:00
-       until => 1292972400, # 2010-12-22 00:00
-       text  => 'B 102 Treuenbrietzener Str. OD Jüterbog, zw. Dammtor und Bülowstr. Straßenausbau Vollsperrung 20.07.2009-21.12.2010 ',
+       until => Time::Local::timelocal(reverse(2011-1900,5-1,31,12,0,0)), # 1292972400, # 2010-12-22 00:00
+       text  => 'B 102 Treuenbrietzener Str. OD Jüterbog, zw. Dammtor und Bülowstr. Straßenausbau Vollsperrung 20.07.2009-31.05.2011 ',
        type  => 'handicap',
+       source_id => 'LS/S-SG33-W/09/135',
        data  => <<EOF,
 userdel	q4::inwork -12541,-46115 -13108,-46122
 EOF
@@ -17928,8 +17928,8 @@ userdel	2::inwork -903,6923 -643,7252 -348,7641 425,8766
 EOF
      },
      { from  => 1278267896, # 2010-07-04 20:24
-       until => 1293836400, # 2011-01-01 00:00
-       text  => 'Tauche: B87: Ausbau der Ortslage Trebatsch hier: Vollsperrung der Spreebrücke B 87, Ortslage Trebatsch, 24.02.2010 bis 31.12.2010 ',
+       until => Time::Local::timelocal(reverse(2011-1900,3-1,31,12,0,0)), # 1293836400, # 2011-01-01 00:00
+       text  => 'Tauche: B87: Ausbau der Ortslage Trebatsch hier: Vollsperrung der Spreebrücke B 87, Ortslage Trebatsch, 24.02.2010 bis 31.03.2011 ',
        type  => 'gesperrt',
        source_id => 'LS/O-SG33-F/10/013',
        data  => <<EOF,
@@ -18087,11 +18087,11 @@ EOF
 userdel	q4::inwork 35900,13643 35427,13624
 EOF
      },
-     { from  => 1280404080, # 2010-07-29 13:48
-       until => 1287309900, # 1292598000 2010-12-17 16:00
-       text  => 'Tucholskystr. (Mitte): Baustelle, Straße vollständig gesperrt zwischen Oranienburger Str. und Auguststr., 30.07.2010 13:48 Uhr bis 17.12.2010 16:00 Uhr ',
+     { from  => 1292490120, # 2010-12-16 10:02
+       until => 1293112800, # 2010-12-23 15:00
+       text  => 'Tucholskystr. (Mitte): Baustelle, Straße vollständig gesperrt (bis 23.12.2010) in beiden Richtungen zwischen Oranienburger Str. und Auguststr., 17.12.2010 10:02 Uhr bis 23.12.2010 15:00 Uhr ',
        type  => 'handicap',
-       source_id => 'IM_016116',
+       source_id => 'IM_016759',
        data  => <<EOF,
 userdel	q4::inwork 9605,13248 9651,13406
 EOF

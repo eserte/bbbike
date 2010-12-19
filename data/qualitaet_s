@@ -5097,7 +5097,10 @@ Diedenhofer Str.: Kopfsteinpflaster	Q2 11188,14184 11316,14360
 Straßburger Str.: Kopfsteinpflaster	Q2 10902,13604 11060,13865 11160,14002 11262,14136
 Potsdamer Str. (Lichterfelde): Kopfsteinpflaster	Q2 3193,3793 3375,3544 3492,3371 3599,3242 3646,3154 3646,3034 3644,2937 3641,2827
 Dessauerstr.: mäßiges Kopfsteinpflaster	Q2 6725,2494 6651,2479 6465,2356 6337,2271 6232,2201 6196,2204 6021,2071 5865,1975
-Geibelstr. (Lichtenrade): gepflastert	Q2 10143,-1026 10143,-987 10126,-834 10124,-790 10082,-671 10064,-628 10034,-546 10018,-494 9991,-413 9968,-345
+Geibelstr. (Lichtenrade): Kopfsteinpflaster	Q2 10143,-1026 10143,-987
+Geibelstr. (Lichtenrade): Beton	Q0 10143,-987 10126,-834 10124,-790 10082,-671 10064,-628
+Geibelstr. (Lichtenrade): teilweise unbefestigt, teilweise Beton/Asphalt	Q2 10064,-628 10034,-546
+Geibelstr. (Lichtenrade): Verbundsteinpflaster	Q1 10034,-546 10018,-494 9991,-413 9968,-345
 Geibelstr. (Lichtenrade): sehr schlechtes und welliges Kopfsteinpflaster	Q3 9968,-345 9861,-44 9826,48 9789,150
 Rosenheimer Str.: Asphalt	Q0 6851,9365 6717,9339 6446,9328 6357,9322 6239,9344
 Rosenheimer Str.: Verbundsteinpflaster	Q0 6239,9344 6164,9329
@@ -5915,7 +5918,7 @@ Zelterstr.: guter Asphalt	Q0 11967,15700 11849,15760 11784,15800
 Coppistr.: Beton	Q1 15667,11296 15786,11549 15848,11528 16023,11459 16119,11435
 Otto-Grüneberg-Weg: Kopfsteinpflaster	Q2 3258,12035 3177,12100 3091,12071
 Hanne Nüte: guter Asphalt	Q0 13717,5175 13761,4992 13758,4926 13695,4859 13675,4855
-Rotenkruger Weg: schlechtes Kopfsteinpflaster	Q3 9838,327 9892,188 9966,-22 10079,-321 10182,-601 10239,-752 10243,-796 10260,-993 10228,-1099
+Rotenkruger Weg: schlechtes Kopfsteinpflaster	Q3 9838,327 9892,188 9966,-22 10079,-321 10182,-601 10239,-752 10243,-796 10260,-993 10236,-1071
 Goethestr.: schlechtes Kopfsteinpflaster	Q3 9709,-333 9808,-339 9968,-345 10079,-321 10181,-300 10266,-284
 Goethestr.: asphaltiert	Q0 10266,-284 10414,-255 10510,-235 10586,-220 10665,-200 10788,-172
 Reulestr.: sehr guter Beton	Q0 8858,4579 8561,4535
