@@ -18630,4 +18630,13 @@ EOF
 userdel	2::inwork -17114,37670 -17262,37425
 EOF
      },
+     { from  => 1292831040, # 2010-12-20 08:44
+       until => 1293623040, # 2010-12-29 12:44
+       text  => 'Köpenicker Allee (Köpenick): Straßenschäden, Straße vollständig gesperrt in beiden Richtungen zwischen Köpenicker Str. und An der Wuhlheide, 21.12.2010 08:44 Uhr bis 29.12.2010 12:44 Uhr ',
+       type  => 'handicap',
+       source_id => 'IM_016766',
+       data  => <<EOF,
+userdel	q4::inwork 21233,6096 20722,6971
+EOF
+     },
     );

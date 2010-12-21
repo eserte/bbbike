@@ -146,15 +146,7 @@ userdel	2 -3014,14559 -3039,14522 -3054,14498 -3089,14440 -3110,14408 -3142,1435
        undef,
        undef,
        undef,
-       {
-         'until' => 1292799599,
-         'text' => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt. 18.12. - 19.12.2010 ',
-         'from' => 1292626800,
-         'id' => 166,
-         'data' => 'userdel	2 9986,13412 10317,13248
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2854,16 +2846,7 @@ userdel	3 13150,7254 13047,7234 13034,7319
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'source_id' => '106300839',
-         'until' => 1292713200,
-         'text' => 'Wustermark: K6304: Straßenneubau OD Priort (zw. Kartzow und Priort), 15.11.2010 bis 18.12.2010',
-         'from' => 1290029645,
-         'id' => 2165,
-         'data' => 'userdel	q4::inwork -19268,10819 -19323,11087 -19149,11495
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2886,6 +2869,16 @@ userdel	3 13150,7254 13047,7234 13034,7319
          'data' => 'userdel	2::inwork -17114,37670 -17262,37425
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_016766',
+         'until' => 1293623040,
+         'text' => 'Köpenicker Allee (Köpenick): Straßenschäden, Straße vollständig gesperrt in beiden Richtungen zwischen Köpenicker Str. und An der Wuhlheide, 21.12.2010 08:44 Uhr bis 29.12.2010 12:44 Uhr ',
+         'from' => 1292831040,
+         'id' => 2171,
+         'data' => 'userdel	q4::inwork 21233,6096 20722,6971
+',
+         'type' => 'handicap'
        }
      
 );
