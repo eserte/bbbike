@@ -230,7 +230,7 @@ sub get_html {
 	$bbbikeroot = "/bbbike";
 	$get_public_link = sub {
 	    my $link = BBBikeCGIUtil::my_url(CGI->new(), -full => 1);
-	    $link =~ s{localhost$bbbikeroot/cgi}{bbbike.de/cgi-bin};
+	    $link =~ s{localhost(:?:\d+)?$bbbikeroot/cgi}{bbbike.de/cgi-bin};
 	    $link;
 	};
     }
