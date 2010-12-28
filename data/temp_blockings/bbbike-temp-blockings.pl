@@ -5029,7 +5029,7 @@ EOF
        text  => 'B 102 Große Milower Str. OD Rathenow, zw. Eigendorfstr. u. Grünauer Weg Neub. B188n, Mont. Stahlträger Vollsperrung 15.07.2006-15.07.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork -62333,20390 -62269,19881 -62153,19281
+userdel	q4::inwork -62333,20390 -62290,19904 -62217,19221
 EOF
      },
      { from  => 1152396000, # 2006-07-09 00:00
@@ -5717,7 +5717,7 @@ EOF
        text  => 'B 102 Große Milower Str. OD Rathenow, zw. Eigendorfstr. u. Grünauer Weg Neub. B188n, Mont. Stahlträger Vollsperrung 02.09.2006-02.09.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork -62153,19281 -62269,19881 -62333,20390
+userdel	2::inwork -62217,19221 -62290,19904 -62333,20390
 EOF
      },
      { from  => 1156975200, # 2006-08-31 00:00
@@ -6220,7 +6220,7 @@ EOF
        text  => 'B 102 Milower Landstraße Bahnübergang in der OD Rathenow Gleisbauarbeiten Vollsperrung 21.10.2006-21.10.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork -62153,19281 -62269,19881
+userdel	2::inwork -62217,19221 -62290,19904
 EOF
      },
      { from  => 1160431200, # 2006-10-10 00:00
@@ -6781,7 +6781,7 @@ EOF
        text  => 'B 102 Große Milower Str. OD Rathenow, zw. Eigendorfstr. u. Grünauer Weg Neub. B188n, Brückenbauarb. Vollsperrung 09.12.2006-09.12.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork -62269,19881 -62333,20390
+userdel	2::inwork -62290,19904 -62333,20390
 EOF
      },
      { from  => 1165100400, # 2006-12-03 00:00
@@ -12893,7 +12893,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_008229',
        data  => <<EOF,
-userdel	1::inwork 10351,14981 10516,15039 10618,15076 10881,15047
+userdel	1::inwork 10366,14992 10515,15045 10618,15076 10881,15047
 EOF
      },
      { from  => 1226267354, # 2008-11-09 22:49
@@ -13303,7 +13303,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_011698',
        data  => <<EOF,
-userdel	q4::inwork; 10351,14981 10516,15039 10618,15076 10881,15047
+userdel	q4::inwork; 10366,14992 10515,15045 10618,15076 10881,15047
 EOF
      },
      { from  => 1238347383, # 2009-03-29 19:23
@@ -13597,7 +13597,7 @@ EOF
        text  => 'B 102 Große Milower Str. OD Rathenow, zw. Wolzenstr. und Heidefeldstr. Neubau Kreisverkehr Vollsperrung 02.03.2009-24.05.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork -62269,19881 -62333,20390
+userdel	q4::inwork -62290,19904 -62333,20390
 EOF
      },
      { from  => 1244757600, # 2009-06-12 00:00
@@ -15894,7 +15894,7 @@ EOF
        text  => 'B 102 Große Milower Str. OD Rathenow, zw. Wolzenstr. und Körgraben Neubau Kreisverkehr Vollsperrung 20.05.2009-31.12.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork -62269,19881 -62333,20390
+userdel	q4::inwork -62290,19904 -62333,20390
 EOF
      },
      { from  => 1252188000, # 2009-09-06 00:00
@@ -18613,7 +18613,7 @@ userdel	q4::inwork; 7491,7675 7316,7814
 EOF
      },
      { from  => 1292184575, # 2010-12-12 21:09
-       until => 1293836399, # 2010-12-31 23:59
+       until => 1293357631, # 2010-12-31 23:59 1293836399
        text  => 'Hermann-Hesse-Str. (Pankow) Richtung Pastor-Niemöller-Platz zwischen Tschaikowskistr.und Pastor-Niemöller-Platz Baustelle, Fahrtrichtung gesperrt (bis Ende 12/2010) ',
        type  => 'gesperrt',
        source_id => 'INKO_104731',
@@ -18631,7 +18631,7 @@ userdel	2::inwork -17114,37670 -17262,37425
 EOF
      },
      { from  => 1292831040, # 2010-12-20 08:44
-       until => 1293623040, # 2010-12-29 12:44
+       until => 1293357689, # 2010-12-29 12:44 1293623040
        text  => 'Köpenicker Allee (Köpenick): Straßenschäden, Straße vollständig gesperrt in beiden Richtungen zwischen Köpenicker Str. und An der Wuhlheide, 21.12.2010 08:44 Uhr bis 29.12.2010 12:44 Uhr ',
        type  => 'handicap',
        source_id => 'IM_016766',
