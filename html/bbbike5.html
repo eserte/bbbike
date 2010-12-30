@@ -4,10 +4,12 @@
     <title>BBBike</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link href="autocomplete.css" rel="stylesheet" type="text/css" />
+    <link href="openlayers.css" rel="stylesheet" type="text/css" />
     <link rev="made" href="mailto:slaven@rezic.de" />
     <script type="text/javascript" src="jquery-1.4.3.min.js"></script>
     <script type="text/javascript" src="jquery-ui-1.8.6.custom.min.js"></script>
     <script type="text/javascript" src="jquery.autocomplete.js"></script>
+    <script type="text/javascript" src="http://openlayers.org/api/OpenLayers.js"></script>
     <script type="text/javascript"><!--
       var cgiroot = "/bbbike/cgi";
       var jsoncgi = cgiroot + "/bbbikejson.cgi";
@@ -35,7 +37,14 @@
 	      route_html += strname + "<br/>";
 	  }
           $("#search_result").html(route_html);
+	  route_to_map(data.LongLatPath);
       }
+
+function XXX() {
+var path = ["13.385901,52.484986","13.386532,52.484943","13.388324,52.484429","13.390894,52.484302","13.394281,52.483977","13.400334,52.483749","13.401189,52.484684","13.401525,52.485040","13.404320,52.485045","13.407211,52.486147","13.408319,52.487160","13.407787,52.488406","13.407741,52.488784","13.407867,52.489017","13.408387,52.489604","13.410726,52.490919","13.412235,52.491612","13.413057,52.491559","13.413285,52.491799","13.413826,52.492557","13.414303,52.493190","13.415218,52.494592","13.414678,52.494724","13.414894,52.495009","13.415235,52.495527","13.416876,52.495761","13.419165,52.496464","13.419871,52.496483","13.421456,52.498111","13.422299,52.499127","13.426391,52.499190","13.430266,52.499382","13.431177,52.499336","13.431973,52.499381","13.433052,52.499540","13.435180,52.499832","13.436304,52.499999","13.437931,52.500260","13.440416,52.500665","13.441573,52.500526","13.442323,52.500950","13.443118,52.500986","13.444527,52.500872","13.444947,52.501119","13.446445,52.502343","13.446855,52.502725","13.448039,52.504259","13.448735,52.505285","13.449075,52.505776","13.449338,52.506160","13.450086,52.507393","13.450818,52.508598","13.452617,52.508291","13.455385,52.510104","13.456248,52.509951","13.456674,52.510836","13.458444,52.510538","13.460566,52.510209","13.462191,52.509967","13.462765,52.510833"];
+route_to_map(path);
+}
+
       jQuery().ready(function($){
 	    $("#start").autocomplete({
 		url:'strassen_suggest.json',
@@ -60,7 +69,69 @@
 	        minchar:2
 	    });
 	    $("#goal_crossing_box").hide();
+//XXX();//for testing only XXX
 	});
+
+	var map;
+        function map_init() {
+	    if (map) return; // already initialized
+
+//// wms map is ugly and quite feature-less, but easy to use
+//            map = new OpenLayers.Map('map');
+//            var layer = new OpenLayers.Layer.WMS( "OpenLayers WMS",
+//                    "http://vmap0.tiles.osgeo.org/wms/vmap0", {layers: 'basic'} );
+//            map.addLayer(layer);
+
+	    map = new OpenLayers.Map({
+	        div: "map",
+		allOverlays: true,
+		units: "dd"
+	    });
+
+	    var osm = new OpenLayers.Layer.OSM();
+//XXX	    var gmap = new OpenLayers.Layer.Google("Google Streets", {visibility: false});
+
+	    // note that first layer must be visible
+//XXX	    map.addLayers([osm, gmap]);
+	    map.addLayers([osm]);
+
+            map.addControl(new OpenLayers.Control.LayerSwitcher());
+	    //map.setCenter(new OpenLayers.LonLat(13.5,52.5), 13); // XXX 13? use Brandenburger Tor bzw. Zentrum des datasets
+	}
+
+        function route_to_map(path) {
+	    map_init();
+
+            var pointList = [];
+	    for(var lonlat_i in path) {
+	        var lonlat = path[lonlat_i].split(",");
+		var lon = lonlat[0];
+		var lat = lonlat[1];
+		// XXX really? transform needed that way?
+		var newPoint = new OpenLayers.Geometry.Point(lon, lat).transform(new OpenLayers.Projection("EPSG:4326"),map.getProjectionObject());
+		pointList.push(newPoint);
+	    }
+
+	    var style_green = {
+                strokeColor: "#00FF00",
+                strokeWidth: 3,
+                //strokeDashstyle: "dashdot",
+                //pointRadius: 6,
+                //pointerEvents: "visiblePainted"
+            };
+	    var layer_style = OpenLayers.Util.extend({}, OpenLayers.Feature.Vector.style['default']);
+            layer_style.fillOpacity = 0.2;
+            layer_style.graphicOpacity = 1;
+
+	    var routeFeature = new OpenLayers.Feature.Vector(
+                new OpenLayers.Geometry.LineString(pointList),null,style_green);
+
+            var vectorLayer = new OpenLayers.Layer.Vector("BBBike-Route", {style: layer_style});
+	    map.addLayer(vectorLayer);
+            map.setCenter(new OpenLayers.LonLat(pointList[0].x, pointList[0].y), 13); // XXX 13?
+            vectorLayer.addFeatures([routeFeature]); // XXX del old features?
+	}
+
       // --></script>
   </head>
   <body>
@@ -69,5 +140,6 @@
 
     <div><a href="javascript:search_route();">Suchen!</a></div>
     <div id="search_result"></div>
+    <div id="map" class="smallmap"></div>
   </body>
 </html>
