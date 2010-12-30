@@ -88,7 +88,7 @@ if (!@urls) {
 }
 
 my $ortsuche_tests = 11;
-plan tests => (217 + $ortsuche_tests) * scalar @urls;
+plan tests => (221 + $ortsuche_tests) * scalar @urls;
 
 my $hdrs;
 if (defined &Compress::Zlib::memGunzip && $do_accept_gzip) {
@@ -166,7 +166,7 @@ for my $cgiurl (@urls) {
 
     # search_coord
     for my $output_as ("", qw(xml gpx-track gpx-route kml-track print perldump
-			      yaml yaml-short palmdoc mapserver)) {
+			      yaml yaml-short json json-short palmdoc mapserver)) {
 	$req = new HTTP::Request
 	    ('GET', "$action?startname=Dudenstr.&startplz=10965&startc=9222%2C8787&zielname=Grimmstr.+%28Kreuzberg%29&zielplz=10967&zielc=11036%2C9592&pref_seen=1&output_as=$output_as", $hdrs);
 	$res = $ua->request($req);
@@ -218,6 +218,12 @@ for my $cgiurl (@urls) {
 	    is($res->content_type, 'application/vnd.google-earth.kml+xml', "The KML mime type");
 	    like($res->header('Content-Disposition'), qr{attachment; filename=.*\.kml$}, 'kml filename');
 	    kmllint_string($content, "xmllint check for $output_as");
+	} elsif ($output_as =~ m{^json}) {
+	    require JSON::XS;
+	    my $data = eval { JSON::XS::decode_json($content) };
+	    my $err = $@;
+	    ok($data, "Decoded JSON content")
+		or diag $err;
 	}
     }
 
