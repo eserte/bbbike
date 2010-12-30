@@ -17,6 +17,7 @@ use FindBin;
 use lib ("$FindBin::RealBin/..", "$FindBin::RealBin/../lib");
 
 use CGI qw();
+use Encode qw(decode);
 use JSON::XS qw(encode_json);
 
 my $q = CGI->new;
@@ -24,7 +25,7 @@ print $q->header(-type => "application/json");
 
 my $action = $q->param('action') || die 'action is missing';
 if ($action eq 'crossings') {
-    my $str = $q->param('str') || die 'str is missing';
+    my $str = decode("utf-8", $q->param('str')) || die 'str is missing';
     my $type = $q->param('type') || die 'type is missing';
     require Strassen::Core;
     my $s = Strassen->new('strassen'); # XXX landstrassen e.g. for Potsdam?
