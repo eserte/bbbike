@@ -25,7 +25,16 @@
       function search_route() {
           var start_coord = $("#start_crossing").val();
 	  var goal_coord = $("#goal_crossing").val();
-	  $.get(bbbikecgi,{startc:start_coord,goalc:goal_coord,pref_seen:1});//XXX wip
+	  $.get(bbbikecgi,{startc:start_coord,zielc:goal_coord,pref_seen:1,output_as:"json"},search_route_success);
+      }
+      function search_route_success(data,status) {
+          var route = data.Route;
+	  var route_html = "";
+	  for(var route_i in route) {
+	      var strname = route[route_i].Strname;
+	      route_html += strname + "<br/>";
+	  }
+          $("#search_result").html(route_html);
       }
       jQuery().ready(function($){
 	    $("#start").autocomplete({
@@ -59,5 +68,6 @@
     Ziel: <input id="goal" /><span id="goal_crossing_box"><i>Ecke</i> <select id="goal_crossing"><option></option></select></span><br />
 
     <div><a href="javascript:search_route();">Suchen!</a></div>
+    <div id="search_result"></div>
   </body>
 </html>
