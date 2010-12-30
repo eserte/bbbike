@@ -3,14 +3,61 @@
   <head>
     <title>BBBike</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="autocomplete.css" rel="stylesheet" type="text/css" />
     <link rev="made" href="mailto:slaven@rezic.de" />
     <script type="text/javascript" src="jquery-1.4.3.min.js"></script>
     <script type="text/javascript" src="jquery-ui-1.8.6.custom.min.js"></script>
     <script type="text/javascript" src="jquery.autocomplete.js"></script>
-    <script type="text/javascript" src="bbbike5.js"></script>
+    <script type="text/javascript"><!--
+      var cgiroot = "/bbbike/cgi";
+      var jsoncgi = cgiroot + "/bbbikejson.cgi";
+      var bbbikecgi = cgiroot + "/bbbike.cgi";
+      function select_street(type) {
+          var str = $("#" + type).val();
+          $.get(jsoncgi,{type:type,str:str,action:"crossings"},select_street_success);
+      }
+      function select_street_success(data,status) {
+          var type = data.type;
+          $("#" + type + "_crossing_box").show();
+	  $("#" + type + "_crossing").html(data.html);
+	  $("#" + type + "_crossing").focus();
+      }
+      function search_route() {
+          var start_coord = $("#start_crossing").val();
+	  var goal_coord = $("#goal_crossing").val();
+	  $.get(bbbikecgi,{startc:start_coord,goalc:goal_coord,pref_seen:1});//XXX wip
+      }
+      jQuery().ready(function($){
+	    $("#start").autocomplete({
+		url:'strassen_suggest.json',
+		values : true,
+		writable : false,
+		onSelect:function(){
+		    select_street("start");
+		},
+		type:'json',
+	        minchar:2
+	    });
+	    $("#start_crossing_box").hide();
+
+	    $("#goal").autocomplete({
+		url:'strassen_suggest.json',
+		values : true,
+		writable : false,
+		onSelect:function(){
+		    select_street("goal");
+		},
+		type:'json',
+	        minchar:2
+	    });
+	    $("#goal_crossing_box").hide();
+	});
+      // --></script>
   </head>
   <body>
-    Start: <input id="start" />/<input id="start_crossing" /><br />
-    Ziel: <input id="goal" />/<input id="goal_crossing" /><br />
+    Start: <input id="start" /><span id="start_crossing_box"><i>Ecke</i> <select id="start_crossing"><option></option></select></span><br />
+    Ziel: <input id="goal" /><span id="goal_crossing_box"><i>Ecke</i> <select id="goal_crossing"><option></option></select></span><br />
+
+    <div><a href="javascript:search_route();">Suchen!</a></div>
   </body>
 </html>

@@ -1,0 +1,67 @@
+.ac_conteiner {
+	border: 1px solid #abadb3;
+	height: 20px;
+	display: inline-block;
+}
+
+.ac_input {
+	text-indent:2px;
+	font-size:1em;
+	font-family:sans-serif;
+	float: left;
+	padding:1px;
+	border: 0 !important;
+	height: 16px;
+	margin: 1px;
+}
+
+.ac_img {
+	width: 18px;
+	background: url('select.gif');
+	height: 20px;
+	float:right;
+	cursor: pointer;
+}
+
+.ac_results {
+	border: 1px solid gray;
+	background-color: white;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	position: absolute;
+	z-index: 10000;
+	display: none;
+	overflow-x: hidden;
+	overflow-y: auto;
+	height: 100px;
+	margin-left: -1px !important; /*all*/
+	_margin-left:-3px !important; /*ie8*/
+	_margin-left:-1px;            /*ie6*/
+	_margin-top: -1px !important; /*ieX*/
+}
+
+.ac_results div {
+	font-size:1em;
+	font-family:sans-serif;
+	padding-left: 2px;
+	white-space: nowrap;
+}
+
+.ac_over {
+	cursor: pointer;
+	background-color: #3399ff;
+	color: #fff;
+}
+
+.ac_match {
+	text-decoration: underline;
+	color: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+html:first-child .ac_results {
+/* opera <9.5 does not support css3 property overflow-y */
+	overflow: auto;
+}
