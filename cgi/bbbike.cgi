@@ -4336,9 +4336,14 @@ sub display_route {
 		);
 	    if ($is_short) {
 		my $short_res = {LongLatPath => $res->{LongLatPath}};
-		print JSON::XS::encode_json($short_res);
+		# XXX I think a temp_blockings-containing object might
+		# go into the dump, which would cause JSON::XS to
+		# fail. Maybe I should create a TO_JSON converter, or
+		# just leave it as is (that is, allow the blessed
+		# object to be converted to null)
+		print JSON::XS->new->utf8->allow_blessed(1)->encode($short_res);
 	    } else {
-		print JSON::XS::encode_json($res);
+		print JSON::XS->new->utf8->allow_blessed(1)->encode($res);
 	    }
 	} elsif ($output_as eq 'gpx-route') {
 	    require Strassen::GPX;
