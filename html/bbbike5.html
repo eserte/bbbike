@@ -3,13 +3,16 @@
   <head>
     <title>BBBike</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
     <link href="autocomplete.css" rel="stylesheet" type="text/css" />
     <link href="openlayers.css" rel="stylesheet" type="text/css" />
     <link rev="made" href="mailto:slaven@rezic.de" />
     <script type="text/javascript" src="jquery-1.4.3.min.js"></script>
     <script type="text/javascript" src="jquery-ui-1.8.6.custom.min.js"></script>
     <script type="text/javascript" src="jquery.autocomplete.js"></script>
-    <script type="text/javascript" src="http://openlayers.org/api/OpenLayers.js"></script>
+    <!-- <script type="text/javascript" src="http://openlayers.org/api/OpenLayers.js"></script> -->
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+
     <script type="text/javascript"><!--
       var cgiroot = "/bbbike/cgi";
       var jsoncgi = cgiroot + "/bbbikejson.cgi";
@@ -73,11 +76,22 @@ route_to_map(path);
 //XXX();//for testing only XXX
 	});
 
+        //var use_map_impl = "ol";
+        var use_map_impl = "gm";
+
 	function map_init() {
-	    ol_map_init();
+	    if (use_map_impl == "ol") {
+	        ol_map_init();
+	    } else {
+	        gm_map_init();
+	    }
 	}
 	function route_to_map(path) {
-	    route_to_ol_map(path);
+	    if (use_map_impl == "ol") {
+	        route_to_ol_map(path);
+	    } else {
+	        route_to_gm_map(path);
+	    }
 	}
 
 	var ol_map;
@@ -138,6 +152,40 @@ route_to_map(path);
 	    ol_map.addLayer(vectorLayer);
             ol_map.setCenter(new OpenLayers.LonLat(pointList[0].x, pointList[0].y), 13); // XXX 13?
             vectorLayer.addFeatures([routeFeature]); // XXX del old features?
+	}
+
+        var gm_map;
+	function gm_map_init() {
+	    var latlng = new google.maps.LatLng(52.5, 13.5); // XXX Brandenburger Tor!
+	    var myOptions = {
+	        zoom: 13, // configurable XXX, see also above
+		center: latlng,
+		mapTypeId: google.maps.MapTypeId.ROADMAP
+	    };
+	    gm_map = new google.maps.Map(document.getElementById("map"), myOptions);
+	}
+
+	function route_to_gm_map(path) {
+	    gm_map_init();
+
+	    var pointList = [];
+	    for(var lonlat_i in path) {
+	        var lonlat = path[lonlat_i].split(",");
+		var lon = lonlat[0];
+		var lat = lonlat[1];
+		var newPoint = new google.maps.LatLng(lat, lon);
+		pointList.push(newPoint);
+	    }
+
+	    var routeOverlay = new google.maps.Polyline({
+	        path: pointList,
+		strokeColor: "#FF0000",
+		strokeOpacity: 1.0,
+		strokeWeight: 2
+	    });
+
+	    routeOverlay.setMap(gm_map);
+	    gm_map.panTo(pointList[0]); // what if empty? XXX
 	}
 
       // --></script>
