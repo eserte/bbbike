@@ -69,20 +69,28 @@ route_to_map(path);
 	        minchar:2
 	    });
 	    $("#goal_crossing_box").hide();
+	    map_init();
 //XXX();//for testing only XXX
 	});
 
-	var map;
-        function map_init() {
-	    if (map) return; // already initialized
+	function map_init() {
+	    ol_map_init();
+	}
+	function route_to_map(path) {
+	    route_to_ol_map(path);
+	}
+
+	var ol_map;
+        function ol_map_init() {
+	    if (ol_map) return; // already initialized
 
 //// wms map is ugly and quite feature-less, but easy to use
-//            map = new OpenLayers.Map('map');
+//            ol_map = new OpenLayers.Map('map');
 //            var layer = new OpenLayers.Layer.WMS( "OpenLayers WMS",
 //                    "http://vmap0.tiles.osgeo.org/wms/vmap0", {layers: 'basic'} );
-//            map.addLayer(layer);
+//            ol_map.addLayer(layer);
 
-	    map = new OpenLayers.Map({
+	    ol_map = new OpenLayers.Map({
 	        div: "map",
 		allOverlays: true,
 		units: "dd"
@@ -92,15 +100,15 @@ route_to_map(path);
 //XXX	    var gmap = new OpenLayers.Layer.Google("Google Streets", {visibility: false});
 
 	    // note that first layer must be visible
-//XXX	    map.addLayers([osm, gmap]);
-	    map.addLayers([osm]);
+//XXX	    ol_map.addLayers([osm, gmap]);
+	    ol_map.addLayers([osm]);
 
-            map.addControl(new OpenLayers.Control.LayerSwitcher());
-	    //map.setCenter(new OpenLayers.LonLat(13.5,52.5), 13); // XXX 13? use Brandenburger Tor bzw. Zentrum des datasets
+            ol_map.addControl(new OpenLayers.Control.LayerSwitcher());
+	    ol_map.setCenter(new OpenLayers.LonLat(13.5,52.5).transform(new OpenLayers.Projection("EPSG:4326"),ol_map.getProjectionObject()), 13); // XXX 13? use Brandenburger Tor bzw. Zentrum des datasets
 	}
 
-        function route_to_map(path) {
-	    map_init();
+        function route_to_ol_map(path) {
+	    ol_map_init();
 
             var pointList = [];
 	    for(var lonlat_i in path) {
@@ -108,7 +116,7 @@ route_to_map(path);
 		var lon = lonlat[0];
 		var lat = lonlat[1];
 		// XXX really? transform needed that way?
-		var newPoint = new OpenLayers.Geometry.Point(lon, lat).transform(new OpenLayers.Projection("EPSG:4326"),map.getProjectionObject());
+		var newPoint = new OpenLayers.Geometry.Point(lon, lat).transform(new OpenLayers.Projection("EPSG:4326"),ol_map.getProjectionObject());
 		pointList.push(newPoint);
 	    }
 
@@ -127,8 +135,8 @@ route_to_map(path);
                 new OpenLayers.Geometry.LineString(pointList),null,style_green);
 
             var vectorLayer = new OpenLayers.Layer.Vector("BBBike-Route", {style: layer_style});
-	    map.addLayer(vectorLayer);
-            map.setCenter(new OpenLayers.LonLat(pointList[0].x, pointList[0].y), 13); // XXX 13?
+	    ol_map.addLayer(vectorLayer);
+            ol_map.setCenter(new OpenLayers.LonLat(pointList[0].x, pointList[0].y), 13); // XXX 13?
             vectorLayer.addFeatures([routeFeature]); // XXX del old features?
 	}
 
