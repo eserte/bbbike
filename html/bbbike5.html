@@ -30,7 +30,17 @@
       function search_route() {
           var start_coord = $("#start_crossing").val();
 	  var goal_coord = $("#goal_crossing").val();
-	  $.get(bbbikecgi,{startc:start_coord,zielc:goal_coord,pref_seen:1,output_as:"json"},search_route_success);
+	  $.get(bbbikecgi,{startc:start_coord,zielc:goal_coord,
+	  		   pref_cat:$("#pref_cat").val(),
+	  		   pref_quality:$("#pref_quality").val(),
+	  		   pref_ampel:$("#pref_ampel").val(),
+	  		   pref_unlit:$("#pref_unlit").val(),
+	  		   pref_green:$("#pref_green").val(),
+	  		   pref_specialvehicle:$("#pref_specialvehicle").val(),
+	  		   pref_ferry:$("#pref_ferry").val(),
+	  		   pref_fragezeichen:$("#pref_fragezeichen").val(),
+			   pref_seen:1,
+			   output_as:"json"},search_route_success);
       }
       function search_route_success(data,status) {
           var route = data.Route;
@@ -72,8 +82,13 @@ route_to_map(path);
 	        minchar:2
 	    });
 	    $("#goal_crossing_box").hide();
+
+	    $("#prefsbox").hide();
+	    $("#prefsbox_toggle").click(function() {
+	        $("#prefsbox").slideToggle();
+	    });
 	    map_init();
-//XXX();//for testing only XXX
+	    //XXX();//for testing only XXX
 	});
 
         //var use_map_impl = "ol";
@@ -197,7 +212,52 @@ route_to_map(path);
     Start: <input id="start" /><span id="start_crossing_box"><i>Ecke</i> <select id="start_crossing"><option></option></select></span><br />
     Ziel: <input id="goal" /><span id="goal_crossing_box"><i>Ecke</i> <select id="goal_crossing"><option></option></select></span><br />
 
+    <!-- XXX copied from bbbike.cgi and xmlified, should reuse code and set user's prefs! -->
+    <div id="prefsbox_wrapper">
+      <b>Einstellungen:</b> <span id="prefsbox_toggle">Zeigen/Verstecken</span>
+      <table id="prefsbox">
+	<tr><td>Bevorzugte Geschwindigkeit:</td><td><input type="text" maxlength="2" size="4" id="pref_speed" value="20" /> km/h</td></tr>
+	<tr><td>Bevorzugter Straßentyp:</td><td>
+	<select class='hfill' id="pref_cat">
+	  <option value="">egal</option>
+	  <option value="N1" >Nebenstraßen bevorzugen</option>
+	  <option value="N2" >nur Nebenstraßen benutzen</option>
+	  <option value="H1" >Hauptstraßen bevorzugen</option>
+	  <option value="H2" >nur Hauptstraßen benutzen</option>
+	  <option value="N_RW" >Hauptstraßen ohne Radwege/Busspuren meiden</option>
+	</select></td></tr>
+	<tr><td>Bevorzugter Straßenbelag:</td><td>
+	<select class='hfill' id="pref_quality">
+	  <option value="">egal</option>
+	  <option value="Q2" >Kopfsteinpflaster und schlechte Fahrbahnen vermeiden</option>
+	  <option value="Q0" >nur sehr gute Beläge bevorzugen (rennradtauglich)</option>
+	</select></td></tr>
+	<tr><td>Ampeln vermeiden:</td><td><input type="checkbox" id="pref_ampel" value="yes" /></td>
+	<td style="font-size:smaller;">(nur in Berlin/Potsdam erfasst)</td></tr>
+	<tr><td>Unbeleuchtete Wege vermeiden:</td><td><input type="checkbox" id="pref_unlit" value="NL" /></td>
+	<td style="font-size:smaller;">(nur in Berlin/Potsdam erfasst)</td></tr>
+	<tr><td>Grüne Wege:</td><td>
+	<select class='hfill' id="pref_green">
+	  <option value="">egal</option>
+	  <option value="GR1" >bevorzugen</option>
+	  <option value="GR2" >stark bevorzugen</option>
+	</select></td></tr>
+	<tr><td>Unterwegs mit:</td><td>
+	<select class='hfill' id="pref_specialvehicle">
+	  <option value="">nichts weiter</option>
+	  <option value="trailer" >Anhänger</option>
+	  <option value="childseat" >Kindersitz mit Kind</option>
+	</select></td></tr>
+	<tr><td>Fähren benutzen:</td><td><input type="checkbox" id="pref_ferry" value="use" /></td></tr>
+	<tr>
+	  <td>Unbekannte Straßen mit einbeziehen:</td>
+	  <td><input type="checkbox" id="pref_fragezeichen" value="yes" /></td>
+	</tr>
+      </table>
+    </div>
+
     <div><a href="javascript:search_route();">Suchen!</a></div>
+
     <div id="search_result"></div>
     <div id="map" class="smallmap"></div>
   </body>
