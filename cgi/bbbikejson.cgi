@@ -20,6 +20,8 @@ use CGI qw();
 use Encode qw(decode);
 use JSON::XS qw(encode_json);
 
+use constant SUGGEST_AS_HASH => 0;
+
 my $q = CGI->new;
 print $q->header(-type => "application/json");
 
@@ -87,9 +89,13 @@ if ($action eq 'crossings') {
 	if (defined $mask) {
 	    next if lc $name !~ m{^\Q$mask}i;
 	}
-	$strnames{$name} = 1;
+	$strnames{$name} = $name;
     }
-    print encode_json [ sort keys %strnames ];
+    if (SUGGEST_AS_HASH) {
+	print encode_json \%strnames;
+    } else {
+	print encode_json [ sort keys %strnames ];
+    }
 } else {
     die "Unknown action '$action'";
 }
