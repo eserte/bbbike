@@ -20,7 +20,7 @@ use CGI qw();
 use Encode qw(decode);
 use JSON::XS qw(encode_json);
 
-use constant SUGGEST_AS_HASH => 0;
+use constant SUGGEST_AS_HASH => 0; # XXX useless if canonical_name does not work :-(
 
 my $q = CGI->new;
 print $q->header(-type => "application/json");
@@ -30,17 +30,23 @@ if ($action eq 'crossings') {
     my $str = decode("utf-8", $q->param('str')) || die 'str is missing';
     my $type = $q->param('type') || die 'type is missing';
     require Strassen::Core;
-    my $s = Strassen->new('strassen'); # XXX landstrassen e.g. for Potsdam?
+    my $s = Strassen->new_stream('strassen'); # XXX landstrassen e.g. for Potsdam?
     $s->init;
     my @coords;
-    while() {
-	my $r = $s->next;
-	my @c = @{ $r->[Strassen::COORDS()] };
-	last if !@c;
-	if ($r->[Strassen::NAME()] eq $str) {
-	    push @coords, @c;
-	}
-    }
+    $s->read_stream
+	(sub {
+	     my($r, $directives) = @_;
+	     for my $name ($r->[Strassen::NAME()],
+			   @{ $directives->{alias} || [] },
+			  ) {
+		 if ($name eq $str) {
+		     my @c = @{ $r->[Strassen::COORDS()] };
+		     push @coords, @c;
+		     return;
+		 }
+	     }
+	 }
+	);
     if (@coords == 1) {
 	my $html = qq{<input type="hidden" id="${type}_crossing" value="$coords[0]" />};
 	print encode_json({coords => $coords[0],
@@ -56,7 +62,7 @@ if ($action eq 'crossings') {
 	    if (exists $crossings->{$c}) {
 		my @kreuzung_name;
 		for (@{ $crossings->{$c} }) {
-		    if ($_ ne $str) {
+		    if ($_ ne $str) { # XXX should also take alias/oldname into account!
 			push @kreuzung_name, $_;
 		    }
 		}
@@ -75,22 +81,25 @@ if ($action eq 'crossings') {
     $mask = undef if !length $mask;
 
     require Strassen::Core;
-    my $s = Strassen->new('strassen'); # XXX potsdam?
+    my $s = Strassen->new_stream('strassen'); # XXX potsdam?
     my %strnames;
-    $s->init;
-    # XXX add alias and oldnames support
+    # XXX add oldnames support
     # XXX add umlaut variants
-    # XXX use hash instead of array here
-    while() {
-	my $r = $s->next;
-	my @c = @{ $r->[Strassen::COORDS()] };
-	last if !@c;
-	my $name = $r->[Strassen::NAME()];
-	if (defined $mask) {
-	    next if lc $name !~ m{^\Q$mask}i;
-	}
-	$strnames{$name} = $name;
-    }
+    $s->read_stream
+	(sub {
+	     my($r, $directives) = @_;
+	     my $canonical_name = $r->[Strassen::NAME()];
+	     # XXX some duplicated code, see above!
+	     for my $name ($canonical_name,
+			   @{ $directives->{alias} || [] },
+			  ) {
+		 if (!defined $mask || lc $name =~ m{^\Q$mask}i) {
+		     #$strnames{$name} = $canonical_name; # XXX does not work?!
+		     $strnames{$name} = $name; 
+		 }
+	     }
+	 }
+	);
     if (SUGGEST_AS_HASH) {
 	print encode_json \%strnames;
     } else {
