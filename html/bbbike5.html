@@ -23,8 +23,17 @@
       function select_street_success(data,status) {
           var type = data.type;
           $("#" + type + "_crossing_box").show();
-	  $("#" + type + "_crossing").html(data.html);
-	  $("#" + type + "_crossing").focus();
+	  $("#" + type + "_crossing_box").html(data.html);
+	  if (data.coords) {
+	      // we're done, focus to next input or to search button
+	      if (type == "start") {
+	          $("#goal").focus();
+	      } else {
+	          $("#search_button").focus();
+	      }
+	  } else {
+	      $("#" + type + "_crossing").focus();
+	  }
       }
       function search_route() {
           var start_coord = $("#start_crossing").val();
@@ -217,7 +226,7 @@ route_to_map(path);
 	  <input id="start" />
 	</td>
 	<td>
-	  <span id="start_crossing_box"><i>Ecke</i> <select id="start_crossing"><option></option></select></span>
+	  <span id="start_crossing_box"></span>
 	</td>
       </tr>
       <tr>
@@ -228,7 +237,7 @@ route_to_map(path);
 	  <input id="goal" />
 	</td>
 	<td>
-	  <span id="goal_crossing_box"><i>Ecke</i> <select id="goal_crossing"><option></option></select></span>
+	  <span id="goal_crossing_box"></span>
 	</td>
       </tr>
     </table>
@@ -277,7 +286,7 @@ route_to_map(path);
       </table>
     </div>
 
-    <div><a href="javascript:search_route();">Suchen!</a></div>
+    <div><a id="search_button" href="javascript:search_route();">Suchen!</a></div>
 
     <div id="search_result"></div>
     <div id="map" class="smallmap"></div>

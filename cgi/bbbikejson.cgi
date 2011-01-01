@@ -40,7 +40,11 @@ if ($action eq 'crossings') {
 	}
     }
     if (@coords == 1) {
-	print encode_json({coords => $coords[0]});
+	my $html = qq{<input type="hidden" id="${type}_crossing" value="$coords[0]" />};
+	print encode_json({coords => $coords[0],
+			   type => $type,
+			   html => $html,
+			  });
     } else {
 	require Strassen::Strasse;
 	my $crossings = $s->all_crossings(RetType => 'hash', UseCache => 1);
@@ -61,8 +65,7 @@ if ($action eq 'crossings') {
 		push @ret_crossings, [$kreuzung_name, $c];
 	    }
 	}
-	#print encode_json({crossings => \%ret_crossings});
-	my $html = join("\n", map { qq{<option value="} . CGI::escapeHTML($_->[1]) . qq{">} . CGI::escapeHTML($_->[0]) . qq{</option>} } @ret_crossings);
+	my $html = qq{Ecke <select id="${type}_crossing">} . join("\n", map { qq{<option value="} . CGI::escapeHTML($_->[1]) . qq{">} . CGI::escapeHTML($_->[0]) . qq{</option>} } @ret_crossings) . qq{</select>};
 	print encode_json({type => $type, html => $html});
     }
 } elsif ($action eq 'strlist') {
