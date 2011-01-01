@@ -41,12 +41,12 @@
 	  $.get(bbbikecgi,{startc:start_coord,zielc:goal_coord,
 	  		   pref_cat:$("#pref_cat").val(),
 	  		   pref_quality:$("#pref_quality").val(),
-	  		   pref_ampel:$("#pref_ampel").val(),
-	  		   pref_unlit:$("#pref_unlit").val(),
+	  		   pref_ampel:$("#pref_ampel:checked").val(),
+	  		   pref_unlit:$("#pref_unlit:checked").val(),
 	  		   pref_green:$("#pref_green").val(),
 	  		   pref_specialvehicle:$("#pref_specialvehicle").val(),
-	  		   pref_ferry:$("#pref_ferry").val(),
-	  		   pref_fragezeichen:$("#pref_fragezeichen").val(),
+	  		   pref_ferry:$("#pref_ferry:checked").val(),
+	  		   pref_fragezeichen:$("#pref_fragezeichen:checked").val(),
 			   pref_seen:1,
 			   output_as:"json"},search_route_success);
       }
