@@ -60,7 +60,7 @@ route_to_map(path);
 
       jQuery().ready(function($){
 	    $("#start").autocomplete({
-		url:'strassen_suggest.json',
+		url:jsoncgi + "?action=strlist", //'strassen_suggest.json',
 		values : true,
 		writable : false,
 		onSelect:function(){
@@ -72,7 +72,7 @@ route_to_map(path);
 	    $("#start_crossing_box").hide();
 
 	    $("#goal").autocomplete({
-		url:'strassen_suggest.json',
+		url:jsoncgi + "?action=strlist", //'strassen_suggest.json',
 		values : true,
 		writable : false,
 		onSelect:function(){
