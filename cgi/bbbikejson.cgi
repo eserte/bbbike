@@ -65,6 +65,28 @@ if ($action eq 'crossings') {
 	my $html = join("\n", map { qq{<option value="} . CGI::escapeHTML($_->[1]) . qq{">} . CGI::escapeHTML($_->[0]) . qq{</option>} } @ret_crossings);
 	print encode_json({type => $type, html => $html});
     }
+} elsif ($action eq 'strlist') {
+    my $mask = decode 'utf-8', $q->param('mask');
+    $mask = undef if !length $mask;
+
+    require Strassen::Core;
+    my $s = Strassen->new('strassen'); # XXX potsdam?
+    my %strnames;
+    $s->init;
+    # XXX add alias and oldnames support
+    # XXX add umlaut variants
+    # XXX use hash instead of array here
+    while() {
+	my $r = $s->next;
+	my @c = @{ $r->[Strassen::COORDS()] };
+	last if !@c;
+	my $name = $r->[Strassen::NAME()];
+	if (defined $mask) {
+	    next if lc $name !~ m{^\Q$mask}i;
+	}
+	$strnames{$name} = 1;
+    }
+    print encode_json [ sort keys %strnames ];
 } else {
     die "Unknown action '$action'";
 }
