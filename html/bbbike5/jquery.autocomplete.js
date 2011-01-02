@@ -28,6 +28,9 @@
         close : null, // ac hide
         timeout : null, // ac search
 
+	// ajax
+	activeXMLHttpRequest : null,
+
         // system definitons
         chars : 0, // previous search string lenght
 
@@ -214,11 +217,18 @@
                 else if (self.url) // use ajax
                     $.ajax({type: "GET", data:{mask:mask},
                         url:$.isFunction(self.url)?self.url(self):self.url,
-                        success:function(xml) {
+			beforeSend:function(xmlHttpRequest, settings) {
+			    self.activeXMLHttpRequest = xmlHttpRequest;
+			},
+			success:function(xml,textStatus,xmlHttpRequest) {
+			    if (xmlHttpRequest != self.activeXMLHttpRequest) return;
+			    self.activeXMLHttpRequest = null;
                             self.onSuccess.apply(self,arguments);
                             self.prepare(xml,mask)[show]();
                         },
-                        error:function(){
+                        error:function(xmlHttpRequest){
+			    if (xmlHttpRequest != self.activeXMLHttpRequest) return;
+			    self.activeXMLHttpRequest = null;
                             self.onError.apply(self,arguments);
                         },
                         dataType:self.type
