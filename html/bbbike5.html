@@ -5,6 +5,10 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
     <link rev="made" href="mailto:slaven@rezic.de" />
+    <style type="text/css">
+      <!--
+	  body {font-size:larger; font-family:sans-serif;}
+      --></style>
     <script type="text/javascript" src="bbbike5/jquery-1.4.3.min.js"></script>
     <script type="text/javascript" src="bbbike5/jquery.autocomplete.js"></script>
     <link href="bbbike5/autocomplete.css" rel="stylesheet" type="text/css" />
@@ -38,6 +42,15 @@
       function search_route() {
           var start_coord = $("#start_crossing").val();
 	  var goal_coord = $("#goal_crossing").val();
+	  if (!start_coord) {
+	      alert("Bitte Startstraße eingeben!");
+	      return;
+	  }
+	  if (!goal_coord) {
+	      alert("Bitte Zielstraße eingeben!");
+	      return;
+	  }
+	  $("#search_result").css("background", "url('bbbike5/watch_ptr.gif') no-repeat center");
 	  $.get(bbbikecgi,{startc:start_coord,zielc:goal_coord,
 	  		   pref_cat:$("#pref_cat").val(),
 	  		   pref_quality:$("#pref_quality").val(),
@@ -51,6 +64,7 @@
 			   output_as:"json"},search_route_success);
       }
       function search_route_success(data,status) {
+	  $("#search_result").css("background", "");
           var route = data.Route;
 	  var route_html = "";
 	  for(var route_i in route) {
@@ -95,9 +109,28 @@ route_to_map(path);
 	    $("#prefsbox_toggle").click(function() {
 	        $("#prefsbox").slideToggle();
 	    });
+	    set_layout();
+	    $(window).resize(function(){
+	        set_layout();
+	    });
 	    map_init();
 	    //XXX();//for testing only XXX
 	});
+
+	function set_layout() {
+	    var w = $(window).width();
+	    if (w && w >= 950) {
+	        $("#search_result").width("48%");
+		$("#map").width("48%");
+		$("#map").css("float", "left");
+		$("#map").css("clear", "");
+	    } else {
+	        $("#search_result").width("100%");
+		$("#map").width("100%");
+		$("#map").css("float", "");
+		$("#map").css("clear", "left");
+	    }
+	}
 
         //var use_map_impl = "ol";
         var use_map_impl = "gm";
@@ -246,7 +279,7 @@ route_to_map(path);
 
     <!-- XXX copied from bbbike.cgi and xmlified, should reuse code and set user's prefs! -->
     <div id="prefsbox_wrapper">
-      <b>Einstellungen:</b> <span id="prefsbox_toggle">Zeigen/Verstecken</span>
+      <b>Einstellungen:</b> <span id="prefsbox_toggle" style="text-decoration:underline; color:blue; cursor:pointer; ">Zeigen/Verstecken</span>
       <table id="prefsbox">
 	<tr><td>Bevorzugte Geschwindigkeit:</td><td><input type="text" maxlength="2" size="4" id="pref_speed" value="20" /> km/h</td></tr>
 	<tr><td>Bevorzugter Straßentyp:</td><td>
@@ -290,7 +323,7 @@ route_to_map(path);
 
     <div><a id="search_button" href="javascript:search_route();">Suchen!</a></div>
 
-    <div id="search_result"></div>
+    <div id="search_result" style="height:300px; overflow:auto; float:left; margin-right:5px;"></div>
     <div id="map" class="smallmap"></div>
   </body>
 </html>

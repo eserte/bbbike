@@ -1,6 +1,6 @@
 .ac_conteiner {
 	border: 1px solid #abadb3;
-	height: 20px;
+	height: 24px; // font-size dependent!
 }
 
 .ac_input {
@@ -10,16 +10,17 @@
 	float: left;
 	padding:1px;
 	border: 0 !important;
-	height: 16px;
+	height: 20px; // font-size dependent!
 	margin: 1px;
 }
 
 .ac_img {
 	width: 18px;
-	background: url('select.gif');
-	height: 20px;
+	background: url('select.gif') no-repeat center;
+	height: 100%;
 	float:right;
 	cursor: pointer;
+	vertical-align: center;
 }
 
 .ac_results {
