@@ -183,7 +183,9 @@ route_to_map(path);
 	    var myOptions = {
 	        zoom: 13, // configurable XXX, see also above
 		center: latlng,
-		mapTypeId: google.maps.MapTypeId.ROADMAP
+		mapTypeId: google.maps.MapTypeId.ROADMAP,
+		// TERRAIN is not useful in Berlin, so disabled:
+		mapTypeControlOptions: { mapTypeIds: [google.maps.MapTypeId.ROADMAP, google.maps.MapTypeId.SATELLITE, google.maps.MapTypeId.HYBRID] }
 	    };
 	    gm_map = new google.maps.Map(document.getElementById("map"), myOptions);
 	}
