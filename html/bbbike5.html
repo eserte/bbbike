@@ -3,7 +3,7 @@
   <head>
     <title>BBBike</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <meta name="viewport" content="initial-scale=1.0, max-scale=1.0, user-scalable=no" />
     <link rev="made" href="mailto:slaven@rezic.de" />
     <style type="text/css">
       <!--
@@ -41,6 +41,10 @@
 	    max-width: 120px; 
 	  }
 	  #search_button {
+	    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#7B9EEA), to(#376FE0));
+	    background-color: #2463DE;
+	  }
+	  #done_button {
 	    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#7B9EEA), to(#376FE0));
 	    background-color: #2463DE;
 	  }
@@ -148,7 +152,10 @@ route_to_map(path);
 
 	    $("#prefsbox").hide();
 	    $("#prefsbox_toggle").click(function() {
-	        $("#prefsbox").slideToggle();
+	        $("#prefsbox").slideDown();
+	        $("#prefsbox").css("z-index", 2);
+//XXX	        $("#modalscreen").css("z-index", 1);
+//XXX	        $("#modalscreen").show();
 	    });
 	    set_layout();
 	    $(window).resize(function(){
@@ -157,6 +164,11 @@ route_to_map(path);
 	    map_init();
 	    //XXX();//for testing only XXX
 	});
+
+	function done_settings() {
+	    $("#modalscreen").hide();
+	    $("#prefsbox").slideUp();
+	}
 
 	function set_layout() {
 	    var w = $(window).width();
@@ -293,7 +305,7 @@ route_to_map(path);
 
     <h1>BB<span style='font-style:italic;'>&#x03B2;</span>ike<img style="position:relative; top:15px; left:-15px;" alt="" src="/bbbike/images/srtbike.gif" /></h1> 
 
-    <table cellpadding="0" cellspacing="0">
+    <table style="background-color:white;" cellpadding="0" cellspacing="0">
       <tr>
 	<td style="padding-right:3px;">
 	  Start:
@@ -324,7 +336,9 @@ route_to_map(path);
     </div>
 
     <!-- XXX copied from bbbike.cgi and xmlified, should reuse code and set user's prefs! -->
-    <table id="prefsbox">
+    <div id="prefsbox" style="position:absolute; left:20px; right:20px; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; border: 1px solid #2F353E; -webkit-background-size: 100% 50%; background-repeat:no-repeat; padding: 8px; background-image: -webkit-gradient(linear, top, bottom, from(#eee), to(#fff)); background-color: #fff;">
+    <a class="button" id="done_button" href="javascript:done_settings();">OK</a>
+    <table>
       <tr><td>Bevorzugte Geschwindigkeit:</td><td><input type="text" maxlength="2" size="4" id="pref_speed" value="20" /> km/h</td></tr>
       <tr><td>Bevorzugter Straßentyp:</td><td>
       <select class='hfill' id="pref_cat">
@@ -342,9 +356,9 @@ route_to_map(path);
 	  <option value="Q0" >nur sehr gute Beläge bevorzugen (rennradtauglich)</option>
       </select></td></tr>
       <tr><td>Ampeln vermeiden:</td><td><input type="checkbox" id="pref_ampel" value="yes" /></td>
-      <td style="font-size:smaller;">(nur in Berlin/Potsdam erfasst)</td></tr>
+      <!--<td style="font-size:smaller;">(nur in Berlin/Potsdam erfasst)</td>--></tr>
       <tr><td>Unbeleuchtete Wege vermeiden:</td><td><input type="checkbox" id="pref_unlit" value="NL" /></td>
-      <td style="font-size:smaller;">(nur in Berlin/Potsdam erfasst)</td></tr>
+      <!--<td style="font-size:smaller;">(nur in Berlin/Potsdam erfasst)</td>--></tr>
       <tr><td>Grüne Wege:</td><td>
       <select class='hfill' id="pref_green">
 	<option value="">egal</option>
@@ -363,8 +377,11 @@ route_to_map(path);
 	<td><input type="checkbox" id="pref_fragezeichen" value="yes" /></td>
       </tr>
     </table>
+    </div>
 
-    <div id="search_result" style="height:300px; overflow:auto; float:left; margin-right:5px;"></div>
+    <!--<div id="search_result" style="height:300px; overflow:scroll; float:left; margin-right:5px;"></div>-->
+    <div id="search_result" style="min-height:300px; float:left; margin-right:5px; border: 1px solid #2F353E; -webkit-border-radius: 4px;"></div>
     <div id="map" class="smallmap"></div>
+<!--does not work?!    <div id="modalscreen" style="visibility:hidden;position:absolute;left:0px;right:0px;width:100%;height:100%" />-->
   </body>
 </html>
