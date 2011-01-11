@@ -54,6 +54,7 @@ if ($action eq 'crossings') {
 			  });
     } else {
 	require Strassen::Strasse;
+	$s->read_data; # XXX hack needed for all_crossings :-(
 	my $crossings = $s->all_crossings(RetType => 'hash', UseCache => 1);
 	my @crossings;
 	my @ret_crossings;
