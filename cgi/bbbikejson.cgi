@@ -31,7 +31,6 @@ if ($action eq 'crossings') {
     my $type = $q->param('type') || die 'type is missing';
     require Strassen::Core;
     my $s = Strassen->new_stream('strassen'); # XXX landstrassen e.g. for Potsdam?
-    $s->init;
     my @coords;
     $s->read_stream
 	(sub {
