@@ -375,9 +375,7 @@ B96a: Neubau der Radwege (gemeinsam mit Gehweg); wahrscheinlich wird der Radstre
 Ahrensfelder Chaussee: Radstreifen in Bau, bis 2008-10	? 20160,18301 20460,18420 20582,18468 20624,18485 20746,18534 20915,18601 21165,18715 21278,18786 21332,18819
 # XXX del ---: by: http://www.berliner-stadtplan.com/topic/bln/str/x_wgs/22.04/y_wgs/28.92/from/form.html --- #: by: http://www.morgenpost.de/content/2006/09/20/bezirke/855150.html --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20060915.1800.47562.html --- #: by: http://www.cdu-fraktion-tk.de/image/inhalte/file/Amtsblatt_Nr__2010-14.pdf (Name der Straße) --- #: last_checked: 2010-09-08 --- #: next_check: 2010-09-15 --- Wilhelm-Kabus-Str.: neue Straße wird demnächst freigegeben, die Naumannstr. wird später verkehrsberuhigt; Ampelanlagen an den Kreuzungen Naumannstr. und Kolonnenstr. werden entstehen	?::inwork 7725,8033 7793,8043 7834,8085 7859,8252 7893,8327 7942,8380 8078,8772
 # 
-#: last_checked: 2010-12-16
-#: next_check: 2011-01-01
-Wilhelm-Kabus-Str./Naumannstr.: Ampelanlage in Bau	?::inwork 7725,8033
+# XXX --- : last_checked: 2010-12-16 --- #: next_check: 2011-01-01 --- Wilhelm-Kabus-Str./Naumannstr.: Ampelanlage in Bau	?::inwork 7725,8033
 # 
 #: last_checked: 2010-10-29
 #: next_check: 2011-12-31
@@ -437,9 +435,12 @@ Schloßstr.: Radstreifen, wo genau?	? 5165,6119 5137,6066 5099,5994 5099,5994 508
 Prinzenstr.: gibt es hier Radstreifen?	? 8939,16668 8926,16572 8788,16264
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/36re.pdf/file
 Fichtenweg: Teilstück als Straßenland eingezogen?	? -2949,17946 -2963,17872
+# 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/39re.pdf/file
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/51re.pdf/file
+#: last_checked: 2011-01-15
 Straße wird eingezogen	? 14908,9939 14956,10028
+# 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/41re.pdf/file
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/51re.pdf/file
 Traberweg: Einziehung von Straßenland: was bedeutet das hier?	? 18351,8222 18416,8163 18490,8104 18570,8025
@@ -748,7 +749,6 @@ Hedwigstr.: Qualität?	? -3293,15645 -3302,15787
 Schülerbergstr.: Qualität?	? -3559,15952 -3444,15978
 #: XXX fehlt in Berlin.coords.data
 Paula-Hirschfeld-Steig: Qualität? Für Autos gesperrt?	? -2968,15333 -2878,15304 -2801,15280
-Emdenzeile: Qualität?	? -3720,15717 -3646,15717 -3637,15717 -3514,15726
 Golmer Str.: Qualität?	? -3720,15717 -3866,15775 -3995,15832
 Marschallstr.: Qualität?	? -3708,15831 -3542,15871
 Rudow - Kleinziethen: Qualität?	? 15118,-970 15100,-1008 14652,-1410 14341,-1751 14119,-2010 13912,-2428 13857,-2452 13732,-2659 13540,-2681
