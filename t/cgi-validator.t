@@ -42,7 +42,7 @@ BEGIN { plan tests => 3 }
 
 {
     use POSIX qw(strftime);
-    use constant TODO_CSS_VALIDATOR_PROBLEM => "2011-01-01T12:00:00" gt strftime("%FT%T", localtime) && 'See https://rt.cpan.org/Ticket/Display.html?id=59930';
+    use constant TODO_CSS_VALIDATOR_PROBLEM => "2011-07-01T12:00:00" gt strftime("%FT%T", localtime) && 'See https://rt.cpan.org/Ticket/Display.html?id=59930';
 }
 
 my %config = ("verbose" => 0,
