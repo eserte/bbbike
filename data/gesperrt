@@ -1007,9 +1007,16 @@ Aachener Str. -> Detmolder Str.: Mittelstreifen nicht passierbar	3::igndisp 4609
 Straßenbahntrasse	3nocross::ignrte 18215,12132 18216,12239 18216,12262 18220,12450
 Rhinstr. -> Kolonie Friedrichsfelde Nord: Straßenbahntrasse	3::igndisp 18216,12239 18216,12262 18180,12262
 Kolonie Friedrichsfelde Nord -> Rhinstr.: Straßenbahntrasse	3::igndisp 18180,12262 18216,12262 18220,12450
-Straßenbahntrasse	3nocross::ignrte 18166,14277 18181,14110 18184,14078 18187,14039 18206,13817
+Straßenbahntrasse	3nocross::ignrte 18181,14110 18184,14078 18187,14039 18206,13817
 Rhinstr. [134-130] -> Rhinstr.: Straßenbahntrasse	3::igndisp 18477,14042 18187,14039 18206,13817
 Rhinstr. -> Rhinstr. [134-130]: Straßenbahntrasse	3::igndisp 18184,14078 18187,14039 18477,14042
+Straßenbahntrasse	3nocross::ignrte 17829,15015 17886,14899 17937,14795 17991,14684 18057,14549
+Rhinstr. -> Worbiser Str.: Straßenbahntrasse	3::igndisp 17937,14795 17886,14899 17700,14844
+Worbiser Str. -> Rhinstr.: Straßenbahntrasse	3::igndisp 17700,14844 17886,14899 17829,15015
+Rhinstr. -> Witzenhauser Str.: Straßenbahntrasse	3::igndisp 17991,14684 17937,14795 17750,14736
+Witzenhauser Str. -> Rhinstr.: Straßenbahntrasse	3::igndisp 17750,14736 17937,14795 17886,14899
+Rhinstr. -> Allendorfer Weg: Straßenbahntrasse	3::igndisp 18057,14549 17991,14684 17879,14659
+Allendorfer Weg -> Rhinstr.: Straßenbahntrasse	3::igndisp 17879,14659 17991,14684 17937,14795
 Straßenbahntrasse	3nocross::ignrte 19628,13517 19726,13524 19807,13529 19837,13531 19894,13535 20097,13549
 Allee der Kosmonauten -> Langhoffstr.: Straßenbahntrasse	3::igndisp 19726,13524 19807,13529 19821,13604
 Langhoffstr. -> Allee der Kosmonauten: Straßenbahntrasse	3::igndisp 19821,13604 19807,13529 19837,13531
@@ -1200,9 +1207,9 @@ Mozartstr. -> Lötschbergstr.: nicht passierbarer Mittelstreifen	3::igndisp 20169
 Alt-Biesdorf -> Mozartstr.: nicht passierbarer Mittelstreifen	3::igndisp 20114,11719 20161,11715 20169,11852
 Lötschbergstr. -> Mozartstr.: nicht passierbarer Mittelstreifen	3::igndisp 20150,11512 20161,11715 20169,11852
 Lötschbergstr. -> Alt-Biesdorf: nicht passierbarer Mittelstreifen	3::igndisp 20150,11512 20161,11715 20114,11719
-Straßentunnelrampe	3nocross::ignrte 18220,11710 18555,11724 18626,11742
-Alt-Friedrichsfelde -> Charlottenstr.: Straßentunnelrampe	3::igndisp 18626,11742 18555,11724 18556,11688
-Charlottenstr. -> Alt-Friedrichsfelde: Straßentunnelrampe	3::igndisp 18556,11688 18555,11724 18220,11710
+Straßentunnelrampe	3nocross::ignrte 18220,11710 18520,11707 18626,11742
+Alt-Friedrichsfelde -> Charlottenstr.: Straßentunnelrampe	3::igndisp 18626,11742 18520,11707 18520,11685
+Charlottenstr. -> Alt-Friedrichsfelde: Straßentunnelrampe	3::igndisp 18520,11685 18520,11707 18220,11710
 abgesperrter Mittelstreifen	3nocross::ignrte 3592,10869 3631,10784 3644,10759
 Lewishamstr. -> Gervinusstr.: abgesperrter Mittelstreifen	3::igndisp 3644,10759 3631,10784 3587,10768
 Gervinusstr. -> Gervinusstr.: abgesperrter Mittelstreifen	3::igndisp 3839,10904 3631,10784 3587,10768
@@ -2475,7 +2482,8 @@ Kreuzung Sewanstr./Am Tierpark	1::igndisp 18647,10172 18631,10167
 Am Tierpark, linker Gehweg	1::igndisp 18715,10003 18647,10172
 Treskowallee, linker Gehweg	1::igndisp 18748,9922 18715,10003
 Kreuzung Gregoroviusweg/Treskowallee	1::igndisp 18737,9901 18748,9922
-Alt-Friedrichsfelde, linker Gehweg	1::igndisp 18228,11656 18556,11688 18778,11742 19005,11767 19750,11730
+Alt-Friedrichsfelde, linker Gehweg	1::igndisp 18228,11656 18520,11685 18624,11712 18778,11742 19005,11767 19750,11730
+Alt-Friedrichsfelde, linker Gehweg	1::igndisp 18624,11712 18626,11742
 Landsberger Allee, linker Gehweg	1::igndisp 15430,14272 15256,14237
 Sonnenallee, linker Gehweg	1::igndisp 13457,8069 13474,8060
 Urbanstr.	1::igndisp 11861,9183 11888,9189

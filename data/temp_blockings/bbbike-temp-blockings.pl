@@ -9109,8 +9109,8 @@ userdel	q4::inwork -32153,-176 -32143,-211 -31993,-726 -31991,-1024
 EOF
      },
      { from  => 1179453600, # 2007-05-18 04:00
-       until => Time::Local::timelocal(reverse(2010-1900,12-1,23,15,0,0)), # 1279544400, # 2010-07-19 15:00
-       text  => 'Rudower Chaussee (Treptow - Köpenick) in beiden Richtungen Höhe S-Bahn Brücke Adlershof Baustelle, Straße vollständig gesperrt, als Fußgänger kann man passieren (bis Ende 2010)',
+       until => Time::Local::timelocal(reverse(2011-1900,8-1,31,15,0,0)), # 1279544400, # 2010-07-19 15:00
+       text  => 'Rudower Chaussee (Treptow - Köpenick) in beiden Richtungen Höhe S-Bahn Brücke Adlershof Baustelle, Straße vollständig gesperrt, als Fußgänger kann man passieren (bis Ende 08/2011)',
        type  => 'handicap',
        source_id => 'IM_005525',
        data  => <<EOF,
@@ -14295,8 +14295,8 @@ userdel	2::inwork -19058,11636 -19029,11660 -18750,11919
 EOF
      },
      { from  => 1243863900, # 2009-06-01 15:45
-       until => 1300635900, # 2011-03-20 16:45
-       text  => 'Pasewalker Str. (Pankow) stadteinwärts zwischen Marienstr. und Anschlussstelle A114 Baustelle, Fahrtrichtung gesperrt ist eingerichtet (bis Frühjahr 2011) ',
+       until => 1306853100, # 2011-05-31 16:45
+       text  => 'Pasewalker Str. (Pankow): Baustelle, Fahrtrichtung gesperrt (bis Frühjahr 2011) stadteinwärts zwischen Marienstr. und Anschlussstelle A114, 02.06.2009 15:45 Uhr bis 31.05.2011 16:45 Uhr ',
        type  => 'handicap',
        source_id => 'IM_012907',
        data  => <<EOF,
@@ -15704,9 +15704,9 @@ EOF
 userdel	2::inwork -30199,-5774 -30919,-6570 -31110,-6743 -32618,-7268
 EOF
      },
-     { from  => 1251530342, # 2009-08-29 09:19
-       until => 1293836399, # 2010-12-31 23:59
-       text  => 'Freiheit/Wiesendamm (Spandau) Richtung Spandauer Damm zwischen Klärwerkstr. und Spandauer Damm Baustelle, Fahrtrichtung gesperrt (bis Ende 2010)',
+     { from  => 1251090240, # 2009-08-24 07:04
+       until => 1296482400, # 2011-01-31 15:00
+       text  => 'Freiheit/Wiesendamm (Spandau): Baustelle, Fahrtrichtung gesperrt, Richtung Spandauer Damm zwischen Klärwerkstr. und Spandauer Damm, 25.08.2009 07:04 Uhr bis 31.01.2011 15:00 Uhr ',
        type  => 'handicap',
        source_id => 'IM_013995',
        data  => <<EOF,
@@ -17289,11 +17289,13 @@ userdel	2::inwork 50359,-20087 49368,-19096
 EOF
      },
      { from  => 1269772860, # 2010-03-28 12:41
-       until => Time::Local::timelocal(reverse(2010-1900,12-1,23,16,0,0)), # 1291734000, # 2010-12-07 16:00
-       text  => 'Erkstr. (Neukölln): Baustelle, Fahrtrichtung gesperrt (bis Mitte 12.2010) Richtung Sonnenallee, 29.03.2010 12:41 Uhr bis 23.12.2010 16:00 Uhr',
+       until => undef, # XXX Time::Local::timelocal(reverse(2010-1900,12-1,23,16,0,0)), # 1291734000, # 2010-12-07 16:00
+       text  => 'Erkstr. (Neukölln): Baustelle, Fahrtrichtung Richtung Sonnenallee gesperrt',
        type  => 'handicap',
        source_id => 'IM_015434',
        data  => <<EOF,
+#: last_checked: 2011-01-19
+#: next_check: 2011-02-15
 userdel	q4::inwork; 12598,8390 12771,8439
 EOF
      },
@@ -17378,8 +17380,8 @@ userdel	q4::inwork 48657,68265 49286,68297 49503,68415
 EOF
      },
      { from  => 1270980000, # 2010-04-11 12:00
-       until => 1293807600, # 2010-12-31 16:00
-       text  => 'Klemkestr. (Reinickendorf): Baustelle, Richtung Residenzstr. zwischen Str. vor Schönholz und Emmentaler Str., 12.04.2010 12:00 Uhr bis 31.12.2010 16:00 Uhr ',
+       until => 1304172000, # 2011-04-30 16:00
+       text  => 'Klemkestr. (Reinickendorf): Baustelle, Fahrtrichtung gesperrt, Richtung Residenzstr. zwischen Str. vor Schönholz und Emmentaler Str., 12.04.2010 12:00 Uhr bis 30.04.2011 16:00 Uhr ',
        type  => 'handicap',
        source_id => 'IM_015512',
        data  => <<EOF,
@@ -18069,9 +18071,9 @@ EOF
 userdel	q4::inwork -49042,-3647 -48542,-2958 -48338,-2586
 EOF
      },
-     { from  => 1279713600, # 2010-07-21 14:00
-       until => 1293836400, # 2011-01-01 00:00
-       text  => 'Lichterfeld-Schacksdorf: L60: Straßenbau Lauchhammer - Licherfelde, 22.07.2010 14:00 Uhr bis 31.12.2010 ',
+     { from  => 1295721720, # 2011-01-22 19:42
+       until => 1309471200, # 2011-07-01 00:00
+       text  => 'Lichterfeld-Schacksdorf: L60: Straßenbau Lauchhammer - Licherfelde, 22.07.2010 bis 30.06.2011 ',
        type  => 'gesperrt',
        source_id => '106200475',
        data  => <<EOF,
@@ -18577,9 +18579,9 @@ EOF
 userdel	q4::inwork -5806,16403 -5830,16356 -5849,16199 -5875,15994 -5911,15877
 EOF
      },
-     { from  => 1290029645, # 2010-11-17 22:34
-       until => 1292713200, # 2010-12-19 00:00
-       text  => 'Wustermark: K6304: Straßenneubau OD Priort (zw. Kartzow und Priort), 15.11.2010 bis 18.12.2010',
+     { from  => 1295723349, # 2011-01-22 20:09
+       until => 1301695200, # 2011-04-02 00:00
+       text  => 'Wustermark: K6304: Straßenneubau OD Priort (zw. Kartzow und Priort), 15.11.2010 bis 01.04.2011 ',
        type  => 'handicap',
        source_id => '106300839',
        data  => <<EOF,
@@ -18637,6 +18639,61 @@ EOF
        source_id => 'IM_016766',
        data  => <<EOF,
 userdel	q4::inwork 21233,6096 20722,6971
+EOF
+     },
+     { from  => 1254645120, # 2009-10-04 10:32
+       until => 1333112400, # 2012-03-30 15:00
+       text  => 'Berliner Str. (Pankow): Baustelle, Fahrtrichtung stadteinwärts gesperrt, 05.10.2009 10:32 Uhr bis 30.03.2012 15:00 Uhr',
+       type  => 'handicap',
+       source_id => 'IM_014357',
+       data  => <<EOF,
+userdel	q4::inwork; 10680,18380 10755,18231 10829,18083 10846,17992
+EOF
+     },
+     { from  => 1295721886, # 2011-01-22 19:44
+       until => 1306879200, # 2011-06-01 00:00
+       text  => 'Wandlitz: B273: Brückenneubau und Straßenerneuerung OD Wandlitz, 21.04.2010 bis 31.05.2011 ',
+       type  => 'gesperrt',
+       source_id => 'LS/O-SG33-E/10/039',
+       data  => <<EOF,
+userdel	2::inwork 13546,37474 14470,37191
+EOF
+     },
+     { from  => 1295721904, # 2011-01-22 19:45
+       until => 1306879200, # 2011-06-01 00:00
+       text  => 'Zernitz-Lohm: L141: Ersatzneubau einer Brücke ; Vollsperrung mit örtlicher Umfahrung bei Zernitz, Brücke über die Neue Jäglitz, 05.05.2010 bis 31.05.2011 ',
+       type  => 'gesperrt',
+       source_id => 'LS/W-SG33-K/10/053',
+       data  => <<EOF,
+userdel	2::inwork -60868,50275 -60612,50931
+EOF
+     },
+     { from  => 1293530940, # 2010-12-28 11:09
+       until => 1298902140, # 2011-02-28 15:09
+       text  => 'Straße Prenzlauer Berg (Prenzlauer Berg): gesperrt (geplatzte Wasserleitung) Richtung Friedrichshain zwischen Prenzlauer Allee und Greifswalder Str., 29.12.2010 11:09 Uhr bis 28.02.2011 15:09 Uhr ',
+       type  => 'handicap',
+       source_id => 'IM_016795',
+       data  => <<EOF,
+userdel	q4::inwork; 11257,13647 11545,13690
+EOF
+     },
+     { from  => 1294922580, # 2011-01-13 13:43
+       until => 1296060180, # 2011-01-26 17:43
+       text  => 'Straße nach Fichtenau (Köpenick): Gefahrenstelle, Straße vollständig gesperrt in beiden Richtungen zwischen Alter Fischerweg und Fürstenwalder Allee, 14.01.2011 13:43 Uhr bis 26.01.2011 17:43 Uhr ',
+       type  => 'gesperrt',
+       source_id => 'IM_016826',
+       data  => <<EOF,
+userdel	2::inwork 29898,5149 29832,5065 29705,4987 29712,4548
+userdel	2::inwork 30041,5329 30074,5402
+EOF
+     },
+     { from  => 1295723276, # 2011-01-22 20:07
+       until => 1296255600, # 2011-01-29 00:00
+       text  => 'Teupitz: L74: Überflutung der gesamten Fahrbahn zwischen Egsdorf und Teupitz, 18.01.2011 bis 28.01.2011 ',
+       type  => 'gesperrt',
+       source_id => 'LS/S-SG33-W/11/013',
+       data  => <<EOF,
+userdel	2::inwork 23962,-30831 24550,-30862
 EOF
      },
     );

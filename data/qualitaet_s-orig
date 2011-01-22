@@ -170,7 +170,7 @@ Harzer Str.: Kopfsteinpflaster	Q2 12871,9356 12897,9365
 Kiefholzstr.: Kopfsteinpflaster	Q2 13601,9572 13455,9711 13251,9829
 Hirschberger Str.: Kopfsteinpflaster	Q2+ 14988,11130 15012,11148 15099,11113
 Krummhübler Str.: Kopfsteinpflaster	Q2 15060,11006 15099,11113
-Marzahner Chaussee: Kopfsteinpflaster	Q2 18559,12105 18422,11837 18380,11747
+Marzahner Chaussee: Kopfsteinpflaster	Q2- 18559,12105 18422,11837 18380,11747
 Stellingdamm: schlechtes Kopfsteinpflaster	Q3 22475,6151 22603,6141 22777,6157 22957,6174
 Stellingdamm: Asphalt	Q0 22957,6174 23011,6181 23131,6237 23222,6276
 Planufer: Kopfsteinpflaster, OK	Q1- 11543,10015 11507,10004 11485,10029
@@ -3064,14 +3064,19 @@ Hilde-Ephraim-Str.: Asphalt	Q0 1312,9220 1261,9285 1662,9642 1709,9663 1718,9653
 Kyllmannstr. (Wannsee): Asphalt	Q0 -6248,1607 -6179,1570 -6147,1467 -6111,1396 -6065,1222
 Cheruskerpark: wassergebundene Decke	Q1 7437,8712 7403,8693 7369,8583
 Cheruskerpark: Asphalt	Q0 7369,8583 7352,8390 7283,8265 7250,8223
-Rhinstr. [Wohngebiet]: Beton	Q0- 18008,13507 17988,13683 17987,13766 18015,13846 18134,13811 18206,13817
+Rhinstr. [Wohngebiet]: Beton	Q0- 18008,13507 17988,13683 17987,13766 18015,13846 18043,13838 18134,13811 18206,13817
 Arendsweg: Beton	Q0- 17254,14451 17274,14280
+(Zufahrt IKEA): Asphalt	Q0 18166,14277 18055,14276 17976,14251 17808,14231 17668,14208 17335,14167 17289,14195 17274,14280
 (Zufahrt ehem. Einkaufszentrum): Asphalt	Q0 16864,14226 16965,14235 17010,14269 17060,14255 17221,14268 17274,14280
-#XXX del --- (Rhinstr. - Arendsweg/Landsberger Allee): unbefestiger Weg	Q2+ 18015,13846 17300,14133
-(Rhinstr. - Arendsweg/Landsberger Allee): ehem. Eisenbahngleise	Q3- 17300,14133 17319,14159
-(Rhinstr. - Arendsweg/Landsberger Allee): unbefestiger Weg, Schotter, Beton	Q2 17319,14159 17230,14206 17221,14268
+#XXX del --- (Rhinstr. - Arendsweg/Landsberger Allee): unbefestiger Weg	Q2+ 18015,13846 17266,14144
+#XXX del --- (Rhinstr. - Arendsweg/Landsberger Allee): ehem. Eisenbahngleise	Q3- 17266,14144 17319,14159
+#XXX del --- (Rhinstr. - Arendsweg/Landsberger Allee): unbefestiger Weg, Schotter, Beton	Q2 17319,14159 17230,14206 17221,14268
 Alte Rhinstr.: Asphalt	Q0 18247,14241 18225,14398 18183,14573
 Rhinstr. [134-130]: Asphalt	Q0 18477,14042 18187,14039
+Rhinstr. [Wohngebiet]: Beton	Q1+ 18043,13838 18053,13853 18044,13905
+Rhinstr. [Wohngebiet]: Asphalt	Q1+ 18044,13905 18027,14016 18021,14081
+Rhinstr. [Wohngebiet]: Asphalt	Q1+; 18021,14081 18181,14110
+Rhinstr. [Wohngebiet]: Beton	Q1+; 18181,14110 18021,14081
 Meeraner Str.: Asphalt	Q0 18382,13492 18407,13548 18462,13560 18489,13593 18486,13819 18477,14042
 Meeraner Str.: Asphalt	Q0 18626,13820 18486,13819 18206,13817
 Spinozastr.: Asphalt	Q0 3926,6409 3930,6481 3974,6511 4050,6506
@@ -3977,6 +3982,7 @@ Straße 155: Asphalt	Q0 17409,15454 17599,15435
 Straße 155: Asphalt/Beton	Q1 17657,15427 17706,15420 17782,15389
 Straße 158: Asphalt	Q0- 17902,15039 17839,15173 17847,15197 17740,15254
 Treffurter Str.: Asphalt	Q0- 17902,15039 17958,14920 18007,14818 18067,14700 18119,14599
+Witzenhauser Str.: Asphalt	Q0 17750,14736 17937,14795
 Witzenhauser Str.: unbefestigte Straße	Q2+ 17990,14808 18007,14818 18059,14838
 Witzenhauser Str.: Rasengittersteine	Q2+ 18059,14838 18170,14890
 Witzenhauser Str.: Asphalt	Q0- 18170,14890 18222,14917
@@ -4386,6 +4392,21 @@ Waldkauzstr.: Verbundsteinpflaster	Q1+ -1202,19877 -1364,19982 -1521,20041 -1630
 #: note ^^^
 #: by: http://farm6.static.flickr.com/5289/5245616631_ce131bef9e.jpg
 (Finchleystr. - John-Locke-Str.): Asphalt	Q0 10690,-1515 10508,-1511
+#: last_checked: 2011-01-22
+#: next_check: 2011-06-01
+#: XXX wird evtl auch verkehrsberuhigt sein?
+Bidenswinkel: unbefestigt, noch ohne Straßendecke	Q2- 16308,12877 16308,12772
+(Radweg nördl. des Krankenhauses Herzberge): Asphalt	Q0 17203,13519 17167,13655 17110,13811 17095,13972 17154,14093 17266,14144 18015,13846
+(Herzbergstr. - Siegfriedstr.): Asphalt	Q0 17167,13655 17056,13784 16875,13834
+Allendorfer Weg: Verbundsteinpflaster	Q1+ 17794,14640 17879,14659
+Allendorfer Weg: Beton	Q1+ 17879,14659 17991,14684
+Allendorfer Weg: unbefestigte Fahrbahn	Q2 18016,14688 18067,14700 18119,14709
+Allendorfer Weg: Asphalt	Q0 18232,14753 18286,14782
+Charlottenstr.: Beton	Q0- 18520,11707 18520,11685 18519,11662 18516,11631 18461,11588
+Charlottenstr: Asphalt	Q0 18461,11588 18477,11388
+Am Tierpark [Nebenfahrbahn]: Beton	Q0- 18268,11391 18306,11402 18272,11552 18264,11596 18285,11637
+Alt-Friedrichsfelde [Nebenfahrbahn]: Beton	Q0- 18285,11637 18329,11654 18381,11655 18519,11662
+Köpitzer Str.: Asphalt	Q0 18272,11552 18390,11597 18381,11655
 ######################### User Contributions #################################
 #: by: Dominik Seelow vvv
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
@@ -7329,9 +7350,7 @@ Waldmannstr.: mäßiges Kopfsteinpflaster	Q2 6139,3473 5886,3347 5735,3272
 Wönnichstr.: Asphalt	Q0 16588,10655 16697,10984
 Wönnichstr.: Kopfsteinpflaster	Q2 16697,10984 16711,11024 16777,11216 16852,11430 16887,11545 16917,11642 16977,11769
 #: by: ^^^
-#: by: Joerg Polzehl: vvv
-Allee der Kosmonauten: Beton, starke Straßenschäden	Q1; 18234,13500 18382,13492 18783,13469 18875,13467 19059,13474
-#: by: ^^^
+#XXX del --- konnte ich nicht mehr bestätigen (2011-01) --- #: by: Joerg Polzehl: --- Allee der Kosmonauten: Beton, starke Straßenschäden	Q1; 18234,13500 18382,13492 18783,13469 18875,13467 19059,13474
 #: by: Stefanie Hennicke
 Stolpmünder Weg: mäßiges Kopfsteinpflaster	Q2 -1627,24105 -1546,24143 -1434,24191 -1278,24259 -1194,24295 -1112,24331 -1039,24363 -1012,24375 -969,24358
 #: by: superillu (ilko) vvv

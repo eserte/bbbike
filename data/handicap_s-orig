@@ -644,8 +644,8 @@ Mulackstr.: enge Straße	q1 10640,13471 10535,13509 10406,13543 10304,13575
 Rückerstr.: enge Straße	q1 10597,13647 10535,13509
 Cheruskerpark: Fußgänger	q1 7437,8712 7403,8693 7369,8583 7352,8390 7283,8265 7250,8223
 (Bernhardstr. - Varziner Platz): S-Bahnunterführung, Fußgänger	q4 5471,7915 5475,7906 5492,7868
-(Rhinstr. - Arendsweg/Landsberger Allee): eng und kurvig	q3 17319,14159 17230,14206
-(Rhinstr. - Arendsweg/Landsberger Allee): Bordsteine	q3 17230,14206 17221,14268
+#XXX del --- (Rhinstr. - Arendsweg/Landsberger Allee): eng und kurvig	q3 17319,14159 17230,14206
+#XXX del --- (Rhinstr. - Arendsweg/Landsberger Allee): Bordsteine	q3 17230,14206 17221,14268
 (Georg-Knorr-Str. - Landsberger Allee): Rampe	q3 19151,15007 19152,14999 19127,14984 19156,14987 19157,14979
 (Georg-Knorr-Str. - Frank-Schweitzer-Str.): Unterführung, Fußgänger	q2 19157,14979 19171,14938 19175,14926
 (Rudolfplatz, Park): Fußgänger, Bordsteine, Radfahren verboten, ggfs. schieben	q3 14026,10869 13896,10851
@@ -759,6 +759,7 @@ Borgmannstr.: Bodenschwelle	q0 22531,5871 22513,5747
 Katzengrabensteg: Fußgänger	q1 22581,4932 22484,4868 22433,4887 22439,4838
 Samoastr.: Fußgänger	q1 6886,15156 6846,15202
 Nazarethkirchstr.: einige Bodenschwellen	q0 7543,16016 7441,15909 7354,15817 7198,15656
+(Landsberger Allee - Treffurter Str.): Fußgänger	q2 18057,14549 18119,14599
 ######################### User Contributions #################################
 #: by: Michael Kiekbusch
 #: corrected_by: srt/policy (q4 -> q3-)
