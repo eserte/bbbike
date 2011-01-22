@@ -53,7 +53,7 @@ my $acc_streets_track                = "$bbbike_rootdir/tmp/streets-accurate.bbd
 my $acc_cat_streets_track            = "$bbbike_rootdir/tmp/streets-accurate-categorized.bbd";
 my $acc_cat_split_streets_track      = "$bbbike_rootdir/tmp/streets-accurate-categorized-split.bbd";
 my %acc_cat_split_streets_byyear_track;
-my @acc_cat_split_streets_years = (2008..2010);
+my @acc_cat_split_streets_years = (2008..2011);
 for my $year (@acc_cat_split_streets_years) {
     $acc_cat_split_streets_byyear_track{$year} = "$bbbike_rootdir/tmp/streets-accurate-categorized-split-since$year.bbd";
 }
