@@ -98,9 +98,10 @@ Buckower Chaussee	1 8742,475 8972,498 9002,471
 Archibaldweg	1 15674,10851 15871,10925
 Nöldnerplatz	1 15871,10925 16032,10842
 Adlergestell (extra Radweg)	2 21998,1239 21541,1739 21475,1804
-Grünau/B179	1 22092,999 22120,886 22075,779 22007,711 21861,802 21894,881 21990,979 22092,999
+Richterstr.	1s 22092,999 22120,886 22075,779 22007,711
+Grünau/B179	1 22007,711 21861,802 21894,881 21990,979 22092,999
 Dorfplatz	1 21074,-475 20986,-529 20890,-546 20827,-537 20999,-489 21074,-475
-B96a (Kfz-Straße)	2 20272,-501 20585,-272 20781,-82 21115,271 21286,449 21536,801 21656,989 21829,1351 21862,1532 21819,1595 21541,1739
+B96a (Kfz-Straße)	2 20272,-501 20585,-272 20781,-82 21115,271 21286,449 21613,923 21656,989 21829,1351 21862,1532 21819,1595 21541,1739
 Zufahrt zur B96a	2 20288,-511 20272,-501
 Choriner Str.	1 10487,13928 10480,13871 10463,13747
 Olivaer Platz	1 4239,10358 4172,10406 4157,10418
@@ -765,9 +766,9 @@ Hauptstr. -> Hauptstr. (Rummelsburg) [Wohngebiet]: Straßenbahntrasse	3::igndisp 
 Straßenbahntrasse	3nocross::ignrte 16004,10204 16114,10123 16138,10105
 Hauptstr. -> Friedrich-Jacobs-Promenade: Straßenbahntrasse	3::igndisp 16138,10105 16114,10123 16063,10050
 Friedrich-Jacobs-Promenade -> Hauptstr.: Straßenbahntrasse	3::igndisp 16063,10050 16114,10123 16004,10204
-Grünstreifen	3nocross::ignrte 13649,14899 13749,15013 13838,15113
+Grünstreifen	3nocross::ignrte 13654,14905 13749,15013 13838,15113
 Kniprodestr. -> Altenescher Weg: Grünstreifen	3::igndisp 13838,15113 13749,15013 13856,14944
-Altenescher Weg -> Kniprodestr.: Grünstreifen	3::igndisp 13856,14944 13749,15013 13649,14899
+Altenescher Weg -> Kniprodestr.: Grünstreifen	3::igndisp 13856,14944 13749,15013 13654,14905
 Mittelstreifen	3nocross::ignrte 19578,6165 19405,6276 19276,6359
 Treskowstr. -> An der Wuhlheide: Mittelstreifen	3::igndisp 19333,6165 19405,6276 19276,6359
 An der Wuhlheide -> Treskowstr.: Mittelstreifen	3::igndisp 19578,6165 19405,6276 19333,6165
@@ -785,8 +786,8 @@ Armbrustweg -> Klemkestr.: Mittelstreifen	3::igndisp 7626,18606 7609,18707 7520,
 Straßenbahntrasse	3nocross::ignrte 14619,16682 14608,16772 14559,16912
 Caseler Str. -> Berliner Allee: Straßenbahntrasse	3::igndisp 14700,16790 14608,16772 14619,16682
 Berliner Allee -> Caseler Str.: Straßenbahntrasse	3::igndisp 14559,16912 14608,16772 14700,16790
-Straßenbahntrasse	3nocross::ignrte 13401,15821 13432,15843 13540,15928
-Streustr. -> Berliner Allee: Straßenbahntrasse	3::igndisp 13269,15927 13432,15843 13540,15928
+Straßenbahntrasse	3nocross::ignrte 13401,15821 13432,15843 13487,15888
+Streustr. -> Berliner Allee: Straßenbahntrasse	3::igndisp 13269,15927 13432,15843 13487,15888
 Gülzower Str.: Mittelstreifen	3 22603,12359 22388,12190 22424,12183
 Mittelstreifen	3nocross::ignrte 5350,21251 5357,21199 5391,21003
 Cyclopstr. -> Oranienburger Str.: Mittelstreifen	3::igndisp 5297,21243 5357,21199 5350,21251

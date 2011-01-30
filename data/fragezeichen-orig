@@ -37,12 +37,9 @@ Falkenberger Chaussee im Bereich Bhf. Hohenschönhausen	?::projected 17400,17790 
 #: by: ^^^
 #
 #: by: MoPo 2009-08-01, soll 2010 realisiert werden vvv
-#: last_checked: 2010-12-16
-#: next_check: 2011-02-01
+#: last_checked: 2011-01-26
+#: next_check: 2011-03-01
 Zossener Str./Lindenstr.	?::projected 9856,10358 9873,10285
-# XXX del --- ##: last_checked: 2010-11-06 --- #: next_check: 2011-01-15 --- Michaelbrücke/Michaelkirchstr.	?::projected 11768,12006 11716,11914 11676,11839 11574,11594 11498,11417
-#
-#XXX --- #: last_checked: 2010-10-22 --- #: next_check: 2011-01-01 --- # auch im Tsp 2010-03-26 erwähnt --- Fischerinsel	?::projected 10512,12039 10672,11870
 #
 #: last_checked: 2010-11-11
 #: next_check: 2010-12-15
@@ -104,10 +101,7 @@ Annenstr./Heinrich-Heine-Platz	?::projected 11349,11227 11249,11268 11091,11379 
 #: last_checked: 2010-11-19
 Müllerstr./Chausseestr.	?::projected 8346,14576 8286,14635 8246,14675 8153,14769 8138,14786 8057,14876
 #
-#: by: Tagesspiegel vom 2009-04-12, soll 2009 realisiert werden
-#: by: MoPo 2009-08-01, soll 2009 realisiert werden
-#: last_checked: 2009-11-16
-Kniprodestr.	?::projected 13838,15113 13749,15013 13649,14899 13438,14675
+# XXX del --- : by: Tagesspiegel vom 2009-04-12, soll 2009 realisiert werden --- #: by: MoPo 2009-08-01, soll 2009 realisiert werden --- #: last_checked: 2009-11-16 --- Kniprodestr.	?::projected 13838,15113 13749,15013 13654,14905 13649,14899 13438,14675
 #
 #: by: Tagesspiegel vom 2009-04-12, soll 2009 realisiert werden
 #: corrected_by: MoPo 2009-08-01, soll 2010 realisiert werden
@@ -152,10 +146,15 @@ Fahrradstraße in der Lauenburger Str.	?::projected 5883,4985 5909,5072 5939,5169
 #: section ignorieren vvv
 #: section Straßen in Bau und Planung vvv
 #
+#: last_checked: 2011-01-22
+#: next_check: 2011-02-14
+Am Tierpark: nach den Bauarbeiten vielleicht Radwege/-spuren?	?::inwork 18220,11710 18228,11656 18268,11391 18286,11275
+# 
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20101221.1110.323849.html
 #: XXX: Vorfahrtsregelung kann dann entfernt werden
 #: next_check: 2011-04-01
 Kohlis/Hultschiner Damm: Ampelanlage in Planung, Realisierung 2011	?::inwork 23810,7946
+# 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/48re.pdf/file
 #: by: http://www.maerkischeallgemeine.de/cms/beitrag/11913676/61759/Bau-der-neuen-Erschliessungsstrasse-auf-altem-Industriegelaende-in.html
 #: XXX fehlt in Berlin.coords.data
@@ -296,8 +295,6 @@ Asphaltierung gemeinsamer Geh- und Radweg (Schönholzer Heide)	? 7857,19693 7849,
 Alt-Biesdorf (nördliche Seite): Bau von Radwegen	?; 22242,11269 21960,11269 21860,11278 21750,11319 21624,11379 21398,11482 21311,11528
 #: last_checked: 2010-06-09
 Alt-Biesdorf/Alt-Kaulsdorf (südliche Seite): Bau von Radwegen	? 21108,11628 21251,11560 21311,11528 21398,11482 21624,11379 21750,11319 21860,11278 21960,11269 22242,11269 22326,11266 22484,11270
-#: last_checked: 2009-10-17
-Allee der Kosmonauten: Bau von Radwegen oder -streifen	?::inwork 19173,13478 19059,13474 18875,13467 18783,13469
 #: by ^^^
 # 
 #: by: MoPo 2009-08-01, soll 2010 realisiert werden vvv
@@ -316,8 +313,8 @@ Fürstenwalder Allee: Bau von Radverkehrsanlagen	? 29714,4461 29728,4435 29813,43
 #: next_check: 2010-03-01
 Radwegbau Welzower Steig	?::inwork 6320,21777 6370,21689 6428,21648 6478,21652 6508,21646 6529,21620 6576,21414
 # 
-#: last_checked: 2010-09-05 vvv
-#: next_check: 2011-01-01 vvv
+#: last_checked: 2011-01-30 vvv
+#: next_check: 2011-04-01 vvv
 Radverkehrsanlagen um den Knotenpunkt Weißenseer Weg/Konrad-Wolf-Str.	? 14960,14746 15052,14585 15164,14392
 Radverkehrsanlagen um den Knotenpunkt Weißenseer Weg/Konrad-Wolf-Str.	? 14754,14406 15052,14585 15272,14691
 #: next_check ^^^
@@ -328,13 +325,11 @@ Biesterfelder Str.: Asphaltierung eines Teilstücks	? 17102,16464 17010,16349 169
 #: last_checked: 2010-09-05
 Suermondtstr.: Schaffung von Radverkehrsanlagen	? 16964,16042 16961,16042 16660,16165 16515,16207 16416,16236 16260,16282 16095,16331 15919,16383
 # 
-#: last_checked: 2010-09-05
-#: next_check: 2011-01-01
+#: last_checked: 2011-01-30
+#: next_check: 2011-04-01
 Hansastr.: Schaffung von Radverkehrsanlagen	? 14650,15750 14823,15776 14934,15860 15124,16104 15187,16185 15432,16500
 # 
-# XXX Radwegeverbindung im Zuge der TR7 Springpfuhl - Lea-Grundig-Str.
-#: last_checked: 2009-11-16
-Puccinistr.: Asphaltierung	? 13700,15501 13776,15546
+#XXX --- del --- # XXX Radwegeverbindung im Zuge der TR7 Springpfuhl - Lea-Grundig-Str. --- #: last_checked: 2009-11-16 --- Puccinistr.: Asphaltierung	? 13700,15501 13776,15546
 # 
 #: last_checked: 2010-11-12 (Straße war gerade in Bau)
 #: next_check: 2010-12-01
@@ -422,14 +417,19 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 # Das heißt diese Strecken werden nicht bei einer erweiterten Suche aufgenommen
 # und dem CGI-Benutzer auch nicht präsentiert.
 # 
-#:
+#: XXX_indoor: Linksabbiegen hier nicht legal möglich, aber durchaus wünschenswert --- vielleicht die Benutzung des linken Gehwegs in der Kniprodestr. empfehlen?
+Michelangelostr./Kniprodestr.: Kreuzungssituation überdenken	? 13696,15237 13822,15164 
+Michelangelostr.: gibt es hier auch Radspuren oder -wege?	? 13822,15164 13696,15237 13195,15534 13098,15592
+#
 #: by: Tagesspiegel vom 2010-11-23
 #: last_checked: 2010-12-29
 #: XXX: habe keine Radstreifen hier gesehen, waren aber u.U. unter dem Schnee versteckt (aber unwahrscheinlich)
 #: next_check: 2011-02-01
 Schloßstr.: Radstreifen, wo genau?	? 5165,6119 5137,6066 5099,5994 5099,5994 5083,5964 5048,5904 5024,5863 5000,5816 4984,5788 4963,5754 4900,5648 4861,5581
+# 
 #: by: Tagesspiegel vom 2010-11-23
 Prinzenstr.: gibt es hier Radstreifen?	? 8939,16668 8926,16572 8788,16264
+# 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/36re.pdf/file
 Fichtenweg: Teilstück als Straßenland eingezogen?	? -2949,17946 -2963,17872
 # 
@@ -1433,7 +1433,7 @@ Niederlehme Anschlussstelle - Niederlehme: Qualität (wahrscheinlich Asphalt)? Ra
 Fürstenwalder Str. (Zernsdorf): Qualität?	? 27906,-11638 28150,-11380 28235,-11227 28388,-11093 28839,-10831 29192,-10630
 Am Möllenberg (Zernsdorf): Qualität?	? 27934,-10286 28016,-10429 28241,-10904 28388,-11093
 Krumpuhler Weg: Qualität? Einbahnstraße, auch für Radfahrer?	? 1405,18749 1390,18651
-Streust./Berliner Allee: Überqueren der Straßenbahntrasse möglich?	? 13432,15843
+#XXX del --- Streust./Berliner Allee: Überqueren der Straßenbahntrasse möglich?	? 13432,15843
 Karower Chaussee - Karower Str.: Qualität? Gibt es einen einfacheren Weg (ohne viel Zick-Zack)?	? 16376,24609 16410,24584 16345,24459 16450,24393 16433,24364 16471,24338 16470,24302 16890,24029 17055,23991
 #: note: laut Luftbild sieht es so aus! vvv
 #Marzahner Str. (Hohenschönhausen): Radwege? Vorfahrtsstraße?	? 17488,15766 17616,15775 17646,15777 17935,15781 18178,15787 18573,15803 18623,15587 18422,15590 18180,15594 18178,15787
@@ -4510,8 +4510,6 @@ Radweg in der Bergstraße: wo genau?	? -17968,7253 -18232,6565
 Weg entlang der S-Bahn: wie weit Richtung Norden geht es weiter?	? 20048,16317 20451,17120
 #: XXX unbeleuchtet
 Asphaltierter Radweg Richtung Waltersdorf/Flughafen Schönefeld: wie geht es weiter?	? 21306,-975 21284,-1008 21273,-1057 21237,-1108
-#: XXX Eintrag in Berlin.coords.data fehlt
-Kirchsteig: Qualität? Stimmt der Straßenname?	? 22007,711 21894,561
 #: last_checked: 2010-10-16
 Am Seegraben/Alexander-Meißner-Str.: Ampel in Vorbereitung	?::inwork 19894,-835
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1010/nachricht4100.html
@@ -4536,6 +4534,7 @@ Sternliebweg: Qualität? Wo liegt die Straße genau?	? 16159,3589 16198,3634
 # 
 #: XXX fehlt in Berlin.coords.data
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/38re.pdf/file
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/04re.pdf/file
 #: XXX Privatstraße
 Via Tilia: Qualität? Wo liegt die Straße genau?	? -7384,-970 -7326,-1047
 # 
@@ -4570,3 +4569,5 @@ Templiner Str.: gibt es in der Templiner Straße mittlerweile Radstreifen?	? -130
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/01re.pdf/file
 #: XXX fehlt in Berlin.coords.data
 Manuelaweg: wo genau befindet sich diese Straße? Qualität?	? -6349,5761 -6349,5674
+#: XXX fehlt in Berlin.coords.data
+Forum (Adlershof): Wo genau liegt die Straße? Ist sie ausgeschildert? Qualität?	? 19242,3052 19328,3072

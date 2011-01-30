@@ -1211,7 +1211,7 @@ Bevernstr.: Kopfsteinpflaster	Q2 13015,10659 13077,10747
 Naunynstr.: Kopfsteinpflaster	Q2 11403,10782 11365,10791
 Lychener Str.: Kopfsteinpflaster	Q2 11056,15009 11236,15312 11268,15360 11418,15587 11499,15710
 Arndtstr.: Kopfsteinpflaster	Q2 9487,9209 9546,9198 9617,9185 9674,9179 9795,9162 9962,9151
-Fidicinstr.: Kopfsteinpflaster	Q2 9224,9053 9305,9044 9459,9019 9654,8991 9799,8962
+Fidicinstr.: Kopfsteinpflaster	Q2 9224,9053 9295,9047 9459,9019 9654,8991 9799,8962
 Kopischstr.: Kopfsteinpflaster	Q2 9459,9019 9477,9113
 Kloedenstr.: Kopfsteinpflaster	Q2 9654,8991 9669,9080
 Chamissoplatz: Kopfsteinpflaster	Q2 9526,9104 9546,9198
@@ -3042,7 +3042,7 @@ Chopinstr.: Asphalt	Q0 14650,15750 14440,15682 14317,15642 14202,15604
 Solonplatz: Kopfsteinpflaster	Q2 14286,15962 14252,16048
 Smetanastr.: Kopfsteinpflaster	Q2 14014,16106 14063,15976 14095,15891
 Smetanastr.: Asphalt	Q0 14095,15891 14133,15790 14138,15775 14202,15604
-Meyerbeerstr.: Asphalt	Q0 14576,16069 14484,16035 14411,16008 14330,15978 14286,15962 14095,15891 13904,15818 13701,15744
+Meyerbeerstr.: Asphalt	Q0 14576,16069 14484,16035 14411,16008 14330,15978 14286,15962 14095,15891 13904,15818 13701,15744 13609,15706 13459,15653
 Seidenberger Str.: Asphalt mit Schäden	Q2+ 12521,16817 12379,16998
 Frieda-Seidlitz-Str.: Asphalt	Q0 12761,16862 12613,16749 12602,16727
 Herbert-Bayer-Str.: Verbundsteinpflaster	Q0- 12923,16873 12898,16898 12846,16971 12911,17021
@@ -3563,7 +3563,7 @@ Walchenseestr.: Asphalt	Q0 22453,1294 22364,1487 22334,1553
 Don-Ugoletti-Platz: Kopfsteinpflaster	Q2 22449,1569 22462,1547
 Don-Ugoletti-Platz - Regattastr.: Beton	Q1 22449,1569 22478,1602 22549,1644
 #: note: undefinierbarer Belag, aber sehr glatt
-(Dossestr. - Scharnweberstr.): Beton	Q0 15140,11811 15122,11834 15121,11899
+Ede-und-Unku-Weg: Beton	Q0 15140,11811 15122,11834 15121,11899
 Chiemseestr.: schlechtes Kopfsteinpflaster	Q3 22204,1496 22334,1553
 Weg A: unbefestigte Straße	Q2 27783,792 27859,875 27929,955
 Weg B: unbefestigte Straße	Q2 27817,761 27895,848 27963,916
@@ -4407,6 +4407,10 @@ Charlottenstr: Asphalt	Q0 18461,11588 18477,11388
 Am Tierpark [Nebenfahrbahn]: Beton	Q0- 18268,11391 18306,11402 18272,11552 18264,11596 18285,11637
 Alt-Friedrichsfelde [Nebenfahrbahn]: Beton	Q0- 18285,11637 18329,11654 18381,11655 18519,11662
 Köpitzer Str.: Asphalt	Q0 18272,11552 18390,11597 18381,11655
+Kirchsteig: Asphalt	Q0 22007,711 21894,561
+Bruno-Taut-Str.: Beton	Q0 21861,802 21783,668
+Smetanastr.: unbefestigte Straße	Q2 14255,15451 14202,15604
+(Antonplatz - Bizetstr.): Gehwegplatten	Q0- 13487,15888 13525,15784
 ######################### User Contributions #################################
 #: by: Dominik Seelow vvv
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
@@ -5621,7 +5625,7 @@ Karl-Schrader-Str.: Asphalt	Q0 6851,9365 6862,9542
 Jägerweg: Kopfsteinpflaster	Q2 -1333,22495 -1270,22720 -1299,22842
 #: by: S. Leberecht
 #: corrected_by: srt (Q1 -> Q0-, "mäßig" entfernt)
-Bizetstr.: Asphalt	Q0- 13409,15687 13456,15760 13573,15801 13667,15836 13869,15912 14063,15976 14252,16048 14296,16065 14550,16161
+Bizetstr.: Asphalt	Q0- 13409,15687 13456,15760 13525,15784 13573,15801 13667,15836 13869,15912 14063,15976 14252,16048 14296,16065 14550,16161
 #: by: Holger Starzewski:
 Varnhagenstr.: guter Asphalt	Q0 11614,16034 11680,16151 11808,16343
 #: by: Katharina Hoffmann: vvv
@@ -5693,9 +5697,8 @@ Binzstr.: holprige Pflasterstraße	Q2 11854,17656 11700,17629 11596,17610 11468,1
 #: by: stephanie (k.):
 Sponholzstr.: Asphalt	Q0 6157,7685 6155,7232 6155,7216 6157,7117
 #: by: Mandy (k.): vvv
-#: corrected_by: srt (Aufteilung)
-Puccinistr.: Kopfsteinpflaster	Q2 13700,15501 13776,15546
-Puccinistr.: Asphalt	Q0 13776,15546 13964,15656
+#: confirmed_by: srt
+Puccinistr.: Asphalt	Q0 13700,15501 13776,15546 13964,15656
 #: by: ^^^
 #: by: Felix Schröder: vvv
 Argenauer Str.: Kopfsteinpflaster	Q2 22035,7146 21944,7122 21846,7096 21791,7126
@@ -7000,8 +7003,10 @@ Heiligenberger Str.: schlechtes Kopfsteinpflaster	Q3 18269,8161 18328,8187 18351
 #: by: Rasmus (pries):
 Katteweg: Beton	Q0 -3017,1056 -3094,1183 -3192,1343 -3245,1427
 #: by: qrty: vvv
+#: corrected_by: srt (schlechtes -> mäßiges)
+Gounodstr.: mäßiges Kopfsteinpflaster	Q2 13574,15585 13645,15609 13739,15643
 #: confirmed_by: srt
-Gounodstr.: schlechtes Kopfsteinpflaster	Q3 13574,15585 13645,15609 13739,15643 13943,15717
+Gounodstr.: schlechtes Kopfsteinpflaster	Q3 13739,15643 13943,15717
 #: corrected_by: srt (schlechtes Kopfsteinpflaster -> Asphalt)
 Gounodstr.: Asphalt	Q0 13943,15717 14133,15790
 #: corrected_by: srt (schlechtes Kopfsteinpflaster -> Asphalt)
@@ -7297,7 +7302,7 @@ Wasserkäfersteig: mäßiges Kopfsteinpflaster	Q2 -1010,4751 -927,4638 -862,4542 -7
 Lütticher Str.: mäßiges Kopfsteinpflaster	Q2 6431,15700 6539,15548 6650,15409 6727,15319
 #: by: Helge Martinlöwitz:
 #: confirmed_by: srt
-Börnestr.: guter Asphalt	Q0 13214,15830 13269,15927 13316,16036 13404,16212
+Börnestr.: guter Asphalt	Q0 13214,15830 13269,15927 13309,16022 13404,16212
 #: by: Jan (Groscurth):
 Am Sandwerder: guter Asphalt	Q0 -4644,1514 -4638,1579 -4469,1921 -4326,2141
 #: by: Marion Kaminsky:
@@ -8048,7 +8053,7 @@ Schillerstr. (Lichtenrade): schlechtes Kopfsteinpflaster	Q3 9993,686 10051,642 1
 #: by: alex (sundance):
 Wesselburer Weg: Asphalt	Q0 -2055,22298 -2068,22213 -2082,22074 -2082,21963 -2079,21878 -2093,21532
 #: by: Harald Kamps:
-Max-Steinke-Str.: guter Asphalt	Q0 13540,15928 13523,15967
+Max-Steinke-Str.: guter Asphalt	Q0 13512,15909 13523,15967
 Max-Steinke-Str.: Kopfsteinpflaster	Q2 13523,15967 13516,15993
 Max-Steinke-Str.: guter Asphalt	Q0 13516,15993 13455,16192
 Max-Steinke-Str.: guter Asphalt	Q0 13429,16202 13421,16225 13377,16378
@@ -10528,7 +10533,8 @@ Abram-Joffe-Str.: Asphalt	Q0 18951,3069 19015,3129 19079,3190 19167,3287 19242,3
 #: note: "enge Straße", aber q0
 Lindenstr. (Biesdorf): schlechtes Kopfsteinpflaster	Q3 21420,11150 21164,11251 21138,11254
 #: by: Mareike Göhler-Robus:
-Rossinistr.: mäßiger Asphalt	Q1 13456,15760 13401,15821
+#: corrected_by: srt ("mäßig" gestrichen)
+Rossinistr.: Asphalt	Q0 13456,15760 13401,15821
 #: by: olli (bolliolli): vvv
 #: note: "q1" ohne Begründung ignoriert:
 #: corrected_by: srt (Asphalt -> glattes Pflaster)

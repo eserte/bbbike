@@ -1842,7 +1842,7 @@ EOF
        text  => 'Berliner Allee Richtung stadtauwärts, zwischen Langhanstr. und Lindenallee Baustelle, Fahrtrichtung gesperrt (bis Ende 2005)',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4; 13540,15928 13623,15954 13630,15956 13737,15994 13826,16026 14014,16106 14045,16120 14248,16202 14371,16252
+userdel	q4; 13512,15909 13623,15954 13630,15956 13737,15994 13826,16026 14014,16106 14045,16120 14248,16202 14371,16252
 EOF
      },
      { from  => 1138319749, # 2006-01-27 00:55
@@ -13293,7 +13293,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_011184',
        data  => <<EOF,
-#: last_checked: 2010-11-19
+#: last_checked: 2011-01-27
 userdel	q4::inwork; 10350,13376 10527,13257
 EOF
      },
@@ -17907,7 +17907,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_015920',
        data  => <<EOF,
-userdel	q4::temp 9248,9350 9300,9341 9489,9309 9505,9306 9632,9280 9689,9266 9753,9252
+userdel	q4::temp 9248,9350 9309,9347 9489,9309 9505,9306 9632,9280 9689,9266 9753,9252
 userdel auto	3 9487,9209 9505,9306 9524,9426
 userdel auto	3 9524,9426 9505,9306 9487,9209
 EOF
@@ -18687,9 +18687,9 @@ userdel	2::inwork 29898,5149 29832,5065 29705,4987 29712,4548
 userdel	2::inwork 30041,5329 30074,5402
 EOF
      },
-     { from  => 1295723276, # 2011-01-22 20:07
-       until => 1296255600, # 2011-01-29 00:00
-       text  => 'Teupitz: L74: Überflutung der gesamten Fahrbahn zwischen Egsdorf und Teupitz, 18.01.2011 bis 28.01.2011 ',
+     { from  => 1296387720, # 2011-01-30 12:42
+       until => 1298934000, # 2011-03-01 00:00
+       text  => 'Teupitz: L74: Überflutung der gesamten Fahrbahn zwischen Egsdorf und Teupitz, 18.01.2011 bis 28.02.2011 ',
        type  => 'gesperrt',
        source_id => 'LS/S-SG33-W/11/013',
        data  => <<EOF,

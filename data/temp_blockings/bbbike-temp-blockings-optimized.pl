@@ -504,7 +504,7 @@ push @temp_blocking,
          'text' => 'Weinmeisterstr. (Mitte) in Richtung Alexanderplatz gesperrt',
          'from' => undef,
          'id' => 1567,
-         'data' => '#: last_checked: 2010-11-19
+         'data' => '#: last_checked: 2011-01-27
 userdel	q4::inwork; 10350,13376 10527,13257
 ',
          'type' => 'gesperrt'
@@ -1726,22 +1726,12 @@ userdel	3 13150,7254 13047,7234 13034,7319
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_016826',
-         'until' => 1296060180,
-         'text' => 'Straße nach Fichtenau (Köpenick): Gefahrenstelle, Straße vollständig gesperrt in beiden Richtungen zwischen Alter Fischerweg und Fürstenwalder Allee, 14.01.2011 13:43 Uhr bis 26.01.2011 17:43 Uhr ',
-         'from' => 1294922580,
-         'id' => 2176,
-         'data' => 'userdel	2::inwork 29898,5149 29832,5065 29705,4987 29712,4548
-userdel	2::inwork 30041,5329 30074,5402
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'LS/S-SG33-W/11/013',
-         'until' => 1296255600,
-         'text' => 'Teupitz: L74: Überflutung der gesamten Fahrbahn zwischen Egsdorf und Teupitz, 18.01.2011 bis 28.01.2011 ',
-         'from' => 1295723276,
+         'until' => 1298934000,
+         'text' => 'Teupitz: L74: Überflutung der gesamten Fahrbahn zwischen Egsdorf und Teupitz, 18.01.2011 bis 28.02.2011 ',
+         'from' => 1296387720,
          'id' => 2177,
          'data' => 'userdel	2::inwork 23962,-30831 24550,-30862
 ',

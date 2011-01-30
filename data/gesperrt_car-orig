@@ -70,7 +70,7 @@ Kopfstr.	1 12478,7878 12327,7847 12220,7822 12176,7811 12041,7788
 Am Treptower Park	1 15166,8489 15079,8575 15070,8584 15002,8651 14934,8717 14852,8799 14842,8809 14739,8919 14614,9052 14563,9106 14529,9141 14443,9233 14382,9299 14242,9448 14179,9515 14089,9610
 Hagelberger - Yorck	3nocross 8595,9495 8648,9526 8777,9601
 Hagelberger - Mehringdamm	3nocross 9334,9670 9280,9476 9248,9350
-Fidicin - Mehringdamm	3 9305,9044 9224,9053 9225,9038 9227,8890
+Fidicin - Mehringdamm	3 9295,9047 9224,9053 9225,9038 9227,8890
 # Potsdam vvv
 Mangerstr. (Potsdam)	1 -12064,-284 -12108,-291 -12265,-418
 Rudolf-Breitscheid-Str.	1 -10446,-1947 -10360,-1934 -10235,-1916 -9986,-1882 -9735,-1845
@@ -86,7 +86,7 @@ UdL/Universit‰tsstr.	3nocross 9475,12365 9601,12380 9679,12388
 Kolonnenstr. -> Hohenfriedbergstr.	3 7709,8777 7795,8765 7791,8882
 Horn - Yorck	3nocross 8777,9601 9002,9731 9043,9745
 Mehringdamm - Baruther	3nocross 9444,9919 9387,9804 9334,9670
-Fidicin - Mehringdamm	3 9305,9044 9224,9053 9225,9038 9227,8890
+Fidicin - Mehringdamm	3 9295,9047 9224,9053 9225,9038 9227,8890
 Hobrechtstr.	1 12003,9105 11998,8872
 L¸tzowplatz	1 7002,11034 6873,11011
 Romain-Rolland-Str. - Berliner Str.	3 12856,17825 12825,17870 12736,17998 12479,17811
@@ -323,7 +323,7 @@ Berliner Str.: Mittelstreifen	3nocross 1214,3198 1338,3300 1415,3362
 #: note: Luftbild
 Prinzenallee: Mittelstreifen	3nocross 8939,16668 9000,16803 9024,16855 9028,16864 9082,16982
 #: note: Luftbild
-Berliner Allee: Straﬂenbahntrasse	3nocross 13540,15928 13623,15954 13630,15956 13737,15994
+Berliner Allee: Straﬂenbahntrasse	3nocross 13512,15909 13623,15954 13630,15956 13737,15994
 #: note: Luftbild
 Edisonstr.: Straﬂenbahntrasse	3nocross 17919,6978 17919,6968 17962,6674
 #: note: Luftbild
@@ -366,8 +366,8 @@ Knollstr.: Poller	3 17242,-80 17308,-36 17362,-1 17429,42 17488,80 17558,126 176
 Neumannstr.: Mittelstreifen	3nocross 11549,17154 11531,17250 11519,17316
 #: note: Luftbild: vvv
 Berliner Allee: Straﬂenbahn	3nocross 14045,16120 14248,16202 14371,16252
-Berliner Allee: Straﬂenbahn	3nocross 13540,15928 13623,15954 13630,15956 13737,15994
-Berliner Allee: Straﬂenbahn	3nocross 13401,15821 13432,15843 13540,15928
+Berliner Allee: Straﬂenbahn	3nocross 13512,15909 13623,15954 13630,15956 13737,15994
+Berliner Allee: Straﬂenbahn	3nocross 13401,15821 13432,15843 13487,15888 13512,15909
 #: note: ^^^
 #: by: Nicolas Schier:
 Talsandweg: Einbahnstraﬂe	1 3206,21179 3138,21372
@@ -670,3 +670,4 @@ Clausewitzstr.	1 3971,10381 4007,10559
 #: by: andk
 Bayerische Str.	1 4296,10004 4349,10247
 Ferdinand-Schultze-Str - Landsberger Allee	3 17794,14640 17848,14523 18057,14549
+Michelangelostr./Kniprodestr.	3 13875,15142 13830,15138 13838,15113

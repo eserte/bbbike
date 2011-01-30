@@ -74,7 +74,7 @@ Yorckstr. -> Hagelberger Str.: Hagelberger - Yorck	3::igndisp 8777,9601 8648,952
 Hagelberger - Mehringdamm	3nocross::ignrte 9334,9670 9280,9476 9248,9350
 Mehringdamm -> Hagelberger Str.: Hagelberger - Mehringdamm	3::igndisp 9248,9350 9280,9476 9000,9509
 Hagelberger Str. -> Mehringdamm: Hagelberger - Mehringdamm	3::igndisp 9000,9509 9280,9476 9334,9670
-Fidicin - Mehringdamm	3 9305,9044 9224,9053 9225,9038 9227,8890
+Fidicin - Mehringdamm	3 9295,9047 9224,9053 9225,9038 9227,8890
 Mangerstr. (Potsdam)	1 -12064,-284 -12108,-291 -12265,-418
 Rudolf-Breitscheid-Str.	1 -10446,-1947 -10360,-1934 -10235,-1916 -9986,-1882 -9735,-1845
 Bendastr.	1 12689,6905 12702,6846
@@ -96,7 +96,7 @@ Yorckstr. -> Hornstr.: Horn - Yorck	3::igndisp 8777,9601 9002,9731 8980,9751
 Mehringdamm - Baruther	3nocross::ignrte 9444,9919 9387,9804 9334,9670
 Baruther Str. -> Mehringdamm: Mehringdamm - Baruther	3::igndisp 9588,9827 9387,9804 9334,9670
 Mehringdamm -> Baruther Str.: Mehringdamm - Baruther	3::igndisp 9444,9919 9387,9804 9588,9827
-Fidicin - Mehringdamm	3 9305,9044 9224,9053 9225,9038 9227,8890
+Fidicin - Mehringdamm	3 9295,9047 9224,9053 9225,9038 9227,8890
 Hobrechtstr.	1 12003,9105 11998,8872
 L¸tzowplatz	1 7002,11034 6873,11011
 Romain-Rolland-Str. - Berliner Str.	3 12856,17825 12825,17870 12736,17998 12479,17811
@@ -502,8 +502,8 @@ Gotenburger Str. -> Prinzenallee: Mittelstreifen	3::igndisp 8844,16863 9000,1680
 Prinzenallee -> Gotenburger Str.: Mittelstreifen	3::igndisp 8939,16668 9000,16803 8844,16863
 Biesentaler Str. -> Prinzenallee: Mittelstreifen	3::igndisp 9245,16758 9024,16855 9000,16803
 Prinzenallee -> Biesentaler Str.: Mittelstreifen	3::igndisp 9028,16864 9024,16855 9245,16758
-Straﬂenbahntrasse	3nocross::ignrte 13540,15928 13623,15954 13630,15956 13737,15994
-Mahlerstr. -> Berliner Allee: Straﬂenbahntrasse	3::igndisp 13667,15836 13623,15954 13540,15928
+Straﬂenbahntrasse	3nocross::ignrte 13512,15909 13623,15954 13630,15956 13737,15994
+Mahlerstr. -> Berliner Allee: Straﬂenbahntrasse	3::igndisp 13667,15836 13623,15954 13512,15909
 Berliner Allee -> Mahlerstr.: Straﬂenbahntrasse	3::igndisp 13630,15956 13623,15954 13667,15836
 Tassostr. -> Berliner Allee: Straﬂenbahntrasse	3::igndisp 13621,15990 13630,15956 13737,15994
 Berliner Allee -> Tassostr.: Straﬂenbahntrasse	3::igndisp 13623,15954 13630,15956 13621,15990
@@ -588,14 +588,16 @@ Jenny-Lind-Str. -> Neumannstr.: Mittelstreifen	3::igndisp 11645,17271 11531,1725
 Straﬂenbahn	3nocross::ignrte 14045,16120 14248,16202 14371,16252
 Lindenallee -> Berliner Allee: Straﬂenbahn	3::igndisp 14296,16065 14248,16202 14045,16120
 Berliner Allee -> Lindenallee: Straﬂenbahn	3::igndisp 14371,16252 14248,16202 14296,16065
-Straﬂenbahn	3nocross::ignrte 13540,15928 13623,15954 13630,15956 13737,15994
-Mahlerstr. -> Berliner Allee: Straﬂenbahn	3::igndisp 13667,15836 13623,15954 13540,15928
+Straﬂenbahn	3nocross::ignrte 13512,15909 13623,15954 13630,15956 13737,15994
+Mahlerstr. -> Berliner Allee: Straﬂenbahn	3::igndisp 13667,15836 13623,15954 13512,15909
 Berliner Allee -> Mahlerstr.: Straﬂenbahn	3::igndisp 13630,15956 13623,15954 13667,15836
 Tassostr. -> Berliner Allee: Straﬂenbahn	3::igndisp 13621,15990 13630,15956 13737,15994
 Berliner Allee -> Tassostr.: Straﬂenbahn	3::igndisp 13623,15954 13630,15956 13621,15990
-Straﬂenbahn	3nocross::ignrte 13401,15821 13432,15843 13540,15928
-Streustr. -> Berliner Allee: Straﬂenbahn	3::igndisp 13269,15927 13432,15843 13540,15928
+Straﬂenbahn	3nocross::ignrte 13401,15821 13432,15843 13487,15888 13512,15909
+Streustr. -> Berliner Allee: Straﬂenbahn	3::igndisp 13269,15927 13432,15843 13487,15888
 Berliner Allee -> Streustr.: Straﬂenbahn	3::igndisp 13401,15821 13432,15843 13269,15927
+Bizetstr. -> Berliner Allee: Straﬂenbahn	3::igndisp 13525,15784 13487,15888 13432,15843
+Berliner Allee -> Bizetstr.: Straﬂenbahn	3::igndisp 13512,15909 13487,15888 13525,15784
 Talsandweg: Einbahnstraﬂe	1 3206,21179 3138,21372
 Mittelstreifen	3nocross::ignrte 10047,813 10187,872 10269,906
 Mittelstreifen	3nocross::ignrte 10485,807 10539,662 10590,525
@@ -1096,3 +1098,4 @@ Giesebrechtstr.	1 3912,10699 3997,10607 4017,10585 4030,10575 4153,10453 4157,10
 Clausewitzstr.	1 3971,10381 4007,10559
 Bayerische Str.	1 4296,10004 4349,10247
 Ferdinand-Schultze-Str - Landsberger Allee	3 17794,14640 17848,14523 18057,14549
+Michelangelostr./Kniprodestr.	3 13875,15142 13830,15138 13838,15113
