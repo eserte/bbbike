@@ -759,4 +759,5 @@ automatic-deployment:
 	nice ${MAKE} deploy-local NO_PARALLEL=1
 	${MAKE} deploy
 	cd ${BBBIKE_ROOT_DIR}/misc && slaymake rsync-fragezeichen-list
+	-( tkmessage -center "BBBike deployment finished, possibly interactive stuff follows..." &)
 	$(HOME)/src/bbbike-aux/misc/bbbike-checkin-hosteurope.pl -after-sync
