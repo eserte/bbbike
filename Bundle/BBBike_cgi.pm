@@ -31,6 +31,8 @@ XML::Parser	- optional für UAProf parsing (bevorzugt wird allerdings XML::LibXML
 
 YAML	- optional für YAML-Dumps der BBBike-Route sowie fuer temp_blockings
 
+JSON::XS	- optional für JSON-Dumps der BBBike-Route und diverse Serialisierungsaufgaben
+
 MIME::Lite	- Versenden von Benutzer-Kommentaren im Webinterface
 
 String::Approx 2.7	- oder man verwendet agrep (mindestens Version 3.0)

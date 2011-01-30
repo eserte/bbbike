@@ -67,7 +67,7 @@ YAML	- optional für YAML-Dumps der BBBike-Route sowie fuer temp_blockings
 
 YAML::Syck	- optional für die Testsuite, könnte auch YAML.pm in Zukunft ersetzen
 
-JSON::XS	- optional für diverse Serialisierungsaufgaben
+JSON::XS	- optional für JSON-Dumps der BBBike-Route und diverse Serialisierungsaufgaben
 
 Mail::Mailer 1.53	- falls man aus bbbike heraus E-Mails mit der Routenbeschreibung verschicken will
 
@@ -202,6 +202,8 @@ Text::Table
 Text::Unidecode	- Für das Neu-Erzeugen der .bbd-Dateien in data
 
 Data::Compare	- Für das Neu-Erzeugen der .bbd-Dateien in data
+
+HTML::FormatText	- Für VMZTool
 
 
 =head1 DESCRIPTION
