@@ -29,6 +29,7 @@ patch\.gz$
 ^nytprof/
 ^profiler/
 ^\.prove$
+(^|/)MYMETA\.yml
 # private common files
 \.ok2cgi$
 \.copynewer.SKIP$
