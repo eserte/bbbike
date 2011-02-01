@@ -193,39 +193,46 @@ if (@reload) {
     ($y1,$y2) = ($y2,$y1) if $y1 > $y2;
 
     if ($do_round) {
-	if ($xstep != 0.01 && $xstep != 0.1) {
-	    die "-round option works only with -xstep=0.01 or 0.1!";
-	}
-	if ($ystep != 0.01 && $ystep != 0.1) {
-	    die "-round option works only with -ystep=0.01 or 0.1!";
-	}
-	if ($xstep != $ystep) {
-	    die "Currently -xstep has to be equal -ystep for -round option!";
-	}
-	my $dqr = $xstep == 0.1 ? '\d' : '\d\d'; $dqr = qr{$dqr};
-	my $up = sub {
-	    my $dir = $_[1];
-	    if ($_[0] =~ m{\.$dqr.*[1-9]}) {
-		$_[0] += ($dir * $xstep);
+	if (eval { require Math::Round; 1 }) {
+	    $x1 = Math::Round::nlowmult($xstep, $x1);
+	    $y1 = Math::Round::nlowmult($ystep, $y1);
+	    $x2 = Math::Round::nhimult($xstep, $x2);
+	    $y2 = Math::Round::nhimult($ystep, $y2);
+	} else {
+	    if ($xstep != 0.01 && $xstep != 0.1) {
+		die "-round option works only with -xstep=0.01 or 0.1 (or install Math::Round)!";
+	    }
+	    if ($ystep != 0.01 && $ystep != 0.05 && $ystep != 0.1) {
+		die "-round option works only with -ystep=0.01 or 0.1 (or install Math::Round)!";
+	    }
+	    if ($xstep != $ystep) {
+		die "Currently -xstep has to be equal -ystep for -round option (or install Math::Round)!";
+	    }
+	    my $dqr = $xstep == 0.1 ? '\d' : '\d\d'; $dqr = qr{$dqr};
+	    my $up = sub {
+		my $dir = $_[1];
+		if ($_[0] =~ m{\.$dqr.*[1-9]}) {
+		    $_[0] += ($dir * $xstep);
+		    $_[0] =~ s{(\.$dqr).*}{$1};
+		}
+	    };
+	    my $down = sub {
 		$_[0] =~ s{(\.$dqr).*}{$1};
-	    }
-	};
-	my $down = sub {
-	    $_[0] =~ s{(\.$dqr).*}{$1};
-	};
+	    };
 
-	for ($x1, $y1) {
-	    if ($_ >= 0) {
-		$down->($_);
-	    } else {
-		$up->($_, -1);
+	    for ($x1, $y1) {
+		if ($_ >= 0) {
+		    $down->($_);
+		} else {
+		    $up->($_, -1);
+		}
 	    }
-	}
-	for ($x2, $y2) {
-	    if ($_ >= 0) {
-		$up->($_, +1);
-	    } else {
-		$down->($_);
+	    for ($x2, $y2) {
+		if ($_ >= 0) {
+		    $up->($_, +1);
+		} else {
+		    $down->($_);
+		}
 	    }
 	}
     }

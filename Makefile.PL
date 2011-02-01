@@ -254,6 +254,8 @@ my @req_table =
    'Für das Neu-Erzeugen der .bbd-Dateien in data'],
   [qw/HTML::FormatText	0	all	0	devel/,
    'Für VMZTool'],
+  [qw/Math::Round	0	all	0	devel/,
+   'Für downloadosm -round'],
 
   ## Maybe in future:
   # DBD::Pg - Strassen::Pg
