@@ -1991,7 +1991,9 @@ EOF
 		print crossing_text($coord);
 	    } else {
 		print "$$nameref";
-		if ($$ortref) {
+		if ($$ortref &&
+		    index(reverse($$nameref), reverse("$$ortref)")) != 0 # this means: $$ortref is not at the end of $$nameref (but this seems always the case in bbbike.de/beta)
+		   ) {
 		    print " ($$ortref)";
 		}
 		print "\n";
