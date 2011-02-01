@@ -155,7 +155,7 @@ for my $kr ($kr1, $kr2) {
 
     # Bergmannstr., Fuﬂg‰ngerampel
     {
-	my %situation = situation_at_point_inorder($kr, qw(9505,9306 9489,9309 9300,9341));
+	my %situation = situation_at_point_inorder($kr, qw(9505,9306 9489,9309 9309,9347));
 	is($situation{action}, '', q{No crossing, no action"});
 	if ($kr == $kr2) {
 	    is($situation{traffic_rule}, 'traffic_light_pedestrian', "pedestrian's traffic light");
