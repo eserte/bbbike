@@ -199,6 +199,9 @@ eval {
 	}
 	$subject = substr($subject, 0, 70) . "..." if length $subject > 70;
 
+	my $is_spam = length param('url');
+	$subject = "SPAM: $subject" if $is_spam;
+
 	eval {
 
 	    my $extra_html = newstreetform_extra_html
