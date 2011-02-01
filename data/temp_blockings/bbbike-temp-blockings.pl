@@ -18696,4 +18696,13 @@ EOF
 userdel	2::inwork 23962,-30831 24550,-30862
 EOF
      },
+     { from  => 1296591853, # 2011-02-01 21:24
+       until => 1300316399, # 2011-03-16 23:59
+       text  => 'Dircksenstr., Rochstr., Rosa-Luxemburg-Str.: Behinderungen wegen Bauarbeiten und temporärer Einbahnstraßenregelung möglich, 02. Februar bis 16. März 2011 ',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20110201.1500.329349.html',
+       data  => <<EOF,
+userdel	q4::inwork 10755,13152 10706,13043 10595,13100 10635,13207
+EOF
+     },
     );
