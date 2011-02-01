@@ -53,10 +53,10 @@ $OSM_FALLBACK_API_URL = "http://www.informationfreeway.org/api/0.6";
 
 use vars qw($MERKAARTOR_MAS_BASE $MERKAARTOR_MAS $ALLICONS_QRC $USE_MERKAARTOR_ICONS %ICON_NAME_TO_PHOTO);
 
-use constant XSTEP => 0.1;
-use constant YSTEP => 0.1;
-use constant MARGIN_X => 0.11; # MARGIN... needs to be larger than ...STEP
-use constant MARGIN_Y => 0.11;
+use constant XSTEP => 0.05;
+use constant YSTEP => 0.05;
+use constant MARGIN_X => 0.06; # MARGIN... needs to be larger than ...STEP
+use constant MARGIN_Y => 0.06;
 
 # taken from osm2bbd
 use constant CONSTRUCTION_RX => qr{^(?:construction|planned|proposed)$};
