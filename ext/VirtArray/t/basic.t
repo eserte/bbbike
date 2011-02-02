@@ -1,6 +1,7 @@
 # -*- perl -*-
 
 use VirtArray;
+use File::Temp qw(tempfile);
 use Test;
 use Getopt::Long;
 BEGIN { plan tests => 28 }
@@ -21,7 +22,10 @@ if (!GetOptions("benchmark!" => \$do_benchmark,
 
 ok(1);
 
-$file = "/tmp/VirtArrayTest";
+for (0 .. 5) {
+    (undef, $tmpfile[$_]) = tempfile(UNLINK => 1)
+	or die "Cannot create tempfile: $!";
+}
 
 for(0..1000) {
     push @a, $_;
@@ -30,8 +34,8 @@ for(0..1000) {
 
 ###
 
-VirtArray::store(\@fixed, $file . "2");
-@fixed_b = @{VirtArray::retrieve($file . "2")};
+VirtArray::store(\@fixed, $tmpfile[2]);
+@fixed_b = @{VirtArray::retrieve($tmpfile[2])};
 
 ok($#fixed == $#fixed_b, 1, "Different lengths: $#fixed vs. $#fixed_b");
 
@@ -53,7 +57,7 @@ if (@ARGV && $ARGV[0] eq '-memorycheck') {
     goto MEMORYCHECK;
 }
 
-$o = tie @fixed_c, 'VirtArray', $file . "2";
+$o = tie @fixed_c, 'VirtArray', $tmpfile[2];
 ok(tied(@fixed_c));
 
 $o->printinfo if $v;
@@ -79,8 +83,8 @@ untie @fixed_c;
 
 ###
 
-VirtArray::store(\@a, $file);
-@b = @{VirtArray::retrieve($file)};
+VirtArray::store(\@a, $tmpfile[0]);
+@b = @{VirtArray::retrieve($tmpfile[0])};
 
 ok($#a == $#b, 1, "Different lengths: $#a vs. $#b");
 
@@ -97,7 +101,7 @@ ok($#a == $#b, 1, "Different lengths: $#a vs. $#b");
     ok($ok);
 }
 
-$o2 = tie @c, 'VirtArray', $file;
+$o2 = tie @c, 'VirtArray', $tmpfile[0];
 ok(tied(@c));
 
 ok(scalar @a == $o2->FETCHSIZE, 1,
@@ -123,12 +127,12 @@ for(0..100) {
     push @d, pack("l$_", ($_)x$_);
 }
 
-VirtArray::store(\@d, $file . "3");
-@d2 = @{VirtArray::retrieve($file . "3")};
+VirtArray::store(\@d, $tmpfile[3]);
+@d2 = @{VirtArray::retrieve($tmpfile[3])};
 
 ok($#d == $#d2, 1, "Different lengths: $#d vs. $#d2");
 
-$o3 = tie @d3, 'VirtArray', $file . "3";
+$o3 = tie @d3, 'VirtArray', $tmpfile[3];
 ok(tied(@d3));
 
 {
@@ -144,8 +148,8 @@ my(@a);
 for(0..100) {
     push @a, [$_, $_+1, {'x' => $_+2}];
 }
-VirtArray::store(\@a, $file."5");
-my(@a2) = @{VirtArray::retrieve($file."5")};
+VirtArray::store(\@a, $tmpfile[5]);
+my(@a2) = @{VirtArray::retrieve($tmpfile[5])};
 
 ok($#a == $#a2, 1, "Different lengths: $#a vs. $#a2");
 ok(ref $a2[50], 'ARRAY', "Wrong data in \@a");
@@ -156,7 +160,7 @@ ok($a2[50]->[1], 51, "Wrong value in second element");
 ok($a2[50]->[2]{'x'}, 52, "Wrong value in third element");
 
 my(@a3);
-$o4 = tie @a3, 'VirtArray', $file . "5";
+$o4 = tie @a3, 'VirtArray', $tmpfile[5];
 ok(tied(@a3));
 ok(ref $a3[50], 'ARRAY', "Wrong data in \@a");
 ok(scalar @{$a3[50]}, 3, "Wrong length of array element in \@a");
@@ -233,13 +237,13 @@ if ($do_memory_check) {
     my @e;
     my $max = 150000;
     require Storable;
-    if (!-e $file . "4" && !-e $file . "4.store") {
+    if (!-e $tmpfile[4] && !-e $tmpfile[4].".store") {
 	for(my $i = 0; $i <= $max; $i++) {
 	    push @e, pack("l2", $i, $max-$i);
 	}
 
-	VirtArray::store(\@e, $file . "4");
-	Storable::store(\@e, $file . "4.store");
+	VirtArray::store(\@e, $tmpfile[4]);
+	Storable::store(\@e, $tmpfile[4].".store");
 
 	undef @e;
     }
@@ -249,7 +253,7 @@ if ($do_memory_check) {
 
     # make two loops ... to check whether the OS will reuse memory
     for my $loop (1..2) {
-	my $o3 = tie @e, 'VirtArray', $file . "4";
+	my $o3 = tie @e, 'VirtArray', $tmpfile[4];
 
 	my $mem = get_proc_memory();
 	warn "Memory while VirtArray ($loop): $mem (+" . ($mem-$emptymem) . ")\n";
@@ -271,7 +275,7 @@ if ($do_memory_check) {
 	$emptymem = $mem;
     }
 
-    @e = @{Storable::retrieve($file . "4.store")};
+    @e = @{Storable::retrieve($tmpfile[4].".store")};
 
     my $mem = get_proc_memory();
     warn "Memory while normal Array: $mem (+" . ($mem-$emptymem) . ")\n";
@@ -280,7 +284,7 @@ if ($do_memory_check) {
 
 sub make_tie_mmaparray {
     if (eval q{ require Tie::MmapArray; 1}) {
-	tie @mmaparray, 'Tie::MmapArray', $file . "2",
+	tie @mmaparray, 'Tie::MmapArray', $tmpfile[2],
 	    { template => 'i',
 	      mode => "rw",
 	    }
