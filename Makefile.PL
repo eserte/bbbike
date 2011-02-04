@@ -226,7 +226,9 @@ my @req_table =
   [qw/Yahoo::Search	0	all	0	plugin/,
    'Suche in luise-berlin'],
   [qw/Geo::Coder::Google	0.06	all	0	plugin/,
-   'Geocoding über Googlemaps'], # alternative: Geo::Coder::GoogleMaps 0.03
+   'Geocoding über Googlemaps (API v2)'], # alternative: Geo::Coder::GoogleMaps 0.03
+  [qw/Geo::Coder::Googlev3	0	all	0	plugin/,
+   'Geocoding über Googlemaps (API v3)'],
   [qw/Geo::Coder::Yahoo	0	all	0	plugin/,
    'Geocoding über Yahoo'],
   [qw/Geo::Coder::Bing	0	all	0	plugin/,
