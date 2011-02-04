@@ -113,6 +113,12 @@ sub geocoder_dialog {
 					   join(",", @{$location->{geometry}{location}}{qw(lng lat)});
 				   },
 				  },
+		'Google_v3' => {
+				'label' => 'Google v3 (without API key, using module)',
+				'require' => sub { require Geo::Coder::Googlev3 },
+				'new' => sub { Geo::Coder::Googlev3->new },
+				# extract_loc/addr defined below
+			       },
 		'Google' => { 'new' => sub {
 				  my $apikey = do {
 				      my $file = "$ENV{HOME}/.googlemapsapikey";
@@ -261,6 +267,8 @@ sub geocoder_dialog {
 		# currently (2009-09) not production-ready (no results
 		# for non-US addresses)
 	       );
+    $apis{Google_v3}->{$_} = $apis{My_Google_v3}->{$_} for (qw(extract_loc extract_addr));
+
     for my $_api (sort keys %apis) {
 	my $label = $apis{$_api}->{'label'} || $_api;
 	$gcf->Radiobutton(-variable => \$geocoder_api,
