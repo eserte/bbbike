@@ -146,6 +146,9 @@ Fahrradstraße in der Lauenburger Str.	?::projected 5883,4985 5909,5072 5939,5169
 #: section ignorieren vvv
 #: section Straßen in Bau und Planung vvv
 #
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/05re.pdf/file
+Franz-Mett-Str.: Einfahrt wird Richtung Süden verlegt, prüfen!	?::inwork 18417,10738 18395,10732 18368,10763
+# 
 #: last_checked: 2011-01-22
 #: next_check: 2011-02-14
 Am Tierpark: nach den Bauarbeiten vielleicht Radwege/-spuren?	?::inwork 18220,11710 18228,11656 18268,11391 18286,11275
@@ -255,7 +258,7 @@ Mangerstr.: Bauarbeiten bis Dezember 2010, danach asphaltiert	?::inwork -12064,-
 Mauerweg: evtl. existiert hier bereits ein geschotterter Radweg parallel zur Straße	? -8799,3778 -9064,3667 -9156,3451 -9399,3297 -9530,3165 -9999,2615 -10105,2458
 #
 #: last_checked: 2010-09-18 vvv
-#: next_check: 2011-02-01 vvv
+#: next_check: 2011-04-01 vvv
 #: XXX Eintrag in Berlin.coords.data fehlt: PLZ=10117
 #: XXX genaue Lage?
 Prinzengasse: existiert sie schon, wenn ja: wie ist die Qualität?	?::inwork 9952,12292 10029,12313
@@ -3049,7 +3052,6 @@ Sulzer Str.: Qualität?	? 13720,21761 13825,21730 13887,21714 13938,21700 14017,2
 Urbacher Str.: Qualität?	? 14262,21607 14227,21657 14156,21753 14064,21838 13950,21935 13853,22006
 Ahornallee (Blankenburg): Qualität?	? 14096,21243 14157,21442 14227,21657
 Ilsenburgstr.: Qualität?	? 13729,21779 13652,21799 13478,21532 13415,21442 13287,21224 13215,21077 13219,21002
-Eifelstr.: Qualität?	? 13580,21286 13351,21237 13287,21224
 Vogesenstr.: Qualität?	? 13351,21237 13368,21142
 Schäferstege: Qualität?	? 13403,20686 13380,20811 13366,20897
 Georgenstr. (Blankenburg): Qualität?	? 14263,20352 14294,20412 14309,20486 14320,20580 14328,20644 14304,20682 14236,20773 14091,20962
@@ -3250,8 +3252,6 @@ Zu den Krugwiesen: Qualität?	? 18513,17228 18646,17345
 (Weg durch Falkenberger Krugwiesen): Qualität? Nachts beleuchtet?	? 18646,17345 18680,17422 18784,17525 18831,17663 19102,17879 19111,18040 19212,18205 19251,18252 19249,18351 19291,18456
 Zum Forsthaus: Qualität?	? 21814,13256 21956,13221
 #XXX del unbedeutend --- : XXX Eintrag fehlt in Berlin.coords.data --- Wasserweg (Baumschulenweg): Kolonieweg, Qualität?	? 15370,4690 15212,4611
-#: XXX laut osm cobblestone
-Malchower Str.: Qualität?	? 13182,19832 12586,20131 12547,20154
 Sigurdstr.: Qualität?	? 12632,19310 12674,19188 12706,19107
 Straße 5 (Heinersdorf): Qualität?	? 12674,19188 12631,19169
 Ingeborgstr.: Qualität? Geht die Straße weiter bis Romain-Rolland-Str.?	? 13011,19111 12861,19072 12809,19050
@@ -3780,7 +3780,6 @@ Straße 24: Qualität?	? 14538,20819 14484,20832
 #: XXX_osm bei osm falsch (str 52 statt 42)?
 Straße 42 (Blankenburg): Qualität?	? 14559,20889 14751,20876
 Villacher Str.: Qualität?	? 14734,21109 14634,21135 14580,21146
-Rheinfelsstr.: Qualität?	? 13698,21969 13505,22081
 Straße 47 (Blankenburg): Qualität?	? 13136,21419 13224,21374
 Hartmutstr.: Qualität?	? 13065,21267 13204,21203
 Herwigstr.: Qualität?	? 12993,21112 13165,21144
@@ -3998,7 +3997,6 @@ Straße 124: Qualität?	? 11013,22745 10979,22769 10758,22952
 Margaretenaue: Qualität?	? 11984,20246 12071,20232 12087,20312 12000,20327
 Straße 42 (Französisch Buchholz): Qualität?	? 12087,20312 12211,20486 12274,20570 12222,20637
 Straße 44 (Französisch Buchholz): Qualität?	? 12211,20486 12118,20557
-Karestr.: Qualität?	? 15453,24474 15414,24418 15344,24315
 #: XXX Existiert hier ein Straßenname? evtl. str_cont_ausnahme-Eintrag notwendig
 Pfannschmidtstr.: Qualität?	? 15536,24417 15498,24362 15423,24251
 Ballonplatz: Qualität?	? 15591,24137 15661,24250
@@ -4543,6 +4541,7 @@ Elisabeth-Schwarzhaupt-Platz: liegt er an der Kreuzung Invalidenstr/Gartenstr?	?
 Wartenberger Str.: abknickende Vorfahrt?	? 17400,17790 17356,17856 17557,17999
 # 
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/presse/archiv/20101112.1040.318520.html
+#: XXX aber hier ist er nicht, hier ist der Jürgen-Fuchs-Platz...
 Platz M: Wo genau befindet sich der "Platz M"? Ist der Platz ausgeschildert?	? 3366,5654
 Fahrenheitstr. - Celsiusstr.: Existiert eine Durchfahrt für Radfahrer? Qualität?	? 4510,669 4436,621
 Kummerower Ring - Feldberger Ring: existiert eine Durchfahrt für Radfahrer? Qualität?	? 22615,13734 22672,13751

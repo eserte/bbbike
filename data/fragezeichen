@@ -1900,7 +1900,6 @@ Sulzer Str.: Qualität?	? 13720,21761 13825,21730 13887,21714 13938,21700 14017,2
 Urbacher Str.: Qualität?	? 14262,21607 14227,21657 14156,21753 14064,21838 13950,21935 13853,22006
 Ahornallee (Blankenburg): Qualität?	? 14096,21243 14157,21442 14227,21657
 Ilsenburgstr.: Qualität?	? 13729,21779 13652,21799 13478,21532 13415,21442 13287,21224 13215,21077 13219,21002
-Eifelstr.: Qualität?	? 13580,21286 13351,21237 13287,21224
 Vogesenstr.: Qualität?	? 13351,21237 13368,21142
 Schäferstege: Qualität?	? 13403,20686 13380,20811 13366,20897
 Georgenstr. (Blankenburg): Qualität?	? 14263,20352 14294,20412 14309,20486 14320,20580 14328,20644 14304,20682 14236,20773 14091,20962
@@ -2065,7 +2064,6 @@ Wonnegausteig: Qualität? Für Autos gesperrt?	? -2708,2439 -2690,2385 -2667,2325
 Zu den Krugwiesen: Qualität?	? 18513,17228 18646,17345
 (Weg durch Falkenberger Krugwiesen): Qualität? Nachts beleuchtet?	? 18646,17345 18680,17422 18784,17525 18831,17663 19102,17879 19111,18040 19212,18205 19251,18252 19249,18351 19291,18456
 Zum Forsthaus: Qualität?	? 21814,13256 21956,13221
-Malchower Str.: Qualität?	? 13182,19832 12586,20131 12547,20154
 Sigurdstr.: Qualität?	? 12632,19310 12674,19188 12706,19107
 Straße 5 (Heinersdorf): Qualität?	? 12674,19188 12631,19169
 Ingeborgstr.: Qualität? Geht die Straße weiter bis Romain-Rolland-Str.?	? 13011,19111 12861,19072 12809,19050
@@ -2495,7 +2493,6 @@ Straße 46 (Blankenburg): Qualität?	? 14482,20547 14685,20504
 Straße 24: Qualität?	? 14538,20819 14484,20832
 Straße 42 (Blankenburg): Qualität?	? 14559,20889 14751,20876
 Villacher Str.: Qualität?	? 14734,21109 14634,21135 14580,21146
-Rheinfelsstr.: Qualität?	? 13698,21969 13505,22081
 Straße 47 (Blankenburg): Qualität?	? 13136,21419 13224,21374
 Hartmutstr.: Qualität?	? 13065,21267 13204,21203
 Herwigstr.: Qualität?	? 12993,21112 13165,21144
@@ -2674,7 +2671,6 @@ Straße 124: Qualität?	? 11013,22745 10979,22769 10758,22952
 Margaretenaue: Qualität?	? 11984,20246 12071,20232 12087,20312 12000,20327
 Straße 42 (Französisch Buchholz): Qualität?	? 12087,20312 12211,20486 12274,20570 12222,20637
 Straße 44 (Französisch Buchholz): Qualität?	? 12211,20486 12118,20557
-Karestr.: Qualität?	? 15453,24474 15414,24418 15344,24315
 Pfannschmidtstr.: Qualität?	? 15536,24417 15498,24362 15423,24251
 Ballonplatz: Qualität?	? 15591,24137 15661,24250
 Chronisteneck: gibt es diesen Platz? Ist er ausgeschildert?	? 15730,24051
@@ -3172,6 +3168,9 @@ Dorfstr.: Kopfsteinpflaster (Hat die Dorfstr. noch immer Kopfsteinpflaster oder 
 Parforceweg: Waldweg? (Ist der Parforceweg ein "gewöhnlicher" Waldweg?)	? -643,7252 -728,7310 -1008,7427 -1142,7493 -1308,7558 -1328,7597 -1787,7932 -1843,8128 -2028,8270 -2078,8217 -2117,8204 -2156,8208 -2294,8232 -2386,8282
 Kohlweißlingstr.: Verbundsteinpflaster (Qualität: Verbundsteinpflaster oder Asphalt?)	? 21723,10920 21765,10834
 Distelfalterstr.: Verbundsteinpflaster (Qualität: Verbundsteinpflaster oder Asphalt?)	? 21723,10920 21605,10866
+Malchower Weg: Kopfsteinpflaster (Ist das Kopfsteinpflaster eher mäßig oder eher schlecht?)	? 13182,19832 12586,20131 12547,20154
+Rheinfelsstr.: Kopfsteinpflaster (Ist das Kopfsteinpflaster eher mäßig oder eher schlecht?)	? 13698,21969 13505,22081
+Eifelstr.: Kopfsteinpflaster (Ist das Kopfsteinpflaster eher mäßig oder eher schlecht?)	? 13580,21286 13351,21237 13287,21224
 Anemonenstr.: asphaltiert (Ist die Anemonenstr. asphaltiert oder gepflastert?)	? 23541,4439 23651,4467 23826,4539 23934,4661
 Barkenhof: guter Asphalt (Ist der Barkenhof eine Spielstraße?)	? -1892,1732 -1921,1826
 Haßfurter Weg: mäßiger Asphalt (Kopfsteinpflaster oder Asphalt?)	? 11835,18301 11796,18482
@@ -3183,6 +3182,8 @@ Am Rundling: Fahrbahn derzeit noch Sand, bald vielleicht gepflastert (Ist der nö
 Feldtmannstr.: mäßiges Kopfsteinpflaster (wo genau sind die Kopfsteinpflasterabschnitte in der Feldtmannstr?)	? 16326,17407 16302,17439 16070,17472 15827,17509 15810,17512 15239,17599
 Korkedamm: guter Asphalt (Ist der gesamte Korkedamm asphaltiert?)	? 19244,2141 19296,2257 19327,2288 19375,2341 19654,2325 19962,2277
 Teutonenstr. (Nikolassee): schlechtes Kopfsteinpflaster (Ist die Teutonenstr. zwischen Prinz-Friedrich-Leopold-Str. und An der Rehwiese asphaltiert?)	? -3519,2180 -3409,2113 -3322,2029 -3249,2002
+Königsteinstr. (Blankenburg): asphaltiert (Ist die Königsteinstr. zwischen Flaischlenstr. und Frankestr. asphaltiert oder gepflastert?)	? 13395,22365 13476,22345 13541,22300
+Königsteinstr. (Blankenburg): Kopfsteinpflaster (Ist das Kopfsteinpflaster in der Königsteinstr. eher mäßig oder eher schlecht?)	? 13541,22300 13613,22250 13695,22210 13795,22131
 Treseburger Str. (Blankenburg): mäßiges Kopfsteinpflaster (welcher Abschnitt ist mit Kopfsteinpflaster versehen, wie sieht der Rest aus?)	? 14509,21337 14461,21372 14304,21399 14157,21442 14069,21471 13978,21496 13884,21524
 Klausenburger Pfad: guter Asphalt (Ist der Klausenburger Pfad eine Spielstraße (verkehrsberuhigter Bereich)?)	? 7199,-418 7110,-363 7030,-313 6985,-282 6885,-169 6867,-126
 Kreuzgraben: guter Beton (ist die Straße Kreuzgraben verkehrsberuhigt?)	? 10309,20032 10282,20137 10267,20193 10264,20209
@@ -3198,7 +3199,6 @@ Sputendorf: teilweise Kopfsteinpflaster, OK (Stimmt das oder ist das Stück in Sp
 Fahlhorst: schlechtes Kopfsteinpflaster (Stimmt das noch immer?)	? -5709,-10987 -5452,-11456
 Werder - Golm: relativ glatter Feldweg mit einigen Schlaglöchern (welche Nummer des F-Wegs?)	? -21063,-2021 -20933,-1960 -20719,-1956 -20528,-1962
 Neu-Zittau: Kopfsteinpflaster (nach den Bauarbeiten (2006-10-20) wahrscheinlich asphaltiert)	? 33773,-1116 33628,-1509
-Seelübbe - Prenzlau: asphaltiert (aus der Bahn heraus gesehen)	? 40691,100865 40754,100635 40954,100113
 Schönwerder - B198: zweispuriger Plattenweg (ist der Abschnitt nach Schönwerder mittlerweile asphaltiert?)	? 39192,107687 38970,107400 38860,107132 38580,106837 38516,106706 38525,106532 38034,105319
 Schönwerder - B198: zweispuriger Plattenweg (ist der Abschnitt nach Schönwerder mittlerweile asphaltiert?)	? 37760,104661 37559,103631 37410,103257
 Randow - Lützlow: Feldweg, Schotter (nur das nördliche Ende gesehen, weiter südlich wahrscheinlich Plattenweg)	? 54005,92771 53275,93087 52900,93012 52699,93129

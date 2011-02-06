@@ -183,7 +183,8 @@ Alt-Tegel: Kopfsteinpflaster	Q2 1907,20265 1753,20191 1668,20156 1529,20131
 Alt-Tegel: Kopfsteinpflaster	Q2 1543,20060 1630,20097 1668,20156
 Mariannenstr: mäßiges bis gutes Kopfsteinpflaster, 25 km/h möglich	Q1 11512,10105 11616,10288 11671,10402
 Hochstr.: Kopfsteinpflaster	Q2 9059,16038 8923,15850
-Böttgerstr.: Kopfsteinpflaster	Q2 9134,15953 8923,15850 8720,15914 8655,15979 8582,16052
+Böttgerstr.: Asphalt	Q0 9134,15953 8923,15850
+Böttgerstr.: Kopfsteinpflaster	Q2 8923,15850 8720,15914 8655,15979 8582,16052
 Hussitenstr.: Kopfsteinpflaster, Radwege OK	Q1 8742,15298 8900,15146
 Hussitenstr.: Kopfsteinpflaster	Q2 8900,15146 9041,14896 9112,14771
 Grenzstr.: Kopfsteinpflaster, teilweise OK, über der S-Bahn-Brücke asphaltiert	Q2 8742,15298 8654,15201 8614,15156 8570,15107
@@ -4032,6 +4033,10 @@ Kirchsteig: Asphalt	Q0 22007,711 21894,561
 Bruno-Taut-Str.: Beton	Q0 21861,802 21783,668
 Smetanastr.: unbefestigte Straße	Q2 14255,15451 14202,15604
 (Antonplatz - Bizetstr.): Gehwegplatten	Q0 13487,15888 13525,15784
+Malchower Weg: Kopfsteinpflaster	Q3 13182,19832 12586,20131 12547,20154
+Karestr.: Asphalt	Q0 15453,24474 15414,24418 15344,24315
+Rheinfelsstr.: Kopfsteinpflaster	Q3 13698,21969 13505,22081
+Eifelstr.: Kopfsteinpflaster	Q3 13580,21286 13351,21237 13287,21224
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
 Riemeisterstr.: mäßiges Kopfsteinpflaster, aber asphaltierte Radwege	Q1 346,4833 294,4916 158,5103 103,5123
 Pücklerstr.: Fahrbahn mit schlechtem Kopfsteinpflaster, Radweg OK	Q1 2688,7067 2576,7026 2465,6984 2403,6962 2266,6911 2155,6873 2130,6865 2054,6840 1961,6820
@@ -7144,7 +7149,8 @@ Jägerstr. (Köpenick): Kopfsteinpflaster	Q2 22390,4702 22355,4660 22312,4593
 (Swakopmunder Str. - Charles-Corcelle-Ring): gutes Verbundsteinpflaster	Q1 5223,16783 5141,16799 5091,16810 5035,16819 5000,16826
 Rothenbücherweg: Asphalt	Q0 -4666,9844 -4666,9780 -4662,9689 -4657,9594 -4651,9487 -4645,9365 -4635,9267 -4611,9122
 Noéweg: schlechte Schwarzdecke, Loch an Lock	Q3 11108,22445 10994,22289
-Königsteinstr. (Blankenburg): asphaltiert	Q0 13395,22365 13476,22345 13541,22300 13613,22250 13695,22210 13795,22131
+Königsteinstr. (Blankenburg): asphaltiert	Q0 13395,22365 13476,22345 13541,22300
+Königsteinstr. (Blankenburg): Kopfsteinpflaster	Q2 13541,22300 13613,22250 13695,22210 13795,22131
 Kolonie Dreieck - Klemkepark: wassergebundene Decke	Q1 8260,18765 8188,18819 8101,18846 7988,18861 7850,18881 7794,18881 7793,18894 7710,18902 7621,18894 7574,18874
 Klemkepark - Kopenhagener Str./Freiheitsweg: wassergebundene Decke	Q1 7574,18874 7576,18837 7480,18828 7394,18820 7332,18818 7313,18781 7248,18793
 Hönower Wiesenweg: Beton mit alten Bahngleisen	Q2 17308,9090 17335,8971 17375,8847 17416,8767 17483,8644 17554,8458 17624,8353
@@ -9245,7 +9251,7 @@ Schwabenallee: Sandweg	Q2 21321,9672 21350,9820 21371,9923
 Schwabenplatz: schlechtes Kopfsteinpflaster	Q3 21307,9591 21253,9547 21291,9507 21343,9546 21307,9591
 Erich-Kunz-Str.: Beton	Q0 18354,10600 18345,10575 18285,10550 18232,10532 18150,10543 18120,10532 18104,10482
 Erich-Kunz-Str.: Beton	Q0 18285,10550 18332,10434 18342,10384 18326,10362 18264,10343
-Franz-Mett-Str.: Beton	Q0 18446,10620 18397,10608 18354,10600 18325,10606
+Erich-Kunz-Str.: Beton	Q0 18446,10620 18397,10608 18354,10600 18325,10606
 Franz-Mett-Str.: Asphalt, mit Schäden	Q1 18059,11248 18105,10997 18117,10933 18198,10864 18296,10754 18368,10763 18408,10774
 Franz-Mett-Str.: Beton	Q0 18368,10763 18397,10608
 Widderstr.: Asphalt	Q0 14853,7451 14942,7347 14997,7240
