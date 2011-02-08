@@ -871,11 +871,9 @@ Wegscheider Str. -> Streitstr.: Mittelstreifen mit Schienstrang (nicht mehr in B
 Mittelstreifen	3nocross::ignrte 10759,1112 10827,1140 11002,1211
 Mittelstreifen	3nocross::ignrte 5517,20120 5545,19909 5533,19811
 Oranienburger Str. -> Wilhelm-Gericke-Str.: Mittelstreifen	3::igndisp 5517,20120 5545,19909 5598,19912
-Bahntrasse	3nocross::ignrte 15875,1796 15835,1747 15799,1690 15729,1573 15639,1422
+Bahntrasse	3nocross::ignrte 15875,1796 15835,1747 15799,1690 15729,1573
 Zwickauer Damm -> Feuchtwangerweg: Bahntrasse	3::igndisp 15799,1690 15835,1747 15788,1747
 Feuchtwangerweg -> Zwickauer Damm: Bahntrasse	3::igndisp 15788,1747 15835,1747 15875,1796
-Zwickauer Damm -> Fleischerstr.: Bahntrasse	3::igndisp 15799,1690 15729,1573 15834,1518
-Fleischerstr. -> Zwickauer Damm: Bahntrasse	3::igndisp 15834,1518 15729,1573 15639,1422
 Straßenbahntrasse	3nocross::ignrte 23080,15700 23218,15671 23411,15632 23568,15603 23617,15594
 Klausdorfer Str. -> Zossener Str.: Straßenbahntrasse	3::igndisp 23243,15820 23218,15671 23411,15632
 Zossener Str. -> Klausdorfer Str.: Straßenbahntrasse	3::igndisp 23080,15700 23218,15671 23243,15820

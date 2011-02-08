@@ -17064,7 +17064,7 @@ userdel	2::inwork 18702,39267 19045,39387
 EOF
      },
      { from  => 1261046820, # 2009-12-17 11:47
-       until => 1314882000, # 2011-09-01 15:00
+       until => 1297202135, # 1314882000 2011-09-01 15:00
        text  => 'Eisenhutweg (Adlershof): Baustelle, Fahrtrichtung Richtung Rudower Chaussee gesperrt, 18.12.2009 11:47 Uhr bis 01.09.2011 15:00 Uhr ',
        type  => 'handicap',
        source_id => 'IM_014849',
@@ -18687,13 +18687,13 @@ userdel	2::inwork 29898,5149 29832,5065 29705,4987 29712,4548
 userdel	2::inwork 30041,5329 30074,5402
 EOF
      },
-     { from  => 1296387720, # 2011-01-30 12:42
-       until => 1298934000, # 2011-03-01 00:00
-       text  => 'Teupitz: L74: Überflutung der gesamten Fahrbahn zwischen Egsdorf und Teupitz, 18.01.2011 bis 28.02.2011 ',
-       type  => 'gesperrt',
+     { from  => 1297201855, # 2011-02-08 22:50
+       until => 1301608800, # 2011-04-01 00:00
+       text  => 'Teupitz: L74: Überflutung der gesamten Fahrbahn zwischen Egsdorf und Teupitz der Verkehr wird einspurig über ein Provisorium geführt, 18.01.2011 bis 31.03.2011 ',
+       type  => 'handicap',
        source_id => 'LS/S-SG33-W/11/013',
        data  => <<EOF,
-userdel	2::inwork 23962,-30831 24550,-30862
+userdel	q4::inwork 23962,-30831 24550,-30862
 EOF
      },
      { from  => 1296591853, # 2011-02-01 21:24
@@ -18703,6 +18703,24 @@ EOF
        source_id => 'http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20110201.1500.329349.html',
        data  => <<EOF,
 userdel	q4::inwork 10755,13152 10706,13043 10595,13100 10635,13207
+EOF
+     },
+     { from  => 1297067400, # 2011-02-07 09:30
+       until => 1299918600, # 2011-03-12 09:30
+       text  => 'Glinkastr. (Mitte): Baustelle, Fahrtrichtung gesperrt (bis Mitte 03/2011) Richtung Leipziger Str. zwischen Behrenstr. und Französische Str., 08.02.2011 09:30 Uhr bis 12.03.2011 09:30 Uhr ',
+       type  => 'handicap',
+       source_id => 'IM_016910',
+       data  => <<EOF,
+userdel	q4::inwork; 9164,12172 9183,12076
+EOF
+     },
+     { from  => 1297067400, # 2011-02-07 09:30
+       until => 1299945600, # 2011-03-12 17:00
+       text  => 'Behrenstr. (Mitte): Baustelle, Fahrtrichtung gesperrt (die Behrenstr. ist Richtung Glinkastr von Friedrichstr. kommend eine Sackgasse) (bis Mitte 03/2011) Richtung Friedrichstr. im Kreuzungsbereich Glinkastr., 08.02.2011 09:30 Uhr bis 12.03.2011 17:00 Uhr ',
+       type  => 'handicap',
+       source_id => 'IM_016911',
+       data  => <<EOF,
+userdel	q4::inwork 9373,12197 9164,12172
 EOF
      },
     );

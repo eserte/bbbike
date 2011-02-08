@@ -90,8 +90,8 @@ Müllerstr.	?::projected 6790,16018 6680,16116 6608,16180 6450,16325 6444,16331 6
 #
 #: by: Tagesspiegel vom 2009-04-12, soll 2009 realisiert werden
 #: corrected_by: MoPo 2009-08-01, soll 2010 realisiert werden
-#: last_checked: 2010-11-23
-#: next_check: 2010-12-15
+#: last_checked: 2011-02-07
+#: next_check: 2011-04-15
 Annenstr./Heinrich-Heine-Platz	?::projected 11349,11227 11249,11268 11091,11379 10915,11535 10819,11664
 #
 #: by: Tagesspiegel vom 2009-04-12, soll 2009 realisiert werden
@@ -120,13 +120,13 @@ Blankenburger Str. erhält beiderseitig Radfahrstreifen zwischen Dietzgen- und Si
 Wollankstr.: Angebotsstreifen werden bis Herbst 2011 eingerichtet	?::projected 9549,17625 9590,17662 9624,17693 9663,17734 9727,17804 9791,17877 9832,17925 9870,17971 9978,18104 10027,18165 10089,18180
 #
 #: by: Tagesspiegel vom 2010-03-31
-#: last_checked: 2010-11-23
-#: next_check: 2011-02-01
+#: last_checked: 2011-02-07
+#: next_check: 2011-04-15
 Rüdersdorfer Str. bekommt Radspuren	?::projected 13066,11854 12891,12008
 #
 #: by: Tagesspiegel vom 2010-03-26
-#: last_checked: 2010-11-05
-#: next_check: 2011-02-01
+#: last_checked: 2011-02-07
+#: next_check: 2011-04-15
 Lindenstr. bekommt Radspuren	?::projected 9795,10512 9770,10590 9777,10719 9805,10791 9829,10830 9935,11067 9973,11150 10020,11262
 #
 #: XXX http://fahrrad.wikia.com/wiki/Fahrradstra%C3%9Fe/Liste_von_Fahrradstra%C3%9Fen#Berlin -> ja
@@ -354,7 +354,7 @@ Laut Uckermark-Kurier: 2.7km Radweg auf ehem. Bahndamm zwischen L15 undf K7332 b
 Choriner Str.: die Choriner Str. soll eine Fahrradstraße werden	? 10480,13871 10487,13928 10502,14070 10558,14176 10629,14299 10870,14689 10893,14705
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20081110.1105.113814.html
 #: last_checked: 2010-10-23:
-#: next_check: 2011-04-30:
+#: next_check: 2011-02-08:
 Eisenhutweg: Radwege entstehen im Zuge der Bauarbeiten bis September 2011	?::inwork 17894,2783 17741,2824 17525,3029 17274,3267 17142,3393
 #: by: http://www.berlin.de/ba-pankow/presse/archiv/20081119.1005.114651.html (confirmed_by: MoPo 2009-08-01, soll 2009 realisiert werden) vvv
 #: next_check: 2009-07-24: vvv
@@ -1770,8 +1770,6 @@ Störstr.: Qualität?	? 1986,962 2102,1107 2199,1179
 Bansiner Weg: Qualität?	? 1901,1188 1840,1229
 Bansiner Weg - Dahlemer Weg: Durchfahrt für Radfahrer möglich? Qualität?	? 1840,1229 1768,1242
 Floyd-L.-Parks-Weg: Qualität?	? 2336,1111 2408,1144 2504,1186
-Beizerweg: Qualität?	? 16375,1313 16276,1371 16165,1468
-Uhrmacherweg: Qualität zwischen Formerweg und Fleischerstr.?	? 15834,1518 15889,1612
 Bäckerstr. - Buchbinderweg: Durchfahrt für Radfahrer möglich? Qualität? Nachts beleuchtet?	? 16657,1124 16567,1142 16485,1162
 Straße 482: Qualität?	? 11120,1384 11146,1413 11155,1456
 Straße 96 (Buckow): Qualität?	? 11190,1622 11170,1517
@@ -3433,6 +3431,7 @@ Seidenhuhnweg: Qualität?	? 16008,446 16074,389
 Perlhuhnweg: Qualität?	? 15952,719 16008,628 16085,547
 Döbelner Weg: Qualität?	? 16153,835 16117,927 16083,1013 16054,1087
 Straße 188: Qualität?	? 16054,1087 15935,1043
+#: XXX laut osm cobblestone, surface=very_bad (tatsächlich?)
 Eilenburger Weg: Qualität?	? 16141,1136 16126,1112 16221,872
 Straße 618: Qualität? Existiert für Radfahrer eine Verbindung zum Weg am Rudower Fließ?	? 16346,481 16320,538 16294,597
 Erlenbruchring: Qualität? Ist die Straße eine Spielstraße? Existiert für Radfahrer eine Verbindung zum Weg am Rudower Fließ?	? 16320,538 16402,655 16434,714 16409,774 16339,827
@@ -3442,7 +3441,6 @@ Langschanweg: Qualität?	? 16244,86 16289,-30 16246,-64 16194,-226
 Kückenweg: Qualität?	? 16154,-230 16194,-226 16291,-261 16423,-308
 Pfauenkehre: Qualität?	? 16055,-273 15948,-341
 Eichenauer Weg: Qualität westlich der Waltersdorfer Chaussee?	? 16655,1020 16716,928 16813,865 16878,859 17021,867 17134,908 17236,985
-Bornaer Str.: Qualität?	? 15531,1481 15434,1317
 Petrusweg: Qualität?	? 15215,1556 15217,1463
 Straße 232: Qualität?	? 15187,1171 15277,1201 15323,1215 15343,1224
 Straße 230: Qualität?	? 15277,1201 15315,1108

@@ -1605,6 +1605,8 @@ Möthlower Str.: Sand	Q2 -7588,15656 -7483,15690 -7457,15704
 Straße 270: Kopfsteinpflaster mit Sandbanketten	Q2 -5870,10847 -5035,11007
 Straße 270: Feldweg, im westlichen Teil nur zweispurig	Q2 -5035,11007 -4832,11047
 Eschengraben: Asphalt	Q0 11755,17216 11783,17036 11831,16802 11776,16753 11720,16752 11621,16749
+Bornaer Str.: Verbundsteinpflaster	Q1 15531,1481 15434,1317
+Beizerweg: Beton	Q0 16375,1313 16276,1371 16165,1468
 Clara-Wieck-Str.: Asphalt	Q0 7103,11247 7171,11510
 Deitmerstr.: Asphalt	Q0 5191,5826 5078,5889
 Gutsstr.: schlechtes Kopfsteinpflaster	Q3 -8968,7328 -8777,7386
@@ -1872,7 +1874,7 @@ Mauerweg Lichterfelde: sehr guter Asphalt	Q0 4038,-362 4046,-299 4034,-255 3982,
 Mauerweg Lichterfelde: Asphalt mit Fugen	Q1 4038,-362 4406,-910
 Alexanderufer: Asphalt	Q0 8321,13033 8315,13181 8314,13323
 Alexanderufer: Asphalt	Q0 8314,13323 8356,13404 8365,13431 8354,13523 8337,13541
-Koppenstr.: Asphalt mit Schäden	Q1 12525,12151 12575,12223
+Koppenstr.: Asphaltdecke fehlt, Bauarbeiten	Q2 12525,12151 12575,12223
 Koppenstr.: Asphalt mit Schäden	Q1 12575,12223 12606,12471
 (Weg unterhalb der Spindlersfelder Str.): Verbundsteinpflaster	Q0 21089,4731 21146,4229 21170,4111 21260,3848 21324,3691
 Montanstr.: Asphalt	Q0 6792,19733 6680,19098
@@ -2277,7 +2279,7 @@ Sattlerstr.: Asphalt	Q0 16056,2034 16177,1943 16193,1928 16290,1678 16340,1609
 Gürtlerweg: Beton	Q0 16002,1964 16106,1886 16252,1544
 Werkzeugmacherweg: Beton	Q0 16252,1544 16325,1462
 Schriftsetzerweg: Beton	Q0 15875,1796 15967,1718 16200,1499
-Uhrmacherweg: Asphalt	Q0 15889,1612 15967,1718
+Uhrmacherweg: Asphalt	Q0 15834,1518 15889,1612 15967,1718
 Uhrmacherweg: Kopfsteinpflaster	Q2 15967,1718 16106,1886 16177,1943
 Uhrmacherweg: Asphalt	Q0 16177,1943 16254,1999
 Feuchtwangerweg: Beton	Q1 15634,1765 15653,1746 15788,1747
@@ -5995,7 +5997,8 @@ Nieritzweg: gut geteerte Fahrbahn	Q0 1207,1051 1088,1031 1075,1029 958,1009 932,
 Oldesloer Weg: Beton	Q0 -6413,14010 -6517,13977 -6622,13945 -6899,13916 -6928,13913 -7046,13918
 Albert-Schweitzer-Str.: guter Asphalt	Q0 25479,5753 25475,5635 25466,5408
 Max-Born-Str.: Asphalt	Q0 19111,2777 19064,2867 19053,2890 19021,2946 18951,3069
-Bildhauerweg: Beton	Q0 15977,1223 16087,1372 16138,1436 16165,1468 16200,1499 16252,1544 16308,1585 16340,1609 16374,1634
+Bildhauerweg: Asphalt	Q0 15977,1223 16057,1331
+Bildhauerweg: Beton	Q0 16057,1331 16087,1372 16138,1436 16165,1468 16200,1499 16252,1544 16308,1585 16340,1609 16374,1634
 Bildhauerweg: guter Asphalt	Q0 16374,1634 16413,1664 16450,1691 16549,1758
 Formerweg: Beton	Q0 15889,1612 16138,1436
 Am Seeschloß: Asphalt	Q0 4757,23184 4750,23211 4713,23254
