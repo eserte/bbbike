@@ -53,7 +53,7 @@ my $acc_streets_track                = "$bbbike_rootdir/tmp/streets-accurate.bbd
 my $acc_cat_streets_track            = "$bbbike_rootdir/tmp/streets-accurate-categorized.bbd";
 my $acc_cat_split_streets_track      = "$bbbike_rootdir/tmp/streets-accurate-categorized-split.bbd";
 my %acc_cat_split_streets_byyear_track;
-my @acc_cat_split_streets_years = (2008..2011);
+my @acc_cat_split_streets_years = (2008..2011); # also used for unique-matches
 for my $year (@acc_cat_split_streets_years) {
     $acc_cat_split_streets_byyear_track{$year} = "$bbbike_rootdir/tmp/streets-accurate-categorized-split-since$year.bbd";
 }
@@ -168,14 +168,19 @@ EOF
     BBBikePlugin::place_menu_button
 	    ($mmf,
 	     [
-	      [Button => $do_compound->("Set penalty: unique matches (alltime)"),
-	       -command => sub { set_penalty('tmp/unique-matches.bbd') },
-	      ],
-	      [Button => $do_compound->("Set penalty: unique matches (since 2008)"),
-	       -command => sub { set_penalty('tmp/unique-matches-since2008.bbd') },
-	      ],
-	      [Button => $do_compound->("Set penalty: unique matches (since 2009)"),
-	       -command => sub { set_penalty('tmp/unique-matches-since2009.bbd') },
+	      [Cascade => $do_compound->("Set penalty: unique matches..."), -menuitems =>
+	       [
+		[Button => $do_compound->("alltime"),
+		 -command => sub { set_penalty('tmp/unique-matches.bbd') },
+		],
+		(map {
+		    my $year = $_;
+		    [Button => $do_compound->("since $year"),
+		     -command => sub { set_penalty("tmp/unique-matches-since$year.bbd") },
+		    ];
+		} @acc_cat_split_streets_years
+		),
+	       ]
 	      ],
 	      [Button => $do_compound->("Set penalty fragezeichen-outdoor-nextcheck"),
 	       -command => sub { set_penalty_fragezeichen() },
