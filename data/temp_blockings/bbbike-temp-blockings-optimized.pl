@@ -512,17 +512,7 @@ userdel	q4::inwork; 10350,13376 10527,13257
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_011637',
-         'until' => undef,
-         'text' => 'Köthener Str. (Kreuzberg) zwischen Bernburger Str. und Hallesches Ufer Baustelle, Einbahnstraße Richtung Norden',
-         'from' => 1238347506,
-         'id' => 1571,
-         'data' => '#: last_checked: 2010-11-05
-userdel	q4::inwork; 8483,10900 8443,10777
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,

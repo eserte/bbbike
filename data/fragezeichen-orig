@@ -145,7 +145,23 @@ Fahrradstraße in der Lauenburger Str.	?::projected 5883,4985 5909,5072 5939,5169
 #
 #: section ignorieren vvv
 #: section Straßen in Bau und Planung vvv
-#
+# 
+#: XXX neue Planstraßen nördlich des Alexanderplatzes vvv
+#: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20110208.1420.330238.html
+#: by: http://www.stadtentwicklung.berlin.de/planen/staedtebau-projekte/alexanderplatz/de/planungen/bplan/bplan_b4ca/index.shtml
+#: XXX Straßen werden benannt nach:
+#: XXX - Oda Schottmüller
+#: XXX - Hilde Radusch
+#: XXX - Theanolte Bähnisch
+#: XXX - Alex Wedding
+#: XXX - Bernhard Weiß
+Keibelstraße wird verlängert	?::inwork 11082,13134 11056,13089
+Neue Planstraße	?::inwork 11100,13062 11125,13109
+Neue Planstraße	?::inwork 11191,13080 11125,13109 11082,13134 11029,13162
+Neue Planstraße	?::inwork 11073,13227 11015,13264
+Neue Planstraße	?::inwork 11002,13123 11029,13162 11073,13227 11127,13309
+#: XXX ^^^
+# 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/05re.pdf/file
 Franz-Mett-Str.: Einfahrt wird Richtung Süden verlegt, prüfen!	?::inwork 18417,10738 18395,10732 18368,10763
 # 
@@ -419,6 +435,10 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 # die Datenbank aufgenommen werden sollen und somit nicht öffentlich sind.
 # Das heißt diese Strecken werden nicht bei einer erweiterten Suche aufgenommen
 # und dem CGI-Benutzer auch nicht präsentiert.
+# 
+#: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20110210.1345.330558.html
+#: next_check: 2011-02-24
+Straßenbenennung nach dem Treptower Bezirksbürgermeister Erwin Bennewitz: wo genau? Erwin-Bennewitz-Weg?	? 15378,8668 15473,8531
 # 
 #: XXX_indoor: Linksabbiegen hier nicht legal möglich, aber durchaus wünschenswert --- vielleicht die Benutzung des linken Gehwegs in der Kniprodestr. empfehlen?
 Michelangelostr./Kniprodestr.: Kreuzungssituation überdenken	? 13696,15237 13822,15164 
@@ -4564,3 +4584,4 @@ Manuelaweg: wo genau befindet sich diese Straße? Qualität?	? -6349,5761 -6349,56
 #: XXX fehlt in Berlin.coords.data
 Forum (Adlershof): Wo genau liegt die Straße? Ist sie ausgeschildert? Qualität?	? 19242,3052 19328,3072
 Hohen Neuendorfer Weg (Birkenwerder): Qualität?	? 645,30634 618,30687 575,30816 564,30845 550,30867 516,30899 342,31100
+Techowpromenade-Rathauspromenade: hat die Brücke über den Nordgraben einen Namen? Für Radfahrer befahrbar?	? 5201,20103 5170,20182

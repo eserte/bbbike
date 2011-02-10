@@ -13325,12 +13325,11 @@ userdel	q4::inwork; 11242,11720 11324,11689 11574,11594
 EOF
      },
      { from  => 1238347506, # 2009-03-29 19:25
-       until => undef, # 2010-01-01 00:00 1262300400
+       until => 1297363088, # 2010-01-01 00:00 1262300400 undef --- 2011-02-09 geprüft: weitgehend durchlässig
        text  => 'Köthener Str. (Kreuzberg) zwischen Bernburger Str. und Hallesches Ufer Baustelle, Einbahnstraße Richtung Norden',
        type  => 'handicap',
        source_id => 'IM_011637',
        data  => <<EOF,
-#: last_checked: 2010-11-05
 userdel	q4::inwork; 8483,10900 8443,10777
 EOF
      },
