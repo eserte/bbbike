@@ -109,6 +109,8 @@ RSYNC_ARGS_MS=	${RSYNC_ARGS:S/.rsync.exclude/\/tmp\/mapserver.rsync.exclude/}
 RSYNC_DEST?=	${BBBIKE_HOSTEUROPE_USER}@${BBBIKE_HOSTEUROPE_SSH_HOST}:${BBBIKE_HOSTEUROPE_APACHE_DIR}
 RSYNC_SRCDEST?=	. ${RSYNC_DEST}
 
+XTERM_CONF_TITLE=	xterm-conf -f --title
+
 # XXX Should be set from mapserver/brb/Makefile:
 WWW_USER?=	www-data
 WWW_GROUP?=	www-data
@@ -755,9 +757,15 @@ post-deploy-info:
 	@echo ""
 
 automatic-deployment:
+	-@${XTERM_CONF_TITLE} "BBBike pre-deployment git update"
 	$(HOME)/src/bbbike-aux/misc/bbbike-checkin-hosteurope.pl -update
+	-@${XTERM_CONF_TITLE} "BBBike local deployment"
 	nice ${MAKE} deploy-local NO_PARALLEL=1
+	-@${XTERM_CONF_TITLE} "BBBike deployment"
 	${MAKE} deploy
+	-@${XTERM_CONF_TITLE} "BBBike post deployment stuff"
 	cd ${BBBIKE_ROOT_DIR}/misc && slaymake rsync-fragezeichen-list
 	-( tkmessage -center "BBBike deployment finished, possibly interactive stuff follows..." &)
+	-@${XTERM_CONF_TITLE} "BBBike post-deployment git update"
 	$(HOME)/src/bbbike-aux/misc/bbbike-checkin-hosteurope.pl -after-sync
+	-@${XTERM_CONF_TITLE} "BBBike deployment finished"
