@@ -656,7 +656,8 @@ DEB_MAPSERVER=	mapserver-bin cgi-mapserver
 OWN_DEB=	libapache-session-counted-perl libpalm-palmdoc-perl \
 		libgd-svg-perl libgeo-spacemanager-perl \
 		libgeo-distance-perl libgeo-distance-xs-perl \
-		libobject-iterate-perl libkwalify-perl libcdb-file-perl
+		libobject-iterate-perl libkwalify-perl libcdb-file-perl \
+		libgeo-coder-bing libgeo-coder-googlev3 libgeo-coder-osm
 
 # All packages needed for full-flavoured Web server operation:
 DEB_ALL_CGI=	$(DEB_DEVEL)      \
@@ -687,7 +688,9 @@ DEB_ALL=	libalgorithm-diff-perl libapache-session-perl libarchive-zip-perl \
 		libwww-mechanize-formfiller-perl libwww-mechanize-perl libwww-perl \
 		libwww-shorten-perl libx11-protocol-perl libxml-libxml-perl \
 		libxml-parser-perl libxml-sax-perl libxml-simple-perl libxml-twig-perl \
-		libyaml-perl libyaml-syck-perl perl perl-modules perl-tk perlmagick
+		libyaml-perl libyaml-syck-perl perl perl-modules perl-tk perlmagick \
+		libgeo-coder-bing libgeo-coder-googlev3 libgeo-coder-osm libhtml-format-perl \
+		libmath-round-perl
 
 install-debian-for-cgi:	install-debian-packages-for-cgi \
 			install-debian-owndebs-for-cgi
