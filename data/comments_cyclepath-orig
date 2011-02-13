@@ -81,7 +81,7 @@ Zweirichtungsradweg auf der östl. Seite, asphaltiert	RW -10377,20973 -10576,1995
 Suggestivstreifen	RW4?;RW4? -11114,-2104 -10983,-2088 -10772,-2153 -10673,-2128
 Radweg auf Gehweg	RW2;RW2 -12213,-2131 -12098,-2173
 	RW4; -12213,-2131 -12431,-2096
-Radweg auf Gehweg	RW2;RW -12098,-2173 -11996,-2192 -11837,-2223 -11781,-2235 -11681,-2256
+Radweg auf Gehweg	RW2;RW -12098,-2173 -11996,-2192 -11942,-2201 -11837,-2223 -11781,-2235 -11681,-2256
 Radweg auf Gehweg	RW;RW -11681,-2256 -11601,-2197 -11507,-2130 -11114,-2104
 #: add_fragezeichen: Gibt es in der Großbeerenstr. einen Radweg oder Radstreifen?
 Radstreifen	RW4?;RW4? -10673,-2128 -10634,-2159 -10528,-2196 -10426,-2231 -10327,-2262
@@ -123,7 +123,7 @@ B2: Radweg	RW 22206,30826 22378,30943
 Breitscheidstr. (Bernau)	RW3;RW3 22712,30340 22783,30373 22868,30412 22892,30426 23024,30523
 Zweirichtungsradweg auf der südlichen Seite, feiner Schotter	RW8?;RW -14669,-686 -15243,-656
 Radweg auf Gehweg	RW; -18125,-843 -18631,-778 -18725,-673
-Radweg (Verbundsteinpflaster)	RW; -19232,34 -18964,793
+Radweg (Verbundsteinpflaster)	RW; -19247,-20 -19100,407 -18964,793
 #: add_fragezeichen: laut "Berliner Umland" entnommen:
 Zweirichtungsradweg auf der östlichen Seite	RW -18356,4783 -18233,4501 -18025,4018
 Zweirichtungsradweg auf der östlichen Seite	RW -18025,4018 -17956,3840 -17588,2815
@@ -301,8 +301,8 @@ Jägerallee: Gehweg für Radfahrer freigegeben	RW1; -13182,-515 -13155,-379 -13137
 Jägerallee: Gehweg für Radfahrer freigegeben	RW1;RW1 -13182,-515 -13221,-718 -13231,-763
 Geltow: asphaltierter Zweirichtungsradweg auf der östlichen Seite	RW;RW8? -18025,-6370 -18014,-6027 -18144,-5817
 B1: kombinierte Geh- und Radwege, Verbundsteinpflasterradweg	RW;RW -19002,-5271 -18515,-5282 -17806,-5251 -17682,-5054
-B1: asphaltierte Radwege	RW;RW -17682,-5054 -17564,-4895 -17434,-4782 -17122,-4622 -16333,-3922 -16161,-3777
-B1: betonierte Radwege	RW;RW -16161,-3777 -16039,-3697 -15669,-3311
+B1: asphaltierte Radwege	RW;RW -17682,-5054 -17564,-4895 -17434,-4782 -17122,-4622 -16333,-3922 -16151,-3770
+B1: betonierte Radwege	RW;RW -16151,-3770 -16039,-3697 -15669,-3311
 #: by: http://www.mir.brandenburg.de/cms/detail.php?id=290488&_siteid=74
 Radweg zwischen Wandlitz und Klosterfelde: 2m breiter Zweirichtungsradweg	RW 13546,37474 13908,37983 14449,38733 14498,38870 14551,39291 14698,40345 14830,41000 14923,42035 14962,42702
 Wetzlarer Str.: gemeinsamer Geh- und Zweirichtungsradweg auf der westlichen Seite	RW8?;RW -9088,-3962 -9047,-3889 -9015,-3831 -8997,-3762 -8943,-3646 -8846,-3474 -8500,-2856
@@ -508,7 +508,7 @@ Trebbiner Str. (Mahlow): Radweg	RW 11165,-5318 11291,-4485 11355,-4293 11338,-39
 Leipziger Str.: neuer Bürgersteigradweg, 1,50m	RW1; -12431,-2096 -12653,-2206
 Leipziger Str.: Radstreifen, 1,20m	RW4; -12653,-2206 -12719,-2283 -12756,-2437
 Leipziger Str.: Radstreifen, 1,20m	RW4; -12929,-2659 -13003,-2754 -13021,-2784 -13062,-2901
-Leipziger Str.: alter Bürgersteigradweg, etwas welliger Asphalt, 1,30m	RW1; -13062,-2901 -13021,-2784 -13003,-2754 -12929,-2659 -12756,-2437
+Leipziger Str.: alter Bürgersteigradweg, etwas welliger Asphalt, 1,30m	RW1; -13062,-2901 -13021,-2784 -13003,-2754 -12929,-2659 -12796,-2488 -12779,-2467 -12756,-2437
 Leipziger Str.: Radangebotsstreifen, 1m	RW3; -12756,-2437 -12719,-2283
 Leipziger Str.: Radstreifen, 1,50m; kurz vor der Kreuzung Bürgersteigradweg	RW4; -12719,-2283 -12653,-2206 -12431,-2096
 #: by: ^^^
