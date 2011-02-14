@@ -18668,7 +18668,7 @@ userdel	2::inwork -60868,50275 -60612,50931
 EOF
      },
      { from  => 1293530940, # 2010-12-28 11:09
-       until => 1298902140, # 2011-02-28 15:09
+       until => 1297722068, # 2011-02-28 15:09 1298902140
        text  => 'Straße Prenzlauer Berg (Prenzlauer Berg): gesperrt (geplatzte Wasserleitung) Richtung Friedrichshain zwischen Prenzlauer Allee und Greifswalder Str., 29.12.2010 11:09 Uhr bis 28.02.2011 15:09 Uhr ',
        type  => 'handicap',
        source_id => 'IM_016795',

@@ -1697,16 +1697,7 @@ userdel	3 13150,7254 13047,7234 13034,7319
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_016795',
-         'until' => 1298902140,
-         'text' => 'Straße Prenzlauer Berg (Prenzlauer Berg): gesperrt (geplatzte Wasserleitung) Richtung Friedrichshain zwischen Prenzlauer Allee und Greifswalder Str., 29.12.2010 11:09 Uhr bis 28.02.2011 15:09 Uhr ',
-         'from' => 1293530940,
-         'id' => 2175,
-         'data' => 'userdel	q4::inwork; 11257,13647 11545,13690
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'source_id' => 'LS/S-SG33-W/11/013',
