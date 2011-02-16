@@ -1,5 +1,6 @@
 // From http://jan.moesen.nu/
 // Found at http://jan.moesen.nu/code/javascript/sprintf-and-printf-in-javascript/
+// Fixes by Slaven Rezic
 function sprintf()
 {
     if (!arguments || arguments.length < 1 || !RegExp)
@@ -7,6 +8,7 @@ function sprintf()
 	return;
     }
     var str = arguments[0];
+    var processed = "";
     var re = /([^%]*)%('.|0|\x20)?(-)?(\d+)?(\.\d+)?(%|b|c|d|u|f|o|s|x|X)(.*)/; // '
     var a = b = [], numSubstitutions = 0, numMatches = 0;
     while (a = re.exec(str))
@@ -14,6 +16,8 @@ function sprintf()
 	var leftpart = a[1], pPad = a[2], pJustify = a[3], pMinLength = a[4];
 	var pPrecision = a[5], pType = a[6], rightPart = a[7];
 	
+	processed += leftpart;
+
 	//alert(a + '\n' + [a[0], leftpart, pPad, pJustify, pMinLength, pPrecision);
 
 	numMatches++;
@@ -49,7 +53,12 @@ function sprintf()
 	    else if (pType == 'x') subst = ('' + parseInt(param).toString(16)).toLowerCase();
 	    else if (pType == 'X') subst = ('' + parseInt(param).toString(16)).toUpperCase();
 	}
-	str = leftpart + subst + rightPart;
+	processed += subst;
+	str = rightPart;
     }
-    return str;
+
+    if (str.length > 0) {
+	processed += str;
+    }
+    return processed;
 }
