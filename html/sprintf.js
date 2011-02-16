@@ -53,6 +53,21 @@ function sprintf()
 	    else if (pType == 'x') subst = ('' + parseInt(param).toString(16)).toLowerCase();
 	    else if (pType == 'X') subst = ('' + parseInt(param).toString(16)).toUpperCase();
 	}
+	subst = subst.toString();
+
+	if (subst.length < minLength) {
+	    var padLength = minLength - subst.length;
+	    if (!justifyRight) {
+		for(var i=0; i<padLength; i++) {
+		    subst += pad;
+		}
+	    } else {
+		for(var i=0; i<padLength; i++) {
+		    subst = pad + subst;
+		}
+	    }
+	}
+
 	processed += subst;
 	str = rightPart;
     }

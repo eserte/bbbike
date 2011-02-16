@@ -36,12 +36,16 @@ if ($res ne "yes!\n") {
 }
 
 my @tests =
-    (['Hello %s world',    ['cruel'],       'Hello cruel world'],
+    (['Nothing',           [],              'Nothing'],
+     ['Hello %s world',    ['cruel'],       'Hello cruel world'],
      ['Hello %s %s world', ['cruel'],       undef,              ERROR => 1],
      ['%s',                ['%s'],          '%s'],
      ['%s%s%s',            [qw(A B C)],     'ABC'],
      ['%d',                ['non-numeric'], '0'],
-     ['%04d',              ['10'],          '0010',             TODO => 'buggy'],
+     ['%02d',              ['0'],           '00'],
+     ['%04d',              ['10'],          '0010'],
+     ['%4d',               ['10'],          '  10',             TODO => 'pad fallback to space?'],
+     ['%-4s',              ['10'],          '10  ',             TODO => 'pad fallback to space?'],
     );
 
 plan tests => scalar @tests;
@@ -56,7 +60,7 @@ for my $test (@tests) {
     if ($args{TODO}) { $TODO = $args{TODO} }
 
     my $res = eval {
-	run_js(qq{function alert(msg) { quit(1); } load("sprintf.js"); print(sprintf("$fmt", } . join(", ", map { qq{"$_"} } @in) . q{))});
+	run_js(qq{function alert(msg) { quit(1); } load("sprintf.js"); print(sprintf("$fmt"} . join("", map { qq{, "$_"} } @in) . q{))});
     };
     if ($@) {
 	if ($args{ERROR}) {
