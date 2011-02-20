@@ -2337,7 +2337,6 @@ Allée Pierre de Coubertin: Qualität? Für Autos offen?	? 4510,21506 4537,21497 45
 Am Ansitz: Qualität?	? 3913,21977 3855,22055
 Am Leitbruch: Qualität? Für Autos gesperrt?	? 4062,22069 4130,21961
 Am Wechsel: Qualität?	? 3771,21910 3722,21970 3681,21999 3688,22018
-Büchenbronner Steig: Qualität?	? 5291,23072 5357,23004
 Ettenheimer Pfad: Qualität?	? 4898,22459 4938,22405 5075,22153
 Höllentalweg: Qualität?	? 5108,22156 5168,22197 5209,22229
 #: XXX_osm bei osm auch als "Eutinger Weg" gekennzeichnet:
@@ -4296,9 +4295,7 @@ Straße 433: Stimmt der Straßenname? Qualität?	? 9839,814 9956,852 10034,991
 Hermann-Wundrich-Platz: Qualität? Nachts beleuchtet? Ausgeschildert?	? 11174,-1719 11129,-1772 11095,-1846 11070,-1853
 #: XXX fehlt in Berlin.coords.data
 Rue René Laennec: Qualität?	? 3684,16788 3608,16765
-#: XXX fehlt in Berlin.coords.data
 Elsa-Rendschmidt-Weg: Wieviele Stufen hat die Treppe zur Sarkauer Allee?	? -1574,11484 -1593,11501
-Elsa-Rendschmidt-Weg: Qualität? Können Radfahrer hier fahren?	? -1593,11501 -1635,11535 -1750,11719
 (Waldweg): Qualität? Führt hier die Route 6 entlang?	? 1859,21541 1610,21721 1556,22050 1588,22209 1524,22368 1415,22552 1476,22938 1559,23039 1534,23277 1382,23505 902,23844
 Führen hier die Routen 3 und 6 entlang?	? 905,24113 931,23965 902,23844
 #: XXX fehlt in Berlin.coords.data
@@ -4583,7 +4580,7 @@ Amelieweg: Qualität? Wo liegt die Straße genau?	? 22822,12387 22736,12412
 (Welzower Steig - Zabel-Krüger-Damm): Qualität? Nachts beleuchtet? Führt hier die Radroute 2 entlang?	? 5929,22339 5821,22435
 (Welzower Steig - Zabel-Krüger-Damm): Qualität? Nachts beleuchtet? Führt hier die Radroute 2 entlang?	? 5828,22446 5619,22766
 (Zabel-Krüger-Damm - Benekendorffstr.): Qualität? Nachts beleuchtet? Führt hier die Radroute 2 entlang?	? 5574,22747 5521,22825 5357,23004
-(Zehntwerderweg - Hermsdorfer See): Qualität? Nachts beleuchtet? Führt hier die Radroute 2 entlang?	? 5291,23072 5232,23139
+(Zehntwerderweg - Hermsdorfer See): Führt hier die Radroute 2 entlang?	? 5291,23072 5232,23139
 (Weg am Packereigraben): Qualität? Nachts beleuchtet?	? 5895,22493 5828,22446 5821,22435 5783,22418 5668,22283 5619,22168 5490,22095 5373,22089 5177,22142 5108,22156 5033,22122 4917,22119 4884,22097
 #: by: http://www.potsdam.de/cms/beitrag/10071706/966975/
 Templiner Str.: gibt es in der Templiner Straße mittlerweile Radstreifen?	? -13062,-2901 -13155,-2913 -13381,-2943 -13481,-2956 -13718,-2991
@@ -4726,3 +4723,13 @@ Friedrich-Wilhelm-Boelcke-Str. (Potsdam): Qualität?	? -12796,-2488 -12831,-2439 
 #: XXX_osm: bei osm auch als "Friedrich-Wilhelm-Boelcke-Str." bezeichnet
 #: by: http://www.potsdam.de/cms/dokumente/10057376_761024/a31d30b5/Amtsblatt17_09.pdf (Lage)
 Zur Königlichen Hofbrauerei (Potsdam): Qualität?	? -12813,-2423 -12781,-2376
+Unterführung Müllerstraße: gibt es hier eine Rampe/Treppe?	? 4311,746 4250,763
+#: XXX fehlt in Berlin.coords.data
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/07re.pdf/file
+Georg-Stern-Str.: Wo befindet sich die Straße genau? Qualität?	? 19255,7987 19176,8045
+#: XXX fehlt in Berlin.coords.data
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/07re.pdf/file
+Günter-Riesebrodt-Weg: Wo befindet sich die Straße genau? Qualität?	? 19384,7946 19285,7914
+#: XXX fehlt in Berlin.coords.data
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/07re.pdf/file
+Ida-von-Arnim-Str.: Wo genau wird die Straße gebaut? Qualität?	? 8169,14267 8452,14298
