@@ -71,6 +71,7 @@ my %str_in_plz2;
 my %str_coord;
 my %str_coord_without_bezirk;
 my %seen_str;
+my @plz_errors;
 my $fh = gensym;
 open($fh, $plzdata) or die "$plzdata: $!";
 while(<$fh>) {
@@ -78,6 +79,9 @@ while(<$fh>) {
     my(@l) = split(/\|/, $_);
     $str_in_plz{$l[0]}->{$l[1]}++;
     $l[$plzfield]="" if $ignore_plz_warnings && !defined $l[$plzfield]; # may happen for example in Potsdam.coords.data
+    if ($l[$plzfield] ne '' && $l[$plzfield] !~ m{^\d{5}$}) {
+	push @plz_errors, "$l[0] $l[1]: $l[$plzfield]";
+    }
     $str_in_plz2{$l[0]}->{$l[$plzfield]}++;
     $seen_str{$l[0]}->{$l[PLZ::FILE_CITYPART()]} = $l[PLZ::FILE_COORD()] if $do_reverse_check;
     $str_coord{$l[PLZ::FILE_NAME()]}->{$l[PLZ::FILE_CITYPART()]}
@@ -86,6 +90,10 @@ while(<$fh>) {
 	= $l[PLZ::FILE_COORD()];
 }
 close $fh;
+
+if (@plz_errors) {
+    die "PLZ errors found in $plzdata:\n" . join("\n", map { "  $_" } @plz_errors) . "\n";
+}
 
 if (!defined $addstr) {
     foreach (@Strassen::datadirs) {
