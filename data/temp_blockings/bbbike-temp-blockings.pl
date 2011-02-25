@@ -17293,8 +17293,8 @@ EOF
        type  => 'handicap',
        source_id => 'IM_015434',
        data  => <<EOF,
-#: last_checked: 2011-01-19
-#: next_check: 2011-02-15
+#: last_checked: 2011-02-25
+#: next_check: 2011-03-25
 userdel	q4::inwork; 12598,8390 12771,8439
 EOF
      },

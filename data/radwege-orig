@@ -61,19 +61,20 @@ Radweg vorhanden, aber Benutzung verboten (Gehwegschäden)	RW0; 9022,10857 8939,1
 	RW4;RW4 9416,10196 9409,10226 9404,10250
 	RW3;RW1 9229,8785 9229,8718
 Verbundsteinpflaster	RW1; 9229,8718 9233,8597 9238,8410
-asphaltiert	RW1; 9238,8410 9238,8253
-#: XXX laut Tsp vom 2003-03-26 wird der Radweg gerade erneuert (Richtung Süden)
-#: last_checked: 2010-11-06
-#: next_check: 2010-11-30
-asphaltiert, aber schlechter Zustand (Wurzelschäden)	RW1; 9238,8253 9240,8028 9240,7797 9242,7658
-asphaltiert	RW1; 9242,7658 9242,7325
+#: note: neu gebaut, trotzdem schon nach wenigen Monaten leichte Unebenheiten
+asphaltiert, leicht uneben	RW1; 9238,8410 9238,8253
+#: XXX nördl. und südl. des Bahnhofseingangs fehlt noch der Radweg, wird zukünftig direkt neben der Fahrbahn geführt
+#: last_checked: 2011-02-25
+#: next_check: 2011-03-15
+asphaltiert, leicht uneben	RW1; 9238,8253 9240,8028 9240,7797
+asphaltiert, leicht uneben	RW1; 9240,7797 9242,7658 9242,7325
 #: XXX laut Tsp vom 2003-03-26 wird der Radweg gerade erneuert
 #: XXX auch unterhalb der S-Bahnbrücke wird gerade gebaut
 #: last_checked: 2011-01-23
 asphaltiert, aber schlechter Zustand	RW1; 9242,7325 9242,7286
 #: XXX laut Tsp vom 2003-03-26 wird der Radweg gerade erneuert (Richtung Norden)
-#: last_checked: 2010-10-04
-#: next_check: 2011-02-01
+#: last_checked: 2011-02-25
+#: next_check: 2011-05-01
 asphaltiert, aber mäßiger Zustand (Wurzelschäden)	RW1; 9242,7286 9242,7325 9242,7658 9240,7797 9240,8028 9238,8253 9238,8410 9233,8597 9229,8718
 	RW1;RW1 8715,7384 8806,7382 8879,7378 8971,7359 9051,7340 9104,7291 9242,7286
 	RW1;RW1 8715,7384 8716,7323 8718,7095 8717,6965 8743,6778 8728,6701 8722,6656 8707,6537 8697,6455 8680,6322 8661,6169 8641,5998 8622,5867 8617,5745 8610,5579 8606,5496
@@ -1066,7 +1067,7 @@ Busspur ist immer gültig	RW5; 16246,12177 16207,11937
 	RW4?;RW3 16866,13532 16863,13138
 	RW4?;RW4 16863,13138 16865,13000 16860,12861
 	RW6;RW6 12668,8077 12446,8032
-	RW3;RW3 11979,8014 12162,8055 12414,8112 12426,8115
+	RW3;RW3 11979,8014 12162,8055 12308,8088 12414,8112 12426,8115
 benutzungspflichtiger Radweg auf den letzten 20 Metern	RW0; 12541,8140 12753,8187
 benutzungspflichtiger Radweg auf den letzten Metern	RW0; 11998,8872 11824,8995
 #: by: Uwe Sinha
@@ -2862,3 +2863,5 @@ Gehweg für Radfahrer frei	RW1; 18166,14277 18055,14276 17976,14251
 #: by: anonymous:
 #: confirmed_by: osm:
 	RW6;RW6 12825,17870 12882,17895 12902,17933 12945,17958 13036,18010 13043,18126 13042,18152
+	RW6;RW6 12147,8117 12295,8154
+	RW6;RW6 12308,8088 12295,8154

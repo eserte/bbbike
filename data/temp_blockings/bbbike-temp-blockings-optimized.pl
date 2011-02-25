@@ -1322,8 +1322,8 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
          'text' => 'Erkstr. (Neukölln): Baustelle, Fahrtrichtung Richtung Sonnenallee gesperrt',
          'from' => 1269772860,
          'id' => 2033,
-         'data' => '#: last_checked: 2011-01-19
-#: next_check: 2011-02-15
+         'data' => '#: last_checked: 2011-02-25
+#: next_check: 2011-03-25
 userdel	q4::inwork; 12598,8390 12771,8439
 ',
          'type' => 'handicap'
