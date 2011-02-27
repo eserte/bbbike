@@ -1738,6 +1738,16 @@ userdel	3 13150,7254 13047,7234 13034,7319
          'data' => 'userdel	q4::inwork 9373,12197 9164,12172
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => '116100155',
+         'until' => 1300143600,
+         'text' => 'Schulzendorf: K6161: Arbeiten am Bahnübergang OL Eichwalde, 03.03.2011 04:00 Uhr bis 14.03.2011 ',
+         'from' => 1299034800,
+         'id' => 2181,
+         'data' => 'userdel	2::inwork 25212,-4025 25269,-4041 25320,-4049
+',
+         'type' => 'gesperrt'
        }
      
 );

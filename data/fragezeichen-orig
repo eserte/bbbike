@@ -31,7 +31,9 @@ Reichsstr.: wird der vorhandene Radweg zugunsten eines Angebotsstreifens aufgege
 # auch im Tsp vom 2010-03-26 erwähnt
 #: last_checked: 2010-11-11
 Tiergartenstr.	?::projected 8172,11679 8021,11636 7816,11571 7717,11540 7600,11513 7504,11512 7435,11514 7356,11517 7293,11519 7171,11510 6825,11486
-#: last_checked: 2009-11-21
+# 
+#: last_checked: 2011-02-26 (zumindest an der Schloßstr.)
+#: next_check: 2011-05-01
 Grunewaldstr. (Steglitz)	?::projected 4861,5581 4671,5697 4520,5793 4419,5842 4291,5895 4172,5918 4010,5888 3931,5825 3850,5801 3707,5758
 Falkenberger Chaussee im Bereich Bhf. Hohenschönhausen	?::projected 17400,17790 17703,17990 17843,18078
 #: by: ^^^
@@ -148,6 +150,7 @@ Fahrradstraße in der Lauenburger Str.	?::projected 5883,4985 5909,5072 5939,5169
 # 
 #: by: http://www.moabitonline.de/1637
 #: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20110224.1350.332744.html
+#: next_check: 2011-06-01
 Planstraße im Block 902: neue Straße wird gebaut, wo genau, wann? Wird der Straßenname "Erna-Samuel-Straße" lauten?	?::inwork 5340,14050 5522,14195 5704,14252 5954,14303 6106,14280
 # 
 #: XXX neue Planstraßen nördlich des Alexanderplatzes vvv
@@ -167,11 +170,13 @@ Neue Planstraße	?::inwork 11002,13123 11029,13162 11073,13227 11127,13309
 #: XXX ^^^
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/05re.pdf/file
+#: last_checked: 2011-02-27
+#: next_check: 2011-05-14
 Franz-Mett-Str.: Einfahrt wird Richtung Süden verlegt, prüfen!	?::inwork 18417,10738 18395,10732 18368,10763
 # 
-#: last_checked: 2011-01-22
-#: next_check: 2011-02-14
-Am Tierpark: nach den Bauarbeiten vielleicht Radwege/-spuren?	?::inwork 18220,11710 18228,11656 18268,11391 18286,11275
+#: last_checked: 2011-02-27
+#: next_check: 2011-05-14
+Am Tierpark: nach den Bauarbeiten vielleicht Radwege/-spuren?	?::inwork 18220,11710 18228,11656 18268,11391 18286,11275 18343,11041 18408,10774 18417,10738 18446,10620
 # 
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20101221.1110.323849.html
 #: XXX: Vorfahrtsregelung kann dann entfernt werden
@@ -243,7 +248,7 @@ Groß-Berliner Damm/Nieberstr.: ist die Ampel bereits in Betrieb?	?::inwork 17885
 #: last_checked ^^^
 # 
 #: last_checked: 2010-06-19
-Am Birkenrevier: Bauarbeiten	?::inwork 19252,8041 19176,8098
+Am Birkenrevier: Bauarbeiten	?::inwork 19176,8098 19176,8098
 # 
 #: note: laut Bertil Schwotzer im Juni 2010 noch nicht
 #: next_check: 2010-12-31 (public)
@@ -398,8 +403,8 @@ Ahrensfelder Chaussee: Radstreifen in Bau, bis 2008-10	? 20160,18301 20460,18420
 #: by: http://www.stadtumbau-berlin.de/O-W-Gruenzug-Fussgaenger-und-Radfahrersteg.4699.0.html
 Verbindung zwischen Leuthener Platz und General-Pape-Str. (evtl. mit Verlängerung) inkl. Brücke über die Bahnstrecke für Fußgänger und Radfahrer (4m breit), Realisierung bis 2011-12-31	?::projected 7716,8356 7837,8354 7893,8327 8088,8283
 # 
-#: last_checked: 2010-11-19
-#: next_check: 2011-01-15
+#: last_checked: 2011-02-11
+#: next_check: 2011-04-15
 Verbindung zwischen Leuthener Platz und General-Pape-Str. (evtl. mit Verlängerung) inkl. Brücke über die Bahnstrecke für Fußgänger und Radfahrer (4m breit), Realisierung bis 2011-12-31	?::projected 8088,8283 8264,8289
 # 
 #: by: (URL existiert nicht mehr) http://www.berlin.de/ba-steglitz-zehlendorf/presse/archiv/20060109.1050.33932.html
@@ -442,25 +447,21 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 # und dem CGI-Benutzer auch nicht präsentiert.
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110224.0905.332693.html
-#: next_check: 2010-05-15
+#: next_check: 2011-05-15
 Roederplatz: Platz bekommt demnächst wieder den alten Namen	? 15502,13539
 # 
 #: by: osm
 Heißt dieser Abschnitt "Chaussee nach Bornim"?	? -19100,407 -18964,793 -18688,1177
-# 
-#: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20110210.1345.330558.html
-#: next_check: 2011-02-24
-Straßenbenennung nach dem Treptower Bezirksbürgermeister Erwin Bennewitz: wo genau? Erwin-Bennewitz-Weg?	? 15378,8668 15473,8531
 # 
 #: XXX_indoor: Linksabbiegen hier nicht legal möglich, aber durchaus wünschenswert --- vielleicht die Benutzung des linken Gehwegs in der Kniprodestr. empfehlen?
 Michelangelostr./Kniprodestr.: Kreuzungssituation überdenken	? 13696,15237 13822,15164 
 Michelangelostr.: gibt es hier auch Radspuren oder -wege?	? 13822,15164 13696,15237 13195,15534 13098,15592
 #
 #: by: Tagesspiegel vom 2010-11-23
-#: last_checked: 2010-12-29
-#: XXX: habe keine Radstreifen hier gesehen, waren aber u.U. unter dem Schnee versteckt (aber unwahrscheinlich)
-#: next_check: 2011-02-01
-Schloßstr.: Radstreifen, wo genau?	? 5165,6119 5137,6066 5099,5994 5099,5994 5083,5964 5048,5904 5024,5863 5000,5816 4984,5788 4963,5754 4900,5648 4861,5581
+#: last_checked: 2011-02-26
+#: XXX: teilweise gibt es provisorische Radstreifen (mit gelben Strichen, teilweise schon abgeblättert), und zwar Richtung Süden bis ca. Muthesiusstr. und Richtung Norden zwischen Albrechtstr. und Muthesiusstr.
+#: next_check: 2011-04-15
+Schloßstr.: Radstreifen sollen entstehen	? 5165,6119 5137,6066 5099,5994 5099,5994 5083,5964 5048,5904 5024,5863 5000,5816 4984,5788 4963,5754 4900,5648 4861,5581
 # 
 #: by: Tagesspiegel vom 2010-11-23
 Prinzenstr.: gibt es hier Radstreifen?	? 8939,16668 8926,16572 8788,16264
@@ -473,11 +474,8 @@ Fichtenweg: Teilstück als Straßenland eingezogen?	? -2949,17946 -2963,17872
 #: last_checked: 2011-01-15
 Straße wird eingezogen	? 14908,9939 14956,10028
 # 
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/41re.pdf/file
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/51re.pdf/file
-Traberweg: Einziehung von Straßenland: was bedeutet das hier?	? 18351,8222 18416,8163 18490,8104 18570,8025
+#XXX del --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/41re.pdf/file --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/51re.pdf/file --- Traberweg: Einziehung von Straßenland: was bedeutet das hier? -> nix!	? 18351,8222 18416,8163 18490,8104 18570,8025
 Havelwiesen: genaue Lage der Grünanlage?	? -2526,16779 -2427,16779 -2422,16656 -2504,16663
-Feuerbachstr./Fregestr.: gibt es hier einen Zebrastreifen?	? 5596,6369
 #: XXX_indoor: nach handicap_s-orig übetragen
 #: next_check: 2010-11-30
 Behrenstr.: Verlängerung der Einbahnstraßenregelung ab Dezember 2010	? 9164,12172 9373,12197
@@ -4730,12 +4728,19 @@ Friedrich-Wilhelm-Boelcke-Str. (Potsdam): Qualität?	? -12796,-2488 -12831,-2439 
 #: by: http://www.potsdam.de/cms/dokumente/10057376_761024/a31d30b5/Amtsblatt17_09.pdf (Lage)
 Zur Königlichen Hofbrauerei (Potsdam): Qualität?	? -12813,-2423 -12781,-2376
 Unterführung Müllerstraße: gibt es hier eine Rampe/Treppe?	? 4311,746 4250,763
+# 
 #: XXX fehlt in Berlin.coords.data
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/07re.pdf/file
-Georg-Stern-Str.: Wo befindet sich die Straße genau? Qualität?	? 19255,7987 19176,8045
+#: last_checked: 2011-02-27
+#: next_check: 2011-07-15
+Georg-Stern-Str.: neue Straße in Bau, ist das vielleicht die Georg-Stern-Str.?	? 19353,7819 19235,7905 19258,7943
+# 
 #: XXX fehlt in Berlin.coords.data
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/07re.pdf/file
-Günter-Riesebrodt-Weg: Wo befindet sich die Straße genau? Qualität?	? 19384,7946 19285,7914
+#: last_checked: 2011-02-27
+#: next_check: 2011-07-15
+Günter-Riesebrodt-Weg: neue Straße in Bau, ist das vielleicht der Günter-Riesebrodt-Weg?	? 19468,7962 19353,7819
+# 
 #: XXX fehlt in Berlin.coords.data
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/07re.pdf/file
 Ida-von-Arnim-Str.: Wo genau wird die Straße gebaut? Qualität?	? 8169,14267 8452,14298

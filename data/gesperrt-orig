@@ -276,6 +276,7 @@ Havensteinstr.	1 6293,2583 6463,2724 6593,2831
 Worpsweder Str.	1 6191,4923 6203,5138
 Wilseder Str.	1 6295,5132 6288,4906
 Dickhardtstr.	1 5817,7223 5824,6974 5828,6839 5778,6754 5604,6709 5533,6753
+Roennebergstr.	1 5533,6753 5357,6932
 Schmitzweg	1 5879,19352 5858,19437 5831,19547 5731,19824
 Barbarossaplatz	1 6731,9559 6746,9540 6743,9523 6728,9515 6704,9537 6712,9557 6731,9559
 Otto-von-Simson-Str.	1 2560,5044 2627,5095 2835,5410
@@ -1677,6 +1678,10 @@ Tor	BNP:5 26888,13976
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: last_checked: 2011-02-26
+#: next_check: 2012-01-01
+Treitschkestr.: Bauarbeiten am Kaufhaus, bis 2012	2:inwork 5219,6215 5125,6262 4971,6345
+# 
 #: last_checked: 2010-12-12
 #: next_check: 2011-04-01
 Caroline-Michaelis-Str.: Bauarbeiten	2:inwork 9061,14050 9125,13973
@@ -1731,9 +1736,9 @@ Wegedornbrücke: Vollsperrung, Neubau	2:inwork 20385,593 20442,564 20510,530 2053
 #: next_check: 2011-09-01
 Rathausbrücke: gesperrt (Neubau), Fertigstellung 2011 oder 2012	2:inwork 10362,12351 10422,12395
 # 
-#: last_checked: 2010-10-17
-#: next_check: 2011-03-01
-Vicki-Baum-Str.: noch in Bau, gesperrt	2:inwork 15753,10353 15688,10400
+#: last_checked: 2011-02-27
+#: next_check: 2011-05-15
+Vicki-Baum-Str.: noch in Bau, gesperrt	2:inwork 15753,10353 15823,10300
 # 
 #: last_checked: 2010-07-05
 #: next_check: 2011-03-01
@@ -1966,7 +1971,8 @@ Hausotterpl.	1 8320,18185 8345,18182 8361,18160 8355,18142 8334,18127 8310,18127
 #: by: Holger Buechner [AM]
 Brauerstr.	1 5167,2160 5317,2345
 #: by: Annett Nisch-Kabelka [AM]
-Hentigstr.	1 18514,8773 18548,8942 18586,9172 18621,9404
+#: XXX ist mittlerweile die gesamte Straße für Radfahrer in Gegenrichtung geöffnet?
+Hentigstr.	1 18548,8942 18586,9172 18621,9404
 #: by: rene carmosin [AM]
 Grußdorfstr.	1 2323,20214 2109,20188
 #: by: rene carmosin [AM]

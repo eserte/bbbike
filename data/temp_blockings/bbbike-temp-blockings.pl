@@ -18722,4 +18722,13 @@ EOF
 userdel	q4::inwork 9373,12197 9164,12172
 EOF
      },
+     { from  => 1299034800, # 2011-03-02 04:00
+       until => 1300143600, # 2011-03-15 00:00
+       text  => 'Schulzendorf: K6161: Arbeiten am Bahnübergang OL Eichwalde, 03.03.2011 04:00 Uhr bis 14.03.2011 ',
+       type  => 'gesperrt',
+       source_id => '116100155',
+       data  => <<EOF,
+userdel	2::inwork 25212,-4025 25269,-4041 25320,-4049
+EOF
+     },
     );
