@@ -154,7 +154,7 @@ sub show_mini_images {
     main::status_message($err, 'die') if $err;
 
     if ($data) {
-	main::status_message("Panoramia API returned $data->{count} photo(s), displayed $displayed_photos within visible area", "info");
+	main::status_message("Panoramio API returned $data->{count} photo(s), displayed $displayed_photos within visible area", "info");
     }
 }
 
