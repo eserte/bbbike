@@ -173,7 +173,9 @@ Sort::Naturally	- Für natürliches Sortieren von bbd-Dateien
 
 Yahoo::Search	- Suche in luise-berlin
 
-Geo::Coder::Google 0.06	- Geocoding über Googlemaps
+Geo::Coder::Google 0.06	- Geocoding über Googlemaps (API v2)
+
+Geo::Coder::Googlev3	- Geocoding über Googlemaps (API v3)
 
 Geo::Coder::Yahoo	- Geocoding über Yahoo
 
@@ -204,6 +206,8 @@ Text::Unidecode	- Für das Neu-Erzeugen der .bbd-Dateien in data
 Data::Compare	- Für das Neu-Erzeugen der .bbd-Dateien in data
 
 HTML::FormatText	- Für VMZTool
+
+Math::Round	- Für downloadosm -round
 
 
 =head1 DESCRIPTION
