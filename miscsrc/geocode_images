@@ -457,7 +457,7 @@ for my $file (@images) {
 	$File::Find::prune = $File::Find::prune if 0; # cease -w
 	my @files;
 	File::Find::find(sub {
-			     if ($_ eq '.xvpics' || $_ eq '.thumbs') {
+			     if ($_ eq '.xvpics' || $_ eq '.thumbs' || $_ eq 'iPod Photo Cache') {
 				 $File::Find::prune = 1;
 				 return;
 			     }
