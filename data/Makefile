@@ -733,7 +733,7 @@ ${_img_gif_${img}}: ${_img_png_${img}}
 .modified:	${TARGETS} ${NON_TARGETS}
 	${PERL} ${MISCSRCDIR}/create_modified
 
-multi_bez_str:	multi_bez_str-orig
+multi_bez_str:	multi_bez_str-orig strassen-orig
 	-@$(WRITEABLE) $@
 	${PERL} ${MISCSRCDIR}/complete_multi_bez_str > $@~
 	mv $@~ $@
