@@ -843,11 +843,12 @@ sub parse {
     return [undef, [], undef] if !$_[0];
     my $tab_inx = index($_[0], "\t");
     if ($tab_inx < 0) {
-	warn "Probably tab character is missing (line <$_[0]>)\n" if $VERBOSE;
+	warn "*** ERROR: Probably tab character is missing (line <$_[0]>)\n"; # XXX if $VERBOSE;
 	[$_[0]];
     } else {
 	my @s = split /\s+/, substr($_[0], $tab_inx+1);
 	my $category = shift @s;
+	warn "*** ERROR: Probably wrong formatted bbd line (line <$_[0]>)\n" if !@s;
 	[substr($_[0], 0, $tab_inx), \@s, $category];
     }
 }
