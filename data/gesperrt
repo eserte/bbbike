@@ -167,7 +167,7 @@ Kirchstr.	1 22196,4847 22234,4789 22243,4710 22284,4653 22312,4593
 Kietzer Str.	1s 22372,4496 22383,4470
 Ontarioseestr.	1 18552,10135 18577,10023 18408,10041 18339,10048
 Degnerstr. (außer Tram)	1 16448,15593 16475,15659
-Henriette-Herz-Platz	1 10371,13006 10255,12959
+Henriette-Herz-Platz	1 10371,13006 10312,12982 10255,12959
 Savignyplatz	1 4921,11017 4920,10933 4868,10934 4817,10943 4827,11025 4835,11092 4880,11088 4926,11081 4921,11017
 Dresdener Str./Oranienplatz	1 11258,10682 11234,10739
 Gutsmuthsstr.	1 5312,6382 5065,6515
@@ -258,7 +258,7 @@ Braillestr.	1 4430,5324 4477,5250 4512,5199
 Mudrackzeile	1 6985,17812 7020,17690
 Gustav-Müller-Str.	1 7643,8634 7642,8815
 Gustav-Müller-Platz	1 7644,8560 7614,8599 7643,8634 7682,8598 7644,8560
-Niederlagstr.	1 9972,12184 9939,12296 9951,12318 9943,12364 9934,12418
+Niederlagstr.	1 9972,12184 9947,12269 9939,12296 9951,12318 9943,12364 9934,12418
 Kolk/Behnitz/Möllentordamm	1 -3042,14682 -3028,14640 -2951,14617 -2942,14666 -3027,14689 -3042,14682
 Hertelstr.	1 4893,6900 4787,6899
 Karl-Marx-Platz	1 12980,7597 13100,7626
@@ -979,9 +979,9 @@ Samländische Str. -> Berliner Str.: Straßenbahntrasse	3::igndisp 10706,17391 109
 Straßenbahntrasse	3nocross::ignrte 13737,15994 13826,16026 14014,16106
 Berliner Allee -> Herbert-Baum-Str.: Straßenbahntrasse	3::igndisp 14014,16106 13826,16026 13869,15912
 Herbert-Baum-Str. -> Berliner Allee: Straßenbahntrasse	3::igndisp 13869,15912 13826,16026 13737,15994
-Straßenbahntrasse	3nocross::ignrte 11149,13442 11087,13359 11021,13271
-Karl-Liebknecht-Str. -> Wadzeckstr.: Straßenbahntrasse	3::igndisp 11149,13442 11087,13359 11187,13289
-Wadzeckstr. -> Karl-Liebknecht-Str.: Straßenbahntrasse	3::igndisp 11187,13289 11087,13359 11021,13271
+Straßenbahntrasse	3nocross::ignrte 11149,13442 11092,13366 11080,13350 11027,13279 11021,13271
+Karl-Liebknecht-Str. -> Wadzeckstr.: Straßenbahntrasse	3::igndisp 11149,13442 11092,13366 11146,13328
+Wadzeckstr. -> Karl-Liebknecht-Str.: Straßenbahntrasse	3::igndisp 11146,13328 11092,13366 11080,13350
 Gitter auf Mittelstreifen	3nocross::ignrte 8659,16327 8543,16364 8516,16393 8486,16425
 Gropiusstr. -> Badstr.: Gitter auf Mittelstreifen	3::igndisp 8389,16214 8543,16364 8516,16393
 Gropiusstr. -> Travemünder Str.: Gitter auf Mittelstreifen	3::igndisp 8389,16214 8543,16364 8592,16406

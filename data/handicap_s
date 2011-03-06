@@ -5,8 +5,7 @@
 #:
 Behrenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8861,12125 9054,12154 9064,12156 9164,12172
 Reichstagufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9117,12705 9209,12795 9280,12883
-Niederlagstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9972,12184 9939,12296 9951,12318
-Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9890,12161 9913,12068
+Niederlagstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9972,12184 9947,12269 9939,12296 9951,12318
 Oberwallstr.: Bauarbeiten, Einbahnstraße	q4::inwork; 9925,11947 9913,12068
 Schloßplatz: Behinderungen durch Bauarbeiten möglich, einige Stufen	q3::inwork 10170,12261 10063,12438
 Varian-Fry-Str.: Baustelle, Fahrbahn gesperrt	q4::inwork 8389,11378 8374,11479
@@ -19,6 +18,7 @@ Jägerstr.: Einbahnstraße	q4::inwork; 9394,11996 9201,11968
 Am Carlsgarten: Bauarbeiten	q4::inwork 19468,7962 19372,8012 19334,8046
 Rathausstr. zwischen Breitestr. und Poststr.: Fahrbahn wegen Brückenbauarbeiten gesperrt	q4::inwork 10281,12310 10362,12351
 Rathausstr. zwischen Breitestr. und Poststr.: Fahrbahn wegen Brückenbauarbeiten gesperrt	q4::inwork 10422,12395 10476,12432
+Alte Jakobstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10436,11344 10244,11160
 Wuhlewanderweg: steiler Anstieg, Fußgänger	q4; 21998,12204 21970,12153
 Wuhlewanderweg: steiles Gefälle, Fußgänger	q4; 21970,12153 21998,12204
 (An der Wuhle, östliches Ufer): Fußgänger	q1 21323,8481 21333,8355 21371,8289 21594,8107 21627,8024 21629,7921
@@ -183,7 +183,7 @@ Ludwigkirchplatz: Gehweg	q2 4905,10069 4863,10077
 (Rad- und Wanderweg an Spree und Landwehrkanal): Fußgänger, teilweise eng	q2 3396,12741 3476,12735 3582,12704 3763,12624 3888,12618 4131,12641 4340,12578 4529,12570 4642,12491 4829,12357 5045,12243 5147,12164 5261,12004 5361,11910
 Spreeufer: Fußgänger, besonders an schönen Tagen	q2 10166,12777 10105,12855 9977,12912 9944,12921 9930,12947 9900,12942 9714,12995
 Spreeufer: Fußgänger	q1 9707,12974 9557,12992 9533,12994 9508,12991 9271,12952
-Henriette-Herz-Platz: Straßenbahn	q2 10132,12941 10255,12959 10371,13006
+Henriette-Herz-Platz: Straßenbahn	q2 10132,12941 10255,12959 10312,12982 10371,13006
 Monbijoupark - Henriette-Herz-Platz: Fußgänger	q1 9977,12912 10132,12941
 Monbijoubrücke: Fußgänger	q1 9707,12974 9680,12916 9661,12876
 Garnisonkirchplatz: Straßenbahn	q2 10309,12854 10255,12959

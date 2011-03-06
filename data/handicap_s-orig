@@ -13,11 +13,12 @@
 Behrenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8861,12125 9054,12154 9064,12156 9164,12172
 #: last_checked: 2011-11-27
 Reichstagufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9117,12705 9209,12795 9280,12883
-#: last_checked: 2010-10-22
-Niederlagstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9972,12184 9939,12296 9951,12318
+#
+#: last_checked: 2011-03-03
+#: next_check: 2011-05-01
+Niederlagstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9972,12184 9947,12269 9939,12296 9951,12318
 # 
-#: last_checked: 2010-11-05 vvv
-Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9890,12161 9913,12068
+#: last_checked: 2011-03-03 vvv
 Oberwallstr.: Bauarbeiten, Einbahnstraße	q4::inwork; 9925,11947 9913,12068
 #: last_checked: ^^^
 # 
@@ -34,10 +35,10 @@ Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 
 Universitätsstr.: wegen Bauarbeiten Richtung Unter den Linden gesperrt	q4::inwork; 9580,12581 9601,12380
 #: last_checked: 2010-11-28
 Planckstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 9434,12669 9385,12809 9383,12915
-#: next_check: 2011-03-01
+#: next_check: 2011-06-01
 Matkowskystr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 14530,11137 14509,11060
-#: last_checked: 2010-11-06
-#: next_check: 2011-01-01
+#: last_checked: 2011-03-03
+#: next_check: 2011-07-01
 Rathausstr.: Baustelle vor dem Roten Rathaus, eng	q4::inwork 10601,12521 10704,12595
 #: by: ^^^
 #: last_checked: 2010-11-06
@@ -52,6 +53,9 @@ Rathausstr. zwischen Breitestr. und Poststr.: Fahrbahn wegen Brückenbauarbeiten 
 Rathausstr. zwischen Breitestr. und Poststr.: Fahrbahn wegen Brückenbauarbeiten gesperrt	q4::inwork 10422,12395 10476,12432
 #: next_check: ^^^
 # 
+#: last_checked: 2011-03-04
+#: next_check: 2011-06-01
+Alte Jakobstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10436,11344 10244,11160
 #: temporary ^^^
 ######################################################################
 #: XXX es ist zu erwarten, dass hier der Wuhlewanderweg verbessert wird: vvv
@@ -236,7 +240,7 @@ Ludwigkirchplatz: Gehweg	q2 4905,10069 4863,10077
 #: note: Radfahren erlaubt, Fußgänger haben Vorrang
 Spreeufer: Fußgänger, besonders an schönen Tagen	q2 10166,12777 10105,12855 9977,12912 9944,12921 9930,12947 9900,12942 9714,12995
 Spreeufer: Fußgänger	q1 9707,12974 9557,12992 9533,12994 9508,12991 9271,12952
-Henriette-Herz-Platz: Straßenbahn	q2 10132,12941 10255,12959 10371,13006
+Henriette-Herz-Platz: Straßenbahn	q2 10132,12941 10255,12959 10312,12982 10371,13006
 Monbijoupark - Henriette-Herz-Platz: Fußgänger	q1 9977,12912 10132,12941
 Monbijoubrücke: Fußgänger	q1 9707,12974 9680,12916 9661,12876
 Garnisonkirchplatz: Straßenbahn	q2 10309,12854 10255,12959

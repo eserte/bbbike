@@ -187,7 +187,7 @@ Kirchstr.	1 22196,4847 22234,4789 22243,4710 22284,4653 22312,4593
 Kietzer Str.	1s:q3 22372,4496 22383,4470
 Ontarioseestr.	1 18552,10135 18577,10023 18408,10041 18339,10048
 Degnerstr. (außer Tram)	1 16448,15593 16475,15659
-Henriette-Herz-Platz	1 10371,13006 10255,12959
+Henriette-Herz-Platz	1 10371,13006 10312,12982 10255,12959
 Savignyplatz	1 4921,11017 4920,10933 4868,10934 4817,10943 4827,11025 4835,11092 4880,11088 4926,11081 4921,11017
 Dresdener Str./Oranienplatz	1 11258,10682 11234,10739
 Gutsmuthsstr.	1 5312,6382 5065,6515
@@ -285,7 +285,7 @@ Braillestr.	1 4430,5324 4477,5250 4512,5199
 Mudrackzeile	1 6985,17812 7020,17690
 Gustav-Müller-Str.	1 7643,8634 7642,8815
 Gustav-Müller-Platz	1 7644,8560 7614,8599 7643,8634 7682,8598 7644,8560
-Niederlagstr.	1 9972,12184 9939,12296 9951,12318 9943,12364 9934,12418
+Niederlagstr.	1 9972,12184 9947,12269 9939,12296 9951,12318 9943,12364 9934,12418
 Kolk/Behnitz/Möllentordamm	1 -3042,14682 -3028,14640 -2951,14617 -2942,14666 -3027,14689 -3042,14682
 Hertelstr.	1 4893,6900 4787,6899
 Karl-Marx-Platz	1 12980,7597 13100,7626
@@ -1050,7 +1050,7 @@ Königsberger Str.: Mittelstreifen nicht passierbar	3nocross 4251,2637 4212,2675 
 Berliner Str.: Straßenbahntrasse	3nocross 10911,17275 10906,17331 10900,17397 10894,17470 10892,17491
 #: note: Luftbild:
 Berliner Str.: Straßenbahntrasse	3nocross 13737,15994 13826,16026 14014,16106
-Karl-Liebknecht-Str.: Straßenbahntrasse	3nocross 11149,13442 11087,13359 11021,13271
+Karl-Liebknecht-Str.: Straßenbahntrasse	3nocross 11149,13442 11092,13366 11080,13350 11027,13279 11021,13271
 Badstr.: Gitter auf Mittelstreifen	3nocross 8659,16327 8543,16364 8516,16393 8486,16425
 Riesaer Str.: Straßenbahntrasse	3nocross 24120,14526 24097,14575 24020,14737
 #: note: Luftbild:
@@ -1690,8 +1690,8 @@ Caroline-Michaelis-Str.: Bauarbeiten	2:inwork 9061,14050 9125,13973
 #: next_check: 2011-09-01
 Ella-Trebe-Str.: Einbahnstraße wegen Bauarbeiten	1s:q3:inwork 7937,13109 7941,13014 7948,12918
 # 
-#: last_checked: 2010-11-05
-#: next_check: 2011-01-01
+#: last_checked: 2011-03-04
+#: next_check: 2011-05-15
 Brüderstr.: Bauarbeiten, gesperrt	2:inwork 10385,11985 10284,12113
 # 
 #: next_check: 2012-06-01 vvv
@@ -1709,8 +1709,8 @@ Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,127
 #XXX --- siehe http://www.flickr.com/photos/h-e-n-r-y/5260386593/ #: last_checked: 2010-11-05 --- #: next_check: 2010-12-01 --- #: note: Eröffnung des Hotels im Dezember 2010 --- #: XXX Neubewertung für handicap_s notwendig! --- Spittelmarkt: wegen Bauarbeiten gesperrt	2:inwork 10166,11592 10153,11666 10213,11728
 # 
 #: by: http://www.kondorwessels.com/index.php?id=356 (Fertigstellung)
-#: last_checked: 2010-09-20
-#: next_check: 2011-03-01
+#: last_checked: 2011-03-04
+#: next_check: 2011-05-01
 Elisabeth-Mara-Str.: Bauarbeiten bis zum Frühjahr 2011	2:inwork 10506,11567 10320,11627
 #XXX del --- # #: last_checked: 2010-09-18 --- #: next_check: 2010-11-01 ---Großer Weg: Bauarbeiten, Weg wird neu gemacht	2:inwork 6809,11570 6980,11583
 # 
@@ -1740,8 +1740,8 @@ Rathausbrücke: gesperrt (Neubau), Fertigstellung 2011 oder 2012	2:inwork 10362,1
 #: next_check: 2011-05-15
 Vicki-Baum-Str.: noch in Bau, gesperrt	2:inwork 15753,10353 15823,10300
 # 
-#: last_checked: 2010-07-05
-#: next_check: 2011-03-01
+#: last_checked: 2011-02-28
+#: next_check: 2011-05-01
 Kynaststraße: Bauarbeiten im südlichen Abschnitt	2:inwork 14652,10201 14724,10297 14766,10372 14795,10473 14805,10518
 # 
 #: last_checked: 2010-09-08

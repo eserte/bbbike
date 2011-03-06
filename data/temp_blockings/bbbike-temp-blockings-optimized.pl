@@ -1400,7 +1400,7 @@ userdel	q4::inwork; 12598,8390 12771,8439
        {
          'until' => undef,
          'permanent' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Februar von 7.00 bis 18.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im März bis 19.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'from' => undef,
          'id' => 2068,
          'data' => '(Eingang Columbiadamm - Rundkurs auf dem Flughafen Tempelhof)	2::night 10691,8532 10640,8366 10598,8270 10575,8218
@@ -1748,6 +1748,29 @@ userdel	3 13150,7254 13047,7234 13034,7319
          'data' => 'userdel	2::inwork 25212,-4025 25269,-4041 25320,-4049
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20110303.0840.333719.html',
+         'until' => undef,
+         'text' => 'Auerbachtunnel: einspurige Verkehrsführung, Regelung mit Ampel',
+         'from' => undef,
+         'id' => 2182,
+         'data' => '#: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20110303.0840.333719.html
+#: next_check: 2011-04-01
+userdel	q4::inwork 425,8766 490,8716
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'http://www.potsdam.de/cms/beitrag/10078717/1191938/',
+         'until' => 1321311600,
+         'text' => 'Leiblstraße: Für die Einrichtung einer Baustelle für den Bau von Wohnhäusern wird die Leiblstraße bis voraussichtlich Mitte November von der Hans-Thoma-Straße in Richtung Hebbelstraße als Einbahnstraße ausgeschildert. ',
+         'from' => 1299353825,
+         'id' => 2183,
+         'data' => '#: by: http://www.potsdam.de/cms/beitrag/10078717/1191938/
+userdel	q4::inwork; -12545,-698 -12262,-612
+',
+         'type' => 'handicap'
        }
      
 );

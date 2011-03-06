@@ -922,7 +922,7 @@ Obwaldener Zeile: Qualität? Für Autos gesperrt?	? 3653,2107 3655,2210
 Aarberger Str. - Obwaldener Zeile: Existiert eine Verbindung zwischen Aarberger Str. und Obwaldener Zeile? Wenn ja, wie ist die Qualität?	? 3581,2105 3653,2107
 Bremer Str. - Engadiner Weg: Qualität?	? 4046,2339 4035,2291 4018,2254 3974,2214 3923,2158 3906,2135
 Rütliplatz: Qualität?	? 2951,2112 2995,2111
-Weißdornweg: Qualität?	? 2852,2342 3003,2339
+Weißdornweg: Qualität des Asphalts?	? 2852,2342 3003,2339
 Murtener Str.: Qualität?	? 2746,2590 2809,2615 3015,2606 3163,2598
 Trienter Str.: Qualität?	? 10229,16927 10228,17025 10226,17098 10228,17191 10228,17231
 Kongostr.: Qualität? Ist die Straße zwischen Togostr. und Guineastr. für Autos gesperrt?	? 6450,16325 6349,16213 6258,16111 6244,16096 6202,16041 6129,15970
@@ -1131,6 +1131,7 @@ An der Krähenheide: Qualität?	? -1102,19564 -1071,19689 -1048,19779
 Gabelweihstr.: Qualität?	? -1492,19370 -1557,19457 -1681,19593
 Dorndreherweg: Qualität?	? -1364,19982 -1414,20145 -1473,20181 -1578,20228
 Armenische Str.: Qualität?	? 7216,16552 7285,16638 7177,16715 7150,16760 7147,16791
+(Groninger Str. - Armenische Str.): Qualität? Nachts beleuchtet?	? 7388,16561 7285,16638
 Syrische Str.: Qualität? Kann man die Seestr. hier überqueren?	? 7106,16646 7216,16552 7263,16508 7295,16477
 Fischhauser Weg: Qualität? Kann man als Radfahrer zum Pankeweg gelangen?	? 8951,17717 9006,17690
 Fordoner Str.: Qualität?	? 8846,17266 8880,17342
@@ -2142,13 +2143,13 @@ Zinnowweg: Qualität? Für Radfahrer befahrbar? Nachts beleuchtet?	? -420,4159 -34
 Ottmachauer Steig: Qualität? Für Radfahrer offen?	? -442,4691 -424,4717 -311,4637
 Selmaplatz: Qualität?	? -361,4334 -408,4302
 Gustav-Krone-Str.: Qualität?	? 1514,208 1507,301
-Hoiruper Str.: Qualität?	? -3440,3015 -3515,3110
+Hoiruper Str.: Qualität des Kopfsteinpflasters?	? -3440,3015 -3515,3110
 Im Kieferngrund: Qualität?	? 261,4420 221,4412 208,4424 148,4402 156,4375 209,4393 221,4412
 Mutter-Mochow-Weg: Qualität? Nachts beleuchtet?	? -1959,2305 -1849,2043
 Münchowstr.: Qualität?	? -3907,2438 -4084,2356
 Paul-Krause-Str.: Qualität? Existiert eine Verbindung (Treppe, Rampe) zur Borussenstr.?	? -4084,2356 -3983,2280
-Nickisch-Rosenegk-Str.: Qualität?	? -2761,2895 -2709,3104
-Palmzeile: Qualität?	? -2800,2750 -2711,2802 -2656,2897 -2603,3128 -2587,3185
+Nickisch-Rosenegk-Str.: Qualität des Kopfsteinpflasters?	? -2761,2895 -2709,3104
+Palmzeile: Qualität des Kopfsteinpflasters?	? -2800,2750 -2711,2802 -2656,2897 -2603,3128 -2587,3185
 Parallelstr. (Nikolassee): Qualität? Existiert eine Treppe (wieviele Stufen?) zur Borussenstr.?	? -3742,2287 -3804,2352 -3801,2410 -3820,2479
 Triftweg: Qualität?	? -5650,9471 -5636,8364 -5658,8184
 Hainbuchenweg: Qualität?	? -4713,9589 -4720,9822
@@ -3155,6 +3156,7 @@ Am Pappeltor (Potsdam, Geltow): Qualität?	? -18894,-5272 -18885,-5173 -18908,-48
 An den Kopfweiden (Potsdam): Qualität?	? -10859,-3249 -11015,-3091
 Hannes-Meyer-Str. (Potsdam): Qualität?	? -14114,580 -13958,534
 Elisenweg (Potsdam): Qualität?	? -17194,-4659 -17217,-4610 -17235,-4609 -17599,-4389 -17810,-4254 -17847,-4179
+Litfaß-Platz: Qualität?	? 10360,12886 10312,12982
 # added from ampeln-orig
 geschlossen bei Bedarf (?) (Zbr)	? 27657,-11741
 S-Bahn alle 20 Minuten, Regionalbahn halbstündlich (?) (B)	? 40248,14503

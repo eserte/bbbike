@@ -1355,7 +1355,7 @@ EOF
        text  => 'Weihnachtsmarkt am Opernpalais, bis 25.12.2004',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 9890,12161 9869,12297 9852,12409
+userdel	2 9890,12161 9875,12257 9869,12297 9852,12409
 userdel	2 9801,12245 9795,12293 9780,12401
 EOF
      },
@@ -6661,9 +6661,9 @@ EOF
 userdel	2::temp 9994,12368 9943,12364 9934,12418
 userdel	2::temp 9996,12401 10058,12290 10008,12274 9994,12368 9996,12401 9984,12426
 userdel	2::temp 10058,12290 10091,12232
-userdel	2::temp 9943,12364 9951,12318 9939,12296 9972,12184
+userdel	2::temp 9943,12364 9951,12318 9939,12296 9947,12269 9972,12184
 userdel	2::temp 10010,12259 10035,12209
-userdel	2::temp 9852,12409 9869,12297 9890,12161
+userdel	2::temp 9852,12409 9869,12297 9875,12257 9890,12161
 EOF
      },
      { from  => 1163718000, # 2006-11-17 00:00
@@ -9391,9 +9391,9 @@ EOF
        text  => 'Berliner Gauklerfest vom 24. Juli 2009 bis 2. August 2009, einige Straßen am Opernpalais sind vollständig gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::temp 9890,12161 9869,12297 9795,12293 9780,12401
+userdel	2::temp 9890,12161 9875,12257 9869,12297 9795,12293 9780,12401
 userdel	2::temp 9869,12297 9852,12409
-userdel	2::temp 9994,12368 9943,12364 9951,12318 9939,12296 9972,12184
+userdel	2::temp 9994,12368 9943,12364 9951,12318 9939,12296 9947,12269 9972,12184
 userdel	2::temp 9934,12418 9943,12364
 EOF
      },
@@ -11820,7 +11820,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_009262',
        data  => <<EOF,
-userdel	1::inwork 10298,13076 10349,13043 10371,13006 10418,12922 10395,12908 10309,12854
+userdel	1::inwork 10298,13076 10349,13043 10371,13006 10418,12922 10395,12908 10360,12886 10309,12854
 EOF
      },
      { from  => 1215112739, # 
@@ -16817,9 +16817,9 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_014608',
        data  => <<EOF,
-userdel	2::temp 9943,12364 9951,12318 9939,12296 9972,12184
+userdel	2::temp 9943,12364 9951,12318 9939,12296 9947,12269 9972,12184
 userdel	2::temp 9780,12401 9795,12293 9801,12245 9812,12145
-userdel	2::temp 9852,12409 9869,12297 9890,12161
+userdel	2::temp 9852,12409 9869,12297 9875,12257 9890,12161
 EOF
      },
      { from  => 1258239600, # 2009-11-15 00:00
@@ -18729,6 +18729,27 @@ EOF
        source_id => '116100155',
        data  => <<EOF,
 userdel	2::inwork 25212,-4025 25269,-4041 25320,-4049
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Auerbachtunnel: einspurige Verkehrsführung, Regelung mit Ampel',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20110303.0840.333719.html',
+       data  => <<EOF,
+#: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20110303.0840.333719.html
+#: next_check: 2011-04-01
+userdel	q4::inwork 425,8766 490,8716
+EOF
+     },
+     { from  => 1299353825, # 2011-03-05 20:37
+       until => 1321311600, # 2011-11-15 00:00
+       text  => 'Leiblstraße: Für die Einrichtung einer Baustelle für den Bau von Wohnhäusern wird die Leiblstraße bis voraussichtlich Mitte November von der Hans-Thoma-Straße in Richtung Hebbelstraße als Einbahnstraße ausgeschildert. ',
+       type  => 'handicap',
+       source_id => 'http://www.potsdam.de/cms/beitrag/10078717/1191938/',
+       data  => <<EOF,
+#: by: http://www.potsdam.de/cms/beitrag/10078717/1191938/
+userdel	q4::inwork; -12545,-698 -12262,-612
 EOF
      },
     );

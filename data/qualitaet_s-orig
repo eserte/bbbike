@@ -544,7 +544,7 @@ Tegeler Weg: Asphalt	Q0 7263,14873 7199,14978 7187,15000 7131,15109 7085,15226 7
 Lynarstr.: Kopfsteinpflaster	Q2 7152,14779 7263,14873 7436,14964 7629,15078 7754,15160
 Kiautschoustr.: Kopfsteinpflaster	Q2 7199,14978 7007,14911 6853,14854 6837,14848
 Samoastr.: Kopfsteinpflaster	Q2 7001,14837 7007,14911 6945,15045 6886,15156
-Henriette-Herz-Platz: Kopfsteinpflaster, OK	Q1 10132,12941 10255,12959 10371,13006
+Henriette-Herz-Platz: Kopfsteinpflaster, OK	Q1 10132,12941 10255,12959 10312,12982 10371,13006
 Emser Str.: gutes Kopfsteinpflaster	Q1 13058,7165 12872,7134
 Emser Str.: Kopfsteinpflaster	Q2 12645,7087 12751,7109 12872,7134
 Neiﬂestr.: m‰ﬂiges Kopfsteinpflaster	Q2 11937,6929 11951,6862
@@ -876,7 +876,7 @@ Hauptstr: sandiger und hoplriger Fahrweg	Q3 9675,26957 9577,26725 9713,26457
 Hauptstr.: Betonplatten, OK	Q1 9713,26457 9820,26180 9863,26000 9908,25864
 Bauernweg: sandig	Q2 9820,26180 10112,26349
 Hinter dem Gieﬂhaus: Asphalt	Q0+ 9837,12552 9842,12506 9852,12409
-Oberwallstr.: m‰ﬂiger Asphalt, teils gutes Kopfsteinpflaster	Q1 9890,12161 9869,12297
+Oberwallstr.: m‰ﬂiger Asphalt, teils gutes Kopfsteinpflaster	Q1 9890,12161 9875,12257 9869,12297
 Oberwallstr.: m‰ﬂiger Asphalt	Q1 9869,12297 9852,12409
 Trautenaustr.: Kopfsteinpflaster, OK	Q1 5374,9619 5314,9588
 Krumme Str.: Kopfsteinpflaster	Q2 3981,11232 3986,11347 3990,11490
@@ -2275,7 +2275,7 @@ Einsteinstr.: Asphalt	Q0 13537,14835 13596,14934
 Preuﬂstr.: Asphalt	Q0 12327,15333 12367,15396
 (K¸selstr. - Prenzlauer Allee, Lidl-Parkplatz): Verbundsteinpflaster	Q1+ 12058,15621 11967,15700
 Wisbyer Str. 9-11: Asphalt	Q0 11289,16423 11253,16296
-Niederlagstr.: m‰ﬂiger Asphalt	Q1 9943,12364 9951,12318 9939,12296 9972,12184
+Niederlagstr.: m‰ﬂiger Asphalt	Q1 9943,12364 9951,12318 9939,12296 9947,12269 9972,12184
 M¸ncheberger Str.: m‰ﬂiger Asphalt, Bodenschwellen	Q1 12446,11983 12617,11888
 Theodorstr. (Tempelhof): Asphalt	Q0 9321,6079 9291,5908
 Kolonie Albrechtshˆhe: wassergebundene Decke	Q1 10260,5953 9931,5985
@@ -5949,7 +5949,7 @@ Weiﬂwasserweg: Kopfsteinpflaster	Q2 2476,2987 2594,3009 2661,3021
 Mendelssohnstr.: Asphalt	Q0 11539,13425 11490,13463 11451,13495 11392,13528 11346,13441 11306,13386
 Mendelssohnstr.: Beton	Q0 11490,13463 11433,13389 11346,13441
 Mendelssohnstr.: Beton	Q0 11451,13495 11474,13524 11512,13493 11598,13598 11550,13642 11545,13690
-Keibelstr.: Asphalt	Q0 11275,13407 11187,13289 11082,13134
+Keibelstr.: Asphalt	Q0 11275,13407 11201,13289 11108,13142
 Hittorfstr.: Asphalt	Q1 2212,4600 2290,4709
 Hittorfstr: Kopfsteinpflaster	Q2 2290,4709 2381,4737 2442,4806 2469,4882 2516,4936 2587,4965
 LefËvrestr.: Asphalt	Q0 4987,6902 4993,6812 5014,6752 5040,6706 5137,6651 5215,6643 5360,6642
@@ -13817,6 +13817,8 @@ Golliner Str.: Beton	Q1 22217,17989 22276,18107 22191,18150
 #: confirmed_by: ^^^
 Kˆlpiner Str.: Beton	Q1 22069,18401 22114,18244 22213,18193
 Dˆllner Str.: fester Sandweg mit Lˆchern	Q2 22313,18595 22071,18593
+#: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20110228.1710.333322.html (Sanierung des Radwegs)
+#: next_check: 2011-05-01
 (Radweg an der Straﬂenbahn): Beton	Q0 21871,18244 21843,18198 21804,18125 21726,17974 21698,17920 21639,17803 21576,17678 21559,17617 21555,17546 21539,17442 21510,17329 21484,17205 21484,17189 21470,17117 21453,17041 21441,16973 21417,16896
 #: corrected_by: srt (was Q3)
 (Radweg an der Straﬂenbahn): m‰ﬂiger Betonplattenweg	Q1- 21417,16896 21377,16822 21323,16716 21321,16696 21283,16619 21254,16567 21235,16531 21210,16481 21179,16455 21067,16327 21043,16299 21035,16280 20995,16237 20931,16164 20851,16037 20839,15978
