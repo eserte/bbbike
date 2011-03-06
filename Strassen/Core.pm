@@ -21,7 +21,7 @@ use BBBikeUtil;
 #require Strassen::Util; # AUTOLOAD: activate
 #require Strasse; # AUTOLOAD: activate
 #use AutoLoader 'AUTOLOAD';
-use vars qw(@datadirs $OLD_AGREP $VERBOSE $VERSION $can_strassen_storable
+use vars qw(@datadirs $OLD_AGREP $VERBOSE $STRICT $VERSION $can_strassen_storable
 	    %directive_aliases
 	   );
 
@@ -77,6 +77,7 @@ sub AUTOLOAD {
 #   PreserveComments
 #   UseLocalDirectives
 #   CustomPush (only for MapInfo)
+#   Strict
 sub new {
     my($class, $filename, %args) = @_;
     if (defined $filename) {
@@ -182,6 +183,7 @@ sub new {
 	    $self->read_data(PreserveLineInfo   => $args{PreserveLineInfo},
 			     UseLocalDirectives => $args{UseLocalDirectives},
 			     PreserveComments   => $args{PreserveComments},
+			     Strict             => $args{Strict},
 			    );
 	}
     }
@@ -843,12 +845,12 @@ sub parse {
     return [undef, [], undef] if !$_[0];
     my $tab_inx = index($_[0], "\t");
     if ($tab_inx < 0) {
-	warn "*** ERROR: Probably tab character is missing (line <$_[0]>)\n"; # XXX if $VERBOSE;
+	warn_or_die("*** ERROR: Probably tab character is missing (line <$_[0]>)\n");
 	[$_[0]];
     } else {
 	my @s = split /\s+/, substr($_[0], $tab_inx+1);
 	my $category = shift @s;
-	warn "*** ERROR: Probably wrong formatted bbd line (line <$_[0]>)\n" if !@s;
+	warn_or_die("*** ERROR: Probably wrong formatted bbd line (line <$_[0]>)\n") if !@s;
 	[substr($_[0], 0, $tab_inx), \@s, $category];
     }
 }
@@ -1512,6 +1514,16 @@ sub switch_encoding {
 	if ($value ne 'iso-8859-1') { # this is perl's default, so do not warn
 	    warn "Cannot execute encoding <$value> directive: $@";
 	}
+    }
+}
+
+sub warn_or_die {
+    my $msg = shift;
+    require Carp;
+    if ($STRICT) {
+	Carp::croak($msg);
+    } else {
+	Carp::carp($msg);
     }
 }
 

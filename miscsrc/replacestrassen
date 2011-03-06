@@ -48,6 +48,8 @@ EOF
 
 my $datafile = shift || "-";
 
+local $Strassen::STRICT = 1;
+
 my $s = Strassen->new($datafile, UseLocalDirectives => 1, PreserveLineInfo => 1, PreserveComments => 1);
 my $new_s = Strassen->new;
 

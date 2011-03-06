@@ -52,6 +52,8 @@ if ($f eq '-') {
     }
 }
 
+local $Strassen::STRICT = 1;
+
 my $s = Strassen->new($f, UseLocalDirectives => 1);
 my $new_s = Strassen->new;
 $s->init;

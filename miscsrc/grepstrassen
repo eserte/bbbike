@@ -93,6 +93,8 @@ my $datafile = shift || "-";
 my $s = Strassen->new($datafile, UseLocalDirectives => 1, PreserveLineInfo => 1);
 my $new_s = Strassen->new;
 
+local $Strassen::STRICT = 1;
+
 my(@inner_s, @outer_s);
 for my $inner (@inner) {
     my $s = Strassen->new($inner);
