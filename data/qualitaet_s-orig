@@ -619,7 +619,6 @@ Boppstr.: Kopfsteinpflaster	Q2 11560,9524 11785,9437
 Friedrich-Engels-Str.: Kopfsteinpflaster	Q2 9355,19789 9333,19853 9300,19949 9266,20048 9235,20125 9149,20336 9119,20399 9091,20425 8900,20601
 Friedrich-Engels-Str.: Kopfsteinpflaster, Radweg auf asphaltierter Nebenfahrbahn	Q0- 8900,20601 8789,20763 8764,20799 8698,20897 8610,21000 8513,21099 8400,21180 8316,21240 8277,21257
 Quickborner Str.: Kopfsteinpflaster	Q2 8170,21304 8022,21476
-# mittlerweile asphaltiert: Quickborner Str.: mäßiges bis schlechtes Kopfsteinpflaster	Q2 7072,22905 6890,23213 6839,23300 6770,23417
 #: by: Christian Lange:
 Quickborner Str.: asphaltiert	Q0 7416,22349 7072,22905 6890,23213 6839,23300 6770,23417
 Marheinekeplatz: Kopfsteinpflaster	Q2 9759,9307 9892,9286 10004,9268
@@ -2113,9 +2112,7 @@ Mauerweg Lichterfelde: sehr guter Asphalt	Q0 4038,-362 4046,-299 4034,-255 3982,
 Mauerweg Lichterfelde: Asphalt mit Fugen	Q1 4038,-362 4406,-910
 Alexanderufer: Asphalt	Q0 8321,13033 8315,13181 8314,13323
 Alexanderufer: Asphalt	Q0 8314,13323 8356,13404 8365,13431 8354,13523 8337,13541
-#: XXX Bauarbeiten, danach wahrscheinlich Q0
-#: last_checked: 2011-02-07
-Koppenstr.: Asphaltdecke fehlt, Bauarbeiten	Q2+ 12525,12151 12575,12223
+Koppenstr.: Asphalt	Q0 12525,12151 12575,12223
 Koppenstr.: Asphalt mit Schäden	Q1+ 12575,12223 12606,12471
 #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/de/bild_tvo_april_2007_2.shtml
 (Weg unterhalb der Spindlersfelder Str.): Verbundsteinpflaster	Q0- 21089,4731 21146,4229 21170,4111 21260,3848 21324,3691
@@ -4585,6 +4582,11 @@ Cotheniusstr.: Asphalt	Q0 13228,13615 13430,13733
 ######################################################################
 #: by: anonymous vvv
 # 
+Lubminer Str.: Beton	Q0 22527,12683 22415,12681 22407,12901
+#: note: "q3, Schule" ignoriert
+Altenhofer Weg: guter Asphalt	Q0 2837,20015 2881,20086 2928,20155 2962,20209
+Am Landschaftspark Gatow: Asphalt	Q0 -7966,6764 -8023,6842 -8032,6852 -8080,6933 -8134,7027 -8176,7103 -8207,7156 -8283,7325 -8335,7441 -8344,7477 -8353,7599 -8405,7751
+Straße 39 (Blankenburg): Kopfsteinpflaster	Q2 15114,21034 15138,21002 15052,20725 15018,20624
 Borkheider Str.: mäßiger Beton	Q1- 21820,17833 21769,17740 21663,17795 21748,17963 21796,18054 21838,18149 21854,18192
 Eigerstr.: guter Beton	Q0 12825,17870 12882,17895 12902,17933 12945,17958 13036,18010 13043,18126 13042,18152
 Cedernstr.: mäßiger Beton	Q1- 23878,4406 23988,4482 24078,4595
@@ -12656,6 +12658,14 @@ Büchenbronner Steig: schlechtes Kopfsteinpflaster	Q3 5291,23072 5357,23004
 #: by: ^^^
 #: by: Andre Habermehl
 Rudolf-Pechel-Str.: mäßiges Verbundsteinpflaster	Q2+ 9991,-413 9913,-432 9920,-513 10018,-494
+#: by: Lenki:
+#: note: "teilweise Strasse, teilweise ca. 2m breiter Fußweg"
+Biedermannweg: mäßiger Asphalt	Q1- -854,12963 -742,12924
+#: by: Tina (...164):
+Buolstr.: guter Asphalt	Q0 559,15342 429,15284 283,15237
+#: by: Marian Nitschke:
+#: corrected_by: srt/policy (Q3 -> Q2-)
+Geißblattpfad: schlechte unbefestigte Straße	Q2- -7940,14690 -7842,14683 -7750,14667 -7654,14657 -7549,14645
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206

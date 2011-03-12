@@ -1318,8 +1318,8 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        {
          'source_id' => 'IM_015434',
-         'until' => undef,
-         'text' => 'Erkstr. (Neukölln): Baustelle, Fahrtrichtung Richtung Sonnenallee gesperrt',
+         'until' => 1302861600,
+         'text' => 'Erkstr. (Neukölln): Baustelle, Fahrtrichtung Richtung Sonnenallee gesperrt (bis Mitte 4/2011)',
          'from' => 1269772860,
          'id' => 2033,
          'data' => '#: last_checked: 2011-02-25
@@ -1586,7 +1586,7 @@ userdel	q4::inwork; 12598,8390 12771,8439
        },
        {
          'until' => 1356994800,
-         'text' => 'Braunschweiger Str./Karl-Marx-Str.: Abbiegen nicht möglich (bzw. nur auf dem Gehweg) bis 31.12.2012 16:00 Uhr',
+         'text' => 'Braunschweiger Str./Karl-Marx-Str.: Abbiegen nicht möglich (bzw. nur auf dem Gehweg) bis 31.12.2012',
          'from' => 1284745737,
          'id' => 2134,
          'data' => 'userdel	3 13150,7254 13047,7234 13058,7165
@@ -1719,20 +1719,11 @@ userdel	3 13150,7254 13047,7234 13034,7319
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_016910',
-         'until' => 1299918600,
-         'text' => 'Glinkastr. (Mitte): Baustelle, Fahrtrichtung gesperrt (bis Mitte 03/2011) Richtung Leipziger Str. zwischen Behrenstr. und Französische Str., 08.02.2011 09:30 Uhr bis 12.03.2011 09:30 Uhr ',
-         'from' => 1297067400,
-         'id' => 2179,
-         'data' => 'userdel	q4::inwork; 9164,12172 9183,12076
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'IM_016911',
-         'until' => 1299945600,
-         'text' => 'Behrenstr. (Mitte): Baustelle, Fahrtrichtung gesperrt (die Behrenstr. ist Richtung Glinkastr von Friedrichstr. kommend eine Sackgasse) (bis Mitte 03/2011) Richtung Friedrichstr. im Kreuzungsbereich Glinkastr., 08.02.2011 09:30 Uhr bis 12.03.2011 17:00 Uhr ',
+         'until' => 1325347200,
+         'text' => 'Behrenstr. (Mitte): Baustelle, Fahrtrichtung gesperrt (die Behrenstr. ist Richtung Glinkastr von Friedrichstr. kommend eine Sackgasse) Richtung Friedrichstr. im Kreuzungsbereich Glinkastr. (bis Ende 2011)',
          'from' => 1297067400,
          'id' => 2180,
          'data' => 'userdel	q4::inwork 9373,12197 9164,12172
@@ -1769,6 +1760,86 @@ userdel	q4::inwork 425,8766 490,8716
          'id' => 2183,
          'data' => '#: by: http://www.potsdam.de/cms/beitrag/10078717/1191938/
 userdel	q4::inwork; -12545,-698 -12262,-612
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'LS/O-SG33-F/10/170',
+         'until' => 1305583200,
+         'text' => 'Bad Freienwalde (Oder): B167: Neubau Durchlass Brücke über die Feldbahn bei Bad Freienwalde Höhe Recyclingzentrum) Vollsperrung ab 14.03.11, 08:00 Uhr bis 16.05.2011 ',
+         'from' => 1299999600,
+         'id' => 2184,
+         'data' => 'userdel	2::inwork 50799,43130 50169,43407
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'LS/O-SG33-F/11/022',
+         'until' => 1343685600,
+         'text' => 'Gusow-Platkow: B167: Grundhafter Ausbau einschließlich RW - Kanal Erneuerung Durchlass und Brücke Ortslage Gusow halbseitige Sperrungen durch Suchschachtungen geplante Vollsperrung ab 21.03.11, 21.02.2011 bis 30.07.2012 ',
+         'from' => 1300575600,
+         'id' => 2185,
+         'data' => 'userdel	2::inwork 74810,19707 74512,19946
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => '106401892',
+         'until' => 1304200800,
+         'text' => 'Rehfelde: L233, L232: Tief- und Gleisbauarbeiten OL Rehfelde, Bereich Bahnübergang Parkstraße/ Bahnhofstraße/Friedrich-Engels-Str., 09.09.2010 bis 30.04.2011 ',
+         'from' => 1299925522,
+         'id' => 2186,
+         'data' => 'userdel	q4::inwork 45732,14245 45537,13866
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'INKO_105791',
+         'until' => 1300229999,
+         'text' => 'Konrad-Wolf-Str. (Hohenschönhausen) Richtung Suermondtstr. zwischen Weißenseer Weg und Altenhofer Str. Baustelle, Fahrtrichtung gesperrt (bis Mitte 03/2011) ',
+         'from' => 1299925872,
+         'id' => 2187,
+         'data' => 'userdel	q4::inwork; 15052,14585 15272,14691
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_017007',
+         'until' => 1300402800,
+         'text' => 'Kopernikusstr. (Friedrichshain): Baustelle, Fahrtrichtung gesperrt Richtung Boxhagener Str. zwischen Libauer Str. und Simon-Dach-Str., 11.03.2011 08:01 Uhr bis 17.03.2011 ',
+         'from' => 1299740460,
+         'id' => 2188,
+         'data' => 'userdel	q4::inwork; 13895,11663 13954,11647
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => '116100196',
+         'until' => 1300467600,
+         'text' => 'Königs Wusterhausen: B179: Gleisbauarbeiten BÜ Zeesen, 14.03.2011 06:00 Uhr bis 18.03.2011 18:00 Uhr ',
+         'from' => 1299992400,
+         'id' => 2189,
+         'data' => 'userdel	2::inwork 26758,-15727 26650,-15695
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_017000',
+         'until' => 1305482400,
+         'text' => 'Stargarder Str. (Prenzlauer Berg): Baustelle, Straße vollständig gesperrt in beiden Richtungen zwischen Dunckerstr. und Senefelder Str., 09.03.2011 07:00 Uhr bis 15.05.2011 20:00 Uhr ',
+         'from' => 1299564000,
+         'id' => 2190,
+         'data' => 'userdel	q4::inwork 11603,15455 11688,15398
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_016995',
+         'until' => 1300734000,
+         'text' => 'Straße Prenzlauer Berg (Prenzlauer Berg): Tiefbauarbeiten, Straße vollständig gesperrt in beiden Richtungen zwischen Prenzlauer Allee und Greifswalder Str., 07.03.2011 13:15 Uhr bis 21.03.2011 20:00 Uhr ',
+         'from' => 1299413700,
+         'id' => 2191,
+         'data' => 'userdel	q4::inwork 11545,13690 11257,13647
 ',
          'type' => 'handicap'
        }

@@ -17288,8 +17288,8 @@ userdel	2::inwork 50359,-20087 49368,-19096
 EOF
      },
      { from  => 1269772860, # 2010-03-28 12:41
-       until => undef, # XXX Time::Local::timelocal(reverse(2010-1900,12-1,23,16,0,0)), # 1291734000, # 2010-12-07 16:00
-       text  => 'Erkstr. (Neukölln): Baustelle, Fahrtrichtung Richtung Sonnenallee gesperrt',
+       until => Time::Local::timelocal(reverse(2011-1900,4-1,15,12,0,0)), # 1291734000, # 2010-12-07 16:00
+       text  => 'Erkstr. (Neukölln): Baustelle, Fahrtrichtung Richtung Sonnenallee gesperrt (bis Mitte 4/2011)',
        type  => 'handicap',
        source_id => 'IM_015434',
        data  => <<EOF,
@@ -18301,7 +18301,7 @@ EOF
      },
      { from  => 1284745737, # 2010-09-17 19:48
        until => 1356994800, # 2013-01-01 00:00
-       text  => 'Braunschweiger Str./Karl-Marx-Str.: Abbiegen nicht möglich (bzw. nur auf dem Gehweg) bis 31.12.2012 16:00 Uhr',
+       text  => 'Braunschweiger Str./Karl-Marx-Str.: Abbiegen nicht möglich (bzw. nur auf dem Gehweg) bis 31.12.2012',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	3 13150,7254 13047,7234 13058,7165
@@ -18714,8 +18714,8 @@ userdel	q4::inwork; 9164,12172 9183,12076
 EOF
      },
      { from  => 1297067400, # 2011-02-07 09:30
-       until => 1299945600, # 2011-03-12 17:00
-       text  => 'Behrenstr. (Mitte): Baustelle, Fahrtrichtung gesperrt (die Behrenstr. ist Richtung Glinkastr von Friedrichstr. kommend eine Sackgasse) (bis Mitte 03/2011) Richtung Friedrichstr. im Kreuzungsbereich Glinkastr., 08.02.2011 09:30 Uhr bis 12.03.2011 17:00 Uhr ',
+       until => 1325347200, # 2011-12-31 17:00
+       text  => 'Behrenstr. (Mitte): Baustelle, Fahrtrichtung gesperrt (die Behrenstr. ist Richtung Glinkastr von Friedrichstr. kommend eine Sackgasse) Richtung Friedrichstr. im Kreuzungsbereich Glinkastr. (bis Ende 2011)',
        type  => 'handicap',
        source_id => 'IM_016911',
        data  => <<EOF,
@@ -18750,6 +18750,78 @@ EOF
        data  => <<EOF,
 #: by: http://www.potsdam.de/cms/beitrag/10078717/1191938/
 userdel	q4::inwork; -12545,-698 -12262,-612
+EOF
+     },
+     { from  => 1299999600, # 2011-03-13 08:00
+       until => 1305583200, # 2011-05-17 00:00
+       text  => 'Bad Freienwalde (Oder): B167: Neubau Durchlass Brücke über die Feldbahn bei Bad Freienwalde Höhe Recyclingzentrum) Vollsperrung ab 14.03.11, 08:00 Uhr bis 16.05.2011 ',
+       type  => 'gesperrt',
+       source_id => 'LS/O-SG33-F/10/170',
+       data  => <<EOF,
+userdel	2::inwork 50799,43130 50169,43407
+EOF
+     },
+     { from  => 1300575600, # 2011-03-20 00:00
+       until => 1343685600, # 2012-07-31 00:00
+       text  => 'Gusow-Platkow: B167: Grundhafter Ausbau einschließlich RW - Kanal Erneuerung Durchlass und Brücke Ortslage Gusow halbseitige Sperrungen durch Suchschachtungen geplante Vollsperrung ab 21.03.11, 21.02.2011 bis 30.07.2012 ',
+       type  => 'gesperrt',
+       source_id => 'LS/O-SG33-F/11/022',
+       data  => <<EOF,
+userdel	2::inwork 74810,19707 74512,19946
+EOF
+     },
+     { from  => 1299925522, # 2011-03-12 11:25
+       until => 1304200800, # 2011-05-01 00:00
+       text  => 'Rehfelde: L233, L232: Tief- und Gleisbauarbeiten OL Rehfelde, Bereich Bahnübergang Parkstraße/ Bahnhofstraße/Friedrich-Engels-Str., 09.09.2010 bis 30.04.2011 ',
+       type  => 'handicap',
+       source_id => '106401892',
+       data  => <<EOF,
+userdel	q4::inwork 45732,14245 45537,13866
+EOF
+     },
+     { from  => 1299925872, # 2011-03-12 11:31
+       until => 1300229999, # 2011-03-15 23:59
+       text  => 'Konrad-Wolf-Str. (Hohenschönhausen) Richtung Suermondtstr. zwischen Weißenseer Weg und Altenhofer Str. Baustelle, Fahrtrichtung gesperrt (bis Mitte 03/2011) ',
+       type  => 'handicap',
+       source_id => 'INKO_105791',
+       data  => <<EOF,
+userdel	q4::inwork; 15052,14585 15272,14691
+EOF
+     },
+     { from  => 1299740460, # 2011-03-10 08:01
+       until => 1300402800, # 2011-03-18 00:00
+       text  => 'Kopernikusstr. (Friedrichshain): Baustelle, Fahrtrichtung gesperrt Richtung Boxhagener Str. zwischen Libauer Str. und Simon-Dach-Str., 11.03.2011 08:01 Uhr bis 17.03.2011 ',
+       type  => 'handicap',
+       source_id => 'IM_017007',
+       data  => <<EOF,
+userdel	q4::inwork; 13895,11663 13954,11647
+EOF
+     },
+     { from  => 1299992400, # 2011-03-13 06:00
+       until => 1300467600, # 2011-03-18 18:00
+       text  => 'Königs Wusterhausen: B179: Gleisbauarbeiten BÜ Zeesen, 14.03.2011 06:00 Uhr bis 18.03.2011 18:00 Uhr ',
+       type  => 'gesperrt',
+       source_id => '116100196',
+       data  => <<EOF,
+userdel	2::inwork 26758,-15727 26650,-15695
+EOF
+     },
+     { from  => 1299564000, # 2011-03-08 07:00
+       until => 1305482400, # 2011-05-15 20:00
+       text  => 'Stargarder Str. (Prenzlauer Berg): Baustelle, Straße vollständig gesperrt in beiden Richtungen zwischen Dunckerstr. und Senefelder Str., 09.03.2011 07:00 Uhr bis 15.05.2011 20:00 Uhr ',
+       type  => 'handicap',
+       source_id => 'IM_017000',
+       data  => <<EOF,
+userdel	q4::inwork 11603,15455 11688,15398
+EOF
+     },
+     { from  => 1299413700, # 2011-03-06 13:15
+       until => 1300734000, # 2011-03-21 20:00
+       text  => 'Straße Prenzlauer Berg (Prenzlauer Berg): Tiefbauarbeiten, Straße vollständig gesperrt in beiden Richtungen zwischen Prenzlauer Allee und Greifswalder Str., 07.03.2011 13:15 Uhr bis 21.03.2011 20:00 Uhr ',
+       type  => 'handicap',
+       source_id => 'IM_016995',
+       data  => <<EOF,
+userdel	q4::inwork 11545,13690 11257,13647
 EOF
      },
     );

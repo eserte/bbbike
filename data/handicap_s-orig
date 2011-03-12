@@ -33,8 +33,7 @@ Varian-Fry-Str.: Baustelle, Fahrbahn gesperrt	q4::inwork 8389,11378 8374,11479
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 9475,12365 9462,12481 9454,12558
 #: last_checked: 2010-11-28
 Universitätsstr.: wegen Bauarbeiten Richtung Unter den Linden gesperrt	q4::inwork; 9580,12581 9601,12380
-#: last_checked: 2010-11-28
-Planckstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 9434,12669 9385,12809 9383,12915
+#XXX del --- #: last_checked: 2010-11-28 --- Planckstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 9434,12669 9385,12809 9383,12915
 #: next_check: 2011-06-01
 Matkowskystr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 14530,11137 14509,11060
 #: last_checked: 2011-03-03
@@ -2091,3 +2090,5 @@ Zerndorfer Weg: enge Straße	q1 3044,25558 3046,25642 3070,25725
 Cedernstr.: enge Straße	q1 23878,4406 23988,4482 24078,4595
 #: by: Andre Habermehl
 Rudolf-Pechel-Str.: enge Straße	q1 9991,-413 9913,-432 9920,-513 10018,-494
+#: by: Tina (...164):
+Buolstr.: enge Straße	q1 559,15342 429,15284 283,15237
