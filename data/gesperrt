@@ -243,7 +243,6 @@ Groﬂe Pr‰sidentenstr.	1 10097,12997 10220,13098
 Naumannstr.	1 7709,8777 7707,8915
 Gritznerstr.	1 4507,6320 4555,6403
 Duisburger Str.	1 4183,10144 3874,10153
-Majakowskiring	1 10373,18889 10354,18814 10203,18762 10041,18697 9987,18757 10055,18831 10162,18867 10184,18875 10307,18915 10373,18889
 Straﬂe 462	1 4914,17399 5068,17384
 Havensteinstr.	1 6293,2583 6463,2724 6593,2831
 Worpsweder Str.	1 6191,4923 6203,5138
@@ -388,7 +387,7 @@ B‰nschstr.	1 14325,12648 14596,12573
 B‰nschstr.	1 15009,12441 14798,12502 14681,12534 14661,12523 14588,12542
 B‰nschstr.	1 14599,12584 14672,12565 14686,12549 14801,12517 14999,12462
 Rossitter Platz - Machandelweg: verschlossene T¸ren	2 -107,12220 -76,12236 -45,12243
-Stockholmer Str.	1 8973,17301 8950,17219 8866,17075
+Stockholmer Str.	1 8950,17219 8866,17075
 Schulenburgstr. (Reinickendorf)	1 5345,18675 5547,18665
 Becherweg	1 6227,18299 6232,18435 6226,18590 6217,18619
 Hirschhorner Weg	1 -760,4542 -753,4578 -741,4660 -793,4754 -820,4772
@@ -445,7 +444,6 @@ Murtzaner Ring	1 19818,14064 19770,14060 19731,14061 19692,14082 19634,14171 195
 Murtzaner Ring	1 19818,14064 19921,14064 19951,14083 20051,14191 20061,14220 20056,14373 20059,14441
 Rosenstr.	1 22284,4653 22212,4655 22138,4661
 Laurenzstr.	1 22243,4710 22175,4730
-Gotenburger Str.	1 9000,16803 8844,16863
 Werrastr.: Firmengel‰nde	2 13802,8195 13697,8279
 Neuendorfer Str.	1 -3295,14777 -3228,14794
 Neuendorfer Str.	1 -3228,14794 -3251,14741
@@ -591,6 +589,11 @@ Saaleckplatz	1 5178,1123 5190,1114 5218,1067
 Fuﬂg‰ngertunnels Sybel-Waitz-Str.: provisorische Schlieﬂung	2 3712,10566 3731,10563 3781,10569 3800,10580
 Meyerinckplatz	1 4030,10575 4007,10559 3978,10582 3997,10607
 Beyschlagstr.	1 18,22563 5,22384 200,22251
+Upsalaer Str.	1 11369,16744 11364,16887
+Fritz-Erpenbeck-Ring	1 9717,19692 9697,19758 9708,19779 9785,19807 9864,19793
+Am Konsulat: Privatstraﬂe, mit Toren versperrt	2 9962,19757 9990,19644 9916,19625
+Pastor-Niemˆller-Platz	1 9859,19283 9811,19302 9789,19329 9791,19363 9826,19382 9870,19360
+Pasewalker Str. (Wedding)	1 7891,15417 7877,15581
 Am Neuen Garten	1 -12166,1384 -12212,1201 -12276,831 -12302,718
 Am Neuen Garten	1 -12332,585 -12582,127
 Hochstraﬂe	3nocross::ignrte -11399,-1339 -11461,-1424 -11540,-1543
@@ -983,12 +986,12 @@ Straﬂenbahntrasse	3nocross::ignrte 11149,13442 11092,13366 11080,13350 11027,132
 Karl-Liebknecht-Str. -> Wadzeckstr.: Straﬂenbahntrasse	3::igndisp 11149,13442 11092,13366 11146,13328
 Wadzeckstr. -> Karl-Liebknecht-Str.: Straﬂenbahntrasse	3::igndisp 11146,13328 11092,13366 11080,13350
 Gitter auf Mittelstreifen	3nocross::ignrte 8659,16327 8543,16364 8516,16393 8486,16425
-Gropiusstr. -> Badstr.: Gitter auf Mittelstreifen	3::igndisp 8389,16214 8543,16364 8516,16393
-Gropiusstr. -> Travem¸nder Str.: Gitter auf Mittelstreifen	3::igndisp 8389,16214 8543,16364 8592,16406
-Badstr. -> Gropiusstr.: Gitter auf Mittelstreifen	3::igndisp 8659,16327 8543,16364 8389,16214
+Badstr. -> Gropiusstr.: Gitter auf Mittelstreifen	3::igndisp 8659,16327 8543,16364 8534,16355
 Badstr. -> Travem¸nder Str.: Gitter auf Mittelstreifen	3::igndisp 8516,16393 8543,16364 8592,16406
-Travem¸nder Str. -> Gropiusstr.: Gitter auf Mittelstreifen	3::igndisp 8592,16406 8543,16364 8389,16214
 Travem¸nder Str. -> Badstr.: Gitter auf Mittelstreifen	3::igndisp 8592,16406 8543,16364 8659,16327
+Travem¸nder Str. -> Gropiusstr.: Gitter auf Mittelstreifen	3::igndisp 8592,16406 8543,16364 8534,16355
+Gropiusstr. -> Badstr.: Gitter auf Mittelstreifen	3::igndisp 8534,16355 8543,16364 8516,16393
+Gropiusstr. -> Travem¸nder Str.: Gitter auf Mittelstreifen	3::igndisp 8534,16355 8543,16364 8592,16406
 Straﬂenbahntrasse	3nocross::ignrte 24120,14526 24097,14575 24020,14737
 Heidenauer Str. -> Riesaer Str.: Straﬂenbahntrasse	3::igndisp 24146,14594 24097,14575 24120,14526
 Riesaer Str. -> Heidenauer Str.: Straﬂenbahntrasse	3::igndisp 24020,14737 24097,14575 24146,14594
@@ -1243,12 +1246,17 @@ Bornholmer Str. -> Sonderburger Str.: Straﬂenbahn auf Mittelstreifen	3::igndisp 
 Straﬂenbahntrasse	3nocross::ignrte 7687,16770 7763,16779 8144,16750
 Osloer Str. -> Louise-Schroeder-Pl.: Straﬂenbahntrasse	3::igndisp 7687,16770 7763,16779 7745,16889
 Louise-Schroeder-Pl. -> Osloer Str.: Straﬂenbahntrasse	3::igndisp 7745,16889 7763,16779 8144,16750
-Straﬂenbahntrasse	3nocross::ignrte 7403,16575 7456,16620 7606,16746
+Straﬂenbahntrasse	3nocross::ignrte 7403,16575 7417,16587 7456,16620 7606,16746
+Weg am Kombibad Wedding -> Seestr.: Straﬂenbahntrasse	3::igndisp 7298,16725 7417,16587 7456,16620
+Seestr. -> Weg am Kombibad Wedding: Straﬂenbahntrasse	3::igndisp 7403,16575 7417,16587 7298,16725
 Seestr. -> Iranische Str.: Straﬂenbahntrasse	3::igndisp 7606,16746 7456,16620 7707,16543
-Iranische Str. -> Seestr.: Straﬂenbahntrasse	3::igndisp 7707,16543 7456,16620 7403,16575
+Iranische Str. -> Seestr.: Straﬂenbahntrasse	3::igndisp 7707,16543 7456,16620 7417,16587
 Straﬂenbahntrasse	3nocross::ignrte 7231,16418 7051,16264 6965,16190
 Seestr. -> Malplaquetstr.: Straﬂenbahntrasse	3::igndisp 7231,16418 7051,16264 7162,16163
 Malplaquetstr. -> Seestr.: Straﬂenbahntrasse	3::igndisp 7162,16163 7051,16264 6965,16190
+Straﬂenbahntrasse	3nocross::ignrte 7231,16418 7295,16477 7388,16561
+Seestr. -> Syrische Str.: Straﬂenbahntrasse	3::igndisp 7231,16418 7295,16477 7263,16508
+Syrische Str. -> Seestr.: Straﬂenbahntrasse	3::igndisp 7263,16508 7295,16477 7388,16561
 Mittelstreifen	3nocross::ignrte 6528,15000 6561,15041 6630,15100
 Augustenburger Pl. -> Fˆhrer Str.: Mittelstreifen	3::igndisp 6537,15156 6561,15041 6630,15100
 Fˆhrer Str. -> Augustenburger Pl.: Mittelstreifen	3::igndisp 6528,15000 6561,15041 6537,15156
@@ -1850,6 +1858,8 @@ Enges Dr‰ngelgitter	BNP:5:-37 2375,21494
 Dr‰ngelgitter	BNP:5:-153 8776,16718
 Schranke	BNP:5:-147 -8211,5490
 Kurzschranke	BNP:5:-45 6739,15307
+Schranke	BNP:3:-132 6749,15339
+Schranke	BNP:3:-130 6869,15441
 Dr‰ngelgitter	BNP:5:3 24759,11666
 Dr‰ngelgitter	BNP:5:-17 24815,11329
 Dr‰ngelgitter	BNP:5:-136 7935,4466
@@ -1919,6 +1929,7 @@ Schranke (lichte Breite ca. 120cm)	BNP:2:-50:trailer=8 14448,4501
 Schranke (lichte Breite ca. 120cm)	BNP:2:-53:trailer=8 14709,4307
 Schranke (lichte Breite ca. 100cm)	BNP:3:-45:trailer=10 15179,3901
 Tor	BNP:5:-57 26888,13976
+Boyenweg - Uferweg: wegen Bauarbeiten gesperrt	2:inwork 7938,14426 7886,14518
 Treitschkestr.: Bauarbeiten am Kaufhaus, bis 2012	2:inwork 5219,6215 5125,6262 4971,6345
 Caroline-Michaelis-Str.: Bauarbeiten	2:inwork 9061,14050 9125,13973
 Ella-Trebe-Str.: Einbahnstraﬂe wegen Bauarbeiten	1s:inwork 7937,13109 7941,13014 7948,12918
@@ -2490,3 +2501,4 @@ Alt-Friedrichsfelde, linker Gehweg	1::igndisp 18624,11712 18626,11742
 Landsberger Allee, linker Gehweg	1::igndisp 15430,14272 15256,14237
 Sonnenallee, linker Gehweg	1::igndisp 13457,8069 13474,8060
 Urbanstr.	1::igndisp 11861,9183 11888,9189
+Badstr., linker Gehweg	1::igndisp 8486,16425 8486,16412 8534,16355

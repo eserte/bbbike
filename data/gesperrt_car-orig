@@ -231,7 +231,7 @@ Edison-/Siemensstr.	3 17992,6436 17962,6674 17860,6644 17766,6616
 Edisonstr.	1 17962,6674 17992,6436
 Brückenstr./Edisonstr.	1 17992,6436 17952,6246 17930,6175 17900,6072
 Müggelheimer Str.	3nocross 22674,4309 22556,4386 22451,4441 22419,4457 22383,4470
-Gropiusstr.	1 8543,16364 8389,16214
+Gropiusstr.	1 8543,16364 8534,16355 8389,16214
 Osloer Str.	3nocross 8503,16716 8721,16689 8759,16684 8939,16668
 Müllerstr./Lindower Str.	3nocross 7929,15006 7819,15103 7754,15160 7611,15286
 Adolfstr.	1 7796,15590 7817,15418
@@ -344,7 +344,7 @@ Jägerallee/Hegelallee: Durchfahrt verboten	3 -13182,-515 -13221,-718 -13231,-763
 Jägerallee/Hegelallee: Durchfahrt verboten	3 -13236,-797 -13231,-763 -13221,-718 -13182,-515
 Osloer Str.: Straßenbahntrasse	3nocross 9455,16609 9331,16624 9210,16638 8939,16668
 Osloer Str.: Straßenbahntrasse	3nocross 8260,16740 8196,16746 8144,16750 7763,16779
-Seestr.: Straßenbahntrasse	3nocross 7606,16746 7456,16620 7403,16575 7388,16561 7295,16477 7231,16418
+Seestr.: Straßenbahntrasse	3nocross 7606,16746 7456,16620 7417,16587 7403,16575 7388,16561 7295,16477 7231,16418
 Bismarckstr.: Mittelstreifen	3nocross 3690,11629 3844,11649 3898,11655
 Lenbachstr.: Einbahnstraße (genau genommen nur das östlichste Stück)	1 5888,6520 6070,6570
 Augustenburger Platz: nur für Taxen und Anlieger	2:Anlieger 6561,15041 6537,15156 6562,15177
@@ -362,8 +362,7 @@ Zimbelstr.: Poller	3 11879,20466 11924,20399 11959,20365
 Knollstr.: Poller	3 17609,164 17558,126 17488,80 17429,42 17362,-1 17308,-36 17242,-80
 Knollstr.: Poller	3 17242,-80 17308,-36 17362,-1 17429,42 17488,80 17558,126 17609,164
 #: note: ^^^
-#: note: Luftbild: 
-Neumannstr.: Mittelstreifen	3nocross 11549,17154 11531,17250 11519,17316
+Neumannstr.: Mittelstreifen	3nocross 11549,17154 11531,17250 11519,17316 11492,17460
 #: note: Luftbild: vvv
 Berliner Allee: Straßenbahn	3nocross 14045,16120 14248,16202 14371,16252
 Berliner Allee: Straßenbahn	3nocross 13512,15909 13623,15954 13630,15956 13737,15994
@@ -438,7 +437,7 @@ Berliner Str./Masurenstr.: Straßenbahntrasse	3nocross 10892,17491 10894,17470 10
 #: note: Luftbild
 Müllerstr.: Mittelstreifen	3nocross 6608,16180 6450,16325 6444,16331
 #: note: Luftbild
-Reinickendorfer Str.: Mittelstreifen	3nocross 7960,15801 7974,15634 7979,15569
+Reinickendorfer Str.: Mittelstreifen	3nocross 7948,15802 7962,15633 7966,15571
 #: by: Rainer Ludwig:
 Zeisigweg	1 5178,1499 5153,1534 5148,1559 5145,1611 5132,1672 5087,1807
 Nollendorfplatz	1 7033,10328 6971,10346
@@ -677,3 +676,15 @@ Hentigstr.	1 18514,8773 18548,8942
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110309.1150.334660.html (südlicher Abschnitt confirmed)
 Hentigstr.	1 18548,8942 18586,9172 18621,9404
 Oberwallstr.	1 9852,12409 9869,12297 9875,12257 9890,12161
+Prenzlauer Promenade	3nocross 11854,17656 11843,17737 11879,18057
+#: note: keine legale Überquerungsmöglichkeit für Radfahrer, aber dennoch möglich
+Prenzlauer Promenade	3nocross 11879,18057 11892,18146 11906,18246 11914,18303 11950,18529
+Pasewalker Str.	3nocross 11984,20246 11963,20136 11931,19965
+Neuer Steg	3 * 8277,19210 8209,19107
+Neuer Steg	3 8209,19107 8277,19210 *
+Straße 201	1 9366,18669 9532,18819
+Majakowskiring	1 10373,18889 10354,18814 10203,18762 10041,18697 9985,18735 10003,18798 10055,18831 10162,18867 10184,18875 10307,18915 10373,18889
+Killisch-von-Horn-Weg: Poller	3 9730,17927 9707,17941 9590,18082
+Killisch-von-Horn-Weg: Poller	3 9590,18082 9707,17941 9730,17927
+Frauenfelder Weg - Markstr.	3 7441,17009 7647,17037 7644,17054
+Kongostr.	1 6349,16213 6450,16325

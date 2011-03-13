@@ -270,7 +270,6 @@ Große Präsidentenstr.	1 10097,12997 10220,13098
 Naumannstr.	1 7709,8777 7707,8915
 Gritznerstr.	1 4507,6320 4555,6403
 Duisburger Str.	1 4183,10144 3874,10153
-Majakowskiring	1 10373,18889 10354,18814 10203,18762 10041,18697 9987,18757 10055,18831 10162,18867 10184,18875 10307,18915 10373,18889
 Straße 462	1 4914,17399 5068,17384
 Havensteinstr.	1 6293,2583 6463,2724 6593,2831
 Worpsweder Str.	1 6191,4923 6203,5138
@@ -353,7 +352,7 @@ Ringbahnstr.	1 12934,6967 13081,7014
 #: by: Robert J. vvv
 #: corrected_by: Michael Kiekebusch (Radfahren auf breiten Gehweg möglich)
 Stiftsweg	1s:q3 11025,18531 11268,18851
-#: XXX eventuell kann man hier auch entgegengesetzt der Richtung auf dem Gehweg fahren, auf Antwort von Michael warten:
+#: note: zur Not könnte man entgegengesetzt auf dem Gehweg fahren, oder sogar auf dem für die Straßenbahn reservierten Fahrbahnteil
 Bleicheroder Str.	1 11268,18851 11439,18890 11526,18929 11620,18971 11725,19007 11805,19071
 #: by: ^^^
 Renée-Sintenis-Platz	1 5642,7255 5664,7244 5675,7224 5661,7202 5641,7189 5621,7204 5614,7223 5624,7244 5642,7255
@@ -460,7 +459,7 @@ Bänschstr.	1 15009,12441 14798,12502 14681,12534 14661,12523 14588,12542
 Bänschstr.	1 14599,12584 14672,12565 14686,12549 14801,12517 14999,12462
 Rossitter Platz - Machandelweg: verschlossene Türen	2 -107,12220 -76,12236 -45,12243
 #: by: Robert (no mail):
-Stockholmer Str.	1 8973,17301 8950,17219 8866,17075
+Stockholmer Str.	1 8950,17219 8866,17075
 #: by: Arlt:
 Schulenburgstr. (Reinickendorf)	1 5345,18675 5547,18665
 #: by: müller-list:
@@ -478,8 +477,6 @@ Kreutzerweg	1 4834,4102 4848,4069 4836,4041 4629,3916
 Hornblendeweg	1 10440,1283 10415,1323 10402,1362 10425,1400 10510,1441 10594,1468 10638,1442 10659,1370
 #: by: Lutz Moser:
 Sibeliusweg	1 -6811,4893 -6787,5076 -6762,5133 -6747,5169
-#: add_fragezeichen: Gilt die Einbahnstraßenregelung auch für Radfahrer oder nur für Autofahrer?
-#: XXX: GunBeyer meint "ja", hmmm...
 Zingster Str. (Gesundbrunnen)	1 9276,16032 9265,16109 9277,16154 9307,16190
 #: add_fragezeichen: Gilt die Einbahnstraßenregelung auch für Radfahrer oder nur für Autofahrer?
 Neufahrwasserweg	1 20390,15307 20550,15551
@@ -514,6 +511,7 @@ Straße zum FEZ	1 20716,6029 20593,6082 20428,6157 20453,6211 20623,6136 20708,60
 #: by: Butch Coolidge:
 Paul-Francke-Str.	1 9916,18610 9994,18595 10013,18545 10006,18502 9901,18522
 #: by: Theo Schallon:
+#: confirmed_by: srt
 Zellerfelder Str.	1 11526,18929 11468,19106
 Storkower - Einsteinstr.	1 13110,14879 13143,14935 13185,14912 13151,14855
 #: by: Ilka (64)
@@ -556,7 +554,7 @@ Murtzaner Ring	1 19818,14064 19770,14060 19731,14061 19692,14082 19634,14171 195
 Murtzaner Ring	1 19818,14064 19921,14064 19951,14083 20051,14191 20061,14220 20056,14373 20059,14441
 Rosenstr.	1 22284,4653 22212,4655 22138,4661
 Laurenzstr.	1 22243,4710 22175,4730
-Gotenburger Str.	1 9000,16803 8844,16863
+#XXX del --- Gotenburger Str.	1 9000,16803 8844,16863
 Werrastr.: Firmengelände	2 13802,8195 13697,8279
 Neuendorfer Str.	1 -3295,14777 -3228,14794
 Neuendorfer Str.	1 -3228,14794 -3251,14741
@@ -771,6 +769,12 @@ Meyerinckplatz	1 4030,10575 4007,10559 3978,10582 3997,10607
 #: by: osm
 #: confirmed_by: Wilfried Spang:
 Beyschlagstr.	1 18,22563 5,22384 200,22251
+Upsalaer Str.	1 11369,16744 11364,16887
+Fritz-Erpenbeck-Ring	1 9717,19692 9697,19758 9708,19779 9785,19807 9864,19793
+#: note: Außerdem (für die Anwohner) eine Einbahnstraße, offen von Waldstr. nach Kuckhoffstr.
+Am Konsulat: Privatstraße, mit Toren versperrt	2 9962,19757 9990,19644 9916,19625
+Pastor-Niemöller-Platz	1 9859,19283 9811,19302 9789,19329 9791,19363 9826,19382 9870,19360
+Pasewalker Str. (Wedding)	1 7891,15417 7877,15581
 ######################################################################
 #
 # Potsdam
@@ -1105,8 +1109,9 @@ Klingelhöferstr: unbequem passierbarer Mittelstreifen	3nocross 6825,11486 6851,1
 Bornholmer Str.: Straßenbahn auf Mittelstreifen	3nocross 10197,16528 9998,16547 9883,16557 9816,16565
 Bornholmer Str.: Straßenbahn auf Mittelstreifen	3nocross 9514,16603 9617,16590 9781,16569 9816,16565
 Osloer Str.: Straßenbahntrasse	3nocross 7687,16770 7763,16779 8144,16750
-Seestr.: Straßenbahntrasse	3nocross 7403,16575 7456,16620 7606,16746
+Seestr.: Straßenbahntrasse	3nocross 7403,16575 7417,16587 7456,16620 7606,16746
 Seestr.: Straßenbahntrasse	3nocross 7231,16418 7051,16264 6965,16190
+Seestr.: Straßenbahntrasse	3nocross 7231,16418 7295,16477 7388,16561
 Föhrer Str.: Mittelstreifen	3nocross 6528,15000 6561,15041 6630,15100
 Frankfurter Allee: unbequem passierbarer Mittelstreifen	3nocross 14208,12235 14291,12220 14381,12205
 Frankfurter Allee: unbequem passierbarer Mittelstreifen	3nocross 14381,12205 14427,12197 14488,12188
@@ -1575,6 +1580,8 @@ Drängelgitter	BNP:5 8776,16718
 Schranke	BNP:5 -8211,5490
 #: by: Charly Huber:
 Kurzschranke	BNP:5 6739,15307
+Schranke	BNP:3 6749,15339
+Schranke	BNP:3 6869,15441
 #: by: popanne: vvv
 Drängelgitter	BNP:5 24759,11666
 Drängelgitter	BNP:5 24815,11329
@@ -1677,6 +1684,11 @@ Tor	BNP:5 26888,13976
 #: section temporäre Sperrungen (Baustellen etc.) vvvvvvvvvvvvvvvvvvvvvvvvvv
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+# 
+#: XXX wird es jemals wieder öffentlich befahrbar sein?
+#: last_checked: 2011-03-13
+#: next_check: 2012-08-01
+Boyenweg - Uferweg: wegen Bauarbeiten gesperrt	2:inwork 7938,14426 7886,14518
 # 
 #: last_checked: 2011-02-26
 #: next_check: 2012-01-01

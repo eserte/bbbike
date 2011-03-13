@@ -326,7 +326,7 @@ Spitzerstr. -> M¸ggelheimer Str.: M¸ggelheimer Str.	3::igndisp 22425,4370 22451,
 M¸ggelheimer Str. -> Spitzerstr.: M¸ggelheimer Str.	3::igndisp 22556,4386 22451,4441 22425,4370
 M¸ggelheimer Str. -> Gartenstr.: M¸ggelheimer Str.	3::igndisp 22451,4441 22419,4457 22382,4361
 Gartenstr. -> M¸ggelheimer Str.: M¸ggelheimer Str.	3::igndisp 22382,4361 22419,4457 22383,4470
-Gropiusstr.	1 8543,16364 8389,16214
+Gropiusstr.	1 8543,16364 8534,16355 8389,16214
 Osloer Str.	3nocross::ignrte 8503,16716 8721,16689 8759,16684 8939,16668
 Osloer Str. -> Pankeweg: Osloer Str.	3::igndisp 8503,16716 8721,16689 8804,16881
 Pankeweg -> Osloer Str.: Osloer Str.	3::igndisp 8804,16881 8721,16689 8759,16684
@@ -562,11 +562,15 @@ Osloer Str. -> Wriezener Str.: Straﬂenbahntrasse	3::igndisp 8939,16668 9210,1663
 Straﬂenbahntrasse	3nocross::ignrte 8260,16740 8196,16746 8144,16750 7763,16779
 Heinz-Galinski-Str. -> Osloer Str.: Straﬂenbahntrasse	3::igndisp 8092,16485 8196,16746 8144,16750
 Osloer Str. -> Heinz-Galinski-Str.: Straﬂenbahntrasse	3::igndisp 8260,16740 8196,16746 8092,16485
-Straﬂenbahntrasse	3nocross::ignrte 7606,16746 7456,16620 7403,16575 7388,16561 7295,16477 7231,16418
+Straﬂenbahntrasse	3nocross::ignrte 7606,16746 7456,16620 7417,16587 7403,16575 7388,16561 7295,16477 7231,16418
 Seestr. -> Iranische Str.: Straﬂenbahntrasse	3::igndisp 7606,16746 7456,16620 7707,16543
-Iranische Str. -> Seestr.: Straﬂenbahntrasse	3::igndisp 7707,16543 7456,16620 7403,16575
+Iranische Str. -> Seestr.: Straﬂenbahntrasse	3::igndisp 7707,16543 7456,16620 7417,16587
+Weg am Kombibad Wedding -> Seestr.: Straﬂenbahntrasse	3::igndisp 7298,16725 7417,16587 7456,16620
+Seestr. -> Weg am Kombibad Wedding: Straﬂenbahntrasse	3::igndisp 7403,16575 7417,16587 7298,16725
+Seestr. -> Groninger Str.: Straﬂenbahntrasse	3::igndisp 7417,16587 7403,16575 7439,16350
 Groninger Str. -> Seestr.: Straﬂenbahntrasse	3::igndisp 7439,16350 7403,16575 7388,16561
-Seestr. -> Groninger Str.: Straﬂenbahntrasse	3::igndisp 7456,16620 7403,16575 7439,16350
+Seestr. -> Syrische Str.: Straﬂenbahntrasse	3::igndisp 7231,16418 7295,16477 7263,16508
+Syrische Str. -> Seestr.: Straﬂenbahntrasse	3::igndisp 7263,16508 7295,16477 7388,16561
 Mittelstreifen	3nocross::ignrte 3690,11629 3844,11649 3898,11655
 Bismarckstr. -> Richard-Wagner-Str.: Mittelstreifen	3::igndisp 3690,11629 3844,11649 3837,11760
 Sesenheimer Str. -> Bismarckstr.: Mittelstreifen	3::igndisp 3866,11473 3844,11649 3690,11629
@@ -582,9 +586,11 @@ Zimbelstr.: Poller	3 11959,20365 11924,20399 11879,20466
 Zimbelstr.: Poller	3 11879,20466 11924,20399 11959,20365
 Knollstr.: Poller	3 17609,164 17558,126 17488,80 17429,42 17362,-1 17308,-36 17242,-80
 Knollstr.: Poller	3 17242,-80 17308,-36 17362,-1 17429,42 17488,80 17558,126 17609,164
-Mittelstreifen	3nocross::ignrte 11549,17154 11531,17250 11519,17316
+Mittelstreifen	3nocross::ignrte 11549,17154 11531,17250 11519,17316 11492,17460
 Neumannstr. -> Jenny-Lind-Str.: Mittelstreifen	3::igndisp 11519,17316 11531,17250 11645,17271
 Jenny-Lind-Str. -> Neumannstr.: Mittelstreifen	3::igndisp 11645,17271 11531,17250 11549,17154
+Greta-Garbo-Str. -> Neumannstr.: Mittelstreifen	3::igndisp 11353,17288 11519,17316 11492,17460
+Neumannstr. -> Greta-Garbo-Str.: Mittelstreifen	3::igndisp 11531,17250 11519,17316 11353,17288
 Straﬂenbahn	3nocross::ignrte 14045,16120 14248,16202 14371,16252
 Lindenallee -> Berliner Allee: Straﬂenbahn	3::igndisp 14296,16065 14248,16202 14045,16120
 Berliner Allee -> Lindenallee: Straﬂenbahn	3::igndisp 14371,16252 14248,16202 14296,16065
@@ -720,9 +726,10 @@ Straﬂenbahntrasse	3nocross::ignrte 10892,17491 10894,17470 10900,17397
 Masurenstr. -> Berliner Str.: Straﬂenbahntrasse	3::igndisp 10670,17458 10894,17470 10892,17491
 Berliner Str. -> Masurenstr.: Straﬂenbahntrasse	3::igndisp 10900,17397 10894,17470 10670,17458
 Mittelstreifen	3nocross::ignrte 6608,16180 6450,16325 6444,16331
-Mittelstreifen	3nocross::ignrte 7960,15801 7974,15634 7979,15569
-Weddingstr. -> Reinickendorfer Str.: Mittelstreifen	3::igndisp 8053,15598 7974,15634 7979,15569
-Reinickendorfer Str. -> Weddingstr.: Mittelstreifen	3::igndisp 7960,15801 7974,15634 8053,15598
+M¸llerstr. -> Kongostr.: Mittelstreifen	3::igndisp 6608,16180 6450,16325 6349,16213
+Mittelstreifen	3nocross::ignrte 7948,15802 7962,15633 7966,15571
+Reinickendorfer Str. -> Weddingstr.: Mittelstreifen	3::igndisp 7948,15802 7962,15633 8053,15598
+Weddingstr. -> Reinickendorfer Str.: Mittelstreifen	3::igndisp 8053,15598 7962,15633 7966,15571
 Zeisigweg	1 5178,1499 5153,1534 5148,1559 5145,1611 5132,1672 5087,1807
 Nollendorfplatz	1 7033,10328 6971,10346
 Mittelstreifen	3nocross::ignrte 5902,9083 5975,9094 6063,9106
@@ -1029,8 +1036,8 @@ Neue Filandastr. -> Filandastr.: Neue Filandastr./Filandatr.	3::igndisp 5659,531
 Mittelstreifen	3nocross::ignrte 6019,16712 5937,16784 5900,16817 5777,16924
 Liverpooler Str. -> M¸llerstr.: Mittelstreifen	3::igndisp 5995,16836 5937,16784 6019,16712
 M¸llerstr. -> Liverpooler Str.: Mittelstreifen	3::igndisp 5900,16817 5937,16784 5995,16836
-Querweg durch die Dauerkolonie Togo -> M¸llerstr.: Mittelstreifen	3::igndisp 5712,16604 5900,16817 5777,16924
-M¸llerstr. -> Querweg durch die Dauerkolonie Togo: Mittelstreifen	3::igndisp 5937,16784 5900,16817 5712,16604
+Querweg durch die Dauerkolonie Togo -> M¸llerstr.: Mittelstreifen	3::igndisp 5700,16584 5900,16817 5777,16924
+M¸llerstr. -> Querweg durch die Dauerkolonie Togo: Mittelstreifen	3::igndisp 5937,16784 5900,16817 5700,16584
 Zobtener Str.: Durchfahrt gesperrt (Poller)	3 16734,9990 16539,10097 16148,10329
 Zobtener Str.: Durchfahrt gesperrt (Poller)	3 16148,10329 16539,10097 16734,9990
 Waldowallee - Am Carlsgarten: Durchfahrt gesperrt (Betonblˆcke)	3 19558,8064 19504,8003 19468,7962
@@ -1104,3 +1111,26 @@ Kurm‰rkische Str.	3 7337,10396 7429,10366 7444,10479
 Hentigstr.	1 18514,8773 18548,8942
 Hentigstr.	1 18548,8942 18586,9172 18621,9404
 Oberwallstr.	1 9852,12409 9869,12297 9875,12257 9890,12161
+Prenzlauer Promenade	3nocross::ignrte 11854,17656 11843,17737 11879,18057
+Prenzlauer Promenade -> Laudaer Str.: Prenzlauer Promenade	3::igndisp 11854,17656 11843,17737 11785,17729
+Laudaer Str. -> Prenzlauer Promenade: Prenzlauer Promenade	3::igndisp 11785,17729 11843,17737 11879,18057
+Prenzlauer Promenade	3nocross::ignrte 11879,18057 11892,18146 11906,18246 11914,18303 11950,18529
+Prenzlauer Promenade -> Othellostr.: Prenzlauer Promenade	3::igndisp 11906,18246 11892,18146 11990,18104
+Othellostr. -> Prenzlauer Promenade: Prenzlauer Promenade	3::igndisp 11990,18104 11892,18146 11879,18057
+Prenzlauer Promenade -> Figarostr.: Prenzlauer Promenade	3::igndisp 11914,18303 11906,18246 12084,18197
+Figarostr. -> Prenzlauer Promenade: Prenzlauer Promenade	3::igndisp 12084,18197 11906,18246 11892,18146
+Zeiler Weg -> Prenzlauer Promenade: Prenzlauer Promenade	3::igndisp 11835,18301 11914,18303 11950,18529
+Prenzlauer Promenade -> Zeiler Weg: Prenzlauer Promenade	3::igndisp 11906,18246 11914,18303 11835,18301
+Pasewalker Str.	3nocross::ignrte 11984,20246 11963,20136 11931,19965
+Pasewalker Str. -> Hans-J¸rgen-Str.: Pasewalker Str.	3::igndisp 11931,19965 11963,20136 11939,20140
+Hans-J¸rgen-Str. -> Pasewalker Str.: Pasewalker Str.	3::igndisp 11939,20140 11963,20136 11984,20246
+Neuer Steg	3 8170,19308 8277,19210 8209,19107
+Neuer Steg	3 8334,19157 8277,19210 8209,19107
+Neuer Steg	3 8209,19107 8277,19210 8170,19308
+Neuer Steg	3 8209,19107 8277,19210 8334,19157
+Straﬂe 201	1 9366,18669 9532,18819
+Majakowskiring	1 10373,18889 10354,18814 10203,18762 10041,18697 9985,18735 10003,18798 10055,18831 10162,18867 10184,18875 10307,18915 10373,18889
+Killisch-von-Horn-Weg: Poller	3 9730,17927 9707,17941 9590,18082
+Killisch-von-Horn-Weg: Poller	3 9590,18082 9707,17941 9730,17927
+Frauenfelder Weg - Markstr.	3 7441,17009 7647,17037 7644,17054
+Kongostr.	1 6349,16213 6450,16325
