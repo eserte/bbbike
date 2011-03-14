@@ -195,6 +195,8 @@ sub load_gpx {
 	    }
 	} elsif ($wpt_or_trk->name =~ m{^(?:metadata|extensions)$}) {
 	    # ignore
+	} elsif ($wpt_or_trk->name =~ m{^(?:name|desc|author|email|url|urlname|time|keywords|bounds)$}) {
+	    # ignore GPX 1.0 elements
 	} elsif ($wpt_or_trk->name eq 'rte') {
 	    my $rte = $wpt_or_trk;
 	    my $gpsman_rte = GPS::GpsmanData->new;
