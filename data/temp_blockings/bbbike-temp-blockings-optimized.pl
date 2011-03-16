@@ -732,9 +732,9 @@ userdel	2::temp -8087,-1453 -8151,-1470 -8306,-1454
        undef,
        {
          'source_id' => 'LS/S-SG33-W/09/135',
-         'until' => 1306836000,
-         'text' => 'B 102 Treuenbrietzener Str. OD Jüterbog, zw. Dammtor und Bülowstr. Straßenausbau Vollsperrung 20.07.2009-31.05.2011 ',
-         'from' => 1247954400,
+         'until' => 1306879200,
+         'text' => 'Jüterbog: B102: Straßenausbau - Bordumpflasterung an Mittelinseln OD Jüterbog LSA-Regelung bei Bautätigkeit, 15.06.2009 bis 31.05.2011 ',
+         'from' => 1300313794,
          'id' => 1753,
          'data' => 'userdel	q4::inwork -12541,-46115 -13108,-46122
 ',
@@ -1730,16 +1730,7 @@ userdel	3 13150,7254 13047,7234 13034,7319
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => '116100155',
-         'until' => 1300143600,
-         'text' => 'Schulzendorf: K6161: Arbeiten am Bahnübergang OL Eichwalde, 03.03.2011 04:00 Uhr bis 14.03.2011 ',
-         'from' => 1299034800,
-         'id' => 2181,
-         'data' => 'userdel	2::inwork 25212,-4025 25269,-4041 25320,-4049
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20110303.0840.333719.html',
          'until' => undef,
@@ -1793,26 +1784,8 @@ userdel	q4::inwork; -12545,-698 -12262,-612
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'INKO_105791',
-         'until' => 1300229999,
-         'text' => 'Konrad-Wolf-Str. (Hohenschönhausen) Richtung Suermondtstr. zwischen Weißenseer Weg und Altenhofer Str. Baustelle, Fahrtrichtung gesperrt (bis Mitte 03/2011) ',
-         'from' => 1299925872,
-         'id' => 2187,
-         'data' => 'userdel	q4::inwork; 15052,14585 15272,14691
-',
-         'type' => 'handicap'
-       },
-       {
-         'source_id' => 'IM_017007',
-         'until' => 1300402800,
-         'text' => 'Kopernikusstr. (Friedrichshain): Baustelle, Fahrtrichtung gesperrt Richtung Boxhagener Str. zwischen Libauer Str. und Simon-Dach-Str., 11.03.2011 08:01 Uhr bis 17.03.2011 ',
-         'from' => 1299740460,
-         'id' => 2188,
-         'data' => 'userdel	q4::inwork; 13895,11663 13954,11647
-',
-         'type' => 'handicap'
-       },
+       undef,
+       undef,
        {
          'source_id' => '116100196',
          'until' => 1300467600,

@@ -14854,9 +14854,9 @@ EOF
 userdel	2::inwork 12431,52894 12615,52952 13967,53380 15301,53802 15886,54280 17031,55218 17658,55401
 EOF
      },
-     { from  => 1247954400, # 2009-07-19 00:00
-       until => Time::Local::timelocal(reverse(2011-1900,5-1,31,12,0,0)), # 1292972400, # 2010-12-22 00:00
-       text  => 'B 102 Treuenbrietzener Str. OD Jüterbog, zw. Dammtor und Bülowstr. Straßenausbau Vollsperrung 20.07.2009-31.05.2011 ',
+     { from  => 1300313794, # 2011-03-16 23:16
+       until => 1306879200, # 2011-06-01 00:00
+       text  => 'Jüterbog: B102: Straßenausbau - Bordumpflasterung an Mittelinseln OD Jüterbog LSA-Regelung bei Bautätigkeit, 15.06.2009 bis 31.05.2011 ',
        type  => 'handicap',
        source_id => 'LS/S-SG33-W/09/135',
        data  => <<EOF,
@@ -18789,7 +18789,7 @@ userdel	q4::inwork; 15052,14585 15272,14691
 EOF
      },
      { from  => 1299740460, # 2011-03-10 08:01
-       until => 1300402800, # 2011-03-18 00:00
+       until => 1300314164, # 2011-03-18 00:00 1300402800
        text  => 'Kopernikusstr. (Friedrichshain): Baustelle, Fahrtrichtung gesperrt Richtung Boxhagener Str. zwischen Libauer Str. und Simon-Dach-Str., 11.03.2011 08:01 Uhr bis 17.03.2011 ',
        type  => 'handicap',
        source_id => 'IM_017007',
