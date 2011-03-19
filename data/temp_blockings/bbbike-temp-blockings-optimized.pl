@@ -1709,16 +1709,7 @@ userdel	3 13150,7254 13047,7234 13034,7319
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20110201.1500.329349.html',
-         'until' => 1300316399,
-         'text' => 'Dircksenstr., Rochstr., Rosa-Luxemburg-Str.: Behinderungen wegen Bauarbeiten und temporärer Einbahnstraßenregelung möglich, 02. Februar bis 16. März 2011 ',
-         'from' => 1296591853,
-         'id' => 2178,
-         'data' => 'userdel	q4::inwork 10755,13152 10706,13043 10595,13100 10635,13207
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'source_id' => 'IM_016911',
@@ -1786,16 +1777,7 @@ userdel	q4::inwork; -12545,-698 -12262,-612
        },
        undef,
        undef,
-       {
-         'source_id' => '116100196',
-         'until' => 1300467600,
-         'text' => 'Königs Wusterhausen: B179: Gleisbauarbeiten BÜ Zeesen, 14.03.2011 06:00 Uhr bis 18.03.2011 18:00 Uhr ',
-         'from' => 1299992400,
-         'id' => 2189,
-         'data' => 'userdel	2::inwork 26758,-15727 26650,-15695
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_017000',
          'until' => 1305482400,

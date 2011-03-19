@@ -142,7 +142,7 @@ Raumerstr. -> Prenzlauer Allee: Prenzlauer Allee	3::igndisp 11615,15114 11776,15
 Prenzlauer Allee -> Fröbelstr.: Prenzlauer Allee	3::igndisp 11801,15132 11776,15060 11870,15004
 Prenzlauer Allee -> Raumerstr.: Prenzlauer Allee	3::igndisp 11712,14868 11776,15060 11615,15114
 Große Weinmeisterstr. (Potsdam)	1 -12557,11 -12582,127 -12618,296
-Stellmacherweg	1 13151,2958 13453,2930
+Stellmacherweg	1 13129,2999 13453,2930
 Hittorfstr	1 2442,4806 2469,4882 2516,4936 2587,4965
 Lefèvrestr.	1 5360,6642 5215,6643
 Kühlebornweg	1 5161,4664 5075,4600 5004,4709
@@ -715,6 +715,8 @@ Storkower Str. -> Einsteinstr.: Mittelstreifen	3::igndisp 12812,15053 13110,1487
 Hönower Wiesenweg: nur für Anlieger und Radfahrer offen	2:Anlieger 17375,8847 17416,8767 17483,8644 17554,8458 17624,8353 17708,8316 17751,8284
 Mittelstreifen	3nocross::ignrte 6787,5459 6767,5233 6747,5010
 Mittelstreifen	3nocross::ignrte 9248,4904 9239,4980 9207,5185
+Mariendorfer Damm -> Finkenweg: Mittelstreifen	3::igndisp 9207,5185 9239,4980 9360,4996
+Finkenweg -> Mariendorfer Damm: Mittelstreifen	3::igndisp 9360,4996 9239,4980 9248,4904
 Mittelstreifen	3nocross::ignrte 4507,4755 4515,4581 4521,4484
 Hindenburgdamm -> Flotowstr.: Mittelstreifen	3::igndisp 4507,4755 4515,4581 4651,4638
 Roonstr. -> Hindenburgdamm: Mittelstreifen	3::igndisp 4265,4484 4515,4581 4507,4755
@@ -1134,3 +1136,28 @@ Killisch-von-Horn-Weg: Poller	3 9730,17927 9707,17941 9590,18082
 Killisch-von-Horn-Weg: Poller	3 9590,18082 9707,17941 9730,17927
 Frauenfelder Weg - Markstr.	3 7441,17009 7647,17037 7644,17054
 Kongostr.	1 6349,16213 6450,16325
+Polierweg: Schranke vor dem Malersteig	3 13650,3025 13596,3039 13483,3064
+Polierweg: Schranke vor dem Malersteig	3 13650,3025 13596,3039 13563,2909
+Polierweg: Schranke vor dem Malersteig	3 13650,3025 13596,3039 13606,3085
+Polierweg: Schranke vor dem Malersteig	3 13483,3064 13596,3039 13650,3025
+Polierweg: Schranke vor dem Malersteig	3 13563,2909 13596,3039 13650,3025
+Polierweg: Schranke vor dem Malersteig	3 13606,3085 13596,3039 13650,3025
+Polierweg	1 13483,3064 13100,3159 13048,3134
+Zantochweg: Poller	3 12328,3831 12266,3863 12250,3839
+Zantochweg: Poller	3 12328,3831 12266,3863 12271,3906
+Zantochweg: Poller	3 12250,3839 12266,3863 12328,3831
+Zantochweg: Poller	3 12271,3906 12266,3863 12328,3831
+Douglasienweg: Poller	3 11633,4117 11563,4099 11547,4127
+Douglasienweg: Poller	3 11633,4117 11563,4099 11567,4085
+Douglasienweg: Poller	3 11547,4127 11563,4099 11633,4117
+Douglasienweg: Poller	3 11567,4085 11563,4099 11633,4117
+Goldenes Horn: Poller	3 10586,4039 10563,3767 10561,3748
+Goldenes Horn: Poller	3 10561,3748 10563,3767 10586,4039
+Brusaer Weg: Poller	3 10248,3897 10236,3777 10047,3794
+Brusaer Weg: Poller	3 10248,3897 10236,3777 10561,3748
+Brusaer Weg: Poller	3 10047,3794 10236,3777 10248,3897
+Brusaer Weg: Poller	3 10561,3748 10236,3777 10248,3897
+Teikeweg: Poller	3 9519,4537 9412,4537 9408,4568
+Teikeweg: Poller	3 9519,4537 9412,4537 9428,4419
+Teikeweg: Poller	3 9408,4568 9412,4537 9519,4537
+Teikeweg: Poller	3 9428,4419 9412,4537 9519,4537

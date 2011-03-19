@@ -68,11 +68,11 @@ asphaltiert, leicht uneben	RW1; 9238,8410 9238,8253
 #: next_check: 2011-03-15
 asphaltiert, leicht uneben	RW1; 9238,8253 9240,8028 9240,7797
 asphaltiert, leicht uneben	RW1; 9240,7797 9242,7658 9242,7325
-#: XXX laut Tsp vom 2003-03-26 wird der Radweg gerade erneuert
+#: XXX laut Tsp vom 2010-03-26 wird der Radweg gerade erneuert
 #: XXX auch unterhalb der S-Bahnbrücke wird gerade gebaut
-#: last_checked: 2011-01-23
+#: last_checked: 2011-03-19
 asphaltiert, aber schlechter Zustand	RW1; 9242,7325 9242,7286
-#: XXX laut Tsp vom 2003-03-26 wird der Radweg gerade erneuert (Richtung Norden)
+#: XXX laut Tsp vom 2010-03-26 wird der Radweg gerade erneuert (Richtung Norden)
 #: last_checked: 2011-02-25
 #: next_check: 2011-05-01
 asphaltiert, aber mäßiger Zustand (Wurzelschäden)	RW1; 9242,7286 9242,7325 9242,7658 9240,7797 9240,8028 9238,8253 9238,8410 9233,8597 9229,8718
@@ -412,7 +412,7 @@ am Ende gibt es 50 Meter Radweg	RW0; 8967,4082 9021,3878
 	RW; 9751,3769 9934,3802
 	RW2; 9440,3665 9751,3769
 	RW; 8955,3521 9131,3571 9215,3599 9391,3651 9440,3665
-	RW1;RW1 9934,3802 10047,3794 10236,3777 10561,3748 10966,3712 11084,3702
+	RW1;RW1 9934,3802 10047,3794 10236,3777 10561,3748 10985,3707 11048,3700 11084,3702
 	RW1;RW1 9934,3802 10186,4178 10190,4183 10300,4360 10412,4552 10505,4713 10800,5203 10927,5517 10976,5628 11124,5787 11190,5856 11322,5989
 #: note: Kommentar von Jens Velten, von srt korrigiert
 teilweise relativ breit, neues Verbundsteinpflaster	RW1; 11084,3702 11153,3728 11159,3730 11166,3732 11264,3767 11375,3807 11496,3850 11610,3891 11684,3919 11768,3950 11851,3980 12015,4038 12284,4133 12337,4160 12363,4175 12560,4290
@@ -592,7 +592,7 @@ teilweise schlechte Qualität (eng, uneben)	RW1;RW1 11590,6026 11943,5825 12052,5
 neues Verbundsteinpflaster	RW2; 12652,5006 12626,5057 12507,5228
 	RW1;RW1 12652,5006 12731,4841
 	RW1;RW 12731,4841 12826,4777
-	RW;RW2 12826,4777 12905,4761
+	RW1;RW2 12826,4777 12905,4761
 	RW1;RW1 12905,4761 13001,4724 13056,4678 13266,4503 13305,4504
 	RW;RW 13305,4504 13394,4500 13485,4496 13571,4493 13659,4489
 	RW;RW1 13659,4489 13771,4485 13866,4481
@@ -2308,7 +2308,7 @@ die letzten 10 Meter werden auf dem Gehweg geführt	RW3; 3800,6418 3836,6550
 #: by: anonymous:
 	RW6;RW6 20923,13953 20938,14066
 #: by: Claudia Maruhn:
-	RW6;RW6 10563,3767 10587,4046 10601,4185 10613,4308
+	RW6;RW6 10563,3767 10586,4039 10601,4185 10613,4308
 	RW;RW 19739,12914 19783,12955
 	RW;RW 20482,17775 20443,17698 20344,17493 20193,17196 20137,17087 20047,16910 19896,16611
 #: by: anonymous (and osm):
@@ -2434,7 +2434,9 @@ Betonplatten	RW1;RW1 22631,16215 22696,16208 22739,16203 22771,16194
 #: by: Hollie (freak...)
 	RW6;RW6 17730,18747 17813,18726 17819,18738 17839,18782 17938,18749 17929,18709 17819,18738
 #: by: Alexander Unertl:
-verkehrsberuhigt, demnächst auch mit Betonschwellen	RW6;RW6 13606,3085 13596,3039 13563,2909 13510,2690 13487,2621 13452,2548 13420,2509
+#: confirmed_by: srt (allerdings nur südl. des Hochspannungswegs)
+#: note: Alexander meinte, dass es "demnächst auch mit Betonschwellen" gibt, aber davon ist 2011-03 noch nichts zu sehen
+verkehrsberuhigt	RW6;RW6 13563,2909 13510,2690 13487,2621 13452,2548 13420,2509
 #: note: Luftbild, http://www.stadtentwicklung.berlin.de/verkehr/radverkehrsanlagen/de/spandau/route.shtml vvv
 	RW4;RW2 -129,12947 -103,12868
 	RW4;RW4 -103,12868 23,12739
@@ -2484,6 +2486,7 @@ Busspur gilt Mo-Fr 6-18 Uhr	RW5;RW5 13438,14675 13367,14588 13301,14516 13242,14
 Busspur gilt Mo-Fr 6-18 Uhr	RW5; 13057,14267 13097,14307
 #: by: Thomas Schäfer:
 #: note: ebenso by anonymous:
+#: confirmed_by: srt
 	RW6;RW6 11000,3115 11154,3246 11125,3343
 #: by: susanne von below: (eigentlich "Privatstraße", aber wahrscheinlich analog zu den anderen Straßen im Viertel):
 	RW6;RW6 3382,2216 3385,2341 3387,2468
@@ -2902,3 +2905,10 @@ Gehweg für Radfahrer frei	RW1; 18166,14277 18055,14276 17976,14251
 	RW3; 8939,16668 8912,16582
 die letzten 20 Meter sind benutzungspflichtig	RW3; 8912,16582 8939,16668
 	RW3;RW3 8912,16582 8788,16264
+	RW6;RW6 13402,2719 13510,2690 13566,2673
+	RW6;RW6 13348,2588 13376,2631 13402,2719 13432,2846
+	RW6;RW6 10968,3599 10866,3611
+	RW6;RW6 10866,3611 10841,3441
+	RW6;RW6 10841,3441 10937,3423
+	RW6;RW6 10930,3365 10937,3423
+	RW6;RW6 10248,3897 10348,3888
