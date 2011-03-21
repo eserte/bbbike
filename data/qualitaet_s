@@ -863,7 +863,7 @@ Tempelherrenstr.: asphaltiert	Q0 10183,9876 10251,9979 10313,10084
 (Benekendorffstr - Alt-Lübars): mäßiger Sandweg	Q2 6457,23577 6674,23683 6744,23695
 (Alt-Hermsdorf - Zehntwerderweg): mäßig geeignet	Q2 4582,23035 4619,22934 4626,22914 4679,22766
 Medebacher Weg: Kopfsteinpflaster	Q2 1753,20191 1794,20110 1825,20047
-Medebacher Weg: Kopfsteinpflaster	Q2 1840,19990 1863,19925 1886,19835
+Medebacher Weg: Kopfsteinpflaster	Q2 1840,19990 1863,19925 1886,19835 1896,19801
 Brünowplatz: Kopfsteinpflaster	Q2 1825,20047 1804,20009 1840,19990 1862,20025 1825,20047
 Miraustr.: Asphalt, mäßig	Q0 3321,20545 3344,20453 3390,20265 3581,20008 3645,19921 3820,19688
 Miraustr.: guter Asphalt	Q0 3820,19688 4014,19433
@@ -9282,8 +9282,9 @@ Plantagenstr. (Wedding): Asphalt	Q0 7966,15571 7877,15581 7796,15590
 Plantagenstr. (Wedding): Kopfsteinpflaster	Q2 7796,15590 7595,15596
 Grußdorfstr.: gutes Kopfsteinpflaster	Q1 2362,20218 2323,20214 2109,20188
 Am Buddeplatz: gutes Kopfsteinpflaster	Q1 2336,20117 2323,20214
-Brunowstr.: gutes Kopfsteinpflaster	Q1 1563,19960 1669,19982 1804,20009
-Brunowstr.: gutes Kopfsteinpflaster	Q1 1862,20025 1989,20053 2169,20095 2336,20117 2402,20126
+Brunowstr.: Kopfsteinpflaster	Q2 1563,19960 1669,19982 1804,20009
+Brunowstr.: Kopfsteinpflaster	Q2 1862,20025 1989,20053 2169,20095
+Brunowstr.: Asphalt	Q0 2169,20095 2336,20117 2402,20126
 Karl-Pokern-Str.: Asphalt	Q0 26079,5057 26034,5056 25984,5070 25941,5069 25860,5067 25732,5065
 Karl-Pokern-Str.: Beton	Q1 25860,5067 25860,5159 25857,5184 26026,5179 26028,5153 26034,5056
 Karl-Pokern-Str.: Beton	Q1 25860,5159 26028,5153
