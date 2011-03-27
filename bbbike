@@ -2011,6 +2011,8 @@ my $fragezeichen_check_index;
 my $nolighting_check_index;
 my $gruene_wege_check_index;
 my $vorfahrt_check_index;
+my $c_bpcm;
+my $comments_all_check_index;
 unless($skip_features{"strassen"}) {
     $strasse_photo = load_photo($misc_frame, 'strasse');
     $strasse_check = $misc_frame->$Checkbutton
@@ -2233,7 +2235,7 @@ unless($skip_features{"strassen"}) {
 
     $strcm->cascade(-label => M"Kommentare");
     {
-	my $c_bpcm = $strcm->Menu(-title => M"Sonstige");
+	$c_bpcm = $strcm->Menu(-title => M"Sonstige");
 	$strcm->entryconfigure("last", -menu => $c_bpcm);
 	my @used_types;
 	foreach my $type (@comments_types) {
@@ -2246,24 +2248,24 @@ unless($skip_features{"strassen"}) {
 	    $create_comment_layers_cb->($c_bpcm, $type);
 	    push @used_types, $type;
 	}
-	if ($advanced) {
-	    $c_bpcm->separator;
-	    my $str_draw_all = 0;
-	    $c_bpcm->checkbutton
-		(-label => M("Alle"),
-		 -variable => \$str_draw_all,
-		 -command => sub {
-		     my $onoff = $str_draw_all;
-		     $progress->InitGroup;
-		     for my $type (@used_types) {
-			 my $def = 'comm-' . $type;
-			 $str_draw{$def} = $onoff;
-			 plot('str', $def, Filename => get_strassen_file("comments_" . $type));
-		     }
-		     $progress->FinishGroup;
-		 },
-		);
-	}
+	$c_bpcm->separator;
+	my $str_draw_all = 0;
+	$c_bpcm->checkbutton
+	    (-label => M("Alle"),
+	     -variable => \$str_draw_all,
+	     -command => sub {
+		 my $onoff = $str_draw_all;
+		 $progress->InitGroup;
+		 for my $type (@used_types) {
+		     my $def = 'comm-' . $type;
+		     $str_draw{$def} = $onoff;
+		     plot('str', $def, Filename => get_strassen_file("comments_" . $type));
+		 }
+		 $progress->FinishGroup;
+	     },
+	     -accelerator => 'Shift-C',
+	    );
+	$comments_all_check_index = $c_bpcm->index('last');
     }
 
     $strcm->checkbutton(-label => M"Fähren",
@@ -4345,6 +4347,8 @@ if (!$MM_DRAG_IS_OBSOLETE) {
 	if defined $nolighting_check_index;
     bind_nomod($top, '<G>' => sub { $strcm->invoke($gruene_wege_check_index) })
 	if defined $gruene_wege_check_index;
+    bind_nomod($top, '<C>' => sub { $c_bpcm->invoke($comments_all_check_index) })
+	if defined $comments_all_check_index;
     bind_nomod($top, '<V>' => sub { $strcm->invoke($vorfahrt_check_index) })
 	if defined $vorfahrt_check_index;
     bind_nomod($top, "<question>" => sub {
