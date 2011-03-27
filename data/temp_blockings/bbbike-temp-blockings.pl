@@ -14295,7 +14295,7 @@ EOF
      },
      { from  => 1243863900, # 2009-06-01 15:45
        until => 1306853100, # 2011-05-31 16:45
-       text  => 'Pasewalker Str. (Pankow): Baustelle, Fahrtrichtung gesperrt (bis Frühjahr 2011) stadteinwärts zwischen Marienstr. und Anschlussstelle A114, 02.06.2009 15:45 Uhr bis 31.05.2011 16:45 Uhr ',
+       text  => 'Pasewalker Str. (Pankow): Baustelle, Fahrtrichtung gesperrt (bis Frühjahr 2011) stadteinwärts zwischen Marienstr. und Anschlussstelle A114, 02.06.2009 bis 31.05.2011',
        type  => 'handicap',
        source_id => 'IM_012907',
        data  => <<EOF,
@@ -14443,7 +14443,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_013029',
        data  => <<EOF,
-userdel	q4::inwork; 11357,18598 11204,18545 11168,18542 11025,18531
+userdel	q4::inwork; 11357,18598 11204,18545 11168,18542 11001,18528
 EOF
      },
      { from  => 1244930400, # 2009-06-14 00:00
@@ -16016,7 +16016,7 @@ EOF
 #: last_checked: 2010-07-11
 #: next_check: 2010-10-01
 userdel	q4::inwork; 10680,18380 10755,18231 10829,18083 10846,17992
-userdel	q4::inwork; 10829,18083 10907,18109 10938,18147 10989,18172 11137,18358 11025,18531
+userdel	q4::inwork; 10829,18083 10907,18109 10938,18147 10989,18172 11137,18358 11001,18528
 EOF
      },
      { from  => undef, #
@@ -18646,7 +18646,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_014357',
        data  => <<EOF,
-userdel	q4::inwork; 10680,18380 10755,18231 10829,18083 10846,17992
+userdel	q4::inwork; 10680,18380 10755,18231 10829,18083 10846,17992 10859,17854
 EOF
      },
      { from  => 1295721886, # 2011-01-22 19:44

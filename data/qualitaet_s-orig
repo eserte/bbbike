@@ -4582,6 +4582,10 @@ Finkenweg (Mariendorf): Kopfsteinpflaster	Q2+ 9360,4996 9482,5012
 #: note: an dieser Stelle sollen Radfahrer "absteigen"
 (Zufahrt Kolonie Zur Windmühle): Verbundsteinpflaster	Q1 12526,2798 12430,2804
 (Hüfnerweg - Eingang Britzer Garten): wassergebundene Decke	Q1 12652,3406 12034,3198 11956,3188 11937,3186
+Tiriotstr.: unbefestigte Straße	Q2 11765,22198 11484,22406
+Tiriotstr.: Asphalt	Q0 11484,22406 11235,22590
+Mittelstr. (Rosenthal): Beton	Q0- 9923,20663 10115,20714
+Tiefenseer Str.: Beton	Q0 7425,21219 7450,21018
 ######################### User Contributions #################################
 #: by: Dominik Seelow vvv
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
@@ -4608,12 +4612,12 @@ Waldstr.: Kopfsteinpflaster, "Moabiter Kissen"	Q2 5384,13555 5390,13616 5417,138
 #: note: laut ADFC-Karte "gut geeignet":
 Vesaliusstr.: Asphalt	Q0 11805,19071 11748,19235 11726,19482
 #: note: laut ADFC-Karte "gut geeignet":
-Stiftsweg: Asphalt	Q0 11025,18531 11268,18851
+Stiftsweg: Asphalt	Q0 11001,18528 11268,18851
 #: note: laut ADFC-Karte "gut geeignet":
-Bleicheroder Str.: Asphalt	Q0 11268,18851 11439,18890 11526,18929 11620,18971 11725,19007 11805,19071
+Bleicheroder Str.: Asphalt	Q0 11268,18851 11439,18890 11526,18929 11622,18964 11727,19001 11762,19014 11805,19071
 #: note: "à la Linienstr."
 Paracelsusstr.: schlechter Asphalt	Q2+ 11523,19393 11575,19296 11543,19279 11549,19258 11599,19171
-Paracelsusstr.: schlechter Asphalt	Q2+ 11634,19187 11725,19007
+Paracelsusstr.: schlechter Asphalt	Q2+ 11634,19187 11727,19001
 Paracelsusstr.: schlechter Asphalt	Q2+ 11671,19204 11613,19312 11575,19296
 #: by: ^^^
 #: by: Henry Könner vvv
@@ -4731,6 +4735,11 @@ Cotheniusstr.: Asphalt	Q0 13228,13615 13430,13733
 ######################################################################
 #: by: anonymous vvv
 # 
+#: note: "q4, enge Straße" ignoriert
+Dreifelderweg: fester Sandweg	Q2 2961,21119 2969,21073
+Plaßstr.: guter Asphalt	Q0 1075,1029 1129,763
+#: note: "q1, Fußgänger" ignoriert
+Kötteritzweg: fester Sandweg	Q2 27063,13479 27141,13394 27190,13327 27217,13287
 Lubminer Str.: Beton	Q0 22527,12683 22415,12681 22407,12901
 #: note: "q3, Schule" ignoriert
 Altenhofer Weg: guter Asphalt	Q0 2837,20015 2881,20086 2928,20155 2962,20209
@@ -6962,7 +6971,7 @@ Bieselheider Weg: schlecht ausgebesserte Asphaltdecke	Q2+ 3347,26272 3328,26193 
 #: confirmed_by: ^^^
 #: by: ^^^
 #: by: Roxlau (aschenbre):
-Würtzstr.: gutes Kopfsteinpflaster	Q1 11561,19149 11620,18971
+Würtzstr.: gutes Kopfsteinpflaster	Q1 11561,19149 11622,18964
 #: by: Stefan Warthmann:
 Räuschstr.: Asphalt	Q0 3089,19869 3252,19658 3455,19389
 #: by: Michael (patgoody):
@@ -7574,8 +7583,8 @@ Trarbacher Str.: Beton	Q1 14671,17214 14672,17085 14673,17003 14673,16895
 #: by: ^^^
 #: by: Karin Hoffmann: vvv
 #: corrected_by: Matthias Bauer ("mäßiges" -> "schlechtes") vvv
-Amalienpark: schlechtes Kopfsteinpflaster	Q3 10860,18650 10950,18499
-Amalienpark: schlechtes Kopfsteinpflaster	Q3 10950,18499 10905,18671
+Amalienpark: schlechtes Kopfsteinpflaster	Q3 10860,18650 10934,18500
+Amalienpark: schlechtes Kopfsteinpflaster	Q3 10958,18512 10905,18671
 #: corrected_by ^^^
 #: confirmed_by: albrecht_martina:
 Eichenstr. (Niederschönhausen): guter Asphalt	Q0 9300,19949 9408,19968 9788,20035 10095,20090
@@ -9454,6 +9463,7 @@ Staehleweg: Asphalt	Q0 2345,27670 2061,27612 1965,27594 1937,27571 1858,27576
 Staehleweg - Mauerweg: unbefestigt	Q2 1858,27576 1744,27568
 Invalidensiedlung: Asphalt	Q0 1965,27594 1997,28089 1937,28118 1886,28107 1863,27795 1828,27752 1826,27695 1859,27651 1858,27576
 Gollanczstr.: Asphalt	Q0 2017,26779 2044,27286 2061,27612
+#: XXX nochmal prüfen, ob der nördliche Abschnitt unbefestigt ist
 Straße 151: mäßiger Asphalt	Q1- 8973,21271 8932,21192 8860,21051
 Straße 152: guter Beton	Q0- 8793,21110 8867,21222
 Straße 152: guter Beton	Q0- 8932,21192 8867,21222 8825,21246
@@ -10122,8 +10132,12 @@ Pfannschmidtstr.: guter Asphalt	Q0 15906,24088 15829,24138 15745,24194 15661,242
 Sohnreystr.: Asphalt	Q0 7052,4911 6854,4931
 #: by: Roland (tre-kronor):
 Harry-S.-Truman-Allee: guter Asphalt	Q0 2527,1136 2504,1186 2331,1572
-#: by: Andra Eisenmann:
-Schweizer Tal: guter Asphalt	Q0 11743,22096 11504,22277 11383,22369 11176,22526
+#: by: Andra Eisenmann: vvv
+#: confirmed_by: srt
+Schweizer Tal: guter Asphalt	Q0 11176,22526 11383,22369
+#: corrected_by: srt (Asphalt -> unbefestigt)
+Schweizer Tal: unbefestigte Straße	Q2 11383,22369 11504,22277 11743,22096
+#: by: ^^^
 #: by: Harald Krause:
 Schloßstr. (Hermsdorf): Asphalt mit Schlaglöchern	Q2+ 4058,23342 3953,23401 3632,23563 3587,23584 3563,23609 3461,23741
 #: by: Jörg Weixelbraun: vvv
@@ -10721,7 +10735,8 @@ Berberitzenweg: mäßiger Beton mit Steinbelag	Q1- 15526,4383 15631,4567 15690,466
 #: by: Jakub Wilk: vvv
 Birkenallee (Niederschönhausen): Asphalt wellig (uneben) und teilweise aufgerissen, große Pfützen bei Regen	Q2 9739,20508 9655,20703
 Kirchstr. (Rosenthal): Betonplatten	Q2 10145,21017 10072,20997
-Kirchstr. (Rosenthal): Asphalt (große Löcher)	Q2 10072,20997 9931,20952 9920,20948 9848,20926 9713,20885
+#: XXX prüfen, ob tatsächlich Q2 oder vielleicht doch Q1
+Kirchstr. (Rosenthal): Asphalt (große Löcher)	Q2 10072,20997 9931,20952 9848,20926 9713,20885
 Kirchstr. (Rosenthal): Asphalt	Q0 9713,20885 9398,20784
 Straße 134: Schotterweg	Q2 9398,20784 9192,20719
 (Am Zingergraben): Schotterweg	Q2 9192,20719 9163,20641 9161,20622
@@ -12860,6 +12875,10 @@ Buolstr.: guter Asphalt	Q0 559,15342 429,15284 283,15237
 #: by: Marian Nitschke:
 #: corrected_by: srt/policy (Q3 -> Q2-)
 Geißblattpfad: schlechte unbefestigte Straße	Q2- -7940,14690 -7842,14683 -7750,14667 -7654,14657 -7549,14645
+#: by: Claus Wagener:
+An der Buche: guter Asphalt	Q0 1999,24900 2056,24836 2105,24805 2174,24783 2243,24788 2315,24779
+#: by: paul müller:
+Dompfaffenweg: guter Asphalt	Q0 20068,14516 19729,14564
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206

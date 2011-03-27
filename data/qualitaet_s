@@ -4192,6 +4192,10 @@ Finkenweg (Mariendorf): Kopfsteinpflaster	Q2 9360,4996 9482,5012
 (Zufahrt Kolonie Zur Windmühle): Asphalt	Q0 12695,2789 12526,2798
 (Zufahrt Kolonie Zur Windmühle): Verbundsteinpflaster	Q1 12526,2798 12430,2804
 (Hüfnerweg - Eingang Britzer Garten): wassergebundene Decke	Q1 12652,3406 12034,3198 11956,3188 11937,3186
+Tiriotstr.: unbefestigte Straße	Q2 11765,22198 11484,22406
+Tiriotstr.: Asphalt	Q0 11484,22406 11235,22590
+Mittelstr. (Rosenthal): Beton	Q0 9923,20663 10115,20714
+Tiefenseer Str.: Beton	Q0 7425,21219 7450,21018
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
 Riemeisterstr.: mäßiges Kopfsteinpflaster, aber asphaltierte Radwege	Q1 346,4833 294,4916 158,5103 103,5123
 Pücklerstr.: Fahrbahn mit schlechtem Kopfsteinpflaster, Radweg OK	Q1 2688,7067 2576,7026 2465,6984 2403,6962 2266,6911 2155,6873 2130,6865 2054,6840 1961,6820
@@ -4210,10 +4214,10 @@ Enkircher Str.: Asphalt	Q0 3314,25243 3460,25132 3485,25112 3518,25086 3550,2504
 (Schildower Weg - Schildower Str.): wassergebunden	Q1 8415,24361 8547,24437 8891,24330
 Waldstr.: Kopfsteinpflaster, "Moabiter Kissen"	Q2 5384,13555 5390,13616 5417,13817 5443,14028
 Vesaliusstr.: Asphalt	Q0 11805,19071 11748,19235 11726,19482
-Stiftsweg: Asphalt	Q0 11025,18531 11268,18851
-Bleicheroder Str.: Asphalt	Q0 11268,18851 11439,18890 11526,18929 11620,18971 11725,19007 11805,19071
+Stiftsweg: Asphalt	Q0 11001,18528 11268,18851
+Bleicheroder Str.: Asphalt	Q0 11268,18851 11439,18890 11526,18929 11622,18964 11727,19001 11762,19014 11805,19071
 Paracelsusstr.: schlechter Asphalt	Q2 11523,19393 11575,19296 11543,19279 11549,19258 11599,19171
-Paracelsusstr.: schlechter Asphalt	Q2 11634,19187 11725,19007
+Paracelsusstr.: schlechter Asphalt	Q2 11634,19187 11727,19001
 Paracelsusstr.: schlechter Asphalt	Q2 11671,19204 11613,19312 11575,19296
 Honnefer Str.: Asphalt	Q0 19316,8933 19209,9125
 Voltastr.: Kopfsteinpflaster	Q2 9041,14896 9206,14987 9361,15066 9566,15188
@@ -4275,6 +4279,9 @@ Rietzestr.: Asphalt	Q0 12693,15225 12472,15356
 Strehlener Str.: Asphalt	Q0 22652,10392 22538,10477 22403,10523
 (Am Maselakekanal): Asphalt	Q0 -2140,17171 -2502,17233 -2606,17272
 Cotheniusstr.: Asphalt	Q0 13228,13615 13430,13733
+Dreifelderweg: fester Sandweg	Q2 2961,21119 2969,21073
+Plaßstr.: guter Asphalt	Q0 1075,1029 1129,763
+Kötteritzweg: fester Sandweg	Q2 27063,13479 27141,13394 27190,13327 27217,13287
 Lubminer Str.: Beton	Q0 22527,12683 22415,12681 22407,12901
 Altenhofer Weg: guter Asphalt	Q0 2837,20015 2881,20086 2928,20155 2962,20209
 Am Landschaftspark Gatow: Asphalt	Q0 -7966,6764 -8023,6842 -8032,6852 -8080,6933 -8134,7027 -8176,7103 -8207,7156 -8283,7325 -8335,7441 -8344,7477 -8353,7599 -8405,7751
@@ -5625,7 +5632,7 @@ Maarer Str.: Beton	Q1 5568,21185 5628,21279 5676,21354 5816,21479 5892,21548 607
 Bieselheider Weg: Verbundsteinpflaster	Q1 3485,26544 3487,26491 3471,26447 3419,26398 3396,26364
 Bieselheider Weg: schlecht ausgebesserte Asphaltdecke	Q2 3396,26364 3360,26275
 Bieselheider Weg: schlecht ausgebesserte Asphaltdecke	Q2 3347,26272 3328,26193 3318,26130 3324,26100 3352,26065 3477,25969 3529,25945 3587,25936
-Würtzstr.: gutes Kopfsteinpflaster	Q1 11561,19149 11620,18971
+Würtzstr.: gutes Kopfsteinpflaster	Q1 11561,19149 11622,18964
 Räuschstr.: Asphalt	Q0 3089,19869 3252,19658 3455,19389
 Maximilianstr. (Rummelsburg): mäßiges Kopfsteinpflaster	Q2 16334,10958 16381,11080 16424,11188 16468,11297
 Unterbaumstr.: Kopfsteinpflaster	Q2 8486,12918 8502,12935 8525,12958 8556,12989
@@ -5919,8 +5926,8 @@ Zitadellenweg: guter Asphalt	Q0 -2336,14460 -2264,14584 -1993,14594 -1997,14800
 Graacher Str.: gute Betonstraße	Q0 14533,17084 14672,17085
 Wehlener Str.: Asphalt	Q0 14673,17003 14535,17003
 Trarbacher Str.: Beton	Q1 14671,17214 14672,17085 14673,17003 14673,16895
-Amalienpark: schlechtes Kopfsteinpflaster	Q3 10860,18650 10950,18499
-Amalienpark: schlechtes Kopfsteinpflaster	Q3 10950,18499 10905,18671
+Amalienpark: schlechtes Kopfsteinpflaster	Q3 10860,18650 10934,18500
+Amalienpark: schlechtes Kopfsteinpflaster	Q3 10958,18512 10905,18671
 Eichenstr. (Niederschönhausen): guter Asphalt	Q0 9300,19949 9408,19968 9788,20035 10095,20090
 Treskowstr. (Niederschönhausen): asphaltiert	Q0 9955,19507 9925,19501 9781,19550 9690,19630 9646,19670 9565,19751 9489,19826 9408,19968 9372,20065
 Treskowstr. (Niederschönhausen): unbefestigt	Q2 9372,20065 9360,20152 9359,20215
@@ -7184,7 +7191,8 @@ Bleichertstr.: guter Asphalt	Q0 8383,1311 8455,1280 8494,1293 8530,1379 8569,145
 Pfannschmidtstr.: guter Asphalt	Q0 15906,24088 15829,24138 15745,24194 15661,24250 15579,24305 15498,24362 15414,24418
 Sohnreystr.: Asphalt	Q0 7052,4911 6854,4931
 Harry-S.-Truman-Allee: guter Asphalt	Q0 2527,1136 2504,1186 2331,1572
-Schweizer Tal: guter Asphalt	Q0 11743,22096 11504,22277 11383,22369 11176,22526
+Schweizer Tal: guter Asphalt	Q0 11176,22526 11383,22369
+Schweizer Tal: unbefestigte Straße	Q2 11383,22369 11504,22277 11743,22096
 Schloßstr. (Hermsdorf): Asphalt mit Schlaglöchern	Q2 4058,23342 3953,23401 3632,23563 3587,23584 3563,23609 3461,23741
 Pilotenstr.: Asphalt	Q0 17956,4787 17868,4742 17826,4730
 Pilotenstr.: kleinteiliges Kopfsteinpflaster	Q1 18116,4898 18031,4831 17956,4787
@@ -7436,7 +7444,7 @@ Stadtilmer Weg: Asphalt	Q0 6515,1010 6495,915 6592,882 6779,816 6841,793
 Berberitzenweg: mäßiger Beton mit Steinbelag	Q1 15526,4383 15631,4567 15690,4668 15816,4890 15867,4973 15947,5137
 Birkenallee (Niederschönhausen): Asphalt wellig (uneben) und teilweise aufgerissen, große Pfützen bei Regen	Q2 9739,20508 9655,20703
 Kirchstr. (Rosenthal): Betonplatten	Q2 10145,21017 10072,20997
-Kirchstr. (Rosenthal): Asphalt (große Löcher)	Q2 10072,20997 9931,20952 9920,20948 9848,20926 9713,20885
+Kirchstr. (Rosenthal): Asphalt (große Löcher)	Q2 10072,20997 9931,20952 9848,20926 9713,20885
 Kirchstr. (Rosenthal): Asphalt	Q0 9713,20885 9398,20784
 Straße 134: Schotterweg	Q2 9398,20784 9192,20719
 (Am Zingergraben): Schotterweg	Q2 9192,20719 9163,20641 9161,20622
@@ -8391,6 +8399,8 @@ Rudolf-Pechel-Str.: mäßiges Verbundsteinpflaster	Q2 9991,-413 9913,-432 9920,-51
 Biedermannweg: mäßiger Asphalt	Q1 -854,12963 -742,12924
 Buolstr.: guter Asphalt	Q0 559,15342 429,15284 283,15237
 Geißblattpfad: schlechte unbefestigte Straße	Q2 -7940,14690 -7842,14683 -7750,14667 -7654,14657 -7549,14645
+An der Buche: guter Asphalt	Q0 1999,24900 2056,24836 2105,24805 2174,24783 2243,24788 2315,24779
+Dompfaffenweg: guter Asphalt	Q0 20068,14516 19729,14564
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206
 Richard-Ermisch-Str.: Asphalt	Q0 14250,13281 14224,13206 14207,13152 14177,13065 14163,13025 14130,12926 14096,12827
 Zum Langen Jammer: Kopfsteipflaster, Gehweg besser	Q2 14686,12873 14405,12953

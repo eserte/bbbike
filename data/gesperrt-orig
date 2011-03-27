@@ -316,7 +316,8 @@ Kavalierstr.	1 10625,18831 10721,18575
 # XXX del : XXX_indoor: evtl. nach temp-blockings verschieben Luitpoldstr., Verlängerung über Schulhof, nicht immer geöffnet!	2 6611,9879 6670,9887
 Kattegatstr.	1 9323,17667 9475,17557
 Waldhüterpfad	1 510,4202 371,4453 301,4643
-Amalienpark	1 10905,18671 10950,18499 10860,18650
+Amalienpark	1 10905,18671 10958,18512
+Amalienpark	1 10934,18500 10860,18650
 Im Amseltal	1 1962,25214 1982,25108
 #: by: Josephine Schwuchow:
 Gundelfinger Str.	1 18735,9421 18697,9153 18653,8922 18609,8717
@@ -351,9 +352,9 @@ Parchimer Str.	1 22292,12198 22228,12274 22212,12349 22212,12422 22256,12489 222
 Ringbahnstr.	1 12934,6967 13081,7014
 #: by: Robert J. vvv
 #: corrected_by: Michael Kiekebusch (Radfahren auf breiten Gehweg möglich)
-Stiftsweg	1s:q3 11025,18531 11268,18851
+Stiftsweg	1s:q3 11001,18528 11268,18851
 #: note: zur Not könnte man entgegengesetzt auf dem Gehweg fahren, oder sogar auf dem für die Straßenbahn reservierten Fahrbahnteil
-Bleicheroder Str.	1 11268,18851 11439,18890 11526,18929 11620,18971 11725,19007 11805,19071
+Bleicheroder Str.	1 11268,18851 11439,18890 11526,18929 11622,18964 11727,19001 11762,19014 11805,19071
 #: by: ^^^
 Renée-Sintenis-Platz	1 5642,7255 5664,7244 5675,7224 5661,7202 5641,7189 5621,7204 5614,7223 5624,7244 5642,7255
 Spreepark	2 16023,8860 16161,8852
@@ -1427,7 +1428,8 @@ tragen (Treppe)	0:30 -7418,181
 #: by: stefan ruedel:
 #: note: Alexander (mrbubi13) schätzt 50 Stufen vvv
 tragen (Treppe, ca. 50 Stufen)	0:50 -6933,14317
-tragen (Treppe, ca. 50 Stufen)	0:50 -6934,14291
+#: confirmed_by: http://www.flickr.com/photos/30482855@N04/5555798133/in/pool-39413187@N00/
+tragen (Treppe, 50 Stufen)	0:50 -6934,14291
 #: note ^^^
 tragen (Treppe)	0:30 20673,7260
 tragen (Treppe, ca. 6 Stufen)	0:15 15488,8508

@@ -648,7 +648,7 @@ userdel	2::temp -8087,-1453 -8151,-1470 -8306,-1454
        {
          'source_id' => 'IM_012907',
          'until' => 1306853100,
-         'text' => 'Pasewalker Str. (Pankow): Baustelle, Fahrtrichtung gesperrt (bis Frühjahr 2011) stadteinwärts zwischen Marienstr. und Anschlussstelle A114, 02.06.2009 15:45 Uhr bis 31.05.2011 16:45 Uhr ',
+         'text' => 'Pasewalker Str. (Pankow): Baustelle, Fahrtrichtung gesperrt (bis Frühjahr 2011) stadteinwärts zwischen Marienstr. und Anschlussstelle A114, 02.06.2009 bis 31.05.2011',
          'from' => 1243863900,
          'id' => 1686,
          'data' => 'userdel	q4::inwork; 12095,20832 12076,20731 12030,20490 12008,20368 12000,20327 11984,20246 11963,20136 11931,19965 11907,19838 11907,19749
@@ -1673,7 +1673,7 @@ userdel	3 13150,7254 13047,7234 13034,7319
          'text' => 'Berliner Str. (Pankow): Baustelle, Fahrtrichtung stadteinwärts gesperrt, 05.10.2009 10:32 Uhr bis 30.03.2012 15:00 Uhr',
          'from' => 1254645120,
          'id' => 2172,
-         'data' => 'userdel	q4::inwork; 10680,18380 10755,18231 10829,18083 10846,17992
+         'data' => 'userdel	q4::inwork; 10680,18380 10755,18231 10829,18083 10846,17992 10859,17854
 ',
          'type' => 'handicap'
        },
@@ -1785,16 +1785,6 @@ userdel	q4::inwork; -12545,-698 -12262,-612
          'from' => 1299564000,
          'id' => 2190,
          'data' => 'userdel	q4::inwork 11603,15455 11688,15398
-',
-         'type' => 'handicap'
-       },
-       {
-         'source_id' => 'IM_016995',
-         'until' => 1300734000,
-         'text' => 'Straße Prenzlauer Berg (Prenzlauer Berg): Tiefbauarbeiten, Straße vollständig gesperrt in beiden Richtungen zwischen Prenzlauer Allee und Greifswalder Str., 07.03.2011 13:15 Uhr bis 21.03.2011 20:00 Uhr ',
-         'from' => 1299413700,
-         'id' => 2191,
-         'data' => 'userdel	q4::inwork 11545,13690 11257,13647
 ',
          'type' => 'handicap'
        }
