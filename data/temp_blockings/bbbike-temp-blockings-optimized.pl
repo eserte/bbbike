@@ -1604,24 +1604,15 @@ userdel	3 13150,7254 13047,7234 13034,7319
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_016525',
-         'until' => 1301317200,
-         'text' => 'Grünauer Str./Waltersdorfer Str. (Bohnsdorf bzw. Waltersdorf): Baustelle, Straße vollständig gesperrt, in beiden Richtungen zwischen Waldstr. und Apfelweg (ob der Radweg betroffen ist, ist unbekannt), 18.10.2010 08:00 Uhr bis 28.03.2011 15:00 Uhr',
-         'from' => 1287295200,
-         'id' => 2145,
-         'data' => 'userdel	2::inwork 21687,-3601 21696,-2925 22003,-1625
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
        undef,
        {
          'source_id' => 'IM_016598',
-         'until' => 1301580000,
-         'text' => 'Niederkirchnerstr. (Mitte): Baustelle, Fahrtrichtung gesperrt in Richtung Wilhelmstr., 29.10.2010 09:00 Uhr bis 31.03.2011 16:00 Uhr ',
+         'until' => 1301925600,
+         'text' => 'Niederkirchnerstr. (Mitte): Baustelle, Fahrtrichtung gesperrt in Richtung Wilhelmstr., 29.10.2010 bis 04.04.2011 ',
          'from' => 1288249200,
          'id' => 2150,
          'data' => 'userdel	q4::inwork; 8720,11226 8948,11257 9162,11286
@@ -1653,9 +1644,9 @@ userdel	3 13150,7254 13047,7234 13034,7319
        undef,
        {
          'source_id' => '106300839',
-         'until' => 1301695200,
-         'text' => 'Wustermark: K6304: Straßenneubau OD Priort (zw. Kartzow und Priort), 15.11.2010 bis 01.04.2011 ',
-         'from' => 1295723349,
+         'until' => 1302904800,
+         'text' => 'Wustermark: K6304: Straßenneubau OD Priort, 15.11.2010 bis 15.04.2011 ',
+         'from' => 1301342279,
          'id' => 2165,
          'data' => 'userdel	q4::inwork -19268,10819 -19323,11087 -19149,11495
 ',
@@ -1785,6 +1776,47 @@ userdel	q4::inwork; -12545,-698 -12262,-612
          'from' => 1299564000,
          'id' => 2190,
          'data' => 'userdel	q4::inwork 11603,15455 11688,15398
+',
+         'type' => 'handicap'
+       },
+       undef,
+       {
+         'source_id' => 'LS/W-SG33-K/11/033',
+         'until' => 1325372400,
+         'text' => 'Bad Wilsnack: L11: Ersatzneubau der Brücke über die Karthane OD Bad Wilsnack, 28.03.2011 bis 31.12.2011 ',
+         'from' => 1301342328,
+         'id' => 2192,
+         'data' => 'userdel	2::inwork -89568,59293 -91452,59580
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'INKO_105988',
+         'until' => 1301608799,
+         'text' => 'Hermann-Hesse-Str. (Pankow) Richtung Dietzgenstr. zwischen Tschaikowskistr. und Pastor-Niemöller-Platz Baustelle, Fahrtrichtung gesperrt (bis Ende 03.2011) ',
+         'from' => 1301342447,
+         'id' => 2193,
+         'data' => 'userdel	q4::inwork; 9501,18902 9681,19179 9811,19302
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_017035',
+         'until' => 1301497200,
+         'text' => 'Hermsdorfer Str. (Wittenau): geplatzte Wasserleitung, Straße vollständig gesperrt in beiden Richtungen zwischen Alt-Wittenau und Cyclopstr., 21.03.2011 09:58 Uhr bis 30.03.2011 17:00 Uhr ',
+         'from' => 1300611480,
+         'id' => 2194,
+         'data' => 'userdel	2::inwork 4775,21522 4772,21389
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'INKO_105693',
+         'until' => 1302904799,
+         'text' => 'Rennbahnstr. (Weißensee) Richtung Heinersdorf zwischen Pasedagplatz und Roelckestr. Baustelle, Fahrtrichtung gesperrt (bis Mitte 04/11) ',
+         'from' => 1301342612,
+         'id' => 2195,
+         'data' => 'userdel	q4::inwork; 14144,17165 14060,17221 13912,17320
 ',
          'type' => 'handicap'
        }

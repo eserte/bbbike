@@ -18442,8 +18442,8 @@ userdel	q4::inwork 30290,8562 30118,8128
 EOF
      },
      { from  => 1288249200, # 2010-10-28 09:00
-       until => 1301580000, # 2011-03-31 16:00
-       text  => 'Niederkirchnerstr. (Mitte): Baustelle, Fahrtrichtung gesperrt in Richtung Wilhelmstr., 29.10.2010 09:00 Uhr bis 31.03.2011 16:00 Uhr ',
+       until => 1301925600, # 2011-04-04 16:00
+       text  => 'Niederkirchnerstr. (Mitte): Baustelle, Fahrtrichtung gesperrt in Richtung Wilhelmstr., 29.10.2010 bis 04.04.2011 ',
        type  => 'handicap',
        source_id => 'IM_016598',
        data  => <<EOF,
@@ -18578,9 +18578,9 @@ EOF
 userdel	q4::inwork -5806,16403 -5830,16356 -5849,16199 -5875,15994 -5911,15877
 EOF
      },
-     { from  => 1295723349, # 2011-01-22 20:09
-       until => 1301695200, # 2011-04-02 00:00
-       text  => 'Wustermark: K6304: Straßenneubau OD Priort (zw. Kartzow und Priort), 15.11.2010 bis 01.04.2011 ',
+     { from  => 1301342279, # 2011-03-28 21:57
+       until => 1302904800, # 2011-04-16 00:00
+       text  => 'Wustermark: K6304: Straßenneubau OD Priort, 15.11.2010 bis 15.04.2011 ',
        type  => 'handicap',
        source_id => '106300839',
        data  => <<EOF,
@@ -18822,6 +18822,42 @@ EOF
        source_id => 'IM_016995',
        data  => <<EOF,
 userdel	q4::inwork 11545,13690 11257,13647
+EOF
+     },
+     { from  => 1301342328, # 2011-03-28 21:58
+       until => 1325372400, # 2012-01-01 00:00
+       text  => 'Bad Wilsnack: L11: Ersatzneubau der Brücke über die Karthane OD Bad Wilsnack, 28.03.2011 bis 31.12.2011 ',
+       type  => 'gesperrt',
+       source_id => 'LS/W-SG33-K/11/033',
+       data  => <<EOF,
+userdel	2::inwork -89568,59293 -91452,59580
+EOF
+     },
+     { from  => 1301342447, # 2011-03-28 22:00
+       until => 1301608799, # 2011-03-31 23:59
+       text  => 'Hermann-Hesse-Str. (Pankow) Richtung Dietzgenstr. zwischen Tschaikowskistr. und Pastor-Niemöller-Platz Baustelle, Fahrtrichtung gesperrt (bis Ende 03.2011) ',
+       type  => 'handicap',
+       source_id => 'INKO_105988',
+       data  => <<EOF,
+userdel	q4::inwork; 9501,18902 9681,19179 9811,19302
+EOF
+     },
+     { from  => 1300611480, # 2011-03-20 09:58
+       until => 1301497200, # 2011-03-30 17:00
+       text  => 'Hermsdorfer Str. (Wittenau): geplatzte Wasserleitung, Straße vollständig gesperrt in beiden Richtungen zwischen Alt-Wittenau und Cyclopstr., 21.03.2011 09:58 Uhr bis 30.03.2011 17:00 Uhr ',
+       type  => 'gesperrt',
+       source_id => 'IM_017035',
+       data  => <<EOF,
+userdel	2::inwork 4775,21522 4772,21389
+EOF
+     },
+     { from  => 1301342612, # 2011-03-28 22:03
+       until => 1302904799, # 2011-04-15 23:59
+       text  => 'Rennbahnstr. (Weißensee) Richtung Heinersdorf zwischen Pasedagplatz und Roelckestr. Baustelle, Fahrtrichtung gesperrt (bis Mitte 04/11) ',
+       type  => 'handicap',
+       source_id => 'INKO_105693',
+       data  => <<EOF,
+userdel	q4::inwork; 14144,17165 14060,17221 13912,17320
 EOF
      },
     );
