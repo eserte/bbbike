@@ -1469,16 +1469,7 @@ userdel	q4::inwork; 12598,8390 12771,8439
          'type' => 'handicap'
        },
        undef,
-       {
-         'source_id' => 'LS/O-SG33-F/10/013',
-         'until' => 1301565600,
-         'text' => 'Tauche: B87: Ausbau der Ortslage Trebatsch hier: Vollsperrung der Spreebrücke B 87, Ortslage Trebatsch, 24.02.2010 bis 31.03.2011 ',
-         'from' => 1278267896,
-         'id' => 2092,
-         'data' => 'userdel	2::inwork 63609,-34428 63520,-34874
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1800,16 +1791,7 @@ userdel	q4::inwork; -12545,-698 -12262,-612
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_017035',
-         'until' => 1301497200,
-         'text' => 'Hermsdorfer Str. (Wittenau): geplatzte Wasserleitung, Straße vollständig gesperrt in beiden Richtungen zwischen Alt-Wittenau und Cyclopstr., 21.03.2011 09:58 Uhr bis 30.03.2011 17:00 Uhr ',
-         'from' => 1300611480,
-         'id' => 2194,
-         'data' => 'userdel	2::inwork 4775,21522 4772,21389
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'INKO_105693',
          'until' => 1302904799,
