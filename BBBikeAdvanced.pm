@@ -3331,12 +3331,24 @@ sub search_anything {
 			    if (/^#:\s*encoding:\s*(.*)/) {
 				Strassen::switch_encoding(\*GREP, $1);
 			    }
-			    if (/^#:\s*alias(_wide):?\s*($s_rx.*)$/i) {
+			    if (/^#:\s*alias(?:_wide)?:?\s*($s_rx.*)$/i) {
 				my $alias = $1;
 				while(<GREP>) {
 				    next if /^#/;
 				    my $non_aliased_rec = Strassen::parse($_);
-				    $non_aliased_rec->[Strassen::NAME()] .= " ($1)";
+				    $non_aliased_rec->[Strassen::NAME()] .= " ($alias)";
+				    $non_aliased_rec->[3] = [];
+				    push @matches, $non_aliased_rec;
+				    next BBD_LINE;
+				}
+			    } elsif (/^#:\s*oldname:\s+\S+\s+($s_rx.*)$/i) { # don't need to check for age, this is already done in the strassen-orig -> strassen creation (-keep-old-name)
+				# XXX unfortunately osm2bbd currently dumps *all* oldname, also too old ones
+				# XXX almost duplicated code, see above...
+				my $oldname = $1;
+				while(<GREP>) {
+				    next if /^#/;
+				    my $non_aliased_rec = Strassen::parse($_);
+				    $non_aliased_rec->[Strassen::NAME()] .= " (" . M("alt") . ": $oldname)";
 				    $non_aliased_rec->[3] = [];
 				    push @matches, $non_aliased_rec;
 				    next BBD_LINE;
