@@ -18714,7 +18714,7 @@ userdel	q4::inwork; 9164,12172 9183,12076
 EOF
      },
      { from  => 1297067400, # 2011-02-07 09:30
-       until => 1325347200, # 2011-12-31 17:00
+       until => 1301752523, # 2011-12-31 17:00 XXX 1325347200
        text  => 'Behrenstr. (Mitte): Baustelle, Fahrtrichtung gesperrt (die Behrenstr. ist Richtung Glinkastr von Friedrichstr. kommend eine Sackgasse) Richtung Friedrichstr. im Kreuzungsbereich Glinkastr. (bis Ende 2011)',
        type  => 'handicap',
        source_id => 'IM_016911',

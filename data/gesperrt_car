@@ -810,8 +810,12 @@ keine Abbiegemöglichkeit	3nocross::ignrte 20064,3278 20010,3340 19904,3464
 Weerthstr. -> Adlergestell: keine Abbiegemöglichkeit	3::igndisp 20038,3357 20010,3340 20064,3278
 Adlergestell -> Weerthstr.: keine Abbiegemöglichkeit	3::igndisp 19904,3464 20010,3340 20038,3357
 Mittelstreifen	3nocross::ignrte 5542,11075 5459,11135 5268,11274
+Jebensstr. -> Yva-Bogen: Mittelstreifen	3::igndisp 5587,11397 5459,11135 5426,11039
 Jebensstr. -> Hardenbergstr.: Mittelstreifen	3::igndisp 5587,11397 5459,11135 5542,11075
 Hardenbergstr. -> Jebensstr.: Mittelstreifen	3::igndisp 5268,11274 5459,11135 5587,11397
+Yva-Bogen -> Jebensstr.: Mittelstreifen	3::igndisp 5426,11039 5459,11135 5587,11397
+Yva-Bogen -> Hardenbergstr.: Mittelstreifen	3::igndisp 5426,11039 5459,11135 5268,11274
+Hardenbergstr. -> Yva-Bogen: Mittelstreifen	3::igndisp 5542,11075 5459,11135 5426,11039
 Mittelstreifen	3nocross::ignrte 6757,13112 6860,13093 6966,13075
 Alt-Moabit -> Calvinstr.: Mittelstreifen	3::igndisp 6966,13075 6860,13093 6802,12797
 Calvinstr. -> Alt-Moabit: Mittelstreifen	3::igndisp 6802,12797 6860,13093 6757,13112

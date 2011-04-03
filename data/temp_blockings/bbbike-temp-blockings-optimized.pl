@@ -1400,7 +1400,7 @@ userdel	q4::inwork; 12598,8390 12771,8439
        {
          'until' => undef,
          'permanent' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im März bis 19.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im April bis 20.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'from' => undef,
          'id' => 2068,
          'data' => '(Eingang Columbiadamm - Rundkurs auf dem Flughafen Tempelhof)	2::night 10691,8532 10640,8366 10598,8270 10575,8218
@@ -1681,28 +1681,10 @@ userdel	3 13150,7254 13047,7234 13034,7319
        },
        undef,
        undef,
-       {
-         'source_id' => 'LS/S-SG33-W/11/013',
-         'until' => 1301608800,
-         'text' => 'Teupitz: L74: Überflutung der gesamten Fahrbahn zwischen Egsdorf und Teupitz der Verkehr wird einspurig über ein Provisorium geführt, 18.01.2011 bis 31.03.2011 ',
-         'from' => 1297201855,
-         'id' => 2177,
-         'data' => 'userdel	q4::inwork 23962,-30831 24550,-30862
-',
-         'type' => 'handicap'
-       },
        undef,
        undef,
-       {
-         'source_id' => 'IM_016911',
-         'until' => 1325347200,
-         'text' => 'Behrenstr. (Mitte): Baustelle, Fahrtrichtung gesperrt (die Behrenstr. ist Richtung Glinkastr von Friedrichstr. kommend eine Sackgasse) Richtung Friedrichstr. im Kreuzungsbereich Glinkastr. (bis Ende 2011)',
-         'from' => 1297067400,
-         'id' => 2180,
-         'data' => 'userdel	q4::inwork 9373,12197 9164,12172
-',
-         'type' => 'handicap'
-       },
+       undef,
+       undef,
        undef,
        {
          'source_id' => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20110303.0840.333719.html',
@@ -1781,16 +1763,7 @@ userdel	q4::inwork; -12545,-698 -12262,-612
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'INKO_105988',
-         'until' => 1301608799,
-         'text' => 'Hermann-Hesse-Str. (Pankow) Richtung Dietzgenstr. zwischen Tschaikowskistr. und Pastor-Niemöller-Platz Baustelle, Fahrtrichtung gesperrt (bis Ende 03.2011) ',
-         'from' => 1301342447,
-         'id' => 2193,
-         'data' => 'userdel	q4::inwork; 9501,18902 9681,19179 9811,19302
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'source_id' => 'INKO_105693',

@@ -24,20 +24,21 @@ Oberwallstr.: Bauarbeiten, Einbahnstraße	q4::inwork; 9925,11947 9913,12068
 # 
 #: last_checked: 2011-03-30
 Varian-Fry-Str.: Baustelle, Fahrbahn gesperrt	q4::inwork 8389,11378 8374,11479
-#XXX del --- #: last_checked: 2010-10-29 --- General-Pape-Str.: Baustelle, Fahrbahn Richtung Norden gesperrt	q4::inwork; 7959,7609 7921,7728 7950,7840
-#: last_checked: 2010-11-28
+# 
+#: last_checked: 2011-04-02
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 9475,12365 9462,12481 9454,12558
-#: last_checked: 2010-11-28
+# 
+#: last_checked: 2011-04-02
 Universitätsstr.: wegen Bauarbeiten Richtung Unter den Linden gesperrt	q4::inwork; 9580,12581 9601,12380
-#XXX del --- #: last_checked: 2010-11-28 --- Planckstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 9434,12669 9385,12809 9383,12915
+# 
 #: next_check: 2011-06-01
 Matkowskystr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 14530,11137 14509,11060
+# 
 #: last_checked: 2011-03-03
 #: next_check: 2011-07-01
 Rathausstr.: Baustelle vor dem Roten Rathaus, eng	q4::inwork 10601,12521 10704,12595
-#: by: ^^^
-#: last_checked: 2010-11-06
-Jägerstr.: Einbahnstraße	q4::inwork; 9394,11996 9201,11968
+# 
+#XXX del --- #: last_checked: 2010-11-06 --- Jägerstr.: Einbahnstraße	q4::inwork; 9394,11996 9201,11968
 # 
 #: last_checked: 2011-02-27
 #: next_check: 2011-07-15
@@ -363,7 +364,9 @@ Wanzlikpfad: eng und kurvig, Fußgänger	q3 13268,7801 13311,7915
 (Fischzug - Uferweg): Spielplatz, zwei Schwinggitter	q4 15219,10079 15260,10048
 (Alt-Stralau - Spreeufer): Fußgänger, Radfahren erlaubt	q1 14652,10201 14581,10067 14582,10048
 (Spreeufer): Fußgänger, Radfahren erlaubt	q1 14582,10048 14599,10039 14776,9949 14996,9809
-Caroline-Tübbecke-Ufer: Fußgänger, Radfahren erlaubt	q1 14996,9809 15153,9749 15367,9691
+Caroline-Tübbecke-Ufer: Fußgänger, Radfahren erlaubt	q1 14996,9809 15153,9749 15270,9718
+Caroline-Tübbecke-Ufer: Fußgänger, sehr eng, Radfahren erlaubt	q3 15270,9718 15287,9713
+Caroline-Tübbecke-Ufer: Fußgänger, Radfahren erlaubt	q1 15287,9713 15367,9691
 (Wendenwiese): Fußgänger, Radfahren erlaubt	q1 15367,9691 15399,9679 15465,9626 15512,9680
 (Alt-Stralau - Spreeufer): Fußgänger, Radfahren erlaubt, kurze Rampe	q2 15020,9875 14996,9809
 (Strela-Park): Fußgänger	q1 15400,9742 15465,9860
@@ -771,6 +774,8 @@ Ugandastr.: enge Straße	q1 6071,15768 5906,15623
 Limburger Str.: Fußgänger	q2 7012,15571 7129,15717
 Litfaß-Platz: Fußgängerzone, Radfahren erlaubt	q3 10348,12879 10312,12982
 (Finkenweg - Mariendorfer Damm): Fußgänger	q1 9360,4996 9239,4980
+Yva-Bogen: Fußgängerzone	q4 5373,10981 5426,11039 5459,11135
+(Georgenkirchstr. - Mollstr.): Fußgänger	q1 11589,13305 11524,13247
 ######################### User Contributions #################################
 #: by: Michael Kiekbusch
 #: corrected_by: srt/policy (q4 -> q3-)

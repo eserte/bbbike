@@ -48,12 +48,12 @@ Zossener Str./Lindenstr.	?::projected 9856,10358 9873,10285
 #: next_check: 2011-05-15
 Stülerstr.	?::projected 6825,11486 6716,11439 6692,11365 6679,11319 6630,11247 6606,11222
 #
-#: last_checked: 2010-12-12
-#: next_check: 2011-02-01
+#: last_checked: 2011-04-02
+#: next_check: 2011-07-01
 Danziger Str.	?::projected 11712,14868 11879,14771 11990,14714 12040,14688 12128,14640 12317,14535 12425,14459 12630,14306 12729,14227 12901,14093 12975,13990 13037,13897 13100,13803 13166,13707 13225,13620 13228,13615 13330,13468
 #
-#: last_checked: 2010-12-12
-#: next_check: 2011-02-01
+#: last_checked: 2011-04-02
+#: next_check: 2011-07-01
 Kniprodestr./Am Friedrichshain	?::projected 12901,14093 12784,13961 12695,13864 12654,13819 12571,13798 12403,13755 12204,13719 12161,13711 12038,13685 11868,13646 11785,13625 11762,13619 11706,13635
 #
 #: last_checked: 2010-07 (by Roland Krause)
@@ -73,7 +73,8 @@ Neuendorfer Str.	?::projected -2883,15571 -2856,15687 -2869,15782
 #: next_check: 2010-08-24 (public)
 Neuendorfer Str.: Radspuren werden ab 9. August 2010 markiert	?::inwork -2869,15782 -2886,15867 -2915,15994 -3040,16246
 # 
-#: next_check: 2010-11-01
+#: next_check: 2011-05-01
+#: last_checked: 2011-04-01
 Uhlandstr.	?::projected 4984,9675 5004,9842 5026,10038 5036,10139 5063,10384
 # 
 #: next_check: 2010-03-01 vvv
@@ -285,6 +286,10 @@ Wolzenseeweg: Qualität?	? -1798,16465 -1715,16449
 #: by: http://www.potsdam.de/cms/beitrag/10061626/966975/
 Mangerstr.: Bauarbeiten bis September 2011, danach asphaltiert	?::inwork -11669,-138 -11751,-58 -11831,-70 -11903,-71 -12000,-156 -12064,-284
 # 
+#: next_check: 2011-11-15
+#: by: http://www.potsdam.de/cms/beitrag/10079162/1191938/
+Mangerstr.: Bauarbeiten bis November 2011, danach vielleicht etwas besseres Kleinsteinpflaster?	?::inwork -12064,-284 -12000,-156 -11903,-71 -11831,-70 -11751,-58
+# 
 #: last_checked: 2010-09-02
 #: next_check: 2010-12-15
 #: by: http://www.potsdam.de/cms/beitrag/10067476/966975/
@@ -338,8 +343,8 @@ Alt-Biesdorf/Alt-Kaulsdorf (südliche Seite): Bau von Radwegen	? 21108,11628 2125
 #: by ^^^
 # 
 #: by: MoPo 2009-08-01, soll 2010 realisiert werden vvv
-#: last_checked: 2010-09-18
-#: next_check: 2011-01-01
+#: last_checked: 2011-04-01
+#: next_check: 2011-07-01
 Fasanenstr.: Öffnung der Einbahnstraße für Radfahrer	? 5268,11274 5247,10992 5242,10918 5229,10716 5207,10399
 #: last_checked: 2011-03-08
 #: next_check: 2011-06-01
@@ -4643,9 +4648,3 @@ Elisenweg (Potsdam): Qualität?	? -17194,-4659 -17217,-4610 -17235,-4609 -17599,-
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/10re.pdf/file
 #: XXX fehlt in Berlin.coords.data
 Karlshöhe: wo genau liegt die Straße? Qualität?	? 11972,23260 11281,23876
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/12re.pdf/file
-#: XXX fehlt in Berlin.coords.data
-Iva-Bogen: Qualität? Fußgängeraufkommen? Kann die Hardenbergstr. überquert werden?	? 5373,10981 5426,11039 5459,11135
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/12re.pdf/file
-#: XXX fehlt in Berlin.coords.data, Ortsteil Friedrichshain
-Pauline-Staegemann-Str.: Qualität? Kann die Mollstr. überquert werden?	? 11589,13305 11557,13228
