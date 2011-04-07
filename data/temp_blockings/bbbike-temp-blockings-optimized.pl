@@ -1318,12 +1318,13 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        {
          'source_id' => 'IM_015434',
-         'until' => 1302861600,
+         'until' => undef,
          'text' => 'Erkstr. (Neukölln): Baustelle, Fahrtrichtung Richtung Sonnenallee gesperrt (bis Mitte 4/2011)',
          'from' => 1269772860,
          'id' => 2033,
-         'data' => '#: last_checked: 2011-02-25
-#: next_check: 2011-03-25
+         'data' => '#: last_checked: 2011-04-07
+#: next_check: 2011-04-25
+#: XXX nach den Bauarbeiten vielleicht besserer Asphalt? Siehe qualitaet_s-orig...
 userdel	q4::inwork; 12598,8390 12771,8439
 ',
          'type' => 'handicap'
@@ -1600,16 +1601,7 @@ userdel	3 13150,7254 13047,7234 13034,7319
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_016598',
-         'until' => 1301925600,
-         'text' => 'Niederkirchnerstr. (Mitte): Baustelle, Fahrtrichtung gesperrt in Richtung Wilhelmstr., 29.10.2010 bis 04.04.2011 ',
-         'from' => 1288249200,
-         'id' => 2150,
-         'data' => 'userdel	q4::inwork; 8720,11226 8948,11257 9162,11286
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        {

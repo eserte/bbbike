@@ -4521,7 +4521,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4 10213,8665 9801,8683 9570,8715 9395,8726 9364,8640 9321,8607 9233,8597
-userdel	q4 9395,8726 9272,8781 9229,8785 9229,8718 9233,8597 9238,8410 9238,8253 9240,8028 9240,7797 9242,7658 9242,7325 9242,7286 9242,7218 9242,7145
+userdel	q4 9395,8726 9272,8781 9229,8785 9229,8718 9233,8597 9238,8410 9238,8253 9239,8099 9240,8028 9240,7991 9240,7797 9242,7658 9242,7325 9242,7286 9242,7218 9242,7145
 userdel auto	3 9227,8890 9229,8785 9076,8783
 userdel auto	3 9076,8783 9229,8785 9227,8890
 EOF
@@ -17288,13 +17288,14 @@ userdel	2::inwork 50359,-20087 49368,-19096
 EOF
      },
      { from  => 1269772860, # 2010-03-28 12:41
-       until => Time::Local::timelocal(reverse(2011-1900,4-1,15,12,0,0)), # 1291734000, # 2010-12-07 16:00
+       until => undef, # XXX Time::Local::timelocal(reverse(2011-1900,4-1,15,12,0,0)), # 1291734000, # 2010-12-07 16:00
        text  => 'Erkstr. (Neukölln): Baustelle, Fahrtrichtung Richtung Sonnenallee gesperrt (bis Mitte 4/2011)',
        type  => 'handicap',
        source_id => 'IM_015434',
        data  => <<EOF,
-#: last_checked: 2011-02-25
-#: next_check: 2011-03-25
+#: last_checked: 2011-04-07
+#: next_check: 2011-04-25
+#: XXX nach den Bauarbeiten vielleicht besserer Asphalt? Siehe qualitaet_s-orig...
 userdel	q4::inwork; 12598,8390 12771,8439
 EOF
      },

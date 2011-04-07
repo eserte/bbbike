@@ -63,19 +63,18 @@ Radweg vorhanden, aber Benutzung verboten (Gehwegschäden)	RW0; 9022,10857 8939,1
 Verbundsteinpflaster	RW1; 9229,8718 9233,8597 9238,8410
 #: note: neu gebaut, trotzdem schon nach wenigen Monaten leichte Unebenheiten
 asphaltiert, leicht uneben	RW1; 9238,8410 9238,8253
-#: XXX nördl. und südl. des Bahnhofseingangs fehlt noch der Radweg, wird zukünftig direkt neben der Fahrbahn geführt
-#: last_checked: 2011-02-25
-#: next_check: 2011-03-15
-asphaltiert, leicht uneben	RW1; 9238,8253 9240,8028 9240,7797
+asphaltiert, leicht uneben	RW1; 9238,8253 9239,8099
+	RW3; 9239,8099 9240,8028 9240,7991
+asphaltiert, leicht uneben	RW1; 9240,7991 9240,7797
 asphaltiert, leicht uneben	RW1; 9240,7797 9242,7658 9242,7325
 #: XXX laut Tsp vom 2010-03-26 wird der Radweg gerade erneuert
 #: XXX auch unterhalb der S-Bahnbrücke wird gerade gebaut
 #: last_checked: 2011-03-19
 asphaltiert, aber schlechter Zustand	RW1; 9242,7325 9242,7286
 #: XXX laut Tsp vom 2010-03-26 wird der Radweg gerade erneuert (Richtung Norden)
-#: last_checked: 2011-02-25
-#: next_check: 2011-05-01
-asphaltiert, aber mäßiger Zustand (Wurzelschäden)	RW1; 9242,7286 9242,7325 9242,7658 9240,7797 9240,8028 9238,8253 9238,8410 9233,8597 9229,8718
+#: last_checked: 2011-04-07
+#: next_check: 2011-07-15
+asphaltiert, aber mäßiger Zustand (Wurzelschäden)	RW1; 9242,7286 9242,7325 9242,7658 9240,7797 9240,7991 9240,8028 9239,8099 9238,8253 9238,8410 9233,8597 9229,8718
 	RW1;RW1 8715,7384 8806,7382 8879,7378 8971,7359 9051,7340 9104,7291 9242,7286
 	RW1;RW1 8715,7384 8716,7323 8718,7095 8717,6965 8743,6778 8728,6701 8722,6656 8707,6537 8697,6455 8680,6322 8661,6169 8641,5998 8622,5867 8617,5745 8610,5579 8606,5496
 	RW1;RW 8606,5496 8642,5422
@@ -638,7 +637,7 @@ gemeinsamer Rad- und Gehweg	RW2; 22428,6063 22475,6151
 	RW1; 15378,8668 15591,8848
 die ersten 50 Meter mit abgesperrtem Radweg	RW0; 15591,8848 15378,8668
 	RW1;RW2 14089,9610 14179,9515 14242,9448 14382,9299 14443,9233 14529,9141 14563,9106 14614,9052 14739,8919 14842,8809 14852,8799 14934,8717 15002,8651 15070,8584 15079,8575 15166,8489
-	RW1;RW1 13535,10184 13579,10146 13789,9949 13829,9905
+	RW1;RW1 13535,10184 13579,10146 13711,10022 13789,9949 13829,9905
 	RW1;RW0 -7309,-1387 -7415,-1470 -7821,-1890 -7916,-2015
 	RW;RW -1155,3255 -1226,3102 -1269,2892
 	RW;RW1 -1269,2892 -1249,2590
