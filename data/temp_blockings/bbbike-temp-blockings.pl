@@ -15759,7 +15759,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_013988',
        data  => <<EOF,
-userdel	2::inwork 2414,12418 2224,12397 2157,12389
+userdel	2::inwork 2414,12418 2280,12403 2224,12397 2157,12389
 EOF
      },
      { from  => 1251833280, # 2009-09-01 21:28
@@ -18448,7 +18448,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_016598',
        data  => <<EOF,
-userdel	q4::inwork; 8720,11226 8948,11257 9162,11286
+userdel	q4::inwork; 8720,11226 9162,11286
 EOF
      },
      { from  => 1288238400, # 2010-10-28 06:00
@@ -18859,6 +18859,15 @@ EOF
        source_id => 'INKO_105693',
        data  => <<EOF,
 userdel	q4::inwork; 14144,17165 14060,17221 13912,17320
+EOF
+     },
+     { from  => undef, #
+       until => undef, #
+       text  => 'Albrecht-Thaer-Weg: Privatstraße, eventuell zeitweise gesperrt (nachts?)',
+       type  => 'gesperrt',
+       permanent => 1,
+       data  => <<EOF,
+Albrecht-Thaer-Weg: Privatstraße, evtl. nicht geöffnet	2::night 3347,6460 3449,6863
 EOF
      },
     );

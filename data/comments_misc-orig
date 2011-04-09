@@ -86,9 +86,7 @@ Kreisverkehr	Roundabout 26302,-11712
 #: by: Marita:
 (Waldweg über den Beyschlagtunnel): bei Regen Rutschgefahr	CS 332,22372 742,22666
 Privatstraße der DB	CS 5710,7820 6275,7847
-#: add_fragezeichen: wird der Albrecht-Thaer-Weg manchmal geschlossen?
-#: XXX_prog: should not appear in fragezeichen-outdoor-nextcheck!
-Albrecht-Thaer-Weg: Privatstraße, evtl. nicht geöffnet	CS 3347,6460 3449,6863
+Albrecht-Thaer-Weg: Privatstraße, Tore bei den Einfahrten	CS 3347,6460 3449,6863
 #: add_fragezeichen: wird dieser Weg tatsächlich nachts geschlossen?
 #: XXX_prog: should not appear in fragezeichen-outdoor-nextcheck!
 (Weg über das Sportgelände): evtl. nachts geschlossen	CS 13252,14179 13385,13992
@@ -114,7 +112,7 @@ Bonhoefferweg: Gelände der Charité	CS 8538,13388 8487,13351 8434,13310
 Sauerbruchweg: Gelände der Charité	CS 8487,13351 8555,13260 8605,13200 8630,13172
 (Luisenstr. - Hufelandweg): Gelände der Charité	CS 8665,13353 8582,13355
 (Reichsstr. - Westendallee): Privatstraße	CS 269,12576 151,12541
-(Guerickestr. - Einsteinufer): Privatstraße	CS 4642,12275 4711,12411
+(Guerickestr. - Einsteinufer): Privatstraße	CS 4601,12310 4658,12450
 #: XXX_prog: trailer=no implementation missing
 Stromstr: kann über schmale Furt (keine Anhänger!) gequert werden	CS 6218,12975 6190,12978 6165,12985 6106,12989
 Am Wriezener Bahnhof: Privatstraße zu diversen Märkten	CS 12794,11893 12993,11717
@@ -599,7 +597,7 @@ Bus 123	busroute_N 3413,14721 3429,14631 3442,14562 3450,14507 3460,14432 3473,1
 Bus 123	busroute_N 4301,14925 4172,15098 4148,15205 4148,15220 4158,15285 4150,15304 4080,15458 3993,15651
 Bus 123	busroute_N 2675,14744 2671,14653 2664,14470 2597,14288 2548,14248 2384,14237 2380,14392 2374,14583 2207,14576 2142,14573 2081,14570 2009,14567 1974,14565 1871,14556 1881,14425 1361,14431 1360,14375
 Bus 309	busroute_N 2414,12418 2397,12513 2350,12784 2295,13031 2362,13046 2455,13058 2516,13060 2546,12821 2350,12784
-Bus 245	busroute_N 4598,12501 4711,12411 4819,12338 4981,12252
+Bus 245	busroute_N 4598,12501 4658,12450 4819,12338 4981,12252
 Bus 309	busroute_N 3546,10962 3827,10980 3942,11010 3975,11087
 Bus 139	busroute_N 2340,11045 2346,11147 2272,11074 2252,11037
 Bus 100, ...	busroute_N 5356,11500 5587,11397 5666,11362 5565,11147 5542,11075 5590,11118 5698,11333 5666,11362
@@ -943,3 +941,7 @@ ausgeschildert als "Zum Finkenweg"	CP2; 9239,4980 9360,4996
 #: last_checked: 2011-04-01
 #: next_check: 2011-05-26
 Yva-Bogen: nicht ausgeschildert; zwischen Hotel und S-Bahnviadukt	CS 5373,10981 5426,11039 5459,11135
+(Privatstraße am Karl-Fischer-Weg): Privatstraße	CS 7202,5016 7180,4913
+Carl-Ludwig-Schleich-Promenade: nicht ausgeschildert	CP2; 2315,8431 2316,8469
+Carl-Ludwig-Schleich-Promenade: nicht ausgeschildert	CP2; 2279,8638 2317,8616
+Carl-Ludwig-Schleich-Promenade: nicht ausgeschildert	CP2; 2361,8608 2317,8616

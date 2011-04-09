@@ -1044,7 +1044,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 5329,10422
 	F 6223,10634
 	X 4267,10724
-	X 4525,12333
+	X 4518,12350
 # an der Deutschlandhalle, nur bei Veranstaltungen an vvv
 #X	X 5656,8112
 #X	X 5623,8175
@@ -1278,6 +1278,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 14266,12446
 	X 5271,4547
 	X 5671,3987
+#: XXX_prog: keine Ampel aus Richtung Birkbuschstr.
 	X 4807,5131
 	X 25519,4830
 	X 990,14062
@@ -1293,11 +1294,11 @@ nur Richtung O	X 8142,7221
 	X 9731,3889
 	X 7228,4728
 	X 6191,4923
-	X 5716,5090
+	F 5689,5109
 	X 5601,5169
 	X 5687,5486
 	X 5492,4952
-	X 6114,5284
+	F 6115,5302
 	X 6134,5800
 	X 8318,4558
 	X 8496,4331
@@ -1308,7 +1309,7 @@ nur Richtung O	X 8142,7221
 	X 5414,5939
 	X 5345,5994
 	X 6104,6258
-	X 5434,5278
+	F 5397,5302
 	F 5092,5493
 	X 8665,24941
 	X 3174,23273
@@ -1522,7 +1523,7 @@ nur Richtung O	X 8142,7221
 	X -4351,12460
 	X 419,12397
 	X 1286,11834
-	F 1854,11089
+	F 1775,11135
 	X 3358,12258
 	X 10453,-2133
 	X 10747,-2129
@@ -2574,6 +2575,9 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F 6829,21160
 #: note: public imagery
 	X 21165,18715
+	X 7830,4667
+	F 2629,7771
+	F 2524,7900
 ################################################################################
 # note: Potsdam vvv
 #: by: http://www.potsdam.de/cms/beitrag/10067917/966975/

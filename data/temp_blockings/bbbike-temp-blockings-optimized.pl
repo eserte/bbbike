@@ -1766,6 +1766,16 @@ userdel	q4::inwork; -12545,-698 -12262,-612
          'data' => 'userdel	q4::inwork; 14144,17165 14060,17221 13912,17320
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => undef,
+         'permanent' => 1,
+         'text' => 'Albrecht-Thaer-Weg: Privatstraße, eventuell zeitweise gesperrt (nachts?)',
+         'from' => undef,
+         'id' => 2196,
+         'data' => 'Albrecht-Thaer-Weg: Privatstraße, evtl. nicht geöffnet	2::night 3347,6460 3449,6863
+',
+         'type' => 'gesperrt'
        }
      
 );

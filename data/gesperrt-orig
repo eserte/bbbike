@@ -196,7 +196,7 @@ Schildhornstr.	1 4903,6221 4962,6218 5165,6119
 Schildhornstr.	1 5137,6066 5047,6116 4903,6221
 Atzpodienstr.	1 16485,12384 16445,12193 16413,11906
 #: by: Robert Joop:
-Alt-Lietzow	1 4219,12324 4116,12349 4066,12368 4079,12411 4137,12411 4250,12390
+Alt-Lietzow	1 4219,12324 4101,12356 4066,12368 4079,12411 4137,12411 4250,12390
 Martin-Wagner-Ring	1 12796,3821 12895,3991 12941,4015 12995,4003 13007,3949 12913,3743
 Wilskistr.	1 -402,4012 -343,4056 -303,4086 -219,4149 -151,4228 21,4434 207,4575 301,4643 418,4696 528,4747 636,4765 798,4766
 Grazer Platz	1 6442,6788 6529,6798 6679,6816 6793,6814
@@ -250,7 +250,6 @@ Erlenweg	1 -3228,18103 -3327,18007
 Aspenweg	1 -3000,18192 -3020,18188 -3050,18164 -3096,18119 -3111,18105 -3168,18051 -3203,18014 -3224,17943
 Aspenweg	1 -3288,17831 -3244,17883 -3224,17943
 Pintschstr.	1 13342,13185 13438,12965
-Dievenowstr.	1 3228,7401 3208,7328 3189,7249 3206,7109
 Wolliner Str.	1 10405,14425 10320,14608
 Splanemannstr.	1 18301,9946 18389,9925 18408,10041 18403,10077
 Burgherrenstr.	1 8969,8640 9076,8783
@@ -272,8 +271,8 @@ Gritznerstr.	1 4507,6320 4555,6403
 Duisburger Str.	1 4183,10144 3874,10153
 Straße 462	1 4914,17399 5068,17384
 Havensteinstr.	1 6293,2583 6463,2724 6593,2831
-Worpsweder Str.	1 6191,4923 6203,5138
-Wilseder Str.	1 6295,5132 6288,4906
+Worpsweder Str.	1 6191,4923 6202,5163
+Wilseder Str.	1 6295,5158 6288,4906
 Dickhardtstr.	1 5817,7223 5824,6974 5828,6839 5778,6754 5604,6709 5533,6753
 Roennebergstr.	1 5533,6753 5357,6932
 Schmitzweg	1 5879,19352 5858,19437 5831,19547 5731,19824
@@ -912,8 +911,8 @@ Johanna-Spyri-Weg	1s:q1 3211,2221 3221,2473
 Seelbuschring	1s:q3 8485,4619 8432,4712 8242,4648
 #: note: die Straßenbahn fährt hier auch lang
 Zionskirchstr.	1s:q1 10389,14274 10426,14262
-Walsroder Str.	1s 6396,5125 6295,5132 6203,5138 6089,5145
-Hünensteig	1s 6415,5028 6393,5028 6396,5125
+Walsroder Str.	1s:q3 6395,5154 6295,5158 6202,5163 6094,5171
+Hünensteig	1s:q3 6419,5048 6387,5057 6395,5154
 #: note: Radfahren auf dem Uferweg ist wohl Sitte
 Paul-Lincke-Ufer: Uferweg ist als Alternative vorhanden. Allerdings kann man aus der Lausitzer Str. nicht in den Uferweg einbiegen	1s:q2 12119,9823 11946,9913 11735,10022 11512,10105
 Czeminskistr.	1s:q3 7604,8927 7563,8871
@@ -957,6 +956,7 @@ Hönower Str. (Karlshorst) (Ausweichen auf Sandbankette möglich)	1s:q2 18377,9366
 # gesperrte Wegführung (nicht möglich zu umgehen --- wenn es eine
 # Umgehung gibt, sollte sie in comments_path-orig als PI; kommentiert sein)
 # 
+Munsterdamm: Mittelstreifen	3nocross 6771,5273 6767,5233 6747,5010
 Puschkinallee: Hecken	3nocross 13789,9949 13711,10022 13579,10146
 Urbanstr.: unbequem passierbarer Mittelstreifen (hohe Kanten)	3nocross 11274,9492 11383,9446 11509,9392
 #: by: Rainer (ghostviewer...)
@@ -1237,12 +1237,14 @@ Waltersdorfer Chaussee: Mittelstreifen	3nocross 18009,-193 17946,-100 17879,-3
 Neuköllner Str.: Mittelstreifen	3nocross 16698,1392 16643,1460 16450,1691
 Rollbergstr.: Zaun, Mauer	3 12295,8154 12327,8161 12407,8177
 Rollbergstr.: Zaun, Mauer	3 12407,8177 12327,8161 12295,8154
+Schorlemerallee: Mittelstreifen	3nocross 3306,6453 3347,6460 3459,6484
 #
 ####################################################################
 #
 # Stellen, an denen getragen werden muß:
 # die Zahl hinter dem ":" entspricht ungefähr den verlorenen Sekunden
 # 
+tragen (5 Stufen)	0:10 6820,5237
 tragen (5 Stufen) oder Rampe benutzen	0:5 15287,9713
 tragen (6 Stufen) oder Rampe benutzen	0:6 15270,9718
 tragen (4 Stufen)	0:10 13874,4867
@@ -1817,11 +1819,12 @@ Pfähle	BNP:1::trailer=6 467,9516
 Bernadottestr.	1 2711,6698 2793,6593 2875,6485 2935,6448 3020,6450
 Vogelsang	1 2229,6203 2170,5939 2137,5798
 Vogelsang	1 2106,5808 2141,5948 2195,6184 2193,6214
-Dievenowstr.	2 3165,6939 3206,7109
+#: XXX oder eher q4?
+Dievenowstr.	2 3165,6939 3202,7121
 Ahornstr. (Steglitz)	1 4863,6088 4888,6093 4923,6073 4926,6053
 Ahornstr. (Steglitz)	1 4926,6053 4903,6048 4872,6068 4863,6088
 Treitschkestr.	1 4854,6413 4971,6345 5125,6262 5219,6215
-tragen (Treppe)	0:40 4127,5427
+tragen (3 x 10 Stufen)	0:40 4127,5427
 tragen (5 Stufen)	0:10 4061,5418
 Iltisstr.	1 2797,5624 2858,5535
 Bundesallee: Mittelstreifen unbequem zu überqueren	3nocross 5493,9357 5495,9263 5503,8982
@@ -1980,8 +1983,8 @@ Drängelgitter	BNP:10 1330,9038
 Tor	BNP:15 1834,8893
 #: corrected_by: srt/new_policy (0:180 -> 0:60; even at 5 km/h lost time would be about 80s)
 tragen (10 x 3 Stufen)	0:60 2170,8841
-tragen	0:40 2316,8593
-tragen	0:40 2316,8469
+#XXX del: tragen	0:40 2316,8593
+tragen (2 x 7 Stufen)	0:30 2316,8469
 Mittelstr.	1 9462,12481 9343,12464
 Bauhofstr.	1 9810,12712 9671,12644
 Hollmannstr.	2 9991,10637 9777,10719

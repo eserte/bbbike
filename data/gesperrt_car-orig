@@ -427,8 +427,6 @@ Neuköllner Str.: Mittelstreifen	3nocross 16643,1460 16698,1392 16815,1278
 Storkower Str.: Mittelstreifen	3nocross 13151,14855 13110,14879 12812,15053
 Hönower Wiesenweg: nur für Anlieger und Radfahrer offen	2:Anlieger 17375,8847 17416,8767 17483,8644 17554,8458 17624,8353 17708,8316 17751,8284
 #: note: Luftbild
-Munsterdamm: Mittelstreifen	3nocross 6787,5459 6767,5233 6747,5010
-#: note: Luftbild
 Mariendorfer Damm: Mittelstreifen	3nocross 9248,4904 9239,4980 9207,5185
 #: note: Luftbild
 Hindenburgdamm: Mittelstreifen	3nocross 4507,4755 4515,4581 4521,4484
@@ -659,6 +657,7 @@ Rütlistr.: Durchfahrt verboten	2 12565,9200 12490,9056
 #: note: "Für Radfahrer ist in der Gegenrichtung die Benutzung des Gehweges möglich."
 Wustermarker Str.:	1 -4385,14305 -4556,14349
 #: note: public imagery vvv
+Hundekehlestr.: Mittelstreifen	3nocross 2346,7684 2460,7658 2576,7634
 Berliner Str.	3nocross 10859,17854 10871,17722 10892,17491
 Lietzenburger Str.	3nocross 5063,10384 5207,10399 5329,10422
 Greifswalder Str.: Straßenbahntrasse	3nocross 12228,14404 12177,14335 12077,14186
@@ -703,3 +702,5 @@ Teikeweg: Poller	3 9519,4537 9412,4537 *
 Teikeweg: Poller	3 * 9412,4537 9519,4537
 Medebacher Weg: Schranke	3 1886,19835 1896,19801 1945,19622
 Medebacher Weg: Schranke	3 1945,19622 1896,19801 1886,19835
+Dievenowstr.	1 3228,7401 3208,7328 3189,7249 3202,7121
+Abbestr.: nur für Anlieger, herausfahrbare Poller	2 4757,12219 4683,12072
