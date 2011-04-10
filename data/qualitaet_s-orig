@@ -4760,6 +4760,7 @@ Cotheniusstr.: Asphalt	Q0 13228,13615 13430,13733
 ######################################################################
 #: by: anonymous vvv
 # 
+Straﬂe 366: schlechter loser Sandweg	Q3 -3011,21997 -3281,22011
 #: note: "q4, enge Straﬂe" ignoriert
 Dreifelderweg: fester Sandweg	Q2 2961,21119 2969,21073
 Plaﬂstr.: guter Asphalt	Q0 1075,1029 1129,763
@@ -11119,9 +11120,14 @@ Keilerstr.: guter Asphalt	Q0 -412,22468 -597,22627
 #: XXX: Asphaltreparatur laut http://www.berlin.de/ba-reinickendorf/presse/archiv/20090925.0930.140105.html (oder nur die Kreuzung Odilostr.?)
 #: next_check: 2009-12-31
 Olafstr.: m‰ﬂiger Asphalt	Q1- 3947,23547 3698,23657 3605,23724 3561,23817 3512,24049 3483,24186 3457,24321 3425,24469
-#: by: Gabriele Meindl
+#
+#: by: Gabriele Meindl vvv
 #: confirmed_by: anonymous
 Leuenberger Zeile: gutes Verbundsteinpflaster	Q1 2852,19546 2789,19600 2684,19765
+#: note "einige Fuﬂg‰nger" und "enge Straﬂe", aber ohne weitere Kategorisierung
+Trepliner Weg: Verbundsteinpflaster	Q1 2684,19765 2790,19910 2779,19923 2837,20015
+#: by: ^^^
+#
 #: by: Jessica (gluecksmarie):
 (Hoernlestr. - Gehsener Str.): Asphalt	Q0 22366,6779 22395,6821
 #: by: Truckle: vvv
@@ -12922,6 +12928,16 @@ Geiﬂblattpfad: schlechte unbefestigte Straﬂe	Q2- -7940,14690 -7842,14683 -7750,1
 An der Buche: guter Asphalt	Q0 1999,24900 2056,24836 2105,24805 2174,24783 2243,24788 2315,24779
 #: by: paul m¸ller:
 Dompfaffenweg: guter Asphalt	Q0 20068,14516 19729,14564
+#: by: Christin (...sizip78...):
+Am Wasserbogen: guter Beton	Q0 -2044,17003 -2056,17041 -2080,17077 -2105,17098 -2152,17108
+#: by: sonnenberg
+#: note: "q4, Sackgasse" ignoriert
+Farmergasse: Asphalt	Q0 20759,18390 20726,18447
+#: by: Andreas (...behm...):
+Luisenstr. (Konradshˆhe): Kopfsteinpflaster	Q2 -1846,18778 -2064,18667
+#: by: Rudi (dr.roebi):
+#: note: "q1, einige Fuﬂg‰nger" ignoriert
+Wurzener Str.: guter Asphalt	Q0 24982,15433 24779,15448
 ######################################################################
 #: by: Andreas M¸hlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206
