@@ -932,8 +932,10 @@ sub get_html {
     //map.setMapType(mapnik_map);
 
     function GetTileUrl_Mapnik(a, z) {
-        return "http://tile.openstreetmap.org/" +
-                    z + "/" + a.x + "/" + a.y + ".png";
+	// select a random server
+	var list = ["a", "b", "c"];
+	var server = list [ parseInt( Math.random() * list.length ) ];
+	return "http://" + server + ".tile.openstreetmap.org/" + z + "/" + a.x + "/" + a.y + ".png";
     }
 
     function GetTileUrl_TaH(a, z) {
@@ -942,8 +944,10 @@ sub get_html {
     }
 
     function GetTileUrl_cycle(a, z) {
-        return "http://a.andy.sandbox.cloudmade.com/tiles/cycle/" +
-                    z + "/" + a.x + "/" + a.y + ".png";
+	// select a random server
+	var list = ["a", "b", "c"];
+	var server = list [ parseInt( Math.random() * list.length ) ];
+	return "http://" + server + ".tile.opencyclemap.org/cycle/" + z + "/" + a.x + "/" + a.y + ".png";
     }
 
     if (GBrowserIsCompatible() ) {
