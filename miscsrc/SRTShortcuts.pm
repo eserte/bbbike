@@ -53,7 +53,8 @@ my $acc_streets_track                = "$bbbike_rootdir/tmp/streets-accurate.bbd
 my $acc_cat_streets_track            = "$bbbike_rootdir/tmp/streets-accurate-categorized.bbd";
 my $acc_cat_split_streets_track      = "$bbbike_rootdir/tmp/streets-accurate-categorized-split.bbd";
 my %acc_cat_split_streets_byyear_track;
-my @acc_cat_split_streets_years = (2008..2011); # also used for unique-matches
+my $curr_year = 1900 + (localtime)[5];
+my @acc_cat_split_streets_years = ($curr_year-3..$curr_year); # also used for unique-matches
 for my $year (@acc_cat_split_streets_years) {
     $acc_cat_split_streets_byyear_track{$year} = "$bbbike_rootdir/tmp/streets-accurate-categorized-split-since$year.bbd";
 }
@@ -279,10 +280,15 @@ EOF
 				  "$bbbike_rootdir/tmp/fragezeichen-nextcheck.bbd"),
 		layer_checkbutton('Unique matches', 'str',
 				  "$bbbike_rootdir/tmp/unique-matches.bbd"),
-		layer_checkbutton('Unique matches since 2008', 'str',
-				  "$bbbike_rootdir/tmp/unique-matches-since2008.bbd"),
-		layer_checkbutton('Unique matches since 2009', 'str',
-				  "$bbbike_rootdir/tmp/unique-matches-since2009.bbd"),
+		[Cascade => 'Unique matches since year...', -menuitems =>
+		 [
+		  map {
+		      my $year = $_;
+		      layer_checkbutton("Unique matches since $year", 'str',
+					"$bbbike_rootdir/tmp/unique-matches-since$year.bbd");
+		  } @acc_cat_split_streets_years,
+		 ],
+		],
 		[Button => "Abdeckung",
 		 -command => sub {
 		     local $main::p_draw{'pp-all'} = 1;
