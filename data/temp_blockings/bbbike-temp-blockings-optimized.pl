@@ -1625,16 +1625,7 @@ userdel	3 13150,7254 13047,7234 13034,7319
        undef,
        undef,
        undef,
-       {
-         'source_id' => '106300839',
-         'until' => 1302904800,
-         'text' => 'Wustermark: K6304: Straßenneubau OD Priort, 15.11.2010 bis 15.04.2011 ',
-         'from' => 1301342279,
-         'id' => 2165,
-         'data' => 'userdel	q4::inwork -19268,10819 -19323,11087 -19149,11495
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1757,16 +1748,7 @@ userdel	q4::inwork; -12545,-698 -12262,-612
        },
        undef,
        undef,
-       {
-         'source_id' => 'INKO_105693',
-         'until' => 1302904799,
-         'text' => 'Rennbahnstr. (Weißensee) Richtung Heinersdorf zwischen Pasedagplatz und Roelckestr. Baustelle, Fahrtrichtung gesperrt (bis Mitte 04/11) ',
-         'from' => 1301342612,
-         'id' => 2195,
-         'data' => 'userdel	q4::inwork; 14144,17165 14060,17221 13912,17320
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => undef,
          'permanent' => 1,

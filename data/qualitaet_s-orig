@@ -4610,6 +4610,7 @@ Suchlandstr.: Asphalt	Q0 4906,5052 5050,4959
 Rˆsnerstr.: Asphalt	Q0 4217,5217 4252,5259
 Carl-Ludwig-Schleich-Promenade: Waldweg	Q1 2315,8431 2316,8469 2317,8616
 Carl-Ludwig-Schleich-Promenade: Waldweg	Q1 2279,8638 2317,8616 2361,8608
+Lausitzer Platz: Kopfsteinpflaster	Q2 12212,10440 12197,10494
 ######################### User Contributions #################################
 #: by: Dominik Seelow vvv
 Viktoriastr.: m‰ﬂiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
@@ -4760,6 +4761,8 @@ Cotheniusstr.: Asphalt	Q0 13228,13615 13430,13733
 ######################################################################
 #: by: anonymous vvv
 # 
+Straﬂe 232: sehr gutes Verbundsteinpflaster	Q0- 15187,1171 15277,1201 15323,1215 15343,1224
+Hummelstr.: schlechtes Kopfsteinpflaster	Q3 25290,11816 25186,11853 25060,11898 24969,11932 24905,11952 24747,11929
 Straﬂe 366: schlechter loser Sandweg	Q3 -3011,21997 -3281,22011
 #: note: "q4, enge Straﬂe" ignoriert
 Dreifelderweg: fester Sandweg	Q2 2961,21119 2969,21073
@@ -7059,8 +7062,12 @@ Gemsenpfad: fester Sandweg	Q1 -796,22588 -746,22739 -657,22854
 Ludwig-Renn-Str.: Asphalt	Q0 20479,16124 20504,16204 20567,16320 20750,16226 20787,16294 20865,16440 20948,16612 21017,16737 20861,16819
 #: by: Marita:
 (Waldweg ¸ber den Beyschlagtunnel): m‰ﬂiger fester Sandweg	Q2 332,22372 742,22666
-#: by: Mannitou:
-Weverstr.: m‰ﬂiger Asphalt	Q1 -4169,12368 -4080,12370 -3987,12374 -3941,12376 -3892,12378 -3777,12384 -3625,12388 -3441,12402 -3257,12407
+#: by: Mannitou: vvv
+#: add_fragezeichen: Ist die Weverstr. westlich der Straﬂe "Am S¸dpark" gepflastert oder asphaltiert?
+Weverstr.: m‰ﬂiger Asphalt	Q1 -4169,12368 -4080,12370 -3987,12374
+#: XXX Ist der Asphalt hier tats‰chlich nur m‰ﬂig oder normal?
+Weverstr.: m‰ﬂiger Asphalt	Q1 -3987,12374 -3941,12376 -3892,12378 -3777,12384 -3625,12388 -3441,12402 -3257,12407
+#: by: ^^^
 #: by: Jenny Pospieszny: vvv
 Buggenhagenstr.: m‰ﬂiger Beton	Q2 14425,13780 14370,13615
 Karlstadter Str.: m‰ﬂiger Asphalt	Q1 11492,18347 11579,18184 11602,18133 11656,18013
@@ -12938,6 +12945,16 @@ Luisenstr. (Konradshˆhe): Kopfsteinpflaster	Q2 -1846,18778 -2064,18667
 #: by: Rudi (dr.roebi):
 #: note: "q1, einige Fuﬂg‰nger" ignoriert
 Wurzener Str.: guter Asphalt	Q0 24982,15433 24779,15448
+#: by: Joachim Christoph:
+#: note: "enge Straﬂe", aber q0
+Hemmingstedter Weg: Verbundsteinpflaster	Q1 -2266,22101 -2082,22074 -1823,22036 -1778,22027
+#: by: Cindy Tammen:
+#: note: "enge Straﬂe", aber q0
+Kraepelinweg: guter Asphalt	Q0 -6990,16321 -6761,16257 -6739,16198 -6700,16178
+#: by: heiwer...:
+Bredereckstr.: Kopfsteinpflaster	Q2 23528,12521 23459,12345 23374,12134
+#: by: peter (tzara...):
+Hartmutstr.: rauer Asphalt mit kleinen Sch‰den und wenigen Bodenunebenheiten	Q1 13065,21267 13204,21203
 ######################################################################
 #: by: Andreas M¸hlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206
