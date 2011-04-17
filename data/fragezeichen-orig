@@ -40,9 +40,9 @@ Falkenberger Chaussee im Bereich Bhf. Hohenschönhausen	?::projected 17400,17790 
 #: by: ^^^
 #
 #: by: MoPo 2009-08-01, soll 2010 realisiert werden vvv
-#: last_checked: 2011-03-09
+#: last_checked: 2011-04-15
 #: next_check: 2011-05-01
-Zossener Str./Lindenstr.	?::projected 9856,10358 9873,10285
+Zossener Str./Lindenstr.	?::projected; 9873,10285 9856,10358
 #
 #: last_checked: 2011-03-30
 #: next_check: 2011-05-15
@@ -137,8 +137,8 @@ Wollankstr.: Angebotsstreifen werden bis Herbst 2011 eingerichtet	?::projected 9
 Rüdersdorfer Str. bekommt Radspuren	?::projected 13066,11854 12891,12008
 #
 #: by: Tagesspiegel vom 2010-03-26
-#: last_checked: 2011-02-07
-#: next_check: 2011-04-15
+#: last_checked: 2011-04-15
+#: next_check: 2011-05-01
 Lindenstr. bekommt Radspuren	?::projected 9795,10512 9770,10590 9777,10719 9805,10791 9829,10830 9935,11067 9973,11150 10020,11262
 #
 #: XXX http://fahrrad.wikia.com/wiki/Fahrradstra%C3%9Fe/Liste_von_Fahrradstra%C3%9Fen#Berlin -> ja
@@ -158,8 +158,14 @@ Fahrradstraße in der Lauenburger Str.	?::projected 5883,4985 5909,5072 5939,5169
 #: section ignorieren vvv
 #: section Straßen in Bau und Planung vvv
 # 
-#: last_checked: 2011-04-09
-#: next_check: 2011-04-15
+#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1104/nachricht4274.html
+#: XXX die Straße wird Radstreifen haben
+#: XXX neue Ampel an der neuen Kreuzung (wahrscheinlich anstelle der alten Fußgängerampel)
+#: next_check: 2012-04-01
+Axel-Springer-Str.: Verbindung zum Spittelmarkt	?::inwork 10166,11592 10213,11728
+# 
+#: last_checked: 2011-04-16
+#: next_check: 2011-05-01
 Radstreifen in der Wilhelmstr.: teilweise schon realisiert	?::inwork 9388,10393 9378,10539 9370,10615 9367,10641 9313,10789 9266,10936 9234,11056 9199,11166
 #
 #: last_checked: 2011-04-09 vvv
@@ -260,7 +266,8 @@ Kletterrosenweg	?::projected 21382,149 21354,289
 An der Barthschen Promenade: vielleicht wird die Straße in Zukunft sich hier befinden	?::projected 8954,8914 8814,8917
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20100804.1210.305109.html
-#: next_check: 2010-10-07
+#: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20110407.1325.339489.html
+#: next_check: 2011-04-28
 Neubau eines Uferwegs an der HTW (Fuß- und Radweg)	?::inwork 19177,5560 19020,5532 18846,5548 18654,5717
 # 
 #: last_checked: 2011-03-04
@@ -437,13 +444,13 @@ Ahrensfelder Chaussee: Radstreifen in Bau, bis 2008-10	? 20160,18301 20460,18420
 # XXX --- : last_checked: 2010-12-16 --- #: next_check: 2011-01-01 --- Wilhelm-Kabus-Str./Naumannstr.: Ampelanlage in Bau	?::inwork 7725,8033
 # 
 #: last_checked: 2010-10-29
-#: next_check: 2011-12-31
+#: next_check: 2011-09-31
 #: by: http://www.stadtumbau-berlin.de/O-W-Gruenzug-Fussgaenger-und-Radfahrersteg.4699.0.html
-Verbindung zwischen Leuthener Platz und General-Pape-Str. (evtl. mit Verlängerung) inkl. Brücke über die Bahnstrecke für Fußgänger und Radfahrer (4m breit), Realisierung bis 2011-12-31	?::projected 7716,8356 7837,8354 7893,8327 8088,8283
+Verbindung zwischen Leuthener Platz und General-Pape-Str. (evtl. mit Verlängerung) inkl. Brücke über die Bahnstrecke für Fußgänger und Radfahrer (4m breit), Realisierung bis Herbst 2011	?::projected 7716,8356 7837,8354 7893,8327 8088,8283
 # 
 #: last_checked: 2011-02-11
 #: next_check: 2011-04-15
-Verbindung zwischen Leuthener Platz und General-Pape-Str. (evtl. mit Verlängerung) inkl. Brücke über die Bahnstrecke für Fußgänger und Radfahrer (4m breit), Realisierung bis 2011-12-31	?::projected 8088,8283 8264,8289
+Verbindung zwischen Leuthener Platz und General-Pape-Str. (evtl. mit Verlängerung) inkl. Brücke über die Bahnstrecke für Fußgänger und Radfahrer (4m breit), Realisierung bis Herbst 2011	?::projected 8088,8283 8264,8289
 # 
 #: by: (URL existiert nicht mehr) http://www.berlin.de/ba-steglitz-zehlendorf/presse/archiv/20060109.1050.33932.html
 #: last_checked: 2008-03 (by steffi silvermidi)
@@ -699,6 +706,7 @@ Tulpenstr. (Basdorf): mäßiger fester Sandweg, Q2	? 12621,33862 12871,33921
 #: confirmed_by: anonymous:
 Am Lückefeld (Mahlow): guter Asphalt, Radweg	? 13267,-4926 13049,-4788 12977,-4783 12841,-4989 12680,-5230 12782,-5284 12837,-5273 13194,-5021 13267,-4926
 #: by: anonymous:
+#: XXX Privatstraße (laut http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/15re.pdf/file)
 Straße 41 (Müggelheim): fester Sandweg, Q2	? 30265,2382 30320,2472 30317,2536 30338,2552 30444,2738 30469,2742 30504,2798 30593,2748 30541,2664
 #: by: Elisa (eli d):
 Straße 160: fester Sandweg, Schlaglöcher, Q2	? 12695,21336 12547,21372
@@ -2577,7 +2585,10 @@ Gautinger Weg: Qualität?	? -7764,5498 -7720,5475 -7639,5426 -7565,5377 -7635,525
 An der Bastion: Qualität?	? -7985,6017 -7945,6060 -7939,6103 -7944,6133 -7974,6189
 Grüner Wall: Qualität?	? -7939,6103 -7834,6109
 Am Donnerberg: Qualität?	? -8339,6578 -8254,6463 -8196,6504 -8151,6557 -8111,6607 -8064,6658 -8018,6709 -7966,6764 -7915,6823 -7870,6873 -7913,6931
+#: XXX wird dieser Abschnitt auch umbenannt? http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/15re.pdf/file ist nicht eindeutig hier. Wenn, dann zu "Am Donnerberg"
 Am Ritterfelddamm [Nebenfahrbahn]: Qualität?	? -8354,6590 -8458,6721 -8566,6951 -8582,6987
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/15re.pdf/file
+#: XXX Umbenennung zum 2011-09-01 in "An der Gatower Heide"
 Am Ritterfelddamm [Nebenfahrbahn]: Qualität?	? -8598,7018 -8658,7157 -8742,7350 -8738,7365
 Am Donnerberg - Am Ritterfelddamm [Nebenfahrbahn]: Überqueren des Seekorsos für Radfahrer möglich?	? -8339,6578 -8354,6590
 Amelie-Beese-Zeile: Qualität?	? -8196,6504 -8291,6620
@@ -4633,3 +4644,44 @@ Elisenweg (Potsdam): Qualität?	? -17194,-4659 -17217,-4610 -17235,-4609 -17599,-
 Karlshöhe: wo genau liegt die Straße? Qualität?	? 11972,23260 11281,23876
 Selerweg: geht die Straße bis zur Bismarckstr.? Qualität?	? 5976,5293 6114,5284
 Westfälische Str.: existiert eine Radspur auch zwischen Johann-Sigismund-Str. und Kurfürstendamm?	? 2938,9935 2825,9971 2770,10024
+# 
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/14re.pdf/file
+#: XXX fehlen alle in Berlin.coords.data, PLZ=13159:
+#: XXX   Heidekrautbahnring
+#: XXX   Köppchenseeweg
+#: XXX   Moorwiesenring
+#: XXX   Waldeckkarree
+#: XXX   Reppfuhlring
+#: XXX   Röhrichtweg
+#: XXX   Feldsteinweg
+Anlage Schildoweck: sieben neue Privatwege, wo genau, Qualität?	? 8656,24889 8592,24914
+# 
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/14re.pdf/file
+#: XXX fehlen alle in Berlin.coords.data:
+#: XXX   Am Igelgrund
+#: XXX   Am Meisenwinkel
+Private Erschließungswege an der Friedrich-Engels-Str.: zwei neue Wege, wo genau, Qualität?	? 9109,20470 9145,20431
+# 
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/14re.pdf/file
+#: XXX fehlen alle in Berlin.coords.data, PLZ=13156:
+#: XXX   Alsaceweg
+#: XXX   Normandieweg
+#: XXX   Savoyenweg
+#: XXX   Bretagneweg
+#: XXX   Lorraineweg
+#: XXX   Cantalweg
+#: XXX   Champagneweg
+#: XXX   Gascogneweg
+#: XXX   Argonnenweg
+#: XXX   Provenceweg
+#: XXX   Picardieweg
+Anlage Frohsinn: Benennung von 11 Privatwegen, wo genau, Qualität?	? 10873,22065 10841,21949
+# 
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/14re.pdf/file
+#: XXX fehlt in Berlin.coords.data
+An den Eldenaer Höfen: wo genau liegt die Straße? Qualität?	? 14431,12903 14476,12836
+#
+#: by: http://www.berlin.de/ba-spandau/presse/archiv/20110414.0735.340472.html
+#: XXX fehlt in Berlin.coords.data
+#: XXX vor Am Donnerberg 15
+Weg nach Wilhelmine Reichard benannt: wie genau heißt der Weg? wo liegt er? Qualität?	? -8132,6481 -7912,6447
