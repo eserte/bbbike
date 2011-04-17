@@ -141,7 +141,12 @@ while(my($p1,$v) = each %{$steigungsnetz->{Net}}) {
     }
 }
 
-@steigung = sort { $b->[0] <=> $a->[0] } @steigung;
+# Sort, and make sure the sorting is stable
+@steigung = sort {
+    my $cmp = $b->[0] <=> $a->[0];
+    return $cmp if $cmp;
+    "@$b" cmp "@$a";
+} @steigung;
 
 open(BBD, ">$o");
 foreach (@steigung) {
