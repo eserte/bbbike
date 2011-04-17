@@ -978,7 +978,7 @@ if ($show_weather || $bp_obj) {
 }
 
 $q->delete('Dummy');
-$smallform = $q->param('smallform') || $bi->{'mobile_device'};
+$smallform = $q->param('smallform') || $bi->{'mobile_device'} || $q->virtual_host =~ m{^m\.}; # e.g. m.bbbike.de
 $got_cookie = 0;
 %c = ();
 
