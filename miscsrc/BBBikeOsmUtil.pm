@@ -131,12 +131,18 @@ sub mirror_and_plot_osm_files {
 			    die "Could not mirror $url: " . $resp->status_line . "\n";
 			} else {
 			    no warnings 'uninitialized'; # content-encoding header may be missing
-			    if ($resp->header('content-encoding') eq 'gzip' && $file !~ m{\.gz$}) {
-				warn "Rename $file -> $file.gz...\n"; # XXX debug
-				rename $file, "$file.gz"
-				    or die "Cannot rename $file to $file.gz: $!";
-				$file = "$file.gz"; # change @$osm_files_ref
-				$success = 1;
+			    if ($resp->header('content-encoding') eq 'gzip') {
+				if ($file !~ m{\.gz$}) {
+				    warn "Rename $file -> $file.gz...\n"; # XXX debug
+				    rename $file, "$file.gz"
+					or die "Cannot rename $file to $file.gz: $!";
+				    $file = "$file.gz"; # change @$osm_files_ref
+				    $success = 1;
+				} else {
+				    $success = 1;
+				}
+			    } else {
+				$success = 1; # XXX correct?
 			    }
 			}
 		    };
