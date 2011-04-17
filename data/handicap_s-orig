@@ -149,7 +149,7 @@ Marheinekeplatz: Fußgänger, Brunnen	q3 9892,9286 9880,9233
 #: note: zumindest auf der westlichen Seite existiert kein explizites Verbotsschild für Radfahrer
 (Uferweg am Urbanhafen): Fußgänger	q1 11177,9935 11052,9935 10914,9925 10602,10006 10522,10056 10500,10081
 Bahnhofsgebäude	q4 7854,7572 7934,7621
-Treppe oder Rampe	q4 7934,7621 7959,7609
+Treppe oder Rampe	q4 7934,7621 7949,7607
 Marx-Engels-Forum: Fußgänger, eigentlich Schiebestrecke	q2 10300,12587 10355,12551 10411,12471 10422,12395
 Volkspark Friedrichshain: Fußgänger	q1 12325,13148 12344,13157 12372,13198 12382,13262 12474,13311 12438,13387 12483,13418 12446,13570 12336,13646 12403,13755
 Volkspark Friedrichshain: Fußgänger	q1 12336,13646 12141,13609 12115,13540 12005,13481 11982,13471
@@ -403,7 +403,7 @@ Egidysteg: eng, Fußgänger	q3 3124,22198 3134,22153
 (Weg am Tegeler Fließ): Fußgänger	q1 4619,22934 4402,22877 4306,22914 4163,22907
 (Weg am Tegeler Fließ): Fußgänger, eng	q2 5860,24067 5693,24037 5645,23968
 (Schildower Weg): Fußgänger	q1 7874,24035 7675,23968 7615,23884 7185,23749
-(Mehrower Allee, Unterführung zum S-Bahnhof): Rampe, Fußgänger	q4 20547,17084 20522,17020 20428,17058 20443,17093
+(Mehrower Allee, Unterführung zum S-Bahnhof): Rampe, Fußgänger	q4 20547,17084 20533,17051 20450,17097
 Altvaterstr.: Fußgänger, Bordsteine	q2 -3117,3107 -3170,3070 -3223,3034
 #: note: laut Luftbild
 Im Gestell: Fußgänger	q1 371,4453 275,4378
@@ -780,6 +780,9 @@ Yva-Bogen: Fußgängerzone	q4 5373,10981 5426,11039 5459,11135
 Kelchstr.: enge Straße	q1 7386,4692 7424,4821 7437,4855 7456,4934
 Doldenweg: Bordsteine, Fußgänger	q2 7424,4821 7487,4802
 Kottesteig: Bordsteine, Fußgänger	q1 6868,5262 6820,5237 6806,5230
+(Zu den Krugwiesen - Vincent-van-Gogh-Str.): Fußgänger	q1 18646,17345 18704,17565
+(Weg durch die Falkenberger Krugwiesen): Fußgänger	q1 18704,17565 18756,17498 18784,17525 18831,17663 18986,17786 19102,17879 19110,18015 19127,18091 19212,18205 19251,18252 19249,18351 19265,18400 19291,18456
+(Falkenberger Krugwiesen - Falkenberger Chaussee): Fußgänger	q1 19212,18205 18969,18448
 ######################### User Contributions #################################
 #: by: Michael Kiekbusch
 #: corrected_by: srt/policy (q4 -> q3-)

@@ -60,7 +60,7 @@ Alter Markt	1 22465,4690 22395,4678
 Futranplatz	1 22388,4737 22451,4749
 Alt-Köpenick	1 22138,4661 22175,4730 22196,4847
 (Am S-Bahnhof Plänterwald): Asphalt	1 15357,8286 15284,8214 15242,8263 15303,8343
-Wuhletalstr.	1 20691,17463 20675,17515 20748,17661 20832,17824 20912,17872
+Wuhletalstr.	1 20691,17463 20727,17558 20769,17650 20855,17807 20912,17872
 Knoten Märkische/Landsberger Allee	1 19013,14905 19175,14968 19364,15045 19496,15113 19567,15134 19694,15149 19735,15155
 Knoten Märkische/Landsberger Allee	1 19735,15155 19605,15073 19408,15007 19350,14997 19156,14953 19013,14905
 Knoten Märkische/Landsberger Allee	1 19466,14910 19408,15007
@@ -331,7 +331,7 @@ Czarnikauer Str.	1 10613,16403 10449,16415 10225,16436
 Talstr.	1 11776,16753 11825,16666
 Scharfestr.	1 758,3417 935,3430
 Junker-Jörg-Str.	1 18545,9395 18511,9185 18471,8957 18447,8818
-Walter-Felsenstein-Str.	1 20438,16715 20617,16614 20767,16903
+Walter-Felsenstein-Str.	1 20459,16697 20617,16614 20767,16903
 (Raoul-Wallenberg-Str. - Walter-Felsenstein-Str.)	1 20394,16162 20487,16392
 Jugendweg	1 1191,14513 1059,14515 1037,14515 998,14516 942,14517 842,14518
 Boschpoler Platz	1 20540,13773 20665,13759
@@ -595,6 +595,8 @@ Am Konsulat: Privatstraße, mit Toren versperrt	2 9962,19757 9990,19644 9916,1962
 Pastor-Niemöller-Platz	1 9859,19283 9811,19302 9789,19329 9791,19363 9826,19382 9870,19360
 Pasewalker Str. (Wedding)	1 7891,15417 7877,15581
 Olympische Str.	1 610,12100 628,12138
+Radieschenpfad	1 20582,18468 20635,18381
+Lattichweg	1 20452,18273 20453,18321 20523,18329 20635,18381
 Am Neuen Garten	1 -12166,1384 -12212,1201 -12276,831 -12302,718
 Am Neuen Garten	1 -12332,585 -12582,127
 Hochstraße	3nocross::ignrte -11399,-1339 -11461,-1424 -11540,-1543
@@ -1027,7 +1029,7 @@ Rhinstr. -> Witzenhauser Str.: Straßenbahntrasse	3::igndisp 17991,14684 17937,14
 Witzenhauser Str. -> Rhinstr.: Straßenbahntrasse	3::igndisp 17750,14736 17937,14795 17886,14899
 Rhinstr. -> Allendorfer Weg: Straßenbahntrasse	3::igndisp 18057,14549 17991,14684 17879,14659
 Allendorfer Weg -> Rhinstr.: Straßenbahntrasse	3::igndisp 17879,14659 17991,14684 17937,14795
-Straßenbahntrasse	3nocross::ignrte 19628,13517 19726,13524 19807,13529 19837,13531 19894,13535 20097,13549
+Straßenbahntrasse	3nocross::ignrte 19628,13517 19726,13524 19807,13529 19837,13531 19894,13535 20073,13535 20150,13562
 Allee der Kosmonauten -> Langhoffstr.: Straßenbahntrasse	3::igndisp 19726,13524 19807,13529 19821,13604
 Langhoffstr. -> Allee der Kosmonauten: Straßenbahntrasse	3::igndisp 19821,13604 19807,13529 19837,13531
 Allee der Kosmonauten -> Biesdorfer Promenade: Straßenbahntrasse	3::igndisp 19894,13535 19837,13531 19826,13444
@@ -1363,14 +1365,14 @@ Linksabbiegen verboten	3nocross::ignrte 20109,16305 20219,16523 20339,16752
 Alfred-Döblin-Str. -> Märkische Allee: Linksabbiegen verboten	3::igndisp 20286,16494 20219,16523 20109,16305
 Märkische Allee -> Alfred-Döblin-Str.: Linksabbiegen verboten	3::igndisp 20339,16752 20219,16523 20286,16494
 Linksabbiegen verboten	3nocross::ignrte 20512,17101 20691,17463 20717,17516 20843,17745 20889,17838 20912,17872 21009,18055
-zur Märkischen Allee -> Märkische Allee: Linksabbiegen verboten	3::igndisp 20675,17515 20691,17463 20717,17516
+zur Märkischen Allee -> Märkische Allee: Linksabbiegen verboten	3::igndisp 20727,17558 20691,17463 20717,17516
 Wuhletalstr. -> Märkische Allee: Linksabbiegen verboten	3::igndisp 20853,17528 20717,17516 20691,17463
 Märkische Allee -> Wuhletalstr.: Linksabbiegen verboten	3::igndisp 20843,17745 20717,17516 20853,17528
 Märkische Allee -> Wuhletalstr.: Linksabbiegen verboten	3::igndisp 20889,17838 20843,17745 20912,17678
 Wuhletalstr. -> Märkische Allee: Linksabbiegen verboten	3::igndisp 20912,17678 20843,17745 20717,17516
 Märkische Allee -> Parkweg an der Neuen Wuhle: Linksabbiegen verboten	3::igndisp 20912,17872 20889,17838 20983,17846
 Parkweg an der Neuen Wuhle -> Märkische Allee: Linksabbiegen verboten	3::igndisp 20983,17846 20889,17838 20843,17745
-Märkische Allee -> Wuhletalstr.: Linksabbiegen verboten	3::igndisp 20889,17838 20912,17872 20832,17824
+Märkische Allee -> Wuhletalstr.: Linksabbiegen verboten	3::igndisp 20889,17838 20912,17872 20855,17807
 Mittelstreifen	3nocross::ignrte 19896,11688 19918,11891 19939,12068 19947,12140 20002,12492
 Alt-Biesdorf -> Alt-Friedrichsfelde: Mittelstreifen	3::igndisp 19979,11774 19918,11891 19890,11830
 Alt-Biesdorf -> Märkische Allee: Mittelstreifen	3::igndisp 19979,11774 19918,11891 19896,11688
@@ -1761,7 +1763,7 @@ tragen (Treppe)	0:30:-225 8014,12846
 tragen (Treppe)	0:30:-4 8428,12859
 tragen (Treppe)	0:30:-265 8445,12755
 tragen (Treppe)	0:35:47 17026,11810
-tragen (S-Bhf. Raoul-Wallenberg-Str.)	0:30:-244 20041,16296
+tragen (S-Bhf. Raoul-Wallenberg-Str.)	0:30:-244 20050,16292
 tragen (ca. 40 Stufen)	0:59:-124 1659,3226
 tragen (Treppe)	0:30:-114 1715,3257
 tragen (Treppe)	0:30:-97 6172,12878
@@ -1788,6 +1790,7 @@ tragen (Treppe, ca. 20 Stufen)	0:25:-12 19160,14935
 tragen (Treppe)	0:30:70 89344,-5795
 tragen, langgezogene Stufen (13 Stufen)	0:25:-168 20704,1383
 2x Drängelgitter	BNP:6:65:trailer=25 13189,2736
+Schranke (lichte Breite ca. 100cm)	BNP:2:-72:trailer=5 20904,19284
 Schranke	BNP:4:-102:trailer=10 11432,4054
 Schranke	BNP:4:-41:trailer=10 11408,4190
 Schranke	BNP:4:-216:trailer=10 15200,2754
@@ -1948,6 +1951,7 @@ Schranke (lichte Breite ca. 120cm)	BNP:2:-50:trailer=8 14448,4501
 Schranke (lichte Breite ca. 120cm)	BNP:2:-53:trailer=8 14709,4307
 Schranke (lichte Breite ca. 100cm)	BNP:3:-45:trailer=10 15179,3901
 Tor	BNP:5:-57 26888,13976
+Bebelplatz: Bauarbeiten, gesperrt	2:inwork 9679,12388 9700,12234
 Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10170,12261 10063,12438
 Boyenweg - Uferweg: wegen Bauarbeiten gesperrt	2:inwork 7938,14426 7886,14518
 Treitschkestr.: Bauarbeiten am Kaufhaus, bis 2012	2:inwork 5219,6215 5125,6262 4971,6345
@@ -1963,7 +1967,7 @@ Elisabeth-Mara-Str.: Bauarbeiten bis zum Frühjahr 2011	2:inwork 10506,11567 1032
 Wagner-Régeny-Str.: Straße ist fertig, aber noch gesperrt	2:inwork 19487,3593 19377,3721
 Radweg parallel zur Autobahn ist wegen Bauarbeiten am BAB gesperrt	2:inwork 5062,14681 4676,14534 3707,14303 3595,14277
 Wegedornbrücke: Vollsperrung, Neubau	2:inwork 20385,593 20442,564 20510,530 20534,501
-Rathausbrücke: gesperrt (Neubau), Fertigstellung 2011 oder 2012	2:inwork 10362,12351 10422,12395
+Rathausbrücke: gesperrt (Neubau), Fertigstellung nicht vor März 2012	2:inwork 10362,12351 10422,12395
 Vicki-Baum-Str.: noch in Bau, gesperrt	2:inwork 15753,10353 15823,10300
 Kynaststraße: Bauarbeiten im südlichen Abschnitt	2:inwork 14652,10201 14724,10297 14766,10372 14795,10473 14805,10518
 Brücke im Tiergarten: gesperrt	2:inwork 6406,11784 6467,11780

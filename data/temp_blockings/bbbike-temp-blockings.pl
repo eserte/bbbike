@@ -17287,11 +17287,11 @@ EOF
 userdel	2::inwork 50359,-20087 49368,-19096
 EOF
      },
-     { from  => 1269772860, # 2010-03-28 12:41
-       until => undef, # XXX Time::Local::timelocal(reverse(2011-1900,4-1,15,12,0,0)), # 1291734000, # 2010-12-07 16:00
-       text  => 'Erkstr. (Neukölln): Baustelle, Fahrtrichtung Richtung Sonnenallee gesperrt (bis Mitte 4/2011)',
+     { from  => 1303071086, # 2011-04-17 22:11
+       until => 1304200799, # 2011-04-30 23:59
+       text  => 'Erkstr. (Neukölln): Baustelle, Fahrtrichtung Sonnenallee gesperrt (bis Ende 04/2011) ',
        type  => 'handicap',
-       source_id => 'IM_015434',
+       source_id => 'INKO_090026',
        data  => <<EOF,
 #: last_checked: 2011-04-07
 #: next_check: 2011-04-25
@@ -18868,6 +18868,42 @@ EOF
        permanent => 1,
        data  => <<EOF,
 Albrecht-Thaer-Weg: Privatstraße, evtl. nicht geöffnet	2::night 3347,6460 3449,6863
+EOF
+     },
+     { from  => 1280051220, # 2010-07-25 11:47
+       until => 1312034400, # 2011-07-30 16:00
+       text  => 'General-Pape-Straße (Tempelhof): Baustelle, Fahrtichtung gesperrt (bis ca. 07/2011) Richtung Kolonnenstr. zwischen Werner-Voß-Str. und Loewenhardtdamm, 26.07.2010 11:47 Uhr bis 30.07.2011 16:00 Uhr ',
+       type  => 'handicap',
+       source_id => 'IM_016132',
+       data  => <<EOF,
+userdel	q4::inwork; 7949,7607 7935,7736 7950,7840 8226,8648 8237,8685 8306,8722
+EOF
+     },
+     { from  => 1302411000, # 2011-04-10 06:50
+       until => 1311976800, # 2011-07-30 00:00
+       text  => 'Kastanienallee (Prenzlauer Berg): Baustelle, Fahrtrichtung gesperrt (bis Ende 07/2011) Richtung Fehrbelliner Str. zwischen Schönhauser Allee und Oderberger Str., 11.04.2011 06:50 Uhr bis 29.07.2011 ',
+       type  => 'handicap',
+       source_id => 'IM_017117',
+       data  => <<EOF,
+userdel	q4::inwork; 10881,15047 10838,14962 10723,14772
+EOF
+     },
+     { from  => 1303071912, # 2011-04-17 22:25
+       until => 1307743200, # 2011-06-11 00:00
+       text  => 'Schenkenberg: L26: grundhafter Ausbau, Neubau des Durchlass 13 Prenzlau - A 20, (zw. Stegemannshof und Prenzlau), 29.03.2011 bis 10.06.2011 ',
+       type  => 'gesperrt',
+       source_id => 'LS/O-SG33-E/10/214-10',
+       data  => <<EOF,
+userdel	2::inwork 42804,104235 42306,103942
+EOF
+     },
+     { from  => 1302991200, # 2011-04-17 00:00
+       until => 1305928800, # 2011-05-21 00:00
+       text  => 'Zichow: L280, B166: Deckenerneuerung Zichow - Passow ab 18.04.11 Abzw. Zichow gesperrt, 22.11.2010 bis 20.05.2011 ',
+       type  => 'gesperrt',
+       source_id => 'LS/O-SG33-E/10/124.5',
+       data  => <<EOF,
+userdel	2::inwork 52733,87022 52642,86984
 EOF
      },
     );

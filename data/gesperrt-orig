@@ -75,7 +75,7 @@ Alter Markt	1 22465,4690 22395,4678
 Futranplatz	1 22388,4737 22451,4749
 Alt-Köpenick	1 22138,4661 22175,4730 22196,4847
 (Am S-Bahnhof Plänterwald): Asphalt	1 15357,8286 15284,8214 15242,8263 15303,8343
-Wuhletalstr.	1 20691,17463 20675,17515 20748,17661 20832,17824 20912,17872
+Wuhletalstr.	1 20691,17463 20727,17558 20769,17650 20855,17807 20912,17872
 Knoten Märkische/Landsberger Allee	1 19013,14905 19175,14968 19364,15045 19496,15113 19567,15134 19694,15149 19735,15155
 Knoten Märkische/Landsberger Allee	1 19735,15155 19605,15073 19408,15007 19350,14997 19156,14953 19013,14905
 Knoten Märkische/Landsberger Allee	1 19466,14910 19408,15007
@@ -384,7 +384,7 @@ Talstr.	1 11776,16753 11825,16666
 #: confirmed_by: MichaelM (Regelung für alle gleich)
 Scharfestr.	1 758,3417 935,3430
 Junker-Jörg-Str.	1 18545,9395 18511,9185 18471,8957 18447,8818
-Walter-Felsenstein-Str.	1 20438,16715 20617,16614 20767,16903
+Walter-Felsenstein-Str.	1 20459,16697 20617,16614 20767,16903
 (Raoul-Wallenberg-Str. - Walter-Felsenstein-Str.)	1 20394,16162 20487,16392
 #: add_fragezeichen: Gilt die Einbahnstraßenregelung auch für Radfahrer oder nur für Autofahrer?
 Jugendweg	1 1191,14513 1059,14515 1037,14515 998,14516 942,14517 842,14518
@@ -776,6 +776,10 @@ Am Konsulat: Privatstraße, mit Toren versperrt	2 9962,19757 9990,19644 9916,1962
 Pastor-Niemöller-Platz	1 9859,19283 9811,19302 9789,19329 9791,19363 9826,19382 9870,19360
 Pasewalker Str. (Wedding)	1 7891,15417 7877,15581
 Olympische Str.	1 610,12100 628,12138
+#: note: keine Gehwege, enge Straße
+Radieschenpfad	1 20582,18468 20635,18381
+#: note: keine Gehwege, enge Straße
+Lattichweg	1 20452,18273 20453,18321 20523,18329 20635,18381
 ######################################################################
 #
 # Potsdam
@@ -1069,7 +1073,7 @@ Detmolder Str.: Mittelstreifen nicht passierbar	3nocross 4469,8037 4659,7982 479
 Rhinstr.: Straßenbahntrasse	3nocross 18215,12132 18216,12239 18216,12262 18220,12450
 Rhinstr.: Straßenbahntrasse	3nocross 18181,14110 18184,14078 18187,14039 18206,13817
 Rhinstr.: Straßenbahntrasse	3nocross 17829,15015 17886,14899 17937,14795 17991,14684 18057,14549
-Allee der Kosmonauten: Straßenbahntrasse	3nocross 19628,13517 19726,13524 19807,13529 19837,13531 19894,13535 20097,13549
+Allee der Kosmonauten: Straßenbahntrasse	3nocross 19628,13517 19726,13524 19807,13529 19837,13531 19894,13535 20073,13535 20150,13562
 Bornhomer Str.: Straßenbahntrasse	3nocross 10765,16486 10699,16492 10620,16497
 Bornhomer Str.: Straßenbahntrasse	3nocross 10620,16497 10533,16505 10458,16509
 Bornhomer Str.: Straßenbahntrasse	3nocross 10458,16509 10370,16516 10282,16522 10197,16528
@@ -1410,7 +1414,7 @@ tragen (Treppe)	0:30 8445,12755
 #: note: wahrscheinlich ebenso 40-45 Stufen wie das Pendant auf der Gegenseite
 tragen (Treppe)	0:35 17026,11810
 #: by: peer.weyrauch, bestätigt durch die neue ADFC-Karte:
-tragen (S-Bhf. Raoul-Wallenberg-Str.)	0:30 20041,16296
+tragen (S-Bhf. Raoul-Wallenberg-Str.)	0:30 20050,16292
 #: by: Katharina Hoffmann: vvv
 tragen (ca. 40 Stufen)	0:59 1659,3226
 tragen (Treppe)	0:30 1715,3257
@@ -1461,6 +1465,7 @@ tragen, langgezogene Stufen (13 Stufen)	0:25 20704,1383
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
 2x Drängelgitter	BNP:6::trailer=25 13189,2736
+Schranke (lichte Breite ca. 100cm)	BNP:2::trailer=5 20904,19284
 Schranke	BNP:4::trailer=10 11432,4054
 Schranke	BNP:4::trailer=10 11408,4190
 Schranke	BNP:4::trailer=10 15200,2754
@@ -1697,7 +1702,10 @@ Tor	BNP:5 26888,13976
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
-#: last_checked: 2011-03-30
+#: last_checked: 2011-04-08
+Bebelplatz: Bauarbeiten, gesperrt	2:inwork 9679,12388 9700,12234
+# 
+#: last_checked: 2011-04-08
 Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10170,12261 10063,12438
 # 
 #: XXX wird es jemals wieder öffentlich befahrbar sein?
@@ -1761,7 +1769,7 @@ Radweg parallel zur Autobahn ist wegen Bauarbeiten am BAB gesperrt	2:inwork 5062
 Wegedornbrücke: Vollsperrung, Neubau	2:inwork 20385,593 20442,564 20510,530 20534,501
 # 
 #: next_check: 2011-09-01
-Rathausbrücke: gesperrt (Neubau), Fertigstellung 2011 oder 2012	2:inwork 10362,12351 10422,12395
+Rathausbrücke: gesperrt (Neubau), Fertigstellung nicht vor März 2012	2:inwork 10362,12351 10422,12395
 # 
 #: last_checked: 2011-02-27
 #: next_check: 2011-05-15
