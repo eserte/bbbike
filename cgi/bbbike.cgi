@@ -6520,7 +6520,7 @@ sub header {
 	}
 	print "</h1>\n";
     } else {
-	print $q->start_html;
+	print $q->start_html(%args);
 	print "<h1>BBBike</h1>";
     }
     if ($with_lang_switch && (!defined $from || $from !~ m{^(info|map)$})) {
