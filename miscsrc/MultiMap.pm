@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2006,2007,2010 Slaven Rezic. All rights reserved.
+# Copyright (C) 2006,2007,2010,2011 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -63,16 +63,10 @@ sub register {
 	      ($images{ClickRoute} ? (icon => $images{ClickRoute}) : ()),
 	    };
     }
-    $main::info_plugins{__PACKAGE__ . "_OpenStreetMap_Marker"} =
-	{ name => "OpenStreetMap " . ($lang eq 'de' ? '(mit Marker)' : '(with marker)'),
-	  callback => sub { showmap_openstreetmap(osmmarker => 1, @_) },
-	  callback_3_std => sub { showmap_url_openstreetmap(osmmarker => 1, @_) },
-	  ($images{OpenStreetMap} ? (icon => $images{OpenStreetMap}) : ()),
-	};
-    $main::info_plugins{__PACKAGE__ . "_OpenStreetMap"} =
-	{ name => "OpenStreetMap " . ($lang eq 'de' ? '(ohne Marker)' : '(without marker)'),
-	  callback => sub { showmap_openstreetmap(osmmarker => 0, @_) },
-	  callback_3_std => sub { showmap_url_openstreetmap(osmmarker => 0, @_) },
+    $main::info_plugins{__PACKAGE__ . '_OpenStreetMap'} =
+	{ name => 'OpenStreetMap',
+	  callback => sub { showmap_openstreetmap_de(@_) },
+	  callback_3 => sub { show_openstreetmap_menu(@_) },
 	  ($images{OpenStreetMap} ? (icon => $images{OpenStreetMap}) : ()),
 	};
     $main::info_plugins{__PACKAGE__ . "_MapCompare"} =
@@ -554,10 +548,18 @@ sub showmap_url_openstreetmap {
     my $px = $args{px};
     my $py = $args{py};
     my $with_marker = $args{osmmarker};
+    my $use_de = $args{use_de};
+    if ($use_de) {
+	$with_marker = 0; # not implemented on openstreetmap.de
+    }
     my $mpfx = $with_marker ? 'm' : ''; # "marker prefix"
+    my $base_url = ($use_de
+		    ? 'http://www.openstreetmap.de/karte.html'
+		    : 'http://www.openstreetmap.org/index.html'
+		   );
 
     my $scale = 17 - log(($args{mapscale_scale})/3000)/log(2);
-    sprintf "http://www.openstreetmap.org/index.html?%slat=%s&%slon=%s&zoom=%d",
+    sprintf "$base_url?%slat=%s&%slon=%s&zoom=%d",
 	$mpfx, $py, $mpfx, $px, $scale;
 }
 
@@ -565,6 +567,58 @@ sub showmap_openstreetmap {
     my(%args) = @_;
     my $url = showmap_url_openstreetmap(%args);
     start_browser($url);
+}
+
+sub showmap_openstreetmap_de {
+    my(%args) = @_;
+    my $url = showmap_url_openstreetmap(%args, use_de => 1);
+    start_browser($url);
+}
+
+sub show_openstreetmap_menu {
+    my(%args) = @_;
+    my $lang = $Msg::lang || 'de';
+    my $w = $args{widget};
+    my $menu_name = __PACKAGE__ . '_OpenStreetMap_Menu';
+    if (Tk::Exists($w->{$menu_name})) {
+	$w->{$menu_name}->destroy;
+    }
+    my $link_menu = $w->Menu(-title => 'OpenStreetMap',
+			     -tearoff => 0);
+    $link_menu->command
+	(-label => 'OpenStreetMap.org ' . ($lang eq 'de' ? '(mit Marker)' : '(with marker)'),
+	 -command => sub { showmap_openstreetmap(osmmarker => 1, %args) },
+	);
+    $link_menu->command
+	(-label => 'OpenStreetMap.org ' . ($lang eq 'de' ? '(ohne Marker)' : '(without marker)'),
+	 -command => sub { showmap_openstreetmap(osmmarker => 0, %args) },
+	);
+    $link_menu->separator;
+    $link_menu->command
+	(-label => ".de-Link kopieren", # XXX lang!
+	 -command => sub { _copy_link(showmap_url_openstreetmap(use_de => 1, %args)) },
+	);
+    $link_menu->command
+	(-label => ".org-Link mit Marker kopieren", # XXX lang!
+	 -command => sub { _copy_link(showmap_url_openstreetmap(osmmarker => 1, %args)) },
+	);
+    $link_menu->command
+	(-label => ".org-Link ohne Marker kopieren", # XXX lang!
+	 -command => sub { _copy_link(showmap_url_openstreetmap(osmmarker => 0, %args)) },
+	);
+
+    $w->{$menu_name} = $link_menu;
+    my $e = $w->XEvent;
+    $link_menu->Post($e->X, $e->Y);
+    Tk->break;
+}
+
+sub _copy_link {
+    my $url = shift;
+    $main::show_info_url = $url;
+    $main::top->SelectionOwn;
+    $main::top->SelectionHandle; # calling this mysteriously solves the closure problem elsewhere...
+    $main::top->SelectionHandle(\&main::handle_show_info_url);
 }
 
 ######################################################################
