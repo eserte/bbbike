@@ -844,6 +844,7 @@ version
  * Instructions needed on how to create
    a bundle suitable for sharing with other people
  * GPX support
+ * xcf: maybe extract exif thumbnail, if any; imagemagick cannot handle xcf files
  * document options!
    * -person: use only GPS tracks with no srt:person tag or a matching srt:person tag
 
