@@ -23,7 +23,7 @@ use GD;
 use DB_File;
 use FindBin;
 
-use lib "$FindBin::RealBin/..";
+use lib ("$FindBin::RealBin/..", "$FindBin::RealBin/../lib");
 use GPS::GpsmanData;
 use Karte::Standard;
 use Karte::Polar;
@@ -41,6 +41,7 @@ my $converter = "best";
 my $recreate_thumbnails;
 my $date_index_file;
 my $date_db;
+my $do_update;
 my $v;
 my $debug;
 my $relative_paths;
@@ -87,6 +88,7 @@ GetOptions("gpsdatadir=s" => \$gps_data_dir,
 	   "converter=s" => \$converter,
 	   "recreatethumbnails" => \$recreate_thumbnails,
 	   "rel|relativepaths!" => \$relative_paths,
+	   "update" => \$do_update,
 	   "person=s" => \$for_person,
 	   "o=s" => \$out_file,
 	   "v!" => \$v,
@@ -442,6 +444,24 @@ if ($date_index_file) {
     
 }
 
+my %seen_image;
+if ($do_update) {
+    if (!defined $out_file) {
+	die "-update switch only works together with -o\n";
+    }
+    require Strassen::Core;
+    my $s = Strassen->new_stream($out_file);
+    $s->read_stream
+	(sub {
+	     my($r) = @_;
+	     if ($r->[Strassen::NAME()] =~ m{^Image: "([^"]+)"}) {
+		 $seen_image{$1} = Strassen::arr2line2($r);
+	     } else {
+		 warn "Cannot parse line '$r->[Strassen::NAME()]', skipping...\n";
+	     }
+	 });
+}
+
 my $ofh;
 if (defined $out_file) {
     $out_file = realpath $out_file;
@@ -486,36 +506,40 @@ sub handle_file {
     my $file = shift;
     print STDERR "Handling $file...\n" if $v;
     $current_info = "Handling $file";
-    my $ret = get_image_location($file);
-    if (defined $ret) {
-	my($lat, $long, $delta, $date) = @{$ret}{qw(Latitude Longitude Delta Date)};
-	my($x, $y) = $Karte::Standard::obj->trim_accuracy
-	    ($Karte::Polar::obj->map2standard($long, $lat));
-	my $file_in_bbd;
-	if ($relative_paths) {
-	    if ($out_file) {
-		$file_in_bbd = File::Spec->abs2rel(File::Spec->rel2abs($file), dirname($out_file));
-	    } else {
-		$file_in_bbd = $file;
-	    }
+    my $file_in_bbd;
+    if ($relative_paths) {
+	if ($out_file) {
+	    $file_in_bbd = File::Spec->abs2rel(File::Spec->rel2abs($file), dirname($out_file));
 	} else {
-	    $file_in_bbd = File::Spec->rel2abs($file);
+	    $file_in_bbd = $file;
 	}
-	my $thumb_file = create_thumbnail($file);
-	if ($relative_paths) {
+    } else {
+	$file_in_bbd = File::Spec->rel2abs($file);
+    }
+    if ($seen_image{$file_in_bbd}) {
+	print $seen_image{$file_in_bbd}, "\n";
+    } else {
+	my $ret = get_image_location($file);
+	if (defined $ret) {
+	    my($lat, $long, $delta, $date) = @{$ret}{qw(Latitude Longitude Delta Date)};
+	    my($x, $y) = $Karte::Standard::obj->trim_accuracy
+		($Karte::Polar::obj->map2standard($long, $lat));
+	    my $thumb_file = create_thumbnail($file);
+	    if ($relative_paths) {
+		if (defined $thumb_file) {
+		    $thumb_file = File::Spec->abs2rel(realpath($thumb_file),
+						      (defined $out_file ? dirname($out_file) : ())
+						     );
+		}
+	    }
 	    if (defined $thumb_file) {
-		$thumb_file = File::Spec->abs2rel(realpath($thumb_file),
-						  (defined $out_file ? dirname($out_file) : ())
-						 );
+		my $delta_hm = s2hm($delta);
+		print qq{Image: "$file_in_bbd" ($date) (delta=$delta_hm) ($lat/$long)\tIMG:$thumb_file};
+		if ($anchor) {
+		    print qq{|ANCHOR:$anchor};
+		}
+		print qq{ $x,$y\n};
 	    }
-	}
-	if (defined $thumb_file) {
-	    my $delta_hm = s2hm($delta);
-	    print qq{Image: "$file_in_bbd" ($date) (delta=$delta_hm) ($lat/$long)\tIMG:$thumb_file};
-	    if ($anchor) {
-		print qq{|ANCHOR:$anchor};
-	    }
-	    print qq{ $x,$y\n};
 	}
     }
 }
@@ -815,6 +839,9 @@ the generated bbd file are relative to each other.
 The B<-dateindex I</tmp/gpsdateindex.db>> option assumes that a GPS
 index was build before with L<create_track_index.pl>.
 
+An update of an existing bbd file can be done using C<-o file.bbd
+-update>.
+
 =head1 HOWTO
 
 To display geocoded thumbnails in bbbike:
@@ -840,13 +867,13 @@ version
 
 =head1 TODO
 
- * There could be an -update switch
  * Instructions needed on how to create
    a bundle suitable for sharing with other people
  * GPX support
  * xcf: maybe extract exif thumbnail, if any; imagemagick cannot handle xcf files
  * document options!
    * -person: use only GPS tracks with no srt:person tag or a matching srt:person tag
+ * -update is not efficient if many images are not geocodable
 
 =head1 SEE ALSO
 
