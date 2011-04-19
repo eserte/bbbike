@@ -101,8 +101,8 @@ Müllerstr.	?::projected 6790,16018 6659,16133 6608,16180 6450,16325 6444,16331 6
 #
 #: by: Tagesspiegel vom 2009-04-12, soll 2009 realisiert werden
 #: corrected_by: MoPo 2009-08-01, soll 2010 realisiert werden
-#: last_checked: 2011-02-07
-#: next_check: 2011-04-15
+#: last_checked: 2011-04-18
+#: next_check: 2011-06-15
 Annenstr./Heinrich-Heine-Platz	?::projected 11349,11227 11249,11268 11091,11379 10915,11535 10819,11664
 #
 #: by: Tagesspiegel vom 2009-04-12, soll 2009 realisiert werden
@@ -130,12 +130,12 @@ Streitstr. (werden die vorhandenen Bordsteinradwege ersetzt)?	?::projected -3040
 Wollankstr.: Angebotsstreifen werden bis Herbst 2011 eingerichtet	?::projected 9727,17804 9791,17877 9832,17925 9870,17971 9978,18104 10027,18165 10089,18180
 #
 #: by: Tagesspiegel vom 2010-03-31
-#: last_checked: 2011-04-09
+#: last_checked: 2011-04-18
 #: next_check: 2011-06-01
 Rüdersdorfer Str. bekommt Radspuren	?::projected 13066,11854 12891,12008
 #
 #: by: Tagesspiegel vom 2010-03-26
-#: last_checked: 2011-04-15
+#: last_checked: 2011-04-18
 #: next_check: 2011-05-01
 Lindenstr. bekommt Radspuren	?::projected 9795,10512 9770,10590 9777,10719 9805,10791 9829,10830 9935,11067 9973,11150 10020,11262
 #
@@ -168,9 +168,9 @@ An den Eldenaer Höfen: wo genau wird die Straße liegen? Qualität?	?::inwork 1443
 #: next_check: 2012-04-01
 Axel-Springer-Str.: Verbindung zum Spittelmarkt	?::inwork 10166,11592 10213,11728
 # 
-#: last_checked: 2011-04-16
-#: next_check: 2011-05-01
-Radstreifen in der Wilhelmstr.: teilweise schon realisiert	?::inwork 9388,10393 9378,10539 9370,10615 9367,10641 9313,10789 9266,10936 9234,11056 9199,11166
+#: last_checked: 2011-04-19
+#: next_check: 2011-05-05
+Radstreifen in der Wilhelmstr.: wird der Rest noch realisiert?	?::inwork 9367,10641 9313,10789 9266,10936 9234,11056 9199,11166
 #
 #: last_checked: 2011-04-09 vvv
 #: next_check: 2011-07-15 vvv
@@ -199,14 +199,12 @@ Planstraße im Block 902: neue Straße wird gebaut, wo genau, wann? Wird der Straß
 #: XXX - Oda Schottmüller
 #: XXX - Hilde Radusch
 #: XXX - Theanolte Bähnisch
-#: XXX - Alex Wedding - Planstraße 5
 #: XXX - Bernhard Weiß - Planstraße 6???
-#: last_checked: 2011-03-04 vvv
-#: next_check: 2011-04-15 vvv
+#: XXX habe ich bereits: Alex Wedding - Planstraße 5
+#: last_checked: 2011-04-19 vvv
+#: next_check: 2011-05-15 vvv
 Neue Planstraße: genaue Lage? Straßenname?	?::inwork 11191,13080 11108,13142 11045,13183
 Neue Planstraße: bereits in Bau, z.Zt. Einbahnstraße offen in Richtung Westen; Straßenname?	?::inwork 11085,13239 11027,13279
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/11re.pdf/file
-Neue Planstraße: bereits in Bau; Straßenname (wahrscheinlich Alex-Wedding-Str.)?	?::inwork 11045,13183 11085,13239 11146,13328
 #: next_check: ^^^
 #: last_checked: ^^^
 #: XXX ^^^
@@ -274,12 +272,12 @@ An der Barthschen Promenade: vielleicht wird die Straße in Zukunft sich hier bef
 #: next_check: 2011-04-28
 Neubau eines Uferwegs an der HTW (Fuß- und Radweg)	?::inwork 19177,5560 19020,5532 18846,5548 18654,5717
 # 
-#: last_checked: 2011-03-04
-#: next_check: 2011-05-01
+#: last_checked: 2011-04-19
+#: next_check: 2011-06-01
 Karl-Liebknecht-Str.: Radstreifen nach den Bauarbeiten?	?::inwork 10920,13139 11015,13264 11021,13271 11027,13279 11080,13350 11092,13366
 # 
-#: last_checked: 2011-02-25
-#: next_check: 2011-04-15
+#: last_checked: 2011-04-18
+#: next_check: 2011-06-15
 #: XXX passiert hier noch was? Oder ist es mit der Verlängerung der Rollbergstr. schon getan? Oder ist es die Verbindung zwischen Rollbergstr. und Werbellinstr.?
 Am Sudhaus: wo genau wird die Straße verlaufen? Qualität?	? 12148,8174 12227,8190
 # 
@@ -525,9 +523,6 @@ Straße wird eingezogen	? 14908,9939 14956,10028
 # 
 #XXX del --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/41re.pdf/file --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/51re.pdf/file --- Traberweg: Einziehung von Straßenland: was bedeutet das hier? -> nix!	? 18351,8222 18416,8163 18490,8104 18570,8025
 Havelwiesen: genaue Lage der Grünanlage?	? -2526,16779 -2427,16779 -2422,16656 -2504,16663
-#: XXX_indoor: nach handicap_s-orig übetragen
-#: next_check: 2010-11-30
-Behrenstr.: Verlängerung der Einbahnstraßenregelung ab Dezember 2010	? 9164,12172 9373,12197
 Poßweg: evtl. Eintrag in brunnels notwendig - Name der Brücke?	? -429,4043 -472,4090
 Altkanzlerstr.: evtl. Eintrag in brunnels notwendig - Name der Brücke?	? -222,4300 -151,4228
 #: XXX_prog
