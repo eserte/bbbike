@@ -17287,14 +17287,14 @@ EOF
 userdel	2::inwork 50359,-20087 49368,-19096
 EOF
      },
-     { from  => 1303071086, # 2011-04-17 22:11
-       until => 1304200799, # 2011-04-30 23:59
-       text  => 'Erkstr. (Neukölln): Baustelle, Fahrtrichtung Sonnenallee gesperrt (bis Ende 04/2011) ',
+     { from  => 1304110298, # 2011-04-29 22:51
+       until => 1305496799, # 2011-05-15 23:59
+       text  => 'Erkstr. (Neukölln) Richtung Sonnenallee Baustelle, Fahrtrichtung gesperrt (bis Mitte 05/2011) ',
        type  => 'handicap',
        source_id => 'INKO_090026',
        data  => <<EOF,
 #: last_checked: 2011-04-07
-#: next_check: 2011-04-25
+#: next_check: 2011-05-14
 #: XXX nach den Bauarbeiten vielleicht besserer Asphalt? Siehe qualitaet_s-orig...
 userdel	q4::inwork; 12598,8390 12771,8439
 EOF
@@ -17380,7 +17380,7 @@ userdel	q4::inwork 48657,68265 49286,68297 49503,68415
 EOF
      },
      { from  => 1270980000, # 2010-04-11 12:00
-       until => 1304172000, # 2011-04-30 16:00
+       until => 1304111276, # 2011-04-30 16:00 1304172000
        text  => 'Klemkestr. (Reinickendorf): Baustelle, Fahrtrichtung gesperrt, Richtung Residenzstr. zwischen Str. vor Schönholz und Emmentaler Str., 12.04.2010 12:00 Uhr bis 30.04.2011 16:00 Uhr ',
        type  => 'handicap',
        source_id => 'IM_015512',
@@ -17654,9 +17654,9 @@ EOF
 (Eingang Tempelhofer Damm - südliche Landebahn)	2::night 9302,7294 9351,7241 9461,7190
 EOF
      },
-     { from  => 1286097120, # 2010-10-03 11:12
-       until => 1312034400, # 2011-07-30 16:00
-       text  => 'Lahnstr. (Neukölln): Baustelle, Fahrtrichtung gesperrt Richtung Grenzallee zwischen Mierstr. und Niemetzstr., 04.10.2010 11:12 Uhr bis 30.07.2011 16:00 Uhr ',
+     { from  => 1304110406, # 2011-04-29 22:53
+       until => 1314914399, # 2011-09-01 23:59
+       text  => 'Lahnstr. (Neukölln) Richtung Grenzallee zwischen Mierstr. und Niemetzstr. Baustelle, Fahrtrichtung gesperrt (bis Anfang 09/2011) ',
        type  => 'handicap',
        source_id => 'IM_014905',
        data  => <<EOF,
@@ -18651,7 +18651,7 @@ userdel	q4::inwork; 10680,18380 10755,18231 10829,18083 10846,17992 10859,17854
 EOF
      },
      { from  => 1295721886, # 2011-01-22 19:44
-       until => 1306879200, # 2011-06-01 00:00
+       until => 1304111420, # 2011-06-01 00:00 1306879200
        text  => 'Wandlitz: B273: Brückenneubau und Straßenerneuerung OD Wandlitz, 21.04.2010 bis 31.05.2011 ',
        type  => 'gesperrt',
        source_id => 'LS/O-SG33-E/10/039',
@@ -18904,6 +18904,25 @@ EOF
        source_id => 'LS/O-SG33-E/10/124.5',
        data  => <<EOF,
 userdel	2::inwork 52733,87022 52642,86984
+EOF
+     },
+     { from  => 1304110785, # 2011-04-29 22:59
+       until => 1309471200, # 2011-07-01 00:00
+       text  => 'Rehfelde: K6419: Straßenausbau OL Rehfelde, zw. Bahnhofstraße und Kreisverkehr gesperrt, bis 30.06.2011 ',
+       type  => 'handicap',
+       source_id => '106401098',
+       data  => <<EOF,
+userdel	q4::inwork; 45856,14437 44121,14615
+EOF
+     },
+     { from  => 1304111111, # 2011-04-29 23:05
+       until => 1304294400, # 2011-05-02 02:00
+       text  => 'Straße des 17. Juni (Tiergarten) in beiden Richtungen zwischen Y.-Rabin-Str. und Brandenburger Tor; auch Ebertstr. zwischen Scheidemannstr. und Behrenstr., Veranstaltung, Straße vollständig gesperrt (30.04.2011 12 Uhr bis 02.05.11 ca. 02:00 Uhr) ',
+       type  => 'gesperrt',
+       source_id => 'IM_017171',
+       data  => <<EOF,
+userdel	2::temp 8610,12254 8538,12245 8214,12205 8089,12190 8055,12186
+userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
 EOF
      },
     );

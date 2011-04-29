@@ -680,16 +680,7 @@ userdel	2::temp -8087,-1453 -8151,-1470 -8306,-1454
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_013223',
-         'until' => 1303304400,
-         'text' => 'Kastanienallee (Rosenthal) Richtung Dietzgenstr. zwischen Hauptstr. und Friedrich-Engels-Str. Baustelle, Fahrtrichtung gesperrt (bis 04.2011) ',
-         'from' => 1245658920,
-         'id' => 1712,
-         'data' => 'userdel	q4::inwork; 7992,20515 8344,20548 8411,20554 8481,20561 8543,20567 8561,20569 8717,20584 8900,20601
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1318,12 +1309,12 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        {
          'source_id' => 'INKO_090026',
-         'until' => 1304200799,
-         'text' => 'Erkstr. (Neukölln): Baustelle, Fahrtrichtung Sonnenallee gesperrt (bis Ende 04/2011) ',
-         'from' => 1303071086,
+         'until' => 1305496799,
+         'text' => 'Erkstr. (Neukölln) Richtung Sonnenallee Baustelle, Fahrtrichtung gesperrt (bis Mitte 05/2011) ',
+         'from' => 1304110298,
          'id' => 2033,
          'data' => '#: last_checked: 2011-04-07
-#: next_check: 2011-04-25
+#: next_check: 2011-05-14
 #: XXX nach den Bauarbeiten vielleicht besserer Asphalt? Siehe qualitaet_s-orig...
 userdel	q4::inwork; 12598,8390 12771,8439
 ',
@@ -1346,16 +1337,7 @@ userdel	q4::inwork; 12598,8390 12771,8439
        },
        undef,
        undef,
-       {
-         'source_id' => 'IM_015512',
-         'until' => 1304172000,
-         'text' => 'Klemkestr. (Reinickendorf): Baustelle, Fahrtrichtung gesperrt, Richtung Residenzstr. zwischen Str. vor Schönholz und Emmentaler Str., 12.04.2010 12:00 Uhr bis 30.04.2011 16:00 Uhr ',
-         'from' => 1270980000,
-         'id' => 2043,
-         'data' => 'userdel	q4::inwork; 8182,18761 8066,18754 7886,18742 7855,18697
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'IM_015518',
          'until' => 1319984100,
@@ -1431,9 +1413,9 @@ userdel	q4::inwork; 12598,8390 12771,8439
        },
        {
          'source_id' => 'IM_014905',
-         'until' => 1312034400,
-         'text' => 'Lahnstr. (Neukölln): Baustelle, Fahrtrichtung gesperrt Richtung Grenzallee zwischen Mierstr. und Niemetzstr., 04.10.2010 11:12 Uhr bis 30.07.2011 16:00 Uhr ',
-         'from' => 1286097120,
+         'until' => 1314914399,
+         'text' => 'Lahnstr. (Neukölln) Richtung Grenzallee zwischen Mierstr. und Niemetzstr. Baustelle, Fahrtrichtung gesperrt (bis Anfang 09/2011) ',
+         'from' => 1304110406,
          'id' => 2069,
          'data' => 'userdel	q4::inwork; 13627,7047 13891,7107
 ',
@@ -1642,16 +1624,7 @@ userdel	3 13150,7254 13047,7234 13034,7319
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'LS/O-SG33-E/10/039',
-         'until' => 1306879200,
-         'text' => 'Wandlitz: B273: Brückenneubau und Straßenerneuerung OD Wandlitz, 21.04.2010 bis 31.05.2011 ',
-         'from' => 1295721886,
-         'id' => 2173,
-         'data' => 'userdel	2::inwork 13546,37474 14470,37191
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'LS/W-SG33-K/10/053',
          'until' => 1306879200,
@@ -1796,6 +1769,27 @@ userdel	q4::inwork; -12545,-698 -12262,-612
          'from' => 1302991200,
          'id' => 2200,
          'data' => 'userdel	2::inwork 52733,87022 52642,86984
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => '106401098',
+         'until' => 1309471200,
+         'text' => 'Rehfelde: K6419: Straßenausbau OL Rehfelde, zw. Bahnhofstraße und Kreisverkehr gesperrt, bis 30.06.2011 ',
+         'from' => 1304110785,
+         'id' => 2201,
+         'data' => 'userdel	q4::inwork; 45856,14437 44121,14615
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_017171',
+         'until' => 1304294400,
+         'text' => 'Straße des 17. Juni (Tiergarten) in beiden Richtungen zwischen Y.-Rabin-Str. und Brandenburger Tor; auch Ebertstr. zwischen Scheidemannstr. und Behrenstr., Veranstaltung, Straße vollständig gesperrt (30.04.2011 12 Uhr bis 02.05.11 ca. 02:00 Uhr) ',
+         'from' => 1304111111,
+         'id' => 2202,
+         'data' => 'userdel	2::temp 8610,12254 8538,12245 8214,12205 8089,12190 8055,12186
+userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
 ',
          'type' => 'gesperrt'
        }

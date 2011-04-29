@@ -36,7 +36,7 @@ Hauptstr. (Blankenfelde): Asphalt	Q0 9774,23936 9812,23983 9828,24149
 Berliner Str. (Blankenfelde): schlechtes Kopfsteinpflaster	Q3 9425,23693 9490,23531
 Berliner Str. (Blankenfelde): mäßiges Kopfsteinpflaster	Q2 9490,23531 9528,23240
 B96a: Radweg Richtung N, OK	Q0 9228,23643 9146,23843 8984,24078 8891,24330 8826,24501 8682,24883 8665,24941 8661,24952 8571,25180 8548,25239 8493,25378
-Hobrechtsfelder Chaussee (bis Kurve): OK	Q0 15589,27116 15231,26587 14859,26029 14472,25449 14314,25193 14219,25013
+Hobrechtsfelder Chaussee (bis Kurve): OK	Q0 15589,27116 15230,26560 14859,26029 14472,25449 14314,25193 14219,25013
 #: corrected_by: osm (schlechtes Kopfsteinpflaster -> paved)
 Hobrechtsfelder Chaussee (ab Kurve)	Q0 15589,27116 15711,27928 15777,28037
 Wisbyer Str.: Asphalt	Q0 11019,16465 11289,16423 11397,16405 11448,16398 11470,16394 11542,16384 11632,16373 11673,16367 11727,16358 11750,16354 11808,16343 11829,16339 11889,16328 11936,16302 12026,16247 12091,16209
@@ -1804,6 +1804,10 @@ Straße 270: Feldweg, im westlichen Teil nur zweispurig	Q2 -5035,11007 -4832,1104
 #: corrected_by: rjoop (was "schlechtes Kopfsteinpflaster")
 Eschengraben: Asphalt	Q0 11755,17216 11783,17036 11831,16802 11776,16753 11720,16752 11621,16749
 #: by: rjoop: vvv
+(Bucher Teiche - Hobrechtsfelde): Feldweg, zweispurig	Q2 14497,26727 14494,26854 14567,27165 14660,27310 14699,27471
+(Bucher Teiche - Hobrechtsfelde): Waldweg	Q2 14699,27471 14759,27468 15076,27753 15108,27979 15777,28037
+(Bucher Teiche - Schönerlinder Chaussee): eng, umgestürzte Bäume	Q3+ 14017,25491 14141,25659 14216,25760 14302,26021 14352,26100 14366,26234 14538,26558 14497,26727
+(S-Bahndamm - Bucher Teiche): eher sandig, wellig	Q3+ 15490,24848 14472,25449 14141,25659
 Bornaer Str.: Verbundsteinpflaster	Q1 15531,1481 15434,1317
 Beizerweg: Beton	Q0 16375,1313 16276,1371 16165,1468
 #: confirmed_by: srt
@@ -12139,6 +12143,9 @@ Heimkehlenstr.: guter Asphalt	Q0 5543,1706 5433,1763 5421,1786
 Kernerstr.: mäßiger Asphalt	Q1- 14185,22803 14043,22903 13950,22969
 #: note: Kat(82) meint hingegen: Asphalt, Q2 zwischen Bahnhofstr. und Krontaler Str.
 #: corrected_by: srt (Asphalt -> Kopfsteinpflaster/unbefestigter Weg)
+#: XXX Straße in Bau (gesehen aus der Bahn), eventuell später asphaltiert
+#: last_checked: 2011-04-22
+#: next_check: 2011-05-05
 Boenkestr.: Kopfsteinpflaster/unbefestigter Weg	Q2- 14756,23622 14539,23306
 Boenkestr.: guter Asphalt	Q0 14539,23306 14314,22944 14276,22914 14246,22900 14185,22803 14109,22714 14057,22617 13983,22513
 #: by: ^^^
