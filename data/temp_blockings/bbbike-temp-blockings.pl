@@ -5552,7 +5552,7 @@ EOF
        text  => 'Straßenfest am Kaiserdamm. Die Fahrbahn Richtung Theodor-Heuss-Platz ist vom 26.08.2006, 6.00 Uhr, von der Sophie-Charlotten- bis zur Königin-Elisabeth-Straße bis zum 28.08.2006, 0.00 Uhr gesperrt.',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1::temp 2612,11491 2390,11468 2282,11463 2191,11451 2109,11441
+userdel	1::temp 2609,11503 2391,11478 2282,11463 2191,11451 2109,11441
 EOF
      },
      { from  => 1156454823, # 2006-08-24 23:27
@@ -14308,7 +14308,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_012896',
        data  => <<EOF,
-userdel	q3::inwork -7710,4771 -7519,4843
+userdel	q3::inwork -7713,4775 -7519,4843
 EOF
      },
      { from  => 1244065266, # 2009-06-03 23:41
@@ -18004,7 +18004,7 @@ EOF
        text  => 'Fahrbahnsanierung in der Pestalozzistraße zwischen Wielandstraße und Schlüterstraße, ab Montag, 12.07.2010 bis Ende August 2010, nur einspurig in Fahrtrichtung Wielandstraße befahrbar.',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork; 4433,11213 4556,11206
+userdel	q4::inwork; 4434,11227 4555,11216
 EOF
      },
      { from  => undef, # 
@@ -18550,12 +18550,12 @@ EOF
 userdel	2::inwork 43875,-35850 44731,-35697
 EOF
      },
-     { from  => 1290585600, #1290546446, # --- ausgesetzt 1290294000, # 2010-11-21 00:00
-       until => 1291654800, #1290546455, # --- ausgesetzt 1291503599, # 2010-12-04 23:59
-       text  => 'Vollsperrung Falkentaler Steig in Berlin-Reinickendorf aufgrund von Straßenbaumaßnahmen, 24.11.2010 09:00 Uhr bis 06.12.2010 18:00 Uhr',
+     { from  => 1304373600, # 1290585600, #1290546446, # --- ausgesetzt 1290294000, # 2010-11-21 00:00
+       until => 1305410400, # 1291654800, #1290546455, # --- ausgesetzt 1291503599, # 2010-12-04 23:59
+       text  => 'Vollsperrung Falkentaler Steig in Berlin-Reinickendorf aufgrund von Straßenbaumaßnahmen in der Zeit von 3. bis 14. Mai 2011',
        type  => 'handicap',
-#       source_id => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20101117.1500.319282.html',
-       source_id => 'IM_016682',
+       source_id => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20110421.1005.341643.html',
+#       source_id => 'IM_016682',
        data  => <<EOF,
 userdel	q4::inwork 2492,24325 2708,24383
 userdel	q4::inwork 3367,23654 3311,23677 3235,23781 3161,23888 3012,24107
@@ -18923,6 +18923,15 @@ EOF
        data  => <<EOF,
 userdel	2::temp 8610,12254 8538,12245 8214,12205 8089,12190 8055,12186
 userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
+EOF
+     },
+     { from  => 1304481600, # 2011-05-04 06:00
+       until => 1304870400, # 2011-05-08 18:00
+       text  => 'Bauvorhaben Umbau Wendenschloßstraße von Müggelheimer Straße bis Salvador-Allende-Straße, Vollsperrung vom 05.05.11 6.00 Uhr bis 08.05.11 18.00 Uhr ',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20110421.1205.341677.html',
+       data  => <<EOF,
+userdel	q4::inwork 22740,4415 22791,4457 22832,4491 22862,4511 22893,4532 22959,4576 23055,4640 23363,4846 23451,4877
 EOF
      },
     );

@@ -1383,7 +1383,7 @@ userdel	q4::inwork; 12598,8390 12771,8439
        {
          'until' => undef,
          'permanent' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im April bis 20.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Mai bis 21.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'from' => undef,
          'id' => 2068,
          'data' => '(Eingang Columbiadamm - Rundkurs auf dem Flughafen Tempelhof)	2::night 10691,8532 10640,8366 10598,8270 10575,8218
@@ -1586,25 +1586,26 @@ userdel	3 13150,7254 13047,7234 13034,7319
        undef,
        undef,
        undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
        {
-         'source_id' => 'http://www.potsdam.de/cms/beitrag/10070344/966975/',
-         'until' => 1304200800,
-         'text' => 'Steinstraße: Für den Bau eines Schmutzwasserkanals ist die Steinstraße zwischen Mendelssohn-Bartholdy-Straße und Bernhard-Beyer-Straße für den Kfz-Verkehr gesperrt. Die Arbeiten werden bis voraussichtlich April 2011 andauern.',
-         'from' => 1289156455,
-         'id' => 2153,
-         'data' => 'userdel	q4::inwork -7750,-2431 -7909,-2375 -7996,-2293
+         'source_id' => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20110421.1005.341643.html',
+         'until' => 1305410400,
+         'text' => 'Vollsperrung Falkentaler Steig in Berlin-Reinickendorf aufgrund von Straßenbaumaßnahmen in der Zeit von 3. bis 14. Mai 2011',
+         'from' => 1304373600,
+         'id' => 2162,
+         'data' => 'userdel	q4::inwork 2492,24325 2708,24383
+userdel	q4::inwork 3367,23654 3311,23677 3235,23781 3161,23888 3012,24107
 ',
          'type' => 'handicap'
        },
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
        undef,
        undef,
        undef,
@@ -1685,16 +1686,7 @@ userdel	q4::inwork; -12545,-698 -12262,-612
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => '106401892',
-         'until' => 1304200800,
-         'text' => 'Rehfelde: L233, L232: Tief- und Gleisbauarbeiten OL Rehfelde, Bereich Bahnübergang Parkstraße/ Bahnhofstraße/Friedrich-Engels-Str., 09.09.2010 bis 30.04.2011 ',
-         'from' => 1299925522,
-         'id' => 2186,
-         'data' => 'userdel	q4::inwork 45732,14245 45537,13866
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1792,6 +1784,16 @@ userdel	q4::inwork; -12545,-698 -12262,-612
 userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20110421.1205.341677.html',
+         'until' => 1304870400,
+         'text' => 'Bauvorhaben Umbau Wendenschloßstraße von Müggelheimer Straße bis Salvador-Allende-Straße, Vollsperrung vom 05.05.11 6.00 Uhr bis 08.05.11 18.00 Uhr ',
+         'from' => 1304481600,
+         'id' => 2203,
+         'data' => 'userdel	q4::inwork 22740,4415 22791,4457 22832,4491 22862,4511 22893,4532 22959,4576 23055,4640 23363,4846 23451,4877
+',
+         'type' => 'handicap'
        }
      
 );

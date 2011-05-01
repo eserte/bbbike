@@ -583,7 +583,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 2831,14219
 	X 2795,14161
 	X 3441,11598
-	X 2612,11491
+	X 2609,11503
 	X 2547,11788
 	X 2071,11752
 	X 1971,12368
@@ -773,9 +773,10 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 1747,11719
 	X 2446,11776
 	X 2330,11762
+#: note: Ampel wahrscheinlich nur bei Waldbühnen-Veranstaltungen eingeschaltet
 	X -1269,11008
 	X -1499,10990
-	X -572,11092
+	X -587,11090
 	X 456,11233
 	X 9134,15953
 	X 9864,14578
@@ -949,7 +950,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 11582,14448
 	X 11389,13887
 	X 11852,15281
-	X -3389,11593
+	X -3404,11589
 #: note: zusammenhängende Ampelanlage vvv
 	X -3495,15622
 	X -3501,15645
@@ -1029,7 +1030,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 4897,11354
 	X 4558,11366
 	X 4312,11354
-	X 3052,11232
+	X 3054,11240
 	X 3093,10594
 	X 3041,10732
 	X 3344,10878
@@ -1620,8 +1621,8 @@ nur Richtung O	X 8142,7221
 	X -7170,4962
 	X -7120,5076
 	X -7389,5294
-	X -7551,5508
-	X -8115,6157
+	X -7556,5515
+	X -8116,6167
 	X 21977,9023
 	X 18676,8236
 	X 18800,9743
@@ -1640,7 +1641,7 @@ nur Richtung O	X 8142,7221
 	X 2201,8519
 	X 2129,8333
 	X 1767,8853
-	X -5450,6903
+	X -5454,6896
 	X -5097,7361
 	X -4590,8666
 	F -4757,9140
@@ -1673,9 +1674,9 @@ nur Richtung O	X 8142,7221
 	X 4513,10702
 	X 3970,11664
 	X 3460,11441
-	X 3481,11224
+	X 3479,11238
 	F 2865,11086
-	X 2766,11512
+	X 2764,11519
 	X 3617,12352
 	X 4572,7936
 	X 15080,11905
@@ -1964,7 +1965,9 @@ Industriebahn	B0 -2410,13746
 	X 18496,2471
 	X 19501,3101
 	X 19581,3184
-	F -6480,5713
+	X -6480,5713
+	F -6170,6016
+	F -5877,6308
 	F 8831,13973
 	X 8442,14456
 	F 13744,12529
@@ -2584,6 +2587,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	B 33705,152843
 	B 32741,155086
 	B 21792,169304
+	F -8603,6973
 ################################################################################
 # note: Potsdam vvv
 #: by: http://www.potsdam.de/cms/beitrag/10067917/966975/

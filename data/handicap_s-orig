@@ -21,13 +21,14 @@ Niederlagstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9972,12184 9947,12269 9
 #: last_checked: 2011-04-19
 Oberwallstr.: Bauarbeiten, Einbahnstraﬂe	q4::inwork; 9925,11947 9913,12068
 # 
-#: last_checked: 2011-03-30
+#: last_checked: 2011-04-30
+#: next_check: 2011-07-01
 Varian-Fry-Str.: Baustelle, Fahrbahn gesperrt	q4::inwork 8389,11378 8374,11479
 # 
-#: last_checked: 2011-04-19
+#: last_checked: 2011-04-30
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraﬂe Richtung S¸den	q4::inwork; 9475,12365 9462,12481 9454,12558
 # 
-#: last_checked: 2011-04-19
+#: last_checked: 2011-04-30
 Universit‰tsstr.: wegen Bauarbeiten Richtung Unter den Linden gesperrt	q4::inwork; 9580,12581 9601,12380
 # 
 #: next_check: 2011-06-01
@@ -782,6 +783,41 @@ Kottesteig: Bordsteine, Fuﬂg‰nger	q1 6868,5262 6820,5237 6806,5230
 (Zu den Krugwiesen - Vincent-van-Gogh-Str.): Fuﬂg‰nger	q1 18646,17345 18704,17565
 (Weg durch die Falkenberger Krugwiesen): Fuﬂg‰nger	q1 18704,17565 18756,17498 18784,17525 18831,17663 18986,17786 19102,17879 19110,18015 19127,18091 19212,18205 19251,18252 19249,18351 19265,18400 19291,18456
 (Falkenberger Krugwiesen - Falkenberger Chaussee): Fuﬂg‰nger	q1 19212,18205 18969,18448
+Stritteweg: vereinzelte Stufen und schmale Rampen	q3 -5236,11204 -5256,11142
+K¸nstlerweg: enge Straﬂe	q1 -7418,7842 -7334,7703 -7258,7735 -7340,7873
+#: XXX_prog: Bordsteine (2x)
+Ritterfelddamm [Nebenfahrbahn]: Bordsteine	q3 -8582,6987 -8598,7018
+#: XXX_prog: Bordsteine (2x)
+(Am Flugplatz Gatow - Ludwig-D¸rr-Str.): Bordsteine	q3 -8319,7061 -8341,7108
+#: XXX_prog: Bordsteine (2x)
+#: note: auf der nˆrdlichen Seite sogar zwei Stufen
+(Am Flugplatz Gatow - George-Caylay-Str.): Bordsteine	q3 -8107,7121 -8138,7182
+#: XXX_prog: Bordsteine (2x)
+(Am Flugplatz Gatow - Richard-Byrd-Str.): Bordsteine	q3 -8042,7138 -8074,7204
+#: XXX_prog: Bordsteine (2x)
+#: XXX_indoor: f¸r Anh‰nger nicht passierbar, 70cm lichte Breite durch niedrige Z‰une
+#: note: ‹bergang ist Richtung S¸dwesten versetzt
+(Hellmuth-Hirth-Zeile - Ikaruspfad): Bordsteine, eng, f¸r Anh‰nger nicht geeignet	q4 -7965,6888 -7975,6900
+#: XXX_prog: Bordsteine (2x)
+#: XXX_indoor: f¸r Anh‰nger nicht passierbar, 70cm lichte Breite durch niedrige Z‰une
+#: note: ‹bergang ist Richtung Nordosten versetzt
+(August-Euler-Zeile - Saint-ExupÈry-Str.): Bordsteine, eng, f¸r Anh‰nger nicht geeignet	q4 -8081,6792 -8087,6806
+#: XXX_prog: Bordsteine (2x)
+#: XXX_indoor: f¸r Anh‰nger nicht passierbar, 70cm lichte Breite durch niedrige Z‰une
+#: note: ‹bergang ist Richtung Nordosten versetzt
+(Thea-Rasche-Zeile - Amelia-Earhart-Str.): Bordsteine, eng, f¸r Anh‰nger nicht geeignet	q4 -8133,6751 -8144,6762
+#: XXX_prog: Bordsteine (2x)
+#: XXX_indoor: f¸r Anh‰nger nicht passierbar, 70cm lichte Breite durch niedrige Z‰une
+#: note: ‹bergang ist Richtung Nordosten versetzt
+(K‰the-Paulus-Zeile - Marga-von-Etzdorf-Str.): Bordsteine, eng, f¸r Anh‰nger nicht geeignet	q4 -8185,6707 -8199,6720
+#: XXX_prog: Bordsteine (2x)
+#: XXX_indoor: f¸r Anh‰nger nicht passierbar, 70cm lichte Breite durch niedrige Z‰une
+#: note: ‹bergang ist Richtung Nordosten versetzt
+(Amelie-Beese-Zeile - Gebr¸der-Wright-Str.): Bordsteine, eng, f¸r Anh‰nger nicht geeignet	q4 -8291,6620 -8301,6635
+Nieplitzsteig: eng	q1 -8642,4789 -8728,4800 -8745,4812 -8818,4833
+#: XXX_prog eigentlich nach comments_mount:
+Fuchsbergeweg (Kladow): starke Steigung	q3; -7927,5254 -7968,5175
+(Dr. Kleusberg-Promenade - Hˆhenweg): vereinzelte Stufen, Wasserablaufrinnen, Fuﬂg‰nger, Steigung	q3 -4445,10379 -4452,10420 -4443,10460 -4429,10484 -4399,10549 -4414,10614
 ######################### User Contributions #################################
 #: by: Michael Kiekbusch
 #: corrected_by: srt/policy (q4 -> q3-)
@@ -1137,8 +1173,8 @@ Helga-Hahnemann-Str.: Fuﬂg‰nger, schmal	q2 9415,13315 9385,13174
 An der Karolinenhˆhe: Fuﬂg‰nger, spielende Kinder	q3 -5900,11726 -5848,11779 -5892,11820 -5847,11876
 Obstallee: Bodenschwellen, Fuﬂg‰nger, spielende Kinder	q3 -5421,12450 -5896,12607
 Leubnitzweg: Fuﬂg‰nger (Wohngebiet), Bordsteine	q3 -5385,12540 -5421,12450
-Enger Steig: Fuﬂg‰nger, Bordsteine	q1 -4263,11582 -4294,11673
-Enger Steig: Fuﬂg‰nger, Bordsteine	q1 -4298,11769 -4278,11873
+Enger Steig: Fuﬂg‰nger, Bordsteine	q1 -4263,11582 -4302,11669
+Enger Steig: Fuﬂg‰nger, Bordsteine	q1 -4310,11770 -4278,11873
 (Parkweg Swinem¸nder Str.): Fuﬂg‰nger	q1 10189,14649 10228,14564
 Lortzingstr.: Fuﬂg‰nger	q1 9898,15354 9853,15333 9814,15312
 Demminer Str. (Wedding): Fuﬂg‰nger	q1 9887,15153 9929,15174 9969,15191
@@ -1219,8 +1255,9 @@ Eiergasse: Touristen	q3 10671,12356 10700,12315
 Am Nuﬂbaum: Touristen	q3 10644,12469 10626,12455 10611,12444 10597,12405 10611,12378
 (Am Nuﬂbaum): Touristen	q3 10597,12405 10536,12355
 Kleine Gertraudenstr.: Fuﬂg‰nger	q1 10332,11929 10364,11896 10391,11898
-Tharauer Allee: Bauarbeiten	q1::inwork -1515,11278 -1679,11336 -1818,11466 -1885,11392
-(Scottweg - Tharauer Allee): Fuﬂg‰nger	q1 -1403,11279 -1505,11307
+#: XXX_prog Bordstein nur am westlichen Ende
+#: corrected_by: srt (added Bordstein)
+(Scottweg - Tharauer Allee): Fuﬂg‰nger, Bordstein	q1 -1403,11279 -1505,11307
 Zimmerstr. (Wilhelmstadt): Fuﬂg‰nger	q1 -3962,12973 -3942,12957
 Br¸derstr. (Wilhelmstadt): Fuﬂg‰nger	q1 -3999,12912 -3967,12891
 Weiﬂenburger Str.: Fuﬂg‰nger	q1 -3984,12812 -4043,12833
@@ -1746,7 +1783,8 @@ Kaiser-Wilhelm-Str. - Langkofelweg: Fuﬂg‰nger	q2 6957,3699 6998,3596
 #: note: "ruhige Wohnstraﬂe, mehr oder weniger einspurig"
 Sch¸tzenstr. (Spandau): enge Straﬂe	q1 -2869,15782 -2859,15785 -2821,15850 -2638,16026 -2624,16049
 #: note: einspurige Straﬂe, auf der auch Autos parken kˆnnen
-Fliegerhorstsiedlung: enge Straﬂe	q2 -7330,7878 -7305,7838 -7266,7775 -7168,7825 -7099,7851 -7096,7881 -7114,7900 -7146,7905 -7305,7838
+#: corrected_by: srt (q2 -> q1)
+Fliegerhorstsiedlung: enge Straﬂe	q1 -7330,7878 -7305,7838 -7266,7775 -7168,7825 -7099,7851 -7096,7881 -7114,7900 -7146,7905 -7305,7838
 #: by: ^^^
 #: by: Holger Gaul: vvv
 #: note: wird vom Ordnungsamt kontrolliert

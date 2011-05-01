@@ -88,7 +88,6 @@ Breite Str. (Pankow)	1 10240,18193 10281,18241 10463,18321 10502,18338 10567,183
 Breite Str. (Pankow)	1 10680,18380 10660,18345 10487,18270 10320,18197 10240,18193
 Heinrich-Mann-Platz.	1 9565,18555 9524,18531 9480,18539 9454,18570 9457,18612 9495,18639 9542,18634 9567,18599 9565,18555
 Edelweißstr.	1 8234,19936 7993,19953 7885,19975 7748,20040
-Angerburger Allee	1 -1524,11108 -1608,11133 -1885,11392 -1931,11437 -1986,11487
 Edelhofdamm	1 3185,25437 3101,25402 2909,25322 2756,25260 2683,25238 2713,25300 2744,25314 2882,25375 3076,25456 3171,25495
 Antonienstr.	1 3930,17920 3970,18126 4009,18322 4085,18694 4098,18762 4162,18891 4240,19019
 Eichborndamm	1s 4240,19019 4232,18981
@@ -395,7 +394,6 @@ Feldspatweg	1 11190,1622 11369,1585 11407,1592
 Eisvogelweg	1 528,4747 542,4699 595,4594 635,4524 661,4492 691,4474
 Kreutzerweg	1 4834,4102 4848,4069 4836,4041 4629,3916
 Hornblendeweg	1 10440,1283 10415,1323 10402,1362 10425,1400 10510,1441 10594,1468 10638,1442 10659,1370
-Sibeliusweg	1 -6811,4893 -6787,5076 -6762,5133 -6747,5169
 Zingster Str. (Gesundbrunnen)	1 9276,16032 9265,16109 9277,16154 9307,16190
 Neufahrwasserweg	1 20390,15307 20550,15551
 Rotdornstr.	1 5085,7109 5121,7132 5141,7158 5139,7206
@@ -558,13 +556,17 @@ Hartmannsweilerweg	1s 16,3744 41,3510 17,3471
 Alsenzer Weg	1s 27751,819 27798,872 27863,943 27968,1060
 Fichtenweg	1 -2963,17872 -2949,17946 -2967,18033 -3000,18192
 Johann-Landefeldt-Str.	1 -8598,7018 -8532,7041 -8466,7064 -8404,7087 -8341,7108 -8275,7131 -8207,7156
+Johann-Landefeldt-Str.	1s -8619,7012 -8598,7018
 Schüßlerplatz	1 22284,4653 22355,4660
 Karlstr. (Köpenick)	1 22556,4386 22458,4134
 Eichenstr./Lindenstr.	1 32162,2542 32316,2468 32467,2582
 Moosstr. [Wohngebiet]	1 19210,5150 19233,5076 19236,5025 19241,4958 19306,4969 19294,5033 19255,5164
 Abtstr./Platz der Befreiung	1 20066,3466 19990,3416 20038,3357
 Kreisverkehr Waldowplatz	1 19283,6123 19282,6152 19303,6170 19333,6165 19345,6150 19344,6119 19325,6105 19290,6114 19283,6123
-Paddlerweg: Privatweg, Tor	2 -3559,11227 -3625,11250 -3679,11248
+Paddlerweg: Privatweg, Tor an der Einfahrt	2 -3554,11232 -3625,11250 -3679,11248
+Schwimmerweg: Privatweg, Tor der Einfahrt	2 -3584,11177 -3642,11216 -3673,11216
+Rudererweg: Privatweg, Tor der Einfahrt	2 -3534,11277 -3570,11289 -3689,11291
+Lankestrand: Privatweg	2 -3689,11291 -3679,11248 -3673,11216
 Joachimstr.	1s 22009,5593 21907,5517 21789,5427
 Cardinalstr.	1s 21901,5728 21828,5623 21706,5541
 Fuchsbergeweg	1s 20595,9558 20592,9298
@@ -597,6 +599,16 @@ Pasewalker Str. (Wedding)	1 7891,15417 7877,15581
 Olympische Str.	1 610,12100 628,12138
 Radieschenpfad	1 20582,18468 20635,18381
 Lattichweg	1 20452,18273 20453,18321 20523,18329 20635,18381
+Enger Steig	1 -4310,11770 -4312,11720 -4302,11669
+Künstlerweg	1 -7340,7873 -7258,7735 -7334,7703 -7418,7842
+Lerchenstr.	1 -8619,7012 -8801,6977 -8802,7049 -8793,7115
+Storchenstr.	1 -8793,7115 -8675,7148
+Am Flugplatz Gatow	1 -8176,7103 -8319,7061 -8449,7024 -8582,6987
+Am Flugplatz Gatow	1s -8582,6987 -8606,6978
+Temmeweg	1 -7730,4535 -7848,4384 -7882,4377 -7946,4419
+Kladower Damm	1 -7160,5090 -7175,5031 -7144,4981
+Alt-Pichelsdorf	1 -3404,11589 -3445,11505
+Alt-Pichelsdorf	1 -3405,11498 -3381,11583
 Am Neuen Garten	1 -12166,1384 -12212,1201 -12276,831 -12302,718
 Am Neuen Garten	1 -12332,585 -12582,127
 Hochstraße	3nocross::ignrte -11399,-1339 -11461,-1424 -11540,-1543
@@ -1634,6 +1646,8 @@ Rollbergstr.: Zaun, Mauer	3 12295,8154 12327,8161 12407,8177
 Rollbergstr.: Zaun, Mauer	3 12407,8177 12327,8161 12295,8154
 Mittelstreifen	3nocross::ignrte 3306,6453 3347,6460 3459,6484
 Albrecht-Thaer-Weg -> Schorlemerallee: Mittelstreifen	3::igndisp 3449,6863 3347,6460 3459,6484
+tragen (ca. 30 Stufen)	0:30:-142 -1711,11452
+tragen	0:30:-140 -1663,11487
 tragen (5 Stufen)	0:10:62 6820,5237
 tragen (5 Stufen) oder Rampe benutzen	0:5:-73 15287,9713
 tragen (6 Stufen) oder Rampe benutzen	0:6:-75 15270,9718
@@ -1789,6 +1803,12 @@ tragen (Treppe, ca. 20 Stufen)	0:25:-108 19163,14981
 tragen (Treppe, ca. 20 Stufen)	0:25:-12 19160,14935
 tragen (Treppe)	0:30:70 89344,-5795
 tragen, langgezogene Stufen (13 Stufen)	0:25:-168 20704,1383
+Drängelgitter (lichte Breite ca. 120cm)	BNP:3:-149:trailer=10 -4429,10484
+Drängelgitter (relativ breit)	BNP:3:-25:trailer=10 -7136,4321
+Poller (lichte Breite ca. 60cm)	BNP:5:-152:trailer=no -8061,5386
+Steinpoller (lichte Breite ca. 110cm)	BNP:1:-54:trailer=5 -9027,4521
+Drängelgitter (lichte Breite ca. 100cm)	BNP:3:0:trailer=10 -5202,11342
+Drängelgitter (lichte Breite ca. 80cm)	BNP:4:15:trailer=no -5236,11204
 2x Drängelgitter	BNP:6:65:trailer=25 13189,2736
 Schranke (lichte Breite ca. 100cm)	BNP:2:-72:trailer=5 20904,19284
 Schranke	BNP:4:-102:trailer=10 11432,4054
@@ -1811,7 +1831,7 @@ Schranke	BNP:3:-35:trailer=10 22801,4443
 Schranke	BNP:1:-48:trailer=3 21617,3287
 Schranke	BNP:1:-93:trailer=3 21984,2897
 Schranke	BNP:3:14:trailer=10 16966,4847
-Drängelgitter	BNP:3:-82 -4651,9842
+Drängelgitter (lichte Breite ca. 65cm)	BNP:3:-68:trailer=no -4661,9842
 enge Umfahrung	BNP:3:-90:trailer=no 14529,5851
 Schranke	BNP:3:-102:trailer=no 17826,9630
 Einfahrsperre für Autos	BNP:0:7:trailer=2 19003,9800
@@ -1951,6 +1971,7 @@ Schranke (lichte Breite ca. 120cm)	BNP:2:-50:trailer=8 14448,4501
 Schranke (lichte Breite ca. 120cm)	BNP:2:-53:trailer=8 14709,4307
 Schranke (lichte Breite ca. 100cm)	BNP:3:-45:trailer=10 15179,3901
 Tor	BNP:5:-57 26888,13976
+Tiergartenufer: Bauarbeiten, gesperrt	2:inwork 5711,11841 5565,11871
 Bebelplatz: Bauarbeiten, gesperrt	2:inwork 9679,12388 9700,12234
 Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10170,12261 10063,12438
 Boyenweg - Uferweg: wegen Bauarbeiten gesperrt	2:inwork 7938,14426 7886,14518
@@ -2167,18 +2188,18 @@ Virchowweg: schmale Toreinfahrt, Fußgänger und Bordstein	0:10:86 8548,13577
 tragen (ca. 20 Stufen)	0:45:-98 8536,12758
 tragen (35 Stufen)	0:45:-108 8507,12873
 tragen (35 Stufen)	0:45:-57 8480,12909
-Fröhner Str.	1 -4294,11673 -4413,11628 -4573,11545
-Bocksfeldstr.	1 -4300,11720 -4090,11707
+Fröhner Str.	1 -4302,11669 -4413,11628 -4573,11545
+Bocksfeldstr.	1 -4312,11720 -4101,11708
 Roedeliusweg	1 -4413,11628 -4431,11779
-Bollmannweg	1 -4431,11779 -4298,11769
+Bollmannweg	1 -4431,11779 -4310,11770
 Weinmeisterhornweg	1s -4789,11225 -4564,11180
 Heerstr.	3nocross::ignrte -4500,11937 -4437,11919 -4310,11882
 Heerstr. -> Roedeliusweg: Heerstr.	3::igndisp -4310,11882 -4437,11919 -4431,11779
 Roedeliusweg -> Heerstr.: Heerstr.	3::igndisp -4431,11779 -4437,11919 -4500,11937
 Heerstr.	3nocross::ignrte -4310,11882 -4278,11873 -4063,11805
-Enger St. -> Heerstr.: Heerstr.	3::igndisp -4298,11769 -4278,11873 -4310,11882
-Heerstr. -> Enger St.: Heerstr.	3::igndisp -4063,11805 -4278,11873 -4298,11769
-tragen/schieben (40 Stufen, Rampe)	0:120:-260 -4768,11016
+Heerstr. -> Enger St.: Heerstr.	3::igndisp -4063,11805 -4278,11873 -4310,11770
+Enger St. -> Heerstr.: Heerstr.	3::igndisp -4310,11770 -4278,11873 -4310,11882
+tragen/schieben (40 Stufen, Rampe)	0:120:-259 -4768,11016
 Theodor-Heuss-Weg	1s 9197,14562 9128,14461 9081,14363
 tragen / schieben (Treppe 10 Stufen oder wilder Weg)	0:20:-150 9223,14608
 Tor	BNP:0:-247 3332,12742
@@ -2194,19 +2215,13 @@ Altonaer Str. -> Cuxhavener Str.: Mittelstreifen schlecht zu queren	3::igndisp 6
 tragen (Treppe)	0:30:5 8159,13042
 tragen (Treppe)	0:30:-186 8276,13041
 Hanseatenweg	1 6444,12536 6445,12495 6428,12439 6368,12455 6324,12455 6314,12518
-Heerstr.	3nocross::ignrte -1269,11008 -1039,11034 -831,11060 -776,11067 -731,11073 -572,11092
-Heerstr. -> Ragniter Allee: Heerstr.	3::igndisp -831,11060 -1039,11034 -1028,10960
-Ragniter Allee -> Heerstr.: Heerstr.	3::igndisp -1028,10960 -1039,11034 -1269,11008
-Ragniter Allee -> Ragniter Allee: Heerstr.	3::igndisp -1028,10960 -1039,11034 -1062,11214
-Heerstr. -> Ragniter Allee: Heerstr.	3::igndisp -1269,11008 -1039,11034 -1062,11214
-Ragniter Allee -> Heerstr.: Heerstr.	3::igndisp -1062,11214 -1039,11034 -831,11060
-Ragniter Allee -> Ragniter Allee: Heerstr.	3::igndisp -1062,11214 -1039,11034 -1028,10960
+Heerstr.	3nocross::ignrte -1039,11034 -831,11060 -776,11067 -731,11073 -587,11090
 Shawweg -> Heerstr.: Heerstr.	3::igndisp -826,11021 -831,11060 -1039,11034
 Heerstr. -> Shawweg: Heerstr.	3::igndisp -776,11067 -831,11060 -826,11021
 Byronweg -> Heerstr.: Heerstr.	3::igndisp -726,11031 -731,11073 -776,11067
-Heerstr. -> Byronweg: Heerstr.	3::igndisp -572,11092 -731,11073 -726,11031
-Heerstr.	3nocross::ignrte -572,11092 -535,11096 -420,11110 -346,11121 -68,11156
-Parkweg Kranzallee -> Heerstr.: Heerstr.	3::igndisp -526,10985 -535,11096 -572,11092
+Heerstr. -> Byronweg: Heerstr.	3::igndisp -587,11090 -731,11073 -726,11031
+Heerstr.	3nocross::ignrte -587,11090 -535,11096 -420,11110 -346,11121 -68,11156
+Parkweg Kranzallee -> Heerstr.: Heerstr.	3::igndisp -526,10985 -535,11096 -587,11090
 Heerstr. -> Parkweg Kranzallee: Heerstr.	3::igndisp -420,11110 -535,11096 -526,10985
 Heilsberger Allee -> Heerstr.: Heerstr.	3::igndisp -391,11322 -420,11110 -346,11121
 Heerstr. -> Heilsberger Allee: Heerstr.	3::igndisp -535,11096 -420,11110 -391,11322
@@ -2245,18 +2260,18 @@ tragen (16 Stufen)	0:40:-183 4128,12637
 queren schlecht möglich	3nocross::ignrte 2109,11441 2191,11451 2282,11463
 Kaiserdamm -> Stülpnagelstr.: queren schlecht möglich	3::igndisp 2109,11441 2191,11451 2190,11569
 Stülpnagelstr. -> Kaiserdamm: queren schlecht möglich	3::igndisp 2190,11569 2191,11451 2282,11463
-queren schlecht möglich	3nocross::ignrte 2282,11463 2390,11468 2612,11491
-Riehlstr. -> Saldernstr.: queren schlecht möglich	3::igndisp 2393,11381 2390,11468 2405,11587
-Riehlstr. -> Kaiserdamm: queren schlecht möglich	3::igndisp 2393,11381 2390,11468 2282,11463
-Saldernstr. -> Riehlstr.: queren schlecht möglich	3::igndisp 2405,11587 2390,11468 2393,11381
-Saldernstr. -> Kaiserdamm: queren schlecht möglich	3::igndisp 2405,11587 2390,11468 2612,11491
-Kaiserdamm -> Saldernstr.: queren schlecht möglich	3::igndisp 2282,11463 2390,11468 2405,11587
-Kaiserdamm -> Riehlstr.: queren schlecht möglich	3::igndisp 2612,11491 2390,11468 2393,11381
+queren schlecht möglich	3nocross::ignrte 2282,11463 2391,11478 2609,11503
+Riehlstr. -> Saldernstr.: queren schlecht möglich	3::igndisp 2393,11381 2391,11478 2405,11587
+Riehlstr. -> Kaiserdamm: queren schlecht möglich	3::igndisp 2393,11381 2391,11478 2282,11463
+Saldernstr. -> Riehlstr.: queren schlecht möglich	3::igndisp 2405,11587 2391,11478 2393,11381
+Saldernstr. -> Kaiserdamm: queren schlecht möglich	3::igndisp 2405,11587 2391,11478 2609,11503
+Kaiserdamm -> Saldernstr.: queren schlecht möglich	3::igndisp 2282,11463 2391,11478 2405,11587
+Kaiserdamm -> Riehlstr.: queren schlecht möglich	3::igndisp 2609,11503 2391,11478 2393,11381
 unbequemes Überqueren des Mittelstreifens, parkende Autos	3nocross::ignrte 3441,11598 3555,11612 3690,11629
 Bismarckstr. -> Rückertstr.: unbequemes Überqueren des Mittelstreifens, parkende Autos	3::igndisp 3690,11629 3555,11612 3571,11451
 Rückertstr. -> Bismarckstr.: unbequemes Überqueren des Mittelstreifens, parkende Autos	3::igndisp 3571,11451 3555,11612 3441,11598
-Mittelstreifen, unbequemes Überqueren	3nocross::ignrte 3481,11224 3467,11373 3460,11441
-Goethepark -> Kaiser-Friedrich-Str.: Mittelstreifen, unbequemes Überqueren	3::igndisp 3594,11372 3467,11373 3481,11224
+Mittelstreifen, unbequemes Überqueren	3nocross::ignrte 3479,11238 3467,11373 3460,11441
+Goethepark -> Kaiser-Friedrich-Str.: Mittelstreifen, unbequemes Überqueren	3::igndisp 3594,11372 3467,11373 3479,11238
 Kaiser-Friedrich-Str. -> Goethepark: Mittelstreifen, unbequemes Überqueren	3::igndisp 3460,11441 3467,11373 3594,11372
 tragen, schieben (3 x 9 Stufen, schmale Rampe)	0:30:-263 6190,12978
 tragen (30 Stufen)	0:45:26 5890,12602
@@ -2358,8 +2373,12 @@ Rudolf-Reusch-Str. [Wohngebiet]	1 15732,12562 15657,12562 15657,12648 15732,1265
 Letteallee	1 8226,17479 8110,17470 8014,17475 7845,17460 7684,17435
 Mickestr.	1 8185,17352 8134,17398 8110,17470
 Kühleweinstr.	1 8014,17475 8043,17282 8088,17218
-Seekorso	1 -8828,6418 -8776,6425 -8682,6435 -8578,6462 -8470,6515 -8376,6579 -8354,6590 -8301,6635 -8249,6680 -8199,6720 -8144,6762 -8087,6806 -8032,6852 -7975,6900 -7921,6946 -7871,6990
-Seekorso	1 -7913,6931 -7965,6888 -8023,6842 -8081,6792 -8133,6751 -8185,6707 -8240,6663 -8291,6620 -8339,6578 -8364,6562 -8459,6495 -8571,6443 -8678,6414 -8775,6403 -8825,6400
+Seekorso	1 -8828,6418 -8776,6425 -8682,6435 -8578,6462 -8470,6515 -8376,6579
+Seekorso	1s -8376,6579 -8354,6590
+Seekorso	1 -8354,6590 -8301,6635 -8249,6680 -8199,6720 -8144,6762 -8087,6806 -8032,6852 -7975,6900 -7921,6946 -7871,6990
+Seekorso	1 -7913,6931 -7965,6888 -8023,6842 -8081,6792 -8133,6751 -8185,6707 -8240,6663 -8291,6620 -8339,6578
+Seekorso	1s -8339,6578 -8364,6562
+Seekorso	1 -8364,6562 -8459,6495 -8571,6443 -8678,6414 -8775,6403 -8825,6400
 Schöneicher Str. (Alt-Hohenschönhausen)	1 16694,15658 16658,15627 16628,15532 16584,15489
 Schöneicher Str. (Alt-Hohenschönhausen)	1 16675,15688 16628,15642 16597,15552 16550,15503
 tragen (Treppe)	0:45:-28 5946,12553

@@ -104,7 +104,6 @@ Breite Str. (Pankow)	1 10240,18193 10281,18241 10463,18321 10502,18338 10567,183
 Breite Str. (Pankow)	1 10680,18380 10660,18345 10487,18270 10320,18197 10240,18193
 Heinrich-Mann-Platz.	1 9565,18555 9524,18531 9480,18539 9454,18570 9457,18612 9495,18639 9542,18634 9567,18599 9565,18555
 Edelweißstr.	1 8234,19936 7993,19953 7885,19975 7748,20040
-Angerburger Allee	1 -1524,11108 -1608,11133 -1885,11392 -1931,11437 -1986,11487
 Edelhofdamm	1 3185,25437 3101,25402 2909,25322 2756,25260 2683,25238 2713,25300 2744,25314 2882,25375 3076,25456 3171,25495
 Antonienstr.	1 3930,17920 3970,18126 4009,18322 4085,18694 4098,18762 4162,18891 4240,19019
 Eichborndamm	1s:q3 4240,19019 4232,18981
@@ -475,8 +474,6 @@ Kreutzerweg	1 4834,4102 4848,4069 4836,4041 4629,3916
 #: confirmed_by: Peter Loth:
 #: confirmed_by: S.Knaack:
 Hornblendeweg	1 10440,1283 10415,1323 10402,1362 10425,1400 10510,1441 10594,1468 10638,1442 10659,1370
-#: by: Lutz Moser:
-Sibeliusweg	1 -6811,4893 -6787,5076 -6762,5133 -6747,5169
 Zingster Str. (Gesundbrunnen)	1 9276,16032 9265,16109 9277,16154 9307,16190
 #: add_fragezeichen: Gilt die Einbahnstraßenregelung auch für Radfahrer oder nur für Autofahrer?
 Neufahrwasserweg	1 20390,15307 20550,15551
@@ -731,7 +728,9 @@ Alsenzer Weg	1s:q3 27751,819 27798,872 27863,943 27968,1060
 #: by: Ulf Rathje:
 Fichtenweg	1 -2963,17872 -2949,17946 -2967,18033 -3000,18192
 #: by: anonymous
+#: confirmed_by: srt
 Johann-Landefeldt-Str.	1 -8598,7018 -8532,7041 -8466,7064 -8404,7087 -8341,7108 -8275,7131 -8207,7156
+Johann-Landefeldt-Str.	1s:q4 -8619,7012 -8598,7018
 Schüßlerplatz	1 22284,4653 22355,4660
 Karlstr. (Köpenick)	1 22556,4386 22458,4134
 Eichenstr./Lindenstr.	1 32162,2542 32316,2468 32467,2582
@@ -739,7 +738,11 @@ Moosstr. [Wohngebiet]	1 19210,5150 19233,5076 19236,5025 19241,4958 19306,4969 1
 Abtstr./Platz der Befreiung	1 20066,3466 19990,3416 20038,3357
 Kreisverkehr Waldowplatz	1 19283,6123 19282,6152 19303,6170 19333,6165 19345,6150 19344,6119 19325,6105 19290,6114 19283,6123
 #: by: http://www.flickr.com/photos/aotw/4883886090/sizes/l/in/pool-39413187@N00/
-Paddlerweg: Privatweg, Tor	2 -3559,11227 -3625,11250 -3679,11248
+#: confirmed_by: srt
+Paddlerweg: Privatweg, Tor an der Einfahrt	2 -3554,11232 -3625,11250 -3679,11248
+Schwimmerweg: Privatweg, Tor der Einfahrt	2 -3584,11177 -3642,11216 -3673,11216
+Rudererweg: Privatweg, Tor der Einfahrt	2 -3534,11277 -3570,11289 -3689,11291
+Lankestrand: Privatweg	2 -3689,11291 -3679,11248 -3673,11216
 Joachimstr.	1s:q3 22009,5593 21907,5517 21789,5427
 Cardinalstr.	1s:q3 21901,5728 21828,5623 21706,5541
 Fuchsbergeweg	1s:q3 20595,9558 20592,9298
@@ -780,6 +783,16 @@ Olympische Str.	1 610,12100 628,12138
 Radieschenpfad	1 20582,18468 20635,18381
 #: note: keine Gehwege, enge Straße
 Lattichweg	1 20452,18273 20453,18321 20523,18329 20635,18381
+Enger Steig	1 -4310,11770 -4312,11720 -4302,11669
+Künstlerweg	1 -7340,7873 -7258,7735 -7334,7703 -7418,7842
+Lerchenstr.	1 -8619,7012 -8801,6977 -8802,7049 -8793,7115
+Storchenstr.	1 -8793,7115 -8675,7148
+Am Flugplatz Gatow	1 -8176,7103 -8319,7061 -8449,7024 -8582,6987
+Am Flugplatz Gatow	1s:q4 -8582,6987 -8606,6978
+Temmeweg	1 -7730,4535 -7848,4384 -7882,4377 -7946,4419
+Kladower Damm	1 -7160,5090 -7175,5031 -7144,4981
+Alt-Pichelsdorf	1 -3404,11589 -3445,11505
+Alt-Pichelsdorf	1 -3405,11498 -3381,11583
 ######################################################################
 #
 # Potsdam
@@ -1248,6 +1261,8 @@ Schorlemerallee: Mittelstreifen	3nocross 3306,6453 3347,6460 3459,6484
 # Stellen, an denen getragen werden muß:
 # die Zahl hinter dem ":" entspricht ungefähr den verlorenen Sekunden
 # 
+tragen (ca. 30 Stufen)	0:30 -1711,11452
+tragen	0:30 -1663,11487
 tragen (5 Stufen)	0:10 6820,5237
 tragen (5 Stufen) oder Rampe benutzen	0:5 15287,9713
 tragen (6 Stufen) oder Rampe benutzen	0:6 15270,9718
@@ -1464,6 +1479,12 @@ tragen, langgezogene Stufen (13 Stufen)	0:25 20704,1383
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+Drängelgitter (lichte Breite ca. 120cm)	BNP:3::trailer=10 -4429,10484
+Drängelgitter (relativ breit)	BNP:3::trailer=10 -7136,4321
+Poller (lichte Breite ca. 60cm)	BNP:5::trailer=no -8061,5386
+Steinpoller (lichte Breite ca. 110cm)	BNP:1::trailer=5 -9027,4521
+Drängelgitter (lichte Breite ca. 100cm)	BNP:3::trailer=10 -5202,11342
+Drängelgitter (lichte Breite ca. 80cm)	BNP:4::trailer=no -5236,11204
 2x Drängelgitter	BNP:6::trailer=25 13189,2736
 Schranke (lichte Breite ca. 100cm)	BNP:2::trailer=5 20904,19284
 Schranke	BNP:4::trailer=10 11432,4054
@@ -1487,8 +1508,8 @@ Schranke	BNP:1::trailer=3 21617,3287
 Schranke	BNP:1::trailer=3 21984,2897
 Schranke	BNP:3::trailer=10 16966,4847
 #: by: Juliane (alberts...)
-#: XXX genaue Position des Drängelgitters?
-Drängelgitter	BNP:3 -4651,9842
+#: confirmed_by: srt (added width)
+Drängelgitter (lichte Breite ca. 65cm)	BNP:3::trailer=no -4661,9842
 enge Umfahrung	BNP:3::trailer=no 14529,5851
 Schranke	BNP:3::trailer=no 17826,9630
 #: by: hannes Peters:
@@ -1702,6 +1723,9 @@ Tor	BNP:5 26888,13976
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: last_checked: 2011-04-30
+Tiergartenufer: Bauarbeiten, gesperrt	2:inwork 5711,11841 5565,11871
+# 
 #: last_checked: 2011-04-08
 Bebelplatz: Bauarbeiten, gesperrt	2:inwork 9679,12388 9700,12234
 # 
@@ -1747,7 +1771,6 @@ Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,127
 #: last_checked: 2011-03-04
 #: next_check: 2011-05-01
 Elisabeth-Mara-Str.: Bauarbeiten bis zum Frühjahr 2011	2:inwork 10506,11567 10320,11627
-#XXX del --- # #: last_checked: 2010-09-18 --- #: next_check: 2010-11-01 ---Großer Weg: Bauarbeiten, Weg wird neu gemacht	2:inwork 6809,11570 6980,11583
 # 
 #: last_checked: 2010-09-11
 Wagner-Régeny-Str.: Straße ist fertig, aber noch gesperrt	2:inwork 19487,3593 19377,3721
@@ -1779,8 +1802,8 @@ Vicki-Baum-Str.: noch in Bau, gesperrt	2:inwork 15753,10353 15823,10300
 #: next_check: 2011-07-01
 Kynaststraße: Bauarbeiten im südlichen Abschnitt	2:inwork 14652,10201 14724,10297 14766,10372 14795,10473 14805,10518
 # 
-#: last_checked: 2010-09-08
-#: next_check: 2011-01-01
+#: last_checked: 2011-04-30
+#: next_check: 2012-03-01
 Brücke im Tiergarten: gesperrt	2:inwork 6406,11784 6467,11780
 # 
 #: by: tobias wirnsberger, Matthias Stief
@@ -1929,10 +1952,10 @@ tragen (ca. 20 Stufen)	0:45 8536,12758
 #: note: abgeschätzt, wie das nördliche Gegenstück
 tragen (35 Stufen)	0:45 8507,12873
 tragen (35 Stufen)	0:45 8480,12909
-Fröhner Str.	1 -4294,11673 -4413,11628 -4573,11545
-Bocksfeldstr.	1 -4300,11720 -4090,11707
+Fröhner Str.	1 -4302,11669 -4413,11628 -4573,11545
+Bocksfeldstr.	1 -4312,11720 -4101,11708
 Roedeliusweg	1 -4413,11628 -4431,11779
-Bollmannweg	1 -4431,11779 -4298,11769
+Bollmannweg	1 -4431,11779 -4310,11770
 Weinmeisterhornweg	1s -4789,11225 -4564,11180
 Heerstr.	3nocross -4500,11937 -4437,11919 -4310,11882
 Heerstr.	3nocross -4310,11882 -4278,11873 -4063,11805
@@ -1953,8 +1976,8 @@ Altonaer Str.: Mittelstreifen schlecht zu queren	3nocross 6020,12492 6086,12446 
 tragen (Treppe)	0:30 8159,13042
 tragen (Treppe)	0:30 8276,13041
 Hanseatenweg	1 6444,12536 6445,12495 6428,12439 6368,12455 6324,12455 6314,12518
-Heerstr.	3nocross -1269,11008 -1039,11034 -831,11060 -776,11067 -731,11073 -572,11092
-Heerstr.	3nocross -572,11092 -535,11096 -420,11110 -346,11121 -68,11156
+Heerstr.	3nocross -1039,11034 -831,11060 -776,11067 -731,11073 -587,11090
+Heerstr.	3nocross -587,11090 -535,11096 -420,11110 -346,11121 -68,11156
 Heerstr.	3nocross -68,11156 21,11167 231,11198 439,11228 456,11233
 tragen (20 Stufen)	0:30 23,11137
 Oldenburgallee	1 454,11670 461,11455
@@ -1971,9 +1994,9 @@ Bonhoefferufer	1 3216,12994 3154,12936 3193,12857 3327,12818
 tragen (16 Stufen)	0:40 4124,12706
 tragen (16 Stufen)	0:40 4128,12637
 Kaiserdamm: queren schlecht möglich	3nocross 2109,11441 2191,11451 2282,11463
-Kaiserdamm: queren schlecht möglich	3nocross 2282,11463 2390,11468 2612,11491
+Kaiserdamm: queren schlecht möglich	3nocross 2282,11463 2391,11478 2609,11503
 Bismarckstr.: unbequemes Überqueren des Mittelstreifens, parkende Autos	3nocross 3441,11598 3555,11612 3690,11629
-Kaiser-Friedrich-Str.: Mittelstreifen, unbequemes Überqueren	3nocross 3481,11224 3467,11373 3460,11441
+Kaiser-Friedrich-Str.: Mittelstreifen, unbequemes Überqueren	3nocross 3479,11238 3467,11373 3460,11441
 tragen, schieben (3 x 9 Stufen, schmale Rampe)	0:30 6190,12978
 tragen (30 Stufen)	0:45 5890,12602
 tragen (12 Stufen)	0:20 5683,12342
@@ -2074,8 +2097,12 @@ Rudolf-Reusch-Str. [Wohngebiet]	1 15732,12562 15657,12562 15657,12648 15732,1265
 Letteallee	1 8226,17479 8110,17470 8014,17475 7845,17460 7684,17435
 Mickestr.	1 8185,17352 8134,17398 8110,17470
 Kühleweinstr.	1 8014,17475 8043,17282 8088,17218
-Seekorso	1 -8828,6418 -8776,6425 -8682,6435 -8578,6462 -8470,6515 -8376,6579 -8354,6590 -8301,6635 -8249,6680 -8199,6720 -8144,6762 -8087,6806 -8032,6852 -7975,6900 -7921,6946 -7871,6990
-Seekorso	1 -7913,6931 -7965,6888 -8023,6842 -8081,6792 -8133,6751 -8185,6707 -8240,6663 -8291,6620 -8339,6578 -8364,6562 -8459,6495 -8571,6443 -8678,6414 -8775,6403 -8825,6400
+Seekorso	1 -8828,6418 -8776,6425 -8682,6435 -8578,6462 -8470,6515 -8376,6579
+Seekorso	1s:q4 -8376,6579 -8354,6590
+Seekorso	1 -8354,6590 -8301,6635 -8249,6680 -8199,6720 -8144,6762 -8087,6806 -8032,6852 -7975,6900 -7921,6946 -7871,6990
+Seekorso	1 -7913,6931 -7965,6888 -8023,6842 -8081,6792 -8133,6751 -8185,6707 -8240,6663 -8291,6620 -8339,6578
+Seekorso	1s:q4 -8339,6578 -8364,6562
+Seekorso	1 -8364,6562 -8459,6495 -8571,6443 -8678,6414 -8775,6403 -8825,6400
 Schöneicher Str. (Alt-Hohenschönhausen)	1 16694,15658 16658,15627 16628,15532 16584,15489
 Schöneicher Str. (Alt-Hohenschönhausen)	1 16675,15688 16628,15642 16597,15552 16550,15503
 #: by: Daniel Pepper [AM]
