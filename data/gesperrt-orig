@@ -793,6 +793,9 @@ Temmeweg	1 -7730,4535 -7848,4384 -7882,4377 -7946,4419
 Kladower Damm	1 -7160,5090 -7175,5031 -7144,4981
 Alt-Pichelsdorf	1 -3404,11589 -3445,11505
 Alt-Pichelsdorf	1 -3405,11498 -3381,11583
+Haakonweg	1 14397,18018 14282,18041
+(Buszufahrt an der Darßer Str.)	1 14367,17965 14397,18018 14438,18059
+Straße 4	1 12799,19242 12945,19239 12956,19218 12937,19194 12814,19202
 ######################################################################
 #
 # Potsdam
@@ -1255,6 +1258,7 @@ Neuköllner Str.: Mittelstreifen	3nocross 16698,1392 16643,1460 16450,1691
 Rollbergstr.: Zaun, Mauer	3 12295,8154 12327,8161 12407,8177
 Rollbergstr.: Zaun, Mauer	3 12407,8177 12327,8161 12295,8154
 Schorlemerallee: Mittelstreifen	3nocross 3306,6453 3347,6460 3459,6484
+Berliner Str.: Straßenbahntrasse	3nocross 12396,17514 12436,17682 12467,17814
 #
 ####################################################################
 #
@@ -1723,6 +1727,11 @@ Tor	BNP:5 26888,13976
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: last_checked: 2011-05-01
+#: next_check: 2011-10-15
+#: XXX mit den Bauarbeiten "An den Eldenaer Höfen" koordinieren
+Am Langen Jammer: westlicher Abschnitt wegen Bauarbeiten gesperrt	2:inwork 14405,12953 14686,12873
+#
 #: last_checked: 2011-04-30
 Tiergartenufer: Bauarbeiten, gesperrt	2:inwork 5711,11841 5565,11871
 # 

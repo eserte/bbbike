@@ -50,7 +50,10 @@ Berliner Str.: Tram auf der Fahrbahn	CS 10680,18380 10755,18231 10829,18083 1084
 #: by: Robert J.
 #: corrected_by: Matthias Bauer (nicht auf dem Stiftsweg, dort eigene Spur)
 Bleicheroder Str.: Tram auf der Fahrbahn	CS; 11805,19071 11762,19014 11727,19001 11622,18964 11526,18929 11439,18890 11268,18851
-Romain-Rolland-Str.: Tram auf der Fahrbahn auf Betonplatten	CS; 12562,18483 12570,18351 12575,18275
+#: note: siehe auch qualitaet_s (Mitte der Fahrbahn asphaltiert)
+Romain-Rolland-Str.: Tram auf der Fahrbahn	CS 12562,18483 12570,18351 12575,18275
+#: note: siehe auch qualitaet_s (Mitte der Fahrbahn asphaltiert)
+Berliner Str.: Tram auf der Fahrbahn	CS 12736,17998 12467,17814
 Treskowstr.: Straﬂenbahnwendeschleife	CS 24362,11954 24491,11972 24567,11980
 #: by: Rainer Mischke, srt vvv
 Niebergallstr.: Straﬂenbahnwendeschleife	CS; 23144,1439 23158,1379

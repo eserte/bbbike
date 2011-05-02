@@ -110,8 +110,10 @@
 	X 11463,10642
 	X 11671,10402
 	X 11949,10414
+#: XXX_prog: Ampel gilt nicht für Radfahrer
 	F 12274,10436
 	X 12731,10547
+#: XXX_prog: Ampel gilt nicht für Radfahrer
 	F 12545,10496
 	F 11130,10326
 	X 12341,10218
@@ -166,6 +168,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 15515,13134
 	X 15502,13539
 	X 16866,13532
+#: XXX_prog Fußgängerüberweg auf der westl. Seite fehlt, und macht einige Wege (von N nach S) länger
 	X 14218,13834
 	F 8014,8771
 	X 7795,8765
@@ -2588,6 +2591,10 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	B 32741,155086
 	B 21792,169304
 	F -8603,6973
+#: XXX_prog: Ampel gilt nicht für Radfahrer
+	F 15451,13697
+#: note: Ampel ist wahrscheinlich nur zu Geschäftszeiten des Einkaufszentrums eingeschaltet
+	F 13125,17758
 ################################################################################
 # note: Potsdam vvv
 #: by: http://www.potsdam.de/cms/beitrag/10067917/966975/

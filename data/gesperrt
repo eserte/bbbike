@@ -609,6 +609,9 @@ Temmeweg	1 -7730,4535 -7848,4384 -7882,4377 -7946,4419
 Kladower Damm	1 -7160,5090 -7175,5031 -7144,4981
 Alt-Pichelsdorf	1 -3404,11589 -3445,11505
 Alt-Pichelsdorf	1 -3405,11498 -3381,11583
+Haakonweg	1 14397,18018 14282,18041
+(Buszufahrt an der Darﬂer Str.)	1 14367,17965 14397,18018 14438,18059
+Straﬂe 4	1 12799,19242 12945,19239 12956,19218 12937,19194 12814,19202
 Am Neuen Garten	1 -12166,1384 -12212,1201 -12276,831 -12302,718
 Am Neuen Garten	1 -12332,585 -12582,127
 Hochstraﬂe	3nocross::ignrte -11399,-1339 -11461,-1424 -11540,-1543
@@ -1646,6 +1649,7 @@ Rollbergstr.: Zaun, Mauer	3 12295,8154 12327,8161 12407,8177
 Rollbergstr.: Zaun, Mauer	3 12407,8177 12327,8161 12295,8154
 Mittelstreifen	3nocross::ignrte 3306,6453 3347,6460 3459,6484
 Albrecht-Thaer-Weg -> Schorlemerallee: Mittelstreifen	3::igndisp 3449,6863 3347,6460 3459,6484
+Straﬂenbahntrasse	3nocross::ignrte 12396,17514 12436,17682 12467,17814
 tragen (ca. 30 Stufen)	0:30:-142 -1711,11452
 tragen	0:30:-140 -1663,11487
 tragen (5 Stufen)	0:10:62 6820,5237
@@ -1971,6 +1975,7 @@ Schranke (lichte Breite ca. 120cm)	BNP:2:-50:trailer=8 14448,4501
 Schranke (lichte Breite ca. 120cm)	BNP:2:-53:trailer=8 14709,4307
 Schranke (lichte Breite ca. 100cm)	BNP:3:-45:trailer=10 15179,3901
 Tor	BNP:5:-57 26888,13976
+Am Langen Jammer: westlicher Abschnitt wegen Bauarbeiten gesperrt	2:inwork 14405,12953 14686,12873
 Tiergartenufer: Bauarbeiten, gesperrt	2:inwork 5711,11841 5565,11871
 Bebelplatz: Bauarbeiten, gesperrt	2:inwork 9679,12388 9700,12234
 Schloﬂplatz: Bauarbeiten, gesperrt	2:inwork 10170,12261 10063,12438

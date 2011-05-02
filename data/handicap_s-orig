@@ -592,6 +592,7 @@ Washingtonplatz: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 8
 südliches Spreeufer: besonders an Wochenenden tagsüber sehr viele Fußgänger	q2 7437,12368 7529,12496 7670,12576
 (Ruwersteig - Klüsserather Weg): gemeinsamer Rad- und Gehweg, eng und kurvig	q2 19364,13033 19376,13092 19425,13089
 (Fontanestr. - Kopenhagener Str.): Fußgänger	q2 7522,19804 7518,19762 7617,19748
+#: XXX_prog: Bordsteine (2x)
 Oleanderstr.: Fußgänger, Bordsteine	q2 14271,14024 14298,14015
 #: by: Sylke Sallmon:
 Pankgrafenstr. (Pankow): Fußgänger, ggfs. schieben	q2 10470,18402 10502,18338
@@ -818,6 +819,31 @@ Nieplitzsteig: eng	q1 -8642,4789 -8728,4800 -8745,4812 -8818,4833
 #: XXX_prog eigentlich nach comments_mount:
 Fuchsbergeweg (Kladow): starke Steigung	q3; -7927,5254 -7968,5175
 (Dr. Kleusberg-Promenade - Höhenweg): vereinzelte Stufen, Wasserablaufrinnen, Fußgänger, Steigung	q3 -4445,10379 -4452,10420 -4443,10460 -4429,10484 -4399,10549 -4414,10614
+Haakonweg: enge Straße	q0- 14124,18069 14282,18041 14397,18018
+Haakonweg: enge Straße	q0- 14443,18027 14595,18050 14702,18064 14746,18072
+Nachtalbenweg: enge Straße	q0- 14746,18072 14731,18171 14728,18188 14718,18253 14711,18297 14681,18437 14653,18515 14643,18550 14611,18643 14570,18763 14565,18777
+Gnomenplatz: enge Straße	q0- 14682,18178 14702,18064
+Nornenweg: enge Straße	q0- 14728,18188 14682,18178
+#: note: beleuchtet
+Nornenweg: eng	q2+ 14682,18178 14576,18163
+Jötunsteig: enge Straße	q0- 14731,18171 14839,18185 14872,18298 14887,18362 14881,18428 14874,18449 14834,18572 14789,18701 14745,18827 14743,18839
+Osasteig: enge Straße	q0- 14565,18226 14718,18253
+Wanensteig: enge Straße	q0- 14711,18297 14789,18307 14872,18298
+Tronjepfad: enge Straße	q0- 14874,18449 14931,18570 14924,18594
+Lindwurmweg: enge Straße	q0- 14653,18515 14834,18572 14924,18594
+Ostaraweg: enge Straße	q0- 14876,18730 14789,18701 14611,18643 14459,18589 14397,18568 14330,18547 14227,18513 14175,18494 13963,18419
+Am Graben [nördlicher Weg]: teilweise recht eng (Pfad)	q2 14277,18684 14348,18711 14406,18731 14465,18750 14522,18764 14565,18777 14601,18792 14647,18808 14692,18823 14743,18839
+Schwarzelfenweg: enge Straße	q0- 14277,18684 14283,18669 14307,18608 14330,18547 14391,18389
+Andersenweg: Fußgänger	q1 14565,18777 14521,18907 14495,18956 14452,19020 14414,19063 14279,19144 14150,19226 14053,19280 14018,19292 13990,19302 13951,19312
+Reineke-Fuchs-Weg: Fußgänger	q1 14784,18995 14698,18967 14651,18950 14603,18934 14558,18920 14521,18907 14481,18893 14422,18874 14394,18876 14359,18896 14324,18916 14189,19000 14059,19079 13971,19125 13936,19132 13909,19133
+Sterntalerweg: Fußgänger	q1 14030,19510 13951,19312 13924,19237 13909,19133 13903,18979 13902,18953 13899,18833 13892,18762 13898,18721 13916,18678 13945,18612 13950,18567
+Hauffallee: Fußgänger, querlaufende Ablaufrinnen	q1- 13903,18979 13964,18985 14020,19033 14059,19079 14094,19134 14126,19188 14150,19226 14168,19256 14191,19294 14209,19327
+Ullerplatz: enge Straße	q0- 14205,18571 14307,18608
+Am Heimenstein: enge Straße	q0- 14354,18694 14397,18568
+Ullerweg: enge Straße	q0- 14179,18649 14205,18571 14227,18513
+Lichtelfensteg: enge Straße	q0- 14152,18556 14175,18494 14228,18361 14282,18041
+Runenzeile: enge Straße	q0- 13955,18489 14152,18556
+Muspelsteig: enge Straße	q0- 14124,18069 14104,18154 14048,18279 13966,18349 13963,18419 13955,18489 13950,18567
 ######################### User Contributions #################################
 #: by: Michael Kiekbusch
 #: corrected_by: srt/policy (q4 -> q3-)
@@ -918,7 +944,8 @@ Lintruper Str.: teilweise wegen parkender Autos eng	q1 10307,922 10380,757 10423
 #: by: Detlef Hüttemann:
 Spandauer Str.: enge Straße	q1 -6442,14186 -6261,14213
 #: by: Thunig, Christina:
-(Parkplatz Kaufland - Am Steinberg): Fußgänger	q2 12981,17557 12998,17480
+#: corrected_by: srt (q2 -> q1)
+(Parkplatz Kaufland - Am Steinberg): Fußgänger	q1 12981,17557 12998,17480
 #: by: anonymous:
 Achenbachstr.: nicht so breite Straße	q1 -3360,14974 -3322,14814
 #: by: Hartmut (stahn):
@@ -1809,7 +1836,7 @@ Erna-Sack-Str.: enge Straße	q1 -7486,13321 -7496,13214
 (Buchbinderweg - Zittauer Str.): einige Fußgänger	q1 16485,1162 16435,1063 16419,1048 16387,976 16342,959
 #: by: ^^^
 #: by: Dietmar Schulz:
-(Hibiskusweg - Romain-Rolland-Str.): gemeinsamer Rad/Fußweg	q1 13247,17825 13214,17742
+(Hibiskusweg - Romain-Rolland-Str.): gemeinsamer Rad/Fußweg	q1 13245,17805 13229,17784 13245,17737
 #: by: Beate Leibe:
 Treutelstr.: enge Straße	q1 5422,19725 5345,19734 5318,19723
 #: by: Franz Puder:
@@ -1835,10 +1862,14 @@ Fritz-Kühn-Str.: enge Straße	q1 21681,-589 21666,-657 21479,-925 21445,-963
 Mittelstr. (Alt-Hohenschönhausen): enge Straße	q1 15543,14491 15647,14693 15706,14752 15769,14815 15856,14915
 #: by: Philipp Günther:
 Nantesstr.: enge Straße	q1 11200,21689 11251,22022 11231,22065 11077,22236
+# 
 #: by: Josephine Jacob vvv
-Helgiweg: enge Straße	q1 14459,18589 14517,18410
-Helgiweg: enge Straße	q1 14533,18413 14565,18226 14576,18163 14595,18050
+#: corrected_by: srt/policy (q1 -> q0-) vvv
+Helgiweg: enge Straße	q0- 14459,18589 14517,18410
+Helgiweg: enge Straße	q0- 14533,18413 14565,18226 14576,18163 14595,18050
+#: corrected_by: ^^^
 #: by: ^^^
+# 
 #: by: yossi:
 Lummenweg: eng durch parkende Autos	q1 21879,2592 21919,2510 21936,2388
 #: by: Isabel (easybelli):
@@ -1970,7 +2001,8 @@ Kroppenstedtweg: Fußgänger haben Vorrang	q2 1058,14898 1035,14996 996,15091 957,
 #: by: Hermann Weiß vvv
 #: corrected_by: srt/policy (q2 -> q1)
 Rübezahlweg: einige Fußgänger	q1 14743,18839 14698,18967 14664,19057 14622,19123 14571,19172 14507,19214 14375,19296 14241,19379 14030,19510
-Gebrüder-Grimm-Weg: Fußgänger, querlaufende Ablaufrinnen	q2 14277,18684 14265,18747 14269,18812 14278,18840 14292,18863 14324,18916 14358,18973 14391,19026 14433,19093 14457,19132 14482,19174 14507,19214 14573,19281
+#: corrected_by: srt (q2 -> q1-)
+Gebrüder-Grimm-Weg: Fußgänger, querlaufende Ablaufrinnen	q1- 14277,18684 14265,18747 14269,18812 14278,18840 14292,18863 14324,18916 14358,18973 14391,19026 14414,19063 14433,19093 14457,19132 14482,19174 14507,19214 14551,19294
 #: by ^^^
 #: by: T.Geske:
 Charles-H.-King-Str.: enge Straße	q1 -1248,2451 -1401,2391 -1604,2324
