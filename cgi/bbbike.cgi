@@ -1865,7 +1865,8 @@ EOF
 EOF
 	# Eine Addition aller aktuellen Straßen, die bei luise-berlin
 	# aufgeführt sind, ergibt als Summe 10129
-	my($bln_str, $all_bln_str, $pdm_str) = (9000, 10000, 400);
+	# Da aber auch einige "unoffizielle" Wege in der DB sind, dürften es an die 11000 werden
+	my($bln_str, $all_bln_str, $pdm_str) = (9800, 11000, 420);
 	# XXX Use format number to get a comma in between.
 	if ($lang eq 'en') {
 	    print <<EOF;
