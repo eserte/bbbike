@@ -1774,17 +1774,7 @@ userdel	q4::inwork; -12545,-698 -12262,-612
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_017171',
-         'until' => 1304294400,
-         'text' => 'Straße des 17. Juni (Tiergarten) in beiden Richtungen zwischen Y.-Rabin-Str. und Brandenburger Tor; auch Ebertstr. zwischen Scheidemannstr. und Behrenstr., Veranstaltung, Straße vollständig gesperrt (30.04.2011 12 Uhr bis 02.05.11 ca. 02:00 Uhr) ',
-         'from' => 1304111111,
-         'id' => 2202,
-         'data' => 'userdel	2::temp 8610,12254 8538,12245 8214,12205 8089,12190 8055,12186
-userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20110421.1205.341677.html',
          'until' => 1304870400,

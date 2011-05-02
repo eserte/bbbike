@@ -1650,6 +1650,8 @@ Rollbergstr.: Zaun, Mauer	3 12407,8177 12327,8161 12295,8154
 Mittelstreifen	3nocross::ignrte 3306,6453 3347,6460 3459,6484
 Albrecht-Thaer-Weg -> Schorlemerallee: Mittelstreifen	3::igndisp 3449,6863 3347,6460 3459,6484
 Straﬂenbahntrasse	3nocross::ignrte 12396,17514 12436,17682 12467,17814
+Str. 56 -> Berliner Str.: Straﬂenbahntrasse	3::igndisp 12587,17603 12436,17682 12396,17514
+Berliner Str. -> Str. 56: Straﬂenbahntrasse	3::igndisp 12467,17814 12436,17682 12587,17603
 tragen (ca. 30 Stufen)	0:30:-142 -1711,11452
 tragen	0:30:-140 -1663,11487
 tragen (5 Stufen)	0:10:62 6820,5237
@@ -1807,6 +1809,7 @@ tragen (Treppe, ca. 20 Stufen)	0:25:-108 19163,14981
 tragen (Treppe, ca. 20 Stufen)	0:25:-12 19160,14935
 tragen (Treppe)	0:30:70 89344,-5795
 tragen, langgezogene Stufen (13 Stufen)	0:25:-168 20704,1383
+Tor	BNP:10:31:trailer=no 12505,17469
 Dr‰ngelgitter (lichte Breite ca. 120cm)	BNP:3:-149:trailer=10 -4429,10484
 Dr‰ngelgitter (relativ breit)	BNP:3:-25:trailer=10 -7136,4321
 Poller (lichte Breite ca. 60cm)	BNP:5:-152:trailer=no -8061,5386
@@ -1975,6 +1978,7 @@ Schranke (lichte Breite ca. 120cm)	BNP:2:-50:trailer=8 14448,4501
 Schranke (lichte Breite ca. 120cm)	BNP:2:-53:trailer=8 14709,4307
 Schranke (lichte Breite ca. 100cm)	BNP:3:-45:trailer=10 15179,3901
 Tor	BNP:5:-57 26888,13976
+Helga-Hahnemann-Str.: gesperrt	2:inwork 9415,13315 9385,13174
 Am Langen Jammer: westlicher Abschnitt wegen Bauarbeiten gesperrt	2:inwork 14405,12953 14686,12873
 Tiergartenufer: Bauarbeiten, gesperrt	2:inwork 5711,11841 5565,11871
 Bebelplatz: Bauarbeiten, gesperrt	2:inwork 9679,12388 9700,12234

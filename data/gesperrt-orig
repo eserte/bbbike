@@ -1483,6 +1483,7 @@ tragen, langgezogene Stufen (13 Stufen)	0:25 20704,1383
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+Tor	BNP:10::trailer=no 12505,17469
 Drängelgitter (lichte Breite ca. 120cm)	BNP:3::trailer=10 -4429,10484
 Drängelgitter (relativ breit)	BNP:3::trailer=10 -7136,4321
 Poller (lichte Breite ca. 60cm)	BNP:5::trailer=no -8061,5386
@@ -1727,6 +1728,11 @@ Tor	BNP:5 26888,13976
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: by: wosch
+#: last_checked: 2011-04-28
+#: next_check: 2011-07-15
+Helga-Hahnemann-Str.: gesperrt	2:inwork 9415,13315 9385,13174
+#
 #: last_checked: 2011-05-01
 #: next_check: 2011-10-15
 #: XXX mit den Bauarbeiten "An den Eldenaer Höfen" koordinieren
