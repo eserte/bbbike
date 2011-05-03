@@ -1340,8 +1340,8 @@ userdel	q4::inwork; 12598,8390 12771,8439
        undef,
        {
          'source_id' => 'IM_015518',
-         'until' => 1319984100,
-         'text' => 'Heinrich-Mann-Str. (Pankow): Baustelle, gesperrt in beiden Richtungen zwischen Cottastr. und Grabbeallee. 12.04.2010 14:00 Uhr bis 30.10.2011 15:15 Uhr',
+         'until' => 1324033200,
+         'text' => 'Heinrich-Mann-Str. (Pankow): Baustelle, gesperrt in beiden Richtungen zwischen Cottastr. und Grabbeallee. 12.04.2010 bis 16.12.2011',
          'from' => 1270987200,
          'id' => 2044,
          'data' => 'userdel	q4::inwork 9881,18354 9821,18392
@@ -1412,12 +1412,12 @@ userdel	q4::inwork; 12598,8390 12771,8439
 '
        },
        {
-         'source_id' => 'IM_014905',
+         'source_id' => 'INKO_107124',
          'until' => 1314914399,
-         'text' => 'Lahnstr. (Neukölln) Richtung Grenzallee zwischen Mierstr. und Niemetzstr. Baustelle, Fahrtrichtung gesperrt (bis Anfang 09/2011) ',
+         'text' => 'Lahnstr. (Neukölln) Richtung Grenzallee zwischen Mierstr. und Niemetzstr. Baustelle, in beiden Richtungen gesperrt (bis Anfang 09/2011) ',
          'from' => 1304110406,
          'id' => 2069,
-         'data' => 'userdel	q4::inwork; 13627,7047 13891,7107
+         'data' => 'userdel	q4::inwork 13627,7047 13891,7107
 ',
          'type' => 'handicap'
        },
@@ -1784,6 +1784,16 @@ userdel	q4::inwork; -12545,-698 -12262,-612
          'data' => 'userdel	q4::inwork 22740,4415 22791,4457 22832,4491 22862,4511 22893,4532 22959,4576 23055,4640 23363,4846 23451,4877
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => '117200018',
+         'until' => 1304798400,
+         'text' => 'Blankenfelde-Mahlow: L792: Traditionelles Dorfangerfest - Fest der Vereine OL Blankenfelde Umleitung: innerorts, 07.05.2011 12:00 Uhr bis 07.05.2011 22:00 Uhr ',
+         'from' => 1304676000,
+         'id' => 2204,
+         'data' => 'userdel	2::temp 9990,-8867 10115,-8276
+',
+         'type' => 'gesperrt'
        }
      
 );

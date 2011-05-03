@@ -1,7 +1,7 @@
 # -*- mode: bbbike; coding: iso-8859-1 -*-
 # temp-blocking
 # XXX undef old entries
-# iso2epoch: date -j 2004MMDDhhmm +%s
+# iso2epoch: date -j 2011MMDDhhmm +%s
 #            date +%s
 require Time::Local;
 @temp_blocking =
@@ -17389,8 +17389,8 @@ userdel	q4::inwork; 8182,18761 8066,18754 7886,18742 7855,18697
 EOF
      },
      { from  => 1270987200, # 2010-04-11 14:00
-       until => 1319984100, # 2011-10-30 15:15
-       text  => 'Heinrich-Mann-Str. (Pankow): Baustelle, gesperrt in beiden Richtungen zwischen Cottastr. und Grabbeallee. 12.04.2010 14:00 Uhr bis 30.10.2011 15:15 Uhr',
+       until => 1324033200, # 2011-12-16 12:00 1319984100, # 2011-10-30 15:15
+       text  => 'Heinrich-Mann-Str. (Pankow): Baustelle, gesperrt in beiden Richtungen zwischen Cottastr. und Grabbeallee. 12.04.2010 bis 16.12.2011',
        type  => 'handicap',
        source_id => 'IM_015518',
        data  => <<EOF,
@@ -17656,11 +17656,11 @@ EOF
      },
      { from  => 1304110406, # 2011-04-29 22:53
        until => 1314914399, # 2011-09-01 23:59
-       text  => 'Lahnstr. (Neukölln) Richtung Grenzallee zwischen Mierstr. und Niemetzstr. Baustelle, Fahrtrichtung gesperrt (bis Anfang 09/2011) ',
+       text  => 'Lahnstr. (Neukölln) Richtung Grenzallee zwischen Mierstr. und Niemetzstr. Baustelle, in beiden Richtungen gesperrt (bis Anfang 09/2011) ',
        type  => 'handicap',
-       source_id => 'IM_014905',
+       source_id => 'INKO_107124',
        data  => <<EOF,
-userdel	q4::inwork; 13627,7047 13891,7107
+userdel	q4::inwork 13627,7047 13891,7107
 EOF
      },
      { from  => 1274300387, # 2010-05-19 22:19
@@ -18932,6 +18932,15 @@ EOF
        source_id => 'http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20110421.1205.341677.html',
        data  => <<EOF,
 userdel	q4::inwork 22740,4415 22791,4457 22832,4491 22862,4511 22893,4532 22959,4576 23055,4640 23363,4846 23451,4877
+EOF
+     },
+     { from  => 1304676000, # 2011-05-06 12:00
+       until => 1304798400, # 2011-05-07 22:00
+       text  => 'Blankenfelde-Mahlow: L792: Traditionelles Dorfangerfest - Fest der Vereine OL Blankenfelde Umleitung: innerorts, 07.05.2011 12:00 Uhr bis 07.05.2011 22:00 Uhr ',
+       type  => 'gesperrt',
+       source_id => '117200018',
+       data  => <<EOF,
+userdel	2::temp 9990,-8867 10115,-8276
 EOF
      },
     );
