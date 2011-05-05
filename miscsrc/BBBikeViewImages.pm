@@ -373,54 +373,9 @@ sub show_image_viewer {
 			     }
 			 });
 		}
-		my $p = $image_viewer_toplevel->{"photo"};
-		if ($p) {
-		    $p->delete;
-		    $image_viewer_toplevel->{"photo"} = undef;
-		}
-		$p = main::image_from_file($main::top, $abs_file);
-		if (!$p) {
-		    die "Kann die Datei $abs_file nicht als Bild interpretieren";
-		}
-		my $rel_w = $p->width/$main::top->screenwidth;
-		my $rel_h = $p->height/$main::top->screenheight;
-		my $screen_frac;
-		my $subsample;
-		if ($geometry eq 'half' && ($rel_w > 0.5 || $rel_h > 0.5)) {
-		    $screen_frac = 2;
-		} elsif ($geometry eq 'third' && ($rel_w > 0.333 || $rel_h > 0.333)) {
-		    $screen_frac = 3;
-		} elsif ($geometry eq 'image-half') {
-		    $subsample = 2;
-		} elsif ($geometry eq 'image-third') {
-		    $subsample = 3;
-		}
-		if ($screen_frac) {
-		    my $multi_w = $p->width/($main::top->screenwidth/$screen_frac);
-		    my $multi_h = $p->height/($main::top->screenheight/$screen_frac);
-		    my $multi = $multi_w > $multi_h ? $multi_w : $multi_h;
-		    if ($multi != int($multi)) {
-			$multi = int($multi)+1;
-		    }
-		    $subsample = $multi;
-		}
-		if ($subsample) {
-		    my $new_p = $image_viewer_toplevel->Photo(-width => $p->width/$subsample, -height => $p->height/$subsample);
-		    $new_p->copy($p, -subsample => $subsample);
-		    $p->delete;
-		    $p = $new_p;
-		}
-		# XXX Should check via exif if image is about to be
-		# rotated. If so, then use Tk::PhotoRotate or
-		# something similar
-		my $image_label_widget = $image_viewer_toplevel->Subwidget("ImageLabel");
-		$image_label_widget->configure(-image => $p);
-		# Force quadratic toplevel
-		if ($p->width > $p->height) {
-		    $image_label_widget->packConfigure(-pady => ($p->width - $p->height)/2, -padx => 0);
-		} else {
-		    $image_label_widget->packConfigure(-padx => ($p->height - $p->width)/2, -pady => 0);
-		}
+
+		######################################################################
+		# next/prev/... button handling
 
 		my $next_image_index = sub {
 		    my($dir) = @_;
@@ -515,7 +470,64 @@ sub show_image_viewer {
 
 		$image_viewer_toplevel->Subwidget("DeltaLabel")->configure(-text => chr(0x0394)."=".$delta);
 
-		$image_viewer_toplevel->{"photo"} = $p;
+		######################################################################
+		# Photo handling
+		my $image_label_widget = $image_viewer_toplevel->Subwidget("ImageLabel");
+		my $p = $image_viewer_toplevel->{"photo"};
+		if ($p) {
+		    $p->delete;
+		    $image_viewer_toplevel->{"photo"} = undef;
+		}
+		$p = eval {
+		    main::image_from_file($main::top, $abs_file);
+		};
+		if (!$p) {
+		    my $msg = "Kann die Datei $abs_file nicht als Bild interpretieren"; # XXX Msg.pm
+		    $image_label_widget->configure(-text => $msg, -image => undef);
+		} else {
+		    my $rel_w = $p->width/$main::top->screenwidth;
+		    my $rel_h = $p->height/$main::top->screenheight;
+		    my $screen_frac;
+		    my $subsample;
+		    if ($geometry eq 'half' && ($rel_w > 0.5 || $rel_h > 0.5)) {
+			$screen_frac = 2;
+		    } elsif ($geometry eq 'third' && ($rel_w > 0.333 || $rel_h > 0.333)) {
+			$screen_frac = 3;
+		    } elsif ($geometry eq 'image-half') {
+			$subsample = 2;
+		    } elsif ($geometry eq 'image-third') {
+			$subsample = 3;
+		    }
+		    if ($screen_frac) {
+			my $multi_w = $p->width/($main::top->screenwidth/$screen_frac);
+			my $multi_h = $p->height/($main::top->screenheight/$screen_frac);
+			my $multi = $multi_w > $multi_h ? $multi_w : $multi_h;
+			if ($multi != int($multi)) {
+			    $multi = int($multi)+1;
+			}
+			$subsample = $multi;
+		    }
+		    if ($subsample) {
+			my $new_p = $image_viewer_toplevel->Photo(-width => $p->width/$subsample, -height => $p->height/$subsample);
+			$new_p->copy($p, -subsample => $subsample);
+			$p->delete;
+			$p = $new_p;
+		    }
+		    # XXX Should check via exif if image is about to be
+		    # rotated. If so, then use Tk::PhotoRotate or
+		    # something similar
+		    $image_label_widget->configure(-text => undef, -image => $p);
+		    # Force quadratic toplevel
+		    if ($p->width > $p->height) {
+			$image_label_widget->packConfigure(-pady => ($p->width - $p->height)/2, -padx => 0);
+		    } else {
+			$image_label_widget->packConfigure(-padx => ($p->height - $p->width)/2, -pady => 0);
+		    }
+
+
+		    $image_viewer_toplevel->{"photo"} = $p;
+		}
+
 		$image_viewer_toplevel->deiconify;
 		$image_viewer_toplevel->raise;
 	    };
