@@ -549,14 +549,24 @@ sub create_thumbnail {
     $current_info = "Create thumbnail for $file";
 
     # Save your thumbnail
-    my $dest;
+    my($dest, $ext);
     if (defined &md5_hex) {
-	my($ext) = $file =~ /(\.[^\.]+)$/;
+	($ext) = $file =~ /(\.[^\.]+)$/;
 	$ext = "" if !defined $ext;
-	$dest = $thumbnail_dir . "/" . md5_hex($file) . $ext;
+	$dest = $thumbnail_dir . "/" . md5_hex($file);
     } else {
-	$dest = $thumbnail_dir . "/" . basename($file);
+	my $base = basename($file);
+	if ($base =~ /(.+)(\.[^\.]+)$/) {
+	    ($base, $ext) = ($1, $2);
+	} else {
+	    $ext = "";
+	}
+	$dest = $thumbnail_dir . "/" . $base;
     }
+    if ($ext =~ m{\.(nef|xcf)$}i) { # XXX maybe add more formats, or just accept gif/png/jpe?g
+	$ext = '.jpg';
+    }
+    $dest .= $ext;
 
     return $dest if (-r $dest && !$recreate_thumbnails);
 
@@ -870,7 +880,6 @@ version
  * Instructions needed on how to create
    a bundle suitable for sharing with other people
  * GPX support
- * xcf: maybe extract exif thumbnail, if any; imagemagick cannot handle xcf files
  * document options!
    * -person: use only GPS tracks with no srt:person tag or a matching srt:person tag
  * -update is not efficient if many images are not geocodable
