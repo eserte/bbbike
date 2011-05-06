@@ -457,7 +457,7 @@ Boddinstr.: Kopfsteinpflaster	Q2 12216,8323 12368,8356 12582,8408
 Boddinstr.: Kopfsteinpflaster	Q2 12116,8247 12177,8263 12168,8313
 Rollbergstr.: Asphalt	Q0 11963,8074 12147,8117
 Rollbergstr.: Kopfsteinpflaster	Q2 12295,8154 12327,8161 12407,8177 12528,8205 12714,8249
-Morusstr.: schlechtes Kopfsteinpflaster	Q3 12407,8177 12426,8115
+Morusstr.: schlechtes Kopfsteinpflaster	Q3+ 12407,8177 12426,8115
 Falkstr.: Asphalt	Q0 12162,8055 12178,7985 12179,7979
 Falkstr.: Kopfsteinpflaster	Q2 12179,7979 12220,7822
 (Falkstr. - Mittelweg): Verbundsteinpflaster	Q1 12220,7822 12224,7799
@@ -885,8 +885,7 @@ Hauptstr: sandiger und hoplriger Fahrweg	Q3 9675,26957 9577,26725 9713,26457
 Hauptstr.: Betonplatten, OK	Q1 9713,26457 9820,26180 9863,26000 9908,25864
 Bauernweg: sandig	Q2 9820,26180 10112,26349
 Hinter dem Gießhaus: Asphalt	Q0+ 9837,12552 9842,12506 9852,12409
-Oberwallstr.: mäßiger Asphalt, teils gutes Kopfsteinpflaster	Q1 9890,12161 9875,12257 9869,12297
-Oberwallstr.: mäßiger Asphalt	Q1 9869,12297 9852,12409
+Oberwallstr.: mäßiger Asphalt	Q1+ 9890,12161 9875,12257 9869,12297 9852,12409
 Trautenaustr.: Kopfsteinpflaster, OK	Q1 5374,9619 5314,9588
 Krumme Str.: Kopfsteinpflaster	Q2 3981,11232 3986,11347 3990,11490
 Fehrbelliner Str.: Kopfsteinpflaster	Q2 10037,14379 10282,14212
@@ -1364,7 +1363,7 @@ Rütlistr.: Kopfsteinpflaster	Q2 12480,9037 12490,9056 12565,9200 12620,9293
 (Am Flutgraben): Gehwegpflasterung	Q1+ 13333,9929 13371,9974 13535,10184
 Schleusenufer: Kopfsteinpflaster	Q2 13487,10227 13628,10396
 Schmollerplatz: Beton	Q1 13271,9516 13293,9468
-Wildenbruchplatz: schlechtes bis mäßiges Kopfsteinpflaster	Q3 13135,8766 13218,8693 13314,8624
+Wildenbruchplatz: schlechtes bis mäßiges Kopfsteinpflaster	Q3+ 13135,8766 13218,8693 13314,8624
 Finowstr. (Neukölln): Kopfsteinpflaster	Q2 13218,8693 13171,8621 13124,8562
 Finowstr. (Neukölln): Asphalt	Q0 13124,8562 13010,8422
 Kleine Innstr.: Asphalt	Q0 13171,8621 13262,8554
@@ -13591,7 +13590,7 @@ Gutzkowstr.: Kopfsteinpflaster	Q2 6785,8194 6636,8157
 Gustav-Freytag-Str.: Verbundsteinpflaster	Q1 6807,8309 6779,8279
 Gustav-Freytag-Str.: Kopfsteinpflaster	Q2 6779,8279 6785,8194 6792,8122
 (Loewenhardtdamm - Höhndorfstr.): Verbundsteine, Beton	Q0 8334,8655 8438,8676
-(Weg d. Kol. Papestr.): Verbundsteine und Schotter	Q1 8226,8648 8259,8628 8262,8317
+(Weg d. Kol. Papestr.): Verbundsteine und Schotter	Q1 8226,8648 8259,8628 8264,8289
 Udetzeile: Asphalt mit Fugen	Q1 8327,8302 8315,8189
 (zum Bayernring): Asphalt	Q0 8455,8567 8531,8404
 #: corrected_by: srt (Q1 -> Q0-)

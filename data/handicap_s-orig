@@ -14,7 +14,7 @@ Behrenstr.: Bauarbeiten, Einbahnstraﬂenregelung	q4::inwork; 8861,12125 9054,1215
 #: last_checked: 2011-04-19
 Reichstagufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9117,12705 9209,12795 9280,12883
 #
-#: last_checked: 2011-04-19
+#: last_checked: 2011-05-06
 Oberwallstr.: Bauarbeiten, Einbahnstraﬂe	q4::inwork; 9925,11947 9913,12068
 # 
 #: last_checked: 2011-04-30
@@ -305,7 +305,7 @@ Lausitzer Platz: zahlreiche Bodenschwellen	q2 12197,10494 12172,10585
 Lausitzer Platz: zahlreiche Bodenschwellen	q2 12328,10442 12274,10612
 (Gr¸nanlage Egon-Erwin-Kisch-Str. - Falkenberger Chaussee): Fuﬂg‰nger	q2 17678,18171 17703,17990
 Erich-Steinfurth-Str.: Fuﬂg‰nger	q2 12645,11673 12596,11696
-Elbingeroder Weg: Hohe Bordsteine	q3 13178,9062 13146,9085
+Elbingeroder Weg: hohe Bordsteine	q3 13178,9062 13146,9085
 (An der Apostelkirche - Kurf¸rstenstr.): Fuﬂg‰nger, Bordsteine	q3 7312,10505 7315,10537
 Marie-Elisabeth-L¸ders-Steg: eng, Fuﬂg‰nger	q2 8415,12749 8551,12746
 Kleine Andreasstr.: Gehweg, Bordsteine	q3 12211,12128 12279,12113
@@ -350,7 +350,8 @@ Uferweg, Mentzelpark: Fuﬂg‰nger	q1 21487,5425 21600,5221 21684,5079 21735,5003 2
 Uferweg, Mentzelpark: Fuﬂg‰nger, eng	q3 21769,4973 21821,4918 21834,4889
 (Mentzelpark): Fuﬂg‰nger	q1 21769,4973 21778,4916 21834,4889 21848,4882
 (Mentzelpark): Fuﬂg‰nger	q1 21726,4896 21741,4889 21778,4916
-#: XXX Ist nun Radfahren erlaubt oder nicht (aus dem Bus glaube ich "verboten" gesehen zu haben)? q2 -> q1 oder q3 entsprechend setzen
+#: XXX Bauarbeiten; in Zukunft wird das Radfahren offiziell erlaubt sein; evtl. auch asphaltiert?
+#: last_checked: 2011-05-06 (mrt)
 Heinrich-Lassen-Park: Fuﬂg‰nger	q2 6664,8787 6740,8682 6815,8691 6912,8617
 (Uferweg am Nordhafen): Fuﬂg‰nger	q1 7753,14528 7695,14545 7498,14658
 An der Malche: teilweise eng und kurvig	q1 1127,20434 1060,20557 995,20590 921,20562 864,20646 673,20800
@@ -862,6 +863,8 @@ Straﬂe 45 (Heinersdorf): enger Weg	q2- 12609,17405 12671,17528 12829,17626 12924
 Straﬂe 46 (Heinersdorf): enger Weg	q2 12587,17603 12505,17469 12500,17460
 #: XXX_prog: Bordsteine (2x), wobei mit etwas Gl¸ck abgeflachte Bordsteine frei sind...
 Dresdener Str.: Fuﬂg‰nger, Bordsteine	q3 11034,11249 11000,11327
+#: XXX_prog: Bordstein, relativ hoch
+Eingang Leinestr.: Bordsteine	q3 11547,7432 11553,7437
 ######################### User Contributions #################################
 #: by: Michael Kiekbusch
 #: corrected_by: srt/policy (q4 -> q3-)
@@ -1157,7 +1160,7 @@ Voxstr.: Fuﬂg‰nger	q3 8309,11390 8375,11368
 Alice-Salomon-Park: getrennte Wege f¸r Radfahrer und Fuﬂg‰nger, Bordsteine	q2 6851,9365 6771,9458 6728,9457
 (Geﬂlerstr. - Monumentenstr.): Fuﬂg‰nger, Kinder	q2 7970,8886 7964,9060 8009,9063 8014,9126
 (Loewenhardtdamm - Hˆhndorfstr.): Fuﬂg‰nger, Bordsteine, Schranken	q2 8334,8655 8438,8676
-(Weg d. Kol. Papestr.): Fuﬂg‰nger	q1 8226,8648 8259,8628 8262,8317
+(Weg d. Kol. Papestr.): Fuﬂg‰nger	q1 8226,8648 8259,8628 8264,8289
 (zum Bayernring): Fuﬂg‰nger	q1 8455,8567 8531,8404
 Bautzener Platz: Fuﬂg‰nger, Bordsteine	q2 8182,9240 8100,9240
 Bautzener Platz: Fufg‰nger, Bordsteine	q2 8102,9262 8183,9260
