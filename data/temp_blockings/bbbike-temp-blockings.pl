@@ -15393,7 +15393,7 @@ EOF
      },
      { from  => undef, #
        until => undef, #
-       text  => 'Nestorstr.: Di und Fr 08.00-13.00 Wochemarkt, Behinderungen möglich',
+       text  => 'Nestorstr.: Di und Fr 08.00-13.00 Wochenmarkt, Behinderungen möglich',
        type  => 'gesperrt',
        permanent => 1,
        data  => <<EOF,

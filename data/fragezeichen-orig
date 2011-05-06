@@ -9,8 +9,8 @@
 #: section ignorieren vvv
 #: section projektierte Radstreifen der Verkehrsverwaltung vvv
 #
-#: last_checked: 2010-09-18
-#: next_check: 2011-06-01
+#: last_checked: 2011-05-04
+#: next_check: 2011-09-01
 #: XXX: die ersten Meter in der Breiten Str. sind noch Baustelle ohne Radspuren
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0709/nachricht2788.html
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1004/nachricht3862.html Bauarbeiten werden im Oktober 2011 abgeschloßen sein
@@ -40,8 +40,8 @@ Falkenberger Chaussee im Bereich Bhf. Hohenschönhausen	?::projected 17400,17790 
 #: by: ^^^
 #
 #: by: MoPo 2009-08-01, soll 2010 realisiert werden vvv
-#: last_checked: 2011-04-15
-#: next_check: 2011-05-01
+#: last_checked: 2011-05-03
+#: next_check: 2011-06-01
 Zossener Str./Lindenstr.	?::projected; 9873,10285 9856,10358
 #
 #: last_checked: 2011-03-30
@@ -101,9 +101,9 @@ Müllerstr.	?::projected 6790,16018 6659,16133 6608,16180 6450,16325 6444,16331 6
 #
 #: by: Tagesspiegel vom 2009-04-12, soll 2009 realisiert werden
 #: corrected_by: MoPo 2009-08-01, soll 2010 realisiert werden
-#: last_checked: 2011-04-18
-#: next_check: 2011-06-15
-Annenstr./Heinrich-Heine-Platz	?::projected 11349,11227 11249,11268 11091,11379 10915,11535 10819,11664
+#: last_checked: 2011-05-03
+#: next_check: 2011-07-01
+Annenstr./Heinrich-Heine-Platz	?::projected 11349,11227 11249,11268 11091,11379 11039,11425 10915,11535 10819,11664
 #
 #: by: Tagesspiegel vom 2009-04-12, soll 2009 realisiert werden
 #: corrected_by: MoPo 2009-08-01, soll 2010 realisiert werden
@@ -135,8 +135,8 @@ Wollankstr.: Angebotsstreifen werden bis Herbst 2011 eingerichtet	?::projected 9
 Rüdersdorfer Str. bekommt Radspuren	?::projected 13066,11854 12891,12008
 #
 #: by: Tagesspiegel vom 2010-03-26
-#: last_checked: 2011-04-18
-#: next_check: 2011-05-01
+#: last_checked: 2011-05-03
+#: next_check: 2011-06-01
 Lindenstr. bekommt Radspuren	?::projected 9795,10512 9770,10590 9777,10719 9805,10791 9829,10830 9935,11067 9973,11150 10020,11262
 #
 #: XXX http://fahrrad.wikia.com/wiki/Fahrradstra%C3%9Fe/Liste_von_Fahrradstra%C3%9Fen#Berlin -> ja
@@ -173,8 +173,8 @@ An den Eldenaer Höfen: wo genau wird die Straße liegen? Qualität?	?::inwork 1443
 #: next_check: 2012-04-01
 Axel-Springer-Str.: Verbindung zum Spittelmarkt	?::inwork 10166,11592 10213,11728
 # 
-#: last_checked: 2011-04-19
-#: next_check: 2011-05-05
+#: last_checked: 2011-05-04
+#: next_check: 2011-06-01
 Radstreifen in der Wilhelmstr.: wird der Rest noch realisiert?	?::inwork 9367,10641 9313,10789 9266,10936 9234,11056 9199,11166
 #
 #: last_checked: 2011-04-09 vvv
@@ -270,7 +270,7 @@ Kletterrosenweg	?::projected 21382,149 21354,289
 #: next_check ^^^
 #: last_checked ^^^
 # 
-#: next_check: 2011-05-01
+#: next_check: 2011-08-01
 An der Barthschen Promenade: vielleicht wird die Straße in Zukunft sich hier befinden	?::projected 8954,8914 8814,8917
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20100804.1210.305109.html
@@ -334,8 +334,8 @@ Mangerstr.: Bauarbeiten bis Dezember 2010, danach asphaltiert	?::inwork -12064,-
 #: by: http://www.potsdam.de/cms/beitrag/10056300/757395/
 Mauerweg: evtl. existiert hier bereits ein geschotterter Radweg parallel zur Straße	? -8799,3778 -9064,3667 -9156,3451 -9399,3297 -9530,3165 -9999,2615 -10105,2458
 #
-#: last_checked: 2011-03-03 vvv
-#: next_check: 2011-05-01 vvv
+#: last_checked: 2011-05-04 vvv
+#: next_check: 2011-06-15 vvv
 #: XXX Eintrag in Berlin.coords.data fehlt: PLZ=10117
 #: XXX genaue Lage?
 Prinzengasse: existiert sie schon, wenn ja: wie ist die Qualität?	?::inwork 9952,12292 10029,12313
@@ -2263,6 +2263,7 @@ Florastr.: Qualität?	? 4360,22576 4437,22655
 Eutinger Weg: Qualität?	? 4437,22655 4531,22697 4593,22702
 Gutachstr.: Qualität?	? 4586,22769 4593,22702 4648,22632 4716,22535 4800,22418
 Benekendorffstr.: Qualität der Benekendorffstr. zwischen Oraniendamm und Düsterhauptstr (möglicherweise Kopfsteinpflaster)?	? 4533,22399 4616,22478
+#: by: http://www.flickr.com/photos/57059657@N00/5676296413 (Asphalt, aber gut oder mäßig?)
 Halalistr.: Qualität?	? 4147,22309 4174,22328 4209,22338 4280,22383
 #: by: http://farm5.static.flickr.com/4122/4998979916_367325226d_b.jpg (Kopfsteinpflaster)
 Hochjagdstr.: Qualität?	? 3947,22000 4032,21892 4098,21809

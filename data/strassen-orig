@@ -1054,7 +1054,7 @@ Besselstr.	N 9521,10926 9653,10950 9786,10971
 Hedemannstr.	N 9131,10716 9313,10789 9535,10820
 Fischerinsel	NH 10512,12039 10672,11870
 Neue Roﬂstr.	NH 10672,11870 10687,11853 10715,11812 10720,11805 10819,11664
-Annenstr. (Mitte)	NH 10819,11664 10915,11535 11091,11379 11249,11268
+Annenstr. (Mitte)	NH 10819,11664 10915,11535 11039,11425 11091,11379 11249,11268
 Schmidstr.	N 11415,11392 11236,11508
 (Schmidstr. - Heinrich-Heine-Str.)	NN 11236,11508 11170,11558
 Heinrich-Heine-Platz	NH 11349,11227 11249,11268
@@ -1136,7 +1136,7 @@ Alex-Wedding-Str.	N 11045,13183 11085,13239 11146,13328
 Wadzeckstr.	N 11368,13170 11326,13196 11291,13218 11201,13289 11146,13328 11092,13366
 (Wadzeckstr. - Mollstr.)	NN 11326,13196 11406,13321
 #: XXX Ist das die Planstraﬂe 6, die Bernhard-Weiﬂ-Str. heiﬂen wird?
-#: last_checked: 2011-04-02
+#: last_checked: 2011-05-05
 (Straﬂenbahntrasse zum Alex)	N 11291,13218 11230,13134 11191,13080
 (Straﬂenbahntrasse zum Alex)	NN 11191,13080 11139,13008
 Weydemeyerstr.	N 12124,12852 12054,12903 11983,12949 11952,12871 11926,12807 11900,12754
@@ -1565,6 +1565,8 @@ Dresdener Str.	N 11189,10831 11162,10919
 Dresdener Str.	NN 11162,10919 11150,11030
 Dresdener Str.	N 11150,11030 11124,11117 11034,11249
 Dresdener Str.	N 11234,10739 11258,10682 11343,10528
+Dresdener Str.	NN 11034,11249 11000,11327
+Dresdener Str.	N 11000,11327 11039,11425
 Luckauer Str.	N 11039,10820 11105,10945 11150,11030
 Seydelstr.	N 10489,11405 10446,11470 10320,11627 10240,11740
 Elisabeth-Mara-Str.	N 10320,11627 10506,11567
@@ -9858,7 +9860,7 @@ Georgenkirchstr.	N 11842,13576 11778,13498 11703,13422 11655,13370 11589,13305
 #: XXX wird diese Straﬂe zur "Pauline-Staegemann-Str." benannt?
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/12re.pdf/file
 #: XXX fehlt in Berlin.coords.data, Ortsteil Friedrichshain
-#: last_checked: 2011-04-02
+#: last_checked: 2011-05-05
 (Georgenkirchstr. - Mollstr.)	NN 11589,13305 11524,13247
 Anne-Frank-Str.	N 19510,549 19593,520 19678,490 19852,437
 Kunibertstr.	N 19593,520 19648,656 19660,696 19694,811

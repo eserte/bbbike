@@ -4608,6 +4608,8 @@ Straﬂe 54: Verbundsteinpflaster	Q0 12918,17736 12908,17807
 Straﬂe 46 (Heinersdorf): unbefestigter Weg	Q2 12630,17636 12587,17603
 Straﬂe 46 (Heinersdorf): unbefestigter Weg	Q2 12587,17603 12505,17469 12500,17460
 Straﬂe 56 (Heinersdorf): Asphalt	Q0 12436,17682 12587,17603
+Dresdener Str.: Asphalt	Q0 11034,11249 11000,11327
+Dresdener Str.: Asphalt	Q1 11000,11327 11039,11425
 Viktoriastr.: m‰ﬂiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
 Riemeisterstr.: m‰ﬂiges Kopfsteinpflaster, aber asphaltierte Radwege	Q1 346,4833 294,4916 158,5103 103,5123
 P¸cklerstr.: Fahrbahn mit schlechtem Kopfsteinpflaster, Radweg OK	Q1 2688,7067 2576,7026 2465,6984 2403,6962 2266,6911 2155,6873 2130,6865 2054,6840 1961,6820
@@ -5740,7 +5742,8 @@ Wuthenowstr.: Kopfsteinpflaster	Q2 5683,5672 5840,5679
 Ufnaustr.: guter Asphalt	Q0 4425,13785 4455,13567
 Gewerbehof: Asphalt	Q0 -2669,13488 -2393,13414
 Pinnauweg: Asphalt	Q0 2219,1612 2043,1538 1943,1496 1975,1413
-Kurf¸rstenstr. (Lankwitz): Asphalt	Q0 6271,1684 6160,1896 6134,1929 6021,2071 5934,2198 5889,2319 5789,2604
+Kurf¸rstenstr. (Lankwitz): schlecht zu befahrene Kopfsteinpflasterstrecke	Q3 6271,1684 6160,1896
+Kurf¸rstenstr. (Lankwitz): Asphalt	Q0 6160,1896 6134,1929 6021,2071 5934,2198 5889,2319 5789,2604
 Lansstr.: m‰ﬂiges Kopfsteinpflaster	Q2 3054,5677 2953,5606 2858,5535 2785,5482
 Krumme Str. (Bohnsdorf): Beton	Q0 21941,-422 22000,-470 22064,-481 22146,-490 22201,-496 22275,-461
 Prinz-Eugen-Str.: m‰ﬂiges Kopfsteinpflaster	Q2 7532,15849 7644,15731 7796,15590
@@ -6160,7 +6163,8 @@ Friesickestr.: Asphalt	Q0 12673,16209 12725,16321 12798,16493 12857,16627
 Haynauer Str.: Asphalt	Q0 8039,3242 8055,2885 8013,2667 7934,2471 7899,2391 7923,2319
 Wilhelm-Hauff-Str.: Asphalt	Q0 5824,6974 5957,6970
 Wilhelm-Hauff-Str.: Kopfsteinpflaster	Q2 5957,6970 6082,6965
-Calandrellistr.: gut befahrbar	Q0 5362,3612 5536,3685 5702,3762
+Calandrellistr.: gut befahrbar	Q0 5362,3612 5536,3685
+Calandrellistr.: schlechtes Kopfsteinpflaster	Q3 5536,3685 5702,3762
 Calandrellistr.: schlechtes Kopfsteinpflaster	Q3 5702,3762 5959,3875 6138,3956 6294,4021
 Corneliusstr. (Lankwitz): Kopfsteinpflaster	Q2 5787,3574 6042,3689
 Corneliusstr. (Lankwitz): gut asphaltiert	Q0 6042,3689 6221,3767 6376,3835
@@ -8851,6 +8855,7 @@ Kraepelinweg: guter Asphalt	Q0 -6990,16321 -6761,16257 -6739,16198 -6700,16178
 Bredereckstr.: Kopfsteinpflaster	Q2 23528,12521 23459,12345 23374,12134
 Hartmutstr.: rauer Asphalt mit kleinen Sch‰den und wenigen Bodenunebenheiten	Q1 13065,21267 13204,21203
 Straﬂe 19: unbefestigte Straﬂe	Q2 12939,18081 12898,18083 12807,18033
+Prinzessinenstr.: schlecht zu befahrene Kopfsteinpflasterstrecke	Q3 10096,-2137 9961,-2136 9856,-2135 9757,-2135
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206
 Richard-Ermisch-Str.: Asphalt	Q0 14245,13268 14224,13206 14207,13152 14177,13065 14163,13025 14130,12926 14096,12827
 Zum Langen Jammer: Kopfsteinpflaster, Gehweg besser	Q2 14686,12873 14405,12953

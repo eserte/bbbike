@@ -865,7 +865,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        {
          'until' => undef,
          'permanent' => 1,
-         'text' => 'Nestorstr.: Di und Fr 08.00-13.00 Wochemarkt, Behinderungen möglich',
+         'text' => 'Nestorstr.: Di und Fr 08.00-13.00 Wochenmarkt, Behinderungen möglich',
          'from' => undef,
          'id' => 1814,
          'data' => '	q4::temp 3374,10201 3359,9968 3347,9793

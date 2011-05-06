@@ -892,9 +892,6 @@ Krumme Str.: Kopfsteinpflaster	Q2 3981,11232 3986,11347 3990,11490
 Fehrbelliner Str.: Kopfsteinpflaster	Q2 10037,14379 10282,14212
 Borussenstr.: Kopfsteinpflaster	Q2 -4164,1993 -3965,2240 -3913,2327 -3882,2441
 Bäkestr.: mäßiger Asphalt	Q1 -7088,-1074 -7051,-1221
-#: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20110201.1500.329349.html
-#: XXX nach den Bauarbeiten vielleicht asphaltiert?
-#: next_check: 2011-05-01
 Dircksenstr: Kopfsteinpflaster	Q2 10706,13043 10595,13100
 Dircksenstr: Asphalt	Q0 10595,13100 10445,13091 10349,13043
 Hildegard-Jadamowitz-Str.: Kopfsteinpflaster	Q1- 13198,12311 13520,12264
@@ -5006,6 +5003,8 @@ Straße 54: Verbundsteinpflaster	Q0- 12918,17736 12908,17807
 Straße 46 (Heinersdorf): unbefestigter Weg	Q2 12630,17636 12587,17603
 Straße 46 (Heinersdorf): unbefestigter Weg	Q2 12587,17603 12505,17469 12500,17460
 Straße 56 (Heinersdorf): Asphalt	Q0 12436,17682 12587,17603
+Dresdener Str.: Asphalt	Q0 11034,11249 11000,11327
+Dresdener Str.: Asphalt	Q1+ 11000,11327 11039,11425
 ######################### User Contributions #################################
 #: by: Dominik Seelow vvv
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
@@ -6789,8 +6788,13 @@ Gewerbehof: Asphalt	Q0 -2669,13488 -2393,13414
 #: by: Roland Höpfner: vvv
 Pinnauweg: Asphalt	Q0 2219,1612 2043,1538 1943,1496 1975,1413
 #: by: ^^^
-#: by: Michaela (G.):
-Kurfürstenstr. (Lankwitz): Asphalt	Q0 6271,1684 6160,1896 6134,1929 6021,2071 5934,2198 5889,2319 5789,2604
+# 
+#: by: Michaela (G.): vvv
+#: corrected_by: Karsten Krüger
+Kurfürstenstr. (Lankwitz): schlecht zu befahrene Kopfsteinpflasterstrecke	Q3 6271,1684 6160,1896
+Kurfürstenstr. (Lankwitz): Asphalt	Q0 6160,1896 6134,1929 6021,2071 5934,2198 5889,2319 5789,2604
+#: by: ^^^
+# 
 #: by: Axel Wappler:
 Lansstr.: mäßiges Kopfsteinpflaster	Q2 3054,5677 2953,5606 2858,5535 2785,5482
 #: by: Petzold:
@@ -7660,7 +7664,9 @@ Wilhelm-Hauff-Str.: Kopfsteinpflaster	Q2 5957,6970 6082,6965
 #: by: ^^^
 #: by: Stefan Lieb: vvv
 #: note: die ADFC-Karte hat für die gesamte Straße "mäßig geeignet" vergeben
-Calandrellistr.: gut befahrbar	Q0 5362,3612 5536,3685 5702,3762
+Calandrellistr.: gut befahrbar	Q0 5362,3612 5536,3685
+#: corrected_by: Karsten Krüger (gut befahrbar -> schlechtes Kopfsteinpflaster), srt
+Calandrellistr.: schlechtes Kopfsteinpflaster	Q3 5536,3685 5702,3762
 Calandrellistr.: schlechtes Kopfsteinpflaster	Q3 5702,3762 5959,3875 6138,3956 6294,4021
 #: corrected_by: srt ("gut asphaltiert" -> "Kopfsteinpflaster")
 Corneliusstr. (Lankwitz): Kopfsteinpflaster	Q2 5787,3574 6042,3689
@@ -13482,6 +13488,9 @@ Hartmutstr.: rauer Asphalt mit kleinen Schäden und wenigen Bodenunebenheiten	Q1 
 #: by: Mareike Scharf:
 #: corrected_by: srt (schlechter fester Sandweg, Q3 -> unbefestigte Straße, Q2)
 Straße 19: unbefestigte Straße	Q2 12939,18081 12898,18083 12807,18033
+# 
+#: by: Karsten Krüger
+Prinzessinenstr.: schlecht zu befahrene Kopfsteinpflasterstrecke	Q3 10096,-2137 9961,-2136 9856,-2135 9757,-2135
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206
