@@ -259,11 +259,18 @@ sub _output_future {
 		    $id,
 			$name, format_date($o->{from}),
 			    format_date($o->{until});
-		# 'file' entries are not allowed anymore in
-		# "optimized" files, because it's possibly downloaded
-		# during bbbike data updates
 		if ($o->{file}) {
-		    push @errors, "Found 'file' entry in record id $id";
+		    my $msg = "Found 'file' entry in record id $id.";
+		    our $file_entry_diagnostics;
+		    if (!$file_entry_diagnostics++) {
+			$msg .= <<EOF;
+
+'file' entries are not allowed anymore in
+"optimized" files, because it's possibly downloaded
+during bbbike data updates
+EOF
+		    }
+		    push @errors, $msg;
 		}
 	    }
 	}
