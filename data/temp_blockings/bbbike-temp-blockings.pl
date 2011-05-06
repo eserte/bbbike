@@ -45,11 +45,39 @@ userdel auto	3 9689,10124 9827,10051 9837,9856
 userdel auto	3 9579,10122 9599,10175 9593,10238
 EOF
      },
-     { from  => Time::Local::timelocal(reverse(2010-1900,5-1,23,0,0,0)), # PERIODISCH!
-       until => Time::Local::timelocal(reverse(2010-1900,5-1,23,23,59,25)), # PERIODISCH!
-       text  => 'Karneval der Kulturen, 23.05.2009',
+     { from  => 1307743200, # Time::Local::timelocal(reverse(2010-1900,5-1,23,0,0,0)), # PERIODISCH!
+       until => 1307915940, # Time::Local::timelocal(reverse(2010-1900,5-1,23,23,59,25)), # PERIODISCH!
+       text  => 'Karneval der Kulturen, 12.6.2011',
        type  => 'gesperrt',
-       file  => "karneval-der-kulturen.bbd",
+       data  => <<EOF,
+userdel	2::temp 11909,9155 11824,8995 11767,9026 11629,9086 11500,9116 11136,9183 11108,9187 10713,9260 10625,9259 10564,9292 10198,9405 10032,9456 9937,9484 9927,9487 9790,9528 9676,9564 9552,9602 9334,9670 9043,9745 9002,9731 8777,9601 8648,9526 8595,9495 8192,9619
+userdel	3 8773,9524 8777,9601 8779,9812
+userdel	3 8779,9812 8777,9601 8773,9524
+userdel	3 9000,9509 9043,9745 9073,9915
+userdel	3 9073,9915 9043,9745 9000,9509
+userdel	3 9280,9476 9334,9670 9387,9804
+userdel	3 9387,9804 9334,9670 9280,9476
+userdel	3 9524,9426 9552,9602 9588,9827
+userdel	3 9588,9827 9552,9602 9524,9426
+userdel	3 9650,9404 9676,9564 9705,9732
+userdel	3 9705,9732 9676,9564 9650,9404
+userdel	3 9767,9386 9790,9528 9820,9718
+userdel	3 9820,9718 9790,9528 9767,9386
+userdel	3 9892,9286 9927,9487 9957,9692
+userdel	3 9957,9692 9927,9487 9892,9286
+userdel	3 10004,9268 10032,9456 10067,9667
+userdel	3 10067,9667 10032,9456 10004,9268
+userdel	3 10123,9233 10198,9405 10306,9640
+userdel	3 10306,9640 10198,9405 10123,9233
+userdel	3 10547,9233 10564,9292 10580,9361
+userdel	3 10580,9361 10564,9292 10547,9233
+userdel	3 10705,9234 10713,9260 10747,9326
+userdel	3 10747,9326 10713,9260 10705,9234
+userdel	3 11128,9100 11136,9183 11208,9345 11274,9492
+userdel	3 11274,9492 11208,9345 11136,9183 11128,9100
+userdel	3 11998,8872 11824,8995 11882,8527
+userdel	3 11882,8527 11824,8995 11998,8872
+EOF
      },
      { from  => Time::Local::timelocal(reverse(2003-1900,6-1,19,6,0,0)),
        until => Time::Local::timelocal(reverse(2003-1900,6-1,22,22,0,0)),
@@ -201,10 +229,12 @@ Florastraße zwischen Grunowstraße und Berliner Straße, Baustelle, Straße in beid
        text  => 'Fürstenwalder Damm zwischen Bölschestraße und Hartlebenstraße Baustell stadtauswärts, Straße gesperrt, eine Umleitung ist eingerichtet, Dauer: 07.09.2003,04.00 Uhr bis 21.09.2003',
        type  => 'gesperrt',
      },
-     { from  => 1063339200, # 2003-09-12 06:00
-       until => 1063576800, # 2003-09-15 00:00
-       file  => 'winzerfest.bbd',
-       text  => 'Bahnhofstraße, zwischen Goltzstraße und Steinstraße Vollsperrung, vom 13.09.2003, 06.00 Uhr bis 14.09.2003, 24.00 Uhr ',
+     { from  => 1315519200, #1063339200, # 2003-09-12 06:00
+       until => 1315778400, #1063576800, # 2003-09-15 00:00
+       data  => <<EOF,
+userdel	2 10453,-2133 10509,-2131 10631,-2130 10747,-2129
+EOF
+       text  => 'Bahnhofstraße, zwischen Goltzstraße und Steinstraße Winzerfest, vom 10.09.2011 bis 11.09.2011',
        type  => 'gesperrt',
      },
      { from  => 1096596000, # 2004-10-01 04:00
@@ -806,9 +836,9 @@ EOF
 userdel	2 2632,1706 2843,1281
 EOF
      },
-     { from  => undef, # 
-       until => 1094421599, # 2004-09-05 23:59
-       text  => 'Alt-Rudow in beiden Richtungen, zwischen Krokusstr. und Neudecker Weg Veranstaltung, Straße vollständig gesperrt (bis 05.09. 24 Uhr), Rudower Meilenfest ',
+     { from  => 1314914400, # undef, # zweiter Termin im Jahr
+       until => 1315173600, # 1094421599, # 2004-09-05 23:59
+       text  => 'Alt-Rudow in beiden Richtungen, zwischen Krokusstr. und Neudecker Weg Veranstaltung, Straße vollständig gesperrt (3. und 4. Septermber 2011), Rudower Septermbermeile',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 16610,1715 16805,1488 16849,1437
@@ -4093,16 +4123,15 @@ EOF
 userdel	q4; 15361,12071
 EOF
      },
-     { from  => undef, # 
-       until => 1144619999, # 2006-04-09 23:59
-       text  => 'Scharnweberstr. (Reinickendorf) in beiden Richtungen zwischen Eichborndamm und Hechelstr. Veranstaltung, Straße vollständig gesperrt (Straßenfest)',
+     { from  => 1305237600, # undef, # 
+       until => 1305496800, # 1144619999, # 2006-04-09 23:59
+       text  => 'Scharnweberstr. (Reinickendorf) in beiden Richtungen zwischen Eichborndamm und Hechelstr. Straßenfest, Straße vollständig gesperrt (14. und 15. Mai 2011)',
        type  => 'handicap',
-       source_id => 'IM_002611',
        data  => <<EOF,
-userdel	q4 4392,17777 4429,17763 4584,17704
-userdel	q4 4392,17777 4326,17801
-userdel	q4 4584,17704 4683,17669
-userdel	q4 4326,17801 4200,17848 4096,17890 4015,17912
+userdel	q4::temp 4392,17777 4429,17763 4584,17704
+userdel	q4::temp 4392,17777 4326,17801
+userdel	q4::temp 4584,17704 4683,17669
+userdel	q4::temp 4326,17801 4200,17848 4096,17890 4015,17912
 EOF
      },
      { from  => 1144706400, # 2006-04-11 00:00
@@ -7921,11 +7950,10 @@ EOF
 userdel	1::inwork 43584,20871 43553,20466 43131,19792
 EOF
      },
-     { from  => 1177739838, # 2007-04-28 07:57
-       until => 1177884000, # 2007-04-30 00:00
-       text  => 'Reichsstr. (Charlottenburg) in beiden Richtungen zwischen Theodor-Heuss-Platz und Steubenplatz Veranstaltung, Straße vollständig gesperrt (bis 29.04.2007 nachts)',
+     { from  => 1314309600, # 1177739838, # 2007-04-28 07:57
+       until => 1314568740, # 1177884000, # 2007-04-30 00:00
+       text  => 'Reichsstr. (Charlottenburg) in beiden Richtungen zwischen Theodor-Heuss-Platz und Steubenplatz Veranstaltung, Straße vollständig gesperrt (27. und 28. August 2011)',
        type  => 'gesperrt',
-       source_id => 'IM_005329',
        data  => <<EOF,
 userdel	2::temp 653,12109 738,12025 818,11954 881,11893 1033,11754 1133,11664 1215,11587 1220,11583 1308,11506 1403,11428
 EOF
@@ -8019,11 +8047,10 @@ EOF
 userdel	2::temp 6228,13324 6112,13327 6011,13330 5956,13330 5857,13342 5705,13359
 EOF
      },
-     { from  => 1178379282, # 2007-05-05 17:34
-       until => 1178488800, # 2007-05-07 00:00
-       text  => 'Alt-Rudow (Rudow) in beiden Richtungen zwischen Köpenicker Str. und Krokusstr. Veranstaltung, Straße vollständig gesperrt (bis 06.05.2007 nachts)',
+     { from  => 1304632800, # 1178379282, # 2007-05-05 17:34 # erster Termin im Jahr
+       until => 1304892000, # 1178488800, # 2007-05-07 00:00
+       text  => 'Alt-Rudow (Rudow) in beiden Richtungen zwischen Köpenicker Str. und Krokusstr. Veranstaltung, Straße vollständig gesperrt (7. und 8. Mai 2011)',
        type  => 'gesperrt',
-       source_id => 'IM_005386',
        data  => <<EOF,
 userdel	2::temp 16849,1437 16805,1488 16610,1715
 EOF
@@ -8118,11 +8145,10 @@ EOF
 userdel	q4::temp 6178,12387 6276,12506 6314,12518 6444,12536
 EOF
      },
-     { from  => 1178958684, # 2007-05-12 10:31
-       until => 1179093600, # 2007-05-14 00:00
-       text  => 'Bölschestr. (Köpenick) in beiden Richtungen Veranstaltung, Straße vollständig gesperrt (bis 13.05.07 24:00Uhr)',
+     { from  => 1304632800, # 1178958684, # 2007-05-12 10:31
+       until => 1304892000, # 1179093600, # 2007-05-14 00:00
+       text  => 'Bölschestr. (Köpenick) in beiden Richtungen Veranstaltung, Straße vollständig gesperrt (7. und 8. Mai 2011)',
        type  => 'gesperrt',
-       source_id => 'IM_005473',
        data  => <<EOF,
 userdel	2::temp 25519,4830 25524,5011 25539,5237 25544,5326 25546,5359 25548,5398 25553,5486 25567,5749 25571,5829 25579,5958
 EOF
@@ -8631,11 +8657,10 @@ EOF
 userdel	q4::inwork 25190,-30385 25240,-29746 25412,-29762 25541,-29875
 EOF
      },
-     { from  => 1181941660, # 2007-06-15 23:07
-       until => 1182204000, # 2007-06-19 00:00
-       text  => 'Motzstr., Eisenacher Str., Kalckreuthstr. (Schöneberg) in beiden Richtungen, Veranstaltung, Straße vollständig gesperrt (bis 18.06.07 06 Uhr)',
+     { from  => 1308261600, # 1181941660, # 2007-06-15 23:07
+       until => 1308520800, # 1182204000, # 2007-06-19 00:00
+       text  => 'Motzstr., Eisenacher Str., Kalckreuthstr. (Schöneberg) in beiden Richtungen, Veranstaltung, Straße vollständig gesperrt (18. und 19. Juni 2011)',
        type  => 'gesperrt',
-       source_id => 'IM_005798',
        data  => <<EOF,
 userdel	2::temp 6628,10318 6626,10155 6729,10212 6739,10120
 userdel	2::temp 6609,10147 6514,10088
@@ -8865,9 +8890,9 @@ EOF
 userdel	2::temp 9642,15038 9718,14888
 EOF
      },
-     { from  => Time::Local::timelocal(reverse(2008-1900,6-1,29,0,0,0)), #
-       until => Time::Local::timelocal(reverse(2008-1900,6-1,30,0,0,0)), #
-       text  => 'Mehringdamm (Kreuzberg) in Richtung Tempelhof, zwischen Kreuzbergstr. und Dudenstr. Veranstaltung (Seifenkistenrennen), Fahrtrichtung gesperrt',
+     { from  => 1308866400, # Time::Local::timelocal(reverse(2008-1900,6-1,29,0,0,0)), #
+       until => 1309039200, # Time::Local::timelocal(reverse(2008-1900,6-1,30,0,0,0)), #
+       text  => 'Mehringdamm (Kreuzberg) in Richtung Tempelhof, zwischen Kreuzbergstr. und Dudenstr. Veranstaltung (Seifenkistenrennen am 25. Juni 2011), Fahrtrichtung gesperrt',
        type  => 'gesperrt',
        source_id => 'IM_005931',
        data  => <<EOF,
@@ -9346,9 +9371,9 @@ EOF
 userdel	2::temp 12891,12549 12869,12425
 EOF
      },
-     { from  => 1186214400, # 2007-08-04 10:00
-       until => 1186344000, # 2007-08-05 22:00
-       text  => '5. Open Air Gallery am Sonntag, den 05.08.2007 von 10.00 bis 22.00 Uhr auf der Oberbaumbrücke ',
+     { from  => 1309557600, # 1186214400, # 2007-08-04 10:00 # erster Termin im Sommer
+       until => 1309730400, # 1186344000, # 2007-08-05 22:00
+       text  => 'Open Air Gallery am 3. Juli 2011 auf der Oberbaumbrücke ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp 13178,10623 13206,10651 13305,10789 13332,10832
@@ -9934,11 +9959,10 @@ EOF
 userdel	q4::inwork -53700,-13146 -53945,-12911 -54243,-12956
 EOF
      },
-     { from  => 1191018682, # 2007-09-29 00:31
-       until => 1191520800, # 2007-10-04 20:00
-       text  => 'Straße des 17. Juni, Y.-Rabin-Str. und Ebertstr. (Tiergarten) In beiden Richtungen zwischen Brandenburger Tor und Großer Stern Veranstaltung, Straße vollständig gesperrt (Y.-Rabin-Str. zwischen Str. des 17. Juni und Scheidemannstr., Ebertstr. zwischen Behrenstr. und Dorotheenstr.) (bis 04.10.2007 20 Uhr)',
+     { from  => 1317333600, # 1191018682, # 2007-09-29 00:31
+       until => 1317679200, # 1191520800, # 2007-10-04 20:00
+       text  => 'Straße des 17. Juni, Y.-Rabin-Str. und Ebertstr. (Tiergarten) In beiden Richtungen zwischen Brandenburger Tor und Großer Stern Veranstaltung, Straße vollständig gesperrt (Y.-Rabin-Str. zwischen Str. des 17. Juni und Scheidemannstr., Ebertstr. zwischen Behrenstr. und Dorotheenstr.) (1. bis 3. Oktober 2011)',
        type  => 'gesperrt',
-       source_id => 'IM_006765',
        data  => <<EOF,
 userdel	2::temp 8055,12186 8089,12190 8214,12205
 userdel	2::temp 8214,12205 8538,12245
@@ -11446,11 +11470,10 @@ userdel	q4::inwork 3257,-10374 2629,-10301 2580,-11069
 userdel	q4::inwork 1867,-10228 2629,-10301
 EOF
      },
-     { from  => 1243578210, # 2009-05-29 08:23
-       until => Time::Local::timelocal(reverse(2009-1900,6-1,2,5,0,0)), # 1180753200, # 2007-06-02 05:00
-       text  => 'Straßen um den Blücherplatz Kreuzberg Blücherplatz, Waterlooufer: Mehringdamm - Zossener Str., Blücherstr.: Mehringdamm - Zossener Str., Zossener Str.: Waterlooufer-Blücherstr. gesperrt (bis 02.06.07, 05 Uhr)',
+     { from  => 1307570400, # 1243578210, # 2009-05-29 08:23
+       until => 1308002340, # Time::Local::timelocal(reverse(2009-1900,6-1,2,5,0,0)), # 1180753200, # 2007-06-02 05:00
+       text  => 'Straßen um den Blücherplatz Kreuzberg Blücherplatz, Waterlooufer: Mehringdamm - Zossener Str., Blücherstr.: Mehringdamm - Zossener Str., Zossener Str.: Waterlooufer-Blücherstr. gesperrt (10. - 13.06.2011)',
        type  => 'gesperrt',
-       source_id => 'IM_012868',
        data  => <<EOF,
 userdel	2::temp 9521,10010 9448,10014
 userdel	2::temp 9858,10199 9837,10117 9827,10051 9521,10010 9536,10064 9579,10122 9599,10175 9687,10180 9825,10206 9865,10227
@@ -12148,11 +12171,10 @@ EOF
 userdel	1::inwork 9164,12172 9183,12076 9201,11968
 EOF
      },
-     { from  => 1217625881, # 2008-08-01 23:24
-       until => 1217800800, # 2008-08-04 00:00
-       text  => 'Müllerstr. (Wedding) in beiden Richtungen zwischen Leopoldplatz und Seestr. Veranstaltung, Straße vollständig gesperrt (bis 03.08.2008 abends)',
+     { from  => 1314828000, # 1217625881, # 2008-08-01 23:24 # zweiter Termin im Jahr
+       until => 1315173600, # 1217800800, # 2008-08-04 00:00
+       text  => 'Müllerstr. (Wedding) in beiden Richtungen zwischen Leopoldplatz und Seestr. Veranstaltung, Straße vollständig gesperrt (2. bis 4. September 2011)',
        type  => 'gesperrt',
-       source_id => 'IM_009543',
        data  => <<EOF,
 userdel	2::temp 6790,16018 6914,15908 6936,15888 7043,15793 7129,15717 7198,15656 7277,15586
 EOF
@@ -13917,11 +13939,10 @@ EOF
 userdel	q4::inwork 9098,42254 9043,42165 9032,42153
 EOF
      },
-     { from  => 1241414920, # 2009-05-04 07:28
-       until => 1241528400, # 2009-05-05 15:00
-       text  => 'Preußenallee (Charlottenburg) in beiden Richtungen zwischen Marathonallee und Badenallee Veranstaltung, Straße vollständig gesperrt (bis 15 Uhr)',
+     { from  => 1306533600, #1241414920, # 2009-05-04 07:28
+       until => 1306699200, #1241528400, # 2009-05-05 15:00
+       text  => 'Preußenallee (Charlottenburg) in beiden Richtungen zwischen Marathonallee und Badenallee Veranstaltung, Straße vollständig gesperrt (28. und 29. Mai 2011)',
        type  => 'gesperrt',
-       source_id => 'IM_012511',
        data  => <<EOF,
 userdel	2::inwork 596,11951 585,11830 572,11698 563,11601
 EOF
@@ -14150,13 +14171,13 @@ EOF
 userdel	q4::inwork -54665,72030 -54116,72465
 EOF
      },
-     { from  => 1242851109, # 2009-05-20 22:25
-       until => 1243256400, # 2009-05-25 15:00
-       text  => 'Oberfeldstr. (Marzahn) in beiden Richtungen zwischen Schulstr. und Nordpromenade Veranstaltung, gesperrt. Ebenso ist die Nordpromenade gesperrt. (bis 25.05.09, 15 Uhr)',
+     { from  => 1306879200, # 1242851109, # 2009-05-20 22:25
+       until => 1307311200, # 1243256400, # 2009-05-25 15:00
+       text  => 'Oberfeldstr. (Marzahn) in beiden Richtungen zwischen Schulstr. und Nordpromenade Veranstaltung, gesperrt. Ebenso ist die Nordpromenade gesperrt. (2. bis 5. Juni 2011)',
        type  => 'gesperrt',
-       source_id => 'IM_012746',
        data  => <<EOF,
 userdel	2::temp 20599,11938 20610,12050
+userdel	2::temp 20610,12050 20715,12040
 EOF
      },
      { from  => 1242851164, # 2009-05-20 22:26
@@ -16230,11 +16251,10 @@ EOF
 userdel	2::temp 8417,12846 8309,12758 8306,12617
 EOF
      },
-     { from  => 1253965791, # 2009-09-26 13:49
-       until => 1254088799, # 2009-09-27 23:59
-       text  => 'Preußenallee (Charlottenburg) in beiden Richtungen zwischen Marathonallee und Heerstr. Veranstaltung (Herbstmarkt), Straße vollständig gesperrt (bis 27.09. 24 Uhr) ',
+     { from  => 1315346400, # 1253965791, # 2009-09-26 13:49
+       until => 1315605540, # 1254088799, # 2009-09-27 23:59
+       text  => 'Preußenallee (Charlottenburg) in beiden Richtungen zwischen Marathonallee und Heerstr. Veranstaltung (Herbstmarkt), Straße vollständig gesperrt (8. und 9. September 2011) ',
        type  => 'gesperrt',
-       source_id => 'IM_014260',
        data  => <<EOF,
 userdel	2::temp 585,11256 551,11462 563,11601 572,11698 585,11830 596,11951
 EOF
@@ -17344,11 +17364,10 @@ EOF
 userdel	2::inwork 39239,101950 39066,102017
 EOF
      },
-     { from  => 1270235753, # 2010-04-02 21:15
-       until => 1270504799, # 2010-04-05 23:59
-       text  => 'Müllerstr. (Wedding): Veranstaltung, gesperrt (bis vorauss. 05.04.2010 23:59) in beiden Richtungen zwischen Nazarthkirchstr. und Seestr. ',
+     { from  => 1305756000, # 1270235753, # 2010-04-02 21:15 # erster Termin im Jahr
+       until => 1306101600, # 1270504799, # 2010-04-05 23:59
+       text  => 'Müllerstr. (Wedding): Veranstaltung, gesperrt (20. bis 22. Mai 2011) in beiden Richtungen zwischen Nazarethkirchstr. und Seestr. ',
        type  => 'gesperrt',
-       source_id => 'IM_015451',
        data  => <<EOF,
 userdel	2::temp 6790,16018 6914,15908 6936,15888 7043,15793 7129,15717 7198,15656
 EOF
@@ -17780,9 +17799,9 @@ EOF
 userdel	2::inwork -50068,51237 -51018,51135
 EOF
      },
-     { from  => 1276812000, # 2010-06-18 00:00
-       until => 1276984799, # 2010-06-19 23:59
-       text  => 'CSD am 19.6.2010',
+     { from  => 1308866400, # 1276812000, # 2010-06-18 00:00
+       until => 1309039140, # 1276984799, # 2010-06-19 23:59
+       text  => 'CSD am 25.6.2011',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp 8731,12270 8610,12254 8538,12245 8546,12279 8570,12302
@@ -17901,11 +17920,10 @@ userdel	2::temp 8018,12131 7827,12105 7460,12054 7663,11946 7570,11855 7223,1189
 userdel	2::temp 7460,12054 6857,11992
 EOF
      },
-     { from  => 1277355600, # 2010-06-24 07:00
-       until => 1277675940, # 2010-06-27 23:59
-       text  => 'Bergmannstraße (Kreuzberg): Veranstaltung, Straße vollständig gesperrt (bis vorauss. 27.06.2010 23:59) in beiden Richtungen zwischen Mehringdamm und Zossener Str., 25.06.2010 07:00 Uhr bis 27.06.2010 23:59 Uhr ',
+     { from  => 1308780000, # 1277355600, # 2010-06-24 07:00
+       until => 1309125600, # 1277675940, # 2010-06-27 23:59
+       text  => 'Bergmannstraße (Kreuzberg): Veranstaltung, Straße vollständig gesperrt (24. bis 26. Juni 2011) in beiden Richtungen zwischen Mehringdamm und Zossener Str.',
        type  => 'handicap',
-       source_id => 'IM_015920',
        data  => <<EOF,
 userdel	q4::temp 9248,9350 9309,9347 9489,9309 9505,9306 9632,9280 9689,9266 9753,9252
 userdel auto	3 9487,9209 9505,9306 9524,9426
@@ -18228,13 +18246,12 @@ EOF
 	2::inwork 7725,8033 7793,8043 7834,8085 7859,8252 7893,8327 7942,8380 8078,8772
 EOF
      },
-     { from  => 1284091200, # 2010-09-10 06:00
-       until => 1284328740, # 2010-09-12 23:59
-       text  => 'Rheinstraße (Friedenau): Veranstaltung, Straße vollständig gesperrt (bis ca. 12.09.10, 24 Uhr) in beiden Richtungen zwischen Walther-Schreiber-Platz und Saarstraße ',
+     { from  => 1309471200, # 1284091200, # 2010-09-10 06:00 # zweiter Termin im Jahr!
+       until => 1309730400, # 1284328740, # 2010-09-12 23:59
+       text  => 'Rheinstraße (Friedenau): Veranstaltung, Straße vollständig gesperrt (2. und 3. Juli 2011) in beiden Richtungen zwischen Walther-Schreiber-Platz und Breslauer Platz',
        type  => 'gesperrt',
-       source_id => 'IM_016326',
        data  => <<EOF,
-userdel	2::temp 5370,6486 5424,6584 5533,6753 5654,6941
+userdel	2::temp 5370,6486 5424,6584 5533,6753 5654,6941 5817,7223
 EOF
      },
      { from  => 1284091200, # 2010-09-10 06:00
@@ -18255,11 +18272,10 @@ EOF
 userdel	q4::temp 10240,18193 10320,18197 10487,18270 10660,18345 10680,18380 10609,18384 10567,18366 10502,18338 10463,18321 10281,18241
 EOF
      },
-     { from  => 1284001200, # 2010-09-09 05:00
-       until => 1284332400, # 2010-09-13 01:00
-       text  => 'Turmstraße (Moabit): Veranstaltung, Straße vollständig gesperrt (bis 13.09.10, 1 Uhr morgens) in beiden Richtungen zwischen Stromstr. und Waldstr.',
+     { from  => 1315432800, # 1284001200, # 2010-09-09 05:00
+       until => 1315778400, # 1284332400, # 2010-09-13 01:00
+       text  => 'Turmstraße (Moabit): Veranstaltung, Straße vollständig gesperrt (9. bis 11. September 2011) in beiden Richtungen zwischen Stromstr. und Waldstr.',
        type  => 'gesperrt',
-       source_id => 'IM_016302',
        data  => <<EOF,
 userdel	2::temp 5368,13406 5560,13382 5705,13359 5857,13342 5956,13330 6011,13330 6112,13327 6228,13324
 EOF
@@ -18941,6 +18957,30 @@ EOF
        source_id => '117200018',
        data  => <<EOF,
 userdel	2::temp 9990,-8867 10115,-8276
+EOF
+     },
+     { from  => 1315519200, # 2011-09-09 00:00
+       until => 1315778399, # 2011-09-11 23:59
+       text  => 'Seifenkistenrennen auf dem Kaiserdamm zwischen Theodor-Heuss-Platz und Königin-Elisabeth-Straße, 10./11.09.2011',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::temp 2109,11441 1960,11426 1834,11408 1625,11380 1574,11379
+EOF
+     },
+     { from  => 1312581600, # 1186214400, # 2007-08-04 10:00 zweiter Termin im Sommer
+       until => 1312754400, # 1186344000, # 2007-08-05 22:00
+       text  => 'Open Air Gallery am 7. August 2011 auf der Oberbaumbrücke ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::temp 13178,10623 13206,10651 13305,10789 13332,10832
+EOF
+     },
+     { from  => 1303941600, # 2011-04-28 00:00
+       until => 1306101599, # 2011-05-22 23:59
+       text  => 'Neuköllner Maientage im Volkspark Hasenheide, Behinderungen möglich, 29.04. - 22.05.2011 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::temp 11177,8985 11250,8585 11282,8428 11271,8325
 EOF
      },
     );
