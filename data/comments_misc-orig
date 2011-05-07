@@ -125,7 +125,7 @@ Am Petersberg: Privatstraße	CS 990,5581 825,5420
 (Weg in Kolonie Bodenreform): entlang des Teltowkanals	CS 20939,2413 20810,2398
 (Weg in Kolonie Bodenreform): entlang des Teltowkanals	CS 20810,2398 20510,2321 20490,2276 20234,2254 20128,2271
 #: note: (URL existiert nicht mehr) http://www.stadtentwicklung.berlin.de/verkehr/radverkehr/infrastruktur/de/seperater_weg01.shtml
-(Alt-Lankwitz - Kamenzer Damm): Rampe für Radfahrer	CS 8017,3355 8039,3242
+(Alt-Lankwitz - Kamenzer Damm): Rampe für Radfahrer	CS 8026,3298 8039,3242
 als Puschkinallee 6c, 6d ausgeschildert	CP2; 13995,9834 14076,10011
 Durch Toreinfahrt (immer offen)	CP2; 14043,10928 14107,10911
 als Sackgasse ausgeschildert	CP2; 14672,10760 14564,10792
@@ -145,8 +145,9 @@ Dreipfuhlpark: Freigegeben für Radfahrer	CS 1536,3780 1523,3904 1520,4006 1524,4
 #: by: Kay-Uwe Ludwig [AM]
 Seefelder Str.: Schranken, für Radler gut passierbar	CS 17341,16136 17344,16081
 #: by: Daniel Weber [AM] vvv
-(Malteser Str. - Hanielweg): Geschützte Grünanlage, Radfahren verboten	CS 7451,1818 7534,1818 7562,1796
-(Parkweg Trippsteinstr. - Sondershauser Str.): Geschützte Grünanlage, Radfahren verboten	CS 6762,1226 6700,1184 6667,1189 6596,1198 6528,1207 6501,1207 6481,1210 6406,1218
+(Malteserstr. - Hanielweg): Geschützte Grünanlage, Radfahren verboten	CS 7451,1818 7534,1818 7562,1796
+(Parkweg Trippsteinstr. - Sondershauser Str.): Geschützte Grünanlage, Radfahren verboten	CS 6762,1226 6702,1197 6700,1184
+(Parkweg Trippsteinstr. - Sondershauser Str.): Geschützte Grünanlage, Radfahren verboten	CS 6667,1189 6596,1198 6528,1207 6501,1207 6481,1210 6406,1218
 (Parkweg Blankenhainer Str. - Hildburghauser Str.): Geschützte Grünanlage, Radfahren verboten	CS 6578,1595 6528,1573 6517,1479 6515,1418 6479,1312 6481,1210 6487,1169 6455,1101 6467,1028
 (Lilienthalpark): Geschützte Grünanlage, Radfahren verboten	CS 5514,580 5571,614 5671,637 5615,735 5576,800 5584,808 5571,864 5540,919
 (Lilienthalpark): Geschützte Grünanlage, Radfahren verboten	CS 5578,936 5540,919 5358,822
@@ -688,10 +689,10 @@ Bus 284	busroute_N 5204,1057 5342,845 5358,822 5514,580 5584,475 5486,461 5448,4
 Bus 186	busroute_N 4542,1188 4605,1089 4768,840 4875,677 4948,562
 Bus 186, Bus 284	busroute_N 4948,562 4748,453 4505,465 4279,459
 Bus M85	busroute_N 4136,505 4122,421 4068,406 3912,362 3898,466 3834,502 3647,739
-Bus M77, Bus M82	busroute_N 6977,870 6941,690 6937,671 6959,509 7007,333 7014,203 6998,69
+Bus M77, Bus M82	busroute_N 6977,870 6941,690 6937,671 6959,509 7007,333 7014,203 6982,88
 Bus 283	busroute_N 7234,2548 7324,2559 7517,2574 7578,2536 7663,2494 7702,2477 7782,2442 7899,2391 7923,2319 7987,2337 7983,2348 7983,2348 7899,2391
-Bus 187	busroute_N 7859,3181 7865,3344 7789,3362 7753,3371 7704,3383 7587,3411 7501,3432 7183,3570 7109,3635 6996,3761
-Bus 187	busroute_N 7753,3371 7734,3290 7719,3219 7722,3142
+Bus 187	busroute_N 7852,3183 7865,3344 7789,3362 7753,3371 7704,3383 7587,3411 7501,3432 7483,3440 7183,3570 7109,3635 6996,3761
+Bus 187	busroute_N 7753,3371 7734,3290 7719,3219 7720,3148
 Bus M77, ...	busroute_N 8495,2080 8565,2003 8607,1898
 Bus 179	busroute_N 9106,3703 9131,3571
 Bus M77	busroute_N 9731,3889 9751,3769
@@ -960,3 +961,4 @@ Schneewitchensteig: nichts ausgeschildert	CS -4771,8466 -4671,8458
 Weiter Blick: Anlieger frei	CS -4680,8340 -5093,8398 -5266,8424
 ausgeschildert als Darßer Str.	CP2; 16277,17830 16269,17759
 Straße geht rechts von Siemes Schuhcenter ab	CP2; 12908,17807 12918,17736
+Rehauer Pfad: Anlieger frei	CS 7587,3411 7626,3554

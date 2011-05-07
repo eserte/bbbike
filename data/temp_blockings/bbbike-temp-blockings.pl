@@ -3699,7 +3699,7 @@ EOF
        text  => 'Säntisstraße zwischen Daimlerstraße und Albanstraße Störung am Bahnübergang, Straße gesperrt ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 8957,852 9024,906
+userdel	2 8971,864 9024,906
 userdel	2 9241,1073 9165,1014 9129,986 9024,906
 EOF
      },

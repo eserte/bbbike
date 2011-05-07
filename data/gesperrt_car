@@ -1184,3 +1184,13 @@ Angerburger Allee	1 -1524,11108 -1608,11133 -1885,11392 -1931,11437 -1986,11487
 Sensburger Allee	1 200,11428 326,11391 456,11233
 Kyllburger - Darßer Str	3 16670,17454 16779,17521 16751,17560
 Am Steinberg	1 13183,17580 12998,17480
+Schäßburger Weg: Poller	3 7090,-225 7127,-248 7225,-312
+Schäßburger Weg: Poller	3 7225,-312 7127,-248 7090,-225
+Fuchsmühler Weg: Durchfahrt gesperrt	2 7277,-77 7231,25
+Poller	3 7181,-15 7231,25 7184,150
+Poller	3 7181,-15 7231,25 7277,-77
+Poller	3 7184,150 7231,25 7181,-15
+Poller	3 7277,-77 7231,25 7181,-15
+Mittelstreifen	3nocross::ignrte 9338,4129 9365,4006 9410,3793
+Mariendorfer Damm -> Richterstr.: Mittelstreifen	3::igndisp 9410,3793 9365,4006 9232,3980
+Richterstr. -> Mariendorfer Damm: Mittelstreifen	3::igndisp 9232,3980 9365,4006 9338,4129

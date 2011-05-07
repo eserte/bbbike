@@ -737,7 +737,22 @@ Zur Ringallee/Ringallee: enge Straﬂe	q0 14214,17754 14172,17787 14177,17877 1413
 Straﬂe 45 (Heinersdorf): enger Weg	q2 12609,17405 12671,17528 12829,17626 12924,17676
 Straﬂe 46 (Heinersdorf): enger Weg	q2 12587,17603 12505,17469 12500,17460
 Dresdener Str.: Fuﬂg‰nger, Bordsteine	q3 11034,11249 11000,11327
-Eingang Leinestr.: Bordsteine	q3 11547,7432 11553,7437
+Eingang Leinestr.: Bordstein	q3 11547,7432 11553,7437
+Eingang Okerstr.: Bordstein	q2 11528,7528 11536,7533
+Eingang Allerstr.: Bordstein	q3 11507,7647 11515,7654
+Tullaweg - An der Heilandsweide: Fuﬂg‰nger	q1 8464,990 8492,1050
+(Kirchstr. - An der Dorfkirche): getrennter Geh- und Radweg	q1 8263,1061 8259,1028 8202,1024 8160,932 8173,839
+(Diedersdorfer Weg - Marienfelder Allee, Kolonie Amstelveen): Fuﬂg‰nger	q1 7501,83 7520,76 7540,18 7559,14 7659,-112 7668,-138 7722,-180
+(Diedersdorfer Weg - Marienfelder Allee, Kolonie Amstelveen): enger Weg	q3 7722,-180 7717,-285 7776,-283
+Sch‰ﬂburger Weg: enge Straﬂe	q1 6963,-82 6983,-123 7040,-188 7090,-225 7127,-248
+(Lichterfelder Ring - Mauerweg): teilweise enger Weg	q2 6582,600 6598,536 6600,150
+(Malteserstr. - Kamenzer Damm): Fuﬂg‰nger, Radfahren nicht erlaubt	q3 7437,1859 7592,1892 7612,1918 7646,2019 7645,2110
+(Malteserstr. - Kamenzer Damm): Fuﬂg‰nger, Radfahren (teilweise) erlaubt	q1 7645,2110 7636,2161 7634,2267 7665,2357 7702,2477 7779,2722 7783,2730 7798,2765 7807,2961 7837,2957
+(Malteserstr. - Kamenzer Damm): Fuﬂg‰nger, Radfahren nicht erlaubt	q3 7837,2957 7852,3183
+(Halbauer Weg - Parkweg): Fuﬂg‰nger, Radfahren erlaubt	q1 7758,2973 7795,2963 7807,2961
+(Hanielweg - Parkweg): Spielplatz, Fuﬂg‰nger, teilweise eng	q3 7562,1796 7565,1806 7592,1892
+(Kamenzer Damm - Wunsiedeler Weg): Fuﬂg‰nger	q1 7776,3163 7769,3264 7789,3362 7800,3435 7788,3551 7737,3598 7694,3623 7555,3632
+Rehauer Pfad: enge Straﬂe	q1 7587,3411 7626,3554
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q3 11805,19071 11895,19183 11927,19308
 Ebersstr.: Sch¸ler	q2 7245,8583 7292,8631
 Straﬂe 103 (Niederschˆnhausen): enge Straﬂe	q1 10914,20065 11051,19789
@@ -1086,17 +1101,18 @@ Einhornstr.: enge Straﬂe	q1 14708,7325 14792,7192
 Steinbockstr.: enge Straﬂe	q1 14775,7385 14840,7307 14848,7288 14878,7211
 Steinbockstr.: enge Straﬂe	q1 14840,7307 14861,7316 14868,7297 14848,7288
 Seefelder Str. (Fuﬂweg): Fuﬂg‰nger, schmal	q2 17274,16177 17371,16194 17383,16197
-(Malteser Str. - Hanielweg): Fuﬂg‰nger	q1 7451,1818 7534,1818 7562,1796
+(Malteserstr. - Hanielweg): Fuﬂg‰nger	q1 7451,1818 7534,1818 7562,1796
 (An der Kol. Kˆnigsgraben, nˆrdl. Parkweg): Fuﬂg‰nger	q1 7189,1942 7390,2021
-(An der Kol. Kˆnigsgraben, s¸dl. Parkweg): Fuﬂg‰nger	q1 7425,1843 7275,1843 7226,1842 7119,1829
+(An der Kol. Kˆnigsgraben, s¸dl. Parkweg): Fuﬂg‰nger	q1 7415,1846 7275,1843 7226,1842 7119,1829
 (Kol. Kˆnigsgraben, Privatstr.): Fuﬂg‰nger	q1 7409,1953 7210,1888 7189,1942
 (Kol. Kˆnigsgraben, Nord-S¸d-Verbindung): Fuﬂg‰nger	q1 7226,1842 7210,1888
 (Verbindung zum Orlam¸nder Weg): Fuﬂg‰nger	q1 7274,1810 7275,1843
 (Orlam¸nder Weg - Tambacher Str.): Fuﬂg‰nger	q1 7172,1630 7144,1591
-(Parkweg Trippsteinstr. - Sondershauser Str.): Fuﬂg‰nger	q1 6762,1226 6700,1184 6667,1189 6596,1198 6528,1207 6501,1207 6481,1210 6406,1218
+(Parkweg Trippsteinstr. - Sondershauser Str.): Fuﬂg‰nger, Bordsteine	q1 6762,1226 6702,1197 6700,1184
+(Parkweg Trippsteinstr. - Sondershauser Str.): Fuﬂg‰nger	q1 6667,1189 6596,1198 6528,1207 6501,1207 6481,1210 6406,1218
 (Parkweg Blankenhainer Str. - Hildburghauser Str.): Fuﬂg‰nger	q1 6578,1595 6528,1573 6517,1479 6515,1418 6479,1312 6481,1210 6487,1169 6455,1101 6467,1028
 (Gr‰fentaler Str. - Georgenstr.): Fuﬂg‰nger	q1 6189,1423 6132,1395
-Altenburger Str.: Fuﬂg‰nger	q2 6650,1059 6631,968
+Altenburger Str.: Fuﬂg‰nger	q2 6651,1063 6631,968
 (Lilienthalpark): Fuﬂg‰nger	q2 5514,580 5571,614 5671,637 5615,735 5576,800 5584,808 5571,864 5540,919
 (Lilienthalpark): Fuﬂg‰nger	q2 5578,936 5540,919 5358,822
 (Lilienthalpark): Fuﬂg‰nger	q2 5533,663 5485,751 5499,771 5539,773 5590,719 5593,679 5575,660 5533,663
@@ -1333,7 +1349,7 @@ Erna-Sack-Str.: enge Straﬂe	q1 -7486,13321 -7496,13214
 (Buchbinderweg - Zittauer Str.): einige Fuﬂg‰nger	q1 16485,1162 16435,1063 16419,1048 16387,976 16342,959
 (Hibiskusweg - Romain-Rolland-Str.): gemeinsamer Rad/Fuﬂweg	q1 13245,17805 13229,17784 13245,17737
 Treutelstr.: enge Straﬂe	q1 5422,19725 5345,19734 5318,19723
-Jenbacher Weg: enge Straﬂe	q1 6402,578 6411,533 6180,376 5987,256 5800,138 5703,74 5671,52
+Jenbacher Weg: enge Straﬂe	q1 6398,590 6411,533 6180,376 5987,256 5800,138 5703,74 5671,52
 (Charlottenstr. - Allee der Kosmonauten/Fuﬂg‰ngerampel): Gehweg, f¸r Radfahrer freigegeben	q3 20505,14350 20474,14442
 (Charlottenstr. - Annenstr.): als Gehweg ausgeschildert, f¸r Radfahrer nicht freigegeben	q3 20647,14341 20631,14221
 Rudi-Dutschke-Weg: viele Fuﬂg‰nger	q2 2627,5095 2913,5294
@@ -1522,6 +1538,7 @@ Arabisweg: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 17721,2
 Wilhelm-von-Siemens-Str.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 9072,2589 9437,2649
 Saaleckplatz: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 5162,1110 5178,1123
 Am Flugplatz Gatow: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; -8582,6987 -8606,6978
+Hossauerweg: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 9056,1288 9022,1220 9083,1017 9129,986
 Josef-Nawrocki-Str.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 25802,4823 25819,4688 25720,4719 25692,4727 25565,4764 25552,4829
 Askanischer Platz: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q2::igndisp; 8882,10905 8938,10872 8983,10846 9022,10857
 Helbigstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 20109,4087 20339,3779 20362,3750

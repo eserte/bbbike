@@ -864,7 +864,27 @@ Straße 46 (Heinersdorf): enger Weg	q2 12587,17603 12505,17469 12500,17460
 #: XXX_prog: Bordsteine (2x), wobei mit etwas Glück abgeflachte Bordsteine frei sind...
 Dresdener Str.: Fußgänger, Bordsteine	q3 11034,11249 11000,11327
 #: XXX_prog: Bordstein, relativ hoch
-Eingang Leinestr.: Bordsteine	q3 11547,7432 11553,7437
+Eingang Leinestr.: Bordstein	q3 11547,7432 11553,7437
+#: XXX_prog: Bordstein, relativ niedrig
+Eingang Okerstr.: Bordstein	q2- 11528,7528 11536,7533
+#: XXX_prog: Bordstein
+Eingang Allerstr.: Bordstein	q3 11507,7647 11515,7654
+Tullaweg - An der Heilandsweide: Fußgänger	q1 8464,990 8492,1050
+(Kirchstr. - An der Dorfkirche): getrennter Geh- und Radweg	q1 8263,1061 8259,1028 8202,1024 8160,932 8173,839
+#: note: nicht klar, ob das Durchfahren verboten ist, auf der östlichen Seite kein Verbotsschild gesehen
+(Diedersdorfer Weg - Marienfelder Allee, Kolonie Amstelveen): Fußgänger	q1 7501,83 7520,76 7540,18 7559,14 7659,-112 7668,-138 7722,-180
+(Diedersdorfer Weg - Marienfelder Allee, Kolonie Amstelveen): enger Weg	q3 7722,-180 7717,-285 7776,-283
+Schäßburger Weg: enge Straße	q1+ 6963,-82 6983,-123 7040,-188 7090,-225 7127,-248
+(Lichterfelder Ring - Mauerweg): teilweise enger Weg	q2+ 6582,600 6598,536 6600,150
+(Malteserstr. - Kamenzer Damm): Fußgänger, Radfahren nicht erlaubt	q3 7437,1859 7592,1892 7612,1918 7646,2019 7645,2110
+#: note: explizit erlaubt nördl. Wedellstr.-Keffenbrinkweg
+(Malteserstr. - Kamenzer Damm): Fußgänger, Radfahren (teilweise) erlaubt	q1- 7645,2110 7636,2161 7634,2267 7665,2357 7702,2477 7779,2722 7783,2730 7798,2765 7807,2961 7837,2957
+(Malteserstr. - Kamenzer Damm): Fußgänger, Radfahren nicht erlaubt	q3 7837,2957 7852,3183
+(Halbauer Weg - Parkweg): Fußgänger, Radfahren erlaubt	q1- 7758,2973 7795,2963 7807,2961
+(Hanielweg - Parkweg): Spielplatz, Fußgänger, teilweise eng	q3 7562,1796 7565,1806 7592,1892
+#: note: kein explizites Radfahrverbot
+(Kamenzer Damm - Wunsiedeler Weg): Fußgänger	q1 7776,3163 7769,3264 7789,3362 7800,3435 7788,3551 7737,3598 7694,3623 7555,3632
+Rehauer Pfad: enge Straße	q1 7587,3411 7626,3554
 ######################### User Contributions #################################
 #: by: Michael Kiekbusch
 #: corrected_by: srt/policy (q4 -> q3-)
@@ -1365,17 +1385,19 @@ Steinbockstr.: enge Straße	q1 14840,7307 14861,7316 14868,7297 14848,7288
 #: by: Kay-Uwe Ludwig [AM]
 Seefelder Str. (Fußweg): Fußgänger, schmal	q2 17274,16177 17371,16194 17383,16197
 #: by: Daniel Weber [AM] vvv
-(Malteser Str. - Hanielweg): Fußgänger	q1 7451,1818 7534,1818 7562,1796
+(Malteserstr. - Hanielweg): Fußgänger	q1 7451,1818 7534,1818 7562,1796
 (An der Kol. Königsgraben, nördl. Parkweg): Fußgänger	q1 7189,1942 7390,2021
-(An der Kol. Königsgraben, südl. Parkweg): Fußgänger	q1 7425,1843 7275,1843 7226,1842 7119,1829
+(An der Kol. Königsgraben, südl. Parkweg): Fußgänger	q1 7415,1846 7275,1843 7226,1842 7119,1829
 (Kol. Königsgraben, Privatstr.): Fußgänger	q1 7409,1953 7210,1888 7189,1942
 (Kol. Königsgraben, Nord-Süd-Verbindung): Fußgänger	q1 7226,1842 7210,1888
 (Verbindung zum Orlamünder Weg): Fußgänger	q1 7274,1810 7275,1843
 (Orlamünder Weg - Tambacher Str.): Fußgänger	q1 7172,1630 7144,1591
-(Parkweg Trippsteinstr. - Sondershauser Str.): Fußgänger	q1 6762,1226 6700,1184 6667,1189 6596,1198 6528,1207 6501,1207 6481,1210 6406,1218
+#: XXX_prog: Bordsteine (2x)
+(Parkweg Trippsteinstr. - Sondershauser Str.): Fußgänger, Bordsteine	q1- 6762,1226 6702,1197 6700,1184
+(Parkweg Trippsteinstr. - Sondershauser Str.): Fußgänger	q1 6667,1189 6596,1198 6528,1207 6501,1207 6481,1210 6406,1218
 (Parkweg Blankenhainer Str. - Hildburghauser Str.): Fußgänger	q1 6578,1595 6528,1573 6517,1479 6515,1418 6479,1312 6481,1210 6487,1169 6455,1101 6467,1028
 (Gräfentaler Str. - Georgenstr.): Fußgänger	q1 6189,1423 6132,1395
-Altenburger Str.: Fußgänger	q2 6650,1059 6631,968
+Altenburger Str.: Fußgänger	q2 6651,1063 6631,968
 (Lilienthalpark): Fußgänger	q2 5514,580 5571,614 5671,637 5615,735 5576,800 5584,808 5571,864 5540,919
 (Lilienthalpark): Fußgänger	q2 5578,936 5540,919 5358,822
 (Lilienthalpark): Fußgänger	q2 5533,663 5485,751 5499,771 5539,773 5590,719 5593,679 5575,660 5533,663
@@ -1862,7 +1884,7 @@ Erna-Sack-Str.: enge Straße	q1 -7486,13321 -7496,13214
 #: by: Beate Leibe:
 Treutelstr.: enge Straße	q1 5422,19725 5345,19734 5318,19723
 #: by: Franz Puder:
-Jenbacher Weg: enge Straße	q1 6402,578 6411,533 6180,376 5987,256 5800,138 5703,74 5671,52
+Jenbacher Weg: enge Straße	q1 6398,590 6411,533 6180,376 5987,256 5800,138 5703,74 5671,52
 #: by: M.Laufmann: vvv
 #: corrected_by: srt/policy (q4 -> q3)
 (Charlottenstr. - Allee der Kosmonauten/Fußgängerampel): Gehweg, für Radfahrer freigegeben	q3 20505,14350 20474,14442
