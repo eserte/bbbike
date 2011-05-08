@@ -297,9 +297,13 @@ sub get_html {
     var startIcon = new GIcon(G_DEFAULT_ICON, "$bbbikeroot/images/flag2_bl_centered.png");
     startIcon.iconAnchor = new GPoint(16,16);
     startIcon.iconSize = new GSize(32,32);
+    startIcon.shadow = "$bbbikeroot/images/flag_shadow.png";
+    startIcon.shadowSize = new GSize(45,24);
     var goalIcon = new GIcon(G_DEFAULT_ICON, "$bbbikeroot/images/flag_ziel_centered.png");
     goalIcon.iconAnchor = new GPoint(16,16);
     goalIcon.iconSize = new GSize(32,32);
+    goalIcon.shadow = "$bbbikeroot/images/flag_shadow.png";
+    goalIcon.shadowSize = new GSize(45,24);
     var currentPointMarker = null;
     var currentTempBlockingMarkers = [];
 
