@@ -3112,26 +3112,8 @@ userdel	q4::inwork; -12545,-698 -12262,-612
          'type' => 'handicap'
        },
        undef,
-       {
-         'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20110421.1205.341677.html',
-         'until' => 1304870400,
-         'text' => 'Bauvorhaben Umbau Wendenschloßstraße von Müggelheimer Straße bis Salvador-Allende-Straße, Vollsperrung vom 05.05.11 6.00 Uhr bis 08.05.11 18.00 Uhr ',
-         'from' => 1304481600,
-         'id' => 2203,
-         'data' => 'userdel	q4::inwork 22740,4415 22791,4457 22832,4491 22862,4511 22893,4532 22959,4576 23055,4640 23363,4846 23451,4877
-',
-         'type' => 'handicap'
-       },
-       {
-         'source_id' => '117200018',
-         'until' => 1304798400,
-         'text' => 'Blankenfelde-Mahlow: L792: Traditionelles Dorfangerfest - Fest der Vereine OL Blankenfelde Umleitung: innerorts, 07.05.2011 12:00 Uhr bis 07.05.2011 22:00 Uhr ',
-         'from' => 1304676000,
-         'id' => 2204,
-         'data' => 'userdel	2::temp 9990,-8867 10115,-8276
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        {
          'until' => 1315778399,
          'text' => 'Seifenkistenrennen auf dem Kaiserdamm zwischen Theodor-Heuss-Platz und Königin-Elisabeth-Straße, 10./11.09.2011',
@@ -3156,6 +3138,26 @@ userdel	q4::inwork; -12545,-698 -12262,-612
          'from' => 1303941600,
          'id' => 2207,
          'data' => 'userdel	q4::temp 11177,8985 11250,8585 11282,8428 11271,8325
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'LS/O-SG33-E/11/044',
+         'until' => 1317506400,
+         'text' => 'Flieth-Stegelitz: L24: Brücke über den Stierngraben bei Kaakstedt, ab 09.05.11 Vollsperrung, bis 01.10.2011',
+         'from' => 1304805600,
+         'id' => 2208,
+         'data' => 'userdel	2::inwork 35887,85385 34920,85944
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'LS/O-SG33-F/11/070',
+         'until' => 1317420000,
+         'text' => 'Bad Freienwalde (Oder): B167: Straßenbau- und Kanalarbeiten Ortsdurchfahrt Bad Freienwalde, Eberswalder Straße Beginn Vollsperrung geplant, 09.05.2011 bis 30.09.2011 ',
+         'from' => 1304796386,
+         'id' => 2209,
+         'data' => 'userdel	q4::inwork 52119,43318 50799,43130
 ',
          'type' => 'handicap'
        }

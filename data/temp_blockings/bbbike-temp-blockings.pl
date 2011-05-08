@@ -18983,4 +18983,22 @@ EOF
 userdel	q4::temp 11177,8985 11250,8585 11282,8428 11271,8325
 EOF
      },
+     { from  => 1304805600, # 2011-05-08 00:00
+       until => 1317506400, # 2011-10-02 00:00
+       text  => 'Flieth-Stegelitz: L24: Brücke über den Stierngraben bei Kaakstedt, ab 09.05.11 Vollsperrung, bis 01.10.2011',
+       type  => 'gesperrt',
+       source_id => 'LS/O-SG33-E/11/044',
+       data  => <<EOF,
+userdel	2::inwork 35887,85385 34920,85944
+EOF
+     },
+     { from  => 1304796386, # 2011-05-07 21:26
+       until => 1317420000, # 2011-10-01 00:00
+       text  => 'Bad Freienwalde (Oder): B167: Straßenbau- und Kanalarbeiten Ortsdurchfahrt Bad Freienwalde, Eberswalder Straße Beginn Vollsperrung geplant, 09.05.2011 bis 30.09.2011 ',
+       type  => 'handicap',
+       source_id => 'LS/O-SG33-F/11/070',
+       data  => <<EOF,
+userdel	q4::inwork 52119,43318 50799,43130
+EOF
+     },
     );

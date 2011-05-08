@@ -677,9 +677,6 @@ Gütersloher Weg: Beton	? -5527,15285 -5481,15526
 Oskar-Pollner-Str. (Teltow): Asphalt, Q0, RW6	? 2296,-1876 2240,-2113 2197,-2279 2163,-2396 2145,-2494 2091,-2668
 #: by: anonymous:
 Eichenstr. (Strausberg): fester Sandweg, Q2, einige Fußgänger, q1	? 43552,21795 43746,21861 43927,21931 44050,21985
-#: by: anonymous
-#: confirmed_by: Michael Meixner (guter Beton, q1 ohne weitere Angabe)
-Hochgallweg: guter Beton, Q0-	? 9891,3203 9771,3229 9683,3185
 #: by: http://www.berlin.de/ba-spandau/presse/archiv/20100331.1355.160609.html (ca. ab Mai 2010)
 Löwenmaulsteig: asphaltiert, Q0	? -7629,14878 -7528,14863
 #: by: anonymous:
@@ -1797,17 +1794,17 @@ Floyd-L.-Parks-Weg: Qualität?	? 2336,1111 2408,1144 2504,1186
 Bäckerstr. - Buchbinderweg: Durchfahrt für Radfahrer möglich? Qualität? Nachts beleuchtet?	? 16657,1124 16567,1142 16485,1162
 Straße 482: Qualität?	? 11120,1384 11146,1413 11155,1456
 Straße 96 (Buckow): Qualität?	? 11190,1622 11170,1517
+#: XXX laut Kerstin Kellner: guter Asphalt, Privatstraße (deswegen q3???), Drängelgitter an "In den Gärten", keine Erwähnung einer Einbahnstraße
 Glimmerweg: Qualität? Einbahnstraße, auch für Radfahrer gültig?	? 11005,1541 11170,1517 11349,1483 11436,1513 11538,1550 11713,1622
 Basaltweg: Qualität?	? 11042,1352 10999,1474 11005,1541 11025,1657
 Graphitweg: Qualität?	? 10950,1315 10914,1413 10911,1483 10943,1661
 Bimssteinweg: Qualität?	? 10907,2207 10985,2173
 Almweg: Qualität?	? 10526,2694 10542,2757
 Splügenweg: Qualität?	? 10402,2721 10368,2575
+#: XXX Martin Lillich meint Q2, aber ohne weitere Beschreibung
 Nebelhornweg: Qualität?	? 10504,3198 10540,3513
 Schwarzkogelweg: Qualität?	? 10121,3040 10167,3257
-Heukuppenweg: Qualität?	? 9995,3065 10039,3281
 Röthspitzenweg: Qualität?	? 9867,3092 9891,3203 9911,3310
-Hoeftweg: Qualität?	? 9675,3150 9683,3185 9655,3270 9701,3357
 Almazeile: Qualität?	? -1660,18114 -1616,18112 -1547,18110 -1478,18107
 Tegelorter Ufer: Qualität?	? -1346,17937 -1218,17874
 Ottilienweg: Qualität?	? -1478,18048 -1220,18191
@@ -4127,10 +4124,6 @@ Budapester Weg: Qualität? Nachts beleuchtet? Wo liegt der Weg genau? Ausschilder
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/37re.pdf/file
 Elisabeth-Schwarzhaupt-Platz: liegt er an der Kreuzung Invalidenstr/Gartenstr?	? 9383,13978
 Wartenberger Str.: abknickende Vorfahrt?	? 17400,17790 17356,17856 17557,17999
-# 
-#: by: http://www.berlin.de/ba-steglitz-zehlendorf/presse/archiv/20101112.1040.318520.html
-#: XXX aber hier ist er nicht, hier ist der Jürgen-Fuchs-Platz...
-Platz M: Wo genau befindet sich der "Platz M"? Ist der Platz ausgeschildert?	? 3366,5654
 Fahrenheitstr. - Celsiusstr.: Existiert eine Durchfahrt für Radfahrer? Qualität?	? 4510,669 4436,621
 Kummerower Ring - Feldberger Ring: existiert eine Durchfahrt für Radfahrer? Qualität?	? 22615,13734 22672,13751
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/47re.pdf/file
@@ -4382,5 +4375,9 @@ Klein Bünzow - B109: Qualität?	? 22283,169408 23239,169494
 Idunastr.: ist der westliche Abschnitt eine Einbahnstraße?	? 12190,19009 12522,18813
 # 
 #: XXX Eintrag von Marco Schott: Asphalt, Q0, enge Straße, q1, Wohngebiet, kein Durchgangsverkehr, offen ab Juli 2011
+#: XXX coords in Berlin.coords.data ggfs. anpassen
+#: XXX gibt es auch wieder eine Maria-Matray-Str.?
+#: XXX außerdem: Franz-Stimming-Weg (coords fehlen in Berlin.coords.data)
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/18re.pdf/file (Maria-Matray-Str.)
 #: next_check: 2011-06-30
 Frieda-Rosenthal-Str.: wo genau liegt die Straße?	? 19336,7987 19339,7898

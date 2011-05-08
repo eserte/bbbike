@@ -1477,7 +1477,7 @@ Treseburger Ufer: wassergebundene Decke	Q1 12301,5783 12699,5909
 Delfter Ufer: überwiegend guter Asphalt, einige Stellen mit Baumwurzeln	Q0 13532,5987 13646,6019 13766,6019 13971,5978 14136,5831 14241,5674 14242,5636 14331,5460 14350,5411
 (Delfter Ufer - Späthstr., Rampe): grobes Verbundsteinpflaster	Q2 14350,5411 14236,5393
 (Delfter Ufer - Späthstr., Rampe): grobes Verbundsteinpflaster	Q2 14331,5460 14236,5393
-(Späthstr. - Weg an der Teltowkanalautobahn, Rampe): gutes Verbundsteinpflaster	Q0 14392,5453 14308,5627
+(Späthstr. - Weg an der Teltowkanalautobahn, Rampe): gutes Verbundsteinpflaster	Q0 14392,5453 14331,5613 14308,5627
 (Am Teltowkanal): Asphalt, mit einigen mäßigen Stellen	Q0 14437,5080 14532,5015 14766,4783 15358,4328
 (Am Teltowkanal): fester Sandweg	Q1 15358,4328 15571,4168 15594,4152 15659,4119 15786,4019 15892,3932
 (Am Teltowkanal): Asphalt	Q0 15892,3932 16503,3464 16674,3331 16670,3325 16641,3285 16550,3155
@@ -1584,7 +1584,7 @@ Altvaterstr.: schlechtes Kopfsteinpflaster	Q3 -2295,3523 -2446,3462 -2503,3447 -
 Altvaterstr.: Asphalt	Q0 -2920,3246 -3032,3166 -3117,3107
 Altvaterstr.: Beton	Q0 -3223,3034 -3225,2902
 (Am Britzer Verbindungskanal): feiner Schotter, OK	Q1 15358,6022 15166,6019
-(Am Britzer Verbindungskanal): Asphalt	Q0 15143,5936 15099,5978 14342,5990 14298,6009 14234,6010 14178,5980 14164,5936
+(Am Britzer Verbindungskanal): Asphalt	Q0 15143,5936 15119,5978 14342,5990 14298,6009 14234,6010 14178,5980 14164,5936
 Gerosteig: Asphalt	Q0 18990,584 19086,562 19184,540 19281,518 19377,496 19480,471
 Pätzer Str.: schlechtes Kopfsteinpflaster	Q3 12885,5205 12963,5199 13039,5122
 Haewererweg: Verbundsteinpflaster	Q1 12125,1282 12097,1243
@@ -3036,10 +3036,10 @@ Hortensienplatz: Gehwegplatten	Q0 4156,4784 4121,4841 4116,4850
 (Unterführung S-Bhf. Rummelsburg): Beton, Gehwegplatten	Q1 15383,10656 15419,10706 15433,10765
 Werner-Voß-Damm: Asphalt mit Schäden	Q1 8263,7611 8378,7623 8465,7699 8512,7757 8553,7795 8642,7876
 (Am Heidekampgraben - Heidekampweg): alter Beton	Q1 15582,6493 15696,6507
-(Britzer Park - Buckower Damm/Gutschmidtstr.): Parkweg	Q1 12969,4168 12931,4154 12878,4105 12803,3994 12726,3870
-(Britzer Park - Buckower Damm): Verbundsteinpflaster	Q0 12803,3994 12640,4001
-Britzer Park: Asphalt	Q0 13098,4452 12981,4393 12969,4168
-Britzer Park: Verbundsteinpflaster	Q1 12969,4168 13128,4008
+(Britzer Park - Buckower Damm/Gutschmidtstr.): Parkweg	Q1 12959,4195 12932,4175 12873,4123 12794,3996 12726,3870
+(Britzer Park - Buckower Damm): Verbundsteinpflaster	Q0 12794,3996 12640,4001
+Britzer Park: Asphalt	Q0 13098,4452 12972,4384 12959,4195
+Britzer Park: Verbundsteinpflaster	Q1 12959,4195 13128,4008
 Britzer Park: Asphalt	Q0 13128,4008 13258,3912 13302,3837 13336,3628
 Britzer Park: Verbundsteinpflaster	Q1 13336,3628 13379,3587 13396,3512
 (Britzer Park - Jugendzentrum): Asphalt	Q0 13396,3512 13393,3459 13384,3426
@@ -4689,6 +4689,7 @@ Bischofsgrüner Weg: Asphalt	Q0 7839,3714 7735,3772 7574,3795
 Freymüllerweg: Verbundsteinpflaster, mit einigen Aufpflasterungen	Q1 7589,4008 7628,4002 7673,3986 7771,3981 7769,4032 7683,4029 7673,3986
 (Alt-Lankwitz - Kamenzer Damm): Asphalt	Q0 8009,3375 8026,3298
 (Alt-Lankwitz - Kamenzer Damm): Verbundsteinpflaster	Q1 8026,3298 8039,3242
+(Buckower Damm - Neumarkplan): Verbundsteinpflaster	Q1 12673,3619 12621,3659 12612,3700 12569,3764
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
 Riemeisterstr.: mäßiges Kopfsteinpflaster, aber asphaltierte Radwege	Q1 346,4833 294,4916 158,5103 103,5123
 Pücklerstr.: Fahrbahn mit schlechtem Kopfsteinpflaster, Radweg OK	Q1 2688,7067 2576,7026 2465,6984 2403,6962 2266,6911 2155,6873 2130,6865 2054,6840 1961,6820
@@ -4772,6 +4773,7 @@ Rietzestr.: Asphalt	Q0 12693,15225 12472,15356
 Strehlener Str.: Asphalt	Q0 22652,10392 22538,10477 22403,10523
 (Am Maselakekanal): Asphalt	Q0 -2140,17171 -2502,17233 -2606,17272
 Cotheniusstr.: Asphalt	Q0 13228,13615 13430,13733
+Heukuppenweg: Beton	Q0 9995,3065 10039,3281
 Straße 232: sehr gutes Verbundsteinpflaster	Q0 15187,1171 15277,1201 15323,1215 15343,1224
 Hummelstr.: schlechtes Kopfsteinpflaster	Q3 25290,11816 25186,11853 25060,11898 24969,11932 24905,11952 24747,11929
 Straße 366: schlechter loser Sandweg	Q3 -3011,21997 -3281,22011
@@ -5913,7 +5915,7 @@ Saalower Str.: schlechtes Kopfsteinpflaster	Q3 10735,-3142 10949,-3161 11144,-31
 Nahariyastr.: sehr guter Asphalt	Q0 11717,-1204 11739,-1384 11778,-1706 11784,-1809
 Borsigstr.: asphaltiert	Q0 9517,13571 9376,13765 9316,13870
 Newtonstr.: asphaltiert	Q0 19324,2939 19216,3052 19175,3095 19079,3190 18953,3318
-Staakener Str.: asphaltiert	Q0 -4741,14233 -4835,14223 -4891,14169 -5874,14242 -6046,14253 -6398,14276
+Staakener Str.: asphaltiert	Q0 -4741,14233 -4835,14223 -4891,14169 -5879,14242 -6046,14253 -6398,14276
 Isländische Str.: sehr guter Asphalt	Q0 10022,16237 10030,16238 10281,16263
 Rudolf-Reusch-Str.: Asphalt	Q0 15651,12214 15656,12235 15670,12298 15710,12365 15733,12528 15732,12562 15732,12650 15731,12687
 Rudolf-Reusch-Str. [Wohngebiet]: Asphalt	Q0 15571,12648 15657,12648 15732,12650
@@ -6071,6 +6073,10 @@ Mauerweg Lichtenrade - Buckow: unbefestigte Strecke	Q2 12078,-1170 11819,-286 11
 Campestr.: Asphalt	Q0 1127,20434 1128,20525 1080,20617
 Willdenowstr. (Wedding): Kopfsteinpflaster	Q2 7356,15350 7525,15186 7629,15078
 Lothar-Bucher-Str.: Asphalt	Q0 5598,6136 5664,6082 5748,6051 5845,6049 6008,6067
+Hoeftweg: große Betonplatten im guten Zustand	Q0 9675,3150 9683,3185 9655,3270 9701,3357
+Maurerweg: guter Asphalt	Q0 12864,2191 12844,2382 12835,2470 12825,2573 12810,2751 12807,2958 12805,3231
+Soldiner Str. (Lichtenrade): guter Asphalt	Q0 11086,516 11222,483 11281,454 11343,405 11407,324 11442,232 11453,228
+Hochgallweg: guter Beton	Q0 9891,3203 9771,3229 9683,3185
 Buchhorster Str.: Asphalt	Q0 7992,20515 7866,20556 7793,20580 7620,20635
 Albestr.: Asphalt	Q0 5422,7461 5448,7436 5640,7435 5811,7433
 Flotowstr.: Asphalt	Q0 5796,12372 5803,12356 5874,12165
@@ -6546,7 +6552,6 @@ Blesener Zeile - Am Nordgraben: fester Sandweg	Q1 3395,20660 3458,20671 3470,206
 Dammsmühler Str.: mäßiger fester Sandweg	Q2 9620,20952 9366,20880
 Dammsmühler Str.: asphaltiert, Frostschäden	Q1 10140,21107 9897,21035 9620,20952
 Emma-Ihrer-Str.: asphaltiert	Q0 15496,10277 15513,10298 15550,10361 15583,10399 15623,10449 15639,10469
-Maurerweg: guter Asphalt	Q0 12864,2191 12844,2382 12835,2470 12825,2573 12810,2751 12807,2958 12805,3231
 Schalkauer Str.: guter Asphalt	Q0 17475,14912 17507,14693 17514,14613 17533,14484
 Frobenstr. (Spandau): guter Asphalt	Q0 -3825,15551 -3867,15469 -3869,15333
 Am Britzer Garten: asphaltiert	Q0 11159,3730 11135,3838 11162,3844 11131,3973 11189,3986
@@ -8177,7 +8182,6 @@ Frauenlobstr.: guter Asphalt	Q0 15697,6688 15830,6579 15954,6481 16043,6414 1622
 Küstriner Str.: mäßiges Kopfsteinpflaster	Q2 15799,14674 15853,14734 15878,14761 15941,14834 16123,15025 16211,15105 16319,15229 16354,15323 16406,15452
 Am Rötepfuhl: guter Asphalt	Q0 11643,1338 11683,1285 11798,1212 11820,1185 11800,1135 11729,1102
 Fichtestr. (Hermsdorf): mäßiges Kopfsteinpflaster	Q2 3495,22803 3477,23002 3494,23057 3530,23122 3544,23179
-Soldiner Str. (Lichtenrade): guter Asphalt	Q0 11086,516 11222,483 11281,454 11343,405 11407,324 11442,232 11453,228
 Mutziger Str.: mäßiger Asphalt	Q1 14411,16008 14450,15910
 Waldstr. (Kaulsdorf): unbefestigt, etwas Schotter	Q2 22413,9544 22326,9509
 Waldstr. (Kaulsdorf): Asphalt	Q0 22326,9509 22295,9395 22238,9200
@@ -8831,7 +8835,7 @@ Spieroweg: Sandweg	Q2 -6595,13198 -6626,13049
 Pietschweg: guter Asphalt	Q0 -6395,13121 -6360,12970
 Räcknitzer Steig: guter Asphalt	Q0 -5480,12793 -5535,12631
 Bolteweg: guter Asphalt	Q0 -5975,12827 -6029,13033 -6079,13208
-Prisdorfer Str.: guter Asphalt	Q0 -5887,13894 -5906,14102 -5887,14147 -5874,14242
+Prisdorfer Str.: guter Asphalt	Q0 -5887,13894 -5906,14102 -5887,14147 -5882,14210 -5879,14242
 Springerzeile: guter Asphalt	Q0 -5877,13375 -6035,13333 -6220,13289 -6595,13198
 Griesingerstr.: guter Beton	Q0 -6603,17532 -6612,17487 -6595,17456 -6822,16927 -6515,16793
 Reclamweg: guter Asphalt	Q0 -5196,12452 -5126,12425
