@@ -157,7 +157,7 @@ userdel	3 11882,8527 11824,8995 11998,8872
          'from' => 1314914400,
          'id' => 112,
          'data' => 'userdel	2 16610,1715 16805,1488 16849,1437
-userdel	2 16960,1282 16849,1437
+userdel	2 16975,1262 16849,1437
 ',
          'type' => 'gesperrt'
        },
@@ -1019,15 +1019,6 @@ userdel	q4::temp 4326,17801 4200,17848 4096,17890 4015,17912
        undef,
        undef,
        undef,
-       {
-         'until' => 1304892000,
-         'text' => 'Alt-Rudow (Rudow) in beiden Richtungen zwischen Köpenicker Str. und Krokusstr. Veranstaltung, Straße vollständig gesperrt (7. und 8. Mai 2011)',
-         'from' => 1304632800,
-         'id' => 952,
-         'data' => 'userdel	2::temp 16849,1437 16805,1488 16610,1715
-',
-         'type' => 'gesperrt'
-       },
        undef,
        undef,
        undef,
@@ -1039,15 +1030,8 @@ userdel	q4::temp 4326,17801 4200,17848 4096,17890 4015,17912
        undef,
        undef,
        undef,
-       {
-         'until' => 1304892000,
-         'text' => 'Bölschestr. (Köpenick) in beiden Richtungen Veranstaltung, Straße vollständig gesperrt (7. und 8. Mai 2011)',
-         'from' => 1304632800,
-         'id' => 964,
-         'data' => 'userdel	2::temp 25519,4830 25524,5011 25539,5237 25544,5326 25546,5359 25548,5398 25553,5486 25567,5749 25571,5829 25579,5958
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        undef,
        undef,
        undef,
@@ -2557,7 +2541,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        {
          'source_id' => 'INKO_090026',
-         'until' => 1305496799,
+         'until' => 1306101600,
          'text' => 'Erkstr. (Neukölln) Richtung Sonnenallee Baustelle, Fahrtrichtung gesperrt (bis Mitte 05/2011) ',
          'from' => 1304110298,
          'id' => 2033,

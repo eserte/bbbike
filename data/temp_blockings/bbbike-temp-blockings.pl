@@ -842,7 +842,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 16610,1715 16805,1488 16849,1437
-userdel	2 16960,1282 16849,1437
+userdel	2 16975,1262 16849,1437
 EOF
      },
      { from  => undef, # 
@@ -17308,7 +17308,7 @@ userdel	2::inwork 50359,-20087 49368,-19096
 EOF
      },
      { from  => 1304110298, # 2011-04-29 22:51
-       until => 1305496799, # 2011-05-15 23:59
+       until => 1306101600, # 1305496799, # 2011-05-15 23:59
        text  => 'Erkstr. (Neukölln) Richtung Sonnenallee Baustelle, Fahrtrichtung gesperrt (bis Mitte 05/2011) ',
        type  => 'handicap',
        source_id => 'INKO_090026',
@@ -17970,7 +17970,7 @@ EOF
        text  => 'Alt-Rudow zwischen Köpenicker Straße und Neudecker vom 24.07.2010 bis zum 31.07.2010 vollständig gesperrt. Die Einbahnstraßenregelung Am Hanfgraben wird umgekehrt. ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 16849,1437 16960,1282
+userdel	q4::inwork 16849,1437 16975,1262
 EOF
      },
      { from  => 1278270043, # 2010-07-04 21:00

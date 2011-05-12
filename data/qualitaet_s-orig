@@ -335,7 +335,7 @@ Richardplatz: Kopfsteinpflaster	Q2 13400,7642 13426,7674 13423,7707
 Richardstr.: Kopfsteinpflaster, OK	Q1 12792,8190 12870,8087 13085,7904 13103,7889 13150,7845 13226,7775 13245,7742 13297,7654
 Richardstr.: Kopfsteinpflaster	Q2 13297,7654 13303,7622
 Richardstr.: Kopfsteinpflaster, OK	Q1 13303,7622 13339,7452 13345,7424 13369,7307
-Alt-Rudow: Asphalt	Q0 16960,1282 16849,1437
+Alt-Rudow: Asphalt	Q0 16975,1262 16849,1437
 Fichtestr.: Kopfsteinpflaster, mit Teer gefugt	Q2+ 11108,9187 11060,9549
 Alt-Kladow: Asphalt	Q0 -7170,4962 -7080,4896
 Alt-Kladow: Kopfsteinpflaster, OK	Q1 -7080,4896 -6947,4861 -6811,4893
@@ -1386,6 +1386,9 @@ Heidelberger Str.: asphaltiert	Q0 13661,9069 13489,9199
 Lexisstr.: Beton	Q1 12983,9475 13059,9417 13130,9366
 Briesestr.: Kopfsteinpflaster	Q2 12001,7937 12179,7979
 Briesestr.: Kopfsteinpflaster	Q2 12446,8032 12668,8077 12794,8103
+#: XXX neuer Belag 2011
+#: by: http://www.berlin.de/ba-neukoelln/presse/archiv/20110509.1135.343560.html
+#: next_check: 2011-05-30
 Geygerstr.: Beton	Q1 13066,8153 13194,8276
 Bellevue-Ufer: Parkweg	Q1 6694,12627 7039,12314
 Bettina-von-Arnim-Ufer: Parkweg	Q1 7437,12368 7529,12496 7670,12576
@@ -9202,6 +9205,9 @@ Karmeliterweg: guter Asphalt	Q0 854,24387 1033,24429 1156,24494 1250,24533 1330,
 #: corrected_by: Wolfhard Schleese (Asphalt -> Kleinpflastersteine) vvv
 Alemannenstr. (Frohnau): Kleinpflastersteine	Q2 1736,24722 1747,24606 1747,24549 1742,24526 1750,24433 1732,24402
 Alemannenstr. (Frohnau): Kleinpflastersteine	Q2 1750,24433 1776,24416
+#: XXX: Neubau der Alemannenstraße 2011, danach vieleicht asphaltiert?
+#: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20110509.1130.343559.html
+#: next_check: 2011-11-30
 Alemannenstr. (Frohnau): Kleinpflastersteine	Q2 1466,25910 1501,25675 1558,25505 1568,25477 1627,25386
 #: corrected_by: srt (Kleinpflastersteine -> Asphalt)
 Alemannenstr. (Frohnau): Asphalt	Q0 1627,25386 1714,25289 1738,25243
@@ -13681,6 +13687,24 @@ Prinzessinenstr.: schlecht zu befahrene Kopfsteinpflasterstrecke	Q3 10096,-2137 
 #: by: W. Collin:
 #: confirmed_by: srt
 Barlachweg: Beton	Q0 8393,828 8322,862
+#
+#: by: Petra (without mail): vvv
+Basdorfer Zeile: kaputter Asphalt	Q2+ 3216,20531 3196,20627
+#: by: ^^^
+#
+#: by: Laura (...steinmeister...):
+Anschützweg: Asphalt	Q0 -5953,12263 -5988,12221 -6071,12120
+#: by: Anja (...anstand...):
+Waltersdorfer Chaussee: Asphalt	Q0 16975,1262 17011,1206 17002,1167
+#: by: Dirk Henschke:
+Heimfriedstr.: mäßige wassergebundene Decke	Q2 14902,23655 15072,23535 15167,23470 15387,23310
+# 
+#: by: Theda (...bader...):
+#: confirmed_by: http://farm5.static.flickr.com/4122/4998979916_367325226d_b.jpg (Kopfsteinpflaster)
+Hochjagdstr.: Kopfsteinpflaster	Q2 3947,22000 4032,21892 4098,21809
+# 
+#: by: Nora Luetge:
+Jan-Petersen-Str.: guter Beton	Q0- 21086,15910 21108,15955 21196,16119 21030,16206
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206

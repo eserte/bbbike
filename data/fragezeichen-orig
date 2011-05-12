@@ -494,6 +494,8 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 # Das heiﬂt diese Strecken werden nicht bei einer erweiterten Suche aufgenommen
 # und dem CGI-Benutzer auch nicht pr‰sentiert.
 # 
+#: XXX laut Nina Bohlmann: grˆﬂtenteils grobes und feineres Kopfsteinpflaster, nur ein kleines St¸ck ist asphaltiert -> wo genau, E-Mail-Anfrage
+Zadekstr.: Qualit‰t der Zadekstraﬂe zwischen Bauml‰uferweg und Imbuschweg? Wo genau sind die Kopfsteinpflasterabschnitte, wo die asphaltierten Abschnitte?	? 14468,3484 14407,3356 14335,3231 14274,3129 14204,3029 14137,2934
 Ribnitzer Str.: Vorfahrtsregelung?	? 16417,18266 16470,18307 16583,18393
 Ahrensfelder Chaussee/Dorfstr.: gibt es hier auch Radwege?	? 19782,18211 19875,18182 20136,18291 20160,18301
 #: by: http://farm6.static.flickr.com/5056/5499714699_fc775a243d_z.jpg
@@ -637,6 +639,8 @@ Kleistpark: im Sommer bis 21 Uhr geˆffnet, im Winter bis 18 Uhr	? 7209,9507 7246
 #: section isolated entries vvv
 #: section ignorieren vvv
 # 
+#: by: anonymous:
+Straﬂe 902: schlechter Asphalt, Q2	? 23497,705 23574,689
 #: by: anonymous:
 Fischerstieg (Bindow): guter Asphalt, Q0	? 34954,-14689 34843,-14689 34717,-14742 34639,-14721
 #: by: anonymous vvv
@@ -1060,8 +1064,7 @@ Klockow - Neuenfeld: ab Klockow Asphalt, danach ungewiss	? 49412,111409 49887,11
 Klockow - Kleptow (Feldweg): auf der Nordseite sandiger Feldweg (Q2?)	? 49487,110056 49381,107993
 B‰kepromenade: Qualit‰t? Existiert eine Verbindung?	? -2618,-1473 -2800,-1484 -2802,-1636
 Falkenthal - Bergsdorf: Kopfsteinpflaster, mindestens von Falkenthal her	? 2034,55227 -285,58256
-#: XXX: unklare Eintragung zu Radwegen existiert:
-Jan-Petersen-Str.: Gibt es hier Radwege?	? 21030,16206 21196,16119 21108,15955 21086,15910
+#XXX del --- #: XXX: unklare Eintragung zu Radwegen existiert: --- ninaluetge widerspricht, ebenso gsv: --- Jan-Petersen-Str.: Gibt es hier Radwege?	? 21030,16206 21196,16119 21108,15955 21086,15910
 Zichow-Lindenwegsiedlung: Qualit‰t?	? 54500,87934 52642,87955
 Prˆtzeler Ring: Qualit‰t laut ADFC-Karte gut	? 21951,15918 21980,15857 22055,15698 22092,15610
 Cottbusser Platz: laut ADFC-Karte gute Qualit‰t	? 23297,14772 23288,14719 23298,14685 23379,14514
@@ -2233,7 +2236,6 @@ Kˆnigsseestr.: Qualit‰t?	? 22448,1824 22538,1878 22617,1925
 Laubnitzer Pfad: Qualit‰t?	? 22995,745 23067,786
 Steinbindeweg: Qualit‰t?	? 23237,508 23137,650 23067,786 23085,898
 Straﬂe 901: Qualit‰t?	? 23501,797 23497,705 23469,640
-Straﬂe 902: Qualit‰t?	? 23497,705 23574,689
 Zur Uferbahn: Qualit‰t?	? 23085,898 22952,821 22902,796 22766,778
 Entlang der Straﬂenbahntrasse: Qualit‰t?	? 22766,778 22555,772 22392,885 22344,931 22304,913
 AllÈe Marie Curie: Qualit‰t?	? 4596,21629 4589,21606 4502,21525 4510,21506
@@ -2250,8 +2252,6 @@ Gutachstr.: Qualit‰t?	? 4586,22769 4593,22702 4648,22632 4716,22535 4800,22418
 Benekendorffstr.: Qualit‰t der Benekendorffstr. zwischen Oraniendamm und D¸sterhauptstr (mˆglicherweise Kopfsteinpflaster)?	? 4533,22399 4616,22478
 #: by: http://www.flickr.com/photos/57059657@N00/5676296413 (Asphalt, aber gut oder m‰ﬂig?)
 Halalistr.: Qualit‰t?	? 4147,22309 4174,22328 4209,22338 4280,22383
-#: by: http://farm5.static.flickr.com/4122/4998979916_367325226d_b.jpg (Kopfsteinpflaster)
-Hochjagdstr.: Qualit‰t?	? 3947,22000 4032,21892 4098,21809
 Lierbacher Weg: Qualit‰t?	? 5152,22809 5260,22634
 Nagolder Pfad: Qualit‰t?	? 4771,22696 4648,22632 4526,22567
 Pforzheimer Str.: Qualit‰t?	? 4907,22885 5095,22982 5143,22934 5210,22865
@@ -2406,7 +2406,6 @@ Seddinpromenade: Qualit‰t?	? 28000,-3147 28013,-3048
 Seddinpromenade: Qualit‰t?	? 28856,-2813 28734,-2838 28678,-2814 28596,-2844 28535,-2834 28397,-2913 28241,-3045 28053,-3065 28013,-3048 27891,-2988 27837,-2991 27804,-3064 27749,-3120
 Seddinh¸tte: Qualit‰t?	? 27891,-2988 27901,-2972
 AllÈe du Stade: Qualit‰t?	? 3585,16252 3796,16177 4035,16051
-Schˆnefelder Str. - Alt-Rudow: Hat die Verbindung einen Straﬂennamen? Qualit‰t?	? 17002,1167 17011,1206 16960,1282
 J¸denstr. (Spandau): Qualit‰t? Ist die Straﬂe teilweise eine Einbahnstraﬂe? Wenn ja, gilt die Einbahnstraﬂenregelung nur f¸r Autofahrer oder auch f¸r Radfahrer? Kann der Altst‰dter Ring in Hˆhe J¸denstr. ¸berquert werden?	? -3506,14306 -3444,14310 -3422,14322 -3397,14370 -3350,14446 -3316,14504 -3249,14621
 Ritterstr. (Spandau): Qualit‰t?	? -3228,14468 -3316,14504 -3360,14525
 Viktoria-Ufer: Qualit‰t? Ist die Straﬂe teilweise eine Einbahnstraﬂe? Wenn ja, gilt die Einbahnstraﬂenregelung nur f¸r Autofahrer oder auch f¸r Radfahrer?	? -3249,14621 -3259,14625 -3285,14615 -3360,14525 -3393,14470
@@ -3266,7 +3265,7 @@ Straﬂe 606 a: Heiﬂt dieser Abschnitt des Weges "Straﬂe 606 a"?	? 27151,729 27202
 # XXX del #: XXX_osm bei osm ohne Namen --- in der Realit‰t auch nicht --- Rosenweg (Bohnsdorf): Qualit‰t?	? 20362,-511 20567,-313
 D¸nenweg: Qualit‰t?	? 3089,21238 3056,21310
 Staffelder Weg: Qualit‰t?	? 3395,20660 3287,20739
-Basdorfer Zeile: Qualit‰t?	? 3216,20531 3196,20627
+#: XXX Petra (ohne email) meint: Schlaglˆcher, Q2 (aber leider ohne eigentlich Fahrbahnbeschaffenheit), enge Straﬂe, q2
 An der Heide: Qualit‰t?	? 3125,20614 3116,20651 3103,20712
 Am Rosensteg: Qualit‰t? Kann man als Radfahrer direkt zum Nordgraben fahren?	? 3116,20651 3080,20647 3067,20708 3062,20735
 Am Brunnen: Qualit‰t? Kann man als Radfahrer direkt zum Nordgraben fahren?	? 3062,20735 3028,20894
@@ -3376,7 +3375,6 @@ Am Zeppelinpark: Straﬂe fertiggestellt? Qualit‰t?	? -8358,13340 -8417,13785 -850
 #: XXX_osm bei osm ohne Namen
 Am alten Gaswerk: Qualit‰t?	? -8243,14183 -8284,14334 -8287,14411
 An der Spitze: Qualit‰t?	? -8756,13356 -8847,13363 -8846,13398 -8702,13400
-Ansch¸tzweg: Qualit‰t?	? -5953,12263 -5988,12221 -6071,12120
 Hensoldtweg: Qualit‰t?	? -6081,12264 -6144,12187
 Messterweg: Qualit‰t?	? -6171,12309 -6081,12264 -5988,12221
 #: XXX fehlt bei Berlin.coords.data und LOR
@@ -3625,7 +3623,6 @@ Bohrerzeile: Qualit‰t?	? 16156,24003 16106,23913 16060,23830 16010,23734 15963,2
 Bedeweg: Qualit‰t?	? 16436,23313 16523,23454 16683,23354 16732,23319
 Straﬂe 74 (Karow): Qualit‰t?	? 15776,23185 15627,23255
 Mˆserstr.: Qualit‰t?	? 15029,23857 15179,23755
-Heimfriedstr.: Qualit‰t?	? 14902,23655 15072,23535 15167,23470 15387,23310
 Amselstr. (Karow): Qualit‰t?	? 15117,23634 15295,23508 15428,23413
 Wotanstr. (Karow): Qualit‰t?	? 15033,23432 15072,23535 15117,23634 15179,23755 15256,23861
 Hagenstr. (Karow): Qualit‰t?	? 15249,23279 15176,23168 15037,22974 14950,22853
@@ -3683,6 +3680,7 @@ Straﬂe 46 (Karow): Qualit‰t?	? 14953,21680 14819,21711 14690,21764
 #: XXX_osm bei osm ohne Namen
 Blanchardstr.: Qualit‰t?	? 15130,24012 15189,24120
 #: XXX_osm fehlt bei osm
+#: XXX: laut Frank (conerus...): Asphalt, Q0, RW7 (?); Lage der Straﬂe fehlt -> Mail!
 Gatterweg: Qualit‰t? Genaue Lage der Straﬂe?	? 16388,22890 16504,22903
 Hentzeweg: Qualit‰t? Genaue Lage der Straﬂe?	? 16465,23091 16528,23006
 #: XXX_osm fehlt bei osm
@@ -4092,7 +4090,6 @@ Asphaltierter Radweg Richtung Waltersdorf/Flughafen Schˆnefeld: wie geht es weit
 Am Seegraben/Alexander-Meiﬂner-Str.: Ampel in Vorbereitung	?::inwork 19894,-835
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1010/nachricht4100.html
 Havelwiesen: Qualit‰t des Weges? Nachts beleuchtet? Genauer Verlauf?	? -2595,16808 -2391,16788
-Zadekstr.: Qualit‰t der Zadekstraﬂe zwischen Bauml‰uferweg und Imbuschweg?	? 14468,3484 14407,3356 14335,3231 14274,3129 14204,3029 14137,2934
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/44re.pdf/file
 An der Wasserstadt: wo genau befindet sich dieser Rad- und Fuﬂweg?	? -2484,16835 -2476,16742
 # 
@@ -4381,3 +4378,4 @@ Idunastr.: ist der westliche Abschnitt eine Einbahnstraﬂe?	? 12190,19009 12522,1
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/18re.pdf/file (Maria-Matray-Str.)
 #: next_check: 2011-06-30
 Frieda-Rosenthal-Str.: wo genau liegt die Straﬂe?	? 19336,7987 19339,7898
+Zehntwerderweg: Zehntwerderweg ˆstlich Am Vierrutenberg mit Verbundsteinpflaster?	? 5809,23420 6013,23521 6114,23556
