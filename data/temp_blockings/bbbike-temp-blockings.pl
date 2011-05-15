@@ -19001,4 +19001,13 @@ EOF
 userdel	q4::inwork 52119,43318 50799,43130
 EOF
      },
+     { from  => 1305410400, # 2011-05-15 00:00
+       until => 1356994799, # 2012-12-31 23:59
+       text  => 'Schadowstr. (Mitte) Richtung Dorotheenstr. zw. Unter den Linden und Dorotheenstr. Ab: 16.05.2011 Baustelle, Fahrtrichtung gesperrt (bis Ende 2012) ',
+       type  => 'handicap',
+       source_id => 'INKO_093372',
+       data  => <<EOF,
+userdel	q4::inwork; 9028,12307 9016,12416 9008,12485
+EOF
+     },
     );

@@ -801,6 +801,11 @@ Fritz-Werner-Str.: Werksgelände, Durchfahrt nicht möglich	2 9052,2357 8955,2004
 Hossauerweg	1s:q3 9056,1288 9022,1220 9083,1017 9129,986
 Manntzstr.: durch Tore gesperrt	2 8064,1460 8147,1663
 Bernecker Weg	1 7886,3801 7839,3714 7778,3644
+#: by: Juliane (alberts...) vvv
+Viktoria-Ufer	1 -3393,14470 -3360,14525 -3285,14615 -3259,14625 -3249,14621
+Viktoria-Ufer	1 -3444,14310 -3446,14386 -3410,14479
+Jüdenstr. (Spandau)	1 -3249,14621 -3316,14504 -3350,14446
+#: by: ^^^
 ######################################################################
 #
 # Potsdam
@@ -1003,6 +1008,8 @@ An der Wuhlheide: Mittelstreifen	3nocross 19578,6165 19405,6276 19276,6359
 Heerstr.: nicht überquerbar	3nocross 456,11233 585,11256 704,11273
 #: by: Sabine (schaeffler)
 Altstädter Ring: Mittelstreifen	3nocross -3481,14523 -3498,14413 -3506,14306
+#: by: Juliane (alberts...)
+Altstädter Ring: Mittelstreifen mit Zaun	3nocross -3498,14413 -3506,14306 -3517,14218
 #: by: Steini (immerlocker)
 Kaiser-Wilhelm-Str.: Mittelstreifen	3nocross 6996,3761 6957,3699 6794,3502
 Alexanderstr.: umbequemes Überqueren wegen Bordsteinen	3nocross 11323,12484 11333,12437 11343,12300
@@ -1273,6 +1280,8 @@ Berliner Str.: Straßenbahntrasse	3nocross 12396,17514 12436,17682 12467,17814
 # Stellen, an denen getragen werden muß:
 # die Zahl hinter dem ":" entspricht ungefähr den verlorenen Sekunden
 # 
+#: by: Detlev Deter
+tragen	0:180 6376,23358
 tragen (ca. 30 Stufen)	0:30 -1711,11452
 tragen	0:30 -1663,11487
 tragen (5 Stufen)	0:10 6820,5237

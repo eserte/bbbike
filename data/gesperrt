@@ -616,6 +616,9 @@ Fritz-Werner-Str.: Werksgelände, Durchfahrt nicht möglich	2 9052,2357 8955,2004
 Hossauerweg	1s 9056,1288 9022,1220 9083,1017 9129,986
 Manntzstr.: durch Tore gesperrt	2 8064,1460 8147,1663
 Bernecker Weg	1 7886,3801 7839,3714 7778,3644
+Viktoria-Ufer	1 -3393,14470 -3360,14525 -3285,14615 -3259,14625 -3249,14621
+Viktoria-Ufer	1 -3444,14310 -3446,14386 -3410,14479
+Jüdenstr. (Spandau)	1 -3249,14621 -3316,14504 -3350,14446
 Am Neuen Garten	1 -12166,1384 -12212,1201 -12276,831 -12302,718
 Am Neuen Garten	1 -12332,585 -12582,127
 Hochstraße	3nocross::ignrte -11399,-1339 -11461,-1424 -11540,-1543
@@ -813,6 +816,9 @@ Treskowstr. -> An der Wuhlheide: Mittelstreifen	3::igndisp 19333,6165 19405,6276
 An der Wuhlheide -> Treskowstr.: Mittelstreifen	3::igndisp 19578,6165 19405,6276 19333,6165
 nicht überquerbar	3nocross::ignrte 456,11233 585,11256 704,11273
 Mittelstreifen	3nocross::ignrte -3481,14523 -3498,14413 -3506,14306
+Mittelstreifen mit Zaun	3nocross::ignrte -3498,14413 -3506,14306 -3517,14218
+Altstädter Ring -> Jüdenstr.: Mittelstreifen mit Zaun	3::igndisp -3498,14413 -3506,14306 -3444,14310
+Jüdenstr. -> Altstädter Ring: Mittelstreifen mit Zaun	3::igndisp -3444,14310 -3506,14306 -3517,14218
 Mittelstreifen	3nocross::ignrte 6996,3761 6957,3699 6794,3502
 Langkofelweg -> Kaiser-Wilhelm-Str.: Mittelstreifen	3::igndisp 6998,3596 6957,3699 6794,3502
 umbequemes Überqueren wegen Bordsteinen	3nocross::ignrte 11323,12484 11333,12437 11343,12300
@@ -1663,6 +1669,7 @@ Albrecht-Thaer-Weg -> Schorlemerallee: Mittelstreifen	3::igndisp 3449,6863 3347,
 Straßenbahntrasse	3nocross::ignrte 12396,17514 12436,17682 12467,17814
 Str. 56 -> Berliner Str.: Straßenbahntrasse	3::igndisp 12587,17603 12436,17682 12396,17514
 Berliner Str. -> Str. 56: Straßenbahntrasse	3::igndisp 12467,17814 12436,17682 12587,17603
+tragen	0:180:-218 6376,23358
 tragen (ca. 30 Stufen)	0:30:-142 -1711,11452
 tragen	0:30:-140 -1663,11487
 tragen (5 Stufen)	0:10:62 6820,5237

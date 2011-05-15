@@ -2773,7 +2773,6 @@ Karolinenhofweg: Asphalt	Q0 26077,-846 25953,-1016
 Karolinenhofweg: schlechtes Kopfsteinpflaster	Q3 26129,-807 26107,-833 26077,-846
 Rehfeldtstr.: schlechtes Kopfsteinpflaster	Q3 26190,-853 26129,-807
 Rehfeldtstr.: unbefestigt	Q2 26032,-704 26004,-705 25958,-731
-Rabindranath-Tagore-Str.: Asphalt	Q0 23469,640 23252,792
 Schlierseestr.: Asphalt	Q0 22569,2096 22466,2030 22378,1970
 Harnischweg: Beton mit Schäden	Q1 21208,5336 21363,5336
 Berlewitzweg: Asphalt	Q0 22966,3912 23007,3597 23089,3231
@@ -12871,7 +12870,15 @@ Küstriner Str.: etwas älterer Asphalt	Q1+ 11232,309 11343,405 11488,531
 #: by: Manfred Brühl vvv
 Wesenberger Ring: guter Beton	Q1+ 13162,3576 13206,3674 13238,3794 13229,3836 13206,3854 13165,3850 13129,3809 13030,3664
 #: by: ^^^
+# 
 #: by: Juliane (alberts...) vvv
+Jüdenstr. (Spandau): Kopfsteinpflaster, gut befahrbar	Q1- -3506,14306 -3444,14310 -3422,14322 -3397,14370 -3350,14446
+#: note: "guter Zustand, 30er-Zone"
+Jüdenstr. (Spandau): Asphalt	Q0 -3350,14446 -3316,14504 -3249,14621
+#: note: enge Straße, aber q0 vvv
+Viktoria-Ufer: Kopfsteinpflaster, gute Qualität	Q1- -3249,14621 -3259,14625 -3285,14615 -3360,14525 -3393,14470
+Viktoria-Ufer: Asphalt	Q0 -3410,14479 -3446,14386 -3444,14310
+#: note: ^^^
 Gatower Str. - Havel-Ufer: Trampelpfad	Q2- -4780,9838 -4666,9844
 Gatower Str. - Havel-Ufer: fester Sandweg mit ein bisschen Schotter	Q2 -4666,9844 -4661,9842 -4628,9832 -4593,9774 -4571,9764
 #: note: "eher schlechte Qualität"
@@ -12899,6 +12906,7 @@ Am Kiefernhang: Kopfsteinpflaster, Sandbanketten	Q2 -5189,6890 -5137,6960 -5090,
 Besingweg: gutes Verbundsteinpflaster	Q1 -4982,7164 -4680,7114 -4674,7094
 Marquardter Weg: Asphalt von mäßiger Qualität	Q2+ -5279,7113 -5218,7070 -5202,7045
 #: by ^^^
+# 
 #: by: yvonne (yvet...)
 Akazienallee (Rosenthal): loser Sandweg, viele Schlaglöcher	Q3 9547,20670 9615,20469 9627,20443
 #: by: Klimesch:
@@ -13421,7 +13429,10 @@ Springerzeile: guter Asphalt	Q0 -5877,13375 -6035,13333 -6220,13289 -6595,13198
 Griesingerstr.: guter Beton	Q0- -6603,17532 -6612,17487 -6595,17456 -6822,16927 -6515,16793
 Reclamweg: guter Asphalt	Q0 -5196,12452 -5126,12425
 #: by: ^^^
+# 
 #: by: Roland Krause vvv
+Alter Radelander Weg: fester Sandweg im Wald, lässt sich gut befahren	Q1- 24981,-2573 23457,35
+Rabindranath-Tagore-Str.: Asphalt, teilweise brüchig, trotzdem gut befahrbar	Q0- 23252,792 23469,640 23540,591 23457,35
 #: note: "besonders an der Ecke Straße 133"
 Straße 109: sehr schlechter Asphalt, viele Schlaglöcher, teilweise guckt Kopfsteinpflaster hervor	Q2- 17342,15386 17435,15379 17533,15363 17588,15355
 #: note: "sehr schmale Straße"
@@ -13450,20 +13461,24 @@ Porschestr.: Beton, teilweise mit Asphalt geflickt	Q0- 8572,2960 8584,3133
 Opelweg: Verbundsteinpflaster	Q1+ 8906,2822 8828,2841
 Opelweg: Verbundsteinpflaster	Q1 8828,2841 8735,2866
 #: by: ^^^
+# 
 #: by: Rainer (ghostviewer...)
 Bieler Str.: Kleinpflaster, relativ eben	Q1 6815,17871 6711,17839
 #: by: Frank (...engel)
 Straße 129: schlechter Sandweg	Q3 7802,21173 7929,21103
+# 
 #: by: Marie-Louise Oehlschlägel: vvv
 Dammheidestr.: schlechtes Kopfsteinpflaster	Q3 22880,7351 22745,7388
 #: corrected_by: srt (schlechtes Kopfsteinpflaster -> Kleinsteinpflaster)
 Dammheidestr.: Kleinsteinpflaster	Q1- 22745,7388 22656,7412 22554,7437
 #: by: ^^^
+# 
 #: by: Christoph Eydinger: vvv
 Grindelwaldweg: Asphalt	Q0 6908,17583 6797,17568
 #: note: "nicht grade das beste"
 Grindelwaldweg: Kopfsteinpflaster	Q2 6797,17568 6679,17568 6642,17571
 #: by: ^^^
+# 
 #: by: Wanda (schramms):
 #: confirmed_by: srt
 Hottengrundweg: guter Asphalt	Q0 -8637,4741 -8086,4504
@@ -13705,6 +13720,8 @@ Hochjagdstr.: Kopfsteinpflaster	Q2 3947,22000 4032,21892 4098,21809
 # 
 #: by: Nora Luetge:
 Jan-Petersen-Str.: guter Beton	Q0- 21086,15910 21108,15955 21196,16119 21030,16206
+#: note: public imagery:
+Sprintsteig: Verbundsteinpflaster	Q1 6429,23291 6376,23358 6325,23422
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206

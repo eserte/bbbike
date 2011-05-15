@@ -2916,17 +2916,7 @@ userdel	3 13150,7254 13047,7234 13034,7319
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20110421.1005.341643.html',
-         'until' => 1305410400,
-         'text' => 'Vollsperrung Falkentaler Steig in Berlin-Reinickendorf aufgrund von Straßenbaumaßnahmen in der Zeit von 3. bis 14. Mai 2011',
-         'from' => 1304373600,
-         'id' => 2162,
-         'data' => 'userdel	q4::inwork 2492,24325 2708,24383
-userdel	q4::inwork 3367,23654 3311,23677 3235,23781 3161,23888 3012,24107
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3142,6 +3132,16 @@ userdel	q4::inwork; -12545,-698 -12262,-612
          'from' => 1304796386,
          'id' => 2209,
          'data' => 'userdel	q4::inwork 52119,43318 50799,43130
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'INKO_093372',
+         'until' => 1356994799,
+         'text' => 'Schadowstr. (Mitte) Richtung Dorotheenstr. zw. Unter den Linden und Dorotheenstr. Ab: 16.05.2011 Baustelle, Fahrtrichtung gesperrt (bis Ende 2012) ',
+         'from' => 1305410400,
+         'id' => 2210,
+         'data' => 'userdel	q4::inwork; 9028,12307 9016,12416 9008,12485
 ',
          'type' => 'handicap'
        }
