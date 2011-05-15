@@ -151,7 +151,7 @@ function any_highlight(type, Evt) {
       }
     }
   } else if (document.all || document.body) {
-    var above, below, Evt, x, y;
+    var above, below, x, y;
     if (document.all) {
       above = document.all[type + "above"];
       below = document.all[type + "below"];
@@ -191,7 +191,7 @@ function any_detail(type, Evt) {
     document.BBBikeForm[type + "img.x"].value = Evt.layerX;
     document.BBBikeForm[type + "img.y"].value = Evt.layerY;
   } else if (document.all) {
-    var Evt = window.event;
+    Evt = window.event;
     document.BBBikeForm[type + "img.x"].value = Evt.offsetX;
     document.BBBikeForm[type + "img.y"].value = Evt.offsetY;
   } else if (document.body) {

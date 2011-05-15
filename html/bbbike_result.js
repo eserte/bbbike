@@ -16,7 +16,7 @@ function ms(x,y) {
     var frm = document.forms["showmap"];
     if (!frm) {
 	alert("Form showmap not defined");
-	return;
+	return false;
     }
     var orig_center_value = frm.center.value;
     frm.center.value = x + "," + y;
