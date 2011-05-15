@@ -2044,6 +2044,13 @@ EOF
 	    my $geo = get_geography_object();
 	    if (!$geo || !$geo->is_osm_source) {
 		if (!$shown_unknown_street_helper) {
+		    # Check if the given streetname is completely
+		    # unusable and very unlikely to contain a new
+		    # street.
+		    my $is_maybe_usable = ($$oneref !~ m{\b\d{5}\b} # keine PLZ
+					   && $$oneref !~ m{\b(?:Berlin|Potsdam)\b}i
+					   && $$oneref !~ m{,}
+					  );
 		    if ($lang eq 'en') {
 			print <<EOF;
 <p>
@@ -2054,9 +2061,16 @@ Checklist:
 <li>The BBBike database only contains streets from Berlin and Potsdam.
 <li>Only most important Berlin sights are available through this interface.
 </ul>
-Nothing applies?
+<p>
+EOF
+			if ($is_maybe_usable) {
+			    print <<EOF;
+<p>
+Nothing applies? Then use the email link below and contribute information
+for this street.
 </p>
 EOF
+			}
 		    } else {
 			print <<EOF;
 <p>
@@ -2067,19 +2081,24 @@ Checkliste:
 <li>In der Datenbank befinden sich nur Berliner und Potsdamer Straßen!
 <li>Nur die wichtigsten Berliner Sehenswürdigkeiten können verwendet werden.
 </ul>
-Ansonsten:
 </p>
 EOF
+			if ($is_maybe_usable) {
+			    print <<EOF;
+<p>
+Ansonsten: Informationen zu dieser Straße über den E-Mail-Link unten melden.
+</p>
+EOF
+			}
 		    }
 		    $shown_unknown_street_helper = 1;
 		}
 
-		# XXX Temporary solution to avoid unusable
-		# newstreetform mails:
-		if (   $$oneref !~ m{\b\d{5}\b} # keine PLZ
-		    && $$oneref !~ m{\b(?:Berlin|Potsdam)\b}i
-		    && $$oneref !~ m{,}
-		   ) {
+		if (0) {
+		    # Don't show anymore the newstreetform link in
+		    # this situation, too many false entries. The user
+		    # can you the contact link if he thinks otherwise.
+
 		    my $qs = CGI->new({strname => $$oneref,
 				       ($$ortref ? (ort => $$ortref) : ()),
 				      })->query_string;
