@@ -40,7 +40,8 @@ if ($ENV{BBBIKE_TEST_HTMLDIR}) {
     push @urls, "$ENV{BBBIKE_TEST_HTMLDIR}/data";
 } else {
     push @urls, $bbbike_data_url;
-    push @urls, $bbbike_data_fallback_url;
+## XXX permanently broken:
+#    push @urls, $bbbike_data_fallback_url;
     push @urls, $bbbike_data_local_url;
 }
 
@@ -63,10 +64,6 @@ for my $url (@urls) {
  SKIP: {
 	skip("local URL works only on herceg.local", $tests_per_url)
 	    if $url eq $bbbike_data_local_url && hostname !~ m{\.herceg\.(de|local)};
-
-	if ($url eq $bbbike_data_fallback_url) {
-	    $TODO = "bbbike.radzeit.de is currently broken!!!";
-	}
 
 	{
 	    my $resp = $ua->get("$url/temp_blockings/bbbike-temp-blockings-optimized.pl");
