@@ -268,6 +268,8 @@ sub route_to_name_1 {
 	my($str_i, $rueckwaerts) = $self->net2name($xy1, $xy2);
 	my $entf = $self->{Net}{$xy1}{$xy2};
 
+	# May happen if two same points follow subsequently in the route.
+	next if !defined $entf || $entf == 0;
 	my $str;
 	if (!defined $str_i) {
 	    ($str_i, $rueckwaerts) = $self->nearest_street($xy1, $xy2);
@@ -304,10 +306,6 @@ sub route_to_name_1 {
 	    if (!defined $str) {
 		$str = "...";
 	    }
-	}
-	if (!defined $entf && $i+1 <= $#{$route_ref}) {
-	    $entf = Strassen::Util::strecke($route_ref->[$i],
-					    $route_ref->[$i+1]);
 	}
 	my($winkel, $richtung);
 	if ($i+1 < $#{$route_ref}) {
@@ -404,6 +402,8 @@ sub route_to_name_2 {
 	    }
 	}
 
+	# May happen if two same points follow subsequently in the route.
+	next if !defined $entf || $entf == 0;
 	my $str;
 	if (!defined $str_i) {
 	    ($str_i, $rueckwaerts) = $self->nearest_street($xy1, $xy2);
@@ -440,10 +440,6 @@ sub route_to_name_2 {
 	    if (!defined $str) {
 		$str = "...";
 	    }
-	}
-	if (!defined $entf && $i+1 <= $#{$route_ref}) {
-	    $entf = Strassen::Util::strecke($route_ref->[$i],
-					    $route_ref->[$i+1]);
 	}
 	my($winkel, $richtung);
 	if ($i+1 < $#{$route_ref}) {
@@ -486,7 +482,7 @@ sub route_to_name_2 {
 
     @strname;
 }
-# line 388 Generated_src.pm
+# line 386 Generated_src.pm
 sub reachable_1 {
     my($self, $coord) = @_;
     if (!exists $self->{Net}{$coord}) {
@@ -497,7 +493,7 @@ sub reachable_1 {
 	1;
     }
 }
-# line 388 Generated_src.pm
+# line 386 Generated_src.pm
 sub reachable_2 {
     my($self, $coord) = @_;
     if (!defined $self->{Net}[$self->{Coord2Index}{$coord}]) {

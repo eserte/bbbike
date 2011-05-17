@@ -279,6 +279,8 @@ sub route_to_name_<%=$type%> {
 	    }
 	}
 <% } %>
+	# May happen if two same points follow subsequently in the route.
+	next if !defined $entf || $entf == 0;
 	my $str;
 	if (!defined $str_i) {
 	    ($str_i, $rueckwaerts) = $self->nearest_street($xy1, $xy2);
@@ -315,10 +317,6 @@ sub route_to_name_<%=$type%> {
 	    if (!defined $str) {
 		$str = "...";
 	    }
-	}
-	if (!defined $entf && $i+1 <= $#{$route_ref}) {
-	    $entf = Strassen::Util::strecke($route_ref->[$i],
-					    $route_ref->[$i+1]);
 	}
 	my($winkel, $richtung);
 	if ($i+1 < $#{$route_ref}) {

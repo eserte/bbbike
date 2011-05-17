@@ -37,7 +37,7 @@ BEGIN {
     }
 }
 
-plan tests => 48;
+plan tests => 50;
 
 print "# Tests may fail if data changes\n";
 
@@ -320,6 +320,21 @@ EOF
     ok($r->nearest_node, "Found a nearest node with distance " . int(Strassen::Util::strecke_s($c2, $r->nearest_node)) . "m");
     my($r2) = $s_net->search($c1, $r->nearest_node, AsObj => 1);
     ok($r2->path, "Now found a path");
+}
+
+{
+    pass("-- A bug happening on the radroute.html page --");
+
+    # Twice the same coord in the route, use to cause a division by
+    # zero error somewhere
+    my $route = <<'EOF';
+#BBBike route
+$realcoords_ref = [[-3011,10103],[-2761,10323],[-2761,10323],[-2766,10325]];
+EOF
+    my $ret = Route::load_from_string($route);
+    my $path = $ret->{RealCoords};
+    my(@route) = eval { $s_net->route_to_name($path) };
+    is $@, '', 'No division by zero error';
 }
 
 __END__
