@@ -193,6 +193,7 @@ Zur Pariser Str.: Hausdurchfahrt benutzen	CS; 5464,9914 5416,9928
 Kreisverkehr	Roundabout 11393,10390
 #: section: ignorieren vvv
 #: XXX_prog: it's not clear what to do with this in the routelist (currently shown) or while rendering (currently ignored in normal perl/tk mode) vvv
+Kreisverkehr	Roundabout 4818,2279 4824,2266 4813,2256 4803,2257 4796,2271 4803,2280 4818,2279
 Kreisverkehr	Roundabout 19414,15132
 Kreisverkehr	Roundabout 10824,10909 10847,10853 10906,10874 10885,10928 10824,10909
 Kreisverkehr	Roundabout 6744,11936 6809,11979 6828,12031 6787,12099 6754,12108 6725,12113 6690,12104 6653,12067 6642,12010 6685,11954 6744,11936
@@ -552,6 +553,7 @@ Zugang zum Bad	culdesac_pseudo 7344,13435
 	culdesac 4087,13257
 	culdesac 5650,4809
 	culdesac 5573,4851
+	culdesac 5989,22006
 #: section ^^^
 ######################################################################
 # busroute
@@ -964,3 +966,4 @@ Straße geht rechts von Siemes Schuhcenter ab	CP2; 12908,17807 12918,17736
 Rehauer Pfad: Anlieger frei	CS 7587,3411 7626,3554
 Ausgeschildert als "Durchgang zum Döhlauer Pfad"	CP2; 7789,3362 7800,3435
 Ausgeschildert als "Zum Neumarkplan"	CP2; 12673,3619 12621,3659
+(Schönefelder Chaussee - Mauerweg): über den Altglienicker Tunnel	CS 18760,-8 18574,68 18568,28 18560,75 18544,86

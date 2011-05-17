@@ -5237,6 +5237,8 @@ Cotheniusstr.: Asphalt	Q0 13228,13615 13430,13733
 ######################################################################
 #: by: anonymous vvv
 # 
+Wallenroder Str.: Asphalt	Q0 5661,21739 5989,22006
+Am Hüllepfuhl: Beton	Q0 -6924,15411 -6890,15692 -6854,16039 -6836,16141
 Heukuppenweg: Beton	Q0 9995,3065 10039,3281
 Straße 232: sehr gutes Verbundsteinpflaster	Q0- 15187,1171 15277,1201 15323,1215 15343,1224
 Hummelstr.: schlechtes Kopfsteinpflaster	Q3 25290,11816 25186,11853 25060,11898 24969,11932 24905,11952 24747,11929
@@ -7746,8 +7748,13 @@ Suttnerstr.: Asphalt	Q0 7659,5735 7667,5813 7728,5866 7730,5921 7730,5958
 #: by: ^^^
 #: by: Isa:
 Wunsiedeler Weg: Asphalt	Q0 7589,4008 7582,3885 7574,3795 7573,3698 7555,3632 7537,3567 7501,3432
-#: by: Ulf Sawallisch:
-Charlottenstr.: Asphalt	Q0 5774,2785 5929,2982 6044,3110 6129,3203 6218,3302 6426,3425 6529,3480
+# 
+#: by: Ulf Sawallisch: vvv
+#: corrected_by: Stefan Willmes
+Charlottenstr.: Kopfsteinpflaster	Q2 5774,2785 5929,2982
+Charlottenstr.: Asphalt	Q0 5929,2982 6044,3110 6129,3203 6218,3302 6426,3425 6529,3480
+#: by: ^^^
+# 
 #: by: Sandra (sspp):
 Magdalenenstr.: Kopfsteinpflaster	Q2 16127,11950 16158,12191 16159,12301
 #: by: Sebastian Scheller: vvv
@@ -10961,7 +10968,7 @@ Kinzerallee: mäßiges Kopfsteinpflaster	Q2 22092,5673 22154,5659 22236,5633 22375
 Küselstr.: mäßiger Beton	Q1- 12299,15463 12221,15514 12158,15556 12094,15598 12058,15621
 # 
 #: by: Wolfgang Lippmann: vvv
-#: add_fragezeichen: Ist der gesamte Korkedamm asphaltiert?
+#: confirmed_by: anonymous ("asphaltiert, bzw. mit intakten Betonplatten belegt")
 Korkedamm: guter Asphalt	Q0 19244,2141 19296,2257 19327,2288 19375,2341 19654,2325 19962,2277
 #: confirmed_by: srt
 Korkedamm: guter Asphalt	Q0 19962,2277 20100,2247
@@ -12128,7 +12135,7 @@ Treiberpfad: guter Beton	Q0 3970,22215 3896,22307 3860,22358
 Treiberpfad: guter Beton	Q0 3896,22307 3810,22231 3766,22165
 #: by: ^^^
 #: by: Stefan Kohte:
-(Mauerweg im Landschaftspark Rudower Höhe): Asphalt	Q0+ 18256,-309 18385,-173 18515,19 18608,232 18709,601 18739,835 18737,1033 18716,1249 18701,1344 18673,1487 18659,1551 18649,1600 18594,1727 18580,2121
+(Mauerweg im Landschaftspark Rudower Höhe): Asphalt	Q0+ 18256,-309 18385,-173 18515,19 18544,86 18608,232 18709,601 18739,835 18737,1033 18716,1249 18701,1344 18673,1487 18659,1551 18649,1600 18594,1727 18580,2121
 #: by: alex-z:
 #: confirmed_by: anonymous:
 Muttlerweg: guter Beton	Q0 10612,2675 10603,2626 10716,2597
@@ -13722,6 +13729,41 @@ Hochjagdstr.: Kopfsteinpflaster	Q2 3947,22000 4032,21892 4098,21809
 Jan-Petersen-Str.: guter Beton	Q0- 21086,15910 21108,15955 21196,16119 21030,16206
 #: note: public imagery:
 Sprintsteig: Verbundsteinpflaster	Q1 6429,23291 6376,23358 6325,23422
+#: by: Clemens Prüfer:
+Am Birkenhügel: mäßiges Kopfsteinpflaster	Q2 -7461,381 -7505,454 -7556,559
+#: by: Gesa Major:
+(Breitenbachstr. - Soltauer Str.): Kleinpflaster	Q1 3909,19002 3738,19007
+#: by: Nina Bohlmann: vvv
+#: note: "teilweise gröberes, teilweise feineres; hört circa. 30 m vor dem Stieglitzweg auf (von Norden kommend)"
+Zadekstr.: Kopfsteinpflaster	Q2 14468,3484 14407,3356 14335,3231
+#: XXX: asphaltiert oder betoniert?
+Zadekstr.: glatte Straße	Q0 14335,3231 14274,3129 14204,3029 14137,2934
+#: by: ^^^
+#: by: Almuth Maasz:
+Le Bonheur-Str.: Verbundsteinpflaster	Q1 11774,21288 11954,21292 11948,21366
+#: by: Martin Lillich
+Nebelhornweg: mäßiger Beton	Q1- 10504,3198 10540,3513
+#: by: Johanna Grünenberg:
+Köttgenstr.: guter Beton	Q0 473,15169 556,15175 613,15195
+# 
+#: by: Siegfried Schmitt: vvv
+#: note: "enge Straße", aber q0; "Qualität ist gut"
+Schmiedepfad: Beton und Asphaltbelag	Q0 5575,20668 5660,20727 5714,20784 5760,20837
+#: note: "enge Straße", aber ohne weitere Angaben
+Glienicker Str. (Hermsdorf): guter Asphaltbelag	Q0 3750,23363 3621,23548 3587,23584
+#: by: ^^^
+# 
+#: by: Andrea Schulteisz:
+#: XXX: "viele Fußgänger", aber vielleicht ist damit die Verbindung zur Louis-Lewin-Str. gemeint? -> Mail-Anfrage läuft
+Schkeuditzer Str.: guter Asphalt	Q0 25086,15298 25232,15280 25361,15266
+#: by: Marco Pahlke:
+(Schönefelder Chaussee - Mauerweg): Gehwegplatten	Q1 18760,-8 18574,68 18568,28 18560,75 18544,86
+#
+#: by: HEK (no mail): vvv
+Hochbergweg: Kopfsteinpflaster	Q2 4902,2058 4839,2195 4813,2256
+Hochbergweg: Kopfsteinpflaster	Q2 4796,2271 4714,2285
+Hochbergplatz: Kopfsteinpflaster	Q2 4818,2279 4824,2266 4813,2256 4803,2257 4796,2271 4803,2280 4818,2279
+#: by: ^^^
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206

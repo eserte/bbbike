@@ -538,18 +538,7 @@ userdel	2 16975,1262 16849,1437
        undef,
        undef,
        undef,
-       {
-         'until' => 1305496800,
-         'text' => 'Scharnweberstr. (Reinickendorf) in beiden Richtungen zwischen Eichborndamm und Hechelstr. Straßenfest, Straße vollständig gesperrt (14. und 15. Mai 2011)',
-         'from' => 1305237600,
-         'id' => 490,
-         'data' => 'userdel	q4::temp 4392,17777 4429,17763 4584,17704
-userdel	q4::temp 4392,17777 4326,17801
-userdel	q4::temp 4584,17704 4683,17669
-userdel	q4::temp 4326,17801 4200,17848 4096,17890 4015,17912
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2977,16 +2966,7 @@ userdel	q4::inwork; -12545,-698 -12262,-612
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'LS/O-SG33-F/10/170',
-         'until' => 1305583200,
-         'text' => 'Bad Freienwalde (Oder): B167: Neubau Durchlass Brücke über die Feldbahn bei Bad Freienwalde Höhe Recyclingzentrum) Vollsperrung ab 14.03.11, 08:00 Uhr bis 16.05.2011 ',
-         'from' => 1299999600,
-         'id' => 2184,
-         'data' => 'userdel	2::inwork 50799,43130 50169,43407
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'LS/O-SG33-F/11/022',
          'until' => 1343685600,
@@ -3001,16 +2981,7 @@ userdel	q4::inwork; -12545,-698 -12262,-612
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_017000',
-         'until' => 1305482400,
-         'text' => 'Stargarder Str. (Prenzlauer Berg): Baustelle, Straße vollständig gesperrt in beiden Richtungen zwischen Dunckerstr. und Senefelder Str., 09.03.2011 07:00 Uhr bis 15.05.2011 20:00 Uhr ',
-         'from' => 1299564000,
-         'id' => 2190,
-         'data' => 'userdel	q4::inwork 11603,15455 11688,15398
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'source_id' => 'LS/W-SG33-K/11/033',
