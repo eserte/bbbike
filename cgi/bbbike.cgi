@@ -4682,7 +4682,9 @@ EOF
 			     fz => M("unbekannte Strecke"),
 			     Q  => M("Fähre"),
 			   );
-	my %rw_to_title = ( RW => M("Radweg/spur"),
+	my %rw_to_title = ( RW => M("Radweg"),
+			    RS => M("Radspur"),
+			    FS => M("Fahrradstraße"),
 			    BS => M("Busspur"),
 			    NF => M("Nebenfahrbahn"),
 			  );
@@ -4741,8 +4743,12 @@ EOF
 				    my $rw;
 				    my $rw_rec = $radwege_net->{Net}->{$p1}->{$p2};
 				    if ($rw_rec) {
-					if ($rw_rec =~ /^RW([1234789])?$/) {
+					if ($rw_rec =~ /^RW([1289])?$/) {
 					    $rw = "RW";
+					} elsif ($rw_rec =~ m{^RW[34]$}) {
+					    $rw = "RS";
+					} elsif ($rw_rec eq 'RW7') {
+					    $rw = 'FS';
 					} elsif ($rw_rec eq 'RW5') {
 					    $rw = "BS"; # Busspur
 					} elsif ($rw_rec eq 'RW10') {

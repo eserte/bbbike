@@ -136,7 +136,7 @@ a.ms:visited { color:#333333; }
   padding: 0px 2px 0px 2px;
 }
 
-.catcellRW,.catcellBS,.catcellNF {
+.catcellRW,.catcellRS,.catcellFS,.catcellBS,.catcellNF {
   width:10px;
   border-width: 0px 2px 0px 4px;
   border-style: solid;
@@ -145,6 +145,9 @@ a.ms:visited { color:#333333; }
 }
 .catcellRW {
   border-left-color: blue;
+}
+.catcellRS,.catcellFS {
+  border-left-color: rgb(0,100,180);
 }
 .catcellBS {
   border-left-color: rgb(255,165,0);
