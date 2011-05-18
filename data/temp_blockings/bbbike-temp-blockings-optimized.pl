@@ -3115,6 +3115,22 @@ userdel	q4::inwork; -12545,-698 -12262,-612
          'data' => 'userdel	q4::inwork; 9028,12307 9016,12416 9008,12485
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => 1305928799,
+         'text' => 'Einschränkungen im Tempelhofer Park wegen der Michelin Challenge Bibendum: Vom 18. - 20. Mai 2011 wird der nördliche Bereich der Tempelhofer Freiheit inklusive des Biergartens tagsüber bis 19.00 Uhr nicht zugänglich sein. Die Eingänge am Columbiadamm sind erst ab 19.00 Uhr geöffnet.',
+         'from' => 1305746527,
+         'id' => 2211,
+         'data' => '#: by: http://www.tempelhoferfreiheit.de/ueber-die-tempelhofer-freiheit/aktuelles/die-challenge-bibendum-startet/
+#: by: http://www.tempelhoferfreiheit.de/fileadmin/user_upload/Ueber_die_Tempelhofer_Freiheit/Aktuelles/Plan_ChallengeBibendum2011-THF.jpg
+userdel	2::temp 11355,7871 11381,7775 11279,7768 9654,7621 9518,7609 9611,7934 9710,8143 9884,8265 10042,8270 10298,8245 10360,8521 10640,8366 10803,8251 11005,8064 10909,8003
+userdel	2::temp 9351,7600 9518,7609 9525,7558
+userdel	2::temp 10360,8521 10384,8628
+userdel	2::temp 10575,8218 10729,8152 10598,8270 10575,8218 10298,8245
+userdel	2::temp 10729,8152 10909,8003 11090,7916 11264,7882
+userdel	2::temp 10598,8270 10640,8366 10691,8532
+',
+         'type' => 'gesperrt'
        }
      
 );
