@@ -59,6 +59,7 @@ for my $year (@acc_cat_split_streets_years) {
     $acc_cat_split_streets_byyear_track{$year} = "$bbbike_rootdir/tmp/streets-accurate-categorized-split-since$year.bbd";
 }
 my $other_tracks                     = "$bbbike_rootdir/tmp/other-tracks.bbd";
+my $str_layer_level = 'l';
 
 use vars qw($hm_layer);
 
@@ -257,13 +258,17 @@ EOF
 				   : "$bbbike_rootdir/misc/zebrastreifen" # the original Berlin data has it here
 				  ),
 				  method => 'add_new_nonlazy_layer', # lazy mode does not support bbd images yet
+				  above => $str_layer_level,
 				 ),
 		layer_checkbutton('Ortsschilder', 'p',
 				  _maybe_orig_file("$main::datadir/ortsschilder"),
 				  method => 'add_new_nonlazy_layer', # lazy mode does not support bbd images yet
+				  above => $str_layer_level,
 				 ),
 		layer_checkbutton('routing_helper', 'str',
-				  _maybe_orig_file('routing_helper')),
+				  _maybe_orig_file('routing_helper'),
+				  above => $str_layer_level,
+				 ),
 		[Button => "gesperrt_car", -command => sub { add_new_nonlazy_maybe_orig_layer("sperre", "gesperrt_car") }],
 ## XXX no support for "sperre" type yet:
 #		layer_checkbutton('gesperrt_cat', 'sperre',
@@ -271,21 +276,31 @@ EOF
 		layer_checkbutton('brunnels', 'str',
 				  _maybe_orig_file("$main::datadir/brunnels")),
 		layer_checkbutton('geocoded images', 'str',
-				  "$ENV{HOME}/.bbbike/geocoded_images.bbd"),
+				  "$ENV{HOME}/.bbbike/geocoded_images.bbd",
+				  above => $str_layer_level,
+				 ),
 		layer_checkbutton('fragezeichen-outdoor-nextcheck', 'str',
-				  "$bbbike_rootdir/tmp/fragezeichen-outdoor-nextcheck.bbd"),
+				  "$bbbike_rootdir/tmp/fragezeichen-outdoor-nextcheck.bbd",
+				  below_above_cb => sub {
+				      $main::edit_normal_mode ? (below => $str_layer_level) : (above => $str_layer_level)
+				  },
+				 ),
 		layer_checkbutton('fragezeichen-indoor-nextcheck', 'str',
 				  "$bbbike_rootdir/tmp/fragezeichen-indoor-nextcheck.bbd"),
 		layer_checkbutton('fragezeichen-nextcheck', 'str',
 				  "$bbbike_rootdir/tmp/fragezeichen-nextcheck.bbd"),
 		layer_checkbutton('Unique matches', 'str',
-				  "$bbbike_rootdir/tmp/unique-matches.bbd"),
+				  "$bbbike_rootdir/tmp/unique-matches.bbd",
+				  above => $str_layer_level,
+				 ),
 		[Cascade => 'Unique matches since year...', -menuitems =>
 		 [
 		  map {
 		      my $year = $_;
 		      layer_checkbutton("Unique matches since $year", 'str',
-					"$bbbike_rootdir/tmp/unique-matches-since$year.bbd");
+					"$bbbike_rootdir/tmp/unique-matches-since$year.bbd",
+					above => $str_layer_level,
+				       );
 		  } @acc_cat_split_streets_years,
 		 ],
 		],
@@ -293,6 +308,7 @@ EOF
 		 -command => sub {
 		     local $main::p_draw{'pp-all'} = 1;
 		     add_new_layer("str", "$bbbike_rootdir/misc/abdeckung.bbd");
+		     below => '*landuse*',
 		 }
 		],
 		layer_checkbutton('Exits (ÖPNV)', 'str',
@@ -690,18 +706,24 @@ sub add_new_layer {
 sub toggle_new_layer {
     my($type, $file, %args) = @_;
     my $method = delete $args{method} || 'add_new_layer';
-    if (!$layer_for_type_file{"$type $file"}) {
+    my $type_file = "$type $file";
+    if (!$layer_for_type_file{$type_file}) {
 	eval {
 	    no strict 'refs';
 	    &{$method}($type, $file, %args);
+	    if ($args{above}) {
+		main::set_in_stack($layer_for_type_file{$type_file}, 'above', $args{above});
+	    } elsif ($args{below}) {
+		main::set_in_stack($layer_for_type_file{$type_file}, 'below', $args{below});
+	    }
 	};
 	if ($@) {
-	    $want_plot_type_file{"$type $file"} = 0;
+	    $want_plot_type_file{$type_file} = 0;
 	    main::status_message("Cannot toggle layer: $@", 'die');
 	}
     } else {
 	eval {
-	    my $layer = $layer_for_type_file{"$type $file"};
+	    my $layer = $layer_for_type_file{$type_file};
 	    delete $main::str_draw{$layer};
 	    delete $main::p_draw{$layer};
 	    if ($type eq 'p') {
@@ -710,11 +732,11 @@ sub toggle_new_layer {
 	    } else {
 		$main::c->delete($layer);
 	    }
-	    delete $layer_for_type_file{"$type $file"};
+	    delete $layer_for_type_file{$type_file};
 	    BBBikeLazy::bbbikelazy_remove_data($type, $layer);
 	};
 	if ($@) {
-	    $want_plot_type_file{"$type $file"} = 1;
+	    $want_plot_type_file{$type_file} = 1;
 	    main::status_message("Cannot toggle layer: $@", 'die');
 	}
     }
@@ -724,16 +746,31 @@ sub layer_checkbutton {
     my($label, $type, $file, %args) = @_;
     my $oncallback  = delete $args{oncallback};
     my $offcallback = delete $args{offcallback};
+    my $below = delete $args{below};
+    my $above = delete $args{above};
+    # XXX This does not seem to work, $main::edit_normal_mode value
+    # seems to get freezed although it's a global?!
+    my $below_above_cb = delete $args{below_above_cb};
+    
     [Checkbutton => $label,
      -variable => "$type $file",
      -command => sub {
+	 if ($below_above_cb) {
+	     my %below_above_args = $below_above_cb->();
+	     if ($below_above_args{below}) {
+		 $below = $below_above_args{below};
+	     } elsif ($below_above_args{above}) {
+		 $above = $below_above_args{above};
+	     }
+	 }
+
 	 my $key = "$type $file";
-	 my $layer = toggle_new_layer($type, $file);
+	 my $layer = toggle_new_layer($type, $file, below => $below, above => $above);
 	 if ($oncallback && $layer_for_type_file{"$key"}) {
 	     $oncallback->($layer, $type, $file);
 	 } elsif ($offcallback && !$layer_for_type_file{"$key"}) {
 	     $offcallback->($layer, $type, $file);
-	 }   
+	 }
      },
     ];
 }
