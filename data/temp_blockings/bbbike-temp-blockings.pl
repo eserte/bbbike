@@ -19025,4 +19025,33 @@ userdel	2::temp 10729,8152 10909,8003 11090,7916 11264,7882
 userdel	2::temp 10598,8270 10640,8366 10691,8532
 EOF
      },
+     { from  => 1305840528, # 2011-05-19 23:28
+       until => 1306879199, # 2011-05-31 23:59
+       text  => 'Hönower Str. (Mahlsdorf) Richtung Hönow zwischen Fritz-Reuter-Str. und Ridbacher Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 05/11) ',
+       type  => 'handicap',
+       source_id => 'INKO_107373',
+       data  => <<EOF,
+userdel	q4::inwork; 24554,12100 24556,12172 24530,12296
+EOF
+     },
+     { from  => 1305840720, # 2011-05-19 23:32
+       until => 1309471199, # 2011-06-30 23:59
+       text  => 'Lahnstr. (Neukölln) Richtung Grenzallee zwischen Karl-Marx-Str. und Naumburger Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 06/11) ',
+       type  => 'handicap',
+       source_id => 'INKO_105491',
+       data  => <<EOF,
+userdel	q4::inwork; 13095,6926 13278,6967
+EOF
+     },
+     { from  => 1305840997, # 2011-05-19 23:36
+       until => 1306101600, # 2011-05-23 00:00
+       text  => 'Str. des 17. Juni (Tiergarten) in beiden Richtungen zwischen Y.-Rabin-Str. und Brandenburger Tor, auch Ebertstr. zwischen Behrenstr. und Dorotheenstr. Veranstaltung, Straße vollständig gesperrt (bis 22.05.2011 ca. 24:00 Uhr) ',
+       type  => 'gesperrt',
+       source_id => 'IM_017297',
+       data  => <<EOF,
+userdel	2::temp 8055,12186 8089,12190 8214,12205 8538,12245 8610,12254
+userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
+userdel	2::temp 8542,11502 8548,11552
+EOF
+     },
     );

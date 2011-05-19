@@ -5239,6 +5239,7 @@ Cotheniusstr.: Asphalt	Q0 13228,13615 13430,13733
 ######################################################################
 #: by: anonymous vvv
 # 
+Straße 47 (Blankenburg): schlechter fester Sandweg	Q3+ 13136,21419 13224,21374
 Wallenroder Str.: Asphalt	Q0 5661,21739 5989,22006
 Am Hüllepfuhl: Beton	Q0 -6924,15411 -6890,15692 -6854,16039 -6836,16141
 Heukuppenweg: Beton	Q0 9995,3065 10039,3281
@@ -13683,12 +13684,18 @@ Geißblattpfad: schlechte unbefestigte Straße	Q2- -7940,14690 -7842,14683 -7750,1
 An der Buche: guter Asphalt	Q0 1999,24900 2056,24836 2105,24805 2174,24783 2243,24788 2315,24779
 #: by: paul müller:
 Dompfaffenweg: guter Asphalt	Q0 20068,14516 19729,14564
-#: by: Christin (...sizip78...):
+# 
+#: by: Christin (...sizip78...): vvv
 Am Wasserbogen: guter Beton	Q0 -2044,17003 -2056,17041 -2080,17077 -2105,17098 -2152,17108
+#: note: Bordsteinkanten, q0
+Asnièresstr.: sehr gutes Verbundsteinpflaster	Q0- -2044,17003 -2119,17015 -2170,17024 -2212,17031
+#: by: ^^^
+# 
 #: by: sonnenberg
 #: note: "q4, Sackgasse" ignoriert
 #: confirmed_by: srt
 Farmergasse: Asphalt	Q1 20759,18390 20726,18447
+# 
 #: by: Andreas (...behm...):
 Luisenstr. (Konradshöhe): Kopfsteinpflaster	Q2 -1846,18778 -2064,18667
 #: by: Rudi (dr.roebi):
@@ -13759,9 +13766,12 @@ Schmiedepfad: Beton und Asphaltbelag	Q0 5575,20668 5660,20727 5714,20784 5760,20
 Glienicker Str. (Hermsdorf): guter Asphaltbelag	Q0 3750,23363 3621,23548 3587,23584
 #: by: ^^^
 # 
-#: by: Andrea Schulteisz:
-#: XXX: "viele Fußgänger", aber vielleicht ist damit die Verbindung zur Louis-Lewin-Str. gemeint? -> Mail-Anfrage läuft
+#: by: Andrea Schulteisz: vvv
+#: note: "viele Fußgänger", aber damit war wahrscheinlich der Theaterplatz gemeint
 Schkeuditzer Str.: guter Asphalt	Q0 25086,15298 25232,15280 25361,15266
+Theaterplatz: gepflasterter Platz, recht bequem	Q1 24968,15307 25086,15298
+#: by: ^^^
+# 
 #: by: Marco Pahlke:
 (Schönefelder Chaussee - Mauerweg): Gehwegplatten	Q1 18760,-8 18574,68 18568,28 18560,75 18544,86
 #
@@ -13773,6 +13783,14 @@ Hochbergplatz: Kopfsteinpflaster	Q2 4818,2279 4824,2266 4813,2256 4803,2257 4796
 # 
 #: by: Nico (paenic...):
 Nonnendamm: guter Asphalt	Q0 2028,13801 2149,13775 2176,13703 2217,13689 2283,13741 2430,13717 2548,13796
+#: by: Patrick Schwartz:
+#: note: Laternen existieren
+Augusta-Ufer: Verbundsteinpflaster	Q1 -3501,14365 -3440,14498 -3331,14628 -3255,14685
+#: by: Sebastian (mastersam...): vvv
+Ludwig-Quidde-Str.: guter Asphalt	Q0 12570,21058 12613,21132 12695,21336 12778,21583 12806,21639 12825,21771 12829,21814 12837,21876 12841,21925 12843,22010 12850,22177 12852,22262 12852,22337 12855,22431
+#: note: Elisa (eli d) meint: fester Sandweg, Schlaglöcher, Q2; Sebastian meint: fester Sandweg, viele Schlaglöcher, Q3 -> Mitte
+Straße 160: fester Sandweg, viele Schlaglöcher	Q3+ 12695,21336 12547,21372
+#: by: ^^^
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206

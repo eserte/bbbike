@@ -180,7 +180,8 @@ Carl-Schurz-Str.: Fuﬂg‰ngerzone	q4 -3552,14082 -3457,14189 -3409,14241 -3338,143
 #: note: (by Sara Kˆhler) Fuﬂg‰ngerzone ist f¸r Radfahrer nicht freigegeben, Lieferverkehr ist von 19-11 Uhr frei
 Am Wall: Fuﬂg‰ngerzone	q4 -3403,14145 -3457,14189
 Charlottenstr.: Fuﬂg‰ngerzone	q4 -3227,14260 -3293,14304 -3338,14333 -3397,14370
-Moritzstr.: Fuﬂg‰ngerzone	q4 -3275,14407 -3350,14446 -3393,14470 -3410,14479 -3440,14498 -3481,14523
+Moritzstr.: Fuﬂg‰ngerzone	q4 -3275,14407 -3350,14446
+#XXX del: not here!!! --- Moritzstr.: Fuﬂg‰ngerzone	q4 -3393,14470 -3410,14479 -3440,14498 -3481,14523
 Mauerstr. (Spandau): Fuﬂg‰ngerzone	q4 -3316,14169 -3409,14241
 #: by: Kleinke (honda):
 Havelstr.: Fuﬂg‰ngerzone	q4 -3150,14631 -3122,14557 -3107,14535 -3054,14498
@@ -2243,3 +2244,7 @@ Jan-Petersen-Str.: enge Straﬂe	q1 21086,15910 21108,15955 21196,16119 21030,1620
 Rampe	q2 18574,68 18568,28 18560,75
 #: by: tobias (poeste):
 Walporzheimer Str.: enge Straﬂe	q1 2909,24989 2910,24953 2938,24894 2980,24868 3030,24857 3099,24850 3186,24812 3234,24774
+#: by: Patrick Schwartz:
+Augusta-Ufer: offiziell nur von S¸den nach Norden f¸r Radfahrer befahrbar	q3; -3255,14685 -3331,14628 -3440,14498 -3501,14365
+#: by: Andrea Schulteisz:
+Theaterplatz: Fuﬂg‰nger	q1 24968,15307 25086,15298
