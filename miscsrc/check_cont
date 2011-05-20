@@ -2,20 +2,15 @@
 # -*- perl -*-
 
 #
-# $Id: check_cont,v 1.11 2006/08/17 18:07:05 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998,2011 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
 # Mail: eserte@cs.tu-berlin.de
 # WWW:  http://user.cs.tu-berlin.de/~eserte/
 #
-
-# Überprüft, ob bei fortgesetzten Straßen das vorherige Stück aufschließt.
-# In str_cont_ausnahme stehen die Ausnahmen (z.B. weil es zwei unabhängige
-# Teilstücke sind oder die Straße von einem Platz unterbrochen wird).
 
 use strict;
 use Getopt::Long;
@@ -82,3 +77,35 @@ if ($show_unconsumed && %ausnahme_unconsumed) {
     print STDERR "*** The following streets might be removed from str_cont_ausnahme\n";
     print join("\n", sort keys %ausnahme_unconsumed), "\n";
 }
+
+__END__
+
+=head1 NAME
+
+check_cont - check if streets are continuous in file
+
+=head1 SYNOPSIS
+
+Normal usage:
+
+    cd data
+    perl ../miscsrc/check_cont -data .strassen.tmp
+
+Checking for unconsumed entries in str_cont_ausnahme:
+
+    cd data
+    perl ../miscsrc/check_cont -data .strassen.tmp -showunconsumed
+
+=head1 DESCRIPTION
+
+Überprüft, ob bei fortgesetzten Straßen das vorherige Stück
+aufschließt. In str_cont_ausnahme stehen die Ausnahmen (z.B. weil es
+zwei unabhängige Teilstücke sind oder die Straße von einem Platz
+unterbrochen wird).
+
+=head1 AUTHOR
+
+Slaven Rezic
+
+=cut
+
