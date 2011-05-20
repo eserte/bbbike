@@ -27,16 +27,21 @@ use Strassen;
 
 my $datafile     = 'strassen';
 my $contausnahme = 'str_cont_ausnahme';
+my $show_unconsumed;
 
 GetOptions("contausnahme=s"   => \$contausnahme,
 	   "data=s"           => \$datafile,
+	   "showunconsumed"   => \$show_unconsumed,
 	  );
 
 my %ausnahme;
+my %ausnahme_unconsumed;
 if ($contausnahme ne '' and open(AUSNAHME, $contausnahme)) {
     while(<AUSNAHME>) {
 	chomp;
+	next if /^#/;
 	$ausnahme{$_}++;
+	$ausnahme_unconsumed{$_}++ if $show_unconsumed;
     }
     close AUSNAHME;
 }
@@ -50,20 +55,30 @@ $str->init;
 while(1) {
     my $s = $str->next_obj;
     last if $s->is_empty;
-    if (defined $lastname and !exists $ausnahme{$s->name} and
-	$lastname eq $s->name) {
-	my($x, $y) = @{$s->coord_as_list(0)};
-	if ($lastlastcoord->[0] != $x ||
-	    $lastlastcoord->[1] != $y) {
-	    if (!$seen_header) {
-		print STDERR "*** The following streets maybe need an entry in str_cont_ausnahme\n";
-		$seen_header++;
+    my $s_name = $s->name;
+    if (defined $lastname and $lastname eq $s_name) {
+	if ($show_unconsumed || !exists $ausnahme{$s_name}) {
+	    my($x, $y) = @{$s->coord_as_list(0)};
+	    if ($lastlastcoord->[0] != $x ||
+		$lastlastcoord->[1] != $y) {
+		if ($show_unconsumed && exists $ausnahme{$s_name}) {
+		    delete $ausnahme_unconsumed{$s_name};
+		} else {
+		    if (!$seen_header) {
+			print STDERR "*** The following streets maybe need an entry in str_cont_ausnahme\n";
+			$seen_header++;
+		    }
+		    print $s_name . "\n";
+		}
 	    }
-	    print $s->name . "\n";
 	}
     }
-    $lastname = $s->name;
+    $lastname = $s_name;
     my @coords = $s->coords_list;
     $lastlastcoord = $s->coord_as_list($#coords);
 }
 
+if ($show_unconsumed && %ausnahme_unconsumed) {
+    print STDERR "*** The following streets might be removed from str_cont_ausnahme\n";
+    print join("\n", sort keys %ausnahme_unconsumed), "\n";
+}
