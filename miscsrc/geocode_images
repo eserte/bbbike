@@ -638,7 +638,8 @@ sub create_thumbnail_ImageMagick_exiftool {
 sub create_thumbnail_ImageMagick {
     my($file, $dest) = @_;
     # -strip: remove EXIF from thumbnail, otherwise it's huge!
-    my @cmd = ("convert", "-quality", 70, "-strip", "-resize", $thumbnail_size ."x". $thumbnail_size, $file, $dest);
+    # -flatten: for multi-layer images (e.g. xcf): create only one average image
+    my @cmd = ("convert", "-quality", 70, "-flatten", "-strip", "-resize", $thumbnail_size ."x". $thumbnail_size, $file, $dest);
     warn "@cmd\n" if $v;
     system @cmd;
     if ($? != 0 || -z $dest) {
