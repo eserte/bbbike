@@ -8,6 +8,9 @@
 #
 #: temporary vvv
 # 
+#: last_checked: 2011-05-20
+Krausenstr.: Bauarbeiten an der Kreuzung Krausenstr./Charlottenstr	q3::inwork 9581,11523 9711,11543
+# 
 #: last_checked: 2011-05-08
 #: next_check: 2011-07-01
 Alt-Stralau: Bauarbeiten an der Br¸cke, enge Durchfahrt	q3::inwork 14652,10201 14558,10264
@@ -18,9 +21,15 @@ Behrenstr.: Bauarbeiten, Einbahnstraﬂenregelung	q4::inwork; 8861,12125 9054,1215
 #: last_checked: 2011-04-19
 Reichstagufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9117,12705 9209,12795 9280,12883
 #
-#: last_checked: 2011-05-06
+#: last_checked: 2011-05-20
 Oberwallstr.: Bauarbeiten, Einbahnstraﬂe	q4::inwork; 9925,11947 9913,12068
+#
+#: last_checked: 2011-05-20
+Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9890,12161 9875,12257
 # 
+#: last_checked: 2011-05-20
+Neumannsgasse: Bauarbeiten, Fahrbahn gespert	q4::inwork 10284,12113 10383,12191
+#
 #: last_checked: 2011-04-30
 #: next_check: 2011-07-01
 Varian-Fry-Str.: Baustelle, Fahrbahn gesperrt	q4::inwork 8389,11378 8374,11479
@@ -494,6 +503,7 @@ Mauerweg: Fuﬂg‰nger	q1 12984,1011 12557,799 12246,706 11922,586 11794,550 11698,
 Mauerweg: Fuﬂg‰nger	q1 4406,-910 4038,-362 4046,-299 4034,-255 3982,-181 3941,-127 3908,-117 3842,-6 3788,26 3767,66 3689,182 3607,283 3417,524
 Bayernring: enge Straﬂe	q1 8371,8543 8455,8567 8616,8605
 Bulgarische Str.: kein Radweg, Gehweg benutzen	q2; 15591,8848 15378,8668 15166,8489
+#: XXX_prog: Bordstein nur am S¸dende
 Hedwigskirchgasse: Bordsteine, Fuﬂg‰nger	q2 9743,12239 9756,12139
 Zufahrt Franz-Mehring-Platz: Bordstein	q1 12740,12128 12699,12041
 Am Flutgraben: Fuﬂg‰nger, sechs Bodenschwellen	q3 13535,10184 13371,9974

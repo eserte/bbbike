@@ -1751,8 +1751,8 @@ Tor	BNP:5 26888,13976
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
-#: last_checked: 2011-05-04
-#: next_check: 2011-06-15
+#: last_checked: 2011-05-20
+#: next_check: 2011-06-20
 #: XXX nach den Bauarbeiten vielleicht besserer Asphalt?
 Niederlagstr.: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2:inwork 9972,12184 9947,12269 9939,12296 9951,12318
 # 
@@ -1774,8 +1774,12 @@ Am Langen Jammer: westlicher Abschnitt wegen Bauarbeiten gesperrt	2:inwork 14405
 #: last_checked: 2011-04-30
 Tiergartenufer: Bauarbeiten, gesperrt	2:inwork 5711,11841 5565,11871
 # 
-#: last_checked: 2011-04-08
-Bebelplatz: Bauarbeiten, gesperrt	2:inwork 9679,12388 9700,12234
+#XXX del --- #: last_checked: 2011-04-08 --- Bebelplatz: Bauarbeiten, gesperrt	2:inwork 9679,12388 9700,12234
+#
+#: last_checked: 2011-05-20 vvv
+Behrenstr.: Bauarbeiten, vollständig gesperrt	2:inwork 9743,12239 9801,12245
+Hinter der Katholischen Kirche: Bauarbeiten, vollständig gesperrt	2:inwork 9801,12245 9795,12293 9780,12401
+#: last_checked: ^^^
 # 
 #: last_checked: 2011-05-04
 #: next_check: 2011-08-01
@@ -1798,9 +1802,11 @@ Caroline-Michaelis-Str.: Bauarbeiten	2:inwork 9061,14050 9125,13973
 #: next_check: 2011-09-01
 Ella-Trebe-Str.: Einbahnstraße wegen Bauarbeiten	1s:q3:inwork 7937,13109 7941,13014 7948,12918
 # 
-#: last_checked: 2011-03-04
-#: next_check: 2011-05-15
-Brüderstr.: Bauarbeiten, gesperrt	2:inwork 10385,11985 10284,12113
+#XXX del --- #: last_checked: 2011-03-04 --- #: next_check: 2011-05-15 --- Brüderstr.: Bauarbeiten, gesperrt	2:inwork 10385,11985 10284,12113
+# 
+#: last_checked: 2011-05-20
+#: next_check: 2011-08-01
+Alex-Wedding-Str.: Bauarbeiten, komplett gesperrt	2:inwork 11085,13239 11045,13183
 # 
 #: next_check: 2012-06-01 vvv
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1010/nachricht4088.html
