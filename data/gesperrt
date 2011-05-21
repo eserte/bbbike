@@ -553,7 +553,7 @@ Huttwiler Weg	1 6913,18460 6961,18453 7035,18413 7098,18383 7120,18295 7071,1823
 Markgrafenstr. (Zehlendorf)	1 475,2811 441,2987
 Bürstadter Weg	1 -847,4553 -760,4542
 Hartmannsweilerweg	1s 16,3744 41,3510 17,3471
-Alsenzer Weg	1s 27751,819 27798,872 27863,943 27968,1060
+Alsenzer Weg	1s 27751,819 27804,878 27863,943 27968,1060
 Fichtenweg	1 -2963,17872 -2949,17946 -2967,18033 -3000,18192
 Johann-Landefeldt-Str.	1 -8598,7018 -8532,7041 -8466,7064 -8404,7087 -8341,7108 -8275,7131 -8207,7156
 Johann-Landefeldt-Str.	1s -8619,7012 -8598,7018
@@ -1673,6 +1673,7 @@ Albrecht-Thaer-Weg -> Schorlemerallee: Mittelstreifen	3::igndisp 3449,6863 3347,
 Straßenbahntrasse	3nocross::ignrte 12396,17514 12436,17682 12467,17814
 Str. 56 -> Berliner Str.: Straßenbahntrasse	3::igndisp 12587,17603 12436,17682 12396,17514
 Berliner Str. -> Str. 56: Straßenbahntrasse	3::igndisp 12467,17814 12436,17682 12587,17603
+tragen (ca. 60 Stufen)	0:100:-55 28016,71
 tragen	0:180:-218 6376,23358
 tragen (ca. 30 Stufen)	0:30:-142 -1711,11452
 tragen	0:30:-140 -1663,11487

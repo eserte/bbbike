@@ -15,7 +15,7 @@ Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 
 Universitätsstr.: wegen Bauarbeiten Richtung Unter den Linden gesperrt	q4::inwork; 9580,12581 9601,12380
 Matkowskystr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 14530,11137 14509,11060
 Rathausstr.: Baustelle vor dem Roten Rathaus, eng	q4::inwork 10601,12521 10704,12595
-Am Carlsgarten: Bauarbeiten	q4::inwork 19468,7962 19372,8012 19334,8046
+Am Carlsgarten: Bauarbeiten	q4::inwork 19460,7954 19372,8012 19334,8046
 Rathausstr. zwischen Breitestr. und Poststr.: Fahrbahn wegen Brückenbauarbeiten gesperrt	q4::inwork 10281,12310 10362,12351
 Rathausstr. zwischen Breitestr. und Poststr.: Fahrbahn wegen Brückenbauarbeiten gesperrt	q4::inwork 10422,12395 10476,12432
 Alte Jakobstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10436,11344 10244,11160
@@ -438,7 +438,7 @@ Grazer Platz: Fußgänger, Bordsteine	q2 6546,6720 6530,6786 6529,6798
 (Nordmannzeile - Vorarlberger Damm): Fußgänger	q1 7220,7442 7314,7451
 Achenbachpromenade: Fußgänger, Radfahren erlaubt	q1 8763,8780 8748,8587 8715,8459
 Wildensteiner Str.: enge Straße	q1 18528,8331 18416,8163 18365,8094 18333,8059
-(Am Carlsgarten - Waldowallee): enger Abschnitt under der Bahnbrücke	q2 19468,7962 19504,8003 19558,8064
+(Am Carlsgarten - Waldowallee): enger Abschnitt under der Bahnbrücke	q2 19460,7954 19504,8003 19558,8064
 Linienstr./Oranienburger Str.: Fußgänger	q2 9225,13389 9296,13397
 Fontanestr.: zwei Schwellen, können umfahren werden	q1 18240,6845 18254,6679
 Triniusstr.: zwei Schwellen, können umfahren werden	q1 18417,6775 18339,6660
@@ -567,6 +567,7 @@ Cheruskerpark: Fußgänger	q1 7437,8712 7403,8693 7369,8583 7352,8390 7283,8265 72
 (Kolonie Zähringer Korso): eng	q3 8553,7795 8554,7746 8573,7710 8549,7622
 (Schulze-Boysen-Str. - Wilhelm-Guddorf-Str.): enge Straße	q1 15634,11656 15482,11729 15417,11681
 (Unterführung S-Bhf. Rummelsburg): Fußgänger	q4 15383,10656 15419,10706 15433,10765
+(Unterführung Bhf. Karlshorst): Fußgänger	q3 18877,8368 18910,8390 18949,8437
 Vereinsweg (Charlottenburg): Radfahren verboten	q4 2828,11731 2855,11752 2907,11755 2934,11747
 Neue Brücke: Fußgänger	q1 -3139,14710 -3143,14676 -3150,14631
 (Stichstr. - Charlottenburger Chaussee): Fußgänger	q1 -2039,13276 -2031,13310 -2046,13420
@@ -758,6 +759,9 @@ Schäßburger Weg: enge Straße	q1 6963,-82 6983,-123 7040,-188 7090,-225 7127,-248
 (Kamenzer Damm - Wunsiedeler Weg): Fußgänger	q1 7776,3163 7769,3264 7789,3362 7800,3435 7788,3551 7737,3598 7694,3623 7555,3632
 Rehauer Pfad: enge Straße	q1 7587,3411 7626,3554
 (zum Hafen Wannsee): Fußgänger	q2 -4827,1433 -4791,1561 -4870,1464 -4905,1514
+Appelbacher Weg: Rampe	q2 27780,893 27804,878
+Hallgarter Steig: eng und kurvig	q1 27890,373 27961,321 28042,304 28058,155 28086,90 28070,22 28083,-34 28065,-114 28042,-152
+Grottewitzwanderweg: eng, kurvig	q2 28042,-152 27852,-279 27825,-371 27703,-406 27624,-480 27605,-661 27573,-757 27603,-906 27562,-1043 27578,-1153 27539,-1337
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q3 11805,19071 11895,19183 11927,19308
 Ebersstr.: Schüler	q2 7245,8583 7292,8631
 Straße 103 (Niederschönhausen): enge Straße	q1 10914,20065 11051,19789
@@ -1534,7 +1538,7 @@ Straße 206: gegen die Einbahnstraßenrichtung, ggfs. schieben	q2::igndisp; 13247,
 Lötschbergstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 20161,11715 20150,11512
 Brodenbacher Weg: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 15178,17134 14897,17093
 Hartmannsweilerweg: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 16,3744 41,3510 17,3471
-Alsenzer Weg: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 27751,819 27798,872 27863,943 27968,1060
+Alsenzer Weg: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 27751,819 27804,878 27863,943 27968,1060
 Johann-Landefeldt-Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; -8619,7012 -8598,7018
 Joachimstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 22009,5593 21907,5517 21789,5427
 Cardinalstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 21901,5728 21828,5623 21706,5541
