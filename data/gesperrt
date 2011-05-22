@@ -620,6 +620,7 @@ Viktoria-Ufer	1 -3393,14470 -3360,14525 -3285,14615 -3259,14625 -3249,14621
 Viktoria-Ufer	1 -3444,14310 -3446,14386 -3410,14479
 Jüdenstr. (Spandau)	1 -3249,14621 -3316,14504 -3350,14446
 Hochbergplatz	1 4818,2279 4824,2266 4813,2256 4803,2257 4796,2271 4803,2280 4818,2279
+Jathoweg	1 5259,20186 5266,20299 5307,20437
 Am Neuen Garten	1 -12166,1384 -12212,1201 -12276,831 -12302,718
 Am Neuen Garten	1 -12332,585 -12582,127
 Hochstraße	3nocross::ignrte -11399,-1339 -11461,-1424 -11540,-1543
@@ -848,6 +849,8 @@ Mittelstreifen	3nocross::ignrte 16720,6845 16677,6892 16568,7009
 Güldenhofer Ufer -> Köpenicker Landstr.: Mittelstreifen	3::igndisp 16630,6800 16677,6892 16568,7009
 Köpenicker Landstr. -> Güldenhofer Ufer: Mittelstreifen	3::igndisp 16720,6845 16677,6892 16630,6800
 Straßenbahntrasse	3nocross::ignrte 23895,15450 23913,15333 23933,15209 23952,15086 23960,15021
+Stendaler Str. -> Arneburger Str.: Straßenbahntrasse	3::igndisp 23913,15333 23933,15209 23978,15215
+Arneburger Str. -> Stendaler Str.: Straßenbahntrasse	3::igndisp 23978,15215 23933,15209 23952,15086
 Quedlinburger Str. -> Stendaler Str.: Straßenbahntrasse	3::igndisp 23995,15092 23952,15086 23960,15021
 Stendaler Str. -> Quedlinburger Str.: Straßenbahntrasse	3::igndisp 23933,15209 23952,15086 23995,15092
 Mittelstreifen	3nocross::ignrte 5201,20103 5299,20104 5399,20106 5517,20120
