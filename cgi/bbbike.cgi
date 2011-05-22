@@ -5,7 +5,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998-2010 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998-2011 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
 # terms of the GNU General Public License, see the file COPYING.
 #
@@ -758,7 +758,7 @@ $require_Karte = sub {
     undef $require_Karte;
 };
 
-$VERSION = 10.003;
+$VERSION = 10.004;
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -6605,6 +6605,9 @@ EOF
     } elsif (defined $mapserver_init_url) {
         $s .= "<td><a href=\"$mapserver_init_url\">Mapserver</a></td>";
     }
+    if ($is_beta && $can_google_maps) {
+	$s .= qq{<td><a href="bbbikegooglemap.cgi?mapmode=search;maptype=hybrid">BBBike &amp; Google Maps</a></td>};
+    }
     $s .= <<EOF;
 </tr>
 </table>
@@ -7785,7 +7788,7 @@ Slaven Rezic <slaven@rezic.de>
 
 =head1 COPYRIGHT
 
-Copyright (C) 1998-2010 Slaven Rezic. All rights reserved.
+Copyright (C) 1998-2011 Slaven Rezic. All rights reserved.
 This is free software; you can redistribute it and/or modify it under the
 terms of the GNU General Public License, see the file COPYING.
 
