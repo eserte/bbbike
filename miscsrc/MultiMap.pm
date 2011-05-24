@@ -548,19 +548,23 @@ sub showmap_url_openstreetmap {
     my $px = $args{px};
     my $py = $args{py};
     my $with_marker = $args{osmmarker};
-    my $use_de = $args{use_de};
-    if ($use_de) {
+    my $layers_spec = '';
+    my $variant = $args{variant};
+    if ($variant eq 'de') {
 	$with_marker = 0; # not implemented on openstreetmap.de
+    } elsif ($variant eq 'sautter') {
+	$with_marker = 0; # not implemented on sautter.com
+	$layers_spec = '&layers=B000000FTFFFFTFF';
     }
     my $mpfx = $with_marker ? 'm' : ''; # "marker prefix"
-    my $base_url = ($use_de
-		    ? 'http://www.openstreetmap.de/karte.html'
-		    : 'http://www.openstreetmap.org/index.html'
+    my $base_url = (  $variant eq 'de'      ? 'http://www.openstreetmap.de/karte.html'
+		    : $variant eq 'sautter' ? 'http://sautter.com/map/'
+		    :                         'http://www.openstreetmap.org/index.html'
 		   );
 
     my $scale = 17 - log(($args{mapscale_scale})/3000)/log(2);
-    sprintf "$base_url?%slat=%s&%slon=%s&zoom=%d",
-	$mpfx, $py, $mpfx, $px, $scale;
+    sprintf "$base_url?%slat=%s&%slon=%s&zoom=%d%s",
+	$mpfx, $py, $mpfx, $px, $scale, $layers_spec;
 }
 
 sub showmap_openstreetmap {
@@ -571,7 +575,13 @@ sub showmap_openstreetmap {
 
 sub showmap_openstreetmap_de {
     my(%args) = @_;
-    my $url = showmap_url_openstreetmap(%args, use_de => 1);
+    my $url = showmap_url_openstreetmap(%args, variant => 'de');
+    start_browser($url);
+}
+
+sub showmap_openstreetmap_sautter {
+    my(%args) = @_;
+    my $url = showmap_url_openstreetmap(%args, variant => 'sautter');
     start_browser($url);
 }
 
@@ -593,10 +603,14 @@ sub show_openstreetmap_menu {
 	(-label => 'OpenStreetMap.org ' . ($lang eq 'de' ? '(ohne Marker)' : '(without marker)'),
 	 -command => sub { showmap_openstreetmap(osmmarker => 0, %args) },
 	);
+    $link_menu->command
+	(-label => 'Transparent Map Comparison',
+	 -command => sub { showmap_openstreetmap(variant => 'sautter', %args) },
+	);
     $link_menu->separator;
     $link_menu->command
 	(-label => ".de-Link kopieren", # XXX lang!
-	 -command => sub { _copy_link(showmap_url_openstreetmap(use_de => 1, %args)) },
+	 -command => sub { _copy_link(showmap_url_openstreetmap(variant => 'de', %args)) },
 	);
     $link_menu->command
 	(-label => ".org-Link mit Marker kopieren", # XXX lang!
@@ -605,6 +619,10 @@ sub show_openstreetmap_menu {
     $link_menu->command
 	(-label => ".org-Link ohne Marker kopieren", # XXX lang!
 	 -command => sub { _copy_link(showmap_url_openstreetmap(osmmarker => 0, %args)) },
+	);
+    $link_menu->command
+	(-label => "Transparent Map Comparison-Link kopieren", # XXX lang!
+	 -command => sub { _copy_link(showmap_url_openstreetmap(variant => 'sautter', %args)) },
 	);
 
     $w->{$menu_name} = $link_menu;
