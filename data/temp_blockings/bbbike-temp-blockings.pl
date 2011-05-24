@@ -14315,8 +14315,8 @@ userdel	2::inwork -19058,11636 -19029,11660 -18750,11919
 EOF
      },
      { from  => 1243863900, # 2009-06-01 15:45
-       until => 1306853100, # 2011-05-31 16:45
-       text  => 'Pasewalker Str. (Pankow): Baustelle, Fahrtrichtung gesperrt (bis Frühjahr 2011) stadteinwärts zwischen Marienstr. und Anschlussstelle A114, 02.06.2009 bis 31.05.2011',
+       until => 1307743140, # XXX 1306853100, # 2011-05-31 16:45
+       text  => 'Pasewalker Str. (Pankow): Baustelle, Fahrtrichtung gesperrt (bis Frühjahr 2011) stadteinwärts zwischen Marienstr. und Anschlussstelle A114, 02.06.2009 bis 10.06.2011',
        type  => 'handicap',
        source_id => 'IM_012907',
        data  => <<EOF,
@@ -18889,6 +18889,9 @@ EOF
        type  => 'handicap',
        source_id => 'IM_016132',
        data  => <<EOF,
+#: XXX Verkehrsfreigabe ist bereits erfolgt (2011-05-25) --- Einschränkung aufgehoben?
+#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20110520.1450.344975.html
+#: next_check: 2011-05-25
 userdel	q4::inwork; 7949,7607 7935,7736 7950,7840 8226,8648 8237,8685 8306,8722
 EOF
      },

@@ -492,6 +492,11 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 # Das heißt diese Strecken werden nicht bei einer erweiterten Suche aufgenommen
 # und dem CGI-Benutzer auch nicht präsentiert.
 # 
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/20re.pdf/file
+Bootsbauerstr.: private Wegverbindung, Qualität, Lage?	? 15079,10108 15033,10013
+#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1105/nachricht4346.html
+Gartenstr.: Zebrastreifen, wo genau?	? 9224,14169 9118,14306 9081,14363 8953,14528 8870,14637 8692,14923
+# 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/19re.pdf/file
 #: next_check: 2011-05-27
 #: XXX alle Straßen fehlen in Berlin.coords.data
@@ -546,11 +551,6 @@ Ribnitzer Str.: Vorfahrtsregelung?	? 16417,18266 16470,18307 16583,18393
 Ahrensfelder Chaussee/Dorfstr.: gibt es hier auch Radwege?	? 19782,18211 19875,18182 20136,18291 20160,18301
 #: by: http://farm6.static.flickr.com/5056/5499714699_fc775a243d_z.jpg
 Senefelderstr.: teilweise eine Spielstraße? Existiert die Ampel noch?	? 11593,15051 11615,15114 11636,15191 11657,15271
-# 
-#: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110224.0905.332693.html
-#: next_check: 2011-05-15
-#: last_checked: 2011-05-01
-Roederplatz: Platz bekommt demnächst wieder den alten Namen	? 15502,13539
 # 
 #: by: osm
 Heißt dieser Abschnitt "Chaussee nach Bornim"?	? -19100,407 -18964,793 -18688,1177
@@ -687,8 +687,6 @@ Kleistpark: im Sommer bis 21 Uhr geöffnet, im Winter bis 18 Uhr	? 7209,9507 7246
 # 
 #: by: Christopher Suckrow
 Albiger Weg: guter Asphalt	? -2837,2194 -2841,2258 -2929,2255 -2934,2186
-#: by: Eva Meurer:
-Fichtengrund: Kopfsteinpflaster, Q2	? 24922,-3063 24882,-2945 24872,-2868 24868,-2739
 #: by: anonymous:
 Straße 902: schlechter Asphalt, Q2	? 23497,705 23574,689
 #: by: anonymous:
@@ -1600,10 +1598,6 @@ Bahnübergang	? 19302,-734
 #: XXX Zumindest in Höhe des S-Bahnübergangs asphaltiert; dort existiert für wenige Meter ein benutzungspflichtiger Zweirichtungsradweg auf der Südostseite
 Bohnsdorfer Chaussee: Qualität?	? 19248,-771 19054,-903 18773,-1095
 Gartenstr.: Qualität?	? 18773,-1095 18892,-1273
-#: XXX von der Bahn aus gesehen sah der westliche Abschnitt asphaltiert aus:
-#: XXX anonymous meint: "Straßenzustand OK, wenig Autos"
-#: XXX ein anderer Eintrag von anonymous: Q0, Beton, q1, rechts-vor-links
-Waldstr.: Qualität?	? 24456,-3327 24539,-3292 24553,-3281 24668,-3212 24777,-3149 24872,-3095 24901,-3076 24922,-3063 25006,-3014 25182,-2915 25288,-2849 25373,-2797 25461,-2744 25509,-2715 25580,-2673 25631,-2642 25902,-2486 25958,-2455
 Bahnhofstr.: Qualität in diesem Abschnitt (ostl. d. Bergstr.)?	? -2657,-2907 -2720,-2937 -2817,-2967 -2878,-3004
 #: by: Sarah Hemmelmann - q3
 Ahornallee (Rosenthal): Qualität?	? 9737,20728 9859,20542
@@ -2176,7 +2170,6 @@ Dranweg: Qualität?	? 16902,26662 16796,26762 16666,26881 16627,26917
 Uhlenweg: Qualität?	? 16683,26448 16589,26536 16522,26599 16458,26658 16384,26726
 Grollstr.: Qualität?	? 16522,26599 16415,26481
 Schmetstorpweg: Qualität?	? 16547,26309 16463,26389
-Ernst-Ludwig-Heim-Str.: Qualität?	? 16682,24758 16613,24643 16487,24721
 Theodor-Brugsch-Str.: Qualität?	? 16602,25126 16633,25116 16801,25057 16960,24955
 #: XXX Eintrag von anonymous: guter Asphalt, Radwege (aber ich sehe keine Radwege im Luftbild)
 Georg-Benjamin-Str.: Qualität?	? 16633,25116 16589,24977 16736,24912 16868,24858 16960,24955 17031,25008
@@ -2493,9 +2486,6 @@ Nieden - Göritz: Qualität?	? 43753,115606 43904,115305 43730,115229 42427,113348
 Göritz - Tornow: Qualität?	? 43007,111999 43070,112007 43476,111826 43822,111442 44872,110944 45766,110618
 Karlshorst - Klockow: Qualität?	? 47335,110888 48560,110342 48678,110373 49007,110760 49176,110846 49375,110881
 Klockow - Carmzow: Qualität (am Carmzower Ende asphaltiert)?	? 49504,110961 49632,111046 49784,110602 49946,110487 50378,110259 50590,110075 50764,110031 50955,110066 51082,110034 51139,109983 51948,109454
-#: XXX ein anonymer Eintrag war nicht klar: "Asphalt Q1" (die gesamte Straße?), "Radweg" (???)
-#: XXX zumindest der westliche Abschnitt ist betoniert, dort kein Radweg
-Azaleenstr.: Qualität? Qualität jenseits der Birkenstr.? Gibt es einen Zugang für Radfahrer zum Uferweg?	? 23443,4524 23544,4541 23634,4563 23701,4584 23798,4642 23869,4733 23874,4924 23858,4927 23796,4929
 Mönchmühlenstr.: laut osm ist die Straße teilweise für den Kfz-Verkehr gesperrt, stimmt das?	? 8780,26384 8684,26216 8570,26107 8302,25963
 Gielsdorfer Str.: Qualität?	? 24019,11264 24018,11320 24034,11363 24094,11521 24063,11535 24071,11573 24089,11665 24121,11795 24132,11859 24137,11930
 Hornsteiner Weg: Qualität westlich des Finkenwalder Wegs?	? 23474,11391 23389,11390
@@ -3017,7 +3007,6 @@ Neuer Weg: Qualität?	? 23660,5307 23492,5334
 Neuer Weg: Qualität?	? 23469,5340 23427,5349
 Grünfließer Gang: Qualität? Nachts beleuchtet?	? 23696,5529 23681,5565 23675,5810
 Gladiolenstr.: Qualität?	? 23544,4541 23541,4439 23537,4238
-Birkenstr. (Köpenick): Qualität?	? 24170,4560 24078,4595 23980,4633 23934,4661 23947,4673 23869,4733
 Am Spielplatz: Qualität? Für Radfahrer befahrbar? Nachts beleuchtet?	? 23878,4406 23766,4376 23658,4359
 Dahlienstr.: Qualität?	? 24107,4309 24126,4402 24170,4560
 Kleingartenstr.: Qualität?	? 24126,4402 24075,4417 24022,4442 23988,4482
@@ -3777,7 +3766,6 @@ Straupitzer Steig: Qualität?	? 6768,21515 6777,21335
 Straße 189 (Lübars): Qualität?	? 6353,22515 6301,22581
 #: XXX fehlt in Berlin.coords.data
 Straße 188 (Lübars): Qualität?	? 6353,22622 6301,22581 6254,22546
-(Wittenauer Str. - Zabel-Krüger-Damm): Nachts beleuchtet?	? 6301,22581 6254,22633 6226,22712 6240,22759 6243,22797 6126,22952 6075,23022
 #: XXX fehlt in Berlin.coords.data und bei osm
 Straße 185 (Lübars): Qualität?	? 6006,22867 6083,22772
 #: XXX fehlt in Berlin.coords.data und bei osm
@@ -4203,8 +4191,9 @@ Hannes-Meyer-Str. (Potsdam): Qualität?	? -14114,580 -13958,534
 #: XXX fehlt in Potsdam.coords.data
 Elisenweg (Potsdam): Qualität?	? -17194,-4659 -17217,-4610 -17235,-4609 -17599,-4389 -17810,-4254 -17847,-4179
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/10re.pdf/file
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/20re.pdf/file
 #: XXX fehlt in Berlin.coords.data
-Karlshöhe: wo genau liegt die Straße? Qualität?	? 11972,23260 11281,23876
+Karlshöhe: Wo genau liegt die Straße? Oder ist es nur eine Kleingartenanlage? Qualität?	? 11972,23260 11281,23876
 Selerweg: geht die Straße bis zur Bismarckstr.? Qualität?	? 5976,5293 6114,5284
 Westfälische Str.: existiert eine Radspur auch zwischen Johann-Sigismund-Str. und Kurfürstendamm?	? 2938,9935 2825,9971 2770,10024
 # 
@@ -4259,3 +4248,5 @@ Idunastr.: ist der westliche Abschnitt eine Einbahnstraße?	? 12190,19009 12522,1
 Zehntwerderweg: Zehntwerderweg östlich Am Vierrutenberg mit Verbundsteinpflaster?	? 5809,23420 6013,23521 6114,23556
 #: XXX wahrscheinlich "Fußgänger, qX"
 Ronnebypromenade: Qualität?	? -5135,1377 -5127,1392 -5065,1392 -5002,1382 -4947,1430 -4905,1514
+Bettina-von-Arnim-Str. (Potsdam): Qualität?	? -7689,-5039 -7628,-5142
+Romanusplatz (Eichwalde): Qualität?	? 25651,-3855 25636,-3813 25622,-3761 25635,-3723 25668,-3739 25712,-3836
