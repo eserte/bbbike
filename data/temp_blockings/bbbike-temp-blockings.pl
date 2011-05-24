@@ -17313,9 +17313,6 @@ EOF
        type  => 'handicap',
        source_id => 'INKO_090026',
        data  => <<EOF,
-#: last_checked: 2011-04-07
-#: next_check: 2011-05-14
-#: XXX nach den Bauarbeiten vielleicht besserer Asphalt? Siehe qualitaet_s-orig...
 userdel	q4::inwork; 12598,8390 12771,8439
 EOF
      },
@@ -19052,6 +19049,26 @@ EOF
 userdel	2::temp 8055,12186 8089,12190 8214,12205 8538,12245 8610,12254
 userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
 userdel	2::temp 8542,11502 8548,11552
+EOF
+     },
+     { from  => 1306213385, # 2011-05-24 07:03
+       until => 1306965599, # 2011-06-01 23:59
+       text  => 'Puschkinallee (Treptow) zwischen Bulgarische Str. und Elsenstr. Baustelle, Straße vollständig gesperrt (bis Anfang 06/11) ',
+       type  => 'gesperrt',
+       source_id => 'IM_017318',
+       data  => <<EOF,
+userdel	2::inwork 15383,9191 14819,9462 14780,9480 14310,9692
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Fuldastr., von Donaustr. Richtung Karl-Marx-Str. ist die Fahrbahn gesperrt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: last_checked: 2011-05-24
+#: next_check: 2011-06-05
+#: XXX wie lange gilt die Sperrung?
+userdel	q4::inwork; 12549,8616 12500,8504
 EOF
      },
     );
