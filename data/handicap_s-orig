@@ -40,8 +40,16 @@ Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 
 #: last_checked: 2011-04-30
 Universitätsstr.: wegen Bauarbeiten Richtung Unter den Linden gesperrt	q4::inwork; 9580,12581 9601,12380
 # 
-#: next_check: 2011-06-01
+#: last_checked: 2011-05-26
+#: next_check: 2011-08-01
 Matkowskystr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 14530,11137 14509,11060
+#:
+#: last_checked: 2011-05-26 vvv
+#: next_check: 2011-08-01
+Helmerdingstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 14465,11195 14442,11101
+Haasestr.: Einbahnstraße ist eingerichtet	q4::inwork; 14286,11186 14327,11308
+#: next_check: ^^^
+#: last_checked: ^^^
 # 
 #: last_checked: 2011-05-05
 #: next_check: 2011-08-01
@@ -101,9 +109,9 @@ Dircksenstr.: langsame Straßenbahnen, Fußgänger	q2 10970,12822 10849,12944
 Dircksenstr.: Fußgänger	q2 10970,12822 11007,12773 11030,12741 11087,12780 11105,12764
 Gontardstr.: langsame Straßenbahnen, Fußgänger	q2 10740,12960 10793,12906 10923,12779
 Uferweg im Treptower Park: Fußgänger, besonders an schönen Tagen	q2 15793,8984 15638,9020 15527,9096 15513,9144 15432,9322 15321,9448 15140,9566 14910,9643 14697,9726 14671,9759 14500,9856 14483,9843 14448,9922
-(S-Bahnhof - Treptower Hafen): Fußgänger, besonders an schönen Tagen	q2 14351,9757 14436,9784 14483,9843
+(S-Bahnhof - Treptower Hafen): Fußgänger, besonders an schönen Tagen	q2 14361,9772 14436,9784 14483,9843
 Treptower Park, am Rosengarten: Fußgänger	q2 14819,9462 14910,9643
-Treptower Park: Fußgänger	q1 14697,9726 14645,9710 14575,9648 14496,9705 14351,9757
+Treptower Park: Fußgänger	q1 14697,9726 14645,9710 14575,9648 14496,9705 14361,9772
 Görlitzer Park: Parkweg, Fußgänger	q2 12671,10042 12686,10045 12690,10062
 Görlitzer Park: Parkweg, Fußgänger	q2 12761,10195 12769,10211 12774,10222
 Görlitzer Park: Parkweg, Fußgänger	q2 13145,9920 12869,10071 12802,10097
@@ -129,7 +137,7 @@ Tiergarten: Parkweg	q1 8021,11636 8016,11770
 Tiergarten: Parkweg	q1 7663,11946 7570,11855 7223,11897 7073,11798 6778,11742 6540,11754
 Tiergarten: Parkweg	q1 7816,12150 7827,12105 7832,12036 7822,11952 7801,11875 7795,11823 7777,11787 7772,11749 7796,11681 7816,11571
 (Bremer Weg - Fasanerieallee): Parkweg	q1 6342,11878 6379,11843 6406,11784 6467,11780 6540,11754
-Parkweg: enge Brücke, Fußweg	q2 14310,9692 14351,9757 14404,9847 14448,9922 14453,9929 14558,10082 14597,10129 14626,10162 14652,10201
+Parkweg: enge Brücke, Fußweg	q2 14310,9692 14361,9772 14404,9847 14448,9922 14453,9929 14558,10082 14597,10129 14626,10162 14652,10201
 Spittelmarkt: Gehweg	q1 10369,11728 10240,11740
 Beuthstr. - Spittelmarkt: Gehweg	q1 10229,11618 10213,11728
 Spittelmarkt: Gehweg	q1 10166,11592 10153,11666 10213,11728

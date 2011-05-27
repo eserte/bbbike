@@ -126,14 +126,14 @@ Streitstr. (werden die vorhandenen Bordsteinradwege ersetzt)?	?::projected -3040
 Wollankstr.: Angebotsstreifen werden bis Herbst 2011 eingerichtet	?::projected 9727,17804 9791,17877 9832,17925 9870,17971 9978,18104 10027,18165 10089,18180
 #
 #: by: Tagesspiegel vom 2010-03-31
-#: last_checked: 2011-04-30
-#: next_check: 2011-06-01
+#: last_checked: 2011-05-25
+#: next_check: 2011-07-25
 Rüdersdorfer Str. bekommt Radspuren	?::projected 13066,11854 12891,12008
 #
 #: by: Tagesspiegel vom 2010-03-26
-#: last_checked: 2011-05-03
-#: next_check: 2011-06-01
-Lindenstr. bekommt Radspuren	?::projected 9795,10512 9770,10590 9777,10719 9805,10791 9829,10830 9935,11067 9973,11150 10020,11262
+#: last_checked: 2011-05-26
+#: next_check: 2011-05-27
+Lindenstr./Axel-Springer-Str.: Markierungsarbeiten für Radspuren haben begonnen	?::projected 9795,10512 9770,10590 9777,10719 9805,10791 9829,10830 9935,11067 9973,11150 10020,11262 10072,11384 10116,11485 10136,11529 10166,11592
 #
 #: XXX http://fahrrad.wikia.com/wiki/Fahrradstra%C3%9Fe/Liste_von_Fahrradstra%C3%9Fen#Berlin -> ja
 #: XXX Frank Baumeister: -> ja
@@ -1797,6 +1797,7 @@ Wattstr.: Qualität? Einbahnstraße auch für Radfahrer gültig?	? 999,14390 998,145
 #: XXX: Einbahn offen Richtung Süden
 Grammestr.: Qualität zwischen Nonnendammallee und Jugendweg? Einbahnstraße auch für Radfahrer gültig?	? 1057,14389 1058,14459 1059,14515
 #: XXX: Einbahn offen Richtung Westen
+#: XXX anonymous meint: Kopfsteinpflaster, Q2, aber keine Angaben zur Einbahnstraße
 Halskesteig: Qualität? Einbahnstraße auch für Radfahrer gültig?	? 1166,14458 1058,14459
 Am Laubwald: Qualität?	? 981,15490 1078,15524
 Sternfelder Str.: Qualität?	? 386,14162 367,13991 371,13863 182,13878 169,13851
@@ -2568,8 +2569,6 @@ Grünlandweg: Qualität?	? 4026,20428 3956,20457 3887,20526 3861,20575
 Fetschowzeile: Qualität?	? 4349,20231 4249,20312
 Am Grüngürtel: Qualität? Kann man als Radfahrer weiter in Richtung Weg Triftstr.-Eichborndamm fahren?	? 4526,20362 4597,20508
 Bad-Steben-Str.: Qualität?	? 4808,20159 4733,20203 4719,20237 4738,20252 4744,20288 4718,20341
-#: XXX der westliche Teil anscheinend keine Einbahnstraße
-Taldorfer Weg: Qualität? Sind Teile der Straße Einbahnstraße, sowohl für Autos als auch für Radfahrer?	? 5506,20197 5259,20186 5170,20182 5093,20192 4950,20299 4899,20301
 Prädikow - Ihlow: Qualität? Für Autos gesperrt?	? 51867,25572 53381,24795 55410,24766
 Kastanienweg (Prädikow): Qualität?	? 51257,25175 51562,25039 51776,25017
 Dorfstr. (Prädikow): Qualität?	? 51461,25613 51464,25638 51509,25735
@@ -2819,7 +2818,6 @@ Rehbrücker Weg: Qualität?	? -772,1769 -769,1677
 Gütergotzer Str.: Qualität?	? -652,1823 -624,1718 -472,1724 -418,1787
 Radtkestr.: Qualität?	? 29,1877 18,1928 -34,2147
 Thürstr.: Qualität?	? 93,2014 26,2179
-Dallwitzstr.: Qualität?	? 104,2220 163,2091 146,2073 93,2014 79,1992 18,1928
 #: XXX_osm: bei osm falsch (mit Bindestrichen) geschrieben
 Am Weißen Steg: Qualität?	? 294,2322 329,2246
 Grenzpfad: Qualität?	? 436,2295 271,2129

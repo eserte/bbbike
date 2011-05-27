@@ -19075,7 +19075,7 @@ userdel	q4::inwork; 12549,8616 12500,8504
 EOF
      },
      { from  => undef, # 
-       until => 1306447199, # 2011-05-26 23:59
+       until => 1306436321, # 1306447199, # 2011-05-26 23:59
        text  => 'Oberbaumbruecke wegen Bombenfunds gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
