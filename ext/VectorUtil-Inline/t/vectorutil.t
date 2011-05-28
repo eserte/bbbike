@@ -25,7 +25,7 @@ BEGIN {
     }
 }
 
-BEGIN { plan tests => 7+10000 }
+BEGIN { plan tests => 7+6+10000 }
 
 my @p;
 
@@ -50,6 +50,31 @@ for my $p ([1,2,3,4,5,6],
     ok(VectorUtil::vector_in_grid_PP(@p),
        VectorUtil::vector_in_grid(@p));
 }
+
+{
+    my($gridx1,$gridy1,$gridx2,$gridy2) = (1,1,2,2);
+    for my $sub (\&VectorUtil::vector_in_grid_PP,
+		 \&VectorUtil::vector_in_grid_XS,
+		) {
+	ok !$sub->((0.99999999,0.99999999,2.00000001,0.99999999),
+		   $gridx1,$gridy1,$gridx2,$gridy2
+		  );
+	ok $sub->((0.99999999,0.99999999,1.99999999,1..0000001),
+		  $gridx1,$gridy1,$gridx2,$gridy2
+		 ); # ret=6;
+    SKIP: {
+	    my $dbl_epsilon = eval {
+		require POSIX;
+		POSIX::DBL_EPSILON();
+	    };
+	    skip "DBL_EPSILON not defined",1 if !$dbl_epsilon;
+	    ok $sub->(($gridx1-$dbl_epsilon,$gridy1-$dbl_epsilon,$gridx1+$dbl_epsilon,$gridy2+$dbl_epsilon*2),
+		      $gridx1,$gridy1,$gridx2,$gridy2
+		     ); # ret=1;
+	}
+    }
+}
+
 for (1..5000) {
     my @p = map { rand(40000)-20000 } (1..6);
     my $diff = abs(VectorUtil::distance_point_line_PP(@p) -

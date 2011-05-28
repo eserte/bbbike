@@ -21,6 +21,7 @@ BEGIN {
 
 plan tests => 12;
 
+# note: additional tests in ext/VectorUtil-Inline/t
 use_ok('VectorUtil', 'intersect_rectangles', 'normalize_rectangle',
        'enclosed_rectangle', 'bbox_of_polygon', 'combine_bboxes');
 
