@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999,2001,2004,2008,2010 Slaven Rezic. All rights reserved.
+# Copyright (C) 1999,2001,2004,2008,2010,2011 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,7 +15,7 @@ package VectorUtil;
 
 use strict;
 use vars qw($VERSION $VERBOSE @ISA @EXPORT_OK);
-$VERSION = 1.21;
+$VERSION = 1.22;
 
 require Exporter;
 @ISA = 'Exporter';
@@ -57,7 +57,7 @@ sub vector_in_grid {
 	# Schnittpunkt-Test am rechten Rand
 	my $d_x1_gridx1 = ($gridx1 - $x1);
 	my $a = $d_x1_gridx1*$ges_strecke/($x2-$x1);
-	my $b = sqrt($a*$a - $d_x1_gridx1*$d_x1_gridx1);
+	my $b = _pos_sqrt($a*$a - $d_x1_gridx1*$d_x1_gridx1);
 	$sgn = ($y1 < $y2 ? 1 : -1);
 	$sgn *= -1 if (($x1 < $x2 && $x1 > $gridx1) ||
 		       ($x2 < $x1 && $x1 < $gridx1));
@@ -72,7 +72,7 @@ sub vector_in_grid {
 	# Schnittpunkt-Test am linken Rand
 	my $d_x1_gridx2 = ($gridx2 - $x1);
 	$a = $d_x1_gridx2*$ges_strecke/($x2-$x1);
-	$b = sqrt($a*$a - $d_x1_gridx2*$d_x1_gridx2);
+	$b = _pos_sqrt($a*$a - $d_x1_gridx2*$d_x1_gridx2);
 	$sgn = ($y1 < $y2 ? 1 : -1);
 	$sgn *= -1 if (($x1 < $x2 && $x1 > $gridx2) ||
 		       ($x2 < $x1 && $x1 < $gridx2));
@@ -89,7 +89,7 @@ sub vector_in_grid {
 	# Schnittpunkt-Test am oberen Rand (geometrisch unten)
 	my $d_y1_gridy2 = ($gridy2 - $y1);
 	my $a = $d_y1_gridy2*$ges_strecke/($y2-$y1);
-	my $b = sqrt($a*$a - $d_y1_gridy2*$d_y1_gridy2);
+	my $b = _pos_sqrt($a*$a - $d_y1_gridy2*$d_y1_gridy2);
 	$sgn = ($x1 < $x2 ? 1 : -1);
 	$sgn *= -1 if (($y1 < $y2 && $y1 > $gridy2) ||
 		       ($y2 < $y1 && $y1 < $gridy2));
@@ -105,7 +105,7 @@ sub vector_in_grid {
 
 	my $d_y1_gridy1 = ($gridy1 - $y1);
 	$a = $d_y1_gridy1*$ges_strecke/($y2-$y1);
-	$b = sqrt($a*$a - $d_y1_gridy1*$d_y1_gridy1);
+	$b = _pos_sqrt($a*$a - $d_y1_gridy1*$d_y1_gridy1);
 	$sgn = ($x1 < $x2 ? 1 : -1);
 	$sgn *= -1 if (($y1 < $y2 && $y1 > $gridy1) ||
 		       ($y2 < $y1 && $y1 < $gridy1));
@@ -492,6 +492,9 @@ sub combine_bboxes {
     }
     [$minx,$miny,$maxx,$maxy];
 }
+
+# Protect from floating point inaccuracies
+sub _pos_sqrt { $_[0] < 0 ? 0 : sqrt($_[0]) }
 
 # REPO BEGIN
 # REPO NAME sqr /home/e/eserte/src/repository 

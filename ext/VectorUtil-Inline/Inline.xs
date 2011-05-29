@@ -1,8 +1,7 @@
 
-/* $Id: Inline.xs,v 1.1 2004/01/17 23:25:27 eserte Exp $ */
 /* Author: Slaven Rezic */
 
-/* Copyright (C) 2001,2003,2004 Slaven Rezic. All rights reserved. */
+/* Copyright (C) 2001,2003,2004,2011 Slaven Rezic. All rights reserved. */
 /* This is free software; you can redistribute it and/or modify it under the */
 /* terms of the GNU General Public License, see the file COPYING. */
 
@@ -22,6 +21,11 @@ typedef struct { int x; int y; } POINT;
 #define MAX(x,y) (x > y ? x : y)
 
 #include <math.h>
+
+/* Protect from floating point inaccuracies */
+static double _pos_sqrt(double arg) {
+    return(arg < 0 ? 0 : sqrt(arg));
+}
 
 int vector_in_grid(double x1, double y1, double x2, double y2,
 		   double gridx1, double gridy1,
@@ -53,7 +57,7 @@ int vector_in_grid(double x1, double y1, double x2, double y2,
 	/* Schnittpunkt-Test am rechten Rand */
 	double d_x1_gridx1 = (gridx1 - x1);
 	double a = d_x1_gridx1*ges_strecke/(x2-x1);
-	double b = sqrt(a*a - d_x1_gridx1*d_x1_gridx1);
+	double b = _pos_sqrt(a*a - d_x1_gridx1*d_x1_gridx1);
 	double schnitt_y_gridx1;
 	double d_x1_gridx2;
 	double schnitt_y_gridx2;
@@ -75,7 +79,7 @@ int vector_in_grid(double x1, double y1, double x2, double y2,
 	/* Schnittpunkt-Test am linken Rand */
 	d_x1_gridx2 = (gridx2 - x1);
 	a = d_x1_gridx2*ges_strecke/(x2-x1);
-	b = sqrt(a*a - d_x1_gridx2*d_x1_gridx2);
+	b = _pos_sqrt(a*a - d_x1_gridx2*d_x1_gridx2);
 	sgn = (y1 < y2 ? 1 : -1);
 	if ((x1 < x2 && x1 > gridx2) ||
 	    (x2 < x1 && x1 < gridx2)) {
@@ -97,7 +101,7 @@ int vector_in_grid(double x1, double y1, double x2, double y2,
 	double d_y1_gridy2 = (gridy2 - y1);
 	double d_y1_gridy1;
 	double a = d_y1_gridy2*ges_strecke/(y2-y1);
-	double b = sqrt(a*a - d_y1_gridy2*d_y1_gridy2);
+	double b = _pos_sqrt(a*a - d_y1_gridy2*d_y1_gridy2);
 	double schnitt_x_gridy1;
 	double schnitt_x_gridy2;
 	sgn = (x1 < x2 ? 1 : -1);
@@ -118,7 +122,7 @@ int vector_in_grid(double x1, double y1, double x2, double y2,
 	/* Schnittpunkt-Test am unteren Rand (geometrisch oben) */
 	d_y1_gridy1 = (gridy1 - y1);
 	a = d_y1_gridy1*ges_strecke/(y2-y1);
-	b = sqrt(a*a - d_y1_gridy1*d_y1_gridy1);
+	b = _pos_sqrt(a*a - d_y1_gridy1*d_y1_gridy1);
 	sgn = (x1 < x2 ? 1 : -1);
 	if ((y1 < y2 && y1 > gridy1) ||
 	    (y2 < y1 && y1 < gridy1)) {
