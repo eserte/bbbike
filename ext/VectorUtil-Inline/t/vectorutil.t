@@ -2,7 +2,6 @@
 # -*- perl -*-
 
 #
-# $Id: vectorutil.t,v 1.7 2003/08/30 20:32:36 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -25,7 +24,7 @@ BEGIN {
     }
 }
 
-BEGIN { plan tests => 7+6+10000 }
+BEGIN { plan tests => 14+10000 }
 
 my @p;
 
@@ -49,6 +48,14 @@ for my $p ([1,2,3,4,5,6],
        VectorUtil::vector_in_grid_XS(@p));
     ok(VectorUtil::vector_in_grid_PP(@p),
        VectorUtil::vector_in_grid(@p));
+}
+
+{
+    # dealing with floating point inaccuracies (problem pointed by
+    # wosch)
+    my $gridx1 = 14.37 + 1.77635683940025e-15;
+    ok(VectorUtil::vector_in_grid_XS(14.36346, 53.27772, 14.38895, 53.27772, $gridx1, 53.27, 14.38, 53.28),
+       VectorUtil::vector_in_grid_PP(14.36346, 53.27772, 14.38895, 53.27772, $gridx1, 53.27, 14.38, 53.28));
 }
 
 {
