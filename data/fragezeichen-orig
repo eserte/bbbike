@@ -492,6 +492,7 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 # Das heißt diese Strecken werden nicht bei einer erweiterten Suche aufgenommen
 # und dem CGI-Benutzer auch nicht präsentiert.
 # 
+Bernauer Str. - Emstaler Platz: gibt es hier eine Verbindung?	? 1659,18747 1632,18855
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/20re.pdf/file
 Bootsbauerstr.: private Wegverbindung, Qualität, Lage?	? 15079,10108 15033,10013
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1105/nachricht4346.html
@@ -685,6 +686,8 @@ Kleistpark: im Sommer bis 21 Uhr geöffnet, im Winter bis 18 Uhr	? 7209,9507 7246
 #: section isolated entries vvv
 #: section ignorieren vvv
 # 
+#: by: Carsten Kessel
+Rauhfußgasse: guter Beton, Q0-	? -1276,19759 -1157,19711 -1071,19689
 #: by: Christopher Suckrow
 Albiger Weg: guter Asphalt	? -2837,2194 -2841,2258 -2929,2255 -2934,2186
 #: by: anonymous:
@@ -1869,10 +1872,10 @@ Erndtebrücker Weg: Qualität?	? 2419,18572 2501,18594 2498,18657
 Oelder Weg: Qualität?	? 1967,18743 1965,18686 1965,18651 1974,18616
 Finnentroper Weg: Qualität?	? 2117,18632 2162,18452 2199,18304 2210,18262
 Betzdorfer Pfad: Qualität?	? 2199,18304 2278,18335
+#: XXX angela hanemann meint "Q2" ohne weitere Angaben
 Plettenberger Pfad: Qualität?	? 1869,18608 1903,18429 1924,18311 1936,18209
 Breckerfelder Pfad: Qualität?	? 1457,18237 1501,18429
 Letmather Weg: Qualität?	? 1524,18221 1546,18317 1557,18421
-Emstaler Platz: Qualität? Für Autos gesperrt?	? 1864,18856 1632,18855 1631,18958
 Kirchgasse (Tegel): Qualität? Für Autos gesperrt?	? 1630,20097 1669,19982
 Dacheroedenstr.: Qualität?	? 1407,20563 1387,20621 1377,20737
 Wachstr.: Qualität?	? 1326,20600 1295,20732
@@ -2127,7 +2130,6 @@ Am Eulenhorst: Qualität?	? -1787,19341 -1764,19343 -1612,19362 -1584,19363 -1492
 Rabenstr.: Qualität?	? -1788,19663 -1721,19658 -1663,19632 -1508,19578 -1374,19524 -1273,19466 -1195,19479
 Milanstr.: Qualität?	? -1428,19381 -1374,19524 -1324,19640 -1284,19742 -1276,19759 -1240,19849 -1240,19869
 Steinkauzgasse: Qualität?	? -1324,19640 -1193,19587 -1102,19564
-Rauhfußgasse: Qualität?	? -1276,19759 -1157,19711 -1071,19689
 An der Krähenheide: Qualität?	? -1102,19564 -1071,19689 -1048,19779
 Gabelweihstr.: Qualität?	? -1492,19370 -1557,19457 -1681,19593
 Dorndreherweg: Qualität?	? -1364,19982 -1414,20145 -1473,20181 -1578,20228
@@ -2291,7 +2293,6 @@ Auber Steig: Qualität?	? 2931,24751 3030,24857
 Hambacher Weg: Qualität?	? 3186,24812 3239,24892 3267,24964
 Barthstr.: Qualität?	? 2110,26268 2155,26274 2158,26408
 Rüdesheimer Str. (Frohnau): Qualität?	? 2818,25022 2823,25038 2910,25064 3111,25170 3174,25213 3232,25234 3314,25243
-Hohenheimer Str.: Qualität?	? 2694,25132 2834,25175 2995,25252 3075,25288 3177,25299 3262,25281 3274,25287
 Weislingenstr.: Qualität?	? 2944,26099 3057,26075 3152,26051 3169,26048 3217,26049 3275,26061
 Hofjägerallee (Frohnau): Qualität?	? 2867,25406 2904,25476 2928,25547 2950,25667 2963,25728 2989,25784
 Konzer Platz: Qualität?	? 2963,25728 2897,25776
@@ -2615,8 +2616,7 @@ Straußstr. (Mahlsdorf): Qualität?	? 25490,11578 25526,11703 25556,11826 25594,11
 Kuhnaustr.: Qualität?	? 24919,11783 24969,11932 24936,12071
 Händelstr. (Mahlsdorf): Qualität?	? 25512,12183 25814,12090 25911,12062
 Lisztstr. (Mahlsdorf): Qualität?	? 25814,12090 25857,12206 25854,12238
-#: XXX Bauarbeiten waren Mai 2009
-Blankenfelde, Berliner Str. und Hauptstr: Ist die Fahrbahnqualität (früher Kopfsteinpflaster) nach den Bauarbeiten besser geworden?	? 9528,23240 9490,23531 9425,23693 9625,23781 9774,23936
+#XXX del --- #: XXX Bauarbeiten waren Mai 2009 --- Blankenfelde, Berliner Str. und Hauptstr: Ist die Fahrbahnqualität (früher Kopfsteinpflaster) nach den Bauarbeiten besser geworden?	? 9528,23240 9490,23531 9425,23693 9625,23781 9774,23936
 Weg an der Havel: Für Radfahrer befahrbar? Qualität?	? -3370,14115 -3312,14036 -3353,13990 -3493,13782 -3543,13691 -3566,13580 -3555,13485
 Schiffahrtsufer: Für Radfahrer befahrbar? Qualität?	? -3555,13485 -3441,13270
 Reiterhof, Phöben - Havelfähre: Qualität des Radwegs?	? -25787,3228 -25765,3246 -25530,3223 -25511,3313 -25425,3364 -25345,3389 -25282,3433 -25191,3442 -25198,3540 -25262,3561 -25373,3653 -25460,3795 -25563,3940 -25592,3985 -25578,4203 -25471,4332 -25506,4488 -25723,4736 -25725,4734 -25726,4734 -25855,4868 -25942,5010 -26073,5175 -26215,5272 -26647,5444 -26755,5459 -26918,5525
@@ -2772,7 +2772,6 @@ Feierabendweg: Qualität?	? 24938,13688 25020,13661 25099,13746
 Randweg: Qualität?	? 24929,13692 24940,13740 24884,13786 24731,13847
 Karlshafener Str.: Qualität?	? 25228,12821 25050,12921 24902,13000 24696,13120 24640,13149
 Landréstr.: Qualität?	? 23895,12374 23848,12252 23793,12115
-Hannsdorfer Str.: Qualität?	? 23696,12575 23653,12471 23587,12301 23517,12129
 Kranoldstr. (Kaulsdorf): Qualität?	? 23244,12417 23345,12387 23459,12345 23587,12301 23707,12258
 Rahnestr.: Qualität?	? 23725,12302 23848,12252 24008,12193
 Fauststr.: Qualität?	? 24398,12271 24292,12415
@@ -2940,7 +2939,6 @@ Martin-Rudloff-Weg: Qualität?	? -127,22653 -159,22590
 Am Dorfteich: Qualität?	? -83,22536 -159,22590 -237,22640
 Iznikstr.: Qualität?	? -2133,16934 -2119,17015
 Wolburgsweg: Qualität?	? -5727,15818 -5710,15950 -5663,16359
-Haackzeile: Qualität?	? -5875,15994 -5710,15950
 #: by: http://www.flickr.com/photos/30482855@N04/5174220754/in/pool-39413187@N00/ (keine Durchfahrt für Autos, Pfosten/Sperre am südl. Ende)
 Netphener Weg: Qualität? Nachts beleuchtet? Für Autos gesperrt?	? -5146,15059 -5159,14957 -5199,14835
 Staakener Feldstr.: Qualität?	? -7464,13904 -7534,13936 -7595,13963 -7647,13985
@@ -3113,8 +3111,6 @@ Kirchmeisterweg: Qualität?	? 4980,1870 4958,1844 5007,1718 5035,1723
 Waadter Zeile: Qualität? Für Autos gesperrt? Existiert eine Verbindung zur Goerzallee?	? 3726,2209 3729,2126
 Straße 40 (Lichtenrade): Qualität?	? 11015,-1357 11003,-1303
 Biesdorfer Blumenwiese: Genauer Verlauf der Straße? Qualität?	? 20657,14446 20647,14341 20631,14221 20620,14092
-#: XXX Ernst Leopold meint: Q0, ohne weitere Angaben
-Joachim-Ringelnatz-Str.: Qualität?	? 21960,13776 22150,13783 22118,13954 22050,14212
 #: XXX_osm bei osm als "Alwineweg" bezeichnet
 Völklinger Str.: Qualität?	? 21814,14407 21940,14413 22003,14400
 #: XXX_osm fehlt bei osm

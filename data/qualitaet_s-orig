@@ -30,8 +30,10 @@ Hauptstr. (Rosenthal, Wilhelmsruh)/Mönchmühler Str.: schlechtes Kopfsteinpflaste
 Bahnhofstr.: schlechtes Kopfsteinpflaster	Q3 8803,23478 8909,23506
 Hauptstr. (Blankenfelde): schlechtes Kopfsteinpflaster	Q3 8909,23506 9186,23625
 Hauptstr. (Blankenfelde): Asphalt	Q0 9186,23625 9228,23643
-Hauptstr. (Blankenfelde): schlechtes Kopfsteinpflaster	Q3 9228,23643 9425,23693
-Hauptstr. (Blankenfelde): Kopfsteinpflaster	Q2 9425,23693 9625,23781 9774,23936
+#: corrected_by: Jessaï Arakelian (früher schlechtes Kopfsteinpflaster)
+Hauptstr. (Blankenfelde): Asphalt	Q0 9228,23643 9425,23693
+#: corrected_by: Jessaï Arakelian (früher mäßiges Kopfsteinpflaster)
+Hauptstr. (Blankenfelde): Asphalt	Q0 9425,23693 9625,23781 9774,23936
 Hauptstr. (Blankenfelde): Asphalt	Q0 9774,23936 9812,23983 9828,24149
 Berliner Str. (Blankenfelde): schlechtes Kopfsteinpflaster	Q3 9425,23693 9490,23531
 Berliner Str. (Blankenfelde): mäßiges Kopfsteinpflaster	Q2 9490,23531 9528,23240
@@ -5347,6 +5349,7 @@ Cotheniusstr.: Asphalt	Q0 13228,13615 13430,13733
 ######################################################################
 #: by: anonymous vvv
 # 
+Hannsdorfer Str.: schlechtes Kopfsteinpflaster	Q3 23696,12575 23653,12471 23587,12301 23517,12129
 Suzetteweg: gutes Verbundsteinpflaster	Q1 11805,21385 11561,21429
 Erbsenpfad: schlechter fester Sandweg	Q3 -7872,14409 -7850,14555
 #: note: "enge Straße", aber ohne weitere Kategorisierung
@@ -13791,9 +13794,12 @@ Döhlauer Pfad: Asphalt	Q0 7879,3455 7800,3435
 #: confirmed_by: srt
 An der Dorfkirche: Asphalt	Q0 8173,839 8114,722
 # 
-#: by: Holger Hartung:
+#: by: Holger Hartung: vvv
 #: note: q3, "z.T. unübersichtlich" ignoriert
 Bottroper Weg: mäßiger Beton	Q1- 2133,18885 2015,18854 1864,18856
+#: note: "Da der Platz sehr groß ist, werden Radfahrer durch Fußgänger in der Regel nicht ausgebremst"
+Emstaler Platz: Gehwegplatten	Q1 1864,18856 1632,18855 1631,18958
+#: by: ^^^
 # 
 #: by: Josef Schepers
 Siepesteig: guter Asphalt	Q0 194,1055 115,1043 84,1174 91,1202
@@ -14037,6 +14043,16 @@ Birkenstr. (Köpenick): guter Beton	Q0- 24170,4560 24078,4595 23980,4633 23934,46
 #: by: ruth heinrich:
 #: note: "kurvenreich", q0 ignoriert
 Dallwitzstr.: mäßiges Kopfsteinpflaster	Q2 104,2220 163,2091 146,2073 93,2014 79,1992 18,1928
+#
+#: by: oliver (icebear...)
+Haackzeile: guter Beton	Q0- -5875,15994 -5710,15950
+#
+#: by: Maria Thomassen:
+#: note: "Bordsteinkanten" ignoriert
+Hohenheimer Str.: guter Asphalt	Q0 2694,25132 2834,25175 2995,25252 3075,25288 3177,25299 3262,25281 3274,25287
+# 
+#: by: Ernst Leopold
+Joachim-Ringelnatz-Str.: Asphalt	Q0 21960,13776 22150,13783 22118,13954 22050,14212
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206

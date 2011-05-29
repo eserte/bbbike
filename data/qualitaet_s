@@ -23,8 +23,8 @@ Hauptstr. (Rosenthal, Wilhelmsruh)/Mönchmühler Str.: schlechtes Kopfsteinpflaste
 Bahnhofstr.: schlechtes Kopfsteinpflaster	Q3 8803,23478 8909,23506
 Hauptstr. (Blankenfelde): schlechtes Kopfsteinpflaster	Q3 8909,23506 9186,23625
 Hauptstr. (Blankenfelde): Asphalt	Q0 9186,23625 9228,23643
-Hauptstr. (Blankenfelde): schlechtes Kopfsteinpflaster	Q3 9228,23643 9425,23693
-Hauptstr. (Blankenfelde): Kopfsteinpflaster	Q2 9425,23693 9625,23781 9774,23936
+Hauptstr. (Blankenfelde): Asphalt	Q0 9228,23643 9425,23693
+Hauptstr. (Blankenfelde): Asphalt	Q0 9425,23693 9625,23781 9774,23936
 Hauptstr. (Blankenfelde): Asphalt	Q0 9774,23936 9812,23983 9828,24149
 Berliner Str. (Blankenfelde): schlechtes Kopfsteinpflaster	Q3 9425,23693 9490,23531
 Berliner Str. (Blankenfelde): mäßiges Kopfsteinpflaster	Q2 9490,23531 9528,23240
@@ -4873,6 +4873,7 @@ Rietzestr.: Asphalt	Q0 12693,15225 12472,15356
 Strehlener Str.: Asphalt	Q0 22652,10392 22538,10477 22403,10523
 (Am Maselakekanal): Asphalt	Q0 -2140,17171 -2502,17233 -2606,17272
 Cotheniusstr.: Asphalt	Q0 13228,13615 13430,13733
+Hannsdorfer Str.: schlechtes Kopfsteinpflaster	Q3 23696,12575 23653,12471 23587,12301 23517,12129
 Suzetteweg: gutes Verbundsteinpflaster	Q1 11805,21385 11561,21429
 Erbsenpfad: schlechter fester Sandweg	Q3 -7872,14409 -7850,14555
 Rainweg: schlechtes Kopfsteinpflaster	Q3 25006,-3014 24978,-2960 25014,-2866 25118,-2805
@@ -9037,6 +9038,7 @@ Springeberger Weg: schlechtes Kopfsteinpflaster; Gehwege teils gepflastert, meis
 Döhlauer Pfad: Asphalt	Q0 7879,3455 7800,3435
 An der Dorfkirche: Asphalt	Q0 8173,839 8114,722
 Bottroper Weg: mäßiger Beton	Q1 2133,18885 2015,18854 1864,18856
+Emstaler Platz: Gehwegplatten	Q1 1864,18856 1632,18855 1631,18958
 Siepesteig: guter Asphalt	Q0 194,1055 115,1043 84,1174 91,1202
 Worbiser Str.: guter Asphalt	Q0 17700,14844 17886,14899
 Zechliner Str. (Gesundbrunnen): schlechtes Kopfsteinpflaster	Q3 8950,17219 8846,17266 8751,17307
@@ -9122,6 +9124,9 @@ Ernst-Ludwig-Heim-Str.: guter Asphalt	Q0 16682,24758 16613,24643 16487,24721
 Azaleenstr.: Schotter, mäßig ausgefahren, Belag mäßig bis gut	Q2 23869,4733 23874,4924 23858,4927 23796,4929
 Birkenstr. (Köpenick): guter Beton	Q0 24170,4560 24078,4595 23980,4633 23934,4661 23947,4673 23869,4733
 Dallwitzstr.: mäßiges Kopfsteinpflaster	Q2 104,2220 163,2091 146,2073 93,2014 79,1992 18,1928
+Haackzeile: guter Beton	Q0 -5875,15994 -5710,15950
+Hohenheimer Str.: guter Asphalt	Q0 2694,25132 2834,25175 2995,25252 3075,25288 3177,25299 3262,25281 3274,25287
+Joachim-Ringelnatz-Str.: Asphalt	Q0 21960,13776 22150,13783 22118,13954 22050,14212
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206
 Richard-Ermisch-Str.: Asphalt	Q0 14245,13268 14224,13206 14207,13152 14177,13065 14163,13025 14130,12926 14096,12827
 Zum Langen Jammer: Kopfsteinpflaster, Gehweg besser	Q2 14686,12873 14405,12953

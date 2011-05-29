@@ -2838,16 +2838,7 @@ userdel auto	3 9524,9426 9505,9306 9487,9209
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'LS/O-SG33-E/09/214-7',
-         'until' => 1306620000,
-         'text' => 'Schenkenberg: L26: Bauarbeiten, Prenzlau - A 20 zw. AS Prenzlau-Ost und Abzweig Schenkenberg, 13.09.2010 bis 28.05.2011 ',
-         'from' => 1288905888,
-         'id' => 2133,
-         'data' => 'userdel	2::inwork 46581,105900 47587,106693
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1356994800,
          'text' => 'Braunschweiger Str./Karl-Marx-Str.: Abbiegen nicht möglich (bzw. nur auf dem Gehweg) bis 31.12.2012',
