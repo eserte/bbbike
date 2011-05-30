@@ -657,8 +657,8 @@ sub tracks_in_region {
 			       or main::status_message(Mfmt("Kann auf %s nicht schreiben: %s", $outfile, $!), "die");
 			   print $ofh join("\n", @tracks), "\n"
 			       or die $!;
+			   main::status_message(Mfmt("Die Datei %s wurde geschrieben", $outfile), "infodlg");
 		       }
-		       main::status_message(Mfmt("Die Datei %s wurde geschrieben", $outfile), "infodlg");
 		   },
 		  )->pack(qw(-side left));
     }
