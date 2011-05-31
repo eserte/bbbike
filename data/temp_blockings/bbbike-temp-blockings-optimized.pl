@@ -1788,15 +1788,7 @@ userdel	2::temp -8087,-1453 -8151,-1470 -8306,-1454
        undef,
        undef,
        undef,
-       {
-         'until' => 1306699200,
-         'text' => 'Preußenallee (Charlottenburg) in beiden Richtungen zwischen Marathonallee und Badenallee Veranstaltung, Straße vollständig gesperrt (28. und 29. Mai 2011)',
-         'from' => 1306533600,
-         'id' => 1642,
-         'data' => 'userdel	2::inwork 596,11951 585,11830 572,11698 563,11601
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_012523',
          'until' => 1309438800,

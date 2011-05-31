@@ -56,7 +56,7 @@ Danziger Str.	?::projected 11712,14868 11879,14771 11990,14714 12040,14688 12128
 #: next_check: 2011-07-01
 Kniprodestr./Am Friedrichshain	?::projected 12901,14093 12784,13961 12695,13864 12654,13819 12571,13798 12403,13755 12204,13719 12161,13711 12038,13685 11868,13646 11785,13625 11762,13619 11706,13635
 #
-#: last_checked: 2011-05-21
+#: last_checked: 2011-05-30
 #: next_check: 2011-08-01
 Schnellerstr.	?::projected 18245,5551 18370,5511 18680,5413 18984,5318 19031,5316 19328,5304 19405,5284
 # 
@@ -281,12 +281,7 @@ Neubau eines Uferwegs an der HTW (Fuß- und Radweg)	?::inwork 19177,5560 19020,55
 #: XXX passiert hier noch was? Oder ist es mit der Verlängerung der Rollbergstr. schon getan? Oder ist es die Verbindung zwischen Rollbergstr. und Werbellinstr.?
 Am Sudhaus: wo genau wird die Straße verlaufen? Qualität?	? 12148,8174 12227,8190
 # 
-#: last_checked: 2010-10-02 vvv
-#: next_check: 2010-12-01 (public) vvv
-Groß-Berliner Damm: ist der Radweg Richtung Norden zwischen Segelfliegerdamm und Sterndamm schon fertig gebaut?	?::inwork; 18050,4649 17956,4787 17885,4912 17780,5086 17769,5107 17735,5170 17685,5264 17645,5328
-Groß-Berliner Damm/Nieberstr.: ist die Ampel bereits in Betrieb?	?::inwork 17885,4912
-#: next_check ^^^
-#: last_checked ^^^
+#XXX del --- ja, Straße sieht anscheinend fertig aus --- #: last_checked: 2010-10-02 vvv --- #: next_check: 2010-12-01 (public) vvv --- Groß-Berliner Damm: ist der Radweg Richtung Norden zwischen Segelfliegerdamm und Sterndamm schon fertig gebaut?	?::inwork; 18050,4649 17956,4787 17885,4912 17780,5086 17769,5107 17735,5170 17685,5264 17645,5328 --- Groß-Berliner Damm/Nieberstr.: ist die Ampel bereits in Betrieb?	?::inwork 17885,4912 --- #: next_check ^^^ --- #: last_checked ^^^
 # 
 #: last_checked: 2010-06-19
 Am Birkenrevier: Bauarbeiten	?::inwork 19176,8098 19176,8098
@@ -630,7 +625,7 @@ Kreuzungsüberquerung umständlich?	? 26453,-12128
 B87 (Umfahrung Müllrose): Ist die Straße eine Kfz-Straße?	? 78295,-17575 78445,-17324 78503,-16995 78474,-16794 78366,-16150 78445,-15684 78732,-15297 79126,-15047 79949,-14674 80501,-14338 81246,-13757 81362,-13667
 B87 (Umfahrung Beeskow): Ist die Straße eine Kfz-Straße?	? 66269,-27581 66283,-27438 66441,-26994 66462,-26428 66441,-25347 66426,-23979 66605,-23083 67085,-22374 67558,-22059 68152,-21851 68883,-21844 69506,-22088 70838,-22847 71168,-22890 71397,-22833
 # Hier scheint nichts mehr zu passieren... : last_checked: 2008-01-25 #: by: Message-ID: <4mfe1bF5vae4U1@uni-berlin.de> Warschauer Str.: Radwegbenutzungspflicht wird aufgehoben	?; 13546,11352 13476,11174 13454,11119 13409,11004 13332,10832
-# XXX del #: by: (URL existiert nicht mehr) http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20060629.1530.43277.html #: last_checked: 2009-08-09 --- R1: geänderte Ausschilderung steht noch aus	? 23753,4218 23879,4233 24135,4264 24181,4270 25132,4385 25396,4417 25347,4320 25373,4266 25376,4207 25282,3932 25262,3828 25254,3785 25232,3757 25241,3232 25281,3161 25259,3116 25346,2956 25474,2848 25547,2779 25600,2681 25768,2627 25789,2576 25790,2507 25846,2496 25847,2482 25948,2474
+# XXX del #: by: (URL existiert nicht mehr) http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20060629.1530.43277.html #: last_checked: 2009-08-09 --- R1: geänderte Ausschilderung steht noch aus	? 23753,4218 23879,4233 24135,4264 24181,4270 25132,4385 25385,4414 25373,4371 25347,4320 25373,4266 25376,4207 25282,3932 25262,3828 25254,3785 25232,3757 25241,3232 25281,3161 25259,3116 25346,2956 25474,2848 25547,2779 25600,2681 25768,2627 25789,2576 25790,2507 25846,2496 25847,2482 25948,2474
 # 
 #: next_check: 2006-06-01
 #: XXX oder vielleicht dieser Weg hier?
@@ -686,8 +681,6 @@ Kleistpark: im Sommer bis 21 Uhr geöffnet, im Winter bis 18 Uhr	? 7209,9507 7246
 #: section isolated entries vvv
 #: section ignorieren vvv
 # 
-#: by: Carsten Kessel
-Rauhfußgasse: guter Beton, Q0-	? -1276,19759 -1157,19711 -1071,19689
 #: by: Christopher Suckrow
 Albiger Weg: guter Asphalt	? -2837,2194 -2841,2258 -2929,2255 -2934,2186
 #: by: anonymous:
@@ -1830,8 +1823,6 @@ Graphitweg: Qualität?	? 10950,1315 10914,1413 10911,1483 10943,1661
 Bimssteinweg: Qualität?	? 10907,2207 10985,2173
 Almweg: Qualität?	? 10526,2694 10542,2757
 Splügenweg: Qualität?	? 10402,2721 10368,2575
-Schwarzkogelweg: Qualität?	? 10121,3040 10167,3257
-Röthspitzenweg: Qualität?	? 9867,3092 9891,3203 9911,3310
 Almazeile: Qualität?	? -1660,18114 -1616,18112 -1547,18110 -1478,18107
 Tegelorter Ufer: Qualität?	? -1346,17937 -1218,17874
 Ottilienweg: Qualität?	? -1478,18048 -1220,18191
@@ -1872,8 +1863,6 @@ Erndtebrücker Weg: Qualität?	? 2419,18572 2501,18594 2498,18657
 Oelder Weg: Qualität?	? 1967,18743 1965,18686 1965,18651 1974,18616
 Finnentroper Weg: Qualität?	? 2117,18632 2162,18452 2199,18304 2210,18262
 Betzdorfer Pfad: Qualität?	? 2199,18304 2278,18335
-#: XXX angela hanemann meint "Q2" ohne weitere Angaben
-Plettenberger Pfad: Qualität?	? 1869,18608 1903,18429 1924,18311 1936,18209
 Breckerfelder Pfad: Qualität?	? 1457,18237 1501,18429
 Letmather Weg: Qualität?	? 1524,18221 1546,18317 1557,18421
 Kirchgasse (Tegel): Qualität? Für Autos gesperrt?	? 1630,20097 1669,19982
@@ -2128,7 +2117,6 @@ Straße 7 (Wartenberg): Qualität?	? 19088,20157 19166,20377 19267,20665
 Straße 11 (Wartenberg): Qualität?	? 18025,19433 18108,19692 18207,19661
 Am Eulenhorst: Qualität?	? -1787,19341 -1764,19343 -1612,19362 -1584,19363 -1492,19370 -1428,19381
 Rabenstr.: Qualität?	? -1788,19663 -1721,19658 -1663,19632 -1508,19578 -1374,19524 -1273,19466 -1195,19479
-Milanstr.: Qualität?	? -1428,19381 -1374,19524 -1324,19640 -1284,19742 -1276,19759 -1240,19849 -1240,19869
 Steinkauzgasse: Qualität?	? -1324,19640 -1193,19587 -1102,19564
 An der Krähenheide: Qualität?	? -1102,19564 -1071,19689 -1048,19779
 Gabelweihstr.: Qualität?	? -1492,19370 -1557,19457 -1681,19593
@@ -3228,7 +3216,6 @@ Ferbitzer Weg: Qualität?	? -8613,15083 -8573,15073 -8467,15072 -8391,15109 -8312
 Pflaumenpfad: Qualität?	? -7867,15185 -7782,15154 -7729,15107 -7634,15064 -7602,15059 -7521,15045
 Ahlbeerensteig: Qualität?	? -7559,14379 -7553,14518 -7550,14579
 Christrosensteig: Qualität?	? -7664,14389 -7663,14532
-Distelpfad: Qualität?	? -7779,14401 -7762,14542 -7757,14606
 Immergrünsteig: Qualität?	? -7757,14606 -7750,14667 -7715,14924 -7700,15009
 Hahnenfußpfad: Qualität?	? -7654,14657 -7629,14878 -7624,14910 -7609,15007 -7602,15059
 Feigensteig: Qualität?	? -7550,14579 -7549,14645 -7528,14863 -7523,14969 -7521,15045
