@@ -3108,6 +3108,29 @@ userdel	q4::inwork; 7949,7607 7935,7736 7950,7840 8226,8648 8237,8685 8306,8722
 userdel	q4::inwork; 12549,8616 12500,8504
 ',
          'type' => 'handicap'
+       },
+       undef,
+       {
+         'until' => undef,
+         'text' => 'Friedrichsbrücke: Bauarbeiten, Fahrrad muss geschoben werden, mit Anhaenger kommt man nicht durch',
+         'from' => undef,
+         'id' => 2218,
+         'data' => '#: by: wosch
+#: last_checked: 2011-05-31
+userdel	q4::inwork 10086,12725 10166,12777
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => undef,
+         'text' => 'Burgstraße/Anna-Louisa-Karsch-Straße: Bauarbeiten, Einbahnstraßenregelung',
+         'from' => undef,
+         'id' => 2219,
+         'data' => '#: by: wosch
+#: last_checked: 2011-05-31
+userdel	q4::inwork; 10264,12826 10166,12777 10132,12941
+',
+         'type' => 'handicap'
        }
      
 );
