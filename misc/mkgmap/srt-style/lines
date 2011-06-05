@@ -92,6 +92,7 @@ highway=* & area!=yes [0x07 ]
 natural=coastline [0x15 resolution 12]
 power=line [0x29 resolution 20]
 
+railway=* & abandoned=yes [0x3e resolution 17]
 railway=light_rail [0x2d resolution 17]
 railway=rail [0x14 resolution 17]
 railway=subway [0x2e resolution 17]
