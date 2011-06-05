@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2009,2010 Slaven Rezic. All rights reserved.
+# Copyright (C) 2009,2010,2011 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -454,9 +454,10 @@ sub handle_railway_like {
     my($r, $dir) = @_;
 
     my($cat) = $r->[Strassen::CAT] =~ m{^([^:]+)};
-    return if $cat !~ m{^([USR])[ABC]?$};
+    return if $cat !~ m{^([USR])([ABC0]?)$};
     my $railway_cat = $cat_to_railway{$1};
-    return if !defined $cat;
+    return if !defined $railway_cat;
+    my $is_abandoned = defined $2 && $2 eq '0';
 
     my @node_ids = get_node_ids($r);
 
@@ -469,6 +470,9 @@ sub handle_railway_like {
     }
     print $wayfh qq{  <tag k="name" v="$name" />\n} if defined $name && length $name;
     print $wayfh qq{  <tag k="railway" v="$railway_cat" />\n};
+    if ($is_abandoned) {
+	print $wayfh qq{  <tag k="abandoned" v="yes" />\n};
+    }
     print $wayfh qq{</way>\n};
     $next_way_id++;
 }
@@ -570,14 +574,17 @@ sub handle_area_like {
 
 sub handle_trafficsignals_like {
     my($r, $dir) = @_;
+    my $cat = $r->[Strassen::CAT];
 
     my $attribs;
-    if      ($r->[Strassen::CAT] =~ m{^X}) {
+    if      ($cat =~ m{^X}) {
 	$attribs = { highway => 'traffic_signals' };
-    } elsif ($r->[Strassen::CAT] =~ m{^F}) {
+    } elsif ($cat =~ m{^F}) {
 	$attribs = { highway => 'crossing', crossing => 'traffic_signals' };
-    } elsif ($r->[Strassen::CAT] =~ m{^B}) {
-	$attribs = { railway => 'level_crossing' };
+    } elsif ($cat =~ m{^B}) {
+	$attribs = { railway => 'level_crossing',
+		     ($cat =~ m{0$} ? (abandoned => 'yes') : ()), # not accurate, may be also seldomly used
+		   };
     } else {
 	# ignore
 	return;
@@ -596,19 +603,22 @@ sub handle_zebrastreifen_like {
 
 sub handle_railway_stations_like {
     my($r) = @_;
-    my $is_ubahn = $r->[Strassen::CAT] =~ m{^U};
-    my $is_sbahn = $r->[Strassen::CAT] =~ m{^S};
+    my $cat = $r->[Strassen::CAT];
+    my $is_ubahn = $cat =~ m{^U};
+    my $is_sbahn = $cat =~ m{^S};
+    my $is_abandoned = $cat =~ m{0$};
     my $attribs = { railway => 'station', # no distinction between halt and station
 		    name => ($is_ubahn ? 'U ' : $is_sbahn ? 'S ' : '') . $r->[Strassen::NAME],
+		    ($is_abandoned ? ("abandoned" => "yes") : ()),
 		  };
     if      ($is_ubahn) {
 	$attribs->{station} = 'subway';
     } elsif ($is_sbahn) {
 	$attribs->{station} = 'light_rail';
-    } elsif ($r->[Strassen::CAT] =~ m{^R}) {
+    } elsif ($cat =~ m{^R}) {
 	# Regional/Fernbahnhof
     } else {
-	warn "Unhandled railway station-like category $r->[Strassen::CAT]\n";
+	warn "Unhandled railway station-like category $cat\n";
 	return;
     }
 
@@ -635,7 +645,20 @@ sub handle_city_like {
 
 sub handle_city_limit_like {
     my($r) = @_;
-    my $attribs = { traffic_sign => 'city_limit',
+    my $cat = $r->[Strassen::CAT];
+    my $traffic_sign_name;
+    if ($cat eq 'OS') {
+	$traffic_sign_name = 'city_limit';
+    } elsif ($cat eq 'OHT') {
+	# kein offizielles OSM-Tag
+	# englische Übersetzung von "Ortshinweistafel" aus:
+	# http://de.wikipedia.org/wiki/Datei:Zeichen_385.svg
+	$traffic_sign_name = 'locality_name';
+    } else {
+	warn "Unhandled city-limit like category '$cat'";
+	return;
+    }
+    my $attribs = { traffic_sign => $traffic_sign_name,
 		    name         => format_place_label($r->[Strassen::NAME]),
 		  };
     get_node_ids($r, $attribs);
