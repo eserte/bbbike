@@ -49,7 +49,7 @@ my $osm_download_file_qr       = qr{/download_$ltlnqr,$ltlnqr,$ltlnqr,$ltlnqr\.o
 use vars qw($OSM_API_URL $OSM_FALLBACK_API_URL);
 #$OSM_API_URL = "http://www.openstreetmap.org/api/0.5";
 $OSM_API_URL = "http://www.openstreetmap.org/api/0.6";
-$OSM_FALLBACK_API_URL = "http://www.informationfreeway.org/api/0.6"; # actually this is the preferred URL
+$OSM_FALLBACK_API_URL = "http://www.informationfreeway.org/api/0.6";
 
 use vars qw($MERKAARTOR_MAS_BASE $MERKAARTOR_MAS $ALLICONS_QRC $USE_MERKAARTOR_ICONS %ICON_NAME_TO_PHOTO);
 
@@ -121,7 +121,7 @@ sub mirror_and_plot_osm_files {
 		my($this_x0,$this_y0,$this_x1,$this_y1) = ($1, $2, $3, $4);
 		my $success = 0;
 		my $err;
-		for my $rooturl ($OSM_FALLBACK_API_URL, $OSM_API_URL) {
+		for my $rooturl ($OSM_API_URL, $OSM_FALLBACK_API_URL) {
 		    my $url = "$rooturl/map?bbox=$this_x0,$this_y0,$this_x1,$this_y1";
 		    main::status_message("Mirror $url ...", "info"); $main::top->update;
 		    main::IncBusy($main::top);
