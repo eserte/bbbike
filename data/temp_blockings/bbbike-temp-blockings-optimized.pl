@@ -1926,16 +1926,7 @@ userdel	2::temp 20610,12050 20715,12040
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'LS/S-SG33-W/09/135',
-         'until' => 1306879200,
-         'text' => 'Jüterbog: B102: Straßenausbau - Bordumpflasterung an Mittelinseln OD Jüterbog LSA-Regelung bei Bautätigkeit, 15.06.2009 bis 31.05.2011 ',
-         'from' => 1300313794,
-         'id' => 1753,
-         'data' => 'userdel	q4::inwork -12541,-46115 -13108,-46122
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2584,7 +2575,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        {
          'until' => undef,
          'permanent' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Mai bis 21.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Juni bis 22.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'from' => undef,
          'id' => 2068,
          'data' => '(Eingang Columbiadamm - Rundkurs auf dem Flughafen Tempelhof)	2::night 10691,8532 10640,8366 10598,8270 10575,8218
@@ -2889,16 +2880,7 @@ userdel	3 13150,7254 13047,7234 13034,7319
          'type' => 'handicap'
        },
        undef,
-       {
-         'source_id' => 'LS/W-SG33-K/10/053',
-         'until' => 1306879200,
-         'text' => 'Zernitz-Lohm: L141: Ersatzneubau einer Brücke ; Vollsperrung mit örtlicher Umfahrung bei Zernitz, Brücke über die Neue Jäglitz, 05.05.2010 bis 31.05.2011 ',
-         'from' => 1295721904,
-         'id' => 2174,
-         'data' => 'userdel	2::inwork -60868,50275 -60612,50931
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3066,16 +3048,7 @@ userdel	q4::inwork; 7949,7607 7935,7736 7950,7840 8226,8648 8237,8685 8306,8722
          'type' => 'handicap'
        },
        undef,
-       {
-         'source_id' => 'INKO_107373',
-         'until' => 1306879199,
-         'text' => 'Hönower Str. (Mahlsdorf) Richtung Hönow zwischen Fritz-Reuter-Str. und Ridbacher Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 05/11) ',
-         'from' => 1305840528,
-         'id' => 2212,
-         'data' => 'userdel	q4::inwork; 24554,12100 24556,12172 24530,12296
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'INKO_105491',
          'until' => 1309471199,
@@ -3087,16 +3060,7 @@ userdel	q4::inwork; 7949,7607 7935,7736 7950,7840 8226,8648 8237,8685 8306,8722
          'type' => 'handicap'
        },
        undef,
-       {
-         'source_id' => 'IM_017318',
-         'until' => 1306965599,
-         'text' => 'Puschkinallee (Treptow) zwischen Bulgarische Str. und Elsenstr. Baustelle, Straße vollständig gesperrt (bis Anfang 06/11) ',
-         'from' => 1306213385,
-         'id' => 2215,
-         'data' => 'userdel	2::inwork 15383,9191 14819,9462 14780,9480 14310,9692
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => undef,
          'text' => 'Fuldastr., von Donaustr. Richtung Karl-Marx-Str. ist die Fahrbahn gesperrt',
@@ -3129,6 +3093,16 @@ userdel	q4::inwork 10086,12725 10166,12777
          'data' => '#: by: wosch
 #: last_checked: 2011-05-31
 userdel	q4::inwork; 10264,12826 10166,12777 10132,12941
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'LS/O-SG33-E/11/027',
+         'until' => 1318888800,
+         'text' => 'L314: Straßenbau, Ausbau der Bernauer Straße 3. BA Ortsdurchfahrt Zepernick 1. VSA zw. Neckarstr. und Händelstr., 22.03.2011 bis 17.10.2011 ',
+         'from' => 1307219374,
+         'id' => 2220,
+         'data' => 'userdel	q4::inwork 19595,27953 20114,28315 20362,28420
 ',
          'type' => 'handicap'
        }

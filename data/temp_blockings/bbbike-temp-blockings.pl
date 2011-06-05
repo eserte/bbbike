@@ -866,7 +866,7 @@ EOF
        text  => 'K 7318; (Pinnow-L 24-Haßleben); OD Buchholz Kanal- und Straßenbau Vollsperrung 07.09.2004-15.12.2004 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 32334,89385 31796,89304
+userdel	q4 32377,89414 32246,89341 32001,89339
 EOF
      },
      { from  => 1094940000, # 2004-09-12 00:00
@@ -1057,8 +1057,8 @@ EOF
        text  => 'L 30; (Schönower Chaussee); OD Bernau Baumfällungen Vollsperrung 11.10.2004-15.10.2004 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 21637,30946 21001,30933 20794,30899
-userdel	q4 21637,30946 21955,30976
+userdel	q4 21646,30961 21001,30933 20794,30899
+userdel	q4 21646,30961 21955,30976
 EOF
      },
      { from  => 1097208000, # 2004-10-08 06:00
@@ -1108,7 +1108,7 @@ EOF
        text  => 'B 109; (Templin-Zehdenick); Bahnübergang südwestl.Ortsausg.Hammelspring Gleisbauarbeiten Vollsperrung 22.10.2004-27.11.2004 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 10170,73230 8656,71489
+userdel	2 10148,73146 8656,71489
 EOF
      },
      { from  => 1098568800, # 2004-10-24 00:00
@@ -1148,8 +1148,8 @@ EOF
        text  => 'L 30; (Schönower Chaussee); OL Bernau,zw. Weinbergstraße und Edelweißstraße Straßen- u. Radwegebau Vollsperrung 26.10.2004-23.12.2004 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 21637,30946 21001,30933 20794,30899
-userdel	q4 21637,30946 21955,30976
+userdel	q4 21646,30961 21001,30933 20794,30899
+userdel	q4 21646,30961 21955,30976
 EOF
      },
      { from  => 1098568800, # 2004-10-24 00:00
@@ -1700,7 +1700,7 @@ EOF
        text  => 'L 23; (Joachimsthal-Templin); OD Joachimsthal Neubau Durchlass Vollsperrung 29.03.2005-03.07.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 32966,64019 33080,63939 33254,63446
+userdel	q4 32966,64019 33080,63939 33206,63582 33254,63446
 EOF
      },
      { from  => 1111532400, # 2005-03-23 00:00
@@ -2086,7 +2086,7 @@ EOF
        text  => 'L 216; (Gollin-Templin); OD Vietmannsdorf, Brücke über Mühlengraben Brückenneubau Vollsperrung 13.06.2005-23.12.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 17636,72217 17653,71852
+userdel	2 17470,72358 17625,72041
 EOF
      },
      { from  => 1118959200, # 2005-06-17 00:00
@@ -2094,7 +2094,7 @@ EOF
        text  => 'L 23; (Mühlenstr.); OD Templin, zw. Heinestr. und M.-Luther-Str. 16. Stadtfest Vollsperrung 18.06.2005-18.06.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 15448,79614 15840,79375
+userdel	q4 15317,79685 15527,79560 15654,79485 15751,79428 15800,79399 15840,79375
 EOF
      },
      { from  => 1118527200, # 2005-06-12 00:00
@@ -2480,7 +2480,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 -6201,51305 -5813,51200
-userdel	2 -5813,51200 -3395,51242
+userdel	2 -5813,51200 -3453,51255
 EOF
      },
      { from  => 1123106400, # 2005-08-04 00:00
@@ -3231,7 +3231,7 @@ EOF
        text  => 'Brückensperrung zwischen Seehausen und Potzlow Die Brücke ist ab dem 5.9.2005 bis zum 5.11.2005 auch für Radfahrer nicht passierbar ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 40230,90006 40583,90157 40938,90213
+userdel	2 40230,90006 40583,90157 40865,90202 40938,90213
 EOF
      },
      { from  => 1130831377, # 2005-11-01 08:49
@@ -3458,7 +3458,7 @@ EOF
        text  => 'L 23 Töpferstr. OD Joachimsthal, Kno. Angermünder Str. Ausbau Kreisverkehrsplatz Vollsperrung 01.11.2005-15.12.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 33080,63939 33254,63446
+userdel	q4 33080,63939 33206,63582 33254,63446
 EOF
      },
      { from  => 1133823600, # 2005-12-06 00:00
@@ -4075,7 +4075,7 @@ EOF
        text  => 'L 216 Gollin-Templin OD Vietmannsdorf, Brücke über Mühlengraben Einbau Decke Vollsperrung 24.04.2006-28.04.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 17636,72217 17653,71852
+userdel	2 17470,72358 17625,72041
 EOF
      },
      { from  => 1144438665, # 2006-04-07 21:37
@@ -6563,7 +6563,7 @@ EOF
        text  => 'B 109 Prenzlauer Allee OD Templin, ab A.-Bebel-Str. bis OA Einbau Deckschicht Vollsperrung 03.11.2006-05.11.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 16463,79756 16850,79712 17455,80199
+userdel	q4::inwork 16331,79764 16904,79746 17094,79875 17455,80199
 EOF
      },
      { from  => 1159221600, # 2006-09-26 00:00
@@ -7378,7 +7378,7 @@ EOF
        text  => 'K 7320 Potzlow-Prenzlau Brücke über Mühlgraben in der OL Potzlow Brückenneubau Vollsperrung 19.03.2007-05.07.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 38475,90762 38637,91275 38612,91950
+userdel	2::inwork 38475,90762 38555,91126 38614,91197 38637,91275 38612,91950
 EOF
      },
      { from  => 1249152327, # 
@@ -10088,7 +10088,7 @@ EOF
        text  => 'B 109 Zehdenick-Templin zw. Zehdenick und Hammelspring Straßenbauarbeiten Vollsperrung 08.10.2007-17.11.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 8656,71489 8031,70019 8031,69636 7879,69487 7215,68252 6538,67236
+userdel	2::inwork 8656,71489 7906,70007 7983,69794 7945,69489 7693,69244 7068,68100 6538,67236
 EOF
      },
      { from  => 1191708000, # 2007-10-07 00:00
@@ -10130,7 +10130,7 @@ EOF
        text  => 'L 238 AS Werbellin-Joachimsthal OD Altenhof Kanal- und Straßenbau Vollsperrung 08.10.2007-14.12.2007 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 30762,56847 30526,56720 30056,56665 30137,56487
+userdel	q4::inwork 30762,56847 30488,56704 30396,56665 30158,56695 30049,56674 30146,56367
 EOF
      },
      { from  => 1192140000, # 2007-10-12 00:00
@@ -10163,7 +10163,7 @@ EOF
        text  => 'B 109 August-Bebel-Str. OD Templin, zw. Jahnstr. und Krz. Prenzlauer Allee Kanalarbeiten Vollsperrung 15.10.2007-24.10.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 16463,79756 16200,79437
+userdel	2::inwork 16331,79764 16200,79437
 EOF
      },
      { from  => 1192399200, # 2007-10-15 00:00
@@ -10499,7 +10499,7 @@ EOF
        text  => 'L 216 Gollin-Templin zw. Vietmannsdorf und Templin Straßenbauarbeiten Vollsperrung 13.11.2007-27.11.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 16109,76100 16048,75165 17001,73315
+userdel	2::inwork 16089,76059 16012,75080 16653,73857 16637,73599
 EOF
      },
      { from  => 1195515878, # 2007-11-20 00:44
@@ -10575,7 +10575,7 @@ EOF
        text  => 'B 167 Liebenberg - Löwenberg Bahnübergang in Neulöwenberg Gleisbauarbeiten Vollsperrung 21.11.2007-27.11.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork -6342,54585 -5037,54561 -4176,54548
+userdel	2::inwork -6342,54585 -5122,54564 -4424,54552 -4176,54548
 EOF
      },
      { from  => 1195772400, # 2007-11-23 00:00
@@ -11369,7 +11369,7 @@ EOF
        text  => 'K 7318 Blankenburg - Potzlow zw. Potzlow und Seehausen Straßenbauarbeiten Vollsperrung 05.05.2008-12.07.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 39375,90456 39609,90247 40230,90006 40583,90157 40938,90213 41085,90590
+userdel	2::inwork 39375,90456 39609,90247 40122,90048 40230,90006 40583,90157 40865,90202 40938,90213 40938,90342 41087,90547
 EOF
      },
      { from  => 1210716000, # 2008-05-14 00:00
@@ -12259,7 +12259,7 @@ EOF
        text  => 'L 216 Gollin - Templin OD Vietmannsdorf, zw. Golliner Str. und OA Ri. Templin Brücken- und Straßenbau Vollsperrung 11.08.2008-23.12.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 17653,71852 17636,72217 17483,72454
+userdel	2::inwork 17625,72041 17470,72358 17199,72738
 EOF
      },
      { from  => 1218319200, # 2008-08-10 00:00
@@ -12479,7 +12479,7 @@ EOF
        text  => 'B 109 August-Bebel-Str. OD Templin, zw. R.-Koch-Str. und Prenzlauer Allee Grundhafter Straßenausbau Vollsperrung 01.09.2008-23.12.2008 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 16463,79756 16200,79437 15881,79303
+userdel	q4::inwork 16331,79764 16200,79437 16116,79398 15887,79291
 EOF
      },
      { from  => 1219528800, # 2008-08-24 00:00
@@ -12527,7 +12527,7 @@ EOF
        text  => 'L 220 AS Finowfurt - Joachimsthal zw. der B167 und der OL Eichhorst Deckenerneuerung Vollsperrung 04.09.2008-11.09.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 25488,54151 25395,53549 25347,53338 25368,53125 25393,52762 25556,52375 26351,50634
+userdel	2::inwork 25488,54151 25401,53587 25395,53549 25347,53338 25368,53125 25393,52762 25556,52375 26351,50634
 EOF
      },
      { from  => 1221084000, # 2008-09-11 00:00
@@ -13083,7 +13083,7 @@ EOF
        text  => 'K 7318 Blankenburg - Potzlow Bahnübergang in der OD Seehausen Gleisbauarbeiten Vollsperrung 05.12.2008-10.12.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 41424,91331 41387,91306 41361,91289
+userdel	2::inwork 41424,91331 41385,91309 41358,91294
 EOF
      },
      { from  => 1231455600, # 2009-01-09 00:00
@@ -13091,7 +13091,7 @@ EOF
        text  => 'K 7318 Blankenburg - Potzlow Bahnübergang in der OD Seehausen Gleisbauarbeiten Vollsperrung 10.01.2009-11.01.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 41424,91331 41387,91306 41361,91289
+userdel	2::inwork 41424,91331 41385,91309 41358,91294
 EOF
      },
      { from  => 1227394800, # 2008-11-23 00:00
@@ -13099,7 +13099,7 @@ EOF
        text  => 'K 7318 Blankenburg - Potzlow Bahnübergang in der OD Seehausen Gleisbauarbeiten Vollsperrung 24.11.2008-28.11.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 41424,91331 41387,91306 41361,91289
+userdel	2::inwork 41424,91331 41385,91309 41358,91294
 EOF
      },
      { from  => 1227135600, # 2008-11-20 00:00
@@ -18189,7 +18189,7 @@ EOF
        type  => 'handicap',
        source_id => '106000506',
        data  => <<EOF,
-userdel	q4::inwork; 20537,29285 21085,29942
+userdel	q4::inwork; 20537,29285 20704,29485 21085,29942
 EOF
      },
      { from  => 1283457600, # 2010-09-02 22:00
@@ -19105,6 +19105,15 @@ EOF
 #: by: wosch
 #: last_checked: 2011-05-31
 userdel	q4::inwork; 10264,12826 10166,12777 10132,12941
+EOF
+     },
+     { from  => 1307219374, # 2011-06-04 22:29
+       until => 1318888800, # 2011-10-18 00:00
+       text  => 'L314: Straßenbau, Ausbau der Bernauer Straße 3. BA Ortsdurchfahrt Zepernick 1. VSA zw. Neckarstr. und Händelstr., 22.03.2011 bis 17.10.2011 ',
+       type  => 'handicap',
+       source_id => 'LS/O-SG33-E/11/027',
+       data  => <<EOF,
+userdel	q4::inwork 19595,27953 20114,28315 20362,28420
 EOF
      },
     );

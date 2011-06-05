@@ -1,8 +1,12 @@
 #: #: -*- coding: utf-8 -*-
 #: encoding: utf-8
 #: category_image.OS: ../misc/verkehrszeichen/Zeichen_310_leer.svg:24x24=1:12000,xxx
+#: category_image.OHT: ../misc/verkehrszeichen/Zeichen_385-50_leer.svg:24x24=1:12000,xxx
 #: title: Ortsschilder
 #:
+# OS = Ortsschild
+# OHT = Ortshinweistafel
+# 
 Prenzlau	OS 41313,100608
 Prenzlau	OS 41817,103329
 Prenzlau	OS 36972,100027
@@ -206,6 +210,7 @@ Seelübbe	OS 42925,96685
 Seehausen|am Oberuckersee	OS 41528,91368
 Seehausen|am Oberuckersee	OS 41368,91769
 Seehausen|am Oberuckersee	OS 41200,91922
+Seehausen|am Oberuckersee	OS 40865,90202
 Blankenburg|(Uckermark)	OS 44471,91170
 Blankenburg|(Uckermark)	OS 45025,91296
 Blankenburg|(Uckermark)	OS 44650,90587
@@ -230,10 +235,13 @@ Gramzow	OS 49270,89896
 Gramzow	OS 49935,89343
 Hohengüstow	OS 49543,92938
 Hohengüstow	OS 48794,91837
+Weselitz	OS 47682,95741
 Weselitz	OS 46976,95231
 Weselitz	OS 47688,95778
-Bertikow Ausbau	OS 43556,94641
-Bertikow Ausbau	OS 43355,94490
+Bertikow	OS 45607,94223
+Bertikow	OS 44380,94544
+Bertikow Ausbau	OHT 43556,94641
+Bertikow Ausbau	OHT 43355,94490
 Lützlow	OS 51937,93115
 Lützlow	OS 51949,94442
 Lützlow	OS 52515,94250
@@ -272,10 +280,19 @@ Glambeck	OS 37224,68451
 Parlow	OS 34170,69176
 Parlow	OS 33430,68870
 Joachimsthal	OS 32390,65225
+Joachimsthal	OS 32876,62792
+Joachimsthal	OS 31877,65202
+Friedrichswalde	OS 30282,68716
+Friedrichswalde	OS 29834,70069
+Ringenwalde	OS 30264,72584
+Ringenwalde	OS 30369,73359
 Wildau|b. Eichhorst	OS 26028,56303
 Eichhorst	OS 25395,53549
-Rosenbeck	OS 24635,52222
-Rosenbeck	OS 24124,52310
+Eichhorst	OS 25734,54179
+Altenhof|bei Eberswalde	OS 29564,56074
+Altenhof|bei Eberswalde	OS 31247,57341
+Rosenbeck	OHT 24635,52222
+Rosenbeck	OHT 24124,52310
 Marienwerder	OS 23660,49619
 Biesenthal	OS 26467,40574
 Biesenthal	OS 26359,39603
@@ -286,12 +303,19 @@ Rüdnitz	OS 24070,35760
 Lobetal	OS 23008,35569
 Lobetal	OS 23428,35951
 Ladeburg	OS 22445,31556
+Ladeburg	OS 22153,33963
 Bernau|b. Berlin	OS 23394,31791
 Bernau|b. Berlin	OS 21773,28563
+Bernau|b. Berlin	OS 20482,28536
 Schwanebeck|b. Berlin	OS 19931,25260
 Schwanebeck|b. Berlin	OS 19565,24028
 Schwanebeck|b. Berlin	OS 18073,23456
+Schwanebeck|b. Berlin	OS 17622,24160
+Schwanebeck|b. Berlin	OS 17190,24695
 Lindenberg|b. Berlin	OS 18073,23456
+Lindenberg|b. Berlin	OS 18597,20898
+Zepernick	OS 18178,26668
+Zepernick	OS 20482,28536
 Leest	OS -20616,2567
 Grube	OS -19656,2362
 Dahlwitz	OS 26449,10953
@@ -476,8 +500,7 @@ Bernau|b. Berlin	OS 23954,31612
 Albertshof	OS 26443,33278
 Tempelfelde	OS 31134,33924
 Tempelfelde	OS 32991,35796
-#: note: grünes Schild
-Friedrich-Wilhelms-Hof	OS 32175,34870
+Friedrich-Wilhelms-Hof	OHT 32175,34870
 Gratze	OS 33924,36765
 Gratze	OS 34145,36854
 Beerbaum	OS 36000,36534
@@ -535,3 +558,32 @@ Ahrensfelde	OS 20971,19616
 Drense	OS 47381,101165
 #: XXX abgeschätzter Punkt
 Grünow	OS 45080,101325
+Lanke	OS 20858,38828
+Lanke	OS 20775,40359
+Prenden	OS 20219,41956
+Berghausen|bei Seehausen	OHT 41984,92683
+Temmen	OS 32853,77078
+Temmen	OS 33491,77322
+Ausbau (Afrika)|bei Stegelitz	OHT 37572,79308
+Stegelitz	OS 38872,80620
+Stegelitz	OS 39704,81752
+Kleinow|(Falkenwalde)	OS 51170,97266
+Potzlow	OS 38992,90586
+Potzlow	OS 38091,90857
+Potzlow/Ausbau	OS 36302,90671
+Potzlow/Ausbau	OS 35410,90541
+Pinnow|bei Gerswalde	OS 35410,90541
+Pinnow|bei Gerswalde	OS 34750,90372
+Buchholz|bei Gerswalde	OS 32377,89414
+Buchholz|bei Gerswalde	OS 31661,89289
+Sachsenhausen	OS -476,40852
+#: note: ausgeschildert ist "Mittenwalde Ortsteil Blankensee" vvv
+Blankensee|(Mittenwalde)	OS 29344,87921
+Blankensee|(Mittenwalde)	OS 27977,87375
+#: note: ^^^
+Mittenwalde|b. Templin	OS 26799,86909
+Mittenwalde|b. Templin	OS 24969,87287
+Herzfelde|bei Klosterwalde	OS 22917,87978
+Herzfelde|bei Klosterwalde	OS 21889,87865
+Klosterwalde	OS 19681,85491
+Klosterwalde	OS 19533,85103

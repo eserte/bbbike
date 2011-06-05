@@ -1253,7 +1253,7 @@ check-disabled:
 	@touch $@
 
 .check_ortsschilder:	ortsschilder .strassen.tmp landstrassen landstrassen2 fragezeichen
-	$(CHECK_POINTS) -catrx '^OS$$' ortsschilder .strassen.tmp landstrassen landstrassen2 fragezeichen
+	$(CHECK_POINTS) -catrx '^(OS|OHT)$$' ortsschilder .strassen.tmp landstrassen landstrassen2 fragezeichen
 	@touch $@
 
 .check_ortsschilder2:	orte orte2 ortsschilder

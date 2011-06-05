@@ -221,7 +221,7 @@ Zweirichtungsradweg auf östlicher Seite, teils asphaltiert	RW 47432,119730 47554
 Radweg auf Gehweg, Verbundsteinpflaster	RW 46859,118757 47008,118886 47187,119302 47432,119730
 asphaltierter Zweirichtungsradweg auf östlicher Seite	RW2;RW8 22532,31955 22527,32200 22519,32552
 Radweg auf Gehweg (östliche Seite)	RW2;RW8 22519,32552 22500,32911 22512,33312 22414,33559
-Überwiegend asphaltierter Zweirichtungsradweg auf der nördlichen Seite	RW 23759,49971 23379,49925
+Überwiegend asphaltierter Zweirichtungsradweg auf der nördlichen Seite	RW2;RW8 23759,49971 23379,49925
 Radweg auf Gehweg, Verbundsteinpflaster	RW8;RW2 22517,31745 22445,31556 22319,31203 22318,31108
 Radweg auf Gehweg, Verbundsteinpflaster	RW2;RW8 22318,31108 22378,30943
 Radweg auf Gehweg	RW2;RW8 22206,30826 22283,30775 22352,30734
@@ -339,13 +339,14 @@ Mellenthin - Neppermin: verkehrsberuhigt	RW6 50035,170731 50047,170808 50081,170
 Ahlbeck: gemeinsamer Geh- und Radweg auf der nördlichen Seite	RW2;RW9 60077,171695 60105,171680 60200,171623 60293,171553 60338,171543 60383,171530 60406,171501
 Neppermin - Mellenthin - B110: asphaltierter Radweg auf der westlichen Seite	RW 50049,170583 49835,170038 49737,169837 49114,169212 49028,168646 48995,168300 48954,167870
 nördlicher Gehweg für Radfahrer freigegeben	RW1;RW9 28853,-19212 28615,-19431 28251,-19639 28164,-19771 28071,-19862
-Stegelitz: Gehwege für Radfahrer freigegeben	RW 39634,81668 39550,81278 39303,80853 38833,80699
+Stegelitz: westlicher Gehweg für Radfahrer freigegeben	RW1;RW9 39634,81668 39576,81399
+Stegelitz: Gehwege für Radfahrer freigegeben	RW1;RW1 39576,81399 39550,81278 39303,80853 38929,80688
 Werbellinsee: asphaltierter Zweirichtungsradweg auf der westlichen Seite	RW 30960,61370 30784,60950
 Werbellinsee: Verbundsteinpflaster-Zweirichtungsradweg auf der westlichen Seite	RW 30784,60950 30781,60566
 Werbellinsee: asphaltierter Zweirichtungsradweg auf der nordwestlichen Seite	RW 30384,59443 29884,58862 29996,58615 29856,58262 29771,57837 29812,57628 29056,57503 28199,57257 27851,57084 27546,56968 27359,56787 27137,56650 26792,56558
 Eichhorst: asphaltierter Zweirichtungsradweg auf der südöstlichen Seite	RW 25512,54174 25488,54151
-Eichhorst - Finowfurt: asphaltierter Zweirichtungsradweg auf der östlichen Seite	RW 25488,54151 25395,53549
-Eichhorst - Finowfurt: asphaltierter Zweirichtungsradweg auf der westlichen Seite	RW 25395,53549 25347,53338
+Eichhorst - Finowfurt: asphaltierter Zweirichtungsradweg auf der östlichen Seite	RW8;RW2 25488,54151 25401,53587
+Eichhorst - Finowfurt: asphaltierter Zweirichtungsradweg auf der westlichen Seite	RW2;RW8 25401,53587 25395,53549 25347,53338
 Am Bahnhof Bernau: Suggestivstreifen	RW 22868,30412 22904,30359
 	RW 2246,31162 2219,31171 2173,31187 2126,31207 2042,31236 1931,31275 1918,31279 1762,31318 1737,31303
 	RW4;RW2 1346,-762 1212,-706 925,-684 741,-584 586,-627 465,-662 348,-743
@@ -438,6 +439,19 @@ Radweg existiert, zumindest auf der östlichen Seite	RW 87906,-5239 87553,-4939 8
 überwiegend asphaltiert	RW8;RW2 48518,-1559 47882,-1378 47778,-1308 47484,-1058 46969,-672 46718,-631 46354,-369 45787,-225 45424,-11 45247,7 45037,31 43880,303 43456,337 42926,155 39341,-1057
 nicht besonders breite Schutzstreifen	RW3;RW3 -12370,-354 -12435,-222 -12505,-60 -12528,-11 -12557,11 -12637,-8 -12661,-14 -12840,-69 -12961,-136 -13068,-115
 Schutzstreifen	RW3; -13187,-1150 -13203,-1246
+#: confirmed_by: Torsten Fleischmann
+Gehweg für Radfahrer frei	RW1;RW9 18292,26726 18911,27124 19364,27415 19377,27432 19534,27833
+Gehweg für Radfahrer frei	RW9;RW1 20537,29285 20704,29485 21085,29942
+	RW2;RW8 21955,30976 21646,30961 21001,30933
+	RW2;RW8 21955,30976 21733,31192 21660,31222
+	RW2;RW2 33206,63582 33080,63939 32966,64019 32506,64218 32496,64296
+Gehweg für Radfahrer frei	RW1;RW1 30282,68716 29990,69159 29831,69617 29695,70021
+asphaltiert	RW2;RW8 38907,90615 38992,90586 39375,90456 39609,90247 40122,90048
+	RW;RW8? 18881,80833 18732,80792 18024,80478 17455,80199 17094,79875
+	RW;RW 17094,79875 16904,79746 16331,79764
+Gehweg für Radfahrer frei	RW1; 16331,79764 16200,79437 16116,79398
+	RW4;RW4 16116,79398 15887,79291
+asphaltiert	RW8;RW2 7693,69244 7068,68100 6538,67236 5779,66638 5752,66570
 ######################### User Contributions #################################
 #: by: Tagesspiegel
 	RW 16953,35907 17114,35904 18082,36115 18440,36179 19193,36011
@@ -451,7 +465,8 @@ Industriestr. (Dahlwitz-Hoppegarten): gegenläufiger Radweg, rotes Betonpflaster	
 #: by: rjoop: vvv
 #XXX removed by Andreas Titz B96: asphaltierter Zweirichtungsradweg auf der südwestlichen Seite	RW  81,33971 470,33540 728,33253 746,33231 831,33128 929,32980 1051,32796 1184,32554 1254,32428 1365,31576 1429,31501
 Schildow - Wensickendorf: asphaltierter Zweirichtungsradweg auf der östlichen Seite	RW 8071,30398 8100,30308 8281,29788 8327,29494 8315,29159
-Marienwerder - B167: Radweg	RW 22912,48759 22862,49031 23597,49573 23660,49619 23748,49682 23783,49745 23759,49971
+Marienwerder - B167: Radweg	RW2;RW8 22912,48759 22862,49031
+Marienwerder - B167: teilweise asphaltierter Radweg	RW1;RW9 22862,49031 23597,49573 23660,49619 23748,49682 23783,49745 23759,49971
 #: add_fragezeichen: fängt der Radweg bereits in Großbeeren an?
 Großbeeren - Diedersdorf: asphaltierter Zweirichtungsradweg auf der nördlichen Seite	RW 5654,-6424 6432,-6715
 Mahlow - Jühnsdorf: asphaltierter Zweirichtungsradweg auf der westlichen Seite	RW 9854,-9480 9704,-9993 9598,-10356 9578,-10891
@@ -467,7 +482,8 @@ Wahlsdorf - Niebendorf-Heinsdorf: asphaltierter straßenbegleitender Radweg, Flae
 Schleusenweg: Radweg	RW -2760,-740 -3003,432
 #: by: ^^^
 #: by: Torsten Fleischmann:
-zwischen B2 und mindestens Autobahnbrücke: auf der nördlichen Seite verlaufender gemeinsamer Rad/Fußweg (in beiden Richtungen benutzungspflichtig), der stellenweise nur ca. 2,5m breit ist	RW 22178,30343 21872,30139 21561,30131 21117,29968 21085,29942
+#: confirmed_by: srt (westlicher Abschnitt)
+zwischen B2 und mindestens Autobahnbrücke: auf der nördlichen Seite verlaufender gemeinsamer Rad/Fußweg (in beiden Richtungen benutzungspflichtig), der stellenweise nur ca. 2,5m breit ist	RW2;RW8 22178,30343 21872,30139 21561,30131 21117,29968 21085,29942
 #: by: Andreas Mühlhausen: vvv
 #: note: von Andreas von Nauen bis Kienberg verifiziert:
 B273: sehr guter Zweirichtungsradweg	RW -24957,22740 -24366,23575 -23897,24448 -23732,24811 -23641,24954 -22574,25597 -22376,26392 -22736,27452 -22711,27592 -22416,28080 -22224,28832 -21704,30257 -21772,30661

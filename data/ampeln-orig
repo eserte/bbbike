@@ -1766,7 +1766,7 @@ S-Bahn und Regionalbahn	B 21562,12088
 	X 8571,11846
 S-Bahn alle 20 Minuten, Regionalbahn halbstündlich (?)	B 40248,14503
 Bahn kommt ca. halbstündlich	B 43081,77252
-Bahn kommt ca. halbstündlich	B 41387,91306
+Bahn kommt ca. halbstündlich	B 41385,91309
 Bahn kommt ca. halbstündlich oder öfter	B 27139,37340
 Bahn kommt ca. halbstündlich, mit Aufforderungsknopf zum Öffnen der Schranke	B 42086,79436
 Bahn kommt ca. halbstündlich, mit Aufforderungsknopf zum Öffnen der Schranke	B 41323,96820
@@ -1809,8 +1809,17 @@ UBB, halbstündlich	B 51270,179246
 	B 26568,178286
 	B 18326,173768
 	B 16716,174712
-#: XXX_prog: Strecke ist außer Betrieb!
-	B 32190,64659
+#: XXX_prog: Strecke ist außer Betrieb! B0 oder was?
+	B0 32190,64659
+#: XXX_prog: Strecke ist außer Betrieb! B0 oder was?
+	B0 19029,81437
+#: note: Schranke noch in Betrieb; Züge werden hinter der Straße gewendet
+	B 16196,79268
+	F 15527,79560
+	X 15654,79485
+	X 15887,79291
+	X 16116,79398
+	B 3619,65202
 	B -18636,4186
 	X 21823,4210
 	X 16861,5935
@@ -1824,7 +1833,7 @@ UBB, halbstündlich	B 51270,179246
 	B 48516,64085
 	B 42250,115925
 	B 48147,70935
-	B 2519,62026
+	B 2641,62092
 	B -8016,54305
 	B -34333,-26828
 	B -32833,-25250
@@ -1885,8 +1894,8 @@ S-Bahn ca. alle 10 Minuten	B 10865,-4464
 	X 5942,10803
 	F 8358,11477
 	B -13875,20548
-	B -3395,51242
-	B -5037,54561
+	B -3453,51255
+	B -5122,54564
 	B -6070,59687
 	B -6547,61759
 	B -6557,66279
@@ -2149,7 +2158,7 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8626,23432
 	X 12187,22486
 	F 8110,13042
 	B 45152,-53482
-#: note: Luftbild
+#: XXX mittlerweile zwei Fußgängerampeln vor und hinter der alten Position; nochmal prüfen
 	F 17703,17990
 #: note: Luftbild
 	F 17973,17772
@@ -2175,6 +2184,15 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8372,22603
 nur Museumsbetrieb der Heidekrautbahn	B0 8738,28086
 nur Museumsbetrieb der Heidekrautbahn	B0 9055,28814
 nur Museumsbetrieb der Heidekrautbahn	B0 11616,30519
+	B 11147,73794
+	B 10148,73146
+	B 7798,69839
+	B 5361,66676
+	B 2129,61503
+	B 1300,60559
+	B -1165,58248
+	B -4990,55852
+	B -1530,45604
 #: note: Luftbild
 	B 66499,93857
 #: note: Luftbild
@@ -2314,7 +2332,8 @@ nur Museumsbetrieb der Heidekrautbahn	B0 11616,30519
 	B -27809,58912
 	B -7352,54661
 	B 3476,63906
-	B 29542,69987
+#: XXX_prog: Strecke ist außer Betrieb! B0 oder was?
+	B0 29542,69987
 	B -62229,18971
 #: note ^^^
 	X 10060,21916
@@ -2604,6 +2623,9 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X 15670,12022
 #: note: Luftbild
 	F 4861,20241
+	F 16602,25646
+#: XXX_prog: Strecke ist außer Betrieb! B0 oder was?
+	B0 26090,86927
 ################################################################################
 # note: Potsdam vvv
 #: by: http://www.potsdam.de/cms/beitrag/10067917/966975/
@@ -2720,6 +2742,11 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: note: ^^^
 ################################################################################
 # note: Ampeln elsewhere vvv
+	F 18911,27124
+	X 19377,27432
+	X 19534,27833
+	X 18356,22225
+	F 20704,29485
 Doppelte Bettelampel (beim Überqueren der Pudagla-Straße)	X 52868,176203
 	X 56461,82273
 	X 23024,30523

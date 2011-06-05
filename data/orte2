@@ -286,7 +286,7 @@ Groß Kiesow	2 11934,178747
 Sarnow	2 22586,149952
 Milmersdorf	2 25146,78471
 Mittenwalde|b. Templin	2 26483,86997
-Temmen	2 33290,77277
+Temmen	2 33177,77248
 Gerswalde	2 32311,85560
 Pinnow|(Uckermark)	2 55450,73574
 Wustrow	2 -20726,90673
@@ -457,7 +457,7 @@ Widuchowa	2 75847,81483
 Stepnica	2 90980,140464
 Mieszkowice	2 83793,43762
 Slonsk	2 105548,19204
-Jakobshagen	1 19529,89093
+Jakobshagen	1 19490,89068
 Warthe|(bei Jakobshagen)	1 16377,90072
 Hardenbeck	1 18817,95103
 Hinrichshagen	1 15524,116146
@@ -519,7 +519,7 @@ Potzlow	1 38475,90762
 Wallmow	1 54861,105010
 Drense	1 47800,101393
 Ziemkendorf	1 50581,102443
-Seehausen|am Oberuckersee	1 41085,90590
+Seehausen|am Oberuckersee	1 41087,90547
 Wichmannsdorf|bei Boitzenburg	1 24878,93441
 Beenz	1 30510,95194
 Sternhagen	1 35791,93615
@@ -564,7 +564,7 @@ Friedberg	1 50039,125006
 Rambin	1 -7477,216462
 Haßleben	1 28544,90574
 Petznick	1 23701,84425
-Klosterwalde	1 19685,85251
+Klosterwalde	1 19617,85269
 Gollmitz	1 30482,99609
 Güstow	1 34589,102405
 Klinkow	1 36033,104038
@@ -584,7 +584,7 @@ Friedrichsthal|(bei Gartz)	1 72982,84835
 Born	1 -53441,218742
 Wieck	1 -49796,221774
 Penkow	1 -54521,116188
-Ringenwalde|(Uckermark)	1 30268,72844
+Ringenwalde|(Uckermark)	1 30287,72823
 Neppermin	1 50393,171375
 Karow|(Mecklenburg)	1 -69881,124463
 Storkow|(bei Penkun)	1 68140,101615
@@ -938,6 +938,7 @@ Metzelthin	0 15563,86309
 Briesen|(Uckermark)	0 27558,81576
 Berkenlatten	0 33021,82179
 Neu Temmen	0 34287,76273
+Hessenhagen	0 36184,78342
 Fergitz|am Oberückersee	0 38674,86779
 Poratz	0 35469,73594
 Friedrichsfelde|(Steinhöfel)	0 38853,77099
@@ -945,7 +946,7 @@ Neuhaus|bei Steinhöfel	0 38103,75222
 Peetzig	0 43778,74590
 Herrenstein	0 30003,85505
 Pfingstberg|bei Stegelitz	0 40700,81012
-Ausbau (Afrika)|bei Stegelitz	0 37428,79238
+Ausbau (Afrika)|bei Stegelitz	0 37572,79308
 Henriettenhof	0 54025,69287
 Hohenlandin	0 58674,76657
 Meyenburg|(Berkholz-Meyenburg)	0 65840,72257
@@ -966,11 +967,12 @@ Frauenhagen|(bei Brüssow)	0 59020,109268
 Neuhof|(Warnitz)	0 42311,88596
 Quast|(Warnitz)	0 41821,89709
 Strehlow|(Potzlow)	0 38612,91950
-Abbau|(Potzlow)	0 36234,88882
+Potzlow/Ausbau	0 35935,90603
+Abbau|(Potzlow)	0 36325,88868
 Rollberg|bei Eickstedt	0 53396,102754
 Rollberg/Ausbau	0 52996,102214
 Eickstedt/Ausbau	0 52403,101676
-Vogelsang|(Wallmow)	0 54717,103147
+Vogelsang|(Wallmow)	0 54894,103001
 Wendtshof|(Wallmow)	0 53669,106653
 Grenz	0 51128,104358
 Cremzow	0 51391,106540
@@ -985,9 +987,9 @@ Wollin|(Eickstedt)	0 53952,97760
 Berghausen|bei Seehausen	0 42081,92815
 Siefertshof|(bei Seehausen)	0 40973,94201
 Neumannshof|(bei Seehausen)	0 41181,95200
-Pinnow|bei Gerswalde	0 34805,90367
-Buchholz|bei Gerswalde	0 31796,89304
-Blankensee|bei Haßleben	0 28994,87995
+Pinnow|bei Gerswalde	0 34844,90419
+Buchholz|bei Gerswalde	0 32001,89339
+Blankensee|(Mittenwalde)	0 28994,87995
 Kuhz|bei Haßleben	0 26263,91234
 Lindenhagen	0 33342,94000
 Kröchlendorff	0 28388,96768
@@ -1023,7 +1025,8 @@ Stahlbrode	0 -2028,202913
 Losentitz	0 2110,204705
 Brüsenwalde	0 13327,93666
 Dreiseen	0 5272,90803
-Herzfelde|bei Klosterwalde	0 22562,87961
+Kreuzkrug	0 22040,83653
+Herzfelde|bei Klosterwalde	0 22537,87990
 Sternthal	0 23683,90984
 Lichtenhain	0 22276,91916
 Klaushagen	0 20852,91905
@@ -1037,6 +1040,7 @@ Koldenhof	0 3988,102399
 Mahlendorf	0 12245,91459
 Neuthymen	0 -5359,89929
 Lobbe	0 27178,213178
+Hohenwalde	0 32398,74953
 Katschow	0 51604,167865
 Bergedorf	0 -209464,116390
 Büssow	0 67815,99673
@@ -1048,6 +1052,7 @@ Dorotheenwalde	0 60269,123495
 Breitenstein	0 58633,125070
 Koblentz	0 57622,126012
 Rosenhagen	0 8290,118676
+Vogelsang|(Gransee)	0 7983,69794
 Carwitz	0 10913,99605
 Harburg	0 -224376,112769
 Blankenese	0 -236168,124317
