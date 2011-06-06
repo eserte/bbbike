@@ -1,8 +1,10 @@
-#
-# $Id: Makefile,v 1.112 2008/10/06 22:00:01 eserte Exp $
-#
-
 # Targets:
+#
+#  automatic-deployment: do everything for an automatic deployment: check on
+#                        local system first, then sync, then test on remote
+#                        system, and do some git operations before and
+#                        after
+#
 #  check:	Show what would be rsync'ed from the current directory
 #  rsync:	Do the rsync. This will not be permitted if the make system
 #		detects that the contents are prepared for the local server.
