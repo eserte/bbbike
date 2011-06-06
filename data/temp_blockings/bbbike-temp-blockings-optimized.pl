@@ -1842,10 +1842,10 @@ userdel	2::temp -8087,-1453 -8151,-1470 -8306,-1454
        undef,
        undef,
        {
-         'source_id' => 'IM_012907',
-         'until' => 1307743140,
-         'text' => 'Pasewalker Str. (Pankow): Baustelle, Fahrtrichtung gesperrt (bis Frühjahr 2011) stadteinwärts zwischen Marienstr. und Anschlussstelle A114, 02.06.2009 bis 10.06.2011',
-         'from' => 1243863900,
+         'source_id' => 'IM_017116',
+         'until' => 1312117200,
+         'text' => 'Pasewalker Str. (Pankow): Baustelle, Fahrtrichtung gesperrt (bis Ende 07/2011) stadteinwärts zwischen Eweststr.und Auffahrt A114, 02.06.2009 06:47 Uhr bis 31.07.2011 15:00 Uhr ',
+         'from' => 1243831620,
          'id' => 1686,
          'data' => 'userdel	q4::inwork; 12095,20832 12076,20731 12030,20490 12008,20368 12000,20327 11984,20246 11963,20136 11931,19965 11907,19838 11907,19749
 ',
@@ -2212,8 +2212,8 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        {
          'source_id' => 'IM_013995',
-         'until' => 1320069600,
-         'text' => 'Freiheit/Wiesendamm (Spandau): Baustelle, Fahrtrichtung gesperrt Richtung Spandauer Damm zwischen Klärwerkstr. und Spandauer Damm, 25.08.2009 07:04 Uhr bis 31.10.2011 15:00 Uhr ',
+         'until' => 1317387600,
+         'text' => 'Freiheit/Wiesendamm (Spandau): Baustelle, Fahrtrichtung gesperrt (bis Ende 09/2011) Richtung Spandauer Damm zwischen Klärwerkstr. und Spandauer Damm, 25.08.2009 07:04 Uhr bis 30.09.2011 15:00 Uhr ',
          'from' => 1251090240,
          'id' => 1850,
          'data' => 'userdel	q4::inwork; -1258,13552 -990,13502 -729,13415 -346,13349 -307,13279 -264,13009
@@ -2967,11 +2967,11 @@ userdel	q4::inwork; 7949,7607 7935,7736 7950,7840 8226,8648 8237,8685 8306,8722
        },
        {
          'source_id' => 'LS/O-SG33-E/10/214-10',
-         'until' => 1307743200,
-         'text' => 'Schenkenberg: L26: grundhafter Ausbau, Neubau des Durchlass 13 Prenzlau - A 20, (zw. Stegemannshof und Prenzlau), 29.03.2011 bis 10.06.2011 ',
-         'from' => 1303071912,
+         'until' => 1312149600,
+         'text' => 'Schenkenberg: L26: grundhafter Ausbau der L 26 Prenzlau - A20, 02.05.2011 bis 31.07.2011 ',
+         'from' => 1304287200,
          'id' => 2199,
-         'data' => 'userdel	2::inwork 42804,104235 42306,103942
+         'data' => 'userdel	2::inwork 45393,105220 45906,105450 46581,105900 47587,106693
 ',
          'type' => 'gesperrt'
        },
@@ -3011,12 +3011,12 @@ userdel	q4::inwork; 7949,7607 7935,7736 7950,7840 8226,8648 8237,8685 8306,8722
        {
          'source_id' => 'LS/O-SG33-E/11/044',
          'until' => 1317506400,
-         'text' => 'Flieth-Stegelitz: L24: Brücke über den Stierngraben bei Kaakstedt, ab 09.05.11 Vollsperrung, bis 01.10.2011',
+         'text' => 'Flieth-Stegelitz: L24: Brücke über den Stierngraben bei Kaakstedt, LSA-Regelung, bis 01.10.2011',
          'from' => 1304805600,
          'id' => 2208,
-         'data' => 'userdel	2::inwork 35887,85385 34920,85944
+         'data' => 'userdel	q4::inwork 35887,85385 34920,85944
 ',
-         'type' => 'gesperrt'
+         'type' => 'handicap'
        },
        {
          'source_id' => 'LS/O-SG33-F/11/070',
@@ -3030,11 +3030,11 @@ userdel	q4::inwork; 7949,7607 7935,7736 7950,7840 8226,8648 8237,8685 8306,8722
        },
        {
          'source_id' => 'INKO_093372',
-         'until' => 1356994799,
-         'text' => 'Schadowstr. (Mitte) Richtung Dorotheenstr. zw. Unter den Linden und Dorotheenstr. Ab: 16.05.2011 Baustelle, Fahrtrichtung gesperrt (bis Ende 2012) ',
-         'from' => 1305410400,
+         'until' => 1333206000,
+         'text' => 'Schadowstr. (Mitte): Baustelle, Straße vollständig gesperrt (bis Ende 03/12) in beiden Richtungen zwischen Unter den Linden und Dorotheenstr., 16.05.2011 07:00 Uhr bis 31.03.2012 17:00 Uhr ',
+         'from' => 1305435600,
          'id' => 2210,
-         'data' => 'userdel	q4::inwork; 9028,12307 9016,12416 9008,12485
+         'data' => 'userdel	q4::inwork 9028,12307 9016,12416 9008,12485
 ',
          'type' => 'handicap'
        },
@@ -3042,16 +3042,25 @@ userdel	q4::inwork; 7949,7607 7935,7736 7950,7840 8226,8648 8237,8685 8306,8722
        undef,
        {
          'source_id' => 'INKO_105491',
-         'until' => 1309471199,
-         'text' => 'Lahnstr. (Neukölln) Richtung Grenzallee zwischen Karl-Marx-Str. und Naumburger Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 06/11) ',
-         'from' => 1305840720,
+         'until' => 1309190400,
+         'text' => 'Lahnstr. (Neukölln): Baustelle, Fahrtrichtung gesperrt (bis Ende 06/11) Richtung Grenzallee zwischen Karl-Marx-Str. und Naumburger Str., 28.03.2011 07:00 Uhr bis 27.06.2011 18:00 Uhr ',
+         'from' => 1301202000,
          'id' => 2213,
          'data' => 'userdel	q4::inwork; 13095,6926 13278,6967
 ',
          'type' => 'handicap'
        },
        undef,
-       undef,
+       {
+         'source_id' => 'IM_017318',
+         'until' => 1307718000,
+         'text' => 'Puschkinallee (Treptow): Baustelle, Straße vollständig gesperrt zwischen Bulgarische Str. und Elsenstr., 23.05.2011 07:00 Uhr bis 10.06.2011 17:00 Uhr ',
+         'from' => 1306040400,
+         'id' => 2215,
+         'data' => 'userdel	2::inwork 15383,9191 14819,9462 14780,9480 14310,9692
+',
+         'type' => 'gesperrt'
+       },
        {
          'until' => undef,
          'text' => 'Fuldastr., von Donaustr. Richtung Karl-Marx-Str. ist die Fahrbahn gesperrt',
@@ -3094,6 +3103,46 @@ userdel	q4::inwork; 10264,12826 10166,12777 10132,12941
          'from' => 1307219374,
          'id' => 2220,
          'data' => 'userdel	q4::inwork 19595,27953 20114,28315 20362,28420
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_017330',
+         'until' => 1370023200,
+         'text' => 'Invalidenstr. (Mitte): Baustelle, Fahrtrichtung gesperrt (bis 05/13) Richtung Alt-Moabit zwischen Gartenstr. und Scharnhorststr., 05.06.2011 10:00 Uhr bis 31.05.2013 20:00 Uhr ',
+         'from' => 1307174400,
+         'id' => 2221,
+         'data' => 'userdel	q4::inwork; 9383,13978 9203,13953 9151,13941 9085,13919 8935,13844 8690,13723 8659,13708 8626,13692 8619,13689 8588,13673 8574,13666 8450,13599
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'LS/S-SG33-C/11/084',
+         'until' => 1308520800,
+         'text' => 'Jämlitz-Klein Düben: B115, B112: Deckenerneuerung Simmersdorf - AS Forst geplante Vollsperrung: 17.06.11-19.06.11',
+         'from' => 1308261600,
+         'id' => 2222,
+         'data' => 'userdel	2::inwork 97780,-91551 97468,-91292
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_017000',
+         'until' => 1310839200,
+         'text' => 'Stargarder Str. (Prenzlauer Berg): Baustelle, Fahrtrichtung gesperrt (bis Mitte 07/11) Richtung Schönhauser Allee zwischen Dunckerstr. und Schliemannstr., 09.03.2011 07:00 Uhr bis 16.07.2011 20:00 Uhr ',
+         'from' => 1299564000,
+         'id' => 2223,
+         'data' => 'userdel	q4::inwork; 11603,15455 11502,15527
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'INKO_093371',
+         'until' => 1335798000,
+         'text' => 'Dorotheenstr. (Mitte): Baustelle, Fahrtrichtung gesperrt (bis Ende 04/12) Richtung Friedrichstr. zwischen Wilhelmstr. und Schadowstr., 06.06.2011 07:00 Uhr bis 30.04.2012 17:00 Uhr ',
+         'from' => 1307250000,
+         'id' => 2224,
+         'data' => 'userdel	q4::inwork; 8775,12457 8907,12472 9008,12485
 ',
          'type' => 'handicap'
        }
