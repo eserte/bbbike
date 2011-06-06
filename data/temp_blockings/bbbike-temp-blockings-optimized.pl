@@ -1824,16 +1824,7 @@ userdel	2::temp -8087,-1453 -8151,-1470 -8306,-1454
        undef,
        undef,
        undef,
-       {
-         'until' => 1307311200,
-         'text' => 'Oberfeldstr. (Marzahn) in beiden Richtungen zwischen Schulstr. und Nordpromenade Veranstaltung, gesperrt. Ebenso ist die Nordpromenade gesperrt. (2. bis 5. Juni 2011)',
-         'from' => 1306879200,
-         'id' => 1669,
-         'data' => 'userdel	2::temp 20599,11938 20610,12050
-userdel	2::temp 20610,12050 20715,12040
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
