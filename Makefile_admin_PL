@@ -404,7 +404,7 @@ RECODE=            recode
 
 .PHONY: ChangeLog develdist makepatch cbbbikedist cbbbikedistdit
 .PHONY: cbbbikedosdist cbbbikedosdistdir cgidist cgidistdir
-.PHONY: ext distdir2
+.PHONY: distdir2
 
 cbbbikedist: cbbbikedistdir
 	$(RM_F) $(CBBBIKE_ARCH)
