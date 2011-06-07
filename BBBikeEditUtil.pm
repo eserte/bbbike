@@ -61,8 +61,8 @@ sub get_generated_files {
 	}
     }
     closedir DIR;
-    for my $misc_file (qw(zebrastreifen)) {
-	my $file = "$FindBin::RealBin/misc/$misc_file";
+    for my $data_non_orig_file (qw(zebrastreifen)) {
+	my $file = "$FindBin::RealBin/data/$data_non_orig_file";
 	if (-r $file) {
 	    push @files, $file;
 	}

@@ -302,7 +302,7 @@ SKIP: {
 }
 
 SKIP: {
-    my $f = "$FindBin::RealBin/../misc/zebrastreifen";
+    my $f = "$datadir/zebrastreifen";
     skip("$f not available", $zebrastreifen_tests)
 	if !-r $f;
 

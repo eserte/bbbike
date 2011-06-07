@@ -253,10 +253,7 @@ EOF
 				  offcallback => sub { $main::top->bind("<F12>"=> '') },
 				 ),
 		layer_checkbutton('Zebrastreifen', 'p',
-				  (-e "$main::datadir/zebrastreifen"
-				   ? "$main::datadir/zebrastreifen" # osm2bbd generated directories have it here
-				   : "$bbbike_rootdir/misc/zebrastreifen" # the original Berlin data has it here
-				  ),
+				  "$main::datadir/zebrastreifen",
 				  method => 'add_new_nonlazy_layer', # lazy mode does not support bbd images yet
 				  above => $str_layer_level,
 				 ),

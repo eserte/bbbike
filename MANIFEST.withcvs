@@ -329,6 +329,7 @@ data/vorfahrt
 data/wasserstrassen
 data/wasserumland
 data/wasserumland2
+data/zebrastreifen
 doc/HOWTO_edit_bbbike_data.html
 doc/README.english.html
 doc/README.html
@@ -1377,7 +1378,6 @@ misc/verkehrszeichen/README
 misc/verkehrszeichen/Zeichen_350.svg
 misc/webcams.bbd
 misc/weblinks.bbd
-misc/zebrastreifen
 miscsrc/AltBerlin.pm
 miscsrc/ApproxCityparts.pm
 miscsrc/BBBikeAllTracksPlugin.pm
