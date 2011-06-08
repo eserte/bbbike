@@ -963,7 +963,7 @@ Tempelherrenstr.: asphaltiert	Q0 10183,9876 10251,9979 10313,10084
 (Benekendorffstr - Alt-Lübars): mäßiger Sandweg	Q2 6457,23577 6674,23683 6744,23695
 #Dianastr.: mäßig geeignet laut ADFC-Karte; ist aber asphaltiert!	Q2 6698,3477 6792,3318 6820,3245
 #: unverified_by ADFC-Karte
-(Alt-Hermsdorf - Zehntwerderweg): mäßig geeignet	Q2 4582,23035 4619,22934 4626,22914 4679,22766
+(Alt-Hermsdorf - Zehntwerderweg): mäßig geeignet	Q2 4582,23035 4619,22934 4626,22914 4678,22776
 Medebacher Weg: Kopfsteinpflaster	Q2 1753,20191 1794,20110 1825,20047
 Medebacher Weg: Kopfsteinpflaster	Q2 1840,19990 1863,19925 1886,19835 1896,19801
 Brünowplatz: Kopfsteinpflaster	Q2 1825,20047 1804,20009 1840,19990 1862,20025 1825,20047
@@ -14541,6 +14541,14 @@ Rauhfußgasse: guter Beton	Q0- -1276,19759 -1157,19711 -1071,19689
 #: XXX Q2 oder besser?
 #: note: "befestigt und asphaltiert", "kleine schmale Straße in einem Wohngebiet"
 Plettenberger Pfad: Asphalt	Q0 1869,18608 1903,18429 1924,18311 1936,18209
+# 
+#: by: Franke Steppat:
+#: confirmed_by: osm (cobblestone)
+Dahnstr.: mäßiges Kopfsteinpflaster	Q2 5303,17914 5287,17815
+#
+#: by: ksm-verkehr...
+#: note: "Gute Fahrbahnqualität aus großen Betonplatten (2 Platten für Fahrbahnbreite)"
+Ilbeshäuser Weg: guter Beton	Q1+ 5568,21185 5413,21329
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206

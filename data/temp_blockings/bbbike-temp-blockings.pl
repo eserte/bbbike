@@ -19060,6 +19060,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_017318',
        data  => <<EOF,
+#: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20110530.1300.346009.html
 userdel	2::inwork 15383,9191 14819,9462 14780,9480 14310,9692
 EOF
      },
@@ -19118,11 +19119,11 @@ EOF
      },
      { from  => 1307174400, # 2011-06-04 10:00
        until => 1370023200, # 2013-05-31 20:00
-       text  => 'Invalidenstr. (Mitte): Baustelle, Fahrtrichtung gesperrt (bis 05/13) Richtung Alt-Moabit zwischen Gartenstr. und Scharnhorststr., 05.06.2011 10:00 Uhr bis 31.05.2013 20:00 Uhr ',
+       text  => 'Invalidenstr. (Mitte): Baustelle, Fahrtrichtung gesperrt (bis 05/13) Richtung Alt-Moabit zwischen Gartenstr. und Hessische Str., 05.06.2011 10:00 Uhr bis 31.05.2013 20:00 Uhr ',
        type  => 'handicap',
        source_id => 'IM_017330',
        data  => <<EOF,
-userdel	q4::inwork; 9383,13978 9203,13953 9151,13941 9085,13919 8935,13844 8690,13723 8659,13708 8626,13692 8619,13689 8588,13673 8574,13666 8450,13599
+userdel	q4::inwork; 9383,13978 9203,13953 9151,13941 9085,13919 8935,13844 8690,13723
 EOF
      },
      { from  => 1308261600, # 2011-06-17 00:00

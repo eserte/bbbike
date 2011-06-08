@@ -3057,7 +3057,8 @@ userdel	q4::inwork; 7949,7607 7935,7736 7950,7840 8226,8648 8237,8685 8306,8722
          'text' => 'Puschkinallee (Treptow): Baustelle, Straße vollständig gesperrt zwischen Bulgarische Str. und Elsenstr., 23.05.2011 07:00 Uhr bis 10.06.2011 17:00 Uhr ',
          'from' => 1306040400,
          'id' => 2215,
-         'data' => 'userdel	2::inwork 15383,9191 14819,9462 14780,9480 14310,9692
+         'data' => '#: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20110530.1300.346009.html
+userdel	2::inwork 15383,9191 14819,9462 14780,9480 14310,9692
 ',
          'type' => 'gesperrt'
        },
@@ -3109,10 +3110,10 @@ userdel	q4::inwork; 10264,12826 10166,12777 10132,12941
        {
          'source_id' => 'IM_017330',
          'until' => 1370023200,
-         'text' => 'Invalidenstr. (Mitte): Baustelle, Fahrtrichtung gesperrt (bis 05/13) Richtung Alt-Moabit zwischen Gartenstr. und Scharnhorststr., 05.06.2011 10:00 Uhr bis 31.05.2013 20:00 Uhr ',
+         'text' => 'Invalidenstr. (Mitte): Baustelle, Fahrtrichtung gesperrt (bis 05/13) Richtung Alt-Moabit zwischen Gartenstr. und Hessische Str., 05.06.2011 10:00 Uhr bis 31.05.2013 20:00 Uhr ',
          'from' => 1307174400,
          'id' => 2221,
-         'data' => 'userdel	q4::inwork; 9383,13978 9203,13953 9151,13941 9085,13919 8935,13844 8690,13723 8659,13708 8626,13692 8619,13689 8588,13673 8574,13666 8450,13599
+         'data' => 'userdel	q4::inwork; 9383,13978 9203,13953 9151,13941 9085,13919 8935,13844 8690,13723
 ',
          'type' => 'handicap'
        },
