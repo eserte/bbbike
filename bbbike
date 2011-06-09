@@ -15913,7 +15913,7 @@ sub get_symbol_scale {
 	}
 	if ($filename) {
 	    if ($tag =~ m{^[ub]-[US]0$}) {
-		$photo = load_photo($top, $filename, -persistent => 1, -palette => 256);
+		$photo = load_photo($top, $filename, -persistent => 1, -palette => 256, -gamma => 3);
 	    } else {
 		$photo = load_photo($top, $filename, -persistent => 1);
 	    }
@@ -20544,7 +20544,7 @@ sub load_photo {
 
     my $cache_key = $file;
     my %photo_args;
-    for my $key (qw(-palette)) {
+    for my $key (qw(-palette -gamma)) {
 	if (exists $args{$key}) {
 	    my $val = $photo_args{$key} = delete $args{$key};
 	    $cache_key .= "-$key:$val";
