@@ -14315,12 +14315,13 @@ userdel	2::inwork -19058,11636 -19029,11660 -18750,11919
 EOF
      },
      { from  => 1243831620, # 2009-06-01 06:47
-       until => 1312117200, # 2011-07-31 15:00
-       text  => 'Pasewalker Str. (Pankow): Baustelle, Fahrtrichtung gesperrt (bis Ende 07/2011) stadteinwärts zwischen Eweststr.und Auffahrt A114, 02.06.2009 06:47 Uhr bis 31.07.2011 15:00 Uhr ',
+       until => 1312117200, # 2011-07-31 15:00 # by: wosch (Schloßallee)
+       text  => 'Pasewalker Str. (Pankow): Baustelle, Fahrtrichtung gesperrt (bis Ende 07/2011) stadteinwärts zwischen Eweststr.und Auffahrt A114, ebenso Einbahnstraße: Schloßallee zwischen Pasewalker Str. und Grumbkowstr., u.U. Ausweichen auf Gehweg möglich; 02.06.2009 06:47 Uhr bis 31.07.2011 15:00 Uhr ',
        type  => 'handicap',
        source_id => 'IM_017116',
        data  => <<EOF,
 userdel	q4::inwork; 12095,20832 12076,20731 12030,20490 12008,20368 12000,20327 11984,20246 11963,20136 11931,19965 11907,19838 11907,19749
+userdel	q4::inwork; 11883,19739 11730,19684
 EOF
      },
      { from  => 1243972705, # 2009-06-02 21:58
@@ -19069,8 +19070,8 @@ EOF
        text  => 'Fuldastr., von Donaustr. Richtung Karl-Marx-Str. ist die Fahrbahn gesperrt',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2011-05-24
-#: next_check: 2011-06-05
+#: last_checked: 2011-06-09
+#: next_check: 2011-07-05
 #: XXX wie lange gilt die Sperrung?
 userdel	q4::inwork; 12549,8616 12500,8504
 EOF
@@ -19118,7 +19119,7 @@ userdel	q4::inwork 19595,27953 20114,28315 20362,28420
 EOF
      },
      { from  => 1307174400, # 2011-06-04 10:00
-       until => 1370023200, # 2013-05-31 20:00
+       until => 1307652701, # XXX -> handicap_s-orig 2013-05-31 20:00 1370023200
        text  => 'Invalidenstr. (Mitte): Baustelle, Fahrtrichtung gesperrt (bis 05/13) Richtung Alt-Moabit zwischen Gartenstr. und Hessische Str., 05.06.2011 10:00 Uhr bis 31.05.2013 20:00 Uhr ',
        type  => 'handicap',
        source_id => 'IM_017330',

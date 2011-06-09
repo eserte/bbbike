@@ -152,6 +152,10 @@ Fahrradstraße in der Lauenburger Str.	?::projected 5883,4985 5909,5072 5939,5169
 #: section ignorieren vvv
 #: section Straßen in Bau und Planung vvv
 # 
+#: by: http://www.berlin.de/ba-pankow/presse/archiv/20110608.1725.347135.html
+#: next_check: 2011-07-15
+Hauptstraße/Kastanienallee: neue Ampel in Bau	?::inwork 7992,20515
+# 
 #: last_checked: 2011-05-01
 #: next_check: 2011-08-01
 entlang der ehemaligen NEB-Trasse: Weiterbau bis zum Faulen See	?::inwork 16146,17304 16286,17130 16391,16975
@@ -276,8 +280,8 @@ Neubau eines Uferwegs an der HTW (Fuß- und Radweg)	?::inwork 19177,5560 19020,55
 # 
 #XXX del --- nein, es sieht so aus, als ob es bei den Busspuren bleibt --- #: last_checked: 2011-04-19 --- #: next_check: 2011-06-01 --- Karl-Liebknecht-Str.: Radstreifen nach den Bauarbeiten?	?::inwork 10920,13139 11015,13264 11021,13271 11027,13279 11080,13350 11092,13366
 # 
-#: last_checked: 2011-04-18
-#: next_check: 2011-06-15
+#: last_checked: 2011-06-09
+#: next_check: 2011-08-15
 #: XXX passiert hier noch was? Oder ist es mit der Verlängerung der Rollbergstr. schon getan? Oder ist es die Verbindung zwischen Rollbergstr. und Werbellinstr.?
 Am Sudhaus: wo genau wird die Straße verlaufen? Qualität?	? 12148,8174 12227,8190
 # 
@@ -430,12 +434,6 @@ Choriner Str.: die Choriner Str. soll eine Fahrradstraße werden	? 10480,13871 10
 #: last_checked: 2010-10-23:
 #: next_check: 2011-02-08:
 Eisenhutweg: Radwege entstehen im Zuge der Bauarbeiten bis September 2011	?::inwork 17894,2783 17741,2824 17525,3029 17274,3267 17142,3393
-#: by: http://www.berlin.de/ba-pankow/presse/archiv/20081119.1005.114651.html (confirmed_by: MoPo 2009-08-01, soll 2009 realisiert werden) vvv
-#: next_check: 2009-07-24: vvv
-Alt-Blankenburg: Bau von Radwegen	?::inwork; 14050,20955 13915,20944 13562,20913 13576,20849 13592,20785
-Alt-Blankenburg: Bau von Radwegen	?::inwork; 13592,20785 13576,20849 13915,20944 14050,20955
-#: next_check ^^^
-#: by ^^^
 # 
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0802/nachricht2961.html
 B96a: Neubau der Radwege (gemeinsam mit Gehweg); wahrscheinlich wird der Radstreifen dann aufgehoben (bis 2010-01-01)	?::inwork 9228,23643 9146,23843 8984,24078 8891,24330 8826,24501 8682,24883 8665,24941 8661,24952 8571,25180 8548,25239 8493,25378
@@ -614,8 +612,6 @@ Zeitverlust beim Überqueren der Charlottenstraße	? -3091,14220 -3135,14183 -3275
 Radweg auf Alt-Biesdorf hier verschwenkt	? 20114,11719 20025,11747
 #: XXX_prog:
 Weitere Radwegverschwenkungen, siehe Track vom 25. April 2009	? 19389,11761 19004,11780
-#: XXX_prog: verbessern, wenn der entsprechende Routingtext besser aussehen würde (also z.B. "nach rechts und sofort wieder nach links")
-Kleineweg: ist hier leicht versetzt	? 9130,7804 9131,7652 9120,7600
 Reinickendorfer Route 5, wo geht es weiter?	? 6558,18947 6442,18839
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20080728.1510.105902.html
 #XXX del #: by: MoPo 2009-08-01, Radweg auf der südlichen Seite soll 2009 realisiert werden, Oberspreestr.: südliche Nebenfahrbahn hat einen mittigen Asphaltbelag, Europaradweg wird hier entlanggeführt, genauer anschauen	? 19534,5242 19715,5185 19737,5176 19965,5101

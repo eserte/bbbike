@@ -1844,10 +1844,11 @@ userdel	2::temp -8087,-1453 -8151,-1470 -8306,-1454
        {
          'source_id' => 'IM_017116',
          'until' => 1312117200,
-         'text' => 'Pasewalker Str. (Pankow): Baustelle, Fahrtrichtung gesperrt (bis Ende 07/2011) stadteinwärts zwischen Eweststr.und Auffahrt A114, 02.06.2009 06:47 Uhr bis 31.07.2011 15:00 Uhr ',
+         'text' => 'Pasewalker Str. (Pankow): Baustelle, Fahrtrichtung gesperrt (bis Ende 07/2011) stadteinwärts zwischen Eweststr.und Auffahrt A114, ebenso Einbahnstraße: Schloßallee zwischen Pasewalker Str. und Grumbkowstr., u.U. Ausweichen auf Gehweg möglich; 02.06.2009 06:47 Uhr bis 31.07.2011 15:00 Uhr ',
          'from' => 1243831620,
          'id' => 1686,
          'data' => 'userdel	q4::inwork; 12095,20832 12076,20731 12030,20490 12008,20368 12000,20327 11984,20246 11963,20136 11931,19965 11907,19838 11907,19749
+userdel	q4::inwork; 11883,19739 11730,19684
 ',
          'type' => 'handicap'
        },
@@ -3067,8 +3068,8 @@ userdel	2::inwork 15383,9191 14819,9462 14780,9480 14310,9692
          'text' => 'Fuldastr., von Donaustr. Richtung Karl-Marx-Str. ist die Fahrbahn gesperrt',
          'from' => undef,
          'id' => 2216,
-         'data' => '#: last_checked: 2011-05-24
-#: next_check: 2011-06-05
+         'data' => '#: last_checked: 2011-06-09
+#: next_check: 2011-07-05
 #: XXX wie lange gilt die Sperrung?
 userdel	q4::inwork; 12549,8616 12500,8504
 ',
@@ -3107,16 +3108,7 @@ userdel	q4::inwork; 10264,12826 10166,12777 10132,12941
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_017330',
-         'until' => 1370023200,
-         'text' => 'Invalidenstr. (Mitte): Baustelle, Fahrtrichtung gesperrt (bis 05/13) Richtung Alt-Moabit zwischen Gartenstr. und Hessische Str., 05.06.2011 10:00 Uhr bis 31.05.2013 20:00 Uhr ',
-         'from' => 1307174400,
-         'id' => 2221,
-         'data' => 'userdel	q4::inwork; 9383,13978 9203,13953 9151,13941 9085,13919 8935,13844 8690,13723
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'LS/S-SG33-C/11/084',
          'until' => 1308520800,

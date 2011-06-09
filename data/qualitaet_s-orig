@@ -284,7 +284,10 @@ Swinemünder Str.: Kopfsteinpflaster	Q2 10228,14564 10315,14386
 Swinemünder Str.: Kopfsteinpflaster auf der Fahrbahn, Radweg OK	Q1 9734,15579 9646,15737
 Fürstenberger Str.: Kopfsteinpflaster	Q2 10320,14608 10474,14633
 Kollwitzstr.: Kopfsteinpflaster	Q2 11016,14081 10924,13940
-Kiehlufer: Kopfsteinpflaster	Q2 13745,8448 13575,8593 13402,8741 13225,8880 13078,8992 12950,9132 12897,9365
+Kiehlufer: Kopfsteinpflaster	Q2 13745,8448 13575,8593 13402,8741
+#: XXX genauer prüfen: geht der asphaltierte Abschnitt bis zur Elsenstr.?
+Kiehlufer: Asphalt	Q0 13402,8741 13225,8880
+Kiehlufer: Kopfsteinpflaster	Q2 13225,8880 13078,8992 12950,9132 12897,9365
 Spreewaldplatz: Kopfsteinpflaster, OK	Q1 12243,10274 12292,10374 12274,10436
 Spreewaldplatz: Kopfsteinpflaster, OK	Q1 12341,10218 12292,10374
 Am Nordhafen: Kopfsteinpflaster	Q2 7741,14560 7527,14684
@@ -1391,7 +1394,8 @@ Briesestr.: Kopfsteinpflaster	Q2 12001,7937 12179,7979
 Briesestr.: Kopfsteinpflaster	Q2 12446,8032 12668,8077 12794,8103
 #: XXX neuer Belag 2011
 #: by: http://www.berlin.de/ba-neukoelln/presse/archiv/20110509.1135.343560.html
-#: next_check: 2011-05-30
+#: last_checked: 2011-06-09
+#: next_check: 2011-08-30
 Geygerstr.: Beton	Q1 13066,8153 13194,8276
 Bellevue-Ufer: Parkweg	Q1 6694,12627 7039,12314
 Bettina-von-Arnim-Ufer: Parkweg	Q1 7437,12368 7529,12496 7670,12576
