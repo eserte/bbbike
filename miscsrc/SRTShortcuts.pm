@@ -25,7 +25,7 @@ BEGIN {
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.85;
+$VERSION = 1.86;
 
 use your qw(%MultiMap::images $BBBikeLazy::mode
 	    %main::line_width %main::p_width %main::str_draw %main::p_draw
@@ -684,7 +684,7 @@ sub add_new_data_layer {
 sub add_new_layer {
     my($type, $file, %args) = @_;
     my $free_layer = main::next_free_layer($type);
-    $main::line_width{$free_layer} = [(1)x6];
+    $main::line_width{$free_layer} = [@{$main::line_width{default}}];
     if (exists $args{Width}) {
 	$main::p_width{$free_layer} = $args{Width};
     }
