@@ -375,13 +375,13 @@ EOF
 		    my @osm_layers = qw(building education motortraffic oepnv power unhandled);
 		    my @menu_items = map {
 			my $layer = $_;
-			[Button => $layer, -command => sub { add_new_data_layer("str", "_$layer") }];
+			[Button => $layer, -command => sub { add_new_datafile_layer("str", "_$layer") }];
 		    } @osm_layers;
 		    push @menu_items, [Button => 'all of above',
 				       -command => sub {
 					   my @errors;
 					   for my $layer (@osm_layers) {
-					       eval { add_new_data_layer("str", "_$layer") };
+					       eval { add_new_datafile_layer("str", "_$layer") };
 					       push @errors, "$layer: $@" if $@;
 					   }
 					   if (@errors) {
@@ -675,7 +675,7 @@ sub make_gps_target {
     }
 }
 
-sub add_new_data_layer {
+sub add_new_datafile_layer {
     my($type, $file, %args) = @_;
     add_new_layer($type, _maybe_orig_file("$main::datadir/$file"));
 }
