@@ -1,10 +1,9 @@
 # -*- perl -*-
 
 #
-# $Id: SRTShortcuts.pm,v 1.83 2009/03/02 21:25:47 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003,2004,2008 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003,2004,2008,2009,2010,2011 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -26,7 +25,7 @@ BEGIN {
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.83 $ =~ /(\d+)\.(\d+)/);
+$VERSION = 1.84;
 
 use your qw(%MultiMap::images $BBBikeLazy::mode
 	    %main::line_width %main::p_width %main::str_draw %main::p_draw
@@ -258,20 +257,24 @@ EOF
 				  above => $str_layer_level,
 				 ),
 		layer_checkbutton('Ortsschilder', 'p',
-				  _maybe_orig_file("$main::datadir/ortsschilder"),
+				  "$main::datadir/ortsschilder",
+				  maybe_orig_file => 1,
 				  method => 'add_new_nonlazy_layer', # lazy mode does not support bbd images yet
 				  above => $str_layer_level,
 				 ),
 		layer_checkbutton('routing_helper', 'str',
-				  _maybe_orig_file('routing_helper'),
+				  'routing_helper',
+				  maybe_orig_file => 1,
 				  above => $str_layer_level,
 				 ),
 		[Button => "gesperrt_car", -command => sub { add_new_nonlazy_maybe_orig_layer("sperre", "gesperrt_car") }],
 ## XXX no support for "sperre" type yet:
-#		layer_checkbutton('gesperrt_cat', 'sperre',
-#				  _maybe_orig_file('gesperrt_car')),
+#		layer_checkbutton('gesperrt_car', 'sperre',
+#		  		  'gesperrt_car,
+#				  maybe_orig_file => 1),
 		layer_checkbutton('brunnels', 'str',
-				  _maybe_orig_file("$main::datadir/brunnels")),
+				  "$main::datadir/brunnels",
+				  maybe_orig_file => 1),
 		layer_checkbutton('geocoded images', 'str',
 				  "$ENV{HOME}/.bbbike/geocoded_images.bbd",
 				  above => $str_layer_level,
@@ -309,7 +312,8 @@ EOF
 		 }
 		],
 		layer_checkbutton('Exits (ÖPNV)', 'str',
-				  _maybe_orig_file("$main::datadir/exits")),
+				  "$main::datadir/exits",
+				  maybe_orig_file => 1),
 		layer_checkbutton('Kneipen/Cafes', 'str',
 				  "$bbbike_rootdir/data_berlin_osm/kneipen"),
 		layer_checkbutton('Restaurants', 'str',
@@ -748,6 +752,7 @@ sub layer_checkbutton {
     # XXX This does not seem to work, $main::edit_normal_mode value
     # seems to get freezed although it's a global?!
     my $below_above_cb = delete $args{below_above_cb};
+    my $maybe_orig_file = delete $args{maybe_orig_file};
     
     [Checkbutton => $label,
      -variable => "$type $file",
@@ -762,11 +767,12 @@ sub layer_checkbutton {
 	 }
 
 	 my $key = "$type $file";
-	 my $layer = toggle_new_layer($type, $file, below => $below, above => $above);
+	 my $real_file = $maybe_orig_file ? _maybe_orig_file($file) : $file;
+	 my $layer = toggle_new_layer($type, $real_file, below => $below, above => $above);
 	 if ($oncallback && $layer_for_type_file{"$key"}) {
-	     $oncallback->($layer, $type, $file);
+	     $oncallback->($layer, $type, $real_file);
 	 } elsif ($offcallback && !$layer_for_type_file{"$key"}) {
-	     $offcallback->($layer, $type, $file);
+	     $offcallback->($layer, $type, $real_file);
 	 }
      },
     ];
