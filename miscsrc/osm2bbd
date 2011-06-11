@@ -195,6 +195,10 @@ my $handle_relations = $experiments{'handle_relations'};
     (
      "_building"     => ["layer_stack: above:i"],
      "_motortraffic" => ["category_image.Parking: ../misc/verkehrszeichen/Zeichen_314.svg:24x24=1:3000,xxx"],
+     "_oepnv"	     => ['category_color.Busstop: #7d176b',
+			 'category_color.Bus: #7d176b',
+			 'category_color.Tramstop: red',
+			],
      "borders" => ["line_color: #000000", # per bbd.pod
 		   "str_color: #000000", # in reality
 		   # Z4: Landesgrenzen
