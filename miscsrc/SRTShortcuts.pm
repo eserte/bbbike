@@ -25,7 +25,7 @@ BEGIN {
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.84;
+$VERSION = 1.85;
 
 use your qw(%MultiMap::images $BBBikeLazy::mode
 	    %main::line_width %main::p_width %main::str_draw %main::p_draw
@@ -318,6 +318,7 @@ EOF
 				  "$bbbike_rootdir/data_berlin_osm/kneipen"),
 		layer_checkbutton('Restaurants', 'str',
 				  "$bbbike_rootdir/data_berlin_osm/restaurants"),
+		[Button => "Current route", -command => sub { add_current_route_as_layer() }],
 	       ],
 	      ],
 	      [Cascade => $do_compound->('OSM Live data', $MultiMap::images{OpenStreetMap}), -menuitems =>
@@ -1277,6 +1278,22 @@ sub route_lister {
     };
     my $file = BBBikeRouteLister->new($main::top, -browse => sub { $show_route->(shift) })->Show;
     $show_route->($file);
+}
+
+sub add_current_route_as_layer {
+    if (!@main::realcoords) {
+	status_message("No current route", "warn");
+	return;
+    }
+    require Route;
+    require Route::Heavy;
+    require File::Temp;
+    my $rte = Route->new_from_realcoords(\@main::realcoords);
+    my $s = $rte->as_strassen;
+    my($tmpfh,$tmpfile) = File::Temp::tempfile(UNLINK => 1, SUFFIX => '_current_route.bbd')
+	or status_message($!, 'die');
+    $s->write($tmpfile);
+    add_new_layer('str', $tmpfile);
 }
 
 ######################################################################
