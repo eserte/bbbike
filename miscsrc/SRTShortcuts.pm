@@ -194,14 +194,14 @@ EOF
 	      ],
 	      [Button => $do_compound->("Add streets-accurate-categorized-split.bbd"),
 	       -command => sub {
-		   add_any_streets_bbd($acc_cat_split_streets_track);
+		   add_any_streets_bbd($acc_cat_split_streets_track, Width => 1);
 	       }
 	      ],
 	      (map {
 		  my $year = $_;
 		  [Button => $do_compound->("Add streets-accurate-categorized-split-since".$year.".bbd"),
 		   -command => sub {
-		       add_any_streets_bbd($acc_cat_split_streets_byyear_track{$year});
+		       add_any_streets_bbd($acc_cat_split_streets_byyear_track{$year}, Width => 1);
 		   },
 		  ]
 	      } @acc_cat_split_streets_years
@@ -210,24 +210,24 @@ EOF
 	       [
 		[Button => "Add streets.bbd (all GPS tracks)",
 		 -command => sub {
-		     add_any_streets_bbd($streets_track);
+		     add_any_streets_bbd($streets_track, Width => 1);
 		 }
 		],
 		[Button => "Add streets-accurate.bbd (all accurate GPS tracks)",
 		 -command => sub {
-		     add_any_streets_bbd($acc_streets_track);
+		     add_any_streets_bbd($acc_streets_track, Width => 1);
 		 }
 		],
 		[Button => "Add streets-accurate-categorized.bbd",
 		 -command => sub {
-		     add_any_streets_bbd($acc_cat_streets_track);
+		     add_any_streets_bbd($acc_cat_streets_track, Width => 1);
 		 }
 		],
 	       ],
 	      ],
 	      [Button => $do_compound->("Add other-tracks.bbd (other people's GPS tracks)"),
 	       -command => sub {
-		   add_any_streets_bbd($other_tracks);
+		   add_any_streets_bbd($other_tracks, Width => 1);
 	       }
 	      ],
 	      [Button => $do_compound->("Add points-all.bbd (all GPS trackpoints)"),
@@ -680,13 +680,28 @@ sub add_new_datafile_layer {
     add_new_layer($type, _maybe_orig_file("$main::datadir/$file"));
 }
 
-# Width support for now only for p layers
+# $type: p or str
+# $file: file to render
+# Possible further arguments: Width => $size (p or str) or Width => [$size,...] (str)
 sub add_new_layer {
     my($type, $file, %args) = @_;
     my $free_layer = main::next_free_layer($type);
-    $main::line_width{$free_layer} = [@{$main::line_width{default}}];
-    if (exists $args{Width}) {
-	$main::p_width{$free_layer} = $args{Width};
+    if ($type eq 'str') {
+	if (exists $args{Width}) {
+	    if (ref $args{Width} eq 'ARRAY') {
+		$main::line_width{$free_layer} = [@{$args{Width}}];
+	    } else {
+		$main::line_width{$free_layer} = [($args{Width})x6];
+	    }
+	} else {
+	    $main::line_width{$free_layer} = [@{$main::line_width{default}}];
+	}
+    } elsif ($type eq 'p') {
+	if (exists $args{Width}) {
+	    $main::p_width{$free_layer} = $args{Width};
+	} else {
+	    delete $main::p_width{$free_layer};
+	}
     }
     $layer_for_type_file{"$type $file"} = $free_layer;
     if (!$BBBikeLazy::mode) {
@@ -1167,8 +1182,8 @@ sub choose_Berlin_by_data {
 }
 
 sub add_any_streets_bbd {
-    my $f = shift;
-    my $layer = add_new_layer("str", _maybe_orig_file($f));
+    my($f, %args) = @_;
+    my $layer = add_new_layer("str", _maybe_orig_file($f), %args);
     set_layer_highlightning($layer);
     main::special_raise($layer, 0);
 }
