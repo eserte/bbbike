@@ -116,7 +116,7 @@ Gartenufer (in der Dunkelheit gesperrt)	2 6239,11399 5780,11622
 Steinplatz	1 5166,11343 5122,11300 5088,11322 5053,11343 5091,11406
 Am Treptower Park (Umfahrung auf Gehweg ist möglich)	1 14089,9610 13867,9864 13829,9905
 Amtsgerichtsplatz	1 2987,11055 3049,11015 3033,10980 2981,10892 2921,10928 2987,11055
-Bethaniendamm	1 12055,11331 12012,11235 11950,11157 11852,11102 11816,11084 11640,11067 11458,11136
+Bethaniendamm	1 12055,11331 12012,11235 11950,11157 11845,11095 11816,11084 11640,11067 11458,11136
 Engeldamm	1 11473,11180 11656,11106 11800,11118 11921,11185 12026,11348
 Pannierstr.	1 12202,8895 12242,8972
 Stolzenfelsstr.	1s 19436,8183 19423,8146 19333,8165 19171,8280 18949,8437 18787,8540 18722,8582
@@ -537,7 +537,7 @@ Römerweg	1s 19236,9710 19450,9728 19459,9842
 Michaelkirchplatz	1 11415,11392 11498,11417
 Berenhorststr.	1 4816,17712 4862,17934
 Berenhorststr.	1 4905,18142 4862,17934
-Von-der-Gablentz-Str.	1 5151,17658 4946,17701 4893,17698 4816,17712
+Von-der-Gablentz-Str.	1 5151,17658 4946,17701 4872,17703 4816,17712
 Kemmannweg	1 -4207,14473 -4117,14458 -4049,14419 -3937,14340 -3911,14331 -3819,14302
 Straße 206	1s 13247,17262 13321,17318 13406,17382
 Privatstr. 13	1 13171,17335 13103,17280 13018,17264
@@ -589,7 +589,8 @@ Saaleckplatz	1s 5162,1110 5178,1123
 Saaleckplatz	1 5178,1123 5190,1114 5218,1067
 Fußgängertunnels Sybel-Waitz-Str.: provisorische Schließung	2 3712,10566 3731,10563 3781,10569 3800,10580
 Meyerinckplatz	1 4030,10575 4007,10559 3978,10582 3997,10607
-Beyschlagstr.	1 18,22563 5,22384 200,22251
+Beyschlagstr.	1 21,22545 5,22384 184,22257
+Beyschlagstr.	1 408,22184 184,22257
 Upsalaer Str.	1 11369,16744 11364,16887
 Fritz-Erpenbeck-Ring	1 9717,19692 9697,19758 9708,19779 9785,19807 9864,19793
 Am Konsulat: Privatstraße, mit Toren versperrt	2 9962,19757 9990,19644 9916,19625
@@ -621,6 +622,13 @@ Jüdenstr. (Spandau)	1 -3249,14621 -3316,14504 -3350,14446
 Hochbergplatz	1 4818,2279 4824,2266 4813,2256 4803,2257 4796,2271 4803,2280 4818,2279
 Jathoweg	1 5259,20186 5266,20299 5307,20437
 Taldorfer Weg	1 5170,20182 5259,20186 5506,20197
+Im Waldwinkel	1 184,22257 238,22412
+Im Erpelgrund	1 -428,21933 -629,21975 -827,22039 -973,22117
+Im Erpelgrund	1 -973,22117 -786,22110 -735,22103 -586,22064 -403,21991
+Bernauer Str.	1s 2643,18738 2731,18729 2867,18736
+Krumpuhler Weg: nur Mo-Do von 8-16 Uhr und Fr von 8-14 Uhr geöffnet	2 1377,18602 1302,18398
+Krumpuhler Weg	1 1405,18749 1390,18651
+Oelder Weg	1 1967,18743 1965,18686
 Am Neuen Garten	1 -12166,1384 -12212,1201 -12276,831 -12302,718
 Am Neuen Garten	1 -12332,585 -12582,127
 Hochstraße	3nocross::ignrte -11399,-1339 -11461,-1424 -11540,-1543
@@ -756,7 +764,6 @@ Paul-Junius-Str.	1s 15084,12975 15085,13105
 Ahornallee	1s 1589,11483 1574,11379
 Lindenallee	1s 1429,11523 1403,11428
 Gramzow (Dorfstr.?)	1s 49779,90206 49841,90479
-Billerbecker Weg	1s 1230,18698 1229,18750
 Alt-Tegel	1s 1668,20156 1753,20191 1907,20265
 Alt-Tegel	1s 1668,20156 1529,20131 1543,20060 1630,20097 1668,20156
 Am Treptower Park: entgegen der Richtung auf dem Parkstreifen	1s 14739,8919 14614,9052 14563,9106 14529,9141 14443,9233 14382,9299 14242,9448 14179,9515 14089,9610
@@ -775,6 +782,9 @@ Zeltinger Platz	1s 2404,25187 2355,25252 2395,25273 2446,25265 2490,25211 2486,2
 Ludolfinger Platz	1s 2277,25033 2245,25016 2205,25042 2192,25083 2216,25117 2277,25094 2285,25059 2277,25033
 Sewanstr. - Balatonstr.	1s 17705,10232 17741,10386
 Hönower Str. (Karlshorst) (Ausweichen auf Sandbankette möglich)	1s 18377,9366 18490,9387
+Mittelstreifen	3nocross::ignrte 4704,17101 4931,17174 4997,17241
+Str. 455 -> Kurt-Schumacher-Damm: Mittelstreifen	3::igndisp 4916,17201 4931,17174 4997,17241
+Kurt-Schumacher-Damm -> Str. 455: Mittelstreifen	3::igndisp 4704,17101 4931,17174 4916,17201
 Mittelstreifen	3nocross::ignrte 14788,3441 14822,3409 14994,3245
 Rudower Str. -> Grasmückenweg: Mittelstreifen	3::igndisp 14788,3441 14822,3409 14877,3475
 Grasmückenweg -> Rudower Str.: Mittelstreifen	3::igndisp 14877,3475 14822,3409 14994,3245
@@ -1680,6 +1690,7 @@ Albrecht-Thaer-Weg -> Schorlemerallee: Mittelstreifen	3::igndisp 3449,6863 3347,
 Straßenbahntrasse	3nocross::ignrte 12396,17514 12436,17682 12467,17814
 Str. 56 -> Berliner Str.: Straßenbahntrasse	3::igndisp 12587,17603 12436,17682 12396,17514
 Berliner Str. -> Str. 56: Straßenbahntrasse	3::igndisp 12467,17814 12436,17682 12587,17603
+tragen (ca. 10 Stufen)	0:15:-83 -2196,20140
 tragen (ca. 60 Stufen)	0:100:-55 28016,71
 tragen	0:180:-218 6376,23358
 tragen (ca. 30 Stufen)	0:30:-142 -1711,11452
@@ -1780,7 +1791,7 @@ tragen (Brücke Tegeler Hafen)	0:60:-256 1227,20281
 tragen (Brücke Tegeler Hafen)	0:60:-231 1166,20330
 tragen (Stufen), mit MTB befahrbar	0:30:-69 5725,11644
 tragen (20 Stufen)	0:25:16 13138,9897
-unter der S-Bahn-Brücke tragen (5 Stufen)	0:10:-180 3726,18982
+unter der S-Bahn-Brücke tragen (6 Stufen)	0:10:-180 3726,18982
 unter der S-Bahn-Brücke tragen (5 Stufen)	0:10:-154 3733,18997
 tragen (31 Stufen) oder Aufzug (Storkower Str.)	0:30:-71 14530,13269
 tragen (41 Stufen) oder Aufzug (Storkower Str.)	0:40:-116 14481,13143
@@ -2012,6 +2023,7 @@ Schranke (lichte Breite ca. 120cm)	BNP:2:-50:trailer=8 14448,4501
 Schranke (lichte Breite ca. 120cm)	BNP:2:-53:trailer=8 14709,4307
 Schranke (lichte Breite ca. 100cm)	BNP:3:-45:trailer=10 15179,3901
 Tor	BNP:5:-57 26888,13976
+Tegeler Hafen: Weg über Insel gesperrt	2 1756,20405 1736,20441 1742,20464 1762,20505 1761,20539
 Beuthstr.: Bauarbeiten für Anbindung der Axel-Springer-Str. zum Spittelmarkt	2:inwork 10229,11618 10197,11605 10166,11592
 Niederlagstr.: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2:inwork 9972,12184 9947,12269 9939,12296 9951,12318
 Hüttenweg: Sperrung wegen Bau an der Autobahn, wahrscheinlich bis 2012	2:inwork -739,6838 -927,6888
@@ -2021,9 +2033,9 @@ Tiergartenufer: Bauarbeiten, gesperrt	2:inwork 5711,11841 5565,11871
 Behrenstr.: Bauarbeiten, vollständig gesperrt	2:inwork 9743,12239 9801,12245
 Hinter der Katholischen Kirche: Bauarbeiten, vollständig gesperrt	2:inwork 9801,12245 9795,12293 9780,12401
 Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10170,12261 10063,12438
-Boyenweg - Uferweg: wegen Bauarbeiten gesperrt	2:inwork 7938,14426 7886,14518
+Boyenweg - Uferweg: wegen Bauarbeiten gesperrt	2:inwork 7938,14426 7886,14518 7787,14473
 Treitschkestr.: Bauarbeiten am Kaufhaus, bis 2012	2:inwork 5219,6215 5125,6262 4971,6345
-Caroline-Michaelis-Str.: Bauarbeiten	2:inwork 9061,14050 9125,13973
+Caroline-Michaelis-Str.: Bauarbeiten	2:inwork 9151,13941 9125,13973
 Ella-Trebe-Str.: Einbahnstraße wegen Bauarbeiten	1s:inwork 7937,13109 7941,13014 7948,12918
 Alex-Wedding-Str.: Bauarbeiten, komplett gesperrt	2:inwork 11085,13239 11045,13183
 Mauerstr.: Einbiegen in die Behrenstr. nicht möglich	3:inwork 9076,12054 9064,12156 9054,12154
@@ -2591,3 +2603,4 @@ Landsberger Allee, linker Gehweg	1::igndisp 15430,14272 15256,14237
 Sonnenallee, linker Gehweg	1::igndisp 13457,8069 13474,8060
 Urbanstr.	1::igndisp 11861,9183 11888,9189
 Badstr., linker Gehweg	1::igndisp 8486,16425 8486,16412 8534,16355
+Tempelhofer Ufer, linker Gehweg	1::igndisp 8661,10377 8717,10322 8804,10303

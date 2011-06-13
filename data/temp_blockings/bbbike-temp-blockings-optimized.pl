@@ -1,67 +1,6 @@
-$#temp_blocking = 3;
+$#temp_blocking = 30;
 push @temp_blocking,
 (
-       {
-         'until' => 1307915940,
-         'text' => 'Karneval der Kulturen, 12.6.2011',
-         'from' => 1307743200,
-         'id' => 4,
-         'data' => 'userdel	2::temp 11909,9155 11824,8995 11767,9026 11629,9086 11500,9116 11136,9183 11108,9187 10713,9260 10625,9259 10564,9292 10198,9405 10032,9456 9937,9484 9927,9487 9790,9528 9676,9564 9552,9602 9334,9670 9043,9745 9002,9731 8777,9601 8648,9526 8595,9495 8192,9619
-userdel	3 8773,9524 8777,9601 8779,9812
-userdel	3 8779,9812 8777,9601 8773,9524
-userdel	3 9000,9509 9043,9745 9073,9915
-userdel	3 9073,9915 9043,9745 9000,9509
-userdel	3 9280,9476 9334,9670 9387,9804
-userdel	3 9387,9804 9334,9670 9280,9476
-userdel	3 9524,9426 9552,9602 9588,9827
-userdel	3 9588,9827 9552,9602 9524,9426
-userdel	3 9650,9404 9676,9564 9705,9732
-userdel	3 9705,9732 9676,9564 9650,9404
-userdel	3 9767,9386 9790,9528 9820,9718
-userdel	3 9820,9718 9790,9528 9767,9386
-userdel	3 9892,9286 9927,9487 9957,9692
-userdel	3 9957,9692 9927,9487 9892,9286
-userdel	3 10004,9268 10032,9456 10067,9667
-userdel	3 10067,9667 10032,9456 10004,9268
-userdel	3 10123,9233 10198,9405 10306,9640
-userdel	3 10306,9640 10198,9405 10123,9233
-userdel	3 10547,9233 10564,9292 10580,9361
-userdel	3 10580,9361 10564,9292 10547,9233
-userdel	3 10705,9234 10713,9260 10747,9326
-userdel	3 10747,9326 10713,9260 10705,9234
-userdel	3 11128,9100 11136,9183 11208,9345 11274,9492
-userdel	3 11274,9492 11208,9345 11136,9183 11128,9100
-userdel	3 11998,8872 11824,8995 11882,8527
-userdel	3 11882,8527 11824,8995 11998,8872
-',
-         'type' => 'gesperrt'
-       },
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
        {
          'until' => 1315778400,
          'text' => 'Bahnhofstraße, zwischen Goltzstraße und Steinstraße Winzerfest, vom 10.09.2011 bis 11.09.2011',
@@ -1700,7 +1639,7 @@ userdel	2::temp 9579,10122 9631,10142 9689,10124 9827,10051
          'text' => 'Weinmeisterstr. (Mitte) in Richtung Alexanderplatz gesperrt',
          'from' => undef,
          'id' => 1567,
-         'data' => '#: last_checked: 2011-05-06
+         'data' => '#: last_checked: 2011-06-12
 userdel	q4::inwork; 10350,13376 10527,13257
 ',
          'type' => 'gesperrt'
@@ -3052,17 +2991,7 @@ userdel	q4::inwork; 7949,7607 7935,7736 7950,7840 8226,8648 8237,8685 8306,8722
          'type' => 'handicap'
        },
        undef,
-       {
-         'source_id' => 'IM_017318',
-         'until' => 1307718000,
-         'text' => 'Puschkinallee (Treptow): Baustelle, Straße vollständig gesperrt zwischen Bulgarische Str. und Elsenstr., 23.05.2011 07:00 Uhr bis 10.06.2011 17:00 Uhr ',
-         'from' => 1306040400,
-         'id' => 2215,
-         'data' => '#: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20110530.1300.346009.html
-userdel	2::inwork 15383,9191 14819,9462 14780,9480 14310,9692
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => undef,
          'text' => 'Fuldastr., von Donaustr. Richtung Karl-Marx-Str. ist die Fahrbahn gesperrt',

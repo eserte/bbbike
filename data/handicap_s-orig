@@ -24,14 +24,14 @@ Alt-Stralau: Bauarbeiten an der Brücke, enge Durchfahrt	q3::inwork 14652,10201 1
 #: next_check: 2012-06-01
 Behrenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8861,12125 9054,12154 9064,12156 9164,12172
 #XXX del --- #: last_checked: 2011-04-19 --- Reichstagufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9117,12705 9209,12795 9280,12883
-#
-#: last_checked: 2011-05-20
+# 
+#: last_checked: 2011-06-12
 Oberwallstr.: Bauarbeiten, Einbahnstraße	q4::inwork; 9925,11947 9913,12068
-#
-#: last_checked: 2011-05-20
+# 
+#: last_checked: 2011-06-12
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9890,12161 9875,12257
 # 
-#: last_checked: 2011-05-20
+#: last_checked: 2011-06-12
 Neumannsgasse: Bauarbeiten, Fahrbahn gespert	q4::inwork 10284,12113 10383,12191
 #
 #: last_checked: 2011-04-30
@@ -41,15 +41,15 @@ Varian-Fry-Str.: Baustelle, Fahrbahn gesperrt	q4::inwork 8389,11378 8374,11479
 #: last_checked: 2011-05-29
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 9475,12365 9462,12481 9454,12558
 # 
-#: last_checked: 2011-05-29
+#: last_checked: 2011-06-11
 Universitätsstr.: wegen Bauarbeiten Richtung Unter den Linden gesperrt	q4::inwork; 9580,12581 9601,12380
 # 
 #: last_checked: 2011-05-29
 #: next_check: 2011-08-01
 Matkowskystr., Revaler Str.: Bauarbeiten, Einbahnstraße	q4::inwork; 14530,11137 14509,11060 14442,11101
 #:
-#: last_checked: 2011-05-26 vvv
-#: next_check: 2011-08-01
+#: last_checked: 2011-06-11 vvv
+#: next_check: 2011-08-01 vvv
 Helmerdingstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 14465,11195 14442,11101
 Haasestr.: Einbahnstraße ist eingerichtet	q4::inwork; 14286,11186 14327,11308
 #: next_check: ^^^
@@ -380,7 +380,7 @@ Uferweg, Mentzelpark: Fußgänger, eng	q3 21769,4973 21821,4918 21834,4889
 #: last_checked: 2011-05-06 (mrt)
 Heinrich-Lassen-Park: Fußgänger	q2 6664,8787 6740,8682 6815,8691 6912,8617
 (Uferweg am Nordhafen): Fußgänger	q1 7753,14528 7695,14545 7498,14658
-An der Malche: teilweise eng und kurvig	q1 1127,20434 1060,20557 995,20590 921,20562 864,20646 673,20800
+An der Malche: teilweise eng und kurvig	q1 1106,20424 1032,20580 895,20523 834,20610 625,20738
 Am Friedhof: recht enger Radweg	q1 6380,17836 6376,17687 6347,17381
 Gerlachsheimer Weg: Fußgänger	q2 13151,7914 13251,7972
 Wanzlikpfad: eng und kurvig, Fußgänger	q3 13268,7801 13311,7915
@@ -414,7 +414,7 @@ Pankeweg: Fußgänger	q1 8486,16425 8567,16429 8592,16406 8659,16494
 Pankeweg: Fußgänger	q1 8759,16684 8776,16718 8836,16867 8904,17059 9027,17290 9131,17664 9084,17678 9143,17933
 Pankeweg: Fußgänger	q1 8836,16867 8822,16873 8804,16881
 Pankeweg: Fußgänger	q1 8721,16689 8804,16881 8866,17075
-Uferweg am Tegeler Hafen: Fußgänger	q1 1259,20303 1523,20412 1572,20412 1617,20393 1675,20392 1756,20405
+Uferweg am Tegeler Hafen: Fußgänger	q1 1259,20303 1523,20412 1572,20412 1617,20393 1655,20388 1756,20405 1858,20431 1861,20467 1826,20492 1761,20539
 (Tegeler Hafen - An der Mühle): Fußgänger, teilweise eng	q2 1756,20405 1736,20441 1742,20464 1762,20505 1761,20539 1721,20603 1697,20623 1687,20645 1668,20670 1630,20731
 (Brücke über den Tegeler Fließ): eng, Fußgänger	q3 2361,21512 2336,21546
 Egidysteg: eng, Fußgänger	q3 3124,22198 3134,22153
@@ -920,6 +920,27 @@ Grottewitzwanderweg: eng, kurvig	q2 28042,-152 27852,-279 27825,-371 27703,-406 
 Papendickstr.: enge Straße	q0- 17071,16166 17073,16222 17135,16334 17170,16365
 Am Wiesenweg: Fußgänger	q1 21977,988 21857,989 21708,937 21683,906
 Grasmückenweg: Fußgänger, eng	q2 14877,3475 14822,3409
+(Scharnweberstr. - Berenhorststr.): Fußgänger	q1 4801,17623 4816,17712
+Ernststr.: wendelförmige Rampen	q2 2821,19559 2780,19548 2700,19527
+An der Kremmener Bahn: Fußgänger	q1 -304,22578 -515,22801 -700,22998
+Straße 366: Bodenschwellen	q2 -3145,22004 -3281,22011
+Verlängerte Fährstr.: enge Straße	q1 -3419,22102 -3412,22058 -3407,22028 -3402,21994 -3397,21946 -3394,21915 -3367,21860
+Schlütersteig: enger Weg	q3 -3412,22058 -3355,22063
+Meistergasse: enger Weg	q3 -3407,22028 -3348,22035
+Kleine Brüderstr.: enger Weg	q3 -3402,21994 -3345,22001
+Erlenweg (Heiligensee): enger Weg	q3 -3397,21946 -3360,21951
+Fliederweg (Heiligensee): enger Weg	q3 -3394,21915 -3363,21916
+#: XXX_prog: für Anhänger q2
+Wesselburer Weg: vier Bodenschwellen, ohne Anhänger leicht umfahrbar	q0 -2082,21963 -2079,21878
+#: XXX_prog: Bordstein (BS) am nördlichen Ende
+Uferpromenade Tegelort/Heiligensee: Fußgänger	q1- -2285,19053 -2251,19216 -2250,19361 -2279,19503 -2266,19692 -2248,19849 -2216,20003 -2205,20141 -2146,20345 -2101,20423 -2087,20479 -2087,20586
+(Uferpromenade - Sperberstr.): Rampe	q3 -2216,20003 -2185,19996
+Kirchgasse (Tegel): Fußgänger	q1 1630,20097 1669,19982
+Hilchenbacher Weg: Fußgänger, eng	q2 2413,18655 2416,18598
+Hilchenbacher Weg: Fußgänger, eng	q2 2426,18544 2444,18487
+#: XXX_prog: BS
+Straße 455: Bordstein	q2 4916,17201 4931,17174
+(Uferweg Plötzensee): Fußgänger	q1- 5618,14981 5518,15236 5291,15424 5073,15619 5036,15615 5008,15592 5051,15508 5084,15415 5005,15213
 ######################### User Contributions #################################
 #: by: Michael Kiekbusch
 #: corrected_by: srt/policy (q4 -> q3-)
@@ -990,7 +1011,8 @@ Sparrstr. - Triftstr.: Gehweg	q1 7303,15173 7241,15293
 #: note: laut ADFC-Karte "mäßig"
 (Max-Lingner-Str. - Maximilianstr.): schmaler Fußweg und Parkplatz	q2 11107,17340 10906,17331
 (Seecktstr. - Wilhelmstr.): breiter Gehweg	q0 -4017,13167 -3886,13120
-Koloniewege: Bodenschwellen, Schranken	q1 -2434,17638 -2408,17716 -2114,17878 -2154,17917 -2419,17955 -2539,18109 -2728,18149
+Koloniewege: Bodenschwellen, Schranken	q1 -2445,17641 -2426,17693 -2423,17705 -2329,17748 -2281,17775 -2180,17810 -2131,17827
+Koloniewege: Bodenschwellen, Schranken	q1 -2114,17878 -2154,17917 -2372,17958 -2419,17955 -2475,18028 -2516,18080 -2528,18094 -2728,18149
 #: by: ^^^
 #: by: Helmut Stockinger:
 Gralsburgsteig: enge Straße	q1 2164,25190 2206,25260 2038,25531 1950,25763 1924,26013
@@ -1537,15 +1559,18 @@ Salzunger Pfad: enge Straße	q1 5006,1445 4993,1520 4981,1567 4968,1563 4942,1649
 Hasselfelder Weg: enge Straße	q1 5045,1675 4942,1649 4855,1616 4800,1582
 #: by: ^^^
 #: by: Matthias Kaller:
-An der Schneise: enge Straße	q1 -481,21513 -475,21560 -487,21631 -489,21709 -464,21828 -428,21933 -403,21991 -362,22105 -313,22233
+An der Schneise: enge Straße	q1 -481,21513 -475,21560 -487,21631 -489,21709 -464,21828 -428,21933 -403,21991 -362,22105 -331,22184 -313,22233
 #: by: Thomas (92121):
 Cecilienstr. (Lankwitz): enge Straße	q2 5933,2859 6002,2723
 #: by: Holtermann, Olaf:
 Greveweg: enge Straße	q1 8276,5601 8279,5794
 #: by: Klaus Arndt:
 Hobeckweg: enge Straße	q1 27190,13327 27414,13508 27530,13627 27556,13641
+# 
 #: by: Lutz Pallmann:
-Rosenorter Steig: enge Straße	q1 -1349,23497 -1451,23525 -1535,23575 -1617,23624 -1700,23671
+#: corrected_by: srt (q1 -> q0-)
+Rosenorter Steig: enge Straße	q0- -1349,23497 -1451,23525 -1535,23575 -1617,23624 -1700,23671
+# 
 #: by: Alfred Zudse:
 Straße 40 (Blankenburg): enge Straße	q1 14893,20583 14945,20748 15035,21026
 #: by: Andreas Vildman:
@@ -1652,22 +1677,26 @@ Zieselweg: enge Straße	q1 2511,22590 2513,22737 2500,22867 2418,22878
 Schwalbenweg: enge Straße	q1 20205,-548 20172,-533 19940,-610 19724,-703 19619,-746 19550,-775 19366,-845 19309,-885
 #: by: Thomas (brachial...):
 Wetterseestr.: enge Straße	q1 11499,16883 11504,16746
+# 
 #: by: ute wiek: vvv
 Kreuzritterstr.: enge Straße	q1 2252,24700 2297,24682 2359,24677 2402,24687 2471,24709 2531,24702 2586,24678 2621,24638 2640,24608
 Askaloner Weg: enge Straße	q1 2402,24687 2407,24657 2384,24603 2311,24546 2262,24505
 #: by: ^^^
-# XXX del : by: Desiree Kretzschmar:#: corrected_by: srt (angegeben q3, wegen Luftbild korrigiert zu q1, dann zu q0) Pritstabelstr.: enge Straße	q1 22811,3037 22928,3057 23065,3089 23338,3173 23444,3217 23564,3283 23641,3342 23680,3371 23740,3418
+#
 #: by: Sebastian Worel:
 #: corrected_by: srt/policy (q2 -> q1))
 Juttastr.: enge Straße	q1 1072,4542 949,4366
 #: by: Veit Böhnke:
 Herbert-Baum-Str.: enge Straße	q1 13826,16026 13869,15912 13904,15818 13943,15717 13964,15656 13989,15589
+# 
 #: by: Bernd Mahrin:
-Sendener Weg: enge Straße	q1 964,18321 1040,18283 1144,18237 1189,18246 1221,18327 1281,18487 1346,18662
-# XXX del : by: Bernd Honsa: #: corrected_by: srt/policy (q4 -> q2, q4 gibt es nicht) Arthur-Müller-Str.: enge Straße	q2 17799,3183 17890,3204 17942,3205 17980,3197 18057,3117 18196,2974 18199,2960 18156,2912 18014,2830
+#: corrected_by: srt/policy (q1 -> q0-)
+Sendener Weg: enge Straße	q0- 964,18321 1040,18283 1178,18223 1221,18327 1281,18487 1346,18662
+# 
 #: by: henning (hirschgarten):
 #: corrected_by: srt/policy (q2 -> q1)
 Gilgenburger Str.: enge Straße	q1 24387,5672 24434,5645 24666,5726
+# 
 #: by: Steffi (silver midi):
 Blochmannstr.: enge Straße	q1 5097,988 5036,949 4986,959 4925,961 4862,975 4788,1023 4702,1147 4634,1245
 #: by: blasz
@@ -1675,26 +1704,35 @@ Schenkestr.: enge Straße	q1 17961,8312 17794,8429
 #: by: anonymous
 #: corrected_by: srt/policy (q2 -> q1)
 Knöterichpfad: enge Straße, Gartensiedlung	q1 -7842,14683 -7808,14939 -7783,15059
+# 
 #: by: Tweety87...: vvv
 #: XXX_prog: Gegenrichtung ist durch 1s:q4 abgedeckt, sollte besser gelöst sein...
 Hartmannsweilerweg: enge Straße	q1; 17,3471 41,3510 16,3744
 Hartmannsweilerweg: enge Straße	q1 16,3744 -1,3857 -36,3924 -219,4149
 #: by: ^^^
-#: by: Susanna (wells):
+# 
+#: by: Susanna (wells): vvv
 Zietenstr. (Lankwitz): enge Straße	q1 6196,2204 6108,2326 6065,2443 5971,2691
 (Höhensteig - Buntzelstr.): Fußgänger	q1 21835,242 21996,268 22168,327
+#: by: ^^^
+# 
 #: by: Knappe:
 Jenny-Lind-Str.: enge Straße	q1 11531,17250 11645,17271 11768,17296
+# 
 #: by: Katjana Brennecke: vvv
 Sandhofweg: enge Straße	q1 5848,272 5795,371 5757,434 5688,402
 Sandhofweg: Fußgänger	q1 5688,402 5644,381
 #: by: ^^^
+# 
 #: by: Moritz (acros): vvv
 Calvinstr.: Bordsteinkante, Fußgänger	q2 2982,22893 2942,22914
 Melanchthonstr.: Bordsteinkante, Fußgänger	q2 2889,22741 2857,22756
 #: by: ^^^
+# 
 #: by: Jens Gieseke:
-Rabenhorststr.: enge Straße	q1 -1726,19725 -1739,19803 -1681,19955 -1630,20086 -1596,20184 -1578,20228
+#: corrected_by: srt/policy (q1 -> q0-)
+Rabenhorststr.: enge Straße	q0- -1726,19725 -1739,19803 -1681,19955 -1630,20086 -1596,20184 -1578,20228
+# 
 #: by: Reinhard Graeff:
 Schäferstr. (Spandau): enge Straße	q1 -2915,15994 -2798,16005 -2638,16026
 #: by: anonymous
@@ -1881,7 +1919,7 @@ Spachtelweg: enge Straße	q1 5900,20487 5970,20353
 #: by: Gabriele Meindl
 #: confirmed_by: anonymous
 #: note: Fußgänger (kein Fußweg)
-Leuenberger Zeile: eng	q1 2852,19546 2789,19600 2684,19765
+Leuenberger Zeile: eng	q1 2821,19559 2789,19600 2684,19765
 #: by: Hartmut Schröder
 #: corrected_by: srt/policy (q3 -> q2)
 Waldstr.: Bodenschwellen vor der Schule	q2 20540,4285 20623,4227
@@ -2074,9 +2112,11 @@ Pertisauer Weg: enge Straße	q1 6199,1104 6176,1023 6167,933 6163,822 6186,652
 #: by: Michael Rehfeldt
 #: corrected_by: srt/policy (q2 -> q1)
 Chorweilerstr.: enge Straße	q1 20036,-122 20143,-93 20223,-72 20302,-51
+# 
 #: by: anonymous
-#: corrected_by: srt/policy (q2 -> q1)
-Bisonweg: enge Straße	q1 -774,22977 -709,22909 -657,22854 -595,22791 -542,22736
+#: corrected_by: srt (q2 -> q0-)
+Bisonweg: enge Straße	q0- -774,22977 -709,22909 -657,22854 -595,22791 -542,22736
+# 
 #: by: Sandro Flory:
 Flatower Str.: enge Straße	q1 -5049,16987 -4999,16971 -4875,16928 -4821,16914 -4758,16910 -4628,16899 -4319,16879 -4155,16860
 #: by: Wolfram Ceder:
@@ -2091,8 +2131,8 @@ Gebrüder-Grimm-Weg: Fußgänger, querlaufende Ablaufrinnen	q1- 14277,18684 14265,1
 #: by: T.Geske:
 Charles-H.-King-Str.: enge Straße	q1 -1248,2451 -1401,2391 -1604,2324
 #: by: Carsten Schmidt:
-#: corrected_by: srt/policy (q2 -> q1)
-Rohrweihstr.: enge Straße	q1 -2141,19681 -2103,19833 -2073,19990 -2055,20129 -2020,20309 -1991,20312
+#: corrected_by: srt/policy (q2 -> q0-)
+Rohrweihstr.: enge Straße	q0- -2141,19681 -2103,19833 -2073,19990 -2055,20129 -2020,20309 -1991,20312
 #: by: Nina Bohlmann
 Kolkrabenweg: enge Straße	q1 14655,3687 14885,3891
 #: by: ruth mantei: vvv
@@ -2263,9 +2303,11 @@ Rudolf-Pechel-Str.: enge Straße	q1 9991,-413 9913,-432 9920,-513 10018,-494
 Buolstr.: enge Straße	q1 559,15342 429,15284 283,15237
 #: by: paul müller:
 Dompfaffenweg: enge Straße	q1 20068,14516 19729,14564
+# 
 #: by: Andreas (...behm...):
-#: corrected_by: srt/policy (q2 -> q1)
-Luisenstr. (Konradshöhe): enge Straße	q1 -1846,18778 -2064,18667
+#: corrected_by: srt/policy (q2 -> q0-)
+Luisenstr. (Konradshöhe): enge Straße	q0- -1846,18778 -2064,18667
+# 
 #: by: Nora Luetge:
 Jan-Petersen-Str.: enge Straße	q1 21086,15910 21108,15955 21196,16119 21030,16206
 #: by: Gesa Major:

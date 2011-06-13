@@ -1038,8 +1038,8 @@ EOF
        text  => 'Ruppiner Chaussee (Hennigsdorf) Kreuzung Hennigsdorfer Straße wegen Bauarbeiten gesperrt (bis 17.10.2004)',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 -1872,24336 -1627,24105 -1367,23853 -1286,23753 -1281,23746
-userdel	q4 -1872,24336 -1896,24275 -1935,24187
+userdel	q4 -1872,24336 -1790,24260 -1627,24105 -1367,23853 -1286,23753 -1281,23746
+userdel	q4 -1872,24336 -1896,24275 -1940,24176
 userdel	q4 -1872,24336 -1912,24442
 EOF
      },
@@ -4822,7 +4822,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'INKO_82301_COPY_1',
        data  => <<EOF,
-userdel	2::inwork -915,22935 -774,22977 -728,22990 -656,23011
+userdel	2::inwork -915,22935 -774,22977 -728,22990 -700,22998 -656,23011
 EOF
      },
      { from  => 1149976800, # 2006-06-11 00:00
@@ -5313,7 +5313,7 @@ EOF
        data  => <<EOF,
 userdel	1::inwork 10920,13139 10781,13002
 userdel	1::inwork 10781,13002 10706,13043
-userdel	3::inwork 10755,13152 10920,13139 11139,13008
+userdel	3::inwork 10755,13152 10920,13139 11027,13075 11139,13008
 EOF
      },
      { from  => 1154203576, # 2006-07-29 22:06
@@ -13315,7 +13315,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_011184',
        data  => <<EOF,
-#: last_checked: 2011-05-06
+#: last_checked: 2011-06-12
 userdel	q4::inwork; 10350,13376 10527,13257
 EOF
      },
@@ -19152,6 +19152,15 @@ EOF
        source_id => 'INKO_093371',
        data  => <<EOF,
 userdel	q4::inwork; 8775,12457 8907,12472 9008,12485
+EOF
+     },
+     { from  => 1307600160, # 2011-06-09 08:16
+       until => 1307969127, # 2011-06-24 12:16 1308910560
+       text  => 'Seidelstr. (Reinickendorf): Störungen durch geplatzte Wasserleitung, Straße vollständig gesperrt In beiden Richtungen zwischen Otisstr. und Holzhauser Str., 10.06.2011 08:16 Uhr bis 24.06.2011 12:16 Uhr ',
+       type  => 'gesperrt',
+       source_id => 'IM_017428',
+       data  => <<EOF,
+userdel	2::inwork 3008,18464 2947,18570 2867,18736 2821,18831
 EOF
      },
     );

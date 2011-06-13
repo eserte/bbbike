@@ -84,7 +84,7 @@ Kreisverkehr	Roundabout -10090,6868
 Kreisverkehr	Roundabout 25069,35558
 Kreisverkehr	Roundabout 26302,-11712
 #: by: Marita:
-(Waldweg über den Beyschlagtunnel): bei Regen Rutschgefahr	CS 332,22372 742,22666
+(Waldweg über den Beyschlagtunnel): bei Regen Rutschgefahr	CS 344,22346 742,22666
 Privatstraße der DB	CS 5710,7820 6275,7847
 Albrecht-Thaer-Weg: Privatstraße, Tore bei den Einfahrten	CS 3347,6460 3449,6863
 #: add_fragezeichen: wird dieser Weg tatsächlich nachts geschlossen?
@@ -801,7 +801,7 @@ Tordurchfahrt	CS 9341,6163 9367,6160
 An den Haselbüschen: Sackgasse, kein Durchgang zur Daumstr.	CS; -1273,15539 -1291,15580 -1402,15592
 #: XXX_indoor: sollte das nach handicap_s wandern bzw. durch die Bordstein-Implementation behandelt werden?
 Pfähle und hohe Bordsteine	CP2 2211,4280 2254,4376
-Uferweg am Plötzensee	CS 5618,14981 5518,15236 5291,15424 5050,15643 5084,15415 5005,15213
+Uferweg am Plötzensee	CS 5618,14981 5518,15236 5291,15424 5073,15619 5036,15615 5008,15592 5051,15508 5084,15415 5005,15213
 #XXX del komischer Kommentar: (Wintgensstr. - General-Pape-Str.): eine mögliche Route über das ehem. Werksgelände	CS 7950,7840 8140,7845 8140,7906 8207,7909
 (Im Schäferfeld - Wetzlarer Str.): am Baggersee entlang	CS -8563,-3805 -8562,-3849 -8661,-3971 -8982,-3860 -9002,-3896 -8970,-3923
 (Eichborndamm - General-Woyna-Str.): Weg parallel zur S-Bahn-Trasse	CS 4232,18981 4285,18983 4353,18986 4475,18998 4577,19009
@@ -973,3 +973,14 @@ Ausgeschildert als "Zum Neumarkplan"	CP2; 12673,3619 12621,3659
 Augusta-Ufer: nicht ausgeschildert	CS -3501,14365 -3440,14498 -3331,14628 -3255,14685
 #: note: früher möglicherweise "Straße 606 a"
 Ausgeschildert als Grünstadter Weg	CP2; 27202,770 27151,729
+Gambiner Weg: Privatstraße	CS -603,23825 -769,24019
+Randower Weg: Privatstraße	CS -684,24095 -769,24019 -796,23994
+Darsiner Weg: Privatstraße	CS -758,24172 -867,24066
+Altdammer Weg: Privatstraße	CS -833,24244 -925,24150 -946,24123
+Zanower Weg: Privatstraße	CS -1039,24363 -1013,24331 -1002,24297 -1005,24254 -993,24211 -925,24150
+Polziner Weg: Privatstraße	CS -1112,24331 -1102,24309 -1077,24300 -1050,24241
+Bergemannweg: Privatstraße	CS -985,22025 -1160,22072 -1359,22126
+Straße 366: Privatstraße, 10 km/h	CS -3145,22004 -3281,22011
+Straße 367: Privatstraße, 10 km/h	CS -3256,22134 -3281,22011 -3281,21894
+Straße 368: Privatstraße, 10 km/h	CS -3310,21892 -3281,21894 -3240,21896
+Adelheidallee: Privat, kein öffentlicher Zugang	CS 1687,20782 1527,20840
