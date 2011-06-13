@@ -112,6 +112,7 @@ my %cat_to_highway = ('B'  => 'primary',
 		      'NH' => 'tertiary',
 		      'N'  => 'residential',
 		      'NN' => 'cycleway', # XXX
+		      'BAB' => 'motorway',
 		     );
 
 my %cat_to_railway = ('U' => 'subway',
@@ -176,6 +177,7 @@ if ($single_file) {
     do_file("$datadir/faehren", \&handle_ferry_like);
 
     do_file("$datadir/strassen", \&handle_berlin_highway_like);
+    do_file("$datadir/strassen_bab", \&handle_anywhere_highway_like); # don't do address handling here, so use "anywhere"
     do_file("$datadir/landstrassen", \&handle_anywhere_highway_like);
     do_file("$datadir/landstrassen2", \&handle_anywhere_highway_like);
 
