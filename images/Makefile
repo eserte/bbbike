@@ -308,3 +308,13 @@ png-to-jpg:	\
 
 # Creation of srtbike57.png:
 #   convert -bordercolor white -border 6x6 -geometry 57x57 srtbike_logo.svg srtbike57.png
+
+# I did NOT create srtbike72.png and srtbike114.png like this:
+#   convert -bordercolor white -border 8x8 -geometry 72x72 srtbike_logo.svg srtbike72.png
+#   convert -bordercolor white -border 12x12 -geometry 114x114 srtbike_logo.svg srtbike114.png
+# Somehow the result looked quite bad with ImageMagick.
+# Rather I used inkscape, exported versions without the border
+# (full page, with 56x56px for the 72px version and 90x90px for the 114px version),
+# then added the borders with ImageMagick:
+#   convert -bordercolor white -border 8x8 tmp.png srtbike72.png
+#   convert -bordercolor white -border 12x12 tmp.png srtbike114.png

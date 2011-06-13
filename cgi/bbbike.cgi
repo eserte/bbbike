@@ -6466,6 +6466,19 @@ sub header {
 #			  -href => "$bbbike_images/srtbike16.gif",
 #			  -type => "image/gif",
 			 });
+    # apple touch icons
+    push @$head, cgilink({-rel  => 'apple-touch-icon',
+			  -href => "$bbbike_images/srtbike57.png",
+			 });
+    push @$head, cgilink({-rel   => 'apple-touch-icon',
+			  -sizes => '72x72',
+			  -href  => "$bbbike_images/srtbike72.png",
+			 });
+    push @$head, cgilink({-rel   => 'apple-touch-icon',
+			  -sizes => '114x114',
+			  -href  => "$bbbike_images/srtbike114.png",
+			 });
+
     my($bbbike_de_script, $bbbike_en_script);
     if ($lang eq 'en') {
 	($bbbike_de_script = $bbbike_script) =~ s{\.en\.cgi}{.cgi};
