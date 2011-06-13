@@ -256,9 +256,7 @@ MKGMAP?=	java -Xmx1024m -jar /usr/local/src/mkgmap-r${MKGMAP_VER}/mkgmap.jar
 bbbikemap-for-garmin:	${BBBIKETMPDIR}/bbbike_routable_gmapsupp.img
 	@echo "Set the garmin device into USB mass storage mode."
 	@echo "Then execute:"
-	@echo "   mount /mnt/garmin"
-	@echo "   cp ${BBBIKETMPDIR}/bbbike_routable_gmapsupp.img /mnt/garmin/garmin/gmapsupp.img"
-	@echo "   umount /mnt/garmin"
+	@echo "   mount /mnt/garmin && cp ${BBBIKETMPDIR}/bbbike_routable_gmapsupp.img /mnt/garmin/garmin/gmapsupp.img && umount /mnt/garmin"
 
 .PHONY: ${BBBIKETMPDIR}/bbbike_routable.osm
 ${BBBIKETMPDIR}/bbbike_routable.osm:
