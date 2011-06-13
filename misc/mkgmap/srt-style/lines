@@ -18,7 +18,9 @@ contour=elevation | contour_ext=elevation
 highway=motorway {name '${ref|highway-symbol:hbox} ${name}' | '${ref|highway-symbol:hbox}' | '${name}' }
 highway=trunk {name '${ref|highway-symbol:hbox} ${name}' | '${ref|highway-symbol:hbox}' | '${name}' }
 highway=primary {name '${ref|highway-symbol:box} ${name}' | '${ref|highway-symbol:box}' | '${name}' }
+bbbike:render=highway_primary {name '${ref|highway-symbol:box} ${name}' | '${ref|highway-symbol:box}' | '${name}' }
 highway=secondary {name '${ref|highway-symbol:oval} ${name}' | '${ref|highway-symbol:oval}' | '${name}' }
+bbbike:render=highway_secondary {name '${ref|highway-symbol:oval} ${name}' | '${ref|highway-symbol:oval}' | '${name}' }
 highway=* {name '${ref} ${name}' | '${ref}' | '${name}' }
 
 junction=roundabout & highway=trunk [0x0c road_class=3 road_speed=5 resolution 16]
@@ -65,6 +67,7 @@ highway=pedestrian & area!=yes {add access = no; add foot = yes} [0x06 road_clas
 highway=primary & bicycle=no [0x123 road_class=3 road_speed=4 resolution 19]
 highway=primary & oneway=yes [0x103 road_class=3 road_speed=4 resolution 19]
 highway=primary [0x03 road_class=3 road_speed=4 resolution 19]
+bbbike:render=highway_primary [0x03 road_class=1 road_speed=3 resolution 19]
 highway=primary_link [0x08 road_class=3 road_speed=3 resolution 19]
 (highway=residential | highway=living_street) & bicycle=no [0x126 road_class=0 road_speed=2 resolution 21]
 (highway=residential | highway=living_street) & oneway=yes [0x106 road_class=0 road_speed=2 resolution 21]
@@ -72,6 +75,7 @@ highway=residential | highway=living_street [0x06 road_class=0 road_speed=2 reso
 highway=secondary & bicycle=no [0x124 road_class=2 road_speed=3 resolution 20]
 highway=secondary & oneway=yes [0x104 road_class=2 road_speed=3 resolution 20]
 highway=secondary [0x04 road_class=2 road_speed=3 resolution 20]
+bbbike:render=highway_secondary [0x04 road_class=1 road_speed=3 resolution 20]
 highway=secondary_link [0x08 road_class=2 road_speed=2 resolution 20]
 highway=path {add access = no; add bicycle = yes; add foot = yes} [0x16 road_class=0 road_speed=0 resolution 23]
 highway=service [0x07 road_class=0 road_speed=1 resolution 22]

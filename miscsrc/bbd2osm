@@ -45,6 +45,7 @@ my $use_orig;
 my $shorten_for_garmin;
 my $quiet;
 my $debug;
+my $do_highway_primary_hack = 0;
 GetOptions("single=s" => \$single_file,
 	   "type=s" => \$single_file_type,
 	   "fragezeichen=s" => \$fragezeichen_file,
@@ -106,7 +107,7 @@ my %no_access;
 my %speed0;
 my @remember_quality;
 
-my %cat_to_highway = ('B'  => 'primary',
+my %cat_to_highway = ('B'  => 'primary', # See also $do_highway_primary_hack
 		      'HH' => 'primary',
 		      'H'  => 'secondary',
 		      'NH' => 'tertiary',
@@ -400,7 +401,12 @@ sub _handle_highway_like {
 	    print $wayfh qq{  <tag k="highway" v="footway" />\n};
 	    print $wayfh qq{  <tag k="bicycle" v="yes" />\n};
 	} else {
-	    print $wayfh qq{  <tag k="highway" v="$highway_tag" />\n};
+	    if ($do_highway_primary_hack && $highway_tag =~ m{^(primary|secondary)$}) {
+		print $wayfh qq{  <tag k="highway" v="tertiary" />\n};
+		print $wayfh qq{  <tag k="bbbike:render" v="highway_${highway_tag}" />\n};
+	    } else {
+		print $wayfh qq{  <tag k="highway" v="$highway_tag" />\n};
+	    }
 	}
 	if ($oneway) {
 	    print $wayfh qq{  <tag k="oneway" v="yes" />\n};
@@ -940,6 +946,13 @@ Maybe I should check if the various osm tools can handle negative or
 non-numeric ids, or if there's a private id range documented.
 
 Implement handling of BNP:...
+
+Do again some testing and work for the C<$do_highway_primary_hack>.
+The Garmin seems aggressively avoid all primary and secondary highways
+when doing routing for cyclists, leading to strange routes, at least
+when trying it in Berlin. The idea was to render primary and secondary
+roads, but to have internally a lower class, e.g. tertiary. First
+tests were not successful, though...
 
 =head1 AUTHOR
 
