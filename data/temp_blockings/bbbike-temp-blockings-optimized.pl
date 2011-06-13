@@ -3067,6 +3067,17 @@ userdel	q4::inwork; 10264,12826 10166,12777 10132,12941
          'data' => 'userdel	q4::inwork; 8775,12457 8907,12472 9008,12485
 ',
          'type' => 'handicap'
+       },
+       undef,
+       {
+         'source_id' => '116100612',
+         'until' => 1308981600,
+         'text' => 'Lübben (Spreewald): B115: Gleisbauarbeiten OL Lübben, Bahnübergang, 20.06.2011 06:00 Uhr bis 25.06.2011 08:00 Uhr',
+         'from' => 1308456000,
+         'id' => 2226,
+         'data' => 'userdel	2::inwork 40079,-50702 43031,-50423 43540,-50369
+',
+         'type' => 'gesperrt'
        }
      
 );

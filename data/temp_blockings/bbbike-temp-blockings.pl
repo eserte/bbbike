@@ -19163,4 +19163,13 @@ EOF
 userdel	2::inwork 3008,18464 2947,18570 2867,18736 2821,18831
 EOF
      },
+     { from  => 1308456000, # 2011-06-19 06:00
+       until => 1308981600, # 2011-06-25 08:00
+       text  => 'Lübben (Spreewald): B115: Gleisbauarbeiten OL Lübben, Bahnübergang, 20.06.2011 06:00 Uhr bis 25.06.2011 08:00 Uhr',
+       type  => 'gesperrt',
+       source_id => '116100612',
+       data  => <<EOF,
+userdel	2::inwork 40079,-50702 43031,-50423 43540,-50369
+EOF
+     },
     );

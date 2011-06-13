@@ -941,6 +941,7 @@ Hilchenbacher Weg: Fußgänger, eng	q2 2426,18544 2444,18487
 #: XXX_prog: BS
 Straße 455: Bordstein	q2 4916,17201 4931,17174
 (Uferweg Plötzensee): Fußgänger	q1- 5618,14981 5518,15236 5291,15424 5073,15619 5036,15615 5008,15592 5051,15508 5084,15415 5005,15213
+(Brücke über den Maselakekanal): Steigung	q2 -2152,17108 -2140,17171
 ######################### User Contributions #################################
 #: by: Michael Kiekbusch
 #: corrected_by: srt/policy (q4 -> q3-)
@@ -2319,8 +2320,12 @@ Rampe	q2 18574,68 18568,28 18560,75
 Walporzheimer Str.: enge Straße	q1 2909,24989 2910,24953 2938,24894 2980,24868 3030,24857 3099,24850 3186,24812 3234,24774
 #: by: Patrick Schwartz:
 Augusta-Ufer: offiziell nur von Süden nach Norden für Radfahrer befahrbar	q3; -3255,14685 -3331,14628 -3440,14498 -3501,14365
-#: by: Andrea Schulteisz:
+# 
+#: by: Andrea Schulteisz: vvv
 Theaterplatz: Fußgänger	q1 24968,15307 25086,15298
+Lil-Dagover-Gasse: Fußgängerzone	q4 23960,15021 23871,14914
+#: by: ^^^
+# 
 #: by: anonymous:
 Ferdinandstr. (Kaulsdorf): enge Straße	q1 23403,11841 23215,11852 22947,11840
 #: by: anonymous:
