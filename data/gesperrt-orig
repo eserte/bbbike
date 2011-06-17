@@ -284,7 +284,9 @@ Braillestr.	1 4430,5324 4477,5250 4512,5199
 Mudrackzeile	1 6985,17812 7020,17690
 Gustav-Müller-Str.	1 7643,8634 7642,8815
 Gustav-Müller-Platz	1 7644,8560 7614,8599 7643,8634 7682,8598 7644,8560
-Niederlagstr.	1 9972,12184 9947,12269 9939,12296 9951,12318 9943,12364 9934,12418
+#: XXX wird die Einbahnstraßenregelung vielleicht aufgehoben?
+#: last_checked: 2011-06-15
+Niederlagstr.	1 9972,12184 9961,12273 9943,12364 9934,12418
 Kolk/Behnitz/Möllentordamm	1 -3042,14682 -3028,14640 -2951,14617 -2942,14666 -3027,14689 -3042,14682
 Hertelstr.	1 4893,6900 4787,6899
 Karl-Marx-Platz	1 12980,7597 13100,7626
@@ -1774,11 +1776,6 @@ Tegeler Hafen: Weg über Insel gesperrt	2 1756,20405 1736,20441 1742,20464 1762,2
 #: last_checked: 2011-05-26
 #: next_check: 2011-07-20
 Beuthstr.: Bauarbeiten für Anbindung der Axel-Springer-Str. zum Spittelmarkt	2:inwork 10229,11618 10197,11605 10166,11592
-# 
-#: last_checked: 2011-05-20
-#: next_check: 2011-06-13
-#: XXX nach den Bauarbeiten vielleicht besserer Asphalt?
-Niederlagstr.: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2:inwork 9972,12184 9947,12269 9939,12296 9951,12318
 # 
 #: by: somebody via phone call 
 #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/a115_avus/de/bau.shtml

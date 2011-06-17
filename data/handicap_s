@@ -3,6 +3,8 @@
 #: note: XXX_* categorization done 2008-01-26
 #: note: "Parkweg" sollte hier vielleicht nicht verwendet werden, sondern nur in qualitaet_s-orig? Oder wenigstens die gleichen Wege nicht in beiden Dateien so benannt werden? Oder wenigstens beim Ausgeben der Routenliste doppelte ausfiltern?
 #:
+Beuthstr. - Spittelmarkt: Gehweg, Bauarbeiten	q3 10166,11592 10197,11605 10229,11618 10213,11728
+Spittelmarkt: Gehweg, Bordstein, Bauarbeiten	q3 10166,11592 10153,11666 10213,11728
 Invalidenstr. (Mitte): Baustelle, Richtung Alt-Moabit zwischen Gartenstr. und Hessische Str. gesperrt	q4::inwork; 9383,13978 9203,13953 9151,13941 9085,13919 8935,13844 8690,13723
 Krausenstr.: Bauarbeiten an der Kreuzung Krausenstr./Charlottenstr	q3::inwork 9581,11523 9711,11543
 Alt-Stralau: Bauarbeiten an der Br¸cke, enge Durchfahrt	q3::inwork 14652,10201 14558,10264
@@ -84,8 +86,6 @@ Tiergarten: Parkweg	q1 7816,12150 7827,12105 7832,12036 7822,11952 7801,11875 77
 (Bremer Weg - Fasanerieallee): Parkweg	q1 6342,11878 6379,11843 6406,11784 6467,11780 6540,11754
 Parkweg: enge Br¸cke, Fuﬂweg	q2 14310,9692 14361,9772 14404,9847 14448,9922 14453,9929 14558,10082 14597,10129 14626,10162 14652,10201
 Spittelmarkt: Gehweg	q1 10369,11728 10240,11740
-Beuthstr. - Spittelmarkt: Gehweg	q1 10229,11618 10213,11728
-Spittelmarkt: Gehweg	q1 10166,11592 10153,11666 10213,11728
 Hasenheide: Parkweg	q1 11271,8325 11282,8428 11250,8585 11177,8985 11128,9100 11136,9183
 Hasenheide, zur Lilienthalstr.: Parkweg	q1 10709,9192 11128,9100
 Am Flutgraben: Parkweg	q1 13333,9929 13412,9935 13579,10146
@@ -786,6 +786,8 @@ Hilchenbacher Weg: Fuﬂg‰nger, eng	q2 2426,18544 2444,18487
 Straﬂe 455: Bordstein	q2 4916,17201 4931,17174
 (Uferweg Plˆtzensee): Fuﬂg‰nger	q1 5618,14981 5518,15236 5291,15424 5073,15619 5036,15615 5008,15592 5051,15508 5084,15415 5005,15213
 (Br¸cke ¸ber den Maselakekanal): Steigung	q2 -2152,17108 -2140,17171
+Kleingartenstr.: enge Straﬂe	q1 24118,4404 24075,4417 24022,4442 23978,4484
+Gladiolenstr.: enge Straﬂe	q1 23536,4543 23541,4439
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q3 11805,19071 11895,19183 11927,19308
 Ebersstr.: Sch¸ler	q2 7245,8583 7292,8631
 Straﬂe 103 (Niederschˆnhausen): enge Straﬂe	q1 10914,20065 11051,19789
@@ -1439,7 +1441,7 @@ Renatenweg: Fuﬂg‰nger	q2 6463,2724 6529,2642
 Weinbrennerweg: enge Straﬂe	q1 6003,19461 6211,19559
 Grammestr.: enge Straﬂe	q1 1057,14389 1028,14251
 Hirschsprung: enge Straﬂe	q2 23837,5978 23874,5870
-Wiesenpromenade: enge Straﬂe	q1 23675,5810 23758,5846 23874,5870
+Wiesenpromenade: enge Straﬂe	q1 23660,5819 23675,5823 23758,5846 23874,5870
 Lenther Steig: enge Straﬂe	q1 1024,14889 1037,14814 1042,14721 1037,14515
 (Klothildestr - Schloﬂallee): Fuﬂg‰nger	q1 11068,19494 11081,19456
 Eschenallee (Rosenthal): enge Straﬂe	q1 9460,20644 9479,20535 9498,20435
@@ -1533,7 +1535,7 @@ Siepesteig: enge Straﬂe	q1 194,1055 115,1043 84,1174 91,1202
 Waldschluchtpfad: enge Straﬂe	q0 -5064,6853 -5034,6933 -4806,6901
 Liesborner Weg: enge Straﬂe	q1 1719,19093 1642,19116 1610,19034 1677,18989
 Zerndorfer Weg: enge Straﬂe	q1 3044,25558 3046,25642 3070,25725
-Cedernstr.: enge Straﬂe	q1 23878,4406 23988,4482 24078,4595
+Cedernstr.: enge Straﬂe	q1 23868,4411 23978,4484 24068,4602
 Rudolf-Pechel-Str.: enge Straﬂe	q1 9991,-413 9913,-432 9920,-513 10018,-494
 Buolstr.: enge Straﬂe	q1 559,15342 429,15284 283,15237
 Dompfaffenweg: enge Straﬂe	q1 20068,14516 19729,14564
@@ -1548,7 +1550,7 @@ Lil-Dagover-Gasse: Fuﬂg‰ngerzone	q4 23960,15021 23871,14914
 Ferdinandstr. (Kaulsdorf): enge Straﬂe	q1 23403,11841 23215,11852 22947,11840
 Erbsenpfad: enge Straﬂe	q1 -7872,14409 -7850,14555
 Johannesstr.: enge Straﬂe	q1 609,1915 712,1551
-Birkenstr. (Kˆpenick): enge Straﬂe	q1 24170,4560 24078,4595 23980,4633 23934,4661 23947,4673 23869,4733
+Birkenstr. (Kˆpenick): enge Straﬂe	q1 24166,4568 24068,4602 23980,4633 23934,4661 23947,4673 23869,4733
 Dennewitzplatz: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 7906,10098 7866,9918
 Eichborndamm: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 4240,19019 4232,18981
 Richterstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 22092,999 22120,886 22075,779 22007,711

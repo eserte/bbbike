@@ -54,8 +54,8 @@ Danziger Str.	?::projected 11712,14868 11879,14771 11990,14714 12040,14688 12128
 #: next_check: 2011-07-01
 Kniprodestr./Am Friedrichshain	?::projected 12901,14093 12784,13961 12695,13864 12654,13819 12571,13798 12403,13755 12204,13719 12161,13711 12038,13685 11868,13646 11785,13625 11762,13619 11706,13635
 #
-#: last_checked: 2011-05-30
-#: next_check: 2011-08-01
+#: last_checked: 2011-06-16
+#: next_check: 2011-09-01
 Schnellerstr.	?::projected 18245,5551 18370,5511 18680,5413 18984,5318 19031,5316 19328,5304 19405,5284
 # 
 #: by: http://www.berlin.de/ba-spandau/presse/archiv/20100803.1545.305011.html
@@ -151,7 +151,7 @@ Fahrradstraße in der Lauenburger Str.	?::projected 5883,4985 5909,5072 5939,5169
 #: section ignorieren vvv
 #: section Straßen in Bau und Planung vvv
 # 
-#: last_cheecked: 2011-06-12
+#: last_cheecked: 2011-06-15
 Alexanderstr.: Fußgängerampel in Bau	?::inwork 11027,13075
 # 
 #: by: http://www.berlin.de/ba-pankow/presse/archiv/20110608.1725.347135.html
@@ -272,7 +272,7 @@ Kletterrosenweg	?::projected 21382,149 21354,289
 #: next_check ^^^
 #: last_checked ^^^
 # 
-#: next_check: 2011-08-01
+#: next_check: 2011-10-01
 An der Barthschen Promenade: vielleicht wird die Straße in Zukunft sich hier befinden	?::projected 8954,8914 8814,8917
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20100804.1210.305109.html
@@ -329,13 +329,8 @@ Mangerstr.: Bauarbeiten bis Dezember 2010, danach asphaltiert	?::inwork -12064,-
 #: by: http://www.potsdam.de/cms/beitrag/10056300/757395/
 Mauerweg: evtl. existiert hier bereits ein geschotterter Radweg parallel zur Straße	? -8799,3778 -9064,3667 -9156,3451 -9399,3297 -9530,3165 -9999,2615 -10105,2458
 #
-#: last_checked: 2011-05-20
-#: next_check: 2011-06-15
-#: XXX Eintrag in Berlin.coords.data fehlt: PLZ=10117
-Werdersche Rosenstr.: Qualität?	?::inwork 9875,12257 9947,12269
-# 
-#: last_checked: 2011-06-12 vvv
-#: next_check: 2011-08-15 vvv
+#: last_checked: 2011-06-15 vvv
+#: next_check: 2011-10-15 vvv
 #: XXX Eintrag in Berlin.coords.data fehlt: PLZ=10117
 #: XXX genaue Lage?
 Prinzengasse: existiert sie schon, wenn ja: wie ist die Qualität?	?::inwork 9952,12292 10029,12313
@@ -380,8 +375,8 @@ Alt-Biesdorf/Alt-Kaulsdorf (südliche Seite): Bau von Radwegen	? 21108,11628 2125
 #: last_checked: 2011-04-01
 #: next_check: 2011-07-01
 Fasanenstr.: Öffnung der Einbahnstraße für Radfahrer	? 5268,11274 5247,10992 5242,10918 5229,10716 5207,10399
-#: last_checked: 2011-03-08
-#: next_check: 2011-06-01
+#: last_checked: 2011-06-16
+#: next_check: 2011-10-01
 Braunschweiger Str.: Asphaltierung	? 13047,7234 13150,7254 13322,7294 13369,7307 13487,7337
 #: last_checked: 2011-05-07
 #: next_check: 2011-08-01
@@ -488,6 +483,17 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 # Das heißt diese Strecken werden nicht bei einer erweiterten Suche aufgenommen
 # und dem CGI-Benutzer auch nicht präsentiert.
 # 
+#: XXX_prog: Bodenschwellen vvv
+Bodenschwelle, kaum umfahrbar	? 23745,3820
+Bodenschwelle, kaum umfahrbar	? 23881,4299
+Bodenschwelle, kaum umfahrbar	? 23651,4268
+Bodenschwelle, kaum umfahrbar	? 23491,4534
+Bodenschwelle, Umfahrung kann zugeparkt sein	? 23329,2166
+Bodenschwelle, Umfahrung kann zugeparkt sein	? 23349,2240
+#: XXX_prog ^^^
+# 
+#: XXX nördlicher Ausgang ist als "KGA Erpetal" in der S-Bahn-Unterführung ausgeschildert
+Weg am S-Bhf. Hirschgarten: Qualität? Beleuchtet? Genaue Wegführung? Ausschilderung? Wieviele Stufen müssen getragen werden?	? 24310,6100 24127,6097 24044,6051 23948,6054 23947,6014 23930,6013 23931,5992
 Billerbecker Weg: Asphalt oder Beton?	? 2117,18632 2196,18642 2323,18653 2413,18655
 Weddigenweg: ist das Kopfsteinpflaster tatsächlich schlecht oder nur mäßig?	? 3174,3052 3026,3058 2701,3064
 Weddigenweg: ist das Kopfsteinpflaster tatsächlich schlecht oder nur mäßig?	? 3646,3034 3943,3015
@@ -2898,14 +2904,9 @@ Sternallee: Qualität?	? 23597,5437 23651,5435 23691,5368 23746,5276
 Sternallee: Qualität?	? 23765,5248 23808,5177
 #: XXX Straße fehlt in Berlin.coords.data
 Hirteplatz: Qualität?	? 23766,5281 23756,5280 23746,5276 23743,5268 23744,5262 23751,5248 23765,5248 23775,5258 23775,5271 23766,5281
-#: XXX benötigt str_cont_ausnahme-Eintrag
 Neuer Weg: Qualität?	? 23660,5307 23492,5334
-Neuer Weg: Qualität?	? 23469,5340 23427,5349
-Grünfließer Gang: Qualität? Nachts beleuchtet?	? 23696,5529 23681,5565 23675,5810
-Gladiolenstr.: Qualität?	? 23544,4541 23541,4439 23537,4238
-Am Spielplatz: Qualität? Für Radfahrer befahrbar? Nachts beleuchtet?	? 23878,4406 23766,4376 23658,4359
-Dahlienstr.: Qualität?	? 24107,4309 24126,4402 24170,4560
-Kleingartenstr.: Qualität?	? 24126,4402 24075,4417 24022,4442 23988,4482
+#: XXX_osm: bei osm als Neuer Weg bezeichnet
+Salvador-Allende-Str., Abzweig: Qualität?	? 23469,5340 23427,5349 23428,5382 23403,5385
 Schrebergasse: Qualität? Für Radfahrer befahrbar? Nachts beleuchtet?	? 23850,4497 23925,4555 23980,4633
 # XXX del nur ein sehr enger Weg vorhanden --- lohnt nicht --- Waldpromenade: Qualität? Nachts beleuchtet? Für Autos offen?	? 23481,8119 23385,8217 22865,8588
 #: XXX_osm: bei osm evtl. falsch geschrieben
@@ -4177,3 +4178,4 @@ Bärbelweg: Qualität?	? -2288,18976 -2192,18782 -2064,18667
 Waldweg im Tegeler Forst: Qualität?	? -1543,18632 -671,19408 -421,19626
 Waldweg im Tegeler Forst: Qualität?	? -112,19901 66,20061 87,20066
 Werdohler - Dattelner Weg: existiert eine Verbindung für Radfahrer? Qualität?	? 1300,18292 1221,18327
+Grünfließer Gang: existiert ein Straßenschild auf der nördlichen Seite?	? 23675,5823 23675,5729

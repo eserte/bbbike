@@ -1405,18 +1405,7 @@ userdel	2::temp 8119,12414 8055,12186
        undef,
        undef,
        undef,
-       {
-         'until' => 1308002340,
-         'text' => 'Straßen um den Blücherplatz Kreuzberg Blücherplatz, Waterlooufer: Mehringdamm - Zossener Str., Blücherstr.: Mehringdamm - Zossener Str., Zossener Str.: Waterlooufer-Blücherstr. gesperrt (10. - 13.06.2011)',
-         'from' => 1307570400,
-         'id' => 1358,
-         'data' => 'userdel	2::temp 9521,10010 9448,10014
-userdel	2::temp 9858,10199 9837,10117 9827,10051 9521,10010 9536,10064 9579,10122 9599,10175 9687,10180 9825,10206 9865,10227
-userdel	2::temp 9416,10196 9599,10175
-userdel	2::temp 9579,10122 9631,10142 9689,10124 9827,10051
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3005,24 +2994,15 @@ userdel	q4::inwork; 12549,8616 12500,8504
          'type' => 'handicap'
        },
        undef,
-       {
-         'until' => undef,
-         'text' => 'Friedrichsbrücke: Bauarbeiten, Fahrrad muss geschoben werden, mit Anhaenger kommt man nicht durch',
-         'from' => undef,
-         'id' => 2218,
-         'data' => '#: by: wosch
-#: last_checked: 2011-05-31
-userdel	q4::inwork 10086,12725 10166,12777
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => undef,
          'text' => 'Burgstraße/Anna-Louisa-Karsch-Straße: Bauarbeiten, Einbahnstraßenregelung',
          'from' => undef,
          'id' => 2219,
          'data' => '#: by: wosch
-#: last_checked: 2011-05-31
+#: confirmed_by: srt
+#: last_checked: 2011-06-15
 userdel	q4::inwork; 10264,12826 10166,12777 10132,12941
 ',
          'type' => 'handicap'

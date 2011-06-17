@@ -6690,7 +6690,7 @@ EOF
 userdel	2::temp 9994,12368 9943,12364 9934,12418
 userdel	2::temp 9996,12401 10058,12290 10008,12274 9994,12368 9996,12401 9984,12426
 userdel	2::temp 10058,12290 10091,12232
-userdel	2::temp 9943,12364 9951,12318 9939,12296 9947,12269 9972,12184
+userdel	2::temp 9943,12364 9961,12273 9972,12184
 userdel	2::temp 10010,12259 10035,12209
 userdel	2::temp 9852,12409 9869,12297 9875,12257 9890,12161
 EOF
@@ -9418,7 +9418,7 @@ EOF
        data  => <<EOF,
 userdel	2::temp 9890,12161 9875,12257 9869,12297 9795,12293 9780,12401
 userdel	2::temp 9869,12297 9852,12409
-userdel	2::temp 9994,12368 9943,12364 9951,12318 9939,12296 9947,12269 9972,12184
+userdel	2::temp 9994,12368 9943,12364 9961,12273 9972,12184
 userdel	2::temp 9934,12418 9943,12364
 EOF
      },
@@ -16838,7 +16838,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_014608',
        data  => <<EOF,
-userdel	2::temp 9943,12364 9951,12318 9939,12296 9947,12269 9972,12184
+userdel	2::temp 9943,12364 9961,12273 9972,12184
 userdel	2::temp 9780,12401 9795,12293 9801,12245 9812,12145
 userdel	2::temp 9852,12409 9869,12297 9875,12257 9890,12161
 EOF
@@ -19089,13 +19089,12 @@ userdel	2::temp 13077,10747 13206,10651
 userdel	2::temp 12985,10665 12865,10762 12942,10845 13077,10747 13015,10659 13082,10634 13028,10629 13140,10546 13178,10623
 EOF
      },
-     { from  => undef, # 
-       until => undef, # XXX
+     { from  => 1308262849, # undef
+       until => 1308262854, # undef, # XXX --- ist mittlerweile unproblematisch (2011-05-15)
        text  => 'Friedrichsbrücke: Bauarbeiten, Fahrrad muss geschoben werden, mit Anhaenger kommt man nicht durch',
        type  => 'handicap',
        data  => <<EOF,
 #: by: wosch
-#: last_checked: 2011-05-31
 userdel	q4::inwork 10086,12725 10166,12777
 EOF
      },
@@ -19105,7 +19104,8 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: by: wosch
-#: last_checked: 2011-05-31
+#: confirmed_by: srt
+#: last_checked: 2011-06-15
 userdel	q4::inwork; 10264,12826 10166,12777 10132,12941
 EOF
      },
