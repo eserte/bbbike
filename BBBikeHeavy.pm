@@ -469,6 +469,7 @@ require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . 
 	 -transient => $top,
 	);
     $bbl->add(@elem);
+    $bbl->expand_to_visible if $bbl->can('expand_to_visible');
 
     # Hooks
     my $bblpath = $bbl->PathName;
