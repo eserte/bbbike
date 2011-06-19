@@ -831,7 +831,7 @@ Zenin, C<ext/Strassen-Inline/heap.[ch]> der Internet Software
 Consortium, C<ext/BBBikeXS/sqrt.c> von Eyal Lebedinsky.
 
 C<BBBike-[% BBBIKEWINVER %]-Windows.zip> enthält einen Teil der
-C<SiePerl>-Distribution, siehe
+C<Strawberry Perl>-Distribution, siehe
 [%- ELSE -%]
 The most important parts of the application (C<bbbike>, C<cgi/bbbike.cgi>,
 C<Strassen.pm> and C<Strassen/Inline.pm>) and the data in the
@@ -847,11 +847,11 @@ C<lib/Text/ScriptTemplate.pm> by Taisuke Yamada, C<lib/enum.pm> by
 Zenin, C<ext/Strassen-Inline/heap.[ch]> by Internet Software
 Consortium, C<ext/BBBikeXS/sqrt.c> by Eyal Lebedinsky.
 
-C<BBBike-[% BBBIKEWINVER %]-Windows.zip> contains a partial C<SiePerl>
-distribution, see
+C<BBBike-[% BBBIKEWINVER %]-Windows.zip> contains a partial
+C<Strawberry Perl> distribution, see
 [%- END -%]
 
-L<http://www.cpan.org/authors/id/G/GR/GRAHAMC/>
+L<http://strawberryperl.com/>
 
 =head1 
 [%- IF lang=="DE" -%]
