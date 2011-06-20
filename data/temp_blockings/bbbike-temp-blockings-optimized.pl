@@ -1019,17 +1019,7 @@ userdel	2 16975,1262 16849,1437
        undef,
        undef,
        undef,
-       {
-         'until' => 1308520800,
-         'text' => 'Motzstr., Eisenacher Str., Kalckreuthstr. (Schöneberg) in beiden Richtungen, Veranstaltung, Straße vollständig gesperrt (18. und 19. Juni 2011)',
-         'from' => 1308261600,
-         'id' => 1024,
-         'data' => 'userdel	2::temp 6628,10318 6626,10155 6729,10212 6739,10120
-userdel	2::temp 6609,10147 6514,10088
-userdel	2::temp 6971,10346 6729,10212 6719,10347
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3018,16 +3008,7 @@ userdel	q4::inwork; 10264,12826 10166,12777 10132,12941
          'type' => 'handicap'
        },
        undef,
-       {
-         'source_id' => 'LS/S-SG33-C/11/084',
-         'until' => 1308520800,
-         'text' => 'Jämlitz-Klein Düben: B115, B112: Deckenerneuerung Simmersdorf - AS Forst geplante Vollsperrung: 17.06.11-19.06.11',
-         'from' => 1308261600,
-         'id' => 2222,
-         'data' => 'userdel	2::inwork 97780,-91551 97468,-91292
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_017000',
          'until' => 1310839200,
@@ -3056,6 +3037,26 @@ userdel	q4::inwork; 10264,12826 10166,12777 10132,12941
          'from' => 1308456000,
          'id' => 2226,
          'data' => 'userdel	2::inwork 40079,-50702 43031,-50423 43540,-50369
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'LS/O-SG33-E/11/063',
+         'until' => 1308693599,
+         'text' => 'Löwenberger Land: B96: Fahrbahninstandsetzung OA Teschendorf - Nassenheide, Vollsperrung am 21.06.11 ',
+         'from' => 1308520800,
+         'id' => 2227,
+         'data' => 'userdel	2::inwork -4587,48481 -4284,47803
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => '116400693',
+         'until' => 1309211999,
+         'text' => 'Neuenhagen bei Berlin: L338: Kranaufstellung, Aufstellen Betonpumpe OL Neuenhagen, Schöneicher Str. Nr. 50 am 27.06.11 Vollsperrung ',
+         'from' => 1309039200,
+         'id' => 2228,
+         'data' => 'userdel	2::inwork 30971,11749 31021,12174
 ',
          'type' => 'gesperrt'
        }

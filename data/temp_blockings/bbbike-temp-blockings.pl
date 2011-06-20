@@ -19172,4 +19172,22 @@ EOF
 userdel	2::inwork 40079,-50702 43031,-50423 43540,-50369
 EOF
      },
+     { from  => 1308520800, # 2011-06-20 00:00
+       until => 1308693599, # 2011-06-21 23:59
+       text  => 'Löwenberger Land: B96: Fahrbahninstandsetzung OA Teschendorf - Nassenheide, Vollsperrung am 21.06.11 ',
+       type  => 'gesperrt',
+       source_id => 'LS/O-SG33-E/11/063',
+       data  => <<EOF,
+userdel	2::inwork -4587,48481 -4284,47803
+EOF
+     },
+     { from  => 1309039200, # 2011-06-26 00:00
+       until => 1309211999, # 2011-06-27 23:59
+       text  => 'Neuenhagen bei Berlin: L338: Kranaufstellung, Aufstellen Betonpumpe OL Neuenhagen, Schöneicher Str. Nr. 50 am 27.06.11 Vollsperrung ',
+       type  => 'gesperrt',
+       source_id => '116400693',
+       data  => <<EOF,
+userdel	2::inwork 30971,11749 31021,12174
+EOF
+     },
     );
