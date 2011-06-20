@@ -1,0 +1,19 @@
+--- Portable/Config.pm.orig	2011-06-19 22:55:45.625000000 +0200
++++ Portable/Config.pm	2011-06-19 22:58:40.421875000 +0200
+@@ -37,6 +37,16 @@
+ 			$self->{$key} = $conf->{$key};
+ 			next;
+ 		}
++		if ($key eq 'libpth') {
++			my @paths = split / /, $conf->{$key};
++			for my $path (@paths) {
++				$path = File::Spec->catdir(
++					$root, split /\//, $path,
++				);
++			}
++			$self->{$key} = join ' ', @paths;
++			next;
++		}
+ 		my $method = ($key eq 'perlpath') ? 'catfile' : 'catdir';
+ 		$self->{$key} = File::Spec->$method(
+ 			$root, split /\//, $conf->{$key},

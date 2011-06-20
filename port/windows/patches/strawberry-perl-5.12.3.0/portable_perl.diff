@@ -1,0 +1,11 @@
+--- portable.perl.orig	2011-06-19 22:47:22.375000000 +0200
++++ portable.perl	2011-06-19 22:50:17.281250000 +0200
+@@ -59,7 +59,7 @@
+   lddlflags: '-mdll -s -L"$archlib\CORE" -L"$libpth"'
+   ldflags: '-s -L"$archlib\CORE" -L"$libpth"'
+   ldflags_nolargefiles: '-s -L"$archlib\CORE" -L"$libpth"'
+-  libpth: c/lib
++  libpth: 'c/lib c/i686-w64-mingw32/lib'
+   perlpath: perl/bin/perl.exe
+   prefix: perl
+   prefixexp: perl

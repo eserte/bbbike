@@ -62,6 +62,8 @@ devel:
 #
 # HOWTO use this rules
 # - install a portable strawberry into \cygwin\home\eserte\strawberry
+# - do modification to strawberry: remove some stuff, add additional modules
+#   (more detailed instructions missing!)
 # - create \cygwin\home\eserte\bbbikewindist
 # - copy ...\strawberry\perl into \cygwin\home\eserte\bbbikewindist\perl
 # - copy (stripped down) gpsbabel distro into \cygwin\home\eserte\bbbikewindist\gpsbabel
