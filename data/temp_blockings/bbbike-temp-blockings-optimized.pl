@@ -3040,16 +3040,7 @@ userdel	q4::inwork; 10264,12826 10166,12777 10132,12941
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'LS/O-SG33-E/11/063',
-         'until' => 1308693599,
-         'text' => 'Löwenberger Land: B96: Fahrbahninstandsetzung OA Teschendorf - Nassenheide, Vollsperrung am 21.06.11 ',
-         'from' => 1308520800,
-         'id' => 2227,
-         'data' => 'userdel	2::inwork -4587,48481 -4284,47803
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => '116400693',
          'until' => 1309211999,
@@ -3059,6 +3050,47 @@ userdel	q4::inwork; 10264,12826 10166,12777 10132,12941
          'data' => 'userdel	2::inwork 30971,11749 31021,12174
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'LS/S-SG33-C/11/067',
+         'until' => 1320447600,
+         'text' => 'Neuhausen/Spree: L48: Brückenneubau L 48 Brücke über das Fließ bei Gablenz, 19.04.2011 bis 04.11.2011 ',
+         'from' => 1308809403,
+         'id' => 2229,
+         'data' => 'userdel	2::inwork 85633,-77062 87212,-78642
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'INKO_107899',
+         'until' => 1309532400,
+         'text' => 'Granitzstr. (Pankow): Baustelle, für beide Richtungen nur ein Fahrstreifen abwechselnd frei (bis Anfang 07/11) in beiden Richtungen zwischen Haßfurter Weg und Dettelbacher Weg, 17.06.2011 07:00 Uhr bis 01.07.2011 17:00 Uhr ',
+         'from' => 1308200400,
+         'id' => 2230,
+         'data' => 'userdel	q4::inwork 11796,18482 11698,18446
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_017472',
+         'until' => 1308974400,
+         'text' => 'John-Foster-Dulles-Allee (Tiergarten): Sportveranstaltung, Straße vollständig gesperrt (bis 25.06., 06:00) in beiden Richtungen, 21.06.2011 20:00 Uhr bis 25.06.2011 06:00 Uhr ',
+         'from' => 1308592800,
+         'id' => 2231,
+         'data' => 'userdel	q4::temp 7215,12295 7437,12368
+userdel	q4::temp 7875,12363 7821,12367 7627,12380 7514,12387
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_017476',
+         'until' => 1311343200,
+         'text' => 'Stargarder Str. (Prenzlauer Berg): Baustelle, Fahrtrichtung gesperrt (bis Ende 07/11) Richtung Prenzlauer Allee zwischen Schönhauser Allee und Pappelallee, 20.06.2011 09:00 Uhr bis 22.07.2011 16:00 Uhr ',
+         'from' => 1308466800,
+         'id' => 2232,
+         'data' => 'userdel	q4::inwork; 10953,15787 11086,15772 11158,15739 11301,15668
+',
+         'type' => 'handicap'
        }
      
 );

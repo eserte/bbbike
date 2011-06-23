@@ -19190,4 +19190,41 @@ EOF
 userdel	2::inwork 30971,11749 31021,12174
 EOF
      },
+     { from  => 1308809403, # 2011-06-23 08:10
+       until => 1320447600, # 2011-11-05 00:00
+       text  => 'Neuhausen/Spree: L48: Brückenneubau L 48 Brücke über das Fließ bei Gablenz, 19.04.2011 bis 04.11.2011 ',
+       type  => 'gesperrt',
+       source_id => 'LS/S-SG33-C/11/067',
+       data  => <<EOF,
+userdel	2::inwork 85633,-77062 87212,-78642
+EOF
+     },
+     { from  => 1308200400, # 2011-06-16 07:00
+       until => 1309532400, # 2011-07-01 17:00
+       text  => 'Granitzstr. (Pankow): Baustelle, für beide Richtungen nur ein Fahrstreifen abwechselnd frei (bis Anfang 07/11) in beiden Richtungen zwischen Haßfurter Weg und Dettelbacher Weg, 17.06.2011 07:00 Uhr bis 01.07.2011 17:00 Uhr ',
+       type  => 'handicap',
+       source_id => 'INKO_107899',
+       data  => <<EOF,
+userdel	q4::inwork 11796,18482 11698,18446
+EOF
+     },
+     { from  => 1308592800, # 2011-06-20 20:00
+       until => 1308974400, # 2011-06-25 06:00
+       text  => 'John-Foster-Dulles-Allee (Tiergarten): Sportveranstaltung, Straße vollständig gesperrt (bis 25.06., 06:00) in beiden Richtungen, 21.06.2011 20:00 Uhr bis 25.06.2011 06:00 Uhr ',
+       type  => 'handicap',
+       source_id => 'IM_017472',
+       data  => <<EOF,
+userdel	q4::temp 7215,12295 7437,12368
+userdel	q4::temp 7875,12363 7821,12367 7627,12380 7514,12387
+EOF
+     },
+     { from  => 1308466800, # 2011-06-19 09:00
+       until => 1311343200, # 2011-07-22 16:00
+       text  => 'Stargarder Str. (Prenzlauer Berg): Baustelle, Fahrtrichtung gesperrt (bis Ende 07/11) Richtung Prenzlauer Allee zwischen Schönhauser Allee und Pappelallee, 20.06.2011 09:00 Uhr bis 22.07.2011 16:00 Uhr ',
+       type  => 'handicap',
+       source_id => 'IM_017476',
+       data  => <<EOF,
+userdel	q4::inwork; 10953,15787 11086,15772 11158,15739 11301,15668
+EOF
+     },
     );
