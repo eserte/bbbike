@@ -129,10 +129,13 @@ Wollankstr.: Angebotsstreifen werden bis Herbst 2011 eingerichtet	?::projected 9
 Rüdersdorfer Str. bekommt Radspuren	?::projected 13066,11854 12891,12008
 #
 #: by: Tagesspiegel vom 2010-03-26
-#: last_checked: 2011-06-10
-#: next_check: 2011-06-16
-Lindenstr./Axel-Springer-Str.: Markierungsarbeiten für Radspuren haben begonnen	?::projected 9805,10791 9829,10830 9935,11067 9973,11150 10020,11262
-Lindenstr./Axel-Springer-Str.: Markierungsarbeiten für Radspuren haben begonnen	?::projected 10116,11485 10136,11529 10166,11592
+#: last_checked: 2011-06-24
+#: next_check: 2011-07-05
+Lindenstr.: Markierungsarbeiten für Radspuren haben begonnen	?::projected 9805,10791 9829,10830 9935,11067 9973,11150 10020,11262
+# 
+#: last_checked: 2011-06-24
+#: next_check: 2011-09-01
+Axel-Springer-Str.: Markierungsarbeiten für Radspuren haben begonnen	?::projected 10116,11485 10136,11529 10166,11592
 #
 #: XXX http://fahrrad.wikia.com/wiki/Fahrradstra%C3%9Fe/Liste_von_Fahrradstra%C3%9Fen#Berlin -> ja
 #: XXX Frank Baumeister: -> ja
@@ -175,9 +178,7 @@ An den Eldenaer Höfen: wo genau wird die Straße liegen? Qualität?	?::inwork 1443
 #: next_check: 2012-04-01
 Axel-Springer-Str.: Verbindung zum Spittelmarkt	?::inwork 10166,11592 10213,11728
 # 
-#: last_checked: 2011-05-20
-#: next_check: 2011-06-20
-Radstreifen in der Wilhelmstr.: wird der Rest noch realisiert?	?::inwork 9367,10641 9313,10789 9266,10936 9234,11056 9199,11166
+#XXX del --- wird wahrscheinlich nicht realisiert --- #: last_checked: 2011-05-20 --- #: next_check: 2011-06-20 --- Radstreifen in der Wilhelmstr.: wird der Rest noch realisiert?	?::inwork 9367,10641 9313,10789 9266,10936 9234,11056 9199,11166
 #
 #: last_checked: 2011-04-09 vvv
 #: next_check: 2011-07-15 vvv
@@ -435,12 +436,12 @@ Eisenhutweg: Radwege entstehen im Zuge der Bauarbeiten bis September 2011	?::inw
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0802/nachricht2961.html
 B96a: Neubau der Radwege (gemeinsam mit Gehweg); wahrscheinlich wird der Radstreifen dann aufgehoben (bis 2010-01-01)	?::inwork 9228,23643 9146,23843 8984,24078 8891,24330 8826,24501 8682,24883 8665,24941 8661,24952 8571,25180 8548,25239 8493,25378
 # 
-#: last_checked: 2010-10-29
-#: next_check: 2011-09-31
+#: last_checked: 2011-06-24
+#: next_check: 2011-09-30
 #: by: http://www.stadtumbau-berlin.de/O-W-Gruenzug-Fussgaenger-und-Radfahrersteg.4699.0.html
 Verbindung zwischen Leuthener Platz und General-Pape-Str. (evtl. mit Verlängerung) inkl. Brücke über die Bahnstrecke für Fußgänger und Radfahrer (4m breit), Realisierung bis Herbst 2011	?::projected 7716,8356 7837,8354 7893,8327 8088,8283
 # 
-#: last_checked: 2011-05-06
+#: last_checked: 2011-06-24
 #: next_check: 2011-07-01
 Verbindung zwischen Leuthener Platz und General-Pape-Str. (evtl. mit Verlängerung) inkl. Brücke über die Bahnstrecke für Fußgänger und Radfahrer (4m breit), Realisierung bis Herbst 2011, Weg wird asphaltiert sein	?::projected 8088,8283 8264,8289
 # 

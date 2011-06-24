@@ -7311,7 +7311,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_004915',
        data  => <<EOF,
-userdel	2::inwork 8306,8722 8237,8685 8226,8648 7950,7840
+userdel	2::inwork 8306,8722 8237,8685 8226,8648 7955,7840
 EOF
      },
      { from  => 1173913200, # 2007-03-15 00:00
@@ -18885,15 +18885,12 @@ Albrecht-Thaer-Weg: Privatstraße, evtl. nicht geöffnet	2::night 3347,6460 3449,6
 EOF
      },
      { from  => 1280051220, # 2010-07-25 11:47
-       until => 1312034400, # 2011-07-30 16:00
+       until => 1308938946, # 2011-07-30 16:00 1312034400
        text  => 'General-Pape-Straße (Tempelhof): Baustelle, Fahrtichtung gesperrt (bis ca. 07/2011) Richtung Kolonnenstr. zwischen Werner-Voß-Str. und Loewenhardtdamm, 26.07.2010 11:47 Uhr bis 30.07.2011 16:00 Uhr ',
        type  => 'handicap',
        source_id => 'IM_016132',
        data  => <<EOF,
-#: XXX Verkehrsfreigabe ist bereits erfolgt (2011-05-25) --- Einschränkung aufgehoben?
-#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20110520.1450.344975.html
-#: next_check: 2011-05-25
-userdel	q4::inwork; 7949,7607 7935,7736 7950,7840 8226,8648 8237,8685 8306,8722
+userdel	q4::inwork; 7949,7607 7943,7708 7951,7801 7955,7840 8226,8648 8237,8685 8306,8722
 EOF
      },
      { from  => 1302411000, # 2011-04-10 06:50
@@ -19225,6 +19222,24 @@ EOF
        source_id => 'IM_017476',
        data  => <<EOF,
 userdel	q4::inwork; 10953,15787 11086,15772 11158,15739 11301,15668
+EOF
+     },
+     { from  => 1308974400, # 2011-06-25 06:00
+       until => 1309104000, # 2011-06-26 18:00
+       text  => 'Südostallee (Treptow) in beiden Richtungen zwischen Kiefholzstr. und Baumschulenstr., Veranstaltung, Straße vollständig gesperrt (26.06.2011 06 Uhr bis 18:00 Uhr)',
+       type  => 'handicap',
+       source_id => 'IM_017504',
+       data  => <<EOF,
+userdel	q4::temp 16044,6120 16116,6080 16510,5917 16861,5935
+EOF
+     },
+     { from  => 1308988800, # 2011-06-25 10:00
+       until => 1309093200, # 2011-06-26 15:00
+       text  => 'Unter den Linden (Mitte) in beiden Richtungen zwischen Friedrichstr. und Oberwallstr./Hinter dem Gießhaus, Veranstaltung, Straße vollständig gesperrt (26.06.2011 10:00 bis 15:00) ',
+       type  => 'gesperrt',
+       source_id => 'IM_017503',
+       data  => <<EOF,
+userdel	2::temp 9852,12409 9780,12401 9771,12400 9679,12388 9601,12380 9475,12365 9358,12351
 EOF
      },
     );

@@ -2861,19 +2861,7 @@ userdel	q4::inwork; -12545,-698 -12262,-612
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_016132',
-         'until' => 1312034400,
-         'text' => 'General-Pape-Straße (Tempelhof): Baustelle, Fahrtichtung gesperrt (bis ca. 07/2011) Richtung Kolonnenstr. zwischen Werner-Voß-Str. und Loewenhardtdamm, 26.07.2010 11:47 Uhr bis 30.07.2011 16:00 Uhr ',
-         'from' => 1280051220,
-         'id' => 2197,
-         'data' => '#: XXX Verkehrsfreigabe ist bereits erfolgt (2011-05-25) --- Einschränkung aufgehoben?
-#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20110520.1450.344975.html
-#: next_check: 2011-05-25
-userdel	q4::inwork; 7949,7607 7935,7736 7950,7840 8226,8648 8237,8685 8306,8722
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'IM_017117',
          'until' => 1311976800,
@@ -3091,6 +3079,26 @@ userdel	q4::temp 7875,12363 7821,12367 7627,12380 7514,12387
          'data' => 'userdel	q4::inwork; 10953,15787 11086,15772 11158,15739 11301,15668
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_017504',
+         'until' => 1309104000,
+         'text' => 'Südostallee (Treptow) in beiden Richtungen zwischen Kiefholzstr. und Baumschulenstr., Veranstaltung, Straße vollständig gesperrt (26.06.2011 06 Uhr bis 18:00 Uhr)',
+         'from' => 1308974400,
+         'id' => 2233,
+         'data' => 'userdel	q4::temp 16044,6120 16116,6080 16510,5917 16861,5935
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_017503',
+         'until' => 1309093200,
+         'text' => 'Unter den Linden (Mitte) in beiden Richtungen zwischen Friedrichstr. und Oberwallstr./Hinter dem Gießhaus, Veranstaltung, Straße vollständig gesperrt (26.06.2011 10:00 bis 15:00) ',
+         'from' => 1308988800,
+         'id' => 2234,
+         'data' => 'userdel	2::temp 9852,12409 9780,12401 9771,12400 9679,12388 9601,12380 9475,12365 9358,12351
+',
+         'type' => 'gesperrt'
        }
      
 );
