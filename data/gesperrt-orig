@@ -287,7 +287,7 @@ Gustav-Müller-Platz	1 7644,8560 7614,8599 7643,8634 7682,8598 7644,8560
 #: XXX wird die Einbahnstraßenregelung vielleicht aufgehoben?
 #: last_checked: 2011-06-15
 Niederlagstr.	1 9972,12184 9961,12273 9943,12364 9934,12418
-Kolk/Behnitz/Möllentordamm	1 -3042,14682 -3028,14640 -2951,14617 -2942,14666 -3027,14689 -3042,14682
+Kolk/Behnitz/Möllentordamm	1 -3042,14682 -3028,14640 -2951,14617 -2944,14652 -2942,14666 -3027,14689 -3042,14682
 Hertelstr.	1 4893,6900 4787,6899
 Karl-Marx-Platz	1 12980,7597 13100,7626
 Karl-Marx-Platz	1 13100,7626 12991,7549
@@ -824,6 +824,8 @@ Bernauer Str.	1s:q3 2643,18738 2731,18729 2867,18736
 Krumpuhler Weg: nur Mo-Do von 8-16 Uhr und Fr von 8-14 Uhr geöffnet	2 1377,18602 1302,18398
 Krumpuhler Weg	1 1405,18749 1390,18651
 Oelder Weg	1 1967,18743 1965,18686
+Steffenshagener Str.	1s 23159,11097 22983,11098
+Pestalozzistr.	1s:q3 24652,11794 24706,11838 24769,11819
 ######################################################################
 #
 # Potsdam
@@ -1057,6 +1059,7 @@ Allee der Kosmonauten: Straßenbahntrasse	3nocross 20944,14840 20980,14914 21163,
 Landsberger Allee: Mittelstreifen	3nocross 20260,15434 20525,15571 20641,15622
 Landsberger Allee: Mittelstreifen	3nocross 15256,14237 15430,14262 15838,14319
 Alt-Kaulsdorf: Mittelstreifen	3nocross 22484,11270 22756,11268 22937,11265
+Alt-Kaulsdorf: Mittelstreifen	3nocross 23101,11261 23362,11263 23447,11264 23648,11265
 Alt-Mahlsdorf: Mittelstreifen	3nocross 24175,11265 24019,11264 23848,11264 23648,11265
 Marienfelder Chaussee: Mittelstreifen	3nocross 11002,1211 11155,1273 11198,1291
 Mahlsdorfer Str.: Straßenbahntrasse	3nocross 22539,6258 22645,6431 22682,6495
@@ -1292,12 +1295,14 @@ Neuköllner Str.: Mittelstreifen	3nocross 16698,1392 16643,1460 16450,1691
 Neuköllner Str.: Mittelstreifen	3nocross 15980,2318 15804,2512 15736,2593
 Schorlemerallee: Mittelstreifen	3nocross 3306,6453 3347,6460 3459,6484
 Berliner Str.: Straßenbahntrasse	3nocross 12396,17514 12436,17682 12467,17814
+Daumstr.: Mittelstreifen	3nocross -1821,16327 -1816,16111 -1815,15976
 #
 ####################################################################
 #
 # Stellen, an denen getragen werden muß:
 # die Zahl hinter dem ":" entspricht ungefähr den verlorenen Sekunden
 # 
+tragen (20 Stufen)	0:30 -1887,16673
 tragen (ca. 10 Stufen)	0:15 -2196,20140
 tragen (ca. 60 Stufen)	0:100 28016,71
 #: by: Detlev Deter
@@ -1520,6 +1525,12 @@ tragen, langgezogene Stufen (13 Stufen)	0:25 20704,1383
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+Lichte Breite ca. 110cm	BNP:0 25218,12653
+#: note: kurios: Drängelgitter sind relativ hoch, so dass ein Fahrrad durchpasst vvv
+Drängelgitter am Restaurant Igel	BNP:3 -1659,18104
+Drängelgitter am Restaurant Igel	BNP:3 -1659,18076
+#: note ^^^
+Drängelgitter (lichte Breite ca. 110cm)	BNP:3::trailer=10 26116,12292
 Drängelgitter (lichte Breite ca. 100cm)	BNP:3::trailer=10 7565,1806
 Drängelgitter (lichte Breite ca. 100cm)	BNP:3::trailer=10 7783,2730
 Drängelgitter (lichte Breite ca. 100cm)	BNP:3::trailer=10 7837,2957
@@ -1769,9 +1780,16 @@ Tor	BNP:5 26888,13976
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
-#: last_checked: 2011-06-12
-#: next_check: 2012-02-01
+#: last_checked: 2011-06-26
+#: XXX hier muss noch der genaue Wegverlauf ermittelt werden
+Uferweg am Salzhof: ein Teilabschnitt ist noch nicht freigegeben	2:inwork -1942,16105 -1979,15994 -1923,15684
+# 
+#: last_checked: 2011-06-26 vvv
+#: next_check: 2011-12-31 vvv
 Tegeler Hafen: Weg über Insel gesperrt	2 1756,20405 1736,20441 1742,20464 1762,20505 1761,20539
+Tegeler Hafen: Weg gesperrt	2 1630,20731 1668,20670 1687,20645 1697,20623 1721,20603
+#: next_check: ^^^
+#: last_checked ^^^
 # 
 #: last_checked: 2011-05-26
 #: next_check: 2011-07-20

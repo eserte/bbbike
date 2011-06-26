@@ -415,8 +415,9 @@ Pankeweg: Fuﬂg‰nger	q1 8486,16425 8567,16429 8592,16406 8659,16494
 Pankeweg: Fuﬂg‰nger	q1 8759,16684 8776,16718 8836,16867 8904,17059 9027,17290 9131,17664 9084,17678 9143,17933
 Pankeweg: Fuﬂg‰nger	q1 8836,16867 8822,16873 8804,16881
 Pankeweg: Fuﬂg‰nger	q1 8721,16689 8804,16881 8866,17075
-Uferweg am Tegeler Hafen: Fuﬂg‰nger	q1 1259,20303 1523,20412 1572,20412 1617,20393 1655,20388 1756,20405 1858,20431 1861,20467 1826,20492 1761,20539
-(Tegeler Hafen - An der M¸hle): Fuﬂg‰nger, teilweise eng	q2 1756,20405 1736,20441 1742,20464 1762,20505 1761,20539 1721,20603 1697,20623 1687,20645 1668,20670 1630,20731
+Uferweg am Tegeler Hafen: Fuﬂg‰nger	q1 1259,20303 1349,20345 1534,20421 1572,20412 1617,20393 1655,20388 1756,20405 1858,20431 1861,20467 1826,20492 1761,20539
+(Berliner Str. - Tegeler Hafen): Fuﬂg‰nger	q1 1876,20684 1741,20571
+(Tegeler Hafen - An der M¸hle): Fuﬂg‰nger, teilweise eng	q2 1756,20405 1736,20441 1742,20464 1762,20505 1761,20539 1741,20571 1721,20603 1697,20623 1687,20645 1668,20670 1630,20731
 (Br¸cke ¸ber den Tegeler Flieﬂ): eng, Fuﬂg‰nger	q3 2361,21512 2336,21546
 Egidysteg: eng, Fuﬂg‰nger	q3 3124,22198 3134,22153
 (Egidysteg - M¸hlenfeldstr.): Fuﬂg‰nger	q1 3134,22292 3094,22233 3124,22198
@@ -472,7 +473,7 @@ Wuhlewanderweg: Fuﬂg‰nger	q1 22323,13533 22259,13508 22191,13414 22221,13027 221
 Wuhlewanderweg: Fuﬂg‰nger	q1 22242,11269 22244,11311 22073,11581 22009,11636 21886,11843 21914,12019 21936,12022
 Wuhlewanderweg: Fuﬂg‰nger	q1 22244,11311 22280,11284
 Wuhlewanderweg: enge Unterf¸hrung	q3 22280,11284 22271,11218
-Wuhlewanderweg: Fuﬂg‰nger	q1 22271,11218 22237,11215
+Wuhlewanderweg: Fuﬂg‰nger	q1 22271,11218 22236,11198
 Wuhlewanderweg: Fuﬂg‰nger	q1 22238,6195 22236,6233 22214,6271 22146,6338 22097,6414 22030,6600 22056,6613 21976,6848 21888,6944 21590,7211 21574,7244 21590,7414 21613,7521 21620,7647 21604,7715 21570,7751 21616,7863 21629,7921 21599,7904 21593,7934 21568,8052 21351,8259 21337,8273 21276,8374 21185,8483 21183,8731 21192,8839 21210,8883 21252,8928 21280,8954 21351,9066
 Wuhlewanderweg: Fuﬂg‰nger	q1 21385,9049 21468,9230 21524,9488 21587,9609 21633,9731 21678,9817 21686,9876
 Wuhlewanderweg: Fuﬂg‰nger	q1 21611,9893 21619,9993 21566,10222 21581,10329 21608,10403 21646,10510 21657,10519 21791,10623 21830,10679 21867,10733 21950,10776 22060,10778 22097,10812 22160,10834
@@ -560,7 +561,9 @@ Falkstr.: Fuﬂg‰nger	q1 12179,7979 12220,7822
 (Falkstr. - Mittelweg): gemeinsamer Fuﬂ- und Radweg	q1 12220,7822 12224,7799
 (Platanenweg - Willi-S‰nger-Str.): Fuﬂg‰nger	q1 15787,8073 15843,8125
 Carl-Herz-Ufer: gemeinsamer Fuﬂ- und Radweg	q0- 10066,10071 10168,10085
-M¸nsterberger Weg: gemeinsamer Fuﬂ- und Radweg	q1 23225,11649 23032,11729 22886,11776 22701,11843
+M¸nsterberger Weg: gemeinsamer Fuﬂ- und Radweg	q1 23225,11649 23032,11729
+#XXX del --- M¸nsterberger Weg: gemeinsamer Fuﬂ- und Radweg	q1 23032,11729 22999,11725 22886,11776
+M¸nsterberger Weg: gemeinsamer Fuﬂ- und Radweg	q1 22886,11776 22701,11843
 Dorfstr. - Wuhletal: steile Rampe oder 15 Stufen	q4 22112,11936 22104,11925
 Unterf¸hrung Wuhletal: Fuﬂg‰nger	q2 21970,12153 21984,12046 21936,12022
 Park Biesdorf: Fuﬂg‰nger	q1 21150,11925 21132,11943 21100,11960 20862,12027 20810,12031
@@ -942,9 +945,20 @@ Hilchenbacher Weg: Fuﬂg‰nger, eng	q2 2426,18544 2444,18487
 #: XXX_prog: BS
 Straﬂe 455: Bordstein	q2 4916,17201 4931,17174
 (Uferweg Plˆtzensee): Fuﬂg‰nger	q1- 5618,14981 5518,15236 5291,15424 5073,15619 5036,15615 5008,15592 5051,15508 5084,15415 5005,15213
-(Br¸cke ¸ber den Maselakekanal): Steigung	q2 -2152,17108 -2140,17171
+(Br¸cke ¸ber den Maselakekanal): Steigung 14%	q2 -2152,17108 -2140,17171 -2165,17176
 Kleingartenstr.: enge Straﬂe	q1 24118,4404 24075,4417 24022,4442 23978,4484
 Gladiolenstr.: enge Straﬂe	q1 23536,4543 23541,4439
+(Steffenshagener Str. - Lidl-Parkplatz): Fuﬂg‰nger	q1 22991,11133 22982,11157
+Hamsterstr.: eng, Fuﬂg‰nger	q2 23928,11620 23917,11600 23799,11646 23694,11678 23588,11720 23495,11753 23390,11792
+Wieselstr.: eng, Fuﬂg‰nger	q2 24068,11577 23954,11615 23940,11592
+(Lindenufer - Behnitz): Fuﬂg‰nger	q1 -2964,14478 -2926,14496 -2907,14534 -2922,14642 -2944,14652
+Tegelorter Promenade: Fuﬂg‰nger	q1 -1478,17889 -1604,17851 -1694,17839 -1686,17918 -1660,18035 -1659,18076
+Tegelorter Promenade: Fuﬂg‰nger	q1 -1659,18104 -1660,18114 -1661,18132 -1717,18237 -1750,18278 -1834,18414 -1857,18506 -2064,18667
+(Uferweg am Tegeler See): Fuﬂg‰nger, Restaurantbetrieb	q1- -1197,17860 -1102,17869 -1085,17878 -997,18069 -984,18136 -934,18284 -930,18337
+(Uferweg am Tegeler See): Fuﬂg‰nger	q1 72,19790 119,19931 167,19978 193,20024 209,20083 226,20116 222,20175 248,20233 324,20350 430,20338
+(Uferweg Eiswerder): Fuﬂg‰nger	q1 -2038,15683 -2094,15663 -2138,15622 -2163,15571 -2177,15511 -2325,15431 -2431,15436 -2465,15471 -2454,15472 -2453,15476
+Kleine Eiswerderbr¸cke: enge Stelle, Gegenverkehr hat Vorrang	q1; -1978,15684 -2038,15683
+Gˆtzkeweg: eng durch parkende Autos	q1 27319,13589 27414,13508
 ######################### User Contributions #################################
 #: by: Michael Kiekbusch
 #: corrected_by: srt/policy (q4 -> q3-)
@@ -1041,7 +1055,7 @@ Lothar-Bucher-Str.: enge Straﬂe	q1 5598,6136 5664,6082 5748,6051 5845,6049 6008,
 #: by: ^^^
 # 
 #: by: Thomas Heuving
-(Uferweg): kurvenreich, ausreichende Breite	q1 -431,17169 -384,17155 -280,17229 -266,17335 -215,17385 -141,17377 61,17495 110,17489 151,17537 187,17663 235,17704 260,17788 258,17880 381,18186 416,18386 448,18476 496,18514 586,18540 680,18631 757,18673 768,18742 970,18919 1006,18972 1122,19036 1189,19018 1200,18969 1369,18958 1457,18969 1490,18950
+(Uferweg): kurvenreich, ausreichende Breite	q1 -431,17169 -389,17168 -305,17249 -304,17280 -252,17325 -155,17409 61,17495 117,17549 144,17638 209,17735 225,17815 234,17930 320,18117 372,18411 413,18500 465,18533 534,18553 616,18640 710,18727 714,18758 897,18943 1002,19014 1122,19036 1165,19009 1200,18969 1404,18974 1426,18973 1447,18933
 #: by: anonymous:
 Gustav-Zahnke-Str.: enge Straﬂe	q1 14428,13596 14408,13513 14331,13537
 #: by: Stefan Schirra:
@@ -1158,7 +1172,7 @@ Konradinstr.: eng	q1 8575,5202 8557,5226 8674,5357 8865,5468 8870,5557
 (Weg entlang der S-Bahn zwischen Zehlendorf und Dahlemer Weg): Fuﬂg‰nger	q1 821,2714 1017,2823 1126,2885 1262,2975
 (Weg entlang der S-Bahn zwischen Zehlendorf und Dahlemer Weg): Fuﬂg‰nger	q1 1453,3085 1659,3226 1687,3244 1715,3257 1977,3414 2271,3571
 #: by: Carroll Haak:
-Uferpromenade: Absperrung am Restaurant, Fuﬂg‰nger	q3 -1694,17839 -1686,17918 -1660,18035
+Uferpromenade: Restaurantbetrieb	q3 -1659,18104 -1659,18076
 #: by: Gabi Sieber:
 Bruno-Bauer-Str.: Bordsteine, Gehweg	q2 12893,6527 12902,6495 12921,6424
 #: by: Will Gibson:
@@ -1402,9 +1416,16 @@ Ziegelhof: Fuﬂg‰nger	q3 -3789,13519 -3685,13504
 (Neuenburger Str. - Lindenstr.): Fuﬂg‰nger	q2 9853,10543 9848,10526 9795,10512
 Fanny-Hensel-Weg: spielende Kinder, Pf‰hle	q3 8781,10827 8742,10868 8659,10910
 Else-Ury-Bogen: Fuﬂg‰nger	q3 4817,10943 4714,10950
-#: by: Freddy [AM] (Fuﬂg‰nger)
+#: by: Freddy [AM] (Fuﬂg‰nger) vvv
 #: by: rjoop [SRT] (eng, aber eigentlich nur das westliche St¸ck)
-Bootshausweg: Fuﬂg‰nger, eng	q2 -1073,16610 -1067,16635 -1092,16659 -1156,16689 -1190,16714 -1214,16745 -1229,16773 -1406,16907 -1465,16957 -1520,16989 -1564,17001 -1610,17007 -1664,17009 -1743,16990 -1723,16973 -1690,16971 -1676,16957 -1673,16939 -1725,16878 -1704,16870 -1684,16853 -1675,16813
+#: confirmed_by: srt
+Bootshausweg: Fuﬂg‰nger	q1 -1073,16610 -1067,16635 -1092,16659 -1156,16689 -1190,16714 -1214,16745 -1229,16773
+#: confirmed_by: srt (eng!)
+#: XXX_prog: f¸r Anh‰nger nicht geeignet!
+Bootshausweg: Fuﬂg‰nger, teilweise sehr eng, nicht f¸r Anh‰nger geeignet	q2- -1229,16773 -1406,16907 -1465,16957
+#: confirmed_by: srt
+Bootshausweg: Fuﬂg‰nger	q1 -1465,16957 -1520,16989 -1564,17001 -1610,17007 -1664,17009 -1743,16990 -1723,16973 -1690,16971 -1676,16957 -1673,16939 -1688,16862 -1675,16813
+#: by: ^^^
 # XXX del: not confirmed by me : by: Karin Millonig: Rufacher Weg: enge Straﬂe	q2 12207,1704 12179,1758 12160,1817 12255,2058 12286,2065 12582,2129 12738,2162
 #: by: Benno Koch [AM]
 #: corrected_by: srt (q4 -> q2) (common sense!)
@@ -1569,7 +1590,8 @@ Cecilienstr. (Lankwitz): enge Straﬂe	q2 5933,2859 6002,2723
 #: by: Holtermann, Olaf:
 Greveweg: enge Straﬂe	q1 8276,5601 8279,5794
 #: by: Klaus Arndt:
-Hobeckweg: enge Straﬂe	q1 27190,13327 27414,13508 27530,13627 27556,13641
+#: corrected_by: srt (q1 -> q0-)
+Hobeckweg: enge Straﬂe	q0- 27190,13327 27414,13508 27530,13627 27556,13641
 # 
 #: by: Lutz Pallmann:
 #: corrected_by: srt (q1 -> q0-)
@@ -1916,7 +1938,8 @@ Schneegansweg: enge Straﬂe	q1 -786,22110 -762,22216 -725,22355
 #: corrected_by: srt/policy (q4 -> q1)
 Flotowstr. (Lichterfelde): enge Straﬂe	q1 4515,4581 4651,4638
 #: by: Eckart Seher ("weniger als 4m breit")
-Pfalzgrafenweg: enge Straﬂe	q1 25594,11939 25827,11867
+#: corrected_by: srt/policy (q1 -> q0-)
+Pfalzgrafenweg: enge Straﬂe	q0- 25594,11939 25827,11867
 #: by: Mathias Vogt:
 #: corrected_by: srt/policy (q2 -> q1)
 Spachtelweg: enge Straﬂe	q1 5900,20487 5970,20353
@@ -1932,7 +1955,7 @@ Waldstr.: Bodenschwellen vor der Schule	q2 20540,4285 20623,4227
 Janitzkystr.: Siedlung, eng	q1 22763,6398 22889,6428 23002,6428 23027,6425 23131,6398 23192,6362 23242,6308
 Kaiser-Wilhelm-Str. - Langkofelweg: Fuﬂg‰nger	q2 6957,3699 6998,3596
 #: by: Franziska (ushuaia): vvv
-(Uferweg im Wrˆhm‰nnerpark): Fuﬂg‰nger, f¸r Radfahrer nicht freigegeben, ggfs. schieben	q3 -3066,14718 -3006,14774 -2992,14850 -3008,14910 -3008,14992 -2965,15053 -2929,15082 -2955,15129
+(Uferweg im Wrˆhm‰nnerpark): Fuﬂg‰nger, f¸r Radfahrer nicht freigegeben, ggfs. schieben	q3 -3066,14718 -3030,14844 -2998,14879 -3008,14910 -3008,14992 -2965,15053 -2929,15082 -2955,15129
 #: note: "ruhige Wohnstraﬂe, mehr oder weniger einspurig"
 Sch¸tzenstr. (Spandau): enge Straﬂe	q1 -2869,15782 -2859,15785 -2821,15850 -2638,16026 -2624,16049
 #: note: einspurige Straﬂe, auf der auch Autos parken kˆnnen
@@ -2329,8 +2352,7 @@ Theaterplatz: Fuﬂg‰nger	q1 24968,15307 25086,15298
 Lil-Dagover-Gasse: Fuﬂg‰ngerzone	q4 23960,15021 23871,14914
 #: by: ^^^
 # 
-#: by: anonymous:
-Ferdinandstr. (Kaulsdorf): enge Straﬂe	q1 23403,11841 23215,11852 22947,11840
+#XXX del --- #: by: anonymous: --- Ferdinandstr. (Kaulsdorf): enge Straﬂe	q1 23403,11841 23215,11852 22947,11840
 #: by: anonymous:
 #: corrected_by: srt/policy (q3 -> q1)
 Erbsenpfad: enge Straﬂe	q1 -7872,14409 -7850,14555

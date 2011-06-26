@@ -211,11 +211,18 @@ Kreisverkehr	Roundabout -4229,-463
 #: by: rj:
 Kreisverkehr	Roundabout 68016,72528
 Kreisverkehr	Roundabout 21481,30539
+Kreisverkehr	Roundabout 25964,11310
+Kreisverkehr	Roundabout 24530,12296
 #: XXX_prog ^^^
 #: section ^^^
 #
 ######################################################################
 # cul-de-sac
+#
+# Eine Sackgasse ist hier aufgeführt, wenn die Weiterfahrt für alle
+# nicht möglich ist (als "culdesac") sowie wenn die Weiterfahrt für
+# den *Kfz-Verkehr* nicht möglich ist (als "culdesac_pseudo").
+# 
 #
 # Noch nicht ganz klar, was mit diesen Daten gemacht werden soll.
 # Zum einen kann überprüft werden, ob eine Sackgasse tatsächlich eine
@@ -556,6 +563,24 @@ Zugang zum Bad	culdesac_pseudo 7344,13435
 	culdesac 5573,4851
 	culdesac 5989,22006
 	culdesac 19262,7567
+	culdesac 25544,12294
+	culdesac 25468,12211
+	culdesac_pseudo 26110,12293
+	culdesac_pseudo 25956,12047
+	culdesac_pseudo 25882,11852
+	culdesac_pseudo 22991,11133
+	culdesac 23389,11390
+	culdesac 23596,11740
+	culdesac 26696,12924
+	culdesac 25979,12647
+	culdesac 26111,12644
+	culdesac 26152,12822
+	culdesac 26217,12885
+	culdesac 26259,12949
+	culdesac 26290,13006
+	culdesac_pseudo 25730,13130
+	culdesac_pseudo 25817,13235
+	culdesac 24640,13149
 #: section ^^^
 ######################################################################
 # busroute
@@ -985,4 +1010,6 @@ Straße 367: Privatstraße, 10 km/h	CS -3256,22134 -3281,22011 -3281,21894
 Straße 368: Privatstraße, 10 km/h	CS -3310,21892 -3281,21894 -3240,21896
 Adelheidallee: Privat, kein öffentlicher Zugang	CS 1687,20782 1527,20840
 #: by: Roland Krause
-(Hauffallee - Blankenburger Pflasterweg): nicht Ausgeschildert	CS 14288,19459 14328,19527 14372,19666 14354,19858
+(Hauffallee - Blankenburger Pflasterweg): nicht ausgeschildert	CS 14288,19459 14328,19527 14372,19666 14354,19858
+Steffenshagener Str.: Privatstraße	CS 22983,11098 23159,11097
+Münsterberger Weg: nicht ausgeschildert	CP2; 24029,11363 24173,11328

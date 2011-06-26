@@ -1045,16 +1045,7 @@ userdel	2 16975,1262 16849,1437
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_005931',
-         'until' => 1309039200,
-         'text' => 'Mehringdamm (Kreuzberg) in Richtung Tempelhof, zwischen Kreuzbergstr. und Dudenstr. Veranstaltung (Seifenkistenrennen am 25. Juni 2011), Fahrtrichtung gesperrt',
-         'from' => 1308866400,
-         'id' => 1050,
-         'data' => 'userdel	1::temp 9248,9350 9225,9111 9224,9053 9225,9038 9227,8890 9229,8785
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2536,62 +2527,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        undef,
-       {
-         'until' => 1309039140,
-         'text' => 'CSD am 25.6.2011',
-         'from' => 1308866400,
-         'id' => 2083,
-         'data' => 'userdel	2::temp 8731,12270 8610,12254 8538,12245 8546,12279 8570,12302
-userdel	2::temp 6851,10416 7033,10396 7033,10328 6971,10346 6937,10363 6851,10416 6753,10446 6636,10492 6532,10529 6468,10550 6353,10583 6223,10634 6133,10679 6025,10746 5942,10803 5782,10884 5725,10892 5656,10876 5484,10810 5351,10760
-userdel	2::temp 8600,12165 8538,12245 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 6828,12031 6809,11979 6744,11936 6778,11742 6809,11570 6825,11486 6851,11346 6880,11110 6882,11061 6873,11011 6824,10904 6918,10854 6972,10665 6985,10597 7003,10513 7033,10396
-userdel	2::temp 6828,12031 6787,12099 6754,12108 6725,12113 6690,12104 6653,12067 6642,12010 6685,11954 6744,11936
-userdel auto	3 6540,11754 6778,11742 7073,11798
-userdel auto	3 6681,10959 6824,10904 6740,10755
-userdel auto	3 6980,11583 6809,11570 6524,11583
-userdel auto	3 8048,12135 8055,12186 8119,12414
-userdel auto	3 5479,10719 5484,10810 5494,10973
-userdel auto	3 7115,11220 6880,11110 6841,11114
-userdel auto	3 6740,10755 6818,10725 6972,10665 7115,10612
-userdel auto	3 6740,10755 6824,10904 6681,10959
-userdel auto	3 6732,11106 6873,11011 7002,11034
-userdel auto	3 6250,10701 6223,10634 6192,10542
-userdel auto	3 7060,10221 7033,10328 7131,10331
-userdel auto	3 6131,10939 6025,10746 5877,10486
-userdel auto	3 6524,11583 6809,11570 6980,11583
-userdel auto	3 6192,10542 6223,10634 6250,10701
-userdel auto	3 8522,12239 8538,12245 8522,12187
-userdel auto	3 7103,11247 6851,11346 6692,11365
-userdel auto	3 6719,10347 6753,10446 6745,10619
-userdel auto	3 6573,11943 6642,12010 5900,11913
-userdel auto	3 5900,11913 6642,12010 6573,11943
-userdel auto	3 6692,11365 6851,11346 7103,11247
-userdel auto	3 5681,10696 5782,10884 5829,10964
-userdel auto	3 7875,12363 7816,12150 7827,12105
-userdel auto	3 7039,12314 7383,12095 7460,12054
-userdel auto	3 6302,10462 6353,10583 6380,10704
-userdel auto	3 7073,11798 6778,11742 6540,11754
-userdel auto	3 6745,10619 6753,10446 6719,10347
-userdel auto	3 6685,10690 6532,10529 6494,10440
-userdel auto	3 8119,12414 8055,12186 8048,12135
-userdel auto	3 8522,12187 8538,12245 8522,12239
-userdel auto	3 7115,10612 6972,10665 6818,10725 6740,10755
-userdel auto	3 6841,11114 6880,11110 7115,11220
-userdel auto	3 7827,12105 7816,12150 7875,12363
-userdel auto	3 6380,10704 6353,10583 6302,10462
-userdel auto	3 7171,11510 6825,11486 6716,11439
-userdel auto	3 6494,10440 6532,10529 6685,10690
-userdel auto	3 7460,12054 7383,12095 7039,12314
-userdel auto	3 7002,11034 6873,11011 6732,11106
-userdel auto	3 5877,10486 6025,10746 6131,10939
-userdel auto	3 5494,10973 5484,10810 5479,10719
-userdel auto	3 5829,10964 5782,10884 5681,10696
-userdel auto	3 7131,10331 7033,10396 7245,10499
-userdel auto	3 7131,10331 7033,10328 7060,10221
-userdel auto	3 6716,11439 6825,11486 7171,11510
-userdel auto	3 7245,10499 7033,10396 7131,10331
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3018,16 +2954,7 @@ userdel	q4::inwork; 10264,12826 10166,12777 10132,12941
          'type' => 'handicap'
        },
        undef,
-       {
-         'source_id' => '116100612',
-         'until' => 1308981600,
-         'text' => 'Lübben (Spreewald): B115: Gleisbauarbeiten OL Lübben, Bahnübergang, 20.06.2011 06:00 Uhr bis 25.06.2011 08:00 Uhr',
-         'from' => 1308456000,
-         'id' => 2226,
-         'data' => 'userdel	2::inwork 40079,-50702 43031,-50423 43540,-50369
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'source_id' => '116400693',
@@ -3059,17 +2986,7 @@ userdel	q4::inwork; 10264,12826 10166,12777 10132,12941
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_017472',
-         'until' => 1308974400,
-         'text' => 'John-Foster-Dulles-Allee (Tiergarten): Sportveranstaltung, Straße vollständig gesperrt (bis 25.06., 06:00) in beiden Richtungen, 21.06.2011 20:00 Uhr bis 25.06.2011 06:00 Uhr ',
-         'from' => 1308592800,
-         'id' => 2231,
-         'data' => 'userdel	q4::temp 7215,12295 7437,12368
-userdel	q4::temp 7875,12363 7821,12367 7627,12380 7514,12387
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'IM_017476',
          'until' => 1311343200,
@@ -3080,23 +2997,35 @@ userdel	q4::temp 7875,12363 7821,12367 7627,12380 7514,12387
 ',
          'type' => 'handicap'
        },
+       undef,
+       undef,
        {
-         'source_id' => 'IM_017504',
-         'until' => 1309104000,
-         'text' => 'Südostallee (Treptow) in beiden Richtungen zwischen Kiefholzstr. und Baumschulenstr., Veranstaltung, Straße vollständig gesperrt (26.06.2011 06 Uhr bis 18:00 Uhr)',
-         'from' => 1308974400,
-         'id' => 2233,
-         'data' => 'userdel	q4::temp 16044,6120 16116,6080 16510,5917 16861,5935
+         'source_id' => 'http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20110623.1015.348936.html',
+         'until' => 1312164000,
+         'text' => 'Sperrung des Bahnüberganges in der Lemkestraße: 29.07.2011 22:00 Uhr bis 01.08.2011 04:00 Uhr',
+         'from' => 1311883200,
+         'id' => 2235,
+         'data' => 'userdel	2::inwork 25149,12266 25109,12196 25072,12107
 ',
-         'type' => 'handicap'
+         'type' => 'gesperrt'
        },
        {
-         'source_id' => 'IM_017503',
-         'until' => 1309093200,
-         'text' => 'Unter den Linden (Mitte) in beiden Richtungen zwischen Friedrichstr. und Oberwallstr./Hinter dem Gießhaus, Veranstaltung, Straße vollständig gesperrt (26.06.2011 10:00 bis 15:00) ',
-         'from' => 1308988800,
-         'id' => 2234,
-         'data' => 'userdel	2::temp 9852,12409 9780,12401 9771,12400 9679,12388 9601,12380 9475,12365 9358,12351
+         'source_id' => 'http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20110623.1015.348936.html',
+         'until' => 1314583200,
+         'text' => 'Sperrung des Bahnüberganges in der Lemkestraße: 26.08.2011 22:00 Uhr bis 29.08.2011 04:00 Uhr',
+         'from' => 1314302400,
+         'id' => 2236,
+         'data' => 'userdel	2::inwork 25149,12266 25109,12196 25072,12107
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20110623.1015.348936.html',
+         'until' => 1315188000,
+         'text' => 'Sperrung des Bahnüberganges in der Lemkestraße: 02.09.2011 22:00 Uhr bis 05.09.2011 04:00 Uhr',
+         'from' => 1314907200,
+         'id' => 2237,
+         'data' => 'userdel	2::inwork 25149,12266 25109,12196 25072,12107
 ',
          'type' => 'gesperrt'
        }

@@ -8929,7 +8929,7 @@ EOF
        text  => 'L 339 Neuer Hönower Weg Bahnübergang in der OD Birkenstein Erneuerung Bahnübergang halbseitig gesperrt; Einbahnstraße 16.07.2007-31.08.2007 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 27067,12608 27094,12535 27117,12466
+userdel	q4::inwork 27067,12608 27094,12535 27101,12515 27117,12466
 EOF
      },
      { from  => 1183412527, # 2007-07-02 23:42
@@ -18616,7 +18616,7 @@ EOF
        text  => 'Bauarbeiten in der Donizettistraße zwischen Mozart- und Schubertstraße, 23.11.2010-7.12.2010',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 25167,12119 25290,12088
+userdel	q4::inwork 25161,12128 25286,12094
 EOF
      },
      { from  => 1290803792, # 2010-11-26 21:36
@@ -19240,6 +19240,33 @@ EOF
        source_id => 'IM_017503',
        data  => <<EOF,
 userdel	2::temp 9852,12409 9780,12401 9771,12400 9679,12388 9601,12380 9475,12365 9358,12351
+EOF
+     },
+     { from  => 1311883200, # 2011-07-28 22:00
+       until => 1312164000, # 2011-08-01 04:00
+       text  => 'Sperrung des Bahnüberganges in der Lemkestraße: 29.07.2011 22:00 Uhr bis 01.08.2011 04:00 Uhr',
+       type  => 'gesperrt',
+       source_id => 'http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20110623.1015.348936.html',
+       data  => <<EOF,
+userdel	2::inwork 25149,12266 25109,12196 25072,12107
+EOF
+     },
+     { from  => 1314302400, # 2011-08-25 22:00
+       until => 1314583200, # 2011-08-29 04:00
+       text  => 'Sperrung des Bahnüberganges in der Lemkestraße: 26.08.2011 22:00 Uhr bis 29.08.2011 04:00 Uhr',
+       type  => 'gesperrt',
+       source_id => 'http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20110623.1015.348936.html',
+       data  => <<EOF,
+userdel	2::inwork 25149,12266 25109,12196 25072,12107
+EOF
+     },
+     { from  => 1314907200, # 2011-09-01 22:00
+       until => 1315188000, # 2011-09-05 04:00
+       text  => 'Sperrung des Bahnüberganges in der Lemkestraße: 02.09.2011 22:00 Uhr bis 05.09.2011 04:00 Uhr',
+       type  => 'gesperrt',
+       source_id => 'http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20110623.1015.348936.html',
+       data  => <<EOF,
+userdel	2::inwork 25149,12266 25109,12196 25072,12107
 EOF
      },
     );

@@ -255,7 +255,7 @@ Mudrackzeile	1 6985,17812 7020,17690
 Gustav-Müller-Str.	1 7643,8634 7642,8815
 Gustav-Müller-Platz	1 7644,8560 7614,8599 7643,8634 7682,8598 7644,8560
 Niederlagstr.	1 9972,12184 9961,12273 9943,12364 9934,12418
-Kolk/Behnitz/Möllentordamm	1 -3042,14682 -3028,14640 -2951,14617 -2942,14666 -3027,14689 -3042,14682
+Kolk/Behnitz/Möllentordamm	1 -3042,14682 -3028,14640 -2951,14617 -2944,14652 -2942,14666 -3027,14689 -3042,14682
 Hertelstr.	1 4893,6900 4787,6899
 Karl-Marx-Platz	1 12980,7597 13100,7626
 Karl-Marx-Platz	1 13100,7626 12991,7549
@@ -629,6 +629,8 @@ Bernauer Str.	1s 2643,18738 2731,18729 2867,18736
 Krumpuhler Weg: nur Mo-Do von 8-16 Uhr und Fr von 8-14 Uhr geöffnet	2 1377,18602 1302,18398
 Krumpuhler Weg	1 1405,18749 1390,18651
 Oelder Weg	1 1967,18743 1965,18686
+Steffenshagener Str.	1s 23159,11097 22983,11098
+Pestalozzistr.	1s 24652,11794 24706,11838 24769,11819
 Am Neuen Garten	1 -12166,1384 -12212,1201 -12276,831 -12302,718
 Am Neuen Garten	1 -12332,585 -12582,127
 Hochstraße	3nocross::ignrte -11399,-1339 -11461,-1424 -11540,-1543
@@ -899,7 +901,16 @@ Landsberger Allee -> Mittelstr./Altenhofer Str.: Mittelstreifen	3::igndisp 15256
 Mittelstreifen	3nocross::ignrte 22484,11270 22756,11268 22937,11265
 Adolfstr. -> Alt-Kaulsdorf: Mittelstreifen	3::igndisp 22751,11381 22756,11268 22937,11265
 Alt-Kaulsdorf -> Adolfstr.: Mittelstreifen	3::igndisp 22484,11270 22756,11268 22751,11381
+Mittelstreifen	3nocross::ignrte 23101,11261 23362,11263 23447,11264 23648,11265
+Alt-Kaulsdorf -> Alt-Kaulsdorf [Nebenfahrbahn]: Mittelstreifen	3::igndisp 23101,11261 23362,11263 23382,11279
+Alt-Kaulsdorf [Nebenfahrbahn] -> Alt-Kaulsdorf: Mittelstreifen	3::igndisp 23382,11279 23362,11263 23447,11264
+Alt-Kaulsdorf -> Finkenwalder Weg: Mittelstreifen	3::igndisp 23362,11263 23447,11264 23449,11281
+Finkenwalder Weg -> Alt-Kaulsdorf: Mittelstreifen	3::igndisp 23449,11281 23447,11264 23648,11265
 Mittelstreifen	3nocross::ignrte 24175,11265 24019,11264 23848,11264 23648,11265
+Gielsdorfer Str. -> Alt-Mahlsdorf: Mittelstreifen	3::igndisp 24019,11286 24019,11264 24175,11265
+Alt-Mahlsdorf -> Gielsdorfer Str.: Mittelstreifen	3::igndisp 23848,11264 24019,11264 24019,11286
+Alt-Mahlsdorf -> Frettchenweg: Mittelstreifen	3::igndisp 23648,11265 23848,11264 23853,11284
+Frettchenweg -> Alt-Mahlsdorf: Mittelstreifen	3::igndisp 23853,11284 23848,11264 24019,11264
 Mittelstreifen	3nocross::ignrte 11002,1211 11155,1273 11198,1291
 Muschelkalkweg -> Marienfelder Chaussee: Mittelstreifen	3::igndisp 11120,1384 11155,1273 11198,1291
 Marienfelder Chaussee -> Muschelkalkweg: Mittelstreifen	3::igndisp 11002,1211 11155,1273 11120,1384
@@ -1010,11 +1021,11 @@ Sterndamm -> Staudenweg: Straßenbahntrasse	3::igndisp 17542,4772 17601,5090 1749
 Pietschkerstr. -> Staudenweg: Straßenbahntrasse	3::igndisp 17652,5082 17601,5090 17493,5112
 Pietschkerstr. -> Sterndamm: Straßenbahntrasse	3::igndisp 17652,5082 17601,5090 17542,4772
 unbequemes Passieren des Mittelstreifens	3nocross::ignrte 21960,11269 22242,11269 22326,11266
-Möwenweg -> Alt-Biesdorf: unbequemes Passieren des Mittelstreifens	3::igndisp 22237,11215 22242,11269 21960,11269
-Möwenweg -> Wuhlewanderweg: unbequemes Passieren des Mittelstreifens	3::igndisp 22237,11215 22242,11269 22244,11311
 Alt-Biesdorf -> Wuhlewanderweg: unbequemes Passieren des Mittelstreifens	3::igndisp 21960,11269 22242,11269 22244,11311
-Alt-Biesdorf -> Möwenweg: unbequemes Passieren des Mittelstreifens	3::igndisp 22326,11266 22242,11269 22237,11215
-Wuhlewanderweg -> Möwenweg: unbequemes Passieren des Mittelstreifens	3::igndisp 22244,11311 22242,11269 22237,11215
+Möwenweg -> Alt-Biesdorf: unbequemes Passieren des Mittelstreifens	3::igndisp 22238,11223 22242,11269 21960,11269
+Möwenweg -> Wuhlewanderweg: unbequemes Passieren des Mittelstreifens	3::igndisp 22238,11223 22242,11269 22244,11311
+Alt-Biesdorf -> Möwenweg: unbequemes Passieren des Mittelstreifens	3::igndisp 22326,11266 22242,11269 22238,11223
+Wuhlewanderweg -> Möwenweg: unbequemes Passieren des Mittelstreifens	3::igndisp 22244,11311 22242,11269 22238,11223
 Wuhlewanderweg -> Alt-Biesdorf: unbequemes Passieren des Mittelstreifens	3::igndisp 22244,11311 22242,11269 22326,11266
 wegen Absperrgitter nicht überquerbar	3nocross::ignrte 16961,16042 16917,16001 16819,15912
 Große-Leege-Str. -> Konrad-Wolf-Str.: wegen Absperrgitter nicht überquerbar	3::igndisp 16922,15977 16917,16001 16819,15912
@@ -1690,6 +1701,10 @@ Albrecht-Thaer-Weg -> Schorlemerallee: Mittelstreifen	3::igndisp 3449,6863 3347,
 Straßenbahntrasse	3nocross::ignrte 12396,17514 12436,17682 12467,17814
 Str. 56 -> Berliner Str.: Straßenbahntrasse	3::igndisp 12587,17603 12436,17682 12396,17514
 Berliner Str. -> Str. 56: Straßenbahntrasse	3::igndisp 12467,17814 12436,17682 12587,17603
+Mittelstreifen	3nocross::ignrte -1821,16327 -1816,16111 -1815,15976
+Uferweg -> Daumstr.: Mittelstreifen	3::igndisp -1942,16105 -1816,16111 -1821,16327
+Daumstr. -> Uferweg: Mittelstreifen	3::igndisp -1815,15976 -1816,16111 -1942,16105
+tragen (20 Stufen)	0:30:-75 -1887,16673
 tragen (ca. 10 Stufen)	0:15:-83 -2196,20140
 tragen (ca. 60 Stufen)	0:100:-55 28016,71
 tragen	0:180:-218 6376,23358
@@ -1850,6 +1865,10 @@ tragen (Treppe, ca. 20 Stufen)	0:25:-108 19163,14981
 tragen (Treppe, ca. 20 Stufen)	0:25:-12 19160,14935
 tragen (Treppe)	0:30:70 89344,-5795
 tragen, langgezogene Stufen (13 Stufen)	0:25:-168 20704,1383
+Lichte Breite ca. 110cm	BNP:0:-74 25218,12653
+Drängelgitter am Restaurant Igel	BNP:3:-180 -1659,18104
+Drängelgitter am Restaurant Igel	BNP:3:-178 -1659,18076
+Drängelgitter (lichte Breite ca. 110cm)	BNP:3:-80:trailer=10 26116,12292
 Drängelgitter (lichte Breite ca. 100cm)	BNP:3:-163:trailer=10 7565,1806
 Drängelgitter (lichte Breite ca. 100cm)	BNP:3:-153:trailer=10 7783,2730
 Drängelgitter (lichte Breite ca. 100cm)	BNP:3:-82:trailer=10 7837,2957
@@ -1915,7 +1934,7 @@ Schwingtor	BNP:5:28:trailer=10 7283,8265
 Schranke, sehr enge Durchfahrt, nicht anhängertauglich	BNP:5:-135:trailer=no 14658,7513
 Schranke	BNP:3:51 8828,13434
 Drängelgitter an der Straßenbahntrasse	BNP:6:-154 14998,13623
-Drängelgitter	BNP:3:-73 25909,11844
+Drängelgitter	BNP:3:-74 25909,11844
 Schranke	BNP:3:-90 -3646,15717
 Drängelgitter am Bahnübergang	BNP:3:-21 11612,5253
 Schranke	BNP:0:-81 9265,6361
@@ -2023,7 +2042,9 @@ Schranke (lichte Breite ca. 120cm)	BNP:2:-50:trailer=8 14448,4501
 Schranke (lichte Breite ca. 120cm)	BNP:2:-53:trailer=8 14709,4307
 Schranke (lichte Breite ca. 100cm)	BNP:3:-45:trailer=10 15179,3901
 Tor	BNP:5:-57 26888,13976
+Uferweg am Salzhof: ein Teilabschnitt ist noch nicht freigegeben	2:inwork -1942,16105 -1979,15994 -1923,15684
 Tegeler Hafen: Weg über Insel gesperrt	2 1756,20405 1736,20441 1742,20464 1762,20505 1761,20539
+Tegeler Hafen: Weg gesperrt	2 1630,20731 1668,20670 1687,20645 1697,20623 1721,20603
 Beuthstr.: Bauarbeiten für Anbindung der Axel-Springer-Str. zum Spittelmarkt	2:inwork 10229,11618 10197,11605 10166,11592
 Hüttenweg: Sperrung wegen Bau an der Autobahn, wahrscheinlich bis 2012	2:inwork -739,6838 -927,6888
 Helga-Hahnemann-Str.: gesperrt	2:inwork 9415,13315 9385,13174
