@@ -17,7 +17,7 @@ use FindBin;
 
 use Archive::Zip qw(:ERROR_CODES :CONSTANTS);
 use Cwd qw(realpath);
-use File::Temp qw(tempdir);
+use File::Temp qw(tempfile);
 use Getopt::Long;
 
 sub save_pwd (&);
@@ -29,34 +29,36 @@ my $patch_exe = "C:/cygwin/bin/patch.exe";
 -x $patch_exe
     or die "Need cygwin's patch program";
 
-my $strawberry_dest;
-GetOptions("destdir=s" => \$strawberry_dest,
+my $strawberry_dir;
+my $bbbikedist_dir;
+GetOptions("strawberrydir=s" => \$strawberry_dir,
+	   "bbbikedistdir=s" => \$bbbikedist_dir,
 	  )
     or usage();
+$strawberry_dir or usage();
+$bbbikedist_dir or usage();
 
-# XXX configurable? or autodetect using $zipfile?
+# XXX configurable? or autodetect strawberry version according to supplied $zipfile name?
 my $patchdir = realpath("$FindBin::RealBin/patches/strawberry-perl-5.12.3.0");
 die "No patch directory found" if !$patchdir || !-d $patchdir; # XXX maybe some day there won't be any patches necessary
 
-if (!$strawberry_dest) {
+if (!-d $strawberry_dir) {
+    mkdir $strawberry_dir
+	or die "Can't create $strawberry_dir: $!";
     my $zipfile = shift
 	or usage();
     my $zip = Archive::Zip->new;
     $zip->read($zipfile) == AZ_OK
 	or die "Error reading $zipfile";
 
-    $strawberry_dest = tempdir("strawberry-XXXXXXXX",
-			       DIR => $ENV{HOME},
-			      )
-	or die "Can't create temporary directory";
-    chdir $strawberry_dest or die $!;
+    chdir $strawberry_dir or die $!;
     print STDERR "Extracting zip file...\n";
     $zip->extractTree == AZ_OK
 	or die "Error extracting tree";
 } else {
-    chdir $strawberry_dest or die $!;
+    chdir $strawberry_dir or die $!;
     -d "perl"
-	or die "ERROR: no 'perl' directory found, maybe Strawberry Perl is not yet extracted in $strawberry_dest?";
+	or die "ERROR: no 'perl' directory found, maybe Strawberry Perl is not yet extracted in $strawberry_dir?";
 }
 
 print STDERR "Patch files...\n";
@@ -82,16 +84,39 @@ my @mods = qw(
 		 Win32::Shortcut
 		 XML::Twig
 	    );
-system("$strawberry_dest/perl/bin/cpan.bat", @mods);
+system("$strawberry_dir/perl/bin/cpan.bat", @mods);
 
-# XXX nyi: now copy distribution to new final directory,
-# excluding some files/filesets
+my($tmpfh,$tmpfile) = tempfile(SUFFIX => ".lst", UNLINK => 1)
+    or die $!;
+save_pwd {
+    print STDERR "Creating filelist for strawberry perl distribution...\n";
+    chdir $strawberry_dir or die $!;
+    open my $fh, qq{find2perl . -type f | $^X |} or die $!;
+    while (<$fh>) {
+	s{^..}{};
+	print $tmpfh $_;
+    }
+    close $fh or die $!;
+};
+close $tmpfh
+    or die $!;
 
-print STDERR "NOTE: new distribution is in $strawberry_dest.\n";
+print STDERR "Copying strawberry perl to $bbbikedist_dir...\n";
+system($^X, "$FindBin::RealBin/strawberry-include-exclude.pl",
+       "-doit", "-v",
+       "-src", $strawberry_dir,
+       "-dest", $bbbikedist_dir,
+       $tmpfile,
+      );
+
+print STDERR "Finished.\n";
 
 sub usage {
     die <<EOF;
-usage: $0 [-destdir dir] strawberrydist.zip
+usage: $0 --strawberrydir dir --bbbikedistdir dir strawberrydist.zip
+
+Both --strawberrydir and --bbbikedistdir directories should
+not exist yet, only the parent directories.
 EOF
 }
 

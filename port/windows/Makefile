@@ -60,13 +60,15 @@ devel:
 ######################################################################
 # new rules for strawberry dist
 #
-# HOWTO use this rules
-# - install a portable strawberry into \cygwin\home\eserte\strawberry
-# - do modification to strawberry: remove some stuff, add additional modules
-#   (more detailed instructions missing!)
-# - create \cygwin\home\eserte\bbbikewindist
-# - copy ...\strawberry\perl into \cygwin\home\eserte\bbbikewindist\perl
-# - copy (stripped down) gpsbabel distro into \cygwin\home\eserte\bbbikewindist\gpsbabel
+# HOWTO use this rules (work in progress!!!)
+# - fetch a suitable strawberry portable zipfile, e.g. 5.12.3.0
+# - currently the process is optimized for 5.12.3.0, for other perls
+#   adjustments to the include/exclude list in strawberry-include-exclude.pl
+#   need to be done
+# - run in a windows shell:
+#     cd C:\cygwin\home\eserte\work\bbbike
+#     perl create_customized_strawberry.pl -strawberrydir C:\cygwin\home\eserte\strawberry-5.12.3.0 -bbbikedistdir c:\cygwin\home\eserte\bbbikewindist "c:\Dokumente und Einstellungen\eserte\Desktop\strawberry-perl-5.12.3.0-portable.zip
+# - copy (stripped down, detailed instructions needed) gpsbabel distro into \cygwin\home\eserte\bbbikewindist\gpsbabel
 # - open a cygwin shell
 # - run in bbbike directory
 #    perl Makefile.PL
@@ -92,6 +94,19 @@ make-bbbike-dist:
 	-rm -rf ../../../../bbbikewindist/bbbike.old
 	-mv ../../../../bbbikewindist/bbbike ../../../../bbbikewindist/bbbike.old
 	perl "-MExtUtils::Manifest=manicopy,maniread" -e "chdir q{../..} or die; manicopy(maniread(q{MANIFEST}),q{../../bbbikewindist/bbbike}, 'cp');"
+
+GPSBABEL_SRC=/cygdrive/c/Programme/GPSBabel
+GPSBABEL_DEST=../../../../bbbikewindist/gpsbabel
+
+# Assumes that gpsbabel (e.g. 1.4.2 is normally installed)
+# XXX hardcoded for german installations (C:\Programme)
+make-gpsbabel-dist:
+	[ -d ../../../../bbbikewindist ]
+	[ -d ${GPSBABEL_SRC} ]
+	mkdir -p ${GPSBABEL_DEST}
+	cp -pn ${GPSBABEL_SRC}/gpsbabel.exe ${GPSBABEL_DEST}
+	cp -pn ${GPSBABEL_SRC}/COPYING ${GPSBABEL_DEST}
+# XXX libexpat?
 
 # XXX more rules missing:
 #
