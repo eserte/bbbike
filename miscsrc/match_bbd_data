@@ -172,6 +172,9 @@ while(1) {
 		# get best coordinate pair
 		my $best_near = $near->[$inx];
 		($ax,$ay,$bx,$by) = @{$best_near->{Coords}};
+		if (!defined $bx || !defined $by) { # may happen for places
+		    ($bx,$by) = ($ax,$ay);
+		}
 		($cx,$cy) = (undef, undef);
 		my $do_neighbor_check = 1; # always do neighbor check
                                            # (see below)
