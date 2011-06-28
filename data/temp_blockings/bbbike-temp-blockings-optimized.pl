@@ -2533,17 +2533,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        undef,
-       {
-         'until' => 1309125600,
-         'text' => 'Bergmannstraße (Kreuzberg): Veranstaltung, Straße vollständig gesperrt (24. bis 26. Juni 2011) in beiden Richtungen zwischen Mehringdamm und Zossener Str.',
-         'from' => 1308780000,
-         'id' => 2089,
-         'data' => 'userdel	q4::temp 9248,9350 9309,9347 9489,9309 9505,9306 9632,9280 9689,9266 9753,9252
-userdel auto	3 9487,9209 9505,9306 9524,9426
-userdel auto	3 9524,9426 9505,9306 9487,9209
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => '105200001',
          'until' => 1324422000,
@@ -2883,16 +2873,7 @@ userdel	q4::inwork; -12545,-698 -12262,-612
        },
        undef,
        undef,
-       {
-         'source_id' => 'INKO_105491',
-         'until' => 1309190400,
-         'text' => 'Lahnstr. (Neukölln): Baustelle, Fahrtrichtung gesperrt (bis Ende 06/11) Richtung Grenzallee zwischen Karl-Marx-Str. und Naumburger Str., 28.03.2011 07:00 Uhr bis 27.06.2011 18:00 Uhr ',
-         'from' => 1301202000,
-         'id' => 2213,
-         'data' => 'userdel	q4::inwork; 13095,6926 13278,6967
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        {

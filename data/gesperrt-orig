@@ -110,8 +110,8 @@ Eichborndamm	1s:q3 4240,19019 4232,18981
 Eichborndamm	1 4232,18981 4210,18878 4171,18677 4102,18298 4059,18107 4015,17912
 Spreestr.	1 17900,6072 17939,5968 17877,5860 17816,5733 17812,5726 17782,5698
 Buckower Chaussee	1 8742,475 8972,498 9002,471
-Archibaldweg	1 15674,10851 15871,10925
-Nöldnerplatz	1 15871,10925 16032,10842
+Archibaldweg	1 15674,10851 15861,10931
+Nöldnerplatz	1 15861,10931 16032,10842
 Adlergestell (extra Radweg)	2 21998,1239 21541,1739 21475,1804
 Richterstr.	1s:q3 22092,999 22120,886 22075,779 22007,711
 Grünau/B179	1 22007,711 21861,802 21894,881 21977,988 22092,999
@@ -826,6 +826,9 @@ Krumpuhler Weg	1 1405,18749 1390,18651
 Oelder Weg	1 1967,18743 1965,18686
 Steffenshagener Str.	1s 23159,11097 22983,11098
 Pestalozzistr.	1s:q3 24652,11794 24706,11838 24769,11819
+Finsterberger Str.	1s:q3 23086,12565 23129,12496 23233,12406
+Bauerwitzer Weg	1 22917,12239 22814,12353 22990,12493
+Heinrich-Grüber-Platz	1 22877,11940 22858,11937 22843,11999 22856,12003 22870,12000 22883,11956 22877,11940
 ######################################################################
 #
 # Potsdam
@@ -1302,6 +1305,9 @@ Daumstr.: Mittelstreifen	3nocross -1821,16327 -1816,16111 -1815,15976
 # Stellen, an denen getragen werden muß:
 # die Zahl hinter dem ":" entspricht ungefähr den verlorenen Sekunden
 # 
+tragen (ca. 32 Stufen)	0:35 22675,12008
+tragen (ca. 30 Stufen)	0:30 22859,12059
+tragen (ca. 30 Stufen)	0:30 22857,12014
 tragen (20 Stufen)	0:30 -1887,16673
 tragen (ca. 10 Stufen)	0:15 -2196,20140
 tragen (ca. 60 Stufen)	0:100 28016,71

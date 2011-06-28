@@ -43,17 +43,17 @@ Neumannsgasse: Bauarbeiten, Fahrbahn gespert	q4::inwork 10284,12113 10383,12191
 #: next_check: 2011-07-01
 Varian-Fry-Str.: Baustelle, Fahrbahn gesperrt	q4::inwork 8389,11378 8374,11479
 # 
-#: last_checked: 2011-05-29
+#: last_checked: 2011-06-26
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraﬂe Richtung S¸den	q4::inwork; 9475,12365 9462,12481 9454,12558
 # 
-#: last_checked: 2011-06-11
+#: last_checked: 2011-06-26
 Universit‰tsstr.: wegen Bauarbeiten Richtung Unter den Linden gesperrt	q4::inwork; 9580,12581 9601,12380
 # 
-#: last_checked: 2011-05-29
+#: last_checked: 2011-06-26
 #: next_check: 2011-08-01
 Matkowskystr., Revaler Str.: Bauarbeiten, Einbahnstraﬂe	q4::inwork; 14530,11137 14509,11060 14442,11101
 #:
-#: last_checked: 2011-06-11 vvv
+#: last_checked: 2011-06-26 vvv
 #: next_check: 2011-08-01 vvv
 Helmerdingstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 14465,11195 14442,11101
 Haasestr.: Einbahnstraﬂe ist eingerichtet	q4::inwork; 14286,11186 14327,11308
@@ -64,7 +64,6 @@ Haasestr.: Einbahnstraﬂe ist eingerichtet	q4::inwork; 14286,11186 14327,11308
 #: next_check: 2011-08-01
 Rathausstr.: Baustelle vor dem Roten Rathaus, eng	q4::inwork 10601,12521 10704,12595
 # 
-#XXX del --- #: last_checked: 2010-11-06 --- J‰gerstr.: Einbahnstraﬂe	q4::inwork; 9394,11996 9201,11968
 #XXX del --- #: last_checked: 2011-02-27 --- #: next_check: 2011-07-15 --- Am Carlsgarten: Bauarbeiten	q4::inwork 19460,7954 19372,8012 19334,8046
 # 
 #: next_check: 2011-09-01 vvv
@@ -234,7 +233,7 @@ Ernststr.: Fuﬂg‰nger	q2 2497,19503 2700,19527
 (S-Bahnunterf¸hrung Wartenberg): Fuﬂg‰nger, Rampen	q2 16923,18650 16990,18694 17114,18775
 Bernburger Treppe: Rampe	q3 8536,11063 8454,11086
 Virchowstr. (Volkspark Friedrichshain): Fuﬂg‰nger	q1 12876,13440 12771,13603 12707,13706
-(Buckower Ring - Cecilienstr.): Fuﬂg‰nger	q1 21874,13543 21931,13724
+(Buckower Ring - Cecilienstr.): Fuﬂg‰nger	q1 21874,13543 21928,13717
 (Hohenzollerndamm - Friedrichsruher Str.): enger Gehweg	q2 3388,8958 3333,9026
 Gillweg: enger Gehweg	q2 2585,9653 2484,9671 2394,9714
 Leon-Jessel-Platz: Fuﬂg‰nger	q1 4700,9179 4750,9143
@@ -397,7 +396,7 @@ Caroline-T¸bbecke-Ufer: Fuﬂg‰nger, Radfahren erlaubt	q1 15287,9713 15367,9691
 (Strela-Park): Fuﬂg‰nger	q1 15400,9742 15465,9860
 Hildburghauser Str.: Bahnunterf¸hrung f¸r Fuﬂg‰nger und Radfahrer	q1 4595,1387 4514,1402
 (zur Pfaueninself‰hre): an schˆnen Tagen viele Fuﬂg‰nger	q3 -8540,2209 -8561,2236 -8564,2276
-(Unterf¸hrung am S-Bhf. Kaulsdorf): Fuﬂg‰nger	q4 22836,11994 22842,12070
+(Unterf¸hrung am S-Bhf. Kaulsdorf): Fuﬂg‰nger	q3 22857,12014 22859,12059
 (B¸rgipfad - Jenbacher Weg): Fuﬂg‰nger	q2 5591,240 5671,118 5703,74
 Langhoffstr.: enge Straﬂe, Gegenverkehr	q1 19817,14454 19818,14064
 (Kolonie Friedrichsfelde Nord, entlang der Fernw‰rmeleitung): Fuﬂg‰nger	q1 17774,12244 18129,12245 18180,12262 18216,12262
@@ -467,9 +466,9 @@ S-Bhf. Raoul-Wallenberg-Str.: lange Rampe	q3 20109,16264 20109,16305
 (S-Bhf. Raoul-Wallenberg-Str. - Kinderbad Platsch): Fuﬂg‰nger	q1 20286,16494 20543,16488 20865,16440 21102,16415
 (Kinderbad Platsch - Max-Herrmann-Str.): Fuﬂg‰nger	q1 21102,16415 21177,16499 21238,16627
 Wuhlewanderweg: Fuﬂg‰nger	q1 22771,16194 22717,16142 22670,16063 22623,15959 22554,15780 22539,15729 22515,15620 22518,15510 22518,15417 22516,15399 22507,15373 22400,15321 22393,15292 22396,15254 22413,15187 22449,15127
-Wuhlewanderweg: Fuﬂg‰nger	q1 22449,15127 22550,15087 22741,14761 22806,14631 22843,14497 22827,14356 22839,14149 22825,14109 22607,13890 22516,13799 22359,13599 22323,13533
+Wuhlewanderweg: Fuﬂg‰nger	q1 22449,15127 22550,15087 22741,14761 22806,14631 22843,14497 22827,14356 22839,14149 22825,14109 22607,13890 22516,13799 22359,13599 22313,13523
 Wuhlewanderweg: enge Unterf¸hrung	q3 22359,13599 22259,13508
-Wuhlewanderweg: Fuﬂg‰nger	q1 22323,13533 22259,13508 22191,13414 22221,13027 22199,12955 22036,12367 21998,12204
+Wuhlewanderweg: Fuﬂg‰nger	q1 22313,13523 22259,13508 22191,13414 22221,13027 22199,12955 22036,12367 21998,12204
 Wuhlewanderweg: Fuﬂg‰nger	q1 22242,11269 22244,11311 22073,11581 22009,11636 21886,11843 21914,12019 21936,12022
 Wuhlewanderweg: Fuﬂg‰nger	q1 22244,11311 22280,11284
 Wuhlewanderweg: enge Unterf¸hrung	q3 22280,11284 22271,11218
@@ -959,6 +958,8 @@ Tegelorter Promenade: Fuﬂg‰nger	q1 -1659,18104 -1660,18114 -1661,18132 -1717,182
 (Uferweg Eiswerder): Fuﬂg‰nger	q1 -2038,15683 -2094,15663 -2138,15622 -2163,15571 -2177,15511 -2325,15431 -2431,15436 -2465,15471 -2454,15472 -2453,15476
 Kleine Eiswerderbr¸cke: enge Stelle, Gegenverkehr hat Vorrang	q1; -1978,15684 -2038,15683
 Gˆtzkeweg: eng durch parkende Autos	q1 27319,13589 27414,13508
+(Erntedankweg - Wuhlgartenweg): eng	q3 20861,12192 20841,12185 20829,12144
+(Alt-Friedrichsfelde - Alfred-Kowalke-Str.): eng, Fuﬂg‰nger	q1 18616,11654 18618,11452
 ######################### User Contributions #################################
 #: by: Michael Kiekbusch
 #: corrected_by: srt/policy (q4 -> q3-)
@@ -1617,7 +1618,7 @@ Landschˆppenpfad: Bordsteine, Fuﬂg‰nger	q2 12609,1780 12574,1866
 Pfarrer-Vogelsang-Weg: Bordsteine, Fuﬂg‰nger	q2 12487,1727 12452,1808
 #: by: ^^^
 #: by: Thomas Wolf: vvv
-Hans-Fallada-Str.: enge Straﬂe	q1 21931,13724 21960,13776 21977,13942 22007,14209
+Hans-Fallada-Str.: enge Straﬂe	q1 21928,13717 21960,13776 21977,13942 22007,14209
 Dudweilerstr.: enge Straﬂe	q1 21766,13995 21809,13973 21885,13954 21977,13942 22042,13942 22118,13954
 #: by: ^^^
 #: by: anonymous

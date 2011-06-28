@@ -850,7 +850,7 @@ EOF
        text  => 'Lückstr. Richtung stadteinwärts zwischen Schlichtallee und Wönnichstr. Baustelle, Straße gesperrt (bis Mitte 10.2004) ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1 16699,10611 16647,10632 16588,10655 16460,10699 16316,10755 16303,10760 16153,10818 16032,10842
+userdel	1 16699,10611 16647,10632 16588,10655 16460,10699 16316,10755 16303,10760 16153,10818 16085,10844 16032,10842
 EOF
      },
      { from  => 1094627730, # 2004-09-08 09:15
@@ -3764,7 +3764,7 @@ EOF
        text  => 'Die Kaulsdorfer Brücke ist ab Montag 06.03.2006, 6.00 Uhr bis voraussichtlich Herbst 2007 gesperrt.',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 22688,12007 22669,12049
+userdel	2::inwork 22688,12007 22684,12016 22669,12049
 userdel	2::inwork 22669,12049 22693,12084
 EOF
      },
@@ -6954,7 +6954,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_004489',
        data  => <<EOF,
-userdel	2::inwork 22688,12007 22669,12049 22693,12084
+userdel	2::inwork 22688,12007 22684,12016 22669,12049 22693,12084
 EOF
      },
      { from  => undef, # 2007-01-15 22:59 1168898369
@@ -9924,7 +9924,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006691',
        data  => <<EOF,
-userdel	1::inwork 16460,10699 16316,10755 16303,10760 16153,10818 16032,10842
+userdel	1::inwork 16460,10699 16316,10755 16303,10760 16153,10818 16085,10844 16032,10842
 EOF
      },
      { from  => 1192399200, # 2007-10-15 00:00
@@ -10474,7 +10474,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_007093',
        data  => <<EOF,
-userdel	1::inwork 16316,10755 16303,10760 16153,10818 16032,10842
+userdel	1::inwork 16316,10755 16303,10760 16153,10818 16085,10844 16032,10842
 EOF
      },
      { from  => 1195308223, # 
@@ -13361,7 +13361,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_011767',
        data  => <<EOF,
-userdel	q4::inwork; 16153,10818 16032,10842
+userdel	q4::inwork; 16153,10818 16085,10844 16032,10842
 userdel	q4::inwork; 16196,10911 16153,10818
 userdel	q4::inwork; 15681,10801 15674,10851
 EOF
