@@ -19269,4 +19269,41 @@ EOF
 userdel	2::inwork 25149,12266 25109,12196 25072,12107
 EOF
      },
+     { from  => 1309060800, # 2011-06-26 06:00
+       until => 1309532400, # 2011-07-01 17:00
+       text  => 'Kiefholzstr. (Treptow): Baustelle, Straße vollständig gesperrt (bis Anfang 07/11) in beiden Richtungen zwischen Dammweg und Eichbuschallee, 27.06.2011 06:00 Uhr bis 01.07.2011 17:00 Uhr ',
+       type  => 'handicap',
+       source_id => 'INKO_108107',
+       data  => <<EOF,
+userdel	q4::inwork 15557,7404 15229,7785
+EOF
+     },
+     { from  => 1309644000, # 2011-07-03 00:00
+       until => 1325372400, # 2012-01-01 00:00
+       text  => 'Rabenstein/Fläming: L84, K6932: Straßenbau OD Rädigke LSA-Regelung, Abzw. Buchholz gesperrt ab 04.07.11 Vollsperrung, 27.06.2011 bis 31.12.2011 ',
+       type  => 'gesperrt',
+       source_id => 'LS/W-SG33-P/11/484',
+       data  => <<EOF,
+userdel	2::inwork -41811,-40216 -41351,-39981
+EOF
+     },
+     { from  => 1307948160, # 2011-06-13 08:56
+       until => 1310130000, # 2011-07-08 15:00
+       text  => 'Puschkinsallee (Treptow): Baumpflegearbeiten, Straße gesperrt zwischen Elsenstr. und Eichenstr., sowie Einbahnstraßenregelung in der Martin-Hoffmann-Str., 14.06.2011 08:56 Uhr bis 08.07.2011 15:00 Uhr ',
+       type  => 'gesperrt',
+       source_id => 'IM_017436',
+       data  => <<EOF,
+userdel	2::inwork 13829,9905 13884,9882 13995,9834 14193,9746
+	q4::inwork; 13835,10083 13928,10053 14012,10029 14076,10011 14289,9870
+EOF
+     },
+     { from  => 1309644000, # 2011-07-03 00:00
+       until => 1310853599, # 2011-07-16 23:59
+       text  => 'Kleinmachnow: L77: Instandsetzungsarbeiten OL Kleinmachnow , Friedensbrücke 04.07.-16.07.2011 Vollsperrung ',
+       type  => 'gesperrt',
+       source_id => 'LS/W-SG33-P/11/412',
+       data  => <<EOF,
+userdel	2::inwork -1378,-1022 -1348,-1098
+EOF
+     },
     );

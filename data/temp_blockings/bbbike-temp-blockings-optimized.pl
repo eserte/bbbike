@@ -2937,16 +2937,7 @@ userdel	q4::inwork; 10264,12826 10166,12777 10132,12941
        undef,
        undef,
        undef,
-       {
-         'source_id' => '116400693',
-         'until' => 1309211999,
-         'text' => 'Neuenhagen bei Berlin: L338: Kranaufstellung, Aufstellen Betonpumpe OL Neuenhagen, Schöneicher Str. Nr. 50 am 27.06.11 Vollsperrung ',
-         'from' => 1309039200,
-         'id' => 2228,
-         'data' => 'userdel	2::inwork 30971,11749 31021,12174
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'LS/S-SG33-C/11/067',
          'until' => 1320447600,
@@ -3007,6 +2998,47 @@ userdel	q4::inwork; 10264,12826 10166,12777 10132,12941
          'from' => 1314907200,
          'id' => 2237,
          'data' => 'userdel	2::inwork 25149,12266 25109,12196 25072,12107
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'INKO_108107',
+         'until' => 1309532400,
+         'text' => 'Kiefholzstr. (Treptow): Baustelle, Straße vollständig gesperrt (bis Anfang 07/11) in beiden Richtungen zwischen Dammweg und Eichbuschallee, 27.06.2011 06:00 Uhr bis 01.07.2011 17:00 Uhr ',
+         'from' => 1309060800,
+         'id' => 2238,
+         'data' => 'userdel	q4::inwork 15557,7404 15229,7785
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'LS/W-SG33-P/11/484',
+         'until' => 1325372400,
+         'text' => 'Rabenstein/Fläming: L84, K6932: Straßenbau OD Rädigke LSA-Regelung, Abzw. Buchholz gesperrt ab 04.07.11 Vollsperrung, 27.06.2011 bis 31.12.2011 ',
+         'from' => 1309644000,
+         'id' => 2239,
+         'data' => 'userdel	2::inwork -41811,-40216 -41351,-39981
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_017436',
+         'until' => 1310130000,
+         'text' => 'Puschkinsallee (Treptow): Baumpflegearbeiten, Straße gesperrt zwischen Elsenstr. und Eichenstr., sowie Einbahnstraßenregelung in der Martin-Hoffmann-Str., 14.06.2011 08:56 Uhr bis 08.07.2011 15:00 Uhr ',
+         'from' => 1307948160,
+         'id' => 2240,
+         'data' => 'userdel	2::inwork 13829,9905 13884,9882 13995,9834 14193,9746
+	q4::inwork; 13835,10083 13928,10053 14012,10029 14076,10011 14289,9870
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'LS/W-SG33-P/11/412',
+         'until' => 1310853599,
+         'text' => 'Kleinmachnow: L77: Instandsetzungsarbeiten OL Kleinmachnow , Friedensbrücke 04.07.-16.07.2011 Vollsperrung ',
+         'from' => 1309644000,
+         'id' => 2241,
+         'data' => 'userdel	2::inwork -1378,-1022 -1348,-1098
 ',
          'type' => 'gesperrt'
        }
