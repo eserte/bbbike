@@ -645,27 +645,10 @@ for my $browser (@browsers) {
 	{
 	    my $url = $ausweichroute_choose_url . ";output_as=xml";
 	    my $resp = $agent->get($url);
-	    ok($resp->is_success, "Success for $url")
-		or diag $resp->status_line;
-	    my $xml = $resp->decoded_content(charset => "none"); # using decoded_content with charset decoding is problematic
-	    xmllint_string($xml, "XML output OK");
+	    my $root = handle_xml_response $resp;
 	SKIP: {
-		skip("Needs XML::LibXML for further XML tests", 5)
-		    if !eval { require XML::LibXML; 1 };
-		my $p = XML::LibXML->new;
-		my $doc = eval { $p->parse_string($xml) };
-		if (!$doc || $@) {
-		    my $err = $@;
-		    require File::Temp;
-		    my($fh,$file) = File::Temp::tempfile(SUFFIX => ".xml");
-		    print $fh $xml;
-		    close $xml;
-		    diag <<EOF;
-Failed parsing XML: ${err}XML data written to $file
-Following failure is expected.
-EOF
-		}
-		my $root = $doc->documentElement;
+		skip "Missing prerequisites (XML::LibXML?) for further XML tests", 5
+		    if !$root;
 		my($affBlockNode) = $root->findnodes("/BBBikeRoute/AffectingBlocking");
 		ok($affBlockNode, "Found AffectingBlocking node");
 		my($xy) = $affBlockNode->findvalue("./LongLatHop/XY[position()=1]");
