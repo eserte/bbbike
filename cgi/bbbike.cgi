@@ -3723,8 +3723,12 @@ sub search_coord {
 			}
 		    }
 		} else {
-		    $tb->{net} = StrassenNetz->new($strobj);
-		    $tb->{net}->make_net_cat(-onewayhack => 1);
+		    my $strobj_3    = $strobj->grepstreets(sub { $_->[Strassen::CAT] eq '3' });
+		    my $strobj_non3 = $strobj->grepstreets(sub { $_->[Strassen::CAT] ne '3' });
+		    my $tb_net = $tb->{net} = StrassenNetz->new($strobj_non3);
+		    $tb_net->make_net_cat(-onewayhack => 1);
+		    $tb_net->make_sperre($strobj_3, Type => ['wegfuehrung']);
+		    # XXX What about $special_vehicle? Should it be used here?
 		}
 	    }
 
@@ -4280,15 +4284,37 @@ sub display_route {
     if (@current_temp_blocking && !@custom && !$printmode) {
     TEMP_BLOCKING:
 	for my $tb (@current_temp_blocking) {
+	    my $net         = $tb->{net}{Net};
+	    my $wegfuehrung = $tb->{net}{Wegfuehrung};
+
 	    my(@path) = $r->path_list;
 	    for(my $i = 0; $i < $#path; $i++) {
 		my($x1, $y1) = @{$path[$i]};
 		my($x2, $y2) = @{$path[$i+1]};
-		if ($tb->{net}{Net}{"$x1,$y1"}{"$x2,$y2"}) {
+		my $xy1 = "$x1,$y1";
+		my $xy2 = "$x2,$y2";
+
+		# Handling "1"/"2" and "qX" types
+		if ($net->{$xy1}{$xy2}) {
 		    push @affecting_blockings, $tb;
 		    $tb->{lost_time}{$velocity_kmh} = lost_time($r, $tb, $velocity_kmh);
-		    $tb->{hop} = ["$x1,$y1", "$x2,$y2"];
+		    $tb->{hop} = [$xy1, $xy2];
 		    next TEMP_BLOCKING;
+		}
+
+		# Handling "3" (wegfuehrung) types
+		if ($wegfuehrung && exists $wegfuehrung->{$xy2}) {
+		    for my $wegfuehrung (@{ $wegfuehrung->{$xy2} }) {
+		    CHECK_WEGFUEHRUNG: {
+			    for(my $j=0; $j<$#$wegfuehrung; $j++) {
+				last CHECK_WEGFUEHRUNG
+				    if ($j > $i || join(",",@{$path[$i-$j]}) ne $wegfuehrung->[$#$wegfuehrung-1-$j]);
+			    }
+			    push @affecting_blockings, $tb;
+			    $tb->{hop} = [$xy1, $xy2];
+			    next TEMP_BLOCKING;
+			}
+		    }
 		}
 	    }
 	}
