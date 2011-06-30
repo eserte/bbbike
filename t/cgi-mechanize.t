@@ -78,6 +78,10 @@ use lib ("$FindBin::RealBin",
 use BBBikeTest;
 
 use Getopt::Long;
+use URI ();
+use URI::QueryParam ();
+
+sub handle_xml_response ($);
 
 my @browsers;
 my $v;
@@ -101,7 +105,7 @@ if (!@browsers) {
 @browsers = map { "$_ BBBikeTest/1.0" } @browsers;
 
 my $outer_berlin_tests = 30;
-my $tests = 112 + $outer_berlin_tests;
+my $tests = 123 + $outer_berlin_tests;
 plan tests => $tests * @browsers;
 
 if ($WWW::Mechanize::VERSION == 1.32) {
@@ -495,6 +499,78 @@ for my $browser (@browsers) {
     ######################################################################
     # Test custom blockings
 
+ XXX: { ; }
+    {
+	my %common_args = (
+			   pref_seen  => 1,
+			   pref_speed => 20,
+			   output_as  => 'xml',
+			   test       => 'custom_blockings',
+			  );
+	{
+	    # Wegführung, rück
+	    $get_agent->();
+	    my $url = URI->new($cgiurl);
+	    $url->query_form_hash({startc    => '12980,7597',
+				   zielc     => '13150,7254',
+				   startname => 'Karl-Marx-Str.',
+				   zielname  => 'Braunschweiger Str.',
+				   %common_args,
+				  });
+	    my $resp = $agent->get($url);
+	    my $root = handle_xml_response $resp;
+	SKIP: {
+		skip "Missing prerequisites (XML::LibXML?) for further XML tests", 2
+		    if !$root;
+		my($affBlockNode) = $root->findnodes("/BBBikeRoute/AffectingBlocking");
+		ok $affBlockNode, "Found AffectingBlocking node";
+		like $affBlockNode->findvalue('./Text'), qr{Abbiegen nicht m.*glich}, 'Temp blockings, Wegfuehrung rueckwaerts';
+	    }
+	}
+
+	{
+	    # Wegführung, hin
+	    $get_agent->();
+	    my $url = URI->new($cgiurl);
+	    $url->query_form_hash({startc    => '13150,7254',
+				   zielc     => '12980,7597',
+				   startname => 'Braunschweiger Str.',
+				   zielname  => 'Karl-Marx-Str.',
+				   %common_args,
+				  });
+	    my $resp = $agent->get($url);
+	    my $root = handle_xml_response $resp;
+	SKIP: {
+		skip "Missing prerequisites (XML::LibXML?) for further XML tests", 2
+		    if !$root;
+		my($affBlockNode) = $root->findnodes("/BBBikeRoute/AffectingBlocking");
+		ok $affBlockNode, "Found AffectingBlocking node"
+		    or diag $root->serialize(1);
+		like $affBlockNode->findvalue('./Text'), qr{Abbiegen nicht m.*glich}, 'Temp blockings, Wegfuehrung';
+	    }
+	}
+
+	{
+	    # Wegführung schlägt hier *nicht* an, trotz gemeinsamer Abschnitte
+	    $get_agent->();
+	    my $url = URI->new($cgiurl);
+	    $url->query_form_hash({startc    => '13015,7440',
+				   zielc     => '13095,6926',
+				   startname => 'Karl-Marx-Str.',
+				   zielname  => 'Karl-Marx-Str..',
+				   %common_args,
+				  });
+	    my $resp = $agent->get($url);
+	    my $root = handle_xml_response $resp;
+	SKIP: {
+		skip "Missing prerequisites (XML::LibXML?) for further XML tests", 1
+		    if !$root;
+		my($affBlockNode) = $root->findnodes("/BBBikeRoute/AffectingBlocking");
+		ok !$affBlockNode, "No AffectingBlocking found";
+	    }
+	}
+    }
+
     {
 
 	# Hier wird eine temporäre baustellenbedingte Einbahnstraße in
@@ -815,7 +891,6 @@ EOF
     ######################################################################
     # streets in plaetze in Potsdam
 
- XXX: { ; }
     {
 
 	$get_agent->();
@@ -996,6 +1071,33 @@ sub simulate_abc_click {
     $form->value($type . 'charimg.x', $x);
     $form->value($type . 'charimg.y', $y);
     $agent->submit;
+}
+
+# Generates two tests, returns $root (or not, if XML::LibXML is not available)
+sub handle_xml_response ($) {
+    my $resp = shift;
+    ok $resp->is_success, "Success for " . $resp->request->url
+	or diag $resp->status_line;
+    my $xml = $resp->decoded_content(charset => "none"); # using decoded_content with charset decoding is problematic
+    xmllint_string($xml, "XML output OK");
+    my $root;
+    if (eval { require XML::LibXML; 1 }) {
+	my $p = XML::LibXML->new;
+	my $doc = eval { $p->parse_string($xml) };
+	if (!$doc || $@) {
+	    my $err = $@;
+	    require File::Temp;
+	    my($fh,$file) = File::Temp::tempfile(SUFFIX => ".xml");
+	    print $fh $xml;
+	    close $xml;
+	    diag <<EOF;
+Failed parsing XML: ${err}XML data written to $file
+Following failure is expected.
+EOF
+	}
+	$root = $doc->documentElement;
+    }
+    $root;
 }
 
 __END__
