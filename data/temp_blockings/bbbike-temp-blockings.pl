@@ -18319,10 +18319,10 @@ EOF
        text  => 'Braunschweiger Str./Karl-Marx-Str.: Abbiegen nicht möglich (bzw. nur auf dem Gehweg) bis 31.12.2012',
        type  => 'gesperrt',
        data  => <<EOF,
-#: XXX_prog: "3" not properly supported!!!
-#userdel	3 13150,7254 13047,7234 13058,7165
-#userdel	3 13150,7254 13047,7234 13034,7319
-userdel	2 13047,7234 13150,7254
+userdel	3 13150,7254 13047,7234 13058,7165
+userdel	3 13058,7165 13047,7234 13150,7254
+userdel	3 13150,7254 13047,7234 13034,7319
+userdel	3 13034,7319 13047,7234 13150,7254
 EOF
      },
      { from  => 1284861600, # 2010-09-19 04:00
