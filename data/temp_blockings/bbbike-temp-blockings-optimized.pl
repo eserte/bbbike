@@ -1698,16 +1698,7 @@ userdel	2::temp -8087,-1453 -8151,-1470 -8306,-1454
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_012523',
-         'until' => 1309438800,
-         'text' => 'Kantstr. zwischen Hardebergstr. und Joachimstaler Str. gesperrt (bis 2011) ',
-         'from' => 1241419680,
-         'id' => 1643,
-         'data' => 'userdel	2::inwork 5652,11004 5613,10963 5494,10973
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2663,8 +2654,10 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
          'text' => 'Braunschweiger Str./Karl-Marx-Str.: Abbiegen nicht möglich (bzw. nur auf dem Gehweg) bis 31.12.2012',
          'from' => 1284745737,
          'id' => 2134,
-         'data' => 'userdel	3 13150,7254 13047,7234 13058,7165
-userdel	3 13150,7254 13047,7234 13034,7319
+         'data' => '#: XXX_prog: "3" not properly supported!!!
+#userdel	3 13150,7254 13047,7234 13058,7165
+#userdel	3 13150,7254 13047,7234 13034,7319
+userdel	2 13047,7234 13150,7254
 ',
          'type' => 'gesperrt'
        },
