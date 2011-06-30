@@ -341,7 +341,9 @@ EOF
     # Sketching the handling of "2" vs. "3" records in temp-blockings.
     my $s = Strassen->new_from_data_string(<<EOF);
 userdel	3 13150,7254 13047,7234 13058,7165
+userdel	3 13058,7165 13047,7234 13150,7254
 userdel	3 13150,7254 13047,7234 13034,7319
+userdel	3 13034,7319 13047,7234 13150,7254
 userdel	2::inwork 46581,105900 47587,106693
 EOF
     my $s_3    = $s->grepstreets(sub { $_->[Strassen::CAT] eq '3' });
@@ -350,7 +352,8 @@ EOF
     $net->make_net_cat(-onewayhack => 1);
     $net->make_sperre($s_3, Type => ['wegfuehrung']);
     is scalar keys %{$net->{Net}}, 2, 'Only the "blocked" records in Net';
-    is scalar keys %{$net->{Wegfuehrung}}, 2, 'The "wegfuehrung" records';
+    is scalar keys %{$net->{Wegfuehrung}}, 3, 'The "wegfuehrung" records'
+	or diag Dumper($net->{Wegfuehrung});
 }
 
 __END__
