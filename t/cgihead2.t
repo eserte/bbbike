@@ -66,11 +66,15 @@ push @var, (qw(
 # Not HEADable:
 #   DISTDIR
 
-my @compat_urls = ('http://www.radzeit.de/BBBike/data/.modified',
-		   'http://www.radzeit.de/cgi-bin/bbbike.cgi',
-		   'http://www.radzeit.de/cgi-bin/wapbbbike.cgi',
-		   'http://bbbike.radzeit.de/cgi-bin/bbbike.cgi',
-		  );
+## All of these don't work anymore, and nobody at radzeit
+## is able to fix it. This list is just for reference and
+## won't be used in this test anymore.
+#my @compat_urls = ('http://www.radzeit.de/BBBike/data/.modified',
+#		   'http://www.radzeit.de/cgi-bin/bbbike.cgi',
+#		   'http://www.radzeit.de/cgi-bin/wapbbbike.cgi',
+#		   'http://bbbike.radzeit.de/cgi-bin/bbbike.cgi',
+#		  );
+my @compat_urls = ();
 
 my %url;
 for my $var (@var) {
@@ -103,7 +107,10 @@ for my $var (@var) {
 	# debug version to have the timings in the errorlog
 	# XXX remove this some day...
 	if ($url eq $BBBike::BBBIKE_UPDATE_DIST_CGI) {
-	    $ua->head('http://bbbike.de/cgi-bin/bbbike-snapshot-debug.cgi');
+	    my $resp = $ua->head('http://bbbike.de/cgi-bin/bbbike-snapshot-debug.cgi');
+	    if (!$resp->is_success) {
+		diag "Failure requesting the bbbike snaphost: " . $resp->as_string;
+	    }
 	}
 
 	check_url($url, $var);
