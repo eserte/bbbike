@@ -962,8 +962,16 @@ sub empty_image_error {
     my $im = $self->{Image};
     my $fh = $self->{Fh};
 
-    $im->stringc($sansserif, 24, 300, 400, "Empty image!") if $im;
-    $self->{PDF}->close if $self->{PDF};
+    if ($im) {
+	my @error_msg = $self->empty_image_error_message;
+	$im->set_fill_color(@$black);
+	my $y = 750;
+	for my $line (@error_msg) {
+	    $im->string($sansserif, 24, 50, $y, $line);
+	    $y -= 30;
+	}
+	$self->flush;
+    }
     confess "Empty image";
 }
 
