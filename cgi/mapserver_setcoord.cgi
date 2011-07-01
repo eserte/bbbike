@@ -2,10 +2,9 @@
 # -*- perl -*-
 
 #
-# $Id: mapserver_setcoord.cgi,v 1.12 2007/03/18 18:45:30 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003,2011 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -30,9 +29,18 @@ my $mapwidth = $imgext[2] - $imgext[0];
 my $mapheight = $imgext[3] - $imgext[1];
 my $set = param("coordset") || 'pass';
 if ($set ne "pass") {
-    param($set . "c", join(",",
-			   param("img.x")/$imgwidth*$mapwidth   + $imgext[0],
-			   $imgext[3] - param("img.y")/$imgheight*$mapheight));
+    # An empty img.x/img.y may happen if the user clicks on "Neu
+    # zeichnen" but is in coordset mode. We cannot do anything then
+    # setting coordset=pass
+    my $img_x = param("img.x");
+    my $img_y = param("img.y");
+    if (!defined $img_x || !defined $img_y) {
+	$set = 'pass';
+    } else {
+	param($set . "c", join(",",
+			       $img_x/$imgwidth*$mapwidth   + $imgext[0],
+			       $imgext[3] - $img_y/$imgheight*$mapheight));
+    }
 }
 if ($set eq 'ziel') {
     my $q2 = CGI->new(query_string());
