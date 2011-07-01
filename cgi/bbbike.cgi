@@ -5386,6 +5386,10 @@ sub draw_route {
 
     if (defined $q->param('coordssession') &&
 	(my $sess = tie_session($q->param('coordssession')))) {
+	# Note: the session data specified by coordssession could
+	# already be deleted. In this case all session data would be
+	# empty, especially the coords. The error will happen later,
+	# in BBBikeDraw.
 	$q->param(coords => $sess->{routestringrep});
 	$route = $sess->{route};
     }
