@@ -1332,9 +1332,12 @@ sub empty_image_error {
     my $im = $self->{Image};
     my $fh = $self->{Fh};
 
-    $im->string($self->{GD}->gdLargeFont, 10, 10, "Karte kann nicht gezeichnet werden!", $darkblue);
-    $im->string($self->{GD}->gdLargeFont, 10, 30, "Cannot draw map!", $darkblue);
-    $im->string($self->{GD}->gdLargeFont, 10, 50, scalar(localtime), $darkblue);
+    my @error_msg = $self->empty_image_error_message;
+    my $y = 10;
+    for my $line (@error_msg) {
+	$im->string($self->{GD}->gdLargeFont, 10, $y, $line, $darkblue);
+	$y += 20;
+    }
     binmode $fh if $fh;
     if ($fh) {
 	print $fh $im->imageOut;

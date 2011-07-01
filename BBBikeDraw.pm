@@ -235,9 +235,13 @@ sub _set_c1 {
 
 sub dimension_from_route {
     my $self = shift;
-    #my(@coords) = @{ $self->{Coords} };
-    my @coords = $self->{MultiCoords} ? map { @$_ } @{ $self->{MultiCoords} } : @{ $self->{Coords} };
-#    my @c1;
+    my @coords = ($self->{MultiCoords}
+		  ? map { @$_ } @{ $self->{MultiCoords} }
+		  : ($self->{Coords}
+		     ? @{ $self->{Coords} }
+		     : do { $self->empty_image_error }
+		    )
+		 );
     my($min_x, $min_y, $max_x, $max_y);
     foreach (@coords) {
 	my($x, $y) = split(/,/, $_);
@@ -994,6 +998,17 @@ sub standard_to_coord {
     } else {
 	($sx, $sy);
     }
+}
+
+sub empty_image_error_message {
+    ("Karte kann nicht gezeichnet werden!",
+     "Möglicherweise ist die Sitzung abgelaufen.",
+     "",
+     "Cannot draw map!",
+     "Maybe the session expired?",
+     "",
+     scalar(localtime),
+    );
 }
 
 1;
