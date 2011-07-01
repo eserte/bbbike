@@ -40,7 +40,9 @@ BBBIKE_HOSTEUROPE_SSH_HOST?=	${BBBIKE_HOSTEUROPE_HOST}
 STERNFAHRT_YEAR?=	2007
 KREISFAHRT_YEAR?=	2007
 
-EXTRA_MISCSRC_FILES=	bbd2esri winter_optimization.pl
+EXTRA_MISCSRC_FILES=	bbd2esri \
+			relevant_errorlog.pl \
+			winter_optimization.pl
 EXTRA_MISC_FILES=	gpx.xsd
 EXTRA_HTML_FILES=	Makefile newstreetform.tpl.html \
 			opensearch/bbbike-opensearch.tpl.src \
