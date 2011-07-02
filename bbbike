@@ -10727,6 +10727,8 @@ sub split_by_crossings {
     @ret;
 }
 
+######################################################################
+# temp blockings
 sub get_temp_blockings_files {
     my $temp_blockings_dir = "$datadir/temp_blockings";
     my $file = "$temp_blockings_dir/bbbike-temp-blockings.pl";
@@ -10911,6 +10913,7 @@ sub check_path_in_blockings_net_continue {
     for my $p_i (0 .. $#$pathref-1) {
 	my($xy0, $xy1) = (join(',', @{$pathref->[$p_i]}), 
 			  join(',', @{$pathref->[$p_i+1]}));
+	# XXX This part probably does not handle "wegführung" correctly!
 	if (exists $net->{$xy0} && exists $net->{$xy0}{$xy1}) {
 	    my($pos) = $current_temp_blockings_net->net2name($xy0, $xy1);
 	    if (defined $pos) {
@@ -11081,6 +11084,7 @@ sub show_blockings {
     }
 }
 
+######################################################################
 ### AutoLoad Sub
 sub read_sperre_tragen {
     if (!eval { StrassenNetz::make_sperre_tragen(get_strassen_file($sperre_file), get_special_vehicle(), \%sperre_tragen, \%sperre_narrowpassage); 1 }) {
