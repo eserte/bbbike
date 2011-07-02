@@ -2369,16 +2369,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_015001',
-         'until' => 1309471199,
-         'text' => 'Bahnhofstr. (Erkner) in beiden Richtungen zwischen Kreisverkehr Friedensplatz und Bahnhofsvorplatz Baustelle, Straße vollständig gesperrt (bis Ende 06.2011)',
-         'from' => 1265413596,
-         'id' => 2017,
-         'data' => 'userdel	2::inwork 34326,2915 34142,2742
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2467,7 +2458,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        {
          'until' => undef,
          'permanent' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Juni bis 22.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Juli bis 22.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'from' => undef,
          'id' => 2068,
          'data' => '(Eingang Columbiadamm - Rundkurs auf dem Flughafen Tempelhof)	2::night 10691,8532 10640,8366 10598,8270 10575,8218
@@ -2580,16 +2571,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        undef,
-       {
-         'source_id' => '106200475',
-         'until' => 1309471200,
-         'text' => 'Lichterfeld-Schacksdorf: L60: Straßenbau Lauchhammer - Licherfelde, 22.07.2010 bis 30.06.2011 ',
-         'from' => 1295721720,
-         'id' => 2108,
-         'data' => 'userdel	2::inwork 37809,-92300 37918,-93202 37419,-94853 37230,-95682
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2802,16 +2784,7 @@ userdel	q4::inwork; -12545,-698 -12262,-612
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'source_id' => '106401098',
-         'until' => 1309471200,
-         'text' => 'Rehfelde: K6419: Straßenausbau OL Rehfelde, zw. Bahnhofstraße und Kreisverkehr gesperrt, bis 30.06.2011 ',
-         'from' => 1304110785,
-         'id' => 2201,
-         'data' => 'userdel	q4::inwork; 45856,14437 44121,14615
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2941,16 +2914,7 @@ userdel	q4::inwork; 10264,12826 10166,12777 10132,12941
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'INKO_107899',
-         'until' => 1309532400,
-         'text' => 'Granitzstr. (Pankow): Baustelle, für beide Richtungen nur ein Fahrstreifen abwechselnd frei (bis Anfang 07/11) in beiden Richtungen zwischen Haßfurter Weg und Dettelbacher Weg, 17.06.2011 07:00 Uhr bis 01.07.2011 17:00 Uhr ',
-         'from' => 1308200400,
-         'id' => 2230,
-         'data' => 'userdel	q4::inwork 11796,18482 11698,18446
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'source_id' => 'IM_017476',
@@ -2994,16 +2958,7 @@ userdel	q4::inwork; 10264,12826 10166,12777 10132,12941
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'INKO_108107',
-         'until' => 1309532400,
-         'text' => 'Kiefholzstr. (Treptow): Baustelle, Straße vollständig gesperrt (bis Anfang 07/11) in beiden Richtungen zwischen Dammweg und Eichbuschallee, 27.06.2011 06:00 Uhr bis 01.07.2011 17:00 Uhr ',
-         'from' => 1309060800,
-         'id' => 2238,
-         'data' => 'userdel	q4::inwork 15557,7404 15229,7785
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'LS/W-SG33-P/11/484',
          'until' => 1325372400,
