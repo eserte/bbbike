@@ -37,7 +37,7 @@ sub keep_file ($$);
 my $v;
 my @variants = ("XML::LibXML", "XML::Twig");
 my $new_strassen_gpx_tests = 5;
-my $tests_per_variant = 69 + $new_strassen_gpx_tests;
+my $tests_per_variant = 70 + $new_strassen_gpx_tests;
 my $do_long_tests = !!$ENV{BBBIKE_LONG_TESTS};
 my $bbdfile;
 my $bbdfile_with_lines = "comments_scenic";
@@ -291,6 +291,13 @@ EOF
 		    fail("Document was not parsed correctly...");
 		}
 	    }
+	}
+
+	{ # empty bbd file
+	    my $s0 = Strassen->new_from_data("");
+	    my $s = Strassen::GPX->new($s0);
+	    my $xml_res = $s->Strassen::GPX::bbd2gpx;
+	    gpxlint_string($xml_res, "empty gpx file");
 	}
 
 	# Problematic file
