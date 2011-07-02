@@ -10946,12 +10946,15 @@ sub show_blockings {
     my $blockings_toplevel = redisplay_top($top, 'temp_blockings',
 					   -title => M"Temporäre Sperrungen",
 					  );
+    my $toplevel_width = int($top->screenwidth*0.7);
     if (!defined $blockings_toplevel) {
 	$blockings_toplevel = $toplevel{'temp_blockings'};
+	# XXX quick'n'dirty solution... better to keep all the widgets
+	# and to just clear the items from the hlists.
 	$_->destroy for ($blockings_toplevel->children);
+    } else {
+	$blockings_toplevel->geometry($toplevel_width."x200");
     }
-    my $toplevel_width = int($top->screenwidth*0.7);
-    $blockings_toplevel->geometry($toplevel_width."x200");
 
     # priority
     my $footer = $blockings_toplevel->Frame->pack(qw(-fill x -side bottom));
