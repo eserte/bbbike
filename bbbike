@@ -10987,7 +10987,7 @@ sub show_blockings {
 	$hl->anchorClear;
 	$hl->headerCreate(0, -text => M"Aktivieren");
 	$hl->headerCreate(1, -text => M"Sperrung");
-	$hl->headerCreate(2, -text => M"Dauer");
+	$hl->headerCreate(2, -text => M"Warn-Zeitraum");
 	$hl->columnWidth(0, 80);
 	my $descr_width = $toplevel_width - 200;
 	$hl->columnWidth(1, $descr_width);
