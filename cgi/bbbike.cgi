@@ -3654,11 +3654,12 @@ sub search_coord {
     }
 
     my $is_test_mode = (defined $q->param("test") && grep { /^(?:custom|temp)[-_]blocking/ } $q->param("test"));
-    load_temp_blockings(-test => $is_test_mode);
+    my $fake_time    = $q->param('fake_time');
+    load_temp_blockings(-test => $is_test_mode || $fake_time);
 
     my(%custom_s, @current_temp_blocking);
     {
-	my $t = time;
+	my $t = $fake_time || time;
 	my $index = -1;
 	for my $tb (@temp_blocking) {
 	    $index++;
