@@ -3837,6 +3837,18 @@ sub display_route {
 	return;
     }
 
+    my $route_to_strassen_object = sub {
+	my $bbd_line;
+	if ($r->path && @{ $r->path }) {
+	    $bbd_line = "$startname - $zielname\tX " .
+		join(" ", map { "$_->[0],$_->[1]" }
+		     @{ $r->path || [] }) . "\n";
+	} else {
+	    $bbd_line = '';
+	}
+	Strassen->new_from_data($bbd_line);
+    };
+
     if (defined $output_as && $output_as eq 'gpx-track') {
 	require Strassen::GPX;
 	my $filename = filename_from_route($startname, $zielname, "track") . ".gpx";
@@ -3844,9 +3856,7 @@ sub display_route {
 	    (-type => "application/xml",
 	     -Content_Disposition => "attachment; filename=$filename",
 	    );
-	my $s = Strassen->new_from_data("$startname - $zielname\tX " .
-					join(" ", map { "$_->[0],$_->[1]" }
-					     @{ $r->path || [] }) . "\n");
+	my $s = $route_to_strassen_object->();
 	my $s_gpx = Strassen::GPX->new($s);
 	$s_gpx->{"GlobalDirectives"}->{"map"}[0] = "polar" if $data_is_wgs84;
 	print $s_gpx->bbd2gpx(-as => "track");
@@ -3860,9 +3870,7 @@ sub display_route {
 	    (-type => "application/vnd.google-earth.kml+xml",
 	     -Content_Disposition => "attachment; filename=$filename",
 	    );
-	my $s = Strassen->new_from_data("$startname - $zielname\tX " .
-					join(" ", map { "$_->[0],$_->[1]" }
-					     @{ $r->path || [] }) . "\n");
+	my $s = $route_to_strassen_object->();
 	my $s_kml = Strassen::KML->new($s);
 	$s_kml->{"GlobalDirectives"}->{"map"}[0] = "polar" if $data_is_wgs84;
 	print $s_kml->bbd2kml;
