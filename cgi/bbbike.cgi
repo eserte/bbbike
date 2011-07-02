@@ -5392,14 +5392,18 @@ sub draw_route {
     my $draw;
     my $route; # optional Route object
 
-    if (defined $q->param('coordssession') &&
-	(my $sess = tie_session($q->param('coordssession')))) {
-	# Note: the session data specified by coordssession could
-	# already be deleted. In this case all session data would be
-	# empty, especially the coords. The error will happen later,
-	# in BBBikeDraw.
-	$q->param(coords => $sess->{routestringrep});
-	$route = $sess->{route};
+    my $session_is_expired;
+    if (defined $q->param('coordssession')) {
+	if (my $sess = tie_session($q->param('coordssession'))) {
+	    # Note: the session data specified by coordssession could
+	    # already be deleted. In this case all session data would be
+	    # empty, especially the coords. The error will happen later,
+	    # in BBBikeDraw.
+	    $q->param(coords => $sess->{routestringrep});
+	    $route = $sess->{route};
+	} else {
+	    $session_is_expired = 1;
+	}
     }
 
     if (defined $q->param('oldcs') &&
@@ -5581,15 +5585,24 @@ sub draw_route {
 	    );
     }
 
-    $draw->pre_draw
-	if $draw->can("pre_draw");
-    $draw->draw_map    if $draw->can("draw_map");
-    $draw->draw_wind   if $draw->can("draw_wind");
-    $draw->draw_route  if $draw->can("draw_route");
-    $draw->add_route_descr(-net => make_netz(),
-			   -lang => $lang)
-	if $draw->can("add_route_descr");
-    $draw->flush;
+    eval {
+	$draw->pre_draw
+	    if $draw->can("pre_draw");
+	$draw->draw_map    if $draw->can("draw_map");
+	$draw->draw_wind   if $draw->can("draw_wind");
+	$draw->draw_route  if $draw->can("draw_route");
+	$draw->add_route_descr(-net => make_netz(),
+			       -lang => $lang)
+	    if $draw->can("add_route_descr");
+	$draw->flush;
+    };
+    if ($@) {
+	if ($session_is_expired) {
+	    die "Cannot draw image because session is expired";
+	} else {
+	    die $@;
+	}
+    }
 }
 
 sub create_map {
