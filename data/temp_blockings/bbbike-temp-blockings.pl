@@ -18087,9 +18087,9 @@ EOF
 userdel	q4::inwork -49042,-3647 -48542,-2958 -48338,-2586
 EOF
      },
-     { from  => 1295721720, # 2011-01-22 19:42
-       until => 1309471200, # 2011-07-01 00:00
-       text  => 'Lichterfeld-Schacksdorf: L60: Straßenbau Lauchhammer - Licherfelde, 22.07.2010 bis 30.06.2011 ',
+     { from  => 1309719930, # 2011-07-03 21:05
+       until => 1325372400, # 2012-01-01 00:00
+       text  => 'Lichterfeld-Schacksdorf: L60: Havarie, Straßenzustand Lauchhammer - Licherfelde Umleitung: Lauchhammer - Grünwalde - Staupitz - Sorno - Finsterwalde - Schacksdorf - Lichterfelde, 22.07.2010 bis 31.12.2011 ',
        type  => 'gesperrt',
        source_id => '106200475',
        data  => <<EOF,
@@ -19198,9 +19198,9 @@ EOF
 userdel	2::inwork 85633,-77062 87212,-78642
 EOF
      },
-     { from  => 1308200400, # 2011-06-16 07:00
-       until => 1309532400, # 2011-07-01 17:00
-       text  => 'Granitzstr. (Pankow): Baustelle, für beide Richtungen nur ein Fahrstreifen abwechselnd frei (bis Anfang 07/11) in beiden Richtungen zwischen Haßfurter Weg und Dettelbacher Weg, 17.06.2011 07:00 Uhr bis 01.07.2011 17:00 Uhr ',
+     { from  => 1308805200, # 2011-06-23 07:00
+       until => 1310742000, # 2011-07-15 17:00
+       text  => 'Granitzstr. (Pankow): Baustelle, für beide Richtungen nur ein Fahrstreifen abwechselnd frei (bis Mitte 07/11) in beiden Richtungen zwischen Haßfurter Weg und Dettelbacher Weg, 24.06.2011 07:00 Uhr bis 15.07.2011 17:00 Uhr ',
        type  => 'handicap',
        source_id => 'INKO_107899',
        data  => <<EOF,

@@ -2571,7 +2571,16 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => '106200475',
+         'until' => 1325372400,
+         'text' => 'Lichterfeld-Schacksdorf: L60: Havarie, Straßenzustand Lauchhammer - Licherfelde Umleitung: Lauchhammer - Grünwalde - Staupitz - Sorno - Finsterwalde - Schacksdorf - Lichterfelde, 22.07.2010 bis 31.12.2011 ',
+         'from' => 1309719930,
+         'id' => 2108,
+         'data' => 'userdel	2::inwork 37809,-92300 37918,-93202 37419,-94853 37230,-95682
+',
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
@@ -2914,7 +2923,16 @@ userdel	q4::inwork; 10264,12826 10166,12777 10132,12941
 ',
          'type' => 'gesperrt'
        },
-       undef,
+       {
+         'source_id' => 'INKO_107899',
+         'until' => 1310742000,
+         'text' => 'Granitzstr. (Pankow): Baustelle, für beide Richtungen nur ein Fahrstreifen abwechselnd frei (bis Mitte 07/11) in beiden Richtungen zwischen Haßfurter Weg und Dettelbacher Weg, 24.06.2011 07:00 Uhr bis 15.07.2011 17:00 Uhr ',
+         'from' => 1308805200,
+         'id' => 2230,
+         'data' => 'userdel	q4::inwork 11796,18482 11698,18446
+',
+         'type' => 'handicap'
+       },
        undef,
        {
          'source_id' => 'IM_017476',
