@@ -629,6 +629,7 @@ sub remove_from_deleted {
 sub remove_all_from_deleted {
     my($net, $off_callback, $del_token) = @_;
     my $deleted_net = ($net->{"_Deleted"} ||= {});
+    my $added_wegfuehrung = ($net->{"_Added_Wegfuehrung"} ||= {});
     my @del_tokens;
     if (defined $del_token) {
 	@del_tokens = $del_token;
@@ -640,6 +641,21 @@ sub remove_all_from_deleted {
 	while(my($xy1,$v1) = each %{ $deleted_net->{$del_token}}) {
 	    while(my($xy2,$v2) = each %$v1) {
 		$net->remove_from_deleted($xy1,$xy2,$off_callback,$del_token);
+	    }
+	}
+	while(my($coord,$coords) = each %{ $added_wegfuehrung->{$del_token} }) {
+	    # XXX should also be a separate method, like remove_from_deleted?
+	    # XXX $off_callback handling is missing!
+	    my @changed_wegf;
+	    for my $wegf (@{ $net->{Wegfuehrung}{$coord} || [] }) {
+		if (!$coords->{join(" ", @$wegf)}) {
+		    push @changed_wegf, $wegf;
+		}
+	    }
+	    if (@changed_wegf) {
+		$net->{Wegfuehrung}{$coord} = \@changed_wegf;
+	    } else {
+		delete $net->{Wegfuehrung}{$coord};
 	    }
 	}
     }

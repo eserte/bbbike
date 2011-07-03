@@ -257,8 +257,7 @@ sub make_sperre_1 {
 		push @{ $self->{Wegfuehrung}{$ret->[Strassen::COORDS()][-1]} },
 		     $ret->[Strassen::COORDS()];
 		if (defined $del_token) {
-		    push @{ $self->{"Wegfuehrung_$del_token"}{$ret->[Strassen::COORDS()][-1]} },
-			 $ret->[Strassen::COORDS()];
+		    $self->{"_Added_Wegfuehrung"}{$del_token}{$ret->[Strassen::COORDS()][-1]}{join(" ", @{ $ret->[Strassen::COORDS()] })} = 1;
 		}
 	    } else { # ONEWAY...
 		my @kreuzungen = @{$ret->[Strassen::COORDS()]};
