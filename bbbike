@@ -10745,7 +10745,7 @@ sub activate_temp_blockings {
     my($temp_blockings_dir, $file, $optimized_file) =
 	@{ get_temp_blockings_files() }{qw(dir file optimized_file)};
     if (!-r $file && !-r $optimized_file) {
-	status_message(M("Kein Support fuer temporaere Sperrungen, das Verzeichnis $temp_blockings_dir fehlt. Dieses Verzeichnis ist aus per git erhältlich, siehe README."), "warn");
+	status_message(M("Kein Support fuer temporaere Sperrungen, das Verzeichnis $temp_blockings_dir fehlt. Dieses Verzeichnis ist per git erhältlich, siehe README."), "warn");
 	return;
     }
 
@@ -10805,9 +10805,9 @@ sub activate_temp_blockings {
 		    my $to_date_readable   = defined $o->{until} ? POSIX::strftime($datefmt, localtime($o->{until})) : "...";
 		    if ($from_date_readable eq '...' && $to_date_readable eq '...') {
 			if ($o->{permanent}) {
-			    $date_spec = 'permanent'; # XXX Msg
+			    $date_spec = M"permanent";
 			} else {
-			    $date_spec = 'Ende unbekannt'; # XXX Msg
+			    $date_spec = M"Ende unbekannt";
 			}
 		    } else {
 			$date_spec = $from_date_readable . " - " . $to_date_readable;
@@ -11103,7 +11103,7 @@ sub show_blockings {
 		my $key = $path_i % 2 == 0 ? 'even' : 'odd';
 		$hl->add($path_i);
 		$hl->itemCreate($path_i, 0, -style => $text_style{$key});
-		$hl->itemCreate($path_i, 1, -text => "Bereits behandelte Sperrungen", -style => $header_style{$key});
+		$hl->itemCreate($path_i, 1, -text => M"Bereits behandelte Sperrungen", -style => $header_style{$key});
 		$hl->itemCreate($path_i, 2, -style => $text_style{$key});
 		$path_i++;
 		$not_used_header_shown++;
@@ -19365,9 +19365,9 @@ sub _blockings_infobar_exists {
     return if $blockings_infobar && Tk::Exists($blockings_infobar);
     my %stdcolor = (-bg => 'yellow');
     $blockings_infobar = $c->Frame(Name => "blockingsinfobar", %stdcolor, -relief => 'raised', -borderwidth => 1);
-    $blockings_infobar->Label(-text => "Mögliche temporäre Sperrungen auf der Route", %stdcolor)->pack(-side => "left"); # XXX Msg
+    $blockings_infobar->Label(-text => M"Mögliche temporäre Sperrungen auf der Route", %stdcolor)->pack(-side => "left");
     $blockings_infobar->Button(-padx => 1, -pady => 1, -borderwidth => 1,
-			       -text => "Anzeigen",
+			       -text => M"Anzeigen",
 			       -command => sub { show_blockings() },
 			      )->pack(-side => "left", -padx => 10);
     $blockings_infobar->idletasks; # to force -reqheight to be set
