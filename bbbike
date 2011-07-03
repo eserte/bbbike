@@ -10854,9 +10854,7 @@ sub activate_temp_blockings {
 	$current_temp_blockings_net->make_net_cat(-onewayhack => 1, -net2name => 1);
 	$current_temp_blockings_net->make_sperre($ms, Type => ['wegfuehrung']);
 	print STDERR "Aktive temporäre Sperrungen: " . join(", ", $ms->dependent_files) . "\n" if $verbose;
-	make_net() if !$net;
-	make_handicap_net() if !$handicap_s_net;
-	add_temp_blockings_to_net($ms);
+	add_temp_blockings_to_net();
 	plot("p", "temp_sperre", -object => $ms, -draw => 1);
 	plot("str", "temp_sperre_s", -object => $ms, -draw => 1);
 	if (@realcoords) {
@@ -10879,6 +10877,8 @@ sub apply_temp_blockings {
 }
 
 sub add_temp_blockings_to_net {
+    make_net() if !$net;
+    make_handicap_net() if !$handicap_s_net;
     my $add_sperre_s   = Strassen->new;
     my $add_handicap_s = Strassen->new;
     while(my($name,$v) = each %temp_blockings_on_route) {
