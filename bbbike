@@ -10884,11 +10884,11 @@ sub add_temp_blockings_to_net {
 sub apply_temp_blockings {
     make_net() if !$net;
     my $ms = Strassen->new;
-    for my $name (keys %temp_blockings_on_route_active) {
-	next if !$temp_blockings_on_route_active{$name};
-	for my $section (@{ $temp_blockings_on_route{$name} }) {
-	    my $r = $section->[0];
-	    $ms->push($r);
+    while(my($name,$v) = each %temp_blockings_on_route) {
+	if ($v->{state} eq 'active') {
+	    for my $r (@{ $v->{data} }) {
+		$ms->push($r);
+	    }
 	}
     }
     $net->remove_all_from_deleted(undef, 'std-temp-blockings');
@@ -10903,8 +10903,9 @@ sub check_path_in_blockings_net {
 }
 
 sub check_path_in_blockings_net_reset {
-    @temp_blockings_on_route = ();
-    %temp_blockings_on_route = ();
+#XXX????
+#    @temp_blockings_on_route = ();
+#    %temp_blockings_on_route = ();
 }
 
 sub check_path_in_blockings_net_continue {
@@ -10920,22 +10921,26 @@ sub check_path_in_blockings_net_continue {
 		my $r = $current_temp_blockings_ms->get($pos);
 		my $blocking_text = $r->[Strassen::NAME];
 		if (!exists $temp_blockings_on_route{$blocking_text}) {
-		    push @temp_blockings_on_route, $blocking_text;
-		}
-		$current_temp_blockings_ms->init;
-		while() {
-		    my $r = $current_temp_blockings_ms->next;
-		    my @c = @{ $r->[Strassen::COORDS] };
-		    last if !@c;
-		    if ($r->[Strassen::NAME] eq $blocking_text) {
-			push @{ $temp_blockings_on_route{$blocking_text} }, [$r];
+		    # Gather all records belonging to this blocking:
+		    my @data;
+		    $current_temp_blockings_ms->init;
+		    while() {
+			my $r = $current_temp_blockings_ms->next;
+			my @c = @{ $r->[Strassen::COORDS] };
+			last if !@c;
+			if ($r->[Strassen::NAME] eq $blocking_text) {
+			    push @data, $r;
+			}
 		    }
+		    $temp_blockings_on_route{$blocking_text} = { state => 'undecided',
+								 data => \@data,
+							       };
 		}
 	    }
 	}
     }
 
-    if (@temp_blockings_on_route) {
+    if (first { $temp_blockings_on_route{$_}->{state} eq 'undecided' } keys %temp_blockings_on_route) {
 	show_blockings_infobar();
     } else {
 	hide_blockings_infobar();
@@ -10959,17 +10964,18 @@ sub show_blockings {
 	$blockings_toplevel->geometry($toplevel_width."x200");
     }
 
-    # priority
+    # packer priority -> draw first
     my $footer = $blockings_toplevel->Frame->pack(qw(-fill x -side bottom));
+    my $cb = $footer->Button(Name => "close",
+			     -command => sub { $blockings_toplevel->destroy })->pack(-anchor => 'e', -side => "right");
+    $blockings_toplevel->bind('<Escape>' => sub { $cb->invoke });
 
-    if (!@temp_blockings_on_route) {
+
+    if (!keys %temp_blockings_on_route) {
 	$blockings_toplevel->Label(-text => M"Keine Sperrungen auf der Route", -font => $font{bold})->pack;
-    }
+    } else {
+	my %gui_temp_blockings_on_route_active = map { ($_ => $temp_blockings_on_route{$_}->{state} eq 'active') } keys %temp_blockings_on_route;
 
-    my @temp_blockings_on_route_active = grep { $temp_blockings_on_route_active{$_} } keys %temp_blockings_on_route_active;
-    my %gui_temp_blockings_on_route_active = %temp_blockings_on_route_active; # the workset for the gui
-
-    if (@temp_blockings_on_route || @temp_blockings_on_route_active) {
 	require Tk::HList;
 	my $hl;
 	$hl = $blockings_toplevel->Scrolled
@@ -10980,12 +10986,11 @@ sub show_blockings {
 	     -browsecmd => sub {
 		 my($hl_index) = @_;
 		 return if !defined $hl_index;
-		 my $data_index = $hl->info('data', $hl_index);
-		 return if !defined $data_index;
-		 my $name = $temp_blockings_on_route[$data_index];
+		 my $name = $hl->info('data', $hl_index);
+		 return if !defined $name;
 		 my $coords = [
-			       map { [ transpose_all(@{ Strassen::to_koord($_->[0]->[Strassen::COORDS]) }) ] }
-			       @{ $temp_blockings_on_route{$name} }
+			       map { [ transpose_all(@{ Strassen::to_koord($_->[Strassen::COORDS]) }) ] }
+			       @{ $temp_blockings_on_route{$name}->{data} }
 			      ];
 		 mark_street(-coords => $coords);
 	     },
@@ -11014,7 +11019,7 @@ sub show_blockings {
 	my $path_i = 0;
 
 	my $add_line = sub {
-	    my($name, $index) = @_;
+	    my($name) = @_;
 	    my $key = $path_i % 2 == 0 ? 'even' : 'odd';
 	    $hl->add($path_i, -itemtype => 'window', -style => $nopad_style{$key},
 		     -widget => $hl->Checkbutton(-variable => \$gui_temp_blockings_on_route_active{$name},
@@ -11023,7 +11028,7 @@ sub show_blockings {
 						 -background => $bg_color{$key},
 						 -highlightthickness => 0,
 						),
-		     (defined $index ? (-data => $index) : ()),
+		     -data => $name,
 		    );
 	    if (my($desc, $date_spec) = $name =~ m{^(.*)\s\[(.*?)\]$}) {
 		$hl->itemCreate($path_i, 1, -text => $desc, -style => $descr_style{$key});
@@ -11035,52 +11040,48 @@ sub show_blockings {
 	    $path_i++;
 	};
 
-	for my $i (0 .. $#temp_blockings_on_route) {
-	    my $name = $temp_blockings_on_route[$i];
-	    $seen_temp_blockings_on_route{$name}++;
-	    $add_line->($name, $i);
+	for my $name (sort keys %temp_blockings_on_route) {
+	    if ($temp_blockings_on_route{$name}->{state} eq 'undecided') {
+		$add_line->($name);
+	    }
 	}
 
-	# Show the selected temp blockings not active in this search:
 	my $not_used_header_shown;
-	for my $name (@temp_blockings_on_route_active) {
-	    next if $seen_temp_blockings_on_route{$name};
+	for my $name (sort keys %temp_blockings_on_route) {
+	    next if $temp_blockings_on_route{$name}->{state} eq 'undecided';
 	    if (!$not_used_header_shown) {
 		my $key = $path_i % 2 == 0 ? 'even' : 'odd';
 		$hl->add($path_i);
 		$hl->itemCreate($path_i, 0, -style => $text_style{$key});
-		$hl->itemCreate($path_i, 1, -text => "Bereits aktivierte Sperrungen", -style => $header_style{$key});
+		$hl->itemCreate($path_i, 1, -text => "Bereits behandelte Sperrungen", -style => $header_style{$key});
 		$hl->itemCreate($path_i, 2, -style => $text_style{$key});
 		$path_i++;
 		$not_used_header_shown++;
 	    }
 	    $add_line->($name);
 	}
-    }
 
-    my $cb = $footer->Button(Name => "close",
-			     -command => sub { $blockings_toplevel->destroy })->pack(-anchor => 'e', -side => "right");
-    $blockings_toplevel->bind('<Escape>' => sub { $cb->invoke });
-    if (@temp_blockings_on_route) {
 	$footer->Button(-text => M"Alle umfahren",
 			-command => sub {
-			    %temp_blockings_on_route_active = %gui_temp_blockings_on_route_active;
-			    for my $name (@temp_blockings_on_route) {
-				$temp_blockings_on_route_active{$name} = 1;
+			    while(my($name,$v) = each %temp_blockings_on_route) {
+				$temp_blockings_on_route{$name}->{state} = 'active';
 			    }
 			    apply_temp_blockings();
 			})->pack(-anchor => 'e', -side => "right");
 	$footer->Button(-text => M"Ausgewählte umfahren",
 			-command => sub {
-			    %temp_blockings_on_route_active = %gui_temp_blockings_on_route_active;
+			    while(my($name,$v) = each %gui_temp_blockings_on_route_active) {
+				$temp_blockings_on_route{$name}->{state} = $v ? 'active' : 'ignore';
+			    }
 			    apply_temp_blockings();
 			})->pack(-anchor => 'e', -side => "right");
-    } elsif (@temp_blockings_on_route_active) {
-	$footer->Button(-text => M"Anwenden",
+	$footer->Button(-text => M"Alle ignorieren",
 			-command => sub {
-			    %temp_blockings_on_route_active = %gui_temp_blockings_on_route_active;
+			    while(my($name,$v) = each %temp_blockings_on_route) {
+				$temp_blockings_on_route{$name}->{state} = 'ignore';
+			    }
 			    apply_temp_blockings();
-			})->pack(-anchor => 'e', -side => "right");
+			})->pack(-anchor => 'e', -side => 'right');
     }
 }
 

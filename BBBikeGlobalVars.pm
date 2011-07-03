@@ -24,7 +24,7 @@ use strict;
 use vars
   qw($bbbike_context $splash_screen $booting $status_message_dialog $status_message_toplevel
      $coords_ref $realcoords_ref $search_route_points_ref @realcoords
-     @temp_blockings_on_route %temp_blockings_on_route %temp_blockings_on_route_active
+     %temp_blockings_on_route
      $VERSION $PROG_REVISION $tmpdir %tmpfiles $progname
      $os $os_bsd $use_clipboard $verbose $advanced $devel_host $public_test
      $datadir $no_original_datadir $city $country
