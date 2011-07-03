@@ -5600,6 +5600,7 @@ sub load_photos {
     $inwork_photo        = load_photo($top, 'inwork');
     $achtung_photo       = load_photo($top, 'achtung');
     $cal_photo           = load_photo($top, 'cal');
+    $clock_photo	 = load_photo($top, 'clock');
     $night_photo	 = load_photo($top, 'night');
     $ferry_photo         = load_photo($top, 'ferry');
     $ferry_klein_photo   = load_photo($top, 'ferry_klein');
@@ -10606,8 +10607,9 @@ sub plot_sperre {
 
 		    # Add an additional icon
 		    for my $check (['inwork', $inwork_photo],
-				   ['temp',   $cal_photo],
 				   ['night',  $night_photo],
+				   ['clock',  $clock_photo],
+				   ['temp',   $cal_photo], # should be last
 				  ) {
 			my($addinfo, $photo) = @$check;
 			if ($addinfo{$addinfo} && $photo) {
