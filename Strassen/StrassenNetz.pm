@@ -257,6 +257,10 @@ sub make_sperre_1 {
 		push @{ $self->{Wegfuehrung}{$ret->[Strassen::COORDS()][-1]} },
 		     $ret->[Strassen::COORDS()];
 		if (defined $del_token) {
+		    # XXX Maybe the $del_token part has to be between
+		    # princicap coord and joined coords string ---
+		    # otherwise deletion in remove_all_from_deleted is
+		    # not 100% secure, especially for doubled values
 		    $self->{"_Added_Wegfuehrung"}{$del_token}{$ret->[Strassen::COORDS()][-1]}{join(" ", @{ $ret->[Strassen::COORDS()] })} = 1;
 		}
 	    } else { # ONEWAY...
