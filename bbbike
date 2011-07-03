@@ -10763,12 +10763,16 @@ sub activate_temp_blockings {
 	$show_active_temp_blockings = 0;
 	plot("p", "temp_sperre", -draw => 0);
 	plot("str", "temp_sperre_s", -draw => 0);
-	make_net(); # XXX find more performant solution
-	undef $temporary_handicap_s;
-	if ($handicap_s_net) {
-	    undef $handicap_s_net;
-	    make_handicap_net();
-	}
+	#XXX del? ??? not needed??? make_net(); # XXX find more performant solution
+	#XXX del? undef $temporary_handicap_s;
+	#if ($handicap_s_net) {
+	#    undef $handicap_s_net;
+	#    make_handicap_net();
+	#}
+	undef $current_temp_blockings_net;
+	reset_temp_blockings();
+	hide_blockings();
+	hide_blockings_infobar();
 	return;
     }
 
@@ -10853,6 +10857,9 @@ sub activate_temp_blockings {
 	add_temp_blockings_to_net($ms);
 	plot("p", "temp_sperre", -object => $ms, -draw => 1);
 	plot("str", "temp_sperre_s", -object => $ms, -draw => 1);
+	if (@realcoords) {
+	    check_path_in_blockings_net(\@realcoords);
+	}
     };
     if ($@) {
 	$show_active_temp_blockings = 0;
@@ -10881,18 +10888,14 @@ sub add_temp_blockings_to_net {
     $net->load_user_deletions($ms, -deltoken => 'std-temp-blockings');
 }
 
+
+sub reset_temp_blockings {
+    %temp_blockings_on_route = ();
+    apply_temp_blockings();
+}
+
 sub check_path_in_blockings_net {
-    my($pathref) = @_;
-    check_path_in_blockings_net_reset();
-    check_path_in_blockings_net_continue($pathref);
-}
-
-sub check_path_in_blockings_net_reset {
-    # We don't reset anymore. But what should probably be done, is a
-    # out-of-date check somewhere XXX
-}
-
-sub check_path_in_blockings_net_continue {
+    return if !$current_temp_blockings_net;
     my($pathref) = @_;
     my $net      = $current_temp_blockings_net->{Net};
     for my $p_i (0 .. $#$pathref-1) {
@@ -11067,6 +11070,12 @@ sub show_blockings {
 			    }
 			    apply_temp_blockings();
 			})->pack(-anchor => 'e', -side => 'right');
+    }
+}
+
+sub hide_blockings {
+    if (Tk::Exists($toplevel{temp_blockings})) {
+	$toplevel{temp_blockings}->destroy;
     }
 }
 
@@ -15200,7 +15209,6 @@ sub delete_route {
 	set_map_mode(MM_SEARCH);
     }
 
-    check_path_in_blockings_net_reset();
     hide_blockings_infobar();
 
     Hooks::get_hooks("del_route")->execute;
@@ -17276,10 +17284,7 @@ sub search_route {
 	}
 
 	my @path = @{ $res[StrassenNetz::RES_PATH] };
-	if (!$continue) {
-	    check_path_in_blockings_net_reset();
-	}
-	check_path_in_blockings_net_continue(\@path);
+	check_path_in_blockings_net(\@path);
  	my $old_nr;
  	if ($continue) {
  	    save_route_to_register('cont'); # if $max_list > 0;
@@ -18316,9 +18321,6 @@ sub make_handicap_net {
 	    my @s = (Strassen->new("handicap_s"),
 		     Strassen->new("handicap_l"),
 		    );
-	    if ($temporary_handicap_s) {
-		push @s, $temporary_handicap_s;
-	    }
 	    $handicap_s_net = StrassenNetz->new(MultiStrassen->new(@s));
 	    $handicap_s_net->make_net_cat;
 	};
