@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2009 Slaven Rezic. All rights reserved.
+# Copyright (C) 2009,2011 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,56 +15,67 @@ package Tk::SmoothShow;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.1 $ =~ /(\d+)\.(\d+)/);
+$VERSION = '1.02';
+
+use Time::HiRes qw(time);
 
 sub show {
-    my($f, $delta, $wait) = @_;
+    my($f, %args) = @_;
     return if !Tk::Exists($f);
     if (!$f->manager) {
 	$f->place(-x => 0, -y => 0, -relwidth => 1, -height => 0);
     }
     return if ($f->height >= $f->reqheight);
 
-    $delta = 2 if !$delta;
-    $wait = 10 if !$wait;
+    my $speed = delete $args{-speed} || 200; # px per second
+    my $wait  = delete $args{-wait}  || 10;  # miliseconds
+    die "Unhandled arguments: " . join(" ", %args) if %args;
+
+    my $start_time = time;
 
     my $increase;
     $increase = sub {
-	my($new_height) = @_;
 	return if !Tk::Exists($f);
+	my $delta = time - $start_time;
+	my $new_height = int($speed * $delta);
 	$new_height = $f->reqheight if $new_height > $f->reqheight;
 	$f->place(-height => $new_height);
 	if ($new_height < $f->reqheight) {
-	    $f->after($wait, sub { $increase->($new_height+$delta) });
+	    $f->after($wait, $increase);
 	}
     };
 
-    $f->after($wait, sub { $increase->($f->height+$delta) });
+    $f->after($wait, $increase);
 }
 
 sub hide {
-    my($f, $delta, $wait) = @_;
+    my($f, %args) = @_;
     return if !Tk::Exists($f);
     return if !$f->manager;
     return if $f->height <= 0;
 
-    $delta = 2 if !$delta;
-    $wait = 10 if !$wait;
+    my $speed = delete $args{-speed} || 200; # px per second
+    my $wait  = delete $args{-wait}  || 10;  # miliseconds
+    die "Unhandled arguments: " . join(" ", %args) if %args;
+
+    my $start_time = time;
+    my $start_height = $f->height;
 
     my $decrease;
     $decrease = sub {
-	my($new_height) = @_;
 	return if !Tk::Exists($f);
+	my $delta = time - $start_time;
+	my $new_height = $start_height - int($speed * $delta);
 	$new_height = 0 if $new_height < 0;
 	$f->place(-height => $new_height);
 	if ($new_height > 0) {
-	    $f->after($wait, sub { $decrease->($new_height-$delta) });
+	    $f->after($wait, $decrease);
 	} else {
 	    $f->placeForget;
 	}
     };
 
-    $f->after($wait, sub { $decrease->($f->height-$delta) });
+    $f->after($wait, $decrease);
 }
 
 1;
