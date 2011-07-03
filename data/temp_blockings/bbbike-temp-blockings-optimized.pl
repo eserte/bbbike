@@ -1946,7 +1946,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
          'id' => 1813,
          'data' => '######################################################################
 # Wochenmärkte vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
-	q4::temp 4397,7375 4330,7375 4162,7375 4059,7375
+	q4::temp:clock 4397,7375 4330,7375 4162,7375 4059,7375
 ',
          'type' => 'gesperrt'
        },
@@ -1956,7 +1956,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
          'text' => 'Nestorstr.: Di und Fr 08.00-13.00 Wochenmarkt, Behinderungen möglich',
          'from' => undef,
          'id' => 1814,
-         'data' => '	q4::temp 3374,10201 3359,9968 3347,9793
+         'data' => '	q4::temp:clock 3374,10201 3359,9968 3347,9793
 ',
          'type' => 'gesperrt'
        },
@@ -1966,7 +1966,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
          'text' => 'Maybachufer: Di und Fr 11.00-18.30 Wochenmarkt, Behinderungen möglich',
          'from' => undef,
          'id' => 1815,
-         'data' => '	q4::temp 11543,10015 11669,9987 11880,9874
+         'data' => '	q4::temp:clock 11543,10015 11669,9987 11880,9874
 ',
          'type' => 'gesperrt'
        },
@@ -1977,7 +1977,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
          'from' => undef,
          'id' => 1816,
          'data' => '#: note: http://www.berlin.de/ba-friedrichshain-kreuzberg/wirtschaftsfoerderung/wirtschaftsstandort/maerkte.html
-	q4::temp 9566,10566 9580,10434
+	q4::temp:clock 9566,10566 9580,10434
 ',
          'type' => 'gesperrt'
        },
@@ -1987,7 +1987,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
          'text' => 'Crellestr: Mi und Sa 10.00-15.00 Wochenmarkt, Behinderungen möglich',
          'from' => undef,
          'id' => 1817,
-         'data' => '	q4::temp 7882,9490 7836,9413 7771,9389
+         'data' => '	q4::temp:clock 7882,9490 7836,9413 7771,9389
 ',
          'type' => 'gesperrt'
        },
@@ -1997,7 +1997,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
          'text' => 'Charlottenbrunner Str.: Mo und Do 09.00-14.00 Wochenmarkt, Ausweichen auf Gehweg',
          'from' => undef,
          'id' => 1818,
-         'data' => '	q4::temp 3073,9020 2972,9037
+         'data' => '	q4::temp:clock 3073,9020 2972,9037
 ',
          'type' => 'gesperrt'
        },
@@ -2007,7 +2007,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
          'text' => 'Karl-August-Platz, Weimarer Str.: Mi 08.00-13.00 und Sa 08.00-14.00 Wochenmarkt, Behinderungen möglich',
          'from' => undef,
          'id' => 1819,
-         'data' => '	q4::temp 4101,11347 4101,11233
+         'data' => '	q4::temp:clock 4101,11347 4101,11233
 ',
          'type' => 'gesperrt'
        },
@@ -2017,7 +2017,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
          'text' => 'Richard-Wagner-Platz: Wochenmarkt Mo und Do 08.00-13.00, Behinderungen möglich',
          'from' => undef,
          'id' => 1820,
-         'data' => '	q4::temp 3763,12279 3701,12279
+         'data' => '	q4::temp:clock 3763,12279 3701,12279
 ',
          'type' => 'gesperrt'
        },
@@ -2027,7 +2027,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
          'text' => 'Ladiusmarkt in der Andréezeile: Wochenmarkt Dienstag, Donnerstag und Sonnabend, Behinderungen möglich',
          'from' => undef,
          'id' => 1821,
-         'data' => '	q4::temp 1020,496 1078,443
+         'data' => '	q4::temp:clock 1020,496 1078,443
 ',
          'type' => 'gesperrt'
        },
@@ -2037,7 +2037,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
          'text' => 'Preußenallee zwischen Marathonallee und Badenallee: Wochenmarkt Mo 08.00-13.00 und Do 08.00-13.00, Behinderungen möglich',
          'from' => undef,
          'id' => 1822,
-         'data' => '	q4::temp 596,11951 585,11830 572,11698 563,11601
+         'data' => '	q4::temp:clock 596,11951 585,11830 572,11698 563,11601
 # Wochenmärkte ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 ######################################################################
 ',
@@ -2160,7 +2160,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
          'text' => 'Breslauer Platz: Wochenmarkt Mittwoch 8-13 Uhr, Donnerstag 12-17 Uhr, Samstag 8-14 Uhr, Behinderungen möglich',
          'from' => undef,
          'id' => 1884,
-         'data' => '	q4::temp 5902,7334 5810,7337 5817,7223
+         'data' => '	q4::temp:clock 5902,7334 5810,7337 5817,7223
 ',
          'type' => 'gesperrt'
        },
@@ -2171,7 +2171,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
          'text' => 'Erich-Steinfurth-Str.: Antikmarkt am Ostbahnhof, Sonntag 9-17 Uhr, nur Schieben möglich',
          'from' => undef,
          'id' => 1886,
-         'data' => '	q4::temp 12596,11696 12453,11790 12366,11808
+         'data' => '	q4::temp:clock 12596,11696 12453,11790 12366,11808
 ',
          'type' => 'gesperrt'
        },
@@ -2181,8 +2181,8 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
          'text' => 'Am Kupfergraben und am Zeughaus: Berliner Kunst- und Nostalgiemarkt, Samstag und Sonntag ca. 11-17 Uhr, nur Schieben möglich',
          'from' => undef,
          'id' => 1887,
-         'data' => '	q4::temp 9754,12775 9661,12876 9618,12907 9529,12925
-	q4::temp 9919,12613 9950,12522 9984,12426
+         'data' => '	q4::temp:clock 9754,12775 9661,12876 9618,12907 9529,12925
+	q4::temp:clock 9919,12613 9950,12522 9984,12426
 ',
          'type' => 'gesperrt'
        },

@@ -15410,7 +15410,7 @@ EOF
        data  => <<EOF,
 ######################################################################
 # Wochenmärkte vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
-	q4::temp 4397,7375 4330,7375 4162,7375 4059,7375
+	q4::temp:clock 4397,7375 4330,7375 4162,7375 4059,7375
 EOF
      },
      { from  => undef, #
@@ -15419,7 +15419,7 @@ EOF
        type  => 'gesperrt',
        permanent => 1,
        data  => <<EOF,
-	q4::temp 3374,10201 3359,9968 3347,9793
+	q4::temp:clock 3374,10201 3359,9968 3347,9793
 EOF
      },
      { from  => undef, #
@@ -15428,7 +15428,7 @@ EOF
        type  => 'gesperrt',
        permanent => 1,
        data  => <<EOF,
-	q4::temp 11543,10015 11669,9987 11880,9874
+	q4::temp:clock 11543,10015 11669,9987 11880,9874
 EOF
      },
      { from  => undef, #
@@ -15438,7 +15438,7 @@ EOF
        permanent => 1,
        data  => <<EOF,
 #: note: http://www.berlin.de/ba-friedrichshain-kreuzberg/wirtschaftsfoerderung/wirtschaftsstandort/maerkte.html
-	q4::temp 9566,10566 9580,10434
+	q4::temp:clock 9566,10566 9580,10434
 EOF
      },
      { from  => undef, #
@@ -15447,7 +15447,7 @@ EOF
        type  => 'gesperrt',
        permanent => 1,
        data  => <<EOF,
-	q4::temp 7882,9490 7836,9413 7771,9389
+	q4::temp:clock 7882,9490 7836,9413 7771,9389
 EOF
      },
      { from  => undef, #
@@ -15456,7 +15456,7 @@ EOF
        type  => 'gesperrt',
        permanent => 1,
        data  => <<EOF,
-	q4::temp 3073,9020 2972,9037
+	q4::temp:clock 3073,9020 2972,9037
 EOF
      },
      { from  => undef, #
@@ -15465,7 +15465,7 @@ EOF
        type  => 'gesperrt',
        permanent => 1,
        data  => <<EOF,
-	q4::temp 4101,11347 4101,11233
+	q4::temp:clock 4101,11347 4101,11233
 EOF
      },
      { from  => undef, #
@@ -15474,7 +15474,7 @@ EOF
        type  => 'gesperrt',
        permanent => 1,
        data  => <<EOF,
-	q4::temp 3763,12279 3701,12279
+	q4::temp:clock 3763,12279 3701,12279
 EOF
      },
      { from  => undef, #
@@ -15483,7 +15483,7 @@ EOF
        type  => 'gesperrt',
        permanent => 1,
        data  => <<EOF,
-	q4::temp 1020,496 1078,443
+	q4::temp:clock 1020,496 1078,443
 EOF
      },
      { from  => undef, #
@@ -15492,7 +15492,7 @@ EOF
        type  => 'gesperrt',
        permanent => 1,
        data  => <<EOF,
-	q4::temp 596,11951 585,11830 572,11698 563,11601
+	q4::temp:clock 596,11951 585,11830 572,11698 563,11601
 # Wochenmärkte ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 ######################################################################
 EOF
@@ -16025,7 +16025,7 @@ EOF
        type  => 'gesperrt',
        permanent => 1,
        data  => <<EOF,
-	q4::temp 5902,7334 5810,7337 5817,7223
+	q4::temp:clock 5902,7334 5810,7337 5817,7223
 EOF
      },
      { from  => 1254261600, # 2009-09-30 00:00
@@ -16047,7 +16047,7 @@ EOF
        type  => 'gesperrt',
        permanent => 1,
        data  => <<EOF,
-	q4::temp 12596,11696 12453,11790 12366,11808
+	q4::temp:clock 12596,11696 12453,11790 12366,11808
 EOF
      },
      { from  => undef, #
@@ -16056,8 +16056,8 @@ EOF
        type  => 'gesperrt',
        permanent => 1,
        data  => <<EOF,
-	q4::temp 9754,12775 9661,12876 9618,12907 9529,12925
-	q4::temp 9919,12613 9950,12522 9984,12426
+	q4::temp:clock 9754,12775 9661,12876 9618,12907 9529,12925
+	q4::temp:clock 9919,12613 9950,12522 9984,12426
 EOF
      },
      { from  => 1253224800, # 2009-09-18 00:00
