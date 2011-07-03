@@ -11045,17 +11045,18 @@ sub show_blockings {
 	    $add_line->($name);
 	}
 
-	$footer->Button(-text => M"Alle umfahren",
-			-command => sub {
-			    while(my($name,$v) = each %temp_blockings_on_route) {
-				$temp_blockings_on_route{$name}->{state} = 'active';
-			    }
-			    apply_temp_blockings();
-			})->pack(-anchor => 'e', -side => "right");
 	$footer->Button(-text => M"Ausgewählte umfahren",
 			-command => sub {
 			    while(my($name,$v) = each %gui_temp_blockings_on_route_active) {
 				$temp_blockings_on_route{$name}->{state} = $v ? 'active' : 'ignore';
+			    }
+			    apply_temp_blockings();
+			})->pack(-anchor => 'w', -side => "left");
+
+	$footer->Button(-text => M"Alle umfahren",
+			-command => sub {
+			    while(my($name,$v) = each %temp_blockings_on_route) {
+				$temp_blockings_on_route{$name}->{state} = 'active';
 			    }
 			    apply_temp_blockings();
 			})->pack(-anchor => 'e', -side => "right");
