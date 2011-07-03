@@ -10852,6 +10852,7 @@ sub activate_temp_blockings {
 	$current_temp_blockings_ms = $ms;
 	$current_temp_blockings_net = StrassenNetz->new($ms);
 	$current_temp_blockings_net->make_net_cat(-onewayhack => 1, -net2name => 1);
+	$current_temp_blockings_net->make_sperre($ms, Type => ['wegfuehrung']);
 	print STDERR "Aktive temporäre Sperrungen: " . join(", ", $ms->dependent_files) . "\n" if $verbose;
 	make_net() if !$net;
 	make_handicap_net() if !$handicap_s_net;
@@ -10859,6 +10860,7 @@ sub activate_temp_blockings {
 	plot("p", "temp_sperre", -object => $ms, -draw => 1);
 	plot("str", "temp_sperre_s", -object => $ms, -draw => 1);
 	if (@realcoords) {
+	    clear_undecided_temp_blockings();
 	    check_path_in_blockings_net(\@realcoords);
 	}
     };
@@ -10910,34 +10912,79 @@ sub reset_temp_blockings {
     apply_temp_blockings();
 }
 
+sub _add_to_temp_blockings_on_route {
+    my($r) = @_;
+    my $blocking_text = $r->[Strassen::NAME];
+    if (!exists $temp_blockings_on_route{$blocking_text}) {
+	# Gather all records belonging to this blocking:
+	my @data;
+	$current_temp_blockings_ms->init;
+	while() {
+	    my $r = $current_temp_blockings_ms->next;
+	    my @c = @{ $r->[Strassen::COORDS] };
+	    last if !@c;
+	    if ($r->[Strassen::NAME] eq $blocking_text) {
+		push @data, $r;
+	    }
+	}
+	$temp_blockings_on_route{$blocking_text} = { state => 'undecided',
+						     data => \@data,
+						   };
+    }
+}
+
+sub clear_undecided_temp_blockings {
+    for my $name (keys %temp_blockings_on_route) {
+	delete $temp_blockings_on_route{$name}
+	    if $temp_blockings_on_route{$name}->{state} eq 'undecided';
+    }
+}
+
 sub check_path_in_blockings_net {
     return if !$current_temp_blockings_net;
     my($pathref) = @_;
-    my $net      = $current_temp_blockings_net->{Net};
-    for my $p_i (0 .. $#$pathref-1) {
+    my $net         = $current_temp_blockings_net->{Net};
+    my $wegfuehrung = $current_temp_blockings_net->{Wegfuehrung};
+ PATH_SEGMENT: for my $p_i (0 .. $#$pathref-1) {
 	my($xy0, $xy1) = (join(',', @{$pathref->[$p_i]}), 
 			  join(',', @{$pathref->[$p_i+1]}));
-	# XXX This part probably does not handle "wegführung" correctly!
+
+	# Handling "1"/"2" and "qX" types
 	if (exists $net->{$xy0} && exists $net->{$xy0}{$xy1}) {
 	    my($pos) = $current_temp_blockings_net->net2name($xy0, $xy1);
 	    if (defined $pos) {
 		my $r = $current_temp_blockings_ms->get($pos);
-		my $blocking_text = $r->[Strassen::NAME];
-		if (!exists $temp_blockings_on_route{$blocking_text}) {
-		    # Gather all records belonging to this blocking:
-		    my @data;
+		my $cat = $r->[Strassen::CAT];
+		if ($cat ne '3') {
+		    _add_to_temp_blockings_on_route($r);
+		    next PATH_SEGMENT;
+		}
+		# XXX else: Handled in the Wegführung part
+	    }
+	}
+
+	# Handling "3" (wegfuehrung) types
+	if ($wegfuehrung && exists $wegfuehrung->{$xy1}) {
+	    for my $wegfuehrung (@{ $wegfuehrung->{$xy1} }) {
+	    CHECK_WEGFUEHRUNG: {
+		    for(my $j=0; $j<$#$wegfuehrung; $j++) {
+			last CHECK_WEGFUEHRUNG
+			    if ($j > $p_i || join(",",@{$pathref->[$p_i-$j]}) ne $wegfuehrung->[$#$wegfuehrung-1-$j]);
+		    }
+		    # XXX Hackish: find a matching record in $current_temp_blockings_ms
+		    my $matching_r;
 		    $current_temp_blockings_ms->init;
 		    while() {
 			my $r = $current_temp_blockings_ms->next;
 			my @c = @{ $r->[Strassen::COORDS] };
 			last if !@c;
-			if ($r->[Strassen::NAME] eq $blocking_text) {
-			    push @data, $r;
+			for my $c_i (0 .. $#c-1) {
+			    if ($xy0 eq $c[$c_i] && $xy1 eq $c[$c_i+1]) {
+				_add_to_temp_blockings_on_route($r);
+				next PATH_SEGMENT; # XXX is this correct? or should we get all the wegführung here?
+			    }
 			}
 		    }
-		    $temp_blockings_on_route{$blocking_text} = { state => 'undecided',
-								 data => \@data,
-							       };
 		}
 	    }
 	}
@@ -15181,6 +15228,7 @@ sub reverse_route {
 	if ($show_strlist) {
 	    show_route_strname();
 	}
+	clear_undecided_temp_blockings();
 	check_path_in_blockings_net(\@realcoords);
 	restack_delayed();
     };
@@ -17300,6 +17348,9 @@ sub search_route {
 	}
 
 	my @path = @{ $res[StrassenNetz::RES_PATH] };
+	if (!$continue) {
+	    clear_undecided_temp_blockings();
+	}
 	check_path_in_blockings_net(\@path);
  	my $old_nr;
  	if ($continue) {
