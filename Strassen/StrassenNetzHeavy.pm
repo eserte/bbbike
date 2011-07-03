@@ -828,6 +828,46 @@ sub merge {
     }
 }
 
+sub push_stack {
+    my($self, $another_self) = @_;
+
+    my @modified;
+    my @added;
+
+    my $net         = $self->{Net};
+    my $another_net = $another_self->{Net};
+    while(my($k1,$v1) = each %{ $another_net }) {
+	while(my($k2,$v2) = each %$v1) {
+	    if (exists $net->{$k1}{$k2}) {
+		push @modified, [$k1, $k2, $net->{$k1}{$k2}];
+	    } else {
+		push @added,    [$k1, $k2];
+	    }
+	    $net->{$k1}{$k2} = $v2;
+	}
+    }
+
+    push @{ $self->{_Stack} }, {
+				modified => \@modified,
+				added    => \@added,
+			       };
+}
+
+sub pop_stack {
+    my($self) = @_;
+    my $remember = pop @{ $self->{_Stack} };
+    die "Nothing to pop off the stack" if !$remember;
+    my $net = $self->{Net};
+    for my $modified_entry (@{ $remember->{modified} }) {
+	my($k1,$k2,$v) = @$modified_entry;
+	$net->{$k1}{$k2} = $v;
+    }
+    for my $added_entry (@{ $remember->{added} }) {
+	my($k1,$k2) = @$added_entry;
+	delete $net->{$k1}{$k2};
+    }
+}
+
 # For debugging only
 sub dump_search_nodes {
     my($self, $nodes) = @_;

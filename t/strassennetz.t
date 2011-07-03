@@ -37,7 +37,7 @@ BEGIN {
     }
 }
 
-plan tests => 52;
+plan tests => 57;
 
 print "# Tests may fail if data changes\n";
 
@@ -85,7 +85,6 @@ if ($do_xxx) {
     }
 }
 
-XXX:
 {
     my $net = StrassenNetz->new($comments_path);
     $net->make_net_cat(-obeydir => 1, -net2name => 1, -multiple => 1);
@@ -354,6 +353,45 @@ EOF
     is scalar keys %{$net->{Net}}, 2, 'Only the "blocked" records in Net';
     is scalar keys %{$net->{Wegfuehrung}}, 3, 'The "wegfuehrung" records'
 	or diag Dumper($net->{Wegfuehrung});
+}
+
+XXX:
+{
+    # stack and pop_stack
+
+    # Create net with existing record
+    my($k1,$v1) = each %{$s_net->{Net}}; keys %{$s_net->{Net}};
+    my($k2,$v2) = each %$v1;             keys %$v1;
+    my $add_s1 = Strassen->new_from_data_string(<<EOF);
+something	XYZ $k1 $k2
+EOF
+    my $add_net1 = StrassenNetz->new($add_s1);
+    $add_net1->make_net_cat(-onewayhack => 1);
+
+    # Create net with completely new record
+    my $new_k1  = '1234567,987654';
+    my $new_k2  = '-1234,-4321';
+    my $new_cat = 'ABC';
+    my $add_s2 = Strassen->new_from_data_string(<<EOF);
+something new	$new_cat $new_k1 $new_k2
+EOF
+    my $add_net2 = StrassenNetz->new($add_s2);
+    $add_net2->make_net_cat(-onewayhack => 1);
+
+    $s_net->push_stack($add_net1);
+    is $s_net->{Net}{$k1}{$k2}, 'XYZ', 'Stacked value (overwriting old)';
+
+    $s_net->push_stack($add_net2);
+    is $s_net->{Net}{$new_k1}{$new_k2}, $new_cat, 'Stacked value (newly added)';
+
+    $s_net->pop_stack;
+    ok !exists $s_net->{Net}{$new_k1}{$new_k2}, 'Original value --- does not exist';
+
+    $s_net->pop_stack;
+    is $s_net->{Net}{$k1}{$k2}, $v2, 'Original value';
+
+    eval { $s_net->pop_stack };
+    ok $@, 'Cannot pop_stack from empty stack';
 }
 
 __END__
