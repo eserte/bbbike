@@ -879,9 +879,6 @@ if (!grep($_, values %wetter_source) and $do_www and !$really_no_www) {
 use vars qw($XXX_use_old_R_symbol);
 $XXX_use_old_R_symbol = 0; # !$devel_host; # Old ugly R symbol or "eisenbahn"
 
-use vars qw($XXX_use_new_temp_blockings);
-$XXX_use_new_temp_blockings = $devel_host;
-
 if ($net_type ne 's' && $coloring eq 'wind') {
     $coloring = 'black';
 }
@@ -10849,10 +10846,8 @@ sub activate_temp_blockings {
 	my $ms = MultiStrassen->new(@s);
 	push @{ $ms->{DependentFiles} }, $file;
 	$current_temp_blockings_ms = $ms;
-	if ($XXX_use_new_temp_blockings) {
-	    $current_temp_blockings_net = StrassenNetz->new($ms);
-	    $current_temp_blockings_net->make_net_cat(-onewayhack => 1, -net2name => 1);
-	}
+	$current_temp_blockings_net = StrassenNetz->new($ms);
+	$current_temp_blockings_net->make_net_cat(-onewayhack => 1, -net2name => 1);
 	print STDERR "Aktive temporäre Sperrungen: " . join(", ", $ms->dependent_files) . "\n" if $verbose;
 	make_net() if !$net;
 	add_temp_blockings_to_net($ms);
@@ -10867,22 +10862,13 @@ sub activate_temp_blockings {
     }
 }
 
-sub add_temp_blockings_to_net {
-    if ($XXX_use_new_temp_blockings) { return }
-    my($ms) = @_;
-    $net->make_sperre($ms, Type => "all");
-    $temporary_handicap_s = Strassen->new_copy_restricted($ms, -callback => sub { $_[0]->[Strassen::CAT] =~ /^q\d/ });
-    if ($devel_host) {
-	require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([$temporary_handicap_s],[])->Indent(1)->Useqq(1)->Dump; # XXX some debugging code left...
-    }
-    if ($handicap_s_net) {
-	undef $handicap_s_net;
-	make_handicap_net();
-    }
-}
-
 sub apply_temp_blockings {
     make_net() if !$net;
+    add_temp_blockings_to_net();
+    re_search_gui();
+}
+
+sub add_temp_blockings_to_net {
     my $ms = Strassen->new;
     while(my($name,$v) = each %temp_blockings_on_route) {
 	if ($v->{state} eq 'active') {
@@ -10893,7 +10879,6 @@ sub apply_temp_blockings {
     }
     $net->remove_all_from_deleted(undef, 'std-temp-blockings');
     $net->load_user_deletions($ms, -deltoken => 'std-temp-blockings');
-    re_search_gui();
 }
 
 sub check_path_in_blockings_net {
@@ -10903,9 +10888,8 @@ sub check_path_in_blockings_net {
 }
 
 sub check_path_in_blockings_net_reset {
-#XXX????
-#    @temp_blockings_on_route = ();
-#    %temp_blockings_on_route = ();
+    # We don't reset anymore. But what should probably be done, is a
+    # out-of-date check somewhere XXX
 }
 
 sub check_path_in_blockings_net_continue {
@@ -15171,9 +15155,7 @@ sub reverse_route {
 	if ($show_strlist) {
 	    show_route_strname();
 	}
-	if ($XXX_use_new_temp_blockings) {
-	    check_path_in_blockings_net(\@realcoords);
-	}
+	check_path_in_blockings_net(\@realcoords);
 	restack_delayed();
     };
     warn __LINE__ . ": $@" if $@;
@@ -15326,9 +15308,7 @@ sub dellast {
 		update_clipboard();
 	    }
 	}
-	if ($XXX_use_new_temp_blockings) {
-	    check_path_in_blockings_net(\@realcoords);
-	}
+	check_path_in_blockings_net(\@realcoords);
     }
 }
 
@@ -18293,7 +18273,7 @@ sub make_net {
 	}
 
 	if ($add_temp_blockings) {
-	    add_temp_blockings_to_net($current_temp_blockings_ms);
+	    add_temp_blockings_to_net();
 	}
 
 	if ($verbose) {
