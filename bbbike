@@ -3322,6 +3322,7 @@ unless ($skip_features{"sehenswuerdigkeiten"}) {
 			      save_user_dels($file);
 			  }
 		      });
+	$bdm->separator;
 	$bdm->command(-label => M"In dieser Session aktive Sperrungen",
 		      -command => sub {
 			  show_blockings();
@@ -3330,6 +3331,15 @@ unless ($skip_features{"sehenswuerdigkeiten"}) {
 	    (-label => M"Aktive Sperrungen zeichnen und beachten",
 	     -variable => \$show_active_temp_blockings,
 	     -command => sub {
+		 activate_temp_blockings($show_active_temp_blockings);
+	     },
+	    );
+	$bdm->command
+	    (-label => M"Auffrischen der aktiven Sperrungen",
+	     -command => sub {
+		 if (!$show_active_temp_blockings) {
+		     $show_active_temp_blockings = 1;
+		 }
 		 activate_temp_blockings($show_active_temp_blockings);
 	     },
 	    );
