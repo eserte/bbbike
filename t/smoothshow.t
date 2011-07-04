@@ -5,6 +5,13 @@
 # Author: Slaven Rezic
 #
 
+# You may call this script also with "keepcool", to simulate a busy
+# system. For example
+#
+#    keepcool -sf 0.1 -sr 0.4 perl t/smoothshow.t -doit
+#
+# keepcool may be found at $CPAN/authors/id/A/AN/ANDK
+
 use strict;
 use FindBin;
 use lib "$FindBin::RealBin/../lib";
@@ -30,7 +37,7 @@ if (!$doit) {
     exit 0;
 }
 
-plan tests => 1;
+plan tests => 4;
 
 require Tk::SmoothShow;
 
@@ -49,16 +56,30 @@ my $infobar;
     $infobar->idletasks; # to force -reqheight to be set
 }
 
-$mw->after(100, sub { Tk::SmoothShow::show($infobar) });
-$mw->after(1100, sub { Tk::SmoothShow::hide($infobar) });
+my $test_step = -1;
+$mw->after(100, \&test_step);
 
-$mw->after(2100, sub { Tk::SmoothShow::show($infobar, -speed => 100, -wait => 5) });
-$mw->after(3100, sub { Tk::SmoothShow::hide($infobar, -speed => 100, -wait => 5) });
-
-$mw->after(4100, sub { $mw->destroy });
+sub test_step {
+    $test_step++;
+    if      ($test_step == 0) {
+	Tk::SmoothShow::show($infobar, -completecb => \&test_step);
+    } elsif ($test_step == 1) {
+	pass 'Completely shown';
+	$mw->after(500, sub { Tk::SmoothShow::hide($infobar, -completecb => \&test_step) });
+    } elsif ($test_step == 2) {
+	pass 'Completely hidden';
+	$mw->after(100, sub { Tk::SmoothShow::show($infobar, -speed => 100, -wait => 5, -completecb => \&test_step) });
+    } elsif ($test_step == 3) {
+	pass 'Completely shown, non-default opts';
+	$mw->after(500, sub { Tk::SmoothShow::hide($infobar, -speed => 100, -wait => 5, -completecb => \&test_step) });
+    } elsif ($test_step == 4) {
+	pass 'Completely hidden, non-default opts';
+	$mw->after(500, sub { $mw->destroy });
+    } else {
+	die "Unexpected test step $test_step";
+    }
+}
 
 MainLoop;
-
-pass;
 
 __END__

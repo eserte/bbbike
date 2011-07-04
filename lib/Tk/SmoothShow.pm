@@ -15,7 +15,7 @@ package Tk::SmoothShow;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '1.02';
+$VERSION = '1.03';
 
 use Time::HiRes qw(time);
 
@@ -29,6 +29,7 @@ sub show {
 
     my $speed = delete $args{-speed} || 200; # px per second
     my $wait  = delete $args{-wait}  || 10;  # miliseconds
+    my $completecb = delete $args{-completecb};
     die "Unhandled arguments: " . join(" ", %args) if %args;
 
     my $start_time = time;
@@ -42,6 +43,8 @@ sub show {
 	$f->place(-height => $new_height);
 	if ($new_height < $f->reqheight) {
 	    $f->after($wait, $increase);
+	} else {
+	    $completecb->($f) if $completecb;
 	}
     };
 
@@ -56,6 +59,7 @@ sub hide {
 
     my $speed = delete $args{-speed} || 200; # px per second
     my $wait  = delete $args{-wait}  || 10;  # miliseconds
+    my $completecb = delete $args{-completecb};
     die "Unhandled arguments: " . join(" ", %args) if %args;
 
     my $start_time = time;
@@ -71,7 +75,9 @@ sub hide {
 	if ($new_height > 0) {
 	    $f->after($wait, $decrease);
 	} else {
+	    $f->update; # needed for slow systems, other $f->height is not updated, it seems
 	    $f->placeForget;
+	    $completecb->($f) if $completecb;
 	}
     };
 
