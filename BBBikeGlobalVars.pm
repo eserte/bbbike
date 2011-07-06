@@ -24,6 +24,7 @@ use strict;
 use vars
   qw($bbbike_context $splash_screen $booting $status_message_dialog $status_message_toplevel
      $coords_ref $realcoords_ref $search_route_points_ref @realcoords
+     %temp_blockings_on_route
      $VERSION $PROG_REVISION $tmpdir %tmpfiles $progname
      $os $os_bsd $use_clipboard $verbose $advanced $devel_host $public_test
      $datadir $no_original_datadir $city $country
@@ -34,7 +35,8 @@ use vars
      $dataset %str_obj %str_cache_attr %p_obj $net $no_make_net
      %str_file %p_file %ampeln %hoehe %custom_net_str $most_recent_str_layer $most_recent_p_layer
      %sperre %sperre_tragen %sperre_narrowpassage $sperre_file $use_faehre
-     $do_activate_temp_blockings $show_active_temp_blockings $current_temp_blockings_ms
+     $do_activate_temp_blockings $show_active_temp_blockings
+     $current_temp_blockings_ms $current_temp_blockings_net
      $coord_system $coord_system_obj $scale_coeff $scale %scalecommand
      %can_handle_image @image_type_order $register_window_adjust
      $ampel_count $kopfstein_count $ampel_count_button $kopfstein_count_button
@@ -58,7 +60,7 @@ use vars qw(
      $kneipen_photo $kneipen_klein_photo
      $essen_photo $essen_klein_photo $kino_klein_photo
      $search_photo $search_pref_photo $steigung_photo $gefaelle_photo
-     $inwork_photo $achtung_photo $cal_photo $night_photo $star_photo $newlayer_photo
+     $inwork_photo $achtung_photo $cal_photo $clock_photo $night_photo $star_photo $newlayer_photo
      $menuarrow_photo $ferry_photo $ferry_klein_photo $blocked_photo
      $notrailer_photo
      $google_photo $bbbike_google_photo $google_streetview_photo $wikipedia_photo
@@ -145,6 +147,7 @@ use vars qw(
      $outline_i
      $without_zoom_factor $coord_output_int
      $in_canvas_drag $maybe_canvas_drag $canvas_drag_x $canvas_drag_y
+     $blockings_infobar
     );
 #XXX del:  %wind_dir $wind_dir_from $wind_dir_to $wind 
 use vars qw(@speed @power $speed_power_reference_string
@@ -218,7 +221,7 @@ use vars qw($qualitaet_s_optimierung %qualitaet_s_speed
 	    $qualitaet_s_net);
 
 use vars qw($handicap_s_optimierung %handicap_s_speed
-	    $handicap_s_net $temporary_handicap_s);
+	    $handicap_s_net);
 
 use vars qw($radwege_optimierung $radwege_net $N_RW_optimization $N_RW_net
 	    %radwege_speed $green_optimization $green_net

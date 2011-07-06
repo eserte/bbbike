@@ -1132,7 +1132,25 @@ purposes (i.e. routing). See L</ignrte>.
 Ignore in routing. Item will not be used in routing, but may be used
 for other purposes (i.e. display). See L</igndisp>.
 
-=item
+=item temp
+
+Mark a "temporary" entry, which is non-recurring. Used in temp
+blockings. Currently rendered with a "calendar" sign.
+
+=item night
+
+Mark a temporary blocking which is active only at night. Currently
+rendered with a "moon" sign.
+
+=item weekend
+
+Mark a temporary blocking which is active at weekend. Currently not
+rendered.
+
+=item clock
+
+Mark a temporary blocking which is recurring. Currently rendered with
+a "clock" sign.
 
 =back
 

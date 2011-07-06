@@ -37,7 +37,7 @@ BEGIN {
     }
 }
 
-plan tests => 57;
+plan tests => 71;
 
 print "# Tests may fail if data changes\n";
 
@@ -355,7 +355,6 @@ EOF
 	or diag Dumper($net->{Wegfuehrung});
 }
 
-XXX:
 {
     # stack and pop_stack
 
@@ -392,6 +391,46 @@ EOF
 
     eval { $s_net->pop_stack };
     ok $@, 'Cannot pop_stack from empty stack';
+}
+
+XXX:
+{
+    # make_sperre tests
+    my $s = Strassen->new_from_data_string(<<EOF);
+Street	H 0,0 10,0 20,0 30,0 40,0 50,0 60,0 70,0
+EOF
+    my $sperre = Strassen->new_from_data_string(<<EOF);
+One way	1 0,0 10,0
+One way non-strict	1s 10,0 20,0
+One way with attrib	1::igndisp 20,0 30,0
+Blocked	2 30,0 40,0
+Blocked with attrib	2:inwork 40,0 50,0
+Wegfuehrung	3 50,0 60,0
+Wegfuehrung with attrib	3::igndisp 60,0 70,0
+BNP	BNP:5:90	50,0
+Tragen	0:30:90	60,0
+EOF
+    my $net = StrassenNetz->new($s);
+    $net->make_net;
+    $net->make_sperre($sperre, Type => 'all', DelToken => 'removable_test');
+
+    ok $net->{Net}{'10,0'}{'0,0'}, 'One way, open';
+    ok !$net->{Net}{'0,0'}{'10,0'}, 'One way, closed';
+    ok !$net->{Net}{'10,0'}{'20,0'}, 'One way, non-strict, closed';
+    ok !$net->{Net}{'20,0'}{'30,0'}, 'One way, with attrib, closed';
+    ok !$net->{Net}{'30,0'}{'40,0'}, 'Blocked';
+    ok !$net->{Net}{'40,0'}{'30,0'}, 'Blocked, other direction';
+    ok $net->{Wegfuehrung}{'60,0'}, 'Wegfuehrung';
+    # XXX bnp/tragen tests missing
+
+    $net->remove_all_from_deleted(undef, 'removable_test');
+    ok $net->{Net}{'10,0'}{'0,0'}, 'One way, open, unchanged';
+    ok $net->{Net}{'0,0'}{'10,0'}, 'One way removed';
+    ok $net->{Net}{'10,0'}{'20,0'}, 'Another one way, non-strict, removed';
+    ok $net->{Net}{'20,0'}{'30,0'}, 'One way, with attrib, removed';
+    ok $net->{Net}{'30,0'}{'40,0'}, 'Blocked, removed';
+    ok $net->{Net}{'40,0'}{'30,0'}, 'Blocked, other direction, removed';
+    ok !$net->{Wegfuehrung}{'60,0'}, 'Wegfuehrung removed';
 }
 
 __END__

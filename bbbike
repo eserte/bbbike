@@ -3293,6 +3293,58 @@ unless ($skip_features{"sehenswuerdigkeiten"}) {
 			   pending(1, 'recalc-net');
 		       },
 		      );
+    $sb2m->cascade(-label => M"Aktuelle Sperrungen");
+    {
+	my $am = $sb2m->Menu(-title => M"Aktuelle Sperrungen");
+	$sb2m->entryconfigure('last', -menu => $am);
+	$am->checkbutton
+	    (-label => M"Aktuelle Sperrungen zeichnen und beachten",
+	     -variable => \$show_active_temp_blockings,
+	     -command => sub {
+		 activate_temp_blockings($show_active_temp_blockings);
+	     },
+	    );
+	$am->command(-label => M"In dieser Session aktive Sperrungen",
+		     -command => sub {
+			 show_blockings();
+		     });
+	$am->command
+	    (-label => M"Auffrischen der aktuellen Sperrungen",
+	     -command => sub {
+		 if (!$show_active_temp_blockings) {
+		     $show_active_temp_blockings = 1;
+		 }
+		 activate_temp_blockings($show_active_temp_blockings);
+	     },
+	    );
+	if ($advanced) {
+	    $am->command
+		(-label => M"Sperrungen zeichnen für Datum",
+		 -command => \&active_temp_blockings_for_date_dialog,
+		);
+	    $am->command
+		(-label => M"Aktuelle und zukünftige Sperrungen zeichnen",
+		 -command => sub {
+		     $show_active_temp_blockings = 1;
+		     activate_temp_blockings($show_active_temp_blockings, -from => time);
+		 },
+		);
+	    $am->command
+		(-label => M"Frühere und zukünftige Sperrungen zeichnen",
+		 -command => sub {
+		     $show_active_temp_blockings = 1;
+		     activate_temp_blockings($show_active_temp_blockings, -from => 0);
+		 },
+		);
+	    $am->command
+		(-label => M"Speichern für temp_blockings",
+		 -command => sub {
+		     require BBBikeEdit;
+		     BBBikeEdit::temp_blockings_editor();
+		 }
+		);
+	}
+    }
     $sb2m->cascade(-label => M"Benutzerdefinierte Sperrungen");
     {
 	my $bdm = $sb2m->Menu(-title => M"Benutzerdefinierte Sperrungen");
@@ -3322,40 +3374,6 @@ unless ($skip_features{"sehenswuerdigkeiten"}) {
 			      save_user_dels($file);
 			  }
 		      });
-	$bdm->checkbutton
-	    (-label => M"Aktive Sperrungen zeichnen und beachten",
-	     -variable => \$show_active_temp_blockings,
-	     -command => sub {
-		 activate_temp_blockings($show_active_temp_blockings);
-	     },
-	    );
-	if ($advanced) {
-	    $bdm->command
-		(-label => M"Aktive Sperrungen zeichnen für Datum",
-		 -command => \&active_temp_blockings_for_date_dialog,
-		);
-	    $bdm->command
-		(-label => M"Aktive und zukünftige Sperrungen zeichnen",
-		 -command => sub {
-		     $show_active_temp_blockings = 1;
-		     activate_temp_blockings($show_active_temp_blockings, -from => time);
-		 },
-		);
-	    $bdm->command
-		(-label => M"Frühere und zukünftige Sperrungen zeichnen",
-		 -command => sub {
-		     $show_active_temp_blockings = 1;
-		     activate_temp_blockings($show_active_temp_blockings, -from => 0);
-		 },
-		);
-	    $bdm->command
-		(-label => M"Speichern für temp_blockings",
-		 -command => sub {
-		     require BBBikeEdit;
-		     BBBikeEdit::temp_blockings_editor();
-		 }
-		);
-	}
 	$bdm->command(-label => M"Alle löschen",
 		      -command => sub { delete_user_dels() });
 	if ($advanced) {
@@ -5211,7 +5229,7 @@ sub handle_options {
 	 ['nichttragen','!',0,
 	  label => M"Tragen strikt vermeiden", var => \$sperre{'tragen'}],
 	 ['tempblockings','!',1,
-	  label => M"Temporäre Sperrungen verwenden", var => \$do_activate_temp_blockings],
+	  label => M"Aktuelle Sperrungen verwenden", var => \$do_activate_temp_blockings],
 	 ['ampeloptimierung','!',0,
 	  label => M"Ampeloptimierung verwenden", var => \$ampel_optimierung],
 	 ['beschleunigung','=f',1,
@@ -5596,6 +5614,7 @@ sub load_photos {
     $inwork_photo        = load_photo($top, 'inwork');
     $achtung_photo       = load_photo($top, 'achtung');
     $cal_photo           = load_photo($top, 'cal');
+    $clock_photo	 = load_photo($top, 'clock');
     $night_photo	 = load_photo($top, 'night');
     $ferry_photo         = load_photo($top, 'ferry');
     $ferry_klein_photo   = load_photo($top, 'ferry_klein');
@@ -10602,8 +10621,9 @@ sub plot_sperre {
 
 		    # Add an additional icon
 		    for my $check (['inwork', $inwork_photo],
-				   ['temp',   $cal_photo],
 				   ['night',  $night_photo],
+				   ['clock',  $clock_photo],
+				   ['temp',   $cal_photo], # should be last
 				  ) {
 			my($addinfo, $photo) = @$check;
 			if ($addinfo{$addinfo} && $photo) {
@@ -10720,6 +10740,8 @@ sub split_by_crossings {
     @ret;
 }
 
+######################################################################
+# temp blockings
 sub get_temp_blockings_files {
     my $temp_blockings_dir = "$datadir/temp_blockings";
     my $file = "$temp_blockings_dir/bbbike-temp-blockings.pl";
@@ -10739,7 +10761,7 @@ sub activate_temp_blockings {
     my($temp_blockings_dir, $file, $optimized_file) =
 	@{ get_temp_blockings_files() }{qw(dir file optimized_file)};
     if (!-r $file && !-r $optimized_file) {
-	status_message(M("Kein Support fuer temporaere Sperrungen, das Verzeichnis $temp_blockings_dir fehlt. Dieses Verzeichnis ist aus per git erhältlich, siehe README."), "warn");
+	status_message(M("Kein Support fuer temporaere Sperrungen, das Verzeichnis $temp_blockings_dir fehlt. Dieses Verzeichnis ist per git erhältlich, siehe README."), "warn");
 	return;
     }
 
@@ -10757,12 +10779,16 @@ sub activate_temp_blockings {
 	$show_active_temp_blockings = 0;
 	plot("p", "temp_sperre", -draw => 0);
 	plot("str", "temp_sperre_s", -draw => 0);
-	make_net(); # XXX find more performant solution
-	undef $temporary_handicap_s;
-	if ($handicap_s_net) {
-	    undef $handicap_s_net;
-	    make_handicap_net();
-	}
+	#XXX del? ??? not needed??? make_net(); # XXX find more performant solution
+	#XXX del? undef $temporary_handicap_s;
+	#if ($handicap_s_net) {
+	#    undef $handicap_s_net;
+	#    make_handicap_net();
+	#}
+	undef $current_temp_blockings_net;
+	reset_temp_blockings();
+	hide_blockings();
+	hide_blockings_infobar();
 	return;
     }
 
@@ -10789,9 +10815,21 @@ sub activate_temp_blockings {
 	    if ($do_it) {
 		require POSIX;
 		my $datefmt = "%d.%m.%Y %H:%M:%S";
-		my $from_date_readable = defined $o->{from}  ? POSIX::strftime($datefmt, localtime($o->{from})) : "...";
-		my $to_date_readable   = defined $o->{until} ? POSIX::strftime($datefmt, localtime($o->{until})) : "...";
-		my $text = $o->{text} . " [" . $from_date_readable . " - " . $to_date_readable . "]";
+		my $date_spec;
+		{
+		    my $from_date_readable = defined $o->{from}  ? POSIX::strftime($datefmt, localtime($o->{from})) : "...";
+		    my $to_date_readable   = defined $o->{until} ? POSIX::strftime($datefmt, localtime($o->{until})) : "...";
+		    if ($from_date_readable eq '...' && $to_date_readable eq '...') {
+			if ($o->{permanent}) {
+			    $date_spec = M"permanent";
+			} else {
+			    $date_spec = M"Ende unbekannt";
+			}
+		    } else {
+			$date_spec = $from_date_readable . " - " . $to_date_readable;
+		    }
+		}
+		my $text = $o->{text} . " [" . $date_spec . "]";
 		my $s;
 		my $f;
 		if ($o->{file}) {
@@ -10808,6 +10846,7 @@ sub activate_temp_blockings {
 		    last if !@{ $ret->[Strassen::COORDS()] };
 		    $ret->[Strassen::NAME] = $text;
 		    $new_s->push($ret);
+		    $new_s->set_directives_for_current({ info => [$o] });
 		    $used_inx++;
 		    $temp_blocking_inx_mapping{$used_inx} = $global_inx;
 		}
@@ -10817,9 +10856,9 @@ sub activate_temp_blockings {
 	if (!@s) {
 	    if ($verbose) {
 		if (defined $args{-now}) {
-		    print STDERR "Keine temporären Sperrungen am " . scalar(localtime($now)) . "\n";
+		    print STDERR "Keine aktuellen Sperrungen am " . scalar(localtime($now)) . "\n";
 		} else {
-		    print STDERR "Keine aktiven temporären Sperrungen\n";
+		    print STDERR "Keine aktuellen Sperrungen\n";
 		}
 	    }
 	    return;
@@ -10827,11 +10866,17 @@ sub activate_temp_blockings {
 	my $ms = MultiStrassen->new(@s);
 	push @{ $ms->{DependentFiles} }, $file;
 	$current_temp_blockings_ms = $ms;
-	print STDERR "Aktive temporäre Sperrungen: " . join(", ", $ms->dependent_files) . "\n" if $verbose;
-	make_net() if !$net;
-	add_temp_blockings_to_net($ms);
+	$current_temp_blockings_net = StrassenNetz->new($ms);
+	$current_temp_blockings_net->make_net_cat(-onewayhack => 1, -net2name => 1);
+	$current_temp_blockings_net->make_sperre($ms, Type => ['wegfuehrung']);
+	print STDERR "Aktuelle Sperrungen: " . join(", ", $ms->dependent_files) . "\n" if $verbose;
+	add_temp_blockings_to_net();
 	plot("p", "temp_sperre", -object => $ms, -draw => 1);
 	plot("str", "temp_sperre_s", -object => $ms, -draw => 1);
+	if (@realcoords) {
+	    clear_undecided_temp_blockings();
+	    check_path_in_blockings_net(\@realcoords);
+	}
     };
     if ($@) {
 	$show_active_temp_blockings = 0;
@@ -10841,19 +10886,279 @@ sub activate_temp_blockings {
     }
 }
 
+sub apply_temp_blockings {
+    make_net() if !$net;
+    add_temp_blockings_to_net();
+    re_search_gui();
+}
+
 sub add_temp_blockings_to_net {
-    my($ms) = @_;
-    $net->make_sperre($ms, Type => "all");
-    $temporary_handicap_s = Strassen->new_copy_restricted($ms, -callback => sub { $_[0]->[Strassen::CAT] =~ /^q\d/ });
-    if ($devel_host) {
-	require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([$temporary_handicap_s],[])->Indent(1)->Useqq(1)->Dump; # XXX some debugging code left...
+    make_net() if !$net;
+    make_handicap_net() if !$handicap_s_net;
+    my $add_sperre_s   = Strassen->new;
+    my $add_handicap_s = Strassen->new;
+    while(my($name,$v) = each %temp_blockings_on_route) {
+	if ($v->{state} eq 'active') {
+	    for my $r (@{ $v->{data} }) {
+		my $s;
+		if ($r->[Strassen::CAT] =~ m{^q}) {
+		    $s = $add_handicap_s;
+		} else {
+		    $s = $add_sperre_s;
+		}
+		$s->push($r);
+	    }
+	}
     }
-    if ($handicap_s_net) {
-	undef $handicap_s_net;
-	make_handicap_net();
+
+    eval { # XXX check first if there's something to pop?
+	$handicap_s_net->pop_stack;
+    };
+    my $add_handicap_s_net = StrassenNetz->new($add_handicap_s);
+    $add_handicap_s_net->make_net_cat;
+    $handicap_s_net->push_stack($add_handicap_s_net);
+
+    $net->remove_all_from_deleted(undef, 'std-temp-blockings');
+    $net->make_sperre($add_sperre_s, Type => 'all', DelToken => 'std-temp-blockings');
+}
+
+
+sub reset_temp_blockings {
+    %temp_blockings_on_route = ();
+    apply_temp_blockings();
+}
+
+sub _add_to_temp_blockings_on_route {
+    my($r) = @_;
+    my $blocking_text = $r->[Strassen::NAME];
+    if (!exists $temp_blockings_on_route{$blocking_text}) {
+	# Gather all records belonging to this blocking:
+	my @data;
+	$current_temp_blockings_ms->init;
+	while() {
+	    my $r = $current_temp_blockings_ms->next;
+	    my @c = @{ $r->[Strassen::COORDS] };
+	    last if !@c;
+	    if ($r->[Strassen::NAME] eq $blocking_text) {
+		push @data, $r;
+	    }
+	}
+	$temp_blockings_on_route{$blocking_text} = { state => 'undecided',
+						     data => \@data,
+						   };
     }
 }
 
+sub clear_undecided_temp_blockings {
+    for my $name (keys %temp_blockings_on_route) {
+	delete $temp_blockings_on_route{$name}
+	    if $temp_blockings_on_route{$name}->{state} eq 'undecided';
+    }
+}
+
+sub check_path_in_blockings_net {
+    return if !$current_temp_blockings_net;
+    my($pathref) = @_;
+    my $net         = $current_temp_blockings_net->{Net};
+    my $wegfuehrung = $current_temp_blockings_net->{Wegfuehrung};
+ PATH_SEGMENT: for my $p_i (0 .. $#$pathref-1) {
+	my($xy0, $xy1) = (join(',', @{$pathref->[$p_i]}), 
+			  join(',', @{$pathref->[$p_i+1]}));
+
+	# Handling "1"/"2" and "qX" types
+	if (exists $net->{$xy0} && exists $net->{$xy0}{$xy1}) {
+	    my($pos) = $current_temp_blockings_net->net2name($xy0, $xy1);
+	    if (defined $pos) {
+		my $r = $current_temp_blockings_ms->get($pos);
+		my $cat = $r->[Strassen::CAT];
+		if ($cat ne '3') {
+		    _add_to_temp_blockings_on_route($r);
+		    next PATH_SEGMENT;
+		}
+		# XXX else: Handled in the Wegführung part
+	    }
+	}
+
+	# Handling "3" (wegfuehrung) types
+	if ($wegfuehrung && exists $wegfuehrung->{$xy1}) {
+	    for my $wegfuehrung (@{ $wegfuehrung->{$xy1} }) {
+	    CHECK_WEGFUEHRUNG: {
+		    for(my $j=0; $j<$#$wegfuehrung; $j++) {
+			last CHECK_WEGFUEHRUNG
+			    if ($j > $p_i || join(",",@{$pathref->[$p_i-$j]}) ne $wegfuehrung->[$#$wegfuehrung-1-$j]);
+		    }
+		    # XXX Hackish: find a matching record in $current_temp_blockings_ms
+		    my $matching_r;
+		    $current_temp_blockings_ms->init;
+		    while() {
+			my $r = $current_temp_blockings_ms->next;
+			my @c = @{ $r->[Strassen::COORDS] };
+			last if !@c;
+			for my $c_i (0 .. $#c-1) {
+			    if ($xy0 eq $c[$c_i] && $xy1 eq $c[$c_i+1]) {
+				_add_to_temp_blockings_on_route($r);
+				next PATH_SEGMENT; # XXX is this correct? or should we get all the wegführung here?
+			    }
+			}
+		    }
+		}
+	    }
+	}
+    }
+
+    if (first { $temp_blockings_on_route{$_}->{state} eq 'undecided' } keys %temp_blockings_on_route) {
+	show_blockings_infobar();
+    } else {
+	hide_blockings_infobar();
+    }
+    if (Tk::Exists($toplevel{temp_blockings})) {
+	show_blockings();
+    }
+}
+
+sub show_blockings {
+    my $blockings_toplevel = redisplay_top($top, 'temp_blockings',
+					   -title => M"Aktuelle Sperrungen",
+					  );
+    my $toplevel_width = int($top->screenwidth*0.7);
+    if (!defined $blockings_toplevel) {
+	$blockings_toplevel = $toplevel{'temp_blockings'};
+	# XXX quick'n'dirty solution... better to keep all the widgets
+	# and to just clear the items from the hlists.
+	$_->destroy for ($blockings_toplevel->children);
+    } else {
+	$blockings_toplevel->geometry($toplevel_width."x200");
+    }
+
+    # packer priority -> draw first
+    my $footer = $blockings_toplevel->Frame->pack(qw(-fill x -side bottom));
+    my $cb = $footer->Button(Name => "close",
+			     -command => sub { $blockings_toplevel->destroy })->pack(-anchor => 'e', -side => "right");
+    $blockings_toplevel->bind('<Escape>' => sub { $cb->invoke });
+
+
+    if (!keys %temp_blockings_on_route) {
+	$blockings_toplevel->Label(-text => M"Keine Sperrungen auf der Route", -font => $font{bold})->pack;
+    } else {
+	my %gui_temp_blockings_on_route_active = map { ($_ => $temp_blockings_on_route{$_}->{state} eq 'active') } keys %temp_blockings_on_route;
+
+	require Tk::HList;
+	my $hl;
+	$hl = $blockings_toplevel->Scrolled
+	    ('HList',
+	     -columns => 3,
+	     -header => 1,
+	     -selectmode => 'single',
+	     -browsecmd => sub {
+		 my($hl_index) = @_;
+		 return if !defined $hl_index;
+		 my $name = $hl->info('data', $hl_index);
+		 return if !defined $name;
+		 my $coords = [
+			       map { [ transpose_all(@{ Strassen::to_koord($_->[Strassen::COORDS]) }) ] }
+			       @{ $temp_blockings_on_route{$name}->{data} }
+			      ];
+		 mark_street(-coords => $coords);
+	     },
+	     -scrollbars => 'osoe',
+	    )->pack(qw(-fill both));
+	$hl->anchorClear;
+	$hl->headerCreate(0, -text => M"Aktivieren");
+	$hl->headerCreate(1, -text => M"Sperrung");
+	$hl->headerCreate(2, -text => M"Warn-Zeitraum");
+	$hl->columnWidth(0, 80);
+	my $descr_width = $toplevel_width - 200;
+	$hl->columnWidth(1, $descr_width);
+
+	require Tk::ItemStyle;
+	my(%header_style, %nopad_style, %descr_style, %text_style, %bg_color);
+	for my $key (qw(odd even)) {
+	    my $bg_color = $key eq 'even' ? $hl->cget('-background') : '#dddddd';
+	    $bg_color{$key} = $bg_color;
+	    $header_style{$key} = $hl->ItemStyle('text', -foreground => 'blue3', -font => $font{'bold'}, -background => $bg_color);
+	    $nopad_style{$key} = $hl->ItemStyle('window', -anchor => 'nw', -pady => 0, -padx => 0); # no -background available here
+	    $descr_style{$key} = $hl->ItemStyle('text', -wraplength => $descr_width-4, -anchor => 'nw', -background => $bg_color);
+	    $text_style{$key} = $hl->ItemStyle('text', -background => $bg_color);
+	}
+
+	my %seen_temp_blockings_on_route;
+	my $path_i = 0;
+
+	my $add_line = sub {
+	    my($name) = @_;
+	    my $key = $path_i % 2 == 0 ? 'even' : 'odd';
+	    $hl->add($path_i, -itemtype => 'window', -style => $nopad_style{$key},
+		     -widget => $hl->Checkbutton(-variable => \$gui_temp_blockings_on_route_active{$name},
+						 -onvalue => 1,
+						 -offvalue => 0,
+						 -background => $bg_color{$key},
+						 -highlightthickness => 0,
+						),
+		     -data => $name,
+		    );
+	    if (my($desc, $date_spec) = $name =~ m{^(.*)\s\[(.*?)\]$}) {
+		$hl->itemCreate($path_i, 1, -text => $desc, -style => $descr_style{$key});
+		$hl->itemCreate($path_i, 2, -text => $date_spec, -style => $text_style{$key});
+	    } else {
+		warn "Could not parse '$name'";
+		$hl->itemCreate($path_i, 1, -text => $name, -style => $descr_style{$key});
+	    }
+	    $path_i++;
+	};
+
+	for my $name (sort keys %temp_blockings_on_route) {
+	    if ($temp_blockings_on_route{$name}->{state} eq 'undecided') {
+		$add_line->($name);
+	    }
+	}
+
+	my $not_used_header_shown;
+	for my $name (sort keys %temp_blockings_on_route) {
+	    next if $temp_blockings_on_route{$name}->{state} eq 'undecided';
+	    if (!$not_used_header_shown) {
+		my $key = $path_i % 2 == 0 ? 'even' : 'odd';
+		$hl->add($path_i);
+		$hl->itemCreate($path_i, 0, -style => $text_style{$key});
+		$hl->itemCreate($path_i, 1, -text => M"Bereits behandelte Sperrungen", -style => $header_style{$key});
+		$hl->itemCreate($path_i, 2, -style => $text_style{$key});
+		$path_i++;
+		$not_used_header_shown++;
+	    }
+	    $add_line->($name);
+	}
+
+	$footer->Button(-text => M"Ausgewählte umfahren",
+			-command => sub {
+			    while(my($name,$v) = each %gui_temp_blockings_on_route_active) {
+				$temp_blockings_on_route{$name}->{state} = $v ? 'active' : 'ignore';
+			    }
+			    apply_temp_blockings();
+			})->pack(-anchor => 'w', -side => "left");
+
+	$footer->Button(-text => M"Alle umfahren",
+			-command => sub {
+			    while(my($name,$v) = each %temp_blockings_on_route) {
+				$temp_blockings_on_route{$name}->{state} = 'active';
+			    }
+			    apply_temp_blockings();
+			})->pack(-anchor => 'e', -side => "right");
+	$footer->Button(-text => M"Alle ignorieren",
+			-command => sub {
+			    while(my($name,$v) = each %temp_blockings_on_route) {
+				$temp_blockings_on_route{$name}->{state} = 'ignore';
+			    }
+			    apply_temp_blockings();
+			})->pack(-anchor => 'e', -side => 'right');
+    }
+}
+
+sub hide_blockings {
+    if (Tk::Exists($toplevel{temp_blockings})) {
+	$toplevel{temp_blockings}->destroy;
+    }
+}
+
+######################################################################
 ### AutoLoad Sub
 sub read_sperre_tragen {
     if (!eval { StrassenNetz::make_sperre_tragen(get_strassen_file($sperre_file), get_special_vehicle(), \%sperre_tragen, \%sperre_narrowpassage); 1 }) {
@@ -14939,6 +15244,8 @@ sub reverse_route {
 	if ($show_strlist) {
 	    show_route_strname();
 	}
+	clear_undecided_temp_blockings();
+	check_path_in_blockings_net(\@realcoords);
 	restack_delayed();
     };
     warn __LINE__ . ": $@" if $@;
@@ -14981,6 +15288,8 @@ sub delete_route {
 		      )$}x) {
 	set_map_mode(MM_SEARCH);
     }
+
+    hide_blockings_infobar();
 
     Hooks::get_hooks("del_route")->execute;
 }
@@ -15088,6 +15397,7 @@ sub dellast {
 		update_clipboard();
 	    }
 	}
+	check_path_in_blockings_net(\@realcoords);
     }
 }
 
@@ -15272,7 +15582,7 @@ sub updatekm {
     Hooks::get_hooks("new_route")->execute;
 }
 
-# löscht die Route (Liste und Linie)
+# löscht die Route (Liste, Linie, mögliche temporäre Blockings)
 sub resetroute {
     $strecke = 0;
     $act_value{Km} = "";
@@ -15305,7 +15615,6 @@ sub resetroute {
 	require BBBikeAdvanced;
 	reset_selection();
     }
-
 }
 
 sub reset_undo_route {
@@ -17055,6 +17364,10 @@ sub search_route {
 	}
 
 	my @path = @{ $res[StrassenNetz::RES_PATH] };
+	if (!$continue) {
+	    clear_undecided_temp_blockings();
+	}
+	check_path_in_blockings_net(\@path);
  	my $old_nr;
  	if ($continue) {
  	    save_route_to_register('cont'); # if $max_list > 0;
@@ -18049,7 +18362,7 @@ sub make_net {
 	}
 
 	if ($add_temp_blockings) {
-	    add_temp_blockings_to_net($current_temp_blockings_ms);
+	    add_temp_blockings_to_net();
 	}
 
 	if ($verbose) {
@@ -18091,9 +18404,6 @@ sub make_handicap_net {
 	    my @s = (Strassen->new("handicap_s"),
 		     Strassen->new("handicap_l"),
 		    );
-	    if ($temporary_handicap_s) {
-		push @s, $temporary_handicap_s;
-	    }
 	    $handicap_s_net = StrassenNetz->new(MultiStrassen->new(@s));
 	    $handicap_s_net->make_net_cat;
 	};
@@ -19067,34 +19377,30 @@ sub LongOrNormalDialog {
     $Dialog;
 }
 
-{
-    my $blockings_infobar;
-    sub _blockings_infobar_exists {
-	return if $blockings_infobar && Tk::Exists($blockings_infobar);
-	my %stdcolor = (-bg => 'yellow');
-	$blockings_infobar = $c->Frame(Name => "blockingsinfobar", %stdcolor, -relief => 'raised', -borderwidth => 1);
-	$blockings_infobar->Label(-text => "Mögliche temporäre Sperrungen auf der Route", %stdcolor)->pack(-side => "left"); # XXX Msg
-	$blockings_infobar->Button(-padx => 1, -pady => 1, -borderwidth => 1,
-				   -text => "Anzeigen",
-				   -command => sub { show_blockings() },
-				  )->pack(-side => "left", -padx => 10);
-	$blockings_infobar->idletasks; # to force -reqheight to be set
-    }
-
-    sub show_blockings_infobar {
-	require Tk::SmoothShow;
-	_blockings_infobar_exists();
-	Tk::SmoothShow::show($blockings_infobar);
-    }
-
-    sub hide_blockings_infobar {
-	if ($blockings_infobar && Tk::Exists($blockings_infobar)) {
-	    require Tk::SmoothShow;
-	    Tk::SmoothShow::hide($blockings_infobar);
-	}
-    }
+sub _blockings_infobar_exists {
+    return if $blockings_infobar && Tk::Exists($blockings_infobar);
+    my %stdcolor = (-bg => 'yellow');
+    $blockings_infobar = $c->Frame(Name => "blockingsinfobar", %stdcolor, -relief => 'raised', -borderwidth => 1);
+    $blockings_infobar->Label(-text => M"Mögliche temporäre Sperrungen auf der Route", %stdcolor)->pack(-side => "left");
+    $blockings_infobar->Button(-padx => 1, -pady => 1, -borderwidth => 1,
+			       -text => M"Anzeigen",
+			       -command => sub { show_blockings() },
+			      )->pack(-side => "left", -padx => 10);
+    $blockings_infobar->idletasks; # to force -reqheight to be set
 }
 
+sub show_blockings_infobar {
+    require Tk::SmoothShow;
+    _blockings_infobar_exists();
+    Tk::SmoothShow::show($blockings_infobar);
+}
+
+sub hide_blockings_infobar {
+    if ($blockings_infobar && Tk::Exists($blockings_infobar)) {
+	require Tk::SmoothShow;
+	Tk::SmoothShow::hide($blockings_infobar);
+    }
+}
 
 sub set_status_button {
     my(%args) = @_;
