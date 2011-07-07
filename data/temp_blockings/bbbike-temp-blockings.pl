@@ -19290,8 +19290,8 @@ userdel	2::inwork -41811,-40216 -41351,-39981
 EOF
      },
      { from  => 1307948160, # 2011-06-13 08:56
-       until => 1310130000, # 2011-07-08 15:00
-       text  => 'Puschkinsallee (Treptow): Baumpflegearbeiten, Straße gesperrt zwischen Elsenstr. und Eichenstr., sowie Einbahnstraßenregelung in der Martin-Hoffmann-Str., 14.06.2011 08:56 Uhr bis 08.07.2011 15:00 Uhr ',
+       until => 1310216400, # 1310130000, # 2011-07-08 15:00
+       text  => 'Puschkinallee (Treptow): Baumpflegearbeiten, Straße gesperrt zwischen Elsenstr. und Eichenstr., sowie Einbahnstraßenregelung in der Martin-Hoffmann-Str., 14.06.2011 08:56 Uhr bis 09.07.2011 15:00 Uhr ',
        type  => 'gesperrt',
        source_id => 'IM_017436',
        data  => <<EOF,
@@ -19317,6 +19317,42 @@ userdel	2::inwork 22364,6158 22475,6151 22539,6258
 userdel	2::inwork 22358,5918 22428,6063 22475,6151 22603,6141
 userdel	2::inwork 22468,6046 22544,6037
 userdel	2::inwork 22324,6397 22364,6158 22283,6174
+userdel	2::inwork 22513,5747 22531,5871 22358,5918 22294,5777
+userdel	2::inwork 22777,6157 22603,6141
+userdel	2::inwork 22608,5732 22631,5866 22531,5871 22539,5956 22730,5944
+userdel	2::inwork 22639,6062 22544,6037 22539,5956
+EOF
+     },
+     { from  => 1309903200, # 2011-07-06 00:00
+       until => 1310075999, # 2011-07-07 23:59
+       text  => 'Markgrafenstr. (Mitte) in beiden Richtungen zwischen Französische Str. und Mohrenstr. ab 07.07.2011 17 Uhr, Veranstaltung, Straße vollständig gesperrt ',
+       type  => 'gesperrt',
+       source_id => 'IM_017545',
+       data  => <<EOF,
+userdel	2::temp 9643,12127 9656,12021 9668,11928 9679,11834
+userdel	2::temp 22513,5747 22531,5871 22358,5918 22294,5777
+userdel	2::temp 22777,6157 22603,6141
+userdel	2::temp 22608,5732 22631,5866 22531,5871 22539,5956 22730,5944
+userdel	2::temp 22639,6062 22544,6037 22539,5956
+EOF
+     },
+     { from  => 1310016128, # 2011-07-07 07:22
+       until => 1310767200, # 2011-07-16 00:00
+       text  => 'Markgrafenstr. (Mitte): Veranstaltung, Straße vollständig gesperrt (bis 15.07., 18:00) in beiden Richtungen zwischen Jägerstr. und Taubenstr., 03.07.2011 bis 15.07.2011 18:00 Uhr ',
+       type  => 'gesperrt',
+       source_id => 'IM_017544',
+       data  => <<EOF,
+userdel	2::temp 9656,12021 9668,11928
+EOF
+     },
+     { from  => 1309842000, # 2011-07-05 07:00
+       until => 1310144400, # 2011-07-08 19:00
+       text  => 'Platz der Luftbrücke (Tempelhof): Veranstaltung, Straße vollständig gesperrt (bis 08.07.2011 ca. 19:00 Uhr) in beiden Richtungen, 06.07.2011 07:00 Uhr bis 08.07.2011 19:00 Uhr ',
+       type  => 'handicap',
+       source_id => 'IM_017564',
+       data  => <<EOF,
+userdel	q4::temp 9233,8597 9321,8607 9364,8640 9395,8726
+userdel	q4::temp 9321,8607 9401,8510 9451,8548 9364,8640
 EOF
      },
     );
