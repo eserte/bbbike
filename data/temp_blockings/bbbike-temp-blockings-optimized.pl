@@ -1111,15 +1111,7 @@ userdel	2 16975,1262 16849,1437
        undef,
        undef,
        undef,
-       {
-         'until' => 1309730400,
-         'text' => 'Open Air Gallery am 3. Juli 2011 auf der Oberbaumbrücke ',
-         'from' => 1309557600,
-         'id' => 1107,
-         'data' => 'userdel	2::temp 13178,10623 13206,10651 13305,10789 13332,10832
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2616,15 +2608,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
          'type' => 'handicap'
        },
        undef,
-       {
-         'until' => 1309730400,
-         'text' => 'Rheinstraße (Friedenau): Veranstaltung, Straße vollständig gesperrt (2. und 3. Juli 2011) in beiden Richtungen zwischen Walther-Schreiber-Platz und Breslauer Platz',
-         'from' => 1309471200,
-         'id' => 2126,
-         'data' => 'userdel	2::temp 5370,6486 5424,6584 5533,6753 5654,6941 5817,7223
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        {
@@ -3005,6 +2989,18 @@ userdel	q4::inwork; 10264,12826 10166,12777 10132,12941
          'from' => 1309644000,
          'id' => 2241,
          'data' => 'userdel	2::inwork -1378,-1022 -1348,-1098
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1310040000,
+         'text' => 'Bombenfund am Bahnhof Köpenick',
+         'from' => 1309928959,
+         'id' => 2242,
+         'data' => 'userdel	2::inwork 22364,6158 22475,6151 22539,6258
+userdel	2::inwork 22358,5918 22428,6063 22475,6151 22603,6141
+userdel	2::inwork 22468,6046 22544,6037
+userdel	2::inwork 22324,6397 22364,6158 22283,6174
 ',
          'type' => 'gesperrt'
        }

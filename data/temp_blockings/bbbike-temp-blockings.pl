@@ -19308,4 +19308,15 @@ EOF
 userdel	2::inwork -1378,-1022 -1348,-1098
 EOF
      },
+     { from  => 1309928959, # 2011-07-06 07:09
+       until => 1310040000, # 2011-07-07 14:00
+       text  => 'Bombenfund am Bahnhof Köpenick',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 22364,6158 22475,6151 22539,6258
+userdel	2::inwork 22358,5918 22428,6063 22475,6151 22603,6141
+userdel	2::inwork 22468,6046 22544,6037
+userdel	2::inwork 22324,6397 22364,6158 22283,6174
+EOF
+     },
     );
