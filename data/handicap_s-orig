@@ -8,11 +8,16 @@
 #
 #: temporary vvv
 # 
+#: last_checked: 2011-07-07
+#: next_check: 2011-09-01
+#: XXX siehe auch qualitaet_s-orig
+Sembritzkystr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 7203,5488 7186,5453 7157,5418 7095,5317 7018,5201
+# 
 #: last_checked: 2011-06-15 vvv
 #: next_check: 2011-08-15 vvv
 #: XXX wird wahrscheinlich reorganisiert mit der neuen Verbindung
-Beuthstr. - Spittelmarkt: Gehweg, Bauarbeiten	q3 10166,11592 10197,11605 10229,11618 10213,11728
-Spittelmarkt: Gehweg, Bordstein, Bauarbeiten	q3 10166,11592 10153,11666 10213,11728
+Beuthstr. - Spittelmarkt: Gehweg, Bauarbeiten	q3::inwork 10166,11592 10197,11605 10229,11618 10213,11728
+Spittelmarkt: Gehweg, Bordstein, Bauarbeiten	q3::inwork 10166,11592 10153,11666 10213,11728
 #: next_check: ^^^
 #: last_checked: ^^^
 # 
@@ -912,7 +917,7 @@ Sch‰ﬂburger Weg: enge Straﬂe	q1+ 6963,-82 6983,-123 7040,-188 7090,-225 7127,-24
 (Lichterfelder Ring - Mauerweg): teilweise enger Weg	q2+ 6582,600 6598,536 6600,150
 (Malteserstr. - Kamenzer Damm): Fuﬂg‰nger, Radfahren nicht erlaubt	q3 7437,1859 7592,1892 7612,1918 7646,2019 7645,2110
 #: note: explizit erlaubt nˆrdl. Wedellstr.-Keffenbrinkweg
-(Malteserstr. - Kamenzer Damm): Fuﬂg‰nger, Radfahren (teilweise) erlaubt	q1- 7645,2110 7636,2161 7634,2267 7665,2357 7702,2477 7779,2722 7783,2730 7798,2765 7807,2961 7837,2957
+(Malteserstr. - Kamenzer Damm): Fuﬂg‰nger, Radfahren (teilweise) erlaubt	q1- 7645,2110 7636,2161 7634,2267 7665,2357 7704,2482 7779,2722 7783,2730 7798,2765 7807,2961 7837,2957
 (Malteserstr. - Kamenzer Damm): Fuﬂg‰nger, Radfahren nicht erlaubt	q3 7837,2957 7852,3183
 (Halbauer Weg - Parkweg): Fuﬂg‰nger, Radfahren erlaubt	q1- 7758,2973 7795,2963 7807,2961
 (Hanielweg - Parkweg): Spielplatz, Fuﬂg‰nger, teilweise eng	q3 7562,1796 7565,1806 7592,1892
@@ -963,6 +968,8 @@ Kleine Eiswerderbr¸cke: enge Stelle, Gegenverkehr hat Vorrang	q1; -1978,15684 -2
 Gˆtzkeweg: eng durch parkende Autos	q1 27319,13589 27414,13508
 (Erntedankweg - Wuhlgartenweg): eng	q3 20861,12192 20841,12185 20829,12144
 (Alt-Friedrichsfelde - Alfred-Kowalke-Str.): eng, Fuﬂg‰nger	q1 18616,11654 18618,11452
+(Mariannenstr. - Verl‰ngerte Georgenstr.): Radfahren verboten, Bordsteine	q4 6032,1348 5934,1310
+Kindelbergweg: eng	q1 6632,1482 6601,1471 6560,1473
 ######################### User Contributions #################################
 #: by: Michael Kiekbusch
 #: corrected_by: srt/policy (q4 -> q3-)
@@ -975,7 +982,7 @@ Straﬂe 103 (Niederschˆnhausen): enge Straﬂe	q1 10914,20065 11051,19789
 #: by: Petra (ploewe...):
 An der Heilandsweide: Fuﬂg‰nger	q1 8203,1194 8305,1148 8492,1050 8539,1025 8687,950
 #: by Andreas (johnnyyen):
-Friedrich-Wilhelm-Str.: eng	q1 8282,5909 8385,5907
+Friedrich-Wilhelm-Str.: eng	q1 8266,5911 8385,5907
 #: by: elke Peters:
 Blunckstr.: beidseitig beparkt und eng	q1 5429,19165 5502,19162 5571,19178 5601,19204 5609,19230 5603,19320 5586,19428 5570,19473
 #: by: Ruth Berendes-Edler:
@@ -1047,8 +1054,7 @@ Hugo-Heimann-Str.: enge, leicht kurvige Straﬂe	q1 14120,1991 14165,2106 14229,21
 #: by: Marek B‰nsch:
 #: confirmed_by: srt
 (Am Invalidenfriedhof - Scharnhorststr.): Radfahren verboten, Schieben	q4 8119,13912 8216,13987
-#: by: Christian Marwitz:
-Am Gemeindepark: enge Straﬂe	q1 7172,2343 7215,2442 7208,2534 7199,2559 7165,2571 7034,2586 6751,2708 6679,2701
+#XXX del --- #: by: Christian Marwitz: --- Am Gemeindepark: enge Straﬂe	q1 7172,2343 7215,2442 7208,2534 7199,2559 7165,2571 7034,2586 6751,2708 6679,2701
 # 
 #: by: Michael Meixner: vvv
 Schwarzkogelweg: enge Straﬂe	q1 10121,3040 10167,3257
@@ -1103,8 +1109,7 @@ Am Schloﬂpark: eng bei Autoverkehr	q1 10775,19054 10712,18975 10625,18831 10496,
 Poschingerstr.: enge Straﬂe	q1 5697,6276 5754,6238 5824,6240 5875,6262 5925,6311 5971,6343 6095,6358 6261,6391
 #: by: Manfred Kˆhnen:
 Hˆltermannsteig: Fuﬂg‰nger	q2 13974,2728 13936,2795 13935,2908 13941,3219 13965,3222 14023,3276
-#: by: Regine Bast:
-Eiswaldtstr.: schmale Straﬂe	q1 6733,2433 6834,2449 6960,2406 7052,2353 7172,2343 7282,2386
+#XXX del --- #: by: Regine Bast: --- Eiswaldtstr.: schmale Straﬂe	q1 6722,2444 6834,2449 6965,2418 7051,2366 7172,2343 7282,2386
 #: by: Stefan Driesner: vvv
 Georg-Lehnig-Str.: enge Straﬂe	q1 14532,13563 14509,13481 14428,13507
 Erich-Kuttner-Str.: enge Straﬂe	q1 14584,13547 14532,13563 14428,13596 14370,13615 14323,13627 14217,13657 14184,13666 14117,13685 14088,13627 14060,13622
@@ -1485,10 +1490,14 @@ Seefelder Str. (Fuﬂweg): Fuﬂg‰nger, schmal	q2 17274,16177 17371,16194 17383,1619
 (Orlam¸nder Weg - Tambacher Str.): Fuﬂg‰nger	q1 7172,1630 7144,1591
 #: XXX_prog: Bordsteine (2x)
 (Parkweg Trippsteinstr. - Sondershauser Str.): Fuﬂg‰nger, Bordsteine	q1- 6762,1226 6702,1197 6700,1184
-(Parkweg Trippsteinstr. - Sondershauser Str.): Fuﬂg‰nger	q1 6667,1189 6596,1198 6528,1207 6501,1207 6481,1210 6406,1218
+#: XXX_prog: Bordsteine an jeder Kreuzung
+#: corrected_by: srt (added Bordsteine)
+(Parkweg Trippsteinstr. - Sondershauser Str.): Fuﬂg‰nger, Bordsteine	q2 6667,1189 6596,1198 6528,1207 6501,1207 6481,1210 6406,1218
 (Parkweg Blankenhainer Str. - Hildburghauser Str.): Fuﬂg‰nger	q1 6578,1595 6528,1573 6517,1479 6515,1418 6479,1312 6481,1210 6487,1169 6455,1101 6467,1028
 (Gr‰fentaler Str. - Georgenstr.): Fuﬂg‰nger	q1 6189,1423 6132,1395
-Altenburger Str.: Fuﬂg‰nger	q2 6651,1063 6631,968
+#: XXX_prog: Bordsteine
+#: corrected_by: srt (added Bordsteine)
+Altenburger Str.: Fuﬂg‰nger, Bordsteine	q2 6651,1063 6631,968
 (Lilienthalpark): Fuﬂg‰nger	q2 5514,580 5571,614 5671,637 5615,735 5576,800 5584,808 5571,864 5540,919
 (Lilienthalpark): Fuﬂg‰nger	q2 5578,936 5540,919 5358,822
 (Lilienthalpark): Fuﬂg‰nger	q2 5533,663 5485,751 5499,771 5539,773 5590,719 5593,679 5575,660 5533,663
@@ -1778,7 +1787,7 @@ Kreutzerweg: enge Straﬂe	q1 4629,3916 4836,4041 4848,4069 4834,4102
 Am Forstacker: enge Straﬂe	q1 -3676,17131 -3671,17202 -3648,17250 -3612,17280 -3532,17333 -3491,17381 -3418,17525
 #: by: David (dh):
 #: corrected_by: srt/policy (q2 -> q1)
-Brandenburgische Str. (Steglitz): enge Straﬂe	q1 6889,4334 6820,4347 6532,4422
+Brandenburgische Str. (Steglitz): enge Straﬂe	q1 6889,4334 6820,4347 6677,4384 6532,4422
 #: by: anonymous vvv
 Im Lesachtal: enge Straﬂe	q1 10349,2188 10428,2109 10466,2071 10549,2257
 Im Lesachtal: enge Straﬂe	q1 10617,2226 10549,2257
@@ -2110,7 +2119,7 @@ Gerstenweg: enge Straﬂe	q1 21262,13517 21214,13126 21168,12794 21101,12661 21053
 #: by: Katja Frenzel:
 Genfer Weg: Fuﬂg‰nger	q1 2995,2119 3150,2113
 #: by anonymous:
-Renatenweg: enge Straﬂe	q1 6374,2844 6402,2770 6438,2767 6463,2724
+Renatenweg: enge Straﬂe	q1 6368,2851 6376,2809 6423,2774 6463,2724
 #: by: Tina Zimmer:
 #: corrected_by: srt/policy (q4 -> q2)
 Renatenweg: Fuﬂg‰nger	q2 6463,2724 6529,2642

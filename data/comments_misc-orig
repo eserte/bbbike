@@ -129,7 +129,7 @@ Am Petersberg: Privatstraße	CS 990,5581 825,5420
 als Puschkinallee 6c, 6d ausgeschildert	CP2; 13995,9834 14076,10011
 Durch Toreinfahrt (immer offen)	CP2; 14043,10928 14107,10911
 als Sackgasse ausgeschildert	CP2; 14672,10760 14564,10792
-Radfahren durch den Park erlaubt	CS 6542,1674 6679,1734 6848,1809
+Radfahren durch den Park erlaubt	CS 6526,1688 6679,1734 6848,1809
 #: XXX_indoor: vielleicht nach comments_kfzverkehr verschieben?
 Kein MIV-Durchgangsverkehr, nur Anlieger und Linienverkehr	CS -13036,342 -13011,299
 #: by: Ingrid Beese:
@@ -584,6 +584,14 @@ Zugang zum Bad	culdesac_pseudo 7344,13435
 	culdesac 22462,11679
 	culdesac 21283,12066
 	culdesac 21273,11882
+	culdesac 6827,3676
+	culdesac 6794,3755
+	culdesac 6760,3835
+	culdesac 6717,3924
+	culdesac 5661,1375
+	culdesac 6290,2336
+	culdesac 6278,2057
+	culdesac 6322,1807
 #: section ^^^
 ######################################################################
 # busroute
@@ -723,7 +731,7 @@ Bus 186	busroute_N 4542,1188 4605,1089 4768,840 4875,677 4948,562
 Bus 186, Bus 284	busroute_N 4948,562 4748,453 4505,465 4279,459
 Bus M85	busroute_N 4136,505 4122,421 4068,406 3912,362 3898,466 3834,502 3647,739
 Bus M77, Bus M82	busroute_N 6977,870 6941,690 6937,671 6959,509 7007,333 7014,203 6982,88
-Bus 283	busroute_N 7234,2548 7324,2559 7517,2574 7578,2536 7663,2494 7702,2477 7782,2442 7899,2391 7923,2319 7987,2337 7983,2348 7983,2348 7899,2391
+Bus 283	busroute_N 7234,2548 7324,2559 7517,2574 7602,2522 7667,2501 7704,2482 7777,2447 7899,2391 7923,2319 7987,2337 7983,2348 7983,2348 7899,2391
 Bus 187	busroute_N 7852,3183 7865,3344 7789,3362 7753,3371 7704,3383 7587,3411 7501,3432 7483,3440 7183,3570 7109,3635 6996,3761
 Bus 187	busroute_N 7753,3371 7734,3290 7719,3219 7720,3148
 Bus M77, ...	busroute_N 8495,2080 8565,2003 8607,1898
@@ -1017,3 +1025,6 @@ Adelheidallee: Privat, kein öffentlicher Zugang	CS 1687,20782 1527,20840
 Steffenshagener Str.: Privatstraße	CS 22983,11098 23159,11097
 Münsterberger Weg: nicht ausgeschildert	CP2; 24029,11363 24173,11328
 Püttlinger Str.: Privatstraße	CS 21275,11942 21273,11882
+(Mariannenstr. - Verlängerte Georgenstr.): Privatstraße	CS 6032,1348 5934,1310
+Goldaper Str.: Privatstraße	CS 6195,1969 6211,2010 6278,2057
+Rudolf-Beyendorff-Ring: Privatstraße	CS 6159,2176 6201,2125

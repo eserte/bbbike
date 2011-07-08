@@ -2992,32 +2992,8 @@ userdel	q4::inwork; 10264,12826 10166,12777 10132,12941
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1310040000,
-         'text' => 'Bombenfund am Bahnhof Köpenick',
-         'from' => 1309928959,
-         'id' => 2242,
-         'data' => 'userdel	2::inwork 22364,6158 22475,6151 22539,6258
-userdel	2::inwork 22358,5918 22428,6063 22475,6151 22603,6141
-userdel	2::inwork 22468,6046 22544,6037
-userdel	2::inwork 22324,6397 22364,6158 22283,6174
-userdel	2::inwork 22513,5747 22531,5871 22358,5918 22294,5777
-userdel	2::inwork 22777,6157 22603,6141
-userdel	2::inwork 22608,5732 22631,5866 22531,5871 22539,5956 22730,5944
-userdel	2::inwork 22639,6062 22544,6037 22539,5956
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'source_id' => 'IM_017545',
-         'until' => 1310075999,
-         'text' => 'Markgrafenstr. (Mitte) in beiden Richtungen zwischen Französische Str. und Mohrenstr. ab 07.07.2011 17 Uhr, Veranstaltung, Straße vollständig gesperrt ',
-         'from' => 1309903200,
-         'id' => 2243,
-         'data' => 'userdel	2::temp 9643,12127 9656,12021 9668,11928 9679,11834
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        {
          'source_id' => 'IM_017544',
          'until' => 1310767200,

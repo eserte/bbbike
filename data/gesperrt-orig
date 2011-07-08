@@ -62,7 +62,7 @@ Wilhelplatz	1 -7232,445 -7219,454 -7059,578
 Wilhelplatz	1 -7059,578 -7089,472 -7122,439 -7180,378
 Tempelhofer Weg	1 7499,7880 7268,8008 7193,7950
 Alt-Mariendorf (Nord)	1 9731,3889 9934,3802
-Alt-Mariendorf (Süd)	1 9934,3802 9751,3769 9440,3665 9391,3651 9215,3599 9131,3571 8955,3521
+Alt-Mariendorf (Süd)	1 9934,3802 9751,3769 9584,3713 9440,3665 9391,3651 9215,3599 9131,3571 8955,3521
 Knoten Märkische Allee	1 19726,11743 19785,11760 19849,11779 19890,11830 19918,11891
 Knoten Märkische Allee	1 19918,11891 19979,11774
 Knoten Märkische Allee	1 20114,11719 20026,11663
@@ -311,7 +311,7 @@ Schollenhof	1 3238,21448 3155,21572 3236,21601 3280,21477
 Siegfried-Aufhäuser-Platz	1 13952,7497 13941,7522 13953,7548 13980,7548
 Saltykowstr.	1 12726,7887 12865,7923
 # XXX del: XXX_indoor: evtl. nach temp-blockings verschieben (Drorystr. - Braunschweiger Str., Spielplatz): nachts werden die Tore geschlossen	2 13520,7485 13601,7366
-Barbarastr.	1 6451,3034 6371,2955 6320,2909 6357,2863 6374,2844
+Barbarastr.	1 6451,3034 6371,2955 6320,2909 6357,2863 6368,2851
 Leipziger Platz	1 8572,11506 8580,11468 8624,11436 8703,11441 8735,11474 8733,11524 8729,11558 8682,11590 8601,11581 8569,11543 8572,11506
 Crusemarkstr.	1 10825,18634 10712,18975
 Kavalierstr.	1 10625,18831 10721,18575
@@ -451,7 +451,7 @@ Max-Eyth-Str.	1 2506,6606 2566,6531 2611,6495
 (IKEA-Zufahrt)	1 8204,6958 8229,7154
 #: by: anonymous:
 Neumarkplan	1 12483,3929 12569,3764 12572,3731 12560,3697 12530,3669 12485,3658 12445,3674 12420,3707 12415,3743 12421,3767 12483,3929
-#: add_fragezeichen: Gilt die Einbahnstraßenregelung auch für Radfahrer oder nur für Autofahrer?
+#: confirmed_by: srt
 Mudrastr.	1 7370,2400 7324,2559 7289,2699 7308,2734 7384,2763 7489,2787
 #: by: Ansgar Petters:
 Heiligental	1 5803,19874 5858,19761 5897,19668 5929,19574
@@ -572,7 +572,7 @@ Eckertstr.	1 13608,12547 13522,12748
 Erkelenzdamm	1s:q3 11117,10326 11094,10261
 Alt-Tempelhof	1 8776,6661 8722,6656
 #: by: Steini (immerlocker)
-Langkofelweg	1 6850,3408 6940,3498 7018,3572
+Langkofelweg	1 6845,3403 6940,3498 7018,3572
 #: add_fragezeichen: Gilt die Einbahnstraßenregelung auch für Radfahrer oder nur für Autofahrer?
 Heinickeweg	1 2224,14825 2210,14696 2207,14576
 Dornbrunner Str.	1 15954,6297 16043,6414
@@ -765,7 +765,7 @@ Bruno-Taut-Ring	1 13833,3665 13682,3718 13628,3781 13626,3867 13673,3915 13726,3
 Havermannstr.	1s:q3 13803,4932 13892,4955
 Rambowstr.	1s:q3 13853,4759 13825,4850 13803,4932
 Arabisweg	1s:q3 17721,2232 17772,2331
-Wilhelm-von-Siemens-Str.	1s:q3 9072,2589 9437,2649
+Wilhelm-von-Siemens-Str.	1s:q3 9284,2624 9437,2649
 Saaleckplatz	1 5193,1050 5162,1098 5162,1110
 Saaleckplatz	1s:q3 5162,1110 5178,1123
 Saaleckplatz	1 5178,1123 5190,1114 5218,1067
@@ -829,6 +829,7 @@ Pestalozzistr.	1s:q3 24652,11794 24706,11838 24769,11819
 Finsterberger Str.	1s:q3 23086,12565 23129,12496 23233,12406
 Bauerwitzer Weg	1 22917,12239 22814,12353 22990,12493
 Heinrich-Grüber-Platz	1 22877,11940 22858,11937 22843,11999 22856,12003 22870,12000 22883,11956 22877,11940
+Boraweg	1s:q4 6759,2882 6710,2909 6658,2907
 ######################################################################
 #
 # Potsdam
@@ -992,7 +993,7 @@ Tizianstr. (Potsdam)	1s -11424,542 -11480,621 -11581,559
 Spitzmühlenweg	1s 41728,17918 41668,17984 41556,18146
 #: note: Umgehung ist offiziell möglich, glaube ich
 Mangerstr. (Potsdam) (Umgehung auf Gehweg oder Uferweg möglich)	1s -12064,-284 -12108,-291 -12265,-418
-Stephanstr.	1s 6523,4491 6366,4500
+Stephanstr.	1s 6523,4491 6360,4504
 Am Poetensteig, Gramzow	1s:q1 50043,90187 50107,89717
 #: by: Juliane Bölker:
 Atzpodienstr. (Umgehung auf Gehweg möglich)	1s:q3 16485,12384 16509,12518 16564,12513
@@ -1035,7 +1036,7 @@ Altstädter Ring: Mittelstreifen	3nocross -3481,14523 -3498,14413 -3501,14365 -35
 #: by: Juliane (alberts...)
 Altstädter Ring: Mittelstreifen mit Zaun	3nocross -3501,14365 -3506,14306 -3517,14218
 #: by: Steini (immerlocker)
-Kaiser-Wilhelm-Str.: Mittelstreifen	3nocross 6996,3761 6957,3699 6794,3502
+Kaiser-Wilhelm-Str.: Mittelstreifen	3nocross 6996,3761 6957,3699 6782,3491
 Alexanderstr.: umbequemes Überqueren wegen Bordsteinen	3nocross 11323,12484 11333,12437 11343,12300
 Yorckstr.: Mittelstreifen	3nocross 8777,9601 8648,9526 8595,9495
 Klemkestr.: Mittelstreifen	3nocross 7492,18699 7520,18701 7609,18707 7690,18716
@@ -1531,6 +1532,8 @@ tragen, langgezogene Stufen (13 Stufen)	0:25 20704,1383
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+Drängelgitter (lichte Breite ca. 90cm)	BNP:4::trailer=15 6455,2924
+Hanstedter Weg: Geländer	BNP:3::trailer=10 6908,5053
 Lichte Breite ca. 110cm	BNP:0 25218,12653
 #: note: kurios: Drängelgitter sind relativ hoch, so dass ein Fahrrad durchpasst vvv
 Drängelgitter am Restaurant Igel	BNP:3 -1659,18104
@@ -2158,8 +2161,9 @@ Niehofer Str.	1 16942,16174 16815,16214 16692,16253
 Drängelgitter	BNP:10 17371,16194
 #: by: ^^^
 #: by: Daniel Weber [AM] vvv
-Orlamünder Weg	1 7035,1814 7119,1829 7174,1718 7195,1703 7214,1710 7242,1754 7258,1757 7332,1718
+Orlamünder Weg	1 7035,1814 7119,1829 7174,1718 7195,1703 7214,1710 7242,1754 7258,1757 7277,1747 7332,1718
 Arnstädter Str.	1 6553,1409 6528,1207 6512,1086 6526,1083 6515,1010
+#: confirmed_by: srt
 tragen (5 Stufen)	0:20 6501,1207
 #: by: ^^^
 #: by: J.F. Jab [AM]
