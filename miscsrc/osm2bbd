@@ -686,6 +686,10 @@ for my $osm_file (@osm_files) {
 
 		    if (exists $tag{'station'} && $tag{'station'} eq 'light_rail') {
 			push @or, ['sbahnhof', 'SA', name => normalize_name_sbahnhof($name)];
+		    } elsif (exists $tag{'railway'} && $tag{'railway'} eq 'station' && 
+			     exists $tag{'hvv:psv_type'} && $tag{'hvv:psv_type'} eq 'S'
+		    ) { # Hamburg
+			push @or, ['sbahnhof', 'SA', name => normalize_name_sbahnhof($name)];
 		    } elsif (exists $tag{'station'} && $tag{'station'} eq 'subway') {
 			push @or, ['ubahnhof', 'UA', name => normalize_name_ubahnhof($name)];
 		    } else {
