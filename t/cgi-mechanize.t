@@ -2,7 +2,6 @@
 # -*- perl -*-
 
 #
-# $Id: cgi-mechanize.t,v 1.54 2009/01/24 09:06:55 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -24,7 +23,7 @@ BEGIN {
     }
 }
 
-if ($WWW::Mechanize::VERSION == 1.54) {
+if ($WWW::Mechanize::VERSION >= 1.54 && $WWW::Mechanize::VERSION <= 1.68) { # XXX bug ticket missing!
     package WWW::Mechanize;
     local $^W;
     *_update_page = sub {
