@@ -479,7 +479,7 @@ Alt-Biesdorf	1 20375,11694 20435,11698 20575,11698 21108,11628
 Alt-Biesdorf	1 21108,11628 20963,11618 20633,11651 20549,11659 20375,11694
 Privatstr. 14	1s 13159,17196 13103,17280
 Bernkasteler Str.	1s 15208,16939 15015,16908 14923,16901 14923,16914
-Wiedenbrücker Weg	1 4207,1113 4220,1175 4148,1275
+Wiedenbrücker Weg	1 4207,1113 4220,1175 4141,1282
 Am Langen Weg:	1 -7033,14984 -7024,14880 -7015,14772 -7011,14693 -7013,14578
 Hans-Sachs-Str.	1 3141,4023 3214,4066
 Wehneltsteig	1 1256,14217 1305,14384
@@ -584,9 +584,9 @@ Havermannstr.	1s 13803,4932 13892,4955
 Rambowstr.	1s 13853,4759 13825,4850 13803,4932
 Arabisweg	1s 17721,2232 17772,2331
 Wilhelm-von-Siemens-Str.	1s 9284,2624 9437,2649
-Saaleckplatz	1 5193,1050 5162,1098 5162,1110
+Saaleckplatz	1 5204,1057 5187,1059 5162,1098 5162,1110
 Saaleckplatz	1s 5162,1110 5178,1123
-Saaleckplatz	1 5178,1123 5190,1114 5218,1067
+Saaleckplatz	1 5178,1123 5190,1114 5212,1074 5204,1057
 Fußgängertunnels Sybel-Waitz-Str.: provisorische Schließung	2 3712,10566 3731,10563 3781,10569 3800,10580
 Meyerinckplatz	1 4030,10575 4007,10559 3978,10582 3997,10607
 Beyschlagstr.	1 21,22545 5,22384 184,22257
@@ -635,6 +635,10 @@ Finsterberger Str.	1s 23086,12565 23129,12496 23233,12406
 Bauerwitzer Weg	1 22917,12239 22814,12353 22990,12493
 Heinrich-Grüber-Platz	1 22877,11940 22858,11937 22843,11999 22856,12003 22870,12000 22883,11956 22877,11940
 Boraweg	1s 6759,2882 6710,2909 6658,2907
+Viktoriaplatz	1 3500,4146 3523,4139 3528,4118 3518,4106 3489,4115 3485,4137 3500,4146
+Glaserweg	1 10187,872 10237,749
+Lintruper Str.	1 10307,922 10380,757
+Alt-Buckow	1 12574,1866 12561,1931 12817,2031
 Am Neuen Garten	1 -12166,1384 -12212,1201 -12276,831 -12302,718
 Am Neuen Garten	1 -12332,585 -12582,127
 Hochstraße	3nocross::ignrte -11399,-1339 -11461,-1424 -11540,-1543
@@ -948,6 +952,8 @@ Mittelstreifen mit Schienstrang (nicht mehr in Betrieb) und Zaun	3nocross::ignrt
 Streitstr. -> Wegscheider Str.: Mittelstreifen mit Schienstrang (nicht mehr in Betrieb) und Zaun	3::igndisp -3050,16429 -3046,16548 -3214,16561
 Wegscheider Str. -> Streitstr.: Mittelstreifen mit Schienstrang (nicht mehr in Betrieb) und Zaun	3::igndisp -3214,16561 -3046,16548 -3043,16601
 Mittelstreifen	3nocross::ignrte 10759,1112 10827,1140 11002,1211
+Marienfelder Chaussee -> Wingerter Str.: Mittelstreifen	3::igndisp 11002,1211 10827,1140 10845,1026
+Wingerter Str. -> Marienfelder Chaussee: Mittelstreifen	3::igndisp 10845,1026 10827,1140 10759,1112
 Mittelstreifen	3nocross::ignrte 5517,20120 5545,19909 5533,19811
 Oranienburger Str. -> Wilhelm-Gericke-Str.: Mittelstreifen	3::igndisp 5517,20120 5545,19909 5598,19912
 Bahntrasse	3nocross::ignrte 15875,1796 15835,1747 15799,1690 15729,1573
@@ -1003,6 +1009,11 @@ Krokusstr. -> Stubenrauchstr.: Bahntrasse	3::igndisp 16739,2736 16677,2856 16635
 Bahntrasse	3nocross::ignrte 16182,2200 16242,2279 16306,2364
 Mohnweg -> Stubenrauchstr.: Bahntrasse	3::igndisp 16114,2377 16242,2279 16306,2364
 Stubenrauchstr. -> Mohnweg: Bahntrasse	3::igndisp 16182,2200 16242,2279 16114,2377
+Bahntrasse	3nocross::ignrte 16306,2364 16382,2464 16460,2567
+Stubenrauchstr. -> Goldrautenweg: Bahntrasse	3::igndisp 16306,2364 16382,2464 16183,2615
+Goldrautenweg -> Stubenrauchstr.: Bahntrasse	3::igndisp 16183,2615 16382,2464 16460,2567
+Bahntrasse	3nocross::ignrte 16460,2567 16475,2586 16547,2680
+Wegerichstr. -> Stubenrauchstr.: Bahntrasse	3::igndisp 16538,2543 16475,2586 16460,2567
 Bahntrasse	3nocross::ignrte 16547,2680 16573,2715 16635,2796
 Stubenrauchstr. -> Fuchsienweg: Bahntrasse	3::igndisp 16547,2680 16573,2715 16376,2862
 Fuchsienweg -> Stubenrauchstr.: Bahntrasse	3::igndisp 16376,2862 16573,2715 16635,2796
@@ -1710,6 +1721,8 @@ Berliner Str. -> Str. 56: Straßenbahntrasse	3::igndisp 12467,17814 12436,17682 1
 Mittelstreifen	3nocross::ignrte -1821,16327 -1816,16111 -1815,15976
 Uferweg -> Daumstr.: Mittelstreifen	3::igndisp -1942,16105 -1816,16111 -1821,16327
 Daumstr. -> Uferweg: Mittelstreifen	3::igndisp -1815,15976 -1816,16111 -1942,16105
+tragen (2 Stufen)	0:5:-180 3431,1987
+tragen	0:35:-120 3580,4309
 tragen (ca. 32 Stufen)	0:35:-138 22675,12008
 tragen (ca. 30 Stufen)	0:30:-177 22859,12059
 tragen (ca. 30 Stufen)	0:30:-174 22857,12014
@@ -1874,6 +1887,7 @@ tragen (Treppe, ca. 20 Stufen)	0:25:-108 19163,14981
 tragen (Treppe, ca. 20 Stufen)	0:25:-12 19160,14935
 tragen (Treppe)	0:30:70 89344,-5795
 tragen, langgezogene Stufen (13 Stufen)	0:25:-168 20704,1383
+Tor	BNP:5:-87 2959,2608
 Drängelgitter (lichte Breite ca. 90cm)	BNP:4:-121:trailer=15 6455,2924
 Hanstedter Weg: Geländer	BNP:3:-108:trailer=10 6908,5053
 Lichte Breite ca. 110cm	BNP:0:-74 25218,12653

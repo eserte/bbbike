@@ -129,6 +129,8 @@ Steigung 4.5% (Massolleweg)	St; -7205,4411 -7227,4428
 Steigung 4.5% (Massolleweg)	St; -7194,4412 -7205,4411
 Steigung 4.5% (Königstr. (Wannsee))	St; -7622,881 -8045,788
 Steigung 4.5% (Gößweinsteiner Gang)	St; -7636,4346 -7692,4465
+Steigung 4.5% (Albrechtstr. (Steglitz))	St; 5092,5493 5183,5437
+Steigung 4.5% (Albrechtstr. (Steglitz))	St; 5088,5495 5092,5493
 Steigung 4.5% ((Dr. Kleusberg-Promenade - Höhenweg))	St; -4452,10420 -4443,10460
 Steigung 4.5% ((Dr. Kleusberg-Promenade - Höhenweg))	St; -4445,10379 -4452,10420
 Steigung 4.5% ((Dr. Kleusberg-Promenade - Höhenweg))	St; -4443,10460 -4429,10484
@@ -167,8 +169,6 @@ Steigung 4.1% (Grottewitzstr.)	St; 21742,115 21933,152
 Steigung 4.1% (Böttgerstr.)	St; 8655,15979 8720,15914
 Steigung 4.1% (Anklamer Str.)	St; 9800,14306 9938,14356
 Steigung 4.1% (Angerburger Allee)	St; -1931,11437 -1885,11392
-Steigung 4.1% (Albrechtstr. (Steglitz))	St; 5092,5493 5193,5431
-Steigung 4.1% (Albrechtstr. (Steglitz))	St; 5088,5495 5092,5493
 Steigung 4.0% (Kopischstr.)	St; 9477,9113 9459,9019
 Steigung 4.0% (Kloedenstr.)	St; 9669,9080 9654,8991
 Steigung 4.0% (Chamissoplatz)	St; 9546,9198 9526,9104
@@ -365,6 +365,7 @@ Steigung 2.7% (Paulsenstr.)	St; 4238,6080 4172,5918
 Steigung 2.7% (Otto-von-Wollank-Str.)	St; -8775,6403 -8773,6284
 Steigung 2.7% (Olympischer Platz)	St; -157,11943 -505,11882
 Steigung 2.7% (Olafstr.)	St; 3698,23657 3947,23547
+Steigung 2.7% (Mittelstr. (Steglitz))	St; 5016,5401 5111,5337
 Steigung 2.7% (Mehringdamm)	St; 9225,9038 9227,8890
 Steigung 2.7% (Mehringdamm)	St; 9224,9053 9225,9038
 Steigung 2.7% (Koenigsallee)	St; 850,8128 834,8206
@@ -428,7 +429,6 @@ Steigung 2.5% (Selbitzer Str.)	St; -8206,6072 -8262,5901
 Steigung 2.5% (Rembrandtstr. (Schöneberg))	St; 6243,7033 6141,6878
 Steigung 2.5% (Ortelsburger Allee)	St; -50,11003 -68,11156
 Steigung 2.5% (Olympischer Platz)	St; -157,11943 -193,12051
-Steigung 2.5% (Mittelstr. (Steglitz))	St; 5016,5401 5119,5332
 Steigung 2.5% (Menzelstr. (Schöneberg))	St; 6141,6878 6143,6853
 Steigung 2.5% (Kurhausstr.)	St; 2932,24056 2824,24212
 Steigung 2.5% (Koenigsallee)	St; 1623,8923 1541,8857
@@ -965,7 +965,6 @@ Steigung 1.4% (Bergstr. (Steglitz))	St; 5290,5704 5465,5726
 Steigung 1.4% (Attilastr.)	St; 7263,4281 7310,4308
 Steigung 1.4% (Arno-Holz-Str.)	St; 3978,5600 4115,5804
 Steigung 1.4% (Am Birkenhügel)	St; -7461,381 -7505,454
-Steigung 1.4% (Albrechtstr. (Steglitz))	St; 5193,5431 5268,5386
 Steigung 1.4% ((Werbellinstr. 50 - Rollbergstr.))	St; 12308,8088 12295,8154
 Steigung 1.4% ((Stülpnagelstr. - Knobelsdorffstr.))	St; 2197,11757 2188,11679
 Steigung 1.4% ((Havel-Ufer Gatow))	St; -4546,9381 -4506,9395
@@ -1043,6 +1042,7 @@ Steigung 1.3% (Am Kiesberg)	St; 18919,1888 18839,1715
 Steigung 1.3% (Am Beelitzhof)	St; -4188,2674 -3907,2438
 Steigung 1.3% (Am Beelitzhof)	St; -3907,2438 -3882,2441
 Steigung 1.3% (Alt-Kladow)	St; -7080,4896 -7170,4962
+Steigung 1.3% (Albrechtstr. (Steglitz))	St; 5183,5437 5268,5386
 Steigung 1.3% ((Mauerweg Spandau))	St; -7261,12299 -7182,12137
 Steigung 1.3% ((Mauerweg Spandau))	St; -6527,11731 -6580,11771
 Steigung 1.3% ((Gatower Str. - Rothenbücherweg))	St; -4713,9589 -4768,9584
@@ -1252,7 +1252,7 @@ Steigung 1.0% (Suevenstr.)	St; 20836,982 20734,776
 Steigung 1.0% (Silbersteinstr.)	St; 12702,6846 12649,6833
 Steigung 1.0% (Selbitzer Str.)	St; -8116,6167 -8206,6072
 Steigung 1.0% (Scottweg)	St; -966,11382 -1315,11300
-Steigung 1.0% (Schützenstr. (Steglitz))	St; 5046,5244 5119,5332
+Steigung 1.0% (Schützenstr. (Steglitz))	St; 5046,5244 5111,5337
 Steigung 1.0% (Sachsendamm)	St; 7696,7562 7600,7605
 Steigung 1.0% (Sachsendamm)	St; 7600,7605 7491,7675
 Steigung 1.0% (Rungiusstr.)	St; 12997,6290 12981,6366

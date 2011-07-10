@@ -4181,7 +4181,7 @@ EOF
        text  => '21.04.2006, 22.00 Uhr bis 24.04.2006, 4.00 Uhr Vollsperrung der Ottomar-Geschke-Straße ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 21182,4336 21174,4250
+userdel	2 21174,4250
 userdel	2 21053,4162 21146,4229 21174,4250
 EOF
      },
@@ -4190,7 +4190,7 @@ EOF
        text  => '23.06.2006, 21.00 Uhr bis 24.06.2006, 19.00 Uhr Vollsperrung der Ottomar-Geschke-Straße ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 21182,4336 21174,4250
+userdel	2 21174,4250
 userdel	2 21053,4162 21146,4229 21174,4250
 EOF
      },
@@ -4898,7 +4898,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'INKO_64281_COPY_1',
        data  => <<EOF,
-userdel	2 20692,3951 20772,3999 20788,4008 20834,4035 21053,4162 21146,4229 21174,4250 21182,4336 21206,4387 21332,4655
+userdel	2 20692,3951 20772,3999 20788,4008 20834,4035 21053,4162 21146,4229 21174,4250 21206,4387 21289,4563 21332,4655
 EOF
      },
      { from  => 1151101431, # 2006-06-24 00:23
@@ -9134,8 +9134,8 @@ userdel	q4::inwork -32153,-176 -32143,-211 -31993,-726 -31991,-1024
 EOF
      },
      { from  => 1179453600, # 2007-05-18 04:00
-       until => Time::Local::timelocal(reverse(2011-1900,8-1,31,15,0,0)), # 1279544400, # 2010-07-19 15:00
-       text  => 'Rudower Chaussee (Treptow - Köpenick) in beiden Richtungen Höhe S-Bahn Brücke Adlershof Baustelle, Straße vollständig gesperrt, als Fußgänger kann man passieren (bis Ende 08/2011)',
+       until => 1320015599, # 2011-10-30 23:59 --- until => Time::Local::timelocal(reverse(2011-1900,8-1,31,15,0,0)), # 1279544400, # 2010-07-19 15:00
+       text  => 'Rudower Chaussee (Treptow - Köpenick) in beiden Richtungen Höhe S-Bahn Brücke Adlershof Baustelle, Straße vollständig gesperrt, als Fußgänger kann man passieren',
        type  => 'handicap',
        source_id => 'IM_005525',
        data  => <<EOF,
@@ -19349,6 +19349,14 @@ EOF
        data  => <<EOF,
 userdel	q4::temp 9233,8597 9321,8607 9364,8640 9395,8726
 userdel	q4::temp 9321,8607 9401,8510 9451,8548 9364,8640
+EOF
+     },
+     { from  => undef, # 
+       until => 1320015599, # 2011-10-30 23:59
+       text  => 'Dörpfeldstr.: Bauarbeiten, Einbahnstraßenregelung',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork; 19904,3464 20012,3532
 EOF
      },
     );
