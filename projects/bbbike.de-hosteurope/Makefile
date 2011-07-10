@@ -495,9 +495,13 @@ prepare-bbbike-dist-prog-bbbike-html:
 #	Vorsichtshalber, weil ansonsten die falschen URLs enthalten sein
 #	könnten:
 	cd ${CURDIR}/BBBike/html && \
-	    rm -f newstreetform.html newstreetform.utf8.html fragezeichenform.html fragezeichenform.utf8.html
+	    rm -f newstreetform.html newstreetform.utf8.html \
+		fragezeichenform.html fragezeichenform.utf8.html \
+		shortfragezeichenform.html shortfragezeichenform.utf8.html
 	cd ${CURDIR}/BBBike/html && \
-	    ${MAKE} newstreetform.html newstreetform.utf8.html fragezeichenform.html fragezeichenform.utf8.html \
+	    ${MAKE} newstreetform.html newstreetform.utf8.html \
+		fragezeichenform.html fragezeichenform.utf8.html \
+		shortfragezeichenform.html shortfragezeichenform.utf8.html \
 		CGIDIR=http://${BBBIKE_HOSTEUROPE_HOST}/cgi-bin
 
 prepare-bbbike-dist-data:	prepare-bbbike-dist-data-datadir \
