@@ -2,10 +2,9 @@
 # -*- perl -*-
 
 #
-# $Id: combine_streets.pl,v 1.16 2008/05/18 16:01:51 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999,2001,2002,2003 Slaven Rezic. All rights reserved.
+# Copyright (C) 1999,2001,2002,2003,2011 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -23,7 +22,7 @@ Slaven Rezic <slaven.rezic@berlin.de>
 
 =head1 COPYRIGHT
 
-Copyright (c) 1999,2001 Slaven Rezic. All rights reserved.
+Copyright (c) 1999,2001,2002,2003,2011 Slaven Rezic. All rights reserved.
 This module is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.
 
