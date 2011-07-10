@@ -4834,7 +4834,7 @@ EOF
 					   strname_html => CGI::escapeHTML($fragezeichen_comment),
 					   supplied_coord => join(",", @{$r->path->[$path_index]}),
 					  })->query_string;
-			print qq{<td>$fontstr<a target="newstreetform" href="$bbbike_html/fragezeichenform${newstreetform_encoding}.html?$qs">};
+			print qq{<td>$fontstr<a target="newstreetform" href="$bbbike_html/shortfragezeichenform${newstreetform_encoding}.html?$qs">};
 			if ($is_unknown) {
 			    print qq{Unbekannte Straﬂe};
 			} else {
