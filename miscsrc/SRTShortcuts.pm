@@ -181,6 +181,10 @@ EOF
 		    ];
 		} @acc_cat_split_streets_years
 		),
+		'-',
+		[Button => $do_compound->('unset'),
+		 -command => sub { unset_penalty() },
+		],
 	       ]
 	      ],
 	      [Button => $do_compound->("Set penalty fragezeichen-outdoor-nextcheck"),
@@ -1144,6 +1148,10 @@ sub set_penalty {
     $BBBikeEdit::bbd_penalty_invert = 0;
     $BBBikeEdit::bbd_penalty_file = "$bbbike_rootdir/$filefrag";
     BBBikeEdit::build_bbd_penalty_for_search();
+}
+
+sub unset_penalty {
+    delete $main::penalty_subs{'bbdpenalty'};
 }
 
 sub set_penalty_fragezeichen {
