@@ -1645,17 +1645,20 @@ sub gps_data_viewer {
 	    $gps_view->associate_object($gps);
 	}
     };
+    my $unplot_file = sub {
+	if ($BBBikeEdit::recent_gps_point_layer) {
+	    main::delete_layer($BBBikeEdit::recent_gps_point_layer);
+	    undef $BBBikeEdit::recent_gps_point_layer;
+	}
+	if ($BBBikeEdit::recent_gps_street_layer) {
+	    main::delete_layer($BBBikeEdit::recent_gps_street_layer);
+	    undef $BBBikeEdit::recent_gps_street_layer;
+	}
+    };
     my $show_and_plot_file = sub {
 	if (defined $gps_data_viewer_file) {
 	    $show_file->();
-	    if ($BBBikeEdit::recent_gps_point_layer) {
-		main::delete_layer($BBBikeEdit::recent_gps_point_layer);
-		undef $BBBikeEdit::recent_gps_point_layer;
-	    }
-	    if ($BBBikeEdit::recent_gps_street_layer) {
-		main::delete_layer($BBBikeEdit::recent_gps_street_layer);
-		undef $BBBikeEdit::recent_gps_street_layer;
-	    }
+	    $unplot_file->();
 	    BBBikeEdit::edit_gps_track($gps_data_viewer_file);
 	}
     };
@@ -1681,6 +1684,11 @@ sub gps_data_viewer {
 			   $show_and_plot_file->();
 		       }
 		      )->pack(-side => "left");
+	$f->Button(-text => 'Unplot',
+		   -command => sub {
+		       $unplot_file->();
+		   }
+		  )->pack(-side => 'left');
 	$pe->configure(-selectcmd => sub {
 			   $plotandshowb->focus;
 		       });
