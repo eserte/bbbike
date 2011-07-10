@@ -196,6 +196,7 @@ function init() {
    <tr><td colspan="3"><hr /></td></tr>
 [% END -%]
 
+[% UNLESS is_short_fragezeichen_form -%]
 [% IF is_fragezeichen_form -%]
    <tr>
     <td colspan="2">
@@ -333,6 +334,7 @@ function init() {
 [% END -%]
 
    <tr><td colspan="3"><hr /></td></tr>
+[% END; # is_short_fragezeichen_form -%]
 
    <tr>
     <td>Dein Name</td>

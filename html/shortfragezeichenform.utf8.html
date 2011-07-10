@@ -1,0 +1,148 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"> <!-- -*-html-*- -->
+<!-- DO NOT EDIT, generated automatically from newstreetform.tpl.html -->
+<html>
+ <head>
+ <title>Neue Straße für BBBike</title>
+ <link rev="made" href="mailto:slaven@rezic.de" />
+ <link rel="stylesheet" type="text/css" href="bbbike.css?v=1.25" />
+ <script>
+function check() {
+  if (!check_strname()) return false;
+  return true;
+}
+function check_strname() {
+  var frm = document.forms.newstreet;
+  return true;
+}
+function init() {
+  var frm = document.forms.newstreet;
+
+  var strname_html;
+  if (location.search) {
+    var loc_search = location.search;
+    if (loc_search.match(/strname=([^;&]*)/)) {
+      frm.supplied_strname.value = unescape(RegExp.$1);
+    }
+    if (loc_search.match(/bezirk=([^;&]*)/)) {
+      frm.supplied_bezirk.value = unescape(RegExp.$1);
+    }
+    if (loc_search.match(/ort=([^;&]*)/)) {
+      frm.supplied_ort.value = unescape(RegExp.$1);
+    }
+    if (loc_search.match(/plz=([^;&]*)/)) {
+      frm.supplied_plz.value = unescape(RegExp.$1);
+    }
+    if (loc_search.match(/coord=([^;&]*)/)) {
+      frm.supplied_coord.value = unescape(RegExp.$1);
+    }
+    if (loc_search.match(/strname_html=([^;&]*)/)) {
+      strname_html = unescape(RegExp.$1);
+    }
+  }
+
+  // NOTE: this is duplicated in get_and_set_email_author_from_cookie in bbbike_util.js
+  if (document.cookie) {
+    var cookies = document.cookie.split(/;\s*/);
+    for (var i=0; i<cookies.length; i++) {
+      if (cookies[i].match(/^mapserver_comment=(.*)/)) {
+        var arr = RegExp.$1.split("&");
+        for(var i=0; i<arr.length/2; i++) {
+          var key = arr[i*2];
+	  var val = arr[i*2+1];
+	  val = val.replace(/%40/g, "@");
+	  val = val.replace(/%20/g, " ");
+  	  if (key == "email" || key == "author") {
+	    val = unescape(val);
+	    frm.elements[key].value = val;
+	  }
+  	}
+	break;
+      }
+    }
+  }
+
+  if (typeof strname_html != "undefined" && strname_html != "" && typeof document.getElementById == "function") {
+    var node = document.getElementById("fragezeichen_text");
+    if (node) {
+      node.innerHTML = strname_html;
+    }
+  }
+
+  if (typeof window.focus == "function") {
+    window.focus();
+  }
+}
+ </script>
+</head>
+<body onload="init()">
+ <h1>Kommentar zur Straße</h1>
+ <form name="newstreet" method="post" action="../cgi/mapserver_comment.cgi">
+  <input type="hidden" name="formtype" value="fragezeichenform" />
+  <input type="hidden" name="supplied_strname" value="" />
+  <input type="hidden" name="supplied_bezirk" value="" />
+  <input type="hidden" name="supplied_ort" value="" />
+  <input type="hidden" name="supplied_plz" value="" />
+  <input type="hidden" name="supplied_coord" value="" />
+  <input type="hidden" name="encoding" value="utf-8" />
+  <table>
+
+   <tr><td colspan="3"><hr /></td></tr>
+   <tr>
+    <td style="vertical-align:top; text-align:right; padding-right:1em;">
+     <b>Frage</b>:
+    </td>
+    <td>
+     <span id="fragezeichen_text" style="font-style:italic;"></span>
+    </td>
+   </tr>
+   <tr>
+    <td style="vertical-align:top; text-align:right; padding-right:1em;">
+     <b>Antwort</b>:
+    </td>
+    <td>
+     <textarea cols="40" rows="5" name="comments"></textarea>
+    </td>
+   </tr>
+
+   <tr><td colspan="3"><hr /></td></tr>
+
+
+   <tr>
+    <td>Dein Name</td>
+    <td><input name="author"  size="30"></td>
+   </tr>
+   <tr>
+    <td>Deine E-Mail<br>(für Rückfragen bitte angeben)</td>
+    <td><input name="email"  size="30"></td>
+   </tr>
+
+   <tr>
+    <td></td>
+    <td><input type="submit" onclick="return check()" value="Abschicken"></td>
+   </tr>
+
+   <tr>
+    <td colspan="3">Die Daten werden manuell in die BBBike-Datenbank eingetragen.</td>
+   </tr>
+  </table>
+
+  <!-- zdjela meda -->
+  <div style="visibility:hidden;">If you're a bot, then type something in here: <input name="url" size="1"></div>
+ </form>
+
+ <table width="100%">
+  <tr><td style="padding-top:3px"></td></tr>
+  <tr>
+   <td colspan="3">
+      <p class="ftr">
+       <a id="bbbikemail" href="mailto:slaven@rezic.de">E-Mail</a>
+       
+       | <a id="bbbikeurl" href="../cgi/bbbike.cgi">BBBike</a>
+       
+<!--       | <a href="javascript:history.back()">Zurück</a>-->
+      </p>
+   </td>
+  </tr>
+ </table>
+
+</body></html>

@@ -12,6 +12,7 @@ CGIDIR?=../cgi
 
 all:	newstreetform.html newstreetform.utf8.html \
 	fragezeichenform.html fragezeichenform.utf8.html \
+	shortfragezeichenform.html shortfragezeichenform.utf8.html \
 	bbbike_small \
 	bbbike-opensearch \
 	bbbike-opensearch-images
@@ -53,6 +54,14 @@ fragezeichenform.html: newstreetform.tpl.html
 
 fragezeichenform.utf8.html: newstreetform.tpl.html
 	${TPAGE} --define cgidir=${CGIDIR} --define is_fragezeichen_form=1 --define nometacharset=1 --define encoding=utf-8 newstreetform.tpl.html | piconv -f latin1 -t utf8 > $@
+	chmod ugo+r $@
+
+shortfragezeichenform.html: newstreetform.tpl.html
+	${TPAGE} --define cgidir=${CGIDIR} --define is_fragezeichen_form=1 --define is_short_fragezeichen_form=1 newstreetform.tpl.html > $@
+	chmod ugo+r $@
+
+shortfragezeichenform.utf8.html: newstreetform.tpl.html
+	${TPAGE} --define cgidir=${CGIDIR} --define is_fragezeichen_form=1 --define is_short_fragezeichen_form=1 --define nometacharset=1 --define encoding=utf-8 newstreetform.tpl.html | piconv -f latin1 -t utf8 > $@
 	chmod ugo+r $@
 
 bbbike-opensearch:	opensearch/bbbike-opensearch-de-simple.xml \
