@@ -344,6 +344,7 @@ SBAHN_CATEGORIES=	SA SB SC S0 SBau
 
 sbahn: sbahn-orig Makefile $(CONVERT_ORIG_FILE)
 	-@$(WRITEABLE) $@
+	-@rm -f /tmp/sbahn
 	$(CONVERT_ORIG) -strip-future-categories sbahn-orig > /tmp/sbahn
 .for cat in $(SBAHN_CATEGORIES)
 	$(GREPSTRASSEN) -catrx ^$(cat).* /tmp/sbahn | ${PERL} $(MISCSRCDIR)/merge_overlapping_streets.pl -sep "," - | $(COMBINE_STREETS) - | $(SORT_NO_LOCALE) > /tmp/sbahn-$(cat)
@@ -370,6 +371,7 @@ RBAHN_CATEGORIES=	RA RB RC R R0 RBau RG RP
 
 rbahn: rbahn-orig Makefile $(CONVERT_ORIG_FILE)
 	-@$(WRITEABLE) $@
+	-@rm -f /tmp/rbahn
 	$(CONVERT_ORIG) -strip-future-categories rbahn-orig > /tmp/rbahn
 .for cat in $(RBAHN_CATEGORIES)
 	$(GREPSTRASSEN) -catrx ^$(cat).* /tmp/rbahn | ${PERL} $(MISCSRCDIR)/merge_overlapping_streets.pl -sep "," - | $(COMBINE_STREETS) - | $(SORT_NO_LOCALE) > /tmp/rbahn-$(cat)
