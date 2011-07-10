@@ -10821,7 +10821,9 @@ sub activate_temp_blockings {
 		    my $to_date_readable   = defined $o->{until} ? POSIX::strftime($datefmt, localtime($o->{until})) : "...";
 		    if ($from_date_readable eq '...' && $to_date_readable eq '...') {
 			if ($o->{permanent}) {
-			    $date_spec = M"permanent";
+			    if ($devel_host) { # "permanent" "temporary" is too strange for the common user...
+				$date_spec = M"permanent";
+			    }
 			} else {
 			    $date_spec = M"Ende unbekannt";
 			}
