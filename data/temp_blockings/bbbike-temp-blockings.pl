@@ -17579,7 +17579,7 @@ userdel	q4::inwork 13104,16522 13272,16672
 EOF
      },
      { from  => 1272956400, # 2010-05-04 09:00
-       until => 1311948000, # 2011-07-29 16:00
+       until => 1310326725, # 2011-07-29 16:00 1311948000
        text  => 'Blankenburger Chaussee (Karow): Baustelle, Fahrtrichtung gesperrt (Ende 07.2011) stadteinwärts zwwischen Bahnhofstr. und Tarnowitzer Str., 05.05.2010 09:00 Uhr bis 29.07.2011 16:00 Uhr ',
        type  => 'handicap',
        source_id => 'IM_015680',
@@ -19357,6 +19357,15 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork; 19904,3464 20012,3532
+EOF
+     },
+     { from  => 1310014800, # 2011-07-07 07:00
+       until => 1310745600, # 2011-07-15 18:00
+       text  => 'Geschwister-Scholl-Str./Tucholskystr. (Mitte): Bauarbeiten, Brücke vollständig gesperrt (bis Mitte 07/11) in beiden Richtungen Höhe Ebertsbrücke, 08.07.2011 07:00 Uhr bis 15.07.2011 18:00 Uhr ',
+       type  => 'gesperrt',
+       source_id => 'INKO_096636',
+       data  => <<EOF,
+userdel	2::inwork 9524,12950 9529,12925
 EOF
      },
     );

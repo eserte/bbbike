@@ -2433,16 +2433,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_015680',
-         'until' => 1311948000,
-         'text' => 'Blankenburger Chaussee (Karow): Baustelle, Fahrtrichtung gesperrt (Ende 07.2011) stadteinwärts zwwischen Bahnhofstr. und Tarnowitzer Str., 05.05.2010 09:00 Uhr bis 29.07.2011 16:00 Uhr ',
-         'from' => 1272956400,
-         'id' => 2063,
-         'data' => 'userdel	q4::inwork; 15428,22736 15271,22527 15154,22370
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3003,6 +2994,16 @@ userdel	q4::inwork; 10264,12826 10166,12777 10132,12941
          'data' => 'userdel	q4::inwork; 19904,3464 20012,3532
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => 'INKO_096636',
+         'until' => 1310745600,
+         'text' => 'Geschwister-Scholl-Str./Tucholskystr. (Mitte): Bauarbeiten, Brücke vollständig gesperrt (bis Mitte 07/11) in beiden Richtungen Höhe Ebertsbrücke, 08.07.2011 07:00 Uhr bis 15.07.2011 18:00 Uhr ',
+         'from' => 1310014800,
+         'id' => 2247,
+         'data' => 'userdel	2::inwork 9524,12950 9529,12925
+',
+         'type' => 'gesperrt'
        }
      
 );
