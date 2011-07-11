@@ -160,14 +160,12 @@ for my $f (@files) {
 		     | lib/Win32Util.pm
 		     | BBBikePersonal.pm
 		     | BBBikeEditUtil.pm
-		     | BBBikeSalesman.pm
 		     | Strassen/Util.pm
 		     | lib/TkCompat.pm
 		     | cgi/bbbike-teaser.pl
 		     | BBBikeDraw/GD.pm
 		     | cgi/berlinmap.cgi
 		     | lib/WWWBrowser.pm
-		     | BBBikeScribblePlugin.pm
 		     | Route.pm
 		     | ext/VectorUtil-Inline/Inline.pm
 		     | Strassen/StrassenNetzHeavy.pm
@@ -178,7 +176,6 @@ for my $f (@files) {
 		     | PLZ.pm
 		     | Karte/UTM.pm
 		     | BBBikeRouting.pm
-		     | BBBikeRuler.pm
 		     | Strassen/MapInfo.pm
 		     | lib/GD/Convert.pm
 		     | lib/Tk/StippleLine.pm
@@ -200,6 +197,14 @@ for my $f (@files) {
 		     | GPS/DirectGarmin.pm
 		     | GPS/SerialStty.pm
 		     | lib/AutoInstall/Tk.pm # this is because of warnings in CPAN.pm
+		     | plugins/AltBerlin.pm
+		     | plugins/BBBikeRuler.pm
+		     | plugins/BBBikeSalesman.pm
+		     | plugins/BBBikeScribblePlugin.pm
+		     | plugins/BBBikeViewImages.pm
+		     | plugins/GeocoderPlugin.pm
+		     | plugins/KaupertsPlugin.pm
+		     | plugins/MultiMap.pm
 		   )$}x) {
 	    $can_w = 0;
 	}
