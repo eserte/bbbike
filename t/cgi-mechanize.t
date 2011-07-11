@@ -23,6 +23,8 @@ BEGIN {
     }
 }
 
+######################################################################
+# WWW::Mechanize monkeypatches
 if ($WWW::Mechanize::VERSION >= 1.54 && $WWW::Mechanize::VERSION <= 1.68) { # XXX bug ticket missing!
     package WWW::Mechanize;
     local $^W;
@@ -67,8 +69,34 @@ if ($WWW::Mechanize::VERSION >= 1.54 && $WWW::Mechanize::VERSION <= 1.68) { # XX
     }
 
     return $res;
-} # _update_page
+}; # _update_page
+
+# This monkeypatch is needed to keep the original charset for the form requests.
+    *update_html = sub {
+    my $self = shift;
+    my $html = shift;
+
+    $self->_reset_page;
+    $self->{ct} = 'text/html';
+    $self->{content} = $html;
+
+    $self->{forms} = [ HTML::Form->parse($html, base => $self->base, charset => $self->{res}->content_charset) ];
+    for my $form (@{ $self->{forms} }) {
+        for my $input ($form->inputs) {
+             if ($input->type eq 'file') {
+                 $input->value( undef );
+             }
+        }
+    }
+    $self->{form}  = $self->{forms}->[0];
+    $self->{_extracted_links} = 0;
+    $self->{_extracted_images} = 0;
+
+    return;
+};
+
 } # monkey-patch end
+######################################################################
 
 use FindBin;
 use lib ("$FindBin::RealBin",
@@ -498,7 +526,6 @@ for my $browser (@browsers) {
     ######################################################################
     # Test custom blockings
 
- XXX: { ; }
     {
 	my %common_args = (
 			   pref_seen  => 1,
@@ -820,6 +847,7 @@ for my $browser (@browsers) {
     ######################################################################
     # non-utf8 checks
 
+ XXX: { ; }
     {
 	$get_agent->();
 
