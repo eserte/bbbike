@@ -24,7 +24,7 @@ use lib $FindBin::RealBin;
 use BBBikeTest qw(gpxlint_string);
 use File::Temp qw(tempfile);
 
-plan tests => 21;
+plan tests => 22;
 
 use_ok 'GPS::GpsmanData';
 
@@ -115,7 +115,6 @@ EOF
 
 !R:	Seume -  Ebe		width=2	colour=#48C1BC	mapbak=
 Seumestr.		N52 30 37.4	E13 27 45.1	symbol=dot	GD110:dtyp=|c"	GD110:class=|C$	GD110:colour=|c@	GD110:attrs=|C!	GD110:subclass=|c!!/~d8|c!~r|_k|c!!"!!!|C#|c6!!	GD110:depth=QY|c%|_i	GD110:state=|cAA	GD110:country=|cAA	GD110:ete=~|R$|Z	GD110:temp=QY|c%|_i	GD110:time=~|R$|Z	GD110:cat=|c!!	GD110:addr=|c!
-!RS:			GD210:class=|c$!
 Eberhard-Roters-Platz		N52 29 10.1	E13 22 57.7	symbol=dot	GD110:dtyp=|c"	GD110:class=|C$	GD110:colour=|c@	GD110:attrs=|C!	GD110:subclass=|c!!/~d8|c!~|Zj|c$!"!!!|C>|c(!!	GD110:depth=QY|c%|_i	GD110:state=|cAA	GD110:country=|cAA	GD110:ete=~|R$|Z	GD110:temp=QY|c%|_i	GD110:time=~|R$|Z	GD110:cat=|c!!	GD110:addr=|c!
 
 EOF
@@ -131,6 +130,11 @@ EOF
     pass 'Loaded gpsman route file';
 
     is scalar @{ $gps->Track }, 2;
+
+    my $gps_multi = GPS::GpsmanMultiData->new;
+    $gps_multi->load($tmpfile);
+    my $gpx = $gps_multi->as_gpx(symtocmt => 1);
+    gpxlint_string($gpx);
 }
 
 {
