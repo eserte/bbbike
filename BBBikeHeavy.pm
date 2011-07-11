@@ -178,6 +178,19 @@ sub BBBikeHeavy::load_plugin {
 	}
 
 	if (!$ok) {
+	    # maybe plugin moved into plugins directory?
+	    my $base = basename($file);
+	    my $plugins_path = "$FindBin::RealBin/plugins/$base";
+	    if (-r $plugins_path) {
+		do $plugins_path or do {
+		    return $add_error->(Mfmt("Die Datei %s konnte nicht geladen werden: %s", $plugins_path, $@), "err");
+		};
+		$INC{"mod.pm"} = $plugins_path;
+		$ok = 1;
+	    }
+	}
+
+	if (!$ok) {
 	    eval 'require $file';
 	    if ($@) {
 		my $err = $@;
