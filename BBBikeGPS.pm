@@ -1672,7 +1672,7 @@ sub tk_interface {
 	require Route::Simplify;
 	require Strassen::Core;
 	require Strassen::GPX;
-	my $simplified_route = $route->simplify_for_gps(%args);
+	my $simplified_route = $route->simplify_for_gps(%args, -leftrightpair => ['<- ', ' ->']);
 	my $s = Strassen::GPX->new;
 	$s->set_global_directives({ map => ["polar"] });
 	for my $wpt (@{ $simplified_route->{wpt} }) {

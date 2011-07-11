@@ -112,6 +112,10 @@ sub Route::simplify_for_gps {
     my $waypointscache = $args{-waypointscache} || {};
     my $routenamelength = $args{-routenamelength} || 13;
     my $showcrossings = exists $args{-showcrossings} ? $args{-showcrossings} : 1;
+    # "<" and ">" somehow does not work when used with perl-GPS, so
+    # fallback to "(- " and " -)". But gpsbabel may use "<" and ">" or
+    # so.
+    my $leftrightpair = $args{-leftrightpair} || ["(- ", " -)"];
 
     my %crossings;
     if ($str) {
@@ -177,11 +181,9 @@ sub Route::simplify_for_gps {
 	    }
 	    if ($waypointcharset eq 'latin1' && $large_angle) {
 		if      ($prev_street_info->[&StrassenNetz::ROUTE_DIR] eq 'l') {
-		    #$short_dir_left = '<'; # unfortunately not supported by Garmin devices :-(
-		    $short_dir_left = "(- "; # XXX experiment: add space for legibility
+		    $short_dir_left = $leftrightpair->[0];
 		} elsif ($prev_street_info->[&StrassenNetz::ROUTE_DIR] eq 'r') {
-		    #$short_dir_right = '>'; # see above
-		    $short_dir_right = " -)"; # XXX experiment: add space for legibility
+		    $short_dir_right = $leftrightpair->[1];
 		}
 	    }
 
