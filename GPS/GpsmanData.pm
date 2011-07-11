@@ -1167,6 +1167,12 @@ sub as_gpx {
 		my $trkptxml = $trksegxml->addNewChild(undef, "trkpt");
 		$wpt->as_gpx($trkptxml, $chunk, symtocmt => $sym_to_cmt);
 	    }
+	} elsif ($chunk->Type eq $chunk->TYPE_ROUTE) {
+	    my $rtexml = $gpx->addNewChild(undef, 'rte');
+	    for my $wpt (@{ $chunk->Track }) {
+		my $rteptxml = $rtexml->addNewChild(undef, 'rtept');
+		$wpt->as_gpx($rteptxml, $chunk, symtocmt => $sym_to_cmt);
+	    }
 	}
     }
     require Encode;
