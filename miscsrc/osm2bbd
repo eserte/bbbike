@@ -17,7 +17,7 @@ use FindBin;
 use lib "$FindBin::RealBin/..";
 
 use vars qw($VERSION);
-$VERSION = 0.12;
+$VERSION = 0.13;
 
 use Cwd qw(cwd realpath);
 use Data::Dumper;
@@ -149,6 +149,8 @@ Note that the bbox must not be too large, otherwise you get a 400 bad request
 error.
 EOF
 }
+
+my $newest_mtime = max map { (stat($_))[9] } @osm_files;
 
 if ($center && $center !~ m{^[-+]?[\d\.]+,[-+]?[\d\.]+$}) {
     die "The value for the -center option has to be in the form lon,lat\n";
@@ -1867,7 +1869,7 @@ EOF
 #:map: $map
 EOF
     }
-my $isodate = epoch2isodatez;
+my $isodate = epoch2isodatez $newest_mtime;
 $isodate = 'fixed' if $nodate;
 print $ofh <<EOF;
 #:date: $isodate
