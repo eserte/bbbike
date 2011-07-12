@@ -137,6 +137,9 @@ Axel-Springer-Str.: Markierungsarbeiten für Radspuren haben begonnen	?::projecte
 #: next_check: 2011-10-15
 Fahrradstraße in der Lauenburger Str.	?::projected 5870,4992 5905,5088 5927,5182 5962,5296 5993,5422 6007,5785 6007,5882 6001,5974 6008,6067 6019,6087 6014,6160 5984,6233 5918,6301 5860,6367 5803,6403
 # 
+#: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20110706.1200.350443.html
+#: next_check: 2011-08-08
+Karl-Liebknecht-Str.: Fahrradangebotsstreifen wird erstellt	?::inwork 10437,12703 10528,12785
 #: section ^^^
 #: section ^^^
 #
@@ -238,6 +241,8 @@ Franz-Mett-Str.: Einfahrt wird Richtung Süden verlegt, prüfen!	?::inwork 18417,1
 # 
 #: last_checked: 2011-06-25
 #: next_check: 2011-08-25
+#: XXX In der Nähe: Auch Sperrung der Alfred-Kowalke-Str., aber Anliegerverkehr ist hier möglich (bis Ende September 2011)
+#: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110627.1115.349371.html
 Am Tierpark: nach den Bauarbeiten vielleicht Radwege/-spuren?	?::inwork 18220,11710 18228,11656 18268,11391 18286,11275 18343,11041 18408,10774 18417,10738 18446,10620
 # 
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20101221.1110.323849.html
@@ -496,6 +501,7 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 # Das heißt diese Strecken werden nicht bei einer erweiterten Suche aufgenommen
 # und dem CGI-Benutzer auch nicht präsentiert.
 # 
+Wegedornbrücke: N oder NH? Radwege?	? 20385,593 20442,564 20510,530 20534,501
 Oberhofer Platz: Vorfahrtsregelung?	? 5434,2122 5406,2110 5376,2097 5431,1956 5452,1940 5474,1940 5491,1955 5489,1981 5434,2122
 Wuhletal-Wanderweg: führt er hier am rechten Ufer der Wuhle? Qualität, Ausschilderung, Beleuchtung?	? 22124,13606 22082,13542 22060,13446 22052,13361 22062,13315 22046,13251 22012,13095 21979,13014 21962,12844 21941,12761 21945,12689 21896,12500 21888,12320 21930,12185
 Rauchstr.: hier gibt es wohl teilweise Radwege?	? -3009,17090 -2728,17038
@@ -4061,3 +4067,4 @@ Jenbacher Weg - Mauerweg: Existiert hier ein Zugang zum Mauerweg? Qualität?	? 62
 Gallwitzallee - Geraerstr./Trippsteinstr.: Existiert eine direkte Verbindung für Radfahrer? Qualität? Ist der Weg nachts beleuchtet?	? 6768,2143 6692,2024 6526,1688
 Verlängerung der Seydlitzstr.: Qualität? Ist der Weg nachts beleuchtet? Ausschilderung?	? 6658,2079 6692,2024
 Brandenburgische Str. - Albrechtstr.: Existiert eine direkte Verbindung für Radfahrer? Qualität? Ist der Weg nachts beleuchtet?	? 6638,4394 6624,4318
+Eduard-Spranger-Promenade: Qualität? Für Radfahrer (legal) befahrbar? Ist der Weg nachts beleuchtet? Ausschilderung?	? 4298,2651 4655,3060 4862,3363 4951,3516

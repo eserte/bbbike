@@ -2689,8 +2689,7 @@ userdel	3 13034,7319 13047,7234 13150,7254
          'text' => 'Auerbachtunnel: einspurige Verkehrsführung, Regelung mit Ampel',
          'from' => undef,
          'id' => 2182,
-         'data' => '#: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20110303.0840.333719.html
-#: next_check: 2011-04-01
+         'data' => '#: next_check: 2011-04-01
 userdel	q4::inwork 425,8766 490,8716
 ',
          'type' => 'handicap'
@@ -2701,8 +2700,7 @@ userdel	q4::inwork 425,8766 490,8716
          'text' => 'Leiblstraße: Für die Einrichtung einer Baustelle für den Bau von Wohnhäusern wird die Leiblstraße bis voraussichtlich Mitte November von der Hans-Thoma-Straße in Richtung Hebbelstraße als Einbahnstraße ausgeschildert. ',
          'from' => 1299353825,
          'id' => 2183,
-         'data' => '#: by: http://www.potsdam.de/cms/beitrag/10078717/1191938/
-userdel	q4::inwork; -12545,-698 -12262,-612
+         'data' => 'userdel	q4::inwork; -12545,-698 -12262,-612
 ',
          'type' => 'handicap'
        },
@@ -3004,6 +3002,49 @@ userdel	q4::inwork; 10264,12826 10166,12777 10132,12941
          'data' => 'userdel	2::inwork 9524,12950 9529,12925
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1107/nachricht4413.html',
+         'until' => 1314395999,
+         'text' => 'Instandsetzung des Stegs zwischen Nackthals- und Seidenhuhnweg, u.U. Vollsperrung, ab 12. Juli 2011 für ca. 10 Wochen',
+         'from' => 1310335200,
+         'id' => 2248,
+         'data' => '#: XXX bis Sommer 2012 werden noch weitere Brücken am Rudower Fließ instandgesetzt
+userdel	2::inwork 16135,473 16148,458 16122,403
+userdel	2::inwork 16148,458 16169,458
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'http://www.berlin.de/ba-pankow/presse/archiv/20110712.1215.351002.html',
+         'until' => 1313791199,
+         'text' => 'Fahrbahn am östlichen Herthaplatz wird ausgebaut, bis Mitte August 2011',
+         'from' => undef,
+         'id' => 2249,
+         'data' => 'userdel	q4::inwork 10599,19957 10614,19907
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20110712.1035.350987.html',
+         'until' => 1342389599,
+         'text' => 'Neubau der Buddestraße von Bernstorffstraße bis Brunowstraße, Sperrung der Fahrbahn, bis Mitte Juli 2012',
+         'from' => 1310504724,
+         'id' => 2250,
+         'data' => 'userdel	q4::inwork 2358,20368 2295,20358 2241,20487
+userdel	q4::inwork 2295,20358 2362,20218 2402,20126
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20110711.0715.350961.html',
+         'until' => 1312142400,
+         'text' => 'Einbahnstraßenregelung in der Neuen Krugallee zwischen Baumschulenstr. und Rodelbergweg vom 29.07.2011, 8:00 Uhr bis 31.07.2011, 22:00 Uhr',
+         'from' => 1311832800,
+         'id' => 2251,
+         'data' => 'userdel	q4::inwork; 16507,7254 16615,7062
+',
+         'type' => 'handicap'
        }
      
 );

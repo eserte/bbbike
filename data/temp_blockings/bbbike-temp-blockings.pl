@@ -15191,7 +15191,7 @@ EOF
        until => 1250978399, # 2009-08-22 23:59
        text  => 'Bellevuestraße und Seelenbinderstraße von Bahnhofstraße bis Bellevuestraße: Einbahnstraße in Richtung Bahnhofstr. vom 10.8. bis zum 22.8.2009',
        type  => 'handicap',
-       source_id => 'http://www.berlin.de/ba-treptow-koepenick/presse/archiv/',
+       # XXX URL existiert nicht mehr: source_id => 'http://www.berlin.de/ba-treptow-koepenick/presse/archiv/',
        data  => <<EOF,
 userdel	q4::inwork; 22294,5777 22513,5747 22608,5732 22696,5728 22798,5731 22897,5740 23092,5762 23333,5710 23402,5483
 EOF
@@ -15806,7 +15806,7 @@ EOF
        until => 1262300399, # 2009-12-31 23:59
        text  => 'Aufgrund von Baumaßnahmen der Berliner Wasserbetriebe wird es vom 24. August bis zum 31. Dezember in der Rathausstraße und den angrenzenden Kreuzungsbereichen Rathausstraße/Frankfurter Allee und Rathaus-/Möllendorffstraße zu Verkehrseinschränkungen kommen.',
        type  => 'handicap',
-       source_id => 'http://www.berlin.de/ba-lichtenberg/presse/archiv/20090813.1105.134956.html',
+       # XXX URL existiert nicht mehr: source_id => 'http://www.berlin.de/ba-lichtenberg/presse/archiv/20090813.1105.134956.html',
        data  => <<EOF,
 userdel	q4::inwork 15537,12367 15576,12315 15628,12246 15651,12214 15685,12154 15670,12022
 EOF
@@ -15815,7 +15815,7 @@ EOF
        until => 1262300399, # 2009-12-31 23:59
        text  => 'Vom 24. August bis zum 31. Dezember wird es in der Robert-Uhrig-Straße und den angrenzenden Kreuzungsbereichen Robert-Uhrig-Straße/Alt-Friedrichsfelde und Robert-Uhrig-/Paul-Gesche-Straße zu Verkehrseinschränkungen aufgrund von Baumaßnahmen der Berliner Wasserbetriebe kommen.',
        type  => 'handicap',
-       source_id => 'http://www.berlin.de/ba-lichtenberg/presse/archiv/20090813.1105.134956.html',
+       # XXX URL existiert nicht mehr: source_id => 'http://www.berlin.de/ba-lichtenberg/presse/archiv/20090813.1105.134956.html',
        data  => <<EOF,
 userdel	q4::inwork 17746,11748 17744,11703 17741,11607
 EOF
@@ -17738,7 +17738,7 @@ EOF
        until => 1285883999, # 2010-09-30 23:59
        text  => 'Marksburgstraße, Bauarbeiten zwischen Treskowallee und Hentigstraße, 31.05. bis 30.09., Fahrbahn gesperrt',
        type  => 'handicap',
-       source_id => 'http://www.berlin.de/ba-lichtenberg/presse/archiv/20100528.1110.297131.html',
+       # XXX URL existiert nicht mehr: source_id => 'http://www.berlin.de/ba-lichtenberg/presse/archiv/20100528.1110.297131.html',
        data  => <<EOF,
 userdel	q4::inwork 18809,9133 18697,9153 18586,9172
 EOF
@@ -17747,7 +17747,7 @@ EOF
        until => 1288652399, # 2010-11-01 23:59
        text  => 'Marksburgstraße, Bauarbeiten zwischen Hentigstraße und Sangeallee, 15.08. bis 01.11., Fahrbahn gesperrt ',
        type  => 'handicap',
-       source_id => 'http://www.berlin.de/ba-lichtenberg/presse/archiv/20100528.1110.297131.html',
+       # XXX URL existiert nicht mehr: source_id => 'http://www.berlin.de/ba-lichtenberg/presse/archiv/20100528.1110.297131.html',
        data  => <<EOF,
 userdel	q4::inwork 18586,9172 18511,9185 18430,9199 18319,9218
 EOF
@@ -18435,7 +18435,7 @@ EOF
        until => 1291157999, # 2010-11-30 23:59
        text  => 'Werneuchener Straße: zwischen Konrad-Wolf-Straße und Große-Leege-Straße wird die Fahrbahn instand gesetzt. Für den Zeitraum vom 1. bis 30. November wird die Werneuchener Straße zur Einbahnstraße von der Konrad-Wolf-Straße aus in Richtung Große-Leege-Straße.',
        type  => 'handicap',
-       source_id => 'http://www.berlin.de/ba-lichtenberg/presse/archiv/20101028.1120.316439.html',
+       # XXX URL existiert nicht mehr: source_id => 'http://www.berlin.de/ba-lichtenberg/presse/archiv/20101028.1120.316439.html',
        data  => <<EOF,
 userdel	q4::inwork; 16430,15168 16376,15209 16319,15229 16119,15302
 EOF
@@ -18754,7 +18754,6 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20110303.0840.333719.html',
        data  => <<EOF,
-#: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20110303.0840.333719.html
 #: next_check: 2011-04-01
 userdel	q4::inwork 425,8766 490,8716
 EOF
@@ -18765,7 +18764,6 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.potsdam.de/cms/beitrag/10078717/1191938/',
        data  => <<EOF,
-#: by: http://www.potsdam.de/cms/beitrag/10078717/1191938/
 userdel	q4::inwork; -12545,-698 -12262,-612
 EOF
      },
@@ -19366,6 +19364,57 @@ EOF
        source_id => 'INKO_096636',
        data  => <<EOF,
 userdel	2::inwork 9524,12950 9529,12925
+EOF
+     },
+## Unklar, ob die Sperrung tatsächlich schon erfolgt ist und wie lange sie dauert...
+#     { from  => undef, # 
+#       until => undef, # XXX
+#       text  => 'Sperrung Fußgängerbrücke Altglienicke.',
+#       type  => 'gesperrt',
+#       source_id => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1106/nachricht4399.html',
+#       data  => <<EOF,
+##: XXX wann wird die Brücke wieder eröffnet?
+##: next_check: 2011-07-31
+#userdel	2::inwork 21262,375 21182,436
+#EOF
+#     },
+     { from  => 1310335200, # 2011-07-11 00:00
+       until => 1314395999, # 2011-08-26 23:59
+       text  => 'Instandsetzung des Stegs zwischen Nackthals- und Seidenhuhnweg, u.U. Vollsperrung, ab 12. Juli 2011 für ca. 10 Wochen',
+       type  => 'gesperrt',
+       source_id => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1107/nachricht4413.html',
+       data  => <<EOF,
+#: XXX bis Sommer 2012 werden noch weitere Brücken am Rudower Fließ instandgesetzt
+userdel	2::inwork 16135,473 16148,458 16122,403
+userdel	2::inwork 16148,458 16169,458
+EOF
+     },
+     { from  => undef, # 
+       until => 1313791199, # 2011-08-19 23:59
+       text  => 'Fahrbahn am östlichen Herthaplatz wird ausgebaut, bis Mitte August 2011',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-pankow/presse/archiv/20110712.1215.351002.html',
+       data  => <<EOF,
+userdel	q4::inwork 10599,19957 10614,19907
+EOF
+     },
+     { from  => 1310504724, # 2011-07-12 23:05
+       until => 1342389599, # 2012-07-15 23:59
+       text  => 'Neubau der Buddestraße von Bernstorffstraße bis Brunowstraße, Sperrung der Fahrbahn, bis Mitte Juli 2012',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20110712.1035.350987.html',
+       data  => <<EOF,
+userdel	q4::inwork 2358,20368 2295,20358 2241,20487
+userdel	q4::inwork 2295,20358 2362,20218 2402,20126
+EOF
+     },
+     { from  => 1311832800, # 2011-07-28 08:00
+       until => 1312142400, # 2011-07-31 22:00
+       text  => 'Einbahnstraßenregelung in der Neuen Krugallee zwischen Baumschulenstr. und Rodelbergweg vom 29.07.2011, 8:00 Uhr bis 31.07.2011, 22:00 Uhr',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20110711.0715.350961.html',
+       data  => <<EOF,
+userdel	q4::inwork; 16507,7254 16615,7062
 EOF
      },
     );
