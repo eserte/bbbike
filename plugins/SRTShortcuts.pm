@@ -1271,7 +1271,8 @@ sub current_search_in_bbbike_cgi {
 
 # XXX BBBikeOsmUtil should probably behave like a plugin? or not?
 sub _require_BBBikeOsmUtil {
-    require Cwd; require File::Basename; local @INC = (@INC, Cwd::realpath(File::Basename::dirname(__FILE__)));
+    # XXX hmmm, why not simply require $bbbike_rootdir/miscsrc/BBBikeOsmUtil.pm?
+    require Cwd; require File::Basename; local @INC = (@INC, File::Basename::dirname(File::Basename::dirname(Cwd::realpath(__FILE__))) . "/miscsrc");
     require BBBikeOsmUtil;
     BBBikeOsmUtil::register();
 }
