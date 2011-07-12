@@ -112,6 +112,9 @@ sub yml_to_bbd {
 	next if not $d;
 	next if $filter_permanent && !$_->{permanent};
 	next if $filter_nonpermanent && $_->{permanent};
+	if ($_->{source_id}) {
+	    print "#: by: $_->{source_id}\n";
+	}
 	my $t = $_->{text};
 	$t =~ s/[\n\t]/ /g;
 	$d =~ s/^(?!\#)/$t /gm;
