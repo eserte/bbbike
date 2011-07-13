@@ -455,8 +455,18 @@ EOF
 	      [Button => $do_compound->("Mark most recent Layer"),
 	       -command => sub { mark_most_recent_layer() },
 	      ],
-	      [Button => $do_compound->("Current search in local bbbike.cgi"),
-	       -command => sub { current_search_in_bbbike_cgi() },
+	      [Cascade => $do_compound->("Current search in ..."), -menuitems =>
+	       [
+		[Button => $do_compound->("local bbbike.cgi"),
+		 -command => sub { current_search_in_bbbike_cgi() },
+		],
+		[Button => $do_compound->("komoot"),
+		 -command => sub { current_search_in_komoot() },
+		],
+		[Button => $do_compound->("komoot (Selection)"),
+		 -command => sub { current_search_in_komoot_selection() },
+		],
+	       ]
 	      ],
 	      [Button => $do_compound->("Street name experiment"),
 	       -command => sub { street_name_experiment() },
@@ -1305,6 +1315,56 @@ sub current_search_in_bbbike_cgi {
 			pref_seen => 1, # gelogen
 		      })->query_string;
     my $url = "http://localhost/bbbike/cgi/bbbike.cgi?$qs";
+    main::status_message("Der WWW-Browser wird mit der URL $url gestartet.", "info");
+    require WWWBrowser;
+    WWWBrowser::start_browser($url);
+}
+
+sub current_search_in_komoot_url {
+    if (@main::search_route_points < 2) {
+	main::status_message("Not enough points", "die");
+    }
+    if (@main::search_route_points > 2) {
+	main::status_message("Too many points, komoot URLs seem to support no vias", "die");
+    }
+
+    my $sxy2lonlat = sub {
+	my($sxy,$prefix) = @_;
+	my($sx,$sy) = split /,/, $sxy;
+	my($px,$py);
+	if ($main::city_obj->can("standard_to_polar")) {
+	    ($px,$py) = $main::city_obj->standard_to_polar($sx,$sy);
+	} else {
+	    no warnings 'once';
+	    ($px,$py) = $Karte::Polar::obj->trim_accuracy($main::coord_system_obj->map2map($Karte::Polar::obj, $sx, $sy));
+	}
+	if ($prefix) {
+	    "${prefix}Lon:$px;${prefix}Lat:$py";
+	} else {
+	    "lon:$px;lat:$py";
+	}
+    };
+
+    my $url = 'http://www.komoot.de/r/#routing=type:AB;skill:touringbicycle;sport:touringbicycle;';
+    $url .= $sxy2lonlat->($main::search_route_points[0]->[0]) . ";";
+    $url .= $sxy2lonlat->($main::search_route_points[1]->[0], 'end');
+    $url;
+}
+
+sub current_search_in_komoot_selection {
+    my $url = current_search_in_komoot_url();
+    $main::top->SelectionOwn;
+    $main::top->SelectionHandle; # Aberglaube...
+    $main::top->SelectionHandle
+	(sub {
+	     my($offset,$maxbytes) = @_;
+	     return undef if $offset > length($url);
+	     substr($url, $offset, $maxbytes);
+	 });
+}
+
+sub current_search_in_komoot {
+    my $url = current_search_in_komoot_url();
     main::status_message("Der WWW-Browser wird mit der URL $url gestartet.", "info");
     require WWWBrowser;
     WWWBrowser::start_browser($url);
