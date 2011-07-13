@@ -283,6 +283,7 @@ EOF
 				  "$ENV{HOME}/.bbbike/geocoded_images.bbd",
 				  above => $str_layer_level,
 				 ),
+		[Button => "today's geocoded images", -command => sub { add_todays_geocoded_images() }],
 		layer_checkbutton('fragezeichen-outdoor-nextcheck', 'str',
 				  "$bbbike_rootdir/tmp/fragezeichen-outdoor-nextcheck.bbd",
 				  below_above_cb => sub {
@@ -820,6 +821,39 @@ sub set_layer_highlightning {
 #     };
 }
 
+# Very hardcoded to my own environment:
+# * images in ~/images/from_handy/Fotos
+# * gps tracks in ~/src/bbbike/misc/gps_data
+sub add_todays_geocoded_images {
+    require File::Glob;
+    require File::Temp;
+    # XXX Support for nikon images missing
+    my(@l) = localtime;
+    my $y = $l[5]+1900;
+    my $m = $l[4]+1;
+    my $d = $l[3];
+    my $glob = sprintf "$ENV{HOME}/images/from_handy/Fotos/%04d-%02d/%02d%02d%04d*.jpg", $y,$m,$d,$m,$y;
+    my @images = File::Glob::bsd_glob($glob);
+    if (!@images) {
+	main::status_message("No images found with glob '$glob'", "warn");
+	return;
+    }
+    my $gpsdatadir = "$bbbike_rootdir/misc/gps_data";
+    my $trk = sprintf "$gpsdatadir/%04d%02d%02d.trk", $y,$m,$d;
+    if (!-e $trk) {
+	main::status_message("No track '$trk' found", "warn");
+	return;
+    }
+    my($tmpfh,$tmpfile) = File::Temp::tempfile(SUFFIX => sprintf("_geocoded_images_%04d%02d%02d.bbd", $y,$m,$d), UNLINK => 1)
+	or main::status_message($!, 'die');
+    my @cmd = ("$bbbike_rootdir/miscsrc/geocode_images", "-o", $tmpfile, "-gpsdatadir", $gpsdatadir, "-v", @images);
+    system(@cmd);
+    if ($? != 0) {
+	main::status_message("The command '@cmd' failed", 'die');
+    }
+    add_new_layer('str', $tmpfile);
+}
+
 ######################################################################
 # VMZ/LBVS
 
@@ -1306,7 +1340,7 @@ sub route_lister {
 
 sub add_current_route_as_layer {
     if (!@main::realcoords) {
-	status_message("No current route", "warn");
+	main::status_message("No current route", "warn");
 	return;
     }
     require Route;
@@ -1315,7 +1349,7 @@ sub add_current_route_as_layer {
     my $rte = Route->new_from_realcoords(\@main::realcoords);
     my $s = $rte->as_strassen;
     my($tmpfh,$tmpfile) = File::Temp::tempfile(UNLINK => 1, SUFFIX => '_current_route.bbd')
-	or status_message($!, 'die');
+	or main::status_message($!, 'die');
     $s->write($tmpfile);
     add_new_layer('str', $tmpfile);
 }
