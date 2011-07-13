@@ -309,6 +309,11 @@ EOF
 		  } @acc_cat_split_streets_years,
 		 ],
 		],
+		layer_checkbutton('Weighted matches', 'str',
+				  "$bbbike_rootdir/tmp/weighted-matches.bbd",
+				  above => $str_layer_level,
+				  Width => undef, # XXX weighted-matches.desc sets its own widths, but why it isn't winning?
+				 ),
 		[Button => "Abdeckung",
 		 -command => sub {
 		     local $main::p_draw{'pp-all'} = 1;
@@ -695,8 +700,10 @@ sub add_new_layer {
 	if (exists $args{Width}) {
 	    if (ref $args{Width} eq 'ARRAY') {
 		$main::line_width{$free_layer} = [@{$args{Width}}];
-	    } else {
+	    } elsif (defined $args{Width}) {
 		$main::line_width{$free_layer} = [($args{Width})x6];
+	    } else {
+		delete $main::line_width{$free_layer};
 	    }
 	} else {
 	    $main::line_width{$free_layer} = [@{$main::line_width{default}}];
