@@ -1071,7 +1071,7 @@ ${PERSISTENTTMPDIR}/my-upload-fragezeichen.wpt:	fragezeichen Makefile
 temp_blockings/bbbike-temp-blockings-optimized.pl:	temp_blockings/bbbike-temp-blockings.pl .check_bbbike-temp-blockings-optimized
 	-@$(WRITEABLE) $@
 	${PERL} $(MISCSRCDIR)/check_bbbike_temp_blockings \
-	    -action output_future_nonpermanent \
+	    -action output_future_nonrecurring \
 	    -action dump_future_as_perl > $@
 	touch .check_bbbike-temp-blockings-optimized
 	-@$(READONLY) $@
@@ -1783,16 +1783,20 @@ $(PERSISTENTTMPDIR)/bbbike-temp-blockings-optimized.yml: temp_blockings/bbbike-t
 	mv -f $@~ $@
 	@$(READABLE) $@
 
+$(PERSISTENTTMPDIR)/bbbike-temp-blockings-optimized.bbd: $(PERSISTENTTMPDIR)/bbbike-temp-blockings-optimized.yml
+	$(TEMP_BLOCKINGS_TASKS) yml_to_bbd $> > $@~
+	mv -f $@~ $@
+
 $(PERSISTENTTMPDIR)/bbbike-temp-blockings.bbd: temp_blockings/bbbike-temp-blockings.yml
 	$(TEMP_BLOCKINGS_TASKS) yml_to_bbd $> > $@~
 	mv -f $@~ $@
 
-$(PERSISTENTTMPDIR)/bbbike-temp-blockings-optimized.bbd: $(PERSISTENTTMPDIR)/bbbike-temp-blockings-optimized.yml
-	$(TEMP_BLOCKINGS_TASKS) yml_to_nonpermanent_bbd $> > $@~
+$(PERSISTENTTMPDIR)/bbbike-temp-blockings-nonrecurring.bbd: $(PERSISTENTTMPDIR)/bbbike-temp-blockings-optimized.yml
+	$(TEMP_BLOCKINGS_TASKS) yml_to_nonrecurring_bbd $> > $@~
 	mv -f $@~ $@
 
-$(PERSISTENTTMPDIR)/bbbike-temp-blockings-permanent.bbd: $(PERSISTENTTMPDIR)/bbbike-temp-blockings-optimized.yml
-	$(TEMP_BLOCKINGS_TASKS) yml_to_permanent_bbd $> > $@~
+$(PERSISTENTTMPDIR)/bbbike-temp-blockings-recurring.bbd: $(PERSISTENTTMPDIR)/bbbike-temp-blockings-optimized.yml
+	$(TEMP_BLOCKINGS_TASKS) yml_to_recurring_bbd $> > $@~
 	mv -f $@~ $@
 
 ######################################################################

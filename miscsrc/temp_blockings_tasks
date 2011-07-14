@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2009 Slaven Rezic. All rights reserved.
+# Copyright (C) 2009,2011 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -25,6 +25,14 @@ EOF
 
 my $task = shift
     or usage("Task is missing");
+
+if ($task eq 'yml_to_permanent_bbd') {
+    warn "WARNING: Please rename 'yml_to_permanent_bbd' to 'yml_to_recurring_bbd'.\n";
+    $task = 'yml_to_recurring_bbd';
+} elsif ($task eq 'yml_to_nonpermanent_bbd') {
+    warn "WARNING: Please rename 'yml_to_nonpermanent_bbd' to 'yml_to_nonrecurring_bbd'.\n";
+    $task = 'yml_to_nonrecurring_bbd';
+}
 
 if ($task eq 'pl_to_yml') {
     my $in_file = shift
@@ -81,19 +89,19 @@ if ($task eq 'pl_to_yml') {
 
     yml_to_bbd($infile);
 
-} elsif ($task eq 'yml_to_permanent_bbd') {
+} elsif ($task eq 'yml_to_recurring_bbd') {
     my $infile = shift
 	or usage "yml file is missing";
     @ARGV and usage "Extra args";
 
-    yml_to_bbd($infile, filter => 'permanent');
+    yml_to_bbd($infile, filter => 'recurring');
 
-} elsif ($task eq 'yml_to_nonpermanent_bbd') {
+} elsif ($task eq 'yml_to_nonrecurring_bbd') {
     my $infile = shift
 	or usage "yml file is missing";
     @ARGV and usage "Extra args";
 
-    yml_to_bbd($infile, filter => 'nonpermanent');
+    yml_to_bbd($infile, filter => 'nonrecurring');
 
 } else {
     usage("Task $task is unknown");
@@ -101,8 +109,8 @@ if ($task eq 'pl_to_yml') {
 
 sub yml_to_bbd {
     my($infile, %args) = @_;
-    my $filter_permanent    = $args{'filter'} && $args{'filter'} eq 'permanent';
-    my $filter_nonpermanent = $args{'filter'} && $args{'filter'} eq 'nonpermanent';
+    my $filter_recurring    = $args{'filter'} && $args{'filter'} eq 'recurring';
+    my $filter_nonrecurring = $args{'filter'} && $args{'filter'} eq 'nonrecurring';
 
     require YAML;
 
@@ -110,8 +118,8 @@ sub yml_to_bbd {
     for (@$x) {
 	my $d = $_->{data};
 	next if not $d;
-	next if $filter_permanent && !$_->{permanent};
-	next if $filter_nonpermanent && $_->{permanent};
+	next if $filter_recurring    && !($_->{permanent} || $_->{recurring});
+	next if $filter_nonrecurring &&  ($_->{permanent} || $_->{recurring});
 	if ($_->{source_id}) {
 	    print "#: by: $_->{source_id}\n";
 	}

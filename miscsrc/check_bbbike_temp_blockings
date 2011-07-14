@@ -72,9 +72,15 @@ sub process {
     }
 
     if (!@action) {
-	@action = "output_future_nonpermanent";
+	@action = "output_future_nonrecurring";
     }
     @action = grep { $_ ne 'none' } @action;
+    for (@action) {
+	if ($_ eq 'output_future_nonpermanent') {
+	    warn "WARNING: rename 'output_future_nonpermanent' to 'output_future_nonrecurring'.\n";
+	    $_ = 'output_future_nonrecurring';
+	}
+    }
 
     if (defined $v && $v >= 2) {
 	Strassen::set_verbose($v - 1);
@@ -208,17 +214,17 @@ sub run_checks {
     }
 }
 
-sub output_future_nonpermanent {
-    _output_future(includepermanent => 0);
+sub output_future_nonrecurring {
+    _output_future(includerecurring => 0);
 }
 
 sub output_future {
-    _output_future(includepermanent => 1);
+    _output_future(includerecurring => 1);
 }
 
 sub _output_future {
     my(%args) = @_;
-    my $include_permanent = delete $args{includepermanent};
+    my $include_recurring = delete $args{includerecurring};
     die "Unhandled args: " . join(' ', %args) if %args;
 
     use constant LENGTH_OF_DATE_STRINGS => 55;
@@ -243,7 +249,7 @@ sub _output_future {
 	       }
 	       grep { $_ } @temp_blocking) {
 	if (!defined $o->{until} || $o->{until} > time) {
-	    next if !$include_permanent && $o->{permanent};
+	    next if !$include_recurring && ($o->{permanent} || $o->{recurring});
 	    if ($do_output_files) {
 		print _get_name($o), "\n";
 	    } else {
