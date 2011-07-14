@@ -1867,7 +1867,7 @@ userdel	q4::inwork; 11883,19739 11730,19684
        undef,
        {
          'until' => undef,
-         'permanent' => 1,
+         'recurring' => 1,
          'text' => 'Innovationspark Köpenick: Privatstraße, nachts ab 20 Uhr und am Wochenende gesperrt',
          'from' => undef,
          'id' => 1808,
@@ -1881,7 +1881,7 @@ Straße am Wald, Innovationspark Köpenick: Privatstraße, nachts ab 20 Uhr und am 
        },
        {
          'until' => undef,
-         'permanent' => 1,
+         'recurring' => 1,
          'text' => 'Neuer Garten: Wege sind nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet',
          'from' => undef,
          'id' => 1809,
@@ -1898,7 +1898,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        },
        {
          'until' => undef,
-         'permanent' => 1,
+         'recurring' => 1,
          'text' => 'Sanssouci: Wege sind nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet',
          'from' => undef,
          'id' => 1810,
@@ -1912,7 +1912,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        },
        {
          'until' => undef,
-         'permanent' => 1,
+         'recurring' => 1,
          'text' => 'Schloßpark Charlottenburg: bei Dunkelheit geschlossen',
          'from' => undef,
          'id' => 1811,
@@ -1922,7 +1922,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        },
        {
          'until' => undef,
-         'permanent' => 1,
+         'recurring' => 1,
          'text' => '(Neue Grünstr. - Alte Jakobstr.): Der Hofdurchgang ist nachts zwischen 23 und 6 Uhr sowie an Sonn- und Feiertagen geschlossen',
          'from' => undef,
          'id' => 1812,
@@ -1932,7 +1932,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        },
        {
          'until' => undef,
-         'permanent' => 1,
+         'recurring' => 1,
          'text' => 'Eberbacher Str.: Di und Fr 08.00-13.00 wegen Wochenmarkt zwischen Binger Str und Rüdesheimer Str gesperrt',
          'from' => undef,
          'id' => 1813,
@@ -1944,7 +1944,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        },
        {
          'until' => undef,
-         'permanent' => 1,
+         'recurring' => 1,
          'text' => 'Nestorstr.: Di und Fr 08.00-13.00 Wochenmarkt, Behinderungen möglich',
          'from' => undef,
          'id' => 1814,
@@ -1954,7 +1954,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        },
        {
          'until' => undef,
-         'permanent' => 1,
+         'recurring' => 1,
          'text' => 'Maybachufer: Di und Fr 11.00-18.30 Wochenmarkt, Behinderungen möglich',
          'from' => undef,
          'id' => 1815,
@@ -1964,7 +1964,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        },
        {
          'until' => undef,
-         'permanent' => 1,
+         'recurring' => 1,
          'text' => 'Friedrichstraße: zwischen Franz-Klühs-Str. und Mehringplatz, Markt Do 10.00-18.00 und Sa 08.00-13.00, Behinderungen möglich',
          'from' => undef,
          'id' => 1816,
@@ -1975,7 +1975,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        },
        {
          'until' => undef,
-         'permanent' => 1,
+         'recurring' => 1,
          'text' => 'Crellestr: Mi und Sa 10.00-15.00 Wochenmarkt, Behinderungen möglich',
          'from' => undef,
          'id' => 1817,
@@ -1985,7 +1985,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        },
        {
          'until' => undef,
-         'permanent' => 1,
+         'recurring' => 1,
          'text' => 'Charlottenbrunner Str.: Mo und Do 09.00-14.00 Wochenmarkt, Ausweichen auf Gehweg',
          'from' => undef,
          'id' => 1818,
@@ -1995,7 +1995,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        },
        {
          'until' => undef,
-         'permanent' => 1,
+         'recurring' => 1,
          'text' => 'Karl-August-Platz, Weimarer Str.: Mi 08.00-13.00 und Sa 08.00-14.00 Wochenmarkt, Behinderungen möglich',
          'from' => undef,
          'id' => 1819,
@@ -2005,7 +2005,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        },
        {
          'until' => undef,
-         'permanent' => 1,
+         'recurring' => 1,
          'text' => 'Richard-Wagner-Platz: Wochenmarkt Mo und Do 08.00-13.00, Behinderungen möglich',
          'from' => undef,
          'id' => 1820,
@@ -2015,7 +2015,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        },
        {
          'until' => undef,
-         'permanent' => 1,
+         'recurring' => 1,
          'text' => 'Ladiusmarkt in der Andréezeile: Wochenmarkt Dienstag, Donnerstag und Sonnabend, Behinderungen möglich',
          'from' => undef,
          'id' => 1821,
@@ -2025,7 +2025,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        },
        {
          'until' => undef,
-         'permanent' => 1,
+         'recurring' => 1,
          'text' => 'Preußenallee zwischen Marathonallee und Badenallee: Wochenmarkt Mo 08.00-13.00 und Do 08.00-13.00, Behinderungen möglich',
          'from' => undef,
          'id' => 1822,
@@ -2037,7 +2037,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        },
        {
          'until' => undef,
-         'permanent' => 1,
+         'recurring' => 1,
          'text' => 'Uferpromenade und Invalidenfriedhof nachts geschlossen, Öffnungszeiten Winter (1.10-15.3.) 7.00-18.30, Sommer (16.3.-30.9.) 7.00-21.30',
          'from' => undef,
          'id' => 1823,
@@ -2050,7 +2050,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        },
        {
          'until' => undef,
-         'permanent' => 1,
+         'recurring' => 1,
          'text' => 'Park Biesdorf nachts geschlossen, Öffnungszeiten 6.00-23.00',
          'from' => undef,
          'id' => 1824,
@@ -2061,7 +2061,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        },
        {
          'until' => undef,
-         'permanent' => 1,
+         'recurring' => 1,
          'text' => 'Breite Gasse: nur von 9 Uhr bis zum Einschalten der Straßenbeleuchtung geöffnet',
          'from' => undef,
          'id' => 1825,
@@ -2071,7 +2071,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        },
        {
          'until' => undef,
-         'permanent' => 1,
+         'recurring' => 1,
          'text' => 'Park am Nordbahnhof: im Sommerhalbjahr zwischen 6.30 und 22.00 Uhr geöffnet, im Winterhalbjahr zwischen 7.30 und 19.00 Uhr',
          'from' => undef,
          'id' => 1826,
@@ -2148,7 +2148,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        {
          'until' => undef,
-         'permanent' => 1,
+         'recurring' => 1,
          'text' => 'Breslauer Platz: Wochenmarkt Mittwoch 8-13 Uhr, Donnerstag 12-17 Uhr, Samstag 8-14 Uhr, Behinderungen möglich',
          'from' => undef,
          'id' => 1884,
@@ -2159,7 +2159,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        {
          'until' => undef,
-         'permanent' => 1,
+         'recurring' => 1,
          'text' => 'Erich-Steinfurth-Str.: Antikmarkt am Ostbahnhof, Sonntag 9-17 Uhr, nur Schieben möglich',
          'from' => undef,
          'id' => 1886,
@@ -2169,7 +2169,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        },
        {
          'until' => undef,
-         'permanent' => 1,
+         'recurring' => 1,
          'text' => 'Am Kupfergraben und am Zeughaus: Berliner Kunst- und Nostalgiemarkt, Samstag und Sonntag ca. 11-17 Uhr, nur Schieben möglich',
          'from' => undef,
          'id' => 1887,
@@ -2255,7 +2255,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        {
          'until' => undef,
-         'permanent' => 1,
+         'recurring' => 1,
          'text' => '(Drorystr. - Braunschweiger Str., Spielplatz): nachts werden die Tore geschlossen',
          'from' => undef,
          'id' => 1955,
@@ -2265,7 +2265,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        },
        {
          'until' => undef,
-         'permanent' => 1,
+         'recurring' => 1,
          'text' => 'Friedrich-Ludwig-Jahn-Sportpark: während Veranstaltungen und nachts von ca. 22 bis 7 Uhr gesperrt, mit Anhänger wegen des engen Südeinganges ggfs. nicht befahrbar',
          'from' => undef,
          'id' => 1956,
@@ -2276,7 +2276,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        },
        {
          'until' => undef,
-         'permanent' => 1,
+         'recurring' => 1,
          'text' => 'Luitpoldstr., Durchfahrt über Schulhof: nicht immer geöffnet!',
          'from' => undef,
          'id' => 1957,
@@ -2286,7 +2286,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        },
        {
          'until' => undef,
-         'permanent' => 1,
+         'recurring' => 1,
          'text' => 'Rutherfordstr.: nicht permanent geöffnet',
          'from' => undef,
          'id' => 1958,
@@ -2296,7 +2296,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        },
        {
          'until' => undef,
-         'permanent' => 1,
+         'recurring' => 1,
          'text' => 'Uferweg am Schloß Bellevue: kann bei Staatsbesuchen gesperrt sein',
          'from' => undef,
          'id' => 1959,
@@ -2367,7 +2367,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        {
          'until' => undef,
-         'permanent' => 1,
+         'recurring' => 1,
          'text' => 'Friedrich-Ebert-Platz: bei Bundestagssitzungen gesperrt',
          'from' => undef,
          'id' => 2021,
@@ -2440,7 +2440,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        {
          'until' => undef,
-         'permanent' => 1,
+         'recurring' => 1,
          'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Juli bis 22.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'from' => undef,
          'id' => 2068,
@@ -2516,7 +2516,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        {
          'until' => undef,
-         'permanent' => 1,
+         'recurring' => 1,
          'text' => 'Johannes-Kraatz-Str.: Tor, Zugang könnte versperrt sein',
          'from' => undef,
          'id' => 2096,
@@ -2530,7 +2530,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        {
          'until' => undef,
-         'permanent' => 1,
+         'recurring' => 1,
          'text' => 'Gewerbegebiet: Privatstraßen, u.U. Durchfahrt nicht gestattet',
          'from' => undef,
          'id' => 2101,
@@ -2736,7 +2736,7 @@ userdel	q4::inwork 425,8766 490,8716
        undef,
        {
          'until' => undef,
-         'permanent' => 1,
+         'recurring' => 1,
          'text' => 'Albrecht-Thaer-Weg: Privatstraße, eventuell zeitweise gesperrt (nachts?)',
          'from' => undef,
          'id' => 2196,

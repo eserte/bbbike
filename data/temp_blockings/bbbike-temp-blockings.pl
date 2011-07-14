@@ -15346,7 +15346,7 @@ EOF
        until => undef, #
        text  => 'Innovationspark Köpenick: Privatstraße, nachts ab 20 Uhr und am Wochenende gesperrt',
        type  => 'gesperrt',
-       permanent => 1,
+       recurring => 1,
        data  => <<EOF,
 #: note: Sperrung bestätigt von Stefan (s.sms): vvv
 #: note: genauere Uhrzeit von Dieter Heimann
@@ -15359,7 +15359,7 @@ EOF
        until => undef, #
        text  => 'Neuer Garten: Wege sind nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet',
        type  => 'gesperrt',
-       permanent => 1,
+       recurring => 1,
        data  => <<EOF,
 	2::night -11615,853 -11715,959 -11818,993 -11871,1087 -12081,1168 -12094,1273 -12139,1325
 	2::night -11650,590 -11603,721 -11615,853
@@ -15375,7 +15375,7 @@ EOF
        until => undef, #
        text  => 'Sanssouci: Wege sind nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet',
        type  => 'gesperrt',
-       permanent => 1,
+       recurring => 1,
        data  => <<EOF,
 (Am Neuen Palais, direkter Weg) 	2::night -15810,-1274 -15820,-1146 -15854,-656
 (Am Grünen Gitter, Sanssouci): Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet 	2::night -13857,-1040 -14153,-1135 -14171,-1026
@@ -15388,7 +15388,7 @@ EOF
        until => undef, #
        text  => 'Schloßpark Charlottenburg: bei Dunkelheit geschlossen',
        type  => 'gesperrt',
-       permanent => 1,
+       recurring => 1,
        data  => <<EOF,
 	2::night 3332,12742 3231,12749 3127,12793 3055,12973 3020,13234 2996,13255 2980,13332 3003,13355 2953,13489 2950,13552
 EOF
@@ -15397,7 +15397,7 @@ EOF
        until => undef, #
        text  => '(Neue Grünstr. - Alte Jakobstr.): Der Hofdurchgang ist nachts zwischen 23 und 6 Uhr sowie an Sonn- und Feiertagen geschlossen',
        type  => 'gesperrt',
-       permanent => 1,
+       recurring => 1,
        data  => <<EOF,
 	2::night:weekend 10624,11548 10534,11609
 EOF
@@ -15406,7 +15406,7 @@ EOF
        until => undef, #
        text  => 'Eberbacher Str.: Di und Fr 08.00-13.00 wegen Wochenmarkt zwischen Binger Str und Rüdesheimer Str gesperrt',
        type  => 'gesperrt',
-       permanent => 1,
+       recurring => 1,
        data  => <<EOF,
 ######################################################################
 # Wochenmärkte vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
@@ -15417,7 +15417,7 @@ EOF
        until => undef, #
        text  => 'Nestorstr.: Di und Fr 08.00-13.00 Wochenmarkt, Behinderungen möglich',
        type  => 'gesperrt',
-       permanent => 1,
+       recurring => 1,
        data  => <<EOF,
 	q4::temp:clock 3374,10201 3359,9968 3347,9793
 EOF
@@ -15426,7 +15426,7 @@ EOF
        until => undef, #
        text  => 'Maybachufer: Di und Fr 11.00-18.30 Wochenmarkt, Behinderungen möglich',
        type  => 'gesperrt',
-       permanent => 1,
+       recurring => 1,
        data  => <<EOF,
 	q4::temp:clock 11543,10015 11669,9987 11880,9874
 EOF
@@ -15435,7 +15435,7 @@ EOF
        until => undef, #
        text  => 'Friedrichstraße: zwischen Franz-Klühs-Str. und Mehringplatz, Markt Do 10.00-18.00 und Sa 08.00-13.00, Behinderungen möglich',
        type  => 'gesperrt',
-       permanent => 1,
+       recurring => 1,
        data  => <<EOF,
 #: note: http://www.berlin.de/ba-friedrichshain-kreuzberg/wirtschaftsfoerderung/wirtschaftsstandort/maerkte.html
 	q4::temp:clock 9566,10566 9580,10434
@@ -15445,7 +15445,7 @@ EOF
        until => undef, #
        text  => 'Crellestr: Mi und Sa 10.00-15.00 Wochenmarkt, Behinderungen möglich',
        type  => 'gesperrt',
-       permanent => 1,
+       recurring => 1,
        data  => <<EOF,
 	q4::temp:clock 7882,9490 7836,9413 7771,9389
 EOF
@@ -15454,7 +15454,7 @@ EOF
        until => undef, #
        text  => 'Charlottenbrunner Str.: Mo und Do 09.00-14.00 Wochenmarkt, Ausweichen auf Gehweg',
        type  => 'gesperrt',
-       permanent => 1,
+       recurring => 1,
        data  => <<EOF,
 	q4::temp:clock 3073,9020 2972,9037
 EOF
@@ -15463,7 +15463,7 @@ EOF
        until => undef, #
        text  => 'Karl-August-Platz, Weimarer Str.: Mi 08.00-13.00 und Sa 08.00-14.00 Wochenmarkt, Behinderungen möglich',
        type  => 'gesperrt',
-       permanent => 1,
+       recurring => 1,
        data  => <<EOF,
 	q4::temp:clock 4101,11347 4101,11233
 EOF
@@ -15472,7 +15472,7 @@ EOF
        until => undef, #
        text  => 'Richard-Wagner-Platz: Wochenmarkt Mo und Do 08.00-13.00, Behinderungen möglich',
        type  => 'gesperrt',
-       permanent => 1,
+       recurring => 1,
        data  => <<EOF,
 	q4::temp:clock 3763,12279 3701,12279
 EOF
@@ -15481,7 +15481,7 @@ EOF
        until => undef, #
        text  => 'Ladiusmarkt in der Andréezeile: Wochenmarkt Dienstag, Donnerstag und Sonnabend, Behinderungen möglich',
        type  => 'gesperrt',
-       permanent => 1,
+       recurring => 1,
        data  => <<EOF,
 	q4::temp:clock 1020,496 1078,443
 EOF
@@ -15490,7 +15490,7 @@ EOF
        until => undef, #
        text  => 'Preußenallee zwischen Marathonallee und Badenallee: Wochenmarkt Mo 08.00-13.00 und Do 08.00-13.00, Behinderungen möglich',
        type  => 'gesperrt',
-       permanent => 1,
+       recurring => 1,
        data  => <<EOF,
 	q4::temp:clock 596,11951 585,11830 572,11698 563,11601
 # Wochenmärkte ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -15501,7 +15501,7 @@ EOF
        until => undef, #
        text  => 'Uferpromenade und Invalidenfriedhof nachts geschlossen, Öffnungszeiten Winter (1.10-15.3.) 7.00-18.30, Sommer (16.3.-30.9.) 7.00-21.30',
        type  => 'gesperrt',
-       permanent => 1,
+       recurring => 1,
        data  => <<EOF,
 #: by: Marek Bänsch:
 #: confirmed_by: srt
@@ -15513,7 +15513,7 @@ EOF
        until => undef, #
        text  => 'Park Biesdorf nachts geschlossen, Öffnungszeiten 6.00-23.00',
        type  => 'gesperrt',
-       permanent => 1,
+       recurring => 1,
        data  => <<EOF,
 	2::night 21150,11925 21132,11943 21100,11960 20862,12027 20810,12031
 	2::night 20862,12027 20836,11768
@@ -15523,7 +15523,7 @@ EOF
        until => undef, #
        text  => 'Breite Gasse: nur von 9 Uhr bis zum Einschalten der Straßenbeleuchtung geöffnet',
        type  => 'gesperrt',
-       permanent => 1,
+       recurring => 1,
        data  => <<EOF,
 	2::night 22312,4329 22252,4362
 EOF
@@ -15532,7 +15532,7 @@ EOF
        until => undef, #
        text  => 'Park am Nordbahnhof: im Sommerhalbjahr zwischen 6.30 und 22.00 Uhr geöffnet, im Winterhalbjahr zwischen 7.30 und 19.00 Uhr',
        type  => 'gesperrt',
-       permanent => 1,
+       recurring => 1,
        data  => <<EOF,
 	2::night 8825,14401 8913,14485 8839,14635 8848,14638 8938,14521 8953,14528
 	2::night 8913,14485 9176,14181 9147,14151 9224,14169
@@ -16023,7 +16023,7 @@ EOF
        until => undef, #
        text  => 'Breslauer Platz: Wochenmarkt Mittwoch 8-13 Uhr, Donnerstag 12-17 Uhr, Samstag 8-14 Uhr, Behinderungen möglich',
        type  => 'gesperrt',
-       permanent => 1,
+       recurring => 1,
        data  => <<EOF,
 	q4::temp:clock 5902,7334 5810,7337 5817,7223
 EOF
@@ -16045,7 +16045,7 @@ EOF
        until => undef, #
        text  => 'Erich-Steinfurth-Str.: Antikmarkt am Ostbahnhof, Sonntag 9-17 Uhr, nur Schieben möglich',
        type  => 'gesperrt',
-       permanent => 1,
+       recurring => 1,
        data  => <<EOF,
 	q4::temp:clock 12596,11696 12453,11790 12366,11808
 EOF
@@ -16054,7 +16054,7 @@ EOF
        until => undef, #
        text  => 'Am Kupfergraben und am Zeughaus: Berliner Kunst- und Nostalgiemarkt, Samstag und Sonntag ca. 11-17 Uhr, nur Schieben möglich',
        type  => 'gesperrt',
-       permanent => 1,
+       recurring => 1,
        data  => <<EOF,
 	q4::temp:clock 9754,12775 9661,12876 9618,12907 9529,12925
 	q4::temp:clock 9919,12613 9950,12522 9984,12426
@@ -16624,8 +16624,6 @@ EOF
        text  => 'Universitätsstraße Richtung Unter den Linden gesperrt',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2009-10-18
-#: XXX oder ist das eine permanente Sperrung?
 userdel	q4::inwork; 9580,12581 9601,12380
 EOF
      },
@@ -16633,7 +16631,7 @@ EOF
        until => undef, #
        text  => '(Drorystr. - Braunschweiger Str., Spielplatz): nachts werden die Tore geschlossen',
        type  => 'gesperrt',
-       permanent => 1,
+       recurring => 1,
        data  => <<EOF,
 	2::night 13520,7485 13601,7366
 EOF
@@ -16642,7 +16640,7 @@ EOF
        until => undef, #
        text  => 'Friedrich-Ludwig-Jahn-Sportpark: während Veranstaltungen und nachts von ca. 22 bis 7 Uhr gesperrt, mit Anhänger wegen des engen Südeinganges ggfs. nicht befahrbar',
        type  => 'gesperrt',
-       permanent => 1,
+       recurring => 1,
        data  => <<EOF,
 #: XXX_prog: die "Veranstaltungen" sollten auch mit einer Kategorie bedacht werden
 	2::night 10473,15549 10607,15142
@@ -16652,7 +16650,7 @@ EOF
        until => undef, #
        text  => 'Luitpoldstr., Durchfahrt über Schulhof: nicht immer geöffnet!',
        type  => 'gesperrt',
-       permanent => 1,
+       recurring => 1,
        data  => <<EOF,
 	2::temp 6611,9879 6670,9887
 EOF
@@ -16661,7 +16659,7 @@ EOF
        until => undef, #
        text  => 'Rutherfordstr.: nicht permanent geöffnet',
        type  => 'gesperrt',
-       permanent => 1,
+       recurring => 1,
        data  => <<EOF,
 	2::temp 19071,2746 19136,2673 19207,2592
 EOF
@@ -16670,7 +16668,7 @@ EOF
        until => undef, #
        text  => 'Uferweg am Schloß Bellevue: kann bei Staatsbesuchen gesperrt sein',
        type  => 'gesperrt',
-       permanent => 1,
+       recurring => 1,
        data  => <<EOF,
 	2::temp 6694,12627 7039,12314
 EOF
@@ -17206,7 +17204,7 @@ EOF
        until => undef, #
        text  => 'Friedrich-Ebert-Platz: bei Bundestagssitzungen gesperrt',
        type  => 'gesperrt',
-       permanent => 1,
+       recurring => 1,
        data  => <<EOF,
 	2::temp 8554,12593 8540,12420
 EOF
@@ -17644,7 +17642,7 @@ EOF
 				}->{$mon};
 		    $until || '';
 		} . '. Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
-       permanent => 1,
+       recurring => 1,
        data  => <<EOF,
 (Eingang Columbiadamm - Rundkurs auf dem Flughafen Tempelhof)	2::night 10691,8532 10640,8366 10598,8270 10575,8218
 (Eingang Columbiadamm - Rundkurs auf dem Flughafen Tempelhof)	2::night 10598,8270 10729,8152
@@ -17983,7 +17981,7 @@ EOF
        until => undef, # XXX
        text  => 'Johannes-Kraatz-Str.: Tor, Zugang könnte versperrt sein',
        type  => 'gesperrt',
-       permanent => 1,
+       recurring => 1,
        data  => <<EOF,
 userdel	2::temp 18870,5833 18932,5926
 EOF
@@ -18027,7 +18025,7 @@ EOF
        until => undef, # XXX
        text  => 'Gewerbegebiet: Privatstraßen, u.U. Durchfahrt nicht gestattet',
        type  => 'gesperrt',
-       permanent => 1,
+       recurring => 1,
        data  => <<EOF,
 #: note: allerdings keine Hinweise auf eine verbotene Durchfahrt gesehen
 (Gewerbegebiet)	2 21617,3287 21826,3129 21770,2936 21816,2919 21939,2894 21984,2897 22004,2904
@@ -18879,7 +18877,7 @@ EOF
        until => undef, #
        text  => 'Albrecht-Thaer-Weg: Privatstraße, eventuell zeitweise gesperrt (nachts?)',
        type  => 'gesperrt',
-       permanent => 1,
+       recurring => 1,
        data  => <<EOF,
 Albrecht-Thaer-Weg: Privatstraße, evtl. nicht geöffnet	2::night 3347,6460 3449,6863
 EOF
