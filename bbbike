@@ -18049,37 +18049,10 @@ sub route_info_to_html {
 
 # More tweaking could be done (other font face/size, real wide margins...)
 sub route_info_to_latex {
-    my $route_title = _get_route_title();
-    # escape for latex missing XXX
-    my $latex = <<'EOF';
-\documentclass[10pt]{article}
-\usepackage[latin1]{inputenc}
-\usepackage[widemargins]{a4}
-\usepackage{german}
-\usepackage{supertabular}
-\pagestyle{empty}
-% Tip from http://www.mackichan.com/index.html?techtalk/579.htm~mainFrame
-% and http://www.faqs.org/faqs/de-tex-faq/part10/ (10.2.2)
-\usepackage{helvet}
-\renewcommand{\familydefault}{\sfdefault}
-\sloppy
-\begin{document}
-EOF
-    $latex .= "\\section*{$route_title}\n";
-    $latex .= <<'EOF';
-\begin{supertabular}{lllp{8cm}}
-EOF
-    $latex .= join(" & ", M"Länge", M"Gesamt", M"Richtung", M"Straße") . "\\\\\n";
-    $latex .= "\\hline \\\\\n";
-
-    $latex .= join "", map {
-	join(" & ", map { s/=>/\$\\rightarrow{}\$/g; $_ } @$_) . "\\\\\n"
-    } @route_info;
-    $latex .= <<'EOF';
-\end{supertabular}
-\end{document}
-EOF
-    $latex;
+    require BBBikeLaTeX;
+    BBBikeLaTeX::route_info_to_latex(-routetitle => _get_route_title(),
+				     -routeinfo => \@route_info,
+				    );
 }
 
 sub update_route_strname {
