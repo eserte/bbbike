@@ -18983,11 +18983,11 @@ EOF
      },
      { from  => 1304805600, # 2011-05-08 00:00
        until => 1317506400, # 2011-10-02 00:00
-       text  => 'Flieth-Stegelitz: L24: Brücke über den Stierngraben bei Kaakstedt, LSA-Regelung, bis 01.10.2011',
-       type  => 'handicap',
+       text  => 'Flieth-Stegelitz: L24: Brücke über den Stierngraben bei Kaakstedt, LSA-Regelung, ab 18.7. Vollsperrung',
+       type  => 'gesperrt',
        source_id => 'LS/O-SG33-E/11/044',
        data  => <<EOF,
-userdel	q4::inwork 35887,85385 34920,85944
+userdel	2::inwork 35887,85385 34920,85944
 EOF
      },
      { from  => 1304796386, # 2011-05-07 21:26

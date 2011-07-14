@@ -2792,12 +2792,12 @@ userdel	q4::inwork 425,8766 490,8716
        {
          'source_id' => 'LS/O-SG33-E/11/044',
          'until' => 1317506400,
-         'text' => 'Flieth-Stegelitz: L24: Brücke über den Stierngraben bei Kaakstedt, LSA-Regelung, bis 01.10.2011',
+         'text' => 'Flieth-Stegelitz: L24: Brücke über den Stierngraben bei Kaakstedt, LSA-Regelung, ab 18.7. Vollsperrung',
          'from' => 1304805600,
          'id' => 2208,
-         'data' => 'userdel	q4::inwork 35887,85385 34920,85944
+         'data' => 'userdel	2::inwork 35887,85385 34920,85944
 ',
-         'type' => 'handicap'
+         'type' => 'gesperrt'
        },
        {
          'source_id' => 'LS/O-SG33-F/11/070',
