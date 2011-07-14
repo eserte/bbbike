@@ -33,21 +33,24 @@ sub route_info_to_latex {
     my $route_title = $args{-routetitle};
     my $route_info  = $args{-routeinfo};
 
-    my $needs_unicode = 0;
-    if ($route_title =~ m{[^\0-\xff]}) {
-	$needs_unicode = 1;
-    } else {
-	for (@$route_info) {
-	    if ($_->[3] =~ m{[^\0-\xff]}) {
-		$needs_unicode = 1;
-		last;
+    my $coding = 'latin1';
+ FIND_CODING: {
+	my $needs_unicode;
+	for ($route_title, (map { $_->[3] } @$route_info)) {
+	    if (m{\p{Cyrillic}}) {
+		$coding = 'cyrillic';
+		last FIND_CODING;
 	    }
+	    if (m{[^\0-\xff]}) {
+		$needs_unicode = 1;
+	    }
+	}
+    	if ($needs_unicode) {
+	    $coding = 'unicode';
 	}
     }
 
-    _route_info_to_latex(%args,
-			 (-coding => $needs_unicode ? 'unicode' : 'latin1'),
-			);
+    _route_info_to_latex(%args, -coding => $coding);
 }
 
 # More tweaking could be done (other font face/size, real wide margins...)
@@ -70,10 +73,13 @@ EOF
 \usepackage{german}
 EOF
     } else {
+	my $language = $coding eq 'cyrillic' ? 'bulgarian' : 'english';
 	$latex .= <<'EOF';
 \usepackage[utf8x]{inputenc}
 % bad results: \SetUnicodeOption{combine}
-\usepackage[english]{babel}
+EOF
+	$latex .= <<"EOF";
+\\usepackage[$language]{babel}
 EOF
     }
 
