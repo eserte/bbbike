@@ -2896,16 +2896,7 @@ userdel	q4::inwork; 10264,12826 10166,12777 10132,12941
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'INKO_107899',
-         'until' => 1310742000,
-         'text' => 'Granitzstr. (Pankow): Baustelle, für beide Richtungen nur ein Fahrstreifen abwechselnd frei (bis Mitte 07/11) in beiden Richtungen zwischen Haßfurter Weg und Dettelbacher Weg, 24.06.2011 07:00 Uhr bis 15.07.2011 17:00 Uhr ',
-         'from' => 1308805200,
-         'id' => 2230,
-         'data' => 'userdel	q4::inwork 11796,18482 11698,18446
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'source_id' => 'IM_017476',
@@ -2993,16 +2984,7 @@ userdel	q4::inwork; 10264,12826 10166,12777 10132,12941
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'INKO_096636',
-         'until' => 1310745600,
-         'text' => 'Geschwister-Scholl-Str./Tucholskystr. (Mitte): Bauarbeiten, Brücke vollständig gesperrt (bis Mitte 07/11) in beiden Richtungen Höhe Ebertsbrücke, 08.07.2011 07:00 Uhr bis 15.07.2011 18:00 Uhr ',
-         'from' => 1310014800,
-         'id' => 2247,
-         'data' => 'userdel	2::inwork 9524,12950 9529,12925
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1107/nachricht4413.html',
          'until' => 1314395999,
@@ -3043,6 +3025,16 @@ userdel	q4::inwork 2295,20358 2362,20218 2402,20126
          'from' => 1311832800,
          'id' => 2251,
          'data' => 'userdel	q4::inwork; 16507,7254 16615,7062
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1107/nachricht4418.html',
+         'until' => 1333231200,
+         'text' => 'Instandsetzung der Pankgrafenbrücke, ab dem 18.07.2011 bis März 2012, Einschränkungen möglich',
+         'from' => 1310763434,
+         'id' => 2252,
+         'data' => 'userdel	q4::inwork 13953,23497 14173,23426
 ',
          'type' => 'handicap'
        }

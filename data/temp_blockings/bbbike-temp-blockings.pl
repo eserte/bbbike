@@ -8541,10 +8541,11 @@ EOF
 userdel	2::inwork 12731,15824 12642,15668 12559,15524 12472,15356 12428,15275
 EOF
      },
-     { from  => 1244066400, # 2009-06-04 00:00 PERIODISCH!
-       until => 1244411999, # 2009-06-07 23:59
-       text  => 'Treptower Festtage 5. Juni 2009 - 7. Juni 2009',
+     { from  => 1311285600, # 1244066400, # 2009-06-04 00:00 PERIODISCH!
+       until => 1311544800, # 1244411999, # 2009-06-07 23:59
+       text  => 'Treptower Festtage 22.. Juli 2011 - 24. Juli 2011',
        type  => 'gesperrt',
+       source_id => 'http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20110714.0755.351214.html',
        data  => <<EOF,
 userdel	2::temp 14464,9927 14500,9856 14671,9759 14697,9726 14910,9643
 userdel	2::temp 14500,9856 14483,9843
@@ -19413,6 +19414,15 @@ EOF
        source_id => 'http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20110711.0715.350961.html',
        data  => <<EOF,
 userdel	q4::inwork; 16507,7254 16615,7062
+EOF
+     },
+     { from  => 1310763434, # 2011-07-15 22:57
+       until => 1333231200, # 2012-04-01 00:00
+       text  => 'Instandsetzung der Pankgrafenbrücke, ab dem 18.07.2011 bis März 2012, Einschränkungen möglich',
+       type  => 'handicap',
+       source_id => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1107/nachricht4418.html',
+       data  => <<EOF,
+userdel	q4::inwork 13953,23497 14173,23426
 EOF
      },
     );
