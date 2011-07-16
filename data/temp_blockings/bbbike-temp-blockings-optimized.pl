@@ -1005,7 +1005,17 @@ userdel	2 16975,1262 16849,1437
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20110714.0755.351214.html',
+         'until' => 1311544800,
+         'text' => 'Treptower Festtage 22.. Juli 2011 - 24. Juli 2011',
+         'from' => 1311285600,
+         'id' => 1010,
+         'data' => 'userdel	2::temp 14464,9927 14500,9856 14671,9759 14697,9726 14910,9643
+userdel	2::temp 14500,9856 14483,9843
+',
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
@@ -2862,16 +2872,7 @@ userdel	q4::inwork; 10264,12826 10166,12777 10132,12941
        },
        undef,
        undef,
-       {
-         'source_id' => 'IM_017000',
-         'until' => 1310839200,
-         'text' => 'Stargarder Str. (Prenzlauer Berg): Baustelle, Fahrtrichtung gesperrt (bis Mitte 07/11) Richtung Schönhauser Allee zwischen Dunckerstr. und Schliemannstr., 09.03.2011 07:00 Uhr bis 16.07.2011 20:00 Uhr ',
-         'from' => 1299564000,
-         'id' => 2223,
-         'data' => 'userdel	q4::inwork; 11603,15455 11502,15527
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'INKO_093371',
          'until' => 1335798000,
@@ -2964,16 +2965,7 @@ userdel	q4::inwork; 10264,12826 10166,12777 10132,12941
        },
        undef,
        undef,
-       {
-         'source_id' => 'IM_017544',
-         'until' => 1310767200,
-         'text' => 'Markgrafenstr. (Mitte): Veranstaltung, Straße vollständig gesperrt (bis 15.07., 18:00) in beiden Richtungen zwischen Jägerstr. und Taubenstr., 03.07.2011 bis 15.07.2011 18:00 Uhr ',
-         'from' => 1310016128,
-         'id' => 2244,
-         'data' => 'userdel	2::temp 9656,12021 9668,11928
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'until' => 1320015599,

@@ -639,6 +639,8 @@ Viktoriaplatz	1 3500,4146 3523,4139 3528,4118 3518,4106 3489,4115 3485,4137 3500
 Glaserweg	1 10187,872 10237,749
 Lintruper Str.	1 10307,922 10380,757
 Alt-Buckow	1 12574,1866 12561,1931 12817,2031
+Alt-Schmöckwitz	1 27396,-3101 27428,-3137 27427,-3171 27413,-3196 27388,-3199 27378,-3183 27382,-3151 27396,-3101
+Fontanestr.	1 18273,6606 18254,6679
 Am Neuen Garten	1 -12166,1384 -12212,1201 -12276,831 -12302,718
 Am Neuen Garten	1 -12332,585 -12582,127
 Hochstraße	3nocross::ignrte -11399,-1339 -11461,-1424 -11540,-1543
@@ -1606,11 +1608,6 @@ Rudower Chaussee -> Brook-Taylor-Str.: Mittelstreifen, zukünftig Straßenbahntras
 Brook-Taylor-Str. -> Rudower Chaussee: Mittelstreifen, zukünftig Straßenbahntrasse	3::igndisp 19215,2906 19242,2876 19324,2939
 Mittelstreifen, zukünftig Straßenbahntrasse	3nocross::ignrte 19581,3184 19603,3207 19732,3340
 Karl-Otto-Reinsch-Str. -> Rudower Chaussee: Mittelstreifen, zukünftig Straßenbahntrasse	3::igndisp 19524,3286 19603,3207 19732,3340
-Mittelstreifen	3nocross::ignrte 20565,2754 20451,2869 20289,3033 20207,3115 20064,3278
-Adlergestell -> Otto-Franke-Str.: Mittelstreifen	3::igndisp 20207,3115 20289,3033 20388,3100
-Otto-Franke-Str. -> Adlergestell: Mittelstreifen	3::igndisp 20388,3100 20289,3033 20451,2869
-Adlergestell -> Büchnerweg: Mittelstreifen	3::igndisp 20064,3278 20207,3115 20315,3181
-Büchnerweg -> Adlergestell: Mittelstreifen	3::igndisp 20315,3181 20207,3115 20289,3033
 Mittelstreifen mit Geländer	3nocross::ignrte 6935,8208 7005,8150 7073,8081
 Torgauer Str. -> Sachsendamm: Mittelstreifen mit Geländer	3::igndisp 7250,8223 7005,8150 7073,8081
 Mittelstreifen	3nocross::ignrte 11963,11813 11919,11856 11768,12006
@@ -1721,6 +1718,8 @@ Berliner Str. -> Str. 56: Straßenbahntrasse	3::igndisp 12467,17814 12436,17682 1
 Mittelstreifen	3nocross::ignrte -1821,16327 -1816,16111 -1815,15976
 Uferweg -> Daumstr.: Mittelstreifen	3::igndisp -1942,16105 -1816,16111 -1821,16327
 Daumstr. -> Uferweg: Mittelstreifen	3::igndisp -1815,15976 -1816,16111 -1942,16105
+tragen (15 Stufen)	0:25:38 27728,-3146
+tragen (4 Stufen)	0:6:-210 27361,-1551
 tragen (2 Stufen)	0:5:-180 3431,1987
 tragen	0:35:-120 3580,4309
 tragen (ca. 32 Stufen)	0:35:-138 22675,12008
@@ -2092,7 +2091,6 @@ Elisabeth-Mara-Str.: Bauarbeiten bis zum Frühjahr 2011	2:inwork 10506,11567 1032
 Wagner-Régeny-Str.: Straße ist fertig, aber noch gesperrt	2:inwork 19487,3593 19377,3721
 Radweg parallel zur Autobahn ist wegen Bauarbeiten am BAB gesperrt	2:inwork 5062,14681 4676,14534 3707,14303 3595,14277
 Rathausbrücke: gesperrt (Neubau), Fertigstellung nicht vor März 2012	2:inwork 10362,12351 10422,12395
-Vicki-Baum-Str.: noch in Bau, gesperrt	2:inwork 15753,10353 15823,10300
 Kynaststraße: Bauarbeiten im südlichen Abschnitt	2:inwork 14652,10201 14724,10297 14766,10372 14795,10473 14805,10518
 Brücke im Tiergarten: gesperrt	2:inwork 6406,11784 6467,11780
 Unterführung unter Adlergestell und Bahn: wegen Brückenerneuerung gesperrt	2:inwork 20810,2398 20939,2413

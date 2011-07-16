@@ -302,8 +302,8 @@ Weiterfahrt durch die Kleingartenanlage möglich, allerdings nur tagsüber während
 	culdesac 20467,14196
 	culdesac 21362,14028
 	culdesac 20520,14570
-	culdesac 22569,2096
-	culdesac 22617,1925
+	culdesac_pseudo 22548,2081
+	culdesac_pseudo 22617,1925
 	culdesac 22732,1668
 	culdesac 22756,1524
 	culdesac 23068,1638
@@ -314,7 +314,7 @@ Weiterfahrt durch die Kleingartenanlage möglich, allerdings nur tagsüber während
 	culdesac 23627,1835
 	culdesac 23693,2061
 	culdesac 23638,2185
-	culdesac 23705,2517
+	culdesac 23706,2525
 	culdesac 24071,2990
 	culdesac 23063,2842
 	culdesac 23025,2957
@@ -595,6 +595,10 @@ Zugang zum Bad	culdesac_pseudo 7344,13435
 	culdesac 2352,1267
 	culdesac 2345,1283
 	culdesac 20371,5753
+	culdesac 23574,689
+	culdesac_pseudo 22766,778
+	culdesac_pseudo 22957,812
+	culdesac_pseudo 22166,1636
 #: section ^^^
 ######################################################################
 # busroute
@@ -1033,3 +1037,4 @@ Goldaper Str.: Privatstraße	CS 6195,1969 6211,2010 6278,2057
 Rudolf-Beyendorff-Ring: Privatstraße	CS 6159,2176 6201,2125
 Ausgeschildert als "Sittener Zeile"	CP2; 3443,2138 3513,2135
 Ausgeschildert als "Reinacher Zeile"	CP2; 3513,2135 3443,2138
+Seddinpromenade: Umfahrung der Treppe	CS 27761,-3165 27749,-3120

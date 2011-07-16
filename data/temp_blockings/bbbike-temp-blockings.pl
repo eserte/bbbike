@@ -73,8 +73,8 @@ userdel	3 10547,9233 10564,9292 10580,9361
 userdel	3 10580,9361 10564,9292 10547,9233
 userdel	3 10705,9234 10713,9260 10747,9326
 userdel	3 10747,9326 10713,9260 10705,9234
-userdel	3 11128,9100 11136,9183 11208,9345 11274,9492
-userdel	3 11274,9492 11208,9345 11136,9183 11128,9100
+userdel	3 11141,9107 11136,9183 11208,9345 11274,9492
+userdel	3 11274,9492 11208,9345 11136,9183 11141,9107
 userdel	3 11998,8872 11824,8995 11882,8527
 userdel	3 11882,8527 11824,8995 11998,8872
 EOF
@@ -1464,7 +1464,7 @@ EOF
        text  => 'K 6161; (Ernst-Thälmann-Str.); OD Schulzendorf, Kanal- und Straßenbau Vollsperrung 30.06.2005-30.11.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 25185,-3955 23397,-4525
+userdel	q4 25173,-3957 25056,-3989 24941,-4025 23408,-4513
 EOF
      },
      { from  => 1107475200, # 2005-02-04 01:00
@@ -5133,7 +5133,7 @@ EOF
        type  => 'handicap',
        source_id => 'INKO_84075',
        data  => <<EOF,
-userdel	q4::inwork; 18191,6363 18343,6318 18423,6285 18473,6265 18574,6197 18670,6132 18766,6067 18861,6000
+userdel	q4::inwork; 18191,6363 18343,6318 18423,6285 18473,6265 18574,6197 18670,6132 18766,6067 18843,6013 18861,6000
 EOF
      },
      { from  => 1154642400, # 2006-08-04 00:00
@@ -5655,7 +5655,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_003370',
        data  => <<EOF,
-userdel	1::inwork 18861,6000 18766,6067 18670,6132 18574,6197 18473,6265 18423,6285 18343,6318 18191,6363 17992,6436
+userdel	1::inwork 18861,6000 18843,6013 18766,6067 18670,6132 18574,6197 18473,6265 18423,6285 18343,6318 18191,6363 17992,6436
 EOF
      },
      { from  => 1160949600, # 2006-10-16 00:00
@@ -6868,7 +6868,7 @@ EOF
        text  => 'K 6161 Friedensstr. Bahnübergang in der OD Eichwalde Gleisbauarbeiten Vollsperrung 15.12.2006-19.12.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 25185,-3955 25212,-4025 25269,-4041 25320,-4049
+userdel	2::inwork 25173,-3957 25212,-4025 25269,-4041 25320,-4049
 EOF
      },
      { from  => 1166050800, # 2006-12-14 00:00
@@ -9351,7 +9351,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006085',
        data  => <<EOF,
-userdel	1::inwork 23206,206 22547,651 22304,913 22162,1067
+userdel	1::inwork 23206,206 22547,651 22351,862 22162,1067
 EOF
      },
      { from  => undef, # 
@@ -13299,7 +13299,7 @@ EOF
        text  => 'K 6161 Friedenstr. Bahnübergang in Eichwalde Gleisbauarbeiten Vollsperrung 02.03.2009-16.03.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 25185,-3955 25212,-4025 25269,-4041 25320,-4049
+userdel	2::inwork 25173,-3957 25212,-4025 25269,-4041 25320,-4049
 EOF
      },
      { from  => 1234652400, # 2009-02-15 00:00
@@ -17975,7 +17975,7 @@ EOF
        text  => 'Wilhelminenhofstraße zwischen Rathenau- und Firlstraße vom 7. bis 31. Juli 2010 in beiden Richtungen für den Fahrzeugverkehr gesperrt; die Rathenaustraße in Richtung Plönzeile als Einbahnstraße ausgewiesen.',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork; 18970,6110 18861,6000 18766,6067 18670,6132 18574,6197 18473,6265
+userdel	q4::inwork; 18970,6110 18861,6000 18843,6013 18766,6067 18670,6132 18574,6197 18473,6265
 EOF
      },
      { from  => undef, # 

@@ -87,8 +87,8 @@ Tiergarten: Parkweg	q1 7816,12150 7827,12105 7832,12036 7822,11952 7801,11875 77
 (Bremer Weg - Fasanerieallee): Parkweg	q1 6342,11878 6379,11843 6406,11784 6467,11780 6540,11754
 Parkweg: enge Br¸cke, Fuﬂweg	q2 14310,9692 14361,9772 14404,9847 14448,9922 14453,9929 14558,10082 14597,10129 14626,10162 14652,10201
 Spittelmarkt: Gehweg	q1 10369,11728 10240,11740
-Hasenheide: Parkweg	q1 11271,8325 11282,8428 11250,8585 11177,8985 11128,9100 11136,9183
-Hasenheide, zur Lilienthalstr.: Parkweg	q1 10709,9192 11128,9100
+Hasenheide: Parkweg	q1 11271,8325 11282,8428 11250,8585 11177,8985 11141,9107 11136,9183
+Hasenheide, zur Lilienthalstr.: Parkweg	q1 10709,9192 11141,9107
 Am Flutgraben: Parkweg	q1 13333,9929 13412,9935 13579,10146
 (durch den Schlesischen Busch): Fuﬂg‰nger	q1 13412,9935 13636,9964 13711,10022
 Kolonie Albrechtshˆhe: einige Fuﬂg‰nger	q1 10260,5953 9931,5985
@@ -812,6 +812,13 @@ Rilkepfad: Fuﬂg‰nger	q1 1762,1534 1825,1534
 Bansiner Weg: Fuﬂg‰nger	q1 1840,1229 1768,1242
 Engelberger Str.: Bordsteine	q1 3431,1883 3431,1987
 Bordstein	q2 15133,2046 15144,2015
+(Ammerseestr. - Waldstr.): enger Pfad	q2 22166,1636 22222,1831
+(Uferweg): Fuﬂg‰nger, Radfahren offiziell nicht erlaubt, ggfs. schieben	q2 22548,2081 22569,2096 22617,1925
+Zur F‰hre: Stufen oder Rampe benutzen	q4 27055,-2298 27069,-2282
+F‰hrsteg	q4 27069,-2282 27090,-2253
+F‰hrsteg	q4 27374,-1573 27361,-1551
+Zum Seeblick: einige Stufen	q3 27161,-2474 27191,-2432
+(Uferweg an der HTW): einige Fuﬂg‰nger	q1 19177,5560 19020,5532 18846,5548 18744,5612 18650,5707
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q3 11805,19071 11895,19183 11927,19308
 Ebersstr.: Sch¸ler	q2 7245,8583 7292,8631
 Straﬂe 103 (Niederschˆnhausen): enge Straﬂe	q1 10914,20065 11051,19789
@@ -1334,7 +1341,7 @@ Bleichertstr.: enge Straﬂe	q0 8383,1311 8455,1280 8494,1293 8530,1379 8569,1457 
 Redwitzgang: enge Straﬂe	q1 17266,4720 17225,4568
 Hellersdorfer Promenade: Fuﬂg‰ngerzone	q1 24131,15109 24112,15236 24094,15360 24076,15481
 Muschelkalkweg: enge Straﬂe	q1 10718,1220 10795,1251 10868,1281 10950,1315 11042,1352 11120,1384 11155,1273
-Groﬂstr.: enge Straﬂe	q1 18574,6401 18483,6460 18457,6490 18429,6582
+Groﬂstr.: enge Straﬂe	q0 18574,6401 18483,6460 18457,6490 18429,6582
 Rothariweg: enge Straﬂe	q1 8292,6331 8290,6191 8291,6048
 K¸selstr.: enge Straﬂe	q1 12299,15463 12221,15514 12158,15556 12094,15598 12058,15621
 Lutherstr. (Spandau): enge Straﬂe	q1 -3248,15543 -3234,15567 -3179,15574 -3134,15578 -3006,15534 -2908,15498

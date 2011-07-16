@@ -833,6 +833,8 @@ Viktoriaplatz	1 3500,4146 3523,4139 3528,4118 3518,4106 3489,4115 3485,4137 3500
 Glaserweg	1 10187,872 10237,749
 Lintruper Str.	1 10307,922 10380,757
 Alt-Buckow	1 12574,1866 12561,1931 12817,2031
+Alt-Schmöckwitz	1 27396,-3101 27428,-3137 27427,-3171 27413,-3196 27388,-3199 27378,-3183 27382,-3151 27396,-3101
+Fontanestr.	1 18273,6606 18254,6679
 ######################################################################
 #
 # Potsdam
@@ -1272,7 +1274,6 @@ Blumberger Damm: Mittelstreifen	3nocross 21599,15213 21626,15357 21647,15496
 Blumberger Damm: Mittelstreifen	3nocross 21150,11925 21135,11799 21108,11628
 Rudower Chaussee: Mittelstreifen, zukünftig Straßenbahntrasse	3nocross 19206,2848 19242,2876 19324,2939
 Rudower Chaussee: Mittelstreifen, zukünftig Straßenbahntrasse	3nocross 19581,3184 19603,3207 19732,3340
-Adlergestell: Mittelstreifen	3nocross 20565,2754 20451,2869 20289,3033 20207,3115 20064,3278
 Sachsendamm: Mittelstreifen mit Geländer	3nocross 6935,8208 7005,8150 7073,8081
 Holzmarktstr.: Mittelstreifen	3nocross 11963,11813 11919,11856 11768,12006
 Mehringdamm/Baruther: Mittelstreifen	3nocross 9334,9670 9387,9804 9444,9919
@@ -1316,6 +1317,9 @@ Daumstr.: Mittelstreifen	3nocross -1821,16327 -1816,16111 -1815,15976
 # Stellen, an denen getragen werden muß:
 # die Zahl hinter dem ":" entspricht ungefähr den verlorenen Sekunden
 # 
+#: note: zwei Treppen: 9 Stufen + 6 Stufen
+tragen (15 Stufen)	0:25 27728,-3146
+tragen (4 Stufen)	0:6 27361,-1551
 tragen (2 Stufen)	0:5 3431,1987
 tragen	0:35 3580,4309
 tragen (ca. 32 Stufen)	0:35 22675,12008
@@ -1907,9 +1911,7 @@ Radweg parallel zur Autobahn ist wegen Bauarbeiten am BAB gesperrt	2:inwork 5062
 #: next_check: 2011-09-01
 Rathausbrücke: gesperrt (Neubau), Fertigstellung nicht vor März 2012	2:inwork 10362,12351 10422,12395
 # 
-#: last_checked: 2011-02-27
-#: next_check: 2011-05-15
-Vicki-Baum-Str.: noch in Bau, gesperrt	2:inwork 15753,10353 15823,10300
+#XXX del --- #: last_checked: 2011-02-27 --- #: next_check: 2011-05-15 --- Vicki-Baum-Str.: noch in Bau, gesperrt	2:inwork 15753,10353 15823,10300
 # 
 #: last_checked: 2011-06
 #: next_check: 2011-08-01
@@ -1921,8 +1923,8 @@ Kynaststraße: Bauarbeiten im südlichen Abschnitt	2:inwork 14652,10201 14724,1029
 Brücke im Tiergarten: gesperrt	2:inwork 6406,11784 6467,11780
 # 
 #: by: tobias wirnsberger, Matthias Stief
-#: last_checked: 2010-10-02
-#: next_check: 2011-02-01
+#: last_checked: 2011-07-16 (srt)
+#: next_check: 2011-12-01
 Unterführung unter Adlergestell und Bahn: wegen Brückenerneuerung gesperrt	2:inwork 20810,2398 20939,2413
 #
 #: section ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

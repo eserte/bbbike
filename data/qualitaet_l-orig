@@ -2337,6 +2337,18 @@ Am Berge (Hönow): Asphalt	Q0 25934,14238 26167,14221 26435,14223
 Am Berge (Hönow): Asphalt	Q0 26670,14286 26823,14309
 Ginsterweg: Asphalt	Q0 26173,14154 26167,14221 26149,14332
 Fichtengrund: Asphalt	Q0 25776,14149 25772,14191 25790,14277
+Karl-Marx-Str.: Beton	Q0 24437,-3333 24343,-3387
+Triftstr.: Asphalt	Q0 24455,-3325 24665,-3678
+Fontaneallee: schlechtes Kopfsteinpflaster	Q3 24542,-3288 24632,-3458
+Gerhart-Hauptmann-Allee: schlechtes Kopfsteinpflaster	Q3 24715,-3184 24803,-3385
+Heinrich-Heine-Allee: schlechtes Kopfsteinpflaster	Q3 24853,-3105 24943,-3325
+August-Bebel-Allee (Eichwalde): Fahrbahn schlechtes Kopfsteinpflaster, Verbundsteinpflasterradweg existiert	Q1-; 24999,-3312 24901,-3076
+August-Bebel-Allee (Eichwalde): Fahrbahn schlechtes Kopfsteinpflaster	Q3; 24901,-3076 24999,-3312
+Humboldtstr.: schlechtes Kopfsteinpflaster	Q3 25060,-2982 25189,-3202
+Waldstr.: Verbundsteinpflaster	Q1+ 25345,-2813 25403,-2911
+Uhlandallee: Beton	Q0 25509,-2715 25635,-2931
+Stubenrauchstr.: schlechtes Kopfsteinpflaster	Q3 26028,-2572 26023,-2576 25836,-2749
+Godbersenstr.: schlechtes Kopfsteinpflaster, Verbundsteinpflastergehweg auf der südlichen Seite kann zum Ausweichen benutzt werden	Q2+ 26192,-2847 26201,-2845
 ######################### User Contributions #################################
 #: by: Aaron Schaar: vvv
 Hermannswerder: guter Asphalt	Q0 -13718,-2991 -14301,-2871 -14577,-3068 -14740,-3262
@@ -2499,7 +2511,7 @@ Damaschkeweg: guter Asphalt	Q0 -11021,-3642 -11166,-3744 -11173,-3758 -11305,-37
 #: by: Tom Melchior (gefakte E-Mail-Adresse?):
 #: note: anonymous meint: "Radfahren wegen Straßenzustand nicht möglich, aber auf unbefestigtem Bürgersteig geduldet (Sand, teilweise schwierig), Kreuzungen sind problematisch (Bordsteinkanten)"
 #: corrected_by: anonymous (holprige Straße, Q3 -> Kopfsteinpflaster, Q3)
-Grenzstr. (Eichwalde): schlechtes Kopfsteinpflaster, Radfahren auf dem unbefestigten Bürgersteig wird gedulded	Q3 26337,-3101 26186,-2832 25958,-2455
+Grenzstr. (Eichwalde): schlechtes Kopfsteinpflaster, Radfahren auf dem unbefestigten Bürgersteig wird gedulded	Q3 26337,-3101 26192,-2847 26028,-2572 25958,-2455
 #: by: Norman Kraehe:
 Mühlenweg (Zühlsdorf): fester Sandweg	Q2 8800,36186 8752,36262 8575,36292 8325,36399 8001,36643 7957,36668 7837,36726 7732,36864 7670,36910 7529,36946
 #: by: Werner Braun: vvv
@@ -3724,7 +3736,8 @@ Am Stinthorn (Neu Fahrland): mäßiger Asphalt	Q2 -13779,4233 -13735,4229 -13619,4
 #: by: anonymous: vvv
 #: note: "Gehweg gepflastert in schlechtem Zustand, allerdings besser als Fahrbahn"
 #: note: "Bürgersteig ebenfalls in schlechtem Zustand (Sand, Löcher, Wurzeln, lose Gehwegplatten), mit Kinderanhänger schwierig"
-Gosener Str. (Eichwalde): Fahrbahn grobes Kopfsteinpflaster, Gehweg besser	Q3 26186,-2832 26102,-2822 25580,-2673
+#: confirmed_by: srt
+Gosener Str. (Eichwalde): Fahrbahn grobes Kopfsteinpflaster, Gehweg besser	Q3 26192,-2847 26102,-2822 25836,-2749 25579,-2680 25570,-2679
 #: note: "Gehweg gepflastertert im schlechten Zustand, wird aber häufig von Radfaherer genutzt, da noch besser als die Fahrbahn"
 Bahnhofstr. (Eichwalde): Fahrbahn sehr grobes Kopfsteinpflaster, Gehweg besser	Q3 26102,-2822 25730,-3091 25567,-3189 25400,-3285
 Bahnhofstr. (Eichwalde): Asphalt	Q0 25400,-3285 25290,-3350 25179,-3418 25085,-3477
@@ -3744,8 +3757,12 @@ Platanenstr.: schlechtes Kopfsteinpflaster	Q3 30180,6942 30196,7183 30142,7425 3
 #: by: Jessica (...-glas...):
 #: note: "enge Straße"
 Freiligrathstr.: mäßiger Asphalt	Q1- -9130,-1676 -9131,-1465
-#: by: Roland Krause:
+#: by: Roland Krause: vvv
+#: corrected_by: srt (mäßiges Kopfsteinpflaster -> schlechtes Kopfsteinpflaster; added Radwege) (zumindest im Norden)
+Grünauer Str.: Fahrbahn schlechtes Kopfsteinpflaster, Gehweg für Radfahrer freigegeben	Q2+ 25182,-2915 25223,-2974 25295,-3103
 #: XXX aber Eva Meurer meint: "ein Fahrradweg los, auf dem man über Zeuthen, Wildau bequem nach Königs Wusterhausen kommt"
-Grünauer Str.: mäßiges Kopfsteinpflaster, schmale Verbundsteinpflastergehwege	Q2 25182,-2915 25223,-2974 25295,-3103 25320,-3153 25400,-3285 25456,-3375 25506,-3465 25556,-3547 25610,-3647 25635,-3723
+Grünauer Str.: Fahrbahn schlechtes Kopfsteinpflaster, schmale Verbundsteinpflastergehwege	Q2+ 25295,-3103 25320,-3153 25400,-3285 25456,-3375 25506,-3465 25556,-3547 25610,-3647 25635,-3723
+#: by: ^^^
+# 
 #: by: Thomas Vieweg
 Friedhofsgasse (Potsdam): Beton	Q0 -11781,-2235 -11799,-2283 -11995,-2500
