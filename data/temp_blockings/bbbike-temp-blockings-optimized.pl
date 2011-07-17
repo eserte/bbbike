@@ -2953,16 +2953,7 @@ userdel	q4::inwork; 10264,12826 10166,12777 10132,12941
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'source_id' => 'LS/W-SG33-P/11/412',
-         'until' => 1310853599,
-         'text' => 'Kleinmachnow: L77: Instandsetzungsarbeiten OL Kleinmachnow , Friedensbrücke 04.07.-16.07.2011 Vollsperrung ',
-         'from' => 1309644000,
-         'id' => 2241,
-         'data' => 'userdel	2::inwork -1378,-1022 -1348,-1098
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2976,7 +2967,16 @@ userdel	q4::inwork; 10264,12826 10166,12777 10132,12941
 ',
          'type' => 'handicap'
        },
-       undef,
+       {
+         'source_id' => 'INKO_096636',
+         'until' => 1311264000,
+         'text' => 'Geschwister-Scholl-Str./Tucholskystr. (Mitte): Bauarbeiten, Brücke vollständig gesperrt (bis Ende 07/11) in beiden Richtungen Höhe Ebertsbrücke, 08.07.2011 07:00 Uhr bis 21.07.2011 18:00 Uhr ',
+         'from' => 1310014800,
+         'id' => 2247,
+         'data' => 'userdel	2::inwork 9524,12950 9529,12925
+',
+         'type' => 'gesperrt'
+       },
        {
          'source_id' => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1107/nachricht4413.html',
          'until' => 1314395999,

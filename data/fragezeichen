@@ -964,9 +964,7 @@ Passauer Str. (Lichtenrade): Qualität?	? 11842,-2230 11882,-2326
 Seydlitzplatz: Qualität?	? 10900,-2756 10958,-2760
 Scharnhorststr. (Lichtenrade): Qualität?	? 10958,-2760 11112,-2728
 Scheerbartweg: Qualität?	? 9616,-186 9719,-187
-Schwalbachstr.: Qualität?	? 11376,32 11399,15 11427,-87 11465,-210
 Sodenstr.: Qualität?	? 11858,-1189 11853,-1134 11794,-935 11790,-894
-Tutzinger Str.: Qualität?	? 12203,-2259 12019,-2683
 Warnitzer Str. (Lichtenrade): Qualität?	? 10510,-235 10584,-432
 Allée Marie Curie: Qualität?	? 4596,21629 4589,21606 4502,21525 4510,21506
 Allée Pierre de Coubertin: Qualität? Für Autos offen?	? 4510,21506 4537,21497 4589,21525 4646,21630 4631,21656 4698,21705
@@ -1076,6 +1074,7 @@ Grohsteig: Qualität?	? 21426,15979 21402,16089 21400,16207 21407,16257
 Hasenholzer Allee: Qualität?	? 21903,15174 21927,15303 21942,15388 21951,15442 21961,15496 21976,15578
 Fontanestr. (Hermsdorf): Qualität?	? 4039,24296 3922,24338 3888,24338
 Braunfelsstr.: Qualität (des südlichen Abschnitts)?	? 11953,-1181 11948,-1122 11878,-885 11844,-773 11808,-659 11771,-545 11747,-440 11721,-351
+Kloster-Zinna-Str. - Braunfelsstr.: existiert eine direkte für Radfahrer befahrbare Verbindung?	? 11712,-289 11721,-351
 Keuperweg: Qualität?	? 10795,1251 10737,1397
 Hennickendorfer Weg: Qualität?	? 21731,15748 21908,15718 22055,15698
 Hirschfelder Weg: Qualität?	? 21674,15675 21719,15666 22101,15601
@@ -1190,7 +1189,6 @@ Am Heimhort: Qualität?	? -4317,15298 -4117,15255 -4084,15264
 Germersheimer Platz: Qualität?	? -4332,15179 -4495,15198
 Germersheimer Platz: Qualität?	? -4499,15152 -4338,15137
 Merziger Str.: Qualität?	? -4622,15186 -4497,15176
-Windmühlenberg: Qualität?	? -3905,15605 -3900,15650
 Hügelschanze, westlich der Falkenhagener Straße: Qualität? Ist die Straße eine Einbahnstraße? Wenn ja, gilt die Einbahnstraßenregelung nur für Autofahrer oder auch für Radfahrer?	? -3982,15577 -3881,15589
 Karutzseeweg: Qualität?	? 25948,4823 25943,4931 25941,5069
 Wollin: Qualität?	? 53952,97760 54300,97955 54395,97957 54710,98149 54851,98181
@@ -1809,7 +1807,6 @@ Viktoriastr. (Französisch Buchholz): Qualität?	? 12467,22147 12362,22131
 Parkstr. (Französisch Buchholz): Qualität?	? 12630,22277 12488,22305 12393,22332 12205,22367 12179,22369
 Henrionweg: Qualität? Für Radfahrer befahrbar?	? 11095,21768 11153,21753 11145,21698
 Chantieweg: Qualität?	? 11425,21650 11408,21537
-Le Pavillon-Str.: Qualität?	? 11927,21703 11830,21727 11745,21742
 Straße 55: Qualität?	? 12837,21229 12695,21336
 Straße 123: Qualität?	? 10758,22952 10700,23251
 Straße 124: Qualität?	? 11013,22745 10979,22769 10758,22952
@@ -1852,10 +1849,7 @@ Straße 39 (Karow): Qualität?	? 14625,21927 14742,21843
 Straße 48 (Karow): Qualität?	? 14885,21827 15053,22039 15202,22210 15377,22452
 Tarnowitzer Str.: Qualität?	? 15154,22370 15013,22472 14891,22551
 Straße 34 (Karow): Qualität?	? 15087,22573 14913,22662
-Straße 72 (Karow): Qualität?	? 15527,23033 15691,22949 15797,22939
-Straße 73 (Karow): Qualität?	? 15709,22999 15797,22939 15850,22905 15983,22814 16090,22745 16280,22618 16442,22505
 Straße 62: Qualität?	? 16280,22618 16336,22718 16389,22860
-An der Laake: Qualität?	? 16336,22718 16154,22842
 Straße 71: Qualität?	? 15799,22787 15662,22873
 Straße 58: Qualität?	? 15722,22607 15697,22566
 Straße 59 (Karow): Qualität?	? 15835,22531 15807,22489
@@ -2257,7 +2251,6 @@ Spechtweg (Potsdam-Golm): Qualität?	? -17864,83 -17843,139
 Sperberweg (Potsdam-Golm): Qualität?	? -17843,139 -17789,300
 Friedrich-Wilhelm-Boelcke-Str. (Potsdam): Qualität?	? -12796,-2488 -12831,-2439 -12813,-2423 -12779,-2467
 Zur Königlichen Hofbrauerei (Potsdam): Qualität?	? -12813,-2423 -12781,-2376
-Unterführung Müllerstraße: gibt es hier eine Rampe/Treppe?	? 4311,746 4250,763
 Ida-von-Arnim-Str.: Wo genau wird die Straße gebaut? Qualität?	? 8169,14267 8452,14298
 Am Golmer Weinberg (Potsdam-Golm): Qualität? Genaue Lage?	? -19225,-261 -19147,-77
 Alter Weinberg (Groß Glienicke): Qualität?	? -9276,7226 -9198,7051

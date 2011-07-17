@@ -19357,8 +19357,8 @@ userdel	q4::inwork; 19904,3464 20012,3532
 EOF
      },
      { from  => 1310014800, # 2011-07-07 07:00
-       until => 1310745600, # 2011-07-15 18:00
-       text  => 'Geschwister-Scholl-Str./Tucholskystr. (Mitte): Bauarbeiten, Brücke vollständig gesperrt (bis Mitte 07/11) in beiden Richtungen Höhe Ebertsbrücke, 08.07.2011 07:00 Uhr bis 15.07.2011 18:00 Uhr ',
+       until => 1311264000, # 2011-07-21 18:00
+       text  => 'Geschwister-Scholl-Str./Tucholskystr. (Mitte): Bauarbeiten, Brücke vollständig gesperrt (bis Ende 07/11) in beiden Richtungen Höhe Ebertsbrücke, 08.07.2011 07:00 Uhr bis 21.07.2011 18:00 Uhr ',
        type  => 'gesperrt',
        source_id => 'INKO_096636',
        data  => <<EOF,

@@ -1107,6 +1107,7 @@ Falkenthal - Bergsdorf: Kopfsteinpflaster, mindestens von Falkenthal her	? 2034,
 #XXX del --- #: XXX: unklare Eintragung zu Radwegen existiert: --- ninaluetge widerspricht, ebenso gsv: --- Jan-Petersen-Str.: Gibt es hier Radwege?	? 21030,16206 21196,16119 21108,15955 21086,15910
 Zichow-Lindenwegsiedlung: Qualität?	? 54500,87934 52642,87955
 Prötzeler Ring: Qualität laut ADFC-Karte gut	? 21951,15918 21980,15857 22055,15698 22092,15610
+#: XXX: Sylvina meint: Asphalt, Q0, aber einige Fußgänger, q1? Außerdem: welcher Strange des Cottbusser Platzes ist gemeint? Nachfrage läuft...
 Cottbusser Platz: laut ADFC-Karte gute Qualität	? 23297,14772 23288,14719 23298,14685 23379,14514
 #: XXX: ein anonymer Eintrag: eng schlechter straßenbelag, Q2
 Schillingweg: laut ADFC-Karte mäßig bis gut geeignet	? 11514,24284 11259,23928 11224,23879 11190,23832 11128,23746 11101,23708 10855,23403 10717,23258 10700,23251 10629,23222 10396,23128 9890,22932
@@ -2058,6 +2059,7 @@ Siedlungsstr.: Qualität?	? 16647,25293 16693,25292 16731,25310
 Siedlungsstr.: Qualität?	? 16693,25292 16735,25120
 Prinz-Friedrich-Karl-Weg: Qualität?	? -1100,12210 -1172,12336 -824,12557 -646,12658
 Sonnenhof: Qualität?	? 606,9463 612,9471 600,9480 586,9463 590,9456 599,9452 606,9463
+#: XXX anonymous meint: Kopfsteinpflaster, Q2, q4, Privatweg (warum eigentlich?), Einbahnstraße, aber keine Angaben zur Regelung für Radfahrer
 Thaters Privatweg: Qualität? Ist die Straße (teilweise) eine Einbahnstraße? Wenn ja, gilt die Einbahnstraßenregelung nur für Autofahrer oder auch für Radfahrer?	? 3956,14750 3899,14868 3893,14911 3892,14944 4103,15137 4148,15205
 Weg an der Kolonie am Nordgraben: Qualität? Kann man zur Roedernallee und zum Fräsersteig durchfahren?	? 5846,20279 5912,20308 5977,20337 6040,20364 6097,20398 6152,20452 6176,20482 6165,20517 6184,20550
 Fuchsschwanzweg: Qualität? Kann man als Radfahrer zum Weg an der Kolonie am Nordgraben gelangen (ggfs. über eine Treppe?)	? 5842,20451 5904,20327 5912,20308
@@ -2107,9 +2109,7 @@ Seydlitzplatz: Qualität?	? 10900,-2756 10958,-2760
 #: XXX wahrscheinlich schlechter Feldstein-Belag
 Scharnhorststr. (Lichtenrade): Qualität?	? 10958,-2760 11112,-2728
 Scheerbartweg: Qualität?	? 9616,-186 9719,-187
-Schwalbachstr.: Qualität?	? 11376,32 11399,15 11427,-87 11465,-210
 Sodenstr.: Qualität?	? 11858,-1189 11853,-1134 11794,-935 11790,-894
-Tutzinger Str.: Qualität?	? 12203,-2259 12019,-2683
 Warnitzer Str. (Lichtenrade): Qualität?	? 10510,-235 10584,-432
 Allée Marie Curie: Qualität?	? 4596,21629 4589,21606 4502,21525 4510,21506
 Allée Pierre de Coubertin: Qualität? Für Autos offen?	? 4510,21506 4537,21497 4589,21525 4646,21630 4631,21656 4698,21705
@@ -2231,6 +2231,7 @@ Hasenholzer Allee: Qualität?	? 21903,15174 21927,15303 21942,15388 21951,15442 2
 Fontanestr. (Hermsdorf): Qualität?	? 4039,24296 3922,24338 3888,24338
 #: XXX ein anonymer Eintrag "mäßiger Asphalt" existiert, aber bezieht er sich auf den südlichen oder nördlichen Teil?
 Braunfelsstr.: Qualität (des südlichen Abschnitts)?	? 11953,-1181 11948,-1122 11878,-885 11844,-773 11808,-659 11771,-545 11747,-440 11721,-351
+Kloster-Zinna-Str. - Braunfelsstr.: existiert eine direkte für Radfahrer befahrbare Verbindung?	? 11712,-289 11721,-351
 Keuperweg: Qualität?	? 10795,1251 10737,1397
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/45re.pdf/file (alle Hausnummern eingezogen; existiert die Straße noch?)
 Hennickendorfer Weg: Qualität?	? 21731,15748 21908,15718 22055,15698
@@ -2263,6 +2264,7 @@ Roonstr. (Spandau): Qualität?	? -3665,14966 -3582,14886 -3499,14806
 Münsingerstr.: Qualität?	? -3598,14587 -3535,14408
 Martin-Albertz-Weg: Qualität?	? -3535,14408 -3587,14389
 Altstädter Ring - Münsingerstr./Martin-Albertz-Weg: Qualität?	? -3498,14413 -3535,14408
+#: XXX anonymous meint: Kopfsteinpflaster, Q2, aber enge Straße q4 (?)
 Kurze Str. (Spandau): Qualität?	? -3582,15244 -3555,15377
 #: XXX gesehen bei OpenStreetMap
 Heinrich-Kleist-Str. (Potsdam): existiert eine Verbindung zur Walter-Klausch-Str.?	? -10142,-2540 -10158,-2591 -10080,-2632
@@ -2365,7 +2367,6 @@ Germersheimer Platz: Qualität?	? -4332,15179 -4495,15198
 Germersheimer Platz: Qualität?	? -4499,15152 -4338,15137
 #: XXX Eintrag von anonymous: Asphalt, Q2, Bordsteinkanten (wo?)
 Merziger Str.: Qualität?	? -4622,15186 -4497,15176
-Windmühlenberg: Qualität?	? -3905,15605 -3900,15650
 Hügelschanze, westlich der Falkenhagener Straße: Qualität? Ist die Straße eine Einbahnstraße? Wenn ja, gilt die Einbahnstraßenregelung nur für Autofahrer oder auch für Radfahrer?	? -3982,15577 -3881,15589
 #: XXX_osm: bei osm falsch geschrieben (str. statt weg)?
 Karutzseeweg: Qualität?	? 25948,4823 25943,4931 25941,5069
@@ -2562,6 +2563,7 @@ Feierabendweg: Qualität?	? 24938,13688 25020,13661 25099,13746
 Randweg: Qualität?	? 24929,13692 24940,13740 24884,13786 24731,13847
 Schönefelder Weg (Großziethen): Qualität? Sind Teile der Straße als Radweg ausgewiesen?	? 15118,-970 14843,-859 14769,-852 14424,-705 14318,-632 14032,-664 14015,-651
 Lößnitzer Weg: Qualität?	? 15655,556 15597,703 15579,745 15520,887 15505,923 15489,970 15426,1041
+#: XXX anonymous meint: enge Straße, q0, Kopfsteinpflaster, Q3; überprüfen!
 Lauchstädter Weg: Qualität?	? 15952,719 15872,902 15804,1061 15758,1179 15699,1258 15591,1332
 Pirnaer Str.: Qualität?	? 16042,772 15999,880 15970,954 15966,965 15935,1043 15901,1120
 #: XXX unklarer Eintrag von bene...finti: Asphalt, enge Straße, q0, vielleicht war auch die Onkel-Bräsig-Str. gemeint
@@ -3112,6 +3114,7 @@ Primusweg: Qualität?	? 5731,19824 5651,19953
 #: XXX str_cont_ausnahme-Eintrag
 Straße 179 (Französisch Buchholz): Qualität?	? 12015,23508 12093,23793 12104,23808
 Straße 179 (Französisch Buchholz): Qualität?	? 12093,23793 11971,23899 11941,23882
+#: XXX anonymous meint: enge Straße, q1, aber keine weitere Angaben
 Straße 180 (Französisch Buchholz): Qualität?	? 12426,23722 12269,23711 12104,23808
 Baltrumstr.: Qualität?	? 12426,23722 12320,23476 12406,23171
 Töpperweg: Qualität?	? 12371,23159 12389,23097 12429,22932 12485,22940
@@ -3142,7 +3145,6 @@ Parkstr. (Französisch Buchholz): Qualität?	? 12630,22277 12488,22305 12393,22332
 #: XXX_osm bei osm als "Guyotstr" bezeichnet
 Henrionweg: Qualität? Für Radfahrer befahrbar?	? 11095,21768 11153,21753 11145,21698
 Chantieweg: Qualität?	? 11425,21650 11408,21537
-Le Pavillon-Str.: Qualität?	? 11927,21703 11830,21727 11745,21742
 Straße 55: Qualität?	? 12837,21229 12695,21336
 Straße 123: Qualität?	? 10758,22952 10700,23251
 Straße 124: Qualität?	? 11013,22745 10979,22769 10758,22952
@@ -3193,11 +3195,7 @@ Straße 39 (Karow): Qualität?	? 14625,21927 14742,21843
 Straße 48 (Karow): Qualität?	? 14885,21827 15053,22039 15202,22210 15377,22452
 Tarnowitzer Str.: Qualität?	? 15154,22370 15013,22472 14891,22551
 Straße 34 (Karow): Qualität?	? 15087,22573 14913,22662
-#: XXX_osm bei osm teilweise Straße 73
-Straße 72 (Karow): Qualität?	? 15527,23033 15691,22949 15797,22939
-Straße 73 (Karow): Qualität?	? 15709,22999 15797,22939 15850,22905 15983,22814 16090,22745 16280,22618 16442,22505
 Straße 62: Qualität?	? 16280,22618 16336,22718 16389,22860
-An der Laake: Qualität?	? 16336,22718 16154,22842
 Straße 71: Qualität?	? 15799,22787 15662,22873
 Straße 58: Qualität?	? 15722,22607 15697,22566
 Straße 59 (Karow): Qualität?	? 15835,22531 15807,22489
@@ -3817,7 +3815,6 @@ Friedrich-Wilhelm-Boelcke-Str. (Potsdam): Qualität?	? -12796,-2488 -12831,-2439 
 #: XXX_osm: bei osm auch als "Friedrich-Wilhelm-Boelcke-Str." bezeichnet
 #: by: http://www.potsdam.de/cms/dokumente/10057376_761024/a31d30b5/Amtsblatt17_09.pdf (Lage)
 Zur Königlichen Hofbrauerei (Potsdam): Qualität?	? -12813,-2423 -12781,-2376
-Unterführung Müllerstraße: gibt es hier eine Rampe/Treppe?	? 4311,746 4250,763
 # 
 #: XXX fehlt in Berlin.coords.data
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/07re.pdf/file
