@@ -3768,6 +3768,10 @@ sub temp_blockings_editor {
 			-value => "replace_preserve_data",
 			-variable => \$meta_data_handling,
 		       )->pack(-anchor => "w");
+	$f->Radiobutton(-text => M"Eintrag anzeigen",
+			-value => "show",
+			-variable => \$meta_data_handling,
+		       )->pack(-anchor => "w");
     }
 
     {
@@ -3952,8 +3956,9 @@ EOF
 		      if ($as_data) {
 			  my $s = Strassen->new($file);
 			  if ($s->count == 0) {
-			      if ($meta_data_handling eq '') {
-				  # don't warn if it's only written to STDERR
+			      if ($meta_data_handling eq '' ||
+				  $meta_data_handling eq 'show') {
+				  # don't warn if it's only written to STDERR or Tk widget
 			      } else {
 				  $t->messageBox(-message => "Keine Blockierungen ausgewählt");
 				  return;
@@ -3969,6 +3974,13 @@ EOF
 		  $pl_entry .= <<EOF;
      },
 EOF
+
+		  if ($meta_data_handling eq 'show') {
+		      my $t = $main::top->Toplevel;
+		      my $txt = $t->Scrolled('ROText')->pack(qw(-fill both -expand 1));
+		      $txt->insert('end', $pl_entry);
+		      return;
+		  }
 
 		  if ($old_contents[-1] =~ m{^\s*\);\s*$}) {
 		      splice @old_contents, -1, 0, $pl_entry;
