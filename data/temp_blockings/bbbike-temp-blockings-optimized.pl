@@ -2872,7 +2872,16 @@ userdel	q4::inwork; 10264,12826 10166,12777 10132,12941
        },
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'IM_017000',
+         'until' => 1330110000,
+         'text' => 'Stargarder Str. (Prenzlauer Berg): Baustelle, Fahrtrichtung gesperrt (bis Anfang 2012) Richtung Schönhauser Allee zwischen Dunckerstr. und Schliemannstr., 09.03.2011 07:00 Uhr bis 24.02.2012 20:00 Uhr ',
+         'from' => 1299564000,
+         'id' => 2223,
+         'data' => 'userdel	q4::inwork; 11603,15455 11502,15527
+',
+         'type' => 'handicap'
+       },
        {
          'source_id' => 'INKO_093371',
          'until' => 1335798000,
@@ -2953,7 +2962,16 @@ userdel	q4::inwork; 10264,12826 10166,12777 10132,12941
          'type' => 'gesperrt'
        },
        undef,
-       undef,
+       {
+         'source_id' => 'LS/W-SG33-P/11/412',
+         'until' => 1311199200,
+         'text' => 'Kleinmachnow: L77: Instandsetzungsarbeiten OL Kleinmachnow , Friedensbrücke 04.07.-20.07.2011 Vollsperrung ',
+         'from' => 1309644000,
+         'id' => 2241,
+         'data' => 'userdel	2::inwork -1378,-1022 -1348,-1098
+',
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
@@ -3022,8 +3040,8 @@ userdel	q4::inwork 2295,20358 2362,20218 2402,20126
        },
        {
          'source_id' => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1107/nachricht4418.html',
-         'until' => 1333231200,
-         'text' => 'Instandsetzung der Pankgrafenbrücke, ab dem 18.07.2011 bis März 2012, Einschränkungen möglich',
+         'until' => 1331568000,
+         'text' => 'Instandsetzung der Pankgrafenbrücke, ab dem 18.07.2011 bis Mitte März 2012, Einschränkungen möglich',
          'from' => 1310763434,
          'id' => 2252,
          'data' => 'userdel	q4::inwork 13953,23497 14173,23426

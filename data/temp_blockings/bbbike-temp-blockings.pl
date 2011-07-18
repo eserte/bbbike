@@ -19133,8 +19133,8 @@ userdel	2::inwork 97780,-91551 97468,-91292
 EOF
      },
      { from  => 1299564000, # 2011-03-08 07:00
-       until => 1310839200, # 2011-07-16 20:00
-       text  => 'Stargarder Str. (Prenzlauer Berg): Baustelle, Fahrtrichtung gesperrt (bis Mitte 07/11) Richtung Schönhauser Allee zwischen Dunckerstr. und Schliemannstr., 09.03.2011 07:00 Uhr bis 16.07.2011 20:00 Uhr ',
+       until => 1330110000, # 2012-02-24 20:00
+       text  => 'Stargarder Str. (Prenzlauer Berg): Baustelle, Fahrtrichtung gesperrt (bis Anfang 2012) Richtung Schönhauser Allee zwischen Dunckerstr. und Schliemannstr., 09.03.2011 07:00 Uhr bis 24.02.2012 20:00 Uhr ',
        type  => 'handicap',
        source_id => 'IM_017000',
        data  => <<EOF,
@@ -19297,8 +19297,8 @@ userdel	2::inwork 13829,9905 13884,9882 13995,9834 14193,9746
 EOF
      },
      { from  => 1309644000, # 2011-07-03 00:00
-       until => 1310853599, # 2011-07-16 23:59
-       text  => 'Kleinmachnow: L77: Instandsetzungsarbeiten OL Kleinmachnow , Friedensbrücke 04.07.-16.07.2011 Vollsperrung ',
+       until => 1311199200, # 2011-07-21 00:00 # until => 1310853599, # 2011-07-16 23:59
+       text  => 'Kleinmachnow: L77: Instandsetzungsarbeiten OL Kleinmachnow , Friedensbrücke 04.07.-20.07.2011 Vollsperrung ',
        type  => 'gesperrt',
        source_id => 'LS/W-SG33-P/11/412',
        data  => <<EOF,
@@ -19417,9 +19417,10 @@ userdel	q4::inwork; 16507,7254 16615,7062
 EOF
      },
      { from  => 1310763434, # 2011-07-15 22:57
-       until => 1333231200, # 2012-04-01 00:00
-       text  => 'Instandsetzung der Pankgrafenbrücke, ab dem 18.07.2011 bis März 2012, Einschränkungen möglich',
+       until => 1331568000, # 2012-03-12 17:00 # until => 1333231200, # 2012-04-01 00:00
+       text  => 'Instandsetzung der Pankgrafenbrücke, ab dem 18.07.2011 bis Mitte März 2012, Einschränkungen möglich',
        type  => 'handicap',
+       # auch: 'INKO_108508'
        source_id => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1107/nachricht4418.html',
        data  => <<EOF,
 userdel	q4::inwork 13953,23497 14173,23426
