@@ -13,7 +13,12 @@
 #
 
 use strict;
+use Getopt::Long;
 use Fatal qw(open close);
+
+my $min;
+GetOptions("min" => \$min)
+    or die "usage: $0 [min] [ errorlog | - | ]";
 
 my $file = shift || "cat /var/log/apache2/bbbike.de_error.log-???????? /var/log/apache2/bbbike.de_error.log|";
 
@@ -36,6 +41,9 @@ while(<$fh>) {
 	if ($req_duration < 30) { # ca. 35s is the perlbal limit, which is quite critical
 	    next;
 	}
+    }
+    if ($min) {
+	s{, referer: http\S+}{};
     }
     print;
 }
