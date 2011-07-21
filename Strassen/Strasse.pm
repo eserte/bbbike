@@ -93,6 +93,39 @@ sub de_artikel {
     }
 }
 
+# XXX Maybe de_artikel and de_artikel_genitiv should be refactored so
+# the regexps are not duplicated here.
+sub de_artikel_genitiv {
+    my($strasse) = @_;
+    if ($strasse =~ /^(am|an|auf|hinter|im|in|unter|zum|zur|zwischen|u-bhf|s-bhf)\b/i) {
+	"=>";
+    } elsif ($strasse =~ / - /) {
+	"=>";
+    } elsif ($strasse =~ /^(avenue\b|rue\b|allée)\b/i) { # oh la la
+	"auf der";
+    } elsif ($strasse =~ /(str\.|straße\b|allee\b|chaussee\b|promenade\b|zeile\b|gasse\b|kehre\b)/i) {
+	"auf der";
+    } elsif ($strasse =~ /(park\b|garten\b|ring\b)/i) {
+	"auf dem";
+    } elsif ($strasse =~ /(damm\b|weg\b|steig\b)/i) {
+	"auf dem";
+    } elsif ($strasse =~ /(platz\b|steg\b|markt\b|pfad\b)/i) {
+	"auf dem";
+    } elsif ($strasse =~ /(ufer\b|gestell\b)/i) {
+	"auf dem";
+    } elsif ($strasse =~ /(brücke\b)/i) {
+	"auf der";
+    } elsif ($strasse =~ /(\balt\b)/i) {
+	"auf der Straße";
+    } elsif ($strasse =~ /(\btor\b)/i) {
+	"auf dem";
+    } elsif ($strasse =~ /(\bstern\b)/i) { # möglichst am Ende
+	"auf dem";
+    } else {
+	"=>";
+    }
+}
+
 # Den Straßennamen so weit wie möglich abkürzen...
 # Verschiedene Level (0 bis 4) sind möglich
 sub short {
