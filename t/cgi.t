@@ -88,7 +88,7 @@ if (!@urls) {
 }
 
 my $ortsuche_tests = 11;
-plan tests => (223 + $ortsuche_tests) * scalar @urls;
+plan tests => (226 + $ortsuche_tests) * scalar @urls;
 
 my $hdrs;
 if (defined &Compress::Zlib::memGunzip && $do_accept_gzip) {
@@ -457,7 +457,6 @@ for my $cgiurl (@urls) {
 	    or diag("Can't find Guben in " . $content);
     }
 
- XXX:
     {
 	# Test "ImportantAngleCrossingName"
 	$req = new HTTP::Request
@@ -466,9 +465,24 @@ for my $cgiurl (@urls) {
 	ok($res->is_success, 'test "ImportantAngleCrossingName" feature')
 	    or diag(Dumper($res));
 	$content = uncompr($res);
-	like($content, qr/\QRegattastr. (Ecke Rabindranath-Tagore-Str.)/,
-	     'found "ImportantAngleCrossingName" feature')
-	    or diag "Can't find ... Ecke ... in " . $content;
+	BBBikeTest::like_long_data($content, qr/\QRegattastr. (Ecke Rabindranath-Tagore-Str.)/,
+				   'found "ImportantAngleCrossingName" feature', '.html');
+    }
+
+ XXX:
+    {
+	# Another test for "ImportantAngleCrossingName"
+	# Bülowstr. am Dennewitzplatz
+	$req = new HTTP::Request
+	    ('GET', "$action?startc=7938%2C9694&pref_seen=1&zielc=7813%2C10112");
+	$res = $ua->request($req);
+	ok($res->is_success, 'test "ImportantAngleCrossingName" feature (Dennewitzplatz)')
+	    or diag(Dumper($res));
+	$content = uncompr($res);
+	BBBikeTest::like_long_data($content, qr/weiter auf der.*B.*lowstr\. \(Ecke Alvenslebenstr\.\)/,
+				   'stripped citypart from ImportantAngleCrossingName', '.html');
+	BBBikeTest::like_long_data($content, qr/weiter auf der.*B.*lowstr\. \(Ecke Dennewitzstr\.\)/,
+				   'second ImportantAngleCrossingName', '.html');
     }
 
     # Klick on "D" in Start A..Z
