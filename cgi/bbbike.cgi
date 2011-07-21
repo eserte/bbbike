@@ -4121,7 +4121,7 @@ sub display_route {
 		    }
 		}
 		if ($same_streetname_important_angle) {
-		    $important_angle_crossing_name = $extra->{ImportantAngleCrossingName};
+		    $important_angle_crossing_name = Strasse::strip_bezirk($extra->{ImportantAngleCrossingName});
 		}
 		$ges_entf += $entf;
 		$ges_entf_s = sprintf "%.1f km", $ges_entf/1000;
