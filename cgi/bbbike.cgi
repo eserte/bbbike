@@ -4097,6 +4097,8 @@ sub display_route {
 	    if ($i > 0) {
 		if (!$winkel) { $winkel = 0 }
 		$winkel = int($winkel/10)*10;
+		my $same_streetname_important_angle =
+		    @out_route && $out_route[-1]->{Strname} eq $strname && $extra && $extra->{ImportantAngleCrossingName};
 		if ($winkel < 30 && (!$extra || !$extra->{ImportantAngle})) {
 		    $richtung = "";
 		    $raw_direction = "";
@@ -4107,9 +4109,18 @@ sub display_route {
 		    $richtung =
 			($winkel <= 45 ? M('halb') : '') .
 			    ($richtung eq 'l' ? M('links') : M('rechts')) .
-				" ($winkel°) " . ($lang eq 'en' ? "-&gt;" : Strasse::de_artikel($strname));
+				" ($winkel°) ";
+		    if ($lang eq 'en') {
+			$richtung .= "-&gt;";
+		    } else {
+			if ($same_streetname_important_angle) {
+			    $richtung .= "weiter " . Strasse::de_artikel_genitiv($strname);
+			} else {
+			    $richtung .= Strasse::de_artikel($strname);
+			}
+		    }
 		}
-		if (@out_route && $out_route[-1]->{Strname} eq $strname && $extra && $extra->{ImportantAngleCrossingName}) {
+		if ($same_streetname_important_angle) {
 		    $important_angle_crossing_name = $extra->{ImportantAngleCrossingName};
 		}
 		$ges_entf += $entf;
