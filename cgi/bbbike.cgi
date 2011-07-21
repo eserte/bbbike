@@ -4088,6 +4088,7 @@ sub display_route {
 	    my $entf_s = '';
 	    my $raw_direction;
 	    my $route_inx;
+	    my $important_angle_crossing_name;
 	    my($entf, $winkel, $richtung, $extra)
 		= ($next_entf, $next_winkel, $next_richtung, $next_extra);
 	    ($strname, $next_entf, $next_winkel, $next_richtung,
@@ -4107,6 +4108,9 @@ sub display_route {
 			($winkel <= 45 ? M('halb') : '') .
 			    ($richtung eq 'l' ? M('links') : M('rechts')) .
 				" ($winkel°) " . ($lang eq 'en' ? "-&gt;" : Strasse::de_artikel($strname));
+		}
+		if (@out_route && $out_route[-1]->{Strname} eq $strname && $extra && $extra->{ImportantAngleCrossingName}) {
+		    $important_angle_crossing_name = $extra->{ImportantAngleCrossingName};
 		}
 		$ges_entf += $entf;
 		$ges_entf_s = sprintf "%.1f km", $ges_entf/1000;
@@ -4259,6 +4263,7 @@ sub display_route {
 		 DirectionString => $richtung,
 		 Angle => $winkel,
 		 Strname => $strname,
+		 ImportantAngleCrossingName => $important_angle_crossing_name,
 		 ($with_comments && $comments_net ?
 		  (Comment => $etappe_comment,
 		   CommentHtml => $etappe_comment_html,
@@ -4728,9 +4733,9 @@ EOF
 	my $etappe_i = -1;
 	for my $etappe (@out_route) {
 	    $etappe_i++;
-	    my($entf, $richtung, $strname, $ges_entf_s,
+	    my($entf, $richtung, $strname, $important_angle_crossing_name, $ges_entf_s,
 	       $etappe_comment_html, $fragezeichen_comment, $path_index) =
-		   @{$etappe}{qw(DistString DirectionString Strname TotalDistString CommentHtml FragezeichenComment PathIndex)};
+		   @{$etappe}{qw(DistString DirectionString Strname ImportantAngleCrossingName TotalDistString CommentHtml FragezeichenComment PathIndex)};
 	    my $last_path_index;
 	    if ($etappe_i < $#out_route) {
 		$last_path_index = $out_route[$etappe_i+1]->{PathIndex} - 1;
@@ -4745,6 +4750,9 @@ EOF
 		print "<a class=ms href='#' onclick='return ms($etappe->{Coord})'>"
 		    if $can_jslink;
 		print $strname;
+		if ($important_angle_crossing_name) {
+		    print " (" . M("Ecke") . " " . $important_angle_crossing_name . ")";
+		}
 		print "</a>"
 		    if $can_jslink;
 		print "$fontend</td><td nowrap>$fontstr$ges_entf_s$fontend</td>";

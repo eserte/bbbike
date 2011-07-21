@@ -313,7 +313,8 @@ sub route_to_name_1 {
 	}
 	my $extra;
 	if (@strname &&
-	    ($combinestreet && $str eq $strname[$#strname]->[ROUTE_NAME])) {
+	    ($combinestreet && $str eq $strname[$#strname]->[ROUTE_NAME] &&
+	     !($strname[$#strname]->[ROUTE_EXTRA] && $strname[$#strname]->[ROUTE_EXTRA]{ImportantAngle}))) {
 	    $strname[$#strname][ROUTE_DIST] += $entf;
 	    $strname[$#strname][ROUTE_ANGLE] = $winkel;
 	    $strname[$#strname][ROUTE_DIR] = $richtung;
@@ -351,6 +352,14 @@ sub route_to_name_1 {
 		next if ($this_richtung ne $richtung && $this_winkel >= 30);
 		next if $winkel < $this_winkel;
 		$extra->{ImportantAngle} = '!';
+		{
+		    my($str_i, $rueckwaerts) = $self->net2name($xy2, $neighbour);
+		    if (defined $str_i) {
+			my $str = $self->{Strassen}->get($str_i)->[0];
+			$str = Strasse::beautify_landstrasse($str, $rueckwaerts);
+			$extra->{ImportantAngleCrossingName} = $str;
+		    }
+		}
 		last;
 	    }
 	}
@@ -447,7 +456,8 @@ sub route_to_name_2 {
 	}
 	my $extra;
 	if (@strname &&
-	    ($combinestreet && $str eq $strname[$#strname]->[ROUTE_NAME])) {
+	    ($combinestreet && $str eq $strname[$#strname]->[ROUTE_NAME] &&
+	     !($strname[$#strname]->[ROUTE_EXTRA] && $strname[$#strname]->[ROUTE_EXTRA]{ImportantAngle}))) {
 	    $strname[$#strname][ROUTE_DIST] += $entf;
 	    $strname[$#strname][ROUTE_ANGLE] = $winkel;
 	    $strname[$#strname][ROUTE_DIR] = $richtung;
@@ -482,7 +492,7 @@ sub route_to_name_2 {
 
     @strname;
 }
-# line 386 Generated_src.pm
+# line 395 Generated_src.pm
 sub reachable_1 {
     my($self, $coord) = @_;
     if (!exists $self->{Net}{$coord}) {
@@ -493,7 +503,7 @@ sub reachable_1 {
 	1;
     }
 }
-# line 386 Generated_src.pm
+# line 395 Generated_src.pm
 sub reachable_2 {
     my($self, $coord) = @_;
     if (!defined $self->{Net}[$self->{Coord2Index}{$coord}]) {

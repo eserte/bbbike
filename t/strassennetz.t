@@ -37,7 +37,7 @@ BEGIN {
     }
 }
 
-plan tests => 71;
+plan tests => 74;
 
 print "# Tests may fail if data changes\n";
 
@@ -308,6 +308,18 @@ EOF
     }
 }
 
+XXX:
+{ # Another ImportantAngle problem. Also check for new
+  # ImportantAngleCrossingName feature.
+    no warnings qw(qw);
+    # Regattastr. -> Sportpromenade (Schmöckwitz)
+    my $route = [map { [split /,/] } qw(23085,898 23252,792 23501,797 23681,800 23955,728 24019,711)];
+    my @res = $s_net->route_to_name($route);
+    ok $res[0]->[StrassenNetz::ROUTE_EXTRA]->{ImportantAngle}, 'Important angle is defined';
+    is $res[0]->[StrassenNetz::ROUTE_EXTRA]->{ImportantAngleCrossingName}, 'Rabindranath-Tagore-Str.', 'ImportantAngleCrossingName';
+    is $res[0]->[StrassenNetz::ROUTE_NAME], $res[1]->[StrassenNetz::ROUTE_NAME], 'Route name appears twice';
+}
+
 {
     # Check for nearest_node output (find nearest reachable point if
     # the selected goal is not reachable)
@@ -393,7 +405,6 @@ EOF
     ok $@, 'Cannot pop_stack from empty stack';
 }
 
-XXX:
 {
     # make_sperre tests
     my $s = Strassen->new_from_data_string(<<EOF);

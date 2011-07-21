@@ -88,7 +88,7 @@ if (!@urls) {
 }
 
 my $ortsuche_tests = 11;
-plan tests => (221 + $ortsuche_tests) * scalar @urls;
+plan tests => (223 + $ortsuche_tests) * scalar @urls;
 
 my $hdrs;
 if (defined &Compress::Zlib::memGunzip && $do_accept_gzip) {
@@ -410,7 +410,6 @@ for my $cgiurl (@urls) {
 	cmp_ok($len, "<=", 14.5, "Shorter route"); # eastern in 14.6km
     }
 
- XXX:
     {
 	my $content;
 
@@ -456,6 +455,20 @@ for my $cgiurl (@urls) {
 	    or diag "Can't find Gubener Str. in " . $content;
 	like($content, qr/Guben!\#ort!/, "Guben as place/city found")
 	    or diag("Can't find Guben in " . $content);
+    }
+
+ XXX:
+    {
+	# Test "ImportantAngleCrossingName"
+	$req = new HTTP::Request
+	    ('GET', "$action?startc=23085%2C898;pref_quality=;startplz=12527;pref_speed=20;startname=Regattastr.;pref_specialvehicle=;zielname=Sportpromenade;pref_seen=1;zielplz=12527;zielc=25958%2C-731;pref_cat=;pref_green=;scope=");
+	$res = $ua->request($req);
+	ok($res->is_success, 'test "ImportantAngleCrossingName" feature')
+	    or diag(Dumper($res));
+	$content = uncompr($res);
+	like($content, qr/\QRegattastr. (Ecke Rabindranath-Tagore-Str.)/,
+	     'found "ImportantAngleCrossingName" feature')
+	    or diag "Can't find ... Ecke ... in " . $content;
     }
 
     # Klick on "D" in Start A..Z
