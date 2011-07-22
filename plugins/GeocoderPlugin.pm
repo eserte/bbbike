@@ -252,7 +252,7 @@ sub geocoder_dialog {
 				     my $loc = shift;
 				     ($loc->centroid->long, $loc->centroid->lat);
 				 },
-				 'label' => 'Cloudmade (needs API key)',
+				 'label' => 'Cloudmade (needs API key, avoid umlauts)',
 			       },
 		'OSM' => { 'require' => sub { require Geo::Coder::OSM },
 			   'new' => sub { Geo::Coder::OSM->new },
