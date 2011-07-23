@@ -385,6 +385,11 @@ sub plot_osm_files {
 		$v = "<undef v>" if !defined $v;
 		$tag{$k} = $v;
 	    }
+
+	    if (exists $tag{render} && $tag{render} eq 'no') {
+		next;
+	    }
+
 	    if (exists $tag{name} || exists $tag{amenity}) {
 		my $uninteresting_tags = join(" ",
 					      "user=" . $node->getAttribute("user"),
@@ -436,6 +441,10 @@ sub plot_osm_files {
 	    my %tag;
 	    for my $tag ($way->findnodes('./tag')) {
 		$tag{$tag->getAttribute('k')} = $tag->getAttribute('v');
+	    }
+
+	    if (exists $tag{render} && $tag{render} eq 'no') {
+		next;
 	    }
 
 	    my %item_args;
