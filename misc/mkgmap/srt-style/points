@@ -1,12 +1,30 @@
+# Below the comment from the original mkgmap style file
+# (svn revision 1657)
+# Some changes were applied to the default.
+
+# -------------------------------------------------------------------
+# This is the default mkgmap style file for converting OSM nodes
+# into Garmin POIs.
+# Any line prefaced with # is a comment and will not be applied.
+# Each line is a rule, of the generalised format:
+#  OSM_tag(s)_to_match  [Garmin_type_code resolution]
+# See http://wiki.openstreetmap.org/wiki/Mkgmap/help/style_rules
+# and http://wiki.openstreetmap.org/wiki/Mkgmap/help/Custom_styles
+# for more information.
+
+internet_access=* { name '${internet_access|subst:yes=>Internet} ${name|def:}' } [0x2f12 resolution 21 continue]
+
 #aeroway=airport [0x5900 resolution 20]
 aeroway=airport [0x2f04 resolution 20]
 aeroway=aerodrome [0x2f04 resolution 20]
+aeroway=helipad [0x5904 resolution 20]
 aeroway=terminal [0x2f04 resolution 20]
 
 amenity=atm { name '${operator}: ${name}' | '${name}' | '${operator}' } [0x2f06 resolution 21]
 amenity=bank { name '${name} (${operator})' | '${name}' | '${operator}' } [0x2f06 resolution 21]
+amenity=bar [0x2d02 resolution 21]
 amenity=biergarten [0x2d02 resolution 21]
-amenity=border_control [0x3006 resolution 18]
+amenity=border_control | barrier=border_control [0x3006 resolution 18]
 amenity=bus_station [0x2f08 resolution 20]
 amenity=cafe [0x2a0e resolution 21]
 #amenity=car_club [0x2f0d resolution 20]
@@ -24,11 +42,12 @@ amenity=community_center [0x3005 resolution 20]
 amenity=courthouse [0x3004 resolution 20]
 amenity=doctors [0x3002 resolution 20]
 amenity=drinking_water [0x5000 resolution 23 default_name 'Water']
+amenity=embassy & country=* { name '${country} ${name|def:}' } [0x3003 resolution 21]
+amenity=embassy & country!=* [0x3003 resolution 21 default_name 'Embassy']
 amenity=emergency_phone [0x2f12 resolution 21 default_name 'Emergency Phone']
 amenity=ferry_terminal [0x2f08 resolution 19]
 amenity=fast_food & cuisine=grill [0x2a03 resolution 20]
-amenity=fast_food & cuisine=pizza [0x2a0a resolution 20]
-amenity=fast_food & cuisine='pizza;kebab' [0x2a0a resolution 20]
+amenity=fast_food & cuisine ~ '.*pizza.*' [0x2a0a resolution 20]
 amenity=fast_food [0x2a07 resolution 21]
 amenity=fire_station [0x3008 resolution 21]
 amenity=food_court [0x2a13 resolution 20]
@@ -45,38 +64,38 @@ amenity=pharmacy [0x2e05 resolution 20]
 amenity=place_of_worship [0x2c0b resolution 21]
 amenity=police [0x3001 resolution 21]
 amenity=post_office [0x2f05 resolution 20]
-amenity=pub [0x2d02 resolution 20]
+amenity=prison [0x3007 resolution 21]
+amenity=pub [0x2d02 resolution 21]
 amenity=public_building [0x3007 resolution 21]
 amenity=recycling { name '${name} (${operator})' | '${name}' | '${operator}' }
 amenity=recycling [0x2f15 resolution 20]
-## No specific icons available
-#amenity=restaurant & cuisine=american [0x2a01 resolution 20]
-#amenity=restaurant & cuisine=asian [0x2a02 resolution 20]
-#amenity=restaurant & cuisine=bagel [0x2a0d resolution 20]
-#amenity=restaurant & cuisine=barbecue [0x2a03 resolution 20]
-#amenity=restaurant & cuisine=british [0x2a11 resolution 20]
-#amenity=restaurant & cuisine='cafe/diner' [0x2a0e resolution 21]
-#amenity=restaurant & cuisine=chinese [0x2a04 resolution 20]
-#amenity=restaurant & cuisine=deli [0x2a05 resolution 20]
-#amenity=restaurant & cuisine=french [0x2a0f resolution 20]
-#amenity=restaurant & cuisine=german [0x2a10 resolution 20]
-#amenity=restaurant & cuisine=grill [0x2a03 resolution 20]
-#amenity=restaurant & cuisine=international [0x2a06 resolution 20]
-#amenity=restaurant & cuisine=italian [0x2a08 resolution 20]
-#amenity=restaurant & cuisine=japanese [0x2a02 resolution 20]
-#amenity=restaurant & cuisine=korean [0x2a02 resolution 20]
-#amenity=restaurant & cuisine=mexican [0x2a09 resolution 20]
-#amenity=restaurant & cuisine=pizza [0x2a0a resolution 20]
-#amenity=restaurant & cuisine='pizza;kebab' [0x2a0a resolution 20]
-#amenity=restaurant & cuisine=sea_food [0x2a0b resolution 20]
-#amenity=restaurant & cuisine=spanish [0x2a09 resolution 20]
-#amenity=restaurant & cuisine=speciality [0x2a12 resolution 20]
-#amenity=restaurant & cuisine=steak [0x2a0c resolution 20]
-#amenity=restaurant & cuisine=thai [0x2a02 resolution 20]
-#amenity=restaurant & cuisine=* [0x2a13 resolution 20]
+amenity=restaurant & cuisine=american [0x2a01 resolution 20]
+amenity=restaurant & cuisine=asian [0x2a02 resolution 20]
+amenity=restaurant & cuisine=bagel [0x2a0d resolution 20]
+amenity=restaurant & cuisine=barbecue [0x2a03 resolution 20]
+amenity=restaurant & cuisine=british [0x2a11 resolution 20]
+amenity=restaurant & cuisine='cafe/diner' [0x2a0e resolution 21]
+amenity=restaurant & cuisine=chinese [0x2a04 resolution 20]
+amenity=restaurant & cuisine=deli [0x2a05 resolution 20]
+amenity=restaurant & cuisine=french [0x2a0f resolution 20]
+amenity=restaurant & cuisine=german [0x2a10 resolution 20]
+amenity=restaurant & cuisine=grill [0x2a03 resolution 20]
+amenity=restaurant & cuisine=international [0x2a06 resolution 20]
+amenity=restaurant & cuisine=italian [0x2a08 resolution 20]
+amenity=restaurant & cuisine=japanese [0x2a02 resolution 20]
+amenity=restaurant & cuisine=korean [0x2a02 resolution 20]
+amenity=restaurant & cuisine=mexican [0x2a09 resolution 20]
+amenity=restaurant & cuisine ~ '.*pizza.*' [0x2a0a resolution 20]
+amenity=restaurant & cuisine=sea_food [0x2a0b resolution 20]
+amenity=restaurant & cuisine=spanish [0x2a09 resolution 20]
+amenity=restaurant & cuisine=speciality [0x2a12 resolution 20]
+amenity=restaurant & cuisine=steak [0x2a0c resolution 20]
+amenity=restaurant & cuisine=thai [0x2a02 resolution 20]
+amenity=restaurant & cuisine=* [0x2a13 resolution 20]
 amenity=restaurant [0x2a00 resolution 20]
 amenity=school [0x2c05 resolution 20]
 amenity=shelter [0x2b05 resolution 20]
+# amenity=supermarket is superceded by shop=supermarket
 amenity=supermarket [0x2e02 resolution 20]
 amenity=taxi [0x2f17 resolution 20]
 amenity=telephone [0x2f12 resolution 21 default_name 'Telephone']
@@ -85,32 +104,74 @@ amenity=toilets & tourism=information [0x2f0c resolution 20]
 amenity=toilets [0x4e00 resolution 21 default_name 'Toilets' ]
 amenity=townhall [0x3003 resolution 21]
 amenity=university [0x2c05 resolution 21]
-amenity=zoo [0x2c07 resolution 21]
+# amenity=zoo is superceded by tourism=zoo
+amenity=zoo [0x2c07 resolution 20]
 
+landuse=forest & name=* [0x6618 resolution 21]
+landuse=basin [0x650f resolution 21]
+landuse=cemetery [0x6403 resolution 21]
+landuse=military [0x640b resolution 21]
+landuse=reservoir [0x650f resolution 21]
+landuse=village_green & name=* [0x2c06 resolution 21]
+landuse=wood & name=* [0x6618 resolution 21]
+
+healthcare=* [0x3002 resolution 20]
+
+(highway=bus_stop | railway=tram_stop | railway=halt | railway=station)
+& lit=yes & (shelter=yes | covered=yes)
+{
+  set ref='${ref|def:}(${route_ref})';
+  name '${name|def:} ${ref|def:}*${operator|def:}';
+}
+(highway=bus_stop | railway=tram_stop | railway=halt | railway=station)
+& (shelter=yes | covered=yes)
+{
+  set ref='${ref|def:}(${route_ref})';
+  name '${name|def:} ${ref|def:}+${operator|def:}';
+}
+(highway=bus_stop | railway=tram_stop | railway=halt | railway=station)
+& (shelter=no | covered=no)
+{
+  set ref='${ref|def:}(${route_ref})';
+  name '${name|def:} ${ref|def:}-${operator|def:}';
+}
+(highway=bus_stop | railway=tram_stop | railway=halt | railway=station)
+& (name=*|ref=*|operator=*|route_ref=*)
+{
+  set ref='${ref|def:}(${route_ref})';
+  name '${name|def:} ${ref|def:} ${operator|def:}';
+}
+
+# typ editor disagrees about id: 0x2f08 vs. 0x2f17
 highway=bus_stop [0x2f08 resolution 21]
 
 highway=motorway_junction { name '${ref} ${name}' | '${ref}' | '${name}' }
-highway=motorway_junction [0x2000 resolution 16]
+highway=motorway_junction [0x2000 resolution 20]
 
 highway=services { name '${ref} ${name}' | '${ref}' | '${name}' }
-highway=services [0x210f resolution 16]
+highway=services [0x210f resolution 20]
 
 historic=museum [0x2c02 resolution 20]
-historic=archaeological_site [0x2c02 resolution 21]
+historic=archaeological_site | historic=ruins [0x2c02 resolution 21]
 historic=memorial [0x2c02 resolution 20]
 
+leisure=common & name=* [0x2c06 resolution 21]
+leisure=garden & name=* [0x2c06 resolution 21]
 leisure=golf_course [0x2d05 resolution 21]
 leisure=ice_rink [0x2d08 resolution 20]
 leisure=marina [0x4300 resolution 21]
+leisure=nature_reserve & name=* [0x6612 resolution 18]
 leisure=park [0x2c06 resolution 21]
-leisure=pitch [0x2c08 resolution 21]
+leisure=pitch { name '${name} (${sport})' | '${name}' } [0x2c08 resolution 21]
 leisure=playground [0x2c06 resolution 21]
-leisure=sports_center | leisure=sports_centre [0x2d0a resolution 21]
-leisure=stadium [0x2c08 resolution 21]
-leisure=track [0x2c08 resolution 21]
+leisure=recreation_ground [0x2c08 resolution 21]
+leisure=sports_center | leisure=sports_centre { name '${name} (${sport})' | '${name}' } [0x2d0a resolution 20]
+leisure=stadium { name '${name} (${sport})' | '${name}' } [0x2c08 resolution 21]
+leisure=track { name '${name} (${sport})' | '${name}' } [0x2c08 resolution 21]
 leisure=water_park [0x2b04 resolution 21]
 
 man_made=tower [0x6411 resolution 21]
+# SRT: addition, sanctioned by typ file editor
 man_made=lighthouse [0x1600 resolution 22]
 
 # Edge 705 displays 0x650a,0x6511,0x6512,0x6513,0x6603,0x6614 as hollow white circles, no menu
@@ -121,11 +182,11 @@ natural=glacier [0x650a resolution 21]
 natural=peak {name '${name|def:}${ele|height:m=>ft|def:}' } [0x6616 resolution 18]
 natural=rock [0x6614 resolution 21]
 natural=spring [0x6511 resolution 21]
-#natural=stream [0x6512 resolution 21]
+natural=stream [0x6512 resolution 21]
 natural=volcano [0x2c0c resolution 21]
-natural=water [0x6603 resolution 21]
-natural=wetland [0x6513 resolution 21]
-natural=wood [0x6618 resolution 21]
+natural=water & name=* [0x6603 resolution 21]
+natural=wetland & name=* [0x6513 resolution 21]
+natural=wood & name=* [0x6618 resolution 21]
 
 place=city [0x0400 resolution 17]
 place=hamlet [0x1100 resolution 20]
@@ -147,14 +208,14 @@ shop=bakers [0x2e02 resolution 20]
 shop=bakery [0x2e02 resolution 20]
 shop=beauty [0x2f10 resolution 20]
 shop=bicycle [0x2f13 resolution 20]
-#shop=boat [0x2f09 resolution 20]
+shop=boat [0x2f09 resolution 20]
 shop=butcher [0x2e0c resolution 20]
 shop=car [0x2f07 resolution 20]
 shop=car_dealer [0x2f07 resolution 20]
 shop=car_parts [0x2f07 resolution 20]
 shop=car_rental [0x2f02 resolution 20]
 shop=car_repair [0x2f03 resolution 20]
-#shop=car_wrecker [0x2f0a resolution 20]
+shop=car_wrecker [0x2f0a resolution 20]
 shop=chemist [0x2e05 resolution 20]
 shop=clothes [0x2e07 resolution 20]
 shop=computer [0x2e0b resolution 20]
@@ -178,7 +239,7 @@ shop=* [0x2e0c resolution 20]
 
 sport=9pin [0x2d07 resolution 20]
 sport=10pin [0x2d07 resolution 20]
-#sport=airport [0x2d0b resolution 19]
+sport=airport [0x2d0b resolution 19]
 sport=multi [0x2d0a resolution 20]
 sport=skating [0x2d08 resolution 20]
 sport=skiing [0x2d06 resolution 20]
@@ -191,22 +252,28 @@ tourism=artwork [0x2c04 resolution 20]
 tourism=aquarium [0x2c07 resolution 20]
 tourism=camp_site [0x2b03 resolution 20]
 tourism=caravan_site [0x2b03 resolution 20]
+tourism=chalet { name '${name}' | '${ref}' } [0x2b02 resolution 20]
 tourism=guest_house [0x2b02 resolution 20]
 tourism=hostel [0x2b02 resolution 20]
-tourism=hotel { name '${name} ${operator}' | '${name}' | '${operator}' } [0x2b01 resolution 20]
+tourism=hotel | tourism=motel { name '${name|def:}(${stars}*)${operator|def:}' | '${name} ${operator}' | '${name}' | '${operator}' } [0x2b01 resolution 20]
+# SRT: addition (wegweiser)
 tourism=information & information=board [0x7204 resolution 20]
-tourism=information [0x7110 resolution 20]
+# SRT: different id 0x7110 vs. 0x2f0c (which is the toilet symbol)
+tourism=information {name '${name} - ${description} (${operator})'|
+'${name} - (${description})' | '${name}' | '${description}' |
+'${operator}' | '${ref}'} [0x7110 resolution 20]
 tourism=motel [0x2b01 resolution 20]
 tourism=museum [0x2c02 resolution 20]
 tourism=picnic_site [0x4a00 resolution 20]
-#tourism=resort [0x2b04 resolution 20]
+tourism=resort [0x2b04 resolution 20]
 tourism=theme_park [0x2c01 resolution 20]
-tourism=viewpoint [0x2c04 resolution 20]
+tourism=viewpoint {name '${name} - ${description}' | '${name}'} [0x2c04 resolution 20]
 tourism=wine_cellar [0x2c0a resolution 20]
 tourism=zoo [0x2c07 resolution 20]
 
 barrier=bollard | barrier=bus_trap
     {add access = no; add bicycle = yes; add foot = yes} [0x660f resolution 21]
+# SRT: for cycle_barrier see below
 barrier=block | barrier=stile | barrier=kissing_gate
     {add access = no; add foot = yes} [0x660f resolution 21]
 

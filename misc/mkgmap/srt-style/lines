@@ -1,4 +1,19 @@
+# Below the comment from the original mkgmap style file
+# (svn revision 1657)
+# Some changes were applied to the default.
+
+# -------------------------------------------------------------------
+# This is the default mkgmap style file for converting OSM ways
+# into Garmin lines.
+# Any line prefaced with # is a comment and will not be applied.
+# Each line is a rule, of the generalised format:
+#  OSM_tag(s)_to_match  [Garmin_type_code resolution]
+# See http://wiki.openstreetmap.org/wiki/Mkgmap/help/style_rules
+# and http://wiki.openstreetmap.org/wiki/Mkgmap/help/Custom_styles
+# for more information.
+
 aeroway=runway [0x27 resolution 20]
+aeroway=taxiway [0x27 resolution 24]
 
 # Contours take their name from the elevation setting.
 contour=elevation & contour_ext=elevation_minor
@@ -16,24 +31,41 @@ contour=elevation | contour_ext=elevation
 
 # Set highway names to include the reference if there is one
 highway=motorway {name '${ref|highway-symbol:hbox} ${name}' | '${ref|highway-symbol:hbox}' | '${name}' }
-highway=trunk {name '${ref|highway-symbol:hbox} ${name}' | '${ref|highway-symbol:hbox}' | '${name}' }
-highway=primary {name '${ref|highway-symbol:box} ${name}' | '${ref|highway-symbol:box}' | '${name}' }
-bbbike:render=highway_primary {name '${ref|highway-symbol:box} ${name}' | '${ref|highway-symbol:box}' | '${name}' }
-highway=secondary {name '${ref|highway-symbol:oval} ${name}' | '${ref|highway-symbol:oval}' | '${name}' }
-bbbike:render=highway_secondary {name '${ref|highway-symbol:oval} ${name}' | '${ref|highway-symbol:oval}' | '${name}' }
+highway=trunk {name '${ref|highway-symbol:hbox} ${name}' | '${ref|highway-symbol:hbox}' | '${name}'; add display_name = '${name} (${ref})' }
+highway=primary {name '${ref|highway-symbol:box} ${name}' | '${ref|highway-symbol:box}' | '${name}'; add display_name = '${name} (${ref})' }
+bbbike:render=highway_primary {name '${ref|highway-symbol:box} ${name}' | '${ref|highway-symbol:box}' | '${name}'; add display_name = '${name} (${ref})' }
+highway=secondary {name '${ref|highway-symbol:oval} ${name}' | '${ref|highway-symbol:oval}' | '${name}'; add display_name = '${name} (${ref})' }
+bbbike:render=highway_secondary {name '${ref|highway-symbol:oval} ${name}' | '${ref|highway-symbol:oval}' | '${name}'; add display_name = '${name} (${ref})' }
 highway=* {name '${ref} ${name}' | '${ref}' | '${name}' }
 
+# Flag unpaved roads.
+highway=*
+& (surface=cobblestone | surface=compacted | surface=dirt |
+   surface=earth | surface=grass | surface=grass_paver |
+   surface=gravel | surface=grit | surface=ground | surface=mud |
+   surface=pebblestone | surface=sand | surface=unpaved |
+   mtb:scale=* |
+   tracktype ~ 'grade[2-6]' |
+   smoothness ~ '.*(bad|horrible|impassable)' |
+   sac_scale ~ '.*(mountain|alpine)_hiking' |
+   sport=via_ferrata)
+{ add mkgmap:unpaved=1 }
+(highway=bridleway | highway=path | highway=track | highway=unsurfaced)
+& surface!=* & tracktype!=* & smoothness!=* & sac_scale!=*
+{ add mkgmap:unpaved=1 }
+
+# Convert generic path to most specific
+highway=path & bicycle=designated {set highway=cycleway }
+highway=path & horse=designated {set highway=bridleway }
+highway=path & foot=designated {set highway=footway }
+
+# Roundabouts
 junction=roundabout & highway=trunk [0x0c road_class=3 road_speed=5 resolution 16]
 junction=roundabout & highway=primary [0x0c road_class=3 road_speed=4 resolution 19]
 junction=roundabout & highway=secondary [0x0c road_class=2 road_speed=3 resolution 20]
 junction=roundabout & highway=tertiary [0x0c road_class=1 road_speed=3 resolution 20]
 junction=roundabout & highway=unclassified [0x0c road_class=1 road_speed=2 resolution 21]
 junction=roundabout [0x0c road_class=0 road_speed=1 resolution 21]
-
-# Convert generic path to most specific
-highway=path & bicycle=designated {set highway=cycleway }
-highway=path & horse=designated {set highway=bridleway }
-highway=path & foot=designated {set highway=footway }
 
 cycleway=* {name '${name}' }
 psv=* {name '${name}' }
@@ -56,39 +88,50 @@ bbbike:quality=Q1 [0x39 resolution 23]
 bbbike:quality=Q2 [0x38 resolution 23]
 bbbike:quality=Q3 [0x37 resolution 23]
 
-highway=bridleway {add access = no; add bicycle = yes; add foot = yes} [0x16 road_class=0 road_speed=0 resolution 23]
-highway=byway [0x16 road_class=0 road_speed=0 resolution 23]
-highway=cycleway {add access = no; add bicycle = yes; add foot = yes} [0x16 road_class=0 road_speed=1 resolution 21]
-highway=footway {add access = no; add foot = yes} [0x16 road_class=0 road_speed=0 resolution 23]
-highway=minor [0x06 road_class=1 road_speed=2 resolution 21]
-highway=motorway {add oneway = yes; add bicycle = no; add foot = no } [0x01 road_class=4 road_speed=6 resolution 12]
-highway=motorway_link {add oneway = yes; add bicycle = no; add foot = no } [0x09 road_class=4 road_speed=3 resolution 16]
-highway=pedestrian & area!=yes {add access = no; add foot = yes} [0x06 road_class=0 road_speed=0 resolution 22]
+# Ways that may or may not be useable
+
+# Treat ways under construction as highway=path
+highway=construction | highway=* & construction=* {add access = no; add bicycle = yes; add foot = yes; add mkgmap:dead-end-check = false } [0x16 road_class=0 road_speed=1 resolution 23]
+# Treat disused ways as highway=service, but at lower road_speed.
+highway=* & disused=yes [0x07 road_class=0 road_speed=1 resolution 22]
+
+# Ways sorted roughly by descending order of class
+highway=motorway {add oneway = yes; add bicycle = no; add foot = no } [0x01 road_class=4 road_speed=7 resolution 14]
+highway=motorway_link {add oneway = yes; add bicycle = no; add foot = no } [0x09 road_class=3 road_speed=2 resolution 16]
+highway=trunk  {add bicycle = no; add foot = no} [0x02 road_class=4 road_speed=5 resolution 16]
+highway=trunk_link {add bicycle = no; add foot = no} [0x09 road_class=3 road_speed=2 resolution 18]
+highway=* & motorroad=yes {add bicycle = no; add foot = no} [0x02 road_class=4 road_speed=4 resolution 16]
 highway=primary & bicycle=no [0x123 road_class=3 road_speed=4 resolution 19]
 highway=primary & oneway=yes [0x103 road_class=3 road_speed=4 resolution 19]
 highway=primary [0x03 road_class=3 road_speed=4 resolution 19]
 bbbike:render=highway_primary [0x03 road_class=1 road_speed=3 resolution 19]
-highway=primary_link [0x08 road_class=3 road_speed=3 resolution 19]
-(highway=residential | highway=living_street) & bicycle=no [0x126 road_class=0 road_speed=2 resolution 21]
-(highway=residential | highway=living_street) & oneway=yes [0x106 road_class=0 road_speed=2 resolution 21]
-highway=residential | highway=living_street [0x06 road_class=0 road_speed=2 resolution 21]
+highway=primary_link [0x08 road_class=3 road_speed=1 resolution 19]
 highway=secondary & bicycle=no [0x124 road_class=2 road_speed=3 resolution 20]
 highway=secondary & oneway=yes [0x104 road_class=2 road_speed=3 resolution 20]
 highway=secondary [0x04 road_class=2 road_speed=3 resolution 20]
 bbbike:render=highway_secondary [0x04 road_class=1 road_speed=3 resolution 20]
-highway=secondary_link [0x08 road_class=2 road_speed=2 resolution 20]
-highway=path {add access = no; add bicycle = yes; add foot = yes} [0x16 road_class=0 road_speed=0 resolution 23]
-highway=service [0x07 road_class=0 road_speed=1 resolution 22]
-highway=steps {add access = no; add foot = yes} [0x16 road_class=0 road_speed=0 resolution 23]
+highway=secondary_link [0x08 road_class=2 road_speed=1 resolution 20]
 highway=tertiary & bicycle=no [0x125 road_class=1 road_speed=3 resolution 20]
 highway=tertiary & oneway=yes [0x105 road_class=1 road_speed=3 resolution 20]
 highway=tertiary [0x05 road_class=1 road_speed=3 resolution 20]
-highway=tertiary_link [0x08 road_class=1 road_speed=2 resolution 20]
+highway=tertiary_link [0x08 road_class=1 road_speed=1 resolution 20]
+highway=minor [0x06 road_class=1 road_speed=3 resolution 21]
+highway=unclassified [0x06 road_class=0 road_speed=3 resolution 21]
+highway=pedestrian & area!=yes {add access = no; add foot = yes} [0x06 road_class=0 road_speed=0 resolution 22]
+(highway=residential | highway=living_street) & bicycle=no [0x126 road_class=0 road_speed=2 resolution 21]
+(highway=residential | highway=living_street) & oneway=yes [0x106 road_class=0 road_speed=2 resolution 21]
+highway=living_street [0x06 road_class=0 road_speed=1 resolution 21]
+highway=residential | highway=living_street [0x06 road_class=0 road_speed=2 resolution 21]
+highway=bridleway {add access = no; add bicycle = yes; add foot = yes} [0x16 road_class=0 road_speed=0 resolution 23]
+highway=byway [0x16 road_class=0 road_speed=0 resolution 23]
+highway=service [0x07 road_class=0 road_speed=2 resolution 22]
+highway=cycleway {add access = no; add bicycle = yes; add foot = yes} [0x16 road_class=0 road_speed=1 resolution 21]
+highway=footway {add access = no; add foot = yes} [0x16 road_class=0 road_speed=0 resolution 23]
+highway=path {add access = no; add bicycle = yes; add foot = yes} [0x16 road_class=0 road_speed=1 resolution 23]
+highway=steps {add access = no; add foot = yes} [0x16 road_class=0 road_speed=0 resolution 23]
 highway=track [0x0a road_class=0 road_speed=1 resolution 21]
-highway=trunk  [0x02 road_class=3 road_speed=5 resolution 16]
-highway=trunk_link [0x09 road_class=3 road_speed=3 resolution 16]
-highway=unclassified | highway=road [0x06 road_class=1 road_speed=2 resolution 21]
 highway=unsurfaced [0x0a road_class=0 road_speed=1 resolution 21]
+highway=road { add mkgmap:dead-end-check = false} [0x06 road_class=0 road_speed=1 resolution 21]
 
 # Mop up any unrecognised highway types
 highway=* & area!=yes [0x07 ]
@@ -97,14 +140,16 @@ natural=coastline [0x15 resolution 12]
 power=line [0x29 resolution 20]
 
 railway=* & abandoned=yes [0x3e resolution 17]
+railway=abandoned [0x3e resolution 17]
+#railway=abandoned [0x0a road_class=0 road_speed=1 resolution 21]
 railway=light_rail [0x2d resolution 17]
 railway=rail [0x14 resolution 17]
 railway=subway [0x2e resolution 17]
 railway=tram [0x14 resolution 18]
 railway=platform {add access = no; add foot = yes} [0x16 road_class=0 road_speed=0 resolution 23]
 
-# XXX 0x1a or 0x1b?
-route=ferry [0x1a road_class=0 road_speed=0 resolution 18]
+# note: using 0x1a instead of the default 0x1b (which seems to be wrong according to the typ file editor)
+route=ferry {add mkgmap:ferry=1} [0x1a road_class=3 road_speed=0 resolution 18]
 
 waterway=canal [0x1f resolution 21]
 waterway=drain [0x1f resolution 22]
@@ -115,7 +160,12 @@ man_made=pipeline {name '${operator}'} [0x28 resolution 23]
 
 # The following boundary styles are after the highway rules because ways
 # are frequently tagged with both and we want the highway to take priority.
-boundary=administrative [0x1c resolution 18]
+boundary=administrative { name '${mkgmap:boundary_name}' }
+boundary=administrative & admin_level<3 [0x1e resolution 16]
+boundary=administrative & admin_level<5 [0x1d resolution 18]
+boundary=administrative & admin_level<7 [0x1c resolution 20]
+boundary=administrative & admin_level<9 [0x1c resolution 21]
+boundary=administrative [0x1c resolution 22]
 boundary=national [0x1e resolution 17]
 boundary=political [0x1c resolution 17]
 
