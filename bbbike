@@ -13816,7 +13816,7 @@ sub show_info {
 # und diese zu der normalen Länge dazuaddiert werden.
 	    if ($r) {
 		if ($r->[Strassen::CAT()] =~ /^F:/) {
-		    $area = Strassen::area($r) / 1_000_000;
+		    $area = Strassen::area($r);
 #XXX Noch nicht --- siehe Kommentare in wasserstrassen-orig und data/Makefile
 #  	    # Inseln abziehen
 #  	    $s->set_index($index + 1);
@@ -13981,8 +13981,16 @@ sub show_info {
 	    $info_text->insert("end", "\n\n");
 	}
 	if (defined $area) {
+	    my($area_value, $area_unit);
+	    if ($area > 10_000) {
+		$area_value = $area / 1_000_000;
+		$area_unit = 'km²';
+	    } else {
+		$area_value = $area;
+		$area_unit = 'm²';
+	    }
 	    $info_text->insert("end", M("Fläche") . ":", "bold",
-			       sprintf("\t%.2f km²", $area) . M(" (dieses Teilstück)"), undef); # XXX Msg
+			       sprintf("\t%.2f %s", $area_value, $area_unit) . M(" (dieses Teilstück)"), undef); # XXX Msg
 	    $info_text->insert("end", "\n\n");
 	}
 	if (defined $total_len) {
