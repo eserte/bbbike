@@ -1005,17 +1005,7 @@ userdel	2 16975,1262 16849,1437
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20110714.0755.351214.html',
-         'until' => 1311544800,
-         'text' => 'Treptower Festtage 22.. Juli 2011 - 24. Juli 2011',
-         'from' => 1311285600,
-         'id' => 1010,
-         'data' => 'userdel	2::temp 14464,9927 14500,9856 14671,9759 14697,9726 14910,9643
-userdel	2::temp 14500,9856 14483,9843
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1743,17 +1733,7 @@ userdel	2::temp -8087,-1453 -8151,-1470 -8306,-1454
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_017116',
-         'until' => 1312117200,
-         'text' => 'Pasewalker Str. (Pankow): Baustelle, Fahrtrichtung gesperrt (bis Ende 07/2011) stadteinwärts zwischen Eweststr.und Auffahrt A114, ebenso Einbahnstraße: Schloßallee zwischen Pasewalker Str. und Grumbkowstr., u.U. Ausweichen auf Gehweg möglich; 02.06.2009 06:47 Uhr bis 31.07.2011 15:00 Uhr ',
-         'from' => 1243831620,
-         'id' => 1686,
-         'data' => 'userdel	q4::inwork; 12095,20832 12076,20731 12030,20490 12008,20368 12000,20327 11984,20246 11963,20136 11931,19965 11907,19838 11907,19749
-userdel	q4::inwork; 11883,19739 11730,19684
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2451,7 +2431,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        {
          'until' => undef,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Juli bis 22.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im August bis 21.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'from' => undef,
          'id' => 2068,
          'data' => '(Eingang Columbiadamm - Rundkurs auf dem Flughafen Tempelhof)	2::night 10691,8532 10640,8366 10598,8270 10575,8218
@@ -2755,26 +2735,8 @@ userdel	q4::inwork 425,8766 490,8716
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'source_id' => 'IM_017117',
-         'until' => 1311976800,
-         'text' => 'Kastanienallee (Prenzlauer Berg): Baustelle, Fahrtrichtung gesperrt (bis Ende 07/2011) Richtung Fehrbelliner Str. zwischen Schönhauser Allee und Oderberger Str., 11.04.2011 06:50 Uhr bis 29.07.2011 ',
-         'from' => 1302411000,
-         'id' => 2198,
-         'data' => 'userdel	q4::inwork; 10881,15047 10838,14962 10723,14772
-',
-         'type' => 'handicap'
-       },
-       {
-         'source_id' => 'LS/O-SG33-E/10/214-10',
-         'until' => 1312149600,
-         'text' => 'Schenkenberg: L26: grundhafter Ausbau der L 26 Prenzlau - A20, 02.05.2011 bis 31.07.2011 ',
-         'from' => 1304287200,
-         'id' => 2199,
-         'data' => 'userdel	2::inwork 45393,105220 45906,105450 46581,105900 47587,106693
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        undef,
        undef,
        undef,
@@ -2908,28 +2870,10 @@ userdel	q4::inwork; 10264,12826 10166,12777 10132,12941
        },
        undef,
        undef,
-       {
-         'source_id' => 'IM_017476',
-         'until' => 1311343200,
-         'text' => 'Stargarder Str. (Prenzlauer Berg): Baustelle, Fahrtrichtung gesperrt (bis Ende 07/11) Richtung Prenzlauer Allee zwischen Schönhauser Allee und Pappelallee, 20.06.2011 09:00 Uhr bis 22.07.2011 16:00 Uhr ',
-         'from' => 1308466800,
-         'id' => 2232,
-         'data' => 'userdel	q4::inwork; 10953,15787 11086,15772 11158,15739 11301,15668
-',
-         'type' => 'handicap'
-       },
        undef,
        undef,
-       {
-         'source_id' => 'http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20110623.1015.348936.html',
-         'until' => 1312164000,
-         'text' => 'Sperrung des Bahnüberganges in der Lemkestraße: 29.07.2011 22:00 Uhr bis 01.08.2011 04:00 Uhr',
-         'from' => 1311883200,
-         'id' => 2235,
-         'data' => 'userdel	2::inwork 25149,12266 25109,12196 25072,12107
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        {
          'source_id' => 'http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20110623.1015.348936.html',
          'until' => 1314583200,
@@ -2962,16 +2906,7 @@ userdel	q4::inwork; 10264,12826 10166,12777 10132,12941
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'source_id' => 'LS/W-SG33-P/11/412',
-         'until' => 1311199200,
-         'text' => 'Kleinmachnow: L77: Instandsetzungsarbeiten OL Kleinmachnow , Friedensbrücke 04.07.-20.07.2011 Vollsperrung ',
-         'from' => 1309644000,
-         'id' => 2241,
-         'data' => 'userdel	2::inwork -1378,-1022 -1348,-1098
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2987,8 +2922,8 @@ userdel	q4::inwork; 10264,12826 10166,12777 10132,12941
        },
        {
          'source_id' => 'INKO_096636',
-         'until' => 1311264000,
-         'text' => 'Geschwister-Scholl-Str./Tucholskystr. (Mitte): Bauarbeiten, Brücke vollständig gesperrt (bis Ende 07/11) in beiden Richtungen Höhe Ebertsbrücke, 08.07.2011 07:00 Uhr bis 21.07.2011 18:00 Uhr ',
+         'until' => 1313337600,
+         'text' => 'Geschwister-Scholl-Str./Tucholskystr. (Mitte): Bauarbeiten, Brücke vollständig gesperrt (bis Mitte 08/11) in beiden Richtungen Höhe Ebertsbrücke, 08.07.2011 07:00 Uhr bis 14.08.2011 18:00 Uhr ',
          'from' => 1310014800,
          'id' => 2247,
          'data' => 'userdel	2::inwork 9524,12950 9529,12925
@@ -3028,16 +2963,7 @@ userdel	q4::inwork 2295,20358 2362,20218 2402,20126
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20110711.0715.350961.html',
-         'until' => 1312142400,
-         'text' => 'Einbahnstraßenregelung in der Neuen Krugallee zwischen Baumschulenstr. und Rodelbergweg vom 29.07.2011, 8:00 Uhr bis 31.07.2011, 22:00 Uhr',
-         'from' => 1311832800,
-         'id' => 2251,
-         'data' => 'userdel	q4::inwork; 16507,7254 16615,7062
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1107/nachricht4418.html',
          'until' => 1331568000,
@@ -3045,6 +2971,86 @@ userdel	q4::inwork 2295,20358 2362,20218 2402,20126
          'from' => 1310763434,
          'id' => 2252,
          'data' => 'userdel	q4::inwork 13953,23497 14173,23426
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_016196',
+         'until' => 1316786400,
+         'text' => 'Köpenicker Str. (Altglienicke): Baustelle, für beide Richtungen nur ein Fahrstreifen abwechselnd frei (bis Ende 09/11) in beiden Richtungen zwischen Korkedamm und Semmelweisstr., 09.08.2010 07:00 Uhr bis 23.09.2011 16:00 Uhr ',
+         'from' => 1281243600,
+         'id' => 2253,
+         'data' => 'userdel	q4::inwork 19812,1923 19840,2010 19939,2074 20100,2247
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'LS/O-SG33-E/11/084',
+         'until' => 1314828000,
+         'text' => 'Eberswalde (Stadt): B167: Umbau Konten Freienwalder Straße/Saarstraße OD Eberswalde Saarstraße gesperrt, 25.07.2011 bis 31.08.2011 ',
+         'from' => 1312229266,
+         'id' => 2254,
+         'data' => 'userdel	q4::inwork 38504,47638 39129,47518
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'INKO_107796',
+         'until' => 1314025200,
+         'text' => 'Gartenstr. (Mitte): Baustelle, Fahrtrichtung gesperrt (bis Ende 08/11) Richtung Invalidenstr. zwischen Bernauer Str. und Invalidenstr., 01.08.2011 07:30 Uhr bis 22.08.2011 17:00 Uhr ',
+         'from' => 1312090200,
+         'id' => 2255,
+         'data' => 'userdel	q4::inwork; 9224,14169 9383,13978
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => '116501481',
+         'until' => 1313791200,
+         'text' => 'Oranienburg: B273: Kampfmitteluntersuchung OL Oranienburg, 01.08.2011 bis 19.08.2011 ',
+         'from' => 1312229500,
+         'id' => 2256,
+         'data' => 'userdel	2::inwork -1887,38134 -2179,38179
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'INKO_108243',
+         'until' => 1312642800,
+         'text' => 'Pastor-Niemöller-Platz (Niederschönhausen): Baustelle, Einmündung Friedrichs-Engels-Str. vollständig gesperrt, Staugefahr (bis Anfang 08/11) im Kreisverkehr Einmündung Friedrich-Engels-Str., 25.07.2011 07:00 Uhr bis 06.08.2011 17:00 Uhr ',
+         'from' => 1311483600,
+         'id' => 2257,
+         'data' => 'userdel	q4::inwork 9826,19382 9791,19363 9789,19329
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'INKO_108454',
+         'until' => 1313161200,
+         'text' => 'Späthstr. (Treptow): Baustelle, Straße vollständig gesperrt (bis Mitte 08/11) in beiden Richtungen zwischen Königsheideweg und Neue Späthstr., 01.08.2011 07:00 Uhr bis 12.08.2011 17:00 Uhr ',
+         'from' => 1312088400,
+         'id' => 2258,
+         'data' => 'userdel	q4::inwork 15363,5668 15183,5480 15038,5235 14988,5214 14808,5202 14744,5211
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20110727.1340.352586.html',
+         'until' => 1313359200,
+         'text' => 'Zabel-Krüger-Damm: Bauarbeiten, Einbahnstraßenregelung, auch in der Schonacher Str., vom 01.08.2011 bis voraussichtlich 14.08.2011',
+         'from' => 1312063200,
+         'id' => 2259,
+         'data' => 'userdel	q4::inwork; 4718,22384 4800,22418 4898,22459 5006,22507 4919,22658
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20110727.1340.352585.html',
+         'until' => 1314568800,
+         'text' => 'Straßenbauarbeiten in der Chris-Gueffroy-Allee: Vollsperrung der Fahrbahn, 15.8.2011-28.8.2011',
+         'from' => 1313272800,
+         'id' => 2260,
+         'data' => 'userdel	q4::inwork 15183,5480 15165,5506 15146,5592 15143,5705 15141,5774 15141,5800 15141,5870 15143,5936
 ',
          'type' => 'handicap'
        }

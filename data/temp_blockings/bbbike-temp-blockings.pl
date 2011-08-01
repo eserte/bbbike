@@ -19357,8 +19357,8 @@ userdel	q4::inwork; 19904,3464 20012,3532
 EOF
      },
      { from  => 1310014800, # 2011-07-07 07:00
-       until => 1311264000, # 2011-07-21 18:00
-       text  => 'Geschwister-Scholl-Str./Tucholskystr. (Mitte): Bauarbeiten, Brücke vollständig gesperrt (bis Ende 07/11) in beiden Richtungen Höhe Ebertsbrücke, 08.07.2011 07:00 Uhr bis 21.07.2011 18:00 Uhr ',
+       until => 1313337600, # 2011-08-14 18:00
+       text  => 'Geschwister-Scholl-Str./Tucholskystr. (Mitte): Bauarbeiten, Brücke vollständig gesperrt (bis Mitte 08/11) in beiden Richtungen Höhe Ebertsbrücke, 08.07.2011 07:00 Uhr bis 14.08.2011 18:00 Uhr ',
        type  => 'gesperrt',
        source_id => 'INKO_096636',
        data  => <<EOF,
@@ -19424,6 +19424,78 @@ EOF
        source_id => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1107/nachricht4418.html',
        data  => <<EOF,
 userdel	q4::inwork 13953,23497 14173,23426
+EOF
+     },
+     { from  => 1281243600, # 2010-08-08 07:00
+       until => 1316786400, # 2011-09-23 16:00
+       text  => 'Köpenicker Str. (Altglienicke): Baustelle, für beide Richtungen nur ein Fahrstreifen abwechselnd frei (bis Ende 09/11) in beiden Richtungen zwischen Korkedamm und Semmelweisstr., 09.08.2010 07:00 Uhr bis 23.09.2011 16:00 Uhr ',
+       type  => 'handicap',
+       source_id => 'IM_016196',
+       data  => <<EOF,
+userdel	q4::inwork 19812,1923 19840,2010 19939,2074 20100,2247
+EOF
+     },
+     { from  => 1312229266, # 2011-08-01 22:07
+       until => 1314828000, # 2011-09-01 00:00
+       text  => 'Eberswalde (Stadt): B167: Umbau Konten Freienwalder Straße/Saarstraße OD Eberswalde Saarstraße gesperrt, 25.07.2011 bis 31.08.2011 ',
+       type  => 'handicap',
+       source_id => 'LS/O-SG33-E/11/084',
+       data  => <<EOF,
+userdel	q4::inwork 38504,47638 39129,47518
+EOF
+     },
+     { from  => 1312090200, # 2011-07-31 07:30
+       until => 1314025200, # 2011-08-22 17:00
+       text  => 'Gartenstr. (Mitte): Baustelle, Fahrtrichtung gesperrt (bis Ende 08/11) Richtung Invalidenstr. zwischen Bernauer Str. und Invalidenstr., 01.08.2011 07:30 Uhr bis 22.08.2011 17:00 Uhr ',
+       type  => 'handicap',
+       source_id => 'INKO_107796',
+       data  => <<EOF,
+userdel	q4::inwork; 9224,14169 9383,13978
+EOF
+     },
+     { from  => 1312229500, # 2011-08-01 22:11
+       until => 1313791200, # 2011-08-20 00:00
+       text  => 'Oranienburg: B273: Kampfmitteluntersuchung OL Oranienburg, 01.08.2011 bis 19.08.2011 ',
+       type  => 'gesperrt',
+       source_id => '116501481',
+       data  => <<EOF,
+userdel	2::inwork -1887,38134 -2179,38179
+EOF
+     },
+     { from  => 1311483600, # 2011-07-24 07:00
+       until => 1312642800, # 2011-08-06 17:00
+       text  => 'Pastor-Niemöller-Platz (Niederschönhausen): Baustelle, Einmündung Friedrichs-Engels-Str. vollständig gesperrt, Staugefahr (bis Anfang 08/11) im Kreisverkehr Einmündung Friedrich-Engels-Str., 25.07.2011 07:00 Uhr bis 06.08.2011 17:00 Uhr ',
+       type  => 'handicap',
+       source_id => 'INKO_108243',
+       data  => <<EOF,
+userdel	q4::inwork 9826,19382 9791,19363 9789,19329
+EOF
+     },
+     { from  => 1312088400, # 2011-07-31 07:00
+       until => 1313161200, # 2011-08-12 17:00
+       text  => 'Späthstr. (Treptow): Baustelle, Straße vollständig gesperrt (bis Mitte 08/11) in beiden Richtungen zwischen Königsheideweg und Neue Späthstr., 01.08.2011 07:00 Uhr bis 12.08.2011 17:00 Uhr ',
+       type  => 'handicap',
+       source_id => 'INKO_108454',
+       data  => <<EOF,
+userdel	q4::inwork 15363,5668 15183,5480 15038,5235 14988,5214 14808,5202 14744,5211
+EOF
+     },
+     { from  => 1312063200, # 2011-07-31 00:00
+       until => 1313359200, # 2011-08-15 00:00
+       text  => 'Zabel-Krüger-Damm: Bauarbeiten, Einbahnstraßenregelung, auch in der Schonacher Str., vom 01.08.2011 bis voraussichtlich 14.08.2011',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20110727.1340.352586.html',
+       data  => <<EOF,
+userdel	q4::inwork; 4718,22384 4800,22418 4898,22459 5006,22507 4919,22658
+EOF
+     },
+     { from  => 1313272800, # 2011-08-14 00:00
+       until => 1314568800, # 2011-08-29 00:00
+       text  => 'Straßenbauarbeiten in der Chris-Gueffroy-Allee: Vollsperrung der Fahrbahn, 15.8.2011-28.8.2011',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20110727.1340.352585.html',
+       data  => <<EOF,
+userdel	q4::inwork 15183,5480 15165,5506 15146,5592 15143,5705 15141,5774 15141,5800 15141,5870 15143,5936
 EOF
      },
     );

@@ -151,6 +151,10 @@ Karl-Liebknecht-Str.: Fahrradangebotsstreifen wird erstellt	?::inwork 10437,1270
 #: section ignorieren vvv
 #: section Straßen in Bau und Planung vvv
 # 
+#: next_check: 2011-09-02
+#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1107/nachricht4429.html
+Park am Gleisdreieck, Ostpark: Eröffnung am 2011-09-02, genaue Grenzen?	? 8679,10208 8746,10202 8724,9726 8545,9574 8357,9642 8464,9907 8581,9912
+# 
 #: last_checked: 2011-07-09 vvv
 #: next_check: 2012-06-01 vvv
 #: XXX eventuell wird hier auch die Waadter Zeile (auch in Berlin.coords.data) irgendwann existieren
@@ -498,6 +502,9 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 # Das heißt diese Strecken werden nicht bei einer erweiterten Suche aufgenommen
 # und dem CGI-Benutzer auch nicht präsentiert.
 # 
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/32re.pdf/file
+#: next_check: 2011-09-01
+Ortolfstr.: Teilabschnitt wird für den Kfz-Verkehr gesperrt werden, wo genau, wann genau?	? 18997,-351 19040,-250
 Wegedornbrücke: N oder NH? Radwege?	? 20385,593 20442,564 20510,530 20534,501
 Oberhofer Platz: Vorfahrtsregelung?	? 5434,2122 5406,2110 5376,2097 5431,1956 5452,1940 5474,1940 5491,1955 5489,1981 5434,2122
 Wuhletal-Wanderweg: führt er hier am rechten Ufer der Wuhle? Qualität, Ausschilderung, Beleuchtung?	? 22124,13606 22082,13542 22060,13446 22052,13361 22062,13315 22046,13251 22012,13095 21979,13014 21962,12844 21941,12761 21945,12689 21896,12500 21888,12320 21930,12185
@@ -3983,6 +3990,7 @@ Grünfließer Gang: existiert ein Straßenschild auf der nördlichen Seite?	? 23675,
 Eichwalder Ausbau (Gosen): Qualität?	? 31051,-1484 30701,-1468 30421,-1710
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/26re.pdf/file
 #: XXX laut Link ein Teil auch in Berlin (Schmöckwitz)
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/31re.pdf/file
 Am Zwiebusch (Gosen): Qualität?	? 30421,-1710 30353,-1731 29972,-2159
 Gewerbestr. (Dahlwitz-Hoppegarten): Qualität?	? 25923,11076 25964,11310 26026,11377 26128,11457 26150,11516 26222,11726
 #: XXX laut osm nur für Radfahrer/Fußgänger
@@ -4046,3 +4054,18 @@ Stubenrauchstr. (Eichwalde): Qualität des mittleren Abschnitts?	? 25711,-2886 25
 Stubenrauchstr. (Eichwalde): Qualität des westlichen Abschnitts?	? 25246,-3167 25189,-3202 24999,-3312
 Platz der Republik (Eichwalde): Qualität?	? 25764,-2832 25735,-2826 25705,-2855 25711,-2886 25745,-2898 25771,-2884 25778,-2855 25764,-2832
 Händelplatz (Eichwalde): Qualität?	? 25368,-3091 25347,-3077 25295,-3103 25254,-3124 25246,-3167 25273,-3176 25320,-3153 25367,-3124 25368,-3091
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/31re.pdf/file
+#: XXX fehlt in Berlin.coords.data (PLZ=13156)
+Am Orangeriepark: Qualität? Genaue Lage der Straße?	? 10270,19478 10399,19502
+# 
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/32re.pdf/file vvv
+#: XXX Privatstraßen, fehlt in Berlin.coords.data vvv
+Seeadlerweg: Qualität? Wo befindet sich die Straße?	? 16485,-294 16465,-406
+Fischadlerweg: Qualität? Wo befindet sich die Straße?	? 16519,-363 16490,-467
+Eulenweg: Qualität? Wo befindet sich die Straße?	? 16551,-446 16513,-537
+#: XXX ^^^
+#: by: ^^^
+# 
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/32re.pdf/file
+#: XXX Privatstraße, fehlt in Berlin.coords.data
+Edith-Stein-Str.: Qualität? Genaue Lage der Straße?	? 14039,13220 14041,13135
