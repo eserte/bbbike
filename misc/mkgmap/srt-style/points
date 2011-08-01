@@ -258,6 +258,7 @@ tourism=hostel [0x2b02 resolution 20]
 tourism=hotel | tourism=motel { name '${name|def:}(${stars}*)${operator|def:}' | '${name} ${operator}' | '${name}' | '${operator}' } [0x2b01 resolution 20]
 # SRT: addition (wegweiser)
 tourism=information & information=board [0x7204 resolution 20]
+tourism=information & information=guidepost [0x7204 resolution 20]
 # SRT: different id 0x7110 vs. 0x2f0c (which is the toilet symbol)
 tourism=information {name '${name} - ${description} (${operator})'|
 '${name} - (${description})' | '${name}' | '${description}' |
@@ -267,7 +268,8 @@ tourism=museum [0x2c02 resolution 20]
 tourism=picnic_site [0x4a00 resolution 20]
 tourism=resort [0x2b04 resolution 20]
 tourism=theme_park [0x2c01 resolution 20]
-tourism=viewpoint {name '${name} - ${description}' | '${name}'} [0x2c04 resolution 20]
+# SRT: private definition: 0x2c04 -> 0x7205
+tourism=viewpoint {name '${name} - ${description}' | '${name}'} [0x7205 resolution 20]
 tourism=wine_cellar [0x2c0a resolution 20]
 tourism=zoo [0x2c07 resolution 20]
 
