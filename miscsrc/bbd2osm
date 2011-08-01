@@ -119,6 +119,8 @@ my %cat_to_highway = ('B'  => 'primary', # See also $do_highway_primary_hack
 my %cat_to_railway = ('U' => 'subway',
 		      'S' => 'light_rail',
 		      'R' => 'rail',
+		      'RG' => 'rail', # XXX is there a better tag?
+		      'RP' => 'narrow_gauge', # not quite correct, but in most cases a good approximation
 		     );
 
 my %cat_to_area_landuse = ('Forest'     => 'forest',
@@ -460,10 +462,11 @@ sub handle_railway_like {
     my($r, $dir) = @_;
 
     my($cat) = $r->[Strassen::CAT] =~ m{^([^:]+)};
-    return if $cat !~ m{^([USR])([ABC0]?)$};
+    return if $cat !~ m{^([USR]|RP|RG)([ABC0]|Bau)?$};
     my $railway_cat = $cat_to_railway{$1};
     return if !defined $railway_cat;
     my $is_abandoned = defined $2 && $2 eq '0';
+    my $is_construction = defined $2 && $2 eq 'Bau';
 
     my @node_ids = get_node_ids($r);
 
@@ -478,6 +481,8 @@ sub handle_railway_like {
     print $wayfh qq{  <tag k="railway" v="$railway_cat" />\n};
     if ($is_abandoned) {
 	print $wayfh qq{  <tag k="abandoned" v="yes" />\n};
+    } elsif ($is_construction) {
+	print $wayfh qq{  <tag k="construction" v="yes" />\n};
     }
     print $wayfh qq{</way>\n};
     $next_way_id++;
