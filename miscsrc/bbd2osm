@@ -163,6 +163,7 @@ if ($single_file) {
     do_file("$datadir/berlin_ortsteile", \&handle_berlin_citypart_like);
 
     do_file("$datadir/comments_ferry", \&handle_ferry_info_like);
+    do_file("$datadir/comments_scenic", \&handle_comments_scenic_like);
 
     # WAY-like
     do_file("$datadir/gesperrt", \&handle_blocked_way_like);
@@ -544,6 +545,20 @@ sub handle_ferry_info_like {
     my $label = shorten_label($r->[Strassen::NAME]);
 
     get_node_id_from_center($r, { note => $label });
+}
+
+sub handle_comments_scenic_like {
+    my($r, $dir) = @_;
+    my $cat = $r->[Strassen::CAT];
+    if ($cat =~ m{^View(?:$|:)}) {
+	my $label = shorten_label($r->[Strassen::NAME]);
+	my $attribs = { tourism => 'viewpoint',
+			name => $label,
+		      };
+	get_node_ids($r, $attribs); # as a side-effect, create the nodes
+    } else {
+	return;
+    }
 }
 
 sub handle_area_like {
