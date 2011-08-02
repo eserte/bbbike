@@ -563,6 +563,7 @@ sub showmap_url_openstreetmap {
 		   );
 
     my $scale = 17 - log(($args{mapscale_scale})/3000)/log(2);
+    $scale = 17 if $scale > 17;
     sprintf "$base_url?%slat=%s&%slon=%s&zoom=%d%s",
 	$mpfx, $py, $mpfx, $px, $scale, $layers_spec;
 }
