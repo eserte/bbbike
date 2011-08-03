@@ -921,8 +921,6 @@ Steigung 1.4% (Siegfriedstr. (Neukölln))	St; 12872,7134 12843,7093
 Steigung 1.4% (Siegfriedstr. (Neukölln))	St; 12843,7093 12810,7047
 Steigung 1.4% (Siegfriedstr. (Neukölln))	St; 12810,7047 12664,7013
 Steigung 1.4% (Schönagelstr.)	St; 21640,16279 21617,16061
-Steigung 1.4% (Schönagelstr.)	St; 21617,16061 21602,15908
-Steigung 1.4% (Schönagelstr.)	St; 21602,15908 21220,15741
 Steigung 1.4% (Schäferstr. (Wannsee))	St; -7474,341 -7587,312
 Steigung 1.4% (Schäferstr. (Wannsee))	St; -7449,348 -7474,341
 Steigung 1.4% (Rückertstr. (Steglitz))	St; 3878,6110 4028,6099
@@ -1190,8 +1188,10 @@ Steigung 1.1% (Joachim-Friedrich-Str.)	St; 3108,10069 3092,9886
 Steigung 1.1% (Im Eulengrund)	St; -5202,7045 -5163,7090
 Steigung 1.1% (Ilsestr. (Neukölln))	St; 12632,7137 12645,7087
 Steigung 1.1% (Hussitenstr.)	St; 9041,14896 8900,15146
-Steigung 1.1% (Hultschiner Damm)	St; 24740,10992 24654,11265
-Steigung 1.1% (Hultschiner Damm)	St; 24639,10766 24740,10992
+Steigung 1.1% (Hultschiner Damm)	St; 24740,10992 24693,11141
+Steigung 1.1% (Hultschiner Damm)	St; 24693,11141 24654,11265
+Steigung 1.1% (Hultschiner Damm)	St; 24653,10831 24740,10992
+Steigung 1.1% (Hultschiner Damm)	St; 24639,10766 24653,10831
 Steigung 1.1% (Horber Str.)	St; 4833,22587 4898,22459
 Steigung 1.1% (Hohefeldstr.)	St; 3127,24253 3022,24393
 Steigung 1.1% (Herbertstr. (Schöneberg))	St; 7389,8837 7360,8918
@@ -1253,6 +1253,7 @@ Steigung 1.0% (Silbersteinstr.)	St; 12702,6846 12649,6833
 Steigung 1.0% (Selbitzer Str.)	St; -8116,6167 -8206,6072
 Steigung 1.0% (Scottweg)	St; -966,11382 -1315,11300
 Steigung 1.0% (Schützenstr. (Steglitz))	St; 5046,5244 5111,5337
+Steigung 1.0% (Schönagelstr.)	St; 21617,16061 21602,15908
 Steigung 1.0% (Sachsendamm)	St; 7696,7562 7600,7605
 Steigung 1.0% (Sachsendamm)	St; 7600,7605 7491,7675
 Steigung 1.0% (Rungiusstr.)	St; 12997,6290 12981,6366
@@ -1260,6 +1261,7 @@ Steigung 1.0% (Rottweiler Str.)	St; 7487,4104 7368,4342
 Steigung 1.0% (Rothenbücherweg)	St; -4651,9487 -4657,9594
 Steigung 1.0% (Rothenbücherweg)	St; -4645,9365 -4651,9487
 Steigung 1.0% (Rauschener Allee)	St; -328,10971 -346,11121
+Steigung 1.0% (Raoul-Wallenberg-Str.)	St; 21235,15641 21220,15741
 Steigung 1.0% (Quickborner Str.)	St; 6890,23213 7072,22905
 Steigung 1.0% (Peschkestr.)	St; 5533,6517 5657,6451
 Steigung 1.0% (Nußbaumallee)	St; 1732,12224 1773,12173
@@ -1279,6 +1281,9 @@ Steigung 1.0% (Lindenstr. (Wannsee))	St; -6368,1809 -6467,1785
 Steigung 1.0% (Lilienthalstr.)	St; 10748,9054 10675,8940
 Steigung 1.0% (Lauterberger Str.)	St; 12160,5997 12154,6063
 Steigung 1.0% (Lauterberger Str.)	St; 12154,6063 12128,6201
+Steigung 1.0% (Landsberger Allee)	St; 21584,15753 21475,15705
+Steigung 1.0% (Landsberger Allee)	St; 21475,15705 21398,15671
+Steigung 1.0% (Landsberger Allee)	St; 21398,15671 21235,15641
 Steigung 1.0% (Küfersteig)	St; -4395,10876 -4356,10988
 Steigung 1.0% (Körnerstr. (Steglitz))	St; 5460,5966 5598,6136
 Steigung 1.0% (Konstanzer Str.)	St; 3954,9249 3915,9120
@@ -1325,6 +1330,7 @@ Steigung 1.0% (Alt-Mahlsdorf)	St; 24654,11265 24824,11256
 Steigung 1.0% (Ahornallee (Westend))	St; 1773,12173 1758,12113
 Steigung 1.0% ((zur Mannheimer Str./Wilmersdorf))	St; 4772,8599 4456,8598
 Steigung 1.0% ((Mauerweg Spandau))	St; -5742,11314 -6012,11458
+Steigung 1.0% ((Landsberger Allee - Schönagelstr.))	St; 21602,15908 21584,15753
 Steigung 1.0% ((Auerbachstr. - Koenigsallee))	St; 761,7922 614,8006
 Steigung 1.0% ((Auerbachstr. - Koenigsallee))	St; 614,8006 445,8429
 Steigung 1.0% ((Auerbachstr. - Koenigsallee))	St; 445,8429 490,8716

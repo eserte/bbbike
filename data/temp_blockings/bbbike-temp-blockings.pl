@@ -2412,7 +2412,7 @@ EOF
        text  => 'Hönower Str. (Mahlsdorf) in Richtung Alt-Mahlsdorf zwischen Wilhelmsmühlenweg und Alt-Mahlsdorf Baustelle, Fahrtrichtung gesperrt (bis 12.08.2005)',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4; 24623,11684 24591,11587 24603,11450 24654,11265
+userdel	q4; 24623,11684 24591,11587 24603,11450 24624,11374 24654,11265
 EOF
      },
      { from  => 1121724000, # 2005-07-19 00:00
@@ -6945,7 +6945,7 @@ EOF
        text  => 'Hultschiner Damm zwischen Alt-Mahlsdorf und Elsenstr. gesperrt, geplatzte Wasserleitung bis 19.01.2007 15:00 Uhr ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 24639,10766 24740,10992 24654,11265
+userdel	2::inwork 24639,10766 24653,10831 24740,10992 24693,11141 24654,11265
 EOF
      },
      { from  => 1182281811, # 2007-06-19 21:36
@@ -7032,7 +7032,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_004452',
        data  => <<EOF,
-userdel	2::inwork 24639,10766 24740,10992 24654,11265
+userdel	2::inwork 24639,10766 24653,10831 24740,10992 24693,11141 24654,11265
 EOF
      },
      { from  => 1170098849, # 2007-01-29 20:27
@@ -10875,7 +10875,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_007852',
        data  => <<EOF,
-userdel	1::inwork 24654,11265 24740,10992 24639,10766
+userdel	1::inwork 24654,11265 24693,11141 24740,10992 24653,10831 24639,10766
 EOF
      },
      { from  => 1203374120, # 2008-02-18 23:35

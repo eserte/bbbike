@@ -76,11 +76,11 @@ Futranplatz	1 22388,4737 22451,4749
 Alt-Kˆpenick	1 22138,4661 22175,4730 22196,4847
 (Am S-Bahnhof Pl‰nterwald): Asphalt	1 15357,8286 15284,8214 15242,8263 15303,8343
 Wuhletalstr.	1 20691,17463 20727,17558 20769,17650 20855,17807 20912,17872
-Knoten M‰rkische/Landsberger Allee	1 19013,14905 19175,14968 19364,15045 19496,15113 19567,15134 19694,15149 19735,15155
-Knoten M‰rkische/Landsberger Allee	1 19735,15155 19605,15073 19408,15007 19350,14997 19156,14953 19013,14905
+Knoten M‰rkische/Landsberger Allee	1 19013,14905 19175,14968 19364,15045 19496,15113 19567,15134 19694,15141 19738,15143
+Knoten M‰rkische/Landsberger Allee	1 19738,15143 19605,15073 19408,15007 19350,14997 19156,14953 19013,14905
 Knoten M‰rkische/Landsberger Allee	1 19466,14910 19408,15007
 Knoten M‰rkische/Landsberger Allee	1 19506,15002 19551,14961 19615,14960 19643,15025 19605,15073
-Knoten M‰rkische/Landsberger Allee	1 19496,15113 19582,15221 19675,15240 19707,15206 19694,15149
+Knoten M‰rkische/Landsberger Allee	1 19496,15113 19582,15221 19675,15240 19707,15206 19694,15141
 Alt-Blankenburg	1 13576,20849 13562,20913 13915,20944
 Alt-Blankenburg	1 13915,20944 13576,20849
 Seestr.	1 5062,14681 5233,14753 5440,14840
@@ -479,7 +479,6 @@ Kreutzerweg	1 4834,4102 4848,4069 4836,4041 4629,3916
 #: confirmed_by: S.Knaack:
 Hornblendeweg	1 10440,1283 10415,1323 10402,1362 10425,1400 10510,1441 10594,1468 10638,1442 10659,1370
 Zingster Str. (Gesundbrunnen)	1 9276,16032 9265,16109 9277,16154 9307,16190
-#: add_fragezeichen: Gilt die Einbahnstraﬂenregelung auch f¸r Radfahrer oder nur f¸r Autofahrer?
 Neufahrwasserweg	1 20390,15307 20550,15551
 #: by: rjoop:
 Rotdornstr.	1 5085,7109 5121,7132 5141,7158 5139,7206
@@ -835,6 +834,14 @@ Lintruper Str.	1 10307,922 10380,757
 Alt-Buckow	1 12574,1866 12561,1931 12817,2031
 Alt-Schmˆckwitz	1 27396,-3101 27428,-3137 27427,-3171 27413,-3196 27388,-3199 27378,-3183 27382,-3151 27396,-3101
 Fontanestr.	1 18273,6606 18254,6679
+#: note: im Uhrzeigersinn!
+Kokoschkaplatz	1 24102,14928 24107,14947 24091,14964 24071,14961 24066,14945 24075,14928 24102,14928
+Kokoschkastr.	1 24071,14961 24063,15035
+Peter-Weiss-Gasse	1 24151,14982 24120,14949 24107,14947
+Quedlinburger Str.: nur die Durchfahrt ist verboten	1s:q2 24051,15099 24009,15094
+Henny-Porten-Str.	1 23833,15066 23772,15058
+Kurt-Weill-Platz	1 23772,15058 23778,14995
+Fritz-Lang-Platz	1 23871,14914 23882,14904 23856,14868 23820,14896 23846,14931 23871,14914
 ######################################################################
 #
 # Potsdam
@@ -1060,8 +1067,8 @@ Oranienburger Str. (Wittenau): Mittelstreifen	3nocross 5350,21251 5357,21199 539
 Oranienburger Str.: Straﬂenbahnhaltestelle	3nocross 9225,13389 9281,13374 9415,13315
 Brauhausstr. -> Prenzlauer Promenade: Straﬂenbahntrasse	3 12211,16688 12017,16734 12046,16568
 Schnellerstr.: Mittelstreifen	3nocross 16720,6845 16677,6892 16568,7009
+Stendaler Str.: Straﬂenbahntrasse	3nocross 23895,15450 23913,15333 23933,15209 23952,15086
 #: note: Luftbild vvv
-Stendaler Str.: Straﬂenbahntrasse	3nocross 23895,15450 23913,15333 23933,15209 23952,15086 23960,15021
 Am Nordgraben: Mittelstreifen	3nocross 5201,20103 5299,20104 5399,20106 5517,20120
 Attilastr.: Mittelstreifen	3nocross 7263,4281 7310,4308 7368,4342
 Edisonstr.: Straﬂenbahn	3nocross 18010,7133 17934,7029 17919,6978
@@ -1132,10 +1139,9 @@ Berliner Str.: Straﬂenbahntrasse	3nocross 10911,17275 10906,17331 10900,17397 10
 Berliner Str.: Straﬂenbahntrasse	3nocross 13737,15994 13826,16026 14014,16106
 Karl-Liebknecht-Str.: Straﬂenbahntrasse	3nocross 11149,13442 11092,13366 11080,13350 11027,13279 11021,13271
 Badstr.: Gitter auf Mittelstreifen	3nocross 8659,16327 8543,16364 8516,16393 8486,16425
-Riesaer Str.: Straﬂenbahntrasse	3nocross 24120,14526 24097,14575 24020,14737
+Riesaer Str.: Straﬂenbahntrasse	3nocross 24120,14526 24097,14575 24030,14717
 #: note: Luftbild:
 Riesaer Str.: Straﬂenbahntrasse	3nocross 24198,14454 24162,14487 24120,14526
-#: note: Luftbild:
 Riesaer Str.: Straﬂenbahntrasse	3nocross 24721,14293 24870,14244 24930,14225 24983,14208 25095,14171
 Rummelsburger Str.: wegen ‹berf¸hrung nicht ¸berquerbar	3nocross 17527,7812 17681,7589 17839,7365 18010,7133
 Detmolder Str.: Mittelstreifen nicht passierbar	3nocross 4469,8037 4659,7982 4793,7992
@@ -1159,7 +1165,7 @@ Brandenburgische Str.: Tunneleinfahrt Adenauerplatz	3nocross 3852,10236 3874,101
 Treskowallee: Straﬂenbahntrasse	3nocross 18809,9133 18790,9018 18770,8898
 Treskowallee: Straﬂenbahntrasse	3nocross 18010,7133 18086,7243 18382,7724
 Bundesallee: unbequem passierbarer Mittelstreifen	3nocross 5463,9961 5464,9914 5467,9866
-Marzahner Kreuz: Linksabbiegen nicht mˆglich	3nocross 19694,15149 19735,15155 20260,15434
+Marzahner Kreuz: Linksabbiegen nicht mˆglich	3nocross 19694,15141 19738,15143 19852,15201
 Marzahner Kreuz: Linksabbiegen nicht mˆglich	3nocross 19681,15405 19582,15221 19506,15002 19466,14910 19422,14793
 Zossener Str.: unbequem passierbarer Mittelstreifen	3nocross 9865,10227 9858,10199 9837,10117
 Grunerstr.: Straﬂentunnelrampe	3nocross 10878,12560 10954,12635 11057,12715 11105,12764
@@ -1311,6 +1317,8 @@ Neukˆllner Str.: Mittelstreifen	3nocross 15980,2318 15804,2512 15736,2593
 Schorlemerallee: Mittelstreifen	3nocross 3306,6453 3347,6460 3459,6484
 Berliner Str.: Straﬂenbahntrasse	3nocross 12396,17514 12436,17682 12467,17814
 Daumstr.: Mittelstreifen	3nocross -1821,16327 -1816,16111 -1815,15976
+Zossener Str.: Straﬂenbahntrasse	3nocross 22811,15753 22883,15740 23080,15700
+Landsberger Chaussee: Straﬂenbahntrasse	3nocross 22771,16194 22974,16139 23159,16086
 #
 ####################################################################
 #
@@ -1548,6 +1556,9 @@ tragen, langgezogene Stufen (13 Stufen)	0:25 20704,1383
 #
 # Kinderanh‰nger wie der Chariot Captain XL sind 87cm breit
 # 
+offenes Tor	BNP:3 24790,15447
+Dr‰ngelgitter (lichte Breite ca. 100cm)	BNP:3::trailer=10 23914,15453
+Dr‰ngelgitter	BNP:1::trailer=3 17317,12609
 Tor	BNP:5 2959,2608
 Dr‰ngelgitter (lichte Breite ca. 90cm)	BNP:4::trailer=15 6455,2924
 Hanstedter Weg: Gel‰nder	BNP:3::trailer=10 6908,5053
@@ -1806,6 +1817,10 @@ Tor	BNP:5 26888,13976
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: last_checked: 2011-08-02
+#: next_check: 2012-01-01
+Sonnenkieker: Bauarbeiten	2:inwork 22610,13808 22669,13842 22692,13836
+# 
 #: last_checked: 2011-06-26
 #: XXX hier muss noch der genaue Wegverlauf ermittelt werden
 Uferweg am Salzhof: ein Teilabschnitt ist noch nicht freigegeben	2:inwork -1942,16105 -1979,15994 -1923,15684
@@ -2034,6 +2049,7 @@ Landsberger Allee: Straﬂenbahntrasse	3nocross 13635,13605 13702,13634 13854,1370
 #: by: jˆrg (schalkau):
 #: confirmed_by: srt
 Landsberger Allee	3nocross 17254,14451 17533,14484 17848,14523
+Landsberger Allee	3nocross 21475,15705 21584,15753 21694,15802
 Kalkhorster Weg (10 Stufen)	0:40 3904,8664
 Hohenzollerndamm: unbequem passierbarer Mittelstreifen	3nocross 3688,9051 3741,9047 3816,9045 3835,9044
 Hohenzollerndamm: unpassierbarer Mittelstreifen	3nocross 3439,8996 3482,9028 3521,9059

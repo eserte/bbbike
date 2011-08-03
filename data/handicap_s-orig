@@ -61,12 +61,12 @@ Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 
 #: last_checked: 2011-06-26
 Universitätsstr.: wegen Bauarbeiten Richtung Unter den Linden gesperrt	q4::inwork; 9580,12581 9601,12380
 # 
-#: last_checked: 2011-06-26
-#: next_check: 2011-08-01
+#: last_checked: 2011-08-02
+#: next_check: 2011-11-01
 Matkowskystr., Revaler Str.: Bauarbeiten, Einbahnstraße	q4::inwork; 14530,11137 14509,11060 14442,11101
 #:
-#: last_checked: 2011-06-26 vvv
-#: next_check: 2011-08-01 vvv
+#: last_checked: 2011-08-02 vvv
+#: next_check: 2011-11-01 vvv
 Helmerdingstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 14465,11195 14442,11101
 Haasestr.: Einbahnstraße ist eingerichtet	q4::inwork; 14286,11186 14327,11308
 #: next_check: ^^^
@@ -516,7 +516,6 @@ nördliches Spreeufer: drei niedrige Stufen, Fußgänger	q2 6180,12972 6102,12960 6
 #: by: Mirko Grammel (Bordsteine):
 Wustermarker Str.: Fußgänger, Bordsteine	q2 -4750,14393 -4678,14382
 Firlstr.: zwei Bodenschwellen	q1 18574,6401 18623,6523
-Waldesruher Str.: parkende Autos	q1; 24910,7896 24923,7903 25047,8086
 (Florastr. - Schloßstr.): Fußgänger	q2 5234,6086 5165,6119
 Pankeweg: enger Pfad	q2 13365,22743 13295,22545 13290,22362 13354,22327
 (Bremer Weg): Fußgänger	q1 5900,11913 5923,11873 6296,11890 6342,11878 6409,11925 6573,11943 6642,12010
@@ -988,6 +987,26 @@ Fährsteg	q4 27069,-2282 27090,-2253
 Fährsteg	q4 27374,-1573 27361,-1551
 Zum Seeblick: einige Stufen	q3 27161,-2474 27191,-2432
 (Uferweg an der HTW): einige Fußgänger	q1+ 19177,5560 19020,5532 18846,5548 18744,5612 18650,5707
+(Zerbster Str. - Louis-Lewin-Str.): eng, Fußgänger	q2 24324,15519 24379,15511 24459,15526 24468,15554 24811,15513 24827,15564 24927,15611 25003,15617
+(Louis-Lewin-Str. - U-Bhf. Hönow): eng, Fußgänger	q2 25003,15617 25052,15591 25224,15578 25312,15558 25332,15507 25357,15489 25419,15487 25446,15447 25493,15427 25540,15429 25624,15425 25767,15441 25791,15438 25897,15468 25984,15415 25938,15359 25936,15335 25990,15301 26004,15142 25984,15098 25985,15080 26014,15039
+(Gohliser Str. - Wuhle-Hönow-Weg): eng, Fußgänger	q2 25504,15352 25541,15406 25540,15429
+#: XXX_prog BS (2x)
+(Quedlinburger Str. - Stendaler Str. [Nebenfahrbahn]): Bordsteine	q3 24009,15094 23993,15111
+Fritz-Lang-Str.: Fußgängerzone	q2- 23856,14868 23878,14748
+Kurt-Weill-Gasse: Fußgänger	q1 23820,14896 23787,14919
+(Alt-Hellersdorf - Cottbusser Str.): getrennter Rad/Gehweg	q1 23305,14914 23318,14847 23297,14772
+Clara-Zetkin-Weg: Fußgänger	q1 22574,13017 22591,12959 22612,12966 22681,12985 22693,12970 22775,12984
+(Clara-Zetkin-Platz - Bansiner Str.): Fußgänger	q1 22612,12966 22623,12944
+Lion-Feuchtwanger-Str.: Fußgänger, Rampe	q2 22538,12955 22562,12944 22591,12959
+Lion-Feuchtwanger-Weg: Fußgänger	q1 22516,12946 22493,12999
+(Erich-Kästner-Str. - Peter-Huchel-Str.): eng, Fußgänger	q2 23070,13711 23042,13657 23060,13624 23052,13586 23019,13551 23007,13509
+(Carola-Neher-Str. - U-Bhf. Cottbusser Platz): Fußgänger	q1 23438,14355 23476,14409 23458,14439
+(Unterführung U-Bhf. Cottbusser Platz): Fußgänger	q1 23458,14439 23423,14543
+(Unterführung U-Bhf. Cottbusser Platz): Rampe	q3 23423,14543 23454,14556 23421,14549 23458,14563 23463,14552
+(Cottbusser Platz - Hellersdorfer Str.): Fußgänger	q2 23366,14537 23399,14520
+Kastanienallee (Hellersdorf): Fußgänger	q1 23756,14696 23769,14609 23784,14569 23808,14503 23877,14315 23897,14274 23962,14140 24056,13988 24081,13951
+(Kastanienallee - Stollberger Str.): Fußgänger	q1 23897,14274 23983,14318
+enge Rampe	q3 23784,14569 23792,14561 23793,14573
 ######################### User Contributions #################################
 #: by: Michael Kiekbusch
 #: corrected_by: srt/policy (q4 -> q3-)
@@ -1454,9 +1473,8 @@ Bootshausweg: Fußgänger, teilweise sehr eng, nicht für Anhänger geeignet	q2- -12
 Bootshausweg: Fußgänger	q1 -1465,16957 -1520,16989 -1564,17001 -1610,17007 -1664,17009 -1743,16990 -1723,16973 -1690,16971 -1676,16957 -1673,16939 -1688,16862 -1675,16813
 #: by: ^^^
 # XXX del: not confirmed by me : by: Karin Millonig: Rufacher Weg: enge Straße	q2 12207,1704 12179,1758 12160,1817 12255,2058 12286,2065 12582,2129 12738,2162
-#: by: Benno Koch [AM]
-#: corrected_by: srt (q4 -> q2) (common sense!)
-Nelly-Sachs-Str.: Verkehrsberuhigter Bereich	q2 24061,14801 24115,14828 24191,14866 24253,14888 24349,14922
+#XXX del --- -> RW6 in radwege --- #: by: Benno Koch [AM] --- #: corrected_by: srt (q4 -> q2) (common sense!) --- Nelly-Sachs-Str.: Verkehrsberuhigter Bereich	q2 24061,14801 24115,14828 24191,14866
+#XXX del hier nicht! --- Nelly-Sachs-Str.: Verkehrsberuhigter Bereich	q2 24191,14866 24253,14888 24349,14922
 #: by: torsten albrecht [AM]
 Karl-Pokern-Str.: spielende Kinder	q1 26079,5057 26034,5056 25984,5070 25941,5069 25860,5067 25732,5065
 #: by: ingo [AM]

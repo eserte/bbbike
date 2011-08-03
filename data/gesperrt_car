@@ -257,9 +257,11 @@ Landsberger Allee -> Fritz-Riedel-Str.: Straßenbahn	3::igndisp 13543,13568 13635
 Hausburgstr. -> Fritz-Riedel-Str.: Straßenbahn	3::igndisp 13706,13460 13635,13605 13521,13781
 Hausburgstr. -> Landsberger Allee: Straßenbahn	3::igndisp 13706,13460 13635,13605 13543,13568
 Landsberger Allee -> Hausburgstr.: Straßenbahn	3::igndisp 13702,13634 13635,13605 13706,13460
-Straßenbahn	3nocross::ignrte 21398,15671 21475,15705 21694,15802
-Landsberger Allee -> Pöhlbergstr: Straßenbahn	3::igndisp 21694,15802 21475,15705 21491,15671
+Straßenbahn	3nocross::ignrte 21398,15671 21475,15705 21584,15753 21694,15802
 Pöhlbergstr -> Landsberger Allee: Straßenbahn	3::igndisp 21491,15671 21475,15705 21398,15671
+Landsberger Allee -> Pöhlbergstr: Straßenbahn	3::igndisp 21584,15753 21475,15705 21491,15671
+Landsberger Allee -> Schönagelstr.: Straßenbahn	3::igndisp 21475,15705 21584,15753 21602,15908
+Schönagelstr. -> Landsberger Allee: Straßenbahn	3::igndisp 21602,15908 21584,15753 21694,15802
 Topsstr.	1 10607,15142 10886,15251
 Schönhauser Allee	3nocross::ignrte 10902,15422 10917,15525 10938,15670
 Buchholzer Str. -> Schönhauser Allee: Schönhauser Allee	3::igndisp 11055,15504 10917,15525 10902,15422
@@ -1242,3 +1244,13 @@ Adlergestell -> Otto-Franke-Str.: Mittelstreifen	3::igndisp 20207,3115 20289,303
 Otto-Franke-Str. -> Adlergestell: Mittelstreifen	3::igndisp 20388,3100 20289,3033 20451,2869
 Adlergestell -> Büchnerweg: Mittelstreifen	3::igndisp 20064,3278 20207,3115 20315,3181
 Büchnerweg -> Adlergestell: Mittelstreifen	3::igndisp 20315,3181 20207,3115 20289,3033
+Straßenbahntrasse	3nocross::ignrte 22708,15794 22811,15753 22883,15740
+Zossener Str. -> Michendorfer Str.: Straßenbahntrasse	3::igndisp 22883,15740 22811,15753 22787,15639
+Michendorfer Str. -> Zossener Str.: Straßenbahntrasse	3::igndisp 22787,15639 22811,15753 22708,15794
+Straßenbahntrasse	3nocross::ignrte 23933,15209 23952,15086 23960,15021
+Quedlinburger Str. -> Henny-Porten-Str.: Straßenbahntrasse	3::igndisp 24009,15094 23952,15086 23833,15066
+Quedlinburger Str. -> Stendaler Str.: Straßenbahntrasse	3::igndisp 24009,15094 23952,15086 23960,15021
+Stendaler Str. -> Quedlinburger Str.: Straßenbahntrasse	3::igndisp 23933,15209 23952,15086 24009,15094
+Henny-Porten-Str. -> Quedlinburger Str.: Straßenbahntrasse	3::igndisp 23833,15066 23952,15086 24009,15094
+Henny-Porten-Str. -> Stendaler Str.: Straßenbahntrasse	3::igndisp 23833,15066 23952,15086 23933,15209
+Stendaler Str. -> Henny-Porten-Str.: Straßenbahntrasse	3::igndisp 23960,15021 23952,15086 23833,15066

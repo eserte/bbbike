@@ -61,11 +61,11 @@ Futranplatz	1 22388,4737 22451,4749
 Alt-Köpenick	1 22138,4661 22175,4730 22196,4847
 (Am S-Bahnhof Plänterwald): Asphalt	1 15357,8286 15284,8214 15242,8263 15303,8343
 Wuhletalstr.	1 20691,17463 20727,17558 20769,17650 20855,17807 20912,17872
-Knoten Märkische/Landsberger Allee	1 19013,14905 19175,14968 19364,15045 19496,15113 19567,15134 19694,15149 19735,15155
-Knoten Märkische/Landsberger Allee	1 19735,15155 19605,15073 19408,15007 19350,14997 19156,14953 19013,14905
+Knoten Märkische/Landsberger Allee	1 19013,14905 19175,14968 19364,15045 19496,15113 19567,15134 19694,15141 19738,15143
+Knoten Märkische/Landsberger Allee	1 19738,15143 19605,15073 19408,15007 19350,14997 19156,14953 19013,14905
 Knoten Märkische/Landsberger Allee	1 19466,14910 19408,15007
 Knoten Märkische/Landsberger Allee	1 19506,15002 19551,14961 19615,14960 19643,15025 19605,15073
-Knoten Märkische/Landsberger Allee	1 19496,15113 19582,15221 19675,15240 19707,15206 19694,15149
+Knoten Märkische/Landsberger Allee	1 19496,15113 19582,15221 19675,15240 19707,15206 19694,15141
 Alt-Blankenburg	1 13576,20849 13562,20913 13915,20944
 Alt-Blankenburg	1 13915,20944 13576,20849
 Seestr.	1 5062,14681 5233,14753 5440,14840
@@ -641,6 +641,13 @@ Lintruper Str.	1 10307,922 10380,757
 Alt-Buckow	1 12574,1866 12561,1931 12817,2031
 Alt-Schmöckwitz	1 27396,-3101 27428,-3137 27427,-3171 27413,-3196 27388,-3199 27378,-3183 27382,-3151 27396,-3101
 Fontanestr.	1 18273,6606 18254,6679
+Kokoschkaplatz	1 24102,14928 24107,14947 24091,14964 24071,14961 24066,14945 24075,14928 24102,14928
+Kokoschkastr.	1 24071,14961 24063,15035
+Peter-Weiss-Gasse	1 24151,14982 24120,14949 24107,14947
+Quedlinburger Str.: nur die Durchfahrt ist verboten	1s 24051,15099 24009,15094
+Henny-Porten-Str.	1 23833,15066 23772,15058
+Kurt-Weill-Platz	1 23772,15058 23778,14995
+Fritz-Lang-Platz	1 23871,14914 23882,14904 23856,14868 23820,14896 23846,14931 23871,14914
 Am Neuen Garten	1 -12166,1384 -12212,1201 -12276,831 -12302,718
 Am Neuen Garten	1 -12332,585 -12582,127
 Hochstraße	3nocross::ignrte -11399,-1339 -11461,-1424 -11540,-1543
@@ -873,11 +880,11 @@ Brauhausstr. -> Prenzlauer Promenade: Straßenbahntrasse	3 12211,16688 12017,1673
 Mittelstreifen	3nocross::ignrte 16720,6845 16677,6892 16568,7009
 Güldenhofer Ufer -> Köpenicker Landstr.: Mittelstreifen	3::igndisp 16630,6800 16677,6892 16568,7009
 Köpenicker Landstr. -> Güldenhofer Ufer: Mittelstreifen	3::igndisp 16720,6845 16677,6892 16630,6800
-Straßenbahntrasse	3nocross::ignrte 23895,15450 23913,15333 23933,15209 23952,15086 23960,15021
+Straßenbahntrasse	3nocross::ignrte 23895,15450 23913,15333 23933,15209 23952,15086
+Jerichower Str. -> Stendaler Str.: Straßenbahntrasse	3::igndisp 23960,15340 23913,15333 23933,15209
+Stendaler Str. -> Jerichower Str.: Straßenbahntrasse	3::igndisp 23895,15450 23913,15333 23960,15340
 Stendaler Str. -> Arneburger Str.: Straßenbahntrasse	3::igndisp 23913,15333 23933,15209 23978,15215
 Arneburger Str. -> Stendaler Str.: Straßenbahntrasse	3::igndisp 23978,15215 23933,15209 23952,15086
-Quedlinburger Str. -> Stendaler Str.: Straßenbahntrasse	3::igndisp 23995,15092 23952,15086 23960,15021
-Stendaler Str. -> Quedlinburger Str.: Straßenbahntrasse	3::igndisp 23933,15209 23952,15086 23995,15092
 Mittelstreifen	3nocross::ignrte 5201,20103 5299,20104 5399,20106 5517,20120
 Im Wolfsgartenfeld -> Am Nordgraben: Mittelstreifen	3::igndisp 5307,20067 5299,20104 5201,20103
 Am Nordgraben -> Im Wolfsgartenfeld: Mittelstreifen	3::igndisp 5399,20106 5299,20104 5307,20067
@@ -1079,11 +1086,19 @@ Travemünder Str. -> Badstr.: Gitter auf Mittelstreifen	3::igndisp 8592,16406 854
 Travemünder Str. -> Gropiusstr.: Gitter auf Mittelstreifen	3::igndisp 8592,16406 8543,16364 8534,16355
 Gropiusstr. -> Badstr.: Gitter auf Mittelstreifen	3::igndisp 8534,16355 8543,16364 8516,16393
 Gropiusstr. -> Travemünder Str.: Gitter auf Mittelstreifen	3::igndisp 8534,16355 8543,16364 8592,16406
-Straßenbahntrasse	3nocross::ignrte 24120,14526 24097,14575 24020,14737
+Straßenbahntrasse	3nocross::ignrte 24120,14526 24097,14575 24030,14717
 Heidenauer Str. -> Riesaer Str.: Straßenbahntrasse	3::igndisp 24146,14594 24097,14575 24120,14526
-Riesaer Str. -> Heidenauer Str.: Straßenbahntrasse	3::igndisp 24020,14737 24097,14575 24146,14594
+Riesaer Str. -> Heidenauer Str.: Straßenbahntrasse	3::igndisp 24030,14717 24097,14575 24146,14594
 Straßenbahntrasse	3nocross::ignrte 24198,14454 24162,14487 24120,14526
+Riesaer Str. -> Oelsnitzer Str.: Straßenbahntrasse	3::igndisp 24198,14454 24162,14487 24133,14444
+Oelsnitzer Str. -> Riesaer Str.: Straßenbahntrasse	3::igndisp 24133,14444 24162,14487 24120,14526
 Straßenbahntrasse	3nocross::ignrte 24721,14293 24870,14244 24930,14225 24983,14208 25095,14171
+Frohburger Str. -> Riesaer Str.: Straßenbahntrasse	3::igndisp 24807,14043 24870,14244 24721,14293
+Riesaer Str. -> Frohburger Str.: Straßenbahntrasse	3::igndisp 24930,14225 24870,14244 24807,14043
+Riesaer Str. -> Schönewalder Str.: Straßenbahntrasse	3::igndisp 24870,14244 24930,14225 24974,14355
+Schönewalder Str. -> Riesaer Str.: Straßenbahntrasse	3::igndisp 24974,14355 24930,14225 24983,14208
+Mittweidaer Str. -> Riesaer Str.: Straßenbahntrasse	3::igndisp 24918,14008 24983,14208 24930,14225
+Riesaer Str. -> Mittweidaer Str.: Straßenbahntrasse	3::igndisp 25095,14171 24983,14208 24918,14008
 wegen Überführung nicht überquerbar	3nocross::ignrte 17527,7812 17681,7589 17839,7365 18010,7133
 Wattstr. -> Rummelsburger Landstr.: wegen Überführung nicht überquerbar	3::igndisp 17647,7280 17681,7589 17527,7812
 Wattstr. -> Grenzweg: wegen Überführung nicht überquerbar	3::igndisp 17647,7280 17681,7589 17295,7336
@@ -1188,8 +1203,8 @@ Regensburger Str. -> Pariser Str.: unbequem passierbarer Mittelstreifen	3::igndi
 Pariser Str. -> Regensburger Str.: unbequem passierbarer Mittelstreifen	3::igndisp 5416,9928 5464,9914 5541,9923
 Pariser Str. -> Bundesallee: unbequem passierbarer Mittelstreifen	3::igndisp 5416,9928 5464,9914 5463,9961
 Bundesallee -> Regensburger Str.: unbequem passierbarer Mittelstreifen	3::igndisp 5463,9961 5464,9914 5541,9923
-Linksabbiegen nicht möglich	3nocross::ignrte 19694,15149 19735,15155 20260,15434
-Landsberger Allee -> Landsberger Allee: Linksabbiegen nicht möglich	3::igndisp 19605,15073 19735,15155 19694,15149
+Linksabbiegen nicht möglich	3nocross::ignrte 19694,15141 19738,15143 19852,15201
+Landsberger Allee -> Landsberger Allee: Linksabbiegen nicht möglich	3::igndisp 19605,15073 19738,15143 19694,15141
 Linksabbiegen nicht möglich	3nocross::ignrte 19681,15405 19582,15221 19506,15002 19466,14910 19422,14793
 Märkische Allee -> Landsberger Allee: Linksabbiegen nicht möglich	3::igndisp 19506,15002 19582,15221 19496,15113
 Landsberger Allee -> Märkische Allee: Linksabbiegen nicht möglich	3::igndisp 19675,15240 19582,15221 19506,15002
@@ -1718,6 +1733,12 @@ Berliner Str. -> Str. 56: Straßenbahntrasse	3::igndisp 12467,17814 12436,17682 1
 Mittelstreifen	3nocross::ignrte -1821,16327 -1816,16111 -1815,15976
 Uferweg -> Daumstr.: Mittelstreifen	3::igndisp -1942,16105 -1816,16111 -1821,16327
 Daumstr. -> Uferweg: Mittelstreifen	3::igndisp -1815,15976 -1816,16111 -1942,16105
+Straßenbahntrasse	3nocross::ignrte 22811,15753 22883,15740 23080,15700
+Zossener Str. -> Ludwigsfelder Str.: Straßenbahntrasse	3::igndisp 22811,15753 22883,15740 22888,15768
+Ludwigsfelder Str. -> Zossener Str.: Straßenbahntrasse	3::igndisp 22888,15768 22883,15740 23080,15700
+Straßenbahntrasse	3nocross::ignrte 22771,16194 22974,16139 23159,16086
+Landsberger Chaussee -> Ludwigsfelder Str.: Straßenbahntrasse	3::igndisp 23159,16086 22974,16139 22961,16077
+Ludwigsfelder Str. -> Landsberger Chaussee: Straßenbahntrasse	3::igndisp 22961,16077 22974,16139 22771,16194
 tragen (15 Stufen)	0:25:38 27728,-3146
 tragen (4 Stufen)	0:6:-210 27361,-1551
 tragen (2 Stufen)	0:5:-180 3431,1987
@@ -1886,6 +1907,9 @@ tragen (Treppe, ca. 20 Stufen)	0:25:-108 19163,14981
 tragen (Treppe, ca. 20 Stufen)	0:25:-12 19160,14935
 tragen (Treppe)	0:30:70 89344,-5795
 tragen, langgezogene Stufen (13 Stufen)	0:25:-168 20704,1383
+offenes Tor	BNP:3:-265 24790,15447
+Drängelgitter (lichte Breite ca. 100cm)	BNP:3:-98:trailer=10 23914,15453
+Drängelgitter	BNP:1:-146:trailer=3 17317,12609
 Tor	BNP:5:-87 2959,2608
 Drängelgitter (lichte Breite ca. 90cm)	BNP:4:-121:trailer=15 6455,2924
 Hanstedter Weg: Geländer	BNP:3:-108:trailer=10 6908,5053
@@ -2066,6 +2090,7 @@ Schranke (lichte Breite ca. 120cm)	BNP:2:-50:trailer=8 14448,4501
 Schranke (lichte Breite ca. 120cm)	BNP:2:-53:trailer=8 14709,4307
 Schranke (lichte Breite ca. 100cm)	BNP:3:-45:trailer=10 15179,3901
 Tor	BNP:5:-57 26888,13976
+Sonnenkieker: Bauarbeiten	2:inwork 22610,13808 22669,13842 22692,13836
 Uferweg am Salzhof: ein Teilabschnitt ist noch nicht freigegeben	2:inwork -1942,16105 -1979,15994 -1923,15684
 Tegeler Hafen: Weg über Insel gesperrt	2 1756,20405 1736,20441 1742,20464 1762,20505 1761,20539
 Tegeler Hafen: Weg gesperrt	2 1630,20731 1668,20670 1687,20645 1697,20623 1721,20603
@@ -2226,6 +2251,9 @@ Otto-Ostrowski-Str. -> Landsberger Allee: Straßenbahntrasse	3::igndisp 13769,134
 Landsberger Allee	3nocross::ignrte 17254,14451 17533,14484 17848,14523
 Schalkauer Str. -> Landsberger Allee: Landsberger Allee	3::igndisp 17514,14613 17533,14484 17848,14523
 Landsberger Allee -> Schalkauer Str.: Landsberger Allee	3::igndisp 17254,14451 17533,14484 17514,14613
+Landsberger Allee	3nocross::ignrte 21475,15705 21584,15753 21694,15802
+Landsberger Allee -> Schönagelstr.: Landsberger Allee	3::igndisp 21475,15705 21584,15753 21602,15908
+Schönagelstr. -> Landsberger Allee: Landsberger Allee	3::igndisp 21602,15908 21584,15753 21694,15802
 Kalkhorster Weg (10 Stufen)	0:40:-199 3904,8664
 unbequem passierbarer Mittelstreifen	3nocross::ignrte 3688,9051 3741,9047 3816,9045 3835,9044
 Hoffmann-von-Fallersleben-Pl. -> Hohenzollerndamm: unbequem passierbarer Mittelstreifen	3::igndisp 3741,8955 3741,9047 3688,9051
