@@ -250,7 +250,7 @@ sub handle_blocked_way_like {
 	$node_id;
     } @{ $r->[Strassen::COORDS] };
     for my $node_id_i (1 .. $#node_ids) {
-	if ($cat eq '1') {
+	if ($cat eq '1' || $cat eq '1s') {
 	    $oneway{$node_ids[$node_id_i].' '.$node_ids[$node_id_i-1]} = 1; # in osm oneway is the open direction, not the closed
 	} elsif ($cat eq '2') {
 	    $no_access{$node_ids[$node_id_i-1].' '.$node_ids[$node_id_i]} = 1;
@@ -267,11 +267,27 @@ sub handle_handicap_like {
     } else {
 	($cat_hin, $cat_rueck) = ($r->[Strassen::CAT], $r->[Strassen::CAT]);
     }
-    for ($cat_hin, $cat_rueck) {
-	if (defined $_) {
-	    ($_) = $_ =~ m{^([^:]+)};
+
+    my($attrib_hin, $attrib_rueck);
+    for my $def (
+		 [\$cat_hin, \$attrib_hin],
+		 [\$cat_rueck, \$attrib_rueck],
+		) {
+	my($cat_ref, $attrib_ref) = @$def;
+	if (defined $$cat_ref) {
+	    ($$cat_ref, $$attrib_ref) = $$cat_ref =~ m{^
+						       ([^:]+)
+						       (?:::(.*))?
+						       $}x;
 	}
     }
+    if (defined $attrib_hin && $attrib_hin eq 'igndisp') {
+	# This is most likely generated from an "1s" record. Don't
+	# render it, because we cannot distinguish between directions
+	# in the osm output.
+	return;
+    }
+
     my @node_ids = map {
 	my($px,$py) = $Karte::Polar::obj->trim_accuracy($Karte::Polar::obj->standard2map(split /,/, $_));
 	my $node_id = maybe_add_node($px,$py);
