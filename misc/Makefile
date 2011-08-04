@@ -244,7 +244,8 @@ berlin-test-osm2bbd-postprocess2:
 ######################################################################
 # Building for garmin with custom .typ file
 
-MKGMAP_VER?=	1624
+#MKGMAP_VER?=	1624
+MKGMAP_VER?=	2009
 .if exists(/opt/mkgmap-r$(MKGMAP_VER)/mkgmap.jar)
 MKGMAP?=	java -Xmx1024m -jar /opt/mkgmap-r${MKGMAP_VER}/mkgmap.jar
 .else
