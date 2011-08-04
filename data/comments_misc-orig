@@ -90,7 +90,7 @@ Albrecht-Thaer-Weg: Privatstraße, Tore bei den Einfahrten	CS 3347,6460 3449,6863
 #: add_fragezeichen: wird dieser Weg tatsächlich nachts geschlossen?
 #: XXX_prog: should not appear in fragezeichen-outdoor-nextcheck!
 (Weg über das Sportgelände): evtl. nachts geschlossen	CS 13252,14179 13385,13992
-Borgmannstr.: Bodenschwellen, rechs vorbei fahren	CS 22513,5747 22531,5871
+Borgmannstr.: zwei Bodenschwellen, rechs vorbei fahren	CS 22513,5747 22531,5871
 Hermann-Blankenstein-Str.: Tor für Kfz evtl. geschlossen, auf Gehweg ausweichen	CS 13886,13668 13858,13719
 Georg-Wilhelm-Str.: 3 Bodenschwellen, rechts vorbei fahren	CS 2708,10245 2691,10047
 #: XXX_prog: doubled in gesperrt_orig, but needs implementation in Perl/Tk version
@@ -191,6 +191,7 @@ Straße Y: Privatstraße, Höchstgeschwindigkeit 20 km/h	CS -629,16546 -671,16488
 Zur Pariser Str.: Hausdurchfahrt benutzen	CS; 5464,9914 5416,9928
 #: note: "unechter" Kreisverkehr, auf der südlichen Fahrbahn kaum merkbar, auf der nördlichen aber schon
 Kreisverkehr	Roundabout 11393,10390
+# 
 #: section: ignorieren vvv
 #: XXX_prog: it's not clear what to do with this in the routelist (currently shown) or while rendering (currently ignored in normal perl/tk mode) vvv
 Kreisverkehr	Roundabout 4818,2279 4824,2266 4813,2256 4803,2257 4796,2271 4803,2280 4818,2279
@@ -299,7 +300,6 @@ Weiterfahrt durch die Kleingartenanlage möglich, allerdings nur tagsüber während
 	culdesac 20839,12209
 	culdesac 20930,13273
 	culdesac 20847,13280
-	culdesac 20467,14196
 	culdesac 21362,14028
 	culdesac 20520,14570
 	culdesac_pseudo 22548,2081
@@ -607,6 +607,12 @@ Zugang zum Bad	culdesac_pseudo 7344,13435
 	culdesac -3900,15650
 	culdesac_pseudo 24277,14747
 	culdesac 22407,12901
+	culdesac_pseudo 22043,15282
+	culdesac_pseudo 22088,15557
+	culdesac_pseudo 22092,15610
+	culdesac 21221,11398
+	culdesac_pseudo 21217,11328
+	culdesac 22001,10216
 #: section ^^^
 ######################################################################
 # busroute
@@ -1050,3 +1056,7 @@ Ausgeschildert zum "Haus Sonneneck"	CP2; 23297,14772 23318,14847
 Sonnenkieker: Privatstraße	CS 22527,13708 22520,13732 22610,13808 22669,13842 22692,13836
 (Clara-Zetkin-Platz - Bansiner Str.): ausgeschildert als "Bansiner Str."	CP2; 22612,12966 22623,12944
 Ausgeschildert als "zur Carola-Neher-Str."	CP2; 23458,14439 23476,14409
+Kaiserkronenweg: Privatstraße, nur frei für Anlieger	CS 20183,14645 20030,14731 20012,14756 19966,14783
+Biesdorfer Blumenwiese: Privatstraße	CS 20609,14343 20597,14291 20543,14293 20540,14249
+Biesdorfer Blumenwiese: Privatstraße	CS 20494,14246 20540,14249 20583,14241 20584,14211
+(Fortsetzung der Mieltschiner Str.): Privatstraße	CS 22051,10201 22001,10216

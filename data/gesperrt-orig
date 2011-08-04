@@ -407,7 +407,7 @@ H¸sung	1 13324,4784 13400,4788 13468,4766
 H¸sung	1s 13468,4766 13397,4762 13324,4784
 #: by: Christoph Winkelmann:
 Karl-Egon-Str.	1 18372,8869 18406,9052 18430,9199 18457,9343
-(Landsberger Allee - Georg-Knorr-Str.)	1 19183,15019 19314,15059 19364,15045
+(Landsberger Allee - Georg-Knorr-Str.)	1 19169,15015 19314,15059 19364,15045
 #: by: Bosshold, Martin:
 Marschnerstr.	1 4629,3916 4634,4053
 Wollankstr.	1 10027,18165 10054,18210
@@ -425,7 +425,8 @@ Johannes-Itten-Str.	1 12797,16983 12850,16911 12813,16884
 Riensbergstr.	1 -740,15306 -764,15480
 Saganer Str.: Bahngel‰nde	2 16654,9748 16710,9702 16747,9695 17020,9463 17231,9186 17271,9159
 Triniusstr.	1 18339,6660 18273,6606
-Franz-Stenzer-Str.	1 19876,15644 19974,15594 20044,15585 20111,15609 20181,15658 20399,15744 20508,15792 20586,15947 20610,15993 20636,16046
+Franz-Stenzer-Str.	1 19876,15644 19974,15594 20044,15585 20111,15609 20181,15658 20399,15744 20508,15792
+#XXX del --- hier nicht --- Franz-Stenzer-Str.	1 20508,15792 20586,15947 20610,15993 20636,16046
 #: XXX_indoor bei osm fehlt oneway
 Planetenstr.	1 15175,7221 15056,7198 14951,7163
 Wustermarker Str.	1 -5097,14599 -5111,14486 -5004,14454 -4981,14442 -4750,14393
@@ -842,6 +843,15 @@ Quedlinburger Str.: nur die Durchfahrt ist verboten	1s:q2 24051,15099 24009,1509
 Henny-Porten-Str.	1 23833,15066 23772,15058
 Kurt-Weill-Platz	1 23772,15058 23778,14995
 Fritz-Lang-Platz	1 23871,14914 23882,14904 23856,14868 23820,14896 23846,14931 23871,14914
+Wuhletalstr. (Richtungsfahrbahn)	1::igndisp 20769,17650 20895,17594 21066,17503
+Wuhletalstr. (Richtungsfahrbahn)	1::igndisp 21066,17503 20891,17572 20769,17650
+#: note: Ausweichen auf Gehweg
+Trusetaler Str.	1s:q3 21285,17276 21360,17261 21352,17210 21451,17189 21435,17097
+Blumberger Damm	1s:q4 21731,15748 21719,15666
+Landhausring	1 21710,12798 21866,12763 21893,12783 21900,12820 21880,12858 21729,12894
+Kaulsdorfer Str.	1 22539,6258 22324,6397
+Kreisverkehr Brebacher Weg	1 21655,12521 21642,12538 21651,12569 21666,12577 21674,12565 21671,12532 21655,12521
+Kreisverkehr Brebacher Weg	1 21581,12182 21570,12191 21575,12212 21589,12217 21602,12208 21598,12185 21581,12182
 ######################################################################
 #
 # Potsdam
@@ -1026,6 +1036,8 @@ Hˆnower Str. (Karlshorst) (Ausweichen auf Sandbankette mˆglich)	1s:q2 18377,9366
 # gesperrte Wegf¸hrung (nicht mˆglich zu umgehen --- wenn es eine
 # Umgehung gibt, sollte sie in comments_path-orig als PI; kommentiert sein)
 # 
+M‰rkische Allee: Mittelstreifen	3nocross 21251,18508 21163,18347 21009,18055
+Alt-Biesdorf: Mittelstreifen	3nocross 21108,11628 21251,11560 21311,11528
 Kurt-Schumacher-Damm: Mittelstreifen	3nocross 4704,17101 4931,17174 4997,17241
 Rudower Str.: Mittelstreifen	3nocross 14788,3441 14822,3409 14994,3245
 Tempelhofer Damm: Mittelstreifen	3nocross 9248,4904 9239,4980 9207,5185
@@ -1068,15 +1080,15 @@ Oranienburger Str.: Straﬂenbahnhaltestelle	3nocross 9225,13389 9281,13374 9415,1
 Brauhausstr. -> Prenzlauer Promenade: Straﬂenbahntrasse	3 12211,16688 12017,16734 12046,16568
 Schnellerstr.: Mittelstreifen	3nocross 16720,6845 16677,6892 16568,7009
 Stendaler Str.: Straﬂenbahntrasse	3nocross 23895,15450 23913,15333 23933,15209 23952,15086
+Allee der Kosmonauten: Straﬂenbahntrasse	3nocross 20474,14442 20611,14445 20657,14446 20727,14467
+Allee der Kosmonauten: Straﬂenbahntrasse	3nocross 20944,14840 20980,14914 21163,15289
 #: note: Luftbild vvv
 Am Nordgraben: Mittelstreifen	3nocross 5201,20103 5299,20104 5399,20106 5517,20120
 Attilastr.: Mittelstreifen	3nocross 7263,4281 7310,4308 7368,4342
 Edisonstr.: Straﬂenbahn	3nocross 18010,7133 17934,7029 17919,6978
 Falkenseer Chaussee: Mittelstreifen	3nocross -5039,15618 -5154,15651 -5373,15714 -5473,15742
 Allee der Kosmonauten: Straﬂenbahntrasse	3nocross 20269,14256 20241,14016 20210,13776
-Allee der Kosmonauten: Straﬂenbahntrasse	3nocross 20474,14442 20611,14445 20657,14446 20727,14467
 Allee der Kosmonauten: Straﬂenbahntrasse	3nocross 20822,14594 20868,14698 20944,14840
-Allee der Kosmonauten: Straﬂenbahntrasse	3nocross 20944,14840 20980,14914 21163,15289
 Landsberger Allee: Mittelstreifen	3nocross 20260,15434 20525,15571 20641,15622
 Landsberger Allee: Mittelstreifen	3nocross 15256,14237 15430,14262 15838,14319
 Alt-Kaulsdorf: Mittelstreifen	3nocross 22484,11270 22756,11268 22937,11265
@@ -1103,7 +1115,6 @@ Zossener Str.: Straﬂenbahntrasse	3nocross 23080,15700 23218,15671 23411,15632 23
 Schloﬂstr.: Mittelstreifen	3nocross 4741,5309 4748,5357 4861,5581
 #: note: Luftbild
 Blumberger Damm: Mittelstreifen	3nocross 21378,14490 21408,14591 21537,14932
-#: note: Luftbild
 Blumberger Damm: Mittelstreifen	3nocross 21694,15802 21674,15675 21669,15637 21647,15496
 #: note: Luftbild
 Allee der Kosmonauten: Straﬂenbahntrasse	3nocross 21232,15465 21187,15350 21163,15289
@@ -1223,7 +1234,6 @@ Karl-Marx-Str.: unbequemes ‹berqueren wegen parkender Autos	3nocross 12830,8031 
 Flughafenstr.: Mittelstreifen (nicht unpassierbar, aber unbequem)	3nocross 11632,8302 11767,8330 11898,8362
 Stromstr.: unpassierbarer Mittelstreifen	3nocross 6183,13083 6165,12985 6157,12933 6150,12875
 M‰rkische Allee: Linksabbiegen verboten	3nocross 20109,16305 20219,16523 20339,16752
-#: XXX: wahrscheinlich (ich wurde durch einen anonymen Kommentar best‰tigt)
 M‰rkische Allee: Linksabbiegen verboten	3nocross 20512,17101 20691,17463 20717,17516 20843,17745 20889,17838 20912,17872 21009,18055
 M‰rkische Allee: Mittelstreifen	3nocross 19896,11688 19918,11891 19939,12068 19947,12140 20002,12492
 Falkenberger Chaussee: Linksabbiegen wegen Straﬂenbahn nicht mˆglich	3nocross 17400,17790 17703,17990 17843,18078
@@ -1370,6 +1380,7 @@ tragen (6 Stufen)	0:10 4121,4841
 #: by: Uwe Borgenhagen
 tragen (ca. 25 Stufen)	0:30 6160,7074
 tragen (10 Stufen)	0:15 22862,6547
+tragen (ca. 10 Stufen) oder sehr steile Rampe benutzen	0:15 22876,6598
 tragen (11 Stufen)	0:15 29524,4208
 tragen (11 Stufen)	0:15 29516,4223
 tragen (15 Stufen)	0:20 31362,2800
@@ -1751,7 +1762,7 @@ Dr‰ngelgitter	BNP:3::trailer=6 9884,10192
 #: note: Vorbeifahrt auf dem Gehweg, hohe Bordsteine
 Barriere	BNP:5::trailer=10 12316,9477
 Barriere, kann auf dem Gehweg umfahren werden	BNP:3::trailer=6 12186,9205
-Schranke (Griesinger-Krankenhaus)	BNP:5 21581,12182
+#XXX del --- immer offen? --- Schranke (Griesinger-Krankenhaus)	BNP:5 21581,12182
 Schranke	BNP:5 9410,21680
 Dr‰ngelgitter	BNP:5 3831,8674
 Schranke (Krankenhaus Herzberge)	BNP:1 17247,13519
