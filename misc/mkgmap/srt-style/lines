@@ -1,5 +1,5 @@
 # Below the comment from the original mkgmap style file
-# (svn revision 1657)
+# (svn revision 2009)
 # Some changes were applied to the default.
 
 # -------------------------------------------------------------------
@@ -29,14 +29,32 @@ contour=elevation | contour_ext=elevation
 	{ name '${ele|conv:m=>ft}'; }
 	[0x21 resolution 20]
 
+# Remove access=yes from highways.
+highway=* & access=yes { delete access }
+# By default, ways are accessible by the highest allowed mode of
+# transportation, and thus access=yes should be redundant.
+# However, sometimes cycleways may be tagged access=destination or similar,
+# to allow cars and motorcycles. In mkgmap, 'access' specifies the
+# generic access rule, and it can be overridden by more specific tags:
+# foot, bicycle, motorcar, motorcycle.
+
+# Hide unaccessible tunnels
+highway=* & tunnel=yes & (access=private|access=no)
+& foot!=* & bicycle!=* {delete highway;delete junction}
+# Disable dead-end-checks for unaccessible oneways
+highway=* & oneway=yes & (access=private|access=no)
+{add mkgmap:dead-end-check=false}
+# Validation-like checks (uncomment to enable)
+#highway=motorway_link & oneway!=yes & oneway!=no { echo "motorway_link lacks oneway" }
+
 # Set highway names to include the reference if there is one
 highway=motorway {name '${ref|highway-symbol:hbox} ${name}' | '${ref|highway-symbol:hbox}' | '${name}' }
 highway=trunk {name '${ref|highway-symbol:hbox} ${name}' | '${ref|highway-symbol:hbox}' | '${name}'; add display_name = '${name} (${ref})' }
 highway=primary {name '${ref|highway-symbol:box} ${name}' | '${ref|highway-symbol:box}' | '${name}'; add display_name = '${name} (${ref})' }
 bbbike:render=highway_primary {name '${ref|highway-symbol:box} ${name}' | '${ref|highway-symbol:box}' | '${name}'; add display_name = '${name} (${ref})' }
-highway=secondary {name '${ref|highway-symbol:oval} ${name}' | '${ref|highway-symbol:oval}' | '${name}'; add display_name = '${name} (${ref})' }
+highway=secondary | highway=tertiary {name '${ref|highway-symbol:oval} ${name}' | '${ref|highway-symbol:oval}' | '${name}'; add display_name = '${name} (${ref})' }
 bbbike:render=highway_secondary {name '${ref|highway-symbol:oval} ${name}' | '${ref|highway-symbol:oval}' | '${name}'; add display_name = '${name} (${ref})' }
-highway=* {name '${ref} ${name}' | '${ref}' | '${name}' }
+highway=* {name '${name}' | '${ref}' }
 
 # Flag unpaved roads.
 highway=*
@@ -55,9 +73,21 @@ highway=*
 { add mkgmap:unpaved=1 }
 
 # Convert generic path to most specific
-highway=path & bicycle=designated {set highway=cycleway }
-highway=path & horse=designated {set highway=bridleway }
-highway=path & foot=designated {set highway=footway }
+highway=footway & snowplowing!=no
+& (bicycle=yes|bicycle=designated|bicycle=permissive|bicycle=official)
+{set highway=cycleway}
+highway=path & snowplowing!=no
+& (bicycle=designated|bicycle=permissive|bicycle=official)
+{set highway=cycleway}
+highway=path & (horse=designated|horse=official)
+{set highway=bridleway}
+highway=path
+{set highway=footway}
+
+leisure=track & area!=yes
+{add highway=footway; name '${name} (${sport})' | '${name}'}
+(man_made=pier | man_made=piste:halfpipe) & area!=yes
+{add highway=footway; name '${ref} ${name}' | '${ref}' | '${name}' }
 
 # Roundabouts
 junction=roundabout & highway=trunk [0x0c road_class=3 road_speed=5 resolution 16]
@@ -139,7 +169,7 @@ highway=road { add mkgmap:dead-end-check = false} [0x06 road_class=0 road_speed=
 highway=* & area!=yes [0x07 ]
 
 natural=coastline [0x15 resolution 12]
-power=line [0x29 resolution 20]
+power=line [0x29 resolution 21]
 
 # SRT: change: rendering also for layer<0
 railway=* & abandoned=yes [0x3e resolution 17]
@@ -160,20 +190,23 @@ route=ferry {add mkgmap:ferry=1} [0x1a road_class=3 road_speed=0 resolution 18]
 waterway=canal [0x1f resolution 21]
 waterway=drain [0x1f resolution 22]
 waterway=river [0x1f resolution 18]
+waterway=rapids|waterway=waterfall [0x1f resolution 22]
 waterway=stream [0x18 resolution 22]
 
-man_made=pipeline {name '${operator}'} [0x28 resolution 23]
+man_made=cable|(man_made=* & man_made ~ '.*pipe.*')
+{name '${name} (${operator})' | '${name}' | '${operator}' }
+[0x28 resolution 23]
 
 # The following boundary styles are after the highway rules because ways
 # are frequently tagged with both and we want the highway to take priority.
 boundary=administrative { name '${mkgmap:boundary_name}' }
 boundary=administrative & admin_level<3 [0x1e resolution 16]
-boundary=administrative & admin_level<5 [0x1d resolution 18]
-boundary=administrative & admin_level<7 [0x1c resolution 20]
-boundary=administrative & admin_level<9 [0x1c resolution 21]
+boundary=administrative & admin_level<5 [0x1d resolution 19]
+boundary=administrative & admin_level<7 [0x1c resolution 21]
+boundary=administrative & admin_level<9 [0x1c resolution 22]
 boundary=administrative [0x1c resolution 22]
 boundary=national [0x1e resolution 17]
-boundary=political [0x1c resolution 17]
+boundary=political [0x1c resolution 19]
 
 # SRT
 FIXME=* {name '${FIXME}'} [0x2c resolution 17]
