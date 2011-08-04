@@ -99,6 +99,7 @@ use vars qw($VERSION $VERBOSE $WAP_URL
 	    $use_region_image
 	    $include_outer_region @outer_berlin_places $outer_berlin_qr
 	    $warn_message $use_utf8 $data_is_wgs84 $osm_data
+	    $bbbike_start_js_version
 	   );
 # XXX This may be removed one day
 use vars qw($use_cooked_street_data);
@@ -822,6 +823,8 @@ $detailwidth  = 500; # muß quadratisch sein!
 $detailheight = 500;
 $nice_berlinmap = 0;
 $nice_abcmap    = 0;
+
+$bbbike_start_js_version = '1.18';
 
 use vars qw(@b_and_p_plz_multi_files %is_usable_without_strassen %same_single_point_optimization);
 @b_and_p_plz_multi_files = 
@@ -1832,7 +1835,7 @@ sub choose_form {
     }
     if ($nice_berlinmap || $nice_abcmap) {
 	push @extra_headers, -onLoad => $onloadscript,
-	     -script => [{-src => $bbbike_html . "/bbbike_start.js?v=1.17"},
+	     -script => [{-src => $bbbike_html . "/bbbike_start.js?v=$bbbike_start_js_version"},
 			 ($nice_berlinmap
 			  ? {-code => qq{set_bbbike_images_dir('$bbbike_images')}}
 			  : ()
@@ -6856,7 +6859,7 @@ sub choose_all_form {
 
     http_header(@weak_cache);
     header(#too slow XXX -onload => "list_all_streets_onload()",
-	   -script => {-src => $bbbike_html . "/bbbike_start.js",
+	   -script => {-src => $bbbike_html . "/bbbike_start.js?v=$bbbike_start_js_version",
 		      },
 	  );
 

@@ -261,10 +261,17 @@ function set_street_in_berlinmap(type, inx) {
   for(var i = 1; i < 10000; i++) {
     var img = find_layer(type + "matchimg" + i);
     if (img) {
+      var containingDiv = find_layer(type + "match" + i);
       if (i == inx) {
 	img.src = bbbike_images_dir + "/reddot.png";
+	if (containingDiv) {
+	  containingDiv.style.zIndex = 1;
+	}
       } else {
 	img.src = bbbike_images_dir + "/bluedot.png";
+	if (containingDiv) {
+	  containingDiv.style.zIndex = 0;
+	}
       }
     } else {
       break;
