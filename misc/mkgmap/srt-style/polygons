@@ -1,15 +1,36 @@
+# Below the comment from the original mkgmap style file
+# (svn revision 1657)
+# Some changes were applied to the default.
+
+# -------------------------------------------------------------------
+# This is the default mkgmap style file for converting closed OSM ways
+# into Garmin polygons.
+# Any line prefaced with # is a comment and will not be applied.
+# Each line is a rule, of the generalised format:
+#  OSM_tag(s)_to_match  [Garmin_type_code resolution]
+# See http://wiki.openstreetmap.org/wiki/Mkgmap/help/style_rules
+# and http://wiki.openstreetmap.org/wiki/Mkgmap/help/Custom_styles
+# for more information.
+
 aeroway=airport [0x07 resolution 18]
 aeroway=aerodrome [0x07 resolution 18]
-aeroway=terminal [0x13 resolution 20]
+aeroway=helipad [0x0e resolution 20]
 
 amenity=kindergarten [0x0a resolution 18]
+amenity=cafe | amenity=fast_food | amenity=restaurant | amenity=food_court [0x08 resolution 20]
 amenity=college [0x0a resolution 18]
 amenity=grave_yard [0x1a resolution 18]
 amenity=hospital [0x0b resolution 18]
-amenity=parking [0x05 resolution 21]
+amenity=nursing_home [0x0b resolution 21]
+parking=underground | parking=multi-storey [0x06 resolution 21]
+amenity=parking | parking=surface [0x05 resolution 21]
+amenity=prison [0x04 resolution 20]
 amenity=school [0x0a resolution 20]
-amenity=supermarket [0x08 resolution 21]
+# amenity=supermarket is superceded by shop=supermarket or landuse=retail
+amenity=supermarket [0x08 resolution 20]
 amenity=university [0x0a resolution 18]
+
+healthcare=* [0x0b resolution 21]
 
 landuse=allotments [0x4e resolution 20]
 landuse=basin [0x3f resolution 18]
@@ -27,21 +48,26 @@ landuse=military [0x04 resolution 18]
 landuse=quarry [0x0c resolution 18]
 landuse=recreation_ground [0x19 resolution 18]
 landuse=reservoir [0x3f resolution 18]
+# on resolution 24, display building=* instead of landuse=residential
+landuse=residential [0x10 resolution 23-18]
 landuse=retail [0x08 resolution 20]
 landuse=village_green [0x17 resolution 20]
 landuse=vineyard [0x4e resolution 20]
+landuse=wood [0x50 resolution 18]
 
 leisure=common [0x17 resolution 20]
 leisure=garden [0x17 resolution 20]
 leisure=golf_course [0x18 resolution 20]
+leisure=ice_rink [0x19 resolution 21]
 leisure=marina [0x09 resolution 20]
 leisure=nature_reserve [0x16 resolution 18]
 leisure=park [0x17 resolution 20]
-leisure=pitch [0x19 resolution 20]
+leisure=pitch { name '${name} (${sport})' | '${name}' } [0x19 resolution 20]
 leisure=playground [0x17 resolution 20]
-leisure=sports_center | leisure=sports_centre [0x19 resolution 20]
-leisure=stadium [0x19 resolution 19]
-leisure=track [0x19 resolution 18]
+leisure=recreation_ground [0x19 resolution 18]
+leisure=sports_center | leisure=sports_centre { name '${name} (${sport})' | '${name}' } [0x19 resolution 20]
+leisure=stadium { name '${name} (${sport})' | '${name}' } [0x19 resolution 19]
+leisure=track { name '${name} (${sport})' | '${name}' } [0x19 resolution 18]
 leisure=water_park [0x09 resolution 18]
 
 military=airfield [0x04 resolution 18]
@@ -49,15 +75,19 @@ military=barracks [0x04 resolution 18]
 military=danger_area [0x04 resolution 18]
 military=range [0x04 resolution 18]
 
-natural=sea [0x32 resolution 10]
 natural=glacier [0x4d resolution 16]
 natural=marsh [0x51 resolution 20]
 natural=mud [0x51 resolution 20]
+natural=wetland [0x51 resolution 20]
 natural=scrub [0x4f resolution 20]
-natural=water [0x3c resolution 20]
+natural=water [0x3c resolution 18]
+natural=waterfall | waterway=waterfall [0x47 resolution 21]
+natural=sea [0x32 resolution 10]
 natural=wood [0x50 resolution 18]
 
 place=village [0x03 resolution 18]
+place=island & name=* [0x53 resolution 18]
+place=islet & name=* [0x53 resolution 20]
 
 shop=* [0x08 resolution 20]
 
@@ -68,5 +98,8 @@ highway=* & area=yes [0x05 resolution 21]
 
 waterway=riverbank [0x46 resolution 20]
 
+historic=museum | historic=memorial [0x1e resolution 20]
+historic=archaeological_site | historic=ruins [0x1e resolution 21]
+
 # building tag should be last
-building=* [0x13 resolution 24]
+building=* | man_made=* | amenity=* | tourism=* [0x13 resolution 24]
