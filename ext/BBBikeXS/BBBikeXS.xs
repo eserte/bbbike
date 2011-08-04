@@ -803,7 +803,8 @@ fast_plot_str(canvas, abk, fileref, ...)
 
 	    /* get line from file or data array */
 	    if (f) {
-	      fgets(buf, MAXBUF, f);
+	      if (fgets(buf, MAXBUF, f) == NULL)
+		break;
 	      currpos += strlen(buf);
 	    } else {
 	      SV **tmp = av_fetch(data_array, data_pos, 0);
@@ -1191,7 +1192,8 @@ fast_plot_point(canvas, abk, fileref, progress)
 	  currpos = 0;
 
 	  while(!feof(f)) {
-	    fgets(buf, MAXBUF, f);
+	    if (fgets(buf, MAXBUF, f) == NULL)
+	      break;
 	    currpos += strlen(buf);
 #ifdef MYDEBUG
 	    /* fprintf(stderr, "%s", buf); */
