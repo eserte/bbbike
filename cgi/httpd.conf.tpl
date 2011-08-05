@@ -50,6 +50,18 @@ Alias [% ROOT_URL %]  [% ROOT_DIR %]
     AddType "text/html; charset=utf-8" .html
 </Location>
 
+<IfModule deflate_module>
+    <Location [% ROOT_URL %]/data>
+        SetOutputFilter DEFLATE
+	# old browsers with problems
+	BrowserMatch ^Mozilla/4 gzip-only-text/html
+	BrowserMatch ^Mozilla/4\.0[678] no-gzip
+	BrowserMatch \bMSI[E] !no-gzip !gzip-only-text/html
+	# don't compress images (i.e. sehenswuerdigkeit...)
+	SetEnvIfNoCase Request_URI \.(?:gif|jpe?g|png)$ no-gzip dont-vary
+    </Location>
+</IfModule>
+
 [%
     IF CGI_TYPE == "Apache::Registry";
         FOR cgiurl = cgiurls
