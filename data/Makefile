@@ -206,6 +206,11 @@ strassen:	.strassen.tmp plaetze routing_helper-orig
 	    ${REPLACESTRASSEN} -catexpr 's/NH/N/' > $@~
 	mv $@~ $@
 
+# Just for testing:
+XXX-strassen-tmp-with-NH:
+	$(CONVERT_ORIG) -keep-directive alias -keep-old-name -5y strassen-orig > .strassen.tmp~
+	mv .strassen.tmp~ .strassen.tmp
+
 .for f in ${COOKED_TARGETS}
 _f_raw_${f}:=${f:S/-cooked$//}
 $f:	${_f_raw_${f}} inaccessible_landstrassen
