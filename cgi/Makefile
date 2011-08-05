@@ -34,9 +34,21 @@ httpd.conf: httpd.conf.tpl Makefile
 	chmod 644 httpd.conf~
 	mv httpd.conf~ httpd.conf
 	@echo
-	@echo Please add
-	@echo "    Include ${.CURDIR}/httpd.conf"
-	@echo to your Apache\'s httpd.conf
+	@if [ -d /usr/local/etc/apache22/Includes ] ; \
+	then \
+	    echo Please create a symlink; \
+	    echo "    ln -s ${.CURDIR}/httpd.conf /usr/local/etc/apache22/Includes/bbbike.conf"; \
+	    echo and restart the Apache; \
+	elif [-d /etc/apache2/sites-enabled ] ; \
+	then \
+	    echo Please create a symlink; \
+	    echo "    ln -s ${.CURDIR}/httpd.conf /etc/apache2/sites-enabled/bbbike.conf"; \
+	    echo and restart the Apache; \
+	else \
+	    echo Please add; \
+	    echo "    Include ${.CURDIR}/httpd.conf"; \
+	    echo to your Apache\'s httpd.conf and restart the Apache; \
+	fi
 	@echo
 
 alt-httpd.conf:	httpd.conf.st
