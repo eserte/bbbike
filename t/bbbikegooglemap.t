@@ -22,6 +22,8 @@ BEGIN {
     }
 }
 
+sub do_post ($$$$$);
+
 my $gmap_api = 2;
 
 use Getopt::Long;
@@ -38,7 +40,7 @@ if (!defined $cgi_url) {
     $cgi_url = $cgi_dir . '/bbbikegooglemap.cgi';
 }
 
-plan tests => 14;
+plan tests => 20;
 
 my $ua = LWP::UserAgent->new;
 $ua->agent('BBBike-Test/1.0');
@@ -85,7 +87,7 @@ $ua->agent('BBBike-Test/1.0');
 
 {
     my $url = $cgi_url;
-    my $resp = do_post($ua, $url, gpxfile => <<EOF);
+    my $resp = do_post($ua, $url, gpxfile => <<EOF, '.bbd');
 #: #: -*- coding: utf-8 -*-
 #:encoding: utf-8
 #:map: polar
@@ -102,7 +104,7 @@ EOF
 
 {
     my $url = $cgi_url;
-    my $resp = do_post($ua, $url, gpxfile => <<EOF);
+    my $resp = do_post($ua, $url, gpxfile => <<EOF, '.bbd');
 #:map: standard
 Spinnerbrücke	X 13.1910231,52.4333002
 Loretta	X 13.1764685,52.4202488
@@ -113,6 +115,54 @@ EOF
     ok($resp->is_success, "Success with post");
     check_points($resp, 5, 'Found exactly five points in POST with map=standard and latin1');
     like($resp->decoded_content, qr{Spinnerbr(ü|&#xfc;)cke}i, 'Found Spinnerbrücke');
+}
+
+{
+    my $url = $cgi_url;
+    my $resp = do_post($ua, $url, gpxfile => <<'EOF', '.gpx');
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="SRT">
+  <trk>
+    <trkseg>
+      <trkpt lat="52.5328254327" lon="13.3285581786" />
+      <trkpt lat="52.5330141094" lon="13.3285904489" />
+    </trkseg>
+  </trk>
+</gpx>
+EOF
+    ok($resp->is_success, "Success with post");
+    check_polyline($resp, 2, 'Found exactly two points in POST with gpx track');
+}
+
+{
+    my $url = $cgi_url;
+    my $resp = do_post($ua, $url, gpxfile => <<'EOF', '.kml');
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <Placemark>
+      <LineString>
+        <coordinates> 
+13.327553,52.520582 13.326041,52.518623 13.32736,52.518206
+</coordinates>
+      </LineString>
+    </Placemark>
+  </Document>
+</kml>
+EOF
+    ok($resp->is_success, "Success with post");
+    check_polyline($resp, 3, 'Found exactly three points in POST with kml track');
+}
+
+{
+    # Not well-formed xml
+    my $url = $cgi_url;
+    my $resp = do_post($ua, $url, gpxfile => <<EOF, '.gpx');
+<gpx>
+ <this>
+</gpx>
+EOF
+    ok($resp->is_success, "Success with post");
+    like($resp->decoded_content, qr{Ung(ü|&#xfc;)ltiges Datenformat.}, 'Found error message');
 }
 
 sub check_polyline {
@@ -149,10 +199,10 @@ sub check_points {
     }
 }
 
-sub do_post {
-    my($ua, $url, $key, $data) = @_;
+sub do_post ($$$$$) {
+    my($ua, $url, $key, $data, $suffix) = @_;
     require File::Temp;
-    my($tmpfh,$tmpfile) = File::Temp::tempfile(UNLINK => 1, SUFFIX => '.bbd');
+    my($tmpfh,$tmpfile) = File::Temp::tempfile(UNLINK => 1, SUFFIX => $suffix);
     print $tmpfh $data or die $!;
     close $tmpfh or die $!;
     $ua->post($url, Content_Type => 'form-data', Content => [$key => [$tmpfile]]);
