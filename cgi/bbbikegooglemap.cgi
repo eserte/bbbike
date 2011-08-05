@@ -1098,8 +1098,10 @@ EOF
 <form name="upload" onsubmit='setZoomInUploadForm()' class="boxed" style="margin-top:0.3cm; " method="post" enctype="multipart/form-data">
 EOF
     if ($self->{errormessageupload}) {
+	my $errormessageupload_html = escapeHTML($self->{errormessageupload});
+	$errormessageupload_html =~ s{\n}{<br />}g;
 	$html .= <<EOF;
-  <div class="error">@{[ escapeHTML($self->{errormessageupload}) ]}</div>
+  <div class="error">$errormessageupload_html</div>
 EOF
     }
     $html .= <<EOF;
