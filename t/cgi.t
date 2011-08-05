@@ -238,10 +238,24 @@ for my $cgiurl (@urls) {
 	ok($res->is_success, "Zoo")
 	    or diag(Dumper($res));
 	$content = uncompr($res);
-	BBBikeTest::like_long_data($content, qr/Start.*Zoologischer Garten/,
-				   "Start is Zoologischer Garten", ".html");
-	BBBikeTest::unlike_long_data($content, qr/\bZoo\b/,
-				     "Zoo not found (same point optimization)", ".html");
+	if ($content =~ m{Zoologischer Garten \[Elefantentor\]}) {
+	    # Since 2011-08 there is no one point matching this query,
+	    # but two for each entrance to the zoo. The "combine
+	    # places with same coordinates" feature is probably still
+	    # tested, because "Zoo" and "Zoologischer Garten [Eingang
+	    # Hardenbergplatz]" with the same coordinate is still
+	    # there.
+	    BBBikeTest::like_long_data($content, qr/start2.*Zoologischer Garten.*Elefantentor/,
+				       "First alternative is Zoologischer Garten Elefantentor", ".html");
+	    BBBikeTest::like_long_data($content, qr/start2.*\bZoo\b/,
+				       "Second alternative is just Zoo (Hardenbergplatz)", ".html");
+	    
+	} else {
+	    BBBikeTest::like_long_data($content, qr/Start.*Zoologischer Garten/,
+				       "Start is Zoologischer Garten", ".html");
+	    BBBikeTest::unlike_long_data($content, qr/\bZoo\b/,
+					 "Zoo not found (same point optimization)", ".html");
+	}
 	BBBikeTest::unlike_long_data($content, qr/\(\)/,
 				     "No empty parenthesis", ".html");
 
