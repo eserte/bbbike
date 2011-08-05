@@ -1452,9 +1452,9 @@ userdel	2::temp 8119,12414 8055,12186
        undef,
        undef,
        {
-         'until' => 1315173600,
-         'text' => 'Müllerstr. (Wedding) in beiden Richtungen zwischen Leopoldplatz und Seestr. Veranstaltung, Straße vollständig gesperrt (2. bis 4. September 2011)',
-         'from' => 1314828000,
+         'until' => 1312754400,
+         'text' => 'Müllerstr. (Wedding) in beiden Richtungen zwischen Leopoldplatz und Seestr. Veranstaltung, Straße vollständig gesperrt (5. bis 7. August 2011)',
+         'from' => 1312513200,
          'id' => 1431,
          'data' => 'userdel	2::temp 6790,16018 6914,15908 6936,15888 7043,15793 7129,15717 7198,15656 7277,15586
 ',
@@ -3053,6 +3053,39 @@ userdel	q4::inwork 2295,20358 2362,20218 2402,20126
          'data' => 'userdel	q4::inwork 15183,5480 15165,5506 15146,5592 15143,5705 15141,5774 15141,5800 15141,5870 15143,5936
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => 'INKO_108474',
+         'until' => 1312772400,
+         'text' => 'Holzhauser Str. (Reinickendorf) in beiden Richtungen zwischen Wittestr. und Berliner Str., Bauarbeiten, Straße vollständig gesperrt, 05.05.2011 bis 08.05.2011 05:00 Uhr',
+         'from' => 1312526331,
+         'id' => 2261,
+         'data' => 'userdel	2::inwork 3079,19045 2993,18962
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_017646',
+         'until' => 1312776000,
+         'text' => 'Lebuser Str., Koppenstr. und Str. der Pariser Kommune (Friedrichshain): Veranstaltung, Straßen nördlich der Karl-Marx-Str. vollständig gesperrt, 05.08.2011 06:00 Uhr bis 08.08.2011 06:00 Uhr ',
+         'from' => 1312430400,
+         'id' => 2262,
+         'data' => 'userdel	2::temp 12360,12505 12364,12589
+userdel	2::temp 12891,12549 12869,12425
+userdel	2::temp 12635,12629 12606,12471
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_017645',
+         'until' => 1312667999,
+         'text' => 'Yitzak-Rabin-Str. (Tiergarten) zwischen Str. des 17. Juni und Scheidemannstr sowie Scheidemannstr. und Heinrich-v.-Gagern-Str. gesperrt, ab 06.08.2011 07 Uhr bis ca. 24:00',
+         'from' => 1312520400,
+         'id' => 2263,
+         'data' => 'userdel	2::temp 8123,12615 8119,12414 8055,12186
+userdel	2::temp 8540,12420 8400,12417 8374,12416 8119,12414
+',
+         'type' => 'gesperrt'
        }
      
 );

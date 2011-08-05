@@ -12172,9 +12172,9 @@ EOF
 userdel	1::inwork 9164,12172 9183,12076 9201,11968
 EOF
      },
-     { from  => 1314828000, # 1217625881, # 2008-08-01 23:24 # zweiter Termin im Jahr
-       until => 1315173600, # 1217800800, # 2008-08-04 00:00
-       text  => 'Müllerstr. (Wedding) in beiden Richtungen zwischen Leopoldplatz und Seestr. Veranstaltung, Straße vollständig gesperrt (2. bis 4. September 2011)',
+     { from  => 1312513200, # zweiter Termin im Jahr (August oder September)
+       until => 1312754400,
+       text  => 'Müllerstr. (Wedding) in beiden Richtungen zwischen Leopoldplatz und Seestr. Veranstaltung, Straße vollständig gesperrt (5. bis 7. August 2011)',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp 6790,16018 6914,15908 6936,15888 7043,15793 7129,15717 7198,15656 7277,15586
@@ -19496,6 +19496,36 @@ EOF
        source_id => 'http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20110727.1340.352585.html',
        data  => <<EOF,
 userdel	q4::inwork 15183,5480 15165,5506 15146,5592 15143,5705 15141,5774 15141,5800 15141,5870 15143,5936
+EOF
+     },
+     { from  => 1312526331, # 2011-08-05 08:38
+       until => 1312772400, # 2011-08-08 05:00
+       text  => 'Holzhauser Str. (Reinickendorf) in beiden Richtungen zwischen Wittestr. und Berliner Str., Bauarbeiten, Straße vollständig gesperrt, 05.05.2011 bis 08.05.2011 05:00 Uhr',
+       type  => 'gesperrt',
+       source_id => 'INKO_108474',
+       data  => <<EOF,
+userdel	2::inwork 3079,19045 2993,18962
+EOF
+     },
+     { from  => 1312430400, # 2011-08-04 06:00
+       until => 1312776000, # 2011-08-08 06:00
+       text  => 'Lebuser Str., Koppenstr. und Str. der Pariser Kommune (Friedrichshain): Veranstaltung, Straßen nördlich der Karl-Marx-Str. vollständig gesperrt, 05.08.2011 06:00 Uhr bis 08.08.2011 06:00 Uhr ',
+       type  => 'gesperrt',
+       source_id => 'IM_017646',
+       data  => <<EOF,
+userdel	2::temp 12360,12505 12364,12589
+userdel	2::temp 12891,12549 12869,12425
+userdel	2::temp 12635,12629 12606,12471
+EOF
+     },
+     { from  => 1312520400, # 2011-08-05 07:00
+       until => 1312667999, # 2011-08-06 23:59
+       text  => 'Yitzak-Rabin-Str. (Tiergarten) zwischen Str. des 17. Juni und Scheidemannstr sowie Scheidemannstr. und Heinrich-v.-Gagern-Str. gesperrt, ab 06.08.2011 07 Uhr bis ca. 24:00',
+       type  => 'gesperrt',
+       source_id => 'IM_017645',
+       data  => <<EOF,
+userdel	2::temp 8123,12615 8119,12414 8055,12186
+userdel	2::temp 8540,12420 8400,12417 8374,12416 8119,12414
 EOF
      },
     );
