@@ -89,7 +89,7 @@ sub kmz2bbd {
     }
     my $docMember;
     for my $m ($zip->members) {
-	if ($m->fileName =~ m{\.kml$}) {
+	if ($m->fileName =~ m{\.kml$}i) {
 	    if ($docMember) {
 		warn "Multiple .kml files in .kmz found, using only the first one!";
 	    } else {
