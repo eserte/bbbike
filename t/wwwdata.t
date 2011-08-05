@@ -29,7 +29,7 @@ use Image::Info qw(image_info);
 
 use Strassen::Core;
 
-plan tests => 38;
+plan tests => 40;
 
 my $htmldir = $ENV{BBBIKE_TEST_HTMLDIR};
 if (!$htmldir) {
@@ -89,6 +89,16 @@ for my $do_accept_gzip (0, 1) {
 	my $image_info = image_info(\$content);
 	ok(!$image_info->{error}, "No error detected while looking at image content");
 	is($image_info->{file_media_type}, $resp->header("Content-Type"), "Expected mime type");
+	is $resp->header("content-encoding")||'', '', 'No compression for images'
+	    or diag <<'EOF';
+If mod_deflate is used, then something like
+
+     SetEnvIfNoCase Request_URI \.(?:gif|jpe?g|png)$ no-gzip dont-vary
+
+should be put into the Apache configuration for
+the bbbike/data location; or an equivalent solution
+for other systems is necessary.
+EOF
     }
 
     {
