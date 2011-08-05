@@ -62,6 +62,17 @@ Alias [% ROOT_URL %]  [% ROOT_DIR %]
     </Location>
 </IfModule>
 
+<IfModule perl_module>
+    <Perl>
+        use lib "[% ROOT_DIR %]/cgi";
+    </Perl>
+    PerlModule BBBikeDataDownloadCompat
+    <LocationMatch "^\Q[% ROOT_URL %]/data/\E(strassen|landstrassen|landstrassen2)$">
+        SetHandler perl-script
+        PerlResponseHandler BBBikeDataDownloadCompat->handler
+    </LocationMatch>
+</IfModule>
+
 [%
     IF CGI_TYPE == "Apache::Registry";
         FOR cgiurl = cgiurls
