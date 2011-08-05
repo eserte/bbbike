@@ -1256,7 +1256,7 @@ LAYER
 [%  xxx_is_first = 0 -%]
 [% END -%]
   CLASS
-    EXPRESSION /^NH?$/
+    EXPRESSION 'N'
 [% IF p.legend -%]
     NAME "Nebenstraﬂe"
 [% END -%]
@@ -1285,6 +1285,37 @@ LAYER
    END
 -%]
 
+[% BLOCK CLASS_NH -%]
+  CLASS
+    EXPRESSION 'NH'
+[% IF p.legend -%]
+    NAME "wichtige Nebenstraﬂe"
+[% END -%]
+    LABEL
+#      MINFEATURESIZE 200
+      MINFEATURESIZE AUTO
+      MINDISTANCE 50
+      POSITION auto
+      TYPE truetype
+      FONT "street"
+      MINSIZE [% p.lblsize %]
+      COLOR 0 0 0
+      OUTLINECOLOR 225 225 225
+      ANGLE AUTO
+      PARTIALS FALSE
+    END
+    COLOR [% COLOR_PALE_YELLOW %]
+    SYMBOL 'width'
+    SIZE [% p.size %]
+    [% IF p.maxscale %]MAXSCALE [% p.maxscale %][% END %]
+    [% IF p.minscale %]MINSCALE [% p.minscale %][% END %]
+  END
+[% END -%]
+[% FOR i = SIZES_N;
+      PROCESS CLASS_NH p=i;
+   END
+-%]
+
 [% BLOCK CLASS_H -%]
   CLASS
     EXPRESSION 'H'
@@ -1304,7 +1335,7 @@ LAYER
       ANGLE AUTO
       PARTIALS FALSE
     END
-    COLOR 255 255 160
+    COLOR [% COLOR_LIGHT_YELLOW %]
     SYMBOL 'width'
     SIZE [% p.size %]
     [% IF p.maxscale %]MAXSCALE [% p.maxscale %][% END %]
