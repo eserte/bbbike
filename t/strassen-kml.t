@@ -31,7 +31,7 @@ BEGIN {
 
 use BBBikeTest;
 
-plan tests => 28;
+plan tests => 30;
 
 use_ok("Strassen::KML")
     or exit 1; # avoid recursive calls to Strassen::new
@@ -121,6 +121,21 @@ for my $kml_filename ('doc.kml',
     my $s0 = Strassen->new($tmpfile);
     isa_ok($s, "Strassen", ".kmz detection in Strassen::Core seems OK");
     is_deeply($s0->data, $s->data, "No difference between Strassen and Strassen::KML loading");
+}
+
+{
+    # .kmz without valid .kml
+    my($tmpfh,$tmpfile) = tempfile(SUFFIX => '.kmz',
+				   UNLINK => 1);
+    my $zip = Archive::Zip->new;
+    $zip->addString("something", "a filename");
+    $zip->addString("else", "another_file_not_ending_in_dot_kml");
+    unless ($zip->writeToFileNamed($tmpfile) == AZ_OK) {
+	die "Can't write to $tmpfile";
+    }
+
+    ok !eval { Strassen::KML->new($tmpfile) }, 'No valid .kmz file';
+    like $@, qr{Can't find any file .*\.kml.* in}, 'Error message';
 }
 
 {
