@@ -296,7 +296,8 @@ barrier=cycle_barrier [0x7005 resolution 24]
 # XXX unless I have a different symbol reuse the BNP symbol
 barrier=gate [0x7005 resolution 24]
 highway=steps [0x7006 resolution 21]
-note=* {name '${note}'} [0x7110 resolution 21]
 power=generator & power_source=wind [0x7202 resolution 21]
 amenity=bicycle_parking [0x2f1b resolution 23]
 amenity=bench [0x6605 resolution 24]
+# should be last, as it is rather unspecific
+note=* {name '${note}'} [0x7110 resolution 21]
