@@ -265,10 +265,15 @@ ${BBBIKETMPDIR}/bbbike_routable.osm:
 # so the remake rule really works
 	cd ../data && ${MAKE} ../tmp/bbbike_routable.osm
 
-${BBBIKETMPDIR}/bbbike_routable_gmapsupp.img: ${BBBIKETMPDIR}/bbbike_routable.img ${BBBIKEMKGMAPDIR}/typ/M000002a.TYP
+BBBIKE_ROUTABLE_GMAPSUPP_SOURCES=	${BBBIKETMPDIR}/bbbike_routable.img
+.if exists(${BBBIKETMPDIR}/berlin_osm_routable.img)
+BBBIKE_ROUTABLE_GMAPSUPP_SOURCES+=	${BBBIKETMPDIR}/berlin_osm_routable.img
+.endif
+
+${BBBIKETMPDIR}/bbbike_routable_gmapsupp.img: ${BBBIKE_ROUTABLE_GMAPSUPP_SOURCES} ${BBBIKEMKGMAPDIR}/typ/M000002a.TYP
 	cd ${BBBIKETMPDIR} && \
 	    ${MKGMAP} --family-id=42 --family-name="Slavens Map" \
-	       --gmapsupp bbbike_routable.img ${BBBIKEMKGMAPDIR}/typ/M000002a.TYP
+	       --gmapsupp ${BBBIKE_ROUTABLE_GMAPSUPP_SOURCES} ${BBBIKEMKGMAPDIR}/typ/M000002a.TYP
 	mv ${BBBIKETMPDIR}/gmapsupp.img ${BBBIKETMPDIR}/bbbike_routable_gmapsupp.img
 
 ${BBBIKETMPDIR}/bbbike_routable.img: ${BBBIKETMPDIR}/bbbike_routable.osm ${BBBIKEMKGMAPDIR}/srt-style/*
