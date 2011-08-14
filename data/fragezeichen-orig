@@ -804,6 +804,7 @@ Goethestr. (Neuenhagen): guter Asphalt, Q0	? 30848,12259 30757,12428 30677,12576
 #: by: Susanne Rau:
 Sawallstr. (Erkner): mäßiges Kopfsteinpflaster, Q2	? 34024,1360 34181,1349
 #: by: Ramona Hesse vvv
+#: XXX anonymous meint aber: Beton, Q2
 Am Schlangenfenn (Potsdam): guter Asphalt, Q0	? -10516,-5498 -10585,-5528 -10630,-5553 -10712,-5594 -10758,-5502 -10630,-5440
 Am Schlangenfenn (Potsdam): guter Asphalt, Q0	? -10585,-5528 -10630,-5440 -10652,-5393 -10804,-5464
 #: by: ^^^
@@ -1993,7 +1994,6 @@ Theodor-Brugsch-Str.: Qualität?	? 16602,25126 16633,25116 16801,25057 16960,2495
 Georg-Benjamin-Str.: Qualität?	? 16633,25116 16589,24977 16736,24912 16868,24858 16960,24955 17031,25008
 Sudauer Str.: Qualität?	? 17259,26148 17215,26263 17202,26324 17229,26400 17310,26452 17418,26518
 Nadrauer Str.: Qualität?	? 17215,26263 17367,26349
-Straße 6 (Buch): Qualität?	? 17493,26391 17714,26509
 Straße 7 (Buch): Qualität?	? 17452,26466 17668,26607
 #: XXX Eintrag in str_cont_ausnahme fehlt
 #: XXX zumindest hier der östliche Abschnitt sah asphaltiert aus
@@ -2008,6 +2008,7 @@ Fuchsschwanzweg: Qualität? Kann man als Radfahrer zum Weg an der Kolonie am Nord
 Rauhbankzeile: Qualität? Kann man als Radfahrer zum Weg an der Kolonie am Nordgraben gelangen (ggfs. über eine Treppe?)	? 5959,20524 6030,20385 6040,20364
 Dübelpfad: Qualität? Kann man als Radfahrer zum Weg an der Kolonie am Nordgraben gelangen (ggfs. über eine Treppe?)	? 6022,20547 6090,20414 6097,20398
 Fäustelweg: Qualität? Kann man als Radfahrer zum Weg an der Kolonie am Nordgraben gelangen (ggfs. über eine Treppe?)	? 6090,20570 6143,20464 6152,20452
+#: XXX Ulrike G. meint: Q1, Beton, aber RW7? Nachfrage läuft
 Kellenzeile: Qualität?	? 5885,20478 5747,20640 5660,20727 5565,20822
 #: XXX anonymous meinte nur "Kopfsteinpflaster" ohne Kategorisierung
 Landshuter Str. (Lichtenrade): Qualität?	? 11696,-2272 11842,-2230 11877,-2211 11919,-2175 11946,-2134 11980,-2071 12010,-2050 12110,-2023
@@ -2182,7 +2183,6 @@ Petersenweg: Qualität?	? -3835,14668 -3919,14617
 Hohenzollernring - Flankenschanze: Qualität? Hat diese Verbindung einen Straßennamen?	? -3880,14770 -3735,14832
 Jenneweg: Qualität? Existiert für Radfahrer eine Verbindung zum Raminpark?	? -3900,14818 -4015,14744
 Roonstr. (Spandau): Qualität?	? -3665,14966 -3582,14886 -3499,14806
-Münsingerstr.: Qualität?	? -3598,14587 -3535,14408
 Martin-Albertz-Weg: Qualität?	? -3535,14408 -3587,14389
 Altstädter Ring - Münsingerstr./Martin-Albertz-Weg: Qualität?	? -3498,14413 -3535,14408
 #: XXX anonymous meint: Kopfsteinpflaster, Q2, aber enge Straße q4 (?)
@@ -2387,6 +2387,7 @@ Ancillonweg: Qualität?	? 11204,21567 11228,21684
 Wodanstr. (Französisch Buchholz): Qualität?	? 12216,21945 12162,21743
 #: XXX Eintrag in str_cont_ausnahme vielleicht notwendig
 #: XXX Stefan Penjert meint: Q2, aber ohne weitere Angaben (Nachfrage läuft)
+#: XXX anonymous meint: schlechtes Kopfsteinpflaster, Q3; aber ich sollte lieber vor Ort prüfen, insbesondere auch den nördlichen Strang
 Eddastr.: Qualität?	? 12364,21623 12418,21727 12433,21880 12448,21971 12467,22147 12488,22305 12489,22420
 #: XXX bei osm als "Eddastr." ausgeschildert, sonst aber nicht, sondern "KGA Parksiedlung"
 Eddastr.: Qualität? Ist das hier noch die Eddastraße oder eine KGA-Straße?	? 12476,22423 12473,22801
@@ -2656,7 +2657,6 @@ Zwerghuhnweg: Qualität?	? 15476,332 15565,379 15657,436 15731,476 15803,522
 Lachshuhnweg: Qualität?	? 15731,476 15789,386 15859,297 15927,245
 #: XXX_osm: bei osm falsch geschrieben
 Lakenfelderweg: Qualität?	? 15944,368 16008,446 16068,525 16085,547 16116,581
-Minorkaweg: Qualität?	? 15831,484 15925,541 16008,628
 Seidenhuhnweg: Qualität?	? 16008,446 16074,389
 Perlhuhnweg: Qualität?	? 15952,719 16008,628 16085,547
 Döbelner Weg: Qualität?	? 16153,835 16117,927 16083,1013 16054,1087
@@ -2857,7 +2857,6 @@ Lohrer Pfad: Qualität? Teilweise für Autos gesperrt?	? -8443,14826 -8439,14844 -
 Oberdorfer Steig: Qualität? Teilweise für Autos gesperrt?	? -8316,14460 -8289,14664 -8281,14739 -8270,14782 -8213,14837
 Hochhausweg: Qualität? Wo genau geht die Straße in die Straße 600 über?	? -6755,15682 -6890,15692 -6977,15706
 Straße 600: Qualität?	? -6977,15706 -7072,15719 -7160,15726
-Am Finkenherd: Qualität?	? -7004,15434 -6977,15706 -6932,16048
 Flurende: Qualität?	? -7146,15554 -7091,15550 -7072,15719 -7052,15917 -7027,16072 -7003,16188
 Kleiner Querweg: Qualität?	? -7148,16119 -7109,16095 -7027,16072 -6932,16048 -6854,16039
 An der Tränke: Qualität?	? -7109,16095 -7146,15928 -7160,15726 -7146,15554
@@ -2907,6 +2906,7 @@ Kohstallweg: Qualität?	? -5645,14887 -5512,14844
 Wunderwaldstr.: Qualität?	? -5442,14738 -5396,14893
 Unnaer Str.: Qualität?	? -5608,15105 -5600,15214 -5590,15313 -5575,15512
 Portaer Str.: Qualität?	? -5590,15313 -5527,15285 -5442,15282 -5355,15277
+#: XXX anonymous meint: Q2 ohne weitere Angaben, q1, enge Straße, und: "sehr zugeparkt"
 Iserlohner Str.: Qualität?	? -5575,15512 -5531,15522 -5481,15526 -5426,15528 -5396,15515 -5319,15477
 Lüdinghauser Weg: Qualität?	? -5442,15282 -5396,15515
 #: XXX_osm in osm falsch geschrieben?
@@ -3062,7 +3062,6 @@ Straße 60 (Karow): Qualität?	? 15957,22449 15931,22408
 Straße 62: Qualität?	? 16080,22366 16049,22330
 Straße 63: Qualität?	? 16206,22282 16171,22247
 Straße 64: Qualität?	? 16327,22202 16301,22159
-Straße 69: Qualität?	? 15434,22604 15638,22473 15898,22296
 Straße 58: Qualität?	? 15638,22473 15547,22345 15450,22232
 Straße 42 (Karow): Qualität?	? 15271,22527 15377,22452 15442,22412 15547,22345 15705,22236 15740,22238 15759,22208
 Kolonie Am Teichberg: Qualität?	? 15705,22236 15672,22127

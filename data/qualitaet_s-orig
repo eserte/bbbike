@@ -6117,6 +6117,7 @@ Am Stichkanal: Parkweg	Q1 22759,4430 22797,4518
 ######################### User Contributions #################################
 #: by: anonymous vvv
 # 
+Straße 69: schlechter fester Sandweg, Schlaglöcher	Q3+ 15434,22604 15638,22473 15898,22296
 Suzetteweg: gutes Verbundsteinpflaster	Q1 11805,21385 11561,21429
 Erbsenpfad: schlechter fester Sandweg	Q3 -7872,14409 -7850,14555
 #: note: "enge Straße", aber ohne weitere Kategorisierung
@@ -13584,6 +13585,7 @@ Thaler Str.: Asphalt	Q0 13744,21067 13817,21304 13884,21524 13938,21700
 Hohensaatener Str.: guter Beton	Q0 21782,16253 21842,16242 22063,16203 22088,16341 22097,16375 22111,16451
 # 
 #: by: Christian Bräuniger: vvv
+Münsingerstr.: kleinteiliges Kopfsteinpflaster	Q1 -3598,14587 -3535,14408
 (Franckepark - Templerzeile): Parkweg markiert als Radweg auf Verbundstein und teilweise fester Kies (wassergebunden)	Q1 9381,6277 9426,6239 9463,6232 9683,6199
 (Schachtelhalmweg - Strohblumenweg): Gras- bzw. Schotterweg	Q2 20360,1987 20340,1974 20383,1903 20471,1768 20525,1713
 #: by: ^^^
@@ -14076,7 +14078,9 @@ Simpsonweg: mäßiger Beton	Q1- 10082,-671 9937,-693 9913,-705 9899,-732 9907,-812
 #: by: G. Chill:
 Stephanusring: Asphalt	Q0 11934,22108 11890,22123 11863,22146 11876,22212 11950,22162
 #: by: Karin Sommer:
-Samländische Str.: guter Asphalt	Q0 10900,17397 10706,17391
+#: corrected_by: C. Bräuniger (guter Asphalt -> mäßiger Asphalt)
+#: XXX Qualität prüfen: Asphalt gut oder mäßig? Außerdem: enge Straße oder nicht?
+Samländische Str.: mäßiger Asphalt	Q1 10900,17397 10706,17391
 # 
 #: by: Fred Wulff:
 #: corrected_by: srt ("mäßiger" gestrichen)
@@ -16930,6 +16934,18 @@ Windmühlenberg: Kopfsteinpflaster	Q2 -3905,15605 -3900,15650
 # 
 #: by: Barbara (toellner...):
 Tutzinger Str.: guter Asphalt	Q0 12203,-2259 12019,-2683
+# 
+#: by: britta (no email):
+Minorkaweg: fester Sandweg	Q2 15831,484 15925,541 16008,628
+# 
+#: by: Kornelius (expedition...):
+Gustav-Krone-Str.: Asphalt	Q0 1514,208 1507,301
+# 
+#: by: olaf binder
+Am Finkenherd: Asphalt	Q0 -7004,15434 -6977,15706 -6932,16048
+# 
+#: by: Nancy (nancy77...):
+Straße 6 (Buch): asphaltiert	Q0 17493,26391 17714,26509
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206
