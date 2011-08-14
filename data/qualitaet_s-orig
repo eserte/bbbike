@@ -95,7 +95,7 @@ Maybachufer: Asphalt	Q0 12563,9536 12764,9433 12844,9351 12871,9356
 Am Landwehrkanal: Parkweg, Schotterstellen, bei Regen große Pfützen	Q1 12897,9365 12900,9465 13109,9743
 Am Landwehrkanal: Asphalt	Q0 13109,9743 13225,9897
 Am Landwehrkanal: Parkweg	Q1 13225,9897 13333,9929
-Innstr.: Kopfsteinpflaster (mäßig bis schlecht)	Q2 13107,8343 13166,8423 13217,8493 13262,8554 13301,8606 13314,8624 13366,8694
+Innstr.: Kopfsteinpflaster (mäßig bis schlecht)	Q2- 13107,8343 13166,8423 13217,8493 13262,8554 13301,8606 13314,8624 13366,8694
 Elsenstr.: Asphalt	Q0 13402,8741 13456,8809 13507,8872 13661,9069 13760,9188
 Herrfurthstr.: mäßiges Kopfsteinpflaster	Q2 11979,8014 11823,7980 11757,7965
 Herrfurthstr.: mäßiges Kopfsteinpflaster	Q2 11647,7940 11573,7924 11472,7899
@@ -127,7 +127,7 @@ Kressenweg: Asphalt	Q0 23513,9567 23528,9680 23574,9782
 Kressenweg: Asphalt, einige "Moabiter Kissen"	Q0- 23574,9782 23603,9883 23659,10074
 Fischerstr.: Kopfsteinpflaster	Q2 16032,10842 16080,10743 16187,10587
 Fischerstr.: Kopfsteinpflaster	Q2 15982,10765 16080,10743
-Wallensteinstr./Neuer Feldweg: mäßiges bis schlechtes Kopfsteinpflaster	Q2 17378,9715 17360,9629 17425,9605 17456,9594 17549,9529 18037,9195 18120,9100 18136,9072
+Wallensteinstr./Neuer Feldweg: mäßiges bis schlechtes Kopfsteinpflaster	Q2- 17378,9715 17360,9629 17425,9605 17456,9594 17549,9529 18037,9195 18120,9100 18136,9072
 Dönhoffstr.: Kopfsteinpflaster/Asphalt	Q1 18136,9072 18201,8984
 Halker Zeile: schlechtes Kopfsteinpflaster	Q3 9940,559 10063,251 10156,13 10214,-142 10266,-284 10374,-552 10473,-799
 #: by: Jürgen Schulz-Brüssel
@@ -639,7 +639,7 @@ Marheinekeplatz: Kopfsteinpflaster	Q2 9759,9307 9892,9286 10004,9268
 Schleiermacherstr.: Kopfsteinpflaster	Q2 10001,9234 10004,9268 10032,9456 10067,9667 10135,9806
 Bergmannstr.: Kopfsteinpflaster	Q2 9973,9232 10001,9234
 Franz-Künstler-Str.: Kopfsteinpflaster	Q2 9991,10637 10026,10635
-Hanauer Str.: Kopfsteinpflaster, teilweise recht schlecht	Q2 4430,7896 4283,8016
+Hanauer Str.: Kopfsteinpflaster, teilweise recht schlecht	Q2- 4430,7896 4283,8016
 Verl. Pücklerstr.: Waldweg	Q1 1558,6729 1364,6691 1170,6654 967,6620 905,6631 880,6645 832,6607 778,6603 698,6567 546,6583 369,6594 306,6582 218,6571
 Bismarckstr.: Kopfsteinpflaster	Q2 -4892,1267 -5028,1133 -5092,1130 -5419,897 -5488,833 -5616,780 -6009,559
 Stahnsdorfer Damm: Kopfsteinpflaster	Q2 -4803,1240 -4995,1075
@@ -738,7 +738,7 @@ Wuhlewanderweg: guter Asphalt	Q0 22030,6600 22097,6414 22146,6338 22214,6271 222
 Wuhlewanderweg: guter Verbundsteinbelag	Q0 22240,6118 22135,5882 22079,5873
 Wuhlewanderweg: Verbundsteine, teilweise etwas uneben	Q1 22079,5873 21846,5856 21744,5804 21602,5685
 Hämmerlingstr.: Asphalt	Q0 21683,6946 21774,6880 21833,6810 21861,6719 21913,6554 21984,6317 22000,6245 22033,6144 22066,6028 22079,5873 22089,5776 22092,5673 22095,5585
-Dorfstr.: schlechtes Kopfsteinpflaster, teilweise gut befahrbare Banketten	Q2 30357,3555 30319,3511 30281,3479 30201,3375 30188,3301 29902,3104 29959,3031
+Dorfstr.: schlechtes Kopfsteinpflaster, teilweise gut befahrbare Banketten	Q2- 30357,3555 30319,3511 30281,3479 30201,3375 30188,3301 29902,3104 29959,3031
 Dorfstr. (Rahnsdorf): unbefestigter Weg	Q2 30319,3511 30293,3520 30267,3520 30240,3503
 Dorfstr. (Rahnsdorf): Asphalt	Q0 30240,3503 30224,3483 30201,3375
 Mühlenweg: Kopfsteinpflaster	Q2 30345,3661 30360,3605 30357,3555
@@ -1393,8 +1393,8 @@ Ossastr.: gutes Kopfsteinpflaster	Q1 12836,8980 12910,8929
 Hüttenroder Weg: gutes Kopfsteinpflaster	Q1 13274,8945 13456,8809
 Beermannstr.: Kopfsteinpflaster	Q2 13973,9465 14157,9345
 Matthesstr.: Kopfsteinpflaster	Q2 14157,9345 14179,9515
-Elbestr.: mäßiges, eher schlechteres Kopfsteinpflaster	Q2 12772,8612 12822,8675 12881,8750 12954,8840 13048,8956
-Schandauer Str.: mäßiges, eher schlechteres Kopfsteinpflaster	Q2 13102,8724 12954,8840
+Elbestr.: mäßiges, eher schlechteres Kopfsteinpflaster	Q2- 12772,8612 12822,8675 12881,8750 12954,8840 13048,8956
+Schandauer Str.: mäßiges, eher schlechteres Kopfsteinpflaster	Q2- 13102,8724 12954,8840
 Laubestr.: Kopfsteinpflaster	Q2 12980,8566 12822,8675
 Neckarstr.: Kopfsteinpflaster	Q2 12639,8344 12384,8284
 Isarstr.: Kopfsteinpflaster	Q2 12384,8284 12368,8356 12349,8464
@@ -8085,7 +8085,7 @@ Mudrackzeile: asphaltiert	Q0 6886,17649 6950,17669 7020,17690 6985,17812
 Mariabrunner Weg: asphaltiert	Q0 6985,17812 6909,17796 6841,17781
 #: note: ^^^
 #: note: die ADFC-Karte sagt hier: "mäßig geeignet":
-Walderseestr.: mäßiges bis schlechtes Kopfsteinpflaster	Q2 7309,17159 7614,17245
+Walderseestr.: mäßiges bis schlechtes Kopfsteinpflaster	Q2- 7309,17159 7614,17245
 Fräsersteig: Betonplatten	Q1 5770,20407 5842,20451 5885,20478 5900,20487 5959,20524 6022,20547 6034,20551 6090,20570 6134,20585 6184,20550 6298,20599
 #: by ^^^
 # 
@@ -18332,7 +18332,7 @@ Memlingstr.: sehr schlechtes Kopfsteinpflaster	Q3; 4134,3825 4025,3958
 Memlingstr.: sehr schlechtes Kopfsteinpflaster	Q3 4134,3825 4265,3661
 #: by: ^^^
 #: by: Chantal [AM] vvv
-Rettigweg: schlechtes Kopfsteinpflaster	Q2 9828,17659 9760,17612 9706,17570
+Rettigweg: schlechtes Kopfsteinpflaster	Q2- 9828,17659 9760,17612 9706,17570
 Pradelstr.: mäßiger Asphalt	Q2 9760,17612 9663,17734
 Friedrich-List-Ufer: sehr guter Asphalt	Q0 8110,13042 8106,13130 8102,13304 8098,13419
 #: by: ^^^
