@@ -19357,8 +19357,8 @@ userdel	q4::inwork; 19904,3464 20012,3532
 EOF
      },
      { from  => 1310014800, # 2011-07-07 07:00
-       until => 1313337600, # 2011-08-14 18:00
-       text  => 'Geschwister-Scholl-Str./Tucholskystr. (Mitte): Bauarbeiten, Brücke vollständig gesperrt (bis Mitte 08/11) in beiden Richtungen Höhe Ebertsbrücke, 08.07.2011 07:00 Uhr bis 14.08.2011 18:00 Uhr ',
+       until => 1314806400, # 2011-08-31 18:00
+       text  => 'Geschwister-Scholl-Str./Tucholskystr. (Mitte): Bauarbeiten, Brücke vollständig gesperrt (bis Ende 08/11) in beiden Richtungen Höhe Ebertsbrücke, 08.07.2011 07:00 Uhr bis 31.08.2011 18:00 Uhr ',
        type  => 'gesperrt',
        source_id => 'INKO_096636',
        data  => <<EOF,
@@ -19453,9 +19453,9 @@ EOF
 userdel	q4::inwork; 9224,14169 9383,13978
 EOF
      },
-     { from  => 1312229500, # 2011-08-01 22:11
-       until => 1313791200, # 2011-08-20 00:00
-       text  => 'Oranienburg: B273: Kampfmitteluntersuchung OL Oranienburg, 01.08.2011 bis 19.08.2011 ',
+     { from  => 1313269753, # 2011-08-13 23:09
+       until => 1315605600, # 2011-09-10 00:00
+       text  => 'Oranienburg: B273: Kampfmitteluntersuchung OL Oranienburg, 01.08.2011 bis 09.09.2011 ',
        type  => 'gesperrt',
        source_id => '116501481',
        data  => <<EOF,
@@ -19526,6 +19526,42 @@ EOF
        data  => <<EOF,
 userdel	2::temp 8123,12615 8119,12414 8055,12186
 userdel	2::temp 8540,12420 8400,12417 8374,12416 8119,12414
+EOF
+     },
+     { from  => 1310464800, # 2011-07-12 12:00
+       until => 1313852400, # 2011-08-20 17:00
+       text  => 'Wartenberger Weg (Malchow): Baustelle, Straße vollständig gesperrt an der Kreuzung Dorfstr., 13.07.2011 12:00 Uhr bis 20.08.2011 17:00 Uhr',
+       type  => 'handicap',
+       source_id => 'INKO_107049',
+       data  => <<EOF,
+userdel	q4::inwork 16094,19179 15640,19208
+EOF
+     },
+     { from  => 1313272800, # 2011-08-14 00:00
+       until => 1356994800, # 2013-01-01 00:00
+       text  => 'Wildau: L401: Straßenbau OD Wildau, Einmündung Richard-Sorge-Straße bis Stichkanal ab 15.08.11 Vollsperrung Richtung Königs Wusterhausen, 30.08.2010 bis 31.12.2012 ',
+       type  => 'handicap',
+       source_id => 'LS/S-SG33-W/10/173',
+       data  => <<EOF,
+userdel	q3::inwork; 26679,-8825 26381,-9753
+EOF
+     },
+     { from  => 1313270628, # 2011-08-13 23:23
+       until => 1314827999, # 2011-08-31 23:59
+       text  => 'Rennbahnstr. (Weißensee) Richtung Heinersdorf Höhe Pasedagplatz Bauarbeiten, Fahrtrichtung gesperrt (bis Ende 08/11) ',
+       type  => 'handicap',
+       source_id => 'INKO_108874',
+       data  => <<EOF,
+userdel	q4::inwork; 14144,17165 14060,17221 13912,17320
+EOF
+     },
+     { from  => 1313270697, # 2011-08-13 23:24
+       until => 1318629600, # 2011-10-15 00:00
+       text  => 'Schenkenberg: L26: grundhafter Ausbau der L 26 OA Baumgarten - Knoten Schenkenberg, 02.05.2011 bis 14.10.2011 ',
+       type  => 'gesperrt',
+       source_id => 'LS/O-SG33-E/10/214-10',
+       data  => <<EOF,
+userdel	2::inwork 45906,105450 46581,105900
 EOF
      },
     );

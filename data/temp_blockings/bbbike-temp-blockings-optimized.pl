@@ -1451,15 +1451,7 @@ userdel	2::temp 8119,12414 8055,12186
        undef,
        undef,
        undef,
-       {
-         'until' => 1312754400,
-         'text' => 'Müllerstr. (Wedding) in beiden Richtungen zwischen Leopoldplatz und Seestr. Veranstaltung, Straße vollständig gesperrt (5. bis 7. August 2011)',
-         'from' => 1312513200,
-         'id' => 1431,
-         'data' => 'userdel	2::temp 6790,16018 6914,15908 6936,15888 7043,15793 7129,15717 7198,15656 7277,15586
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2751,15 +2743,7 @@ userdel	q4::inwork 425,8766 490,8716
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1312754400,
-         'text' => 'Open Air Gallery am 7. August 2011 auf der Oberbaumbrücke ',
-         'from' => 1312581600,
-         'id' => 2206,
-         'data' => 'userdel	2::temp 13178,10623 13206,10651 13305,10789 13332,10832
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'source_id' => 'LS/O-SG33-E/11/044',
@@ -2922,8 +2906,8 @@ userdel	q4::inwork; 10264,12826 10166,12777 10132,12941
        },
        {
          'source_id' => 'INKO_096636',
-         'until' => 1313337600,
-         'text' => 'Geschwister-Scholl-Str./Tucholskystr. (Mitte): Bauarbeiten, Brücke vollständig gesperrt (bis Mitte 08/11) in beiden Richtungen Höhe Ebertsbrücke, 08.07.2011 07:00 Uhr bis 14.08.2011 18:00 Uhr ',
+         'until' => 1314806400,
+         'text' => 'Geschwister-Scholl-Str./Tucholskystr. (Mitte): Bauarbeiten, Brücke vollständig gesperrt (bis Ende 08/11) in beiden Richtungen Höhe Ebertsbrücke, 08.07.2011 07:00 Uhr bis 31.08.2011 18:00 Uhr ',
          'from' => 1310014800,
          'id' => 2247,
          'data' => 'userdel	2::inwork 9524,12950 9529,12925
@@ -3006,34 +2990,16 @@ userdel	q4::inwork 2295,20358 2362,20218 2402,20126
        },
        {
          'source_id' => '116501481',
-         'until' => 1313791200,
-         'text' => 'Oranienburg: B273: Kampfmitteluntersuchung OL Oranienburg, 01.08.2011 bis 19.08.2011 ',
-         'from' => 1312229500,
+         'until' => 1315605600,
+         'text' => 'Oranienburg: B273: Kampfmitteluntersuchung OL Oranienburg, 01.08.2011 bis 09.09.2011 ',
+         'from' => 1313269753,
          'id' => 2256,
          'data' => 'userdel	2::inwork -1887,38134 -2179,38179
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'INKO_108243',
-         'until' => 1312642800,
-         'text' => 'Pastor-Niemöller-Platz (Niederschönhausen): Baustelle, Einmündung Friedrichs-Engels-Str. vollständig gesperrt, Staugefahr (bis Anfang 08/11) im Kreisverkehr Einmündung Friedrich-Engels-Str., 25.07.2011 07:00 Uhr bis 06.08.2011 17:00 Uhr ',
-         'from' => 1311483600,
-         'id' => 2257,
-         'data' => 'userdel	q4::inwork 9826,19382 9791,19363 9789,19329
-',
-         'type' => 'handicap'
-       },
-       {
-         'source_id' => 'INKO_108454',
-         'until' => 1313161200,
-         'text' => 'Späthstr. (Treptow): Baustelle, Straße vollständig gesperrt (bis Mitte 08/11) in beiden Richtungen zwischen Königsheideweg und Neue Späthstr., 01.08.2011 07:00 Uhr bis 12.08.2011 17:00 Uhr ',
-         'from' => 1312088400,
-         'id' => 2258,
-         'data' => 'userdel	q4::inwork 15363,5668 15183,5480 15038,5235 14988,5214 14808,5202 14744,5211
-',
-         'type' => 'handicap'
-       },
+       undef,
+       undef,
        {
          'source_id' => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20110727.1340.352586.html',
          'until' => 1313359200,
@@ -3054,36 +3020,46 @@ userdel	q4::inwork 2295,20358 2362,20218 2402,20126
 ',
          'type' => 'handicap'
        },
+       undef,
+       undef,
+       undef,
        {
-         'source_id' => 'INKO_108474',
-         'until' => 1312772400,
-         'text' => 'Holzhauser Str. (Reinickendorf) in beiden Richtungen zwischen Wittestr. und Berliner Str., Bauarbeiten, Straße vollständig gesperrt, 05.05.2011 bis 08.05.2011 05:00 Uhr',
-         'from' => 1312526331,
-         'id' => 2261,
-         'data' => 'userdel	2::inwork 3079,19045 2993,18962
+         'source_id' => 'INKO_107049',
+         'until' => 1313852400,
+         'text' => 'Wartenberger Weg (Malchow): Baustelle, Straße vollständig gesperrt an der Kreuzung Dorfstr., 13.07.2011 12:00 Uhr bis 20.08.2011 17:00 Uhr',
+         'from' => 1310464800,
+         'id' => 2264,
+         'data' => 'userdel	q4::inwork 16094,19179 15640,19208
 ',
-         'type' => 'gesperrt'
+         'type' => 'handicap'
        },
        {
-         'source_id' => 'IM_017646',
-         'until' => 1312776000,
-         'text' => 'Lebuser Str., Koppenstr. und Str. der Pariser Kommune (Friedrichshain): Veranstaltung, Straßen nördlich der Karl-Marx-Str. vollständig gesperrt, 05.08.2011 06:00 Uhr bis 08.08.2011 06:00 Uhr ',
-         'from' => 1312430400,
-         'id' => 2262,
-         'data' => 'userdel	2::temp 12360,12505 12364,12589
-userdel	2::temp 12891,12549 12869,12425
-userdel	2::temp 12635,12629 12606,12471
+         'source_id' => 'LS/S-SG33-W/10/173',
+         'until' => 1356994800,
+         'text' => 'Wildau: L401: Straßenbau OD Wildau, Einmündung Richard-Sorge-Straße bis Stichkanal ab 15.08.11 Vollsperrung Richtung Königs Wusterhausen, 30.08.2010 bis 31.12.2012 ',
+         'from' => 1313272800,
+         'id' => 2265,
+         'data' => 'userdel	q3::inwork; 26679,-8825 26381,-9753
 ',
-         'type' => 'gesperrt'
+         'type' => 'handicap'
        },
        {
-         'source_id' => 'IM_017645',
-         'until' => 1312667999,
-         'text' => 'Yitzak-Rabin-Str. (Tiergarten) zwischen Str. des 17. Juni und Scheidemannstr sowie Scheidemannstr. und Heinrich-v.-Gagern-Str. gesperrt, ab 06.08.2011 07 Uhr bis ca. 24:00',
-         'from' => 1312520400,
-         'id' => 2263,
-         'data' => 'userdel	2::temp 8123,12615 8119,12414 8055,12186
-userdel	2::temp 8540,12420 8400,12417 8374,12416 8119,12414
+         'source_id' => 'INKO_108874',
+         'until' => 1314827999,
+         'text' => 'Rennbahnstr. (Weißensee) Richtung Heinersdorf Höhe Pasedagplatz Bauarbeiten, Fahrtrichtung gesperrt (bis Ende 08/11) ',
+         'from' => 1313270628,
+         'id' => 2266,
+         'data' => 'userdel	q4::inwork; 14144,17165 14060,17221 13912,17320
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'LS/O-SG33-E/10/214-10',
+         'until' => 1318629600,
+         'text' => 'Schenkenberg: L26: grundhafter Ausbau der L 26 OA Baumgarten - Knoten Schenkenberg, 02.05.2011 bis 14.10.2011 ',
+         'from' => 1313270697,
+         'id' => 2267,
+         'data' => 'userdel	2::inwork 45906,105450 46581,105900
 ',
          'type' => 'gesperrt'
        }
