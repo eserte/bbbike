@@ -102,7 +102,8 @@ Bˆcklerpark: enge Kurven, Fuﬂg‰nger	q3 10923,10113 10885,10045
 Am Landwehrkanal: Parkweg	q1 10521,10126 10362,10120 10226,10145 10083,10192
 vor dem Kanzleramt: Fuﬂg‰nger, manchmal gesperrt	q1 8120,12756 8123,12615
 Am Stadtpark: Parkweg mit Fuﬂg‰ngern	q1 15395,12762 15433,12686 15454,12519
-Am Stichkanal: Parkweg	q1 22832,4491 22702,4592 22585,4634 22458,4565
+Am Stichkanal: Fuﬂg‰nger	q1 22832,4491 22814,4505 22797,4518 22702,4592 22585,4634
+Am Stichkanal: Fuﬂg‰nger	q1 22759,4430 22797,4518
 Schwedter Str. (Mauerpark): Park, Fuﬂg‰nger	q2 10354,14987 10238,15316 10186,15463 10122,15647
 (Fuﬂweg am Griesinger-Krankenhaus): Fuﬂg‰nger	q1 21935,12160 21930,12185 21615,12326 21367,12437 21268,12481 21222,12501
 (Fuﬂg‰ngerbr¸cke Ostkreuz): Fuﬂg‰nger	q3 14798,10985 14787,10972 14764,10877 14794,10844
@@ -840,6 +841,11 @@ enge Rampe	q3 23784,14569 23792,14561 23793,14573
 (Erich-Kuttner-Str. - Storkower Str.): Bordstein	q3 14088,13627 14060,13622
 Schrebergasse: enge Straﬂe	q0 23980,4633 23925,4555 23850,4497
 Rathausstr.: einige "Moabiter Kissen", leicht umfahrbar	q0 15576,12315 15628,12246 15651,12214
+Unterf¸hrung S-Bhf. Nˆldnerplatz: Fuﬂg‰nger	q3 15886,10947 15879,10954 15865,10965 15859,10970
+Spreepromenade: Pfad	q2 23608,5196 23785,5169 23808,5177
+Liebstadter Gang: Bordsteine	q1 24434,5645 24471,5544
+(Unterf¸hrung S-Bhf. Hirschgarten): Fuﬂg‰nger	q3 23948,6054 23947,6014 23930,6013 23931,5992
+(S-Bhf. Hirschgarten - KGA Erpetal): eng	q2 23948,6054 23951,6063 23941,6118
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q3 11805,19071 11895,19183 11927,19308
 Ebersstr.: Sch¸ler	q2 7245,8583 7292,8631
 Straﬂe 103 (Niederschˆnhausen): enge Straﬂe	q1 10914,20065 11051,19789
@@ -1169,7 +1175,7 @@ Else-Ury-Bogen: Fuﬂg‰nger	q3 4817,10943 4714,10950
 Bootshausweg: Fuﬂg‰nger	q1 -1073,16610 -1067,16635 -1092,16659 -1156,16689 -1190,16714 -1214,16745 -1229,16773
 Bootshausweg: Fuﬂg‰nger, teilweise sehr eng, nicht f¸r Anh‰nger geeignet	q2 -1229,16773 -1406,16907 -1465,16957
 Bootshausweg: Fuﬂg‰nger	q1 -1465,16957 -1520,16989 -1564,17001 -1610,17007 -1664,17009 -1743,16990 -1723,16973 -1690,16971 -1676,16957 -1673,16939 -1688,16862 -1675,16813
-Karl-Pokern-Str.: spielende Kinder	q1 26079,5057 26034,5056 25984,5070 25941,5069 25860,5067 25732,5065
+Karl-Pokern-Str.: spielende Kinder	q0 26079,5057 26034,5056 25984,5070 25941,5069 25860,5067 25732,5065
 (Plantagenstr. - Ruheplatzstr.): Gehweg, Fuﬂg‰nger	q4 7595,15596 7540,15566
 Bruno-Apitz-Str.: viele Fuﬂg‰nger	q1 16423,24935 16359,24795 16304,24825 16264,24764 16131,24850
 Bruno-Apitz-Str.: viele Fuﬂg‰nger	q1 16359,24795 16334,24728
@@ -1325,7 +1331,7 @@ Askaloner Weg: enge Straﬂe	q1 2402,24687 2407,24657 2384,24603 2311,24546 2262,2
 Juttastr.: enge Straﬂe	q1 1072,4542 949,4366
 Herbert-Baum-Str.: enge Straﬂe	q1 13826,16026 13869,15912 13904,15818 13943,15717 13964,15656 13989,15589
 Sendener Weg: enge Straﬂe	q0 964,18321 1040,18283 1178,18223 1221,18327 1281,18487 1346,18662
-Gilgenburger Str.: enge Straﬂe	q1 24387,5672 24434,5645 24666,5726
+Gilgenburger Str.: enge Straﬂe	q1 24387,5672 24434,5645 24549,5685 24666,5726
 Blochmannstr.: enge Straﬂe	q1 5097,988 5036,949 4986,959 4925,961 4862,975 4788,1023 4702,1147 4634,1245
 Schenkestr.: enge Straﬂe	q1 17961,8312 17794,8429
 Knˆterichpfad: enge Straﬂe, Gartensiedlung	q1 -7842,14683 -7808,14939 -7783,15059
@@ -1492,7 +1498,7 @@ Renatenweg: Fuﬂg‰nger	q2 6463,2724 6529,2642
 Weinbrennerweg: enge Straﬂe	q1 6003,19461 6211,19559
 Grammestr.: enge Straﬂe	q1 1057,14389 1028,14251
 Hirschsprung: enge Straﬂe	q2 23837,5978 23874,5870
-Wiesenpromenade: enge Straﬂe	q1 23660,5819 23675,5823 23758,5846 23874,5870
+Wiesenpromenade: enge Straﬂe	q1 23660,5819 23675,5823 23758,5846 23874,5870 23912,5883 23919,5908 23951,5923 23931,5992
 Lenther Steig: enge Straﬂe	q1 1024,14889 1037,14814 1042,14721 1037,14515
 (Klothildestr - Schloﬂallee): Fuﬂg‰nger	q1 11068,19494 11081,19456
 Eschenallee (Rosenthal): enge Straﬂe	q1 9460,20644 9479,20535 9498,20435

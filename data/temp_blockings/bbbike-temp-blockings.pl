@@ -1516,7 +1516,7 @@ EOF
        text  => 'Fürstenwalder Damm zwischen Bölschestr. und Stillerzeile Baustelle, Straße stadteinwärts gesperrt (bis Ende 07.2005)',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q3; 25579,5958 25121,5799
+userdel	q3; 25579,5958 25179,5819 25121,5799
 EOF
      },
      { from  => 1108681200, # 2005-02-18 00:00
@@ -1617,7 +1617,7 @@ EOF
        text  => 'Dahlwitzer Landstr. - Bölschestr. (Köpenick) in beiden Richtungen an der Bahnbrücke Bölschestr. Baustelle, Straße vollständig gesperrt (Brücken- und Straßenarbeiten) (bis 26.09.2005)',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 25585,6050 25579,5958
+userdel	q4 25584,6029 25579,5958
 EOF
      },
      { from  => 1110668400, # 2005-03-13 00:00
@@ -3879,7 +3879,7 @@ EOF
        data  => <<EOF,
 userdel	q4 25012,5754 24871,5699 24700,5633 24471,5544 24366,5504 24285,5472 24162,5424 24049,5380 23950,5342
 userdel	q4 25012,5754 25018,5756 25121,5799
-userdel	q4 25579,5958 25121,5799
+userdel	q4 25579,5958 25179,5819 25121,5799
 EOF
      },
      { from  => 1146520800, # 2006-05-02 00:00
@@ -6671,7 +6671,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_004066',
        data  => <<EOF,
-userdel	2::inwork 25585,6050 25776,6054 25967,6125 26139,6188 26247,6228 28586,7139 29168,7350 29192,7368
+userdel	2::inwork 25584,6029 25776,6054 25967,6125 26139,6188 26247,6228 28586,7139 29168,7350 29192,7368
 EOF
      },
      { from  => 1163286000, # 2006-11-12 00:00
@@ -10755,7 +10755,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_007457',
        data  => <<EOF,
-userdel	1::inwork 25579,5958 25121,5799
+userdel	1::inwork 25579,5958 25179,5819 25121,5799
 EOF
      },
      { from  => 1200178800, # 2008-01-13 00:00
@@ -12398,7 +12398,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_009763',
        data  => <<EOF,
-userdel	q4::inwork 22740,4415 22791,4457 22832,4491 22862,4511 22893,4532 22959,4576 23055,4640 23363,4846 23451,4877
+userdel	q4::inwork 22740,4415 22759,4430 22791,4457 22832,4491 22862,4511 22893,4532 22959,4576 23055,4640 23363,4846 23451,4877
 EOF
      },
      { from  => 1219528800, # 2008-08-24 00:00
@@ -15800,7 +15800,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_014045',
        data  => <<EOF,
-userdel	q4::inwork; 23451,4877 23363,4846 23055,4640 22959,4576 22893,4532 22862,4511 22832,4491 22791,4457 22740,4415
+userdel	q4::inwork; 23451,4877 23363,4846 23055,4640 22959,4576 22893,4532 22862,4511 22832,4491 22791,4457 22759,4430 22740,4415
 EOF
      },
      { from  => 1250978400, # 2009-08-23 00:00
@@ -18119,7 +18119,7 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20100720.1055.303592.html',
        data  => <<EOF,
-userdel	q4::inwork 22605,15111 22449,15127 22409,15128 22343,15115 22059,15153
+userdel	q4::inwork 22605,15111 22449,15127 22419,15127 22343,15115 22059,15153
 EOF
      },
      { from  => 1281128604, # 2010-08-08 00:00 1281218400
@@ -18944,7 +18944,7 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20110421.1205.341677.html',
        data  => <<EOF,
-userdel	q4::inwork 22740,4415 22791,4457 22832,4491 22862,4511 22893,4532 22959,4576 23055,4640 23363,4846 23451,4877
+userdel	q4::inwork 22740,4415 22759,4430 22791,4457 22832,4491 22862,4511 22893,4532 22959,4576 23055,4640 23363,4846 23451,4877
 EOF
      },
      { from  => 1304676000, # 2011-05-06 12:00

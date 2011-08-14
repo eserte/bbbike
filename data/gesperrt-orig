@@ -852,6 +852,9 @@ Landhausring	1 21710,12798 21866,12763 21893,12783 21900,12820 21880,12858 21729
 Kaulsdorfer Str.	1 22539,6258 22324,6397
 Kreisverkehr Brebacher Weg	1 21655,12521 21642,12538 21651,12569 21666,12577 21674,12565 21671,12532 21655,12521
 Kreisverkehr Brebacher Weg	1 21581,12182 21570,12191 21575,12212 21589,12217 21602,12208 21598,12185 21581,12182
+Hirteplatz: Kreisverkehr	1 23766,5281 23775,5271 23775,5258 23765,5248 23751,5248 23744,5262 23743,5268 23746,5276 23756,5280 23766,5281
+Löcknitzstr.	1 26496,5047 26612,5051
+Brösener Str.	1 26247,6228 26284,6130 26282,6033
 ######################################################################
 #
 # Potsdam
@@ -1329,12 +1332,22 @@ Berliner Str.: Straßenbahntrasse	3nocross 12396,17514 12436,17682 12467,17814
 Daumstr.: Mittelstreifen	3nocross -1821,16327 -1816,16111 -1815,15976
 Zossener Str.: Straßenbahntrasse	3nocross 22811,15753 22883,15740 23080,15700
 Landsberger Chaussee: Straßenbahntrasse	3nocross 22771,16194 22974,16139 23159,16086
+Salvador-Allende-Str.: Mittelstreifen	3nocross 23404,5325 23403,5385 23402,5483
+#: XXX Wie wird die Situation nach den Bauarbeiten aussehen?
+#: last_checked: 2011-08-14
+#: next_check: 2013-01-01
+Fürstenwalder Damm: Straßenbahntrasse	3nocross 23660,5477 23728,5446 23822,5403 23851,5389
 #
 ####################################################################
 #
 # Stellen, an denen getragen werden muß:
 # die Zahl hinter dem ":" entspricht ungefähr den verlorenen Sekunden
 # 
+tragen (16 Stufen)	0:25 22814,4505
+tragen (19 Stufen)	0:30 23930,6013
+tragen (16 Stufen)	0:25 23948,6054
+tragen (7 Stufen)	0:10 15879,10954
+tragen (8 Stufen)	0:10 15865,10965
 #: note: zwei Treppen: 9 Stufen + 6 Stufen
 tragen (15 Stufen)	0:25 27728,-3146
 tragen (4 Stufen)	0:6 27361,-1551

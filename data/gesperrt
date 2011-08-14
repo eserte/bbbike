@@ -656,6 +656,9 @@ Landhausring	1 21710,12798 21866,12763 21893,12783 21900,12820 21880,12858 21729
 Kaulsdorfer Str.	1 22539,6258 22324,6397
 Kreisverkehr Brebacher Weg	1 21655,12521 21642,12538 21651,12569 21666,12577 21674,12565 21671,12532 21655,12521
 Kreisverkehr Brebacher Weg	1 21581,12182 21570,12191 21575,12212 21589,12217 21602,12208 21598,12185 21581,12182
+Hirteplatz: Kreisverkehr	1 23766,5281 23775,5271 23775,5258 23765,5248 23751,5248 23744,5262 23743,5268 23746,5276 23756,5280 23766,5281
+Löcknitzstr.	1 26496,5047 26612,5051
+Brösener Str.	1 26247,6228 26284,6130 26282,6033
 Am Neuen Garten	1 -12166,1384 -12212,1201 -12276,831 -12302,718
 Am Neuen Garten	1 -12332,585 -12582,127
 Hochstraße	3nocross::ignrte -11399,-1339 -11461,-1424 -11540,-1543
@@ -1758,6 +1761,19 @@ Ludwigsfelder Str. -> Zossener Str.: Straßenbahntrasse	3::igndisp 22888,15768 22
 Straßenbahntrasse	3nocross::ignrte 22771,16194 22974,16139 23159,16086
 Landsberger Chaussee -> Ludwigsfelder Str.: Straßenbahntrasse	3::igndisp 23159,16086 22974,16139 22961,16077
 Ludwigsfelder Str. -> Landsberger Chaussee: Straßenbahntrasse	3::igndisp 22961,16077 22974,16139 22771,16194
+Mittelstreifen	3nocross::ignrte 23404,5325 23403,5385 23402,5483
+Salvador-Allende-Str. [Abzweig] -> Salvador-Allende-Str.: Mittelstreifen	3::igndisp 23428,5382 23403,5385 23404,5325
+Salvador-Allende-Str. -> Salvador-Allende-Str. [Abzweig]: Mittelstreifen	3::igndisp 23402,5483 23403,5385 23428,5382
+Straßenbahntrasse	3nocross::ignrte 23660,5477 23728,5446 23822,5403 23851,5389
+Fürstenwalder Damm -> Ahornweg: Straßenbahntrasse	3::igndisp 23822,5403 23728,5446 23691,5368
+Ahornweg -> Fürstenwalder Damm: Straßenbahntrasse	3::igndisp 23691,5368 23728,5446 23660,5477
+Hoher Weg -> Fürstenwalder Damm: Straßenbahntrasse	3::igndisp 23766,5281 23822,5403 23728,5446
+Fürstenwalder Damm -> Hoher Weg: Straßenbahntrasse	3::igndisp 23851,5389 23822,5403 23766,5281
+tragen (16 Stufen)	0:25:-232 22814,4505
+tragen (19 Stufen)	0:30:86 23930,6013
+tragen (16 Stufen)	0:25:-164 23948,6054
+tragen (7 Stufen)	0:10:-225 15879,10954
+tragen (8 Stufen)	0:10:-231 15865,10965
 tragen (15 Stufen)	0:25:38 27728,-3146
 tragen (4 Stufen)	0:6:-210 27361,-1551
 tragen (2 Stufen)	0:5:-180 3431,1987
