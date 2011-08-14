@@ -2,10 +2,9 @@
 # -*- perl -*-
 
 #
-# $Id: resolve_stars,v 1.7 2008/11/07 22:46:38 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003,2005,2009 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003,2005,2009,2011 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -67,38 +66,21 @@ my $new_s = Strassen->new;
 $s2->read_stream(sub {
     local $_ = shift;
     my $dir = shift;
-    my @res_begin;
-    my @res_end;
-    if (@{ $_->[Strassen::COORDS] } > 2) {
-	if ($_->[Strassen::COORDS][0] eq '*') {
-	    if ($_->[Strassen::COORDS][1] eq '*' ||
-		$_->[Strassen::COORDS][2] eq '*') {
-		warn "Can't handle * in @{ $_->[Strassen::COORDS] }";
-	    } else {
-		push @res_begin, get_neighbor_points(@{ $_->[Strassen::COORDS] }[1,2]);
-	    }
+    if (@{ $_->[Strassen::COORDS] } == 3 &&
+	$_->[Strassen::COORDS][0] eq '*' &&
+	$_->[Strassen::COORDS][1] ne '*' &&
+	$_->[Strassen::COORDS][2] eq '*'
+       ) {
+	# This is the
+	#    * X,Y *
+	# case. Probably this should not be special-handled here.
+	my @neighbors = get_all_neighbor_points($_->[Strassen::COORDS][1]);
+	if (!@neighbors) {
+	    die "Should not happen: no neighbors for point $_->[Strassen::COORDS][1] in @{ $_->[Strassen::COORDS] }";
 	}
-	if ($_->[Strassen::COORDS][-1] eq '*') {
-	    if ($_->[Strassen::COORDS][-2] eq '*' ||
-		$_->[Strassen::COORDS][-3] eq '*') {
-		warn "Can't handle * in @{ $_->[Strassen::COORDS] }";
-	    } else {
-		push @res_end, get_neighbor_points(@{ $_->[Strassen::COORDS] }[-2,-3]);
-	    }
-	}
-	for my $i (1 .. $#{$_->[Strassen::COORDS]}-1) {
-	    if ($_->[Strassen::COORDS][$i] eq '*') {
-		warn "Can't handle * in @{ $_->[Strassen::COORDS] }";
-	    }
-	}
-    }
-    if (!@res_begin && !@res_end) {
-	$new_s->push_ext($_, $dir);
-    } else {
-	@res_begin = ($_->[Strassen::COORDS][0])  if !@res_begin;
-	@res_end   = ($_->[Strassen::COORDS][-1]) if !@res_end;
-	for my $begin (@res_begin) {
-	    for my $end (@res_end) {
+	for my $begin (@neighbors) {
+	    for my $end (@neighbors) {
+		next if $begin eq $end; # The only difference to the similar code block below.
 		my @r;
 		$r[Strassen::NAME]   = $_->[Strassen::NAME];
 		$r[Strassen::CAT]    = $_->[Strassen::CAT];
@@ -109,16 +91,73 @@ $s2->read_stream(sub {
 		$new_s->push_ext(\@r, $dir);
 	    }
 	}
+    } else {
+	my @res_begin;
+	my @res_end;
+	if (@{ $_->[Strassen::COORDS] } >= 3) {
+	    if ($_->[Strassen::COORDS][0] eq '*') {
+		if ($_->[Strassen::COORDS][1] eq '*' ||
+		    $_->[Strassen::COORDS][2] eq '*') {
+		    warn "Can't handle * in @{ $_->[Strassen::COORDS] }";
+		} else {
+		    push @res_begin, get_neighbor_points(@{ $_->[Strassen::COORDS] }[1,2]);
+		}
+	    }
+	    if ($_->[Strassen::COORDS][-1] eq '*') {
+		if ($_->[Strassen::COORDS][-2] eq '*' ||
+		    $_->[Strassen::COORDS][-3] eq '*') {
+		    warn "Can't handle * in @{ $_->[Strassen::COORDS] }";
+		} else {
+		    push @res_end, get_neighbor_points(@{ $_->[Strassen::COORDS] }[-2,-3]);
+		}
+	    }
+	    for my $i (1 .. $#{$_->[Strassen::COORDS]}-1) {
+		if ($_->[Strassen::COORDS][$i] eq '*') {
+		    warn "Can't handle * in @{ $_->[Strassen::COORDS] }";
+		}
+	    }
+	}
+	if (!@res_begin && !@res_end) {
+	    $new_s->push_ext($_, $dir);
+	} else {
+	    @res_begin = ($_->[Strassen::COORDS][0])  if !@res_begin;
+	    @res_end   = ($_->[Strassen::COORDS][-1]) if !@res_end;
+	    for my $begin (@res_begin) {
+		for my $end (@res_end) {
+		    my @r;
+		    $r[Strassen::NAME]   = $_->[Strassen::NAME];
+		    $r[Strassen::CAT]    = $_->[Strassen::CAT];
+		    $r[Strassen::COORDS] =
+			[$begin,
+			 @{$_->[Strassen::COORDS]}[1..$#{$_->[Strassen::COORDS]}-1],
+			 $end];
+		    $new_s->push_ext(\@r, $dir);
+		}
+	    }
+	}
     }
 });
 
 print $new_s->as_string;
 
+# Get all neighbors of $p1 except $p2
 sub get_neighbor_points {
     my($p1, $p2) = @_;
     my @res;
     while(my($k,$v) = each %{$net->{Net}{$p1}}) {
 	next if $k eq $p2;
+	push @res, $k;
+    }
+    # sort, to have the generated data always in same order (which
+    # is vc-friendly)
+    sort @res;
+}
+
+# Get really all neighbors of $p1
+sub get_all_neighbor_points {
+    my($p) = @_;
+    my @res;
+    while(my($k,$v) = each %{$net->{Net}{$p}}) {
 	push @res, $k;
     }
     # sort, to have the generated data always in same order (which
