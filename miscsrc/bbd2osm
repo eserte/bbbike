@@ -517,7 +517,7 @@ sub handle_waterway_like {
     }
     # XXX handling W0,W1 etc. missing
 
-    my @node_ids = get_node_ids($r);
+    my @node_ids = get_node_ids($r, undef, is_area => $is_area);
 
     my $name = $r->[Strassen::NAME];
     _xmlify($name);
@@ -594,7 +594,7 @@ sub handle_area_like {
 	}
     }
 
-    my @node_ids = get_node_ids($r);
+    my @node_ids = get_node_ids($r, undef, is_area => 1);
     push @node_ids, $node_ids[0] unless $node_ids[0] == $node_ids[$#node_ids];
 
     my $name = $r->[Strassen::NAME];
@@ -847,12 +847,17 @@ while(<$wayfh>) {
 print qq{</osm>\n};
 
 sub get_node_ids {
-    my($r, $attribs) = @_;
+    my($r, $attribs, %opts) = @_;
     my @node_ids;
     for my $sxy (@{ $r->[Strassen::COORDS] }) {
 	my($px,$py) = $Karte::Polar::obj->trim_accuracy($Karte::Polar::obj->standard2map(split /,/, $sxy));
 	my $this_node_id = maybe_add_node($px, $py, $attribs);
 	push @node_ids, $this_node_id;
+    }
+    if ($opts{is_area}) {
+	if ($r->[Strassen::COORDS][0] ne $r->[Strassen::COORDS][-1]) {
+	    push @node_ids, $node_ids[0];
+	}
     }
     @node_ids;
 }
