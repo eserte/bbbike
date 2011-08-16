@@ -696,6 +696,9 @@ sub handle_railway_stations_like {
 	$attribs->{station} = 'light_rail';
     } elsif ($cat =~ m{^R}) {
 	# Regional/Fernbahnhof
+	if ($cat =~ m{^RP}) {
+	    $attribs->{'bbbike:station_type'} = 'RP';
+	}
     } else {
 	warn "Unhandled railway station-like category $cat\n";
 	return;
