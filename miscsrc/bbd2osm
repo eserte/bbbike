@@ -29,7 +29,7 @@ use VectorUtil qw(get_polygon_center);
 
 sub usage () {
     die <<EOF;
-usage: $0 [-ignore-missing] [-use-orig] [-quiet] [-debug] [datadir]
+usage: $0 [-ignore-missing] [-use-orig] [-quiet] [-debug] [datadir] [-optimize-for garmin]
        $0 [-type area|waterway|highway|railway|ferry] -single bbdfile
 
 Either convert a whole bbbike data directory, or convert a single bbd
@@ -42,6 +42,7 @@ my $single_file_type;
 my $fragezeichen_file;
 my $ignore_missing;
 my $use_orig;
+my $optimize_for;
 my $shorten_for_garmin;
 my $quiet;
 my $debug;
@@ -51,11 +52,22 @@ GetOptions("single=s" => \$single_file,
 	   "fragezeichen=s" => \$fragezeichen_file,
 	   "ignore-missing!" => \$ignore_missing,
 	   "use-orig!" => \$use_orig,
+	   "optimize-for=s" => \$optimize_for,
 	   "shorten-for-garmin!" => \$shorten_for_garmin,
 	   "quiet!" => \$quiet,
 	   "debug!" => \$debug,
 	  )
     or usage;
+
+if ($optimize_for) {
+    if ($optimize_for ne 'garmin') {
+	warn "-optimize-for takes only value 'garmin'\n";
+	usage;
+    }
+    if ($optimize_for eq 'garmin') {
+	$shorten_for_garmin = 1;
+    }
+}
 
 my $datadir;
 if (!$single_file) {
