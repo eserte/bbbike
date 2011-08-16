@@ -206,6 +206,8 @@ railway=halt & abandoned=yes [0x7104 resolution 23]
 # SRT 0x2f08 -> 0x7103
 railway=halt [0x7103 resolution 23]
 # SRT: addition
+railway=station & bbbike:station_type=RP [0x7105 resolution 22]
+# SRT: addition
 railway=station & abandoned=yes [0x7104 resolution 22]
 # SRT additions (U/S-Bahn)
 railway=station & station=subway [0x7101 resolution 23]
@@ -288,6 +290,7 @@ barrier=block | barrier=stile | barrier=kissing_gate
 # SRT additions
 highway=traffic_signals [0x7001 resolution 20]
 highway=crossing & crossing=traffic_signals [0x7002 resolution 20]
+railway=level_crossing & abandoned=yes [0x7007 resolution 20]
 railway=level_crossing [0x7003 resolution 20]
 highway=crossing & crossing=uncontrolled & crossing_ref=zebra [0x7004 resolution 20]
 traffic_sign=city_limit [0x7201 resolution 20]
