@@ -1830,9 +1830,7 @@ sub choose_form {
 	$onloadscript .= "init_hi(); window.onresize = init_hi; "
     }
     $onloadscript .= "focus_first(); ";
-    if ($is_beta) {
-	$onloadscript .= "check_locate_me(); ";
-    }
+    $onloadscript .= "check_locate_me(); ";
     if ($nice_berlinmap || $nice_abcmap) {
 	push @extra_headers, -onLoad => $onloadscript,
 	     -script => [{-src => $bbbike_html . "/bbbike_start.js?v=$bbbike_start_js_version"},
@@ -2306,20 +2304,22 @@ EOF
 };
 		    }
 		}
+	    }
 
-		if ($type eq 'start' && $bi->{'can_css'} && $is_beta) {
-		    my $transpose_dot_func = "transpose_dot_func = " . overview_map()->{TransposeJS};
-		    print <<EOF;
+	    if ($type eq 'start' && $bi->{'can_css'}) {
+		my $transpose_dot_func = "transpose_dot_func = " . overview_map()->{TransposeJS};
+		print <<EOF;
 <div id="locateme" style="visibility:hidden;">
-  <a href="javascript:locate_me()">@{[ M("Aktuelle Position verwenden") ]}</a> @{[ experimental_label() ]}
+  <a href="javascript:locate_me()">@{[ M("Aktuelle Position verwenden") ]}</a>
 </div>
 <div id="locateme_marker" style="position:absolute; visibility:hidden;"><img src="$bbbike_images/bluedot.png" border=0 width=8 height=8></div>
 <script type="text/javascript"><!--
  $transpose_dot_func
 // --></script>
 EOF
-		}
+	    }
 
+	    if (!$smallform) {
 		print "</td><td>" if $bi->{'can_table'};
 		if ($nice_berlinmap && !$no_berlinmap) {
 		    print "<input type=hidden name=\"" . $type . "mapimg.x\" value=\"\">";
@@ -6692,7 +6692,7 @@ EOF
     } elsif (defined $mapserver_init_url) {
         $s .= "<td><a href=\"$mapserver_init_url\">Mapserver</a></td>";
     }
-    if ($is_beta && $can_google_maps) {
+    if ($can_google_maps) {
 	$s .= qq{<td><a href="bbbikegooglemap.cgi?mapmode=search;maptype=hybrid">BBBike &amp; Google Maps</a></td>};
     }
     $s .= <<EOF;
