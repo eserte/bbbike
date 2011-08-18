@@ -3399,13 +3399,13 @@ EOF
        text  => 'K 6753 von OL Braunsdorf bis OL Markgrafpieske grundhafter Ausbau Vollsp. 10.11.2005-23.12.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 47692,-6364 47806,-6168
+userdel	2 47692,-6364 47767,-6214
 userdel	2 47692,-6364 47514,-6402
 userdel	2 48136,-5051 48131,-4175
 userdel	2 48136,-5051 47885,-5561
-userdel	2 47885,-5561 47908,-5802
+userdel	2 47885,-5561 47794,-6060
 userdel	2 47514,-6402 47354,-6584
-userdel	2 47806,-6168 47908,-5802
+userdel	2 47767,-6214 47794,-6060
 EOF
      },
      { from  => 1135983600, # 2005-12-31 00:00

@@ -3000,16 +3000,7 @@ userdel	q4::inwork 2295,20358 2362,20218 2402,20126
        },
        undef,
        undef,
-       {
-         'source_id' => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20110727.1340.352586.html',
-         'until' => 1313359200,
-         'text' => 'Zabel-Krüger-Damm: Bauarbeiten, Einbahnstraßenregelung, auch in der Schonacher Str., vom 01.08.2011 bis voraussichtlich 14.08.2011',
-         'from' => 1312063200,
-         'id' => 2259,
-         'data' => 'userdel	q4::inwork; 4718,22384 4800,22418 4898,22459 5006,22507 4919,22658
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20110727.1340.352585.html',
          'until' => 1314568800,
