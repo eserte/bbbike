@@ -51,7 +51,7 @@ Alias [% ROOT_URL %]  [% ROOT_DIR %]
 </Location>
 
 <IfModule deflate_module>
-    <Location [% ROOT_URL %]/data>
+    <LocationMatch "^\Q[% ROOT_URL %]\E/(data|mapserver/brb)">
         SetOutputFilter DEFLATE
 	# old browsers with problems
 	BrowserMatch ^Mozilla/4 gzip-only-text/html
@@ -59,7 +59,7 @@ Alias [% ROOT_URL %]  [% ROOT_DIR %]
 	BrowserMatch \bMSI[E] !no-gzip !gzip-only-text/html
 	# don't compress images (i.e. sehenswuerdigkeit...)
 	SetEnvIfNoCase Request_URI \.(?:gif|jpe?g|png)$ no-gzip dont-vary
-    </Location>
+    </LocationMatch>
 </IfModule>
 
 <IfModule perl_module>
