@@ -29,7 +29,7 @@ use Image::Info qw(image_info);
 
 use Strassen::Core;
 
-plan tests => 40;
+plan tests => 44;
 
 my $htmldir = $ENV{BBBIKE_TEST_HTMLDIR};
 if (!$htmldir) {
@@ -49,16 +49,22 @@ $ua316->agent('bbbike/3.16 (Http/4.01) BBBike-Test/1.0');
 
 my $datadir = "$htmldir/data";
 
+my %contents;
+
 for my $do_accept_gzip (0, 1) {
     my $basic_tests = sub {
 	my($url, %args) = @_;
 	my $ua = $args{ua} || $ua;
+	my $contentcompare = exists $args{contentcompare} ? $args{contentcompare} : 1;
 	$ua->default_header('Accept-Encoding' => $do_accept_gzip ? "gzip" : undef);
 	my $resp = $ua->get($url);
 	ok($resp->is_success, "GET $url " . ($do_accept_gzip ? "(Accept gzipped)" : "(uncompressed)"))
 	    or diag $resp->status_line;
 	my $content = $resp->decoded_content;
 	ok(length $content, "Non-empty content");
+	if ($contentcompare) {
+	    $contents{$url}{$do_accept_gzip} = $content; # remember for later checks
+	}
 	($resp, $content);
     };
 
@@ -115,7 +121,10 @@ EOF
     # Simulate old BBBike application
     {
 	my $url = "$datadir/strassen";
-	my($resp, $content) = $basic_tests->($url, ua => $ua316);
+	my($resp, $content) = $basic_tests->($url,
+					     ua => $ua316,
+					     contentcompare => 0, # do not check data/strassen twice
+					    );
 	my $s = eval { Strassen->new_from_data_string($content) };
 	is($@, "", "No error while parsing bbd data");
 	my $count_NH = 0;
@@ -127,6 +136,10 @@ EOF
 	}
 	is $count_NH, 0, 'No cat=NH found for old client'
     }
+}
+
+while(my($url,$v) = each %contents) {
+    ok $v->{0} eq $v->{1}, "Same contents for $url";
 }
 
 __END__
