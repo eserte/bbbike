@@ -160,6 +160,7 @@ data/wasserstrassen-lowres$
 data/zebrastreifen$
 data_zuerich_ch/
 ^data_[^/]+_osm.*/
+^data-osm/
 doc/implementation_log.txt$
 ext/.*/blib/
 ext/.*/pm_to_blib$
