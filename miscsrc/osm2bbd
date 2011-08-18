@@ -17,7 +17,7 @@ use FindBin;
 use lib "$FindBin::RealBin/..";
 
 use vars qw($VERSION);
-$VERSION = 0.13;
+$VERSION = 0.14;
 
 use Cwd qw(cwd realpath);
 use Data::Dumper;
@@ -313,8 +313,14 @@ my $do_amenity = sub {
 	push @or, ["kinos", $F."X"];
     } elsif ($amenity =~ m{^(?:kindergarten|school)$}) {
 	add_underline(\@or, "_education", $F."X");
-    } elsif ($amenity =~ m{^(?:parking|car_rental)$}) {
-	add_underline(\@or, "_motortraffic", $F."#f0f0f0|IMG:Parking");
+    } elsif ($amenity eq 'parking') {
+	my $cat = ($F 
+		   ? $F."#f0f0f0|IMG:Parking" # XXX Note: Perl/Tk cannot handle IMG:Parking here (category_image mapping not used)
+		   : "Parking"
+		  );
+	add_underline(\@or, "_motortraffic", $cat);
+    } elsif ($amenity eq 'car_rental') {
+	add_underline(\@or, "_motortraffic", 'X');
     } elsif ($amenity eq 'border_control') {
 	push @or, ['grenzuebergaenge', 'GU'];
     } elsif ($amenity eq 'grave_yard') {
