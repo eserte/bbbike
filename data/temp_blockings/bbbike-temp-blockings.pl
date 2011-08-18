@@ -19529,8 +19529,8 @@ userdel	2::temp 8540,12420 8400,12417 8374,12416 8119,12414
 EOF
      },
      { from  => 1310464800, # 2011-07-12 12:00
-       until => 1313852400, # 2011-08-20 17:00
-       text  => 'Wartenberger Weg (Malchow): Baustelle, Straße vollständig gesperrt an der Kreuzung Dorfstr., 13.07.2011 12:00 Uhr bis 20.08.2011 17:00 Uhr',
+       until => 1314802800, # 2011-08-31 17:00
+       text  => 'Wartenberger Weg (Malchow): Baustelle, Straße vollständig gesperrt, auf der Dorfstr. Verkehrseinschränkungen (bis Ende 08/11) in beiden Richtungen an der Kreuzung Dorfstr., 13.07.2011 12:00 Uhr bis 31.08.2011 17:00 Uhr ',
        type  => 'handicap',
        source_id => 'INKO_107049',
        data  => <<EOF,
@@ -19562,6 +19562,33 @@ EOF
        source_id => 'LS/O-SG33-E/10/214-10',
        data  => <<EOF,
 userdel	2::inwork 45906,105450 46581,105900
+EOF
+     },
+     { from  => 1313694142, # 2011-08-18 21:02
+       until => 1313989200, # 2011-08-22 07:00
+       text  => 'Schwarzer Weg (Mitte) in beiden Richtungen zwischen Invalidenstr. und Habersathstr. Veranstaltung, Straße vollständig gesperrt, 19.08.2011 12 Uhr bis 22.08.2011 07:00 ',
+       type  => 'gesperrt',
+       source_id => 'IM_017698',
+       data  => <<EOF,
+userdel	2::temp 8429,13903 8574,13666
+EOF
+     },
+     { from  => 1313553600, # 2011-08-17 06:00
+       until => 1313985600, # 2011-08-22 06:00
+       text  => 'Str. des 17. Juni (Tiergarten): Veranstaltung, Straße vollständig gesperrt in beiden Richtungen zwischen Y.-Rabin-Str. und Ebertstr., 18.08.2011, 06:00 Uhr bis 22.08.2011, 06:00 Uhr ',
+       type  => 'handicap',
+       source_id => 'IM_017679',
+       data  => <<EOF,
+userdel	q4::temp 8089,12190 8214,12205 8538,12245
+EOF
+     },
+     { from  => 1313596800, # 2011-08-17 18:00
+       until => 1313949600, # 2011-08-21 20:00
+       text  => 'Triftstr. (Reinickendorf): Veranstaltung, Straße vollständig gesperrt in beiden Richtungen zwischen Am Nordgraben und Holzhauser Str., 18.08.2011, 18:00 Uhr bis 21.08.2011, 20:00 Uhr ',
+       type  => 'gesperrt',
+       source_id => 'IM_017672',
+       data  => <<EOF,
+userdel	2::temp 4273,20021 4319,20182
 EOF
      },
     );

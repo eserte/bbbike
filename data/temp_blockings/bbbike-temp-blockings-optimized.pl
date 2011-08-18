@@ -3016,8 +3016,8 @@ userdel	q4::inwork 2295,20358 2362,20218 2402,20126
        undef,
        {
          'source_id' => 'INKO_107049',
-         'until' => 1313852400,
-         'text' => 'Wartenberger Weg (Malchow): Baustelle, Straße vollständig gesperrt an der Kreuzung Dorfstr., 13.07.2011 12:00 Uhr bis 20.08.2011 17:00 Uhr',
+         'until' => 1314802800,
+         'text' => 'Wartenberger Weg (Malchow): Baustelle, Straße vollständig gesperrt, auf der Dorfstr. Verkehrseinschränkungen (bis Ende 08/11) in beiden Richtungen an der Kreuzung Dorfstr., 13.07.2011 12:00 Uhr bis 31.08.2011 17:00 Uhr ',
          'from' => 1310464800,
          'id' => 2264,
          'data' => 'userdel	q4::inwork 16094,19179 15640,19208
@@ -3051,6 +3051,36 @@ userdel	q4::inwork 2295,20358 2362,20218 2402,20126
          'from' => 1313270697,
          'id' => 2267,
          'data' => 'userdel	2::inwork 45906,105450 46581,105900
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_017698',
+         'until' => 1313989200,
+         'text' => 'Schwarzer Weg (Mitte) in beiden Richtungen zwischen Invalidenstr. und Habersathstr. Veranstaltung, Straße vollständig gesperrt, 19.08.2011 12 Uhr bis 22.08.2011 07:00 ',
+         'from' => 1313694142,
+         'id' => 2268,
+         'data' => 'userdel	2::temp 8429,13903 8574,13666
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_017679',
+         'until' => 1313985600,
+         'text' => 'Str. des 17. Juni (Tiergarten): Veranstaltung, Straße vollständig gesperrt in beiden Richtungen zwischen Y.-Rabin-Str. und Ebertstr., 18.08.2011, 06:00 Uhr bis 22.08.2011, 06:00 Uhr ',
+         'from' => 1313553600,
+         'id' => 2269,
+         'data' => 'userdel	q4::temp 8089,12190 8214,12205 8538,12245
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_017672',
+         'until' => 1313949600,
+         'text' => 'Triftstr. (Reinickendorf): Veranstaltung, Straße vollständig gesperrt in beiden Richtungen zwischen Am Nordgraben und Holzhauser Str., 18.08.2011, 18:00 Uhr bis 21.08.2011, 20:00 Uhr ',
+         'from' => 1313596800,
+         'id' => 2270,
+         'data' => 'userdel	2::temp 4273,20021 4319,20182
 ',
          'type' => 'gesperrt'
        }
