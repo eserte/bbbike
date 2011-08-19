@@ -29,7 +29,7 @@ use Image::Info qw(image_info);
 
 use Strassen::Core;
 
-plan tests => 44;
+plan tests => 46;
 
 my $htmldir = $ENV{BBBIKE_TEST_HTMLDIR};
 if (!$htmldir) {
@@ -134,7 +134,8 @@ EOF
 	    last if !@{ $ret->[Strassen::COORDS] };
 	    $count_NH++ if $ret->[Strassen::CAT] eq 'NH';
 	}
-	is $count_NH, 0, 'No cat=NH found for old client'
+	is $count_NH, 0, 'No cat=NH found for old client';
+	is $resp->header('X-BBBike-Hacks'), 'NH', 'NH hack in HTTP header';
     }
 }
 

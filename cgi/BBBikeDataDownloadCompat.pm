@@ -33,6 +33,7 @@ sub handler : method {
 	open my $fh, "<", $filename
 	    or die "Can't open file <$filename> (should never happen): $!";
 	$r->content_type('text/plain');
+	$r->headers_out->{'X-BBBike-Hacks'} = 'NH';
 	while(<$fh>) {
 	    s{\tNH }{\tN };
 	    $r->print($_);
