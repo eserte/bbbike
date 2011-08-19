@@ -11536,7 +11536,7 @@ EOF
        text  => 'Papierlager brennt, Köpenicker Str. ist zwischen Manteuffelstr. und Engeldamm gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 12055,11331 12304,11163
+userdel	2::inwork 12055,11331 12126,11283 12304,11163
 EOF
      },
      { from  => 1211828060, # 
@@ -17671,10 +17671,10 @@ EOF
 EOF
      },
      { from  => 1304110406, # 2011-04-29 22:53
-       until => 1314914399, # 2011-09-01 23:59
+       until => 1315087199, # 2011-09-03 23:59 #        until => 1314914399, # 2011-09-01 23:59
        text  => 'Lahnstr. (Neukölln) Richtung Grenzallee zwischen Mierstr. und Niemetzstr. Baustelle, in beiden Richtungen gesperrt (bis Anfang 09/2011) ',
        type  => 'handicap',
-       source_id => 'INKO_107124',
+       source_id => 'INKO_107124', # auch: http://www.berlin.de/ba-neukoelln/presse/archiv/20110819.1100.355442.html
        data  => <<EOF,
 userdel	q4::inwork 13627,7047 13891,7107
 EOF
@@ -19096,13 +19096,14 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Burgstraße/Anna-Louisa-Karsch-Straße: Bauarbeiten, Einbahnstraßenregelung',
+       text  => 'Burgstraße: Bauarbeiten, Einbahnstraßenregelung',
        type  => 'handicap',
        data  => <<EOF,
 #: by: wosch
 #: confirmed_by: srt
-#: last_checked: 2011-06-15
-userdel	q4::inwork; 10264,12826 10166,12777 10132,12941
+#: last_checked: 2011-08-19
+#: note: eigentlich Radfahren auf der Friedrichsbrücke jetzt auch verboten
+userdel	q4::inwork; 10166,12777 10132,12941
 EOF
      },
      { from  => 1307219374, # 2011-06-04 22:29
@@ -19547,7 +19548,7 @@ userdel	q3::inwork; 26679,-8825 26381,-9753
 EOF
      },
      { from  => 1313270628, # 2011-08-13 23:23
-       until => 1314827999, # 2011-08-31 23:59
+       until => 1313783686, # 1314827999, # 2011-08-31 23:59
        text  => 'Rennbahnstr. (Weißensee) Richtung Heinersdorf Höhe Pasedagplatz Bauarbeiten, Fahrtrichtung gesperrt (bis Ende 08/11) ',
        type  => 'handicap',
        source_id => 'INKO_108874',
@@ -19575,11 +19576,12 @@ EOF
      },
      { from  => 1313553600, # 2011-08-17 06:00
        until => 1313985600, # 2011-08-22 06:00
-       text  => 'Str. des 17. Juni (Tiergarten): Veranstaltung, Straße vollständig gesperrt in beiden Richtungen zwischen Y.-Rabin-Str. und Ebertstr., 18.08.2011, 06:00 Uhr bis 22.08.2011, 06:00 Uhr ',
+       text  => 'Str. des 17. Juni (Tiergarten): Veranstaltung, Straße vollständig gesperrt in beiden Richtungen zwischen Y.-Rabin-Str. und Ebertstr., Ebertstr. ebenfalls gesperrt, 18.08.2011, 06:00 Uhr bis 22.08.2011, 06:00 Uhr ',
        type  => 'handicap',
        source_id => 'IM_017679',
        data  => <<EOF,
 userdel	q4::temp 8089,12190 8214,12205 8538,12245
+userdel	q4::temp 8595,12066 8600,12165 8538,12245 8546,12279 8570,12302 8573,12325 8540,12420
 EOF
      },
      { from  => 1313596800, # 2011-08-17 18:00
@@ -19589,6 +19591,25 @@ EOF
        source_id => 'IM_017672',
        data  => <<EOF,
 userdel	2::temp 4273,20021 4319,20182
+EOF
+     },
+     { from  => undef, #
+       until => undef, #
+       text  => 'Hausvogteiplatz: Wochenmarkt Mittwoch und Freitag 9-16 Uhr, Behinderungen möglich',
+       type  => 'gesperrt',
+       recurring => 1,
+       data  => <<EOF,
+#: by: http://www.berliner-woche.de/fileadmin/Wochenblatt-Ausgaben/2011/1122_MI.pdf
+	q4::temp:clock 9925,11947 9878,11857
+EOF
+     },
+     { from  => 1313733600, # 2011-08-19 08:00
+       until => 1313888400, # 2011-08-21 03:00
+       text  => 'Kirchstr. (Moabit) Veranstaltung zwischen Alt-Moabit und Helgoländer Ufer ab 20.08.2011, 08 Uhr bis 21.08.2011, 03:00 Uhr',
+       type  => 'handicap',
+       source_id => 'IM_017697',
+       data  => <<EOF,
+userdel	q4::temp 6608,12858 6661,13130
 EOF
      },
     );

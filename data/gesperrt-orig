@@ -284,9 +284,7 @@ Braillestr.	1 4430,5324 4477,5250 4512,5199
 Mudrackzeile	1 6985,17812 7020,17690
 Gustav-Müller-Str.	1 7643,8634 7642,8815
 Gustav-Müller-Platz	1 7644,8560 7614,8599 7643,8634 7682,8598 7644,8560
-#: XXX wird die Einbahnstraßenregelung vielleicht aufgehoben?
-#: last_checked: 2011-07-13
-Niederlagstr.	1 9972,12184 9961,12273 9943,12364 9934,12418
+#XXX del --- #: XXX wird die Einbahnstraßenregelung vielleicht aufgehoben? --- #: last_checked: 2011-07-13 --- Niederlagstr.	1 9972,12184 9961,12273 9943,12364 9934,12418
 Kolk/Behnitz/Möllentordamm	1 -3042,14682 -3028,14640 -2951,14617 -2944,14652 -2942,14666 -3027,14689 -3042,14682
 Hertelstr.	1 4893,6900 4787,6899
 Karl-Marx-Platz	1 12980,7597 13100,7626
@@ -1881,13 +1879,15 @@ Tiergartenufer: Bauarbeiten, gesperrt	2:inwork 5711,11841 5565,11871
 # 
 #XXX del --- #: last_checked: 2011-04-08 --- Bebelplatz: Bauarbeiten, gesperrt	2:inwork 9679,12388 9700,12234
 #
-#: last_checked: 2011-05-20 vvv
+#: last_checked: 2011-08-19 vvv
+#: next_check: 2012-02-01 vvv
 Behrenstr.: Bauarbeiten, vollständig gesperrt	2:inwork 9743,12239 9801,12245
 Hinter der Katholischen Kirche: Bauarbeiten, vollständig gesperrt	2:inwork 9801,12245 9795,12293 9780,12401
+#: next_check: ^^^
 #: last_checked: ^^^
 # 
-#: last_checked: 2011-06-12
-#: next_check: 2011-10-01
+#: last_checked: 2011-08-19
+#: next_check: 2012-02-01
 Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10170,12261 10063,12438
 # 
 #: XXX wird es jemals wieder öffentlich befahrbar sein?

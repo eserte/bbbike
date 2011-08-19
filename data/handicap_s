@@ -4,15 +4,16 @@
 #: note: "Parkweg" sollte hier vielleicht nicht verwendet werden, sondern nur in qualitaet_s-orig? Oder wenigstens die gleichen Wege nicht in beiden Dateien so benannt werden? Oder wenigstens beim Ausgeben der Routenliste doppelte ausfiltern?
 #:
 Sembritzkystr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 7203,5488 7186,5453 7157,5418 7095,5317 7018,5201
-Beuthstr. - Spittelmarkt: Gehweg, Bauarbeiten	q3::inwork 10166,11592 10197,11605 10229,11618 10213,11728
-Spittelmarkt: Gehweg, Bordstein, Bauarbeiten	q3::inwork 10166,11592 10153,11666 10213,11728
+Beuthstr. - Spittelmarkt: Gehweg, Bauarbeiten	q4::inwork 10166,11592 10197,11605 10229,11618 10213,11728
+Spittelmarkt: Gehweg, Bordstein, Bauarbeiten	q4::inwork 10166,11592 10153,11666 10213,11728
+Axel-Springer-Str.: Bauarbeiten	q4::inwork 10166,11592 10136,11529
 Invalidenstr. (Mitte): Baustelle, Richtung Alt-Moabit zwischen Gartenstr. und Hessische Str. gesperrt	q4::inwork; 9383,13978 9203,13953 9151,13941 9085,13919 8935,13844 8690,13723
-Krausenstr.: Bauarbeiten an der Kreuzung Krausenstr./Charlottenstr	q3::inwork 9581,11523 9711,11543
 Alt-Stralau: Bauarbeiten an der Br¸cke, enge Durchfahrt	q3::inwork 14652,10201 14558,10264
 Behrenstr.: Bauarbeiten, Einbahnstraﬂenregelung	q4::inwork; 8861,12125 9054,12154 9064,12156 9164,12172
 Behrenstr.: Bauarbeiten, Fahrbahn teilweise gesperrt	q4::inwork 9373,12197 9164,12172
 Oberwallstr.: Bauarbeiten, Einbahnstraﬂe	q4::inwork; 9925,11947 9913,12068
-Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9890,12161 9875,12257
+Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9890,12161 9875,12257 9869,12297
+Jerusalemer Str.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 9878,11857 9892,11752
 Neumannsgasse: Bauarbeiten, Fahrbahn gespert	q4::inwork 10284,12113 10383,12191
 Varian-Fry-Str.: Baustelle, Fahrbahn gesperrt	q4::inwork 8389,11378 8374,11479
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraﬂe Richtung S¸den	q4::inwork; 9475,12365 9462,12481 9454,12558
@@ -457,7 +458,6 @@ Baruther Str.: gemeinsamer Rad- und Gehweg	q1 9588,9827 9723,9842
 (Maybachufer - Weigandufer): Radfahren nicht erlaubt, ggfs. schieben	q3 12851,9309 12907,9073
 (Parkplatz CharitÈ): Fuﬂg‰nger, parkende Autos	q1 8828,13434 8808,13380 8778,13368 8665,13353
 (Lasdehner Str. - Gubener Str.): Fuﬂg‰nger, Bordsteine	q3 13375,12062 13339,12029
-Straﬂenbahntrasse zum Alex: Bodenschwellen und Schienen	q1 11139,13008 11191,13080
 Perleberger - Kieler: unterhalb der Br¸cke sehr eng	q3 7661,14398 7636,14414 7612,14449 7561,14458
 Ida-Wolff-Platz: Fuﬂg‰nger	q2 9210,10614 9192,10528
 Falkstr.: Fuﬂg‰nger	q1 12179,7979 12220,7822

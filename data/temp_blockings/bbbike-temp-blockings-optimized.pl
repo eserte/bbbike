@@ -2453,7 +2453,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        },
        {
          'source_id' => 'INKO_107124',
-         'until' => 1314914399,
+         'until' => 1315087199,
          'text' => 'Lahnstr. (Neukölln) Richtung Grenzallee zwischen Mierstr. und Niemetzstr. Baustelle, in beiden Richtungen gesperrt (bis Anfang 09/2011) ',
          'from' => 1304110406,
          'id' => 2069,
@@ -2796,13 +2796,14 @@ userdel	q4::inwork; 12549,8616 12500,8504
        undef,
        {
          'until' => undef,
-         'text' => 'Burgstraße/Anna-Louisa-Karsch-Straße: Bauarbeiten, Einbahnstraßenregelung',
+         'text' => 'Burgstraße: Bauarbeiten, Einbahnstraßenregelung',
          'from' => undef,
          'id' => 2219,
          'data' => '#: by: wosch
 #: confirmed_by: srt
-#: last_checked: 2011-06-15
-userdel	q4::inwork; 10264,12826 10166,12777 10132,12941
+#: last_checked: 2011-08-19
+#: note: eigentlich Radfahren auf der Friedrichsbrücke jetzt auch verboten
+userdel	q4::inwork; 10166,12777 10132,12941
 ',
          'type' => 'handicap'
        },
@@ -3034,16 +3035,7 @@ userdel	q4::inwork 2295,20358 2362,20218 2402,20126
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'INKO_108874',
-         'until' => 1314827999,
-         'text' => 'Rennbahnstr. (Weißensee) Richtung Heinersdorf Höhe Pasedagplatz Bauarbeiten, Fahrtrichtung gesperrt (bis Ende 08/11) ',
-         'from' => 1313270628,
-         'id' => 2266,
-         'data' => 'userdel	q4::inwork; 14144,17165 14060,17221 13912,17320
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'LS/O-SG33-E/10/214-10',
          'until' => 1318629600,
@@ -3067,10 +3059,11 @@ userdel	q4::inwork 2295,20358 2362,20218 2402,20126
        {
          'source_id' => 'IM_017679',
          'until' => 1313985600,
-         'text' => 'Str. des 17. Juni (Tiergarten): Veranstaltung, Straße vollständig gesperrt in beiden Richtungen zwischen Y.-Rabin-Str. und Ebertstr., 18.08.2011, 06:00 Uhr bis 22.08.2011, 06:00 Uhr ',
+         'text' => 'Str. des 17. Juni (Tiergarten): Veranstaltung, Straße vollständig gesperrt in beiden Richtungen zwischen Y.-Rabin-Str. und Ebertstr., Ebertstr. ebenfalls gesperrt, 18.08.2011, 06:00 Uhr bis 22.08.2011, 06:00 Uhr ',
          'from' => 1313553600,
          'id' => 2269,
          'data' => 'userdel	q4::temp 8089,12190 8214,12205 8538,12245
+userdel	q4::temp 8595,12066 8600,12165 8538,12245 8546,12279 8570,12302 8573,12325 8540,12420
 ',
          'type' => 'handicap'
        },
@@ -3083,6 +3076,27 @@ userdel	q4::inwork 2295,20358 2362,20218 2402,20126
          'data' => 'userdel	2::temp 4273,20021 4319,20182
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => undef,
+         'recurring' => 1,
+         'text' => 'Hausvogteiplatz: Wochenmarkt Mittwoch und Freitag 9-16 Uhr, Behinderungen möglich',
+         'from' => undef,
+         'id' => 2271,
+         'data' => '#: by: http://www.berliner-woche.de/fileadmin/Wochenblatt-Ausgaben/2011/1122_MI.pdf
+	q4::temp:clock 9925,11947 9878,11857
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_017697',
+         'until' => 1313888400,
+         'text' => 'Kirchstr. (Moabit) Veranstaltung zwischen Alt-Moabit und Helgoländer Ufer ab 20.08.2011, 08 Uhr bis 21.08.2011, 03:00 Uhr',
+         'from' => 1313733600,
+         'id' => 2272,
+         'data' => 'userdel	q4::temp 6608,12858 6661,13130
+',
+         'type' => 'handicap'
        }
      
 );
