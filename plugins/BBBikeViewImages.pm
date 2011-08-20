@@ -1,10 +1,9 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeViewImages.pm,v 1.24 2009/03/08 21:49:21 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2005,2007,2008,2009 Slaven Rezic. All rights reserved.
+# Copyright (C) 2005,2007,2008,2009,2011 Slaven Rezic. All rights reserved.
 #
 
 # Description (en): View images in bbd files
@@ -16,10 +15,21 @@ push @ISA, "BBBikePlugin";
 
 use strict;
 use vars qw($VERSION $viewer_cursor $viewer $geometry $viewer_menu);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.24 $ =~ /(\d+)\.(\d+)/);
+$VERSION = 1.25;
 
 use BBBikeUtil qw(file_name_is_absolute is_in_path);
 use File::Basename qw(dirname);
+
+BEGIN {
+    if (!eval '
+use Msg qw(frommain);
+1;
+') {
+	warn $@ if $@;
+	eval 'sub M ($) { $_[0] }';
+	eval 'sub Mfmt { sprintf(shift, @_) }';
+    }
+}
 
 my $iso_date_rx = qr{(\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2})};
 
@@ -91,20 +101,19 @@ sub add_button {
 	 %radio_args,
 	);
     BBBikePlugin::replace_plugin_widget($mf, $b, __PACKAGE__.'_on');
-    $main::balloon->attach($b, -msg => "Image Viewer")
+    $main::balloon->attach($b, -msg => M"Bildbetrachter")
 	if $main::balloon;
 
     BBBikePlugin::place_menu_button
 	    ($mmf,
-	     # XXX Msg.pm
-	     [[Radiobutton => "Internen Viewer verwenden",
+	     [[Radiobutton => M"Internen Viewer verwenden",
 	       -variable => \$viewer,
 	       -value => "_internal",
 	       -command => sub { viewer_change() },
 	      ],
 	      ($^O eq 'MSWin32' ? () :
 	       (# xv is not surely not available ...
-		[Radiobutton => 'Bester externer Viewer',
+		[Radiobutton => M"Bester externer Viewer",
 		 -variable => \$viewer,
 		 -value => '_external',
 		 -command => sub { viewer_change() },
@@ -146,34 +155,34 @@ sub add_button {
 		),
 	       )
 	      ),
-	      [Radiobutton => "WWW-Browser",
+	      [Radiobutton => M"WWW-Browser",
 	       -variable => \$viewer,
 	       -value => "_wwwbrowser",
 	       -command => sub { viewer_change() },
 	      ],
 	      "-",
-	      [Radiobutton => "Ca. halbe Bildschirmgröße",
+	      [Radiobutton => M"Ca. halbe Bildschirmgröße",
 	       -variable => \$geometry,
 	       -value => "half",
 	      ],
-	      [Radiobutton => "Ca. 1/3 der Bildschirmgröße",
+	      [Radiobutton => M"Ca. 1/3 der Bildschirmgröße",
 	       -variable => \$geometry,
 	       -value => "third",
 	      ],
-	      [Radiobutton => "Halbe Bildgröße",
+	      [Radiobutton => M"Halbe Bildgröße",
 	       -variable => \$geometry,
 	       -value => "image-half",
 	      ],
-	      [Radiobutton => "1/3 der Bildgröße",
+	      [Radiobutton => M"1/3 der Bildgröße",
 	       -variable => \$geometry,
 	       -value => "image-third",
 	      ],
-	      [Radiobutton => "Maximale Größe",
+	      [Radiobutton => M"Maximale Größe",
 	       -variable => \$geometry,
 	       -value => "max",
 	      ],
 	      "-",
-	      [Button => "Dieses Menü löschen",
+	      [Button => M"Dieses Menü löschen",
 	       -command => sub {
 		   $mmf->after(100, sub {
 				   unregister();
@@ -182,8 +191,8 @@ sub add_button {
 	     ],
 	     $b,
 	     __PACKAGE__."_menu",
-	     -title => "View Images",
-	     -topmenu => [Radiobutton => 'View Images mode',
+	     -title => M"Bildbetrachter",
+	     -topmenu => [Radiobutton => M"Bildbetrachtermodus",
 			  %radio_args,
 			 ],
 	    );
@@ -209,7 +218,7 @@ sub viewer_change {
 sub activate {
     $main::map_mode = 'BBBikeViewImages';
     main::set_cursor_data($viewer_cursor, "BBBikeViewImages");
-    main::status_message("Auf Thumbnails klicken", "info");
+    main::status_message(M"Auf Thumbnails klicken", "info");
 }
 
 sub deactivate {
@@ -293,7 +302,7 @@ sub show_image_viewer {
 	    my(undef, $file) = File::Temp::tempfile(UNLINK => 1, SUFFIX => "_BBBikeViewImages");
 	    my $resp = $ua->get($url, ':content_file' => $file);
 	    if (!$resp->is_success) {
-		main::status_message("Kann die URL $url nicht herunterladen: " . $resp->status_line, 'die');
+		main::status_message(Mfmt("Kann die URL %s nicht herunterladen: %s", $url, $resp->status_line), 'die');
 	    }
 	    $abs_file = $file; # XXX suffix? aufräumen?
 	}
@@ -301,7 +310,7 @@ sub show_image_viewer {
     }
     if (defined $abs_file) {
 	if (!-e $abs_file) {
-	    main::status_message("Kann die Datei $abs_file nicht finden", "die");
+	    main::status_message(Mfmt("Kann die Datei %s nicht finden", $abs_file), "die");
 	}
 
 	my $use_viewer = $viewer;
@@ -330,36 +339,36 @@ sub show_image_viewer {
 
 		    my $first_button = $f->Button(-class => "SmallBut", -text => "|<")->pack(-side => "left");
 		    $image_viewer_toplevel->Advertise(FirstButton => $first_button);
-		    $main::balloon->attach($first_button, -msg => "Erstes Bild") if ($main::balloon);
+		    $main::balloon->attach($first_button, -msg => M"Erstes Bild") if ($main::balloon);
 
 		    my $prev_button = $f->Button(-class => "SmallBut", -text => "<<")->pack(-side => "left");
 		    $image_viewer_toplevel->Advertise(PrevButton => $prev_button);
-		    $main::balloon->attach($prev_button, -msg => "Vorheriges Bild") if ($main::balloon);
+		    $main::balloon->attach($prev_button, -msg => M"Vorheriges Bild") if ($main::balloon);
 
 		    my $next_button = $f->Button(-class => "SmallBut", -text => ">>")->pack(-side => "left");
 		    $image_viewer_toplevel->Advertise(NextButton => $next_button);
-		    $main::balloon->attach($next_button, -msg => "Nächstes Bild") if ($main::balloon);
+		    $main::balloon->attach($next_button, -msg => M"Nächstes Bild") if ($main::balloon);
 
 		    my $last_button = $f->Button(-class => "SmallBut", -text => ">|")->pack(-side => "left");
 		    $image_viewer_toplevel->Advertise(LastButton => $last_button);
-		    $main::balloon->attach($last_button, -msg => "Letztes Bild") if ($main::balloon);
+		    $main::balloon->attach($last_button, -msg => M"Letztes Bild") if ($main::balloon);
 
 		    my $n_of_m_label = $f->Label->pack(-side => "left");
 		    $image_viewer_toplevel->Advertise(NOfMLabel => $n_of_m_label);
 
 		    my $date_label = $f->Label->pack(-side => "left", -padx => 2);
 		    $image_viewer_toplevel->Advertise(DateLabel => $date_label);
-		    $main::balloon->attach($date_label, -msg => "Datum aus dem EXIF") if ($main::balloon);
+		    $main::balloon->attach($date_label, -msg => M"Datum aus dem EXIF") if ($main::balloon);
 
 		    my $delta_label = $f->Label->pack(-side => "left");
 		    $image_viewer_toplevel->Advertise(DeltaLabel => $delta_label);
-		    $main::balloon->attach($delta_label, -msg => "Abstand zur Geolocation (hh:mm)") if ($main::balloon);
+		    $main::balloon->attach($delta_label, -msg => M"Abstand zur Geolocation (hh:mm)") if ($main::balloon);
 
 		    my $close_button = $f->Button(Name => "close",
 						  -class => "SmallBut",
 						  -command => sub { $image_viewer_toplevel->destroy },
 						 )->pack(-side => "right", -anchor => "e");
-		    $main::balloon->attach($close_button, -msg => "Viewer schließen") if ($main::balloon);
+		    $main::balloon->attach($close_button, -msg => M"Viewer schließen") if ($main::balloon);
 		    for my $key (qw(Escape q)) {
 			$image_viewer_toplevel->bind("<$key>" => sub { $image_viewer_toplevel->destroy });
 		    }
@@ -368,7 +377,7 @@ sub show_image_viewer {
 						 -text => "Orig",
 						)->pack(-side => "right", -anchor => "e");
 		    $image_viewer_toplevel->Advertise(OrigButton => $orig_button);
-		    $main::balloon->attach($orig_button, -msg => "Originalbild mit ImageMagick zeigen") if ($main::balloon);
+		    $main::balloon->attach($orig_button, -msg => M"Originalbild mit externen Viewer zeigen") if ($main::balloon);
 
 		    my $image_viewer_label = $image_viewer_toplevel->Label->pack(-fill => "both", -expand => 1,
 										 -side => "bottom");
@@ -491,7 +500,7 @@ sub show_image_viewer {
 		    main::image_from_file($main::top, $abs_file);
 		};
 		if (!$p) {
-		    my $msg = "Kann die Datei $abs_file nicht als Bild interpretieren"; # XXX Msg.pm
+		    my $msg = Mfmt("Kann die Datei %s nicht als Bild interpretieren", $abs_file);
 		    $image_label_widget->configure(-text => $msg, -image => undef);
 		} else {
 		    my $rel_w = $p->width/$main::top->screenwidth;
