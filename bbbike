@@ -2268,9 +2268,11 @@ unless($skip_features{"strassen"}) {
 	$comments_all_check_index = $c_bpcm->index('last');
     }
 
-    $strcm->checkbutton(-label => M"Fähren",
-			-variable => \$str_draw{'e'},
-			-command => sub { plot('str','e') });
+    unless ($skip_features{"faehren"}) {
+	$strcm->checkbutton(-label => M"Fähren",
+			    -variable => \$str_draw{'e'},
+			    -command => sub { plot('str','e') });
+    }
 
     unless ($skip_features{"hoehe"}) {
 	$strcm->checkbutton(-label => M"Höhenangaben",
@@ -3399,12 +3401,14 @@ unless ($skip_features{"sehenswuerdigkeiten"}) {
 		      -command => sub {
 			  pending(1, 'recalc-net');
 		      },);
-    $sb2m->checkbutton(-label => M"Fähren verwenden",
-                      -variable => \$use_faehre,
-                      -command => sub {
-                          pending(1, 'recalc-net');
-                      },
-		     );
+    unless ($skip_features{faehren}) {
+	$sb2m->checkbutton(-label => M"Fähren verwenden",
+			   -variable => \$use_faehre,
+			   -command => sub {
+			       pending(1, 'recalc-net');
+			   },
+			  );
+    }
     $sb2m->separator;
     $sb2m->checkbutton(-label => M"Straßenqualität-Optimierung",
 		      -variable => \$qualitaet_s_optimierung,
