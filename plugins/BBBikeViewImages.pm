@@ -135,6 +135,15 @@ sub add_button {
 		   ]
 		 : ()
 		),
+		# also usually not available on MSWin32
+		(is_in_path("eog")
+		 ? [Radiobutton => "Eye of GNOME (eog)",
+		    -variable => \$viewer,
+		    -value => "eog",
+		    -command => sub { viewer_change() },
+		   ]
+		 : ()
+		),
 	       )
 	      ),
 	      [Radiobutton => "WWW-Browser",
@@ -143,10 +152,6 @@ sub add_button {
 	       -command => sub { viewer_change() },
 	      ],
 	      "-",
-	      [Radiobutton => "Maximale Größe",
-	       -variable => \$geometry,
-	       -value => "max",
-	      ],
 	      [Radiobutton => "Ca. halbe Bildschirmgröße",
 	       -variable => \$geometry,
 	       -value => "half",
@@ -162,6 +167,10 @@ sub add_button {
 	      [Radiobutton => "1/3 der Bildgröße",
 	       -variable => \$geometry,
 	       -value => "image-third",
+	      ],
+	      [Radiobutton => "Maximale Größe",
+	       -variable => \$geometry,
+	       -value => "max",
 	      ],
 	      "-",
 	      [Button => "Dieses Menü löschen",
@@ -566,6 +575,8 @@ sub show_image_viewer {
 		push @xzgv_args, '--zoom', '--zoom-reduce-only', '--geometry', '33%x33%';
 	    } # XXX need impl. for image-half and image-third
 	    viewer_xzgv(@xzgv_args, $abs_file);
+	} elsif ($use_viewer eq 'eog') {
+	    viewer_eog('--disable-image-collection', $abs_file);
 	} elsif ($use_viewer eq '_wwwbrowser') {
 	    viewer_browser($abs_file);
 	} else {
@@ -620,6 +631,19 @@ sub viewer_display {
     }
 }
 
+sub viewer_eog {
+    my(@args) = @_;
+    my @cmd = ("eog", @args);
+    main::status_message("@cmd", "info");
+    my $pid = fork;
+    die if !defined $pid;
+    if ($pid == 0) {
+	exec @cmd;
+	warn $!;
+	CORE::exit(1);
+    }
+}
+
 sub viewer_browser {
     my($abs_file) = @_;
     require WWWBrowser;
@@ -647,6 +671,8 @@ sub find_best_external_viewer {
 	"xv";
     } elsif (is_in_path("display")) {
 	"display";
+    } elsif (is_in_path("eog")) {
+	"eog";
     } else {
 	"_internal";
     }
