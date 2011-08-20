@@ -1958,13 +1958,14 @@ sub output_meta {
 			    wasserumland => 1, # -"-
 			    wideregion   => 1, # -"-
 			    vbb          => 1, # even in Berlin, because we don't have the VBB zone info
-			    # following are skipped if no data was found
-			    (!$out{nolighting} || !@{ $out{nolighting} } ? (nolighting => 1) : ()),
-			    (!$out{faehren} || !@{ $out{faehren} } ? (faehren => 1) : ()),
 			   };
+    # following are skipped if no data was found
     for my $def (['u-bahn', ['ubahn', 'ubahnhof']],
 		 ['s-bahn', ['sbahn', 'sbahnhof']],
 		 ['r-bahn', ['rbahn', 'rbahnhof']],
+		 ['tram', ['comments_tram']],
+		 ['nolighting', ['nolighting']],
+		 ['faehren', ['faehren']],
 		) {
 	my($feature_name, $layers) = @$def;
     CHECK_EMPTY_LAYER: {
