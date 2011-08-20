@@ -1,7 +1,3 @@
-#
-# $Id: Makefile,v 1.50 2008/08/21 20:00:35 eserte Exp $
-#
-
 # XXX needs MORE work
 
 # Note: with netpbm 10.31 (the version of the netpbm-devel FreeBSD port as
@@ -318,3 +314,7 @@ png-to-jpg:	\
 # then added the borders with ImageMagick:
 #   convert -bordercolor white -border 8x8 tmp.png srtbike72.png
 #   convert -bordercolor white -border 12x12 tmp.png srtbike114.png
+
+# Creation of ferry*.png:
+#   Fetched http://upload.wikimedia.org/wikipedia/commons/d/d6/F%C3%A4hre-Logo-BVG.svg (public domain)
+#   Created 16x16 and 8x8 variants with inkscape
