@@ -2239,7 +2239,7 @@ unless($skip_features{"strassen"}) {
 	$strcm->entryconfigure("last", -menu => $c_bpcm);
 	my @used_types;
 	foreach my $type (@comments_types) {
-	    next if $type =~ /^(cyclepath|mount|route)$/; # handled elsewhere
+	    next if $type =~ /^(cyclepath|mount|route|ferry)$/; # handled elsewhere
 	    if (!$advanced) {
 		# kfzverkehr: poor presentation
 		# scenic: almost no data
@@ -5853,6 +5853,7 @@ sub define_item_attribs {
     for (1 .. 10) {
 	$category_color{"RW".$_."?"} = $category_color{"RW".$_};
     }
+    $layer_category_color{'e'}->{'CS'} = $category_color{'Q'};
     %category_font_color =
 	(
 	 'W'  => '#2a45b7',
@@ -6006,9 +6007,10 @@ sub define_item_attribs {
     foreach (qw/gBO gP gD/) {
 	$line_dash{$_} = [@{ $line_dash{"g"}}];
     }
-    foreach (grep { $_ ne 'tram' } @comments_types) {
+    foreach (grep { $_ !~ m{^(tram|ferry)$} } @comments_types) {
 	$line_dash{"comm-".$_} = [@{ $line_dash{"comm"}}];
     }
+    $line_dash{'comm-ferry'} = $line_dash{'e'};
 
     %line_length =
 	('sperre1'  => [0, 0, 4, 5, 7, 10],
@@ -9985,6 +9987,8 @@ sub plotstr {
 	    $str = _get_wasser_obj($filename);
 	} elsif ($abk eq 'l') {
 	    $str = _get_landstr_obj();
+	} elsif ($abk eq 'e') {
+	    $str = _get_ferry_obj();
 	} elsif ($abk eq 'comm') {
 	    $str = _get_comments_obj();
 	} elsif ($abk eq 'fz') {
@@ -11297,6 +11301,17 @@ sub _get_landstr_obj {
     }
     return $obj[0] if (@obj == 1);
     new MultiStrassen @obj;
+}
+
+# Gibt ein Fähren-Objekt zurück.
+### AutoLoad Sub
+sub _get_ferry_obj {
+    my @obj;
+    push @obj, Strassen->new(get_strassen_file($str_file{'e'}));
+    push @obj, eval { Strassen->new(get_strassen_file($str_file{'comm-ferry'})) };
+    warn $@ if $@;
+    return $obj[0] if (@obj == 1);
+    MultiStrassen->new(@obj);
 }
 
 # Gibt ein Kommentar-Objekt zurück.
@@ -21765,6 +21780,7 @@ sub balloon_info_from_all_tags {
     my $comments_rx = join("|", map { "comm-" . quotemeta }
 			   grep { $_ ne "kfzverkehr" } # list types without meaningful "name" field XXX but maybe comm-kfzverkehr should have meaningful names some day...
 			   @Strassen::Dataset::comments_types);
+
     for my $item (@items) {
 	my(@tags) = $c->gettags($item);
 	if ($verbose && $verbose >= 2) {
@@ -21797,7 +21813,11 @@ sub balloon_info_from_all_tags {
 		}
 		$major_item_seen++;
 	    } else {
-		if ($tags[0] =~ m{^(qs|ql|hs|hl)$}) {
+		if (($tags[2]||'') =~ m{^e-(CS|img)$}) { # comm-ferry
+		    if ($label =~ m{^(?:.*)?:\s*(.*)}) {
+			$label = $1;
+		    }
+		} elsif ($tags[0] =~ m{^(qs|ql|hs|hl)$}) {
 		    if ($label =~ m{^(?:.*)?:\s*(.*)}) {
 			$label = $1;
 		    }
