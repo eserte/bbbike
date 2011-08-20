@@ -2268,12 +2268,6 @@ unless($skip_features{"strassen"}) {
 	$comments_all_check_index = $c_bpcm->index('last');
     }
 
-    unless ($skip_features{"faehren"}) {
-	$strcm->checkbutton(-label => M"Fähren",
-			    -variable => \$str_draw{'e'},
-			    -command => sub { plot('str','e') });
-    }
-
     unless ($skip_features{"hoehe"}) {
 	$strcm->checkbutton(-label => M"Höhenangaben",
 			    -variable => \$p_draw{'hoehe'},
@@ -2652,6 +2646,24 @@ unless ($skip_features{"r-bahn"}) {
     menuright($rbahn_check, $rbcm);
     menuarrow($rbcmb, $rbcm, $col++,
 	      -menulabel => M"R-Bahn", -special => 'LAYER');
+}
+##### Ferries #####
+unless ($skip_features{'faehren'}) {
+    $ferry_photo = load_photo($misc_frame, 'ferry');
+    my $ferry_check = $misc_frame->$Checkbutton
+      (image_or_text($ferry_photo, 'F'),
+       -variable => \$str_draw{'e'},
+       -command => sub { plot('str','e') },
+      )->grid(-row => $curr_row, -column => $col, -sticky => 's');
+    $balloon->attach($ferry_check, -msg => M"Fähren");
+    my $ferrycmb = $misc_frame->Menubutton;
+    my $ferrycm = $ferrycmb->Menu(-title => M"Fähren");
+    menu_entry_choose_ort($ferrycm, 'e',
+			  -pchooseortargs => {'-markstartifactive' => 1},
+			 );
+    menuright($ferry_check, $ferrycm);
+    menuarrow($ferrycmb, $ferrycm, $col++,
+	      -menulabel => M"Fähren", -special => 'LAYER');
 }
 ##### Gewässer #####
 my $wasser_check;
@@ -5622,7 +5634,8 @@ sub load_photos {
     $cal_photo           = load_photo($top, 'cal');
     $clock_photo	 = load_photo($top, 'clock');
     $night_photo	 = load_photo($top, 'night');
-    $ferry_photo         = load_photo($top, 'ferry');
+    $ferry_photo         = load_photo($top, 'ferry')
+	if !$ferry_photo;
     $ferry_klein_photo   = load_photo($top, 'ferry_klein');
     $zugbruecke_photo    = load_photo($top, 'zugbruecke');
     $zugbruecke_klein_photo
