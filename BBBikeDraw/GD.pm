@@ -189,7 +189,7 @@ sub init {
     if ($self->{OldImage}) {
 	$im = $self->{OldImage};
     } else {
-	my $use_truecolor = 0; # XXX with 1 segfaults (still with 2.0.33, seen on amd64-freebsd). Also, background color is not set correctly.
+	my $use_truecolor = 0; # XXX with 1 segfaults (still with 2.0.33, seen on amd64-freebsd).
 	$im = $self->{GD_Image}->new($self->{Width},$self->{Height},
  				     $use_truecolor);
     }
@@ -201,6 +201,11 @@ sub init {
 
     if (!$self->{OldImage}) {
 	$self->allocate_colors;
+	if ($im->isTrueColor) {
+	    # In true color mode the default bg color is not the first
+	    # in palette, but black
+	    $im->filledRectangle(0,0,$self->{Width}-1,$self->{Height},$grey_bg);
+	}
     }
 
     $self->set_category_colors;
@@ -244,7 +249,7 @@ sub pre_draw {
     }
     # create outline brushes
     foreach my $cat (keys %width) {
-	next unless $outline_color{$cat};
+	next unless defined $outline_color{$cat};
 	my $width = $width{$cat} * $scale;
 	$width = 1 if $width < 1;
 	$width = int($width);
