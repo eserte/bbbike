@@ -3488,9 +3488,11 @@ unless ($skip_features{"sehenswuerdigkeiten"}) {
 			  );
     }
     if ($advanced) { # XXX
-	$sb2m->checkbutton(-label => M"Straßenbahnschienen meiden",
-			   -variable => \$tram_optimization,
-			  );
+	unless ($skip_features{"tram"}) {
+	    $sb2m->checkbutton(-label => M"Straßenbahnschienen meiden",
+			       -variable => \$tram_optimization,
+			      );
+	}
     }
     unless ($skip_features{"hoehe"}) {
 	$sb2m->checkbutton(-label => M"Steigungsoptimierung",
