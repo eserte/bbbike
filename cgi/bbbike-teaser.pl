@@ -1,10 +1,9 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike-teaser.pl,v 1.31 2009/04/04 11:12:32 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003,2004,2005,2006,2008,2009,2010 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003,2004,2005,2006,2008,2009,2010,2011 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -22,7 +21,7 @@ sub teaser {
 
     $teasers_optional{"de"}  = [
 				'teaser_link',
-				'teaser_wap',
+				#'teaser_wap',
 				'teaser_collecting_tracks',
 				#'teaser_dobli',
 			       ];
