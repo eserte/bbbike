@@ -677,9 +677,6 @@ Happestr.: Qualität?	? 10955,-769 10953,-812 10968,-987 10976,-1070
 Schumpeterstr.: Qualität? Ist die Straße eine Spielstraße?	? 10979,-1093 10993,-1256 11003,-1303
 Happestr. - Schumpeterstr.: Gibt es für Radfahrer eine Verbindung?	? 10976,-1070 10979,-1093
 Weißenthurmstr.: Qualität?	? 10968,-987 11120,-976
-Annenstr. (Biesdorf): Qualität?	? 21087,14183 21287,14163
-Hiltrudstr.: Qualität?	? 21261,13922 21272,14036 21287,14163 21302,14282 21329,14488
-Hirseweg: Qualität?	? 20743,13184 20836,13170 20918,13159 21003,13152 21113,13142 21214,13126
 Popitzweg - Halemweg: ist der Weg über der U-Bahn auch für Radfahrer befahrbar? Qualität? Geht es über den Halemweg noch weiter?	? 1881,14425 2126,14392 2254,14387 2380,14392
 Haeftenzeile - Weg über der U-Bahn: Durchfahrt für Radfahrer möglich? Qualität?	? 2134,14440 2126,14392
 Schuckertplatz: Qualität?	? 1343,14972 1351,15057
@@ -1435,7 +1432,6 @@ Hochstr. (Lichterfelde): Qualität?	? 4717,1618 4898,1368 4897,1346
 Stephaniweg: Qualität?	? 4855,1616 4836,1659 4779,1699
 Kirchmeisterweg: Qualität?	? 4980,1870 4958,1844 5007,1718 5035,1723
 Straße 40 (Lichtenrade): Qualität?	? 11015,-1357 11003,-1303
-Kleiner-Heufalter-Weg: Wo genau ist die Straße? Qualität?	? 21486,10642 21508,10690
 Erpetaler Weg: Qualität?	? 24637,7438 24620,7290
 Am Bachrain: Qualität?	? 23813,12534 23816,12615 23781,12698 23714,12756 23669,12772 23578,12768 23513,12733 23452,12663
 Im Augarten: Qualität?	? 23503,12644 23553,12703 23649,12724 23695,12708 23755,12642 23766,12551
@@ -2247,6 +2243,7 @@ Karl-Marx-Str. (Waldesruh): Qualität des nördlichen Abschnitts?	? 25064,8793 251
 Kantstr. (Waldesruh): Qualität des nördlichen Abschnitts?	? 25119,8379 25295,8623
 Kantstr. (Waldesruh): Straßenname im Berliner Abschnitt? Ortsschild?	? 24893,7964 24871,7931
 Hellersdorfer Weg (Eiche): Qualität? Gibt es Radwege?	? 23159,16086 23175,16119 23263,16354 23295,16481 23059,16732 23015,16751
+Kleiner-Heufalter-Weg: Wo genau ist liegt die Straße? Qualität?	? 21277,11012 21371,11056
 # added from ampeln-orig
 geschlossen bei Bedarf (?) (Zbr)	? 27657,-11741
 S-Bahn alle 20 Minuten, Regionalbahn halbstündlich (?) (B)	? 40248,14503
@@ -2265,7 +2262,6 @@ Jugendplatz (Qualität?)	? 1191,14513 1262,14510
 (Grenzweg) (Ist der Grenzweg ausgeschildert?)	? 3707,14303 3735,14419 3765,14746
 Rosa-Reinglass-Steig (Ist die Straße für Autos gesperrt?)	? -2878,15304 -2856,15383
 (Grünhofer Weg - Bullengraben) (liegt hier Kopfsteinpflaster oder Verbundsteinpflaster?)	? -4349,13567 -4357,13415
-Charlottenstr. (Biesdorf) (Qualität zwischen Allee der Kosmonauten und dem anderen Teil der Charlottenstr?)	? 20657,14446 20647,14341
 Steilpfad (In welche Richtung verläuft die Steigung? Gibt es hier eine Einbahnstraße? Wenn ja, auch für Radfahrer, oder nur für Autos?)	? 3280,21477 3376,21224
 Verlängerte Schulzendorfer Str. (Existieren Straßenschilder für die "Verlängerte Schulzendorfer Str."?)	? 2155,22453 2060,22419 2011,22408 1874,22412 1827,22404 1659,22383 1583,22376 1524,22368 1468,22359 1411,22365 1266,22401 1094,22504 742,22666 695,22694 676,22667 598,22633 525,22614 439,22620 266,22584 240,22554
 Schönfließer Str. (Frohnau) (Qualität?)	? 3145,26256 3347,26272 3360,26275 3490,26306 3638,26357
@@ -2344,7 +2340,6 @@ Ferdinandstr. (Lichterfelde): guter Asphalt (Wie ist die Fahrbahnbeschaffenheit 
 Miethepfad: Verbundsteinpflaster (Miethepfad zwischen Poleigrund und Weg unter der S-Bahnbrücke: tatsächlich Verbundsteinpflaster oder betoniert/asphaltiert?)	? 9520,-641 9561,-748
 Dessauerstr.: mäßiges Kopfsteinpflaster (Wie ist die Fahrbahnbeschaffenheit des östlichen Abschnitts: Asphalt oder Kopfsteinpflaster?)	? 6711,2496 6651,2479 6459,2364
 Brucknerstr.: Asphalt (Wo genau sind die Kopfsteinpflasterabschnitte, wo genau sind die asphaltierten Abschnitte?)	? 6051,4151 6138,3956
-Kunzeweg: Kopfsteinpflaster (Ist das Kopfsteinpflaster im westlichen Abschnitt des Kunzewegs eher schlecht oder eher gut?)	? 15832,12518 15733,12528
 Weverstr.: mäßiger Asphalt (Ist die Weverstr. westlich der Straße "Am Südpark" gepflastert oder asphaltiert?)	? -4169,12368 -4080,12370 -3987,12374
 Eisenhammerweg: Kopfsteinpflaster (Ist das Kopfsteinpflaster im Eisenhammerweg eher mäßig oder eher schlecht?)	? 1585,19862 1563,19960 1543,20060 1529,20131
 Amalienhofstr.: schlechtes Kopfsteinpflaster (wie ist die Qualität zwischen Ulrikenstr. und Lutoner Str.?)	? -5118,13053 -5100,13081 -5073,13097 -4871,13178 -4771,13214

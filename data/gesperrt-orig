@@ -251,7 +251,7 @@ Erlenweg	1 -3228,18103 -3327,18007
 Aspenweg	1 -3000,18192 -3020,18188 -3050,18164 -3096,18119 -3111,18105 -3168,18051 -3203,18014 -3224,17943
 Aspenweg	1 -3288,17831 -3244,17883 -3224,17943
 Pintschstr.	1 13342,13185 13438,12965
-Wolliner Str.	1 10405,14425 10320,14608
+#XXX del! --- Wolliner Str.	1 10405,14425 10320,14608
 Splanemannstr.	1 18301,9946 18389,9925 18408,10041 18403,10077
 Burgherrenstr.	1 8969,8640 9076,8783
 Travestr.	1 14835,11840 14897,11801 14977,11754
@@ -1578,6 +1578,8 @@ tragen, langgezogene Stufen (13 Stufen)	0:25 20704,1383
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+Drängelgitter (lichte Breite ca. 100cm)	BNP:3::trailer=10 21578,10413
+Drängelgitter (lichte Breite ca. 80cm)	BNP:5::trailer=no 21579,10345
 offenes Tor	BNP:3 24790,15447
 Drängelgitter (lichte Breite ca. 100cm)	BNP:3::trailer=10 23914,15453
 Drängelgitter	BNP:1::trailer=3 17317,12609
@@ -1852,8 +1854,8 @@ Tegeler Hafen: Weg gesperrt	2 1630,20731 1668,20670 1687,20645 1697,20623 1721,2
 #: next_check: ^^^
 #: last_checked ^^^
 # 
-#: last_checked: 2011-05-26
-#: next_check: 2011-07-20
+#: last_checked: 2011-08-19
+#: next_check: 2011-09-25
 Beuthstr.: Bauarbeiten für Anbindung der Axel-Springer-Str. zum Spittelmarkt	2:inwork 10229,11618 10197,11605 10166,11592
 # 
 #: by: somebody via phone call 

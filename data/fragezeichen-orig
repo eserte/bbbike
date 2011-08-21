@@ -151,6 +151,10 @@ Karl-Liebknecht-Str.: Fahrradangebotsstreifen wird erstellt	?::inwork 10437,1270
 #: section ignorieren vvv
 #: section Straßen in Bau und Planung vvv
 # 
+#: last_checked: 2011-08-21
+#: next_check: 2011-11-15
+Bidenswinkel: wird hier noch ein Strang der Straße entstehen? Qualität?	?::inwork 16320,12853 16318,12777
+# 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/32re.pdf/file
 #: XXX Privatstraße, fehlt in Berlin.coords.data
 #: last_checked: 2011-08-03
@@ -198,13 +202,14 @@ entlang der ehemaligen NEB-Trasse: Weiterbau bis zum Faulen See	?::inwork 16146,
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/30re.pdf/file
 #: XXX fehlt in Berlin.coords.data
 #: XXX siehe auch Eintrag für "Am Langen Jammer" in gesperrt-orig
-#: last_checked: 2011-04-17
-#: next_check: 2011-07-15
+#: last_checked: 2011-08-21
+#: next_check: 2012-01-15
 An den Eldenaer Höfen: wo genau wird die Straße liegen? Qualität?	?::inwork 14431,12903 14476,12836
 # 
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1104/nachricht4274.html
 #: XXX die Straße wird Radstreifen haben
 #: XXX neue Ampel an der neuen Kreuzung (wahrscheinlich anstelle der alten Fußgängerampel)
+#: last_checked: 2011-08-19
 #: next_check: 2012-04-01
 Axel-Springer-Str.: Verbindung zum Spittelmarkt	?::inwork 10166,11592 10213,11728
 # 
@@ -353,8 +358,8 @@ Mangerstr.: Bauarbeiten bis Dezember 2010, danach asphaltiert	?::inwork -12064,-
 #: by: http://www.potsdam.de/cms/beitrag/10056300/757395/
 Mauerweg: evtl. existiert hier bereits ein geschotterter Radweg parallel zur Straße	? -8799,3778 -9064,3667 -9156,3451 -9399,3297 -9530,3165 -9999,2615 -10105,2458
 #
-#: last_checked: 2011-07-13 vvv
-#: next_check: 2011-10-15 vvv
+#: last_checked: 2011-08-19 vvv
+#: next_check: 2012-01-15 vvv
 #: XXX Eintrag in Berlin.coords.data fehlt: PLZ=10117
 #: XXX genaue Lage?
 Prinzengasse: existiert sie schon, wenn ja: wie ist die Qualität?	?::inwork 9952,12292 10029,12313
@@ -624,9 +629,7 @@ Altkanzlerstr.: evtl. Eintrag in brunnels notwendig - Name der Brücke?	? -222,43
 Bordsteinkante Richtung Westen	? 17183,17385
 #: XXX_indoor
 Körnerpark oder Körnerplatz?	? 23421,8251 23318,8333 23378,8416 23483,8342
-#: last_checked: 2010-09-05
-#: next_check: 2011-03-01
-Landschaftspark Herzberge: gibt es hier vielleicht weitere Verbindungswege? Park einzeichnen?	? 17277,13224 17679,13233 17683,13073 17293,13058 17277,13224
+#XXX del --- #: last_checked: 2010-09-05 --- #: next_check: 2011-03-01 --- Landschaftspark Herzberge: gibt es hier vielleicht weitere Verbindungswege? Park einzeichnen?	? 17277,13224 17679,13233 17683,13073 17293,13058 17277,13224
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/51re.pdf/file
 #: XXX_indoor
 Landschaftspark Herzberge: ebenfalls zum Landschaftspark gehörig, ggfs. in flaechen aufnehmen	? 17097,14140 17846,14179 17867,13868 17076,13861
@@ -1770,9 +1773,6 @@ Happestr.: Qualität?	? 10955,-769 10953,-812 10968,-987 10976,-1070
 Schumpeterstr.: Qualität? Ist die Straße eine Spielstraße?	? 10979,-1093 10993,-1256 11003,-1303
 Happestr. - Schumpeterstr.: Gibt es für Radfahrer eine Verbindung?	? 10976,-1070 10979,-1093
 Weißenthurmstr.: Qualität?	? 10968,-987 11120,-976
-Annenstr. (Biesdorf): Qualität?	? 21087,14183 21287,14163
-Hiltrudstr.: Qualität?	? 21261,13922 21272,14036 21287,14163 21302,14282 21329,14488
-Hirseweg: Qualität?	? 20743,13184 20836,13170 20918,13159 21003,13152 21113,13142 21214,13126
 Popitzweg - Halemweg: ist der Weg über der U-Bahn auch für Radfahrer befahrbar? Qualität? Geht es über den Halemweg noch weiter?	? 1881,14425 2126,14392 2254,14387 2380,14392
 Haeftenzeile - Weg über der U-Bahn: Durchfahrt für Radfahrer möglich? Qualität?	? 2134,14440 2126,14392
 Schuckertplatz: Qualität?	? 1343,14972 1351,15057
@@ -2716,8 +2716,6 @@ Stephaniweg: Qualität?	? 4855,1616 4836,1659 4779,1699
 Kirchmeisterweg: Qualität?	? 4980,1870 4958,1844 5007,1718 5035,1723
 #XXX Das ist nur eine Aldi-Zufahrt oder so --- #: XXX_osm: bei osm ohne Straßennamen --- Waadter Zeile: Qualität? Für Autos gesperrt? Existiert eine Verbindung zur Goerzallee?	? 3726,2209 3729,2126
 Straße 40 (Lichtenrade): Qualität?	? 11015,-1357 11003,-1303
-#: XXX_osm fehlt bei osm
-Kleiner-Heufalter-Weg: Wo genau ist die Straße? Qualität?	? 21486,10642 21508,10690
 #: XXX_osm: bei osm ohne Straßennamen
 #: XXX laut tvojpl. etc. gehts weiter Richtung Süden bis Ravensteiner Promenade, aber nicht erkennbar
 Erpetaler Weg: Qualität?	? 24637,7438 24620,7290
@@ -3912,3 +3910,4 @@ Karl-Marx-Str. (Waldesruh): Qualität des nördlichen Abschnitts?	? 25064,8793 251
 Kantstr. (Waldesruh): Qualität des nördlichen Abschnitts?	? 25119,8379 25295,8623
 Kantstr. (Waldesruh): Straßenname im Berliner Abschnitt? Ortsschild?	? 24893,7964 24871,7931
 Hellersdorfer Weg (Eiche): Qualität? Gibt es Radwege?	? 23159,16086 23175,16119 23263,16354 23295,16481 23059,16732 23015,16751
+Kleiner-Heufalter-Weg: Wo genau ist liegt die Straße? Qualität?	? 21277,11012 21371,11056
