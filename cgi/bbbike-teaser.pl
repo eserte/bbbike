@@ -158,36 +158,32 @@ EOF
 }
 
 sub teaser_twitter {
-    if (1) { # purely textual
+    my $twitter_url = "http://twitter.com/BBBikeDE/";
+    my $twitter_img = "$bbbike_images/logo_twitter_withbird_60_allblack.png";
+    my $teaser;
+    if (0) { # purely textual
 	if ($lang eq 'en') {
-	    <<'EOF';
-<div class="teaser"><a href="http://twitter.com/BBBikeDE/">BBBikeDE @ Twitter</a>
-</div>
+	    $teaser = <<EOF;
+<div class="teaser"><a href="$twitter_url">BBBikeDE @ Twitter</a></div>
 EOF
 	} else {
-	    <<'EOF';
-<div class="teaser">
-<a href="http://twitter.com/BBBikeDE/">BBBikeDE bei Twitter</a>
-</div>
+	    $teaser = <<EOF;
+<div class="teaser"><a href="$twitter_url">BBBikeDE bei Twitter</a></div>
 EOF
 	}
     } else { # graphical
 	if ($lang eq 'en') {
-	    <<EOF;
-<div class="teaser">
-<a href="http://twitter.com/BBBikeDE/"><img style="border:0px;" src="http://www.bbbike.org/images/tweetn.png" title="Follow BBBike on Twitter" alt=""></a>
-</div>
+	    $teaser = <<EOF;
+<div class="teaser"><a href="$twitter_url">BBBikeDE @ <img border="0" src="$twitter_img" alt="Twitter" /></a></div>
 EOF
 	} else {
-	    <<EOF;
-<div class="teaser">
-<a href="http://twitter.com/BBBikeDE/"><img style="border:0px;" src="http://www.bbbike.org/images/tweetn.png" title="Folge BBBike auf Twitter" alt=""></a>
-</div>
+	    $teaser = <<EOF;
+<div class="teaser"><a href="$twitter_url">BBBikeDE bei <img border="0" src="$twitter_img" alt="Twitter" /></a></div>
 EOF
 	}
     }
+    $teaser;
 }
-
 
 sub teaser_mapserver {
     my $mapserver_url;
