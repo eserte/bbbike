@@ -2780,18 +2780,7 @@ userdel	q4::inwork 425,8766 490,8716
        undef,
        undef,
        undef,
-       {
-         'until' => undef,
-         'text' => 'Fuldastr., von Donaustr. Richtung Karl-Marx-Str. ist die Fahrbahn gesperrt',
-         'from' => undef,
-         'id' => 2216,
-         'data' => '#: last_checked: 2011-06-09
-#: next_check: 2011-07-05
-#: XXX wie lange gilt die Sperrung?
-userdel	q4::inwork; 12549,8616 12500,8504
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        {
@@ -2927,16 +2916,7 @@ userdel	2::inwork 16148,458 16169,458
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'http://www.berlin.de/ba-pankow/presse/archiv/20110712.1215.351002.html',
-         'until' => 1313791199,
-         'text' => 'Fahrbahn am östlichen Herthaplatz wird ausgebaut, bis Mitte August 2011',
-         'from' => undef,
-         'id' => 2249,
-         'data' => 'userdel	q4::inwork 10599,19957 10614,19907
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20110712.1035.350987.html',
          'until' => 1342389599,
@@ -2979,16 +2959,7 @@ userdel	q4::inwork 2295,20358 2362,20218 2402,20126
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'INKO_107796',
-         'until' => 1314025200,
-         'text' => 'Gartenstr. (Mitte): Baustelle, Fahrtrichtung gesperrt (bis Ende 08/11) Richtung Invalidenstr. zwischen Bernauer Str. und Invalidenstr., 01.08.2011 07:30 Uhr bis 22.08.2011 17:00 Uhr ',
-         'from' => 1312090200,
-         'id' => 2255,
-         'data' => 'userdel	q4::inwork; 9224,14169 9383,13978
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => '116501481',
          'until' => 1315605600,
@@ -3046,37 +3017,9 @@ userdel	q4::inwork 2295,20358 2362,20218 2402,20126
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_017698',
-         'until' => 1313989200,
-         'text' => 'Schwarzer Weg (Mitte) in beiden Richtungen zwischen Invalidenstr. und Habersathstr. Veranstaltung, Straße vollständig gesperrt, 19.08.2011 12 Uhr bis 22.08.2011 07:00 ',
-         'from' => 1313694142,
-         'id' => 2268,
-         'data' => 'userdel	2::temp 8429,13903 8574,13666
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'source_id' => 'IM_017679',
-         'until' => 1313985600,
-         'text' => 'Str. des 17. Juni (Tiergarten): Veranstaltung, Straße vollständig gesperrt in beiden Richtungen zwischen Y.-Rabin-Str. und Ebertstr., Ebertstr. ebenfalls gesperrt, 18.08.2011, 06:00 Uhr bis 22.08.2011, 06:00 Uhr ',
-         'from' => 1313553600,
-         'id' => 2269,
-         'data' => 'userdel	q4::temp 8089,12190 8214,12205 8538,12245
-userdel	q4::temp 8595,12066 8600,12165 8538,12245 8546,12279 8570,12302 8573,12325 8540,12420
-',
-         'type' => 'handicap'
-       },
-       {
-         'source_id' => 'IM_017672',
-         'until' => 1313949600,
-         'text' => 'Triftstr. (Reinickendorf): Veranstaltung, Straße vollständig gesperrt in beiden Richtungen zwischen Am Nordgraben und Holzhauser Str., 18.08.2011, 18:00 Uhr bis 21.08.2011, 20:00 Uhr ',
-         'from' => 1313596800,
-         'id' => 2270,
-         'data' => 'userdel	2::temp 4273,20021 4319,20182
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
+       undef,
        {
          'until' => undef,
          'recurring' => 1,
@@ -3087,16 +3030,6 @@ userdel	q4::temp 8595,12066 8600,12165 8538,12245 8546,12279 8570,12302 8573,123
 	q4::temp:clock 9925,11947 9878,11857
 ',
          'type' => 'gesperrt'
-       },
-       {
-         'source_id' => 'IM_017697',
-         'until' => 1313888400,
-         'text' => 'Kirchstr. (Moabit) Veranstaltung zwischen Alt-Moabit und Helgoländer Ufer ab 20.08.2011, 08 Uhr bis 21.08.2011, 03:00 Uhr',
-         'from' => 1313733600,
-         'id' => 2272,
-         'data' => 'userdel	q4::temp 6608,12858 6661,13130
-',
-         'type' => 'handicap'
        }
      
 );

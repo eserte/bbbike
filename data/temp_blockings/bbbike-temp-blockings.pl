@@ -19062,13 +19062,10 @@ userdel	2::inwork 15383,9191 14819,9462 14780,9480 14310,9692
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1314041104, # XXX
        text  => 'Fuldastr., von Donaustr. Richtung Karl-Marx-Str. ist die Fahrbahn gesperrt',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2011-06-09
-#: next_check: 2011-07-05
-#: XXX wie lange gilt die Sperrung?
 userdel	q4::inwork; 12549,8616 12500,8504
 EOF
      },
