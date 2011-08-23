@@ -24,6 +24,7 @@ use lib ($FindBin::RealBin, "$FindBin::RealBin/..");
 
 use CGI qw();
 use Getopt::Long;
+use Safe ();
 
 use BBBikeTest qw(get_std_opts like_html unlike_html $cgidir
 		  xmllint_string gpxlint_string kmllint_string);
@@ -32,7 +33,7 @@ sub bbbike_cgi_search ($$);
 sub bbbike_cgi_geocode ($$);
 
 #plan 'no_plan';
-plan tests => 62;
+plan tests => 70;
 
 if (!GetOptions(get_std_opts("cgidir"),
 	       )) {
@@ -273,6 +274,41 @@ SKIP: {
     }
 }
 
+{
+    # N_RW, N_RW1 ... (avoid main roads without cycle paths...)
+    my %route_endpoints = (startc => '10020,11262',
+			   zielc  => '9199,11166',
+			  );
+    my $safe = Safe->new;
+    {
+	my $resp = bbbike_cgi_search +{ %route_endpoints, output_as => 'perldump' }, 'No road prefs';
+	my $res = $safe->reval($resp->decoded_content);
+	ok((grep { $_ eq '9615,11225' } @{$res->{Path}}), 'via Kochstr.')
+	    or diag_route($res);
+    }
+
+    {
+	my $resp = bbbike_cgi_search +{ %route_endpoints, pref_cat => 'N_RW', output_as => 'perldump' }, 'N_RW';
+	my $res = $safe->reval($resp->decoded_content);
+	ok((grep { $_ eq '9615,11225' } @{$res->{Path}}), 'still via Kochstr. (bus lane)')
+	    or diag_route($res);
+    }
+
+    {
+	my $resp = bbbike_cgi_search +{ %route_endpoints, pref_cat => 'N_RW1', output_as => 'perldump' }, 'N_RW1';
+	my $res = $safe->reval($resp->decoded_content);
+	ok(!(grep { $_ eq '9615,11225' } @{$res->{Path}}), 'not anymore via Kochstr.')
+	    or diag_route($res);
+    }
+
+    {
+	my $resp = bbbike_cgi_search +{ %route_endpoints, pref_cat => 'N2', output_as => 'perldump' }, 'N';
+	my $res = $safe->reval($resp->decoded_content);
+	ok(!(grep { $_ eq '9615,11225' } @{$res->{Path}}), 'also not via Kochstr. (residential only)')
+	    or diag_route($res);
+    }
+
+}
 
 sub bbbike_cgi_search ($$) {
     my($params, $testname) = @_;
@@ -307,6 +343,11 @@ sub on_routelist_page {
     my($resp) = @_;
     like_html($resp->decoded_content, qr{Route von .* bis}, 'On routelist page (title)');
     like_html($resp->decoded_content, qr{Fahrzeit}, 'On routelist page (Fahrzeit)');
+}
+
+sub diag_route {
+    my($res) = @_;
+    diag join(" - ", map { $_->{Strname} } @{$res->{Route}});
 }
 
 __END__
