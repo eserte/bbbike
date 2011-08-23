@@ -291,6 +291,7 @@ sub make_net_cyclepath {
     if ($cacheable) {
 	#XXXmy @src = $self->sourcefiles;
 	my @src = $self->dependent_files;
+	push @src, $cyclepath->dependent_files;
 	$cachefile = $self->get_cachefile;
 	my $net = Strassen::Util::get_from_cache("net_cyclepath_$cachefile", \@src);
 	if (defined $net) {
