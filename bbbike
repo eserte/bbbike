@@ -3430,6 +3430,7 @@ unless ($skip_features{"sehenswuerdigkeiten"}) {
 		       -command => sub {
 			   if ($strcat_optimierung) {
 			       $N_RW_optimization = 0;
+			       $N_RW1_optimization = 0;
 			   }
 		       },
 		     );
@@ -3445,6 +3446,7 @@ unless ($skip_features{"sehenswuerdigkeiten"}) {
 		       -command => sub {
 			   if ($radwege_optimierung) {
 			       $N_RW_optimization = 0;
+			       $N_RW1_optimization = 0;
 			   }
 		       }
 		      );
@@ -3454,6 +3456,17 @@ unless ($skip_features{"sehenswuerdigkeiten"}) {
 			   if ($N_RW_optimization) {
 			       $radwege_optimierung = 0;
 			       $strcat_optimierung = 0;
+			       $N_RW1_optimization = 0;
+			   }
+		       }
+		      );
+    $sb2m->checkbutton(-label => M"Hauptstraßen ohne Radwege meiden",
+		       -variable => \$N_RW1_optimization,
+		       -command => sub {
+			   if ($N_RW1_optimization) {
+			       $radwege_optimierung = 0;
+			       $strcat_optimierung = 0;
+			       $N_RW_optimization = 0;
 			   }
 		       }
 		      );
@@ -5208,7 +5221,7 @@ sub handle_options {
 	  nogui => 1],		# XXX Tk::Getopt can't handle this yet
 	 ['radwegeoptimierung','!',0, var => \$radwege_optimierung,
 	  label => M"Radwege-Optimierung"],
-	 ['N_RW_optimization', '!', 0, var => \$N_RW_optimization, nogui => 1],
+	 ['N_RW_optimization', '!', 0, var => \$N_RW_optimization, nogui => 1],#XXX N_RW vs. N_RW1 missing!
 	 ['tram_optimization', '!', 0, var => \$tram_optimization, nogui => 1],
 	 ['greenoptimierung', '=i', 0, choices => [0,1,2],
 	  longhelp => "0: ".M("egal")."\n".
@@ -9057,12 +9070,13 @@ sub enter_opt_preferences {
     }
 
     my $N_RW_cb;
+    my $N_RW1_cb;
     my $cb3;
     $cb3 = $act_page[2]->Checkbutton
       (-text => M"Verwenden",
        -variable => \$radwege_optimierung,
        -command => sub { change_state_all($act_page[2], $radwege_optimierung,
-					  {$cb3=>3,$N_RW_cb=>1}); },
+					  {$cb3=>1,$N_RW_cb=>1,$N_RW1_cb=>1}); },
       )->grid(-row => $gridy++,
 	      -column => 2,
 	      -sticky => 'e');
@@ -9075,8 +9089,24 @@ sub enter_opt_preferences {
 	     if ($N_RW_optimization) {
 		 $radwege_optimierung = 0;
 		 $strcat_optimierung = 0;
+		 $N_RW1_optimization = 0;
 		 change_state_all($act_page[2], $radwege_optimierung,
-				  {$cb3=>1,$N_RW_cb=>1});
+				  {$cb3=>1,$N_RW_cb=>1,$N_RW1_cb=>1});
+	     }
+	 },
+	)->grid(-row => $gridy++,
+		-column => 0,
+		-sticky => "w");
+    $N_RW1_cb = $act_page[2]->Checkbutton
+	(-text => M"Hauptstraßen ohne Radwege meiden",
+	 -variable => \$N_RW1_optimization,
+	 -command => sub {
+	     if ($N_RW1_optimization) {
+		 $radwege_optimierung = 0;
+		 $strcat_optimierung = 0;
+		 $N_RW_optimization = 0;
+		 change_state_all($act_page[2], $radwege_optimierung,
+				  {$cb3=>1,$N_RW_cb=>1,$N_RW1_cb=>1});
 	     }
 	 },
 	)->grid(-row => $gridy++,
@@ -17250,7 +17280,7 @@ sub search_route {
 	      };
 	}
 
-	if ($N_RW_optimization) {
+	if ($N_RW_optimization || $N_RW1_optimization) {
 	    # XXX check if $N_RW_net is up-to-date with respect to its
 	    # sources, or whether a new $N_RW_net should be build
 	    if (!$N_RW_net) {
@@ -17263,10 +17293,12 @@ sub search_route {
 		}
 	    }
 	    if ($N_RW_net) {
-		my $penalty = { "H"    => 4,
-				"H_RW" => 1,
-				"N"    => 1,
-				"N_RW" => 1 };
+		my $penalty = { "H"     => 4,
+				"H_Bus" => ($N_RW1_optimization ? 4 : 1),
+				"H_RW"  => 1,
+				"N"     => 1,
+				"N_Bus" => 1,
+				"N_RW"  => 1 };
 		$extra_args{RadwegeStrcat} =
 		    {Net => $N_RW_net,
 		     Penalty => $penalty,

@@ -272,17 +272,19 @@ sub make_net_cat {
 }
 
 # Create a special cycle path/street category net
-# For $type only "N_RW" is defined now:
-#    H    => H, B or HH without cycle path
-#    H_RW => same with
-#    N    => NH, N or NN without cycle path
-#    N_RW => same with
+# Categories created are:
+#    H    => H, B or HH without cycle path and bus lane
+#    H_RW => same with cycle path
+#    H_BL => same with bus lane
+#    N    => NH, N or NN without cycle path and bus lane
+#    N_RW => same with cycle path
+#    N_BL => same with bus lane
 # %args: may be UseCache => $boolean
+# Note: former versions of this function had a "$type" argument in
+#       between, which is not needed and is now removed.
 ### AutoLoad Sub
 sub make_net_cyclepath {
-    my($self, $cyclepath, $type, %args) = @_;
-
-    my $args2filename = "$type";
+    my($self, $cyclepath, %args) = @_;
 
     my $cachefile;
     my $cacheable = defined $args{UseCache} ? $args{UseCache} : $Strassen::Util::cacheable;
@@ -290,7 +292,7 @@ sub make_net_cyclepath {
 	#XXXmy @src = $self->sourcefiles;
 	my @src = $self->dependent_files;
 	$cachefile = $self->get_cachefile;
-	my $net = Strassen::Util::get_from_cache("net_" . $args2filename . "_$cachefile", \@src);
+	my $net = Strassen::Util::get_from_cache("net_cyclepath_$cachefile", \@src);
 	if (defined $net) {
 	    $self->{Net} = $net;
 	    if ($VERBOSE) {
@@ -318,12 +320,20 @@ sub make_net_cyclepath {
 	for my $i (0 .. $#kreuzungen-1) {
 	    my $str_cat   = ($cat =~ /^(H|HH|B)$/ ? 'H' : 'N');
 	    if (exists $c_net->{$kreuzungen[$i]}{$kreuzungen[$i+1]}) {
-		$net->{$kreuzungen[$i]}{$kreuzungen[$i+1]} = $str_cat."_RW";
+		if ($c_net->{$kreuzungen[$i]}{$kreuzungen[$i+1]} eq 'RW5') {
+		    $net->{$kreuzungen[$i]}{$kreuzungen[$i+1]} = $str_cat."_Bus";
+		} else {
+		    $net->{$kreuzungen[$i]}{$kreuzungen[$i+1]} = $str_cat."_RW";
+		}
 	    } else {
 		$net->{$kreuzungen[$i]}{$kreuzungen[$i+1]} = $str_cat;
 	    }
 	    if (exists $c_net->{$kreuzungen[$i+1]}{$kreuzungen[$i]}) {
-		$net->{$kreuzungen[$i+1]}{$kreuzungen[$i]} = $str_cat."_RW";
+		if ($c_net->{$kreuzungen[$i+1]}{$kreuzungen[$i]} eq 'RW5') {
+		    $net->{$kreuzungen[$i+1]}{$kreuzungen[$i]} = $str_cat."_Bus";
+		} else {
+		    $net->{$kreuzungen[$i+1]}{$kreuzungen[$i]} = $str_cat."_RW";
+		}
 	    } else {
 		$net->{$kreuzungen[$i+1]}{$kreuzungen[$i]} = $str_cat;
 	    }
@@ -331,7 +341,7 @@ sub make_net_cyclepath {
     }
 
     if ($cacheable) {
-	Strassen::Util::write_cache($net, "net_" . $args2filename . "_$cachefile", -modifiable => 1);
+	Strassen::Util::write_cache($net, "net_cyclepath_$cachefile", -modifiable => 1);
 	if ($VERBOSE) {
 	    warn "Wrote cache ($cachefile)\n";
 	}

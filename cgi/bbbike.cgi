@@ -3186,6 +3186,7 @@ sub settings_html {
 <option @{[ $cat_checked->("H1") ]}>@{[ M("Hauptstraßen bevorzugen") ]}
 <option @{[ $cat_checked->("H2") ]}>@{[ M("nur Hauptstraßen benutzen") ]}
 <option @{[ $cat_checked->("N_RW") ]}>@{[ M("Hauptstraßen ohne Radwege/Busspuren meiden") ]}
+<option @{[ $cat_checked->("N_RW1") ]}>@{[ M("Hauptstraßen ohne Radwege meiden") ]}
 </select></td></tr>
 <tr><td>@{[ M("Bevorzugter Straßenbelag") ]}:</td><td><select $bi->{hfill} name="pref_quality">
 <option @{[ $qual_checked->("") ]}>@{[ M("egal") ]}
@@ -3591,19 +3592,21 @@ sub search_coord {
     # Kategorieoptimierung
     if (!$disable_other_optimizations && defined $q->param('pref_cat') && $q->param('pref_cat') ne '') {
 	my $penalty;
-	if ($q->param('pref_cat') eq 'N_RW') {
+	my $pref_cat = $q->param('pref_cat');
+	if ($pref_cat =~ m{^N_RW1?$}) {
 	    if (!$radwege_strcat_net) {
 		my $str = get_streets();
-		$radwege_strcat_net = new StrassenNetz $str;
+		$radwege_strcat_net = StrassenNetz->new($str);
 		$radwege_strcat_net->make_net_cyclepath
-		    (get_cyclepath_streets(),
-		     'N_RW', UseCache => 0, # UseCache => 1 for munich
-		    );
+		    (get_cyclepath_streets(), UseCache => 0);
 	    }
-	    $penalty = { "H"    => 4,
-			 "H_RW" => 1,
-			 "N"    => 1,
-			 "N_RW" => 1 };
+	    $penalty = { "H"     => 4,
+			 "H_Bus" => ($pref_cat eq 'N_RW1' ? 4 : 1),
+			 "H_RW"  => 1,
+			 "N"     => 1,
+			 "N_Bus" => 1,
+			 "N_RW"  => 1,
+		       };
 	    $extra_args{RadwegeStrcat} =
 		{Net => $radwege_strcat_net,
 		 Penalty => $penalty,
@@ -3612,30 +3615,30 @@ sub search_coord {
 	    if (!$strcat_net) {
 		my $str = get_streets();
 		$strcat_net = new StrassenNetz $str;
-		$strcat_net->make_net_cat(-usecache => 0); # 1 for munich
+		$strcat_net->make_net_cat(-usecache => 0);
 	    }
-	    if ($q->param('pref_cat') eq 'N2') {
+	    if ($pref_cat eq 'N2') {
 		$penalty = { "B"  => 4,
 			     "HH" => 4,
 			     "H"  => 4,
 			     "NH" => 2,
 			     "N"  => 1,
 			     "NN" => 1 };
-	    } elsif ($q->param('pref_cat') eq 'N1') {
+	    } elsif ($pref_cat eq 'N1') {
 		$penalty = { "B"  => 1.5,
 			     "HH" => 1.5,
 			     "H"  => 1.5,
 			     "NH" => 1,
 			     "N"  => 1,
 			     "NN" => 1 };
-	    } elsif ($q->param('pref_cat') eq 'H1') {
+	    } elsif ($pref_cat eq 'H1') {
 		$penalty = { "B"  => 1,
 			     "HH" => 1,
 			     "H"  => 1,
 			     "NH" => 1,
 			     "N"  => 1.5,
 			     "NN" => 1.5 };
-	    } elsif ($q->param('pref_cat') eq 'H2') {
+	    } elsif ($pref_cat eq 'H2') {
 		$penalty = { "B"  => 1,
 			     "HH" => 1,
 			     "H"  => 1,
