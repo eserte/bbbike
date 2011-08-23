@@ -802,6 +802,12 @@ for my $osm_file (@osm_files) {
 		push @or, ['ortsschilder', 'OS'];
 	    }
 
+	    if (exists $tag{'addr:city'} && exists $tag{'addr:housenumber'} &&
+		exists $tag{'addr:postcode'} && exists $tag{'addr:street'}) {
+		my $name = join("|", @tag{qw(addr:street addr:housenumber addr:postcode addr:city)});
+		push @or, ['_addr', 'HNR', name => $name];
+	    }
+
 	    if (!@or && !$ignore_unhandled && !$ignore_underline) {
 		$do_unhandled->(\$name, \%tag);
 		if ($name ne "" && !exists $tag{'obsolete_boundary'}) {
