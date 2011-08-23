@@ -3598,7 +3598,7 @@ sub search_coord {
 		my $str = get_streets();
 		$radwege_strcat_net = StrassenNetz->new($str);
 		$radwege_strcat_net->make_net_cyclepath
-		    (get_cyclepath_streets(), UseCache => 0);
+		    (get_cyclepath_streets(), UseCache => 1);
 	    }
 	    $penalty = { "H"     => 4,
 			 "H_Bus" => ($pref_cat eq 'N_RW1' ? 4 : 1),
@@ -3615,7 +3615,7 @@ sub search_coord {
 	    if (!$strcat_net) {
 		my $str = get_streets();
 		$strcat_net = new StrassenNetz $str;
-		$strcat_net->make_net_cat(-usecache => 0);
+		$strcat_net->make_net_cat(-usecache => 1);
 	    }
 	    if ($pref_cat eq 'N2') {
 		$penalty = { "B"  => 4,
