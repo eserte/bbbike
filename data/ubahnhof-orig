@@ -11,7 +11,7 @@ Görlitzer Bhf.	UA 12076,10426
 Kottbusser Tor	UA 11393,10390
 #: XXX_prog bg nur Richtung Osten
 Prinzenstr.	UA 10529,10306
-#: XXX_checklater 2010-01-01 bg
+#: XXX_checklater 2012-01-01 bg
 Hallesches Tor	UA 9582,10220
 Möckernbrücke (U1)	UA 8986,10350
 Gleisdreieck	UA 8395,10394
@@ -21,6 +21,7 @@ Nollendorfplatz	UA 7000,10370
 #: attrs bg
 Wittenbergplatz	UA 6301,10601
 Kurfürstendamm	UA 5512,10786
+#: attrs bg
 Uhlandstr.	UA 5157,10657
 # U3
 Augsburger Str.	UA 5877,10486
@@ -31,6 +32,7 @@ Fehrbelliner Platz	UA 4381,9276
 #: attrs bg
 Heidelberger Platz	UA 4295,8137
 Rüdesheimer Platz	UB 4399,7342
+#: attrs bg
 Breitenbachplatz	UB 3998,6655
 Podbielskiallee	UB 3158,6358
 #: attrs bg
@@ -43,10 +45,13 @@ Krumme Lanke	UB -516,3967
 # U2
 #: attrs bg
 Pankow	UB 10843,18001
+#: attrs bg
 Vinetastr.	UB 10934,17049
 #: attrs bg
 Schönhauser Allee	UA 10983,15984
+#: attrs bg
 Eberswalder Str.	UA 10890,15097
+#: attrs bg
 Senefelderplatz	UA 10936,14074
 Rosa-Luxemburg-Platz	UA 10818,13516
 #: attrs bg
@@ -54,12 +59,13 @@ Alexanderplatz (U2)	UA 11068,12895
 Klosterstr.	UA 10954,12399
 #: attrs bg
 Märkisches Museum	UA 10827,11864
+#: attrs bg
 Spittelmarkt	UA 10337,11730
 Hausvogteiplatz	UA 9829,11957
 #: attrs bg
 Stadtmitte (U2)	UA 9452,11808
 Mohrenstr.	UA 9098,11754
-#: XXX_checklater 2010-01-01 bg
+#: attrs bg
 Potsdamer Platz	UA 8667,11478
 #: attrs bg
 Mendelssohn-Bartholdy-Park	UA 8444,10854
@@ -90,25 +96,25 @@ Innsbrucker Platz	UA 6386,8065
 # U5
 #: attrs bg
 Alexanderplatz (U5/U8)	UA 10967,12812
-#: XXX_checklater 2010-01-01 bg
+#: XXX_checklater 2012-01-01 bg
 Schillingstr.	UA 11640,12743
-#: XXX_checklater 2010-01-01 bg
+#: XXX_checklater 2012-01-01 bg
 Strausberger Platz	UA 12192,12538
-#: XXX_checklater 2010-01-01 bg
+#: XXX_checklater 2012-01-01 bg
 Weberwiese	UA 13054,12397
 #: attrs bg
 #: oldname: -19960904: Rathaus Friedrichshain
 #: oldname: 19960904-19980520: Petersburger Str.
 Frankfurter Tor	UA 13792,12290
-#: XXX_checklater 2010-01-01 bg
+#: XXX_checklater 2012-01-01 bg
 Samariterstr.	UA 14508,12185
 #: attrs bg
 Frankfurter Allee	UA 15177,12089
-#: XXX_checklater 2010-01-01 bg
+#: XXX_checklater 2012-01-01 bg
 Magdalenenstr.	UB 16076,11953
-#: XXX_checklater 2010-01-01 bg
+#: XXX_checklater 2012-01-01 bg
 Lichtenberg	UB 16866,11820
-#: XXX_checklater 2010-01-01 bg
+#: attrs bg
 Friedrichsfelde	UB 17802,11316
 #: attrs bg
 Tierpark	UB 18481,10468
@@ -142,6 +148,7 @@ Hauptbahnhof	UA 8030,13294
 Alt-Mariendorf	UB 9472,3641
 Westphalweg	UB 9298,4471
 Ullsteinstr.	UB 9180,5376
+#: attrs bg
 Kaiserin-Augusta-Str.	UB 9186,5979
 Alt-Tempelhof	UB 9240,6599
 #: attrs bg
@@ -170,15 +177,18 @@ Schwartzkopffstr.	UA 8543,14346
 Reinickendorfer Str.	UA 8030,14905
 #: attrs bg
 Wedding	UA 7739,15167
-#: XXX_checklater 2010-01-01 bg
+#: attrs bg
 Leopoldplatz	UB 7279,15571
 Seestr.	UB 6828,15983
+#: attrs bg
 Rehberge	UB 6112,16621
 Afrikanische Str.	UB 5594,17068
-#: XXX_checklater 2010-01-01 bg
+#: XXX_checklater 2012-01-01 bg
 Kurt-Schumacher-Platz	UB 5063,17424
+#: attrs bg
 Scharnweberstr.	UB 4064,17787
 #: oldname: -20030212: Seidelstr.
+#: attrs bg
 Otisstr.	UB 3389,18248
 Holzhauser Str.	UB 2898,18814
 Borsigwerke	UB 2586,19374
@@ -193,6 +203,7 @@ Wutzkyallee	UB 15373,2039
 Lipschitzallee	UB 14600,2157
 #: attrs bg
 Johannisthaler Chaussee	UB 13933,2673
+#: attrs bg
 Britz-Süd	UB 13582,3543
 Parchimer Allee	UB 13643,4410
 Blaschkoallee	UB 13592,5253
@@ -204,6 +215,7 @@ Karl-Marx-Str.	UA 12871,7943
 Rathaus Neukölln	UA 12518,8482
 #: attrs bg
 Hermannplatz	UA 11837,8980
+#: attrs bg
 Südstern	UA 10684,9295
 Gneisenaustr.	UA 9883,9494
 Möckernbrücke (U7)	UA 8988,10323
@@ -273,6 +285,7 @@ Amrumer Str.	UB 6647,15084
 #: oldname: -19930125: Putlitzstr.
 Westhafen	UA 6197,14494
 Birkenstr.	UA 6112,13947
+#: attrs bg
 Turmstr.	UA 6122,13261
 Hansaplatz	UA 6186,12424
 Güntzelstr.	UA 5493,9481

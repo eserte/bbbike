@@ -3,6 +3,7 @@
 #:
 Anhalter Bhf.	bg 8880,10853
 Potsdamer Platz	bg 8540,11480
+Brandenburger Tor	bg 8838,12259
 Friedrichstr.	bg 9181,12732
 Oranienburger Str.	bg 9610,13258
 Hauptbahnhof	bg 8007,13225
@@ -10,8 +11,10 @@ Nordbahnhof	bg 9264,14032
 Gesundbrunnen	bg 9299,15930
 Bornholmer Str.	bg 9860,16507
 Schönhauser Allee	bg 11064,15971
+Wollankstr.	bg 9476,17716
 Pankow	bg 10796,17924
 Wittenau	bg 5468,21190
+Waidmannslust	bg 4544,22215
 Hermsdorf	bg 3613,23408
 Frohnau	bg 2399,25053
 Tegel	bg 2471,20090
@@ -53,6 +56,7 @@ Alexanderplatz	bg 10856,12897
 Jannowitzbrücke	bg 11398,12103
 Ostbahnhof: auf der Ostseite große Aufzüge, leider häufig kaputt, nur von der Seite Am Ostbahnhof niveaufrei erreichar; auf der Westseite normale Aufzüge, nur von der Seite Erich-Steinfurth-Str. erreichbar	bg 12609,11662
 Rummelsburg	bg 15454,10711
+Betriebsbhf. Rummelsburg	bg 16877,9840
 Karlshorst	bg 18801,8501
 Köpenick	bg 22530,6100
 Friedrichshagen	bg 25491,6001
@@ -62,7 +66,9 @@ Ahrensfelde	bf 21199,18617
 Mehrower Allee	bf 20458,17110
 Raoul-Wallenberg-Str.	bf 20069,16334
 Marzahn	bg 19623,15444
+Poelchaustr.	bf 19253,14497
 Springpfuhl	bg 19367,13687
+Biesdorf	bg 20766,12124
 Friedrichsfelde Ost	bg 18295,12195
 Lichtenberg	bf 16796,11777
 Wuhletal	bf 22121,12080
@@ -70,22 +76,28 @@ Mahlsdorf	bg 24487,12082
 Birkenstein	bf 26953,12513
 Hohenschönhausen	bf 17607,18021
 Wartenberg	bf 16997,18750
+Frankfurter Allee	bg 15205,12156
 Storkower Str.	bg 14494,13199
 Landsberger Allee	bg 13839,13778
 Greifswalder Str.	bg 12732,14995
 Prenzlauer Allee	bg 11818,15492
 Pankow-Heinersdorf	bg 12076,19329
+Blankenburg	bg 12918,20692
+Karow	bg 14608,23364
 Buch	bf 16132,25743
 Röntgental	bg 17633,27219
 Treptower Park	bg 14368,9864
 Plänterwald	bg 15188,8170
 Köllnische Heide	bg 14887,7182
+Baumschulenweg	bg 16410,6873
 Schöneweide	bg 17722,5573
 Oberspree	bf 19582,5323
 Spindlersfeld	bf 21285,4718
+Adlershof	bg 19915,3386
 Grünau	bg 22166,986
 Flughafen Berlin-Schönefeld	bf 18079,-1507
 Grünbergallee	bf 20033,-559
+Altglienicke	bg 21101,291
 Heidelberger Platz	bg 4182,8142
 Hohenzollerndamm	bg 3405,9059
 Westend	bg 2256,12334
@@ -120,6 +132,7 @@ Strausberg: anscheinend problemlos	bf 39652,14539
 Petershagen Nord	bf 36546,14154
 Fredersdorf (bei Berlin)	bf 34614,13831
 Neuenhagen (bei Berlin)	bf 30462,13112
+Hoppegarten (Mark)	bg 28723,12824
 Königs Wusterhausen	bf 26358,-11950
 Zeuthen	bf 26029,-6170
 Osdorfer Str.	bg 4514,1370
@@ -130,3 +143,4 @@ Heiligensee	bg -1717,24101
 Hennigsdorf	bg -3389,25653
 Stresow	bg -2891,13780
 Spandau	bg -3663,14083
+Julius-Leber-Brücke	bg 7534,8895

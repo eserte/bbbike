@@ -8,7 +8,7 @@ Yorckstr. (Großgörschenstr.)	SA 7985,9576
 Anhalter Bhf.	SA 8880,10853
 #: attrs bg
 Potsdamer Platz	SA 8540,11480
-#: note: Aufzug von der Verteilerebene zum Bahnsteig
+#: attrs bg
 #: oldname: -20080808 Unter den Linden
 Brandenburger Tor	SA 8838,12259
 #: attrs bg
@@ -28,7 +28,7 @@ Gesundbrunnen	SA 9299,15930
 Bornholmer Str.	SB 9860,16507
 #: attrs bg
 Schönhauser Allee	SA 11064,15971
-#: note: Aufzug vorhanden, aber außer Betrieb
+#: attrs bg
 Wollankstr.	SB 9476,17716
 #: attrs bg
 Pankow	SB 10796,17924
@@ -37,6 +37,7 @@ Wilhelmsruh	SB 7446,19476
 Alt-Reinickendorf	SB 6583,19093
 #: attrs bg
 Wittenau	SB 5468,21190
+#: attrs bg
 Waidmannslust	SB 4544,22215
 #: attrs bg
 Hermsdorf	SB 3613,23408
@@ -131,6 +132,8 @@ Ostkreuz	SA 14847,10892
 #: attrs bg
 Rummelsburg	SB 15454,10711
 Nöldnerplatz	SB 15829,10932
+#: attrs bg
+#: note: People Mover
 Betriebsbhf. Rummelsburg	SB 16877,9840
 #: attrs bg
 Karlshorst	SB 18801,8501
@@ -153,12 +156,13 @@ Mehrower Allee	SB 20458,17110
 Raoul-Wallenberg-Str.	SB 20069,16334
 #: attrs bg
 Marzahn	SB 19623,15444
+#: attrs bf
 Poelchaustr.	SB 19253,14497
 #: attrs bg
 Springpfuhl	SB 19367,13687
-#: XXX_prog bf nur Richtung Westen
-#: XXX ab 2011-06-20: Aufzug auch in Richtung Osten
-#: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20110609.1020.347201.html
+#: XXX_prog bf Richtung Westen, bg Richtung Osten
+#: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20110609.1020.347201.html (Aufzug in Richtung Osten, ab 2011-06-20)
+#: attrs bg
 Biesdorf	SB 20766,12124
 #: attrs bg
 Friedrichsfelde Ost	SB 18295,12195
@@ -176,6 +180,7 @@ Gehrenseestr.	SB 18518,16904
 Hohenschönhausen	SB 17607,18021
 #: attrs bf
 Wartenberg	SB 16997,18750
+#: attrs bg
 Frankfurter Allee	SA 15205,12156
 #: attrs bg
 Storkower Str.	SA 14494,13199
@@ -187,7 +192,9 @@ Greifswalder Str.	SA 12732,14995
 Prenzlauer Allee	SA 11818,15492
 #: attrs bg
 Pankow-Heinersdorf	SB 12076,19329
+#: attrs bg
 Blankenburg	SB 12918,20692
+#: attrs bg
 Karow	SB 14608,23364
 #: attrs bf
 Buch	SB 16132,25743
@@ -199,6 +206,7 @@ Treptower Park	SA 14368,9864
 Plänterwald	SB 15188,8170
 #: attrs bg
 Köllnische Heide	SB 14887,7182
+#: attrs bg
 Baumschulenweg	SB 16410,6873
 #: attrs bg
 Schöneweide	SB 17722,5573
@@ -207,6 +215,7 @@ Betriebsbhf. Schöneweide	SB 18682,4714
 Oberspree	SB 19582,5323
 #: attrs bf
 Spindlersfeld	SB 21285,4718
+#: attrs bg
 Adlershof	SB 19915,3386
 #: attrs bg
 Grünau	SB 22166,986
@@ -214,6 +223,7 @@ Grünau	SB 22166,986
 Flughafen Berlin-Schönefeld	SC 18079,-1507
 #: attrs bf
 Grünbergallee	SB 20033,-559
+#: attrs bg
 Altglienicke	SB 21101,291
 #: attrs bg
 Heidelberger Platz	SA 4182,8142
@@ -284,6 +294,7 @@ Petershagen Nord	SC 36546,14154
 Fredersdorf (bei Berlin)	SC 34614,13831
 #: attrs bf
 Neuenhagen (bei Berlin)	SC 30462,13112
+#: attrs bg
 Hoppegarten (Mark)	SC 28723,12824
 #: attrs bf
 Königs Wusterhausen	SC 26358,-11950
@@ -295,7 +306,6 @@ Eichwalde	SC 25062,-3535
 Osdorfer Str.	SB 4514,1370
 #: attrs bg
 Lichterfelde Süd	SB 4149,362
-# wird nicht mehr eröffnet: Teltow	S0 E5841,5733
 #: attrs bg
 Teltow Stadt	SC 1989,-1151
 #: attrs bg
@@ -315,6 +325,7 @@ Siemensstadt	S0 737,14670
 Wernerwerk	S0 1667,14025
 Siemensstadt-Fürstenbrunn	S0 1204,13374
 #: alias: Kolonnenstr.
+#: attrs bg
 Julius-Leber-Brücke	SA 7534,8895
 #: section station only vvv
 ## Kein Strecken-Pendant, deshalb auskommentiert
