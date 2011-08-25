@@ -2887,10 +2887,10 @@ userdel	q4::inwork; 10166,12777 10132,12941
        undef,
        {
          'until' => 1320015599,
-         'text' => 'Dörpfeldstr.: Bauarbeiten, Einbahnstraßenregelung',
+         'text' => 'Dörpfeldstr.: Bauarbeiten, Fahrbahn gesperrt',
          'from' => undef,
          'id' => 2246,
-         'data' => 'userdel	q4::inwork; 19904,3464 20012,3532
+         'data' => 'userdel	q4::inwork 19904,3464 20012,3532
 ',
          'type' => 'handicap'
        },
@@ -3030,6 +3030,17 @@ userdel	q4::inwork 2295,20358 2362,20218 2402,20126
 	q4::temp:clock 9925,11947 9878,11857
 ',
          'type' => 'gesperrt'
+       },
+       undef,
+       {
+         'source_id' => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20110825.1435.356236.html',
+         'until' => 1317506400,
+         'text' => 'Vollsperrung der Schorfheidestraße zwischen Dannenwalder Weg und Wilhelmsruher Damm in Berlin-Reinickendorf aufgrund von Straßenbaumaßnahmen, vom 29.08.2011 bis voraussichtlich 01.10.2011 ',
+         'from' => 1314482400,
+         'id' => 2273,
+         'data' => 'userdel	q4::inwork 6298,20599 6330,20742 6347,20819 6366,20902 6376,20951 6380,20983 6382,21109
+',
+         'type' => 'handicap'
        }
      
 );

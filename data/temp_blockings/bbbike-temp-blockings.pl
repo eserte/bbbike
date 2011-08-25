@@ -255,7 +255,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'LMS_1134638526559',
        data  => <<EOF,
-userdel	2 15758,10578 15982,10765 16032,10842
+userdel	2 15758,10578 15982,10765 16003,10797 16032,10842
 userdel	2 15758,10578 15639,10469
 EOF
      },
@@ -3649,7 +3649,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_002885',
        data  => <<EOF,
-userdel	q4; 15639,10469 15758,10578 15982,10765 16032,10842
+userdel	q4; 15639,10469 15758,10578 15982,10765 16003,10797 16032,10842
 EOF
      },
      { from  => undef, # 
@@ -9360,7 +9360,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006236',
        data  => <<EOF,
-userdel	1::inwork 16032,10842 15681,10801 15433,10765 15388,10758 15272,10790
+userdel	1::inwork 16032,10842 15983,10836 15681,10801 15433,10765 15388,10758 15272,10790
 EOF
      },
      { from  => 1186081587, # 2007-08-02 21:06
@@ -12843,7 +12843,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_010255',
        data  => <<EOF,
-userdel	1::inwork 16032,10842 15681,10801 15433,10765 15388,10758 15272,10790
+userdel	1::inwork 16032,10842 15983,10836 15681,10801 15433,10765 15388,10758 15272,10790
 EOF
      },
      { from  => 1223416800, # 2008-10-08 00:00
@@ -13142,7 +13142,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_010255',
        data  => <<EOF,
-userdel	1::inwork 16032,10842 15681,10801 15433,10765 15388,10758 15272,10790
+userdel	1::inwork 16032,10842 15983,10836 15681,10801 15433,10765 15388,10758 15272,10790
 EOF
      },
      { from  => 1228431600, # 2008-12-05 00:00
@@ -13750,7 +13750,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_011757',
        data  => <<EOF,
-userdel	1::inwork 15982,10765 16032,10842
+userdel	1::inwork 15982,10765 16003,10797 16032,10842
 EOF
      },
      { from  => 1239912306, # 2009-04-16 22:05
@@ -15112,7 +15112,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_013849',
        data  => <<EOF,
-userdel	q4::inwork 15639,10469 15758,10578 15982,10765 16032,10842
+userdel	q4::inwork 15639,10469 15758,10578 15982,10765 16003,10797 16032,10842
 EOF
      },
      { from  => 1249768800, # 2009-08-09 00:00
@@ -19348,10 +19348,10 @@ EOF
      },
      { from  => undef, # 
        until => 1320015599, # 2011-10-30 23:59
-       text  => 'Dörpfeldstr.: Bauarbeiten, Einbahnstraßenregelung',
+       text  => 'Dörpfeldstr.: Bauarbeiten, Fahrbahn gesperrt',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork; 19904,3464 20012,3532
+userdel	q4::inwork 19904,3464 20012,3532
 EOF
      },
      { from  => 1310014800, # 2011-07-07 07:00
@@ -19607,6 +19607,15 @@ EOF
        source_id => 'IM_017697',
        data  => <<EOF,
 userdel	q4::temp 6608,12858 6661,13130
+EOF
+     },
+     { from  => 1314482400, # 2011-08-28 00:00
+       until => 1317506400, # 2011-10-02 00:00
+       text  => 'Vollsperrung der Schorfheidestraße zwischen Dannenwalder Weg und Wilhelmsruher Damm in Berlin-Reinickendorf aufgrund von Straßenbaumaßnahmen, vom 29.08.2011 bis voraussichtlich 01.10.2011 ',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20110825.1435.356236.html',
+       data  => <<EOF,
+userdel	q4::inwork 6298,20599 6330,20742 6347,20819 6366,20902 6376,20951 6380,20983 6382,21109
 EOF
      },
     );
