@@ -21,39 +21,29 @@ sub teaser {
 
     $teasers_optional{"de"}  = [
 				'teaser_link',
-				#'teaser_wap',
 				'teaser_collecting_tracks',
-				#'teaser_dobli',
 			       ];
     $teasers_mandatory{"de"} = [
-				teaser_maintenance(),
+				#teaser_maintenance(), # schaltet sich selbstständig ab
+				#teaser_sternfahrt_adfc(), # schaltet sich selbstständig ab
+				teaser_kreisfahrt_adfc(), # schaltet sich selbstständig ab
 				teaser_other_cities(),
-				teaser_sternfahrt_adfc(), # schaltet sich selbstständig ab
 				(0 ? teaser_perltk_newrelease() : teaser_perltk()),
 				teaser_beta(),
 				teaser_mapserver(),
 				#teaser_fahrradstadt(),
-				#teaser_collecting_tracks(),
-				#teaser_sternfahrt(),
-				#teaser_kreisfahrt(),
-				#teaser_sternfahrt_changes(),
-				#teaser_dobli(),
 				_teaser_is_iphone() ? teaser_iphone() : (),
 				teaser_twitter(),
 			       ];
     $teasers_optional{"en"} = [],
     $teasers_mandatory{"en"} = [
-				teaser_maintenance(),
+				#teaser_maintenance(), # schaltet sich selbstständig ab
+				#teaser_sternfahrt_adfc(), # schaltet sich selbstständig ab
+				teaser_kreisfahrt_adfc(), # schaltet sich selbstständig ab
 				teaser_other_cities(),
-				teaser_sternfahrt_adfc(), # schaltet sich selbstständig ab
 				(0 ? teaser_perltk_newrelease() : teaser_perltk()),
 				#teaser_beta(), # XXX There's no beta version in English yet!
 				teaser_mapserver(),
-				#teaser_collecting_tracks(),
-				#teaser_sternfahrt(),
-				#teaser_kreisfahrt(),
-				#teaser_sternfahrt_changes(),
-				#teaser_dobli(),
 				_teaser_is_iphone() ? teaser_iphone() : (),
 				teaser_twitter(),
 			       ];
@@ -89,32 +79,19 @@ EOF
     }
 }
 
-sub teaser_sternfahrt {
+sub teaser_kreisfahrt_adfc {
     my $year = (localtime)[5]+1900;
-    my $url = "http://bbbike.de/mapserver/brb/sternfahrt${year}_init.html";
-    <<EOF
-<div class="teaser"><a style="text-decoration:none;" href="$url"><img style="padding:3px 0px 3px 0px; border:0px;" src="$bbbike_images/stern${year}_titel.jpg" border="0"></a><br><a href="$url">Die Routen der Sternfahrt ${year}</a></div>
-EOF
-}
-
-sub teaser_sternfahrt_changes {
-    my $year = (localtime)[5]+1900;
-    if ($year == 2007) {
-	my $url = "$mapserver_address_url?coords=-11971,57&&layer=bahn&layer=gewaesser&layer=faehren&layer=flaechen&layer=grenzen&layer=orte&layer=sternfahrt&layer=treffpunkte&msmap=sternfahrt$year";
+    my @l = localtime; $l[4]++;$l[5]+=1900;
+    my $today = sprintf "%04d%02d%02d", $l[5], $l[4], $l[3];
+    my $out_of_date = $today gt "20110918";
+    if (!$out_of_date) {
+	my $adfc_url    = "http://www.adfc-berlin.de/aktionenprojekte/kreisfahrt/1069.html";
 	<<EOF
-<div class="teaser"><b>Sternfahrt:</b><br> <a href="$url">Änderung der Routen im Bereich Potsdam</a><br>(betrifft die Routen Brandenburg, Werder und Rehbrücke)</div>
+<div class="teaser"><a style="text-decoration:none;" href="$adfc_url"><b>ADFC-Kreisfahrt ${year}</b></a> am 17.&nbsp;September&nbsp;$year</div>
 EOF
+    } else {
+	();
     }
-}
-
-sub teaser_kreisfahrt {
-    my $year = (localtime)[5]+1900;
-    my $radzeit_url    = "http://www.adfc-berlin.de/home/termine2/kreisfahrt";
-    my $mapserver_url  = "/BBBike/misc/kreisfahrt_2007/kreisfahrt2007.html";
-    my $googlemaps_url = "/BBBike/misc/kreisfahrt_2007/kreisfahrt2007_googlemaps.html";
-    <<EOF
-<div class="teaser"><a style="text-decoration:none;" href="$radzeit_url"><img style="padding:3px 0px 3px 0px; border:0px;" src="/BBBike/misc/kreisfahrt_2007/kreisfahrt2007_titel.png" border="0"></a><br>Die Route der Kreisfahrt ${year}:<br><a href="$googlemaps_url">Googlemaps</a> <a href="$mapserver_url">Mapserver</a></div>
-EOF
 }
 
 sub teaser_perltk_newrelease {
@@ -202,18 +179,6 @@ EOF
 <div class="teaser">Die BBBike-Kartendaten mit <a href="@{[ CGI::escapeHTML($mapserver_url) ]}">Mapserver</a> visualisiert.</div>
 EOF
     }
-}
-
-sub teaser_dobli {
-    <<EOF;
-<div style="text-align:center; width:100%;"><a href="http://www.semlin.de/dobli"><img border="0" src="http://www.tagesspiegel.de/dobli/bilder/kampagne170.gif" alt="Dobli-Spiegel" /></a></div>
-EOF
-}
-
-sub teaser_wap {
-    <<EOF;
-<div class="teaser">Experimentell - BBBike über WAP: <a href="@{[ CGI::escapeHTML($BBBike::BBBIKE_WAP) ]}">@{[ CGI::escapeHTML($BBBike::BBBIKE_WAP) ]}</a></div>
-EOF
 }
 
 sub teaser_beta {
