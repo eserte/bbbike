@@ -3041,6 +3041,38 @@ userdel	q4::inwork 2295,20358 2362,20218 2402,20126
          'data' => 'userdel	q4::inwork 6298,20599 6330,20742 6347,20819 6366,20902 6376,20951 6380,20983 6382,21109
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => 'http://www.berlin.de/ba-pankow/presse/archiv/20110826.1055.356350.html',
+         'until' => undef,
+         'text' => 'Kastanienallee: Fahrbahn zwischen Oderberger Straße und Schönhauser Allee/Eberswalder Straße ab Montag dem 29.8.2011 gesperrt',
+         'from' => 1314482400,
+         'id' => 2274,
+         'data' => '#: XXX Ende der Bauarbeiten?
+userdel	q4::inwork 10881,15047 10838,14962 10723,14772
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_017716',
+         'until' => 1314576000,
+         'text' => 'Berliner Allee (Weißensee): Veranstaltung, Fahrtrichtung gesperrt, stadteinwärts zwischen Pistoriusstr. und Langhansstr., 26.08.2011 10:00 Uhr bis 29.08.2011 02:00 Uhr ',
+         'from' => 1314259200,
+         'id' => 2275,
+         'data' => 'userdel	q4::temp; 14014,16106 13826,16026 13737,15994 13630,15956
+userdel	q4::temp; 13623,15954 13512,15909
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'INKO_103963',
+         'until' => 1342796400,
+         'text' => 'Bäkestr. (Wannsee): Brückenarbeiten, Straße vollständig gesperrt, in beiden Richtungen zwischen Neue Kreisstr. und Königsweg, 22.08.2011 10:00 Uhr bis 20.07.2012 17:00 Uhr ',
+         'from' => 1313913600,
+         'id' => 2276,
+         'data' => 'userdel	2::inwork -7191,-1023 -7152,-1064 -7088,-1074 -7051,-1221
+',
+         'type' => 'gesperrt'
        }
      
 );
