@@ -193,7 +193,7 @@ sub target_inaccessible_streets {
     # somewhere?
     require Strassen::Core;
     my $glob_dir = Strassen->get_global_directives("$datadir/strassen");
-    if ($glob_dir->{map} && $glob_dir->{map}[0] !~ m{^(bbbike|standard)$}) {
+    if ($glob_dir->{map} && $glob_dir->{map}[0] !~ m{^(bbbike|standard|wgs84|polar)$}) {
 	print STDERR "only map=bbbike currently supported, skipping";
 	return;
     }
