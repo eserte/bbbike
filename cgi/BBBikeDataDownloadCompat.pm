@@ -39,6 +39,15 @@ sub handler : method {
 	    $r->print($_);
 	}
 	OK;
+    } elsif ($filename =~ m{/data/label$} &&
+	     !-e $filename &&
+	     $r->headers_in->{'If-modified-since'}) {
+	# data/label was removed from MANIFEST some time ago, but some
+	# clients maybe still access it
+	# Debugging. Remove some day XXX
+	warn qq{Faking <data/label> for <$ua>...\n};
+	$r->status(304);
+	OK;
     } else {
 	$r->handler('default');
 	DECLINED;
