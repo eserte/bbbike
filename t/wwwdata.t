@@ -29,7 +29,7 @@ use Image::Info qw(image_info);
 
 use Strassen::Core;
 
-plan tests => 46;
+plan tests => 47;
 
 my $htmldir = $ENV{BBBIKE_TEST_HTMLDIR};
 if (!$htmldir) {
@@ -137,6 +137,12 @@ EOF
 	is $count_NH, 0, 'No cat=NH found for old client';
 	is $resp->header('X-BBBike-Hacks'), 'NH', 'NH hack in HTTP header';
     }
+}
+
+{
+    my $resp = $ua316->get("$datadir/label", 'If-Modified-Since' => 'Wed, 18 May 2033 05:33:20 GMT');
+    ok $resp->code==304 || $resp->code==200, 'Probably data/label hack'
+	or diag $resp->as_string;
 }
 
 while(my($url,$v) = each %contents) {
