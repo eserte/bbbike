@@ -2,10 +2,9 @@
 # -*- perl -*-
 
 #
-# $Id: osm2bbd-postprocess,v 1.35 2009/06/30 22:13:10 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2009 Slaven Rezic. All rights reserved.
+# Copyright (C) 2009,2011 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -18,7 +17,7 @@ use FindBin;
 use lib ("$FindBin::RealBin/..", "$FindBin::RealBin/../lib");
 
 use vars qw($VERSION);
-$VERSION = 0.10;
+$VERSION = 0.11;
 
 use Cwd            qw(realpath);
 use File::Basename qw(dirname);
@@ -64,7 +63,7 @@ my $coastline_hack_anchor;
 
 my $debug = 1;
 my $force;
-my $local_language = "";
+my $local_language;
 GetOptions(
 	   (map {
 	       (my $optname = $_) =~ s{_}{-}g;
@@ -447,7 +446,8 @@ sub _load_meta {
 sub _write_meta {
     my $meta = shift;
 
-    $meta->{"local_language"} = $local_language;
+    $meta->{"local_language"} = $local_language
+	if $local_language;
 
     require Data::Dumper;
 
