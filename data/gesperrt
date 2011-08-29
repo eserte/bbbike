@@ -788,7 +788,7 @@ Kirchhofstr.	1s 13188,7590 13117,7471 13027,7368
 Niemannstr.	1s 14254,11377 14211,11229
 Björnsonstr	1s 10209,16674 10197,16528
 Eichhornstr.	1s 8232,11414 8253,11306 8280,11296
-Paul-Junius-Str.	1s 15084,12975 15085,13105
+Paul-Junius-Str.	1s 15096,12974 15092,13105
 Ahornallee	1s 1589,11483 1574,11379
 Lindenallee	1s 1429,11523 1403,11428
 Gramzow (Dorfstr.?)	1s 49779,90206 49841,90479
@@ -867,8 +867,8 @@ Mittelstreifen	3nocross::ignrte -3481,14523 -3498,14413 -3501,14365 -3506,14306
 Altstädter Ring -> Augusta-Ufer: Mittelstreifen	3::igndisp -3498,14413 -3501,14365 -3440,14498
 Augusta-Ufer -> Altstädter Ring: Mittelstreifen	3::igndisp -3440,14498 -3501,14365 -3506,14306
 Mittelstreifen mit Zaun	3nocross::ignrte -3501,14365 -3506,14306 -3517,14218
-Altstädter Ring -> Jüdenstr.: Mittelstreifen mit Zaun	3::igndisp -3501,14365 -3506,14306 -3444,14310
-Jüdenstr. -> Altstädter Ring: Mittelstreifen mit Zaun	3::igndisp -3444,14310 -3506,14306 -3517,14218
+Jüdenstr. -> Altstädter Ring: Mittelstreifen mit Zaun	3::igndisp -3481,14308 -3506,14306 -3517,14218
+Altstädter Ring -> Jüdenstr.: Mittelstreifen mit Zaun	3::igndisp -3501,14365 -3506,14306 -3481,14308
 Mittelstreifen	3nocross::ignrte 6996,3761 6957,3699 6782,3491
 Langkofelweg -> Kaiser-Wilhelm-Str.: Mittelstreifen	3::igndisp 6998,3596 6957,3699 6782,3491
 umbequemes Überqueren wegen Bordsteinen	3nocross::ignrte 11323,12484 11333,12437 11343,12300
@@ -1940,6 +1940,8 @@ tragen (Treppe, ca. 20 Stufen)	0:25:-108 19163,14981
 tragen (Treppe, ca. 20 Stufen)	0:25:-12 19160,14935
 tragen (Treppe)	0:30:70 89344,-5795
 tragen, langgezogene Stufen (13 Stufen)	0:25:-168 20704,1383
+Schranke	BNP:1:-38:trailer=3 17028,23968
+Schranke (lichte Breite ca. 85cm, weitere Umfahrung möglich)	BNP:2:-54:trailer=10 16339,22199
 Drängelgitter (lichte Breite ca. 100cm)	BNP:3:-107:trailer=10 21578,10413
 Drängelgitter (lichte Breite ca. 80cm)	BNP:5:-78:trailer=no 21579,10345
 offenes Tor	BNP:3:-265 24790,15447

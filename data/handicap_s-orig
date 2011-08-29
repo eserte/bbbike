@@ -1032,6 +1032,14 @@ Liebstadter Gang: Bordsteine	q1 24434,5645 24471,5544
 (Unterführung S-Bhf. Hirschgarten): Fußgänger	q3 23948,6054 23947,6014 23930,6013 23931,5992
 (S-Bhf. Hirschgarten - KGA Erpetal): eng	q2 23948,6054 23951,6063 23941,6118
 Spatenweg: Betonbarriere, eng	q3 21190,12515 21222,12501
+Alt-Karow - Strömannstr.: enger Pfad	q3 15428,22736 15574,22640
+(Straße 70 - Ingwäonenweg): enger Pfad	q3 16486,22267 16495,22350 16421,22433 16415,22467 16442,22505
+#: XXX_prog BS (an der Achillesstr.)
+Achillesstr. - Strömannstr.: Bordstein, Fußgänger	q2 15957,23635 15945,23608
+Achillesstr. - Strömannstr.: Fußgänger, eng	q2 15945,23608 15932,23581
+Erekweg: enger Pfad	q3 16186,24108 16139,24162
+#: XXX_prog BS (am Gewanneweg)
+(Kurze-Enden-Weg - Gewanneweg): eng, Bordstein	q2 15278,23934 15321,23979
 ######################### User Contributions #################################
 #: by: Michael Kiekbusch
 #: corrected_by: srt/policy (q4 -> q3-)
@@ -2283,9 +2291,9 @@ Langenbeckplatz: enge Straße	q1 25030,9626 25095,9627 25086,9733 25020,9728 2503
 #: corrected_by: srt/policy (q4 -> q3)
 (Réaumurstr. - Fürstenstr., S-Bahnunterführung): Fußgänger	q3 4279,459 4218,439 4158,461 4136,505
 #: by: Bertil Schwotzer vvv
-#: corrected_by: srt/policy (q2 -> q1)
-Beerbaumstr.: enge Straße	q1 15692,24040 15730,24051 15759,24033 15843,23980 15906,24088
-(Beerbaumstr. - Karower Chaussee): schmal	q2 15906,24088 15948,24151
+#: corrected_by: srt/policy (q2 -> q0-)
+Beerbaumstr.: enge Straße	q0- 15692,24040 15730,24051 15759,24033 15843,23980 15906,24088
+(Beerbaumstr. - Karower Chaussee): schmal	q2 15906,24088 15940,24142
 #: by: ^^^
 #: by: Sabine Bernsmann-...:
 #: note: Das hier ist ein Pseudo-Eintrag, um das Routing davon abzuhalten, diese Straße zu wählen.

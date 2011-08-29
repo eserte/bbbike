@@ -928,15 +928,7 @@ userdel	2 16975,1262 16849,1437
        undef,
        undef,
        undef,
-       {
-         'until' => 1314568740,
-         'text' => 'Reichsstr. (Charlottenburg) in beiden Richtungen zwischen Theodor-Heuss-Platz und Steubenplatz Veranstaltung, Straße vollständig gesperrt (27. und 28. August 2011)',
-         'from' => 1314309600,
-         'id' => 941,
-         'data' => 'userdel	2::temp 653,12109 738,12025 818,11954 881,11893 1033,11754 1133,11664 1215,11587 1220,11583 1308,11506 1403,11428
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2848,16 +2840,7 @@ userdel	q4::inwork; 10166,12777 10132,12941
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20110623.1015.348936.html',
-         'until' => 1314583200,
-         'text' => 'Sperrung des Bahnüberganges in der Lemkestraße: 26.08.2011 22:00 Uhr bis 29.08.2011 04:00 Uhr',
-         'from' => 1314302400,
-         'id' => 2236,
-         'data' => 'userdel	2::inwork 25149,12266 25109,12196 25072,12107
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20110623.1015.348936.html',
          'until' => 1315188000,
@@ -2904,18 +2887,7 @@ userdel	q4::inwork; 10166,12777 10132,12941
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1107/nachricht4413.html',
-         'until' => 1314395999,
-         'text' => 'Instandsetzung des Stegs zwischen Nackthals- und Seidenhuhnweg, u.U. Vollsperrung, ab 12. Juli 2011 für ca. 10 Wochen',
-         'from' => 1310335200,
-         'id' => 2248,
-         'data' => '#: XXX bis Sommer 2012 werden noch weitere Brücken am Rudower Fließ instandgesetzt
-userdel	2::inwork 16135,473 16148,458 16122,403
-userdel	2::inwork 16148,458 16169,458
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'source_id' => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20110712.1035.350987.html',
@@ -2973,16 +2945,7 @@ userdel	q4::inwork 2295,20358 2362,20218 2402,20126
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20110727.1340.352585.html',
-         'until' => 1314568800,
-         'text' => 'Straßenbauarbeiten in der Chris-Gueffroy-Allee: Vollsperrung der Fahrbahn, 15.8.2011-28.8.2011',
-         'from' => 1313272800,
-         'id' => 2260,
-         'data' => 'userdel	q4::inwork 15183,5480 15165,5506 15146,5592 15143,5705 15141,5774 15141,5800 15141,5870 15143,5936
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3053,17 +3016,7 @@ userdel	q4::inwork 10881,15047 10838,14962 10723,14772
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_017716',
-         'until' => 1314576000,
-         'text' => 'Berliner Allee (Weißensee): Veranstaltung, Fahrtrichtung gesperrt, stadteinwärts zwischen Pistoriusstr. und Langhansstr., 26.08.2011 10:00 Uhr bis 29.08.2011 02:00 Uhr ',
-         'from' => 1314259200,
-         'id' => 2275,
-         'data' => 'userdel	q4::temp; 14014,16106 13826,16026 13737,15994 13630,15956
-userdel	q4::temp; 13623,15954 13512,15909
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'INKO_103963',
          'until' => 1342796400,

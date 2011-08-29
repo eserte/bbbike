@@ -848,6 +848,12 @@ Liebstadter Gang: Bordsteine	q1 24434,5645 24471,5544
 (Unterführung S-Bhf. Hirschgarten): Fußgänger	q3 23948,6054 23947,6014 23930,6013 23931,5992
 (S-Bhf. Hirschgarten - KGA Erpetal): eng	q2 23948,6054 23951,6063 23941,6118
 Spatenweg: Betonbarriere, eng	q3 21190,12515 21222,12501
+Alt-Karow - Strömannstr.: enger Pfad	q3 15428,22736 15574,22640
+(Straße 70 - Ingwäonenweg): enger Pfad	q3 16486,22267 16495,22350 16421,22433 16415,22467 16442,22505
+Achillesstr. - Strömannstr.: Bordstein, Fußgänger	q2 15957,23635 15945,23608
+Achillesstr. - Strömannstr.: Fußgänger, eng	q2 15945,23608 15932,23581
+Erekweg: enger Pfad	q3 16186,24108 16139,24162
+(Kurze-Enden-Weg - Gewanneweg): eng, Bordstein	q2 15278,23934 15321,23979
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q3 11805,19071 11895,19183 11927,19308
 Ebersstr.: Schüler	q2 7245,8583 7292,8631
 Straße 103 (Niederschönhausen): enge Straße	q1 10914,20065 11051,19789
@@ -1535,8 +1541,8 @@ Ruben-Wolf-Str.: einige Fußgänger	q1 19906,217 19865,263 19785,361
 Semmelweg: einige Fußgänger	q1 1229,18750 1101,18611 915,18352 766,18083 492,17831 396,17648 255,17528
 Langenbeckplatz: enge Straße	q1 25030,9626 25095,9627 25086,9733 25020,9728 25030,9626
 (Réaumurstr. - Fürstenstr., S-Bahnunterführung): Fußgänger	q3 4279,459 4218,439 4158,461 4136,505
-Beerbaumstr.: enge Straße	q1 15692,24040 15730,24051 15759,24033 15843,23980 15906,24088
-(Beerbaumstr. - Karower Chaussee): schmal	q2 15906,24088 15948,24151
+Beerbaumstr.: enge Straße	q0 15692,24040 15730,24051 15759,24033 15843,23980 15906,24088
+(Beerbaumstr. - Karower Chaussee): schmal	q2 15906,24088 15940,24142
 Ossietzkyplatz: Parkplatz	q4 10249,19541 10215,19532 10228,19480
 Heppenheimer Weg: schmaler Weg, Fußgänger	q2 -500,4409 -459,4422 -404,4442 -349,4466 -283,4495 -227,4538
 Viernheimer Weg: schmaler Weg, Fußgänger	q2 -311,4637 -354,4603 -401,4572 -446,4552 -493,4529 -548,4511
@@ -1677,7 +1683,7 @@ Kirchhofstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 1318
 Niemannstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 14254,11377 14211,11229
 Björnsonstr: gegen die Einbahnstraßenrichtung, ggfs. schieben	q1::igndisp; 10209,16674 10197,16528
 Eichhornstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 8232,11414 8253,11306 8280,11296
-Paul-Junius-Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q2::igndisp; 15084,12975 15085,13105
+Paul-Junius-Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q2::igndisp; 15096,12974 15092,13105
 Ahornallee: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 1589,11483 1574,11379
 Lindenallee: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 1429,11523 1403,11428
 Alt-Tegel: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 1668,20156 1753,20191 1907,20265

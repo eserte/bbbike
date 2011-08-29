@@ -518,7 +518,7 @@ am Havellandkanal: Feldweg, Wurzeln	Q3 -24240,6075 -24325,6138 -23186,7432
 am Havellandkanal: Feldweg	Q2 -23186,7432 -21843,8484 -21796,8450 -21662,8537
 Karower Weg: schlechtes Kopfsteinpflaster mit Betonbanketten	Q2 17825,21931 17537,22168
 Karower Weg: Betoweg	Q1 17537,22168 17281,22368
-Karower Weg: Feldweg, teils holprig, teils OK	Q2 17281,22368 16546,22940
+Karower Weg: Feldweg, teils holprig, teils OK	Q2 17281,22368 16594,22903
 Köpenicker Str. (Gosen): grobe Verbundsteine	Q1 31651,-530 31662,-1002
 Eichwalder Str. (Gosen): holpriger Fahrweg	Q2 30843,-1953 30721,-2146 30721,-2321
 Pätz: Kopfsteinpflaster	Q2 28615,-19431 28251,-19639 28164,-19771 28071,-19862
@@ -1023,12 +1023,13 @@ befahrbarer aber nicht asphaltierter Feld- oder Waldweg	Q2 55418,46718 55906,472
 An der Wuhle (Eiche): Trampelpfad	Q3 22537,17878 22531,18075
 An der Wuhle (Eiche): Verbundsteine	Q0 22531,18075 22500,18246
 Grenzweg (Eiche): Verbundsteine	Q0 22500,18246 22868,18538
-Bucher Weg/Lindenberger Weg: asphaltiert	Q0 18356,22225 18193,22656 18162,22831 18073,23456 18046,23648 17622,24160 17615,24168 17471,24347 17190,24695
-Karower Str.: asphaltiert	Q0 17055,23991 17216,24005 17615,24168 18062,24396 18325,24590
+Bucher Weg/Lindenberger Weg: asphaltiert	Q0 18356,22225 18193,22656 18162,22831 18073,23456 18046,23648 17622,24160 17615,24168 17464,24358 17234,24641 17190,24695
+Karower Str.: unbefestigte Straße	Q2+ 17052,23958 17110,23990 17264,24021
+Karower Str.: asphaltiert	Q0 17264,24021 17615,24168 18062,24396 18325,24590
 Kirschenallee: asphaltiert	Q0 18325,24590 18562,24975
-Weidenweg (Neu-Buch): Asphalt	Q0 17471,24347 17419,24305
-Kleiststr. (Neu-Buch): sehr guter Asphalt	Q0 17471,24347 17769,24608 17902,24913 17929,25068
-Lindenberger Str. (Neu-Buch): mäßiges Verbundsteinpflaster	Q2 17929,25068 17967,25231
+Weidenweg (Neu-Buch): Asphalt	Q0 17464,24358 17412,24315
+Kleiststr. (Neu-Buch): sehr guter Asphalt	Q0 17464,24358 17769,24608 17902,24913 17913,25005
+Lindenberger Str. (Neu-Buch): Asphalt	Q0 17913,25005 17967,25231
 #: according_to: S-Bahn-Wanderungsheft
 Hellsee - Biesenthal: "Radfahrer müssen hier ab und zu das Rad schieben"	Q3 22666,38835 22702,39207 22938,39193 23289,39378 23422,39397 23479,39311 23610,39318 23658,39601 23741,39682 23739,39838 23635,40026 23655,40114 23630,40257
 #: according_to: http://home.arcor.de/hoge-online/std_tlw/s_t23.jpg
@@ -1266,10 +1267,11 @@ zum Bahnhof Seehausen, Bahnsteig Richtung Angermünde: schlechtes Kopfsteinpflast
 Bernau: Kopfsteinpflaster, OK	Q1 22541,30476 22434,30685 22352,30734 22283,30775
 Lobetal - Biesenthal: Waldweg, OK	Q1 24193,37725 24208,37830 24179,38069 24200,38287 24468,38650 25150,39231 25181,39562
 Bernau, Berliner Str.: asphaltiert	Q0 22649,30519 22541,30476 22178,30343
-Rigistr.: altes Verbundsteinpflaster und mäßiger Asphalt	Q2 18175,25618 18074,25640 18015,25653
+Rigistr.: Asphalt	Q0 18175,25618 18074,25640 18015,25653
+#: XXX Bauarbeiten, danach vielleicht asphaltiert?
+#: last_checked: 2011-08-28
 Rudolf-Breitscheid-Str. (Schwanebeck)	Q2 18074,25640 18173,26025 18220,26225 18443,26304 18954,26459
-#: add_fragezeichen: möglicherweise nur mäßiger Asphalt
-Rudolf-Breitscheid-Str. (Schwanebeck): Asphalt	Q0 17967,25231 18074,25640
+Rudolf-Breitscheid-Str. (Schwanebeck): mäßiger Asphalt	Q1- 17967,25231 18074,25640
 Bahnhofstr. (Röntgental): Kopfsteinpflaster	Q2 18443,26304 18415,26368 18400,26554 18292,26726
 Bahnhofstr. (Röntgental): schlechtes Kopfsteinpflaster, Ausweichen auf Gehweg möglich	Q2 17939,27084 17784,27209 17415,27506
 Buchenallee (Röntgental): Feldweg	Q2 17099,27097 17415,27506 17689,27853
@@ -2356,6 +2358,7 @@ Karl-Marx-Str. (Waldesruh): Asphalt	Q0 24905,8533 24958,8641 25064,8793
 Fichtestr.: Kopfsteinpflaster	Q2 24870,8342 24974,8486 25147,8731
 Kantstr.: Kopfsteinpflaster	Q2 24871,7931 24953,8152 25119,8379
 Köpenicker Allee (Waldesruh): Asphalt	Q0 25047,8086 24923,7903 24910,7896
+(Radweg BU): Asphalt	Q0 17964,26823 18133,26914
 ######################### User Contributions #################################
 #: by: Aaron Schaar: vvv
 Hermannswerder: guter Asphalt	Q0 -13718,-2991 -14301,-2871 -14577,-3068 -14740,-3262
@@ -2729,7 +2732,7 @@ Neuenfeld - Züsedom: schlechtes Kopfsteinpflaster	Q3 49887,113837 50187,114312 5
 Züsedom - Fahrenwalde: sehr schlechtes Kopfsteinpflaster, kaum Sandbanketten	Q3 50240,116023 50417,115935 50917,115807 51429,115904 51730,116017 52760,115828
 #: by: Kevin Pfeiffer: vvv
 #: note: bestätigt von Andreas Mühlhausen, und von mir eine Bestätigung für den nördlichen Ausgang:
-Goethestr. (Neu-Buch): fester Sandweg	Q2 17190,24695 17929,25068
+Goethestr. (Neu-Buch): fester Sandweg	Q2 17234,24641 17864,24956 17913,25005
 #: by: ^^^
 #: by: Jens Velten:
 Dreilindenerweg: Asphalt	Q0 -3574,-163 -3746,-268 -3793,-340 -3834,-459 -3993,-700
