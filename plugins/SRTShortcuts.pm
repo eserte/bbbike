@@ -196,58 +196,60 @@ EOF
 	      [Button => $do_compound->("Update tracks and matches.bbd"),
 	       -command => sub { make_gps_target("tracks tracks-accurate tracks-accurate-categorized unique-matches") },
 	      ],
-	      [Button => $do_compound->("Add streets-accurate-categorized-split.bbd"),
-	       -command => sub {
-		   add_any_streets_bbd($acc_cat_split_streets_track, Width => 1);
-	       }
-	      ],
+	      layer_checkbutton([$do_compound->("Add streets-accurate-categorized-split.bbd")],
+				'str', $acc_cat_split_streets_track,
+				set_layer_highlightning => 1,
+				special_raise => 1,
+				Width => 1,
+			       ),
 	      (map {
 		  my $year = $_;
-		  [Button => $do_compound->("Add streets-accurate-categorized-split-since".$year.".bbd"),
-		   -command => sub {
-		       add_any_streets_bbd($acc_cat_split_streets_byyear_track{$year}, Width => 1);
-		   },
-		  ]
+		  layer_checkbutton([$do_compound->("Add streets-accurate-categorized-split-since".$year.".bbd")],
+				    'str', $acc_cat_split_streets_byyear_track{$year},
+				    set_layer_highlightning => 1,
+				    special_raise => 1,
+				    Width => 1,
+				   );
 	      } @acc_cat_split_streets_years
 	      ),
 	      [Cascade => $do_compound->("Add other streets...bbd"), -menuitems =>
 	       [
-		[Button => "Add streets.bbd (all GPS tracks)",
-		 -command => sub {
-		     add_any_streets_bbd($streets_track, Width => 1);
-		 }
-		],
-		[Button => "Add streets-accurate.bbd (all accurate GPS tracks)",
-		 -command => sub {
-		     add_any_streets_bbd($acc_streets_track, Width => 1);
-		 }
-		],
-		[Button => "Add streets-accurate-categorized.bbd",
-		 -command => sub {
-		     add_any_streets_bbd($acc_cat_streets_track, Width => 1);
-		 }
-		],
+		layer_checkbutton("Add streets.bbd (all GPS tracks)",
+				  'str', $streets_track,
+				  set_layer_highlightning => 1,
+				  special_raise => 1,
+				  Width => 1),
+		layer_checkbutton("Add streets-accurate.bbd (all accurate GPS tracks)",
+				  'str', $acc_streets_track,
+				  set_layer_highlightning => 1,
+				  special_raise => 1,
+				  Width => 1),
+		layer_checkbutton("Add streets-accurate-categorized.bbd",
+				  'str', $acc_cat_streets_track,
+				  set_layer_highlightning => 1,
+				  special_raise => 1,
+				  Width => 1),
 	       ],
 	      ],
-	      [Button => $do_compound->("Add other-tracks.bbd (other people's GPS tracks)"),
-	       -command => sub {
-		   add_any_streets_bbd($other_tracks, Width => 1);
-	       }
-	      ],
-	      [Button => $do_compound->("Add points-all.bbd (all GPS trackpoints)"),
-	       -command => sub {
-		   my $f = "$bbbike_rootdir/tmp/points-all.bbd";
-		   my $points_layer = add_new_layer("p", $f, Width => 20);
-		   main::special_lower($points_layer . "-fg", 0);
-	       }
-	      ],
-	      [Button => $do_compound->("Add points-symbols.bbd (with symbols)"),
-	       -command => sub {
-		   my $f = "$bbbike_rootdir/tmp/points-symbols.bbd";
-		   my $points_layer = add_new_layer("p", $f, Width => 20);
-		   main::special_lower($points_layer . "-fg", 0);
-	       }
-	      ],
+	      layer_checkbutton([$do_compound->("Add other-tracks.bbd (other people's GPS tracks)")],
+				'str', $other_tracks,
+				set_layer_highlightning => 1,
+				special_raise => 1,
+				Width => 1),
+	      layer_checkbutton([$do_compound->("Add points-all.bbd (all GPS trackpoints)")],
+				'p', "$bbbike_rootdir/tmp/points-all.bbd",
+				oncallback => sub {
+				    my($layer) = @_;
+				    main::special_lower($layer . "-fg", 0); # XXX does not work?
+				},
+				Width => 20),
+	      layer_checkbutton([$do_compound->("Add points-symbols.bbd (with symbols)")],
+				'p', "$bbbike_rootdir/tmp/points-symbols.bbd",
+				oncallback => sub {
+				    my($layer) = @_;
+				    main::special_lower($layer . "-fg", 0); # XXX does not work?
+				},
+				Width => 20),
 	      [Cascade => $do_compound->('Add layer', $main::newlayer_photo), -menuitems =>
 	       [
 		layer_checkbutton('hm96.bbd (Höhenpunkte)', 'p',
@@ -791,8 +793,10 @@ sub layer_checkbutton {
     # seems to get freezed although it's a global?!
     my $below_above_cb = delete $args{below_above_cb};
     my $maybe_orig_file = delete $args{maybe_orig_file};
+    my $set_layer_highlightning = delete $args{set_layer_highlightning};
+    my $special_raise = delete $args{special_raise};
     
-    [Checkbutton => $label,
+    [Checkbutton => (ref $label eq 'ARRAY' ? @$label : $label),
      -variable => "$type $file",
      -command => sub {
 	 if ($below_above_cb) {
@@ -806,11 +810,17 @@ sub layer_checkbutton {
 
 	 my $key = "$type $file";
 	 my $real_file = $maybe_orig_file ? _maybe_orig_file($file) : $file;
-	 my $layer = toggle_new_layer($type, $real_file, below => $below, above => $above);
+	 my $layer = toggle_new_layer($type, $real_file, below => $below, above => $above, %args);
 	 if ($oncallback && $layer_for_type_file{"$key"}) {
 	     $oncallback->($layer, $type, $real_file);
 	 } elsif ($offcallback && !$layer_for_type_file{"$key"}) {
 	     $offcallback->($layer, $type, $real_file);
+	 }
+	 if ($set_layer_highlightning) {
+	     set_layer_highlightning($layer);
+	 }
+	 if ($special_raise) {
+	     main::special_raise($layer, 0);
 	 }
      },
     ];
