@@ -36,8 +36,6 @@ Hagelberger Str.	3 8648,9526 8773,9524 8777,9601
 Hagelberger Str.	3 8648,9526 8773,9524 9000,9509
 Hagelberger Str.	3 8648,9526 8773,9524 8769,9290
 Warschauer - Marchlewskistr.	3 13476,11174 13493,11217 13541,11355 13496,11384
-#XXX del: Gontard - Rathaus	3 9454,7139 9527,7214 9443,7280 9391,7317
-#XXX del: Gontard - Rathaus	3 9391,7317 9443,7280 9527,7214 9454,7139
 Holtei von S - Boxhagener	3 14575,11407 14639,11512 14577,11582
 Boxhagener von W - Holtei	3 14577,11582 14639,11512 14710,11626
 Holtei von N - Boxhagener	3 14710,11626 14639,11512 14771,11345
@@ -239,8 +237,7 @@ Mimosenweg	2 17668,2187 17657,2213
 Falkenberger/B2: Straßenbahntrasse	3nocross 14621,16563 14619,16672 14619,16682 14608,16772 14559,16912
 #: by: Andreas Mühlhausen (Einbahnstraße nur für Autofahrer)
 Sredzkistr. (ab Parkhaus Kulturbrauerei)	1 11101,14768 10893,14705
-Bahnübergang nur für Fußgänger/Radfahrer	3 20627,12162 20624,12133 20610,12050
-Bahnübergang nur für Fußgänger/Radfahrer	3 20610,12050 20624,12133 20627,12162
+Bahnübergang nur für Fußgänger/Radfahrer	3 * 20624,12133 *
 Zossener Str.: Straßenbahntrasse	3nocross 23080,15700 23218,15671 23411,15632 23568,15603 23617,15594
 #: note: nur temporär gültig
 Kleinmachnower Weg: Sa und So ist die Schranke an der Kreuzung Sachlebenstraße zu, für Kfz-Verkehr demnach gesperrt	2 269,-41 665,85 1345,184
@@ -293,8 +290,7 @@ Scharnweberstr.: Mittelstreifen	3nocross 4392,17777 4429,17763 4584,17704
 Kurt-Schumacher-Damm (Nord)	1 3643,16437 3676,16497
 #: note: Luftbild
 Mariendorfer Damm: Mittelstreifen	3nocross 10226,1515 10239,1481 10276,1383 10329,1231 10379,1097
-Lilienthalstr.: Barriere für Autos	3 10598,8563 10627,8706 10653,8831
-Lilienthalstr.: Barriere für Autos	3 10653,8831 10627,8706 10598,8563
+Lilienthalstr.: Barriere für Autos	3 * 10627,8706 *
 Hellersdorfer Str.: Mittelstreifen	3nocross 23021,13982 22969,13816 22966,13806 22925,13662
 #: by: Jürgen Jacobi:
 #: confirmed_by: srt
@@ -341,8 +337,8 @@ Germersheimer Weg	1 -4489,15014 -4507,15068 -4499,15152 -4497,15176 -4495,15198 
 Zweibrücker Str.	1 -4254,15813 -4283,15639 -4294,15525 -4308,15411
 #: by: ^^^
 Potsdamer Str.: Mittelstreifen	3nocross 8226,11458 8301,11469 8358,11477 8374,11479 8479,11493 8542,11502
-Jägerallee/Hegelallee: Durchfahrt verboten	3 -13182,-515 -13221,-718 -13231,-763 -13236,-797
-Jägerallee/Hegelallee: Durchfahrt verboten	3 -13236,-797 -13231,-763 -13221,-718 -13182,-515
+Jägerallee/Hegelallee: Durchfahrt verboten	3 -13221,-718 -13231,-763 -13236,-797
+Jägerallee/Hegelallee: Durchfahrt verboten	3 -13236,-797 -13231,-763 -13221,-718
 Osloer Str.: Straßenbahntrasse	3nocross 9455,16609 9331,16624 9210,16638 8939,16668
 Osloer Str.: Straßenbahntrasse	3nocross 8260,16740 8196,16746 8144,16750 7763,16779
 Seestr.: Straßenbahntrasse	3nocross 7606,16746 7456,16620 7417,16587 7403,16575 7388,16561 7295,16477 7231,16418
@@ -357,11 +353,16 @@ Zinnowitzer Str. - Friedrichstr.:	3 9015,14014 8879,13913 8935,13844
 #Friedrich-Ebert-Str. - Schloßstr.: Poller	3 * -12755,-1585 -12882,-1565
 #Schwertfegerstr. - Friedrich-Ebert-Str.: Poller	3 -12870,-1493 -12795,-1499 *
 #Friedrich-Ebert-Str. - Schwertfegerstr.: Poller	3 * -12795,-1499 -12870,-1493
-Zimbelstr.: Poller	3 11959,20365 11924,20399 11879,20466
-Zimbelstr.: Poller	3 11879,20466 11924,20399 11959,20365
+Zimbelstr.: Poller	3 * 11924,20399 *
 #: note: Luftbild: vvv
-Knollstr.: Poller	3 17609,164 17558,126 17488,80 17429,42 17362,-1 17308,-36 17242,-80
-Knollstr.: Poller	3 17242,-80 17308,-36 17362,-1 17429,42 17488,80 17558,126 17609,164
+Knollstr.: Poller	3 17609,164 17558,126 17488,80
+Knollstr.: Poller	3 17488,80 17558,126 17609,164
+Knollstr.: Poller	3 17608,61 17558,126 17351,451
+Knollstr.: Poller	3 17351,451 17558,126 17608,61
+Knollstr.: Poller	3 17609,164 17558,126 17351,451
+Knollstr.: Poller	3 17351,451 17558,126 17609,164
+Knollstr.: Poller	3 17488,80 17558,126 17608,61
+Knollstr.: Poller	3 17608,61 17558,126 17488,80
 #: note: ^^^
 Neumannstr.: Mittelstreifen	3nocross 11549,17154 11531,17250 11519,17316 11492,17460
 #: note: Luftbild: vvv
@@ -411,8 +412,7 @@ Askanischer Platz	1 8865,10974 8859,10939 8882,10905
 Rosenthaler Weg: Straßenbahntrasse	3nocross 11271,22328 11383,22369 11484,22406 11583,22442
 Delbrückstr.	1 12743,6645 12468,6592
 Emser Str.	1 13058,7165 12872,7134
-Stuthirtenweg: Gitter	3 13453,1218 13552,1265 13628,1334
-Stuthirtenweg: Gitter	3 13628,1334 13552,1265 13453,1218
+Stuthirtenweg: Gitter	3 * 13552,1265 *
 Gertraudenstr.: Abbiegen verboten	3nocross 10512,12039 10460,11979 10391,11898
 Gertraudenstr.: Abbiegen verboten	3nocross 10313,11805 10299,11786 10240,11740
 Grunerstr.: Mittelstreifen	3nocross 10738,12364 10800,12461 10878,12560 10954,12635
@@ -458,8 +458,7 @@ Kleineweg: nur für Anlieger	2:Anlieger 9126,8025 9130,7804 9132,7661
 Kleineweg: nur für Anlieger	2:Anlieger 9115,7645 9120,7600 9145,7522 9097,7469
 Peter-Strasser-Weg: nur für Anlieger	2:Anlieger 9240,7797 9130,7804
 Friedrich-Wilhelm-Str.: In die andere Richtung nur für Anlieger	1 8385,5907 8266,5911
-Parkstr.: Durchfahrt gesperrt	3 9143,6415 9184,6413 9250,6414
-Parkstr.: Durchfahrt gesperrt	3 9250,6414 9184,6413 9143,6415
+Parkstr.: Durchfahrt gesperrt	3 * 9184,6413 *
 Hermannstr./Rollbergstr.	3nocross 11933,8198 11963,8074 11979,8014
 Mittelstreifen	3nocross 7579,10183 7539,9970 7526,9791
 Schönhauser Allee: Mittelstreifen	3nocross 10779,13793 10832,13877 10895,13961
@@ -493,8 +492,7 @@ Thielallee: Mittelstreifen	3nocross 2585,5696 2556,5575 2444,5303
 Kleine Hamburger - Torstr.	3 9752,13575 9668,13629 9571,13590
 Kleine Hamburger - Gartenstr.	3 9752,13575 9668,13629 9531,13797
 Torstr.: Straßenbahntrasse	3nocross 10287,13783 10463,13747 10569,13719
-Erlanger Str.: Barriere	3 12349,8464 12293,8494 12170,8548
-Erlanger Str.: Barriere	3 12170,8548 12293,8494 12349,8464
+Erlanger Str.: Barriere	3 * 12293,8494 *
 Höhndorfstr. - Loewenhardtdamm: Mittelstreifen	3nocross 8438,8676 8334,8655 8371,8543
 #: by: Julia Weber
 Friedbergstr.	1 3012,10812 3204,10895
@@ -512,8 +510,7 @@ Mayschweg	1 22954,3584 22834,3571 22714,3558
 Finkeldeweg	1 22928,3057 22834,3571
 An der Wuhlheide: Mittelstreifen	3nocross 19405,6276 19276,6359 19245,6379
 Kiautschoustr.	1 7007,14911 7199,14978
-Rochstr.: Barriere	3 10418,12922 10535,13006 10571,13034
-Rochstr.: Barriere	3 10571,13034 10535,13006 10418,12922
+Rochstr.: Barriere	3 * 10535,13006 *
 Rahel-Hirsch-Str.: Mittelstreifen	3nocross 7936,12906 7948,12918 8039,13009
 Am Kanal -> Französische Str.: verboten	3nocross -12666,-1311 -12549,-1277 -12552,-1233
 Mittelstr. (Potsdam)	1 -12884,-769 -12712,-734
@@ -535,8 +532,7 @@ Grunewaldstr.: Mittelstreifen	1 6161,9128 6264,9156 6361,9175
 #: note: Breite zwischen Pollern ca. 150cm
 Viktoria-Luise-Platz: Poller	3 6270,9910 6275,9962 6224,9980
 Viktoria-Luise-Platz: Poller	3 6224,9980 6275,9962 6270,9910
-Else-Lasker-Schüler-Str.: Poller	3 7291,10506 7245,10499 7033,10396
-Else-Lasker-Schüler-Str.: Poller	3 7033,10396 7245,10499 7291,10506
+Else-Lasker-Schüler-Str.: Poller	3 * 7245,10499 *
 #: by: Thomas (neverbox):
 #: note: Schild existiert nur auf der westlichen Seite
 (Westhafenstr. - Beusselstr.): Durchfahrt verboten, Anlieger frei	2:Anlieger 6083,14564 6025,14539 6015,14516 5997,14444 5920,14422 5217,14255
@@ -553,8 +549,7 @@ Hohenschönhausener Weg -> Seddiner: Poller	3 18422,11837 18408,12105 *
 #: by: Malte Wollitz:
 Gluckweg	1 6039,3275 5853,3050
 Am Tierpark - Criegernweg	3 18408,10774 18417,10738 18509,10757
-Rosenfelder Ring	3 18165,12091 18093,12093 17978,12092
-Rosenfelder Ring	3 17978,12092 18093,12093 18165,12091
+Rosenfelder Ring	3 * 18093,12093 *
 Sophienstr.	1 9986,13412 10317,13248
 Gradestr./Moosrosenstr.	3nocross 12773,5248 12727,5244 12582,5232
 Hunsrückstr.	1 13914,17016 13990,17122 14060,17221
@@ -584,8 +579,7 @@ Fehmarner Str.	1 6710,14776 6528,15000
 Kaiserdamm: Mittelstreifen	3nocross 1960,11426 1834,11408 1625,11380
 #: by: Roland Mohrbacher vvv
 Paplitzer Str.	1 11027,-2448 11080,-2035
-Steinträgerweg: Poller	3 12987,2220 12963,2365 12948,2484
-Steinträgerweg: Poller	3 12948,2484 12963,2365 12987,2220
+Steinträgerweg: Poller	3 * 12963,2365 *
 #: by: ^^^
 #: by: Christian Riemer:
 Im Rosengrund: Anliegerstraße	2:Anlieger 11576,4339 11601,4242 11619,4146 11633,4117 11684,3919
@@ -617,8 +611,7 @@ Neue Filandastr./Filandatr.	3nocross 5687,5486 5671,5389 5659,5313
 Müllerstr.: Mittelstreifen	3nocross 6019,16712 5937,16784 5900,16817 5777,16924
 Zobtener Str.: Durchfahrt gesperrt (Poller)	3 16734,9990 16539,10097 16148,10329
 Zobtener Str.: Durchfahrt gesperrt (Poller)	3 16148,10329 16539,10097 16734,9990
-Waldowallee - Am Carlsgarten: Durchfahrt gesperrt (Betonblöcke)	3 19558,8064 19504,8003 19460,7954
-Waldowallee - Am Carlsgarten: Durchfahrt gesperrt (Betonblöcke)	3 19460,7954 19504,8003 19558,8064
+Waldowallee - Am Carlsgarten: Durchfahrt gesperrt (Betonblöcke)	3 * 19504,8003 *
 #: by: MichaelM vvv
 Klapppfosten	3 -1612,2123 -1590,1985 -1592,1852
 Klapppfosten	3 -1592,1852 -1590,1985 -1612,2123
@@ -636,13 +629,11 @@ Malchiner Str.	1 13866,4481 13869,4626 13836,4759
 Dömitzer Str.	1 13771,4485 13775,4631 13757,4729
 Kirchstr.: nur Linienverkehr erlaubt	2 22312,4593 22284,4653
 Behrenstr./Bebelplatz	1 9801,12245 9743,12239 9700,12234 9631,12227
-Theodorstr.: Poller	3 24928,10737 24921,10705 24916,10539
-Theodorstr.: Poller	3 24916,10539 24921,10705 24928,10737
+Theodorstr.: Poller	3 * 24921,10705 *
 Anzengruberstr.	1 13042,8395 12865,8346
 Holtzendorffstr.	1 3049,11015 3082,11090
 Hansa -> Buschallee	3 15187,16185 15432,16500 15388,16502
-Poller	3 8588,13673 8594,13637 8601,13580
-Poller	3 8601,13580 8594,13637 8588,13673
+Poller	3 * 8594,13637 *
 Mittelstreifen	3nocross 11888,9189 11803,9390 11785,9437
 Einfahrt in Pfarrstr. nicht möglich	3 15359,11115 15458,11306 *
 Einfahrt in Pfarrstr. nicht möglich	3 15359,11115 15279,10862 *
@@ -685,8 +676,7 @@ Neuer Steg	3 * 8277,19210 8209,19107
 Neuer Steg	3 8209,19107 8277,19210 *
 Straße 201	1 9366,18669 9532,18819
 Majakowskiring	1 10373,18889 10354,18814 10203,18762 10041,18697 9985,18735 10003,18798 10055,18831 10162,18867 10184,18875 10307,18915 10373,18889
-Killisch-von-Horn-Weg: Poller	3 9730,17927 9707,17941 9590,18082
-Killisch-von-Horn-Weg: Poller	3 9590,18082 9707,17941 9730,17927
+Killisch-von-Horn-Weg: Poller	3 * 9707,17941 *
 Frauenfelder Weg - Markstr.	3 7441,17009 7647,17037 7644,17054
 Kongostr.	1 6349,16213 6450,16325
 Polierweg: Schranke vor dem Malersteig	3 13650,3025 13596,3039 *
@@ -696,14 +686,12 @@ Zantochweg: Poller	3 12328,3831 12266,3863 *
 Zantochweg: Poller	3 * 12266,3863 12328,3831
 Douglasienweg: Poller	3 11633,4117 11563,4099 *
 Douglasienweg: Poller	3 * 11563,4099 11633,4117
-Goldenes Horn: Poller	3 10586,4039 10563,3767 10561,3748
-Goldenes Horn: Poller	3 10561,3748 10563,3767 10586,4039
+Goldenes Horn: Poller	3 * 10563,3767 *
 Brusaer Weg: Poller	3 10248,3897 10236,3777 *
 Brusaer Weg: Poller	3 * 10236,3777 10248,3897
 Teikeweg: Poller	3 9519,4537 9412,4537 *
 Teikeweg: Poller	3 * 9412,4537 9519,4537
-Medebacher Weg: Schranke	3 1886,19835 1896,19801 1945,19622
-Medebacher Weg: Schranke	3 1945,19622 1896,19801 1886,19835
+Medebacher Weg: Schranke	3 * 1896,19801 *
 Dievenowstr.	1 3228,7401 3208,7328 3189,7249 3202,7121
 Abbestr.: nur für Anlieger, herausfahrbare Poller	2 4757,12219 4683,12072
 Knesebeckstr. - Hardenbergstr.	3 4897,11354 4919,11605 4900,11626
@@ -713,8 +701,7 @@ Angerburger Allee	1 -1524,11108 -1608,11133 -1885,11392 -1931,11437 -1986,11487
 Sensburger Allee	1 200,11428 326,11391 456,11233
 Kyllburger - Darßer Str	3 16670,17454 16779,17521 16751,17560
 Am Steinberg	1 13183,17580 12998,17480
-Schäßburger Weg: Poller	3 7090,-225 7127,-248 7225,-312
-Schäßburger Weg: Poller	3 7225,-312 7127,-248 7090,-225
+Schäßburger Weg: Poller	3 * 7127,-248 *
 Fuchsmühler Weg: Durchfahrt gesperrt	2 7277,-77 7231,25
 Poller	3 7181,-15 7231,25 *
 Poller	3 * 7231,25 7181,-15
@@ -734,8 +721,7 @@ Karower Str.	3 16632,25512 16669,25373 *
 Karower Str.	3 * 16669,25373 16632,25512
 Efeuweg	3 15590,2724 15613,2739 *
 Efeuweg	3 * 15613,2739 15590,2724
-Rollbergstr.: Poller	3 12295,8154 12327,8161 12407,8177
-Rollbergstr.: Poller	3 12407,8177 12327,8161 12295,8154
+Rollbergstr.: Poller	3 * 12327,8161 *
 Rollbergstr. - Karl-Marx-Str.: Linksabbiegen verboten	3 12528,8205 12714,8249 12689,8289
 Belowstr.	1 4992,17908 4946,17701
 Süderholmer Steig	1 -2239,21904 -2245,21544
@@ -744,8 +730,7 @@ Mescheder Weg	1 2602,18737 2604,18660
 Bauerwitzer Weg	1 22917,12239 23000,12160
 Melanchthonstr.	1 6788,3181 6918,3341
 Pößnecker Str.	1 5934,1310 5863,1453
-Aarberger Str.: Poller	3 3581,2125 3581,2105 3577,2000
-Aarberger Str.: Poller	3 3577,2000 3581,2105 3581,2125
+Aarberger Str.: Poller	3 * 3581,2105 *
 Rochowstr. - Stralauer Allee	3 14170,10675 14103,10489 14222,10430
 Adlergestell: Mittelstreifen	3nocross 20565,2754 20451,2869 20289,3033 20207,3115 20064,3278
 Zossener Str.: Straßenbahntrasse	3nocross 22708,15794 22811,15753 22883,15740
