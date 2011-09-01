@@ -64,7 +64,7 @@ Alias [% ROOT_URL %]  [% ROOT_DIR %]
 
 <IfModule perl_module>
     <Perl>
-        use lib "[% ROOT_DIR %]/cgi";
+        use lib "[% ROOT_DIR %]";
     </Perl>
     PerlModule BBBikeDataDownloadCompat
     <LocationMatch "^\Q[% ROOT_URL %]/data/\E(strassen|landstrassen|landstrassen2)$">

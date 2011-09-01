@@ -6,6 +6,7 @@ BBBikeCGIAPI.pm
 BBBikeCGIUtil.pm
 BBBikeCalc.pm
 BBBikeCrosshairs.pm
+BBBikeDataDownloadCompat.pm
 BBBikeDebug.pm
 BBBikeDraw.pm
 BBBikeDraw/BBBikeGoogleMaps.pm
@@ -208,7 +209,6 @@ bbbikeapplet
 bbbikeclient
 cbbbike
 cbbbike.bat
-cgi/BBBikeDataDownloadCompat.pm
 cgi/README
 cgi/bbbike-data.cgi
 cgi/bbbike-snapshot.cgi
