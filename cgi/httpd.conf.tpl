@@ -77,11 +77,18 @@ Alias [% ROOT_URL %]  [% ROOT_DIR %]
     <Perl>
         use lib "[% ROOT_DIR %]";
     </Perl>
+
     PerlModule BBBikeDataDownloadCompat
     <LocationMatch "^\Q[% ROOT_URL %]/data/\E(strassen|landstrassen|landstrassen2)$">
         SetHandler perl-script
         PerlResponseHandler BBBikeDataDownloadCompat->handler
     </LocationMatch>
+
+    PerlModule BBBikeApacheSessionCountedHandler
+    <Location [% ROOT_URL %]/cgi/asch>
+        SetHandler perl-script
+        PerlResponseHandler BBBikeApacheSessionCountedHandler->handler
+    </Location>
 </IfModule>
 
 [%
