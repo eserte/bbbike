@@ -13,6 +13,14 @@ use lib ("$FindBin::RealBin/..",
 	);
 
 BEGIN {
+    if ($] < 5.006) {
+	$INC{"warnings.pm"} = 1;
+	*warnings::import = sub { };
+	*warnings::unimport = sub { };
+    }
+}
+
+BEGIN {
     if (!eval q{
 	use Test::More;
 	use LWP::UserAgent;
@@ -36,8 +44,13 @@ if (!$htmldir) {
     $htmldir = "http://localhost/bbbike";
 }
 
-GetOptions("htmldir=s" => \$htmldir)
-    or die "usage?";
+GetOptions("htmldir=s" => \$htmldir,
+	   "live" => sub {
+	       require BBBikeVar;
+	       no warnings 'once';
+	       $htmldir = $BBBike::BBBIKE_UPDATE_WWW;
+	   }),
+    or die "usage: $0 [-htmldir ... | -live]";
 
 my $ua = LWP::UserAgent->new;
 $ua->parse_head(0); # too avoid confusion with Content-Type in http header and meta tags
