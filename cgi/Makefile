@@ -39,7 +39,7 @@ httpd.conf: httpd.conf.tpl Makefile
 	    echo Please create a symlink; \
 	    echo "    ln -s ${.CURDIR}/httpd.conf /usr/local/etc/apache22/Includes/bbbike.conf"; \
 	    echo and restart the Apache; \
-	elif [-d /etc/apache2/sites-enabled ] ; \
+	elif [ -d /etc/apache2/sites-enabled ] ; \
 	then \
 	    echo Please create a symlink; \
 	    echo "    ln -s ${.CURDIR}/httpd.conf /etc/apache2/sites-enabled/bbbike.conf"; \
