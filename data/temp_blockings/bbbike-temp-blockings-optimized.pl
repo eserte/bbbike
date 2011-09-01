@@ -1067,8 +1067,8 @@ userdel	2 16975,1262 16849,1437
        undef,
        undef,
        {
-         'source_id' => 'IM_005525',
-         'until' => 1320015599,
+         'source_id' => 'INKO_096853',
+         'until' => 1315346400,
          'text' => 'Rudower Chaussee (Treptow - Köpenick) in beiden Richtungen Höhe S-Bahn Brücke Adlershof Baustelle, Straße vollständig gesperrt, als Fußgänger kann man passieren',
          'from' => 1179453600,
          'id' => 1079,
@@ -1585,7 +1585,7 @@ userdel	2::temp 8119,12414 8055,12186
          'text' => 'Weinmeisterstr. (Mitte) in Richtung Alexanderplatz gesperrt',
          'from' => undef,
          'id' => 1567,
-         'data' => '#: last_checked: 2011-06-12
+         'data' => '#: last_checked: 2011-08-31
 userdel	q4::inwork; 10350,13376 10527,13257
 ',
          'type' => 'gesperrt'
@@ -2415,7 +2415,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        {
          'until' => undef,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im August bis 21.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im September bis 20.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'from' => undef,
          'id' => 2068,
          'data' => '(Eingang Columbiadamm - Rundkurs auf dem Flughafen Tempelhof)	2::night 10691,8532 10640,8366 10598,8270 10575,8218
@@ -2782,7 +2782,7 @@ userdel	q4::inwork 425,8766 490,8716
          'id' => 2219,
          'data' => '#: by: wosch
 #: confirmed_by: srt
-#: last_checked: 2011-08-19
+#: last_checked: 2011-08-31
 #: note: eigentlich Radfahren auf der Friedrichsbrücke jetzt auch verboten
 userdel	q4::inwork; 10166,12777 10132,12941
 ',
@@ -2869,7 +2869,7 @@ userdel	q4::inwork; 10166,12777 10132,12941
        undef,
        undef,
        {
-         'until' => 1320015599,
+         'until' => 1315346400,
          'text' => 'Dörpfeldstr.: Bauarbeiten, Fahrbahn gesperrt',
          'from' => undef,
          'id' => 2246,
@@ -2877,16 +2877,7 @@ userdel	q4::inwork; 10166,12777 10132,12941
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'INKO_096636',
-         'until' => 1314806400,
-         'text' => 'Geschwister-Scholl-Str./Tucholskystr. (Mitte): Bauarbeiten, Brücke vollständig gesperrt (bis Ende 08/11) in beiden Richtungen Höhe Ebertsbrücke, 08.07.2011 07:00 Uhr bis 31.08.2011 18:00 Uhr ',
-         'from' => 1310014800,
-         'id' => 2247,
-         'data' => 'userdel	2::inwork 9524,12950 9529,12925
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        {
@@ -2921,16 +2912,7 @@ userdel	q4::inwork 2295,20358 2362,20218 2402,20126
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'LS/O-SG33-E/11/084',
-         'until' => 1314828000,
-         'text' => 'Eberswalde (Stadt): B167: Umbau Konten Freienwalder Straße/Saarstraße OD Eberswalde Saarstraße gesperrt, 25.07.2011 bis 31.08.2011 ',
-         'from' => 1312229266,
-         'id' => 2254,
-         'data' => 'userdel	q4::inwork 38504,47638 39129,47518
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'source_id' => '116501481',
@@ -2949,16 +2931,7 @@ userdel	q4::inwork 2295,20358 2362,20218 2402,20126
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'INKO_107049',
-         'until' => 1314802800,
-         'text' => 'Wartenberger Weg (Malchow): Baustelle, Straße vollständig gesperrt, auf der Dorfstr. Verkehrseinschränkungen (bis Ende 08/11) in beiden Richtungen an der Kreuzung Dorfstr., 13.07.2011 12:00 Uhr bis 31.08.2011 17:00 Uhr ',
-         'from' => 1310464800,
-         'id' => 2264,
-         'data' => 'userdel	q4::inwork 16094,19179 15640,19208
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'LS/S-SG33-W/10/173',
          'until' => 1356994800,
@@ -3007,12 +2980,11 @@ userdel	q4::inwork 2295,20358 2362,20218 2402,20126
        },
        {
          'source_id' => 'http://www.berlin.de/ba-pankow/presse/archiv/20110826.1055.356350.html',
-         'until' => undef,
+         'until' => 1324656000,
          'text' => 'Kastanienallee: Fahrbahn zwischen Oderberger Straße und Schönhauser Allee/Eberswalder Straße ab Montag dem 29.8.2011 gesperrt',
          'from' => 1314482400,
          'id' => 2274,
-         'data' => '#: XXX Ende der Bauarbeiten?
-userdel	q4::inwork 10881,15047 10838,14962 10723,14772
+         'data' => 'userdel	q4::inwork 10881,15047 10838,14962 10723,14772
 ',
          'type' => 'handicap'
        },

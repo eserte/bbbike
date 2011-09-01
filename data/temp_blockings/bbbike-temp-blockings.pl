@@ -9135,10 +9135,10 @@ userdel	q4::inwork -32153,-176 -32143,-211 -31993,-726 -31991,-1024
 EOF
      },
      { from  => 1179453600, # 2007-05-18 04:00
-       until => 1320015599, # 2011-10-30 23:59 --- until => Time::Local::timelocal(reverse(2011-1900,8-1,31,15,0,0)), # 1279544400, # 2010-07-19 15:00
+       until => 1315346400, # 2011-09-07 00:00 # until => 1320015599, # 2011-10-30 23:59 --- until => Time::Local::timelocal(reverse(2011-1900,8-1,31,15,0,0)), # 1279544400, # 2010-07-19 15:00
        text  => 'Rudower Chaussee (Treptow - Köpenick) in beiden Richtungen Höhe S-Bahn Brücke Adlershof Baustelle, Straße vollständig gesperrt, als Fußgänger kann man passieren',
        type  => 'handicap',
-       source_id => 'IM_005525',
+       source_id => 'INKO_096853',
        data  => <<EOF,
 userdel	q4::inwork 19904,3464 19732,3340
 EOF
@@ -13316,7 +13316,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_011184',
        data  => <<EOF,
-#: last_checked: 2011-06-12
+#: last_checked: 2011-08-31
 userdel	q4::inwork; 10350,13376 10527,13257
 EOF
      },
@@ -19098,7 +19098,7 @@ EOF
        data  => <<EOF,
 #: by: wosch
 #: confirmed_by: srt
-#: last_checked: 2011-08-19
+#: last_checked: 2011-08-31
 #: note: eigentlich Radfahren auf der Friedrichsbrücke jetzt auch verboten
 userdel	q4::inwork; 10166,12777 10132,12941
 EOF
@@ -19347,7 +19347,7 @@ userdel	q4::temp 9321,8607 9401,8510 9451,8548 9364,8640
 EOF
      },
      { from  => undef, # 
-       until => 1320015599, # 2011-10-30 23:59
+       until => 1315346400,
        text  => 'Dörpfeldstr.: Bauarbeiten, Fahrbahn gesperrt',
        type  => 'handicap',
        data  => <<EOF,
@@ -19619,12 +19619,11 @@ userdel	q4::inwork 6298,20599 6330,20742 6347,20819 6366,20902 6376,20951 6380,2
 EOF
      },
      { from  => 1314482400, # 2011-08-28 00:00
-       until => undef, # XXX
+       until => 1324656000, # 2011-12-23 17:00
        text  => 'Kastanienallee: Fahrbahn zwischen Oderberger Straße und Schönhauser Allee/Eberswalder Straße ab Montag dem 29.8.2011 gesperrt',
        type  => 'handicap',
-       source_id => 'http://www.berlin.de/ba-pankow/presse/archiv/20110826.1055.356350.html',
+       source_id => 'http://www.berlin.de/ba-pankow/presse/archiv/20110826.1055.356350.html', # und: source_id => 'IM_017746'
        data  => <<EOF,
-#: XXX Ende der Bauarbeiten?
 userdel	q4::inwork 10881,15047 10838,14962 10723,14772
 EOF
      },

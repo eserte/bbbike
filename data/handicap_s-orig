@@ -241,7 +241,11 @@ Markgrafenstr.: Gehweg	q2 9737,11546 9732,11574 9707,11596 9701,11656
 Gendarmenmarkt: Fußgängerzone, ggfs. schieben	q3 9526,11911 9668,11928
 Gendarmenmarkt: Fußgängerzone, ggfs. schieben	q3 9516,12010 9656,12021
 Am Volkspark: Parkweg	q1 5745,8194 5934,8220
-Karl-Marx-Str. - Marchlewskistr.: Gehweg	q2 12869,12425 12950,12340 12985,12303
+Karl-Marx-Str. - Marchlewskistr.: Gehweg	q2 12869,12425 12950,12340
+#: last_checked: 2011-09-01
+#: XXX alten Eintrag dann wieder aktivieren
+Karl-Marx-Allee - Marchlewskistr.: Bauarbeiten, eng	q3::inwork 12950,12340 12985,12303
+#Karl-Marx-Allee - Marchlewskistr.: Gehweg	q2 12950,12340 12985,12303
 #: XXX_prog: zusätzlich noch Bordsteine an der östlichen Seite
 Lange Str. [vor Kaufhof]: Fußgänger	q2 12409,11902 12522,11837
 Gotenstr./Cheruskerstr. - Kolonnenstr.: Fußgänger	q2 7488,8768 7548,8879
@@ -310,7 +314,7 @@ Spreepromenade am DomAquarée: Fußgänger, Cafés	q3 10300,12587 10249,12658 10219,
 St.-Wolfgang-Str.: Fußgänger, Cafés	q3 10219,12701 10285,12744 10360,12793
 Spreegasse: Fußgänger, Cafés	q3 10249,12658 10309,12700 10387,12760
 Heiligengeistgasse: Fußgänger, Cafés, sehr eng	q4 10285,12744 10309,12700 10352,12627
-#: XXX_prog: sollte BS werden
+#: XXX_prog: sollte BS werden (1x an der Gormannstr.)
 zur Gormannstr.: Bordstein	q3 10350,13376 10372,13436
 #: note: Flohmarkt ist in temp_blockings erwähnt:
 Am Zeughaus: Fußgänger	q2 9919,12613 9950,12522 9984,12426
@@ -2003,7 +2007,7 @@ Mühlbergstr.: enge Straße	q1 17187,3988 17288,4026 17341,4046
 Mühlbergstr.: enge Straße	q1 17346,4031 17402,4050 17405,4151
 #: by: ^^^
 #: confirmed_by: Daniel Prusseit:
-Hohenschönhausener Weg: Fußgänger haben Vorrang	q1+ 15600,18551 16317,18020
+Hohenschönhausener Weg: Fußgänger haben Vorrang	q1+ 15600,18551 15825,18385 16317,18020
 #: by: anonymous (q1 ohne genauere Kommentierung, aber auf dem Luftbild sieht es eng aus)
 Murtzaner Ring: enge Straße	q1 19593,14472 19593,14405 19595,14348 19599,14273 19634,14171 19692,14082 19731,14061 19770,14060 19818,14064 19921,14064 19951,14083 20051,14191 20061,14220 20056,14373 20059,14441
 #XXX: P. Loll:, corrected_by: Uwe Borgenhagen (not mentioned): Windenweg: enge Straße	q1 16306,2364 16106,2514 16012,2592 15923,2667 15870,2768 15785,2900 15751,2936 15602,3099
