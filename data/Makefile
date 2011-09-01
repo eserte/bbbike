@@ -1743,8 +1743,7 @@ GNUmakefile.mapfiles: Makefile.mapfiles $(MISCRSRCDIR)/b2gmake
 	$(MISCRSRCDIR)/b2gmake < Makefile.mapfiles > GNUmakefile.mapfiles
 	chmod ugo+r GNUmakefile.mapfiles
 .else
-GNUmakefile: Makefile
-	$(PERL) -e 'print qq{all:\n\t\@echo "*** Sorry, your make program is not supported."\n\t\@echo "*** Please try pmake from the BSD project."\n\t\@echo "*** You can get it from http://www.sourceforge.net/projects/srezic"\n\t\@echo "*** Debian users may install the pmake package."\n\t\@echo ""\n\t\@false\n}' > $@
+# GNUmakefile is now static
 .endif
 
 ######################################################################

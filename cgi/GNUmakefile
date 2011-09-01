@@ -2,7 +2,7 @@
 CGI_SCRIPTS=		bbbike.cgi bbbike.en.cgi bbbikegooglemap.cgi mapserver_address.cgi \
 			mapserver_comment.cgi mapserver_setcoord.cgi \
 			wapbbbike.cgi bbbiketile.cgi bbbike-data.cgi bbbike-snapshot.cgi
-DEVEL_CGI_SCRIPTS=	bbbike2.cgi bbbike2.en.cgi bbbikegooglemap2.cgi bbbike-test.cgi
+DEVEL_CGI_SCRIPTS=	bbbike2.cgi bbbike2.en.cgi bbbikegooglemap2.cgi bbbike-test.cgi bbbike-osm.cgi
 ROOT_URL?=		/bbbike
 # Set this to "cgi" or "Apache::Registry"
 CGI_TYPE?=		cgi
@@ -35,9 +35,21 @@ httpd.conf: httpd.conf.tpl Makefile
 	chmod 644 httpd.conf~
 	mv httpd.conf~ httpd.conf
 	@echo
-	@echo Please add
-	@echo "    Include ${.CURDIR}/httpd.conf"
-	@echo to your Apache\'s httpd.conf
+	@if [ -d /usr/local/etc/apache22/Includes ] ; \
+	then \
+	    echo Please create a symlink; \
+	    echo "    ln -s ${.CURDIR}/httpd.conf /usr/local/etc/apache22/Includes/bbbike.conf"; \
+	    echo and restart the Apache; \
+	elif [ -d /etc/apache2/sites-enabled ] ; \
+	then \
+	    echo Please create a symlink; \
+	    echo "    ln -s ${.CURDIR}/httpd.conf /etc/apache2/sites-enabled/bbbike.conf"; \
+	    echo and restart the Apache; \
+	else \
+	    echo Please add; \
+	    echo "    Include ${.CURDIR}/httpd.conf"; \
+	    echo to your Apache\'s httpd.conf and restart the Apache; \
+	fi
 	@echo
 
 alt-httpd.conf:	httpd.conf.st
