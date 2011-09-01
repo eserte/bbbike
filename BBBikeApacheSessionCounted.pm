@@ -69,7 +69,16 @@ sub tie_session {
 	      AlwaysSave => 1,
 	      (exists $CLUSTER_DEFS{hostname()} ?
 	       (HostID => $CLUSTER_DEFS{hostname()}->[0],
-		HostURL => sub { $CLUSTER_DEFS{hostname()}->[1] . "?$id" },
+		HostURL => sub {
+		    my($host_id, $session_id) = @_;
+		    for (values %CLUSTER_DEFS) {
+			if ($_->[0] eq $host_id) {
+			    return $_->[1] . '?' . $session_id;
+			}
+		    }
+		    warn "Cannot handle host id <$host_id>";
+		    undef;
+		},
 	       ) : ()
 	      ),
 	      Timeout => 10,
