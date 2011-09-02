@@ -259,6 +259,12 @@ my @req_table =
   [qw/Math::Round	0	all	0	devel/,
    'Für downloadosm -round'],
 
+  # CGI 3.43 which comes with Debian has a couple of problems (self
+  # urls have port, encoding problems with params...)
+  (!eval { require CGI; $CGI::VERSION < 3.43 || $CGI::VERSION >= 3.46 } ?
+   [qw/CGI		3.46	all	2	cgi/,
+    'CGI-Handling'] : ()),
+
   ## Maybe in future:
   # DBD::Pg - Strassen::Pg
   # Text::LevenshteinXS - PLZ::Levenshtein
