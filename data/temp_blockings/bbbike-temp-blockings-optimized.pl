@@ -1068,7 +1068,7 @@ userdel	2 16975,1262 16849,1437
        undef,
        {
          'source_id' => 'INKO_096853',
-         'until' => 1315346400,
+         'until' => 1317938400,
          'text' => 'Rudower Chaussee (Treptow - Köpenick) in beiden Richtungen Höhe S-Bahn Brücke Adlershof Baustelle, Straße vollständig gesperrt, als Fußgänger kann man passieren',
          'from' => 1179453600,
          'id' => 1079,
@@ -2869,7 +2869,7 @@ userdel	q4::inwork; 10166,12777 10132,12941
        undef,
        undef,
        {
-         'until' => 1315346400,
+         'until' => 1317938400,
          'text' => 'Dörpfeldstr.: Bauarbeiten, Fahrbahn gesperrt',
          'from' => undef,
          'id' => 2246,
@@ -2996,6 +2996,26 @@ userdel	q4::inwork 2295,20358 2362,20218 2402,20126
          'from' => 1313913600,
          'id' => 2276,
          'data' => 'userdel	2::inwork -7191,-1023 -7152,-1064 -7088,-1074 -7051,-1221
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'http://www.berlin.de/ba-pankow/presse/archiv/20110902.1020.357195.html',
+         'until' => 1316469599,
+         'text' => 'Buchholzer Straße, Einbahnstraße zwischen Beuthstraße und Herthaplatz, von 5. September 2011 bis 19. September 2011',
+         'from' => 1315087200,
+         'id' => 2277,
+         'data' => 'userdel	q4::inwork; 10599,19957 10609,19971 10802,20240 10843,20301
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => '116501441',
+         'until' => 1315857600,
+         'text' => 'Gransee: B96: Gleisbauarbeiten Bahnübergang bei Altlüdersdorf Vollsperrung ab 08.09.11 22:00 Uhr, 08.09.2011 22:00 Uhr bis 12.09.2011 22:00 Uhr ',
+         'from' => 1315425600,
+         'id' => 2278,
+         'data' => 'userdel	2::inwork -5575,69050 -5511,69122 -5146,69565
 ',
          'type' => 'gesperrt'
        }
