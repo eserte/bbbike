@@ -20,15 +20,17 @@ $VERSION = '0.01';
 $debug = $main::debug; # XXX hmmmm
 
 use Apache::Session::Counted;
-use Sys::Hostname qw(hostname);
 
-# XXX DO NOT HARDCODE HERE!
-my %CLUSTER_DEFS = (
-		    'biokovo.herceg.de'                         => [1, 'http://biokovo/bbbike/cgi/asch'],
-		    'lvps83-169-19-137.dedicated.hosteurope.de' => [2, 'http://bbbike.de/cgi-bin/asch'], # XXX in real cluster operation this must be a node name, not the cluster domain name!
-		    'eserte'                                    => [3, 'http://eserte.bbbike.org/cgi-bin/asch'],
-		    'mosor'                                     => [4, 'http://mosor/bbbike/cgi/asch'],
-		   );
+######################################################################
+# CONFIGURATION SECTION
+our %CLUSTER_DEFS = (
+		     'biokovo.herceg.de'                         => [1, 'http://biokovo/bbbike/cgi/asch'],
+		     'lvps83-169-19-137.dedicated.hosteurope.de' => [2, 'http://bbbike.lvps83-169-19-137.dedicated.hosteurope.de/cgi-bin/asch'],
+		     'eserte'                                    => [3, 'http://eserte.bbbike.org/cgi-bin/asch'],
+		     'mosor'                                     => [4, 'http://mosor/bbbike/cgi/asch'],
+		    );
+######################################################################
+our $THIS_HOST_ID;
 
 sub pre_init {
     Apache::Session::CountedStore->tree_init("/tmp/bbbike-sessions-$<","1");
@@ -62,13 +64,23 @@ sub tie_session {
 
     my %sess;
     eval {
+	if (!defined $THIS_HOST_ID) {
+	    require Sys::Hostname;
+	    my $hostname = Sys::Hostname::hostname();
+	    if (exists $CLUSTER_DEFS{$hostname}) {
+		$THIS_HOST_ID = $CLUSTER_DEFS{$hostname}->[0];
+	    } else {
+		$THIS_HOST_ID = 0; # defined, but false
+	    }
+	}
 	tie %sess, 'Apache::Session::Counted', $id,
 	    { Directory => $directory,
 	      DirLevels => $dirlevels,
 	      CounterFile => $counterfile,
 	      AlwaysSave => 1,
-	      (exists $CLUSTER_DEFS{hostname()} ?
-	       (HostID => $CLUSTER_DEFS{hostname()}->[0],
+	      ($THIS_HOST_ID ?
+	       (
+		HostID  => $THIS_HOST_ID,
 		HostURL => sub {
 		    my($host_id, $session_id) = @_;
 		    for (values %CLUSTER_DEFS) {
