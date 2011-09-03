@@ -2638,16 +2638,7 @@ userdel	3 13034,7319 13047,7234 13150,7254
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_014357',
-         'until' => 1333112400,
-         'text' => 'Berliner Str. (Pankow): Baustelle, Fahrtrichtung stadteinwärts gesperrt, 05.10.2009 10:32 Uhr bis 30.03.2012 15:00 Uhr',
-         'from' => 1254645120,
-         'id' => 2172,
-         'data' => 'userdel	q4::inwork; 10680,18380 10755,18231 10829,18083 10846,17992 10859,17854
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
