@@ -259,13 +259,11 @@ EOF
 				 ),
 		layer_checkbutton('Zebrastreifen', 'p',
 				  "$main::datadir/zebrastreifen",
-				  method => 'add_new_nonlazy_layer', # lazy mode does not support bbd images yet
 				  above => $str_layer_level,
 				 ),
 		layer_checkbutton('Ortsschilder', 'p',
 				  "$main::datadir/ortsschilder",
 				  maybe_orig_file => 1,
-				  method => 'add_new_nonlazy_layer', # lazy mode does not support bbd images yet
 				  above => $str_layer_level,
 				 ),
 		layer_checkbutton('routing_helper', 'str',
