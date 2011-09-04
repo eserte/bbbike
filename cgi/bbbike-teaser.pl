@@ -88,7 +88,7 @@ sub teaser_kreisfahrt_adfc {
 	my $adfc_url    = "http://www.adfc-berlin.de/aktionenprojekte/kreisfahrt/1069.html";
 	my $kreisfahrt_img = "/BBBike/misc/kreisfahrt_2011/Kreisfahrt-2011-title.png";
 	<<EOF
-<div class="teaser"><a style="text-decoration:none;" href="$adfc_url"><img src="$kreisfahrt_img" alt="ADFC-Kreisfahrt ${year}" /></a> am 17.&nbsp;September&nbsp;$year</div>
+<div class="teaser"><a style="text-decoration:none;" href="$adfc_url"><img src="$kreisfahrt_img" alt="ADFC-Kreisfahrt ${year}" border="0" /></a> am 17.&nbsp;September&nbsp;$year</div>
 EOF
     } else {
 	();
