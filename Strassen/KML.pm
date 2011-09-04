@@ -197,6 +197,7 @@ EOF
     </Style>
 EOF
     }
+    my $is_first_route = 1;
     for my $route (@routes) {
 	my($name, $coords, $color, $dist) = @{$route}{qw(name coords color dist)};
 	my $dist_km = m2km($dist);
@@ -206,6 +207,20 @@ EOF
       <name>@{[ xml($name) ]}</name>
       <description>@{[ xml($dist_km) ]}</description>
       <styleUrl>#@{[ xml($styles{$color}) ]}</styleUrl> 
+EOF
+	if ($is_first_route) {
+	    $is_first_route = 0;
+	    my($lon,$lat) = $coords =~ m{^([^,]+),(\S+)};
+	    $kml_tmpl .= <<EOF;
+      <!-- Center to start -->
+      <LookAt>
+        <longitude>$lon</longitude>
+        <latitude>$lat</latitude>
+        <range>2000</range>
+      </LookAt>
+EOF
+	}
+	$kml_tmpl .= <<EOF;
       <LineString>
         <extrude>1</extrude>
         <tessellate>1</tessellate>
@@ -221,7 +236,7 @@ EOF
   </Document>
 </kml>
 EOF
-    
+    $kml_tmpl;
 }
 
 1;
