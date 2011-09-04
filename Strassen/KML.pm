@@ -15,7 +15,7 @@ package Strassen::KML;
 
 use strict;
 use vars qw($VERSION $TEST_SET_NAMESPACE_DECL_URI_HACK);
-$VERSION = 1.11;
+$VERSION = 1.12;
 
 use base qw(Strassen);
 
@@ -286,3 +286,69 @@ EOF
 1;
 
 __END__
+
+=head1 NAME
+
+Strassen::KML - convert between bbd and kml files
+
+=head1 SYNOPSIS
+
+    use Strassen::KML;
+    $kml_s = Strassen::KML->new($s);
+    $kml = $kml_s->bbd2kml;
+
+=head1 DESCRIPTION
+
+Convert between BBBike's bbd format and Google's kml format.
+
+=head2 Converting from bbd to kml
+
+Call the constructor C<new> with a L<Strassen> object.
+
+Then use the method C<bbd2kml> to create a KML string.
+
+The C<bbd2kml> method takes the following optional named parameters:
+
+=over
+
+=item documentname => $name
+
+The KML document name. Defaults to "BBBike-Route".
+
+=item documentdescription => $description
+
+The KML document description. No default.
+
+=item startgoalicons => $bool
+
+If true, then create references to start/goal icons for the
+beginning/end of the route. The icon images are fetched from
+L<http://www.bbbike.de>.
+
+=back
+
+=head2 Covnerting from kml/kmz to bbd
+
+Call the constructor C<new> with a C<kml> or C<kmz> filename. After
+this, the constructed object behaves like a L<Strassen> object.
+
+The constructor takes the following optional named parameters:
+
+=over
+
+=item name => $name
+
+The route name. Defaults to "Route". Note that in the future kml's
+name element may be used for this.
+
+=item cat => $cat
+
+The route category. Defaults to "X".
+
+=back
+
+=head1 AUTHOR
+
+Slaven Rezic
+
+=cut
