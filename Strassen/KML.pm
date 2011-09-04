@@ -1,10 +1,9 @@
 # -*- perl -*-
 
 #
-# $Id: KML.pm,v 1.10 2008/05/12 16:04:23 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2007 Slaven Rezic. All rights reserved.
+# Copyright (C) 2007,2011 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -16,7 +15,7 @@ package Strassen::KML;
 
 use strict;
 use vars qw($VERSION $TEST_SET_NAMESPACE_DECL_URI_HACK);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.10 $ =~ /(\d+)\.(\d+)/);
+$VERSION = 1.11;
 
 use base qw(Strassen);
 
@@ -138,6 +137,7 @@ sub bbd2kml {
     my($self, %args) = @_;
     my $document_name = delete $args{documentname} || 'BBBike-Route';
     my $document_description = delete $args{documentdescription} || "";
+    my $with_start_goal_icons = delete $args{startgoalicons};
 
     my $xy2longlat = \&xy2longlat;
     my $map = $self->get_global_directive("map");
@@ -197,6 +197,26 @@ EOF
     </Style>
 EOF
     }
+    if ($with_start_goal_icons) {
+	$kml_tmpl .= <<EOF;
+    <Style id="start">
+      <IconStyle>
+        <scale>2</scale>
+        <Icon>
+          <href>http://www.bbbike.de/BBBike/images/flag2_bl_centered.png</href>
+        </Icon> 
+      </IconStyle>
+    </Style>
+    <Style id="goal">
+      <IconStyle>
+        <scale>2</scale>
+        <Icon>
+          <href>http://www.bbbike.de/BBBike/images/flag_ziel_centered.png</href>
+        </Icon> 
+      </IconStyle>
+    </Style>
+EOF
+    }
     my $is_first_route = 1;
     for my $route (@routes) {
 	my($name, $coords, $color, $dist) = @{$route}{qw(name coords color dist)};
@@ -210,8 +230,13 @@ EOF
 EOF
 	if ($is_first_route) {
 	    $is_first_route = 0;
-	    my($lon,$lat) = $coords =~ m{^([^,]+),(\S+)};
-	    $kml_tmpl .= <<EOF;
+	    if (!$with_start_goal_icons) {
+		# Without the start/goal icons the route is centered
+		# and not completely shown. In this case it's better
+		# to specify a LookAt point. With the altitude=2000m a
+		# good portion of the route is shown.
+		my($lon,$lat) = $coords =~ m{^([^,]+),(\S+)};
+		$kml_tmpl .= <<EOF;
       <!-- Center to start -->
       <LookAt>
         <longitude>$lon</longitude>
@@ -219,6 +244,7 @@ EOF
         <range>2000</range>
       </LookAt>
 EOF
+	    }
 	}
 	$kml_tmpl .= <<EOF;
       <LineString>
@@ -229,6 +255,24 @@ EOF
 @{[ xml($coords) ]}
         </coordinates>
       </LineString>
+    </Placemark>
+EOF
+    }
+    if ($with_start_goal_icons && @routes) {
+	my($startcoord) = $routes[0]->{coords}  =~ m{^(\S+)};
+	my($goalcoord)  = $routes[-1]->{coords} =~ m{(\S+)$};
+	$kml_tmpl .= <<EOF;
+    <Placemark>
+      <styleUrl>#start</styleUrl>
+      <Point>
+        <coordinates>$startcoord</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <styleUrl>#goal</styleUrl>
+      <Point>
+        <coordinates>$goalcoord</coordinates>
+      </Point>
     </Placemark>
 EOF
     }

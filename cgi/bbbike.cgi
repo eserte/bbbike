@@ -3880,7 +3880,7 @@ sub display_route {
 	my $s = $route_to_strassen_object->();
 	my $s_kml = Strassen::KML->new($s);
 	$s_kml->{"GlobalDirectives"}->{"map"}[0] = "polar" if $data_is_wgs84;
-	print $s_kml->bbd2kml;
+	print $s_kml->bbd2kml(startgoalicons => 1);
 	return;
     }
 
