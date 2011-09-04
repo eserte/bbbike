@@ -1867,7 +1867,7 @@ EOF
 	# Eine Addition aller aktuellen Straßen, die bei luise-berlin
 	# aufgeführt sind, ergibt als Summe 10129
 	# Da aber auch einige "unoffizielle" Wege in der DB sind, dürften es an die 11000 werden
-	my($bln_str, $all_bln_str, $pdm_str) = (10000, 11000, 420);
+	my($bln_str, $all_bln_str, $pdm_str) = (10500, 11000, 420);
 	# XXX Use format number to get a comma in between.
 	if ($lang eq 'en') {
 	    print <<EOF;
@@ -1880,8 +1880,7 @@ EOF
 	    print <<EOF;
 Dieses Programm sucht (Fahrrad-)Routen in Berlin.
 Es sind ca. $bln_str von $all_bln_str Berliner Stra&szlig;en
-sowie ca. $pdm_str Potsdamer Stra&szlig;en erfasst (alle Hauptstra&szlig;en und wichtige
-Nebenstra&szlig;en). Bei nicht erfassten Straßen wird automatisch die
+sowie ca. $pdm_str Potsdamer Stra&szlig;en erfasst. Bei nicht erfassten Straßen wird automatisch die
 nächste bekannte verwendet. <b>Straßen bitte ohne Hausnummern oder Postleitzahlen eingeben.</b><br><br>
 EOF
 	}
