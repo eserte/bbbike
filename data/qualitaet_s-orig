@@ -174,7 +174,8 @@ Kiefholzstr.: Kopfsteinpflaster	Q2 13601,9572 13455,9711 13251,9829
 Hirschberger Str.: Kopfsteinpflaster	Q2+ 14988,11130 15012,11148 15099,11113
 Krummhübler Str.: Kopfsteinpflaster	Q2 15060,11006 15099,11113
 Marzahner Chaussee: Kopfsteinpflaster	Q2- 18559,12105 18422,11837 18380,11747
-Stellingdamm: schlechtes Kopfsteinpflaster	Q3 22475,6151 22603,6141 22777,6157 22957,6174
+Stellingdamm: schlechtes Kopfsteinpflaster auf der Fahrbahn	Q3; 22957,6174 22777,6157 22603,6141 22475,6151
+Stellingdamm: schlechtes Kopfsteinpflaster auf der Fahrbahn, aber Radweg existiert	Q1; 22475,6151 22603,6141 22777,6157 22957,6174
 Stellingdamm: Asphalt	Q0 22957,6174 23011,6181 23131,6237 23222,6276
 Planufer: Kopfsteinpflaster, OK	Q1- 11543,10015 11507,10004 11485,10029
 Planufer: Kopfsteinpflaster, OK	Q1- 11177,9935 10929,9897 10914,9887
@@ -1558,7 +1559,8 @@ Katzengraben: Kopfsteinpflaster	Q2 22475,4658 22469,4677 22465,4690
 Spindlergasse: Kopfsteinpflaster	Q2 22469,4677 22515,4694
 Futranplatz: Kopfsteinpflaster	Q2 22451,4749 22388,4737
 Steinstr.: Kopfsteinpflaster	Q2 -7909,-2375 -7996,-2293
-(zum Anhalter Steg): teils asphaltiert, teils Bohlenweg	Q1 8659,10239 8685,10317 8726,10351
+(zum Anhalter Steg): Kleinsteinpflaster	Q2+ 8677,10224 8662,10227 8711,10322
+(Anhalter Steg): Asphalt	Q0 8711,10322 8726,10351
 (Anhalter Steg): Holzbohlen	Q1 8726,10351 8760,10408 8773,10429
 (Anhalter Steg - Anhalter Bahnhof): Parkweg, wassergebundener Belag	Q1 8773,10429 8776,10548 8854,10712 8912,10846 8938,10872
 Erich-Lodemann-Str.: Betonstraße	Q1 15765,7567 15429,7948
@@ -3701,7 +3703,7 @@ Privatstr. 659: sandige Straße	Q2- 29196,2548 28898,2775
 (R1): Asphalt	Q0 27218,2300 27214,2281 27761,2124
 Straße zum Müggelhort: Asphalt	Q0+ 28729,3084 28639,3005 28442,2926 28359,2722 28148,2544 27972,2503 27849,2400 27761,2124
 Straße zum Müggelhort: Asphalt	Q0 27761,2124 27599,1521
-(Zum Hotel Müggelsee): Beton	Q0- 26713,2064 26805,2381 26868,2580
+(Zum Hotel Müggelsee): Beton	Q0- 26713,2064 26805,2381 26836,2480 26868,2580
 Müggelschlößchenweg: Asphalt	Q0 25385,4414 25132,4385 24181,4270 24135,4264 23879,4233 23753,4218
 Müggelschlößchenweg: Beton	Q0 23753,4218 23655,4205 23435,4179
 Strandschloßweg: Asphalt/Beton	Q0 23368,3894 23442,3892 23749,3883 23925,3886
@@ -6270,6 +6272,18 @@ Straße 46 (Blankenburg): Asphalt	Q0 14482,20547 14685,20504
 Mittelstr. (Blankenburg): unbefestigte Straße	Q2 14320,20580 14482,20547
 Am Fließ: Asphalt	Q0 14263,20352 14386,20237 14429,20192
 Bebelplatz: gepflastert	Q1 9700,12234 9679,12388
+(Yorckstr. - Park am Gleisdreieck): Beton	Q0 8358,9568 8357,9598 8349,9697
+(Park am Gleisdreieck, Querweg): Beton	Q0 8335,9702 8349,9697 8446,9670 8497,9654 8540,9644
+(Park am Gleisdreieck, Berlin-Leipzig): Asphalt	Q0 8343,9993 8338,9971 8335,9702 8333,9583
+(Park am Gleisdreieck, Generalszug): Beton	Q0 8338,9971 8521,9911 8571,9896 8652,9870 8733,9841
+(Park am Gleisdreieck, östlicher Weg): Kopfsteinpflaster	Q2 8775,10289 8780,10248 8726,10056
+(Park am Gleisdreieck, östlicher Weg): Asphalt	Q0 8726,10056 8652,9870
+(Park am Gleisdreieck, mittlerer Weg): Asphalt	Q0 8579,10030 8521,9911
+(Park am Gleisdreieck, mittlerer Weg): Beton	Q0 8521,9911 8504,9870 8477,9867
+(Park am Gleisdreieck, mittlerer Weg): Asphalt	Q0 8477,9867 8464,9744 8446,9670 8426,9572
+(Hornstr. - Park am Gleisdreieck): Beton	Q0 8779,9829 8761,9765 8722,9743
+(Park am Gleisdreieck, südöstlicher Weg): Asphalt	Q0 8722,9743 8540,9644 8508,9551 8477,9562 8426,9572
+(Rampe Hornstr. - Generalszug): Asphalt	Q0 8733,9841 8722,9743
 ######################### User Contributions #################################
 #: by: anonymous vvv
 # 

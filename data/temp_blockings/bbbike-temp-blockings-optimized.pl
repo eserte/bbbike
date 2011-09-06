@@ -90,16 +90,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1315173600,
-         'text' => 'Alt-Rudow in beiden Richtungen, zwischen Krokusstr. und Neudecker Weg Veranstaltung, Straße vollständig gesperrt (3. und 4. Septermber 2011), Rudower Septermbermeile',
-         'from' => 1314914400,
-         'id' => 112,
-         'data' => 'userdel	2 16610,1715 16805,1488 16849,1437
-userdel	2 16975,1262 16849,1437
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2443,16 +2434,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
 (Eingang Tempelhofer Damm - südliche Landebahn)	2::night 9302,7294 9351,7241 9461,7190
 '
        },
-       {
-         'source_id' => 'INKO_107124',
-         'until' => 1315087199,
-         'text' => 'Lahnstr. (Neukölln) Richtung Grenzallee zwischen Mierstr. und Niemetzstr. Baustelle, in beiden Richtungen gesperrt (bis Anfang 09/2011) ',
-         'from' => 1304110406,
-         'id' => 2069,
-         'data' => 'userdel	q4::inwork 13627,7047 13891,7107
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2832,16 +2814,7 @@ userdel	q4::inwork; 10166,12777 10132,12941
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20110623.1015.348936.html',
-         'until' => 1315188000,
-         'text' => 'Sperrung des Bahnüberganges in der Lemkestraße: 02.09.2011 22:00 Uhr bis 05.09.2011 04:00 Uhr',
-         'from' => 1314907200,
-         'id' => 2237,
-         'data' => 'userdel	2::inwork 25149,12266 25109,12196 25072,12107
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'source_id' => 'LS/W-SG33-P/11/484',
