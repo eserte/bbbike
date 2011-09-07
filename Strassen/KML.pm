@@ -226,7 +226,6 @@ EOF
     <Placemark>
       <name>@{[ xml($name) ]}</name>
       <description>@{[ xml($dist_km) ]}</description>
-      <styleUrl>#@{[ xml($styles{$color}) ]}</styleUrl> 
 EOF
 	if ($is_first_route) {
 	    $is_first_route = 0;
@@ -247,6 +246,7 @@ EOF
 	    }
 	}
 	$kml_tmpl .= <<EOF;
+      <styleUrl>#@{[ xml($styles{$color}) ]}</styleUrl> 
       <LineString>
         <extrude>1</extrude>
         <tessellate>1</tessellate>
