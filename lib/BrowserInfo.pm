@@ -5,7 +5,7 @@
 # $Id: BrowserInfo.pm,v 1.53 2007/08/01 21:17:55 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999-2005 Slaven Rezic. All rights reserved.
+# Copyright (C) 1999-2005,2011 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -18,7 +18,7 @@ use CGI;
 use strict;
 use vars qw($VERSION);
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.53 $ =~ /(\d+)\.(\d+)/);
+$VERSION = 1.54;
 
 my $vert_scrollbar_space = 6; # most browsers need space for a vertical scrollbar
 
@@ -674,6 +674,9 @@ sub default_uaprof_dir {
 }
 
 package main;
+require FindBin;
+$FindBin::RealBin = $FindBin::RealBin if 0; # cease -w
+push @INC, $FindBin::RealBin; # so BrowserInfo::UAProf can be found
 my $bi = new BrowserInfo CGI->new;
 #$bi->emulate("wap");
 print $bi->header;
