@@ -121,8 +121,8 @@ Streitstr. (werden die vorhandenen Bordsteinradwege ersetzt)?	?::projected -3040
 Rüdersdorfer Str. bekommt Radspuren	?::projected 13066,11854 12891,12008
 #
 #: by: Tagesspiegel vom 2010-03-26
-#: last_checked: 2011-08-19
-#: next_check: 2011-09-20
+#: last_checked: 2011-09-06
+#: next_check: 2011-10-20
 Lindenstr.: Markierungsarbeiten für Radspuren haben begonnen	?::projected 9805,10791 9829,10830 9935,11067 9973,11150 10020,11262
 # 
 #: last_checked: 2011-07-13
@@ -146,6 +146,13 @@ Karl-Liebknecht-Str.: Fahrradangebotsstreifen wird erstellt	?::inwork 10437,1270
 #
 #: section ignorieren vvv
 #: section Straßen in Bau und Planung vvv
+# 
+#: next_check: 2011-09-08
+#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1109/nachricht4470.html
+#: by: http://www.berlin.de/ba-neukoelln/presse/archiv/20110902.0945.357618.html
+#: by: http://www.stadtumbau-berlin.de/uploads/media/luftbild_mit_wegeverlauf.jpg
+#: XXX Achtung: Sperrung in der Straße 12 habe ich schon aufgehoben. Straßenname bleibt beim alten?
+Grenzallee - Britzer Hafensteg: Qualität? Nachts beleuchtet? green1/2?	? 13881,6634 13847,6567 13863,6476 13992,6213
 # 
 #: last_checked: 2011-08-21
 #: next_check: 2011-11-15
@@ -207,7 +214,9 @@ An den Eldenaer Höfen: wo genau wird die Straße liegen? Qualität?	?::inwork 1443
 #: next_check: 2012-04-01
 Axel-Springer-Str.: Verbindung zum Spittelmarkt	?::inwork 10166,11592 10213,11728
 # 
-#XXX del --- wird wahrscheinlich nicht realisiert --- #: last_checked: 2011-05-20 --- #: next_check: 2011-06-20 --- Radstreifen in der Wilhelmstr.: wird der Rest noch realisiert?	?::inwork 9367,10641 9313,10789 9266,10936 9234,11056 9199,11166
+#: last_checked: 2011-05-20
+#: next_check: 2011-06-20
+Radstreifen in der Wilhelmstr.: wird der Rest noch realisiert?	?::inwork 9367,10641 9313,10789 9266,10936 9234,11056 9199,11166
 #
 #: last_checked: 2011-04-09 vvv
 #: next_check: 2011-07-15 vvv
@@ -300,7 +309,7 @@ Kletterrosenweg	?::projected 21382,149 21354,289
 #: next_check ^^^
 #: last_checked ^^^
 # 
-#: next_check: 2011-10-01
+#: next_check: 2011-12-01
 An der Barthschen Promenade: vielleicht wird die Straße in Zukunft sich hier befinden	?::projected 8954,8914 8814,8917
 # 
 #XXX del --- nein, es sieht so aus, als ob es bei den Busspuren bleibt --- #: last_checked: 2011-04-19 --- #: next_check: 2011-06-01 --- Karl-Liebknecht-Str.: Radstreifen nach den Bauarbeiten?	?::inwork 10920,13139 11015,13264 11021,13271 11027,13279 11080,13350 11092,13366
@@ -3797,3 +3806,5 @@ Vogelsang - Hammelspring: gibt es hier mittlerweile einen Radweg?	? 7983,69794 7
 #: XXX eventuell unbefestigt?
 Lanker Str.: Qualität im nördlichen Abschnitt?	? 15347,23211 15387,23310 15428,23413 15475,23532 15527,23609
 Darßer Str. - Malchower See: Qualität? Nachts beleuchtet?	? 15515,17971 15825,18385 15972,18545
+#: XXX genaue Lage erfassen, Rampen, etc.
+Havelbrücke: Qualität? Nachts beleuchtet?	? -3197,13899 -3445,14033
