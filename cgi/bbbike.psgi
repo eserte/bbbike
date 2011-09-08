@@ -2,16 +2,17 @@
 
 use strict;
 use warnings;
+use FindBin;
 
 use Plack::Builder;
 use Plack::Middleware::Static;
 use Plack::App::WrapCGI;
 
-use Cwd 'cwd';
+use Cwd 'cwd', 'realpath';
 use File::Basename 'dirname';
-use File::Spec::Functions 'catfile', 'catpath', 'splitpath';
+use File::Spec::Functions 'catfile', 'catpath';
 
-my $root = (splitpath(catfile(dirname(cwd()), __FILE__)))[1];
+my $root = dirname(realpath($FindBin::RealBin));
 my $cgidir = catpath $root, 'cgi';
 
 builder {
@@ -70,6 +71,14 @@ bbbike.psgi - Plack adapter for BBBike
 
 If running under C<bbbike.psgi> with defaults, then BBBike is
 available at L<http://localhost:5000/bbbike/cgi/bbbike.cgi>.
+
+=head1 PREREQUISITES
+
+Plack 0.9981 (at least 0.9941 does not work)
+
+CGI::Emulate::PSGI
+
+CGI::Compile
 
 =head1 SEE ALSO
 
