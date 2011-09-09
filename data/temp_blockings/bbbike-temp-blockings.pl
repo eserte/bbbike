@@ -18243,7 +18243,7 @@ EOF
 	2::inwork 7725,8033 7793,8043 7834,8085 7859,8252 7893,8327 7942,8380 8078,8772
 EOF
      },
-     { from  => 1309471200, # 1284091200, # 2010-09-10 06:00 # zweiter Termin im Jahr!
+     { from  => 1309471200, # 1284091200, # 2010-09-10 06:00 # zweiter Termin im Jahr! # PERIODISCH!
        until => 1309730400, # 1284328740, # 2010-09-12 23:59
        text  => 'Rheinstraße (Friedenau): Veranstaltung, Straße vollständig gesperrt (2. und 3. Juli 2011) in beiden Richtungen zwischen Walther-Schreiber-Platz und Breslauer Platz',
        type  => 'gesperrt',
@@ -18251,7 +18251,7 @@ EOF
 userdel	2::temp 5370,6486 5424,6584 5533,6753 5654,6941 5817,7223
 EOF
      },
-     { from  => 1284091200, # 2010-09-10 06:00
+     { from  => 1284091200, # 2010-09-10 06:00 # PERIODISCH!
        until => 1284337800, # 2010-09-13 02:30
        text  => 'Bahnhofstraße (Lichtenrade): Veranstaltung, Straße vollständig gesperrt (bis ca. 13.09.10, 2 Uhr) in beiden Richtungen zwischen Goltzstr. und Steinstr. ',
        type  => 'handicap',
@@ -18260,7 +18260,7 @@ EOF
 userdel	q4::temp 10310,-2136 10453,-2133 10509,-2131 10631,-2130 10747,-2129 10983,-2116
 EOF
      },
-     { from  => 1284091200, # 2010-09-10 06:00
+     { from  => 1284091200, # 2010-09-10 06:00 # PERIODISCH!
        until => 1284336000, # 2010-09-13 02:00
        text  => 'Breite Straße (Pankow): Veranstaltung, Straße vollständig gesperrt (bis 13.09.10, 2 Uhr morgens) in beiden Richtungen zwischen Mühlenstr. und Berliner Str.',
        type  => 'handicap',
@@ -18269,7 +18269,7 @@ EOF
 userdel	q4::temp 10240,18193 10320,18197 10487,18270 10660,18345 10680,18380 10609,18384 10567,18366 10502,18338 10463,18321 10281,18241
 EOF
      },
-     { from  => 1315432800, # 1284001200, # 2010-09-09 05:00
+     { from  => 1315432800, # 1284001200, # 2010-09-09 05:00 # PERIODISCH!
        until => 1315778400, # 1284332400, # 2010-09-13 01:00
        text  => 'Turmstraße (Moabit): Veranstaltung, Straße vollständig gesperrt (9. bis 11. September 2011) in beiden Richtungen zwischen Stromstr. und Waldstr.',
        type  => 'gesperrt',
@@ -18956,15 +18956,15 @@ EOF
 userdel	2::temp 9990,-8867 10115,-8276
 EOF
      },
-     { from  => 1315519200, # 2011-09-09 00:00
+     { from  => 1315519200, # 2011-09-09 00:00 # PERIODISCH!
        until => 1315778399, # 2011-09-11 23:59
        text  => 'Seifenkistenrennen auf dem Kaiserdamm zwischen Theodor-Heuss-Platz und Königin-Elisabeth-Straße, 10./11.09.2011',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::temp 2109,11441 1960,11426 1834,11408 1625,11380 1574,11379
+userdel	1::temp 1574,11379 1625,11380 1834,11408 1960,11426 2109,11441
 EOF
      },
-     { from  => 1312581600, # 1186214400, # 2007-08-04 10:00 zweiter Termin im Sommer
+     { from  => 1312581600, # 1186214400, # 2007-08-04 10:00 zweiter Termin im Sommer # PERIODISCH!
        until => 1312754400, # 1186344000, # 2007-08-05 22:00
        text  => 'Open Air Gallery am 7. August 2011 auf der Oberbaumbrücke ',
        type  => 'gesperrt',
@@ -19671,6 +19671,33 @@ EOF
        source_id => 'IM_017752',
        data  => <<EOF,
 userdel	q4::temp 3132,10499 3111,10116
+EOF
+     },
+     { from  => 1315465200, # 2011-09-08 09:00
+       until => 1315792800, # 2011-09-12 04:00
+       text  => 'Potsdam: B2: Nesselgrundbrücke zwischen Michendorf und Potsdam, Vollsperrung der Brücke vom 09.09.11, 9:00 - 12.09.11, 04:00 Uhr',
+       type  => 'gesperrt',
+       source_id => 'LS/W-SG33-P/11/523',
+       data  => <<EOF,
+userdel	2::inwork -13687,-4949 -13723,-6401
+EOF
+     },
+     { from  => 1315519200, # 2011-09-09 00:00
+       until => 1315778400, # 2011-09-12 00:00
+       text  => 'Breite Str. (Pankow) in beiden Richtungen zwischen Mühlenstr. und Ossietzkystr. ab: 10.09.2011 06 Uhr, Veranstaltung, Straße vollständig gesperrt (bis 11.09.2011 nachts) ',
+       type  => 'gesperrt',
+       source_id => 'IM_017803',
+       data  => <<EOF,
+userdel	2::temp 10609,18384 10567,18366 10502,18338 10463,18321 10281,18241 10240,18193 10320,18197 10487,18270 10660,18345
+EOF
+     },
+     { from  => 1315040400, # 2011-09-03 11:00
+       until => 1338386400, # 2012-05-30 16:00
+       text  => 'Lahnstr. (Neukölln): Baustelle, Fahrtrichtung gesperrt Richtung Neuköllnische Allee zwischen Karl-Marx-Str. und Naumburger Str., 04.09.2011 11:00 Uhr bis 30.05.2012 16:00 Uhr ',
+       type  => 'handicap',
+       source_id => 'IM_017750',
+       data  => <<EOF,
+userdel	q4::inwork; 13236,6489 13455,6559 13520,6583
 EOF
      },
     );

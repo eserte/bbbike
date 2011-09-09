@@ -147,12 +147,9 @@ Karl-Liebknecht-Str.: Fahrradangebotsstreifen wird erstellt	?::inwork 10437,1270
 #: section ignorieren vvv
 #: section Straßen in Bau und Planung vvv
 # 
-#: next_check: 2011-09-08
-#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1109/nachricht4470.html
-#: by: http://www.berlin.de/ba-neukoelln/presse/archiv/20110902.0945.357618.html
-#: by: http://www.stadtumbau-berlin.de/uploads/media/luftbild_mit_wegeverlauf.jpg
-#: XXX Achtung: Sperrung in der Straße 12 habe ich schon aufgehoben. Straßenname bleibt beim alten?
-Grenzallee - Britzer Hafensteg: Qualität? Nachts beleuchtet? green1/2?	? 13881,6634 13847,6567 13863,6476 13992,6213
+#: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20110908.0920.357891.html
+#: next_check: 2011-11-30
+Mierendorffplatz: asphaltiert? Gibt es hier einen Zebrastreifen?	?::inwork 3542,13063 3559,13177
 # 
 #: last_checked: 2011-08-21
 #: next_check: 2011-11-15
@@ -510,6 +507,8 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 # Das heißt diese Strecken werden nicht bei einer erweiterten Suche aufgenommen
 # und dem CGI-Benutzer auch nicht präsentiert.
 # 
+Buchstr.: Konsequenzen hier? Vielleicht gesperrte Durchfahrt für Autos?	? 6599,14735 6527,14810
+# 
 Groß-Berliner Damm/Sterndamm: genaue Ausschilderung prüfen, insbesondere an der Kreuzung Sterndamm/Südostallee!	? 17705,5223 17645,5328
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/37re.pdf/file?y=2011
@@ -670,8 +669,7 @@ Reinickendorfer Route 5, wo geht es weiter?	? 6558,18947 6442,18839
 #: by: http://www.berlin.de/ba-spandau/presse/archiv/20081022.1525.112277.html
 #: XXX_outdoor:
 Radweg durch den Münsinger Park: genaue Wegführung?	? -3624,14113 -3656,14272 -3700,14375 -3769,14429
-#: by: http://www.berlin.de/ba-neukoelln/presse/archiv/20080519.1325.100767.html
-Schönefelder Str.: Einbahnstraßenregelung nur für Autos: wo genau, in welche Richtung?	? 17222,-606 17222,-580 17222,-560 17222,-426 17199,-196 17193,-109
+#XXX del --- #: by: http://www.berlin.de/ba-neukoelln/presse/archiv/20080519.1325.100767.html --- aufgehoben --- #: by: http://www.berlin.de/ba-neukoelln/presse/archiv/20110908.1420.357944.html --- Schönefelder Str.: Einbahnstraßenregelung nur für Autos: wo genau, in welche Richtung?	? 17222,-606 17222,-580 17222,-560 17222,-426 17199,-196 17193,-109
 #: XXX ein anonymer bbbikegooglemaps-Kommentar --- aber auf dem Luftbild sieht die Kreuzung ganz normal aus?!
 Kreuzungsüberquerung umständlich?	? 26453,-12128
 ## by: http://www.stadtentwicklung.berlin.de/verkehr/radverkehrsanlagen/de/hellersdorf/route.shtml: Marx-Engels-Forum: wird die RR8 hier durchgeführt? wo genau? -> Nein, keine Ausschilderung zu sehen; alle Radrouten werden an der Spandauer Str. nach SE geführt	? 10300,12587 10355,12551 10411,12471 10596,12517
@@ -2763,9 +2761,15 @@ Ahlbeerensteig: Qualität?	? -7559,14379 -7553,14518 -7550,14579
 Christrosensteig: Qualität?	? -7664,14389 -7663,14532
 Immergrünsteig: Qualität?	? -7757,14606 -7750,14667 -7715,14924 -7700,15009
 Hahnenfußpfad: Qualität?	? -7654,14657 -7629,14878 -7624,14910 -7609,15007 -7602,15059
-Feigensteig: Qualität?	? -7550,14579 -7549,14645 -7528,14863 -7523,14969 -7521,15045
-Orangensteig: Qualität?	? -7521,15045 -7511,15160
+#: XXX wo genau ist die Grenze zwischen Feigen- und Orangensteig
+Feigensteig: Qualität?	? -7550,14579 -7549,14645 -7528,14863 -7523,14969
+#: XXX wird evtl. auch mit einer bituminösen Befestigung versehen, siehe unten
+Orangensteig: Qualität?	? -7523,14969 -7521,15045 -7511,15160
+#: XXX wird mit einer bituminösen Befestigung versehen, voraussichtlich Mitte Oktober 2011 fertig
+#: by: http://www.berlin.de/ba-spandau/presse/archiv/20110908.0850.357886.html
+#: next_check: 2011-10-15
 Narzissenpfad: Qualität?	? -7387,14951 -7523,14969
+Fortsetzung des Narzissenpfads: Qualität? Straßenname?	? -7523,14969 -7574,14977 -7609,15007
 Quittensteig: Qualität?	? -7634,15064 -7613,15192
 #: XXX: str_cont_ausnahme-Eintrag
 Reckeweg: Qualität?	? -5723,14939 -5845,14955 -6006,14923 -6361,15054 -6467,15109 -6841,15212
@@ -3808,3 +3812,7 @@ Lanker Str.: Qualität im nördlichen Abschnitt?	? 15347,23211 15387,23310 15428,2
 Darßer Str. - Malchower See: Qualität? Nachts beleuchtet?	? 15515,17971 15825,18385 15972,18545
 #: XXX genaue Lage erfassen, Rampen, etc.
 Havelbrücke: Qualität? Nachts beleuchtet?	? -3197,13899 -3445,14033
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/39re.pdf/file?y=2011
+#: XXX Privatstraße, fehlt in Berlin.coords.data
+Ückeritzer Ring: Qualität? Wo genau verläuft die Straße?	? 17271,19178 17301,19300 17403,19327 17436,19272
+Weg durch Grünanlage: Qualität? Beleuchtet?	? 11456,6103 11283,6082 11111,6016

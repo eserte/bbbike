@@ -2704,7 +2704,7 @@ userdel	q4::inwork 425,8766 490,8716
          'text' => 'Seifenkistenrennen auf dem Kaiserdamm zwischen Theodor-Heuss-Platz und Königin-Elisabeth-Straße, 10./11.09.2011',
          'from' => 1315519200,
          'id' => 2205,
-         'data' => 'userdel	2::temp 2109,11441 1960,11426 1834,11408 1625,11380 1574,11379
+         'data' => 'userdel	1::temp 1574,11379 1625,11380 1834,11408 1960,11426 2109,11441
 ',
          'type' => 'gesperrt'
        },
@@ -2982,6 +2982,37 @@ userdel	q4::inwork 2295,20358 2362,20218 2402,20126
          'data' => 'userdel	2::inwork -5575,69050 -5511,69122 -5146,69565
 ',
          'type' => 'gesperrt'
+       },
+       undef,
+       {
+         'source_id' => 'LS/W-SG33-P/11/523',
+         'until' => 1315792800,
+         'text' => 'Potsdam: B2: Nesselgrundbrücke zwischen Michendorf und Potsdam, Vollsperrung der Brücke vom 09.09.11, 9:00 - 12.09.11, 04:00 Uhr',
+         'from' => 1315465200,
+         'id' => 2280,
+         'data' => 'userdel	2::inwork -13687,-4949 -13723,-6401
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_017803',
+         'until' => 1315778400,
+         'text' => 'Breite Str. (Pankow) in beiden Richtungen zwischen Mühlenstr. und Ossietzkystr. ab: 10.09.2011 06 Uhr, Veranstaltung, Straße vollständig gesperrt (bis 11.09.2011 nachts) ',
+         'from' => 1315519200,
+         'id' => 2281,
+         'data' => 'userdel	2::temp 10609,18384 10567,18366 10502,18338 10463,18321 10281,18241 10240,18193 10320,18197 10487,18270 10660,18345
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_017750',
+         'until' => 1338386400,
+         'text' => 'Lahnstr. (Neukölln): Baustelle, Fahrtrichtung gesperrt Richtung Neuköllnische Allee zwischen Karl-Marx-Str. und Naumburger Str., 04.09.2011 11:00 Uhr bis 30.05.2012 16:00 Uhr ',
+         'from' => 1315040400,
+         'id' => 2282,
+         'data' => 'userdel	q4::inwork; 13236,6489 13455,6559 13520,6583
+',
+         'type' => 'handicap'
        }
      
 );
