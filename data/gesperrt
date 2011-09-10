@@ -484,7 +484,7 @@ Bernhard-Bästlein-Str.	1 15595,14041 15593,13768
 (Fredersdorfer Str. - Hildegard-Jadamowitz-Str.)	1 12908,12280 12883,12118 12893,12077 12923,12043
 Washingtonplatz	1s 8106,13130 7937,13126
 (Vorfahrt HdKdW)	1 7627,12380 7654,12464 7687,12477 7778,12470 7813,12427 7821,12367
-Pfarrer-Lütkehaus-Platz	1 10220,-2137 10231,-2159 10318,-2156
+Pfarrer-Lütkehaus-Platz	1 10228,-2136 10231,-2159
 Radebeuler Str.	1 19067,13818 19025,14037
 Beilsteiner Str.	1 18749,12413 18800,12838 18832,13099 18852,13269
 Am Rosengarten	2 18707,12225 18834,12228 18867,12265
@@ -656,6 +656,8 @@ Kreisverkehr Brebacher Weg	1 21581,12182 21570,12191 21575,12212 21589,12217 216
 Hirteplatz: Kreisverkehr	1 23766,5281 23775,5271 23775,5258 23765,5248 23751,5248 23744,5262 23743,5268 23746,5276 23756,5280 23766,5281
 Löcknitzstr.	1 26496,5047 26612,5051
 Brösener Str.	1 26247,6228 26284,6130 26282,6033
+Grenzweg	1 9456,-1271 9493,-1269 9503,-1302 9496,-1327 9457,-1329
+Alt-Lichtenrade	1 10782,-24 10835,-145
 Am Neuen Garten	1 -12166,1384 -12212,1201 -12276,831 -12302,718
 Am Neuen Garten	1 -12332,585 -12582,127
 Hochstraße	3nocross::ignrte -11399,-1339 -11461,-1424 -11540,-1543
@@ -1765,6 +1767,9 @@ Fürstenwalder Damm -> Ahornweg: Straßenbahntrasse	3::igndisp 23822,5403 23728,54
 Ahornweg -> Fürstenwalder Damm: Straßenbahntrasse	3::igndisp 23691,5368 23728,5446 23660,5477
 Hoher Weg -> Fürstenwalder Damm: Straßenbahntrasse	3::igndisp 23766,5281 23822,5403 23728,5446
 Fürstenwalder Damm -> Hoher Weg: Straßenbahntrasse	3::igndisp 23851,5389 23822,5403 23766,5281
+Mittelstreifen	3nocross::ignrte 10349,2188 10431,2258 10504,2321
+Lienzer Pfad -> Tauernallee: Mittelstreifen	3::igndisp 10444,2234 10431,2258 10349,2188
+Tauernallee -> Lienzer Pfad: Mittelstreifen	3::igndisp 10504,2321 10431,2258 10444,2234
 tragen (16 Stufen)	0:25:-232 22814,4505
 tragen (19 Stufen)	0:30:86 23930,6013
 tragen (16 Stufen)	0:25:-164 23948,6054
@@ -1939,6 +1944,7 @@ tragen (Treppe, ca. 20 Stufen)	0:25:-108 19163,14981
 tragen (Treppe, ca. 20 Stufen)	0:25:-12 19160,14935
 tragen (Treppe)	0:30:70 89344,-5795
 tragen, langgezogene Stufen (13 Stufen)	0:25:-168 20704,1383
+Schranke	BNP:1:-142:trailer=3 21514,11796
 Drängelgitter	BNP:3:-181:trailer=10 8357,9598
 Schranke	BNP:1:-38:trailer=3 17028,23968
 Schranke (lichte Breite ca. 85cm, weitere Umfahrung möglich)	BNP:2:-54:trailer=10 16339,22199

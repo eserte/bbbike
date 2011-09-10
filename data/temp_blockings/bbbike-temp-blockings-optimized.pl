@@ -7,7 +7,7 @@ push @temp_blocking,
          'from' => 1315519200,
          'id' => 31,
          'type' => 'gesperrt',
-         'data' => 'userdel	2 10453,-2133 10509,-2131 10631,-2130 10747,-2129
+         'data' => 'userdel	2 10310,-2136 10453,-2133 10509,-2131 10631,-2130 10747,-2129
 '
        },
        undef,
@@ -2165,15 +2165,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        undef,
-       {
-         'until' => 1315605540,
-         'text' => 'Preußenallee (Charlottenburg) in beiden Richtungen zwischen Marathonallee und Heerstr. Veranstaltung (Herbstmarkt), Straße vollständig gesperrt (8. und 9. September 2011) ',
-         'from' => 1315346400,
-         'id' => 1910,
-         'data' => 'userdel	2::temp 585,11256 551,11462 563,11601 572,11698 585,11830 596,11951
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2878,16 +2870,7 @@ userdel	q4::inwork 2295,20358 2362,20218 2402,20126
        },
        undef,
        undef,
-       {
-         'source_id' => '116501481',
-         'until' => 1315605600,
-         'text' => 'Oranienburg: B273: Kampfmitteluntersuchung OL Oranienburg, 01.08.2011 bis 09.09.2011 ',
-         'from' => 1313269753,
-         'id' => 2256,
-         'data' => 'userdel	2::inwork -1887,38134 -2179,38179
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3013,6 +2996,18 @@ userdel	q4::inwork 2295,20358 2362,20218 2402,20126
          'data' => 'userdel	q4::inwork; 13236,6489 13455,6559 13520,6583
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => 1356994800,
+         'text' => 'Jonasstr./Karl-Marx-Str.: Abbiegen nicht möglich (bzw. nur auf dem Gehweg)',
+         'from' => undef,
+         'id' => 2283,
+         'data' => 'userdel	3 12925,7425 13015,7440 13027,7368
+userdel	3 13027,7368 13015,7440 12925,7425
+userdel	3 12925,7425 13015,7440 12992,7545
+userdel	3 12992,7545 13015,7440 12925,7425
+',
+         'type' => 'gesperrt'
        }
      
 );

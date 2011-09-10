@@ -58,7 +58,7 @@ Kremmen - Fehrbellin: OK	Q0 -16160,38503 -16858,37991 -17114,37670 -18768,37659 
 Fehrbellin - Neuruppin: OK	Q0 -33790,44573 -33807,44932 -33506,45278 -32778,47235 -33036,47338 -32995,48857 -33107,50053 -33002,50632 -32597,51254 -31915,52627 -31766,53120 -31767,53525 -31706,53974 -31532,54747 -31514,55283
 Neuruppin - Wuthenow - Gnewikow - Wustrau-Altfriesack: teilweise gut, teilweise mäßiges Kopfsteinpflaster	Q2 -29902,57202 -29816,57117 -29490,56714 -29243,56187 -29198,55801 -29109,55374 -28677,55014 -28288,54212 -28911,54055 -29276,53427 -29210,52915 -28736,52387 -28368,51517 -28001,50966 -27421,50349 -27196,50015 -27035,49829 -25968,49631 -25719,49500 -25060,48842
 Kleinziethen: Kopfsteinpflaster	Q2 13373,-3234 13506,-2809 13540,-2681 13537,-2608
-# XXXdel: das ist wahrscheinlich Geschichte: Großziethen: Kopfsteinpflaster nur Richtung Süden	Q2; 12984,1011 13090,205 13165,-34 13176,-161 13225,-681 13230,-712 13309,-1268
+# XXXdel: das ist wahrscheinlich Geschichte: Großziethen: Kopfsteinpflaster nur Richtung Süden	Q2; 12984,1011 13090,205 13165,-34 13176,-161 13215,-570 13225,-681 13230,-712 13300,-1252
 Brusendorf: schlechtes Kopfsteinpflaster	Q3 18197,-10627 17611,-10624 17554,-10669
 Mittenwalde: relativ glattes Kopfsteinpflaster	Q2 19893,-15274 19878,-15336 19943,-15530 20056,-15810 20238,-16009
 #: by: rjoop:
@@ -826,7 +826,7 @@ Wartenberger Str.: sehr guter Asphalt	Q0+ 18597,20898 18596,20965 18293,21340 18
 #XXX del (ex. nicht mehr wegen BBI)	Q0 16251,-6520 16190,-6406 15987,-6248 15889,-5898
 	Q0 15889,-5898 15867,-5823 15771,-5575 15568,-5323 15355,-5280 15477,-4765 15493,-4693 15297,-4462 15053,-4328 14993,-4196 15175,-3731
 	Q0 15175,-3731 14878,-3602 14529,-3454 14137,-3290 13709,-2931 13506,-2809
-	Q0 13537,-2608 13502,-2473 13321,-1778 13309,-1268
+	Q0 13537,-2608 13502,-2473 13321,-1778 13300,-1252
 	Q0 23485,-22730 23238,-22111 23408,-21312 23356,-20982 22928,-20347 22599,-19785 22476,-19219 22338,-19081 22324,-18950 22226,-18793 21970,-18337 21828,-18016 21813,-17700 21811,-17649 21820,-17524 21886,-17280
 	Q0 20161,-16153 20181,-16040 20238,-16009 20470,-15970 20901,-16071 21325,-16111 21605,-16054 22543,-15510 22865,-15325 23123,-14619 23346,-14193 23703,-14058 23723,-13927 23872,-13855 23979,-13959 24103,-13925 24843,-13725
 	Q0 -8116,-5221 -8118,-5246 -8057,-5350 -7722,-5701 -7661,-5767 -7534,-5904 -7506,-5936 -7479,-5972 -7477,-6033 -7362,-6095 -6516,-6520 -6300,-6733 -6043,-7395 -5673,-8130 -5271,-8290 -4971,-8420 -4878,-8656 -4799,-8889 -4649,-8996 -4422,-9151 -4050,-9464 -3618,-9791 -2969,-9852
@@ -1692,7 +1692,6 @@ Pätz (Groß Köriser Str.): Verbundsteinpflaster	Q1 28540,-19744 28514,-20071 2850
 Pätz (Groß Köriser Str.): Asphalt	Q0 28540,-19744 28615,-19431
 Zeesen - Königs Wusterhausen: holpriger Waldweg, teilweise sehr sandig	Q3 26889,-12953 26825,-12765 26797,-12589 26814,-12271
 Postenweg Schönefeld: guter Beton	Q0 17234,-685 16205,-969 15796,-1112 15801,-1168
-Schönefelder Weg: Feldweg	Q2 15118,-970 15801,-1168 16074,-1240
 Rudower Str.: Kleinteiliges, unebenes Kopfsteinpflaster	Q2; 16205,-969 16074,-1240 15933,-1592 15289,-2873
 Rudower Str.: Kopfsteinpflaster, aber schmale asphaltierte Bankette	Q0; 15289,-2873 15933,-1592 16074,-1240 16205,-969
 Rudower Str.: Asphalt	Q0 15289,-2873 14977,-3505 14878,-3602
@@ -2359,6 +2358,15 @@ Fichtestr.: Kopfsteinpflaster	Q2 24870,8342 24974,8486 25147,8731
 Kantstr.: Kopfsteinpflaster	Q2 24871,7931 24953,8152 25119,8379
 Köpenicker Allee (Waldesruh): Asphalt	Q0 25047,8086 24923,7903 24910,7896
 (Radweg BU): Asphalt	Q0 17964,26823 18133,26914
+Am Langen Grund (Großziethen): Verbundsteinpflaster	Q1+ 12647,-1187 12652,-1142 12629,-1134 12633,-1095 12622,-1089 12629,-1046
+Am Langen Grund (Großziethen): Verbundsteinpflaster	Q1+ 12703,-1057 12629,-1046 12556,-1033 12517,-1042
+Dorfstr.: Kopfsteinpflaster	Q2 13469,-1167 13750,-992 13693,-949
+Schönefelder Weg: Asphalt	Q0 14015,-651 14032,-664 14137,-651
+#: note: auch landwirtschaftlich genutzt
+Schönefelder Weg: Verbundsteinpflaster	Q1 14137,-651 14318,-632 14424,-705 14788,-849 14843,-859 15045,-941 15118,-970 15801,-1168 16074,-1240
+Friedensweg: Asphalt	Q0 12975,-1244 12804,-735
+Selchower Grund: Asphalt	Q0 12507,-1166 12503,-1221
+Selchower Grund: Asphalt	Q0 12359,-1211 12503,-1221 12551,-1228
 ######################### User Contributions #################################
 #: by: Aaron Schaar: vvv
 Hermannswerder: guter Asphalt	Q0 -13718,-2991 -14301,-2871 -14577,-3068 -14740,-3262
@@ -2488,7 +2496,7 @@ Hannemannstr. (Teltow): Asphalt	Q0 2795,471 2890,313 2947,220 3137,-67 3315,-360
 #: by: anonymous:
 Handelshof (Potsdam): Asphalt	Q0 -9205,-5580 -9583,-5366
 #: by: Stefanie (Klotz)
-Ahornweg (Großziethen): Beton	Q0 13225,-681 13091,-738 13042,-615
+Ahornweg (Großziethen): Beton	Q0 13225,-681 13091,-738 13066,-669
 # 
 #: by: Robert Joop: vvv
 Prenden - Sophienstädt - Marienwerder: Asphalt	Q0 20061,42807 20109,42889
@@ -2969,7 +2977,7 @@ Ginsterheide: Betonplatten, nicht die beste Qualität	Q1 -877,1209 -905,1395 -918
 Rote-Kreuz-Str.: Asphalt	Q0 -8142,-1909 -8173,-2151
 #: by: Roland Miseler:
 Mittelweg (Amalienfelde): mäßiger fester Sandweg	Q2 -13513,36825 -13357,37176 -13219,37477 -13098,37745
-Rudow - Kleinziethen: unbefestigter Feldweg, nach Regenfällen oftmals sehr matschig	Q2 15655,-245 15118,-970
+Rudow - Kleinziethen: unbefestigter Feldweg, nach Regenfällen oftmals sehr matschig	Q2 15655,-245 15636,-269 15118,-970
 #: by: anonymous:
 #: add_fragezeichen: Wo genau sind die Kopfsteinpflaster- und Sandwegabschnitte?
 Heckmannstr.: Kopfsteinpflaster und teilweise Sandweg	Q2 -11853,16437 -11760,16401 -11662,16363 -11581,16330 -11497,16296 -11415,16263 -11326,16228 -11160,16162 -10962,16143 -10840,16133
@@ -3612,7 +3620,8 @@ In der Aue: Kopfsteinpflaster	Q2 -8189,-2569 -8107,-2600 -8099,-2590 -8018,-2585
 Im Blumenhag: Asphalt	Q0 21117,29968 21110,30037 21481,30539 21646,30961
 #: by: Nadine (h.nadineheinz):
 #: note anonymous meinte auch "q2, enge Straße", ignoriert
-Friedhofsweg: guter Asphalt	Q0 13693,-949 13439,-741 13230,-712
+#: corrected_by: srt (Asphalt -> ...)
+Friedhofsweg: Verbundsteinpflaster	Q1+ 13693,-949 13439,-741 13230,-712
 #: by: osm (paved)
 Am Bahnhof: befestigt	Q0 72646,12808 72617,12199
 #: by: osm (cobblestone)

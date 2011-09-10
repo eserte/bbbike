@@ -229,10 +229,10 @@ Florastraße zwischen Grunowstraße und Berliner Straße, Baustelle, Straße in beid
        text  => 'Fürstenwalder Damm zwischen Bölschestraße und Hartlebenstraße Baustell stadtauswärts, Straße gesperrt, eine Umleitung ist eingerichtet, Dauer: 07.09.2003,04.00 Uhr bis 21.09.2003',
        type  => 'gesperrt',
      },
-     { from  => 1315519200, #1063339200, # 2003-09-12 06:00
+     { from  => 1315519200, #1063339200, # 2003-09-12 06:00 # PERIODISCH
        until => 1315778400, #1063576800, # 2003-09-15 00:00
        data  => <<EOF,
-userdel	2 10453,-2133 10509,-2131 10631,-2130 10747,-2129
+userdel	2 10310,-2136 10453,-2133 10509,-2131 10631,-2130 10747,-2129
 EOF
        text  => 'Bahnhofstraße, zwischen Goltzstraße und Steinstraße Winzerfest, vom 10.09.2011 bis 11.09.2011',
        type  => 'gesperrt',
@@ -1296,7 +1296,7 @@ EOF
        text  => 'L 75; (Karl-Marx-Straße); OD Großziethen, von Dorfstraße bis Friedhofsweg Straßenbauarbeiten Vollsperrung 24.05.2004-20.12.2004 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 13225,-681 13176,-161 13165,-34 13124,216 13165,-34 13176,-161 13225,-681 13230,-712 13309,-1268
+userdel	q4 13225,-681 13215,-570 13176,-161 13165,-34 13124,216 13165,-34 13176,-161 13215,-570 13225,-681 13230,-712 13300,-1252
 EOF
      },
      { from  => 1292626800, # PERIODISCH, Advents-Wochenenden! # früher: 1102654800, # 2004-12-10 06:00
@@ -2881,7 +2881,7 @@ EOF
        text  => 'L 75; (Karl-Marx-Str.); OD Großziethen Straßenbauarbeiten Vollsperrung 06.09.2005-30.11.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 13225,-681 13176,-161 13165,-34 13124,216 12984,1011
+userdel	2 13225,-681 13215,-570 13176,-161 13165,-34 13124,216 12984,1011
 EOF
      },
      { from  => 1128290400, # 2005-10-03 00:00
@@ -4034,7 +4034,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_003887',
        data  => <<EOF,
-userdel	q4 13225,-681 13176,-161 13165,-34 13124,216 12984,1011
+userdel	q4 13225,-681 13215,-570 13176,-161 13165,-34 13124,216 12984,1011
 EOF
      },
      { from  => 1143928800, # 2006-04-02 00:00
@@ -5679,7 +5679,7 @@ EOF
        text  => 'L 075 Karl-Marx-Str. OD Großziehten Straßenbauarbeiten Vollsperrung 24.11.2006-22.12.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 13225,-681 13176,-161 13165,-34 13124,216 12984,1011
+userdel	2 13225,-681 13215,-570 13176,-161 13165,-34 13124,216 12984,1011
 EOF
      },
      { from  => 1156629600, # 2006-08-27 00:00
@@ -19698,6 +19698,17 @@ EOF
        source_id => 'IM_017750',
        data  => <<EOF,
 userdel	q4::inwork; 13236,6489 13455,6559 13520,6583
+EOF
+     },
+     { from  => undef, # 
+       until => 1356994800, # 2013-01-01 00:00
+       text  => 'Jonasstr./Karl-Marx-Str.: Abbiegen nicht möglich (bzw. nur auf dem Gehweg)',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	3 12925,7425 13015,7440 13027,7368
+userdel	3 13027,7368 13015,7440 12925,7425
+userdel	3 12925,7425 13015,7440 12992,7545
+userdel	3 12992,7545 13015,7440 12925,7425
 EOF
      },
     );

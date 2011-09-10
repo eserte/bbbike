@@ -625,8 +625,8 @@ Bernhard-Bästlein-Str.	1 15595,14041 15593,13768
 Washingtonplatz	1s 8106,13130 7937,13126
 (Vorfahrt HdKdW)	1 7627,12380 7654,12464 7687,12477 7778,12470 7813,12427 7821,12367
 #: by: Bernhard Husch:
-#: XXX ein Eintrag war ohne, einer mit Einbahnstraße. osm hat keine Einbahnstraße eingezeichnet -> nachgefragt
-Pfarrer-Lütkehaus-Platz	1 10220,-2137 10231,-2159 10318,-2156
+#: note: Einfahrt verboten
+Pfarrer-Lütkehaus-Platz	1 10228,-2136 10231,-2159
 Radebeuler Str.	1 19067,13818 19025,14037
 Beilsteiner Str.	1 18749,12413 18800,12838 18832,13099 18852,13269
 #: note: durch ein Tor versperrt; es existiert aber anscheinend parallel dazu ein Trampelpfad
@@ -852,6 +852,8 @@ Kreisverkehr Brebacher Weg	1 21581,12182 21570,12191 21575,12212 21589,12217 216
 Hirteplatz: Kreisverkehr	1 23766,5281 23775,5271 23775,5258 23765,5248 23751,5248 23744,5262 23743,5268 23746,5276 23756,5280 23766,5281
 Löcknitzstr.	1 26496,5047 26612,5051
 Brösener Str.	1 26247,6228 26284,6130 26282,6033
+Grenzweg	1 9456,-1271 9493,-1269 9503,-1302 9496,-1327 9457,-1329
+Alt-Lichtenrade	1 10782,-24 10835,-145
 ######################################################################
 #
 # Potsdam
@@ -1335,6 +1337,7 @@ Salvador-Allende-Str.: Mittelstreifen	3nocross 23404,5325 23403,5385 23402,5483
 #: last_checked: 2011-08-14
 #: next_check: 2013-01-01
 Fürstenwalder Damm: Straßenbahntrasse	3nocross 23660,5477 23728,5446 23822,5403 23851,5389
+Tauernallee: Mittelstreifen	3nocross 10349,2188 10431,2258 10504,2321
 #
 ####################################################################
 #
@@ -1578,6 +1581,8 @@ tragen, langgezogene Stufen (13 Stufen)	0:25 20704,1383
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+#: by: MG
+Schranke	BNP:1::trailer=3 21514,11796
 Drängelgitter	BNP:3::trailer=10 8357,9598
 Schranke	BNP:1::trailer=3 17028,23968
 Schranke (lichte Breite ca. 85cm, weitere Umfahrung möglich)	BNP:2::trailer=10 16339,22199
@@ -1951,10 +1956,8 @@ Radweg parallel zur Autobahn ist wegen Bauarbeiten am BAB gesperrt	2:inwork 5062
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1108/nachricht4438.html
 Rathausbrücke: gesperrt (Neubau), Fertigstellung und Verkehrsfreigabe im Frühjahr 2012	2:inwork 10362,12351 10422,12395
 # 
-#XXX del --- #: last_checked: 2011-02-27 --- #: next_check: 2011-05-15 --- Vicki-Baum-Str.: noch in Bau, gesperrt	2:inwork 15753,10353 15823,10300
-# 
-#: last_checked: 2011-08
-#: next_check: 2011-09-01
+#: last_checked: 2011-09-10
+#: next_check: 2011-11-15
 #: XXX abhängiger Eintrag in vorfahrt-orig!
 Kynaststraße: Bauarbeiten im südlichen Abschnitt	2:inwork 14652,10201 14724,10297 14766,10372 14795,10473 14805,10518
 # 

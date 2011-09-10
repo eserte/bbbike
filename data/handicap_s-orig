@@ -29,8 +29,8 @@ Invalidenstr. (Mitte): Baustelle, Richtung Alt-Moabit zwischen Gartenstr. und He
 # 
 #XXX del --- #: last_checked: 2011-05-20 --- Krausenstr.: Bauarbeiten an der Kreuzung Krausenstr./Charlottenstr	q3::inwork 9581,11523 9711,11543
 # 
-#: last_checked: 2011-08-20
-#: next_check: 2011-10-15
+#: last_checked: 2011-09-10
+#: next_check: 2011-11-15
 Alt-Stralau: Bauarbeiten an der Br¸cke, enge Durchfahrt	q3::inwork 14652,10201 14558,10264
 # 
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1010/nachricht4088.html
@@ -1046,6 +1046,10 @@ Achillesstr. - Strˆmannstr.: Fuﬂg‰nger, eng	q2 15945,23608 15932,23581
 Erekweg: enger Pfad	q3 16186,24108 16139,24162
 #: XXX_prog BS (am Gewanneweg)
 (Kurze-Enden-Weg - Gewanneweg): eng, Bordstein	q2 15278,23934 15321,23979
+Faulhornweg: Fuﬂg‰nger	q1 10383,2088 10322,2163
+Igelkolbensteig: eng	q2 15947,3572 16003,3652
+#: XXX_prog BS (2x)
+Melissenweg: Bordsteine	q2 16003,3652 16041,3718
 ######################### User Contributions #################################
 #: by: Michael Kiekbusch
 #: corrected_by: srt/policy (q4 -> q3-)
@@ -1725,7 +1729,8 @@ Schieritzstr.: enge Straﬂe	q1 12463,15774 12642,15668 12821,15565 12966,15478
 #: by: Max Janke 
 Siedlungsring (Karow): schlecht ¸beraschaubar	q1 16139,24162 16245,24159 16357,24093 16473,24045 16900,23884 16887,23860 16717,23845 16664,23845 16600,23881 16542,23954 16512,23979 16462,24012
 #: by: karsten (kasi):
-W¸rzburger Str.: enge Straﬂe	q1 11681,-1951 11886,-1930 11919,-1927 12082,-1908 12167,-1898 12216,-1891
+#: corrected_by: srt/policy (q1 -> q0-)
+W¸rzburger Str.: enge Straﬂe	q0- 11681,-1951 11886,-1930 11919,-1927 12082,-1908 12167,-1898 12216,-1891
 #: by: guenther (m...berlin): vvv
 # corrected_by: srt (removed): --- Hauptweg (Biesdorf): enger Weg	q2 20821,8438 20834,8694
 Hauptweg (Biesdorf): enger Weg	q2 20834,8694 20799,8965 20802,9297
@@ -1869,12 +1874,16 @@ Am Forstacker: enge Straﬂe	q1 -3676,17131 -3671,17202 -3648,17250 -3612,17280 -3
 #: by: David (dh):
 #: corrected_by: srt/policy (q2 -> q1)
 Brandenburgische Str. (Steglitz): enge Straﬂe	q1 6889,4334 6820,4347 6677,4384 6638,4394 6532,4422
+# 
 #: by: anonymous vvv
-Im Lesachtal: enge Straﬂe	q1 10349,2188 10428,2109 10466,2071 10549,2257
-Im Lesachtal: enge Straﬂe	q1 10617,2226 10549,2257
-Im Lesachtal: enge Straﬂe	q1 10549,2257 10526,2282
-Im Lesachtal: enge Straﬂe	q1 10526,2282 10504,2321
+#: corrected_by: srt/policy (q1 -> q0-) vvv
+Im Lesachtal: enge Straﬂe	q0- 10349,2188 10428,2109 10466,2071 10517,2183 10549,2257
+Im Lesachtal: enge Straﬂe	q0- 10617,2226 10559,2252 10549,2257
+Im Lesachtal: enge Straﬂe	q0- 10549,2257 10526,2282
+Im Lesachtal: enge Straﬂe	q0- 10526,2282 10504,2321
 #: by: ^^^
+#: by: ^^^
+# 
 #: by: anonymous
 Rotdornstr.: enge Straﬂe	q1 5139,7206 5141,7158 5121,7132 5085,7109
 #: by: Ines Junge:
@@ -1949,7 +1958,7 @@ Klemkepark - Kopenhagener Str./Freiheitsweg: Hunde	q1 7574,18874 7576,18837 7480
 #: by: Detlef Liebe: vvv
 Bosporusstr.: enge Straﬂe	q1 10363,4183 10455,4189 10505,4194 10601,4185 10724,4168
 Werfelstr.: enge Straﬂe	q1 10126,-834 9907,-812
-Simpsonweg: enge Straﬂe	q1 10082,-671 9937,-693 9913,-705 9899,-732 9907,-812 9884,-860
+Simpsonweg: enge Straﬂe	q1 10092,-669 9937,-693 9913,-705 9899,-732 9907,-812 9884,-860
 #: by: ^^^
 #: by: where_are_you_between:
 (Weg am Heidekampgraben - Kiefholzstr., entlang der S-Bahn): teilweise eng/un¸bersichtlich	q1 15388,7228 15422,7265 15468,7291 15579,7316 15609,7347
@@ -2062,7 +2071,8 @@ Schoelerpark: Fuﬂg‰nger, f¸r Radfahrer nicht freigegeben, ggfs. schieben	q3- 522
 Schoelerpark: Fuﬂg‰nger, f¸r Radfahrer nicht freigegeben, ggfs. schieben	q3- 5219,8635 5212,8602
 #: by: ^^^
 #: by: Markus (Graf):
-Homburgstr.: enge Straﬂe	q1 11077,-714 11106,-737 11278,-719 11477,-697 11666,-675 11808,-659
+#: corrected_by: srt/policy (q1 -> q0-)
+Homburgstr.: enge Straﬂe	q0- 11077,-714 11106,-737 11278,-719 11477,-697 11666,-675 11808,-659
 #: by: Jochen.Gollbach:
 Schwarzburger Str.: enge Straﬂe	q1 21719,17427 21709,17382 21677,17195 21665,17133 21488,17160
 #: by: anonymous

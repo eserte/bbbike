@@ -729,6 +729,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 8200,5510
 	X 8742,475
 	X 8736,337
+#: note: Radfahrer werden beim Rechtsabbiegen aus Alt-Rudow an der Ampel vorbei geführt
 	X 16315,1904
 	X 15301,3038
 	F 13594,5240
@@ -1533,10 +1534,11 @@ nur Richtung O	X 8142,7221
 	X 17879,-3
 	X 17384,775
 	X 17518,564
+#: note: am Wochenende ausgeschaltet (immer?)
 	F 16096,803
 	X 11791,834
 	X 11407,113
-	X 11162,-1273
+	X 11149,-1274
 	X 11054,-740
 	X 1345,184
 #XXX del	X 31447,3372
@@ -2769,6 +2771,8 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: note: ^^^
 ################################################################################
 # note: Ampeln elsewhere vvv
+	F 13642,-997
+	F 13885,-775
 	B 55825,-11622
 	B -17963,-7670
 	F 18911,27124
