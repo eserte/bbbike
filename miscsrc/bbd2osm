@@ -42,7 +42,7 @@ my $single_file_type;
 my $fragezeichen_file;
 my $ignore_missing;
 my $use_orig;
-my $optimize_for;
+my $optimize_for = '';
 my $shorten_for_garmin;
 my $quiet;
 my $debug;
