@@ -1016,7 +1016,7 @@ sub BBBikeHeavy::get_uncached_user_agent {
     eval { require LWP::UserAgent };
     return undef if $@;
     my $ua = LWP::UserAgent->new;
-    $ua->agent("$progname/$VERSION");
+    $ua->agent("$progname/$VERSION (LWP::UserAgent/$LWP::VERSION) ($^O)");
     $ua->timeout(30);
     $ua->env_proxy;
     if ($os eq 'win' && eval { require Win32Util; 1 }) {

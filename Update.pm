@@ -86,7 +86,6 @@ sub update_http {
 	require BBBikeHeavy;
 	$ua = BBBikeHeavy::get_uncached_user_agent();
 	die "Can't get default user agent" if !$ua;
-	$ua->agent("$main::progname/$main::VERSION (LWP::UserAgent/$LWP::VERSION) ($^O)");
 	$ua->timeout(180);
 ## sieperl does not have compress::zlib, also decoded_content is not available
 # 	if (eval { require Compress::Zlib; 1 }) {
