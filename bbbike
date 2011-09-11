@@ -126,7 +126,7 @@ BEGIN {
 	 'BBBikeHeavy'
 	 => [qw(start_followmouse stop_followmouse
 		string_eval_die load_plugins load_plugin layer_editor
-		getmap get_file_or_url get_user_agent delete_map
+		getmap get_file_or_url get_user_agent get_uncached_user_agent delete_map
 		pdf_export svg_export perlmod_install_advice
 		show_register save_register_routes load_register_routes
 		show_calories check_available_memory

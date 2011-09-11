@@ -1012,11 +1012,10 @@ sub BBBikeHeavy::get_file_or_url {
 }
 
 ### AutoLoad Sub
-sub BBBikeHeavy::get_user_agent {
-    return $ua if defined $ua;
+sub BBBikeHeavy::get_uncached_user_agent {
     eval { require LWP::UserAgent };
     return undef if $@;
-    $ua = LWP::UserAgent->new;
+    my $ua = LWP::UserAgent->new;
     $ua->agent("$progname/$VERSION");
     $ua->timeout(30);
     $ua->env_proxy;
@@ -1026,6 +1025,13 @@ sub BBBikeHeavy::get_user_agent {
     if ($proxy) {
 	$ua->proxy(['http','ftp'], $proxy);
     }
+    $ua;
+}
+
+### AutoLoad Sub
+sub BBBikeHeavy::get_user_agent {
+    return $ua if defined $ua;
+    $ua = BBBikeHeavy::get_uncached_user_agent();
     $ua;
 }
 
