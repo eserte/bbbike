@@ -97,6 +97,7 @@ sub update_http {
 	require Http;
 	Http->VERSION(3.15); # correct handling of Host: ...
 	$Http::user_agent = $Http::user_agent if 0; # peacify -w
+	$main::progname = $main::progname if 0; # peacify -w
 	$Http::user_agent = "$main::progname/$main::VERSION (Http/$Http::VERSION) ($^O)";
     }
     $main::c = $main::c; # peacify -w
