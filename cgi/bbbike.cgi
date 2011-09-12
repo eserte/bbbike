@@ -29,6 +29,10 @@ use vars qw(@extra_libs);
 BEGIN { delete $INC{"FindBin.pm"} } # causes warnings, maybe try FindBin->again if available?
 use FindBin;
 BEGIN {
+    if ($ENV{MOD_PERL} && $ENV{MOD_PERL} =~ m{mod_perl/2}) {
+	# Fix FindBin for ModPerl::Registry operation
+	($FindBin::RealBin = __FILE__) =~ s{/[^/]+$}{};
+    }
     {
 	# Achtung: evtl. ist auch ~/lib/ für GD.pm notwendig (z.B. CS)
 	@extra_libs =

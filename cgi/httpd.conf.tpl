@@ -1,8 +1,8 @@
 # Configuration for bbbike.cgi
 [%
-    IF CGI_TYPE == "Apache::Registry";
+    IF CGI_TYPE == "ModPerl::Registry" || CGI_TYPE == "Apache::Registry";
 ## XXX preloading modules is a bad idea unless
-## I get read of all Class::Struct usages...
+## I get rid of all Class::Struct usages...
 #        PROCESS preload_modules;
     END
 -%]
@@ -10,7 +10,7 @@
 [%
     SET cgiurls = [];
 
-    IF CGI_TYPE == "Apache::Registry";
+    IF CGI_TYPE == "ModPerl::Registry" || CGI_TYPE == "Apache::Registry";
         SET ScriptAlias = "Alias";
     ELSE;
         SET ScriptAlias = "ScriptAlias";
@@ -74,7 +74,20 @@ Alias [% ROOT_URL %]  [% ROOT_DIR %]
 </IfModule>
 
 [%
-    IF CGI_TYPE == "Apache::Registry";
+    IF CGI_TYPE == "ModPerl::Registry";
+-%]
+PerlModule ModPerl::Registry
+[%
+        FOR cgiurl = cgiurls
+-%]
+<Location [% cgiurl %]>
+    SetHandler perl-script
+    PerlResponseHandler ModPerl::Registry
+    Options +ExecCGI
+</Location>
+[%
+        END;
+    ELSIF CGI_TYPE == "Apache::Registry";
         FOR cgiurl = cgiurls
 -%]
 <Location [% cgiurl %]>

@@ -3,11 +3,15 @@ CGI_SCRIPTS=		bbbike.cgi bbbike.en.cgi bbbikegooglemap.cgi mapserver_address.cgi
 			wapbbbike.cgi bbbiketile.cgi bbbike-data.cgi bbbike-snapshot.cgi
 DEVEL_CGI_SCRIPTS=	bbbike2.cgi bbbike2.en.cgi bbbikegooglemap2.cgi bbbike-test.cgi bbbike-osm.cgi
 ROOT_URL?=		/bbbike
-# Set this to "cgi" or "Apache::Registry"
+# Set this to "cgi" or "ModPerl::Registry" or "Apache::Registry"
+# NOTE: currently everything else than "cgi" is not recommended and
+#       unlikely to run stable.
 CGI_TYPE?=		cgi
+REALPATH_CMD=		perl -MCwd=realpath -le 'print realpath shift'
 .ifndef ROOT_DIR
-ROOT_DIR!=		perl -MFindBin='$$RealBin' -MCwd=realpath -le 'print realpath("$$RealBin/..")'
+ROOT_DIR!=		$(REALPATH_CMD) ..
 .endif
+HTTPD_CONF?=		httpd.conf
 
 all:	rights symlinks
 	@echo "You may run $(MAKE) httpd.conf to create a default apache configuration for inclusion"
@@ -24,29 +28,29 @@ biokovo.conf:
 		CGI_TYPE=Apache::Registry \
 	    httpd.conf
 
-httpd.conf: httpd.conf.tpl Makefile
+$(HTTPD_CONF): httpd.conf.tpl Makefile
 	tpage --define ROOT_URL=$(ROOT_URL) \
 	      --define ROOT_DIR=$(ROOT_DIR) \
 	      --define CGI_SCRIPTS="$(CGI_SCRIPTS)" \
 	      --define DEVEL_CGI_SCRIPTS="$(DEVEL_CGI_SCRIPTS)" \
 	      --define CGI_TYPE="$(CGI_TYPE)" \
-	      httpd.conf.tpl > httpd.conf~
-	chmod 644 httpd.conf~
-	mv httpd.conf~ httpd.conf
+	      httpd.conf.tpl > $(HTTPD_CONF)~
+	chmod 644 $(HTTPD_CONF)~
+	mv $(HTTPD_CONF)~ $(HTTPD_CONF)
 	@echo
 	@if [ -d /usr/local/etc/apache22/Includes ] ; \
 	then \
 	    echo Please create a symlink; \
-	    echo "    ln -s ${.CURDIR}/httpd.conf /usr/local/etc/apache22/Includes/bbbike.conf"; \
+	    echo "    ln -s `$(REALPATH_CMD) $(HTTPD_CONF)` /usr/local/etc/apache22/Includes/bbbike.conf"; \
 	    echo and restart the Apache; \
 	elif [ -d /etc/apache2/sites-enabled ] ; \
 	then \
 	    echo Please create a symlink; \
-	    echo "    ln -s ${.CURDIR}/httpd.conf /etc/apache2/sites-enabled/bbbike.conf"; \
+	    echo "    ln -s `$(REALPATH_CMD) $(HTTPD_CONF)` /etc/apache2/sites-enabled/bbbike.conf"; \
 	    echo and restart the Apache; \
 	else \
 	    echo Please add; \
-	    echo "    Include ${.CURDIR}/httpd.conf"; \
+	    echo "    Include `$(REALPATH_CMD) $(HTTPD_CONF)`"; \
 	    echo to your Apache\'s httpd.conf and restart the Apache; \
 	fi
 	@echo
