@@ -63,7 +63,7 @@ usage: $0 [-v] [-cat category] [-catrx regexp]
        [-directive key=val|key~val [-directive ...]]
        [-special name] [-minarea ...km²] [-minlength ...km]
        [-preserveglobaldirectives] [-ignoreglobaldirectives]
-       [-inner file [-inner ...]] [-outer file [-outer ...]]
+       [-inner file [-inner ...]] [-outer file [-outer ...]] bbd ...
 
 section is a region marked with the "section" directive in a bbd file.
 
@@ -88,11 +88,25 @@ for my $directive_def (@directive_def) {
     }
 }
 
-my $datafile = shift || "-";
+my @datafiles = @ARGV;
+if (!@datafiles) {
+    @datafiles = '-';
+}
+my $s;
+if (@datafiles == 1) {
+    $s = Strassen->new($datafiles[0], UseLocalDirectives => 1, PreserveLineInfo => 1);
+} else {
+    require Strassen::MultiStrassen;
+    $s = MultiStrassen->new(map {
+	my $s = eval {
+	    Strassen->new($_, UseLocalDirectives => 1, PreserveLineInfo => 1);
+	};
+	warn $@ if $@;
+	defined $s ? $s : ();
+    } @datafiles);
+}
 
-my $s = Strassen->new($datafile, UseLocalDirectives => 1, PreserveLineInfo => 1);
 my $new_s = Strassen->new;
-
 local $Strassen::STRICT = 1;
 
 my(@inner_s, @outer_s);
@@ -122,7 +136,12 @@ my @errors;
 LOOP_STREETS: while(1) {
     my $r = $s->next;
     if (!$r->[1]) {
-	push @errors, "Empty coords array found in file " . $datafile . ", line " . $s->line . " (please check format of line!)";
+	if (@datafiles == 0) {
+	    push @errors, "Empty coords array found in file " . $datafiles[0] . ", line " . $s->line . " (please check format of line!)";
+	} else {
+	    # XXX which datafile exactly?
+	    push @errors, "Empty coords array found in any of the input files, line " . $s->line . " (please check format of line!)";
+	}
 	next;
     }
     last if !@{ $r->[1] };
@@ -270,7 +289,8 @@ sub special_directive_handler {
 sub end_directive_handler {
     my($type) = @_;
     require File::Basename;
-    $type_s{$type}->write("/tmp/" . $type . "_" . File::Basename::basename($datafile) . ".bbd");
+    # XXX support for MultiStrassen missing --- is it needed at all?
+    $type_s{$type}->write("/tmp/" . $type . "_" . File::Basename::basename($datafiles[0]) . ".bbd");
 }
 
 ######################################################################
@@ -391,7 +411,8 @@ sub special_fragezeichen {
 
 sub end_fragezeichen {
     require File::Basename;
-    $fragezeichen_s->write("/tmp/fragezeichen_" . File::Basename::basename($datafile) . ".bbd");
+    # XXX support for MultiStrassen missing --- is it needed at all?
+    $fragezeichen_s->write("/tmp/fragezeichen_" . File::Basename::basename($datafiles[0]) . ".bbd");
 }
 
 __END__
