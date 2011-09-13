@@ -199,6 +199,11 @@ sub look {
     my($self, $str, %args) = @_;
 
     my $file = $args{File} || $self->{File};
+    my %valid_cityparts;
+    if (defined $args{Citypart} && length $args{Citypart}) {
+	%valid_cityparts = map { (lc $_,1) } ref $args{Citypart} eq 'ARRAY' ? @{ $args{Citypart} } : $args{Citypart};
+    }
+
     my @res;
 
     # Windows usually does not have grep and agrep externally
@@ -259,6 +264,12 @@ sub look {
 	     $to_push[FILE_ZIP] eq "" ||
 	     !exists $res{$to_push[FILE_NAME]}->{$to_push[FILE_ZIP]})
 	   ) {
+	    # filter by citypart (Bezirk) or ZIP
+	    return if (keys %valid_cityparts &&
+		       !($valid_cityparts{lc $to_push[FILE_CITYPART]} ||
+			 $valid_cityparts{$to_push[FILE_ZIP]})
+		      );
+
 	    push @res, [@to_push];
 	    return if defined $args{Max} and $args{Max} < $#res;
 	    $res{$to_push[FILE_NAME]}->{$to_push[FILE_CITYPART]}++;
@@ -360,33 +371,6 @@ sub look {
 	    }
 	    close PLZ;
 	}
-    }
-
-    # filter by citypart (Bezirk) or ZIP
-    if (defined $args{Citypart}) {
-	my $rx;
-	if (ref $args{Citypart} eq 'ARRAY') {
-	    $rx = "^(?i:" . join("|", map {quotemeta($_)} @{ $args{Citypart} }) . ")";
-	} else {
-	    $rx = "^(?i:" . quotemeta($args{Citypart}) . ")";
-	}
-	my $need_utf8_upgrade = defined &utf8::is_utf8 && utf8::is_utf8($rx);
-	$rx = qr{$rx};
-	my @new_res;
-	foreach (@res) {
-	    my $citypart = $_->[LOOK_CITYPART];
-	    # This is needed for something which smells like a perl
-	    # bug, apparent from 5.8.8 over 5.10.1 to 5.11.4. If $rx
-	    # is utf8-flagged and contains a "ß", then the regexp does
-	    # not match. See the Gustav-Adolf-Str. (Weißensee) test in
-	    # plz.t
-	    utf8::upgrade($citypart) if $need_utf8_upgrade;
-	    if ($citypart =~ /$rx/ ||
-		$_->[$self->{FieldPLZ}] =~ /$rx/) {
-		push @new_res, $_;
-	    }
-	}
-	@res = @new_res;
     }
 
     @res;
