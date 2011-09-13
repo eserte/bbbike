@@ -1884,27 +1884,9 @@ userdel	q4::inwork 2295,20358 2362,20218 2402,20126
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => '116501441',
-         'until' => 1315857600,
-         'text' => 'Gransee: B96: Gleisbauarbeiten Bahnübergang bei Altlüdersdorf Vollsperrung ab 08.09.11 22:00 Uhr, 08.09.2011 22:00 Uhr bis 12.09.2011 22:00 Uhr ',
-         'from' => 1315425600,
-         'id' => 2278,
-         'data' => 'userdel	2::inwork -5575,69050 -5511,69122 -5146,69565
-',
-         'type' => 'gesperrt'
-       },
        undef,
-       {
-         'source_id' => 'LS/W-SG33-P/11/523',
-         'until' => 1315792800,
-         'text' => 'Potsdam: B2: Nesselgrundbrücke zwischen Michendorf und Potsdam, Vollsperrung der Brücke vom 09.09.11, 9:00 - 12.09.11, 04:00 Uhr',
-         'from' => 1315465200,
-         'id' => 2280,
-         'data' => 'userdel	2::inwork -13687,-4949 -13723,-6401
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        undef,
        {
          'source_id' => 'IM_017750',
