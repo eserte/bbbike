@@ -15,7 +15,7 @@ package Strassen::KML;
 
 use strict;
 use vars qw($VERSION $TEST_SET_NAMESPACE_DECL_URI_HACK);
-$VERSION = 1.12;
+$VERSION = 1.13;
 
 use base qw(Strassen);
 
@@ -66,15 +66,26 @@ sub _kmldoc2bbd {
 	$doc = $p->parse_string($xml);
 	$root = $doc->documentElement;
     }
-    my $coords = $root->findvalue('/kml//Placemark/LineString/coordinates'); # might be Document or Folder in between
-    my @c = map {
-	my($lon,$lat) = split /,/, $_;
-	join(",", longlat2xy($lon,$lat));
-    } grep { !/^\s+$/ } split ' ', $coords;
-
-    my $name = $args{name} || "Route"; # XXX get from /kml//name?
-    my $cat  = $args{cat}  || "X";
-    $self->push([$name, [@c], $cat]) if @c;
+    for my $placemark_node ($root->findnodes('/kml//Placemark')) {
+	my $name = $placemark_node->findvalue('./name') || $args{name} || 'Route';
+	my $cat  = $args{cat}  || 'X';
+	my $coords = $placemark_node->findvalue('./LineString/coordinates');
+	if (!$coords) {
+	    $coords = $placemark_node->findvalue('./MultiGeometry/Polygon/outerBoundaryIs/LinearRing/coordinates');
+	    if (!$coords) {
+		next;
+	    }
+	    ## XXX yes? no?
+	    #$cat = "F:$cat";
+	}
+	my @c = map {
+	    my($lon,$lat) = split /,/, $_;
+	    join(",", longlat2xy($lon,$lat));
+	} grep { !/^\s+$/ } split ' ', $coords;
+	if (@c) {
+	    $self->push([$name, [@c], $cat]);
+	}
+    }
 }
 
 sub kmz2bbd {
@@ -338,8 +349,8 @@ The constructor takes the following optional named parameters:
 
 =item name => $name
 
-The route name. Defaults to "Route". Note that in the future kml's
-name element may be used for this.
+Default route name if no name was found in the kml file. Defaults to
+"Route".
 
 =item cat => $cat
 
