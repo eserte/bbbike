@@ -31,7 +31,7 @@ BEGIN {
 
 use BBBikeTest;
 
-plan tests => 30;
+plan tests => 32;
 
 use_ok("Strassen::KML")
     or exit 1; # avoid recursive calls to Strassen::new
@@ -96,6 +96,18 @@ isa_ok($s, "Strassen");
     isa_ok($s, "Strassen", "File <$file> loaded OK");
     my @data = @{ $s->data };
     is($data[0], "Tour\tX @sample_coords\n", "Expected translated coordinates with namespace decl hack");
+}
+
+{
+    my($tmpfh,$tmpfile) = tempfile(SUFFIX => '.kml', UNLINK => 1) or die $!;
+    print $tmpfh get_sample_kml_polygons();
+    close $tmpfh or die $!;
+
+    my @sample_data = get_sample_data_polygons();
+    my $s = Strassen::KML->new($tmpfile);
+    isa_ok($s, "Strassen", "File <$tmpfile> loaded OK");
+    my @data = @{ $s->data };
+    is_deeply \@data, \@sample_data;
 }
 
 for my $kml_filename ('doc.kml',
@@ -217,6 +229,47 @@ sub get_sample_coordinates_2 { # Brandenburger Tor - Alexanderplatz
      '10083,12442', '10173,12492', '10244,12544', '10300,12587',
      '10352,12627', '10440,12696', '10519,12768', '10699,12929',
      '10740,12960', '10781,13002');
+}
+
+sub get_sample_kml_polygons {
+    <<'EOF';
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.opengis.net/kml/2.2 http://schemas.opengis.net/kml/2.2.0/ogckml22.xsd http://www.google.com/kml/ext/2.2 http://code.google.com/apis/kml/schema/kml22gx.xsd">
+<Document id="Ortsteile_WGS84">
+  <name>Ortsteile_WGS84</name>
+    <Placemark id="ID_00000">
+      <name>Mitte</name>
+      <description><![CDATA[<html><body>description</body></html>]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode><tessellate>1</tessellate>
+          <outerBoundaryIs><LinearRing><coordinates> 13.373601,52.527913,0.000000 13.373656,52.527918,0.000000 13.373822,52.527718,0.000000 13.373750,52.527632,0.000000</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+  <Style id="PolyStyle00">
+    <LabelStyle>
+      <color>00000000</color>
+      <scale>0.000000</scale>
+    </LabelStyle>
+    <LineStyle>
+      <color>ff0000a8</color>
+      <width>1.000000</width>
+    </LineStyle>
+    <PolyStyle>
+      <color>00c8d0d4</color>
+      <outline>1</outline>
+    </PolyStyle>
+  </Style>
+</Document>
+</kml>
+EOF
+}
+
+sub get_sample_data_polygons {
+    ("Mitte	X 8294,13544 8298,13544 8310,13522 8305,13513\n");
 }
 
 __END__
