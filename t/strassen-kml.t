@@ -50,7 +50,7 @@ isa_ok($s, "Strassen");
     my $s = Strassen::KML->new($file);
     isa_ok($s, "Strassen", "File <$file> loaded OK");
     my @data = @{ $s->data };
-    is($data[0], "Route\tX @sample_coords\n", "Expected translated coordinates");
+    is($data[0], "Tour\tX @sample_coords\n", "Expected translated coordinates");
 
     my $kml = $s->bbd2kml;
     kmllint_string($kml, "bbd2kml produced KML");
@@ -95,7 +95,7 @@ isa_ok($s, "Strassen");
     my $s = Strassen::KML->new($file);
     isa_ok($s, "Strassen", "File <$file> loaded OK");
     my @data = @{ $s->data };
-    is($data[0], "Route\tX @sample_coords\n", "Expected translated coordinates with namespace decl hack");
+    is($data[0], "Tour\tX @sample_coords\n", "Expected translated coordinates with namespace decl hack");
 }
 
 for my $kml_filename ('doc.kml',
@@ -116,7 +116,7 @@ for my $kml_filename ('doc.kml',
     my $s = Strassen::KML->new($tmpfile);
     isa_ok($s, "Strassen", "File <$tmpfile> loaded OK");
     my @data = @{ $s->data };
-    is($data[0], "Route\tX @sample_coords\n", "Expected translated coordinates in .kmz file (mail kml file: $kml_filename)");
+    is($data[0], "Tour\tX @sample_coords\n", "Expected translated coordinates in .kmz file (mail kml file: $kml_filename)");
 
     my $s0 = Strassen->new($tmpfile);
     isa_ok($s, "Strassen", ".kmz detection in Strassen::Core seems OK");
