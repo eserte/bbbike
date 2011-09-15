@@ -19711,4 +19711,13 @@ userdel	3 12925,7425 13015,7440 12992,7545
 userdel	3 12992,7545 13015,7440 12925,7425
 EOF
      },
+     { from  => 1317297600, # 2011-09-29 14:00
+       until => 1317697200, # 2011-10-04 05:00
+       text  => 'Rote Chaussee: Vollsperrung, von 30.09.2011, 14:00 Uhr bis 04.10.2011, 5:00 Uhr ',
+       type  => 'gesperrt',
+       source_id => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20110914.1015.358646.html',
+       data  => <<EOF,
+userdel	2::inwork 872,24330 905,24113 831,24054 764,24065 609,24215 237,24374 195,24389 132,24390 78,24364 -406,23934
+EOF
+     },
     );

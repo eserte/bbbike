@@ -71,8 +71,8 @@ Neuendorfer Str.: Radspuren werden ab 9. August 2010 markiert	?::inwork -2869,15
 #: last_checked: 2011-04-01
 Uhlandstr.	?::projected 4984,9675 5004,9842 5026,10038 5036,10139 5063,10384
 # 
-#: next_check: 2011-06-15
-#: last_checked: 2011-04-09
+#: last_checked: 2011-09-14
+#: next_check: 2011-12-15
 Joachim-Friedrich-Str.	?::projected 3067,9592 3069,9622 3083,9796 3092,9886 3108,10069 3111,10116 3132,10499
 # 
 #XXX del --- #: XXX zumindest in Richtung Südwesten gibt es eine Radspur etwa in Höhe Platz des 4. Juli --- #: by: http://farm6.static.flickr.com/5300/5518632994_d64ef7ce6c_z.jpg --- #: by: http://www.flickr.com/photos/38365223@N03/5518632994 --- Goerzallee	?::projected 4164,2717 4065,2576 3983,2454 3805,2196 3700,2045 3640,1959 3584,1877 3526,1792 3435,1660 3199,1455 3140,1411 2843,1281 2663,1199 2527,1136 2515,1131 2404,1078 2372,1043 2333,1003 2147,811 1946,604 1940,587 1834,339 1765,294
@@ -293,7 +293,9 @@ Kohlis/Hultschiner Damm: Ampelanlage in Planung, Realisierung 2011	?::inwork 238
 #: by: http://www.maerkischeallgemeine.de/cms/beitrag/11913676/61759/Bau-der-neuen-Erschliessungsstrasse-auf-altem-Industriegelaende-in.html
 #: XXX fehlt in Berlin.coords.data
 #: note: wird Radwege bekommen
-#: next_check: 2011-06-15
+#: next_check: 2012-03-25
+#: XXX Eventuell auch "Jürgen-Wohlrabe-Damm"
+#: by: https://www.xing.com/net/spandau/veranstaltungen-153754/sommerfest-2011-5-jahre-technopark-37831174/ (erst ab April 2012)
 Wohlrabedamm: Wo genau wird die Straße liegen? Fertigstellungsdatum?	?::inwork 990,14062 1624,13956 1882,14127
 # 
 #: by: http://www.berlin.de/ba-pankow/presse/archiv/20101116.0930.319072.html
@@ -2682,9 +2684,12 @@ Am Rosensteg: Qualität? Kann man als Radfahrer direkt zum Nordgraben fahren?	? 3
 Am Brunnen: Qualität? Kann man als Radfahrer direkt zum Nordgraben fahren?	? 3062,20735 3028,20894
 Myrtenweg: Qualität?	? 3062,20735 2944,20715
 #: XXX str_cont_ausnahme-Eintrag
+#: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20110913.1500.358535.html (Instandsetzung der Fahrbahn)
 Havelmüllerweg: Qualität?	? 3306,20773 3139,20837 3078,20857
 Havelmüllerweg: Qualität?	? 2976,20871 2915,20875
+#: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20110913.1500.358535.html (Instandsetzung der Fahrbahn)
 Kehrwieder: Qualität?	? 3067,20708 3103,20712 3143,20722
+#: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20110913.1500.358535.html (Instandsetzung der Fahrbahn)
 Rohrbrunner Str.: Qualität?	? 3143,20722 3134,20807 3139,20837 3152,20852
 Wilhelm-Blume-Allee: Qualität? Ist die Brücke für Autos gesperrt?	? 2355,20564 2351,20615 2507,20860 2571,20914
 Desideriusweg: Qualität? Einbahnstraßenregelung?	? 2728,21336 2830,21378
@@ -3773,3 +3778,6 @@ Groß-Ziethener Chaussee: Gehweg für Radfahrer in beide Richtungen freigegeben?	?
 Königstuhlweg: Qualität des Fußwegabschnitts?	? 10087,2365 10211,2337 10331,2309
 #: XXX laut osm Verbundsteinpflaster
 Schwarzer Weg: Qualität?	? 13215,-570 12804,-735
+#: XXX möglicherweise "Anlieger frei"
+Goerdelerdamm - Nonnendamm: Durchfahrt für Radfahrer möglich? Qualität der Fahrbahn? Nachts beleuchtet?	? 3103,14187 3024,14084 2817,14003 2734,13970 2684,13922 2416,13825 2149,13775
+Zugang zum Tegeler Weg: Zugang möglich? Überquerung der Straße möglich?	? 2817,14003 2858,14045

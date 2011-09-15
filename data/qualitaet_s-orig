@@ -6366,6 +6366,7 @@ Klausenpaß: Beton	Q0 10271,2603 10368,2575 10390,2571 10507,2548 10693,2513
 Nuthestr.: Beton	Q0 10293,-1904 10243,-1876 10099,-1482 10071,-1416 9989,-1278 9925,-1106 9849,-911
 Möckernstr. - Park am Gleisdreieck: Kopfsteinpflaster	Q2 8802,10290 8775,10289 8707,10285
 Möckernstr. - Park am Gleisdreieck: Asphalt	Q0 8707,10285 8677,10224 8614,10095 8579,10030
+Pfalzburger Str.: Kleinsteinpflaster	Q1 4842,9458 4827,9304
 ######################### User Contributions #################################
 #: by: anonymous vvv
 # 
@@ -7070,7 +7071,7 @@ Büchnerweg: Kopfsteinpflaster	Q2 20207,3115 20315,3181 20405,3235 20597,3364 206
 Büchnerweg: Kopfsteinpflaster	Q2 20756,3470 20833,3519 20924,3577 21049,3657
 #: confirmed_by: srt
 Badener Str.: Beton	Q0 24051,9156 23798,9263 23643,9330 23550,9369 23470,9403 23166,9549
-Helmstedter Str.: Asphalt	Q0 5725,9041 5711,9349 5704,9557
+Helmstedter Str.: Asphalt	Q0 5725,9041 5711,9357 5704,9557
 Hubertusstr. (Waidmannslust): Kopfsteinpflaster	Q2 4050,22428 4147,22309 4241,22168
 Steinstr.: Asphalt	Q0 6089,5145 5927,5182 5778,5234
 Carl-Scheele-Str.: Asphalt	Q0 19215,2906 19194,2888 19053,2890 18904,2865 18779,2773
@@ -7777,7 +7778,7 @@ Nordmannzeile: Beton	Q0 6762,7109 6760,7147 6784,7233 6807,7262
 #: by: Mark Einig:
 Bornemannstr.: Asphalt	Q0 8187,15965 8003,16098
 #: by: Peter Radeck:
-Holsteinische Str.: Asphalt	Q0 5069,9735 5066,9645 5065,9407 5053,8979
+Holsteinische Str.: Asphalt	Q0 5069,9735 5066,9645 5065,9418 5053,8979
 # 
 #: by: anonymous:
 #: corrected_by: Winfried Gravenstein
@@ -17342,7 +17343,7 @@ Hochbergplatz: Kopfsteinpflaster	Q2 4818,2279 4824,2266 4813,2256 4803,2257 4796
 #: by: ^^^
 # 
 #: by: Nico (paenic...):
-Nonnendamm: guter Asphalt	Q0 2028,13801 2149,13775 2176,13703 2217,13689 2283,13741 2430,13717 2548,13796
+Nonnendamm: guter Asphalt	Q0 1982,13814 2028,13801 2149,13775 2176,13703 2217,13689 2283,13741 2430,13717 2548,13796
 #: by: Patrick Schwartz:
 #: note: Laternen existieren
 Augusta-Ufer: Verbundsteinpflaster	Q1 -3501,14365 -3440,14498 -3331,14628 -3255,14685
@@ -17568,7 +17569,7 @@ Mörchinger Str.: Kopfsteinpflaster	Q1 1453,3085 1393,3183 1499,3251
 Mörchinger Str.: Verbundsteine	Q0 1918,3511 2091,3597
 Am Mühlenberg: Gehwegplatten	Q0 6096,8600 6135,8674 6133,8709
 Kalckreuthstr.: Asphalt mit Löchern	Q1 6636,10492 6628,10318 6626,10155
-Landhausstr.: Kopfsteinpflaster	Q2 5314,9588 5342,9559 5342,9374
+Landhausstr.: Kopfsteinpflaster	Q2 5314,9588 5342,9559 5343,9377
 Landhausstr.: Kopfsteinpflaster	Q1 5341,8927 5343,8858
 Gasteiner Str.: grobes Kopfsteinpflaster	Q3 4920,9000 4715,8977
 Schrammstr.: grobes Kopfsteinpflaster	Q3 4960,8440 4958,8344
@@ -17739,10 +17740,7 @@ Apeldorner Weg: wassergebundene Decke	Q1 3848,8689 3868,8759 3932,8989
 Bechstedter Weg: Asphalt	Q0 3482,9028 3661,8815
 Zum Bechstedter Weg: Asphalt	Q1 3661,8815 3701,8849
 Münstersche Str.: Kleinpflaster	Q1 3763,9642 3699,9613
-#: XXX nach den Bauarbeiten vielleicht Q0?
-#: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20101111.1155.318374.html
-#: next_check: 2010-11-19
-Ruhrstr.: Asphalt	Q1 3983,9343 4230,9229
+Ruhrstr.: Asphalt	Q0 3983,9343 4230,9229
 Hektorstr.: Asphalt	Q1 3189,10141 3206,10458
 Walter-Benjamin-Platz: Gehwegplatten	Q0 4256,10583 4381,10583
 Bregenzer Str.: Asphalt	Q1 4278,10262 4227,10014
