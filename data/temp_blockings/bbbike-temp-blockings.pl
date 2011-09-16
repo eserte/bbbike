@@ -19720,4 +19720,22 @@ EOF
 userdel	2::inwork 872,24330 905,24113 831,24054 764,24065 609,24215 237,24374 195,24389 132,24390 78,24364 -406,23934
 EOF
      },
+     { from  => 1316062800, # 2011-09-15 07:00
+       until => 1316383140, # 2011-09-18 23:59
+       text  => 'Hauptstr. (Rosenthal): Veranstaltung, Straße vollständig gesperrt zwischen Schönhauser Str. und An der Vogelweide, 16.09.2011 07:00 Uhr bis 18.09.2011 23:59 Uhr ',
+       type  => 'handicap',
+       source_id => 'IM_017830',
+       data  => <<EOF,
+userdel	q4::temp 8591,21906 8460,21602
+EOF
+     },
+     { from  => 1316088000, # 2011-09-15 14:00
+       until => 1316282400, # 2011-09-17 20:00
+       text  => 'Kirchstr. (Zehlendorf): Veranstaltung, Straße vollständig gesperrt, 16.09.2011 14:00 Uhr bis 17.09.2011 20:00 Uhr ',
+       type  => 'handicap',
+       source_id => 'IM_017848',
+       data  => <<EOF,
+userdel	q4::temp 751,2860 589,2925
+EOF
+     },
     );

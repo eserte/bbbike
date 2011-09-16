@@ -147,17 +147,24 @@ Karl-Liebknecht-Str.: Fahrradangebotsstreifen wird erstellt	?::inwork 10437,1270
 #: section ignorieren vvv
 #: section Straßen in Bau und Planung vvv
 # 
+Günter-Riesebrodt-Weg: Qualität? Genaue Lage der Straße? Schon fertiggestellt?	?::inwork 19395,7901 19302,7971
+# 
+#XXX diese Straße existiert noch nicht
+#: last_checked: 2011-04-17
+#: next_check: 2012-04-01
+An den Auen: Qualität? Genaue Lage der Straße?	?::projected 21208,19027 21258,18969 21260,18900
+# 
 #: last_checked: 2011-09-10 vvv
 #: next_check: 2012-04-01 vvv
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/43re.pdf/file
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/41re.pdf/file
 #: XXX alles Privatstraßen
 #: XXX fehlen in Berlin.coords.data
-Trollblumenweg: wird verlängert, Qualität?	? 16051,3759 16104,3717
-Geißbartweg: Qualität?	? 16116,3602 16167,3702
-Sternliebweg: Qualität? Wo liegt die Straße genau?	? 16157,3576 16219,3665
-Silberdistelweg: Qualität? Wo liegt die Straße genau?	? 16215,3550 16263,3627
-Zwergasternweg: Qualität?	? 16264,3503 16321,3583
+Trollblumenweg: wird verlängert, Qualität?	?::inwork 16051,3759 16104,3717
+Geißbartweg: Qualität?	?::inwork 16116,3602 16167,3702
+Sternliebweg: Qualität? Wo liegt die Straße genau?	?::inwork 16157,3576 16219,3665
+Silberdistelweg: Qualität? Wo liegt die Straße genau?	?::inwork 16215,3550 16263,3627
+Zwergasternweg: Qualität?	?::inwork 16264,3503 16321,3583
 #: next_check ^^^
 #: last_checked ^^^
 # 
@@ -165,7 +172,7 @@ Zwergasternweg: Qualität?	? 16264,3503 16321,3583
 #: XXX fehlt bei Berlin.coords.data
 #: last_checked: 2011-09-10
 #: next_check: 2012-03-01
-Am Römersgrün: Straße und Wohnanlage in Bau. Genaue Lage? Qualität?	? 11708,3914 11723,3846
+Am Römersgrün: Straße und Wohnanlage in Bau. Genaue Lage? Qualität?	?::inwork 11708,3914 11723,3846
 # 
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20110908.0920.357891.html
 #: next_check: 2011-11-30
@@ -186,11 +193,11 @@ entlang der U-Bahn nach Hönow: Bauarbeiten. Wie sieht der Weg danach aus?	?::inw
 # 
 #: last_checked: 2011-07-09 vvv
 #: next_check: 2012-06-01 vvv
-#: XXX eventuell wird hier auch die Waadter Zeile (auch in Berlin.coords.data) irgendwann existieren
 Ellen-Widmann-Pfad: Existiert die Straße schon? Qualität? Wo liegt die Straße genau?	? 3750,2285 3830,2285
 Ines-Bolla-Pfad: Existiert die Straße schon? Qualität? Wo liegt die Straße genau?	? 3747,2335 3854,2332
 Maggy-Breittmayer-Pfad: Existiert die Straße schon? Qualität? Wo liegt die Straße genau?	? 3747,2383 3880,2382
 #: next_check ^^^
+Waadter Zeile: nochmal prüfen, ob die Straße vielleicht doch existiert	? 3716,2063 3725,2173
 #: last_checked ^^^
 # 
 #: last_checked: 2011-07-09
@@ -1980,7 +1987,10 @@ Bachstelzenweg (Blankenfelde): Qualität? Geht der Weg bis zum Hauptweg weiter?	?
 Gurkensteig: Qualität?	? 8548,25239 8654,25299 8735,25366
 #: XXX Eintrag in Berlin.coords.data fehlt noch
 Wiesenweg (Blankenfelde): Qualität?	? 8571,25180 8631,25217 8656,25251 8706,25262 8722,25296 8776,25332
-Kiesweg: Qualität?	? 9863,26000 10108,26150
+Kiesweg (Blankenfelde): Qualität?	? 9863,26000 10108,26150
+Feldweg (Blankenfelde): Qualität?	? 9884,25936 10081,26057
+Feldweg (Bohnsdorf): Qualität?	? 20829,-773 21055,-723 21209,-734
+# XXX: wo ist diese Straße??? Feldweg|Französisch Buchholz|13127|
 Prinz-Friedrich-Karl-Weg: Qualität?	? -1100,12210 -1172,12336 -824,12557 -646,12658
 Sonnenhof: Qualität?	? 606,9463 612,9471 600,9480 586,9463 590,9456 599,9452 606,9463
 #: XXX anonymous meint: Kopfsteinpflaster, Q2, q4, Privatweg (warum eigentlich?), Einbahnstraße, aber keine Angaben zur Regelung für Radfahrer
@@ -2598,7 +2608,9 @@ Lindholzweg: Qualität?	? 12512,1650 12488,1429 12475,1292 12460,1168
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/35re.pdf/file
 Straße 44 (Buckow): Qualität? Heißt diese Straße mittlerweile auch "Lindholzweg"?	? 12460,1168 12227,1227 12125,1282
 #: XXX oder ist es die hier?
-Ist das der "Buckower Weg" oder die Straße "An den Feldern"?	? 12310,1319 12265,1249 12354,1219 12374,1312
+#: XXX künstlich geteilt, um check-berlin-coords-data.pl zu helfen
+An den Feldern: Ist das der "Buckower Weg" oder die Straße "An den Feldern"?	? 12310,1319 12265,1249 12354,1219
+Buckower Weg: Ist das der "Buckower Weg" oder die Straße "An den Feldern"?	? 12354,1219 12374,1312
 Anna-Siemsen-Weg: Qualität?	? 14411,2568 14332,2565 14264,2562
 Gaudigweg: Qualität?	? 14332,2565 14334,2446
 #: XXX_osm: fehlt bei osm
@@ -2869,7 +2881,6 @@ Hümmlingweg: Qualität?	? -5190,16203 -5217,16119
 Osningweg: Qualität?	? -5077,16162 -5102,16086
 Schulzenstr.: Qualität?	? -5012,14573 -4977,14761 -4947,14873
 Petzoldtweg: Qualität?	? -4378,14388 -4371,14464 -4341,14580
-#XXX diese Straße existiert noch nicht --- An den Auen: Qualität? Genaue Lage der Straße?	? 21208,19027 21258,18969 21260,18900
 Am Südfeld: Qualität?	? -1198,21801 -1213,21553
 Ponyweg: Qualität?	? 2063,26727 2014,26726
 Mustangweg: Qualität?	? 2119,26608 2068,26609 2017,26612
@@ -3556,6 +3567,7 @@ Elisenweg (Potsdam): Qualität?	? -17194,-4659 -17217,-4610 -17235,-4609 -17599,-
 Karlshöhe: Wo genau liegt die Straße? Oder ist es nur eine Kleingartenanlage? Qualität?	? 11972,23260 11281,23876
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/14re.pdf/file
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/40re.pdf/file?y=2011
 #: XXX fehlen alle in Berlin.coords.data, PLZ=13159:
 #: XXX   Heidekrautbahnring
 #: XXX   Köppchenseeweg
@@ -3564,7 +3576,7 @@ Karlshöhe: Wo genau liegt die Straße? Oder ist es nur eine Kleingartenanlage? Qu
 #: XXX   Reppfuhlring
 #: XXX   Röhrichtweg
 #: XXX   Feldsteinweg
-Anlage Schildoweck: sieben neue Privatwege, wo genau, Qualität?	? 8656,24889 8592,24914
+Anlage Schildoweck: sieben neue Privatwege, wo genau, Qualität?	? 8656,24889 8592,24914 8513,24909 8404,24744 8443,24529 8656,24889
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/14re.pdf/file
 #: XXX fehlen alle in Berlin.coords.data:
@@ -3781,3 +3793,5 @@ Schwarzer Weg: Qualität?	? 13215,-570 12804,-735
 #: XXX möglicherweise "Anlieger frei"
 Goerdelerdamm - Nonnendamm: Durchfahrt für Radfahrer möglich? Qualität der Fahrbahn? Nachts beleuchtet?	? 3103,14187 3024,14084 2817,14003 2734,13970 2684,13922 2416,13825 2149,13775
 Zugang zum Tegeler Weg: Zugang möglich? Überquerung der Straße möglich?	? 2817,14003 2858,14045
+Däumlingsweg: Qualität?	? 23593,6663 23615,6884
+# XXX bei osm nicht aufzufinden, aber wahrscheinlich sowieso nur ein Weg in einer KGA: Frau-Holle-Weg|Britz|12349|11460,2191
