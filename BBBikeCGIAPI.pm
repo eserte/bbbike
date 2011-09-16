@@ -42,7 +42,7 @@ sub action_revgeocode {
     $lat eq '' and die "lat is missing";
 
     no warnings 'once';
-    my($x,$y) = $Karte::Polar::obj->map2standard($lon,$lat);
+    my($x,$y) = $main::data_is_wgs84 ? ($lon,$lat) : $Karte::Polar::obj->map2standard($lon,$lat);
     # XXX Die Verwendung von main::... bricht, wenn bbbike.cgi als
     # Apache::Registry-Skript ausgeführt wird, da das Package dann ein
     # anderes ist! -> beste Lösung: alle Funktionen von bbbike.cgi
