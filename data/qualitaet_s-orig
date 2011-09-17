@@ -6367,6 +6367,7 @@ Nuthestr.: Beton	Q0 10293,-1904 10243,-1876 10099,-1482 10071,-1416 9989,-1278 9
 Mˆckernstr. - Park am Gleisdreieck: Kopfsteinpflaster	Q2 8802,10290 8775,10289 8707,10285
 Mˆckernstr. - Park am Gleisdreieck: Asphalt	Q0 8707,10285 8677,10224 8614,10095 8579,10030
 Pfalzburger Str.: Kleinsteinpflaster	Q1 4842,9458 4827,9304
+Simsonweg: Kleinsteinpflaster und wassergebundene Decke	Q1 8354,12416 8546,12279
 ######################### User Contributions #################################
 #: by: anonymous vvv
 # 
@@ -17588,11 +17589,12 @@ Berolinastr.: Beton	Q2 11660,12963 11673,12955 11771,12909 11826,12883 11844,129
 Berolinastr.: Beton	Q0 11540,12883 11590,12995
 Mollstr.: Beton	Q0 11739,13131 11719,13088 11660,12963
 Mollstr.: Beton	Q0 11673,12955 11622,12850
-Weydemeyerstr.: Beton	Q1 12124,12852 12054,12903 11983,12949 11952,12871 11926,12807 11900,12754
-(Weydemeyerstr.): Gehwegplatten	Q0 11900,12754 11837,12780 11824,12749
-(Weydemeyerstr.): Beton	Q2 11933,12701 11971,12785 11926,12807
+Weydemeyerstr.: Beton	Q1 12124,12852 12054,12903 11983,12949
+Weydemeyerstr.: Beton	Q1- 11983,12949 11952,12871 11921,12810 11890,12750
+(Weydemeyerstr.): Gehwegplatten	Q0 11890,12750 11818,12785 11805,12760
+(Weydemeyerstr.): Beton	Q2 11933,12701 11971,12785 11921,12810
 #: corrected_by: srt (Q2 -> Q2+, genauere Beschreibung)
-Weydemeyerstr.: m‰ﬂiger Beton, Fugen	Q2+ 11725,12809 11824,12749 11933,12701 11969,12681 12039,12675 12064,12673
+Weydemeyerstr.: m‰ﬂiger Beton, Fugen	Q2+ 11725,12809 11805,12760 11933,12701 11969,12681 12039,12675 12064,12673
 (Karl-Marx-Allee): Gehwegplatten	Q0 11584,12863 11600,12857 11622,12850 11725,12809
 (Karl-Marx-Allee - Berolinastr.): Gehwegplatten	Q0 11419,12944 11362,12964 11295,12915
 (Karl-Marx-Allee - Berolinastr.): Gehwegplatten	Q0 11600,12857 11589,12768

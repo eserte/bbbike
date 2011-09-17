@@ -1929,16 +1929,6 @@ userdel	3 12992,7545 13015,7440 12925,7425
          'data' => 'userdel	q4::temp 8591,21906 8460,21602
 ',
          'type' => 'handicap'
-       },
-       {
-         'source_id' => 'IM_017848',
-         'until' => 1316282400,
-         'text' => 'Kirchstr. (Zehlendorf): Veranstaltung, Straße vollständig gesperrt, 16.09.2011 14:00 Uhr bis 17.09.2011 20:00 Uhr ',
-         'from' => 1316088000,
-         'id' => 2286,
-         'data' => 'userdel	q4::temp 751,2860 589,2925
-',
-         'type' => 'handicap'
        }
      
 );

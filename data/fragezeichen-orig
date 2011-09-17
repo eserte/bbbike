@@ -30,11 +30,6 @@ Reichsstr.: wird der vorhandene Radweg zugunsten eines Angebotsstreifens aufgege
 #: by: ^^^
 #
 #: by: MoPo 2009-08-01, soll 2009 realisiert werden vvv
-# auch im Tsp vom 2010-03-26 erwähnt
-#: last_checked: 2011-03-30
-#: next_check: 2011-05-15
-Tiergartenstr.	?::projected 8172,11679 8021,11636 7816,11571 7717,11540 7600,11513 7504,11512 7435,11514 7356,11517 7293,11519 7171,11510 6825,11486
-# 
 #: last_checked: 2011-04-09 (zumindest am westlichen Ende)
 #: next_check: 2011-05-15
 Grunewaldstr. (Steglitz)	?::projected 4861,5581 4671,5697 4520,5793 4419,5842 4291,5895 4172,5918 4010,5888
@@ -42,11 +37,11 @@ Grunewaldstr. (Steglitz)	?::projected 4861,5581 4671,5697 4520,5793 4419,5842 42
 #: by: ^^^
 #
 #: by: MoPo 2009-08-01, soll 2010 realisiert werden vvv
-#: last_checked: 2011-03-30
-#: next_check: 2011-05-15
+#: last_checked: 2011-09-17
+#: next_check: 2011-12-15
 Stülerstr.	?::projected 6825,11486 6716,11439 6692,11365 6679,11319 6630,11247 6606,11222
 #
-#: last_checked: 2011-08-28
+#: last_checked: 2011-09-17
 #: next_check: 2012-01-01
 Danziger Str.	?::projected 11712,14868 11879,14771 11990,14714 12040,14688 12128,14640 12317,14535 12425,14459 12630,14306 12729,14227 12901,14093 12975,13990 13037,13897 13100,13803 13166,13707 13225,13620 13228,13615 13330,13468
 #
@@ -133,10 +128,6 @@ Axel-Springer-Str.: Markierungsarbeiten für Radspuren haben begonnen	?::projecte
 #: next_check: 2011-10-15
 Fahrradstraße in der Lauenburger Str.	?::projected 5870,4992 5905,5088 5927,5182 5962,5296 5993,5422 6007,5785 6007,5882 6001,5974 6008,6067 6019,6087 6014,6160 5984,6233 5918,6301 5860,6367 5803,6403
 # 
-#: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20110706.1200.350443.html
-#: last_checked: 2011-08-19
-#: next_check: 2011-08-28
-Karl-Liebknecht-Str.: Fahrradangebotsstreifen wird erstellt	?::inwork 10437,12703 10528,12785
 #: section ^^^
 #: section ^^^
 #
@@ -427,18 +418,22 @@ Alt-Biesdorf/Alt-Kaulsdorf (südliche Seite): Bau von asphaltierten Radwegen	?; 2
 #: by ^^^
 # 
 #: by: MoPo 2009-08-01, soll 2010 realisiert werden vvv
-#: last_checked: 2011-04-01
-#: next_check: 2011-07-01
+#: last_checked: 2011-09-17
+#: next_check: 2012-02-01
 Fasanenstr.: Öffnung der Einbahnstraße für Radfahrer	? 5268,11274 5247,10992 5242,10918 5229,10716 5207,10399
+# 
 #: last_checked: 2011-09-10
 #: next_check: 2011-12-15
 Braunschweiger Str.: Asphaltierung	? 13047,7234 13150,7254 13322,7294 13369,7307 13487,7337
+# 
 #: last_checked: 2011-05-07
 #: next_check: 2011-08-01
 Teilestr.: Radverkehrsanlagen	? 10254,5921 10404,5969 10526,6008 10614,6047 10789,6031 11174,5996 11257,6015 11322,5989
+# 
 #: last_checked: 2010-06-06
 #: next_check: 2010-09-01
 Fürstenwalder Allee: Bau von Radverkehrsanlagen	? 29714,4461 29728,4435 29813,4314 29850,4288 29901,4264 29959,4235 30037,4176 30210,4046 30351,3939 30456,3794 30518,3753 30650,3698 30993,3557 31139,3497 31366,3404 31447,3372 31632,3297 31863,3257 31978,3237 32829,3105 33111,3064 33547,2904
+# 
 #: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20110530.1455.346033.html
 #: XXX make public?
 Radwegbau Welzower Steig: wie ist die Qualität (Fahrbahnbeschaffenheit) des Radwegs?	?::inwork 6320,21777 6370,21689 6428,21648 6478,21652 6508,21646 6529,21620 6576,21414

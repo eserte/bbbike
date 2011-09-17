@@ -16,7 +16,7 @@ Sembritzkystr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 7203,5488 7186,5453 7157,
 #: last_checked: 2011-09-13 vvv
 #: next_check: 2011-10-15 vvv
 #: XXX wird wahrscheinlich reorganisiert mit der neuen Verbindung
-Beuthstr. - Spittelmarkt: Gehweg, Bauarbeiten	q4::inwork 10166,11592 10197,11605 10229,11618 10213,11728
+Beuthstr. - Spittelmarkt: Gehweg, Bauarbeiten	q4::inwork 10229,11618 10213,11728
 Spittelmarkt: Gehweg, Bordstein, Bauarbeiten	q4::inwork 10166,11592 10153,11666 10213,11728
 Axel-Springer-Str.: Bauarbeiten	q4::inwork 10166,11592 10136,11529
 #: next_check: ^^^
@@ -45,7 +45,7 @@ Behrenstr.: Bauarbeiten, Fahrbahn teilweise gesperrt	q4::inwork 9373,12197 9164,
 #: last_checked: 2011-08-19
 Oberwallstr.: Bauarbeiten, Einbahnstraﬂe	q4::inwork; 9925,11947 9913,12068
 # 
-#: last_checked: 2011-08-19
+#: last_checked: 2011-09-17
 #: XXX nach den Bauarbeiten vielleicht besserer Asphalt? -> qualitaet_s-orig
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9890,12161 9875,12257 9869,12297
 # 
@@ -54,10 +54,6 @@ Jerusalemer Str.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 9878,11857 9892,11752
 # 
 #: last_checked: 2011-06-12
 Neumannsgasse: Bauarbeiten, Fahrbahn gespert	q4::inwork 10284,12113 10383,12191
-# 
-#: last_checked: 2011-04-30
-#: next_check: 2011-07-01
-Varian-Fry-Str.: Baustelle, Fahrbahn gesperrt	q4::inwork 8389,11378 8374,11479
 # 
 #: last_checked: 2011-08-19
 #: next_check: 2011-10-15
@@ -97,6 +93,10 @@ Alte Jakobstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 10436,11344 10244,11160
 #: next_check: 2012-05-01
 #: by: http://www.svendsimdorn.de/index.php?ka=1&ska=1&idx=26540 (Fertigstellung Sp‰tsommer 2012)
 Elcknerplatz, Borgmannstr.: Bauarbeiten, Einbahnstraﬂe	q4::inwork; 22428,6063 22478,6041 22544,6037 22539,5956
+# 
+#: last_checked: 2011-09-17
+#: next_check: 2011-12-31
+Kantstr.: Bauarbeiten am Zoofenster	q4::inwork 5494,10973 5613,10963 5652,11004
 #: temporary ^^^
 ######################################################################
 #: XXX es ist zu erwarten, dass hier der Wuhlewanderweg verbessert wird: vvv
@@ -242,7 +242,7 @@ Gendarmenmarkt: Fuﬂg‰ngerzone, ggfs. schieben	q3 9526,11911 9668,11928
 Gendarmenmarkt: Fuﬂg‰ngerzone, ggfs. schieben	q3 9516,12010 9656,12021
 Am Volkspark: Parkweg	q1 5745,8194 5934,8220
 Karl-Marx-Str. - Marchlewskistr.: Gehweg	q2 12869,12425 12950,12340
-#: last_checked: 2011-09-01
+#: last_checked: 2011-09-17
 #: XXX alten Eintrag dann wieder aktivieren
 Karl-Marx-Allee - Marchlewskistr.: Bauarbeiten, eng	q3::inwork 12950,12340 12985,12303
 #Karl-Marx-Allee - Marchlewskistr.: Gehweg	q2 12950,12340 12985,12303
@@ -1050,6 +1050,9 @@ Faulhornweg: Fuﬂg‰nger	q1 10383,2088 10322,2163
 Igelkolbensteig: eng	q2 15947,3572 16003,3652
 #: XXX_prog BS (2x)
 Melissenweg: Bordsteine	q2 16003,3652 16041,3718
+#: XXX_prog BS (im Norden, im S¸den kann es umfahren werden)
+Simsonweg: Fuﬂg‰nger, Bordsteine	q2 8354,12416 8546,12279
+Varian-Fry-Str.: Fuﬂg‰nger	q2 8374,11479 8389,11378
 ######################### User Contributions #################################
 #: by: Michael Kiekbusch
 #: corrected_by: srt/policy (q4 -> q3-)
@@ -1323,8 +1326,8 @@ Kamminer Str.: un¸bersichtliche Kreuzungen, parkende PKWs	q1 3248,12954 3292,131
 Claire-Waldoff-Weg: Fuﬂg‰nger	q2 3635,8099 3587,7560
 Bissingzeile: Einspurig, eng bei Gegenverkehr	q1 7959,10910 8113,10786
 (Volkspark Friedrichshain, parallel zur Friedenstr.): Fuﬂg‰nger	q1 12386,13085 12387,13107 12344,13157 12248,13254 12194,13307 12148,13348 12088,13403 12005,13481 11943,13545 11857,13596 11823,13610 11785,13625
-(Weydemeyerstr.): Fuﬂg‰nger	q1 11900,12754 11837,12780 11824,12749
-(Weydemeyerstr.): Fuﬂg‰nger	q1 11933,12701 11971,12785 11926,12807
+(Weydemeyerstr.): Fuﬂg‰nger	q1 11890,12750 11818,12785 11805,12760
+(Weydemeyerstr.): Fuﬂg‰nger	q1 11933,12701 11971,12785 11921,12810
 (Karl-Marx-Allee): Fuﬂg‰nger, Bordsteine	q1 11584,12863 11600,12857 11622,12850 11725,12809
 (Karl-Marx-Allee - Berolinastr.): Fuﬂg‰nger	q1 11419,12944 11362,12964
 (Karl-Marx-Allee - Berolinastr.): Fuﬂg‰nger	q1 11600,12857 11589,12768
@@ -1759,8 +1762,7 @@ Starkenburger Str.: enge Straﬂe	q1 -575,4319 -548,4326 -441,4354 -380,4376 -324,
 Jean-Paul-Weg: enge Straﬂe	q1 9652,196 9762,155
 #: by: susanne von below:
 Helene-von-M¸linen-Weg: enge Straﬂe	q1 3382,2216 3385,2341 3387,2468
-#: by: Maud Apel:
-Augustenburger Platz: einige Fuﬂg‰nger	q1 6561,15041 6537,15156 6562,15177
+#XXX del (policy) --- #: by: Maud Apel: --- Augustenburger Platz: einige Fuﬂg‰nger	q1 6561,15041 6537,15156 6562,15177
 #: by: Hans-Eberhard Heﬂ:
 Telramundweg: enge Straﬂe	q1 5206,4432 5284,4390
 #: by: Patrick Walter:

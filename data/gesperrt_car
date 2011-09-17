@@ -780,8 +780,12 @@ Mittelstreifen	3nocross::ignrte 12114,12546 12134,12540 12360,12505
 Karl-Marx-Allee -> Krautstr./Blumenstr.: Mittelstreifen	3::igndisp 12360,12505 12134,12540 12125,12490
 Krautstr./Blumenstr. -> Karl-Marx-Allee: Mittelstreifen	3::igndisp 12125,12490 12134,12540 12114,12546
 Mittelstreifen	3nocross::ignrte 10240,11740 10213,11728 9981,11689
+Axel-Springer-Str. -> Leipziger Str.: Mittelstreifen	3::igndisp 10202,11669 10213,11728 9981,11689
+Axel-Springer-Str. -> Spittelmarkt: Mittelstreifen	3::igndisp 10202,11669 10213,11728 10153,11666
+Gertraudenstr. -> Axel-Springer-Str.: Mittelstreifen	3::igndisp 10240,11740 10213,11728 10202,11669
 Gertraudenstr. -> Beuthstr.: Mittelstreifen	3::igndisp 10240,11740 10213,11728 10229,11618
 Gertraudenstr. -> Spittelmarkt: Mittelstreifen	3::igndisp 10240,11740 10213,11728 10153,11666
+Beuthstr. -> Axel-Springer-Str.: Mittelstreifen	3::igndisp 10229,11618 10213,11728 10202,11669
 Beuthstr. -> Leipziger Str.: Mittelstreifen	3::igndisp 10229,11618 10213,11728 9981,11689
 Beuthstr. -> Spittelmarkt: Mittelstreifen	3::igndisp 10229,11618 10213,11728 10153,11666
 Spittelmarkt -> Leipziger Str.: Mittelstreifen	3::igndisp 10153,11666 10213,11728 9981,11689
@@ -1290,3 +1294,4 @@ Einfahrt verboten	3 9600,-850 9561,-748 9340,-829
 Tordurchfahrt nur für Radfahrer/Fußgänger	3 11721,-351 11712,-289 11231,-349
 Tordurchfahrt nur für Radfahrer/Fußgänger	3 11231,-349 11712,-289 11721,-351
 Sächsische Str.	1 4550,9539 4533,9400
+Legiendamm	1 11159,10769 11189,10831
