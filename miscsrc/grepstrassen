@@ -23,7 +23,7 @@ use Storable qw(dclone);
 use Strassen::Core;
 use Strassen::Stat;
 
-my($v, $cat, $catrx, $name, $namerx, $section, $sectionrx, @directive_def, @directive, @directiverx);
+my($v, $i, $cat, $catrx, $name, $namerx, $section, $sectionrx, @directive_def, @directive, @directiverx);
 my($minarea, $minlength);
 my $preserveglobaldirectives;
 my $ignoreglobaldirectives;
@@ -35,6 +35,7 @@ my %type_s;
 my @inner;
 my @outer;
 GetOptions("v" => \$v,
+	   "i" => \$i,
 	   "cat=s" => \$cat,
 	   "catrx=s" => \$catrx,
 	   "name=s" => \$name,
@@ -57,9 +58,9 @@ GetOptions("v" => \$v,
 	   'inner=s@' => \@inner,
 	   'outer=s@' => \@outer,
 	  ) or die <<EOF;
-usage: $0 [-v] [-cat category] [-catrx regexp]
-       [-name name] [-namerx regexp]
-       [-section section] [-sectionrx regexp]
+usage: $0 [-v] [-i] [-cat category | -catrx regexp]
+       [-name name | -namerx regexp]
+       [-section section | -sectionrx regexp]
        [-directive key=val|key~val [-directive ...]]
        [-special name] [-minarea ...km²] [-minlength ...km]
        [-preserveglobaldirectives] [-ignoreglobaldirectives]
@@ -69,9 +70,24 @@ section is a region marked with the "section" directive in a bbd file.
 
 EOF
 
-$catrx = qr{$catrx} if $catrx;
-$namerx = qr{$namerx} if $namerx;
-$sectionrx = qr{$sectionrx} if $sectionrx;
+if ($catrx) {
+    $catrx = $i ? qr{$catrx}i : qr{$catrx};
+} elsif ($cat && $i) {
+    $catrx = qr{^\Q$cat\E$}i;
+    undef $cat;
+}
+if ($namerx) {
+    $namerx = $i ? qr{$namerx}i : qr{$namerx};
+} elsif ($name && $i) {
+    $namerx = qr{^\Q$name\E$}i;
+    undef $name;
+}
+if ($sectionrx) {
+    $sectionrx = $i ? qr{$sectionrx}i : qr{$sectionrx};
+} elsif ($section && $i) {
+    $sectionrx = qr{^\Q$section\E$}i;
+    undef $section;
+}
 $minarea = $minarea*(1000*1000) if defined $minarea;
 $minlength = $minlength*1000 if defined $minlength;
 
@@ -79,9 +95,13 @@ for my $directive_def (@directive_def) {
     if ($directive_def =~ m{^([^=~]+)([=~])(.*)}) {
 	my($key, $type, $val) = ($1, $2, $3);
 	if ($type eq '=') {
-	    push @directive, [$key, $val];
+	    if ($i) {
+		push @directiverx, [$key, qr{^\Q$val\E$}i];
+	    } else {
+		push @directive, [$key, $val];
+	    }
 	} else {
-	    push @directiverx, [$key, qr{$val}];
+	    push @directiverx, [$key, $i ? qr{$val}i : qr{$val}];
 	}
     } else {
 	die "Cannot parse <$directive_def>, should be key=val or key~val";
