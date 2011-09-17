@@ -88,7 +88,7 @@ if (!@urls) {
 }
 
 my $ortsuche_tests = 11;
-plan tests => (226 + $ortsuche_tests) * scalar @urls;
+plan tests => (238 + $ortsuche_tests) * scalar @urls;
 
 my $hdrs;
 if (defined &Compress::Zlib::memGunzip && $do_accept_gzip) {
@@ -483,7 +483,6 @@ for my $cgiurl (@urls) {
 				   'found "ImportantAngleCrossingName" feature', '.html');
     }
 
- XXX:
     {
 	# Another test for "ImportantAngleCrossingName"
 	# Bülowstr. am Dennewitzplatz
@@ -497,6 +496,45 @@ for my $cgiurl (@urls) {
 				   'stripped citypart from ImportantAngleCrossingName', '.html');
 	BBBikeTest::like_long_data($content, qr/weiter auf der.*B.*lowstr\. \(Ecke Dennewitzstr\.\)/,
 				   'second ImportantAngleCrossingName', '.html');
+    }
+
+ XXX: {
+	# Test possible "Aktuelle Position verwenden" flows
+	my($x,$y) = (10920,13139);
+	my $res;
+
+	$res = $ua->get("$action?start=Alexanderstr.%2FKarl-Liebknecht-Str.&startort=&startcharimg.x=&startcharimg.y=&startc=$x%2C$y&scvf=Alexanderstr.%2FKarl-Liebknecht-Str.&startmapimg.x=&startmapimg.y=&via=&viaort=&viacharimg.x=&viacharimg.y=&viamapimg.x=&viamapimg.y=&ziel=&zielort=&zielcharimg.x=&zielcharimg.y=&zielmapimg.x=&zielmapimg.y=&scope=");
+	ok $res->is_success or diag(Dumper($res));
+	$content = uncompr($res);
+	BBBikeTest::like_long_data($content, qr{Alexanderstr./Karl-Liebknecht-Str.},
+				   'Preserved geolocated position', '.html');
+	BBBikeTest::like_long_data($content, qr{startc value="$x,$y"},
+				   'Found startc position', '.html');
+
+	$res = $ua->get("$action?start=Dudenstr.&startort=&startcharimg.x=&startcharimg.y=&startc=$x%2C$y&scvf=Alexanderstr.%2FKarl-Liebknecht-Str.&startmapimg.x=&startmapimg.y=&via=&viaort=&viacharimg.x=&viacharimg.y=&viamapimg.x=&viamapimg.y=&ziel=&zielort=&zielcharimg.x=&zielcharimg.y=&zielmapimg.x=&zielmapimg.y=&scope=");
+	ok $res->is_success or diag(Dumper($res));
+	$content = uncompr($res);
+	BBBikeTest::like_long_data($content, qr{Dudenstr.},
+				   'Geolocated position not preserved, user changed his mind', '.html');
+	BBBikeTest::unlike_long_data($content, qr{startc value="},
+				     'startc element does not exist', '.html');
+
+	$res = $ua->get("$action?start=Alexanderstr.%2FKarl-Liebknecht-Str.&startort=&startcharimg.x=&startcharimg.y=&startc=&scvf=&startmapimg.x=&startmapimg.y=&via=&viaort=&viacharimg.x=&viacharimg.y=&viamapimg.x=&viamapimg.y=&ziel=&zielort=&zielcharimg.x=&zielcharimg.y=&zielmapimg.x=&zielmapimg.y=&scope=");
+	ok $res->is_success or diag(Dumper($res));
+	$content = uncompr($res);
+	BBBikeTest::like_long_data($content, qr{Alexanderstr./Karl-Liebknecht-Str.},
+				   'Recalculated geolocated position', '.html');
+	BBBikeTest::like_long_data($content, qr{startc value="$x,$y"},
+				   'Found startc position (new geocoding)', '.html');
+
+	$res = $ua->get("$action?start=Alexanderstr.&startort=&startcharimg.x=&startcharimg.y=&startc=&scvf=&startmapimg.x=&startmapimg.y=&via=&viaort=&viacharimg.x=&viacharimg.y=&viamapimg.x=&viamapimg.y=&ziel=Dudenstr.&zielort=&zielcharimg.x=&zielcharimg.y=&zielmapimg.x=&zielmapimg.y=&scope=");
+	ok $res->is_success or diag(Dumper($res));
+	$content = uncompr($res);
+	BBBikeTest::like_long_data($content, qr{Alexanderstr.},
+				   'Normal street search', '.html');
+	BBBikeTest::unlike_long_data($content, qr{startc value="},
+				   'startc element does not exist', '.html');
+
     }
 
     # Klick on "D" in Start A..Z

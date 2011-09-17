@@ -828,7 +828,7 @@ $detailheight = 500;
 $nice_berlinmap = 0;
 $nice_abcmap    = 0;
 
-$bbbike_start_js_version = '1.18';
+$bbbike_start_js_version = '1.19';
 
 use vars qw(@b_and_p_plz_multi_files %is_usable_without_strassen %same_single_point_optimization);
 @b_and_p_plz_multi_files = 
@@ -1013,6 +1013,11 @@ foreach my $type (qw(start via ziel)) {
 	$q->param($type . 'c', "$x,$y");
 	$q->delete($type . 'c_wgs84');
     }
+
+    # normalize (undefined = unset)
+    if (defined $q->param($type . 'c') and $q->param($type . 'c') eq '') {
+	$q->delete($type . 'c');
+    }
 }
 
 {
@@ -1158,6 +1163,12 @@ if (defined $q->param("ossp") && $q->param("ossp") !~ m{^\s*$}) {
     }
 }
 
+# Check if startc is valid and delete if not
+# scvf=startcvalidfor
+if ($q->param('startc') && $q->param('scvf') && $q->param('scvf') ne $q->param('start')) {
+    $q->delete('startc');
+}
+
 if (defined $q->param('begin')) {
     $q->delete('begin');
     choose_form();
@@ -1249,11 +1260,11 @@ if (defined $q->param('begin')) {
     }
 } elsif (((defined $q->param('startname') and $q->param('startname') ne '')
 	  or
-	  (defined $q->param('startc') and $q->param('startc') ne ''))
+	  (defined $q->param('startc')))
 	 and
 	 ((defined $q->param('zielname')  and $q->param('zielname')  ne '')
 	  or
-	  (defined $q->param('zielc') and $q->param('zielc') ne ''))
+	  (defined $q->param('zielc')))
 	 and
 	 via_not_needed()
 	) {
@@ -2319,6 +2330,8 @@ EOF
 <script type="text/javascript"><!--
  $transpose_dot_func
 // --></script>
+<input type=hidden name="startc">
+<input type=hidden name="scvf">
 EOF
 	    }
 

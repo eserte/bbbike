@@ -330,12 +330,19 @@ function locate_me_res(res) {
   } else if (!res.bbbikepos) {
     alert("Es konnte keine Position gefunden werden.");
   } else {
-    document.forms["BBBikeForm"].elements["start"].value = res.crossing;
+    var bbbikeform = document.forms["BBBikeForm"];
+    bbbikeform.elements["start"].value = res.crossing;
     if (typeof transpose_dot_func == "function") {
       var xy = res.bbbikepos.split(/,/);
       var txy = transpose_dot_func(parseInt(xy[0]), parseInt(xy[1]));
       pos_rel("locateme_marker", "startmapbelow", txy[0], txy[1]);
       vis("locateme_marker", "show");
+      var startc_input = bbbikeform.elements["startc"];
+      var startcvalidfor_input = bbbikeform.elements["scvf"];
+      if (startc_input && startcvalidfor_input && res.bbbikepos) {
+	startc_input.value = res.bbbikepos;
+	startcvalidfor_input.value = res.crossing;
+      }
     }
   }
 }
