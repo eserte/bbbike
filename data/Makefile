@@ -1846,7 +1846,7 @@ do-doublechecks:	.doublecheck_strassen.tmp \
 .doublecheck_strassen.tmp:	.strassen.tmp
 	-rm /tmp/strassen-XXX
 	$(CONVERT2HAFAS) strassen-orig > /tmp/strassen-XXX
-	diff -I '#: alias:' -u .strassen.tmp /tmp/strassen-XXX
+	diff -I '#: alias:' -I '#: oldname' -u .strassen.tmp /tmp/strassen-XXX
 	rm /tmp/strassen-XXX
 	touch $@
 
