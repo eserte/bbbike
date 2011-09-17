@@ -192,7 +192,7 @@ sub teaser_beta {
 EOF
 	} else {
 	    <<EOF;
-<div class="teaser">Was gibt es in der <a href="$bbbike_url?info=1#beta" style="font-weight:normal;">nächsten Version</a> von www.bbbike.de?<br><b>NEU</b>: wahlweise Benutzung von Fähren</div>
+<div class="teaser">Was gibt es in der <a href="$bbbike_url?info=1#beta" style="font-weight:normal;">nächsten Version</a> von www.bbbike.de?<br></div>
 EOF
 	}
     } else {
