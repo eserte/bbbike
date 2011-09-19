@@ -97,7 +97,6 @@ use vars qw($VERSION $VERBOSE $WAP_URL
 	    @temp_blocking $temp_blocking_epoch
 	    $use_cgi_compress_gzip $use_bbbikedraw_compress $max_matches
 	    $use_winter_optimization $winter_hardness
-	    $with_fullsearch_radio
 	    $with_lang_switch
 	    $newstreetform_encoding
 	    $use_region_image
@@ -960,13 +959,6 @@ if ($q->param("tmp")) {
 # festgestellt werden
 user_agent_info();
 
-# XXX Do not do it automatically ...
-if (0 && $bi->{'wap_browser'}) {
-    exec("./wapbbbike.cgi", @ARGV);
-    warn "exec failed, try redirect...";
-    print $q->redirect($WAP_URL || $BBBike::BBBIKE_WAP);
-    my_exit(0);
-}
 # Die nervigen Java-Robots... wenn sie wenigstens korrekt crawlen
 # würden und robots.txt beachten würden...
 if ($q->user_agent =~ m{^Java/1\.} && ($q->query_string||'') eq '') {
@@ -1042,16 +1034,6 @@ foreach my $type (qw(start via ziel)) {
 		}
 	    }
 	}
-
-	# otherwise: old style with hardcoded german labels
-	if (defined $q->param('movemap')) {
-	    my $move = $q->param('movemap');
-	    $q->delete("movemap");
-	    if    ($move =~ /^nord/i) { $dy = -1 }
-	    elsif ($move =~ /^s.*d/i) { $dy = +1 }
-	    if    ($move =~ /west$/i) { $dx = -1 }
-	    elsif ($move =~ /ost$/i)  { $dx = +1 }
-	}
     }
 
     if ($dx || $dy) {
@@ -1104,41 +1086,6 @@ if (defined $q->param('detailmapx') and
     $q->delete('type');
 }
 
-# Ziel für stadtplandienst-kompatible Koordinaten setzen
-my $set_anyc = sub {
-    my($ll, $what) = @_;
-    # Ob die alte ...x...-Syntax noch unterstützt wird, ist fraglich...
-    my($long,$lat) = ($ll =~ /^[\+\ ]/
-		      ? $ll =~ /^[\+\-\ ]([0-9.]+)[\+\-\ ]([0-9.]+)/
-		      : split(/x/, $ll)
-		     );
-    if (defined $long && defined $lat) {
-	local $^W;
-	my($x, $y) = convert_wgs84_to_data($long, $lat);
-	new_kreuzungen(); # XXX needed in munich, here too?
-	$q->param($what . "c", get_nearest_crossing_coords($x,$y));
-    }
-};
-
-# schwache stadtplandienst-Kompatibilität
-# Note: ";" und "&" werden von CGI.pm gleichberechtigt behandelt
-if (defined $q->param('STR')) {
-    $q->param('ziel', $q->param('STR'));
-}
-if (defined $q->param('PLZ')) {
-    $q->param('zielplz', $q->param('PLZ'));
-}
-if (defined $q->param('LL')) {
-    $set_anyc->($q->param('LL'), "ziel");
-}
-# XXX The following two are deprecated and will be removed some day.
-if (defined $q->param('startpolar')) {
-    $set_anyc->($q->param('startpolar'), "start");
-}
-if (defined $q->param('zielpolar')) {
-    $set_anyc->($q->param('zielpolar'), "ziel");
-}
-
 # Params for opensearch
 if (defined $q->param("ossp") && $q->param("ossp") !~ m{^\s*$}) {
     (my $ossp = $q->param("ossp")) =~ s{^\s*}{};
@@ -1186,8 +1133,6 @@ if (defined $q->param('begin')) {
 } elsif (defined $q->param('bikepower')) {
     $q->delete('bikepower');
     call_bikepower();
-} elsif (defined $q->param('nahbereich')) {
-    nahbereich();
 } elsif (defined $q->param('mapserver')) {
     start_mapserver();
 } elsif (defined $q->param('routefile') and
@@ -1339,26 +1284,6 @@ EOF
 	print "<input type=image name=" . $type
 	  . "charimg src=\"$bbbike_images/abc.gif\" class=\"charmap\" alt=\"A..Z\">";
     }
-}
-
-# XXX fullsearch is NYI
-sub fullsearch_radio {
-    my($type, %args) = @_;
-
-    # XXX default/checked?
-    print <<EOF;
-<div style="font-size:smaller;">
-<label>
-  <input type="radio" name="${type}_searchin" value="b">
-  Berliner Straßen
-</label>
-&nbsp;&nbsp;&nbsp;
-<label>
-  <input type="radio" name="${type}_searchin" value="fulltext">
-  Volltext
-</label>
-</div>
-EOF
 }
 
 sub _outer_berlin_hack {
@@ -1533,16 +1458,13 @@ sub choose_form {
 		}
 	    }
 
-	    if (0 && # XXX preferences-seite!
-		$q->param("startc") and $q->param("zielc") and
-		((!defined $vianame || $vianame eq '') ||
-		 ($q->param("viac")))) {
-		search_coord();
-	    } else {
-		warn "Wähle Kreuzung für $startname und $zielname (1st)\n"
-		    if $debug;
-		get_kreuzung($startname, $vianame, $zielname);
-	    }
+	    # Previously here was a jump to search_coord() if
+	    # startc+zielc was defined. Now get_kreuzung() is
+	    # always called, because this is the page containing
+	    # the preference form.
+	    warn "Wähle Kreuzung für $startname und $zielname (1st)\n"
+		if $debug;
+	    get_kreuzung($startname, $vianame, $zielname);
 	    return;
 	}
     }
@@ -2290,10 +2212,6 @@ EOF
 	    }
 	    print "<br>";
 	    if (!$smallform) {
-		if ($with_fullsearch_radio) {
-		    fullsearch_radio();
-		}
-
 		abc_link($type, -nice => 1);
 
 		# XXX not translated
@@ -2934,11 +2852,6 @@ sub get_kreuzung {
     print "<hr>\n";
 
     suche_button();
-## Nahbereich ist nur verwirrend...
-#      # probably tkweb - work around form submit bug
-#      if ($q->user_agent !~ m|libwww-perl|) {
-#  	print " <font size=\"-1\"><input type=submit name=nahbereich value=\"Nahbereich\"></font>\n";
-#      }
     footer();
     print "<input type=hidden name=scope value='" .
 	(defined $q->param("scope") ? $q->param("scope") : "") . "'>";
@@ -6960,45 +6873,6 @@ sub choose_all_form {
 	};
 	warn $@ if $@; #XXX remove?
     }
-}
-
-sub nahbereich {
-    my($startc, $zielc, $startname, $zielname) =
-      ($q->param('startc'), $q->param('zielc'),
-       $q->param('startname'),$q->param('zielname'));
-    http_header(@weak_cache);
-    header();
-    print "Kreuzung im Nahbereich angeben:<p>\n";
-    new_kreuzungen();
-    my($startx, $starty) = split(/,/, $startc);
-    my($zielx,  $ziely)  = split(/,/, $zielc);
-    print "<form action=\"$bbbike_script\">";
-    print "<b>Start</b>:<br>\n";
-    print "<input type=hidden name=startname value=\"$startname\">";
-    my $i = 0;
-    foreach ($kr->nearest_loop($startx, $starty)) {
-	print "<input type=radio name=startc value=\"$_\"";
-	if ($i++ == 0) {
-	    print " checked";
-	}
-	print "> ", nice_crossing_name(@{$crossings->{$_}}), "<br>\n";
-    }
-    print "<hr>";
-    print "<input type=hidden name=zielname value=\"$zielname\">";
-    print "<b>Ziel</b>:<br>\n";
-    $i = 0;
-    foreach ($kr->nearest_loop($zielx, $ziely)) {
-	print "<input type=radio name=zielc value=\"$_\"";
-	if ($i++ == 0) {
-	    print " checked";
-	}
-	print "> ", nice_crossing_name(@{$crossings->{$_}}), "<br>\n";
-    }
-    print "<hr>";
-    suche_button();
-    footer();
-    print "</form>\n";
-    print $q->end_html;
 }
 
 sub get_nearest_crossing_coords {
