@@ -280,7 +280,7 @@ Nicht-BSD-Systeme (auch Linux) benötigen dieses make, dass bei <ulink
 url="http://sourceforge.net/project/showfiles.php?group_id=91459&amp;package_id=115420">Sourceforge</> als
 <command>pmake</> im Quellcode erhältlich ist. Debian-Benutzer können
 das Kommando <command>freebsd-make</> aus dem
-Paket <command>freebsd-buildutils</> verwenden. Eine Windows-Binary
+Paket <command>freebsd-buildutils</> verwenden. Ein Windows-Binary
 existiert noch nicht.
 <!-- check, ob "make install" bei pmake existiert und das -->
 <!-- original-make überschreiben würde, böse, böse -->
