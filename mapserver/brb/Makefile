@@ -2,7 +2,7 @@
 # $Id: Makefile,v 1.74 2009/06/07 21:08:29 eserte Exp $
 #
 
-# Please run this file with BSD make (often called pmake).
+# Please run this file with BSD make (often called freebsd-make or pmake).
 # It is assumed that this directory is an subdirectory of the bbbike
 # distribution like this:
 #	.../bbbike

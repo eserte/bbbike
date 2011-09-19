@@ -65,7 +65,7 @@ if (!GetOptions("n" => sub { $do_exec = 0; $verbose = 1; },
 die "Works only on the source system and not on Win32"
     if $^O eq 'MSWin32';
 
-my $make = $^O =~ m{bsd}i ? "make" : "pmake";
+my $make = $^O =~ m{bsd}i ? "make" : is_in_path("freebsd-make") ? "freebsd-make" : "pmake";
 if (!is_in_path($make)) {
     die "The $make program is not available.\n";
 }

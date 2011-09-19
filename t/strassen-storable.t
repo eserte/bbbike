@@ -15,6 +15,7 @@ use lib ("$FindBin::RealBin/..",
 use Strassen;
 use Benchmark;
 use Getopt::Long;
+use BBBikeUtil qw(is_in_path);
 
 BEGIN {
     if (!eval q{
@@ -45,7 +46,7 @@ if (!GetOptions("fast" => \$fast,
 
 use vars qw($token %times $ext);
 
-my $make = $^O =~ m{bsd}i ? "make" : "pmake";
+my $make = $^O =~ m{bsd}i ? "make" : is_in_path("freebsd-make") ? "freebsd-make" : "pmake";
 
 unless ($fast) {
     warn "Regenerating storable files in data, please be patient...\n";

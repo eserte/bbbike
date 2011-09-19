@@ -26,6 +26,7 @@ use CGI qw();
 use Getopt::Long;
 use Safe ();
 
+use BBBikeUtil qw(is_in_path);
 use BBBikeTest qw(get_std_opts like_html unlike_html $cgidir
 		  xmllint_string gpxlint_string kmllint_string);
 
@@ -41,7 +42,7 @@ if (!GetOptions(get_std_opts("cgidir"),
 }
 
 {
-    my $make = $^O =~ m{bsd}i ? "make" : "pmake";
+    my $make = $^O =~ m{bsd}i ? "make" : is_in_path("freebsd-make") ? "freebsd-make" : "pmake";
     # -f BSDmakefile needed for old pmake (which may be found in Debian)
     system("cd $FindBin::RealBin/data && $make -f BSDmakefile");
     diag "Error running make, expect test failures..." if $? != 0;

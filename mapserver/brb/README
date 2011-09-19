@@ -7,7 +7,7 @@ Rough installation procedure on a Debian system:
 
    * Install the following packages:
 
-         sudo apt-get install pmake apache2 cgi-mapserver \
+         sudo apt-get install freebsd-make apache2 cgi-mapserver \
                               mapserver-bin libclass-accessor-perl \
                               libxbase-perl libtext-unidecode-perl \
 			      libwww-mechanize-formfiller-perl \
@@ -15,7 +15,7 @@ Rough installation procedure on a Debian system:
 
    * Prepare apache:
 
-         (cd ../cgi && pmake httpd.conf)
+         (cd ../cgi && freebsd-make httpd.conf)
 
      The resulting httpd.conf should be included into apache, e.g.
 
@@ -32,12 +32,12 @@ Rough installation procedure on a Debian system:
 
    * Create the mapserver data:
 
-         (cd ../data && pmake mapfiles)
+         (cd ../data && freebsd-make mapfiles)
 
    * Create the mapserver templates and mapfiles:
 
          touch -t 197001010000 Makefile.local.inc
-         pmake
+         freebsd-make
 
    * Point your browser to http://localhost/bbbike/cgi/bbbike.cgi
      bbbike should appear. In the footer there's a link to the
@@ -47,4 +47,4 @@ Rough installation procedure on a Debian system:
      use a real (external) hostname run
 
          touch -t 197001010000 Makefile.automatic.inc
-         pmake TARGET=automatic WWW_HOST=www.example.com
+         freebsd-make TARGET=automatic WWW_HOST=www.example.com
