@@ -5579,6 +5579,7 @@ sub draw_route {
 	my $filename = ($startname && $zielname ? filename_from_route($startname, $zielname, "bbbike") : "bbbike");
 	http_header
 	    (-type => "application/pdf",
+	     -charset => '', # CGI 3.52..3.55 writes charset for non text/* stuff, see https://rt.cpan.org/Public/Bug/Display.html?id=67100
 	     @header_args,
 	     -Content_Disposition => "inline; filename=$filename.pdf",
 	    );
@@ -5622,6 +5623,7 @@ sub draw_route {
     if (!$header_written && !$draw->module_handles_all_cgi) {
 	http_header
 	    (-type => $draw->mimetype,
+	     -charset => '', # CGI 3.52..3.55 writes charset even for image/* stuff, see https://rt.cpan.org/Public/Bug/Display.html?id=67100
 	     @header_args,
 	     -Content_Disposition => "inline; filename=bbbike.".$draw->suffix,
 	    );
