@@ -910,7 +910,7 @@ sub build_search_code {
     #      weitere Array-Elemente sind optional ...]
     use vars qw($use_heap);
     $use_heap = 0 if !defined $use_heap; # XXX the heap version seems to be faster, but first do some tests and enable it after 3.13 RELEASE.
-    if ($use_heap && !eval q{ require Array::Heap2; import Array::Heap2; 1 }) {
+    if ($use_heap && !eval q{ require Array::Heap; Array::Heap->VERSION(2); import Array::Heap; 1 }) {
 	$use_heap = 0;
     }
     $code .= '
