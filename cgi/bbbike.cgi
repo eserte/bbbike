@@ -2243,6 +2243,7 @@ EOF
 		print <<EOF;
 <div id="locateme" style="visibility:hidden;">
   <a href="javascript:locate_me()">@{[ M("Aktuelle Position verwenden") ]}</a>
+  <a class="yellowbox" style="text-decoration:none" target="BBBikeHelp" href="$bbbike_html/help.html#geolocation">?</a>
 </div>
 <div id="locateme_marker" style="position:absolute; visibility:hidden;"><img src="$bbbike_images/bluedot.png" border=0 width=8 height=8></div>
 <script type="text/javascript"><!--
