@@ -2,7 +2,6 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikerouting.t,v 1.33 2009/01/03 20:46:11 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -507,18 +506,55 @@ sub clone {
 
 __END__
 
-Benchmark results (2005-03-06, FreeBSD 4.9, perl 5.8.0):
+=pod
 
-Algorithm=C-A*-2, UseXS=1, UseNetServer=0, UseCache=1 (CDB_File): 12.734375
-Algorithm=C-A*, UseXS=1, UseNetServer=0, UseCache=1 (CDB_File): 21.0625
-Algorithm=A*, UseXS=1, UseNetServer=0, UseCache=1 (Storable): 23.9375
-Algorithm=A*, UseXS=0, UseNetServer=0, UseCache=1 (Storable): 24.2890625
-Algorithm=A*, UseXS=1, UseNetServer=0, UseCache=1 (CDB_File): 47.515625
+Benchmark results (2011-09-20, FreeBSD 8.0, perl 5.8.9, AMD Athlon64 3500+):
 
-Mit $StrassenNetz::use_heap=1:
+ Algorithm=C-A*-2, UseXS=1, UseNetServer=0, UseCache=1 (CDB_File): 7.140625
+ Algorithm=C-A*, UseXS=1, UseNetServer=0, UseCache=1 (CDB_File): 10.984375
+ Algorithm=A*, UseXS=1, UseNetServer=0, UseCache=1 (Storable): 14.0546875
+ Algorithm=A*, UseXS=0, UseNetServer=0, UseCache=1 (Storable): 14.5703125
+ Algorithm=A*, UseXS=1, UseNetServer=0, UseCache=1 (CDB_File): 27.9921875
 
-Algorithm=C-A*-2, UseXS=1, UseNetServer=0, UseCache=1 (CDB_File): 12.9140625
-Algorithm=C-A*, UseXS=1, UseNetServer=0, UseCache=1 (CDB_File): 21.3125
-Algorithm=A*, UseXS=1, UseNetServer=0, UseCache=1 (Storable): 23.2421875
-Algorithm=A*, UseXS=0, UseNetServer=0, UseCache=1 (Storable): 23.6484375
-Algorithm=A*, UseXS=1, UseNetServer=0, UseCache=1 (CDB_File): 45.875
+With $StrassenNetz::use_heap=1:
+
+ Algorithm=C-A*-2, UseXS=1, UseNetServer=0, UseCache=1 (CDB_File): 7.1953125
+ Algorithm=C-A*, UseXS=1, UseNetServer=0, UseCache=1 (CDB_File): 11.046875
+ Algorithm=A*, UseXS=1, UseNetServer=0, UseCache=1 (Storable): 12.234375
+ Algorithm=A*, UseXS=0, UseNetServer=0, UseCache=1 (Storable): 12.5546875
+ Algorithm=A*, UseXS=1, UseNetServer=0, UseCache=1 (CDB_File): 23.78125
+
+Benchmark results (2011-09-20, Debian/squeeze, perl 5.10.1, virtual
+instance):
+
+ Algorithm=C-A*-2, UseXS=1, UseNetServer=0, UseCache=1 (CDB_File): 3.52
+ Algorithm=C-A*, UseXS=1, UseNetServer=0, UseCache=1 (CDB_File): 5.44
+ Algorithm=A*, UseXS=1, UseNetServer=0, UseCache=1 (Storable): 6.29
+ Algorithm=A*, UseXS=0, UseNetServer=0, UseCache=1 (Storable): 6.67
+ Algorithm=A*, UseXS=1, UseNetServer=0, UseCache=1 (CDB_File): 12.7
+
+With $StrassenNetz::use_heap=1:
+
+ Algorithm=C-A*-2, UseXS=1, UseNetServer=0, UseCache=1 (CDB_File): 3.65
+ Algorithm=A*, UseXS=1, UseNetServer=0, UseCache=1 (Storable): 5.65
+ Algorithm=C-A*, UseXS=1, UseNetServer=0, UseCache=1 (CDB_File): 5.69
+ Algorithm=A*, UseXS=0, UseNetServer=0, UseCache=1 (Storable): 5.99
+ Algorithm=A*, UseXS=1, UseNetServer=0, UseCache=1 (CDB_File): 11.66
+
+Older benchmark results (2005-03-06, FreeBSD 4.9, perl 5.8.0):
+
+ Algorithm=C-A*-2, UseXS=1, UseNetServer=0, UseCache=1 (CDB_File): 12.734375
+ Algorithm=C-A*, UseXS=1, UseNetServer=0, UseCache=1 (CDB_File): 21.0625
+ Algorithm=A*, UseXS=1, UseNetServer=0, UseCache=1 (Storable): 23.9375
+ Algorithm=A*, UseXS=0, UseNetServer=0, UseCache=1 (Storable): 24.2890625
+ Algorithm=A*, UseXS=1, UseNetServer=0, UseCache=1 (CDB_File): 47.515625
+
+With $StrassenNetz::use_heap=1:
+
+ Algorithm=C-A*-2, UseXS=1, UseNetServer=0, UseCache=1 (CDB_File): 12.9140625
+ Algorithm=C-A*, UseXS=1, UseNetServer=0, UseCache=1 (CDB_File): 21.3125
+ Algorithm=A*, UseXS=1, UseNetServer=0, UseCache=1 (Storable): 23.2421875
+ Algorithm=A*, UseXS=0, UseNetServer=0, UseCache=1 (Storable): 23.6484375
+ Algorithm=A*, UseXS=1, UseNetServer=0, UseCache=1 (CDB_File): 45.875
+
+=cut
