@@ -1919,16 +1919,6 @@ userdel	3 12992,7545 13015,7440 12925,7425
          'data' => 'userdel	2::inwork 872,24330 905,24113 831,24054 764,24065 609,24215 237,24374 195,24389 132,24390 78,24364 -406,23934
 ',
          'type' => 'gesperrt'
-       },
-       {
-         'source_id' => 'IM_017830',
-         'until' => 1316383140,
-         'text' => 'Hauptstr. (Rosenthal): Veranstaltung, Straße vollständig gesperrt zwischen Schönhauser Str. und An der Vogelweide, 16.09.2011 07:00 Uhr bis 18.09.2011 23:59 Uhr ',
-         'from' => 1316062800,
-         'id' => 2285,
-         'data' => 'userdel	q4::temp 8591,21906 8460,21602
-',
-         'type' => 'handicap'
        }
      
 );
