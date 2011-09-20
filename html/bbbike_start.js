@@ -328,7 +328,8 @@ function locate_me_res(res) {
   if (!res) {
     alert("Die Positionierung konnte nicht durchgeführt werden.");
   } else if (!res.bbbikepos) {
-    alert("Es konnte keine Position gefunden werden.");
+    //alert("Es konnte keine Position gefunden werden.");
+    redirect_to_bbbikeorg(res.origlon, res.origlat);
   } else {
     var bbbikeform = document.forms["BBBikeForm"];
     bbbikeform.elements["start"].value = res.crossing;
@@ -349,7 +350,8 @@ function locate_me_res(res) {
 
 function call_bbbike_api(action, params, cb) {
   var client = new XMLHttpRequest();
-  client.open("GET", "bbbike.cgi?api=" + action + (params != "" ? ";" + params : ""), true);
+  var url = "bbbike.cgi?api=" + action + (params != "" ? ";" + params : "");
+  client.open("GET", url, true);
   client.send();
   client.onreadystatechange = function() {
     if (this.readyState == 4) { // DONE
@@ -357,6 +359,32 @@ function call_bbbike_api(action, params, cb) {
       cb(res);
     }
   };
+}
+
+function call_bbbikeorg_location(lng, lat, cb_success, cb_fail) {
+  var client = new XMLHttpRequest();
+  var url = "http://www.bbbike.org/cgi/location.cgi?lng=" + lng + "&lat=" + lat;
+//  var url = "http://devel.bbbike.org/cgi/location.cgi?lng=" + lng + "&lat=" + lat;
+  client.open("GET", url, true);
+  client.send();
+  client.onreadystatechange = function() {
+    if (this.readyState == 4) { // DONE
+      eval("res = " + client.responseText);
+      if (res.length) {
+	cb_success(res[0]);
+      } else {
+	cb_fail();
+      }
+    }
+  };
+}
+
+function redirect_to_bbbikeorg(lng, lat) {
+  call_bbbikeorg_location(lng, lat, function(city) {
+      window.location = "http://www.bbbike.org/" + city + "?startc_wgs84=" + lng + "," + lat;
+    }, function() {
+      alert("Die Position " + lng + "," + lat + " wird von bbbike.de und bbbike.org nicht unterstützt.");
+    });
 }
 
 // Local variables:
