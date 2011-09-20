@@ -54,9 +54,11 @@ sub action_revgeocode {
 	@cr = @cr[0,1] if @cr > 2; # bbbike.cgi can deal only with A/B
 	$cr = join("/", @cr);
     }
-    print $q->header('text/plain');
+    print $q->header(-type => 'text/plain', -access_control_allow_origin => '*');
     print JSON::XS->new->ascii->encode({ crossing => $cr,
 					 bbbikepos => $xy,
+					 origlon => $lon,
+					 origlat => $lat,
 				       });
 }
 
