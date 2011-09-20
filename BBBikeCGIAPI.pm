@@ -48,9 +48,12 @@ sub action_revgeocode {
     # anderes ist! -> beste Lösung: alle Funktionen von bbbike.cgi
     # müssen in ein Package überführt werden
     my $xy = main::get_nearest_crossing_coords($x,$y);
-    my @cr = split m{/}, main::crossing_text($xy);
-    @cr = @cr[0,1] if @cr > 2; # bbbike.cgi can deal only with A/B
-    my $cr = join("/", @cr);
+    my $cr;
+    if (defined $xy) {
+	my @cr = split m{/}, main::crossing_text($xy);
+	@cr = @cr[0,1] if @cr > 2; # bbbike.cgi can deal only with A/B
+	$cr = join("/", @cr);
+    }
     print $q->header('text/plain');
     print JSON::XS->new->ascii->encode({ crossing => $cr,
 					 bbbikepos => $xy,

@@ -23,12 +23,18 @@ BEGIN {
 
 use BBBikeTest qw($cgidir);
 
-plan tests => 10;
+plan tests => 12;
 
 my $ua = LWP::UserAgent->new;
 $ua->agent('BBBikeTest/1.0');
 
 my $cgiurl = "$cgidir/bbbike-test.cgi";
+
+{
+    my $data = do_revgeocode_api_call(8.4704348, 49.6046202, 'outside scope (Mannheim)');
+    is_deeply($data, {crossing  => undef,
+		      bbbikepos => undef});
+}
 
 {
     my $data = do_revgeocode_api_call(13.460589, 52.507395);
