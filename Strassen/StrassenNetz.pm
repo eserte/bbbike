@@ -944,11 +944,11 @@ sub build_search_code {
             return @res;
         }
 
-        my $min_node;
-        my $min_node_f = Strassen::Util::infinity();
 '; if ($use_heap) { $code .= '
 	my($min_node_f, $min_node) = @{ pop_heap @OPEN };
 '; } else { $code .= '
+        my $min_node;
+        my $min_node_f = Strassen::Util::infinity();
         foreach (keys %OPEN) {
             if ($NODES{$_}->[HEURISTIC_DIST] < $min_node_f) {
                 $min_node = $_;
