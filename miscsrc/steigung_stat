@@ -388,9 +388,13 @@ EOF
 	}
     }
 
-    {
-	open my $ofh, ">", "/tmp/problematic_elevations.bbd"
-	    or warn $!;
+ PROBLEMATIC_ELEVATIONS: {
+	my $outfile = "/tmp/problematic_elevations_$<.bbd";
+	open my $ofh, ">", $outfile
+	    or do {
+		warn "Cannot write to $outfile: $!";
+		last PROBLEMATIC_ELEVATIONS;
+	    };
 	print $ofh <<EOF;
 #: XXX layer_line_width not yet supported by bbbike
 #: layer_line_width: 20
