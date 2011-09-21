@@ -7,7 +7,7 @@ Rough installation procedure on a Debian system:
 
    * Install the following packages:
 
-         sudo apt-get install freebsd-make apache2 cgi-mapserver \
+         sudo apt-get install freebsd-buildutils apache2 cgi-mapserver \
                               mapserver-bin libclass-accessor-perl \
                               libxbase-perl libtext-unidecode-perl \
 			      libwww-mechanize-formfiller-perl \
@@ -15,7 +15,7 @@ Rough installation procedure on a Debian system:
 
    * Prepare apache:
 
-         (cd ../cgi && freebsd-make httpd.conf)
+         (cd ../../cgi && freebsd-make httpd.conf)
 
      The resulting httpd.conf should be included into apache, e.g.
 
@@ -28,11 +28,11 @@ Rough installation procedure on a Debian system:
    * Create a bbbike.cgi.config. The provided bbbike-debian.cgi.config
      should be good enough:
 
-         (cd ../cgi && ln -s bbbike-debian.cgi.config bbbike.cgi.config)
+         (cd ../../cgi && ln -s bbbike-debian.cgi.config bbbike.cgi.config)
 
    * Create the mapserver data:
 
-         (cd ../data && freebsd-make mapfiles)
+         (cd ../../data && freebsd-make mapfiles)
 
    * Create the mapserver templates and mapfiles:
 
