@@ -1874,16 +1874,7 @@ userdel	q4::inwork 2295,20358 2362,20218 2402,20126
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'http://www.berlin.de/ba-pankow/presse/archiv/20110902.1020.357195.html',
-         'until' => 1316469599,
-         'text' => 'Buchholzer Straße, Einbahnstraße zwischen Beuthstraße und Herthaplatz, von 5. September 2011 bis 19. September 2011',
-         'from' => 1315087200,
-         'id' => 2277,
-         'data' => 'userdel	q4::inwork; 10599,19957 10609,19971 10802,20240 10843,20301
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1919,6 +1910,28 @@ userdel	3 12992,7545 13015,7440 12925,7425
          'data' => 'userdel	2::inwork 872,24330 905,24113 831,24054 764,24065 609,24215 237,24374 195,24389 132,24390 78,24364 -406,23934
 ',
          'type' => 'gesperrt'
+       },
+       undef,
+       undef,
+       {
+         'source_id' => 'IM_017857',
+         'until' => 1316743200,
+         'text' => 'John-Foster-Dulles-Allee (Tiergarten): Veranstaltung, Straße gesperrt zwischen Spreeweg und Yitzhak-Rabin-Str., 20.09.2011 08:00 Uhr bis 23.09.2011 04:00 Uhr ',
+         'from' => 1316412000,
+         'id' => 2287,
+         'data' => 'userdel	q4::temp 7039,12314 7215,12295 7437,12368 7514,12387 7627,12380 7821,12367 7875,12363 8017,12359 8070,12409 8119,12414
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_017861',
+         'until' => 1316750400,
+         'text' => 'Straße des 17. Juni (Tiergarten): Veranstaltung, Straße gesperrt zwischen Y.-Rabin-Str. und Ebertstr., 21.09.2011 06:00 Uhr bis 23.09.2011 06:00 Uhr ',
+         'from' => 1316491200,
+         'id' => 2288,
+         'data' => 'userdel	q4::temp 8089,12190 8214,12205 8538,12245
+',
+         'type' => 'handicap'
        }
      
 );

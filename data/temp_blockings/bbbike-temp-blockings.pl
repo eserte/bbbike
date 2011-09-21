@@ -19738,4 +19738,22 @@ EOF
 userdel	q4::temp 751,2860 589,2925
 EOF
      },
+     { from  => 1316412000, # 2011-09-19 08:00
+       until => 1316743200, # 2011-09-23 04:00
+       text  => 'John-Foster-Dulles-Allee (Tiergarten): Veranstaltung, Straße gesperrt zwischen Spreeweg und Yitzhak-Rabin-Str., 20.09.2011 08:00 Uhr bis 23.09.2011 04:00 Uhr ',
+       type  => 'handicap',
+       source_id => 'IM_017857',
+       data  => <<EOF,
+userdel	q4::temp 7039,12314 7215,12295 7437,12368 7514,12387 7627,12380 7821,12367 7875,12363 8017,12359 8070,12409 8119,12414
+EOF
+     },
+     { from  => 1316491200, # 2011-09-20 06:00
+       until => 1316750400, # 2011-09-23 06:00
+       text  => 'Straße des 17. Juni (Tiergarten): Veranstaltung, Straße gesperrt zwischen Y.-Rabin-Str. und Ebertstr., 21.09.2011 06:00 Uhr bis 23.09.2011 06:00 Uhr ',
+       type  => 'handicap',
+       source_id => 'IM_017861',
+       data  => <<EOF,
+userdel	q4::temp 8089,12190 8214,12205 8538,12245
+EOF
+     },
     );
