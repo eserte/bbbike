@@ -41,6 +41,10 @@
     END
 -%]
 
+# Special development CGI
+[%# without modperl support, just a cgi -%]
+ScriptAlias [% ROOT_URL %]/cgi/browserinfo.cgi [% ROOT_DIR %]/lib/BrowserInfo.pm
+
 # HTML ... documents
 Alias [% ROOT_URL %]  [% ROOT_DIR %]
 
