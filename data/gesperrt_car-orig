@@ -99,11 +99,11 @@ Heinrich-Roller-Str. - Prenzlauer Allee	3 11616,13911 11435,14023 11389,13887
 Allerstr.	1 11879,7720 12055,7751
 Hiddenseer Str.	1 11657,15271 11828,15210
 Koserstr.	1 2950,6141 3112,6090 3118,6140 3209,6206 3309,6270
-Offenbacher Str.	1 4515,7743 4575,7675 4785,7609 5039,7627
+Offenbacher Str.	1 4506,7734 4559,7672 4785,7609 5039,7627
 Wassergasse	1 11034,11895 11022,11782
 Kienitzer Str.	1 12830,8031 12692,7996 12583,7974 12466,7946
 Alt-Mariendorf (Nord)	1 9065,3693 9106,3703 9275,3753 9410,3793 9731,3889
-# seit November/Dezember 2007 (Bau der Ampel) nicht mehr: Modersohnstr. - B96a	3 14007,10802 13919,10583 14103,10489
+# seit November/Dezember 2007 (Bau der Ampel) nicht mehr: Modersohnstr. - B96a	3 14007,10802 13919,10583 13986,10549 14103,10489
 Almstadtstr.	1 10790,13565 10767,13443 10757,13401 10699,13173
 Schendelgasse	1 10653,13493 10703,13467 10767,13443
 Mulackstr.	1 10304,13575 10406,13543 10535,13509 10640,13471
@@ -240,7 +240,7 @@ Sredzkistr. (ab Parkhaus Kulturbrauerei)	1 11101,14768 10893,14705
 Bahnübergang nur für Fußgänger/Radfahrer	3 * 20624,12133 *
 Zossener Str.: Straßenbahntrasse	3nocross 23080,15700 23218,15671 23411,15632 23568,15603 23617,15594
 #: note: nur temporär gültig
-Kleinmachnower Weg: Sa und So ist die Schranke an der Kreuzung Sachlebenstraße zu, für Kfz-Verkehr demnach gesperrt	2 269,-41 665,85 1345,184
+Kleinmachnower Weg: Sa und So ist die Schranke an der Kreuzung Sachlebenstraße zu, für Kfz-Verkehr demnach gesperrt	2 269,-41 665,85 941,125 1345,184
 #: by: Omi2006@... [AM]
 Hentigstr.	1 18514,8773 18548,8942 18586,9172 18621,9404
 #: by: Hubertus Fürther [AM]
@@ -308,7 +308,7 @@ Köpenicker Landstr.: Mittelstreifen	3nocross 16428,7144 16353,7226 16195,7398 15
 Buschallee: Straßenbahntrasse	3nocross 14809,16525 15134,16499 15142,16499 15388,16502
 Alt Mahlsdorf: Mittelstreifen	3nocross 24824,11256 24893,11252 25144,11215
 #: note: Luftbild
-Clayallee: Mittelstreifen	3nocross 1203,4047 1232,4129 1279,4265
+Clayallee: Mittelstreifen	3nocross 1214,4075 1232,4129 1279,4265
 #: note: Luftbild
 Cecilienstr.: Mittelstreifen	3nocross 21358,13909 21398,13906 21576,13898
 #: note: Luftbild
@@ -520,7 +520,7 @@ Margarete-Kühn-Str.: Poller am Salzufer	3 5203,12387 5133,12240 *
 Margarete-Kühn-Str.: Poller am Salzufer	3 * 5133,12240 5203,12387
 Eberswalder Str. (Bernau)	1 23109,30968 23103,30923 22922,30640
 Rutnikstr. - Möllendorffstr.: Abbiegen verboten	3 15648,12687 15546,12690 15550,12625
-Torgauer Str.: nur für Anlieger	2:Anlieger 7446,8200 7250,8223 7005,8150
+Torgauer Str.: nur für Anlieger	2:Anlieger 7446,8200 7402,8208 7250,8223 7005,8150
 #: by: Aaron Schaar, osm:
 Hermannswerder	1 -14301,-2871 -13718,-2991
 #: by: Ulf Lenski:

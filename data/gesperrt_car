@@ -111,7 +111,7 @@ Heinrich-Roller-Str. - Prenzlauer Allee	3 11616,13911 11435,14023 11389,13887
 Allerstr.	1 11879,7720 12055,7751
 Hiddenseer Str.	1 11657,15271 11828,15210
 Koserstr.	1 2950,6141 3112,6090 3118,6140 3209,6206 3309,6270
-Offenbacher Str.	1 4515,7743 4575,7675 4785,7609 5039,7627
+Offenbacher Str.	1 4506,7734 4559,7672 4785,7609 5039,7627
 Wassergasse	1 11034,11895 11022,11782
 Kienitzer Str.	1 12830,8031 12692,7996 12583,7974 12466,7946
 Alt-Mariendorf (Nord)	1 9065,3693 9106,3703 9275,3753 9410,3793 9731,3889
@@ -373,7 +373,7 @@ Mittenwalder Str. -> Zossener Str.: Straßenbahntrasse	3::igndisp 23441,15780 234
 Zossener Str. -> Mittenwalder Str.: Straßenbahntrasse	3::igndisp 23218,15671 23411,15632 23441,15780
 Teupitzer Str. -> Zossener Str.: Straßenbahntrasse	3::igndisp 23573,15627 23568,15603 23617,15594
 Zossener Str. -> Teupitzer Str.: Straßenbahntrasse	3::igndisp 23411,15632 23568,15603 23573,15627
-Kleinmachnower Weg: Sa und So ist die Schranke an der Kreuzung Sachlebenstraße zu, für Kfz-Verkehr demnach gesperrt	2 269,-41 665,85 1345,184
+Kleinmachnower Weg: Sa und So ist die Schranke an der Kreuzung Sachlebenstraße zu, für Kfz-Verkehr demnach gesperrt	2 269,-41 665,85 941,125 1345,184
 Hentigstr.	1 18514,8773 18548,8942 18586,9172 18621,9404
 Grottewitzstr.	1 21933,152 22145,208
 Schlichtallee	3nocross::ignrte 15639,10469 15758,10578 15982,10765
@@ -488,8 +488,8 @@ Buschallee -> Sulzfelder Str.: Straßenbahntrasse	3::igndisp 15142,16499 15134,16
 Mittelstreifen	3nocross::ignrte 24824,11256 24893,11252 25144,11215
 Alt-Mahlsdorf -> Theodorstr.: Mittelstreifen	3::igndisp 25144,11215 24893,11252 24907,11186
 Theodorstr. -> Alt-Mahlsdorf: Mittelstreifen	3::igndisp 24907,11186 24893,11252 24824,11256
-Mittelstreifen	3nocross::ignrte 1203,4047 1232,4129 1279,4265
-Clayallee -> Katharinenstr.: Mittelstreifen	3::igndisp 1203,4047 1232,4129 1180,4136
+Mittelstreifen	3nocross::ignrte 1214,4075 1232,4129 1279,4265
+Clayallee -> Katharinenstr.: Mittelstreifen	3::igndisp 1214,4075 1232,4129 1180,4136
 Katharinenstr. -> Clayallee: Mittelstreifen	3::igndisp 1180,4136 1232,4129 1279,4265
 Mittelstreifen	3nocross::ignrte 21358,13909 21398,13906 21576,13898
 Fridolinweg -> Cecilienstr.: Mittelstreifen	3::igndisp 21412,14023 21398,13906 21576,13898
@@ -905,7 +905,7 @@ Margarete-Kühn-Str.: Poller am Salzufer	3 5018,12322 5133,12240 5203,12387
 Margarete-Kühn-Str.: Poller am Salzufer	3 5194,12176 5133,12240 5203,12387
 Eberswalder Str. (Bernau)	1 23109,30968 23103,30923 22922,30640
 Rutnikstr. - Möllendorffstr.: Abbiegen verboten	3 15648,12687 15546,12690 15550,12625
-Torgauer Str.: nur für Anlieger	2:Anlieger 7446,8200 7250,8223 7005,8150
+Torgauer Str.: nur für Anlieger	2:Anlieger 7446,8200 7402,8208 7250,8223 7005,8150
 Hermannswerder	1 -14301,-2871 -13718,-2991
 Neue Schönholzer Str.	1 10089,18180 10140,18080 10179,17772
 Kleine Kurstr.	1 10230,11839 10183,11770

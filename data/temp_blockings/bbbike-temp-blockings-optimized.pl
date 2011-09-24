@@ -1786,16 +1786,7 @@ userdel	q4::inwork 2295,20358 2362,20218 2402,20126
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_016196',
-         'until' => 1316786400,
-         'text' => 'Köpenicker Str. (Altglienicke): Baustelle, für beide Richtungen nur ein Fahrstreifen abwechselnd frei (bis Ende 09/11) in beiden Richtungen zwischen Korkedamm und Semmelweisstr., 09.08.2010 07:00 Uhr bis 23.09.2011 16:00 Uhr ',
-         'from' => 1281243600,
-         'id' => 2253,
-         'data' => 'userdel	q4::inwork 19812,1923 19840,2010 19939,2074 20100,2247
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1910,28 +1901,6 @@ userdel	3 12992,7545 13015,7440 12925,7425
          'data' => 'userdel	2::inwork 872,24330 905,24113 831,24054 764,24065 609,24215 237,24374 195,24389 132,24390 78,24364 -406,23934
 ',
          'type' => 'gesperrt'
-       },
-       undef,
-       undef,
-       {
-         'source_id' => 'IM_017857',
-         'until' => 1316743200,
-         'text' => 'John-Foster-Dulles-Allee (Tiergarten): Veranstaltung, Straße gesperrt zwischen Spreeweg und Yitzhak-Rabin-Str., 20.09.2011 08:00 Uhr bis 23.09.2011 04:00 Uhr ',
-         'from' => 1316412000,
-         'id' => 2287,
-         'data' => 'userdel	q4::temp 7039,12314 7215,12295 7437,12368 7514,12387 7627,12380 7821,12367 7875,12363 8017,12359 8070,12409 8119,12414
-',
-         'type' => 'handicap'
-       },
-       {
-         'source_id' => 'IM_017861',
-         'until' => 1316750400,
-         'text' => 'Straße des 17. Juni (Tiergarten): Veranstaltung, Straße gesperrt zwischen Y.-Rabin-Str. und Ebertstr., 21.09.2011 06:00 Uhr bis 23.09.2011 06:00 Uhr ',
-         'from' => 1316491200,
-         'id' => 2288,
-         'data' => 'userdel	q4::temp 8089,12190 8214,12205 8538,12245
-',
-         'type' => 'handicap'
        }
      
 );

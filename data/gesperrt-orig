@@ -1449,7 +1449,8 @@ tragen (Treppe)	0:30 3281,15792
 tragen (ca. 35 Stufen)	0:30 3361,15784
 #: by: ^^^
 #: by: Alwin (...schock):
-tragen (ca. 40 Stufen)	0:30 1761,3208
+#: corrected_by: srt (40 -> 4x8)
+tragen (4 x 8 Stufen)	0:30 1761,3208
 #: note: Luftbild (Stufenanzahl)
 tragen (ca. 30 Stufen)	0:30 17757,11761
 tragen (15 Stufen)	0:30 4710,23263
@@ -1534,6 +1535,7 @@ tragen (Treppe)	0:35 17026,11810
 #: by: peer.weyrauch, bestätigt durch die neue ADFC-Karte:
 tragen (S-Bhf. Raoul-Wallenberg-Str.)	0:30 20050,16292
 #: by: Katharina Hoffmann: vvv
+#: confirmed_by: srt
 tragen (ca. 40 Stufen)	0:59 1659,3226
 tragen (Treppe)	0:30 1715,3257
 #: by: ^^^
@@ -1582,6 +1584,7 @@ tragen, langgezogene Stufen (13 Stufen)	0:25 20704,1383
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+Tor	BNP:10 1707,1256
 #: by: MG
 Schranke	BNP:1::trailer=3 21514,11796
 Drängelgitter	BNP:3::trailer=10 8357,9598
@@ -1953,7 +1956,7 @@ Radweg parallel zur Autobahn ist wegen Bauarbeiten am BAB gesperrt	2:inwork 5062
 #XXX del --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1002/nachricht3772.html --- #: next_check: 2010-10-01 --- Brücke über A10: Sperrung vom 15.02.2010 bis 01.10.2010	2:inwork 15337,24593 15490,24848
 #XXX del --- #: last_checked: 2010-09-11 --- #: next_check: 2010-12-31 --- #: XXX der Neubau wird "N" oder "NH" sein und Radwege haben --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0907/nachricht3563.html --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1005/nachricht3870.html --- #: by: http://www.altglienicke.de/aktuell.php : Sperrung aufgehoben (20.05.11) --- Wegedornbrücke: Vollsperrung, Neubau	2:inwork 20385,593 20442,564 20510,530 20534,501
 # 
-#: next_check: 2012-02-15
+#: next_check: 2012-02-01
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1108/nachricht4438.html
 Rathausbrücke: gesperrt (Neubau), Fertigstellung und Verkehrsfreigabe im Frühjahr 2012	2:inwork 10362,12351 10422,12395
 # 
@@ -1994,7 +1997,7 @@ Drängelgitter	BNP:5 4386,6288
 Drängelgitter	BNP:5 4351,6307
 Heimstättenweg (kein öffentlicher Verkehr)	2 4355,6207 4323,6131 4268,6154
 Markobrunner Str.	1 4374,7016 4462,7137 4593,7167
-Deidesheimer Str.	1 4983,7546 4784,7534 4616,7563 4497,7595
+Deidesheimer Str.	1 4983,7546 4784,7534 4616,7563 4486,7597
 Landauer Str.	1 4578,7358 4786,7327
 Eschenstr. (Friedenau)	1 5067,7523 5121,7523 5158,7560
 (Zur Dillenburger Str.)	1 3837,6926 3964,6928 4000,6852
@@ -2105,7 +2108,7 @@ schieben (steile Treppe mit seitlicher Rampe)	0:180 1319,7444
 Clayallee: Mittlestreifen wg. Leitplanke nicht zu queren	3nocross 1955,7531 1967,7561 1987,7593 2036,7653
 Clayallee: Mittelstreifen schlecht zu queren	3nocross 2116,7740 2094,7719 2036,7653
 #: by: MichaelM
-Clayallee: Mittelstreifen	3nocross 1136,3878 1152,3918 1203,4047
+Clayallee: Mittelstreifen	3nocross 1136,3878 1152,3918 1214,4075
 Am Zirkus	1 9239,12923 9170,13031 9145,13020 9118,13070
 Adele-Schreiber-Krieger-Str.	1s 8737,12757 8596,12748
 Virchowweg: schmale Toreinfahrt, Fußgänger und Bordstein	0:10 8548,13577

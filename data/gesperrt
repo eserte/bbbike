@@ -1390,8 +1390,8 @@ unbequem passierbarer Mittelstreifen	3nocross::ignrte 14381,12205 14427,12197 14
 Frankfurter Allee -> Mainzer Str.: unbequem passierbarer Mittelstreifen	3::igndisp 14488,12188 14427,12197 14357,12011
 Mainzer Str. -> Frankfurter Allee: unbequem passierbarer Mittelstreifen	3::igndisp 14357,12011 14427,12197 14381,12205
 unbequem passierbarer Mittelstreifen	3nocross::ignrte 13785,12292 13885,12279 14208,12235
-Liebigstr. -> Frankfurter Allee: unbequem passierbarer Mittelstreifen	3::igndisp 13905,12374 13885,12279 14208,12235
-Frankfurter Allee -> Liebigstr.: unbequem passierbarer Mittelstreifen	3::igndisp 13785,12292 13885,12279 13905,12374
+Liebigstr. -> Frankfurter Allee: unbequem passierbarer Mittelstreifen	3::igndisp 13927,12370 13885,12279 14208,12235
+Frankfurter Allee -> Liebigstr.: unbequem passierbarer Mittelstreifen	3::igndisp 13785,12292 13885,12279 13927,12370
 unbequem passierbarer Mittelstreifen	3nocross::ignrte 9701,11656 9898,11679 9981,11689
 Leipziger Str. -> Jerusalemer Str.: unbequem passierbarer Mittelstreifen	3::igndisp 9701,11656 9898,11679 9892,11752
 Mittelstreifen mit Straﬂenbahn	3nocross::ignrte 12177,14335 12228,14404 12266,14460 12317,14535
@@ -1848,7 +1848,7 @@ tragen (Treppe)	0:30:-267 1471,-311
 tragen (ca. 20 Stufen)	0:30:-221 730,13286
 tragen (Treppe)	0:30:-105 3281,15792
 tragen (ca. 35 Stufen)	0:30:-235 3361,15784
-tragen (ca. 40 Stufen)	0:30:56 1761,3208
+tragen (4 x 8 Stufen)	0:30:56 1761,3208
 tragen (ca. 30 Stufen)	0:30:53 17757,11761
 tragen (15 Stufen)	0:30:-198 4710,23263
 tragen (Treppe)	0:30:-65 1179,13532
@@ -1944,6 +1944,7 @@ tragen (Treppe, ca. 20 Stufen)	0:25:-108 19163,14981
 tragen (Treppe, ca. 20 Stufen)	0:25:-12 19160,14935
 tragen (Treppe)	0:30:70 89344,-5795
 tragen, langgezogene Stufen (13 Stufen)	0:25:-168 20704,1383
+Tor	BNP:10:-12 1707,1256
 Schranke	BNP:1:-142:trailer=3 21514,11796
 Dr‰ngelgitter	BNP:3:-181:trailer=10 8357,9598
 Schranke	BNP:1:-38:trailer=3 17028,23968
@@ -2169,7 +2170,7 @@ Dr‰ngelgitter	BNP:5:-241 4386,6288
 Dr‰ngelgitter	BNP:5:-56 4351,6307
 Heimst‰ttenweg (kein ˆffentlicher Verkehr)	2 4355,6207 4323,6131 4268,6154
 Markobrunner Str.	1 4374,7016 4462,7137 4593,7167
-Deidesheimer Str.	1 4983,7546 4784,7534 4616,7563 4497,7595
+Deidesheimer Str.	1 4983,7546 4784,7534 4616,7563 4486,7597
 Landauer Str.	1 4578,7358 4786,7327
 Eschenstr. (Friedenau)	1 5067,7523 5121,7523 5158,7560
 (Zur Dillenburger Str.)	1 3837,6926 3964,6928 4000,6852
@@ -2349,8 +2350,8 @@ Hohenzollerndamm -> Kronberger Str.: Mittlestreifen wg. Leitplanke nicht zu quer
 Mittelstreifen schlecht zu queren	3nocross::ignrte 2116,7740 2094,7719 2036,7653
 Kˆnigsmarckstr. -> Hohenzollerndamm: Mittelstreifen schlecht zu queren	3::igndisp 1971,7738 2094,7719 2116,7740
 Hohenzollerndamm -> Kˆnigsmarckstr.: Mittelstreifen schlecht zu queren	3::igndisp 2036,7653 2094,7719 1971,7738
-Mittelstreifen	3nocross::ignrte 1136,3878 1152,3918 1203,4047
-Biesalskistr. -> Clayallee: Mittelstreifen	3::igndisp 1130,3930 1152,3918 1203,4047
+Mittelstreifen	3nocross::ignrte 1136,3878 1152,3918 1214,4075
+Biesalskistr. -> Clayallee: Mittelstreifen	3::igndisp 1130,3930 1152,3918 1214,4075
 Am Zirkus	1 9239,12923 9170,13031 9145,13020 9118,13070
 Adele-Schreiber-Krieger-Str.	1s 8737,12757 8596,12748
 Virchowweg: schmale Toreinfahrt, Fuﬂg‰nger und Bordstein	0:10:86 8548,13577

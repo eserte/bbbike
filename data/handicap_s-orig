@@ -80,7 +80,7 @@ Rathausstr.: Baustelle vor dem Roten Rathaus, eng	q4::inwork 10601,12521 10704,1
 # 
 #XXX del --- #: last_checked: 2011-02-27 --- #: next_check: 2011-07-15 --- Am Carlsgarten: Bauarbeiten	q4::inwork 19460,7954 19372,8012 19334,8046
 # 
-#: next_check: 2011-09-01 vvv
+#: next_check: 2012-02-01 vvv
 Rathausstr. zwischen Breitestr. und Poststr.: Fahrbahn wegen Br¸ckenbauarbeiten gesperrt	q4::inwork 10281,12310 10362,12351
 Rathausstr. zwischen Breitestr. und Poststr.: Fahrbahn wegen Br¸ckenbauarbeiten gesperrt	q4::inwork 10422,12395 10476,12432
 #: next_check: ^^^
@@ -106,7 +106,7 @@ Wuhlewanderweg: steiles Gef‰lle, Fuﬂg‰nger	q4; 21970,12153 21998,12204
 (An der Wuhle, ˆstliches Ufer): Fuﬂg‰nger	q1 21323,8481 21333,8355 21371,8289 21594,8107 21627,8024 21629,7921
 Caroline-Michaelis-Str.: Bordsteine	q3 9125,13973 9151,13941
 Pappelplatz (Mitte): gemeinsamer Fuﬂ- und Radweg	q2 9750,14132 9663,14036
-(Frankfurter Allee - Liebigstr.): Fuﬂg‰nger	q2 13885,12279 13905,12374
+(Frankfurter Allee - Liebigstr.): Fuﬂg‰nger	q2 13885,12279 13927,12370
 Otto-Ludwig-Str.: Fuﬂg‰ngerzone	q2 4862,10881 4954,10876
 Mauerstr. (Mitte): Fuﬂg‰nger, Bordsteine	q3 9405,11413 9474,11360
 Georgenstr.: Fuﬂg‰ngerzone	q3 9434,12669 9313,12662
@@ -300,7 +300,7 @@ Schneckenbr¸cke: Rampe	q3 2012,3356 2009,3362 1980,3409 1977,3414
 Radweg eng und bewachsen	q1 5071,14614 5264,14671 5440,14840
 Tunnel S-Bhf. Grunewald: Fuﬂg‰nger	q2 693,9129 731,9103 884,8954
 enge Kurven	q2 33533,2761 33293,2768
-Kieler Str.: Bordsteine, Fuﬂg‰nger	q3 5000,5816 5052,5788
+Kieler Str.: Bordsteine, Fuﬂg‰nger	q3 4998,5817 5052,5788
 Fontanepromenade: enger Gehweg	q2 10775,9686 10760,9646
 S¸dstern: Fuﬂg‰nger	q3 10747,9326 10710,9309 10647,9337
 Gˆrlitzer Ufer: Bordsteine	q3 13275,10055 13283,10069
@@ -332,7 +332,7 @@ Mussehlstr.: Bordsteine (Bayernring und Wolffring)	q3 8836,8564 8756,8453 8711,8
 (Teltowkanal, Nordufer): Fuﬂg‰nger (eigentlich f¸r Radfahrer verboten)	q2 8750,5173 9118,5328 9145,5323 9182,5332
 (Kynaststr. - Uferwanderweg): Fuﬂg‰nger	q1 14843,10621 14906,10587
 (Kynaststr. - Paul-und-Paula-Ufer): Fuﬂg‰nger	q1 14821,10478 14868,10467
-Am Rummelsburger See: Fuﬂg‰nger, kurvenreich	q1 15787,9321 15819,9430 15749,9558 15741,9590 15703,9605 15600,9695 15626,9710 15583,9779 15545,9818 15465,9860 15347,9922 15295,10022 15260,10048 15314,10121 15261,10167 15204,10201 15134,10243 15101,10263 15044,10297 14892,10411 14864,10451 14868,10467 14884,10508 14906,10587 14937,10598 14990,10581 15100,10637 15248,10562
+Am Rummelsburger See: Fuﬂg‰nger, kurvenreich	q1 15787,9321 15819,9430 15749,9558 15741,9590 15703,9605 15600,9695 15626,9710 15583,9779 15545,9818 15465,9860 15347,9922 15295,10022 15260,10048 15314,10121 15261,10167 15204,10201 15134,10243 15101,10263 15044,10297 14977,10348 14892,10411 14864,10451 14868,10467 14884,10508 14906,10587 14937,10598 14990,10581 15100,10637 15248,10562
 Am Rummelsburger See: teilweise enge Kurven, Fuﬂg‰nger an schˆnen Tagen	q2 15453,10415 15457,10342 15496,10277 15518,10234 15604,10204 15601,10179 15645,10147 15713,10035 15786,9957 15790,9920 15828,9875 15914,9858 15931,9846
 Am Rummelsburger See: Fuﬂg‰nger an schˆnen Tagen	q1 15931,9846 16000,9784 16046,9746 16123,9692
 Unterf¸hrung unter Adlergestell und S-Bahn ist sehr eng, nicht f¸r Anh‰nger geeignet	q3 20939,2413 20810,2398
@@ -405,7 +405,7 @@ Uferweg, Mentzelpark: Fuﬂg‰nger, eng	q3 21769,4973 21821,4918 21834,4889
 (Mentzelpark): Fuﬂg‰nger	q1 21769,4973 21778,4916 21834,4889 21848,4882
 (Mentzelpark): Fuﬂg‰nger	q1 21726,4896 21741,4889 21778,4916
 #: XXX Bauarbeiten; in Zukunft wird das Radfahren offiziell erlaubt sein; evtl. auch asphaltiert?
-#: last_checked: 2011-07-09
+#: last_checked: 2011-09-25
 Heinrich-Lassen-Park: Fuﬂg‰nger	q2 6664,8787 6740,8682 6815,8691 6912,8617
 (Uferweg am Nordhafen): Fuﬂg‰nger	q1 7753,14528 7695,14545 7498,14658
 An der Malche: teilweise eng und kurvig	q1 1106,20424 1032,20580 895,20523 834,20610 625,20738
@@ -474,7 +474,7 @@ Am Bahndamm: Radfahren offiziell nicht erlaubt	q2 7662,4529 7772,4306
 Am Bahndamm: Fuﬂg‰nger	q1 7772,4306 7795,4242 8106,3410 8259,3349
 Edenkobener Steg: Fuﬂg‰nger	q1 6627,4187 6645,4254
 Teltowkanalpromenade: enge und kurvige Unterf¸hrung	q2 4261,2703 4258,2693 4247,2652 4202,2622 4193,2616
-Heinrich-Laehr-Park: Fuﬂg‰nger	q1 1527,574 1372,1208 1258,1674
+Heinrich-Laehr-Park: Fuﬂg‰nger	q1 1525,581 1372,1208 1328,1387 1249,1672
 #: note: Luftbild
 (Unterf¸hrung): Rampen	q2 -8334,14461 -8238,14436 -8256,14418 -8227,14408 -8287,14411
 #: XXX_prog eigentlich nach comments_mount:
@@ -604,6 +604,7 @@ Mondsteinpfad: Fuﬂg‰nger	q1 11181,1884 11182,1976
 K‰tchenweg: sehr eng	q2 -6975,-1250 -6914,-1218
 Grassoweg: Gehweg f¸r Radfahrer freigegeben	q1 -6193,1097 -6216,1192
 Nikolassteig: f¸r Radfahrer nicht freigegeben, ggfs. schieben	q3 -3931,1637 -3872,1716
+#: XXX_prog BS 1x an Fischzug Richtung S¸den
 Engelwiese: f¸r Radfahrer nicht freigegeben, ggfs. schieben	q3 14974,10018 15050,10160 15054,10168 15097,10255 15101,10263
 Dora-Benjamin-Park: Bordstein bei der Einfahrt	q1 14705,10149 14621,10062
 Dora-Benjamin-Park: Bordstein bei der Einfahrt	q1 14747,10108 14702,10020
@@ -1053,6 +1054,15 @@ Melissenweg: Bordsteine	q2 16003,3652 16041,3718
 #: XXX_prog BS (im Norden, im S¸den kann es umfahren werden)
 Simsonweg: Fuﬂg‰nger, Bordsteine	q2 8354,12416 8546,12279
 Varian-Fry-Str.: Fuﬂg‰nger	q2 8374,11479 8389,11378
+Georg-Steger-Weg und Verl‰ngerung: Fuﬂg‰nger	q2 1509,2246 1603,2615 1631,2722 1647,2759 1634,2914
+#: XXX_prog BS (am Sackgassenhammer)
+Am Schweizerhof: Bordstein	q2 1177,1940 1191,1944
+Werner-Sylten-Weg: Fuﬂg‰nger	q1 1016,737 1022,738 1129,763 1267,789
+(Heinrich-Laehr-Park - Schˆnower Park): Fuﬂg‰nger	q1 1249,1672 1177,1940 1113,2143 1074,2209
+#: XXX_prog BS an der R¸desheimer
+Lorcher Str.: eng, Fuﬂg‰nger	q2 4273,7002 4206,7040 4184,7053 4160,7043
+Lorcher Str.: Fuﬂg‰nger	q1 4160,7043 4059,7038
+Crellestr.: Fuﬂg‰nger, StraﬂencafÈs	q2 7491,9061 7535,9087 7583,9115
 ######################### User Contributions #################################
 #: by: Michael Kiekbusch
 #: corrected_by: srt/policy (q4 -> q3-)
@@ -1083,6 +1093,7 @@ S¸ltstr.: enge Straﬂe, beidseitiges Parken	q1 12094,15598 12171,15737 12247,1586
 #: by: frau heilmann:
 Junker-Jˆrg-Str.: eng, parkende Autos	q1 18447,8818 18471,8957 18511,9185 18545,9395
 #: by: Thomas (nawrot):
+#: XXX wo genau sind die Bodenschwellen?
 Windsteiner Weg: Bodenschwellen	q1 914,598 856,546 790,527 712,517 635,511 585,505 501,493 284,470
 #: by: Fodor (sutyi):
 Liviusstr.: eng, parkende Autos	q1 10743,4515 10499,4542 10453,4518
@@ -1542,7 +1553,7 @@ Scherenbergstr.: enge Straﬂe	q2 11307,15995 11358,16067 11404,16140 11464,16232 
 #: by: Peter Friede [AM]
 Lupsteiner Weg: eng durch parkende KfZ	q1 264,227 489,296 521,332 521,360 501,493 489,587 428,656 393,704 400,765 460,812 739,885
 #: by: Christine Ziegler [AM]
-Gertraudstr.: enge Straﬂe	q2 196,1657 79,1992
+Gertraudstr.: enge Straﬂe	q2 202,1688 173,1715 79,1992
 #: by: christel lehmann [AM] vvv
 Wittenberger Str. (Einkaufzentrum): Fuﬂg‰nger	q3 21614,17823 21647,17889 21719,18017 21751,18079
 Wittenberger Str. (Einkaufzentrum): Fuﬂg‰nger	q3 21654,18048 21719,18017
