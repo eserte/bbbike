@@ -5026,7 +5026,7 @@ EOF
        text  => 'K 6413 Berliner Str. OL Buckow, zw. Hauptstr. und OA grundhafter Straßenbau Vollsperrung 17.07.2006-31.12.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 55877,18248 55700,18101 55623,17923 55524,17754 55164,17565
+userdel	q4::inwork 55882,18301 55853,18228 55700,18101 55623,17923 55524,17754 55164,17565
 EOF
      },
      { from  => 1152568800, # 2006-07-11 00:00
@@ -5034,7 +5034,7 @@ EOF
        text  => 'K 6413 Berliner Str. OL Buckow, zw. Nr. 60 und Waldweg grundhafter Straßenbau Vollsperrung; Umleitung 12.07.2006-14.07.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 55877,18248 55700,18101 55623,17923 55524,17754 55164,17565
+userdel	q4::inwork 55882,18301 55853,18228 55700,18101 55623,17923 55524,17754 55164,17565
 EOF
      },
      { from  => 1152568800, # 2006-07-11 00:00
