@@ -984,9 +984,8 @@ for my $osm_file (@osm_files) {
 			push @or, ["rbahn", "R".$addcat];
 			resolve_node_now('railway', 'rbahnhof', "R", \@nodes);
 		    }
-		} elsif ($railway_cat eq 'preserved') {
-		    # ignore
-		} elsif ($railway_cat eq 'service') {
+		} elsif ($railway_cat =~ m{^(service|preserved)$}) {
+		    # example for "preserved": Buckower Kleinbahn (Museumsbetrieb)
 		    push @or, ["rbahn", "RG".$addcat];
 		    resolve_node_now('railway', 'rbahnhof', "RG", \@nodes);
 		} elsif ($railway_cat =~ m{^(?:abandoned|disused)$}) {
