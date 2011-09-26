@@ -95,6 +95,7 @@ use vars qw($VERSION $VERBOSE $WAP_URL
 	    $use_apache_session $now_use_apache_session $apache_session_module $cookiename
 	    $bbbike_temp_blockings_file $bbbike_temp_blockings_optimized_file
 	    @temp_blocking $temp_blocking_epoch
+	    $use_reproxy
 	    $use_cgi_compress_gzip $use_bbbikedraw_compress $max_matches
 	    $use_winter_optimization $winter_hardness
 	    $with_lang_switch
@@ -5481,6 +5482,8 @@ sub draw_route {
     my @header_args = @cache;
     if ($cookie) { push @header_args, "-cookie", $cookie }
 
+    my $x_reproxy_file; # used in X-Reproxy-File operation
+
     # write content header for pdf as early as possible, because
     # output is already written before calling flush
     if (defined $q->param('imagetype') &&
@@ -5491,15 +5494,30 @@ sub draw_route {
 	    $zielname  = Strasse::strip_bezirk($route->[-1]->{Strname});
 	}
 	my $filename = ($startname && $zielname ? filename_from_route($startname, $zielname, "bbbike") : "bbbike");
+	if ($q->param('imagetype') =~ /^pdf-(.*)/) {
+	    $q->param('geometry', $1);
+	    $q->param('imagetype', 'pdf');
+	}
+	if ($use_reproxy
+	    && $ENV{HTTP_X_PROXY_CAPABILITIES} =~ /\breproxy-file\b/
+	    && $ENV{REMOTE_ADDR} eq '127.0.0.1' # hopefully never corrected by some external module
+	    && defined $q->param('coordssession')
+	   ) {
+	    (my $session_id = $q->param('coordssession')) =~ s{[^0-9a-f_]+}{_}gi;
+	    (my $oldcs_id = $q->param('oldcs')) =~ s{[^0-9a-f_]+}{_}gi;
+	    (my $geometry = $q->param('geometry')) =~ s{[^a-z]+}{_}gi;
+	    mkdir "/tmp/bbbike_pdf" if !-d "/tmp/bbbike_pdf";
+	    $x_reproxy_file = "/tmp/bbbike_pdf/" . $session_id . "_" . $oldcs_id . "_" . $geometry . ".pdf";
+	    push @header_args, '-X_Reproxy_File' => $x_reproxy_file;
+	}
 	http_header
 	    (-type => "application/pdf",
 	     -charset => '', # CGI 3.52..3.55 writes charset for non text/* stuff, see https://rt.cpan.org/Public/Bug/Display.html?id=67100
 	     @header_args,
 	     -Content_Disposition => "inline; filename=$filename.pdf",
 	    );
-	if ($q->param('imagetype') =~ /^pdf-(.*)/) {
-	    $q->param('geometry', $1);
-	    $q->param('imagetype', 'pdf');
+	if (-e $x_reproxy_file) {
+	    return;
 	}
     }
 
@@ -5522,6 +5540,7 @@ sub draw_route {
 					 Lang => $lang,
 					 Geo => get_geography_object(),
 					 %bbbikedraw_args,
+					 ($x_reproxy_file ? (Filename => $x_reproxy_file) : ()),
 					);
 	die $@ if !$draw;
     };
