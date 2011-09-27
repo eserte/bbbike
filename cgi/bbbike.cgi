@@ -5500,14 +5500,13 @@ sub draw_route {
 	}
 	if ($use_reproxy
 	    && $ENV{HTTP_X_PROXY_CAPABILITIES} =~ /\breproxy-file\b/
-	    && $ENV{REMOTE_ADDR} eq '127.0.0.1' # hopefully never corrected by some external module
 	    && defined $q->param('coordssession')
+	    && eval { require Digest::MD5; 1 }
 	   ) {
 	    (my $session_id = $q->param('coordssession')) =~ s{[^0-9a-f_]+}{_}gi;
-	    (my $oldcs_id = $q->param('oldcs')) =~ s{[^0-9a-f_]+}{_}gi;
-	    (my $geometry = $q->param('geometry')) =~ s{[^a-z]+}{_}gi;
+	    my $qs_digest = Digest::MD5::md5_hex($q->query_string);
 	    mkdir "/tmp/bbbike_pdf" if !-d "/tmp/bbbike_pdf";
-	    $x_reproxy_file = "/tmp/bbbike_pdf/" . $session_id . "_" . $oldcs_id . "_" . $geometry . ".pdf";
+	    $x_reproxy_file = "/tmp/bbbike_pdf/" . $session_id . "_" . $qs_digest . ".pdf";
 	    push @header_args, '-X_Reproxy_File' => $x_reproxy_file;
 	}
 	http_header
