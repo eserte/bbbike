@@ -422,7 +422,7 @@ Weiterfahrt in den Innovationspark möglich	culdesac_pseudo 21284,7043
 	culdesac 8979,10485
 #: XXX_osm exit=no fehlt bei osm
 	culdesac 13046,8048
-	culdesac 8579,10030
+	culdesac_pseudo 8579,10030
 	culdesac 8521,10268
 	culdesac 8796,11393
 	culdesac 10111,9942
@@ -523,7 +523,6 @@ Weiterfahrt in den Friedhof möglich	culdesac_pseudo 2405,10131
 	culdesac 4087,8204
 	culdesac 5710,7820
 	culdesac 5806,7796
-	culdesac 8264,8289
 	culdesac 4405,8697
 	culdesac 8814,8881
 	culdesac 8950,8954
@@ -1145,3 +1144,6 @@ Am Rundling: nur frei für Anlieger	CS 17927,3737 17927,3771 17927,3788
 Simsonweg: nicht ausgeschildert	CP2; 8354,12416 8546,12279
 Simsonweg: nicht ausgeschildert	CP2; 8546,12279 8354,12416
 Jänickestr. - Dahlemer Weg: Privatstraße	CS 1702,1278 1707,1256 1742,1118
+Ausgeschildert als Jasminpfad	CS 8259,8628 8221,8631
+Ausgeschildert als Rosenpromenade	CS 8264,8289 8259,8628
+Jasminpfad: Tor 1 der Kleingartenanlage	CP2; 8221,8631 8259,8628
