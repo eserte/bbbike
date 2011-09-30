@@ -19711,11 +19711,11 @@ userdel	3 12925,7425 13015,7440 12992,7545
 userdel	3 12992,7545 13015,7440 12925,7425
 EOF
      },
-     { from  => 1317297600, # 2011-09-29 14:00
-       until => 1317697200, # 2011-10-04 05:00
-       text  => 'Rote Chaussee: Vollsperrung, von 30.09.2011, 14:00 Uhr bis 04.10.2011, 5:00 Uhr ',
+     { from  => 1318507200, # 2011-10-13 14:00
+       until => 1318820400, # 2011-10-17 05:00
+       text  => 'Rote Chaussee: Vollsperrung, vom 14.10.2011, 14:00 Uhr bis 17.10.2011, 5:00 Uhr',
        type  => 'gesperrt',
-       source_id => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20110914.1015.358646.html',
+       source_id => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20110929.0810.360313.html',
        data  => <<EOF,
 userdel	2::inwork 872,24330 905,24113 831,24054 764,24065 609,24215 237,24374 195,24389 132,24390 78,24364 -406,23934
 EOF
@@ -19754,6 +19754,36 @@ EOF
        source_id => 'IM_017861',
        data  => <<EOF,
 userdel	q4::temp 8089,12190 8214,12205 8538,12245
+EOF
+     },
+     { from  => 1317679200, # 2011-10-04 00:00
+       until => 1318111199, # 2011-10-08 23:59
+       text  => 'Torstraße: zwischen Chausseestraße und Rosenthaler Platz Richtung Osten gesperrt, vom 04. bis 08. Oktober 2011',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20110928.1340.360235.html',
+       data  => <<EOF,
+userdel	q4::inwork; 9212,13471 9340,13510 9394,13528 9517,13571 9571,13590 9668,13629 9792,13681 9918,13733 10177,13766
+EOF
+     },
+     { from  => 1317679200, # 2011-10-04 00:00
+       until => undef, # XXX
+       text  => 'Blankenburger Straße: Richtung Dietzgenstraße zwischen Lindenberger Straße und Siegfriedstraße wegen Bauarbeiten gesperrt, ab 5. Oktober 2011',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-pankow/presse/archiv/20110930.1255.360473.html',
+       data  => <<EOF,
+#: XXX Ende der Bauarbeiten?
+#: XXX nach den Bauarbeiten Radfahrstreifen
+#: next_check: 2012-03-01
+userdel	q4::inwork; 11148,19838 11051,19789 10948,19737 10829,19676 10742,19632
+EOF
+     },
+     { from  => 1317592800, # 2011-10-03 00:00
+       until => 1318716000, # 2011-10-16 00:00
+       text  => 'Zeltinger Straße wird als Einbahnstraße vom Zeltinger Platz in Richtung Zerndorfer Weg ausgewiesen, vom 04.10.2011 bis 15.10.2011',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20110928.1140.360205.html',
+       data  => <<EOF,
+userdel	q4::inwork; 2941,25822 2897,25776 2764,25639 2721,25576 2657,25486 2531,25368 2519,25353 2446,25265
 EOF
      },
     );

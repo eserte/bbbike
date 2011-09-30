@@ -1012,16 +1012,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_013995',
-         'until' => 1317387600,
-         'text' => 'Freiheit/Wiesendamm (Spandau): Baustelle, Fahrtrichtung gesperrt (bis Ende 09/2011) Richtung Spandauer Damm zwischen Klärwerkstr. und Spandauer Damm, 25.08.2009 07:04 Uhr bis 30.09.2011 15:00 Uhr ',
-         'from' => 1251090240,
-         'id' => 1850,
-         'data' => 'userdel	q4::inwork; -1258,13552 -990,13502 -729,13415 -346,13349 -307,13279 -264,13009
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1893,14 +1884,51 @@ userdel	3 12992,7545 13015,7440 12925,7425
          'type' => 'gesperrt'
        },
        {
-         'source_id' => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20110914.1015.358646.html',
-         'until' => 1317697200,
-         'text' => 'Rote Chaussee: Vollsperrung, von 30.09.2011, 14:00 Uhr bis 04.10.2011, 5:00 Uhr ',
-         'from' => 1317297600,
+         'source_id' => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20110929.0810.360313.html',
+         'until' => 1318820400,
+         'text' => 'Rote Chaussee: Vollsperrung, vom 14.10.2011, 14:00 Uhr bis 17.10.2011, 5:00 Uhr',
+         'from' => 1318507200,
          'id' => 2284,
          'data' => 'userdel	2::inwork 872,24330 905,24113 831,24054 764,24065 609,24215 237,24374 195,24389 132,24390 78,24364 -406,23934
 ',
          'type' => 'gesperrt'
+       },
+       undef,
+       undef,
+       undef,
+       undef,
+       {
+         'source_id' => 'http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20110928.1340.360235.html',
+         'until' => 1318111199,
+         'text' => 'Torstraße: zwischen Chausseestraße und Rosenthaler Platz Richtung Osten gesperrt, vom 04. bis 08. Oktober 2011',
+         'from' => 1317679200,
+         'id' => 2289,
+         'data' => 'userdel	q4::inwork; 9212,13471 9340,13510 9394,13528 9517,13571 9571,13590 9668,13629 9792,13681 9918,13733 10177,13766
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'http://www.berlin.de/ba-pankow/presse/archiv/20110930.1255.360473.html',
+         'until' => undef,
+         'text' => 'Blankenburger Straße: Richtung Dietzgenstraße zwischen Lindenberger Straße und Siegfriedstraße wegen Bauarbeiten gesperrt, ab 5. Oktober 2011',
+         'from' => 1317679200,
+         'id' => 2290,
+         'data' => '#: XXX Ende der Bauarbeiten?
+#: XXX nach den Bauarbeiten Radfahrstreifen
+#: next_check: 2012-03-01
+userdel	q4::inwork; 11148,19838 11051,19789 10948,19737 10829,19676 10742,19632
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20110928.1140.360205.html',
+         'until' => 1318716000,
+         'text' => 'Zeltinger Straße wird als Einbahnstraße vom Zeltinger Platz in Richtung Zerndorfer Weg ausgewiesen, vom 04.10.2011 bis 15.10.2011',
+         'from' => 1317592800,
+         'id' => 2291,
+         'data' => 'userdel	q4::inwork; 2941,25822 2897,25776 2764,25639 2721,25576 2657,25486 2531,25368 2519,25353 2446,25265
+',
+         'type' => 'handicap'
        }
      
 );
