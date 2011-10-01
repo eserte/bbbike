@@ -1507,7 +1507,7 @@ tragen (Bahnübergang ehem. Bhf. Satzkorn)	0:60 -19183,7299
 schieben (Rampe Schmöckwitzwerdersteg)	0:30 30533,-3124
 schieben (Rampe Schmöckwitzwerdersteg)	0:30 30546,-3072
 tragen (Treppe Mansfelder Str.)	0:30 3619,9331
-tragen (Treppe)	0:30 9557,12992
+tragen (22 Stufen)	0:30 9557,12992
 tragen (Treppe)	0:30 9508,12991
 #: by: rjoop
 #: note: mindestens 50 Stufen, laut Luftbild
@@ -1853,6 +1853,10 @@ Tor	BNP:5 26888,13976
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: last_checked: 2011-10-01
+#: next_check: 2011-10-15
+Spreeufer: wegen Bauarbeiten gesperrt	2:inwork 8596,12576 8495,12651 8473,12753
+# 
 #: last_checked: 2011-09-24
 #: next_check: 2011-10-30
 (Leuthener Platz - Wilhelm-Kabus-Str.): Bauzäune	2:inwork 7716,8356 7837,8354 7893,8327
@@ -1896,9 +1900,7 @@ Helga-Hahnemann-Str.: gesperrt	2:inwork 9415,13315 9385,13174
 #: XXX mit den Bauarbeiten "An den Eldenaer Höfen" koordinieren
 Am Langen Jammer: westlicher Abschnitt wegen Bauarbeiten gesperrt	2:inwork 14405,12953 14686,12873
 #
-#: last_checked: 2011-04-30
-Tiergartenufer: Bauarbeiten, gesperrt	2:inwork 5711,11841 5565,11871
-# 
+#XXX del --- #: last_checked: 2011-04-30 --- Tiergartenufer: Bauarbeiten, gesperrt	2:inwork 5711,11841 5543,11837 5478,11860
 #XXX del --- #: last_checked: 2011-04-08 --- Bebelplatz: Bauarbeiten, gesperrt	2:inwork 9679,12388 9700,12234
 #
 #: last_checked: 2011-08-19 vvv

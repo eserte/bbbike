@@ -1333,7 +1333,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        {
          'until' => undef,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im September bis 20.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Oktober bis 19.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'from' => undef,
          'id' => 2068,
          'data' => '(Eingang Columbiadamm - Rundkurs auf dem Flughafen Tempelhof)	2::night 10691,8532 10640,8366 10598,8270 10575,8218
@@ -1631,16 +1631,7 @@ userdel	q4::inwork 425,8766 490,8716
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'LS/O-SG33-F/11/070',
-         'until' => 1317420000,
-         'text' => 'Bad Freienwalde (Oder): B167: Straßenbau- und Kanalarbeiten Ortsdurchfahrt Bad Freienwalde, Eberswalder Straße Beginn Vollsperrung geplant, 09.05.2011 bis 30.09.2011 ',
-         'from' => 1304796386,
-         'id' => 2209,
-         'data' => 'userdel	q4::inwork 52119,43318 50799,43130
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'INKO_093372',
          'until' => 1333206000,

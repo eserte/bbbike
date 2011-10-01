@@ -535,7 +535,8 @@ Görlitzer Park: teils fester sandiger Weg	Q1 12507,10130 12509,10189 12559,10220
 Görlitzer Park: mäßiges bis schlechtes Kopfsteinpflaster	Q2- 12559,10220 12611,10299
 Zur Eisenbahnbrücke: gutes Kopfsteinpflaster	Q1 13302,9894 13229,9853
 Bahndamm: fester Sandweg	Q1 13282,9828 13476,9720 13934,9365 13966,9340
-Tiergartenufer: Parkweg (Bodenwellen)	Q2+ 6186,11466 6079,11524 5940,11616 5903,11683 5835,11768 5711,11841 5565,11871
+Tiergartenufer: Parkweg (Bodenwellen)	Q2+ 6186,11466 6079,11524 5940,11616 5903,11683 5835,11768
+Tiergartenufer: Parkweg	Q1 5835,11768 5736,11835 5543,11837 5478,11860
 (Lichtensteinallee - Tiergartenufer): Parkweg	Q2+ 6309,11443 6186,11466
 Fasanerieallee: Parkweg	Q1 6435,11606 6459,11638 6540,11754 6685,11954
 Großer Weg: Parkweg	Q1 5900,11913 5890,11865 5933,11775 6022,11757 6171,11790 6306,11771 6358,11724 6411,11678 6459,11638 6524,11583 6809,11570 6980,11583 7163,11738 7287,11763 7535,11677
@@ -1148,8 +1149,9 @@ Friedbergstr.: Kopfsteinpflaster, OK	Q1- 2766,10750 2812,10753 3012,10812 3204,1
 Am Berlin Museum: Asphalt mit einigen Katzenkopfreihen	Q2 10025,10755 9829,10830
 (Rad- und Wanderweg an Spree und Landwehrkanal): teilweise Parkweg, teilweise gutes Kopfsteinpflaster	Q1 3358,12718 3396,12741 3476,12735 3582,12704 3763,12624 3888,12618 4131,12641 4340,12578 4529,12570 4642,12491 4829,12357 5045,12243 5147,12164 5261,12004 5361,11910
 Monbijoupark - Henriette-Herz-Platz: holpriger Parkweg	Q2 9977,12912 10132,12941
-#: note: von der Bahn aus gesehen:
-Spreeufer: Parkweg	Q1 10166,12777 10105,12855 9977,12912 9944,12921 9930,12947 9900,12942 9714,12995
+#: note: überwiegend, kurzer Abschnitt mit wassergebundener Decke
+Spreeufer: asphaltiert	Q0 10166,12777 10105,12855 9977,12912 9944,12921 9930,12947 9900,12942 9714,12995
+Spreeufer: wassergebundene Decke	Q1 9707,12974 9557,12992
 (Park am Fennpfuhl): Parkweg	Q1 15235,13573 15252,13672 15323,13777 15253,13908 15183,13899 15066,14060
 (NSG Fauler See): Waldweg	Q2 15918,16383 15965,16482 16386,16953
 (Am Fließgraben): Feldweg, OK	Q1- 15413,18626 15178,18697 15098,19112 15064,19280 14777,19666 14714,19841 14423,20163 14429,20192
@@ -1536,7 +1538,7 @@ Ottomar-Geschke-Str.: Kopfsteinpflaster	Q2 21454,4928 21498,5023
 Wallotstr.: Asphalt	Q0 2065,9459 1997,9499 1933,9476 1873,9388 1783,9368 1757,9282
 Gartenufer: Parkweg	Q1 5780,11622 6239,11399 6342,11353 6346,11326
 (südliches Spreeufer): teils gutes Kopfsteinpflaster, teils Parkweg, teils Asphalt	Q1 5579,12231 5714,12290 5796,12372 5940,12564 6001,12699 6045,12830 6123,12887 6182,12900
-Elisabeth-Abegg-Str.: Kopfsteinpflaster mit großen Fugen	Q3 7936,12906 7806,12759
+Elisabeth-Abegg-Str.: Kopfsteinpflaster mit großen Fugen	Q3 7936,12906 7784,12778
 Spreeuferweg: glatte Gehwegplatten und fester Sandweg an den Seiten	Q0 7064,12419 7139,12376 7217,12383 7314,12419 7486,12551 7541,12582 7838,12734 7904,12803 7945,12878
 Delbrückstr. (Neukölln): Kopfsteinpflaster	Q2 12743,6645 12860,6667 12981,6689 13125,6717
 Rungiusstr.: sehr guter Asphalt	Q0 13158,5490 13136,5593 13116,5689 13105,5748 13077,5893 13064,5953 13027,6168
@@ -6421,6 +6423,10 @@ Lorcher Str.: unbefestigter Weg	Q1- 4206,7040 4184,7053 4160,7043
 Lorcher Str.: Asphalt	Q0 4160,7043 4059,7038
 (General-Pape-Str. - Gontermannstr.): Asphalt	Q0 8106,8290 8264,8289
 (Leuthener Platz - Wilhelm-Kabus-Str.): Asphalt	Q0 7716,8356 7837,8354 7893,8327
+(Altonaer Str. - Händelallee): Gehwegplatten und wassergebundene Decke	Q1 6348,12272 6280,12222
+Joseph-Haydn-Str.: Kopfsteinpflaster	Q2 5825,12023 5790,12026
+(S-Bhf. Südkreuz - IKEA): Asphalt	Q0 7921,7288 7920,7224
+(S-Bhf. Südkreuz - IKEA): Verbundsteinpflaster	Q0- 7920,7224 7924,7185
 ######################### User Contributions #################################
 #: by: anonymous vvv
 # 
@@ -17971,8 +17977,8 @@ Schlegelstr.: Asphalt	Q0 9316,13870 9231,13843 9042,13707
 Claire-Waldoff-Str.: Asphalt	Q0 9236,13228 9114,13217
 Am Zirkus: Asphalt	Q1 9118,13070 9145,13020
 Am Zirkus: Asphalt	Q1 9106,13008 9145,13020 9170,13031 9239,12923
-(Parkweg Spreebogenpark): Asphalt	Q0 8017,12826 8021,12839 8046,12870 8072,12902 8116,12938 8168,12945 8235,12945 8275,12936 8341,12911 8417,12846
-(Parkweg Spreebogenpark): wassergebundene Decke	Q1 8275,12758 8275,12936
+(Parkweg Spreebogenpark): Asphalt	Q0 8017,12826 8021,12839 8046,12870 8072,12902 8116,12938 8168,12945 8235,12945 8302,12933 8341,12911 8417,12846
+(Parkweg Spreebogenpark): wassergebundene Decke	Q1 8301,12758 8302,12933
 (südliches Spreeufer - Gustav-Heinemann-Brücke): wassergebundene Decke	Q1 8032,12889 8053,12871 8116,12938
 (südliches Spreeufer - Spreebogenpark): wassergebundene Decke	Q1 8427,12871 8341,12911
 Gustav-Heinemann-Brücke: Holzbohlen mit Fugen	Q1 8116,12938 8110,13042
@@ -18093,7 +18099,7 @@ Ingeborg-Drewitz-Allee: Asphalt	Q0 7343,12758 7367,12729 7418,12725 7538,12729
 Ingeborg-Drewitz-Allee: Asphalt	Q0 7365,12775 7388,12746 7539,12754
 Ingeborg-Drewitz-Allee: Asphalt	Q0 7538,12729 7539,12754
 (Ingeborg-Drewitz-Allee): Gehwegplatten	Q0 7538,12729 7781,12732
-(Ingeborg-Drewitz-Allee): Gehwegplatten	Q0 7539,12754 7806,12759
+(Ingeborg-Drewitz-Allee): Gehwegplatten	Q0 7539,12754 7849,12767
 (Ingeborg-Drewitz-Allee): Gehwegplatten	Q0 7322,12735 7341,12709
 Spenerstr.: Kopfsteinpflaster	Q2 6877,12607 6907,12777 6966,13075
 (Joachim-Karnatz-Allee - Ingeborg-Drewitz-Allee): Gehwegplatten	Q0 7415,12590 7418,12725
