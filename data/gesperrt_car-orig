@@ -288,8 +288,7 @@ Parchimer Allee	3nocross 13659,4489 13571,4493 13485,4496 13394,4500
 Scharnweberstr.: Mittelstreifen	3nocross 4392,17777 4429,17763 4584,17704
 #: note: eigentlich auch für Radfahrer Einbahnstraße, aber der Umweg für die 60 Meter wäre zu groß!
 Kurt-Schumacher-Damm (Nord)	1 3643,16437 3676,16497
-#: note: Luftbild
-Mariendorfer Damm: Mittelstreifen	3nocross 10226,1515 10239,1481 10276,1383 10329,1231 10379,1097
+Mariendorfer Damm: Mittelstreifen	3nocross 10239,1481 10276,1383 10329,1231 10379,1097
 Lilienthalstr.: Barriere für Autos	3 * 10627,8706 *
 Hellersdorfer Str.: Mittelstreifen	3nocross 23021,13982 22969,13816 22966,13806 22925,13662
 #: by: Jürgen Jacobi:
@@ -413,7 +412,7 @@ Askanischer Platz	1 8865,10974 8859,10939 8882,10905
 Rosenthaler Weg: Straßenbahntrasse	3nocross 11271,22328 11383,22369 11484,22406 11583,22442
 Delbrückstr.	1 12743,6645 12468,6592
 Emser Str.	1 13058,7165 12872,7134
-Stuthirtenweg: Gitter	3 * 13552,1265 *
+Stuthirtenweg: Gitter	3 * 13542,1268 *
 Gertraudenstr.: Abbiegen verboten	3nocross 10512,12039 10460,11979 10391,11898
 Gertraudenstr.: Abbiegen verboten	3nocross 10313,11805 10299,11786 10240,11740
 Grunerstr.: Mittelstreifen	3nocross 10738,12364 10800,12461 10878,12560 10954,12635
@@ -504,7 +503,7 @@ Lindenstr.: Betonblöcke (aber für Radfahrer passierbar)	3nocross 9777,10719 9805
 Treptower Str.	1 13376,7970 13457,8069 13459,8072
 Alte Schönhauser Str.	1 10718,13625 10746,13673
 Knoten Märkische Allee	1 19979,11774 20025,11747 20114,11719
-Hugo-Heimann-Str.	1 14120,1991 14165,2106 14229,2177 14453,2087 14587,2032
+Hugo-Heimann-Str.	1 14120,1991 14165,2106 14229,2177 14444,2090 14587,2032
 Albulaweg	1 10541,1889 10486,1908
 Kätchenweg	2 -7020,-1275 -6975,-1250
 Mayschweg	1 22954,3584 22834,3571 22714,3558
@@ -751,3 +750,7 @@ Tordurchfahrt nur für Radfahrer/Fußgänger	3 11721,-351 11712,-289 11231,-349
 Tordurchfahrt nur für Radfahrer/Fußgänger	3 11231,-349 11712,-289 11721,-351
 Sächsische Str.	1 4550,9539 4533,9400
 Legiendamm	1 11159,10769 11189,10831
+Mariendorfer Damm: Mittelstreifen	3nocross 10067,1939 10127,1778 10172,1657 10226,1515
+#: note: für Radfahrer (auch mit Anhänger) breit genug
+Glimmerweg: Schranke	3 11538,1550 11724,1629 *
+Glimmerweg: Schranke	3 * 11724,1629 11538,1550

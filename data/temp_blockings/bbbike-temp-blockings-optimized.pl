@@ -1621,16 +1621,7 @@ userdel	q4::inwork 425,8766 490,8716
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'LS/O-SG33-E/11/044',
-         'until' => 1317506400,
-         'text' => 'Flieth-Stegelitz: L24: Brücke über den Stierngraben bei Kaakstedt, LSA-Regelung, ab 18.7. Vollsperrung',
-         'from' => 1304805600,
-         'id' => 2208,
-         'data' => 'userdel	2::inwork 35887,85385 34920,85944
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'source_id' => 'INKO_093372',
@@ -1816,16 +1807,7 @@ userdel	q4::inwork 2295,20358 2362,20218 2402,20126
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'source_id' => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20110825.1435.356236.html',
-         'until' => 1317506400,
-         'text' => 'Vollsperrung der Schorfheidestraße zwischen Dannenwalder Weg und Wilhelmsruher Damm in Berlin-Reinickendorf aufgrund von Straßenbaumaßnahmen, vom 29.08.2011 bis voraussichtlich 01.10.2011 ',
-         'from' => 1314482400,
-         'id' => 2273,
-         'data' => 'userdel	q4::inwork 6298,20599 6330,20742 6347,20819 6366,20902 6376,20951 6380,20983 6382,21109
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'http://www.berlin.de/ba-pankow/presse/archiv/20110826.1055.356350.html',
          'until' => 1324656000,

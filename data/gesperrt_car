@@ -456,9 +456,7 @@ Mittelstreifen	3nocross::ignrte 4392,17777 4429,17763 4584,17704
 Engelmannweg -> Scharnweberstr.: Mittelstreifen	3::igndisp 4462,17892 4429,17763 4584,17704
 Scharnweberstr. -> Engelmannweg: Mittelstreifen	3::igndisp 4392,17777 4429,17763 4462,17892
 Kurt-Schumacher-Damm (Nord)	1 3643,16437 3676,16497
-Mittelstreifen	3nocross::ignrte 10226,1515 10239,1481 10276,1383 10329,1231 10379,1097
-Göllweg -> Mariendorfer Damm: Mittelstreifen	3::igndisp 10119,1435 10239,1481 10226,1515
-Mariendorfer Damm -> Göllweg: Mittelstreifen	3::igndisp 10276,1383 10239,1481 10119,1435
+Mittelstreifen	3nocross::ignrte 10239,1481 10276,1383 10329,1231 10379,1097
 Ifenpfad -> Mariendorfer Damm: Mittelstreifen	3::igndisp 10187,1345 10276,1383 10239,1481
 Mariendorfer Damm -> Ifenpfad: Mittelstreifen	3::igndisp 10329,1231 10276,1383 10187,1345
 Mariendorfer Damm -> Kettinger Str.: Mittelstreifen	3::igndisp 10379,1097 10329,1231 10228,1194
@@ -702,8 +700,8 @@ Tiriotstr. -> Rosenthaler Weg: Straßenbahntrasse	3::igndisp 11235,22590 11484,22
 Rosenthaler Weg -> Tiriotstr.: Straßenbahntrasse	3::igndisp 11383,22369 11484,22406 11235,22590
 Delbrückstr.	1 12743,6645 12468,6592
 Emser Str.	1 13058,7165 12872,7134
-Stuthirtenweg: Gitter	3 13453,1218 13552,1265 13628,1334
-Stuthirtenweg: Gitter	3 13628,1334 13552,1265 13453,1218
+Stuthirtenweg: Gitter	3 13449,1227 13542,1268 13629,1343
+Stuthirtenweg: Gitter	3 13629,1343 13542,1268 13449,1227
 Abbiegen verboten	3nocross::ignrte 10512,12039 10460,11979 10391,11898
 Petripl. -> Gertraudenstr.: Abbiegen verboten	3::igndisp 10418,12016 10460,11979 10512,12039
 Gertraudenstr. -> Petripl.: Abbiegen verboten	3::igndisp 10391,11898 10460,11979 10418,12016
@@ -877,7 +875,7 @@ Lindenstr. -> Am Berlin Museum: Betonblöcke (aber für Radfahrer passierbar)	3::i
 Treptower Str.	1 13376,7970 13457,8069 13459,8072
 Alte Schönhauser Str.	1 10718,13625 10746,13673
 Knoten Märkische Allee	1 19979,11774 20025,11747 20114,11719
-Hugo-Heimann-Str.	1 14120,1991 14165,2106 14229,2177 14453,2087 14587,2032
+Hugo-Heimann-Str.	1 14120,1991 14165,2106 14229,2177 14444,2090 14587,2032
 Albulaweg	1 10541,1889 10486,1908
 Kätchenweg	2 -7020,-1275 -6975,-1250
 Mayschweg	1 22954,3584 22834,3571 22714,3558
@@ -1295,3 +1293,12 @@ Tordurchfahrt nur für Radfahrer/Fußgänger	3 11721,-351 11712,-289 11231,-349
 Tordurchfahrt nur für Radfahrer/Fußgänger	3 11231,-349 11712,-289 11721,-351
 Sächsische Str.	1 4550,9539 4533,9400
 Legiendamm	1 11159,10769 11189,10831
+Mittelstreifen	3nocross::ignrte 10067,1939 10127,1778 10172,1657 10226,1515
+Raucheckweg -> Mariendorfer Damm: Mittelstreifen	3::igndisp 10063,1759 10127,1778 10067,1939
+Mariendorfer Damm -> Raucheckweg: Mittelstreifen	3::igndisp 10172,1657 10127,1778 10063,1759
+Mariendorfer Damm -> Fluchthornweg: Mittelstreifen	3::igndisp 10226,1515 10172,1657 10094,1634
+Fluchthornweg -> Mariendorfer Damm: Mittelstreifen	3::igndisp 10094,1634 10172,1657 10127,1778
+Glimmerweg: Schranke	3 11538,1550 11724,1629 11704,1692
+Glimmerweg: Schranke	3 11538,1550 11724,1629 11765,1522
+Glimmerweg: Schranke	3 11704,1692 11724,1629 11538,1550
+Glimmerweg: Schranke	3 11765,1522 11724,1629 11538,1550
