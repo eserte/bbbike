@@ -34,6 +34,7 @@ use constant MSDOS_MIME_TYPE => qr{^application/(octet-stream|x-msdos-program|x-
 {
     use POSIX qw(strftime);
     use constant TODO_ADFC_ERRORS => 1; # "2010-09-01T12:00:00" gt strftime("%FT%T", localtime) && 'Redirects on adfc server do not work';
+    use constant TODO_FREEBSD_PKG_ERRORS => "2011-10-31T12:00:00" gt strftime("%FT%T", localtime) && 'BBBike packages for FreeBSD not available because of p5-Tk problems';
 }
 
 my @var;
@@ -111,6 +112,14 @@ for my $var (@var) {
 	    if (!$resp->is_success) {
 		diag "Failure requesting the bbbike snaphost: " . $resp->as_string;
 	    }
+	}
+
+	local $TODO;
+	if (TODO_FREEBSD_PKG_ERRORS &&
+	    ($url eq $BBBike::DISTFILE_FREEBSD_I386 ||
+	     $url eq $BBBike::DISTFILE_FREEBSD_ALL)
+	   ) {
+	    $TODO = TODO_FREEBSD_PKG_ERRORS;
 	}
 
 	check_url($url, $var);
