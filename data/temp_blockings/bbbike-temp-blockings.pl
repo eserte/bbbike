@@ -15727,8 +15727,8 @@ userdel	2::inwork -30199,-5774 -30919,-6570 -31110,-6743 -32618,-7268
 EOF
      },
      { from  => 1251090240, # 2009-08-24 07:04
-       until => 1317387600, # 2011-09-30 15:00
-       text  => 'Freiheit/Wiesendamm (Spandau): Baustelle, Fahrtrichtung gesperrt (bis Ende 09/2011) Richtung Spandauer Damm zwischen Klärwerkstr. und Spandauer Damm, 25.08.2009 07:04 Uhr bis 30.09.2011 15:00 Uhr ',
+       until => 1319983200, # 2011-10-30 15:00
+       text  => 'Freiheit/Wiesendamm (Spandau): Baustelle, Fahrtrichtung gesperrt (bis Ende 09/2011) Richtung Spandauer Damm zwischen Klärwerkstr. und Spandauer Damm, 25.08.2009 07:04 Uhr bis 30.10.2011 15:00 Uhr ',
        type  => 'handicap',
        source_id => 'IM_013995',
        data  => <<EOF,
@@ -18901,9 +18901,9 @@ EOF
 userdel	q4::inwork; 10881,15047 10838,14962 10723,14772
 EOF
      },
-     { from  => 1304287200, # XXX 1307394270, # 2011-06-06 23:04
-       until => 1312149600, # 2011-08-01 00:00
-       text  => 'Schenkenberg: L26: grundhafter Ausbau der L 26 Prenzlau - A20, 02.05.2011 bis 31.07.2011 ',
+     { from  => 1318630793, # 2011-10-15 00:19
+       until => 1321311600, # 2011-11-15 00:00
+       text  => 'Schenkenberg: L26: grundhafter Ausbau der L 26 Prenzlau - A20, 02.05.2011 bis 14.11.2011',
        type  => 'gesperrt',
        source_id => 'LS/O-SG33-E/10/214-10',
        data  => <<EOF,
@@ -19766,14 +19766,11 @@ userdel	q4::inwork; 9212,13471 9340,13510 9394,13528 9517,13571 9571,13590 9668,
 EOF
      },
      { from  => 1317679200, # 2011-10-04 00:00
-       until => undef, # XXX
-       text  => 'Blankenburger Straße: Richtung Dietzgenstraße zwischen Lindenberger Straße und Siegfriedstraße wegen Bauarbeiten gesperrt, ab 5. Oktober 2011',
+       until => 1351699200, # 2012-10-31 17:00
+       text  => 'Blankenburger Straße: Richtung Dietzgenstraße zwischen Lindenberger Straße und Siegfriedstraße wegen Bauarbeiten gesperrt, 05.10.2011 11:00 Uhr bis 31.10.2012 17:00 Uhr',
        type  => 'handicap',
-       source_id => 'http://www.berlin.de/ba-pankow/presse/archiv/20110930.1255.360473.html',
+       source_id => 'INKO_078941',
        data  => <<EOF,
-#: XXX Ende der Bauarbeiten?
-#: XXX nach den Bauarbeiten Radfahrstreifen
-#: next_check: 2012-03-01
 userdel	q4::inwork; 11148,19838 11051,19789 10948,19737 10829,19676 10742,19632
 EOF
      },
@@ -19784,6 +19781,42 @@ EOF
        source_id => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20110928.1140.360205.html',
        data  => <<EOF,
 userdel	q4::inwork; 2941,25822 2897,25776 2764,25639 2721,25576 2657,25486 2531,25368 2519,25353 2446,25265
+EOF
+     },
+     { from  => 1318629629, # 2011-10-15 00:00
+       until => 1320274799, # 2011-11-02 23:59
+       text  => 'Instandsetzungsarbeiten an Fahrbahnflächen in der Pannwitzstraße zwischen Olbendorfer Weg und Puchertweg, Vollsperrung, vom 12. Oktober bis zum 02. November 2011 ',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20111006.1020.360727.html',
+       data  => <<EOF,
+userdel	q4::inwork 4613,19279 4690,19446
+EOF
+     },
+     { from  => 1318229040, # 2011-10-10 08:44
+       until => 1322496000, # 2011-11-28 17:00
+       text  => 'Motardstr. (Spandau): Baustelle, Fahrtrichtung gesperrt Richtung Rohrdamm zwischen Sternfelder Str. und Rohrdamm, 11.10.2011 08:44 Uhr bis 28.11.2011 17:00 Uhr ',
+       type  => 'handicap',
+       source_id => 'IM_018013',
+       data  => <<EOF,
+userdel	q4::inwork; 386,14162 990,14062
+EOF
+     },
+     { from  => 1318716000, # 2011-10-16 00:00
+       until => 1322262000, # 2011-11-26 00:00
+       text  => 'Prötzel: L35: Straßenbauarbeiten Prötzel - Harnekop und umgekehrt Vollsperrung ab 17.10.11 bis 25.11.2011 ',
+       type  => 'gesperrt',
+       source_id => 'LS/O-SG33-F/11/197',
+       data  => <<EOF,
+userdel	2::inwork 50141,30438 50704,30986
+EOF
+     },
+     { from  => 1317621600, # 2011-10-03 08:00
+       until => 1320422400, # 2011-11-04 17:00
+       text  => 'Silbersteinstr. (Neukölln): Baustelle, Fahrtrichtung gesperrt Richtung Oberlandstr. zwischen Hermannstr. bis Eschersheimer Str., 04.10.2011 08:00 Uhr bis 04.11.2011 17:00 Uhr ',
+       type  => 'handicap',
+       source_id => 'INKO_108705',
+       data  => <<EOF,
+userdel	q4::inwork; 12395,6785 12044,6707 11689,6634
 EOF
      },
     );

@@ -875,6 +875,7 @@ Müggelbergplatz: Kopfsteinpflaster	Q2 23293,1697 23278,1668 23303,1650 23321,167
 Müggelbergallee: Kopfsteinpflaster	Q2 23321,1678 23409,1699 23669,1759
 (Müggelbergallee - Straße zum Müggelturm): Waldweg, meist OK	Q1- 23669,1759 24265,1891 24889,1743
 (Müggelbergallee - Müggelheimer Damm): Waldweg, meist OK	Q1- 24265,1891 24528,1949 24630,2034
+#: XXX wahrscheinlich mittlerweile (teilweise) asphaltiert
 Str. 790/791: holpriger Fahrweg	Q2 30546,-3072 30588,-3000 30599,-2827 30640,-2803 30703,-2841 30727,-2911 30710,-3037 30588,-3000
 Wernsdorfer Str.: teilweise Kopfsteinpflaster	Q2 30533,-3124 30537,-3140 30439,-3371 30390,-3443
 Wassersportallee: schlechtes Kopfsteinpflaster	Q3 22655,1450 22756,1524
@@ -18769,8 +18770,14 @@ Nelly-Sachs-Str.: Asphalt	Q0 24191,14866 24253,14888 24349,14922
 # 
 #: by: Julie Wegner [AM]
 Am Waldidyll: Beton	Q1 2390,22573 2384,22689 2418,22878
-#: by: Jean-Michael [AM]
-Pannwitzstr.: Asphalt mit vielen Schlaglöchern	Q2 4279,19093 4384,19089 4471,19124 4546,19197 4613,19279 4690,19446 4734,19618 4753,19728 4750,19881 4728,20003
+#: by: Jean-Michael [AM] vvv
+Pannwitzstr.: Asphalt mit vielen Schlaglöchern	Q2 4279,19093 4384,19089 4471,19124 4546,19197 4613,19279
+#: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20111006.1020.360727.html
+#: XXX Instandsetzungsarbeiten an Fahrbahnflächen, möglicherweise danach Q0
+#: next_check: 2011-11-02
+Pannwitzstr.: Asphalt mit vielen Schlaglöchern	Q2 4613,19279 4690,19446
+Pannwitzstr.: Asphalt mit vielen Schlaglöchern	Q2 4690,19446 4734,19618 4753,19728 4750,19881 4728,20003
+#: by: ^^^
 # 
 #: by: Ingo [AM] vvv
 #: corrected_by: srt (removed "schlechter")

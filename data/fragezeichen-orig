@@ -139,6 +139,10 @@ Fahrradstraße in der Lauenburger Str.	?::projected 5870,4992 5905,5088 5927,5182
 #: section ignorieren vvv
 #: section Straßen in Bau und Planung vvv
 # 
+#: next_check: 2011-10-31
+#: by: http://www.berlin.de/ba-pankow/presse/archiv/20110930.1255.360473.html
+Blankenberger Str.: Radstreifen	?::inwork 11148,19838 11051,19789 10948,19737 10829,19676 10742,19632
+# 
 #: last_checked: 2011-10-03
 #: next_check: 2012-02-15
 #: XXX zurzeit Bauarbeiten. Wahrscheinlich Gehwegplatten
@@ -159,6 +163,7 @@ Wernerstraße/Ohserring: neuer Zebrastreifen wird markiert	?::projected 23740,128
 Cecilienstraße/Hannaweg: neuer Zebrastreifen wird markiert	?::projected 20909,13968 20936,13941
 #: by: ^^^
 # 
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/45re.pdf/file?y=2011
 Günter-Riesebrodt-Weg: Qualität? Genaue Lage der Straße? Schon fertiggestellt?	?::inwork 19395,7901 19302,7971
 # 
 #XXX diese Straße existiert noch nicht
@@ -2544,6 +2549,7 @@ Zwerghuhnweg: Qualität?	? 15476,332 15565,379 15657,436 15731,476 15803,522
 Lachshuhnweg: Qualität?	? 15731,476 15789,386 15859,297 15927,245
 #: XXX srt: südlicher Abschnitt asphaltiert, mittlerer mit Verbundsteinpflaster
 Döbelner Weg: Qualität?	? 16153,835 16117,927 16083,1013 16054,1087
+#: XXX Bezirk/Ortsteil?
 Straße 188: Qualität?	? 16054,1087 15935,1043
 #: XXX laut osm cobblestone, surface=very_bad (tatsächlich?)
 Eilenburger Weg: Qualität des nördlichen Abschnitts?	? 16141,1136 16126,1112
@@ -3066,10 +3072,16 @@ Elsa-Rendschmidt-Weg: Wieviele Stufen hat die Treppe zur Sarkauer Allee?	? -1574
 Führen hier die Routen 3 und 6 entlang?	? 905,24113 931,23965 902,23844
 #: XXX fehlt in Berlin.coords.data
 Straupitzer Steig: Qualität?	? 6768,21515 6777,21335
-#: XXX fehlt in Berlin.coords.data
+# 
+#: XXX mittlerweile in AEG-Siedlung Heimat umbenannt? vvv
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/45re.pdf/file?y=2011 vvv
+#: XXX fehlt in Berlin.coords.data vvv
 Straße 189 (Lübars): Qualität?	? 6353,22515 6301,22581
-#: XXX fehlt in Berlin.coords.data
 Straße 188 (Lübars): Qualität?	? 6353,22622 6301,22581 6254,22546
+#: XXX ^^^
+#: by: ^^^
+#: XXX ^^^
+# 
 #: XXX fehlt in Berlin.coords.data und bei osm
 Straße 185 (Lübars): Qualität?	? 6006,22867 6083,22772
 #: XXX fehlt in Berlin.coords.data und bei osm
@@ -3648,6 +3660,7 @@ Eduard-Spranger-Promenade: Qualität? Für Radfahrer (legal) befahrbar? Ist der We
 # 
 #: XXX Kasernengelände, fehlen alle bei Berlin.coords.data vvv
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/30re.pdf/file vvv
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/44re.pdf/file?y=2011 vvv
 #: XXX wird bis zum 2011-11-01 in Christoph-Kolumbus-Str. umbenannt
 Käthe-Paulus-Str.: Qualität? Offen?	? -5758,6469 -5843,6524 -5952,6601 -6457,6973
 #: XXX wird bis zum 2011-11-01 in Ferdinand-Magellan-Str. umbenannt
@@ -3657,6 +3670,7 @@ Graf-Zeppelin-Str.: Qualität? Offen?	? -5952,6601 -5994,6543 -6090,6600
 #: XXX wird bis zum 2011-11-01 in Marco-Polo-Str. umbenannt
 Otto-Lilienthal-Straße: Qualität? Offen?	? -5843,6524 -6191,6070
 weitere Straßen auf dem Kasernengelände: Verlauf? Straßennamen?	? -6160,6695 -6294,6479 -6175,6386 -6096,6485 -5994,6421 -6079,6306 -6052,6283
+#: by: ^^^
 #: by: ^^^
 #: XXX ^^^
 Karl-Marx-Str. (Schulzendorf): Qualität des westlichen Abschnitts?	? 24343,-3387 24190,-3443 24080,-3471 23969,-3523 23617,-3682 23368,-3794
@@ -3672,6 +3686,7 @@ Stubenrauchstr. (Eichwalde): Qualität des westlichen Abschnitts?	? 25246,-3167 2
 Platz der Republik (Eichwalde): Qualität?	? 25764,-2832 25735,-2826 25705,-2855 25711,-2886 25745,-2898 25771,-2884 25778,-2855 25764,-2832
 Händelplatz (Eichwalde): Qualität?	? 25368,-3091 25347,-3077 25295,-3103 25254,-3124 25246,-3167 25273,-3176 25320,-3153 25367,-3124 25368,-3091
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/31re.pdf/file
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/45re.pdf/file?y=2011
 #: XXX fehlt in Berlin.coords.data (PLZ=13156)
 Am Orangeriepark: Qualität? Genaue Lage der Straße?	? 10270,19478 10399,19502
 # 
@@ -3722,3 +3737,19 @@ Zur Holzoper: wo liegt die Straße?	? 19977,4218 19996,4279
 #: XXX fehlt in Berlin.coords.data
 Karsenzeile: Qualität? Bordsteine?	? 14682,2532 14597,2607 14582,2595 14458,2709 14408,2708 14245,2704
 Verlängerung des Imbuschwegs: Qualität? Gibt es Schranken o.ä.?	? 14251,2797 14245,2704 14254,2566
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/44re.pdf/file?y=2011
+Grafenauer Weg: evtl. existiert jetzt eine Verbindung zum Bodenmaiser Weg	? 19495,9278 19495,9243
+# 
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/45re.pdf/file?y=2011 vvv
+#: XXX fehlt in Berlin.coords.data vvv
+Alter Wiesenweg: Lage des Weges? Qualität?	? 2613,15827 2061,15975 1921,15936
+Mecklenburgweg: Lage des Weges? Qualität?	? 1921,15936 1873,16077 1708,16061
+Vor den Toren: Lage des Weges? Qualität?	? 1921,15936 1952,15825
+Am Hohenzollernkanal: Lage des Weges? Qualität?	? 1952,15825 2469,15818
+#: XXX ^^^
+#: by: ^^^
+# 
+#: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20111012.1540.360984.html
+#: XXX ebenfalls: einen Eintrag in flaechen-orig vornehmen!
+#: by: http://www.landschaftspark-herzberge.de/uploads/tx_userbildgalerie/Luftbild.jpg
+Landschaftspark Herzfelde: existieren neue Wege nach der Eröffnung?	? 17310,13137 17658,13150
