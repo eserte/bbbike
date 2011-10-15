@@ -963,11 +963,15 @@ test-with-protocol: permission
 	    export HARNESS_TIMER=1;\
 	    export BBBIKE_LONG_TESTS=1;\
 	    $(MAKE) ext   >$(HOME)/log/bbbike-test-$$DATE 2>&1;\
-	    $(MAKE) test >>$(HOME)/log/bbbike-test-$$DATE 2>&1 ||\
-		(echo "$(MAKE) test failed, please look at $(HOME)/log/bbbike-test-$$DATE for output"; false)
-	DATE=`date +%Y%m%d`;\
-	    (cd data && $(MAKE) all slow-checks really-slow-checks >$(HOME)/log/bbbike-test-data-$$DATE 2>&1) ||\
-		(echo "$(MAKE) all slow-checks really-slow-checks failed, please look at $(HOME)/log/bbbike-test-data-$$DATE for output"; false)
+	    if ! $(MAKE) test >>$(HOME)/log/bbbike-test-$$DATE 2>&1; then \
+		echo "$(MAKE) test failed, please look at $(HOME)/log/bbbike-test-$$DATE for output";\
+		has_failure=yes;\
+	    fi; \
+	    if ! (cd data && $(MAKE) all slow-checks really-slow-checks >$(HOME)/log/bbbike-test-data-$$DATE 2>&1); then \
+		echo "$(MAKE) all slow-checks really-slow-checks failed, please look at $(HOME)/log/bbbike-test-data-$$DATE for output";\
+		has_failure=yes;\
+	    fi; \
+	    [ "$$has_failure" = "" ]
 
 EOF
 ;
