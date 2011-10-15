@@ -699,7 +699,7 @@ Riemenschneiderweg: gemeinsamer Rad- und Gehweg, eng	q1 6878,5946 6895,5873
 Harkortstr.: Bodenschwellen	q1 7570,5508 7621,5494
 (Plauener Str. - Küllstedter Str.): Fußgänger	q2 17352,14827 17363,14760
 #: XXX_prog: für Anhänger q2
-Orankeweg: einige Bodenschwellen, ohne Anhänger leicht umfahrbar	q0 14934,15860 15305,15858 15395,15852 15453,15848
+Orankeweg: einige Bodenschwellen, ohne Anhänger leicht umfahrbar	q0 14934,15860 15313,15858 15395,15852 15453,15848
 (Gounodstr. - Otto-Brahm-Str.): abschnittsweise eng und kurvig	q1 14435,15904 14451,15873 14383,15848 14349,15825 14365,15778
 Gounodstr.: Fußgänger	q1 14259,15816 14272,15837 14366,15877
 Seidenberger Str.: Bordstein, Geländer	q3 12379,16998 12373,17007
@@ -1079,6 +1079,14 @@ Gansbergsteig: Fußgänger, Bordsteine	q2 14676,2375 14776,2474 14703,2553
 (Löwensteinring - Wildmeisterdamm): Fußgänger, Bordstein	q1- 14467,2514 14418,2469 14409,2450 14335,2381
 Anna-Nemitz-Weg: Fußgänger	q1 13943,2284 13905,2381 13885,2377 13872,2497 13891,2518 13898,2582 13914,2601
 (Parchimer Allee - Am Teltowkanal): eng	q2 14422,4787 14555,4976 14562,4985
+#: XXX_prog BS; evtl. kann man vorher schon auf den Gehweg rauffahren
+(Fritz-Lesch-Str. - Orankestr.): Bordstein	q3 15313,15848 15313,15858
+(Park am Fennpfuhl): Fußgänger	q1 15235,13573 15247,13662
+(Park am Fennpfuhl): Fußgänger	q1 15091,13613 15141,13647 15180,13665 15247,13662 15266,13667 15323,13777 15305,13829 15254,13899 15219,13888 15179,13872 15153,13931 15076,14009 15050,14054
+(Darßer Str. - Malchower See): Fußgänger	q1 15506,17973 15825,18385 15949,18555
+Am Malchower See: Fußgänger	q1 15614,18649 15774,18656 15873,18561 15949,18555 16161,18687
+(Wartenberger Str. - Margaretenhöhe): Gehweg, für Radfahrer freigegeben	q0- 16216,19183 16314,19210 16349,19442 16343,19470 16309,19542 16359,19590 16384,19678
+(Siedlung Wartenberg - Tierheim): eng, mit Anhänger nur langsam passierbar	q2- 19386,19841 19692,19743 19817,19593
 #
 ######################### User Contributions #################################
 # 

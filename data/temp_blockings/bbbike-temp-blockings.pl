@@ -2635,7 +2635,7 @@ EOF
        text  => 'Buschallee (Weißensee) in Richtung Berliner Allee zwischen Elsastr. und Hansastr. Baustelle, Fahrtrichtung gesperrt (bis 23.09.2005)',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4; 15918,16383 15871,16399 15432,16500
+userdel	q4; 15918,16383 15871,16399 15845,16405 15432,16500
 EOF
      },
      { from  => 1124575200, # 2005-08-21 00:00
@@ -19532,7 +19532,7 @@ EOF
        type  => 'handicap',
        source_id => 'INKO_107049',
        data  => <<EOF,
-userdel	q4::inwork 16094,19179 15640,19208
+userdel	q4::inwork 16104,19165 15647,19165
 EOF
      },
      { from  => 1313272800, # 2011-08-14 00:00
