@@ -1271,7 +1271,7 @@ Otto-Braun-Str.: Mittelstreifen	3nocross 11368,13170 11314,13087 11267,13012 112
 #: by: ^^^
 Karl-Marx-Allee: Mittelstreifen	3nocross 11228,12951 11295,12915 11589,12768 11635,12745
 #: note: wobei die Bordsteine auf der Hasenheide-Seite abgeflacht sind, aber auf der Freibad-Seite ist es weiterhin unbequem
-Columbiadamm: unbequem zu überqueren (Bordsteine)	3nocross 10796,8498 10911,8457 11271,8325
+Columbiadamm: unbequem zu überqueren (Bordsteine)	3nocross 10796,8498 10911,8457 11223,8343 11271,8325
 #: by: Axel Schumacher:
 Wolfensteindamm: Mittelstreifen	3nocross 4807,5131 4766,5208 4745,5283
 #: by: Wolfgang Schmidt: vvv
@@ -1496,7 +1496,7 @@ tragen (Brücke Tegeler Hafen)	0:60 1227,20281
 tragen (Brücke Tegeler Hafen)	0:60 1166,20330
 # osm_XXX hier ist keine Treppe --- XXX del --- tragen? (Fußgängerbrücke)	0:120 19762,-160
 tragen (Stufen), mit MTB befahrbar	0:30 5725,11644
-tragen (20 Stufen)	0:25 13138,9897
+tragen (23 Stufen)	0:25 13138,9897
 unter der S-Bahn-Brücke tragen (6 Stufen)	0:10 3726,18982
 unter der S-Bahn-Brücke tragen (5 Stufen)	0:10 3733,18997
 tragen (31 Stufen) oder Aufzug (Storkower Str.)	0:30 14530,13269
@@ -1779,6 +1779,8 @@ Drängelgitter mit asphaltierer Vorbeifahrmöglichkeit	BNP:2::trailer=4 14597,1012
 # XXX währen der Bauarbeiten entfernt (2010-10) --- wird es jemals wieder eingesetzt? --- Drängelgitter mit asphaltierer Vorbeifahrmöglichkeit	BNP:2::trailer=4 14626,10162
 #: note: 90cm Öffnung, 90cm zum versetzten Gitter -> 63cm lichte Breite
 Drängelgitter	BNP:3::trailer=no 12904,10141
+#: note: relativ großzügige Öffnung
+Drängelgitter	BNP:1::trailer=3 12833,9998
 Schranke (Privatstr.)	BNP:5 25039,5304
 Schranke	BNP:2::trailer=4 9907,11752
 #: note: möglicherweise wird die Vorbeifahrt ohne Schranke in Zukunft permanent möglich sein
@@ -1922,7 +1924,7 @@ Hinter der Katholischen Kirche: Bauarbeiten, vollständig gesperrt	2:inwork 9801,
 #: next_check: ^^^
 #: last_checked: ^^^
 # 
-#: last_checked: 2011-08-19
+#: last_checked: 2011-10-20
 #: next_check: 2012-02-01
 Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10170,12261 10063,12438
 # 

@@ -9134,8 +9134,8 @@ EOF
 userdel	q4::inwork -32153,-176 -32143,-211 -31993,-726 -31991,-1024
 EOF
      },
-     { from  => 1179453600, # 2007-05-18 04:00
-       until => 1317938400, # 2011-10-07 00:00
+     { from  => 1319138777, # 2011-10-20 21:26
+       until => 1322694000, # 2011-12-01 00:00
        text  => 'Rudower Chaussee (Treptow - Köpenick) in beiden Richtungen Höhe S-Bahn Brücke Adlershof Baustelle, Straße vollständig gesperrt, als Fußgänger kann man passieren',
        type  => 'handicap',
        source_id => 'INKO_096853',
@@ -19817,6 +19817,37 @@ EOF
        source_id => 'INKO_108705',
        data  => <<EOF,
 userdel	q4::inwork; 12395,6785 12044,6707 11689,6634
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Rüdersdorfer Str.: Einbahnstraße zwischen Fredersdorfer Str. und Wedekindstr., offen in Richtung Osten',
+       type  => 'handicap',
+       data  => <<EOF,
+#: XXX danach vielleicht Radspuren?
+#: last_checked: 2011-10-20
+#: next_check: 2011-10-24
+userdel	q3::inwork; 13066,11854 12891,12008
+EOF
+     },
+     { from  => 1318996800, # 2011-10-19 06:00
+       until => 1319252400, # 2011-10-22 05:00
+       text  => 'In den Ministergärten (Mitte): Veranstaltung, Straße vollständig gesperrt zwischen Ebertstr. und Gertrud-Kolmar-Str., 20.10.2011 06:00 Uhr bis 22.10.2011 05:00 Uhr ',
+       type  => 'gesperrt',
+       source_id => 'IM_018057',
+       data  => <<EOF,
+userdel	2::temp 8567,11799 8810,11824
+EOF
+     },
+     { from  => 1319169600, # 2011-10-21 06:00
+       until => 1319392800, # 2011-10-23 20:00
+       text  => 'Vollsperrungen im Bereich Invalidenstraße zwischen Chausseestraße und Am Nordbahnhof, 22.10.11 ab 6:00 Uhr bis 23.10.11, 20:00 Uhr',
+       type  => 'handicap',
+       source_id => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1110/nachricht4508.html',
+       data  => <<EOF,
+#: XXX weitere Sperrungen: 29.10.11 ab 6:00 Uhr bis 30.10.11, 20:00 Uhr
+#: XXX                     05.11.11 ab 6:00 Uhr bis 06.11.11, 20:00 Uhr
+userdel	q4::inwork 9085,13919 8935,13844
 EOF
      },
     );

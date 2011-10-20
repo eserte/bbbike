@@ -1598,9 +1598,11 @@ Karl-Marx-Allee -> Berolinastr.: Mittelstreifen	3::igndisp 11228,12951 11295,129
 Berolinastr. -> Karl-Marx-Allee: Mittelstreifen	3::igndisp 11362,12964 11295,12915 11589,12768
 Karl-Marx-Allee -> Berolinastr.: Mittelstreifen	3::igndisp 11295,12915 11589,12768 11600,12857
 Berolinastr. -> Karl-Marx-Allee: Mittelstreifen	3::igndisp 11600,12857 11589,12768 11635,12745
-unbequem zu überqueren (Bordsteine)	3nocross::ignrte 10796,8498 10911,8457 11271,8325
-Am Rixdorfer Teich -> Columbiadamm: unbequem zu überqueren (Bordsteine)	3::igndisp 10957,8573 10911,8457 11271,8325
-Columbiadamm -> Am Rixdorfer Teich: unbequem zu überqueren (Bordsteine)	3::igndisp 10796,8498 10911,8457 10957,8573
+unbequem zu überqueren (Bordsteine)	3nocross::ignrte 10796,8498 10911,8457 11223,8343 11271,8325
+Hasenheide, am Rixdorfer Teich -> Columbiadamm: unbequem zu überqueren (Bordsteine)	3::igndisp 10929,8503 10911,8457 11223,8343
+Columbiadamm -> Hasenheide, am Rixdorfer Teich: unbequem zu überqueren (Bordsteine)	3::igndisp 10796,8498 10911,8457 10929,8503
+Hasenheide, westlicher Weg -> Columbiadamm: unbequem zu überqueren (Bordsteine)	3::igndisp 11235,8454 11223,8343 11271,8325
+Columbiadamm -> Hasenheide, westlicher Weg: unbequem zu überqueren (Bordsteine)	3::igndisp 10911,8457 11223,8343 11235,8454
 Mittelstreifen	3nocross::ignrte 4807,5131 4766,5208 4745,5283
 Fronhoferstr. -> Wolfensteindamm: Mittelstreifen	3::igndisp 4656,5101 4766,5208 4745,5283
 Wolfensteindamm -> Fronhoferstr.: Mittelstreifen	3::igndisp 4807,5131 4766,5208 4656,5101
@@ -1888,7 +1890,7 @@ tragen (Spreetunnel, 50 Stufen)	0:60:52 25571,4553
 tragen (Brücke Tegeler Hafen)	0:60:-256 1227,20281
 tragen (Brücke Tegeler Hafen)	0:60:-231 1166,20330
 tragen (Stufen), mit MTB befahrbar	0:30:-69 5725,11644
-tragen (20 Stufen)	0:25:16 13138,9897
+tragen (23 Stufen)	0:25:16 13138,9897
 unter der S-Bahn-Brücke tragen (6 Stufen)	0:10:-180 3726,18982
 unter der S-Bahn-Brücke tragen (5 Stufen)	0:10:-154 3733,18997
 tragen (31 Stufen) oder Aufzug (Storkower Str.)	0:30:-71 14530,13269
@@ -2085,6 +2087,7 @@ Drängelgitter	BNP:5:34:trailer=10 14453,9929
 Drängelgitter mit asphaltierer Vorbeifahrmöglichkeit	BNP:2:39:trailer=4 14558,10082
 Drängelgitter mit asphaltierer Vorbeifahrmöglichkeit	BNP:2:41:trailer=4 14597,10129
 Drängelgitter	BNP:3:-153:trailer=no 12904,10141
+Drängelgitter	BNP:1:-154:trailer=3 12833,9998
 Schranke (Privatstr.)	BNP:5:-180 25039,5304
 Schranke	BNP:2:85:trailer=4 9907,11752
 Schranke	BNP:5:50:trailer=10 10112,11796

@@ -11,10 +11,8 @@ Invalidenstr. (Mitte): Baustelle, Richtung Alt-Moabit zwischen Gartenstr. und He
 Alt-Stralau: Bauarbeiten an der Brücke, enge Durchfahrt	q3::inwork 14652,10201 14558,10264
 Behrenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8861,12125 9054,12154 9064,12156 9164,12172
 Behrenstr.: Bauarbeiten, Fahrbahn teilweise gesperrt	q4::inwork 9373,12197 9164,12172
-Oberwallstr.: Bauarbeiten, Einbahnstraße	q4::inwork; 9925,11947 9913,12068
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9890,12161 9875,12257 9869,12297
 Jerusalemer Str.: Bauarbeiten, Einbahnstraße	q3::inwork; 9878,11857 9892,11752
-Neumannsgasse: Bauarbeiten, Fahrbahn gespert	q4::inwork 10284,12113 10383,12191
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 9475,12365 9462,12481 9454,12558
 Universitätsstr.: wegen Bauarbeiten Richtung Unter den Linden gesperrt	q4::inwork; 9580,12581 9601,12380
 Matkowskystr., Revaler Str.: Bauarbeiten, Einbahnstraße	q4::inwork; 14530,11137 14509,11060 14442,11101
@@ -64,9 +62,9 @@ Treptower Park, am Rosengarten: Fußgänger	q2 14819,9462 14910,9643
 Treptower Park: Fußgänger	q1 14697,9726 14645,9710 14575,9648 14496,9705 14361,9772
 Görlitzer Park: Fußgänger	q2 12671,10042 12686,10045 12690,10062
 Görlitzer Park: Fußgänger	q2 12761,10195 12769,10211 12774,10222
-Görlitzer Park: Fußgänger	q2 13145,9920 13004,9997 12869,10071 12802,10097
+Görlitzer Park: Fußgänger	q2 13145,9920 12869,10071 12802,10097
 Görlitzer Park: Fußgänger	q2 12670,10160 12559,10220 12459,10256 12406,10368 12328,10442
-Görlitzer Park: Fußgänger	q2 12817,9964 12869,10071 12904,10141 12911,10156
+Görlitzer Park: Fußgänger	q2 12817,9964 12833,9998 12869,10071 12904,10141 12911,10156
 Görlitzer Park, Rondell: Fußgänger	q2 12802,10097 12737,10051 12690,10062 12659,10119 12670,10160 12712,10192 12761,10195 12801,10146 12802,10097
 Görlitzer Park: Fußgänger, eng	q2 12802,10097 12670,10160
 Görlitzer Park: eng, Kurven, Fußgänger	q2 12507,10130 12509,10189 12559,10220
@@ -89,7 +87,10 @@ Tiergarten: Parkweg	q1 7816,12150 7827,12105 7832,12036 7822,11952 7801,11875 77
 (Bremer Weg - Fasanerieallee): Parkweg	q1 6342,11878 6379,11843 6406,11784 6467,11780 6540,11754
 Parkweg: enge Brücke, Fußweg	q2 14310,9692 14361,9772 14404,9847 14448,9922 14453,9929 14558,10082 14597,10129 14626,10162 14652,10201
 Spittelmarkt: Gehweg	q1 10369,11728 10240,11740
-Hasenheide: Parkweg	q1 11271,8325 11282,8428 11250,8585 11177,8985 11141,9107 11136,9183
+Hasenheide: Fußgänger	q1 11271,8325 11282,8428 11250,8585 11177,8985 11141,9107 11136,9183
+Hasenheide: Fußgänger	q1 11141,9107 11115,9100 11098,9046 11100,8974 11137,8738 11193,8568 11235,8454 11223,8343
+Hasenheide: Fußgänger	q1 11177,8985 11100,8974
+(Hasenheide, Weg am westlichen Rand): Fußgänger	q1 11100,8974 11048,8922 10988,8867 10936,8837 10919,8785 10919,8755 10924,8690 10893,8608 10890,8567 10929,8503
 Hasenheide, zur Lilienthalstr.: Parkweg	q1 10709,9192 11141,9107
 Am Flutgraben: Fußgänger	q1 13333,9929 13412,9935 13579,10146
 (durch den Schlesischen Busch): Fußgänger	q1 13412,9935 13636,9964 13711,10022
@@ -283,7 +284,7 @@ Heidenfeldstr.: Gehweg	q1 13433,13346 13393,13326
 Grünstr.: Fußgängerzone, Radfahren erlaubt	q2 22111,4562 22162,4546 22214,4548 22312,4593
 Schloßplatz Köpenick: Fußgänger, Straßenbahn, Lieferverkehr	q2 22111,4562 22093,4499
 (Karlsgartenstr. - Hasenheide): Parkweg, Fußgänger	q1 11627,8485 11508,8491 11333,8582 11250,8585
-(Am Rixdorfer Teich): Parkweg, Fußgänger	q1 11250,8585 11104,8559 11020,8596 10957,8573 10911,8457
+(Am Rixdorfer Teich): Parkweg, Fußgänger	q1 11250,8585 11193,8568 11133,8560 11020,8596 10957,8573 10929,8503 10911,8457
 Torstr. - Weydingerstr.: Bordsteine	q2 11079,13492 11108,13513
 Gustav-Heinemann-Brücke: Fußgänger, enge Brücke	q3 8116,12938 8110,13042
 Beruner Str.: Rampen, Fußgänger, U-Bahn-Ausgang	q3 20143,10731 20215,10554
