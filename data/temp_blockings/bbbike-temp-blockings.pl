@@ -19850,4 +19850,23 @@ EOF
 userdel	q4::inwork 9085,13919 8935,13844
 EOF
      },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Alt-Friedrichsfelde - Weißenhöher Straße: Bauarbeiten, Durchfahrt könnte gesperrt sein',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: last_checked: 2011-10-22
+#: XXX Zaun auf der westlichen Seite, kann aber umfahren werden; Matsch...
+userdel	2::inwork 19750,11730 19827,11686 19881,11591
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Alfred-Kowalke-Str.: Bauarbeiten, teilweise muss auf den Gehweg ausgewichen werden',
+       type  => 'handicap',
+       data  => <<EOF,
+#: last_checked: 2011-10-22
+userdel	q4::inwork 18286,11275 18059,11248
+EOF
+     },
     );

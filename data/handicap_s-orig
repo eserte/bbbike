@@ -13,8 +13,8 @@
 #: XXX siehe auch qualitaet_s-orig
 Sembritzkystr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 7203,5488 7186,5453 7157,5418 7095,5317 7018,5201
 # 
-#: last_checked: 2011-09-13 vvv
-#: next_check: 2011-10-15 vvv
+#: last_checked: 2011-10-21 vvv
+#: next_check: 2012-01-15 vvv
 #: XXX wird wahrscheinlich reorganisiert mit der neuen Verbindung
 Beuthstr. - Spittelmarkt: Gehweg, Bauarbeiten	q4::inwork 10229,11618 10213,11728
 Spittelmarkt: Gehweg, Bordstein, Bauarbeiten	q4::inwork 10166,11592 10153,11666 10213,11728
@@ -48,7 +48,7 @@ Behrenstr.: Bauarbeiten, Fahrbahn teilweise gesperrt	q4::inwork 9373,12197 9164,
 #: XXX nach den Bauarbeiten vielleicht besserer Asphalt? -> qualitaet_s-orig
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9890,12161 9875,12257 9869,12297
 # 
-#: last_checked: 2011-09-15
+#: last_checked: 2011-10-21
 Jerusalemer Str.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 9878,11857 9892,11752
 # 
 #XXX del --- #: last_checked: 2011-06-12 --- Neumannsgasse: Bauarbeiten, Fahrbahn gespert	q4::inwork 10284,12113 10383,12191
@@ -1088,6 +1088,10 @@ Anna-Nemitz-Weg: Fuﬂg‰nger	q1 13943,2284 13905,2381 13885,2377 13872,2497 13891,
 Am Malchower See: Fuﬂg‰nger	q1 15614,18649 15774,18656 15873,18561 15949,18555 16161,18687
 (Wartenberger Str. - Margaretenhˆhe): Gehweg, f¸r Radfahrer freigegeben	q0- 16216,19183 16314,19210 16349,19442 16343,19470 16309,19542 16359,19590 16384,19678
 (Siedlung Wartenberg - Tierheim): eng, mit Anh‰nger nur langsam passierbar	q2- 19386,19841 19692,19743 19817,19593
+(J‰nschwalder Str. - Hˆnower Str.): eng	q2 25370,14421 25408,14189 25451,14018
+(Roﬂweiner Ring - Hˆnower Str.): einige enge Stellen mit Kurven	q1 24949,13760 24993,13731 25063,13781 25068,13778 25101,13797 25163,13785 25339,13948 25341,13984 25414,14036
+#: XXX_prog BS
+Roﬂweiner Ring: Bordsteinkante	q3 25163,13785 25157,13790
 #
 ######################### User Contributions #################################
 # 
@@ -1668,7 +1672,7 @@ K¸hleweinstr.: Autos und Schule	q1 8088,17218 8043,17282 8014,17475 7998,17564 7
 #: by: Achim Stenzel:
 (Weg an der Markuskirche): viele Fuﬂg‰nger, Bordsteinkanten	q3 6342,4783 6288,4704
 #: by: Torsten Franik:
-Allee der Kosmonauten - Biesdorfer Promenade: Fuﬂg‰nger	q1 19821,13604 19826,13444 19835,13152 20068,13036
+Allee der Kosmonauten - Biesdorfer Promenade: Fuﬂg‰nger	q1 19821,13604 19826,13444 19837,13218 19866,13174 19868,13131 20068,13036
 #: by: Bob L¸der:
 Rathener Str.: enge Straﬂe	q1 24228,14644 24271,14576 24362,14542
 #: by: anonymous
@@ -2225,7 +2229,8 @@ Hohenzollernstr. (Zehlendorf): enge Straﬂe	q1 492,2813 522,2802 537,2772
 #: corrected_by: srt/policy (q4 -> q1)
 Rosa-Reinglass-Steig	q1 -2878,15304 -2856,15383
 #: by: Michael Korb:
-Am Lupinenfeld: enge Straﬂe	q1 24164,13504 24347,13465 24539,13427 24746,13384 24817,13370 24875,13333 25031,13242 25138,13183 25181,13157
+#: corrected_by: srt/policy (q1 -> q0-)
+Am Lupinenfeld: enge Straﬂe	q0- 24164,13504 24347,13465 24539,13427 24746,13384 24817,13370 24875,13333 25031,13242 25138,13183 25181,13157
 #: by: Malte Wollitz vvv
 Franzstr. (Lankwitz): enge Straﬂe	q1 5556,3056 5776,3195
 Gluckweg: enge Straﬂe	q1 5853,3050 6039,3275
@@ -2373,7 +2378,8 @@ Straﬂe 245 (Weiﬂensee): enge Straﬂe	q1 13590,17368 13271,17589
 #: by: Joachim Faust:
 (Querweg durch die Dauerkolonie Togo): einige Fuﬂg‰nger	q1 5900,16817 5700,16584
 #: by: Thomas Dˆring:
-Forster Str. (Hellersdorf): enge Straﬂe	q1 25237,14627 25365,14667 25397,14563 25418,14538
+#: corrected_by: srt/policy (q1 -> q0-)
+Forster Str. (Hellersdorf): enge Straﬂe	q0- 25237,14627 25365,14667 25397,14563 25418,14538
 #: by: katrin peters:
 #: corrected_by: srt/policy (q2 -> q1)
 Deisterpfad: Fuﬂg‰nger	q1 -17,5066 -18,5083 -21,5099

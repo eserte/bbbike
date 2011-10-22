@@ -824,7 +824,7 @@ Oelder Weg	1 1967,18743 1965,18686
 Steffenshagener Str.	1s 23159,11097 22983,11098
 Pestalozzistr.	1s:q3 24652,11794 24706,11838 24769,11819
 Finsterberger Str.	1s:q3 23086,12565 23129,12496 23233,12406
-Bauerwitzer Weg	1 22917,12239 22814,12353 22990,12493
+Bauerwitzer Weg	1 22917,12239 22814,12353 22861,12390 22990,12493
 Heinrich-Grüber-Platz	1 22877,11940 22858,11937 22843,11999 22856,12003 22870,12000 22883,11956 22877,11940
 Boraweg	1s:q4 6759,2882 6710,2909 6658,2907
 Viktoriaplatz	1 3500,4146 3523,4139 3528,4118 3518,4106 3489,4115 3485,4137 3500,4146
@@ -859,6 +859,10 @@ Alt-Lichtenrade	1 10782,-24 10835,-145
 Glimmerweg	1 11436,1513 11349,1483 11161,1518
 #: note: Ausfahrt auf die Hauptstraße ist verboten
 Dorfstr.	1s:q3 18144,18813 18161,18814
+Nossener Str.	1 24345,14403 24298,14267 24217,14041
+Nossener Str.	1 24187,14052 24221,14142 24272,14278 24321,14410
+Mark-Twain-Str.	1 24349,14500 24363,14453 24345,14403
+Mark-Twain-Str.	1 24321,14410 24349,14500
 ######################################################################
 #
 # Potsdam
@@ -1589,6 +1593,8 @@ tragen, langgezogene Stufen (13 Stufen)	0:25 20704,1383
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+Drängelgitter	BNP:3::trailer=10 24958,13798
+Drängelgitter	BNP:3::trailer=10 24946,13755
 Tor	BNP:10::trailer=15 14555,4976
 Schranke	BNP:3::trailer=10 14433,4716
 Drängelgitter am Bahnübergang (2x)	BNP:6::trailer=15 14985,1801
@@ -1877,8 +1883,8 @@ Spreeufer: wegen Bauarbeiten gesperrt	2:inwork 8596,12576 8495,12651 8473,12753
 #: next_check: 2011-10-15
 (General-Pape-Str. - Gontermannstr.): Bauzäune	2:inwork 8106,8290 8264,8289
 # 
-#: last_checked: 2011-09-17
-#: next_check: 2011-10-15
+#: last_checked: 2011-10-21
+#: next_check: 2012-01-15
 Axel-Springer-Str.: wird noch gebaut	2:inwork 10166,11592 10202,11669 10213,11728
 # 
 #: last_checked: 2011-08-02

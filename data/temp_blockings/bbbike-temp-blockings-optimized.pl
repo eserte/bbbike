@@ -1901,16 +1901,7 @@ userdel	q3::inwork; 13066,11854 12891,12008
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_018057',
-         'until' => 1319252400,
-         'text' => 'In den Ministergärten (Mitte): Veranstaltung, Straße vollständig gesperrt zwischen Ebertstr. und Gertrud-Kolmar-Str., 20.10.2011 06:00 Uhr bis 22.10.2011 05:00 Uhr ',
-         'from' => 1318996800,
-         'id' => 2297,
-         'data' => 'userdel	2::temp 8567,11799 8810,11824
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1110/nachricht4508.html',
          'until' => 1319392800,
@@ -1920,6 +1911,27 @@ userdel	q3::inwork; 13066,11854 12891,12008
          'data' => '#: XXX weitere Sperrungen: 29.10.11 ab 6:00 Uhr bis 30.10.11, 20:00 Uhr
 #: XXX                     05.11.11 ab 6:00 Uhr bis 06.11.11, 20:00 Uhr
 userdel	q4::inwork 9085,13919 8935,13844
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => undef,
+         'text' => 'Alt-Friedrichsfelde - Weißenhöher Straße: Bauarbeiten, Durchfahrt könnte gesperrt sein',
+         'from' => undef,
+         'id' => 2299,
+         'data' => '#: last_checked: 2011-10-22
+#: XXX Zaun auf der westlichen Seite, kann aber umfahren werden; Matsch...
+userdel	2::inwork 19750,11730 19827,11686 19881,11591
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => undef,
+         'text' => 'Alfred-Kowalke-Str.: Bauarbeiten, teilweise muss auf den Gehweg ausgewichen werden',
+         'from' => undef,
+         'id' => 2300,
+         'data' => '#: last_checked: 2011-10-22
+userdel	q4::inwork 18286,11275 18059,11248
 ',
          'type' => 'handicap'
        }
