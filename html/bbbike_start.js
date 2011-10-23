@@ -363,7 +363,7 @@ function call_bbbike_api(action, params, cb) {
 
 function call_bbbikeorg_location(lng, lat, cb_success, cb_fail) {
   var client = new XMLHttpRequest();
-  var url = "http://www.bbbike.org/cgi/location.cgi?lng=" + lng + "&lat=" + lat;
+  var url = "http://www.bbbike.org/cgi/location.cgi?appid=bbbikede&lng=" + lng + "&lat=" + lat;
 //  var url = "http://devel.bbbike.org/cgi/location.cgi?lng=" + lng + "&lat=" + lat;
   client.open("GET", url, true);
   client.send();
@@ -381,7 +381,7 @@ function call_bbbikeorg_location(lng, lat, cb_success, cb_fail) {
 
 function redirect_to_bbbikeorg(lng, lat) {
   call_bbbikeorg_location(lng, lat, function(city) {
-      window.location = "http://www.bbbike.org/" + city + "?startc_wgs84=" + lng + "," + lat;
+      window.location = "http://www.bbbike.org/" + city + "?appid=bbbikede&startc_wgs84=" + lng + "," + lat;
     }, function() {
       alert("Die Position " + lng + "," + lat + " wird von bbbike.de und bbbike.org nicht unterstützt.");
     });
