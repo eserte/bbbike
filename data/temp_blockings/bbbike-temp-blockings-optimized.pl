@@ -1253,10 +1253,12 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        {
          'until' => undef,
          'recurring' => 1,
-         'text' => 'Friedrich-Ebert-Platz: bei Bundestagssitzungen gesperrt',
+         'text' => 'Friedrich-Ebert-Platz: bei Bundestagssitzungen gesperrt, mittlerweile möglicherweise permanent gesperrt',
          'from' => undef,
          'id' => 2021,
-         'data' => '	2::temp 8554,12593 8540,12420
+         'data' => '#: XXX wo gibt es Informationen hierzu?
+#: by: Kai Wagner (permanente Sperrung)
+	2::temp 8554,12593 8540,12420
 ',
          'type' => 'gesperrt'
        },
@@ -1902,18 +1904,7 @@ userdel	q3::inwork; 13066,11854 12891,12008
          'type' => 'handicap'
        },
        undef,
-       {
-         'source_id' => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1110/nachricht4508.html',
-         'until' => 1319392800,
-         'text' => 'Vollsperrungen im Bereich Invalidenstraße zwischen Chausseestraße und Am Nordbahnhof, 22.10.11 ab 6:00 Uhr bis 23.10.11, 20:00 Uhr',
-         'from' => 1319169600,
-         'id' => 2298,
-         'data' => '#: XXX weitere Sperrungen: 29.10.11 ab 6:00 Uhr bis 30.10.11, 20:00 Uhr
-#: XXX                     05.11.11 ab 6:00 Uhr bis 06.11.11, 20:00 Uhr
-userdel	q4::inwork 9085,13919 8935,13844
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => undef,
          'text' => 'Alt-Friedrichsfelde - Weißenhöher Straße: Bauarbeiten, Durchfahrt könnte gesperrt sein',

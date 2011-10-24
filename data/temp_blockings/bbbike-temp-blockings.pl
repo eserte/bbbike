@@ -17203,10 +17203,12 @@ EOF
      },
      { from  => undef, # 
        until => undef, #
-       text  => 'Friedrich-Ebert-Platz: bei Bundestagssitzungen gesperrt',
+       text  => 'Friedrich-Ebert-Platz: bei Bundestagssitzungen gesperrt, mittlerweile möglicherweise permanent gesperrt',
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
+#: XXX wo gibt es Informationen hierzu?
+#: by: Kai Wagner (permanente Sperrung)
 	2::temp 8554,12593 8540,12420
 EOF
      },
