@@ -381,7 +381,7 @@ function call_bbbikeorg_location(lng, lat, cb_success, cb_fail) {
 
 function redirect_to_bbbikeorg(lng, lat) {
   call_bbbikeorg_location(lng, lat, function(city) {
-      window.location = "http://www.bbbike.org/" + city + "?appid=bbbikede&startc_wgs84=" + lng + "," + lat;
+      window.location = "http://www.bbbike.org/" + city + "/?appid=bbbikede&startc_wgs84=" + lng + "," + lat;
     }, function() {
       alert("Die Position " + lng + "," + lat + " wird von bbbike.de und bbbike.org nicht unterstützt.");
     });
