@@ -996,16 +996,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_013995',
-         'until' => 1319983200,
-         'text' => 'Freiheit/Wiesendamm (Spandau): Baustelle, Fahrtrichtung gesperrt (bis Ende 09/2011) Richtung Spandauer Damm zwischen Klärwerkstr. und Spandauer Damm, 25.08.2009 07:04 Uhr bis 30.10.2011 15:00 Uhr ',
-         'from' => 1251090240,
-         'id' => 1850,
-         'data' => 'userdel	q4::inwork; -1258,13552 -990,13502 -729,13415 -346,13349 -307,13279 -264,13009
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1897,14 +1888,23 @@ userdel	3 12992,7545 13015,7440 12925,7425
          'from' => undef,
          'id' => 2296,
          'data' => '#: XXX danach vielleicht Radspuren?
-#: last_checked: 2011-10-20
-#: next_check: 2011-10-24
+#: last_checked: 2011-10-25
+#: next_check: 2011-10-31
 userdel	q3::inwork; 13066,11854 12891,12008
 ',
          'type' => 'handicap'
        },
        undef,
-       undef,
+       {
+         'source_id' => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1110/nachricht4508.html',
+         'until' => 1320606000,
+         'text' => 'Vollsperrungen im Bereich Invalidenstraße zwischen Chausseestraße und Am Nordbahnhof, 05.11.11 ab 6:00 Uhr bis 06.11.11, 20:00 Uhr',
+         'from' => 1320382800,
+         'id' => 2298,
+         'data' => 'userdel	q4::inwork 9085,13919 8935,13844
+',
+         'type' => 'handicap'
+       },
        {
          'until' => undef,
          'text' => 'Alt-Friedrichsfelde - Weißenhöher Straße: Bauarbeiten, Durchfahrt könnte gesperrt sein',
@@ -1923,6 +1923,16 @@ userdel	2::inwork 19750,11730 19827,11686 19881,11591
          'id' => 2300,
          'data' => '#: last_checked: 2011-10-22
 userdel	q4::inwork 18286,11275 18059,11248
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'http://www.berlin.de/ba-pankow/presse/archiv/20111028.1105.361658.html',
+         'until' => 1321138799,
+         'text' => 'Vollsperrung der Oderberger Straße vom 7. November 2011 bis 12. November 2011',
+         'from' => 1320534000,
+         'id' => 2301,
+         'data' => 'userdel	q4::inwork 10723,14772 10401,14963
 ',
          'type' => 'handicap'
        }

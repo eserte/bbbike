@@ -518,13 +518,13 @@ Berliner Str.: außen Kopfsteinpflaster, Straßenbahntrasse asphaltiert	Q1- 12736,
 Handjerystr.: schlechtes Kopfsteinpflaster	Q3 20967,3343 20906,3433 20833,3519 20683,3693 20546,3865
 (An der Müggelspree): fester Waldweg	Q1 23441,4956 23461,5054 23620,5096 23776,5040 23852,5036 23982,5030 24233,4878 24398,4842 24834,4541 25030,4421 25131,4400 25200,4420 25315,4474 25403,4480 25429,4493 25479,4540 25565,4549
 (Zum Spreetunnel): fester Waldweg, Stufen!	Q2+ 25385,4414 25403,4415 25477,4419 25565,4549
-Görlitzer Park: teils fester sandiger Weg	Q1 12671,10042 12686,10045 12690,10062
-Görlitzer Park: teils fester sandiger Weg	Q1 12761,10195 12769,10211 12774,10222
+Görlitzer Park: teils fester sandiger Weg	Q1- 12671,10042 12686,10045 12690,10062
+Görlitzer Park: teils fester sandiger Weg	Q1- 12761,10195 12769,10211 12774,10222
 Görlitzer Park: Asphalt	Q0 13145,9920 12869,10071 12802,10097
-Görlitzer Park: teils fester sandiger Weg	Q1 12670,10160 12559,10220 12459,10256 12406,10368 12328,10442
+Görlitzer Park: teils fester sandiger Weg	Q1- 12670,10160 12559,10220 12459,10256 12406,10368 12328,10442
 Görlitzer Park: Asphalt	Q0 12817,9964 12833,9998 12869,10071
 Görlitzer Park: Gehwegplatten	Q1+ 12869,10071 12904,10141 12911,10156
-Görlitzer Park, Rondell: teils fester sandiger Weg	Q1 12802,10097 12737,10051 12690,10062 12659,10119 12670,10160 12712,10192 12761,10195 12801,10146 12802,10097
+Görlitzer Park, Rondell: teils fester sandiger Weg	Q1- 12802,10097 12737,10051 12690,10062 12659,10119 12670,10160 12712,10192 12761,10195 12801,10146 12802,10097
 Görlitzer Park: asphaltiert	Q0 12802,10097 12670,10160
 Görlitzer Park: teils fester sandiger Weg	Q1 12507,10130 12509,10189 12559,10220
 Görlitzer Park: mäßiges bis schlechtes Kopfsteinpflaster	Q2- 12559,10220 12611,10299
@@ -2891,7 +2891,7 @@ Am Pankepark: Beton	Q1 8184,14052 8290,14119
 Am Pankepark: Verbundsteinpflaster	Q1 8290,14119 8246,14184
 Am Pankepark: noch unbefestigt, Schotter	Q2- 8246,14184 8152,14130
 Stendaler Platz: überwiegend Asphalt	Q0 6394,14085 6489,14071
-Karl-Marx-Allee - Hildegard-Jadamowitz-Str.: unbefestigter und holpriger Parkplatz	Q2 12950,12340 12985,12303
+Karl-Marx-Allee - Hildegard-Jadamowitz-Str.: Gehwegplatten und Verbundsteinpflaster	Q0- 12869,12425 12950,12340 12985,12303
 Hinter dem Zeughaus: kleinteiliges Kopfsteinpflaster	Q1 9842,12506 9950,12522
 (Krankenhaus Herzberge): Asphalt mit Schäden	Q1- 17479,13490 17500,13504 17510,13527 17502,13554 17475,13567
 Beilsteiner Str.: Beton	Q0- 19025,14037 18998,14089 18859,14048 18871,13796 18875,13467
@@ -6145,7 +6145,7 @@ Kurzer Steig: Asphalt	Q0 24126,5521 24162,5424
 Am Stichkanal: Parkweg	Q1 22832,4491 22814,4505 22797,4518 22702,4592 22585,4634
 Am Stichkanal: Beton	Q0 22585,4634 22458,4565
 Am Stichkanal: Parkweg	Q1 22759,4430 22797,4518
-Straßenbahntrasse zum Alexanderplatz: asphaltierte Radwege	Q0 11139,13008 11191,13080
+Straßenbahntrasse zum Alexanderplatz: Radwege auf Gehweg/Betonplatten	Q0- 11139,13008 11191,13080
 (Siegfriedstr. - Gotlindestr.): Asphalt	Q0 17234,13081 17267,13067
 (Landschaftspark Herzberge): Beton	Q1 17267,13067 17300,13061 17331,13010 17498,13015 17674,13022 17671,13132
 (Landschaftspark Herzberge): Beton	Q1 17300,13061 17300,13118 17671,13132 17698,13134
@@ -15879,7 +15879,7 @@ Windthorststr.: guter Beton	Q1 22424,10662 22490,10868 22552,11029
 #: confirmed_by: srt
 Lauinger Str.: Asphalt	Q0 21537,11256 21305,11363 21221,11398
 #: note: "reiner Trampelpfad... sehr eng... nur für könner"
-(Gartenstr. - Tychyer Str.): loser Sandweg	Q3 21217,11328 21255,11314 21286,11319 21305,11363
+(Gartenstr. - Tychyer Str.): loser Sandweg	Q3 21217,11328 21257,11323 21286,11319 21305,11363
 #: note: "unbefahrene alte Betonstraße.. Sackgasse"
 #: corrected_by: srt (Q2 -> Q1-)
 Gartenstr. (Biesdorf): alte Betonstraße	Q1- 21138,11271 21162,11287 21192,11324 21217,11328

@@ -33,15 +33,9 @@ Invalidenstr. (Mitte): Baustelle, Richtung Alt-Moabit zwischen Gartenstr. und He
 #: next_check: 2011-11-15
 Alt-Stralau: Bauarbeiten an der Br¸cke, enge Durchfahrt	q3::inwork 14652,10201 14558,10264
 # 
-#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1010/nachricht4088.html
-#: next_check: 2012-06-01
-Behrenstr.: Bauarbeiten, Einbahnstraﬂenregelung	q4::inwork; 8861,12125 9054,12154 9064,12156 9164,12172
+#XXX del --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1010/nachricht4088.html --- #: next_check: 2012-06-01 --- Behrenstr.: Bauarbeiten, Einbahnstraﬂenregelung	q4::inwork; 8861,12125 9054,12154 9064,12156 9164,12172
 #XXX del --- #: last_checked: 2011-04-19 --- Reichstagufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9117,12705 9209,12795 9280,12883
-#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1107/nachricht4409.html
-#: next_check: 2011-12-31
-#: XXX evtl. gehen die Bauarbeiten bis Ende 2012 (mit Unterbrechungen) weiter
-Behrenstr.: Bauarbeiten, Fahrbahn teilweise gesperrt	q4::inwork 9373,12197 9164,12172
-# 
+#XXX del --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1107/nachricht4409.html ---#: next_check: 2011-12-31 --- #: XXX evtl. gehen die Bauarbeiten bis Ende 2012 (mit Unterbrechungen) weiter --- Behrenstr.: Bauarbeiten, Fahrbahn teilweise gesperrt	q4::inwork 9373,12197 9164,12172
 #XXX del --- #: last_checked: 2011-08-19 --- Oberwallstr.: Bauarbeiten, Einbahnstraﬂe	q4::inwork; 9925,11947 9913,12068
 # 
 #: last_checked: 2011-10-20
@@ -61,14 +55,13 @@ Charlottenstr.: wegen Bauarbeiten eine Einbahnstraﬂe Richtung S¸den	q4::inwork; 
 #: next_check: 2011-12-15
 Universit‰tsstr.: wegen Bauarbeiten Richtung Unter den Linden gesperrt	q4::inwork; 9580,12581 9601,12380
 # 
-#: last_checked: 2011-10-23
+#: last_checked: 2011-10-30
 #: next_check: 2011-12-01
 Matkowskystr., Revaler Str.: Bauarbeiten, Einbahnstraﬂe	q4::inwork; 14530,11137 14509,11060 14442,11101
 #:
-#: last_checked: 2011-10-23 vvv
+#: last_checked: 2011-10-30 vvv
 #: next_check: 2011-12-01 vvv
 Helmerdingstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 14465,11195 14442,11101
-Haasestr.: Einbahnstraﬂe ist eingerichtet	q4::inwork; 14286,11186 14327,11308
 #: next_check: ^^^
 #: last_checked: ^^^
 # 
@@ -242,11 +235,7 @@ Markgrafenstr.: Gehweg	q2 9737,11546 9732,11574 9707,11596 9701,11656
 Gendarmenmarkt: Fuﬂg‰ngerzone, ggfs. schieben	q3 9526,11911 9668,11928
 Gendarmenmarkt: Fuﬂg‰ngerzone, ggfs. schieben	q3 9516,12010 9656,12021
 Am Volkspark: Parkweg	q1 5745,8194 5934,8220
-Karl-Marx-Str. - Marchlewskistr.: Gehweg	q2 12869,12425 12950,12340
-#: last_checked: 2011-09-17
-#: XXX alten Eintrag dann wieder aktivieren
-Karl-Marx-Allee - Marchlewskistr.: Bauarbeiten, eng	q3::inwork 12950,12340 12985,12303
-#Karl-Marx-Allee - Marchlewskistr.: Gehweg	q2 12950,12340 12985,12303
+Karl-Marx-Allee - Marchlewskistr.: Gehweg	q2 12869,12425 12950,12340 12985,12303
 #: XXX_prog: zus‰tzlich noch Bordsteine an der ˆstlichen Seite
 Lange Str. [vor Kaufhof]: Fuﬂg‰nger	q2 12409,11902 12522,11837
 Gotenstr./Cheruskerstr. - Kolonnenstr.: Fuﬂg‰nger	q2 7488,8768 7548,8879
@@ -2208,7 +2197,7 @@ Kulmseestr.: einige Fuﬂg‰nger	q1 20252,12262 20303,12230
 #: confirmed_by: srt
 (Kniprodestr./Michelangelostr. - Puccinistr.): Fuﬂweg mit Bordsteinkanten	q2- 13973,15259 13905,15306 13809,15370
 #: by: Sebastian Koch:
-(Gartenstr. - Tychyer Str.): sehr enger Trampelpfad	q2 21217,11328 21255,11314 21286,11319 21305,11363
+(Gartenstr. - Tychyer Str.): sehr enger Trampelpfad	q2 21217,11328 21257,11323 21286,11319 21305,11363
 #: by: Elke Ortloff:
 Eisweg: enge Straﬂe	q1+ 23569,10956 23577,10915 23608,10902 23596,10848 23561,10712 23569,10693
 #: by: Manuela Baumg‰rtel:

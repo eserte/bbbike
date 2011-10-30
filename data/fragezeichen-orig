@@ -141,6 +141,9 @@ Fahrradstraﬂe in der Lauenburger Str.	?::projected 5870,4992 5905,5088 5927,5182
 #: section ignorieren vvv
 #: section Straﬂen in Bau und Planung vvv
 # 
+#: last_checked: 2011-10-30
+Oberlandstr.: wahrscheinlich Zebrastreifen in Bau	?::inwork 11448,6590
+# 
 #: last_checked: 2011-10-22
 #: next_check: 2012-02-01
 Verl‰ngerung der Kraetkestr.: teilweise schon fertig (asphaltiert), teilweise in Bau; Privatstraﬂe	?::inwork 23937,12746 24011,12724
@@ -194,6 +197,7 @@ Zwergasternweg: Qualit‰t?	?::inwork 16264,3503 16321,3583
 #: last_checked ^^^
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/30re.pdf/file
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/48re.pdf/file?y=2011
 #: XXX fehlt bei Berlin.coords.data
 #: last_checked: 2011-09-10
 #: next_check: 2012-03-01
@@ -281,12 +285,12 @@ Planstraﬂe im Block 902: neue Straﬂe wird gebaut, wo genau, wann? Wird der Straﬂ
 #: XXX - Oda Schottm¸ller
 #: XXX - Hilde Radusch
 #: XXX - Theanolte B‰hnisch
-#: XXX - Bernhard Weiﬂ - Planstraﬂe 6???
+#: XXX habe ich bereits: Bernhard Weiﬂ - Planstraﬂe 6???
 #: XXX habe ich bereits: Alex Wedding - Planstraﬂe 5
-#: last_checked: 2011-08-27 vvv
-#: next_check: 2011-10-15 vvv
+#: last_checked: 2011-10-28 vvv
+#: next_check: 2012-01-15 vvv
 Neue Planstraﬂe: ˆstl. Abschnitt Asphalt, westl. Abschnitt Fuﬂg‰nger. Straﬂenname?	?::inwork 11108,13142 11045,13183 11004,13211
-Neue Planstraﬂe: bereits fertig, Asphalt, z.Zt. Einbahnstraﬂe offen in Richtung Westen; Straﬂenname?	?::inwork 11085,13239 11027,13279
+Neue Planstraﬂe: bereits fertig, Asphalt, z.Zt. wegen umliegenden Bauarbeiten gesperrt; Straﬂenname?	?::inwork 11085,13239 11027,13279
 #: next_check: ^^^
 #: last_checked: ^^^
 #: XXX ^^^
@@ -445,9 +449,10 @@ Fasanenstr.: ÷ffnung der Einbahnstraﬂe f¸r Radfahrer	? 5268,11274 5247,10992 524
 #: next_check: 2011-12-15
 Braunschweiger Str.: Asphaltierung	? 13047,7234 13150,7254 13322,7294 13369,7307 13487,7337
 # 
-#: last_checked: 2011-10-03
+#: last_checked: 2011-10-29
 #: next_check: 2012-02-01
-Teilestr.: Radverkehrsanlagen	? 10254,5921 10404,5969 10526,6008 10614,6047 10789,6031 11068,6006 11160,5990 11257,6015 11322,5989
+#: XXX wird im ˆstlichen Abschnitt der Teilestr. je etwas passieren?
+Teilestr.: Radverkehrsanlagen	? 10815,6036 11068,6006 11160,5990 11257,6015 11322,5989
 # 
 #: last_checked: 2010-06-06
 #: next_check: 2010-09-01

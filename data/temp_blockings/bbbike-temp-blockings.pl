@@ -19827,8 +19827,8 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX danach vielleicht Radspuren?
-#: last_checked: 2011-10-20
-#: next_check: 2011-10-24
+#: last_checked: 2011-10-25
+#: next_check: 2011-10-31
 userdel	q3::inwork; 13066,11854 12891,12008
 EOF
      },
@@ -19841,14 +19841,12 @@ EOF
 userdel	2::temp 8567,11799 8810,11824
 EOF
      },
-     { from  => 1319169600, # 2011-10-21 06:00
-       until => 1319392800, # 2011-10-23 20:00
-       text  => 'Vollsperrungen im Bereich Invalidenstraße zwischen Chausseestraße und Am Nordbahnhof, 22.10.11 ab 6:00 Uhr bis 23.10.11, 20:00 Uhr',
+     { from  => 1320382800, # 2011-11-04 06:00
+       until => 1320606000, # 2011-11-06 20:00
+       text  => 'Vollsperrungen im Bereich Invalidenstraße zwischen Chausseestraße und Am Nordbahnhof, 05.11.11 ab 6:00 Uhr bis 06.11.11, 20:00 Uhr',
        type  => 'handicap',
        source_id => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1110/nachricht4508.html',
        data  => <<EOF,
-#: XXX weitere Sperrungen: 29.10.11 ab 6:00 Uhr bis 30.10.11, 20:00 Uhr
-#: XXX                     05.11.11 ab 6:00 Uhr bis 06.11.11, 20:00 Uhr
 userdel	q4::inwork 9085,13919 8935,13844
 EOF
      },
@@ -19869,6 +19867,15 @@ EOF
        data  => <<EOF,
 #: last_checked: 2011-10-22
 userdel	q4::inwork 18286,11275 18059,11248
+EOF
+     },
+     { from  => 1320534000, # 2011-11-06 00:00
+       until => 1321138799, # 2011-11-12 23:59
+       text  => 'Vollsperrung der Oderberger Straße vom 7. November 2011 bis 12. November 2011',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-pankow/presse/archiv/20111028.1105.361658.html',
+       data  => <<EOF,
+userdel	q4::inwork 10723,14772 10401,14963
 EOF
      },
     );
