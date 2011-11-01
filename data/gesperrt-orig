@@ -1960,13 +1960,7 @@ Ella-Trebe-Str.: Einbahnstraße wegen Bauarbeiten	1s:q3:inwork 7937,13109 7941,13
 #: next_check: 2011-08-01
 Alex-Wedding-Str.: Bauarbeiten, komplett gesperrt	2:inwork 11085,13239 11045,13183
 # 
-#: next_check: 2012-06-01 vvv
-#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1010/nachricht4088.html
-Mauerstr.: Einbiegen in die Behrenstr. nicht möglich	3:inwork 9076,12054 9064,12156 9054,12154
-Mauerstr.: Einbiegen in die Behrenstr. nicht möglich	3:inwork 9076,12054 9064,12156 9164,12172
-Behrenstr.: Einbiegen in die Mauerstr. nicht möglich	3:inwork 9054,12154 9064,12156 9076,12054
-Behrenstr.: Einbiegen in die Mauerstr. nicht möglich	3:inwork 9164,12172 9064,12156 9076,12054
-#: next_check: ^^^
+#XXX del (für Radfahrer ist das Abbiegen möglich) --- #: next_check: 2012-06-01 vvv --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1010/nachricht4088.html --- Mauerstr.: Einbiegen in die Behrenstr. nicht möglich	3:inwork 9076,12054 9064,12156 9054,12154 --- Mauerstr.: Einbiegen in die Behrenstr. nicht möglich	3:inwork 9076,12054 9064,12156 9164,12172 --- Behrenstr.: Einbiegen in die Mauerstr. nicht möglich	3:inwork 9054,12154 9064,12156 9076,12054 --- Behrenstr.: Einbiegen in die Mauerstr. nicht möglich	3:inwork 9164,12172 9064,12156 9076,12054 --- #: next_check: ^^^
 # 
 #: last_checked: 2011-06-12
 #: next_check: 2011-11-01

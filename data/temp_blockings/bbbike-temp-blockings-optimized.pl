@@ -996,7 +996,16 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'IM_013995',
+         'until' => 1322661600,
+         'text' => 'Freiheit/Wiesendamm (Spandau): Baustelle, Fahrtrichtung gesperrt Richtung Spandauer Damm zwischen Klärwerkstr. und Spandauer Damm, 25.08.2009 07:04 Uhr bis 30.11.2011 15:00 Uhr ',
+         'from' => 1251090240,
+         'id' => 1850,
+         'data' => 'userdel	q4::inwork; -1258,13552 -990,13502 -729,13415 -346,13349 -307,13279 -264,13009
+',
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
@@ -1319,7 +1328,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        {
          'until' => undef,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Oktober bis 19.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im November von 7.00 bis 18.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'from' => undef,
          'id' => 2068,
          'data' => '(Eingang Columbiadamm - Rundkurs auf dem Flughafen Tempelhof)	2::night 10691,8532 10640,8366 10598,8270 10575,8218
@@ -1408,16 +1417,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'http://www.berlin.de/ba-lichtenberg/presse/archiv/20100714.1400.303010.html',
-         'until' => 1320102000,
-         'text' => 'Degnerstr., Bauarbeiten, Einbahnstraße in Richtung Süden, bis Oktober 2011',
-         'from' => 1279577078,
-         'id' => 2102,
-         'data' => 'userdel	q4::inwork; 16692,16253 16806,16496 16849,16551 17017,16716
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1525,7 +1525,16 @@ userdel	3 13034,7319 13047,7234 13150,7254
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'IM_018078',
+         'until' => 1325324220,
+         'text' => 'Berliner Str. (Pankow): Baustelle bis Florastr., Fahrtrichtung stadteinwärts gesperrt, bis Ende 2011',
+         'from' => 1254641760,
+         'id' => 2172,
+         'data' => 'userdel	q4::inwork; 10680,18380 10755,18231 10829,18083 10846,17992
+',
+         'type' => 'handicap'
+       },
        undef,
        undef,
        undef,
@@ -1888,8 +1897,8 @@ userdel	3 12992,7545 13015,7440 12925,7425
          'from' => undef,
          'id' => 2296,
          'data' => '#: XXX danach vielleicht Radspuren?
-#: last_checked: 2011-10-25
-#: next_check: 2011-10-31
+#: last_checked: 2011-10-31
+#: next_check: 2011-11-06
 userdel	q3::inwork; 13066,11854 12891,12008
 ',
          'type' => 'handicap'
@@ -1933,6 +1942,16 @@ userdel	q4::inwork 18286,11275 18059,11248
          'from' => 1320534000,
          'id' => 2301,
          'data' => 'userdel	q4::inwork 10723,14772 10401,14963
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'INKO_110898',
+         'until' => 1323273600,
+         'text' => 'Teichstr. (Reinickendorf): Baustelle, Fahrtrichtung gesperrt (bis Anfang 12/11) Richtung Gotthardstr. zwischen Lindauer Allee und Gotthardstr. ',
+         'from' => 1319526000,
+         'id' => 2302,
+         'data' => 'userdel	q4::inwork; 6432,18682 6418,18491 6403,18289 6383,18033 6380,17836
 ',
          'type' => 'handicap'
        }

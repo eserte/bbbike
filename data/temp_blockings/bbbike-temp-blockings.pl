@@ -15727,9 +15727,9 @@ userdel	2::inwork -30199,-5774 -30919,-6570 -31110,-6743 -32618,-7268
 EOF
      },
      { from  => 1251090240, # 2009-08-24 07:04
-       until => 1319983200, # 2011-10-30 15:00
-       text  => 'Freiheit/Wiesendamm (Spandau): Baustelle, Fahrtrichtung gesperrt (bis Ende 09/2011) Richtung Spandauer Damm zwischen Klärwerkstr. und Spandauer Damm, 25.08.2009 07:04 Uhr bis 30.10.2011 15:00 Uhr ',
-       type  => 'handicap',
+       until => 1322661600, # 2011-11-30 15:00
+       text  => 'Freiheit/Wiesendamm (Spandau): Baustelle, Fahrtrichtung gesperrt Richtung Spandauer Damm zwischen Klärwerkstr. und Spandauer Damm, 25.08.2009 07:04 Uhr bis 30.11.2011 15:00 Uhr ',
+       type  => 'gesperrt',
        source_id => 'IM_013995',
        data  => <<EOF,
 userdel	q4::inwork; -1258,13552 -990,13502 -729,13415 -346,13349 -307,13279 -264,13009
@@ -18658,13 +18658,13 @@ EOF
 userdel	q4::inwork 21233,6096 20722,6971
 EOF
      },
-     { from  => 1254645120, # 2009-10-04 10:32
-       until => 1314991761, # 1333112400, # 2012-03-30 15:00
-       text  => 'Berliner Str. (Pankow): Baustelle, Fahrtrichtung stadteinwärts gesperrt, 05.10.2009 10:32 Uhr bis 30.03.2012 15:00 Uhr',
+     { from  => 1254641760, # 2009-10-04 09:36
+       until => 1325324220, # 2011-12-31 10:37
+       text  => 'Berliner Str. (Pankow): Baustelle bis Florastr., Fahrtrichtung stadteinwärts gesperrt, bis Ende 2011',
        type  => 'handicap',
-       source_id => 'IM_014357',
+       source_id => 'IM_018078',
        data  => <<EOF,
-userdel	q4::inwork; 10680,18380 10755,18231 10829,18083 10846,17992 10859,17854
+userdel	q4::inwork; 10680,18380 10755,18231 10829,18083 10846,17992
 EOF
      },
      { from  => 1295721886, # 2011-01-22 19:44
@@ -19827,8 +19827,8 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX danach vielleicht Radspuren?
-#: last_checked: 2011-10-25
-#: next_check: 2011-10-31
+#: last_checked: 2011-10-31
+#: next_check: 2011-11-06
 userdel	q3::inwork; 13066,11854 12891,12008
 EOF
      },
@@ -19876,6 +19876,15 @@ EOF
        source_id => 'http://www.berlin.de/ba-pankow/presse/archiv/20111028.1105.361658.html',
        data  => <<EOF,
 userdel	q4::inwork 10723,14772 10401,14963
+EOF
+     },
+     { from  => 1319526000, # 2011-10-25 09:00
+       until => 1323273600, # 2011-12-07 17:00
+       text  => 'Teichstr. (Reinickendorf): Baustelle, Fahrtrichtung gesperrt (bis Anfang 12/11) Richtung Gotthardstr. zwischen Lindauer Allee und Gotthardstr. ',
+       type  => 'handicap',
+       source_id => 'INKO_110898',
+       data  => <<EOF,
+userdel	q4::inwork; 6432,18682 6418,18491 6403,18289 6383,18033 6380,17836
 EOF
      },
     );
