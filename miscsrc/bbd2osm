@@ -29,7 +29,7 @@ use VectorUtil qw(get_polygon_center);
 
 sub usage () {
     die <<EOF;
-usage: $0 [-ignore-missing] [-use-orig] [-quiet] [-debug] [datadir] [-optimize-for garmin]
+usage: $0 [-ignore-missing] [-use-orig] [-quiet] [-debug] [datadir] [-optimize-for garmin|mapnik]
        $0 [-type area|waterway|highway|railway|ferry] -single bbdfile
 
 Either convert a whole bbbike data directory, or convert a single bbd
@@ -42,7 +42,7 @@ my $single_file_type;
 my $fragezeichen_file;
 my $ignore_missing;
 my $use_orig;
-my $optimize_for = '';
+my $optimize_for_string = '';
 my $shorten_for_garmin;
 my $quiet;
 my $debug;
@@ -52,20 +52,29 @@ GetOptions("single=s" => \$single_file,
 	   "fragezeichen=s" => \$fragezeichen_file,
 	   "ignore-missing!" => \$ignore_missing,
 	   "use-orig!" => \$use_orig,
-	   "optimize-for=s" => \$optimize_for,
+	   "optimize-for=s" => \$optimize_for_string,
 	   "shorten-for-garmin!" => \$shorten_for_garmin,
 	   "quiet!" => \$quiet,
 	   "debug!" => \$debug,
 	  )
     or usage;
 
-if ($optimize_for) {
-    if ($optimize_for ne 'garmin') {
-	warn "-optimize-for takes only value 'garmin'\n";
+use constant OPTIMIZE_FOR_NONE   => 0;
+use constant OPTIMIZE_FOR_GARMIN => 1;
+use constant OPTIMIZE_FOR_MAPNIK => 2;
+my $optimize_for = OPTIMIZE_FOR_NONE;
+if ($optimize_for_string) {
+    if ($optimize_for_string !~ m{^(garmin|mapnik)$}) {
+	warn "-optimize-for takes only value 'garmin' or 'mapink'\n";
 	usage;
     }
-    if ($optimize_for eq 'garmin') {
+    if ($optimize_for_string eq 'garmin') {
 	$shorten_for_garmin = 1;
+	$optimize_for = OPTIMIZE_FOR_GARMIN;
+    } elsif ($optimize_for_string eq 'mapnik') {
+	$optimize_for = OPTIMIZE_FOR_MAPNIK;
+    } else {
+	die "Should never happen (optimize_for=$optimize_for_string)";
     }
 }
 
@@ -247,7 +256,8 @@ sub handle_blocked_node_like {
 	if ($r->[Strassen::NAME] =~ m{(\d+)\s+Stufe}) { # XXX see steps_stats.pl for more possible regexps, should go into a module!
 	    $attribs->{step_count} = $1;
 	}
-	if ($optimize_for eq 'garmin') {
+	if ($optimize_for == OPTIMIZE_FOR_GARMIN ||
+	    $optimize_for == OPTIMIZE_FOR_MAPNIK) {
 	    if (@{$r->[Strassen::COORDS]} == 1) {
 		my @node_ids = get_node_ids($r);
 		$remember_steps{$node_ids[0]} = {
@@ -320,13 +330,20 @@ sub handle_handicap_like {
 	my $node_id = maybe_add_node($px,$py);
 	$node_id;
     } @{ $r->[Strassen::COORDS] };
-    for my $node_id_i (1 .. $#node_ids) {
-	if ($cat_hin =~ m{^[qQ][34]$}) {
-	    $speed0{$node_ids[$node_id_i-1].' '.$node_ids[$node_id_i]} = 1; # XXX correct direction
-	}
-	if (defined $cat_rueck) {
-	    if ($cat_rueck =~ m{^[qQ][34]$}) {
-		$speed0{$node_ids[$node_id_i].' '.$node_ids[$node_id_i-1]} = 1;
+
+    if ($optimize_for == OPTIMIZE_FOR_MAPNIK) {
+	# no q3/q4 hacks for map display, please
+    } else {
+	# hack: %speed0 has information for downgrading a highway due
+	# to speed limitations (bicycle only)
+	for my $node_id_i (1 .. $#node_ids) {
+	    if ($cat_hin =~ m{^[qQ][34]$}) {
+		$speed0{$node_ids[$node_id_i-1].' '.$node_ids[$node_id_i]} = 1; # XXX correct direction
+	    }
+	    if (defined $cat_rueck) {
+		if ($cat_rueck =~ m{^[qQ][34]$}) {
+		    $speed0{$node_ids[$node_id_i].' '.$node_ids[$node_id_i-1]} = 1;
+		}
 	    }
 	}
     }
@@ -350,15 +367,26 @@ sub handle_anywhere_highway_like { _handle_highway_like(undef, @_) }
 sub _handle_highway_like {
     my($city, $r, $dir) = @_;
 
-    my($cat) = $r->[Strassen::CAT] =~ m{^([^:]+)};
+    my($cat, $attribs) = $r->[Strassen::CAT] =~ m{^([^:]+)(?:::(.*))?};
     if ($cat eq 'Pl') {
 	# XXX maybe handle later...
 	return;
     }
+
     my $highway_tag = $cat_to_highway{$cat};
     if (!defined $highway_tag) {
 	warn "Ignore cat='$r->[Strassen::CAT]'...\n";
 	return;
+    }
+
+    my $tunnel;
+    my $bridge;
+    if ($attribs) {
+	if ($attribs =~ m{Tu}) { # may be _Tu or Tu_, too
+	    $tunnel = 1;
+	} elsif ($attribs =~ m{Br}) {
+	    $bridge = 1;
+	}
     }
 
     my @node_ids = get_node_ids($r);
@@ -399,6 +427,12 @@ sub _handle_highway_like {
     push @segments, [[@node_ids[$begin_split_index..$#node_ids]], [@last_tags]];
 
     my($name, @cityparts) = Strasse::split_street_citypart($r->[Strassen::NAME]);
+    if ($optimize_for == OPTIMIZE_FOR_MAPNIK) {
+	undef $name if $name =~ m{^\(.*\)$};
+	if (defined $name) {
+	    $name =~ s{\s+\[.*\]$}{};
+	}
+    }
     _xmlify($name);
 
     # This is the most reasonable scheme to set is_in/addr tags, to
@@ -442,7 +476,9 @@ sub _handle_highway_like {
 	for my $node_id (@node_ids) {
 	    print $wayfh qq{  <nd ref="$node_id"/>\n};
 	}
-	print $wayfh qq{  <tag k="name" v="$name" />\n};
+	if (defined $name) {
+	    print $wayfh qq{  <tag k="name" v="$name" />\n};
+	}
 	while(my($k,$v) = each %is_in) {
 	    _xmlify($v);
 	    print $wayfh qq{  <tag k="$k" v="$v" />\n};
@@ -470,6 +506,12 @@ sub _handle_highway_like {
 	if ($no_access) {
 	    print $wayfh qq{  <tag k="access" v="no" />\n};
 	    print $wayfh qq{  <tag k="bicycle" v="no" />\n}; # access=no is not enough
+	}
+	if ($tunnel) {
+	    print $wayfh qq{  <tag k="tunnel" v="yes" />\n};
+	}
+	if ($bridge) {
+	    print $wayfh qq{  <tag k="bridge" v="yes" />\n};
 	}
 
 	if (0) {
@@ -515,12 +557,22 @@ sub handle_fixme_like {
 sub handle_railway_like {
     my($r, $dir) = @_;
 
-    my($cat) = $r->[Strassen::CAT] =~ m{^([^:]+)};
+    my($cat, $attribs) = $r->[Strassen::CAT] =~ m{^([^:]+)(?:::(.*))?};
     return if $cat !~ m{^([USR]|RP|RG)([ABC0]|Bau)?$};
     my $railway_cat = $cat_to_railway{$1};
     return if !defined $railway_cat;
     my $is_abandoned = defined $2 && $2 eq '0';
     my $is_construction = defined $2 && $2 eq 'Bau';
+
+    my $tunnel;
+    my $bridge;
+    if ($attribs) {
+	if ($attribs =~ m{Tu}) { # may be _Tu or Tu_, too
+	    $tunnel = 1;
+	} elsif ($attribs =~ m{Br}) {
+	    $bridge = 1;
+	}
+    }
 
     my @node_ids = get_node_ids($r);
 
@@ -537,6 +589,12 @@ sub handle_railway_like {
 	print $wayfh qq{  <tag k="abandoned" v="yes" />\n};
     } elsif ($is_construction) {
 	print $wayfh qq{  <tag k="construction" v="yes" />\n};
+    }
+    if ($tunnel) {
+	print $wayfh qq{  <tag k="tunnel" v="yes" />\n};
+    }
+    if ($bridge) {
+	print $wayfh qq{  <tag k="bridge" v="yes" />\n};
     }
     print $wayfh qq{</way>\n};
     $next_way_id++;
@@ -659,7 +717,13 @@ sub handle_trafficsignals_like {
     if      ($cat =~ m{^X}) {
 	$attribs = { highway => 'traffic_signals' };
     } elsif ($cat =~ m{^F}) {
-	$attribs = { highway => 'crossing', crossing => 'traffic_signals' };
+	if ($optimize_for == OPTIMIZE_FOR_MAPNIK) {
+	    # Treat LSA-X and LSA-F the same, otherwise LSA-F will not
+	    # be rendered at all in mapnik
+	    $attribs = { highway => 'traffic_signals' };
+	} else {
+	    $attribs = { highway => 'crossing', crossing => 'traffic_signals' };
+	}
     } elsif ($cat =~ m{^B}) {
 	$attribs = { railway => 'level_crossing',
 		     ($cat =~ m{0$} ? (abandoned => 'yes') : ()), # not accurate, may be also seldomly used
@@ -858,10 +922,14 @@ sub handle_cycleway_like {
 	    for my $node_id (@node_ids) {
 		print $wayfh qq{  <nd ref="$node_id"/>\n};
 	    }
-	    my $name = $r->[Strassen::NAME];
-	    if (defined $name && $name ne '') {
-		_xmlify($name);
-		print $wayfh qq{  <tag k="name" v="$name" />\n};
+	    if ($optimize_for == OPTIMIZE_FOR_MAPNIK) {
+		# avoid creating labels for cyclepaths
+	    } else {
+		my $name = $r->[Strassen::NAME];
+		if (defined $name && $name ne '') {
+		    _xmlify($name);
+		    print $wayfh qq{  <tag k="name" v="$name" />\n};
+		}
 	    }
 	    print $wayfh $extra_tags;
 	    print $wayfh qq{</way>\n};
@@ -952,6 +1020,7 @@ sub maybe_add_node {
 }
 
 sub _xmlify {
+    return if !defined $_[0];
     $_[0] =~ s{&}{&#38;}g; # XXX hack to xml-ify
     $_[0] =~ s{"}{&#34;}g;
     $_[0] =~ s{<}{&#60;}g;
@@ -1040,6 +1109,23 @@ Maximum length on Garmin devices (verified on etrex Vista HCX) is 151.
 There are some heuristics used to abbreviate some common (german)
 words. Also the function L<Strasse/short> is called with the
 abbreviation level 4.
+
+=back
+
+=head2 Mapnik optimizations
+
+With the switch C<< -optimize-for=mapnik >> some optimizations for
+later usage with mapnik (and the default osm styles) are done:
+
+=over
+
+=item * No q3/q4 hacks are done here
+
+=item * Street names in "(...)" are not rendered
+
+=item * Street name parts in "[...]" are stripped
+
+=item * Special pedestrian traffic lights handling needed
 
 =back
 
