@@ -1184,6 +1184,10 @@ Mohrenstr.: Asphalt	Q0 9220,11781 9418,11804
 Jägerstr.: Asphalt	Q0 9108,11961 9201,11968
 Jägerstr.: Asphalt	Q0 9201,11968 9394,11996
 Taubenstr.: sehr guter Asphalt	Q0 9406,11899 9208,11872 9144,11866
+#: XXX Baumaßnahmen in der Parkanlage an der Südseite der Krummen Lanke
+#: by: http://www.berlin.de/ba-steglitz-zehlendorf/presse/archiv/20111030.0735.361648.html
+#: XXX Qualität danach prüfen! Teilweise wassergebundene Decke, teilweise Pflasterung.
+#: next_check: 2012-05-01
 südlicher Uferweg an der Krummen Lanke: Waldweg, überwiegend OK, einige sandige Stellen	Q1 -1274,4367 -1245,4414 -1185,4450 -1139,4575 -1134,4706 -971,4971 -724,5080 -604,5228 -593,5280 -579,5320
 nördlicher/westlicher Uferweg an der Krummen Lanke: Waldweg, überwiegend OK	Q1 -579,5320 -603,5317 -676,5323 -731,5291 -795,5233 -888,5172 -1098,5062 -1180,5020 -1243,4939 -1298,4815 -1298,4584 -1287,4486 -1272,4450 -1245,4414
 Krumme Lanke - Parkplatz am Fischerhüttenweg: Waldweg	Q1 -1287,4486 -1304,4450 -1315,4393
@@ -6606,6 +6610,7 @@ Wettersternweg: Verbundsteinpflaster	Q0- 20710,11234 20713,11263
 Nossener Str.: Beton	Q0 24217,14041 24298,14267 24345,14403
 Mark-Twain-Str.: Beton	Q0 24345,14403 24363,14453 24349,14500
 Mark-Twain-Str.: Beton	Q0 24368,14570 24362,14542 24349,14500 24321,14410
+(ATU-Einfahrt - ALDI-Parkplatz): Asphalt	Q0 8595,9495 8561,9482 8546,9468 8514,9470 8487,9405 8500,9245
 ######################### User Contributions #################################
 #: by: anonymous vvv
 # 
@@ -8682,8 +8687,13 @@ Hallandstr.: Asphalt	Q0 11598,16878 11549,16880
 Hallandstr.: Kopfsteinpflaster	Q2 11549,16880 11499,16883 11364,16887 11270,16890 10999,16830
 #: by: ^^^
 # 
-#: by: Jan (Smile...)
-Kornburger Weg: schlechter Asphalt	Q1 -3309,17153 -3327,16832 -3343,16573
+#: by: Jan (Smile...) vvv
+#: XXX Fahrbahnsanierung im Kornburger Weg - wie sieht es danach aus?
+#: by: http://www.berlin.de/ba-spandau/presse/archiv/20111102.1015.361853.html
+#: next_check: 2011-12-14
+Kornburger Weg: schlechter Asphalt	Q1 -3309,17153 -3327,16832
+Kornburger Weg: schlechter Asphalt	Q1 -3327,16832 -3343,16573
+#: by: ^^^
 # 
 #: by: Martin Dittmar: vvv
 Am Berl: Asphalt	Q0 16923,18650 16817,18809

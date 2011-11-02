@@ -1954,6 +1954,16 @@ userdel	q4::inwork 18286,11275 18059,11248
          'data' => 'userdel	q4::inwork; 6432,18682 6418,18491 6403,18289 6383,18033 6380,17836
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => 'http://www.berlin.de/ba-steglitz-zehlendorf/presse/archiv/20111030.0735.361648.html',
+         'until' => 1338501600,
+         'text' => 'Baumaßnahmen in der Parkanlage an der Südseite der Krummen Lanke, Sperrungen möglich (bis Frühsommer 2012)',
+         'from' => undef,
+         'id' => 2303,
+         'data' => 'userdel	2::inwork -1245,4414 -1185,4450 -1139,4575 -1134,4706 -971,4971 -724,5080 -604,5228
+',
+         'type' => 'gesperrt'
        }
      
 );
