@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2005,2006,2007,2008,2009,2010 Slaven Rezic. All rights reserved.
+# Copyright (C) 2005,2006,2007,2008,2009,2010,2011 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -140,6 +140,7 @@ sub run {
 			$maptype =~ /osm-mapnik/i ? 'mapnik_map' :
 			$maptype =~ /osm-tah/i    ? 'tah_map' :
 			$maptype =~ /osm-cycle/i  ? 'cycle_map' :
+			$maptype =~ /bbbikeorg/i  ? 'bbbikeorg_map' :
 			'G_SATELLITE_MAP');
 
     my $mapmode = param("mapmode") || "";
@@ -243,6 +244,8 @@ sub get_html {
 
     # assume that osm is always updated
     my $osm_copyright_year = ((localtime)[5])+1900;
+    # ... and so is bbbike data
+    my $bbbike_copyright_year = ((localtime)[5])+1900;
 
     my $is_msie6 = do {
 	my $bi = BrowserInfo->new;
@@ -280,6 +283,8 @@ sub get_html {
     <div id="map" style="width:100%; height:75%; min-height:500px;"></div>
     <script type="text/javascript">
     //<![CDATA[
+
+    var isBBBikeBeta = @{[ $is_beta ? "true" : "false" ]};
 
     var routeLinkLabel = "Link to route: ";
     var routeLabel = "Route: ";
@@ -639,6 +644,8 @@ sub get_html {
 	    mapType = "osm-tah";
 	} else if (map.getCurrentMapType() == cycle_map) {
 	    mapType = "osm-cycle";
+	} else if (map.getCurrentMapType() == bbbikeorg_map) {
+	    mapType = "bbbikeorg";
 	} else {
 	    mapType = "satellite";
 	}
@@ -938,6 +945,25 @@ sub get_html {
         { urlArg: 'cycle', linkColor: '#000000' });
     map.addMapType(cycle_map);
 
+    var bbbikeCopyright = new GCopyright(1,
+        new GLatLngBounds(new GLatLng(-90,-180), new GLatLng(90,180)), 0,
+        '(<a rel="license" href="http://bbbike.sourceforge.net/bbbike/doc/README.html#LIZENZ">GPL</a>)');
+    var bbbikeCopyrightCollection =
+        new GCopyrightCollection('Kartendaten &copy; $bbbike_copyright_year <a href="http://bbbike.de/cgi-bin/bbbike.cgi/info=1">Slaven Rezi&#x107;</a>');
+    bbbikeCopyrightCollection.addCopyright(bbbikeCopyright);
+
+    var tilelayers_bbbikeorg = new Array();
+    tilelayers_bbbikeorg[0] = new GTileLayer(bbbikeCopyrightCollection, 0, 16);
+    tilelayers_bbbikeorg[0].getTileUrl = GetTileUrl_bbbikeorg;
+    tilelayers_bbbikeorg[0].isPng = function () { return true; };
+    tilelayers_bbbikeorg[0].getOpacity = function () { return 1.0; };
+    var bbbikeorg_map = new GMapType(tilelayers_bbbikeorg,
+        new GMercatorProjection(19), "BBBike",
+        { urlArg: 'bbbikeorg', linkColor: '#000000' });
+    if (isBBBikeBeta) {
+        map.addMapType(bbbikeorg_map);
+    }
+
     //// no, I prefer hybrid
     //map.setMapType(mapnik_map);
 
@@ -958,6 +984,10 @@ sub get_html {
 	var list = ["a", "b", "c"];
 	var server = list [ parseInt( Math.random() * list.length ) ];
 	return "http://" + server + ".tile.opencyclemap.org/cycle/" + z + "/" + a.x + "/" + a.y + ".png";
+    }
+
+    function GetTileUrl_bbbikeorg(a, z) {
+	return "http://tile.bbbike.org/osm/mapnik/" + z + "/" + a.x + "/" + a.y + ".png";
     }
 
     if (GBrowserIsCompatible() ) {
