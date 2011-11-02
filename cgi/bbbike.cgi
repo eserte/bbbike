@@ -5468,6 +5468,14 @@ sub draw_route {
 	if ($q->param('imagetype') eq 'googlemaps') {
 	    $bbbikedraw_args{Module} = "BBBikeGoogleMaps";
 	    $bbbikedraw_args{BBBikeRoute} = $route;
+	    if ($is_beta) {
+		if (0) { # cease -w
+		    $BBBikeDraw::BBBikeGoogleMaps::bbbike_googlemaps_url = $BBBikeDraw::BBBikeGoogleMaps::bbbike_googlemaps_url;
+		    $BBBikeDraw::BBBikeGoogleMaps::maptype = $BBBikeDraw::BBBikeGoogleMaps::maptype;
+		}
+		$BBBikeDraw::BBBikeGoogleMaps::bbbike_googlemaps_url = bbbikegooglemap_basename(); # may use the beta URL
+		$BBBikeDraw::BBBikeGoogleMaps::maptype = "bbbikeorg";
+	    }
 	} elsif ($q->param('imagetype') eq 'googlemapsstatic') {
 	    $bbbikedraw_args{Module} = "GoogleMapsStatic";
 	    $q->param('imagetype', 'png'); # XXX hacky...
@@ -6646,7 +6654,7 @@ EOF
         $s .= "<td><a href=\"$mapserver_init_url\">Mapserver</a></td>";
     }
     if ($can_google_maps) {
-	$s .= qq{<td><a href="bbbikegooglemap.cgi?mapmode=search;maptype=hybrid">BBBike &amp; Google Maps</a></td>};
+	$s .= qq{<td><a href="@{[ bbbikegooglemap_basename() ]}?mapmode=search;maptype=hybrid">BBBike &amp; Google Maps</a></td>};
     }
     $s .= <<EOF;
 </tr>
@@ -7412,6 +7420,10 @@ sub _is_real_street {
     $type eq 'street' || $type eq 'projected street';
 }
 
+sub bbbikegooglemap_basename {
+    "bbbikegooglemap" . ($is_beta ? "2" : "") . ".cgi";
+}
+
 ######################################################################
 #
 # Information
@@ -7598,7 +7610,7 @@ EOF
     print <<EOF;
 <h4 id="googlemaps">BBBike auf Google Maps</h4>
 Noch in Entwicklung: 
-BBBike-Routen auf <a href="bbbikegooglemap.cgi?mapmode=search;maptype=hybrid">Google Maps</a> suchen
+BBBike-Routen auf <a href="@{[ bbbikegooglemap_basename() ]}?mapmode=search;maptype=hybrid">Google Maps</a> suchen
 EOF
     print "<hr><p>\n";
 
