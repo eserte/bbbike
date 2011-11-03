@@ -281,6 +281,8 @@ sub get_html {
   </head>
   <body onload="init()" onunload="GUnload()" class="nonWaitMode">
     <div id="map" style="width:100%; height:75%; min-height:500px;"></div>
+EOF
+    my $js = <<EOF;
     <script type="text/javascript">
     //<![CDATA[
 
@@ -1024,7 +1026,7 @@ EOF
 	    }
 	    $route_js_code .= qq{);};
 
-	    $html .= <<EOF;
+	    $js .= <<EOF;
 $route_js_code
     map.addOverlay(route);
 EOF
@@ -1036,20 +1038,23 @@ EOF
 	my($x,$y) = split /,/, $xy;
 	#my $html_name = escapeHTML($name);
 	my $html_name = hrefify($name);
-	$html .= <<EOF;
+	$js .= <<EOF;
     var point = new GLatLng($y,$x);
     var marker = createMarker(point, '$html_name');
     map.addOverlay(marker);
 EOF
     }
 
-    $html .= <<EOF;
+    $js .= <<EOF;
     // *** END DATA ***
 
     GEvent.addListener(map, "click", onClick);
 
     //]]>
     </script>
+EOF
+    $html .= $js;
+    $html .= <<EOF;
     <noscript>
         <p>You must enable JavaScript and CSS to run this application!</p>
     </noscript>
