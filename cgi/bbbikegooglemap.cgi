@@ -258,6 +258,8 @@ sub get_html {
 	$bi->{user_agent_name} eq 'MSIE' && $bi->{user_agent_version} < 7;
     };
 
+    my $use_v3 = $is_beta;
+
     my $html = <<EOF;
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml">
@@ -265,12 +267,20 @@ sub get_html {
     <title>BBBike data presented with Googlemap</title>
     <link rel="stylesheet" type="text/css" href="$bbbikeroot/html/bbbike.css"><!-- XXX only for radzeit/hosteurope -->
     <link type="image/gif" rel="shortcut icon" href="$bbbikeroot/images/bbbike_google.gif"><!-- XXX only for radzeit/hosteurope -->
-<!--    <script src="http://maps.google.com/maps?file=api&v=2&key=$google_api_key" type="text/javascript"></script>-->
-<!--    <script src="http://maps.google.com/jsapi?key=$google_api_key" type="text/javascript"></script>-->
+EOF
+    if ($use_v3) {
+	$html .= <<EOF;
+    <script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
+EOF
+    } else {
+	$html .= <<EOF;
     <script src="http://www.google.com/jsapi?key=$google_api_key" type="text/javascript"></script>
     <script type="text/javascript">
       google.load("maps", "2");
     </script>
+EOF
+    }
+    $html .= <<EOF;
     <script src="$bbbikeroot/html/sprintf.js" type="text/javascript"></script>
     <script src="$bbbikeroot/html/bbbike_util.js" type="text/javascript"></script>
     <style type="text/css"><!--
@@ -286,7 +296,7 @@ sub get_html {
     --></style>
     <meta name="msapplication-config" content="none">
   </head>
-  <body onload="init()" onunload="GUnload()" class="nonWaitMode">
+  <body onload="init()" @{[ $use_v3 ? "" : 'onunload="GUnload()"' ]} class="nonWaitMode">
     <div id="map" style="width:100%; height:75%; min-height:500px;"></div>
 EOF
     my $js = <<EOF;
@@ -294,6 +304,7 @@ EOF
     //<![CDATA[
 
     var isBBBikeBeta = @{[ $is_beta ? "true" : "false" ]};
+    var useV3 = @{[ $use_v3 ? "true" : "false" ]};
 
     var routeLinkLabel = "Link to route: ";
     var routeLabel = "Route: ";
@@ -311,24 +322,38 @@ EOF
     var searchStage = 0;
 
     var isGecko = navigator && navigator.product == "Gecko" ? true : false;
-    var dragCursor = isGecko ? '-moz-grab' : 'url("$bbbikeroot/images/moz_grab.gif"), auto';
     var isMSIE6 = @{[ $is_msie6 ? "true" : "false" ]};
+    var dragCursor = isGecko ? '-moz-grab' : 'url("$bbbikeroot/images/moz_grab.gif"), auto';
 
-    var startIcon = new GIcon(G_DEFAULT_ICON, "$bbbikeroot/images/flag2_bl_centered.png");
-    startIcon.iconAnchor = new GPoint(16,16);
-    startIcon.iconSize = new GSize(32,32);
-    startIcon.shadow = "$bbbikeroot/images/flag_shadow.png";
-    startIcon.shadowSize = new GSize(45,24);
-    var goalIcon = new GIcon(G_DEFAULT_ICON, "$bbbikeroot/images/flag_ziel_centered.png");
-    goalIcon.iconAnchor = new GPoint(16,16);
-    goalIcon.iconSize = new GSize(32,32);
-    goalIcon.shadow = "$bbbikeroot/images/flag_shadow.png";
-    goalIcon.shadowSize = new GSize(45,24);
+    var startIcon, startGoalIconShadow, goalIcon;
+    if (useV3) {
+        startIcon = new google.maps.MarkerImage("$bbbikeroot/images/flag2_bl_centered.png",
+						new google.maps.Size(32,32),
+						null,
+						new google.maps.Point(16,16));
+        goalIcon = new google.maps.MarkerImage("$bbbikeroot/images/flag_ziel_centered.png",
+						new google.maps.Size(32,32),
+						null,
+						new google.maps.Point(16,16));
+	startGoalIconShadow = new google.maps.MarkerImage("$bbbikeroot/images/flag_shadow.png",
+						new google.maps.Size(45,24));
+    } else {
+        startIcon = new GIcon(G_DEFAULT_ICON, "$bbbikeroot/images/flag2_bl_centered.png");
+        startIcon.iconAnchor = new GPoint(16,16);
+        startIcon.iconSize = new GSize(32,32);
+        startIcon.shadow = "$bbbikeroot/images/flag_shadow.png";
+        startIcon.shadowSize = new GSize(45,24);
+        goalIcon = new GIcon(G_DEFAULT_ICON, "$bbbikeroot/images/flag_ziel_centered.png");
+        goalIcon.iconAnchor = new GPoint(16,16);
+        goalIcon.iconSize = new GSize(32,32);
+        goalIcon.shadow = "$bbbikeroot/images/flag_shadow.png";
+        goalIcon.shadowSize = new GSize(45,24);
+    }
     var currentPointMarker = null;
     var currentTempBlockingMarkers = [];
 
     function createMarker(point, html_name) {
-	var marker = new GMarker(point);
+	var marker = useV3 ? new google.maps.Marker({position:point}) : new GMarker(point);
         var html = "<b>" + html_name + "</b>";
 	GEvent.addListener(marker, "click", function() {
 	    marker.openInfoWindowHtml(html);
@@ -338,7 +363,11 @@ EOF
 
     function removeTempBlockingMarkers() {
 	for(var i = 0; i < currentTempBlockingMarkers.length; i++) {
-	    map.removeOverlay(currentTempBlockingMarkers[i]);
+	    if (useV3) {
+		currentTempBlockingMarkers[i].setMap(null);
+	    } else {
+	        map.removeOverlay(currentTempBlockingMarkers[i]);
+	    }
 	}
 	currentTempBlockingMarkers = [];
     }
@@ -351,10 +380,19 @@ EOF
 	var pt = new GLatLng(y, x);
 	map.panTo(pt);
 	if (currentPointMarker) {
-	    map.removeOverlay(currentPointMarker);
+	    if (useV3) {
+		currentPointMarker.setMap(null);
+	    } else {
+	        map.removeOverlay(currentPointMarker);
+	    }
+	    currentPointMarker = null;
 	}
-	currentPointMarker = new GMarker(pt);
-	map.addOverlay(currentPointMarker);
+	currentPointMarker = useV3 ? google.maps.Marker({point:pt}) : new GMarker(pt);
+	if (useV3) {
+	    currentPointMarker.setMap(map);
+	} else {
+	    map.addOverlay(currentPointMarker);
+	}
     }
     
     function showCoords(point, message) {
@@ -363,7 +401,7 @@ EOF
     }
 
     function formatPoint(point) {
-	var s = sprintf("%.6f,%.6f", point.x, point.y);
+	var s = sprintf("%.6f,%.6f", useV3 ? point.lng() : point.x, useV3 ? point.lat() : point.y);
 	return s;
     }
 
@@ -379,23 +417,42 @@ EOF
 
     function currentModeChange() {
         var currentMode = getCurrentMode();
-	var dragObj = map.getDragObject();
-        if (currentMode == "search") {
-	    map.disableDoubleClickZoom();
-	    if (searchStage == 0) {
-		dragObj.setDraggableCursor('url("$bbbikeroot/images/start_ptr.png"), url("$bbbikeroot/images/flag2_bl.png"), ' + dragCursor);
+	if (useV3) {
+	    if (currentMode == "search") {
+		map.setOptions({disableDoubleClickZoom:true});
+	        if (searchStage == 0) {
+		    map.setOptions({draggableCursor:'url("$bbbikeroot/images/start_ptr.png"), url("$bbbikeroot/images/flag2_bl.png"), ' + dragCursor});
+	        } else {
+	    	    map.setOptions({draggableCursor:'url("$bbbikeroot/images/ziel_ptr.png"), url("$bbbikeroot/images/flag_ziel.png"), ' + dragCursor});
+	        }
 	    } else {
-		dragObj.setDraggableCursor('url("$bbbikeroot/images/ziel_ptr.png"), url("$bbbikeroot/images/flag_ziel.png"), ' + dragCursor);
+		map.setOptions({disableDoubleClickZoom:false});
+	        if (currentMode == "addroute" || currentMode == "addwpt") {
+	    	    map.setOptions({draggableCursor:"default"});
+	        } else {
+	            map.setOptions({draggableCursor:dragCursor});
+	        }
+	        document.getElementById("wpt").innerHTML = "";
 	    }
-        } else {
-	    map.enableDoubleClickZoom();
-	    if (currentMode == "addroute" || currentMode == "addwpt") {
-		dragObj.setDraggableCursor("default");
-	    } else {
-	        dragObj.setDraggableCursor(dragCursor);
-	    }
-	    document.getElementById("wpt").innerHTML = "";
-        }
+	} else {
+	    var dragObj = map.getDragObject();
+            if (currentMode == "search") {
+	        map.disableDoubleClickZoom();
+	        if (searchStage == 0) {
+		    dragObj.setDraggableCursor('url("$bbbikeroot/images/start_ptr.png"), url("$bbbikeroot/images/flag2_bl.png"), ' + dragCursor);
+	        } else {
+	    	    dragObj.setDraggableCursor('url("$bbbikeroot/images/ziel_ptr.png"), url("$bbbikeroot/images/flag_ziel.png"), ' + dragCursor);
+	        }
+            } else {
+	        map.enableDoubleClickZoom();
+	        if (currentMode == "addroute" || currentMode == "addwpt") {
+	    	    dragObj.setDraggableCursor("default");
+	        } else {
+	            dragObj.setDraggableCursor(dragCursor);
+	        }
+	        document.getElementById("wpt").innerHTML = "";
+            }
+	}
 
 	if (!isMSIE6) {
 	    var editboxDiv = document.getElementById("editbox");
@@ -416,8 +473,14 @@ EOF
 	}
 	if (addRoute.length > 0) {
 	    var lastPoint = addRoute[addRoute.length-1];
-	    if (lastPoint.x == point.x && lastPoint.y == point.y)
-		return;
+	    if (useV3) {
+		if (point.equals(lastPoint)) {
+		    return;
+		}
+	    } else {
+	        if (lastPoint.x == point.x && lastPoint.y == point.y)
+		    return;
+	    }
 	}
 	addRoute[addRoute.length] = point;
 	updateRoute();
@@ -513,30 +576,31 @@ EOF
 
     function updateRouteOverlay() {
 	if (addRouteOverlay) {
-	    map.removeOverlay(addRouteOverlay);
+	    if (useV3) {
+		addRouteOverlay.setMap(null);
+	    } else {
+		map.removeOverlay(addRouteOverlay);
+	    }
 	    addRouteOverlay = null;
 	}
 	if (!addRoute.length) {
 	   return;
 	}
 	if (addRoute.length == 1) {
-	    addRouteOverlay = new GMarker(addRoute[0]);
+	    addRouteOverlay = useV3 ? new google.maps.Marker({position:addRoute[0]}) : new GMarker(addRoute[0]);
 	} else {
-	    var opts = {}; // GPolylineOptions
-	    opts.clickable = false;
-	    addRouteOverlay = new GPolyline(addRoute, null, null, null, opts);
-	}
-	map.addOverlay(addRouteOverlay);
-
-	if (false) { // experiment: draw geodesic lines
-	    if (addRouteOverlay2) {
-		map.removeOverlay(addRouteOverlay2);
-		addRouteOverlay2 = null;
+	    if (useV3) {
+		addRouteOverlay = new GPolyline({path:addRoute,strokeColor:'#0000ff',strokeOpacity:0.34,strokeWeight:4,clickable:false});
+	    } else {
+	        var opts = {}; // GPolylineOptions
+	        opts.clickable = false;
+	        addRouteOverlay = new GPolyline(addRoute, null, null, null, opts);
 	    }
-	    var opts = {}; // GPolylineOptions
-	    opts.geodesic = true;
-	    addRouteOverlay2 = new GPolyline(addRoute, '#ff0000', null, null, opts);
-	    map.addOverlay(addRouteOverlay2);
+	}
+	if (useV3) {
+	    addRouteOverlay.setMap(map);
+	} else {
+	    map.addOverlay(addRouteOverlay);
 	}
     }
 
@@ -556,7 +620,11 @@ EOF
 		    }
 		    var point = new GLatLng(xy[1], xy[0]);
 	    	    var marker = createMarker(point, text);
-		    map.addOverlay(marker);
+		    if (useV3) {
+			marker.setMap(map);
+		    } else {
+			map.addOverlay(marker);
+		    }
 		    currentTempBlockingMarkers[currentTempBlockingMarkers.length] = marker;
 		}
 	    }
@@ -603,7 +671,7 @@ EOF
 
     function addUserWpt(point) {
 	var userWpt = { index:userWpts.length };
-	var marker = new GMarker(point);
+	var marker = useV3 ? new google.maps.Marker({position:point}) : new GMarker(point);
 	var preHtml = '<form>Kommentar:<br/><textarea id="userWptComment" cols="25" rows=4">';
 	var postHtml = '</textarea></form><br/><a href="javascript:deleteUserWpt(' + userWpt.index + ')">Waypoint löschen</a>';
 	var html = preHtml + postHtml;
@@ -612,7 +680,11 @@ EOF
 	var textarea = htmlElem.getElementsByTagName("textarea")[0];
 	userWpt.textarea = textarea;
 	marker.bindInfoWindow(htmlElem);
-	map.addOverlay(marker);
+	if (useV3) {
+	    marker.setMap(map);
+	} else {
+	    map.addOverlay(marker);
+	}
 	userWpt.overlay = marker;
 	userWpt.latLng = marker.getLatLng();
 	userWpts[userWpts.length] = userWpt;
@@ -624,7 +696,11 @@ EOF
 	if (userWpt) {
 	    var overlay = userWpt.overlay;
 	    if (overlay) {
-	        map.removeOverlay(overlay);
+		if (useV3) {
+		    overlay.setMap(null);
+		} else {
+		    map.removeOverlay(overlay);
+		}
 	        userWpt.overlay = null;
 	    }
             userWpts[i] = null;
@@ -643,17 +719,23 @@ EOF
 
     function mapTypeToString() {
 	var mapType;
-	if (map.getCurrentMapType() == G_NORMAL_MAP) {
+	if        ((useV3  && map.getMapTypeId() == google.maps.MapTypeId.ROADMAP) ||
+		   (!useV3 && map.getCurrentMapType() == G_NORMAL_MAP)) {
 	    mapType = "normal";
-	} else if (map.getCurrentMapType() == G_HYBRID_MAP) {
+	} else if ((useV3  && map.getMapTypeId() == google.maps.MapTypeId.HYBRID) ||
+		   (!useV3 && map.getCurrentMapType() == G_HYBRID_MAP)) {
 	    mapType = "hybrid";
-	} else if (map.getCurrentMapType() == mapnik_map) {
+	} else if ((useV3  && map.getMapTypeId() == "Mapnik") ||
+		   (!useV3 && map.getCurrentMapType() == mapnik_map)) {
 	    mapType = "osm-mapnik";
-	// } else if (map.getCurrentMapType() == tah_map) {
+	// } else if ((useV3  && map.getMapTypeId() == "T\@H") ||
+	// 	   (!useV3 && map.getCurrentMapType() == tah_map)) {
 	//     mapType = "osm-tah";
-	} else if (map.getCurrentMapType() == cycle_map) {
+	} else if ((useV3  && map.getMapTypeId() == "Cycle") ||
+		   (!useV3 && map.getCurrentMapType() == cycle_map)) {
 	    mapType = "osm-cycle";
-	} else if (map.getCurrentMapType() == bbbikeorg_map) {
+	} else if ((useV3  && map.getMapTypeId() == "BBBike") ||
+		   (!useV3 && map.getCurrentMapType() == bbbikeorg_map)) {
 	    mapType = "bbbikeorg";
 	} else {
 	    mapType = "satellite";
@@ -710,14 +792,18 @@ EOF
     }
 
     function getSearchCoordParams(startPoint, goalPoint) {
-        return "startc_wgs84=" + startPoint.x + "," + startPoint.y + "&zielc_wgs84=" + goalPoint.x + "," + goalPoint.y;
+	if (useV3) {
+            return "startc_wgs84=" + startPoint.lng() + "," + startPoint.lat() + "&zielc_wgs84=" + goalPoint.lng() + "," + goalPoint.lat();
+	} else {
+	    return "startc_wgs84=" + startPoint.x + "," + startPoint.y + "&zielc_wgs84=" + goalPoint.x + "," + goalPoint.y;
+	}
     }
 
     function searchRoute(startPoint, goalPoint) {
         var searchCoordParams = getSearchCoordParams(startPoint, goalPoint);
 	var requestLine =
 	    "@{[ $cgi_reldir ]}/bbbike.cgi?" + searchCoordParams + commonSearchParams;
-	var routeRequest = GXmlHttp.create();
+	var routeRequest = useV3 ? new XMLHttpRequest() : GXmlHttp.create();
 	routeRequest.open("GET", requestLine, true);
 	routeRequest.onreadystatechange = function() {
 	    showRouteResult(routeRequest);
@@ -763,7 +849,8 @@ EOF
     var goalOverlay = null;
     var goalPoint = null;
 
-    function onClick(overlay, point) {
+    function onClick(p1, p2) {
+	var point = useV3 ? p1.latLng : p2;
 	var currentMode = getCurrentMode();
 	if (currentMode == "addroute") {
 	    showCoords(point, 'Center of map: ');
@@ -784,8 +871,14 @@ EOF
 	    currentModeChange();
 	} else if (searchStage == 1) { // set goal
 	    // XXX hack to avoid empty searches, this happens if the user does a double click in search/edit mode
-	    if (startPoint.x == point.x && startPoint.y == point.y) {
-		return;
+	    if (useV3) {
+		if (point.equals(startPoint)) {
+		    return;
+		}
+	    } else {
+		if (startPoint.x == point.x && startPoint.y == point.y) {
+		    return;
+		}
 	    }
 	    setGoalMarker(point);
 	    searchStage = 0;
@@ -808,26 +901,44 @@ EOF
 
     function setStartMarker(point) {
         if (startOverlay) {
-	    map.removeOverlay(startOverlay);
+	    if (useV3) {
+		startOverlay.setMap(null);
+	    } else {
+	        map.removeOverlay(startOverlay);
+	    }
 	    startOverlay = null;
 	}
 	startPoint = point;
-	var startOpts = {icon:startIcon, clickable:false}; // GMarkerOptions
-	startOverlay = new GMarker(startPoint, startOpts);
-	map.addOverlay(startOverlay);
+	if (useV3) {
+	    startOverlay = new GMarker({position:startPoint,icon:startIcon,clickable:false});
+	    startOverlay.setMap(map);
+	} else {
+	    var startOpts = {icon:startIcon, clickable:false}; // GMarkerOptions
+	    startOverlay = new GMarker(startPoint, startOpts);
+	    map.addOverlay(startOverlay);
+	}
     }
 
     function setGoalMarker(point) {
 	removeGoalMarker();
 	goalPoint = point;
-	var goalOpts = {icon:goalIcon, clickable:false}; // GMarkerOptions
-	goalOverlay = new GMarker(goalPoint, goalOpts);
-	map.addOverlay(goalOverlay);
+	if (useV3) {
+	    goalOverlay = new GMarker({position:goalPoint,icon:goalIcon,clickable:false});
+	    goalOverlay.setMap(map);
+	} else {
+	    var goalOpts = {icon:goalIcon, clickable:false}; // GMarkerOptions
+	    goalOverlay = new GMarker(goalPoint, goalOpts);
+	    map.addOverlay(goalOverlay);
+	}
     }
 
     function removeGoalMarker() {
 	if (goalOverlay) {
-	    map.removeOverlay(goalOverlay);
+	    if (useV3) {
+		goalOverlay.setMap(null);
+	    } else {
+		map.removeOverlay(goalOverlay);
+	    }
 	    goalOverlay = null;
 	}
     }
@@ -846,7 +957,7 @@ EOF
     }
 
     function send_via_post() {
-        var http = GXmlHttp.create(); // new XMLHttpRequest();
+        var http = useV3 ? new XMLHttpRequest() : GXmlHttp.create();
         var frm = document.forms.commentform;
         http.open('POST', "@{[ $cgi_reldir ]}/mapserver_comment.cgi", false);
         http.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
@@ -923,7 +1034,14 @@ EOF
 	}
     }
 
-    if (GBrowserIsCompatible() ) {
+    if (useV3) {
+        var myOptions = {
+            zoom: $zoom,
+            center: new GLatLng($centery, $centerx),
+            mapTypeId: $self->{maptype}
+        };
+        var map = new google.maps.Map(document.getElementById("map"), myOptions);
+    } else if (GBrowserIsCompatible()) {
         var map = new GMap2(document.getElementById("map"));
 	//map.disableDoubleClickZoom();
 	map.enableScrollWheelZoom()
@@ -934,59 +1052,109 @@ EOF
         document.getElementById("map").innerHTML = '<p class="large-error">Sorry, your browser is not supported by <a href="http://maps.google.com/support">Google Maps</a></p>';
     }
 
-    var copyright = new GCopyright(1,
-        new GLatLngBounds(new GLatLng(-90,-180), new GLatLng(90,180)), 0,
-        '(<a rel="license" href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>)');
-    var copyrightCollection =
-        new GCopyrightCollection('Kartendaten &copy; $osm_copyright_year <a href="http://www.openstreetmap.org/">OpenStreetMap</a> Contributors');
-    copyrightCollection.addCopyright(copyright);
+    // additional maps
+    if (useV3) {
+	var mapnik_map = new google.maps.ImageMapType({
+            getTileUrl:GetTileUrl_Mapnik,
+        	tileSize:new google.maps.Size(256, 256),
+        	isPng:true,
+        	name:"Mapnik",
+		maxZoom:19
+	});
+        map.mapTypes.set("Mapnik", mapnik_map);
 
-    var tilelayers_mapnik = new Array();
-    tilelayers_mapnik[0] = new GTileLayer(copyrightCollection, 0, 18);
-    tilelayers_mapnik[0].getTileUrl = GetTileUrl_Mapnik;
-    tilelayers_mapnik[0].isPng = function () { return true; };
-    tilelayers_mapnik[0].getOpacity = function () { return 1.0; };
-    var mapnik_map = new GMapType(tilelayers_mapnik,
-        new GMercatorProjection(19), "Mapnik",
-        { urlArg: 'mapnik', linkColor: '#000000' });
-    map.addMapType(mapnik_map);
+	// var tah_map = new google.maps.ImageMapType({
+        //     getTileUrl:GetTileUrl_TaH,
+        // 	tileSize:new google.maps.Size(256, 256),
+        // 	isPng:true,
+        // 	name:"T\@H",
+	// 	maxZoom:19
+	// });
+        // map.mapTypes.set("T\@H", tah_map);
 
-    // var tilelayers_tah = new Array();
-    // tilelayers_tah[0] = new GTileLayer(copyrightCollection, 0, 17);
-    // tilelayers_tah[0].getTileUrl = GetTileUrl_TaH;
-    // tilelayers_tah[0].isPng = function () { return true; };
-    // tilelayers_tah[0].getOpacity = function () { return 1.0; };
-    // var tah_map = new GMapType(tilelayers_tah,
-    //     new GMercatorProjection(19), "T\@H",
-    //     { urlArg: 'tah', linkColor: '#000000' });
-    // map.addMapType(tah_map);
+	var cycle_map = new google.maps.ImageMapType({
+            getTileUrl:GetTileUrl_Cycle,
+        	tileSize:new google.maps.Size(256, 256),
+        	isPng:true,
+        	name:"Cycle",
+		maxZoom:19
+	});
+        map.mapTypes.set("Cycle", cycle_map);
 
-    var tilelayers_cycle = new Array();
-    tilelayers_cycle[0] = new GTileLayer(copyrightCollection, 0, 18);
-    tilelayers_cycle[0].getTileUrl = GetTileUrl_cycle;
-    tilelayers_cycle[0].isPng = function () { return true; };
-    tilelayers_cycle[0].getOpacity = function () { return 1.0; };
-    var cycle_map = new GMapType(tilelayers_cycle,
-        new GMercatorProjection(19), "Cycle",
-        { urlArg: 'cycle', linkColor: '#000000' });
-    map.addMapType(cycle_map);
+        var bbbikeorg_map = new google.maps.ImageMapType({
+            getTileUrl:GetTileUrl_bbbikeorg,
+        	tileSize:new google.maps.Size(256, 256),
+        	isPng:true,
+        	name:"BBBike",
+		maxZoom:19
+        });
+        map.mapTypes.set("BBBike", bbbikeorg_map);
 
-    var bbbikeCopyright = new GCopyright(1,
-        new GLatLngBounds(new GLatLng(-90,-180), new GLatLng(90,180)), 0,
-        '(<a rel="license" href="http://bbbike.sourceforge.net/bbbike/doc/README.html#LIZENZ">GPL</a>)');
-    var bbbikeCopyrightCollection =
-        new GCopyrightCollection('Kartendaten &copy; $bbbike_copyright_year <a href="http://bbbike.de/cgi-bin/bbbike.cgi/info=1">Slaven Rezi&#x107;</a>');
-    bbbikeCopyrightCollection.addCopyright(bbbikeCopyright);
-
-    var tilelayers_bbbikeorg = new Array();
-    tilelayers_bbbikeorg[0] = new GTileLayer(bbbikeCopyrightCollection, 0, 18);
-    tilelayers_bbbikeorg[0].getTileUrl = GetTileUrl_bbbikeorg;
-    tilelayers_bbbikeorg[0].isPng = function () { return true; };
-    tilelayers_bbbikeorg[0].getOpacity = function () { return 1.0; };
-    var bbbikeorg_map = new GMapType(tilelayers_bbbikeorg,
-        new GMercatorProjection(19), "BBBike",
-        { urlArg: 'bbbikeorg', linkColor: '#000000' });
-    map.addMapType(bbbikeorg_map);
+        map.setOptions({mapTypeControlOptions:{mapTypeIds:[google.maps.MapTypeId.ROADMAP,
+							   google.maps.MapTypeId.SATELLITE,
+							   google.maps.MapTypeId.HYBRID,
+							   "BBBike",
+							   "Cycle",
+							   "Mapnik",
+							   // "T\@H"
+							  ]}});
+    } else {
+        var copyright = new GCopyright(1,
+            new GLatLngBounds(new GLatLng(-90,-180), new GLatLng(90,180)), 0,
+            '(<a rel="license" href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>)');
+        var copyrightCollection =
+            new GCopyrightCollection('Kartendaten &copy; $osm_copyright_year <a href="http://www.openstreetmap.org/">OpenStreetMap</a> Contributors');
+        copyrightCollection.addCopyright(copyright);
+    
+        var tilelayers_mapnik = new Array();
+        tilelayers_mapnik[0] = new GTileLayer(copyrightCollection, 0, 18);
+        tilelayers_mapnik[0].getTileUrl = GetTileUrl_Mapnik;
+        tilelayers_mapnik[0].isPng = function () { return true; };
+        tilelayers_mapnik[0].getOpacity = function () { return 1.0; };
+        var mapnik_map = new GMapType(tilelayers_mapnik,
+            new GMercatorProjection(19), "Mapnik",
+            { urlArg: 'mapnik', linkColor: '#000000' });
+        map.addMapType(mapnik_map);
+    
+        // var tilelayers_tah = new Array();
+        // tilelayers_tah[0] = new GTileLayer(copyrightCollection, 0, 17);
+        // tilelayers_tah[0].getTileUrl = GetTileUrl_TaH;
+        // tilelayers_tah[0].isPng = function () { return true; };
+        // tilelayers_tah[0].getOpacity = function () { return 1.0; };
+        // var tah_map = new GMapType(tilelayers_tah,
+        //     new GMercatorProjection(19), "T\@H",
+        //     { urlArg: 'tah', linkColor: '#000000' });
+        // map.addMapType(tah_map);
+    
+        var tilelayers_cycle = new Array();
+        tilelayers_cycle[0] = new GTileLayer(copyrightCollection, 0, 18);
+        tilelayers_cycle[0].getTileUrl = GetTileUrl_Cycle;
+        tilelayers_cycle[0].isPng = function () { return true; };
+        tilelayers_cycle[0].getOpacity = function () { return 1.0; };
+        var cycle_map = new GMapType(tilelayers_cycle,
+            new GMercatorProjection(19), "Cycle",
+            { urlArg: 'cycle', linkColor: '#000000' });
+        map.addMapType(cycle_map);
+    
+        var bbbikeCopyright = new GCopyright(1,
+            new GLatLngBounds(new GLatLng(-90,-180), new GLatLng(90,180)), 0,
+            '(<a rel="license" href="http://bbbike.sourceforge.net/bbbike/doc/README.html#LIZENZ">GPL</a>)');
+        var bbbikeCopyrightCollection =
+            new GCopyrightCollection('Kartendaten &copy; $bbbike_copyright_year <a href="http://bbbike.de/cgi-bin/bbbike.cgi/info=1">Slaven Rezi&#x107;</a>');
+        bbbikeCopyrightCollection.addCopyright(bbbikeCopyright);
+    
+        var tilelayers_bbbikeorg = new Array();
+        tilelayers_bbbikeorg[0] = new GTileLayer(bbbikeCopyrightCollection, 0, 18);
+        tilelayers_bbbikeorg[0].getTileUrl = GetTileUrl_bbbikeorg;
+        tilelayers_bbbikeorg[0].isPng = function () { return true; };
+        tilelayers_bbbikeorg[0].getOpacity = function () { return 1.0; };
+        var bbbikeorg_map = new GMapType(tilelayers_bbbikeorg,
+            new GMercatorProjection(19), "BBBike",
+            { urlArg: 'bbbikeorg', linkColor: '#000000' });
+        if (isBBBikeBeta) {
+            map.addMapType(bbbikeorg_map);
+        }
+    }
 
     //// no, I prefer hybrid
     //map.setMapType(mapnik_map);
@@ -1003,7 +1171,7 @@ EOF
     //                 z + "/" + a.x + "/" + a.y + ".png";
     // }
 
-    function GetTileUrl_cycle(a, z) {
+    function GetTileUrl_Cycle(a, z) {
 	// select a random server
 	var list = ["a", "b", "c"];
 	var server = list [ parseInt( Math.random() * list.length ) ];
@@ -1022,12 +1190,12 @@ EOF
 	}
     }
 
-    if (GBrowserIsCompatible() ) {
+    if (!useV3 && GBrowserIsCompatible() ) {
 	map.setCenter(new GLatLng($centery, $centerx), $zoom, $self->{maptype});
 	new GKeyboardHandler(map);
     }
 
-    GEvent.addListener(map, "moveend", function() {
+    GEvent.addListener(map, (useV3 ? "dragend" : "moveend"), function() {
         var center = map.getCenter();
 	showCoords(center, 'Center of map: ');
 	showLink(center, 'Link to map center: ');
@@ -1058,7 +1226,11 @@ EOF
 
 	    $js .= <<EOF;
 $route_js_code
-    map.addOverlay(route);
+    if (useV3) {
+	route.setMap(map);
+    } else {
+        map.addOverlay(route);
+    }
 EOF
 	}
     }
@@ -1071,7 +1243,11 @@ EOF
 	$js .= <<EOF;
     var point = new GLatLng($y,$x);
     var marker = createMarker(point, '$html_name');
-    map.addOverlay(marker);
+    if (useV3) {
+	marker.setMap(map);
+    } else {
+        map.addOverlay(marker);
+    }
 EOF
     }
 
@@ -1083,6 +1259,18 @@ EOF
     //]]>
     </script>
 EOF
+
+    if ($use_v3) {
+	$js =~ s{GLatLngBounds\(}{google.maps.LatLngBounds(}g;
+	$js =~ s{GLatLng\(}{google.maps.LatLng(}g;
+	$js =~ s{GPoint\(}{google.maps.Point(}g;
+	$js =~ s{GPolyline\(}{google.maps.Polyline(}g;
+	$js =~ s{GMarker\(}{google.maps.Marker(}g;
+	$js =~ s{GEvent\.}{google.maps.event.}g;
+	$js =~ s{GIcon\(}{google.maps.Icon(}g;
+	$js =~ s{G_([^_]+)_MAP}{google.maps.MapTypeId.$1}g;
+    }
+
     $html .= $js;
     $html .= <<EOF;
     <noscript>
@@ -1145,7 +1333,7 @@ EOF
      </td>
    </tr>
 EOF
-    if ($is_beta) {
+    if (0 && $is_beta) { # hmmm, wozu ist das gut? XXXXXXXXXXXXXXXXXXXXXXXXXXXX
 	$html .= <<EOF;
    <tr style="vertical-align:top;">
     <td><input onchange="currentModeChange()" 
