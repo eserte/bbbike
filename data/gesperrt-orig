@@ -864,7 +864,7 @@ Nossener Str.	1 24187,14052 24221,14142 24272,14278 24321,14410
 Mark-Twain-Str.	1 24349,14500 24363,14453 24345,14403
 Mark-Twain-Str.	1 24321,14410 24349,14500
 #: note: der Abschnitt ist außerdem eine Einbahnstraße, offen bergauf
-ATU-Einfahrt: Tor, außerhalb der Öffnungszeiten gesperrt	2 8546,9468 8561,9482
+A.T.U-Einfahrt: Tor, außerhalb der Öffnungszeiten (Mo-Fr bis 20 Uhr, Sa bis 16 Uhr) gesperrt	2 8546,9468 8561,9482
 ######################################################################
 #
 # Potsdam
@@ -1881,13 +1881,11 @@ Tor	BNP:5 26888,13976
 #: next_check: 2011-10-15
 Spreeufer: wegen Bauarbeiten gesperrt	2:inwork 8596,12576 8495,12651 8473,12753
 # 
-#: last_checked: 2011-09-24
-#: next_check: 2011-10-30
+#: last_checked: 2011-11-04
+#: next_check: 2011-12-01
 (Leuthener Platz - Wilhelm-Kabus-Str.): Bauzäune	2:inwork 7716,8356 7837,8354 7893,8327
 # 
-#: last_checked: 2011-09-27
-#: next_check: 2011-10-15
-(General-Pape-Str. - Gontermannstr.): Bauzäune	2:inwork 8106,8290 8264,8289
+#XXX del --- #: last_checked: 2011-09-27 --- #: next_check: 2011-10-15 --- (General-Pape-Str. - Gontermannstr.): Bauzäune	2:inwork 8106,8290 8264,8289
 # 
 #: last_checked: 2011-10-21
 #: next_check: 2012-01-15
@@ -1989,8 +1987,8 @@ Radweg parallel zur Autobahn ist wegen Bauarbeiten am BAB gesperrt	2:inwork 5062
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1108/nachricht4438.html
 Rathausbrücke: gesperrt (Neubau), Fertigstellung und Verkehrsfreigabe im Frühjahr 2012	2:inwork 10362,12351 10422,12395
 # 
-#: last_checked: 2011-09-10
-#: next_check: 2011-11-15
+#: last_checked: 2011-11-04
+#: next_check: 2012-01-15
 #: XXX abhängiger Eintrag in vorfahrt-orig!
 Kynaststraße: Bauarbeiten im südlichen Abschnitt	2:inwork 14652,10201 14724,10297 14766,10372 14795,10473 14805,10518
 # 

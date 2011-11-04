@@ -88,8 +88,8 @@ Müllerstr.	?::projected 6790,16018 6659,16133 6608,16180 6450,16325 6444,16331 6
 #
 #: by: Tagesspiegel vom 2009-04-12, soll 2009 realisiert werden
 #: corrected_by: MoPo 2009-08-01, soll 2010 realisiert werden
-#: last_checked: 2011-09-17
-#: next_check: 2011-11-01
+#: last_checked: 2011-11-03 (östliches Ende)
+#: next_check: 2012-01-01
 Annenstr./Heinrich-Heine-Platz	?::projected 11349,11227 11249,11268 11091,11379 11039,11425 10915,11535 10819,11664
 #
 #: by: Tagesspiegel vom 2009-04-12, soll 2009 realisiert werden
@@ -348,7 +348,7 @@ Kletterrosenweg	?::projected 21382,149 21354,289
 #: next_check ^^^
 #: last_checked ^^^
 # 
-#: next_check: 2011-12-01
+#: next_check: 2012-02-01
 An der Barthschen Promenade: vielleicht wird die Straße in Zukunft sich hier befinden	?::projected 8954,8914 8814,8917
 # 
 #XXX del --- nein, es sieht so aus, als ob es bei den Busspuren bleibt --- #: last_checked: 2011-04-19 --- #: next_check: 2011-06-01 --- Karl-Liebknecht-Str.: Radstreifen nach den Bauarbeiten?	?::inwork 10920,13139 11015,13264 11021,13271 11027,13279 11080,13350 11092,13366
@@ -502,8 +502,8 @@ Eisenhutweg: Radwege entstehen im Zuge der Bauarbeiten bis September 2011	?::inw
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0802/nachricht2961.html
 B96a: Neubau der Radwege (gemeinsam mit Gehweg); wahrscheinlich wird der Radstreifen dann aufgehoben (bis 2010-01-01)	?::inwork 9228,23643 9146,23843 8984,24078 8891,24330 8826,24501 8682,24883 8665,24941 8661,24952 8571,25180 8548,25239 8493,25378
 # 
-#: last_checked: 2011-09-27
-#: next_check: 2011-10-30
+#: last_checked: 2011-11-04
+#: next_check: 2012-01-01
 #: by: http://www.stadtumbau-berlin.de/O-W-Gruenzug-Fussgaenger-und-Radfahrersteg.4699.0.html
 #: by: http://www.stadtumbau-berlin.de/fileadmin/images/Dokumentation/Projektdokumentation/Tempelhof-Schoeneberg/FG_Suedkreuz/Naumannstrasse/Karten/Lageplan_Naumann_Leuthener-Platz.pdf (begleitende Verkehrsberuhigung in der Naumannstraße)
 Brücke über Bahntrasse: Fertigstellung? Name der Brücke?	?::inwork 7893,8327 8094,8290 8093,8251
@@ -548,6 +548,9 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 # die Datenbank aufgenommen werden sollen und somit nicht öffentlich sind.
 # Das heißt diese Strecken werden nicht bei einer erweiterten Suche aufgenommen
 # und dem CGI-Benutzer auch nicht präsentiert.
+# 
+#: XXX_prog BS
+Lotte-Laserstein-Str. - Hildegard-Knef-Platz: Bordsteine (1x? 2x?)	? 7716,7625 7757,7682
 # 
 Elsterwerdaer Platz: Qualität, Wegverbindung?	? 20840,11291 21094,11313
 # 
@@ -596,8 +599,8 @@ Bodenschwelle, Umfahrung kann zugeparkt sein	? 23349,2240
 # 
 Billerbecker Weg: Asphalt oder Beton?	? 2117,18632 2196,18642 2323,18653 2413,18655
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/20re.pdf/file
-#: last_checked: 2011-06-10
-#: next_check: 2011-10-10
+#: last_checked: 2011-11-04
+#: next_check: 2012-03-01
 Bootsbauerstr.: private Wegverbindung, Qualität, Lage?	? 15079,10108 15033,10013
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/19re.pdf/file

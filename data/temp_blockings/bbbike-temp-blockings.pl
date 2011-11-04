@@ -15727,9 +15727,9 @@ userdel	2::inwork -30199,-5774 -30919,-6570 -31110,-6743 -32618,-7268
 EOF
      },
      { from  => 1251090240, # 2009-08-24 07:04
-       until => 1322661600, # 2011-11-30 15:00
-       text  => 'Freiheit/Wiesendamm (Spandau): Baustelle, Fahrtrichtung gesperrt Richtung Spandauer Damm zwischen Klärwerkstr. und Spandauer Damm, 25.08.2009 07:04 Uhr bis 30.11.2011 15:00 Uhr ',
-       type  => 'gesperrt',
+       until => 1322834400, # 2011-12-02 15:00
+       text  => 'Freiheit/Wiesendamm (Spandau): Baustelle, Fahrtrichtung gesperrt Richtung Spandauer Damm zwischen Klärwerkstr. und Spandauer Damm, 25.08.2009 07:04 Uhr bis 02.12.2011 15:00 Uhr ',
+       type  => 'handicap',
        source_id => 'IM_013995',
        data  => <<EOF,
 userdel	q4::inwork; -1258,13552 -990,13502 -729,13415 -346,13349 -307,13279 -264,13009
@@ -19186,9 +19186,9 @@ EOF
 userdel	2::inwork 30971,11749 31021,12174
 EOF
      },
-     { from  => 1308809403, # 2011-06-23 08:10
-       until => 1320447600, # 2011-11-05 00:00
-       text  => 'Neuhausen/Spree: L48: Brückenneubau L 48 Brücke über das Fließ bei Gablenz, 19.04.2011 bis 04.11.2011 ',
+     { from  => 1320439456, # 2011-11-04 21:44
+       until => 1323990000, # 2011-12-16 00:00
+       text  => 'Neuhausen/Spree: L48: Brückenneubau Brücke über das Fließ bei Gablenz, 19.04.2011 bis 15.12.2011 ',
        type  => 'gesperrt',
        source_id => 'LS/S-SG33-C/11/067',
        data  => <<EOF,
@@ -19813,8 +19813,8 @@ userdel	2::inwork 50141,30438 50704,30986
 EOF
      },
      { from  => 1317621600, # 2011-10-03 08:00
-       until => 1320422400, # 2011-11-04 17:00
-       text  => 'Silbersteinstr. (Neukölln): Baustelle, Fahrtrichtung gesperrt Richtung Oberlandstr. zwischen Hermannstr. bis Eschersheimer Str., 04.10.2011 08:00 Uhr bis 04.11.2011 17:00 Uhr ',
+       until => 1321027200, # 2011-11-11 17:00
+       text  => 'Silbersteinstr. (Neukölln): Baustelle, Fahrtrichtung gesperrt Richtung Oberlandstr. zwischen Hermannstr. bis Eschersheimer Str., 04.10.2011 08:00 Uhr bis 11.11.2011 17:00 Uhr ',
        type  => 'handicap',
        source_id => 'INKO_108705',
        data  => <<EOF,

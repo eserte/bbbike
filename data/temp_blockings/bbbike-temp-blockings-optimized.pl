@@ -998,13 +998,13 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        {
          'source_id' => 'IM_013995',
-         'until' => 1322661600,
-         'text' => 'Freiheit/Wiesendamm (Spandau): Baustelle, Fahrtrichtung gesperrt Richtung Spandauer Damm zwischen Klärwerkstr. und Spandauer Damm, 25.08.2009 07:04 Uhr bis 30.11.2011 15:00 Uhr ',
+         'until' => 1322834400,
+         'text' => 'Freiheit/Wiesendamm (Spandau): Baustelle, Fahrtrichtung gesperrt Richtung Spandauer Damm zwischen Klärwerkstr. und Spandauer Damm, 25.08.2009 07:04 Uhr bis 02.12.2011 15:00 Uhr ',
          'from' => 1251090240,
          'id' => 1850,
          'data' => 'userdel	q4::inwork; -1258,13552 -990,13502 -729,13415 -346,13349 -307,13279 -264,13009
 ',
-         'type' => 'gesperrt'
+         'type' => 'handicap'
        },
        undef,
        undef,
@@ -1687,9 +1687,9 @@ userdel	q4::inwork; 10166,12777 10132,12941
        undef,
        {
          'source_id' => 'LS/S-SG33-C/11/067',
-         'until' => 1320447600,
-         'text' => 'Neuhausen/Spree: L48: Brückenneubau L 48 Brücke über das Fließ bei Gablenz, 19.04.2011 bis 04.11.2011 ',
-         'from' => 1308809403,
+         'until' => 1323990000,
+         'text' => 'Neuhausen/Spree: L48: Brückenneubau Brücke über das Fließ bei Gablenz, 19.04.2011 bis 15.12.2011 ',
+         'from' => 1320439456,
          'id' => 2229,
          'data' => 'userdel	2::inwork 85633,-77062 87212,-78642
 ',
@@ -1851,16 +1851,7 @@ userdel	3 12992,7545 13015,7440 12925,7425
          'type' => 'handicap'
        },
        undef,
-       {
-         'source_id' => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20111006.1020.360727.html',
-         'until' => 1320274799,
-         'text' => 'Instandsetzungsarbeiten an Fahrbahnflächen in der Pannwitzstraße zwischen Olbendorfer Weg und Puchertweg, Vollsperrung, vom 12. Oktober bis zum 02. November 2011 ',
-         'from' => 1318629629,
-         'id' => 2292,
-         'data' => 'userdel	q4::inwork 4613,19279 4690,19446
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'IM_018013',
          'until' => 1322496000,
@@ -1883,8 +1874,8 @@ userdel	3 12992,7545 13015,7440 12925,7425
        },
        {
          'source_id' => 'INKO_108705',
-         'until' => 1320422400,
-         'text' => 'Silbersteinstr. (Neukölln): Baustelle, Fahrtrichtung gesperrt Richtung Oberlandstr. zwischen Hermannstr. bis Eschersheimer Str., 04.10.2011 08:00 Uhr bis 04.11.2011 17:00 Uhr ',
+         'until' => 1321027200,
+         'text' => 'Silbersteinstr. (Neukölln): Baustelle, Fahrtrichtung gesperrt Richtung Oberlandstr. zwischen Hermannstr. bis Eschersheimer Str., 04.10.2011 08:00 Uhr bis 11.11.2011 17:00 Uhr ',
          'from' => 1317621600,
          'id' => 2295,
          'data' => 'userdel	q4::inwork; 12395,6785 12044,6707 11689,6634
