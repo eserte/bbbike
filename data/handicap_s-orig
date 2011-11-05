@@ -1063,14 +1063,15 @@ Kˆnigstuhlweg: Gehweg, f¸r Radfahrer nicht freigegeben, Bordsteine	q2- 10087,236
 Hˆrsingsteig: Fuﬂg‰nger	q1 14082,2289 14099,2197 14086,2148
 #: XXX_prog BS an der westl. Kreuzung mit der Hugo-Heimann-Str. (2x) (ansonsten -> q1)
 Hˆrsingsteig: Fuﬂg‰nger, Bordsteine	q2 14086,2148 14165,2106 14369,2016
-Hˆrsingsteig: Fuﬂg‰nger	q1 14369,2016 14444,2090 14511,2205
+Hˆrsingsteig: Fuﬂg‰nger	q1 14369,2016 14444,2090 14515,2212
 #: XXX_prog BS am Friedrich-Kayﬂler-Weg (ansonsten -> q1)
 (Matth‰usweg - Friedrich-Kayﬂler-Weg): Fuﬂg‰nger, Bordstein	q2 14993,2025 14994,2069
 #: XXX_prog BS an beiden Enden (ansonstent -> q1)
 Gansbergsteig: Fuﬂg‰nger, Bordsteine	q2 14676,2375 14776,2474 14703,2553
 (U Johannisthaler Chaussee - U Lipschitzallee): Fuﬂg‰nger, eng	q2 14079,2504 14224,2368 14276,2293
 #: XXX_prog BS am Lˆwensteinring (ansonsten -> q1)
-(Lˆwensteinring - Wildmeisterdamm): Fuﬂg‰nger, Bordstein	q1- 14467,2514 14418,2469 14409,2450 14335,2381
+(Lˆwensteinring - Wildmeisterdamm): Fuﬂg‰nger, Bordstein	q1- 14467,2514 14418,2469 14409,2450 14366,2403 14356,2364
+(Lˆwensteinring - U Johannisthaler Chaussee): Fuﬂg‰nger	q1 14366,2403 14335,2381
 Anna-Nemitz-Weg: Fuﬂg‰nger	q1 13943,2284 13905,2381 13885,2377 13872,2497 13891,2518 13898,2582 13914,2601
 (Parchimer Allee - Am Teltowkanal): eng	q2 14422,4787 14555,4976 14562,4985
 #: XXX_prog BS; evtl. kann man vorher schon auf den Gehweg rauffahren
@@ -1085,6 +1086,11 @@ Am Malchower See: Fuﬂg‰nger	q1 15614,18649 15774,18656 15873,18561 15949,18555 1
 (Roﬂweiner Ring - Hˆnower Str.): einige enge Stellen mit Kurven	q1 24949,13760 24993,13731 25063,13781 25068,13778 25101,13797 25163,13785 25339,13948 25341,13984 25414,14036
 #: XXX_prog BS
 Roﬂweiner Ring: Bordsteinkante	q3 25163,13785 25157,13790
+(Imbuschweg - Karsenzeile): Fuﬂg‰nger, eng	q2 14244,2759 14245,2704
+Karsenzeile: Fuﬂg‰nger	q1 14245,2704 14408,2708 14458,2709 14582,2595 14597,2607
+#: XXX_prog BS
+Karsenzeile: Fuﬂg‰nger, Bordsteinkante	q2 14682,2532 14597,2607
+Marianne-Hapig-Weg: Fuﬂg‰nger, Spielplatz	q2- 17623,-221 17563,-364
 #
 ######################### User Contributions #################################
 # 
@@ -1228,7 +1234,7 @@ Am Schloﬂpark: eng bei Autoverkehr	q1 10775,19054 10712,18975 10625,18831 10496,
 Poschingerstr.: enge Straﬂe	q1 5697,6276 5754,6238 5824,6240 5875,6262 5918,6301 5971,6343 6095,6358 6261,6391
 #: by: Manfred Kˆhnen:
 #: corrected_by: srt (q2 -> q1)
-Hˆltermannsteig: gemeinsamer Rad- und Gehweg	q1 13993,2741 13951,2801 13948,2910 13954,3035 13965,3222 14023,3276
+Hˆltermannsteig: gemeinsamer Rad- und Gehweg	q1 13999,2727 13951,2801 13948,2910 13954,3035 13965,3222 14023,3276
 #XXX del --- #: by: Regine Bast: --- Eiswaldtstr.: schmale Straﬂe	q1 6722,2444 6834,2449 6965,2418 7051,2366 7172,2343 7282,2386
 #: by: Stefan Driesner: vvv
 Georg-Lehnig-Str.: enge Straﬂe	q1 14532,13563 14509,13481 14428,13507
@@ -1640,7 +1646,7 @@ Falkenhausenweg: spielende Kinder	q1 7610,1695 7692,1743 7754,1806 7810,1904 786
 (Parkweg Fritz-Reuter-Allee - Britzer-Park):Fuﬂg‰nger	q1 13476,3857 13302,3837
 #: corrected_by: rjoop ("Radfahren nicht erlaubt")
 (Parkweg Fritz-Reuter-Allee - Gutschmidtstr.): Fuﬂg‰nger, Radfahren nicht erlaubt	q3 13487,3862 13531,3768 13545,3692 13629,3511
-(Parkweg Johannisthaler Chaussee - Gutschmidtstr.): Fuﬂg‰nger	q1 13944,2708 13904,2787 13807,2863 13778,2987 13730,3111 13740,3252 13748,3301 13629,3511
+(Parkweg Johannisthaler Chaussee - Gutschmidtstr.): Fuﬂg‰nger	q1 13951,2697 13904,2787 13807,2863 13778,2987 13730,3111 13740,3252 13748,3301 13629,3511
 #: by: ^^^
 #: by: anonymous [AM]
 Lotte-Lenya-Bogen: Fuﬂg‰ngerzone, schieben	q4 5242,10918 5264,10921 5348,10960 5373,10981
@@ -1983,7 +1989,7 @@ Diethelmweg: enge Straﬂe	q1 21649,13995 21677,14241 21696,14430
 #: by: ^^^
 #: by: Thorsten Neumann:
 #: corrected_by: srt (nothing -> q1)
-Bat-Yam-Platz: Fuﬂg‰nger	q1 14511,2205 14633,2145
+Bat-Yam-Platz: Fuﬂg‰nger	q1 14515,2212 14545,2206 14633,2145
 #: by: Marcus Kuhn:
 Saalmannsteig: Fuﬂg‰nger	q2 5410,19050 5284,19043 5181,19037
 #: by: Stefan Dietrich:

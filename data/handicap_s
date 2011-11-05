@@ -869,11 +869,12 @@ Crellestr.: Fuﬂg‰nger, StraﬂencafÈs	q2 7491,9061 7535,9087 7583,9115
 Kˆnigstuhlweg: Gehweg, f¸r Radfahrer nicht freigegeben, Bordsteine	q2 10087,2365 10214,2348 10334,2321
 Hˆrsingsteig: Fuﬂg‰nger	q1 14082,2289 14099,2197 14086,2148
 Hˆrsingsteig: Fuﬂg‰nger, Bordsteine	q2 14086,2148 14165,2106 14369,2016
-Hˆrsingsteig: Fuﬂg‰nger	q1 14369,2016 14444,2090 14511,2205
+Hˆrsingsteig: Fuﬂg‰nger	q1 14369,2016 14444,2090 14515,2212
 (Matth‰usweg - Friedrich-Kayﬂler-Weg): Fuﬂg‰nger, Bordstein	q2 14993,2025 14994,2069
 Gansbergsteig: Fuﬂg‰nger, Bordsteine	q2 14676,2375 14776,2474 14703,2553
 (U Johannisthaler Chaussee - U Lipschitzallee): Fuﬂg‰nger, eng	q2 14079,2504 14224,2368 14276,2293
-(Lˆwensteinring - Wildmeisterdamm): Fuﬂg‰nger, Bordstein	q1 14467,2514 14418,2469 14409,2450 14335,2381
+(Lˆwensteinring - Wildmeisterdamm): Fuﬂg‰nger, Bordstein	q1 14467,2514 14418,2469 14409,2450 14366,2403 14356,2364
+(Lˆwensteinring - U Johannisthaler Chaussee): Fuﬂg‰nger	q1 14366,2403 14335,2381
 Anna-Nemitz-Weg: Fuﬂg‰nger	q1 13943,2284 13905,2381 13885,2377 13872,2497 13891,2518 13898,2582 13914,2601
 (Parchimer Allee - Am Teltowkanal): eng	q2 14422,4787 14555,4976 14562,4985
 (Fritz-Lesch-Str. - Orankestr.): Bordstein	q3 15313,15848 15313,15858
@@ -886,6 +887,10 @@ Am Malchower See: Fuﬂg‰nger	q1 15614,18649 15774,18656 15873,18561 15949,18555 1
 (J‰nschwalder Str. - Hˆnower Str.): eng	q2 25370,14421 25408,14189 25451,14018
 (Roﬂweiner Ring - Hˆnower Str.): einige enge Stellen mit Kurven	q1 24949,13760 24993,13731 25063,13781 25068,13778 25101,13797 25163,13785 25339,13948 25341,13984 25414,14036
 Roﬂweiner Ring: Bordsteinkante	q3 25163,13785 25157,13790
+(Imbuschweg - Karsenzeile): Fuﬂg‰nger, eng	q2 14244,2759 14245,2704
+Karsenzeile: Fuﬂg‰nger	q1 14245,2704 14408,2708 14458,2709 14582,2595 14597,2607
+Karsenzeile: Fuﬂg‰nger, Bordsteinkante	q2 14682,2532 14597,2607
+Marianne-Hapig-Weg: Fuﬂg‰nger, Spielplatz	q2 17623,-221 17563,-364
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q3 11805,19071 11895,19183 11927,19308
 Ebersstr.: Sch¸ler	q2 7245,8583 7292,8631
 Straﬂe 103 (Niederschˆnhausen): enge Straﬂe	q1 10914,20065 11051,19789
@@ -955,7 +960,7 @@ Holwedestr.: schmale Straﬂe	q1 1128,20525 1203,20553 1264,20575 1326,20600 1387,
 Am Schloﬂpark: eng bei Autoverkehr	q1 10775,19054 10712,18975 10625,18831 10496,18704
 (Karl-Bonhoeffer-Nervenklinik zwischen Hermann-Piper-Str. und U-Bahnhof): Krankenhausgel‰nde	q1 4997,19849 5021,19840 5077,19654 5111,19656 5183,19454 5239,19274 5429,19165
 Poschingerstr.: enge Straﬂe	q1 5697,6276 5754,6238 5824,6240 5875,6262 5918,6301 5971,6343 6095,6358 6261,6391
-Hˆltermannsteig: gemeinsamer Rad- und Gehweg	q1 13993,2741 13951,2801 13948,2910 13954,3035 13965,3222 14023,3276
+Hˆltermannsteig: gemeinsamer Rad- und Gehweg	q1 13999,2727 13951,2801 13948,2910 13954,3035 13965,3222 14023,3276
 Georg-Lehnig-Str.: enge Straﬂe	q1 14532,13563 14509,13481 14428,13507
 Erich-Kuttner-Str.: enge Straﬂe	q1 14584,13547 14532,13563 14428,13596 14370,13615 14323,13627 14217,13657 14184,13666 14117,13685 14088,13627
 (Kˆnigsheideweg - Westweg): Weg durch den Park, Bordstein	q1 17115,4757 17129,4837 17173,4902
@@ -1262,7 +1267,7 @@ Falkenhausenweg: spielende Kinder	q1 7610,1695 7692,1743 7754,1806 7810,1904 786
 (Parkweg Fritz-Reuter-Alle - Bruno-Taut-Ring): Fuﬂg‰nger	q1 13476,3857 13487,3862 13601,3895
 (Parkweg Fritz-Reuter-Allee - Britzer-Park):Fuﬂg‰nger	q1 13476,3857 13302,3837
 (Parkweg Fritz-Reuter-Allee - Gutschmidtstr.): Fuﬂg‰nger, Radfahren nicht erlaubt	q3 13487,3862 13531,3768 13545,3692 13629,3511
-(Parkweg Johannisthaler Chaussee - Gutschmidtstr.): Fuﬂg‰nger	q1 13944,2708 13904,2787 13807,2863 13778,2987 13730,3111 13740,3252 13748,3301 13629,3511
+(Parkweg Johannisthaler Chaussee - Gutschmidtstr.): Fuﬂg‰nger	q1 13951,2697 13904,2787 13807,2863 13778,2987 13730,3111 13740,3252 13748,3301 13629,3511
 Lotte-Lenya-Bogen: Fuﬂg‰ngerzone, schieben	q4 5242,10918 5264,10921 5348,10960 5373,10981
 (Parkweg B‰kepark): Fuﬂg‰nger	q1 5337,4192 5320,4217 5246,4240 5129,4262 5100,4285 5015,4339 4957,4448 4870,4609 4848,4668 4795,4801 4760,4843 4742,4885
 (Parkweg B‰kepark): Fuﬂg‰nger	q1 5225,4095 5131,4207 5068,4259
@@ -1419,7 +1424,7 @@ Breestpromenade: enge Straﬂe	q1 25761,5613 26059,5631 26199,5643
 Zellerfelder Str.: enge Straﬂe	q1 11526,18929 11468,19106
 Burghardweg: enge Straﬂe	q1 21533,14009 21561,14257 21584,14459
 Diethelmweg: enge Straﬂe	q1 21649,13995 21677,14241 21696,14430
-Bat-Yam-Platz: Fuﬂg‰nger	q1 14511,2205 14633,2145
+Bat-Yam-Platz: Fuﬂg‰nger	q1 14515,2212 14545,2206 14633,2145
 Saalmannsteig: Fuﬂg‰nger	q2 5410,19050 5284,19043 5181,19037
 J‰gerstr. (Kˆpenick): enge Straﬂe	q1 22390,4702 22355,4660 22312,4593
 (Swakopmunder Str. - Charles-Corcelle-Ring): Fuﬂg‰nger	q2 5223,16783 5141,16799 5091,16810 5035,16819 5000,16826

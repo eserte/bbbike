@@ -353,16 +353,14 @@ Zinnowitzer Str. - Friedrichstr.:	3 9015,14014 8879,13913 8935,13844
 #Schwertfegerstr. - Friedrich-Ebert-Str.: Poller	3 -12870,-1493 -12795,-1499 *
 #Friedrich-Ebert-Str. - Schwertfegerstr.: Poller	3 * -12795,-1499 -12870,-1493
 Zimbelstr.: Poller	3 * 11924,20399 *
-#: note: Luftbild: vvv
-Knollstr.: Poller	3 17609,164 17558,126 17488,80
-Knollstr.: Poller	3 17488,80 17558,126 17609,164
+Knollstr.: Poller	3 17609,164 17558,126 17490,89
+Knollstr.: Poller	3 17490,89 17558,126 17609,164
 Knollstr.: Poller	3 17608,61 17558,126 17351,451
 Knollstr.: Poller	3 17351,451 17558,126 17608,61
 Knollstr.: Poller	3 17609,164 17558,126 17351,451
 Knollstr.: Poller	3 17351,451 17558,126 17609,164
-Knollstr.: Poller	3 17488,80 17558,126 17608,61
-Knollstr.: Poller	3 17608,61 17558,126 17488,80
-#: note: ^^^
+Knollstr.: Poller	3 17490,89 17558,126 17608,61
+Knollstr.: Poller	3 17608,61 17558,126 17490,89
 Neumannstr.: Mittelstreifen	3nocross 11549,17154 11531,17250 11519,17316 11492,17460
 #: note: Luftbild: vvv
 Berliner Allee: Straﬂenbahn	3nocross 14045,16120 14248,16202 14371,16252
@@ -756,3 +754,7 @@ Glimmerweg: Schranke	3 11538,1550 11724,1629 *
 Glimmerweg: Schranke	3 * 11724,1629 11538,1550
 Cecilienplatz: Poller	3 * 22976,13160 *
 Erich-K‰stner-Str.: Poller	3 * 23323,13653 *
+Radeberger Weg: Schranke	3 15966,965 16083,1013 *
+Radeberger Weg: Schranke	3 * 16083,1013 15966,965
+Rochlitzer Weg: Schranke	3 15999,880 16117,927 *
+Rochlitzer Weg: Schranke	3 * 16117,927 15999,880
