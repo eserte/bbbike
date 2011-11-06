@@ -92,8 +92,8 @@ COOKED_TARGETS=		strassen-cooked landstrassen-cooked landstrassen2-cooked
 TARGETS+=	${SOURCE_TARGETS} ${COOKED_TARGETS} ${COMPUTED_TARGETS}
 BBD_TARGETS=	${TARGETS:S/^ampelschaltung$//:S/^multi_bez_str$//:S/^temp_blockings\/bbbike-temp-blockings-optimized.pl//}
 
-XXX_NON_OTHER=	indoor outdoor prog checklater
-XXX_TARGETS=	other ${XXX_NON_OTHER}
+XXX_NON_OUTDOOR=	indoor prog checklater
+XXX_TARGETS=		outdoor ${XXX_NON_OUTDOOR}
 
 ALL_STREETS=		strassen landstrassen landstrassen2
 
@@ -815,15 +815,15 @@ ${PERSISTENTTMPDIR}/.fragezeichen-$(i):	$(i)-orig
 ######################################################################
 # PERSISTENT TEMPORARY DIRECTORY TARGETS
 
-# Targets ../tmp/.XXX-{other,indoor,...}-{strassen,landstrassen,...}
+# Targets ../tmp/.XXX-{outdoor,indoor,...}-{strassen,landstrassen,...}
 .for i in ${SOURCE_TARGETS}
 ${XXX_TARGETS:C/^/${PERSISTENTTMPDIR}\/.XXX-/:C/$/-$(i)/}:	$(i)-orig
 	${GREPSTRASSEN} \
 	    -adddirectives XXX \
-	    ${XXX_NON_OTHER:C/^/-adddirectives XXX_/} \
+	    ${XXX_NON_OUTDOOR:C/^/-adddirectives XXX_/} \
 	    ${DATADIR}/$(i)-orig > /dev/null
-	cp -f /tmp/XXX_$(i)-orig.bbd ${PERSISTENTTMPDIR}/.XXX-other-$(i)
-.for xxxtype in ${XXX_NON_OTHER}
+	cp -f /tmp/XXX_$(i)-orig.bbd ${PERSISTENTTMPDIR}/.XXX-outdoor-$(i)
+.for xxxtype in ${XXX_NON_OUTDOOR}
 	cp -f /tmp/XXX_${xxxtype}_$(i)-orig.bbd ${PERSISTENTTMPDIR}/.XXX-${xxxtype}-$(i)
 .endfor
 .endfor
@@ -860,8 +860,7 @@ ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd ${PERSISTENTTMPDIR}/.check_fragez
 		handicap_l-orig \
 		${PERSISTENTTMPDIR}/bbbike-temp-blockings-optimized.bbd \
 		${PERSISTENTTMPDIR}/XXX-indoor.bbd \
-		${PERSISTENTTMPDIR}/XXX-outdoor.bbd \
-		${PERSISTENTTMPDIR}/XXX-other.bbd
+		${PERSISTENTTMPDIR}/XXX-outdoor.bbd
 	echo -n > ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd~
 	echo "#: line_dash: 8, 5" >> ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd~
 	echo "#: line_width: 5" >> ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd~
@@ -878,7 +877,7 @@ ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd ${PERSISTENTTMPDIR}/.check_fragez
 	echo "# source: fragezeichen-orig" >> ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd~
 	echo "# (without next_check/last_checked)" >> ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd~
 	${GREPSTRASSEN} -special nonextcheck fragezeichen-orig >> ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd~
-.for i in indoor outdoor other
+.for i in indoor outdoor
 	echo "############################################################" >> ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd~
 	echo "# source: XXX-$(i)" >> ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd~
 	${GREPSTRASSEN} -directive last_checked~. -special nextcheck ${PERSISTENTTMPDIR}/XXX-$(i).bbd > /dev/null
@@ -901,7 +900,7 @@ ${PERSISTENTTMPDIR}/strassen_in_planung.bbd:	fragezeichen-orig
 # aber nur, wenn sie nicht zusätzlich mit einer next_check/last_checked-Direktive
 # versehen wurden... Siehe auch das TODO "Fragezeichen-Reorganisation"
 #
-# Target ../tmp/XXX-{other,indoor,...}.bbd
+# Target ../tmp/XXX-{outdoor,indoor,...}.bbd
 .for xxxtype in ${XXX_TARGETS:C/^/XXX-/}
 ${PERSISTENTTMPDIR}/${xxxtype}.bbd:	${SOURCE_TARGETS:S|^|${PERSISTENTTMPDIR}/.${xxxtype}-|} \
 					handicap_s-orig gesperrt-orig
@@ -916,8 +915,8 @@ ${PERSISTENTTMPDIR}/${xxxtype}.bbd:	${SOURCE_TARGETS:S|^|${PERSISTENTTMPDIR}/.${
 	mv $@~ $@
 .endfor
 
-${PERSISTENTTMPDIR}/XXX.bbd: ${PERSISTENTTMPDIR}/XXX-other.bbd
-	cat ${PERSISTENTTMPDIR}/XXX-other.bbd > $@~
+${PERSISTENTTMPDIR}/XXX.bbd: ${PERSISTENTTMPDIR}/XXX-outdoor.bbd
+	cat ${PERSISTENTTMPDIR}/XXX-outdoor.bbd > $@~
 	@echo "# source: handicap_s-orig and gesperrt-orig" >> $@~
 	${GREPSTRASSEN} -directive temporary= \
 	    ${DATADIR}/handicap_s-orig ${DATADIR}/gesperrt-orig | \
