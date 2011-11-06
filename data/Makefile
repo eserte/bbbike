@@ -132,6 +132,7 @@ all:	targets data-images check .modified .rsync_include make_misc
 		.check_bbbike-temp-blockings-optimized \
 		.check_dates \
 		${PERSISTENTTMPDIR}/.check_fragezeichen-nextcheck.bbd \
+		${PERSISTENTTMPDIR}/.check_fragezeichen-outdoor.bbd \
 		${PERSISTENTTMPDIR}/.check_fragezeichen-indoor-nextcheck.bbd \
 		${PERSISTENTTMPDIR}/.check_fragezeichen-outdoor-nextcheck.bbd
 
@@ -156,6 +157,8 @@ slow-checks:	check-categories \
 
 persistent-tmp:	${PERSISTENTTMPDIR}/.check_fragezeichen-outdoor-nextcheck.bbd \
 		${PERSISTENTTMPDIR}/fragezeichen-outdoor-nextcheck.bbd \
+		${PERSISTENTTMPDIR}/.check_fragezeichen-outdoor.bbd \
+		${PERSISTENTTMPDIR}/fragezeichen-outdoor.bbd \
 		${PERSISTENTTMPDIR}/.check_fragezeichen-indoor-nextcheck.bbd \
 		${PERSISTENTTMPDIR}/fragezeichen-indoor-nextcheck.bbd \
 		${PERSISTENTTMPDIR}/.check_fragezeichen-nextcheck.bbd \
@@ -847,6 +850,26 @@ ${PERSISTENTTMPDIR}/fragezeichen-${doormode}-nextcheck.bbd ${PERSISTENTTMPDIR}/.
 	mv -f ${PERSISTENTTMPDIR}/fragezeichen-${doormode}-nextcheck.bbd~ ${PERSISTENTTMPDIR}/fragezeichen-${doormode}-nextcheck.bbd
 	touch ${PERSISTENTTMPDIR}/.check_fragezeichen-${doormode}-nextcheck.bbd
 .endfor
+
+.ORDER: ${PERSISTENTTMPDIR}/fragezeichen-outdoor.bbd ${PERSISTENTTMPDIR}/.check_fragezeichen-outdoor.bbd
+${PERSISTENTTMPDIR}/fragezeichen-outdoor.bbd ${PERSISTENTTMPDIR}/.check_fragezeichen-outdoor.bbd:	\
+		Makefile \
+		${SOURCE_TARGETS:S|$|-orig|} \
+		${PERSISTENTTMPDIR}/bbbike-temp-blockings-optimized.bbd
+	echo -n > ${PERSISTENTTMPDIR}/fragezeichen-${doormode}-nextcheck.bbd~
+	echo "#: line_dash: 8, 5" >> ${PERSISTENTTMPDIR}/fragezeichen-outdoor.bbd~
+	echo "#: line_width: 5" >> ${PERSISTENTTMPDIR}/fragezeichen-outdoor.bbd~
+	echo "#:" >> ${PERSISTENTTMPDIR}/fragezeichen-outdoor.bbd~
+	${MISCSRCDIR}/create_fragezeichen_nextcheck.pl \
+	    --today=2999-12-31 \
+	    --outdoor-mode \
+	    --fragezeichen-mode fragezeichen-orig \
+	    --no-fragezeichen-mode \
+	    ${SOURCE_TARGETS:S|fragezeichen||:S|$|-orig|} \
+	    ${PERSISTENTTMPDIR}/bbbike-temp-blockings-optimized.bbd \
+		>> ${PERSISTENTTMPDIR}/fragezeichen-outdoor.bbd~
+	mv -f ${PERSISTENTTMPDIR}/fragezeichen-outdoor.bbd~ ${PERSISTENTTMPDIR}/fragezeichen-outdoor.bbd
+	touch ${PERSISTENTTMPDIR}/.check_fragezeichen-outdoor.bbd
 
 .ORDER: ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd ${PERSISTENTTMPDIR}/.check_fragezeichen-nextcheck.bbd
 ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd ${PERSISTENTTMPDIR}/.check_fragezeichen-nextcheck.bbd:	\

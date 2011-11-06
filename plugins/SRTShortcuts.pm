@@ -290,6 +290,12 @@ EOF
 				      $main::edit_normal_mode ? (below => $str_layer_level) : (above => $str_layer_level)
 				  },
 				 ),
+		layer_checkbutton('fragezeichen-outdoor', 'str',
+				  "$bbbike_rootdir/tmp/fragezeichen-outdoor.bbd",
+				  below_above_cb => sub {
+				      $main::edit_normal_mode ? (below => $str_layer_level) : (above => $str_layer_level)
+				  },
+				 ),
 		layer_checkbutton('fragezeichen-indoor-nextcheck', 'str',
 				  "$bbbike_rootdir/tmp/fragezeichen-indoor-nextcheck.bbd"),
 		layer_checkbutton('fragezeichen-nextcheck', 'str',
