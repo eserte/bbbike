@@ -25,6 +25,7 @@ use Strassen::Core;
 
 my $fragezeichen_mode = 0;
 my $door_mode = 'out';
+my $today = strftime "%Y-%m-%d", localtime;
 
 for my $arg (@ARGV) {
     if ($arg =~ m{^--?(.*)$}) {
@@ -37,6 +38,11 @@ for my $arg (@ARGV) {
 	    $door_mode = 'in';
 	} elsif ($arg eq 'outdoor-mode') {
 	    $door_mode = 'out';
+	} elsif ($arg =~ m{^today=(.*)$}) {
+	    $today = $1;
+	    if ($today !~ m{^\d{4}-\d{2}-\d{2}$}) {
+		die "Unexpected argument for --today '$today', expected YYYY-MM-DD";
+	    }
 	} else {
 	    die "Unknown argument -$arg";
 	}
@@ -54,7 +60,6 @@ sub handle_file {
     if ($glob_dir && $glob_dir->{check_frequency}) {
 	($check_frequency_days) = $glob_dir->{check_frequency}[0] =~ m{(\d+)};
     }
-    my $today = strftime "%Y-%m-%d", localtime;
 
     $s->read_stream
 	(sub {
