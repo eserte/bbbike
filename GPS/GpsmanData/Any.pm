@@ -167,7 +167,7 @@ sub load_gpx {
 			    my($lat, $lon) = $latlong2xy_twig->($trkpt);
 			    my $wpt = GPS::Gpsman::Waypoint->new;
 			    $wpt->Ident("");
-			    $wpt->Accuracy(0);
+			    my $accuracy = 0;
 			    $wpt->Latitude($lat);
 			    $wpt->Longitude($lon);
 			    for my $trkpt_child ($trkpt->children) {
@@ -177,8 +177,11 @@ sub load_gpx {
 				    my $time = $trkpt_child->children_text;
 				    my $gpsman_time = $gpsman_time_to_time->($time);
 				    $wpt->Comment($gpsman_time);
+				} elsif ($trkpt_child->name eq 'srt:accuracy') {
+				    $accuracy = $trkpt_child->children_text || 0;
 				}
 			    }
+			    $wpt->Accuracy($accuracy);
 
 			    push @data, $wpt;
 			} elsif ($trkpt_name =~ m{^srt:}) { # XXX this assumes xmlns:srt, which does not have to be correct!
