@@ -367,9 +367,9 @@ starting and an end date).
 
 =item C<XXX: I<why>>
 
-The next block or line is unsure or unclear information. The I<why>
-text specifies an additional comment. This note should not appear in
-the processed data. 
+The next block or line is unsure or unclear information, and usually
+has to be researched on-site. The I<why> text specifies an additional
+comment. This note should not appear in the processed data.
 
 Earlier versions also defined C<unsure> as an alias for C<XXX> (or
 even the other way around), but in reality C<unsure> was almost never
@@ -407,8 +407,8 @@ and usually not on-site.
 
 =item C<XXX_outdoor: I<why>>
 
-The unclear information can only be researched on-site. Usually this
-is the same as C<XXX>.
+Deprecated. Usually this is the same as C<XXX>, and scripts don't
+support this type anymore.
 
 =item C<XXX_osm: I<why>>
 
