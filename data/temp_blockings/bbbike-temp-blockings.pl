@@ -19821,14 +19821,11 @@ EOF
 userdel	q4::inwork; 12395,6785 12044,6707 11689,6634
 EOF
      },
-     { from  => undef, # 
-       until => undef, # XXX
+     { from  => 1320702775, # undef, # 
+       until => 1320702778, # undef, # XXX wieder passierbar
        text  => 'Rüdersdorfer Str.: Einbahnstraße zwischen Fredersdorfer Str. und Wedekindstr., offen in Richtung Osten',
        type  => 'handicap',
        data  => <<EOF,
-#: XXX danach vielleicht Radspuren?
-#: last_checked: 2011-10-31
-#: next_check: 2011-11-06
 userdel	q3::inwork; 13066,11854 12891,12008
 EOF
      },

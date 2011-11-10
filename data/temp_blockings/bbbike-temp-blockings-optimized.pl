@@ -1882,29 +1882,9 @@ userdel	3 12992,7545 13015,7440 12925,7425
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => undef,
-         'text' => 'Rüdersdorfer Str.: Einbahnstraße zwischen Fredersdorfer Str. und Wedekindstr., offen in Richtung Osten',
-         'from' => undef,
-         'id' => 2296,
-         'data' => '#: XXX danach vielleicht Radspuren?
-#: last_checked: 2011-10-31
-#: next_check: 2011-11-06
-userdel	q3::inwork; 13066,11854 12891,12008
-',
-         'type' => 'handicap'
-       },
        undef,
-       {
-         'source_id' => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1110/nachricht4508.html',
-         'until' => 1320606000,
-         'text' => 'Vollsperrungen im Bereich Invalidenstraße zwischen Chausseestraße und Am Nordbahnhof, 05.11.11 ab 6:00 Uhr bis 06.11.11, 20:00 Uhr',
-         'from' => 1320382800,
-         'id' => 2298,
-         'data' => 'userdel	q4::inwork 9085,13919 8935,13844
-',
-         'type' => 'handicap'
-       },
+       undef,
+       undef,
        {
          'until' => undef,
          'text' => 'Alt-Friedrichsfelde - Weißenhöher Straße: Bauarbeiten, Durchfahrt könnte gesperrt sein',

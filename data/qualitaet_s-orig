@@ -7494,7 +7494,9 @@ Stiftsweg: Asphalt	Q0 11001,18528 11268,18851
 Bleicheroder Str.: Asphalt	Q0 11268,18851 11439,18890 11526,18929 11622,18964 11727,19001 11762,19014 11805,19071
 #: note: "à la Linienstr."
 Paracelsusstr.: schlechter Asphalt	Q2+ 11523,19393 11575,19296 11543,19279 11549,19258 11599,19171
-Paracelsusstr.: schlechter Asphalt	Q2+ 11634,19187 11727,19001
+#: corrected_by: srt (schlechter Asphalt -> ..., public imagery)
+#: XXX check vor Ort
+Paracelsusstr.: Kopfsteinpflaster	Q2 11634,19187 11727,19001
 Paracelsusstr.: schlechter Asphalt	Q2+ 11671,19204 11613,19312 11575,19296
 #: by: ^^^
 # 
