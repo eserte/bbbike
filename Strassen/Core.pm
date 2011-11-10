@@ -266,6 +266,7 @@ sub read_from_fh {
     my @block_directives_line;
     my $preserve_line_info = $args{PreserveLineInfo} || 0;
     my $preserve_comments  = $args{PreserveComments} || 0;
+    my @errors;
 
     local $_;
     while (<$fh>) {
@@ -300,6 +301,12 @@ sub read_from_fh {
 		    push @block_directives, [$directive => $value];
 		    push @block_directives_line, $.;
 		} elsif ($is_block_end) {
+		    if (!@block_directives) {
+			push @errors, "Unexpected closed directive '$directive' at line $., nothing expected";
+		    } elsif ($block_directives[-1]->[0] ne $directive) {
+			push @errors, "Unexpected closed directive '$directive' at line $., but expected '$block_directives[-1]->[0]' (started at line $block_directives_line[-1])";
+			# but pop anyway...
+		    }
 		    pop @block_directives;
 		    pop @block_directives_line;
 		} else {
@@ -364,6 +371,10 @@ sub read_from_fh {
     }
     if (%line_directive) {
 	die "Stray line directive `@{[ keys %line_directive ]}' at end of file\n";
+    }
+    if (@errors) {
+	# XXX consider to use warn_or_die()
+	warn("ERROR: found following errors:\n" . join("\n", @errors) . "\n");
     }
     warn "... done\n" if ($VERBOSE && $VERBOSE > 1);
     close $fh;
