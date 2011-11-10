@@ -39,7 +39,7 @@ GetOptions(get_std_opts("xxx"),
 	   "doit!" => \$doit,
 	  ) or die "usage";
 
-my $basic_tests = 36;
+my $basic_tests = 39;
 my $doit_tests = 6;
 my $strassen_orig_tests = 5;
 my $zebrastreifen_tests = 3;
@@ -446,5 +446,72 @@ EOF
 	is $r->[Strassen::NAME], 'Heinrich-Heine';
     }
 }
+
+{
+    my $data =<<EOF;
+#:
+#: XXX: value1 vvv
+#: XXX: value2 vvv
+#: by: http://www.example.org vvv
+Straße A	? 6353,22515 6301,22581
+Straße B	? 16353,22515 16301,22581
+#: by: ^^^
+#: XXX: ^^^
+#: XXX: ^^^
+EOF
+    my $s = Strassen->new_from_data_string($data, UseLocalDirectives => 1);
+    my $data2 = $s->as_string;
+    eq_or_diff $data2, $data, 'Nested local block directives after serializing';
+}
+
+{
+    my $data = <<EOF;
+#:
+#: by: http://www.example.org
+#: XXX: value1 vvv
+#: last_checked: 2011-06-25 vvv
+#: next_check: 2012-03-01 vvv
+Straße A	?::inwork 26289,12772
+Straße B	?::inwork 26289,12772
+#: XXX: value2 vvv
+Straße C	?::inwork 26289,12772
+Straße D	?::inwork 26289,12772
+#: XXX: ^^^
+#: next_check: ^^^
+#: last_checked: ^^^
+#: XXX: ^^^
+EOF
+    my $s = Strassen->new_from_data_string($data, UseLocalDirectives => 1);
+    my $data2 = $s->as_string;
+    eq_or_diff $data2, $data, 'Nested local block directives after serializing (complicated case)';
+}
+
+{
+    # A complicated nested case. The following will be turned into not
+    # cleanly nested block directives.
+    my $data = <<EOF;
+#:
+#: by: http://www.potsdam.de/cms/dokumente/10073161_1189396/13ef9d53/AblPdm1_11.pdf
+#: note: Privatstraße
+#: XXX fehlt in Potsdam.coords.data
+Bienenwinkel (Potsdam): Qualität? Genauer Verlauf der Straße?   ? -13345,1962 -13316,2003 -13279,1958
+#: by: http://www.potsdam.de/cms/dokumente/10073161_1189396/13ef9d53/AblPdm1_11.pdf
+#: note: Privatstraße
+#: XXX fehlt in Potsdam.coords.data
+Zum Exerzierhaus (Potsdam): Qualität? Genauer Verlauf der Straße?       ? -13108,2010 -12981,2014
+#: by: http://www.potsdam.de/cms/dokumente/10072610_974248/9aba6281/abl16_10.pdf
+#: note: Privatstraße
+#: XXX fehlt in Potsdam.coords.data
+Zum Mühlenteich (Potsdam-Golm): Qualität? Genauer Verlauf der Straße?   ? -19211,-677 -19249,-605
+EOF
+
+    my $s = Strassen->new_from_data_string($data, UseLocalDirectives => 1);
+    my $data2 = $s->as_string;
+    my @warnings;
+    local $SIG{__WARN__} = sub { push @warnings, @_ };
+    my $s2 = Strassen->new_from_data_string($data2, UseLocalDirectives => 1);
+    is_deeply(\@warnings, [], 'No warnings in complicated nested case');
+}
+   
 
 __END__
