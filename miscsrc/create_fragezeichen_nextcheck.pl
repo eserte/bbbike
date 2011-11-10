@@ -26,6 +26,7 @@ use Strassen::Core;
 my $fragezeichen_mode = 0;
 my $door_mode = 'out';
 my $today = strftime "%Y-%m-%d", localtime;
+my $verbose;
 
 for my $arg (@ARGV) {
     if ($arg =~ m{^--?(.*)$}) {
@@ -43,6 +44,8 @@ for my $arg (@ARGV) {
 	    if ($today !~ m{^\d{4}-\d{2}-\d{2}$}) {
 		die "Unexpected argument for --today '$today', expected YYYY-MM-DD";
 	    }
+	} elsif ($arg eq 'verbose') {
+	    $verbose = 1;
 	} else {
 	    die "Unknown argument -$arg";
 	}
@@ -53,6 +56,7 @@ for my $arg (@ARGV) {
 
 sub handle_file {
     my($file) = @_;
+    if ($verbose) { print STDERR "$file... " }
     my $s = Strassen->new_stream($file);
 
     my $check_frequency_days = 30;
@@ -167,6 +171,8 @@ sub handle_file {
 	     # XXX better!!!
 	     print $r->[Strassen::NAME] . (defined $add_name ? (length $r->[Strassen::NAME] ? ' ' : '') . $add_name : '') . "\t$cat " . join(" ", @{ $r->[Strassen::COORDS] }) . "\n";
 	 });
+
+    if ($verbose) { print STDERR "done\n" }
 }
 
 __END__
