@@ -17226,14 +17226,14 @@ sub search_route {
 
 # Low-level search
 sub do_search {
-    my($start, $ziel, $via_ref, %args) = @_;
-    my @via = @$via_ref;
+    my($start, $ziel, $via_ref) = @_;
 
     # XXX $str_draw{'r'} ueberprfen, wenn im RB-Mode
     if (!$net and ($str_draw{'s'} || $str_draw{'l'})) { make_net() }
-    print STDERR "Suche von <$start> bis <$ziel>" . (@via ? " via <@via>" : "") . "\n"
+    print STDERR "Suche von <$start> bis <$ziel>" . (@$via_ref ? " via <@$via_ref>" : "") . "\n"
 	if $verbose;
     my %extra_args;
+    $extra_args{Via} = $via_ref;
     if (keys %ampeln) {
 	if ($ampel_optimierung) {
 	    $extra_args{Ampeln} =
