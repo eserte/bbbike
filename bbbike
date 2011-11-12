@@ -3146,9 +3146,6 @@ unless ($skip_features{"sehenswuerdigkeiten"}) {
     $sbm->command(-label => M"Route wiederherstellen (Undo)",
 		  -command =>\&get_undo_route,
 		  -accelerator => 'Ctrl-Z');
-    # XXX Brauche ich diesen Menüpunkt?
-    $sbm->command(-label => M"Route aktualisieren",
-		  -command => \&redraw_path);
     $sbm->command(-label => M"Suche wiederholen",
 		  -command => \&re_search_gui);
     $sbm->command(-label => M"Rückweg",
