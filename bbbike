@@ -17552,6 +17552,85 @@ sub re_search_gui {
     update_route_strname();
 }
 
+sub add_via_to_current_search {
+    my($before, $via, $after) = @_;
+
+    destroy_delayed_restack();
+    IncBusy($top, %busy_watch_args);
+    eval {
+	status_message("");
+
+	my $insert_index;
+	for my $i (0 .. $#search_route_points-1) {
+	    # We assume that the same before/after combination
+	    # exists exactly once in the route. This is a
+	    # rather pragmatic assumption.
+	    if ($search_route_points[$i]->[SRP_COORD] eq $before && 
+		$search_route_points[$i+1]->[SRP_COORD] eq $after) {
+		$insert_index = $i;
+		last;
+	    }
+	}
+	if (!defined $insert_index) {
+	    # Should never happen, no translation necessary:
+	    die "Cannot insert via point (no insertion index found using $before - $after)";
+	}
+
+	# Neither $before nor $after should be used multiple times. This
+	# is still pragmatic, but less likely as the above assumption.
+	my($before_index_in_route, $after_index_in_route);
+	my $stage = 0; # 0: search for before, 1: search for after
+	for my $i (0 .. $#realcoords) {
+	    if ($stage == 0) {
+		if (join(",",@{$realcoords[$i]}) eq $before) {
+		    $before_index_in_route = $i;
+		    $stage = 1;
+		}
+	    } else {
+		if (join(",",@{$realcoords[$i]}) eq $after) {
+		    $after_index_in_route = $i;
+		    last;
+		}
+	    }
+	}
+	if (!defined $before_index_in_route ||
+	    !defined $after_index_in_route) {
+	    # Should never happen, no translation necessary:
+	    die "Cannot find either $before or $after in realcoords";
+	}
+
+	$via = add_new_point($net, $via); # may die if via is not insertable
+
+	my @res = do_search($before, $after, [$via]);
+	if (!@res) {
+	    die M"Keine Strecke gefunden.\n";
+	}
+	my @path = @{ $res[StrassenNetz::RES_PATH] };
+	check_path_in_blockings_net(\@path);
+
+	# XXX what about register/undo/... stuff?
+
+	splice @search_route_points, $insert_index+1, 0, [$via, POINT_SEARCH];
+	splice @realcoords, $before_index_in_route, ($after_index_in_route-$before_index_in_route)+1, @path;
+
+	# XXX Too much duplication with other route handling functions:
+	# search_route, redraw_path, reverse_route ...
+	my @oldrealcoords = @realcoords;
+	my @oldsearchroutepoints = @search_route_points; # hack
+	resetroute();
+	addpoints_xy(\@oldrealcoords);
+	# XXX as a side effect, @realcoords and @coords are set to the new route
+	@search_route_points = @oldsearchroutepoints;
+	set_flag('via');
+	set_flag('ziel');
+	updatekm();
+	restack_delayed();
+    };
+    my $err = $@;
+    DecBusy($top);
+    status_message($err, 'err') if ($err);
+}
+
 # Steigung muﬂ als Tausendfaches angegeben werden.
 ### AutoLoad Sub
 sub steigung_penalty {
