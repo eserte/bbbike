@@ -1728,6 +1728,12 @@ sub tk_interface {
 
     sub convert_from_route {
 	my($self, $route, %args) = @_;
+
+	if (!$self->has_mapsource) {
+	    main::status_message("Mapsource is not available on this system.", "error");
+	    return;
+	}
+
 	require File::Temp;
 	require Route::Simplify;
 	require Strassen::Core;
@@ -1744,7 +1750,11 @@ sub tk_interface {
 	print $ofh $s->bbd2gpx(-as => "route");
 	close $ofh;
 
-	system(1, $self->mapsource_path, $ofile);
+	if ($^O eq 'MSWin32') {
+	    system(1, $self->mapsource_path, $ofile);
+	} else {
+	    system($self->mapsource_path, $ofile);
+	}
     }
 
     sub transfer {
