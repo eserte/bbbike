@@ -17147,291 +17147,7 @@ sub search_route {
     IncBusy($top, %busy_watch_args);
     eval {
 	status_message("");
-	# XXX $str_draw{'r'} ueberprfen, wenn im RB-Mode
-	if (!$net and ($str_draw{'s'} || $str_draw{'l'})) { make_net() }
-	print STDERR "Suche von <$start> bis <$ziel>" . (@via ? " via <@via>" : "") . "\n"
-	  if $verbose;
-	my %extra_args;
-	if (keys %ampeln) {
-	    if ($ampel_optimierung) {
-		$extra_args{Ampeln} =
-		  {Net     => \%ampeln,
-		   Penalty => $lost_strecke_per_ampel};
-	    } elsif ($optprefs{'Ampeln'}) {
-		$extra_args{Ampeln} =
-		  {Net     => \%ampeln,
-		   Penalty => optprefs2penalty($optprefs{'Ampeln'})*100};
-	    } # XXX
-	    if ($abbiege_optimierung) {
-		$extra_args{Abbiegen} = {Penalty => $abbiege_penalty,
-					 Order   => {'NN' => 0,
-						     'N' => 1,
-						     'NH' => 1,
-						     'H' => 2,
-						     'HH' => 3,
-						     'BAB' => 3, # XXX
-						     'B' => 4}};
-	    }
-	    # XXX optprefs
-	}
-
-	# Qualität, Handicap und temporäre Handicaps
-	foreach my $def ({OptSwitch	 => \$qualitaet_s_optimierung,
-			  OptName	 => 'Qualität',
-			  Speed          => \%qualitaet_s_speed,
-			  MakeNet	 => \&make_qualitaet_net,
-			  CatPrefix	 => 'Q',
-			  ExtraArgsName	 => 'Qualitaet',
-			 },
-			 {OptSwitch	 => \$handicap_s_optimierung,
-			  OptName	 => 'Sonstige Beeinträchtigungen',
-			  Speed          => \%handicap_s_speed,
-			  MakeNet	 => \&make_handicap_net,
-			  CatPrefix	 => 'q',
-			  ExtraArgsName	 => 'Handicap',
-			 },
-			) {
-	    my $opt = $ {$def->{OptSwitch}};
-	    my $optname = $def->{OptName};
-	    if ($opt || (defined $optname && $optprefs{$optname})) {
-		my $speed = $def->{Speed};
-		my $makenet = $def->{MakeNet};
-		my $catprefix = $def->{CatPrefix};
-		my $net = $makenet->();
-		my $penalty;
-		if ($opt) {
-		    foreach (0 .. 4) {
-			next if !defined $speed->{$catprefix . "$_"};
-			$penalty->{$catprefix . "$_"} =
-			    max_speed($speed->{$catprefix . "$_"});
-		    }
-		} else {
-		    foreach (0 .. 4) {
-			next if !defined $penalty->{$catprefix . "$_"};
-			# XXX
-			$penalty->{$catprefix . "$_"} =
-			    optprefs2penalty($optprefs{$def->{OptName}}) * $_;
-		    }
-		}
-		$extra_args{$def->{ExtraArgsName}} =
-		    {Net => $net,
-		     Penalty => $penalty,
-		    };
-	    }
-	}
-
-	if ($strcat_optimierung || $optprefs{'Kategorie'}) {
-	    # XXX wenn L zugeschaltet wird, muß strcat_net aktualisiert werden
-	    if (!$strcat_net) {
-		if ($multistrassen) {
-		    $strcat_net = new StrassenNetz $multistrassen;
-		} elsif ($str_obj{'s'}) {
-		    $strcat_net = new StrassenNetz $str_obj{'s'};
-		}
-		if ($strcat_net) {
-		    $strcat_net->make_net_cat;
-		}
-	    }
-	    if ($strcat_net) {
-		my $penalty;
-		if ($strcat_optimierung) {
-		    foreach (keys %strcat_speed) {
-			$penalty->{$_} = max_speed($strcat_speed{$_});
-		    }
-		} else {
-# 		my %strcat_def = (B  => HH => 100,
-#    H  => 100,
-#    N  => 100,
-#    NN => 100);
-# 		foreach (keys %strcat_speed) {
-# 		    # XXX
-# 		    $penalty->{"Q$_"} = optprefs2penalty($optprefs{'Kategorie'})* $_;
-# 		}
-		}
-		$extra_args{Strcat} =
-		  {Net => $strcat_net,
-		   Penalty => $penalty,
-		  };
-	    }
-	}
-	if ($radwege_optimierung) {
-	    if (!$radwege_net) {
-		my $radwege_exact = new Strassen "radwege_exact";
-		$radwege_net = new StrassenNetz $radwege_exact;
-		$radwege_net->make_net_cat(-obeydir => 1);
-		# add all other streets do not have cycle paths ...
-		while(my($p1,$hash) = each %{ $net->{Net} }) {
-		    while(my($p2,$entf) = each %$hash) {
-			if (!exists $radwege_net->{Net}{$p1}{$p2}) {
-			    $radwege_net->{Net}{$p1}{$p2} = "RW0";
-			    $radwege_net->{Net}{$p2}{$p1} = "RW0";
-			}
-		    }
-		}
-	    }
-	    my $penalty;
-	    foreach (keys %radwege_speed) {
-		$penalty->{$_} = max_speed($radwege_speed{$_});
-	    }
-
-	    $extra_args{Radwege} =
-	      {Net => $radwege_net,
-	       Penalty => $penalty,
-	      };
-	}
-
-	if ($N_RW_optimization || $N_RW1_optimization) {
-	    # XXX check if $N_RW_net is up-to-date with respect to its
-	    # sources, or whether a new $N_RW_net should be build
-	    if (!$N_RW_net) {
-		my $s = $multistrassen ? $multistrassen : $str_obj{'s'};
-		if (!$s) {
-		    warn "Can't get streets object, ignore N_RW optimization";
-		} else {
-		    $N_RW_net = new StrassenNetz $s;
-		    $N_RW_net->make_net_cyclepath(Strassen->new("radwege_exact"), 'N_RW');
-		}
-	    }
-	    if ($N_RW_net) {
-		my $penalty = { "H"     => 4,
-				"H_Bus" => ($N_RW1_optimization ? 4 : 1),
-				"H_RW"  => 1,
-				"N"     => 1,
-				"N_Bus" => 1,
-				"N_RW"  => 1 };
-		$extra_args{RadwegeStrcat} =
-		    {Net => $N_RW_net,
-		     Penalty => $penalty,
-		    };
-	    }
-	}
-
-	if ($tram_optimization) {
-	    if (!$tram_net) {
-		$tram_net = StrassenNetz->new(Strassen->new('comments_tram')); # XXX -orig?
-		$tram_net->make_net_cat;
-	    }
-	    if ($tram_net) {
-		my $penalty = { "CS"   => 4 }; # XXX about 20km/h -> 5km/h
-		$extra_args{Tram} =
-		    {Net => $tram_net,
-		     Penalty => $penalty,
-		    };
-	    }
-	}
-
-	if ($green_optimization) {
-	    # XXX check if $green_net is up-to-date with respect to its
-	    # sources, or whether a new $green_net should be build
-	    if (!$green_net) {
-		$green_net = new StrassenNetz(Strassen->new("green"));
-		$green_net->make_net_cat;
-	    }
-	    my $penalty = ($green_optimization == 2
-			   ? { "green0" => 3,
-			       "green1" => 2,
-			       "green2" => 1,
-			     }
-			   : { "green0" => 2,
-			       "green1" => 1.5,
-			       "green2" => 1,
-			     }
-			  );
-	    $extra_args{Green} =
-		{Net => $green_net,
-		 Penalty => $penalty,
-		};
-	}
-
-	if ($unlit_streets_optimization) {
-	    if (!$unlit_streets_net) {
-		$unlit_streets_net = new StrassenNetz(Strassen->new("nolighting"));
-		$unlit_streets_net->make_net_cat;
-	    }
-	    my $penalty = { "NL" => 4,
-			  };
-	    $extra_args{UnlitStreets} =
-		{Net => $unlit_streets_net,
-		 Penalty => $penalty,
-		};
-	}
-
-	if ($steigung_optimierung) {
-	    if (!$steigung_net) {
-		$steigung_net = new StrassenNetz Strassen->new;
-		$steigung_net->make_net_steigung($net, \%hoehe);
-	    }
-	    my $penalty;
-	    my $act_power;
-	    if ($active_speed_power{Type} eq 'power') {
-		$act_power = $power[$active_speed_power{Index}];
-	    } else {
-		$act_power = speed2power($speed[$active_speed_power{Index}]);
-	    }
-	    if (!defined $steigung_penalty_env{ActPower} ||
-		$steigung_penalty_env{ActPower} != $act_power) {
-		$steigung_penalty = {};
-	    }
-	    $steigung_penalty_env{ActPower} = $act_power;
-	    $extra_args{Steigung} =
-	      {Net => $steigung_net,
-	       Penalty => $steigung_penalty,
-	       PenaltySub => sub { steigung_penalty($_[0], $act_power) },
-	      };
-	}
-	if (!$sperre{'tragen'}) {
-	    $extra_args{Tragen} = 1;
-	}
-	$extra_args{Velocity} = get_active_speed()/3.6; # should be m/s
-	# XXX Bislang noch keine Möglichkeit außer /tmp/add.pl, um
-	# $aufschlag zu setzen.
-	# Der Alternativ-Strecken-Code braucht noch viel Arbeit. Als
-	# erstes sollte ein Start/Ziel-Punkt, der zwischen zwei
-	# Kreuzungen/Kurvenpunkten liegt, höchstens einmal! durchfahren
-	# werden.
-	if ($aufschlag != 0 && $aufschlag != 1) {
-	    $extra_args{Aufschlag} = $aufschlag;
-	    $extra_args{All}       = 1;
-	}
-	# XXX weitere mögliche Optimierungen:
-	# (benutzungspflichtige) Radwege
-	# verkehrsberuhigte Zonen => 6 .. 20 km/h
-	# Fußgängerampeln: Abbremsen auf 10 km/h und gleich wieder hoch
-	# Kreuzungen (Neben/Haupt, Haupt/Haupt ohne Ampel)
-	# Berufsverkehr (Stau auf großen Straßen => 15 .. 20 km/h)
-	if ($search_stat) {
-	    $extra_args{Stat} = 1;
-	}
-	if ($search_visual) {
-	    $extra_args{'VisualSearch'} = {'Canvas' => $c,
-					   'Transpose' => \&transpose,
-					   'Delay' => 0.1,
-				       };
-	}
-	if (%global_search_args) {
-	    while(my($k,$v) = each %global_search_args) {
-		$extra_args{$k} = $v;
-	    }
-	}
-	if (keys %penalty_subs) {
-	    # Note: the %penalty_subs should only multiply $p, not add to
-	    # if there are more than one penalty sub!
-	    $extra_args{UserDefPenaltySub} = sub {
-		my($p, $next_node, $last_node) = @_;
-		while(my($k,$v) = each %penalty_subs) {
-		    $p = $v->($p, $next_node, $last_node);
-		}
-		$p;
-	    };
-	}
-
-	make_net() if (!$net);
-	foreach my $ref (\$start, \$ziel) {
-	    if (!$net->reachable($$ref)) {
-		add_new_point($net, $$ref); # XXX ja?
-	    }
-	}
-	my(@res) = $net->search($start, $ziel, %extra_args);
+	my @res = do_search($start, $ziel, \@via, %args);
 
 	if (!@res) {
 	    die M"Keine Strecke gefunden.\n";
@@ -17511,6 +17227,300 @@ sub search_route {
     $in_search = 0;
     DecBusy($top);
     status_message($err, 'err') if ($err);
+}
+
+# Low-level search
+sub do_search {
+    my($start, $ziel, $via_ref, %args) = @_;
+    my @via = @$via_ref;
+
+    # XXX $str_draw{'r'} ueberprfen, wenn im RB-Mode
+    if (!$net and ($str_draw{'s'} || $str_draw{'l'})) { make_net() }
+    print STDERR "Suche von <$start> bis <$ziel>" . (@via ? " via <@via>" : "") . "\n"
+	if $verbose;
+    my %extra_args;
+    if (keys %ampeln) {
+	if ($ampel_optimierung) {
+	    $extra_args{Ampeln} =
+		{Net     => \%ampeln,
+		 Penalty => $lost_strecke_per_ampel};
+	} elsif ($optprefs{'Ampeln'}) {
+	    $extra_args{Ampeln} =
+		{Net     => \%ampeln,
+		 Penalty => optprefs2penalty($optprefs{'Ampeln'})*100};
+	} # XXX
+	if ($abbiege_optimierung) {
+	    $extra_args{Abbiegen} = {Penalty => $abbiege_penalty,
+				     Order   => {'NN' => 0,
+						 'N' => 1,
+						 'NH' => 1,
+						 'H' => 2,
+						 'HH' => 3,
+						 'BAB' => 3, # XXX
+						 'B' => 4}};
+	}
+	# XXX optprefs
+    }
+    
+    # Qualität, Handicap und temporäre Handicaps
+    foreach my $def ({OptSwitch	 => \$qualitaet_s_optimierung,
+		      OptName	 => 'Qualität',
+		      Speed          => \%qualitaet_s_speed,
+		      MakeNet	 => \&make_qualitaet_net,
+		      CatPrefix	 => 'Q',
+		      ExtraArgsName	 => 'Qualitaet',
+		     },
+		     {OptSwitch	 => \$handicap_s_optimierung,
+		      OptName	 => 'Sonstige Beeinträchtigungen',
+		      Speed          => \%handicap_s_speed,
+		      MakeNet	 => \&make_handicap_net,
+		      CatPrefix	 => 'q',
+		      ExtraArgsName	 => 'Handicap',
+		     },
+		    ) {
+	my $opt = $ {$def->{OptSwitch}};
+	my $optname = $def->{OptName};
+	if ($opt || (defined $optname && $optprefs{$optname})) {
+	    my $speed = $def->{Speed};
+	    my $makenet = $def->{MakeNet};
+	    my $catprefix = $def->{CatPrefix};
+	    my $net = $makenet->();
+	    my $penalty;
+	    if ($opt) {
+		foreach (0 .. 4) {
+		    next if !defined $speed->{$catprefix . "$_"};
+		    $penalty->{$catprefix . "$_"} =
+			max_speed($speed->{$catprefix . "$_"});
+		}
+	    } else {
+		foreach (0 .. 4) {
+		    next if !defined $penalty->{$catprefix . "$_"};
+		    # XXX
+		    $penalty->{$catprefix . "$_"} =
+			optprefs2penalty($optprefs{$def->{OptName}}) * $_;
+		}
+	    }
+	    $extra_args{$def->{ExtraArgsName}} =
+		{Net => $net,
+		 Penalty => $penalty,
+		};
+	}
+    }
+
+    if ($strcat_optimierung || $optprefs{'Kategorie'}) {
+	# XXX wenn L zugeschaltet wird, muß strcat_net aktualisiert werden
+	if (!$strcat_net) {
+	    if ($multistrassen) {
+		$strcat_net = new StrassenNetz $multistrassen;
+	    } elsif ($str_obj{'s'}) {
+		$strcat_net = new StrassenNetz $str_obj{'s'};
+	    }
+	    if ($strcat_net) {
+		$strcat_net->make_net_cat;
+	    }
+	}
+	if ($strcat_net) {
+	    my $penalty;
+	    if ($strcat_optimierung) {
+		foreach (keys %strcat_speed) {
+		    $penalty->{$_} = max_speed($strcat_speed{$_});
+		}
+	    } else {
+# 		my %strcat_def = (B  => HH => 100,
+#    H  => 100,
+#    N  => 100,
+#    NN => 100);
+# 		foreach (keys %strcat_speed) {
+# 		    # XXX
+# 		    $penalty->{"Q$_"} = optprefs2penalty($optprefs{'Kategorie'})* $_;
+# 		}
+	    }
+	    $extra_args{Strcat} =
+		{Net => $strcat_net,
+		 Penalty => $penalty,
+		};
+	}
+    }
+    if ($radwege_optimierung) {
+	if (!$radwege_net) {
+	    my $radwege_exact = new Strassen "radwege_exact";
+	    $radwege_net = new StrassenNetz $radwege_exact;
+	    $radwege_net->make_net_cat(-obeydir => 1);
+	    # add all other streets do not have cycle paths ...
+	    while (my($p1,$hash) = each %{ $net->{Net} }) {
+		while (my($p2,$entf) = each %$hash) {
+		    if (!exists $radwege_net->{Net}{$p1}{$p2}) {
+			$radwege_net->{Net}{$p1}{$p2} = "RW0";
+			$radwege_net->{Net}{$p2}{$p1} = "RW0";
+		    }
+		}
+	    }
+	}
+	my $penalty;
+	foreach (keys %radwege_speed) {
+	    $penalty->{$_} = max_speed($radwege_speed{$_});
+	}
+
+	$extra_args{Radwege} =
+	    {Net => $radwege_net,
+	     Penalty => $penalty,
+	    };
+    }
+
+    if ($N_RW_optimization || $N_RW1_optimization) {
+	# XXX check if $N_RW_net is up-to-date with respect to its
+	# sources, or whether a new $N_RW_net should be build
+	if (!$N_RW_net) {
+	    my $s = $multistrassen ? $multistrassen : $str_obj{'s'};
+	    if (!$s) {
+		warn "Can't get streets object, ignore N_RW optimization";
+	    } else {
+		$N_RW_net = new StrassenNetz $s;
+		$N_RW_net->make_net_cyclepath(Strassen->new("radwege_exact"), 'N_RW');
+	    }
+	}
+	if ($N_RW_net) {
+	    my $penalty = { "H"     => 4,
+			    "H_Bus" => ($N_RW1_optimization ? 4 : 1),
+			    "H_RW"  => 1,
+			    "N"     => 1,
+			    "N_Bus" => 1,
+			    "N_RW"  => 1 };
+	    $extra_args{RadwegeStrcat} =
+		{Net => $N_RW_net,
+		 Penalty => $penalty,
+		};
+	}
+    }
+
+    if ($tram_optimization) {
+	if (!$tram_net) {
+	    $tram_net = StrassenNetz->new(Strassen->new('comments_tram')); # XXX -orig?
+	    $tram_net->make_net_cat;
+	}
+	if ($tram_net) {
+	    my $penalty = { "CS"   => 4 }; # XXX about 20km/h -> 5km/h
+	    $extra_args{Tram} =
+		{Net => $tram_net,
+		 Penalty => $penalty,
+		};
+	}
+    }
+
+    if ($green_optimization) {
+	# XXX check if $green_net is up-to-date with respect to its
+	# sources, or whether a new $green_net should be build
+	if (!$green_net) {
+	    $green_net = new StrassenNetz(Strassen->new("green"));
+	    $green_net->make_net_cat;
+	}
+	my $penalty = ($green_optimization == 2
+		       ? { "green0" => 3,
+			   "green1" => 2,
+			   "green2" => 1,
+			 }
+		       : { "green0" => 2,
+			       "green1" => 1.5,
+				   "green2" => 1,
+			       }
+		      );
+	$extra_args{Green} =
+	    {Net => $green_net,
+	     Penalty => $penalty,
+	    };
+    }
+
+    if ($unlit_streets_optimization) {
+	if (!$unlit_streets_net) {
+	    $unlit_streets_net = new StrassenNetz(Strassen->new("nolighting"));
+	    $unlit_streets_net->make_net_cat;
+	}
+	my $penalty = { "NL" => 4,
+		      };
+	$extra_args{UnlitStreets} =
+	    {Net => $unlit_streets_net,
+	     Penalty => $penalty,
+	    };
+    }
+
+    if ($steigung_optimierung) {
+	if (!$steigung_net) {
+	    $steigung_net = new StrassenNetz Strassen->new;
+	    $steigung_net->make_net_steigung($net, \%hoehe);
+	}
+	my $penalty;
+	my $act_power;
+	if ($active_speed_power{Type} eq 'power') {
+	    $act_power = $power[$active_speed_power{Index}];
+	} else {
+	    $act_power = speed2power($speed[$active_speed_power{Index}]);
+	}
+	if (!defined $steigung_penalty_env{ActPower} ||
+	    $steigung_penalty_env{ActPower} != $act_power) {
+	    $steigung_penalty = {};
+	}
+	$steigung_penalty_env{ActPower} = $act_power;
+	$extra_args{Steigung} =
+	    {Net => $steigung_net,
+	     Penalty => $steigung_penalty,
+	     PenaltySub => sub { steigung_penalty($_[0], $act_power) },
+	    };
+    }
+    if (!$sperre{'tragen'}) {
+	$extra_args{Tragen} = 1;
+    }
+    $extra_args{Velocity} = get_active_speed()/3.6; # should be m/s
+    # XXX Bislang noch keine Möglichkeit außer /tmp/add.pl, um
+    # $aufschlag zu setzen.
+    # Der Alternativ-Strecken-Code braucht noch viel Arbeit. Als
+    # erstes sollte ein Start/Ziel-Punkt, der zwischen zwei
+    # Kreuzungen/Kurvenpunkten liegt, höchstens einmal! durchfahren
+    # werden.
+    if ($aufschlag != 0 && $aufschlag != 1) {
+	$extra_args{Aufschlag} = $aufschlag;
+	$extra_args{All}       = 1;
+    }
+    # XXX weitere mögliche Optimierungen:
+    # (benutzungspflichtige) Radwege
+    # verkehrsberuhigte Zonen => 6 .. 20 km/h
+    # Fußgängerampeln: Abbremsen auf 10 km/h und gleich wieder hoch
+    # Kreuzungen (Neben/Haupt, Haupt/Haupt ohne Ampel)
+    # Berufsverkehr (Stau auf großen Straßen => 15 .. 20 km/h)
+    if ($search_stat) {
+	$extra_args{Stat} = 1;
+    }
+    if ($search_visual) {
+	$extra_args{'VisualSearch'} = {'Canvas' => $c,
+				       'Transpose' => \&transpose,
+				       'Delay' => 0.1,
+				      };
+    }
+    if (%global_search_args) {
+	while (my($k,$v) = each %global_search_args) {
+	    $extra_args{$k} = $v;
+	}
+    }
+    if (keys %penalty_subs) {
+	# Note: the %penalty_subs should only multiply $p, not add to
+	# if there are more than one penalty sub!
+	$extra_args{UserDefPenaltySub} = sub {
+	    my($p, $next_node, $last_node) = @_;
+	    while (my($k,$v) = each %penalty_subs) {
+		$p = $v->($p, $next_node, $last_node);
+	    }
+	    $p;
+	};
+    }
+
+    make_net() if (!$net);
+    foreach my $ref (\$start, \$ziel) {
+	if (!$net->reachable($$ref)) {
+	    add_new_point($net, $$ref); # XXX ja?
+	}
+    }
+    my(@res) = $net->search($start, $ziel, %extra_args);
+
+    @res;
 }
 
 # Wiederholung der Suche (evtl. mit neuen Parametern)
