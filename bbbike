@@ -14923,12 +14923,27 @@ sub addpoint_inter {
 ## DEBUG_END	   
 }
 
+sub addpoints_xy {
+    my($realcoords_ref, %args) = @_;
+    my $canvascoords_ref = delete $args{-canvascoords};
+    my $power_cache = {};
+    for(my $i = 0; $i <= $#$realcoords_ref; $i++) {
+	my($cx,$cy);
+	if ($canvascoords_ref) {
+	    ($cx,$cy) = @{ $canvascoords_ref->[$i] };
+	}
+	addpoint_xy(@{$realcoords_ref->[$i]}, $cx, $cy, -powercache => $power_cache);
+    }
+}
+
 # Eingaben: $x und $y als realcoords, $xx und $yy als Canvas-Koords
 sub addpoint_xy {
-    my($x, $y, $xx, $yy) = @_;
+    my($x, $y, $xx, $yy, %args) = @_;
 ## DEBUG_BEGIN
 #benchbegin();
-## DEBUG_END	   
+## DEBUG_END
+
+    my $power_cache = delete $args{-powercache};
 
     if (!defined $xx) {
 	if ($coord_system ne 'standard') {
@@ -15234,7 +15249,7 @@ sub fusspunkt {
 
 ### AutoLoad Sub
 sub recalc_bikepwr {
-    $power_cache = {};
+    my $power_cache = {};
     for(my $i = 0; $i <= $#power; $i++) {
 	$bikepwr_time[$i] = 0;
 	$bikepwr_cal[$i] = 0;
@@ -15252,7 +15267,6 @@ sub recalc_bikepwr {
 	    $_->[5] = $bikepwr_cal_etappe;
 	}
     }
-    undef $power_cache;
 }
 
 ### AutoLoad Sub
@@ -15279,13 +15293,8 @@ sub redraw_path {
 	my @oldrealcoords = @realcoords;
 	my @oldsearchroutepoints = @search_route_points; # hack
 	resetroute();
-	$power_cache = {};
-	my $i;
-	for($i = 0; $i <= $#oldcoords; $i++) {
-	    addpoint_xy(@{$oldrealcoords[$i]}, @{$oldcoords[$i]});
-	}
+	addpoints_xy(\@oldrealcoords, -canvascoords => \@oldcoords);
 	@search_route_points = @oldsearchroutepoints;
-	undef $power_cache;
 	set_flag('via');
 	set_flag('ziel');
 	updatekm();
@@ -15314,12 +15323,7 @@ sub reverse_route {
 	my @newrealcoords = reverse @realcoords;
 	@search_route_points = reverse @search_route_points;
 	resetroute();
-	$power_cache = {};
-	my $i;
-	for($i = 0; $i <= $#newcoords; $i++) {
-	    addpoint_xy(@{$newrealcoords[$i]}, @{$newcoords[$i]});
-	}
-	undef $power_cache;
+	addpoints_xy(\@newrealcoords, -canvascoords => \@newcoords);
 	set_flag('via');
 	set_flag('ziel');
 	updatekm();
@@ -15399,7 +15403,7 @@ sub delete_route {
 
 # Hierfür nicht Autoload verwenden, weil es sonst *langsam* wird!
 sub bikepwr_get_v { # Resultat in m/s
-    my($wind, $i, $grade) = @_;
+    my($wind, $i, $grade, $power_cache) = @_;
     if (!defined $bp_obj) {
 	die "bp_obj ist nicht definiert";
     }
@@ -17182,25 +17186,9 @@ sub search_route {
 	    }
 	    push @search_route_points, $save_start;
  	}
-# 	my(@res);
-# 	$power_cache = {};
-# 	for(my $i=$max_list; $i>=0; $i--) {
-# 	    my $res_ref = $res_list[$i];
-# 	    next if (!ref $res_ref or !@$res_ref);
-# 	    @res = @$res_ref;
- 	    foreach my $p (@path) {
- 		my($x, $y) = @$p;
- 		addpoint_xy($x, $y, transpose($x, $y));
- 	    }
- 	    undef $power_cache;
- 	    updatekm();
-# 	    if ($max_list > 0) {
-# 		save_route_to_register($i+1);
-# 		resetroute();
-# 		get_route_from_register('cont');
-# 	    }
-# 	}
-# 	get_route_from_register(1) if $max_list > 0;
+
+	addpoints_xy(\@path);
+	updatekm();
 	# continue with best route (but do not continue if the route was deleted before and @act_search_route is empty)
 	if ($continue && @act_search_route) {
 	    push @act_search_route,

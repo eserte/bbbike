@@ -236,7 +236,7 @@ use vars qw($steigung_net %steigung_penalty_env $steigung_penalty
 	    $curr_selection @inslauf_selection @ext_selection
 	    $strecke $dim_color $unit_s
 	    $bikepwr @bikepwr_all_time @bikepwr_time @bikepwr_cal
-	    $power_cache $next_is_undo
+	    $next_is_undo
 	    %do_flag);
 use vars qw(@search_route_points $search_route_flag $in_search
 	    $show_grade);
