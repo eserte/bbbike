@@ -7,7 +7,7 @@
 
 use strict;
 use FindBin;
-use lib "$FindBin::RealBin/../lib";
+use lib ("$FindBin::RealBin/../lib", $FindBin::RealBin);
 
 BEGIN {
     if (!eval q{
@@ -19,11 +19,22 @@ BEGIN {
     }
 }
 
-plan tests => 12;
+use Getopt::Long;
+
+use BBBikeTest qw(is_float);
+use Strassen::Util qw();
+
+plan tests => 14;
+
+my $do_bench;
+GetOptions("bench!" => \$do_bench)
+    or die "usage: $0 [-bench]";
 
 # note: additional tests in ext/VectorUtil-Inline/t
 use_ok('VectorUtil', 'intersect_rectangles', 'normalize_rectangle',
-       'enclosed_rectangle', 'bbox_of_polygon', 'combine_bboxes');
+       'enclosed_rectangle', 'bbox_of_polygon', 'combine_bboxes',
+       'distance_point_line', 'project_point_on_line',
+      );
 
 {
     my @r = (0,0,1,1);
@@ -84,6 +95,32 @@ use_ok('VectorUtil', 'intersect_rectangles', 'normalize_rectangle',
 			     [5,6,7,8],
 			     [0,0,0,0],
 			    ), [-2,-3,7,8], 'combine_bboxes');
+}
+
+{
+    my @point = (1,1);
+    my @line = (0,0, 0,2);
+    is_float distance_point_line(@point,@line), 1, 'distance_point_line check';
+
+    my @projected_point = project_point_on_line(@point,@line);
+    is_float Strassen::Util::strecke([@point], [@projected_point]), 1, 'project_point_on_line + distance';
+
+    if ($do_bench) {
+	require Benchmark;
+	Benchmark::cmpthese(-1, {
+				 'distance_point_line' => sub {
+				     distance_point_line(@point,@line);
+				 },
+				 'project_point_on_line + distance' => sub {
+				     my @projected_point = project_point_on_line(@point,@line);
+				     Strassen::Util::strecke([@point], [@projected_point]);
+				 }
+				});
+	## Result on FreeBSD 8.0, perl 5.8.9:
+	#                                      Rate project_point_on_line + distance distance_point_line
+	# project_point_on_line + distance  86993/s                               --                -31%
+	# distance_point_line              125604/s                              44%                  --
+    }
 }
     
 __END__
