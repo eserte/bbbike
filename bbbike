@@ -19483,8 +19483,8 @@ sub add_new_point {
     my($rx, $ry) = split(/,/, $point);
     my($tx, $ty) = transpose($rx, $ry);
     my($pos, @points) = nearest_line_points_xy($tx, $ty);
-    # Korrektur des mittleren Punktes
-    $points[1] = [$rx, $ry];
+    # Korrektur des mittleren Punktes (-> index=0 !!!)
+    $points[0] = [$rx, $ry];
     if (@points) {
 	$net->add_net($pos, @points);
     }
@@ -19493,7 +19493,7 @@ sub add_new_point {
 	    status_message(Mfmt("Der Punkt <%s> existiert im Netz nicht und kann auch nicht erzeugt werden", $point), "die");
 	}
     }
-    join(",", @{ $points[1] });
+    join(",", @{ $points[0] });
 }
 
 sub nearest_line_points_xy {
