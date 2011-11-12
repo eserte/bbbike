@@ -43,7 +43,7 @@ use BBBikeUtil qw(is_in_path);
 @EXPORT = (qw(get_std_opts set_user_agent do_display tidy_check
 	      xmllint_string xmllint_file gpxlint_string gpxlint_file kmllint_string
 	      eq_or_diff is_long_data like_long_data unlike_long_data
-	      like_html unlike_html),
+	      like_html unlike_html is_float),
 	   @opt_vars);
 
 # Old logfile
@@ -477,6 +477,34 @@ if (!eval {
 			   $info);
 	}
     };
+}
+
+# Taken from Tk
+sub is_float ($$;$) {
+    my($value, $expected, $testname) = @_;
+    require POSIX;
+    local $Test::Builder::Level = $Test::Builder::Level+1;
+    my @value    = split /[\s,]+/, $value;
+    my @expected = split /[\s,]+/, $expected;
+    my $ok = 1;
+    for my $i (0 .. $#value) {
+	if ($expected[$i] =~ /^[\d+-]/) {
+	    if (abs($value[$i]-$expected[$i]) > &POSIX::DBL_EPSILON) {
+		$ok = 0;
+		last;
+	    }
+	} else {
+	    if ($value[$i] ne $expected[$i]) {
+		$ok = 0;
+		last;
+	    }
+	}
+    }
+    if ($ok) {
+	Test::More::pass($testname);
+    } else {
+	Test::More::is($value, $expected, $testname); # will fail
+    }
 }
 
 1;
