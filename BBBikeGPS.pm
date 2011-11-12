@@ -1475,6 +1475,7 @@ sub tk_interface {
     my $gps_route_info = $args{-gpsrouteinfo} or die "-gpsrouteinfo arg is missing";
     my $oklabel = $args{-oklabel};
     my $file = delete $args{-file}; # only set if saving into a file
+    my $uniquewpts = exists $args{-uniquewpts} ? delete $args{-uniquewpts} : 1;
 
     if (!defined $gps_route_info->{Name} || $gps_route_info->{Name} eq '') {
 	# use filename, if existing
@@ -1515,18 +1516,23 @@ sub tk_interface {
 			       -vcmd => sub { $_[0] =~ /^\d*$/ }),
 		 -sticky => "w");
     }
-    Tk::grid($t->Label(-text => M"Waypoint-Suffix"),
-	     $t->Entry(-textvariable => \$gps_route_info->{WptSuffix}),
-	     -sticky => "w");
-    Tk::grid($t->Checkbutton(-text => M"Suffix nur bei vorhandenen Waypoints verwenden",
-			     -variable => \$gps_route_info->{WptSuffixExisting}),
-	     -sticky => "w", -columnspan => 2);
-    if ($self->can('reset_waypoint_cache')) {
-	Tk::grid($t->Button(-text => M"Waypoints-Cache zurücksetzen",
-			    -command => sub {
-				$self->reset_waypoint_cache;
-			    }),
+    if ($uniquewpts) {
+	Tk::grid($t->Label(-text => M"Waypoint-Suffix"),
+		 $t->Entry(-textvariable => \$gps_route_info->{WptSuffix}),
+		 -sticky => "w");
+	Tk::grid($t->Checkbutton(-text => M"Suffix nur bei vorhandenen Waypoints verwenden",
+				 -variable => \$gps_route_info->{WptSuffixExisting}),
 		 -sticky => "w", -columnspan => 2);
+	if ($self->can('reset_waypoint_cache')) {
+	    Tk::grid($t->Button(-text => M"Waypoints-Cache zurücksetzen",
+				-command => sub {
+				    $self->reset_waypoint_cache;
+				}),
+		     -sticky => "w", -columnspan => 2);
+	}
+    } else {
+	$gps_route_info->{WptSuffix} = '';
+	$gps_route_info->{WptSuffixExisting} = 0;
     }
     if ($self->has_gps_settings && defined &main::optedit) {
 	Tk::grid($t->Button(-text => M"GPS-Einstellungen",
@@ -1657,7 +1663,7 @@ sub tk_interface {
 
     sub tk_interface {
 	my($self, %args) = @_;
-	BBBikeGPS::tk_interface($self, %args);
+	BBBikeGPS::tk_interface($self, %args, -uniquewpts => 0);
     }
 
     sub convert_from_route {
@@ -1672,7 +1678,7 @@ sub tk_interface {
 	require Route::Simplify;
 	require Strassen::Core;
 	require Strassen::GPX;
-	my $simplified_route = $route->simplify_for_gps(%args, -leftrightpair => ['<- ', ' ->']);
+	my $simplified_route = $route->simplify_for_gps(%args, -uniquewpts => 0, -leftrightpair => ['<- ', ' ->']);
 	my $s = Strassen::GPX->new;
 	$s->set_global_directives({ map => ["polar"] });
 	for my $wpt (@{ $simplified_route->{wpt} }) {
