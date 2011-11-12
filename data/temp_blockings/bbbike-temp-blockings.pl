@@ -3494,10 +3494,11 @@ EOF
 userdel	2::inwork -19908,17940 -18793,18169
 EOF
      },
-     { from  => 1291417200, # PERIODISCH! 2. und 3. Advent # früher: 1165660181, # 2006-12-09 11:29
-       until => 1291590000, # PERIODISCH! 2. und 3. Advent # früher: 1165708800, # 2006-12-10 01:00
-       text  => 'Lichtenrader Weihnachtsmarkt: Bahnhofstr. (Lichtenrade) in beiden Richtungen zwischen Steinstr. und Goltzstr gesperrt (04.12.2010 bis 05.12.2010) ',
+     { from  => 1322301600, # 2011-11-26 11:00, PERIODISCH! an allen Adventssamstagen
+       until => 1322335800, # 2011-11-26 20:30, PERIODISCH! an allen Adventssamstagen
+       text  => 'Lichtenrader Weihnachtsmarkt: Bahnhofstr. (Lichtenrade) in beiden Richtungen zwischen Steinstr. und Goltzstr gesperrt (alle Adventssamstage von 11:00 bis 20:30) ',
        type  => 'gesperrt',
+       source_id => 'http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20111109.1040.362258.html',
        data  => <<EOF,
 userdel	q4 10310,-2136 10453,-2133 10509,-2131 10631,-2130 10747,-2129 10983,-2116
 EOF
@@ -19891,6 +19892,24 @@ EOF
        source_id => 'http://www.berlin.de/ba-steglitz-zehlendorf/presse/archiv/20111030.0735.361648.html',
        data  => <<EOF,
 userdel	2::inwork -1245,4414 -1185,4450 -1139,4575 -1134,4706 -971,4971 -724,5080 -604,5228
+EOF
+     },
+     { from  => 1321138800, # 2011-11-13 00:00
+       until => 1321397999, # 2011-11-15 23:59
+       text  => 'Nöldnerstraße am 14. und 15. November gesperrt (Bauarbeiten)',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-lichtenberg/presse/archiv/20111110.1420.362326.html',
+       data  => <<EOF,
+userdel	q4::inwork 15272,10790 15388,10758 15433,10765 15681,10801
+EOF
+     },
+     { from  => 1321398000, # 2011-11-16 00:00
+       until => 1322866799, # 2011-12-02 23:59
+       text  => 'Sperrung der Straße Im Erpelgrund zwischen der Straße An der Schneise bis Dambockstraße in östlicher Richtung, vom 17. November 2011 bis voraussichtlich 2. Dezember 2011 ',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20111110.1620.362354.html',
+       data  => <<EOF,
+userdel	q4::inwork -629,21975 -428,21933
 EOF
      },
     );
