@@ -74,8 +74,8 @@ use GPS::Util qw(eliminate_umlauts);
 	if ($self->{waypointcharset} && $self->{waypointcharset} eq 'simpleascii') {
 	    $name = uc($name); # Garmin etrex venture supports only uppercase chars
 	}
-	$name =~ s{^\s}{.}; # Garmin does not like waypoint names starting with a space
-	$name =~ s{\s$}{.}; # ... and ending with a space
+	$name =~ s{^\s}{}; # Garmin does not like waypoint names starting with a space
+	$name =~ s{\s$}{}; # ... and ending with a space
 	$name;
     }
 }
@@ -116,6 +116,7 @@ sub Route::simplify_for_gps {
     # fallback to "(- " and " -)". But gpsbabel may use "<" and ">" or
     # so.
     my $leftrightpair = $args{-leftrightpair} || ["(- ", " -)"];
+    my $uniquewpts = exists $args{-uniquewpts} ? $args{-uniquewpts} : 1;
 
     my %crossings;
     if ($str) {
@@ -294,8 +295,10 @@ sub Route::simplify_for_gps {
 	}
 
 	my $ident = $cmptwpt->shorten;
-	if ($ident =~ m{^\s*$} # it seems that Garmin does not like waypoint names with just spaces
-	    || exists $idents{$ident} || exists $waypointscache->{$ident}) {
+	if ($uniquewpts && (
+			    $ident =~ m{^\s*$} # it seems that Garmin does not like waypoint names with just spaces
+			    || exists $idents{$ident} || exists $waypointscache->{$ident}
+			   )) {
 	TRY: {
 		if ($waypointcharset ne 'simpleascii') {
 		    my $local_ident_counter = 1;
