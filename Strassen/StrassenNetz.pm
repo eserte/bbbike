@@ -1261,11 +1261,6 @@ sub search {
 	$canvas->delete("visual");
     }
 
-    if (!$args{'ExtraResults'} && !$args{AsObj}) {
-	# nur Routenpunkte ohne Streckenlänge etc. zurückgegebn
-	$args{OnlyPath} = 1;
-    }
-
     if ($sc->Algorithm) {
 	if ($sc->Algorithm =~ /^(dip-|DBI-)A\*$/) {
 	    push @INC, "$FindBin::RealBin/diplom/code";
@@ -1340,7 +1335,6 @@ EOF
     }
 
     my @res;
-    # XXX Via, All und !OnlyPath funktioniert nicht zusammen...
     if (exists $args{Via} and @{$args{Via}}) {
 	my(@route) = ($from, @{$args{Via}}, $to);
 	my @path;

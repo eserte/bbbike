@@ -3294,9 +3294,6 @@ sub search_coord {
     my %extra_args;
     if (@$via_array) {
 	$extra_args{Via} = $via_array;
-	# siehe Kommentar in search: Via und All beiﬂen sich
-    } else {
-	$extra_args{All} = 1;
     }
 
     # Tragen vermeiden
