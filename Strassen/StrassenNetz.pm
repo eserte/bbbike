@@ -116,18 +116,28 @@ sub get_cachefile {
 # Quellen sein.
 # Returns nothing meaningful
 ### AutoLoad Sub
-sub source {
+sub set_source {
     my($self, @source) = @_;
-    push(@{$self->{Source}}, @source);
+    $self->{Source} = \@source;
+}
+
+sub get_source {
+    my($self) = @_;
+    @{ $self->{Source} || [] };
 }
 
 # Markiert die angegebenen Straßen-Abkürzungen als Quell-Objekte für
 # dieses StrassenNetz
 # Returns nothing meaningful
 ### AutoLoad Sub
-sub source_abk {
+sub set_source_abk {
     my($self, @source_abk) = @_;
-    push(@{$self->{SourceAbk}}, @source_abk);
+    $self->{SourceAbk} = \@source_abk;
+}
+
+sub get_source_abk {
+    my($self) = @_;
+    @{ $self->{SourceAbk} || [] };
 }
 
 ### AutoLoad Sub

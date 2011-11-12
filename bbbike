@@ -13671,23 +13671,33 @@ sub find_below {
 
 # Similar to find_below, but use a list of regexes and restrict to
 # a list of tag positions.
+#
+# The position is determined by the optional argument -cxy => [$cx,$cy],
+# or the position of the current canvas event.
 sub find_below_rx {
-    my($c, $allowed_rx_tags, $tag_pos, $forbidden_rx_tags) = @_;
-    my $e = $c->XEvent;
-    my($xx, $yy) = ($c->canvasx($e->x), $c->canvasy($e->y));
-    my(@items) = $c->find(overlapping => $xx-1, $yy-1, $xx+1, $yy+1);
+    my($c, $allowed_tags_rxs, $tag_pos, $forbidden_tags_rxs, %args) = @_;
+    my $cxy = delete $args{-cxy};
+    warn "ERROR: Unhandled args: " . join(" ", %args) if %args; # XXX consider to make this a die()
+    my($cx,$cy);
+    if ($cxy) {
+	($cx, $cy) = @$cxy;
+    } else {
+	my $e = $c->XEvent;
+	($cx, $cy) = ($c->canvasx($e->x), $c->canvasy($e->y));
+    }
+
+    my(@items) = $c->find(overlapping => $cx-1, $cy-1, $cx+1, $cy+1);
     # Now using "reverse", so top-most items are preferred
-    # XXX Hopefully this change does not break anything.
  ITEM:
     foreach my $item (reverse @items) {
 	my(@tags) = $c->gettags($item);
 	my @restricted_tags = $tag_pos ? @tags[@$tag_pos] : @tags;
 	my $ok = 0;
 	for my $tag (@restricted_tags) {
-	    for my $rx (@$allowed_rx_tags) {
+	    for my $rx (@$allowed_tags_rxs) {
                 if ($tag =~ /$rx/) {
-		    if ($forbidden_rx_tags) {
-			for my $frx (@$forbidden_rx_tags) {
+		    if ($forbidden_tags_rxs) {
+			for my $frx (@$forbidden_tags_rxs) {
 			    if ($tag =~ /$frx/) {
 				next ITEM;
 			    }
@@ -18326,8 +18336,8 @@ sub make_net {
 	    $net = new StrassenNetz $multistrassen;
 	}
 
-	$net->source(@net_source);
-	$net->source_abk(@net_source_abk);
+	$net->set_source(@net_source);
+	$net->set_source_abk(@net_source_abk);
 
 	my $make_net_all = sub {
 	    if (defined $global_search_args{Algorithm} &&
@@ -19529,32 +19539,38 @@ die "too many loops, please report, line " . __LINE__ if ($safe_loop++ > 100);
 	    $find = $find[$find_i];
 	    $find_i++;
 	}
-	my @tags = $c->gettags($find);
-        if ($net_type eq "r") {
-	    if ($tags[0] eq 'r') {
-		return nearest_line_points($x, $y, @tags); # XXX
-	    }
-	} elsif ($net_type eq "us") {
-	    if ($tags[0] =~ /^[ub]$/) {
-		return nearest_line_points($x, $y, @tags); # XXX
-	    }
-	} elsif ($net_type eq "rus") {
-	    if ($tags[0] =~ /^[ubr]$/) {
-		return nearest_line_points($x, $y, @tags); # XXX
-	    }
-	} elsif ($net_type eq 'wr') {
-	    if ($tags[0] eq 'wr') {
-		return nearest_line_points($x, $y, @tags); # XXX
-	    }
-	} elsif ($net_type eq 's-car') {
-	    if (($tags[0] =~ /^[sSlL]$/ || $tags[0] eq 'sBAB') && !grep { /^[sSlL]-label/ || /^sBAB-label/ } @tags) {
-		return nearest_line_points($x, $y, @tags); # XXX
-	    }
-	} else {
-	    if ($tags[0] =~ /^[sSlL]$/ && !grep { /^[sSlL]-label/ } @tags) {
-		return nearest_line_points($x, $y, @tags); # XXX
-	    }
+	my(@tags) = $c->gettags($find);
+	my $item_type_by_tag = $tags[0];
+	if (grep { $item_type_by_tag eq $_ } $net->get_source_abk) {
+	    return nearest_line_points($x, $y, @tags);
 	}
+
+#XXX del:
+#        if ($net_type eq "r") {
+#	    if ($tags[0] eq 'r') {
+#		return nearest_line_points($x, $y, @tags); # XXX
+#	    }
+#	} elsif ($net_type eq "us") {
+#	    if ($tags[0] =~ /^[ub]$/) {
+#		return nearest_line_points($x, $y, @tags); # XXX
+#	    }
+#	} elsif ($net_type eq "rus") {
+#	    if ($tags[0] =~ /^[ubr]$/) {
+#		return nearest_line_points($x, $y, @tags); # XXX
+#	    }
+#	} elsif ($net_type eq 'wr') {
+#	    if ($tags[0] eq 'wr') {
+#		return nearest_line_points($x, $y, @tags); # XXX
+#	    }
+#	} elsif ($net_type eq 's-car') {
+#	    if (($tags[0] =~ /^[sSlL]$/ || $tags[0] eq 'sBAB') && !grep { /^[sSlL]-label/ || /^sBAB-label/ } @tags) {
+#		return nearest_line_points($x, $y, @tags); # XXX
+#	    }
+#	} else {
+#	    if ($tags[0] =~ /^[sSlL]$/ && !grep { /^[sSlL]-label/ } @tags) {
+#		return nearest_line_points($x, $y, @tags); # XXX
+#	    }
+#	}
 	if ($stage eq 'closest') {
 	    $start = $find;
 	    $seen{$find}++;
@@ -19567,9 +19583,15 @@ sub nearest_line_points_mouse {
     my $e = $c->XEvent;
     my($x, $y) = ($c->canvasx($e->x), $c->canvasy($e->y));
     @tags = $c->gettags('current') if !@tags;
-    if (grep { /-label/ || $_ eq 'show' } @tags) { # ignore labels and show marker
-	(undef, @tags) = find_below_rx($c, [q{.}], undef, [q{current}, q{show}, q{-label}]);
+    @tags = grep { $_ ne 'current' } @tags;
+
+    my @forbidden_tags_rxs = ('^show$', '^route$', '-label'); # ignore labels and show marker etc.
+    my $forbidden_tags_qr = join("|", @forbidden_tags_rxs);
+    $forbidden_tags_qr = qr{$forbidden_tags_qr};
+    if (grep { $_ =~ $forbidden_tags_qr } @tags) {
+	(undef, @tags) = find_below_rx($c, [q{.}], undef, \@forbidden_tags_rxs);
     }
+
     my($pos, @points);
     eval {
 	($pos, @points) = nearest_line_points($x, $y, @tags);
