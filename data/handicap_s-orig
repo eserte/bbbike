@@ -42,35 +42,30 @@ Behrenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8861,12125 9054,1215
 #XXX del --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1107/nachricht4409.html ---#: next_check: 2011-12-31 --- #: XXX evtl. gehen die Bauarbeiten bis Ende 2012 (mit Unterbrechungen) weiter --- Behrenstr.: Bauarbeiten, Fahrbahn teilweise gesperrt	q4::inwork 9373,12197 9164,12172
 #XXX del --- #: last_checked: 2011-08-19 --- Oberwallstr.: Bauarbeiten, Einbahnstraße	q4::inwork; 9925,11947 9913,12068
 # 
-#: last_checked: 2011-10-20
+#: last_checked: 2011-11-13
 #: XXX nach den Bauarbeiten vielleicht besserer Asphalt? -> qualitaet_s-orig
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9890,12161 9875,12257 9869,12297
 # 
 #: last_checked: 2011-10-21
 Jerusalemer Str.: Bauarbeiten, Einbahnstraße	q3::inwork; 9878,11857 9892,11752
 # 
-#XXX del --- #: last_checked: 2011-06-12 --- Neumannsgasse: Bauarbeiten, Fahrbahn gespert	q4::inwork 10284,12113 10383,12191
-# 
-#: last_checked: 2011-10-23
+#: last_checked: 2011-11-13
 #: next_check: 2011-12-15
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 9475,12365 9462,12481 9454,12558
 # 
-#: last_checked: 2011-10-23
+#: last_checked: 2011-11-13
 #: next_check: 2011-12-15
 Universitätsstr.: wegen Bauarbeiten Richtung Unter den Linden gesperrt	q4::inwork; 9580,12581 9601,12380
 # 
-#: last_checked: 2011-10-30
-#: next_check: 2011-12-01
+#: last_checked: 2011-11-13 vvv
+#: next_check: 2012-01-01 vvv
 Matkowskystr., Revaler Str.: Bauarbeiten, Einbahnstraße	q4::inwork; 14530,11137 14509,11060 14442,11101
-#:
-#: last_checked: 2011-10-30 vvv
-#: next_check: 2011-12-01 vvv
 Helmerdingstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 14465,11195 14442,11101
 #: next_check: ^^^
 #: last_checked: ^^^
 # 
-#: last_checked: 2011-08-19
-#: next_check: 2012-01-01
+#: last_checked: 2011-11-13
+#: next_check: 2012-02-01
 Rathausstr.: Baustelle vor dem Roten Rathaus, eng	q4::inwork 10601,12521 10704,12595
 # 
 #XXX del --- #: last_checked: 2011-02-27 --- #: next_check: 2011-07-15 --- Am Carlsgarten: Bauarbeiten	q4::inwork 19460,7954 19372,8012 19334,8046
@@ -89,9 +84,9 @@ Alte Jakobstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10436,11344 10244,11160
 #: by: http://www.svendsimdorn.de/index.php?ka=1&ska=1&idx=26540 (Fertigstellung Spätsommer 2012)
 Elcknerplatz, Borgmannstr.: Bauarbeiten, Einbahnstraße	q4::inwork; 22428,6063 22478,6041 22544,6037 22539,5956
 # 
-#: last_checked: 2011-09-17
-#: next_check: 2011-12-31
-Kantstr.: Bauarbeiten am Zoofenster	q4::inwork 5494,10973 5613,10963 5652,11004
+#: last_checked: 2011-11-13
+#: next_check: 2011-12-15
+Kantstr.: Bauarbeiten am Zoofenster	q4::inwork 5613,10963 5652,11004
 #: temporary ^^^
 ######################################################################
 #: XXX es ist zu erwarten, dass hier der Wuhlewanderweg verbessert wird: vvv
@@ -115,7 +110,7 @@ Blücherplatz: Fußgängerverkehr	q3 9599,10175 9631,10142
 #: note: in Südrichtung Bushaltestelle benutzen:
 Hallesches Tor: reger Fußgängerverkehr	q3; 9599,10175 9593,10238
 Hallesches Tor: reger Fußgängerverkehr	q3 9593,10238 9590,10262
-Mehringplatz: Fußgänger und Radfahrer teilen sich den Weg	q1 9590,10262 9508,10320 9509,10391 9580,10434 9644,10404 9662,10345 9646,10301 9590,10262
+Mehringplatz: Fußgänger und Radfahrer teilen sich den Weg	q1 9590,10262 9544,10280 9518,10326 9527,10389 9580,10434 9649,10408 9676,10346 9668,10306 9644,10281 9590,10262
 Friedrichstr. (am Mehringplatz): Fußgänger und Radfahrer teilen sich den Weg	q1 9580,10434 9566,10566
 Gorkistr.: reger Fußgängerverkehr (Fußgängerzone)	q3 2049,20292 2116,20314 2295,20358
 #: by: Thomas Heuving:
@@ -285,7 +280,7 @@ Monbijoupark - Henriette-Herz-Platz: Fußgänger	q1 9977,12912 10132,12941
 Monbijoubrücke: Fußgänger	q1 9707,12974 9680,12916 9661,12876
 Garnisonkirchplatz: Straßenbahn	q2 10309,12854 10255,12959
 Fürther Str.: Gehweg	q2 5773,10318 5808,10284
-(Zossener Brücke - Mehringplatz): Gehweg	q1 9873,10285 9646,10301
+(Zossener Brücke - Mehringplatz): Gehweg	q1 9873,10285 9668,10306
 #: note: nach Einwand von britta tr. (Message-ID: <43BA64D8.5030001@charite.de>) von q2 auf q3 heruntergestuft
 (Richard-Wagner-Platz - Schustehrusstr.): Gehweg	q3 3763,12279 3701,12279
 Goerdelersteg: enge wendelförmige Rampen	q3 3619,14183 3601,14284 3595,14277

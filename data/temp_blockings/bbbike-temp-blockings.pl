@@ -17204,12 +17204,10 @@ EOF
      },
      { from  => undef, # 
        until => undef, #
-       text  => 'Friedrich-Ebert-Platz: bei Bundestagssitzungen gesperrt, mittlerweile möglicherweise permanent gesperrt',
+       text  => 'Friedrich-Ebert-Platz: bei Bundestagssitzungen gesperrt',
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
-#: XXX wo gibt es Informationen hierzu?
-#: by: Kai Wagner (permanente Sperrung)
 	2::temp 8554,12593 8540,12420
 EOF
      },
@@ -19101,7 +19099,7 @@ EOF
        data  => <<EOF,
 #: by: wosch
 #: confirmed_by: srt
-#: last_checked: 2011-08-31
+#: last_checked: 2011-11-13
 #: note: eigentlich Radfahren auf der Friedrichsbrücke jetzt auch verboten
 userdel	q4::inwork; 10166,12777 10132,12941
 EOF
@@ -19910,6 +19908,24 @@ EOF
        source_id => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20111110.1620.362354.html',
        data  => <<EOF,
 userdel	q4::inwork -629,21975 -428,21933
+EOF
+     },
+     { from  => 1320590700, # 2011-11-06 15:45
+       until => 1322235960, # 2011-11-25 16:46
+       text  => 'Köpenicker Str. (Altglienicke): Baustelle, Straße vollständig gesperrt in beiden Richtungen zwischen Semmelweisstr. und Bohnsdorfer Weg, 07.11.2011 15:45 Uhr bis 25.11.2011 16:46 Uhr',
+       type  => 'handicap',
+       source_id => 'IM_018140',
+       data  => <<EOF,
+userdel	q4::inwork 19806,1903 19771,1793 19728,1660 19679,1571
+EOF
+     },
+     { from  => 1320987600, # 2011-11-11 06:00
+       until => 1325347200, # 2011-12-31 17:00
+       text  => 'Luisenstr. (Mitte): Baustelle, Straße vollständig gesperrt in beiden Richtungen zwischen Invalidenstr. und Hannoversche Str., 12.11.2011 06:00 Uhr bis 31.12.2011 17:00 Uhr',
+       type  => 'handicap',
+       source_id => 'IM_018151',
+       data  => <<EOF,
+userdel	q4::inwork 8635,13580 8626,13641 8619,13689
 EOF
      },
     );

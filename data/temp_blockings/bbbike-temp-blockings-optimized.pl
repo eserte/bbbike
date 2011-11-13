@@ -1924,12 +1924,10 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        {
          'until' => undef,
          'recurring' => 1,
-         'text' => 'Friedrich-Ebert-Platz: bei Bundestagssitzungen gesperrt, mittlerweile möglicherweise permanent gesperrt',
+         'text' => 'Friedrich-Ebert-Platz: bei Bundestagssitzungen gesperrt',
          'from' => undef,
          'id' => 2021,
-         'data' => '#: XXX wo gibt es Informationen hierzu?
-#: by: Kai Wagner (permanente Sperrung)
-	2::temp 8554,12593 8540,12420
+         'data' => '	2::temp 8554,12593 8540,12420
 ',
          'type' => 'gesperrt'
        },
@@ -2323,7 +2321,7 @@ userdel	q4::inwork 425,8766 490,8716
          'id' => 2219,
          'data' => '#: by: wosch
 #: confirmed_by: srt
-#: last_checked: 2011-08-31
+#: last_checked: 2011-11-13
 #: note: eigentlich Radfahren auf der Friedrichsbrücke jetzt auch verboten
 userdel	q4::inwork; 10166,12777 10132,12941
 ',
@@ -2568,16 +2566,7 @@ userdel	q4::inwork 18286,11275 18059,11248
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'http://www.berlin.de/ba-pankow/presse/archiv/20111028.1105.361658.html',
-         'until' => 1321138799,
-         'text' => 'Vollsperrung der Oderberger Straße vom 7. November 2011 bis 12. November 2011',
-         'from' => 1320534000,
-         'id' => 2301,
-         'data' => 'userdel	q4::inwork 10723,14772 10401,14963
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'INKO_110898',
          'until' => 1323273600,
@@ -2615,6 +2604,26 @@ userdel	q4::inwork 18286,11275 18059,11248
          'from' => 1321398000,
          'id' => 2305,
          'data' => 'userdel	q4::inwork -629,21975 -428,21933
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_018140',
+         'until' => 1322235960,
+         'text' => 'Köpenicker Str. (Altglienicke): Baustelle, Straße vollständig gesperrt in beiden Richtungen zwischen Semmelweisstr. und Bohnsdorfer Weg, 07.11.2011 15:45 Uhr bis 25.11.2011 16:46 Uhr',
+         'from' => 1320590700,
+         'id' => 2306,
+         'data' => 'userdel	q4::inwork 19806,1903 19771,1793 19728,1660 19679,1571
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_018151',
+         'until' => 1325347200,
+         'text' => 'Luisenstr. (Mitte): Baustelle, Straße vollständig gesperrt in beiden Richtungen zwischen Invalidenstr. und Hannoversche Str., 12.11.2011 06:00 Uhr bis 31.12.2011 17:00 Uhr',
+         'from' => 1320987600,
+         'id' => 2307,
+         'data' => 'userdel	q4::inwork 8635,13580 8626,13641 8619,13689
 ',
          'type' => 'handicap'
        }
