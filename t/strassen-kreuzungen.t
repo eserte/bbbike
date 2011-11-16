@@ -125,7 +125,7 @@ for my $kr ($kr1, $kr2) {
 
     # Wilhelmstr. -> Franz-Stampfer-Str.
     {
-	my %situation = situation_at_point_inorder($kr, qw(9404,10250 9388,10393 9509,10391));
+	my %situation = situation_at_point_inorder($kr, qw(9404,10250 9388,10393 9527,10389));
 	is($situation{action}, 'right', q{It's "right"});
     }
 
