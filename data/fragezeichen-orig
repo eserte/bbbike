@@ -9,13 +9,7 @@
 #: section ignorieren vvv
 #: section projektierte Radstreifen der Verkehrsverwaltung vvv
 #
-#: XXX: die ersten Meter in der Breiten Str. sind noch Baustelle ohne Radspuren
-#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0709/nachricht2788.html
-#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1004/nachricht3862.html Bauarbeiten werden im Oktober 2011 abgeschloßen sein
-#: XXX Auch wird sich die Straßenführung ändern und einige Zusatzknicke haben
-#: last_checked: 2011-11-13 (aber genauere Prüfung der Radstreifen notwendig)
-#: next_check: 2011-11-13
-Breite Str./Werderscher Markt	?::inwork 10281,12310 10170,12261 10109,12238 10091,12232 10035,12209 9972,12184
+#XXX del --- #: XXX: die ersten Meter in der Breiten Str. sind noch Baustelle ohne Radspuren --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0709/nachricht2788.html --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1004/nachricht3862.html Bauarbeiten werden im Oktober 2011 abgeschloßen sein --- #: XXX Auch wird sich die Straßenführung ändern und einige Zusatzknicke haben --- #: last_checked: 2011-11-13 (aber genauere Prüfung der Radstreifen notwendig) --- #: next_check: 2011-11-13 --- Breite Str./Werderscher Markt	?::inwork 10281,12310 10194,12258 10174,12284 10109,12238 10091,12232 10035,12209 9972,12184
 # 
 #: last_checked: 2011-09-24 (nicht ganz sicher, von der anderen Einschnittseite aus gesehen)
 #: next_check: 2012-01-01
@@ -539,6 +533,9 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 # die Datenbank aufgenommen werden sollen und somit nicht öffentlich sind.
 # Das heißt diese Strecken werden nicht bei einer erweiterten Suche aufgenommen
 # und dem CGI-Benutzer auch nicht präsentiert.
+# 
+#: XXX vgl. public imagery
+Dohnenstieg: liegt hier auch Kopfsteinpflaster?	? 2711,6698 2654,6706 2606,6708
 # 
 #: XXX kann man es schon in flaechen-orig einzeichnen?
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/50re.pdf/file?y=2011

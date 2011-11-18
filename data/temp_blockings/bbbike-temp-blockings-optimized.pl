@@ -1,6 +1,40 @@
-$#temp_blocking = 416;
+$#temp_blocking = 393;
 push @temp_blocking,
 (
+       {
+         'source_id' => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20111116.1015.362582.html',
+         'until' => 1325458800,
+         'text' => 'Weihnachtsmarkt an der Gedächtniskirche, vom 21.11.2011 bis 1.1.2012',
+         'from' => 1321743600,
+         'id' => 394,
+         'data' => '# sowieso schon mit q4 markiert, deshalb -> 2
+userdel	2::temp 5829,10964 5782,10884
+userdel	2::temp 5656,10876 5652,11004
+',
+         'type' => 'gesperrt'
+       },
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
        {
          'source_id' => 'http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20111109.1040.362258.html',
          'until' => 1322335800,
@@ -383,7 +417,20 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'http://www.berliner-weihnacht.de/',
+         'until' => 1324940399,
+         'text' => 'Nostalgischer Weihnachtsmarkt rund um das Opernpalais: der Bereich Oberwallstr., Niederlagstr., Am Schinkelplatz gesperrt, vom 23.11.-26.12.2010',
+         'from' => 1321916400,
+         'id' => 790,
+         'data' => 'userdel	2::temp 10008,12274 9994,12368
+userdel	2::temp 9943,12364 9961,12273 9972,12184
+userdel	2::temp 10010,12259 10035,12209
+userdel	2::temp 9852,12409 9869,12297 9875,12257 9890,12161
+userdel	2::temp 9961,12273 9875,12257
+',
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
@@ -2224,16 +2271,7 @@ userdel	q4::inwork 425,8766 490,8716
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'http://www.potsdam.de/cms/beitrag/10078717/1191938/',
-         'until' => 1321311600,
-         'text' => 'Leiblstraße: Für die Einrichtung einer Baustelle für den Bau von Wohnhäusern wird die Leiblstraße bis voraussichtlich Mitte November von der Hans-Thoma-Straße in Richtung Hebbelstraße als Einbahnstraße ausgeschildert. ',
-         'from' => 1299353825,
-         'id' => 2183,
-         'data' => 'userdel	q4::inwork; -12545,-698 -12262,-612
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'source_id' => 'LS/O-SG33-F/11/022',
@@ -2276,16 +2314,7 @@ userdel	q4::inwork 425,8766 490,8716
        },
        undef,
        undef,
-       {
-         'source_id' => 'LS/O-SG33-E/10/214-10',
-         'until' => 1321311600,
-         'text' => 'Schenkenberg: L26: grundhafter Ausbau der L 26 Prenzlau - A20, 02.05.2011 bis 14.11.2011',
-         'from' => 1318630793,
-         'id' => 2199,
-         'data' => 'userdel	2::inwork 45393,105220 45906,105450 46581,105900 47587,106693
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2587,16 +2616,7 @@ userdel	q4::inwork 18286,11275 18059,11248
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'http://www.berlin.de/ba-lichtenberg/presse/archiv/20111110.1420.362326.html',
-         'until' => 1321397999,
-         'text' => 'Nöldnerstraße am 14. und 15. November gesperrt (Bauarbeiten)',
-         'from' => 1321138800,
-         'id' => 2304,
-         'data' => 'userdel	q4::inwork 15272,10790 15388,10758 15433,10765 15681,10801
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20111110.1620.362354.html',
          'until' => 1322866799,

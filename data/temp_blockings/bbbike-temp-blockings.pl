@@ -1394,7 +1394,7 @@ EOF
        text  => 'Weihnachtsmarkt am Schloßplatz, bis 25.12.2005',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 10170,12261 10063,12438
+userdel	2 10174,12284 10063,12438
 EOF
      },
      { from  => 1136837576, # 2006-01-09 21:12
@@ -2122,8 +2122,8 @@ userdel	2 9643,12127 9756,12139 9812,12145
 userdel	2 10091,12232 10035,12209 9972,12184
 userdel	2 9812,12145 9890,12161
 userdel	2 9890,12161 9972,12184
-userdel	2 10170,12261 10109,12238
-userdel	2 10170,12261 10281,12310
+userdel	2 10174,12284 10109,12238
+userdel	2 10174,12284 10194,12258 10281,12310
 EOF
      },
      { from  => 1118988173, # 2005-06-17 08:02
@@ -3292,14 +3292,15 @@ EOF
 userdel	1 -1668,-1709 -1715,-1767 -1921,-1931 -2049,-2165
 EOF
      },
-     { from  => 1290380400, # PERIODISCH! # früher: 1132411558, # 2005-11-19 15:45
-       until => 1294009199, # PERIODISCH! # früher: 1136069999, # 2005-12-31 23:59
-       text  => 'Weihnachtsmarkt an der Gedächtniskirche, vom 22. November 2010 bis 2. Januar 2011',
-       type  => 'handicap',
+     { from  => 1321743600, # 2011-11-20 00:00 # PERIODISCH!
+       until => 1325458800, # 2012-01-02 00:00 # PERIODISCH!
+       text  => 'Weihnachtsmarkt an der Gedächtniskirche, vom 21.11.2011 bis 1.1.2012',
+       type  => 'gesperrt',
+       source_id => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20111116.1015.362582.html',
        data  => <<EOF,
-userdel	q4 5829,10964 5782,10884
-userdel	q4 5656,10876 5652,11004
-#XXX del - userdel	q4; 5652,11004 5716,10978 5829,10964
+# sowieso schon mit q4 markiert, deshalb -> 2
+userdel	2::temp 5829,10964 5782,10884
+userdel	2::temp 5656,10876 5652,11004
 EOF
      },
      { from  => 1132606608, # 2005-11-21 21:56
@@ -6683,17 +6684,17 @@ EOF
 userdel	2::inwork -31993,-726 -32143,-211 -32153,-176
 EOF
      },
-     { from  => 1290380400, # PERIODISCH! # früher: 1163480400, # 2006-11-14 06:00
-       until => 1293404399, # PERIODISCH! # früher: 1167433200, # 2006-12-30 00:00
-       text  => 'Weihnachtsmarkt am Opernpalais: der Bereich Oberwallstr., Niederlagstr., Am Schinkelplatz gesperrt, vom 22.11.-26.12.2010',
+     { from  => 1321916400, # 2011-11-22 00:00 # PERIODISCH! # früher: 1163480400, # 2006-11-14 06:00
+       until => 1324940399, # 2011-12-26 23:59 # PERIODISCH! # früher: 1167433200, # 2006-12-30 00:00
+       text  => 'Nostalgischer Weihnachtsmarkt rund um das Opernpalais: der Bereich Oberwallstr., Niederlagstr., Am Schinkelplatz gesperrt, vom 23.11.-26.12.2010',
        type  => 'gesperrt',
+       source_id => 'http://www.berliner-weihnacht.de/',
        data  => <<EOF,
-userdel	2::temp 9994,12368 9943,12364 9934,12418
-userdel	2::temp 9996,12401 10058,12290 10008,12274 9994,12368 9996,12401 9984,12426
-userdel	2::temp 10058,12290 10091,12232
+userdel	2::temp 10008,12274 9994,12368
 userdel	2::temp 9943,12364 9961,12273 9972,12184
 userdel	2::temp 10010,12259 10035,12209
 userdel	2::temp 9852,12409 9869,12297 9875,12257 9890,12161
+userdel	2::temp 9961,12273 9875,12257
 EOF
      },
      { from  => 1163718000, # 2006-11-17 00:00
@@ -9420,7 +9421,7 @@ EOF
        data  => <<EOF,
 userdel	2::temp 9890,12161 9875,12257 9869,12297 9795,12293 9780,12401
 userdel	2::temp 9869,12297 9852,12409
-userdel	2::temp 9994,12368 9943,12364 9961,12273 9972,12184
+userdel	2::temp 9943,12364 9961,12273 9972,12184
 userdel	2::temp 9934,12418 9943,12364
 EOF
      },
@@ -10560,7 +10561,7 @@ EOF
        text  => 'Weihnachtsmarkt',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 10170,12261 10063,12438
+userdel	2::inwork 10174,12284 10063,12438
 EOF
      },
      { from  => 1195515915, # 2007-11-20 00:45
