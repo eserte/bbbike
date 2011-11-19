@@ -246,6 +246,9 @@ sub parse_street_type_nr {
     } elsif ($strname =~ /Köpenick-Route/i) {
 	$type = 'Koe';
 	$image = 'koepenick.png';
+    } elsif ($strname =~ m{^R1($|\s)}) {
+	$type = 'R1';
+	$image = 'R1.png';
     }
     if (defined $type) {
 	$do_round = 1;
