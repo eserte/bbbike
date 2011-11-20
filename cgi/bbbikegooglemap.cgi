@@ -336,7 +336,9 @@ EOF
 						null,
 						new google.maps.Point(16,16));
 	startGoalIconShadow = new google.maps.MarkerImage("$bbbikeroot/images/flag_shadow.png",
-						new google.maps.Size(45,24));
+						new google.maps.Size(45,24),
+						null,
+						new google.maps.Point(16,16));
     } else {
         startIcon = new GIcon(G_DEFAULT_ICON, "$bbbikeroot/images/flag2_bl_centered.png");
         startIcon.iconAnchor = new GPoint(16,16);
@@ -910,7 +912,7 @@ EOF
 	}
 	startPoint = point;
 	if (useV3) {
-	    startOverlay = new GMarker({position:startPoint,icon:startIcon,clickable:false});
+	    startOverlay = new GMarker({position:startPoint,icon:startIcon,shadow:startGoalIconShadow,clickable:false});
 	    startOverlay.setMap(map);
 	} else {
 	    var startOpts = {icon:startIcon, clickable:false}; // GMarkerOptions
@@ -923,7 +925,7 @@ EOF
 	removeGoalMarker();
 	goalPoint = point;
 	if (useV3) {
-	    goalOverlay = new GMarker({position:goalPoint,icon:goalIcon,clickable:false});
+	    goalOverlay = new GMarker({position:goalPoint,icon:goalIcon,shadow:startGoalIconShadow,clickable:false});
 	    goalOverlay.setMap(map);
 	} else {
 	    var goalOpts = {icon:goalIcon, clickable:false}; // GMarkerOptions
