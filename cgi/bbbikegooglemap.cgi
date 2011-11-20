@@ -145,7 +145,7 @@ sub run {
 			$maptype =~ /osm-mapnik/i ? 'mapnik_map' :
 			#$maptype =~ /osm-tah/i    ? 'tah_map' :
 			$maptype =~ /osm-cycle/i  ? 'cycle_map' :
-			$maptype =~ /bbbikeorg/i  ? 'bbbikeorg_map' :
+			$maptype =~ /bbbike_mapnik/i  ? 'bbbike_mapnik_map' :
 			'G_SATELLITE_MAP');
 
     my $mapmode = param("mapmode") || "";
@@ -737,8 +737,8 @@ EOF
 		   (!useV3 && map.getCurrentMapType() == cycle_map)) {
 	    mapType = "osm-cycle";
 	} else if ((useV3  && map.getMapTypeId() == "BBBike") ||
-		   (!useV3 && map.getCurrentMapType() == bbbikeorg_map)) {
-	    mapType = "bbbikeorg";
+		   (!useV3 && map.getCurrentMapType() == bbbike_mapnik_map)) {
+	    mapType = "bbbike_mapnik";
 	} else {
 	    mapType = "satellite";
 	}
@@ -1108,14 +1108,14 @@ EOF
 	});
         map.mapTypes.set("Cycle", cycle_map);
 
-        var bbbikeorg_map = new google.maps.ImageMapType({
-            getTileUrl:GetTileUrl_bbbikeorg,
+        var bbbike_mapnik_map = new google.maps.ImageMapType({
+            getTileUrl:GetTileUrl_bbbike_mapnik,
         	tileSize:new google.maps.Size(256, 256),
         	isPng:true,
         	name:"BBBike",
 		maxZoom:19
         });
-        map.mapTypes.set("BBBike", bbbikeorg_map);
+        map.mapTypes.set("BBBike", bbbike_mapnik_map);
 
         map.setOptions({mapTypeControlOptions:{mapTypeIds:[google.maps.MapTypeId.ROADMAP,
 							   google.maps.MapTypeId.SATELLITE,
@@ -1170,16 +1170,16 @@ EOF
             new GCopyrightCollection('Kartendaten &copy; $bbbike_copyright_year <a href="http://bbbike.de/cgi-bin/bbbike.cgi/info=1">Slaven Rezi&#x107;</a>');
         bbbikeCopyrightCollection.addCopyright(bbbikeCopyright);
     
-        var tilelayers_bbbikeorg = new Array();
-        tilelayers_bbbikeorg[0] = new GTileLayer(bbbikeCopyrightCollection, 0, 18);
-        tilelayers_bbbikeorg[0].getTileUrl = GetTileUrl_bbbikeorg;
-        tilelayers_bbbikeorg[0].isPng = function () { return true; };
-        tilelayers_bbbikeorg[0].getOpacity = function () { return 1.0; };
-        var bbbikeorg_map = new GMapType(tilelayers_bbbikeorg,
+        var tilelayers_bbbike_mapnik = new Array();
+        tilelayers_bbbike_mapnik[0] = new GTileLayer(bbbikeCopyrightCollection, 0, 18);
+        tilelayers_bbbike_mapnik[0].getTileUrl = GetTileUrl_bbbike_mapnik;
+        tilelayers_bbbike_mapnik[0].isPng = function () { return true; };
+        tilelayers_bbbike_mapnik[0].getOpacity = function () { return 1.0; };
+        var bbbike_mapnik_map = new GMapType(tilelayers_bbbike_mapnik,
             new GMercatorProjection(19), "BBBike",
-            { urlArg: 'bbbikeorg', linkColor: '#000000' });
+            { urlArg: 'bbbike_mapnik', linkColor: '#000000' });
         if (isBBBikeBeta) {
-            map.addMapType(bbbikeorg_map);
+            map.addMapType(bbbike_mapnik_map);
         }
     }
 
@@ -1205,7 +1205,7 @@ EOF
 	return "http://" + server + ".tile.opencyclemap.org/cycle/" + z + "/" + a.x + "/" + a.y + ".png";
     }
 
-    function GetTileUrl_bbbikeorg(a, z) {
+    function GetTileUrl_bbbike_mapnik(a, z) {
 	// select a random server
 	var list = ["a", "b", "c"];
 	var server = list [ parseInt( Math.random() * list.length ) ];
