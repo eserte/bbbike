@@ -19912,12 +19912,13 @@ userdel	q4::inwork -629,21975 -428,21933
 EOF
      },
      { from  => 1320590700, # 2011-11-06 15:45
-       until => 1322235960, # 2011-11-25 16:46
-       text  => 'Köpenicker Str. (Altglienicke): Baustelle, Straße vollständig gesperrt in beiden Richtungen zwischen Semmelweisstr. und Bohnsdorfer Weg, 07.11.2011 15:45 Uhr bis 25.11.2011 16:46 Uhr',
+       until => 1322667960, # 2011-11-30 16:46
+       text  => 'Köpenicker Str. (Altglienicke): Baustelle, Straße vollständig gesperrt in beiden Richtungen zwischen Semmelweisstr. und Rudower Str., 07.11.2011 15:45 Uhr bis 30.11.2011 16:46 Uhr ',
        type  => 'handicap',
        source_id => 'IM_018140',
        data  => <<EOF,
-userdel	q4::inwork 19806,1903 19771,1793 19728,1660 19679,1571
+userdel	q4::inwork 19806,1903 19771,1793
+#XXX del: userdel	q4::inwork 19771,1793 19728,1660 19679,1571
 EOF
      },
      { from  => 1320987600, # 2011-11-11 06:00

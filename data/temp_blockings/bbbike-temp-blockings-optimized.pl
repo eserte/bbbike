@@ -2629,11 +2629,12 @@ userdel	q4::inwork 18286,11275 18059,11248
        },
        {
          'source_id' => 'IM_018140',
-         'until' => 1322235960,
-         'text' => 'Köpenicker Str. (Altglienicke): Baustelle, Straße vollständig gesperrt in beiden Richtungen zwischen Semmelweisstr. und Bohnsdorfer Weg, 07.11.2011 15:45 Uhr bis 25.11.2011 16:46 Uhr',
+         'until' => 1322667960,
+         'text' => 'Köpenicker Str. (Altglienicke): Baustelle, Straße vollständig gesperrt in beiden Richtungen zwischen Semmelweisstr. und Rudower Str., 07.11.2011 15:45 Uhr bis 30.11.2011 16:46 Uhr ',
          'from' => 1320590700,
          'id' => 2306,
-         'data' => 'userdel	q4::inwork 19806,1903 19771,1793 19728,1660 19679,1571
+         'data' => 'userdel	q4::inwork 19806,1903 19771,1793
+#XXX del: userdel	q4::inwork 19771,1793 19728,1660 19679,1571
 ',
          'type' => 'handicap'
        },

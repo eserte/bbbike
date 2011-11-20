@@ -1851,8 +1851,10 @@ Askaloner Weg: enge Straße	q1 2402,24687 2407,24657 2384,24603 2311,24546 2262,2
 #: by: Sebastian Worel:
 #: corrected_by: srt/policy (q2 -> q1))
 Juttastr.: enge Straße	q1 1072,4542 949,4366
+# 
 #: by: Veit Böhnke:
-Herbert-Baum-Str.: enge Straße	q1 13826,16026 13869,15912 13904,15818 13943,15717 13964,15656 13989,15589
+#: corrected_by: srt (q1 -> q0-)
+Herbert-Baum-Str.: enge Straße	q0- 13826,16026 13869,15912 13904,15818 13943,15717 13964,15656 13989,15589
 # 
 #: by: Bernd Mahrin:
 #: corrected_by: srt/policy (q1 -> q0-)

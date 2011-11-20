@@ -38,12 +38,12 @@ Grunewaldstr. (Steglitz)	?::projected 4861,5581 4671,5697 4520,5793 4419,5842 42
 #: next_check: 2011-12-15
 Stülerstr.	?::projected 6825,11486 6716,11439 6692,11365 6679,11319 6630,11247 6606,11222
 #
-#: last_checked: 2011-09-17
-#: next_check: 2012-01-01
+#: last_checked: 2011-11-20
+#: next_check: 2012-02-01
 Danziger Str.	?::projected 11712,14868 11879,14771 11990,14714 12040,14688 12128,14640 12317,14535 12425,14459 12630,14306 12729,14227 12901,14093 12975,13990 13037,13897 13100,13803 13166,13707 13225,13620 13228,13615 13330,13468
 #
-#: last_checked: 2011-08-28
-#: next_check: 2012-01-01
+#: last_checked: 2011-11-20
+#: next_check: 2012-02-01
 Kniprodestr./Am Friedrichshain	?::projected 12901,14093 12784,13961 12695,13864 12654,13819 12571,13798 12403,13755 12204,13719 12161,13711 12038,13685 11868,13646 11785,13625 11762,13619 11706,13635
 #
 #: last_checked: 2011-06-16
@@ -113,7 +113,7 @@ Streitstr. (werden die vorhandenen Bordsteinradwege ersetzt)?	?::projected -3040
 Lindenstr.: Markierungsarbeiten für Radspuren haben begonnen	?::inwork 9805,10791 9829,10830 9935,11067 9973,11150 10020,11262
 # 
 #: last_checked: 2011-11-07
-#: next_check: 2012-01-15
+#: next_check: 2011-11-24
 Axel-Springer-Str.: Radstreifen nach den Bauarbeiten?	?::inwork 10116,11485 10136,11529 10166,11592
 #
 #: last_checked: 2011-07-09
@@ -452,7 +452,7 @@ Fürstenwalder Allee: Bau von Radverkehrsanlagen	? 29714,4461 29728,4435 29813,43
 #: XXX make public?
 Radwegbau Welzower Steig: wie ist die Qualität (Fahrbahnbeschaffenheit) des Radwegs?	?::inwork 6320,21777 6370,21689 6428,21648 6478,21652 6508,21646 6529,21620 6576,21414
 # 
-#: last_checked: 2011-08-28 vvv
+#: last_checked: 2011-11-20 vvv
 #: next_check: 2012-02-01 vvv
 Radverkehrsanlagen um den Knotenpunkt Weißenseer Weg/Konrad-Wolf-Str.	? 14960,14746 15052,14585 15164,14392
 Radverkehrsanlagen um den Knotenpunkt Weißenseer Weg/Konrad-Wolf-Str.	? 14754,14406 15052,14585 15272,14691
@@ -463,8 +463,8 @@ Radverkehrsanlagen um den Knotenpunkt Weißenseer Weg/Konrad-Wolf-Str.	? 14754,14
 #: next_check: 2012-02-01
 Suermondtstr.: Schaffung von Radverkehrsanlagen	? 16964,16042 16961,16042 16660,16165 16515,16207 16416,16236 16260,16282 16095,16331 15919,16383
 # 
-#: last_checked: 2011-05-01
-#: next_check: 2011-07-15
+#: last_checked: 2011-11-20 (am westlichen Ende)
+#: next_check: 2012-02-01
 Hansastr.: Schaffung von Radverkehrsanlagen	? 14650,15750 14823,15776 14934,15860 15124,16104 15187,16185 15432,16500
 # 
 #XXX --- del --- # XXX Radwegeverbindung im Zuge der TR7 Springpfuhl - Lea-Grundig-Str. --- #: last_checked: 2009-11-16 --- Puccinistr.: Asphaltierung	? 13700,15501 13776,15546
@@ -537,6 +537,8 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 # die Datenbank aufgenommen werden sollen und somit nicht öffentlich sind.
 # Das heißt diese Strecken werden nicht bei einer erweiterten Suche aufgenommen
 # und dem CGI-Benutzer auch nicht präsentiert.
+# 
+Durchfahrt am KPM: Qualität? Genaue Lage? Ist das vielleicht der Herbert-Lewin-Platz (Ausschilderung?)?	? 5707,11993 5571,11977 5598,12088
 # 
 #: XXX vgl. public imagery
 Dohnenstieg: liegt hier auch Kopfsteinpflaster?	? 2711,6698 2654,6706 2606,6708
