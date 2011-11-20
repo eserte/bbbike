@@ -1036,6 +1036,18 @@ EOF
 	}
     }
 
+    function updateCopyrights() {
+        if (map.getMapTypeId() == "BBBike") {
+ 	    copyrightNode.innerHTML = 'Kartendaten &copy; $bbbike_copyright_year <a href="http://bbbike.de/cgi-bin/bbbike.cgi/info=1">Slaven Rezi&#x107;</a>';
+        } else if (map.getMapTypeId() == "Mapnik" ||
+                   map.getMapTypeId() == "T\@H" ||
+                   map.getMapTypeId() == "Cycle") {
+ 	    copyrightNode.innerHTML = 'Kartendaten &copy; $osm_copyright_year <a href="http://www.openstreetmap.org/">OpenStreetMap</a> Contributors';
+        } else {
+ 	    copyrightNode.innerHTML = "";
+        }
+    }
+
     if (useV3) {
         var myOptions = {
             zoom: $zoom,
@@ -1043,6 +1055,19 @@ EOF
             mapTypeId: $self->{maptype}
         };
         var map = new google.maps.Map(document.getElementById("map"), myOptions);
+
+        // Create div for showing copyrights.
+        copyrightNode = document.createElement('div');
+        copyrightNode.id = 'copyright-control';
+        copyrightNode.style.fontSize = '11px';
+        copyrightNode.style.fontFamily = 'sans-serif';
+        copyrightNode.style.margin = '0 2px 2px 0';
+        copyrightNode.style.whiteSpace = 'nowrap';
+        copyrightNode.index = 0;
+        map.controls[google.maps.ControlPosition.BOTTOM_RIGHT].push(copyrightNode);
+        google.maps.event.addListener(map, 'idle', updateCopyrights);
+        google.maps.event.addListener(map, 'maptypeid_changed', updateCopyrights);
+
     } else if (GBrowserIsCompatible()) {
         var map = new GMap2(document.getElementById("map"));
 	//map.disableDoubleClickZoom();
