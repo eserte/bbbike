@@ -317,6 +317,18 @@ SYMBOL
 END
 
 SYMBOL
+  NAME 'cemetery_jewish'
+  TYPE PIXMAP
+  IMAGE "[% IMAGE_DIR %]/cemetery_jewish_bg.[% IMAGE_SUFFIX %]"
+END
+
+SYMBOL
+  NAME 'cemetery_muslim'
+  TYPE PIXMAP
+  IMAGE "[% IMAGE_DIR %]/cemetery_muslim_bg.[% IMAGE_SUFFIX %]"
+END
+
+SYMBOL
   NAME 'cemetery'
   TYPE PIXMAP
   IMAGE "[% IMAGE_DIR %]/cemetery_bg.[% IMAGE_SUFFIX %]"
@@ -509,6 +521,18 @@ LAYER
     EXPRESSION "F:Sport"
     NAME "Sportanlagen"
     COLOR 200 216 152
+  END
+  CLASS
+    EXPRESSION "F:Cemetery|religion:jewish"
+    NAME "Jüdischer Friedhof"
+    COLOR [% COLOR_MIDDLE_GREEN %]
+    SYMBOL "cemetery_jewish"
+  END
+  CLASS
+    EXPRESSION "F:Cemetery|religion:muslim"
+    NAME "Muslimischer Friedhof"
+    COLOR [% COLOR_MIDDLE_GREEN %]
+    SYMBOL "cemetery_muslim"
   END
   CLASS
     EXPRESSION "F:Cemetery"
