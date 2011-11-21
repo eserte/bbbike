@@ -280,6 +280,15 @@ sub add_underline {
     push @$or_ref, [$name, $cat];
 }
 
+my $cemetery_tag = sub {
+    my($tagref) = @_;
+    if ($tagref->{religion} && $tagref->{religion} =~ m{^(muslim|jewish)$}) {
+	"F:Cemetery|religion=$tagref->{religion}";
+    } else {
+	"F:Cemetery";
+    }
+};
+
 my $do_amenity = sub {
     my($is_area, $amenity, $tagref) = @_;
     my @or;
@@ -325,7 +334,7 @@ my $do_amenity = sub {
 	push @or, ['grenzuebergaenge', 'GU'];
     } elsif ($amenity eq 'grave_yard') {
 	if ($is_area) {
-	    push @or, ['sehenswuerdigkeit', 'F:Cemetery'];
+	    push @or, ['sehenswuerdigkeit', $cemetery_tag->($tagref)];
 	} else {
 	    push @or, ['sehenswuerdigkeit', 'SW'];
 	}
@@ -1405,7 +1414,7 @@ for my $osm_file (@osm_files) {
 		} elsif ($leisure eq 'stadium') {
 		    push @or, ["flaechen", "F:Sport"];
 		} elsif ($leisure eq 'cemetery') { # see below: landuse=cemetery
-		    push @or, ["flaechen", "F:Cemetery"];
+		    push @or, ["flaechen", $cemetery_tag->(\%tag)];
 		} else {
 		    $unhandled{"leisure=$leisure"}++;
 		}
@@ -1414,7 +1423,7 @@ for my $osm_file (@osm_files) {
 	    } elsif (exists $tag{'landuse'}) {
 		my $landuse = $tag{'landuse'};
 		if      ($landuse eq 'cemetery') {
-		    push @or, ["flaechen", "F:Cemetery"];
+		    push @or, ["flaechen", $cemetery_tag->(\%tag)];
 		} elsif ($landuse eq 'industrial') {
 		    push @or, ["flaechen", "F:Industrial"];
 		} elsif ($landuse eq 'railway') {
