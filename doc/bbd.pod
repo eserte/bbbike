@@ -960,7 +960,8 @@ Forests.
 
 =item C<Cemetery>
 
-Cemeteries.
+Cemeteries. May have a religion tag, e.g. C<< F:Cemetery|religion=muslim >>
+or C<< F:Cemetery|religion=jewish >>.
 
 =item C<Ae>
 
