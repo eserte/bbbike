@@ -5945,7 +5945,11 @@ sub define_item_attribs {
 	);
 
     %category_stipple =
-	('Cemetery' => 'crosses.xbm');
+	(
+	 'Cemetery' => 'crosses.xbm',
+	 'Cemetery|religion:jewish' => 'stars_of_david.xbm',
+	 'Cemetery|religion:muslim' => 'halfmoons.xbm',
+	);
 
     %line_width =
 	('s-NN'     => [1, 1, 2, 2, 4, 7],
@@ -6668,7 +6672,7 @@ sub generate_plot_functions {
 			if ($rest =~ $complex_IMG_qr) {
 			    $image = $1;
 			    $anchor = $2 if $2;
-			} else {
+			} elsif (!defined $stipple) {
 			    $stipple = $rest;
 			}
 		    }
