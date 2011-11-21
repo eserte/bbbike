@@ -675,10 +675,14 @@ sub handle_comments_scenic_like {
 sub handle_area_like {
     my($r, $dir) = @_;
 
-    if ($r->[Strassen::CAT] !~ m{^F:([^:]+)}) {
+    if ($r->[Strassen::CAT] !~ m{^F:([^:|]+)(.*)}) {
 	return; # should never happen
     }
-    my $cat = $1;
+    my($cat, $rest) = ($1, $2);
+    my %tags;
+    if ($rest =~ m{^\|(religion):(.*)$}) { # XXX could support more attributes here
+	$tags{$1} = $2;
+    }
     my($landuse, $leisure);
     $landuse = $cat_to_area_landuse{$cat};
     if (!defined $landuse) {
@@ -704,6 +708,11 @@ sub handle_area_like {
 	print $wayfh qq{  <tag k="landuse" v="$landuse" />\n};
     } else {
 	print $wayfh qq{  <tag k="leisure" v="$leisure" />\n};
+    }
+    while(my($k,$v) = each %tags) {
+	_xmlify($k);
+	_xmlify($v);
+	print $wayfh qq{  <tag k="$k" v="$v" />\n};
     }
     print $wayfh qq{</way>\n};
     $next_way_id++;
