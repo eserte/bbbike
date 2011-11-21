@@ -112,6 +112,8 @@ png-to-gif:	\
 		cal.gif \
 		car.gif \
 		cemetery_bg.gif \
+		cemetery_jewish_bg.gif \
+		cemetery_muslim_bg.gif \
 		church.gif \
 		droga_krajowa_table_16.gif \
 		droga_krajowa_table_32.gif \
