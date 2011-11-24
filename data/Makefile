@@ -304,9 +304,10 @@ wasserstrassen-lowres:  wasserstrassen wasserumland wasserumland2 \
 	mv -f $@~~ $@
 	-@$(READONLY) $@
 
+# XXX Temporary: remove the religion:... tag until backward compat issues are resolved
 flaechen: flaechen-orig
 	-@$(WRITEABLE) $@
-	$(CONVERT_ORIG) flaechen-orig > flaechen~
+	$(CONVERT_ORIG) flaechen-orig | perl -pe 's{\|religion:\S+}{}' > flaechen~
 	mv $@~ $@
 	-@$(READONLY) $@
 
