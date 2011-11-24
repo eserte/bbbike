@@ -21839,15 +21839,21 @@ sub get_image_for_any {
     my $p = $images->{$key};
     if (!$p) {
 	eval {
-	    # XXX Es ist nicht zugesichert, dass eine Datei für ein
-	    # p/str-Objekt existiert. Somit kann $p/str_file{$abk}
-	    # leer sein und der dirname-Aufruf meckern (fileparse()
-	    # need a valid pathname)
-	    my $abspath = $type eq 'p' ? $p_file{$abk} : $str_file{$abk};
-	    if ($abspath !~ m{^/}) { # XXX windows compat? Should check for all occurences of this pattern and replace by function!
-		$abspath = "$datadir/$abspath";
+	    my $abs_realfile;
+	    if ($realfile =~ m{^/}) {
+		$abs_realfile = $realfile;
+	    } else {
+		# XXX Es ist nicht zugesichert, dass eine Datei für ein
+		# p/str-Objekt existiert. Somit kann $p/str_file{$abk}
+		# leer sein und der dirname-Aufruf meckern (fileparse()
+		# need a valid pathname)
+		my $bbd_abspath = $type eq 'p' ? $p_file{$abk} : $str_file{$abk};
+		if ($bbd_abspath !~ m{^/}) { # XXX windows compat? Should check for all occurences of this pattern and replace by function!
+		    $bbd_abspath = "$datadir/$bbd_abspath";
+		}
+		my $dir = dirname($bbd_abspath);
+		$abs_realfile = "$dir/$realfile";
 	    }
-	    my $dir = dirname($abspath);
 	    if ($is_svg) {
 		# XXX move svg stuff to some general-purpose function or module
 		if (!defined $w) {
@@ -21864,7 +21870,7 @@ sub get_image_for_any {
 		require File::Temp;
 		require Tk::PNG;
 		my(undef,$tmpfile) = File::Temp::tempfile(SUFFIX => ".png", UNLINK => 1);
-		my @cmd = ("convert", "-geometry", "${w}x${h}", "$dir/$realfile", $tmpfile);
+		my @cmd = ("convert", "-geometry", "${w}x${h}", $abs_realfile, $tmpfile);
 		system(@cmd) == 0
 		    or die "Error while converting: @cmd, status=$?";
 		$p = $c->Photo(-file => $tmpfile);
@@ -21872,8 +21878,8 @@ sub get_image_for_any {
 	    } else {
 		$p = get_image($base, $realfile);
 		if (!$p) {
-		    warn "Try $dir/$realfile...\n";
-		    $p = $c->Photo(-file => "$dir/$realfile");
+		    warn "Try $abs_realfile...\n";
+		    $p = $c->Photo(-file => $abs_realfile);
 		}
 	    }
 	};
