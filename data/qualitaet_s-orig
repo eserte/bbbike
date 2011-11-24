@@ -521,13 +521,16 @@ Handjerystr.: schlechtes Kopfsteinpflaster	Q3 20967,3343 20906,3433 20833,3519 2
 Görlitzer Park: teils fester sandiger Weg	Q1- 12671,10042 12686,10045 12690,10062
 Görlitzer Park: teils fester sandiger Weg	Q1- 12761,10195 12769,10211 12774,10222
 Görlitzer Park: Asphalt	Q0 13145,9920 12869,10071 12802,10097
-Görlitzer Park: teils fester sandiger Weg	Q1- 12670,10160 12559,10220 12459,10256 12406,10368 12328,10442
+Görlitzer Park: teils fester sandiger Weg	Q1- 12670,10160 12567,10211
+Görlitzer Park: Asphalt	Q0 12567,10211 12543,10223
+Görlitzer Park: teils fester sandiger Weg	Q1- 12543,10223 12459,10256 12406,10368 12328,10442
 Görlitzer Park: Asphalt	Q0 12817,9964 12833,9998 12869,10071
-Görlitzer Park: Gehwegplatten	Q1+ 12869,10071 12904,10141 12911,10156
+Görlitzer Park: Gehwegplatten	Q0- 12869,10071 12904,10141 12911,10156
 Görlitzer Park, Rondell: teils fester sandiger Weg	Q1- 12802,10097 12737,10051 12690,10062 12659,10119 12670,10160 12712,10192 12761,10195 12801,10146 12802,10097
-Görlitzer Park: asphaltiert	Q0 12802,10097 12670,10160
-Görlitzer Park: teils fester sandiger Weg	Q1 12507,10130 12509,10189 12559,10220
-Görlitzer Park: mäßiges bis schlechtes Kopfsteinpflaster	Q2- 12559,10220 12611,10299
+Görlitzer Park: Asphalt	Q0 12802,10097 12670,10160
+Görlitzer Park: Kleinsteinpflaster	Q1- 12507,10130 12504,10172
+Görlitzer Park: Asphalt	Q0 12504,10172 12516,10202 12543,10223 12580,10252
+Görlitzer Park: mäßiges Kopfsteinpflaster	Q2- 12580,10252 12611,10299
 Zur Eisenbahnbrücke: gutes Kopfsteinpflaster	Q1 13302,9894 13229,9853
 Bahndamm: fester Sandweg	Q1 13282,9828 13476,9720 13934,9365 13966,9340
 Tiergartenufer: Parkweg (Bodenwellen)	Q2+ 6186,11466 6079,11524 5940,11616 5903,11683 5835,11768
@@ -2814,7 +2817,7 @@ Freiastr.: Kopfsteinpflaster	Q2 16826,12408 16694,12422
 (Siegfriedstr. - Herzbergstr.): Asphalt	Q0+ 16865,13000 17041,12995 17114,13019 17170,13070 17234,13081 17257,13117 17219,13430 17203,13519
 (Siegfriedstr. - Herzbergstr.): Asphalt	Q0+ 17219,13430 17300,13459
 Herzbergstr.: betoniert/Verbundsteinpflaster	Q0- 17232,13518 17300,13459 17330,13437 17479,13434 17688,13430
-Rumeyplan: Asphalt mit Schäden	Q1 8694,7691 8815,7722 8902,7763 8967,7821
+Rumeyplan: Asphalt mit Schäden	Q1 8694,7691 8815,7722 8909,7769 8967,7821
 #: note: laut ADFC-Karte bis auf einen kleinen Abschnitt am Mexikoplatz gut geeignet - nicht bestätigt
 #: note: von der S-Bahn aus geseheb:
 #: confirmed_by: MichaelM (Kopfsteinpflaster, sogar Q2 -> Q2-)
@@ -3451,15 +3454,16 @@ Willstätterstr.: Asphalt	Q0 14193,6556 14306,6651
 (Eingang Columbiadamm - Rundkurs auf dem Flughafen Tempelhof): Asphalt	Q0 10598,8270 10729,8152
 (Eingang Columbiadamm/Golßener Str. - Rundkurs auf dem Flughafen Tempelhof): Asphalt/Beton/Verbundsteinpflaster	Q1+ 10384,8628 10360,8521
 (Eingang Columbiadamm/Golßener Str. - Rundkurs auf dem Flughafen Tempelhof): alte Platten	Q2+ 10360,8521 10298,8245
-(Rundkurs auf dem Flughafen Tempelhof): Beton	Q0 9525,7558 9518,7609 9611,7934 9710,8143 9884,8265 10042,8270 10298,8245 10575,8218 10729,8152 10909,8003 11090,7916 11264,7882 11355,7871 11381,7775 11460,7447 11518,7314
+(Rundkurs auf dem Flughafen Tempelhof): Beton	Q0 9525,7558 9522,7624 9562,7796 9619,7930 9709,8127 9784,8209 9884,8265 10042,8270 10298,8245 10575,8218 10729,8152 10909,8003 11090,7916 11264,7882 11355,7871 11381,7775 11460,7447 11518,7314
 (Rundkurs auf dem Flughafen Tempelhof - Eingang Tempelhofer Damm): Asphalt	Q0- 9525,7558 9431,7425
 (Rundkurs auf dem Flughafen Tempelhof - Eingang Tempelhofer Damm): Verbundsteinpflaster	Q0- 9431,7425 9392,7339 9300,7312 9302,7294 9242,7286
-(Rundkurs auf dem Flughafen Tempelhof): teils sehr guter Asphalt	Q0+ 11463,7785 11470,7744 11543,7369 11593,7314 11598,7264 11407,7198 11310,7071 11128,6967 10944,6790 10746,6693 10558,6661 10282,6692 10023,6806 9792,6964 9681,7075 9509,7195
+(Rundkurs auf dem Flughafen Tempelhof): teils sehr guter Asphalt	Q0+ 11460,7802 11470,7744 11543,7369 11593,7314 11598,7264 11407,7198 11310,7071 11128,6967 10944,6790 10746,6693 10558,6661 10282,6692 10023,6806 9792,6964 9681,7075 9509,7195
 (Rundkurs auf dem Flughafen Tempelhof): Beton	Q0 9509,7195 9545,7426 9525,7558
 (Südliche Landebahn): Asphalt	Q0+ 9461,7190 9509,7195 9677,7206 11359,7307 11518,7314 11593,7314
-(Nördliche Landebahn): Beton	Q0 9351,7600 9518,7609 9654,7621
-(Nördliche Landebahn): Asphalt	Q0 9654,7621 11279,7768 11381,7775 11463,7785
-(Nördliche Landebahn - Eingang Oderstr./Herrfurthstr.): Asphalt	Q0 11463,7785 11439,7894
+(Nördliche Landebahn): Beton	Q0 9362,7616 9522,7624 9653,7635
+(Nördliche Landebahn): Asphalt	Q0 9653,7635 11279,7768 11381,7775 11430,7781
+(zur nördlichen Landebahn): unbefestigt	Q2+ 11430,7781 11460,7802
+(Nördliche Landebahn - Eingang Oderstr./Herrfurthstr.): Asphalt	Q0 11460,7802 11439,7894
 (Eingang Oderstr./Herrfurthstr. - Flughafen Tempelhof): Asphalt	Q0 11472,7899 11458,7897 11439,7894
 (Strecke an der nordöstlichen Begrenzung): Asphalt	Q0 11439,7894 11418,8015 11327,8007 11303,8089 11143,8139 11005,8064 10803,8251 10640,8366
 (Strecke an der nordöstlichen Begrenzung): Asphalt	Q0- 10640,8366 10360,8521
@@ -3469,7 +3473,9 @@ Willstätterstr.: Asphalt	Q0 14193,6556 14306,6651
 (Eingang Tempelhofer Damm - südliche Landebahn): Asphalt	Q0 9302,7294 9351,7241 9461,7190
 (Weg parallel zum Tempelhofer Damm): Asphalt	Q0 9300,7312 9281,7651 9281,7795
 (Eingang Peter-Strasser-Weg): Asphalt	Q0 9281,7795 9240,7797
-(Nördliche Landebahn - Eingang Peter-Strasser-Weg): unbefestigter Pfad	Q2 9351,7600 9281,7651
+(Nördliche Landebahn - Eingang Peter-Strasser-Weg): unbefestigter Pfad	Q2 9362,7616 9281,7651
+(Rundkurs auf dem Flughafen Tempelhof - Eingang Peter-Strasser-Weg): mäßiger Asphalt	Q1- 9562,7796 9372,7798
+(Rundkurs auf dem Flughafen Tempelhof - Eingang Peter-Strasser-Weg): unbefestigter Weg	Q2 9372,7798 9281,7795
 Ederstr.: Fahrbahn asphaltiert, gemeinsamer Rad- und Gehweg mit Verbundsteinpflaster	Q0 13946,7918 13958,8106
 Ederstr.: Verbundsteinpflaster	Q0- 13958,8106 13957,8209 13939,8228
 (Zur Eisackstr.): Kleinkopfsteinpflaster	Q1 6409,8026 6418,7958 6429,7876
@@ -6694,6 +6700,10 @@ Exiner Str.: Asphalt	Q0; 17134,908 17274,705
 Eichenauer Weg: Kopfsteinpflaster	Q2 16813,865 16889,853 17021,867
 Eichenauer Weg: Kopfsteinpflaster	Q2- 17021,867 17134,908 17236,985
 Sebnitzer Weg: Kopfsteinpflaster	Q2 16282,1052 16227,997
+(Kanzlerweg - Schreiberring): unbefestigter Weg	Q1- 8839,8132 8839,8168 8861,8242
+(Rumeyplan, Grünanlage): unbefestigter Weg	Q1- 8909,7769 8899,7788
+(Rumeyplan - Kanzlerweg): unbefestigter Weg	Q1- 8899,7788 8839,7904
+Mussehlstr.: Gehwegplatten	Q0- 8836,8564 8756,8453 8711,8371
 ######################### User Contributions #################################
 #: by: anonymous vvv
 # 
@@ -18171,7 +18181,8 @@ Udetzeile: Asphalt mit Fugen	Q1 8327,8302 8315,8189
 #: corrected_by: srt (Q1 -> Q0-)
 Bäumerplan: Asphalt	Q0- 8561,8252 8536,8192 8519,8088
 Adolf-Scheidt-Platz: Asphalt	Q1 8731,8050 8765,8050 8783,8020 8769,7994 8731,7990
-Kanzlerweg: Asphalt	Q1 8839,8132 8839,8018 8839,7904
+#: corrected_by: srt (Q1 -> Q0-)
+Kanzlerweg: Asphalt	Q0- 8839,8132 8839,8018 8839,7904
 #: corrected_by: srt (Q2 -> Q1)
 Wiesenerstr.: mäßiger Asphalt	Q1 8900,7643 8923,7673 8948,7689 8952,7719 8926,7705 8923,7673
 #: corrected_by: srt (Q2 -> Q1)

@@ -729,6 +729,8 @@ Zugang zum Bad	culdesac_pseudo 7344,13435
 	culdesac 17681,-178
 	culdesac 17488,-145
 	culdesac 15315,1108
+	culdesac_pseudo 8839,8132
+	culdesac_pseudo 8839,7904
 #: section ^^^
 ######################################################################
 # busroute
@@ -1216,3 +1218,7 @@ Nikolaus-Ehlen-Weg: Privatstraße	CS 17308,-36 17215,94 17176,90
 #: XXX_indoor: würde besser unter sehenswuerdigkeit passen
 Gaslaternen-Freilichtmuseum Berlin	CS 5903,11683 5835,11768 5870,11842 5890,11865 5900,11913
 #: section ^^^
+(Kanzlerweg - Schreiberring): Privatweg	CS 8839,8168 8861,8242
+(Kanzlerweg - Schreiberring): Tordurchfahrt	CP2; 8861,8242 8839,8168
+(Rumeyplan - Kanzlerweg): Privatweg	CS 8899,7788 8839,7904
+(Rumeyplan - Kanzlerweg): Tordurchfahrt	CP2; 8899,7788 8839,7904
