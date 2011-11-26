@@ -2560,16 +2560,7 @@ userdel	3 12992,7545 13015,7440 12925,7425
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'LS/O-SG33-F/11/197',
-         'until' => 1322262000,
-         'text' => 'Prötzel: L35: Straßenbauarbeiten Prötzel - Harnekop und umgekehrt Vollsperrung ab 17.10.11 bis 25.11.2011 ',
-         'from' => 1318716000,
-         'id' => 2294,
-         'data' => 'userdel	2::inwork 50141,30438 50704,30986
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
