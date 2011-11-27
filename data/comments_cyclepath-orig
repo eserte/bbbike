@@ -2,401 +2,408 @@
 #: title: Radwege im Umland
 #: note: XXX_* categorization done 2008-01-26
 #:
-Asphaltierter Zweirichtungsradweg, südöstliche Straßenseite	RW 26645,163217 26848,164249 27363,164755 27717,165103 27848,165204
-Überwiegend asphaltierter Zweirichtungsradweg, südliche Straßenseite	RW 32023,167053 32741,167080 32952,166951 33153,166785 33246,166330 33267,166229
-Asphaltierter Zweirichtungsradweg durch Wald, Laub, unnötig hügelig und kurvig, westliche Straßenseite	RW 33267,166229 33494,165278 33577,164823
-Zweirichtungsradweg	RW 33577,164823 33649,164756 35654,162897 35801,162884 35953,162870 36080,162883 36480,162910 36737,162995
-Petzow - Werder: Fahrradstraße	RW -20281,-6915 -20293,-6728 -20157,-6373 -20290,-5475
-Radweg	RW -19449,-5977 -19536,-5985 -19716,-5851 -19997,-5752 -20116,-5592 -20290,-5475 -20696,-5198
-Caputh: Radweg	RW -15811,-6533 -16280,-6747 -16553,-6765 -16562,-6825 -16812,-7010
-Potsdam - Ferch: Zweirichtungsradweg	RW -18431,-7978 -18631,-8412 -18756,-8962 -18909,-9080 -19146,-9196 -19606,-9698 -20112,-10437 -20590,-10806 -20816,-10818 -21391,-10967
-Templiner Str.: Zweirichtungsradweg	RW;RW8? -13062,-2901 -13155,-2913 -13381,-2943 -13481,-2956 -13718,-2991 -13771,-3023 -14038,-3356 -14031,-3554 -14095,-3670 -14119,-3845 -14267,-4206 -14712,-4614 -14710,-4977 -14795,-5169 -14947,-5405 -15228,-5678 -15275,-5928 -15472,-6233 -15811,-6533
-asphaltierter Zweirichtungsradweg (Südwestseite)	RW8;RW2 -13778,4492 -14244,5152 -14404,5435 -14728,5709 -15216,6079 -15452,6185
-Zweirichtungsradweg auf der Südseite, kurz vor der Lindenberg Wechsel auf Nordseite	RW 21626,19542 21471,19728 21303,19918 20867,20409 20270,20684 19945,20979 18949,21886 18762,22087
-Radweg	RW; 20606,21815 19945,20979 19881,20887 19637,20600
-Ahrensfelde: Radweg, Verbundsteinpflaster, keine hohen Geschwindigkeiten möglich	RW 22529,19361 22418,19268 21975,19068 21830,19016 21558,18947 21434,18875
-B179: guter Zweirichtungsradweg (östliche Seite)	RW 24381,-11212 24378,-10040 24278,-9878
-Schönerlinde - Schönwalde: asphaltierter Radweg auf der östlichen Seite	RW 12931,27643 12352,29576
-##: unverified_by: http://morgenpost.berlin1.de/archiv2002/020508/beilage/story518040.html, aber auf der dazugehörigen Karte sieht es anders aus?!
-##Storkow - Wendisch-Rietz: parallel zur Straße führender Radweg	RW E7884,6428 E7931,6473 E7987,6509 E7990,6517 E8039,6565 E8069,6596 E8123,6628
-Berliner Str. (Woltersdorf)	RW 33943,5568 33389,5751 32806,5934 32192,5915
-Baumschulenstr. (Woltersdorf)	RW 33943,5568 34028,6053 34132,6174
-Rudolf-Breitscheid-Str.: Suggestivstreifen	RW3;RW3 -10446,-1947 -10559,-1901 -10678,-1860 -10702,-1851 -10773,-1828 -10973,-1764
+asphaltiert	RW2;RW8 26645,163217 26848,164249
+asphaltiert	RW2;RW8 27363,164755 27717,165103
+überwiegend asphaltiert	RW2;RW8 32023,167053 32741,167080 32952,166951 33153,166785 33246,166330 33267,166229
+asphaltierter Zweirichtungsradweg durch Wald, Laub, unnötig hügelig und kurvig	RW2;RW8 33267,166229 33494,165278 33577,164823
+	RW2;RW8 33577,164823 33649,164756 35654,162897 35801,162884
+	RW8;RW2 35801,162884 35953,162870 36080,162883 36480,162910
+	RW2;RW8 36480,162910 36737,162995
+	RW7;RW7 -20281,-6915 -20293,-6728 -20157,-6373 -20290,-5475
+	RW;RW -19449,-5977 -19536,-5985 -19716,-5851 -19997,-5752 -20116,-5592 -20290,-5475 -20696,-5198
+	RW;RW -15811,-6533 -16280,-6747 -16553,-6765 -16562,-6825 -16812,-7010
+	RW;RW8? -18431,-7978 -18631,-8412 -18756,-8962 -18909,-9080 -19146,-9196 -19606,-9698 -20112,-10437 -20590,-10806 -20816,-10818 -21391,-10967
+	RW;RW8? -13062,-2901 -13155,-2913 -13381,-2943 -13481,-2956 -13718,-2991 -13771,-3023 -14038,-3356 -14031,-3554 -14095,-3670 -14119,-3845 -14267,-4206 -14712,-4614 -14710,-4977 -14795,-5169 -14947,-5405 -15228,-5678 -15275,-5928 -15472,-6233 -15811,-6533
+asphaltiert	RW8;RW2 -13778,4492 -14244,5152 -14404,5435 -14728,5709 -15216,6079 -15452,6185
+	RW8?;RW 21626,19542 21471,19728 21303,19918 20867,20409 20270,20684 19945,20979 18949,21886
+	RW;RW8? 18949,21886 18762,22087
+	RW; 20606,21815 19945,20979 19881,20887 19637,20600
+Verbundsteinpflasterradweg, keine hohen Geschwindigkeiten möglich	RW;RW 22529,19361 22418,19268 21975,19068 21830,19016 21558,18947 21434,18875
+guter Zweirichtungsradweg	RW;RW8? 24381,-11212 24378,-10040 24278,-9878
+asphaltiert	RW;RW8? 12931,27643 12352,29576
+	RW;RW 33943,5568 33389,5751 32806,5934 32192,5915
+	RW;RW 33943,5568 34028,6053 34132,6174
+	RW3;RW3 -10446,-1947 -10559,-1901 -10678,-1860 -10702,-1851 -10773,-1828 -10973,-1764
 #: by: Basil (kaffeetrinker)
-Rudolf-Breitscheid-Str.: Suggestivstreifen	RW3; -10446,-1947 -10360,-1934 -10235,-1916 -9986,-1882 -9735,-1845
-B101: Zweirichtungsradweg auf der östlichen Seite	RW;RW8? 5394,-3053 5627,-2671 5836,-2309 5943,-2117
-Potsdam - Teltow: enger Zweirichtungsradweg auf der nördlichen Seite	RW8;RW2 -5736,-3629 -5156,-3192 -4885,-3087 -4456,-2968 -3950,-2743 -3650,-2609
-Lichterfelder Allee, Teltow: Radweg vorhanden	RW 3450,543 3417,524 3112,331 2947,220 2459,-109 2331,-228 2215,-328 1974,-440 1677,-582 1453,-746
+#: confirmed_by: srt (zumindest im westlichen Bereich)
+	RW3; -10446,-1947 -10360,-1934 -10235,-1916 -9986,-1882 -9735,-1845
+	RW;RW8? 5394,-3053 5627,-2671 5836,-2309 5943,-2117
+enger Zweirichtungsradweg	RW8;RW2 -5736,-3629 -5156,-3192 -4885,-3087 -4456,-2968 -3950,-2743 -3650,-2609
+	RW;RW 3450,543 3417,524 3112,331 2947,220 2459,-109 2331,-228 2215,-328 1974,-440 1677,-582 1453,-746
+#: XXX Der östliche Radweg ist ein Zweirichtungsradweg --- gibt es auf der westlichen Seite überhaupt noch einen Radweg? Wie ist die Führung von der Breiten Straße aus? Wie sieht es jenseits der Babelsberger Str. aus?
 Lange Brücke, Friedrich-Ebert-Str.: beidseitiger Radweg vorhanden	RW2;RW2 -12431,-2096 -12493,-1896 -12567,-1817 -12659,-1700 -12758,-1654 -12772,-1577 -12780,-1545 -12793,-1498 -12833,-1365 -12839,-1342
-Breite Str., Potsdam: Radweg vorhanden	RW2;RW2 -12758,-1654 -12940,-1625 -13238,-1569 -13375,-1546 -13516,-1517 -13764,-1460 -13879,-1445
-Hreinrich-Mann-Allee: Radweg	RW;RW -12431,-2096 -12318,-2192
-Brauhausberg: Radstreifen	RW4;RW4 -12318,-2192 -12355,-2263 -12362,-2288 -12462,-2568 -12476,-2605
-Berliner Str. (B1): Radweg	RW2; -12317,-1212 -12285,-1174
-Berliner Str. (B1): beidseitiger Radweg	RW2;RW2 -12285,-1174 -12248,-1107 -12148,-934 -12045,-757
-Berliner Str. (B1): Radweg	RW2; -10826,469 -11018,348
-Berliner Str. (B1): Radweg	RW; -11018,348 -11122,271 -11307,133 -11390,72 -11494,-4 -11584,-66 -11669,-138 -11723,-220 -11877,-478 -11886,-493 -11935,-574 -12045,-757
-Berliner Str. (B1): teilweise parallele Nebenstraße, teilweise Radweg	RW1; -12045,-757 -11935,-574 -11886,-493 -11877,-478 -11723,-220 -11669,-138 -11584,-66 -11494,-4 -11390,72 -11307,133 -11122,271 -11018,348 -10826,469
+	RW2;RW2 -12758,-1654 -12940,-1625 -13238,-1569 -13375,-1546 -13516,-1517 -13764,-1460 -13879,-1445
+	RW;RW -12431,-2096 -12318,-2192
+	RW4;RW4 -12318,-2192 -12355,-2263 -12362,-2288 -12462,-2568 -12476,-2605
+	RW2; -12317,-1212 -12285,-1174
+	RW2;RW2 -12285,-1174 -12248,-1107 -12148,-934 -12045,-757
+	RW2; -10826,469 -11018,348
+	RW; -11018,348 -11122,271 -11307,133 -11390,72 -11494,-4 -11584,-66 -11669,-138 -11723,-220 -11877,-478 -11886,-493 -11935,-574 -12045,-757
+teilweise parallele Nebenstraße, teilweise Radweg	RW1; -12045,-757 -11935,-574 -11886,-493 -11877,-478 -11723,-220 -11669,-138 -11584,-66 -11494,-4 -11390,72 -11307,133 -11122,271 -11018,348 -10826,469
 	RW6;RW6 -11392,762 -11231,696 -11106,644 -10857,487
-#XXX del --- #: XXX Radwegführung nach Verschwenkung der Straßenbahn begutachten (evtl. jetzt Zweirichtungsradweg)
-#XXX del --- Humboldtbrücke: Radweg vorhanden und wegen Kfz-Straße zwingend benutzungspflichtig	RW2;RW2 -12045,-757 -11869,-907 -11613,-1125
-#XXX del --- Nuthestr.: Radweg vorhanden und wegen Kfz-Straße zwingend benutzungspflichtig	RW2; -11549,-1169 -11613,-1125
-#XXX del --- Nuthestr.: Radweg vorhanden und wegen Kfz-Straße zwingend benutzungspflichtig	RW2; -11613,-1125 -11549,-1169 -11463,-1232 -11356,-1317
-Alt Nowawes: asphaltierte Radwege	RW;RW -10973,-1764 -10925,-1705 -10884,-1653 -10841,-1599 -10606,-1303 -10581,-1271 -10505,-1166 -10338,-950 -10154,-828
-B2: asphaltierter Zweirichtungsradweg auf der südöstlichen Seite	RW8;RW2 -10090,6868 -10206,6756 -10494,6586 -10927,6333 -12179,5629 -12645,5573 -12865,5567 -13143,5587 -13261,5566 -13578,5396 -13690,5212 -13778,4492
-B2: Radstreifen	RW4;RW4 -13778,4492 -13779,4233 -13783,3919 -13784,3900 -13703,3717
-B2: Gehweg für Radfahrer frei	RW1;RW1 -13703,3717 -13567,3403 -13387,2987 -13375,2950
-B2: asphaltierter Zweirichtungsradweg auf der östlichen Seite	RW8;RW2 -13375,2950 -13152,2169 -13141,1945 -13141,1933
-B2: gemeinsamer Rad- und Gehweg, asphaltiert	RW2;RW2 -13141,1933 -13134,1758 -13133,1698 -13125,1508 -13115,1379 -13113,1356 -13108,1278 -13091,1150 -13039,894 -13038,856 -13042,807 -13058,702 -13062,535 -13036,342 -13091,-8 -13111,-136
-B273: Radweg	RW2;RW2 -13556,-1182 -13556,-1140 -13560,-1106 -13576,-1026 -13625,-902 -13815,-749 -14034,-571 -14134,-468 -14409,-371 -14546,-121 -14587,80 -14650,201 -14737,300
-B273: Radweg	RW2;RW2 -14737,300 -14841,404 -14859,421 -15046,527 -15059,535 -15123,570 -15145,582 -15158,589 -15298,668 -15508,785
-B273: Radweg	RW -18731,5799 -18804,5992 -18962,6183 -19576,6450 -19787,6551 -20023,6826
-Berliner Str. (Erkner): Verbundsteinpflasterradweg	RW2; 33547,2904 33894,2825 34142,2742
-Berliner Str. (Erkner): asphaltierter Radweg	RW2; 34142,2742 33894,2825 33547,2904
-Friedrichstr. (Erkner): Radweg auf Gehweg	RW 34142,2742 34175,2637 34250,2546 34443,1951
-Erkner - Tasdorf: (schlechter) Radweg	RW 34271,3184 34486,4276 34574,4552
-Zechlinerhütte - Rheinsberg: Radweg mit gutem Asphalt	RW -27053,82717 -26940,82461 -26806,82333 -26541,82132 -26511,81861 -26435,81684 -26499,80944 -26009,79227 -25923,78844 -25439,77907 -25459,77650 -25671,77176 -25760,76840 -25801,76494 -25728,76368 -25728,76256
-Hennickendorf - Ahrensdorf: breiter asphaltierter Radweg	RW -9594,-27471 -9298,-27089 -9016,-26788 -8893,-26326 -8511,-25814 -8128,-25535 -7894,-25017 -7586,-24667 -7310,-24388 -6700,-24539 -5997,-24621 -5200,-24423
-Bestensee: Radweg Richtung Norden	RW; 26204,-17794 26276,-17489
-B198, Prenzlau: Verbundsteinpflasterradweg	RW2;RW2 41058,100653 40691,100865 40607,100911 40507,100965 39962,101085 39867,101104
-B198, Prenzlau: gemeinsamer Rad- und Gehweg, mäßige Gehwegplatten	RW 39867,101104 39757,101217 39682,101543
-B109, Prenzlau: benutzungspflichtige Radwege, Verbundsteinpflaster, "Berg-und-Tal"	RW 39022,101334 38848,101208 38653,101065 37577,100778 37212,100549 37068,100245
-B109: benutzungspflichtiger Zweirichtungsradweg auf der nördlichen Seite, hügelig und kurvig	RW 37068,100245 36972,100027 36879,99814 35757,98954
-B109: benutzungspflichtiger Zweirichtungsradweg auf der südöstlichen Seite, hügelig und kurvig	RW 35757,98954 34975,98355 34645,97902 33928,96909
-B109, Prenzlau: Verbundsteinpflasterradweg	RW2;RW2 39908,102420 39873,102249 39800,102060 39715,101866
+asphaltiert	RW;RW -10973,-1764 -10925,-1705 -10884,-1653 -10841,-1599 -10606,-1303 -10581,-1271 -10505,-1166 -10338,-950 -10154,-828
+asphaltiert	RW8;RW2 -10090,6868 -10206,6756 -10494,6586 -10927,6333 -12179,5629 -12645,5573 -12865,5567 -13143,5587 -13261,5566 -13578,5396 -13690,5212 -13778,4492
+	RW4;RW4 -13778,4492 -13779,4233 -13783,3919 -13784,3900 -13703,3717
+Gehweg für Radfahrer frei	RW1;RW1 -13703,3717 -13567,3403 -13387,2987 -13375,2950
+asphaltiert	RW8;RW2 -13375,2950 -13152,2169 -13141,1945 -13141,1933
+gemeinsamer Rad- und Gehweg, asphaltiert	RW2;RW2 -13141,1933 -13134,1758 -13133,1698 -13125,1508 -13115,1379 -13113,1356 -13108,1278 -13091,1150 -13039,894 -13038,856 -13042,807 -13058,702 -13062,535 -13036,342 -13091,-8 -13111,-136
+	RW2;RW2 -13556,-1182 -13556,-1140 -13560,-1106 -13576,-1026 -13625,-902 -13815,-749 -14034,-571 -14134,-468 -14409,-371 -14546,-121 -14587,80 -14650,201 -14737,300
+	RW2;RW2 -14737,300 -14841,404 -14859,421 -15046,527 -15059,535 -15123,570 -15145,582 -15158,589 -15298,668 -15508,785
+	RW;RW -18731,5799 -18804,5992 -18962,6183 -19576,6450 -19787,6551 -20023,6826
+Verbundsteinpflasterradweg	RW2; 33547,2904 33894,2825 34142,2742
+asphaltiert	RW2; 34142,2742 33894,2825 33547,2904
+Radweg auf Gehweg	RW;RW 34142,2742 34175,2637 34250,2546 34443,1951
+(schlechter) Radweg	RW;RW 34271,3184 34486,4276 34574,4552
+guter Asphalt	RW;RW -27053,82717 -26940,82461 -26806,82333 -26541,82132 -26511,81861 -26435,81684 -26499,80944 -26009,79227 -25923,78844 -25439,77907 -25459,77650 -25671,77176 -25760,76840 -25801,76494 -25728,76368 -25728,76256
+breiter asphaltierter Radweg	RW;RW -9594,-27471 -9298,-27089 -9016,-26788 -8893,-26326 -8511,-25814 -8128,-25535 -7894,-25017 -7586,-24667 -7310,-24388 -6700,-24539 -5997,-24621 -5200,-24423
+	RW; 26204,-17794 26276,-17489
+Verbundsteinpflasterradweg	RW2;RW2 41058,100653 40691,100865 40607,100911 40507,100965 39962,101085 39867,101104
+gemeinsamer Rad- und Gehweg, mäßige Gehwegplatten	RW;RW 39867,101104 39757,101217 39682,101543 39715,101866
+#: note: "Berg-und-Tal" == übertriebende Absenkungen für Grundstückseinfahrten
+Verbundsteinpflaster, "Berg-und-Tal"	RW2;RW2 39022,101334 38848,101208 38653,101065 37577,100778 37212,100549 37068,100245
+hügelig und kurvig	RW2;RW8 37068,100245 36972,100027 36879,99814 35757,98954
+hügelig und kurvig	RW8;RW2 35757,98954 34975,98355 34645,97902 33928,96909
+Verbundsteinpflasterradweg	RW2;RW2 39908,102420 39873,102249 39800,102060 39715,101866
 Verbundsteinpflasterradweg	RW; 39800,102060 39831,102052 39900,101931 39912,101911
-B109, Prenzlau: gemeinsamer Rad- und Radweg, mäßige Gehwegplatten	RW 39715,101866 39682,101543
-B109, Prenzlau: Radweg	RW 39682,101543 39536,101514 39392,101477 39290,101451 39022,101334
-Gramzow: Radweg	RW 49779,90206 49640,90243 48924,90469
-Eiche: Zweirichtungsradweg (westliche Seite)	RW 22771,16194 22809,16240 22889,16350
-Landsberger Chaussee: Radwege (Betonplatten)	RW1; 22771,16194 22974,16139
-Landsberger Chaussee: Radwege (Betonplatten)	RW2; 22974,16139 23159,16086
-Landsberger Chaussee: Radwege (Betonplatten)	RW; 23159,16086 22974,16139 22771,16194
-Landsberger Chaussee: Radwege (Betonplatten)	RW2;RW 23159,16086 23561,15975
-Landsberger Chaussee: Radwege (Betonplatten)	RW 23561,15975 23893,15893
-B1: Zweirichtungsradweg auf der nördlichen Seite	RW 25641,11128 25923,11076 26449,10953 26596,10921
-Zweirichtungsradweg auf der östlichen Seite	RW 31456,17231 31457,17129 31212,16278 31053,15975 31027,15926 30768,15431
-Altlandsberg: Radweg	RW 30118,16565 30335,16649 30837,16843 31456,17231
-Asphaltierter Zweirichtungsradweg auf der SE-Seite	RW -926,27132 -1941,26218 -2118,26060 -2446,25386
-Asphaltierter Radweg	RW -4642,25672 -4929,25719 -5890,25875 -6593,25703 -6943,25831
-Fahrradstraße	RW -6943,25831 -7187,25859 -7225,25509 -7260,25515
-#: add_fragezeichen: Position ist vielleicht nicht ganz genau
-Zweirichtungsradweg auf der östl. Seite, Qualität unbekannt	RW -7533,24138 -7734,23796 -8777,22961 -8988,22668 -9046,22376
-Zweirichtungsradweg auf der östl. Seite, asphaltiert	RW -10377,20973 -10576,19951 -10581,19871 -10000,18629
-Suggestivstreifen	RW4?;RW4? -11114,-2104 -10983,-2088 -10772,-2153 -10673,-2128
+	RW;RW 39682,101543 39536,101514 39392,101477 39290,101451 39022,101334
+	RW;RW 49779,90206 49640,90243 48924,90469
+	RW8?;RW 22771,16194 22809,16240 22889,16350
+Betonplatten	RW1; 22771,16194 22974,16139
+Betonplatten	RW2; 22974,16139 23159,16086
+Betonplatten	RW; 23159,16086 22974,16139 22771,16194
+Betonplatten	RW2;RW 23159,16086 23561,15975
+Betonplatten	RW;RW 23561,15975 23893,15893
+	RW8?;RW 25641,11128 25923,11076 26449,10953 26596,10921
+	RW8?;RW 31456,17231 31457,17129 31212,16278 31053,15975 31027,15926 30768,15431
+	RW;RW 30118,16565 30335,16649 30837,16843 31456,17231
+asphaltiert	RW8?;RW -926,27132 -1941,26218 -2118,26060 -2446,25386
+asphaltiert	RW;RW -4642,25672 -4929,25719 -5890,25875 -6593,25703 -6943,25831
+	RW7;RW7 -6943,25831 -7187,25859 -7225,25509 -7260,25515
+#: XXX: Position ist vielleicht nicht ganz genau
+#: add_fragezeichen: wie ist die Qualität des Radwegs?
+	RW8?;RW -7533,24138 -7599,23946 -7734,23796 -8777,22961 -8988,22668 -9046,22376
+asphaltiert	RW8?;RW -10377,20973 -10576,19951 -10581,19871 -10000,18629
+#: XXX sind hier nur Suggestivstreifen?
+	RW4?;RW4? -11114,-2104 -10983,-2088 -10772,-2153 -10673,-2128
 Radweg auf Gehweg	RW2;RW2 -12213,-2131 -12098,-2173
 	RW4; -12213,-2131 -12431,-2096
 Radweg auf Gehweg	RW2;RW -12098,-2173 -11996,-2192 -11942,-2201 -11837,-2223 -11781,-2235 -11681,-2256
 Radweg auf Gehweg	RW;RW -11681,-2256 -11601,-2197 -11507,-2130 -11114,-2104
-#: add_fragezeichen: Gibt es in der Großbeerenstr. einen Radweg oder Radstreifen?
+#: add_fragezeichen: Gibt es in der Großbeerenstr. einen Radweg oder einen Radstreifen?
 Radstreifen	RW4?;RW4? -10673,-2128 -10634,-2159 -10528,-2196 -10426,-2231 -10327,-2262
-#: add_fragezeichen: genauer spezifizieren:
-Radwege unterschiedlicher Form und Qualtität	RW -9723,-2451 -9692,-2462 -9534,-2515 -9462,-2540 -9254,-2605 -9118,-2649 -9110,-2651 -9075,-2664 -8865,-2732 -8500,-2856 -8417,-2867 -8361,-2875 -8283,-2917 -8137,-2997 -8005,-3056 -7878,-3090 -7774,-3091 -7668,-3092 -7577,-3093 -7497,-3096 -7487,-3097 -7060,-3124 -6810,-3151
-Seitenstreifen, als Radstreifen benutzbar	RW -6277,-3348 -6553,-3235 -6810,-3151
+#: XXX: genauer spezifizieren (Radwege unterschiedlicher Form und Qualtität):
+	RW;RW -9723,-2451 -9692,-2462 -9534,-2515 -9462,-2540 -9254,-2605 -9118,-2649 -9110,-2651 -9075,-2664 -8865,-2732 -8500,-2856 -8417,-2867 -8361,-2875 -8283,-2917 -8137,-2997 -8005,-3056 -7878,-3090 -7774,-3091 -7668,-3092 -7577,-3093 -7497,-3096 -7487,-3097 -7060,-3124 -6810,-3151
+Seitenstreifen, als Radstreifen benutzbar	RW3?;RW3? -6277,-3348 -6553,-3235 -6810,-3151
 #: by: osm
-	RW -6277,-3348 -5736,-3629
-Güterfelde: Zweirichtungsradweg, Verbundsteinpflaster	RW -3368,-4430 -2534,-4606
+	RW;RW -6277,-3348 -5736,-3629
+#: XXX Seite des Zweirichtungsradweges?
+Zweirichtungsradweg, Verbundsteinpflaster	RW;RW -3368,-4430 -2534,-4606
 #: note: von rjoop bestätigt:
-Radweg, nördliche Seite	RW 7981,-7165 9170,-7708 9828,-8106
-Alte, parallel verlaufende asphaltierte Allee ist für Radfahrer befahrbar	RW 21325,-16111 21605,-16054 22543,-15510
-Radweg	RW 22543,-15510 22865,-15325 23123,-14619 23346,-14193
+	RW8?;RW 7981,-7165 9170,-7708 9828,-8106
+alte, parallel verlaufende asphaltierte Allee ist für Radfahrer befahrbar	RW;RW 21325,-16111 21605,-16054 22543,-15510
+	RW;RW 22543,-15510 22865,-15325 23123,-14619 23346,-14193
 Radwegstreifen (Verbundsteinpflaster)	RW3;RW3 25912,-11956 25949,-11945 26078,-11992 26296,-12053
 Radwegstreifen (Verbundsteinpflaster)	RW3;RW3 26296,-12053 26299,-11896
-Breiter Verbundsteinradweg für beide Richtungen auf der nördlichen Seite	RW8;RW2 34990,2148 35088,2160 35453,2207 36402,2471 36719,2420 37085,2201
-Radwege bzw. Gehwege frei für Radfahrer	RW 37085,2201 37129,2175 37364,2132 37449,1992 37870,1620 38164,1564 38642,1798 38732,1821 39212,1762
-Verbundsteinradweg für beide Richtungen, etwas abseits der Straße	RW 36719,2420 36771,2581 37084,2693 37712,2659 38023,2687 38636,2578
+breiter Verbundsteinpflasterradweg	RW8;RW2 34990,2148 35088,2160 35453,2207 36402,2471 36719,2420 37085,2201
+Radwege bzw. Gehwege frei für Radfahrer	RW;RW 37085,2201 37129,2175 37364,2132 37449,1992 37870,1620 38164,1564 38642,1798 38732,1821 39212,1762
+#: XXX Seite des Zweirichtungsradweges?
+Verbundsteinpflasterradweg für beide Richtungen, etwas abseits der Straße	RW;RW 36719,2420 36771,2581 37084,2693 37712,2659 38023,2687 38636,2578
 #: XXX: genaue Position und Qualität?
-Radweg (?)	RW 39243,2759 39534,3037
+Radweg (?)	RW;RW 39243,2759 39534,3037
 #: XXX: genaue Position und Qualität?
-Radweg (?)	RW 39968,3795 40463,4020 41051,4427 41275,5229 41987,5693
-Gorinsee - Schönwalde: Zweirichtungsradweg auf der südl. Seite	RW 14341,30839 12955,30436 12466,30452
-Feinsplit-Radweg	RW 41806,-40762 42075,-40337 42152,-39572 41675,-38268 41687,-38100 41731,-37743
-asphaltierter Radweg auf der nördlichen Seite, enge Stelle an der Bahnüberführung	RW 8303,28478 7546,28255 7365,28253 7125,28106 5939,27781
-Gemeinsamer Geh- und Radweg, Verbundsteinpflaster	RW -173,-1397 86,-2903
-Gemeinsamer Geh- und Radweg, Verbundsteinpflaster	RW -1853,-2412 -2049,-2165
-Bansin: Zweirichtungsradweg (Verbundsteinpflaster) auf der nördlichen Seite	RW 56175,173875 56327,173853 56381,173849
-Bansin: Zweirichtungsradweg (Verbundsteinpflaster) auf der östlichen Seite	RW 56381,173849 56493,173943 56546,174049
-Ückeritz: teils Verbundsteinpflasterradweg, teils separate Straße, nörliche Seite	RW 50843,179488 51229,179229 51288,179162
-Bansin - Ückeritz: asphaltierter Zweirichtungsradweg auf der südlichen Seite	RW 56029,174482 55741,174692 55541,175016 55388,175169 55063,175432 54825,175505 54576,175560 54162,175850 53311,176048 52868,176203 52699,176308 52084,178098 51986,178177 51899,178200 51779,178229 51627,178336 51611,178406 51582,178510 51538,178665 51288,179162
-Ladeburg - Lobetal: Fahrradstraße	RW7;RW7 22526,33785 22595,33961 22877,35230 23008,35569
-Lobetal: verkehrsberuhigte Straße	RW6;RW6 23008,35569 23036,35624 23232,36004
-Schönerlinder Str.: Radweg auf Gehweg	RW 17325,27831 17689,27853
-Schönerlinder Str.: Radweg auf Gehweg	RW;RW2 17689,27853 18053,27875 18337,27854
-Schönerlinder Str.: Radweg auf Gehweg	RW 18337,27854 18410,27890 18817,27979 18899,27976 19187,27987
-B2: Radweg	RW 22257,29814 22262,29723
-B2: Radweg	RW 22206,30826 22378,30943
-Breitscheidstr. (Bernau)	RW3;RW3 22712,30340 22783,30373 22868,30412 22892,30426 23024,30523
-Zweirichtungsradweg auf der südlichen Seite, feiner Schotter	RW8?;RW -14669,-686 -15243,-656
+Radweg (?)	RW;RW 39968,3795 40463,4020 41051,4427 41275,5229 41987,5693
+	RW8?;RW 14341,30839 12955,30436 12466,30452
+Feinsplit-Radweg	RW;RW 41806,-40762 42075,-40337 42152,-39572 41675,-38268 41687,-38100 41731,-37743
+asphaltiert, enge Stelle an der Bahnüberführung	RW;RW8? 8303,28478 7546,28255 7365,28253 7125,28106 5939,27781
+gemeinsamer Geh- und Radweg, Verbundsteinpflaster	RW;RW -173,-1397 86,-2903
+gemeinsamer Geh- und Radweg, Verbundsteinpflaster	RW;RW -1853,-2412 -2049,-2165
+Verbundsteinpflaster	RW8?;RW 56175,173875 56327,173853 56381,173849
+Verbundsteinpflaster	RW;RW8? 56381,173849 56493,173943 56546,174049
+teils Verbundsteinpflasterradweg, teils separate Straße	RW8?;RW 50843,179488 51229,179229 51288,179162
+asphaltiert	RW8?;RW 56029,174482 55741,174692 55541,175016 55388,175169 55063,175432 54825,175505 54576,175560 54162,175850 53311,176048 52868,176203 52699,176308 52084,178098 51986,178177 51899,178200 51779,178229 51627,178336 51611,178406 51582,178510 51538,178665 51288,179162
+	RW7;RW7 22526,33785 22595,33961 22877,35230 23008,35569
+	RW6;RW6 23008,35569 23036,35624 23232,36004
+Radweg auf Gehweg	RW;RW 17325,27831 17689,27853
+Radweg auf Gehweg	RW;RW2 17689,27853 18053,27875 18337,27854
+Radweg auf Gehweg	RW;RW 18337,27854 18410,27890 18817,27979 18899,27976 19187,27987
+	RW;RW 22257,29814 22262,29723
+	RW;RW 22206,30826 22378,30943
+	RW3;RW3 22712,30340 22783,30373 22868,30412 22892,30426 23024,30523
+feiner Schotter	RW8?;RW -14669,-686 -15243,-656
 Radweg auf Gehweg	RW; -18125,-843 -18631,-778 -18725,-673
-Radweg (Verbundsteinpflaster)	RW; -19247,-20 -19100,407 -18964,793
-#: add_fragezeichen: laut "Berliner Umland" entnommen:
-Zweirichtungsradweg auf der östlichen Seite	RW -18356,4783 -18233,4501 -18025,4018
-Zweirichtungsradweg auf der östlichen Seite	RW -18025,4018 -17956,3840 -17588,2815
-#: add_fragezeichen: laut "Berliner Umland" entnommen:
-Zweirichtungsradweg auf der östlichen Seite	RW -17588,2815 -17309,2517 -16706,1911
-Bötzseestr.: verkehrsberuhigte Straße	RW 39287,17231 39193,16900 39400,15803
-Rehfelde - Strausberg: Zweirichtungsradweg auf der nördlichen/östlichen Seite, Verbundsteinpflaster	RW 44121,14615 43743,14634 43162,14428 42996,14793
-Rehfelde: Zweirichtungsradweg auf der östlichen Seite, Verbundsteinpflaster	RW 46421,14990 46250,14765 46053,14653 45856,14437
+Verbundsteinpflaster	RW; -19247,-20 -19100,407 -18964,793
+#: XXX: laut "Berliner Umland" entnommen:
+	RW8?;RW -18356,4783 -18233,4501 -18025,4018
+	RW8?;RW -18025,4018 -17956,3840 -17588,2815
+#: XXX: laut "Berliner Umland" entnommen:
+	RW8?;RW -17588,2815 -17309,2517 -16706,1911
+	RW6;RW6 39287,17231 39193,16900 39400,15803
+Verbundsteinpflaster	RW;RW8? 44121,14615 43743,14634 43162,14428 42996,14793
+Verbundsteinpflaster	RW8?;RW 46421,14990 46250,14765 46053,14653 45856,14437
 	RW2; 23179,31047 23109,30968
 Verbundsteinpflasterradweg	RW2; 23179,31047 23325,31194 23549,31301 23647,31351 23701,31395
 Verbundsteinpflasterradweg	RW2; 23109,30968 23103,30923 22922,30640
-Gehweg für Radfahrer freigegene	RW1;RW1 23024,30523 22922,30640
+Gehweg für Radfahrer freigegeben	RW1;RW1 23024,30523 22922,30640
 Verbundsteinpflasterradwege	RW2;RW 37940,52528 37650,53211
-Zumeist holprige Verbundsteinpflasterradwege	RW 40868,102837 40670,102503 40342,102355 40168,102237 40025,101987 39830,101921 39715,101866
-Rudolf-Breitscheid-Str.: Radstreifen	RW4; -10973,-1764 -11056,-1726
-Rudolf-Breitscheid-Str.: linksseitiger Radweg auf Gehweg	RW; -11056,-1726 -10973,-1764
-Behlertstr.: schmaler Radstreifen	RW4; -12045,-757 -12106,-699 -12194,-463 -12265,-418
-Kurfürstenstr.: Radstreifen	RW4; -12265,-418 -12306,-496
-Kurfürstenstr: Radweg auf Gehweg	RW1; -12306,-496 -12571,-581 -12730,-627 -12878,-665
-Kurfürstenstr: Radstreifen	RW4; -12878,-665 -12730,-627 -12571,-581
-Friedrich-Ebert-Str.: Radweg auf Gehweg, Kleinkopfsteinpflaster	RW2; -12872,-565 -12878,-665
-Hebbelstr.: Radstreifen	RW4; -12531,-790 -12545,-698 -12571,-581
-Hebbelstr.: Radstreifen	RW4;RW4 -12515,-889 -12531,-790
-Hegelallee: Radweg	RW1; -12878,-665 -13067,-706 -13137,-728 -13231,-763 -13433,-831 -13468,-847 -13625,-902
-Hegelallee: asphaltierter Geh- und Radweg auf Grünstreifen	RW1; -13625,-902 -13468,-847 -13433,-831 -13231,-763 -13137,-728 -13067,-706 -12878,-665
-Gutenbergstr.: Radweg	RW1; -12531,-790 -12219,-726
-Hans-Thoma-Str.: sehr schlechter Radweg, nicht benutzungspflichtig	RW1; -12306,-496 -12262,-612 -12219,-726
-Gutenbergstr.: gemeinsamer Rad- und Gehweg, asphaltiert	RW2;RW2 -12045,-757 -12219,-726
-Zeppelinstr.: gemeinsamer Rad- und Gehweg, teilweise sehr eng	RW2;RW2 -13556,-1182 -13643,-1220 -13727,-1300 -13879,-1445 -14115,-1678 -14187,-1740 -14279,-1820 -14351,-1882 -14369,-1898 -14485,-1998 -14500,-2012 -14859,-2384
+zumeist holprige Verbundsteinpflasterradwege	RW;RW 40868,102837 40670,102503 40342,102355 40168,102237 40025,101987 39830,101921 39715,101866
+	RW4; -10973,-1764 -11056,-1726
+linksseitiger Radweg auf Gehweg	RW; -11056,-1726 -10973,-1764
+schmaler Radstreifen	RW4; -12045,-757 -12106,-699 -12194,-463 -12265,-418
+	RW4; -12265,-418 -12306,-496
+Radweg auf Gehweg	RW1; -12306,-496 -12571,-581 -12730,-627 -12878,-665
+	RW4; -12878,-665 -12730,-627 -12571,-581
+Radweg auf Gehweg, Kleinsteinpflaster	RW2; -12872,-565 -12878,-665
+	RW4; -12531,-790 -12545,-698 -12571,-581
+	RW4;RW4 -12515,-889 -12531,-790
+	RW1; -12878,-665 -13067,-706 -13137,-728 -13231,-763 -13433,-831 -13468,-847 -13625,-902
+asphaltierter Geh- und Radweg auf Grünstreifen	RW1; -13625,-902 -13468,-847 -13433,-831 -13231,-763 -13137,-728 -13067,-706 -12878,-665
+	RW1; -12531,-790 -12219,-726
+sehr schlechter Radweg	RW2; -12306,-496 -12262,-612
+sehr schlechter Radweg	RW1; -12262,-612 -12219,-726
+gemeinsamer Rad- und Gehweg, asphaltiert	RW2;RW2 -12045,-757 -12219,-726
+gemeinsamer Rad- und Gehweg, teilweise sehr eng	RW2;RW2 -13556,-1182 -13643,-1220 -13727,-1300 -13879,-1445 -14115,-1678 -14187,-1740 -14279,-1820 -14351,-1882 -14369,-1898 -14485,-1998 -14500,-2012 -14859,-2384
 #: by: Lars Krüger:
-B1, Zeppelinstr.: teilweise Radweg, teilweise Radspur	RW2;RW2 -14859,-2384 -15060,-2626 -15276,-2868 -15431,-3043 -15501,-3122 -15669,-3311
-Geschwister-Scholl-Str.: Radweg	RW; -14115,-1678 -14151,-1656
-Zehlendorfer Str.: Radweg auf Gehweg	RW 1460,-372 1473,-420 1457,-470 1378,-676 1346,-762
-Oderstr.: Verbundsteinpflasterradweg, teilweise Zweirichtungsradweg, oft wechselnde Seite	RW 595,-310 525,-347 240,-519 -395,-920 -882,-1220
-Zehlendorfer Damm: Radweg	RW -1436,-887 -1378,-1022 -1348,-1098 -1503,-1328 -1573,-1477
-Geschwister-Scholl-Str.: Radweg auf Gehweg	RW2;RW2 -14909,-1818 -14733,-1812 -14612,-1809
-Thomas-Müntzer-Damm: Radweg (Verbundsteinpflaster)	RW -840,-185 -775,-304 -543,-691 -513,-736
-Am Kanal: Radspur	RW4;RW4 -12317,-1212 -12549,-1277 -12666,-1311
-Am Kanal: Radspur	RW4; -12666,-1311 -12674,-1313 -12718,-1327
-Am Kanal: Radweg	RW2; -12718,-1327 -12839,-1342
-Am Kanal: Radweg	RW; -12833,-1365 -12718,-1327
+teilweise Radweg, teilweise Radspur	RW2;RW2 -14859,-2384 -15060,-2626 -15276,-2868 -15431,-3043 -15501,-3122 -15669,-3311
+Radweg	RW; -14115,-1678 -14151,-1656
+Radweg auf Gehweg	RW;RW 1460,-372 1473,-420 1457,-470 1378,-676 1346,-762
+Verbundsteinpflasterradweg, teilweise Zweirichtungsradweg, oft wechselnde Seite	RW;RW 595,-310 525,-347 240,-519 -395,-920 -882,-1220
+	RW;RW -1436,-887 -1378,-1022 -1348,-1098 -1503,-1328 -1573,-1477
+Radweg auf Gehweg	RW2;RW2 -14909,-1818 -14733,-1812 -14612,-1809
+Verbundsteinpflaster	RW;RW -840,-185 -775,-304 -543,-691 -513,-736
+	RW4;RW4 -12317,-1212 -12549,-1277 -12666,-1311
+	RW4; -12666,-1311 -12674,-1313 -12718,-1327
+	RW2; -12718,-1327 -12839,-1342
+	RW; -12833,-1365 -12718,-1327
 #: unverified_by: http://www.ruppin.de/rheinsberg/freizeit/sport/radwege.html vvv
-Radweg zwischen Rheinsberg und Menz (mit Umweg am Roofensee)	RW -24815,76635 -23305,77059 -22937,77020 -22504,76981 -21965,77030 -21728,77161 -21621,77313 -20227,77714 -19875,77881 -19494,78080 -19300,78146 -18544,78020 -17592,77812 -16837,78312 -15379,77129
-Radweg zwischen Zechlinerhütte und Prebelow	RW -27053,82717 -26912,83088 -26693,83080 -26520,83231 -26098,84240 -26120,84667 -26316,84900
+	RW;RW -24815,76635 -23305,77059 -22937,77020 -22504,76981 -21965,77030 -21728,77161 -21621,77313 -20227,77714 -19875,77881 -19494,78080 -19300,78146 -18544,78020 -17592,77812 -16837,78312 -15379,77129
+	RW;RW -27053,82717 -26912,83088 -26693,83080 -26520,83231 -26098,84240 -26120,84667 -26316,84900
 #: unverified_by ^^^
-Menz - Neuglobsow: Radweg (überwiegend auf altem Bahndamm, asphaltiert, einige kurze nichtasphaltierte Stellen)	RW -14512,77750 -14575,78475 -14237,80550 -14354,81575
-Neuglobsow - Fürstenberg: straßenbegleitender asphaltierter Radweg	RW -14354,81575 -12625,81350 -11971,81450 -11849,81547 -10516,83471 -10281,83899 -10109,84134 -10054,84256 -10085,84390 -9850,84800
-Großwoltersdorf - Menu: straßenbegleitender asphaltierter Radweg	RW -12250,73762 -12381,74147 -12575,74512 -13537,75287 -13950,75662 -14862,76637
+überwiegend auf altem Bahndamm, asphaltiert, einige kurze nichtasphaltierte Stellen	RW;RW -14512,77750 -14575,78475 -14237,80550 -14354,81575
+straßenbegleitender asphaltierter Radweg	RW;RW -14354,81575 -12625,81350 -11971,81450 -11849,81547 -10516,83471 -10281,83899 -10109,84134 -10054,84256 -10085,84390 -9850,84800
+straßenbegleitender asphaltierter Radweg	RW;RW -12250,73762 -12381,74147 -12575,74512 -13537,75287 -13950,75662 -14862,76637
 #: by: thomas (kara.)
-Heinrich-Mann-Allee: parallele Nebenstraße	;RW10 -11152,-3498 -11311,-3322 -11438,-3179 -11656,-2944
+	;RW10 -11152,-3498 -11311,-3322 -11438,-3179 -11656,-2944
 #: by: Arne Grein:
-Heinrich-Mann-Allee: Radweg (auf Gehweg)	RW;RW -11656,-2944 -11770,-2743 -11912,-2587 -11995,-2500 -12318,-2192
-Amundsenstr.: Richtung Norden Radspur, Richtung Süden asphaltierter Radweg	RW4;RW2 -15556,429 -15571,612 -15508,785
-B273: Gemeinsamer Geh- und Radweg, Verbundsteinpflaster, benutzungspflichtig	RW2; -15508,785 -15557,809 -16023,1042 -16640,1304 -16727,1370 -16766,1399 -16905,1503 -16897,1518 -16840,1639 -16782,1767 -16706,1911
-B273: Radweg, Betonplatten, benutzungspflichtig	RW2;  -16640,1304 -16023,1042 -15557,809 -15508,785
-Am Neuen Palais: Radspuren	RW3;RW3 -15757,-1758 -15799,-1352
+Radweg (auf Gehweg)	RW;RW -11656,-2944 -11770,-2743 -11912,-2587 -11995,-2500 -12318,-2192
+	RW4; -15556,429 -15571,612 -15508,785
+asphaltiert	RW2; -15508,785 -15571,612 -15556,429
+gemeinsamer Geh- und Radweg, Verbundsteinpflaster	RW2; -15508,785 -15557,809 -16023,1042 -16640,1304 -16727,1370 -16766,1399 -16905,1503 -16897,1518 -16840,1639 -16782,1767 -16706,1911
+Betonplatten	RW2;  -16640,1304 -16023,1042 -15557,809 -15508,785
+	RW3;RW3 -15757,-1758 -15799,-1352
 #: by: http://www.potsdam.de/cms/beitrag/10066037/966975/
-Forststr., Am Wildpark (Potsdam)	RW3;RW3 -15757,-1758 -15815,-1806 -15904,-1738 -16000,-1732 -16033,-2029 -16040,-2163 -15979,-2419 -15839,-2768 -15805,-2868 -15744,-3053 -15723,-3119 -15669,-3311
-Geschwister-Scholl-Str.: Gehweg für Radfahrer freigegeben	RW1; -14909,-1818 -15275,-1791 -15757,-1758
-Reiterweg: Radweg	RW2; -13068,-115 -13111,-136
-Reiterweg: Radspur	RW4; -13111,-136 -13068,-115
-August-Bebel-Str.: Radweg	RW1;RW1 -8417,-1975 -8415,-1928 -8429,-1805
-Neuendorfer Str.: mäßig betonierte Radwege	RW2;RW1 -7878,-3090 -7971,-3373 -8030,-3538 -8032,-3710 -8034,-3922 -8038,-4093
-Zum Kirchsteigfeld: Radspur	RW4; -8038,-4093 -8040,-4148 -7976,-4476
-Zum Kirchsteigfeld: asphaltierter Radweg	RW2; -7976,-4476 -8040,-4148 -8038,-4093
+	RW3;RW3 -15757,-1758 -15815,-1806 -15904,-1738 -16000,-1732 -16033,-2029 -16040,-2163 -15979,-2419 -15839,-2768 -15805,-2868 -15744,-3053 -15723,-3119 -15669,-3311
+Gehweg für Radfahrer freigegeben	RW1; -14909,-1818 -15275,-1791 -15757,-1758
+Radweg	RW2; -13068,-115 -13111,-136
+Radspur	RW4; -13111,-136 -13068,-115
+	RW1;RW1 -8417,-1975 -8415,-1928 -8429,-1805
+mäßig betonierte Radwege	RW2;RW1 -7878,-3090 -7971,-3373 -8030,-3538 -8032,-3710 -8034,-3922 -8038,-4093
+	RW4; -8038,-4093 -8040,-4148 -7976,-4476
+asphaltiert	RW2; -7976,-4476 -8040,-4148 -8038,-4093
 #: note: Dresden vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
-Radspur	RW 36175,-150268 36381,-150315 36531,-150343 36931,-150453
-Radweg	RW; 36665,-150800 36375,-150750 36243,-150771
-Radspur	RW; 36243,-150771 36375,-150750 36665,-150800
-Radweg	RW 36493,-151565 36918,-151787
-Radweg	RW 36918,-151787 37093,-151665
+	RW4?;RW4? 36175,-150268 36381,-150315 36531,-150343 36931,-150453
+	RW;RW 36665,-150800 36375,-150750 36243,-150771
+	RW4?; 36243,-150771 36375,-150750 36665,-150800
+	RW;RW 36493,-151565 36918,-151787
+	RW;RW 36918,-151787 37093,-151665
 #: add_fragezeichen: andere Straßenseite auch?
-Radweg	RW; 37093,-151665 37375,-151190
-Radspur	RW 37375,-151190 37628,-150734
+	RW; 37093,-151665 37375,-151190
+	RW4?;RW4? 37375,-151190 37628,-150734
 #: add_fragezeichen: andere Straßenseite auch?
-Radweg	RW; 37628,-150734 37756,-150359
-Radweg auf der Parkseite, Parkweg	RW 39228,-151762 38971,-152203 38759,-152584
+	RW; 37628,-150734 37756,-150359
+Radweg auf der Parkseite, Parkweg	RW;RW 39228,-151762 38971,-152203 38759,-152584
 #: note: ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Neuendorf - Brück: straßenbegleitender Radweg	RW -29244,-23127 -30149,-22937 -30811,-22899 -30918,-23341 -31086,-23556 -31807,-23945 -31976,-24117 -32207,-24248 -32505,-24207 -32546,-24378 -32777,-24700
-Trebitz - Baitz: asphaltierter Radweg	RW -35083,-26912 -35860,-26653 -36180,-26455 -36592,-26333
-Niederneuendorfer Str.: Zweirichtungsradweg	RW -3497,20003 -3371,19864 -3171,19631
-Röpersdorf: Radfahren auf Gehweg erlaubt	RW 38562,97687 38615,98224
-Badeweg Prenzlau: Zweirichtungsradweg	RW 38939,101112 39106,101231
-Uckerpromenade: gemeinsamer Geh- und Radweg, überwiegend fester Sand	RW 39106,101231 39275,101193 39474,100982 39671,100750 40056,99762
-asphaltierter Zweirichtungsradweg auf der südlichen Seite	RW8;RW2 77835,204 77326,287 76839,583 76082,756 75743,878 75452,725 75117,598 74815,386 74683,385
-Mölschow - Trassenheide: Radweg	RW 37100,186740 37881,187596
-Trassenheide - Ostsee: Radweg	RW 38056,187615 38435,187917 38457,187932 38762,188150
-#: add_fragezeichen: nicht ganz sicher:
-Lessingstr.: optionaler Radweg	RW -13749,105474 -12659,104581 -12122,104267 -12062,104131
-B 198: benutzungspflichtige Radwege auf beiden Seiten	RW -12062,104131 -11793,104246 -11208,104538
-B 198: benutzungspflichtiger Zweirichtungsradweg, überwiegend Asphalt, nur kurze Verbundsteinpflaster-Abschnitte, einige sehr enge Kurven, schmutzig	RW -11208,104538 -8925,105645 -7570,105900 -7335,106120
+straßenbegleitender Radweg	RW;RW -29244,-23127 -30149,-22937 -30811,-22899 -30918,-23341 -31086,-23556 -31807,-23945 -31976,-24117 -32207,-24248 -32505,-24207 -32546,-24378 -32777,-24700
+asphaltiert	RW;RW -35083,-26912 -35860,-26653 -36180,-26455 -36592,-26333
+Zweirichtungsradweg	RW;RW -3497,20003 -3371,19864 -3171,19631
+Radfahren auf Gehweg erlaubt	RW;RW 38562,97687 38615,98224
+Zweirichtungsradweg	RW;RW 38939,101112 39106,101231
+gemeinsamer Geh- und Radweg, überwiegend fester Sand	RW;RW 39106,101231 39275,101193 39474,100982 39671,100750 40056,99762
+asphaltiert	RW8;RW2 77835,204 77326,287 76839,583 76082,756 75743,878 75452,725 75117,598 74815,386 74683,385
+	RW;RW 37100,186740 37881,187596
+	RW;RW 38056,187615 38435,187917 38457,187932 38762,188150
+#: XXX: nicht ganz sicher:
+optionaler Radweg	RW;RW -13749,105474 -12659,104581 -12122,104267 -12062,104131
+	RW2;RW2 -12062,104131 -11793,104246 -11208,104538
+benutzungspflichtiger Zweirichtungsradweg, überwiegend Asphalt, nur kurze Verbundsteinpflaster-Abschnitte, einige sehr enge Kurven, schmutzig	RW;RW -11208,104538 -8925,105645 -7570,105900 -7335,106120
 #: note: laut Bild http://www.bsisb.de/sb/b101/b101_31_4a.jpg
-Gemeinsamer Rad- und Gehweg auf der nördlichen Seite	RW 5394,-3053 4283,-2370
-Zweirichtungsradweg auf östlicher Seite, teils asphaltiert	RW 47432,119730 47554,120007 47547,120819 47501,121206 47549,121619
-Radweg auf Gehweg, Verbundsteinpflaster	RW 46859,118757 47008,118886 47187,119302 47432,119730
-asphaltierter Zweirichtungsradweg auf östlicher Seite	RW2;RW8 22532,31955 22527,32200 22519,32552
-Radweg auf Gehweg (östliche Seite)	RW2;RW8 22519,32552 22500,32911 22512,33312 22414,33559
-Überwiegend asphaltierter Zweirichtungsradweg auf der nördlichen Seite	RW2;RW8 23759,49971 23379,49925
+gemeinsamer Rad- und Gehweg	RW2;RW8 5394,-3053 4283,-2370
+teils asphaltiert	RW;RW8? 47432,119730 47554,120007 47547,120819 47501,121206 47549,121619
+Radweg auf Gehweg, Verbundsteinpflaster	RW;RW 46859,118757 47008,118886 47187,119302 47432,119730
+asphaltiert	RW2;RW8 22532,31955 22527,32200 22519,32552
+Radweg auf Gehweg	RW2;RW8 22519,32552 22500,32911 22512,33312 22414,33559
+Überwiegend asphaltiert	RW2;RW8 23759,49971 23379,49925
 Radweg auf Gehweg, Verbundsteinpflaster	RW8;RW2 22517,31745 22445,31556 22319,31203 22318,31108
 Radweg auf Gehweg, Verbundsteinpflaster	RW2;RW8 22318,31108 22378,30943
 Radweg auf Gehweg	RW2;RW8 22206,30826 22283,30775 22352,30734
-B158: Zweirichtungsradweg auf der nordöstlichen Seite, Verbundsteinpflaster	RW 24203,22171 23930,21873
-B158: Zweirichtungsradweg auf der nordöstlichen Seite, asphaltiert, ca. 2m breit	RW 23930,21873 23565,21396 23281,21043 22529,19361
-Berliner Str. (Schwedt): Verbundsteinpflasteradweg, benutzungspflichtig	RW 69606,73554 69733,73945 69827,74244 70077,75094 70164,75201 70636,75624 70700,75740
-Berliner Str. (Schwedt): Zweirichtungsradweg (östliche Seite), Verbundsteinpflaster, benutzungspflichtig	RW 70700,75740 70700,75848 70700,76125 70570,76523 70500,76862
-Schwedt - Vierraden: asphaltierter Radweg, Zweirichtungsradweg (östliche Seite), benutzungspflichtig	RW 70500,76862 70546,77321 70464,77755 70489,77838
-Sommersdorf: Zweirichtungsradweg (westliche Seite), Verbundsteinpflaster, benutzungspflichtig	RW 61124,97528 61139,97940 61393,98356 61351,98696
-Erkner: Suggestivstreifen	RW 34142,2742 34326,2915 34293,3076 34271,3184
-Rathenow: überwiegend Suggestivstreifen	RW -62839,21218 -62285,21020 -61627,20789 -61212,20700 -60365,20706
-Päwesin - Brandenburg: benutzungspflichtiger asphaltierter Zweirichtungsradweg auf der östlichen Seite	RW -36502,10426 -36630,10198 -37029,9856 -37071,9625 -37035,9143 -37495,8583 -37541,7333
-Gutenpaaren - Zachow: teilweise mit Radwegen (Gehweg bzw. Radstreifen)	RW -33196,7156 -32754,7349 -31846,7839 -31583,7939 -31328,7955
-Brückenkopf: benutzungspflichtiger asphaltierter Zweirichtungsradweg auf der südlichen Seite	RW -30706,8406 -29594,8467 -28778,8193 -28216,8171 -27406,8069
-Pappelallee: benutzungspflichtiger Zweirichtungsradweg auf der nördlichen Seite	RW2;RW8 -13091,-8 -13240,32 -13367,66 -13436,84 -13561,117 -13794,178 -13811,182 -13945,217 -14098,260 -14235,298 -14435,357 -14547,388 -14676,418 -14859,421
-Brentanoweg: verkehrsberuhigt	RW6;RW6 -13406,-396 -13452,-358 -13581,-307
-Ulanenweg (Potsdam): verkehrsberuhigt	RW6;RW6 -13155,-379 -13285,-360 -13311,-365 -13415,-350 -13452,-358
-Bruno-Taut-Str.: verkehrsberuhigt	RW6;RW6 -13067,1506 -12939,1493
-Herta-Hammerbacher-Str.: verkehrsberuhigt	RW6;RW6 -14115,1174 -14224,1240
-Walter-Funcke-Str.: verkehrsberuhigt	RW6;RW6 -14199,1033 -14134,1008 -14053,985 -13903,941
-Hermann-Göritz-Str.: verkehrsberuhigt	RW6;RW6 -13961,836 -14094,917
-Melchior-Bauer-Str.: verkehrsberuhigt	RW6;RW6 -14363,1008 -14259,937
-Dennis-Gabor-Str.: verkehrsberuhigt	RW6;RW6 -14435,643 -14497,537 -14539,458
-Ludwig-Boltzmann-Str.: verkehrsberuhigt	RW6;RW6 -14607,607 -14497,537 -14374,458
-Georg-Hermann-Allee: Radspuren	RW3;RW3 -13561,117 -13529,226 -13507,308 -13486,385 -13456,500
-Voltaireweg	RW2;RW4 -13111,-136 -13206,-139
-Voltaireweg	RW4;RW4 -13206,-139 -13450,-211 -13645,-266
+Verbundsteinpflaster	RW;RW8? 24203,22171 23930,21873
+asphaltiert, ca. 2m breit	RW;RW8? 23930,21873 23565,21396 23281,21043 22529,19361
+Verbundsteinpflasterradweg	RW2;RW2 69606,73554 69733,73945 69827,74244 70077,75094 70164,75201 70636,75624 70700,75740
+Verbundsteinpflasterradweg	RW2;RW8 70700,75740 70700,75848 70700,76125 70570,76523 70500,76862
+asphaltiert	RW2;RW8 70500,76862 70546,77321 70464,77755 70489,77838
+Verbundsteinpflaster	RW8?;RW 61124,97528 61139,97940 61393,98356 61351,98696
+	RW3;RW3 34142,2742 34326,2915 34293,3076 34271,3184
+überwiegend Suggestivstreifen	RW3;RW3 -62839,21218 -62285,21020 -61627,20789 -61212,20700 -60365,20706
+asphaltiert	RW8;RW2 -36502,10426 -36630,10198 -37029,9856 -37071,9625 -37035,9143 -37495,8583 -37541,7333
+teilweise mit Radwegen (Gehweg bzw. Radstreifen)	RW;RW -33196,7156 -32754,7349 -31846,7839 -31583,7939 -31328,7955
+asphaltiert	RW2;RW8 -30706,8406 -29594,8467 -28778,8193 -28216,8171 -27406,8069
+	RW2;RW8 -13091,-8 -13240,32 -13367,66 -13436,84 -13561,117 -13794,178 -13811,182 -13945,217 -14098,260 -14235,298 -14435,357 -14547,388 -14676,418 -14859,421
+	RW6;RW6 -13406,-396 -13452,-358 -13581,-307
+	RW6;RW6 -13155,-379 -13285,-360 -13311,-365 -13415,-350 -13452,-358
+	RW6;RW6 -13067,1506 -12939,1493
+	RW6;RW6 -14115,1174 -14224,1240
+	RW6;RW6 -14199,1033 -14134,1008 -14053,985 -13903,941
+	RW6;RW6 -13961,836 -14094,917
+	RW6;RW6 -14363,1008 -14259,937
+	RW6;RW6 -14435,643 -14497,537 -14539,458
+	RW6;RW6 -14607,607 -14497,537 -14374,458
+	RW3;RW3 -13561,117 -13529,226 -13507,308 -13486,385 -13456,500
+	RW2;RW4 -13111,-136 -13206,-139
+	RW4;RW4 -13206,-139 -13450,-211 -13645,-266
 #: by: http://www.nationaler-radverkehrsplan.de/neuigkeiten/news.php?id=1324
-B5: Radweg	RW -26075,21748 -26450,21882 -27692,22148 -28075,22250 -28831,22451 -30773,23095 -31230,23101
+	RW;RW -26075,21748 -26450,21882 -27692,22148 -28075,22250 -28831,22451 -30773,23095 -31230,23101
 #: by: http://www.nationaler-radverkehrsplan.de/neuigkeiten/news.php?id=1324
-B5: Radweg	RW -31230,23101 -32007,22836 -34213,23540 -36413,24363 -36882,24414 -38092,24817 -38964,25106 -40033,25453
+	RW;RW -31230,23101 -32007,22836 -34213,23540 -36413,24363 -36882,24414 -38092,24817 -38964,25106 -40033,25453
 #: by: http://www.nationaler-radverkehrsplan.de/neuigkeiten/news.php?id=1644
-B1: Radweg	RW 88364,18251 90278,18738 91438,18959 92618,19763 92742,19890 92925,19897 92970,19935 92970,20194 93096,20241 93405,20640 93478,20733
+	RW;RW 88364,18251 90278,18738 91438,18959 92618,19763 92742,19890 92925,19897 92970,19935 92970,20194 93096,20241 93405,20640 93478,20733
 #: by: http://www.nationaler-radverkehrsplan.de/neuigkeiten/news.php?id=1644
 #: confirmed_by: srt
-B111: separater Radweg, bis 3m breit	RW 37278,185225 37903,185677 38118,185746 38898,185789 39862,185533 40485,185461 40722,185530
-B111: gemeinsamer Rad- und Gehweg auf der nördlichen Seite, asphaltiert	RW2;RW9 60941,170792 61782,170086 62155,169863 62254,169788
-B111: gemeinsamer Rad- und Gehweg auf der südlichen Seite; zunächst Verbundsteinpflaster, dann asphaltiert	RW 56606,174200 56991,174001 57351,173906 57489,173876 57621,173775
+separater Radweg, bis 3m breit	RW;RW 37278,185225 37903,185677 38118,185746 38898,185789 39862,185533 40485,185461 40722,185530
+gemeinsamer Rad- und Gehweg, asphaltiert	RW2;RW9 60941,170792 61782,170086 62155,169863 62254,169788
+gemeinsamer Rad- und Gehweg; zunächst Verbundsteinpflaster, dann asphaltiert	RW;RW8? 56606,174200 56991,174001 57351,173906 57489,173876 57621,173775
 #: XXX gesehen an der Grenze; wie weit in die Stadt geht der Radweg rein?
-Swinemünde: Verbundsteinpflasterradweg auf der südlichen Seite, streng benutzungspflichtig	RW 62473,169641 63722,168821
+Verbundsteinpflasterradweg auf der südlichen Seite, streng benutzungspflichtig	RW;RW 62473,169641 63722,168821
 #: by: http://www.nationaler-radverkehrsplan.de/neuigkeiten/news.php?id=1644
-L33: Radweg auf der südwestlichen Seite, Betonsteinpflaster, bis 2,5m breit	RW 1763,120930 1435,120973 1303,121143 842,121718 206,122655 -121,122847
-Benutzungspflichtiger Radweg	RW 18578,-1130 18539,-1021 18423,-843 18177,-449 18168,-434 18127,-367
+Betonsteinpflaster, bis 2,5m breit	RW8?;RW 1763,120930 1435,120973 1303,121143 842,121718 206,122655 -121,122847
+	RW2;RW2 18578,-1130 18539,-1021 18423,-843 18177,-449 18168,-434 18127,-367
 Gehwegradweg	RW8;RW2 26439,-17829 26639,-17861 26706,-17867 26718,-17867 26832,-17882 27416,-17969 27605,-17999
 #: note: im Westen gesehen, im Osten durch osm bestätigt
 asphaltiert	RW2;RW8 27605,-17999 28048,-18009 28415,-18028 28642,-17918
-Rudower Str.: Radweg auf Gehweg	RW 15289,-2873 14977,-3505 14878,-3602
-Anklam: Verbundsteinpflasterradwege auf Gehweg	RW 27589,161496 27408,161558 27157,161625 26959,161572 26892,161556 26697,161590
-Anklam, Peenedamm: Radwege	RW 26697,161590 26698,161653 26699,161759 26699,161847 26700,161925
-B179: asphaltierter Zweirichtungsradweg auf der östlichen Seite	RW 22003,-1625 21696,-2925 21687,-3601 21037,-4325
-Flaeming-Skate: asphaltierter Zweirichtungsradweg	RW -3794,-36334 -3564,-36821 -3179,-37359 -2681,-37520 -2475,-37688 -2152,-37994 -1903,-38119 -1271,-38225 -972,-38425
-Klingmühl - Lichterfeld: asphaltierter Zweirichtungsradweg auf der sudlichen Seite	RW 39739,-89862 38478,-89727
-Finsterwalde: Radweg auf Gehweg	RW 33666,-87949 33618,-87841 33549,-87679
-Finsterwalde: Radweg	RW 33185,-86787 33158,-86308 33115,-86029
-Annahütte: Radweg	RW 45872,-93461 45277,-93455
-Großräschen: Radweg auf Gehweg	RW 53560,-90265 53147,-90403 53144,-90435
-B96: Radweg auf Gehweg	RW 53510,-90531 53144,-90435 53039,-90432 52580,-90602
-B96: Verbundsteinpflaster-Zweirichtungsradweg auf der südlichen Seite	RW 52580,-90602 52531,-90608 51084,-90818 50965,-90836 50434,-90824 50146,-90787
-Zehlendorfer Damm: Verbundsteinpflasterradwege	RW -4,1133 -129,989 -203,906 -371,715 -475,568 -625,189 -749,-74 -797,-138 -840,-185 -927,-280 -1436,-887
-Ernst-Thälmann-Str.: Radweg auf Gehweg	RW -371,715 -426,773 -492,795 -531,807 -641,806 -818,789 -1196,724 -1427,684 -1642,659 -1709,653
-Stahnsdorfer Damm: Radweg auf Gehweg	RW -2743,-934 -2941,-805 -3112,-655 -3412,-291 -3574,-163 -3663,-91 -3875,88
-Lychen: Radweg auf Gehweg	RW 2745,89716 2797,89387
-Lychen - Fürstenberg: Verbundsteinpflasterradweg auf Gehweg	RW 2797,89387 2480,89399 2111,89378 1907,89597 1544,89701 1090,89570
-Lychen - Fürstenberg: asphaltierter Zweirichtungsradweg auf der nördlichen Seite	RW 1090,89570 627,89430 234,89271
-Fürstenberg: Verbundsteinpflasterradweg auf Gehweg, teilweise sehr eng	RW -8777,85887 -8775,85947 -8738,86096 -8726,86224 -8711,86273 -8641,86541
-Tassow - Schönfeld: Verbundsteinpflaster-Radweg	RW; 72960,97477 72583,97595 72309,97699
-Tassow - Schönfeld: Verbundsteinpflaster-Zweirichtungsradweg auf der westlichen Seite	RW 72309,97699 72151,97918
-Tassow - Schönfeld: asphaltierter Zweirichtungsradweg auf der westlichen Seite	RW 72151,97918 72038,98101 71684,98650 71282,98881
-Sommersdorf: Verbundsteinpflaster-Radweg	RW2;RW8 61657,98779 61457,98750
-Kamp - Anklam: Zweirichtungsradweg auf der westlichen Seite	RW 28842,161837 28567,161564 28473,161345
-Bargischow - Anklam: Radweg, teilweise als Zweirichtungsradweg	RW 28473,161345 28139,161441 27778,161482 27589,161496
+Radweg auf Gehweg	RW;RW 15289,-2873 14977,-3505 14878,-3602
+Verbundsteinpflasterradwege auf Gehweg	RW;RW 27589,161496 27408,161558 27157,161625 26959,161572 26892,161556 26697,161590
+	RW;RW 26697,161590 26698,161653 26699,161759 26699,161847 26700,161925
+asphaltiert	RW8?;RW 22003,-1625 21696,-2925 21687,-3601 21037,-4325
+asphaltierter Zweirichtungsradweg	RW;RW -3794,-36334 -3564,-36821 -3179,-37359 -2681,-37520 -2475,-37688 -2152,-37994 -1903,-38119 -1271,-38225 -972,-38425
+asphaltiert	RW8?;RW 39739,-89862 38478,-89727
+Radweg auf Gehweg	RW;RW 33666,-87949 33618,-87841 33549,-87679
+	RW;RW 33185,-86787 33158,-86308 33115,-86029
+	RW;RW 45872,-93461 45277,-93455
+Radweg auf Gehweg	RW;RW 53560,-90265 53147,-90403 53144,-90435
+Radweg auf Gehweg	RW;RW 53510,-90531 53144,-90435 53039,-90432 52580,-90602
+Verbundsteinpflaster	RW8?;RW 52580,-90602 52531,-90608 51084,-90818 50965,-90836 50434,-90824 50146,-90787
+Verbundsteinpflaster	RW;RW -4,1133 -129,989 -203,906 -371,715 -475,568 -625,189 -749,-74 -797,-138 -840,-185 -927,-280 -1436,-887
+Radweg auf Gehweg	RW;RW -371,715 -426,773 -492,795 -531,807 -641,806 -818,789 -1196,724 -1427,684 -1642,659 -1709,653
+Radweg auf Gehweg	RW;RW -2743,-934 -2941,-805 -3112,-655 -3412,-291 -3574,-163 -3663,-91 -3875,88
+Radweg auf Gehweg	RW;RW 2745,89716 2797,89387
+Verbundsteinpflasterradweg auf Gehweg	RW;RW 2797,89387 2480,89399 2111,89378 1907,89597 1544,89701 1090,89570
+asphaltiert	RW;RW8? 1090,89570 627,89430 234,89271
+Verbundsteinpflasterradweg auf Gehweg, teilweise sehr eng	RW;RW -8777,85887 -8775,85947 -8738,86096 -8726,86224 -8711,86273 -8641,86541
+Verbundsteinpflaster	RW; 72960,97477 72583,97595 72309,97699
+Verbundsteinpflaster	RW8?;RW 72309,97699 72151,97918
+asphaltiert	RW8?;RW 72151,97918 72038,98101 71684,98650 71282,98881
+Verbundsteinpflaster	RW2;RW8 61657,98779 61457,98750
+	RW;RW8? 28842,161837 28567,161564 28473,161345
+teilweise Zweirichtungsradweg	RW;RW 28473,161345 28139,161441 27778,161482 27589,161496
 #: note: vom Zug aus gesehen
 #: add_fragezeichen: wie weit geht der Radweg in Dahlewitz?
-Dahlewitz: Zweirichtungsradweg auf Gehweg, südlichen Seite	RW 11875,-8728 11791,-8700 11555,-8625
-Jägerallee: Radspur	RW4; -13111,-136 -13132,-256 -13137,-278 -13155,-379 -13182,-515
-Jägerallee: Gehweg für Radfahrer freigegeben	RW1; -13182,-515 -13155,-379 -13137,-278 -13132,-256 -13111,-136
-Jägerallee: Gehweg für Radfahrer freigegeben	RW1;RW1 -13182,-515 -13221,-718 -13231,-763
-Geltow: asphaltierter Zweirichtungsradweg auf der östlichen Seite	RW;RW8? -18025,-6370 -18014,-6027 -18144,-5817
-B1: kombinierte Geh- und Radwege, Verbundsteinpflasterradweg	RW;RW -19002,-5271 -18894,-5272 -18515,-5282 -17806,-5251 -17682,-5054
-B1: asphaltierte Radwege	RW;RW -17682,-5054 -17564,-4895 -17434,-4782 -17194,-4659 -17122,-4622 -16333,-3922 -16151,-3770
-B1: betonierte Radwege	RW;RW -16151,-3770 -16039,-3697 -15669,-3311
+	RW8?;RW 11875,-8728 11791,-8700 11555,-8625
+	RW4; -13111,-136 -13132,-256 -13137,-278 -13155,-379 -13182,-515
+Gehweg für Radfahrer freigegeben	RW1; -13182,-515 -13155,-379 -13137,-278 -13132,-256 -13111,-136
+Gehweg für Radfahrer freigegeben	RW1;RW1 -13182,-515 -13221,-718 -13231,-763
+asphaltiert	RW;RW8? -18025,-6370 -18014,-6027 -18144,-5817
+kombinierte Geh- und Radwege, Verbundsteinpflaster	RW;RW -19002,-5271 -18894,-5272 -18515,-5282 -17806,-5251 -17682,-5054
+asphaltiert	RW;RW -17682,-5054 -17564,-4895 -17434,-4782 -17194,-4659 -17122,-4622 -16333,-3922 -16151,-3770
+betoniert	RW;RW -16151,-3770 -16039,-3697 -15669,-3311
 #: by: http://www.mir.brandenburg.de/cms/detail.php?id=290488&_siteid=74
-Radweg zwischen Wandlitz und Klosterfelde: 2m breiter Zweirichtungsradweg	RW 13546,37474 13908,37983 14449,38733 14498,38870 14551,39291 14698,40345 14830,41000 14923,42035 14962,42702
-Wetzlarer Str.: gemeinsamer Geh- und Zweirichtungsradweg auf der westlichen Seite	RW8?;RW -9088,-3962 -9047,-3889 -9015,-3831 -8997,-3762 -8943,-3646 -8846,-3474 -8500,-2856
-Bahnstr. (Michendorf): gemeinsamer Geh- und Zweirichtungsradweg auf der westlichen Seite	RW -14705,-10543 -14831,-10652 -15012,-10820 -15137,-10935 -15182,-10981
-Borkheide - Borkwalde: Zweirichtungsradweg auf der westlichen Seite	RW -26258,-20094 -26809,-18383
-Am Neuen Markt: verkehrsberuhigt	RW6;RW6 -12793,-1498 -12870,-1493 -12865,-1462 -12913,-1451 -12975,-1363 -12976,-1356
-Mittelstr. (Potsdam): verkehrsberuhigt	RW6;RW6 -12884,-769 -12712,-734 -12545,-698
-Kiepenheuerallee	RW3; -13546,527 -13456,500
-Kiepenheuerallee/Am Schragen: Radspuren	RW3;RW3 -13456,500 -13311,462 -13203,434 -13157,394 -13094,347 -13036,342
-Friedrich-Ebert-Str. (Köthen): Radweg	RW2;RW2 -84506,-74450 -84172,-74293
-Fasanerieallee (Köthen): Radweg	RW8;RW2 -86035,-74311 -85944,-74280 -85824,-74269 -85712,-74262
-Güterseeweg (Köthen): Radweg	RW2;RW -84885,-72975 -85881,-73268
-Maxdorfer Str. (Köthen): Radweg	RW2;RW -85881,-73268 -85879,-73551 -85815,-73734
-Maxdorfer Str. (Köthen): Gehweg für Radfahrer frei	RW1;RW1 -85815,-73734 -85930,-74043
-B187a: Verbundsteinpflasterradweg auf Gehweg	RW2;RW? -81082,-63712 -81456,-64093
-B187a: Asphaltierter Radweg	RW2;RW? -81456,-64093 -81593,-64262
+#: XXX auf welcher Straßenseite?
+2m breiter Zweirichtungsradweg	RW;RW 13546,37474 13908,37983 14449,38733 14498,38870 14551,39291 14698,40345 14830,41000 14923,42035 14962,42702
+gemeinsamer Geh- und Zweirichtungsradweg	RW8?;RW -9088,-3962 -9047,-3889 -9015,-3831 -8997,-3762 -8943,-3646 -8846,-3474 -8500,-2856
+gemeinsamer Geh- und Zweirichtungsradweg	RW;RW8? -14705,-10543 -14831,-10652 -15012,-10820 -15137,-10935 -15182,-10981
+	RW8?;RW -26258,-20094 -26809,-18383
+	RW6;RW6 -12793,-1498 -12870,-1493 -12865,-1462 -12913,-1451 -12975,-1363 -12976,-1356
+	RW6;RW6 -12884,-769 -12712,-734 -12545,-698
+	RW3; -13546,527 -13456,500
+	RW3;RW3 -13456,500 -13311,462 -13203,434 -13157,394 -13094,347 -13036,342
+	RW2;RW2 -84506,-74450 -84172,-74293
+	RW8;RW2 -86035,-74311 -85944,-74280 -85824,-74269 -85712,-74262
+	RW2;RW -84885,-72975 -85881,-73268
+	RW2;RW -85881,-73268 -85879,-73551 -85815,-73734
+Gehweg für Radfahrer frei	RW1;RW1 -85815,-73734 -85930,-74043
+Verbundsteinpflasterradweg auf Gehweg	RW2;RW? -81082,-63712 -81456,-64093
+asphaltiert	RW2;RW? -81456,-64093 -81593,-64262
 #: note: wahrscheinlich wegen der Steigung
-Micheln: Asphaltierter Radweg	RW2;RW0 -85081,-67637 -85131,-67850 -85181,-67878
-Altwarp - Ueckermünde: Zweirichtungsradweg, Verbundsteinpflaster, nördliche Seite	RW 56847,148593 56657,148680 56377,148808 56269,148878 56122,148919 56014,148924 55796,148871
-Altwarp - Ueckermünde: Asphalt	RW 55796,148871 55463,148782 55304,148782 54926,148794
-Altwarp - Ueckermünde: Asphaltradweg	RW 54926,148794 54719,148801 54453,148811 54063,148828 54024,148834
-Löcknitz: Radweg	RW 63580,117446 64329,117461
-B104: asphaltierter Zweirichtungsradweg, nördliche Seite	RW 64329,117461 64421,117480 64798,117480 65166,117698
-B104: Zweirichtungsradweg, Verbundsteinpflaster, nördliche Seite	RW 65166,117698 65275,117762
-B104: asphaltierter Zweirichtungsradweg, nördliche Seite	RW 65275,117762 65426,117851 66106,117879
-Hintersee - Löcknitz: asphaltierter Zweirichtungsradweg, östliche Seite	RW 65329,132574 65560,133122 65582,133468 65706,133604 65976,133649 66236,133947 66414,134436 66598,134671 67379,135216 67525,135724 67385,135946 67330,136163
-	RW 49566,68311 49650,68406
-Auf beiden Seiten Verbundsteinpflasterradweg, zusammen mit Gehweg	RW 48996,71176 48982,71121 48929,70947
+asphaltiert	RW2;RW0 -85081,-67637 -85131,-67850 -85181,-67878
+Verbundsteinpflaster	RW;RW8? 56847,148593 56657,148680 56377,148808 56269,148878 56122,148919 56014,148924 55796,148871
+Asphalt	RW;RW 55796,148871 55463,148782 55304,148782 54926,148794 54719,148801 54453,148811 54063,148828 54024,148834
+	RW;RW 63580,117446 64329,117461
+asphaltiert	RW8?;RW 64329,117461 64421,117480 64798,117480 65166,117698
+Verbundsteinpflaster	RW8?;RW 65166,117698 65275,117762
+asphaltiert	RW8?;RW 65275,117762 65426,117851 66106,117879
+asphaltiert	RW;RW8? 65329,132574 65560,133122 65582,133468 65706,133604 65976,133649 66236,133947 66414,134436 66598,134671 67379,135216 67525,135724 67385,135946 67330,136163
+	RW;RW 49566,68311 49650,68406
+Verbundsteinpflasterradweg, zusammen mit Gehweg	RW;RW 48996,71176 48982,71121 48929,70947
 #: add_fragezeichen: Geht der Radweg bis zur B2?
-Zweirichtungsradweg auf der nördlichen Seite	RW 50314,68648 50364,68651 50557,68650 50891,68557
-Fahrradstraße	RW7 47499,70761 47463,70752 47426,70726 47457,70641 47442,70600 47277,70582 47172,70534
-Zweirichtungsradweg auf der nördlichen Seite	RW9;RW2 -11822,-1959 -11197,-2032 -11160,-2014
-Mellenthin - Neppermin: verkehrsberuhigt	RW6 50035,170731 50047,170808 50081,170887 50081,170948 50061,171057 50079,171165 50181,171331
-Ahlbeck: gemeinsamer Geh- und Radweg auf der nördlichen Seite	RW2;RW9 60077,171695 60105,171680 60200,171623 60293,171553 60338,171543 60383,171530 60406,171501
-Neppermin - Mellenthin - B110: asphaltierter Radweg auf der westlichen Seite	RW 50049,170583 49835,170038 49737,169837 49114,169212 49028,168646 48995,168300 48954,167870
-nördlicher Gehweg für Radfahrer freigegeben	RW1;RW9 28853,-19212 28615,-19431 28251,-19639 28164,-19771 28071,-19862
-Stegelitz: westlicher Gehweg für Radfahrer freigegeben	RW1;RW9 39634,81668 39576,81399
-Stegelitz: Gehwege für Radfahrer freigegeben	RW1;RW1 39576,81399 39550,81278 39303,80853 38929,80688
-Werbellinsee: asphaltierter Zweirichtungsradweg auf der westlichen Seite	RW 30960,61370 30784,60950
-Werbellinsee: Verbundsteinpflaster-Zweirichtungsradweg auf der westlichen Seite	RW 30784,60950 30781,60566
-Werbellinsee: asphaltierter Zweirichtungsradweg auf der nordwestlichen Seite	RW 30384,59443 29884,58862 29996,58615 29856,58262 29771,57837 29812,57628 29056,57503 28199,57257 27851,57084 27546,56968 27359,56787 27137,56650 26792,56558
-Eichhorst: asphaltierter Zweirichtungsradweg auf der südöstlichen Seite	RW 25512,54174 25488,54151
-Eichhorst - Finowfurt: asphaltierter Zweirichtungsradweg auf der östlichen Seite	RW8;RW2 25488,54151 25401,53587
-Eichhorst - Finowfurt: asphaltierter Zweirichtungsradweg auf der westlichen Seite	RW2;RW8 25401,53587 25395,53549 25347,53338
-Am Bahnhof Bernau: Suggestivstreifen	RW 22868,30412 22904,30359
-	RW 2246,31162 2219,31171 2173,31187 2126,31207 2042,31236 1931,31275 1918,31279 1762,31318 1737,31303
+	RW8?;RW 50314,68648 50364,68651 50557,68650 50891,68557
+	RW7;RW7 47499,70761 47463,70752 47426,70726 47457,70641 47442,70600 47277,70582 47172,70534
+	RW9;RW2 -11822,-1959 -11197,-2032 -11160,-2014
+	RW6;RW6 50035,170731 50047,170808 50081,170887 50081,170948 50061,171057 50079,171165 50181,171331
+gemeinsamer Geh- und Radweg	RW2;RW9 60077,171695 60105,171680 60200,171623 60293,171553 60338,171543 60383,171530 60406,171501
+asphaltiert	RW;RW8? 50049,170583 49835,170038 49737,169837 49114,169212 49028,168646 48995,168300 48954,167870
+Gehweg für Radfahrer freigegeben	RW1;RW9 28853,-19212 28615,-19431 28251,-19639 28164,-19771 28071,-19862
+Gehweg für Radfahrer freigegeben	RW1;RW9 39634,81668 39576,81399
+Gehwege für Radfahrer freigegeben	RW1;RW1 39576,81399 39550,81278 39303,80853 38929,80688
+asphaltiert	RW;RW8? 30960,61370 30784,60950
+Verbundsteinpflaster	RW;RW8? 30784,60950 30781,60566
+asphaltiert	RW;RW8? 30384,59443 29884,58862 29996,58615 29856,58262 29771,57837 29812,57628 29056,57503 28199,57257 27851,57084 27546,56968 27359,56787 27137,56650 26792,56558
+asphaltiert	RW8?;RW 25512,54174 25488,54151
+asphaltiert	RW8;RW2 25488,54151 25401,53587
+asphaltiert	RW2;RW8 25401,53587 25395,53549 25347,53338
+Suggestivstreifen	RW3;RW3 22868,30412 22904,30359
+	RW;RW 2246,31162 2219,31171 2173,31187 2126,31207 2042,31236 1931,31275 1918,31279 1762,31318 1737,31303
 	RW4;RW2 1346,-762 1212,-706 925,-684 741,-584 586,-627 465,-662 348,-743
 	RW4;RW4 348,-743 -71,-1037
-Gemeinsamer Rad- und Gehweg	RW2;RW2 -71,-1037 -248,-1160 -705,-1564 -1143,-1759 -1303,-1758 -1453,-1715 -1668,-1709 -2073,-1525 -2276,-1621 -2477,-1717 -2831,-1956 -2984,-2184 -3521,-2552 -3650,-2609
-Alte Schildower Str.: Gehweg für Radfahrer freigegeben	RW1; 4958,24418 5019,24484 5168,24614
-Alte Schildower Str.: Gehweg für Radfahrer freigegeben	RW1;RW1 5212,24652 5265,24642 5443,24589 5608,24610
-Radspur	RW3;RW3 -13199,1691 -13133,1698
-Brüssow - Wollschow: asphaltierter Zweirichtungsradweg auf der südlichen Seite	RW2;RW8 58357,111700 60639,112544 61502,112547 61648,112574
-Asphaltiert	RW2;RW8 69990,78244 70010,78347
-Asphaltiert	RW1;RW9 70010,78347 70001,78510
+gemeinsamer Rad- und Gehweg	RW2;RW2 -71,-1037 -248,-1160 -705,-1564 -1143,-1759 -1303,-1758 -1453,-1715 -1668,-1709 -2073,-1525 -2276,-1621 -2477,-1717 -2831,-1956 -2984,-2184 -3521,-2552 -3650,-2609
+Gehweg für Radfahrer freigegeben	RW1; 4958,24418 5019,24484 5168,24614
+Gehweg für Radfahrer freigegeben	RW1;RW1 5212,24652 5265,24642 5443,24589 5608,24610
+	RW3;RW3 -13199,1691 -13133,1698
+asphaltiert	RW2;RW8 58357,111700 60639,112544 61502,112547 61648,112574
+asphaltiert	RW2;RW8 69990,78244 70010,78347
+asphaltiert	RW1;RW9 70010,78347 70001,78510
 	RW; -11822,-1874 -12110,-1862 -12247,-1858 -12420,-1853
 	RW2; -12420,-1853 -12493,-1896
-Mäßiger Asphalt	RW2; -13375,2950 -13929,2548
-	RW2 60053,36267 59990,36267 59937,36197 59876,36115 59806,35893
+mäßiger Asphalt	RW2; -13375,2950 -13929,2548
+	RW2;RW2 60053,36267 59990,36267 59937,36197 59876,36115 59806,35893
 	RW2;RW2 59462,34809 59474,34284
-asphaltierter Zweirichtungsradweg auf der östlichen Seite	RW8;RW2 59747,33516 59814,33354 59908,33095 59941,33004
-Verbundsteinpflaster-Zweirichtungsradweg auf der östlichen Seite	RW8;RW2 59941,33004 60123,32505 60213,32415
-	RW2 44536,20408 44686,20822 44692,20886 44631,21051 44639,21076 44661,21139 44596,21287
-Verbundsteinpflaster-Zweirichtungsradweg	RW8;RW2 26497,33280 26755,33126
-asphaltierter Zweirichtungsradweg	RW8;RW2 26755,33126 27004,32977
-Verbundsteinpflaster-Zweirichtungsradweg	RW8;RW2 27004,32977 27103,32918
-Verbundsteinpflasterradweg	RW2; 46413,46342 46478,46164 46557,46048 46622,45896
-Verbundsteinpflasterradweg	RW2; 46734,45729 47076,45358
+asphaltiert	RW8;RW2 59747,33516 59814,33354 59908,33095 59941,33004
+Verbundsteinpflaster	RW8;RW2 59941,33004 60123,32505 60213,32415
+	RW2;RW2 44536,20408 44686,20822 44692,20886 44631,21051 44639,21076 44661,21139 44596,21287
+Verbundsteinpflaster	RW8;RW2 26497,33280 26755,33126
+asphaltiert	RW8;RW2 26755,33126 27004,32977
+Verbundsteinpflaster	RW8;RW2 27004,32977 27103,32918
+Verbundsteinpflaster	RW2; 46413,46342 46478,46164 46557,46048 46622,45896
+Verbundsteinpflaster	RW2; 46734,45729 47076,45358
 Gehweg für Radfahrer freigegeben	RW1; 45328,48225 45519,48299 45833,48555 45893,48802
-Verbundsteinpflaster-Zweirichtungsradweg	RW8;RW2 45893,48802 45925,49350 46094,49871
-Bergerstr.: betonierter Radweg, Plattenwegqualität Q2+	RW2;RW2 37128,48358 36987,48362 36612,48200
-Wilhelmstr.: betonierter Radweg Q1	RW;RW0 37159,48481 37128,48358
+Verbundsteinpflaster	RW8;RW2 45893,48802 45925,49350 46094,49871
+betoniert, Plattenwegqualität Q2+	RW2;RW2 37128,48358 36987,48362 36612,48200
+betoniert, Q1	RW?;RW0 37159,48481 37128,48358
 #: XXX gab es einen Radweg in die andere Richtung? Sehr wahrscheinlich!
-Verbundsteinpflasterradweg	RW2; 36581,48125 36750,48064 36937,48074 37151,48074 37391,48095 37474,48123
-Verbundsteinpflaster-Zweirichtungsradweg	RW8;RW2 39361,42665 39355,42506 39291,42160 39137,42103 39146,42061
-Verbundsteinpflaster-Zweirichtungsradweg	RW8;RW2 25069,35558 25007,35418 24930,35363 24821,35134
-benutzungspflichtiger Radweg	RW2; -107718,-33404 -107578,-33627 -107255,-33928
-Radweg	RW1; -107255,-33928 -107151,-34027
-benutzungspflichtiger Radweg	RW2; -106564,-34659 -106471,-34722 -106192,-35714
-benutzungspflichtiger Radweg	RW2; -106088,-35683 -105929,-35852
+Verbundsteinpflaster	RW2; 36581,48125 36750,48064 36937,48074 37151,48074 37391,48095 37474,48123
+Verbundsteinpflaster	RW8;RW2 39361,42665 39355,42506 39291,42160 39137,42103 39146,42061
+Verbundsteinpflaster	RW8;RW2 25069,35558 25007,35418 24930,35363 24821,35134
+	RW2; -107718,-33404 -107578,-33627 -107255,-33928
+	RW1; -107255,-33928 -107151,-34027
+	RW2; -106564,-34659 -106471,-34722 -106192,-35714
+	RW2; -106088,-35683 -105929,-35852
 #: XXX wo ist das Ende? War der Radweg asphaltiert?
-benutzungspflichtiger Zweirichtungsradweg	RW8;RW2 -105840,-35926 -105336,-36115 -105201,-36280 -105059,-36668 -104937,-36797
-Radweg	RW1; -103431,-37806 -103223,-37958
+	RW8;RW2 -105840,-35926 -105336,-36115 -105201,-36280 -105059,-36668 -104937,-36797
+	RW1; -103431,-37806 -103223,-37958
 #: XXX wo ist das Ende? War das ein Zweirichtungsradweg?
-benutzungspflichtiger Radweg	RW2; -103185,-37953 -103040,-37931 -102849,-37981
+	RW2; -103185,-37953 -103040,-37931 -102849,-37981
 #: XXX wo ist das Ende?
-Radweg	RW1; -99805,-41829 -99681,-41642
-#: by: http://fotos.benno-koch.de/v/Radfernwege_und_Radwege_Brandenburg_im_Test/Radweg_Berlin-Usedom/Prenzlau-AbzweigEllingen/CIMG2152.JPG.html
-straßenbegleitender Radweg	RW 38439,102279 37547,102663 37410,103257
-Verbundsteinpflasterradwege	RW2;RW2 25232,-13241 25381,-12762 25543,-12403 25912,-11956
+	RW1; -99805,-41829 -99681,-41642
+#: by: http://fotos.benno-koch.de/v/Radfernwege_und_Radwege_Brandenburg_im_Test/Radweg_Berlin-Usedom/Prenzlau-Abzweig_Ellingen/CIMG2152.JPG.html
+#: by: http://fotos.benno-koch.de/d/53210-2/CIMG2152.JPG
+asphaltiert	RW8?;RW 38439,102279 37547,102663 37410,103257
+Verbundsteinpflaster	RW2;RW2 25232,-13241 25381,-12762 25543,-12403 25912,-11956
 Verbundsteinpflaster	RW2;RW 26302,-11712 26177,-11648
 asphaltiert	RW2;RW8 26466,-10409 27050,-10317
 Verbundsteinpflaster	RW2;RW2 31843,-536 32128,-548 32138,-858
@@ -404,7 +411,7 @@ Verbundsteinpflaster	RW2;RW8 32138,-858 32168,-981 32266,-1004 32778,-1044 32914
 Verbundsteinpflaster	RW2;RW2 30933,-3649 30893,-3670 30666,-3650
 Verbundsteinpflaster	RW2;RW2 30893,-3670 30901,-3737 30886,-3867
 Verbundsteinpflaster	RW2;RW8 30886,-3867 30753,-4209
-Asphalt	RW10;RW10 30753,-4209 30721,-4293 30636,-4358
+asphaltiert	RW10;RW10 30753,-4209 30721,-4293 30636,-4358
 Verbundsteinpflaster, Radweg führt teilweise etwas weiter von der Straße entfernt	RW2;RW8 30636,-4358 30334,-4590 30172,-4649 29555,-4881 29249,-5219 28628,-5900 28470,-6223
 Verbundsteinpflaster	RW2;RW8 27461,-12448 27234,-12434
 Gehweg für Radfahrer freigegeben	RW1;RW9 26814,-12271 26453,-12128 26419,-12089
@@ -418,14 +425,14 @@ Beton, Gehweg für Radfahrer freigegeben	RW1; 26431,-16931 26276,-17489 26204,-17
 #: note: aus dem Auto heraus gesehen
 	RW2;RW2 17073,21329 17584,21678 17696,21806 17825,21931 18356,22225
 #: by: http://www.nationaler-radverkehrsplan.de/neuigkeiten/news.php?id=2669
-Asphaltierter Radweg	RW 38845,51258 38400,51404 38357,51575 38170,51708 38089,51876
+asphaltiert	RW;RW 38845,51258 38400,51404 38357,51575 38170,51708 38089,51876
 #: by: http://www.nationaler-radverkehrsplan.de/neuigkeiten/news.php?id=2309
-	RW -1392,41610 -1585,42437
+	RW;RW -1392,41610 -1585,42437
 #: by: http://www.nationaler-radverkehrsplan.de/neuigkeiten/news.php?id=2309
-	RW -1864,43042 -1943,43360 -2602,45078
-Waldstr.: Radweg mit Verbundsteinpflaster	RW2; 29675,7021 29812,6996 29938,6993 30180,6942 30324,6911
-Brandenburgische Str.: gemeinsamer Rad- und Gehweg	RW2;RW2 30495,7350 30557,6731 30602,6366 30648,5979
-Birkenweg (Groß Glienicke): verkehrsberuhigt	RW6;RW6 -10055,6715 -10091,6716 -10127,6716 -10177,6711 -10178,6691 -10183,6650
+	RW;RW -1864,43042 -1943,43360 -2602,45078
+Verbundsteinpflaster	RW2; 29675,7021 29812,6996 29938,6993 30180,6942 30324,6911
+gemeinsamer Rad- und Gehweg	RW2;RW2 30495,7350 30557,6731 30602,6366 30648,5979
+	RW6;RW6 -10055,6715 -10091,6716 -10127,6716 -10177,6711 -10178,6691 -10183,6650
 	RW3;RW3 -10715,472 -10826,469
 	RW6;RW6 -12408,1176 -12325,1145 -12411,881
 	RW6;RW6 -13344,160 -13322,259
@@ -438,7 +445,8 @@ Birkenweg (Groß Glienicke): verkehrsberuhigt	RW6;RW6 -10055,6715 -10091,6716 -10
 	RW6;RW6 -15001,891 -14870,850
 	RW3; -14650,201 -14663,310 -14676,418
 teils Asphalt, teils Verbundsteinpflaster	RW8;RW2 39341,-1057 39264,-832 39259,612 39250,1024 39311,1219 39321,1349 39212,1762
-Radweg existiert, zumindest auf der östlichen Seite	RW 87906,-5239 87553,-4939 87418,-4660
+#: XXX Radweg existiert, zumindest auf der östlichen Seite, auch auf der westlichen?
+	RW;RW 87906,-5239 87553,-4939 87418,-4660
 	RW2; 55401,-3599 55456,-4023 55447,-4247
 überwiegend asphaltiert	RW8;RW2 48518,-1559 47882,-1378 47778,-1308 47484,-1058 46969,-672 46718,-631 46354,-369 45787,-225 45424,-11 45247,7 45037,31 43880,303 43456,337 42926,155 39341,-1057
 nicht besonders breite Schutzstreifen	RW3;RW3 -12370,-354 -12435,-222 -12505,-60 -12528,-11 -12557,11 -12637,-8 -12661,-14 -12840,-69 -12961,-136 -13068,-115
@@ -462,150 +470,174 @@ gemeinsamer Rad- und Gehweg	RW2; 13300,-1252 13230,-712
 	RW2;RW2 13300,-1252 13363,-1252
 	RW7;RW7 14137,-651 14318,-632 14424,-705 14788,-849 14843,-859 15045,-941 15118,-970 15801,-1168 16074,-1240
 Gehweg für Radfahrer frei	RW1; -10267,-1759 -9930,-1687
-######################### User Contributions #################################
-#: by: Tagesspiegel
-	RW 16953,35907 17114,35904 18082,36115 18440,36179 19193,36011
-#: by: Eckart Seher:
-Industriestr. (Dahlwitz-Hoppegarten): gegenläufiger Radweg, rotes Betonpflaster	RW 25938,11837 26042,11798 26222,11726 26555,11601 26794,11513 26880,11479
-#: by: Wolfhard Schleese: vvv
-	RW 1596,29362 1631,29260 1748,29003 1805,28879 1838,28808 1896,28681 2015,28414
-	RW; 2015,28414 2003,28396 2012,28378 2035,28381 2037,28393 2032,28407 2015,28414
-	RW 2035,28381 2082,28353 2125,28208
-#: by: ^^^
-#: by: rjoop: vvv
-#XXX removed by Andreas Titz B96: asphaltierter Zweirichtungsradweg auf der südwestlichen Seite	RW  81,33971 470,33540 728,33253 746,33231 831,33128 929,32980 1051,32796 1184,32554 1254,32428 1365,31576 1429,31501
-Schildow - Wensickendorf: asphaltierter Zweirichtungsradweg auf der östlichen Seite	RW 8071,30398 8100,30308 8281,29788 8327,29494 8315,29159
-Marienwerder - B167: Radweg	RW2;RW8 22912,48759 22862,49031
-Marienwerder - B167: teilweise asphaltierter Radweg	RW1;RW9 22862,49031 23597,49573 23660,49619 23748,49682 23783,49745 23759,49971
-#: add_fragezeichen: fängt der Radweg bereits in Großbeeren an?
-Großbeeren - Diedersdorf: asphaltierter Zweirichtungsradweg auf der nördlichen Seite	RW 5654,-6424 6432,-6715
-Mahlow - Jühnsdorf: asphaltierter Zweirichtungsradweg auf der westlichen Seite	RW 9854,-9480 9704,-9993 9598,-10356 9578,-10891
-#: add_fragezeichen: geht der Radweg in Richtung Südwesten weiter?
-Mellensee - Rehagen: asphaltierter Zweirichtungsradweg auf der nordwestlichen Seite	RW 10744,-25036 9478,-26014 9223,-26361 8647,-26861
-Stülpe - Petkus: asphaltierter straßenbegleitender Radweg, Flaeming-Skate	RW 5741,-40876 5685,-41069 5664,-41809 5673,-42623 5676,-43497 5816,-44198 6096,-44664
-Stülpe - Petkus: asphaltierter straßenbegleitender Radweg, Flaeming-Skate	RW 7653,-45231 7818,-45711 8304,-46094 8366,-46200
-Petkus - Wahlsdorf: asphaltierter straßenbegleitender Radweg, Flaeming-Skate	RW 8034,-47120 7656,-48403 6337,-49781
-Wahlsdorf - Niebendorf-Heinsdorf: asphaltierter straßenbegleitender Radweg, Flaeming-Skate	RW 6336,-50572 6733,-50847 6956,-51837 7160,-52624 7032,-53095
-#: by: ^^^
-#: by: Werner Braun: vvv
-#: confirmed_by: M.Mende
-Schleusenweg: Radweg	RW -2760,-740 -3003,432
-#: by: ^^^
-#: by: Torsten Fleischmann:
-#: confirmed_by: srt (westlicher Abschnitt)
-zwischen B2 und mindestens Autobahnbrücke: auf der nördlichen Seite verlaufender gemeinsamer Rad/Fußweg (in beiden Richtungen benutzungspflichtig), der stellenweise nur ca. 2,5m breit ist	RW2;RW8 22178,30343 21872,30139 21561,30131 21117,29968 21085,29942
-#: by: Andreas Mühlhausen: vvv
-#: note: von Andreas von Nauen bis Kienberg verifiziert:
-B273: sehr guter Zweirichtungsradweg	RW -24957,22740 -24366,23575 -23897,24448 -23732,24811 -23641,24954 -22574,25597 -22376,26392 -22736,27452 -22711,27592 -22416,28080 -22224,28832 -21704,30257 -21772,30661
-Radweg	RW 33937,52172 34100,52926 34322,53968
-Radweg (sehr gute Qualität)	RW -36006,-418 -35366,-542
-#: note: ich war mir hier nicht sicher gewesen:
-Seeburg - Falkensee: Zweirichtungsradweg auf der östlichen Seite	RW -8634,9626 -8628,9803 -8677,10083 -8697,10653 -8906,11139
-Emstal - Lehnin: sehr guter Zweirichtungsradweg auf der nördlichen Seite	RW -31776,-12438 -32010,-12375 -32394,-12207 -32629,-12038 -32737,-11697 -33398,-11574 -33613,-11062 -33784,-11021 -33786,-10636 -33914,-10466
-Wildenbruch - Fresdorf: asphaltierter Radweg	RW -11954,-13862 -11853,-14116 -11699,-14911 -11484,-15158 -11553,-15502
-#: by: ^^^
-Lehnin - Namitz: sehr guter Zweirichtungsradweg	RW -34553,-10321 -34810,-10045 -34985,-9383 -35324,-8427
-Radweg, wahrscheinlich für beide Richtungen	RW 41409,-5222 41836,-5523 42349,-5620 42486,-5743
-Asphaltierter Zweirichtungsradweg, westliche Seite	RW 55271,172339 55359,172397 55459,172528
-Zweirichtungsradweg (Verbundsteinpflaster), westliche Seite	RW 55459,172528 55640,172618 55704,172720
-Asphaltierter Zweirichtungsradweg, westliche Seite	RW 55704,172720 55935,173006 55991,173100
-Zweirichtungsradweg (Verbundsteinpflaster), westliche Seite	RW 55991,173100 56039,173308 56088,173431
-Asphaltierter Zweirichtungsradweg, westliche Seite	RW 56088,173431 56148,173564 56151,173770 56175,173875
-Pudagla - Schmollensee: asphaltierter Zweirichtungsradweg auf der westlichen Seite	RW 52407,174744 52439,174817 52468,174931 52614,175530 52830,176128 52868,176203
-Neppermin - Pudagla: Zweirichtungsradweg (Verbundsteinpflaster) auf der östlichen Seite	RW 50615,171529 50659,171691
-Neppermin - Pudagla: asphaltierter Zweirichtungsradweg auf der östlichen Seite, 2m breit	RW 50659,171691 50958,172295 51771,173453 51823,173611 51831,173776 51887,174062 52035,174413 52056,174462 52129,174507
-Neppermin - Balm: Zweirichtungsradweg auf der nördlichen Seite, Verbundsteinpflaster	RW 49978,171395 49668,171500 49515,171716 49028,171817
-verkehrsberuhigt	RW6 50283,171077 50263,171180
-Verbundsteinpflasterradwege	RW 47751,123738 47836,123659 47955,123488
-Haußmannstr.: Verbundsteinpflasterradwege	RW 47955,123488 48071,123507 48180,123455 48275,123369
-Lindenstr.: Verbundsteinpflasterradwege	RW 48275,123369 48613,123433 49034,123360
-Pasewalk - Friedberg: Verbundsteinpflasterradwege	RW 48887,123077 49034,123360 49101,123488 49515,124158
-Pasewalk - Friedberg: asphaltierter Zweirichtungsradweg auf der östlichen Seite	RW 49515,124158 50039,125006
-Radspuren	RW 48263,122915 47982,122958
-#: by Per Zwiesigk [AM]
-Dahlwitzer Str./Köpenicker Allee	RW 25868,9225 26321,9868 26771,10496 26892,10666
-#: by: Janes Huff:
-Kopernikusstr. (Potsdam): freigegebener Gehweg	RW; -9723,-2451 -9963,-2253
-#: by: Message-ID: <Xns98A0C49FD8D3E4usenet@krickstadt.de>
-B5: straßenbegleitende Radwege	RW -11253,13707 -11635,13818 -12145,13943 -13019,13861 -13330,13857 -14057,13830 -16015,13705 -16767,13639 -16982,13681 -17175,13749 -18726,14303 -18976,14381 -19527,14652
-#: by: Stefan Schmidt:
-Trebbiner Str. (Mahlow): Radweg	RW 11165,-5318 11291,-4485 11355,-4293 11338,-3945
-#: by: Aimo Raasch vvv
-Leipziger Str.: neuer Bürgersteigradweg, 1,50m	RW1; -12431,-2096 -12653,-2206
-Leipziger Str.: Radstreifen, 1,20m	RW4; -12653,-2206 -12719,-2283 -12756,-2437
-Leipziger Str.: Radstreifen, 1,20m	RW4; -12929,-2659 -13003,-2754 -13021,-2784 -13062,-2901
-Leipziger Str.: alter Bürgersteigradweg, etwas welliger Asphalt, 1,30m	RW1; -13062,-2901 -13021,-2784 -13003,-2754 -12929,-2659 -12796,-2488 -12779,-2467 -12756,-2437
-Leipziger Str.: Radangebotsstreifen, 1m	RW3; -12756,-2437 -12719,-2283
-Leipziger Str.: Radstreifen, 1,50m; kurz vor der Kreuzung Bürgersteigradweg	RW4; -12719,-2283 -12653,-2206 -12431,-2096
-#: by: ^^^
-#: by: Mentecapti...:
-#: confirmed_by: anonymous:
-Wusterhausener Str.: Radweg auf dem Bürgersteig	RW 25678,-3957 25752,-4178 25763,-4283
-Löcknitz: Verbundsteinpflasterradwege	RW 63382,117437 63580,117205
-#: by: Jakob-Dominik Ullmann: vvv
-#: confirmed_by: Olaf Schultz:
-Förster-Funke-Allee: Radwege, Verbundsteinpflasterradwege	RW;RW -2213,-251 -2141,-307 -2046,-345 -1945,-354 -1921,-354 -1802,-339 -1494,-303 -1375,-292 -1179,-298 -1043,-294 -927,-280
-#: by: ^^^
-#: by: Roland Miseler:
-#: note: seit 2007-07
-Vehlefanz - Schwante: Radweg	RW -11307,35852 -11193,35418 -10950,35081 -10962,34793 -10825,34568
-#: by: Maren (e-blu): vvv
-Staffelde - Flatow: Radweg	RW -18406,35425 -18912,35525 -19481,35481 -19737,35362 -20450,35368
-Ruppiner Chaussee: Radweg	RW -1918,24514 -1950,24762 -2139,25038 -2446,25386 -2800,25478
-Parkstr. (Hennigsdorf): gepflasterte, eher schmale Radwege	RW -3331,25078 -3446,25075 -3815,25252 -4219,25460 -4265,25459
-#: by: ^^^
-# XXX del? #: by: Jörg Arnold: --- aber in Höhe Bahnbrücke kein Radweg erkennbar --- Bernau (ab Autobahnbrücke) - Zepernick: Zweirichtungsradweg ohne Benutzungspflicht auf der östlichen Seite	RW 21085,29942 20499,29310 20475,28650 20510,28585 20494,28542 20362,28420 20114,28315 19595,27953 19534,27833
-#: by: Andreas Titz: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
-Birkenwerder - Oranienburg: asphaltierte Radwege auf beiden Seiten	RW2 1051,32796 929,32980 831,33128 746,33231 728,33253 470,33540 81,33971 -445,34937 -570,35185
-#: by: ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Großziethen: gemeinsamer Geh- und Radweg auf beiden Seiten	RW2 12984,1011 13124,216
-#: by: René (refan): vvv
-#: confirmed_by: srt
-Gemeinsamer Geh- und Radweg	RW2;RW2 26466,-10409 26442,-10452
-Gemeinsamer Geh- und Radweg	RW1;RW1 26442,-10452 26429,-10647
-Gemeinsamer Geh- und Radweg	RW2;RW2 26429,-10647 26407,-10986 26281,-11160 26243,-11296
-Gemeinsamer Geh- und Radweg (altertümliches Verbundsteinpflaster)	RW2;RW2 26243,-11296 26265,-11528 26177,-11648
-Radweg	RW2;RW2 26466,-10409 26446,-10394 26453,-10235
-Radweg	RW2;RW8 26453,-10235 26450,-10134 26432,-10043 26391,-9997 26365,-9875 26381,-9753
-antike Radwege, teilweise Schotter	RW1;RW1 26381,-9753 26679,-8825
-Gemeinsamer Geh- und Radweg, Verbundsteinpflaster	RW2;RW2 26679,-8825 26727,-8668 26749,-8475 26775,-8117
-Gehweg für Radfahrer freigegeben	RW1;RW1 26786,-7968 26790,-7918 26700,-7334 26609,-7136 26506,-6931 26146,-6218
-#: by: ^^^
-Verbundsteinpflasterradweg	RW 50367,179588 50643,179755
-Zweirichtungsradweg auf der westlichen Seite, Verbundsteinfpflaster	RW 50643,179755 50593,179823 49750,180975 49689,181083 49491,181430
-Zweirichtungsradweg auf der westlichen Seite, asphaltiert	RW 49491,181430 49461,181471 49410,181538 49006,181826
-Zweirichtungsradweg auf der südwestlichen Seite, Verbundsteinpflaster	RW 49006,181826 48898,181937
-Radweg	RW 48898,181937 48723,182124 48411,182343
+asphaltiert	RW8?;RW 55271,172339 55359,172397 55459,172528
+Verbundsteinpflaster	RW8?;RW 55459,172528 55640,172618 55704,172720
+asphaltiert	RW8?;RW 55704,172720 55935,173006 55991,173100
+Verbundsteinpflaster	RW8?;RW 55991,173100 56039,173308 56088,173431
+asphaltiert	RW8?;RW 56088,173431 56148,173564 56151,173770 56175,173875
+asphaltiert	RW8?;RW 52407,174744 52439,174817 52468,174931 52614,175530 52830,176128 52868,176203
+Verbundsteinpflaster	RW;RW8? 50615,171529 50659,171691
+asphaltiert, 2m breit	RW;RW8? 50659,171691 50958,172295 51771,173453 51823,173611 51831,173776 51887,174062 52035,174413 52056,174462 52129,174507
+Verbundsteinpflaster	RW;RW8? 49978,171395 49668,171500 49515,171716 49028,171817
+	RW6;RW6 50283,171077 50263,171180
+Verbundsteinpflaster	RW;RW 47751,123738 47836,123659 47955,123488
+Verbundsteinpflaster	RW;RW 47955,123488 48071,123507 48180,123455 48275,123369
+Verbundsteinpflaster	RW;RW 48275,123369 48613,123433 49034,123360
+Verbundsteinpflaster	RW;RW 48887,123077 49034,123360 49101,123488 49515,124158
+asphaltiert	RW;RW8? 49515,124158 50039,125006
+	RW4?;RW4? 48263,122915 47982,122958
+Verbundsteinpflaster	RW;RW 63382,117437 63580,117205
+gemeinsamer Geh- und Radweg	RW2;RW2 12984,1011 13124,216
+Verbundsteinpflaster	RW;RW 50367,179588 50643,179755
+Verbundsteinfpflaster	RW8?;RW 50643,179755 50593,179823 49750,180975 49689,181083 49491,181430
+asphaltiert	RW8?;RW 49491,181430 49461,181471 49410,181538 49006,181826
+Verbundsteinpflaster	RW8?;RW 49006,181826 48898,181937
+	RW;RW 48898,181937 48723,182124 48411,182343
 	RW2;RW8 48411,182343 48129,182607 47672,183028
-Radweg auf Deich	RW 47172,184530 47149,184545 46620,184885 45963,185140
-Radweg	RW 50643,179755 50843,179488
+Radweg auf Deich	RW;RW8? 47172,184530 47149,184545 46620,184885 45963,185140
+	RW;RW 50643,179755 50843,179488
 Verbundsteinpflastergehweg für Radfahrer frei	RW1;RW1 40952,186220 40853,186070 40837,185903 40751,185719 40722,185530
-#: by: osm:
-Zweirichtungsradweg auf der östlichen Seite	RW8;RW2 -13051,-3101 -13092,-3798 -13687,-4949 -13723,-6401 -13593,-6956 -13593,-7127 -13997,-8760 -13973,-8969 -14060,-9016 -14149,-9371 -14279,-9832 -14364,-10176 -14428,-10433
-#: by: osm, "asphaltiert" from elsewhere
-asphaltierter Zweirichtungsradweg auf der östlichen Seite	RW -14279,-9832 -14518,-9621 -14790,-9271 -15120,-8806 -15805,-7964 -15951,-7768 -16023,-7721 -16029,-7600 -15989,-7410 -16187,-7211
-#: by: osm:
-Zweirichtungsradweg auf der südlichen Seite	RW -14428,-10433 -13597,-10497 -13433,-10557 -13211,-10642
-#: by: Gonsolo (and osm):
-eigener Radweg neben der Straße	RW2;RW8 35728,17428 35618,17440 35225,17557 34813,17682 34154,17882 33961,17989 33133,18131 32941,18121
-#: by: osm ("paved")
-	RW 16488,29880 16279,29196 16066,28510 16008,28424 15777,28037
-#: by: Peter Piecha:
-	RW6;RW6 -10052,6640 -10138,6646 -10183,6650 -10236,6648 -10315,6646
 asphaltiert	RW8;RW2 37400,188601 37064,189140 36607,189766 35988,190394
 Verbundsteinpflaster	RW;RW 37400,188601 37796,187862 37881,187596 38017,187425
 etwas breitere Seitenstreifen, ca. 0.5m	RW3;RW3 35470,191333 35198,191966 35230,192082 35653,192391 35684,192550 34993,193887 34411,193747 34151,193949
 	RW6;RW6 69085,73607 69061,73583
+######################### User Contributions #################################
+#: by: Tagesspiegel
+	RW;RW 16953,35907 17114,35904 18082,36115 18440,36179 19193,36011
+# 
+#: by: Eckart Seher:
+gegenläufiger Radweg, rotes Betonpflaster	RW;RW 25938,11837 26042,11798 26222,11726 26555,11601 26794,11513 26880,11479
+# 
+#: by: Wolfhard Schleese: vvv
+	RW;RW 1596,29362 1631,29260 1748,29003 1805,28879 1838,28808 1896,28681 2015,28414
+	RW; 2015,28414 2003,28396 2012,28378 2035,28381 2037,28393 2032,28407 2015,28414
+	RW;RW 2035,28381 2082,28353 2125,28208
+#: by: ^^^
+# 
+#: by: rjoop: vvv
+asphaltiert	RW8?;RW 8071,30398 8100,30308 8281,29788 8327,29494 8315,29159
+	RW2;RW8 22912,48759 22862,49031
+teilweise asphaltiert	RW1;RW9 22862,49031 23597,49573 23660,49619 23748,49682 23783,49745 23759,49971
+#: add_fragezeichen: fängt der Radweg bereits in Großbeeren an?
+asphaltiert	RW8?;RW 5654,-6424 6432,-6715
+asphaltiert	RW;RW8? 9854,-9480 9704,-9993 9598,-10356 9578,-10891
+#: add_fragezeichen: geht der Radweg in Richtung Südwesten weiter?
+asphaltiert	RW;RW8? 10744,-25036 9478,-26014 9223,-26361 8647,-26861
+asphaltierter straßenbegleitender Radweg	RW;RW 5741,-40876 5685,-41069 5664,-41809 5673,-42623 5676,-43497 5816,-44198 6096,-44664
+asphaltierter straßenbegleitender Radweg	RW;RW 7653,-45231 7818,-45711 8304,-46094 8366,-46200
+asphaltierter straßenbegleitender Radweg	RW;RW 8034,-47120 7656,-48403 6337,-49781
+asphaltierter straßenbegleitender Radweg	RW;RW 6336,-50572 6733,-50847 6956,-51837 7160,-52624 7032,-53095
+#: by: ^^^
+# 
+#: by: Werner Braun: vvv
+#: confirmed_by: M.Mende
+	RW;RW -2760,-740 -3003,432
+#: by: ^^^
+# 
+#: by: Torsten Fleischmann:
+#: confirmed_by: srt (westlicher Abschnitt)
+gemeinsamer Rad/Fußweg, der stellenweise nur ca. 2,5m breit ist	RW2;RW8 22178,30343 21872,30139 21561,30131 21117,29968 21085,29942
+# 
+#: by: Andreas Mühlhausen: vvv
+#: note: von Andreas von Nauen bis Kienberg verifiziert:
+sehr guter Zweirichtungsradweg	RW;RW -24957,22740 -24366,23575 -23897,24448 -23732,24811 -23641,24954 -22574,25597 -22376,26392 -22736,27452 -22711,27592 -22416,28080 -22224,28832 -21704,30257 -21772,30661
+	RW;RW 33937,52172 34100,52926 34322,53968
+Radweg, sehr gute Qualität	RW;RW -36006,-418 -35366,-542
+#: note: ich war mir hier nicht sicher gewesen:
+	RW;RW8? -8634,9626 -8628,9803 -8677,10083 -8697,10653 -8906,11139
+sehr guter Zweirichtungsradweg	RW;RW8? -31776,-12438 -32010,-12375 -32394,-12207 -32629,-12038 -32737,-11697 -33398,-11574 -33613,-11062 -33784,-11021 -33786,-10636 -33914,-10466
+asphaltiert	RW;RW -11954,-13862 -11853,-14116 -11699,-14911 -11484,-15158 -11553,-15502
+#: by: ^^^
+# 
+#: by: ??? vvv
+sehr guter Zweirichtungsradweg	RW;RW -34553,-10321 -34810,-10045 -34985,-9383 -35324,-8427
+Radweg, wahrscheinlich für beide Richtungen	RW;RW 41409,-5222 41836,-5523 42349,-5620 42486,-5743
+#: by: ^^^
+# 
+#: by Per Zwiesigk [AM]
+	RW;RW 25868,9225 26321,9868 26771,10496 26892,10666
+# 
+#: by: Janes Huff:
+freigegebener Gehweg	RW; -9723,-2451 -9963,-2253
+# 
+#: by: Message-ID: <Xns98A0C49FD8D3E4usenet@krickstadt.de>
+straßenbegleitende Radwege	RW;RW -11253,13707 -11635,13818 -12145,13943 -13019,13861 -13330,13857 -14057,13830 -16015,13705 -16767,13639 -16982,13681 -17175,13749 -18726,14303 -18976,14381 -19527,14652
+# 
+#: by: Stefan Schmidt:
+	RW;RW 11165,-5318 11291,-4485 11355,-4293 11338,-3945
+# 
+#: by: Aimo Raasch vvv
+neuer Bürgersteigradweg, 1,50m	RW1; -12431,-2096 -12653,-2206
+Radstreifen, 1,20m	RW4; -12653,-2206 -12719,-2283 -12756,-2437
+Radstreifen, 1,20m	RW4; -12929,-2659 -13003,-2754 -13021,-2784 -13062,-2901
+alter Bürgersteigradweg, etwas welliger Asphalt, 1,30m	RW1; -13062,-2901 -13021,-2784 -13003,-2754 -12929,-2659 -12796,-2488 -12779,-2467 -12756,-2437
+Radangebotsstreifen, 1m	RW3; -12756,-2437 -12719,-2283
+Radstreifen, 1,50m; kurz vor der Kreuzung Bürgersteigradweg	RW4; -12719,-2283 -12653,-2206 -12431,-2096
+#: by: ^^^
+# 
+#: by: Mentecapti...:
+#: confirmed_by: anonymous:
+Radweg auf dem Bürgersteig	RW;RW 25678,-3957 25752,-4178 25763,-4283
+# 
+#: by: Jakob-Dominik Ullmann:
+#: confirmed_by: Olaf Schultz:
+Verbundsteinpflaster	RW;RW -2213,-251 -2141,-307 -2046,-345 -1945,-354 -1921,-354 -1802,-339 -1494,-303 -1375,-292 -1179,-298 -1043,-294 -927,-280
+# 
+#: by: Roland Miseler:
+#: note: seit 2007-07
+	RW;RW -11307,35852 -11193,35418 -10950,35081 -10962,34793 -10825,34568
+# 
+#: by: Maren (e-blu): vvv
+	RW;RW -18406,35425 -18912,35525 -19481,35481 -19737,35362 -20450,35368
+	RW;RW -1918,24514 -1950,24762 -2139,25038 -2446,25386 -2800,25478
+gepflasterte, eher schmale Radwege	RW;RW -3331,25078 -3446,25075 -3815,25252 -4219,25460 -4265,25459
+#: by: ^^^
+# 
+#: by: Andreas Titz
+asphaltiert	RW2;RW2 1051,32796 929,32980 831,33128 746,33231 728,33253 470,33540 81,33971 -445,34937 -570,35185
+# 
+#: by: René (refan): vvv
+#: confirmed_by: srt
+gemeinsamer Geh- und Radweg	RW2;RW2 26466,-10409 26442,-10452
+gemeinsamer Geh- und Radweg	RW1;RW1 26442,-10452 26429,-10647
+gemeinsamer Geh- und Radweg	RW2;RW2 26429,-10647 26407,-10986 26281,-11160 26243,-11296
+gemeinsamer Geh- und Radweg (altertümliches Verbundsteinpflaster)	RW2;RW2 26243,-11296 26265,-11528 26177,-11648
+	RW2;RW2 26466,-10409 26446,-10394 26453,-10235
+	RW2;RW8 26453,-10235 26450,-10134 26432,-10043 26391,-9997 26365,-9875 26381,-9753
+antike Radwege, teilweise Schotter	RW1;RW1 26381,-9753 26679,-8825
+gemeinsamer Geh- und Radweg, Verbundsteinpflaster	RW2;RW2 26679,-8825 26727,-8668 26749,-8475 26775,-8117
+Gehweg für Radfahrer freigegeben	RW1;RW1 26786,-7968 26790,-7918 26700,-7334 26609,-7136 26506,-6931 26146,-6218
+#: by: ^^^
+# 
+#: by: osm:
+	RW8;RW2 -13051,-3101 -13092,-3798 -13687,-4949 -13723,-6401 -13593,-6956 -13593,-7127 -13997,-8760 -13973,-8969 -14060,-9016 -14149,-9371 -14279,-9832 -14364,-10176 -14428,-10433
+#: by: osm, "asphaltiert" from elsewhere
+asphaltiert	RW;RW8? -14279,-9832 -14518,-9621 -14790,-9271 -15120,-8806 -15805,-7964 -15951,-7768 -16023,-7721 -16029,-7600 -15989,-7410 -16187,-7211
+#: by: osm:
+	RW;RW8? -14428,-10433 -13597,-10497 -13433,-10557 -13211,-10642
+# 
+#: by: Gonsolo (and osm):
+eigener Radweg neben der Straße	RW2;RW8 35728,17428 35618,17440 35225,17557 34813,17682 34154,17882 33961,17989 33133,18131 32941,18121
+# 
+#: by: osm ("paved")
+	RW;RW 16488,29880 16279,29196 16066,28510 16008,28424 15777,28037
+# 
+#: by: Peter Piecha:
+	RW6;RW6 -10052,6640 -10138,6646 -10183,6650 -10236,6648 -10315,6646
+# 
 #: by: rjoop vvv
-Küstrin: straßenbegleitende Radwege	RW 92404,20801 92726,20487 92970,20194
+straßenbegleitende Radwege	RW;RW 92404,20801 92726,20487 92970,20194
 asphaltiert	RW8;RW2 67117,71540 68016,72528
 Radweg auf Bürgersteig	RW;RW 68016,72528 68281,72757 68690,72995
 #: by: ^^^
+# 
 #: by: Christian (blottner): vvv
 	RW6;RW6 -9513,-2845 -9535,-2913 -9559,-3000 -9565,-3025 -9583,-3090 -9627,-3243 -9642,-3257
 	RW6;RW6 -9565,-3025 -9419,-3068
 #: by: ^^^
+# 
 #: by: sven.wehner:
 	RW6;RW6 32418,6361 32606,6376 32603,6417 32431,6399 32416,6397
+# 
 #: by: Roland Krause:
-asphaltierter Radweg auf der östlichen Seite	RW;RW8? 4227,-5721 4547,-4951 4842,-4182 5068,-3719 5394,-3053
+asphaltiert	RW;RW8? 4227,-5721 4547,-4951 4842,-4182 5068,-3719 5394,-3053
