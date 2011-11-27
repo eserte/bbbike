@@ -6453,7 +6453,7 @@ Lützelsteiner Weg: Asphalt	Q0 1500,4356 1511,4422 1569,4600 1603,4637 1667,4664 
 Lorcher Str.: unebener Asphalt	Q1 4273,7002 4206,7040
 Lorcher Str.: unbefestigter Weg	Q1- 4206,7040 4184,7053 4160,7043
 Lorcher Str.: Asphalt	Q0 4160,7043 4059,7038
-(General-Pape-Str. - Gontermannstr.): Asphalt	Q0 8106,8290 8264,8289
+(General-Pape-Str. - Gontermannstr.): Asphalt	Q0 8106,8290 8202,8293 8265,8305 8276,8295
 (Leuthener Platz - Wilhelm-Kabus-Str.): Asphalt	Q0 7716,8356 7837,8354 7893,8327
 (Altonaer Str. - Händelallee): Gehwegplatten und wassergebundene Decke	Q1 6348,12272 6280,12222
 Joseph-Haydn-Str.: Kopfsteinpflaster	Q2 5825,12023 5790,12026
@@ -6703,7 +6703,8 @@ Sebnitzer Weg: Kopfsteinpflaster	Q2 16282,1052 16227,997
 (Kanzlerweg - Schreiberring): unbefestigter Weg	Q1- 8839,8132 8839,8168 8861,8242
 (Rumeyplan, Grünanlage): unbefestigter Weg	Q1- 8909,7769 8899,7788
 (Rumeyplan - Kanzlerweg): unbefestigter Weg	Q1- 8899,7788 8839,7904
-Mussehlstr.: Gehwegplatten	Q0- 8836,8564 8756,8453 8711,8371
+Mussehlstr.: Gehwegplatten	Q0- 8836,8564 8756,8453
+Mussehlstr.: Verbundsteinpflaster	Q1+ 8756,8453 8711,8371
 ######################### User Contributions #################################
 #: by: anonymous vvv
 # 
@@ -18175,7 +18176,7 @@ Gustav-Freytag-Str.: Verbundsteinpflaster	Q1 6807,8309 6779,8279
 Gustav-Freytag-Str.: Kopfsteinpflaster	Q2 6779,8279 6785,8194 6792,8122
 (Loewenhardtdamm - Höhndorfstr.): Verbundsteine, Beton	Q0 8334,8655 8438,8676
 #: confirmed_by: srt
-(Weg d. Kol. Papestr.): Verbundsteine und Schotter	Q1 8221,8631 8259,8628 8264,8289
+(Weg d. Kol. Papestr.): Verbundsteine und Schotter	Q1 8221,8631 8259,8628 8265,8305
 Udetzeile: Asphalt mit Fugen	Q1 8327,8302 8315,8189
 (zum Bayernring): Asphalt	Q0 8455,8567 8531,8404
 #: corrected_by: srt (Q1 -> Q0-)

@@ -35,16 +35,7 @@ userdel	2::temp 5656,10876 5652,11004
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20111109.1040.362258.html',
-         'until' => 1322335800,
-         'text' => 'Lichtenrader Weihnachtsmarkt: Bahnhofstr. (Lichtenrade) in beiden Richtungen zwischen Steinstr. und Goltzstr gesperrt (alle Adventssamstage von 11:00 bis 20:30) ',
-         'from' => 1322301600,
-         'id' => 417,
-         'data' => 'userdel	q4 10310,-2136 10453,-2133 10509,-2131 10631,-2130 10747,-2129 10983,-2116
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2552,8 +2543,8 @@ userdel	3 12992,7545 13015,7440 12925,7425
        undef,
        {
          'source_id' => 'IM_018013',
-         'until' => 1322496000,
-         'text' => 'Motardstr. (Spandau): Baustelle, Fahrtrichtung gesperrt Richtung Rohrdamm zwischen Sternfelder Str. und Rohrdamm, 11.10.2011 08:44 Uhr bis 28.11.2011 17:00 Uhr ',
+         'until' => 1322668800,
+         'text' => 'Motardstr. (Spandau): Baustelle, Fahrtrichtung gesperrt Richtung Rohrdamm zwischen Sternfelder Str. und Rohrdamm, 11.10.2011 08:44 Uhr bis 30.11.2011 17:00 Uhr ',
          'from' => 1318229040,
          'id' => 2293,
          'data' => 'userdel	q4::inwork; 386,14162 990,14062

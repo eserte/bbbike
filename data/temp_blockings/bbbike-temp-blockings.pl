@@ -13012,7 +13012,7 @@ EOF
        text  => 'L 020 Falkensee - Velten zw. Schönwalde und Gewerbegebiet Straßenbauarbeiten Vollsperrung 10.11.2008-19.12.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork -8777,22961 -7734,23796 -7533,24138
+userdel	2::inwork -8777,22961 -7734,23796 -7599,23946 -7533,24138
 EOF
      },
      { from  => 1225753200, # 2008-11-04 00:00
@@ -19796,8 +19796,8 @@ userdel	q4::inwork 4613,19279 4690,19446
 EOF
      },
      { from  => 1318229040, # 2011-10-10 08:44
-       until => 1322496000, # 2011-11-28 17:00
-       text  => 'Motardstr. (Spandau): Baustelle, Fahrtrichtung gesperrt Richtung Rohrdamm zwischen Sternfelder Str. und Rohrdamm, 11.10.2011 08:44 Uhr bis 28.11.2011 17:00 Uhr ',
+       until => 1322668800, # 2011-11-30 17:00
+       text  => 'Motardstr. (Spandau): Baustelle, Fahrtrichtung gesperrt Richtung Rohrdamm zwischen Sternfelder Str. und Rohrdamm, 11.10.2011 08:44 Uhr bis 30.11.2011 17:00 Uhr ',
        type  => 'handicap',
        source_id => 'IM_018013',
        data  => <<EOF,

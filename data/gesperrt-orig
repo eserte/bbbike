@@ -1447,6 +1447,7 @@ tragen (ca. 30 Stufen)	0:30 8773,10399
 #: note: Luftbild (Stufenanzahl)
 tragen (ca. 25 Stufen)	0:30 -18702,4551
 tragen (Treppe)	0:20 -12681,-1726
+tragen (Treppe)	0:20 -12625,-1703
 tragen (ca. 30 Stufen)	0:30 -13802,-1856
 tragen (ca. 30 Stufen)	0:30 -13733,-1856
 #: note: Luftbild
@@ -1872,6 +1873,10 @@ Tor	BNP:5 26888,13976
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: last_checked: 2011-11-27
+#: next_check: 2012-03-01
+Am Alten Markt: wegen Bauarbeiten (Wiederaufbau des Schlosses) gesperrt	2:inwork -12643,-1694 -12624,-1598
+# 
 #: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20111122.1040.362894.html
 #: XXX Sanierungstermin steht noch nicht fest
 #: next_check: 2012-04-01
@@ -1895,7 +1900,7 @@ Spreeufer: wegen Bauarbeiten gesperrt	2:inwork 8596,12576 8495,12651 8473,12753
 #: next_check: 2011-12-01
 (Leuthener Platz - Wilhelm-Kabus-Str.): Bauzäune	2:inwork 7716,8356 7837,8354 7893,8327
 # 
-#XXX del --- #: last_checked: 2011-09-27 --- #: next_check: 2011-10-15 --- (General-Pape-Str. - Gontermannstr.): Bauzäune	2:inwork 8106,8290 8264,8289
+#XXX del --- #: last_checked: 2011-09-27 --- #: next_check: 2011-10-15 --- (General-Pape-Str. - Gontermannstr.): Bauzäune	2:inwork 8106,8290 8202,8293 8265,8305 8276,8295
 # 
 #: last_checked: 2011-11-07
 #: next_check: 2011-11-24
