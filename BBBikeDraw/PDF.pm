@@ -1017,10 +1017,10 @@ sub can_multiple_passes {
 }
 
 sub patch_string {
-    if (!eval { require Route::PDF; 1 }) {
+    if (!eval { require BBBikeUnicodeUtil; 1 }) {
 	$_[0];
     } else {
-	Route::PDF::_unidecode_string($_[0]);
+	BBBikeUnicodeUtil::unidecode_string($_[0]);
     }
 }
 

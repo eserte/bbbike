@@ -155,25 +155,9 @@ sub flush {
     $self->{PDF}->close;
 }
 
-use vars qw($unidecode_warning);
-# Note: also used by BBBikeDraw::PDF:
 sub _unidecode_string {
-    my($str) = @_;
-    if (grep { ord($_) > 255 } split //, $str) {
-	if (!eval { require Text::Unidecode; 1 }) {
-	    if (!$unidecode_warning++) {
-		warn <<EOF;
-Unicode characters > 255 detected, but no Text::Unidecode module available,
-continuing with undefined results. This warning will be shown only once.
-EOF
-		$unidecode_warning = 1;
-	    }
-	} else {
-	    # XXX Should preserve at least the latin1 characters.
-	    return Text::Unidecode::unidecode($str);
-	}
-    }
-    $str;
+    require BBBikeUnicodeUtil;
+    BBBikeUnicodeUtil::unidecode_string(@_);
 }
 
 1;
