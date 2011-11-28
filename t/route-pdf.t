@@ -2,7 +2,6 @@
 # -*- mode:cperl;coding:raw-text; -*-
 
 #
-# $Id: route-pdf.t,v 1.16 2009/03/15 16:22:41 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -95,7 +94,7 @@ $rp->output(($lang ? (-lang => $lang) : ()),
 	    -net => $net,
 	    -route => $route,
 	   );
-$rp->{PDF}->close;
+$rp->flush;
 
 maybe_display($pdffile);
 trivial_pdf_test($pdffile);
@@ -123,7 +122,7 @@ EOF
 		-net => $net,
 		-route => $route,
 	       );
-    $rp->{PDF}->close;
+    $rp->flush;
     maybe_display($pdffile);
     trivial_pdf_test($pdffile);
 }
