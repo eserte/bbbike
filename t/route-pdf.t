@@ -13,7 +13,6 @@ use lib ("$FindBin::RealBin/..",
 	 "$FindBin::RealBin/../data",
 	 "$FindBin::RealBin",
 	);
-use Route::PDF;
 use Strassen::Core;
 use Strassen::MultiStrassen;
 use Strassen::StrassenNetz;
@@ -37,10 +36,16 @@ BEGIN {
 plan tests => 4;
 
 my $lang;
+my $Route_PDF_class = 'Route::PDF';
 if (!GetOptions("lang=s" => \$lang,
+		"class=s" => \$Route_PDF_class,
 		get_std_opts(qw(display pdfprog)),
 	       )) {
     die "usage: $0 [-lang lang] [-pdfprog pdfviewer] [-display]";
+}
+
+if (!eval 'use ' . $Route_PDF_class . '; 1') {
+    die $@;
 }
 
 my(undef, $pdffile) = tempfile(SUFFIX => "_test.pdf",
@@ -87,7 +92,7 @@ my $comments_net;
     }
 }
 
-my $rp = Route::PDF->new(@arg);
+my $rp = $Route_PDF_class->new(@arg);
 $rp->output(($lang ? (-lang => $lang) : ()),
 	    -vianame => $via_name,
 	    -commentsnet => $comments_net,
@@ -117,7 +122,7 @@ EOF
     my $net = StrassenNetz->new($s);
     $net->make_net;
     my($route) = $net->search($start, $goal, AsObj => 1);
-    my $rp = Route::PDF->new(-filename => $pdffile);
+    my $rp = $Route_PDF_class->new(-filename => $pdffile);
     $rp->output(($lang ? (-lang => $lang) : ()),
 		-net => $net,
 		-route => $route,
