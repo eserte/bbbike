@@ -115,6 +115,8 @@ Dudenstraße	X 100,100 200,200 300,300
 Trg bana Jelačića	X 300,300 400,400 500,500
 # Moskva, cyrillic:
 Москва	X 500,500 600,600
+# Tokyo:
+東京	X 600,600 700,700
 EOF
     my $start = $s->get(0)          ->[Strassen::COORDS()]->[0];
     my $goal  = $s->get($s->count-1)->[Strassen::COORDS()]->[-1];
