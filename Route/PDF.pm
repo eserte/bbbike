@@ -114,7 +114,6 @@ sub output {
 
     for my $line (@lines) {
 	my $x = $start_x;
-	my $col_i = 0;
 	for my $col_i (0 .. $#$line) {
 	    my $col = $line->[$col_i];
 	    my $font = ($col_i == 2 ? $bold_font : $font);
