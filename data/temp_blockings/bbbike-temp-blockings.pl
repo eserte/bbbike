@@ -9137,7 +9137,7 @@ userdel	q4::inwork -32153,-176 -32143,-211 -31993,-726 -31991,-1024
 EOF
      },
      { from  => 1319138777, # 2011-10-20 21:26
-       until => 1322694000, # 2011-12-01 00:00
+       until => 1322599270, # 1322694000, # 2011-12-01 00:00
        text  => 'Rudower Chaussee (Treptow - Köpenick) in beiden Richtungen Höhe S-Bahn Brücke Adlershof Baustelle, Straße vollständig gesperrt, als Fußgänger kann man passieren',
        type  => 'handicap',
        source_id => 'INKO_096853',

@@ -710,16 +710,7 @@ userdel	2::temp 9961,12273 9875,12257
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'INKO_096853',
-         'until' => 1322694000,
-         'text' => 'Rudower Chaussee (Treptow - Köpenick) in beiden Richtungen Höhe S-Bahn Brücke Adlershof Baustelle, Straße vollständig gesperrt, als Fußgänger kann man passieren',
-         'from' => 1319138777,
-         'id' => 1079,
-         'data' => 'userdel	q4::inwork 19904,3464 19732,3340
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
