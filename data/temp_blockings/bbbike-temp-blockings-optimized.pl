@@ -2034,7 +2034,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        {
          'until' => undef,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im November von 7.00 bis 18.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Dezember von 7.30 bis 17.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'from' => undef,
          'id' => 2068,
          'data' => '(Eingang Columbiadamm - Rundkurs auf dem Flughafen Tempelhof)	2::night 10691,8532 10640,8366 10598,8270 10575,8218
@@ -2148,16 +2148,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'LS/W-SG33-P/10/410',
-         'until' => 1322694000,
-         'text' => 'Nuthetal: L77, L771: Bau OU Güterfelde, Berliner Straße / Stahnsdorfer Damm, 09.08.2010 08:00 Uhr bis 30.11.2011 ',
-         'from' => 1281247200,
-         'id' => 2117,
-         'data' => 'userdel	2::inwork -2815,-3574 -3368,-4430
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2532,16 +2523,7 @@ userdel	3 12992,7545 13015,7440 12925,7425
        },
        undef,
        undef,
-       {
-         'source_id' => 'IM_018013',
-         'until' => 1322668800,
-         'text' => 'Motardstr. (Spandau): Baustelle, Fahrtrichtung gesperrt Richtung Rohrdamm zwischen Sternfelder Str. und Rohrdamm, 11.10.2011 08:44 Uhr bis 30.11.2011 17:00 Uhr ',
-         'from' => 1318229040,
-         'id' => 2293,
-         'data' => 'userdel	q4::inwork; 386,14162 990,14062
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2600,17 +2582,7 @@ userdel	q4::inwork 18286,11275 18059,11248
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_018140',
-         'until' => 1322667960,
-         'text' => 'Köpenicker Str. (Altglienicke): Baustelle, Straße vollständig gesperrt in beiden Richtungen zwischen Semmelweisstr. und Rudower Str., 07.11.2011 15:45 Uhr bis 30.11.2011 16:46 Uhr ',
-         'from' => 1320590700,
-         'id' => 2306,
-         'data' => 'userdel	q4::inwork 19806,1903 19771,1793
-#XXX del: userdel	q4::inwork 19771,1793 19728,1660 19679,1571
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'IM_018151',
          'until' => 1325347200,
