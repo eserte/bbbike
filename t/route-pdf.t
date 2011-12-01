@@ -40,11 +40,13 @@ plan tests => (2+$pdfinfo_tests)*2;
 
 my $lang;
 my $Route_PDF_class = 'Route::PDF';
+my $debug;
 if (!GetOptions("lang=s" => \$lang,
 		"class=s" => \$Route_PDF_class,
+		"debug" => \$debug,
 		get_std_opts(qw(display pdfprog)),
 	       )) {
-    die "usage: $0 [-lang lang] [-pdfprog pdfviewer] [-display]";
+    die "usage: $0 [-lang lang] [-debug] [-pdfprog pdfviewer] [-display] [-class Route::PDF::...]";
 }
 
 if (!eval 'use ' . $Route_PDF_class . '; 1') {
@@ -175,14 +177,21 @@ sub pdfinfo_test {
 	close $fh or die $!;
 
 	my $info_like = sub {
-	    my($k,$v) = @_;
-	    like $info{$k}, $v, "Check for $k"
-		or diag Dumper(\%info);
+	    my($k,$rx) = @_;
+	    my $v = $info{$k} || '';
+	    like $v, $rx, "Check for $k"
+		or do { $debug && diag Dumper(\%info) };
 	};
-	$info_like->('Title', qr{BBBike Route});
-	$info_like->('Author', qr{Slaven Rezic});
-	$info_like->('Creator', qr{Route::PDF version \d+\.\d+});
 	$info_like->('Page size', qr{A4});
+	{
+	    local $TODO;
+	    if ($Route_PDF_class eq 'Route::PDF::Cairo') {
+		$TODO = 'Cannot set Creator, Author, or Title with cairo';
+	    }
+	    $info_like->('Title', qr{BBBike Route});
+	    $info_like->('Author', qr{Slaven Rezic});
+	    $info_like->('Creator', qr{Route::PDF version \d+\.\d+});
+	}
     }
 }
 
