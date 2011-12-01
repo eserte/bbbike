@@ -40,11 +40,13 @@ plan tests => (2+$pdfinfo_tests)*2;
 
 my $lang;
 my $Route_PDF_class = 'Route::PDF';
+my $debug;
 if (!GetOptions("lang=s" => \$lang,
 		"class=s" => \$Route_PDF_class,
+		"debug" => \$debug,
 		get_std_opts(qw(display pdfprog)),
 	       )) {
-    die "usage: $0 [-lang lang] [-pdfprog pdfviewer] [-display]";
+    die "usage: $0 [-lang lang] [-debug] [-pdfprog pdfviewer] [-display] [-class Route::PDF::...]";
 }
 
 if (!eval 'use ' . $Route_PDF_class . '; 1') {
