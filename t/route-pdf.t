@@ -177,14 +177,21 @@ sub pdfinfo_test {
 	close $fh or die $!;
 
 	my $info_like = sub {
-	    my($k,$v) = @_;
-	    like $info{$k}, $v, "Check for $k"
-		or diag Dumper(\%info);
+	    my($k,$rx) = @_;
+	    my $v = $info{$k} || '';
+	    like $v, $rx, "Check for $k"
+		or do { $debug && diag Dumper(\%info) };
 	};
-	$info_like->('Title', qr{BBBike Route});
-	$info_like->('Author', qr{Slaven Rezic});
-	$info_like->('Creator', qr{Route::PDF version \d+\.\d+});
 	$info_like->('Page size', qr{A4});
+	{
+	    local $TODO;
+	    if ($Route_PDF_class eq 'Route::PDF::Cairo') {
+		$TODO = 'Cannot set Creator, Author, or Title with cairo';
+	    }
+	    $info_like->('Title', qr{BBBike Route});
+	    $info_like->('Author', qr{Slaven Rezic});
+	    $info_like->('Creator', qr{Route::PDF version \d+\.\d+});
+	}
     }
 }
 
