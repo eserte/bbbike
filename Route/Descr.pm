@@ -87,6 +87,7 @@ sub convert {
     my $zielhnr  = delete $args{-zielhnr};
     my $verbose  = delete $args{-verbose};
     my $lang  = delete $args{-lang};
+    my $city = delete $args{-city} || 'Berlin_DE';
 
     if (keys %args) {
 	die "Invalid argument to outout method";
@@ -120,26 +121,44 @@ sub convert {
 	$ret{Title} = join(" ", @str);
     }
 
+    # Note: taken from display_route() in bbbike.cgi
     my @lines;
-    my($next_entf, $ges_entf_s, $next_winkel, $next_richtung);
+    my($next_entf, $ges_entf_s, $next_winkel, $next_richtung, $next_extra);
     my $ges_entf = 0;
     for(my $i = 0; $i <= $#strnames; $i++) {
 	my $strname;
 	my $etappe_comment = '';
-	my($entf, $winkel, $richtung)
-	    = ($next_entf, $next_winkel, $next_richtung);
-	($strname, $next_entf, $next_winkel, $next_richtung)
-	    = @{$strnames[$i]};
+	my $route_inx;
+	my $important_angle_crossing_name;
+	my($entf, $winkel, $richtung, $extra)
+	    = ($next_entf, $next_winkel, $next_richtung, $next_extra);
+	($strname, $next_entf, $next_winkel, $next_richtung,
+	 $route_inx, $next_extra) = @{$strnames[$i]};
+	$strname = Strasse::strip_bezirk_perfect($strname, $city);
 	if ($i > 0) {
 	    if (!$winkel) { $winkel = 0 }
 	    $winkel = int($winkel/10)*10;
-	    if ($winkel < 30) {
+	    my $same_streetname_important_angle =
+		@lines && $lines[-1]->[2] eq $strname && $extra && $extra->{ImportantAngleCrossingName};
+	    if ($winkel < 30 && (!$extra || !$extra->{ImportantAngle})) {
 		$richtung = "";
 	    } else {
 		$richtung =
 		    ($winkel <= 45 ? 'halb' : '') .
 			($richtung eq 'l' ? M('links') : M('rechts')) . ' ' .
-			    "($winkel°) " . (($lang||'') eq 'en' ? "->" : Strasse::de_artikel($strname));
+			    "($winkel°) ";
+		if (($lang||'') eq 'en') {
+		    $richtung .= '->';
+		} else {
+		    if ($same_streetname_important_angle) {
+			$richtung .= 'weiter ' . Strasse::de_artikel_genitiv($strname);
+		    } else {
+			$richtung .= Strasse::de_artikel($strname);
+		    }
+		}
+	    }
+	    if ($same_streetname_important_angle) {
+		$important_angle_crossing_name = Strasse::strip_bezirk($extra->{ImportantAngleCrossingName});
 	    }
 	    $ges_entf += $entf;
 	    $ges_entf_s = sprintf "%.1f km", $ges_entf/1000;
