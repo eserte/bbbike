@@ -1,10 +1,9 @@
 # -*- perl -*-
 
 #
-# $Id: PDF.pm,v 1.10 2008/09/16 19:29:00 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2002,2004 Slaven Rezic. All rights reserved.
+# Copyright (C) 2002,2004,2011 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -67,9 +66,10 @@ sub output {
 
     $self->allocate_fonts;
     my $pdf = $self->{PDF};
-    my($page_width, $page_height);
-    (undef, undef, $page_width, $page_height) = @{$pdf->get_page_size("a4")};
-    my $page = $pdf->new_page;
+    # XXX Maybe the MediaBox should be configurable?
+    my $media_box = $pdf->get_page_size('a4');
+    my(undef, undef, $page_width, $page_height) = @$media_box;
+    my $page = $pdf->new_page(MediaBox => $media_box);
     $pdf->new_outline('Title' => &Route::Descr::M('Routenliste'),
 		      'Destination' => $page);
     my $font = $self->{NormalFont};
@@ -127,7 +127,7 @@ sub output {
 	}
 	$y -= $font_size+3;
 	if ($y < 40) {
-	    $page = $pdf->new_page; $y = $start_y;
+	    $page = $pdf->new_page(MediaBox => $media_box); $y = $start_y;
 	}
     }
 }
