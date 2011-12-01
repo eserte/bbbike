@@ -13,14 +13,16 @@ use lib ("$FindBin::RealBin/..",
 	 "$FindBin::RealBin/../data",
 	 "$FindBin::RealBin",
 	);
-use Strassen::Core;
-use Strassen::MultiStrassen;
-use Strassen::StrassenNetz;
-use Strassen::Dataset;
-eval q{ use BBBikeXS; };
+use Data::Dumper qw(Dumper);
 use Getopt::Long;
 
+use BBBikeUtil qw(is_in_path);
 use BBBikeTest;
+use Strassen::Core;
+use Strassen::Dataset;
+use Strassen::MultiStrassen;
+use Strassen::StrassenNetz;
+eval q{ use BBBikeXS; };
 
 BEGIN {
     if (!eval q{
@@ -33,7 +35,8 @@ BEGIN {
     }
 }
 
-plan tests => 4;
+my $pdfinfo_tests = 4;
+plan tests => (2+$pdfinfo_tests)*2;
 
 my $lang;
 my $Route_PDF_class = 'Route::PDF';
@@ -103,6 +106,7 @@ $rp->flush;
 
 maybe_display($pdffile);
 trivial_pdf_test($pdffile);
+pdfinfo_test($pdffile);
 
 {
     # testing with UTF-8 encoding --- currently does not work!
@@ -132,6 +136,7 @@ EOF
     $rp->flush;
     maybe_display($pdffile);
     trivial_pdf_test($pdffile);
+    pdfinfo_test($pdffile);
 }
 
 sub maybe_display {
@@ -148,6 +153,33 @@ sub trivial_pdf_test {
     open(PDF, $pdffile) or die $!;
     my $firstline = <PDF>;
     like($firstline, qr/^%PDF-1\.\d+/, "PDF magic in $pdffile");
+}
+
+sub pdfinfo_test {
+    my $pdffile = shift;
+ SKIP: {
+	skip 'No pdfinfo available', $pdfinfo_tests
+	    if !is_in_path('pdfinfo');
+	my %info;
+	open my $fh, "-|", 'pdfinfo', $pdffile
+	    or die $!;
+	while(<$fh>) {
+	    chomp;
+	    my($k,$v) = split /:\s+/, $_, 2;
+	    $info{$k} = $v;
+	}
+	close $fh or die $!;
+
+	my $info_like = sub {
+	    my($k,$v) = @_;
+	    like $info{$k}, $v, "Check for $k"
+		or diag Dumper(\%info);
+	};
+	$info_like->('Title', qr{BBBike Route});
+	$info_like->('Author', qr{Slaven Rezic});
+	$info_like->('Creator', qr{Route::PDF version \d+\.\d+});
+	$info_like->('Page size', qr{A4});
+    }
 }
 
 __END__
