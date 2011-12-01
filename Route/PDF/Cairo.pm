@@ -53,6 +53,7 @@ sub output {
 
     my $cr = Cairo::Context->create($self->{Surface});
     my $page_height = DIN_A4_HEIGHT;
+    my $page_width = DIN_A4_WIDTH;
 
 #XXX how to create outlines here?
 #    $pdf->new_outline('Title' => &Route::Descr::M('Routenliste'),
@@ -74,15 +75,19 @@ sub output {
     my $y = $start_y;
 
     my $_string = sub {
-	my($doit, $alignment, $fontface, $size, $x0, $y0, $text) = @_;
+	my($doit, $alignment, $text, $fontface, $size, $x0, $y0, $maxwidth) = @_;
 	return if !defined $text || !length $text;
+	return if $x0 && $x0 > $page_width;
 	my $font = $get_font->("$fontface $size");
 
 	my $layout = Pango::Cairo::create_layout($cr);
 	$layout->set_text($text);
 	$layout->set_font_description($font);
 	if ($alignment eq 'center') {
-	    $layout->set_width(DIN_A4_WIDTH * Pango->scale);
+	    $layout->set_width($page_width * Pango->scale);
+	} elsif ($maxwidth) {
+	    $layout->set_width($maxwidth * Pango->scale);
+	    $layout->set_ellipsize('end');
 	}
 	$layout->set_alignment($alignment);
 	if ($doit) {
@@ -97,13 +102,13 @@ sub output {
     my $stringc = sub { $_string->(1, 'center', @_) };
     my $string_width = sub { $_string->(0, 'left', @_) };
 
-    $y += $stringc->('Sans Normal', 18, 0, $y, 'BBBike');
+    $y += $stringc->('BBBike', 'Sans Normal', 18, 0, $y);
 
     if ($out->{Title}) {
 	my $title = $out->{Title};
 	my $head2_font_size = 14;
 	$y += 4;
-	$y += $stringc->('Sans Normal', 14, 0, $y, $title);
+	$y += $stringc->($title, 'Sans Normal', 14, 0, $y);
     }
 
     $y += 4;
@@ -114,10 +119,10 @@ sub output {
     my @max_width;
     for my $line (@lines) {
 	for my $col_i (0 .. $#$line) {
-	    my $col = $line->[$col_i];
-	    $col = "" if !defined $col;
+	    my $cell = $line->[$col_i];
+	    $cell = "" if !defined $cell;
 	    my $font = ($col_i == 2 ? $bold_font_description : $font_description);
-	    my($this_width, undef) = $string_width->($font, $font_size, 0, 0, $col);
+	    my($this_width, undef) = $string_width->($cell, $font, $font_size);
 	    if (defined $this_width && (!defined $max_width[$col_i] || $max_width[$col_i] < $this_width)) {
 		$max_width[$col_i] = $this_width;
 	    }
@@ -132,13 +137,13 @@ sub output {
 	my $col_i = 0;
 	my $max_y = 0;
 	for my $col_i (0 .. $#$line) {
-	    my $col = $line->[$col_i];
+	    my $cell = $line->[$col_i];
 	    my $font = ($col_i == 2 ? $bold_font_description : $font_description);
 #	    my $width = $page->my_string_width($font, $col)*$font_size;
 #	    if ($x + $width > $page_width-30) {
 #		#XXX TODO warn "wrap!";
 #	    }
-	    my $this_y = $string->($font, $font_size, $x, $y, $col);
+	    my $this_y = $string->($cell, $font, $font_size, $x, $y, $col_i == $#$line ? $page_width - $x : $max_width[$col_i]);
 	    $max_y = $this_y if defined $this_y && (!defined $max_y || $max_y < $this_y);
 	    if ($max_width[$col_i]) {
 		$x += $max_width[$col_i]+$x_spacing;
