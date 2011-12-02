@@ -4,6 +4,8 @@
 #                        local system first, then sync, then test on remote
 #                        system, and do some git operations before and
 #                        after
+#  automatic-deployment-temp-blockings: do everything to deploy only
+#					the temp-blockings-related files
 #
 #  check:	Show what would be rsync'ed from the current directory
 #  rsync:	Do the rsync. This will not be permitted if the make system
@@ -201,7 +203,8 @@ TARGET=devpc01
 .else
 TARGET=bbbike.hosteurope.herceg.de
 .endif
-.elif make(automatic-deployment)
+.elif make(automatic-deployment) || \
+      make(automatic-deployment-temp-blockings)
 # no TARGET=
 .else
 .error "Please set TARGET to hosteurope or bbbike.hosteurope.herceg.de"
@@ -777,3 +780,12 @@ automatic-deployment:
 	-@${XTERM_CONF_TITLE} "BBBike post-deployment git update"
 	$(HOME)/src/bbbike-aux/misc/bbbike-checkin-hosteurope.pl -after-sync
 	-@${XTERM_CONF_TITLE} "BBBike deployment finished"
+
+automatic-deployment-temp-blockings:
+	-@${XTERM_CONF_TITLE} "BBBike pre-deployment git update"
+	$(HOME)/src/bbbike-aux/misc/bbbike-checkin-hosteurope.pl -update
+	-@${XTERM_CONF_TITLE} "BBBike temp-blockings deployment"
+	${MAKE} deploy-temp-blockings
+	-@${XTERM_CONF_TITLE} "BBBike post-deployment git update"
+	$(HOME)/src/bbbike-aux/misc/bbbike-checkin-hosteurope.pl -after-sync
+	-@${XTERM_CONF_TITLE} "BBBike temp-blockings deployment finished"
