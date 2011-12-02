@@ -3495,8 +3495,8 @@ EOF
 userdel	2::inwork -19908,17940 -18793,18169
 EOF
      },
-     { from  => 1322301600, # 2011-11-26 11:00, PERIODISCH! an allen Adventssamstagen
-       until => 1322335800, # 2011-11-26 20:30, PERIODISCH! an allen Adventssamstagen
+     { from  => 1322866800, # 2011-11-26 11:00, PERIODISCH! an allen Adventssamstagen
+       until => 1322940600, # 2011-11-26 20:30, PERIODISCH! an allen Adventssamstagen
        text  => 'Lichtenrader Weihnachtsmarkt: Bahnhofstr. (Lichtenrade) in beiden Richtungen zwischen Steinstr. und Goltzstr gesperrt (alle Adventssamstage von 11:00 bis 20:30) ',
        type  => 'gesperrt',
        source_id => 'http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20111109.1040.362258.html',
@@ -15729,8 +15729,8 @@ userdel	2::inwork -30199,-5774 -30919,-6570 -31110,-6743 -32618,-7268
 EOF
      },
      { from  => 1251090240, # 2009-08-24 07:04
-       until => 1322834400, # 2011-12-02 15:00
-       text  => 'Freiheit/Wiesendamm (Spandau): Baustelle, Fahrtrichtung gesperrt Richtung Spandauer Damm zwischen Klärwerkstr. und Spandauer Damm, 25.08.2009 07:04 Uhr bis 02.12.2011 15:00 Uhr ',
+       until => 1323439200, # 2011-12-09 15:00
+       text  => 'Freiheit/Wiesendamm (Spandau): Baustelle, Fahrtrichtung gesperrt Richtung Spandauer Damm zwischen Klärwerkstr. und Spandauer Damm, 25.08.2009 07:04 Uhr bis 09.12.2011 15:00 Uhr ',
        type  => 'handicap',
        source_id => 'IM_013995',
        data  => <<EOF,
@@ -16993,9 +16993,9 @@ EOF
 userdel	2::temp 8479,11493 8481,11447 8389,11378
 EOF
      },
-     { from  => 1291330800, # PERIODISCH! # früher: 1259959719, # 2009-12-04 21:48
-       until => 1291589999, # PERIODISCH! # früher: 1260140400, # 2009-12-07 00:00
-       text  => 'Richardplatz (Neukölln) und die Durchfahrt aller angrenzenden Straßen Rixdorfer Weihnachtsmarkt, Straße vollständig gesperrt (03.12.2010 bis 05.12.2010)',
+     { from  => 1322780400, # PERIODISCH! # früher: 1259959719, # 2009-12-04 21:48
+       until => 1323039600, # PERIODISCH! # früher: 1260140400, # 2009-12-07 00:00
+       text  => 'Richardplatz (Neukölln) und die Durchfahrt aller angrenzenden Straßen Rixdorfer Weihnachtsmarkt, Straße vollständig gesperrt (02.12.2011 bis 04.12.2011)',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 13423,7707 13426,7674
@@ -19796,8 +19796,8 @@ userdel	q4::inwork 4613,19279 4690,19446
 EOF
      },
      { from  => 1318229040, # 2011-10-10 08:44
-       until => 1322668800, # 2011-11-30 17:00
-       text  => 'Motardstr. (Spandau): Baustelle, Fahrtrichtung gesperrt Richtung Rohrdamm zwischen Sternfelder Str. und Rohrdamm, 11.10.2011 08:44 Uhr bis 30.11.2011 17:00 Uhr ',
+       until => 1324656000, # 2011-12-23 17:00
+       text  => 'Motardstr. (Spandau): Baustelle, Fahrtrichtung gesperrt Richtung Rohrdamm zwischen Sternfelder Str. und Rohrdamm, 11.10.2011 08:44 Uhr bis 23.12.2011 17:00 Uhr ',
        type  => 'handicap',
        source_id => 'IM_018013',
        data  => <<EOF,
@@ -19913,10 +19913,10 @@ userdel	q4::inwork -629,21975 -428,21933
 EOF
      },
      { from  => 1320590700, # 2011-11-06 15:45
-       until => 1322667960, # 2011-11-30 16:46
-       text  => 'Köpenicker Str. (Altglienicke): Baustelle, Straße vollständig gesperrt in beiden Richtungen zwischen Semmelweisstr. und Rudower Str., 07.11.2011 15:45 Uhr bis 30.11.2011 16:46 Uhr ',
+       until => 1324655160, # 2011-12-23 16:46
+       text  => 'Köpenicker Str. (Altglienicke): Baustelle, Straße vollständig gesperrt in beiden Richtungen zwischen Semmelweisstr. und Rudower Str., 07.11.2011 15:45 Uhr bis 23.12.2011 16:46 Uhr ',
        type  => 'handicap',
-       source_id => 'IM_018140',
+       source_id => 'IM_018211',
        data  => <<EOF,
 userdel	q4::inwork 19806,1903 19771,1793
 #XXX del: userdel	q4::inwork 19771,1793 19728,1660 19679,1571

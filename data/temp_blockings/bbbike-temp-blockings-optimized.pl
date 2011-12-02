@@ -35,7 +35,16 @@ userdel	2::temp 5656,10876 5652,11004
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20111109.1040.362258.html',
+         'until' => 1322940600,
+         'text' => 'Lichtenrader Weihnachtsmarkt: Bahnhofstr. (Lichtenrade) in beiden Richtungen zwischen Steinstr. und Goltzstr gesperrt (alle Adventssamstage von 11:00 bis 20:30) ',
+         'from' => 1322866800,
+         'id' => 417,
+         'data' => 'userdel	q4 10310,-2136 10453,-2133 10509,-2131 10631,-2130 10747,-2129 10983,-2116
+',
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
@@ -1698,8 +1707,8 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        {
          'source_id' => 'IM_013995',
-         'until' => 1322834400,
-         'text' => 'Freiheit/Wiesendamm (Spandau): Baustelle, Fahrtrichtung gesperrt Richtung Spandauer Damm zwischen Klärwerkstr. und Spandauer Damm, 25.08.2009 07:04 Uhr bis 02.12.2011 15:00 Uhr ',
+         'until' => 1323439200,
+         'text' => 'Freiheit/Wiesendamm (Spandau): Baustelle, Fahrtrichtung gesperrt Richtung Spandauer Damm zwischen Klärwerkstr. und Spandauer Damm, 25.08.2009 07:04 Uhr bis 09.12.2011 15:00 Uhr ',
          'from' => 1251090240,
          'id' => 1850,
          'data' => 'userdel	q4::inwork; -1258,13552 -990,13502 -729,13415 -346,13349 -307,13279 -264,13009
@@ -1935,7 +1944,24 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        undef,
-       undef,
+       {
+         'until' => 1323039600,
+         'text' => 'Richardplatz (Neukölln) und die Durchfahrt aller angrenzenden Straßen Rixdorfer Weihnachtsmarkt, Straße vollständig gesperrt (02.12.2011 bis 04.12.2011)',
+         'from' => 1322780400,
+         'id' => 1998,
+         'data' => 'userdel	2 13423,7707 13426,7674
+userdel	2 13423,7707 13297,7654
+userdel	2 13426,7674 13400,7642 13303,7622
+userdel	2 12980,7597 13100,7626 13177,7644
+userdel	2 13188,7590 13177,7644
+userdel	2 13188,7590 13303,7622
+userdel	2 13297,7654 13303,7622
+userdel	2 13297,7654 13177,7644
+userdel auto	3 13446,7879 13423,7707 13426,7674 13560,7646
+userdel auto	3 13560,7646 13426,7674 13423,7707 13446,7879
+',
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
@@ -2523,7 +2549,16 @@ userdel	3 12992,7545 13015,7440 12925,7425
        },
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'IM_018013',
+         'until' => 1324656000,
+         'text' => 'Motardstr. (Spandau): Baustelle, Fahrtrichtung gesperrt Richtung Rohrdamm zwischen Sternfelder Str. und Rohrdamm, 11.10.2011 08:44 Uhr bis 23.12.2011 17:00 Uhr ',
+         'from' => 1318229040,
+         'id' => 2293,
+         'data' => 'userdel	q4::inwork; 386,14162 990,14062
+',
+         'type' => 'handicap'
+       },
        undef,
        undef,
        undef,
@@ -2582,7 +2617,17 @@ userdel	q4::inwork 18286,11275 18059,11248
 ',
          'type' => 'handicap'
        },
-       undef,
+       {
+         'source_id' => 'IM_018211',
+         'until' => 1324655160,
+         'text' => 'Köpenicker Str. (Altglienicke): Baustelle, Straße vollständig gesperrt in beiden Richtungen zwischen Semmelweisstr. und Rudower Str., 07.11.2011 15:45 Uhr bis 23.12.2011 16:46 Uhr ',
+         'from' => 1320590700,
+         'id' => 2306,
+         'data' => 'userdel	q4::inwork 19806,1903 19771,1793
+#XXX del: userdel	q4::inwork 19771,1793 19728,1660 19679,1571
+',
+         'type' => 'handicap'
+       },
        {
          'source_id' => 'IM_018151',
          'until' => 1325347200,
