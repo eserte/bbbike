@@ -58,14 +58,24 @@ use vars qw(%filetype_to_cat %file_to_cat);
     );
 
 my %older_file_to_cat =
-    ('3.16' => {
-		"flaechen" => [qw(F:Ae F:Cemetery F:Forest F:Green
-			          F:Industrial F:Orchard F:Mine
-			          F:P F:Pabove F:Sport)],
-	       },
-     '3.17' => {
-		"strassen" => [qw(HH H N NN Pl)],
-	       },
+    (
+     "flaechen" => {
+		    '3.16'        => [qw(F:Ae F:Cemetery F:Forest F:Green
+				         F:Industrial F:Orchard F:Mine
+				         F:P F:Pabove F:Sport)],
+		    'data-update' => [qw(F:Ae F:Cemetery F:Forest F:Green
+				         F:Industrial F:Orchard F:Mine
+				         F:P F:Pabove F:Sport),
+				      sub {
+					  # not handled, but older bbbike <= 3.17 shows a green area which is acceptable
+					  /^F:Cemetery\|religion:(?:muslim|jewish)$/,
+				      },
+				     ],
+		   },
+     "strassen" => {
+		    '3.17'        => [qw(HH H N NN Pl)],
+		    'data-update' => [qw(HH H NH N NN Pl)], # BBBikeDataDownloadCompat takes care of NH
+		   },
     );
 
 %file_to_cat =
@@ -154,9 +164,21 @@ sub get_validity_checker {
 
     $filename = _normalize_filename($filename);
     my $allowed_cats;
-    if (defined $bbbike_version && exists $older_file_to_cat{$bbbike_version}->{$filename}) {
-	$allowed_cats = $older_file_to_cat{$bbbike_version}->{$filename};
-    } elsif (exists $file_to_cat{$filename}) {
+    if (defined $bbbike_version && exists $older_file_to_cat{$filename}) {
+	if ($bbbike_version eq 'data-update' && exists $older_file_to_cat{$filename}->{$bbbike_version}) {
+	    $allowed_cats = $older_file_to_cat{$filename}->{$bbbike_version};
+	} else {
+	    for my $v (sort { $b <=> $a } keys %{ $older_file_to_cat{$filename} }) {
+		if ($bbbike_version > $v) {
+		    last;
+		} else {
+		    $allowed_cats = $older_file_to_cat{$filename}->{$v};
+		    last;
+		}
+	    }
+	}
+    }
+    if (!$allowed_cats && exists $file_to_cat{$filename}) {
 	$allowed_cats = $file_to_cat{$filename};
     }
     if ($allowed_cats) {

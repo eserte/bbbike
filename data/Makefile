@@ -304,10 +304,9 @@ wasserstrassen-lowres:  wasserstrassen wasserumland wasserumland2 \
 	mv -f $@~~ $@
 	-@$(READONLY) $@
 
-# XXX Temporary: remove the religion:... tag until backward compat issues are resolved
 flaechen: flaechen-orig
 	-@$(WRITEABLE) $@
-	$(CONVERT_ORIG) flaechen-orig | perl -pe 's{\|religion:\S+}{}' > flaechen~
+	$(CONVERT_ORIG) flaechen-orig > flaechen~
 	mv $@~ $@
 	-@$(READONLY) $@
 
@@ -1584,7 +1583,7 @@ check-categories:	.check_categories
 .for target in ${BBD_TARGETS}
 	@echo " ${target}"
 	@$(PERL_UTF8) -I../lib -I.. -MStrassen::Cat -e '\
-	    exit !Strassen::Cat::check_file($$ARGV[0], BBBikeVersion => "3.16");\
+	    exit !Strassen::Cat::check_file($$ARGV[0], BBBikeVersion => "data-update");\
 	' ${target}
 .endfor
 	touch $@
