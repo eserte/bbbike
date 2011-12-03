@@ -6034,7 +6034,7 @@ sub define_item_attribs {
     foreach (qw/gBO gP gD/) {
 	$line_dash{$_} = [@{ $line_dash{"g"}}];
     }
-    foreach (grep { $_ !~ m{^(tram|ferry)$} } @comments_types) {
+    foreach (grep { $_ !~ m{^(tram|ferry|cyclepath)$} } @comments_types) {
 	$line_dash{"comm-".$_} = [@{ $line_dash{"comm"}}];
     }
     $line_dash{'comm-ferry'} = $line_dash{'e'};
