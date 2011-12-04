@@ -35,16 +35,7 @@ userdel	2::temp 5656,10876 5652,11004
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20111109.1040.362258.html',
-         'until' => 1322940600,
-         'text' => 'Lichtenrader Weihnachtsmarkt: Bahnhofstr. (Lichtenrade) in beiden Richtungen zwischen Steinstr. und Goltzstr gesperrt (alle Adventssamstage von 11:00 bis 20:30) ',
-         'from' => 1322866800,
-         'id' => 417,
-         'data' => 'userdel	q4 10310,-2136 10453,-2133 10509,-2131 10631,-2130 10747,-2129 10983,-2116
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2607,16 +2598,7 @@ userdel	q4::inwork 18286,11275 18059,11248
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'source_id' => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20111110.1620.362354.html',
-         'until' => 1322866799,
-         'text' => 'Sperrung der Straße Im Erpelgrund zwischen der Straße An der Schneise bis Dambockstraße in östlicher Richtung, vom 17. November 2011 bis voraussichtlich 2. Dezember 2011 ',
-         'from' => 1321398000,
-         'id' => 2305,
-         'data' => 'userdel	q4::inwork -629,21975 -428,21933
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'IM_018211',
          'until' => 1324655160,
