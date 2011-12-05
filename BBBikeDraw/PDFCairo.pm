@@ -15,7 +15,8 @@ package BBBikeDraw::PDFCairo;
 use strict;
 use base qw(BBBikeDraw);
 use Cairo;
-use Pango;
+##XXX use only conditionally, otherwise fallback to Cairo string rendering
+#use Pango;
 use Strassen;
 # Strassen benutzt FindBin benutzt Carp, also brauchen wir hier nicht zu
 # sparen:
@@ -59,13 +60,6 @@ sub init {
 	}
     }
 
-    if ($self->{Fh}) { # XXX
-	warn "Fh NYI!";
-	undef $self->{Fh};
-    }
-    my $filename = $self->{Filename}
-	or die "Please define Filename!";
-
     my $page_bbox = [0,0,DIN_A4_WIDTH,DIN_A4_HEIGHT];
     my $rotate;
     my $geometry = $self->{Geometry} || '';
@@ -85,7 +79,14 @@ sub init {
 	#XXX jeht nicht:	$rotate = 90; # oder -90
     }
 
-    my $surface = Cairo::PdfSurface->create($filename, $page_bbox->[2], $page_bbox->[3]);
+    my $surface;
+    if (defined $self->{Filename}) {
+	$surface = Cairo::PdfSurface->create($self->{Filename}, $page_bbox->[2], $page_bbox->[3]);
+    } else {
+	my $fh = $self->{Fh};
+	$surface = Cairo::PdfSurface->create_for_stream(sub { print $fh $_[1] }, undef, $page_bbox->[2], $page_bbox->[3]);
+    }
+
     ## XXX no Cairo support for these, it seems
     #'Author' => 'Slaven Rezic',
     #'Title' => 'BBBike Route',
