@@ -295,8 +295,8 @@ sub draw_map {
 	    my $xv = [ map { $_->[0] } @p ];
 	    my $yv = [ map { $_->[1] } @p ];
 
-	    if ($cat =~ /^F:(.*)/) {
-		my $subcat = $1;
+	    if ($cat =~ /^(F:([^|]+))/) {
+		my($cat, $subcat) = ($1, $2);
 		my $style = $style{$cat};
 		if (!defined $style) { $style = $style{$subcat} }
 #  		$im->set_line_width(1);

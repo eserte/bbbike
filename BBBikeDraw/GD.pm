@@ -361,7 +361,7 @@ sub draw_map {
 
 	for my $s ($self->get_street_records_in_bbox($strecke)) {
 	    my $cat = $s->[Strassen::CAT];
-	    if ($cat =~ /^F:(.*)/) {
+	    if ($cat =~ /^F:([^|]+)/) {
 		my $cat = $1;
 		next if ($strecke_name eq 'flaechen' &&
 			 (($flaechen_pass == 1 && $cat eq 'Pabove') ||

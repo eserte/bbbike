@@ -230,7 +230,7 @@ if ($strecke->{Grid}{$grid}) {
 for my $strpos (@{ $strecke->{Grid}{$grid}}) {
 my $s = $strecke->get($strpos);
 	    my $cat = $s->[2];
-	    if ($cat =~ /^F:(.*)/) {
+	    if ($cat =~ /^F:([^|]+)/) {
 		my $cat = $1;
 #XXX NYI
 #		next if (($flaechen_pass == 1 && $cat eq 'F:Pabove') ||

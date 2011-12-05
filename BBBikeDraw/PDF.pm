@@ -218,7 +218,7 @@ sub draw_map {
 		    my $cat = $s->[2];
 		    $cat =~ s{::.*}{};
 		    my $is_area = 0;
-		    if ($cat =~ /^F:(.*)/) {
+		    if ($cat =~ /^F:([^|]+)/) {
 			$cat = $1;
 			$is_area = 1;
 		    }
@@ -257,7 +257,7 @@ sub draw_map {
 		# move to first point
 		$im->moveto(@{ $ss->[0] });
 
-		if ($cat =~ /^F:(.*)/) {
+		if ($cat =~ /^F:([^|]+)/) {
 		    my $cat = $1;
 		    next if ($strecke_name eq 'flaechen' &&
 			     (($flaechen_pass == 1 && $cat eq 'Pabove') ||

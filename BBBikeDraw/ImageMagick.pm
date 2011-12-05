@@ -214,7 +214,7 @@ sub draw_map {
 # 	    my $s = $strecke->next;
 # 	    last if !@{$s->[1]};
 	    my $cat = $s->[2];
-	    if ($cat =~ /^F:(.*)/) {
+	    if ($cat =~ /^F:([^|]+)/) {
 		my $cat = $1;
 		next if ($strecke_name eq 'flaechen' &&
 			 (($flaechen_pass == 1 && $cat eq 'Pabove') ||
