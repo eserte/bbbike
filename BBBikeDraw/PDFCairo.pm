@@ -120,11 +120,10 @@ sub init {
     $self->set_category_outline_colors;
     $self->set_category_widths; # Note: will be called again in draw_map (with $m argument)
 
-    # grey background
-#XXX NYI
-#    $page->rectangle(@$page_bbox);
-#    $page->set_fill_color(@$grey_bg);
-#    $page->fill;
+    # grey background (different from PDF.pm again)
+    $cr->rectangle(@$page_bbox);
+    $cr->set_source_rgb(@$grey_bg);
+    $cr->fill;
 
     $self->set_draw_elements;
 
@@ -617,8 +616,6 @@ return;
 }
 
 sub draw_route {
-warn "NYI"; # XXX
-return;
     my $self = shift;
 
     $self->pre_draw if !$self->{PreDrawCalled};
@@ -650,18 +647,21 @@ return;
 			     [[0.4, 0, 0], 7],
 			    ) {
 		    my($color, $phase) = @$def;
-		    $im->set_stroke_color(@$color);
-		    $im->set_dash_pattern([4, 10], $phase) if $im->can('set_dash_pattern');
-		    $im->moveto(map { sprintf "%.2f", $_ } $transpose->(@{ $c1[0] }));
+		    $im->set_source_rgb(@$color);
+		    # XXX what was $phase here, can it be emulated (see PDF.pm)?
+		    $im->set_dash($phase, 4, 10);
+		    $im->move_to(map { sprintf "%.2f", $_ } $transpose->(@{ $c1[0] }));
 		    for(my $i = 1; $i <= $#c1; $i++) {
-			$im->lineto(map { sprintf "%.2f", $_ } $transpose->(@{ $c1[$i] }));
+			$im->line_to(map { sprintf "%.2f", $_ } $transpose->(@{ $c1[$i] }));
 		    }
 		    $im->stroke;
 		}
-		$im->set_dash_pattern([],0) if $im->can('set_dash_pattern');
+		$im->set_dash(0);
 	    }
 	}
     }
+return;
+# XXX NYI rest is XXX
 
     # Flags
     if (@multi_c1 > 1 || ($multi_c1[0] && @{$multi_c1[0]} > 1)) {
