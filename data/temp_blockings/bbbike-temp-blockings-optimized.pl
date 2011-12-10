@@ -1698,8 +1698,8 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        {
          'source_id' => 'IM_013995',
-         'until' => 1323439200,
-         'text' => 'Freiheit/Wiesendamm (Spandau): Baustelle, Fahrtrichtung gesperrt Richtung Spandauer Damm zwischen Klärwerkstr. und Spandauer Damm, 25.08.2009 07:04 Uhr bis 09.12.2011 15:00 Uhr ',
+         'until' => 1324044000,
+         'text' => 'Freiheit/Wiesendamm (Spandau): Baustelle, Fahrtrichtung gesperrt Richtung Spandauer Damm zwischen Klärwerkstr. und Spandauer Damm, 25.08.2009 07:04 Uhr bis 16.12.2011 15:00 Uhr ',
          'from' => 1251090240,
          'id' => 1850,
          'data' => 'userdel	q4::inwork; -1258,13552 -990,13502 -729,13415 -346,13349 -307,13279 -264,13009
@@ -1935,24 +1935,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        undef,
-       {
-         'until' => 1323039600,
-         'text' => 'Richardplatz (Neukölln) und die Durchfahrt aller angrenzenden Straßen Rixdorfer Weihnachtsmarkt, Straße vollständig gesperrt (02.12.2011 bis 04.12.2011)',
-         'from' => 1322780400,
-         'id' => 1998,
-         'data' => 'userdel	2 13423,7707 13426,7674
-userdel	2 13423,7707 13297,7654
-userdel	2 13426,7674 13400,7642 13303,7622
-userdel	2 12980,7597 13100,7626 13177,7644
-userdel	2 13188,7590 13177,7644
-userdel	2 13188,7590 13303,7622
-userdel	2 13297,7654 13303,7622
-userdel	2 13297,7654 13177,7644
-userdel auto	3 13446,7879 13423,7707 13426,7674 13560,7646
-userdel auto	3 13560,7646 13426,7674 13423,7707 13446,7879
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2577,16 +2560,7 @@ userdel	q4::inwork 18286,11275 18059,11248
          'type' => 'handicap'
        },
        undef,
-       {
-         'source_id' => 'INKO_110898',
-         'until' => 1323273600,
-         'text' => 'Teichstr. (Reinickendorf): Baustelle, Fahrtrichtung gesperrt (bis Anfang 12/11) Richtung Gotthardstr. zwischen Lindauer Allee und Gotthardstr. ',
-         'from' => 1319526000,
-         'id' => 2302,
-         'data' => 'userdel	q4::inwork; 6432,18682 6418,18491 6403,18289 6383,18033 6380,17836
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'http://www.berlin.de/ba-steglitz-zehlendorf/presse/archiv/20111030.0735.361648.html',
          'until' => 1338501600,
