@@ -132,7 +132,7 @@ for my $f (@files) {
 	    if $f =~ m{^( BBBikeCGIAPI.pm
 		      )$}x && !eval { require JSON::XS; 1 };
 	myskip "$f needs mod_perl2", $tests_per_file
-	    if $f =~ m{^( cgi/BBBikeDataDownloadCompat\.pm
+	    if $f =~ m{^( BBBikeDataDownloadCompat\.pm
 		      )$}x && !eval { require Apache2::Const; 1};
 
 	my @add_opt;
