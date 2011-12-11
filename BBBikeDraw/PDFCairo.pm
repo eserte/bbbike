@@ -394,7 +394,7 @@ sub draw_map {
 		    my($w,$h) = ($image->get_width, $image->get_height);
 		    $x1 -= $w/2;
 		    $y1 -= $h/2;
-		    next if $x1 < 0 || $y1 < 0 || $x1 > DIN_A4_WIDTH || $y1 > DIN_A4_HEIGHT;
+		    next if $x1 < 0 || $y1 < 0 || $x1 > $self->{Width} || $y1 > $self->{Height};
 		    $im->set_source_surface($image, $x1, $y1);
 		    $im->paint;
  		} else {
@@ -470,8 +470,8 @@ sub draw_scale {
     my $im        = $self->{Image};
     my $transpose = $self->{Transpose};
 
-    my $x_margin = 10;
-    my $y_margin = 10;
+    my $x_margin = 12;
+    my $y_margin = $self->{Height} - 20;
     my $color = $black;
     my $bar_width = 4;
     my($x0,$y0) = $transpose->($self->standard_to_coord(0,0));
