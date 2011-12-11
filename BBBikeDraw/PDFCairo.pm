@@ -15,8 +15,6 @@ package BBBikeDraw::PDFCairo;
 use strict;
 use base qw(BBBikeDraw);
 use Cairo;
-##XXX use only conditionally, otherwise fallback to Cairo string rendering
-#use Pango;
 use Strassen;
 # Strassen benutzt FindBin benutzt Carp, also brauchen wir hier nicht zu
 # sparen:
@@ -44,7 +42,7 @@ sub init {
 	    $self->{_CompressTool} = "pdftk";
 	} elsif (0 && eval { require PDF::API2; require File::Temp; 1 }) {# XXX does not work, see below XXX also not supported in PDFCairo (yet? never?)
 	    $self->{_CompressTool} = "PDF::API2";
-	} elsif (0 && eval { require CAM::PDF; require File::Temp; 1 }) {# not supported in PDFCairo (yet? never?)
+	} elsif (0 && eval { require CAM::PDF; require File::Temp; 1 }) {# XXX not supported in PDFCairo (yet? never?)
 	    $self->{_CompressTool} = "CAM::PDF";
 	} else {
 	    warn "No pdftk in PATH available, don't compress...";
@@ -260,10 +258,8 @@ sub draw_map {
 		    if (my($r,$g,$b) = $cat =~ m{^\#([0-9a-f]{2})([0-9a-f]{2})([0-9a-f]{2})$}i) {
 			($r,$g,$b) = (hex($r)/255,hex($g)/255,hex($b)/255);
 			$im->set_source_rgb($r,$g,$b);
-			#XXX? $im->set_fill_color($r,$g,$b);
 		    } else {
 			$im->set_source_rgb(@{ $color{$cat} || [0,0,0] });
-			#XXX? $im->set_fill_color  (@{ $color{$cat} || [0,0,0] });
 		    }
 		    for my $xy (@{$ss}[1 .. $#$ss]) {
 			$im->line_to(@$xy);
@@ -286,57 +282,51 @@ sub draw_map {
 	}
     }
 
-#XXX NYI!
-#
-#    # $self->{Xk} bezeichnet den Vergrößerungsfaktor
-#    # bis etwa 0.02 ist es zu unübersichtlich, Ampeln zu zeichnen,
-#    # ab etwa 0.05 kann man die mittelgroße Variante nehmen
-#if(1||$self->{Width} < $self->{Height}){#XXX scheint sonst undefinierbare Probleme mit Acrobat Reader zu machen (nur beim Querformat/Landscape?)
-#    if ($p_draw{'ampel'} && $self->{Xk} >= 0.02) {
-#	my $lsa = new Strassen "ampeln";
-#	my $images_dir = $self->get_images_dir;
-#	my $suf = ($self->{Xk} >= 0.05 ? '' : '2');
-#
-#	my($kl_ampel);
-#	my($kl_andreas);
-#	my($kl_zugbruecke);
-#
-#	eval {
-#	    my $file;
-#	    $file = get_8bit_gif("$images_dir/ampel_klein$suf.gif");
-#	    $kl_ampel = $self->{PDF}->image($file);
-#	    $file = get_8bit_gif("$images_dir/andreaskr_klein$suf.gif");
-#	    $kl_andreas = $self->{PDF}->image($file);
-#	    $file = get_8bit_gif("$images_dir/zugbruecke_klein.gif");
-#	    $kl_zugbruecke = $self->{PDF}->image($file);
-#	}; warn $@ if $@;
-#	if ($kl_andreas && $kl_ampel) {
-#	    $lsa->init;
-#	    while(1) {
-#		my $s = $lsa->next_obj;
-#		last if $s->is_empty;
-#		my $cat = $s->category;
-#		my($x, $y) = &$transpose(@{$s->coord_as_list(0)});
-#		if ($x < $bbox->[0] || $x > $bbox->[2] ||
-#		    $y < $bbox->[1] || $y > $bbox->[3]) {
-#		    next;
-#		}
-#		my $image;
-#		if ($cat =~ m{^(B|B0)$}) {
-#		    $image = $kl_andreas;
-#		} elsif ($cat =~ m{^(X|F)$}) {
-#		    $image = $kl_ampel;
-#		} elsif ($cat =~ m{^Zbr$}) {
-#		    $image = $kl_zugbruecke;
-#		}
-#		if ($image) {
-#		    $im->image(image => $image, xpos => $x, ypos => $y,
-#			       xalign => 1, yalign => 1);
-#		}
-#	    }
-#	}
-#    }
-#}
+    # $self->{Xk} bezeichnet den Vergrößerungsfaktor
+    # bis etwa 0.02 ist es zu unübersichtlich, Ampeln zu zeichnen,
+    # ab etwa 0.05 kann man die mittelgroße Variante nehmen
+    if ($p_draw{'ampel'} && $self->{Xk} >= 0.02) {
+	my $lsa = new Strassen "ampeln";
+	my $images_dir = $self->get_images_dir;
+	my $suf = ($self->{Xk} >= 0.05 ? '' : '2');
+
+	my($kl_ampel);
+	my($kl_andreas);
+	my($kl_zugbruecke);
+
+	eval {
+	    my $file;
+	    $kl_ampel      = Cairo::ImageSurface->create_from_png("$images_dir/ampel_klein$suf.png");
+	    $kl_andreas    = Cairo::ImageSurface->create_from_png("$images_dir/andreaskr_klein$suf.png");
+	    $kl_zugbruecke = Cairo::ImageSurface->create_from_png("$images_dir/zugbruecke_klein.png");
+	}; warn $@ if $@;
+	if ($kl_andreas && $kl_ampel) {
+	    $lsa->init;
+	    while(1) {
+		my $s = $lsa->next_obj;
+		last if $s->is_empty;
+		my $cat = $s->category;
+		my($x, $y) = &$transpose(@{$s->coord_as_list(0)});
+		if ($x < $bbox->[0] || $x > $bbox->[2] ||
+		    $y < $bbox->[1] || $y > $bbox->[3]) {
+		    next;
+		}
+		my $image;
+		if ($cat =~ m{^(B|B0)$}) {
+		    $image = $kl_andreas;
+		} elsif ($cat =~ m{^(X|F)$}) {
+		    $image = $kl_ampel;
+		} elsif ($cat =~ m{^Zbr$}) {
+		    $image = $kl_zugbruecke;
+		}
+		if ($image) {
+		    my($w,$h) = ($image->get_width, $image->get_height);
+		    $im->set_source_surface($image, $x-$w/2, $y-$h/2);
+		    $im->paint;
+		}
+	    }
+	}
+    }
 
 # XXX NYI!
 
