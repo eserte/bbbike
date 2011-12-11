@@ -466,78 +466,72 @@ sub draw_map {
 
 # Zeichnen des Maßstabs
 sub draw_scale {
-#warn "NYI"; # XXX
-#return;
-#    my $self = shift;
-#    my $im        = $self->{Image};
-#    my $transpose = $self->{Transpose};
-#
-#    my $x_margin = 10;
-#    my $y_margin = 10;
-#    my $color = $black;
-#    my $bar_width = 4;
-#    my($x0,$y0) = $transpose->($self->standard_to_coord(0,0));
-#    my($x1,$y1, $strecke, $strecke_label);
-#    for $strecke (10, 50, 100, 500, 1000, 5000, 10000, 20000, 50000, 100000) {
-#	($x1,$y1) = $transpose->($self->standard_to_coord($strecke,0));
-#	if ($x1-$x0 > 50) {
-#	    if ($strecke >= 1000) {
-#		$strecke_label = $strecke/1000 . "km";
-#	    } else {
-#		$strecke_label = $strecke . "m";
-#	    }
-#	    last;
-#	}
-#    }
-#
-#    $im->set_stroke_color(@$color);
-#    $im->set_line_width(1);
-#
-#    $im->set_fill_color(@$white);
-#    $im->rectangle($self->{Width}-($x1-$x0)-$x_margin,
-#		   $y_margin,
-#		   ($x1-$x0)/2,
-#		   $bar_width);
-#    $im->fill;
-#
-#    $im->set_fill_color(@$color);
-#    $im->rectangle($self->{Width}-($x1-$x0)/2-$x_margin,
-#		   $y_margin,
-#		   ($x1-$x0)/2,
-#		   $bar_width);
-#    $im->fill;
-#
-#    $im->line($self->{Width}-($x1-$x0)-$x_margin,
-#	      $y_margin,
-#	      $self->{Width}-$x_margin,
-#	      $y_margin);
-#
-#    $im->line($self->{Width}-($x1-$x0)-$x_margin,
-#	      $y_margin+$bar_width,
-#	      $self->{Width}-$x_margin,
-#	      $y_margin+$bar_width);
-#
-#    $im->line($self->{Width}-($x1-$x0)/2-$x_margin,
-#	      $y_margin,
-#	      $self->{Width}-($x1-$x0)/2-$x_margin,
-#	      $y_margin+$bar_width);
-#    $im->line($self->{Width}-($x1-$x0)-$x_margin,
-#	      $y_margin-2,
-#	      $self->{Width}-($x1-$x0)-$x_margin,
-#	      $y_margin+$bar_width+2);
-#    $im->line($self->{Width}-$x_margin,
-#	      $y_margin-2,
-#	      $self->{Width}-$x_margin,
-#	      $y_margin+$bar_width+2);
-#
-#    $im->string($sansserif, 10,
-#		$self->{Width}-($x1-$x0)-$x_margin-3,
-#		$y_margin+$bar_width+4,
-#		"0");
-#    $im->string($sansserif, 10,
-#		$self->{Width}-$x_margin+8-6*length($strecke_label),
-#		$y_margin+$bar_width+4,
-#		$strecke_label);
+    my $self = shift;
+    my $im        = $self->{Image};
+    my $transpose = $self->{Transpose};
+
+    my $x_margin = 10;
+    my $y_margin = 10;
+    my $color = $black;
+    my $bar_width = 4;
+    my($x0,$y0) = $transpose->($self->standard_to_coord(0,0));
+    my($x1,$y1, $strecke, $strecke_label);
+    for $strecke (10, 50, 100, 500, 1000, 5000, 10000, 20000, 50000, 100000) {
+	($x1,$y1) = $transpose->($self->standard_to_coord($strecke,0));
+	if ($x1-$x0 > 50) {
+	    if ($strecke >= 1000) {
+		$strecke_label = $strecke/1000 . "km";
+	    } else {
+		$strecke_label = $strecke . "m";
+	    }
+	    last;
+	}
+    }
+
+    {
+	my @rect_coords = (
+			   $self->{Width}-($x1-$x0)-$x_margin,
+			   $y_margin,
+			   ($x1-$x0)/2,
+			   $bar_width
+			  );
+	$im->set_source_rgb(@$color);
+	$im->set_line_width(1);
+	$im->rectangle(@rect_coords);
+	$im->stroke;
+
+	$im->set_source_rgb(@$white);
+	$im->rectangle(@rect_coords);
+	$im->fill;
+    }
+
+    $im->set_source_rgb(@$color);
+    $im->rectangle($self->{Width}-($x1-$x0)/2-$x_margin,
+		   $y_margin,
+		   ($x1-$x0)/2,
+		   $bar_width);
+    $im->fill;
+
+    $im->move_to($self->{Width}-($x1-$x0)-$x_margin, $y_margin);
+    $im->line_to($self->{Width}-$x_margin, $y_margin);
+
+    $im->move_to($self->{Width}-($x1-$x0)-$x_margin, $y_margin+$bar_width);
+    $im->line_to($self->{Width}-$x_margin, $y_margin+$bar_width);
+
+    $im->move_to($self->{Width}-($x1-$x0)/2-$x_margin, $y_margin);
+    $im->line_to($self->{Width}-($x1-$x0)/2-$x_margin, $y_margin+$bar_width);
+
+    $im->move_to($self->{Width}-($x1-$x0)-$x_margin, $y_margin-2);
+    $im->line_to($self->{Width}-($x1-$x0)-$x_margin, $y_margin+$bar_width+2);
+
+    $im->move_to($self->{Width}-$x_margin, $y_margin-2);
+    $im->line_to($self->{Width}-$x_margin, $y_margin+$bar_width+2);
+
+    $im->stroke;
+
+    my $font_size = 10;
+    draw_text($im, $font_size, $self->{Width}-($x1-$x0)-$x_margin-3, $y_margin+$bar_width+$font_size, "0");
+    draw_text($im, $font_size, $self->{Width}-$x_margin+8-6*length($strecke_label), $y_margin+$bar_width+$font_size, $strecke_label);
 }
 
 sub draw_route {
