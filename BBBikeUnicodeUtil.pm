@@ -58,6 +58,7 @@ continuing with undefined results. This warning will be shown only once.
 EOF
 	    }
 	} else {
+	    $str =~ s{\x{2190}}{->}g;
 	    # XXX Should preserve at least the latin1 characters.
 	    return Text::Unidecode::unidecode($str);
 	}
