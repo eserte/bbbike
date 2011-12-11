@@ -638,51 +638,38 @@ sub draw_route {
 	    draw_text($im, $size, $x, $y+$size-2, $name);
 	}
     }
-#
-#    if ($self->{TitleDraw}) {
-#	my $start = $self->{Startname};
-#	my $ziel  = $self->{Zielname};
-#	foreach my $s (\$start, \$ziel) {
-#	    # Text in Klammern entfernen, damit der Titel kürzer wird
-#	    my(@s) = split(m|/|, $$s);
-#	    foreach (@s) {
-#		s/\s+\(.*\)$//;
-#	    }
-#	    $$s = join("/", @s);
-#	}
-#	my @s = (patch_string($start) . ' ',
-#		 chr(174), # left arrow
-#		 ' ' . patch_string($ziel)
-#		);
-#
-#	my $size = 20;
-#	my @s_width = ($im->my_string_width($sansserif, $s[0]) * $size,
-#		       20, # no width mapping for Symbol font: $im->my_string_width($symbolfont, $s[1]) * $size,
-#		       $im->my_string_width($sansserif, $s[2]) * $size,
-#		      );
-#	my $s_width = $s_width[0] + $s_width[1] + $s_width[2];
-#
-#	my $y_top = $self->{PageBBox}[3];
-#	$y_top -= 37;
-#
-#	$im->set_stroke_color(@$black);
-#	$im->set_fill_color(@$white);
-#	$im->set_line_width(1);
-#	$im->rectangle(15, $y_top, $s_width+5+5, $size+7);
-#	$im->fill;
-#	$im->rectangle(15, $y_top, $s_width+5+5, $size+7);
-#	$im->stroke;
-#
-#	$im->set_stroke_color(@$black);
-#	$im->set_fill_color(@$black);
-#	my $x = 20;
-#	my $y = $y_top + 5;
-#	$im->string($sansserif, $size, $x, $y, $s[0]);
-#	$x += $s_width[0];
-#	$im->string($symbolfont, $size, $x, $y, $s[1]);
-#	$x += $s_width[1];
-#	$im->string($sansserif, $size, $x, $y, $s[2]);
-#    }
+
+    if ($self->{TitleDraw}) {
+	my $start = $self->{Startname};
+	my $ziel  = $self->{Zielname};
+	foreach my $s (\$start, \$ziel) {
+	    # Text in Klammern entfernen, damit der Titel kürzer wird
+	    my(@s) = split(m|/|, $$s);
+	    foreach (@s) {
+		s/\s+\(.*\)$//;
+	    }
+	    $$s = join("/", @s);
+	}
+	my $title_string = "$start " . chr(0x2190) . " $ziel";
+
+	my $size = 20;
+	my($s_width, $s_height) = get_text_dimensions($im, $size, $title_string);
+
+	my $y_top = 7;
+
+	$im->set_source_rgb(@$white);
+	$im->set_line_width(1);
+	$im->rectangle(15, $y_top, $s_width+5+5, $size+7);
+	$im->fill;
+	$im->set_source_rgb(@$black);
+	$im->rectangle(15, $y_top, $s_width+5+5, $size+7);
+	$im->stroke;
+
+	$im->set_source_rgb(@$black);
+	my $x = 20;
+	my $y = $y_top + $size;
+	draw_text($im, $size, $x, $y, $title_string);
+    }
 
 }
 
