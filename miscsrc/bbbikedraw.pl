@@ -177,7 +177,13 @@ if (defined $route_file) {
     } else {
 	require Route;
 	my $load = Route::load($route_file);
-	push @extra_args, Coords => [ map { join(",", @$_) } @{ $load->{RealCoords} } ];
+	my @coords = map { join(",", @$_) } @{ $load->{RealCoords} };
+	push @extra_args, Coords => \@coords;
+	my(@strnames) = make_netz()->route_to_name([ map { [split ','] } @coords ]);
+	if (@strnames) {
+	    push @extra_args, Startname => Strassen::strip_bezirk($strnames[0]->[0]);
+	    push @extra_args, Zielname => Strassen::strip_bezirk($strnames[-1]->[0]);
+	}
     }
 }
 if (defined $marker_point) {
