@@ -25,18 +25,19 @@ use constant DIN_A4_HEIGHT => 842;
 sub new {
     my($class, %args) = @_;
     my $self = {};
-    die "-pdf option not supported in " . __PACKAGE__
-	if delete $args{-pdf};
-    die "-fh option is not supported yet in " . __PACKAGE__
-	if delete $args{-fh}; # XXX
-    my $filename = delete $args{-filename};
-    die "-filename is missing"
-	if !$filename;
+    my $surface = delete $args{-pdf}; # XXX Provided surface must use DIN A4 dimensions
+    if (!$surface) {
+	die "-fh option is not supported yet in " . __PACKAGE__
+	    if delete $args{-fh}; # XXX
+	my $filename = delete $args{-filename};
+	die "-filename is missing"
+	    if !$filename;
+	$surface = Cairo::PdfSurface->create($filename, DIN_A4_WIDTH, DIN_A4_HEIGHT);
+    }
     if (keys %args) {
 	die "Too much parameters to " . __PACKAGE__ . "::new";
     }
 
-    my $surface = Cairo::PdfSurface->create($filename, DIN_A4_WIDTH, DIN_A4_HEIGHT);
     $self->{Surface} = $surface;
 
     bless $self, $class;
@@ -237,6 +238,15 @@ sub output {
     }
 
     $cr->show_page;
+}
+
+sub add_page_to_bbbikedraw {
+    my(%args) = @_;
+    my $bbbikedraw = delete $args{-bbbikedraw} || die "-bbbikedraw missing";
+    my $surface = $bbbikedraw->{PDF};
+    $surface->show_page;
+    my $rpdf = __PACKAGE__->new(-pdf => $surface);
+    $rpdf->output(%args);
 }
 
 sub flush {
