@@ -100,7 +100,7 @@ sub init {
     #$pdf->new_outline('Title' => (defined $self->{Lang} && $self->{Lang} eq 'en' ? 'map' : 'Karte'),
     #	      'Destination' => $page);
 
-    $self->{PDF}      = $surface; # XXX yes?
+    $self->{PDF}      = $surface;
     $self->{Image}    = $cr; # named "Image" for GD compatibility
 
 # XXX Following is same as in PDF.pm
@@ -675,8 +675,6 @@ sub draw_route {
 
 # Draw this first, otherwise the filling of the circle won't work!
 sub draw_wind {
-warn "NYI"; # XXX
-return;
     return; # not yet XXXX
     my $self = shift;
     return unless $self->{Wind};
@@ -744,8 +742,6 @@ return;
 }
 
 sub add_route_descr {
-warn "NYI"; # XXX
-return;
     my $self = shift;
     my(%args) = @_;
     my $net = $args{-net} || die "-net is missing";
@@ -758,10 +754,10 @@ return;
 	@c = map { [split /,/ ] } @{ $self->{Coords} };
     }
 
-    require Route::PDF;
+    require Route::PDF::Cairo;
     require Route;
 
-    Route::PDF::add_page_to_bbbikedraw
+    Route::PDF::Cairo::add_page_to_bbbikedraw
 	    (-bbbikedraw => $self,
 	     -net => $net,
 	     -route => Route->new_from_realcoords(\@c),
@@ -920,9 +916,6 @@ sub bbox_in_region {
 		 $bbox->[3] < $region->[1]);
     1;
 }
-
-## XXX remove!
-#sub origin_position { "sw" }
 
 sub can_multiple_passes {
     my($self, $type) = @_;
