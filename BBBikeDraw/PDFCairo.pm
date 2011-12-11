@@ -579,29 +579,26 @@ sub draw_route {
 	    }
 	}
     }
-return;
-# XXX NYI rest is XXX
 
-#    # Flags
-#    if (@multi_c1 > 1 || ($multi_c1[0] && @{$multi_c1[0]} > 1)) {
-#$self->{UseFlags} = 0; # XXX don't use this because of missing transparency information in .jpg
-#	if ($self->{UseFlags}) {
-#	    my $images_dir = $self->get_images_dir;
-#	    my $start_flag = $self->{PDF}->image("$images_dir/flag2_bl.jpg");
-#	    if ($start_flag) {
-#		my($x, $y) = &$transpose(@{ $multi_c1[0][0] });
-#		$im->image(image => $start_flag, xpos => $x-5, ypos => $y-15,
-#			   xalign => 1, yalign => 1);
-#	    }
-#	    my $end_flag = $self->{PDF}->image("$images_dir/flag_ziel.jpg");
-#	    if ($end_flag) {
-#		my($x, $y) = &$transpose(@{ $multi_c1[-1][-1] });
-#		$im->image(image => $end_flag, xpos => $x-5, ypos => $y-15,
-#			   xalign => 1, yalign => 1);
-#	    }
-#	}
-#    }
-#
+    # Flags
+    if (@multi_c1 > 1 || ($multi_c1[0] && @{$multi_c1[0]} > 1)) {
+	if ($self->{UseFlags}) {
+	    my $images_dir = $self->get_images_dir;
+	    my $start_flag = Cairo::ImageSurface->create_from_png("$images_dir/flag2_bl.png");
+	    if ($start_flag) {
+		my($x, $y) = &$transpose(@{ $multi_c1[0][0] });
+		$im->set_source_surface($start_flag, $x-4, $y-15);
+		$im->paint;
+	    }
+	    my $end_flag = Cairo::ImageSurface->create_from_png("$images_dir/flag_ziel.png");
+	    if ($end_flag) {
+		my($x, $y) = &$transpose(@{ $multi_c1[-1][-1] });
+		$im->set_source_surface($end_flag, $x-4, $y-15);
+		$im->paint;
+	    }
+	}
+    }
+
 #    # Ausgabe der Straßennnamen
 #    if ($strnet) {
 #	$im->set_stroke_color(@$black);
