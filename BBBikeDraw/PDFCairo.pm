@@ -599,46 +599,45 @@ sub draw_route {
 	}
     }
 
-#    # Ausgabe der Straßennnamen
-#    if ($strnet) {
-#	$im->set_stroke_color(@$black);
-#	$im->set_line_width(1);
-#	my(@strnames) = $strnet->route_to_name
-#	    ([ map { [split ','] } @{ $self->{Coords} } ]);
-#	my $size = (@strnames >= 30 ? 7 :
-#		    @strnames >= 20 ? 8 :
-#		    @strnames >= 15 ? 9 :
-#		    10
-#		   );
-#	my $pad = 2;
-#	my $sm = eval { require Geo::SpaceManager; Geo::SpaceManager->new($self->{PageBBox}) };
-#	#warn $@ if $@;
-#	foreach my $e (@strnames) {
-#	    my $name = Strassen::strip_bezirk($e->[0]);
-#	    my $f_i  = $e->[4][0];
-#	    my($x,$y) = &$transpose(split ',', $self->{Coords}[$f_i]);
-#	    my $patched_name = patch_string($name);
-#	    my $s_width = $im->my_string_width($sansserif, $patched_name) * $size;
-#	    if ($sm) {
-#		my($x1,$y1,$x2,$y2) = ($x-$pad, $y-$pad, $x+$s_width+$pad, $y+$size);
-#		my $r1 = $sm->nearest([$x1,$y1,$x2,$y2]);
-#		if (!defined $r1) {
-#		    warn "No space left for [$x1,$y1,$x2,$y2]";
-#		} else {
-#		    $sm->add($r1);
-#		    $x = $r1->[0]+$pad;
-#		    $y = $r1->[1]+$pad;
-#		}
-#	    }
-#	    $im->set_fill_color(@$white);
-#	    $im->rectangle($x-$pad, $y-$pad, $s_width+$pad*2, $size+$pad);
-#	    $im->fill;
-#	    $im->rectangle($x-$pad, $y-$pad, $s_width+$pad*2, $size+$pad);
-#	    $im->stroke;
-#	    $im->set_fill_color(@$black);
-#	    $im->string($sansserif, $size, $x, $y, $patched_name);
-#	}
-#    }
+    # Ausgabe der Straßennnamen
+    if ($strnet) {
+	$im->set_line_width(1);
+	my(@strnames) = $strnet->route_to_name
+	    ([ map { [split ','] } @{ $self->{Coords} } ]);
+	my $size = (@strnames >= 30 ? 7 :
+		    @strnames >= 20 ? 8 :
+		    @strnames >= 15 ? 9 :
+		    10
+		   );
+	my $pad = 2;
+	my $sm = eval { require Geo::SpaceManager; Geo::SpaceManager->new($self->{PageBBox}) };
+	#warn $@ if $@;
+	foreach my $e (@strnames) {
+	    my $name = Strassen::strip_bezirk($e->[0]);
+	    my $f_i  = $e->[4][0];
+	    my($x,$y) = &$transpose(split ',', $self->{Coords}[$f_i]);
+	    my($s_width, $s_height) = get_text_dimensions($im, $size, $name);
+	    $y-=($s_height+$pad);
+	    if ($sm) {
+		my($x1,$y1,$x2,$y2) = ($x-$pad, $y-$pad, $x+$s_width+$pad, $y+$s_height+$pad);
+		my $r1 = $sm->nearest([$x1,$y1,$x2,$y2]);
+		if (!defined $r1) {
+		    warn "No space left for [$x1,$y1,$x2,$y2]";
+		} else {
+		    $sm->add($r1);
+		    $x = $r1->[0]+$pad;
+		    $y = $r1->[1]+$pad;
+		}
+	    }
+	    $im->set_source_rgb(@$white);
+	    $im->rectangle($x-$pad, $y-$pad, $s_width+$pad*2, $size+$pad);
+	    $im->fill;
+	    $im->set_source_rgb(@$black);
+	    $im->rectangle($x-$pad, $y-$pad, $s_width+$pad*2, $size+$pad);
+	    $im->stroke;
+	    draw_text($im, $size, $x, $y+$size-2, $name);
+	}
+    }
 #
 #    if ($self->{TitleDraw}) {
 #	my $start = $self->{Startname};
@@ -957,10 +956,25 @@ sub draw_text {
 	# XXX
     } else {
 	$string = patch_string($string);
+	utf8::upgrade($string); # workaround bug in Cairo, see https://rt.cpan.org/Ticket/Display.html?id=73177
 	$surface->move_to($x, $y);
 	$surface->select_font_face('Sans Serif', 'normal', 'normal');
 	$surface->set_font_size($size);
 	$surface->show_text($string);
+    }
+}
+
+sub get_text_dimensions {
+    my($surface, $size, $string) = @_;
+    if (eval { require Pango; die "Pango NYI" }) {
+	# XXX
+    } else {
+	$string = patch_string($string);
+	utf8::upgrade($string); # workaround bug in Cairo, see https://rt.cpan.org/Ticket/Display.html?id=73177
+	$surface->select_font_face('Sans Serif', 'normal', 'normal');
+	$surface->set_font_size($size);
+	my $extents = $surface->text_extents($string);
+	($extents->{width}, $extents->{height});
     }
 }
 
