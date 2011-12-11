@@ -19,6 +19,7 @@ use Strassen;
 # Strassen benutzt FindBin benutzt Carp, also brauchen wir hier nicht zu
 # sparen:
 use Carp qw(confess);
+use BBBikeUtil qw(pi is_in_path);
 
 use vars qw($VERSION @colors %color %width %outline_color $VERBOSE);
 BEGIN { @colors =
@@ -37,8 +38,7 @@ sub init {
     my $self = shift;
 
     if ($self->{Compress}) {
-	require BBBikeUtil;
-	if (BBBikeUtil::is_in_path("pdftk")) {
+	if (is_in_path "pdftk") {
 	    $self->{_CompressTool} = "pdftk";
 	} elsif (0 && eval { require PDF::API2; require File::Temp; 1 }) {# XXX does not work, see below XXX also not supported in PDFCairo (yet? never?)
 	    $self->{_CompressTool} = "PDF::API2";
@@ -182,10 +182,6 @@ sub draw_map {
     $self->_get_nets;
     $self->{FlaechenPass} = 1;
 
-    # XXX del:
-    #my @netz = @{ $self->{_Net} };
-    #my @outline_netz = @{ $self->{_OutlineNet} };
-    #my @netz_name = @{ $self->{_NetName} };
     my %str_draw = %{ $self->{_StrDraw} };
     my %p_draw = %{ $self->{_PDraw} };
     my $title_draw = $self->{_TitleDraw};
@@ -328,117 +324,96 @@ sub draw_map {
 	}
     }
 
-# XXX NYI!
+# XXXX hier wird $small_display und $xw/$yw nicht beachtet!
+    my($xw, $yw);
+    my $small_display = 0;
+    if ($self->{Width} < 200 ||	$self->{Height} < 150) {
+	($xw, $yw) = (1, 1);
+	$small_display = 1;
+    } else {
+	my($xw1, $yw1) = &$transpose(0, 0);
+	my($xw2, $yw2) = &$transpose(60, 60);
+#	($xw, $yw) = ($xw2-$xw1, $yw2-$yw1);
+	($xw, $yw) = (5, 5);
+    }
 
-## XXXX hier wird $small_display und $xw/$yw nicht beachtet!
-#    my($xw, $yw);
-#    my $small_display = 0;
-#    if ($self->{Width} < 200 ||	$self->{Height} < 150) {
-#	($xw, $yw) = (1, 1);
-#	$small_display = 1;
-#    } else {
-#	my($xw1, $yw1) = &$transpose(0, 0);
-#	my($xw2, $yw2) = &$transpose(60, 60);
-##	($xw, $yw) = ($xw2-$xw1, $yw2-$yw1);
-#	($xw, $yw) = (5, 5);
-#    }
-#
-#    my $min_ort_category = ($self->{Xk} < 0.005 ? 3
-# 			    : ($self->{Xk} < 0.01 ? 2
-# 			       : ($self->{Xk} < 0.02 ? 1 : 0)));
-#    my %ort_font = (0 => 6,
-#		    1 => 7,
-#		    2 => 8,
-# 		    3 => 10,
-# 		    4 => 12,
-# 		    5 => 14,
-# 		    6 => 16,
-# 		   );
-#    foreach my $def (['ubahn', 'ubahnhof', 'u'],
-#		     ['sbahn', 'sbahnhof', 's'],
-#		     ['ort', 'orte',       'o'],
-#		    ) {
-#	my($lines, $points, $type) = @$def;
-#  	if ($str_draw{$lines}) {
-#  	    my $p = ($lines eq 'ort'
-#  		     ? $self->_get_orte
-#  		     : new Strassen $points);
-#
-#	    my $images_dir = $self->get_images_dir;
-#	    my $image;
-#	    my $suffix;
-#	    if ($self->{Xk} < 0.05) {
-#		$suffix = "_mini";
-#	    } elsif ($self->{Xk} < 0.2) {
-#		$suffix = "_klein";
-#	    } else {
-#		$suffix = "";
-#	    }
-#
-#	    eval {
-#		if ($points eq 'ubahnhof') {
-#		    my $file = get_8bit_gif("$images_dir/ubahn$suffix.gif");
-#		    $image = $self->{PDF}->image($file);
-#		} elsif ($points eq 'sbahnhof') {
-#		    my $file = get_8bit_gif("$images_dir/sbahn$suffix.gif");
-#		    $image = $self->{PDF}->image($file);
-#		}
-#	    };
-#	    warn $@ if $@;
-#
-#  	    $p->init;
-#  	    while(1) {
-#  		my $s = $p->next_obj;
-#  		last if $s->is_empty;
-#  		my $cat = $s->category;
-#  		next if $cat =~ $BBBikeDraw::bahn_bau_rx;
-#  		my($x0,$y0) = @{$s->coord_as_list(0)};
-#  		# Bereichscheck (XXX ist nicht ganz korrekt wenn der Screen breiter ist als die Route)
-##  		next if (!(($x0 >= $self->{Min_x} and $x0 <= $self->{Max_x})
-##  			   and
-##  			   ($y0 >= $self->{Min_y} and $y0 <= $self->{Max_y})));
-#		if ($image) {
-#		    my($x1, $y1) = &$transpose($x0, $y0);
-#		    $im->image(image => $image, xpos => $x1, ypos => $y1,
-#			       xalign => 1, yalign => 1);
-#		} elsif ($type eq 'u' || ($type eq 's' && $small_display)) {
-#  		    my($x1,$x2,$y1,$y2);
-##    		    if (!$small_display) {
-##    			($x1, $y1) = &$transpose($x0-30, $y0-30);
-##    			($x2, $y2) = &$transpose($x0+30, $y0+30);
-##    		    } else {
-#  			($x1, $y1) = &$transpose($x0, $y0);
-##    			($x2, $y1) = ($x1+$xw, $y2+$yw);
-##    			($x1, $y2) = ($x1-$xw, $y2-$yw);
-##    		    }
-#  		    # XXX Farbe bei small_display && s-bahn
-#		    $im->set_fill_color(@$darkblue);
-#  		    $im->rectangle($x1-2, $y1-2, 5, 5);
-#		    $im->fill;
-#		} elsif ($type eq 's') {
-#		    # XXX ausgefüllten Kreis zeichnen
-#		    my($x, $y) = &$transpose(@{$s->coord_as_list(0)});
-#		    $im->set_fill_color(@$darkgreen);
-#		    $im->circle($x, $y, 4);
-#		    $im->fill;
-# 		} else {
-# 		    if ($cat >= $min_ort_category) {
-# 			my($x, $y) = &$transpose(@{$s->coord_as_list(0)});
-# 			my $ort = $s->name;
-# 			# Anhängsel löschen (z.B. "b. Berlin")
-# 			$ort =~ s/\|.*$//;
-#			$im->set_fill_color(@$black);
-# 			$im->circle($x, $y, 1);
-#			$im->fill;
-#			$im->set_stroke_color(@$darkblue);
-#			$im->string($sansserif, $ort_font{$cat} || 6,
-#				    $x+4, $y,
-#				    patch_string($ort));
-# 		    }
-# 		}
-#  	    }
-#  	}
-#    }
+    my $min_ort_category = ($self->{Xk} < 0.005 ? 3
+ 			    : ($self->{Xk} < 0.01 ? 2
+ 			       : ($self->{Xk} < 0.02 ? 1 : 0)));
+    my %ort_font = (0 => 6,
+		    1 => 7,
+		    2 => 8,
+ 		    3 => 10,
+ 		    4 => 12,
+ 		    5 => 14,
+ 		    6 => 16,
+ 		   );
+    foreach my $def (['ubahn', 'ubahnhof', 'u'],
+		     ['sbahn', 'sbahnhof', 's'],
+		     ['ort', 'orte',       'o'],
+		    ) {
+	my($lines, $points, $type) = @$def;
+  	if ($str_draw{$lines}) {
+  	    my $p = ($lines eq 'ort'
+  		     ? $self->_get_orte
+  		     : new Strassen $points);
+
+	    my $images_dir = $self->get_images_dir;
+	    my $image;
+	    my $suffix;
+	    if ($self->{Xk} < 0.05) {
+		$suffix = "_mini";
+	    } elsif ($self->{Xk} < 0.2) {
+		$suffix = "_klein";
+	    } else {
+		$suffix = "";
+	    }
+
+	    eval {
+		if ($points eq 'ubahnhof') {
+		    $image = Cairo::ImageSurface->create_from_png("$images_dir/ubahn$suffix.png");
+		} elsif ($points eq 'sbahnhof') {
+		    $image = Cairo::ImageSurface->create_from_png("$images_dir/sbahn$suffix.png");
+		}
+	    };
+	    warn $@ if $@;
+
+  	    $p->init;
+  	    while(1) {
+  		my $s = $p->next_obj;
+  		last if $s->is_empty;
+  		my $cat = $s->category;
+  		next if $cat =~ $BBBikeDraw::bahn_bau_rx;
+  		my($x0,$y0) = @{$s->coord_as_list(0)};
+  		# Bereichscheck (XXX ist nicht ganz korrekt wenn der Screen breiter ist als die Route)
+#  		next if (!(($x0 >= $self->{Min_x} and $x0 <= $self->{Max_x})
+#  			   and
+#  			   ($y0 >= $self->{Min_y} and $y0 <= $self->{Max_y})));
+		if ($image) {
+		    my($x1, $y1) = &$transpose($x0, $y0);
+		    my($w,$h) = ($image->get_width, $image->get_height);
+		    $x1 -= $w/2;
+		    $y1 -= $h/2;
+		    next if $x1 < 0 || $y1 < 0 || $x1 > DIN_A4_WIDTH || $y1 > DIN_A4_HEIGHT;
+		    $im->set_source_surface($image, $x1, $y1);
+		    $im->paint;
+ 		} else {
+ 		    if ($cat >= $min_ort_category) {
+ 			my($x, $y) = &$transpose(@{$s->coord_as_list(0)});
+ 			my $ort = $s->name;
+ 			# Anhängsel löschen (z.B. "b. Berlin")
+ 			$ort =~ s/\|.*$//;
+			$im->set_source_rgb(@$black);
+			$im->move_to($x, $y);
+ 			$im->arc($x, $y, 1, 0, 2*pi);#XXX check!
+			$im->fill;
+			$im->set_source_rgb(@$darkblue);
+			draw_text($im, $ort_font{$cat} || 6, $x+4, $y, $ort);
+ 		    }
+ 		}
+  	    }
+  	}
+    }
 
 #XXXX implement here!!!
 #XXX no angle/rotate support with PDF::Create
@@ -489,120 +464,80 @@ sub draw_map {
     $self->draw_scale unless $self->{NoScale};
 }
 
-# This function forces the gif to have a LZW minimum code
-# size of 8, because PDF::Create does not support other
-# sizes. This is done by extending the palette to 256
-# colors. The image is cached in /tmp. There is a last
-# fallback to .jpg (which are ugly and have no
-# transparency).
-sub get_8bit_gif {
-    my($file) = @_;
-    eval {
-	require File::Basename;
-	require GD;
-	my $tmpdir = eval { require File::Spec; File::Spec->tmpdir } || "/tmp";
-	my $file_8bit = "$tmpdir/bbbikedraw_" . $< . "_pdf_8bit_" . File::Basename::basename($file);
-	if (-r $file_8bit) {
-	    $file = $file_8bit;
-	} else {
-	    my $img = GD::Image->newFromGif($file)
-		or die "Can't read $file as image: $!";
-	    for my $i ($img->colorsTotal .. 256) {
-		$img->colorAllocate(0,0,$i>255?255:$i);
-	    }
-	    open(OFH, ">$file_8bit")
-		or die "Can't write to $file_8bit: $!";
-	    binmode OFH;
-	    print OFH $img->gif
-		or die $!;
-	    close OFH
-		or die $!;
-	    $file = $file_8bit;
-	}
-    };
-    if ($@) {
-	warn $@;
-	$file =~ s{\.gif$}{.jpg};
-    }
-    $file;
-}
-
-
-my $sansserif;my$symbolfont;#XXXX just to get it compiled
 # Zeichnen des Maßstabs
 sub draw_scale {
-warn "NYI"; # XXX
-return;
-    my $self = shift;
-    my $im        = $self->{Image};
-    my $transpose = $self->{Transpose};
-
-    my $x_margin = 10;
-    my $y_margin = 10;
-    my $color = $black;
-    my $bar_width = 4;
-    my($x0,$y0) = $transpose->($self->standard_to_coord(0,0));
-    my($x1,$y1, $strecke, $strecke_label);
-    for $strecke (10, 50, 100, 500, 1000, 5000, 10000, 20000, 50000, 100000) {
-	($x1,$y1) = $transpose->($self->standard_to_coord($strecke,0));
-	if ($x1-$x0 > 50) {
-	    if ($strecke >= 1000) {
-		$strecke_label = $strecke/1000 . "km";
-	    } else {
-		$strecke_label = $strecke . "m";
-	    }
-	    last;
-	}
-    }
-
-    $im->set_stroke_color(@$color);
-    $im->set_line_width(1);
-
-    $im->set_fill_color(@$white);
-    $im->rectangle($self->{Width}-($x1-$x0)-$x_margin,
-		   $y_margin,
-		   ($x1-$x0)/2,
-		   $bar_width);
-    $im->fill;
-
-    $im->set_fill_color(@$color);
-    $im->rectangle($self->{Width}-($x1-$x0)/2-$x_margin,
-		   $y_margin,
-		   ($x1-$x0)/2,
-		   $bar_width);
-    $im->fill;
-
-    $im->line($self->{Width}-($x1-$x0)-$x_margin,
-	      $y_margin,
-	      $self->{Width}-$x_margin,
-	      $y_margin);
-
-    $im->line($self->{Width}-($x1-$x0)-$x_margin,
-	      $y_margin+$bar_width,
-	      $self->{Width}-$x_margin,
-	      $y_margin+$bar_width);
-
-    $im->line($self->{Width}-($x1-$x0)/2-$x_margin,
-	      $y_margin,
-	      $self->{Width}-($x1-$x0)/2-$x_margin,
-	      $y_margin+$bar_width);
-    $im->line($self->{Width}-($x1-$x0)-$x_margin,
-	      $y_margin-2,
-	      $self->{Width}-($x1-$x0)-$x_margin,
-	      $y_margin+$bar_width+2);
-    $im->line($self->{Width}-$x_margin,
-	      $y_margin-2,
-	      $self->{Width}-$x_margin,
-	      $y_margin+$bar_width+2);
-
-    $im->string($sansserif, 10,
-		$self->{Width}-($x1-$x0)-$x_margin-3,
-		$y_margin+$bar_width+4,
-		"0");
-    $im->string($sansserif, 10,
-		$self->{Width}-$x_margin+8-6*length($strecke_label),
-		$y_margin+$bar_width+4,
-		$strecke_label);
+#warn "NYI"; # XXX
+#return;
+#    my $self = shift;
+#    my $im        = $self->{Image};
+#    my $transpose = $self->{Transpose};
+#
+#    my $x_margin = 10;
+#    my $y_margin = 10;
+#    my $color = $black;
+#    my $bar_width = 4;
+#    my($x0,$y0) = $transpose->($self->standard_to_coord(0,0));
+#    my($x1,$y1, $strecke, $strecke_label);
+#    for $strecke (10, 50, 100, 500, 1000, 5000, 10000, 20000, 50000, 100000) {
+#	($x1,$y1) = $transpose->($self->standard_to_coord($strecke,0));
+#	if ($x1-$x0 > 50) {
+#	    if ($strecke >= 1000) {
+#		$strecke_label = $strecke/1000 . "km";
+#	    } else {
+#		$strecke_label = $strecke . "m";
+#	    }
+#	    last;
+#	}
+#    }
+#
+#    $im->set_stroke_color(@$color);
+#    $im->set_line_width(1);
+#
+#    $im->set_fill_color(@$white);
+#    $im->rectangle($self->{Width}-($x1-$x0)-$x_margin,
+#		   $y_margin,
+#		   ($x1-$x0)/2,
+#		   $bar_width);
+#    $im->fill;
+#
+#    $im->set_fill_color(@$color);
+#    $im->rectangle($self->{Width}-($x1-$x0)/2-$x_margin,
+#		   $y_margin,
+#		   ($x1-$x0)/2,
+#		   $bar_width);
+#    $im->fill;
+#
+#    $im->line($self->{Width}-($x1-$x0)-$x_margin,
+#	      $y_margin,
+#	      $self->{Width}-$x_margin,
+#	      $y_margin);
+#
+#    $im->line($self->{Width}-($x1-$x0)-$x_margin,
+#	      $y_margin+$bar_width,
+#	      $self->{Width}-$x_margin,
+#	      $y_margin+$bar_width);
+#
+#    $im->line($self->{Width}-($x1-$x0)/2-$x_margin,
+#	      $y_margin,
+#	      $self->{Width}-($x1-$x0)/2-$x_margin,
+#	      $y_margin+$bar_width);
+#    $im->line($self->{Width}-($x1-$x0)-$x_margin,
+#	      $y_margin-2,
+#	      $self->{Width}-($x1-$x0)-$x_margin,
+#	      $y_margin+$bar_width+2);
+#    $im->line($self->{Width}-$x_margin,
+#	      $y_margin-2,
+#	      $self->{Width}-$x_margin,
+#	      $y_margin+$bar_width+2);
+#
+#    $im->string($sansserif, 10,
+#		$self->{Width}-($x1-$x0)-$x_margin-3,
+#		$y_margin+$bar_width+4,
+#		"0");
+#    $im->string($sansserif, 10,
+#		$self->{Width}-$x_margin+8-6*length($strecke_label),
+#		$y_margin+$bar_width+4,
+#		$strecke_label);
 }
 
 sub draw_route {
@@ -653,111 +588,111 @@ sub draw_route {
 return;
 # XXX NYI rest is XXX
 
-    # Flags
-    if (@multi_c1 > 1 || ($multi_c1[0] && @{$multi_c1[0]} > 1)) {
-$self->{UseFlags} = 0; # XXX don't use this because of missing transparency information in .jpg
-	if ($self->{UseFlags}) {
-	    my $images_dir = $self->get_images_dir;
-	    my $start_flag = $self->{PDF}->image("$images_dir/flag2_bl.jpg");
-	    if ($start_flag) {
-		my($x, $y) = &$transpose(@{ $multi_c1[0][0] });
-		$im->image(image => $start_flag, xpos => $x-5, ypos => $y-15,
-			   xalign => 1, yalign => 1);
-	    }
-	    my $end_flag = $self->{PDF}->image("$images_dir/flag_ziel.jpg");
-	    if ($end_flag) {
-		my($x, $y) = &$transpose(@{ $multi_c1[-1][-1] });
-		$im->image(image => $end_flag, xpos => $x-5, ypos => $y-15,
-			   xalign => 1, yalign => 1);
-	    }
-	}
-    }
-
-    # Ausgabe der Straßennnamen
-    if ($strnet) {
-	$im->set_stroke_color(@$black);
-	$im->set_line_width(1);
-	my(@strnames) = $strnet->route_to_name
-	    ([ map { [split ','] } @{ $self->{Coords} } ]);
-	my $size = (@strnames >= 30 ? 7 :
-		    @strnames >= 20 ? 8 :
-		    @strnames >= 15 ? 9 :
-		    10
-		   );
-	my $pad = 2;
-	my $sm = eval { require Geo::SpaceManager; Geo::SpaceManager->new($self->{PageBBox}) };
-	#warn $@ if $@;
-	foreach my $e (@strnames) {
-	    my $name = Strassen::strip_bezirk($e->[0]);
-	    my $f_i  = $e->[4][0];
-	    my($x,$y) = &$transpose(split ',', $self->{Coords}[$f_i]);
-	    my $patched_name = patch_string($name);
-	    my $s_width = $im->my_string_width($sansserif, $patched_name) * $size;
-	    if ($sm) {
-		my($x1,$y1,$x2,$y2) = ($x-$pad, $y-$pad, $x+$s_width+$pad, $y+$size);
-		my $r1 = $sm->nearest([$x1,$y1,$x2,$y2]);
-		if (!defined $r1) {
-		    warn "No space left for [$x1,$y1,$x2,$y2]";
-		} else {
-		    $sm->add($r1);
-		    $x = $r1->[0]+$pad;
-		    $y = $r1->[1]+$pad;
-		}
-	    }
-	    $im->set_fill_color(@$white);
-	    $im->rectangle($x-$pad, $y-$pad, $s_width+$pad*2, $size+$pad);
-	    $im->fill;
-	    $im->rectangle($x-$pad, $y-$pad, $s_width+$pad*2, $size+$pad);
-	    $im->stroke;
-	    $im->set_fill_color(@$black);
-	    $im->string($sansserif, $size, $x, $y, $patched_name);
-	}
-    }
-
-    if ($self->{TitleDraw}) {
-	my $start = $self->{Startname};
-	my $ziel  = $self->{Zielname};
-	foreach my $s (\$start, \$ziel) {
-	    # Text in Klammern entfernen, damit der Titel kürzer wird
-	    my(@s) = split(m|/|, $$s);
-	    foreach (@s) {
-		s/\s+\(.*\)$//;
-	    }
-	    $$s = join("/", @s);
-	}
-	my @s = (patch_string($start) . ' ',
-		 chr(174), # left arrow
-		 ' ' . patch_string($ziel)
-		);
-
-	my $size = 20;
-	my @s_width = ($im->my_string_width($sansserif, $s[0]) * $size,
-		       20, # no width mapping for Symbol font: $im->my_string_width($symbolfont, $s[1]) * $size,
-		       $im->my_string_width($sansserif, $s[2]) * $size,
-		      );
-	my $s_width = $s_width[0] + $s_width[1] + $s_width[2];
-
-	my $y_top = $self->{PageBBox}[3];
-	$y_top -= 37;
-
-	$im->set_stroke_color(@$black);
-	$im->set_fill_color(@$white);
-	$im->set_line_width(1);
-	$im->rectangle(15, $y_top, $s_width+5+5, $size+7);
-	$im->fill;
-	$im->rectangle(15, $y_top, $s_width+5+5, $size+7);
-	$im->stroke;
-
-	$im->set_stroke_color(@$black);
-	$im->set_fill_color(@$black);
-	my $x = 20;
-	my $y = $y_top + 5;
-	$im->string($sansserif, $size, $x, $y, $s[0]);
-	$x += $s_width[0];
-	$im->string($symbolfont, $size, $x, $y, $s[1]);
-	$x += $s_width[1];
-	$im->string($sansserif, $size, $x, $y, $s[2]);
-    }
+#    # Flags
+#    if (@multi_c1 > 1 || ($multi_c1[0] && @{$multi_c1[0]} > 1)) {
+#$self->{UseFlags} = 0; # XXX don't use this because of missing transparency information in .jpg
+#	if ($self->{UseFlags}) {
+#	    my $images_dir = $self->get_images_dir;
+#	    my $start_flag = $self->{PDF}->image("$images_dir/flag2_bl.jpg");
+#	    if ($start_flag) {
+#		my($x, $y) = &$transpose(@{ $multi_c1[0][0] });
+#		$im->image(image => $start_flag, xpos => $x-5, ypos => $y-15,
+#			   xalign => 1, yalign => 1);
+#	    }
+#	    my $end_flag = $self->{PDF}->image("$images_dir/flag_ziel.jpg");
+#	    if ($end_flag) {
+#		my($x, $y) = &$transpose(@{ $multi_c1[-1][-1] });
+#		$im->image(image => $end_flag, xpos => $x-5, ypos => $y-15,
+#			   xalign => 1, yalign => 1);
+#	    }
+#	}
+#    }
+#
+#    # Ausgabe der Straßennnamen
+#    if ($strnet) {
+#	$im->set_stroke_color(@$black);
+#	$im->set_line_width(1);
+#	my(@strnames) = $strnet->route_to_name
+#	    ([ map { [split ','] } @{ $self->{Coords} } ]);
+#	my $size = (@strnames >= 30 ? 7 :
+#		    @strnames >= 20 ? 8 :
+#		    @strnames >= 15 ? 9 :
+#		    10
+#		   );
+#	my $pad = 2;
+#	my $sm = eval { require Geo::SpaceManager; Geo::SpaceManager->new($self->{PageBBox}) };
+#	#warn $@ if $@;
+#	foreach my $e (@strnames) {
+#	    my $name = Strassen::strip_bezirk($e->[0]);
+#	    my $f_i  = $e->[4][0];
+#	    my($x,$y) = &$transpose(split ',', $self->{Coords}[$f_i]);
+#	    my $patched_name = patch_string($name);
+#	    my $s_width = $im->my_string_width($sansserif, $patched_name) * $size;
+#	    if ($sm) {
+#		my($x1,$y1,$x2,$y2) = ($x-$pad, $y-$pad, $x+$s_width+$pad, $y+$size);
+#		my $r1 = $sm->nearest([$x1,$y1,$x2,$y2]);
+#		if (!defined $r1) {
+#		    warn "No space left for [$x1,$y1,$x2,$y2]";
+#		} else {
+#		    $sm->add($r1);
+#		    $x = $r1->[0]+$pad;
+#		    $y = $r1->[1]+$pad;
+#		}
+#	    }
+#	    $im->set_fill_color(@$white);
+#	    $im->rectangle($x-$pad, $y-$pad, $s_width+$pad*2, $size+$pad);
+#	    $im->fill;
+#	    $im->rectangle($x-$pad, $y-$pad, $s_width+$pad*2, $size+$pad);
+#	    $im->stroke;
+#	    $im->set_fill_color(@$black);
+#	    $im->string($sansserif, $size, $x, $y, $patched_name);
+#	}
+#    }
+#
+#    if ($self->{TitleDraw}) {
+#	my $start = $self->{Startname};
+#	my $ziel  = $self->{Zielname};
+#	foreach my $s (\$start, \$ziel) {
+#	    # Text in Klammern entfernen, damit der Titel kürzer wird
+#	    my(@s) = split(m|/|, $$s);
+#	    foreach (@s) {
+#		s/\s+\(.*\)$//;
+#	    }
+#	    $$s = join("/", @s);
+#	}
+#	my @s = (patch_string($start) . ' ',
+#		 chr(174), # left arrow
+#		 ' ' . patch_string($ziel)
+#		);
+#
+#	my $size = 20;
+#	my @s_width = ($im->my_string_width($sansserif, $s[0]) * $size,
+#		       20, # no width mapping for Symbol font: $im->my_string_width($symbolfont, $s[1]) * $size,
+#		       $im->my_string_width($sansserif, $s[2]) * $size,
+#		      );
+#	my $s_width = $s_width[0] + $s_width[1] + $s_width[2];
+#
+#	my $y_top = $self->{PageBBox}[3];
+#	$y_top -= 37;
+#
+#	$im->set_stroke_color(@$black);
+#	$im->set_fill_color(@$white);
+#	$im->set_line_width(1);
+#	$im->rectangle(15, $y_top, $s_width+5+5, $size+7);
+#	$im->fill;
+#	$im->rectangle(15, $y_top, $s_width+5+5, $size+7);
+#	$im->stroke;
+#
+#	$im->set_stroke_color(@$black);
+#	$im->set_fill_color(@$black);
+#	my $x = 20;
+#	my $y = $y_top + 5;
+#	$im->string($sansserif, $size, $x, $y, $s[0]);
+#	$x += $s_width[0];
+#	$im->string($symbolfont, $size, $x, $y, $s[1]);
+#	$x += $s_width[1];
+#	$im->string($sansserif, $size, $x, $y, $s[2]);
+#    }
 
 }
 
@@ -967,8 +902,7 @@ sub empty_image_error {
 	$im->set_source_rgb(@$black);
 	my $y = 750;
 	for my $line (@error_msg) {
-	    #$im->string($sansserif, 24, 50, $y, $line);
-	    $im->show_text($sansserif);
+	    draw_text($im, 24, 50, $y, $line);
 	    $y -= 30;
 	}
 	$self->flush;
@@ -1023,6 +957,19 @@ sub patch_string {
 	$_[0];
     } else {
 	BBBikeUnicodeUtil::unidecode_string($_[0]);
+    }
+}
+
+sub draw_text {
+    my($surface, $size, $x, $y, $string) = @_;
+    if (eval { require Pango; die "Pango NYI" }) {
+	# XXX
+    } else {
+	$string = patch_string($string);
+	$surface->move_to($x, $y);
+	$surface->select_font_face('Sans Serif', 'normal', 'normal');
+	$surface->set_font_size($size);
+	$surface->show_text($string);
     }
 }
 
