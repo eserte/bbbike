@@ -17,6 +17,7 @@ BBBikeDraw/ImageMagick.pm
 BBBikeDraw/Imager.pm
 BBBikeDraw/MapServer.pm
 BBBikeDraw/PDF.pm
+BBBikeDraw/PDFCairo.pm
 BBBikeDraw/SVG.pm
 BBBikeESRI.pm
 BBBikeEdit.pm
@@ -151,6 +152,7 @@ Route.pm
 Route/Descr.pm
 Route/Heavy.pm
 Route/PDF.pm
+Route/PDF/Cairo.pm
 Route/Simplify.pm
 Salesman.pm
 Strassen.pm
