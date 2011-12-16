@@ -3495,8 +3495,8 @@ EOF
 userdel	2::inwork -19908,17940 -18793,18169
 EOF
      },
-     { from  => 1322866800, # 2011-11-26 11:00, PERIODISCH! an allen Adventssamstagen
-       until => 1322940600, # 2011-11-26 20:30, PERIODISCH! an allen Adventssamstagen
+     { from  => 1324076400, # 2011-11-26 11:00, PERIODISCH! an allen Adventssamstagen
+       until => 1324150200, # 2011-11-26 20:30, PERIODISCH! an allen Adventssamstagen
        text  => 'Lichtenrader Weihnachtsmarkt: Bahnhofstr. (Lichtenrade) in beiden Richtungen zwischen Steinstr. und Goltzstr gesperrt (alle Adventssamstage von 11:00 bis 20:30) ',
        type  => 'gesperrt',
        source_id => 'http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20111109.1040.362258.html',

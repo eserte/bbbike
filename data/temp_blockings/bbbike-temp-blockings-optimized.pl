@@ -35,7 +35,16 @@ userdel	2::temp 5656,10876 5652,11004
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20111109.1040.362258.html',
+         'until' => 1324150200,
+         'text' => 'Lichtenrader Weihnachtsmarkt: Bahnhofstr. (Lichtenrade) in beiden Richtungen zwischen Steinstr. und Goltzstr gesperrt (alle Adventssamstage von 11:00 bis 20:30) ',
+         'from' => 1324076400,
+         'id' => 417,
+         'data' => 'userdel	q4 10310,-2136 10453,-2133 10509,-2131 10631,-2130 10747,-2129 10983,-2116
+',
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
@@ -1696,16 +1705,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_013995',
-         'until' => 1324044000,
-         'text' => 'Freiheit/Wiesendamm (Spandau): Baustelle, Fahrtrichtung gesperrt Richtung Spandauer Damm zwischen Klärwerkstr. und Spandauer Damm, 25.08.2009 07:04 Uhr bis 16.12.2011 15:00 Uhr ',
-         'from' => 1251090240,
-         'id' => 1850,
-         'data' => 'userdel	q4::inwork; -1258,13552 -990,13502 -729,13415 -346,13349 -307,13279 -264,13009
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1998,16 +1998,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_015518',
-         'until' => 1324033200,
-         'text' => 'Heinrich-Mann-Str. (Pankow): Baustelle, gesperrt in beiden Richtungen zwischen Cottastr. und Grabbeallee. 12.04.2010 bis 16.12.2011',
-         'from' => 1270987200,
-         'id' => 2044,
-         'data' => 'userdel	q4::inwork 9881,18354 9821,18392
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2365,16 +2356,7 @@ userdel	q4::inwork; 10166,12777 10132,12941
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'LS/S-SG33-C/11/067',
-         'until' => 1323990000,
-         'text' => 'Neuhausen/Spree: L48: Brückenneubau Brücke über das Fließ bei Gablenz, 19.04.2011 bis 15.12.2011 ',
-         'from' => 1320439456,
-         'id' => 2229,
-         'data' => 'userdel	2::inwork 85633,-77062 87212,-78642
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
