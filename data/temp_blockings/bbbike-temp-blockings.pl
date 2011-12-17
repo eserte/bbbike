@@ -5304,7 +5304,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_003088',
        data  => <<EOF,
-userdel	2::temp 5370,6486 5424,6584 5533,6753 5654,6941
+userdel	2::temp 5370,6486 5424,6584 5533,6753 5644,6936
 EOF
      },
      { from  => 1154203576, # 2006-07-29 22:06
@@ -7966,7 +7966,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005341',
        data  => <<EOF,
-userdel	2::temp 5370,6486 5424,6584 5533,6753 5654,6941
+userdel	2::temp 5370,6486 5424,6584 5533,6753 5644,6936
 EOF
      },
      { from  => 1177739901, # 2007-04-28 07:58
@@ -16019,7 +16019,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_014142',
        data  => <<EOF,
-userdel	q4::temp; 5817,7223 5654,6941
+userdel	q4::temp; 5817,7223 5644,6936
 EOF
      },
      { from  => undef, #
@@ -18251,7 +18251,7 @@ EOF
        text  => 'Rheinstraße (Friedenau): Veranstaltung, Straße vollständig gesperrt (2. und 3. Juli 2011) in beiden Richtungen zwischen Walther-Schreiber-Platz und Breslauer Platz',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::temp 5370,6486 5424,6584 5533,6753 5654,6941 5817,7223
+userdel	2::temp 5370,6486 5424,6584 5533,6753 5644,6936 5817,7223
 EOF
      },
      { from  => 1284091200, # 2010-09-10 06:00 # PERIODISCH!

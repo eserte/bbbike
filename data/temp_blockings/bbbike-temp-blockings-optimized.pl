@@ -35,16 +35,7 @@ userdel	2::temp 5656,10876 5652,11004
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20111109.1040.362258.html',
-         'until' => 1324150200,
-         'text' => 'Lichtenrader Weihnachtsmarkt: Bahnhofstr. (Lichtenrade) in beiden Richtungen zwischen Steinstr. und Goltzstr gesperrt (alle Adventssamstage von 11:00 bis 20:30) ',
-         'from' => 1324076400,
-         'id' => 417,
-         'data' => 'userdel	q4 10310,-2136 10453,-2133 10509,-2131 10631,-2130 10747,-2129 10983,-2116
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,

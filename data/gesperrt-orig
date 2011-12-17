@@ -123,8 +123,9 @@ Platz S (Hundekehlestr.)	1 2277,7705 2206,7637
 Platz S (Hundekehlestr.)	1 2161,7685 2222,7718 2277,7705
 Platz am Wilden Eber	1 2723,7029 2701,7045 2688,7067 2695,7082 2717,7093 2737,7073 2742,7056 2733,7039 2723,7029
 # gesperrt wegen Tunnel
-Wexstr.	2 6388,7999 6264,8008 5807,7978 5635,8011
-Wexstr.	1 5635,8011 5824,8035 5928,8052 6154,8070 6266,8058 6409,8026
+Wexstr.	2 6260,8011 5807,7978 5635,8011
+Wexstr.	1 6388,7999 6260,8011
+Wexstr.	1 5635,8011 5824,8035 5928,8052 6154,8070 6261,8058 6409,8026
 Detmolder Str. (Süd)	1 4659,7982 4572,7936 4371,8018 4342,8093 4280,8188
 Detmolder Str. (Nord)	2 4349,8118 4469,8037 4659,7982
 Detmolder Str. (Nord)	1 4280,8188 4349,8118
@@ -273,7 +274,7 @@ Straße 462	1 4914,17399 5068,17384
 Havensteinstr.	1 6293,2583 6463,2724 6593,2831
 Worpsweder Str.	1 6191,4923 6202,5163
 Wilseder Str.	1 6295,5158 6288,4906
-Dickhardtstr.	1 5817,7223 5824,6974 5828,6839 5778,6754 5604,6709 5533,6753
+Dickhardtstr.	1 5817,7223 5824,6974 5826,6871 5811,6833 5752,6751 5604,6709 5533,6753
 Roennebergstr.	1 5533,6753 5357,6932
 Schmitzweg	1 5879,19352 5858,19437 5831,19547 5731,19824
 Barbarossaplatz	1 6731,9559 6746,9540 6743,9523 6728,9515 6704,9537 6712,9557 6731,9559
@@ -863,6 +864,7 @@ Mark-Twain-Str.	1 24349,14500 24363,14453 24345,14403
 Mark-Twain-Str.	1 24321,14410 24349,14500
 #: note: der Abschnitt ist außerdem eine Einbahnstraße, offen bergauf
 A.T.U-Einfahrt: Tor, außerhalb der Öffnungszeiten (Mo-Fr bis 20 Uhr, Sa bis 16 Uhr) gesperrt	2 8546,9468 8561,9482
+(Erfurter Str. - Wexstr.)	1 6260,8011 6261,8058
 ######################################################################
 #
 # Potsdam
@@ -1302,7 +1304,7 @@ Blumberger Damm: Mittelstreifen	3nocross 21599,15213 21626,15357 21647,15496
 Blumberger Damm: Mittelstreifen	3nocross 21150,11925 21135,11799 21108,11628
 Rudower Chaussee: Mittelstreifen, zukünftig Straßenbahntrasse	3nocross 19206,2848 19242,2876 19324,2939
 Rudower Chaussee: Mittelstreifen, zukünftig Straßenbahntrasse	3nocross 19581,3184 19603,3207 19732,3340
-Sachsendamm: Mittelstreifen mit Geländer	3nocross 6935,8208 7005,8150 7073,8081
+Sachsendamm: Mittelstreifen mit Geländer	3nocross 6935,8208 7001,8161 7073,8081
 Holzmarktstr.: Mittelstreifen	3nocross 11963,11813 11919,11856 11768,12006
 Mehringdamm/Baruther: Mittelstreifen	3nocross 9334,9670 9387,9804 9444,9919
 Höhndorfstr. - Loewenhardtdamm: Mittelstreifen	3 8438,8676 8334,8655 8371,8543
@@ -1316,7 +1318,7 @@ Köpenicker Landstraße: Mittelstreifen mit Bordsteienen	3nocross 16353,7226 16195
 Max-Born-Str.: Straßenbahntrasse	3nocross 19053,2890 19021,2946 18951,3069
 Prellerweg: Mittelstreifen	3nocross 6765,5863 6895,5873 7078,5887
 Ostseestr.: Mittelstreifen	3nocross 12091,16209 12237,16119 12352,16048
-Schildhornstreifen: Mittelstreifen vor dem Autobahnanschluss	3nocross 4292,6558 4320,6540 4423,6477
+Schildhornstreifen: Mittelstreifen vor dem Autobahnanschluss	3nocross 4292,6558 4338,6528 4423,6477
 Adlergestell: Mittelstreifen	3nocross 19735,3643 19812,3561 19857,3514 19904,3464
 Adlergestell: Mittelstreifen	3nocross 19735,3643 19676,3705 19633,3751 19587,3801
 Silberberger -> Adlergestell: Abbiegen verboten	3 19804,3697 19735,3643 19812,3561
@@ -1694,10 +1696,15 @@ Drängelgitter, für Anhänger nicht passierbar	BNP:5::trailer=no 1980,3409
 #: by: ^^^
 Schwingtor	BNP:5::trailer=10 15054,10168
 Schwingtor	BNP:5::trailer=10 15097,10255
-#: note: Breite ca. 90cm
+# 
+#: note: Breite ca. 90cm vvv
 Schwingtor	BNP:5::trailer=10 7352,8390
-#: note: Breite ca. 90cm
 Schwingtor	BNP:5::trailer=10 7283,8265
+Schwingtor	BNP:5::trailer=10 7366,8390
+Schwingtor	BNP:5::trailer=10 7400,8273
+Schwingtor	BNP:5::trailer=10 7289,8259
+#: note: ^^^
+# 
 #: note: Fahrräder mit Anhänger könnten auf den parallelen Gehweg geführt werden
 Schranke, sehr enge Durchfahrt, nicht anhängertauglich	BNP:5::trailer=no 14658,7513
 #: note: Hier steht ein "Radfahren verboten"-Schild
@@ -1896,8 +1903,8 @@ Friedrich-Ebert-Platz: permanent gesperrt, nicht nur bei Bundestagssitzungen	2 8
 #: next_check: 2011-10-15
 Spreeufer: wegen Bauarbeiten gesperrt	2:inwork 8596,12576 8495,12651 8473,12753
 # 
-#: last_checked: 2011-11-04
-#: next_check: 2011-12-01
+#: last_checked: 2011-12-17
+#: next_check: 2012-01-15
 (Leuthener Platz - Wilhelm-Kabus-Str.): Bauzäune	2:inwork 7716,8356 7837,8354 7893,8327
 # 
 #XXX del --- #: last_checked: 2011-09-27 --- #: next_check: 2011-10-15 --- (General-Pape-Str. - Gontermannstr.): Bauzäune	2:inwork 8106,8290 8202,8293 8265,8305 8276,8295

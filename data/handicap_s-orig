@@ -394,7 +394,9 @@ Uferweg, Mentzelpark: Fuﬂg‰nger, eng	q3 21769,4973 21821,4918 21834,4889
 (Mentzelpark): Fuﬂg‰nger	q1 21769,4973 21778,4916 21834,4889 21848,4882
 (Mentzelpark): Fuﬂg‰nger	q1 21726,4896 21741,4889 21778,4916
 #: XXX Bauarbeiten; in Zukunft wird das Radfahren offiziell erlaubt sein; evtl. auch asphaltiert?
-#: last_checked: 2011-09-25
+#: XXX offiziell sollten die Bauarbeiten schon Ende 2010 (!) beendet sein
+#: last_checked: 2011-12-17
+#: next_check: 2012-03-15
 Heinrich-Lassen-Park: Fuﬂg‰nger	q2 6664,8787 6740,8682 6815,8691 6912,8617
 (Uferweg am Nordhafen): Fuﬂg‰nger	q1 7753,14528 7695,14545 7498,14658
 An der Malche: teilweise eng und kurvig	q1 1106,20424 1032,20580 895,20523 834,20610 625,20738
@@ -513,7 +515,7 @@ Viktoriapark: Fuﬂg‰nger, kurze Rampe, Pf‰hle	q1 5013,6003 4981,5939 4957,5894
 Teltowkanalpromenade: eng, nicht anh‰ngertauglich	q2 2079,-12 1924,-188 1593,-317 1471,-311
 (Wohnanlage Friedastr.): Fuﬂg‰nger, Bordsteine	q3 16887,11545 16759,11582
 (Eitelstr. - Bahnhof Lichtenberg): Fuﬂg‰nger	q3 16727,11611 16766,11603
-Bennigsenstr.: enge Straﬂe	q1 5807,7771 5957,7765 6225,7776
+Bennigsenstr.: enge Straﬂe	q1 5807,7771 5957,7773 6195,7775 6215,7761
 Perelsplatz: Fuﬂg‰nger, Park	q2 5809,7712 5636,7709
 Gustav-Rickelt-Weg: eng, Fuﬂg‰nger, Bordsteine	q2 4226,6712 4223,6796 4206,6820
 Unterf¸hrung unter der Stromstr.: Fuﬂg‰nger, eng	q2 6218,12975 6180,12972
@@ -694,7 +696,9 @@ Gounodstr.: Fuﬂg‰nger	q1 14259,15816 14272,15837 14366,15877
 Seidenberger Str.: Bordstein, Gel‰nder	q3 12379,16998 12373,17007
 Mulackstr.: enge Straﬂe	q1 10640,13471 10535,13509 10406,13543 10304,13575
 R¸ckerstr.: enge Straﬂe	q1 10597,13647 10535,13509
-Cheruskerpark: Fuﬂg‰nger	q1 7437,8712 7403,8693 7369,8583 7352,8390 7283,8265 7250,8223
+Cheruskerpark: Fuﬂg‰nger	q1 7437,8712 7403,8693 7369,8583 7352,8391 7352,8390 7283,8265 7282,8264 7250,8223
+(Cheruskerpark - Cheruskerstr.): Fuﬂg‰nger	q1 7352,8391 7366,8390 7375,8294 7400,8273 7412,8273
+(Torgauer Str. - Cheruskerstr.): Fuﬂg‰nger	q1 7282,8264 7289,8259 7332,8292 7375,8294
 (Bernhardstr. - Varziner Platz): S-Bahnunterf¸hrung, Fuﬂg‰nger	q4 5471,7915 5475,7906 5492,7868
 #XXX del --- (Rhinstr. - Arendsweg/Landsberger Allee): eng und kurvig	q3 17319,14159 17230,14206
 #XXX del --- (Rhinstr. - Arendsweg/Landsberger Allee): Bordsteine	q3 17230,14206 17221,14268
@@ -1276,7 +1280,7 @@ L¸nette: Fuﬂg‰nger	q1 -1342,15510 -1485,15463
 Maselakeweg: Fuﬂg‰nger	q1 -2450,16981 -2410,16931 -2391,16788 -2391,16607 -2333,16590
 #: by: ^^^
 #: by: Micha Bustian
-Gritznerstr.: enge Straﬂe	q1 4291,5895 4370,6052 4430,6165 4472,6242 4507,6320 4555,6403 4630,6534 4679,6620 4734,6716
+Gritznerstr.: enge Straﬂe	q1 4291,5895 4370,6052 4414,6134 4430,6165 4472,6242 4507,6320 4555,6403 4630,6534 4679,6620 4734,6716
 #: by: Angela
 Im Jagen: Fuﬂg‰nger, Hundeauslaufgebiet	q1 905,6631 909,6584 1057,6461 1375,6138
 #: by: Patrik Marschalik vvv
@@ -1319,8 +1323,8 @@ Hechtgraben: eng, Fuﬂg‰nger, Treppen oder Rampen	q3 3105,5594 3173,5493
 (Weg in d. Kolonie Norderney): Fuﬂg‰nger	q3 3596,6828 3607,6952 3582,6964
 #: note: s¸dlicher Teil von Ulrike Orlowski:
 Franz-Cornelsen-Weg: Fuﬂg‰nger, Radfahren offiziell nicht erlaubt, schmaler Fuﬂweg am Spielplatz	q3 3593,7176 3597,7192 3612,7335 3634,7601
-Bjˆrnsonstr.: Fuﬂg‰nger, eng	q3 4290,6445 4320,6540
-R¸ckertstr.: Fuﬂweg durch Wohngebiet	q3 3878,6110 4028,6099
+Bjˆrnsonstr.: Fuﬂg‰nger, eng	q3 4290,6445 4338,6528
+(Gustav-Mahler-Platz - R¸ckertstr.): Fuﬂweg durch Wohngebiet	q3 3878,6110 3943,6107 3976,6094 4027,6088
 Spinozastr.: eng u. un¸bersichtlich	q2 3926,6409 3930,6481 3974,6511 4050,6506
 (Parkweg): mit Stufen	q3 2214,4992 2288,4932
 Koburger Str.: Gehweg	q3 6534,8467 6540,8421

@@ -281,6 +281,7 @@ Steigung 3.2% (Hugo-Vogel-Str.)	St; -6249,1332 -6304,1564
 Steigung 3.2% (Havelchaussee)	St; -3536,7856 -3531,7825
 Steigung 3.2% (Friedenstr. (Wannsee))	St; -7332,662 -7368,794
 Steigung 3.2% (Filandastr.)	St; 5681,5743 5683,5672
+Steigung 3.2% (Brentanostr.)	St; 4027,6088 4010,5888
 Steigung 3.2% (Bernauer Str. (Gesundbrunnen))	St; 9472,14478 9621,14624
 Steigung 3.2% ((Richtung Grunewaldturm))	St; -3212,8024 -3536,7856
 Steigung 3.2% ((Richtung Grunewaldturm))	St; -2890,7994 -3212,8024
@@ -315,7 +316,6 @@ Steigung 3.0% (Kranzallee)	St; -679,10934 -753,10918
 Steigung 3.0% (Kranzallee)	St; -617,10990 -679,10934
 Steigung 3.0% (Hermsdorfer Damm)	St; 2533,22253 2587,22332
 Steigung 3.0% (Fontanestr. (Grunewald))	St; 972,8626 930,8746
-Steigung 3.0% (Brentanostr.)	St; 4028,6099 4010,5888
 Steigung 3.0% (Blissestr.)	St; 4784,8508 4788,8347
 Steigung 2.9% (Willibald-Alexis-Str.)	St; 9596,9092 9669,9080
 Steigung 2.9% (Wilhelmstr. (Wilhelmstadt))	St; -5501,11251 -5564,11209
@@ -402,9 +402,6 @@ Steigung 2.6% (Röblingstr.)	St; 7477,5475 7492,5415
 Steigung 2.6% (Rosestr.)	St; 21497,1042 21350,852
 Steigung 2.6% (Rosestr.)	St; 21350,852 21202,727
 Steigung 2.6% (Reuterstr. (Neukölln))	St; 12195,8436 12216,8323
-Steigung 2.6% (Rembrandtstr. (Schöneberg))	St; 6143,6853 6121,6851
-Steigung 2.6% (Rembrandtstr. (Schöneberg))	St; 6121,6851 6051,6758
-Steigung 2.6% (Rembrandtstr. (Schöneberg))	St; 6051,6758 6027,6722
 Steigung 2.6% (Quastenhornweg)	St; -7595,4374 -7557,4340
 Steigung 2.6% (Quastenhornweg)	St; -7557,4340 -7473,4306
 Steigung 2.6% (Quastenhornweg)	St; -7473,4306 -7413,4304
@@ -469,6 +466,9 @@ Steigung 2.4% (Straßburger Str. (Prenzlauer Berg))	St; 11060,13865 11160,14002
 Steigung 2.4% (Schwedter Steg)	St; 10080,15858 10005,16150
 Steigung 2.4% (Ritterfelddamm)	St; -7254,5164 -7328,5218
 Steigung 2.4% (Ringbahnstr. (Neukölln))	St; 12934,6967 12689,6905
+Steigung 2.4% (Rembrandtstr. (Schöneberg))	St; 6143,6853 6121,6851
+Steigung 2.4% (Rembrandtstr. (Schöneberg))	St; 6121,6851 6051,6758
+Steigung 2.4% (Rembrandtstr. (Schöneberg))	St; 6051,6758 6019,6710
 Steigung 2.4% (Prenzlauer Allee)	St; 11170,13475 11257,13647
 Steigung 2.4% (Lindenstr. (Wannsee))	St; -6220,1875 -6249,1832
 Steigung 2.4% (Lindenstr. (Wannsee))	St; -6182,1887 -6220,1875
@@ -675,8 +675,8 @@ Steigung 1.9% (Silbersteinstr.)	St; 12983,6904 12816,6870
 Steigung 1.9% (Sensburger Allee)	St; 326,11391 456,11233
 Steigung 1.9% (Seebadstr. (Kladow))	St; -8392,6373 -8523,6323
 Steigung 1.9% (Seebadstr. (Kladow))	St; -8337,6398 -8392,6373
-Steigung 1.9% (Saarstr.)	St; 5822,6842 5828,6839
-Steigung 1.9% (Saarstr.)	St; 5654,6941 5822,6842
+Steigung 1.9% (Saarstr.)	St; 5799,6841 5811,6833
+Steigung 1.9% (Saarstr.)	St; 5644,6936 5799,6841
 Steigung 1.9% (Neue Kantstr.)	St; 2252,11037 2016,11034
 Steigung 1.9% (Morusstr.)	St; 12466,7946 12446,8032
 Steigung 1.9% (Mittelweg (Neukölln))	St; 12647,7672 12520,7694
@@ -792,7 +792,8 @@ Steigung 1.7% (Kaiserdamm)	St; 2609,11503 2391,11478
 Steigung 1.7% (Hüttenweg (Grunewald, Dahlem))	St; 441,6435 297,6541
 Steigung 1.7% (Hüttenweg (Grunewald, Dahlem))	St; 297,6541 218,6571
 Steigung 1.7% (Haderslebener Str.)	St; 3878,6110 3850,5801
-Steigung 1.7% (Gritznerstr.)	St; 4430,6165 4370,6052
+Steigung 1.7% (Gritznerstr.)	St; 4430,6165 4414,6134
+Steigung 1.7% (Gritznerstr.)	St; 4414,6134 4370,6052
 Steigung 1.7% (Fürstenbrunner Weg)	St; 1159,13541 1175,13513
 Steigung 1.7% (Fulhamer Allee)	St; 13001,4724 13056,4678
 Steigung 1.7% (Fulhamer Allee)	St; 12905,4761 13001,4724
@@ -886,7 +887,7 @@ Steigung 1.5% (Machnower Str. (Zehlendorf))	St; 749,2616 653,2557
 Steigung 1.5% (Machnower Str. (Zehlendorf))	St; 653,2557 605,2490
 Steigung 1.5% (Königstr. (Wannsee))	St; -6216,1192 -6065,1222
 Steigung 1.5% (Knausstr. (Steglitz, Schöneberg))	St; 6070,6570 6042,6686
-Steigung 1.5% (Knausstr. (Steglitz, Schöneberg))	St; 6042,6686 6027,6722
+Steigung 1.5% (Knausstr. (Steglitz, Schöneberg))	St; 6042,6686 6019,6710
 Steigung 1.5% (Klever Str.)	St; 9293,16447 9390,16362
 Steigung 1.5% (Kaiserdamm)	St; 2109,11441 1960,11426
 Steigung 1.5% (Jonasstr. (Neukölln))	St; 12585,7357 12396,7312
@@ -941,7 +942,6 @@ Steigung 1.4% (Schönagelstr.)	St; 21617,16061 21602,15908
 Steigung 1.4% (Schönagelstr.)	St; 21602,15908 21220,15741
 Steigung 1.4% (Schäferstr. (Wannsee))	St; -7474,341 -7587,312
 Steigung 1.4% (Schäferstr. (Wannsee))	St; -7449,348 -7474,341
-Steigung 1.4% (Rückertstr. (Steglitz))	St; 3878,6110 4028,6099
 Steigung 1.4% (Richard-Sorge-Str.)	St; 13381,12685 13283,12895
 Steigung 1.4% (Reuterstr. (Neukölln))	St; 12156,8760 12170,8548
 Steigung 1.4% (Potsdamer Chaussee (Zehlendorf, Nikolassee))	St; -2074,2258 -2280,2177
@@ -992,6 +992,9 @@ Steigung 1.4% ((Havel-Ufer Gatow))	St; -4536,9800 -4585,9836
 Steigung 1.4% ((Havel-Ufer Gatow))	St; -4506,9395 -4460,9456
 Steigung 1.4% ((Havel-Ufer Gatow))	St; -4460,9456 -4442,9625
 Steigung 1.4% ((Havel-Ufer Gatow))	St; -4442,9625 -4536,9800
+Steigung 1.4% ((Gustav-Mahler-Platz - Rückertstr.))	St; 3976,6094 4027,6088
+Steigung 1.4% ((Gustav-Mahler-Platz - Rückertstr.))	St; 3943,6107 3976,6094
+Steigung 1.4% ((Gustav-Mahler-Platz - Rückertstr.))	St; 3878,6110 3943,6107
 Steigung 1.4% ((Falkstr. - Mittelweg))	St; 12220,7822 12224,7799
 Steigung 1.3% (Winsstr.)	St; 11920,14468 11835,14309
 Steigung 1.3% (Wiesendamm)	St; -729,13415 -346,13349
@@ -1024,7 +1027,7 @@ Steigung 1.3% (Nogatstr.)	St; 12740,7162 12632,7137
 Steigung 1.3% (Nogatstr.)	St; 12632,7137 12451,7100
 Steigung 1.3% (Nestorstr.)	St; 3349,9702 3314,9304
 Steigung 1.3% (Moselstr. (Friedenau))	St; 5684,6942 5824,6974
-Steigung 1.3% (Moselstr. (Friedenau))	St; 5654,6941 5684,6942
+Steigung 1.3% (Moselstr. (Friedenau))	St; 5644,6936 5684,6942
 Steigung 1.3% (Monumentenstr.)	St; 8180,9099 8081,9120
 Steigung 1.3% (Mierendorffstr.)	St; 3337,12855 3327,12818
 Steigung 1.3% (Meiningenallee)	St; 522,12577 541,12727
@@ -1126,6 +1129,9 @@ Steigung 1.2% (Friedrich-Karl-Str. (Tempelhof))	St; 9147,5534 8955,5549
 Steigung 1.2% (Friedenstr. (Friedrichshain))	St; 12616,12844 12690,12769
 Steigung 1.2% (Fregestr.)	St; 5657,6451 5777,6628
 Steigung 1.2% (Eisenacher Str. (Marzahn, Hellersdorf))	St; 22449,15127 22605,15111
+Steigung 1.2% (Dickhardtstr.)	St; 5752,6751 5811,6833
+Steigung 1.2% (Dickhardtstr.)	St; 5604,6709 5752,6751
+Steigung 1.2% (Dickhardtstr.)	St; 5533,6753 5604,6709
 Steigung 1.2% (Dernburgstr.)	St; 2498,10665 2378,10677
 Steigung 1.2% (Dernburgstr.)	St; 2378,10677 2333,10710
 Steigung 1.2% (Dernburgstr.)	St; 2333,10710 2252,11037
@@ -1246,10 +1252,6 @@ Steigung 1.1% (Einsteinufer)	St; 4819,12338 4981,12252
 Steigung 1.1% (Eichkampstr.)	St; 693,9129 676,9104
 Steigung 1.1% (Eichenallee (Westend))	St; 614,12295 684,12296
 Steigung 1.1% (Eichenallee (Westend))	St; 552,12376 614,12295
-Steigung 1.1% (Dickhardtstr.)	St; 5824,6974 5828,6839
-Steigung 1.1% (Dickhardtstr.)	St; 5778,6754 5828,6839
-Steigung 1.1% (Dickhardtstr.)	St; 5604,6709 5778,6754
-Steigung 1.1% (Dickhardtstr.)	St; 5533,6753 5604,6709
 Steigung 1.1% (Crellestr.)	St; 7491,9061 7535,9087
 Steigung 1.1% (Crellestr.)	St; 7320,8939 7491,9061
 Steigung 1.1% (Columbiadamm)	St; 9801,8683 9570,8715
@@ -1331,6 +1333,8 @@ Steigung 1.0% (Erdener Str.)	St; 1782,9270 1757,9282
 Steigung 1.0% (Emser Str. (Neukölln))	St; 12751,7109 12645,7087
 Steigung 1.0% (Eichenallee (Westend))	St; 1725,12009 1572,12046
 Steigung 1.0% (Dorfstr. (Kaulsdorf))	St; 22313,11688 22469,11627
+Steigung 1.0% (Dickhardtstr.)	St; 5826,6871 5811,6833
+Steigung 1.0% (Dickhardtstr.)	St; 5824,6974 5826,6871
 Steigung 1.0% (Dickensweg)	St; -652,11337 -948,11270
 Steigung 1.0% (Delbrückstr. (Neukölln))	St; 12743,6645 12468,6592
 Steigung 1.0% (Czeminskistr.)	St; 7563,8871 7604,8927

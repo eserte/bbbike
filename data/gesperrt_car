@@ -428,13 +428,13 @@ Johannisstr. -> Friedrichstr.: Friedrichstr. (Straßenbahn)	3::igndisp 9385,13174
 Oranienburger Str. (Straßenbahnhaltestelle)	3nocross::ignrte 9225,13389 9281,13374 9415,13315
 Linienstr. -> Oranienburger Str.: Oranienburger Str. (Straßenbahnhaltestelle)	3::igndisp 9296,13397 9281,13374 9415,13315
 Oranienburger Str. -> Linienstr.: Oranienburger Str. (Straßenbahnhaltestelle)	3::igndisp 9225,13389 9281,13374 9296,13397
-Durchfahrt für Autofahrer per Poller gesperrt	3nocross::ignrte 5972,6756 5897,6799 5828,6839
-Fregestr. -> Saarstr.: Durchfahrt für Autofahrer per Poller gesperrt	3::igndisp 5777,6628 5897,6799 5828,6839
-Fregestr. -> Fregestr.: Durchfahrt für Autofahrer per Poller gesperrt	3::igndisp 5777,6628 5897,6799 5957,6889
-Saarstr. -> Fregestr.: Durchfahrt für Autofahrer per Poller gesperrt	3::igndisp 5828,6839 5897,6799 5957,6889
-Fregestr. -> Fregestr.: Durchfahrt für Autofahrer per Poller gesperrt	3::igndisp 5957,6889 5897,6799 5777,6628
-Fregestr. -> Saarstr.: Durchfahrt für Autofahrer per Poller gesperrt	3::igndisp 5957,6889 5897,6799 5972,6756
-Saarstr. -> Fregestr.: Durchfahrt für Autofahrer per Poller gesperrt	3::igndisp 5972,6756 5897,6799 5777,6628
+Durchfahrt für Autofahrer per Poller gesperrt	3nocross::ignrte 5966,6747 5896,6785 5811,6833
+Saarstr. -> Fregestr.: Durchfahrt für Autofahrer per Poller gesperrt	3::igndisp 5966,6747 5896,6785 5777,6628
+Fregestr. -> Fregestr.: Durchfahrt für Autofahrer per Poller gesperrt	3::igndisp 5777,6628 5896,6785 5957,6889
+Fregestr. -> Saarstr.: Durchfahrt für Autofahrer per Poller gesperrt	3::igndisp 5777,6628 5896,6785 5811,6833
+Fregestr. -> Saarstr.: Durchfahrt für Autofahrer per Poller gesperrt	3::igndisp 5957,6889 5896,6785 5966,6747
+Fregestr. -> Fregestr.: Durchfahrt für Autofahrer per Poller gesperrt	3::igndisp 5957,6889 5896,6785 5777,6628
+Saarstr. -> Fregestr.: Durchfahrt für Autofahrer per Poller gesperrt	3::igndisp 5811,6833 5896,6785 5957,6889
 Putlitzstr.	1 6210,13939 6205,14216
 Bornitzstr.	1 15643,12875 15563,12860
 Straßenbahntrasse	3nocross::ignrte 18890,9529 18834,9256 18809,9133
@@ -903,7 +903,7 @@ Margarete-Kühn-Str.: Poller am Salzufer	3 5018,12322 5133,12240 5203,12387
 Margarete-Kühn-Str.: Poller am Salzufer	3 5194,12176 5133,12240 5203,12387
 Eberswalder Str. (Bernau)	1 23109,30968 23103,30923 22922,30640
 Rutnikstr. - Möllendorffstr.: Abbiegen verboten	3 15648,12687 15546,12690 15550,12625
-Torgauer Str.: nur für Anlieger	2:Anlieger 7446,8200 7402,8208 7250,8223 7005,8150
+Torgauer Str.: nur für Anlieger	2:Anlieger 7446,8200 7402,8208 7250,8223 7001,8161
 Hermannswerder	1 -14301,-2871 -13718,-2991
 Neue Schönholzer Str.	1 10089,18180 10140,18080 10179,17772
 Kleine Kurstr.	1 10230,11839 10183,11770
@@ -1018,9 +1018,9 @@ Indira-Gandhi-Str. -> Gounodstr.: Straßenbahntrasse	3::igndisp 14609,15921 14597
 Meyerbeerstr. -> Indira-Gandhi-Str.: Straßenbahntrasse	3::igndisp 14484,16035 14576,16069 14550,16161
 Indira-Gandhi-Str. -> Meyerbeerstr.: Straßenbahntrasse	3::igndisp 14595,15980 14576,16069 14484,16035
 Lenther Steig	1 1024,14889 1037,14814 1042,14721
-Mittelstreifen	3nocross::ignrte 6157,7685 6083,7582 5955,7406
-Hauptstr. -> Wielandstr.: Mittelstreifen	3::igndisp 6157,7685 6083,7582 6081,7215
+Mittelstreifen	3nocross::ignrte 6150,7673 6083,7582 5955,7406
 Wielandstr. -> Hauptstr.: Mittelstreifen	3::igndisp 6081,7215 6083,7582 5955,7406
+Hauptstr. -> Wielandstr.: Mittelstreifen	3::igndisp 6150,7673 6083,7582 6081,7215
 Fehmarner Str.	1 6710,14776 6528,15000
 Mittelstreifen	3nocross::ignrte 1960,11426 1834,11408 1625,11380
 Soorstr. -> Kaiserdamm: Mittelstreifen	3::igndisp 1878,11268 1834,11408 1625,11380
