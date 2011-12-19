@@ -290,8 +290,8 @@ sub do_tests {
 	$routing2->Goal->Street("Hauptstr/Wexstr");
 	$routing2->search;
 	ok(scalar @{ $routing2->RouteInfo } > 1, "Non-empty route info");
-	is((grep { $_->{Street} =~ /wexstr/i } @{$routing2->RouteInfo}),
-	   0, "Obeying completely blocked streets");
+	ok((grep { $_->{Street} =~ /erfurter/i } @{$routing2->RouteInfo}),
+	   "Obeying completely blocked streets"); # Umweg über Durlacher Str. - Erfurter Str. - Wexstr.
 
 	# Wegfuehrung
 	$routing2->Start->reset;
