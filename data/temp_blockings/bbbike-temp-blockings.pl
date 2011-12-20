@@ -9142,7 +9142,7 @@ EOF
        type  => 'handicap',
        source_id => 'INKO_096853',
        data  => <<EOF,
-userdel	q4::inwork 19904,3464 19803,3391 19732,3340
+userdel	q4::inwork 19904,3464 19842,3419 19732,3340
 EOF
      },
      { from  => 1185055200, # 2007-07-22 00:00
