@@ -18,7 +18,6 @@ use vars qw($VERSION);
 $VERSION = '0.01';
 
 use Cairo;
-use Pango;
 
 use constant DIN_A4_WIDTH => 595;
 use constant DIN_A4_HEIGHT => 842;
@@ -59,63 +58,143 @@ sub output {
 #    $pdf->new_outline('Title' => &Route::Descr::M('Routenliste'),
 #		      'Destination' => $page);
 
+    my $has_pango = eval { require Pango; 1 };
+    if (!$has_pango) {
+	# Otherwise we have to deal with non-latin Unicode characters
+	require BBBikeUnicodeUtil;
+    }
+
     my %fonts;
-    my $get_font = sub {
-	my($font_string) = @_;
-	if (!exists $fonts{$font_string}) {
-	    $fonts{$font_string} = Pango::FontDescription->from_string($font_string);
-	}
-	$fonts{$font_string};
-    };
+    my $get_font;
+    if ($has_pango) {
+	$get_font = sub {
+	    my($font_string) = @_;
+	    if (!exists $fonts{$font_string}) {
+		$fonts{$font_string} = Pango::FontDescription->from_string($font_string);
+	    }
+	    $fonts{$font_string};
+	};
+    } else {
+	$get_font = sub {
+	    my($font_string) = @_;
+	    if (!exists $fonts{$font_string}) {
+		$fonts{$font_string} = ["Sans", "normal", ($font_string =~ m{bold}i ? "bold" : "normal")];
+	    }
+	    $fonts{$font_string};
+	};
+    }
 
     my $bold_font_description = 'DejaVu Sans Bold condensed';
     my $font_description = 'DejaVu Sans condensed';
 
-    my $start_y = 8;
+    my $start_y = ($has_pango ? 8 : 30);
     my $y = $start_y;
 
-    my $_string = sub {
-	my($doit, $alignment, $text, $fontface, $size, $x0, $y0, $maxwidth) = @_;
-	return if !defined $text || !length $text;
-	return if $x0 && $x0 > $page_width;
-	my $font = $get_font->("$fontface $size");
+    my $_string;
+    if ($has_pango) {
+	$_string = sub {
+	    my($doit, $alignment, $text, $fontface, $size, $x0, $y0, $maxwidth) = @_;
+	    return if !defined $text || !length $text;
+	    return if $x0 && $x0 > $page_width;
+	    my $font = $get_font->("$fontface $size");
 
-	my $layout = Pango::Cairo::create_layout($cr);
-	$layout->set_text($text);
-	$layout->set_font_description($font);
-	if ($alignment eq 'center') {
-	    $layout->set_width($page_width * Pango->scale);
-	} elsif ($maxwidth) {
-	    $layout->set_width($maxwidth * Pango->scale);
-	    $layout->set_ellipsize('end');
-	}
-	$layout->set_alignment($alignment);
-	if ($doit) {
-	    $cr->move_to($x0, $y0);
-	    Pango::Cairo::show_layout($cr, $layout);
-	    return (($layout->get_size)[1]) / Pango->scale;
-	} else {
-	    map { $_/Pango->scale } $layout->get_size;
-	}
-    };
+	    my $layout = Pango::Cairo::create_layout($cr);
+	    $layout->set_text($text);
+	    $layout->set_font_description($font);
+	    if ($alignment eq 'center') {
+		$layout->set_width($page_width * Pango->scale);
+	    } elsif ($maxwidth) {
+		$layout->set_width($maxwidth * Pango->scale);
+		$layout->set_ellipsize('end');
+	    }
+	    $layout->set_alignment($alignment);
+	    if ($doit) {
+		$cr->move_to($x0, $y0);
+		Pango::Cairo::show_layout($cr, $layout);
+		return (($layout->get_size)[1]) / Pango->scale;
+	    } else {
+		map { $_/Pango->scale } $layout->get_size;
+	    }
+	};
+    } else {
+	$_string = sub {
+	    my($doit, $alignment, $text, $fontface, $size, $x0, $y0, $maxwidth) = @_;
+	    return if !defined $text || !length $text;
+	    return if $x0 && $x0 > $page_width;
+	    my $font = $get_font->($fontface); # without $size here
+	    $cr->select_font_face(@$font);
+	    $cr->set_font_size($size);
+	    $text = BBBikeUnicodeUtil::unidecode_string($text);
+	    utf8::upgrade($text); # workaround bug in Cairo, see https://rt.cpan.org/Ticket/Display.html?id=73177
+	    if ($doit) {
+		my $y_advance = 0;
+		if ($alignment eq 'center') {
+		    my $get_centered_x0 = sub {
+			my($text) = @_;
+			my $extents = $cr->text_extents($text);
+			($page_width - $extents->{width}) / 2 + $x0;
+		    };
+		    my $_x0 = $get_centered_x0->($text);
+		    if ($_x0 < 0) {
+			# Hack: zweizeilig ausgeben (hoffentlich reicht es!)
+			my $half_text_length = int(length($text)/2);
+			if (substr($text, $half_text_length) =~ m{^(\S*)(\s+)}) {
+			    my($first, $second) = (
+						   substr($text, 0, $half_text_length+length($1)),
+						   substr($text, $half_text_length+length($1)+length($2))
+						  );
+			    $_x0 = $get_centered_x0->($first); $_x0 = 0 if $_x0 < 0;
+			    $cr->move_to($_x0, $y0);
+			    $cr->show_text($first);
+			    $y_advance += $size + 2;
+
+			    $text = $second;
+			    $_x0 = $get_centered_x0->($text); $_x0 = 0 if $_x0 < 0;
+			    $cr->move_to($_x0, $y0 + $size + 2);
+			} else {
+			    $cr->move_to(0, $y0);
+			}
+		    } else {
+			$cr->move_to($_x0, $y0);
+		    }
+		} else {
+		    $cr->move_to($x0, $y0);
+		}
+		$cr->show_text($text);
+		return $y_advance + $size + 2;
+	    } else {
+		my $extents = $cr->text_extents($text);
+		($extents->{width}, $extents->{height});
+	    }
+	};
+    }
     my $string  = sub { $_string->(1, 'left',   @_) };
     my $stringc = sub { $_string->(1, 'center', @_) };
     my $string_width = sub { $_string->(0, 'left', @_) };
 
-    $y += $stringc->('BBBike', 'Sans Normal', 18, 0, $y);
+    my($head1_font_size, $head2_font_size, $font_size);
+    if ($has_pango) {
+	$head1_font_size = 18;
+	$head2_font_size = 14;
+	$font_size = 8;
+    } else {
+	$head1_font_size = 24;
+	$head2_font_size = 18;
+	$font_size = 10;
+    }
+
+    $y += $stringc->('BBBike', 'Sans Normal', $head1_font_size, 0, $y);
 
     if ($out->{Title}) {
 	my $title = $out->{Title};
-	my $head2_font_size = 14;
 	$y += 4;
-	$y += $stringc->($title, 'Sans Normal', 14, 0, $y);
+	$y += $stringc->($title, 'Sans Normal', $head2_font_size, 0, $y);
     }
 
     $y += 4;
 
     my @lines = (@{ $out->{Lines} }, $out->{Footer});
 
-    my $font_size = 8;
     my @max_width;
     for my $line (@lines) {
 	for my $col_i (0 .. $#$line) {
@@ -129,7 +208,7 @@ sub output {
 	}
     }
 
-    my $start_x = 30;
+    my $start_x = ($has_pango ? 30 : 5);
     my $x_spacing = 10;
 
     for my $line (@lines) {
