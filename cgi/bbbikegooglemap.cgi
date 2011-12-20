@@ -987,7 +987,11 @@ EOF
     }
 
     function GetTileUrl_bbbikeorg(a, z) {
-	return "http://tile.bbbike.org/osm/mapnik/" + z + "/" + a.x + "/" + a.y + ".png";
+	if (false) {
+	    return "http://tile.bbbike.org/osm/mapnik/"        + z + "/" + a.x + "/" + a.y + ".png";
+	} else {
+	    return "http://tile.bbbike.org/osm/mapnik-german/" + z + "/" + a.x + "/" + a.y + ".png";
+	}
     }
 
     if (GBrowserIsCompatible() ) {
