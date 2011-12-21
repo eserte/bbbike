@@ -25,7 +25,7 @@ use constant DIN_A4_HEIGHT => 842;
 sub new {
     my($class, %args) = @_;
     my $self = {};
-    my $surface = delete $args{-pdf}; # XXX Provided surface must use DIN A4 dimensions
+    my $surface = delete $args{-pdf};
     if (!$surface) {
 	die "-fh option is not supported yet in " . __PACKAGE__
 	    if delete $args{-fh}; # XXX
@@ -50,6 +50,9 @@ sub output {
 
     my(%args) = @_;
     my $out = Route::Descr::convert(%args);
+
+    # Always force portrait
+    $self->{Surface}->set_size(DIN_A4_WIDTH, DIN_A4_HEIGHT);
 
     my $cr = Cairo::Context->create($self->{Surface});
     my $page_height = DIN_A4_HEIGHT;
