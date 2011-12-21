@@ -86,6 +86,7 @@ use vars qw($VERSION $VERBOSE $WAP_URL
 	    $can_wbmp $can_palmdoc $can_gpx $can_kml
 	    $can_google_maps $can_gpsies_link
 	    $can_mapserver $mapserver_address_url
+	    $bbbikedraw_pdf_module
 	    $mapserver_init_url $no_berlinmap $max_plz_streets $with_comments
 	    $with_cat_display
 	    $use_coord_link
@@ -331,6 +332,17 @@ false.
 =cut
 
 $cannot_pdf  = 0;
+
+=item $bbbikedraw_pdf_module
+
+What L<BBBikeDraw> module for drawing PDFs should be used. Default:
+C<undef> (for L<BBBikeDraw::PDF>). Alternative value is C<PDFCairo>
+for L<BBBikeDraw::PDFCairo> (requires L<Cairo>, and L<Pango> is
+recommended).
+
+=cut
+
+$bbbikedraw_pdf_module = undef;
 
 =item $cannot_svg
 
@@ -5523,10 +5535,14 @@ sub draw_route {
 	if (-e $x_reproxy_file) {
 	    return;
 	}
-    }
-
-    if (defined $use_module && !$bbbikedraw_args{Module}) {
-	$bbbikedraw_args{Module} = $use_module;
+	if (defined $bbbikedraw_pdf_module && !$bbbikedraw_args{Module}) {
+	    $bbbikedraw_args{Module} = $bbbikedraw_pdf_module;
+	}
+    } else {
+	# for non-pdf
+	if (defined $use_module && !$bbbikedraw_args{Module}) {
+	    $bbbikedraw_args{Module} = $use_module;
+	}
     }
 
     if ($use_bbbikedraw_compress) {

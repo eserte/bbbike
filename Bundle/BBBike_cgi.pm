@@ -41,6 +41,10 @@ GD 1.18	- zum On-the-fly-Erzeugen von Grafiken beim CGI-Programm
 
 PDF::Create 0.06	- Erzeugung der Route als PDF-Dokument
 
+Cairo	- Erzeugung der Route als PDF-Dokument, alternativer Renderer
+
+Pango	- Erzeugung der Route als PDF-Dokument, alternativer Renderer
+
 Class::Accessor	- für die ESRI-Module etc.
 
 Template	- für BBBikeDraw::MapServer

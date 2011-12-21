@@ -134,6 +134,10 @@ for my $f (@files) {
 	myskip "$f needs mod_perl2", $tests_per_file
 	    if $f =~ m{^( BBBikeDataDownloadCompat\.pm
 		      )$}x && !eval { require Apache2::Const; 1};
+	myskip "$f needs Cairo", $tests_per_file
+	    if $f =~ m{^( Route/PDF/Cairo\.pm
+		        | BBBikeDraw/PDFCairo.pm
+		      )$}x && !eval { require Cairo; 1};
 
 	my @add_opt;
 	if ($f =~ m{Tk/.*\.pm}) {
