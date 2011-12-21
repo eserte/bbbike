@@ -17,6 +17,14 @@ my $cgidir = catpath $root, 'cgi';
 
 builder {
 
+    mount '/' => sub {
+	my $env = shift;
+	require Plack::Response;
+	my $res = Plack::Response->new;
+	$res->redirect("http://$env->{HTTP_HOST}/bbbike/cgi/bbbike.cgi");
+	$res->finalize;
+    };
+
     enable "Plack::Middleware::Static",
 	path => sub { s!^/BBBike/!! }, root => $root, encoding => 'iso-8859-1';
 
@@ -70,7 +78,7 @@ bbbike.psgi - Plack adapter for BBBike
 =head1 DESCRIPTION
 
 If running under C<bbbike.psgi> with defaults, then BBBike is
-available at L<http://localhost:5000/bbbike/cgi/bbbike.cgi>.
+available at L<http://localhost:5000/>.
 
 =head1 PREREQUISITES
 
