@@ -604,9 +604,10 @@ sub draw_route {
 	$im->set_line_width(1);
 	my(@strnames) = $strnet->route_to_name
 	    ([ map { [split ','] } @{ $self->{Coords} } ]);
-	my $size = (@strnames >= 30 ? 7 :
-		    @strnames >= 20 ? 8 :
-		    @strnames >= 15 ? 9 :
+	my $size = (@strnames >= 30 ? 6 :
+		    @strnames >= 23 ? 7 :
+		    @strnames >= 16 ? 8 :
+		    @strnames >= 10 ? 9 :
 		    10
 		   );
 	my $pad = 2;
@@ -630,12 +631,12 @@ sub draw_route {
 		}
 	    }
 	    $im->set_source_rgb(@$white);
-	    $im->rectangle($x-$pad, $y-$pad, $s_width+$pad*2, $size+$pad);
+	    $im->rectangle($x-$pad, $y-$pad, $s_width+$pad*2, $s_height+$pad);
 	    $im->fill;
 	    $im->set_source_rgb(@$black);
-	    $im->rectangle($x-$pad, $y-$pad, $s_width+$pad*2, $size+$pad);
+	    $im->rectangle($x-$pad, $y-$pad, $s_width+$pad*2, $s_height+$pad);
 	    $im->stroke;
-	    draw_text($im, $size, $x, $y+$size-2, $name);
+	    draw_text($im, $size, $x, $y, $name);
 	}
     }
 
@@ -655,20 +656,18 @@ sub draw_route {
 	my $size = 20;
 	my($s_width, $s_height) = get_text_dimensions($im, $size, $title_string);
 
-	my $y_top = 7;
+	my $x_top = 20;
+	my $y_top = 13;
+	my $pad = 3;
 
 	$im->set_source_rgb(@$white);
 	$im->set_line_width(1);
-	$im->rectangle(15, $y_top, $s_width+5+5, $size+7);
+	$im->rectangle($x_top-$pad, $y_top-$pad, $s_width+$pad*2, $s_height+$pad);
 	$im->fill;
 	$im->set_source_rgb(@$black);
-	$im->rectangle(15, $y_top, $s_width+5+5, $size+7);
+	$im->rectangle($x_top-$pad, $y_top-$pad, $s_width+$pad*2, $s_height+$pad);
 	$im->stroke;
-
-	$im->set_source_rgb(@$black);
-	my $x = 20;
-	my $y = $y_top + $size;
-	draw_text($im, $size, $x, $y, $title_string);
+	draw_text($im, $size, $x_top, $y_top, $title_string);
     }
 
 }
@@ -932,12 +931,19 @@ sub patch_string {
 
 sub draw_text {
     my($surface, $size, $x, $y, $string) = @_;
-    if (eval { require Pango; die "Pango NYI" }) {
-	# XXX
+    if (eval { require Pango; 1 }) {
+	my $layout = Pango::Cairo::create_layout($surface);
+	$layout->set_text($string);
+	my $fontdesc = Pango::FontDescription->from_string("DejaVu Sans condensed");
+	$fontdesc->set_absolute_size($size * (Pango->scale));
+	$layout->set_font_description($fontdesc);
+	$surface->move_to($x, $y);
+	Pango::Cairo::show_layout($surface, $layout);
     } else {
 	$string = patch_string($string);
 	utf8::upgrade($string); # workaround bug in Cairo, see https://rt.cpan.org/Ticket/Display.html?id=73177
-	$surface->move_to($x, $y);
+	my $extents = $surface->text_extents($string);
+	$surface->move_to($x, $y - $extents->{y_bearing});
 	$surface->select_font_face('Sans Serif', 'normal', 'normal');
 	$surface->set_font_size($size);
 	$surface->show_text($string);
@@ -946,15 +952,21 @@ sub draw_text {
 
 sub get_text_dimensions {
     my($surface, $size, $string) = @_;
-    if (eval { require Pango; die "Pango NYI" }) {
-	# XXX
+    if (eval { require Pango; 1 }) {
+	my $layout = Pango::Cairo::create_layout($surface);
+	$layout->set_text($string);
+	my $fontdesc = Pango::FontDescription->from_string("DejaVu Sans condensed");
+	$fontdesc->set_absolute_size($size * (Pango->scale));
+	$layout->set_font_description($fontdesc);
+	my($w, $h) = map { $_/Pango->scale } $layout->get_size;
+	($w, $h);
     } else {
 	$string = patch_string($string);
 	utf8::upgrade($string); # workaround bug in Cairo, see https://rt.cpan.org/Ticket/Display.html?id=73177
 	$surface->select_font_face('Sans Serif', 'normal', 'normal');
 	$surface->set_font_size($size);
 	my $extents = $surface->text_extents($string);
-	($extents->{width}, $extents->{height});
+	($extents->{x_advance}, $size);
     }
 }
 
