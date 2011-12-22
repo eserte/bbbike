@@ -223,6 +223,13 @@ sub get_image_location {
 					      }x) {
 			$lat_deg *= -1 if $lat_ref =~ m{s}i;
 			$lon_deg *= -1 if $lon_ref =~ m{w}i;
+			# Hack needed for some Nokia N9 images
+			for ($lat_sec, $lon_sec) {
+			    if ($_ == 60) {
+				warn "Hack: fix obviously wrong sec=60 in <$file>...\n";
+				$_ = 59.9999;
+			    }
+			}
 		    } else {
 			warn "Cannot parse GPSPosition <$exif->{GPSPosition}>";
 			last FIND_GPS_POS;
