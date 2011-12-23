@@ -530,8 +530,8 @@ sub draw_scale {
     $im->stroke;
 
     my $font_size = 10;
-    draw_text($im, $font_size, $self->{Width}-($x1-$x0)-$x_margin-3, $y_margin+$bar_width+$font_size, "0");
-    draw_text($im, $font_size, $self->{Width}-$x_margin+8-6*length($strecke_label), $y_margin+$bar_width+$font_size, $strecke_label);
+    draw_text($im, $font_size, $self->{Width}-($x1-$x0)-$x_margin-3, $y_margin+$bar_width+4, "0", -forcevertalign => 1);
+    draw_text($im, $font_size, $self->{Width}-$x_margin+8-6*length($strecke_label), $y_margin+$bar_width+4, $strecke_label, -forcevertalign => 1);
 }
 
 sub draw_route {
@@ -930,7 +930,7 @@ sub patch_string {
 }
 
 sub draw_text {
-    my($surface, $size, $x, $y, $string) = @_;
+    my($surface, $size, $x, $y, $string, %args) = @_;
     if (eval { require Pango; 1 }) {
 	my $layout = Pango::Cairo::create_layout($surface);
 	$layout->set_text($string);
@@ -943,7 +943,16 @@ sub draw_text {
 	$string = patch_string($string);
 	utf8::upgrade($string); # workaround bug in Cairo, see https://rt.cpan.org/Ticket/Display.html?id=73177
 	my $extents = $surface->text_extents($string);
-	$surface->move_to($x, $y - $extents->{y_bearing});
+	# Subtracting y_bearing works fine for the route labels and
+	# the title string, but is not good in draw_scale, where both
+	# strings may have different y_bearing values (even if it's
+	# the same string!). In this case it's better to use the size
+	# instead, with a small negative offset.
+	if ($args{'-forcevertalign'}) {
+	    $surface->move_to($x, $y + $size - 1);
+	} else {
+	    $surface->move_to($x, $y - $extents->{y_bearing});
+	}
 	$surface->select_font_face('Sans Serif', 'normal', 'normal');
 	$surface->set_font_size($size);
 	$surface->show_text($string);
