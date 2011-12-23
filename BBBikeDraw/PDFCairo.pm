@@ -651,7 +651,7 @@ sub draw_route {
 	    }
 	    $$s = join("/", @s);
 	}
-	my $title_string = "$start " . chr(0x2190) . " $ziel";
+	my $title_string = "$start " . chr(0x2192) . " $ziel";
 
 	my $size = 20;
 	my($s_width, $s_height) = get_text_dimensions($im, $size, $title_string);
