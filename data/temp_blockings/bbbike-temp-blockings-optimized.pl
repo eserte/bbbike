@@ -2066,16 +2066,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        undef,
-       {
-         'source_id' => '105200001',
-         'until' => 1324422000,
-         'text' => 'Cottbus: L511: Straßen- und Kanalbauarbeiten Cottbus, OT Sielow , 20.06.2010 bis 20.12.2011 ',
-         'from' => 1277443049,
-         'id' => 2090,
-         'data' => 'userdel	q4::inwork 73237,-66975 73640,-67643
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2114,9 +2105,9 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        {
          'source_id' => '106200475',
-         'until' => 1325372400,
-         'text' => 'Lichterfeld-Schacksdorf: L60: Havarie, Straßenzustand Lauchhammer - Licherfelde Umleitung: Lauchhammer - Grünwalde - Staupitz - Sorno - Finsterwalde - Schacksdorf - Lichterfelde, 22.07.2010 bis 31.12.2011 ',
-         'from' => 1309719930,
+         'until' => 1341093600,
+         'text' => 'Lichterfeld-Schacksdorf: L60: Havarie, Straßenzustand Lauchhammer - Licherfelde Umleitung: Lauchhammer - Grünwalde - Staupitz - Sorno - Finsterwalde - Schacksdorf - Lichterfelde, 22.07.2010 bis 30.06.2012 ',
+         'from' => 1324669252,
          'id' => 2108,
          'data' => 'userdel	2::inwork 37809,-92300 37918,-93202 37419,-94853 37230,-95682
 ',
@@ -2377,17 +2368,7 @@ userdel	q4::inwork; 10166,12777 10132,12941
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20110712.1035.350987.html',
-         'until' => 1342389599,
-         'text' => 'Neubau der Buddestraße von Bernstorffstraße bis Brunowstraße, Sperrung der Fahrbahn, bis Mitte Juli 2012',
-         'from' => 1310504724,
-         'id' => 2250,
-         'data' => 'userdel	q4::inwork 2358,20368 2295,20358 2241,20487
-userdel	q4::inwork 2295,20358 2362,20218 2402,20126
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'source_id' => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1107/nachricht4418.html',
@@ -2439,16 +2420,7 @@ userdel	q4::inwork 2295,20358 2362,20218 2402,20126
        },
        undef,
        undef,
-       {
-         'source_id' => 'http://www.berlin.de/ba-pankow/presse/archiv/20110826.1055.356350.html',
-         'until' => 1324656000,
-         'text' => 'Kastanienallee: Fahrbahn zwischen Oderberger Straße und Schönhauser Allee/Eberswalder Straße ab Montag dem 29.8.2011 gesperrt',
-         'from' => 1314482400,
-         'id' => 2274,
-         'data' => 'userdel	q4::inwork 10881,15047 10838,14962 10723,14772
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2496,16 +2468,7 @@ userdel	3 12992,7545 13015,7440 12925,7425
        },
        undef,
        undef,
-       {
-         'source_id' => 'IM_018013',
-         'until' => 1324656000,
-         'text' => 'Motardstr. (Spandau): Baustelle, Fahrtrichtung gesperrt Richtung Rohrdamm zwischen Sternfelder Str. und Rohrdamm, 11.10.2011 08:44 Uhr bis 23.12.2011 17:00 Uhr ',
-         'from' => 1318229040,
-         'id' => 2293,
-         'data' => 'userdel	q4::inwork; 386,14162 990,14062
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2546,17 +2509,7 @@ userdel	q4::inwork 18286,11275 18059,11248
        },
        undef,
        undef,
-       {
-         'source_id' => 'IM_018211',
-         'until' => 1324655160,
-         'text' => 'Köpenicker Str. (Altglienicke): Baustelle, Straße vollständig gesperrt in beiden Richtungen zwischen Semmelweisstr. und Rudower Str., 07.11.2011 15:45 Uhr bis 23.12.2011 16:46 Uhr ',
-         'from' => 1320590700,
-         'id' => 2306,
-         'data' => 'userdel	q4::inwork 19806,1903 19771,1793
-#XXX del: userdel	q4::inwork 19771,1793 19728,1660 19679,1571
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'IM_018151',
          'until' => 1325347200,
@@ -2564,6 +2517,16 @@ userdel	q4::inwork 18286,11275 18059,11248
          'from' => 1320987600,
          'id' => 2307,
          'data' => 'userdel	q4::inwork 8635,13580 8626,13641 8619,13689
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_017746',
+         'until' => 1328025600,
+         'text' => 'Kastanienallee (Prenzlauer Berg): Bauarbeiten, Straße vollständig gesperrt in beiden Richtungen zwischen Oderberger Str. und Schönhauser Allee, bis 31.01.2012 ',
+         'from' => 1314604800,
+         'id' => 2308,
+         'data' => 'userdel	q4::inwork 10723,14772 10838,14962 10881,15047
 ',
          'type' => 'handicap'
        }

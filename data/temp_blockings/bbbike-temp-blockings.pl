@@ -18089,9 +18089,9 @@ EOF
 userdel	q4::inwork -49042,-3647 -48542,-2958 -48338,-2586
 EOF
      },
-     { from  => 1309719930, # 2011-07-03 21:05
-       until => 1325372400, # 2012-01-01 00:00
-       text  => 'Lichterfeld-Schacksdorf: L60: Havarie, Straßenzustand Lauchhammer - Licherfelde Umleitung: Lauchhammer - Grünwalde - Staupitz - Sorno - Finsterwalde - Schacksdorf - Lichterfelde, 22.07.2010 bis 31.12.2011 ',
+     { from  => 1324669252, # 2011-12-23 20:40
+       until => 1341093600, # 2012-07-01 00:00
+       text  => 'Lichterfeld-Schacksdorf: L60: Havarie, Straßenzustand Lauchhammer - Licherfelde Umleitung: Lauchhammer - Grünwalde - Staupitz - Sorno - Finsterwalde - Schacksdorf - Lichterfelde, 22.07.2010 bis 30.06.2012 ',
        type  => 'gesperrt',
        source_id => '106200475',
        data  => <<EOF,
@@ -19399,11 +19399,13 @@ userdel	q4::inwork 10599,19957 10614,19907
 EOF
      },
      { from  => 1310504724, # 2011-07-12 23:05
-       until => 1342389599, # 2012-07-15 23:59
+       until => 1324668762, # XXX 1342389599, # 2012-07-15 23:59
        text  => 'Neubau der Buddestraße von Bernstorffstraße bis Brunowstraße, Sperrung der Fahrbahn, bis Mitte Juli 2012',
        type  => 'handicap',
-       source_id => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20110712.1035.350987.html',
+       source_id => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20111220.1150.364099.html',
        data  => <<EOF,
+#: XXX Weiterbau zwischen Gorkistr. und Bernstorffstraße ab März 2012 vorgesehen
+#: next_check: 2012-03-01
 userdel	q4::inwork 2358,20368 2295,20358 2241,20487
 userdel	q4::inwork 2295,20358 2362,20218 2402,20126
 EOF
@@ -19929,6 +19931,15 @@ EOF
        source_id => 'IM_018151',
        data  => <<EOF,
 userdel	q4::inwork 8635,13580 8626,13641 8619,13689
+EOF
+     },
+     { from  => 1314604800, # 2011-08-29 10:00
+       until => 1328025600, # 2012-01-31 17:00
+       text  => 'Kastanienallee (Prenzlauer Berg): Bauarbeiten, Straße vollständig gesperrt in beiden Richtungen zwischen Oderberger Str. und Schönhauser Allee, bis 31.01.2012 ',
+       type  => 'handicap',
+       source_id => 'IM_017746',
+       data  => <<EOF,
+userdel	q4::inwork 10723,14772 10838,14962 10881,15047
 EOF
      },
     );
