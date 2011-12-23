@@ -141,6 +141,7 @@ targets:	${TARGETS}
 targets-clean:
 	-mkdir /tmp/old-data
 	mv -f ${TARGETS} /tmp/old-data/
+	-rm -f .strassen.tmp
 
 fix-permissions:
 	$(READABLE) $(TARGETS) $(NON_TARGETS) temp_blockings/bbbike-temp-blockings.pl temp_blockings/*.bbd
