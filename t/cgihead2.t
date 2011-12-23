@@ -2,7 +2,6 @@
 # -*- perl -*-
 
 #
-# $Id: cgihead2.t,v 1.27 2009/06/30 21:03:58 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -34,7 +33,7 @@ use constant MSDOS_MIME_TYPE => qr{^application/(octet-stream|x-msdos-program|x-
 {
     use POSIX qw(strftime);
     use constant TODO_ADFC_ERRORS => 1; # "2010-09-01T12:00:00" gt strftime("%FT%T", localtime) && 'Redirects on adfc server do not work';
-    use constant TODO_FREEBSD_PKG_ERRORS => "2011-10-31T12:00:00" gt strftime("%FT%T", localtime) && 'BBBike packages for FreeBSD not available because of p5-Tk problems';
+    use constant TODO_FREEBSD_PKG_ERRORS => "2012-01-01T12:00:00" gt strftime("%FT%T", localtime) && 'BBBike packages for FreeBSD not available, need more research';
 }
 
 my @var;
