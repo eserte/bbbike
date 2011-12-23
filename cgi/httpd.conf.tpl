@@ -33,7 +33,14 @@
 [%
     FOR cgi = DEVEL_CGI_SCRIPTS.split(" +");
 	SET url       = ROOT_URL _ "/cgi/" _ cgi;
-        SET targetcgi = ROOT_DIR _ "/cgi/" _ cgi.replace('2(\.en)?\.cgi', '$1.cgi');
+	SET targetcgi = ROOT_DIR _ "/cgi/" _ cgi;
+	TRY;
+	    # Probably a symlink to the ...2.cgi version exists; use this
+	    # as we can make use of a separate config file.
+	    USE File(targetcgi);
+	CATCH File;
+            SET targetcgi = targetcgi.replace('2(\.en)?\.cgi', '$1.cgi');
+	END;
 -%]
 [% ScriptAlias %] [% url %] [% targetcgi %]
 [%
