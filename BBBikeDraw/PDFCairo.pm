@@ -379,17 +379,10 @@ sub draw_map {
 	    };
 	    warn $@ if $@;
 
-  	    $p->init;
-  	    while(1) {
-  		my $s = $p->next_obj;
-  		last if $s->is_empty;
-  		my $cat = $s->category;
+	    for my $s ($self->get_street_records_in_bbox($p)) {
+  		my $cat = $s->[Strassen::CAT];
   		next if $cat =~ $BBBikeDraw::bahn_bau_rx;
-  		my($x0,$y0) = @{$s->coord_as_list(0)};
-  		# Bereichscheck (XXX ist nicht ganz korrekt wenn der Screen breiter ist als die Route)
-#  		next if (!(($x0 >= $self->{Min_x} and $x0 <= $self->{Max_x})
-#  			   and
-#  			   ($y0 >= $self->{Min_y} and $y0 <= $self->{Max_y})));
+  		my($x0,$y0) = split /,/, $s->[Strassen::COORDS][0];
 		if ($image) {
 		    my($x1, $y1) = &$transpose($x0, $y0);
 		    my($w,$h) = ($image->get_width, $image->get_height);
@@ -400,8 +393,8 @@ sub draw_map {
 		    $im->paint;
  		} else {
  		    if ($cat >= $min_ort_category) {
- 			my($x, $y) = &$transpose(@{$s->coord_as_list(0)});
- 			my $ort = $s->name;
+ 			my($x, $y) = &$transpose($x0, $y0);
+ 			my $ort = $s->[Strassen::NAME];
  			# Anhängsel löschen (z.B. "b. Berlin")
  			$ort =~ s/\|.*$//;
 			$im->set_source_rgb(@$black);
