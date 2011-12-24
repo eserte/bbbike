@@ -350,6 +350,7 @@ sub draw_map {
  		   );
     foreach my $def (['ubahn', 'ubahnhof', 'u'],
 		     ['sbahn', 'sbahnhof', 's'],
+		     ['rbahn', 'rbahnhof', 'r'],
 		     ['ort', 'orte',       'o'],
 		    ) {
 	my($lines, $points, $type) = @$def;
@@ -370,10 +371,10 @@ sub draw_map {
 	    }
 
 	    eval {
-		if ($points eq 'ubahnhof') {
-		    $image = Cairo::ImageSurface->create_from_png("$images_dir/ubahn$suffix.png");
-		} elsif ($points eq 'sbahnhof') {
-		    $image = Cairo::ImageSurface->create_from_png("$images_dir/sbahn$suffix.png");
+		if ($points =~ m{^[us]bahnhof$}) {
+		    $image = Cairo::ImageSurface->create_from_png("$images_dir/${type}bahn$suffix.png");
+		} elsif ($points eq 'rbahnhof') {
+		    $image = Cairo::ImageSurface->create_from_png("$images_dir/eisenbahn$suffix.png");
 		}
 	    };
 	    warn $@ if $@;
