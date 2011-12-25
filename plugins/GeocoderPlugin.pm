@@ -17,7 +17,6 @@ package GeocoderPlugin;
 
 # TODO:
 # * if there are multiple results, then show them all in a list or so
-# * watch from time to time if the Yahoo issues are solved, especially the utf8 problems
 
 use BBBikePlugin;
 push @ISA, 'BBBikePlugin';
@@ -180,36 +179,6 @@ sub geocoder_dialog {
 				  },
 				  'label' => 'Google (alternative implementation, needs API key)',
 				},
-		
-		'Yahoo' => { 'new' => sub {
-				 Geo::Coder::Yahoo->new(appid => 'bbbike');
-			     },
-			     'extract_loc' => sub {
-				 my $locations = shift;
-				 ($locations->[0]{longitude}, $locations->[0]{latitude});
-			     },
-			     'extract_addr' => sub {
-				 my $locations = shift;
-				 my $location = $locations->[0];
-				 $location->{address} . ", " . $location->{city} . ", " . $location->{state} . "\n" .
-				     $location->{longitude} . "," . $location->{latitude};
-			     },
-			     'fix_result' => sub {
-				 my $location = shift;
-				 if ($Yahoo::Search::XML::VERSION le '20060729.004') {
-				     # utf-8 not flagged correctly, trying to fix
-				     # See http://rt.cpan.org/Ticket/Display.html?id=31618
-				     if (eval { require Data::Rmap;
-						require Encode;
-					    }) {
-					 Data::Rmap::rmap(sub { $_ = Encode::decode("utf-8", $_) }, $location);
-				     } else {
-					 warn "Cannot repair Yahoo response: $@";
-				     }
-				 }
-			     },
-			     'label' => 'Yahoo (avoid umlauts)',
-			   },
 		'Bing' => {  'require' => sub {
 				 require Geo::Coder::Bing;
 				 Geo::Coder::Bing->VERSION(0.10); # at least 0.04 stopped working at some time

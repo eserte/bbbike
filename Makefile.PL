@@ -233,8 +233,6 @@ my @req_table =
    'Geocoding über Googlemaps (API v2)'], # alternative: Geo::Coder::GoogleMaps 0.03
   [qw/Geo::Coder::Googlev3	0	all	0	plugin/,
    'Geocoding über Googlemaps (API v3)'],
-  [qw/Geo::Coder::Yahoo	0	all	0	plugin/,
-   'Geocoding über Yahoo'],
   [qw/Geo::Coder::Bing	0.10	all	0	plugin/,
    'Geocoding über Bing'],
   [qw/Geo::Cloudmade	0	all	0	plugin/,

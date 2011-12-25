@@ -181,8 +181,6 @@ Geo::Coder::Google 0.06	- Geocoding über Googlemaps (API v2)
 
 Geo::Coder::Googlev3	- Geocoding über Googlemaps (API v3)
 
-Geo::Coder::Yahoo	- Geocoding über Yahoo
-
 Geo::Coder::Bing 0.10	- Geocoding über Bing
 
 Geo::Cloudmade	- Geocoding über Cloudmade
