@@ -221,6 +221,9 @@ sub geocoder_dialog {
 				     my $loc = shift;
 				     ($loc->centroid->long, $loc->centroid->lat);
 				 },
+				 # See
+				 # http://developers.cloudmade.com/issues/show/1007
+				 # for the umlauts issue
 				 'label' => 'Cloudmade (needs API key, avoid umlauts)',
 			       },
 		'OSM' => { 'require' => sub { require Geo::Coder::OSM },
