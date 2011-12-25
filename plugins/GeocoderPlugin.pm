@@ -111,6 +111,8 @@ sub geocoder_dialog {
 				       $location->{formatted_address} . "\n" .
 					   join(",", @{$location->{geometry}{location}}{qw(lng lat)});
 				   },
+				   'include_multi' => 1,
+				   'include_multi_master' => 1, # this one determines the address
 				  },
 		'Google_v3' => {
 				'label' => 'Google v3 (without API key, using module)',
@@ -199,6 +201,7 @@ sub geocoder_dialog {
 					 $location->{BestLocation}{Coordinates}{Latitude};
 			     },
 			     'label' => 'Bing',
+			     'include_multi' => 1,
 			   },
 		'Cloudmade' => { 'require' => sub { require Geo::Cloudmade },
 				 'new' => sub {
@@ -236,6 +239,7 @@ sub geocoder_dialog {
 			       my $loc = shift;
 			       ($loc->{lon}, $loc->{lat});
 			   },
+			   'include_multi' => 1,
 			 },
 		# Other geocoding services:
 		#
@@ -244,6 +248,27 @@ sub geocoder_dialog {
 		# for non-US addresses)
 	       );
     $apis{Google_v3}->{$_} = $apis{My_Google_v3}->{$_} for (qw(extract_loc extract_addr));
+
+    my $do_geocode = sub {
+	my($gc, $loc) = @_;
+			
+	if ($gc->{require}) {
+	    eval { $gc->{require}->() };
+	} else {
+	    my $mod = 'Geo::Coder::' . $geocoder_api;
+	    eval "require $mod";
+	}
+	if ($@) {
+	    main::status_message($@, "die");
+	}
+
+	my $geocoder = $gc->{new}->();
+	my $location = $geocoder->geocode(location => $loc);
+	$gc->{fix_result}->($location) if $gc->{fix_result};
+	require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([$location],[qw()])->Indent(1)->Useqq(1)->Dump; # XXX
+
+	$location;
+    };
 
     for my $_api (sort keys %apis) {
 	my $label = $apis{$_api}->{'label'} || $_api;
@@ -260,21 +285,7 @@ sub geocoder_dialog {
 	$bf->Button(Name => "ok",
 		    -command => sub {
 			my $gc = $apis{$geocoder_api};
-			
-			if ($gc->{require}) {
-			    eval { $gc->{require}->() };
-			} else {
-			    my $mod = 'Geo::Coder::' . $geocoder_api;
-			    eval "require $mod";
-			}
-			if ($@) {
-			    main::status_message($@, "die");
-			}
-
-			my $geocoder = $gc->{new}->();
-			my $location = $geocoder->geocode(location => $loc);
-			$gc->{fix_result}->($location) if $gc->{fix_result};
-			require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([$location],[qw()])->Indent(1)->Useqq(1)->Dump; # XXX
+			my $location = $do_geocode->($gc, $loc);
 			if ($location) {
 			    $res->delete("1.0", "end");
 			    my $loc_addr = $gc->{extract_addr}->($location);
@@ -288,12 +299,40 @@ sub geocoder_dialog {
 			}
 		    });
     $e->bind("<Return>" => sub { $okb->invoke });
+    my $multib =
+	$bf->Button(-text => 'Multi',
+		    -command => sub {
+			my @coords;
+			my $loc_addr;
+			for my $_api (sort { ($apis{$b}->{include_multi_master}||0) <=> ($apis{$a}->{include_multi_master}||0) } keys %apis) {
+			    my $gc = $apis{$_api};
+			    next if !$gc->{include_multi};
+			    my $location = eval {
+				$do_geocode->($gc, $loc);
+			    };
+			    if ($@ || !$location) {
+				warn "Could not geocode '$loc' with '$_api': $@";
+			    } else {
+				if ($gc->{include_multi_master}) {
+				    $loc_addr = $gc->{extract_addr}->($location);
+				}
+				push @coords, [[main::transpose($Karte::Polar::obj->map2standard($gc->{extract_loc}->($location)))]];
+			    }
+			}
+			if (!@coords) {
+			    main::status_message('No result', 'warn');
+			} else {
+			    $res->delete("1.0", "end");
+			    $res->insert("end", $loc_addr);
+			    main::mark_street(-coords => \@coords);
+			}
+		    })->pack(-side => 'left');
     my $cancelb =
 	$bf->Button(Name => "close",
 		    -command => sub {
 			destroy_geocoder_dialog();
 		    })->pack(-side => "left");
-    pack_buttonframe($bf, [$okb, $cancelb]);
+    pack_buttonframe($bf, [$okb, $multib, $cancelb]);
 }
 
 {
