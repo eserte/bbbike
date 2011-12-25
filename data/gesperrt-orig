@@ -291,7 +291,6 @@ Karl-Marx-Platz	1 12980,7597 13100,7626
 Karl-Marx-Platz	1 13100,7626 12991,7549
 Olympischer Platz	1 -157,11943 -505,11882 -514,11991 -272,12039 -193,12051 -110,12019
 Aristotelessteig	1 18452,9755 18435,9639 18660,9599
-Markelstr.	1 5269,6305 5020,6434
 Berlinickestr.	1 5088,5495 5016,5401
 #: by: Lea:
 Florapromenade	1 10211,17432 10321,17453 10311,17764
@@ -865,6 +864,7 @@ Mark-Twain-Str.	1 24321,14410 24349,14500
 #: note: der Abschnitt ist auﬂerdem eine Einbahnstraﬂe, offen bergauf
 A.T.U-Einfahrt: Tor, auﬂerhalb der ÷ffnungszeiten (Mo-Fr bis 20 Uhr, Sa bis 16 Uhr) gesperrt	2 8546,9468 8561,9482
 (Erfurter Str. - Wexstr.)	1 6260,8011 6261,8058
+Rubensstr.	1 6429,7876 6307,7893
 ######################################################################
 #
 # Potsdam
@@ -1350,6 +1350,7 @@ Salvador-Allende-Str.: Mittelstreifen	3nocross 23404,5325 23403,5385 23402,5483
 F¸rstenwalder Damm: Straﬂenbahntrasse	3nocross 23660,5477 23728,5446 23822,5403 23851,5389
 Tauernallee: Mittelstreifen	3nocross 10349,2188 10431,2258 10504,2321
 Mariendorfer Damm: Mittelstreifen	3nocross 10226,1515 10239,1481 10276,1383
+Berliner Str.: Straﬂenbahnhaltestelle	3nocross -11307,133 -11390,72 -11494,-4
 #
 ####################################################################
 #
@@ -1970,8 +1971,10 @@ Schloﬂplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 #: next_check: 2012-08-01
 Boyenweg - Uferweg: wegen Bauarbeiten gesperrt	2:inwork 7938,14426 7886,14518 7787,14473
 # 
-#: last_checked: 2011-02-26
+#: last_checked: 2011-12-25
 #: next_check: 2012-01-01
+#: XXX evenuell bleibt dieser Teil dauerhaft gesperrt, weil hier ein Einkaufszentrum entsteht?
+#: XXX auch die Ampel an der Kreuzung pr¸fen
 Treitschkestr.: Bauarbeiten am Kaufhaus, bis 2012	2:inwork 5219,6215 5125,6262 4971,6345
 # 
 #: last_checked: 2011-07-18 (Daniel Be.)

@@ -27,7 +27,7 @@ Saargemünder Straße	?::projected 2027,4792 1884,4811 1747,4829 1479,4853
 #XXX del --- #: by: ^^^
 #
 #: by: MoPo 2009-08-01, soll 2009 realisiert werden vvv
-#: last_checked: 2011-12-17
+#: last_checked: 2011-12-25
 #: next_check: 2012-02-15
 Grunewaldstr. (Steglitz)	?::projected 4861,5581 4671,5697 4520,5793
 #XXX del --- Falkenberger Chaussee im Bereich Bhf. Hohenschönhausen	?::projected 17400,17790 17703,17990 17843,18078
@@ -129,6 +129,11 @@ Fahrradstraße in der Lauenburger Str.	?::projected 5870,4992 5905,5088 5927,5182
 #
 #: section ignorieren vvv
 #: section Straßen in Bau und Planung vvv
+# 
+#: XXX_osm: fehlt bei osm komplett
+#: last_checked: 2011-12-25 (keine Bautätigkeit feststellbar)
+#: next_check: 2012-06-01
+Fritz-Rumpf-Str. (Potsdam): Qualität nach Fertigstellung?	?::projected -11307,133 -11388,270
 # 
 #: by: http://www.berlin.de/ba-spandau/presse/archiv/20111117.1435.362688.html
 #: next_check: 2012-06-01
@@ -375,7 +380,8 @@ Röddelinseeweg: Qualität?	? -1783,16533 -1704,16518
 Wolzenseeweg: Qualität?	? -1798,16465 -1715,16449
 #: note ^^^
 # 
-#: next_check: 2011-09-30
+#: last_checked: 2011-12-25 (südöstlicher Abschnitt)
+#: next_check: 2012-03-01
 #: by: http://www.potsdam.de/cms/beitrag/10061626/966975/
 Mangerstr.: Bauarbeiten bis September 2011, danach asphaltiert	?::inwork -11669,-138 -11751,-58 -11831,-70 -11903,-71 -12000,-156 -12064,-284
 # 
@@ -2152,8 +2158,10 @@ Stegeweg (Reinickendorf): Qualität?	? 6869,18721 6879,18737 6910,18861 6960,1904
 Rosentreterpromenade - Ziekowstr.: Qualität? Ist dieser Weg als Radroute 1 ausgeschildert?	? 4159,21170 4060,21147 3649,21102 3456,21071 2911,20953 2571,20886
 Waldpark Steinberg - Waidmannsluster Damm/Dianastr.: Qualität?	? 3443,21908 3532,21894 3634,21936 3726,21838
 Gertrudstr. (Hermsdorf): Qualität?	? 4566,24389 4565,24327 4614,24233 4737,24064
-#XXX del: Antwort ist ja: Ahornstr. (Zehlendorf): Kann die Potsdamer Str. in Höhe Ahornstr. überquert werden?	? 292,2905 255,3085
-Werderstr. (Zehlendorf): Qualität (Laut OpenStreetMap Kopfsteinpflaster)? Gibt es eine Durchfahrtmöglichkeit zur Potsdamer Str., und wenn ja, kann die Potsdamer Str. dort auch überquert werden?	? -431,3225 -309,3016
+#: XXX laut osm Kopfsteinpflaster
+Werderstr. (Zehlendorf): Qualität?	? -431,3225 -309,3016
+#: XXX wahrscheinlich Gehwegplatten
+Werderstr. - Potsdamer Str.: Qualität? Kann die Potsdamer Str. überquert werden?	? -309,3016 -267,2945
 Im Kinderland: Qualität?	? -458,4779 -547,4827
 Reifträgerweg: Qualität?	? -2367,3006 -2529,3220 -2638,3281 -2763,3359
 #: by: Prenzlauer Zeitung, 2009-03-19
@@ -2337,9 +2345,9 @@ Walldürner Weg: Qualität?	? -3376,17149 -3353,17274 -3292,17361 -3186,17415 -309
 Breubergweg: Qualität? Können Radfahrer direkt zum Michelstadter Weg fahren?	? -3353,17274 -3206,17263
 Reußstr.: Qualität?	? -3023,16925 -3129,16931 -3238,16948
 Seeburg - Heerstr.: Qualität? Gibt es hier Wegweiser oder Straßennamen?	? -9467,12248 -9210,13338
-#: XXX_osm: fehlt bei osm komplett
-Fritz-Rumpf-Str. (Potsdam): Ist die Straße bereits fertiggestellt? Qualität?	? -11307,133 -11388,270
-Leonardo-da-Vinci-Str. (Potsdam): Ist die Straße bereits fertiggestellt? Qualität?	? -11390,72 -11609,400
+#: XXX Privatstraße, Durchfahrt verboten
+#: XXX südicher Abschnitt ist asphaltiert
+Leonardo-da-Vinci-Str. (Potsdam): Qualität des nördlichen Abschnitts?	? -11390,72 -11609,400
 Im Wustrocken: Qualität?	? 27081,-18824 27020,-18866 26961,-18891 26906,-18961 26825,-19031
 #: XXX als B1 kennzeichnen!
 Ortsumgehung Küstrin-Kietz: für Radfahrer befahrbar? Qualität?	? 90278,18738 90572,19032 91116,19713 91940,20028 92606,20056 93050,20293 93286,20636 93405,20640
@@ -2979,8 +2987,7 @@ Am Springbruch (Potsdam): Qualität?	? -10641,-5814 -10721,-5678 -10659,-5648
 Am Kirschgarten: bereits fertiggestellt? Qualität?	? 11724,21156 11831,21104 11937,21043 11944,21220 11876,21218 11831,21104
 #: XXX fehlt in Berlin.coords.data
 Am Spandauer Wasserturm: Qualität?	? -4835,14223 -4893,14287
-#: XXX anonymous meint: Asphalt, Q0, aber keine Angaben zu Sperrungen für Autos
-Wiesenschlag: Qualität? Sind Teile der Straße für Autos gesperrt?	? -2074,2258 -2036,2150 -1910,1829
+Wiesenschlag: Sind Teile der Straße für Autos gesperrt? Wie ist die Qualität im südlichen Abschnitt?	? -2036,2150 -1910,1829
 #XXX del --- #: XXX existiert in osm, aber nirgendwo sonst; fehlt in Berlin.coords.data --- #: XXX im Dunkeln kein Straßenschild gesehen, nochmal prüfen --- nochmal geprüft, nur eine Erschließungsstraße ohne Straßenschild --- Straße 433: Stimmt der Straßenname? Qualität?	? 9839,814 9956,852 10034,991
 #: XXX fehlt in Berlin.coords.data
 Rue René Laennec: Qualität?	? 3684,16788 3608,16765
@@ -3192,6 +3199,7 @@ Radwegbau in Golmer Chaussee und Wublitzstr.	?::inwork -17646,1636 -18091,1642 -
 #: by: http://www.potsdam.de/cms/dokumente/10064864_974248/f592cf6c/100521AblPdmStadt06_10.pdf
 Radweg zwischen Wublitzstr. und Laubenweg: Ist der Radweg bereits fertig? Qualität?	? -19721,2368 -19721,2424 -19891,2447
 #: by: http://www.potsdam.de/cms/beitrag/10064125/966975/
+#: last_check: 2011-12-25 (nichts zu sehen davon)
 Alleestr./Weinmeinsterstr.: existiert hier eine Ampel?	? -12557,11
 #: by: http://www.potsdam.de/cms/beitrag/10068810/966975/
 Radweg in der Bergstraße: wo genau?	? -17968,7253 -18232,6565
