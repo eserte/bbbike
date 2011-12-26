@@ -74,7 +74,7 @@ sub AUTOLOAD {
 # Arguments:
 #   NoRead
 #   PreserveLineInfo
-#   PreserveComments
+#   PreserveComments (currently broken, do not use)
 #   UseLocalDirectives
 #   CustomPush (only for MapInfo)
 #   Strict
