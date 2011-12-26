@@ -52,6 +52,7 @@ my $marker_point;
 my $q;
 my $debug;
 my $do_routelist;
+my $compress;
 
 if (!GetOptions("w=i" => \$w,
 		"h=i" => \$h,
@@ -80,6 +81,7 @@ if (!GetOptions("w=i" => \$w,
 		"routefile=s" => \$route_file,
 		"markerpoint=s" => \$marker_point,
 		"routelist!" => \$do_routelist,
+		"compress!" => \$compress,
 		"q|quiet!" => \$q,
 		"debug" => \$debug,
 	       )) {
@@ -190,6 +192,9 @@ if (defined $route_file) {
 }
 if (defined $marker_point) {
     push @extra_args, MarkerPoint => $marker_point;
+}
+if ($compress) {
+    push @extra_args, Compress => 1;
 }
 
 my $draw = new BBBikeDraw
@@ -318,6 +323,8 @@ usage: $0 [options]
 -fontsizescale float       Scale default font sizes for place labels.
 -bg|-background color      Specify background color (as GD colors).
                            Use "transparent" for a transparent background.
+-compress		   Turn compression on. May help in reducing size for pdf
+			   output.
 -q			   Be quiet.
 -debug                     Turn debugging on.
 EOF
