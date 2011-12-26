@@ -1,10 +1,9 @@
 # -*- perl -*-
 
 #
-# $Id: LuiseBerlin.pm,v 1.30 2008/12/31 14:44:36 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2005,2008 Slaven Rezic. All rights reserved.
+# Copyright (C) 2005,2008,2011 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -18,10 +17,13 @@ package LuiseBerlin;
 # Note that the Google API does not work anymore. I would like the
 # Yahoo API, but it does not really work. See
 # http://rt.cpan.org/Ticket/Display.html?id=35213
+#
+# Since 2011-04 the old yahoo websearch api does not work anymore. See
+# http://developer.yahoo.com/search/web/V1/webSearch.html
 
 use strict;
 use vars qw($VERSION @ISA);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.30 $ =~ /(\d+)\.(\d+)/);
+$VERSION = 1.31;
 
 BEGIN {
     if (!caller(2)) {
@@ -253,6 +255,8 @@ sub construct_queries {
     @queries;
 }
 
+# Since 2011-04 the old yahoo websearch api does not work anymore. See
+# http://developer.yahoo.com/search/web/V1/webSearch.html
 sub do_yahoo_search {
     my(%args) = @_;
 
@@ -425,6 +429,8 @@ sub enter_dialog {
 }
 
 return 1 if caller;
+
+die "The command line interface does not work anymore, as Google and Yahoo search APIs do not work anymore";
 
 sub batch {
     my($file) = @_;
