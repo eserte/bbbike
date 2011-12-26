@@ -4958,7 +4958,10 @@ EOF
 				      };
 
 
-	    print " target=\"BBBikeGrafik\" action=\"$bbbike_script\"";
+	    if (!$bi->{'no_new_windows'}) {
+		print " target=\"BBBikeGrafik\"";
+	    }
+	    print " action=\"$bbbike_script\"";
 	    # show_map scheint bei OS/2 nicht zu funktionieren
 	    # ... und bei weiteren Browsern (MSIE), deshalb erst einmal
 	    # pauschal herausgenommen.
@@ -6705,7 +6708,9 @@ sub link_to_met {
 
 sub window_open {
     my($href, $winname, $settings) = @_;
-    if ($bi->{'can_javascript'} && !$bi->{'window_open_buggy'}) {
+    if ($bi->{'no_new_windows'}) {
+	"<a href=\"$href\">";
+    } elsif ($bi->{'can_javascript'} && !$bi->{'window_open_buggy'}) {
 	"<a href=\"$href\" target=\"$winname\" onclick='window.open(\"$href\", \"$winname\"" .
 	  (defined $settings ? ", \"$settings\"" : "") .
 	    "); return false;'>";
