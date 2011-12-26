@@ -270,17 +270,16 @@ sub draw_map {
 	my $images_dir = $self->get_images_dir;
 	my $suf = ($self->{Xk} >= 0.05 ? '' : '2');
 
-	my($kl_ampel);
-	my($kl_andreas);
-	my($kl_zugbruecke);
+	my($kl_ampel, $kl_andreas, $kl_zugbruecke, $kl_ampelf);
 
 	eval {
 	    my $file;
 	    $kl_ampel      = Cairo::ImageSurface->create_from_png("$images_dir/ampel_klein$suf.png");
 	    $kl_andreas    = Cairo::ImageSurface->create_from_png("$images_dir/andreaskr_klein$suf.png");
-	    $kl_zugbruecke = Cairo::ImageSurface->create_from_png("$images_dir/zugbruecke_klein.png");
+	    $kl_zugbruecke = Cairo::ImageSurface->create_from_png("$images_dir/" . ($self->{Xk} >= 0.05 ? "zugbruecke" : "zugbruecke_klein") . ".png");
+	    $kl_ampelf     = Cairo::ImageSurface->create_from_png("$images_dir/ampelf_klein$suf.png");
 	}; warn $@ if $@;
-	if ($kl_andreas && $kl_ampel) {
+	if ($kl_andreas || $kl_ampel || $kl_zugbruecke || $kl_ampelf) {
 	    $lsa->init;
 	    while(1) {
 		my $s = $lsa->next_obj;
@@ -294,7 +293,9 @@ sub draw_map {
 		my $image;
 		if ($cat =~ m{^(B|B0)$}) {
 		    $image = $kl_andreas;
-		} elsif ($cat =~ m{^(X|F)$}) {
+		} elsif ($cat eq 'F' && $kl_ampelf) {
+		    $image = $kl_ampelf;
+		} elsif ($cat =~ m{^(X|F)$}) { # F: only fallback
 		    $image = $kl_ampel;
 		} elsif ($cat =~ m{^Zbr$}) {
 		    $image = $kl_zugbruecke;
