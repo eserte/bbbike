@@ -332,7 +332,16 @@ sub draw_map {
  		    4 => 12,
  		    5 => 14,
  		    6 => 16,
+		    bhf => 7,
  		   );
+    my %seen_bahnhof;
+    my $strip_bhf = sub {
+	my $bhf = shift;
+	require Strassen::Strasse;
+	$bhf =~ s/\s+\(.*\)$//; # strip text in parenthesis
+	$bhf = Strasse::short($bhf, 1);
+	$bhf;
+    };
     foreach my $def (['ubahn', 'ubahnhof', 'u'],
 		     ['sbahn', 'sbahnhof', 's'],
 		     ['rbahn', 'rbahnhof', 'r'],
@@ -340,6 +349,14 @@ sub draw_map {
 		     ['orte_city', 'orte_city', 'oc'],
 		    ) {
 	my($lines, $points, $type) = @$def;
+	# check if it is advisable to draw stations...
+	next if ($lines =~ /bahn$/ && $self->{Xk} < 0.004);
+	my $do_bahnhof = grep { $_ eq $lines."name" } @{$self->{Draw}};
+	if ($self->{Xk} < 0.06) {
+	    $do_bahnhof = 0;
+	}
+	# Skip drawing if !ubahnhof, !sbahnhof or !rbahnhof is specified
+	next if $str_draw{"!" . $points};
   	if ($str_draw{$lines}) {
   	    my $p = ($lines eq 'ort'
   		     ? $self->_get_orte
@@ -377,6 +394,19 @@ sub draw_map {
 		    next if $x1 < 0 || $y1 < 0 || $x1 > $self->{Width} || $y1 > $self->{Height};
 		    $im->set_source_surface($image, $x1, $y1);
 		    $im->paint;
+		    if (0 && $do_bahnhof) { # XXX station label drawing not yet enabled, needs more work...
+			my $name = $strip_bhf->($s->[Strassen::NAME]);
+			if (!$seen_bahnhof{$name}) {
+			    my $pad_top  = $h/2; 
+			    my $pad_left = $w+1;
+			    $im->set_source_rgb(@$darkblue);
+			    draw_text($im, $ort_font{'bhf'},
+				      $x1+$pad_left, $y1+$pad_top,
+				      $name,
+				     );
+			    $seen_bahnhof{$name}++;
+			}
+		    }
  		} else {
  		    if ($cat >= $min_ort_category) {
  			my($x, $y) = &$transpose($x0, $y0);
