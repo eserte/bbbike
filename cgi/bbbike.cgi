@@ -97,7 +97,7 @@ use vars qw($VERSION $VERBOSE $WAP_URL
 	    $bbbike_temp_blockings_file $bbbike_temp_blockings_optimized_file
 	    @temp_blocking $temp_blocking_epoch
 	    $use_reproxy
-	    $use_cgi_compress_gzip $use_bbbikedraw_compress $max_matches
+	    $use_cgi_compress_gzip $use_bbbikedraw_pdf_compress $max_matches
 	    $use_winter_optimization $winter_hardness
 	    $with_lang_switch
 	    $newstreetform_encoding
@@ -5538,15 +5538,15 @@ sub draw_route {
 	if (defined $bbbikedraw_pdf_module && !$bbbikedraw_args{Module}) {
 	    $bbbikedraw_args{Module} = $bbbikedraw_pdf_module;
 	}
+	if ($use_bbbikedraw_pdf_compress && !defined $bbbikedraw_args{Module}) {
+	    # assume that BBBikeDraw::PDF is used
+	    $bbbikedraw_args{Compress} = 1;
+	}
     } else {
 	# for non-pdf
 	if (defined $use_module && !$bbbikedraw_args{Module}) {
 	    $bbbikedraw_args{Module} = $use_module;
 	}
-    }
-
-    if ($use_bbbikedraw_compress) {
-	$bbbikedraw_args{Compress} = 1;
     }
 
     eval {
