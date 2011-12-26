@@ -22,6 +22,8 @@ use Strassen;
 # sparen:
 use Carp qw(confess);
 
+use BBBikeDraw::PDFUtil ();
+
 #XXX experiment:
 #sub PDF::Create::cr { shift->add("\n") }
 
@@ -38,27 +40,7 @@ $VERSION = sprintf("%d.%02d", q$Revision: 2.55 $ =~ /(\d+)\.(\d+)/);
 sub init {
     my $self = shift;
 
-    if ($self->{Compress}) {
-	require BBBikeUtil;
-	if (BBBikeUtil::is_in_path("pdftk")) {
-	    $self->{_CompressTool} = "pdftk";
-	} elsif (0 && eval { require PDF::API2; require File::Temp; 1 }) {# XXX does not work, see below XXX
-	    $self->{_CompressTool} = "PDF::API2";
-	} elsif (eval { require CAM::PDF; require File::Temp; 1 }) {
-	    $self->{_CompressTool} = "CAM::PDF";
-	} else {
-	    warn "No pdftk in PATH available, don't compress...";
-	    undef $self->{Compress};
-	}
-	if ($self->{_CompressTool}) {
-	    require File::Temp;
-	    my($fh,$filename) = File::Temp::tempfile(SUFFIX => ".pdf", UNLINK => 1);
-	    die "Cannot create temporary file: $!" if !$filename;
-	    $self->{_CompressOriginalFilename} = $self->{Filename};
-	    $self->{_CompressTemporaryFilename} = $filename;
-	    $self->{Filename} = $filename;
-	}
-    }
+    BBBikeDraw::PDFUtil::init_compress($self);
 
     my $pdf = PDF::Create->new
 	((defined $self->{Filename} ?
@@ -867,79 +849,7 @@ sub flush {
     }
     $self->{PDF}->close;
 
-    if ($self->{Compress}) {
-	my $compress_message = sub {
-	    my($before, $after) = @_;
-	    $before = ref $before ? $$before : -s $before;
-	    $after  = ref $after  ? $$after  : -s $after;
-	    "Compressed " . (100-int(100*($after)/($before))) .
-		"% (original " . ($before) . " bytes, compressed " . ($after) . " bytes)...\n";
-	};
-
-	if ($self->{_CompressTool} eq 'pdftk') {
-	    if (defined $self->{_CompressOriginalFilename}) {
-		system("pdftk", $self->{Filename}, "output", $self->{_CompressOriginalFilename}, "compress");
-		warn eval { $compress_message->($self->{Filename}, $self->{_CompressOriginalFilename}) }
-		    if $VERBOSE;
-		unlink $self->{_CompressTemporaryFilename};
-	    } else {
-		require File::Temp;
-		my($fh,$filename) = File::Temp::tempfile(SUFFIX => ".pdf", UNLINK => 1);
-		system("pdftk", $self->{Filename}, "output", $filename, "compress");
-		seek $fh, 0, 0;
-		local $/ = \4096;
-		my $ofh = $self->{Fh};
-		while(<$fh>) {
-		    print $ofh $_;
-		}
-		close $fh;
-		warn eval { $compress_message->($self->{Filename}, $filename) }
-		    if $VERBOSE;
-		unlink $filename;
-		unlink $self->{_CompressTemporaryFilename};
-	    }
-	} elsif ($self->{_CompressTool} eq 'PDF::API2') {
-	    # XXX Does not work!!!
-	    my $pdf = PDF::API2->open($self->{Filename});
- 	    my $page = $pdf->openpage(1)
- 		or die "Cannot open page 1";
-	    $page->fixcontents;
-	    # XXX Especially this part does not work
- 	    warn("compressing"),$_->compressFlate for $page->{Contents}->elementsof;
-	    if (defined $self->{_CompressOriginalFilename}) {
-		$pdf->saveas($self->{_CompressOriginalFilename});
-		warn eval { $compress_message->($self->{Filename}, $self->{_CompressOriginalFilename}) }
-		    if $VERBOSE;
-	    } else {
-		my $ofh = $self->{Fh};
-		my $pdf_contents = $pdf->stringify;
-		print $ofh $pdf_contents;
-		warn eval { $compress_message->($self->{Filename}, \length $pdf_contents) }
-		    if $VERBOSE;
-	    }
-	    unlink $self->{_CompressTemporaryFilename};
-	} elsif ($self->{_CompressTool} eq 'CAM::PDF') {
-	    my $pdf = CAM::PDF->new($self->{Filename});
-	    # XXX It's purely coincidence that the map drawing is objnum=3
-	    # XXX But how to get it reliably?
-	    $pdf->encodeObject(3, 'FlateDecode');
-	    $pdf->clean;
-	    if (defined $self->{_CompressOriginalFilename}) {
-		$pdf->output($self->{_CompressOriginalFilename});
-		warn eval { $compress_message->($self->{Filename}, $self->{_CompressOriginalFilename}) }
-		    if $VERBOSE;
-	    } else {
-		my $ofh = $self->{Fh};
-		my $pdf_contents = $pdf->toPDF;
-		print $ofh $pdf_contents;
-		warn eval { $compress_message->($self->{Filename}, \length $pdf_contents) }
-		    if $VERBOSE;
-	    }
-	    unlink $self->{_CompressTemporaryFilename};
-	} else {
-	    die "Unhandled compression tool <$self->{_CompressTool}>";
-	}
-    }
+    BBBikeDraw::PDFUtil::flush_compress($self, -v => $VERBOSE);
 }
 
 # use Return => "string" in the constructor for this method
