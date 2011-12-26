@@ -5101,7 +5101,7 @@ EOF
 #  	    }
 	    print "</table>\n";
 	    print qq{<div class="graphfootnote">};
-	    printf M(<<EOF), 15, 50, ($use_bbbikedraw_compress ? (100, 500) : (100, 3000));
+	    printf M(<<EOF), 15, 200, 50, 3000;
 Die Dateigr&ouml;&szlig;e der Grafik beträgt je nach
 Bildgr&ouml;&szlig;e, Bildformat und Detailreichtum %s bis %s kB. PDFs sind %s bis %s kB groß.
 EOF
