@@ -306,6 +306,10 @@ sub set_info {
 	$self->{'javascript_incomplete'} =
 	  ($q->user_agent =~ m|^Konqueror/1\.[01]|i);
     }
+    if ($q->user_agent =~ m|^Mozilla/.* Kindle/3|) { # does not support multiple windows at all
+	$self->{'window_open_buggy'} = 1;
+	$self->{'no_new_windows'} = 1; # disable totally, otherwise links do not open at all
+    }
     $self->{'can_png'} = ($q->user_agent =~ m|(Mozilla/[4-9])|i ? 1 : 0);
     # accept("image/png") heiﬂt leider nicht, dass PNG auch Inline dargestellt
     # wird... und Netscape/3 macht es eh' falsch
