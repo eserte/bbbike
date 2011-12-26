@@ -568,25 +568,26 @@ sub draw_map {
 	$bhf = Strasse::short($bhf, 1);
 	$bhf;
     };
-    foreach my $points (['ubahn', 'ubahnhof', 'u'],
-			['sbahn', 'sbahnhof', 's'],
-			['rbahn', 'rbahnhof', 'r'],
-			['ort', 'orte',       'o'],
-			['orte_city', 'orte_city', 'oc'],
-		       ) {
+    foreach my $def (['ubahn', 'ubahnhof', 'u'],
+		     ['sbahn', 'sbahnhof', 's'],
+		     ['rbahn', 'rbahnhof', 'r'],
+		     ['ort', 'orte',       'o'],
+		     ['orte_city', 'orte_city', 'oc'],
+		    ) {
+	my($lines, $points, $type) = @$def;
 	# check if it is advisable to draw stations...
-	next if ($points->[0] =~ /bahn$/ && $self->{Xk} < 0.004);
-	my $do_bahnhof = grep { $_ eq $points->[0]."name" } @{$self->{Draw}};
+	next if ($lines =~ /bahn$/ && $self->{Xk} < 0.004);
+	my $do_bahnhof = grep { $_ eq $lines."name" } @{$self->{Draw}};
 	if ($self->{Xk} < 0.06) {
 	    $do_bahnhof = 0;
 	}
 	# Skip drawing if !ubahnhof, !sbahnhof or !rbahnhof is specified
-	next if $str_draw{"!" . $points->[1]};
+	next if $str_draw{"!" . $points};
 
-	if ($str_draw{$points->[0]}) {
+	if ($str_draw{$lines}) {
 
 	    my $brush;
-	    if ($points->[2] =~ /^[sr]$/) {
+	    if ($type =~ /^[sr]$/) {
 		$brush = $self->{GD_Image}->new($xw_s,$yw_s);
 		$brush->transparent($brush->colorAllocate(255,255,255));
 		my $col = $brush->colorAllocate($im->rgb($color{'SA'}));
@@ -595,13 +596,12 @@ sub draw_map {
 		$im->setBrush($brush);
 	    }
 
-	    my $p = ($points->[0] eq 'ort'
+	    my $p = ($lines eq 'ort'
 		     ? $self->_get_orte
-		     : new Strassen $points->[1]);
-	    my $type = $points->[2];
+		     : new Strassen $points);
 
 	    my($image, $image_w, $image_h);
-	    if ($points->[1] =~ /^([us])bahnhof$/ && $self->{Xk} > 0.01) {
+	    if ($points =~ /^([us])bahnhof$/ && $self->{Xk} > 0.01) {
 		my $type = $1;
 		my $basename = "${type}bahn" . ($self->{Xk} > 0.12 ? "" :
 						$self->{Xk} > 0.07 ? "_klein" : "_mini");
