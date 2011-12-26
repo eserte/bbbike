@@ -337,6 +337,7 @@ sub draw_map {
 		     ['sbahn', 'sbahnhof', 's'],
 		     ['rbahn', 'rbahnhof', 'r'],
 		     ['ort', 'orte',       'o'],
+		     ['orte_city', 'orte_city', 'oc'],
 		    ) {
 	my($lines, $points, $type) = @$def;
   	if ($str_draw{$lines}) {
@@ -382,12 +383,20 @@ sub draw_map {
  			my $ort = $s->[Strassen::NAME];
  			# Anhängsel löschen (z.B. "b. Berlin")
  			$ort =~ s/\|.*$//;
-			$im->set_source_rgb(@$black);
-			$im->move_to($x, $y);
- 			$im->arc($x, $y, 1, 0, 2*pi);#XXX check!
-			$im->fill;
-			$im->set_source_rgb(@$darkblue);
-			draw_text($im, $ort_font{$cat} || 6, $x+4, $y, $ort);
+			my $size = $ort_font{$cat} || 6;
+			if ($type eq 'oc') {
+			    # orte_city is plotted centered, without a dot
+			    my($s_width, undef) = get_text_dimensions($im, $size, $ort);
+			    $im->set_source_rgb(@$darkblue);
+			    draw_text($im, $size, $x-$s_width/2, $y, $ort);
+			} else {
+			    $im->set_source_rgb(@$black);
+			    $im->move_to($x, $y);
+			    $im->arc($x, $y, 1, 0, 2*pi);#XXX check!
+			    $im->fill;
+			    $im->set_source_rgb(@$darkblue);
+			    draw_text($im, $size, $x+4, $y, $ort);
+			}
  		    }
  		}
   	    }
