@@ -268,7 +268,9 @@ EOF
 		system("diff", "-u", $orig_file, $outfilename);
 		is($?, 0, "Roundtrip with $orig_file ok (PreserveLineInfo=$preserve_line_info, PreserveComments=$preserve_comments)");
 	    } else {
-		skip("No orig file", $doit_tests);
+	    SKIP: {
+		    skip("No orig file for $file", 1);
+		}
 	    }
 	}
     }
