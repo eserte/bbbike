@@ -3865,12 +3865,6 @@ nicht mit acroread). Wenn Platz ist, könnten auch die Bahnhöfe mit
 Labels versehen werden. Wenn ich rotierte Fonts zeichnen kann, dann
 auch wichtige Straßen.
 
-=item * (H1)
-
-Migrate to PDF::API2 (beginnings in BBBikeDraw::PDF2, Route::PDF2
-should also be created) or another pdf package, which is supported (in
-opposite to PDF::Create).
-
 =item * (M4)
 
 Komprimierung von PDFs. Ich habe die PDF::API2-verwendende Funktion in

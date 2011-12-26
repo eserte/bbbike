@@ -45,7 +45,7 @@ BEGIN {
 
     @modules = qw(GD/png GD/gif GD/jpeg
 		  GD::SVG SVG
-		  PDF PDF2 PDFCairo
+		  PDF PDFCairo
 		  Imager/png Imager/jpeg
 		  MapServer MapServer;noroute
 		  ImageMagick/png ImageMagick/jpeg
@@ -214,9 +214,6 @@ plan tests => scalar @modules * $tests_per_module;
 
 for my $module (@modules) {
  SKIP: {
-	skip("PDF2 is not ready yet", $tests_per_module)
-	    if $module eq 'PDF2';
-
 	eval {
 	    draw_map($module);
 	};
@@ -259,7 +256,7 @@ sub draw_map {
 	$imagetype = $2;
     } elsif ($module eq 'SVG') {
 	$imagetype = "svg";
-    } elsif ($module =~ /^(?:PDF|PDF2|PDFCairo)$/) {
+    } elsif ($module =~ /^(?:PDF|PDFCairo)$/) {
 	$imagetype = "pdf";
     } elsif ($module eq 'BerlinerStadtplan') {
 	$imagetype = "http.html";
