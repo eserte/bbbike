@@ -131,11 +131,14 @@ sub make_long_streets {
 	"$r->[Strassen::NAME]\t$r->[Strassen::CAT]\t" . $r->[Strassen::COORDS][$inx];
     };
 
+    my $LOCALDIRECTIVES_INX = Strassen::LAST + 1;
+
     $self->init;
     my $count = 0;
     while (1) {
 	my $r = $self->next;
 	last if !@{ $r->[Strassen::COORDS] };
+	$r->[$LOCALDIRECTIVES_INX] = $self->get_directives;
 	if ($ignorecat{$r->[Strassen::CAT]}) {
 	    CORE::push(@strdata, $r);
 	    next;
@@ -284,7 +287,7 @@ sub make_long_streets {
 		$coords[0] ne $coords[-1]) {
 		CORE::push(@coords, $coords[0]);
 	    }
-	    $out_str->push([$r->[Strassen::NAME], \@coords, $r->[Strassen::CAT]]);
+	    $out_str->push_ext([ $r->[Strassen::NAME], \@coords, $r->[Strassen::CAT] ], $r->[$LOCALDIRECTIVES_INX]);
 	}
     }
 

@@ -74,7 +74,7 @@ sub make_long_streets {
 	$strfile = $tmpfile;
     }
 
-    my $s = Strassen->new($strfile);
+    my $s = Strassen->new($strfile, UseLocalDirectives => 1);
     my $out = $s->make_long_streets;
     $out->set_global_directives($s->get_global_directives);
     $out->write("-");
