@@ -424,7 +424,8 @@ Mauerweg: Fuﬂg‰nger	q1 12984,1011 12557,799 12246,706 11922,586 11794,550 11698,
 Mauerweg: Fuﬂg‰nger	q1 4406,-910 4038,-362 4046,-299 4034,-255 3982,-181 3941,-127 3908,-117 3842,-6 3788,26 3767,66 3689,182 3607,283 3417,524
 Bayernring: enge Straﬂe	q1 8371,8543 8455,8567 8616,8605
 Bulgarische Str.: kein Radweg, Gehweg benutzen	q2; 15591,8848 15378,8668 15166,8489
-Hedwigskirchgasse: Bordsteine, Fuﬂg‰nger	q2 9743,12239 9756,12139
+Hedwigskirchgasse: Fuﬂg‰nger	q1 9743,12239 9747,12205
+Hedwigskirchgasse: Bordsteine, Fuﬂg‰nger	q2 9747,12205 9756,12139
 Zufahrt Franz-Mehring-Platz: Bordstein	q1 12740,12128 12699,12041
 Am Flutgraben: Fuﬂg‰nger, sechs Bodenschwellen	q3 13535,10184 13371,9974
 Am Flutgraben: Fuﬂg‰nger	q1 13371,9974 13333,9929
@@ -1658,6 +1659,7 @@ Birkenstr. (Kˆpenick): enge Straﬂe	q1 24166,4568 24068,4602 23980,4633 23934,466
 S-Bahnunterf¸hrung: Kehre, einige Fuﬂg‰nger	q1 4250,763 4225,753 4311,746
 Minorkaweg: enge Straﬂe	q0 15831,484 15925,541 16008,628
 Am Finkenherd: enge Straﬂe	q0 -7004,15434 -6977,15706 -6932,16048
+Stadtg‰rten: enge Straﬂe	q1 11585,22082 11568,22056 11544,21897 11575,21888 11566,21829 11534,21831 11518,21727 11589,21713
 Dennewitzplatz: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 7906,10098 7866,9918
 Eichborndamm: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 4240,19019 4232,18981
 Richterstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 22092,999 22120,886 22075,779 22007,711
@@ -1733,7 +1735,7 @@ Alt-Tegel: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 1668,20
 Am Treptower Park: entgegen der Richtung auf dem Parkstreifen: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q1::igndisp; 14739,8919 14614,9052 14563,9106 14529,9141 14443,9233 14382,9299 14242,9448 14179,9515 14089,9610
 May-Ayim-Ufer: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q1::igndisp; 13206,10651 13077,10747
 Atzpodienstr. (Umgehung auf Gehweg mˆglich): gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 16485,12384 16509,12518 16564,12513
-Behrenstr./Bebelplatz: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 9801,12245 9743,12239 9700,12234 9631,12227
+Behrenstr./Bebelplatz: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 9801,12245 9743,12239 9708,12235 9674,12231 9631,12227
 Halenseestr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q2::igndisp; 2297,9827 2166,10020 2121,10089 1988,10328 1951,10435
 Zeltinger Platz: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 2404,25187 2355,25252 2395,25273 2446,25265 2490,25211 2486,25156 2451,25123 2404,25187
 Ludolfinger Platz: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 2277,25033 2245,25016 2205,25042 2192,25083 2216,25117 2277,25094 2285,25059 2277,25033

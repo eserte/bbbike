@@ -5881,7 +5881,9 @@ Straße 24: unbefestigte Straße	Q2 14538,20819 14484,20832
 Straße 46 (Blankenburg): Asphalt	Q0 14482,20547 14685,20504
 Mittelstr. (Blankenburg): unbefestigte Straße	Q2 14320,20580 14482,20547
 Am Fließ: Asphalt	Q0 14263,20352 14386,20237 14429,20192
-Bebelplatz: gepflastert	Q1 9700,12234 9679,12388
+Bebelplatz: gepflastert	Q1 9708,12235 9702,12307 9695,12390
+Bebelplatz: gepflastert	Q1 9743,12239 9702,12307 9656,12386
+Bebelplatz: gepflastert	Q1 9674,12231 9702,12307 9734,12395
 (Yorckstr. - Park am Gleisdreieck): Beton	Q0 8358,9568 8357,9598 8349,9697
 (Park am Gleisdreieck, Querweg): Beton	Q0 8335,9702 8349,9697 8446,9670 8497,9654 8540,9644
 (Park am Gleisdreieck, Berlin-Leipzig): Asphalt	Q0 8343,9993 8338,9971 8335,9702 8333,9583
@@ -6269,6 +6271,7 @@ Varian-Fry-Str.: Kleinsteinpflaster	Q1 8374,11479 8389,11378
 (Erfurter Str. - Wexstr.): Kopfsteinpflaster	Q2 6261,8058 6260,8011
 Wiesenschlag: Asphalt	Q0 -2074,2258 -2036,2150
 Elisabeth-Schwarzhaupt-Platz: Gehwegplatten	Q0 9274,13963 9167,14127
+An den Hubertshäusern: guter Asphalt	Q0 -2049,2359 -1940,2400 -1963,2461 -2069,2429
 Straße 77 (Französisch Buchholz): schlechter Asphalt	Q2 12836,22763 12608,22943 12589,22948 12526,22972
 Straße 69: schlechter fester Sandweg, Schlaglöcher	Q3 15434,22604 15638,22473 15898,22296
 Suzetteweg: gutes Verbundsteinpflaster	Q1 11805,21385 11561,21429
@@ -9430,6 +9433,7 @@ Pilotenstr.: kleinteiliges Kopfsteinpflaster	Q1 18116,4898 18031,4831 17956,4787
 Millöckerweg: Kopfsteinpflaster	Q2 18284,1099 18220,1278
 Richard-Münch-Str.: Verbundsteinpflaster	Q0 -7048,12790 -6961,12967 -6951,13141 -6956,13268
 Debussystr.: Beton	Q0 8350,20150 8293,20303 8282,20329 8242,20434
+Hofjägerallee (Frohnau): guter Beton	Q0 2867,25406 2904,25476 2928,25547 2950,25667 2963,25728 2989,25784
 Redwitzgang: guter Asphalt	Q0 17266,4720 17225,4568
 Wartiner Str.: mäßiger Beton	Q1 18811,18404 18886,18300 18985,18180 18967,18015 18959,17940 18888,17881 18809,17820 18740,17900
 Passower Str.: glatter Straßenbelag	Q0 18967,18015 19079,17999 19071,17874 18965,17789 18888,17881
@@ -10028,6 +10032,7 @@ Treiberpfad: guter Beton	Q0 3896,22307 3810,22231 3766,22165
 Muttlerweg: Asphalt	Q0 10576,2683 10612,2675 10603,2626 10716,2597
 Grünsteinweg: Beton mit Asphaltflicken	Q1 10886,2167 10907,2207 10938,2296
 Kreideweg: guter Asphalt	Q0 10748,2233 10840,2196 10886,2167
+(Jenbacher Weg - Mauerweg): unbefestigter Feldweg, recht festgetrampelt	Q2 6233,412 6253,361
 Fritz-Kühn-Str.: Asphalt	Q0 21681,-589 21666,-657 21479,-925 21445,-963
 Privatstr. 14: schlechtes Kopfsteinpflaster	Q3 13103,17280 13159,17196
 Mittelstr. (Alt-Hohenschönhausen): guter Asphalt	Q0 15543,14491 15647,14693 15706,14752 15769,14815 15856,14915
@@ -10799,6 +10804,12 @@ Am Finkenherd: Asphalt	Q0 -7004,15434 -6977,15706 -6932,16048
 Straße 6 (Buch): asphaltiert	Q0 17493,26391 17714,26509
 Nettestr.: Asphalt	Q0 14278,22281 14425,22481
 (Brandenburgische Str. - Albrechtstr.): Schäden in der Fahrbahndecke, aber gut zu befahren	Q1 6638,4394 6632,4361 6624,4318
+Wansdorfer Platz: Kleinpflaster	Q1 -3148,16712 -3254,16726 -3255,16667 -3203,16660 -3151,16657 -3148,16712
+Abajstr.: guter Asphalt	Q0 9479,20535 9311,20489
+Am Klötzgraben: Verbundsteinpflaster	Q1 6651,23020 6741,23117 6779,23139 6817,23167 6890,23213
+Germersheimer Platz: guter Asphalt	Q0 -4332,15179 -4495,15198
+Germersheimer Platz: guter Asphalt	Q0 -4499,15152 -4338,15137
+Stadtgärten: gutes Verbundsteinpflaster	Q1 11585,22082 11568,22056 11544,21897 11575,21888 11566,21829 11534,21831 11518,21727 11589,21713
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206
 Richard-Ermisch-Str.: Asphalt	Q0 14245,13268 14224,13206 14207,13152 14177,13065 14163,13025 14130,12926 14096,12827
 Zum Langen Jammer: Kopfsteinpflaster, Gehweg besser	Q2 14686,12873 14405,12953
@@ -10879,7 +10890,7 @@ Georgenkirchstr.: Asphalt	Q0 11842,13576 11778,13498 11703,13422 11655,13370 115
 (Mollstr. - Barnimstr.): Verbundsteine	Q0 11723,13139 11758,13210
 (Volkspark Friedrichshain, parallel zur Friedenstr.): Gehwegplatten und Kopfsteinpflaster	Q0 12386,13085 12387,13107 12344,13157 12248,13254 12194,13307 12148,13348 12088,13403 12005,13481 11943,13545 11857,13596 11823,13610 11785,13625
 Hinter der Katholischen Kirche: Kopfsteinpflaster	Q1 9801,12245 9795,12293 9780,12401
-Behrenstr.: Asphalt	Q0 9492,12214 9631,12227 9700,12234 9743,12239 9801,12245
+Behrenstr.: Asphalt	Q0 9492,12214 9631,12227 9674,12231 9708,12235 9743,12239 9801,12245
 Markgrafenstr. (Kreuzberg, Mitte): Asphalt	Q0 9631,12227 9643,12127
 Am Festungsgraben: Kopfsteinpflaster	Q2 9842,12506 9764,12492
 (Dorotheenstr. - Unter den Linden): wassergebundene Decke	Q1 9744,12601 9764,12492

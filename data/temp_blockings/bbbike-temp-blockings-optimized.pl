@@ -408,20 +408,7 @@ userdel	2::temp 5656,10876 5652,11004
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'http://www.berliner-weihnacht.de/',
-         'until' => 1324940399,
-         'text' => 'Nostalgischer Weihnachtsmarkt rund um das Opernpalais: der Bereich Oberwallstr., Niederlagstr., Am Schinkelplatz gesperrt, vom 23.11.-26.12.2010',
-         'from' => 1321916400,
-         'id' => 790,
-         'data' => 'userdel	2::temp 10008,12274 9994,12368
-userdel	2::temp 9943,12364 9961,12273 9972,12184
-userdel	2::temp 10010,12259 10035,12209
-userdel	2::temp 9852,12409 9869,12297 9875,12257 9890,12161
-userdel	2::temp 9961,12273 9875,12257
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
