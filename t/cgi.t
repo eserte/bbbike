@@ -846,7 +846,7 @@ sub uncompr {
     my $res = shift;
     if ($res->can("decoded_content")) {
 	my %opts;
-	if ($res->content_is_xml) {
+	if (!$res->can('content_is_xml') || $res->content_is_xml) {
 	    # http://rt.cpan.org/Public/Bug/Display.html?id=52572
 	    $opts{charset} = 'none';
 	}
