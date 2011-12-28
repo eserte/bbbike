@@ -7451,7 +7451,8 @@ sub show_info {
     header(-from => 'info');
     my $perl_url = "http://www.perl.org/";
     my $cpan = "http://www.cpan.org/";
-    my $scpan = "http://search.cpan.org/search?mode=module&amp;query=";
+    #my $scpan = "http://search.cpan.org/search?mode=module&amp;query=";
+    my $scpan = "http://search.cpan.org/perldoc?";
     print <<EOF;
 <center><h2>Information</h2></center>
 <ul>
