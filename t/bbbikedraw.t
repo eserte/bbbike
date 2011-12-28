@@ -383,7 +383,7 @@ sub draw_map {
 		is($image_info->{file_media_type}, "image/$imagetype", "Correct mime type for $imagetype");
 	    } elsif ($imagetype eq 'svg') {
 		like($image_info->{file_media_type}, qr{^image/svg[+-]xml$}, "Correct mime type for $imagetype")
-		    or diag "Test may fail if Image::Info is too old, try 1.30";
+		    or diag "Test may fail if Image::Info is too old, try 1.31_50 or better";
 		if ($image_info->{file_media_type} eq 'image/svg-xml') {
 		    diag <<EOF;
 The recommended mime type for SVG is image/svg+xml, not image svg-xml.
