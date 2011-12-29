@@ -174,6 +174,10 @@ TARGET=bbbike.hosteurope.herceg.de
 .endfor
 .endif
 
+.ifndef MAPSERVER_TARGET
+MAPSERVER_TARGET=${TARGET}
+.endif
+
 .ifndef TARGET
 .if   make(deploy)                   || \
       make(deploy-data)		     || \
@@ -552,7 +556,7 @@ prepare-mapserver-dist-pre:
 # XXX rename /tmp/radzeit_mapserver_dist, here and in mapserver/brb/Makefile
 prepare-mapserver-dist-main:
 	cd ${BBBIKE_ROOT_DIR}/mapserver/brb && \
-	    ${MAKE} dist-any TARGET=${TARGET}
+	    ${MAKE} dist-any TARGET=${MAPSERVER_TARGET}
 .if ${TARGET_OS_DIST} == "linux-debian"
 	perl -i -pe 's{^(\S+\s+)(.*)}{$$1/usr/share/fonts/truetype/ttf-bitstream-vera/Vera.ttf}' \
 	    /tmp/radzeit_mapserver_dist/fonts-radzeit.list
