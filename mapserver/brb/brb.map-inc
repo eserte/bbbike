@@ -1,4 +1,8 @@
-[%
+[% TRY;
+      PROCESS "brb.map-localinc";
+   CATCH file;
+   END;
+
    UNLESS MAPSERVER_VERSION.defined; MAPSERVER_VERSION = 3;		END;
 
    UNLESS MAPNAME.defined;	MAPNAME = "brb";			END;
