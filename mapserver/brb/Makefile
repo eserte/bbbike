@@ -59,7 +59,8 @@ IMAGECOLOR?=	225 225 225
 #####################################################################
 # Various destination system configurations
 
-RADZEIT_APACHE_DIR_LOCAL=	$(ABS_LOCAL_BBBIKE_DIR)/projects/www.radzeit.de
+BBBIKE_PROJECTS_DIR=		$(ABS_LOCAL_BBBIKE_DIR)/projects
+RADZEIT_APACHE_DIR_LOCAL=	$(BBBIKE_PROJECTS_DIR)/www.radzeit.de
 
 .if ${TARGET} == "automatic"
 BBBIKECGI_CONFIG_LOCAL=	../../cgi/bbbike.cgi.config
@@ -89,7 +90,7 @@ BBBIKE_MAPSERVER_URL=	http://$(RADZEIT_HOST)/cgi-bin/mapserv
 .elif ${TARGET} == "bbbike.hosteurope.herceg.de"
 
 RADZEIT_HOST=		bbbike.hosteurope.herceg.de
-RADZEIT_APACHE_DIR_LOCAL=	$(ABS_LOCAL_BBBIKE_DIR)/projects/bbbike.de-hosteurope
+RADZEIT_APACHE_DIR_LOCAL=	$(BBBIKE_PROJECTS_DIR)/bbbike.de-hosteurope
 RADZEIT_APACHE_DIR=	$(RADZEIT_APACHE_DIR_LOCAL)
 BBBIKE_MAPSERVER_URL=	http://$(RADZEIT_HOST)/cgi-bin/mapserv
 
@@ -99,6 +100,7 @@ BBBIKE_MAPSERVER_URL=	http://$(RADZEIT_HOST)/cgi-bin/mapserv
 BBBIKE_RADZEIT_USER=	${BBBIKE_HOSTEUROPE_USER}
 BBBIKE_RADZEIT_HOST=	${BBBIKE_HOSTEUROPE_HOST}
 BBBIKE_RADZEIT_APACHE_DIR=${BBBIKE_HOSTEUROPE_APACHE_DIR}
+RADZEIT_APACHE_DIR_LOCAL=	$(BBBIKE_PROJECTS_DIR)/bbbike.de-hosteurope
 
 .endif
 
@@ -179,7 +181,11 @@ MAPSERVER_URL=		http://$(HOST)$(MAPSERVER_RELURL)
 #MAPSERVER_PROG_RELURL=	/cgi-bin/mapserv
 #MAPSERVER_PROG_URL=	http://$(HOST)$(MAPSERVER_PROG_RELURL)
 BBBIKECGI_CONFIG=	$(RADZEIT_APACHE_DIR)/cgi-bin/bbbike.cgi.config
+.if ${TARGET} == "hosteurope"
+BBBIKECGI_CONFIG_LOCAL=	$(ABS_LOCAL_BBBIKE_DIR)/cgi/bbbike-hosteurope.cgi.config
+.else
 BBBIKECGI_CONFIG_LOCAL=	$(RADZEIT_APACHE_DIR_LOCAL)/cgi-bin/bbbike.cgi.config
+.endif
 MAPSERVER_PROG_RELURL=	$(BBBIKE_MAPSERVER_URL:C/^http:\/\/[^\/]+//)
 MAPSERVER_PROG_URL=	$(BBBIKE_MAPSERVER_URL)
 MAPSERVER_VERSION=	5
