@@ -287,10 +287,15 @@ END
 
 SYMBOL
   NAME 'dashed1'
+[% IF MAPSERVER_DRIVER == "AGG" -%]
+  TYPE SIMPLE
+  PATTERN 2 4 END
+[% ELSE -%]
   TYPE VECTOR
   POINTS 0 0 2 2 END
   FILLED true
   STYLE 4 4 END
+[% END -%]
 END
 
 SYMBOL
@@ -456,6 +461,19 @@ SYMBOL
     8 12 8 12
   END
 END
+
+[%# NOTE: it's not clear if this needs to be done with the AGG driver,
+  # or with Mapserver 5.6.3, or if combining both. Anyway, the
+  # above rectangle-train solution does not work, neither does
+  # two line styles with patterns
+-%]
+[% IF MAPSERVER_DRIVER == "AGG" -%]
+SYMBOL
+  NAME 'train-dashed'
+  TYPE SIMPLE
+  PATTERN 8 12 END
+END
+[% END -%]
 
 SYMBOL   
   NAME "cartoline_round"
@@ -1571,7 +1589,17 @@ LAYER
   CLASS
     EXPRESSION /^R[ABC]?$/
     MAXSCALE 20000
-[% IF MAPSERVER_VERSION < 5 -%]
+[% IF MAPSERVER_DRIVER == "AGG" -%]
+    STYLE
+      COLOR 0 128 0
+      WIDTH 4
+    END
+    STYLE
+      COLOR 255 255 255
+      SYMBOL 'train-dashed'
+      WIDTH 2
+    END
+[% ELSIF MAPSERVER_VERSION < 5 -%]
     COLOR 0 128 0
     SYMBOL 'width'
     SIZE 2
