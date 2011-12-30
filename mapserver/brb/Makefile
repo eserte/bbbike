@@ -549,7 +549,7 @@ radroute_body.html:	$(BBBIKE_DATA_DIR)/comments_route-orig \
 	    $(BBBIKE_MISCSRC_DIR)/grepstrassen -v -sectionrx "In Routenliste ignorieren" |\
 	    perl -pe 's{(Flaeming-Skate)\s+\(.*\)\t}{$$1\t}' |\
 	    $(BBBIKE_MISCSRC_DIR)/bbd2mapservhtml.pl \
-		-bbbikeurl $(BBBIKE_URL) \
+		-bbbikeurl $(BBBIKE_CGI_RELURL)/bbbike.cgi \
 		-email $(EMAIL) \
 		-linklist -preferalias -partialhtml \
 		-headlines \
