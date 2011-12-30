@@ -800,12 +800,16 @@ LAYER
 [% END -%]
     COLOR 0 255 0
     SYMBOL '[% IMAGE_DIR %]/ferry[% imgsuffix %].[% IMAGE_SUFFIX %]'
+# With Mapserver 5.6.5 and AGG driver the label is not empty, but one pixel is
+# drawn. This was not the case with 5.0.3 and GD driver. So don't use a black
+# label anymore, but a blue one which matches the ferry icon as closely as
+# possible.
     LABEL
       MINFEATURESIZE 10
       MINDISTANCE 150
       POSITION CC
       SIZE TINY
-      COLOR 0 0 0
+      COLOR 0 128 192
     END
     [% IF maxscale %]MAXSCALE [% maxscale %][% END %]
     [% IF minscale %]MINSCALE [% minscale %][% END %]
