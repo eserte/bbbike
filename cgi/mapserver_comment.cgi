@@ -281,8 +281,14 @@ eval {
 
     if ($is_multipart) {
 	if (defined $add_html_body && $add_html_body ne "") {
-	    $msg->attach(Type => "text/html; charset=iso-8859-1",
-			 Data => $add_html_body,
+	    my $add_html_body_bytes;
+	    if (eval { require Encode; 1 }) {
+		$add_html_body_bytes = Encode::encode("utf-8", $add_html_body);
+	    } else {
+		$add_html_body_bytes = $add_html_body;
+	    }
+	    $msg->attach(Type => "text/html; charset=utf-8",
+			 Data => $add_html_body_bytes,
 			 Filename => "newstreetform.html",
 			);
 	}
@@ -290,8 +296,14 @@ eval {
 		     Data => $encoded_plain_body,
 		    );
 	if (defined $add_bbd && $add_bbd ne "") {
+	    my $add_bbd_bytes;
+	    if (eval { require Encode; 1 }) {
+		$add_bbd_bytes = Encode::encode("utf-8", $add_bbd);
+	    } else {
+		$add_bbd_bytes = $add_bbd;
+	    }
 	    $msg->attach(Type => "application/x-bbbike-data",
-			 Data => $add_bbd,
+			 Data => $add_bbd_bytes,
 			 Filename => "comment.bbd",
 			 Encoding => "quoted-printable",
 			);
