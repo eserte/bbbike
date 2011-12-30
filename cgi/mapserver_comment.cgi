@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003-2010 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003-2011 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -77,8 +77,6 @@ eval {
 	if (Sys::Hostname::hostname() =~ /herceg\.de$/) {
 	    require Config;
 	    if ($Config::Config{archname} =~ /amd64/) {
-		#$to = "slaven\@rezic.de";
-		#$cc = "slaven\@rezic.de";
 		$to = "eserte";
 		$cc = "eserte";
 	    } else {
@@ -112,37 +110,18 @@ eval {
     my $mapy = param("mapy");
 
     my($link1, $link2);
-
-    if (0) {
-	# XXX link query is different for remote server
-	# XXX supply also the image extents?
-	my $link_query = "mapxy=" . CGI::escape("$mapx $mapy") . "&layer=qualitaet&layer=handicap&layer=radwege&layer=bahn&layer=gewaesser&layer=flaechen&layer=grenzen&layer=orte&layer=route&mode=nquery&map=%2Fhome%2Fe%2Feserte%2Fsrc%2Fbbbike%2Fmapserver%2Fbrb%2Fbrb.map&program=%2F%7Eeserte%2Fcgi%2Fmapserv.cgi";
-
-	my($map_width,$map_height) = (4000, 4000); # meters
-	my($img_width,$img_height) = (550, 550); # pixels
-
-	my($minx,$maxx,$miny,$maxy) = ($mapx-$map_width/2, $mapx+$map_width/2,
-				       $mapy-$map_height/2, $mapy+$map_height/2);
-	$link_query="map=%2Fhome%2Fe%2Feserte%2Fsrc%2Fbbbike%2Fmapserver%2Fbrb%2Fbrb.map&mode=browse&zoomdir=0&zoomsize=2&imgxy=" . CGI::escape($img_width/2 . " " . $img_height/2) . "&imgext=" . CGI::escape("$minx $miny $maxx $maxy") . "&program=%2F%7Eeserte%2Fcgi%2Fmapserv.cgi";
-
-	$link1 = "$mscgi_remote?$link_query";
-	$link2 = "$mscgi_local?$link_query";
-    } else {
-	if (defined $mapx && defined $mapy) {
-	    my $coords_esc = CGI::escape(join(",", map { int } ($mapx, $mapy)));
-	    $link1 = "$msadrcgi_remote?coords=$coords_esc";
-	    $link2 = "$msadrcgi_local?coords=$coords_esc";
-	}
-    }
     if (param("routelink")) {
 	$link1 = param("routelink");
-	($link2 = $link1) =~ s{http://[^/]+/cgi-bin/}{http://localhost/bbbike/cgi/}; # guess local link for bbbikegooglemap, may be wrong
+	($link2 = $link1) =~ s{^http://[^/]+/cgi-bin/}{http://localhost/bbbike/cgi/}; # guess local link for bbbikegooglemap, may be wrong
+    } elsif (defined $mapx && defined $mapy) {
+	my $coords_esc = CGI::escape(join(",", map { int } ($mapx, $mapy)));
+	$link1 = "$msadrcgi_remote?coords=$coords_esc";
+	$link2 = "$msadrcgi_local?coords=$coords_esc";
     }
 
     my $plain_body = "";
     my $add_html_body;
     my $add_bbd;
-    my $need_bbbike_css = 0;
 
     {
 	my @add_bbd;
@@ -216,12 +195,8 @@ eval {
 	    my $vars = { data => $data,
 			 extra_html => $extra_html,
 			 bbbikecss => "http://bbbike.de/BBBike/html/bbbike.css",
-			 # bbbikecss => "cid:bbbike.css", # XXX see below
 		       };
-	    $need_bbbike_css = 1;
-	    #my $htmltpl = "$FindBin::RealBin/../html/newstreetform.tpl.html";
 	    my $htmltpl = "$realbin/../html/newstreetform.tpl.html";
-	    #warn $htmltpl;
 	    die "Can't read <$htmltpl>" if !-r $htmltpl;
 	    $t->process($htmltpl, $vars, \$add_html_body)
 		or die $t->error;
@@ -318,21 +293,9 @@ eval {
 			 Encoding => "quoted-printable",
 			);
 	}
-## Unfortunately, this does not work with Mozilla Mail:
-# 	if ($need_bbbike_css) {
-# 	    $msg->attach(Type => "text/css",
-# 			 Path => "$realbin/../html/bbbike.css",
-# 			 Id => "bbbike.css",
-# 			);
-# 	}
     }
 
     my @send_args = @MIME_Lite_send;
-    if (!@send_args) {
-	# This is a default, but I don't like the global usage of
-	# MIME::Lite->send, so reset it always:
-	#@send_args = ("sendmail");
-    }
     $msg->send(@send_args)
 	or die "Can't send mail with args <@send_args>. Body was:\n$plain_body\n";
 
@@ -346,9 +309,9 @@ eval {
     if (param("formtype") && param("formtype") =~ /^(newstreetform|fragezeichenform)$/) {
 	my $dir = defined $bbbike_html ? $bbbike_html : "..";
 	my $url = "$dir/newstreetform.html";
-	my $bbbikegoolemapsurl;
+	my $bbbikegooglemapsurl;
 	if (param("supplied_coord")) {
-	    $bbbikegoolemapsurl = "$BBBike::BBBIKE_GOOGLEMAP_URL?" .
+	    $bbbikegooglemapsurl = "$BBBike::BBBIKE_GOOGLEMAP_URL?" .
 		CGI->new({
 		    wpt         => param("supplied_coord"),
 		    coordsystem => "bbbike",
@@ -361,8 +324,8 @@ eval {
 	    start_html(-title=>"Neue Straße für BBBike",
 		       -style=>{'src'=>"$bbbike_html/bbbike.css"}),
 	    "Danke, die Angaben wurden an ", a({-href => "mailto:$to"}, $to), " gesendet.",br(),br(),
-	    (defined $bbbikegoolemapsurl ?
-	     (a({-href => $bbbikegoolemapsurl}, "Weitere Kommentare zu dieser Straße auf einer Karte eintragen"),br(),br()) :
+	    (defined $bbbikegooglemapsurl ?
+	     (a({-href => $bbbikegooglemapsurl}, "Weitere Kommentare zu dieser Straße auf einer Karte eintragen"),br(),br()) :
 	     ()
 	    ),
 	    a({-href => $url}, "Weitere Straße eintragen"),
@@ -437,7 +400,6 @@ danke für deinen Eintrag. Die Straße "$strname" wird demnächst bei BBBike verfüg
 Gruß,
 
 EOF
-    # not anymore :-(    das BBBike-Team
     my $subject = "Re: $header->{Subject}";
     $extra_html .= <<EOF;
 <hr>Antwort-Mail:<br>
@@ -463,7 +425,7 @@ EOF
 
 =head1 NAME
 
-mapserver_comment.cgi - send comments about mapserver data
+mapserver_comment.cgi - send comments about BBBike
 
 =head1 SYNOPSIS
 
@@ -471,8 +433,14 @@ none
 
 =head1 DESCRIPTION
 
-Send comments about mapserver data via email. The receiver is the
+Send comments about BBBike data via email. The receiver is the
 C<$EMAIL> address in L<BBBikeVar>.
+
+In former days, this script was meant only for Mapserver comments, but
+in the meantime it is used in all parts of the BBBike ecosystem: still
+it's used for comments created in BBBike's Mapserver interface, but
+also for comments about routes created in the bbbikegooglemap CGI, and
+comments created in the "newstreet" and "fragezeichen" forms.
 
 =head2 CGI parameters
 
@@ -499,6 +467,16 @@ The subject for the Mail. It defaults to "BBBike-Kommentar".
 The coordinates for which point the comment applies as BBBike standard
 coordinates.
 
+=item routelink
+
+A link to the bbbikegooglemap CGI with a route definition. This takes
+precedence over mapx/mapy.
+
+=item route
+
+The space-separated coordinates of a route. Will be usually appended
+to the mail as an attachment in B<bbd> format.
+
 =item formtype (optional)
 
 May be B<newstreetform> (if coming from the newstreetform.html
@@ -524,12 +502,14 @@ either B<newstreetform> or B<fragezeichenform>.
 
 =head2 Configuration
 
-To define the mail sending method, define the C<@Mail_Send_open>
+To define the mail sending method, set the C<@MIME_Lite_send>
 variable in C<bbbike.cgi.config>. The value of this variable is the
-same as the arguments of the C<open> method of L<Mail::Send>. To
+same as the arguments of the C<send> method of L<MIME::Lite>. To
 define an SMTP server, use the following:
 
-    @Mail_Send_open = ("smtp", Server => "mail.example.com");
+    @MIME_Lite_send = ("smtp", "mail.example.com");
+
+By default L<MIME::Lite> uses system's L<sendmail(8)>.
 
 =head1 AUTHOR
 
