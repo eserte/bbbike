@@ -34,15 +34,26 @@ my $mapserver_comment = "$FindBin::RealBin/../cgi/mapserver_comment.cgi";
 for my $method (qw(GET POST)) {
 
     my $simulate_mail_sending = sub {
-	my(%cgi_params) = @_;
-	$cgi_params{mailout} = 1;
+	my(@cgi_params) = @_;
+	push @cgi_params, mailout => 1;
 	my $content;
+	local %ENV;
 	if ($method eq 'GET') {
 	    $ENV{REQUEST_METHOD} = 'GET';
+	    my %cgi_params;
+	    for(my $i=0; $i<$#cgi_params; $i+=2) {
+		my($k,$v) = @cgi_params[$i, $i+1];
+		if (exists $cgi_params{$k}) {
+		    push @{ $cgi_params{$k} }, $v;
+		} else {
+		    $cgi_params{$k} = [ $v ];
+		}
+	    }
 	    $ENV{QUERY_STRING} = CGI->new(\%cgi_params)->query_string;
 	} else {
 	    $ENV{REQUEST_METHOD} = 'POST';
-	    my $request = POST 'dummy', [%cgi_params];
+	    
+	    my $request = POST 'dummy', [@cgi_params];
 	    $ENV{CONTENT_LENGTH} = $request->header('content-length');
 	    $ENV{CONTENT_TYPE} = $request->content_type;
 	    $content = $request->content;
@@ -118,10 +129,30 @@ for my $method (qw(GET POST)) {
 	isnt $res{mail}, undef
 	    or diag $res{raw_stderr};
 	my @parts = $res{mail}->parts;
-	is scalar(@parts), 2, "Two parts found in mail"
+	is scalar(@parts), 2, "Two parts found in mail (text and bbd)"
 	    or diag $res{raw_stderr};
 	like $parts[0]->body_str, qr{and a 2nd line}, 'Found text in first part'
 	    or diag $res{raw_stderr};
+    }
+
+    {
+	my %res = $simulate_mail_sending->(formtype => 'newstreetform',
+					   var1 => 'var1_val',
+					   var2 => 'var2_val',
+					   multivar => 'multivar_val1',
+					   multivar => 'mulitvar_val2',
+					   strname => 'Teststreet',
+					   email => 'somebody@example.org',
+					   comment => "test comment",
+					  );
+	like decode_entities($res{http}->decoded_content), qr{Danke, die Angaben.*gesendet}, "HTTP: Thankyou ($method)";
+	like $res{http}->header('set-cookie'), qr{mapserver_comment}, 'Seen Set-Cookie header';
+	my @parts = $res{mail}->parts;
+	is scalar(@parts), 2, "Two parts found in mail (html and text)";
+	{
+	    local $TODO = "Not supported by Dumper currently";
+	    like $parts[1]->body_str, qr{multivar_val2}, 'Found 2nd multi param in plain part';
+	}
     }
 }
 
