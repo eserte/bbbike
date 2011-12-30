@@ -161,10 +161,14 @@ eval {
 	print BACKUP "\n";
 	my $data = {};
 	for my $param (param) {
-	    my $val = param($param);
-	    $data->{$param} = $val;
-	    next if $val eq '' && $param !~ /^supplied/;
-	    my $dump = Data::Dumper->new([$val],[$param])->Indent(1)->Useqq(1)->Dump;
+	    my @val = param($param);
+	    if (@val == 1) {
+		$data->{$param} = $val[0];
+	    } else {
+		$data->{$param} = \@val;
+	    }
+	    next if (@val == 0 || (@val == 1 && $val[0] eq '') && $param !~ /^supplied/);
+	    my $dump = Data::Dumper->new([$data->{$param}],[$param])->Indent(1)->Useqq(1)->Dump;
 	    print BACKUP $dump;
 	    $plain_body .= $dump;
 	}

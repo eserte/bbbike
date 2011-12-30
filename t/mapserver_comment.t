@@ -140,7 +140,7 @@ for my $method (qw(GET POST)) {
 					   var1 => 'var1_val',
 					   var2 => 'var2_val',
 					   multivar => 'multivar_val1',
-					   multivar => 'mulitvar_val2',
+					   multivar => 'multivar_val2',
 					   strname => 'Teststreet',
 					   email => 'somebody@example.org',
 					   comment => "test comment",
@@ -149,10 +149,10 @@ for my $method (qw(GET POST)) {
 	like $res{http}->header('set-cookie'), qr{mapserver_comment}, 'Seen Set-Cookie header';
 	my @parts = $res{mail}->parts;
 	is scalar(@parts), 2, "Two parts found in mail (html and text)";
-	{
-	    local $TODO = "Not supported by Dumper currently";
-	    like $parts[1]->body_str, qr{multivar_val2}, 'Found 2nd multi param in plain part';
-	}
+	my $plain = $parts[1]->body_str;
+	like $plain, qr{var1.*var1_val}, 'Found single param in plain part';
+	like $plain, qr{multivar_val2}, 'Found 2nd multi param in plain part';
+	like $plain, qr{email.*somebody.*example\.org}, 'Found email in plain part';
     }
 }
 
