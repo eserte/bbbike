@@ -220,6 +220,7 @@ eval {
 	$plain_body .= "\n" . Data::Dumper->new([\%ENV],['ENV'])->Indent(1)->Useqq(1)->Dump;
     } else {
 	my $comment_param = param("comment");
+	$comment_param = '' if !defined $comment_param;
 	if (!$author && !$email && $comment_param eq '' && !$add_bbd) {
 	    empty_msg(); # exits
 	}
@@ -240,6 +241,8 @@ eval {
 	    }
 	}
     }
+
+    my $mailout = param('mailout');
 
     my $is_multipart = ((defined $add_html_body && $add_html_body ne "") ||
 			(defined $add_bbd       && $add_bbd ne ""));
@@ -295,9 +298,14 @@ eval {
 	}
     }
 
-    my @send_args = @MIME_Lite_send;
-    $msg->send(@send_args)
-	or die "Can't send mail with args <@send_args>. Body was:\n$plain_body\n";
+    if ($mailout) {
+	binmode STDERR;
+	print STDERR $msg->as_string;
+    } else {
+	my @send_args = @MIME_Lite_send;
+	$msg->send(@send_args)
+	    or die "Can't send mail with args <@send_args>. Body was:\n$plain_body\n";
+    }
 
     my $cookie = cookie(-name => 'mapserver_comment',
 			-value => { email => $email,
