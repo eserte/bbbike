@@ -2507,16 +2507,17 @@ TRANSPARENCY 50 ##XXX Wie am geschicktesten verwenden?
 
   CLASS
     NAME "Route"
-#    COLOR 255 0 255
-#    COLOR 180 80 130
-     COLOR 150 0 0
-#    SYMBOL 'width'
-    SYMBOL 'dotted'
+    COLOR 150 0 0
     SIZE 11
-#    OVERLAYCOLOR 130 80 180
+[% IF MAPSERVER_DRIVER == "AGG" -%]
+    SYMBOL 'dotted12'
+[%# Currently there's no way to get the alternate blue/red dots plotted with the AGG driver... -%]
+[% ELSE -%]
+    SYMBOL 'dotted'
     OVERLAYCOLOR 0 0 150
     OVERLAYSYMBOL dottedtransposed
     OVERLAYSIZE 11
+[% END -%]
   END
   METADATA
     WMS_TITLE "Route"
