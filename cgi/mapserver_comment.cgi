@@ -154,7 +154,7 @@ eval {
     }
 
     if (param("formtype") && param("formtype") =~ /^(newstreetform|fragezeichenform)$/) {
-	open(BACKUP, ">>/tmp/newstreetform-backup")
+	open(BACKUP, ">>/tmp/newstreetform-backup-$<")
 	    or warn "Cannot write backup data for newstreetform: $!";
 	print BACKUP "-" x 70, "\n";
 	print BACKUP scalar localtime;
