@@ -1,10 +1,9 @@
 # -*- perl -*-
 
 #
-# $Id: FixRemoteAddrHandler.pm,v 1.3 2007/03/31 20:08:08 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2006,2009 Slaven Rezic. All rights reserved.
+# Copyright (C) 2006,2009,2011 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -37,7 +36,7 @@ and then the same as before.
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.3 $ =~ /(\d+)\.(\d+)/);
+$VERSION = '1.04';
 
 use Apache::Constants qw(DECLINED);
 
@@ -46,7 +45,10 @@ sub handler {
 
     my $forwarded_for = $r->header_in("X-Forwarded-For");
     if ($forwarded_for) {
-	$r->connection->remote_ip($forwarded_for);
+	my(@ips) = split /\s*,\s*/, $forwarded_for;
+	if ($ips[-1]) {
+	    $r->connection->remote_ip($ips[-1]);
+	}
     }
 
     DECLINED;
