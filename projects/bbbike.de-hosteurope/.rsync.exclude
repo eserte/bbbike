@@ -12,6 +12,7 @@ BBBike/tmp/berlin*
 BBBike/tmp/*
 routopedia/**
 etc/httpd*conf
+etc/brb.map-localinc
 cgi-bin/mapserv
 .rsync.exclude
 .rsync_block-
