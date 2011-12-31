@@ -16,7 +16,7 @@ package BBBikeApacheSessionCounted;
 use strict;
 use vars qw($VERSION $debug);
 
-$VERSION = '0.01';
+$VERSION = '0.02';
 $debug = $main::debug; # XXX hmmmm
 
 use Apache::Session::Counted;
@@ -28,6 +28,7 @@ our %CLUSTER_DEFS = (
 		     'lvps83-169-19-137.dedicated.hosteurope.de' => [2, 'http://bbbike.lvps83-169-19-137.dedicated.hosteurope.de/cgi-bin/asch'],
 		     'eserte'                                    => [3, 'http://eserte.bbbike.org/cgi-bin/asch'],
 		     'mosor'                                     => [4, 'http://mosor/bbbike/cgi/asch'],
+		     'lvps176-28-19-132.dedicated.hosteurope.de' => [5, 'http://bbbike.lvps176-28-19-132.dedicated.hosteurope.de/cgi-bin/asch'],
 		    );
 ######################################################################
 our $THIS_HOST_ID;
