@@ -30,7 +30,7 @@ BEGIN { # XXX do not hardcode
     } elsif ($ENV{SERVER_NAME} eq 'vran.herceg.de') {
 	$BBBIKE_URL = "/~eserte/bbbike";
     } elsif ($ENV{SERVER_NAME} =~ /bbbike\.de$/i ||
-	     eval { require Sys::Hostname; 1 } && Sys::Hostname::hostname() eq 'lvps83-169-19-137.dedicated.hosteurope.de'
+	     eval { require Sys::Hostname; 1 } && Sys::Hostname::hostname() =~ m{lvps\d+-\d+-\d+-\d+\.dedicated\.hosteurope\.de$}
 	    ) {
 	$BBBIKE_ROOT = "/root/work/bbbike-webserver/BBBike";
 	$BBBIKE_URL = "/BBBike";
