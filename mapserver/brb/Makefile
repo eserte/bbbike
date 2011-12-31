@@ -273,6 +273,10 @@ DISTFILES=\
 	query_header2.html \
 	std.inc
 
+.if exists(brb.map-localinc)
+DISTFILES +=brb.map-localinc
+.endif
+
 
 #XXX should not hardcode the year
 DISTFILES_STERNFAHRT_2004=\

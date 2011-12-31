@@ -555,8 +555,11 @@ prepare-mapserver-dist-pre:
 
 # XXX rename /tmp/radzeit_mapserver_dist, here and in mapserver/brb/Makefile
 prepare-mapserver-dist-main:
+# XXX   Copying and removing the localinc file here is an ugly hack
+	cp -pf etc/mapserver-brb-brb.map-localinc ${BBBIKE_ROOT_DIR}/mapserver/brb/brb.map-localinc
 	cd ${BBBIKE_ROOT_DIR}/mapserver/brb && \
 	    ${MAKE} dist-any TARGET=${MAPSERVER_TARGET}
+	rm -f ${BBBIKE_ROOT_DIR}/mapserver/brb/brb.map-localinc
 .if ${TARGET_OS_DIST} == "linux-debian"
 	perl -i -pe 's{^(\S+\s+)(.*)}{$$1/usr/share/fonts/truetype/ttf-bitstream-vera/Vera.ttf}' \
 	    /tmp/radzeit_mapserver_dist/fonts-radzeit.list
@@ -566,8 +569,11 @@ prepare-mapserver-dist-main:
 
 prepare-mapserver-dist-local-main:
 	touch ${CURDIR}/.not_rsyncable
+# XXX   Copying and removing the localinc file here is an ugly hack
+	cp -pf etc/mapserver-brb-brb.map-localinc ${BBBIKE_ROOT_DIR}/mapserver/brb/brb.map-localinc
 	cd ${BBBIKE_ROOT_DIR}/mapserver/brb && \
 	    ${MAKE} dist-any TARGET=bbbike.hosteurope.herceg.de
+	rm -f ${BBBIKE_ROOT_DIR}/mapserver/brb/brb.map-localinc
 	cp -Rpf /tmp/radzeit_mapserver_dist/* ${CURDIR}/$(HTDOCS)/mapserver/brb/
 	chmod 777 ${CURDIR}/$(HTDOCS)/mapserver/brb
 	chmod 777 ${CURDIR}/$(HTDOCS)/mapserver/brb/tmp
