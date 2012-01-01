@@ -612,3 +612,23 @@ else {
     print $text if $text;
 }
 
+__END__
+
+=head1 NAME
+
+bbbike - munin plugin for bbbike
+
+=head1 CONFIGURATION
+
+    BBBIKE_ROOT_DIR=/path/to/bbbike
+    cd /etc/munin/plugins
+    ln -s $BBBIKE_ROOT_DIR/misc/munin-plugins/bbbike
+    ln -s bbbike bbbike-output
+    ln -s bbbike bbbike-output
+
+Also create a configuration file /etc/munin/munin-bbbike.conf with
+additional commandline arguments, especially one for the logfile:
+
+    --logfile=/var/log/apache2/bbbike.de_access.log
+
+=cut
