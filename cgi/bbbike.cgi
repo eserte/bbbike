@@ -7152,63 +7152,12 @@ sub tie_session {
 
 sub tie_session_counted {
     my $id = shift;
-
-    # To retrieve a session file:
-    #perl -MData::Dumper -MStorable=thaw -e '$content=do{open my $fh,$ARGV[0] or die;local$/;<$fh>}; warn Dumper thaw $content' file
-
-    #my $dirlevels = 0;
-    my $dirlevels = 1;
-    my @l = localtime;
-    my $date = sprintf "%04d-%02d-%02d", $l[5]+1900, $l[4]+1, $l[3];
-    ## Make sure a different user for cgi-bin/mod_perl operation is used
-    #my $directory = "/tmp/bbbike-sessions-" . $< . "-$date";
-    ## No need for per-day directories,
-    ## I have /tmp/coordssessions
-    my $directory = "/tmp/bbbike-sessions-" . $<;
-    ## Resetting the sessions daily:
-    my $counterfile = "/tmp/bbbike-counter-" . $< . "-$date";
-    #my $counterfile = "/tmp/bbbike-counter-" . $<;
-
-#     require File::Spec;
-#     open(OLDOUT, ">&STDOUT") or die $!;
-#     open(STDOUT, ">&STDERR") or die $!;
-#     Apache::Session::CountedStore->tree_init($directory, $dirlevels);
-#     close STDOUT;
-#     open(STDOUT, ">&OLDOUT") or die $!;
-
-    my %sess;
-    eval {
-	tie %sess, $apache_session_module, $id,
-	    { Directory => $directory,
-	      DirLevels => $dirlevels,
-	      CounterFile => $counterfile,
-	      AlwaysSave => 1,
-	      #HostID => undef,
-	      #HostURL => sub { undef },
-	      Timeout => 10,
-	    } or do {
-		$use_apache_session = undef; # possibly transient error
-		warn $! if $debug;
-		return;
-	    };
-    };
-    if ($@) { # I think this normally does not happen
-	if (!defined $id) {
-	    # this is fatal
-	    die "Cannot create new session: $@";
-	} else {
-	    # may happen for old sessions, e.g. in links, so
-	    # do not die
-	    warn "Cannot load old session, maybe already garbage-collected: $@";
-	}
+    require BBBikeApacheSessionCounted;
+    my $sess = BBBikeApacheSessionCounted::tie_session($id);
+    if (!$sess) {
+	$use_apache_session = undef; # possibly transient error
     }
-    if (defined $id && keys %sess == 1) {
-	# we silently assume that the session is invalid
-	$use_apache_session = undef;
-	return undef;
-    }
-
-    return \%sess;
+    return $sess;
 }
 
 sub load_teaser {
