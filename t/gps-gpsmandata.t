@@ -24,7 +24,7 @@ use lib $FindBin::RealBin;
 use BBBikeTest qw(gpxlint_string);
 use File::Temp qw(tempfile);
 
-plan tests => 22;
+plan tests => 25;
 
 use_ok 'GPS::GpsmanData';
 
@@ -46,6 +46,10 @@ EOF
 	or die $!;
     close $tmpfh
 	or die $!;
+
+    {
+	ok GPS::GpsmanData->check($tmpfile), 'check test for GPS.pm';
+    }
 
     { # non-multi test
 	my $gps = GPS::GpsmanData->new;
@@ -103,6 +107,17 @@ EOF
 
     my $gpx = $gps->as_gpx(symtocmt => 1);
     gpxlint_string($gpx);
+
+    {
+	my($tmpfh,$tmpfile) = tempfile(UNLINK => 1, SUFFIX => '.trk')
+	    or die $!;
+	print $tmpfh $trk_sample_file;
+	close $tmpfh or die $!;
+
+	my @route = GPS::GpsmanMultiData->convert_to_route($tmpfile);
+	is scalar(@route), 4, 'Found four points in track/route';
+	is join(",", @{ $route[0] }), '14379,14107', 'expected first coordinate';
+    }
 }
 
 {
