@@ -633,7 +633,7 @@ winbindist: winbindist-pre
 # categorized:
 DEB_DEVEL=	git-core bison byacc flex g++ apt-show-versions freebsd-buildutils gcc \
 		libc6-dev libinline-perl strace rsync less make
-DEB_TEST=	libimage-info-perl libwww-mechanize-perl
+DEB_TEST=	libimage-info-perl libwww-mechanize-perl libemail-mime-perl
 # Note: libpango-perl not available in lenny, only squeeze
 DEB_DRAW=	libgd2-xpm libgd2-xpm-dev perlmagick libimager-perl \
 		pdftk netpbm imagemagick libgd-gd2-perl ttf-bitstream-vera \
