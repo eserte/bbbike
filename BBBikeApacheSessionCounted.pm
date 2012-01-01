@@ -18,6 +18,7 @@ use vars qw($VERSION $debug);
 
 $VERSION = '0.02';
 $debug = $main::debug; # XXX hmmmm
+$main::debug = $main::debug if 0; # cease -w
 
 use Apache::Session::Counted;
 
