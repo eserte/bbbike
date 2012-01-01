@@ -24,26 +24,29 @@ Usage in httpd.conf:
    PerlRequire /home/e/eserte/src/bbbike/miscsrc/FixRemoteAddrHandler.pm
    PerlLogHandler FixRemoteAddrHandler::handler
 
-When using Apache2 and mod_perl2:
-
-   <Perl>
-       use Apache2::compat;
-   </Perl>
-
-and then the same as before.
-
 =cut
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '1.04';
+$VERSION = '1.05';
 
-use Apache::Constants qw(DECLINED);
+use constant MP2 => (exists $ENV{MOD_PERL_API_VERSION} and $ENV{MOD_PERL_API_VERSION} >= 2);
+BEGIN {
+    if (MP2) {
+	require Apache2::RequestRec;
+	require Apache2::Connection;
+	require Apache2::Const;
+        Apache2::Const->import(qw(DECLINED));
+    } else {
+	require Apache::Constants;
+	Apache::Constants->import(qw(DECLINED));
+    }
+}
 
 sub handler {
     my $r = shift;
 
-    my $forwarded_for = $r->header_in("X-Forwarded-For");
+    my $forwarded_for = $r->headers_in->{"X-Forwarded-For"};
     if ($forwarded_for) {
 	my(@ips) = split /\s*,\s*/, $forwarded_for;
 	if ($ips[-1]) {
