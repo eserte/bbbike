@@ -18660,8 +18660,8 @@ userdel	q4::inwork 21233,6096 20722,6971
 EOF
      },
      { from  => 1254641760, # 2009-10-04 09:36
-       until => 1325324220, # 2011-12-31 10:37
-       text  => 'Berliner Str. (Pankow): Baustelle bis Florastr., Fahrtrichtung stadteinwärts gesperrt, bis Ende 2011',
+       until => 1325520000, # 2012-01-02 17:00
+       text  => 'Berliner Str. (Pankow): Baustelle, Fahrtrichtung gesperrt stadteinwärts zwischen Breite Str. und Florastr., 05.10.2009 09:36 Uhr bis 02.01.2012 17:00 Uhr ',
        type  => 'handicap',
        source_id => 'IM_018078',
        data  => <<EOF,
@@ -19925,8 +19925,8 @@ userdel	q4::inwork 19806,1903 19771,1793
 EOF
      },
      { from  => 1320987600, # 2011-11-11 06:00
-       until => 1325347200, # 2011-12-31 17:00
-       text  => 'Luisenstr. (Mitte): Baustelle, Straße vollständig gesperrt in beiden Richtungen zwischen Invalidenstr. und Hannoversche Str., 12.11.2011 06:00 Uhr bis 31.12.2011 17:00 Uhr',
+       until => 1333206000, # 2012-03-31 17:00
+       text  => 'Luisenstr. (Mitte): Baustelle, Straße vollständig gesperrt in beiden Richtungen zwischen Invalidenstr. und Hannoversche Str., 12.11.2011 06:00 Uhr bis 31.03.2012 17:00 Uhr ',
        type  => 'handicap',
        source_id => 'IM_018151',
        data  => <<EOF,
