@@ -37,7 +37,9 @@ use Image::Info qw(image_info);
 
 use Strassen::Core;
 
-plan tests => 47;
+if (!defined &note) { *note = \&diag }
+
+plan tests => 48;
 
 my $htmldir = $ENV{BBBIKE_TEST_HTMLDIR};
 if (!$htmldir) {
@@ -64,6 +66,8 @@ my $datadir = "$htmldir/data";
 
 my %contents;
 
+my %compress_results;
+
 for my $do_accept_gzip (0, 1) {
     my $basic_tests = sub {
 	my($url, %args) = @_;
@@ -71,7 +75,14 @@ for my $do_accept_gzip (0, 1) {
 	my $contentcompare = exists $args{contentcompare} ? $args{contentcompare} : 1;
 	$ua->default_header('Accept-Encoding' => $do_accept_gzip ? "gzip" : undef);
 	my $resp = $ua->get($url);
-	ok($resp->is_success, "GET $url " . ($do_accept_gzip ? "(Accept gzipped)" : "(uncompressed)"))
+	my $got_gzipped = ($resp->header('content-encoding')||'') =~ m{\bgzip\b} ? 1 : 0;
+	my($content_type) = $resp->content_type;
+	$compress_results{$do_accept_gzip}->{$content_type}->{$got_gzipped}++;
+	ok($resp->is_success,
+	   "GET $url " .
+	   ($do_accept_gzip ? "(accept gzipped)" : "(accept uncompressed)") . " " .
+	   ($got_gzipped ? "(got gzipped)" : "(got uncompressed)")
+	  )
 	    or diag $resp->status_line;
 	my $content = $resp->decoded_content;
 	ok(length $content, "Non-empty content");
@@ -160,6 +171,46 @@ EOF
 
 while(my($url,$v) = each %contents) {
     ok $v->{0} eq $v->{1}, "Same contents for $url";
+}
+
+{
+    # Compression results, mostly diagnostics
+    my @errors;
+    while(my($k,$v) = each %{ $compress_results{0} }) {
+	if ($v->{1}) {
+	    push @errors, "Unexpected compression while no compression was requested (content type: $k)";
+	}
+    }
+    ok !@errors, "Compression check"
+	or diag join("\n", @errors);
+
+    my %compressed_ct;
+    my %uncompressed_ct;
+    while(my($k,$v) = each %{ $compress_results{1} }) {
+	if ($v->{0}) {
+	    $uncompressed_ct{$k} = 1;
+	}
+	if ($v->{1}) {
+	    $compressed_ct{$k} = 1;
+	}
+    }
+    my %mixed_compression_ct;
+    for my $k (keys %uncompressed_ct) {
+	if ($compressed_ct{$k}) {
+	    delete $uncompressed_ct{$k};
+	    delete $compressed_ct{$k};
+	    $mixed_compression_ct{$k} = 1;
+	}
+    }
+    if (%compressed_ct) {
+	note "The following Content-Types are compressed: " . join(", ", sort keys %compressed_ct);
+    }
+    if (%uncompressed_ct) {
+	note "The following Content-Types are uncompressed: " . join(", ", sort keys %uncompressed_ct);
+    }
+    if (%mixed_compression_ct) {
+	note "The following Content-Type are sometimes compressed, sometimes uncompressed: " . join(", ", sort keys %mixed_compression_ct);
+    }
 }
 
 __END__
