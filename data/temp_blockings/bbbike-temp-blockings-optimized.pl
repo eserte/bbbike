@@ -7,7 +7,7 @@ push @temp_blocking,
          'text' => 'Weinmeisterstr. (Mitte) in Richtung Alexanderplatz gesperrt',
          'from' => undef,
          'id' => 1567,
-         'data' => '#: last_checked: 2011-08-31
+         'data' => '#: last_checked: 2012-01-05
 userdel	q4::inwork; 10350,13376 10527,13257
 ',
          'type' => 'gesperrt'
@@ -991,7 +991,16 @@ userdel	3 13034,7319 13047,7234 13150,7254
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'IM_018078',
+         'until' => 1356969600,
+         'text' => 'Berliner Str. (Pankow): Baustelle, Fahrtrichtung gesperrt (bis Ende 12/2012) stadteinwärts zwischen Breite Str. und Florastr. ',
+         'from' => 1254641760,
+         'id' => 2172,
+         'data' => 'userdel	q4::inwork; 10680,18380 10755,18231 10829,18083 10846,17992
+',
+         'type' => 'handicap'
+       },
        undef,
        undef,
        undef,
@@ -1297,6 +1306,26 @@ userdel	q4::inwork 18286,11275 18059,11248
          'data' => 'userdel	q4::inwork 10723,14772 10838,14962 10881,15047
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_016853',
+         'until' => 1334322000,
+         'text' => 'Heinrich-Mann-Str. (Pankow): Baustelle, Straße vollständig gesperrt (bis Mitte 04/12) in beiden Richtungen zwischen Schönholzer Str. und Cottastr. ',
+         'from' => 1295269680,
+         'id' => 2309,
+         'data' => 'userdel	q4::inwork 9881,18354 9821,18392
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_018330',
+         'until' => 1327618800,
+         'text' => 'Str. des 17. Juni (Tiergarten) in beiden Richtungen zwischen Yitzhak-Rabin-Str. und Ebertstr. Veranstaltung, Straße vollständig gesperrt (06.01.2012 06 Uh bis 26.01.12, ca. 18:00 Uhr) ',
+         'from' => 1325718000,
+         'id' => 2310,
+         'data' => 'userdel	2::temp 8538,12245 8214,12205 8089,12190
+',
+         'type' => 'gesperrt'
        }
      
 );

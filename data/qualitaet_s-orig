@@ -224,7 +224,9 @@ Finowstr.: Kopfsteinpflaster	Q2 14622,11685 14708,11820 14783,11949 14836,12045 
 Glatzer Str.: Kopfsteinpflaster	Q2 14577,11582 14645,11670
 Wiesenweg (Lichtenberg): Kopfsteinpflaster	Q2 15477,11338 15303,11412 15227,11429 15162,11458
 Wiesenweg (Lichtenberg): Asphalt	Q0 15162,11458 15055,11505
-Wartenbergstr. (Lichtenberg): Kopfsteinpflaster	Q2 15227,11429 15328,11636 15423,11667
+Wartenbergstr. (Lichtenberg): Kopfsteinpflaster	Q2 15227,11429 15328,11636
+#: XXX betoniert/asphaltiert? pr¸fen!
+Wartenbergstr. (Lichtenberg): Kopfsteinpflaster	Q2 15328,11636 15423,11667
 Tasdorfer Str.: Asphalt	Q0 15303,11412 15355,11513 15377,11555 15393,11590
 Tasdorfer Str. - Wilhelm-Guddorf-Str.: Gehwegpflasterung	Q0- 15393,11590 15423,11667
 (Gr¸nes Band): Gehwegpflasterung	Q0- 15349,11911 15298,11892 15327,11724 15328,11636 15377,11555
@@ -11913,8 +11915,10 @@ Hochkalterweg: guter Asphalt	Q0 10576,2683 10526,2694 10402,2721 10304,2743
 # 
 #: by: Bernd (modest):
 Groenerstr.: schlechtes Kopfsteinpflaster	Q3 -3258,15100 -3360,14974 -3447,14863
+# 
 #: by: elke Peters:
 Blunckstr.: guter Beton	Q0 5429,19165 5502,19162 5571,19178 5601,19204 5609,19230 5603,19320 5586,19428 5570,19473
+# 
 #: by Andreas (johnnyyen): vvv
 #: confirmed_by: srt
 Friedrich-Wilhelm-Str.: Asphalt	Q0 8266,5911 8385,5907
@@ -11923,8 +11927,10 @@ Friedrich-Wilhelm-Str.: Kopfsteinpflaster	Q2 8385,5907 8622,5867 8801,5844 8988,
 #: XXX wahrscheinlich asphaltiert, pr¸fen!
 Friedrich-Wilhelm-Str.: Kopfsteinpflaster	Q2 8988,5821 9176,5803 9378,5773 9670,5728
 #: by: ^^^
+# 
 #: by: Thomas Pˆrs:
 Drachenfelsstr.: guter Asphalt	Q0- 18945,8547 18951,8574 18956,8618 18945,8660 18927,8702 18899,8744 18857,8790
+# 
 #: by: Andrea Kliche: vvv
 #: note: ein anonymer Eintrag hat einen (diesen?) Mittelweg mit "loser Sandweg" attributiert:
 #: corrected_by: srt (Q2 -> Q0) "kein radweg, viele parkende autos, daher m‰ﬂig befahrbar"
@@ -11940,9 +11946,14 @@ Hagedornstr.: m‰ﬂiger Asphalt	Q0- 17803,5303 17855,5236 17906,5170 18030,5010 18
 #: corrected_by: srt (Asphalt -> Kleinkopfsteinpflaster)
 Hagedornstr.: Kleinkopfsteinpflaster	Q1 18116,4898 18202,4786
 #: by: ^^^
+# 
 #: by: Petra (ploewe...): vvv
 #: confirmed_by: srt (ˆstlicher Abschnitt)
-Stegerwaldstr.: guter Asphalt	Q0 8799,1380 8765,1363 8668,1409 8642,1422 8569,1457 8482,1502 8381,1550 8246,1616 8147,1663 8074,1698
+Stegerwaldstr.: guter Asphalt	Q0 8799,1380 8765,1363 8668,1409 8642,1422 8569,1457 8482,1502
+#: XXX hier scheint Kopfsteinpflaster zu liegen, pr¸fen (Petra meinte "guter Asphalt, Q0")
+Stegerwaldstr.: Kopfsteinpflaster	Q2 8482,1502 8381,1550
+#: XXX auch pr¸fen! (kˆnnte aber Asphalt sein)
+Stegerwaldstr.: guter Asphalt	Q0 8381,1550 8246,1616 8147,1663 8074,1698
 #: note: laut ADFC-Karte gut geeignet:
 An der Heilandsweide: asphaltiert	Q0 8077,1259 8203,1194
 #: corrected_by: srt (Gehwegsteine -> Verbundsteinpflaster)
@@ -11987,10 +11998,13 @@ Daffingerweg: m‰ﬂiger Asphalt, Fahrbahnsch‰den	Q1 26350,13068 26531,13280 26575,
 # 
 #: by: Martin Figur:
 Teschendorfer Weg: guter Beton	Q0 7280,20895 7093,20874 6955,20859
+# 
 #: by: Lydia Moldenhauer:
 Woelckpromenade: guter Asphalt	Q0 13632,16305 13726,16506 13706,16535 13756,16620 13855,16729
+# 
 #: by: Martina (flomo007...):
 Stockumer Str.: guter Asphalt	Q0 2146,18839 2268,18852 2382,18834 2504,18836 2556,18855 2579,18896 2585,19091
+# 
 #: by: Diethelm Wandelburg
 Gawanstr.: Beton	Q0 1747,24606 1542,24676 1400,24693 1300,24687 1225,24723 1112,24821
 # 
@@ -12053,8 +12067,10 @@ Saalmannstr.: m‰ﬂiges Kopfsteinpflaster	Q2- 5171,18785 5181,19037
 # 
 #: by: Sylvie Kunert:
 Ifenpfad: guter Asphalt	Q0 10187,1345 10276,1383
+# 
 #: by: Christoph Winkelmann:
 Karl-Egon-Str.: schlechtes Kopfsteinpflaster	Q3 18457,9343 18430,9199 18406,9052 18372,8869
+# 
 #: by: Knut (knulo):
 Humperdinckstr.: m‰ﬂiges Kopfsteinpflaster	Q2 5783,3182 5933,3261 5988,3283 6039,3275
 # 
@@ -12087,11 +12103,14 @@ Tizianstr.: m‰ﬂiger Asphalt	Q1 26444,13031 26605,13217 26792,13441
 # 
 #: by: Dennis (jansen):
 Glauberstr.: schlechtes Kopfsteinpflaster	Q3 5556,984 5455,1150 5421,1205 5411,1259
+# 
 #: by: Dennis Schulze:
 #: confirmed_by: srt (Q3 -> Q3+)
 Kalkseestr.: schlechtes Kopfsteinpflaster	Q3+ 26500,4936 26496,5047 26492,5099 26488,5292
+# 
 #: by: Lothar Belitz:
 Klaushager Weg: guter Asphalt	Q0 2582,23814 2711,23694 2807,23574 2842,23482 2917,23398 2975,23330
+# 
 #: by: Juliane (ackjack):
 Lahrer Pfad: gute Qualit‰t	Q0 5044,22739 5142,22581
 # 
@@ -12169,10 +12188,13 @@ Odilostr.: m‰ﬂiger Beton	Q1 3216,24135 3311,24150 3483,24186 3632,24214 3771,242
 # 
 #: by: panik (666):
 Westfalenring: m‰ﬂiger Beton	Q1 4068,406 4079,354 4066,277 4029,144 3939,109 3922,111 3837,166 3795,221 3729,324
+# 
 #: by: Stephan Schulze:
 T‰ubchenstr.: Asphalt	Q0 -862,4542 -947,4303
+# 
 #: by: Chris Stader:
 Masurenstr.: m‰ﬂiger Asphalt	Q1 10894,17470 10670,17458
+# 
 #: by: Gudrun Feix:
 Martin-Opitz-Str.: Kopfsteinpflaster	Q2 8236,16071 8077,16178 7987,16332
 # 
@@ -12242,6 +12264,7 @@ Rue du Commandant Jean Toulasne: Kopfsteinpflaster, kurzer Abschnitt mit Asphalt
 # 
 #: by: pelo1970@... (pitt):
 Wendelsteinweg: guter Asphalt	Q0 9664,3404 9680,3369 9701,3357 9911,3310 10039,3281 10167,3257 10285,3231 10367,3214
+# 
 #: by: Christine Giese:
 Riensbergstr.: guter Beton	Q0 -663,14996 -707,15108 -735,15280 -740,15306 -764,15480
 # 
@@ -12262,8 +12285,10 @@ Toblacher Str.: m‰ﬂiger Asphalt	Q1 10656,17018 10654,17091
 #: by: Angela (omi2006):
 #: confirmed_by: srt
 Lammersdorfer Weg: Beton	Q0 21749,9856 21782,10007 21825,10203
+# 
 #: by: Klaus Bˆttcher:
 Reinickes Hof: schlecher Asphalt	Q2 5389,18907 5274,18923 5281,18996
+# 
 #: by: sabrina (achtelstetter8):
 Rabensteiner Str.: guter Beton	Q0- 21726,17974 21748,17963 21847,17915 21881,17976 21950,17996 22007,17969 22035,18019 22058,18066
 # 
@@ -19542,6 +19567,7 @@ Steinbockstr.: Asphalt	Q0 14775,7385 14840,7307 14848,7288 14878,7211
 #: corrected_by: srt (Kopfsteinpflaster -> Asphalt)
 Steinbockstr.: Asphalt	Q0 14840,7307 14861,7316 14868,7297 14848,7288
 #: by: ^^^
+# 
 #: by: Christian Schweda [AM] vvv
 #: corrected_by: srt (Q2 -> Q1-)
 Johannes-Zoschke-Str.: m‰ﬂiger Asphalt	Q1- 19020,9364 19030,9530
@@ -19555,6 +19581,7 @@ Rheinpfalzallee: Kopfsteinpflaster	Q2 19128,9523 19221,9517
 #: corrected_by: srt (Q1 -> Q0; wahrscheinlich wurde gegen 2007-10-15 der Asphaltbelag erneuert)
 Rheinpfalzallee: Asphalt	Q0 19221,9517 19424,9502 19510,9497 19651,9489
 #: by: ^^^
+# 
 #: by: Sandra Tabbert (Luzifera) [AM]
 #: corrected_by: srt (Q1 -> Q2)
 Drˆssestr.: m‰ﬂiges Kopfsteinpflaster	Q2 21169,1279 21078,1168 20971,1046
@@ -19562,9 +19589,11 @@ Drˆssestr.: m‰ﬂiges Kopfsteinpflaster	Q2 21169,1279 21078,1168 20971,1046
 Schirnerstr.: schlechtes Kopfsteinpflaster	Q3 20751,566 20846,681 20960,819 21047,927 21278,1205
 #: corrected_by: srt (Q1 -> Q0)
 Preuﬂenstr.: Asphalt	Q0 21202,727 21136,815 21047,927
+# 
 #: by: Anke, Dorle [AM]
 #: corrected_by: srt (Q1 -> Q0, einfach so, und "guter" Asphalt)
 Germaniapromenade: guter Asphalt	Q0 12154,6063 12263,6086 12388,6114 12503,6139 12628,6166
+# 
 #: by: Anke Busse vvv
 #: confirmed_by: srt
 Friedrichsbrunner Str.: schlechtes Kopfsteinpflaster	Q3 12246,6227 12263,6086
@@ -19572,6 +19601,7 @@ Friedrichsbrunner Str.: schlechtes Kopfsteinpflaster	Q3 12246,6227 12263,6086
 Friedrichsbrunner Str.: Asphalt	Q0 12263,6086 12270,6025
 #: confirmed_by: srt
 Friedrichsbrunner Str.: schlechtes Kopfsteinpflaster	Q3 12270,6025 12284,5929 12301,5783
+#: XXX pr¸fen: ist das Kopfsteinpflaster schlecht oder eher m‰ﬂig?
 Braunlager Str.: schlechtes Kopfsteinpflaster	Q3 12062,5779 12168,5855 12284,5929
 #: confirmed_by: srt
 Walkenrieder Str: schlechtes Kopfsteinpflaster	Q3 12370,6196 12388,6114 12420,5984 12437,5946
@@ -19582,19 +19612,23 @@ Suderoder Str. (Britz): Asphalt	Q0 12437,5946 12481,5935 12523,5945 12537,5964 1
 Am Straﬂenbahnhof: Asphalt	Q0 12582,5232 12525,5510
 Am Straﬂenbahnhof: Beton	Q1 12525,5510 12490,5680
 #: by: ^^^
+# 
 #: by: anonymous [AM]
 Ahrenshooper Zeile: Kopfsteinpflaster	Q3 -1882,3643 -1782,3311 -1709,3080 -1654,2909 -1612,2785
+# 
 #: by: Adrian Fiedler [AM] vvv
 #: confirmed_by: srt
 Memlingstr.: schmaler, m‰ﬂiger Asphaltstreifen, sonst schlechtes Kopfsteinpflaster	Q2-; 4025,3958 4134,3825
 Memlingstr.: sehr schlechtes Kopfsteinpflaster	Q3; 4134,3825 4025,3958
 Memlingstr.: sehr schlechtes Kopfsteinpflaster	Q3 4134,3825 4265,3661
 #: by: ^^^
+# 
 #: by: Chantal [AM] vvv
 Rettigweg: schlechtes Kopfsteinpflaster	Q2- 9828,17659 9760,17612 9706,17570
 Pradelstr.: m‰ﬂiger Asphalt	Q2 9760,17612 9663,17734
 Friedrich-List-Ufer: sehr guter Asphalt	Q0 8110,13042 8106,13130 8102,13304 8098,13419
 #: by: ^^^
+# 
 #: by: anonymous [AM]
 Reinbeckstr.: Kopfsteinpflaster	Q2 18343,6318 18310,6223
 # 

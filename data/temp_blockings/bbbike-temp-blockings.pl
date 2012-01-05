@@ -13318,7 +13318,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_011184',
        data  => <<EOF,
-#: last_checked: 2011-08-31
+#: last_checked: 2012-01-05
 userdel	q4::inwork; 10350,13376 10527,13257
 EOF
      },
@@ -18660,8 +18660,8 @@ userdel	q4::inwork 21233,6096 20722,6971
 EOF
      },
      { from  => 1254641760, # 2009-10-04 09:36
-       until => 1325520000, # 2012-01-02 17:00
-       text  => 'Berliner Str. (Pankow): Baustelle, Fahrtrichtung gesperrt stadteinwärts zwischen Breite Str. und Florastr., 05.10.2009 09:36 Uhr bis 02.01.2012 17:00 Uhr ',
+       until => 1356969600, # 2012-12-31 17:00
+       text  => 'Berliner Str. (Pankow): Baustelle, Fahrtrichtung gesperrt (bis Ende 12/2012) stadteinwärts zwischen Breite Str. und Florastr. ',
        type  => 'handicap',
        source_id => 'IM_018078',
        data  => <<EOF,
@@ -19940,6 +19940,24 @@ EOF
        source_id => 'IM_017746',
        data  => <<EOF,
 userdel	q4::inwork 10723,14772 10838,14962 10881,15047
+EOF
+     },
+     { from  => 1295269680, # 2011-01-17 14:08
+       until => 1334322000, # 2012-04-13 15:00
+       text  => 'Heinrich-Mann-Str. (Pankow): Baustelle, Straße vollständig gesperrt (bis Mitte 04/12) in beiden Richtungen zwischen Schönholzer Str. und Cottastr. ',
+       type  => 'handicap',
+       source_id => 'IM_016853',
+       data  => <<EOF,
+userdel	q4::inwork 9881,18354 9821,18392
+EOF
+     },
+     { from  => 1325718000, # 2012-01-05 00:00
+       until => 1327618800, # 2012-01-27 00:00
+       text  => 'Str. des 17. Juni (Tiergarten) in beiden Richtungen zwischen Yitzhak-Rabin-Str. und Ebertstr. Veranstaltung, Straße vollständig gesperrt (06.01.2012 06 Uh bis 26.01.12, ca. 18:00 Uhr) ',
+       type  => 'gesperrt',
+       source_id => 'IM_018330',
+       data  => <<EOF,
+userdel	2::temp 8538,12245 8214,12205 8089,12190
 EOF
      },
     );
