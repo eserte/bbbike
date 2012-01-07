@@ -77,12 +77,14 @@ Alias [% ROOT_URL %]  [% ROOT_DIR %]
     </Location>
 </IfModule>
 
-<LocationMatch "^\Q[% ROOT_URL %]\E/data/[^/]+$">
-    # This is needed to get the data files compressed.
-    # The Content-Type is also text/plain if this is not set,
-    # but somehow mod_deflate does not work otherwise...
-    Header Set Content-Type text/plain
-</LocationMatch>
+<IfModule mod_headers.c>
+    <LocationMatch "^\Q[% ROOT_URL %]\E/data/[^/]+$">
+        # This is needed to get the data files compressed.
+        # The Content-Type is also text/plain if this is not set,
+        # but somehow mod_deflate does not work otherwise...
+        Header Set Content-Type text/plain
+    </LocationMatch>
+</IfModule>
 
 [% IF 0 -%]
 [%# compression by AddOutputFilterByType is smarter ... -%]
