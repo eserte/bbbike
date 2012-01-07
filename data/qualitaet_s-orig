@@ -75,7 +75,7 @@ Großgörschenstr.: Kopfsteinpflaster, OK	Q1 7771,9479 7882,9490
 Waldemarstr.: Kopfsteinpflaster	Q2+ 11556,10869 11328,10957
 Waldemarstr.: Kopfsteinpflaster	Q2 11328,10957 11290,10972
 Waldemarstr.: Kopfsteinpflaster	Q2+ 11290,10972 11150,11030
-Erkelenzdamm: Kopfsteinpflaster	Q2 11038,10247 11094,10261 11117,10326 11134,10383 11109,10423 11145,10510 11210,10668 11244,10653 11258,10682
+Erkelenzdamm: Kopfsteinpflaster	Q2 11038,10247 11094,10261 11117,10326 11134,10383 11109,10423 11145,10510 11190,10619 11210,10668 11244,10653 11258,10682
 Leuschnerdamm: Kopfsteinpflaster	Q2 11275,10723 11301,10783 11264,10804 11328,10957 11365,11047 11421,11073 11458,11136 11473,11180
 Legiendamm: Kopfsteinpflaster	Q2 11349,11227 11337,11197 11323,11164
 Legiendamm: asphaltiert	Q0 11323,11164 11307,11125 11329,11065 11290,10972
@@ -6722,6 +6722,8 @@ Varian-Fry-Str.: Kleinsteinpflaster	Q1 8374,11479 8389,11378
 Wiesenschlag: Asphalt	Q0 -2074,2258 -2036,2150
 Elisabeth-Schwarzhaupt-Platz: Gehwegplatten	Q0 9274,13963 9167,14127
 (Bornsdorfer Str. - Werbellinstr.): Verbundsteinpflaster	Q1 12668,8077 12650,8164
+(Erkelenzdamm - Prinzessinnenstr.): teilweise Kopfsteinpflaster	Q2 11190,10619 11145,10638
+/Zufahrt am NKZ): Verbundsteinpflaster	Q1 11311,10505 11291,10438
 ######################### User Contributions #################################
 #: by: anonymous vvv
 # 
@@ -19549,8 +19551,8 @@ Erich-Kunz-Str.: Beton	Q0- 18354,10600 18345,10575 18285,10550 18232,10532 18150
 Erich-Kunz-Str.: Beton	Q0- 18285,10550 18332,10434 18342,10384 18326,10362 18264,10343
 Erich-Kunz-Str.: Beton	Q0- 18446,10620 18397,10608 18354,10600 18325,10606
 #: corrected_by: srt (Beton -> Asphalt)
-Franz-Mett-Str.: Asphalt, mit Schäden	Q1 18059,11248 18105,10997 18117,10933 18198,10864 18296,10754 18368,10763 18408,10774
-Franz-Mett-Str.: Beton	Q0- 18368,10763 18397,10608
+Franz-Mett-Str.: Asphalt, mit Schäden	Q1 18059,11248 18105,10997 18117,10933 18198,10864 18296,10754 18368,10763
+Franz-Mett-Str.: Beton	Q0- 18368,10763 18374,10729 18397,10608
 #: by: ^^^
 # 
 #: by: Matha Wimmer [AM] vvv

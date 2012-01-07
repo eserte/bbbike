@@ -295,16 +295,14 @@ Neue Planstraße: bereits fertig, Asphalt, z.Zt. wegen umliegenden Bauarbeiten ge
 Theanolte-Bähnisch-Str.: entsteht die Straße hier?	? 11314,13087 11230,13134
 #: XXX ^^^
 # 
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/05re.pdf/file
-#: last_checked: 2011-02-27
-#: next_check: 2011-05-14
-Franz-Mett-Str.: Einfahrt wird Richtung Süden verlegt, prüfen!	?::inwork 18417,10738 18395,10732 18368,10763
+#XXX del --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/05re.pdf/file --- #: last_checked: 2011-02-27 --- #: next_check: 2011-05-14 --- Franz-Mett-Str.: Einfahrt wird Richtung Süden verlegt, prüfen!	?::inwork 18417,10738 18395,10732 18368,10763
 # 
-#: last_checked: 2011-10-22
-#: next_check: 2011-12-01
+#: last_checked: 2012-01-07
+#: next_check: 2012-02-15
 #: XXX In der Nähe: Auch Sperrung der Alfred-Kowalke-Str., aber Anliegerverkehr ist hier möglich (bis Ende September 2011)
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110627.1115.349371.html
-Am Tierpark: nach den Bauarbeiten vielleicht Radwege/-spuren?	?::inwork 18220,11710 18228,11656 18268,11391 18286,11275 18343,11041 18408,10774 18417,10738 18446,10620
+#: XXX zurzeit (2012-01) ist die Farbahn in beiden Richtungen für Radfahrer *verboten*
+Am Tierpark: nach den Bauarbeiten vielleicht Radwege/-spuren?	?::inwork 18220,11710 18228,11656 18268,11391 18286,11275 18343,11041 18417,10738 18446,10620
 # 
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20101221.1110.323849.html
 #: XXX: Vorfahrtsregelung kann dann entfernt werden
@@ -346,6 +344,13 @@ Buschwindröschenweg	?::projected 21354,142 21379,33
 Kletterrosenweg	?::projected 21382,149 21354,289
 #: next_check ^^^
 #: last_checked ^^^
+# 
+#: XXX eventuell entstehen hier auch Straßen und Wege
+#: by: https://www.berlin.de/ba-treptow-koepenick/bvv-online/___tmp/tmp/45081036851664381/851664381/00079477/77-Anlagen/02/DRS0026VK.pdf
+#: next_check: 2013-01-01 vvv
+	?::projected 21318,366 21449,441
+	?::projected 21894,561 21776,418
+#: next_check: ^^^
 # 
 #: next_check: 2012-02-01
 An der Barthschen Promenade: vielleicht wird die Straße in Zukunft sich hier befinden	?::projected 8954,8914 8814,8917
@@ -497,8 +502,8 @@ Eisenhutweg: Radwege entstehen im Zuge der Bauarbeiten bis September 2011	?::inw
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0802/nachricht2961.html
 B96a: Neubau der Radwege (gemeinsam mit Gehweg); wahrscheinlich wird der Radstreifen dann aufgehoben (bis 2010-01-01)	?::inwork 9228,23643 9146,23843 8984,24078 8891,24330 8826,24501 8682,24883 8665,24941 8661,24952 8571,25180 8548,25239 8493,25378
 # 
-#: last_checked: 2011-11-25
-#: next_check: 2012-01-01
+#: last_checked: 2012-01-06
+#: next_check: 2012-02-07
 #: by: http://www.stadtumbau-berlin.de/O-W-Gruenzug-Fussgaenger-und-Radfahrersteg.4699.0.html
 #: by: http://www.stadtumbau-berlin.de/fileadmin/images/Dokumentation/Projektdokumentation/Tempelhof-Schoeneberg/FG_Suedkreuz/Naumannstrasse/Karten/Lageplan_Naumann_Leuthener-Platz.pdf (begleitende Verkehrsberuhigung in der Naumannstraße)
 Brücke über Bahntrasse: Fertigstellung? Name der Brücke?	?::inwork 7893,8327 8094,8290 8093,8251
@@ -543,6 +548,19 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 # die Datenbank aufgenommen werden sollen und somit nicht öffentlich sind.
 # Das heißt diese Strecken werden nicht bei einer erweiterten Suche aufgenommen
 # und dem CGI-Benutzer auch nicht präsentiert.
+# 
+# 
+Am Findling (Potsdam): existiert eine Ausschilderung?	? -9723,-2451
+# 
+#: by: http://www.potsdam.de/cms/ziel/996205/DE/ vvv
+Radspurensituation?	? -10559,-1901 -10588,-1975 -10633,-2086 -10673,-2128
+Radspurensituation?	? -9723,-2451 -9788,-2430 -9840,-2413 -9982,-2371
+Abknickende Vorfahrt? Radspurensituation?	? -10360,-1934 -10350,-1997 -10255,-2039
+Radschutzstreifen, genaue Situation?	? -9620,-4939 -9642,-4916 -9862,-4705 -9872,-4694 -9928,-4643 -10072,-4507 -10170,-4416 -10183,-4402 -10225,-4366 -10281,-4316 -10334,-4269 -10371,-4237 -10400,-4212 -10463,-4157 -10634,-4001 -10682,-3960
+#: by: ^^^
+# 
+#: XXX siehe osm:
+Potsdam, Lutherplatz: ist dieser Abschnitt als Lutherplatz ausgeschildert?	? -10673,-2128 -10772,-2153
 # 
 Braunlager Str.: Verbindungsweg prüfen	? 12017,5747 12062,5779
 # 
