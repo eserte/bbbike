@@ -151,6 +151,10 @@ DBD::XBase	- Für das Parsen des ESRI-Shapefile-Formats
 
 XBase	- Ebenfalls für das Parsen des ESRI-Shapefile-Formats
 
+Geo::GDAL	- Für das Parsen des ESRI-Projection-Formats
+
+Geo::Proj4	- Für das Konvertieren von ESRI-Shapefiles
+
 DBD::mysql	- Für den Zugriff auf die Hausnummerdatenbank
 
 Tie::IxHash	- Damit Direktiven in Straßen-Daten geordnet bleiben

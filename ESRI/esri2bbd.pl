@@ -5,7 +5,7 @@
 # $Id: esri2bbd.pl,v 1.12 2003/11/11 23:32:25 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2001,2003 Slaven Rezic. All rights reserved.
+# Copyright (C) 2001,2003,2012 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #

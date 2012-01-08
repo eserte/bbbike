@@ -1,10 +1,9 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeESRI.pm,v 1.16 2007/10/13 17:39:56 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2002 Slaven Rezic. All rights reserved.
+# Copyright (C) 2002,2012 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -63,6 +62,17 @@ sub as_bbd {
 	}
     }
 
+    my $is_polar;
+    if (!$conv && $self->Projection) {
+	$is_polar = 1;
+	$conv = sub {
+	    map {
+		my($lat,$lon) = $self->Projection->convert_to_polar(@$_);
+		$lon.",".$lat;
+	    } @{ $_[0] }
+	};
+    }
+
     if (!$conv) {
 	$conv = \&BBBikeESRI::null_conv;
     }
@@ -104,6 +114,15 @@ sub as_bbd {
     if ($args{-afterhook} && ref $args{-afterhook} eq 'CODE') {
 	# in:  row index, coordinates
 	$afterhook = $args{-afterhook};
+    }
+
+    my $bbd_preamble = "";
+    if ($is_polar) {
+	$bbd_preamble .= "#: map: polar\n#:\n";
+    }
+
+    if ($outfh && length $bbd_preamble) {
+	print $outfh $bbd_preamble;
     }
 
     my $inx = 0;
@@ -162,7 +181,7 @@ sub as_bbd {
     }
 
     if ($s ne "") {
-	return $s;
+	return $bbd_preamble . $s;
     }
 }
 
