@@ -24,11 +24,13 @@ my $dbfcol;
 my $forcelines;
 my $do_int;
 my $do_autoconv;
+my $verbose;
 if (!GetOptions("dbfinfo=s"   => \$dbfinfo,
 		"dbfcol=i"    => \$dbfcol,
 		"forcelines!" => \$forcelines,
 		"int|integer!"=> \$do_int,
 		"autoconv!"   => \$do_autoconv,
+		"v"           => \$verbose,
 	       )) {
     usage();
 }
@@ -45,6 +47,11 @@ sub usage {
 
 my $from = shift or usage("ESRI file missing");
 my $to   = shift or usage("Output file missing");
+
+if ($verbose) {
+    $ESRI::Shapefile::verbose = 1;
+    $ESRI::Shapefile::verbose = $ESRI::Shapefile::verbose if 0; # cease -w
+}
 
 my $shapefile = new ESRI::Shapefile;
 $shapefile->set_file($from);
@@ -71,7 +78,7 @@ esri2bbd.pl - convert ESRI shapefiles to bbd data
 =head1 SYNOPSIS
 
     esri2bbd.pl [-dbfinfo string] [-dbfcol columnindex] [-forcelines]
-                [-int] [-autoconv]
+                [-int] [-autoconv] [-v]
                 esrifile bbdfile
 
 =head1 DESCRIPTION
@@ -102,6 +109,10 @@ Convert coordinates from float into integers.
 =item -autoconv
 
 Automatically convert coordinates to fit in the bbbike application.
+
+=item -v
+
+Increase verbosity.
 
 =back
 
