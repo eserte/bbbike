@@ -14,6 +14,8 @@
 package BBBikeESRI;
 use strict;
 use ESRI::Shapefile;
+use vars qw($VERSION);
+$VERSION = '0.02';
 
 sub null_conv {
     map {
@@ -106,7 +108,8 @@ sub as_bbd {
     my $handle_all;
     if ($args{-handleall} && ref $args{-handleall} eq 'CODE') {
 	# in:  row index, coordinates
-	# out: name, category, coordinates ref (or empty list to skip)
+	# out: [name, category, coordinates ref], [...] (or empty list to skip)
+	# NOTE: before BBBikeESRI 0.02, it was only possible to return one or no record
 	$handle_all = $args{-handleall};
     }
 
@@ -140,8 +143,8 @@ sub as_bbd {
 	    }
 	    @coords = map { $conv->($_) } @coords;
 	    my(@res) = $handle_all->($inx, \@coords);
-	    if (@res) {
-		print $outfh "$res[0]\t$res[1] " . join(" ", @{$res[2]}) . "\n";
+	    for my $res (@res) {
+		print $outfh "$res->[0]\t$res->[1] " . join(" ", @{$res->[2]}) . "\n";
 	    }
 	    _call_afterhook($afterhook, $inx, \@coords);
 	} else {
@@ -232,7 +235,7 @@ sub as_attribute_bbd {
 	    }
 	}
 
-	($name, $cat, $coords_ref);
+	[$name, $cat, $coords_ref];
     };
 
     my $afterhook;
@@ -256,8 +259,8 @@ sub as_attribute_bbd {
 	}
 	@coords = map { $conv->($_) } @coords;
 	my(@res) = $handle_all->($inx, \@coords);
-	if (@res) {
-	    $s.="$res[0]\t$res[1] " . join(" ", @{$res[2]}) . "\n";
+	for my $res (@res) {
+	    $s.="$res->[0]\t$res->[1] " . join(" ", @{$res->[2]}) . "\n";
 	}
 	_call_afterhook($afterhook, $inx, \@coords);
     } continue {
