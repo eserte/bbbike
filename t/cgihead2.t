@@ -33,7 +33,7 @@ use constant MSDOS_MIME_TYPE => qr{^application/(octet-stream|x-msdos-program|x-
 {
     use POSIX qw(strftime);
     use constant TODO_ADFC_ERRORS => 1; # "2010-09-01T12:00:00" gt strftime("%FT%T", localtime) && 'Redirects on adfc server do not work';
-    use constant TODO_FREEBSD_PKG_ERRORS => "2012-01-08T12:00:00" gt strftime("%FT%T", localtime) && 'BBBike packages for FreeBSD not available, need more research';
+    use constant TODO_FREEBSD_PKG_ERRORS => "2012-01-22T12:00:00" gt strftime("%FT%T", localtime) && 'BBBike packages for FreeBSD not available, need more research';
 }
 
 my @var;
