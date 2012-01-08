@@ -96,7 +96,8 @@ has to be C<NAME>.
 =item -dbfcol columnindex
 
 Use the specified column from the DBase database to set the "name"
-attribute of the generated bbd file.
+attribute of the generated bbd file. Index is zero-based. Currently
+the option C<-dbfinfo NAME> also has to be set.
 
 =item -forcelines
 
@@ -116,7 +117,17 @@ Increase verbosity.
 
 =back
 
-=head1 HOWTO use ESRI shapefiles in bbbike
+=head2 COORDINATE CONVERSION
+
+If the perl modules L<Geo::GDAL> and L<Geo::Proj4> are installed and
+the ESRI shapefile comes with a projection file ending with C<.prj>,
+then the converted bbd file will contain WGS84 coordinates which can
+be plotted and used directly in BBBike.
+
+Otherwise, you have to try out the C<-autoconv> switch and follow the
+instructions outlined in L</HOWTO use ESRI shapefiles in bbbike>.
+
+=head2 HOWTO use ESRI shapefiles in bbbike
 
 Here are some checkpoints for using ESRI shapefiles in bbbike routing:
 
