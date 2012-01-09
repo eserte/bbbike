@@ -360,7 +360,7 @@ An der Barthschen Promenade: vielleicht wird die Straﬂe in Zukunft sich hier bef
 #: last_checked: 2012-01-02
 #: next_check: 2012-04-15
 #: XXX Bauarbeiten in Gange
-Am Sudhaus: wo genau wird die Straﬂe verlaufen? Qualit‰t?	? 12148,8174 12227,8190
+Am Sudhaus: wo genau wird die Straﬂe verlaufen? Qualit‰t?	? 12148,8174 12271,8197
 # 
 #XXX del --- ja, Straﬂe sieht anscheinend fertig aus --- #: last_checked: 2010-10-02 vvv --- #: next_check: 2010-12-01 (public) vvv --- Groﬂ-Berliner Damm: ist der Radweg Richtung Norden zwischen Segelfliegerdamm und Sterndamm schon fertig gebaut?	?::inwork; 18050,4649 17956,4787 17885,4912 17780,5086 17769,5107 17735,5170 17705,5223 17645,5328 --- Groﬂ-Berliner Damm/Nieberstr.: ist die Ampel bereits in Betrieb?	?::inwork 17885,4912 --- #: next_check ^^^ --- #: last_checked ^^^
 # 
@@ -2002,7 +2002,8 @@ Gurkensteig: Qualit‰t?	? 8548,25239 8654,25299 8735,25366
 Wiesenweg (Blankenfelde): Qualit‰t?	? 8571,25180 8631,25217 8656,25251 8706,25262 8722,25296 8776,25332
 Kiesweg (Blankenfelde): Qualit‰t?	? 9863,26000 10108,26150
 Feldweg (Blankenfelde): Qualit‰t?	? 9884,25936 10081,26057
-Feldweg (Bohnsdorf): Qualit‰t?	? 20829,-773 21055,-723 21209,-734
+#: XXX siehe detailnetz: macht die Straﬂe zur Autobahn hin einen Knick?
+Feldweg (Bohnsdorf): Qualit‰t? Feldstr. oder Feldweg (Ausschilderung?)?	? 20829,-773 21055,-723 21209,-734
 # XXX: wo ist diese Straﬂe??? Feldweg|Franzˆsisch Buchholz|13127|
 Prinz-Friedrich-Karl-Weg: Qualit‰t?	? -1100,12210 -1172,12336 -824,12557 -646,12658
 Sonnenhof: Qualit‰t?	? 606,9463 612,9471 600,9480 586,9463 590,9456 599,9452 606,9463
@@ -3212,9 +3213,21 @@ Bˆrnicke - Staffelde: existieren Radwege zwischen Bˆrnicke und Staffelde?	? -217
 Sotzmannstr.: Qualit‰t? Ist das tats‰chlich die Sotzmannstr.?	? -4629,12835 -4558,12992 -4610,13010 -4601,13112 -4634,13173
 #XXX del --- hier ist nur ein Einkaufszentrum --- #: XXX fehlt bei Berlin.coords.data: --- M‰rkische Zeile: gibt es tats‰chlich einen Weg diesen Namens hier? F¸r Radfahrer relevant?	? 6855,21481 6874,21183
 Langenbeckstr.: ist die gesamte Straﬂe asphaltiert?	? 24793,9860 25020,9728
-Alexander-Meiﬂner-Str.: Qualit‰t? Ist die Straﬂe schon komplett fertiggestellt? Gibt es auch im s¸dlichen Teil Radwege?	? 20078,-1029 20387,-1369 20431,-1896
+Alexander-Meiﬂner-Str.: Qualit‰t? Ist die Straﬂe schon komplett fertiggestellt? Gibt es auch im s¸dlichen Teil Radwege?	? 20078,-1029 20414,-1370 20464,-1730
 #: XXX fehlt in Berlin.coords.data, PLZ=12526:
-Ludwig-Prandtl-Str.: Qualit‰t? Ist die Straﬂe schon komplett fertiggestellt?	? 19684,-1221 19871,-1192 19924,-1157 20078,-1029 20243,-870
+Ludwig-Prandtl-Str.: Qualit‰t? Ist die Straﬂe schon komplett fertiggestellt?	? 19626,-1318 19855,-1214 19924,-1157 20078,-1029 20342,-777
+# 
+#: by: detailnetz vvv
+#: XXX fehlt in Berlin.coords.data vvv
+Gebr¸der-Hirth-Str.: Qualit‰t? Ist die Straﬂe schon komplett fertiggestellt?	? 19626,-1318 19678,-1500 19686,-1705
+Melitta-Schiller-Str.: Qualit‰t? Ist die Straﬂe schon komplett fertiggestellt?	? 20050,-1715 20016,-1479 19855,-1214
+Rita-Maiburg-Str.: Qualit‰t? Ist die Straﬂe schon komplett fertiggestellt?	? 20342,-777 20761,-1166 20773,-1234 20872,-1748
+#: XXX ^^^
+Hufenstr.: existiert diese Verl‰ngerung? Qualit‰t?	? 20814,-935 20773,-1234
+Blindschleichengang: existert eine Verbindung zur Venusstr.? Qualit‰t?	? 19341,-129 19297,80
+Widosteig: exitiert eine Verbindung zum Bohnsdorfer Weg? Qualit‰t?	? 19934,1102 19987,1192
+#: by: ^^^
+# 
 #: by: http://www.cdu-fraktion-tk.de/image/inhalte/file/Amtsblatt_Nr__30.pdf
 B96a - Sch¸tzenstr.: Wo genau liegt die Verbindungsstraﬂe? Qualit‰t?	? 19858,-843 19869,-816
 Wehrmathen/Uranusstr. - Siriusstr./Ortolfstr.: Qualit‰t? D¸rfen Radfahrer hier fahren?	? 18904,-573 18928,-506 18950,-490 18997,-351

@@ -19860,12 +19860,11 @@ EOF
 userdel	2::inwork 19750,11730 19827,11686 19881,11591
 EOF
      },
-     { from  => undef, # 
-       until => undef, # XXX
+     { from  => 1325955689, # 
+       until => 1325955693, # XXX
        text  => 'Alfred-Kowalke-Str.: Bauarbeiten, teilweise muss auf den Gehweg ausgewichen werden',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2011-10-22
 userdel	q4::inwork 18286,11275 18059,11248
 EOF
      },

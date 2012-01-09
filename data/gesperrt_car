@@ -78,7 +78,7 @@ Fidicin - Mehringdamm	3 9295,9047 9224,9053 9225,9038 9227,8890
 Mangerstr. (Potsdam)	1 -12064,-284 -12108,-291 -12265,-418
 Rudolf-Breitscheid-Str.	1 -10446,-1947 -10360,-1934 -10235,-1916 -9986,-1882 -9735,-1845
 Bendastr.	1 12689,6905 12702,6846
-Bendastr.	1 12793,6407 12779,6478 12756,6578 12743,6645 12726,6727 12722,6748 12715,6775 12702,6846
+Bendastr.	1 12793,6407 12781,6470 12759,6563 12743,6645 12726,6727 12722,6748 12715,6775 12702,6846
 Puschkin/Bulgarische	1 13829,9905 13884,9882 13995,9834 14193,9746 14310,9692 14780,9480 14819,9462 15383,9191 15561,8903 15591,8848 15378,8668 15166,8489
 Karl-Marx-Str./Schönstedt	3nocross::ignrte 12500,8504 12540,8458 12562,8432 12582,8408
 Karl-Marx-Str. -> Schönstedtstr.: Karl-Marx-Str./Schönstedt	3::igndisp 12500,8504 12540,8458 12649,8535
@@ -919,17 +919,17 @@ Else-Lasker-Schüler-Str.: Poller	3 7291,10506 7245,10499 7033,10396
 (Westhafenstr. - Beusselstr.): Durchfahrt verboten, Anlieger frei	2:Anlieger 6083,14564 6025,14539 6015,14516 5997,14444 5920,14422 5217,14255
 Steinbachstr.	1 19759,4160 19703,3979 19673,3888 19587,3801
 Mittelstreifen	3nocross::ignrte 5083,7682 5066,7668 5045,7635
-Görresstr. -> Stubenrauchstr.: Mittelstreifen	3::igndisp 5158,7560 5066,7668 5067,7523
-Görresstr. -> Südwestkorso: Mittelstreifen	3::igndisp 5158,7560 5066,7668 5045,7635
-Görresstr. -> Stubenrauchstr.: Mittelstreifen	3::igndisp 5158,7560 5066,7668 5063,7784
-Stubenrauchstr. -> Südwestkorso: Mittelstreifen	3::igndisp 5067,7523 5066,7668 5045,7635
-Stubenrauchstr. -> Stubenrauchstr.: Mittelstreifen	3::igndisp 5067,7523 5066,7668 5063,7784
+Görresstr. -> Südwestkorso: Mittelstreifen	3::igndisp 5188,7536 5066,7668 5045,7635
+Görresstr. -> Stubenrauchstr.: Mittelstreifen	3::igndisp 5188,7536 5066,7668 5069,7498
+Görresstr. -> Stubenrauchstr.: Mittelstreifen	3::igndisp 5188,7536 5066,7668 5063,7784
 Südwestkorso -> Stubenrauchstr.: Mittelstreifen	3::igndisp 5045,7635 5066,7668 5063,7784
-Südwestkorso -> Görresstr.: Mittelstreifen	3::igndisp 5083,7682 5066,7668 5158,7560
-Südwestkorso -> Stubenrauchstr.: Mittelstreifen	3::igndisp 5083,7682 5066,7668 5067,7523
-Stubenrauchstr. -> Görresstr.: Mittelstreifen	3::igndisp 5063,7784 5066,7668 5158,7560
-Stubenrauchstr. -> Stubenrauchstr.: Mittelstreifen	3::igndisp 5063,7784 5066,7668 5067,7523
+Südwestkorso -> Görresstr.: Mittelstreifen	3::igndisp 5083,7682 5066,7668 5188,7536
+Südwestkorso -> Stubenrauchstr.: Mittelstreifen	3::igndisp 5083,7682 5066,7668 5069,7498
+Stubenrauchstr. -> Südwestkorso: Mittelstreifen	3::igndisp 5069,7498 5066,7668 5045,7635
+Stubenrauchstr. -> Stubenrauchstr.: Mittelstreifen	3::igndisp 5069,7498 5066,7668 5063,7784
+Stubenrauchstr. -> Görresstr.: Mittelstreifen	3::igndisp 5063,7784 5066,7668 5188,7536
 Stubenrauchstr. -> Südwestkorso: Mittelstreifen	3::igndisp 5063,7784 5066,7668 5083,7682
+Stubenrauchstr. -> Stubenrauchstr.: Mittelstreifen	3::igndisp 5063,7784 5066,7668 5069,7498
 Überqueren verboten	3nocross::ignrte 6687,8385 6807,8309 6935,8208
 Gustav-Freytag-Str. -> Feurigstr.: Überqueren verboten	3::igndisp 6779,8279 6807,8309 7012,8511
 Gustav-Freytag-Str. -> Dominicusstr.: Überqueren verboten	3::igndisp 6779,8279 6807,8309 6687,8385

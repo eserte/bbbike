@@ -720,7 +720,7 @@ Alt-Britz: schlechtes Kopfsteinpflaster	Q3 12560,4290 12596,4320 12678,4389 1283
 Bendastr.: asphaltiert	Q0 12689,6905 12702,6846
 #: by: Gabi Sieber (confirmed):
 Bendastr.: asphaltiert	Q0 12702,6846 12715,6775 12722,6748 12726,6727 12743,6645
-Bendastr.: asphaltiert	Q0 12743,6645 12756,6578 12779,6478 12793,6407 12804,6377
+Bendastr.: asphaltiert	Q0 12743,6645 12759,6563 12781,6470 12793,6407 12804,6377
 Ilsestr.: Asphalt	Q0 12664,7013 12645,7087 12632,7137 12613,7236 12601,7284 12585,7357 12561,7472
 Ilsenhof: kleinteiliges Kopfsteinpflaster	Q1 12601,7284 12465,7250
 Jonasstr.: Kopfsteinpflaster	Q2 12221,7271 12396,7312 12585,7357 12703,7370
@@ -964,7 +964,7 @@ Am Walde: Asphalt	Q0 17775,7874 17678,7850 17590,7828 17527,7812
 Prager Platz: gutes Kopfsteinpflaster	Q1 5661,9630 5657,9600 5630,9592 5602,9606 5595,9626
 Normannenstr.: Kopfsteinpflaster	Q2 16159,12301 16227,12280 16276,12273
 Rüdigerstr. (Lichtenberg): Kopfsteinpflaster	Q2 17466,12241 17314,12265 17214,12281 17163,12291 17115,12296 17056,12304 17020,12309 16918,12325 16820,12339
-Barbarossastr.: Kopfsteinpflaster	Q2 7128,9512 7010,9535
+Barbarossastr.: Kopfsteinpflaster	Q2 7128,9512 7007,9522
 Prühßstr.: Beton	Q0- 8766,4038 8967,4082
 Prühßstr.: Kopfsteinpflaster	Q2 8967,4082 9107,4103 9338,4129 9468,4162 9583,4190 9848,4254
 Marienburger Str.: Kopfsteinpflaster	Q2 11582,14448 11835,14309 12077,14186
@@ -7421,7 +7421,7 @@ Beifußweg: mäßiger Beton	Q1 15307,3683 15611,3448 15921,3215
 Egestorffstr.: Asphalt	Q0 9147,-1022 9123,-1321 9093,-1670
 Dorotheenstr.: Asphalt	Q0 22643,4058 22831,4070 22965,4124
 Loreleystr.: Asphalt	Q0 19171,8280 19228,8350 19275,8419 19326,8493
-Görresstr.: Asphalt	Q0 5318,7424 5272,7458 5158,7560 5066,7668
+Görresstr.: Asphalt	Q0 5318,7424 5272,7458 5188,7536 5066,7668
 Presselstr.: schlechtes Kopfsteinpflaster	Q3 6107,4718 6183,4785 6185,4839 6191,4923
 Kunkelstr.: Beton	Q0 8219,14897 8227,15075
 Kunkelstr.: Gehwegplatten	Q0 8227,15075 8229,15128
@@ -7673,7 +7673,7 @@ Stockholmer Str.: schlechtes Kopfsteinpflaster	Q3 8759,16684 8783,16710 8844,168
 # 
 #: by: Gerhard M. vvv
 Habsburgerstr.: Asphalt	Q0 6920,9838 6914,9916 6905,10049
-Kyffhäuserstr.: Asphalt	Q0 6862,9542 6891,9678 6920,9838
+Kyffhäuserstr.: Asphalt	Q0 6860,9526 6891,9678 6920,9838
 #: by: ^^^
 # 
 #: by: Holger
@@ -7719,6 +7719,7 @@ Homburger Str.: Asphalt	Q0 3963,7534 4061,7513 4162,7510 4330,7507 4400,7508 459
 # 
 #: by: Britta Steindamm:
 Claudiusstr.: Asphalt	Q0 6396,12607 6400,12662 6347,12901
+# 
 #: by: Gerald Grelka
 Walzelstr.: Beton	Q1 -5559,13438 -5333,13515 -5254,13542
 # 
@@ -7929,8 +7930,10 @@ Brentanostr.: mäßiges Kopfsteinpflaster	Q2- 4111,6651 4058,6602 4054,6565 4050,6
 # 
 #: by: Thomas Schulz:
 Am Schonungsberg: Asphalt	Q0 30518,3753 30605,4028 30655,4186 30696,4314
+# 
 #: by: Gunnar Heuschkel:
 Körnerstr.: schlechtes Kopfsteinpflaster	Q3 10653,20200 10597,20410 10537,20633 10501,20759
+# 
 #: by: Michael Bartnik:
 Koserstr.: Kopfsteinpflaster	Q2 3403,6331 3309,6270 3209,6206 3118,6140 3112,6090 2950,6141
 # 
@@ -8002,6 +8005,7 @@ Eugen-Schönhaar-Str.: Kopfsteinpflaster	Q2 12573,14581 12496,14515 12425,14459
 # 
 #: by: Matthias Müller
 Jablonskistr.: mäßiges Kopfsteinpflaster	Q2 12228,14404 11955,14531 11662,14695
+# 
 #: by: Anne Geschke
 Margaretenstr.: schlechtes Kopfsteinpflaster	Q3 3142,4173 3501,4435
 # 
@@ -8163,16 +8167,23 @@ Robert-Rössle-Str.: Beton	Q0 16521,24864 16682,24758 16719,24734
 # 
 #: by: Christa L.:
 Stubenrauchstr.: schlechtes Kopfsteinpflaster	Q3 3452,3717 3568,3784 3629,3715
+# 
 #: by: Stefan G.:
 Korsörer Str.: mäßiges Kopfsteinpflaster	Q2 10101,15751 10398,15797
+# 
 #: by: Sonja Wienert:
 Roennebergstr.: Asphalt	Q0 5357,6932 5533,6753
+# 
 #: by: Werner (p.f.):
 Stephanstr.: schlechtes Kopfsteinpflaster	Q3 6360,4504 6523,4491 6826,4472
+# 
 #: by: Lucy (g.77):
 Herderstr. (Steglitz): Kopfsteinpflaster	Q2 4697,6118 4472,6242 4386,6288
+# 
 #: by: Dennis Riesche:
-Glasower Str.: mäßiges Kopfsteinpflaster	Q2 12510,6508 12756,6578 12876,6589 13141,6651
+#: XXX scheint (mittlerweile?) asphaltiert zu sein, prüfen (Dennis meinte "mäßiges Kopfsteinpflaster, Q2")
+Glasower Str.: Asphalt	Q0 12510,6508 12759,6563 12876,6589 13141,6651
+# 
 #: by: Marlen Caemmerer:
 Marienstr.: Asphalt	Q0 8726,12861 9046,12933
 # 
@@ -8182,6 +8193,7 @@ Nordmannzeile: Beton	Q0 6762,7109 6760,7147 6784,7233 6807,7262
 # 
 #: by: Mark Einig:
 Bornemannstr.: Asphalt	Q0 8187,15965 8003,16098
+# 
 #: by: Peter Radeck:
 Holsteinische Str.: Asphalt	Q0 5069,9735 5066,9645 5065,9418 5053,8979
 # 
@@ -8219,10 +8231,13 @@ Dielingsgrund: unterschiedlicher Belag mit Schlaglöchern	Q2 10777,605 10840,624 
 # 
 #: by: Larissa M.:
 Hallerstr.: Asphalt	Q0 4809,12856 4975,12890
+# 
 #: by: Michael C. (astritius?):
 Herschelstr.: Asphalt	Q0 3222,13252 3262,13406 3276,13481 3292,13622
+# 
 #: by: Johanna T.:
 Emdener Str.: Kopfsteinpflaster	Q2 5560,13382 5580,13587 5609,13790 5647,14067
+# 
 #: by: Melanie Große:
 (Königsweg - Benschallee): mäßiger Asphalt	Q1 -1592,1852 -1578,1740
 # 
@@ -8331,7 +8346,7 @@ Borkumstr.: mäßiges Kopfsteinpflaster	Q2 11297,17795 11217,17783 11136,17768 110
 Schmitzweg: mäßiger Asphalt, Schlaglöcher	Q2 5996,19980 5885,19920 5803,19874 5731,19824 5831,19547 5858,19437 5879,19352
 # 
 #: by: Christoph Kasprowiak:
-Karl-Schrader-Str.: Asphalt	Q0 6851,9365 6862,9542
+Karl-Schrader-Str.: Asphalt	Q0 6851,9365 6860,9526
 # 
 #: by: Uwe Gasmus:
 #: confirmed_by: srt
@@ -8454,7 +8469,7 @@ Reinholdstr.: mäßiges Kopfsteinpflaster	Q2 12833,6796 12953,6820 13014,6833
 Bruno-Bauer-Str.: Kopfsteinpflaster	Q2 12816,6870 12833,6796 12843,6750 12860,6667 12876,6589 12893,6527
 #: note: laut Bild von Gabi:
 #: corrected_by: srt (Q2 -> Q2-)
-Juliusstr.: Kopfsteinpflaster	Q2- 13195,6560 13127,6545 12902,6495 12779,6478 12553,6423
+Juliusstr.: Kopfsteinpflaster	Q2- 13195,6560 13127,6545 12902,6495 12781,6470 12553,6423
 Walterstr.: Kopfsteinpflaster	Q2 13125,6717 13014,6833 12983,6904 12934,6967
 Kranoldplatz: Kopfsteinpflaster	Q2 12833,6796 12715,6775
 Kranoldplatz: Kopfsteinpflaster	Q2 12726,6727 12843,6750
@@ -9385,7 +9400,7 @@ Paul-Robeson-Str.: Kopfsteinpflaster	Q2 10254,16363 10438,16340 10606,16319 1075
 Liebenwalder Str.: Kopfsteinpflaster	Q2 7162,16163 7471,16185 7690,16199 7808,16215
 # 
 #: by: Tobias (iow...):
-Starnberger Str.: Asphalt	Q0 6553,9600 6621,9657 6664,9701
+Starnberger Str.: Asphalt	Q0 6553,9600 6598,9656 6664,9701
 # 
 #: by: Michael Stoeter: vvv
 #: note: http://www.berlin.de/ba-spandau/presse/archiv/20080516.0900.100594.html

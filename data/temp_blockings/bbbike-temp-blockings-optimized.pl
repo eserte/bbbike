@@ -1262,16 +1262,7 @@ userdel	2::inwork 19750,11730 19827,11686 19881,11591
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => undef,
-         'text' => 'Alfred-Kowalke-Str.: Bauarbeiten, teilweise muss auf den Gehweg ausgewichen werden',
-         'from' => undef,
-         'id' => 2300,
-         'data' => '#: last_checked: 2011-10-22
-userdel	q4::inwork 18286,11275 18059,11248
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        {
