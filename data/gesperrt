@@ -1785,6 +1785,7 @@ Lienzer Pfad -> Tauernallee: Mittelstreifen	3::igndisp 10444,2234 10431,2258 103
 Tauernallee -> Lienzer Pfad: Mittelstreifen	3::igndisp 10504,2321 10431,2258 10444,2234
 Mittelstreifen	3nocross::ignrte 10226,1515 10239,1481 10276,1383
 Straﬂenbahnhaltestelle	3nocross::ignrte -11307,133 -11390,72 -11494,-4
+tragen (13 Stufen)	0:20:0 13013,10047
 tragen (16 Stufen)	0:25:-232 22814,4505
 tragen (19 Stufen)	0:30:86 23930,6013
 tragen (16 Stufen)	0:25:-164 23948,6054
@@ -1960,6 +1961,8 @@ tragen (Treppe, ca. 20 Stufen)	0:25:-108 19163,14981
 tragen (Treppe, ca. 20 Stufen)	0:25:-12 19160,14935
 tragen (Treppe)	0:30:70 89344,-5795
 tragen, langgezogene Stufen (13 Stufen)	0:25:-168 20704,1383
+Dr‰ngelgitter	BNP:3:-233:trailer=10 506,14926
+Dr‰ngelgitter	BNP:3:-199:trailer=10 47,15571
 Schranke	BNP:1:-153:trailer=3 14180,3334
 Dr‰ngelgitter	BNP:3:11:trailer=10 24958,13798
 Dr‰ngelgitter	BNP:3:30:trailer=10 24946,13755

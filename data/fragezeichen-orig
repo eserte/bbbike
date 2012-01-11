@@ -549,7 +549,9 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 # Das heißt diese Strecken werden nicht bei einer erweiterten Suche aufgenommen
 # und dem CGI-Benutzer auch nicht präsentiert.
 # 
-# 
+# XXX: zumindest teilweise asphaltiert...
+Hasenheide: weitere Weg: Qualität, Beleuchtung?	? 11177,8985 11406,8941 11582,8899 11569,8735 11554,8521
+Hasenheide: Beleuchtung bei Nacht ausprobieren	? 11279,8489 11333,8582 11357,8738 11406,8941 11439,9049 11449,9125
 Am Findling (Potsdam): existiert eine Ausschilderung?	? -9723,-2451
 # 
 #: by: http://www.potsdam.de/cms/ziel/996205/DE/ vvv
@@ -920,6 +922,7 @@ Adolf-Hoffmann-Str. (Vogelsdorf): mäßiger fester Sandweg, Q2	? 34007,11572 34149
 #: note: widersprüchliche Angabe von lesz...: gutes Kopfsteinpflaster, Q1, Sandbanketten
 #: note: weiterer Eintrag von anonymous: Kopfsteinpflaster ohne weitere Angabe, enge Straße, q2
 #: note: weiterer Eintrag von Anonymous: Verbundsteinpflaster, Q0
+#: note: weiterer Eintrag von Kristina (lidi.b..): Kopfsteinpflaster, Q2, enge Straße q0, "schmale Bürgersteig"
 Bulgenbachweg: mäßiges Verbundsteinpflaster, Q2+, kein Gehweg	? 3439,26192 3452,26160 3478,26119 3520,26081 3574,26060 3647,26060
 #: by: ThomasDob:
 Am Wall (Kleinmachnow): guter Beton, Q0	? -3395,-880 -3322,-894 -3191,-914 -3060,-933 -2926,-955 -2795,-978 -2742,-987
@@ -2806,6 +2809,7 @@ Blitzenroder Ring: Qualität?	? 5752,22147 5669,22219 5708,22275 5758,22334 5804,
 Michelbacher Zeile: Qualität?	? 5800,22204 5708,22275
 Lißberger Zeile: Qualität?	? 5846,22258 5758,22334
 Dietrichinger Weg: Qualität?	? 5136,21738 5037,21659
+#: XXX anonymous sagt: Asphalt, Q0, q1 ohne weitere Angabe
 Mauschbacher Steig: Qualität?	? 5210,21636 5111,21565 5037,21659 4967,21755 5067,21831
 #: XXX_osm bei osm falsch geschrieben?
 Grebenhainer Weg: Qualität?	? 5628,21279 5479,21386
@@ -3713,6 +3717,5 @@ Deportationsweg: Qualität? Ausschilderung? Für Autos gesperrt? Nachts beleuchtet
 #: XXX fehlt in Berlin.coords.data
 #: XXX genaue Lage?
 Feldspatzwenweg: Qualität? Wo genau befindet sich die Straße?	? 7609,23108 7583,23177 7804,23253 7831,23192
-#: XXX fehlt wahrscheinlich in Berlin.coords.data
-#: XXX ist das vielleicht der Buchenweg in Siemensstadt, von anonymous eingetragen (fester Sandweg, q2, Schlaglöcher, BNP 2x)
-Am Bahndamm: Qualität? Straßenschilder? Nachts beleuchtet? Gibt es hier Drängelgitter?	? 510,14923 168,15220 45,15578
+Weg im Volkspark Wittenau: Qualität? Beleuchtet?	? 5327,21136 4942,20830
+Reinickes Hof: existiert eine Verbindung zum Saalmannsteig? Qualität?	? 5281,18996

@@ -1359,6 +1359,8 @@ Berliner Str.: Straﬂenbahnhaltestelle	3nocross -11307,133 -11390,72 -11494,-4
 # Stellen, an denen getragen werden muﬂ:
 # die Zahl hinter dem ":" entspricht ungef‰hr den verlorenen Sekunden
 # 
+#: note: drei Treppen ‡ 3 Stufen und eine Stufe:
+tragen (13 Stufen)	0:20 13013,10047
 tragen (16 Stufen)	0:25 22814,4505
 tragen (19 Stufen)	0:30 23930,6013
 tragen (16 Stufen)	0:25 23948,6054
@@ -1604,6 +1606,12 @@ tragen, langgezogene Stufen (13 Stufen)	0:25 20704,1383
 #
 # Kinderanh‰nger wie der Chariot Captain XL sind 87cm breit
 # 
+#: by: Gerhard (no email) and anonymous vvv
+#: XXX: Standardwerte genommen vvv
+Dr‰ngelgitter	BNP:3::trailer=10 506,14926
+Dr‰ngelgitter	BNP:3::trailer=10 47,15571
+#: XXX ^^^
+#: by: ^^^
 Schranke	BNP:1::trailer=3 14180,3334
 Dr‰ngelgitter	BNP:3::trailer=10 24958,13798
 Dr‰ngelgitter	BNP:3::trailer=10 24946,13755
