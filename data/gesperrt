@@ -1606,11 +1606,11 @@ Karl-Marx-Allee -> Berolinastr.: Mittelstreifen	3::igndisp 11228,12951 11295,129
 Berolinastr. -> Karl-Marx-Allee: Mittelstreifen	3::igndisp 11362,12964 11295,12915 11589,12768
 Karl-Marx-Allee -> Berolinastr.: Mittelstreifen	3::igndisp 11295,12915 11589,12768 11600,12857
 Berolinastr. -> Karl-Marx-Allee: Mittelstreifen	3::igndisp 11600,12857 11589,12768 11635,12745
-unbequem zu überqueren (Bordsteine)	3nocross::ignrte 10796,8498 10911,8457 11223,8343 11271,8325
-Hasenheide, am Rixdorfer Teich -> Columbiadamm: unbequem zu überqueren (Bordsteine)	3::igndisp 10929,8503 10911,8457 11223,8343
+unbequem zu überqueren (Bordsteine)	3nocross::ignrte 10796,8498 10911,8457 11225,8350 11266,8336
+Hasenheide, am Rixdorfer Teich -> Columbiadamm: unbequem zu überqueren (Bordsteine)	3::igndisp 10929,8503 10911,8457 11225,8350
 Columbiadamm -> Hasenheide, am Rixdorfer Teich: unbequem zu überqueren (Bordsteine)	3::igndisp 10796,8498 10911,8457 10929,8503
-Hasenheide, westlicher Weg -> Columbiadamm: unbequem zu überqueren (Bordsteine)	3::igndisp 11235,8454 11223,8343 11271,8325
-Columbiadamm -> Hasenheide, westlicher Weg: unbequem zu überqueren (Bordsteine)	3::igndisp 10911,8457 11223,8343 11235,8454
+Hasenheide, westlicher Weg -> Columbiadamm: unbequem zu überqueren (Bordsteine)	3::igndisp 11235,8454 11225,8350 11266,8336
+Columbiadamm -> Hasenheide, westlicher Weg: unbequem zu überqueren (Bordsteine)	3::igndisp 10911,8457 11225,8350 11235,8454
 Mittelstreifen	3nocross::ignrte 4807,5131 4766,5208 4745,5283
 Fronhoferstr. -> Wolfensteindamm: Mittelstreifen	3::igndisp 4656,5101 4766,5208 4745,5283
 Wolfensteindamm -> Fronhoferstr.: Mittelstreifen	3::igndisp 4807,5131 4766,5208 4656,5101
@@ -1785,6 +1785,8 @@ Lienzer Pfad -> Tauernallee: Mittelstreifen	3::igndisp 10444,2234 10431,2258 103
 Tauernallee -> Lienzer Pfad: Mittelstreifen	3::igndisp 10504,2321 10431,2258 10444,2234
 Mittelstreifen	3nocross::ignrte 10226,1515 10239,1481 10276,1383
 Straßenbahnhaltestelle	3nocross::ignrte -11307,133 -11390,72 -11494,-4
+Mittelstreifen	3nocross::ignrte 11500,9116 11449,9125 11136,9183
+Hasenheide, zwischen Jahnstr. und Columbiadamm -> Hasenheide: Mittelstreifen	3::igndisp 11439,9049 11449,9125 11136,9183
 tragen (13 Stufen)	0:20:0 13013,10047
 tragen (16 Stufen)	0:25:-232 22814,4505
 tragen (19 Stufen)	0:30:86 23930,6013
