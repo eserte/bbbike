@@ -107,8 +107,8 @@ Streitstr. (werden die vorhandenen Bordsteinradwege ersetzt)?	?::projected -3040
 #XXX del --- #: by: Tagesspiegel vom 2010-03-31 --- #: last_checked: 2011-08-19 --- #: next_check: 2011-11-25 --- Rüdersdorfer Str. bekommt Radspuren	?::projected 13066,11854 12891,12008
 #
 #: by: Tagesspiegel vom 2010-03-26
-#: last_checked: 2011-11-07
-#: next_check: 2011-11-17
+#: last_checked: 2012-01-13
+#: next_check: 2012-02-03
 #: XXX Markierungsarbeiten sind weitgehend fertig, sogar Radwegeschilder existieren --- die Autos parken trotzdem drauf!
 Lindenstr.: Markierungsarbeiten für Radspuren haben begonnen	?::inwork 9805,10791 9829,10830 9935,11067 9973,11150 10020,11262
 # 
@@ -129,6 +129,10 @@ Fahrradstraße in der Lauenburger Str.	?::projected 5870,4992 5905,5088 5927,5182
 #
 #: section ignorieren vvv
 #: section Straßen in Bau und Planung vvv
+# 
+#: by: http://www.stadtumbau-berlin.de/Fotos.4730.0.html
+#: next_check: 2012-04-01
+Ebersstr. - Park GASAG Nordspitze: Steg/Übergang über die S-Bahn wird 2012 realisiert	?::projected 7329,8571 7304,8611
 # 
 #: XXX_osm: fehlt bei osm komplett
 #: last_checked: 2011-12-25 (keine Bautätigkeit feststellbar)
@@ -506,7 +510,9 @@ B96a: Neubau der Radwege (gemeinsam mit Gehweg); wahrscheinlich wird der Radstre
 #: next_check: 2012-02-07
 #: by: http://www.stadtumbau-berlin.de/O-W-Gruenzug-Fussgaenger-und-Radfahrersteg.4699.0.html
 #: by: http://www.stadtumbau-berlin.de/fileadmin/images/Dokumentation/Projektdokumentation/Tempelhof-Schoeneberg/FG_Suedkreuz/Naumannstrasse/Karten/Lageplan_Naumann_Leuthener-Platz.pdf (begleitende Verkehrsberuhigung in der Naumannstraße)
-Brücke über Bahntrasse: Fertigstellung? Name der Brücke?	?::inwork 7893,8327 8094,8290 8093,8251
+#: by: http://www.stadtumbau-berlin.de/O-W-Gruenzug-Fussgaenger-und-Radfahrersteg.4699.0.html?y=2012 (Name der Brücke, Fertigstellung Juli 2012)
+#: XXX Brückennamen evtl. in Berlin.coords.data erwähnen
+Alfred-Lion-Steg: Fertigstellung?	?::inwork 7893,8327 8094,8290 8093,8251
 # 
 #: by: (URL existiert nicht mehr) http://www.berlin.de/ba-steglitz-zehlendorf/presse/archiv/20060109.1050.33932.html
 #: last_checked: 2011-07-09
@@ -549,7 +555,6 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 # Das heißt diese Strecken werden nicht bei einer erweiterten Suche aufgenommen
 # und dem CGI-Benutzer auch nicht präsentiert.
 # 
-Hasenheide: wie geht es hier weiter?	? 11578,8784 11554,8521
 Am Findling (Potsdam): existiert eine Ausschilderung?	? -9723,-2451
 # 
 #: by: http://www.potsdam.de/cms/ziel/996205/DE/ vvv

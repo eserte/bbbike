@@ -42,7 +42,7 @@ Hobrechtsfelder Chaussee (bis Kurve): OK	Q0 15589,27116 15230,26560 14859,26029 
 #: corrected_by: osm (schlechtes Kopfsteinpflaster -> paved)
 Hobrechtsfelder Chaussee (ab Kurve)	Q0 15589,27116 15711,27928 15777,28037
 Wisbyer Str.: Asphalt	Q0 11019,16465 11289,16423 11397,16405 11448,16398 11470,16394 11542,16384 11632,16373 11673,16367 11727,16358 11750,16354 11808,16343 11829,16339 11889,16328 11936,16302 12026,16247 12091,16209
-Weserstr.: Kopfsteinpflaster, schmale Verbundsteinpflaster-Radwege	Q1 11888,9189 11993,9211 12074,9217 12148,9209
+Weserstr.: Kopfsteinpflaster, schmale Verbundsteinpflaster-Radwege	Q1 11888,9189 12005,9211 12074,9217 12148,9209
 Weserstr.: asphaltiert, schmale Verbundsteinpflaster-Radwege	Q0 12148,9209 12180,9193 12322,9124
 Weserstr.: Kopfsteinpflaster, schmale Verbundsteinpflaster-Radwege	Q1 12322,9124 12402,9080 12480,9037 12531,9009 12590,8977 12740,8862 12881,8750 13029,8632 13124,8562 13217,8493 13384,8354 13566,8212 13724,8090
 Jessnerstr.: Asphalt mit Aufpflasterungen	Q0 15080,11905 14977,11754 14946,11697 14849,11539
@@ -259,7 +259,7 @@ Straﬂe 59: Asphalt	Q0 12459,21010 12524,20863
 Charlottenburger Str.: m‰ﬂiger Asphalt	Q1+ 13712,16089 13642,16118 13479,16182 13440,16197 13429,16202 13404,16212 13286,16267 13033,16387 12919,16438 12798,16493 12642,16555 12564,16591 12353,16687 12227,16768
 #: by: ^^^
 Engeldamm: Asphalt	Q0 12026,11348 11921,11185 11800,11118 11656,11106 11473,11180
-Ritterstr.: Kopfsteinpflaster	Q2 10585,10766 10498,10806 10397,10852 10103,10989
+Ritterstr.: Kopfsteinpflaster	Q2 10585,10766 10511,10800 10397,10852 10103,10989
 Adalbertstr.: Kopfsteinpflaster, Asphaltstreifen neben den parkenden Autos	Q1; 11656,11106 11726,11265 11807,11479
 Adalbertstr.: Kopfsteinpflaster	Q2; 11807,11479 11726,11265 11656,11106
 Oderstr.: Fahrbahn Kopfsteinpflaster, Radwege nur m‰ﬂiges Verbundsteinpflaster	Q2+ 11607,7145 11616,7089 11652,6879
@@ -1300,9 +1300,9 @@ Knorrpromenade: Kopfsteinpflaster	Q2 14369,11489 14424,11639
 (Vorfahrt Neues-Deutschland-Geb‰ude): Kopfsteinpflaster, OK	Q1 12794,11893 12891,12008
 Husemannstr.: m‰ﬂiger Asphalt	Q1 11271,14755 11293,14957
 Feilnerstr.: teilweise gutes Kopfsteinpflaster	Q1 9973,11150 10163,11070
-Hobrechtstr.: Kopfsteinpflaster	Q2 11998,8872 12003,9105
-Hobrechtstr.: gutes Kopfsteinpflaster	Q1 12003,9105 11993,9211
-Hobrechtstr.: m‰ﬂiges Kopfsteinpflaster	Q2 11993,9211 11954,9415 11934,9538
+Hobrechtstr.: Kopfsteinpflaster	Q2 11998,8872 12011,9100
+Hobrechtstr.: gutes Kopfsteinpflaster	Q1 12011,9100 12005,9211
+Hobrechtstr.: m‰ﬂiges Kopfsteinpflaster	Q2 12005,9211 11954,9415 11934,9538
 Hobrechtstr.: m‰ﬂiges Kopfsteinpflaster, kurze Verbundsteinpflasterabschnitte	Q2 11934,9538 11918,9659
 Hobrechtstr.: m‰ﬂiges Kopfsteinpflaster	Q2 11918,9659 11897,9754
 Sanderstr.: Asphalt	Q0 11710,9628 11918,9659
@@ -1548,7 +1548,7 @@ Rosenstr.: Kopfsteinpflaster	Q2 22138,4661 22212,4655 22284,4653
 Bergiusstr.: Asphalt	Q0 14153,6795 14193,6718 14144,6627 14193,6556 14366,6337
 Bergiusstr.: Betonstraﬂe	Q0- 14366,6337 14396,6298 14398,6184
 Nobelstr.: Betonstraﬂe	Q0- 14133,6187 14398,6184 14784,6169 14961,6162 15146,6154
-(Karlsgartenstr. - Hasenheide): asphaltiert	Q0 11627,8485 11508,8491 11333,8582 11255,8591
+(Karlsgartenstr. - Hasenheide): asphaltiert	Q0 11627,8485 11560,8488 11508,8491 11333,8582 11255,8591
 (Am Rixdorfer Teich): asphaltiert	Q0 11255,8591 11193,8568
 (Am Rixdorfer Teich): guter Parkweg	Q1 11193,8568 11133,8560 11020,8596 10957,8573 10929,8503 10911,8457
 Schmiedehof: Kopfsteinpflaster	Q2 8988,8990 8990,8915
@@ -5303,7 +5303,7 @@ Straﬂe 5 (Buch): Asphalt	Q0 17542,26302 17493,26391 17452,26466 17418,26518
 (Straﬂe 7 - Zepernicker Str.): Asphalt	Q0 17668,26607 17714,26509 17764,26410
 Am Wiesenweg: Asphalt	Q0 21977,988 21857,989 21708,937 21683,906
 (Bethaniendamm - Wrangelstr.): Kopfsteinpflaster	Q2 11845,11095 11893,11074 11958,11045
-Mariannenplatz: Kopfsteinpflaster	Q2 11893,11074 11854,10972 11819,10942 11805,10899 11803,10857 11770,10774
+Mariannenplatz: Kopfsteinpflaster	Q2 11893,11074 11854,10972 11819,10942 11805,10899 11803,10857 11799,10848 11770,10774
 (Scharnweberstr. - Berenhorststr.): Gehwegplatten	Q1 4801,17623 4816,17712
 Belowstr.: guter Beton	Q0 4946,17701 4992,17908
 Hechelstr.: Asphalt	Q0 4786,18168 4739,17960 4683,17669
@@ -6590,7 +6590,9 @@ Hasenheide: Parkweg	Q1 11100,8974 11137,8738 11193,8568 11235,8454 11225,8350
 (Hasenheide, Eingang Wissmannstr.): Asphalt	Q0 11768,8739 11708,8747
 (Hasenheide, Eingang Wissmannstr.): Asphalt mit Querrinnen	Q2+ 11708,8747 11647,8723 11607,8751
 (Hasenheide, Eingang Wissmannstr.): Kopfsteinpflaster	Q2 11607,8751 11578,8784
-(Hasenheide, ˆstlicher Rundweg): Asphalt	Q0 11554,8521 11578,8784 11587,8882 11549,8917 11406,8941 11177,8985
+(Hasenheide, ˆstlicher Rundweg): Asphalt	Q0 11560,8488 11549,8601 11578,8784 11587,8882 11549,8917 11406,8941 11177,8985
+(Hasenheide, s¸dˆstlicher Rundweg): Parkweg	Q1 11467,8329 11523,8327 11559,8357 11570,8409 11560,8488
+(Flughafenstr. - Rundweg in der Hasenheide): Parkweg	Q1 11632,8302 11577,8315 11559,8357
 ÷seler Str.: Asphalt	Q0 20143,13082 20237,13027 20335,12985
 Buckower Ring: Beton mit Sch‰den	Q1 21337,13470 21562,13424 21716,13396 21826,13371
 Buckower Ring: Beton	Q0- 21716,13396 21735,13560
@@ -6735,6 +6737,9 @@ Elisabeth-Schwarzhaupt-Platz: Gehwegplatten	Q0 9274,13963 9167,14127
 (Erkelenzdamm - Prinzessinnenstr.): teilweise Kopfsteinpflaster	Q2 11190,10619 11145,10638
 (Zufahrt am NKZ): Verbundsteinpflaster	Q1 11311,10505 11291,10438
 Bˆcklerpark: m‰ﬂiges Verbundsteinpflaster	Q2+ 10917,10068 10863,10082 10802,10111 10794,10201 10690,10247 10580,10256
+(Bethanienpark): Kopfsteinpflaster	Q2 11799,10848 11776,10860
+(Bethanienpark): Beton	Q0- 11776,10860 11752,10878 11668,10916
+(Bethanienpark): Verbundsteinpflaster	Q1 11668,10916 11589,10947
 ######################### User Contributions #################################
 #: by: anonymous vvv
 # 
@@ -19042,7 +19047,7 @@ Diedenhofener Str.: Asphalt	Q0 -3746,13622 -3651,13603 -3618,13596
 Ziegelhof: wassergebundene Decke	Q1 -3789,13519 -3685,13504
 Ziegelhof: Kopfsteinpflaster	Q2 -3685,13504 -3555,13485
 (Wachheimer Weg - Gˆtelstr.): Gehwegplatten	Q1 -3437,12258 -3350,12260 -3349,12213
-Jakobikirchstr.: Kopfsteinpflaster	Q2 10498,10806 10538,10899
+Jakobikirchstr.: Kopfsteinpflaster	Q2 10511,10800 10564,10925
 (Neuenburger Str. - Lindenstr.): Gehwegplatten	Q0 9853,10543 9848,10526 9795,10512
 Enckestr.: Asphalt/Beton	Q0 9653,10950 9666,10848
 Fanny-Hensel-Weg: Kopfsteinpflaster/Gehwegplatten	Q2 8781,10827 8742,10868 8659,10910
