@@ -312,14 +312,14 @@ use vars qw(%uml $uml_keys $uml_keys_rx
 BEGIN {
     %uml = ('ä' => 'ae', 'ö' => 'oe', 'ü' => 'ue', 'ß' => 'ss',
 	    'Ä' => 'Ae', 'Ö' => 'Oe', 'Ü' => 'Ue',
-	    'é' => 'e', 'è' => 'e', 'á' => 'a',
+	    'é' => 'e', 'è' => 'e', 'ë' => 'e', 'á' => 'a',
 	   );
     $uml_keys = join("",keys %uml);
     $uml_keys_rx = qr{[$uml_keys]};
 
     %uml_german_locale = ('ä' => 'a', 'ö' => 'o', 'ü' => 'u', 'ß' => 'ss',
 			  'Ä' => 'A', 'Ö' => 'O', 'Ü' => 'U',
-			  'é' => 'e', 'è' => 'e', 'á' => 'a',
+			  'é' => 'e', 'è' => 'e', 'ë' => 'e', 'á' => 'a',
 			 );
     $uml_german_locale_keys = join("",keys %uml_german_locale);
     $uml_german_locale_keys_rx = qr{[$uml_german_locale_keys]};

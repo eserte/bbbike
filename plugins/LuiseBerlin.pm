@@ -173,6 +173,7 @@ sub launch_bezlex_url {
 			"Ü" => "Ue",
 			"é" => "_",
 			"è" => "_",
+			"ë" => "_",
 			"á" => "_",
 			" " => "_",
 		       };
@@ -386,6 +387,9 @@ sub kill_umlauts {
 			"Ö" => "Oe",
 			"Ü" => "Ue",
 			"é" => "e",
+			"è" => "e",
+			"ë" => "e",
+			"á" => "a",
 		       };
     my $left_part = join "", keys %$kill_umlauts;
     $s =~ s{([$left_part])}{$kill_umlauts->{$1}}ge;
