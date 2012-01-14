@@ -18,6 +18,7 @@ use strict;
 use FindBin;
 
 use File::Basename 'basename';
+use File::Temp 'tempfile';
 use Getopt::Long;
 use KSx::Simple;
 
@@ -29,11 +30,19 @@ EOF
 }
 
 my $do_index;
-my $index_dir = "/tmp/bbbike-kinosearch";
-my $bbbike_datadir = "$FindBin::RealBin/../data";
+my $only_berlin;
 
-GetOptions("index" => \$do_index)
+my $bbbike_rootdir = "$FindBin::RealBin/..";
+my $bbbike_datadir = "$bbbike_rootdir/data";
+my $restrict_bbd = "$bbbike_rootdir/miscsrc/restrict_bbd_data.pl";
+
+GetOptions(
+	   "index" => \$do_index,
+	   "berlin" => \$only_berlin,
+	  )
     or usage;
+
+my $index_dir = "$bbbike_rootdir/tmp/bbbike-kinosearch" . ($only_berlin ? "-berlin" : "-all");
 
 mkdir $index_dir if !-d $index_dir;
 my $index = KSx::Simple->new(
@@ -61,8 +70,48 @@ if ($do_index) {
 	my $basename = basename $file;
 	$basename =~ s{-orig$}{};
 	warn "$basename...\n";
+	my $work_file = $file;
+	my $tmpfile;
+	if ($only_berlin) {
+	    # Files which are completely outside berlin
+	    next if $basename =~ m{^( comments_cyclepath
+				   |  deutschland
+				   |  grenzuebergaenge
+				   |  handicap_l
+				   |  landstrassen
+				   |  landstrassen2
+				   |  orte
+				   |  orte2
+				   |  orte_city # uninteresting
+				   |  ortsschilder
+				   |  potsdam
+				   |  potsdam_ortsteile
+				   |  qualitaet_l
+				   |  wasserumland
+				   |  wasserumland2
+				   )$}x;
+	DO_RESTRICT: {
+		# Files which are completely inside berlin
+		last DO_RESTRICT if $basename =~ m{^( handicap_s
+						   |  qualitaet_s
+						   |  radwege
+						   |  strassen
+						   |  ubahn    # keine U-Bahnen in Brandenburg
+						   |  ubahnhof # "
+						   |  wasserstrassen
+						   )$}x;
+
+		(my($tmpfh),$tmpfile) = tempfile(UNLINK => 1, SUFFIX => '.bbd')
+		    or die $!;
+		warn "   (restrict to berlin)\n";
+		system $restrict_bbd, '-strdata' => $file, '-polygon-bbd' => "$bbbike_datadir/berlin", '-o' => $tmpfile;
+		$work_file = $tmpfile;
+	    }
+	}
+
 	my $fh;
 	open $fh, $file;
+	warn "   (reading and indexing)\n";
 	while(<$fh>) {
 	    chomp;
 	    if (m{^#\s*(.*)}) {
@@ -75,6 +124,10 @@ if ($do_index) {
 				  content => $str,
 			    });
 	    }
+	}
+
+	if ($tmpfile) {
+	    unlink $tmpfile; # do it as early as possible, to keep /tmp small
 	}
     }
 
