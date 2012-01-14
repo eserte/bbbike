@@ -61,6 +61,9 @@ if (!$dry_run) {
 }
 
 my $ua = LWP::UserAgent->new;
+# some servers (e.g. flaeming-skate.de) return a 403 if no Accept
+# header is available
+$ua->default_headers->push_header('Accept' => 'text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5');
 
 my @files = @ARGV
     or usage;
