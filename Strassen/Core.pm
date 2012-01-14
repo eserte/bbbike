@@ -1,9 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Core.pm,v 1.94 2009/01/17 15:48:53 eserte Exp $
-#
-# Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
+# Copyright (c) 1995-2003,2012 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
 # terms of the GNU General Public License, see the file COPYING.
 #
@@ -28,7 +26,7 @@ use vars qw(@datadirs $OLD_AGREP $VERBOSE $STRICT $VERSION $can_strassen_storabl
 use enum qw(NAME COORDS CAT);
 use constant LAST => CAT;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.94 $ =~ /(\d+)\.(\d+)/);
+$VERSION = '1.95';
 
 if (defined $ENV{BBBIKE_DATADIR}) {
     require Config;
@@ -1563,11 +1561,13 @@ __END__
 
 =head1 NAME
 
-Strassen::Core - the main Strassen object for bbd data
+Strassen::Core - the main Strassen class for bbd data
 
 =head1 SYNOPSIS
 
    use Strassen::Core;
+
+   # Pull parser
    $s = Strassen->new($bbdfile);
    $s->init;
    while(1) {
@@ -1578,9 +1578,20 @@ Strassen::Core - the main Strassen object for bbd data
      print "Coordinates: " . join(" ", @{ $ret->[Strassen::COORDS] }) . "\n";
    }
 
+   # Push parser
+   $s = Strassen->new_stream($bbdfile);
+   $s->read_stream(
+     sub {
+       my($rec, $directives, $linenumber) = @_;
+       print "Name:        $rec->[Strassen::NAME]\n";
+       print "Category:    $rec->[Strassen::CAT]\n";
+       print "Coordinates: " . join(" ", @{ $rec->[Strassen::COORDS] }) . "\n";
+     }
+   );
+
 =head1 DESCRIPTION
 
-See SYNOPSIS.
+See L</SYNOPSIS>.
 
 Also see the comments in the source code.
 
