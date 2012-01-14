@@ -86,7 +86,9 @@ sub preload_records {
     my $sth = $self->_get_all_sth;
     my @data;
     while(my @row = $sth->fetchrow_array) {
-	cp850_iso($_) foreach (@row);
+	## Used encoding seems to depend on the application. I saw
+	## cp850 and latin1 encoded data.
+	#cp850_iso($_) foreach (@row);
 	push @data, \@row;
     }
     $self->Data(\@data);
