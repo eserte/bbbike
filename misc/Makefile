@@ -158,9 +158,11 @@ download-tiled-berlin:
 	cd download/osm && mkdir -p berlin && cd berlin && \
 	    ${MISCSRCDIR}/downloadosm 13.08 52.41 13.77 52.45 -o .
 
-data_berlin_osm_bbbike:
+data_berlin_osm_bbbike_tiled:
 	${MISCSRCDIR}/osm2bbd -map bbbike -v -f -o ../data_berlin_osm_bbbike download/osm/berlin
 	${MISCSRCDIR}/osm2bbd-postprocess ../data_berlin_osm_bbbike
+
+data_berlin_osm_bbbike: data_berlin_osm_bbbike_untiled
 
 data_berlin_osm_bbbike_untiled:
 	${MISCSRCDIR}/osm2bbd -map bbbike -experiment handle_relations -v -f -o ../data_berlin_osm_bbbike download/osm/berlin.osm.bz2
