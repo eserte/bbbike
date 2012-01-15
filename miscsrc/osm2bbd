@@ -248,7 +248,8 @@ use constant HIGHWAY_H_RX   => qr{^(?:secondary)$};
 use constant HIGHWAY_NH_RX  => qr{^(?:tertiary)$};
 use constant HIGHWAY_N_RX   => qr{^(?:residential|unclassified|service|minor)$};
 
-use constant CONSTRUCTION_RX => qr{^(?:construction|planned|proposed)$};
+use constant CONSTRUCTION_RX => qr{^(?:construction)$};
+use constant PROJECTED_RX    => qr{^(?:planned|proposed)$};
 
 my $cyclists_dismount_label = ($lang eq 'en' ? 'Cyclists dismount' : 'Radfahrer absteigen');
 
@@ -1000,7 +1001,7 @@ for my $osm_file (@osm_files) {
 		} elsif ($railway_cat =~ m{^(?:abandoned|disused)$}) {
 		    push @or, ["rbahn", "R0".$addcat];
 		    resolve_node_now('railway', 'rbahnhof', "R0", \@nodes);
-		} elsif ($railway_cat =~ CONSTRUCTION_RX) {
+		} elsif ($railway_cat =~ CONSTRUCTION_RX) { # ignoring PROJECTED_RX
 		    push @or, ["rbahn", "RBau".$addcat];
 		    resolve_node_now('railway', 'rbahnhof', "RBau", \@nodes);
 		} elsif ($railway_cat =~ m{^(?:narrow_gauge)$}) { # z.B. Parkeisenbahnen
@@ -1238,6 +1239,8 @@ for my $osm_file (@osm_files) {
 			push @or, ['strassen', 'N'];
 			push @or, ['gesperrt', '2:inwork'];
 		    }
+		} elsif ($highway_cat =~ PROJECTED_RX) {
+		    push @or, ['fragezeichen', '?::projected'];
 		} elsif ($highway_cat eq 'steps') {
 		    push @or, ["strassen", "NN".$addcat];
 		    my $name       = $lang eq 'en' ? 'steps' : 'Treppe';
