@@ -27,9 +27,9 @@ Freiarmbrücke	Br 23492,5488 23519,5490
 Spreetunnel	Tu 25571,4553 25658,4619
 Grünauer Brücke	Br 22050,2736 22058,2700 22074,2666
 Kaulsdorfer Brücke	Br 22688,12007 22684,12016 22669,12049 22693,12084
-Fußgängerbrücke (Blockdammweg)	Br 17976,8964 18087,9035
+Blockdammbrücke	Br 17976,8964 18087,9035
 Grabensprung, U-Bahnbrücke	Br 20586,10935 20681,10772
-Fußgängerbrücke (Rebenweg)	Br 19726,-32 19762,-160
+Rebenbrücke	Br 19726,-32 19762,-160
 Wegedornbrücke	Br 20510,530 20442,564 20385,593
 Brücke über den Teltowkanal	Br 18929,2454 18928,2319
 Altglienicker Brücke	Br 20128,2271 20208,2348
@@ -88,7 +88,7 @@ Brücke am Heiligentalhügel	Br 960,10530 1054,10559
 Messedammbrücke	Br 1344,10012 1457,10168
 Koenigsalleebrücke	Br 1661,8992 1688,9058
 Bismarckbrücke	Br 1807,8893 1861,8946
-Wangenheimsteg	Br 2585,9653 2676,9744
+Wangenheimsteg	Br 2585,9653 2628,9702
 Paulsborner Brücke	Br 2998,9408 3127,9522
 Schwarzbacher Brücke	Br 2719,9671 2730,9634
 Hohenzollerndammbrücke	Br 3388,8958 3439,8996 3482,9028
@@ -141,7 +141,7 @@ Schönfließer Str., S-Bahnbrücke	Br 10593,16037 10581,15936
 Greifenhagener Str., S-Bahnbrücke	Br 11176,15958 11150,15908
 Pappelallee, S-Bahnbrücke	Br 11373,15789 11393,15823
 Schönhauser Allee, S-Bahnbrücke	Br 10975,16010 10971,15944
-Dunckerstr., S-Bahnbrücke	Br 11662,15568 11698,15627
+Dunckerbrücke	Br 11662,15568 11698,15627
 Prenzlauer Allee, S-Bahnbrücke	Br 11891,15413 11905,15462
 Kniprodestr., S-Bahnbrücke	Br 13301,14516 13367,14588
 Landsberger Allee, S-Bahnbrücke	Br 13854,13701 14006,13761
@@ -234,7 +234,7 @@ Eugen-Kleine-Brücke	Br 3696,1445 3751,1402
 Bäkebrücke	Br 4591,3089 4655,3060
 Krahmersteg	Br 4791,3395 4862,3363
 Prinzregent-Ludwig-Brücke	Br 5557,4294 5588,4210
-Hannembrücke	Br 6006,4327 6011,4292 6012,4265
+Hannemannbrücke	Br 6006,4327 6011,4292 6012,4265
 Siemensbrücke	Br 6162,4264 6199,4312
 Edenkobener Steg	Br 6645,4254 6627,4187
 Sieversbrücke	Br 7161,4091 7160,4051 7159,4023
@@ -323,23 +323,23 @@ Warschauer Brücke	Br 13454,11119 13476,11174 13493,11217 13541,11355
 Fußgängerbrücke zur o2 World	Br 13503,11179 13513,11206
 Brücke am Hafen Mariendorf	Br 7772,4306 7795,4242
 Klingenbergbrücke	Br 16791,9137 16831,9078
-Brücke über Avus	Br -3956,2787 -3758,2678
+Rosemeyer-Steg	Br -3852,2730 -3758,2678
 Neue Späthbrücke	Br 14327,5427 14392,5453
 Anna-Nemitz-Brücke	Br 14392,5453 14421,5465
 Fußgängerbrücke (Altglienicke)	Br 21262,375 21182,436
 Fußgängerbrücke	Br 19968,16 19940,52
 Neue Brücke	Br -3143,14676 -3139,14710
 Dammbrücke	Br -3042,14682 -3066,14718
-Fußgängerbrücke	Br 3053,13646 3003,13634 2921,13618 2876,13594
+Jungfernheidesteg	Br 3053,13646 3003,13634 2921,13618 2876,13594
 Gustav-Heinemann-Brücke	Br 8116,12938 8110,13042
 Hiroshimasteg	Br 7251,11202 7251,11181 7248,11143
 Anhalter Steg	Br 8711,10322 8726,10351 8760,10408
 Karl-Heinrich-Brücke	Br -3255,14685 -3188,14652
 Wallbrücke	Br -3316,14169 -3370,14115
 Brücke im Südpark	Br -4040,12050 -3985,12056
-Moritzstr., Brücke über den Mühlengraben	Br -3440,14498 -3410,14479
+Moritzbrücke	Br -3440,14498 -3410,14479
 Jüdenstr., Brücke über den Mühlengraben	Br -3481,14308 -3444,14310
-Carl-Schurz-Str., Brücke über den Mühlengraben	Br -3409,14241 -3457,14189
+Carl-Schurz-Brücke	Br -3409,14241 -3457,14189
 Hermann-Hesse-Str., Brücke über den Zingergraben	Br 9501,18902 9475,18862
 Hugo-Preuß-Brücke	Br 8160,13053 8274,13052
 Friedrich-Haak-Brücke	Br 7946,7411 7914,7364
@@ -348,7 +348,7 @@ Oberhavelsteg	Br -2503,18945 -2460,18918 -2434,18832
 Kaisersteg	Br 18353,5897 18420,6009
 Fischgrundbrücke	Br 2624,24710 2690,24751
 Pyramidenbrücke	Br 21569,5730 21596,5693
-Brücke über den Zitadellengraben	Br -2656,14582 -2652,14559
+Zitadellenbrücke	Br -2656,14582 -2652,14559
 Zugbrücke Zitadelle	Br -2682,14681 -2688,14703
 Werdauer Brücke	Br 6774,7755 6691,7633
 Rudelsburger Brücke	Br 13787,22114 13795,22131
@@ -387,9 +387,9 @@ Fußgängerbrücke über den Stichkanal	Br 2126,53 2078,41
 Schönwalder-Straßen-Brücke	Br 8229,15128 8266,15134
 Soldiner Brücke	Br 8866,17075 8904,17059
 Hugo-Heimann-Brücke	Br 9143,17933 9172,17929 9189,17927
-(Brücke Höhe Gotenburger Str.)	Br 8836,16867 8822,16873 8804,16881
+Gotenburgsteg	Br 8836,16867 8822,16873 8804,16881
 (Brücke über die Panke)	Br 8567,16429 8592,16406
-(Brücke über die Panke)	Br 9131,17664 9084,17678
+Gottschalkbrücke	Br 9131,17664 9084,17678
 (Brücke über die Panke)	Br 13567,23101 13554,23123
 Alexandersteg	Br 1756,20405 1736,20441
 Wilhelmsteg	Br 1742,20464 1762,20505
@@ -446,7 +446,7 @@ Brücke über die Wuhle	Br 21571,7639 21591,7642
 Brücke über die Wuhle	Br 22085,5873 22083,5899
 Brücke über die Wuhle	Br 22474,17858 22537,17878
 Brücke über die B5	Br -15959,13732 -15979,13692
-Brücke über den Waldsee	Br -961,3737 -935,3706
+Waldseebrücke	Br -961,3737 -935,3706
 Brücke über den Spektegraben	Br -6256,15169 -6214,15211 -6175,15261
 Brücke über den Nordgraben	Br 7289,20618 7250,20559
 Kieler Brücke	Br 7782,14428 7746,14408
@@ -455,7 +455,7 @@ Wendenheidebrücke	Br 21075,4769 21080,4702
 Adlershofer Brücke	Br 21130,4239 21143,4150
 Persiusbrücke	Br -10198,1173 -10190,1185
 Brücke über den Rossitter Weg	Br -155,12198 -153,12183 -145,12151
-Brücke über den Rossitter Weg	Br -212,12095 -247,12117
+Sportforum-Brücke	Br -212,12095 -247,12117
 Brücke über den Heidekampgraben	Br 15368,7023 15289,7010
 Schönholzer Brücke	Br 9909,18333 9881,18354
 Märkische-Allee-Brücke	Br 19947,12140 19939,12068
@@ -463,7 +463,7 @@ Brücke über den Aalemannkanal	Br -2166,18365 -2171,18265
 Brücke über Eisenbahn	Br 19348,-434 19385,-444
 Parkringbrücke	Br 8670,8370 8671,8307
 Nonnendammbrücke	Br 2149,13775 2176,13703
-Ernststr., Brücke über Autobahn	Br 2700,19527 2780,19548
+Ernststraßensteg	Br 2700,19527 2780,19548
 Brücke über die Erpe	Br 23675,5706 23675,5729
 Brücke über die Erpe	Br 24126,5874 24118,5895
 Brücke über einen Weiher	Br 25938,15359 25936,15335
@@ -479,6 +479,18 @@ ehemalige Autobahnbrücke	Br -5359,-1298 -5364,-1204
 Brücke über den Fennpfuhl	Br 15219,13888 15179,13872
 Fußgängerbrücke an der Margaretenhöhe	Br 16309,19542 16359,19590
 U-Bahnbrücke	Br 24832,14998 24814,15073
+Reiterbrücke	Br 7173,11864 7182,11870
+Landoltwegbrücke	Br 2288,4932 2301,4917 2313,4901
+Poßwegbrücke	Br -429,4043 -443,4059
+Jürgengrabensteg	Br -2929,12452 -2912,12459
+Dianasteg	Br 4114,22690 4087,22714
+Uhlandstraßenbrücke	Br 7637,20712 7644,20744
+Rathaussteg	Br 5201,20103 5170,20182
+Bollesteg	Br 2919,20910 2915,20932
+Bellevueparkbrücke	Br 22796,5640 22796,5631
+Adolf-Kiepert-Steg	Br 8688,-781 8652,-718
+Brückenstraßenbrücke	Br 29524,4208 29516,4223
+Hegemeisterbrücke	Br 30081,5231 30081,5220
 Elbebrücke	Br -108535,-32884 -108293,-33023
 Brücke über die Alte Elbe	Br -107949,-33102 -107748,-33161
 Brücke über die Hohensaaten-Friedrichsthaler-Wasserstraße	Br 69465,72943 69331,73165

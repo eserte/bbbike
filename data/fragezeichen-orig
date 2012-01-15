@@ -179,10 +179,24 @@ Cecilienstraße/Hannaweg: neuer Zebrastreifen wird markiert	?::projected 20909,13
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/45re.pdf/file?y=2011
 Günter-Riesebrodt-Weg: Qualität? Genaue Lage der Straße? Schon fertiggestellt?	?::inwork 19395,7901 19302,7971
 # 
-#XXX diese Straße existiert noch nicht
-#: last_checked: 2011-04-17
-#: next_check: 2012-04-01
-An den Auen: Qualität? Genaue Lage der Straße?	?::projected 21208,19027 21258,18969 21260,18900
+#: XXX diese Straßen existieren noch nicht
+#: XXX teilweise (oder alle) fehlen sie auch in Berlin.coords.data
+#: last_checked: 2011-04-17 vvv
+#: next_check: 2012-04-01 vvv
+An den Auen: Qualität?	?::projected 21194,19054 21248,19007 21285,18950 21310,18889
+Markus-Herz-Weg: Qualität?	?::projected 20701,18634 20906,18719 21123,18813
+David-Friedländer-Weg: Qualität?	?::projected 20727,18726 20901,18793 21038,18851 21024,18915 20995,18988
+Dohmweg: Qualität?	?::projected 20760,18812 20894,18861 21024,18915
+Georg-Förster-Allee: Qualität?	?::projected 20915,18601 20906,18719 20901,18793 20894,18861 20889,18943 20883,19045
+Löffleranger: Qualität?	?::projected 20995,18988 20978,19009 20964,19026 20917,19017 20918,18987 20978,19009
+Weidenröschenweg: Qualität?	?::projected 21123,18813 21310,18889
+Pfennigkrautweg: Qualität?	?::projected 21095,18874 21285,18950
+Labkrautweg: Qualität?	?::projected 21068,18934 21248,19007 21282,19019
+Schwanenblumenweg: Qualität? Wird es eine Verbindung zum Parkweg geben?	?::projected 21035,19005 21106,19026 21194,19054 21251,19080
+Schilfanger: Qualität?	?::projected 21106,19026 21098,19043 21089,19062 21109,19071 21118,19055 21098,19043
+Weidenanger: Qualität?	?::projected 21194,19054 21175,19076 21157,19087 21140,19081 21147,19064 21175,19076
+#: next_check: ^^^
+#: last_checked ^^^
 # 
 #: last_checked: 2011-09-10 vvv
 #: next_check: 2012-04-01 vvv
@@ -387,6 +401,10 @@ Kindelseeweg	?::projected -1600,16494 -1661,16509
 Wittweseeweg	?::projected -1680,16441 -1616,16427
 #: last_checked ^^^
 # 
+#: XXX fehlt in Berlin.coords.data
+#: XXX gibt es die Straße schon?
+Strausseeweg	? -1566,16628 -1629,16640
+# 
 #: note fehlt noch bei osm vvv
 Quenzseeweg: Qualität?	? -1746,16667 -1674,16652
 Beetzseeweg: Qualität?	? -1765,16603 -1689,16584
@@ -464,7 +482,7 @@ Teilestr.: Radverkehrsanlagen	? 10815,6036 11068,6006 11160,5990 11257,6015 1132
 # 
 #: last_checked: 2010-06-06
 #: next_check: 2010-09-01
-Fürstenwalder Allee: Bau von Radverkehrsanlagen	? 29714,4461 29728,4435 29813,4314 29850,4288 29901,4264 29959,4235 30037,4176 30210,4046 30351,3939 30456,3794 30518,3753 30650,3698 30993,3557 31139,3497 31366,3404 31447,3372 31632,3297 31863,3257 31978,3237 32829,3105 33111,3064 33547,2904
+Fürstenwalder Allee: Bau von Radverkehrsanlagen	? 29714,4461 29728,4435 29813,4314 29850,4288 29901,4264 29959,4235 30037,4176 30210,4046 30351,3939 30456,3794 30518,3753 30650,3698 30993,3557 31139,3497 31366,3404 31447,3372 31632,3297 31863,3257 31978,3237 32121,3215 32829,3105 33111,3064 33547,2904
 # 
 #: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20110530.1455.346033.html
 #: XXX make public?
@@ -717,7 +735,7 @@ Fichtenweg: Teilstück als Straßenland eingezogen?	? -2949,17946 -2963,17872
 #XXX del --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/39re.pdf/file --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/51re.pdf/file --- #: last_checked: 2011-06-10 --- #: next_check: 2011-09-01 --- Straße wird eingezogen --- es ist passiert!	? 14908,9939 14956,10028
 #XXX del --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/41re.pdf/file --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/51re.pdf/file --- Traberweg: Einziehung von Straßenland: was bedeutet das hier? -> nix!	? 18351,8222 18416,8163 18490,8104 18570,8025
 Havelwiesen: genaue Lage der Grünanlage?	? -2526,16779 -2427,16779 -2422,16656 -2504,16663
-Poßweg: evtl. Eintrag in brunnels notwendig - Name der Brücke?	? -429,4043 -472,4090
+Poßweg: evtl. Eintrag in brunnels notwendig - Name der Brücke?	? -429,4043 -443,4059 -472,4090
 Altkanzlerstr.: evtl. Eintrag in brunnels notwendig - Name der Brücke?	? -222,4300 -151,4228
 #: XXX_prog
 Bordsteinkante Richtung Westen	? 17183,17385
@@ -1869,7 +1887,7 @@ Letschiner Weg: Qualität?	? 3075,19850 2881,20086
 #: XXX ein anonymer Eintrag hat nur "gute Qualität" eingetragen:
 Hüttigpfad: Qualität?	? 5107,14781 5057,14824 4887,14931 4810,15000 4724,15055 4668,15066 4598,15057 4459,15066
 #: XXX Eintrag von marionrohde und Luftbild widersprechen sich:
-Westerlandstr.: Gibt es hier einen Radweg?	? -5039,15618 -5023,15688 -5000,15769 -5010,15787 -5056,15800 -5066,15820 -5036,15923 -5019,15970 -4951,16116
+Westerlandstr.: Gibt es hier einen Radweg?	? -5039,15618 -5023,15688 -5000,15769 -5010,15787 -5056,15800 -5066,15820 -5059,15842 -5036,15923 -5019,15970 -4951,16116
 Groß-Ziethener Chaussee - Buchbinderweg: Qualität?	? 16490,955 16464,1014 16435,1063
 Am Rudower Fließ: durchgängig wassergebundene Decke? nachts beleuchtet?	? 16464,1014 16513,1053 16547,1111 16567,1142 16650,1356 16698,1392
 #: XXX zumindest am Geflügelsteig Verbundsteinpflaster
@@ -2305,7 +2323,8 @@ Lindauer Allee/Aroser Allee - Luisenweg: Fahrbahnbeschaffenheit der Radfahrverbi
 #: XXX laut osm: ja
 Markscheiderstr. - An der Nordbahn: Existiert hier eine direkte Verbindung für Radfahrer? Qualität?	? 7105,19677 7125,19717
 #XXX del --- #: XXX Bauarbeiten waren Mai 2009 --- Blankenfelde, Berliner Str. und Hauptstr: Ist die Fahrbahnqualität (früher Kopfsteinpflaster) nach den Bauarbeiten besser geworden?	? 9528,23240 9490,23531 9425,23693 9625,23781 9774,23936
-Weg an der Havel: Für Radfahrer befahrbar? Qualität?	? -3370,14115 -3312,14036 -3353,13990 -3493,13782 -3543,13691 -3566,13580 -3555,13485
+Weg am Mühlengraben: Für Radfahrer befahrbar? Qualität?	? -3370,14115 -3306,14035
+Weg an der Havel: Für Radfahrer befahrbar? Qualität?	? -3355,14001 -3493,13782 -3543,13691 -3566,13580 -3555,13485
 Schiffahrtsufer: Für Radfahrer befahrbar? Qualität?	? -3555,13485 -3441,13270
 Reiterhof, Phöben - Havelfähre: Qualität des Radwegs?	? -25787,3228 -25765,3246 -25530,3223 -25511,3313 -25425,3364 -25345,3389 -25282,3433 -25191,3442 -25198,3540 -25262,3561 -25373,3653 -25460,3795 -25563,3940 -25592,3985 -25578,4203 -25471,4332 -25506,4488 -25723,4736 -25725,4734 -25726,4734 -25855,4868 -25942,5010 -26073,5175 -26215,5272 -26647,5444 -26755,5459 -26918,5525
 Havelfähre - Trebelberg: Qualität des Radwegs?	? -26918,5525 -27169,5667 -27239,5694 -27344,5769 -27537,5873 -27679,5929 -27873,6033 -28007,6147 -28158,6227 -28398,6324 -28418,6351 -28778,6516 -28755,6544 -28757,6542 -29169,6718 -29225,6532 -29272,6453 -29279,6367 -29507,6251 -29501,6153 -29526,6093 -29580,6051 -29618,5962 -29969,5876 -29960,5808 -29883,5747 -29792,5636 -30714,5328 -30571,4759 -30814,4732 -30785,4243
@@ -2526,7 +2545,7 @@ Wiesengrund (Staaken): Qualität?	? -7334,13058 -7377,13051 -7439,13047 -7481,130
 Helma-Bogen: Qualität?	? -7377,13051 -7379,13105 -7481,13111 -7481,13055
 Am Rain: Qualität?	? -8033,13204 -7883,13166
 #: XXX street name mismatch: Westerwald vs. Westerland, ask again (was entry by: marionrohde, Asphalt Q0)
-Westerwaldstr.: Qualität?	? -5039,15618 -5023,15688 -5000,15769 -5010,15787 -5056,15800 -5066,15820 -5036,15923 -5019,15970 -4951,16116
+Westerwaldstr.: Qualität?	? -5039,15618 -5023,15688 -5000,15769 -5010,15787 -5056,15800 -5066,15820 -5059,15842 -5036,15923 -5019,15970 -4951,16116
 #: XXX_osm: bei osm evtl. falsch geschrieben (großes D)
 Von-der-Trenck-Str.: Qualität?	? -3245,1427 -3065,1565
 #: XXX anonymous meint: guter Asphalt, keine weiteren Einschränkungen
@@ -2534,6 +2553,7 @@ Barnhelmstr.: Qualität?	? -3192,1343 -2976,1418 -2753,1490 -2698,1509
 Tellheimstr.: Qualität?	? -3094,1183 -2902,1296
 Waldhauswinkel: Qualität?	? -2847,1705 -2784,1728
 #: XXX Eintrag in brunnels-orig notwendig?
+#: XXX auch die Zinnowwegbrücke über die U-Bahn eintragen
 Zinnowweg: Qualität? Für Radfahrer befahrbar? Nachts beleuchtet?	? -420,4159 -343,4056 -162,3827 -92,3724 -90,3645 -135,3567
 Ottmachauer Steig: Qualität? Für Radfahrer offen?	? -442,4691 -424,4717 -311,4637
 Selmaplatz: Qualität?	? -361,4334 -408,4302
@@ -2852,7 +2872,7 @@ Viktoriastr. (Französisch Buchholz): Qualität?	? 12467,22147 12362,22131
 Parkstr. (Französisch Buchholz): Qualität?	? 12630,22277 12488,22305 12393,22332 12205,22367 12179,22369
 #: XXX_osm bei osm als "Guyotstr" bezeichnet
 Henrionweg: Qualität? Für Radfahrer befahrbar?	? 11095,21768 11153,21753 11145,21698
-Chantieweg: Qualität?	? 11425,21650 11408,21537
+Chantiéweg: Qualität?	? 11425,21650 11408,21537
 Straße 55: Qualität?	? 12837,21229 12695,21336
 Straße 123: Qualität?	? 10758,22952 10700,23251
 Straße 124: Qualität?	? 11013,22745 10979,22769 10758,22952
@@ -3239,7 +3259,7 @@ Widosteig: exitiert eine Verbindung zum Bohnsdorfer Weg? Qualität?	? 19934,1102 
 B96a - Schützenstr.: Wo genau liegt die Verbindungsstraße? Qualität?	? 19858,-843 19869,-816
 Wehrmathen/Uranusstr. - Siriusstr./Ortolfstr.: Qualität? Dürfen Radfahrer hier fahren?	? 18904,-573 18928,-506 18950,-490 18997,-351
 Kramnitzer Weg: Qualität der Verlängerung nach Westen hin? Existiert eine Ausschilderung	? -9353,5012 -9395,5025 -9537,5083 -9617,5086
-Schlesinger Str.: existiert ein Zugang von der Schlesinger Str. zum Uferweg?	? 4968,13060 4973,13083
+Schlesingerstr.: existiert ein Zugang von der Schlesingerstr. zum Uferweg?	? 4968,13060 4973,13083
 #: XXX wo genau?
 #: by: http://www.potsdam.de/cms/beitrag/10068669/966975/
 Radwegbau in Golmer Chaussee und Wublitzstr.	?::inwork -17646,1636 -18091,1642 -18350,1540 -18688,1177 -18718,1243 -18673,1785 -18728,2153 -18989,2236 -19233,2251 -19422,2220 -19656,2362 -19721,2368
@@ -3281,6 +3301,7 @@ Amelieweg: Qualität nach den Bauarbeiten?	?::inwork 22861,12390 22805,12456 2275
 (Welzower Steig - Zabel-Krüger-Damm): Qualität? Nachts beleuchtet? Führt hier die Radroute 2 entlang?	? 5828,22446 5735,22564 5619,22766
 (Zabel-Krüger-Damm - Benekendorffstr.): Qualität? Nachts beleuchtet? Führt hier die Radroute 2 entlang?	? 5574,22747 5521,22825 5357,23004
 (Zehntwerderweg - Hermsdorfer See): Führt hier die Radroute 2 entlang?	? 5291,23072 5232,23139
+#: XXX evtl. als "Herrnholzpark" bezeichnen, evtl. Park auch aufnehmen
 (Weg am Packereigraben): Qualität? Nachts beleuchtet?	? 5895,22493 5828,22446 5821,22435 5783,22418 5668,22283 5619,22168 5490,22095 5373,22089 5177,22142 5108,22156 5033,22122 4917,22119 4884,22097
 #: by: http://www.potsdam.de/cms/beitrag/10071706/966975/
 Templiner Str.: gibt es in der Templiner Straße mittlerweile Radstreifen?	? -13062,-2901 -13155,-2913 -13381,-2943 -13481,-2956 -13718,-2991
@@ -3722,3 +3743,40 @@ Deportationsweg: Qualität? Ausschilderung? Für Autos gesperrt? Nachts beleuchtet
 Feldspatzwenweg: Qualität? Wo genau befindet sich die Straße?	? 7609,23108 7583,23177 7804,23253 7831,23192
 Weg im Volkspark Wittenau: Qualität? Beleuchtet?	? 5327,21136 4942,20830
 Reinickes Hof: existiert eine Verbindung zum Saalmannsteig? Qualität?	? 5281,18996
+Bleichröderpark: Qualität? Nachts beleuchtet? Ausgeschildert?	? 10582,18159 10543,18194 10508,18190 10487,18270
+Stellerweg: existiert hier ein Weg? Ausgeschildert? Qualität für Radfahrer?	? 15367,14512 15127,14570
+#: XXX evtl. auch Park und See (Heidelake) eintragen
+Heidelakepark: existiert hier eine Verbindung? Qualität? Nachts beleuchtet?	? -7033,14984 -7084,15022 -7072,15041 -7116,15053
+#: XXX fehlt in Berlin.coords.data
+Hermann-Schmidt-Weg: Qualität?	? -5059,15842 -5238,15891 -5317,15888 -5407,15914
+#: XXX fehlt in Berlin.coords.data
+Lilli-Palmer-Promenade: Qualität? Nachts beleuchtet?	? -1848,15535 -1926,15254 -1870,15233
+Fürst-Bismarck-Steg: existiert hier eine Verbindung zum Tegeler Fließ?	? 3917,22534 3881,22553
+#: XXX fehlt in Berlin.coords.data
+Hohenseeweg: Qualität? Für Autos gesperrt?	? 22972,11066 23152,11065
+Dr.-Jacoby-Weg: Qualität? Befindet sich der Weg hier?	? 25598,6158 25413,6240
+#: XXX fehlt in Berlin.coords.data
+Forstmeisterweg: Qualität? Nachts beleuchtet? Ausgeschildert?	? 32121,3215 32167,3317 32222,3680
+#: XXX fehlt in Berlin.coords.data
+Winterweg: Qualität? Ausgeschildert?	? 28809,462 29481,40 29979,-120 30410,-431
+#: XXX fehlt in Berlin.coords.data
+Schmiedigenpfad: Qualität?	? 14865,1952 14703,1985 14587,2032
+#: XXX fehlt in Berlin.coords.data
+Max-Pallenberg-Pfad: Qualität?	? 15460,1764 15465,1953
+#: XXX fehlt in Berlin.coords.data
+Harry-Liedtke-Pfad: Qualität?	? 15788,1747 15783,1820 15806,1903 15843,2065 15836,2113
+#: XXX fehlt in Berlin.coords.data
+Straße 148: existiert hier eine Straße? Qualität?	? 17188,-46 16993,-40
+Fresepark: Qualität?	? 8769,266 8695,188 8671,118 8626,107
+Hospitalgrabenpark: Qualität?	? 7115,3003 7127,3077 7184,3142 7263,3117 7314,3199
+Lankegrabenpark: Qualität?	? 7364,3193 7409,3331 7458,3451
+Vierlingpark: Qualität?	? -762,4054 -762,4054 -713,4102 -685,4167 -638,4413
+Vierlingpark: Qualität?	? -713,4102 -713,4102 -758,4222 -716,4355 -754,4361
+Idealpassage: Qualität?	? 12553,8671 12452,8750
+#: XXX evtl. auch als Park/Grünanlage eintragen
+Egelpfuhlwiesen: Qualität?	? -5594,12832 -5554,12929 -5493,12994 -5446,13137 -5472,13235
+#: XXX evtl. auch den Park eintragen; von gleichnamiger Straße abgrenzen
+Stabholzgarten: Existiert eine Verbindung durch die Grünanlage? Qualität? Nachts beleuchtet?	? -3445,14033 -3387,13999 -3355,14001 -3306,14035 -3288,14050 -3146,14145 -3135,14183
+#: XXX evtl. auch als Park/Grünanlage eintragen
+Immenweidepark: Qualität?	? -2114,17878 -2169,17882 -2241,17847 -2298,17868 -2366,17868 -2388,17893
+Andreas-Rabe-Siedlung: Qualität? Ausgeschildert?	? 6898,23233 6912,23237 6967,23278 7078,23340 7027,23459
