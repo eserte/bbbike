@@ -1,4 +1,3 @@
-#!/usr/local/bin/perl5.12.4 -w
 #!/usr/bin/perl -w
 # -*- perl -*-
 
@@ -16,11 +15,18 @@
 use autodie;
 use strict;
 use FindBin;
+my $bbbike_rootdir;
+BEGIN { $bbbike_rootdir = "$FindBin::RealBin/.." }
+use lib ($bbbike_rootdir, "$bbbike_rootdir/lib");
 
 use File::Basename 'basename';
 use File::Temp 'tempfile';
 use Getopt::Long;
-use KSx::Simple;
+
+use Karte;
+use Karte::Standard;
+use Karte::Polar;
+use Strassen::Core;
 
 sub usage () {
     die <<EOF;
@@ -32,7 +38,6 @@ EOF
 my $do_index;
 my $only_berlin;
 
-my $bbbike_rootdir = "$FindBin::RealBin/..";
 my $bbbike_datadir = "$bbbike_rootdir/data";
 my $restrict_bbd = "$bbbike_rootdir/miscsrc/restrict_bbd_data.pl";
 
@@ -45,32 +50,61 @@ GetOptions(
 my $index_dir = "$bbbike_rootdir/tmp/bbbike-kinosearch" . ($only_berlin ? "-berlin" : "-all");
 
 mkdir $index_dir if !-d $index_dir;
-my $index = KSx::Simple->new(
-			     path     => $index_dir,
-			     language => 'de',
-			    );
+
 
 if ($do_index) {
     if (@ARGV) {
 	usage;
     }
 
+    require KinoSearch::Plan::Schema;
+    require KinoSearch::Plan::FullTextType;
+    require KinoSearch::Plan::StringType;
+    require KinoSearch::Analysis::PolyAnalyzer;
+    require KinoSearch::Index::Indexer;
+
+    my $schema = do {
+	my $_schema = KinoSearch::Plan::Schema->new;
+	my $polyanalyzer = KinoSearch::Analysis::PolyAnalyzer->new(language => 'de');
+	my $type = KinoSearch::Plan::FullTextType->new(analyzer => $polyanalyzer);
+	my $noindex_type = KinoSearch::Plan::StringType->new(indexed => 0);
+	$_schema->spec_field(name => 'title',   type => $type);
+	$_schema->spec_field(name => 'content', type => $type);
+	$_schema->spec_field(name => 'cat',     type => $noindex_type);
+	$_schema->spec_field(name => 'coords',  type => $noindex_type);
+	$_schema;
+    };
+
+    my $indexer = KinoSearch::Index::Indexer->new
+	(
+	 index    => $index_dir,
+	 schema   => $schema,
+	 create   => 1,
+	 truncate => 1,
+	);
+
     my $fh;
     open $fh, "$bbbike_datadir/Berlin.coords.data";
     warn "Berlin.coords.data...\n";
     while(<$fh>) {
 	chomp;
-	my($str,$citypart) = split /\|/;
-	$index->add_doc({ title => "$str $citypart",
-			  content => "$str $citypart",
+	my($str,$citypart,undef,$coords) = split /\|/;
+	$indexer->add_doc({ title => "$str $citypart",
+			    content => "$str $citypart",
+			    cat => 'X',
+			    $coords ? (coords => _translate_coords($coords)) : (),
 			});
     }
 
     for my $file (glob("$bbbike_datadir/*-orig")) {
 	my $basename = basename $file;
 	$basename =~ s{-orig$}{};
+	next if $basename eq 'ampelschaltung'; # not in bbd format, and useless anyway in fulltext index
 	warn "$basename...\n";
 	my $work_file = $file;
+	if ($basename eq 'plz') {
+	    $work_file =~ s{-orig}{}; # plz-orig has some strange B_ON/B_OFF stuff in the coords
+	}
 	my $tmpfile;
 	if ($only_berlin) {
 	    # Files which are completely outside berlin
@@ -109,42 +143,71 @@ if ($do_index) {
 	    }
 	}
 
-	my $fh;
-	open $fh, $file;
+	my $s = Strassen->new_stream($work_file, UseLocalDirectives => 1);
 	warn "   (reading and indexing)\n";
-	while(<$fh>) {
-	    chomp;
-	    if (m{^#\s*(.*)}) {
-		my $comment = $1;
-		$index->add_doc({ title => "$comment $basename",
-				  content => $comment,
-				});
-	    } elsif (my($str) = $_ =~ m{^([^\t]+)}) {
-		$index->add_doc({ title => "$str $basename",
-				  content => $str,
-			    });
-	    }
-	}
+	$s->read_stream
+	    (sub {
+		 my($rec, $dir, $line) = @_;
+		 my $str = $rec->[Strassen::NAME];
+		 my @text = $str;
+		 while(my($k,$v) = each %$dir) {
+		     push @text, @$v;
+		 }
+		 my $coords = join(" ", _translate_coords(@{ $rec->[Strassen::COORDS] }));
+		 my $title = "$str $basename:$line";
+		 $indexer->add_doc({
+				    title   => $title,
+				    content => join(" ", @text),
+				    cat     => $rec->[Strassen::CAT],
+				    coords  => $coords
+				   });
+	     });
 
 	if ($tmpfile) {
 	    unlink $tmpfile; # do it as early as possible, to keep /tmp small
 	}
     }
 
+    $indexer->commit;
 } else {
     my $query_string = "@ARGV"
 	or usage;
 
-    my $total_hits = $index->search( 
-				    query      => $query_string,
-				    offset     => 0,
-				    num_wanted => 10,
-				   );
+    require KinoSearch::Search::IndexSearcher;
+    
+    my $searcher = KinoSearch::Search::IndexSearcher->new(index => $index_dir);
+    my $hits = $searcher->hits( 
+			       query      => $query_string,
+			       offset     => 0,
+			       num_wanted => 10,
+			      );
 
-    print "Total hits: $total_hits\n";
-    while ( my $hit = $index->next ) {
-	print "$hit->{title}\n",
+    print "#: map: polar\n#: \n";
+    print "# Total hits: " . $hits->total_hits . "\n";
+    while (my $hit = $hits->next) {
+	print "$hit->{title}\t$hit->{cat} $hit->{coords}\n",
     }
 }
 
+sub _translate_coords {
+    my(@coords) = @_;
+    map { join ",", $Karte::Polar::obj->standard2map(split /,/) } grep { $_ ne '*' } @coords; 
+}
+
 __END__
+
+=head1 NAME
+
+bbbike-kinosearch.pl - a full text over BBBike data
+
+=head1 SYNOPSIS
+
+Create index (takes some 30s or so):
+
+    ./bbbike-kinosearch.pl -index
+
+Search something
+
+    ./bbbike-kinosearch.pl dudenstr
+
+=cut
