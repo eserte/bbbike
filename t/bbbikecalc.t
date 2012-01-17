@@ -21,10 +21,7 @@ BEGIN {
 
 plan tests => 4;
 
-{
-    local $TODO = "lang=en NYI";
-    is BBBikeCalc::localize_direction('E', 'en'), 'east';
-}
+is BBBikeCalc::localize_direction('E', 'en'), 'east';
 is BBBikeCalc::localize_direction('E', 'de'), 'Osten';
 
 is BBBikeCalc::localize_direction_abbrev('E', 'en'), 'E';

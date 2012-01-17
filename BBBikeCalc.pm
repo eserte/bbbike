@@ -209,6 +209,24 @@ sub localize_direction {
 		 'NW'  => 'Nordwesten',
 		 'NNW' => 'Nordnordwesten',
 	       }->{uc($dir)};
+    } else {
+	$dir = { 'N'   => 'north',
+		 'NNE' => 'north-northeast',
+		 'NE'  => 'northeast',
+		 'ENE' => 'east-northeast',
+		 'E'   => 'east',
+		 'ESE' => 'east-southeast',
+		 'SE'  => 'southeast',
+		 'SSE' => 'south-southeast',
+		 'S'   => 'south',
+		 'SSW' => 'south-southwest',
+		 'SW'  => 'southwest',
+		 'WSW' => 'west-southwest',
+		 'W'   => 'west',
+		 'WNW' => 'west-northwest',
+		 'NW'  => 'northwest',
+		 'NNW' => 'north-northwest',
+	       }->{uc($dir)};
     }
     $dir;
 }
@@ -216,7 +234,7 @@ sub localize_direction {
 sub localize_direction_abbrev {
     my($dir, $lang) = @_;
     if ($lang eq 'de') {
-	$dir =~ tr{eE}{oO};
+	$dir =~ s{E}{O}i;
     }
     $dir;
 }
