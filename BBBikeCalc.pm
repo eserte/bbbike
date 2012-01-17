@@ -213,6 +213,14 @@ sub localize_direction {
     $dir;
 }
 
+sub localize_direction_abbrev {
+    my($dir, $lang) = @_;
+    if ($lang eq 'de') {
+	$dir =~ tr{eE}{oO};
+    }
+    $dir;
+}
+
 1;
 
 __END__
