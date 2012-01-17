@@ -24,6 +24,9 @@ table.routelist td {
 table.detailmap td {
   vertical-align:middle;
 }
+table.routeas td {
+  padding-right:10px;
+}
 tt,pre {
   font-family:courier,monospace;
 }

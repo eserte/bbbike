@@ -89,6 +89,7 @@ return
      "in die Fahrzeit einbezogen" => "already calculated into driving time",
      "Etappe" => "Hop",
      "Richtung" => "Direction",
+     "Richt." => "Dir.", # abbrev
      "Stra&szlig;e" => "Street",
      "Gesamt" => "Total",
      "Bemerkungen" => "Remarks",
@@ -116,6 +117,7 @@ Bildgr&ouml;&szlig;e, Bildformat und Detailreichtum %s bis %s kB. PDFs sind %s b
 " => "File sizes depend on image sizes, format and details and are about %s to %s kB. PDF are about %s to %s kB. ",
      "Legende" => "Legend",
      "Route mit ge&auml;nderten Einstellungen" => "Search again with changed settings",
+     "Route als" => 'Show route as',
      "Zurück zur Hauptseite" => "Back to main page",
      "R&uuml;ckweg" => "Way back",
      "Neue Anfrage" => "New search",
