@@ -39,6 +39,7 @@ sub head {
 <html><head>
 <title>BikePower: pers&ouml;nliche Einstellungen</title>
 <link rev=made href="mailto:slaven@rezic.de">
+<meta name="viewport" content="width=device-width; initial-scale=1.0, max-scale=1.0, user-scalable=no">
 EOF
     $head .= set_personal_settings_js_code();
     $head .= get_personal_settings_js_code();
