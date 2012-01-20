@@ -19366,18 +19366,6 @@ EOF
 userdel	2::inwork 9524,12950 9529,12925
 EOF
      },
-## Unklar, ob die Sperrung tatsächlich schon erfolgt ist und wie lange sie dauert...
-#     { from  => undef, # 
-#       until => undef, # XXX
-#       text  => 'Sperrung Fußgängerbrücke Altglienicke.',
-#       type  => 'gesperrt',
-#       source_id => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1106/nachricht4399.html',
-#       data  => <<EOF,
-##: XXX wann wird die Brücke wieder eröffnet?
-##: next_check: 2011-07-31
-#userdel	2::inwork 21262,375 21182,436
-#EOF
-#     },
      { from  => 1310335200, # 2011-07-11 00:00
        until => 1314395999, # 2011-08-26 23:59
        text  => 'Instandsetzung des Stegs zwischen Nackthals- und Seidenhuhnweg, u.U. Vollsperrung, ab 12. Juli 2011 für ca. 10 Wochen',
@@ -19957,6 +19945,19 @@ EOF
        source_id => 'IM_018330',
        data  => <<EOF,
 userdel	2::temp 8538,12245 8214,12205 8089,12190
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Sperrung Fußgängerbrücke Altglienicke.',
+       type  => 'gesperrt',
+       source_id => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1106/nachricht4399.html',
+       data  => <<EOF,
+#: by: http://www.altglienicke24.de/meldungen.html
+#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1201/nachricht4563.html
+#: XXX wann wird die Brücke wieder eröffnet?
+#: next_check: 2012-03-01
+userdel	2::inwork 19968,16 19940,52
 EOF
      },
     );

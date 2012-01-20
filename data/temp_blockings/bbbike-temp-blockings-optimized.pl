@@ -1317,6 +1317,20 @@ userdel	2::inwork 19750,11730 19827,11686 19881,11591
          'data' => 'userdel	2::temp 8538,12245 8214,12205 8089,12190
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1106/nachricht4399.html',
+         'until' => undef,
+         'text' => 'Sperrung Fußgängerbrücke Altglienicke.',
+         'from' => undef,
+         'id' => 2311,
+         'data' => '#: by: http://www.altglienicke24.de/meldungen.html
+#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1201/nachricht4563.html
+#: XXX wann wird die Brücke wieder eröffnet?
+#: next_check: 2012-03-01
+userdel	2::inwork 19968,16 19940,52
+',
+         'type' => 'gesperrt'
        }
      
 );
