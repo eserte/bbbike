@@ -55,3 +55,5 @@ for my $geoobj (@geoobjs) {
 							     $geoobj->{lat});
     print "$geoobj->{p}\tX $x,$y\n";
 }
+
+$Karte::Polar::obj=$Karte::Polar::obj if 0; # peacify -w

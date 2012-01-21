@@ -1,8 +1,6 @@
-#!/usr/bin/perl -w
 # -*- perl -*-
 
 #
-# $Id: CombineTrainStreetNets.pm,v 1.3 2005/02/25 01:48:27 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.

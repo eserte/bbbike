@@ -45,4 +45,6 @@ while(!eof(STDIN)) {
     print "$name\t$opt{cat} ", join(",", map { int } $Karte::Polar::obj->map2standard($long,$lat)), "\n";
 }
 
+$Karte::Polar::obj=$Karte::Polar::obj if 0; # cease -w
+
 __END__
