@@ -1063,7 +1063,6 @@ cgi/bbbike-netbeat.cgi.config
 cgi/bbbike-radzeit.cgi.config
 cgi/bbbike2-radzeit.cgi.config
 cgi/bbbike-sourceforge.cgi.config
-cgi/bbbikesoapserver.cgi
 cgi/gridserv.cgi
 data/.cvsignore
 data/BASE
@@ -1386,7 +1385,6 @@ miscsrc/BBBikeGPSTrackingPlugin.pm
 miscsrc/BBBikeLocalizator.pm
 miscsrc/BBBikePanoramioPlugin.pm
 miscsrc/BBBikeOsmUtil.pm
-miscsrc/BBBikeSOAP.pm
 miscsrc/BBBikeViewImages.pm
 miscsrc/CombineTrainStreetNets.pm
 miscsrc/CommonMLDBM.pm
@@ -1564,7 +1562,6 @@ t/bbbikedraw-loop.t
 t/bbbikedraw.t
 t/bbbikegooglemap.t
 t/bbbikerouting.t
-t/bbbikesoap.t
 t/bbbikevar.t
 t/browserinfo.t
 t/cgi-cookie.t
