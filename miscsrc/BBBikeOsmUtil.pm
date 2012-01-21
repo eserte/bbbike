@@ -452,7 +452,8 @@ sub plot_osm_files {
 	    # following some stuff which is not that interesting for BBBike editing
 	    if ((exists $tag{'railway'} && $tag{'railway'} =~ m{^(?:abandoned|disused)$}) ||
 		(exists $tag{'man_made'} && $tag{'man_made'} eq 'pipeline') ||
-		exists $tag{'barrier'}
+		exists $tag{'barrier'} ||
+		exists $tag{'mj10777:admin_levels'}
 	       ) {
 		$item_args{'-dash'} = '.  ';
 	    } elsif (exists $tag{'power'}) {
@@ -462,12 +463,16 @@ sub plot_osm_files {
 		$item_args{'-dash'} = '. ';
 	    } elsif (exists $tag{'tunnel'}) {
 		$item_args{'-dash'} = [10,2];
-	    } elsif (exists $tag{'highway'} && $tag{'highway'} eq 'path') {
+	    } elsif (exists $tag{'highway'} && $tag{'highway'} eq 'service') {
+		$item_args{'-dash'} = '--';
+	    } elsif (exists $tag{'highway'} && $tag{'highway'} =~ m{^(footway|pedestrian|track|path|service|bridleway)$}) {
+		$item_args{'-width'} = 1;
 		if (!exists $tag{'bicycle'} || $tag{'bicycle'} eq 'no') {
 		    $item_args{'-dash'} = '--';
-		} # else: no dash, as it is ridable for cyclists
-	    } elsif (exists $tag{'highway'} && $tag{'highway'} =~ m{^(footway|steps|pedestrian|track|path|service|bridleway)$}) {
-		$item_args{'-dash'} = '--'; # may be interesting, but distinguish it from "official" streets
+		} # else: solid line
+	    } elsif (exists $tag{'highway'} && $tag{'highway'} eq 'steps') {
+		$item_args{'-dash'} = [1,2],
+		$item_args{'-width'} = 5;
 	    } elsif (exists $tag{'highway'} && $tag{'highway'} =~ CONSTRUCTION_RX) {
 		$item_args{'-dash'} = '.'; 
 	    } elsif (exists $tag{'boundary'}) {
