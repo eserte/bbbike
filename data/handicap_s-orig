@@ -29,8 +29,9 @@ Invalidenstr. (Mitte): Baustelle, Richtung Alt-Moabit zwischen Gartenstr. und He
 # 
 #XXX del --- #: last_checked: 2011-05-20 --- Krausenstr.: Bauarbeiten an der Kreuzung Krausenstr./Charlottenstr	q3::inwork 9581,11523 9711,11543
 # 
-#: last_checked: 2011-11-04
-#: next_check: 2012-01-15
+#: last_checked: 2012-01-18
+#: next_check: 2012-03-15
+#: XXX abh‰ngig von den Arbeiten in der Kynaststr.
 Alt-Stralau: Bauarbeiten an der Br¸cke, enge Durchfahrt	q3::inwork 14652,10201 14558,10264
 # 
 #XXX del? --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1010/nachricht4088.html --- #: last_checked: 2011-10-31 --- #: next_check: 2011-11-18 --- #: XXX Einbahnstraﬂenregelung eventuell nur bis 2011-11-18, siehe IM_016526 --- Behrenstr.: Bauarbeiten, Einbahnstraﬂenregelung	q4::inwork; 8861,12125 9054,12154 9064,12156 9164,12172
@@ -55,8 +56,8 @@ Universit‰tsstr.: wegen Bauarbeiten Richtung Unter den Linden gesperrt	q4::inwor
 # 
 #: last_checked: 2012-01-01 vvv
 #: next_check: 2012-02-15 vvv
-Revaler Str.: Bauarbeiten, Einbahnstraﬂe	q4::inwork; 14509,11060 14442,11101
-Helmerdingstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 14465,11195 14442,11101
+Revaler Str.: Bauarbeiten, Kreuzung gesperrt, Gehweg kann benutzt werden	q4::inwork 14509,11060 14442,11101
+Helmerdingstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg kann benutzt werden	q4::inwork 14465,11195 14442,11101
 #: next_check: ^^^
 #: last_checked: ^^^
 # 
