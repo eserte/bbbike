@@ -1826,7 +1826,6 @@ sub _auto_rcs_header {
 # here starts the real future clean cool package
 package BBBikeEdit;
 use Fcntl; # für DB_File;
-use Class::Struct;
 use Strassen;
 use BBBikeEditUtil;
 use BBBikeGPS;
@@ -1843,23 +1842,20 @@ use Msg qw(frommain);
     }
 }
 
-undef &BBBikeEdit::new;
-struct('top'      => "\$",
-       'toplevel' => "\$", # toplevel from redisplay_top
-       'datadir'  => "\$",
-       'canvas'   => "\$",
-       'str_file' => "\$",
-       'p_file'   => "\$",
-       'coord_system' => "\$",
-       'file2base' => "\$",
-      );
+use myclassstruct qw(top
+		     toplevel
+		     datadir
+		     canvas
+		     str_file
+		     p_file
+		     coord_system
+		     file2base
+		   );
 
-undef &LinePartInfo::new;
-struct(LinePartInfo => [ 'basefile' => "\$",
-			 'line'     => "\$",
-			 'filetype' => "\$",
-			 'name'     => "\$",
-		       ]);
+{
+    package LinePartInfo;
+    use myclassstruct qw(basefile line filetype name);
+}
 
 use constant BBBIKEEDIT_TOPLEVEL => "bbbikeedit";
 

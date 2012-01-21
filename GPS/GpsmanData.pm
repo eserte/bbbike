@@ -61,14 +61,10 @@ use base qw(Exporter);
 
 use GPS::Util; # for eliminate_umlauts
 
-use Class::Struct;
-struct('GPS::Gpsman::Waypoint' =>
-       [map {($_ => "\$")}
-	qw(Ident Comment Latitude Longitude ParsedLatitude ParsedLongitude Altitude NewTrack Symbol Accuracy DisplayOpt DateTime HiddenAttributes)
-       ]
-      );
 {
     package GPS::Gpsman::Waypoint;
+
+    use myclassstruct qw(Ident Comment Latitude Longitude ParsedLatitude ParsedLongitude Altitude NewTrack Symbol Accuracy DisplayOpt DateTime HiddenAttributes);
 
     use vars qw($_container_warning);
 
