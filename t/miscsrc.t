@@ -49,8 +49,6 @@ for my $f (@files) {
 	    if $f =~ m{/tilemap$};
 	myskip "$f works only with installed mod_perl (1 or 2)", 1
 	    if $f =~ m{/FixRemoteAddrHandler\.pm$} && !eval { require Apache2::Const; 1 } && !eval { require Apache::Constants; 1 };
-	myskip "$f works only with installed HTML::TableExtract", 1
-	    if $f =~ m{/polizei-faxabruf-diff\.pl$} && !eval { require HTML::TableExtract; 1 };
 	myskip "$f works only with installed Tk::Zinc", 1
 	    if $f =~ m{/tkzincbbbike$} && !eval { require Tk::Zinc; 1 };
 
