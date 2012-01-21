@@ -54,11 +54,6 @@ Tour Brandenburg
 Elberadweg
 
 =item
-L<http://www.wirtschaft.brandenburg.de/sixcms/media.php/1312/broschurrad.pdf>
-
-Broschüre der Landesregierung Brandenburg zum Thema Radrouten
-
-=item
 L<http://www.maerkisch-oderland.de/landratsamt/bauplanungsamt/Radwege2002.pdf>
 
 Radwegkonzept in Märkisch-Oderland (MOL)
@@ -70,12 +65,6 @@ Radtouren um Bestensee (südlich von Königs Wusterhausen) herum
 =item L<http://www.stechlin.de/aktivitaet.htm>
 
 Radwege um den Stechlinsee (zwischen Rheinsberg und Fürstenberg) herum
-
-=item
-L<http://www.grass-net.de/modules.php?name=Content&pa=showpage&pid=16>
-
-Radtouren im Südberliner Bereich von Sebastian Graß, Site nicht mehr
-erreichbar!
 
 =item L<http://www.radatlas.de/>
 
@@ -124,10 +113,6 @@ radreise-wiki, unter anderem mit Beschreibungen zu regionalen und
 =item L<http://www.werder-havel.de/t2.htm>
 
 Radrouten im Raum Potsdam
-
-=item L<http://www.f-monzer-co.de/easteuro/hhklinik.htm>
-
-Radtouren im Raum Potsdam
 
 =item L<http://www.mobil-potsdam.de/radfahren.htm>
 
@@ -195,11 +180,6 @@ Vollsperrungen).
 Vehrkehrsmanagmentzentrale Berlin (VMZ)
 
 =item
-L<http://www.berlinonline.de/verkehrsticker/_bin/polizei-faxabruf.php>
-
-Meldungen der Polizei (Berlin)
-
-=item
 L<http://www.berlin.de/polizei/verkehr/stau/index.html>
 
 Alternative Seite mit Polizeimeldungen in Berlin
@@ -232,7 +212,7 @@ Deutschladweite Meldungen für den öffentlichen Nahverkehr
 =over
 
 =item
-L<http://www.brandenburg.de/cms/detail.php?id=257089&_siteid=53>
+L<http://www.mil.brandenburg.de/sixcms/detail.php/508057>
 
 Bedarfslisten für Außerortsradwege an Bundes- und Landesstraßen im
 Land Brandenburg
@@ -278,7 +258,7 @@ Bike E<amp> Ride und ÖV Fahrradmitnahme)
 =item
 
 Stuttgart:
-L<http://www.vvs.de/service_radroutenplaner.php>
+L<http://efa.vvs.de/bike/XSLT_TRIP_REQUEST2?language=de>
 
 =item
 
@@ -360,10 +340,6 @@ Straßenverzeichnis von Britz (Berlin)
 
 Straßenverzeichnis von Neukölln
 
-=item L<http://www.home.fh-karlsruhe.de/~scpa0023/KarteNeu06.htm>
-
-Änderungen von Bundesstraßen und -autobahnen (2005 und 2006)
-
 =item L<http://www.statistik-berlin-brandenburg.de/Produkte/Produkte-Verzeichnisse.asp>
 
 U.A. ein Verzeichnis von Berliner Adressen zu Postleitzahlen.
@@ -378,7 +354,7 @@ U.A. ein Verzeichnis von Berliner Adressen zu Postleitzahlen.
 
 Verschiedene thematische Karten
 
-=item L<http://www.berliner-stadplan.com>
+=item L<http://www.berliner-stadtplan.com>
 
 Online-Version des Pharus-Stadtplans
 
@@ -394,11 +370,6 @@ Google Maps (auf Berlin zentriert)
 =item L<http://clickroute.de/>
 
 GPX-Routen auf Google Maps-Karten erstellen
-
-=item L<http://fahrrad.streckenfun.de/GPS/planer/>
-
-Routen auf Google Maps-Karten erstellen oder gefahrene Tracks
-anzeigen, mit fahrradrelevanten Angaben (Reisezeit, Geschwindigkeit...)
 
 =back
 
@@ -425,9 +396,9 @@ Perl-Module @ CPAN
 
 =over
 
-=item L<www.openstreetmap.org>
+=item L<http://www.openstreetmap.org>
 
-Open Street Map
+OpenStreetMap
 
 =item L<http://download.geofabrik.de/osm/>
 
@@ -458,7 +429,7 @@ Ein Programm zum Konvertieren zwischen GPS-Formaten
 
 =over
 
-=item L<http://groups.google.com/group/Google-Maps-API/web/resources-non-google-geocoders>
+=item L<http://search.cpan.org/search?query=Geo%3A%3ACoder&mode=all>
 
 Eine Liste von Geocoding- und Reverse-Geocoding-Diensten.
 
@@ -471,12 +442,10 @@ Eine Liste von Geocoding- und Reverse-Geocoding-Diensten.
 =item L<http://www.gpsies.com>
 
 GPS-Tracks von Fußgängern und Radfahrern auf der ganzen Welt, schöne
-Darstellung und Auswahl per Google Maps, verschiedene
-Download-Formate, u.a. GPX
+Darstellung und Auswahl per OSM-Karte, verschiedene Download-Formate,
+u.a. GPX
 
 =item L<http://www.grabo.de/gps/index.html>
-
-=item L<http://www.berlin-usedom-radweginfo.de/downloadzaehler.php?URL=http://www.berlin-usedom-radweginfo.de/tracks/0u1_BB.zip>
 
 Ein Teil von Berlin-Usedom
 
@@ -509,16 +478,6 @@ Unwetterwarnungskarte des Deutschen Wetterdienstes
 
 Neue Formel zum Berechnen des Windchills.
 
-=item L<http://puma.dkrz.de/theomet/prognosen/>,
-L<http://puma.dkrz.de/theomet/prognosen/bilder/colorpop6.jpg>,
-L<http://puma.dkrz.de/theomet/prognosen/bilder/colorpop6_12.jpg>
-
-Niederschlagsprognosen
-
-=item L<http://www.einfalt.de/x_rad_vorher.html>
-
-Kommerzielles Programm für Niederschlagsprognosen
-
 =back
 
 =head2 Sonstiges
@@ -529,11 +488,6 @@ Kommerzielles Programm für Niederschlagsprognosen
 L<http://www.stadtentwicklung.berlin.de/umwelt/stadtgruen/kinderspielplaetze/de/spielplaetze/>
 
 Spielplätze in Berlin
-
-=item
-L<http://homepage.schleswig-holstein.de/u_pahlke/basics/dictionary.htm>
-
-geographische Begriffe (Wörterbuch Deutsch-Englisch) (Seite nicht mehr erreichbar)
 
 =item L<http://www.statistik-berlin.de/framesets/berl4.htm>
 
