@@ -1091,7 +1091,7 @@ userdel	q4::inwork 425,8766 490,8716
          'id' => 2219,
          'data' => '#: by: wosch
 #: confirmed_by: srt
-#: last_checked: 2011-11-13
+#: last_checked: 2012-01-22
 #: note: eigentlich Radfahren auf der Friedrichsbrücke jetzt auch verboten
 userdel	q4::inwork; 10166,12777 10132,12941
 ',
@@ -1290,8 +1290,8 @@ userdel	2::inwork 19750,11730 19827,11686 19881,11591
        },
        {
          'source_id' => 'IM_017746',
-         'until' => 1328025600,
-         'text' => 'Kastanienallee (Prenzlauer Berg): Bauarbeiten, Straße vollständig gesperrt in beiden Richtungen zwischen Oderberger Str. und Schönhauser Allee, bis 31.01.2012 ',
+         'until' => 1346425200,
+         'text' => 'Kastanienallee (Prenzlauer Berg): Bauarbeiten, Straße vollständig gesperrt in beiden Richtungen zwischen Oderberger Str. und Schönhauser Allee, bis 31.08.2012 ',
          'from' => 1314604800,
          'id' => 2308,
          'data' => 'userdel	q4::inwork 10723,14772 10838,14962 10881,15047
