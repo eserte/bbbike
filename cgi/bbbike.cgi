@@ -775,7 +775,7 @@ $require_Karte = sub {
     undef $require_Karte;
 };
 
-$VERSION = 11.000;
+$VERSION = "11.001";
 
 use vars qw($delim);
 $delim = '!'; # wegen Mac nicht ¦ verwenden!
@@ -839,7 +839,7 @@ $detailheight = 500;
 $nice_berlinmap = 0;
 $nice_abcmap    = 0;
 
-$bbbike_start_js_version = '1.21';
+$bbbike_start_js_version = '1.22';
 
 use vars qw(@b_and_p_plz_multi_files %is_usable_without_strassen %same_single_point_optimization);
 @b_and_p_plz_multi_files = 
