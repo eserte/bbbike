@@ -46,6 +46,7 @@ push @var, (qw(
 	       $BBBike::BBBIKE_UPDATE_WWW
 	       $BBBike::BBBIKE_UPDATE_DATA_CGI
 	       $BBBike::BBBIKE_UPDATE_DIST_CGI
+	       $BBBike::BBBIKE_MOBILE
 	       $BBBike::BBBIKE_WAP
 	       $BBBike::BBBIKE_DIRECT_WAP
 	       $BBBike::DISTFILE_SOURCE
