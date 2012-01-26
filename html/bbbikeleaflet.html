@@ -10,22 +10,28 @@
  <!--[if lte IE 8]><link rel="stylesheet" href="http://bbbike.de/leaflet/dist/leaflet.ie.css" /><![endif]-->
  <script src="http://bbbike.de/leaflet/dist/leaflet.js"></script>
  <script>
+
+  var routeLayer;
+  var searchState = "start";
+  var startLatLng;
+
   function do_leaflet() {
     var bbbikeOrgMapnikGermanUrl = 'http://tile.bbbike.org/osm/mapnik-german/{z}/{x}/{y}.png',
-        bbbikeAttribution = 'Map data &copy; 2012 <a href="http://bbbike.de">Slaven Rezić</a>',
+        bbbikeAttribution = 'Map data © 2012 <a href="http://bbbike.de">Slaven Rezić</a>',
         bbbikeTileLayer = new L.TileLayer(bbbikeOrgMapnikGermanUrl, {maxZoom: 18, attribution: bbbikeAttribution});
 
     var bbbikeOrgSmoothnessUrl = 'http://tile.bbbike.org/osm/bbbike-smoothness/{z}/{x}/{y}.png',
         bbbikeSmoothnessTileLayer = new L.TileLayer(bbbikeOrgSmoothnessUrl, {maxZoom: 18, attribution: bbbikeAttribution});
 
     var osmMapnikUrl = 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
-	osmAttribution = 'Map data &copy; 2012 <a href="http://www.openstreetmap.org/">OpenStreetMap</a> Contributors',
+	osmAttribution = 'Map data © 2012 <a href="http://www.openstreetmap.org/">OpenStreetMap</a> Contributors',
 	osmTileLayer = new L.TileLayer(osmMapnikUrl, {maxZoom: 18, attribution: osmAttribution});
     
     // initialize the map on the "map" div
     var map = new L.Map('map',
 			{
 		         zoomAnimation:false, fadeAnimation:false, // animations may be super-slow
+			 doubleClickZoom:false, // used for setting start/goal, see below for click/dblclick event
 			 layers: [bbbikeTileLayer]
 			}
 		       );
@@ -36,10 +42,71 @@
     var layersControl = new L.Control.Layers(baseMaps, overlayMaps);
     map.addControl(layersControl);
 
-    map.setView(new L.LatLng(52.516224, 13.377463), 13).addLayer(bbbike); // Brandenburger Tor
+    map.setView(new L.LatLng(52.516224, 13.377463), 13).addLayer(bbbikeTileLayer); // Brandenburger Tor
 
-   
+    routeLayer = new L.GeoJSON();
+    map.addLayer(routeLayer);
+    layersControl.addOverlay(routeLayer, "Route");
+
+    map.on(//'click', //XXX has bugs, may fire on simple zooming
+           'dblclick', function(e) {
+      if (searchState == "start") {
+        startLatLng = e.latlng; // XXX and set flag
+        searchState = 'goal';
+      } else if (searchState == "goal") {
+        // XXX and set goal flag
+        searchRoute(startLatLng, e.latlng);
+        searchState = 'start';
+      }
+    });
   }
+
+  function getSearchCoordParams(startPoint, goalPoint) {
+    return "startc_wgs84=" + startPoint.lng + "," + startPoint.lat + ";zielc_wgs84=" + goalPoint.lng + "," + goalPoint.lat;
+  }
+
+//XXX do not hardcode!
+  var commonSearchParams = ";pref_seen=1;pref_speed=20;pref_cat=;pref_quality=;pref_green=;scope=;referer=bbbikeleaflet;output_as=geojson";
+
+  function searchRoute(startPoint, goalPoint) {
+    var searchCoordParams = getSearchCoordParams(startPoint, goalPoint);
+    var requestLine =
+//XXX do not hardcode!!!
+        "http://m.bbbike.herceg.de/bbbike/cgi/bbbike.cgi?" + searchCoordParams + commonSearchParams;
+    var routeRequest = new XMLHttpRequest();
+    routeRequest.open("GET", requestLine, true);
+    routeRequest.onreadystatechange = function() {
+        showRouteResult(routeRequest);
+    };
+    waitMode();
+    routeRequest.send(null);
+  }
+
+  function waitMode() {
+//XXX do something
+  //  document.getElementsByTagName("body")[0].className = "waitMode";
+  }
+
+  function nonWaitMode() {
+//XXX do something
+  //  document.getElementsByTagName("body")[0].className = "nonWaitMode";
+  }
+
+  function showRouteResult(request) {
+    if (request.readyState == 4) {
+      nonWaitMode();
+      if (request.status != 200) {
+        alert("Error calculating route: " + request.statusText);
+        return;
+      }
+      routeLayer.clearLayers();
+      var geojson;
+      var json = "geojson = " + request.responseText;
+      eval(json);
+      routeLayer.addGeoJSON(geojson);
+    }
+  }
+
  </script>
 
 </head>
