@@ -12,13 +12,32 @@
  <script>
   function do_leaflet() {
     var bbbikeOrgMapnikGermanUrl = 'http://tile.bbbike.org/osm/mapnik-german/{z}/{x}/{y}.png',
-        bbbikeAttribution = 'Map data &copy; 2012 Slaven Rezić',
-        bbbike = new L.TileLayer(bbbikeOrgMapnikGermanUrl, {maxZoom: 18, attribution: bbbikeAttribution});
+        bbbikeAttribution = 'Map data &copy; 2012 <a href="http://bbbike.de">Slaven Rezić</a>',
+        bbbikeTileLayer = new L.TileLayer(bbbikeOrgMapnikGermanUrl, {maxZoom: 18, attribution: bbbikeAttribution});
+
+    var bbbikeOrgSmoothnessUrl = 'http://tile.bbbike.org/osm/bbbike-smoothness/{z}/{x}/{y}.png',
+        bbbikeSmoothnessTileLayer = new L.TileLayer(bbbikeOrgSmoothnessUrl, {maxZoom: 18, attribution: bbbikeAttribution});
+
+    var osmMapnikUrl = 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+	osmAttribution = 'Map data &copy; 2012 <a href="http://www.openstreetmap.org/">OpenStreetMap</a> Contributors',
+	osmTileLayer = new L.TileLayer(osmMapnikUrl, {maxZoom: 18, attribution: osmAttribution});
     
     // initialize the map on the "map" div
-    var map = new L.Map('map', {zoomAnimation:false, fadeAnimation:false}); // animations may be super-slow
-    
+    var map = new L.Map('map',
+			{
+		         zoomAnimation:false, fadeAnimation:false, // animations may be super-slow
+			 layers: [bbbikeTileLayer]
+			}
+		       );
+
+    var baseMaps = { "BBBike":bbbikeTileLayer, "OSM":osmTileLayer };
+    var overlayMaps = { "Smoothness":bbbikeSmoothnessTileLayer };
+
+    var layersControl = new L.Control.Layers(baseMaps, overlayMaps);
+    map.addControl(layersControl);
+
     map.setView(new L.LatLng(52.516224, 13.377463), 13).addLayer(bbbike); // Brandenburger Tor
+
    
   }
  </script>
