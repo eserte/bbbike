@@ -3795,6 +3795,8 @@ sub display_route {
     my $show_settings = !$args{-hidesettings};
     my $show_wayback  = !$args{-hidewayback};
 
+    my $in_error_condition;
+
     make_netz();
 
     if (defined $output_as && $output_as eq 'palmdoc') {
@@ -4501,8 +4503,18 @@ sub display_route {
 
  ROUTE_HEADER:
     if (!@out_route) {
-	print M("Keine Route gefunden").".\n";
-	warn "Fehler: keine Route zwischen <$startname>" . ($vianame ? ", <$vianame>" : "") . " und <$zielname> gefunden, sollte niemals passieren" . (@affecting_blockings ? " (Ausnahme: bei dieser Suche waren temporäre Sperrungen aktiv)" : "");
+	if (@current_temp_blocking) {
+	    print "<center>";
+	    print M("Es existiert keine Ausweichroute.")."\n";
+	    my $qq = CGI->new($q->query_string);
+	    $qq->delete('custom');
+	    print qq{<a href="$bbbike_script?} . $qq->query_string . qq{">} . M("Zurück") . qq{</a>\n};
+	    print "</center>\n";
+	} else {
+	    print M("Keine Route gefunden").".\n";
+	    warn "Fehler: keine Route zwischen <$startname>" . ($vianame ? ", <$vianame>" : "") . " und <$zielname> gefunden, sollte niemals passieren";
+	}
+	$in_error_condition = 1;
     } else {
 	if (@affecting_blockings) {
 	    my $hidden = "";
@@ -5309,7 +5321,7 @@ EOF
 
     }
 
-    if (@weather_res) {
+    if (@weather_res && !$in_error_condition) {
 	my(@res) = @weather_res;
 	print "<center><table border=0 bgcolor=\"#d0d0d0\">\n";
 	print "<tr><td colspan=2><b>" . link_to_met() . M("Aktuelle Wetterdaten") . " ($res[0], $res[1])</a></b></td>";
