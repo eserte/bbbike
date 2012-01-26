@@ -132,7 +132,7 @@ if (!@browsers) {
 @browsers = map { "$_ BBBikeTest/1.0" } @browsers;
 
 my $outer_berlin_tests = 30;
-my $tests = 126 + $outer_berlin_tests;
+my $tests = 129 + $outer_berlin_tests;
 plan tests => $tests * @browsers;
 
 if ($WWW::Mechanize::VERSION == 1.32) {
@@ -686,6 +686,26 @@ for my $browser (@browsers) {
 	}
     }
 
+ XXX: { ; }
+    {
+	# Ausweichroute ohne Ergebnis (weil Start und/oder Ziel im gesperrten Gebiet liegen)
+	$get_agent->();
+	my $url = URI->new($cgiurl);
+	$url->query_form_hash({startc=>'-15820,-1146',
+			       startname=>'Neues Palais (Potsdam)',
+			       zielname=>'Potsdam Hauptbahnhof (Potsdam)',
+			       zielc=>'-12493,-1896',
+			       scope=>'region',
+			       pref_speed=>20,
+			       pref_seen=>1,
+			      });
+	my $resp = $agent->get($url);
+	ok $resp->is_success, 'Neues Palais - Potsdam Hbf';
+	$like_long_data->(qr{Sanssouci.*Einbruch der Dunkelheit}, 'Ausweichroutenhinweis');
+	$agent->click_button(value => 'Ausweichroute suchen');
+	$like_long_data->(qr{Es existiert keine Ausweichroute}, 'Ausweichroute existiert nicht');
+    }
+
     ######################################################################
     # test for a street in Berlin.coords.data but not in strassen
 
@@ -847,7 +867,6 @@ for my $browser (@browsers) {
     ######################################################################
     # non-utf8 checks
 
- XXX: { ; }
     {
 	$get_agent->();
 
