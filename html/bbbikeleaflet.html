@@ -11,9 +11,31 @@
  <script src="http://bbbike.de/leaflet/dist/leaflet.js"></script>
  <script>
 
+//XXX do not hardcode!!!
+  var bbbikeroot = "http://m.bbbike.herceg.de/bbbike";
+  var cgiurl     = bbbikeroot + "/cgi/bbbike.cgi";
   var routeLayer;
   var searchState = "start";
   var startLatLng;
+
+  var startIconClass = L.Icon.extend({
+    iconUrl: bbbikeroot + "/images/flag2_bl_centered.png",
+    shadowUrl: bbbikeroot + "/images/flag_shadow.png",
+    iconSize: new L.Point(32,32),
+    shadowSize: new L.Point(45,24),
+    iconAnchor: new L.Point(16,16)
+  });
+  var startIcon = new startIconClass();
+  var goalIconClass = L.Icon.extend({
+    iconUrl: bbbikeroot + "/images/flag_ziel_centered.png",
+    shadowUrl: bbbikeroot + "/images/flag_shadow.png",
+    iconSize: new L.Point(32,32),
+    shadowSize: new L.Point(45,24),
+    iconAnchor: new L.Point(16,16)
+  });
+  var goalIcon = new goalIconClass();
+
+  var startMarker, goalMarker;
 
   function do_leaflet() {
     var bbbikeOrgMapnikGermanUrl = 'http://tile.bbbike.org/osm/mapnik-german/{z}/{x}/{y}.png',
@@ -51,10 +73,27 @@
     map.on(//'click', //XXX has bugs, may fire on simple zooming
            'dblclick', function(e) {
       if (searchState == "start") {
-        startLatLng = e.latlng; // XXX and set flag
+        startLatLng = e.latlng;
+
+        if (goalMarker) {
+	  map.removeLayer(goalMarker);
+        }
+        if (!startMarker) {
+          startMarker = new L.Marker(startLatLng, {icon:startIcon});
+        } else {
+          startMarker.setLatLng(startLatLng);
+        }
+        map.addLayer(startMarker);
+
         searchState = 'goal';
       } else if (searchState == "goal") {
-        // XXX and set goal flag
+        if (!goalMarker) {
+	  goalMarker = new L.Marker(e.latlng, {icon:goalIcon});
+        } else {
+          goalMarker.setLatLng(e.latlng);
+        }
+        map.addLayer(goalMarker);
+
         searchRoute(startLatLng, e.latlng);
         searchState = 'start';
       }
@@ -70,9 +109,7 @@
 
   function searchRoute(startPoint, goalPoint) {
     var searchCoordParams = getSearchCoordParams(startPoint, goalPoint);
-    var requestLine =
-//XXX do not hardcode!!!
-        "http://m.bbbike.herceg.de/bbbike/cgi/bbbike.cgi?" + searchCoordParams + commonSearchParams;
+    var requestLine = cgiurl + "?" + searchCoordParams + commonSearchParams;
     var routeRequest = new XMLHttpRequest();
     routeRequest.open("GET", requestLine, true);
     routeRequest.onreadystatechange = function() {
@@ -96,7 +133,7 @@
     if (request.readyState == 4) {
       nonWaitMode();
       if (request.status != 200) {
-        alert("Error calculating route: " + request.statusText);
+        alert("Error calculating route: " + request.statusText  + " (status=" + request.status + ")");
         return;
       }
       routeLayer.clearLayers();
