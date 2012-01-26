@@ -22,9 +22,8 @@
  <script src="http://bbbike.de/leaflet/dist/leaflet.js"></script>
  <script>
 
-//XXX do not hardcode!!!
-  var bbbikeroot = "http://m.bbbike.herceg.de/bbbike";
-  var cgiurl     = bbbikeroot + "/cgi/bbbike.cgi";
+  var bbbikeroot = location.href.replace(/\/html\/bbbikeleaflet.html$/, "");
+  var cgiurl     = bbbikeroot + "/cgi/bbbike.cgi"; // XXX cgi vs. cgi-bin???
   var routeLayer;
   var searchState = "start";
   var startLatLng;
