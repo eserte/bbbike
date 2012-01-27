@@ -41,6 +41,22 @@ sub bbbikecgires_to_geojson_json {
     JSON::XS->new->utf8->encode(bbbikecgires_to_geojson_object($res));
 }
 
+sub route_to_geojson_object {
+    my($route) = @_;
+    require Karte::Polar;
+    require Karte::Standard;
+    bbbikecgires_to_geojson_object({LongLatPath => [map {
+	my($x,$y) = $Karte::Polar::obj->standard2map(@$_);
+	"$x,$y";
+    } @{ $route->path }]});
+}
+
+sub route_to_geojson_json {
+    my($route) = @_;
+    require JSON::XS;
+    JSON::XS->new->utf8->encode(route_to_geojson_object($route));
+}
+
 1;
 
 __END__
