@@ -573,9 +573,6 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 # Das heißt diese Strecken werden nicht bei einer erweiterten Suche aufgenommen
 # und dem CGI-Benutzer auch nicht präsentiert.
 # 
-Blücherplatz - Johanniterstr.: Qualität, Treppenstufen, nachts beleuchtet?	? 9689,10124 9837,10117
-Thuyring, Kleineweg: auch 10er-Zone?	? 9242,7658 9132,7661 9115,7645 9120,7600 9145,7522 9097,7469
-Paradestr.: bis wo geht die 10er-Zone?	? 9033,8020 8943,8021
 Am Findling (Potsdam): existiert eine Ausschilderung?	? -9723,-2451
 # 
 #: by: http://www.potsdam.de/cms/ziel/996205/DE/ vvv
@@ -2324,7 +2321,8 @@ Lindauer Allee/Aroser Allee - Luisenweg: Fahrbahnbeschaffenheit der Radfahrverbi
 Markscheiderstr. - An der Nordbahn: Existiert hier eine direkte Verbindung für Radfahrer? Qualität?	? 7105,19677 7125,19717
 #XXX del --- #: XXX Bauarbeiten waren Mai 2009 --- Blankenfelde, Berliner Str. und Hauptstr: Ist die Fahrbahnqualität (früher Kopfsteinpflaster) nach den Bauarbeiten besser geworden?	? 9528,23240 9490,23531 9425,23693 9625,23781 9774,23936
 Weg am Mühlengraben: Für Radfahrer befahrbar? Qualität?	? -3370,14115 -3306,14035
-Weg an der Havel: Für Radfahrer befahrbar? Qualität?	? -3355,14001 -3493,13782 -3543,13691 -3566,13580 -3555,13485
+#: XXX bei gmaps: "Schiffahrtsufer"
+Weg an der Havel: Für Radfahrer befahrbar? Qualität? Existieren Straßenschilder?	? -3355,14001 -3493,13782 -3543,13691 -3566,13580 -3555,13485
 Schiffahrtsufer: Für Radfahrer befahrbar? Qualität?	? -3555,13485 -3441,13270
 Reiterhof, Phöben - Havelfähre: Qualität des Radwegs?	? -25787,3228 -25765,3246 -25530,3223 -25511,3313 -25425,3364 -25345,3389 -25282,3433 -25191,3442 -25198,3540 -25262,3561 -25373,3653 -25460,3795 -25563,3940 -25592,3985 -25578,4203 -25471,4332 -25506,4488 -25723,4736 -25725,4734 -25726,4734 -25855,4868 -25942,5010 -26073,5175 -26215,5272 -26647,5444 -26755,5459 -26918,5525
 Havelfähre - Trebelberg: Qualität des Radwegs?	? -26918,5525 -27169,5667 -27239,5694 -27344,5769 -27537,5873 -27679,5929 -27873,6033 -28007,6147 -28158,6227 -28398,6324 -28418,6351 -28778,6516 -28755,6544 -28757,6542 -29169,6718 -29225,6532 -29272,6453 -29279,6367 -29507,6251 -29501,6153 -29526,6093 -29580,6051 -29618,5962 -29969,5876 -29960,5808 -29883,5747 -29792,5636 -30714,5328 -30571,4759 -30814,4732 -30785,4243
@@ -3657,6 +3655,7 @@ Händelplatz (Eichwalde): Qualität?	? 25368,-3091 25347,-3077 25295,-3103 25254,-
 Am Orangeriepark: Qualität? Genaue Lage der Straße?	? 10270,19478 10399,19502
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/32re.pdf/file vvv
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/04re.pdf/file?y=2012 vvv
 #: XXX Privatstraßen, fehlt in Berlin.coords.data vvv
 #: last_checked: 2011-11-05 (noch in Bau) vvv
 #: next_check: 2012-03-15 vvv
@@ -3666,6 +3665,7 @@ Eulenweg: Qualität? Wo befindet sich die Straße?	? 16551,-446 16513,-537
 #: next_check ^^^
 #: last_checked ^^^
 #: XXX ^^^
+#: by: ^^^
 #: by: ^^^
 # 
 Schoppenhauerstr. (Waldesruh): Qualität des östlichen Abschnitts?	? 24974,8486 25048,8432 25119,8379 25212,8313 25301,8252 25347,8213
@@ -3770,7 +3770,6 @@ Hospitalgrabenpark: Qualität?	? 7115,3003 7127,3077 7184,3142 7263,3117 7314,319
 Lankegrabenpark: Qualität?	? 7364,3193 7409,3331 7458,3451
 Vierlingpark: Qualität?	? -762,4054 -762,4054 -713,4102 -685,4167 -638,4413
 Vierlingpark: Qualität?	? -713,4102 -713,4102 -758,4222 -716,4355 -754,4361
-Idealpassage: Qualität?	? 12553,8671 12452,8750
 #: XXX evtl. auch als Park/Grünanlage eintragen
 Egelpfuhlwiesen: Qualität?	? -5594,12832 -5554,12929 -5493,12994 -5446,13137 -5472,13235
 #: XXX evtl. auch den Park eintragen; von gleichnamiger Straße abgrenzen

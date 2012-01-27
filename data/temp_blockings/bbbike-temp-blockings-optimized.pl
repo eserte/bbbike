@@ -1308,16 +1308,7 @@ userdel	2::inwork 19750,11730 19827,11686 19881,11591
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_018330',
-         'until' => 1327618800,
-         'text' => 'Str. des 17. Juni (Tiergarten) in beiden Richtungen zwischen Yitzhak-Rabin-Str. und Ebertstr. Veranstaltung, Straße vollständig gesperrt (06.01.2012 06 Uh bis 26.01.12, ca. 18:00 Uhr) ',
-         'from' => 1325718000,
-         'id' => 2310,
-         'data' => 'userdel	2::temp 8538,12245 8214,12205 8089,12190
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1106/nachricht4399.html',
          'until' => undef,

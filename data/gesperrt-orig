@@ -1355,12 +1355,14 @@ Tauernallee: Mittelstreifen	3nocross 10349,2188 10431,2258 10504,2321
 Mariendorfer Damm: Mittelstreifen	3nocross 10226,1515 10239,1481 10276,1383
 Berliner Str.: Straßenbahnhaltestelle	3nocross -11307,133 -11390,72 -11494,-4
 Hasenheide: Mittelstreifen	3nocross 11500,9116 11449,9125 11136,9183
+Hasenheide: Mittelstreifen	3nocross 11500,9116 11550,9104 11629,9086
 #
 ####################################################################
 #
 # Stellen, an denen getragen werden muß:
 # die Zahl hinter dem ":" entspricht ungefähr den verlorenen Sekunden
 # 
+tragen (9 Stufen)	0:12 9816,10119
 #: note: drei Treppen à 3 Stufen und eine Stufe:
 tragen (13 Stufen)	0:20 13013,10047
 tragen (16 Stufen)	0:25 22814,4505

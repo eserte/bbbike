@@ -156,13 +156,13 @@ Tiergarten: Parkweg	q1 7816,12150 7827,12105 7832,12036 7822,11952 7801,11875 77
 (Bremer Weg - Fasanerieallee): Parkweg	q1 6342,11878 6379,11843 6406,11784 6467,11780 6540,11754
 Parkweg: enge Brücke, Fußweg	q2 14310,9692 14361,9772 14404,9847 14448,9922 14453,9929 14558,10082 14597,10129 14626,10162 14652,10201
 Spittelmarkt: Gehweg	q1 10369,11728 10240,11740
-Hasenheide: Fußgänger	q1 11266,8336 11282,8428 11279,8489 11255,8591 11177,8985 11141,9107 11136,9183
-Hasenheide: Fußgänger	q1 11141,9107 11115,9100 11098,9046 11100,8974 11137,8738 11193,8568 11235,8454 11225,8350
+Hasenheide: Fußgänger	q1 11266,8336 11275,8387 11282,8428 11279,8489 11255,8591 11177,8985 11141,9107 11136,9183
+Hasenheide: Fußgänger	q1 11141,9107 11115,9100 11098,9046 11100,8974 11137,8738 11193,8568 11235,8454 11230,8402 11225,8350
 Hasenheide: Fußgänger	q1 11177,8985 11137,8979 11100,8974
 (Hasenheide, Weg am westlichen Rand): Fußgänger	q1 11100,8974 11048,8922 10988,8867 10936,8837 10919,8785 10919,8755 10924,8690 10893,8608 10890,8567 10929,8503
 Hasenheide, zur Lilienthalstr.: Parkweg	q1 10709,9192 11141,9107
 (Hasenheide, Eingang Wissmannstr.): Fußgänger	q1 11768,8739 11708,8747 11647,8723 11607,8751 11578,8784
-(Hasenheide, östlicher Rundweg): Fußgänger	q1 11560,8488 11549,8601 11578,8784 11587,8882 11549,8917 11406,8941 11177,8985
+(Hasenheide, östlicher Rundweg): Fußgänger	q1 11560,8488 11549,8601 11578,8784 11587,8882 11549,8917 11484,8928 11406,8941 11177,8985
 (Hasenheide, südöstlicher Rundweg): Fußgänger	q1 11467,8329 11523,8327 11559,8357 11570,8409 11560,8488
 (Flughafenstr. - Rundweg in der Hasenheide): Fußgänger	q1 11632,8302 11577,8315 11559,8357
 Am Flutgraben: Fußgänger	q1 13333,9929 13412,9935 13579,10146
@@ -317,7 +317,7 @@ Lützowplatz: Einbahnstraße, Ausweichen auf Gehweg	q3; 7002,11034 6873,11011
 Zauritzweg: Fußgänger	q1 4199,11819 4195,11690
 #: XXX_prog: Radfahren nicht erlaubt, rjoop möchte hier nicht geroutet werden, wenn "strikt befolgen" eingeschaltet ist
 #: note: auf der westlichen Seite steht ein überklebtes Grünanlagen-Schild mit "Radfahren verboten", auf der östlichen Seite nicht
-(Blücherplatz - Zossener Str.): Fußgänger, Bordsteine	q2 9689,10124 9827,10051
+(Blücherplatz - Zossener Str.): Fußgänger, Bordsteine	q2 9702,10129 9827,10051
 Hebbelstr.: Fußgänger	q2 3117,11852 3251,12025 3258,12035 3295,12068
 Spreewaldplatz: Fußgänger	q1 12341,10218 12292,10374
 Mussehlstr.: Bordsteine (Bayernring und Wolffring)	q3 8836,8564 8756,8453 8711,8371
@@ -1108,6 +1108,9 @@ Elisabeth-Schwarzhaupt-Platz: einige Fußgänger	q1 9274,13963 9167,14127
 (Bethanienpark): Fußgänger, Bordstein	q3 11668,10916 11589,10947
 #: XXX_prog BS (südliches Ende)
 (Hildegard-Knef-Platz - Lotte-Laserstein-Str.): Bordstein	q2 7774,7724 7757,7682
+#: XXX_prog BS (östliches Ende nur, westliches Ende ist abgesenkt)
+(Blücherplatz - Johanniterstr.): Fußgänger, Bordstein	q2 9702,10129 9816,10119 9837,10117
+Idealpassage: Fußgänger, eng, Schrittgeschwindigkeit	q3 12434,8776 12578,8654
 #
 ######################### User Contributions #################################
 # 

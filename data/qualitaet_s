@@ -142,7 +142,7 @@ Suadicanistr.: glatt gepflastert	Q0 7858,7506 7854,7572
 Lilienthalstr.: Asphalt	Q0 10675,8940 10640,8832
 Lilienthalstr.: unbefestigte Straße	Q2 10640,8832 10627,8706
 Lilienthalstr.: Asphalt	Q0 10627,8706 10615,8558
-Weichselstr.: mäßiges Kopfsteinpflaster, 15-17 km/h	Q2 12330,8636 12394,8729 12483,8834 12590,8977 12681,9083 12761,9190 12851,9309 12844,9351
+Weichselstr.: mäßiges Kopfsteinpflaster, 15-17 km/h	Q2 12330,8636 12394,8729 12434,8776 12483,8834 12590,8977 12681,9083 12761,9190 12851,9309 12844,9351
 Treptower Str.: Asphalt	Q0 13857,8601 14015,8798 14145,8971
 Pfarrstr.: mäßiges Kopfsteinpflaster	Q2 15279,10862 15359,11115 15458,11306
 Pfarrstr.: sehr guter Asphalt	Q0 15458,11306 15477,11338
@@ -523,7 +523,7 @@ Tiergarten: Parkweg	Q1 7663,11946 7570,11855 7223,11897 7182,11870 7173,11864 70
 Parkweg: sehr gutes Kopfsteinpflaster	Q1 14310,9692 14361,9772 14404,9847 14448,9922
 Parkweg: Verbundsteinpflaster	Q1 14448,9922 14453,9929 14558,10082 14597,10129 14626,10162 14652,10201
 Uferweg an den Treptowers: Parkweg (fester Sandweg)	Q1 14373,10046 14202,10152 14118,10178 13903,10237
-Hasenheide: asphaltiert	Q0 11266,8336 11282,8428 11279,8489 11255,8591 11177,8985 11141,9107 11136,9183
+Hasenheide: asphaltiert	Q0 11266,8336 11275,8387 11282,8428 11279,8489 11255,8591 11177,8985 11141,9107 11136,9183
 Hasenheide, zur Lilienthalstr.: Parkweg	Q1 10709,9192 11141,9107
 Carl-Herz-Ufer: Kopfsteinpflaster (kann auf Uferweg umgangen werden)	Q2 10619,9914 10602,9957 10500,10081
 Carl-Herz-Ufer: Kopfsteinpflaster (kann auf breitem asphaltierten Uferweg umgangen werden)	Q1 10168,10085 10313,10084 10500,10081
@@ -6134,16 +6134,19 @@ Plauener Str.: Asphalt	Q0 17940,15771 17953,15221 17959,15084 17902,15039 17829,
 (Möllendorffstr. - Karl-Lade-Str.): Verbundsteinpflaster	Q1 15502,13539 15363,13531
 (Möllendorffstr. - Karl-Lade-Str.): Verbundsteinpflaster und Beton	Q1 15363,13531 15235,13573 15091,13613
 Hasenheide: Verbundsteinpflaster	Q0 11141,9107 11115,9100 11098,9046 11100,8974
-Hasenheide: Parkweg	Q1 11100,8974 11137,8738 11193,8568 11235,8454 11225,8350
+Hasenheide: Parkweg	Q1 11100,8974 11137,8738 11193,8568 11235,8454 11230,8402 11225,8350
 (Hasenheide, Weg am westlichen Rand): Asphalt	Q0 11177,8985 11137,8979 11100,8974
 (Hasenheide, Weg am westlichen Rand): Parkweg	Q1 11100,8974 11048,8922 10988,8867 10936,8837 10919,8785 10919,8755 10924,8690 10893,8608 10890,8567 10929,8503
 (Hasenheide, zwischen Jahnstr. und Columbiadamm): Verbundsteinpflaster	Q0 11449,9125 11439,9049 11406,8941
 (Hasenheide, zwischen Jahnstr. und Columbiadamm): wassergebundene Decke	Q1 11406,8941 11357,8738 11333,8582 11279,8489
+(Hasenheide, zwischen Jahnstr. und Columbiadamm): Verbundsteinpflaster	Q0 11550,9104 11515,9066 11495,8985
+(Hasenheide, zwischen Jahnstr. und Columbiadamm): Kopfsteinpflaster	Q2 11495,8985 11484,8928
+(Hasenheide, zwischen Jahnstr. und Columbiadamm): wassergebundene Decke	Q1 11484,8928 11431,8678 11333,8582
 (Hasenheide, Eingang Wissmannstr.): Asphalt	Q0 11768,8739 11708,8747
 (Hasenheide, Eingang Wissmannstr.): Asphalt mit Querrinnen	Q2 11708,8747 11647,8723 11607,8751
 (Hasenheide, Eingang Wissmannstr.): Kopfsteinpflaster	Q2 11607,8751 11578,8784
-(Hasenheide, östlicher Rundweg): Asphalt	Q0 11560,8488 11549,8601 11578,8784 11587,8882 11549,8917 11406,8941 11177,8985
-(Hasenheide, südöstlicher Rundweg): Parkweg	Q1 11467,8329 11523,8327 11559,8357 11570,8409 11560,8488
+(Hasenheide, östlicher Rundweg): Asphalt	Q0 11560,8488 11549,8601 11578,8784 11587,8882 11549,8917 11484,8928 11406,8941 11177,8985
+(Hasenheide, südöstlicher Rundweg): Parkweg	Q1 10929,8503 10983,8470 11230,8402 11275,8387 11467,8329 11523,8327 11559,8357 11570,8409 11560,8488
 (Flughafenstr. - Rundweg in der Hasenheide): Parkweg	Q1 11632,8302 11577,8315 11559,8357
 Öseler Str.: Asphalt	Q0 20143,13082 20237,13027 20335,12985
 Buckower Ring: Beton mit Schäden	Q1 21337,13470 21562,13424 21716,13396 21826,13371
@@ -6294,6 +6297,8 @@ Böcklerpark: mäßiges Verbundsteinpflaster	Q2 10917,10068 10863,10082 10802,10111
 (Straße der Pariser Kommune - Spreeufer): Kopfsteinpflaster	Q2 12497,11459 12447,11369
 Naumannstr.: Kopfsteinpflaster	Q1 7716,8370 7716,8356 7715,8308
 Rüdigerstr.: Kopfsteinpflaster	Q2 16252,12411 16147,12424 16079,12432
+(Blücherplatz - Johanniterstr.): Gehwegplatten	Q0 9702,10129 9816,10119 9837,10117
+Idealpassage: Asphalt	Q0 12434,8776 12578,8654
 Straße 140 (Rosenthal): guter Asphalt	Q0 8605,21248 8680,21208 8753,21253 8826,21369
 An den Hubertshäusern: guter Asphalt	Q0 -2049,2359 -1940,2400 -1963,2461 -2069,2429
 Straße 77 (Französisch Buchholz): schlechter Asphalt	Q2 12836,22763 12608,22943 12589,22948 12526,22972
