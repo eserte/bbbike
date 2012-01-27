@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2009 Slaven Rezic. All rights reserved.
+# Copyright (C) 2009,2012 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,9 +15,11 @@ package BBBikeSuggest;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '0.01';
+$VERSION = '0.02';
 
 use Tk::PathEntry 2.17;
+
+my $_ENTRIES = 15;
 
 sub new {
     my($class, %args) = @_;
@@ -54,6 +56,7 @@ sub suggest_widget {
 		 $selectcmd->($sw);
 	     }
 	 },
+	 -height => $_ENTRIES,
 	);
     $sw;
 }
@@ -109,7 +112,7 @@ sub get_street_choices {
 	chomp;
 	my $s = $conv->($_);
 	push @f, $s if defined $s && (!@f || $s ne $f[-1]);
-	last if @f >= 10;
+	last if @f >= $_ENTRIES;
     }
     \@f;
 }
