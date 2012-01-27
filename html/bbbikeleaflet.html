@@ -3,7 +3,6 @@
  <head>
  <title>BBBike &amp; Leaflet</title>
  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
- <link rel="stylesheet" type="text/css" href="bbbike.css">
  <style>
   body {
     padding: 0;
@@ -21,24 +20,36 @@
  <!--[if lte IE 8]><link rel="stylesheet" href="http://bbbike.de/leaflet/dist/leaflet.ie.css" /><![endif]-->
  <script src="http://bbbike.de/leaflet/dist/leaflet.js"></script>
  <script>
+  var initialRouteGeojson = null;
+  //--- INSERT GEOJSON HERE ---
 
-  var bbbikeroot = location.href.replace(/\/html\/bbbikeleaflet.html$/, "");
-  var cgiurl     = bbbikeroot + "/cgi/bbbike.cgi"; // XXX cgi vs. cgi-bin???
+  var useOldURLLayout = location.href.match(/(cgi\/bbbikeleaflet|bbbike\/html\/bbbikeleaflet)/);
+  var bbbikeRoot, cgiURL, bbbikeImagesRoot;
+  if (useOldURLLayout) {
+    bbbikeRoot = location.href.replace(/\/(cgi|html)\/bbbikeleaflet.(html$|cgi.*)/, "");
+    bbbikeImagesRoot = bbbikeRoot + "/images";
+    cgiURL     = bbbikeRoot + "/cgi/bbbike.cgi";
+  } else {
+    bbbikeRoot = location.href.replace(/\/(cgi-bin|BBBike\/html)\/bbbikeleaflet.(html$|cgi.*)/, "");
+    bbbikeImagesRoot = bbbikeRoot + "/BBBike/images";
+    cgiURL     = bbbikeRoot + "/cgi-bin/bbbike.cgi";
+  }
   var routeLayer;
   var searchState = "start";
   var startLatLng;
+  var map;
 
   var startIconClass = L.Icon.extend({
-    iconUrl: bbbikeroot + "/images/flag2_bl_centered.png",
-    shadowUrl: bbbikeroot + "/images/flag_shadow.png",
+    iconUrl: bbbikeImagesRoot + "/flag2_bl_centered.png",
+    shadowUrl: bbbikeImagesRoot + "/flag_shadow.png",
     iconSize: new L.Point(32,32),
     shadowSize: new L.Point(45,24),
     iconAnchor: new L.Point(16,16)
   });
   var startIcon = new startIconClass();
   var goalIconClass = L.Icon.extend({
-    iconUrl: bbbikeroot + "/images/flag_ziel_centered.png",
-    shadowUrl: bbbikeroot + "/images/flag_shadow.png",
+    iconUrl: bbbikeImagesRoot + "/flag_ziel_centered.png",
+    shadowUrl: bbbikeImagesRoot + "/flag_shadow.png",
     iconSize: new L.Point(32,32),
     shadowSize: new L.Point(45,24),
     iconAnchor: new L.Point(16,16)
@@ -60,13 +71,13 @@
 	osmTileLayer = new L.TileLayer(osmMapnikUrl, {maxZoom: 18, attribution: osmAttribution});
     
     // initialize the map on the "map" div
-    var map = new L.Map('map',
-			{
-		         zoomAnimation:false, fadeAnimation:false, // animations may be super-slow
-			 doubleClickZoom:false, // used for setting start/goal, see below for click/dblclick event
-			 layers: [bbbikeTileLayer]
-			}
-		       );
+    map = new L.Map('map',
+		    {
+		     zoomAnimation:false, fadeAnimation:false, // animations may be super-slow
+		     doubleClickZoom:false, // used for setting start/goal, see below for click/dblclick event
+		     layers: [bbbikeTileLayer]
+		    }
+		   );
 
     var baseMaps = { "BBBike":bbbikeTileLayer, "OSM":osmTileLayer };
     var overlayMaps = { "Smoothness":bbbikeSmoothnessTileLayer };
@@ -88,26 +99,21 @@
         if (goalMarker) {
 	  map.removeLayer(goalMarker);
         }
-        if (!startMarker) {
-          startMarker = new L.Marker(startLatLng, {icon:startIcon});
-        } else {
-          startMarker.setLatLng(startLatLng);
-        }
-        map.addLayer(startMarker);
+        set_start_marker(startLatLng);
 
         searchState = 'goal';
       } else if (searchState == "goal") {
-        if (!goalMarker) {
-	  goalMarker = new L.Marker(e.latlng, {icon:goalIcon});
-        } else {
-          goalMarker.setLatLng(e.latlng);
-        }
-        map.addLayer(goalMarker);
+        set_goal_marker(e.latlng);
 
         searchRoute(startLatLng, e.latlng);
         searchState = 'start';
       }
     });
+
+    if (initialRouteGeojson) {
+      showRoute(initialRouteGeojson);
+      map.setView(L.GeoJSON.coordsToLatLng(initialRouteGeojson.geometry.coordinates[0]), 13);
+    }
   }
 
   function getSearchCoordParams(startPoint, goalPoint) {
@@ -119,7 +125,7 @@
 
   function searchRoute(startPoint, goalPoint) {
     var searchCoordParams = getSearchCoordParams(startPoint, goalPoint);
-    var requestLine = cgiurl + "?" + searchCoordParams + commonSearchParams;
+    var requestLine = cgiURL + "?" + searchCoordParams + commonSearchParams;
     var routeRequest = new XMLHttpRequest();
     routeRequest.open("GET", requestLine, true);
     routeRequest.onreadystatechange = function() {
@@ -146,12 +152,39 @@
         alert("Error calculating route: " + request.statusText  + " (status=" + request.status + ")");
         return;
       }
-      routeLayer.clearLayers();
       var geojson;
       var json = "geojson = " + request.responseText;
       eval(json);
-      routeLayer.addGeoJSON(geojson);
+      showRoute(geojson);
     }
+  }
+
+  function showRoute(geojson) {
+    routeLayer.clearLayers();
+    routeLayer.addGeoJSON(geojson);
+    var coordinates_length = geojson.geometry.coordinates.length;
+    if (coordinates_length) {
+      set_start_marker(L.GeoJSON.coordsToLatLng(geojson.geometry.coordinates[0]));
+      set_goal_marker (L.GeoJSON.coordsToLatLng(geojson.geometry.coordinates[coordinates_length-1]));
+    }
+  }
+
+  function set_start_marker(latLng) {
+    if (!startMarker) {
+      startMarker = new L.Marker(latLng, {icon:startIcon});
+    } else {
+      startMarker.setLatLng(latLng);
+    }
+    map.addLayer(startMarker);
+  }
+
+  function set_goal_marker(latLng) {
+    if (!goalMarker) {
+      goalMarker = new L.Marker(latLng, {icon:goalIcon});
+    } else {
+      goalMarker.setLatLng(latLng);
+    }
+    map.addLayer(goalMarker);
   }
 
  </script>

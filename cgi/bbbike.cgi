@@ -4888,7 +4888,7 @@ EOF
 		$col_i++;
 		if ($col_i >= 3) {
 		    print table_br();
-		    $col_i = 0;
+		    $col_i = 1;
 		}
 	    };
 
@@ -4967,6 +4967,13 @@ EOF
 		$qq2->param('output_as', "palmdoc");
 		my $href = $bbbike_script;
 	        print qq{<a href="$href?} . $qq2->query_string . qq{">PalmDoc</a>};
+		print "</td>";
+		$maybe_do_table_br->();
+	    }
+	    if ($is_beta && $apache_session_module eq 'Apache::Session::Counted') {
+		print "<td>";
+		(my $href = $bbbike_script) =~ s{/bbbike[^/]*\.cgi}{/bbbikeleaflet.cgi};
+	        print qq{<a href="$href?} . CGI->new({coordssession => $sess->{_session_id}})->query_string . qq{">Leaflet</a>};
 		print "</td>";
 		$maybe_do_table_br->();
 	    }
