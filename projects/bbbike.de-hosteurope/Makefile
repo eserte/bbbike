@@ -55,6 +55,7 @@ CGI_FILES=		bbbike.cgi \
 			bbbike-data.cgi \
 			bbbike-snapshot.cgi \
 			bbbikegooglemap.cgi \
+			bbbikeleaflet.cgi \
 			wapbbbike.cgi \
 			mapserver_address.cgi \
 			mapserver_comment.cgi \
@@ -430,6 +431,8 @@ prepare-bbbike-dist-prog-bbbike-cgi:
 	cd ${CURDIR}/cgi-bin && ln -s bbbike.cgi bbbike.en.cgi
 	rm -f ${CURDIR}/cgi-bin/bbbike2.en.cgi
 	cd ${CURDIR}/cgi-bin && ln -s bbbike.cgi bbbike2.en.cgi
+	rm -f ${CURDIR}/cgi-bin/bbbikeleaflet.en.cgi
+	cd ${CURDIR}/cgi-bin && ln -s bbbikeleaflet.cgi bbbikeleaflet.en.cgi
 # Fix permissions
 # Make sure that /usr/lib/cgi-bin/* isn't touched, otherwise make will fail
 	(cd ${CURDIR}/cgi-bin && chmod ugo+r `find . -maxdepth 1 | xargs -L1 readlink | grep -v /usr/lib/cgi-bin`)
@@ -498,7 +501,7 @@ prepare-bbbike-dist-prog-bbbike-html:
 	fi
 .endfor
 	cd ${CURDIR}/BBBike/html && \
-	    ${MAKE} bbbike-opensearch bbbike-opensearch-images
+	    ${MAKE} bbbike-opensearch bbbike-opensearch-images bbbikeleaflet.en.html
 #	Vorsichtshalber, weil ansonsten die falschen URLs enthalten sein
 #	könnten:
 	cd ${CURDIR}/BBBike/html && \
