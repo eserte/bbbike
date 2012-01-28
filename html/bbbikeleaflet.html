@@ -21,8 +21,10 @@
  <script src="http://bbbike.de/leaflet/dist/leaflet.js"></script>
  <script>
   var initialRouteGeojson = null;
+  // magic comment for bbbikeleaflet.cgi following, do not change
   //--- INSERT GEOJSON HERE ---
 
+  // URL layout, lang detection
   var thisURL = location.href;
   var lang = "de";
   if (thisURL.match(/bbbikeleaflet\.en\./)) {
@@ -41,6 +43,7 @@
     cgiURL     = bbbikeRoot + "/cgi-bin/bbbike.cgi";
   }
 
+  // localization
   var msg = {"en":{"Kartendaten":"Map data",
 		   "Qualit\u00e4t":"Smoothness"
                   }};
@@ -52,11 +55,7 @@
     }
   }  	    
 
-  var routeLayer;
-  var searchState = "start";
-  var startLatLng;
-  var map;
-
+  // icons and markers
   var startIconClass = L.Icon.extend({
     iconUrl: bbbikeImagesRoot + "/flag2_bl_centered.png",
     shadowUrl: bbbikeImagesRoot + "/flag_shadow.png",
@@ -85,7 +84,13 @@
 
   var startMarker, goalMarker, loadingMarker;
 
-  function do_leaflet() {
+  // globals
+  var routeLayer;
+  var searchState = "start";
+  var startLatLng;
+  var map;
+
+  function doLeaflet() {
     var bbbikeOrgMapnikGermanUrl = 'http://tile.bbbike.org/osm/mapnik-german/{z}/{x}/{y}.png',
         bbbikeAttribution = M("Kartendaten") + ' \u00a9 2012 <a href="http://bbbike.de">Slaven Rezić</a>',
         bbbikeTileLayer = new L.TileLayer(bbbikeOrgMapnikGermanUrl, {maxZoom: 18, attribution: bbbikeAttribution});
@@ -97,10 +102,9 @@
 	osmAttribution = M("Kartendaten") + ' \u00a9 2012 <a href="http://www.openstreetmap.org/">OpenStreetMap</a> Contributors',
 	osmTileLayer = new L.TileLayer(osmMapnikUrl, {maxZoom: 18, attribution: osmAttribution});
     
-    // initialize the map on the "map" div
     map = new L.Map('map',
 		    {
-		     zoomAnimation:false, fadeAnimation:false, // animations may be super-slow
+		     zoomAnimation:false, fadeAnimation:false, // animations may be super-slow, seen on mosor/firefox9
 		     doubleClickZoom:false, // used for setting start/goal, see below for click/dblclick event
 		     layers: [bbbikeTileLayer]
 		    }
@@ -127,11 +131,11 @@
         if (goalMarker) {
 	  map.removeLayer(goalMarker);
         }
-        set_start_marker(startLatLng);
+        setStartMarker(startLatLng);
 
         searchState = 'goal';
       } else if (searchState == "goal") {
-        set_goal_marker(e.latlng);
+        setGoalMarker(e.latlng);
 
         searchRoute(startLatLng, e.latlng);
       } else if (searchState == "searching") {
@@ -160,7 +164,7 @@
     var requestLine = cgiURL + "?" + searchCoordParams + commonSearchParams;
     var routeRequest = new XMLHttpRequest();
     routeRequest.open("GET", requestLine, true);
-    set_loading_marker(goalPoint);
+    setLoadingMarker(goalPoint);
     routeRequest.onreadystatechange = function() {
         showRouteResult(routeRequest);
     };
@@ -185,14 +189,14 @@
   function showRoute(geojson) {
     routeLayer.clearLayers();
     routeLayer.addGeoJSON(geojson);
-    var coordinates_length = geojson.geometry.coordinates.length;
-    if (coordinates_length) {
-      set_start_marker(L.GeoJSON.coordsToLatLng(geojson.geometry.coordinates[0]));
-      set_goal_marker (L.GeoJSON.coordsToLatLng(geojson.geometry.coordinates[coordinates_length-1]));
+    var coordinatesLength = geojson.geometry.coordinates.length;
+    if (coordinatesLength) {
+      setStartMarker(L.GeoJSON.coordsToLatLng(geojson.geometry.coordinates[0]));
+      setGoalMarker (L.GeoJSON.coordsToLatLng(geojson.geometry.coordinates[coordinatesLength-1]));
     }
   }
 
-  function set_start_marker(latLng) {
+  function setStartMarker(latLng) {
     if (!startMarker) {
       startMarker = new L.Marker(latLng, {icon:startIcon});
     } else {
@@ -201,7 +205,7 @@
     map.addLayer(startMarker);
   }
 
-  function set_goal_marker(latLng) {
+  function setGoalMarker(latLng) {
     if (!goalMarker) {
       goalMarker = new L.Marker(latLng, {icon:goalIcon});
     } else {
@@ -210,7 +214,7 @@
     map.addLayer(goalMarker);
   }
 
-  function set_loading_marker(latLng) {
+  function setLoadingMarker(latLng) {
     if (!loadingMarker) {
       loadingMarker = new L.Marker(latLng, {icon:loadingIcon});
     } else {
@@ -222,7 +226,7 @@
  </script>
 
 </head>
-<body onLoad="do_leaflet();">
+<body onLoad="doLeaflet();">
  <div id="map"></div>
 </body>
 </html>
