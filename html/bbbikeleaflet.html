@@ -74,7 +74,16 @@
   });
   var goalIcon = new goalIconClass();
 
-  var startMarker, goalMarker;
+  var loadingIconClass = L.Icon.extend({
+    iconUrl: bbbikeImagesRoot + "/loading.gif",
+    shadowUrl: bbbikeImagesRoot + "/px_1t.gif",
+    iconSize: new L.Point(16,16),
+    shadowSize: new L.Point(1,1),
+    iconAnchor: new L.Point(0,0)
+  });
+  var loadingIcon = new loadingIconClass();
+
+  var startMarker, goalMarker, loadingMarker;
 
   function do_leaflet() {
     var bbbikeOrgMapnikGermanUrl = 'http://tile.bbbike.org/osm/mapnik-german/{z}/{x}/{y}.png',
@@ -149,34 +158,24 @@
     var requestLine = cgiURL + "?" + searchCoordParams + commonSearchParams;
     var routeRequest = new XMLHttpRequest();
     routeRequest.open("GET", requestLine, true);
+    set_loading_marker(goalPoint);
     routeRequest.onreadystatechange = function() {
         showRouteResult(routeRequest);
     };
-    waitMode();
     routeRequest.send(null);
-  }
-
-  function waitMode() {
-//XXX do something
-  //  document.getElementsByTagName("body")[0].className = "waitMode";
-  }
-
-  function nonWaitMode() {
-//XXX do something
-  //  document.getElementsByTagName("body")[0].className = "nonWaitMode";
   }
 
   function showRouteResult(request) {
     if (request.readyState == 4) {
-      nonWaitMode();
       if (request.status != 200) {
         alert("Error calculating route: " + request.statusText  + " (status=" + request.status + ")");
-        return;
+      } else {
+        var geojson;
+        var json = "geojson = " + request.responseText;
+        eval(json);
+        showRoute(geojson);
       }
-      var geojson;
-      var json = "geojson = " + request.responseText;
-      eval(json);
-      showRoute(geojson);
+      map.removeLayer(loadingMarker);
     }
   }
 
@@ -206,6 +205,15 @@
       goalMarker.setLatLng(latLng);
     }
     map.addLayer(goalMarker);
+  }
+
+  function set_loading_marker(latLng) {
+    if (!loadingMarker) {
+      loadingMarker = new L.Marker(latLng, {icon:loadingIcon});
+    } else {
+      loadingMarker.setLatLng(latLng);
+    }
+    map.addLayer(loadingMarker);
   }
 
  </script>
