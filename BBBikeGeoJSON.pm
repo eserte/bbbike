@@ -57,6 +57,11 @@ sub route_to_geojson_json {
     JSON::XS->new->utf8->encode(route_to_geojson_object($route));
 }
 
+# Cease warnings
+if (0) {
+    $Karte::Polar::obj = $Karte::Polar::obj;
+}
+
 1;
 
 __END__
