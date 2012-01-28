@@ -93,7 +93,7 @@ if (!@urls) {
 }
 
 my $ortsuche_tests = 11;
-plan tests => (238 + $ortsuche_tests) * scalar @urls;
+plan tests => (240 + $ortsuche_tests) * scalar @urls;
 
 my $default_hdrs;
 if (defined &Compress::Zlib::memGunzip && $do_accept_gzip) {
@@ -155,7 +155,7 @@ for my $cgiurl (@urls) {
 
     # search_coord
     for my $output_as ("", qw(xml gpx-track gpx-route kml-track print perldump
-			      yaml yaml-short json json-short palmdoc mapserver)) {
+			      yaml yaml-short json json-short geojson palmdoc mapserver)) {
     SKIP: {
 	    skip "No mapserver tests", 2 if $skip{mapserver};
 
@@ -198,7 +198,7 @@ for my $cgiurl (@urls) {
 		is $resp->content_type, 'application/vnd.google-earth.kml+xml', "The KML mime type";
 		like $resp->header('Content-Disposition'), qr{attachment; filename=.*\.kml$}, 'kml filename';
 		kmllint_string($content, "xmllint check for $output_as");
-	    } elsif ($output_as =~ m{^json}) {
+	    } elsif ($output_as =~ m{^(json|geojson$)}) {
 		require JSON::XS;
 		my $data = eval { JSON::XS::decode_json($content) };
 		my $err = $@;
