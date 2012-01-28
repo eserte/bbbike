@@ -15,7 +15,8 @@ all:	newstreetform.html newstreetform.utf8.html \
 	shortfragezeichenform.html shortfragezeichenform.utf8.html \
 	bbbike_small \
 	bbbike-opensearch \
-	bbbike-opensearch-images
+	bbbike-opensearch-images \
+	bbbikeleaflet.en.html
 
 bbbike_small:	bbbike_small.html bbbike_small.en.html \
 		bbbike_sidebar.html bbbike_sidebar.en.html
@@ -123,3 +124,5 @@ opensearch/bbbike-opensearch-en-simple.gif:
 opensearch/bbbike-opensearch-en.gif:
 	cd opensearch && ln -s ../../images/srtbike16.gif bbbike-opensearch-en.gif
 
+bbbikeleaflet.en.html:
+	ln -s bbbikeleaflet.html bbbikeleaflet.en.html

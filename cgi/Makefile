@@ -1,4 +1,4 @@
-CGI_SCRIPTS=		bbbike.cgi bbbike.en.cgi bbbikegooglemap.cgi bbbikeleaflet.cgi \
+CGI_SCRIPTS=		bbbike.cgi bbbike.en.cgi bbbikegooglemap.cgi bbbikeleaflet.cgi bbbikeleaflet.en.cgi \
 			mapserver_address.cgi mapserver_comment.cgi mapserver_setcoord.cgi \
 			wapbbbike.cgi bbbiketile.cgi bbbike-data.cgi bbbike-snapshot.cgi
 DEVEL_CGI_SCRIPTS=	bbbike2.cgi bbbike2.en.cgi bbbikegooglemap2.cgi bbbike-test.cgi bbbike-osm.cgi
@@ -21,6 +21,7 @@ symlinks:
 	[ -e bbbike2.cgi     ] || ln -s bbbike.cgi bbbike2.cgi
 	[ -e bbbike2.en.cgi  ] || ln -s bbbike.cgi bbbike2.en.cgi
 	[ -e bbbike-test.cgi ] || ln -s bbbike.cgi bbbike-test.cgi
+	[ -e bbbikeleaflet.en.cgi ] || ln -s bbbikeleaflet.cgi bbbikeleaflet.en.cgi
 
 biokovo.conf:
 	$(MAKE) \

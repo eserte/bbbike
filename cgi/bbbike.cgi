@@ -4970,9 +4970,9 @@ EOF
 		print "</td>";
 		$maybe_do_table_br->();
 	    }
-	    if ($is_beta && $apache_session_module eq 'Apache::Session::Counted') {
+	    if (($is_beta || $is_m) && $apache_session_module eq 'Apache::Session::Counted') {
 		print "<td>";
-		(my $href = $bbbike_script) =~ s{/bbbike[^/]*\.cgi}{/bbbikeleaflet.cgi};
+		(my $href = $bbbike_script) =~ s{/bbbike2?(\.en)?\.cgi}{/bbbikeleaflet$1.cgi};
 	        print qq{<a href="$href?} . CGI->new({coordssession => $sess->{_session_id}})->query_string . qq{">Leaflet</a>};
 		print "</td>";
 		$maybe_do_table_br->();

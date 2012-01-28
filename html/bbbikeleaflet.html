@@ -23,17 +23,35 @@
   var initialRouteGeojson = null;
   //--- INSERT GEOJSON HERE ---
 
-  var useOldURLLayout = location.href.match(/(cgi\/bbbikeleaflet|bbbike\/html\/bbbikeleaflet)/);
+  var thisURL = location.href;
+  var lang = "de";
+  if (thisURL.match(/bbbikeleaflet\.en\./)) {
+    lang = "en";
+    thisURL = thisURL.replace(/bbbikeleaflet\.en\./, "bbbikeleaflet.");
+  }
+  var useOldURLLayout = thisURL.match(/(cgi\/bbbikeleaflet|bbbike\/html\/bbbikeleaflet)/);
   var bbbikeRoot, cgiURL, bbbikeImagesRoot;
   if (useOldURLLayout) {
-    bbbikeRoot = location.href.replace(/\/(cgi|html)\/bbbikeleaflet.(html$|cgi.*)/, "");
+    bbbikeRoot = thisURL.replace(/\/(cgi|html)\/bbbikeleaflet\.(html$|cgi.*)/, "");
     bbbikeImagesRoot = bbbikeRoot + "/images";
     cgiURL     = bbbikeRoot + "/cgi/bbbike.cgi";
   } else {
-    bbbikeRoot = location.href.replace(/\/(cgi-bin|BBBike\/html)\/bbbikeleaflet.(html$|cgi.*)/, "");
+    bbbikeRoot = thisURL.replace(/\/(cgi-bin|BBBike\/html)\/bbbikeleaflet\.(html$|cgi.*)/, "");
     bbbikeImagesRoot = bbbikeRoot + "/BBBike/images";
     cgiURL     = bbbikeRoot + "/cgi-bin/bbbike.cgi";
   }
+
+  var msg = {"en":{"Kartendaten":"Map data",
+		   "Qualit\u00e4t":"Smoothness"
+                  }};
+  function M(string) {
+    if (msg[lang] && msg[lang][string]) {
+      return msg[lang][string];
+    } else {
+      return string;
+    }
+  }  	    
+
   var routeLayer;
   var searchState = "start";
   var startLatLng;
@@ -60,14 +78,14 @@
 
   function do_leaflet() {
     var bbbikeOrgMapnikGermanUrl = 'http://tile.bbbike.org/osm/mapnik-german/{z}/{x}/{y}.png',
-        bbbikeAttribution = 'Map data © 2012 <a href="http://bbbike.de">Slaven Rezić</a>',
+        bbbikeAttribution = M("Kartendaten") + ' \u00a9 2012 <a href="http://bbbike.de">Slaven Rezić</a>',
         bbbikeTileLayer = new L.TileLayer(bbbikeOrgMapnikGermanUrl, {maxZoom: 18, attribution: bbbikeAttribution});
 
     var bbbikeOrgSmoothnessUrl = 'http://tile.bbbike.org/osm/bbbike-smoothness/{z}/{x}/{y}.png',
         bbbikeSmoothnessTileLayer = new L.TileLayer(bbbikeOrgSmoothnessUrl, {maxZoom: 18, attribution: bbbikeAttribution});
 
     var osmMapnikUrl = 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
-	osmAttribution = 'Map data © 2012 <a href="http://www.openstreetmap.org/">OpenStreetMap</a> Contributors',
+	osmAttribution = M("Kartendaten") + ' \u00a9 2012 <a href="http://www.openstreetmap.org/">OpenStreetMap</a> Contributors',
 	osmTileLayer = new L.TileLayer(osmMapnikUrl, {maxZoom: 18, attribution: osmAttribution});
     
     // initialize the map on the "map" div
@@ -80,12 +98,13 @@
 		   );
 
     var baseMaps = { "BBBike":bbbikeTileLayer, "OSM":osmTileLayer };
-    var overlayMaps = { "Smoothness":bbbikeSmoothnessTileLayer };
+    var overlayMaps = {};
+    overlayMaps[M("Qualit\u00e4t")] = bbbikeSmoothnessTileLayer;
 
     var layersControl = new L.Control.Layers(baseMaps, overlayMaps);
     map.addControl(layersControl);
 
-    map.setView(new L.LatLng(52.516224, 13.377463), 13).addLayer(bbbikeTileLayer); // Brandenburger Tor
+    map.addLayer(bbbikeTileLayer);
 
     routeLayer = new L.GeoJSON();
     map.addLayer(routeLayer);
@@ -113,6 +132,8 @@
     if (initialRouteGeojson) {
       showRoute(initialRouteGeojson);
       map.setView(L.GeoJSON.coordsToLatLng(initialRouteGeojson.geometry.coordinates[0]), 13);
+    } else {
+      map.setView(new L.LatLng(52.516224, 13.377463), 13); // Brandenburger Tor
     }
   }
 
