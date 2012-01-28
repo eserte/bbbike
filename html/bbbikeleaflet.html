@@ -134,7 +134,8 @@
         set_goal_marker(e.latlng);
 
         searchRoute(startLatLng, e.latlng);
-        searchState = 'start';
+      } else if (searchState == "searching") {
+        // nop
       }
     });
 
@@ -154,6 +155,7 @@
   var commonSearchParams = ";pref_seen=1;pref_speed=20;pref_cat=;pref_quality=;pref_green=;scope=;referer=bbbikeleaflet;output_as=geojson";
 
   function searchRoute(startPoint, goalPoint) {
+    searchState = 'searching';
     var searchCoordParams = getSearchCoordParams(startPoint, goalPoint);
     var requestLine = cgiURL + "?" + searchCoordParams + commonSearchParams;
     var routeRequest = new XMLHttpRequest();
@@ -176,6 +178,7 @@
         showRoute(geojson);
       }
       map.removeLayer(loadingMarker);
+      searchState = 'start';
     }
   }
 
