@@ -290,6 +290,7 @@ cgi/gridserv.cgi$
 ^cgi/httpd.conf$
 ^cgi/bbbike.en.cgi$
 ^cgi/bbbike2.en.cgi$
+^cgi/bbbikeleaflet.en.cgi$
 ^images/kreuzberg-20020501.gif$
 ^mapserver/brb/tmp/
 ^mapserver/brb/data/
@@ -306,6 +307,7 @@ cgi/gridserv.cgi$
 ^images/berlin_small_hi.png$
 ^images/Makefile$
 ^html/Makefile$
+^html/bbbikeleaflet.en.html$
 ^data/datachange.log$
 ^data/\.fragezeichen-
 ^data/.*-cooked

@@ -62,6 +62,7 @@ ESRI/Shapefile.pm
 ESRI/Shapefile/DBase.pm
 ESRI/Shapefile/Index.pm
 ESRI/Shapefile/Main.pm
+ESRI/Shapefile/Projection.pm
 ESRI/TODO
 ESRI/esri2bbd.pl
 ESRI/t/shapefile.t
@@ -223,6 +224,7 @@ cgi/bbbike-test.cgi.config
 cgi/bbbike.cgi
 cgi/bbbike.psgi
 cgi/bbbikegooglemap.cgi
+cgi/bbbikeleaflet.cgi
 cgi/berlinmap.cgi
 cgi/configure-bbbike.cgi
 cgi/httpd.conf.st
@@ -435,6 +437,7 @@ html/bbbike_small.en.html
 html/bbbike_small.html
 html/bbbike_start.js
 html/bbbike_util.js
+html/bbbikeleaflet.html
 html/bbbikepod.css
 html/bbbikeprint.css
 html/empty.html
