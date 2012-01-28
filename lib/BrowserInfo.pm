@@ -375,6 +375,10 @@ sub set_info {
     if ($q->user_agent =~ /Gecko\/(\d+)/) {
 	$self->{gecko_version} = $1;
     }
+
+    if ($q->user_agent =~ /Symbian/) {
+	$self->{'cannot_unicode_arrows'} = 1;
+    }
 }
 
 sub is_browser_version {

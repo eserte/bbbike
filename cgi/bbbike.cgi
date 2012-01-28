@@ -4093,7 +4093,7 @@ sub display_route {
 			    $richtung .= Strasse::de_artikel($strname);
 			}
 		    }
-		    if ($is_m) {
+		    if ($is_m && !$bi->{cannot_unicode_arrows}) {
 			$richtung_html = {'l'  => '&#x21d0;',
 					  'hl' => '&#x21d6;',
 					  'hr' => '&#x21d7;',
