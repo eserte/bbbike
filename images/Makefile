@@ -320,3 +320,5 @@ png-to-jpg:	\
 # Creation of ferry*.png:
 #   Fetched http://upload.wikimedia.org/wikipedia/commons/d/d6/F%C3%A4hre-Logo-BVG.svg (public domain)
 #   Created 16x16 and 8x8 variants with inkscape
+
+# loading.gif is from jquery
