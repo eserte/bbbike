@@ -103,14 +103,18 @@ for my $url (@compat_urls) {
 for my $var (@var) {
     for my $url (@{ $url{$var} }) {
 
-	# XXX requesting bbbike-snapshot.cgi sometimes fails, with
-	# really long request times. Doing first a head against the
-	# debug version to have the timings in the errorlog
-	# XXX remove this some day...
-	if ($url eq $BBBike::BBBIKE_UPDATE_DIST_CGI) {
-	    my $resp = $ua->head('http://bbbike.de/cgi-bin/bbbike-snapshot-debug.cgi');
-	    if (!$resp->is_success) {
-		diag "Failure requesting the bbbike snaphost: " . $resp->as_string;
+	if (0) {
+	    # XXX requesting bbbike-snapshot.cgi sometimes fails, with
+	    # really long request times. Doing first a head against the
+	    # debug version to have the timings in the errorlog
+	    #
+	    # 2012-01: this is not anymore an issue, a request is typically
+	    # accomplished after 5 seconds.
+	    if ($url eq $BBBike::BBBIKE_UPDATE_DIST_CGI) {
+		my $resp = $ua->head('http://bbbike.de/cgi-bin/bbbike-snapshot-debug.cgi');
+		if (!$resp->is_success) {
+		    diag "Failure requesting the bbbike snapshot: " . $resp->as_string;
+		}
 	    }
 	}
 
