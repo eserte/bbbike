@@ -495,7 +495,22 @@ sub draw_map {
 	my($kl_ampel, $w_lsa, $h_lsa) = $self->read_image("ampel_klein$suf");
 	my($kl_andreas, $w_and, $h_and) = $self->read_image("andreaskr_klein$suf");
 	my($kl_zugbruecke, $w_zbr, $h_zbr) = $self->read_image($self->{Xk} >= 0.05 ? "zugbruecke" : "zugbruecke_klein");
-	my($kl_ampelf, $w_lsaf, $h_lsaf) = $self->read_image("ampelf_klein$suf");
+	my($kl_ampelf, $w_lsaf, $h_lsaf);
+	if ($self->suffix eq 'png') {
+	    # XXX Bei png muss die "noalpha"-Variante wegen GD-Problemen
+	    # verwendet werden. Theoretisch würde es funktionieren, wenn
+	    # das truecolor-Bit sowohl auf $im als auch auf $kl_ampelf
+	    # gesetzt wäre. Leider bekomme ich einen Absturz bei $im mit
+	    # truecolor.
+	    if ($suf eq '') { # noalpha variant only for suf=="" available
+		($kl_ampelf, $w_lsaf, $h_lsaf) = $self->read_image("ampelf_klein_noalpha");
+	    } else {
+		# Reuse normal ampel variant without pedestrian
+		($kl_ampelf, $w_lsaf, $h_lsaf) = ($kl_ampel, $w_lsa, $h_lsa);
+	    }
+	} else {
+	    ($kl_ampelf, $w_lsaf, $h_lsaf) = $self->read_image("ampelf_klein$suf");
+	}
 
 	if ($kl_andreas || $kl_ampel || $kl_zugbruecke || $kl_ampelf) {
 	    $lsa->init;
@@ -514,16 +529,12 @@ sub draw_map {
 			$im->copy($kl_zugbruecke, $x-$w_zbr/2, $y-$h_zbr/2, 0, 0,
 				  $w_zbr, $h_zbr);
 		    }
-		} elsif (0 && $cat eq 'F') {
-		    # XXX Wegen des Alpha-Channels in ampelf* nicht nutzbar.
-		    # Es würde funktionieren, wenn das truecolor-Bit sowohl
-		    # auf $im als auch auf $kl_ampelf gesetzt wäre.
-		    # Leider bekomme ich einen Absturz bei $im mit truecolor.
+		} elsif ($cat eq 'F') {
 		    if ($kl_ampelf) {
-			$im->copy($kl_ampelf, $x-$w_lsa/2, $y-$h_lsa/2, 0, 0,
-				  $w_lsa, $h_lsa);
+			$im->copy($kl_ampelf, $x-$w_lsaf/2, $y-$h_lsaf/2, 0, 0,
+				  $w_lsaf, $h_lsaf);
 		    }
-		} elsif ($cat =~ m{^(F|X)$}) { # F: only fallback here
+		} elsif ($cat eq 'X') {
 		    if ($kl_ampel) {
 			$im->copy($kl_ampel, $x-$w_lsa/2, $y-$h_lsa/2, 0, 0,
 				  $w_lsa, $h_lsa);
@@ -975,7 +986,7 @@ sub draw_route {
 	    $self->imagetype ne 'wbmp') {
 	    my $images_dir = $self->get_images_dir;
 	    my $imgfile;
-	    $imgfile = "$images_dir/flag2_bl." . $self->suffix;
+	    $imgfile = "$images_dir/flag2_bl" . ($self->suffix eq 'png' ? '_noalpha' : '') . '.' . $self->suffix;
 	    if (open(GIF, $imgfile)) {
 		binmode GIF;
 		my $start_flag = $self->{GD_Image}->newFromImage(\*GIF);
@@ -994,7 +1005,7 @@ sub draw_route {
 		warn "Can't open $imgfile: $!";
 	    }
 
-	    $imgfile = "$images_dir/flag_ziel." . $self->suffix;
+	    $imgfile = "$images_dir/flag_ziel" . ($self->suffix eq 'png' ? '_noalpha' : '') . '.' . $self->suffix;
 	    if (open(GIF, $imgfile)) {
 		binmode GIF;
 		my $end_flag = $self->{GD_Image}->newFromImage(\*GIF);
