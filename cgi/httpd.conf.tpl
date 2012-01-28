@@ -55,6 +55,9 @@ ScriptAlias [% ROOT_URL %]/cgi/browserinfo.cgi [% ROOT_DIR %]/lib/BrowserInfo.pm
 # HTML ... documents
 Alias [% ROOT_URL %]  [% ROOT_DIR %]
 
+# Redirect for root URL
+RedirectMatch ^[% ROOT_URL %]/?$ [% ROOT_URL %]/cgi/bbbike.cgi
+
 # server headers have precedence over http-equiv tags, so
 # force utf-8 in case DefaultCharset is active
 <Location [% ROOT_URL %]/html/opensearch/opensearch.html>
