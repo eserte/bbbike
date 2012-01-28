@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998,2000,2003,2004,2006,2010,2011 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998,2000,2003,2004,2006,2010,2011,2012 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -102,8 +102,6 @@ if (defined &Compress::Zlib::memGunzip && $do_accept_gzip) {
 } else {
     $default_hdrs = HTTP::Headers->new();
 }
-
-my $hdrs = $default_hdrs;#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 for my $cgiurl (@urls) {
     my $action;
