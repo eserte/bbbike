@@ -271,6 +271,12 @@ BBBIKE_ROUTABLE_GMAPSUPP_SOURCES=	${BBBIKETMPDIR}/bbbike_routable.img
 .if exists(${BBBIKETMPDIR}/berlin_osm_routable.img)
 BBBIKE_ROUTABLE_GMAPSUPP_SOURCES+=	${BBBIKETMPDIR}/berlin_osm_routable.img
 .endif
+.if exists(${BBBIKETMPDIR}/fragezeichen-outdoor-categorized.img)
+BBBIKE_ROUTABLE_GMAPSUPP_SOURCES+=	${BBBIKETMPDIR}/fragezeichen-outdoor-categorized.img
+.endif
+.if exists(${BBBIKETMPDIR}/fragezeichen-outdoor-nextcheck-categorized.img)
+BBBIKE_ROUTABLE_GMAPSUPP_SOURCES+=	${BBBIKETMPDIR}/fragezeichen-outdoor-nextcheck-categorized.img
+.endif
 
 ${BBBIKETMPDIR}/bbbike_routable_gmapsupp.img: ${BBBIKE_ROUTABLE_GMAPSUPP_SOURCES} ${BBBIKEMKGMAPDIR}/typ/M000002a.TYP
 	cd ${BBBIKETMPDIR} && \
