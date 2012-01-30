@@ -1,9 +1,7 @@
 # Configuration for bbbike.cgi
 [%
     IF CGI_TYPE == "ModPerl::Registry" || CGI_TYPE == "Apache::Registry";
-## XXX preloading modules is a bad idea unless
-## I get rid of all Class::Struct usages...
-#        PROCESS preload_modules;
+        PROCESS preload_modules;
     END
 -%]
 
