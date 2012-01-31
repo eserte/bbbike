@@ -15,7 +15,7 @@
 
 use strict;
 use FindBin;
-use lib "$FindBin::RealBin/..";
+use lib ("$FindBin::RealBin/..", "$FindBin::RealBin/../lib");
 use GPS::GpsmanData;
 use File::Basename;
 use Getopt::Long;

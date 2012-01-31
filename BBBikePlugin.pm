@@ -17,8 +17,10 @@ use strict;
 use vars qw($VERSION %plugins);
 $VERSION = 0.02;
 
-use Class::Struct;
-struct('BBBikePlugin::Plugin' => [Name => "\$", File => "\$", Description => "\$", Active => "\$"]);
+{
+    package BBBikePlugin::Plugin;
+    use myclassstruct qw(Name File Description Active);
+}
 
 BEGIN {
     if (!eval '

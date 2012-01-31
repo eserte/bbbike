@@ -551,31 +551,29 @@ sub get_street_record {
     }
 }
 
-use Class::Struct;
-#BEGIN { Class::Struct::printem() }
-BEGIN {
-    struct('StrassenNetz::SearchContext' =>
-       {Algorithm => "\$",
-	HasPenalty => "\$",
-	HasAmpeln => "\$",
-	AmpelPenalty => "\$",
-	HasQualitaet => "\$",
-	HasHandicap => "\$",
-	HasStrcat => "\$",
-	HasRadwege => "\$",
-	HasRadwegeStrcat => "\$",
-	HasGreen => "\$",
-	HasUnlitStreets => "\$",
-	HasSteigung => "\$",
-	HasTragen => "\$",
-	HasTram => "\$",
-	Velocity => "\$",
-	HasAbbiegen => "\$",
-	Statistics => "\$",
-	UserDefPenaltySub => "\$",
-	HasBlocked => "\$",
-       }
-   );
+{
+    package StrassenNetz::SearchContext;
+    use myclassstruct qw(
+			 Algorithm
+			 HasPenalty
+			 HasAmpeln
+			 AmpelPenalty
+			 HasQualitaet
+			 HasHandicap
+			 HasStrcat
+			 HasRadwege
+			 HasRadwegeStrcat
+			 HasGreen
+			 HasUnlitStreets
+			 HasSteigung
+			 HasTragen
+			 HasTram
+			 Velocity
+			 HasAbbiegen
+			 Statistics
+			 UserDefPenaltySub
+			 HasBlocked
+		       );
 }
 
 sub build_penalty_code {

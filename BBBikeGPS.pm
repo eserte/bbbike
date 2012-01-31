@@ -170,12 +170,11 @@ if (!defined $gpsman_data_dir) {
 
 use vars qw($cfc_mapping);
 
-use Class::Struct;
-undef &BBBikeGPS::PathGraphElem::new;
-struct('BBBikeGPS::PathGraphElem' => [map { ($_ => "\$") }
-				      (qw(wholedist wholetime dist time legtime
-					  speed alt grade coord accuracy))
-				     ]);
+{
+    package BBBikeGPS::PathGraphElem;
+    use myclassstruct qw(wholedist wholetime dist time legtime
+			 speed alt grade coord accuracy);
+}
 
 use constant DEFAULT_MAX_GAP => 2; # minutes
 

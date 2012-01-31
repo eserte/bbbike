@@ -18,57 +18,69 @@ package BBBikeRouting;
 BEGIN { $^W = 0 }
 
 use strict;
-use Class::Struct;
 use BBBikeUtil;
 
-$BBBikeRouting::Position::Members =
-    {Street => "\$", Citypart => "\$",
-     City => "\$",
-     ZIP => "\$",
-     Coord => "\$", Multi => "\$",
-     Attribs => "\$",
-    };
-struct('BBBikeRouting::Position' => $BBBikeRouting::Position::Members);
+require myclassstruct;
 
-$BBBikeRouting::Context::Members =
-    {Vehicle => "\$", Scope => "\$",
-     Velocity => "\$",
-     UseXS => "\$", UseCache => "\$",
-     PreferCache => "\$",
-     UseNetServer => "\$",
-     ZIPLookArgs => "\$",
-     SearchArgs => "\$", Algorithm => "\$",
-     CGI => "\$", BrowserInfo => "\$",
-     RouteInfoKm => "\$",
-     Verbose => "\$",
-     MultipleChoices => "\$",
-     MultipleChoicesLimit => "\$",
-     ChooseExactCrossing => "\$",
-     UseTelbuchDBApprox => "\$",
-    };
-struct('BBBikeRouting::Context' => $BBBikeRouting::Context::Members);
+{
+    package BBBikeRouting::Position;
+    use vars qw($Members);
+    $Members =
+	{Street => "\$", Citypart => "\$",
+	 City => "\$",
+	 ZIP => "\$",
+	 Coord => "\$", Multi => "\$",
+	 Attribs => "\$",
+	};
+    myclassstruct->import(keys %$Members);
+}
 
-$BBBikeRouting::Members =
-    {Context => "BBBikeRouting::Context",
-     Start => "BBBikeRouting::Position",
-     StartChoices => "\$", # array of BBBikeRouting::Position
-     StartChoicesIsCrossings => "\$",
-     Via => "\$", # array of BBBikeRouting::Position
-     ViaChoices => "\$", # XXX not used yet
-     ViaChoicesIsCrossings => "\$",
-     Goal => "BBBikeRouting::Position",
-     GoalChoices => "\$", # array of BBBikeRouting::Position
-     GoalChoicesIsCrossings => "\$",
-     Dataset => "\$",
-     Streets => "\$", ZIP => "\$",
-     ZIPStreets => "\$", Net => "\$",
-     Stations => "\$", Cities => "\$",
-     Crossings => "\$",
-     Path => "\$", RouteInfo => "\$",
-     #PenaltyNets => "\$",
-     Ext => "\$", # for subclassing
-    };
-struct('BBBikeRouting' => $BBBikeRouting::Members);
+{
+    package BBBikeRouting::Context;
+    use vars qw($Members);
+    $Members =
+	{Vehicle => "\$", Scope => "\$",
+	 Velocity => "\$",
+	 UseXS => "\$", UseCache => "\$",
+	 PreferCache => "\$",
+	 UseNetServer => "\$",
+	 ZIPLookArgs => "\$",
+	 SearchArgs => "\$", Algorithm => "\$",
+	 CGI => "\$", BrowserInfo => "\$",
+	 RouteInfoKm => "\$",
+	 Verbose => "\$",
+	 MultipleChoices => "\$",
+	 MultipleChoicesLimit => "\$",
+	 ChooseExactCrossing => "\$",
+	 UseTelbuchDBApprox => "\$",
+	};
+    myclassstruct->import(keys %$Members);
+}
+
+{
+    use vars qw($Members);
+    $Members =
+	{Context => "BBBikeRouting::Context",
+	 Start => "BBBikeRouting::Position",
+	 StartChoices => "\$", # array of BBBikeRouting::Position
+	 StartChoicesIsCrossings => "\$",
+	 Via => "\$", # array of BBBikeRouting::Position
+	 ViaChoices => "\$", # XXX not used yet
+	 ViaChoicesIsCrossings => "\$",
+	 Goal => "BBBikeRouting::Position",
+	 GoalChoices => "\$", # array of BBBikeRouting::Position
+	 GoalChoicesIsCrossings => "\$",
+	 Dataset => "\$",
+	 Streets => "\$", ZIP => "\$",
+	 ZIPStreets => "\$", Net => "\$",
+	 Stations => "\$", Cities => "\$",
+	 Crossings => "\$",
+	 Path => "\$", RouteInfo => "\$",
+	 #PenaltyNets => "\$",
+	 Ext => "\$", # for subclassing
+	};
+    myclassstruct->import(keys %$Members);
+}
 
 sub BBBikeRouting_Position_Class { 'BBBikeRouting::Position' }
 sub BBBikeRouting_Context_Class  { 'BBBikeRouting::Context'  }
