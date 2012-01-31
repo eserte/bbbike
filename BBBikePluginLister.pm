@@ -167,10 +167,10 @@ sub plugin_lister {
     for my $plugin_def (@p) {
 	my $key = $path_i % 2 == 0 ? 'even' : 'odd';
 	$hl->add($path_i, -itemtype => "window", -style => $is{$key},
-		 -widget => $hl->Checkbutton(-variable => \$plugin_def->[3], # XXX HACK! how to access member directly???
+		 -widget => $hl->Checkbutton(-variable => \$plugin_def->{Active}, # HACK: accessing member without accessor
 					     -onvalue => 1,
 					     -offvalue => 0,
-					     -command => sub { toggle_plugin($tl, $plugin_def, $plugin_def->[3]) },
+					     -command => sub { toggle_plugin($tl, $plugin_def, $plugin_def->Active) },
 					     -background => $bg_color{$key},
 					     -highlightthickness => 0,
 					    ),
