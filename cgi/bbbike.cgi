@@ -775,7 +775,7 @@ $require_Karte = sub {
     undef $require_Karte;
 };
 
-$VERSION = "11.001";
+$VERSION = "11.002";
 
 use vars qw($delim);
 $delim = '!'; # wegen Mac nicht ¦ verwenden!
@@ -839,7 +839,7 @@ $detailheight = 500;
 $nice_berlinmap = 0;
 $nice_abcmap    = 0;
 
-$bbbike_start_js_version = '1.22';
+$bbbike_start_js_version = '1.23';
 
 use vars qw(@b_and_p_plz_multi_files %is_usable_without_strassen %same_single_point_optimization);
 @b_and_p_plz_multi_files = 
@@ -2257,6 +2257,7 @@ EOF
 		print <<EOF;
 <div id="locateme" style="visibility:hidden;">
   <a href="javascript:locate_me()">@{[ M("Aktuelle Position verwenden") ]}</a>
+  <img id="locateme_wait" src="$bbbike_images/loading.gif" style="visibility:hidden;">
 EOF
 		print help_link('geolocation');
 		print <<EOF;

@@ -316,7 +316,23 @@ function check_locate_me() {
 }
 
 function locate_me() {
-  navigator.geolocation.getCurrentPosition(locate_me_cb);
+  vis("locateme_wait", "show");
+  navigator.geolocation.getCurrentPosition(locate_me_cb, locate_me_error);
+}
+
+function locate_me_error(error) {
+  vis("locateme_wait", "hide");
+  var msg = "Es konnte keine Positionierung durchgeführt werden. ";
+  if (error.code == 1) {
+    msg += "Möglicher Grund: Ortungsdienste sind ausgeschaltet. Bitte in den Einstellungen des Geräts aktivieren!";
+  } else if (error.code == 2) {
+    msg += "Die Position konnte nicht ermittelt werden.";
+  } else if (error.code == 3) {
+    msg += "Möglicher Grund: Zeitablauf bei der Ermittlung der Position";
+  } else {
+    msg += "Unbekannter Grund, Fehler-Code=" + error.code;
+  }
+  alert(msg);
 }
 
 function locate_me_cb(position) {
@@ -325,6 +341,7 @@ function locate_me_cb(position) {
 }
 
 function locate_me_res(res) {
+  vis("locateme_wait", "hide");
   if (!res) {
     alert("Die Positionierung konnte nicht durchgeführt werden.");
   } else if (!res.bbbikepos) {
