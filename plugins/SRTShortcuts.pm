@@ -297,6 +297,18 @@ EOF
 				      $main::edit_normal_mode ? (below => $str_layer_level) : (above => $str_layer_level)
 				  },
 				 ),
+		layer_checkbutton('fragezeichen-outdoor-nextcheck-categorized', 'str',
+				  "$bbbike_rootdir/tmp/fragezeichen-outdoor-nextcheck-categorized.bbd",
+				  below_above_cb => sub {
+				      $main::edit_normal_mode ? (below => $str_layer_level) : (above => $str_layer_level)
+				  },
+				 ),
+		layer_checkbutton('fragezeichen-outdoor-categorized', 'str',
+				  "$bbbike_rootdir/tmp/fragezeichen-outdoor-categorized.bbd",
+				  below_above_cb => sub {
+				      $main::edit_normal_mode ? (below => $str_layer_level) : (above => $str_layer_level)
+				  },
+				 ),
 		layer_checkbutton('fragezeichen-indoor-nextcheck', 'str',
 				  "$bbbike_rootdir/tmp/fragezeichen-indoor-nextcheck.bbd"),
 		layer_checkbutton('fragezeichen-nextcheck', 'str',
