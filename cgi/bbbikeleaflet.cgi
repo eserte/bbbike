@@ -30,6 +30,7 @@ print $q->header('text/html; charset=utf-8');
 open my $fh, $htmlfile
     or die "Can't open $htmlfile: $!";
 binmode $fh, ':utf8';
+binmode STDOUT, ':utf8';
 while(<$fh>) {
     print $_;
     if (m{\Q//--- INSERT GEOJSON HERE ---}) {
