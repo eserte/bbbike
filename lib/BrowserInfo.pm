@@ -2,10 +2,9 @@
 # -*- perl -*-
 
 #
-# $Id: BrowserInfo.pm,v 1.53 2007/08/01 21:17:55 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999-2005,2011 Slaven Rezic. All rights reserved.
+# Copyright (C) 1999-2005,2011,2012 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -18,7 +17,7 @@ use CGI;
 use strict;
 use vars qw($VERSION);
 
-$VERSION = 1.54;
+$VERSION = 1.55;
 
 my $vert_scrollbar_space = 6; # most browsers need space for a vertical scrollbar
 
@@ -68,10 +67,12 @@ sub set_info {
     $self->{'user_agent_os'} = "";
     $self->{'user_agent_compatible'} = "";
 
-    ($self->{'user_agent_name'}, $self->{'user_agent_version'}) =
-	_get_browser_version($q->user_agent);
+    my $user_agent = $q->user_agent || '';
 
-    if ($q->user_agent =~ /\((.*)\)/) {
+    ($self->{'user_agent_name'}, $self->{'user_agent_version'}) =
+	_get_browser_version($user_agent);
+
+    if ($user_agent =~ /\((.*)\)/) {
 	my(@infos) = split(/;\s*/, $1);
 	my $ignore_next = 0;
 	my $i; # be compatible with 5.003
@@ -291,31 +292,31 @@ sub set_info {
 
     # XXX neues User-Agent-Scheme anwenden...
     $self->{'can_javascript'} =
-      ($q->user_agent =~ m#(?: Mozilla/[4-9]
-                            |  Opera
-                            )#ix
+      ($user_agent =~ m#(?: Mozilla/[4-9]
+                         |  Opera
+                         )#ix
        ? 1.2
-       : ($q->user_agent =~ m#(Mozilla/3)#i
+       : ($user_agent =~ m#(Mozilla/3)#i
 	  ? 1.1
-	  : ($q->user_agent =~ m#(Mozilla/2|Konqueror)#i
+	  : ($user_agent =~ m#(Mozilla/2|Konqueror)#i
 	     ? 1.0
 	     : 0)));
     if ($self->{'can_javascript'}) {
-	$self->{'window_open_buggy'} = ($q->user_agent =~ m|^Konqueror/1.0|i ||
-					$q->user_agent =~ m|^Mozilla/2|i);
+	$self->{'window_open_buggy'} = ($user_agent =~ m|^Konqueror/1.0|i ||
+					$user_agent =~ m|^Mozilla/2|i);
 	$self->{'javascript_incomplete'} =
-	  ($q->user_agent =~ m|^Konqueror/1\.[01]|i);
+	  ($user_agent =~ m|^Konqueror/1\.[01]|i);
     }
-    if ($q->user_agent =~ m|^Mozilla/.* Kindle/3|) { # does not support multiple windows at all
+    if ($user_agent =~ m|^Mozilla/.* Kindle/3|) { # does not support multiple windows at all
 	$self->{'window_open_buggy'} = 1;
 	$self->{'no_new_windows'} = 1; # disable totally, otherwise links do not open at all
     }
-    $self->{'can_png'} = ($q->user_agent =~ m|(Mozilla/[4-9])|i ? 1 : 0);
+    $self->{'can_png'} = ($user_agent =~ m|(Mozilla/[4-9])|i ? 1 : 0);
     # accept("image/png") heißt leider nicht, dass PNG auch Inline dargestellt
     # wird... und Netscape/3 macht es eh' falsch
-    $self->{'can_css'} = ($q->user_agent =~ m#(?: Mozilla/[4-9]
-                                               |  Opera
-                                               )#ix ? 1 : 0);
+    $self->{'can_css'} = ($user_agent =~ m#(?: Mozilla/[4-9]
+                                            |  Opera
+                                            )#ix ? 1 : 0);
     $self->{'can_dhtml'} = (($self->{'user_agent_name'} eq 'Mozilla' &&
 			     $self->{'user_agent_version'} >= 4.0) ||
 			    ($self->{'user_agent_name'} eq 'MSIE' &&
@@ -372,11 +373,11 @@ sub set_info {
 	$self->{'css_buggy'} = 1;
     }
 
-    if ($q->user_agent =~ /Gecko\/(\d+)/) {
+    if ($user_agent =~ /Gecko\/(\d+)/) {
 	$self->{gecko_version} = $1;
     }
 
-    if ($q->user_agent =~ /Symbian/) {
+    if ($user_agent =~ /Symbian/) {
 	$self->{'cannot_unicode_arrows'} = 1;
     }
 }
@@ -615,6 +616,7 @@ EOF
 sub _get_browser_version {
     my($s, $sep) = @_;
     $sep = "/" unless defined $sep;
+    no warnings 'uninitialized'; # $s may be undef (i.e. undefined User-Agent)
     if ($s =~ m|\b(Opera)\s+(\d+\.\d+)|) {
 	($1, $2);
     } elsif ($s =~ m{KHTML.*like Gecko.*(Safari)/(\d+\.\d+)}) {

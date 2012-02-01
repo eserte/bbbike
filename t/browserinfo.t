@@ -2,11 +2,10 @@
 # -*- perl -*-
 
 #
-# Copyright (C) 2005 Slaven Rezic. All rights reserved.
+# Copyright (C) 2005,2012 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# $Id: browserinfo.t,v 1.5 2005/07/17 21:30:58 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -28,7 +27,7 @@ BEGIN {
     }
 }
 
-BEGIN { plan tests => 10 }
+BEGIN { plan tests => 11 }
 
 #use vars qw($uaprofdir);
 #$uaprofdir = "$FindBin::RealBin/../tmp/uaprof";
@@ -69,5 +68,13 @@ BEGIN { plan tests => 10 }
     local $ENV{HTTP_PROFILE} = "http://does.not-exist.example.com/UAprof/foo.xml";
     my $bi = BrowserInfo->new;
     is("@{ $bi->{display_size} }", "750 590", "Fallback for unknown device");
+}
+
+{
+    local $ENV{HTTP_USER_AGENT} = undef;
+    my @warnings;
+    local $SIG{__WARN__} = sub { push @warnings, @_ };
+    my $bi = BrowserInfo->new;
+    is "@warnings", "", 'No warnings for empty user agent';
 }
 __END__
