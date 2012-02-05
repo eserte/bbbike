@@ -130,6 +130,10 @@ Fahrradstraße in der Lauenburger Str.	?::projected 5870,4992 5905,5088 5927,5182
 #: section ignorieren vvv
 #: section Straßen in Bau und Planung vvv
 # 
+#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20120201.1215.365686.html
+#: next_check: 2013-11-30
+Radweg Berlin-Leipzig, Abschnitt Yorckstr. - Monumentenstr.: wird bis Ende 2013 realisiert	?::projected 8358,9568 8337,9065
+# 
 #: by: http://www.stadtumbau-berlin.de/Fotos.4730.0.html
 #: next_check: 2012-04-01
 Ebersstr. - Park GASAG Nordspitze: Steg/Übergang über die S-Bahn wird 2012 realisiert	?::projected 7329,8571 7304,8611
@@ -366,7 +370,7 @@ Kletterrosenweg	?::projected 21382,149 21354,289
 	?::projected 21894,561 21776,418
 #: next_check: ^^^
 # 
-#: next_check: 2012-02-01
+#: next_check: 2012-05-01
 An der Barthschen Promenade: vielleicht wird die Straße in Zukunft sich hier befinden	?::projected 8954,8914 8814,8917
 # 
 #XXX del --- nein, es sieht so aus, als ob es bei den Busspuren bleibt --- #: last_checked: 2011-04-19 --- #: next_check: 2011-06-01 --- Karl-Liebknecht-Str.: Radstreifen nach den Bauarbeiten?	?::inwork 10920,13139 11015,13264 11021,13271 11027,13279 11080,13350 11092,13366
@@ -463,8 +467,8 @@ Alt-Biesdorf/Alt-Kaulsdorf (südliche Seite): Bau von asphaltierten Radwegen	?; 2
 #: by ^^^
 # 
 #: by: MoPo 2009-08-01, soll 2010 realisiert werden vvv
-#: last_checked: 2011-10-01
-#: next_check: 2012-02-01
+#: last_checked: 2012-02-05
+#: next_check: 2012-04-15
 Fasanenstr.: Öffnung der Einbahnstraße für Radfahrer	? 5268,11274 5247,10992 5242,10918 5229,10716 5207,10399
 # 
 #: last_checked: 2011-11-05
@@ -3123,6 +3127,7 @@ Elbestr. (Teltow): Qualität?	? 348,-743 347,-784 288,-1040 213,-1180 145,-1262 1
 Rue Georges Vallerey - Allée Pierre de Coubertin: Qualität?	? 4650,21466 4634,21457 4589,21525
 #: XXX laut osm im westl. Abschnitt track
 #: XXX zumindest unter der Bahnbrücke Kopfsteinpflaster, möglicherweise schlechtes
+#: XXX auch an der Geschwister-Scholl-Str. Kopfsteinpflaster
 Werderscher Weg (Potsdam): Qualität? Beginnt die Straße schon an der Geschwister-Scholl-Str. oder etwas später? Wie ist die Qualität im westlichen Abschnitt?	? -15275,-1791 -15427,-1860 -15449,-1959 -15483,-1993 -15547,-1934 -15646,-1955 -15748,-1961 -16033,-2029
 Feldweg (Potsdam): Qualität?	? -15449,-1959 -15307,-1982 -15144,-1979
 Schlüterstr. (Potsdam): Qualität?	? -15979,-2419 -15864,-2381
@@ -3232,6 +3237,7 @@ Börnicke - Staffelde: existieren Radwege zwischen Börnicke und Staffelde?	? -217
 Sotzmannstr.: Qualität? Ist das tatsächlich die Sotzmannstr.?	? -4629,12835 -4558,12992 -4610,13010 -4601,13112 -4634,13173
 #XXX del --- hier ist nur ein Einkaufszentrum --- #: XXX fehlt bei Berlin.coords.data: --- Märkische Zeile: gibt es tatsächlich einen Weg diesen Namens hier? Für Radfahrer relevant?	? 6855,21481 6874,21183
 Langenbeckstr.: ist die gesamte Straße asphaltiert?	? 24793,9860 25020,9728
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/05re.pdf/file?y=2012
 Alexander-Meißner-Str.: Qualität? Ist die Straße schon komplett fertiggestellt? Gibt es auch im südlichen Teil Radwege?	? 20078,-1029 20414,-1370 20464,-1730
 #: XXX fehlt in Berlin.coords.data, PLZ=12526:
 Ludwig-Prandtl-Str.: Qualität? Ist die Straße schon komplett fertiggestellt?	? 19626,-1318 19855,-1214 19924,-1157 20078,-1029 20342,-777

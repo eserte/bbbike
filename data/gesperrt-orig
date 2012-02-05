@@ -909,11 +909,11 @@ Breite Str.: nicht passierbarer Mittelstreifen	3nocross -13238,-1569 -13375,-154
 Lange Brücke: Straßenbahntrasse	3nocross -12758,-1654 -12659,-1700 -12567,-1817
 Feuerbachstr.	1 -14140,-1390 -13879,-1445
 Rudolf-Breitscheid-Str.	2 -11056,-1726 -11116,-1681
-Geschwister-Scholl-Str.	1 -14330,-1762 -14215,-1687 -14151,-1656 -14115,-1678
+Geschwister-Scholl-Str.	1 -14330,-1762 -14213,-1695 -14143,-1662 -14115,-1678
 Zimmerstr.	1 -13646,-1168 -13876,-1226
 Platz der Einheit	1 -12755,-1131 -12741,-1197 -12718,-1327
 Puschkinallee	1 -13042,807 -12912,783 -12868,738 -12827,629 -12815,554 -12811,533
-Geschwister-Scholl-Str.	1 -14215,-1687 -14151,-1656 -14115,-1678
+Geschwister-Scholl-Str.	1 -14213,-1695 -14143,-1662 -14115,-1678
 Friedrich-Ebert-Str.: Straßenbahntrasse	3nocross -12780,-1545 -12793,-1498 -12833,-1365
 #: XXX_prog: Treppe sollte besser als -13733,-722 -13772,-623 -13784,-537 dargestellt sein, wenn es geht
 tragen (Treppe, 75 Stufen und etliche Rampenabschnitte)	0:180 -13772,-623
@@ -1949,7 +1949,7 @@ Tegeler Hafen: Weg gesperrt	2 1630,20731 1668,20670 1687,20645 1697,20623 1721,2
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1106/nachricht4396.html
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1110/nachricht4504.html
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1201/nachricht4557.html
-#: last_checked: 2011-10-23
+#: last_checked: 2012-02-05
 #: next_check: 2012-05-01
 Hüttenweg: Sperrung wegen Bau an der Autobahn, wahrscheinlich bis Mai 2012	2:inwork -739,6838 -927,6888
 # 
@@ -2043,8 +2043,7 @@ Unterführung unter Adlergestell und Bahn: wegen Brückenerneuerung gesperrt	2:inw
 #: section in Brandenburg vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # XXX del #: last_checked: 2009-08-29 Rückbau der Fr.-Ebert-Str. zwischen Breite Str. und Platz der Einheit, Bauarbeiten bis Ende 2009. Umfahrung über Alten Markt notwendig.	1:inwork -12659,-1700 -12758,-1654 -12755,-1585 -12780,-1545
 # XXX del #: last_checked: 2009-08-29 Rückbau der Fr.-Ebert-Str., kein Zugang zur Schwertfegerstr.	2:inwork -12870,-1493 -12793,-1498
-#: last_checked: 2010-05-09
-Bertiniweg: gesperrt, wird evtl. später neu geöffnet	2:inwork -12710,1713 -12642,1781 -12636,1804 -12604,1857 -12605,1927 -12593,1946 -12542,1959
+#XXX del --- #: last_checked: 2010-05-09 --- Bertiniweg: gesperrt, wird evtl. später neu geöffnet	2:inwork -12689,1693 -12663,1703 -12640,1761 -12524,1891 -12516,1906 -12539,1917 -12568,1970
 #: section ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #: temporary ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #: section ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
