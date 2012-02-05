@@ -305,4 +305,27 @@
     (insert now)
     ))
 
+(defun bbbike-update-now ()
+  "Update the current date in bbd files"
+  (interactive)
+  (let ((now-iso-date (format-time-string "%Y-%m-%d" (current-time)))
+	begin-iso-date-pos
+	end-iso-date-pos)
+    (save-excursion
+      (search-backward-regexp "\\(^\\| \\)")
+      (setq begin-iso-date-pos (1+ (match-beginning 0)))
+      )
+    (save-excursion
+      (search-forward-regexp "\\( \\|$\\)")
+      (setq end-iso-date-pos (match-beginning 0)))
+    (if (not (string-match "^[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]$" (buffer-substring begin-iso-date-pos end-iso-date-pos)))
+	(error (concat "This does not look like an ISO date "
+		       (buffer-substring begin-iso-date-pos end-iso-date-pos))))
+    (save-excursion
+      (goto-char begin-iso-date-pos)
+      (delete-region begin-iso-date-pos end-iso-date-pos)
+      (insert now-iso-date))
+    )
+  )
+
 (provide 'bbbike-mode)
