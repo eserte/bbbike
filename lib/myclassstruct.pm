@@ -28,7 +28,7 @@ sub create_accessor {
     my $acc = sub {
 	(
 	 (@_ > 1)
-	 ? ($_[0]->{$property} = $_[1], return $_[0])
+	 ? $_[0]->{$property} = $_[1]
 	 : $_[0]->{$property}
 	);
     };
@@ -69,15 +69,15 @@ myclassstruct - create accessor methods
 
 =head1 DESCRIPTION
 
-This is a stripped-down version of the CPAN module L<accessors>.
-Notable differences:
+This is a stripped-down version of the CPAN module
+L<accessors::classic>, and a OO-capable version of L<Class::Struct>.
+
+Notable differences to L<accessors::classic>:
 
 =over
 
 =item * The key names of the internal hash do not have a preceding
 dash (-).
-
-=item * Only the "chained" style is supported.
 
 =item * There's no support for debugging, different export levels etc.
 (which are in the original accessors.pm, but not documented).
@@ -92,6 +92,6 @@ dash (-).
 
 Slaven Rezic.
 
-Steve Purkis wrote the original L<accessors>.
+Steve Purkis wrote the original L<accessors::classic>.
 
 =cut

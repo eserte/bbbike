@@ -19,7 +19,7 @@ BEGIN {
     }
 }
 
-plan tests => 19;
+plan tests => 17;
 
 {
     {
@@ -35,14 +35,10 @@ plan tests => 19;
     my $A = A->new;
     isa_ok $A, 'A';
     is $A->a, undef, 'Unset member is undef';
-    is $A->a(123), $A, 'Mutator access returns object';
+    is $A->a(123), 123, 'Mutator access returns changed value';
     is $A->a, 123, 'Accessor returns correct value';
     eval { $A->d };
     isnt $@, '', 'Invalid accessor';
-    is $A->a(1)->b(2)->c(3), $A;
-    is $A->a, 1, 'Return value after chained usage';
-    is $A->b, 2;
-    is $A->c, 3;
 
     my $B = A->new(a => 3, b => 2, c => 1);
     isa_ok $B, 'A';
@@ -59,6 +55,15 @@ plan tests => 19;
     isa_ok $SubA, 'SubA';
     is $SubA->a, 1;
     is $SubA->d, 4711;
+
+    {
+	# chained
+	my $AA = A->new;
+	my $BB = A->new;
+	$AA->b($BB);
+	is $AA->b->c(3), 3, 'Chained';
+	is $BB->c, 3;
+    }
 }
 
 __END__
