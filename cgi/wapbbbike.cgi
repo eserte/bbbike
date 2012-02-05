@@ -632,12 +632,10 @@ sub wap_cgi_object {
 
     require CGI;
     CGI->import('-newstyle_urls');
-    my $context = $self->Context;
-    my $q = CGI->new;
-    $context->CGI($q);
+    my $q = $self->Context->CGI(CGI->new);
     eval {
 	require BrowserInfo;
-	my $bi = $context->BrowserInfo(BrowserInfo->new($q));
+	my $bi = $self->Context->BrowserInfo(BrowserInfo->new($q));
 	$self->{BrowserInfo} = $bi;
     };
     warn $@ if $@;
