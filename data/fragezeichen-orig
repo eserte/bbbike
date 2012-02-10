@@ -489,14 +489,17 @@ Fürstenwalder Allee: Bau von Radverkehrsanlagen	? 29714,4461 29728,4435 29813,43
 Radwegbau Welzower Steig: wie ist die Qualität (Fahrbahnbeschaffenheit) des Radwegs?	?::inwork 6320,21777 6370,21689 6428,21648 6478,21652 6508,21646 6529,21620 6576,21414
 # 
 #: last_checked: 2011-11-20 vvv
-#: next_check: 2012-02-01 vvv
+#: next_check: 2012-03-01 vvv
+#: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120207.1005.365838.html vvv
 Radverkehrsanlagen um den Knotenpunkt Weißenseer Weg/Konrad-Wolf-Str.	? 14960,14746 15052,14585 15164,14392
 Radverkehrsanlagen um den Knotenpunkt Weißenseer Weg/Konrad-Wolf-Str.	? 14754,14406 15052,14585 15272,14691
+#: by: ^^^
 #: next_check ^^^
 #: last_checked ^^^
 # 
 #: last_checked: 2011-10-15 (am westlichen Ende)
-#: next_check: 2012-02-01
+#: next_check: 2012-03-01
+#: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120207.1005.365838.html
 Suermondtstr.: Schaffung von Radverkehrsanlagen	? 16964,16042 16961,16042 16660,16165 16515,16207 16416,16236 16260,16282 16095,16331 15919,16383
 # 
 #: last_checked: 2011-11-20 (am westlichen Ende)
@@ -572,6 +575,13 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 # die Datenbank aufgenommen werden sollen und somit nicht öffentlich sind.
 # Das heißt diese Strecken werden nicht bei einer erweiterten Suche aufgenommen
 # und dem CGI-Benutzer auch nicht präsentiert.
+# 
+#: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120207.1005.365838.html vvv
+Hirschberger/Schreiberhauser: gibt es hier einen Zebrastreifen?	? 15188,11090 15212,11053
+Weitlingstr.: für 2012 geplanter Zebrastreifen? Wo genau?	?::projected 16705,11526 16734,11416
+Degnerstr.: für 2012 geplanter Zebrastreifen? Wo genau?	?::projected 16537,15884 16535,15764
+Dorfstr.: für 2012 geplanter Zebrastreifen? Wo genau?	?::projected 19285,18489 19429,18368
+#: by: ^^^
 # 
 Am Findling (Potsdam): existiert eine Ausschilderung?	? -9723,-2451
 # 
@@ -1865,6 +1875,7 @@ Grammestr.: Qualität zwischen Nonnendammallee und Jugendweg? Einbahnstraße auch 
 Halskesteig: Qualität? Einbahnstraße auch für Radfahrer gültig?	? 1166,14458 1058,14459
 Am Laubwald: Qualität?	? 981,15490 1078,15524
 Sternfelder Str.: Qualität?	? 386,14162 367,13991 371,13863 182,13878 169,13851
+#: by: http://www.potsdam.de/cms/dokumente/10084122_1189396/4d29ee09/Amtsblatt_9_2011.pdf
 Tannenweg (Potsdam): Qualität?	? -9434,164 -9440,193 -9405,204 -9453,425 -9494,441 -9539,434
 (Wannseestr. - Tannenstr.): genaue Straßenbezeichnungen? Qualität?	? -9568,56 -9381,89 -9389,170
 Bäckerstr. - Buchbinderweg: Durchfahrt für Radfahrer möglich? Qualität? Nachts beleuchtet?	? 16657,1124 16567,1142 16485,1162
@@ -3163,11 +3174,14 @@ Zum Weizenring (Potsdam-Bornim): Qualität? Genaue Lage der Straße?	? -16566,1579
 #: XXX_osm: fehlt bei osm
 Pomonaring (Potsdam-Bornim): Qualität? Genaue Lage der Straße?	? -15999,1387 -16046,1203 -15925,1365
 Florastr. (Potsdam-Bornim): Qualität?	? -16023,1042 -15982,1147 -15932,1238 -15859,1384 -15791,1523
+#: by: http://www.potsdam.de/cms/dokumente/10085850_1189396/5f99b441/26650AblPdmStadt11_11.pdf
 Staudenweg (Potsdam-Bornim): Qualität?	? -15932,1238 -15717,1159
 Haselnussring (Potsdam-Bornim): Qualität? Spielstraße?	? -16174,1220 -16145,1272 -16129,1306 -16108,1349 -16048,1454
 Haselnussring (Potsdam-Bornim): Qualität? Spielstraße?	? -16280,1279 -16154,1492
 Walnussring (Potsdam-Bornim): Qualität?	? -16477,1473 -16493,1462 -16541,1360 -16371,1271 -16342,1324
-Breiter Weg (Potsdam-Bornim): Qualität?	? -16314,1648 -16239,1613 -16169,1740 -16251,1759
+#: by: http://www.potsdam.de/cms/dokumente/10090503_1471008/726adfe6/Amtsblatt_1-2012.pdf (vorher hier auch "Breiter Weg" -> oldname: -20111212)
+Amselwinkel (Potsdam-Bornim): Qualität?	? -16314,1648 -16239,1613 -16169,1740
+Breiter Weg (Potsdam-Bornim): Qualität?	? -16169,1740 -16251,1759
 Grüner Weg (Potsdam-Bornim): Qualität?	? -16192,1856 -16074,1820
 Verlängerung des Grünen Wegs: Qualität?	? -16074,1820 -16024,1806 -15692,1716 -15603,1690
 Hermann-Struve-Str. (Potsdam-Bornim): Qualität?	? -16048,1454 -16003,1539 -15978,1589 -15954,1639
@@ -3383,7 +3397,8 @@ Zum Exerzierhaus (Potsdam): Qualität? Genauer Verlauf der Straße?	? -13108,2010 
 #: by: ^^^
 #: note: ^^^
 #: by: http://www.potsdam.de/cms/dokumente/10072610_974248/9aba6281/abl16_10.pdf
-Zum Mühlenteich (Potsdam-Golm): Qualität? Genauer Verlauf der Straße?	? -19211,-677 -19249,-605
+#: by: http://www.potsdam.de/cms/dokumente/10081131_1189396/883b581e/abl05_11.pdf
+Zum Mühlenteich (Potsdam-Golm): Qualität? Genauer Verlauf der Straße?	? -18962,128 -19159,178
 Schwalbenhof (Potsdam-Golm): Qualität?	? -19279,-106 -19186,-132
 Kossätenweg (Potsdam-Golm): Qualität?	? -19247,-20 -18785,-77
 Thomas-Müntzer-Str. (Potsdam-Golm): Qualität?	? -18889,-591 -18882,-573 -18833,-562 -18822,-430 -18785,-247 -18785,-77
@@ -3778,3 +3793,30 @@ Immenweidepark: Qualität?	? -2114,17878 -2169,17882 -2241,17847 -2298,17868 -236
 Andreas-Rabe-Siedlung: Qualität? Ausgeschildert?	? 6898,23233 6912,23237 6967,23278 7078,23340 7027,23459
 Skandinavische Str.: hinter den Häusern, existiert eine ebenerdige Verbindung zur Lichtenberger Brücke?	? 17191,11973 17029,11903 16975,11858
 Ruhlebener Str. - Uferweg: existiert ein Zugang? Wieviele Treppenstufen?	? -3621,13884 -3493,13782
+#: XXX neue Straßen in Potsdam: Qualität? Genauer Verlauf? vvv
+#: by: http://www.potsdam.de/cms/dokumente/10084122_1189396/4d29ee09/Amtsblatt_9_2011.pdf vvv
+#: XXX fehlt in Potsdam.coords.data vvv
+Mertz-von-Quirnheim-Str. (Potsdam): PLZ=14471	? -14537,-2154 -14650,-2321
+Heinz-Rühmann-Weg (Potsdam): PLZ=14482	? -8865,-2170 -8959,-2353
+An der Jubelitz (Potsdam-Fahrland): PLZ=14476	? -17173,7182 -17268,7122 -17170,7038 -17057,7062
+#: XXX ^^^
+#: by: ^^^
+#: XXX ^^^
+# 
+#: XXX fehlt in Potsdam.coords.data
+#: by: http://www.potsdam.de/cms/dokumente/10086330_1189396/91ec2de3/Amtsblatt_12_11.pdf
+#: XXX PLZ=14476
+Mühlenweg (Potsdam-Fahrland): Qualität? Genauer Verlauf?	? -15503,6422 -15392,6426
+# 
+#: XXX neue Straßen in Potsdam: Qualität? Genauer Verlauf? vvv
+#: by: http://www.potsdam.de/cms/dokumente/10090503_1471008/726adfe6/Amtsblatt_1-2012.pdf vvv
+#: XXX fehlt in Potsdam.coords.data, PLZ=14473 vvv
+An der Kornmühle (Potsdam)	? -12865,-2478 -12874,-2534
+Am Speicher (Potsdam)	? -12956,-2582 -12972,-2652
+#: XXX ^^^
+#: XXX fehlt in Potsdam.coords.data, PLZ=14469 vvv
+Siegward-Sprotte-Straße (Potsdam): (Planstraße "Nord")	? -15379,377 -15261,431
+Haeberlinweg (Potsdam): (Planstraße "Süd")	? -15381,160 -15264,85
+#: XXX ^^^
+#: by: ^^^
+#: XXX ^^^
