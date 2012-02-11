@@ -159,11 +159,12 @@ my %cat_to_area_landuse = ('Forest'     => 'forest',
 			   'Industrial' => 'industrial',
 			   # 'Ae' => 'airport', # does not exist
 			   'Orchard'    => 'allotments',
-			   'Sport'      => 'sports',
+			   ($optimize_for != OPTIMIZE_FOR_MAPNIK ? ('Sport' => 'sports') : ()),
 			   'Green'      => 'village_green',
 			  );
 my %cat_to_area_leisure = ('P'          => 'park',
 			   'Pabove'     => 'park',
+			   ($optimize_for == OPTIMIZE_FOR_MAPNIK ? ('Sport' => 'sports_centre') : ()),
 			  );
 
 my($min_lat, $max_lat, $min_lon, $max_lon);
@@ -784,18 +785,24 @@ sub handle_railway_stations_like {
     my $is_ubahn = $cat =~ m{^U};
     my $is_sbahn = $cat =~ m{^S};
     my $is_abandoned = $cat =~ m{0$};
+    my $is_optimize_for_mapnik_bbbike_style = $optimize_for_mapnik_style == OPTIMIZE_FOR_MAPNIK_STYLE_BBBIKE;
+    my $name = (
+		$is_optimize_for_mapnik_bbbike_style
+		? ''
+		: ($is_ubahn ? 'U ' : $is_sbahn ? 'S ' : '')
+	       ) . $r->[Strassen::NAME];
     my $attribs = { railway => 'station', # no distinction between halt and station
-		    name => ($is_ubahn ? 'U ' : $is_sbahn ? 'S ' : '') . $r->[Strassen::NAME],
 		    ($is_abandoned ? ("abandoned" => "yes") : ()),
+		    name => $name,
 		  };
     if      ($is_ubahn) {
-	if ($optimize_for_mapnik_style == OPTIMIZE_FOR_MAPNIK_STYLE_BBBIKE) {
+	if ($is_optimize_for_mapnik_bbbike_style) {
 	    $attribs->{railway} = 'station_subway';
 	} else {
 	    $attribs->{station} = 'subway';
 	}
     } elsif ($is_sbahn) {
-	if ($optimize_for_mapnik_style == OPTIMIZE_FOR_MAPNIK_STYLE_BBBIKE) {
+	if ($is_optimize_for_mapnik_bbbike_style) {
 	    $attribs->{railway} = 'station_light_rail';
 	} else {
 	    $attribs->{station} = 'light_rail';
