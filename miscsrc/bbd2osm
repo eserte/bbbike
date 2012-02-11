@@ -29,7 +29,7 @@ use VectorUtil qw(get_polygon_center);
 
 sub usage () {
     die <<EOF;
-usage: $0 [-ignore-missing] [-use-orig] [-quiet] [-debug] [datadir] [-optimize-for garmin|mapnik]
+usage: $0 [-ignore-missing] [-use-orig] [-quiet] [-debug] [datadir] [-optimize-for garmin|mapnik|mapnik-bbbike]
        $0 [-type area|waterway|highway|railway|ferry] -single bbdfile
 
 Either convert a whole bbbike data directory, or convert a single bbd
@@ -59,20 +59,28 @@ GetOptions("single=s" => \$single_file,
 	  )
     or usage;
 
-use constant OPTIMIZE_FOR_NONE   => 0;
-use constant OPTIMIZE_FOR_GARMIN => 1;
-use constant OPTIMIZE_FOR_MAPNIK => 2;
+use constant OPTIMIZE_FOR_NONE           => 0;
+use constant OPTIMIZE_FOR_GARMIN         => 1;
+use constant OPTIMIZE_FOR_MAPNIK         => 2;
+
+use constant OPTIMIZE_FOR_MAPNIK_STYLE_DEFAULT => 0;
+use constant OPTIMIZE_FOR_MAPNIK_STYLE_BBBIKE  => 1;
 my $optimize_for = OPTIMIZE_FOR_NONE;
+my $optimize_for_mapnik_style;
 if ($optimize_for_string) {
-    if ($optimize_for_string !~ m{^(garmin|mapnik)$}) {
-	warn "-optimize-for takes only value 'garmin' or 'mapink'\n";
+    if ($optimize_for_string !~ m{^(garmin|mapnik|mapnik-bbbike)$}) {
+	warn "-optimize-for takes only value 'garmin' or 'mapnik' or 'mapnik-bbbike'\n";
 	usage;
     }
     if ($optimize_for_string eq 'garmin') {
 	$shorten_for_garmin = 1;
 	$optimize_for = OPTIMIZE_FOR_GARMIN;
     } elsif ($optimize_for_string eq 'mapnik') {
-	$optimize_for = OPTIMIZE_FOR_MAPNIK;
+	$optimize_for              = OPTIMIZE_FOR_MAPNIK;
+	$optimize_for_mapnik_style = OPTIMIZE_FOR_MAPNIK_STYLE_DEFAULT;
+    } elsif ($optimize_for_string eq 'mapnik-bbbike') {
+	$optimize_for              = OPTIMIZE_FOR_MAPNIK;
+	$optimize_for_mapnik_style = OPTIMIZE_FOR_MAPNIK_STYLE_BBBIKE;
     } else {
 	die "Should never happen (optimize_for=$optimize_for_string)";
     }
@@ -624,7 +632,7 @@ sub handle_waterway_like {
     my @node_ids = get_node_ids($r, undef, is_area => $is_area);
 
     my $name = $r->[Strassen::NAME];
-    _xmlify($name);
+    _xmlify(format_waterway_label($name));
 
     print $wayfh qq{<way id="$next_way_id" visible="true">\n};
     for my $node_id (@node_ids) {
@@ -736,9 +744,16 @@ sub handle_trafficsignals_like {
 	$attribs = { highway => 'traffic_signals' };
     } elsif ($cat =~ m{^F}) {
 	if ($optimize_for == OPTIMIZE_FOR_MAPNIK) {
-	    # Treat LSA-X and LSA-F the same, otherwise LSA-F will not
-	    # be rendered at all in mapnik
-	    $attribs = { highway => 'traffic_signals' };
+	    if ($optimize_for_mapnik_style == OPTIMIZE_FOR_MAPNIK_STYLE_BBBIKE) {
+		# Use a non-standard tag value here
+		$attribs = { highway => 'traffic_signals_pedestrian' };
+	    } else {
+		# Treat LSA-X and LSA-F the same, otherwise LSA-F will not
+		# be rendered at all in mapnik using default or german style.
+		# This is because there's no "crossing" column in the
+		# planet database.
+		$attribs = { highway => 'traffic_signals' };
+	    }
 	} else {
 	    $attribs = { highway => 'crossing', crossing => 'traffic_signals' };
 	}
@@ -1083,6 +1098,16 @@ sub format_place_label {
     $name . (defined $add ? ' ' . $add : '');
 }
 
+sub format_waterway_label {
+    my $s = shift;
+    if ($optimize_for == OPTIMIZE_FOR_MAPNIK) {
+	if (defined $s) {
+	    $s =~ s{\|.*}{};
+	}
+    }
+    $s;
+}
+
 __END__
 
 =head1 NAME
@@ -1144,6 +1169,18 @@ later usage with mapnik (and the default osm styles) are done:
 =item * Street name parts in "[...]" are stripped
 
 =item * Special pedestrian traffic lights handling needed
+
+=item * Remove "|..." part in waterways
+
+=back
+
+The switch C<< -optimize-for=mapnik-bbbike >> turns on optimization if
+using mapnik with the special bbbike style:
+
+=over
+
+=item * For pedestrian-only traffic lights use the non-standard tag
+value "traffic_signals_pedestrian"
 
 =back
 
