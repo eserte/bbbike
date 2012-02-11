@@ -63,10 +63,11 @@ use constant OPTIMIZE_FOR_NONE           => 0;
 use constant OPTIMIZE_FOR_GARMIN         => 1;
 use constant OPTIMIZE_FOR_MAPNIK         => 2;
 
-use constant OPTIMIZE_FOR_MAPNIK_STYLE_DEFAULT => 0;
-use constant OPTIMIZE_FOR_MAPNIK_STYLE_BBBIKE  => 1;
-my $optimize_for = OPTIMIZE_FOR_NONE;
-my $optimize_for_mapnik_style;
+use constant OPTIMIZE_FOR_MAPNIK_STYLE_NONE    => 0;
+use constant OPTIMIZE_FOR_MAPNIK_STYLE_DEFAULT => 1;
+use constant OPTIMIZE_FOR_MAPNIK_STYLE_BBBIKE  => 2;
+my $optimize_for              = OPTIMIZE_FOR_NONE;
+my $optimize_for_mapnik_style = OPTIMIZE_FOR_MAPNIK_STYLE_NONE;
 if ($optimize_for_string) {
     if ($optimize_for_string !~ m{^(garmin|mapnik|mapnik-bbbike)$}) {
 	warn "-optimize-for takes only value 'garmin' or 'mapnik' or 'mapnik-bbbike'\n";
@@ -788,13 +789,25 @@ sub handle_railway_stations_like {
 		    ($is_abandoned ? ("abandoned" => "yes") : ()),
 		  };
     if      ($is_ubahn) {
-	$attribs->{station} = 'subway';
+	if ($optimize_for_mapnik_style == OPTIMIZE_FOR_MAPNIK_STYLE_BBBIKE) {
+	    $attribs->{railway} = 'station_subway';
+	} else {
+	    $attribs->{station} = 'subway';
+	}
     } elsif ($is_sbahn) {
-	$attribs->{station} = 'light_rail';
+	if ($optimize_for_mapnik_style == OPTIMIZE_FOR_MAPNIK_STYLE_BBBIKE) {
+	    $attribs->{railway} = 'station_light_rail';
+	} else {
+	    $attribs->{station} = 'light_rail';
+	}
     } elsif ($cat =~ m{^R}) {
 	# Regional/Fernbahnhof
 	if ($cat =~ m{^RP}) {
-	    $attribs->{'bbbike:station_type'} = 'RP';
+	    if ($optimize_for_mapnik_style == OPTIMIZE_FOR_MAPNIK_STYLE_BBBIKE) {
+		$attribs->{railway} = 'station_narrow_gauge';
+	    } else {
+		$attribs->{'bbbike:station_type'} = 'RP';
+	    }
 	}
     } else {
 	warn "Unhandled railway station-like category $cat\n";
@@ -1181,6 +1194,9 @@ using mapnik with the special bbbike style:
 
 =item * For pedestrian-only traffic lights use the non-standard tag
 value "traffic_signals_pedestrian"
+
+=item * Railway stations may have the non-standard tag values
+"station_subway", "station_light_rail", or "station_narrow_gauge"
 
 =back
 
