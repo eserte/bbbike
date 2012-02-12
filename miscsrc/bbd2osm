@@ -167,6 +167,12 @@ my %cat_to_area_leisure = ('P'          => 'park',
 			   ($optimize_for == OPTIMIZE_FOR_MAPNIK ? ('Sport' => 'sports_centre') : ()),
 			  );
 
+my %bbbikequality_to_smoothness = (0 => 'excellent',    # Q0
+				   1 => 'good',         # Q1
+				   2 => 'intermediate', # Q2
+				   3 => 'bad',          # Q3
+				  );
+
 my($min_lat, $max_lat, $min_lon, $max_lon);
 
 if ($single_file) {
@@ -1088,6 +1094,12 @@ sub dump_quality {
 	    print $wayfh qq{  <nd ref="$node_id"/>\n};
 	}
 	print $wayfh qq{  <tag k="bbbike:quality" v="Q$quality" />\n};
+	my $smoothness = $bbbikequality_to_smoothness{$quality};
+	if ($smoothness) {
+	    print $wayfh qq{  <tag k="smoothness" v="$smoothness" />\n};
+	} else {
+	    warn "Cannot map quality '$quality' to smoothness level";
+	}
 	print $wayfh qq{</way>\n};
 	$next_way_id++;
     }
