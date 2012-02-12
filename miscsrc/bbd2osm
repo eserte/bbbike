@@ -136,6 +136,7 @@ my %oneway;
 my %no_access;
 my %speed0;
 my @remember_quality;
+my @remember_handicap;
 my %remember_steps; # node_id -> { steps => ... }
 
 my %cat_to_highway = ('B'  => 'primary', # See also $do_highway_primary_hack
@@ -224,6 +225,7 @@ if ($single_file) {
     do_file("$datadir/landstrassen2", \&handle_anywhere_highway_like);
 
     dump_quality();
+    dump_handicap();
 	
     if (!$fragezeichen_file) {
 	$fragezeichen_file = -r "$datadir/../tmp/fragezeichen-nextcheck.bbd" ? "$datadir/../tmp/fragezeichen-nextcheck.bbd" : "$datadir/fragezeichen";
@@ -364,16 +366,22 @@ sub handle_handicap_like {
 	}
     }
 
-    my($quality_hin) = $cat_hin =~ m{^Q(\d+)}; # XXX maybe support for +/-?
-    my $quality = $quality_hin;
-    if (defined $cat_rueck) {
-	my($quality_rueck) = $cat_rueck =~ m{^Q(\d+)}; # XXX maybe support for +/-?
-	if (defined $quality_rueck && (!defined $quality_hin || $quality_rueck > $quality_hin)) {
-	    $quality = $quality_rueck;
+    for my $def (
+		 ['Q', \@remember_quality],
+		 ['q', \@remember_handicap],
+		) {
+	my($catprefix,$varref) = @$def;
+	my($quality_hin) = $cat_hin =~ m{^\Q$catprefix\E(\d+)}; # note: no support for +/-
+	my $quality = $quality_hin;
+	if (defined $cat_rueck) {
+	    my($quality_rueck) = $cat_rueck =~ m{^\Q$catprefix\E(\d+)}; # note: support for +/-?
+	    if (defined $quality_rueck && (!defined $quality_hin || $quality_rueck > $quality_hin)) {
+		$quality = $quality_rueck;
+	    }
 	}
-    }
-    if (defined $quality) {
-	push @remember_quality, [\@node_ids, $quality];
+	if (defined $quality) {
+	    push @$varref, [\@node_ids, $quality];
+	}
     }
 }
 
@@ -1100,6 +1108,19 @@ sub dump_quality {
 	} else {
 	    warn "Cannot map quality '$quality' to smoothness level";
 	}
+	print $wayfh qq{</way>\n};
+	$next_way_id++;
+    }
+}
+
+sub dump_handicap {
+    for my $def (@remember_handicap) {
+	my($node_ids, $handicap) = @$def;
+	print $wayfh qq{<way id="$next_way_id" visible="true">\n};
+	for my $node_id (@$node_ids) {
+	    print $wayfh qq{  <nd ref="$node_id"/>\n};
+	}
+	print $wayfh qq{  <tag k="bbbike:handicap" v="q$handicap" />\n};
 	print $wayfh qq{</way>\n};
 	$next_way_id++;
     }
