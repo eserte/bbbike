@@ -775,7 +775,7 @@ sub handle_trafficsignals_like {
 	}
     } elsif ($cat =~ m{^B}) {
 	$attribs = { railway => 'level_crossing',
-		     ($cat =~ m{0$} ? (abandoned => 'yes') : ()), # not accurate, may be also seldomly used
+		     ($cat =~ m{0$} ? (disused => 'yes') : ()), # not accurate, may be also seldomly used
 		   };
     } else {
 	# ignore
