@@ -98,12 +98,25 @@
   var startLatLng;
   var map;
 
+  var base_map_url_mapping = { 'stable':'http://tile.bbbike.org/osm/mapnik-german' // will be mapnik-srt some day
+                              ,'devel1':'http://z.tile.bbbike.org/osm/mapnik-german'
+                              ,'devel2':'http://z.tile.bbbike.org/osm/mapnik-german-srt'
+                             };
+  var smoothness_map_url_mapping = { 'stable':'http://tile.bbbike.org/osm/bbbike-smoothness'
+                                    ,'devel1':'http://z.tile.bbbike.org/osm/bbbike-smoothness'
+                                    ,'devel2':'http://z.tile.bbbike.org/osm/bbbike-smoothness'
+                                   };
+
+  var mapset = q.get('mapset') || 'stable';
+  var base_map_url = base_map_url_mapping[mapset] || base_map_url_mapping['stable'];
+  var smoothness_map_url = smoothness_map_url_mapping[mapset] || smoothness_map_url_mapping['stable'];
+
   function doLeaflet() {
-    var bbbikeOrgMapnikGermanUrl = 'http://tile.bbbike.org/osm/mapnik-german/{z}/{x}/{y}.png',
+    var bbbikeOrgMapnikGermanUrl = base_map_url + '/{z}/{x}/{y}.png',
         bbbikeAttribution = M("Kartendaten") + ' \u00a9 2012 <a href="http://bbbike.de">Slaven Rezić</a>',
         bbbikeTileLayer = new L.TileLayer(bbbikeOrgMapnikGermanUrl, {maxZoom: 18, attribution: bbbikeAttribution});
 
-    var bbbikeOrgSmoothnessUrl = 'http://tile.bbbike.org/osm/bbbike-smoothness/{z}/{x}/{y}.png',
+    var bbbikeOrgSmoothnessUrl = smoothness_map_url + '/{z}/{x}/{y}.png',
         bbbikeSmoothnessTileLayer = new L.TileLayer(bbbikeOrgSmoothnessUrl, {maxZoom: 18, attribution: bbbikeAttribution});
 
     var osmMapnikUrl = 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
