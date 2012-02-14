@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Map [
+<!ENTITY % entities SYSTEM "inc/entities.xml.inc">
+%entities;
+<!ENTITY dasharray "1,3">
+]>
+<!-- This stylesheet uses features only available in mapnik builds with
+     libxml2 as the XML parser. Furthermore, there are other features
+     and behaviour that necessitate an upgrade to mapnik 0.7.1 -->
+<Map bgcolor="transparent" srs="&srs900913;" minimum_version="0.7.1">
+  &fontset-settings;
+
+<Style name="handicap">
+  
+<!--
+    <Rule>
+      <Filter>[bbbike:handicap] = 'q0'</Filter>
+      &maxscale_zoom15;
+      &minscale_zoom19;
+      <LineSymbolizer>
+        <CssParameter name="stroke">&color_Q0;</CssParameter>
+        <CssParameter name="stroke-width">6.5</CssParameter>
+        <CssParameter name="stroke-dasharray">&dasharray;</CssParameter>
+      </LineSymbolizer>
+    </Rule>
+-->
+    <Rule>
+      <Filter>[bbbike:handicap] = 'q1'</Filter>
+      &maxscale_zoom15;
+      &minscale_zoom19;
+      <LineSymbolizer>
+        <CssParameter name="stroke">&color_Q1;</CssParameter>
+        <CssParameter name="stroke-width">6.5</CssParameter>
+        <CssParameter name="stroke-dasharray">&dasharray;</CssParameter>
+      </LineSymbolizer>
+    </Rule>
+    <Rule>
+      <Filter>[bbbike:handicap] = 'q2'</Filter>
+      &maxscale_zoom15;
+      &minscale_zoom19;
+      <LineSymbolizer>
+        <CssParameter name="stroke">&color_Q2;</CssParameter>
+        <CssParameter name="stroke-width">6.5</CssParameter>
+        <CssParameter name="stroke-dasharray">&dasharray;</CssParameter>
+      </LineSymbolizer>
+    </Rule>
+    <Rule>
+      <Filter>[bbbike:handicap] = 'q3'</Filter>
+      &maxscale_zoom15;
+      &minscale_zoom19;
+      <LineSymbolizer>
+        <CssParameter name="stroke">&color_Q3;</CssParameter>
+        <CssParameter name="stroke-width">6.5</CssParameter>
+        <CssParameter name="stroke-dasharray">&dasharray;</CssParameter>
+      </LineSymbolizer>
+    </Rule>
+   
+<!--   
+    <Rule>
+      <Filter>[bbbike:handicap] = 'q0'</Filter>
+      &maxscale_zoom12;
+      &minscale_zoom14;
+      <LineSymbolizer>
+        <CssParameter name="stroke">&color_Q0;</CssParameter>
+        <CssParameter name="stroke-width">3.0</CssParameter>
+        <CssParameter name="stroke-dasharray">&dasharray;</CssParameter>
+      </LineSymbolizer>
+    </Rule>
+-->
+    <Rule>
+      <Filter>[bbbike:handicap] = 'q1'</Filter>
+      &maxscale_zoom12;
+      &minscale_zoom14;
+      <LineSymbolizer>
+        <CssParameter name="stroke">&color_Q1;</CssParameter>
+        <CssParameter name="stroke-width">3.0</CssParameter>
+        <CssParameter name="stroke-dasharray">&dasharray;</CssParameter>
+      </LineSymbolizer>
+    </Rule>
+    <Rule>
+      <Filter>[bbbike:handicap] = 'q2'</Filter>
+      &maxscale_zoom12;
+      &minscale_zoom14;
+      <LineSymbolizer>
+        <CssParameter name="stroke">&color_Q2;</CssParameter>
+        <CssParameter name="stroke-width">3.0</CssParameter>
+        <CssParameter name="stroke-dasharray">&dasharray;</CssParameter>
+      </LineSymbolizer>
+    </Rule>
+    <Rule>
+      <Filter>[bbbike:handicap] = 'q3'</Filter>
+      &maxscale_zoom12;
+      &minscale_zoom14;
+      <LineSymbolizer>
+        <CssParameter name="stroke">&color_Q3;</CssParameter>
+        <CssParameter name="stroke-width">3.0</CssParameter>
+        <CssParameter name="stroke-dasharray">&dasharray;</CssParameter>
+      </LineSymbolizer>
+    </Rule>
+
+<!--    
+    <Rule>
+      <Filter>[bbbike:handicap] = 'q0'</Filter>
+      &maxscale_zoom1;
+      &minscale_zoom11;
+      <LineSymbolizer>
+        <CssParameter name="stroke">&color_Q0;</CssParameter>
+        <CssParameter name="stroke-width">1.5</CssParameter>
+        <CssParameter name="stroke-dasharray">&dasharray;</CssParameter>
+      </LineSymbolizer>
+    </Rule>
+-->
+    <Rule>
+      <Filter>[bbbike:handicap] = 'q1'</Filter>
+      &maxscale_zoom1;
+      &minscale_zoom11;
+      <LineSymbolizer>
+        <CssParameter name="stroke">&color_Q1;</CssParameter>
+        <CssParameter name="stroke-width">1.5</CssParameter>
+        <CssParameter name="stroke-dasharray">&dasharray;</CssParameter>
+      </LineSymbolizer>
+    </Rule>
+    <Rule>
+      <Filter>[bbbike:handicap] = 'q2'</Filter>
+      &maxscale_zoom1;
+      &minscale_zoom11;
+      <LineSymbolizer>
+        <CssParameter name="stroke">&color_Q2;</CssParameter>
+        <CssParameter name="stroke-width">1.5</CssParameter>
+        <CssParameter name="stroke-dasharray">&dasharray;</CssParameter>
+      </LineSymbolizer>
+    </Rule>
+    <Rule>
+      <Filter>[bbbike:handicap] = 'q3'</Filter>
+      &maxscale_zoom1;
+      &minscale_zoom11;
+      <LineSymbolizer>
+        <CssParameter name="stroke">&color_Q3;</CssParameter>
+        <CssParameter name="stroke-width">1.5</CssParameter>
+        <CssParameter name="stroke-dasharray">&dasharray;</CssParameter>
+      </LineSymbolizer>
+    </Rule> 
+    
+</Style>
+
+<!-- -->
+<Layer name="handicap" status="on" srs="&osm2pgsql_projection;">
+    <StyleName>handicap</StyleName>
+    <Datasource>
+      <Parameter name="table">
+      (select way,"bbbike:handicap"
+       from &prefix;_line
+       where "bbbike:handicap" is not null
+       order by z_order) as roads
+      </Parameter>
+      &datasource-settings;
+    </Datasource>
+</Layer>
+
+</Map>
