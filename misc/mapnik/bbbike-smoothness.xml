@@ -2,6 +2,7 @@
 <!DOCTYPE Map [
 <!ENTITY % entities SYSTEM "inc/entities.xml.inc">
 %entities;
+<!ENTITY dasharray "1,3">
 ]>
 <!-- This stylesheet uses features only available in mapnik builds with
      libxml2 as the XML parser. Furthermore, there are other features
@@ -9,163 +10,147 @@
 <Map bgcolor="transparent" srs="&srs900913;" minimum_version="0.7.1">
   &fontset-settings;
 
-<Style name="minor-roads-fill">
+<Style name="smoothness">
   
+<!--
     <Rule>
-      <Filter>[highway] = 'residential' and [bbbike:quality] = 'Q0'</Filter>
+      <Filter>[bbbike:quality] = 'Q0'</Filter>
       &maxscale_zoom15;
       &minscale_zoom19;
       <LineSymbolizer>
-        <CssParameter name="stroke">#698B69</CssParameter>
+        <CssParameter name="stroke">&color_Q0;</CssParameter>
         <CssParameter name="stroke-width">6.5</CssParameter>
-        <CssParameter name="stroke-linejoin">round</CssParameter>
-        <CssParameter name="stroke-linecap">round</CssParameter>
+        <CssParameter name="stroke-dasharray">&dasharray;</CssParameter>
+      </LineSymbolizer>
+    </Rule>
+-->
+    <Rule>
+      <Filter>[bbbike:quality] = 'Q1'</Filter>
+      &maxscale_zoom15;
+      &minscale_zoom19;
+      <LineSymbolizer>
+        <CssParameter name="stroke">&color_Q1;</CssParameter>
+        <CssParameter name="stroke-width">6.5</CssParameter>
+        <CssParameter name="stroke-dasharray">&dasharray;</CssParameter>
       </LineSymbolizer>
     </Rule>
     <Rule>
-      <Filter>[highway] = 'residential' and [bbbike:quality] = 'Q1'</Filter>
+      <Filter>[bbbike:quality] = 'Q2'</Filter>
       &maxscale_zoom15;
       &minscale_zoom19;
       <LineSymbolizer>
-        <CssParameter name="stroke">#9ACD32</CssParameter>
+        <CssParameter name="stroke">&color_Q2;</CssParameter>
         <CssParameter name="stroke-width">6.5</CssParameter>
-        <CssParameter name="stroke-linejoin">round</CssParameter>
-        <CssParameter name="stroke-linecap">round</CssParameter>
+        <CssParameter name="stroke-dasharray">&dasharray;</CssParameter>
       </LineSymbolizer>
     </Rule>
     <Rule>
-      <Filter>[highway] = 'residential' and [bbbike:quality] = 'Q2'</Filter>
+      <Filter>[bbbike:quality] = 'Q3'</Filter>
       &maxscale_zoom15;
       &minscale_zoom19;
       <LineSymbolizer>
-        <CssParameter name="stroke">#FFD700</CssParameter>
+        <CssParameter name="stroke">&color_Q3;</CssParameter>
         <CssParameter name="stroke-width">6.5</CssParameter>
-        <CssParameter name="stroke-linejoin">round</CssParameter>
-        <CssParameter name="stroke-linecap">round</CssParameter>
-      </LineSymbolizer>
-    </Rule>
-    <Rule>
-      <Filter>[highway] = 'residential' and [bbbike:quality] = 'Q3'</Filter>
-      &maxscale_zoom15;
-      &minscale_zoom19;
-      <LineSymbolizer>
-        <CssParameter name="stroke">#f00</CssParameter>
-        <CssParameter name="stroke-width">6.5</CssParameter>
-        <CssParameter name="stroke-linejoin">round</CssParameter>
-        <CssParameter name="stroke-linecap">round</CssParameter>
+        <CssParameter name="stroke-dasharray">&dasharray;</CssParameter>
       </LineSymbolizer>
     </Rule>
    
-   
+<!--   
     <Rule>
-      <Filter>[highway] = 'residential' and [bbbike:quality] = 'Q0'</Filter>
+      <Filter>[bbbike:quality] = 'Q0'</Filter>
       &maxscale_zoom12;
       &minscale_zoom14;
       <LineSymbolizer>
-        <CssParameter name="stroke">#698B69</CssParameter>
+        <CssParameter name="stroke">&color_Q0;</CssParameter>
         <CssParameter name="stroke-width">3.0</CssParameter>
-        <CssParameter name="stroke-linejoin">round</CssParameter>
-        <CssParameter name="stroke-linecap">round</CssParameter>
+        <CssParameter name="stroke-dasharray">&dasharray;</CssParameter>
       </LineSymbolizer>
     </Rule>
+-->
     <Rule>
-      <Filter>[highway] = 'residential' and [bbbike:quality] = 'Q1'</Filter>
+      <Filter>[bbbike:quality] = 'Q1'</Filter>
       &maxscale_zoom12;
       &minscale_zoom14;
       <LineSymbolizer>
-        <CssParameter name="stroke">#9ACD32</CssParameter>
+        <CssParameter name="stroke">&color_Q1;</CssParameter>
         <CssParameter name="stroke-width">3.0</CssParameter>
-        <CssParameter name="stroke-linejoin">round</CssParameter>
-        <CssParameter name="stroke-linecap">round</CssParameter>
+        <CssParameter name="stroke-dasharray">&dasharray;</CssParameter>
       </LineSymbolizer>
     </Rule>
     <Rule>
-      <Filter>[highway] = 'residential' and [bbbike:quality] = 'Q2'</Filter>
+      <Filter>[bbbike:quality] = 'Q2'</Filter>
       &maxscale_zoom12;
       &minscale_zoom14;
       <LineSymbolizer>
-        <CssParameter name="stroke">#FFD700</CssParameter>
+        <CssParameter name="stroke">&color_Q2;</CssParameter>
         <CssParameter name="stroke-width">3.0</CssParameter>
-        <CssParameter name="stroke-linejoin">round</CssParameter>
-        <CssParameter name="stroke-linecap">round</CssParameter>
+        <CssParameter name="stroke-dasharray">&dasharray;</CssParameter>
       </LineSymbolizer>
     </Rule>
     <Rule>
-      <Filter>[highway] = 'residential' and [bbbike:quality] = 'Q3'</Filter>
+      <Filter>[bbbike:quality] = 'Q3'</Filter>
       &maxscale_zoom12;
       &minscale_zoom14;
       <LineSymbolizer>
-        <CssParameter name="stroke">#f00</CssParameter>
+        <CssParameter name="stroke">&color_Q3;</CssParameter>
         <CssParameter name="stroke-width">3.0</CssParameter>
-        <CssParameter name="stroke-linejoin">round</CssParameter>
-        <CssParameter name="stroke-linecap">round</CssParameter>
+        <CssParameter name="stroke-dasharray">&dasharray;</CssParameter>
       </LineSymbolizer>
     </Rule>
-    
+
+<!--    
     <Rule>
-      <Filter>[highway] = 'residential' and [bbbike:quality] = 'Q0'</Filter>
+      <Filter>[bbbike:quality] = 'Q0'</Filter>
       &maxscale_zoom1;
       &minscale_zoom11;
       <LineSymbolizer>
-        <CssParameter name="stroke">#698B69</CssParameter>
+        <CssParameter name="stroke">&color_Q0;</CssParameter>
         <CssParameter name="stroke-width">1.5</CssParameter>
-        <CssParameter name="stroke-linejoin">round</CssParameter>
-        <CssParameter name="stroke-linecap">round</CssParameter>
+        <CssParameter name="stroke-dasharray">&dasharray;</CssParameter>
       </LineSymbolizer>
     </Rule>
+-->
     <Rule>
-      <Filter>[highway] = 'residential' and [bbbike:quality] = 'Q1'</Filter>
+      <Filter>[bbbike:quality] = 'Q1'</Filter>
       &maxscale_zoom1;
       &minscale_zoom11;
       <LineSymbolizer>
-        <CssParameter name="stroke">#9ACD32</CssParameter>
+        <CssParameter name="stroke">&color_Q1;</CssParameter>
         <CssParameter name="stroke-width">1.5</CssParameter>
-        <CssParameter name="stroke-linejoin">round</CssParameter>
-        <CssParameter name="stroke-linecap">round</CssParameter>
+        <CssParameter name="stroke-dasharray">&dasharray;</CssParameter>
       </LineSymbolizer>
     </Rule>
     <Rule>
-      <Filter>[highway] = 'residential' and [bbbike:quality] = 'Q2'</Filter>
+      <Filter>[bbbike:quality] = 'Q2'</Filter>
       &maxscale_zoom1;
       &minscale_zoom11;
       <LineSymbolizer>
-        <CssParameter name="stroke">#FFD700</CssParameter>
+        <CssParameter name="stroke">&color_Q2;</CssParameter>
         <CssParameter name="stroke-width">1.5</CssParameter>
-        <CssParameter name="stroke-linejoin">round</CssParameter>
-        <CssParameter name="stroke-linecap">round</CssParameter>
+        <CssParameter name="stroke-dasharray">&dasharray;</CssParameter>
       </LineSymbolizer>
     </Rule>
     <Rule>
-      <Filter>[highway] = 'residential' and [bbbike:quality] = 'Q3'</Filter>
+      <Filter>[bbbike:quality] = 'Q3'</Filter>
       &maxscale_zoom1;
       &minscale_zoom11;
       <LineSymbolizer>
-        <CssParameter name="stroke">#f00</CssParameter>
+        <CssParameter name="stroke">&color_Q3;</CssParameter>
         <CssParameter name="stroke-width">1.5</CssParameter>
-        <CssParameter name="stroke-linejoin">round</CssParameter>
-        <CssParameter name="stroke-linecap">round</CssParameter>
+        <CssParameter name="stroke-dasharray">&dasharray;</CssParameter>
       </LineSymbolizer>
     </Rule> 
     
 </Style>
 
 <!-- -->
-<Layer name="minor-roads-fill" status="on" srs="&osm2pgsql_projection;">
-  <!-- <StyleName>minor-roads-fill-links</StyleName> -->
-    <StyleName>minor-roads-fill</StyleName>
+<Layer name="smoothness" status="on" srs="&osm2pgsql_projection;">
+    <StyleName>smoothness</StyleName>
     <Datasource>
       <Parameter name="table">
-      (select way,highway,horse,bicycle,"bbbike:quality",foot,construction,aeroway,
-       case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel,
-       case when bridge in ('yes','true','1','viaduct') then 'yes'::text else bridge end as bridge,
-       case when railway in ('spur','siding')
-              or (railway='rail' and service in ('spur','siding','yard'))
-            then 'spur-siding-yard'::text else railway end as railway,
-       case when service in ('parking_aisle','drive-through','driveway') then 'INT-minor'::text else service end as service
+      (select way,"bbbike:quality"
        from &prefix;_line
-       where highway is not null
-          or aeroway in ('runway','taxiway')
-          or railway in ('light_rail','narrow_gauge','funicular','rail','subway','tram','spur','siding','platform','disused','abandoned','construction','miniature')
+       where "bbbike:quality" is not null
        order by z_order) as roads
       </Parameter>
       &datasource-settings;
