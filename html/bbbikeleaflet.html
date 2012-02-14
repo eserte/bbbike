@@ -19,6 +19,7 @@
  <link rel="stylesheet" href="http://bbbike.de/leaflet/dist/leaflet.css" />
  <!--[if lte IE 8]><link rel="stylesheet" href="http://bbbike.de/leaflet/dist/leaflet.ie.css" /><![endif]-->
  <script src="http://bbbike.de/leaflet/dist/leaflet.js"></script>
+ <script src="HTTPQuery.js"></script><!-- FIX URL LAYOUT -->
  <script>
   var initialRouteGeojson = null;
   // magic comment for bbbikeleaflet.cgi following, do not change
@@ -34,13 +35,20 @@
   var useOldURLLayout = thisURL.match(/(cgi\/bbbikeleaflet|bbbike\/html\/bbbikeleaflet)/);
   var bbbikeRoot, cgiURL, bbbikeImagesRoot;
   if (useOldURLLayout) {
-    bbbikeRoot = thisURL.replace(/\/(cgi|html)\/bbbikeleaflet\.(html$|cgi.*)/, "");
+    bbbikeRoot = thisURL.replace(/\/(cgi|html)\/bbbikeleaflet\..*/, "");
     bbbikeImagesRoot = bbbikeRoot + "/images";
     cgiURL     = bbbikeRoot + "/cgi/bbbike.cgi";
   } else {
-    bbbikeRoot = thisURL.replace(/\/(cgi-bin|BBBike\/html)\/bbbikeleaflet\.(html$|cgi.*)/, "");
+    bbbikeRoot = thisURL.replace(/\/(cgi-bin|BBBike\/html)\/bbbikeleaflet\..*/, "");
     bbbikeImagesRoot = bbbikeRoot + "/BBBike/images";
     cgiURL     = bbbikeRoot + "/cgi-bin/bbbike.cgi";
+  }
+
+  var q = new HTTP.Query;
+  if (q.get("lang") == "de") {
+    lang = "de";
+  } else if (q.get("lang") == "en") {
+    lang = "en";
   }
 
   // localization
@@ -143,11 +151,27 @@
       }
     });
 
+    var zoom = q.get("zoom");
+    if (!zoom) { zoom = 13 }
     if (initialRouteGeojson) {
       showRoute(initialRouteGeojson);
-      map.setView(L.GeoJSON.coordsToLatLng(initialRouteGeojson.geometry.coordinates[0]), 13);
+      map.setView(L.GeoJSON.coordsToLatLng(initialRouteGeojson.geometry.coordinates[0]), zoom);
     } else {
-      map.setView(new L.LatLng(52.516224, 13.377463), 13); // Brandenburger Tor
+      var lat = q.get("lat");
+      var lon = q.get("lon");
+      if (lat && lon) {
+        map.setView(new L.LatLng(lat, lon), zoom);
+      } else {
+        lat = q.get("mlat");
+        lon = q.get("mlon");
+        if (lat && lon) {
+          var center = new L.LatLng(lat, lon);
+          map.setView(center, zoom);
+          setStartMarker(center);
+        } else {
+          map.setView(new L.LatLng(52.516224, 13.377463), zoom); // Brandenburger Tor
+        }
+      }
     }
   }
 
