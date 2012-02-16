@@ -2,10 +2,9 @@
 # -*- perl -*-
 
 #
-# $Id: wapbbbike.cgi,v 2.27 2008/02/20 23:04:54 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2000,2001,2003,2004,2009 Slaven Rezic. All rights reserved.
+# Copyright (C) 2000,2001,2003,2004,2009,2012 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -43,6 +42,8 @@ use strict;
 
 use vars qw($use_apache_session);
 $use_apache_session = 1 if !defined $use_apache_session;
+use vars qw($apache_session_module);
+$apache_session_module = 'Apache::Session::Counted' if $use_apache_session && !defined $apache_session_module;
 
 sub wml {
     my $s = shift;
@@ -702,6 +703,10 @@ sub tie_session {
     my $id = shift;
     return unless $use_apache_session;
 
+    if ($apache_session_module eq 'Apache::Session::Counted') {
+	return tie_session_counted($id);
+    }
+
     if (!eval {require Apache::Session::DB_File}) {
 	$use_apache_session = undef;
 	#warn $@;
@@ -718,6 +723,16 @@ sub tie_session {
 	};
 
     return \%sess;
+}
+
+sub tie_session_counted {
+    my $id = shift;
+    require BBBikeApacheSessionCounted;
+    my $sess = BBBikeApacheSessionCounted::tie_session($id);
+    if (!$sess) {
+	$use_apache_session = undef; # possibly transient error
+    }
+    return $sess;
 }
 
 return 1 if ((caller() and (caller())[0] ne 'Apache::Registry'));
