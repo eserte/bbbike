@@ -14374,23 +14374,35 @@ sub show_info {
 	    $linkcount++;
 	}
 
-	if ($devel_host) { # XXX make public if working good!
+	if ($devel_host) { # XXX make public (at least the remote URL) if working good!
 	    my $need_indentation = 1;
+	    my $show_leaflet_url = sub {
+		my($baseurl, $linkcount) = @_;
+		$show_url->($linkcount, sub {
+				require CGI;
+				my $scale = 17 - log(($mapscale_scale)/3000)/log(2);
+				$scale = 18 if $scale > 18;
+				my $q2 = CGI->new({ mlat => $py,
+						    mlon => $px,
+						    # XXX scale not yet settable
+						    ($Msg::lang eq 'en' ? (lang => "en") : ()),
+						    zoom => $scale,
+						  });
+				my $url = $baseurl . "?" . $q2->query_string;
+				$url;
+			    }
+			   );
+	    };
+
 	    $info_text->insert("end", "BBBike Leaflet (local)",
 			       ["link$linkcount", ($need_indentation ? "iconindent" : ())]);
-	    $show_url->($linkcount, sub {
-			    require CGI;
-			    my $scale = 17 - log(($mapscale_scale)/3000)/log(2);
-			    $scale = 18 if $scale > 18;
-			    my $q2 = CGI->new({ mlat => $py,
-						mlon => $px,
-						# XXX scale not yet settable
-						($Msg::lang eq 'en' ? (lang => "en") : ()),
-						zoom => $scale,
-					      });
-			    my $url = "http://localhost/bbbike/html/bbbikeleaflet.html?" . $q2->query_string;
-			    $url;
-			});
+	    $show_leaflet_url->("http://localhost/bbbike/html/bbbikeleaflet.html", $linkcount);
+	    $info_text->insert("end", "\n");
+	    $linkcount++;
+
+	    $info_text->insert("end", "BBBike Leaflet (remote)",
+			       ["link$linkcount", ($need_indentation ? "iconindent" : ())]);
+	    $show_leaflet_url->("http://bbbike.de/BBBike/html/bbbikeleaflet.html", $linkcount);
 	    $info_text->insert("end", "\n");
 	    $linkcount++;
 	}
