@@ -27,6 +27,8 @@ my $htmlfile = "$htmldir/bbbikeleaflet.html";
 my $q = CGI->new;
 print $q->header('text/html; charset=utf-8');
 
+my $leaflet_dist = $q->param('leafletdist') || '';
+
 open my $fh, $htmlfile
     or die "Can't open $htmlfile: $!";
 binmode $fh, ':utf8';
@@ -44,6 +46,10 @@ while(<$fh>) {
 	$line =~ s{(src=")}{$1$bbbike_htmlurl/};
 	print $line, "\n";
 	next;
+    }
+
+    if ($leaflet_dist eq 'biokovo') {
+	s{\Qhttp://bbbike.de/leaflet/dist\E}{http://192.168.1.5/~eserte/leaflet/dist};
     }
 
     print $_;
