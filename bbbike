@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (c) 1995-2010 Slaven Rezic. All rights reserved.
+# Copyright (c) 1995-2012 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
 # terms of the GNU General Public License, see the file COPYING.
 #
@@ -20140,7 +20140,7 @@ sub show_logo { # und About
 	     "$progname $VERSION\n" .
 	     ($git_info{patchnum} ? "(patchnum $git_info{patchnum})\n" : '') .
 	     M("Ein Informationssystem für Radfahrer in Berlin") .
-	     "\n\n© 1995-2010 Slaven Rezic",
+	     "\n\n© 1995-2012 Slaven Rezic",
 	     %common_args,
 	     -wraplength => 320,
 	     -font => $font{'bold'},
