@@ -39,11 +39,13 @@ Alt-Stralau: Bauarbeiten an der Br¸cke, enge Durchfahrt	q3::inwork 14652,10201 1
 #XXX del --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1107/nachricht4409.html ---#: next_check: 2011-12-31 --- #: XXX evtl. gehen die Bauarbeiten bis Ende 2012 (mit Unterbrechungen) weiter --- Behrenstr.: Bauarbeiten, Fahrbahn teilweise gesperrt	q4::inwork 9373,12197 9164,12172
 #XXX del --- #: last_checked: 2011-08-19 --- Oberwallstr.: Bauarbeiten, Einbahnstraﬂe	q4::inwork; 9925,11947 9913,12068
 # 
-#: last_checked: 2011-11-13
+#: last_checked: 2012-02-17
+#: next_check: 2012-04-17
 #: XXX nach den Bauarbeiten vielleicht besserer Asphalt? -> qualitaet_s-orig
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9890,12161 9875,12257 9869,12297
 # 
-#: last_checked: 2011-11-14
+#: last_checked: 2012-02-17
+#: next_check: 2012-04-17
 Jerusalemer Str.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 9878,11857 9892,11752
 # 
 #: last_checked: 2012-01-22
@@ -67,9 +69,11 @@ Rathausstr.: Baustelle vor dem Roten Rathaus, eng	q4::inwork 10601,12521 10704,1
 # 
 #XXX del --- #: last_checked: 2011-02-27 --- #: next_check: 2011-07-15 --- Am Carlsgarten: Bauarbeiten	q4::inwork 19460,7954 19372,8012 19334,8046
 # 
-#: next_check: 2012-02-01 vvv
+#: next_check: 2012-03-17 vvv
+#: last_checked: 2012-02-17 vvv
 Rathausstr. zwischen Breitestr. und Poststr.: Fahrbahn wegen Br¸ckenbauarbeiten gesperrt	q4::inwork 10281,12310 10362,12351
 Rathausstr. zwischen Breitestr. und Poststr.: Fahrbahn wegen Br¸ckenbauarbeiten gesperrt	q4::inwork 10422,12395 10476,12432
+#: last_checked: ^^^
 #: next_check: ^^^
 # 
 #: last_checked: 2012-01-17
@@ -107,9 +111,9 @@ Bl¸cherplatz: reger Fuﬂg‰ngerverkehr	q3 9579,10122 9599,10175
 Bl¸cherplatz: Fuﬂg‰ngerverkehr	q3 9599,10175 9631,10142
 #: note: in S¸drichtung Bushaltestelle benutzen:
 Hallesches Tor: reger Fuﬂg‰ngerverkehr	q3; 9599,10175 9593,10238
-Hallesches Tor: reger Fuﬂg‰ngerverkehr	q3 9593,10238 9590,10262
-Mehringplatz: Fuﬂg‰nger und Radfahrer teilen sich den Weg	q1 9590,10262 9544,10280 9518,10326 9527,10389 9580,10434 9649,10408 9676,10346 9668,10306 9644,10281 9590,10262
-Friedrichstr. (am Mehringplatz): Fuﬂg‰nger und Radfahrer teilen sich den Weg	q1 9580,10434 9566,10566
+Hallesches Tor: reger Fuﬂg‰ngerverkehr	q3 9593,10238 9592,10263
+Mehringplatz: Fuﬂg‰nger und Radfahrer teilen sich den Weg	q1 9592,10263 9547,10278 9517,10332 9527,10389 9587,10421 9646,10404 9675,10351 9668,10306 9646,10279 9606,10263 9592,10263
+Friedrichstr. (am Mehringplatz): Fuﬂg‰nger und Radfahrer teilen sich den Weg	q1 9587,10421 9566,10566
 Gorkistr.: reger Fuﬂg‰ngerverkehr (Fuﬂg‰ngerzone)	q3 2049,20292 2116,20314 2295,20358
 #: by: Thomas Heuving:
 Alt-Tegel: reger Fuﬂg‰ngerverkehr (Fuﬂg‰ngerzone)	q4 1907,20265 2029,20331
@@ -148,7 +152,7 @@ Bellevueallee: Parkweg	q1 7039,12314 7383,12095 7460,12054 7663,11946 7801,11875
 Ahornsteig: Parkweg	q1 7669,11586 7696,11621 7735,11656 7796,11681 7901,11684 8016,11770 8156,11863 8222,11881 8284,11905 8453,12099 8522,12187 8538,12245
 Tiergarten: Parkweg	q1 8223,11796 8156,11863 8091,11992 8089,12041 8107,12145
 Tiergarten: Parkweg	q1 8016,11770 8022,12016
-Tiergarten: Parkweg	q1 8034,12093 8057,12059 8048,12033 8022,12016 7999,12049 8006,12074 8034,12093 8048,12135 8055,12186
+Tiergarten: Parkweg	q1 8034,12093 8057,12065 8052,12033 8022,12016 7999,12040 8004,12074 8034,12093 8048,12135 8055,12186
 Tiergarten: Parkweg	q1 8214,12205 8215,12156 8222,11881 8223,11796 8225,11692
 Tiergarten: Parkweg	q1 8021,11636 8016,11770
 Tiergarten: Parkweg	q1 7663,11946 7570,11855 7223,11897 7182,11870 7173,11864 7073,11798 6778,11742 6540,11754
@@ -239,7 +243,7 @@ Gendarmenmarkt: Fuﬂg‰ngerzone, ggfs. schieben	q3 9526,11911 9668,11928
 Gendarmenmarkt: Fuﬂg‰ngerzone, ggfs. schieben	q3 9516,12010 9656,12021
 Am Volkspark: Parkweg	q1 5745,8194 5934,8220
 Karl-Marx-Allee - Marchlewskistr.: Gehweg	q2 12869,12425 12950,12340 12985,12303
-#: XXX_prog: zus‰tzlich noch Bordsteine an der ˆstlichen Seite
+#: XXX_prog: zus‰tzlich noch Bordsteine an der ˆstlichen Seite (BS)
 Lange Str. [vor Kaufhof]: Fuﬂg‰nger	q2 12409,11902 12522,11837
 Gotenstr./Cheruskerstr. - Kolonnenstr.: Fuﬂg‰nger	q2 7488,8768 7548,8879
 Nettelbeckplatz: Fuﬂg‰nger	q2 8024,15401 7989,15412 7891,15417
@@ -1111,6 +1115,8 @@ Elisabeth-Schwarzhaupt-Platz: einige Fuﬂg‰nger	q1 9274,13963 9167,14127
 #: XXX_prog BS (ˆstliches Ende nur, westliches Ende ist abgesenkt)
 (Bl¸cherplatz - Johanniterstr.): Fuﬂg‰nger, Bordstein	q2 9702,10129 9816,10119 9837,10117
 Idealpassage: Fuﬂg‰nger, eng, Schrittgeschwindigkeit	q3 12434,8776 12578,8654
+#: XXX_prog BS (die umfahrbare Stufe vielleicht in ein BS umwandeln? Oder auch nicht)
+(entlang der Hedwigskathedrale): Fuﬂg‰nger, eine (umfahrbare) Stufe	q2 9808,12182 9775,12178 9771,12190 9747,12205
 #
 ######################### User Contributions #################################
 # 

@@ -37,9 +37,9 @@ Potsdamer Platz: Fuﬂg‰nger	q3 8542,11502 8462,11538
 Bl¸cherplatz: reger Fuﬂg‰ngerverkehr	q3 9579,10122 9599,10175
 Bl¸cherplatz: Fuﬂg‰ngerverkehr	q3 9599,10175 9631,10142
 Hallesches Tor: reger Fuﬂg‰ngerverkehr	q3; 9599,10175 9593,10238
-Hallesches Tor: reger Fuﬂg‰ngerverkehr	q3 9593,10238 9590,10262
-Mehringplatz: Fuﬂg‰nger und Radfahrer teilen sich den Weg	q1 9590,10262 9544,10280 9518,10326 9527,10389 9580,10434 9649,10408 9676,10346 9668,10306 9644,10281 9590,10262
-Friedrichstr. (am Mehringplatz): Fuﬂg‰nger und Radfahrer teilen sich den Weg	q1 9580,10434 9566,10566
+Hallesches Tor: reger Fuﬂg‰ngerverkehr	q3 9593,10238 9592,10263
+Mehringplatz: Fuﬂg‰nger und Radfahrer teilen sich den Weg	q1 9592,10263 9547,10278 9517,10332 9527,10389 9587,10421 9646,10404 9675,10351 9668,10306 9646,10279 9606,10263 9592,10263
+Friedrichstr. (am Mehringplatz): Fuﬂg‰nger und Radfahrer teilen sich den Weg	q1 9587,10421 9566,10566
 Gorkistr.: reger Fuﬂg‰ngerverkehr (Fuﬂg‰ngerzone)	q3 2049,20292 2116,20314 2295,20358
 Alt-Tegel: reger Fuﬂg‰ngerverkehr (Fuﬂg‰ngerzone)	q4 1907,20265 2029,20331
 Breitscheidplatz: starker Fuﬂg‰ngerverkehr, oft Veranstaltungen	q4 5656,10876 5652,11004
@@ -77,7 +77,7 @@ Bellevueallee: Parkweg	q1 7039,12314 7383,12095 7460,12054 7663,11946 7801,11875
 Ahornsteig: Parkweg	q1 7669,11586 7696,11621 7735,11656 7796,11681 7901,11684 8016,11770 8156,11863 8222,11881 8284,11905 8453,12099 8522,12187 8538,12245
 Tiergarten: Parkweg	q1 8223,11796 8156,11863 8091,11992 8089,12041 8107,12145
 Tiergarten: Parkweg	q1 8016,11770 8022,12016
-Tiergarten: Parkweg	q1 8034,12093 8057,12059 8048,12033 8022,12016 7999,12049 8006,12074 8034,12093 8048,12135 8055,12186
+Tiergarten: Parkweg	q1 8034,12093 8057,12065 8052,12033 8022,12016 7999,12040 8004,12074 8034,12093 8048,12135 8055,12186
 Tiergarten: Parkweg	q1 8214,12205 8215,12156 8222,11881 8223,11796 8225,11692
 Tiergarten: Parkweg	q1 8021,11636 8016,11770
 Tiergarten: Parkweg	q1 7663,11946 7570,11855 7223,11897 7182,11870 7173,11864 7073,11798 6778,11742 6540,11754
@@ -909,6 +909,7 @@ Elisabeth-Schwarzhaupt-Platz: einige Fuﬂg‰nger	q1 9274,13963 9167,14127
 (Hildegard-Knef-Platz - Lotte-Laserstein-Str.): Bordstein	q2 7774,7724 7757,7682
 (Bl¸cherplatz - Johanniterstr.): Fuﬂg‰nger, Bordstein	q2 9702,10129 9816,10119 9837,10117
 Idealpassage: Fuﬂg‰nger, eng, Schrittgeschwindigkeit	q3 12434,8776 12578,8654
+(entlang der Hedwigskathedrale): Fuﬂg‰nger, eine (umfahrbare) Stufe	q2 9808,12182 9775,12178 9771,12190 9747,12205
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q3 11805,19071 11895,19183 11927,19308
 Ebersstr.: Sch¸ler	q2 7245,8583 7292,8631
 Straﬂe 103 (Niederschˆnhausen): enge Straﬂe	q1 10914,20065 11051,19789
@@ -1769,3 +1770,5 @@ Sonnenallee, linker Gehweg	q4::igndisp; 13474,8060 13457,8069
 Urbanstr.	q0::igndisp; 11888,9189 11861,9183
 Badstr., linker Gehweg	q3::igndisp; 8534,16355 8486,16412 8486,16425
 Tempelhofer Ufer, linker Gehweg	q4::igndisp; 8804,10303 8717,10322 8661,10377
+Leipziger Str., linker Gehweg	q3::igndisp; 9896,11703 9978,11713
+zur Ampel Jerusalemer Str.	q3::igndisp; 9978,11713 9981,11689

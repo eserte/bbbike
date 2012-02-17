@@ -97,9 +97,9 @@ Am Landwehrkanal: Asphalt	Q0 13109,9743 13225,9897
 Am Landwehrkanal: Parkweg	Q1 13225,9897 13333,9929
 Innstr.: Kopfsteinpflaster (m‰ﬂig bis schlecht)	Q2- 13107,8343 13166,8423 13217,8493 13262,8554 13301,8606 13314,8624 13366,8694
 Elsenstr.: Asphalt	Q0 13402,8741 13456,8809 13507,8872 13661,9069 13760,9188
-Herrfurthstr.: m‰ﬂiges Kopfsteinpflaster	Q2 11979,8014 11823,7980 11757,7965
+Herrfurthstr.: m‰ﬂiges Kopfsteinpflaster	Q2 11979,8014 11823,7980 11754,7964
 Herrfurthstr.: m‰ﬂiges Kopfsteinpflaster	Q2 11647,7940 11573,7924 11472,7899
-Herrfurthplatz: m‰ﬂiges Kopfsteinpflaster	Q2 11647,7940 11670,7911 11717,7895 11753,7930 11757,7965 11732,8001 11695,8005 11659,7982 11647,7940
+Herrfurthplatz: m‰ﬂiges Kopfsteinpflaster	Q2 11647,7940 11671,7904 11713,7899 11748,7922 11754,7964 11731,7998 11689,8006 11653,7982 11647,7940
 Feurigstr.: m‰ﬂiges Kopfsteinpflaster	Q2 7497,8916 7467,8863 7389,8837
 Feurigstr.: m‰ﬂiges Kopfsteinpflaster	Q2 7086,8579 7012,8511 6807,8309
 Herbertstr.: Kopfsteinpflaster	Q2 7360,8918 7389,8837 7402,8783
@@ -460,10 +460,10 @@ Glienicker Str.: schlechtes Kopfsteinpflaster	Q3 -7163,356 -7236,300 -7324,276 -
 Glienicker Str.: m‰ﬂiges Kopfsteinpflaster	Q2 -7587,312 -7639,312 -7710,313 -7732,313 -8013,255
 Sch‰ferstr.: Kopfsteinpflaster	Q2 -7232,445 -7365,371 -7449,348 -7474,341 -7587,312
 Karlsgartenstr.: Kopfsteinpflaster	Q2 11882,8527 11769,8515
-Fontanestr.: Asphalt	Q0 11632,8302 11645,8212 11665,8130
+Fontanestr.: Asphalt	Q0 11632,8302 11645,8212 11661,8131
 Weisestr.: unebenes Kopfsteinpflaster	Q2- 11767,8330 11770,8292 11773,8231 11786,8165 11823,7980 11859,7815 11879,7720 11903,7607 11923,7516
-Selchower Str.: unebenes Kopfsteinpflaster	Q2- 11532,8104 11665,8130
-Selchower Str.: Asphalt	Q0 11665,8130 11786,8165 11933,8198
+Selchower Str.: unebenes Kopfsteinpflaster	Q2- 11532,8104 11661,8131
+Selchower Str.: Asphalt	Q0 11661,8131 11786,8165 11933,8198
 Mahlower Str.: Kopfsteinpflaster	Q2 11523,8178 11645,8212
 Mahlower Str.: Asphalt	Q0 11645,8212 11773,8231 11920,8252
 Boddinstr.: Kopfsteinpflaster	Q2 11920,8252 12104,8299
@@ -476,8 +476,8 @@ Morusstr.: schlechtes Kopfsteinpflaster	Q3+ 12407,8177 12426,8115
 Falkstr.: Asphalt	Q0 12162,8055 12178,7985 12179,7979
 Falkstr.: Kopfsteinpflaster	Q2 12179,7979 12220,7822
 (Falkstr. - Mittelweg): Verbundsteinpflaster	Q1 12220,7822 12224,7799
-Schillerpromenade: Kopfsteinpflaster	Q2- 11665,8130 11695,8005
-Schillerpromenade: Kopfsteinpflaster	Q2 11717,7895 11738,7790 11755,7704 11779,7582 11797,7492
+Schillerpromenade: Kopfsteinpflaster	Q2- 11661,8131 11689,8006
+Schillerpromenade: Kopfsteinpflaster	Q2 11713,7899 11738,7790 11755,7704 11779,7582 11797,7492
 S‰ntisstr.: Asphalt	Q0- 8892,802 8743,681 8660,614
 S‰ntisstr.: Kopfsteinpflaster	Q2 8660,614 8533,512
 Alt-Marienfelde: Kopfsteinpflaster	Q2- 8742,475 8533,512 8484,529 8258,662 8114,722 8000,729 7909,775
@@ -551,7 +551,7 @@ Ahornsteig: Parkweg	Q1 7669,11586 7696,11621 7735,11656 7796,11681 7901,11684 80
 Ahornsteig: kleinteiliges Pflaster und wassergebundene Decke	Q1 8016,11770 8156,11863 8222,11881 8284,11905 8453,12099 8522,12187 8538,12245
 Tiergarten: wassergebundene Decke	Q1 8223,11796 8156,11863 8091,11992 8089,12041 8107,12145
 Tiergarten: Parkweg	Q1 8021,11636 8016,11770 8022,12016
-Tiergarten: Parkweg	Q1 8034,12093 8057,12059 8048,12033 8022,12016 7999,12049 8006,12074 8034,12093 8048,12135 8055,12186
+Tiergarten: Parkweg	Q1 8034,12093 8057,12065 8052,12033 8022,12016 7999,12040 8004,12074 8034,12093 8048,12135 8055,12186
 Tiergarten: Asphalt	Q0 8214,12205 8215,12156
 Tiergarten: Parkweg	Q1 8215,12156 8222,11881 8223,11796 8225,11692
 Tiergarten: Parkweg	Q1 7663,11946 7570,11855 7223,11897 7182,11870 7173,11864 7073,11798 6778,11742 6540,11754
@@ -1637,8 +1637,8 @@ Gertrud-Kolmar-Str.: asphaltiert	Q0 8837,11676 8825,11773 8810,11824 8783,11959
 Am Johannistisch: Verbundsteinpflaster	Q1 10029,9989 10111,9942
 (Markgrafendamm - Modersohnstr.; ¸ber das DB-Gel‰nde): Beton	Q0 14672,10760 14564,10792 14558,10819
 (Markgrafendamm - Modersohnstr.; ¸ber das DB-Gel‰nde): m‰ﬂiges bis schlechtes Kopfsteinpflaster	Q3+ 14558,10819 14141,10931 14107,10911 14043,10928
-Mehringplatz: Verbundsteinpflaster	Q0 9590,10262 9544,10280 9518,10326 9527,10389 9580,10434 9649,10408 9676,10346 9668,10306 9644,10281 9590,10262
-Mehringplatz - Friedrichstr.: Verbundsteinpflaster	Q0 9580,10434 9566,10566
+Mehringplatz: Verbundsteinpflaster	Q0 9592,10263 9547,10278 9517,10332 9527,10389 9587,10421 9646,10404 9675,10351 9668,10306 9646,10279 9606,10263 9592,10263
+Mehringplatz - Friedrichstr.: Verbundsteinpflaster	Q0 9587,10421 9566,10566
 zum Mehringplatz: Verbundsteinpflaster	Q0 9873,10285 9668,10306
 Brommystr.: Kopfsteinpflaster	Q2 12521,11016 12582,11103
 (Mariannenplatz - Bethaniendamm): Kopfsteinpflaster	Q2 11984,11130 12012,11235
@@ -6751,6 +6751,7 @@ R¸digerstr.: Kopfsteinpflaster	Q2 16252,12411 16147,12424 16079,12432
 Idealpassage: Asphalt	Q0- 12434,8776 12578,8654
 #: XXX: public imagery
 H¸ttigpfad: Verbundsteinpflaster	Q1 4810,15000 4724,15055 4668,15066 4598,15057 4459,15066
+(entlang der Hedwigskathedrale): Pflasterung	Q2+ 9808,12182 9775,12178 9771,12190 9747,12205
 ######################### User Contributions #################################
 #: by: anonymous vvv
 # 
