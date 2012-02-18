@@ -4291,7 +4291,7 @@ sub display_route {
 			  TotalDist => $ges_entf,
 			  TotalDistString => $ges_entf_s,
 			  DirectionString => M("angekommen") . "!",
-			  DirectionHtml => M("angekommen") . "!",
+			  DirectionHtml => ($is_m ? "" : M("angekommen") . "!"), # save column space in m.bbbike.de
 			  Strname => $real_zielname,
 			  Comment => '',
 			  CommentHtml => '',
