@@ -649,8 +649,9 @@ DEB_DATA=	libstring-approx-perl libdbd-xbase-perl libxml-parser-perl \
 		libyaml-perl libyaml-syck-perl libjson-xs-perl \
 		libtext-unidecode-perl libdata-compare-perl agrep
 DEB_MISC=	libdate-calc-perl
+DEB_CGI=	libapache-session-perl libfile-counterfile-perl
 # If apache-perl is installed, then do not install apache2!
-DEB_CGI=	libapache-session-perl apache2 libfile-counterfile-perl
+DEB_APACHE=	apache2
 DEB_MAPSERVER=	mapserver-bin cgi-mapserver
 
 # Debian packages from own repo
@@ -669,6 +670,9 @@ DEB_ALL_CGI=	$(DEB_DEVEL)      \
 		$(DEB_MISC)       \
 		$(DEB_CGI)        \
 		$(DEB_MAPSERVER)  
+
+# All packages needed for Apache operation:
+DEB_ALL_APACHE= $(DEB_ALL_CGI) $(DEB_APACHE)
 
 # Complete list of required modules for full operation.
 # This is what is available on a typical debian/lenny system
@@ -693,8 +697,12 @@ DEB_ALL=	libalgorithm-diff-perl libapache-session-perl libarchive-zip-perl \
 		libgeo-coder-bing libgeo-coder-googlev3 libgeo-coder-osm libhtml-format-perl \
 		libmath-round-perl
 
+# XXX Does not work, see below
 install-debian-for-cgi:	install-debian-packages-for-cgi \
 			install-debian-owndebs-for-cgi
+
+install-debian-packages-for-apache:
+	aptitude install ${DEB_ALL_APACHE}
 
 install-debian-packages-for-cgi:
 	aptitude install ${DEB_ALL_CGI}
