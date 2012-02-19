@@ -21,6 +21,7 @@ use lib ("$FindBin::RealBin/..",
 use Fcntl qw(SEEK_SET);
 use File::Temp qw(tempfile);
 use Getopt::Long;
+use Geography::Berlin_DE ();
 use Karte::Polar;
 use Karte::Standard;
 use Strassen::Core;
@@ -174,6 +175,8 @@ my %bbbikequality_to_smoothness = (0 => 'excellent',    # Q0
 				   3 => 'bad',          # Q3
 				  );
 
+my $geo = Geography::Berlin_DE->new; # currently hardcoded for Berlin
+
 my($min_lat, $max_lat, $min_lon, $max_lon);
 
 if ($single_file) {
@@ -223,6 +226,11 @@ if ($single_file) {
     do_file("$datadir/strassen_bab", \&handle_anywhere_highway_like); # don't do address handling here, so use "anywhere"
     do_file("$datadir/landstrassen", \&handle_anywhere_highway_like);
     do_file("$datadir/landstrassen2", \&handle_anywhere_highway_like);
+
+    # XXX not enabled by default
+    if (0 && $optimize_for_mapnik_style == OPTIMIZE_FOR_MAPNIK_STYLE_BBBIKE) {
+	do_file("$datadir/comments_route", \&handle_comments_route_like);
+    }
 
     dump_quality();
     dump_handicap();
@@ -1026,6 +1034,33 @@ sub handle_cycleway_like {
 		}
 	    }
 	    print $wayfh $extra_tags;
+	    print $wayfh qq{</way>\n};
+	    $next_way_id++;
+	}
+    }
+}
+
+## XXX very very experimental. will probably change
+## i.e. ref should probably be the $nr, and image will be resolved somewhere else
+## (in a template creating the mapnik include files)
+sub handle_comments_route_like {
+    my($r, $dir) = @_;
+    if ($geo && $geo->can('parse_street_type_nr')) {
+	my $name = $r->[Strassen::NAME];
+	my($type, $nr, $do_round, $image) = $geo->parse_street_type_nr($r->[$name]);
+	if (defined $type) {
+	    my @node_ids = get_node_ids($r);
+	    _xmlify($name);
+	    print $wayfh qq{<way id="$next_way_id" visible="true">\n};
+	    for my $node_id (@node_ids) {
+		print $wayfh qq{  <nd ref="$node_id"/>\n};
+	    }
+	    print $wayfh qq{  <tag k="route" v="bicycle" />\n};
+	    print $wayfh qq{  <tag k="name" v="$name" />\n};
+	    if ($image) {
+		_xmlify($image);
+		print $wayfh qq{  <tag k="ref" v="$image" />\n};
+	    }
 	    print $wayfh qq{</way>\n};
 	    $next_way_id++;
 	}
