@@ -1,10 +1,9 @@
 # -*- perl -*-
 
 #
-# $Id: Gpsbabel.pm,v 1.15 2008/08/03 09:17:12 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2005,2008 Slaven Rezic. All rights reserved.
+# Copyright (C) 2005,2008,2012 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -18,7 +17,7 @@ push @ISA, 'GPS';
 
 use strict;
 use vars qw($VERSION $GPSBABEL $DEBUG);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.15 $ =~ /(\d+)\.(\d+)/);
+$VERSION = '1.16';
 
 use File::Basename qw(dirname);
 use BBBikeUtil qw(is_in_path bbbike_root);
@@ -196,7 +195,25 @@ sub run_gpsbabel {
 	system @cmd;
     }
     if ($? != 0) {
-	my $msg = "A problem occurred when running <@cmd>:\n$stderr\nExit code=$?";
+	my $msg;
+	if ($^O eq 'linux' && $stderr =~ m{could not claim interface}) {
+	    $msg = <<EOF;
+Es konnte nicht mit gpsbabel auf das GPS-Gerät geschrieben werden. Möglicherweise kann das Problem durch Befolgen der Anweisungen auf:
+
+    http://www.gpsbabel.org/os/Linux_Hotplug.html
+
+behoben werden.
+
+Detaillierte Fehlermeldung:
+$stderr
+
+Exitcode: $?
+
+Kommando: @cmd
+EOF
+	} else {
+	    $msg = "A problem occurred when running <@cmd>:\n$stderr\nExit code=$?";
+	}
 	if (defined &main::status_message) {
 	    main::status_message($msg, "die");
 	} else {
