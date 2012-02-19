@@ -1,10 +1,9 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.209 2009/02/14 13:41:08 eserte Exp eserte $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999-2008 Slaven Rezic. All rights reserved.
+# Copyright (C) 1999-2008,2012 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -125,7 +124,7 @@ sub advanced_option_menu {
 		       }
 		   }
 		   );
-    $opbm->command(-label => 'Reload modules',
+    $opbm->command(-label => 'Reload program and modules',
 		   -command => sub { reload_new_modules() });
     $opbm->command(-label => 'Destroy all toplevels',
 		   -command => sub { destroy_all_toplevels() });
