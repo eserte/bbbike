@@ -102,19 +102,19 @@
   var startLatLng;
   var map;
 
-  var base_map_url_mapping = { 'stable':'http://tile.bbbike.org/osm/mapnik-german' // will be mapnik-german-srt some day
+  var base_map_url_mapping = { 'stable':'http://{s}.tile.bbbike.org/osm/mapnik-german' // will be mapnik-german-srt some day
                               ,'devel1':'http://z.tile.bbbike.org/osm/mapnik-german'
                               ,'devel2':'http://z.tile.bbbike.org/osm/mapnik-german-srt'
                               ,'mapnik-bbbike':'http://z.tile.bbbike.org/osm/mapnik-german-srt' // will point to non-z some day
-                              ,'mapnik-osm':'http://tile.bbbike.org/osm/mapnik'
+                              ,'mapnik-osm':'http://{s}.tile.bbbike.org/osm/mapnik'
                               ,'mapnik-german':'http://tile.bbbike.org/osm/mapnik-german'
                              };
-  var smoothness_map_url_mapping = { 'stable':'http://tile.bbbike.org/osm/bbbike-smoothness'
+  var smoothness_map_url_mapping = { 'stable':'http://{s}.tile.bbbike.org/osm/bbbike-smoothness'
                                     ,'devel1':'http://z.tile.bbbike.org/osm/bbbike-smoothness'
                                     ,'devel2':'http://z.tile.bbbike.org/osm/bbbike-smoothness'
                                     ,'mapnik-bbbike':'http://z.tile.bbbike.org/osm/bbbike-smoothness' // will point to non-z some day
-                                    ,'mapnik-osm':'http://tile.bbbike.org/osm/bbbike-smoothness'
-                                    ,'mapnik-german':'http://tile.bbbike.org/osm/bbbike-smoothness'
+                                    ,'mapnik-osm':'http://{s}.tile.bbbike.org/osm/bbbike-smoothness'
+                                    ,'mapnik-german':'http://{s}.tile.bbbike.org/osm/bbbike-smoothness'
                                    };
 
   var mapset = q.get('mapset') || 'stable';
