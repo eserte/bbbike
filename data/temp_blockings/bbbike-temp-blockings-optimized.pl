@@ -1278,16 +1278,7 @@ userdel	2::inwork 19750,11730 19827,11686 19881,11591
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_018151',
-         'until' => 1333206000,
-         'text' => 'Luisenstr. (Mitte): Baustelle, Straße vollständig gesperrt in beiden Richtungen zwischen Invalidenstr. und Hannoversche Str., 12.11.2011 06:00 Uhr bis 31.03.2012 17:00 Uhr ',
-         'from' => 1320987600,
-         'id' => 2307,
-         'data' => 'userdel	q4::inwork 8635,13580 8626,13641 8619,13689
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'IM_017746',
          'until' => 1346425200,
@@ -1322,6 +1313,26 @@ userdel	2::inwork 19750,11730 19827,11686 19881,11591
 userdel	2::inwork 19968,16 19940,52
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'LS/O-SG33-F/12/014',
+         'until' => 1354316400,
+         'text' => 'Fredersdorf-Vogelsdorf: L30: Ersatzneubau Brücke über das Mühlenfließ OD Fredersdorf, möglicherweise komplett gesperrt, 06.02.2012 bis 30.11.2012 ',
+         'from' => 1329680038,
+         'id' => 2312,
+         'data' => 'userdel	2::inwork 34913,13893 35382,13974
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_018437',
+         'until' => 1369989720,
+         'text' => 'Hessische Str. (Mitte): Baustelle, Fahrtrichtung gesperrt (Umleitungsstrecke für die Arbeiten auf der Invalidenstr.) Richtung Oranienburger Tor, 15.02.2012 09:42 Uhr bis 31.05.2013 10:42 Uhr',
+         'from' => 1329208920,
+         'id' => 2313,
+         'data' => 'userdel	q4::inwork; 8690,13723 8793,13591
+',
+         'type' => 'handicap'
        }
      
 );

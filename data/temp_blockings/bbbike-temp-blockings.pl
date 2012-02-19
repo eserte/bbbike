@@ -19911,8 +19911,8 @@ userdel	q4::inwork 19806,1903 19771,1793
 #XXX del: userdel	q4::inwork 19771,1793 19728,1660 19679,1571
 EOF
      },
-     { from  => 1320987600, # 2011-11-11 06:00
-       until => 1333206000, # 2012-03-31 17:00
+     { from  => 1329681337, # 1320987600, # 2011-11-11 06:00
+       until => 1329681343, # 1333206000, # 2012-03-31 17:00
        text  => 'Luisenstr. (Mitte): Baustelle, Straße vollständig gesperrt in beiden Richtungen zwischen Invalidenstr. und Hannoversche Str., 12.11.2011 06:00 Uhr bis 31.03.2012 17:00 Uhr ',
        type  => 'handicap',
        source_id => 'IM_018151',
@@ -19958,6 +19958,24 @@ EOF
 #: XXX wann wird die Brücke wieder eröffnet?
 #: next_check: 2012-03-01
 userdel	2::inwork 19968,16 19940,52
+EOF
+     },
+     { from  => 1329680038, # 2012-02-19 20:33
+       until => 1354316400, # 2012-12-01 00:00
+       text  => 'Fredersdorf-Vogelsdorf: L30: Ersatzneubau Brücke über das Mühlenfließ OD Fredersdorf, möglicherweise komplett gesperrt, 06.02.2012 bis 30.11.2012 ',
+       type  => 'gesperrt',
+       source_id => 'LS/O-SG33-F/12/014',
+       data  => <<EOF,
+userdel	2::inwork 34913,13893 35382,13974
+EOF
+     },
+     { from  => 1329208920, # 2012-02-14 09:42
+       until => 1369989720, # 2013-05-31 10:42
+       text  => 'Hessische Str. (Mitte): Baustelle, Fahrtrichtung gesperrt (Umleitungsstrecke für die Arbeiten auf der Invalidenstr.) Richtung Oranienburger Tor, 15.02.2012 09:42 Uhr bis 31.05.2013 10:42 Uhr',
+       type  => 'handicap',
+       source_id => 'IM_018437',
+       data  => <<EOF,
+userdel	q4::inwork; 8690,13723 8793,13591
 EOF
      },
     );
