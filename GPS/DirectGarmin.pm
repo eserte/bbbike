@@ -66,7 +66,7 @@ sub transfer {
 	foreach (@$data) {
 	    $wpt++ if ($_->[0] eq $gps->GRMN_RTE_WPT_DATA);
 	}
-	my $mess = Mfmt("%s Waypoints in der Route.\n", $wpt);
+	my $mess = Mfmt("%s Waypoints in der Route", $wpt) . ".\n";
 	if ($maxdist_ret{'maxdist_mess'}) {
 	    $mess .= $maxdist_ret{'maxdist_mess'};
 	}
@@ -76,7 +76,7 @@ sub transfer {
 			   defined &main::plot;
 	    require Tk::Dialog;
 	    my $d = $args{-top}->Dialog
-		(-title => 'Simulate transfer',
+		(-title => M("Transfer simulieren"),
 		 -bitmap => 'info',
 		 -text => $mess,
 		 -default_button => 'OK',

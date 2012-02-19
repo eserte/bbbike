@@ -22,6 +22,18 @@ $VERSION = '1.16';
 use File::Basename qw(dirname);
 use BBBikeUtil qw(is_in_path bbbike_root);
 
+BEGIN {
+    if (!eval '
+use Msg qw(frommain);
+1;
+') {
+	warn $@ if $@;
+	eval 'sub M ($) { $_[0] }';
+	eval 'sub Mfmt { sprintf(shift, @_) }';
+	eval 'sub Msg::get_lang { "en" }';
+    }
+}
+
 my %magics =
     ('pcx' => ['^H  SOFTWARE NAME & VERSION'],
      'gpx' => ['^<\?xml\s+'],
@@ -34,7 +46,7 @@ sub magics {
 sub convert_to_route {
     my($self, $file, %args) = @_;
     if (!$self->gpsbabel_available) {
-	die "gpsbabel ist nicht installiert"; # Msg.pm
+	die M("gpsbabel ist nicht installiert");
     }
 
     my($fh, $lines_ref) = $self->overread_trash($file, %args);
@@ -197,7 +209,21 @@ sub run_gpsbabel {
     if ($? != 0) {
 	my $msg;
 	if ($^O eq 'linux' && $stderr =~ m{could not claim interface}) {
-	    $msg = <<EOF;
+	    if (Msg::get_lang() eq 'en') {
+		$msg = <<EOF;
+Cannot write to GPS device using gpsbabel. Maybe the problem can be solved by following instructions on:
+
+    http://www.gpsbabel.org/os/Linux_Hotplug.html
+
+Detail error message:
+$stderr
+
+Exit code: $?
+
+Command: @cmd
+EOF
+	    } else {
+		$msg = <<EOF;
 Es konnte nicht mit gpsbabel auf das GPS-Gerät geschrieben werden. Möglicherweise kann das Problem durch Befolgen der Anweisungen auf:
 
     http://www.gpsbabel.org/os/Linux_Hotplug.html
@@ -211,8 +237,27 @@ Exitcode: $?
 
 Kommando: @cmd
 EOF
+	    }
 	} else {
-	    $msg = "A problem occurred when running <@cmd>:\n$stderr\nExit code=$?";
+	    if (Msg::get_lang() eq 'en') {
+		$msg = <<EOF;
+A problem occurred:
+$stderr
+
+Exit code: $?
+
+Command: @cmd
+EOF
+	    } else {
+		$msg = <<EOF;
+Ein Problem ist aufgetreten:
+$stderr
+
+Exitcode: $?
+
+Kommando: @cmd
+EOF
+	    }
 	}
 	if (defined &main::status_message) {
 	    main::status_message($msg, "die");
