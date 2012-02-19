@@ -125,6 +125,7 @@ png-to-gif:	\
 		eisenbahn_stillg_mini.gif \
 		ferry.gif \
 		ferry_klein.gif \
+		ferry_mini.gif \
 		flag2_bl.gif \
 		flag2_bl_centered.gif \
 		flag_via.gif \
@@ -205,6 +206,7 @@ png-to-xpm:	\
 		eisenbahn_stillg_mini.xpm \
 		ferry.xpm \
 		ferry_klein.xpm \
+		ferry_mini.xpm \
 		flag2_bl.xpm \
 		flag2_bl_centered.xpm \
 		flag_via_centered.xpm \
@@ -319,6 +321,6 @@ png-to-jpg:	\
 
 # Creation of ferry*.png:
 #   Fetched http://upload.wikimedia.org/wikipedia/commons/d/d6/F%C3%A4hre-Logo-BVG.svg (public domain)
-#   Created 16x16 and 8x8 variants with inkscape
+#   Created 16x16, 12x12 and 8x8 variants with inkscape
 
 # loading.gif is from jquery

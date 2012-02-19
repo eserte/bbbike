@@ -5647,6 +5647,7 @@ sub load_photos {
     $ferry_photo         = load_photo($top, 'ferry')
 	if !$ferry_photo;
     $ferry_klein_photo   = load_photo($top, 'ferry_klein');
+    $ferry_mini_photo    = load_photo($top, 'ferry_mini');
     $zugbruecke_photo    = load_photo($top, 'zugbruecke');
     $zugbruecke_klein_photo
 	= load_photo($top, 'zugbruecke_klein');
@@ -16274,10 +16275,12 @@ sub get_symbol_scale {
 	    return undef;
 	}
     } elsif ($tag eq 'e') {
-	if ($myscale > 1*$mod) {
+	if ($myscale > 2*$mod) {
 	    return $ferry_photo;
-	} elsif ($scale >= 0.25*$mod) {
+	} elsif ($scale >= 0.5*$mod) {
 	    return $ferry_klein_photo;
+	} elsif ($scale >= 0.2*$mod) {
+	    return $ferry_mini_photo;
 	} else {
 	    return undef;
 	}
