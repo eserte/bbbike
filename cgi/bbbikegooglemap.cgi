@@ -988,10 +988,14 @@ EOF
     }
 
     function GetTileUrl_bbbikeorg(a, z) {
+	// select a random server
+	var list = ["a", "b", "c"];
+	var server = list [ parseInt( Math.random() * list.length ) ];
+
 	if (false) {
-	    return "http://tile.bbbike.org/osm/mapnik/"        + z + "/" + a.x + "/" + a.y + ".png";
+	    return "http://" + server + ".tile.bbbike.org/osm/mapnik/"        + z + "/" + a.x + "/" + a.y + ".png";
 	} else {
-	    return "http://tile.bbbike.org/osm/mapnik-german/" + z + "/" + a.x + "/" + a.y + ".png";
+	    return "http://" + server + ".tile.bbbike.org/osm/mapnik-german/" + z + "/" + a.x + "/" + a.y + ".png";
 	}
     }
 
