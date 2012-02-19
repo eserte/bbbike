@@ -56,8 +56,8 @@ Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 
 #: next_check: 2012-03-01
 Universitätsstr.: wegen Bauarbeiten Richtung Unter den Linden gesperrt	q4::inwork; 9580,12581 9601,12380
 # 
-#: last_checked: 2012-01-01 vvv
-#: next_check: 2012-02-15 vvv
+#: last_checked: 2012-02-18 vvv
+#: next_check: 2012-04-15 vvv
 Revaler Str.: Bauarbeiten, Kreuzung gesperrt, Gehweg kann benutzt werden	q4::inwork 14509,11060 14442,11101
 Helmerdingstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg kann benutzt werden	q4::inwork 14465,11195 14442,11101
 #: next_check: ^^^
@@ -292,7 +292,7 @@ Fürther Str.: Gehweg	q2 5773,10318 5808,10284
 #: note: nach Einwand von britta tr. (Message-ID: <43BA64D8.5030001@charite.de>) von q2 auf q3 heruntergestuft
 (Richard-Wagner-Platz - Schustehrusstr.): Gehweg	q3 3763,12279 3701,12279
 Goerdelersteg: enge wendelförmige Rampen	q3 3619,14183 3601,14284 3595,14277
-Goerdelerdamm: enger Zweirichtungsradweg	q1 3595,14277 3707,14303 4676,14534
+#XXX del --- by Monika W-J: "gut ausgebauter Radweg seit Sommer 2011" --- Goerdelerdamm: enger Zweirichtungsradweg	q1 3595,14277 3707,14303 4676,14534
 Schneckenbrücke: Rampe	q3 2012,3356 2009,3362 1980,3409 1977,3414
 Radweg eng und bewachsen	q1 5071,14614 5264,14671 5440,14840
 Tunnel S-Bhf. Grunewald: Fußgänger	q2 693,9129 731,9103 884,8954
