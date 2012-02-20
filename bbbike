@@ -14404,7 +14404,7 @@ sub show_info {
 
 	    $info_text->insert("end", "BBBike Leaflet",
 			       ["link$linkcount", ($need_indentation ? "iconindent" : ())]);
-	    $show_leaflet_url->("http://bbbike.de/BBBike/html/bbbikeleaflet.html", $linkcount);
+	    $show_leaflet_url->($BBBike::BBBIKE_LEAFLET_URL, $linkcount);
 	    $info_text->insert("end", "\n");
 	    $linkcount++;
 	}
