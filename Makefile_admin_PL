@@ -663,7 +663,7 @@ OWN_DEB=	libapache-session-counted-perl libpalm-palmdoc-perl \
 		libgd-svg-perl libgeo-spacemanager-perl \
 		libgeo-distance-perl libgeo-distance-xs-perl \
 		libobject-iterate-perl libkwalify-perl libcdb-file-perl \
-		libgeo-coder-bing libgeo-coder-googlev3 libgeo-coder-osm
+		libgeo-coder-bing-perl libgeo-coder-googlev3-perl libgeo-coder-osm-perl
 
 # All packages needed for full-flavoured Web server operation:
 DEB_ALL_CGI=	$(DEB_DEVEL)      \
@@ -685,8 +685,8 @@ DEB_ALL=	libalgorithm-diff-perl libapache-session-perl libarchive-zip-perl \
 		libdate-pcalc-perl libdb-file-lock-perl libdbd-mysql-perl \
 		libdbd-xbase-perl libdbi-perl libdbix-class-perl libdevel-leak-perl \
 		libfile-readbackwards-perl libflickr-api-perl libfont-afm-perl \
-		libgd-gd2-perl libgeo-coder-google-perl libgeo-distance-perl \
-		libgeo-distance-xs-perl libgeo-metar-perl libimage-exiftool-perl \
+		libgd-gd2-perl libgeo-coder-google-perl \
+		libgeo-metar-perl libimage-exiftool-perl \
 		libimage-info-perl libimager-perl libinline-perl libipc-run-perl \
 		libjson-xs-perl libmailtools-perl libmime-lite-perl libmldbm-perl \
 		libobject-realize-later-perl libpdf-create-perl \
@@ -698,8 +698,7 @@ DEB_ALL=	libalgorithm-diff-perl libapache-session-perl libarchive-zip-perl \
 		libwww-shorten-perl libx11-protocol-perl libxml-libxml-perl \
 		libxml-parser-perl libxml-sax-perl libxml-simple-perl libxml-twig-perl \
 		libyaml-perl libyaml-syck-perl perl perl-modules perl-tk perlmagick \
-		libgeo-coder-bing libgeo-coder-googlev3 libgeo-coder-osm libhtml-format-perl \
-		libmath-round-perl
+		libhtml-format-perl libmath-round-perl
 
 # XXX Does not work, see below
 install-debian-for-cgi:	install-debian-packages-for-cgi \
