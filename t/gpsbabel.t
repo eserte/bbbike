@@ -84,7 +84,7 @@ SKIP: {
 	$gpsb->run_gpsbabel(["-XYZ", "-ABC"]);
     };
     my $err = $@;
-    like($err, qr{A problem occurred.*gpsbabel}, "Error with run_gpsbabel");
+    like($err, qr{(Ein Problem ist aufgetreten|A problem occurred).*gpsbabel}s, "Error with run_gpsbabel");
  SKIP: {
 	skip("IPC::Run needed for additional error messages", 1)
 	    if !eval { require IPC::Run; 1 };
