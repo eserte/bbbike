@@ -663,7 +663,8 @@ OWN_DEB=	libapache-session-counted-perl libpalm-palmdoc-perl \
 		libgd-svg-perl libgeo-spacemanager-perl \
 		libgeo-distance-perl libgeo-distance-xs-perl \
 		libobject-iterate-perl libkwalify-perl libcdb-file-perl \
-		libgeo-coder-bing-perl libgeo-coder-googlev3-perl libgeo-coder-osm-perl
+		libgeo-coder-bing-perl libgeo-coder-googlev3-perl libgeo-coder-osm-perl \
+		libgeo-proj4-perl
 
 # All packages needed for full-flavoured Web server operation:
 DEB_ALL_CGI=	$(DEB_DEVEL)      \
@@ -698,7 +699,7 @@ DEB_ALL=	libalgorithm-diff-perl libapache-session-perl libarchive-zip-perl \
 		libwww-shorten-perl libx11-protocol-perl libxml-libxml-perl \
 		libxml-parser-perl libxml-sax-perl libxml-simple-perl libxml-twig-perl \
 		libyaml-perl libyaml-syck-perl perl perl-modules perl-tk perlmagick \
-		libhtml-format-perl libmath-round-perl
+		libhtml-format-perl libmath-round-perl libgdal-perl
 
 # XXX Does not work, see below
 install-debian-for-cgi:	install-debian-packages-for-cgi \
