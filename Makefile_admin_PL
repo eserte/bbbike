@@ -100,17 +100,7 @@ EOF
 *** NOTE: if you want to build HTML documentation using "make bbbikedoc"
 *** you should install Marek::Pod::HTML to get best results
 EOF
-    my $pod2html;
-    if (-e "/usr/perl5.8.1/bin/pod2html") {
-	$pod2html = "perl5.8.1 /usr/perl5.8.1/bin/pod2html";
-    } elsif (-x "/usr/perl5.7.2/bin/pod2html") {
-	# XXX --htmlroot with bugs: one level module names are not linked
-	$pod2html = "/usr/perl5.7.2/bin/pod2html $htmlroot -css html/bbbikepod.css --header";
-    } elsif (-x "/usr/perl5.6.0/bin/pod2html") {
-	$pod2html = "/usr/perl5.6.0/bin/pod2html $htmlroot";
-    } else {
-	$pod2html = "pod2html";
-    }
+    my $pod2html = "pod2html";
     $bbbike_html_rule = "";
     for my $poddef (@pods) {
 	$bbbike_html_rule .= <<EOF
