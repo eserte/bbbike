@@ -655,6 +655,10 @@ DEB_APACHE=	apache2
 DEB_MAPSERVER=	mapserver-bin cgi-mapserver
 
 # Debian packages from own repo
+# Available from
+#
+#    deb http://mydebs.bbbike.de squeeze main
+#
 OWN_DEB=	libapache-session-counted-perl libpalm-palmdoc-perl \
 		libgd-svg-perl libgeo-spacemanager-perl \
 		libgeo-distance-perl libgeo-distance-xs-perl \
@@ -707,14 +711,8 @@ install-debian-packages-for-apache:
 install-debian-packages-for-cgi:
 	aptitude install ${DEB_ALL_CGI}
 
-# Assumes own deb packages are in ~/work/mydebs
-# XXX Does not work: dpkg expects full filenames, not package names!
-install-debian-owndebs-for-cgi:
-	cd ${HOME}/work/mydebs && \
-	    dpkg --install ${OWN_DEB}
-
 install-debian-packages-for-all:
-	aptitude install ${DEB_ALL}
+	aptitude install ${DEB_ALL} ${OWN_DEB}
 
 ######################################################################
 # par
