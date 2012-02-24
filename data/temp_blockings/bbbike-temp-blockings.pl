@@ -4900,7 +4900,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'INKO_64281_COPY_1',
        data  => <<EOF,
-userdel	2 20692,3951 20772,3999 20788,4008 20834,4035 21053,4162 21146,4229 21174,4250 21206,4387 21289,4563 21332,4655
+userdel	2 20692,3951 20772,3999 20788,4008 20834,4035 21053,4162 21146,4229 21174,4250 21184,4293 21206,4387 21289,4563 21332,4655
 EOF
      },
      { from  => 1151101431, # 2006-06-24 00:23
@@ -19134,8 +19134,8 @@ userdel	2::inwork 97780,-91551 97468,-91292
 EOF
      },
      { from  => 1299564000, # 2011-03-08 07:00
-       until => 1330110000, # 2012-02-24 20:00
-       text  => 'Stargarder Str. (Prenzlauer Berg): Baustelle, Fahrtrichtung gesperrt (bis Anfang 2012) Richtung Schönhauser Allee zwischen Dunckerstr. und Schliemannstr., 09.03.2011 07:00 Uhr bis 24.02.2012 20:00 Uhr ',
+       until => 1349114400, # 2012-10-01 20:00
+       text  => 'Stargarder Str. (Prenzlauer Berg): Baustelle, Fahrtrichtung gesperrt Richtung Schönhauser Allee zwischen Dunckerstr. und Schliemannstr., 09.03.2011 bis 01.10.2012 ',
        type  => 'handicap',
        source_id => 'IM_017000',
        data  => <<EOF,
@@ -19976,6 +19976,24 @@ EOF
        source_id => 'IM_018437',
        data  => <<EOF,
 userdel	q4::inwork; 8690,13723 8793,13591
+EOF
+     },
+     { from  => 1330026300, # 2012-02-23 20:45
+       until => 1331766000, # 2012-03-15 00:00
+       text  => 'Orankestrand wegen Bauarbeiten gesperrt, bis ungefähr März 2012, siehe http://www.berlin.de/ba-lichtenberg/presse/archiv/20120220.1530.366402.html',
+       type  => 'gesperrt',
+       source_id => 'http://www.berlin.de/ba-lichtenberg/presse/archiv/20120220.1530.366402.html',
+       data  => <<EOF,
+userdel	2::inwork 15479,16060 15592,16069 15664,16115 15731,16208
+EOF
+     },
+     { from  => 1330988400, # 2012-03-06 00:00
+       until => 1346968800, # 2012-09-07 00:00
+       text  => 'Buddestraße, Sperrung von Bernstorffstraße bis Gorkistraße wegen Bauarbeiten',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20120223.1505.366579.html',
+       data  => <<EOF,
+userdel	q4::inwork 2295,20358 2241,20487
 EOF
      },
     );

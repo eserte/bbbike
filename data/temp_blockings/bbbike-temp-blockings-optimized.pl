@@ -1102,8 +1102,8 @@ userdel	q4::inwork; 10166,12777 10132,12941
        undef,
        {
          'source_id' => 'IM_017000',
-         'until' => 1330110000,
-         'text' => 'Stargarder Str. (Prenzlauer Berg): Baustelle, Fahrtrichtung gesperrt (bis Anfang 2012) Richtung Schönhauser Allee zwischen Dunckerstr. und Schliemannstr., 09.03.2011 07:00 Uhr bis 24.02.2012 20:00 Uhr ',
+         'until' => 1349114400,
+         'text' => 'Stargarder Str. (Prenzlauer Berg): Baustelle, Fahrtrichtung gesperrt Richtung Schönhauser Allee zwischen Dunckerstr. und Schliemannstr., 09.03.2011 bis 01.10.2012 ',
          'from' => 1299564000,
          'id' => 2223,
          'data' => 'userdel	q4::inwork; 11603,15455 11502,15527
@@ -1331,6 +1331,26 @@ userdel	2::inwork 19968,16 19940,52
          'from' => 1329208920,
          'id' => 2313,
          'data' => 'userdel	q4::inwork; 8690,13723 8793,13591
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'http://www.berlin.de/ba-lichtenberg/presse/archiv/20120220.1530.366402.html',
+         'until' => 1331766000,
+         'text' => 'Orankestrand wegen Bauarbeiten gesperrt, bis ungefähr März 2012, siehe http://www.berlin.de/ba-lichtenberg/presse/archiv/20120220.1530.366402.html',
+         'from' => 1330026300,
+         'id' => 2314,
+         'data' => 'userdel	2::inwork 15479,16060 15592,16069 15664,16115 15731,16208
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20120223.1505.366579.html',
+         'until' => 1346968800,
+         'text' => 'Buddestraße, Sperrung von Bernstorffstraße bis Gorkistraße wegen Bauarbeiten',
+         'from' => 1330988400,
+         'id' => 2315,
+         'data' => 'userdel	q4::inwork 2295,20358 2241,20487
 ',
          'type' => 'handicap'
        }
