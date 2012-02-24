@@ -173,8 +173,7 @@ persistent-tmp:	${PERSISTENTTMPDIR}/.check_fragezeichen-outdoor-nextcheck.bbd \
 		${PERSISTENTTMPDIR}/non-faked-plaetze \
 		${PERSISTENTTMPDIR}/non-faked-strassen \
 		${PERSISTENTTMPDIR}/XXX.bbd \
-		${PERSISTENTTMPDIR}/plz-b.bbd \
-		persistent-tmp-from-opengeodb
+		${PERSISTENTTMPDIR}/plz-b.bbd
 
 .for i in $(XXX_TARGETS)
 persistent-tmp:	${PERSISTENTTMPDIR}/XXX-$(i).bbd
