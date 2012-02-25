@@ -8,8 +8,14 @@ BBBIKE_STABLE_VERSION=$(shell perl -I$(BBBIKEROOT) -MBBBikeVar -e 'print $$BBBik
 BBBIKE_DEBIAN_REVISION?=	1
 MANPAGE=	/usr/share/man/man1/bbbike.1
 BBBIKEDOCDIR=	/usr/share/doc/bbbike
-PACKAGEDIR=	$(BBBIKEROOT)/distfiles
+# Contains the source tarballs and the created debian packages,
+# usually located next to the bbbike source directory
+PACKAGEDIR=	$(BBBIKEROOT)/../bbbike-distfiles
+SRC_PACKAGEDIR=	$(PACKAGEDIR)
+DEST_PACKAGEDIR=$(PACKAGEDIR)
 SKIPCOMPILE?=
+PERL?=		perl
+DEBIAN_ARCH=	$(shell perl -e 'use AptPkg::Config qw/$$_config/; $$_config->init; print $$_config->get("APT::Architecture")')
 
 all:	debian-package
 
@@ -34,17 +40,18 @@ debian-control: $(BUILDDIR)/DEBIAN/control
 
 $(BUILDDIR)/DEBIAN/control:  bbbike-var-tpl \
 			     control.tpl
-	umask 022; tpage --debug=undef --eval_perl --define BBBIKE_DEBIAN_REVISION=$(BBBIKE_DEBIAN_REVISION) control.tpl > $(BUILDDIR)/DEBIAN/control || rm -f $@
+	umask 022; tpage --debug=undef --eval_perl --define DEBIAN_ARCH=$(DEBIAN_ARCH) --define BBBIKE_DEBIAN_REVISION=$(BBBIKE_DEBIAN_REVISION) control.tpl > $(BUILDDIR)/DEBIAN/control || rm -f $@
 	umask 022; cp -f $(BUILDDIR)/DEBIAN/control control
 
 .PHONY: bbbike-var-tpl
 bbbike-var-tpl:
-	cd $(BBBIKEROOT) && $(MAKE) BBBikeVar.tpl
+	cd $(BBBIKEROOT) && $(PERL) Makefile.PL && $(MAKE) BBBikeVar.tpl
 
 debian-copy-files:
+	[ -e $(SRC_PACKAGEDIR)/BBBike-$(BBBIKE_STABLE_VERSION).tar.gz ]
 	umask 022; mkdir -p $(BUILDBBBIKEROOT)
 	chmod 755 $(BUILDBBBIKEROOT)
-	umask 022; cd $(BUILDBBBIKEROOT)/.. && tar xfvzp $(BBBIKEROOT)/distfiles/BBBike-$(BBBIKE_STABLE_VERSION).tar.gz
+	umask 022; cd $(BUILDBBBIKEROOT)/.. && tar xfvzp $(SRC_PACKAGEDIR)/BBBike-$(BBBIKE_STABLE_VERSION).tar.gz
 	rmdir $(BUILDBBBIKEROOT)
 	umask 022; cd `dirname $(BUILDBBBIKEROOT)` && mv BBBike-$(BBBIKE_STABLE_VERSION) BBBike
 
@@ -88,7 +95,7 @@ debian-build:
 	find $(BUILDDIR) | sudo xargs chown root:root
 	cd .. && umask 022 && sudo dh_installdeb
 	cd .. && umask 022 && sudo dh_md5sums
-	cd .. && umask 022 && dh_builddeb --destdir $(PACKAGEDIR)
+	cd .. && umask 022 && dh_builddeb --destdir $(DEST_PACKAGEDIR)
 
 debian-clean:
 	sudo rm -rf $(BUILDDIR)

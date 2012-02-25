@@ -3,7 +3,7 @@ Package: bbbike
 Version: [% BBBike.STABLE_VERSION %]-[% BBBIKE_DEBIAN_REVISION %]
 Section: misc
 Priority: optional
-Architecture: i386
+Architecture: [% DEBIAN_ARCH %]
 Depends: perl (>= 5.005), perl-tk (>= 800)
 Maintainer: Slaven Rezic <[% BBBike.EMAIL %]>
 Suggests: netpbm | imagemagick, gv | ghostview | gs | ggv, libmailtools-perl, libtk-pod-perl, libwww-perl, libxml-libxml-perl, libclass-accessor-perl
