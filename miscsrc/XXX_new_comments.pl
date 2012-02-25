@@ -16,9 +16,10 @@
 package NewComments;
 
 use strict;
-use lib ("/home/e/eserte/src/bbbike/lib",
-	 "/home/e/eserte/src/bbbike",
-	 "/home/e/eserte/src/bbbike/data",
+use FindBin;
+use lib ("$FindBin::RealBin/../lib",
+	 "$FindBin::RealBin/..",
+	 "$FindBin::RealBin/../data",
 	);
 use Strassen;
 use Strassen::Kreuzungen;
