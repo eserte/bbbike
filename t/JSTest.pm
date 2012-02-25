@@ -27,6 +27,8 @@ use BBBikeUtil qw(is_in_path);
 
 $JS_INTERPRETER = 'js' if !defined $JS_INTERPRETER;
 
+my $redeclaration_warning_seen;
+
 sub check_js_interpreter () {
     is_in_path $JS_INTERPRETER;
 }
@@ -57,6 +59,18 @@ sub is_strict_js ($) {
     } else {
 	Test::More::ok($all_out eq '', "No error or warning in $file")
 	    or Test::More::diag($all_out);
+	if ($all_out =~ m{warning:.*redeclaration} && !$redeclaration_warning_seen++) {
+	    Test::More::diag(<<'EOF');
+**********************************************************************
+* Your javascript interpreter thinks that double
+* variable declarations are worth of a warning.
+* I don't think so and recommend to use another
+* interpreter, e.g. spidermonkey (on Debian try:
+*   apt-get install spidermonkey-bin
+* )
+**********************************************************************
+EOF
+	}
     }
 }
 
