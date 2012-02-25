@@ -18,7 +18,10 @@ BEGIN {
 }
 
 use FindBin;
-use lib ($FindBin::RealBin, "$FindBin::RealBin/lib");
+use lib (
+	 "$FindBin::RealBin/..",
+	 "$FindBin::RealBin/../lib",
+	);
 
 use File::Temp qw(tempfile);
 

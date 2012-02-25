@@ -19,7 +19,11 @@ BEGIN {
 }
 
 use FindBin;
-use lib ($FindBin::RealBin, "$FindBin::RealBin/lib");
+use lib (
+	 "$FindBin::RealBin/..",
+	 "$FindBin::RealBin/../lib",
+	 $FindBin::RealBin,
+	);
 
 use BBBikeTest qw(gpxlint_string);
 use File::Temp qw(tempfile);
