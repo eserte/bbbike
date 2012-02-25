@@ -67,7 +67,7 @@ debian-man:
 debian-copyright:
 	umask 022; mkdir -p $(BUILDDIR)$(BBBIKEDOCDIR)
 	umask 022; perl > $(BUILDDIR)$(BBBIKEDOCDIR)/copyright -e \
-	'print qq{Copyright (c) 1995-2010 Slaven Rezic. All rights reserved.\nThis is free software; you can redistribute it and/or modify it under the\nterms of the GNU General Public License, see the file\n/usr/share/common-licenses/GPL\n}'
+	'print qq{Copyright (c) 1995-2012 Slaven Rezic. All rights reserved.\nThis is free software; you can redistribute it and/or modify it under the\nterms of the GNU General Public License, see the file\n/usr/share/common-licenses/GPL\n}'
 	umask 022; piconv -f iso-8859-1 -t utf-8 < $(BUILDBBBIKEROOT)/CHANGES | gzip -9f > $(BUILDDIR)$(BBBIKEDOCDIR)/changelog.gz
 	umask 022; gzip -9f < changelog.Debian > $(BUILDDIR)$(BBBIKEDOCDIR)/changelog.Debian.gz
 
