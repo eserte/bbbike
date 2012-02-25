@@ -1,10 +1,9 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeVar.pm,v 1.62 2009/04/04 11:30:58 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2000-2010 Slaven Rezic. All rights reserved.
+# Copyright (C) 2000-2010,2012 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -19,8 +18,10 @@ package BBBike;
 $VERSION	   = '3.17'; # remove "-DEVEL" for releases
 $STABLE_VERSION	   = '3.17';
 $WINDOWS_VERSION   = '3.17'; # Windows distribution
-$DEBIAN_VERSION    = '3.17-1'; # including revision
 $FREEBSD_VERSION   = '3.17'; # (used on download page and bbbikevar.t)
+$DEBIAN_I386_VERSION  = '3.17-1'; # including revision
+$DEBIAN_AMD64_VERSION = '3.17-1'; # including revision
+*DEBIAN_VERSION       = \$DEBIAN_I386_VERSION; # for backward compat
 
 $EMAIL_OLD	   = 'eserte@cs.tu-berlin.de';
 $EMAIL		   = 'slaven@rezic.de';
@@ -74,7 +75,9 @@ $DISPLAY_BBBIKE_PROJECT_DISTDIR   = 'http://sourceforge.net/projects/bbbike/file
 $SF_DISTDIR	      = 'http://sourceforge.net/projects/bbbike/files/BBBike';
 $SF_DISTFILE_SOURCE   = "$SF_DISTDIR/$STABLE_VERSION/BBBike-$STABLE_VERSION.tar.gz/download";
 $SF_DISTFILE_WINDOWS  = "$SF_DISTDIR/$WINDOWS_VERSION/BBBike-$WINDOWS_VERSION-Windows.exe/download";
-$SF_DISTFILE_DEBIAN   = "$SF_DISTDIR/" . join('', $DEBIAN_VERSION =~ m{(^[^-]+)}) . "/bbbike_${DEBIAN_VERSION}_i386.deb/download";
+$SF_DISTFILE_DEBIAN_I386  = "$SF_DISTDIR/" . join('', $DEBIAN_I386_VERSION =~ m{(^[^-]+)}) . "/bbbike_${DEBIAN_I386_VERSION}_i386.deb/download";
+$SF_DISTFILE_DEBIAN_AMD64 = "$SF_DISTDIR/" . join('', $DEBIAN_AMD64_VERSION =~ m{(^[^-]+)}) . "/bbbike_${DEBIAN_AMD64_VERSION}_amd64.deb/download";
+*SF_DISTFILE_DEBIAN = \$SF_DISTFILE_DEBIAN_I386; # compatibility
 $DISTFILE_FREEBSD_I386 = "ftp://ftp.FreeBSD.org/pub/FreeBSD/ports/i386/packages-stable/All/de-BBBike-3.17.tbz";
 *DISTFILE_FREEBSD = \$DISTFILE_FREEBSD_I386; # compatibility
 $DISTFILE_FREEBSD_ALL  = "http://portsmon.freebsd.org/portoverview.py?category=german&portname=BBBike";
