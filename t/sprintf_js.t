@@ -9,8 +9,10 @@
 
 use strict;
 use FindBin;
-use lib "$FindBin::RealBin/..";
-use BBBikeUtil qw(is_in_path);
+use lib (
+	 "$FindBin::RealBin/..",
+	 $FindBin::RealBin,
+	);
 
 BEGIN {
     if (!eval q{
@@ -22,18 +24,9 @@ BEGIN {
     }
 }
 
-my $js_interpreter = 'js';
+use JSTest;
 
-if (!is_in_path($js_interpreter)) {
-    plan skip_all => "$js_interpreter is missing";
-    exit 0;
-}
-
-my $res = eval { run_js(q{print("yes!")}) };
-if ($res ne "yes!\n") {
-    plan skip_all => "It seems that $js_interpreter exists, but it cannot be run...";
-    exit 0;
-}
+check_js_interpreter_or_exit;
 
 my @tests =
     (['Nothing',           [],              'Nothing'],
@@ -81,17 +74,6 @@ for my $test (@tests) {
     } else {
 	is $res, $out;
     }
-}
-
-sub run_js {
-    my $cmd = shift;
-    open my $fh, "-|", $js_interpreter, "-e", $cmd
-	or die $!;
-    local $/ = undef;
-    my $res = <$fh>;
-    close $fh
-	or die $!;
-    $res;
 }
 
 __END__
