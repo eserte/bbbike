@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2008,2009,2010,2011 Slaven Rezic. All rights reserved.
+# Copyright (C) 2008,2009,2010,2011,2012 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -17,7 +17,7 @@ use FindBin;
 use lib "$FindBin::RealBin/..";
 
 use vars qw($VERSION);
-$VERSION = 0.14;
+$VERSION = 0.15;
 
 use Cwd qw(cwd realpath);
 use Data::Dumper;
@@ -62,6 +62,7 @@ my $splitlonglines = 1; # XXX this may change once BBBikeXS has no length restri
 my $xmlparser;
 my %height_db;
 my $height_db_file;
+my $use_height_db = 0;
 my $no_create;
 
 my %experiments;
@@ -134,7 +135,8 @@ EOF
 	  )
     or die usage;
 
-&init_height_db($height_db_file) if $height_db_file;
+init_height_db($height_db_file)
+    if $height_db_file;
 
 my @osm_files = @ARGV;
 if (!@osm_files) {
@@ -256,7 +258,8 @@ my $cyclists_dismount_label = ($lang eq 'en' ? 'Cyclists dismount' : 'Radfahrer 
 sub init_height_db {
     my $file = shift;
 
-    my $fd = new IO::File $file, "r" or die "open '$file': $!\n";
+    my $fd = new IO::File $file, "r"
+	or die "open '$file': $!\n";
 
     my $use_rounding = 2;
 
@@ -270,9 +273,11 @@ sub init_height_db {
 	    $height = int(10*$height + 0.5)/10;
 	}
      
-	$height_db{ $coord } = $height;
+	$height_db{$coord} = $height;
     }
     close $fd;
+
+    $use_height_db = 1;
 }
 
 sub add_underline {
@@ -533,7 +538,6 @@ sub padding {
     return $lat;
 }
 
-# use Data::Dumper; print Dumper( \%height_db );
 ######################################################################
 # NODES
 my %node2ll;
@@ -671,12 +675,14 @@ for my $osm_file (@osm_files) {
 	    my $height = exists $tag{'height'} ? $tag{'height'} : $tag{'ele'};
 
 	    if (!defined $height) {
-	        my $lon2 = &padding($lon);
-	        my $lat2 = &padding($lat);
-
-	        if (exists $height_db{"$lon2,$lat2"} ) {
-		   $height = $height_db{"$lon2,$lat2"};
-	        }
+		if ($use_height_db) {
+		    my $lon_pad = padding($lon);
+		    my $lat_pad = padding($lat);
+		    my $lon_lat_pad = "$lon_pad,$lat_pad";
+		    if (exists $height_db{$lon_lat_pad} ) {
+			$height = $height_db{$lon_lat_pad};
+		    }
+		}
             } else {
 		# ignore metric description: "2 m" => "2"
 	        $height =~ s/\s*m$//;
