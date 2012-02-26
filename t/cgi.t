@@ -155,7 +155,8 @@ for my $cgiurl (@urls) {
     for my $output_as ("", qw(xml gpx-track gpx-route kml-track print perldump
 			      yaml yaml-short json json-short geojson palmdoc mapserver)) {
     SKIP: {
-	    skip "No mapserver tests", 2 if $skip{mapserver};
+	    skip "No mapserver tests", 2
+		if $output_as eq 'mapserver' && $skip{mapserver};
 
 	    my($content, $resp) = std_get "$action?startname=Dudenstr.&startplz=10965&startc=9222%2C8787&zielname=Grimmstr.+%28Kreuzberg%29&zielplz=10967&zielc=11036%2C9592&pref_seen=1&output_as=$output_as",
 					 testname => "Route result output_as=$output_as";
@@ -513,7 +514,8 @@ for my $cgiurl (@urls) {
 		      ) {
     SKIP: {
 	    my $tests = 3;
-	    skip "No mapserver tests", $tests if $skip{mapserver};
+	    skip "No mapserver tests", $tests
+		if $imagetype eq 'mapserver' && $skip{mapserver};
 
 	    my $imagetype_param = ($imagetype ne "" ? "imagetype=$imagetype&" : "");
 	    # This coords are sensitive to changes if
