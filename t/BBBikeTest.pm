@@ -1,10 +1,9 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeTest.pm,v 1.38 2008/02/20 23:04:06 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2004,2006,2008 Slaven Rezic. All rights reserved.
+# Copyright (C) 2004,2006,2008,2012 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -43,7 +42,7 @@ use BBBikeUtil qw(is_in_path);
 @EXPORT = (qw(get_std_opts set_user_agent do_display tidy_check
 	      xmllint_string xmllint_file gpxlint_string gpxlint_file kmllint_string
 	      eq_or_diff is_long_data like_long_data unlike_long_data
-	      like_html unlike_html is_float),
+	      like_html unlike_html is_float using_bbbike_test_cgi),
 	   @opt_vars);
 
 # Old logfile
@@ -55,8 +54,10 @@ use BBBikeUtil qw(is_in_path);
 # New server since 2009-12-XX
 $logfile = "$ENV{HOME}/www/log/bbbike.hosteurope/bbbike.de_access.log";
 
+my $testdir = dirname(File::Spec->rel2abs(__FILE__));
+
 # load test config file
-my $config_file = dirname(File::Spec->rel2abs(__FILE__)) . "/test.config";
+my $config_file = "$testdir/test.config";
 #$config_file.=".example";#XXX!
 if (-e $config_file) {
     require $config_file;
@@ -505,6 +506,13 @@ sub is_float ($$;$) {
     } else {
 	Test::More::is($value, $expected, $testname); # will fail
     }
+}
+
+sub using_bbbike_test_cgi () {
+    my $make = $^O =~ m{bsd}i ? "make" : is_in_path("freebsd-make") ? "freebsd-make" : "pmake";
+    # -f BSDmakefile needed for old pmake (which may be found in Debian)
+    system("cd $testdir/data && $make -f BSDmakefile");
+    Test::More::diag("Error running make, expect test failures...") if $? != 0;
 }
 
 1;

@@ -14,7 +14,7 @@ use FindBin;
 use lib ("$FindBin::RealBin/..",
 	 "$FindBin::RealBin",
 	);
-use BBBikeTest qw(set_user_agent $cgidir);
+use BBBikeTest qw(set_user_agent $cgidir using_bbbike_test_cgi);
 
 BEGIN {
     if (!eval q{
@@ -33,6 +33,8 @@ BEGIN {
 }
 
 BEGIN { plan tests => 10 }
+
+using_bbbike_test_cgi;
 
 my $cookie_jar_file = File::Temp::tempnam(File::Spec->tmpdir, "bbbike_cookies_");
 END { unlink $cookie_jar_file if defined $cookie_jar_file }
