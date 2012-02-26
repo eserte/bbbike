@@ -164,6 +164,7 @@ EOF
 
 	SKIP: {
 		my $form = $agent->current_form;
+		$form->strict(1) if $form->can('strict');
 		$form->value("routefile", $filename);
 		eval { $form->value("imagetype", "png") };
 		skip("Cannot do png imagetype", $png_tests) if $@;
@@ -184,6 +185,7 @@ EOF
 
 	SKIP: {
 		my $form = $agent->current_form;
+		$form->strict(1) if $form->can('strict');
 		$form->value("routefile", $filename);
 		eval { $form->value("imagetype", "pdf-auto") };
 		skip("Cannot do pdf imagetype", $pdf_tests) if $@;
@@ -205,6 +207,7 @@ EOF
 	    
 	SKIP: {
 		my $form = $agent->current_form;
+		$form->strict(1) if $form->can('strict');
 		$form->value("routefile", $filename);
 		eval { $form->value("imagetype", "mapserver") };
 		skip("Cannot do mapserver imagetype", $mapserver_tests) if $@;
