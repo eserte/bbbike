@@ -1,14 +1,14 @@
 #!/usr/bin/perl -w
-# -*- perl -*-
+# -*- mode: perl; coding: iso-8859-1; -*-
 
 #
-# $Id: cgi-cookie.t,v 1.3 2009/02/01 13:19:39 eserte Exp $
 # Author: Slaven Rezic
 #
 
 # Test storing preferences into cookie.
 
 use strict;
+no utf8;
 
 use FindBin;
 use lib ("$FindBin::RealBin/..",
@@ -18,6 +18,7 @@ use BBBikeTest qw(set_user_agent $cgidir);
 
 BEGIN {
     if (!eval q{
+	use CGI '-oldstyle_urls';
 	use File::Spec;
 	use File::Temp;
 	use HTTP::Cookies;
@@ -45,17 +46,27 @@ $ua->cookie_jar($cookie_jar);
 
 my $bbbike_cgi = "$cgidir/bbbike.cgi";
 
-my $pref = {speed => 20,
-	    cat => "N1",
-	    quality => "Q2",
-	    ampel => "yes",
-	    green => "GR1",
+my %pref = (speed	 => 20,
+	    cat		 => "N1",
+	    quality	 => "Q2",
+	    ampel	 => "yes",
+	    green	 => "GR1",
 	    fragezeichen => "yes",
-	   };
+	   );
+
+my %common_args = (startc    => '26615,14054',
+		   startname => 'Dahlwitzer Str./Lemkestr./Hoppegartener Str. (Hönow)',
+		   zielname  => 'Hannoversche Str.',
+		   zielplz   => '10115',
+		   zielc     => '9203,13463',
+		   scope     => 'region',
+		  );
 
 {
-    my $qs = 'startc=26615%2C14054&startname=Dahlwitzer+Str.%2FLemkestr.%2FHoppegartener+Str.+%28H%F6now%29&zielname=Hannoversche+Str.&zielplz=10115&zielc=9203%2C13463&scope=region&';
-    $qs .= "pref_seen=1&pref_speed=$pref->{speed}&pref_cat=$pref->{cat}&pref_quality=$pref->{quality}&pref_ampel=$pref->{ampel}&pref_green=$pref->{green}&pref_fragezeichen=$pref->{fragezeichen}";
+    my $qs = CGI->new({ %common_args,
+			(map {("pref_$_" => $pref{$_})} keys %pref),
+			'pref_seen'=>1,
+		      })->query_string;
     my $res = $ua->get("$bbbike_cgi?$qs");
     ok($res->is_success);
 
@@ -73,14 +84,14 @@ my $pref = {speed => 20,
 }
 
 {
-    my $qs = 'startc=26615%2C14054&startname=Dahlwitzer+Str.%2FLemkestr.%2FHoppegartener+Str.+%28H%F6now%29&via=&viahnr=&viacharimg.x=&viacharimg.y=&viamapimg.x=&viamapimg.y=&zielname=Hannoversche+Str.&zielplz=10115&zielhnr=&scope=region';
+    my $qs = CGI->new({ %common_args })->query_string;
     my $mech = WWW::Mechanize->new;
     set_user_agent($mech);
     $mech->cookie_jar($cookie_jar);
     my $res = $mech->get("$bbbike_cgi?$qs");
     ok($res->is_success);
     for my $q (qw(speed cat quality ampel green fragezeichen ferry)) {
-	is($mech->current_form->value("pref_$q"), $pref->{$q}, "Expected preference $q");
+	is($mech->current_form->value("pref_$q"), $pref{$q}, "Expected preference $q");
     }
 }
 
