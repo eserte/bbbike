@@ -14,7 +14,7 @@ use FindBin;
 use lib ("$FindBin::RealBin/..",
 	 "$FindBin::RealBin",
 	);
-use BBBikeTest qw(set_user_agent $cgiurl $cgidir);
+use BBBikeTest qw(set_user_agent $cgidir);
 
 BEGIN {
     if (!eval q{
@@ -43,7 +43,7 @@ my $cookie_jar = HTTP::Cookies->new(file => $cookie_jar_file,
 $cookie_jar->clear;
 $ua->cookie_jar($cookie_jar);
 
-my $bbbike_cgi = "$cgiurl/bbbike.cgi";
+my $bbbike_cgi = "$cgidir/bbbike.cgi";
 
 my $pref = {speed => 20,
 	    cat => "N1",
