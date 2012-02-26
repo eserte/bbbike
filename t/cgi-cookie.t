@@ -44,7 +44,7 @@ my $cookie_jar = HTTP::Cookies->new(file => $cookie_jar_file,
 $cookie_jar->clear;
 $ua->cookie_jar($cookie_jar);
 
-my $bbbike_cgi = "$cgidir/bbbike.cgi";
+my $bbbike_cgi = "$cgidir/bbbike-test.cgi";
 
 my %pref = (speed	 => 20,
 	    cat		 => "N1",
@@ -54,12 +54,12 @@ my %pref = (speed	 => 20,
 	    fragezeichen => "yes",
 	   );
 
-my %common_args = (startc    => '26615,14054',
-		   startname => 'Dahlwitzer Str./Lemkestr./Hoppegartener Str. (Hönow)',
-		   zielname  => 'Hannoversche Str.',
-		   zielplz   => '10115',
-		   zielc     => '9203,13463',
-		   scope     => 'region',
+my %common_args = (startc    => '9229,8785',
+		   startname => 'Dudenstr.',
+		   zielname  => 'Metfesselstr.',
+		   zielplz   => '10965',
+		   zielc     => '8982,8781',
+		   scope     => 'city',
 		  );
 
 {
