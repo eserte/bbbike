@@ -1,10 +1,9 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeRuler.pm,v 1.22 2008/12/31 16:39:14 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2002,2008 Slaven Rezic. All rights reserved.
+# Copyright (C) 2002,2008,2012 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -331,7 +330,7 @@ sub motion {
 	    }
 	}
     } else {
-	$message = sprintf(M("Winkel").": %d°; Dist: %dm",
+	$message = sprintf(M("Winkel").": %d° | Dist: %dm",
 			   rad2deg($deg)%360, $dist);
 	if (@main::speed) {
 	    for my $speed (@main::speed) {
@@ -340,7 +339,7 @@ sub motion {
 	}
 	# Manhatten-Distance-related
 	my $manh_dist = abs($new_real_x-$real_x)+abs($new_real_y-$real_y);
-	$message .= sprintf "; Manh.-Dist: %dm", $manh_dist;
+	$message .= sprintf " | Manh.-Dist: %dm", $manh_dist;
 	if (@main::speed) {
 	    for my $speed (@main::speed) {
 		$message .= ", \@ $speed km/h: " . _fmt_time($manh_dist/($speed/3.6));
