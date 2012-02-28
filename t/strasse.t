@@ -2,7 +2,6 @@
 # -*- perl -*-
 
 #
-# $Id: strasse.t,v 1.16 2008/07/16 18:32:13 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -127,13 +126,22 @@ my @parse_street_type_nr_tests =
      ["Berliner Mauer-Radweg", "M", undef, 1],
     );
 
+my @de_artikel_tests =
+    (
+     ['Dudenstr.', 'in die'],
+     ['Mehringdamm', 'in den'],
+     ['Rue Diderot', 'in die'],
+     ['Via Tilia', 'in die'],
+    );
+
 my $strip_bezirk_tests = 7;
 plan tests => (scalar(@split_street_citypart) +
 	       scalar(@beautify_landstrasse)*2 +
 	       scalar(@street_type_nr)*2 +
 	       $strip_bezirk_tests +
 	       scalar(@crossing_tests) +
-	       3*scalar(@parse_street_type_nr_tests)
+	       3*scalar(@parse_street_type_nr_tests) +
+	       scalar(@de_artikel_tests)
 	      );
 
 for my $s (@split_street_citypart) {
@@ -205,5 +213,10 @@ for my $def (@crossing_tests) {
     my @crossings = Strasse::split_crossing($text);
     is_deeply(\@crossings, \@exp_crossings, "Crossing split on $display_text");
 }
-	     
+
+for my $def (@de_artikel_tests) {
+    my($street, $artikel) = @$def;
+    is Strasse::de_artikel($street), $artikel, "de_artikel for $street";
+}
+
 __END__
