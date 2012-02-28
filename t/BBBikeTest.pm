@@ -345,10 +345,9 @@ sub gpxlint_string {
 	    Test::More::diag("GPX schema file <$gpx_schema> not found or not readable, continue with schema-less checks...");
 	    $shown_gpx_schema_warning = 1;
 	}
-	xmllint_string($content, $test_name, %args);
-    } else {
-	xmllint_string($content, $test_name, %args, -schema => $gpx_schema);
+	undef $gpx_schema;
     }
+    xmllint_string($content, $test_name, %args, ($gpx_schema ? (-schema => $gpx_schema) : ()));
 }
 
 # only usable with Test::More, generates one test
@@ -367,13 +366,24 @@ sub kmllint_string {
  					 "misc",
  					 "kml21.xsd");
     if (!-r $kml_schema) {
-	if (!$shown_kml_schema_warning) {
-	    Test::More::diag("Local KML schema $kml_schema cannot be found, fallback to remote schema...");
-	    $shown_kml_schema_warning = 1;
+	if (1) {
+	    # since 2012-02-28 the schema file is located on a https URL
+	    # https://developers.google.com/kml/schema/kml21.xsd
+	    # which xmllint cannot handle
+	    if (!$shown_kml_schema_warning) {
+		Test::More::diag("Local KML schema $kml_schema cannot be found, continue with schema-less checks...");
+		$shown_kml_schema_warning = 1;
+	    }
+	    undef $kml_schema;
+	} else {
+	    if (!$shown_kml_schema_warning) {
+		Test::More::diag("Local KML schema $kml_schema cannot be found, fallback to remote schema...");
+		$shown_kml_schema_warning = 1;
+	    }
+	    $kml_schema = "http://code.google.com/apis/kml/schema/kml21.xsd";
 	}
-	$kml_schema = "http://code.google.com/apis/kml/schema/kml21.xsd";
     }
-    xmllint_string($content, $test_name, %args, -schema => $kml_schema);
+    xmllint_string($content, $test_name, %args, ($kml_schema ? (-schema => $kml_schema) : ()));
 }
 
 sub failed_long_data {
