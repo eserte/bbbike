@@ -70,6 +70,8 @@ sub de_artikel {
 	"=>";
     } elsif ($strasse =~ /^(avenue\b|rue\b|allée)\b/i) { # oh la la
 	"in die";
+    } elsif ($strasse =~ /^(via\b)\b/i) {
+	"in die";
     } elsif ($strasse =~ /(str\.|straße\b|allee\b|chaussee\b|promenade\b|zeile\b|gasse\b|kehre\b)/i) {
 	"in die";
     } elsif ($strasse =~ /(park\b|garten\b|ring\b)/i) {
