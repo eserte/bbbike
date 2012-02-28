@@ -1,10 +1,9 @@
 # -*- perl -*-
 
 #
-# $Id: Descr.pm,v 1.4 2008/09/16 19:40:42 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2002 Slaven Rezic. All rights reserved.
+# Copyright (C) 2002,2012 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -16,7 +15,7 @@ package Route::Descr;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.4 $ =~ /(\d+)\.(\d+)/);
+$VERSION = '1.05';
 
 use Cwd qw(abs_path);
 use File::Basename qw(dirname);
@@ -151,7 +150,7 @@ sub convert {
 		    $richtung .= '->';
 		} else {
 		    if ($same_streetname_important_angle) {
-			$richtung .= 'weiter ' . Strasse::de_artikel_genitiv($strname);
+			$richtung .= 'weiter ' . Strasse::de_artikel_dativ($strname);
 		    } else {
 			$richtung .= Strasse::de_artikel($strname);
 		    }

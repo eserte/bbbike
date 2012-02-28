@@ -95,15 +95,17 @@ sub de_artikel {
     }
 }
 
-# XXX Maybe de_artikel and de_artikel_genitiv should be refactored so
+# XXX Maybe de_artikel and de_artikel_dativ should be refactored so
 # the regexps are not duplicated here.
-sub de_artikel_genitiv {
+sub de_artikel_dativ {
     my($strasse) = @_;
     if ($strasse =~ /^(am|an|auf|hinter|im|in|unter|zum|zur|zwischen|u-bhf|s-bhf)\b/i) {
 	"=>";
     } elsif ($strasse =~ / - /) {
 	"=>";
     } elsif ($strasse =~ /^(avenue\b|rue\b|allée)\b/i) { # oh la la
+	"auf der";
+    } elsif ($strasse =~ /^(via\b)\b/i) {
 	"auf der";
     } elsif ($strasse =~ /(str\.|straße\b|allee\b|chaussee\b|promenade\b|zeile\b|gasse\b|kehre\b)/i) {
 	"auf der";
