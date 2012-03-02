@@ -13318,7 +13318,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_011184',
        data  => <<EOF,
-#: last_checked: 2012-01-05
+#: last_checked: 2012-02-01
 userdel	q4::inwork; 10350,13376 10527,13257
 EOF
      },
@@ -19817,7 +19817,7 @@ EOF
        text  => 'Rüdersdorfer Str.: Einbahnstraße zwischen Fredersdorfer Str. und Wedekindstr., offen in Richtung Osten',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q3::inwork; 13066,11854 12891,12008
+userdel	q3::inwork; 13066,11854 13052,11867 12891,12008
 EOF
      },
      { from  => 1318996800, # 2011-10-19 06:00
@@ -19994,6 +19994,17 @@ EOF
        source_id => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20120223.1505.366579.html',
        data  => <<EOF,
 userdel	q4::inwork 2295,20358 2241,20487
+EOF
+     },
+     { from  => 1330902000, # 2012-03-05 00:00
+       until => 1388530799, # 2013-12-31 23:59
+       text  => 'Neubau der Ruppiner Chaussee, Fahrbahn Richtung Tegel bis Schulzendorfer Str. gesperrt, bis Ende 2013',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20120228.1300.366751.html',
+       data  => <<EOF,
+#: XXX nach den Bauarbeiten Radwege auf beiden Seiten
+#: next_check: 2013-12-01
+userdel	q4::inwork; -1872,24336 -1790,24260 -1627,24105 -1367,23853 -1286,23753 -1281,23746 -1084,23564 -997,23492 -984,23480 -903,23406 -783,23190 -656,23011
 EOF
      },
     );

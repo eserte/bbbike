@@ -6752,6 +6752,9 @@ Idealpassage: Asphalt	Q0- 12434,8776 12578,8654
 #: XXX: public imagery
 Hüttigpfad: Verbundsteinpflaster	Q1 4810,15000 4724,15055 4668,15066 4598,15057 4459,15066
 (entlang der Hedwigskathedrale): Pflasterung	Q2+ 9808,12182 9775,12178 9771,12190 9747,12205
+(Am Wriezener Bahnhof - Rüdersdorfer Str.): Asphalt	Q0 12944,11760 13052,11867
+#: note: bei Regen viele Pfützen
+Hermann-Stöhr-Platz: wassergebundene Decke, holprig	Q2+ 12453,11790 12409,11902
 ######################### User Contributions #################################
 #: by: anonymous vvv
 # 
@@ -12064,6 +12067,7 @@ Alemannenstr. (Frohnau): Kleinpflastersteine	Q2 1736,24722 1747,24606 1747,24549
 Alemannenstr. (Frohnau): Kleinpflastersteine	Q2 1750,24433 1776,24416
 #: XXX: Neubau der Alemannenstraße 2011, danach vieleicht asphaltiert?
 #: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20110509.1130.343559.html
+#: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20120302.1255.366915.html
 #: next_check: 2011-11-30
 Alemannenstr. (Frohnau): Kleinpflastersteine	Q2 1466,25910 1501,25675 1558,25505 1568,25477 1627,25386
 #: corrected_by: srt (Kleinpflastersteine -> Asphalt)
@@ -18277,10 +18281,12 @@ Mollstr.: Beton	Q0 11739,13131 11719,13088 11660,12963
 Mollstr.: Beton	Q0 11673,12955 11622,12850
 Weydemeyerstr.: Beton	Q1 12124,12852 12054,12903 11983,12949
 Weydemeyerstr.: Beton	Q1- 11983,12949 11952,12871 11921,12810 11890,12750
-(Weydemeyerstr.): Gehwegplatten	Q0 11890,12750 11818,12785 11805,12760
-(Weydemeyerstr.): Beton	Q2 11933,12701 11971,12785 11921,12810
-#: corrected_by: srt (Q2 -> Q2+, genauere Beschreibung)
-Weydemeyerstr.: mäßiger Beton, Fugen	Q2+ 11725,12809 11805,12760 11933,12701 11969,12681 12039,12675 12064,12673
+(Weydemeyerstr.): Gehwegplatten	Q0- 11890,12750 11818,12785
+(Weydemeyerstr.): Beton	Q0- 11818,12785 11805,12760
+#: corrected_by: srt Q2 -> Q1-
+(Weydemeyerstr.): Beton	Q1- 11933,12701 11971,12785 11921,12810
+#: confirmed_by: srt
+Weydemeyerstr.: mäßiger Beton, Fugen	Q2 11725,12809 11805,12760 11933,12701 11969,12681 12039,12675 12064,12673
 (Karl-Marx-Allee): Gehwegplatten	Q0 11584,12863 11600,12857 11622,12850 11725,12809
 (Karl-Marx-Allee - Berolinastr.): Gehwegplatten	Q0 11419,12944 11362,12964 11295,12915
 (Karl-Marx-Allee - Berolinastr.): Gehwegplatten	Q0 11600,12857 11589,12768
@@ -19031,7 +19037,7 @@ Kleine Jägerstr.: Asphalt	Q0 9995,11910 10050,11942 10071,11957
 Alte Leipziger Str.: Asphalt	Q0 10076,11840 10118,11907
 Kleine Gertraudenstr.: Gehwegplatten	Q1 10332,11929 10364,11896 10391,11898
 #: corrected_by: srt (Beton, Q1 -> Asphalt, Q0)
-Am Wriezener Bahnhof: Asphalt	Q0 12744,11904 12794,11893 12993,11717
+Am Wriezener Bahnhof: Asphalt	Q0 12744,11904 12794,11893 12944,11760 12993,11717
 #: corrected_by: srt (Q2 -> Q2-)
 (Scottweg - Tharauer Allee): buckliger Asphalt	Q2- -1403,11279 -1505,11307
 Plathweg: Beton	Q1 -3669,11766 -3696,11771 -3714,11782 -3732,11809 -3786,11913

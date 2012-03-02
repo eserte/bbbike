@@ -245,6 +245,7 @@ Am Volkspark: Parkweg	q1 5745,8194 5934,8220
 Karl-Marx-Allee - Marchlewskistr.: Gehweg	q2 12869,12425 12950,12340 12985,12303
 #: XXX_prog: zus‰tzlich noch Bordsteine an der ˆstlichen Seite (BS)
 Lange Str. [vor Kaufhof]: Fuﬂg‰nger	q2 12409,11902 12522,11837
+Hermann-Stˆhr-Platz: Fuﬂg‰nger	q2 12453,11790 12409,11902
 Gotenstr./Cheruskerstr. - Kolonnenstr.: Fuﬂg‰nger	q2 7488,8768 7548,8879
 Nettelbeckplatz: Fuﬂg‰nger	q2 8024,15401 7989,15412 7891,15417
 Nettelbeckplatz: Fuﬂg‰nger	q2 7953,15362 7989,15412
@@ -576,6 +577,7 @@ Kiautschoustr.: Fuﬂg‰nger, Bordsteine	q3 6837,14848 6853,14854
 Baruther Str.: gemeinsamer Rad- und Gehweg	q1 9588,9827 9723,9842
 (Aldi/Getr‰nke-Hoffmann-Parkplatz): Parkplatz	q1 13208,11658 13186,11692 13173,11788
 (Schmidstr. - Heinrich-Heine-Str.): Bordsteine, Fuﬂg‰nger	q3 11236,11508 11170,11558
+#: XXX_prog BS am westlichen Ende, ˆstliches ist leicht abgesenkt
 (Entlang des Stadtbahnviadukts): Bordsteine, Fuﬂg‰nger	q2 11966,11832 12132,11788
 (Maybachufer - Weigandufer): Radfahren nicht erlaubt, ggfs. schieben	q3 12851,9309 12907,9073
 (Parkplatz CharitÈ): Fuﬂg‰nger, parkende Autos	q1 8828,13434 8808,13380 8778,13368 8665,13353
@@ -1117,6 +1119,8 @@ Elisabeth-Schwarzhaupt-Platz: einige Fuﬂg‰nger	q1 9274,13963 9167,14127
 Idealpassage: Fuﬂg‰nger, eng, Schrittgeschwindigkeit	q3 12434,8776 12578,8654
 #: XXX_prog BS (die umfahrbare Stufe vielleicht in ein BS umwandeln? Oder auch nicht)
 (entlang der Hedwigskathedrale): Fuﬂg‰nger, eine (umfahrbare) Stufe	q2 9808,12182 9775,12178 9771,12190 9747,12205
+#: XXX_prog BS (beide Enden, am nˆrdlichen kann man es durch einen weiten Bogen umfahren)
+(Am Wriezener Bahnhof - R¸dersdorfer Str.): enger Weg, Bordsteine	q2 12944,11760 13052,11867
 #
 ######################### User Contributions #################################
 # 
@@ -1396,7 +1400,7 @@ Claire-Waldoff-Weg: Fuﬂg‰nger	q2 3635,8099 3587,7560
 Bissingzeile: Einspurig, eng bei Gegenverkehr	q1 7959,10910 8113,10786
 (Volkspark Friedrichshain, parallel zur Friedenstr.): Fuﬂg‰nger	q1 12386,13085 12387,13107 12344,13157 12248,13254 12194,13307 12148,13348 12088,13403 12005,13481 11943,13545 11857,13596 11823,13610 11785,13625
 (Weydemeyerstr.): Fuﬂg‰nger	q1 11890,12750 11818,12785 11805,12760
-(Weydemeyerstr.): Fuﬂg‰nger	q1 11933,12701 11971,12785 11921,12810
+(Weydemeyerstr.): einige Fuﬂg‰nger	q0- 11933,12701 11971,12785 11921,12810
 (Karl-Marx-Allee): Fuﬂg‰nger, Bordsteine	q1 11584,12863 11600,12857 11622,12850 11725,12809
 (Karl-Marx-Allee - Berolinastr.): Fuﬂg‰nger	q1 11419,12944 11362,12964
 (Karl-Marx-Allee - Berolinastr.): Fuﬂg‰nger	q1 11600,12857 11589,12768

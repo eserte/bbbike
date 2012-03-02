@@ -7,7 +7,7 @@ push @temp_blocking,
          'text' => 'Weinmeisterstr. (Mitte) in Richtung Alexanderplatz gesperrt',
          'from' => undef,
          'id' => 1567,
-         'data' => '#: last_checked: 2012-01-05
+         'data' => '#: last_checked: 2012-02-01
 userdel	q4::inwork; 10350,13376 10527,13257
 ',
          'type' => 'gesperrt'
@@ -811,7 +811,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        {
          'until' => undef,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Februar von 7.00 bis 18.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im März bis 19.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'from' => undef,
          'id' => 2068,
          'data' => '(Eingang Columbiadamm - Rundkurs auf dem Flughafen Tempelhof)	2::night 10691,8532 10644,8363 10598,8270 10575,8218
@@ -1351,6 +1351,18 @@ userdel	2::inwork 19968,16 19940,52
          'from' => 1330988400,
          'id' => 2315,
          'data' => 'userdel	q4::inwork 2295,20358 2241,20487
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20120228.1300.366751.html',
+         'until' => 1388530799,
+         'text' => 'Neubau der Ruppiner Chaussee, Fahrbahn Richtung Tegel bis Schulzendorfer Str. gesperrt, bis Ende 2013',
+         'from' => 1330902000,
+         'id' => 2316,
+         'data' => '#: XXX nach den Bauarbeiten Radwege auf beiden Seiten
+#: next_check: 2013-12-01
+userdel	q4::inwork; -1872,24336 -1790,24260 -1627,24105 -1367,23853 -1286,23753 -1281,23746 -1084,23564 -997,23492 -984,23480 -903,23406 -783,23190 -656,23011
 ',
          'type' => 'handicap'
        }
