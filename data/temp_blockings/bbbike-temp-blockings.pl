@@ -850,7 +850,7 @@ EOF
        text  => 'Lückstr. Richtung stadteinwärts zwischen Schlichtallee und Wönnichstr. Baustelle, Straße gesperrt (bis Mitte 10.2004) ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1 16699,10611 16647,10632 16588,10655 16460,10699 16316,10755 16303,10760 16153,10818 16085,10844 16032,10842
+userdel	1 16699,10611 16647,10632 16601,10650 16588,10655 16460,10699 16316,10755 16303,10760 16153,10818 16085,10844 16032,10842
 EOF
      },
      { from  => 1094627730, # 2004-09-08 09:15

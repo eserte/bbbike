@@ -235,8 +235,8 @@ Bidenswinkel: wird hier noch ein Strang der Straße entstehen? Qualität?	?::inwor
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/32re.pdf/file
 #: XXX Privatstraße, fehlt in Berlin.coords.data
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/50re.pdf/file?y=2011 (neue Hausnummern)
-#: last_checked: 2011-09-24
-#: next_check: 2012-03-01
+#: last_checked: 2012-03-03
+#: next_check: 2012-05-01
 Edith-Stein-Str.: Qualität nach den Bauarbeiten? Genaue Lage der Straße?	?::inwork 14084,13232 14048,13116
 # 
 #: last_checked: 2011-07-09 vvv
@@ -268,8 +268,8 @@ Hauptstraße/Kastanienallee: neue Ampel in Bau	?::inwork 7992,20515
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/30re.pdf/file
 #: XXX fehlt in Berlin.coords.data
 #: XXX siehe auch Eintrag für "Am Langen Jammer" in gesperrt-orig
-#: last_checked: 2011-09-24
-#: next_check: 2012-02-15
+#: last_checked: 2012-03-03
+#: next_check: 2012-05-01
 An den Eldenaer Höfen: wo genau wird die Straße liegen? Qualität?	?::inwork 14431,12903 14476,12836
 # 
 #XXX del --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1104/nachricht4274.html --- #: XXX die Straße wird Radstreifen haben --- #: XXX neue Ampel an der neuen Kreuzung (wahrscheinlich anstelle der alten Fußgängerampel) --- #: last_checked: 2011-08-19 --- #: next_check: 2012-04-01 --- Axel-Springer-Str.: Verbindung zum Spittelmarkt	?::inwork 10166,11592 10213,11728
@@ -580,12 +580,16 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20120302.1240.366909.html
 #: next_check: 2012-07-31
 Königsheideweg: Geh- und Radwegarbeiten im Königsheideweg - gibt es danach hier Radwege?	?::inwork 16784,4913 16554,5022 16362,5112 16279,5170
-Hauptstr.: besteht hier weiterhin die Radwegbenutzungspflicht? (im westlichen Abschnitt mittlerweile aufgehoben)	? 15639,10469 16004,10204 16114,10123 16138,10105 16191,10035
 Radroutenwegführung überprüfen	? 9890,12161 9875,12257 9869,12297 9852,12409
 Vulkanstr./Landsberger Allee - Große Leegestr.: hier existiert wohl eine Radwegführung mit Ampel, genauer anschauen!	? 15838,14319 15837,14324 15923,14334 15922,14344 15920,14357
 Alt-Lankwitz: parallele Fahrbahn, Qualität, genaue Lage?	? 7412,3484 7419,3500 7249,3598 7057,3713
+# 
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120207.1005.365838.html vvv
-Hirschberger/Schreiberhauser: gibt es hier einen Zebrastreifen?	? 15188,11090 15212,11053
+#: last_checked: 2012-03-03
+#: next_check: 2012-05-01
+Hirschberger/Schreiberhauser: wird es hier einen Zebrastreifen geben?	? 15188,11090 15212,11053
+#: last_checked: 2012-03-03
+#: next_check: 2012-05-01
 Weitlingstr.: für 2012 geplanter Zebrastreifen? Wo genau?	?::projected 16705,11526 16734,11416
 Degnerstr.: für 2012 geplanter Zebrastreifen? Wo genau?	?::projected 16537,15884 16535,15764
 Dorfstr.: für 2012 geplanter Zebrastreifen? Wo genau?	?::projected 19285,18489 19429,18368
@@ -613,8 +617,7 @@ Neue Grottkauer Str.: Zebrastreifen, wo genau?	? 23189,13920 23368,13936
 #: by: Ingo Kahl:
 Stadtgärten - Saupéweg: Poller existiert: Behinderung für Radfahrer oder nur gesperrt für Autos?	? 11518,21727 11589,21713
 # 
-#: XXX proposed by steffi.sport...
-Lückstr. - Zobtener Str.: Gibt es hier eine Querverbindung? Qualität, Ausschilderung, nachts beleuchtet?	? 16588,10655 16488,10381 16423,10259 16379,10218
+#: XXX del ---  proposed by steffi.sport... --- Lückstr. - Zobtener Str.: Gibt es hier eine Querverbindung? Qualität, Ausschilderung, nachts beleuchtet?	? 16601,10650 16587,10613 16572,10613 16501,10460 16516,10448 16488,10381 16404,10286
 # 
 Rubensstr./Innsbrucker Platz: existiert hier ein Radweg? Qualität?	? 6489,7908 6444,7960
 # 
@@ -3797,7 +3800,6 @@ Stabholzgarten: Existiert eine Verbindung durch die Grünanlage? Qualität? Nachts
 #: XXX evtl. auch als Park/Grünanlage eintragen
 Immenweidepark: Qualität?	? -2114,17878 -2169,17882 -2241,17847 -2298,17868 -2366,17868 -2388,17893
 Andreas-Rabe-Siedlung: Qualität? Ausgeschildert?	? 6898,23233 6912,23237 6967,23278 7078,23340 7027,23459
-Skandinavische Str.: hinter den Häusern, existiert eine ebenerdige Verbindung zur Lichtenberger Brücke?	? 17191,11973 17029,11903 16975,11858
 Ruhlebener Str. - Uferweg: existiert ein Zugang? Wieviele Treppenstufen?	? -3621,13884 -3493,13782
 #: XXX neue Straßen in Potsdam: Qualität? Genauer Verlauf? vvv
 #: by: http://www.potsdam.de/cms/dokumente/10084122_1189396/4d29ee09/Amtsblatt_9_2011.pdf vvv

@@ -281,7 +281,12 @@ Weiterfahrt durch die Kleingartenanlage möglich, allerdings nur tagsüber während
 	culdesac 18626,13820
 	culdesac 17698,13124
 	culdesac 15746,12209
-	culdesac 16079,12432
+	culdesac_pseudo 16079,12432
+	culdesac_pseudo 16089,12522
+	culdesac_pseudo 16587,10613
+	culdesac_pseudo 15433,12686
+	culdesac_pseudo 15395,12762
+	culdesac_pseudo 14285,12190
 	culdesac 16541,12064
 	culdesac 17230,12481
 	culdesac 18766,13257
@@ -439,7 +444,7 @@ Weiterfahrt in den Innovationspark möglich	culdesac_pseudo 21284,7043
 	culdesac 14087,11467
 Zugang zur S-Bahn	culdesac_pseudo 14845,10954
 	culdesac 15079,10108
-	culdesac 16290,9670
+	culdesac 16337,9581
 	culdesac 15842,9891
 	culdesac 15716,10065
 	culdesac 15567,10235
@@ -783,6 +788,8 @@ Zugang zum Bad	culdesac_pseudo 7344,13435
 	culdesac 23615,6884
 	culdesac_pseudo 22876,6598
 	culdesac_pseudo 23585,6523
+	culdesac_pseudo 17026,11888
+	culdesac_pseudo 16326,11966
 #: section ^^^
 ######################################################################
 # busroute
@@ -1282,3 +1289,5 @@ Am Klötzgraben: Privatstraße	CS 6651,23020 6741,23117 6779,23139 6817,23167 6890
 Eisbärenweg: Privatstraße	CS 6909,17796 6950,17669
 über den Luisenstädtischen Grünzug	CS 11190,10619 11145,10638
 (Tiefhornweg): Uferpromenade	CS -7318,2567 -7420,2563 -7562,2431 -7833,2277 -8085,2252 -8141,2211 -8262,2178 -8328,2181 -8400,2156
+(Zobtener Str. - Fischerstr.): durch eine Kleingartenanlage	CS 16353,10207 16404,10286
+(Skandinavische Str. - Lichtenberger Brücke/Monimbóplatz): Straße verläuft zwischen Bahnstrecke und Wohnhäusern	CS 17210,11950 17201,11975 17137,11969 17023,11908 17026,11888
