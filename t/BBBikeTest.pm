@@ -276,15 +276,15 @@ sub tidy_check {
 sub xmllint_string {
     my($content, $test_name, %args) = @_;
     my $schema = delete $args{-schema};
+    $test_name = "xmllint check" if !$test_name;
     local $Test::Builder::Level = $Test::Builder::Level+1;
  SKIP: {
 	my $no_of_tests = 1;
 	if (eval {
 	    require XML::LibXML;
-	    if ($schema) {
-		require XML::LibXML::Schema;
+	    if ($schema && $schema =~ m{^https://}) {
+		require LWP::UserAgent;
 	    }
-	    die "NYI";
 	    1;
 	}) {
 	    _xmllint_string_with_XML_LibXML($content, $test_name, %args, -schema => $schema);
@@ -301,12 +301,58 @@ sub xmllint_string {
     }
 }
 
-sub _xmllint_string_with_xmllint {
+sub _xmllint_string_with_XML_LibXML {
     my($content, $test_name, %args) = @_;
     my $schema = delete $args{-schema};
     local $Test::Builder::Level = $Test::Builder::Level+1;
 
-    $test_name = "xmllint check" if !$test_name;
+    my @errors;
+
+    my $p = XML::LibXML->new;
+    my $doc = eval { $p->parse_string($content) };
+    if (!$doc || $@) {
+	push @errors, "XML document is not well-formed:\n$@";
+    } elsif ($schema) {
+	my @schema_args;
+	if ($schema =~ m{^https://}) {
+	    my $ua = LWP::UserAgent->new;
+	    my $resp = $ua->get($schema);
+	    if (!$resp->is_success) {
+		push @errors, "Can't fetch $schema with LWP: " . $resp->message;
+	    } else {
+		@schema_args = (string => $resp->decoded_content);
+	    }
+	} else {
+	    @schema_args = (location => $schema);
+	}
+	if (@schema_args) {
+	    my $xmlschema = XML::LibXML::Schema->new(@schema_args);
+	    if (!eval { $xmlschema->validate($doc); 1 }) {
+		push @errors, "XML document has validation errors:\n$@";
+	    }
+	}
+    }
+
+    my $ok = Test::More::ok(!@errors, $test_name) or do {
+	my $diag = "Errors:\n" . join("\n", @errors) . "\nXML:\n" . $content;
+	if (length $diag > 1024) {
+	    require File::Temp;
+	    my($tempfh,$tempfile) = File::Temp::tempfile(SUFFIX => ".xml",
+							 UNLINK => 0);
+	    print $tempfh $diag;
+	    close $tempfh;
+	    Test::More::diag("Please look at <$tempfile> for the tested XML content");
+	} else {
+	    Test::More::diag($diag);
+	}
+    };
+    $ok;
+}
+
+sub _xmllint_string_with_xmllint {
+    my($content, $test_name, %args) = @_;
+    my $schema = delete $args{-schema};
+    local $Test::Builder::Level = $Test::Builder::Level+1;
 
     require File::Temp;
     my($errfh,$errfile) = File::Temp::tempfile(SUFFIX => ".log",
@@ -387,7 +433,7 @@ sub kmllint_string {
  					 "misc",
  					 "kml21.xsd");
     if (!-r $kml_schema) {
-	if (1) {
+	if (0) {
 	    # since 2012-02-28 the schema file is located on a https URL
 	    # https://developers.google.com/kml/schema/kml21.xsd
 	    # which xmllint cannot handle
@@ -401,7 +447,11 @@ sub kmllint_string {
 		Test::More::diag("Local KML schema $kml_schema cannot be found, fallback to remote schema...");
 		$shown_kml_schema_warning = 1;
 	    }
-	    $kml_schema = "http://code.google.com/apis/kml/schema/kml21.xsd";
+	    ## The old location, now a redirect:
+	    #$kml_schema = "http://code.google.com/apis/kml/schema/kml21.xsd";
+	    ## Use the redirected location, so the heuristics can detect that
+	    ## this a https URL is used.
+	    $kml_schema = "https://developers.google.com/kml/schema/kml21.xsd";
 	}
     }
     xmllint_string($content, $test_name, %args, ($kml_schema ? (-schema => $kml_schema) : ()));
