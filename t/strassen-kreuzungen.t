@@ -173,7 +173,7 @@ for my $kr ($kr1, $kr2) {
 
     # Rüdersdorfer/Wedekindstr
     {
-	my %situation = situation_at_point_inorder($kr, qw(12891,12008 13066,11854 13217,11936));
+	my %situation = situation_at_point_inorder($kr, qw(13052,11867 13066,11854 13217,11936));
 	is($situation{action}, 'left', "Ruedersdorfer/Wedekindstr");
 	local $TODO = "situation_at_point_inorder needs Vorfahrt detection based on street categories";
 	if ($kr == $kr2) {
