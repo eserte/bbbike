@@ -1365,6 +1365,36 @@ userdel	2::inwork 19968,16 19940,52
 userdel	q4::inwork; -1872,24336 -1790,24260 -1627,24105 -1367,23853 -1286,23753 -1281,23746 -1084,23564 -997,23492 -984,23480 -903,23406 -783,23190 -656,23011
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => 'INKO_093369',
+         'until' => 1341068400,
+         'text' => 'Behrenstr. (Mitte): Fahrbahn gesperrt (bis Ende 06/12) zwischen Glinkastr. und Friedrichstr.',
+         'from' => 1329631200,
+         'id' => 2317,
+         'data' => 'userdel	q4::inwork 9373,12197 9164,12172
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_018476',
+         'until' => 1339768800,
+         'text' => 'Colditzstr. (Tempelhof): Baustelle, gesperrt in beiden Richtungen zwischen Ullsteinstr. und Volkmarstr., 29.02.2012 09:54 Uhr bis 15.06.2012 16:00 Uhr ',
+         'from' => 1330419240,
+         'id' => 2318,
+         'data' => 'userdel	q4::inwork 10029,5230 9955,5376
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_018478',
+         'until' => 1331132400,
+         'text' => 'Damerowstr. (Pankow): Baustelle, Fahrtrichtung gesperrt Richtung Berliner Str. zwischen Mendelstr. und Stiftsweg, 01.03.2012 07:20 Uhr bis 07.03.2012 16:00 Uhr ',
+         'from' => 1330496400,
+         'id' => 2319,
+         'data' => 'userdel	q4::inwork; 11357,18598 11204,18545 11168,18542 11001,18528
+',
+         'type' => 'handicap'
        }
      
 );
