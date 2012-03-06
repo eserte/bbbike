@@ -89,6 +89,15 @@ Elcknerplatz, Borgmannstr.: Bauarbeiten, Einbahnstraße	q4::inwork; 22428,6063 22
 #: next_check: 2012-06-30
 #: by: IM_008926
 Kantstr.: Bauarbeiten am Zoofenster, Fahrbahn Richtung Westen gesperrt	q4::inwork; 5652,11004 5613,10963
+# 
+#: last_checked: 2012-03-06 vvv
+#: next_check: 2012-04-20 vvv
+#: note: eigentlich Radfahren auf der Friedrichsbrücke jetzt auch verboten
+Burgstraße: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 10166,12777 10132,12941
+Anna-Louisa-Karsch-Str.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 10264,12826 10166,12777
+#: next_check ^^^
+#: last_checked ^^^
+# 
 #: temporary ^^^
 ######################################################################
 #: XXX es ist zu erwarten, dass hier der Wuhlewanderweg verbessert wird: vvv
@@ -1119,7 +1128,7 @@ Elisabeth-Schwarzhaupt-Platz: einige Fußgänger	q1 9274,13963 9167,14127
 Idealpassage: Fußgänger, eng, Schrittgeschwindigkeit	q3 12434,8776 12578,8654
 #: XXX_prog BS (die umfahrbare Stufe vielleicht in ein BS umwandeln? Oder auch nicht)
 (entlang der Hedwigskathedrale): Fußgänger, eine (umfahrbare) Stufe	q2 9808,12182 9775,12178 9771,12190 9747,12205
-#: XXX_prog BS (beide Enden, am nördlichen kann man es durch einen weiten Bogen umfahren)
+#: XXX_prog BS (beide Enden, am nördlichen kann man es durch einen weiten Bogen umfahren, am südlichen auch, wenn man in Richtung W weiterfährt)
 (Am Wriezener Bahnhof - Rüdersdorfer Str.): enger Weg, Bordsteine	q2 12944,11760 13052,11867
 #: XXX_prog BS an der Normannenstr.
 (Normannenstr. - Jobcenter Lichtenberg): Bordstein, Fußgänger	q2 16056,12317 16068,12376

@@ -21,6 +21,8 @@ Rathausstr. zwischen Breitestr. und Poststr.: Fahrbahn wegen Br¸ckenbauarbeiten 
 Alte Jakobstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 10436,11344 10244,11160
 Elcknerplatz, Borgmannstr.: Bauarbeiten, Einbahnstraﬂe	q4::inwork; 22428,6063 22478,6041 22544,6037 22539,5956
 Kantstr.: Bauarbeiten am Zoofenster, Fahrbahn Richtung Westen gesperrt	q4::inwork; 5652,11004 5613,10963
+Burgstraﬂe: Bauarbeiten, Einbahnstraﬂenregelung	q4::inwork; 10166,12777 10132,12941
+Anna-Louisa-Karsch-Str.: Bauarbeiten, Einbahnstraﬂenregelung	q3::inwork; 10264,12826 10166,12777
 Wuhlewanderweg: steiler Anstieg, Fuﬂg‰nger	q4; 21998,12204 21970,12153
 Wuhlewanderweg: steiles Gef‰lle, Fuﬂg‰nger	q4; 21970,12153 21998,12204
 (An der Wuhle, ˆstliches Ufer): Fuﬂg‰nger	q1 21323,8481 21333,8355 21371,8289 21594,8107 21627,8024 21629,7921
@@ -1692,6 +1694,7 @@ Revaler Str. (Straﬂenbahn): gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3:
 Kietzer Str.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 22372,4496 22383,4470
 Isarstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 12349,8464 12368,8356
 Schwartzkopffstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 8776,14364 8607,14253
+Niederlagstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 9972,12184 9961,12273
 Stiftsweg: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 11001,18528 11268,18851
 Erkelenzdamm: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 11117,10326 11094,10261
 Privatstr. 14: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 13159,17196 13103,17280
@@ -1731,6 +1734,7 @@ Quedlinburger Str.: nur die Durchfahrt ist verboten: gegen die Einbahnstraﬂenric
 Trusetaler Str.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 21285,17276 21360,17261 21352,17210 21451,17189 21435,17097
 Blumberger Damm: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 21731,15748 21719,15666
 Dorfstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 18144,18813 18161,18814
+(Alex-Wedding-Str. - Karl-Liebknecht-Str.): gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 11027,13279 11085,13239
 Josef-Nawrocki-Str.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 25802,4823 25802,4681 25724,4706 25691,4716 25554,4758 25552,4829
 Askanischer Platz: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q2::igndisp; 8882,10905 8938,10872 8983,10846 9022,10857
 Helbigstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 20109,4087 20339,3779 20362,3750

@@ -1084,19 +1084,7 @@ userdel	q4::inwork 425,8766 490,8716
        undef,
        undef,
        undef,
-       {
-         'until' => undef,
-         'text' => 'Burgstraße: Bauarbeiten, Einbahnstraßenregelung',
-         'from' => undef,
-         'id' => 2219,
-         'data' => '#: by: wosch
-#: confirmed_by: srt
-#: last_checked: 2012-01-22
-#: note: eigentlich Radfahren auf der Friedrichsbrücke jetzt auch verboten
-userdel	q4::inwork; 10166,12777 10132,12941
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1395,6 +1383,18 @@ userdel	q4::inwork; -1872,24336 -1790,24260 -1627,24105 -1367,23853 -1286,23753 
          'data' => 'userdel	q4::inwork; 11357,18598 11204,18545 11168,18542 11001,18528
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => undef,
+         'recurring' => 1,
+         'text' => 'Am Schloss Schönhausen: nachts gesperrt (im Sommer ab ca. 19 Uhr, im Winter ab Einbruch der Dunkelheit)',
+         'from' => undef,
+         'id' => 2320,
+         'data' => '#: by: cornelia (bayer...): vvv
+Am Schloss Schönhausen	2::night 10308,19297 10350,19182 10390,19069
+Am Schloss Schönhausen	2::night 10249,19148 10350,19182
+#: by: ^^^
+'
        }
      
 );

@@ -254,7 +254,8 @@ Braillestr.	1 4430,5324 4477,5250 4512,5199
 Mudrackzeile	1 6985,17812 7020,17690
 Gustav-Müller-Str.	1 7643,8634 7642,8815
 Gustav-Müller-Platz	1 7644,8560 7614,8599 7643,8634 7682,8598 7644,8560
-Niederlagstr.	1 9972,12184 9961,12273 9943,12364 9934,12418
+Niederlagstr.	1 9972,12184 9961,12273
+Niederlagstr.	1 9943,12364 9934,12418
 Kolk/Behnitz/Möllentordamm	1 -3042,14682 -3028,14640 -2951,14617 -2944,14652 -2942,14666 -3027,14689 -3042,14682
 Hertelstr.	1 4893,6900 4787,6899
 Karl-Marx-Platz	1 12980,7597 13100,7626
@@ -673,6 +674,7 @@ Bäumerplan	1 8527,7928 8553,7795
 Bäumerplan	1 8512,7757 8467,7913
 Mierendorffstr.	1 3645,13189 3542,13063
 Hüttigpfad	1 4810,15000 4887,14931 5057,14824 5107,14781
+(Alex-Wedding-Str. - Karl-Liebknecht-Str.)	1s 11027,13279 11085,13239
 Am Neuen Garten	1 -12166,1384 -12212,1201 -12276,831 -12302,718
 Am Neuen Garten	1 -12332,585 -12582,127
 Hochstraße	3nocross::ignrte -11399,-1339 -11461,-1424 -11540,-1543
@@ -1110,9 +1112,11 @@ Straßenbahntrasse	3nocross::ignrte 10900,17397 10894,17470 10892,17491
 Straßenbahntrasse	3nocross::ignrte 13737,15994 13826,16026 14014,16106
 Berliner Allee -> Herbert-Baum-Str.: Straßenbahntrasse	3::igndisp 14014,16106 13826,16026 13869,15912
 Herbert-Baum-Str. -> Berliner Allee: Straßenbahntrasse	3::igndisp 13869,15912 13826,16026 13737,15994
-Straßenbahntrasse	3nocross::ignrte 11149,13442 11092,13366 11080,13350 11027,13279 11021,13271
-Karl-Liebknecht-Str. -> Wadzeckstr.: Straßenbahntrasse	3::igndisp 11149,13442 11092,13366 11146,13328
+Straßenbahntrasse	3nocross::ignrte 11149,13442 11119,13402 11092,13366 11080,13350 11027,13279 11021,13271
 Wadzeckstr. -> Karl-Liebknecht-Str.: Straßenbahntrasse	3::igndisp 11146,13328 11092,13366 11080,13350
+Karl-Liebknecht-Str. -> Wadzeckstr.: Straßenbahntrasse	3::igndisp 11119,13402 11092,13366 11146,13328
+Alex-Wedding-Str. -> Karl-Liebknecht-Str.: Straßenbahntrasse	3::igndisp 11085,13239 11027,13279 11021,13271
+Karl-Liebknecht-Str. -> Alex-Wedding-Str.: Straßenbahntrasse	3::igndisp 11080,13350 11027,13279 11085,13239
 Gitter auf Mittelstreifen	3nocross::ignrte 8659,16327 8543,16364 8516,16393 8486,16425
 Badstr. -> Gropiusstr.: Gitter auf Mittelstreifen	3::igndisp 8659,16327 8543,16364 8534,16355
 Badstr. -> Travemünder Str.: Gitter auf Mittelstreifen	3::igndisp 8516,16393 8543,16364 8592,16406
@@ -2192,7 +2196,6 @@ Boyenweg - Uferweg: wegen Bauarbeiten gesperrt	2:inwork 7938,14426 7886,14518 77
 Treitschkestr.: Bauarbeiten am Kaufhaus, bis 2012	2:inwork 5219,6215 5125,6262 4971,6345
 Caroline-Michaelis-Str.: Bauarbeiten	2:inwork 9151,13941 9125,13973
 Ella-Trebe-Str.: Einbahnstraße wegen Bauarbeiten	1s:inwork 7937,13109 7941,13014 7948,12918
-Alex-Wedding-Str.: Bauarbeiten, komplett gesperrt	2:inwork 11085,13239 11045,13183
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12748
 Rathausbrücke: gesperrt (Neubau), Fertigstellung und Verkehrsfreigabe im Frühjahr 2013	2:inwork 10362,12351 10422,12395
 Kynaststraße: Bauarbeiten im südlichen Abschnitt	2:inwork 14652,10201 14724,10297 14766,10372 14795,10473 14805,10518

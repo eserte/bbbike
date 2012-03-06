@@ -19094,8 +19094,8 @@ EOF
 userdel	q4::inwork 10086,12725 10166,12777
 EOF
      },
-     { from  => undef, # 
-       until => undef, # XXX
+     { from  => 1331065556, # 
+       until => 1331065559, # XXX -> jetzt in handicap_s
        text  => 'Burgstraße: Bauarbeiten, Einbahnstraßenregelung',
        type  => 'handicap',
        data  => <<EOF,
@@ -20032,6 +20032,17 @@ EOF
        source_id => 'IM_018478',
        data  => <<EOF,
 userdel	q4::inwork; 11357,18598 11204,18545 11168,18542 11001,18528
+EOF
+     },
+     { from  => undef, #
+       until => undef, #
+       text  => 'Am Schloss Schönhausen: nachts gesperrt (im Sommer ab ca. 19 Uhr, im Winter ab Einbruch der Dunkelheit)',
+       recurring => 1,
+       data => <<EOF,
+#: by: cornelia (bayer...): vvv
+Am Schloss Schönhausen	2::night 10308,19297 10350,19182 10390,19069
+Am Schloss Schönhausen	2::night 10249,19148 10350,19182
+#: by: ^^^
 EOF
      },
     );
