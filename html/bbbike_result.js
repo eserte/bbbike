@@ -33,10 +33,6 @@ function ms(x,y) {
     return false;
 }
 
-function bs(px,py) {
-    //XXX implement redirect to berliner-stadtplan.com
-}
-
 function show_map(bbbike_html_dir) {
     // show extra window for PDF && Netscape --- the .pdf is not embedded
     var frm = document.forms.showmap;
@@ -55,8 +51,7 @@ function show_map(bbbike_html_dir) {
 	imagetype_value = frm.imagetype.options[frm.imagetype.options.selectedIndex].value;
     }
     if (imagetype_value == 'ascii' ||
-	imagetype_value == 'mapserver' ||
-	imagetype_value == 'berlinerstadtplan')
+	imagetype_value == 'mapserver')
 	addwindowparam += ",scrollbars,resizable"; // XXX sp?
     var x_y = geom.split("x");
 // XXX height/width an aktuelle Werte anpassen
@@ -68,8 +63,7 @@ function show_map(bbbike_html_dir) {
     var menubar = "yes";
 
     var geometry_string = "";
-    if (imagetype_value != 'mapserver' &&
-	imagetype_value != 'berlinerstadtplan') {
+    if (imagetype_value != 'mapserver') {
         geometry_string = ",height=" + y + ",width=" + x;
     }
 
@@ -118,10 +112,6 @@ function enable_size_details_buttons() {
     var imgtype = imgtypeelem.value;
     var can_size = true;
     var can_details = true;
-    if (imgtype && imgtype.match(/^(berlinerstadtplan)/)) {
-	can_size = false;
-	can_details = false;
-    }
     if (imgtype && imgtype.match(/^(mapserver|pdf|svg)/)) {
 	can_size = false;
     }

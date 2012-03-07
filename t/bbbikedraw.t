@@ -20,7 +20,6 @@ use lib ("$FindBin::RealBin/..",
 	 "$FindBin::RealBin/../lib",
 	 "$FindBin::RealBin/../data",
 	 "$FindBin::RealBin",
-	 "$FindBin::RealBin/../projects/www.berliner-stadtplan.com/lib",
 	);
 use Strassen::Core;
 use BBBikeDraw;
@@ -57,12 +56,6 @@ BEGIN {
     } else {
 	diag('Skipping MapServer/pdf tests, no support on Debian');
 	# because pdflib is considered non-free in Debian
-    }
-
-    if (0) { # berliner-stadtplan.com support for BBBike got lost somewhen in 2007 or so...
-	if (eval { require BBBikeDraw::BerlinerStadtplan; 1 }) {
-	    push @modules, "BerlinerStadtplan";
-	}
     }
 }
 
@@ -258,8 +251,6 @@ sub draw_map {
 	$imagetype = "svg";
     } elsif ($module =~ /^(?:PDF|PDFCairo)$/) {
 	$imagetype = "pdf";
-    } elsif ($module eq 'BerlinerStadtplan') {
-	$imagetype = "http.html";
     } elsif ($module eq 'BBBikeGoogleMaps') {
 	$imagetype = "http.html";
     }
