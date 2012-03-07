@@ -1374,16 +1374,7 @@ userdel	q4::inwork; -1872,24336 -1790,24260 -1627,24105 -1367,23853 -1286,23753 
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_018478',
-         'until' => 1331132400,
-         'text' => 'Damerowstr. (Pankow): Baustelle, Fahrtrichtung gesperrt Richtung Berliner Str. zwischen Mendelstr. und Stiftsweg, 01.03.2012 07:20 Uhr bis 07.03.2012 16:00 Uhr ',
-         'from' => 1330496400,
-         'id' => 2319,
-         'data' => 'userdel	q4::inwork; 11357,18598 11204,18545 11168,18542 11001,18528
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => undef,
          'recurring' => 1,

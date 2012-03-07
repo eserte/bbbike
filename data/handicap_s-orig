@@ -19,6 +19,7 @@ Sembritzkystr.: Bauarbeiten, Einbahnstraße	q3::inwork; 7203,5488 7186,5453 7157,
 Beuthstr. - Spittelmarkt: Gehweg, Bauarbeiten	q4::inwork 10229,11618 10213,11728
 Spittelmarkt: Gehweg, Bordstein, Bauarbeiten	q4::inwork 10166,11592 10153,11666 10213,11728
 Axel-Springer-Str.: Bauarbeiten	q4::inwork 10166,11592 10136,11529
+Axel-Springer-Str.: Bauarbeiten, Gehwege können schon benutzt werden	q3:inwork 10166,11592 10202,11669 10213,11728
 #: next_check: ^^^
 #: last_checked: ^^^
 # 
@@ -76,8 +77,8 @@ Rathausstr. zwischen Breitestr. und Poststr.: Fahrbahn wegen Brückenbauarbeiten 
 #: last_checked: ^^^
 #: next_check: ^^^
 # 
-#: last_checked: 2012-01-17
-#: next_check: 2012-03-01
+#: last_checked: 2012-03-07
+#: next_check: 2012-04-15
 Alte Jakobstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10436,11344 10244,11160
 # 
 #: last_checked: 2011-09-04 (by srt)
@@ -1138,8 +1139,10 @@ Zur Kreutzigerstr.: enger Hausdurchgang	q3 14291,12220 14285,12190
 #: XXX_prog BS Bordstein an der Fischerstr.
 (Zobtener Str. - Fischerstr.): Fußgänger, Rampe, Bordstein	q2 16353,10207 16404,10286
 (Fischerstr. - Lückstr.): Fußgänger, teilweise recht eng	q2 16404,10286 16488,10381 16516,10448 16501,10460 16572,10613 16587,10613
-#: XXX_Prog BS Bordstein am Monimbóplatz
+#: XXX_prog BS Bordstein am Monimbóplatz
 (Skandinavische Str. - Lichtenberger Brücke/Monimbóplatz)	q2 17023,11908 17026,11888
+#: XXX_prog BS Bordstein am südlichen Ende
+Märkischer Platz: Fußgänger, Bordstein	q2 11111,12027 11077,12062
 #
 ######################### User Contributions #################################
 # 
