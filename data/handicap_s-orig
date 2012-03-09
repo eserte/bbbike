@@ -70,12 +70,12 @@ Rathausstr.: Baustelle vor dem Roten Rathaus, eng	q4::inwork 10601,12521 10704,1
 # 
 #XXX del --- #: last_checked: 2011-02-27 --- #: next_check: 2011-07-15 --- Am Carlsgarten: Bauarbeiten	q4::inwork 19460,7954 19372,8012 19334,8046
 # 
+#: last_checked: 2012-03-09 vvv
 #: next_check: 2012-12-17 vvv
-#: last_checked: 2012-02-17 vvv
 Rathausstr. zwischen Breitestr. und Poststr.: Fahrbahn wegen Brückenbauarbeiten gesperrt	q4::inwork 10281,12310 10362,12351
 Rathausstr. zwischen Breitestr. und Poststr.: Fahrbahn wegen Brückenbauarbeiten gesperrt	q4::inwork 10422,12395 10476,12432
-#: last_checked: ^^^
 #: next_check: ^^^
+#: last_checked: ^^^
 # 
 #: last_checked: 2012-03-07
 #: next_check: 2012-04-15
@@ -95,7 +95,7 @@ Kantstr.: Bauarbeiten am Zoofenster, Fahrbahn Richtung Westen gesperrt	q4::inwor
 #: next_check: 2012-04-20 vvv
 #: note: eigentlich Radfahren auf der Friedrichsbrücke jetzt auch verboten
 Burgstraße: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 10166,12777 10132,12941
-Anna-Louisa-Karsch-Str.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 10264,12826 10166,12777
+Anna-Louisa-Karsch-Str.: vor der Friedrichsbrücke auf den linken Gehweg fahren	q3::inwork; 10264,12826 10166,12777
 #: next_check ^^^
 #: last_checked ^^^
 # 
@@ -322,8 +322,7 @@ Spreepromenade am DomAquarée: Fußgänger, Cafés	q3 10300,12587 10249,12658 10219,
 St.-Wolfgang-Str.: Fußgänger, Cafés	q3 10219,12701 10285,12744 10360,12793
 Spreegasse: Fußgänger, Cafés	q3 10249,12658 10309,12700 10387,12760
 Heiligegeistgasse: Fußgänger, Cafés, sehr eng	q4 10285,12744 10309,12700 10352,12627
-#: XXX_prog: sollte BS werden (1x an der Gormannstr.)
-zur Gormannstr.: Bordstein	q3 10350,13376 10372,13436
+#XXX del --- #: XXX_prog: sollte BS werden (1x an der Gormannstr.) --- zur Gormannstr.: Bordstein	q3 10350,13376 10372,13436
 #: note: Flohmarkt ist in temp_blockings erwähnt:
 Am Zeughaus: Fußgänger	q2 9919,12613 9950,12522 9984,12426
 Steinmetzstr.: Fußgängerzone, Radfahren erlaubt	q1 7625,9771 7648,9944 7698,10147
@@ -1143,6 +1142,8 @@ Zur Kreutzigerstr.: enger Hausdurchgang	q3 14291,12220 14285,12190
 (Skandinavische Str. - Lichtenberger Brücke/Monimbóplatz)	q2 17023,11908 17026,11888
 #: XXX_prog BS Bordstein am südlichen Ende
 Märkischer Platz: Fußgänger, Bordstein	q2 11111,12027 11077,12062
+#: XXX_prog BS zur Grünstraßenbrücke
+(Fischerinsel - Grünstraßenbrücke): Fußgänger, niedriger Bordstein	q2+ 10474,11843 10517,11795
 #
 ######################### User Contributions #################################
 # 

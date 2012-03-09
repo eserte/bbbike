@@ -1270,10 +1270,11 @@ userdel	2::inwork 19750,11730 19827,11686 19881,11591
        {
          'source_id' => 'IM_017746',
          'until' => 1346425200,
-         'text' => 'Kastanienallee (Prenzlauer Berg): Bauarbeiten, Straße vollständig gesperrt in beiden Richtungen zwischen Oderberger Str. und Schönhauser Allee, bis 31.08.2012 ',
+         'text' => 'Kastanienallee (Prenzlauer Berg): Bauarbeiten zwischen Oderberger Str. und Schönhauser Allee, mögliche Behinderungen, bis 31.08.2012 ',
          'from' => 1314604800,
          'id' => 2308,
-         'data' => 'userdel	q4::inwork 10723,14772 10838,14962 10881,15047
+         'data' => '#: note: am 2012-03-09 geprüft, Radfahrer konnten problemlos passieren
+userdel	q4::inwork 10723,14772 10838,14962 10881,15047
 ',
          'type' => 'handicap'
        },

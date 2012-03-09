@@ -1095,7 +1095,9 @@ Charlottenstr. (Kreuzberg, Mitte)	N 9454,12558 9462,12481 9475,12365 9487,12263 
 Rosmarinstr.	NN 9369,12253 9487,12263
 Besselstr.	N 9521,10926 9653,10950 9786,10971
 Hedemannstr.	N 9131,10716 9313,10789 9535,10820
-Fischerinsel	NH 10512,12039 10672,11870
+Fischerinsel	NH 10512,12039 10604,11941 10672,11870
+Fischerinsel [Wohngebiet]	N 10604,11941 10474,11843 10450,11823
+(Fischerinsel - Grünstraßenbrücke)	NN 10474,11843 10517,11795
 Neue Roßstr.	NH 10672,11870 10687,11853 10715,11812 10819,11664
 Annenstr. (Mitte)	NH 10819,11664 10915,11535 11039,11425 11052,11414 11091,11379 11249,11268
 #: XXX genauer Straßenname? Wie geht es nach Norden hin weiter?
@@ -1257,7 +1259,8 @@ Torstr.	H 11170,13475 11108,13513 10902,13604 10746,13673 10640,13700 10569,1371
 Oranienburger Str. (Mitte)	H 10264,13097 10220,13098 10077,13100 9932,13109 9786,13178 9771,13182 9605,13248 9415,13315 9281,13374 9225,13389
 Große Präsidentenstr.	N 10220,13098 10097,12997
 Tucholskystr.	N 9524,12950 9533,12994 9553,13079 9588,13174 9605,13248 9651,13406 9607,13507 9571,13590
-Gormannstr.	NN 10350,13376 10372,13436
+#: XXX dieser Abschnitt ebenfalls Tempo 10?
+Gormannstr.	N 10350,13376 10372,13436
 Gormannstr.	N 10372,13436 10390,13493 10406,13543 10445,13675 10463,13747 10480,13871
 Weinbergsweg	NN 10177,13766 10193,13816
 Weinbergsweg	N 10193,13816 10263,13977 10370,14158
@@ -1324,7 +1327,8 @@ Demminer Str. (Gesundbrunnen)	N 9969,15191 10018,15211
 Kastanienallee (Prenzlauer Berg, Mitte)	N 10370,14158 10426,14262
 #: note: Kuriosum: aufgemalte Fahrradpiktogramme zwischen den Straßenbahngleisen
 #: XXX nach den Bauarbeiten wahrscheinlich entfernt
-#: next_check: 2012-03-01
+#: last_checked: 2012-03-09
+#: next_check: 2012-05-01
 Kastanienallee (Prenzlauer Berg, Mitte)	H 10426,14262 10511,14418 10534,14460 10723,14772 10838,14962 10881,15047
 (Kastanienallee - Schönhauser Allee)	N 10838,14962 10884,14952
 Oderberger Str.	N 10366,14992 10379,14963
@@ -9682,7 +9686,7 @@ Herbert-Tschäpe-Str.	N 14710,14185 14510,14104 14481,14095 14358,14155
 Straße 106	NN 14580,14636 14599,14679 14666,14845 14828,15050
 (Michelangelostr. - Straße 106, KGA Neues Heim und Grönland)	NN 13838,15113 14060,14986 14314,14841 14599,14679
 (Fußgängerbrücke Storkower Str.)	NN 14469,13137 14481,13143 14524,13271 14530,13269 14535,13267 14530,13256
-#: XXX genauer anschauen: Fußgänger? Bordsteine?
+#: XXX genauer anschauen: Fußgänger? Bordsteine, insbesondere am nördlichen Ende? Qualität ist unbefestigter Weg
 Thaerstr.	NN 13747,12642 13761,12690
 Thaerstr.	N 13761,12690 13844,12900 13886,12995 13895,13017 13930,13100 13943,13129 14006,13272 14056,13386 14109,13449
 #: alias: Bersarinplatz

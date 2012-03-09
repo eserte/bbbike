@@ -19922,10 +19922,11 @@ EOF
      },
      { from  => 1314604800, # 2011-08-29 10:00
        until => 1346425200, # 2012-08-31 17:00
-       text  => 'Kastanienallee (Prenzlauer Berg): Bauarbeiten, Straße vollständig gesperrt in beiden Richtungen zwischen Oderberger Str. und Schönhauser Allee, bis 31.08.2012 ',
+       text  => 'Kastanienallee (Prenzlauer Berg): Bauarbeiten zwischen Oderberger Str. und Schönhauser Allee, mögliche Behinderungen, bis 31.08.2012 ',
        type  => 'handicap',
        source_id => 'IM_017746',
        data  => <<EOF,
+#: note: am 2012-03-09 geprüft, Radfahrer konnten problemlos passieren
 userdel	q4::inwork 10723,14772 10838,14962 10881,15047
 EOF
      },
