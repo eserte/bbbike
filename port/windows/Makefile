@@ -60,25 +60,37 @@ devel:
 ######################################################################
 # new rules for strawberry dist
 #
-# HOWTO use this rules
-# - install a portable strawberry into \cygwin\home\eserte\strawberry
-# - do modification to strawberry: remove some stuff, add additional modules
-#   (more detailed instructions missing!)
-# - create \cygwin\home\eserte\bbbikewindist
-# - copy ...\strawberry\perl into \cygwin\home\eserte\bbbikewindist\perl
-# - copy (stripped down) gpsbabel distro into \cygwin\home\eserte\bbbikewindist\gpsbabel
+# HOWTO use this rules (work in progress!!!)
+# - fetch a suitable strawberry portable zipfile,
+#   e.g. strawberry-perl-5.14.2.1-32bit-portable.zip
+# - make sure that the bbbike sources are up-to-date,
+#   e.g. in a cygwin shell:
+#     cd ~/work/bbbike
+#     git fetch biokovo && git checkout biokovo/master
+# - maybe remove previous build attempts, i.e. the
+#   strawberry and bbbikewindist directories in ~
+# - run in a windows shell:
+#     cd C:\cygwin\home\eserte\work\bbbike && perl port\windows\create_customized_strawberry.pl -strawberrydir C:\cygwin\home\eserte\strawberry-5.14.2.1 -bbbikedistdir c:\cygwin\home\eserte\bbbikewindist "c:\Dokumente und Einstellungen\eserte\Eigene Dateien\Downloads\strawberry-perl-5.14.2.1-32bit-portable.zip
+# - copy stripped down gpsbabel distro into \cygwin\home\eserte\bbbikewindist\gpsbabel. In a cygwin shell
+#     cd ~/work/bbbike/port/windows && make make-gpsbabel-dist
 # - open a cygwin shell
 # - run in bbbike directory
 #    perl Makefile.PL
 # - then run these rules
-#    cd port/windows
-#    make bbbike-strawberry-dist make-bbbike-dist
+#    cd port/windows && make bbbike-strawberry-dist make-bbbike-dist
 #   (use bbbike-strawberry-snapshot-dist instead to create a snapshot)
 # - run
-#    /cygdrive/c/WINDOWS/system32/cmd.exe /c bbbike-snapshot-20091228.iss
+#    /cygdrive/c/WINDOWS/system32/cmd.exe /c bbbike.iss
+#   or
+#    /cygdrive/c/WINDOWS/system32/cmd.exe /c bbbike-snapshot-YYYYMMDD.iss
+# - and click on the green "play" button
+#
+# The created installable .exe lives in cygwin's /tmp
+# with the name BBBike-X.XX-Windows.exe
 
 bbbike-strawberry-dist: make-BBBikeVar.tpl
 	tpage --debug=undef --define use_strawberry=1 --define VERSION=3.17 --eval_perl bbbike.tpl.iss > bbbike.iss~
+	chmod ugo+x bbbike.iss~
 	mv bbbike.iss~ bbbike.iss
 
 bbbike-strawberry-snapshot-dist: make-BBBikeVar.tpl
@@ -92,6 +104,20 @@ make-bbbike-dist:
 	-rm -rf ../../../../bbbikewindist/bbbike.old
 	-mv ../../../../bbbikewindist/bbbike ../../../../bbbikewindist/bbbike.old
 	perl "-MExtUtils::Manifest=manicopy,maniread" -e "chdir q{../..} or die; manicopy(maniread(q{MANIFEST}),q{../../bbbikewindist/bbbike}, 'cp');"
+
+GPSBABEL_SRC=/cygdrive/c/Programme/GPSBabel
+GPSBABEL_DEST=../../../../bbbikewindist/gpsbabel
+
+# Assumes that gpsbabel (e.g. 1.4.2 is normally installed)
+# XXX hardcoded for german installations (C:\Programme)
+make-gpsbabel-dist:
+	[ -d ../../../../bbbikewindist ]
+	[ -d ${GPSBABEL_SRC} ]
+	mkdir -p ${GPSBABEL_DEST}
+	cp -pn ${GPSBABEL_SRC}/gpsbabel.exe ${GPSBABEL_DEST}
+	cp -pn ${GPSBABEL_SRC}/libexpat.dll ${GPSBABEL_DEST}
+	cp -pn ${GPSBABEL_SRC}/COPYING ${GPSBABEL_DEST}
+# XXX libexpat?
 
 # XXX more rules missing:
 #

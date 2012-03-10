@@ -107,9 +107,12 @@ Source: "C:\cygwin\home\eserte\bbbikewindist\perl\*"; DestDir: "{app}\perl"; [% 
 ;;;
 ;;; additional files in c\bin required by XML::LibXML
 ;;; currently not in bbbikewindist, only in strawberry directory
-Source: "C:\cygwin\home\eserte\strawberry\c\bin\libxml2.dll"; DestDir: "{app}\c\bin"; Flags: ignoreversion
-Source: "C:\cygwin\home\eserte\strawberry\c\bin\iconv.dll"; DestDir: "{app}\c\bin"; Flags: ignoreversion
-Source: "C:\cygwin\home\eserte\strawberry\c\bin\zlib1.dll"; DestDir: "{app}\c\bin"; Flags: ignoreversion
+;;Source: "C:\cygwin\home\eserte\strawberry\c\bin\libxml2.dll"; DestDir: "{app}\c\bin"; Flags: ignoreversion
+;;Source: "C:\cygwin\home\eserte\strawberry\c\bin\iconv.dll"; DestDir: "{app}\c\bin"; Flags: ignoreversion
+;;Source: "C:\cygwin\home\eserte\strawberry\c\bin\zlib1.dll"; DestDir: "{app}\c\bin"; Flags: ignoreversion
+Source: "C:\cygwin\home\eserte\bbbikewindist\c\*"; DestDir: "{app}\c"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "C:\cygwin\home\eserte\bbbikewindist\portable.perl"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\cygwin\home\eserte\bbbikewindist\portableshell.bat"; DestDir: "{app}"; Flags: ignoreversion
 [% ELSE -%]
 [%
 	FOR f = files
@@ -139,3 +142,7 @@ Root: HKCR; Subkey: ".bbr"; ValueType: string; ValueName: ""; ValueData: "BBBike
 Root: HKCR; Subkey: "BBBike.Route"; ValueType: string; ValueName: ""; ValueData: "BBBike-Route"; Flags: uninsdeletekey
 Root: HKCR; Subkey: "BBBike.Route\DefaultIcon"; ValueType: string; ValueName: ""; ValueData: "{app}\bbbike\images\srtbike.ico"
 Root: HKCR; Subkey: "BBBike.Route\shell\open\command"; ValueType: string; ValueName: ""; ValueData: """{app}\bbbike\bbbike"" ""%1"""
+
+[InstallDelete]
+Type: filesandordirs; Name: "{app}\perl"
+Type: filesandordirs; Name: "{app}\c"
