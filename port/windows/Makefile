@@ -115,6 +115,7 @@ make-gpsbabel-dist:
 	[ -d ${GPSBABEL_SRC} ]
 	mkdir -p ${GPSBABEL_DEST}
 	cp -pn ${GPSBABEL_SRC}/gpsbabel.exe ${GPSBABEL_DEST}
+	cp -pn ${GPSBABEL_SRC}/libexpat.dll ${GPSBABEL_DEST}
 	cp -pn ${GPSBABEL_SRC}/COPYING ${GPSBABEL_DEST}
 # XXX libexpat?
 
