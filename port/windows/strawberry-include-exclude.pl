@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2011 Slaven Rezic. All rights reserved.
+# Copyright (C) 2011,2012 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -24,15 +24,38 @@ use Getopt::Long;
 my($src,$dest);
 my $doit;
 my $v;
+my $filelist;
 GetOptions("src=s" => \$src,
 	   "dest=s" => \$dest,
 	   "doit!" => \$doit,
+	   "fl=s" => \$filelist,
 	   "v" => \$v,
 	  )
     or die "usage?";
 
 my $say = !$doit || $v;
 my $do  =  $doit;
+
+for ($src, $dest) {
+    s{/+$}{} if defined;
+}
+
+if (!$filelist) {
+    if (!$src) {
+	die "Please specify -src or -filelist";
+    }
+    require File::Find;
+    require File::Temp;
+    my($tmpfh,$tmpfile) = File::Temp::tempfile(UNLINK => 1) or die $!;
+    my $rootdir_len = length($src) + 1;
+    File::Find::find(sub {
+			 if (-f $_) {
+			     print $tmpfh substr($File::Find::name, $rootdir_len), "\n";
+			 }
+		     }, $src);
+    close $tmpfh or die $!;
+    $filelist = $tmpfile;
+}
 
 my %exclude;
 my $ie = Algorithm::IncludeExclude->new;
@@ -173,7 +196,9 @@ if ($src) {
 }
 
 my %dir_created;
-while(<>) {
+open my $fh, $filelist
+    or die "Can't open $filelist: $!";
+while(<$fh>) {
     chomp;
     my $file = $_;
     if ($ie->evaluate(split m{/}, $file)) {
@@ -243,10 +268,29 @@ strawberry-include-exclude.pl - exclude parts of a standard StrawberryPerl distr
 
 =head1 SYNOPSIS
 
-   cd /path/to/strawberryperl
-   find . -type f | perl -pe 's{^./}{}' > /tmp/strawberry-list
-   ./strawberry-include-exclude.pl < /tmp/strawberryperl.list -src /path/to/strawberry -dest /path/to/strawberry-excluded
+   ./strawberry-include-exclude.pl -src /path/to/strawberry -dest /path/to/strawberry-excluded
 
 And if everything looks good, then add the C<-doit> switch to it.
+
+=head1 DESCRIPTION
+
+Other options:
+
+=over
+
+=item -fl filelist
+
+Instead of using the C<-src> option, it's possible to use a filelist
+containg files (no directories) of a StrawberryPerl distribution. This
+could be done like this:
+
+   cd /path/to/strawberryperl
+   find . -type f | perl -pe 's{^./}{}' > /tmp/strawberry-list
+
+=item -v
+
+Be verbose, show what's done.
+
+=back
 
 =cut
