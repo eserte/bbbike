@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2011 Slaven Rezic. All rights reserved.
+# Copyright (C) 2011,2012 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -17,7 +17,6 @@ use FindBin;
 
 use Archive::Zip qw(:ERROR_CODES :CONSTANTS);
 use Cwd qw(realpath);
-use File::Temp qw(tempfile);
 use Getopt::Long;
 
 sub save_pwd (&);
@@ -86,27 +85,11 @@ my @mods = qw(
 	    );
 system("$strawberry_dir/perl/bin/cpan.bat", @mods);
 
-my($tmpfh,$tmpfile) = tempfile(SUFFIX => ".lst", UNLINK => 1)
-    or die $!;
-save_pwd {
-    print STDERR "Creating filelist for strawberry perl distribution...\n";
-    chdir $strawberry_dir or die $!;
-    open my $fh, qq{find2perl . -type f | $^X |} or die $!;
-    while (<$fh>) {
-	s{^..}{};
-	print $tmpfh $_;
-    }
-    close $fh or die $!;
-};
-close $tmpfh
-    or die $!;
-
 print STDERR "Copying strawberry perl to $bbbikedist_dir...\n";
 system($^X, "$FindBin::RealBin/strawberry-include-exclude.pl",
        "-doit", "-v",
        "-src", $strawberry_dir,
        "-dest", $bbbikedist_dir,
-       $tmpfile,
       );
 
 print STDERR "Finished.\n";
