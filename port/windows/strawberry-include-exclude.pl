@@ -236,3 +236,17 @@ sub add_packlist_to_exclude {
 }
 
 __END__
+
+=head1 NAME
+
+strawberry-include-exclude.pl - exclude parts of a standard StrawberryPerl distribution
+
+=head1 SYNOPSIS
+
+   cd /path/to/strawberryperl
+   find . -type f | perl -pe 's{^./}{}' > /tmp/strawberry-list
+   ./strawberry-include-exclude.pl < /tmp/strawberryperl.list -src /path/to/strawberry -dest /path/to/strawberry-excluded
+
+And if everything looks good, then add the C<-doit> switch to it.
+
+=cut
