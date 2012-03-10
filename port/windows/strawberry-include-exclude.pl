@@ -65,6 +65,8 @@ $ie->include(qw(c bin libxml2-2_.dll));
 $ie->include(qw(c bin libiconv-2_.dll));
 $ie->include(qw(c bin libz_.dll));
 $ie->include(qw(c bin libexpat-1_.dll));
+$ie->include(qw(c bin libpng15-15_.dll)); # probably needed by Tk
+$ie->include(qw(c bin libjpeg-8_.dll));   # dito
 $ie->exclude('cpan');
 $ie->exclude('cpanplus');
 $ie->exclude('data');
