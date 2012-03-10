@@ -202,7 +202,15 @@ sub send_mail_via_Mail_Mailer {
 
 sub send_mail_via_browser {
     # Tested with linux-mozilla 1.7 and FreeBSD's seamonkey 1.0.5
+    # On modern systems data should probably be utf8-encoded
+    # (checked with Mozilla Thunderbird on Windows)
     my($to, $subject, $data, %args) = @_;
+    for ($to, $subject, $data, $args{CC}) {
+	if ($_) {
+	    require Encode;
+	    $_ = Encode::encode("utf-8", $_);
+	}
+    }
     require WWWBrowser;
     require CGI;
     CGI->import('-oldstyle_urls');
