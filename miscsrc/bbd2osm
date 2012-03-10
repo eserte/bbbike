@@ -405,6 +405,10 @@ sub _handle_highway_like {
 	return;
     }
 
+    if ($optimize_for == OPTIMIZE_FOR_MAPNIK && ($attribs||'') =~ /\bigndisp\b/) {
+	return;
+    }
+
     my $highway_tag = $cat_to_highway{$cat};
     if (!defined $highway_tag) {
 	warn "Ignore cat='$r->[Strassen::CAT]'...\n";
