@@ -24,31 +24,72 @@ sub save_pwd (&);
 die "Sorry, mixing cygwin perl and Strawberry Perl does not work at all"
     if $^O eq 'cygwin';
 
-my $patch_exe = "C:/cygwin/bin/patch.exe";
--x $patch_exe
-    or die "Need cygwin's patch program";
+my $patch_exe;
 
 my $strawberry_dir;
+my $strawberry_ver;
 my $bbbikedist_dir;
-GetOptions("strawberrydir=s" => \$strawberry_dir,
+GetOptions(
+	   "strawberrydir=s" => \$strawberry_dir,
+	   "strawberryver=s" => \$strawberry_ver,
 	   "bbbikedistdir=s" => \$bbbikedist_dir,
 	  )
     or usage();
 $strawberry_dir or usage();
 $bbbikedist_dir or usage();
+my $strawberry_zipfile = shift; # optional
 
-# XXX configurable? or autodetect strawberry version according to supplied $zipfile name?
-my $patchdir = realpath("$FindBin::RealBin/patches/strawberry-perl-5.12.3.0");
-die "No patch directory found" if !$patchdir || !-d $patchdir; # XXX maybe some day there won't be any patches necessary
+# Detect Strawberry Perl version, either from Config_heavy.pl or
+# parsing the zip file name
+{
+    if ($strawberry_zipfile && $strawberry_zipfile =~ m{strawberry-perl-([\d\.]+)}) {
+	$strawberry_ver = $1;
+    } else {
+	eval {
+	    my $config_heavy = "$strawberry_dir/perl/lib/Config_heavy.pl";
+	    open my $fh, $config_heavy
+		or die "Cannot open $config_heavy ($!).\n";
+	    while(<$fh>) {
+		if (/myuname=.*strawberryperl ([\d\.]+)/) {
+		    $strawberry_ver = $1;
+		    last;
+		}
+	    }
+	    die "Cannot find strawberryperl version in $config_heavy.\n";
+	};
+	if ($@) {
+	    die <<EOF;
+$@
+Cannot automatically determine Strawberry Perl version.
+Please set -strawberryver option.
+EOF
+	}
+    }
+}
+
+my $patchdir = "$FindBin::RealBin/patches/strawberry-perl-$strawberry_ver";
+if (-d $patchdir) {
+    $patchdir = realpath($patchdir);
+    # XXX use strawberry's own patch in c/bin/patch.exe
+    $patch_exe = "C:/cygwin/bin/patch.exe";
+    -x $patch_exe
+	or die "Need cygwin's patch program";
+} else {
+    warn "INFO: No patches for Strawberry Perl $strawberry_ver found (expected patch directory: $patchdir).\n";
+    undef $patchdir;
+}
 
 if (!-d $strawberry_dir) {
+    if (!-f $strawberry_zipfile) {
+	die "The zip file $strawberry_zipfile does not exist.\n";
+    }
     mkdir $strawberry_dir
 	or die "Can't create $strawberry_dir: $!";
-    my $zipfile = shift
+    $strawberry_zipfile
 	or usage();
     my $zip = Archive::Zip->new;
-    $zip->read($zipfile) == AZ_OK
-	or die "Error reading $zipfile";
+    $zip->read($strawberry_zipfile) == AZ_OK
+	or die "Error reading $strawberry_zipfile";
 
     chdir $strawberry_dir or die $!;
     print STDERR "Extracting zip file...\n";
@@ -60,14 +101,17 @@ if (!-d $strawberry_dir) {
 	or die "ERROR: no 'perl' directory found, maybe Strawberry Perl is not yet extracted in $strawberry_dir?";
 }
 
-print STDERR "Patch files...\n";
-patch_if_needed("$patchdir/portable_perl.diff");
-save_pwd {
-    chdir "perl/vendor/lib" or die "Can't chdir to perl/vendor/lib: $!";
-    patch_if_needed("$patchdir/Portable_Config.diff");
-};
+if ($patchdir) {
+    print STDERR "Patch files...\n";
+    patch_if_needed("$patchdir/portable_perl.diff");
+    save_pwd {
+	chdir "perl/vendor/lib" or die "Can't chdir to perl/vendor/lib: $!";
+	patch_if_needed("$patchdir/Portable_Config.diff");
+    };
+}
 
 print STDERR "Add modules...\n";
+# XXX Should this be the same list like in Bundle::BBBike_windist?
 my @mods = qw(
 		 Tk
 		 Algorithm::Permute
