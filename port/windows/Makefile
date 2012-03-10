@@ -75,10 +75,11 @@ devel:
 #     cd ~/work/bbbike/port/windows && make make-gpsbabel-dist
 # - open a cygwin shell
 # - run in bbbike directory
-#    perl Makefile.PL
+#     cd ~/work/bbbike && perl Makefile.PL
 # - then run these rules
 #    cd port/windows && make bbbike-strawberry-dist make-bbbike-dist
-#   (use bbbike-strawberry-snapshot-dist instead to create a snapshot)
+#   or to create a bbbike snaphot
+#    cd port/windows && make bbbike-strawberry-snapshot-dist make-bbbike-dist
 # - run
 #    /cygdrive/c/WINDOWS/system32/cmd.exe /c bbbike.iss
 #   or

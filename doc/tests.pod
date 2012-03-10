@@ -53,7 +53,7 @@ wählen
 
 In vernünftiger Zeit sollte die erste Straße mit dem gewählten
 Buchstaben als Anfangsbuchstaben sichtbar sein. B<KNOWN ISSUE>: Leider
-dauert es beim Z drei-vier Sekunden auf nicht so schnellen Rechnern.
+dauert es beim Z fast eine Sekunde bei nicht so schnellen Rechnern.
 
 =head3 Eintippen eines Straßennamens
 
@@ -93,7 +93,7 @@ Routenliste erscheint, ist komplett sichtbar und enthält eine
 Routenbeschreibung. Die Anzahl der Ampeln an der Route mit Zeitverlust
 wird in diesem Fenster angezeigt.
 
-=head3 Auf E<quot>SichernE<quot> klicken
+=head3 Auf E<quot>Sichern (Text)E<quot> klicken
 
 Ein Dateiselektor erscheint. Beliebigen Dateinamen ohne Extension in
 einem temporären Verzeichnis eingeben und mit E<quot>SaveE<quot> oder
@@ -108,14 +108,12 @@ lesen sein. Es wird keine Defaultextension erzwungen.
 Umlaute sollten möglichst korrekt dargestellt sein (noch: als
 iso-8859-1). Die Datei sollte die Routenliste enthalten.
 
-=head3 Auf E<quot>PalmE<quot> klicken
+=head3 Auf E<quot>GPS (Garmin)E<quot> klicken
 
-B<NOTE>: Dieser Knopf ist nur verfügbar, wenn ein Palm-Doc-erzeugendes
-Programm wie iSilo, txt2pdbdoc o.ä. zur Verfügung steht. In der
-Standard-Windows-Distribution ist so ein Programm nicht verfügbar.
-
-Ein Dialog E<quot>Hotsync-Button drückenE<quot> erscheint. Dialog
-wegklicken.
+Ein Dialog erscheint. Neben "Name der Route" einen Namen eingeben und
+dann "Upload zum Garmin" klicken. -> Die Route sollte auf dem
+GPS-Gerät erscheinen. Falls eine Fehlermeldung auftritt, muss in
+GPS-Einstellungen u.U. der serielle/USB-Device geändert werden.
 
 =head3 Auf E<quot>DruckenE<quot> klicken
 
@@ -127,7 +125,7 @@ länger dauern) und das erzeugte PDF-Dokument wird angezeigt. Fenster
 wegklicken, nicht speichern.
 
 I<Windows>: Ein Editor-Fenster mit der Routenliste erscheint kurz;
-danach wird die Datei direkt zum Drucker geschickt.
+danach wird die Datei direkt zum Default-Drucker geschickt.
 
 =head3 Auf E<quot>MailE<quot> klicken
 
@@ -146,6 +144,10 @@ zusätzlichen Text eingeben. Mit E<quot>OKE<quot> bestätigen.
 
 I<Windows>: Typischerweise wird ein externes Mailprogramm geöffnet, auf
 dem man die Angaben nochmal sieht und bestätigen kann.
+
+B<KNOWN ISSUE>: Der Routentext ist tabellarisch aufgebaut, aber
+Mailprogramme formatieren Text typischerweise in einen
+Proportionalfont.
 
 Die Mail sollte als Text-E-Mail ankommen. Vor dem zusätzlichen Text
 sollte sich die Routenliste befinden.
@@ -212,9 +214,10 @@ E<quot>Keine RouteE<quot>
 =head3 Den Mauszeiger auf eine Straße bewegen
 
 Nach einiger Zeit erscheint ein Balloon mit dem Namen der Straße.
-B<NYI>: Weitere Eigenschaften (Straßenqualität etc.) werden ebenfalls
-im Balloon angezeigt (sie werden aber angezeigt, falls der jeweilige
-Layer eingeschaltet ist).
+
+Zwischenzeitlich einen anderen Layer einschalten (z.B. Qualität mit
+"Shift-Q"): weitere Eigenschaften der neuen Layer werden ebenfalls im
+Balloon angezeigt.
 
 =head3 Mit dem linken Mauszeiger auf eine Straße klicken
 
@@ -240,7 +243,8 @@ Die Karte wird (schnell) in der gleichen Richtung gescrollt.
 
 =head3 Auf die Pfeile der Windrose klicken
 
-Die Karte wird in der angeklickten Richtung gescrollt.
+Die Karte wird in der angeklickten Richtung gescrollt. Diagonal geht
+auch.
 
 =head3 Linke Maustaste über den Pfeilen der Windrose etwas länger
 gedrückt halten
@@ -255,8 +259,8 @@ Die Karte wird in der angeklickten Richtung gescrollt.
 
 Die Karte wird nach oben/unten gescrollt.
 
-B<NOTE>: Die Wheelmouse-Funktion benötigt ein neues Tk (804 und
-besser), welches noch nicht bei der Standard-Windows-Distro dabei ist.
+B<KNOWN ISSUE>: Bei Windows funktioniert die Wheelmouse-Funktion
+nicht.
 
 =head3 Shift drücken und dabei das Scrollrad betätigen
 
@@ -278,14 +282,13 @@ Ortsteile, einige Orte im Umland, stilisierte Gewässer, ein Rechteck
 für den sichtbaren Kartenbereich und die aktuelle Route als rote
 Linie.
 
-=head3 Auf E<quot>BrandenburgE<quot> klicken
+=head3 Auf E<quot>-E<quot> klicken
 
 Die Karte wird neu gezeichnet (Progressbar in Aktion). Die Grenzen von
 Berlin erscheinen nun kleiner, ebenso das Rechteck, dafür erscheinen
-mehr Orte im Umland. Der Button E<quot>BrandenburgE<quot> ist jetzt zu
-E<quot>BerlinE<quot> geworden.
+mehr Orte im Umland.
 
-=head3 Auf E<quot>BerlinE<quot> klicken
+=head3 Auf E<quot>+E<quot> klicken
 
 Der vorherige Zustand ist wieder erreicht.
 
@@ -464,7 +467,11 @@ Der Kartenausschnitt wird so bewegt, dass die Dudenstraße sichtbar
 wird. Eine Markierung blinkt einige Sekunden lang.
 
 =head3 Mauszeiger über eine Straße positionieren und auf
-E<quot>IE<quot> drücken
+E<quot>IE<quot> drücken.
+
+I<Windows>: da das Hauptfenster möglicherweise nicht den Fokus hat,
+passiert nichts beim Drücken. Alternativ auf das i-Icon in der
+Symbolleiste drücken.
 
 Es erscheint ein Fenster mit dem Titel E<quot>InformationE<quot>.
 
