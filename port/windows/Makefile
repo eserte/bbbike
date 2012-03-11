@@ -67,6 +67,8 @@ devel:
 #   e.g. in a cygwin shell:
 #     cd ~/work/bbbike
 #     git fetch biokovo && git checkout biokovo/master
+#   or
+#     git fetch origin && git checkout origin/master
 # - maybe remove previous build attempts, i.e. the
 #   strawberry and bbbikewindist directories in ~
 # - run in a windows shell:
