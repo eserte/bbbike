@@ -331,20 +331,20 @@ sub handle_handicap_like {
 	($cat_hin, $cat_rueck) = ($r->[Strassen::CAT], $r->[Strassen::CAT]);
     }
 
-    my($attrib_hin, $attrib_rueck);
+    my($cat_attrib_hin, $cat_attrib_rueck);
     for my $def (
-		 [\$cat_hin, \$attrib_hin],
-		 [\$cat_rueck, \$attrib_rueck],
+		 [\$cat_hin,   \$cat_attrib_hin],
+		 [\$cat_rueck, \$cat_attrib_rueck],
 		) {
-	my($cat_ref, $attrib_ref) = @$def;
+	my($cat_ref, $cat_attrib_ref) = @$def;
 	if (defined $$cat_ref) {
-	    ($$cat_ref, $$attrib_ref) = $$cat_ref =~ m{^
-						       ([^:]+)
-						       (?:::(.*))?
-						       $}x;
+	    ($$cat_ref, $$cat_attrib_ref) = $$cat_ref =~ m{^
+							   ([^:]+)
+							   (?:::(.*))?
+							   $}x;
 	}
     }
-    if (defined $attrib_hin && $attrib_hin eq 'igndisp') {
+    if (defined $cat_attrib_hin && $cat_attrib_hin eq 'igndisp') {
 	# This is most likely generated from an "1s" record. Don't
 	# render it, because we cannot distinguish between directions
 	# in the osm output.
@@ -399,13 +399,13 @@ sub handle_anywhere_highway_like { _handle_highway_like(undef, @_) }
 sub _handle_highway_like {
     my($city, $r, $dir) = @_;
 
-    my($cat, $attribs) = $r->[Strassen::CAT] =~ m{^([^:]+)(?:::(.*))?};
+    my($cat, $cat_attribs) = $r->[Strassen::CAT] =~ m{^([^:]+)(?:::(.*))?};
     if ($cat eq 'Pl') {
 	# XXX maybe handle later...
 	return;
     }
 
-    if ($optimize_for == OPTIMIZE_FOR_MAPNIK && ($attribs||'') =~ /\bigndisp\b/) {
+    if ($optimize_for == OPTIMIZE_FOR_MAPNIK && ($cat_attribs||'') =~ /\bigndisp\b/) {
 	return;
     }
 
@@ -441,10 +441,10 @@ sub _handle_highway_like {
 
     my $tunnel;
     my $bridge;
-    if ($attribs) {
-	if ($attribs =~ m{Tu}) { # may be _Tu or Tu_, too
+    if ($cat_attribs) {
+	if ($cat_attribs =~ m{Tu}) { # may be _Tu or Tu_, too
 	    $tunnel = 1;
-	} elsif ($attribs =~ m{Br}) {
+	} elsif ($cat_attribs =~ m{Br}) {
 	    $bridge = 1;
 	}
     }
@@ -629,7 +629,7 @@ sub handle_fixme_cat_like {
 sub handle_railway_like {
     my($r, $dir) = @_;
 
-    my($cat, $attribs) = $r->[Strassen::CAT] =~ m{^([^:]+)(?:::(.*))?};
+    my($cat, $cat_attribs) = $r->[Strassen::CAT] =~ m{^([^:]+)(?:::(.*))?};
     return if $cat !~ m{^([USR]|RP|RG)([ABC0]|Bau)?$};
     my $railway_cat = $cat_to_railway{$1};
     return if !defined $railway_cat;
@@ -638,10 +638,10 @@ sub handle_railway_like {
 
     my $tunnel;
     my $bridge;
-    if ($attribs) {
-	if ($attribs =~ m{Tu}) { # may be _Tu or Tu_, too
+    if ($cat_attribs) {
+	if ($cat_attribs =~ m{Tu}) { # may be _Tu or Tu_, too
 	    $tunnel = 1;
-	} elsif ($attribs =~ m{Br}) {
+	} elsif ($cat_attribs =~ m{Br}) {
 	    $bridge = 1;
 	}
     }
