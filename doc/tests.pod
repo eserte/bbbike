@@ -303,6 +303,24 @@ Das Rechteck in der Übersichskarte wird entsprechend der Bewegung
 verschoben; die große Karte ebenso. Eine Verzögerung ist zu erwarten,
 sollte sich aber im Rahmen halten.
 
+=head3 Eine Route durch eine temporäre Sperrung erzeugen
+
+Die Route wird erzeugt und die Leiste "Mögliche temporäre Sperrungen
+auf der Route" erscheint.
+
+=head3 Auf "Anzeigen" klicken
+
+Es erscheint ein Fenster mit einer oder mehreren temporären Sperrungen.
+
+=head3 Die Checkbox "Aktivieren" aller Sperrungen auswählen und "Ausgewählte umfahren" klicken
+
+Es wird eine neue Route berechnet, die die aktivierten temporären
+Sperrungen umfährt. Das Fenster mit den "Aktuellen Sperrungen" bleubt
+stehen, aber die ausgewählten Sperrungen befinden sich nun unterhalb
+der Überschrift "Bereits behandelte Sperrungen.
+
+=head3 Fenster "Aktuelle Sperrungen" schließen
+
 =head2 Menüfunktionen
 
 Voraussetzung: eine Routesuche wurde durchgeführt und die Route ist
@@ -515,12 +533,16 @@ Ein Zeichensatzdialog erscheint. Die aktuelle Schriftfamilie und
 -größe sollte selektiert sein (unter X11 typischerweise
 E<quot>HelveticaE<quot> und E<quot>10E<quot>, kann aber differieren).
 
-=head3 Eine andere Schriftgröße, z.B. E<quot>8E<quot> wählen
+=head3 Eine andere Schriftgröße, z.B. E<quot>8E<quot> wählen und OK
+drücken
 
 Alle Texte im Menü, im Auswahlfenster sollten sich entsprechend
 ändern.
 
 Texte, die sich auf der Karte befinden, bleiben unverändert.
+
+Native Texte (z.B. die Menüleiste unter Windows) bleibt u.U. auch
+unverändert.
 
 =head3 Klick auf das Hilfe-Symbol (mit dem Fragezeichen)
 
@@ -549,9 +571,9 @@ Der Dialog wird geschlossen, nichts passiert weiter.
 =head3 Nochmals aufrufen, diesmal mit Klick auf E<quot>JaE<quot>
 
 Das Update wird gestartet. Der Benutzer wird nicht alleine gelassen,
-d.h. es existiert ein Progressbar. Nach Beenden des Updates kann das
-Straßennetz aktualisiert werden, wenn auf dem Server neuere Daten
-existieren.
+d.h. es existiert ein Progressbar. Nach Beenden des Updates wird das
+Straßennetz aktualisiert, falls sich auf dem Server neuere Daten
+befinden.
 
 =head2 Unsortierte Tests
 
