@@ -90,7 +90,7 @@ sub git_info {
 	# git branch | awk 'BEGIN{ORS=""} /\*/ { print $2 }'
 	($branch) = map { /\* ([^(]\S*)/ ? $1 : () } _backtick("git branch");
 	my ($remote,$merge);
-	if (length $branch) {
+	if (defined $branch && length $branch) {
 	    $merge= _backtick("git config branch.$branch.merge");
 	    $merge =~ s!^refs/heads/!!;
 	    $remote= _backtick("git config branch.$branch.remote");
@@ -100,7 +100,7 @@ sub git_info {
 	my $commit_created = _backtick(qq{git log -1 --pretty="format:%ci"});
 	$new_patchnum = "describe: $describe";
 	$git_info{'commit_date'} = $commit_created;
-	if (length $branch && length $remote) {
+	if (defined $branch && length $branch && length $remote) {
 	    @unpushed_commits = map { (split /\s/, $_)[1] } grep {/\+/} _backtick("git cherry $remote/$merge");
 	    if (@unpushed_commits) {
 		$commit_title = "Local Commit:";
