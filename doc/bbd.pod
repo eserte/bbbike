@@ -706,6 +706,11 @@ Radweg vorhanden, aber nicht weiter kategorisiert.
 
 =back
 
+Folgende Kategorien können in der "-orig"-Variante ein "?"
+nachgestellt haben, um anzuzeigen, dass Informationen fehlen: C<RW3>,
+C<RW4> (Benutzungspflicht unbekannt) und C<RW5> (Gültigkeitsdauer der
+Busspur fehlt).
+
 =head2 RAILROADS
 
 Used in files: F<ubahn>, F<sbahn>, F<rbahn>, F<ubahnhof>, F<sbahnhof>,
