@@ -181,9 +181,14 @@ $ie->include(qw(perl vendor lib Crypt SSLeay));
 #$ie->exclude(qw(perl vendor lib DBI));
 #$ie->include(qw(perl vendor lib Math));
 #$ie->exclude(qw(perl vendor lib Math Pari.pm));
+$ie->include(qw(perl site)); # XXX hack
+$ie->include(qw(perl site lib)); # XXX hack
+$ie->include(qw(perl site lib Tk)); # XXX hack
 $ie->exclude(qw(perl site lib Tk demos));
 $ie->exclude(qw(perl site lib Tk), qr{\.[hmt]$});
+$ie->include(qw(perl site lib Tk pTk)); # XXX hack
 $ie->exclude(qw(perl site lib Tk pTk), qr{\.[hmt]$});
+$ie->exclude(qw(perl site lib Tk pTk compat));
 #
 if ($src) {
     for my $mod (qw(
