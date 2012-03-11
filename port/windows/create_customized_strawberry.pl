@@ -110,6 +110,31 @@ if ($patchdir) {
     };
 }
 
+print STDERR "Get/update distroprefs from github...\n";
+save_pwd {
+    chdir "$strawberry_dir/cpan"
+	or die "Can't chdir to $strawberry_dir/cpan: $!";
+    my @cmd;
+    if (-d "prefs/.git") {
+	chdir "prefs"
+	    or die "Can't chdir to prefs subdirectory: $!";
+	@cmd = ("git", "pull");
+    } else {
+	@cmd = ("git", "clone", "git://github.com/eserte/srezic-cpan-distroprefs.git", "prefs");
+    }
+    system @cmd;
+    if ($? != 0) {
+	print STDERR <<EOF;
+**********************************************************************
+* WARNING: the command
+*    @cmd
+* failed. This means that some CPAN modules may need interactive
+* configuration, and some patches may be missing.
+**********************************************************************
+EOF
+    }
+};
+
 print STDERR "Add modules...\n";
 # XXX Should this be the same list like in Bundle::BBBike_windist?
 my @mods = qw(
