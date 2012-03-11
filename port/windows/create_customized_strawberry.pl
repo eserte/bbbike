@@ -26,6 +26,8 @@ die "Sorry, mixing cygwin perl and Strawberry Perl does not work at all"
 
 my $patch_exe;
 
+my $bbbikesrc_dir = "$FindBin::RealBin/../..";
+
 my $strawberry_dir;
 my $strawberry_ver;
 my $bbbikedist_dir;
@@ -135,24 +137,21 @@ EOF
     }
 };
 
-print STDERR "Add modules...\n";
-# XXX Should this be the same list like in Bundle::BBBike_windist?
-my @mods = qw(
-		 Tk
-		 Algorithm::Permute
-		 Class::Accessor
-		 List::Permutor
-		 MLDBM
-		 PDF::Create
-		 String::Approx
-		 Tk::Date
-		 Tk::NumEntry
-		 Tk::Pod
-		 Win32::Registry
-		 Win32::Shortcut
-		 XML::Twig
-	    );
-system("$strawberry_dir/perl/bin/cpan.bat", @mods);
+print STDERR "Add modules from Bundle::BBBike_windist...\n";
+{
+    # Fix PATH, otherwise Tk and probably other stuff cannot be built
+    local $ENV{PATH} = join(";",
+			    "$strawberry_dir\\perl\\site\\bin",
+			    "$strawberry_dir\\perl\\bin",
+			    "$strawberry_dir\\c\\bin",
+			    "$ENV{PATH}"
+			   );
+    save_pwd {
+	chdir $bbbikesrc_dir
+	    or die "Can't chdir to $bbbikesrc_dir: $!";
+	system("$strawberry_dir/perl/bin/cpan.bat", "Bundle::BBBike_windist");
+    };
+}
 
 print STDERR "Copying strawberry perl to $bbbikedist_dir...\n";
 system($^X, "$FindBin::RealBin/strawberry-include-exclude.pl",
