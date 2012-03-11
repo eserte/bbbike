@@ -15,7 +15,7 @@
 
 package BBBike;
 
-$VERSION	   = '3.17'; # remove "-DEVEL" for releases
+$VERSION	   = '3.18-DEVEL'; # remove "-DEVEL" for releases
 $STABLE_VERSION	   = '3.17';
 $WINDOWS_VERSION   = '3.17'; # Windows distribution
 $FREEBSD_VERSION   = '3.17'; # (used on download page and bbbikevar.t)
