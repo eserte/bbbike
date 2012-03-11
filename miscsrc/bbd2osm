@@ -270,7 +270,13 @@ sub do_file {
 
 sub handle_blocked_node_like {
     my($r, $dir) = @_;
-    my($cat) = $r->[Strassen::CAT] =~ m{^([^:]+)};
+    my($cat, $cat_attribs) = $r->[Strassen::CAT] =~ m{^([^:]+)(?:::(.*))?};
+
+    # Don't render if the output is map-only
+    if ($optimize_for == OPTIMIZE_FOR_MAPNIK && ($cat_attribs||'') =~ /\bigndisp\b/) {
+	return;
+    }
+
     my $attribs;
     if ($cat eq 'BNP') {
 	if ($r->[Strassen::NAME] =~ m{drängelgitter}i) {
@@ -344,7 +350,7 @@ sub handle_handicap_like {
 							   $}x;
 	}
     }
-    if (defined $cat_attrib_hin && $cat_attrib_hin eq 'igndisp') {
+    if (defined $cat_attrib_hin && $cat_attrib_hin =~ m{\bigndisp\b}) {
 	# This is most likely generated from an "1s" record. Don't
 	# render it, because we cannot distinguish between directions
 	# in the osm output.
@@ -405,6 +411,7 @@ sub _handle_highway_like {
 	return;
     }
 
+    # Don't render if the output is map-only
     if ($optimize_for == OPTIMIZE_FOR_MAPNIK && ($cat_attribs||'') =~ /\bigndisp\b/) {
 	return;
     }
