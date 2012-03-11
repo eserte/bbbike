@@ -1007,7 +1007,7 @@ sub handle_cycleway_like {
 	} elsif ($cat eq 'RW4') {
 	    $extra_tags .= qq{  <tag k="cycleway" v="lane" />\n};
 	    $extra_tags .= qq{  <tag k="bbbike:usage" v="mandatory" />\n};
-	} elsif ($cat eq 'RW4?') {
+	} elsif ($cat eq 'RW3?' || $cat eq 'RW4?') {
 	    $extra_tags .= qq{  <tag k="cycleway" v="lane" />\n};
 	    $extra_tags .= qq{  <tag k="bbbike:usage" v="unknown" />\n};
 	} elsif ($cat eq 'RW5') {
