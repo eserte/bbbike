@@ -235,14 +235,26 @@ while(<$fh>) {
 		    }
 		}
 		if (-f $srcpath) {
+		    my $destpath = "$dest/$file";
 		    if ($say) {
-			print STDERR "cp $srcpath -> $dest/$file\n";
+			print STDERR "cp $srcpath -> $destpath\n";
 		    }
 		    if ($do) {
 			# XXX preserve permissions?
 			# XXX fails if trying to overwrite an existing file without w bit
-			cp $srcpath, "$dest/$file"
-			    or die "Can't copy $srcpath to $dest/$file: $!";
+			cp $srcpath, $destpath
+			    or do {
+				if (-e $destpath) {
+				    require File::Compare;
+				    if (File::Compare::compare($srcpath, $destpath) == 0) {
+					# warn ignore failure
+				    } else {
+					die "Can't copy $srcpath to $destpath ($!), and source differs";
+				    }
+				} else {
+				    die "Can't copy $srcpath to $destpath: $!";
+				}
+			    };
 		    }
 		}
 	    }
