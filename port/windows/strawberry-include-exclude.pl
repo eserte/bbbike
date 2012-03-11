@@ -13,6 +13,7 @@
 #
 
 use strict;
+use warnings;
 use FindBin;
 use lib "$FindBin::RealBin/inc"; # for Algorithm::IncludeExclude
 use Algorithm::IncludeExclude;
@@ -50,6 +51,7 @@ if (!$filelist) {
     my $rootdir_len = length($src) + 1;
     File::Find::find(sub {
 			 if (-f $_) {
+			     no warnings 'once';
 			     print $tmpfh substr($File::Find::name, $rootdir_len), "\n";
 			 }
 		     }, $src);
@@ -179,6 +181,9 @@ $ie->include(qw(perl vendor lib Crypt SSLeay));
 #$ie->exclude(qw(perl vendor lib DBI));
 #$ie->include(qw(perl vendor lib Math));
 #$ie->exclude(qw(perl vendor lib Math Pari.pm));
+$ie->exclude(qw(perl site lib Tk demos));
+$ie->exclude(qw(perl site lib Tk), qr{\.[hmt]$});
+$ie->exclude(qw(perl site lib Tk pTk), qr{\.[hmt]$});
 #
 if ($src) {
     for my $mod (qw(
