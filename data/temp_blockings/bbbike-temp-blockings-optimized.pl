@@ -1135,16 +1135,7 @@ userdel	q4::inwork 425,8766 490,8716
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1107/nachricht4418.html',
-         'until' => 1331568000,
-         'text' => 'Instandsetzung der Pankgrafenbrücke, ab dem 18.07.2011 bis Mitte März 2012, Einschränkungen möglich',
-         'from' => 1310763434,
-         'id' => 2252,
-         'data' => 'userdel	q4::inwork 13953,23497 14173,23426
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,

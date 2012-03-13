@@ -274,7 +274,7 @@ Alte Jakobstr.	N 9856,10358 9914,10401 9951,10503 9985,10616 9991,10637 10025,10
 Am Berlin Museum	N 10025,10755 9829,10830
 Neuenburger Str.	N 10178,10411 9951,10503 9853,10543
 Neue Jakobstr.	N 10819,11664 10902,11659 10963,11695 11048,11745
-Neue Jakobstr. [Wohngebiet]	N 11131,11579 10963,11695
+Neue Jakobstr. [Wohngebiet]	N 11131,11579 11017,11658 10963,11695
 Schulze-Delitzsch-Platz	N 11022,11782 11048,11745 11155,11750
 Schulze-Delitzsch-Platz	N 11155,11750 11022,11782
 Inselstr. (Mitte)	N 11022,11782 10955,11849 10904,11902 10869,11949
@@ -1014,7 +1014,6 @@ Niemannstr.	N 14254,11377 14211,11229
 #: last_checked: 2012-02-14
 #: next_check: 2012-04-01
 Axel-Springer-Str.	N 10020,11262 10072,11384 10116,11485 10136,11529 10166,11592 10202,11669 10213,11728
-Spittelmarkt	NN 10166,11592 10153,11666 10213,11728
 Beuthstr. (Mitte)	N 10330,11422 10229,11618
 #: XXX wie wird die Straßenführung nach den Bauarbeiten aussehen - Einmündung in die Axel-Springer?
 (Beuthstr. - Spittelmarkt)	NN 10229,11618 10213,11728
@@ -1096,12 +1095,13 @@ Rosmarinstr.	NN 9369,12253 9487,12263
 Besselstr.	N 9521,10926 9653,10950 9786,10971
 Hedemannstr.	N 9131,10716 9313,10789 9535,10820
 Fischerinsel	NH 10512,12039 10604,11941 10672,11870
-Fischerinsel [Wohngebiet]	N 10604,11941 10474,11843 10450,11823
+Fischerinsel [Wohngebiet]	N 10604,11941 10474,11843 10429,11807
 (Fischerinsel - Grünstraßenbrücke)	NN 10474,11843 10517,11795
 Neue Roßstr.	NH 10672,11870 10687,11853 10715,11812 10819,11664
 Annenstr. (Mitte)	NH 10819,11664 10915,11535 11039,11425 11052,11414 11091,11379 11249,11268
-#: XXX genauer Straßenname? Wie geht es nach Norden hin weiter?
-Annenstr. [Wohngebiet] (Mitte)	N 11052,11414 11131,11579 11166,11664
+#: note: keine Straßenschilder, Postadressen möglicherweise Heinrich-Heine-Str.
+(Wohngebiet)	N 11052,11414 11131,11579 11166,11664
+(Wohngebiet)	N 11166,11664 11080,11712 11017,11658
 Schmidstr.	N 11415,11392 11236,11508
 (Schmidstr. - Heinrich-Heine-Str.)	NN 11236,11508 11170,11558
 Heinrich-Heine-Platz	NH 11349,11227 11249,11268

@@ -6319,9 +6319,11 @@ Kaskelstr.: Asphalt	Q0 15245,11178 15101,11231
 (Fischerstr. - Lückstr.): Beton mit Schäden	Q1 16587,10613 16601,10650
 (Skandinavische Str. - Lichtenberger Brücke/Monimbóplatz): Asphalt mit einigen Schäden	Q1 17210,11950 17201,11975 17137,11969 17023,11908 17026,11888
 Rüdersdorfer Str. [Rückseite]: Beton	Q0 12923,12043 13014,11955 13040,11921 13088,11945 13050,11979 13014,11955
-Neue Jakobstr. [Wohngebiet]: Beton	Q0 11131,11579 10963,11695
-Annenstr.: Beton	Q0 11052,11414 11131,11579 11166,11664
-Fischerinsel [Wohngebiet]: Beton	Q0 10604,11941 10474,11843 10450,11823
+Neue Jakobstr. [Wohngebiet]: Beton, Kopfsteinpflasterabschnitt	Q1 11131,11579 11017,11658
+Neue Jakobstr. [Wohngebiet]: Beton	Q1 11017,11658 10963,11695
+(Wohngebiet): Beton	Q0 11052,11414 11131,11579 11166,11664
+(Wohngebiet): Beton und Verbundsteinpflaster	Q1 11166,11664 11080,11712 11017,11658
+Fischerinsel [Wohngebiet]: Beton	Q0 10604,11941 10474,11843 10429,11807
 (Fischerinsel - Grünstraßenbrücke): Gehwegplatten	Q0 10474,11843 10517,11795
 Neue Blumenstr.: Beton mit einigen Schden	Q1 11607,12412 11709,12601
 Neue Blumenstr.: Asphalt	Q0 11709,12601 12006,12464

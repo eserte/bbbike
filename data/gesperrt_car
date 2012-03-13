@@ -781,14 +781,10 @@ Karl-Marx-Allee -> Krautstr./Blumenstr.: Mittelstreifen	3::igndisp 12360,12505 1
 Krautstr./Blumenstr. -> Karl-Marx-Allee: Mittelstreifen	3::igndisp 12125,12490 12134,12540 12114,12546
 Mittelstreifen	3nocross::ignrte 10240,11740 10213,11728 9981,11689
 Axel-Springer-Str. -> Leipziger Str.: Mittelstreifen	3::igndisp 10202,11669 10213,11728 9981,11689
-Axel-Springer-Str. -> Spittelmarkt: Mittelstreifen	3::igndisp 10202,11669 10213,11728 10153,11666
 Gertraudenstr. -> Axel-Springer-Str.: Mittelstreifen	3::igndisp 10240,11740 10213,11728 10202,11669
 Gertraudenstr. -> Beuthstr.: Mittelstreifen	3::igndisp 10240,11740 10213,11728 10229,11618
-Gertraudenstr. -> Spittelmarkt: Mittelstreifen	3::igndisp 10240,11740 10213,11728 10153,11666
 Beuthstr. -> Axel-Springer-Str.: Mittelstreifen	3::igndisp 10229,11618 10213,11728 10202,11669
 Beuthstr. -> Leipziger Str.: Mittelstreifen	3::igndisp 10229,11618 10213,11728 9981,11689
-Beuthstr. -> Spittelmarkt: Mittelstreifen	3::igndisp 10229,11618 10213,11728 10153,11666
-Spittelmarkt -> Leipziger Str.: Mittelstreifen	3::igndisp 10153,11666 10213,11728 9981,11689
 Niederwallstr./Spittelmarkt: nur Abbiegen nach rechts erlaubt	3 10183,11770 10240,11740 10320,11627
 Niederwallstr./Spittelmarkt: nur Abbiegen nach rechts erlaubt	3 10183,11770 10240,11740 10299,11786
 Kleineweg: nur für Anlieger	2:Anlieger 9126,8025 9130,7804 9132,7661
