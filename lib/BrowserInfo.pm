@@ -67,7 +67,9 @@ sub set_info {
     $self->{'user_agent_os'} = "";
     $self->{'user_agent_compatible'} = "";
 
-    my $user_agent = $q->user_agent || '';
+    # Protect against warnings
+    $ENV{HTTP_USER_AGENT} = '' if !defined $q->user_agent;
+    my $user_agent = $q->user_agent;
 
     ($self->{'user_agent_name'}, $self->{'user_agent_version'}) =
 	_get_browser_version($user_agent);
