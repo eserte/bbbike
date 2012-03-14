@@ -708,8 +708,8 @@ Abbiegen verboten	3nocross::ignrte 10512,12039 10460,11979 10391,11898
 Petripl. -> Gertraudenstr.: Abbiegen verboten	3::igndisp 10418,12016 10460,11979 10512,12039
 Gertraudenstr. -> Petripl.: Abbiegen verboten	3::igndisp 10391,11898 10460,11979 10418,12016
 Abbiegen verboten	3nocross::ignrte 10313,11805 10299,11786 10240,11740
-Gertraudenstr. -> Kurstr.: Abbiegen verboten	3::igndisp 10240,11740 10299,11786 10274,11805
-Kurstr. -> Gertraudenstr.: Abbiegen verboten	3::igndisp 10274,11805 10299,11786 10313,11805
+Spittelmarkt -> Kurstr.: Abbiegen verboten	3::igndisp 10240,11740 10299,11786 10274,11805
+Kurstr. -> Spittelmarkt: Abbiegen verboten	3::igndisp 10274,11805 10299,11786 10313,11805
 Mittelstreifen	3nocross::ignrte 10738,12364 10800,12461 10878,12560 10954,12635
 Jüdenstr. -> Grunerstr.: Mittelstreifen	3::igndisp 10778,12493 10800,12461 10878,12560
 Jüdenstr. -> Jüdenstr.: Mittelstreifen	3::igndisp 10778,12493 10800,12461 10831,12371
@@ -781,10 +781,7 @@ Karl-Marx-Allee -> Krautstr./Blumenstr.: Mittelstreifen	3::igndisp 12360,12505 1
 Krautstr./Blumenstr. -> Karl-Marx-Allee: Mittelstreifen	3::igndisp 12125,12490 12134,12540 12114,12546
 Mittelstreifen	3nocross::ignrte 10240,11740 10213,11728 9981,11689
 Axel-Springer-Str. -> Leipziger Str.: Mittelstreifen	3::igndisp 10202,11669 10213,11728 9981,11689
-Gertraudenstr. -> Axel-Springer-Str.: Mittelstreifen	3::igndisp 10240,11740 10213,11728 10202,11669
-Gertraudenstr. -> Beuthstr.: Mittelstreifen	3::igndisp 10240,11740 10213,11728 10229,11618
-Beuthstr. -> Axel-Springer-Str.: Mittelstreifen	3::igndisp 10229,11618 10213,11728 10202,11669
-Beuthstr. -> Leipziger Str.: Mittelstreifen	3::igndisp 10229,11618 10213,11728 9981,11689
+Spittelmarkt -> Axel-Springer-Str.: Mittelstreifen	3::igndisp 10240,11740 10213,11728 10202,11669
 Niederwallstr./Spittelmarkt: nur Abbiegen nach rechts erlaubt	3 10183,11770 10240,11740 10320,11627
 Niederwallstr./Spittelmarkt: nur Abbiegen nach rechts erlaubt	3 10183,11770 10240,11740 10299,11786
 Kleineweg: nur für Anlieger	2:Anlieger 9126,8025 9130,7804 9132,7661
@@ -1317,3 +1314,4 @@ Großer Stern	1 6725,12113 6754,12108 6787,12099 6828,12031 6809,11979 6744,11936
 Markelstr.	1 5269,6305 5020,6434
 Geschwister-Scholl-Str. (Potsdam)	1 -14909,-1818 -14733,-1812
 Feuerbachstr. (Potsdam)	1 -14140,-1390 -13879,-1445
+Jadeweg	1 -3850,13756 -3878,13636 -4011,13656
