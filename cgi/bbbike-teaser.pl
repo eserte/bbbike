@@ -104,7 +104,7 @@ EOF
 } else {
 	my $download_link = "$BBBike::BBBIKE_SF_WWW/downloads.de.html";
 	<<EOF;
-<div class="teaser"><a href="@{[ CGI::escapeHTML($download_link) ]}">Download</a> der Offline-Version von BBBike (Perl/Tk) mit interaktiver Karte. Läuft auf Linux, Un*x, Mac OS X und Windows.<br /><a class="new" href="@{[ CGI::escapeHTML($download_link) ]}" style="font-weight:bold;">NEW: Vorabversion 3.18 für Windows</a></div>
+<div class="teaser"><a href="@{[ CGI::escapeHTML($download_link) ]}">Download</a> der Offline-Version von BBBike (Perl/Tk) mit interaktiver Karte. Läuft auf Linux, Un*x, Mac OS X und Windows.<br /><a class="new" href="@{[ CGI::escapeHTML($download_link) ]}" style="font-weight:bold;">NEU: Vorabversion 3.18 für Windows</a></div>
 EOF
     }
 }
