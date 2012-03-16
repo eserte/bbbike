@@ -17,22 +17,22 @@ use FindBin;
 use lib (
 	 "$FindBin::RealBin/..",
 	 "$FindBin::RealBin/../lib",
+	 $FindBin::RealBin,
 	);
 
 use File::Basename qw(basename);
 use File::Temp qw(tempdir);
 use Getopt::Long;
 use LWP::UserAgent;
-use XML::LibXML;
 
-use BBBikeUtil qw(catfile);
+use BBBikeDir qw(get_data_osm_directory);
 use BBBikeVar ();
 
 sub usage ();
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
-my $rooturl = 'http://download.bbbike.org/bbbike/data-osm/';
+my $rooturl = 'http://download.bbbike.org/bbbike/data-osm';
 my $city;
 GetOptions(
 	   "url=s" => \$rooturl,
@@ -43,7 +43,6 @@ GetOptions(
 
 my $ua = LWP::UserAgent->new;
 $ua->agent("bbbike/$BBBike::VERSION (bbbike.org_download.pl/$VERSION) (LWP::UserAgent/$LWP::VERSION) ($^O)");
-my $p = XML::LibXML->new;
 
 if (!$city) {
     listing();
@@ -52,7 +51,10 @@ if (!$city) {
 }
 
 sub listing {
-    my $url = $rooturl;
+    my $url = $rooturl . '/';
+
+    require XML::LibXML;
+    my $p = XML::LibXML->new;
 
     my $resp = $ua->get($url);
     die "Can't get $url: " . $resp->status_line
@@ -71,7 +73,7 @@ sub listing {
 sub city {
     my $city = shift;
     my $url = "$rooturl/$city.tbz";
-    my $data_osm_directory = get_data_osm_directory();
+    my $data_osm_directory = get_data_osm_directory(-create => 1);
     my $tmpdir = tempdir(DIR => $data_osm_directory, CLEANUP => 1)
 	or die "Can't create temporary directory in $data_osm_directory: $!";
     my $tmpfile = "$tmpdir/$city.tbz";
@@ -97,37 +99,6 @@ sub city {
     }
 
     print STDERR "Finished.\n";
-}
-
-sub get_data_osm_directory {
-    # XXX Note: most of this is taken from BBBike
-    my $home = $ENV{HOME};
-    my $bbbike_configdir;
-    if ($^O eq 'MSWin32') {
-	require Win32Util;
-	$home = Win32Util::get_user_folder();
-	if (-d $home) {
-	    $bbbike_configdir = catfile($home, "BBBike");
-	}
-    }
-    if (!defined $bbbike_configdir) {
-	if (!defined $home) {
-	    $home = eval { (getpwuid($<))[7] };
-	    if (!defined $home) {
-		die "Sorry, I can't find your home directory.";
-	    }
-	}
-	$bbbike_configdir = catfile($home, ".bbbike");
-    }
-    if (!-d $bbbike_configdir) {
-	mkdir $bbbike_configdir;
-    }
-    my $data_osm_directory = catfile($bbbike_configdir, 'data-osm');
-    if (!-d $data_osm_directory) {
-	mkdir $data_osm_directory
-	    or die "Can't create $data_osm_directory: $!";
-    }
-    $data_osm_directory;
 }
 
 sub usage () {
