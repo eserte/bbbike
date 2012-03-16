@@ -15,7 +15,11 @@
 use strict;
 use warnings;
 use FindBin;
-use lib ("$FindBin::RealBin/../lib");
+use lib (
+	 "$FindBin::RealBin/..",
+	 "$FindBin::RealBin/../lib",
+	 $FindBin::RealBin,
+	);
 
 use Cwd qw(realpath);
 use File::Basename qw(basename);
@@ -33,6 +37,7 @@ BEGIN {
 		die "ERROR: Can't load any YAML parser (tried YAML::Syck and YAML) and also no success loading Safe.pm: $@";
 }
 
+use BBBikeDir qw(get_data_osm_directory);
 use Msg qw(M Mfmt noautosetup);
 
 my $lang = Msg::get_lang() || 'en';
@@ -71,6 +76,12 @@ my $mw = tkinit;
 
 my @bbbike_datadirs;
 
+{
+    my $data_osm_directory = get_data_osm_directory();
+    if (-d $data_osm_directory) {
+	find_datadirs($data_osm_directory);
+    }
+}
 find_datadirs($rootdir);
 
 if (!@bbbike_datadirs) {
