@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2009 Slaven Rezic. All rights reserved.
+# Copyright (C) 2009,2012 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -50,12 +50,17 @@ $Msg::messages =
       de => {
 	     'Sorry, no data directories found in %s' => 'Sorry, keine Datenverzeichnisse in %s gefunden',
 	     'Exit' => 'Beenden',
+	     'Close' => 'Schließen',
 	     'Lazy drawing (experimental, faster startup)' => 'Verzögertes Zeichnen (experimentell, schnellerer Start)',
 	     'Warnings in a window' => 'Warnungen in ein eigenes Fenster',
 	     'Advanced mode' => 'Fortgeschrittener Modus',
 	     'Choose city/region:' => 'Stadt/Region auswählen:',
 	     '(original BBBike data)' => '(originale BBBike-Daten)',
 	     'Options' => 'Optionen',
+	     'More cities/regions @ bbbike.org' => 'Weitere Städte/Regionen bei bbbike.org',
+	     'Problem: cannot find more data at bbbike.org.' => 'Problem: es konnten keine weiteren Daten bei bbbike.org gefunden werden.',
+	     "The download of '%s' was successful." => "Der Download von '%s' war erfolgreich.",
+	     "An error occurred while downloading '%s'." => "Ein Fehler beim Downloaden von '%s' ist aufgetreten.",
 	    },
     }->{$lang};
 
@@ -69,20 +74,19 @@ GetOptions("rootdir=s" => \$rootdir);
 
 my $mw = tkinit;
 
+$mw->optionAdd('*advOpts*font', '{sans serif} 7');
+
 #$mw->optionAdd('*font', '{sans serif} 10');
 #{ my $bg = '#dfdbd7'; $mw->configure(-background => $bg); $mw->optionAdd('*background', $bg) }
 
 @ARGV and usage;
 
-my @bbbike_datadirs;
-
-{
-    my $data_osm_directory = get_data_osm_directory();
-    if (-d $data_osm_directory) {
-	find_datadirs($data_osm_directory);
-    }
+my $download_script = "$rootdir/miscsrc/bbbike.org_download.pl";
+if (!-e $download_script) {
+    warn "Das Download-Skript $download_script ist nicht verfügbar.\n";
 }
-find_datadirs($rootdir);
+
+my @bbbike_datadirs = find_all_datadirs();
 
 if (!@bbbike_datadirs) {
     $mw->messageBox(-message => Mfmt('Sorry, no data directories found in %s', $rootdir));
@@ -97,7 +101,8 @@ my $xb = $mw->Button(-text => M"Exit",
 $mw->bind('<Escape>' => sub { $xb->invoke });
 
 my %opt;
-$mw->Menubutton(-text => M"Options",
+$mw->Menubutton(Name => 'advOpts',
+		-text => M"Options",
 		-menuitems => [[Checkbutton => M"Lazy drawing (experimental, faster startup)",
 				-variable => \$opt{'-lazy'},
 			       ],
@@ -113,41 +118,74 @@ $mw->Menubutton(-text => M"Options",
 my $bln = $mw->Balloon;
 $mw->Label(-text => M"Choose city/region:")->pack;
 my $p = $mw->Scrolled("Pane", -sticky => 'nw', -scrollbars => 'ose')->pack(qw(-fill both));
-my $adjust_geometry_cb;
-for my $bbbike_datadir (sort { $a->{dataset_title} cmp $b->{dataset_title} } @bbbike_datadirs) {
-    my($dataset_title, $datadir) = @{$bbbike_datadir}{qw(dataset_title datadir)};
-    Tk::grid(my $b = $p->Button(-text => $dataset_title,
-				-anchor => 'w',
-				-command => sub {
-				    my @cmd = ($^X, File::Spec->catfile($this_rootdir, 'bbbike'), '-datadir', $datadir,
-					       (grep { $opt{$_} } keys %opt),
-					      );
-				    if ($^O eq 'MSWin32') {
-					# no forking here
-					{ exec @cmd }
-					$mw->messageBox(-message => "Can't execute @cmd: $!",
-							-icon => 'error');
-				    } else {
-					if (fork == 0) {
-					    exec @cmd;
-					    warn "Cannot start @cmd: $!";
-					    CORE::exit(1);
+fill_chooser();
+
+#$mw->WidgetDump;
+MainLoop;
+
+sub fill_chooser {
+    # clean pane (for the refresh case)
+    $_->destroy for $p->Subwidget('scrolled')->Subwidget("frame")->children;
+
+    my $last_b;
+    for my $bbbike_datadir (sort { $a->{dataset_title} cmp $b->{dataset_title} } @bbbike_datadirs) {
+	my($dataset_title, $datadir) = @{$bbbike_datadir}{qw(dataset_title datadir)};
+	Tk::grid(my $b = $p->Button(-text => $dataset_title,
+				    -anchor => 'w',
+				    -command => sub {
+					my @cmd = ($^X, File::Spec->catfile($this_rootdir, 'bbbike'), '-datadir', $datadir,
+						   (grep { $opt{$_} } keys %opt),
+						  );
+					if ($^O eq 'MSWin32') {
+					    # no forking here
+					    { exec @cmd }
+					    $mw->messageBox(-message => "Can't execute @cmd: $!",
+							    -icon => 'error');
+					} else {
+					    if (fork == 0) {
+						exec @cmd;
+						warn "Cannot start @cmd: $!";
+						CORE::exit(1);
+					    }
+					    $mw->destroy;
 					}
-					$mw->destroy;
-				    }
-				},
-			       ), -sticky => 'ew');
-    $bln->attach($b, -msg => $datadir);
-    if (!$adjust_geometry_cb) {
-	my $height = 400; $height = $mw->screenheight - 40 if $height > $mw->screenheight;
-	$adjust_geometry_cb = $mw->after(50, sub { $p->GeometryRequest($b->Width+20, $height) });
+				    },
+				   ), -sticky => 'ew');
+	$bln->attach($b, -msg => $datadir);
+	$last_b = $b;
+    }
+    if ($download_script) {
+	Tk::grid($p->Button(-text => M('More cities/regions @ bbbike.org'),
+			    -anchor => 'w',
+			    -command => \&download_more,
+			   ), -sticky => 'ew');
+    }
+    if ($last_b) {
+	create_adjust_geometry_cb($p, $last_b);
     }
 }
 
-MainLoop;
+sub create_adjust_geometry_cb {
+    my($p, $b) = @_;
+    my $height = 400; $height = $p->screenheight - 40 if $height > $p->screenheight;
+    $p->after(50, sub { $p->GeometryRequest($b->Width+20, $height) });
+}
+
+sub find_all_datadirs {
+    my @dirs;
+    {
+	my $data_osm_directory = get_data_osm_directory();
+	if (-d $data_osm_directory) {
+	    push @dirs, find_datadirs($data_osm_directory);
+	}
+    }
+    push @dirs, find_datadirs($rootdir);
+    @dirs;
+}
 
 sub find_datadirs {
     my($startdir) = @_;
+    my @dirs;
     for my $dir (bsd_glob(File::Spec->catfile($startdir, '*'))) {
 	if (-d $dir) {
 	    my $meta = load_meta($dir);
@@ -155,19 +193,20 @@ sub find_datadirs {
 		$meta->{datadir} = $dir;
 		$meta->{dataset_title} = guess_dataset_title_from_dir($dir)
 		    if !$meta->{dataset_title};
-		push @bbbike_datadirs, $meta;
+		push @dirs, $meta;
 	    } else {
 		my $base_dir = basename($dir);
 		if ($base_dir eq 'data-osm') { # Wolfram's convention
-		    find_datadirs($dir); # XXX no recursion detection (possible with recursive symlinks...)
+		    push @dirs, find_datadirs($dir); # XXX no recursion detection (possible with recursive symlinks...)
 		} elsif ($base_dir =~ m{^data}) {
-		    push @bbbike_datadirs, { datadir => $dir,
-					     dataset_title => guess_dataset_title_from_dir($dir),
-					   };
+		    push @dirs, { datadir => $dir,
+				  dataset_title => guess_dataset_title_from_dir($dir),
+				};
 		}
 	    }
 	}
     }
+    @dirs;
 }
 
 sub guess_dataset_title_from_dir ($) {
@@ -226,6 +265,51 @@ sub load_meta {
     # Don't warn, we're usually trying every directory under
     # $bbbike_root...
     undef;
+}
+
+sub download_more {
+    chomp(my(@cities) = `$^X $download_script`);
+    if (!@cities) {
+	$mw->messageBox(-message => M('Problem: cannot find more data at bbbike.org.'));
+	return;
+    }
+    my $t = $mw->Toplevel;
+    $t->Label(-text => M"Choose city/region:")->pack;
+    my $p = $t->Scrolled("Pane", -sticky => 'nw', -scrollbars => 'ose')->pack(qw(-fill both));
+    my $last_b;
+    for my $city (@cities) {
+	Tk::grid(my $b = $p->Button(-text => $city,
+				    -anchor => 'w',
+				    -command => [\&download_city, $city, $t],
+				   ), -sticky => 'ew');
+	$bln->attach($b, -msg => "Download $city");
+	$last_b = $b;
+    }
+    if ($last_b) {
+	create_adjust_geometry_cb($p, $last_b);
+    }
+    $t->Button(-text => M"Close",
+	       -command => sub { $t->destroy },
+	      )->pack(-side => 'bottom');
+}
+
+sub download_city {
+    my($city, $t) = @_;
+    $t->Busy;
+    system($^X, $download_script, '-city', $city);
+    my $st = $?;
+    $t->Unbusy;
+    if ($st == 0) {
+	$mw->messageBox(-message => Mfmt("The download of '%s' was successful.", $city));
+    } else {
+	$mw->messageBox(-message => Mfmt("An error occurred while downloading '%s'.", $city));
+    }
+    $t->destroy;
+
+    # refresh:
+    @bbbike_datadirs = find_all_datadirs();
+    uniquify_titles();
+    fill_chooser();
 }
 
 sub usage () {
