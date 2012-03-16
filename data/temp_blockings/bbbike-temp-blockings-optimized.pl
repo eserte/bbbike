@@ -1072,7 +1072,8 @@ userdel	q4::inwork 425,8766 490,8716
          'text' => 'Schadowstr. (Mitte): Baustelle, Straße vollständig gesperrt (bis Ende 03/12) in beiden Richtungen zwischen Unter den Linden und Dorotheenstr., 16.05.2011 07:00 Uhr bis 31.03.2012 17:00 Uhr ',
          'from' => 1305435600,
          'id' => 2210,
-         'data' => 'userdel	q4::inwork 9028,12307 9016,12416 9008,12485
+         'data' => '#: last_checked: 2012-03-16
+userdel	q4::inwork 9028,12307 9016,12416 9008,12485
 ',
          'type' => 'handicap'
        },
@@ -1104,7 +1105,8 @@ userdel	q4::inwork 425,8766 490,8716
          'text' => 'Dorotheenstr. (Mitte): Baustelle, Fahrtrichtung gesperrt (bis Ende 04/12) Richtung Friedrichstr. zwischen Wilhelmstr. und Schadowstr., 06.06.2011 07:00 Uhr bis 30.04.2012 17:00 Uhr ',
          'from' => 1307250000,
          'id' => 2224,
-         'data' => 'userdel	q4::inwork; 8775,12457 8907,12472 9008,12485
+         'data' => '#: last_checked: 2012-03-16
+userdel	q4::inwork; 8775,12457 8907,12472 9008,12485
 ',
          'type' => 'handicap'
        },
@@ -1314,16 +1316,7 @@ userdel	2::inwork 19968,16 19940,52
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'http://www.berlin.de/ba-lichtenberg/presse/archiv/20120220.1530.366402.html',
-         'until' => 1331766000,
-         'text' => 'Orankestrand wegen Bauarbeiten gesperrt, bis ungefähr März 2012, siehe http://www.berlin.de/ba-lichtenberg/presse/archiv/20120220.1530.366402.html',
-         'from' => 1330026300,
-         'id' => 2314,
-         'data' => 'userdel	2::inwork 15479,16060 15592,16069 15664,16115 15731,16208
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20120223.1505.366579.html',
          'until' => 1346968800,

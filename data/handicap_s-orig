@@ -16,7 +16,7 @@ Sembritzkystr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 7203,5488 7186,5453 7157,
 #: last_checked: 2012-02-14 vvv
 #: next_check: 2012-04-01 vvv
 Axel-Springer-Str.: Bauarbeiten	q4::inwork 10166,11592 10136,11529
-Axel-Springer-Str.: Bauarbeiten, Gehwege kˆnnen schon benutzt werden	q3::inwork 10166,11592 10202,11669 10213,11728
+Axel-Springer-Str.: Bauarbeiten, Gehwege kˆnnen schon benutzt werden	q3::inwork 10166,11592 10201,11631 10213,11728
 #: next_check: ^^^
 #: last_checked: ^^^
 # 
@@ -46,11 +46,11 @@ Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9890,12161 9875,12257 98
 #: next_check: 2012-04-17
 Jerusalemer Str.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 9878,11857 9892,11752
 # 
-#: last_checked: 2012-03-11
+#: last_checked: 2012-03-16
 #: next_check: 2012-04-14
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraﬂe Richtung S¸den	q4::inwork; 9475,12365 9462,12481 9454,12558
 # 
-#: last_checked: 2012-03-11
+#: last_checked: 2012-03-16
 #: next_check: 2012-04-14
 Universit‰tsstr.: wegen Bauarbeiten Richtung Unter den Linden gesperrt	q4::inwork; 9580,12581 9601,12380
 # 
@@ -61,7 +61,7 @@ Helmerdingstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg kann benutzt werden	q4::i
 #: next_check: ^^^
 #: last_checked: ^^^
 # 
-#: last_checked: 2012-02-27
+#: last_checked: 2012-03-16
 #: next_check: 2012-04-01
 Rathausstr.: Baustelle vor dem Roten Rathaus, eng	q4::inwork 10601,12521 10704,12595
 # 
@@ -88,7 +88,7 @@ Elcknerplatz, Borgmannstr.: Bauarbeiten, Einbahnstraﬂe	q4::inwork; 22428,6063 22
 #: by: IM_008926
 Kantstr.: Bauarbeiten am Zoofenster, Fahrbahn Richtung Westen gesperrt	q4::inwork; 5652,11004 5613,10963
 # 
-#: last_checked: 2012-03-06 vvv
+#: last_checked: 2012-03-16 vvv
 #: next_check: 2012-04-20 vvv
 #: note: eigentlich Radfahren auf der Friedrichsbr¸cke jetzt auch verboten
 Burgstraﬂe: Bauarbeiten, Einbahnstraﬂenregelung	q4::inwork; 10166,12777 10132,12941
@@ -96,6 +96,9 @@ Anna-Louisa-Karsch-Str.: vor der Friedrichsbr¸cke auf den linken Gehweg fahren	q
 #: next_check ^^^
 #: last_checked ^^^
 # 
+#: last_checked: 2012-03-16
+#: next_check: 2012-06-01
+Am Zirkus: Baustelle, Einbahnstraﬂe	q3::inwork; 9170,13031 9239,12923
 #: temporary ^^^
 ######################################################################
 #: XXX es ist zu erwarten, dass hier der Wuhlewanderweg verbessert wird: vvv
@@ -1459,7 +1462,10 @@ An der Brauerei: Fuﬂg‰nger	q1 13291,13290 13283,13311 13381,13354
 An der Brauerei: Fuﬂg‰nger	q2 13283,13311 13235,13414
 (Friedhofsweg): Fuﬂg‰nger, Radfahren nicht erlaubt	q4 12851,12602 13108,12859 13046,12956 12878,13229
 (Friedhofsweg): Fuﬂg‰nger, Radfahren nicht erlaubt	q4 12773,12683 13046,12956
-Ritterstr.: Fuﬂg‰nger	q1 9763,11148 9861,11103
+#: XXX nach den Bauarbeiten vielleicht wieder q1? Und inwork streichen
+#: last_checked: 2012-03-15
+#: next_check: 2012-06-01
+Ritterstr.: Fuﬂg‰nger	q3::inwork 9763,11148 9861,11103
 Elisenstr.: Fuﬂg‰nger	q2 5808,5332 5810,5340 5822,5388
 Mittelstr. (Steglitz): Fuﬂg‰nger	q2 5111,5337 5203,5278
 Goebenstr.: Fuﬂg‰nger	q1 5606,4726 5555,4743 5535,4756 5509,4773 5478,4792
@@ -1502,7 +1508,7 @@ K‰uzchensteig: Fuﬂg‰nger, Bordsteine	q1 1918,6456 1895,6470
 (Parkweg Robert-Stolz-Anlage): Fuﬂg‰nger, schmal	q3 1869,7525 1946,7580
 (Luisenstr. - Hufelandweg): Fuﬂg‰nger	q3 8665,13353 8582,13355
 Rahel-Hirsch-Weg: Fuﬂg‰nger	q3 8582,13355 8595,13375 8587,13436 8586,13440
-Helga-Hahnemann-Str.: Fuﬂg‰nger, schmal	q2 9415,13315 9385,13174
+Helga-Hahnemann-Str.: Fuﬂg‰nger, schmal	q2 9415,13315 9408,13282 9385,13174
 An der Karolinenhˆhe: Fuﬂg‰nger, spielende Kinder	q3 -5900,11726 -5848,11779 -5892,11820 -5847,11876
 Obstallee: Bodenschwellen, Fuﬂg‰nger, spielende Kinder	q3 -5421,12450 -5896,12607
 Leubnitzweg: Fuﬂg‰nger (Wohngebiet), Bordsteine	q3 -5385,12540 -5421,12450

@@ -19007,6 +19007,7 @@ EOF
        type  => 'handicap',
        source_id => 'INKO_093372',
        data  => <<EOF,
+#: last_checked: 2012-03-16
 userdel	q4::inwork 9028,12307 9016,12416 9008,12485
 EOF
      },
@@ -19148,6 +19149,7 @@ EOF
        type  => 'handicap',
        source_id => 'INKO_093371',
        data  => <<EOF,
+#: last_checked: 2012-03-16
 userdel	q4::inwork; 8775,12457 8907,12472 9008,12485
 EOF
      },
