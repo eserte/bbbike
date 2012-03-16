@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2011 Slaven Rezic. All rights reserved.
+# Copyright (C) 2011,2012 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -13,6 +13,11 @@
 #
 
 use strict;
+use FindBin;
+use lib (
+	 "$FindBin::RealBin/..",
+	 "$FindBin::RealBin/../lib",
+	);
 
 use File::Basename qw(basename);
 use File::Temp qw(tempdir);
@@ -20,23 +25,24 @@ use Getopt::Long;
 use LWP::UserAgent;
 use XML::LibXML;
 
-#use lib "/home/e/eserte/src/bbbike"; # XXX!!!
-#use BBBikeHeavy ();
+use BBBikeUtil qw(catfile);
+use BBBikeVar ();
+
+sub usage ();
+
+our $VERSION = '0.01';
 
 my $rooturl = 'http://download.bbbike.org/bbbike/data-osm/';
-my $bbbikedir = "$ENV{HOME}/src/bbbike";
 my $city;
-GetOptions("url=s" => \$rooturl,
+GetOptions(
+	   "url=s" => \$rooturl,
 	   "city=s" => \$city,
 	  )
-    or die "usage?";
-@ARGV and die "usage?";
+    or usage;
+@ARGV and usage;
 
-## This would work, but throws a number of warnings because BBBikeHeavy expects some
-## variables only defined within bbbike application ($os, $progname...)
-#my $ua = BBBikeHeavy::get_user_agent();
-#die "Cannot get user agent" if !$ua;
 my $ua = LWP::UserAgent->new;
+$ua->agent("bbbike/$BBBike::VERSION (bbbike.org_download.pl/$VERSION) (LWP::UserAgent/$LWP::VERSION) ($^O)");
 my $p = XML::LibXML->new;
 
 if (!$city) {
@@ -57,6 +63,7 @@ sub listing {
     for my $a_node ($root->findnodes('//a')) {
 	my $href = $a_node->getAttribute('href');
 	next if ($href !~ m{\.tbz$});
+	$href =~ s{\.tbz$}{};
 	print $href, "\n";
     }
 }
@@ -64,16 +71,12 @@ sub listing {
 sub city {
     my $city = shift;
     my $url = "$rooturl/$city.tbz";
-    my $tmpdir = tempdir(TMPDIR => 1, CLEANUP => 1)
-	or die "Can't create temporary directory: $!";
+    my $data_osm_directory = get_data_osm_directory();
+    my $tmpdir = tempdir(DIR => $data_osm_directory, CLEANUP => 1)
+	or die "Can't create temporary directory in $data_osm_directory: $!";
     my $tmpfile = "$tmpdir/$city.tbz";
-    my $dataosmdir = "$bbbikedir/data-osm";
-    if (!-d $dataosmdir) {
-	mkdir $dataosmdir
-	    or die "Can't create $dataosmdir: $!";
-    }
-    chdir $dataosmdir
-	or die "Can't chdir to $dataosmdir: $!";
+    chdir $data_osm_directory
+	or die "Can't chdir to $data_osm_directory: $!";
 
     print STDERR "Downloading data for $city...\n";
 
@@ -81,7 +84,7 @@ sub city {
     die "Can't get $url to $tmpfile: " . $resp->status_line
 	if !$resp->is_success;
 
-    print STDERR "Extracting data to $dataosmdir...\n";
+    print STDERR "Extracting data to $data_osm_directory...\n";
     if (eval { require Archive::Tar; Archive::Tar->has_bzip2_support }) {
 	my $success = Archive::Tar->extract_archive($tmpfile);
 	if (!$success) {
@@ -94,6 +97,43 @@ sub city {
     }
 
     print STDERR "Finished.\n";
+}
+
+sub get_data_osm_directory {
+    # XXX Note: most of this is taken from BBBike
+    my $home = $ENV{HOME};
+    my $bbbike_configdir;
+    if ($^O eq 'MSWin32') {
+	require Win32Util;
+	$home = Win32Util::get_user_folder();
+	if (-d $home) {
+	    $bbbike_configdir = catfile($home, "BBBike");
+	}
+    }
+    if (!defined $bbbike_configdir) {
+	if (!defined $home) {
+	    $home = eval { (getpwuid($<))[7] };
+	    if (!defined $home) {
+		die "Sorry, I can't find your home directory.";
+	    }
+	}
+	$bbbike_configdir = catfile($home, ".bbbike");
+    }
+    if (!-d $bbbike_configdir) {
+	mkdir $bbbike_configdir;
+    }
+    my $data_osm_directory = catfile($bbbike_configdir, 'data-osm');
+    if (!-d $data_osm_directory) {
+	mkdir $data_osm_directory
+	    or die "Can't create $data_osm_directory: $!";
+    }
+    $data_osm_directory;
+}
+
+sub usage () {
+    die <<EOF;
+usage: $0 [-url ...] [-city ...]
+EOF
 }
 
 __END__
