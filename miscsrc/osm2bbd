@@ -928,6 +928,10 @@ for my $osm_file (@osm_files) {
 		}
 	    }
 
+	    if (!@nodes) {
+		warn "Broken <way>: no nodes found " . ($reader ? "approx. line " . $reader->lineNumber : "");
+	    }
+
 	    my $is_area = sub {
 		$nodes[0] == $nodes[-1];
 	    };
