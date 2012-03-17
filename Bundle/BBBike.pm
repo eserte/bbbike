@@ -205,7 +205,7 @@ Devel::Leak	- Für Memory-Leak-Tests
 
 Text::Table
 
-Text::Unidecode	- Für das Neu-Erzeugen der .bbd-Dateien in data
+Text::Unidecode	- Für das Neu-Erzeugen der .bbd-Dateien in data; Fallback für internationale Texte in PDFs
 
 Data::Compare	- Für das Neu-Erzeugen der .bbd-Dateien in data
 

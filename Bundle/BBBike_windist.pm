@@ -75,6 +75,8 @@ GPS::Garmin	- für GPS-Upload
 
 Geo::METAR	- Wetterdaten im METAR-Format
 
+Text::Unidecode	- Für das Neu-Erzeugen der .bbd-Dateien in data; Fallback für internationale Texte in PDFs
+
 
 =head1 DESCRIPTION
 
