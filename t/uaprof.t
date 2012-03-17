@@ -41,10 +41,19 @@ if (!$db_cache) {
 	or warn "Could not move $uaprof_cache_file.db to backup ($!), continuing...";
 }
 
-open my $fh, "-|", $^X, "$FindBin::RealBin/../lib/BrowserInfo/UAProf.pm",
-    "http://nds.nokia.com/uaprof/N6100r100.xml", "ScreenSize",
-    ($debug ? "-d" : ())
-    or die "Can't run UAProf module: $!";
+my @cmd = (
+	   $^X, "$FindBin::RealBin/../lib/BrowserInfo/UAProf.pm",
+	   "http://nds.nokia.com/uaprof/N6100r100.xml", "ScreenSize",
+	   ($debug ? "-d" : ()),
+	  );
+my $fh;
+if ($^O eq 'MSWin32') {
+    open $fh, "@cmd |"
+	or die "Can't run @cmd: $!";
+} else {
+    open $fh, "-|", @cmd
+	or die "Can't run @cmd: $!";
+}
 my $buf = "";
 while(<$fh>) {
     $buf .= $_;
