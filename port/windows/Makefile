@@ -2,6 +2,13 @@
 # Rules for Strawberry dist
 #
 # HOWTO use this rules (work in progress!!!)
+#
+# Prerequistites:
+# - cygwin
+# - cygwin packages: perl, make (GNU make), maybe others?
+# - Template-Toolkit for cygwin perl, maybe manually installed using CPAN.pm
+#
+# Creating the dist:
 # - fetch a suitable strawberry portable zipfile,
 #   e.g. strawberry-perl-5.14.2.1-32bit-portable.zip
 # - make sure that the bbbike sources are up-to-date,
@@ -14,9 +21,9 @@
 #   strawberry and bbbikewindist directories in ~
 # - run in a windows shell:
 #     cd C:\cygwin\home\eserte\work\bbbike && perl port\windows\create_customized_strawberry.pl -strawberrydir C:\cygwin\home\eserte\strawberry-5.14.2.1 -bbbikedistdir c:\cygwin\home\eserte\bbbikewindist "c:\Dokumente und Einstellungen\eserte\Eigene Dateien\Downloads\strawberry-perl-5.14.2.1-32bit-portable.zip
-# - copy stripped down gpsbabel distro into \cygwin\home\eserte\bbbikewindist\gpsbabel. In a cygwin shell
-#     cd ~/work/bbbike/port/windows && make make-gpsbabel-dist
 # - open a cygwin shell
+# - copy stripped down gpsbabel distro into \cygwin\home\eserte\bbbikewindist\gpsbabel
+#     cd ~/work/bbbike/port/windows && make make-gpsbabel-dist
 # - run in bbbike directory
 #     cd ~/work/bbbike && perl Makefile.PL
 # - then run these rules
@@ -31,8 +38,10 @@
 #
 # The created installable .exe lives in cygwin's /tmp
 # with the name BBBike-X.XX-Windows.exe
+#
+# This makefile works only with GNU make
 
-BBBIKEVER!=		perl -I../.. -MBBBikeVar -e 'print $$BBBike::WINDOWS_VERSION'
+BBBIKEVER=	$(shell perl -I../.. -MBBBikeVar -e 'print $$BBBike::WINDOWS_VERSION')
 
 all:
 	@echo "Please read this file for the new strawberry rules"
