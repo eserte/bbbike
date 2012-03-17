@@ -2,10 +2,9 @@
 # -*- perl -*-
 
 #
-# $Id: insert_points,v 1.77 2009/02/18 22:55:05 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998,2003,2004 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998,2003,2004,2012 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -483,7 +482,9 @@ sub _process {
 #	    $noorig_files{'../misc/ampelschaltung-orig.txt'} = 1;
 	}
 
-	{
+	## Also handle private .bbd data. As this was not used since
+	## its invention in 2004 I think I can disable it...
+	if (0) {
 	    my @f = glob("$ENV{HOME}/.bbbike/data/*.bbd");
 	    push @{$check_files[T_NORMAL]}, @f;
 	    $noorig_files{$_} = 1 for (@f);
