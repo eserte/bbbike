@@ -138,6 +138,13 @@ for my $f (@files) {
 	    if $f =~ m{^( Route/PDF/Cairo\.pm
 		        | BBBikeDraw/PDFCairo.pm
 		      )$}x && !eval { require Cairo; 1};
+	# The following skips only if explicite no cgi-testing requested
+	if ($ENV{BBBIKE_TEST_NO_CGI_TESTS}) {
+	    myskip "$f needs Apache::Session::Counted", $tests_per_file
+	        if $f =~ m{^( BBBikeApacheSessionCounted\.pm
+		            | BBBikeApacheSessionCountedHandler\.pm
+		          )$}x && !eval { require Apache::Session::Counted; 1 };
+	}
 
 	my @add_opt;
 	if ($f =~ m{Tk/.*\.pm}) {
