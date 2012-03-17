@@ -5,13 +5,7 @@
    END;
 -%]
 [% PROCESS "../../BBBikeVar.tpl" -%]
-[% IF use_strawberry;
-     SET wperl_exe = "{app}\\perl\\bin\\wperl.exe";
-   ELSE;
-     PROCESS "BBBikeWinDistFiles.tpl";
-     SET wperl_exe = "{app}\\windows\\5.6.1\\bin\\MSWin32-x86\\wperl.exe";
-   END;
--%]
+[% SET wperl_exe = "{app}\\perl\\bin\\wperl.exe"; -%]
 [% USE date %]
 
 [Setup]
@@ -27,16 +21,11 @@ DefaultGroupName=BBBike
 UninstallDisplayIcon={app}\bbbike\images\srtbike.ico
 Compression=lzma
 SolidCompression=yes
-[% IF use_strawberry -%]
 OutputDir=c:\cygwin\tmp
-[% ELSE -%]
-OutputDir=..\BBBike-Setup-Files
-[% END -%]
 OutputBaseFilename=BBBike-[% VERSION %]-Windows
 OutputManifestFile=SETUP-MANIFEST
 
 [Files]
-[% IF use_strawberry -%]
 ;;;
 ;;; This contains a MANIFEST copy of bbbike after running "make make-bbbike-dist"
 Source: "C:\cygwin\home\eserte\bbbikewindist\bbbike\*"; DestDir: "{app}\bbbike"; Flags: ignoreversion recursesubdirs createallsubdirs
@@ -56,17 +45,6 @@ Source: "C:\cygwin\home\eserte\bbbikewindist\perl\*"; DestDir: "{app}\perl"; [% 
 Source: "C:\cygwin\home\eserte\bbbikewindist\c\*"; DestDir: "{app}\c"; Flags: ignoreversion recursesubdirs createallsubdirs
 Source: "C:\cygwin\home\eserte\bbbikewindist\portable.perl"; DestDir: "{app}"; Flags: ignoreversion
 Source: "C:\cygwin\home\eserte\bbbikewindist\portableshell.bat"; DestDir: "{app}"; Flags: ignoreversion
-[% ELSE -%]
-[%
-	FOR f = files
--%]
-Source: "[% f.src %]"; DestDir: "{app}\[% f.dest %]"[% -%]
-[% IF 0 %][%# not yet XXX %][% IF f.is_readme %]; Flags: isreadme[% END -%][% END -%]
-
-[%
-	END
--%]
-[% END -%]
 
 [Icons]
 Name: "{group}\BBBike"; Filename: "[% wperl_exe %]"; Parameters: """{app}\bbbike\bbbike"""; WorkingDir: "{app}\bbbike"; IconFilename: "{app}\bbbike\images\srtbike.ico"; Comment: "BBBike - ein Routenplaner für Radfahrer in Berlin und Brandenburg"
