@@ -205,6 +205,17 @@ if ($src) {
 		  )) {
 	add_packlist_to_exclude($mod);
     }
+
+    # Following are not part of Strawberry, but may be
+    # installed later to help testing
+    for my $mod (qw(
+		       Image::Info
+		       Object::Realize::Later
+		       Test::Pod
+		  )) {
+	eval { add_packlist_to_exclude($mod) };
+	warn "No exclude for $mod needed, probably not installed...\n" if $@;
+    }
 }
 
 my %dir_created;
