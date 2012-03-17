@@ -887,18 +887,26 @@ sub set_layer_highlightning {
 }
 
 # Very hardcoded to my own environment:
-# * images in ~/images/from_handy/Fotos
+# * images in ~/images/from_handy/Fotos and ~/images/nikon/**
 # * gps tracks in ~/src/bbbike/misc/gps_data
 sub add_todays_geocoded_images {
+    require File::Find;
     require File::Glob;
     require File::Temp;
-    # XXX Support for nikon images missing
     my(@l) = localtime;
     my $y = $l[5]+1900;
     my $m = $l[4]+1;
     my $d = $l[3];
     my $glob = sprintf "$ENV{HOME}/images/from_handy/Fotos/%04d-%02d/%02d%02d%04d*.jpg", $y,$m,$d,$m,$y;
     my @images = File::Glob::bsd_glob($glob);
+    File::Find::find(sub {
+			 if (-f $_ && $_ =~ m{.jpg$}i) {
+			     my(@s) = stat($_);
+			     if (time-$s[9] < 86400) {
+				 push @images, $File::Find::name;
+			     }
+			 }
+		     }, "$ENV{HOME}/images/nikon");
     if (!@images) {
 	main::status_message("No images found with glob '$glob'", "warn");
 	return;
