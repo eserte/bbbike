@@ -146,7 +146,7 @@ use GPS::Util; # for eliminate_umlauts
 	if (defined $epoch) {
 	    require POSIX;
 	    my $timexml = $xmlnode->addNewChild(undef, 'time');
-	    $timexml->appendText(POSIX::strftime("%FT%TZ", gmtime($epoch)));
+	    $timexml->appendText(POSIX::strftime("%Y-%m-%dT%H:%M:%SZ", gmtime($epoch))); # %FT%T is not portable
 	}
 
 	my $ident = $wpt->Ident;
