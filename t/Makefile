@@ -16,7 +16,7 @@ test-no-cgi:
 # This is basically test-no-cgi, but works with dmake
 # (dmake+windows cannot ?=, env shell syntax, single quotes, * expansion)
 test-on-windows:
-	perl -w -I.. -I../lib -MTest::Harness -e "runtests(grep { !/^bbbikecgiapi/ && !/^bbbikegooglemap/ && !/^cgi/ && !/^mapserver/ && !/^wapcgi/ && !/^wwwdata/ } <*.t>)" 
+	perl -w -I.. -I../lib -MTest::Harness -e "runtests(grep { !/^bbbikecgiapi/ && !/^bbbikegooglemap/ && !/^cgi/ && !/^mapserver/ && !/^server-check/ && !/^wapcgi/ && !/^wwwdata/ } <*.t>)" 
 
 interactive:
 	./cgi2.pl -v -netscape -today

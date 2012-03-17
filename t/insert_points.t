@@ -2,7 +2,6 @@
 # -*- perl -*-
 
 #
-# $Id: insert_points.t,v 1.14 2009/02/01 17:25:03 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -24,7 +23,7 @@ BEGIN {
 
 my @insert_points = ($^X, "$FindBin::RealBin/../miscsrc/insert_points");
 my $datadir = "$FindBin::RealBin/../data";
-if (!-x $insert_points[-1]) {
+if (!-e $insert_points[-1]) {
     print "1..0 # skip insert_points script not available\n";
     exit 0;
 }

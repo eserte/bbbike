@@ -45,14 +45,7 @@ use BBBikeUtil qw(is_in_path);
 	      like_html unlike_html is_float using_bbbike_test_cgi),
 	   @opt_vars);
 
-# Old logfile
-#$logfile = "$ENV{HOME}/www/log/radzeit.de-access_log";
-# New logfile since 2004-09-28 ca.
-#$logfile = "$ENV{HOME}/www/log/radzeit.combined_log";
-# Again the old name since 2005-06-XX ca.
-#$logfile = "$ENV{HOME}/www/log/radzeit.de-access_log";
-# New server since 2009-12-XX
-$logfile = "$ENV{HOME}/www/log/bbbike.hosteurope/bbbike.de_access.log";
+$logfile = ($ENV{HOME}||'').'/www/log/bbbike.hosteurope2012/bbbike.de_access.log';
 
 my $testdir = dirname(File::Spec->rel2abs(__FILE__));
 
