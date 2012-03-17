@@ -156,8 +156,8 @@ sub maybe_display {
 sub trivial_pdf_test {
     my $pdffile = shift;
     ok(-s $pdffile, "$pdffile is non-empty");
-    open(PDF, $pdffile) or die $!;
-    my $firstline = <PDF>;
+    open my $PDF, $pdffile or die "Can't open $pdffile: $!";
+    my $firstline = <$PDF>;
     like($firstline, qr/^%PDF-1\.\d+/, "PDF magic in $pdffile");
 }
 

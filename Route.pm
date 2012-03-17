@@ -1,15 +1,14 @@
 # -*- perl -*-
 
 #
-# $Id: Route.pm,v 1.27 2008/12/31 12:26:03 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998,2000,2001 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998,2000,2001,2012 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: eserte@cs.tu-berlin.de
-# WWW:  http://user.cs.tu-berlin.de/~eserte/
+# Mail: slaven@rezic.de
+# WWW:  http://bbbike.sourceforge.net/
 #
 
 package Route;
@@ -379,9 +378,9 @@ sub load {
 	    }
 	}
 
-	open(F, $file)
+	open my $F, $file
 	    or die "Die Datei $file kann nicht geöffnet werden: $!";
-	my $line = <F>;
+	my $line = <$F>;
 
 	my $check_sub = sub {
 	    my $no_do = shift;
@@ -434,7 +433,7 @@ sub load {
 		$check_sub->();
 	    };
 	    if ($@) {
-		while(<F>) {
+		while(<$F>) {
 		    $line = $_;
 		    eval {
 			$check_sub->('nodo');
@@ -446,7 +445,7 @@ sub load {
 	    $check_sub->();
 	}
 
-	close F;
+	close $F;
     }
 
     if ($ret) {
@@ -471,14 +470,15 @@ sub save {
     die "-realcoords?" if !$args{-realcoords};
     $args{-searchroutepoints} = [] if !$args{-searchroutepoints};
 
-    if (!open(SAVE, ">$args{-file}")) {
+    my $SAVE;
+    if (!open($SAVE, ">$args{-file}")) {
 	die "Die Datei <$args{-file}> kann nicht geschrieben werden ($!)\n";
     }
-    print SAVE "#BBBike route\n";
+    print $SAVE "#BBBike route\n";
     eval {
 	require Data::Dumper;
 	$Data::Dumper::Indent = 0;
-	print SAVE Data::Dumper->Dump([$args{-realcoords},
+	print $SAVE Data::Dumper->Dump([$args{-realcoords},
 				       $args{-searchroutepoints},
 				      ],
 				      ['realcoords_ref',
@@ -486,7 +486,7 @@ sub save {
 				      ]);
     };
     if ($@) {
-	print SAVE
+	print $SAVE
 	    "$realcoords_ref = [",
 		join(",", map { "[".join(",", @$_)."]" }
 		          @{ $args{-realcoords} }),
@@ -496,7 +496,7 @@ sub save {
 		          @{ $args{-searchroutepoints} }),
 	     "];\n";
     }
-    close SAVE;
+    close $SAVE;
 }
 
 1;

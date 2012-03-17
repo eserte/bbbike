@@ -1,10 +1,9 @@
 # -*- perl -*-
 
 #
-# $Id: GPS.pm,v 1.13 2007/09/01 10:41:56 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2001,2004 Slaven Rezic. All rights reserved.
+# Copyright (C) 2001,2004,2012 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -42,10 +41,10 @@ sub transfer {
     my($self, %args) = @_;
     my $file = $args{-file} or die "-file argument is missing";
     my $res = $args{-res} or die "-res argument is missing";
-    open(F, ">$file") or die $!;
-    binmode F;
-    print F $res;
-    close F;
+    open my $F, "> $file" or die "Can't write to $file: $!";
+    binmode $F;
+    print $F $res;
+    close $F;
 }
 
 sub magics {
@@ -71,16 +70,14 @@ sub overread_trash {
     my $file = shift;
     my(%args) = @_;
 
-    require Symbol;
-    my $fh = Symbol::gensym();
-
     my(@magics) = $self->magics;
 
     my @last_lines;
 
     my $found = 0;
 
-    open($fh, $file) or die "Die Datei $file kann nicht geöffnet werden: $!";
+    open my $fh, $file
+	or die "Die Datei $file kann nicht geöffnet werden: $!";
     binmode $fh;
  FILETRY: {
 	while(<$fh>) {

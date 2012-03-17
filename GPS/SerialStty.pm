@@ -8,7 +8,7 @@ package GPS::SerialStty;
 
 use strict;
 use vars qw($VERSION @ISA);
-$VERSION = '0.01';
+$VERSION = '0.02';
 
 $|++;
 
@@ -116,9 +116,10 @@ sub stty_connect {
 		system("stty <$port -a");
 	}
 
-	open(FH, "+>$port") or die "Could not open $port: $!\n";
+	open my $FH, "+>$port"
+	    or die "Could not open $port: $!\n";
 	$self->{serialtype} = 'FileHandle';
-	\*FH;
+	$FH;
 }
 
 sub usleep {

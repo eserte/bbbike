@@ -182,10 +182,11 @@ use GPS::Util; # for eliminate_umlauts
 # for GPS.pm
 sub check {
     my($self, $file, %args) = @_;
-    open(F, $file) or die "Can't open file $file: $!";
+    open my $F, $file
+	or die "Can't open file $file: $!";
     my $max_lines = 10;
     my $check = 0;
-    while(<F>) {
+    while(<$F>) {
 	next if /^%/ || /^\s*$/;
 	if (/!Format: (DMS|DDD) (-?\d+(?:\.\d+)?) (WGS 84)/) {
 	    if (ref $self) {
@@ -200,7 +201,7 @@ sub check {
 	$max_lines--;
 	last if ($max_lines <= 0);
     }
-    close F;
+    close $F;
     $check;
 }
 
@@ -414,10 +415,11 @@ sub new {
 
 sub load {
     my($self, $file) = @_;
-    open(F, $file) or die "Can't open $file: $!";
+    open my $F, $file
+	or die "Can't open $file: $!";
     local $/ = undef;
-    my $buf = <F>;
-    close F;
+    my $buf = <$F>;
+    close $F;
     $self->parse($buf);
     $self->File($file);
     1;
@@ -835,9 +837,11 @@ sub merge {
 
 sub write {
     my($self, $file) = @_;
-    open(F, ">$file") or die "Can't write to $file: $!";
-    print F $self->as_string;
-    close F;
+    open my $F, "> $file"
+	or die "Can't write to $file: $!";
+    print $F $self->as_string;
+    close $F
+	or die "Error while writing to $file: $!";
 }
 
 sub header_as_string {
@@ -1064,10 +1068,11 @@ sub new {
 
 sub load {
     my($self, $file) = @_;
-    open(F, $file) or die "Can't open $file: $!";
+    open my $F, $file
+	or die "Can't open $file: $!";
     local $/ = undef;
-    my $buf = <F>;
-    close F;
+    my $buf = <$F>;
+    close $F;
 
     $self->parse($buf);
     $self->File($file);
@@ -1213,9 +1218,11 @@ sub as_string {
 
 sub write {
     my($self, $file) = @_;
-    open(F, ">$file") or die "Can't write to $file: $!";
-    print F $self->as_string;
-    close F;
+    open my $F, "> $file"
+	or die "Can't write to $file: $!";
+    print $F $self->as_string;
+    close $F
+	or die "Error while writing to $file: $!";
 }
 
 sub wpt_dist { shift->GPS::GpsmanData::wpt_dist(@_) }

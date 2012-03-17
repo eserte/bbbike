@@ -2,10 +2,9 @@
 # -*- perl -*-
 
 #
-# $Id: GpsmanConn.pm,v 1.16 2009/01/11 14:57:05 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2002 Slaven Rezic. All rights reserved.
+# Copyright (C) 2002,2012 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -19,7 +18,7 @@
 package GPS::GpsmanConn;
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.16 $ =~ /(\d+)\.(\d+)/);
+$VERSION = '1.17';
 use Config;
 
 # XXX should go away some day...
@@ -480,9 +479,11 @@ sub write_tracks {
 		}
 	    }
 	}
-	open(F, ">$out") or die "Can't write to $out: $!";
-	print F $track;
-	close F;
+	open my $F, "> $out"
+	    or die "Can't write to $out: $!";
+	print $F $track;
+	close $F
+	    or die "Error writing to $out: $!";
     }
 }
 
@@ -540,9 +541,11 @@ EOF
 
 sub write_waypoints {
     my($self, $w, $file) = @_;
-    open(F, ">$file") or die "Can't write to $file: $!";
-    print F $w;
-    close F;
+    open my $F, "> $file"
+	or die "Can't write to $file: $!";
+    print $F $w;
+    close $F
+	or die "Error writing to $file: $!";
 }
 
 sub put_route_from_bbd {

@@ -1,10 +1,9 @@
 # -*- perl -*-
 
 #
-# $Id: DirectGarmin.pm,v 1.41 2009/02/12 00:51:09 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2002,2003,2004 Slaven Rezic. All rights reserved.
+# Copyright (C) 2002,2003,2004,2012 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -140,15 +139,17 @@ sub dump {
     Karte::preload(qw(Polar Standard));
 
     warn "Writing waypoint data to $destfile_p\n";
-    open(DEST, ">$destfile_p") or die $!;
+    open my $DEST, "> $destfile_p"
+	or die "Can't write to $destfile_p: $!";
     my @points;
     foreach (@$debugdata) {
 	my $ident = $_->{'ident'};
 	my($x,$y) = map { int } $Karte::map{'polar'}->map2standard(@$_{qw(lon lat)});
 	push @points, "$x,$y";
-	print DEST "$ident\t#00b000 $x,$y\n";
+	print $DEST "$ident\t#00b000 $x,$y\n";
     }
-    close DEST;
+    close $DEST
+	or die "Error while writing to $destfile_p: $!";
 
     require VectorUtil;
     my $maxdist = 0;
@@ -180,9 +181,11 @@ sub dump {
     warn $maxdist_mess;
 
     warn Mfmt("Schreibe Routendaten in die Datei %s\n", $destfile_s);
-    open(DEST2, ">$destfile_s") or die $!;
-    print DEST2 "GPS route\t#000080 " . join(" ", @points) . "\n";
-    close DEST2;
+    open my $DEST2, "> $destfile_s"
+	or die "Can't write to $destfile_s: $!";
+    print $DEST2 "GPS route\t#000080 " . join(" ", @points) . "\n";
+    close $DEST2
+	or die "Error writing to $destfile_s: $!";
 
     %ret;
 }

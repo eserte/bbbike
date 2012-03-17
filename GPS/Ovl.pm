@@ -1,10 +1,9 @@
 # -*- perl -*-
 
 #
-# $Id: Ovl.pm,v 1.18 2008/08/22 19:29:18 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2004 Slaven Rezic. All rights reserved.
+# Copyright (C) 2004,2012 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -16,7 +15,7 @@ package GPS::Ovl;
 
 use strict;
 use vars qw($VERSION @ISA $OVL_MAGIC $OVL_MAGIC_3_0 $OVL_MAGIC_4_0);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.18 $ =~ /(\d+)\.(\d+)/);
+$VERSION = '1.19';
 
 require File::Basename;
 
@@ -60,8 +59,9 @@ sub check {
 	$self->{File} = $file;
     }
     delete $self->{FileFormat};
-    open(F, $file) or die "Can't open file $file: $!";
-    my $first_line = <F>;
+    open my $F, $file
+	or die "Can't open file $file: $!";
+    my $first_line = <$F>;
     if ($first_line =~ /^\[Symbol/) {
 	$self->{FileFormat} = "ascii";
     } elsif (index($first_line, $OVL_MAGIC) == 0) {
@@ -75,7 +75,7 @@ sub check {
 	warn "Cannot determine file format. First bytes: " . unpack("H*", $first_line) . "\n"
 	    if $args{debug};
     }
-    close F;
+    close $F;
     defined $self->{FileFormat};
 }
 
@@ -179,8 +179,9 @@ sub read_ascii {
 	@coords = ();
     };
 
-    open(F, $self->{File}) or die "Can't open file $self->{File}: $!";
-    while(<F>) {
+    open my $F, $self->{File}
+	or die "Can't open file $self->{File}: $!";
+    while(<$F>) {
 	chomp;
 	s/\r//;
 	if (/\[Symbol/) {
@@ -203,7 +204,7 @@ sub read_ascii {
 	    }
 	}
     }
-    close F;
+    close $F;
     $flush->();
 
     $self->{Symbols} = \@symbols;
@@ -348,11 +349,12 @@ sub as_string_ascii {
 	my($self, %args) = @_;
 	my $d = $args{debug};
 
-	open(F, $self->{File}) or die "Can't open file $self->{File}: $!";
-	binmode F;
+	open my $F, $self->{File}
+	    or die "Can't open file $self->{File}: $!";
+	binmode $F;
 	local $/ = undef;
-	$buf = <F>;
-	close F;
+	$buf = <$F>;
+	close $F;
 
 	$p = 0;
 
@@ -440,11 +442,12 @@ sub as_string_ascii {
 	my($self, %args) = @_;
 	my $d = $args{debug};
 
-	open(F, $self->{File}) or die "Can't open file $self->{File}: $!";
-	binmode F;
+	open my $F, $self->{File}
+	    or die "Can't open file $self->{File}: $!";
+	binmode $F;
 	local $/ = undef;
-	$buf = <F>;
-	close F;
+	$buf = <$F>;
+	close $F;
 
 	$p = 0;
 
@@ -701,9 +704,11 @@ sub tk_export {
     my @polar_coords = map { [ $Karte::Polar::obj->standard2map(@$_) ] } @{ $args{coords} };
     my $s = $self->as_string_ascii(\@polar_coords);
     die "$s -> $file";#XXX
-    open(OVL, ">$file") or main::status_message("Cannot write to $file: $!", "die");
-    print OVL $s;
-    close OVL;
+    open my $OVL, "> $file"
+	or main::status_message("Cannot write to $file: $!", "die");
+    print $OVL $s;
+    close $OVL
+	or main::status_message("Error writing to $file: $!", "die");
 }
 
 1;

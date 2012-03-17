@@ -1,10 +1,9 @@
 # -*- perl -*-
 
 #
-# $Id: Gardown.pm,v 1.3 2005/07/26 19:30:38 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2005 Slaven Rezic. All rights reserved.
+# Copyright (C) 2005,2012 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -16,7 +15,7 @@ package GPS::Gardown;
 
 use strict;
 use vars qw($VERSION @ISA);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.3 $ =~ /(\d+)\.(\d+)/);
+$VERSION = '1.04';
 
 require GPS;
 push @ISA, 'GPS';
@@ -39,8 +38,9 @@ sub parse {
 
     my @res;
     my $type;
-    open(FH, $file) or die "Can't open $file: $!";
-    while(<FH>) {
+    open my $FH, $file
+	or die "Can't open $file: $!";
+    while(<$FH>) {
 	chomp;
 	my(@l) = split /\s+/;
 	$type = $l[0];
@@ -62,7 +62,7 @@ sub parse {
 	    push @res, [$x, $y, $desc];
 	}
     }
-    close FH;
+    close $FH;
 
     return { type => $type,
 	     points => \@res,

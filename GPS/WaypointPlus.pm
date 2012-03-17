@@ -1,10 +1,9 @@
 # -*- perl -*-
 
 #
-# $Id: WaypointPlus.pm,v 1.3 2008/12/31 16:40:31 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003,2012 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -16,7 +15,7 @@ package GPS::WaypointPlus;
 
 use strict;
 use vars qw($VERSION @ISA);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.3 $ =~ /(\d+)\.(\d+)/);
+$VERSION = '1.04';
 
 require GPS;
 push @ISA, 'GPS';
@@ -37,8 +36,9 @@ sub parse {
 
     my @res;
     my $type;
-    open(FH, $file) or die "Can't open $file: $!";
-    while(<FH>) {
+    open my $FH, $file
+	or die "Can't open $file: $!";
+    while(<$FH>) {
 	if (/^([WT])P,(D|DMX),/) {
 	    $type = $1;
 	    my $ddd = $2;
@@ -68,7 +68,7 @@ sub parse {
 	    }
 	}
     }
-    close FH;
+    close $FH;
 
     return { type => $type,
 	     points => \@res,

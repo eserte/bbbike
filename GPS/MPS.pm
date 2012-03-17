@@ -1,10 +1,9 @@
 # -*- perl -*-
 
 #
-# $Id: MPS.pm,v 1.9 2008/12/31 16:40:12 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003,2005 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003,2005,2012 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -16,7 +15,7 @@ package GPS::MPS;
 
 use strict;
 use vars qw($VERSION $DEBUG);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.9 $ =~ /(\d+)\.(\d+)/);
+$VERSION = '1.10';
 
 use Data::Dumper;
 
@@ -37,8 +36,8 @@ sub check {
     my $file = shift;
     my(%args) = @_;
 
-    open(F, $file) or return 0;
-    read(F, my $buf, 6);
+    open my $F, $file or return 0;
+    read($F, my $buf, 6);
     return 0 if ($buf !~ $magic);
     1;
 }
@@ -49,9 +48,9 @@ sub convert_to_route {
     require File::Temp;
     my($fh,$tmpfile) = File::Temp::tempfile(UNLINK => 1,
 					    SUFFIX => ".trk");
-    open(INFH, $file) or die "Can't read $file: $!";
-    binmode INFH;
-    print $fh $self->convert_to_gpsman(\*INFH);
+    open my $INFH, $file or die "Can't read $file: $!";
+    binmode $INFH;
+    print $fh $self->convert_to_gpsman($INFH);
     close $fh;
     my @res = GPS::GpsmanMultiData->convert_to_route($tmpfile, %args);
     unlink $tmpfile;

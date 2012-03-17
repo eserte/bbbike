@@ -17,7 +17,7 @@ push @ISA, 'GPS';
 
 use strict;
 use vars qw($VERSION $GPSBABEL $DEBUG);
-$VERSION = '1.16';
+$VERSION = '1.17';
 
 use File::Basename qw(dirname);
 use BBBikeUtil qw(is_in_path bbbike_root);
@@ -108,13 +108,15 @@ sub convert_to_strassen_using_gpsbabel {
     $self->run_gpsbabel([@cmd]);
     # Hack: set track name
     my($o2fh,$o2filename) = File::Temp::tempfile(UNLINK => 1);
-    open(F, $ofilename) or die $!;
-    while(<F>) {
+    open my $F, $ofilename
+	or die "Can't open $ofilename: $!";
+    while(<$F>) {
 	s/(^!T:)/$1\t$title/;
 	print $o2fh $_;
     }
-    close F;
-    close $o2fh;
+    close $F;
+    close $o2fh
+	or die "Error writing to $o2filename: $!";
 
     require Strassen::Gpsman;
     my $s = Strassen::Gpsman->new($o2filename, cat => "#000080");
