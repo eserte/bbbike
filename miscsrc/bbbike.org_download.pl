@@ -34,15 +34,19 @@ our $VERSION = '0.02';
 
 my $rooturl = 'http://download.bbbike.org/bbbike/data-osm';
 my $city;
+my $o;
+my $agent_suffix;
 GetOptions(
 	   "url=s" => \$rooturl,
 	   "city=s" => \$city,
+	   "o=s" => \$o, # download directory, for tests only
+	   "agentsuffix=s" => \$agent_suffix, # for tests only
 	  )
     or usage;
 @ARGV and usage;
 
 my $ua = LWP::UserAgent->new;
-$ua->agent("bbbike/$BBBike::VERSION (bbbike.org_download.pl/$VERSION) (LWP::UserAgent/$LWP::VERSION) ($^O)");
+$ua->agent("bbbike/$BBBike::VERSION (bbbike.org_download.pl/$VERSION) (LWP::UserAgent/$LWP::VERSION) ($^O)" . ($agent_suffix ? $agent_suffix : ""));
 
 if (!$city) {
     listing();
@@ -73,7 +77,7 @@ sub listing {
 sub city {
     my $city = shift;
     my $url = "$rooturl/$city.tbz";
-    my $data_osm_directory = get_data_osm_directory(-create => 1);
+    my $data_osm_directory = $o || get_data_osm_directory(-create => 1);
     my $tmpdir = tempdir(DIR => $data_osm_directory, CLEANUP => 1)
 	or die "Can't create temporary directory in $data_osm_directory: $!";
     my $tmpfile = "$tmpdir/$city.tbz";
