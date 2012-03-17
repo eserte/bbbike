@@ -1,10 +1,9 @@
 # -*- perl -*-
 
 #
-# $Id: GD.pm,v 1.66 2008/12/31 16:36:17 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998-2003 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998-2012 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -40,7 +39,7 @@ sub AUTOLOAD {
 }
 
 $DEBUG = 0;
-$VERSION = sprintf("%d.%02d", q$Revision: 1.66 $ =~ /(\d+)\.(\d+)/);
+$VERSION = '1.67';
 
 my $use_truecolor = 0; # XXX with 1 segfaults (still with 2.0.33, seen on amd64-freebsd).
 
@@ -141,6 +140,19 @@ sub init {
 
     {
 	local $^W = 1;
+	my(@windows_fonts, @windows_bold_fonts);
+	if ($^O eq 'MSWin32') {
+	    @windows_fonts = (
+			      'c:/windows/fonts/lsans.ttf',
+			      'c:/windows/fonts/verdana.ttf',
+			      'c:/windows/fonts/arial.ttf',
+			     );
+	    @windows_bold_fonts = (
+				   'c:/windows/fonts/lsansd.ttf',
+				   'c:/windows/fonts/verdanab.ttf',
+				   'c:/windows/fonts/arialbd.ttf',
+				  );
+	}
 	$TTF_STREET ||= $self->search_ttf_font
 	    ([
 	      '/usr/local/lib/X11/fonts/ttf/LucidaSansRegular.ttf',
@@ -150,6 +162,7 @@ sub init {
 	      '/usr/local/lib/X11/fonts/TTF/luxisr.ttf',
 	      '/usr/X11R6/lib/X11/fonts/TTF/luxisr.ttf',
 	      '/usr/share/fonts/truetype/ttf-dejavu/DejaVuSansCondensed.ttf', # found on Debian
+	      @windows_fonts,
 	     ]);
 
 	$TTF_CITY ||= $self->search_ttf_font
@@ -161,6 +174,7 @@ sub init {
 	      '/usr/local/lib/X11/fonts/TTF/luxisr.ttf',
 	      '/usr/X11R6/lib/X11/fonts/TTF/luxisr.ttf',
 	      '/usr/share/fonts/truetype/ttf-dejavu/DejaVuSansCondensed.ttf', # found on Debian
+	      @windows_fonts,
 	     ]);
 
 	$TTF_TITLE ||= $self->search_ttf_font
@@ -170,6 +184,7 @@ sub init {
 	      '/usr/local/lib/X11/fonts/bitstream-vera/VeraBd.ttf',
 	      '/usr/X11R6/lib/X11/fonts/bitstream-vera/VeraBd.ttf',
 	      '/usr/share/fonts/truetype/ttf-dejavu/DejaVuSansCondensed-Bold.ttf', # found on Debian
+	      @windows_bold_fonts,
 	      $TTF_CITY,
 	     ]);
 
