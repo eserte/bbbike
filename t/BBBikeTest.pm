@@ -177,6 +177,8 @@ sub do_display {
 	    system("$pdf_prog $filename &");
 	} elsif (is_in_path("xpdf")) {
 	    system("xpdf $filename &");
+	} elsif ($^O eq 'MSWin32') {
+	    system($filename);
 	} else {
 	    warn "Can't display $filename";
 	}
@@ -211,6 +213,8 @@ sub do_display {
 	    system("xv $filename &");
 	} elsif (is_in_path("display")) {
 	    system("display $filename &");
+	} elsif ($^O eq 'MSWin32') {
+	    system($filename);
 	} else {
 	    warn "Can't display $filename";
 	}

@@ -2,15 +2,12 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikedraw.t,v 1.42 2008/12/07 19:20:36 eserte Exp $
 # Author: Slaven Rezic
 #
 
-# ActivePerl 5.8.8 information
-# * GD not available
-# * Imager available, but built without png and jpeg support,
-#   so basically useless
+# StrawberryPerl 5.14.2.1 information
 # * Image::Magick not available
+# * Cairo not available
 # * MapServer backend needs mapserver binary
 
 use strict;
@@ -151,8 +148,34 @@ sub usage {
 # ImageMagick support is experimental and incomplete anyway, so do not
 # depend on this
 if (!eval { require Image::Magick; 1 }) {
-    warn "Image::Magick not available, do not test ImageMagick-related drawtypes...\n";
+    diag "Image::Magick not available, do not test ImageMagick-related drawtypes...\n";
     @modules = grep { !/^ImageMagick/ } @modules;
+}
+
+# No Cairo on Windows available
+if ($^O eq 'MSWin32' && !eval { require Cairo; 1 }) {
+    diag "Cairo not available on Windows, do not test Cairo-related drawtypes...\n";
+    @modules = grep { !/^PDFCairo/ } @modules;
+}
+
+# No Mapserver for Windows
+if ($^O eq 'MSWin32') {
+    diag "Skip Mapserver tests on Windows...\n";
+    @modules = grep { !/^MapServer/ } @modules;
+}
+
+# The following two modules are theoretically available under Windows,
+# but usually not bundled neither in stock StrawberryPerl nor in
+# the distributed version with bbbike
+if ($^O eq 'MSWin32') {
+    if (!eval { require GD::SVG; 1 }) {
+	diag "GD::SVG not installed, skip tests...\n";
+	@modules = grep { !/^GD::SVG/ } @modules;
+    }
+    if (!eval { require SVG; 1 }) {
+	diag "SVG not installed, skip tests...\n";
+	@modules = grep { !/^SVG/ } @modules;
+    }
 }
 
 if (!GetOptions(get_std_opts("display"),
