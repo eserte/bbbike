@@ -13,8 +13,12 @@
 use strict;
 
 use FindBin;
-use lib "$FindBin::RealBin/..";
+use lib (
+	 "$FindBin::RealBin/..",
+	 $FindBin::RealBin,
+	);
 use BBBikeVar;
+use BBBikeTest qw(check_cgi_testing);
 use File::Basename;
 
 BEGIN {
@@ -27,6 +31,8 @@ BEGIN {
 	exit;
     }
 }
+
+check_cgi_testing;
 
 use constant MSDOS_MIME_TYPE => qr{^application/(octet-stream|x-msdos-program|x-msdownload)$};
 

@@ -2,12 +2,12 @@
 # -*- perl -*-
 
 #
-# $Id: cgihead.t,v 1.20 2009/02/25 23:46:23 eserte Exp $
 # Author: Slaven Rezic
 #
 
 use strict;
 use FindBin;
+use lib "$FindBin::RealBin";
 use File::Basename;
 
 BEGIN {
@@ -23,6 +23,10 @@ BEGIN {
 
 use CGI;
 use Getopt::Long;
+
+use BBBikeTest qw(check_cgi_testing);
+
+check_cgi_testing;
 
 my $cgi_dir = $ENV{BBBIKE_TEST_CGIDIR} || "http://localhost/bbbike/cgi";
 my $html_dir = $ENV{BBBIKE_TEST_HTMLDIR};

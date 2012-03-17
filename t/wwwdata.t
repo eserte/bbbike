@@ -8,8 +8,10 @@
 use strict;
 
 use FindBin;
-use lib ("$FindBin::RealBin/..",
+use lib (
+	 "$FindBin::RealBin/..",
 	 "$FindBin::RealBin/../lib",
+	 $FindBin::RealBin,
 	);
 
 BEGIN {
@@ -36,6 +38,10 @@ use Getopt::Long;
 use Image::Info qw(image_info);
 
 use Strassen::Core;
+
+use BBBikeTest qw(check_cgi_testing);
+
+check_cgi_testing;
 
 if (!defined &note) { *note = \&diag }
 

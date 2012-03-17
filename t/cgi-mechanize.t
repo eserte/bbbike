@@ -110,6 +110,8 @@ use URI::QueryParam ();
 
 sub handle_xml_response ($);
 
+check_cgi_testing;
+
 my @browsers;
 my $v;
 my %do_xxx;

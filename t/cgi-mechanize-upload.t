@@ -2,7 +2,6 @@
 # -*- perl -*-
 
 #
-# $Id: cgi-mechanize-upload.t,v 1.9 2008/08/22 18:27:54 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -35,6 +34,8 @@ BEGIN {
 	*warnings::unimport = sub { };
     }
 }
+
+check_cgi_testing;
 
 my @gps_types = ("trk", "ovl", "bbr",
 		 "bbr-generated", "ovl-generated", "trk-generated",

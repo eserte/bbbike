@@ -42,7 +42,7 @@ use BBBikeUtil qw(is_in_path);
 @EXPORT = (qw(get_std_opts set_user_agent do_display tidy_check
 	      xmllint_string xmllint_file gpxlint_string gpxlint_file kmllint_string
 	      eq_or_diff is_long_data like_long_data unlike_long_data
-	      like_html unlike_html is_float using_bbbike_test_cgi),
+	      like_html unlike_html is_float using_bbbike_test_cgi check_cgi_testing),
 	   @opt_vars);
 
 $logfile = ($ENV{HOME}||'').'/www/log/bbbike.hosteurope2012/bbbike.de_access.log';
@@ -587,6 +587,13 @@ sub using_bbbike_test_cgi () {
     # -f BSDmakefile needed for old pmake (which may be found in Debian)
     system("cd $testdir/data && $make -f BSDmakefile");
     Test::More::diag("Error running make, expect test failures...") if $? != 0;
+}
+
+sub check_cgi_testing () {
+    if ($ENV{BBBIKE_TEST_NO_CGI_TESTS}) {
+	print "1..0 # skip Requested to not test cgi functionality.\n";
+	exit 0;
+    }
 }
 
 1;

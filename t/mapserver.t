@@ -2,7 +2,6 @@
 # -*- perl -*-
 
 #
-# $Id: mapserver.t,v 1.6 2006/10/07 13:36:13 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -34,6 +33,8 @@ use BBBikeTest;
 
 use CGI;
 use Getopt::Long;
+
+check_cgi_testing;
 
 if (!GetOptions(get_std_opts("cgidir", "xxx"),
 	       )) {

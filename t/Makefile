@@ -10,13 +10,13 @@ test-shuffle:
 	    'BEGIN { if (!eval q{ use List::Util qw(shuffle); 1 }) { *shuffle = sub { @_ }; } } runtests(shuffle @ARGV)' $(TEST_FILES)
 
 test-no-cgi:
-	LANG=C $(PERL) -w -I.. -I../lib -MTest::Harness -e \
-	    'runtests(grep { !/^cgi/ && !/^wapcgi/ && !/^wwwdata/ } @ARGV)' $(TEST_FILES)
+	LANG=C BBBIKE_TEST_NO_CGI_TESTS=1 $(PERL) -w -I.. -I../lib -MTest::Harness -e \
+	    'runtests(@ARGV)' $(TEST_FILES)
 
 # This is basically test-no-cgi, but works with dmake
 # (dmake+windows cannot ?=, env shell syntax, single quotes, * expansion)
 test-on-windows:
-	perl -w -I.. -I../lib -MTest::Harness -e "runtests(grep { !/^bbbikecgiapi/ && !/^bbbikegooglemap/ && !/^cgi/ && !/^mapserver/ && !/^server-check/ && !/^wapcgi/ && !/^wwwdata/ } <*.t>)" 
+	perl -w -I.. -I../lib -MTest::Harness -e "$$ENV{BBBIKE_TEST_NO_CGI_TESTS} = 1; runtests(<*.t>)" 
 
 interactive:
 	./cgi2.pl -v -netscape -today

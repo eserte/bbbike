@@ -2,7 +2,6 @@
 # -*- perl -*-
 
 #
-# $Id: mapserver-util.t,v 1.8 2008/11/22 21:02:14 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -24,9 +23,11 @@ use FindBin;
 use lib ("$FindBin::RealBin",
 	 "$FindBin::RealBin/..",
 	);
-use BBBikeTest qw(get_std_opts $do_xxx $cgidir);
+use BBBikeTest qw(check_cgi_testing get_std_opts $do_xxx $cgidir);
 
 use Getopt::Long;
+
+check_cgi_testing;
 
 if (!GetOptions(get_std_opts("cgidir", "xxx"),
 	       )) {

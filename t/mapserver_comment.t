@@ -7,6 +7,7 @@
 
 use strict;
 use FindBin;
+use lib $FindBin::RealBin;
 use CGI '-oldstyle_urls';
 use Encode qw(encode_utf8);
 no utf8;
@@ -28,6 +29,10 @@ BEGIN {
 	exit;
     }
 }
+
+use BBBikeTest qw(check_cgi_testing);
+
+check_cgi_testing;
 
 my $mapserver_comment = "$FindBin::RealBin/../cgi/mapserver_comment.cgi";
 

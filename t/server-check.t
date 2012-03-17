@@ -26,7 +26,9 @@ use URI;
 
 use BBBikeVar qw();
 
-use BBBikeTest qw($cgiurl);
+use BBBikeTest qw($cgiurl check_cgi_testing);
+
+check_cgi_testing;
 
 plan tests => 2 * 2;
 

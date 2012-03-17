@@ -32,7 +32,7 @@ use lib ($FindBin::RealBin,
 	 "$FindBin::RealBin/..",
 	 "$FindBin::RealBin/../lib",
 	);
-use BBBikeTest qw(xmllint_string gpxlint_string kmllint_string);
+use BBBikeTest qw(check_cgi_testing xmllint_string gpxlint_string kmllint_string);
 
 eval { require Compress::Zlib };
 
@@ -40,6 +40,8 @@ sub std_get ($;@);
 sub std_get_route ($;@);
 sub like_html ($$$);
 sub unlike_html ($$$);
+
+check_cgi_testing;
 
 my @urls;
 

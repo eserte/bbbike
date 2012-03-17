@@ -21,7 +21,9 @@ BEGIN {
     }
 }
 
-use BBBikeTest qw($cgidir);
+use BBBikeTest qw(check_cgi_testing $cgidir);
+
+check_cgi_testing;
 
 plan tests => 12;
 

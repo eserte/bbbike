@@ -2,13 +2,13 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikegooglemap.t,v 1.2 2006/08/16 20:53:08 eserte Exp $
 # Author: Slaven Rezic
 #
 
 no utf8;
 use strict;
 use FindBin;
+use lib $FindBin::RealBin;
 
 BEGIN {
     if (!eval q{
@@ -22,7 +22,11 @@ BEGIN {
     }
 }
 
+use BBBikeTest qw(check_cgi_testing);
+
 sub do_post ($$$$$);
+
+check_cgi_testing;
 
 my $gmap_api = 2;
 

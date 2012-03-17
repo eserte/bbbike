@@ -30,7 +30,9 @@ BEGIN {
 
 use FindBin;
 use lib ("$FindBin::RealBin/..", "$FindBin::RealBin");
-use BBBikeTest qw(get_std_opts $do_display do_display);
+use BBBikeTest qw(get_std_opts $do_display do_display check_cgi_testing);
+
+check_cgi_testing;
 
 # XXX Missing:
 # a test with a "real" user agent and a profile setting
