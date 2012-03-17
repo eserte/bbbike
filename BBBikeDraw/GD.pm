@@ -86,8 +86,9 @@ sub init {
 #  	        $self->{ImageType} = 'gif';
 #  	    }
 	    if ($self->{ImageType} eq 'gif' && $GD::VERSION >= 1.20) {
-	        # XXX automatic detection does not seem to work with GD 1.41 ?
-#XXX	        if ($GD::VERSION < 1.37 || !GD::Image->can("gif")) {
+	        # automatic detection does not seem to work with GD 1.41 ?
+		# ... but probably works again since GD 2.15
+	        if ($GD::VERSION < 2.15 || !GD::Image->can("gif")) {
 	    	    if (!eval { require GD::Convert; GD::Convert->import("gif=any", "newFromGif=any"); 1}) {
 		        warn "Can't create gif files, fallback to png: $@";
 		        $self->{ImageType} = 'png';
@@ -95,7 +96,7 @@ sub init {
 		        warn "OK, using GD::Convert for gif conversion"
 			    if $DEBUG;
 		    }
-#XXX	        }
+	        }
 	    }
 	    if ($self->{ImageType} eq 'png' && $GD::VERSION < 1.20) {
 	        $self->{ImageType} = 'gif';
