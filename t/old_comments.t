@@ -32,7 +32,7 @@ BEGIN {
     use constant TODO_NEW_COMMENTS => 'Known failure (missing implementation for compressing Teilstrecke)';
 }
 
-use BBBikeTest qw(eq_or_diff);
+use BBBikeTest qw(eq_or_diff check_cgi_testing);
 
 BEGIN {
     if ($] < 5.006) {
@@ -41,6 +41,8 @@ BEGIN {
 	*warnings::unimport = sub { };
     }
 }
+
+check_cgi_testing;
 
 $YAML::Syck::ImplicitUnicode = 1; # otherwise utf8 is wrong
 

@@ -29,11 +29,13 @@ use Safe ();
 use BBBikeUtil qw(is_in_path);
 use BBBikeTest qw(get_std_opts like_html unlike_html $cgidir
 		  xmllint_string gpxlint_string kmllint_string
-		  using_bbbike_test_cgi
+		  using_bbbike_test_cgi check_cgi_testing
 		);
 
 sub bbbike_cgi_search ($$);
 sub bbbike_cgi_geocode ($$);
+
+check_cgi_testing;
 
 #plan 'no_plan';
 plan tests => 70;
