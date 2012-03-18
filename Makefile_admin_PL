@@ -626,7 +626,7 @@ DEB_DEVEL=	git-core bison byacc flex g++ apt-show-versions freebsd-buildutils gc
 DEB_TEST=	libimage-info-perl libwww-mechanize-perl libemail-mime-perl
 # Note: libpango-perl not available in lenny, only squeeze
 DEB_DRAW=	libgd2-xpm libgd2-xpm-dev \
-		pdftk netpbm libgd-gd2-perl ttf-bitstream-vera \
+		pdftk netpbm libgd-gd2-perl ttf-bitstream-vera ttf-dejavu \
 		libpdf-create-perl libcairo-perl libpango-perl libfont-afm-perl \
 		libtest-number-delta-perl
 DEB_DRAW_OPTIONAL= perlmagick libimager-perl imagemagick libsvg-perl
@@ -689,7 +689,7 @@ DEB_ALL=	libalgorithm-diff-perl libapache-session-perl libarchive-zip-perl \
 		libwww-shorten-perl libx11-protocol-perl libxml-libxml-perl \
 		libxml-parser-perl libxml-sax-perl libxml-simple-perl libxml-twig-perl \
 		libyaml-perl libyaml-syck-perl perl perl-modules perl-tk perlmagick \
-		libhtml-format-perl libmath-round-perl libgdal-perl
+		libhtml-format-perl libmath-round-perl libgdal-perl ttf-dejavu
 
 # XXX Does not work, see below
 install-debian-for-cgi:	install-debian-packages-for-cgi \
