@@ -671,6 +671,7 @@ DEB_ALL_APACHE= $(DEB_ALL_CGI) $(DEB_APACHE)
 
 # Complete list of required modules for full operation.
 # This is what is available on a typical debian/lenny system
+# XXX XXX XXX Should not duplicate the above lists XXX XXX XXX
 DEB_ALL=	libalgorithm-diff-perl libapache-session-perl libarchive-zip-perl \
 		libbsd-resource-perl libclass-accessor-perl libdata-compare-perl \
 		libdate-pcalc-perl libdb-file-lock-perl libdbd-mysql-perl \
@@ -689,7 +690,8 @@ DEB_ALL=	libalgorithm-diff-perl libapache-session-perl libarchive-zip-perl \
 		libwww-shorten-perl libx11-protocol-perl libxml-libxml-perl \
 		libxml-parser-perl libxml-sax-perl libxml-simple-perl libxml-twig-perl \
 		libyaml-perl libyaml-syck-perl perl perl-modules perl-tk perlmagick \
-		libhtml-format-perl libmath-round-perl libgdal-perl ttf-dejavu
+		libhtml-format-perl libmath-round-perl libgdal-perl ttf-dejavu \
+		libcairo-perl libpango-perl pdftk mapserver-bin cgi-mapserver
 
 # XXX Does not work, see below
 install-debian-for-cgi:	install-debian-packages-for-cgi \
