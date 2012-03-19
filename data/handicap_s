@@ -921,9 +921,13 @@ Zur Kreutzigerstr.: enger Hausdurchgang	q3 14291,12220 14285,12190
 (Skandinavische Str. - Lichtenberger Br¸cke/MonimbÛplatz)	q2 17023,11908 17026,11888
 M‰rkischer Platz: Fuﬂg‰nger, Bordstein	q2 11111,12027 11077,12062
 (Fischerinsel - Gr¸nstraﬂenbr¸cke): Fuﬂg‰nger, niedriger Bordstein	q2 10474,11843 10517,11795
-(Rampe Wriezener Park): Fuﬂg‰nger, eng	q3 13427,11431 13421,11423 13459,11388
+(Rampe Wriezener Park): Fuﬂg‰nger, Bordstein	q3 13427,11431 13421,11423
+(Rampe Wriezener Park): Fuﬂg‰nger, enge Rampe, kein Gel‰nder	q3 13421,11423 13459,11388
 (Wriezener Park): Fuﬂg‰nger	q2 13513,11351 13459,11388 13417,11416 13407,11416 13323,11497 13261,11572 13239,11567 13175,11649
-(Am Wriezener Bahnhof - Helsingforser Str./Wriezener Park): einige Fuﬂg‰nger	q1 12993,11717 13042,11749 13175,11649 13208,11658
+Wriezener Park: Fuﬂg‰nger	q2 13261,11572 13270,11581
+(Am Wriezener Bahnhof - Helsingforser Str./Wriezener Park): einige Fuﬂg‰nger	q1 12986,11699 13002,11705 13042,11749 13175,11649 13208,11658
+Oranienplatz: einige Fuﬂg‰nger	q1 11264,10804 11227,10821
+Oranienplatz: einige Fuﬂg‰nger	q1 11275,10723 11253,10778 11227,10821
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q3 11805,19071 11895,19183 11927,19308
 Ebersstr.: Sch¸ler	q2 7245,8583 7292,8631
 Straﬂe 103 (Niederschˆnhausen): enge Straﬂe	q1 10914,20065 11051,19789
@@ -1739,7 +1743,6 @@ Trusetaler Str.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 2
 Blumberger Damm: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 21731,15748 21719,15666
 Dorfstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 18144,18813 18161,18814
 (Alex-Wedding-Str. - Karl-Liebknecht-Str.): gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 11027,13279 11085,13239
-Fischerinsel: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 10429,11807 10474,11843 10604,11941
 Josef-Nawrocki-Str.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 25802,4823 25802,4681 25724,4706 25691,4716 25554,4758 25552,4829
 Askanischer Platz: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q2::igndisp; 8882,10905 8938,10872 8983,10846 9022,10857
 Helbigstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 20109,4087 20339,3779 20362,3750

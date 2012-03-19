@@ -221,7 +221,8 @@ Tasdorfer Str. - Wilhelm-Guddorf-Str.: Gehwegpflasterung	Q0 15393,11590 15423,11
 Kietzer Weg: sehr schlechtes Kopfsteinpflaster	Q3 15327,11724 15277,11684 15162,11458
 Revaler Str.: Kopfsteinpflaster, einzelne Stellen mit unebenen Asphalt	Q2; 14134,11272 14211,11229 14286,11186 14357,11148 14442,11101 14509,11060
 Revaler Str.: Kopfsteinpflaster	Q2; 14509,11060 14442,11101 14357,11148 14286,11186 14211,11229 14134,11272
-Revaler Str.: Kopfsteinpflaster, Straﬂenbahn	Q2 13588,11490 13473,11456
+Revaler Str.: Kopfsteinpflaster	Q2; 13588,11490 13473,11456
+Revaler Str.: Asphalt/Kopfsteinpflaster, Straﬂenbahn	Q1; 13473,11456 13588,11490
 Prenzlauer Berg: Asphalt	Q0 11706,13635 11545,13690 11257,13647
 Alte Jakobstr.: Kopfsteinpflaster	Q2 10244,11160 10436,11344
 Ackerstr.: Kopfsteinpflaster	Q2 9439,14368 9400,14400
@@ -3292,7 +3293,7 @@ Hochwaldstr. (Karlshorst): unbefestigter Fahrweg	Q2 19551,8385 19451,8385 19449,
 An der Eiche (Karlshorst): unbefestigter Fahrweg, Gras	Q2 19952,8174 19914,8150
 Hasensprung (Karlshorst): unbefestigter Fahrweg	Q2 20055,7985 20032,7993 19980,8041 19851,8153 19780,8230
 Birkenknick: unbefestigter Fahrweg	Q2 20035,7866 19922,7960 19779,8088
-Am Wriezener Bahnhof: Asphalt	Q0 12900,11515 12959,11631 12993,11717
+Am Wriezener Bahnhof: Asphalt	Q0 12900,11515 12959,11631 12986,11699 12993,11717
 Parksteig: Asphalt	Q0 22577,1002 22521,1134 22453,1294
 Baderseestr.: Asphalt	Q0 22493,1325 22575,1157
 Eibseestr.: Kopfsteinpflaster	Q2 22462,1547 22560,1377
@@ -6328,9 +6329,14 @@ Neue Blumenstr.: Beton mit einigen Schden	Q1 11607,12412 11709,12601
 Neue Blumenstr.: Asphalt	Q0 11709,12601 12006,12464
 (Rampe Wriezener Park): Beton	Q0 13427,11431 13421,11423 13459,11388
 (Wriezener Park): Asphalt	Q0 13513,11351 13459,11388 13417,11416 13407,11416 13323,11497
-(Wriezener Park): Beton	Q0 13323,11497 13261,11572 13239,11567
+(Wriezener Park): Beton	Q0 13323,11497 13261,11572
+(Wriezener Park): Beton	Q1 13261,11572 13239,11567
+(Wriezener Park, Eingang Pillauer Str.): Beton	Q1 13261,11572 13270,11581
 (Wriezener Park): Asphalt	Q0 13239,11567 13175,11649
-(Am Wriezener Bahnhof - Helsingforser Str./Wriezener Park): unbefestigte Wege, teilweise sehr holprig	Q2 12993,11717 13042,11749 13175,11649 13208,11658
+(Am Wriezener Bahnhof - Helsingforser Str./Wriezener Park): unbefestigte Wege	Q2 12986,11699 13002,11705 13042,11749
+(Am Wriezener Bahnhof - Helsingforser Str./Wriezener Park): unbefestigte Wege, teilweise sehr holprig	Q3 13042,11749 13175,11649
+(Am Wriezener Bahnhof - Helsingforser Str./Wriezener Park): unbefestigte Wege	Q2 13175,11649 13208,11658
+Oranienplatz: Kleinsteinpflaster	Q1 11275,10723 11253,10778 11227,10821
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3777,16532 -3870,16527 -3962,16527 -4096,16525
 Straﬂe 140 (Rosenthal): guter Asphalt	Q0 8605,21248 8680,21208 8753,21253 8826,21369
 An den Hubertsh‰usern: guter Asphalt	Q0 -2049,2359 -1940,2400 -1963,2461 -2069,2429
