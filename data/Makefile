@@ -83,6 +83,7 @@ COMPUTED_TARGETS+=	temp_blockings/bbbike-temp-blockings-optimized.pl
 COMPUTED_TARGETS+=	wasserstrassen-lowres
 COMPUTED_TARGETS+=	kneipen
 COMPUTED_TARGETS+=	fragezeichen-cooked
+COMPUTED_TARGETS+=	inaccessible_strassen inaccessible_landstrassen
 
 # These are not computed, but useful mentioned here for fixing
 # permissions
