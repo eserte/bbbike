@@ -8,7 +8,10 @@
 no utf8;
 use strict;
 use FindBin;
-use lib $FindBin::RealBin;
+use lib (
+	 "$FindBin::RealBin/..",
+	 $FindBin::RealBin,
+	);
 
 BEGIN {
     if (!eval q{
