@@ -1151,10 +1151,10 @@ userdel	q4::inwork; 8775,12457 8907,12472 9008,12485
        undef,
        undef,
        {
-         'source_id' => 'LS/S-SG33-W/10/173',
-         'until' => 1356994800,
-         'text' => 'Wildau: L401: Straßenbau OD Wildau, Einmündung Richard-Sorge-Straße bis Stichkanal ab 15.08.11 Vollsperrung Richtung Königs Wusterhausen, 30.08.2010 bis 31.12.2012 ',
-         'from' => 1313272800,
+         'source_id' => 'LS/S-SG33-W/11/303',
+         'until' => 1333144800,
+         'text' => 'Wildau: L401: Straßenbau OD Wildau, Einmündung Richard-Sorge-Straße bis Stichkanal Richtungsverkehr zw. Bergstr. und Freiheitsstr., 15.12.2011 bis 30.03.2012 ',
+         'from' => 1332272539,
          'id' => 2265,
          'data' => 'userdel	q3::inwork; 26679,-8825 26381,-9753
 ',

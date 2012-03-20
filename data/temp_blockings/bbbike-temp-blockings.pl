@@ -19530,11 +19530,11 @@ EOF
 userdel	q4::inwork 16104,19165 15647,19165
 EOF
      },
-     { from  => 1313272800, # 2011-08-14 00:00
-       until => 1356994800, # 2013-01-01 00:00
-       text  => 'Wildau: L401: Straßenbau OD Wildau, Einmündung Richard-Sorge-Straße bis Stichkanal ab 15.08.11 Vollsperrung Richtung Königs Wusterhausen, 30.08.2010 bis 31.12.2012 ',
+     { from  => 1332272539, # 2012-03-20 20:42
+       until => 1333144800, # 2012-03-31 00:00
+       text  => 'Wildau: L401: Straßenbau OD Wildau, Einmündung Richard-Sorge-Straße bis Stichkanal Richtungsverkehr zw. Bergstr. und Freiheitsstr., 15.12.2011 bis 30.03.2012 ',
        type  => 'handicap',
-       source_id => 'LS/S-SG33-W/10/173',
+       source_id => 'LS/S-SG33-W/11/303',
        data  => <<EOF,
 userdel	q3::inwork; 26679,-8825 26381,-9753
 EOF
