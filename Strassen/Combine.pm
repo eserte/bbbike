@@ -1,10 +1,9 @@
 # -*- perl -*-
 
 #
-# $Id: Combine.pm,v 1.5 2007/03/31 16:36:30 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999,2001,2006,2007 Slaven Rezic. All rights reserved.
+# Copyright (C) 1999,2001,2006,2007,2012 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -26,6 +25,8 @@ Strassen::Combine - combine streets
    wegen der weiteren Bedingungen unproblematisch).
  - Start- oder Endpunkt von zwei Straßen zusammenfallen
  - Die Kategorie bei beiden Straßen die gleiche ist.
+
+ Nicht zusammengefasst werden Datensätze, die nur eine Koordinate haben.
 
 =head2 METHODS
 
@@ -85,7 +86,7 @@ package Strassen;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.5 $ =~ /(\d+)\.(\d+)/);
+$VERSION = '1.06';
 
 sub make_long_streets {
     my($self, %args) = @_;
@@ -145,6 +146,10 @@ sub make_long_streets {
 	}
 	if ($v && ++$count%100 == 0) {
 	    print STDERR "$count\r";
+	}
+	if (@{ $r->[Strassen::COORDS] } == 1) {
+	    CORE::push(@strdata, $r);
+	    next;
 	}
 
 	# Calculate keys for beginning and end of current street data record.

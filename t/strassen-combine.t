@@ -108,12 +108,14 @@ EOF
     my $new_s = $s->make_long_streets;
     isa_ok($new_s, 'Strassen');
 
-    local $TODO = "No points left!";
     local $Strassen::STRICT = 1;
     my $c = eval { $new_s->get(0)->[Strassen::COORDS] };
     is $@, '', 'Parsed OK';
     cmp_ok scalar(@{ $c || [] }), ">=", 1, 'At least one point in record'
 	or diag "Generated data:\n" . $new_s->as_string;
+    # There are still two records here. It would be nice to have
+    # just one record, but this is maybe not the scope of
+    # Strassen::Combine, but of a uniquifier function.
 }
 
 __END__
