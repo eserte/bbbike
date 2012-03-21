@@ -22,7 +22,7 @@ BEGIN {
     }
 }
 
-plan tests => 6;
+plan tests => 9;
 
 use Strassen::Core;
 use Strassen::Combine;
@@ -96,6 +96,24 @@ EOF
 
     local $TODO = "Last point in ring structure is missing!!!";
     eq_or_diff($new_s->as_string, $combined_data);
+}
+
+{
+    my $data = <<'EOF';
+Krowoderska Biblioteka Publiczna - Dyrekcja biblioteki	SW 19.92297,50.07859
+Krowoderska Biblioteka Publiczna - Dyrekcja biblioteki	SW 19.92297,50.07859
+EOF
+
+    my $s = Strassen->new_from_data_string($data);
+    my $new_s = $s->make_long_streets;
+    isa_ok($new_s, 'Strassen');
+
+    local $TODO = "No points left!";
+    local $Strassen::STRICT = 1;
+    my $c = eval { $new_s->get(0)->[Strassen::COORDS] };
+    is $@, '', 'Parsed OK';
+    cmp_ok scalar(@{ $c || [] }), ">=", 1, 'At least one point in record'
+	or diag "Generated data:\n" . $new_s->as_string;
 }
 
 __END__
