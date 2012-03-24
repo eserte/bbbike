@@ -1342,10 +1342,10 @@ userdel	q4::inwork; -1872,24336 -1790,24260 -1627,24105 -1367,23853 -1286,23753 
        {
          'source_id' => 'INKO_093369',
          'until' => 1341068400,
-         'text' => 'Behrenstr. (Mitte): Fahrbahn gesperrt (bis Ende 06/12) zwischen Glinkastr. und Friedrichstr.',
+         'text' => 'Behrenstr. (Mitte): Fahrbahn gesperrt (bis Ende 06/12) zwischen Glinkastr. und Friedrichstr., Richtung Friedrichstraße',
          'from' => 1329631200,
          'id' => 2317,
-         'data' => 'userdel	q4::inwork 9373,12197 9164,12172
+         'data' => 'userdel	q4::inwork; 9164,12172 9373,12197
 ',
          'type' => 'handicap'
        },
@@ -1371,6 +1371,16 @@ Am Schloss Schönhausen	2::night 10308,19297 10350,19182 10390,19069
 Am Schloss Schönhausen	2::night 10249,19148 10350,19182
 #: by: ^^^
 '
+       },
+       {
+         'until' => undef,
+         'recurring' => 1,
+         'text' => 'Am Wriezener Bahnhof - Helsingforser Str./Wriezener Park: bei Veranstaltungen im Berghain u.U. nicht passierbar',
+         'from' => undef,
+         'id' => 2321,
+         'data' => '	2::night 13002,11705 13042,11749
+',
+         'type' => 'gesperrt'
        }
      
 );

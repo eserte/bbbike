@@ -20012,11 +20012,11 @@ EOF
      },
      { from  => 1329631200, # 2012-02-19 07:00
        until => 1341068400, # 2012-06-30 17:00
-       text  => 'Behrenstr. (Mitte): Fahrbahn gesperrt (bis Ende 06/12) zwischen Glinkastr. und Friedrichstr.',
+       text  => 'Behrenstr. (Mitte): Fahrbahn gesperrt (bis Ende 06/12) zwischen Glinkastr. und Friedrichstr., Richtung Friedrichstraße',
        type  => 'handicap',
        source_id => 'INKO_093369',
        data  => <<EOF,
-userdel	q4::inwork 9373,12197 9164,12172
+userdel	q4::inwork; 9164,12172 9373,12197
 EOF
      },
      { from  => 1330419240, # 2012-02-28 09:54
@@ -20046,6 +20046,15 @@ EOF
 Am Schloss Schönhausen	2::night 10308,19297 10350,19182 10390,19069
 Am Schloss Schönhausen	2::night 10249,19148 10350,19182
 #: by: ^^^
+EOF
+     },
+     { from  => undef, #
+       until => undef, #
+       text  => 'Am Wriezener Bahnhof - Helsingforser Str./Wriezener Park: bei Veranstaltungen im Berghain u.U. nicht passierbar',
+       type  => 'gesperrt',
+       recurring => 1,
+       data  => <<EOF,
+	2::night 13002,11705 13042,11749
 EOF
      },
     );
