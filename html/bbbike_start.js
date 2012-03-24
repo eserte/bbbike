@@ -72,10 +72,8 @@ function any_init(type) {
     var above_layer = find_layer(type + "above");
     above_layer.style.visibility = 'hidden';
     below_layer.style.visibility = 'visible';
-    above_layer.style.left
-        = getOffsetLeft(below_layer) + "px";
-    above_layer.style.top
-        = getOffsetTop(below_layer) + "px";
+    // positioning of the above layer happens now in any_highlight, so
+    // it works correctly if the user zooms the page 
     below_layer.onmousemove = eval(type + "_highlight");
     above_layer.onmouseout = eval(type + "_byebye");
     above_layer.onmouseup = eval(type + "_detail");
@@ -84,6 +82,7 @@ function any_init(type) {
     if (!document.layers[type + "above"]) return;
     document.layers[type + "above"].visibility = 'hide';
     document.layers[type + "below"].visibility = 'show';
+    // XXX theoretically this belongs also to any_highlight
     document.layers[type + "above"].pageX
       = document.layers[type + "below"].pageX;
     document.layers[type + "above"].pageY
@@ -110,6 +109,7 @@ function any_init(type) {
     var above_layer = find_layer(type + "above");
     above_layer.style.visibility = 'hidden';
     below_layer.style.visibility = 'visible';
+    // XXX theoretically this belongs also to any_highlight
     above_layer.style.left
         = getOffsetLeft(below_layer);
     above_layer.style.top
@@ -167,8 +167,15 @@ function any_highlight(type, Evt) {
     } else {
       above = find_layer(type + "above");
       below = find_layer(type + "below");
-      x = Math.floor(Evt.layerX/xgridwidth)*xgridwidth;
-      y = Math.floor(Evt.layerY/ygridwidth)*ygridwidth+offset;
+      above.style.left = getOffsetLeft(below) + "px";
+      above.style.top = getOffsetTop(below) + "px";
+      if (Evt.offsetX != null) {
+	x = Math.floor(Evt.offsetX/xgridwidth)*xgridwidth;
+	y = Math.floor(Evt.offsetY/ygridwidth)*ygridwidth+offset;
+      } else {
+	x = Math.floor(Evt.layerX/xgridwidth)*xgridwidth;
+	y = Math.floor(Evt.layerY/ygridwidth)*ygridwidth+offset;
+      }
       above.style.clip = "rect("+y+"px,"+(x+xgridwidth)+"px,"+(y+ygridwidth)+"px,"+x+"px)";
     }
     below.onmousemove = eval(type + "_highlight");
