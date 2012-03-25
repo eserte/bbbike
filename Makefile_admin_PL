@@ -961,7 +961,7 @@ test-with-protocol: permission
 	    export HARNESS_NOTTY=1;\
 	    export HARNESS_TIMER=1;\
 	    export BBBIKE_LONG_TESTS=1;\
-	    (echo -n "git describe: "; git describe;\
+	    (echo -n "git describe: "; git describe --match 'RELEASE_*';\
 	     echo "git status: "; git status;\
 	     echo ) >$(HOME)/log/bbbike-test-$$DATE 2>&1;\
 	    $(MAKE) ext  >>$(HOME)/log/bbbike-test-$$DATE 2>&1;\
@@ -969,7 +969,7 @@ test-with-protocol: permission
 		echo "$(MAKE) test failed, please look at $(HOME)/log/bbbike-test-$$DATE for output";\
 		has_failure=yes;\
 	    fi; \
-	    (echo -n "git describe: "; git describe ;\
+	    (echo -n "git describe: "; git describe --match 'RELEASE_*';\
 	     echo "git status: "; git status;\
 	     echo ) >$(HOME)/log/bbbike-test-data-$$DATE 2>&1;\
 	    if ! (cd data && $(MAKE) all slow-checks really-slow-checks >>$(HOME)/log/bbbike-test-data-$$DATE 2>&1); then \

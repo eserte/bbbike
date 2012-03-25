@@ -96,7 +96,7 @@ sub git_info {
 	    $remote= _backtick("git config branch.$branch.remote");
 	}
 	$commit_id = _backtick("git rev-parse HEAD");
-	$describe = _backtick("git describe");
+	$describe = _backtick("git describe --match 'RELEASE_*'");
 	my $commit_created = _backtick(qq{git log -1 --pretty="format:%ci"});
 	$new_patchnum = "describe: $describe";
 	$git_info{'commit_date'} = $commit_created;
