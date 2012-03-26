@@ -19987,6 +19987,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.berlin.de/ba-lichtenberg/presse/archiv/20120220.1530.366402.html',
        data  => <<EOF,
+#: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120220.1530.366402.html (Weg wieder geöffnet, allerdings nur ein Drittel der ursprünglichen Breite)
 userdel	2::inwork 15479,16060 15592,16069 15664,16115 15731,16208
 EOF
      },
@@ -20055,6 +20056,16 @@ EOF
        recurring => 1,
        data  => <<EOF,
 	2::night 13002,11705 13042,11749
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Sredzkistr. komplett zwischen Husemannstr. und Kollwitzstr. gesperrt. Dauer der Sperrung ist unbekannt.',
+       type  => 'handicap',
+       source_id => 'l.epperlein',
+       data  => <<EOF,
+#: XXX vor Ort erkunden; wann wird die Baustelle aufgehoben?
+userdel	q4::inwork 11436,14741 11271,14755
 EOF
      },
     );

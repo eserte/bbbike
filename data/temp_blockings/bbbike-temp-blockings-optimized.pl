@@ -1381,6 +1381,17 @@ Am Schloss Schönhausen	2::night 10249,19148 10350,19182
          'data' => '	2::night 13002,11705 13042,11749
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'l.epperlein',
+         'until' => undef,
+         'text' => 'Sredzkistr. komplett zwischen Husemannstr. und Kollwitzstr. gesperrt. Dauer der Sperrung ist unbekannt.',
+         'from' => undef,
+         'id' => 2322,
+         'data' => '#: XXX vor Ort erkunden; wann wird die Baustelle aufgehoben?
+userdel	q4::inwork 11436,14741 11271,14755
+',
+         'type' => 'handicap'
        }
      
 );
