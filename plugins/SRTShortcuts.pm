@@ -1715,12 +1715,15 @@ sub street_name_experiment_one {
 		my $begin_i = $i-1;
 		my $end_i = $i;
 		while ($end_i < $#c) {
-		    my($deg, undef) = schnittwinkel(@{ $c[$i-1] }, @{ $c[$i] }, @{ $c[$end_i+1] });
+		    # Wrap schnittwinkel into eval{}, as especially
+		    # for osm data zero-length arcs are possible
+		    my($deg, undef) = eval { schnittwinkel(@{ $c[$i-1] }, @{ $c[$i] }, @{ $c[$end_i+1] }) };
 		    last if ($deg > TOLERANT_ANGLE);
 		    $end_i++;
 		}
 		while ($begin_i > 0) {
-		    my($deg, undef) = schnittwinkel(@{ $c[$begin_i-1] }, @{ $c[$i-1] }, @{ $c[$i] });
+		    # eval{} -> see above
+		    my($deg, undef) = eval { schnittwinkel(@{ $c[$begin_i-1] }, @{ $c[$i-1] }, @{ $c[$i] }) };
 		    last if ($deg > TOLERANT_ANGLE);
 		    $begin_i--;
 		}
