@@ -160,6 +160,7 @@ if ($strdata) {
 }
 
 my $new_s = Strassen->new;
+$new_s->set_global_directives($s->get_global_directives);
 $s->init;
 while(1) {
     my $r = $s->next;
