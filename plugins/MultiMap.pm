@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2006,2007,2010,2011 Slaven Rezic. All rights reserved.
+# Copyright (C) 2006,2007,2010,2011,2012 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -20,20 +20,23 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.20;
+$VERSION = 1.21;
 
 use vars qw(%images);
 
 sub register {
     _create_images();
     my $lang = $Msg::lang || 'de';
+    my $is_berlin = $main::city_obj && $main::city_obj->cityname eq 'Berlin';
     # this order will be reflected in show_info
-    $main::info_plugins{__PACKAGE__ . "_DeinPlan"} =
-	{ name => "Pharus (dein-plan)",
-	  callback => sub { showmap_deinplan(@_) },
-	  callback_3_std => sub { showmap_url_deinplan(@_) },
-	  ($images{Pharus} ? (icon => $images{Pharus}) : ()),
-	};
+    if ($is_berlin) {
+	$main::info_plugins{__PACKAGE__ . "_DeinPlan"} =
+	    { name => "Pharus (dein-plan)",
+	      callback => sub { showmap_deinplan(@_) },
+	      callback_3_std => sub { showmap_url_deinplan(@_) },
+	      ($images{Pharus} ? (icon => $images{Pharus}) : ()),
+	    };
+    }
     if (0) {
 	# 2010-09-30: website still exists, but map does not work with
 	# three browsers (Seamonkey 1, Firefox 3, Chrome)
@@ -82,12 +85,14 @@ sub register {
 	  callback_3_std => sub { showmap_url(@_) },
 	  ($images{MultiMap} ? (icon => $images{MultiMap}) : ()),
 	};
-    $main::info_plugins{__PACKAGE__ . "_BvgStadtplan"} =
-	{ name => "BVG-Stadtplan",
-	  callback => sub { showmap_bvgstadtplan(@_) },
-	  callback_3_std => sub { showmap_url_bvgstadtplan(@_) },
-	  ($images{BvgStadtplan} ? (icon => $images{BvgStadtplan}) : ()),
-	};
+    if ($is_berlin) {
+	$main::info_plugins{__PACKAGE__ . "_BvgStadtplan"} =
+	    { name => "BVG-Stadtplan",
+	      callback => sub { showmap_bvgstadtplan(@_) },
+	      callback_3_std => sub { showmap_url_bvgstadtplan(@_) },
+	      ($images{BvgStadtplan} ? (icon => $images{BvgStadtplan}) : ()),
+	    };
+    }
     if (0) {
 	# Does not work anymore: URL gets redirected to
 	# http://intl.local.live.com/ page.
@@ -104,13 +109,15 @@ sub register {
 	  callback_3_std => sub { showmap_url_bikemapnet(@_) },
 	  ($images{BikeMapNet} ? (icon => $images{BikeMapNet}) : ()),
 	};
-    # Down: 2010-09-30
-    $main::info_plugins{__PACKAGE__ . "_BerlinerStadtplan24"} =
-	{ name => "www.berliner-stadtplan24.com",
-	  callback => sub { showmap_berliner_stadtplan24(@_) },
-	  callback_3_std => sub { showmap_url_berliner_stadtplan24(@_) },
-	  ($images{BerlinerStadtplan24} ? (icon => $images{BerlinerStadtplan24}) : ()),
-	};
+    if ($is_berlin) {
+	# Down: 2010-09-30
+	$main::info_plugins{__PACKAGE__ . "_BerlinerStadtplan24"} =
+	    { name => "www.berliner-stadtplan24.com",
+	      callback => sub { showmap_berliner_stadtplan24(@_) },
+	      callback_3_std => sub { showmap_url_berliner_stadtplan24(@_) },
+	      ($images{BerlinerStadtplan24} ? (icon => $images{BerlinerStadtplan24}) : ()),
+	    };
+    }
     $main::info_plugins{__PACKAGE__ . "_Geocaching"} =
 	{ name => "geocaching.com",
 	  callback => sub { showmap_geocaching(@_) },

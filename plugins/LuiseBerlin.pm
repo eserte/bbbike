@@ -58,7 +58,6 @@ $DEBUG = 1;
 use vars qw($icon);
 
 sub register {
-    _create_image();
 ## This became unreliable and useless. At 2008-01, I made 
 ## a test with about ten streets, with and without umlaut:
 ## no hits! One or two of the search terms were successful
@@ -68,19 +67,26 @@ sub register {
 ## and related pages.
 ## 
 ## Haha: I just construct the search and redirect to Google. Smart solution.
-    $main::info_plugins{__PACKAGE__ . ""} =
-	{ name => "Luise-Berlin, Straßenlexikon",
-	  callback => sub { launch_street_url(@_) },
-	  callback_3 => sub { show_street_menu(@_) },
-	  icon => $icon,
-	};
-    $main::info_plugins{__PACKAGE__ . "_bezlex"} =
-	{ name => "Luise-Berlin, Bexirkslexikon",
-	  callback => sub { launch_bezlex_url(@_) },
-	  icon => $icon,
-	};
-    main::status_message("Das Luise-Berlin-Plugin wurde registriert. Der Link erscheint im Info-Fenster.", "info")
-	    if !$main::booting;
+    my $is_berlin = $main::city_obj && $main::city_obj->cityname eq 'Berlin';
+    if ($is_berlin) {
+	_create_image();
+	$main::info_plugins{__PACKAGE__ . ""} =
+	    { name => "Luise-Berlin, Straßenlexikon",
+	      callback => sub { launch_street_url(@_) },
+	      callback_3 => sub { show_street_menu(@_) },
+	      icon => $icon,
+	    };
+	$main::info_plugins{__PACKAGE__ . "_bezlex"} =
+	    { name => "Luise-Berlin, Bexirkslexikon",
+	      callback => sub { launch_bezlex_url(@_) },
+	      icon => $icon,
+	    };
+	main::status_message("Das Luise-Berlin-Plugin wurde registriert. Der Link erscheint im Info-Fenster.", "info")
+		if !$main::booting;
+    } else {
+	main::status_message("Das Luise-Berlin-Plugin ist nur für Berlin verfügbar.", "err")
+		if !$main::booting;
+    }
 }
 
 sub _create_image {

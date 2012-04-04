@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2009 Slaven Rezic. All rights reserved.
+# Copyright (C) 2009,2012 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -16,7 +16,7 @@ package KaupertsPlugin;
 
 use strict;
 use vars qw($VERSION @ISA);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.30 $ =~ /(\d+)\.(\d+)/);
+$VERSION = '1.31';
 
 BEGIN {
     if (!caller(2)) {
@@ -46,14 +46,20 @@ $DEBUG = 1;
 use vars qw($icon);
 
 sub register {
-    _create_image();
-    $main::info_plugins{__PACKAGE__ . ""} =
-	{ name => "Kauperts Straßenführer",
-	  callback => sub { launch_street_url(@_) },
-	  icon => $icon,
-	};
-    main::status_message("Das Kauperts-Plugin wurde registriert. Der Link erscheint im Info-Fenster.", "info")
-	    if !$main::booting;
+    my $is_berlin = $main::city_obj && $main::city_obj->cityname eq 'Berlin';
+    if ($is_berlin) {
+	_create_image();
+	$main::info_plugins{__PACKAGE__ . ""} =
+	    { name => "Kauperts Straßenführer",
+	      callback => sub { launch_street_url(@_) },
+	      icon => $icon,
+	    };
+	main::status_message("Das Kauperts-Plugin wurde registriert. Der Link erscheint im Info-Fenster.", "info")
+		if !$main::booting;
+    } else {
+	main::status_message("Das Kauperts-Plugin ist nur für Berlin verfübar.", "err")
+		if !$main::booting;
+    }
 }
 
 sub _create_image {
