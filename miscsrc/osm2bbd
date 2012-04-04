@@ -1031,6 +1031,11 @@ for my $osm_file (@osm_files) {
 		#push @or, ["kneipen", $F."X"];
 	    }
 
+	    # Flag for gesperrt=2 or gesperrt_car=2, may be used to
+	    # override completely blocked over oneway blockings
+	    my $gesperrt_car_seen;
+	    my $gesperrt_seen;
+
 	    my $quality_cat;
 	    my $quality_name;
 	    if (exists $tag{'surface'} || exists $tag{'smoothness'}) {
@@ -1087,7 +1092,7 @@ for my $osm_file (@osm_files) {
 			$quality_cat = $smoothness_to_Q{$smoothness}; # overrides before
 			push @quality_name, $lang eq '' ? $smoothness_to_de{$smoothness}||$smoothness : $smoothness;
 		    } else {
-			push @or, ['gesperrt', '2', name => $smoothness];
+			push @or, ['gesperrt', '2', name => $smoothness]; $gesperrt_seen = 1;
 		    }
 		}
 
@@ -1235,19 +1240,19 @@ for my $osm_file (@osm_files) {
 			push @or, ["strassen_bab", "BAB::inwork"];
 		    } elsif ($construction =~ HIGHWAY_HH_RX) {
 			push @or, ['strassen', 'HH'];
-			push @or, ['gesperrt', '2:inwork'];
+			push @or, ['gesperrt', '2:inwork']; $gesperrt_seen = 1;
 		    } elsif ($construction =~ HIGHWAY_H_RX) {
 			push @or, ['strassen', 'H'];
-			push @or, ['gesperrt', '2:inwork'];
+			push @or, ['gesperrt', '2:inwork']; $gesperrt_seen = 1;
 		    } elsif ($construction =~ HIGHWAY_NH_RX) {
 			push @or, ['strassen', 'NH'];
-			push @or, ['gesperrt', '2:inwork'];
+			push @or, ['gesperrt', '2:inwork']; $gesperrt_seen = 1;
 		    } elsif ($construction =~ HIGHWAY_N_RX) {
 			push @or, ['strassen', 'N'];
-			push @or, ['gesperrt', '2:inwork'];
+			push @or, ['gesperrt', '2:inwork']; $gesperrt_seen = 1;
 		    } else {
 			push @or, ['strassen', 'N'];
-			push @or, ['gesperrt', '2:inwork'];
+			push @or, ['gesperrt', '2:inwork']; $gesperrt_seen = 1;
 		    }
 		} elsif ($highway_cat =~ PROJECTED_RX) {
 		    push @or, ['fragezeichen', '?::projected'];
@@ -1272,6 +1277,20 @@ for my $osm_file (@osm_files) {
 		    $unhandled{"highway=$highway_cat"}++;
 		}
 
+		my $access = $tag{'access'};
+		if ($access && $access =~ m{^(?:no|private)$}) {
+		    my $bicycle = $tag{'bicycle'};
+		    if ($bicycle && $bicycle =~ m{^(yes|designated|permissive)$}) {
+			if (!$gesperrt_car_seen) {
+			    push @or, ["gesperrt_car", 2]; $gesperrt_car_seen = 1;
+			}
+		    } else {
+			if (!$gesperrt_seen) {
+			    push @or, ["gesperrt", 2]; $gesperrt_seen = 1;
+			}
+		    }
+		}
+
 		my $oneway = $tag{'oneway'};
 		if ($oneway) {
 		    my $reversed = 1;
@@ -1286,15 +1305,19 @@ for my $osm_file (@osm_files) {
 			    (exists $tag{'bicycle'} && $tag{'bicycle'} eq 'opposite') || # seen in Würzburg, Äußere Pleich, but no documentation/discussion for it
 			    (exists $tag{'cycleway'} && $tag{'cycleway'} =~ m{^opposite(?:$|_lane|_track)$}) # described in http://wiki.openstreetmap.org/wiki/DE:Germany_roads_tagging
 			   ) {
-			    push @or, ['gesperrt_car', '1', reversed => $reversed];
+			    if (!$gesperrt_car_seen) {
+				push @or, ['gesperrt_car', '1', reversed => $reversed];
+			    }
 			} else {
-			    if ($highway_cat eq 'cycleway') {
-				# usually this generates to much clutter in
-				# the map ("straßenbegleitende Radwege"), so
-				# ignore map display
-				push @or, ["gesperrt", "1::igndisp", reversed => $reversed];
-			    } else {
-				push @or, ["gesperrt", "1", reversed => $reversed];
+			    if (!$gesperrt_seen) {
+				if ($highway_cat eq 'cycleway') {
+				    # usually this generates to much clutter in
+				    # the map ("straßenbegleitende Radwege"), so
+				    # ignore map display
+				    push @or, ["gesperrt", "1::igndisp", reversed => $reversed];
+				} else {
+				    push @or, ["gesperrt", "1", reversed => $reversed];
+				}
 			    }
 			}
 		    } else {
