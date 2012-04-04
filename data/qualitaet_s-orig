@@ -670,7 +670,7 @@ Morusstr.: Kopfsteinpflaster	Q2 12478,7878 12520,7694
 Leinestr.: Kopfsteinpflaster	Q2 12122,7553 11923,7516 11797,7492 11671,7464 11553,7437
 Auguststr.: Kopfsteinpflaster	Q2 10307,13600 10263,13594 10142,13556 10049,13528 10026,13521
 Kleine Rosenthaler Str.: mäßiger, teilweise auch schlechter Asphalt	Q2 10310,13692 10307,13600 10304,13575 10282,13546
-Magazinstr.: Kopfsteinpflaster, OK	Q1 11558,12588 11323,12484
+Magazinstr.: Kopfsteinpflaster, OK	Q1 11558,12588 11329,12497
 #: by: Lutz Epperlein:
 #: corrected_by: aschoenebeck ("etwas brüchig, wenige bodenwellen", Q0 -> Q1, aber ich habe Q0- daraus gemacht)
 Saarbrücker Str.: Asphalt, etwas brüchig	Q0- 10895,13961 10924,13940 10969,13914 11060,13865 11257,13647
@@ -6787,6 +6787,7 @@ Neue Blumenstr.: Asphalt	Q0 11709,12601 12006,12464
 (Am Wriezener Bahnhof - Helsingforser Str./Wriezener Park): unbefestigte Wege, teilweise sehr holprig	Q3+ 13042,11749 13175,11649
 (Am Wriezener Bahnhof - Helsingforser Str./Wriezener Park): unbefestigte Wege	Q2 13175,11649 13208,11658
 Oranienplatz: Kleinsteinpflaster	Q1 11275,10723 11253,10778 11227,10821
+(Schloßplatz, entlang der Rasenfläche): Holzbohlen	Q1 10281,12310 10157,12491
 ######################### User Contributions #################################
 #: by: anonymous vvv
 # 
@@ -18649,7 +18650,8 @@ Finkensteig: Verbundsteine	Q1 -4456,11157 -4437,11256
 Keltererweg: Asphalt	Q0 -4836,11138 -4550,11073
 #: by: (URL existiert nicht mehr) http://www.berlin.de/ba-spandau/presse/archiv/20060602.1025.41416.html , vorher: Asphalt uneben, mit Löchern
 Keltererweg: Asphalt	Q0 -4550,11073 -4376,11046 -4321,11056 -4306,11126
-Küfersteig: Asphalt uneben, mit Löchern	Q3 -4550,11073 -4395,11018 -4356,10988 -4395,10876
+#: corrected_by: Markus Sleziona ("... neu gemacht wurde, schöner neuer Asphalt")
+Küfersteig: Asphalt	Q0 -4550,11073 -4395,11018 -4356,10988 -4395,10876
 Weingartenweg: Asphalt	Q0 -4395,10876 -4472,10645
 #: corrected_by: srt (Q0 -> Q0-)
 Zur Haveldüne: Asphalt	Q0- -4550,10674 -4581,10680 -4633,10690 -4689,10701 -4715,10705 -4793,10711
@@ -19079,7 +19081,7 @@ Kleine Jägerstr.: Asphalt	Q0 9995,11910 10050,11942 10071,11957
 Alte Leipziger Str.: Asphalt	Q0 10076,11840 10118,11907
 Kleine Gertraudenstr.: Gehwegplatten	Q1 10332,11929 10364,11896 10391,11898
 #: corrected_by: srt (Beton, Q1 -> Asphalt, Q0)
-Am Wriezener Bahnhof: Asphalt	Q0 12744,11904 12794,11893 12944,11760 12993,11717
+Am Wriezener Bahnhof: Asphalt	Q0 12758,11915 12794,11893 12944,11760 12993,11717
 #: corrected_by: srt (Q2 -> Q2-)
 (Scottweg - Tharauer Allee): buckliger Asphalt	Q2- -1403,11279 -1505,11307
 Plathweg: Beton	Q1 -3669,11766 -3696,11771 -3714,11782 -3732,11809 -3786,11913

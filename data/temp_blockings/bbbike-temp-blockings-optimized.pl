@@ -811,7 +811,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        {
          'until' => undef,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im März bis 19.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im April bis 20.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'from' => undef,
          'id' => 2068,
          'data' => '(Eingang Columbiadamm - Rundkurs auf dem Flughafen Tempelhof)	2::night 10691,8532 10644,8363 10598,8270 10575,8218
@@ -1066,17 +1066,7 @@ userdel	q4::inwork 425,8766 490,8716
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'INKO_093372',
-         'until' => 1333206000,
-         'text' => 'Schadowstr. (Mitte): Baustelle, Straße vollständig gesperrt (bis Ende 03/12) in beiden Richtungen zwischen Unter den Linden und Dorotheenstr., 16.05.2011 07:00 Uhr bis 31.03.2012 17:00 Uhr ',
-         'from' => 1305435600,
-         'id' => 2210,
-         'data' => '#: last_checked: 2012-03-16
-userdel	q4::inwork 9028,12307 9016,12416 9008,12485
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1150,16 +1140,7 @@ userdel	q4::inwork; 8775,12457 8907,12472 9008,12485
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'LS/S-SG33-W/11/303',
-         'until' => 1333144800,
-         'text' => 'Wildau: L401: Straßenbau OD Wildau, Einmündung Richard-Sorge-Straße bis Stichkanal Richtungsverkehr zw. Bergstr. und Freiheitsstr., 15.12.2011 bis 30.03.2012 ',
-         'from' => 1332272539,
-         'id' => 2265,
-         'data' => 'userdel	q3::inwork; 26679,-8825 26381,-9753
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,

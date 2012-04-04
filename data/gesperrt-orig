@@ -1088,7 +1088,7 @@ Altstädter Ring: Mittelstreifen	3nocross -3481,14523 -3498,14413 -3501,14365 -35
 Altstädter Ring: Mittelstreifen mit Zaun	3nocross -3501,14365 -3506,14306 -3517,14218
 #: by: Steini (immerlocker)
 Kaiser-Wilhelm-Str.: Mittelstreifen	3nocross 6996,3761 6957,3699 6782,3491
-Alexanderstr.: umbequemes Überqueren wegen Bordsteinen	3nocross 11323,12484 11333,12437 11343,12300
+Alexanderstr.: umbequemes Überqueren wegen Bordsteinen	3nocross 11329,12497 11340,12443 11355,12306
 Yorckstr.: Mittelstreifen	3nocross 8777,9601 8648,9526 8595,9495
 Klemkestr.: Mittelstreifen	3nocross 7492,18699 7520,18701 7609,18707 7690,18716
 Berliner Allee: Straßenbahntrasse	3nocross 14619,16682 14608,16772 14559,16912
@@ -1906,6 +1906,10 @@ Tor	BNP:5 26888,13976
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: last_checked: 2012-03-27
+#: next_check: 2012-05-15
+Scharrenstr.: wegen Bauarbeiten komplett gesperrt	2:inwork 10418,12016 10480,12077
+# 
 #: last_checked: 2012-03-23
 #: next_check: 2012-05-15
 Paul-und-Paula-Ufer: wegen Bodensanierungsarbeiten komplett gesperrt	2:inwork 14884,10508 14906,10587
@@ -1980,8 +1984,8 @@ Bebelplatz: Bauarbeiten an der Staatsoper	2:inwork 9743,12239 9702,12307 9734,12
 #: next_check: ^^^
 #: last_checked: ^^^
 # 
-#: last_checked: 2012-02-17
-#: next_check: 2012-04-15
+#: last_checked: 2012-03-27
+#: next_check: 2012-05-15
 Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 
 #: XXX wird es jemals wieder öffentlich befahrbar sein?

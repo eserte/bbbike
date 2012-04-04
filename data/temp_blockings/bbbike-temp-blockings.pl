@@ -5365,7 +5365,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_003144',
        data  => <<EOF,
-userdel	1::inwork 11323,12484 11209,12430 11092,12375 11084,12395 11059,12450 10954,12635
+userdel	1::inwork 11329,12497 11209,12430 11092,12375 11084,12395 11059,12450 10954,12635
 userdel	1::inwork 10954,12635 11057,12715 11105,12764 11134,12793
 EOF
      },
@@ -9773,7 +9773,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006622',
        data  => <<EOF,
-userdel	1::inwork 11134,12793 11207,12706 11252,12644 11323,12484
+userdel	1::inwork 11134,12793 11207,12706 11252,12644 11329,12497
 EOF
      },
      { from  => 1189893600, # 2007-09-16 00:00
@@ -16914,7 +16914,7 @@ EOF
        text  => 'Voltairestr.: Durchfahrt wegen des Weihnachtsmarkts am Einkaufszentrum Alexa nicht oder nur schwer möglich',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::temp 11209,12430 11323,12484
+userdel	2::temp 11209,12430 11329,12497
 EOF
      },
      { from  => 1290960699, # PERIODISCH! # früher: 1258207217, # 2009-11-14 15:00

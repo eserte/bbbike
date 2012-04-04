@@ -888,8 +888,8 @@ Jüdenstr. -> Altstädter Ring: Mittelstreifen mit Zaun	3::igndisp -3481,14308 -35
 Altstädter Ring -> Jüdenstr.: Mittelstreifen mit Zaun	3::igndisp -3501,14365 -3506,14306 -3481,14308
 Mittelstreifen	3nocross::ignrte 6996,3761 6957,3699 6782,3491
 Langkofelweg -> Kaiser-Wilhelm-Str.: Mittelstreifen	3::igndisp 6998,3596 6957,3699 6782,3491
-umbequemes Überqueren wegen Bordsteinen	3nocross::ignrte 11323,12484 11333,12437 11343,12300
-Schillingstr. -> Alexanderstr.: umbequemes Überqueren wegen Bordsteinen	3::igndisp 11462,12384 11333,12437 11343,12300
+umbequemes Überqueren wegen Bordsteinen	3nocross::ignrte 11329,12497 11340,12443 11355,12306
+Schillingstr. -> Alexanderstr.: umbequemes Überqueren wegen Bordsteinen	3::igndisp 11462,12384 11340,12443 11355,12306
 Mittelstreifen	3nocross::ignrte 8777,9601 8648,9526 8595,9495
 Yorckstr. -> Hagelberger Str.: Mittelstreifen	3::igndisp 8777,9601 8648,9526 8773,9524
 Mittelstreifen	3nocross::ignrte 7492,18699 7520,18701 7609,18707 7690,18716
@@ -2175,6 +2175,7 @@ Schranke (lichte Breite ca. 120cm)	BNP:2:-50:trailer=8 14448,4501
 Schranke (lichte Breite ca. 120cm)	BNP:2:-53:trailer=8 14709,4307
 Schranke (lichte Breite ca. 100cm)	BNP:3:-45:trailer=10 15179,3901
 Tor	BNP:5:-57 26888,13976
+Scharrenstr.: wegen Bauarbeiten komplett gesperrt	2:inwork 10418,12016 10480,12077
 Paul-und-Paula-Ufer: wegen Bodensanierungsarbeiten komplett gesperrt	2:inwork 14884,10508 14906,10587
 Radweg Herzberge: wegen Bauarbeiten gesperrt (ab 2012-02-20)	2:inwork 17167,13655 17110,13811 17095,13972 17154,14093 17266,14144 18015,13846
 Am Alten Markt: wegen Bauarbeiten (Wiederaufbau des Schlosses) gesperrt	2:inwork -12643,-1694 -12624,-1598
