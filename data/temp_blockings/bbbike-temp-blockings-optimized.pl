@@ -1066,7 +1066,17 @@ userdel	q4::inwork 425,8766 490,8716
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'INKO_093372',
+         'until' => 1338476400,
+         'text' => 'Schadowstr. (Mitte): Baustelle, Straße vollständig gesperrt (bis Ende 05/12) in beiden Richtungen zwischen Unter den Linden und Dorotheenstr., 16.05.2011 07:00 Uhr bis 31.05.2012 17:00 Uhr ',
+         'from' => 1305435600,
+         'id' => 2210,
+         'data' => '#: last_checked: 2012-03-16
+userdel	q4::inwork 9028,12307 9016,12416 9008,12485
+',
+         'type' => 'handicap'
+       },
        undef,
        undef,
        undef,
@@ -1127,7 +1137,16 @@ userdel	q4::inwork; 8775,12457 8907,12472 9008,12485
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1204/nachricht4628.html',
+         'until' => 1341093600,
+         'text' => 'Instandsetzung der Pankgrafenbrücke bis Anfang Juli 2012, Einschränkungen möglich',
+         'from' => 1310763434,
+         'id' => 2252,
+         'data' => 'userdel	q4::inwork 13953,23497 13976,23490 14173,23426
+',
+         'type' => 'handicap'
+       },
        undef,
        undef,
        undef,
