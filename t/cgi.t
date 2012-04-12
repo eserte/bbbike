@@ -95,7 +95,7 @@ if (!@urls) {
 }
 
 my $ortsuche_tests = 11;
-plan tests => (240 + $ortsuche_tests) * scalar @urls;
+plan tests => (247 + $ortsuche_tests) * scalar @urls;
 
 my $default_hdrs;
 if (defined &Compress::Zlib::memGunzip && $do_accept_gzip) {
@@ -254,6 +254,7 @@ for my $cgiurl (@urls) {
     }
 
  SKIP: {
+    XXX: 
 	# this is critical --- both streets in the neighborhood of Berlin
 	my $route = std_get_route "$action?startc=-12064%2C-284&zielc=-11831%2C-70&startname=Otto-Nagel-Str.+%28Potsdam%29&zielname=Helmholtzstr.+%28Potsdam%29&pref_seen=1&pref_speed=21&pref_cat=&pref_quality=&output_as=perldump", testname => "Otto-Nagel => Manger (Potsdam)";
 	skip "No hash, no further checks", 1 if !$route;
@@ -376,7 +377,7 @@ for my $cgiurl (@urls) {
 	          'second ImportantAngleCrossingName';
     }
 
- XXX: {
+    {
 	# Test possible "Aktuelle Position verwenden" flows
 	my($x,$y) = (10920,13139);
 
@@ -831,12 +832,13 @@ sub std_get ($;@) {
     wantarray ? ($content, $resp) : $content;
 }
 
-# One test
+# Two tests
 sub std_get_route ($;@) {
     my($url, %opts) = @_;
     local $Test::Builder::Level = $Test::Builder::Level + 1;
     my($content, $resp) = std_get($url, %opts);
     my $route = $cpt->reval($content);
+    ok validate_output_as($route), 'Validation';
     if (is ref $route, 'HASH', 'Route result is a HASH') {
 	wantarray ? ($route, $resp) : $route;
     } else {
@@ -933,4 +935,37 @@ sub unlike_html ($$$) {
     my($content, $rx, $testname) = @_;
     local $Test::Builder::Level = $Test::Builder::Level+1;
     BBBikeTest::unlike_long_data($content, $rx, $testname, '.html');
+}
+
+{
+    my $schema;
+    sub validate_output_as {
+	my($data) = @_;
+	my $res = 1;
+    SKIP: {
+	    if (!defined $schema) {
+		if (!eval { require Kwalify; require YAML::Syck; 1 }) {
+		    diag "Kwalify and YAML::Syck needed for schema validation, but not available.";
+		    $schema = 0;
+		} else {
+		    my $schema_file = "$FindBin::RealBin/../misc/bbbikecgires.kwalify";
+		    if (!-r $schema_file) {
+			diag "Schema file $schema_file is missing.";
+			$schema = 0;
+		    } else {
+			$schema = YAML::Syck::LoadFile($schema_file);
+		    }
+		}
+	    }
+
+	    skip "No schema validation possible", 1
+		if defined $schema && !$schema;
+
+	    if (!eval { Kwalify::validate($schema, $data) }) {
+		diag $@;
+		$res = 0;
+	    }
+	}
+	$res;
+    }
 }
