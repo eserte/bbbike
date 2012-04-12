@@ -1,0 +1,131 @@
+type: map
+mapping:
+
+  Route:
+    # The textual route description
+    type: seq
+    sequence:
+      - type: map
+        mapping:
+
+          Angle:
+            # The angle for direction changes. May be undef if it does not apply,
+            # otherwise a numeric degree value
+            type: any
+
+          DirectionHtml:
+            # The direction as human readable text, HTML-formatted.
+            # Language matches the specified URL. Applies only to
+            # the first point, and the last one contains the string
+            # "angekommen"
+            type: text
+
+          DirectionString:
+            # Like DirectionHtml, but as plain text
+            type: text
+
+          Direction:
+            # The initial geographic direction (for start point)
+            # or the left/right specification
+            type: text
+            enum:
+            # Initial geographic direction
+              - N
+              - NE
+              - E
+              - SE
+              - S
+              - SW
+              - W
+              - NW
+            # left/right
+              - '' # straight forward
+              - l  # left
+              - hl # half left
+              - r  # right
+              - hr # half right
+
+          DistString:
+            # Length of this leg as human readable text, may contain a unit.
+            type: text
+
+          Dist:
+            # Length of this leg in meters.
+            type: number
+
+          TotalDistString:
+            # The total distance until this hop as human readable text, may contain a unit.
+            type: text
+
+          TotalDist:
+            # The total distance until this hop in meters.
+            type: number
+
+          CommentHtml:
+            # Comments for this leg (e.g. cycle routes at this leg, surface description,
+            # other handicap...), as HTML-formatted text. May contain hyperlinks.
+            type: text
+
+          Comment:
+            # Like CommentHtml, but as plain text.
+            type: text
+
+          Strname:
+            # Name of street
+            type: text
+
+          PathIndex:
+            # Start index (zero based) of this leg in the LongLatPath structure
+            type: int
+
+          ImportantAngleCrossingName:
+            # XXX Description missing
+            # XXX May be a text or undef
+            type: any
+
+          FragezeichenComment:
+            # XXX Description missing
+            type: text
+
+          Coord:
+            # XXX Description missing
+            type: text
+
+  Len:
+    # Total length in meters
+    type: number
+
+  LongLatPath:
+    # A list of longitude,latitude coordinates of the route.
+    type: seq
+    sequence:
+      - type: text
+        pattern: /^-?\d+(\.\d+)?,-?\d+(\.\d+)?$/
+
+  Trafficlights:
+    # Number of traffic lights on route
+    # Warning: only meaningful with original bbbike data,
+    # but not yet with derived OSM data
+    type: int
+
+  AffectingBlockings:
+    # XXX Description missing
+    type: seq
+    sequence:
+      - type: any
+
+  Speed:
+    # XXX Description missing
+    type: any
+
+  Session:
+    # XXX Description missing
+    type: text
+
+  Path:
+    # XXX Description missing
+    type: any
+
+  Power:
+    # XXX Description missing
+    type: any
