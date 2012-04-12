@@ -69,6 +69,8 @@ YAML::Syck	- optional für die Testsuite, könnte auch YAML.pm in Zukunft ersetzen
 
 JSON::XS	- optional für JSON-Dumps der BBBike-Route und diverse Serialisierungsaufgaben
 
+Kwalify	- optional für Validierung in der Testsuite
+
 Mail::Mailer 1.53	- falls man aus bbbike heraus E-Mails mit der Routenbeschreibung verschicken will
 
 MIME::Lite	- Versenden von Benutzer-Kommentaren im Webinterface

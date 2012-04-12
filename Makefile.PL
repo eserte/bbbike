@@ -109,6 +109,8 @@ my @req_table =
    'optional für die Testsuite, könnte auch YAML.pm in Zukunft ersetzen'],
   [qw/JSON::XS	0	all	2	base/,
    'optional für JSON-Dumps der BBBike-Route und diverse Serialisierungsaufgaben'],
+  [qw/Kwalify	0	all	0	devel/,
+   'optional für Validierung in der Testsuite'],
 
   [qw/Mail::Mailer	1.53	unix	0	mail/,
    'falls man aus bbbike heraus E-Mails mit der Routenbeschreibung verschicken will'],
