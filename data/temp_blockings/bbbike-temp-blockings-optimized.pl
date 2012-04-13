@@ -1271,16 +1271,7 @@ userdel	q4::inwork 10723,14772 10838,14962 10881,15047
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_016853',
-         'until' => 1334322000,
-         'text' => 'Heinrich-Mann-Str. (Pankow): Baustelle, Straße vollständig gesperrt (bis Mitte 04/12) in beiden Richtungen zwischen Schönholzer Str. und Cottastr. ',
-         'from' => 1295269680,
-         'id' => 2309,
-         'data' => 'userdel	q4::inwork 9881,18354 9821,18392
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'source_id' => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1106/nachricht4399.html',

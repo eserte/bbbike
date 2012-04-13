@@ -4,8 +4,8 @@
 #: note: "Parkweg" sollte hier vielleicht nicht verwendet werden, sondern nur in qualitaet_s-orig? Oder wenigstens die gleichen Wege nicht in beiden Dateien so benannt werden? Oder wenigstens beim Ausgeben der Routenliste doppelte ausfiltern?
 #:
 Sembritzkystr.: Bauarbeiten, Einbahnstraße	q3::inwork; 7203,5488 7186,5453 7157,5418 7095,5317 7018,5201
-Axel-Springer-Str.: Bauarbeiten	q4::inwork 10166,11592 10136,11529
-Axel-Springer-Str.: Bauarbeiten, Gehwege können schon benutzt werden	q3::inwork 10166,11592 10201,11631 10213,11728
+Axel-Springer-Str.: Bauarbeiten, Einbahnstraße	q3::inwork; 10136,11529 10166,11592 10201,11631
+Axel-Springer-Str.: Bauarbeiten, Gehwege können schon benutzt werden	q3::inwork 10201,11631 10213,11728
 Invalidenstr. (Mitte): Baustelle, Richtung Alt-Moabit zwischen Gartenstr. und Hessische Str. gesperrt	q4::inwork; 9383,13978 9274,13963 9203,13953 9151,13941 9085,13919 8935,13844 8690,13723
 Alt-Stralau: Bauarbeiten an der Brücke, enge Durchfahrt	q3::inwork 14652,10201 14558,10264
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9890,12161 9875,12257 9869,12297
@@ -23,6 +23,7 @@ Kantstr.: Bauarbeiten am Zoofenster, Fahrbahn Richtung Westen gesperrt	q4::inwor
 Burgstraße: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 10166,12777 10132,12941
 Anna-Louisa-Karsch-Str.: vor der Friedrichsbrücke auf den linken Gehweg fahren	q3::inwork; 10264,12826 10166,12777
 Am Zirkus: Baustelle, Einbahnstraße	q3::inwork; 9170,13031 9239,12923
+Am Kupfergraben: Baustelle, Einbahnstraße	q3::inwork; 9867,12651 9919,12613
 Wuhlewanderweg: steiler Anstieg, Fußgänger	q4; 21998,12204 21970,12153
 Wuhlewanderweg: steiles Gefälle, Fußgänger	q4; 21970,12153 21998,12204
 (An der Wuhle, östliches Ufer): Fußgänger	q1 21323,8481 21333,8355 21371,8289 21594,8107 21627,8024 21629,7921
