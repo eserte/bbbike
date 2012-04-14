@@ -738,7 +738,10 @@ Ofener Str. -> Sansibarstr.: Mittelstreifen	3::igndisp 6256,16601 6208,16546 610
 Ofener Str. -> Müllerstr.: Mittelstreifen	3::igndisp 6256,16601 6208,16546 6311,16457
 B110 nach Swinoujscie: kein Grenzübergang für Autos	2 62279,166179 62213,166173
 Mittelstreifen	3nocross::ignrte 16643,1460 16698,1392 16815,1278
+Am Rudower Fließ -> Neuköllner Str.: Mittelstreifen	3::igndisp 16650,1356 16698,1392 16643,1460
+Am Rudower Fließ -> Am Hanffgraben: Mittelstreifen	3::igndisp 16650,1356 16698,1392 16805,1488
 Neuköllner Str. -> Am Hanffgraben: Mittelstreifen	3::igndisp 16643,1460 16698,1392 16805,1488
+Neuköllner Str. -> Am Rudower Fließ: Mittelstreifen	3::igndisp 16815,1278 16698,1392 16650,1356
 Mittelstreifen	3nocross::ignrte 13151,14855 13110,14879 12812,15053
 Einsteinstr. -> Storkower Str.: Mittelstreifen	3::igndisp 13143,14935 13110,14879 13151,14855
 Storkower Str. -> Einsteinstr.: Mittelstreifen	3::igndisp 12812,15053 13110,14879 13143,14935
@@ -1316,3 +1319,5 @@ Geschwister-Scholl-Str. (Potsdam)	1 -14909,-1818 -14733,-1812
 Feuerbachstr. (Potsdam)	1 -14140,-1390 -13879,-1445
 Jadeweg	1 -3850,13756 -3878,13636 -4011,13656
 Fischerinsel	1 10429,11807 10474,11843 10604,11941
+Landhausweg: Schranke	3 16308,1585 16464,1194 16489,1185
+Landhausweg: Schranke	3 16489,1185 16464,1194 16308,1585

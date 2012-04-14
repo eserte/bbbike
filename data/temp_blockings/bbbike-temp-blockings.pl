@@ -19375,7 +19375,7 @@ EOF
        source_id => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1107/nachricht4413.html',
        data  => <<EOF,
 #: XXX bis Sommer 2012 werden noch weitere Brücken am Rudower Fließ instandgesetzt
-userdel	2::inwork 16135,473 16148,458 16122,403
+userdel	2::inwork 16135,473 16148,458 16130,420 16122,403
 userdel	2::inwork 16148,458 16169,458
 EOF
      },

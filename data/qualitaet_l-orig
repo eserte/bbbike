@@ -1697,7 +1697,7 @@ Pätz (Groß Köriser Str.): Asphalt	Q0 28540,-19744 28615,-19431
 Zeesen - Königs Wusterhausen: holpriger Waldweg, teilweise sehr sandig	Q3 26889,-12953 26825,-12765 26797,-12589 26814,-12271
 Postenweg Schönefeld: guter Beton	Q0 17234,-685 16205,-969 15796,-1112 15801,-1168
 Rudower Str.: Kleinteiliges, unebenes Kopfsteinpflaster	Q2; 16205,-969 16074,-1240 15933,-1592 15289,-2873
-Rudower Str.: Kopfsteinpflaster, aber schmale asphaltierte Bankette	Q0; 15289,-2873 15933,-1592 16074,-1240 16205,-969
+Rudower Str.: Kopfsteinpflaster, aber schmale asphaltierte Bankette	Q0-; 15289,-2873 15933,-1592 16074,-1240 16205,-969
 Rudower Str.: Asphalt	Q0 15289,-2873 14977,-3505 14878,-3602
 #XXX del wegen BBI: Selchow - Kiekebusch: zweispuriger Plattenweg, teilweise mit kleinen tiefen Löchern	Q1 15493,-4693 15539,-4658 15685,-4645 15964,-4817 16261,-4683 17742,-5179 18411,-5428 18764,-5531
 #XXX del wegen BBI: Diepensee - Rotberg: Asphalt	Q0 18618,-4248 18411,-5428 18367,-5665
@@ -2388,6 +2388,7 @@ Waldsieversdorf, R1: Verbundsteinpflaster	Q1+ 56527,16199 56697,16018
 Altlandsberg - Neuenhagen: Asphalt	Q0 31181,13354 31018,13222 30795,13191
 #: note: von der Bahn aus gesehen
 Gewerbestr. - S-Bhf. Birkenstein: Verbundsteinpflaster	Q1 26634,12415 26652,12435 27101,12515
+(Weg am Dörferblick): Asphalt	Q0 15640,-280 15667,-356 15637,-441 15694,-662 15796,-1112
 ######################### User Contributions #################################
 #: by: Aaron Schaar: vvv
 Hermannswerder: guter Asphalt	Q0 -13718,-2991 -14301,-2871 -14577,-3068 -14740,-3262
@@ -3057,7 +3058,7 @@ Rote-Kreuz-Str.: Asphalt	Q0 -8142,-1909 -8173,-2151
 # 
 #: by: Roland Miseler:
 Mittelweg (Amalienfelde): mäßiger fester Sandweg	Q2 -13513,36825 -13357,37176 -13219,37477 -13098,37745
-Rudow - Kleinziethen: unbefestigter Feldweg, nach Regenfällen oftmals sehr matschig	Q2 15655,-245 15636,-269 15118,-970
+Rudow - Kleinziethen: unbefestigter Feldweg, nach Regenfällen oftmals sehr matschig	Q2 15655,-245 15640,-280 15118,-970
 # 
 #: by: anonymous:
 #: add_fragezeichen: Wo genau sind die Kopfsteinpflaster- und Sandwegabschnitte?
