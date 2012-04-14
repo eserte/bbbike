@@ -50,6 +50,7 @@ using_bbbike_test_cgi;
 my $testcgi = "$cgidir/bbbike-test.cgi";
 my $ua = LWP::UserAgent->new;
 $ua->agent("BBBike-Test/1.0");
+$ua->env_proxy;
 
 {
     my $resp = bbbike_cgi_geocode +{start => 'Kottbusser Damm/Maybachstr.',

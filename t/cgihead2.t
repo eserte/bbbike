@@ -100,6 +100,7 @@ plan tests => 1 + 3 * (scalar(map { @$_ } values %url) + @compat_urls);
 
 my $ua = LWP::UserAgent->new;
 $ua->agent('BBBike-Test/1.0');
+$ua->env_proxy;
 
 # seems to be necessary (for my system? for the freebsd server?)
 $ENV{FTP_PASSIVE} = 1;

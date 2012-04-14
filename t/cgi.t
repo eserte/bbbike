@@ -63,6 +63,7 @@ my %skip;
 
 my $ua = new LWP::UserAgent;
 $ua->agent("BBBike-Test/1.0");
+$ua->env_proxy;
 
 if (!GetOptions("cgiurl=s" => sub {
 		    @urls = $_[1];

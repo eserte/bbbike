@@ -108,6 +108,7 @@ for my $static (@static) {
 {
     my $java_ua = LWP::UserAgent->new;
     $java_ua->agent('Java/1.6.0_06 BBBike-Test/1.0');
+    $java_ua->env_proxy;
     $java_ua->requests_redirectable([]);
     { # Redirect on start page
 	my $resp = $java_ua->get("$cgi_dir/bbbike.cgi");
@@ -128,6 +129,7 @@ sub check_url {
     (my $safefile = $prog) =~ s/[^A-Za-z0-9._-]/_/g;
     my $ua = LWP::UserAgent->new;
     $ua->agent('BBBike-Test/1.0');
+    $ua->env_proxy;
     my $resp = $ua->head($url);
     ok($resp->is_success, $url) or diag $resp->content;
 

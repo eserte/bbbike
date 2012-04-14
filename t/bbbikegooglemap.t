@@ -51,6 +51,7 @@ plan tests => 20;
 
 my $ua = LWP::UserAgent->new;
 $ua->agent('BBBike-Test/1.0');
+$ua->env_proxy;
 
 {
     my %query = (wpt  => "-49893,-29160",

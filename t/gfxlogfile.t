@@ -47,6 +47,7 @@ skip("Call this test script with -doit", 1) unless $doit;
 
 my $ua = LWP::UserAgent->new;
 $ua->agent("BBBike-Test/1.0 (gfxlogfile.t)");
+$ua->env_proxy;
 
 my $LOGFILE;
 #open(LOGFILE, $logfile)

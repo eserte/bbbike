@@ -63,10 +63,12 @@ GetOptions("htmldir=s" => \$htmldir,
 my $ua = LWP::UserAgent->new;
 $ua->parse_head(0); # too avoid confusion with Content-Type in http header and meta tags
 $ua->agent('BBBike-Test/1.0');
+$ua->env_proxy;
 
 my $ua316 = LWP::UserAgent->new;
 $ua316->parse_head(0);
 $ua316->agent('bbbike/3.16 (Http/4.01) BBBike-Test/1.0');
+$ua316->env_proxy;
 
 my $datadir = "$htmldir/data";
 

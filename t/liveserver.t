@@ -52,9 +52,11 @@ my $ua_string = 'BBBike-Test/1.0';
 
 my $ua = LWP::UserAgent->new;
 $ua->agent($ua_string);
+$ua->env_proxy;
 
 my $uagzip = LWP::UserAgent->new;
 $uagzip->agent($ua_string);
+$uagzip->env_proxy;
 $uagzip->default_headers->push_header('Accept-Encoding' => 'gzip');
 
 $Http::user_agent .= " (BBBike-Test/1.0)";

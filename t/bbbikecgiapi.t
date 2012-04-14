@@ -29,6 +29,7 @@ plan tests => 12;
 
 my $ua = LWP::UserAgent->new;
 $ua->agent('BBBikeTest/1.0');
+$ua->env_proxy;
 
 my $cgiurl = "$cgidir/bbbike-test.cgi";
 

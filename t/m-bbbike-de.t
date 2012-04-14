@@ -23,6 +23,7 @@ plan tests => 3;
 
 my $ua = LWP::UserAgent->new;
 $ua->agent('BBBike-Test/1.0');
+$ua->env_proxy;
 {
     my $resp = $ua->get('http://m.bbbike.de');
     ok $resp->is_success, 'm.bbbike.de';
