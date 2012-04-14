@@ -19236,6 +19236,7 @@ sub plugin_menu {
 			   (-title => M("Plugin laden"),
 			    -filetypes => [[M"Perl-Module" => '.pm'],
 					   [M"Alle Dateien" => '*']],
+			    -initialdir => "$FindBin::RealBin/plugins",
 			   );
 		       if (defined $file) {
 			   load_plugin($file);
