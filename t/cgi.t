@@ -959,12 +959,11 @@ sub unlike_html ($$$) {
 		}
 	    }
 
-	    skip "No schema validation possible", 1
-		if defined $schema && !$schema;
-
-	    if (!eval { Kwalify::validate($schema, $data) }) {
-		diag $@;
-		$res = 0;
+	    if ($schema) {
+		if (!eval { Kwalify::validate($schema, $data) }) {
+		    diag $@;
+		    $res = 0;
+		}
 	    }
 	}
 	$res;
