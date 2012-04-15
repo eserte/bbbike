@@ -26,6 +26,7 @@ use CGI qw();
 use Data::Dumper ();
 use Getopt::Long;
 use Safe ();
+use Time::HiRes qw(time);
 
 use BBBikeUtil qw(is_in_path);
 use BBBikeTest qw(get_std_opts like_html unlike_html $cgidir
@@ -337,8 +338,10 @@ sub bbbike_cgi_search ($$) {
     $params->{pref_seen} = 1;
     $params->{pref_speed} = 20 if !exists $params->{pref_speed};
     my $url = $testcgi . '?' . CGI->new($params)->query_string;
+    my $t0 = time;
     my $resp = $ua->get($url);
-    ok($resp->is_success, $testname);
+    my $t1 = time;
+    ok($resp->is_success, "$testname (time=" . sprintf("%.4fs",$t1-$t0) . ")");
     $resp;
 }
 
