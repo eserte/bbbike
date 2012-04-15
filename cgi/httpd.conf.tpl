@@ -184,3 +184,11 @@ PerlModule Strassen::Util
 [%
     END
 -%]
+
+<IfDefine BBBIKE_NYTPROF>
+    <Location [% ROOT_URL _ "/cgi" %]>
+	SetEnv NYTPROF "file=/tmp/nytprof.out:addpid=1"
+	SetEnv PERL5OPT "-d:NYTProf"
+    </Location>
+</IfDefine>
+
