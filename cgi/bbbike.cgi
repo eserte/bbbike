@@ -1015,8 +1015,12 @@ foreach my $type (qw(start via ziel)) {
 	$q->delete($type . "charimg.y");
     } elsif (defined $q->param($type . 'c_wgs84') and
 	     $q->param($type . 'c_wgs84') ne '') {
-	my($x,$y) = convert_wgs84_to_data(split /,/, $q->param($type . 'c_wgs84'));
-	$q->param($type . 'c', "$x,$y");
+	my @new_params;
+	for my $old_param ($q->param($type . 'c_wgs84')) {
+	    my($x,$y) = convert_wgs84_to_data(split /,/, $old_param);
+	    push @new_params, "$x,$y";
+	}
+	$q->param($type . 'c', @new_params);
 	$q->delete($type . 'c_wgs84');
     }
 
@@ -3307,13 +3311,13 @@ sub make_netz {
 
 sub search_coord {
     my $startcoord  = $q->param('startc');
-    my $viacoord    = $q->param('viac');
     my $zielcoord   = $q->param('zielc');
+    my($viacoord, @more_viacoords) = $q->param('viac');
     my(@custom)     = $q->param('custom');
     my %custom      = map { ($_ => 1) } @custom;
 
     my $via_array = (defined $viacoord && $viacoord ne ''
-		     ? [$viacoord]
+		     ? [$viacoord, @more_viacoords]
 		     : []);
 
     # Technically more correct it would be to adjust the scope
