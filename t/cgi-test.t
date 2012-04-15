@@ -23,6 +23,7 @@ use FindBin;
 use lib ($FindBin::RealBin, "$FindBin::RealBin/..");
 
 use CGI qw();
+use Data::Dumper ();
 use Getopt::Long;
 use Safe ();
 
@@ -38,7 +39,7 @@ sub bbbike_cgi_geocode ($$);
 check_cgi_testing;
 
 #plan 'no_plan';
-plan tests => 70;
+plan tests => 72;
 
 if (!GetOptions(get_std_opts("cgidir"),
 	       )) {
@@ -309,6 +310,26 @@ SKIP: {
 	    or diag_route($res);
     }
 
+}
+
+{
+    no warnings 'qw';
+    # Rund um den Kreuzberg
+    my @test_points = qw(13.382267,52.484989 13.376560,52.485016 13.376766,52.489392 13.386351,52.490061 13.385901,52.484986 13.382267,52.484989);
+    my $start = shift @test_points;
+    my $goal  = pop @test_points;
+    # Rest of @test_points are Via points
+
+    my $safe = Safe->new;
+    my $resp = bbbike_cgi_search +{startc_wgs84 => $start,
+				   viac_wgs84   => [@test_points],
+				   zielc_wgs84  => $goal,
+				   output_as    => 'perldump',
+				  },'Search route with multiple via points';
+    my $res = $safe->reval($resp->decoded_content);
+    like join("; ", map { $_->{Strname} } @{ $res->{Route} }), qr{Dudenstr.*Katzbachstr.*Kreuzbergstr.*Mehringdamm.*Dudenstr},
+	'Rund um Kreuzberg'
+	    or diag(Data::Dumper->new([$res],[qw()])->Indent(1)->Useqq(1)->Dump);
 }
 
 sub bbbike_cgi_search ($$) {
