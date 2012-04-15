@@ -45,7 +45,7 @@ KREISFAHRT_YEAR?=	2011
 EXTRA_MISCSRC_FILES=	bbd2esri \
 			relevant_errorlog.pl \
 			winter_optimization.pl
-EXTRA_MISC_FILES=	gpx.xsd
+EXTRA_MISC_FILES=	gpx.xsd bbbikecgires.kwalify
 EXTRA_HTML_FILES=	Makefile newstreetform.tpl.html \
 			opensearch/bbbike-opensearch.tpl.src \
 			opensearch/bbbike-opensearch.tpl.xml \
