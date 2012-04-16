@@ -445,16 +445,16 @@ sub parse_and_set_coordinate {
 	# XXX no ParsedLongitude/Latitude support for UTM/UPS yet
 	my($ze,$zn,$x,$y) = @{$f_ref}[$$f_i_ref .. $$f_i_ref+3];
 	$$f_i_ref += 4;
-	my($lat, $long) = Karte::UTM::UTMToDegrees($ze,$zn,$x,$y,$self->DatumFormat);
-	$lat  = ($lat  >= 0 ? "N" : "S") . abs($lat);
-	$long = ($long >= 0 ? "E" : "W") . abs($long);
+	($lat, $long) = Karte::UTM::UTMToDegrees($ze,$zn,$x,$y,$self->DatumFormat);
+	$lat  *= -1 if $lat < 0;
+	$long *= -1 if $long < 0;
     } else {
 	$parsed_lat = $lat  = $f_ref->[$$f_i_ref++];
 	$parsed_long = $long = $f_ref->[$$f_i_ref++];
+	my $converter = $self->CurrentConverter;
+	$lat  = $converter->($lat);
+	$long = $converter->($long);
     }
-    my $converter = $self->CurrentConverter;
-    $lat  = $converter->($lat);
-    $long = $converter->($long);
     $obj->Latitude($lat);
     $obj->Longitude($long);
     $obj->ParsedLatitude($parsed_lat);
