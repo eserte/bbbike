@@ -180,11 +180,10 @@ my $ms = MultiStrassen->new(@s);
 if ($opt{append}) {
     $ms->append($outfile);
 } else {
-    $ms->set_global_directives({ "category_dash.AccManually"  => ["3,8"],
-				 "category_color.AccManually" => ["#8080c0"],
-				 "category_dash.AccLow"       => ["2,4"],
-				 "category_color.AccLow"      => ["#4040a0"],
-			       });
+    $ms->set_global_directive("category_dash.AccManually"  => "3,8");
+    $ms->set_global_directive("category_color.AccManually" => "#8080c0");
+    $ms->set_global_directive("category_dash.AccLow"       => "2,4");
+    $ms->set_global_directive("category_color.AccLow"      => "#4040a0");
     $ms->write($outfile);
 }
 
