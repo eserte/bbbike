@@ -54,7 +54,6 @@ sub kml2bbd {
 
 sub _kmldoc2bbd {
     my($self, $doc, %args) = @_;
-    my $xy2longlat = \&xy2longlat;
     my $root = $doc->documentElement;
     if ($root->can("setNamespaceDeclURI") && !$TEST_SET_NAMESPACE_DECL_URI_HACK) {
 	$root->setNamespaceDeclURI(undef, undef);
