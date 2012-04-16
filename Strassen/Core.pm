@@ -26,7 +26,7 @@ use vars qw(@datadirs $OLD_AGREP $VERBOSE $STRICT $VERSION $can_strassen_storabl
 use enum qw(NAME COORDS CAT);
 use constant LAST => CAT;
 
-$VERSION = '1.95';
+$VERSION = '1.96';
 
 if (defined $ENV{BBBIKE_DATADIR}) {
     require Config;
@@ -1544,6 +1544,11 @@ sub get_global_directive {
     } else {
 	undef;
     }
+}
+
+sub set_global_directive {
+    my($self, $key, @val) = @_;
+    $self->{GlobalDirectives}->{$key} = [@val];
 }
 
 # Note that this sets only the reference; if you want a copy, then
