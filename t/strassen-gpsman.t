@@ -2,7 +2,6 @@
 # -*- perl -*-
 
 #
-# $Id: strassen-gpsman.t,v 1.10 2008/02/02 22:11:16 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -11,6 +10,8 @@ use FindBin;
 use lib ("$FindBin::RealBin/..",
 	 "$FindBin::RealBin/../lib",
 	);
+
+use File::Temp qw(tempfile);
 use Getopt::Long;
 use Strassen::Core;
 
@@ -34,12 +35,18 @@ BEGIN {
     }
 }
 
+sub load_from_string_and_check ($$);
+
 my $tests_with_data = 4; # in my private directory
-my $tests = $tests_with_data + 9;
+my $test_do_all = 1;
+my $tests = $tests_with_data + $test_do_all + 27;
 plan tests => $tests + $have_nowarnings;
 
 my $gpsman_dir = "$FindBin::RealBin/../misc/gps_data";
-if (!GetOptions("gpsmandir=s" => \$gpsman_dir)) {
+my $do_all;
+if (!GetOptions("gpsmandir=s" => \$gpsman_dir,
+		"all" => \$do_all,
+	       )) {
     die <<EOF;
 usage: $0 [-gpsmandir directory]
 EOF
@@ -74,11 +81,30 @@ SKIP: {
 
     #require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([$s1, $s2],[qw()])->Indent(1)->Useqq(1)->Dump; # XXX
 
+ SKIP: {
+	skip("No -all option specified", 1)
+	    if !$do_all;
+	my @errors;
+	my $i = 0;
+	for my $gpsmanfile (@trk, @wpt) {
+	    my $s_new   = Strassen->new($gpsmanfile);
+	    my $s_magic = Strassen->new_by_magic($gpsmanfile);
+	    if (!$s_new) {
+		push @errors, "$gpsmanfile: new failed";
+	    } elsif (!$s_magic) {
+		push @errors, "$gpsmanfile: new_by_magic failed";
+	    } elsif (scalar @{$s_magic->data} != scalar @{$s_new->data}) {
+		push @errors, "$gpsmanfile: inconsistent read";
+	    }
+	}
+	ok !@errors, "No errors checking all"
+	    or diag join("\n", @errors);
+    }
 }
 
-{
-    require Strassen::Gpsman; # because maybe nobody did it before!
+require Strassen::Gpsman; # because maybe nobody did it before!
 
+{
     my $trk_sample = <<'EOF';
 % Written by /home/e/eserte/src/bbbike/bbbike Wed Dec 28 19:10:26 2005
 % Edit at your own risk!
@@ -101,15 +127,11 @@ SKIP: {
 	31-Dec-1989 01:00:00	N53.0933013449282	E12.8904135187235	0
 
 EOF
-    my $s = Strassen::Gpsman->new_from_string($trk_sample);
-    isa_ok($s, "Strassen");
-    isa_ok($s, "Strassen::Gpsman");
+    my $s = load_from_string_and_check $trk_sample, 'trk';
     cmp_ok(scalar(@{$s->data}), "==", 2, "Track sample has two lines");
 }
 
 {
-    require Strassen::Gpsman; # because maybe nobody did it before!
-
     my $wpt_sample = <<'EOF';
 % Written by GPSManager 17-Jan-2002 22:35:45 (CET)
 % Edit at your own risk!
@@ -122,15 +144,11 @@ EOF
 008		N52 30 42.6	E13 24 30.6	alt=33.05078125	GD108:class=|c!	GD108:colour=~|Z	GD108:attrs=`	GD108:depth=QY|c%|_i	GD108:state=|cAA	GD108:country=|cAA
 
 EOF
-    my $s = Strassen::Gpsman->new_from_string($wpt_sample);
-    isa_ok($s, "Strassen");
-    isa_ok($s, "Strassen::Gpsman");
+    my $s = load_from_string_and_check $wpt_sample, 'wpt';
     cmp_ok(scalar(@{$s->data}), "==", 2, "Waypoint sample version one has two objects");
 }
 
 {
-    require Strassen::Gpsman; # because maybe nobody did it before!
-
     my $wpt_sample = <<'EOF';
 % Written by GPSManager 2006-07-31 00:21:07 (CET)
 % Edit at your own risk!
@@ -142,10 +160,38 @@ EOF
 019	30-JUL-06 13:01:35	2006-07-30 23:57:21	N52 31.152	E13 04.405	symbol=crossing	alt=42.7	GD109:dtyp=|c"	GD109:class=|c!	GD109:colour=|c@	GD109:attrs=p	GD109:depth=1I|c3%	GD109:state=|cAA	GD109:country=|cAA	GD109:ete=~|R$|Z
 020	30-JUL-06 13:05:13	2006-07-30 23:57:21	N52 31.591	E13 04.648	symbol=crossing	alt=47.0	GD109:dtyp=|c"	GD109:class=|c!	GD109:colour=|c@	GD109:attrs=p	GD109:depth=1I|c3%	GD109:state=|cAA	GD109:country=|cAA	GD109:ete=~|R$|Z
 EOF
-    my $s = Strassen::Gpsman->new_from_string($wpt_sample);
-    isa_ok($s, "Strassen");
-    isa_ok($s, "Strassen::Gpsman");
+    my $s = load_from_string_and_check $wpt_sample, 'wpt';
     cmp_ok(scalar(@{$s->data}), "==", 2, "Waypoint sample version two has two objects");
+}
+
+# 8 tests
+sub load_from_string_and_check ($$) {
+    my($data, $type) = @_;
+
+    my $s = Strassen::Gpsman->new_from_string($data);
+    isa_ok $s, "Strassen";
+    isa_ok $s, "Strassen::Gpsman";
+
+    my($tmpfh,$tmpfile) = tempfile(SUFFIX => '.'.$type, UNLINK => 1)
+	or die $!;
+    print $tmpfh $data or die $!;
+    close $tmpfh;
+
+    {
+	my $s_file = Strassen->new_by_magic($tmpfile);
+	isa_ok $s_file, "Strassen";
+	isa_ok $s_file, "Strassen::Gpsman";
+	is_deeply $s_file->data, $s->data, "Loading $type with magic check";
+    }
+
+    {
+	my $s_file = Strassen->new($tmpfile);
+	isa_ok $s_file, "Strassen";
+	isa_ok $s_file, "Strassen::Gpsman";
+	is_deeply $s_file->data, $s->data, "Loading $type with magic check in factory method";
+    }
+
+    $s;
 }
 
 __END__

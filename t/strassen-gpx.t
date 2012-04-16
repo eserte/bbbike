@@ -32,11 +32,12 @@ use BBBikeTest qw(gpxlint_string);
 use Route;
 
 sub keep_file ($$);
+sub load_from_file_and_check ($$);
 
 my $v;
 my @variants = ("XML::LibXML", "XML::Twig");
 my $new_strassen_gpx_tests = 5;
-my $tests_per_variant = 70 + $new_strassen_gpx_tests;
+my $tests_per_variant = 88 + $new_strassen_gpx_tests;
 my $do_long_tests = !!$ENV{BBBIKE_LONG_TESTS};
 my $bbdfile;
 my $bbdfile_with_lines = "comments_scenic";
@@ -119,6 +120,8 @@ for my $use_xml_module (@variants) {
 	    $s3->gpx2bbd($ofilename);
 	    is_deeply($s3->data, $s->data, "File loading OK");
 
+	    load_from_file_and_check $ofilename, $s3;
+
 	    # Parsing from string, overriding name and cat
 	    my $s4 = Strassen::GPX->new;
 	    $s4->gpxdata2bbd($gpx_sample, name => "My Name", cat => "MYCAT");
@@ -161,6 +164,8 @@ for my $use_xml_module (@variants) {
 	    my $s3 = Strassen::GPX->new;
 	    $s3->gpx2bbd($ofilename);
 	    is_deeply($s->data, $s3->data, "File loading OK");
+
+	    load_from_file_and_check $ofilename, $s3;
 
 	    # Parsing from string, overriding name and cat
 	    my $s4 = Strassen::GPX->new;
@@ -556,6 +561,37 @@ sub keep_file ($$) {
     } else {
 	warn "Cannot write to $outfile: $!";
     }
+}
+
+# 9 tests
+# Try the different constructor variants
+sub load_from_file_and_check ($$) {
+    my($gpxfile, $check_against) = @_;
+
+    my $s_gpx = do {
+	my $s = Strassen::GPX->new($gpxfile);
+	isa_ok $s, "Strassen";
+	isa_ok $s, "Strassen::GPX";
+	$s;
+    };
+
+    my $s = do {
+	my $s = Strassen->new($gpxfile);
+	isa_ok $s, "Strassen";
+	isa_ok $s, "Strassen::GPX";
+	$s;
+    };
+
+    my $s_magic = do {
+	my $s = Strassen->new_by_magic($gpxfile);
+	isa_ok $s, "Strassen";
+	isa_ok $s, "Strassen::GPX";
+	$s;
+    };
+
+    is_deeply $s->data, $check_against->data, "Loading gpx with factory";
+    is_deeply $s_gpx->data, $check_against->data, "Loading gpx explicitely with Strassen::GPX";
+    is_deeply $s_magic->data, $check_against->data, "Loading gpx with magic check";
 }
 
 __END__
