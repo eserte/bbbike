@@ -118,6 +118,42 @@ sub new {
 	}
     }
 
+    $class->new_bbd($filename, %args);
+}
+
+sub new_by_magic_or_suffix {
+    my($class, $filename, %args) = @_;
+    my $ret = $class->new_by_magic($filename, %args);
+    return $ret if $ret;
+    $class->new($filename, %args);
+}
+
+sub new_by_magic {
+    my($class, $filename, %args) = @_;
+    if (defined $filename) {
+	open my $fh, $filename
+	    or die "Can't open $filename: $!";
+	read($fh, my($buf), 1024);
+	if      ($buf =~ m{<gpx\b}) {
+	    require Strassen::GPX;
+	    return Strassen::GPX->new($filename, %args);
+	} elsif ($buf =~ m{<kml\b}) {
+	    require Strassen::KML;
+	    return Strassen::KML->new($filename, %args);
+	} elsif ($buf =~ m{<ttqv\b}) {
+	    require Strassen::Touratech;
+	    return Strassen::Touratech->new($filename, %args);
+	} elsif ($buf =~ m{^!Format:\s*(DMS|DMM|DDD)}m) {
+	    require Strassen::Gpsman;
+	    return Strassen::Gpsman->new($filename, %args);
+	}
+    }
+    undef;
+}
+
+sub new_bbd {
+    my($class, $filename, %args) = @_;
+
     my(@filenames);
     if (defined $filename) {
 	if (!file_name_is_absolute($filename)) { 
