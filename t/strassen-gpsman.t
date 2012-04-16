@@ -39,7 +39,7 @@ sub load_from_string_and_check ($$);
 
 my $tests_with_data = 4; # in my private directory
 my $test_do_all = 1;
-my $tests = $tests_with_data + $test_do_all + 27;
+my $tests = $tests_with_data + $test_do_all + 36;
 plan tests => $tests + $have_nowarnings;
 
 my $gpsman_dir = "$FindBin::RealBin/../misc/gps_data";
@@ -162,6 +162,31 @@ EOF
 EOF
     my $s = load_from_string_and_check $wpt_sample, 'wpt';
     cmp_ok(scalar(@{$s->data}), "==", 2, "Waypoint sample version two has two objects");
+}
+
+{
+    my $utm_sample = <<'EOF';
+% Written by GPSManager 08-Feb-2002 10:33:19 (CET)
+% Edit at your own risk!
+
+!Format: DMS 1 WGS 84
+!Creation: no
+
+!W:
+392	WILDENBRUCH WEIGANDUFER	N52 29 06.2	E13 26 40.1	alt=22.4763183594
+!Position: UTM/UPS
+A2	ALT STRALAU MARKGRAFENDAMM	33	U	395766	5817425
+!Position: DMS
+A3	ELSEN KIEFHOLZ	N52 29 21.1	E13 27 14.6	alt=11.6732177734
+
+EOF
+    my $s = load_from_string_and_check $utm_sample, 'wpt';
+    is_deeply $s->data, 
+	[
+	 "392 (WILDENBRUCH WEIGANDUFER)\tX 13210,8863\n",
+	 "A2 (ALT STRALAU MARKGRAFENDAMM)\tX 14548,10215\n",
+	 "A3 (ELSEN KIEFHOLZ)\tX 13852,9335\n"
+	], 'wpt data with PositionFormat change and UTM/UPS usage';
 }
 
 # 8 tests
