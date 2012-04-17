@@ -47,7 +47,7 @@ if (!defined $cgi_url) {
     $cgi_url = $cgi_dir . '/bbbikegooglemap.cgi';
 }
 
-plan tests => 20;
+plan tests => 24;
 
 my $ua = LWP::UserAgent->new;
 $ua->agent('BBBike-Test/1.0');
@@ -125,9 +125,10 @@ EOF
     like($resp->decoded_content, qr{Spinnerbr(ü|&#xfc;)cke}i, 'Found Spinnerbrücke');
 }
 
-{
-    my $url = $cgi_url;
-    my $resp = do_post($ua, $url, gpxfile => <<'EOF', '.gpx');
+for my $detect_by ('suffix', 'magic') {
+    {
+	my $url = $cgi_url;
+	my $resp = do_post($ua, $url, gpxfile => <<'EOF', ($detect_by eq 'suffix' ? '.gpx' : '_unknown_suffix'));
 <gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="SRT">
   <trk>
     <trkseg>
@@ -137,13 +138,13 @@ EOF
   </trk>
 </gpx>
 EOF
-    ok($resp->is_success, "Success with post");
-    check_polyline($resp, 2, 'Found exactly two points in POST with gpx track');
-}
+	ok($resp->is_success, "Success with post");
+	check_polyline($resp, 2, 'Found exactly two points in POST with gpx track (detection: ' . $detect_by . ')');
+    }
 
-{
-    my $url = $cgi_url;
-    my $resp = do_post($ua, $url, gpxfile => <<'EOF', '.kml');
+    {
+	my $url = $cgi_url;
+	my $resp = do_post($ua, $url, gpxfile => <<'EOF', ($detect_by eq 'suffix' ? '.kml' : '_unknown_suffix'));
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
   <Document>
@@ -157,8 +158,9 @@ EOF
   </Document>
 </kml>
 EOF
-    ok($resp->is_success, "Success with post");
-    check_polyline($resp, 3, 'Found exactly three points in POST with kml track');
+	ok($resp->is_success, "Success with post");
+	check_polyline($resp, 3, 'Found exactly three points in POST with kml track (detection: ' . $detect_by . ')');
+    }
 }
 
 {
