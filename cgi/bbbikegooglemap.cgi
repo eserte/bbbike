@@ -98,7 +98,7 @@ sub run {
 	    close $fh;
 	    close $tmpfh;
 
-	    my $gpx = eval { Strassen->new($tmpfile, name => "Uploaded GPX file") };
+	    my $gpx = eval { Strassen->new_by_magic_or_suffix($tmpfile, name => "Uploaded GPX file") };
 	    if (!$gpx) {
 		warn $@;
 		(my $short_err_msg = $@) =~ s{ at \S+ line \d+\.}{};
