@@ -49,7 +49,7 @@ isa_ok($s, "Strassen");
 
     my @sample_coords = get_sample_coordinates_1();
 
-    my $s = Strassen::KML->new($file);
+    my $s = Strassen::KML->new($file, map => 'bbbike');
     isa_ok($s, "Strassen", "File <$file> loaded OK");
     my @data = @{ $s->data };
     is($data[0], "Tour\tX @sample_coords\n", "Expected translated coordinates");
@@ -61,7 +61,7 @@ isa_ok($s, "Strassen");
     print $fh2 $kml;
     close $fh2 or die $!;
 
-    my $s2 = Strassen::KML->new($file2);
+    my $s2 = Strassen::KML->new($file2, map => 'bbbike');
     isa_ok($s2, "Strassen", "Roundtrip: KML loaded OK");
 
     $s->init;
@@ -92,7 +92,7 @@ isa_ok($s, "Strassen");
 
     local $Strassen::KML::TEST_SET_NAMESPACE_DECL_URI_HACK = 1;
     $Strassen::KML::TEST_SET_NAMESPACE_DECL_URI_HACK = $Strassen::KML::TEST_SET_NAMESPACE_DECL_URI_HACK if 0; # cease -w
-    my $s = Strassen::KML->new($file);
+    my $s = Strassen::KML->new($file, map => 'bbbike');
     isa_ok($s, "Strassen", "File <$file> loaded OK");
     my @data = @{ $s->data };
     is($data[0], "Tour\tX @sample_coords\n", "Expected translated coordinates with namespace decl hack");
@@ -106,7 +106,7 @@ isa_ok($s, "Strassen");
     close $tmpfh or die $!;
 
     my @sample_data = get_sample_data_polygons();
-    my $s = Strassen::KML->new($tmpfile);
+    my $s = Strassen::KML->new($tmpfile, map => 'bbbike');
     isa_ok($s, "Strassen", "File <$tmpfile> loaded OK");
     my @data = @{ $s->data };
     is_deeply \@data, \@sample_data;
@@ -129,12 +129,12 @@ for my $kml_filename ('doc.kml',
 	die "Can't write to $tmpfile";
     }
 
-    my $s = Strassen::KML->new($tmpfile);
+    my $s = Strassen::KML->new($tmpfile, map => 'bbbike');
     isa_ok($s, "Strassen", "File <$tmpfile> loaded OK");
     my @data = @{ $s->data };
     is($data[0], "Tour\tX @sample_coords\n", "Expected translated coordinates in .kmz file (mail kml file: $kml_filename)");
 
-    my $s0 = Strassen->new($tmpfile);
+    my $s0 = Strassen->new($tmpfile, map => 'bbbike');
     isa_ok($s, "Strassen", ".kmz detection in Strassen::Core seems OK");
     is_deeply($s0->data, $s->data, "No difference between Strassen and Strassen::KML loading");
 }

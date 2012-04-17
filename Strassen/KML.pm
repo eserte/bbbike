@@ -54,6 +54,12 @@ sub kml2bbd {
 
 sub _kmldoc2bbd {
     my($self, $doc, %args) = @_;
+    my $converter;
+    if ($args{'map'} && $args{'map'} eq 'bbbike') {
+	$converter = \&longlat2xy;
+    } else {
+	$self->set_global_directive(map => 'polar');
+    }
     my $root = $doc->documentElement;
     if ($root->can("setNamespaceDeclURI") && !$TEST_SET_NAMESPACE_DECL_URI_HACK) {
 	$root->setNamespaceDeclURI(undef, undef);
@@ -78,8 +84,12 @@ sub _kmldoc2bbd {
 	    #$cat = "F:$cat";
 	}
 	my @c = map {
-	    my($lon,$lat) = split /,/, $_;
-	    join(",", longlat2xy($lon,$lat));
+	    if ($converter) {
+		my($lon,$lat) = split /,/, $_;
+		join(",", $converter->($lon,$lat));
+	    } else {
+		$_;
+	    }
 	} grep { !/^\s+$/ } split ' ', $coords;
 	if (@c) {
 	    $self->push([$name, [@c], $cat]);
