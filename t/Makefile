@@ -1,4 +1,5 @@
 PERL?=		perl
+# TEST_FILES must be a single argument
 TEST_FILES=	*.t
 
 test:
@@ -14,7 +15,7 @@ test-no-cgi:
 	    'runtests(@ARGV)' $(TEST_FILES)
 
 prove-no-cgi:
-	LANG=C BBBIKE_TEST_NO_CGI_TESTS=1 $(PERL) -S prove -w -I.. -I../lib $(TEST_FILES)
+	(cd .. && LANG=C BBBIKE_TEST_NO_CGI_TESTS=1 $(PERL) -S prove -w -I -Ilib t/$(TEST_FILES))
 
 # This is basically test-no-cgi, but works with dmake
 # (dmake+windows cannot ?=, env shell syntax, single quotes, * expansion)
