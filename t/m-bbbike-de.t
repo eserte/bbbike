@@ -6,8 +6,11 @@
 #
 
 use strict;
-
-use LWP::UserAgent;
+use FindBin;
+use lib (
+	 "$FindBin::RealBin/..",
+	 $FindBin::RealBin,
+	);
 
 BEGIN {
     if (!eval q{
@@ -18,6 +21,11 @@ BEGIN {
 	exit;
     }
 }
+
+use LWP::UserAgent;
+
+use BBBikeTest qw(check_cgi_testing);
+check_cgi_testing;
 
 plan tests => 3;
 

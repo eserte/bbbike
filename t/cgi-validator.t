@@ -9,12 +9,18 @@
 
 use strict;
 use FindBin;
-use lib "$FindBin::RealBin/..";
+use lib (
+	 "$FindBin::RealBin/..",
+	 $FindBin::RealBin,
+	);
 
 use Data::Dumper;
 use Getopt::Long;
 
+use BBBikeTest qw(check_cgi_testing);
 use BBBikeUtil qw(is_in_path);
+
+check_cgi_testing;
 
 BEGIN {
     if (($ENV{USER}||'') ne 'eserte' || do { require Sys::Hostname; Sys::Hostname::hostname() !~ m{biokovo}}) {
@@ -38,7 +44,7 @@ BEGIN {
     }
 }
 
-BEGIN { plan tests => 3 }
+plan tests => 3;
 
 {
     use POSIX qw(strftime);
