@@ -3,6 +3,7 @@
 #: note: XXX_* categorization done 2008-01-26
 #: note: "Parkweg" sollte hier vielleicht nicht verwendet werden, sondern nur in qualitaet_s-orig? Oder wenigstens die gleichen Wege nicht in beiden Dateien so benannt werden? Oder wenigstens beim Ausgeben der Routenliste doppelte ausfiltern?
 #:
+Voﬂstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg	q3::inwork 8743,11663 8837,11676
 Sembritzkystr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 7203,5488 7186,5453 7157,5418 7095,5317 7018,5201
 Axel-Springer-Str.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 10136,11529 10166,11592 10201,11631
 Axel-Springer-Str.: Bauarbeiten, Gehwege kˆnnen schon benutzt werden	q3::inwork 10201,11631 10213,11728
@@ -24,6 +25,7 @@ Burgstraﬂe: Bauarbeiten, Einbahnstraﬂenregelung	q4::inwork; 10166,12777 10132,12
 Anna-Louisa-Karsch-Str.: vor der Friedrichsbr¸cke auf den linken Gehweg fahren	q3::inwork; 10264,12826 10166,12777
 Am Zirkus: Baustelle, Einbahnstraﬂe	q3::inwork; 9170,13031 9239,12923
 Am Kupfergraben: Baustelle, Einbahnstraﬂe	q3::inwork; 9867,12651 9919,12613
+Bunsenstr.: Baustelle, Fahrbahn gesperrt	q4::inwork 8907,12472 8892,12576
 Wuhlewanderweg: steiler Anstieg, Fuﬂg‰nger	q4; 21998,12204 21970,12153
 Wuhlewanderweg: steiles Gef‰lle, Fuﬂg‰nger	q4; 21970,12153 21998,12204
 (An der Wuhle, ˆstliches Ufer): Fuﬂg‰nger	q1 21323,8481 21333,8355 21371,8289 21594,8107 21627,8024 21629,7921
@@ -440,7 +442,7 @@ Am Flutgraben: Fuﬂg‰nger	q1 13371,9974 13333,9929
 (Uferweg zum Ernst-Heilmann-Steg): sanfte Rampe, Fuﬂg‰nger	q2 13241,9995 13270,10030
 (Ernst-Heilmann-Steg): Fuﬂg‰nger, zwei Bodenschwellen	q3 13270,10030 13306,10006 13371,9974
 Buschrosenplatz: enge Straﬂe	q1 13002,5548 13054,5556 13075,5470
-Friedrichsbr¸cke: Fuﬂg‰nger	q1 10086,12725 10166,12777
+Friedrichsbr¸cke: Engstellen wegen Bauarbeiten	q2 10086,12725 10166,12777
 (Hornbach-Parkplatz): Parkplatzbetrieb	q1 11871,5195 11867,5226 11705,5221 11654,5245 11598,5316 11579,5311
 Nollendorfplatz: Gehweg oder Parkplatz Richtung Motzstr. benutzen	q3; 7033,10328 6971,10346
 (Bl¸cherplatz - Waterloo-Ufer): Fuﬂg‰nger, Bordsteine	q2 9631,10142 9687,10180

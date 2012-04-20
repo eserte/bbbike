@@ -1105,7 +1105,7 @@ userdel	q4::inwork 9028,12307 9016,12416 9008,12485
          'text' => 'Dorotheenstr. (Mitte): Baustelle, Fahrtrichtung gesperrt (bis Ende 04/12) Richtung Friedrichstr. zwischen Wilhelmstr. und Schadowstr., 06.06.2011 07:00 Uhr bis 30.04.2012 17:00 Uhr ',
          'from' => 1307250000,
          'id' => 2224,
-         'data' => '#: last_checked: 2012-03-16
+         'data' => '#: last_checked: 2012-04-20
 userdel	q4::inwork; 8775,12457 8907,12472 9008,12485
 ',
          'type' => 'handicap'

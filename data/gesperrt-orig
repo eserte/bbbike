@@ -1282,8 +1282,8 @@ Heerstr.: schlecht passierbar	3nocross -4063,11805 -4009,11789 -3707,11693
 Thielallee: nicht passierbarer Mittelstreifens	3nocross 2560,5044 2587,4965 2615,4885
 Mollstr.: Straﬂenbahntrasse	3nocross 11446,13294 11406,13321 11306,13386 11275,13407
 Otto-Braun-Str.: Straﬂenbahntrasse	3nocross 11706,13635 11640,13551 11561,13451 11539,13425 11486,13350 11446,13294
-Otto-Braun-Str.: Straﬂenbahntrasse	3nocross 11446,13294 11368,13170 11314,13087
-Otto-Braun-Str.: Mittelstreifen	3nocross 11368,13170 11314,13087 11267,13012 11228,12951
+Otto-Braun-Str.: Straﬂenbahntrasse	3nocross 11446,13294 11368,13170 11320,13095
+Otto-Braun-Str.: Mittelstreifen	3nocross 11368,13170 11320,13095 11267,13012 11228,12951
 #: by: ^^^
 Karl-Marx-Allee: Mittelstreifen	3nocross 11228,12951 11295,12915 11589,12768 11635,12745
 #: note: wobei die Bordsteine auf der Hasenheide-Seite abgeflacht sind, aber auf der Freibad-Seite ist es weiterhin unbequem
@@ -1906,6 +1906,10 @@ Tor	BNP:5 26888,13976
 #: section tempor‰re Sperrungen (Baustellen etc.) vvvvvvvvvvvvvvvvvvvvvvvvvv
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+# 
+#: last_checked: 2012-04-20
+#: next_check: 2012-06-01
+Theanolte-B‰hnisch-Str.: Bauarbeiten, noch gesperrt	2:inwork 11320,13095 11235,13143
 # 
 #: last_checked: 2012-03-27
 #: next_check: 2012-05-15

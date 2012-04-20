@@ -1603,12 +1603,10 @@ Mendelssohnstr. -> Otto-Braun-Str.: Straßenbahntrasse	3::igndisp 11490,13463 115
 Otto-Braun-Str. -> Mendelssohnstr.: Straßenbahntrasse	3::igndisp 11486,13350 11539,13425 11490,13463
 Otto-Braun-Str. -> Mendelssohnstr. [Wohngebiet]: Straßenbahntrasse	3::igndisp 11446,13294 11486,13350 11433,13389
 Mendelssohnstr. [Wohngebiet] -> Otto-Braun-Str.: Straßenbahntrasse	3::igndisp 11433,13389 11486,13350 11539,13425
-Straßenbahntrasse	3nocross::ignrte 11446,13294 11368,13170 11314,13087
+Straßenbahntrasse	3nocross::ignrte 11446,13294 11368,13170 11320,13095
+Otto-Braun-Str. -> Wadzeckstr.: Straßenbahntrasse	3::igndisp 11320,13095 11368,13170 11326,13196
 Wadzeckstr. -> Otto-Braun-Str.: Straßenbahntrasse	3::igndisp 11326,13196 11368,13170 11446,13294
-Otto-Braun-Str. -> Wadzeckstr.: Straßenbahntrasse	3::igndisp 11314,13087 11368,13170 11326,13196
-Mittelstreifen	3nocross::ignrte 11368,13170 11314,13087 11267,13012 11228,12951
-Otto-Braun-Str. -> Str.nbahntrasse: Mittelstreifen	3::igndisp 11267,13012 11314,13087 11230,13134
-Str.nbahntrasse -> Otto-Braun-Str.: Mittelstreifen	3::igndisp 11230,13134 11314,13087 11368,13170
+Mittelstreifen	3nocross::ignrte 11368,13170 11320,13095 11267,13012 11228,12951
 Mittelstreifen	3nocross::ignrte 11228,12951 11295,12915 11589,12768 11635,12745
 Karl-Marx-Allee -> Berolinastr.: Mittelstreifen	3::igndisp 11228,12951 11295,12915 11362,12964
 Berolinastr. -> Karl-Marx-Allee: Mittelstreifen	3::igndisp 11362,12964 11295,12915 11589,12768
@@ -2176,6 +2174,7 @@ Schranke (lichte Breite ca. 120cm)	BNP:2:-50:trailer=8 14448,4501
 Schranke (lichte Breite ca. 120cm)	BNP:2:-53:trailer=8 14709,4307
 Schranke (lichte Breite ca. 100cm)	BNP:3:-45:trailer=10 15179,3901
 Tor	BNP:5:-57 26888,13976
+Theanolte-Bähnisch-Str.: Bauarbeiten, noch gesperrt	2:inwork 11320,13095 11235,13143
 Scharrenstr.: wegen Bauarbeiten komplett gesperrt	2:inwork 10418,12016 10480,12077
 Paul-und-Paula-Ufer: wegen Bodensanierungsarbeiten komplett gesperrt	2:inwork 14884,10508 14906,10587
 Radweg Herzberge: wegen Bauarbeiten gesperrt (ab 2012-02-20)	2:inwork 17167,13655 17110,13811 17095,13972 17154,14093 17266,14144 18015,13846

@@ -3582,7 +3582,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_002419',
        data  => <<EOF,
-userdel	q4; 8553,11638 8837,11676
+userdel	q4; 8553,11638 8743,11663 8837,11676
 EOF
      },
      { from  => 1137279600, # 2006-01-15 00:00
@@ -8447,7 +8447,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005661',
        data  => <<EOF,
-userdel	1::inwork 9000,11727 8837,11676 8553,11638
+userdel	1::inwork 9000,11727 8837,11676 8743,11663 8553,11638
 EOF
      },
      { from  => 1195515804, #  undef
@@ -19149,7 +19149,7 @@ EOF
        type  => 'handicap',
        source_id => 'INKO_093371',
        data  => <<EOF,
-#: last_checked: 2012-03-16
+#: last_checked: 2012-04-20
 userdel	q4::inwork; 8775,12457 8907,12472 9008,12485
 EOF
      },
