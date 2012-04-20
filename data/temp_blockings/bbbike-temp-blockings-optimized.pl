@@ -1383,6 +1383,37 @@ Am Schloss Schönhausen	2::night 10249,19148 10350,19182
 userdel	q4::inwork 11436,14741 11271,14755
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_018622',
+         'until' => 1336168800,
+         'text' => 'Buckower Damm (Neukölln): Baustelle, Straße vollständig gesperrt (bis auf Weiteres) in beiden Richtungen zwischen Johannisthaler Chaussee und An den Achterhöfen, 30.03.2012 bis 04.05.2012 15:00 Uhr ',
+         'from' => 1334953030,
+         'id' => 2323,
+         'data' => 'userdel	q4::inwork 12817,2031 12911,1815
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_018665',
+         'until' => 1335189600,
+         'text' => 'Str. des 17.Juni (Mitte): Straße vollständig gesperrt, Veranstaltung (bis 23.04.12) In beiden Richtungen zwischen Yitzhak-Rabin-Str. und Platz des 18.März. Ebenso gesperrt: Ebertstraße.',
+         'from' => 1334764800,
+         'id' => 2324,
+         'data' => 'userdel	2::temp 8610,12254 8538,12245 8214,12205 8089,12190 8055,12186
+userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_018679',
+         'until' => 1336482000,
+         'text' => 'Köthener Str. (Marzahn): Bauarbeiten Straße vollständig gesperrt zwischen Dessauer Str. und Wuhletalstr., 20.04.2012 07:41 Uhr bis 08.05.2012 15:00 Uhr ',
+         'from' => 1334814060,
+         'id' => 2325,
+         'data' => 'userdel	q4::inwork 20485,17784 20542,17911 20576,17994
+',
+         'type' => 'handicap'
        }
      
 );
