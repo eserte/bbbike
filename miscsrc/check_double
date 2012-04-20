@@ -2,15 +2,14 @@
 # -*- perl -*-
 
 #
-# $Id: check_double,v 1.5 2002/11/06 15:28:22 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998,2009 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998,2009,2012 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: eserte@cs.tu-berlin.de
-# WWW:  http://user.cs.tu-berlin.de/~eserte/
+# Mail: slaven@rezic.de
+# WWW:  http://bbbike.sourceforge.net
 #
 
 use strict;
@@ -79,28 +78,31 @@ while(1) {
 	    }
 	    my $bothdirs = $cat !~ m{;};
 	    for my $i (1 .. $#$c) {
-		$h{$c->[$i-1].' '.$c->[$i]}++;
+		push @{ $h{$c->[$i-1].' '.$c->[$i]} }, $r->[Strassen::NAME];
 		if ($bothdirs) {
-		    $h{$c->[$i].' '.$c->[$i-1]}++;
+		    push @{ $h{$c->[$i].' '.$c->[$i-1]} }, $r->[Strassen::NAME];
 		}
 	    }
 	}
     } elsif ($do_points) {
 	for my $point (@$c) {
-	    $h{$point}++;
+	    push @{ $h{$point} }, $r->[Strassen::NAME];
 	}
     }
 }
 
-my @double;
+my @doubles;
 while(my($k,$v) = each %h) {
-    if ($v > 1) {
-	push @double, $k;
+    if (@$v > 1) {
+	push @doubles, $k;
     }
 }
 
-if (@double) {
-    print join("\n", map { "$_\t$h{$_}" } sort @double), "\n";
+if (@doubles) {
+    print STDERR "*** ERROR: Found duplicates in @files\n";
+    for my $double_key (@doubles) {
+	print STDERR "* ", join("; ", @{ $h{$double_key} }), "\tX $double_key\n";
+    }
     exit 1;
 }
 
