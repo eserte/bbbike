@@ -20079,7 +20079,7 @@ EOF
      },
      { from  => 1334764800, # 2012-04-18 18:00
        until => 1335189600, # 2012-04-23 16:00
-       text  => 'Str. des 17.Juni (Mitte): Straße vollständig gesperrt, Veranstaltung (bis 23.04.12) In beiden Richtungen zwischen Yitzhak-Rabin-Str. und Platz des 18.März. Ebenso gesperrt: Ebertstraße.',
+       text  => 'Str. des 17.Juni zwischen Yitzhak-Rabin-Str. und Platz des 18.März sowie Ebertstr. gesperrt (Internationales Kinderfest, bis 23.04.12)',
        type  => 'gesperrt',
        source_id => 'IM_018665',
        data  => <<EOF,

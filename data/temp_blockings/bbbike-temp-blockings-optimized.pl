@@ -1397,7 +1397,7 @@ userdel	q4::inwork 11436,14741 11271,14755
        {
          'source_id' => 'IM_018665',
          'until' => 1335189600,
-         'text' => 'Str. des 17.Juni (Mitte): Straße vollständig gesperrt, Veranstaltung (bis 23.04.12) In beiden Richtungen zwischen Yitzhak-Rabin-Str. und Platz des 18.März. Ebenso gesperrt: Ebertstraße.',
+         'text' => 'Str. des 17.Juni zwischen Yitzhak-Rabin-Str. und Platz des 18.März sowie Ebertstr. gesperrt (Internationales Kinderfest, bis 23.04.12)',
          'from' => 1334764800,
          'id' => 2324,
          'data' => 'userdel	2::temp 8610,12254 8538,12245 8214,12205 8089,12190 8055,12186
