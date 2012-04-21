@@ -33,8 +33,12 @@ sub D ($) { }
 #sub D ($) { warn $_[0] }
 
 my $filter_year;
-GetOptions("filter-year=i" => \$filter_year)
-    or die "usage: $0 [-filter-year ....]";
+my $with_summary;
+GetOptions(
+	   "filter-year=i" => \$filter_year,
+	   "with-summary" => \$with_summary,
+	  )
+    or die "usage: $0 [-filter-year ....] [-with-summary]";
 
 my $filter_start;
 my $filter_end;
@@ -200,6 +204,9 @@ my @sorted_ampel_data_with_cycles_keys = do {
     
 for my $key (@sorted_ampel_data_with_cycles_keys) {
     my $header_printed;
+    my @cycles;
+    my @reds;
+    my @greens;
     for my $ae_or_cd (@{ $ampel_data_with_cycles{$key} }) {
 	if ($ae_or_cd->can('as_string')) {
 	    if (!$header_printed) {
@@ -226,11 +233,19 @@ for my $key (@sorted_ampel_data_with_cycles_keys) {
 		    $green_percent = int($green/$cycle*100);
 		}
 	    }
+	    if ($with_summary) {
+		push @cycles, $cycle if defined $cycle;
+		push @reds,   $red   if defined $red;
+		push @greens, $green if defined $green;
+	    }
 	    printf "  cycle:%-2s | red:%-2s %-5s | green:%-2s %-5s\n",
 		$cycle,
 		    $red, (defined $red_percent ? "($red_percent%)" : ""),
 			$green, (defined $green_percent ? "($green_percent%)" : "");
 	}
+    }
+    if ($with_summary && (@cycles || @reds || @greens)) {
+	print "  SUMMARY: cycles: @cycles | reds: @reds | greens: @greens\n";
     }
     print "-"x70, "\n";
 }
