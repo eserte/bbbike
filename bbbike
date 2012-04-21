@@ -1293,7 +1293,7 @@ if ($devel_host && $set_toplevel_icon) {
 
 if ($splash_screen) {
     $splash_screen->Raise; # raise after the first ->update on $top, otherwise on Windows the splash screen will stay obscured by the main window
-    $splash_screen->Update(0.0);
+    $splash_screen->Update(0.0, 'raise splash');
 }
 
 # Exceed-Bug
@@ -1476,7 +1476,7 @@ $ctrl_frame = $frame->Frame->pack(-anchor => 'w', -fill => 'x');
 
 ##### Topframe #######################################################
 
-$splash_screen->Update(0.1) if $splash_screen;
+$splash_screen->Update(0.1, 'create top') if $splash_screen;
 
 $menuarrow_photo = load_photo($top, 'menupfeil');
 
@@ -1928,7 +1928,7 @@ if ($flat_relief) {
     }
 }
 
-$splash_screen->Update(0.2) if $splash_screen;
+$splash_screen->Update(0.2, 'create iconframe') if $splash_screen;
 
 do_iconframe() if $do_iconframe;
 if ($standard_menubar) {
@@ -4417,7 +4417,7 @@ if (!$MM_DRAG_IS_OBSOLETE) {
 
 } # do_iconframe
 
-$splash_screen->Update(0.3) if $splash_screen;
+$splash_screen->Update(0.3, 'load photos') if $splash_screen;
 
 ##### sonstige Bilder #####
 ## DEBUG_BEGIN
@@ -4579,7 +4579,7 @@ $sx->grid(-row => 1, -column => 0, -sticky => 'ew');
 use constant UPDATE_FRAC_BEFORE_PLOTTING => 0.4;
 use constant UPDATE_FRAC_AFTER_PLOTTING => 0.7;
 
-$splash_screen->Update(UPDATE_FRAC_BEFORE_PLOTTING) if $splash_screen;
+$splash_screen->Update(UPDATE_FRAC_BEFORE_PLOTTING, 'start plotting') if $splash_screen;
 
 ##### initiales Zeichnen ######################################
 ## DEBUG_BEGIN
@@ -4627,7 +4627,7 @@ foreach (keys %init_str_draw) {
     if ($@ && !$no_original_datadir) {
 	die $@;
     }
-    $splash_screen->Update((($_update_i++)/$_update_steps)*(UPDATE_FRAC_AFTER_PLOTTING - UPDATE_FRAC_BEFORE_PLOTTING)+UPDATE_FRAC_BEFORE_PLOTTING)
+    $splash_screen->Update((($_update_i++)/$_update_steps)*(UPDATE_FRAC_AFTER_PLOTTING - UPDATE_FRAC_BEFORE_PLOTTING)+UPDATE_FRAC_BEFORE_PLOTTING, "plot str $_")
 	if $splash_screen;
 }
 foreach (keys %init_p_draw) {
@@ -4642,7 +4642,7 @@ foreach (keys %init_p_draw) {
     if ($@ && !$no_original_datadir) {
 	die $@;
     }
-    $splash_screen->Update((($_update_i++)/$_update_steps)*(UPDATE_FRAC_AFTER_PLOTTING - UPDATE_FRAC_BEFORE_PLOTTING)+UPDATE_FRAC_BEFORE_PLOTTING)
+    $splash_screen->Update((($_update_i++)/$_update_steps)*(UPDATE_FRAC_AFTER_PLOTTING - UPDATE_FRAC_BEFORE_PLOTTING)+UPDATE_FRAC_BEFORE_PLOTTING, "plot p $_")
 	if $splash_screen;
 }
 # Höhen einlesen
@@ -4665,11 +4665,11 @@ if (!$search_route_flag && !(defined $set_mode && $set_mode eq 'edit')) {
 ## DEBUG_END
 $progress->FinishGroup;
 
-$splash_screen->Update(UPDATE_FRAC_AFTER_PLOTTING) if $splash_screen;
+$splash_screen->Update(UPDATE_FRAC_AFTER_PLOTTING, 'finished plotting') if $splash_screen;
 
 set_bindings();
 
-$splash_screen->Update(0.8) if $splash_screen;
+$splash_screen->Update(0.8, 'after plotting') if $splash_screen;
 
 $last_loaded_obj =
     {
@@ -4694,7 +4694,7 @@ scrollregion_best();
 # XXX should be after deiconify, otherwise center does not work (?)
 center_best();
 
-$splash_screen->Update(0.9) if $splash_screen;
+$splash_screen->Update(0.9, 'finalization') if $splash_screen;
 
 set_mouse_desc();
 
@@ -4757,7 +4757,11 @@ if (defined $initial_layers && $initial_layers ne "") {
     }
 }
 
-$splash_screen->Destroy if $splash_screen; undef $splash_screen;
+if ($splash_screen) {
+    $splash_screen->Update(1, 'destroying splash');
+    $splash_screen->Destroy;
+    undef $splash_screen;
+}
 
 choose_streets()                            if $init_choose_street;
 

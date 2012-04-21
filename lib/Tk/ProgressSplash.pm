@@ -1,10 +1,9 @@
 # -*- perl -*-
 
 #
-# $Id: ProgressSplash.pm,v 1.10 2007/10/14 19:14:05 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2001 Slaven Rezic. All rights reserved.
+# Copyright (C) 2001,2012 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -14,11 +13,13 @@
 
 package Tk::ProgressSplash;
 #use strict;use vars qw($TK_VERSION $VERSION $firstupdatetime $lastcallindex);
-$VERSION = 0.04;
+$VERSION = 0.05;
 $TK_VERSION = 800 if !defined $TK_VERSION;
 
 sub Show {
     my($pkg, @args) = @_;
+
+    Tk::ProgressSplash::_ProgressLog($pkg, 0.0, 'create splash');
 
     my @splash_arguments;
     my $splashtype = 'normal';
@@ -68,17 +69,22 @@ sub Tk::Splash::Update     { Tk::ProgressSplash::Update(@_) }
 sub Tk::FastSplash::Update { Tk::ProgressSplash::Update(@_) }
 
 sub Update {
-    my($w, $frac) = @_;
+    my($w, $frac, $debuginfo) = @_;
     Tk::configure($w->{ProgressFrame}, -width => $w->{ImageWidth}*$frac);
     Tk::update($w);
+    Tk::ProgressSplash::_ProgressLog($w, $frac, $debuginfo);
+}
+
+sub _ProgressLog {
     if ($ENV{TK_SPLASH_COMPUTE}) {
+	my(undef, $frac, $debuginfo) = @_; # first arg is $w or $pkg
 	if (!defined $lastcallindex) {
 	    $lastcallindex = 0;
-	    $firstupdatetime = Tk::timeofday();
+	    $firstupdatetime = defined &Tk::timeofday ? Tk::timeofday() : time;
 	} else {
 	    $lastcallindex++;
-	    my $time = Tk::timeofday() - $firstupdatetime;
-	    print "    $time,\t# Update $lastcallindex\n";
+	    my $time = (defined &Tk::timeofday ? Tk::timeofday() : time) - $firstupdatetime;
+	    print "    $time,\t# Update $lastcallindex frac=$frac # $debuginfo\n";
 	}
     }
 }
@@ -142,6 +148,18 @@ visible. The argument is a floating number between 0 and 1.
 Destroy the splash widget.
 
 =back
+
+=head2 PROGRESS SPEED COMPUTATION
+
+To adjust the Update() value to the real progress speed one can set
+the environment variable C<TK_SPLASH_COMPUTE> to gather some
+information:
+
+    env TK_SPLASH_COMPUTE=1 bbbike -public | tee /tmp/bbbike.log
+
+The resulting file can be processed like this:
+
+    perl -nle '/^\s*([\d\.]+).*frac=([\d\.]+)/ and push @x, [$1,$2]; END { for (@x) { my($time,$frac) = @$_; printf "%.4f -> %.4f\n", $frac, ($time/$x[-1]->[0]) } }' /tmp/bbbike.log
 
 =head1 BUGS
 
