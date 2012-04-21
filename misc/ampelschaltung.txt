@@ -1890,20 +1890,20 @@ Mo, 26.03.2012
 # Punkt       Kreuzung                           Dir    Zyk grün      rot
 # ----------------------------------------------------------------------------
 Di, 27.03.2012
-12822,12067   Rüdersdorfer Str./Straße der Pari  W->O                 09:21:20
-12822,12067   Rüdersdorfer Str./Straße der Pari  W->O       09:22:30
-12295,12197   Andreasstr./Singerstr.             W->O                 09:23:50
-12295,12197   Andreasstr./Singerstr.             W->O       09:24:33
-11768,12006   An der Michaelbrücke/Lichtenberge  NW->SO     09:26:22
-11768,12006   An der Michaelbrücke/Lichtenberge  NW->SO               09:26:40
-11768,12006   An der Michaelbrücke/Lichtenberge  NW->SO     09:27:56
-11574,11594   Köpenicker Str./Michaelkirchstr.   NW->SO     09:29:03
-11574,11594   Köpenicker Str./Michaelkirchstr.   NW->SO               09:29:19
-11242,11720   Köpenicker Str./Brückenstr./Heinr  NW->SO     09:29:53
-11242,11720   Köpenicker Str./Brückenstr./Heinr  NW->SO               09:30:06
-11242,11720   Köpenicker Str./Brückenstr./Heinr  NW->SO     09:30:53
-11351,12221   Holzmarktstr./Alexanderstr./Stral  NW->SO               19:11:25
-11351,12221   Holzmarktstr./Alexanderstr./Stral  NW->SO     19:12:33
+12822,12067   Rüdersdorfer Str./Straße der Pari  O->W                 09:21:20
+12822,12067   Rüdersdorfer Str./Straße der Pari  O->W       09:22:30
+12295,12197   Andreasstr./Singerstr.             O->W                 09:23:50
+12295,12197   Andreasstr./Singerstr.             O->W       09:24:33
+11768,12006   An der Michaelbrücke/Lichtenberge  NO->SW     09:26:22
+11768,12006   An der Michaelbrücke/Lichtenberge  NO->SW               09:26:40
+11768,12006   An der Michaelbrücke/Lichtenberge  NO->SW     09:27:56
+11574,11594   Köpenicker Str./Michaelkirchstr.   NO->SW     09:29:03
+11574,11594   Köpenicker Str./Michaelkirchstr.   NO->SW               09:29:19
+11242,11720   Köpenicker Str./Brückenstr./Heinr  SO->NW     09:29:53
+11242,11720   Köpenicker Str./Brückenstr./Heinr  SO->NW               09:30:06
+11242,11720   Köpenicker Str./Brückenstr./Heinr  SO->NW     09:30:53
+11351,12221   Holzmarktstr./Alexanderstr./Stral  S->N                 19:11:25
+11351,12221   Holzmarktstr./Alexanderstr./Stral  S->N       19:12:33
 12295,12197   Andreasstr./Singerstr.             W->O       19:15:34
 12295,12197   Andreasstr./Singerstr.             W->O                 19:15:51
 12295,12197   Andreasstr./Singerstr.             W->O       19:16:33
@@ -1918,21 +1918,21 @@ Di, 27.03.2012
 # Punkt       Kreuzung                           Dir    Zyk grün      rot
 # ----------------------------------------------------------------------------
 Mi, 28.03.2012
-13651,11731   Warschauer Str./Kopernikusstr.     W->O                 10:03:28
-13651,11731   Warschauer Str./Kopernikusstr.     W->O       10:04:06
-12822,12067   Rüdersdorfer Str./Straße der Pari  W->O       10:07:23
-12295,12197   Andreasstr./Singerstr.             W->O                 10:08:51
-12295,12197   Andreasstr./Singerstr.             W->O       10:09:34
+13651,11731   Warschauer Str./Kopernikusstr.     O->W                 10:03:28
+13651,11731   Warschauer Str./Kopernikusstr.     O->W       10:04:06
+12822,12067   Rüdersdorfer Str./Straße der Pari  O->W       10:07:23
+12295,12197   Andreasstr./Singerstr.             O->W                 10:08:51
+12295,12197   Andreasstr./Singerstr.             O->W       10:09:34
 
 #WPTFILE: /home/e/eserte/src/bbbike/misc/gps_data/ampelschaltung/20120329.wpt
 # Punkt       Kreuzung                           Dir    Zyk grün      rot
 # ----------------------------------------------------------------------------
 Do, 29.03.2012
-12822,12067   Rüdersdorfer Str./Straße der Pari  W->O       08:26:53
-12295,12197   Andreasstr./Singerstr.             W->O                 08:28:20
-12295,12197   Andreasstr./Singerstr.             W->O       08:29:11
-11768,12006   An der Michaelbrücke/Lichtenberge  NW->SO               12:54:17
-11768,12006   An der Michaelbrücke/Lichtenberge  NW->SO     12:55:08
+12822,12067   Rüdersdorfer Str./Straße der Pari  O->W       08:26:53
+12295,12197   Andreasstr./Singerstr.             O->W                 08:28:20
+12295,12197   Andreasstr./Singerstr.             O->W       08:29:11
+11768,12006   An der Michaelbrücke/Lichtenberge  W->O                 12:54:17
+11768,12006   An der Michaelbrücke/Lichtenberge  W->O       12:55:08
 12184,11652   Holzmarktstr./Stralauer Platz/And  NW->SO     12:56:18
 12497,11459   (Straße der Pariser Kommune - Spr  NW->SO     12:56:51
 12497,11459   (Straße der Pariser Kommune - Spr  NW->SO               12:57:24
@@ -1944,31 +1944,31 @@ Do, 29.03.2012
 13596,10722   Stralauer Allee/Ehrenbergstr.      NW->SO               13:02:18
 13596,10722   Stralauer Allee/Ehrenbergstr.      NW->SO     13:02:59
 13919,10583   Stralauer Allee/Modersohnstr.      NW->SO     13:04:07
-14011,10812   Modersohnstr./Corinthstr./Am Rudo  NW->SO               13:04:57
-14011,10812   Modersohnstr./Corinthstr./Am Rudo  NW->SO     13:05:43
-14134,11272   Revaler Str./Modersohnstr.         NW->SO               13:06:45
-14134,11272   Revaler Str./Modersohnstr.         W->O       13:07:18
+14011,10812   Modersohnstr./Corinthstr./Am Rudo  S->N                 13:04:57
+14011,10812   Modersohnstr./Corinthstr./Am Rudo  S->N       13:05:43
+14134,11272   Revaler Str./Modersohnstr.         S->N                 13:06:45
+14134,11272   Revaler Str./Modersohnstr.         S->N       13:07:18
 
 #WPTFILE: /home/e/eserte/src/bbbike/misc/gps_data/ampelschaltung/20120410.wpt
 # Punkt       Kreuzung                           Dir    Zyk grün      rot
 # ----------------------------------------------------------------------------
 Di, 10.04.2012
-13651,11731   Warschauer Str./Kopernikusstr.     W->O                 09:17:59
-13651,11731   Warschauer Str./Kopernikusstr.     W->O       09:18:44
-12822,12067   Rüdersdorfer Str./Straße der Pari  W->O                 09:21:14
-12822,12067   Rüdersdorfer Str./Straße der Pari  W->O       09:22:23
-12295,12197   Andreasstr./Singerstr.             W->O                 09:23:51
-12295,12197   Andreasstr./Singerstr.             W->O       09:24:34
+13651,11731   Warschauer Str./Kopernikusstr.     O->W                 09:17:59
+13651,11731   Warschauer Str./Kopernikusstr.     O->W       09:18:44
+12822,12067   Rüdersdorfer Str./Straße der Pari  O->W                 09:21:14
+12822,12067   Rüdersdorfer Str./Straße der Pari  O->W       09:22:23
+12295,12197   Andreasstr./Singerstr.             O->W                 09:23:51
+12295,12197   Andreasstr./Singerstr.             O->W       09:24:34
 
 #WPTFILE: /home/e/eserte/src/bbbike/misc/gps_data/ampelschaltung/20120411.wpt
 # Punkt       Kreuzung                           Dir    Zyk grün      rot
 # ----------------------------------------------------------------------------
 Mi, 11.04.2012
-12822,12067   Rüdersdorfer Str./Straße der Pari  W->O                 09:25:43
-12822,12067   Rüdersdorfer Str./Straße der Pari  W->O       09:26:53
-12295,12197   Andreasstr./Singerstr.             W->O       09:28:34
-10350,13376   Rosenthaler Str./Weinmeisterstr./  W->O       18:59:06
-10177,13766   Rosenthaler Str./Torstr./Weinberg  W->O                 18:59:57
+12822,12067   Rüdersdorfer Str./Straße der Pari  O->W                 09:25:43
+12822,12067   Rüdersdorfer Str./Straße der Pari  O->W       09:26:53
+12295,12197   Andreasstr./Singerstr.             O->W       09:28:34
+10350,13376   Rosenthaler Str./Weinmeisterstr./  S->N       18:59:06
+10177,13766   Rosenthaler Str./Torstr./Weinberg  S->N                 18:59:57
 10463,13747   Torstr./Gormannstr.                W->O                 23:42:59
 10463,13747   Torstr./Gormannstr.                W->O       23:43:31
 10746,13673   Alte Schönhauser Str./Rosa-Luxemb  W->O       23:44:28
@@ -1983,89 +1983,89 @@ Mi, 11.04.2012
 # Punkt       Kreuzung                           Dir    Zyk grün      rot
 # ----------------------------------------------------------------------------
 Do, 12.04.2012
-13596,10722   Stralauer Allee/Ehrenbergstr.      NW->SO     08:35:41
-13332,10832   Am Oberbaum/Stralauer Allee/Warsc  NW->SO               08:36:37
-12731,10547   Skalitzer Str./Lübbener Str./Wran  NW->SO     08:41:51
-12731,10547   Skalitzer Str./Lübbener Str./Wran  NW->SO               08:42:35
-12731,10547   Skalitzer Str./Lübbener Str./Wran  NW->SO     08:43:22
-11949,10414   Skalitzer Str./Oranienstr./Manteu  NW->SO     08:48:22
-11671,10402   Skalitzer Str./Mariannenstr.       NW->SO               08:49:16
-11671,10402   Skalitzer Str./Mariannenstr.       NW->SO     08:49:53
-8642,7876     Werner-Voß-Damm/Boelckestr.        NW->SO               09:33:37
-8642,7876     Werner-Voß-Damm/Boelckestr.        NW->SO     09:34:17
-8919,8508     Manfred-von-Richthofen-Str./Bayer  NW->SO               09:36:14
-8919,8508     Manfred-von-Richthofen-Str./Bayer  NW->SO     09:36:47
-9229,8718     Tempelhofer Damm/Manfred-von-Rich  NW->SO     09:38:43
-9229,8785     Dudenstr./Mehringdamm/Platz der L  NW->SO     09:39:10
-9248,9350     Mehringdamm/Kreuzbergstr./Bergman  NW->SO     09:41:14
-9334,9670     Mehringdamm/Yorckstr./Gneisenaust  NW->SO     09:42:27
+13596,10722   Stralauer Allee/Ehrenbergstr.      O->W       08:35:41
+13332,10832   Am Oberbaum/Stralauer Allee/Warsc  O->W                 08:36:37
+12731,10547   Skalitzer Str./Lübbener Str./Wran  O->W       08:41:51
+12731,10547   Skalitzer Str./Lübbener Str./Wran  O->W                 08:42:35
+12731,10547   Skalitzer Str./Lübbener Str./Wran  O->W       08:43:22
+11949,10414   Skalitzer Str./Oranienstr./Manteu  O->W       08:48:22
+11671,10402   Skalitzer Str./Mariannenstr.       O->W                 08:49:16
+11671,10402   Skalitzer Str./Mariannenstr.       O->W       08:49:53
+8642,7876     Werner-Voß-Damm/Boelckestr.        SW->NO               09:33:37
+8642,7876     Werner-Voß-Damm/Boelckestr.        SW->NO     09:34:17
+8919,8508     Manfred-von-Richthofen-Str./Bayer  SW->NO               09:36:14
+8919,8508     Manfred-von-Richthofen-Str./Bayer  SW->NO     09:36:47
+9229,8718     Tempelhofer Damm/Manfred-von-Rich  W->O       09:38:43
+9229,8785     Dudenstr./Mehringdamm/Platz der L  S->N       09:39:10
+9248,9350     Mehringdamm/Kreuzbergstr./Bergman  S->N       09:41:14
+9334,9670     Mehringdamm/Yorckstr./Gneisenaust  S->N       09:42:27
 
 #WPTFILE: /home/e/eserte/src/bbbike/misc/gps_data/ampelschaltung/20120413.wpt
 # Punkt       Kreuzung                           Dir    Zyk grün      rot
 # ----------------------------------------------------------------------------
 Fr, 13.04.2012
-13651,11731   Warschauer Str./Kopernikusstr.     W->O                 08:52:21
-13651,11731   Warschauer Str./Kopernikusstr.     W->O       08:53:46
-12822,12067   Rüdersdorfer Str./Straße der Pari  W->O       08:56:54
-12295,12197   Andreasstr./Singerstr.             W->O                 08:58:19
-10244,11160   Oranienstr./Alte Jakobstr.         NW->SO     17:27:23
-9873,10285    Zossener Str./(Zossener Brücke -   NW->SO     17:30:13
-9334,9670     Mehringdamm/Yorckstr./Gneisenaust  NW->SO     17:34:28
-9248,9350     Mehringdamm/Kreuzbergstr./Bergman  NW->SO               17:34:51
-8982,8781     Dudenstr./Methfesselstr./Mussehls  NW->SO     17:37:56
-8982,8781     Dudenstr./Methfesselstr./Mussehls  NW->SO               17:38:08
-8616,8605     Boelckestr./Bayernring             NW->SO               17:39:31
-8616,8605     Boelckestr./Bayernring             NW->SO     17:40:25
-8625,8174     Loewenhardtdamm/Boelckestr.        NW->SO     17:41:20
-8642,7876     Werner-Voß-Damm/Boelckestr.        NW->SO               17:42:01
-12731,10547   Skalitzer Str./Lübbener Str./Wran  NW->SO     19:05:59
-13028,10629   Oberbaumstr./Schlesische Str./Opp  NW->SO     19:07:22
-13596,10722   Stralauer Allee/Ehrenbergstr.      NW->SO     19:10:45
+13651,11731   Warschauer Str./Kopernikusstr.     O->W                 08:52:21
+13651,11731   Warschauer Str./Kopernikusstr.     O->W       08:53:46
+12822,12067   Rüdersdorfer Str./Straße der Pari  O->W       08:56:54
+12295,12197   Andreasstr./Singerstr.             O->W                 08:58:19
+10244,11160   Oranienstr./Alte Jakobstr.         NO->SW     17:27:23
+9873,10285    Zossener Str./(Zossener Brücke -   N->S       17:30:13
+9334,9670     Mehringdamm/Yorckstr./Gneisenaust  N->S       17:34:28
+9248,9350     Mehringdamm/Kreuzbergstr./Bergman  N->S                 17:34:51
+8982,8781     Dudenstr./Methfesselstr./Mussehls  N->S       17:37:56
+8982,8781     Dudenstr./Methfesselstr./Mussehls  N->S                 17:38:08
+8616,8605     Boelckestr./Bayernring             O->W                 17:39:31
+8616,8605     Boelckestr./Bayernring             O->W       17:40:25
+8625,8174     Loewenhardtdamm/Boelckestr.        N->S       17:41:20
+8642,7876     Werner-Voß-Damm/Boelckestr.        N->S                 17:42:01
+12731,10547   Skalitzer Str./Lübbener Str./Wran  W->O       19:05:59
+13028,10629   Oberbaumstr./Schlesische Str./Opp  W->O       19:07:22
+13596,10722   Stralauer Allee/Ehrenbergstr.      W->O       19:10:45
 
 #WPTFILE: /home/e/eserte/src/bbbike/misc/gps_data/ampelschaltung/20120414.wpt
 # Punkt       Kreuzung                           Dir    Zyk grün      rot
 # ----------------------------------------------------------------------------
 Sa, 14.04.2012
-14289,9870    Elsenstr./An den Treptowers/Marti  NW->SO     14:32:39
-14193,9746    Elsenstr./Puschkinallee            NW->SO               14:33:23
-14193,9746    Elsenstr./Puschkinallee            NW->SO     14:34:06
-13849,9310    Kiefholzstr./Elsenstr.             NW->SO               14:35:37
-13849,9310    Kiefholzstr./Elsenstr.             NW->SO     14:36:21
-13474,8060    Sonnenallee/Treptower Str./Hertzb  NW->SO     14:40:59
-13474,8060    Sonnenallee/Treptower Str./Hertzb  NW->SO               14:41:15
-13474,8060    Sonnenallee/Treptower Str./Hertzb  NW->SO     14:42:14
-13058,7165    Karl-Marx-Str./Saalestr./Emser St  NW->SO               14:46:58
-13058,7165    Karl-Marx-Str./Saalestr./Emser St  NW->SO     14:47:51
-15312,2010    Wutzkyallee/Friedrich-Kayßler-Weg  NW->SO               15:26:05
-15312,2010    Wutzkyallee/Friedrich-Kayßler-Weg  NW->SO     15:26:46
-15058,6784    Sonnenallee/Jupiterstr./Hänselstr  NW->SO     17:29:00
-14617,7243    Sonnenallee/Grenzallee/Dammweg     NW->SO               17:30:26
-14617,7243    Sonnenallee/Grenzallee/Dammweg     NW->SO     17:31:20
-13973,9465    Elsenstr./Beermannstr.             NW->SO               17:43:34
-14089,9610    Elsenstr./Am Treptower Park        NW->SO               17:43:44
-14089,9610    Elsenstr./Am Treptower Park        NW->SO     17:44:41
-14193,9746    Elsenstr./Puschkinallee            NW->SO     17:44:49
-14193,9746    Elsenstr./Puschkinallee            NW->SO               17:45:11
+14289,9870    Elsenstr./An den Treptowers/Marti  NO->SW     14:32:39
+14193,9746    Elsenstr./Puschkinallee            NO->SW               14:33:23
+14193,9746    Elsenstr./Puschkinallee            NO->SW     14:34:06
+13849,9310    Kiefholzstr./Elsenstr.             NO->SW               14:35:37
+13849,9310    Kiefholzstr./Elsenstr.             NO->SW     14:36:21
+13474,8060    Sonnenallee/Treptower Str./Hertzb  N->S       14:40:59
+13474,8060    Sonnenallee/Treptower Str./Hertzb  N->S                 14:41:15
+13474,8060    Sonnenallee/Treptower Str./Hertzb  N->S       14:42:14
+13058,7165    Karl-Marx-Str./Saalestr./Emser St  O->W                 14:46:58
+13058,7165    Karl-Marx-Str./Saalestr./Emser St  O->W       14:47:51
+15312,2010    Wutzkyallee/Friedrich-Kayßler-Weg  W->O                 15:26:05
+15312,2010    Wutzkyallee/Friedrich-Kayßler-Weg  W->O       15:26:46
+15058,6784    Sonnenallee/Jupiterstr./Hänselstr  SO->NW     17:29:00
+14617,7243    Sonnenallee/Grenzallee/Dammweg     SO->NW               17:30:26
+14617,7243    Sonnenallee/Grenzallee/Dammweg     SO->NW     17:31:20
+13973,9465    Elsenstr./Beermannstr.             SW->NO               17:43:34
+14089,9610    Elsenstr./Am Treptower Park        SW->NO               17:43:44
+14089,9610    Elsenstr./Am Treptower Park        SW->NO     17:44:41
+14193,9746    Elsenstr./Puschkinallee            SW->NO     17:44:49
+14193,9746    Elsenstr./Puschkinallee            SW->NO               17:45:11
 ## XXX Ampel an der Kurve Puschkinallee->Elsenstr
 ## XXX Ampel an der Kurve Puschkinallee->Elsenstr
-14558,10264   Stralauer Allee/Elsenbrücke/Markg  NW->SO     17:47:34
-14170,10675   Persiusstr./Rochowstr./Corinthstr  NW->SO               17:50:41
-14011,10812   Modersohnstr./Corinthstr./Am Rudo  NW->SO     17:51:36
-14024,10861                                      NW->SO     17:51:48
-14134,11272   Revaler Str./Modersohnstr.         NW->SO               17:52:45
-14134,11272   Revaler Str./Modersohnstr.         W->O       17:53:18
-14211,11552   Wühlischstr./Gärtnerstr.           W->O       17:53:47
+14558,10264   Stralauer Allee/Elsenbrücke/Markg  SW->NO     17:47:34
+14170,10675   Persiusstr./Rochowstr./Corinthstr  NO->S                17:50:41
+14011,10812   Modersohnstr./Corinthstr./Am Rudo  O->W       17:51:36
+14024,10861                                      S->N       17:51:48
+14134,11272   Revaler Str./Modersohnstr.         S->N                 17:52:45
+14134,11272   Revaler Str./Modersohnstr.         S->N       17:53:18
+14211,11552   Wühlischstr./Gärtnerstr.           S->N       17:53:47
 
 #WPTFILE: /home/e/eserte/src/bbbike/misc/gps_data/ampelschaltung/20120416.wpt
 # Punkt       Kreuzung                           Dir    Zyk grün      rot
 # ----------------------------------------------------------------------------
 Mo, 16.04.2012
-12822,12067   Rüdersdorfer Str./Straße der Pari  W->O       09:02:53
-12295,12197   Andreasstr./Singerstr.             W->O       09:04:34
-12295,12197   Andreasstr./Singerstr.             W->O                 09:04:52
-12295,12197   Andreasstr./Singerstr.             W->O       09:05:34
-11768,12006   An der Michaelbrücke/Lichtenberge  NW->SO               19:00:58
-11768,12006   An der Michaelbrücke/Lichtenberge  NW->SO     19:01:56
+12822,12067   Rüdersdorfer Str./Straße der Pari  O->W       09:02:53
+12295,12197   Andreasstr./Singerstr.             O->W       09:04:34
+12295,12197   Andreasstr./Singerstr.             O->W                 09:04:52
+12295,12197   Andreasstr./Singerstr.             O->W       09:05:34
+11768,12006   An der Michaelbrücke/Lichtenberge  NO->SW               19:00:58
+11768,12006   An der Michaelbrücke/Lichtenberge  NO->SW     19:01:56
 12184,11652   Holzmarktstr./Stralauer Platz/And  NW->SO               19:02:43
 12184,11652   Holzmarktstr./Stralauer Platz/And  NW->SO     19:03:28
 12497,11459   (Straße der Pariser Kommune - Spr  NW->SO               19:03:49
@@ -2075,24 +2075,24 @@ Mo, 16.04.2012
 13596,10722   Stralauer Allee/Ehrenbergstr.      NW->SO               19:08:29
 13919,10583   Stralauer Allee/Modersohnstr.      NW->SO               19:09:02
 13919,10583   Stralauer Allee/Modersohnstr.      NW->SO     19:09:32
-14011,10812   Modersohnstr./Corinthstr./Am Rudo  NW->SO     19:10:43
-14011,10812   Modersohnstr./Corinthstr./Am Rudo  NW->SO               19:11:07
-14011,10812   Modersohnstr./Corinthstr./Am Rudo  NW->SO     19:11:53
-14134,11272   Revaler Str./Modersohnstr.         W->O       19:13:18
+14011,10812   Modersohnstr./Corinthstr./Am Rudo  S->N       19:10:43
+14011,10812   Modersohnstr./Corinthstr./Am Rudo  S->N                 19:11:07
+14011,10812   Modersohnstr./Corinthstr./Am Rudo  S->N       19:11:53
+14134,11272   Revaler Str./Modersohnstr.         S->N       19:13:18
 
 #WPTFILE: /home/e/eserte/src/bbbike/misc/gps_data/ampelschaltung/20120417.wpt
 # Punkt       Kreuzung                           Dir    Zyk grün      rot
 # ----------------------------------------------------------------------------
 Di, 17.04.2012
-13651,11731   Warschauer Str./Kopernikusstr.     W->O       08:38:12
-13651,11731   Warschauer Str./Kopernikusstr.     W->O                 08:38:24
-12822,12067   Rüdersdorfer Str./Straße der Pari  W->O       08:40:23
-12822,12067   Rüdersdorfer Str./Straße der Pari  W->O                 08:40:44
-12822,12067   Rüdersdorfer Str./Straße der Pari  W->O       08:41:53
-12295,12197   Andreasstr./Singerstr.             W->O       08:43:51
-11768,12006   An der Michaelbrücke/Lichtenberge  W->O       08:45:41
-11768,12006   An der Michaelbrücke/Lichtenberge  NW->SO               08:45:59
-11351,12221   Holzmarktstr./Alexanderstr./Stral  NW->SO     08:47:17
+13651,11731   Warschauer Str./Kopernikusstr.     O->W       08:38:12
+13651,11731   Warschauer Str./Kopernikusstr.     O->W                 08:38:24
+12822,12067   Rüdersdorfer Str./Straße der Pari  O->W       08:40:23
+12822,12067   Rüdersdorfer Str./Straße der Pari  O->W                 08:40:44
+12822,12067   Rüdersdorfer Str./Straße der Pari  O->W       08:41:53
+12295,12197   Andreasstr./Singerstr.             O->W       08:43:51
+11768,12006   An der Michaelbrücke/Lichtenberge  NO->SW     08:45:41
+11768,12006   An der Michaelbrücke/Lichtenberge  NO->SW               08:45:59
+11351,12221   Holzmarktstr./Alexanderstr./Stral  O->W       08:47:17
 12295,12197   Andreasstr./Singerstr.             W->O       18:38:52
 12822,12067   Rüdersdorfer Str./Straße der Pari  W->O       18:40:23
 
@@ -2100,38 +2100,38 @@ Di, 17.04.2012
 # Punkt       Kreuzung                           Dir    Zyk grün      rot
 # ----------------------------------------------------------------------------
 Mi, 18.04.2012
-12822,12067   Rüdersdorfer Str./Straße der Pari  W->O       08:53:53
-12822,12067   Rüdersdorfer Str./Straße der Pari  W->O                 08:54:14
-12822,12067   Rüdersdorfer Str./Straße der Pari  W->O       08:55:23
-12295,12197   Andreasstr./Singerstr.             W->O       08:57:32
-11768,12006   An der Michaelbrücke/Lichtenberge  NW->SO     09:00:41
-11574,11594   Köpenicker Str./Michaelkirchstr.   NW->SO               09:01:22
-11574,11594   Köpenicker Str./Michaelkirchstr.   NW->SO     09:02:27
-11242,11720   Köpenicker Str./Brückenstr./Heinr  NW->SO               09:03:06
-11242,11720   Köpenicker Str./Brückenstr./Heinr  NW->SO     09:03:53
+12822,12067   Rüdersdorfer Str./Straße der Pari  O->W       08:53:53
+12822,12067   Rüdersdorfer Str./Straße der Pari  O->W                 08:54:14
+12822,12067   Rüdersdorfer Str./Straße der Pari  O->W       08:55:23
+12295,12197   Andreasstr./Singerstr.             O->W       08:57:32
+11768,12006   An der Michaelbrücke/Lichtenberge  NO->SW     09:00:41
+11574,11594   Köpenicker Str./Michaelkirchstr.   NO->SW               09:01:22
+11574,11594   Köpenicker Str./Michaelkirchstr.   NO->SW     09:02:27
+11242,11720   Köpenicker Str./Brückenstr./Heinr  O->W                 09:03:06
+11242,11720   Köpenicker Str./Brückenstr./Heinr  O->W       09:03:53
 11768,12006   An der Michaelbrücke/Lichtenberge  NW->SO     19:45:40
 12184,11652   Holzmarktstr./Stralauer Platz/And  NW->SO     19:47:40
 12184,11652   Holzmarktstr./Stralauer Platz/And  NW->SO     19:48:55
-12645,11673   Straße der Pariser Kommune/Erich-  NW->SO     19:50:43
-12822,12067   Rüdersdorfer Str./Straße der Pari  W->O       19:51:28
+12645,11673   Straße der Pariser Kommune/Erich-  S->N       19:50:43
+12822,12067   Rüdersdorfer Str./Straße der Pari  S->N       19:51:28
 
 #WPTFILE: /home/e/eserte/src/bbbike/misc/gps_data/ampelschaltung/20120419.wpt
 # Punkt       Kreuzung                           Dir    Zyk grün      rot
 # ----------------------------------------------------------------------------
 Do, 19.04.2012
-13588,11490   Warschauer Str./Revaler Str.       W->O       09:07:01
-13588,11490   Warschauer Str./Revaler Str.       W->O                 09:07:19
-13588,11490   Warschauer Str./Revaler Str.       W->O       09:08:31
-13541,11355   Warschauer Str./Helsingforser Str  NW->SO     09:08:54
-13332,10832   Am Oberbaum/Stralauer Allee/Warsc  NW->SO               09:10:27
-13332,10832   Am Oberbaum/Stralauer Allee/Warsc  NW->SO     09:11:13
-12985,10665   Skalitzer Str./Oberbaumstr./Schle  NW->SO               09:12:20
-12055,11331   Köpenicker Str./Bethaniendamm      NW->SO     09:15:55
-11574,11594   Köpenicker Str./Michaelkirchstr.   NW->SO               09:16:53
-11574,11594   Köpenicker Str./Michaelkirchstr.   NW->SO     09:17:29
-11242,11720   Köpenicker Str./Brückenstr./Heinr  NW->SO     09:17:53
-11242,11720   Köpenicker Str./Brückenstr./Heinr  NW->SO               09:18:06
-11242,11720   Köpenicker Str./Brückenstr./Heinr  NW->SO     09:18:53
+13588,11490   Warschauer Str./Revaler Str.       O->W       09:07:01
+13588,11490   Warschauer Str./Revaler Str.       O->W                 09:07:19
+13588,11490   Warschauer Str./Revaler Str.       O->W       09:08:31
+13541,11355   Warschauer Str./Helsingforser Str  NO->SW     09:08:54
+13332,10832   Am Oberbaum/Stralauer Allee/Warsc  NO->SW               09:10:27
+13332,10832   Am Oberbaum/Stralauer Allee/Warsc  NO->SW     09:11:13
+12985,10665   Skalitzer Str./Oberbaumstr./Schle  O->W                 09:12:20
+12055,11331   Köpenicker Str./Bethaniendamm      SO->NW     09:15:55
+11574,11594   Köpenicker Str./Michaelkirchstr.   SO->NW               09:16:53
+11574,11594   Köpenicker Str./Michaelkirchstr.   SO->NW     09:17:29
+11242,11720   Köpenicker Str./Brückenstr./Heinr  SO->NW     09:17:53
+11242,11720   Köpenicker Str./Brückenstr./Heinr  SO->NW               09:18:06
+11242,11720   Köpenicker Str./Brückenstr./Heinr  SO->NW     09:18:53
 12295,12197   Andreasstr./Singerstr.             W->O       18:02:03
 12295,12197   Andreasstr./Singerstr.             W->O                 18:02:21
 12295,12197   Andreasstr./Singerstr.             W->O       18:03:13
@@ -2146,29 +2146,29 @@ Do, 19.04.2012
 # Punkt       Kreuzung                           Dir    Zyk grün      rot
 # ----------------------------------------------------------------------------
 Fr, 20.04.2012
-13596,10722   Stralauer Allee/Ehrenbergstr.      NW->SO     07:53:41
-13332,10832   Am Oberbaum/Stralauer Allee/Warsc  NW->SO     07:55:32
-12497,11459   (Straße der Pariser Kommune - Spr  NW->SO     07:57:49
-12497,11459   (Straße der Pariser Kommune - Spr  NW->SO               07:58:16
-12497,11459   (Straße der Pariser Kommune - Spr  NW->SO     07:59:00
-12184,11652   Holzmarktstr./Stralauer Platz/And  NW->SO     07:59:39
-11768,12006   An der Michaelbrücke/Lichtenberge  NW->SO     08:01:38
-11351,12221   Holzmarktstr./Alexanderstr./Stral  NW->SO     08:02:17
-11351,12221   Holzmarktstr./Alexanderstr./Stral  NW->SO               08:02:41
-11351,12221   Holzmarktstr./Alexanderstr./Stral  NW->SO     08:03:43
-10738,12364   Mühlendamm/Stralauer Str./Gruners  NW->SO     08:06:00
-9981,11689    Leipziger Str./Jerusalemer Str.    NW->SO     18:30:22
-9701,11656    Leipziger Str./Markgrafenstr.      NW->SO               18:30:42
-9701,11656    Leipziger Str./Markgrafenstr.      NW->SO     18:31:29
-9268,11590    Leipziger Str./Mauerstr.           NW->SO               18:32:31
-9268,11590    Leipziger Str./Mauerstr.           NW->SO     18:33:12
-8542,11502    Stresemannstr./Leipziger Platz/Eb  NW->SO     18:35:35
-8972,11810                                       NW->SO     18:38:06
-8901,12008    Wilhelmstr./Französische Str./Han  NW->SO     18:38:18
-8901,12008    Wilhelmstr./Französische Str./Han  NW->SO               18:38:39
-8861,12125    Wilhelmstr./Behrenstr.             NW->SO     18:39:20
-8804,12280    Wilhelmstr./Unter den Linden/Pari  NW->SO     18:40:07
-10309,12854   Spandauer Str./Anna-Louisa-Karsch  NW->SO     18:48:45
+13596,10722   Stralauer Allee/Ehrenbergstr.      O->W       07:53:41
+13332,10832   Am Oberbaum/Stralauer Allee/Warsc  O->W       07:55:32
+12497,11459   (Straße der Pariser Kommune - Spr  SO->NW     07:57:49
+12497,11459   (Straße der Pariser Kommune - Spr  SO->NW               07:58:16
+12497,11459   (Straße der Pariser Kommune - Spr  SO->NW     07:59:00
+12184,11652   Holzmarktstr./Stralauer Platz/And  SO->NW     07:59:39
+11768,12006   An der Michaelbrücke/Lichtenberge  SO->NW     08:01:38
+11351,12221   Holzmarktstr./Alexanderstr./Stral  O->W       08:02:17
+11351,12221   Holzmarktstr./Alexanderstr./Stral  O->W                 08:02:41
+11351,12221   Holzmarktstr./Alexanderstr./Stral  O->W       08:03:43
+10738,12364   Mühlendamm/Stralauer Str./Gruners  SO->NW     08:06:00
+9981,11689    Leipziger Str./Jerusalemer Str.    O->W       18:30:22
+9701,11656    Leipziger Str./Markgrafenstr.      O->W                 18:30:42
+9701,11656    Leipziger Str./Markgrafenstr.      O->W       18:31:29
+9268,11590    Leipziger Str./Mauerstr.           O->W                 18:32:31
+9268,11590    Leipziger Str./Mauerstr.           O->W       18:33:12
+8542,11502    Stresemannstr./Leipziger Platz/Eb  O->W       18:35:35
+8972,11810                                       S->N       18:38:06
+8901,12008    Wilhelmstr./Französische Str./Han  S->N       18:38:18
+8901,12008    Wilhelmstr./Französische Str./Han  S->N                 18:38:39
+8861,12125    Wilhelmstr./Behrenstr.             S->N       18:39:20
+8804,12280    Wilhelmstr./Unter den Linden/Pari  S->N       18:40:07
+10309,12854   Spandauer Str./Anna-Louisa-Karsch  W->O       18:48:45
 11027,13075                                      W->O       18:53:33
 11139,13008   Alexanderstr./Alexanderplatz/Bern  W->O       18:54:01
 11228,12951   Karl-Marx-Allee/Alexanderstr./Ott  W->O       18:57:56
@@ -2177,10 +2177,10 @@ Fr, 20.04.2012
 12028,12519   Strausberger Platz/Lichtenberger   W->O       19:01:36
 12360,12505   Karl-Marx-Allee/Andreasstr./Lebus  W->O                 19:02:39
 12360,12505   Karl-Marx-Allee/Andreasstr./Lebus  W->O       19:03:30
-13217,11936   Wedekindstr./Marchlewskistr.       W->O                 19:06:39
-13217,11936   Wedekindstr./Marchlewskistr.       W->O       19:07:23
-13217,11936   Wedekindstr./Marchlewskistr.       W->O                 19:07:38
-13217,11936   Wedekindstr./Marchlewskistr.       W->O       19:08:36
+13217,11936   Wedekindstr./Marchlewskistr.       NW->SO               19:06:39
+13217,11936   Wedekindstr./Marchlewskistr.       NW->SO     19:07:23
+13217,11936   Wedekindstr./Marchlewskistr.       NW->SO               19:07:38
+13217,11936   Wedekindstr./Marchlewskistr.       NW->SO     19:08:36
 13696,11920   Warschauer Str./Grünberger Str.    W->O       19:09:55
 
 # Anmerkungen:
