@@ -21,7 +21,9 @@ use lib ("$FindBin::RealBin/..",
 	 "$FindBin::RealBin/../lib"
 	);
 
+use Getopt::Long;
 use Storable qw(dclone);
+use Time::Local qw(timelocal);
 
 use Ampelschaltung;
 
@@ -29,6 +31,17 @@ use constant MAX_CYCLE_TIME => 121;
 
 sub D ($) { }
 #sub D ($) { warn $_[0] }
+
+my $filter_year;
+GetOptions("filter-year=i" => \$filter_year)
+    or die "usage: $0 [-filter-year ....]";
+
+my $filter_start;
+my $filter_end;
+if ($filter_year) {
+    $filter_start = timelocal(0,0,0,1,0,$filter_year);
+    $filter_end   = timelocal(59,59,23,31,11,$filter_year);
+}
 
 my $as = Ampelschaltung2->new;
 $as->open("$FindBin::RealBin/../misc/ampelschaltung.txt") or die;
@@ -38,6 +51,26 @@ for (@aes) {
     # XXX for easier dumping later
     delete $_->{Root};
 }
+
+@aes = grep {
+    my $use = 1;
+    if (defined $filter_start) {
+	if (!$_->{TimeEpoch} && !$_->{RedTimeEpoch} && !$_->{GreenTimeEpoch}) {
+	    $use = 0;
+	} elsif (
+		 ($_->{TimeEpoch}      && $_->{TimeEpoch}      < $filter_start)
+		 || ($_->{RedTimeEpoch}   && $_->{RedTimeEpoch}   < $filter_start)
+		 || ($_->{GreenTimeEpoch} && $_->{GreenTimeEpoch} < $filter_start)
+	    
+		 || ($_->{TimeEpoch}      && $_->{TimeEpoch}      > $filter_end)
+		 || ($_->{RedTimeEpoch}   && $_->{RedTimeEpoch}   > $filter_end)
+		 || ($_->{GreenTimeEpoch} && $_->{GreenTimeEpoch} > $filter_end)
+		) {
+	    $use = 0;
+	}
+    }
+    $use;
+} @aes;
 
 my %ampel_data;
 for my $ae (@aes) {
