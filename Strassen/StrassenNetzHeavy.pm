@@ -1,9 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: StrassenNetzHeavy.pm,v 1.26 2008/07/24 21:55:38 eserte Exp $
-#
-# Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
+# Copyright (c) 1995-2003,2012 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
 # terms of the GNU General Public License, see the file COPYING.
 #
@@ -938,6 +936,65 @@ sub compact_route {
 	}
     }
     @res;
+}
+
+sub neighbor_by_direction {
+    my($self, $p, $angle_or_direction, %args) = @_;
+    die "Unknown options: " . join(" ", %args) if %args;
+
+    require BBBikeUtil;
+    require BBBikeCalc;
+
+    my $angle;
+    if ($angle_or_direction !~ m{^-?\d+$}) {
+	$angle = _direction_to_deg($angle_or_direction);
+	if (!defined $angle) {
+	    die "Invalid direction '$angle_or_direction' (please use lower case English direction abbrevs)";
+	}
+    } else {
+	$angle = BBBikeCalc::norm_deg($angle_or_direction);
+    }
+
+    my $net = $self->{Net};
+    if (!$net) {
+	die "Did you call make_net?";
+    }
+
+    my($px,$py) = split /,/, $p;
+
+    my @neighbor_results;
+    while(my($neighbor,$dist) = each %{ $net->{$p} }) {
+	my($nx,$ny) = split /,/, $neighbor;
+	#XXX the following line could be a function somewhere, maybe BBBikeCalc...
+	my $neighbor_deg = BBBikeUtil::rad2deg(BBBikeCalc::norm_arc(BBBikeUtil::pi()/2-atan2($ny-$py,$nx-$px)));
+	my $delta = abs($angle - $neighbor_deg);
+	push @neighbor_results, { delta => $delta, coord => $neighbor};
+    }
+
+    sort { $a->{delta} <=> $b->{delta} } @neighbor_results;
+}
+
+# XXX unfortunately BBBikeCalc is not usable here :-(
+use constant _direction_to_deg_CAKE => 22.5;
+sub _direction_to_deg {
+    my $dir = shift;
+    return {'n'   => _direction_to_deg_CAKE*0,
+	    'nne' => _direction_to_deg_CAKE*1,
+	    'ne'  => _direction_to_deg_CAKE*2,
+	    'ene' => _direction_to_deg_CAKE*3,
+	    'e'   => _direction_to_deg_CAKE*4,
+	    'ese' => _direction_to_deg_CAKE*5,
+	    'se'  => _direction_to_deg_CAKE*6,
+	    'sse' => _direction_to_deg_CAKE*7,
+	    's'   => _direction_to_deg_CAKE*8,
+	    'ssw' => _direction_to_deg_CAKE*9,
+	    'sw'  => _direction_to_deg_CAKE*10,
+	    'wsw' => _direction_to_deg_CAKE*11,
+	    'w'   => _direction_to_deg_CAKE*12,
+	    'wnw' => _direction_to_deg_CAKE*13,
+	    'nw'  => _direction_to_deg_CAKE*14,
+	    'nnw' => _direction_to_deg_CAKE*15,
+	   }->{$dir};
 }
 
 1;
