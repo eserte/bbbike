@@ -1,10 +1,9 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeCalc.pm,v 1.13 2006/07/30 20:37:52 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999,2005 Slaven Rezic. All rights reserved.
+# Copyright (C) 1999,2005,2012 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -128,6 +127,17 @@ sub norm_arc {
 	$arc - 2*pi;
     } else {
 	$arc;
+    }
+}
+
+sub norm_deg {
+    my($deg) = @_;
+    if ($deg < 0) {
+	$deg + 360;
+    } elsif ($deg >= 360) {
+	$deg - 360;
+    } else {
+	$deg;
     }
 }
 
