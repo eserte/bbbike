@@ -1,0 +1,86 @@
+default namespace = ""
+
+start =
+  element BBBikeRoute {
+    failed-route-search-result |
+    successful-route-search-result
+  }
+
+## No result when doing the route search, contains a
+## human-readable error message
+failed-route-search-result =
+  element Error { text },
+  element LongLatPath { empty }
+
+## Successful route search
+successful-route-search-result =
+  ## periodic or temporary blockings and handicaps, a more precise
+  ## description will come later XXX
+  element AffectingBlocking {
+    element Index { xsd:integer },
+    element LongLatHop { XY+ },
+    element Text { text },
+    element Type { "gesperrt" | "handicap" }
+  }*,
+  ## route length in meters
+  element Len { xsd:decimal },
+  ## list of route coordinates (WGS84)
+  element LongLatPath { XY* },
+  ## list of route coordinates (old BBBike coordinates, don't use)
+  element Path { XY+ },
+  ## XXX description is missing
+  element Power { empty },
+  ## route list
+  element Route {
+    ## a point in the route and description of the following "leg"
+    element Point {
+      ## angle for turns (if any)
+      element Angle { xsd:integer }?,
+      ## comment for the leg, as plain text
+      element Comment { text },
+      ## comment for the leg, as html, may contain links
+      element CommentHtml { text },
+      ## coordinate of the point (old BBBike coordinate, don't use)
+      element Coord { text },
+      ## direction
+      element Direction {
+         ## the initial geographic direction (only for start points)
+         "N" | "NE" | "E" | "SE" | "S" | "SW" | "W" | "NW" |
+         ## left/half left/right/half right
+         "l" | "hl" | "r" | "hr" |
+         ## straight ahead
+         ""
+      }?,
+      ## direction as human readable string as html
+      element DirectionHtml { text },
+      ## direction as human readable string as plain text
+      element DirectionString { text },
+      ## distance of this leg, in meters
+      element Dist { xsd:integer },
+      ## distance of this leg, as human readable string as plain text
+      element DistString { text },
+      ## description missing XXX
+      element FragezeichenComment { text }?,
+      ## an index into the LongLatPath or Path fields
+      element PathIndex { xsd:integer },
+      ## street name
+      element Strname { text },
+      ## total distance so far, in meters
+      element TotalDist { xsd:integer },
+      ## total distance so far, as human readable string as plain text
+      element TotalDistString { text }
+    }+
+  },
+  ## description missing XXX
+  element Session { text }?,
+  ## description missing XXX
+  element Speed {
+    element name { xsd:integer },
+    element Pref { "1" | "" }?,
+    element Time { xsd:decimal }
+  }+,
+  ## number of traffic lights on route
+  element Trafficlights { xsd:integer }?
+
+## a coordinate in the format X,Y (longitude,latitude, for example 13.5,52.5)
+XY = element XY { text }
