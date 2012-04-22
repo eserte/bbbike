@@ -1,10 +1,9 @@
 # -*- perl -*-
 
 #
-# $Id: Update.pm,v 1.27 2009/02/18 23:54:22 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998,2001,2003,2005,2006,2007 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998,2001,2003,2005,2006,2007,2012 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -18,53 +17,9 @@ use strict;
 use vars qw($verbose $tmpdir $proxy $VERSION);
 
 use File::Basename;
+use BBBikeUtil qw(is_in_path);
 use BBBikeVar;
 use FindBin;
-
-# REPO BEGIN
-# REPO NAME file_name_is_absolute /home/e/eserte/src/repository 
-# REPO MD5 89d0fdf16d11771f0f6e82c7d0ebf3a8
-
-BEGIN {
-    if (eval { require File::Spec; defined &File::Spec::file_name_is_absolute }) {
-	*file_name_is_absolute = \&File::Spec::file_name_is_absolute;
-    } else {
-	*file_name_is_absolute = sub {
-	    my $file = shift;
-	    my $r;
-	    if ($^O eq 'MSWin32') {
-		$r = ($file =~ m;^([a-z]:(/|\\)|\\\\|//);i);
-	    } else {
-		$r = ($file =~ m|^/|);
-	    }
-	    $r;
-	};
-    }
-}
-# REPO END
-
-# REPO BEGIN
-# REPO NAME is_in_path /home/e/eserte/src/repository 
-# REPO MD5 1b42243230d92021e6c361e37c9771d1
-
-sub is_in_path {
-    my($prog) = @_;
-    return $prog if (file_name_is_absolute($prog) and -f $prog and -x $prog);
-    require Config;
-    my $sep = $Config::Config{'path_sep'} || ':';
-    foreach (split(/$sep/o, $ENV{PATH})) {
-	if ($^O eq 'MSWin32') {
-	    return "$_\\$prog"
-		if (-x "$_\\$prog.bat" ||
-		    -x "$_\\$prog.com" ||
-		    -x "$_\\$prog.exe");
-	} else {
-	    return "$_/$prog" if (-x "$_/$prog");
-	}
-    }
-    undef;
-}
-# REPO END
 
 sub update_http {
     my(%args) = @_;
