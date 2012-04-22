@@ -41,8 +41,10 @@ use BBBikeUtil qw(is_in_path);
 
 @EXPORT = (qw(get_std_opts set_user_agent do_display tidy_check
 	      xmllint_string xmllint_file gpxlint_string gpxlint_file kmllint_string
+	      validate_bbbikecgires_xml_string
 	      eq_or_diff is_long_data like_long_data unlike_long_data
-	      like_html unlike_html is_float using_bbbike_test_cgi check_cgi_testing),
+	      like_html unlike_html is_float using_bbbike_test_cgi check_cgi_testing
+	    ),
 	   @opt_vars);
 
 $logfile = ($ENV{HOME}||'').'/www/log/bbbike.hosteurope2012/bbbike.de_access.log';
@@ -452,6 +454,39 @@ sub kmllint_string {
 	}
     }
     xmllint_string($content, $test_name, %args, ($kml_schema ? (-schema => $kml_schema) : ()));
+}
+
+{
+    my $schema_file;
+    # only usable with Test::More, generates one test
+    sub validate_bbbikecgires_xml_string {
+	my($content, $test_name) = @_;
+    SKIP: {
+	    if (!defined $schema_file) {
+		if (!is_in_path('rnv')) {
+		    $schema_file = ''; # defined but false
+		    Test::More::skip('rnv needed for XML schema validation, but not available', 1);
+		} else {
+		    $schema_file = "$testdir/../misc/bbbikecgires.rnc";
+		    if (!-r $schema_file) {
+			$schema_file = '';
+			Test::More::skip("schema file $schema_file is missing", 1);
+		    }
+		}
+	    }
+
+	    require File::Temp;
+	    my($tmpfh,$tmpfile) = File::Temp::tempfile(SUFFIX => ".xml", UNLINK => 1)
+		or die $!;
+	    print $tmpfh $content
+		or die $!;
+	    close $tmpfh
+		or die $!;
+	    my @cmd = (qw(rnv -q), $schema_file, $tmpfile);
+	    system @cmd;
+	    Test::More::ok(($? == 0), $test_name);
+	}
+    }
 }
 
 sub failed_long_data {

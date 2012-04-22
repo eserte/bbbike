@@ -32,7 +32,7 @@ use lib ($FindBin::RealBin,
 	 "$FindBin::RealBin/..",
 	 "$FindBin::RealBin/../lib",
 	);
-use BBBikeTest qw(check_cgi_testing xmllint_string gpxlint_string kmllint_string);
+use BBBikeTest qw(check_cgi_testing xmllint_string gpxlint_string kmllint_string validate_bbbikecgires_xml_string);
 
 eval { require Compress::Zlib };
 
@@ -96,7 +96,7 @@ if (!@urls) {
 }
 
 my $ortsuche_tests = 11;
-plan tests => (247 + $ortsuche_tests) * scalar @urls;
+plan tests => (248 + $ortsuche_tests) * scalar @urls;
 
 my $default_hdrs;
 if (defined &Compress::Zlib::memGunzip && $do_accept_gzip) {
@@ -191,6 +191,7 @@ for my $cgiurl (@urls) {
 	    } elsif ($output_as eq 'xml') {
 		like $resp->header('Content-Disposition'), qr{attachment; filename=.*\.xml$}, 'xml filename';
 		xmllint_string($content, "xmllint check for $output_as");
+		validate_bbbikecgires_xml_string($content, "schema check for output_as=$output_as");
 	    } elsif ($output_as =~ m{^( gpx-track
 				     |  gpx-route
 				     )$}x) {
