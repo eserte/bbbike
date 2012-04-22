@@ -195,20 +195,6 @@ sub new_bbd {
 		    last TRY;
 		}
 	    }
-	    # XXX 2. versuch mit internet für minimale Funktionsfähigkeit
-	    # mit bbbike.ppl
-	    if (0) {
-	    foreach $file (@filenames) {
-		eval q{
-		    use lib "/home/e/eserte/src/perl/Hyper";
-		    require Hyper;
-		    my $cachefile = Hyper::hypercopy($file);
-		    $self->{File} = $cachefile;
-		};
-		last TRY if $self->{File};
-	    }
-	    }
-	    # XXX end
 
 	    require Carp;
 	    Carp::confess("Can't open ", join(", ", @filenames));
