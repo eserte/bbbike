@@ -134,7 +134,7 @@ if (!@browsers) {
 @browsers = map { "$_ BBBikeTest/1.0" } @browsers;
 
 my $outer_berlin_tests = 30;
-my $tests = 129 + $outer_berlin_tests;
+my $tests = 133 + $outer_berlin_tests;
 plan tests => $tests * @browsers;
 
 if ($WWW::Mechanize::VERSION == 1.32) {
@@ -1130,13 +1130,14 @@ sub simulate_abc_click {
     $agent->submit;
 }
 
-# Generates two tests, returns $root (or not, if XML::LibXML is not available)
+# Generates three tests, returns $root (or not, if XML::LibXML is not available)
 sub handle_xml_response ($) {
     my $resp = shift;
     ok $resp->is_success, "Success for " . $resp->request->url
 	or diag $resp->status_line;
     my $xml = $resp->decoded_content(charset => "none"); # using decoded_content with charset decoding is problematic
     xmllint_string($xml, "XML output OK");
+    validate_bbbikecgires_xml_string($xml, 'XML validation OK');
     my $root;
     if (eval { require XML::LibXML; 1 }) {
 	my $p = XML::LibXML->new;

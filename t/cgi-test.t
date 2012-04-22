@@ -32,6 +32,7 @@ use BBBikeUtil qw(is_in_path);
 use BBBikeTest qw(get_std_opts like_html unlike_html $cgidir
 		  xmllint_string gpxlint_string kmllint_string
 		  using_bbbike_test_cgi check_cgi_testing
+		  validate_bbbikecgires_xml_string
 		);
 
 sub bbbike_cgi_search ($$);
@@ -40,7 +41,7 @@ sub bbbike_cgi_geocode ($$);
 check_cgi_testing;
 
 #plan 'no_plan';
-plan tests => 72;
+plan tests => 75;
 
 if (!GetOptions(get_std_opts("cgidir"),
 	       )) {
@@ -146,7 +147,9 @@ $ua->env_proxy;
 
     {
 	my $resp = bbbike_cgi_search +{%route_params, output_as => 'xml'}, 'XML output';
-	xmllint_string($resp->decoded_content, 'Well-formedness of XML output');
+	my $content = $resp->decoded_content(charset => "none");
+	xmllint_string($content, 'Well-formedness of XML output');
+	validate_bbbikecgires_xml_string($content, 'Validation of XML output');
     }
 }
 
@@ -164,7 +167,9 @@ SKIP: {
 
     {
 	my $resp = bbbike_cgi_search +{%route_params, output_as => 'xml'}, 'XML output';
-	my $doc = $p->parse_string($resp->decoded_content(charset => "none"));
+	my $content = $resp->decoded_content(charset => "none");
+	validate_bbbikecgires_xml_string($content, 'Validation of XML output');
+	my $doc = $p->parse_string($content);
 	my $startname = $doc->findvalue('/BBBikeRoute/Route/Point[position()=1]/Strname');
 	is($startname, 'Wilhelmshöhe', 'Expected startname in right encoding');
     }
@@ -199,6 +204,7 @@ SKIP: {
     {
 	my $resp = bbbike_cgi_search +{%noroute_params, output_as => 'xml'}, 'No route, XML output';
 	my $content = $resp->decoded_content(charset => 'none');
+	validate_bbbikecgires_xml_string($content);
 	my $doc = $p->parse_string($content);
 	like($doc->findvalue('/BBBikeRoute/Error'), qr{.+}, 'Found expected error message')
 	    or diag $content;
