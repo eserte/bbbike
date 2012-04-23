@@ -967,8 +967,10 @@ sub neighbor_by_direction {
 	my($nx,$ny) = split /,/, $neighbor;
 	#XXX the following line could be a function somewhere, maybe BBBikeCalc...
 	my $neighbor_deg = BBBikeUtil::rad2deg(BBBikeCalc::norm_arc(BBBikeUtil::pi()/2-atan2($ny-$py,$nx-$px)));
-	my $delta = abs($angle - $neighbor_deg);
-	push @neighbor_results, { delta => $delta, coord => $neighbor};
+	my $diff = $angle - $neighbor_deg;
+	my $delta = abs($diff);
+	my $side = $diff > 0 ? 'l' : $diff < 0 ? 'r' : '';
+	push @neighbor_results, { delta => $delta, coord => $neighbor, side => $side};
     }
 
     sort { $a->{delta} <=> $b->{delta} } @neighbor_results;
