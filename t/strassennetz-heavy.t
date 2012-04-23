@@ -84,4 +84,42 @@ $s_net->$make_net;
     like $@, qr{Invalid direction}, 'Trapped invalid direction';
 }
 
+{
+    # Katzbach/Monumenten -> Katzbach/Kreuzberg: result is Katzbach/Yorck
+    my @res = $s_net->next_neighbors("8598,9074", "8598,9264");
+    is $res[0]->{coord}, '8595,9495', 'best neighbor is Katzback/Yorck';
+    cmp_ok $res[0]->{delta}, '<', 5, 'small angle delta';
+
+    # next best is to the right (because of the slant of Kreuzbergstr)
+    is $res[1]->{coord}, '8769,9290', 'next best is Kreuzberg/Moeckern';
+    is $res[1]->{side}, 'r', 'to the right';
+
+    # next best is to the left
+    is $res[2]->{coord}, '8475,9240', 'next best is Kreuzberg curve';
+    is $res[2]->{side}, 'l', 'to the left';
+
+    # worst is backwards
+    is $res[3]->{coord}, '8598,9074', 'backwards';
+    cmp_ok $res[3]->{delta}, '>', 170, 'large angle delta';
+}
+
+{
+    # Yorckstr. -> towards Katzbachstr.
+    my($res) = $s_net->next_neighbors('8192,9619', '8595,9495');
+    is $res->{coord}, '8648,9526', 'continuing on Yorck';
+}
+
+{
+    # Kreuzbergstr
+    my($res) = $s_net->next_neighbors('8475,9240', '8598,9264');
+    is $res->{coord}, '8769,9290', 'continuing on Kreuzbergstr.';
+}
+
+{
+    # Umfahrung Ostkreuz
+    my($res) = $s_net->next_neighbors('14794,10844', '15263,10747');
+    is $res->{coord}, '15279,10862';
+    is $res->{side}, 'l';
+}
+
 __END__
