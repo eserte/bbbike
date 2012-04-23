@@ -34,11 +34,13 @@ sub D ($) { }
 
 my $filter_year;
 my $with_summary;
+my $as_yaml_file;
 GetOptions(
 	   "filter-year=i" => \$filter_year,
 	   "with-summary" => \$with_summary,
+	   "as-yaml-file=s" => \$as_yaml_file,
 	  )
-    or die "usage: $0 [-filter-year ....] [-with-summary]";
+    or die "usage: $0 [-filter-year ....] [-with-summary] [-as-yaml-file out.yaml]";
 
 my $filter_start;
 my $filter_end;
@@ -201,17 +203,22 @@ my @sorted_ampel_data_with_cycles_keys = do {
 	    [ $_, split(/,/, $f[0]), @f[1..$#f] ];
 	} keys %ampel_data_with_cycles;
 };
+
+my @out_data;
     
 for my $key (@sorted_ampel_data_with_cycles_keys) {
     my $header_printed;
     my @cycles;
     my @reds;
     my @greens;
+    my $record = {};
     for my $ae_or_cd (@{ $ampel_data_with_cycles{$key} }) {
 	if ($ae_or_cd->can('as_string')) {
 	    if (!$header_printed) {
 		print $ae_or_cd->{Crossing} . " $key\n";
 		$header_printed = 1;
+		$record->{crossing} = $ae_or_cd->{Crossing};
+		@{$record}{qw(coord from_dir to_dir)} = split /\|/, $key;
 	    }
 	    print "    ", $ae_or_cd->as_string, "\n";
 	} else {
@@ -246,8 +253,17 @@ for my $key (@sorted_ampel_data_with_cycles_keys) {
     }
     if ($with_summary && (@cycles || @reds || @greens)) {
 	print "  SUMMARY: cycles: @cycles | reds: @reds | greens: @greens\n";
+	$record->{cycles} = \@cycles;
+	$record->{reds}   = \@reds;
+	$record->{greens} = \@greens;
     }
     print "-"x70, "\n";
+    push @out_data, $record;
+}
+
+if ($as_yaml_file) {
+    require YAML::Syck;
+    YAML::Syck::DumpFile($as_yaml_file, \@out_data);
 }
 
 #require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([\%ampel_data_with_cycles],[qw()])->Indent(1)->Useqq(1)->Dump; # XXX
