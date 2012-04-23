@@ -330,7 +330,7 @@ sub create_mapfile {
 	my $tmpfile1 = $self->{TmpDir} . "/bbbikems-$$.bbd";
 	open(TMP1, ">$tmpfile1") or die "Can't write to $tmpfile1: $!";
 	my $dist = 0;
-	if ($self->{MultiCoords}) {
+	if (@{ $self->{MultiCoords} || [] }) {
 	    if (!$self->has_more_than_one_coord) {
 		print TMP1 "\tRoute " . $self->get_first_coord . "\n";
 	    } else {
