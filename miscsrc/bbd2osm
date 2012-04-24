@@ -1078,6 +1078,40 @@ sub handle_comments_route_like {
     }
 }
 
+# See bbbike-aux/misc/mk-green-ampel-net.pl
+sub handle_trafficlightmap_like {
+    my($r, $dir) = @_;
+    if ($r->[Strassen::CAT] !~ m{^(green|red)X;}) {
+	warn "Unexpected category $r->[Strassen::CAT], ignoring...";
+	return;
+    }
+    my $cat = $1;
+    my @node_ids = map {
+	my($px,$py) = $Karte::Polar::obj->trim_accuracy($Karte::Polar::obj->standard2map(split /,/, $_));
+	my $node_id = maybe_add_node($px,$py);
+	$node_id;
+    } @{ $r->[Strassen::COORDS] };
+
+    print $wayfh qq{<way id="$next_way_id" visible="true">\n};
+    for my $node_id (@node_ids) {
+	print $wayfh qq{  <nd ref="$node_id"/>\n};
+    }
+#    print $wayfh qq{  <tag k="bbbike:trafficlightmap" v="$cat" />\n};
+#    print $wayfh qq{  <tag k="bbbike:tlm" v="$cat" />\n};
+    #XXX hack, reuse bus lane signature here
+    if ($cat eq 'green') {
+	print $wayfh qq{  <tag k="cycleway" v="lane" />\n};
+	print $wayfh qq{  <tag k="bbbike:usage" v="mandatory" />\n};
+    } elsif ($cat eq 'red') {
+	print $wayfh qq{  <tag k="psv" v="yes" />\n};
+	print $wayfh qq{  <tag k="bbbike:times" v="always" />\n};
+    } else {
+	die;
+    }
+    print $wayfh qq{</way>\n};
+    $next_way_id++;
+}
+
 seek $nodefh, 0, SEEK_SET
     or die $!;
 seek $wayfh, 0, SEEK_SET

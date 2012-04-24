@@ -210,3 +210,7 @@ boundary=political [0x1c resolution 19]
 
 # SRT
 FIXME=* {name '${FIXME}'} [0x2c resolution 17]
+
+##XXX hmmm, does not work, why?
+#bbbike:trafficlightmap=green [0x40 resolution 17]
+#bbbike:tlm=green [0x40 resolution 17]

@@ -277,6 +277,9 @@ BBBIKE_ROUTABLE_GMAPSUPP_SOURCES+=	${BBBIKETMPDIR}/fragezeichen-outdoor-categori
 .if exists(${BBBIKETMPDIR}/fragezeichen-outdoor-nextcheck-categorized.img)
 BBBIKE_ROUTABLE_GMAPSUPP_SOURCES+=	${BBBIKETMPDIR}/fragezeichen-outdoor-nextcheck-categorized.img
 .endif
+.if exists(${BBBIKETMPDIR}/trafficlightmap.img)
+BBBIKE_ROUTABLE_GMAPSUPP_SOURCES+=	${BBBIKETMPDIR}/trafficlightmap.img
+.endif
 
 ${BBBIKETMPDIR}/bbbike_routable_gmapsupp.img: ${BBBIKE_ROUTABLE_GMAPSUPP_SOURCES} ${BBBIKEMKGMAPDIR}/typ/M000002a.TYP
 	cd ${BBBIKETMPDIR} && \
