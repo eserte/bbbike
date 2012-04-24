@@ -73,6 +73,13 @@ $s_net->$make_net;
 }
 
 {
+    # Andreas/Singer (was buggy)
+    my @res = $s_net->neighbor_by_direction('12295,12197', 'w');
+    is $res[0]->{coord}, '12084,12235';
+    cmp_ok $res[0]->{delta}, '<', 30;
+}
+
+{
     # non-existing point -> 
     my @res = $s_net->neighbor_by_direction("9999999,99999999", 0);
     is_deeply \@res, [], 'Non existing point';

@@ -943,6 +943,7 @@ sub neighbor_by_direction {
     die "Unknown options: " . join(" ", %args) if %args;
 
     require BBBikeUtil;
+    require BBBikeCalc;
 
     my $angle;
     if ($angle_or_direction !~ m{^-?\d+(?:\.\d+)?$}) {
@@ -951,7 +952,6 @@ sub neighbor_by_direction {
 	    die "Invalid direction '$angle_or_direction' (please use lower case English direction abbrevs)";
 	}
     } else {
-	require BBBikeCalc;
 	$angle = BBBikeCalc::norm_deg($angle_or_direction);
     }
 
@@ -965,7 +965,7 @@ sub neighbor_by_direction {
     my @neighbor_results;
     while(my($neighbor,$dist) = each %{ $net->{$p} }) {
 	my($nx,$ny) = split /,/, $neighbor;
-	my $neighbor_arc = BBBikeUtil::pi()/2-atan2($ny-$py,$nx-$px);
+	my $neighbor_arc = BBBikeCalc::norm_arc(BBBikeUtil::pi()/2-atan2($ny-$py,$nx-$px));
 	my $diff = BBBikeUtil::rad2deg(_norm_arc_180(BBBikeUtil::deg2rad($angle) - $neighbor_arc));
 	my $delta = abs($diff);
 	my $side = $diff > 0 ? 'l' : $diff < 0 ? 'r' : '';
