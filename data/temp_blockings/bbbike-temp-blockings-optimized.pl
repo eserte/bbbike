@@ -1394,17 +1394,7 @@ userdel	q4::inwork 11436,14741 11271,14755
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_018665',
-         'until' => 1335189600,
-         'text' => 'Str. des 17.Juni zwischen Yitzhak-Rabin-Str. und Platz des 18.März sowie Ebertstr. gesperrt (Internationales Kinderfest, bis 23.04.12)',
-         'from' => 1334764800,
-         'id' => 2324,
-         'data' => 'userdel	2::temp 8610,12254 8538,12245 8214,12205 8089,12190 8055,12186
-userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_018679',
          'until' => 1336482000,

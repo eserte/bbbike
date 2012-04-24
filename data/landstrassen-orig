@@ -864,10 +864,11 @@ Eichhorst - Altenhof	N 25488,54151 25512,54174 25734,54179 25843,54253 25939,544
 (Uferweg Eichhorst - Altenhof)	NN 26973,55232 26992,55434 27148,55558 27325,55483 27478,55438 27685,55445 28162,55556 28473,55717 28878,55825 29528,56258 29657,56392 29859,56494
 Dorfstr. (Altenhof)	N 29859,56494 29924,56609 30049,56674
 Schwarzer Weg (Hubertussiedlung)	N 21218,-1717 21212,-1781 21258,-1826 21218,-1978 21062,-2006 21071,-2228 21088,-2461
-Hubertussiedlung - Kienberg	N 21088,-2461 20875,-2584 20103,-2868 20056,-2896
-Waltersdorf - Hubertussiedlung	N 20367,-3844 20431,-3776 20392,-3450 20236,-3167 20056,-2896
-ehem. Kienberg	N 20056,-2896 19900,-2656
-Waltersdorf - Hubertussiedlung	N 21037,-4325 20711,-3869 20467,-3898 20367,-3844
+Hubertussiedlung - Flughafen BER	N 21088,-2461 20875,-2584 20103,-2868 20056,-2896 19909,-2863
+#XXX del --- existiert nicht mehr --- Waltersdorf - Hubertussiedlung	N 20367,-3844 20431,-3776 20392,-3450 20236,-3167 20056,-2896
+#XXX del --- existiert nicht mehr --- ehem. Kienberg	N 20056,-2896 19900,-2656
+Waltersdorf - Flughafen BER	N 21037,-4325 20711,-3869 20467,-3898 20367,-3844
+#: XXX genaue Wegführung? Umbenennung BBI -> "Flughafen BER"
 Waltersdorf - BBI Infotower	N 20367,-3844 20265,-3849 20095,-3873 19840,-3748 19164,-3980 19035,-3877 18386,-4109
 #XXX del wegen BBI: Diepensee - Rotberg	N 18386,-4109 18618,-4248 18411,-5428 18367,-5665
 BBI/Zaun - Rotberg	N 18367,-5665 18301,-6019 18037,-6627 18005,-6959
@@ -1949,7 +1950,7 @@ Kirchstr.	N 17933,-2344 17916,-2287 17738,-2094 17647,-1890
 Kirchstr.	N 17586,-1937 17738,-2094
 #: append_comment ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Flughafen Schönefeld	Pl 18298,-1488
-Vorfahrt Flughafen Schönefeld	N 18298,-1488 18401,-1767 18532,-1717 18419,-1418
+Vorfahrt Flughafen Schönefeld	N 18298,-1488 18401,-1767 18532,-1717 18480,-1577 18419,-1418
 Bahnhof Schönefeld - Flughafen Schönefeld	NN 18175,-1570 18234,-1645 18324,-1728 18401,-1767
 #
 #
