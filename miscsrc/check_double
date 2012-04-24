@@ -69,7 +69,7 @@ while(1) {
     my $c = $r->[Strassen::COORDS];
     last if !@$c;
     if ($do_names) {
-	$h{$r->[Strassen::NAME]}++;
+	push @{ $h{$r->[Strassen::NAME]} }, @$c;
     } elsif ($do_linesegs) {
 	if (@$c) {
 	    my $cat = $r->[Strassen::CAT];
@@ -101,7 +101,11 @@ while(my($k,$v) = each %h) {
 if (@doubles) {
     print STDERR "*** ERROR: Found duplicates in @files\n";
     for my $double_key (@doubles) {
-	print STDERR "* ", join("; ", @{ $h{$double_key} }), "\tX $double_key\n";
+	if ($do_names) {
+	    print STDERR "* $double_key\tX ", join(" ", @{ $h{$double_key} }), "\n";
+	} else {
+	    print STDERR "* ", join("; ", @{ $h{$double_key} }), "\tX $double_key\n";
+	}
     }
     exit 1;
 }
