@@ -174,10 +174,12 @@ sub pi ()   { 4 * atan2(1, 1) } # 3.141592653
 sub deg2rad { ($_[0]*pi)/180 }
 sub rad2deg { ($_[0]*180)/pi }
 
-# Berechnet den Schnittwinkel
-# Eingabe: $p1(x|y) und $p2(x|y): äußere Punkte
-#          $pm(x|y): Punkt in der Mitte (Schnittpunkt)
-# Ausgabe: (Winkel in radians, Richtung l oder r)
+# Calculate intersecting angle
+# In:  $p1(x|y) and $p2(x|y): exterior points
+#      $pm(x|y): middle point (intersection point)
+# Out: (angle in radians, direction l or r)
+#      may return (undef, undef) in case there's no angle available (e.g.
+#      if $p1==$pm or $p2==$pm)
 # See also Strassen::Util::abbiegen for a very similar function.
 sub schnittwinkel {
     my($p1x, $p1y, $pmx, $pmy, $p2x, $p2y) = @_;
@@ -202,9 +204,14 @@ sub schnittwinkel {
     my $y2 = $p2y-$pmy;
     my $richtung = ($x1*$y2-$y1*$x2 > 0 ? 'l' : 'r');
     my $winkel = 0;
-    my $acos_arg = ($x1*$x2+$y1*$y2) /
-		   (sqrt(sqr($x1)+sqr($y1)) *
-		    sqrt(sqr($x2)+sqr($y2)));
+    my $acos_arg = eval {
+	($x1*$x2+$y1*$y2) /
+	    (sqrt(sqr($x1)+sqr($y1)) *
+	     sqrt(sqr($x2)+sqr($y2)));
+    };
+    if ($@) {
+	return (undef, undef);
+    }
     # protect from floating point inaccuracies
     if    ($acos_arg >  1) { $acos_arg = 1 }
     elsif ($acos_arg < -1) { $acos_arg = -1 }

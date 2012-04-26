@@ -23,7 +23,7 @@ BEGIN {
     }
 }
 
-plan tests => 3 + 7 + 6 + 1;
+plan 'no_plan';
 
 use_ok 'BBBikeUtil', 'bbbike_root';
 
@@ -54,8 +54,27 @@ is($bbbike_root, realpath(dirname(dirname(realpath($0)))), "Expected value for b
     # See also abbiegen.t and Strassen::Util::abbiegen for the same
     # problem
     my($angle,$dir) = BBBikeUtil::schnittwinkel(12960,8246,12918,8232,12792,8190);
-    is($angle, 0, 'No nan on schnittwinkel call');
+    is $angle, 0, 'No nan on schnittwinkel call';
 }
 
+{
+    my($angle,$dir) = BBBikeUtil::schnittwinkel(12960,8246,12918,8232,12918,8232);
+    is $angle, undef, 'Should not die if two points are the same';
+}
+
+{
+    my($angle,$dir) = BBBikeUtil::schnittwinkel(12960,8246,12960,8246,12918,8232);
+    is $angle, undef, 'Should not die if two points are the same';
+}
+
+{
+    my(undef,$dir) = BBBikeUtil::schnittwinkel(11671,13775, 11664,13990, 11836,13993);
+    is $dir, 'r', 'right turn';
+}
+
+{
+    my(undef,$dir) = BBBikeUtil::schnittwinkel(11671,13775, 11664,13990, 11492,14000);
+    is $dir, 'l', 'left turn';
+}
 
 __END__
