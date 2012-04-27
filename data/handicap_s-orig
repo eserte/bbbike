@@ -8,15 +8,16 @@
 #
 #: temporary vvv
 # 
+#: last_checked: 2012-04-27
+#: next_check: 2012-06-01
+Oderberger Str.: Fahrbahn gesperrt (Baustelle), Ausweichen auf Gehweg	q4::inwork 10723,14772 10870,14689
+# 
 #: last_checked: 2012-04-20
 #: next_check: 2012-06-01
 #: XXX Siehe auch Baustellenampel an der Wilhelmstr.
 Voﬂstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg	q3::inwork 8743,11663 8837,11676
 # 
-#: last_checked: 2011-07-07
-#: next_check: 2011-09-01
-#: XXX siehe auch qualitaet_s-orig
-Sembritzkystr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 7203,5488 7186,5453 7157,5418 7095,5317 7018,5201
+#XXX del --- #: last_checked: 2011-07-07 --- #: next_check: 2011-09-01 --- #: XXX siehe auch qualitaet_s-orig --- Sembritzkystr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 7203,5488 7186,5453 7157,5418 7095,5317 7018,5201
 # 
 #: last_checked: 2012-04-20 vvv
 #: next_check: 2012-05-15 vvv
@@ -52,17 +53,18 @@ Charlottenstr.: wegen Bauarbeiten eine Einbahnstraﬂe Richtung S¸den	q4::inwork; 
 # 
 #: last_checked: 2012-04-20
 #: next_check: 2012-06-01
+#: XXX mittlerweile (2012-04-27) in beiden Richtungen gesperrt? pr¸fen!
 Universit‰tsstr.: wegen Bauarbeiten Richtung Unter den Linden gesperrt	q4::inwork; 9580,12581 9601,12380
 # 
-#: last_checked: 2012-02-18 vvv
-#: next_check: 2012-04-15 vvv
+#: last_checked: 2012-04-25 vvv
+#: next_check: 2012-06-15 vvv
 #XXX del -- eigentlich gut zu befahren --- Revaler Str.: Bauarbeiten, Kreuzung gesperrt, Gehweg kann benutzt werden	q4::inwork 14509,11060 14442,11101
 Helmerdingstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg kann benutzt werden	q4::inwork 14465,11195 14442,11101
 #: next_check: ^^^
 #: last_checked: ^^^
 # 
-#: last_checked: 2012-04-20
-#: next_check: 2012-05-15
+#: last_checked: 2012-04-27
+#: next_check: 2012-05-25
 Rathausstr.: Baustelle vor dem Roten Rathaus, eng	q4::inwork 10601,12521 10704,12595
 # 
 #XXX del --- #: last_checked: 2011-02-27 --- #: next_check: 2011-07-15 --- Am Carlsgarten: Bauarbeiten	q4::inwork 19460,7954 19372,8012 19334,8046
@@ -1179,6 +1181,8 @@ Max-Pallenberg-Pfad: Bordstein	q2 15460,1764 15465,1953
 (Gertrud-Dorka-Weg - Lieselotte-Berger-Str.): Bordstein, schmal	q2 17796,-97 17777,-68
 Straﬂe 618: schmale Straﬂe	q1 16346,481 16320,538 16297,592
 Harry-Liedtke-Pfad: einige Fuﬂg‰nger	q1 15788,1747 15783,1820 15806,1903 15834,2024 15843,2065 15836,2113
+#: XXX_prog BS auf Nordseite (nicht allzu hoch), vielleicht auch auf der S¸dseite?
+Gormannstr.: Bordstein	q2 10350,13376 10353,13384
 #
 ######################### User Contributions #################################
 # 

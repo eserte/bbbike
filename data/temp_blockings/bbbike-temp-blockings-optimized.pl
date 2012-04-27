@@ -7,7 +7,7 @@ push @temp_blocking,
          'text' => 'Weinmeisterstr. (Mitte) in Richtung Alexanderplatz gesperrt',
          'from' => undef,
          'id' => 1567,
-         'data' => '#: last_checked: 2012-02-01
+         'data' => '#: last_checked: 2012-04-27
 userdel	q4::inwork; 10350,13376 10527,13257
 ',
          'type' => 'gesperrt'
@@ -899,10 +899,10 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        {
-         'source_id' => '106200475',
-         'until' => 1341093600,
-         'text' => 'Lichterfeld-Schacksdorf: L60: Havarie, Straßenzustand Lauchhammer - Licherfelde Umleitung: Lauchhammer - Grünwalde - Staupitz - Sorno - Finsterwalde - Schacksdorf - Lichterfelde, 22.07.2010 bis 30.06.2012 ',
-         'from' => 1324669252,
+         'source_id' => '126200259',
+         'until' => 1380578400,
+         'text' => 'Lichterfeld-Schacksdorf: L60: Baumaßnahme der LMBV Lauchhammer - Licherfelde und umgekehrt, 23.04.2012 bis 30.09.2013 ',
+         'from' => 1335556384,
          'id' => 2108,
          'data' => 'userdel	2::inwork 37809,-92300 37918,-93202 37419,-94853 37230,-95682
 ',
@@ -1012,11 +1012,11 @@ userdel	3 13034,7319 13047,7234 13150,7254
        undef,
        {
          'source_id' => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20110303.0840.333719.html',
-         'until' => undef,
-         'text' => 'Auerbachtunnel: einspurige Verkehrsführung, Regelung mit Ampel',
-         'from' => undef,
+         'until' => 1356908400,
+         'text' => 'Auerbachtunnel: Fahrbahn wegen Bauarbeiten gesperrt, bis Ende 2012',
+         'from' => 1335462672,
          'id' => 2182,
-         'data' => '#: next_check: 2011-04-01
+         'data' => '#: next_check: 2012-11-15
 userdel	q4::inwork 425,8766 490,8716
 ',
          'type' => 'handicap'
@@ -1263,11 +1263,12 @@ userdel	2::inwork 19750,11730 19827,11686 19881,11591
        {
          'source_id' => 'IM_017746',
          'until' => 1346425200,
-         'text' => 'Kastanienallee (Prenzlauer Berg): Bauarbeiten zwischen Oderberger Str. und Schönhauser Allee, mögliche Behinderungen, bis 31.08.2012 ',
+         'text' => 'Kastanienallee (Prenzlauer Berg): Bauarbeiten zwischen Oderberger Str. und Schönhauser Allee, Fahrbahn gesperrt, bis 31.08.2012 ',
          'from' => 1314604800,
          'id' => 2308,
          'data' => '#: note: am 2012-03-09 geprüft, Radfahrer konnten problemlos passieren
-userdel	q4::inwork 10723,14772 10838,14962 10881,15047
+#: note: am 2012-04-27 geprüft, Fahrbahn ist absperrt (nur die Straßenbahn wird durchgelassen), Radfahrer können nur den Gehweg benutzen
+userdel	q4::inwork 10723,14772 10838,14962
 ',
          'type' => 'handicap'
        },
@@ -1376,19 +1377,19 @@ Am Schloss Schönhausen	2::night 10249,19148 10350,19182
        {
          'source_id' => 'l.epperlein',
          'until' => undef,
-         'text' => 'Sredzkistr. komplett zwischen Husemannstr. und Kollwitzstr. gesperrt. Dauer der Sperrung ist unbekannt.',
+         'text' => 'Sredzkistr.: Fahrbahn zwischen Husemannstr. und Kollwitzstr. komplett gesperrt. Dauer der Sperrung ist unbekannt.',
          'from' => undef,
          'id' => 2322,
-         'data' => '#: XXX vor Ort erkunden; wann wird die Baustelle aufgehoben?
+         'data' => '#: last_checked: 2012-04-27
 userdel	q4::inwork 11436,14741 11271,14755
 ',
          'type' => 'handicap'
        },
        {
          'source_id' => 'IM_018622',
-         'until' => 1336168800,
-         'text' => 'Buckower Damm (Neukölln): Baustelle, Straße vollständig gesperrt (bis auf Weiteres) in beiden Richtungen zwischen Johannisthaler Chaussee und An den Achterhöfen, 30.03.2012 bis 04.05.2012 15:00 Uhr ',
-         'from' => 1334953030,
+         'until' => 1337983200,
+         'text' => 'Buckower Damm (Neukölln): Baustelle, Straße vollständig gesperrt zwischen Johannisthaler Chaussee und An den Achterhöfen, 30.03.2012 bis 25.05.2012 15:00 Uhr ',
+         'from' => 1335556039,
          'id' => 2323,
          'data' => 'userdel	q4::inwork 12817,2031 12911,1815
 ',
@@ -1402,6 +1403,16 @@ userdel	q4::inwork 11436,14741 11271,14755
          'from' => 1334814060,
          'id' => 2325,
          'data' => 'userdel	q4::inwork 20485,17784 20542,17911 20576,17994
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'INKO_112232',
+         'until' => 1336136400,
+         'text' => 'Chausseestr. (Mitte) in Höhe Wöhlertstr.: Baustelle, Fahrtrichtung Richtung Müllerstr. gesperrt, 23.04.2012 12:00 Uhr bis 04.05.2012 15:00 Uhr ',
+         'from' => 1335088800,
+         'id' => 2326,
+         'data' => 'userdel	q4::inwork; 8527,14352 8442,14456 8346,14576
 ',
          'type' => 'handicap'
        }

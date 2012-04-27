@@ -688,13 +688,9 @@ Maienwerderweg: teils Waldweg (OK), teils m‰ﬂiger Asphalt	Q1 2226,18228 1549,177
 #: note: laut ADFC-Karte m‰ﬂig befahrbar
 (Uferweg): gut befahrbarer Waldweg	Q1 -431,17169 -389,17168 -305,17249 -304,17280 -252,17325 -155,17409 61,17495 117,17549 144,17638 209,17735 225,17815 234,17930 320,18117 372,18411 413,18500 465,18533 534,18553 616,18640 710,18727 714,18758 897,18943 1002,19014 1122,19036 1165,19009 1200,18969 1404,18974
 (Uferweg): Verbundsteinpflaster	Q1 1404,18974 1426,18973 1447,18933
-Sembritzkistr.: m‰ﬂiges Kopfsteinpflaster	Q2 6854,4931 6856,4963 6923,5057 6953,5102 7018,5201
-#: last_checked: 2011-07-07
-#: next_check: 2011-09-01
-#: XXX Bauarbeiten; eventuell danach bessere Fahrbahnqualit‰t?
-#: XXX Asphaltierung steht laut Tsp vom 2003-10-26 an
-#: XXX siehe auch handicap_s-orig
-Sembritzkistr.: m‰ﬂiges Kopfsteinpflaster	Q2 7018,5201 7095,5317 7157,5418 7186,5453 7203,5488
+#: by: Heiko Selber (fr¸her Kopfsteinpflaster)
+Sembritzkistr.: Asphalt	Q0 6854,4931 6856,4963 6923,5057 6953,5102 7018,5201 7095,5317 7157,5418 7186,5453 7203,5488
+#: confirmed_by: Heiko Selber (noch immer Kopfsteinpflaster)
 Sembritzkistr.: m‰ﬂiges Kopfsteinpflaster	Q2 7203,5488 7252,5583 7230,5696
 #: by: Benjamin Hersch:
 Sembritzkistr.: Asphalt	Q0 6847,4802 6854,4931
@@ -748,6 +744,9 @@ Wuhlewanderweg: Parkweg	Q1 21599,7904 21587,7865 21542,7752 21538,7684
 Wuhlewanderweg: guter Asphalt	Q0 21629,7921 21616,7863 21570,7751 21604,7715 21620,7647 21613,7521 21590,7414 21574,7244 21590,7211 21888,6944 21976,6848 22056,6613
 Wuhlewanderweg: guter Asphalt	Q0 22030,6600 22097,6414 22146,6338 22214,6271 22236,6233 22238,6195
 Wuhlewanderweg: guter Verbundsteinbelag	Q0 22240,6118 22172,5928 22135,5882 22085,5873
+#: XXX eventuell passiert hier noch was bzgl. Neupflasterung?
+#: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4258&options=4 (Neupflasterung)
+#: next_check: 2012-07-01
 Wuhlewanderweg: Verbundsteine, teilweise etwas uneben	Q1 22085,5873 21846,5856 21744,5804 21602,5685
 H‰mmerlingstr.: Asphalt	Q0 21683,6946 21774,6880 21833,6810 21861,6719 21913,6554 21984,6317 22000,6245 22033,6144 22075,5996 22083,5899 22085,5873 22089,5776 22092,5673 22095,5585
 Dorfstr.: schlechtes Kopfsteinpflaster, teilweise gut befahrbare Banketten	Q2- 30357,3555 30319,3511 30281,3479 30201,3375 30188,3301 29902,3104 29959,3031
@@ -6846,6 +6845,8 @@ Harry-Liedtke-Pfad: Gehwegplatten	Q0- 15788,1747 15783,1820 15806,1903
 #: note: die parallel verlaufende Parkplatzstraﬂe ist betoniert
 Harry-Liedtke-Pfad: Gehwegplatten	Q0- 15806,1903 15834,2024
 Harry-Liedtke-Pfad: Gehwegplatten	Q0- 15834,2024 15843,2065 15836,2113
+Senefelderstr.: Kleinsteinpflaster	Q1 11595,15058 11582,15021
+Knackstr.: Kopfsteinpflaster	Q2 11101,14768 11038,14972 11056,15009
 ######################### User Contributions #################################
 #: by: anonymous vvv
 # 
