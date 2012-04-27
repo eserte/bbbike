@@ -306,7 +306,7 @@
     ))
 
 (defun bbbike-update-now ()
-  "Update the current date in bbd files"
+  "Update the current date in bbd files (e.g. in last_checked directives)"
   (interactive)
   (let ((now-iso-date (format-time-string "%Y-%m-%d" (current-time)))
 	begin-iso-date-pos
