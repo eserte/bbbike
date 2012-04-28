@@ -123,7 +123,7 @@ Stolzenfelsstr.	1s 19436,8183 19423,8146 19333,8165 19171,8280 18949,8437 18787,
 Bersarinplatz	1 13742,12538 13698,12544 13678,12571 13686,12611 13695,12643 13747,12642 13767,12626 13761,12578 13742,12538
 Petersburger Platz	1 13467,12978 13558,12766
 Dernburgstr.	1 2498,10665 2378,10677 2333,10710 2252,11037
-Schuckertdamm	1 746,14817 1024,14889 1058,14898 1109,14911 1202,14935 1343,14972 1465,14963
+Schuckertdamm	1 741,14827 1022,14898 1056,14906 1112,14918 1200,14943 1343,14972 1465,14963
 Am Kleinen Wannsee	1 -5499,1349 -5485,1274 -5535,1204 -5742,1142
 Oberhofer Platz	1 5491,1955 5474,1940 5452,1940 5431,1956 5376,2097 5406,2110 5434,2122 5489,1981 5491,1955
 Scheelestr.	1 5740,1227 5697,1098 5556,984 5493,935 5424,882 5342,845
@@ -289,7 +289,7 @@ Gundelfinger Str.	1 18735,9421 18697,9153 18653,8922 18609,8717
 Dorotheenstr.	1 18653,8922 18770,8898
 Alte Späthbrücke	2 14466,5087 14544,5123
 Katzengraben	1 22451,4749 22465,4690
-Schwiegersteig	1 1134,14721 1130,14823 1109,14911
+Schwiegersteig	1 1134,14721 1130,14823 1112,14918
 Moränenweg	1 3208,21425 3304,21205
 Graacher Str.	1 14672,17085 14533,17084
 Wehlener Str.	1 14673,17003 14535,17003
@@ -330,7 +330,7 @@ Scharfestr.	1 758,3417 935,3430
 Junker-Jörg-Str.	1 18545,9395 18511,9185 18471,8957 18447,8818
 Walter-Felsenstein-Str.	1 20459,16697 20617,16614 20767,16903
 (Raoul-Wallenberg-Str. - Walter-Felsenstein-Str.)	1 20394,16162 20487,16392
-Jugendweg	1 1191,14513 1059,14515 1037,14515 998,14516 942,14517 842,14518
+Jugendweg	1 1184,14515 1059,14515 1037,14515 998,14516 936,14518 842,14518
 Boschpoler Platz	1 20540,13773 20665,13759
 Kienbergstr.	1 21287,14963 21225,14907 21217,14721 21122,14713
 Engelmannweg	1 4531,18217 4492,18013 4462,17892 4429,17763
@@ -399,7 +399,7 @@ Goebelplatz	1 1974,14646 1974,14565
 Rieppelstr.	1 851,15155 780,15358 794,15362 772,15460 768,15486
 Harriesstr.	1 768,15486 659,15469 525,15435
 Rapsstr.	1 755,15123 702,15274 693,15335 665,15414 659,15469
-Im Heidewinkel	1 1065,15229 981,15490 877,15474 772,15460
+Im Heidewinkel	1 1065,15229 1009,15400 978,15496 877,15474 772,15460
 Teufelsseestr.	1 454,11159 439,11228
 Auerhahnbalz	1 723,4572 697,4605 668,4653 650,4712 636,4765
 Schmohlstr.	1 13239,17269 13196,17223 13159,17196 13057,17120
@@ -455,7 +455,6 @@ Eckertstr.	1 13608,12547 13522,12748
 Erkelenzdamm	1s 11117,10326 11094,10261
 Alt-Tempelhof	1 8776,6661 8722,6656
 Langkofelweg	1 6845,3403 6940,3498 7018,3572
-Heinickeweg	1 2224,14825 2210,14696 2207,14576
 Dornbrunner Str.	1 15954,6297 16043,6414
 Hallberger Zeile	1 16068,6216 15954,6297
 Gartenstr.	1 8663,14960 8685,14966 8700,14956 8701,14932 8692,14923 8671,14919 8660,14929 8656,14947 8663,14960
@@ -472,7 +471,7 @@ Ingridpfad	1 6357,2863 6304,2825 6182,2727
 Georgenstr. (Mitte)	1 9242,12652 9108,12635
 Georgenstr. (Mitte)	1 9117,12705 9242,12652
 Schulstr. (Tegel)	1 1953,20149 1794,20110
-Natalissteig	1 1202,14935 1223,14824 1226,14714
+Natalissteig	1 1200,14943 1223,14824 1226,14714
 Alt-Biesdorf	1 20375,11694 20435,11698 20575,11698 21108,11628
 Alt-Biesdorf	1 21108,11628 20963,11618 20633,11651 20549,11659 20375,11694
 Privatstr. 14	1s 13159,17196 13103,17280
@@ -542,8 +541,8 @@ Privatstr. 13	1 13171,17335 13103,17280 13018,17264
 Preunelstr.	1 13012,17332 12965,17324 12930,17302 12865,17381
 Mollstr. (Richtungsfahrbahn)	1::igndisp 11723,13139 11843,13090 11904,13075 11958,13079 11985,13075
 Mollstr. (Richtungsfahrbahn)	1::igndisp 11985,13075 11966,13074 11905,13069 11881,13072 11839,13083 11739,13131 11723,13139
-Nonnendammallee (Richtungsfahrbahn)	1::igndisp -248,14518 -457,14536 -914,14602
-Nonnendammallee (Richtungsfahrbahn)	1::igndisp -925,14631 -248,14518
+Nonnendammallee (Richtungsfahrbahn)	1::igndisp -283,14523 -457,14536 -914,14602
+Nonnendammallee (Richtungsfahrbahn)	1::igndisp -925,14631 -283,14523
 Lötschbergstr.	1s 20161,11715 20150,11512
 Brodenbacher Weg	1s 15178,17134 14897,17093
 Huttwiler Weg	1 6913,18460 6961,18453 7035,18413 7098,18383 7120,18295 7071,18232
@@ -675,6 +674,10 @@ Mierendorffstr.	1 3645,13189 3542,13063
 Hüttigpfad	1 4810,15000 4887,14931 5057,14824 5107,14781
 (Alex-Wedding-Str. - Karl-Liebknecht-Str.)	1s 11027,13279 11085,13239
 Zwerghuhnweg	1s 15615,410 15565,379
+Grammestr.	1 1057,14389 1058,14459
+Halskesteig	1 1058,14459 1157,14459
+Hefnersteig	1 1364,14191 1392,14287 1420,14369
+Bödikersteig	1 1141,14237 1182,14384
 Am Neuen Garten	1 -12166,1384 -12212,1201 -12276,831 -12302,718
 Am Neuen Garten	1 -12332,585 -12582,127
 Hochstraße	3nocross::ignrte -11399,-1339 -11461,-1424 -11540,-1543
@@ -973,12 +976,25 @@ Mittelstreifen	3nocross::ignrte 11021,17889 11045,17893 11111,17905
 Kissingenstr. -> Stubnitzstr.: Mittelstreifen	3::igndisp 11021,17889 11045,17893 11102,17942
 Stubnitzstr. -> Kissingenstr.: Mittelstreifen	3::igndisp 11102,17942 11045,17893 11111,17905
 Mittelstreifen	3nocross::ignrte 1133,14387 1057,14389 999,14390 937,14391 889,14392
-Nonnendammallee -> Grammestr.: Mittelstreifen	3::igndisp 999,14390 1057,14389 1058,14459
-Grammestr. -> Nonnendammallee: Mittelstreifen	3::igndisp 1028,14251 1057,14389 999,14390
-Grammestr. -> Grammestr.: Mittelstreifen	3::igndisp 1028,14251 1057,14389 1058,14459
-Nonnendammallee -> Grammestr.: Mittelstreifen	3::igndisp 1133,14387 1057,14389 1028,14251
-Grammestr. -> Grammestr.: Mittelstreifen	3::igndisp 1058,14459 1057,14389 1028,14251
+Nonnendammallee -> Grammestr.: Mittelstreifen	3::igndisp 1133,14387 1057,14389 1023,14259
+Grammestr. -> Nonnendammallee: Mittelstreifen	3::igndisp 1023,14259 1057,14389 999,14390
 Grammestr. -> Nonnendammallee: Mittelstreifen	3::igndisp 1058,14459 1057,14389 1133,14387
+Grammestr. -> Grammestr.: Mittelstreifen	3::igndisp 1058,14459 1057,14389 1023,14259
+Wattstr. -> Wattstr.: Mittelstreifen	3::igndisp 998,14435 999,14390 968,14263
+Wattstr. -> Nonnendammallee: Mittelstreifen	3::igndisp 998,14435 999,14390 1057,14389
+Nonnendammallee -> Wattstr.: Mittelstreifen	3::igndisp 937,14391 999,14390 998,14435
+Wattstr. -> Wattstr.: Mittelstreifen	3::igndisp 968,14263 999,14390 998,14435
+Wattstr. -> Nonnendammallee: Mittelstreifen	3::igndisp 968,14263 999,14390 937,14391
+Nonnendammallee -> Wattstr.: Mittelstreifen	3::igndisp 1057,14389 999,14390 968,14263
+Kapellenst. -> Nonnendammallee: Mittelstreifen	3::igndisp 938,14457 937,14391 999,14390
+Nonnendammallee -> Kapellenst.: Mittelstreifen	3::igndisp 889,14392 937,14391 938,14457
+Mittelstreifen	3nocross::ignrte 1133,14387 1182,14384 1246,14384 1305,14384 1360,14375
+Nonnendammallee -> Bödikerst.: Mittelstreifen	3::igndisp 1246,14384 1182,14384 1141,14237
+Nonnendammallee -> Voltastr.: Mittelstreifen	3::igndisp 1305,14384 1246,14384 1200,14227
+Voltastr. -> Nonnendammallee: Mittelstreifen	3::igndisp 1200,14227 1246,14384 1182,14384
+Nonnendammallee -> Wehneltst.: Mittelstreifen	3::igndisp 1360,14375 1305,14384 1256,14217
+Mittelstreifen	3nocross::ignrte 1360,14375 1420,14369 1479,14343
+Siemensdamm -> Hefnerst.: Mittelstreifen	3::igndisp 1479,14343 1420,14369 1392,14287
 Straßenbahntrasse	3nocross::ignrte 16095,16331 16260,16282 16416,16236
 Klarastr. -> Suermondtstr.: Straßenbahntrasse	3::igndisp 16234,16203 16260,16282 16095,16331
 Suermondtstr. -> Klarastr.: Straßenbahntrasse	3::igndisp 16416,16236 16260,16282 16234,16203
@@ -1877,7 +1893,7 @@ tragen (ca. 35 Stufen)	0:30:-235 3361,15784
 tragen (4 x 8 Stufen)	0:30:56 1761,3208
 tragen (ca. 30 Stufen)	0:30:53 17757,11761
 tragen (15 Stufen)	0:30:-198 4710,23263
-tragen (Treppe)	0:30:-65 1179,13532
+tragen (ca. 30 Stufen)	0:30:-65 1179,13532
 tragen (7 Stufen)	0:20:-7 9762,16119
 tragen (ca. 10 Stufen)	0:20:-257 -6442,14286
 tragen (ca. 35 Stufen)	0:30:-75 7621,7105
@@ -1970,8 +1986,8 @@ tragen (Treppe, ca. 20 Stufen)	0:25:-108 19163,14981
 tragen (Treppe, ca. 20 Stufen)	0:25:-12 19160,14935
 tragen (Treppe)	0:30:70 89344,-5795
 tragen, langgezogene Stufen (13 Stufen)	0:25:-168 20704,1383
-Drängelgitter	BNP:3:-233:trailer=10 506,14926
-Drängelgitter	BNP:3:-199:trailer=10 47,15571
+Schranke	BNP:1:-227:trailer=3 498,14934
+Schranke und Poller (lichte Breite 80 bis 100cm)	BNP:5:-197:trailer=no 54,15578
 Schranke	BNP:1:-153:trailer=3 14180,3334
 Drängelgitter	BNP:3:11:trailer=10 24958,13798
 Drängelgitter	BNP:3:30:trailer=10 24946,13755
@@ -2035,6 +2051,7 @@ enge Umfahrung	BNP:3:-90:trailer=no 14529,5851
 Schranke	BNP:3:-102:trailer=no 17826,9630
 Einfahrsperre für Autos	BNP:0:7:trailer=2 19003,9800
 sehr enge Stelle	BNP:0:-188:trailer=no 31909,2802
+sehr enge Stelle	BNP:0:-217:trailer=no 1184,13544
 enges Drängelgitter	BNP:5:-206:trailer=no 30862,3816
 Schranke, Durchfahrtsbreite nur 80cm	BNP:3:78:trailer=no -1342,13134
 Schranke, Durchfahrtsbreite nur 60cm	BNP:3:-232:trailer=no -784,16658
@@ -2173,6 +2190,7 @@ Schranke (lichte Breite ca. 120cm)	BNP:2:-50:trailer=8 14448,4501
 Schranke (lichte Breite ca. 120cm)	BNP:2:-53:trailer=8 14709,4307
 Schranke (lichte Breite ca. 100cm)	BNP:3:-45:trailer=10 15179,3901
 Tor	BNP:5:-57 26888,13976
+Am Pankepark: Bauarbeiten, gesperrt	2:inwork 8152,14130 8246,14184
 Theanolte-Bähnisch-Str.: Bauarbeiten, noch gesperrt	2:inwork 11320,13095 11235,13143
 Scharrenstr.: wegen Bauarbeiten komplett gesperrt	2:inwork 10418,12016 10480,12077
 Paul-und-Paula-Ufer: wegen Bodensanierungsarbeiten komplett gesperrt	2:inwork 14884,10508 14906,10587

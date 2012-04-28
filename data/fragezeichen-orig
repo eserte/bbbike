@@ -342,15 +342,6 @@ Am Tierpark: nach den Bauarbeiten vielleicht Radwege/-spuren?	?::inwork 18220,11
 #: next_check: 2011-04-01
 Kohlis/Hultschiner Damm: Ampelanlage in Planung, Realisierung 2011	?::inwork 23810,7946
 # 
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/48re.pdf/file
-#: by: http://www.maerkischeallgemeine.de/cms/beitrag/11913676/61759/Bau-der-neuen-Erschliessungsstrasse-auf-altem-Industriegelaende-in.html
-#: XXX fehlt in Berlin.coords.data
-#: note: wird Radwege bekommen
-#: XXX Eventuell auch "Jürgen-Wohlrabe-Damm"
-#: by: https://www.xing.com/net/spandau/veranstaltungen-153754/sommerfest-2011-5-jahre-technopark-37831174/ (erst ab April 2012)
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/42re.pdf/file?y=2011
-Wohlrabedamm: Wo genau liegt die Straße? Ist sie schon fertiggestellt? Hat die Straße Radwege?	?::inwork 990,14062 1624,13956 1882,14127
-# 
 #: by: http://www.berlin.de/ba-pankow/presse/archiv/20101116.0930.319072.html
 #: next_check: 2012-01-01
 Fr.-Engels-Str.: Fahrradstreifen werden angelegt, Baubeginn ist Herbst 2011	?::inwork 9355,19789 9333,19853 9300,19949 9266,20048 9235,20125 9149,20336
@@ -471,7 +462,6 @@ Humboldtstr. (Potsdam): alte Straße wird hier wieder benannt	?::inwork -12771,-1
 #: next_check: 2010-05-01
 Asphaltierung im Ramingrünzug	?::inwork -3769,14429 -3900,14530 -3941,14603 -4015,14744 -4035,14779
 Radwegbau Welzower Steig	?::inwork 6320,21777 6223,21952 6257,22005 6111,22155 6082,22183 6052,22185 6026,22227 5993,22260 5984,22280 5939,22330 5929,22339
-Radverbindung zwischen Bernhard-Lichtenberg-Str. und Goerdelerdamm	? 3174,14253 3229,14224
 #: XXX an der Germanenstr. gesehen, wie geht es weiter?
 Asphaltierung gemeinsamer Geh- und Radweg (Schönholzer Heide)	? 8304,19475 8248,19490 8148,19584 8119,19598
 #: last_checked: 2011-06-25
@@ -662,8 +652,6 @@ Rubensstr./Innsbrucker Platz: existiert hier ein Radweg? Qualität?	? 6489,7908 6
 #: by: http://farm7.staticflickr.com/6051/6359918217_d76e41d8e1_b.jpg
 Hans-Werner-Klünner-Weg: befindet er sich hier? Qualität? Beleuchtet?	? -2916,12195 -2971,12062 -3112,12020
 # 
-Durchfahrt am KPM: Qualität? Genaue Lage? Ist das vielleicht der Herbert-Lewin-Platz (Ausschilderung?)?	? 5707,11993 5571,11977 5598,12088
-# 
 #: XXX vgl. public imagery
 Dohnenstieg: liegt hier auch Kopfsteinpflaster?	? 2711,6698 2654,6706 2606,6708
 # 
@@ -681,7 +669,6 @@ Nossener Str.: Vorfahrt?	? 24321,14410 24272,14278 24221,14142 24187,14052
 Baltenring: Vorfahrt?	? 23550,13128 23465,13090
 #: XXX_prog: 3nocross for trailer
 Mariendorfer Damm: überqueren mit Anhänger hier wegen Pömpel vielleicht nicht möglich, nochmal prüfen	? 10329,1231
-Buchstr.: Konsequenzen hier? Vielleicht gesperrte Durchfahrt für Autos?	? 6599,14735 6527,14810
 # 
 Groß-Berliner Damm/Sterndamm: genaue Ausschilderung prüfen, insbesondere an der Kreuzung Sterndamm/Südostallee!	? 17705,5223 17645,5328
 # 
@@ -855,8 +842,6 @@ Ortsumfahrung Jüterbog (B101, teilweise auch B102): möglicherweise eine Kraftfah
 Waldweg?	? 24522,50570 24472,50937 24689,51352 24768,52171
 Alternative	? 24081,50440 24472,50937
 #: by ^^^
-Popitzweg: Fußgängerzone?	? 1361,14431 1881,14425
-#XXX del: #: last_checked: 2009-08-08, R1 im Raum Spindlersfeld: zukünftige oder alternative Wegführung?	? 21364,5426 21443,5406 21487,5425 21600,5221 21684,5079 21735,5003 21769,4973 21778,4916 21834,4889 21848,4882 21896,4853 21796,4517
 #: XXX_prog: Verlustzeiten für Wegführungen implementieren (ähnlich wie 3)
 Pappelstr. -> Kastanienallee: hier verliert man durchaus 2 1/2 Minuten bei der Überquerung der Schönhauser!	? 11119,15385 10881,15047 10838,14962
 # Ich glaube, hier passiert nichts: #: by: http://www.agenda21berlin.de/vonwegen/map_tmpvelo.htm vvv Tempelhofer Veloroutenpläne: hmmm, teilweise gibt es hier gar keine Straßen?	? 8934,5095 9025,4871 #: note: laut Marko Preuss kann man hier höchstens Slalom fahren: Tempelhofer Veloroutenpläne: hmmm, teilweise gibt es hier gar keine Straßen?	? 9080,4371 9099,4204 Tempelhofer Veloroutenpläne: Grauwackeweg, Muschelkalkweg, Str. 482: genaue Lage, Qualität?	? 11193,1684 11190,1622 11156,1463 11146,1413 11120,1384 Tempelhofer Veloroutenpläne: Grauwackeweg, Muschelkalkweg, Str. 482: genaue Lage, Qualität?	? 11155,1273 11120,1384 11042,1352 10950,1315 10868,1281 10795,1251 10718,1220 10734,1178 10759,1112
@@ -1892,25 +1877,7 @@ Roedernstr. (Hermsdorf): Qualität?	? 3860,23767 3839,23817 3831,23945 3799,24105
 Schwalbenweg: Einbahnstraße Richtung Westen?	? 19619,-746 19550,-775 19366,-845 19309,-885
 Rohrwebereck: Sind da noch Stichstraßen oder sind das nur Garagenzufahrten?	? -1259,41680 -1243,41659 -1240,41628 -1209,41590 -1212,41562
 Fontanestr. (Lichtenrade): Qualität des Rad/Gehweg-Abschnitts?	? 9779,-605 9822,-608
-Popitzweg - Halemweg: ist der Weg über der U-Bahn auch für Radfahrer befahrbar? Qualität? Geht es über den Halemweg noch weiter?	? 1881,14425 2126,14392 2254,14387 2380,14392
-Haeftenzeile - Weg über der U-Bahn: Durchfahrt für Radfahrer möglich? Qualität?	? 2134,14440 2126,14392
-Schuckertplatz: Qualität?	? 1343,14972 1351,15057
-#: XXX: Einbahn offen Richtung Osten
-#: XXX anonymous meinte Asphalt, Q1, schreibt aber nichts zur Einbahnstraße
-Jungfernsteig: Qualität? Einbahnstraße auch für Radfahrer gültig?	? 862,14463 938,14457
-#: XXX: Einbahn offen Richtung Norden
-Kapellensteig: Qualität? Einbahnstraße auch für Radfahrer gültig?	? 937,14391 938,14457 942,14517
-#: XXX Anika (...mielchen) meint: guter Asphalt, kleinere Oberflächenbeschädigungen, 30er-Zone, aber keine Angabe zur Einbahnstraße
-Wattstr.: Qualität?	? 968,14257 999,14390
-#: XXX: Einbahn offen Richtung Norden
-Wattstr.: Qualität? Einbahnstraße auch für Radfahrer gültig?	? 999,14390 998,14516
-#: XXX: Einbahn offen Richtung Süden
-Grammestr.: Qualität zwischen Nonnendammallee und Jugendweg? Einbahnstraße auch für Radfahrer gültig?	? 1057,14389 1058,14459 1059,14515
-#: XXX: Einbahn offen Richtung Westen
-#: XXX anonymous meint: Kopfsteinpflaster, Q2, aber keine Angaben zur Einbahnstraße
-Halskesteig: Qualität? Einbahnstraße auch für Radfahrer gültig?	? 1166,14458 1058,14459
-Am Laubwald: Qualität?	? 981,15490 1078,15524
-Sternfelder Str.: Qualität?	? 386,14162 367,13991 371,13863 182,13878 169,13851
+#XXX --- keine öffentliche Straße, geschlossenes Tor, keine Straßenschilder, asphaltiert --- Sternfelder Str.: Qualität?	? 386,14162 367,13991 371,13863 182,13878 169,13851
 #: by: http://www.potsdam.de/cms/dokumente/10084122_1189396/4d29ee09/Amtsblatt_9_2011.pdf
 Tannenweg (Potsdam): Qualität?	? -9434,164 -9440,193 -9405,204 -9453,425 -9494,441 -9539,434
 (Wannseestr. - Tannenstr.): genaue Straßenbezeichnungen? Qualität?	? -9568,56 -9381,89 -9389,170
@@ -2036,12 +2003,6 @@ Fintelmannstr.: Qualität?	? -7505,454 -7554,431 -7630,409 -7712,407
 Leo-Baeck-Str. - Seehofstr.: Beschaffenheit des Weges? Nachts beleuchtet?	? 1478,1721 1432,1904 1432,1964 1461,2073 1452,2095 1493,2249
 Von-Canstein-Str. (Dahlwitz-Hoppegarten): Qualität?	? 26880,11479 26957,11450 27007,11422 27165,11294
 # XXX del: hier existiert keine öffentliche Straße: Straße 14 (Neukölln): Qualität? Offen? Ausgeschildert?	? 14133,6187 14116,6277
-Bödikersteig: Qualität? Ist die Straße eine Einbahnstraße? Wenn ja, gilt die Einbahnstraßenregelung nur für Autofahrer oder auch für Radfahrer? Kann der Siemensdamm in Höhe der Straße überquert werden?	? 1141,14237 1182,14384
-Voltastr. (Siemensstadt): Qualität? Kann der Siemensdamm in Höhe der Straße überquert werden?	? 1246,14384 1200,14227
-Wehneltsteig: Kann der Siemensdamm in Höhe des Wehneltsteigs überquert werden?	? 1256,14217 1305,14384
-#: XXX anonymous meint: Kopfsteinpflaster, Q3, enge Straße, q0, schreibt aber nichts zur Einbahnstraßenregelung
-#: XXX ein zweiter anonymous-Eintrag bestätigt: Kopfsteinpflaster, Q3
-Hefnersteig: Qualität? Ist die Straße eine Einbahnstraße? Wenn ja, gilt die Einbahnstraßenregelung nur für Autofahrer oder auch für Radfahrer? Kann der Siemensdamm in Höhe der Straße überquert werden?	? 1420,14369 1364,14191
 Golfweg: Qualität?	? -7394,918 -7985,781 -8136,700
 Malergarten: Qualität?	? -7831,-2230 -7859,-2304
 Reichsbahnstr.: Qualität?	? -4554,1391 -4579,1397 -4648,1334
@@ -2061,8 +2022,6 @@ Feldweg (Bohnsdorf): Qualität? Feldstr. oder Feldweg (Ausschilderung?)?	? 20829,
 # XXX: wo ist diese Straße??? Feldweg|Französisch Buchholz|13127|
 Prinz-Friedrich-Karl-Weg: Qualität?	? -1100,12210 -1172,12336 -824,12557 -646,12658
 Sonnenhof: Qualität?	? 606,9463 612,9471 600,9480 586,9463 590,9456 599,9452 606,9463
-#: XXX anonymous meint: Kopfsteinpflaster, Q2, q4, Privatweg (warum eigentlich?), Einbahnstraße, aber keine Angaben zur Regelung für Radfahrer
-Thaters Privatweg: Qualität? Ist die Straße (teilweise) eine Einbahnstraße? Wenn ja, gilt die Einbahnstraßenregelung nur für Autofahrer oder auch für Radfahrer?	? 3956,14750 3899,14868 3893,14911 3892,14944 4103,15137 4148,15205
 Weg an der Kolonie am Nordgraben: Qualität? Kann man zur Roedernallee und zum Fräsersteig durchfahren?	? 5846,20279 5912,20308 5977,20337 6040,20364 6097,20398 6152,20452 6176,20482 6165,20517 6184,20550
 Fuchsschwanzweg: Qualität? Kann man als Radfahrer zum Weg an der Kolonie am Nordgraben gelangen (ggfs. über eine Treppe?)	? 5842,20451 5904,20327 5912,20308
 Rauhbankzeile: Qualität? Kann man als Radfahrer zum Weg an der Kolonie am Nordgraben gelangen (ggfs. über eine Treppe?)	? 5959,20524 6030,20385 6040,20364
@@ -2472,8 +2431,6 @@ Buckow - Lichterfelde: wo genau ist der Radweg?	? 31634,53303 32692,53191 32718,
 #: XXX unklarer Eintrag von bene...finti: Asphalt, enge Straße, q0, vielleicht war auch die Onkel-Bräsig-Str. gemeint
 #: XXX eventuell ein Eintrag in brunnels-orig notwendig
 Siebenendenweg: Qualität? Ist die gesamte Straße für Autos gesperrt?	? 404,3970 21,4434 -62,4564
-#: XXX Eintrag von Birgit Poethke, aber unklar, ob sie genau diesen Weg meint: "Q3, fester Sandweg, q2, viele Fußgänger, nachts unbeleuchtet"
-TR4 durch den Volkspark Jungfernheide: Qualität/Wegbeschaffenheit? Nachts beleuchtet?	? 1468,15194 1510,15067 1550,15014 2367,14836 2527,14832 2683,14878 2675,14744
 Waldrebensteig: Qualität? Ist die Straße eine Spielstraße?	? -2014,1981 -2174,1933
 Satzkorner Weg: Qualität?	? -1133,1640 -1133,1616
 Wildbergweg: Qualität?	? -846,1737 -841,1675
@@ -2639,10 +2596,7 @@ Ackerplanweg: Qualität?	? 3117,21154 3128,21109
 Freilandweg: Qualität?	? 3071,21801 3156,21832
 Feldmarkweg: Qualität?	? 3304,21205 3314,21165 3458,21206 3450,21244
 Lichtweg: Qualität?	? 1300,18292 1337,18427
-#: note: Siemenssiedlung am Hohenzollernkanal III (HOKA III) vvv
-Straße A: Qualität?	? 1179,15892 1268,15916 1275,15854
-Straße B: Genaue Lage der Straße? Qualität?	? 1233,15889 1207,15868
-#: note ^^^
+#XXX del --- existiert nicht? --- Straße B: Genaue Lage der Straße? Qualität?	? 1233,15889 1207,15868
 #: XXX_osm fehlt bei osm
 Virgiliusstr.: Qualität?	? 2696,21648 2678,21669
 Wickeder Str.: Qualität?	? 2556,18855 2599,18842 2707,18849
@@ -3465,13 +3419,6 @@ Friedrich-Wilhelm-Boelcke-Str. (Potsdam): Qualität?	? -12796,-2488 -12831,-2439 
 #: by: http://www.potsdam.de/cms/dokumente/10057376_761024/a31d30b5/Amtsblatt17_09.pdf (Lage)
 Zur Königlichen Hofbrauerei (Potsdam): Qualität?	? -12813,-2423 -12781,-2376
 # 
-#: XXX fehlt in Berlin.coords.data
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/07re.pdf/file
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/43re.pdf/file?y=2011
-#: last_checked: 2011-03-13 (noch keine Straße sichtbar)
-#: next_check: 2011-07-15
-Ida-von-Arnim-Str.: Wo genau wird die Straße gebaut? Qualität?	? 8169,14267 8452,14298
-# 
 #: XXX fehlt in Potsdam.coords.data PLZ=14476
 Am Golmer Weinberg (Potsdam-Golm): Qualität? Genaue Lage?	? -19225,-261 -19147,-77
 Alter Weinberg (Groß Glienicke): Qualität?	? -9276,7226 -9198,7051
@@ -3701,8 +3648,6 @@ Havelbrücke: Qualität? Nachts beleuchtet?	? -3197,13899 -3445,14033
 #XXX del --- Groß-Ziethener Chaussee: Gehweg für Radfahrer in beide Richtungen freigegeben?	? 15854,666 15757,610 15655,556 15598,526 15425,424 15395,409 15333,378
 #: XXX laut osm Verbundsteinpflaster
 Schwarzer Weg: Qualität?	? 13215,-570 12804,-735
-#: XXX möglicherweise "Anlieger frei"
-Goerdelerdamm - Nonnendamm: Durchfahrt für Radfahrer möglich? Qualität der Fahrbahn? Nachts beleuchtet?	? 3103,14187 3024,14084 2817,14003 2734,13970 2684,13922 2416,13825 2149,13775
 Zugang zum Tegeler Weg: Zugang möglich? Überquerung der Straße möglich?	? 2817,14003 2858,14045
 Däumlingsweg: Qualität?	? 23593,6663 23615,6884
 # XXX bei osm nicht aufzufinden, aber wahrscheinlich sowieso nur ein Weg in einer KGA: Frau-Holle-Weg|Britz|12349|11460,2191

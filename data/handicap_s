@@ -8,11 +8,12 @@ Voßstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg	q3::inwork 8743,1
 Axel-Springer-Str.: Bauarbeiten, Einbahnstraße	q3::inwork; 10136,11529 10166,11592 10201,11631
 Axel-Springer-Str.: Bauarbeiten, Gehwege können schon benutzt werden	q3::inwork 10201,11631 10213,11728
 Invalidenstr. (Mitte): Baustelle, Richtung Alt-Moabit zwischen Gartenstr. und Hessische Str. gesperrt	q4::inwork; 9383,13978 9274,13963 9203,13953 9151,13941 9085,13919 8935,13844 8690,13723
+Scharnhorststr.: Einbahnstraßenregelung, auf Gehweg ausweichen	q3::inwork; 8450,13599 8314,13826
 Alt-Stralau: Bauarbeiten an der Brücke, enge Durchfahrt	q3::inwork 14652,10201 14558,10264
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9890,12161 9875,12257 9869,12297
 Jerusalemer Str.: Bauarbeiten, Einbahnstraße	q3::inwork; 9878,11857 9892,11752
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 9475,12365 9462,12481 9454,12558
-Universitätsstr.: wegen Bauarbeiten Richtung Unter den Linden gesperrt	q4::inwork; 9580,12581 9601,12380
+Universitätsstr.: wegen Bauarbeiten Richtung Unter den Linden gesperrt	q4::inwork 9580,12581 9601,12380
 Helmerdingstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg kann benutzt werden	q4::inwork 14465,11195 14442,11101
 Rathausstr.: Baustelle vor dem Roten Rathaus, eng	q4::inwork 10601,12521 10704,12595
 Rathausstr. zwischen Breitestr. und Poststr.: Fahrbahn wegen Brückenbauarbeiten gesperrt	q4::inwork 10281,12310 10362,12351
@@ -207,7 +208,7 @@ Garnisonkirchplatz: Straßenbahn	q2 10309,12854 10255,12959
 Fürther Str.: Gehweg	q2 5773,10318 5808,10284
 (Zossener Brücke - Mehringplatz): Gehweg	q1 9873,10285 9668,10306
 (Richard-Wagner-Platz - Schustehrusstr.): Gehweg	q3 3763,12279 3701,12279
-Goerdelersteg: enge wendelförmige Rampen	q3 3619,14183 3601,14284 3595,14277
+Goerdelersteg: enge wendelförmige Rampen	q3 3619,14183 3601,14284 3595,14267
 Schneckenbrücke: Rampe	q3 2012,3356 2009,3362 1980,3409 1977,3414
 Radweg eng und bewachsen	q1 5071,14614 5264,14671 5440,14840
 Tunnel S-Bhf. Grunewald: Fußgänger	q2 693,9129 731,9103 884,8954
@@ -410,7 +411,7 @@ Viktoriapark: Fußgänger, kurze Rampe, Pfähle	q1 5013,6003 4981,5939 4957,5894
 (Gaudystr. - Mauerpark): Fußgänger, bei Veranstaltungen in der Max-Schmelling-Halle größere Behinderungen möglich	q3 10473,15549 10256,15482 10186,15463
 (Kurt-Schumacher-Damm - Wasserturm Jungfernheide): Fußgänger	q1 2934,14852 2900,14891 2685,15167 2707,15205 2695,15258 2632,15295
 (Jungfernheide): Fußgänger	q1 2632,15295 2431,15290 2364,15321 2349,15380 2027,15380 1925,15426 1563,15294 1372,15313
-(Jungfernheide): Fußgänger	q1 1415,15190 1468,15194 1498,15196 1535,15111 1735,15071 2039,15083 2053,15036 2376,15036 2683,14878 2784,14826 2900,14891
+(Jungfernheide): Fußgänger	q1 1415,15190 1459,15196 1498,15196 1535,15111 1735,15071 2039,15083 2053,15036 2376,15036 2683,14878 2784,14826 2900,14891
 (Teltowkanalpromenade am Nordufer): Fußgänger, Radfahren offiziell nicht erlaubt	q2 3696,1445 3601,1296 3476,1169 3348,1078 3092,875
 Teltowkanalpromenade: eng, nicht anhängertauglich	q2 2079,-12 1924,-188 1593,-317 1471,-311
 (Wohnanlage Friedastr.): Fußgänger, Bordsteine	q3 16887,11545 16759,11582
@@ -938,6 +939,10 @@ Max-Pallenberg-Pfad: Bordstein	q2 15460,1764 15465,1953
 Straße 618: schmale Straße	q1 16346,481 16320,538 16297,592
 Harry-Liedtke-Pfad: einige Fußgänger	q1 15788,1747 15783,1820 15806,1903 15834,2024 15843,2065 15836,2113
 Gormannstr.: Bordstein	q2 10350,13376 10353,13384
+(Popitzweg - Halemweg): Fußgänger	q2 1884,14412 2126,14392 2254,14387 2380,14392
+(Haeftenzeile - Weg über der U-Bahn): Fußgänger	q1 2135,14475 2126,14392
+(Wohlrabedamm - Reisstr.): Bordstein	q2 1311,14191 1314,14207
+Spreeufer: unter der Rohrdammbrücke sehr eng	q3 1124,13536 1184,13544
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q3 11805,19071 11895,19183 11927,19308
 Ebersstr.: Schüler	q2 7245,8583 7292,8631
 Straße 103 (Niederschönhausen): enge Straße	q1 10914,20065 11051,19789
@@ -1062,8 +1067,8 @@ Hüttenweg: keine abgesenkten Bordsteine an der Kreuzung "Auf dem Grat"	q1 1964,5
 (Südpark): Fußgänger	q1 -3707,11693 -3712,11714 -3732,11772 -3826,11901 -3883,12053 -3985,12056 -4040,12050
 (Südpark): Fußgänger	q1 -4009,11789 -4004,11814 -4070,12006 -4040,12050 -4085,12081 -4117,12199 -4169,12368
 (Glühwürmchenweg - Pionierstr.): Wohngebiet	q1 -5960,16441 -6018,16250
-Schloßpark Charlottenburg: Fußgänger	q1 3231,12749 3127,12793 3055,12973 3020,13234 2996,13255 2980,13332 3003,13355 2953,13489 2950,13552
-Spreeweg: eng und unübersichtlich	q2 2950,13552 2922,13594 2859,13686 2777,13712 2568,13662 2260,13540
+Schloßpark Charlottenburg: Fußgänger	q1 3231,12749 3127,12793 3065,12975 3016,13315 2987,13448 2953,13489 2950,13552
+Spreeweg: eng und unübersichtlich	q2 2950,13552 2922,13594 2910,13607 2902,13665 2859,13686 2777,13712 2568,13662 2402,13602 2321,13572
 Lefèvrestr.: enge Straße	q1 4987,6902 4993,6812 5014,6752 5040,6706 5137,6651 5215,6643
 (Paul-Löbe-Allee - südl. Spreeufer): Biergarten am HDKDW	q4 7741,12586 7710,12585
 (südliches Spreeufer): Biergarten am HDKDW	q4 7745,12603 7710,12585 7670,12576
@@ -1448,7 +1453,8 @@ Im Lesachtal: enge Straße	q0 10617,2226 10559,2252 10549,2257
 Im Lesachtal: enge Straße	q0 10549,2257 10526,2282
 Im Lesachtal: enge Straße	q0 10526,2282 10504,2321
 Rotdornstr.: enge Straße	q1 5139,7206 5141,7158 5121,7132 5085,7109
-Im Eichengrund: enger Weg mit Bäumen mitten auf dem Weg	q3 976,15195 921,15359 901,15386 885,15435 877,15474
+Im Eichengrund: Fußgänger	q1 976,15195 919,15365 902,15362 877,15474
+Im Eichengrund: Fußgänger, Bordstein	q2 919,15365 1009,15400
 Hedwigstr. (Alt-Hohenschönhausen): enge Straße	q1 16616,16046 16505,16096 16515,16207
 Kasinoweg: enge Straße	q1 2624,24710 2444,24950 2364,24886
 Knappenpfad: enge Straße	q1 2471,24709 2410,24837 2364,24886 2340,24884
@@ -1587,10 +1593,10 @@ Genfer Weg: Fußgänger	q1 2995,2119 3150,2113
 Renatenweg: enge Straße	q1 6368,2851 6376,2809 6423,2774 6463,2724
 Renatenweg: Fußgänger	q2 6463,2724 6529,2642
 Weinbrennerweg: enge Straße	q1 6003,19461 6211,19559
-Grammestr.: enge Straße	q1 1057,14389 1028,14251
+Grammestr.: enge Straße	q1 1057,14389 1023,14259
 Hirschsprung: enge Straße	q2 23837,5978 23874,5870
 Wiesenpromenade: enge Straße	q1 23660,5819 23675,5823 23758,5846 23874,5870 23912,5883 23919,5908 23951,5923 23931,5992
-Lenther Steig: enge Straße	q1 1024,14889 1037,14814 1042,14721 1037,14515
+Lenther Steig: enge Straße	q1 1022,14898 1037,14814 1042,14721 1037,14515
 (Klothildestr - Schloßallee): Fußgänger	q1 11068,19494 11081,19456
 Eschenallee (Rosenthal): enge Straße	q1 9460,20644 9479,20535 9498,20435
 S-Bahnhofunterführung Friedenau: Radfahren nicht erlaubt, ggfs. schieben	q4 6160,7074 6243,7033
@@ -1601,7 +1607,7 @@ Pertisauer Weg: enge Straße	q1 6199,1104 6176,1023 6167,933 6163,822 6186,652
 Chorweilerstr.: enge Straße	q1 20036,-122 20143,-93 20223,-72 20302,-51
 Bisonweg: enge Straße	q0 -774,22977 -709,22909 -657,22854 -595,22791 -542,22736
 Flatower Str.: enge Straße	q1 -5049,16987 -4999,16971 -4875,16928 -4821,16914 -4758,16910 -4628,16899 -4319,16879 -4155,16860
-Kroppenstedtweg: Fußgänger haben Vorrang	q2 1058,14898 1035,14996 996,15091 957,15189
+Kroppenstedtweg: Fußgänger haben Vorrang	q2 1056,14906 1035,14996 996,15091 957,15189
 Rübezahlweg: einige Fußgänger	q1 14743,18839 14698,18967 14664,19057 14622,19123 14571,19172 14507,19214 14375,19296 14241,19379 14119,19455 14030,19510
 Gebrüder-Grimm-Weg: Fußgänger, querlaufende Ablaufrinnen	q1 14277,18684 14265,18747 14269,18812 14278,18840 14292,18863 14324,18916 14358,18973 14391,19026 14414,19063 14433,19093 14457,19132 14482,19174 14507,19214 14551,19294
 Charles-H.-King-Str.: enge Straße	q1 -1248,2451 -1401,2391 -1604,2324

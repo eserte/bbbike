@@ -142,7 +142,7 @@ Stolzenfelsstr.	1s:q2 19436,8183 19423,8146 19333,8165 19171,8280 18949,8437 187
 Bersarinplatz	1 13742,12538 13698,12544 13678,12571 13686,12611 13695,12643 13747,12642 13767,12626 13761,12578 13742,12538
 Petersburger Platz	1 13467,12978 13558,12766
 Dernburgstr.	1 2498,10665 2378,10677 2333,10710 2252,11037
-Schuckertdamm	1 746,14817 1024,14889 1058,14898 1109,14911 1202,14935 1343,14972 1465,14963
+Schuckertdamm	1 741,14827 1022,14898 1056,14906 1112,14918 1200,14943 1343,14972 1465,14963
 Am Kleinen Wannsee	1 -5499,1349 -5485,1274 -5535,1204 -5742,1142
 Oberhofer Platz	1 5491,1955 5474,1940 5452,1940 5431,1956 5376,2097 5406,2110 5434,2122 5489,1981 5491,1955
 Scheelestr.	1 5740,1227 5697,1098 5556,984 5493,935 5424,882 5342,845
@@ -328,7 +328,7 @@ Dorotheenstr.	1 18653,8922 18770,8898
 Alte Späthbrücke	2 14466,5087 14544,5123
 # XXX del : XXX_indoor: evtl. nach temp-blockings verschieben Rutherfordstr.: nicht permanent geöffnet	2 19071,2746 19136,2673 19207,2592
 Katzengraben	1 22451,4749 22465,4690
-Schwiegersteig	1 1134,14721 1130,14823 1109,14911
+Schwiegersteig	1 1134,14721 1130,14823 1112,14918
 Moränenweg	1 3208,21425 3304,21205
 #: by: Marcel Länger:
 Graacher Str.	1 14672,17085 14533,17084
@@ -391,7 +391,8 @@ Junker-Jörg-Str.	1 18545,9395 18511,9185 18471,8957 18447,8818
 Walter-Felsenstein-Str.	1 20459,16697 20617,16614 20767,16903
 (Raoul-Wallenberg-Str. - Walter-Felsenstein-Str.)	1 20394,16162 20487,16392
 #: by: Monika Weber-Jeremias (auch für Radfahrer)
-Jugendweg	1 1191,14513 1059,14515 1037,14515 998,14516 942,14517 842,14518
+#: confirmed_by: srt
+Jugendweg	1 1184,14515 1059,14515 1037,14515 998,14516 936,14518 842,14518
 Boschpoler Platz	1 20540,13773 20665,13759
 Kienbergstr.	1 21287,14963 21225,14907 21217,14721 21122,14713
 Engelmannweg	1 4531,18217 4492,18013 4462,17892 4429,17763
@@ -491,7 +492,7 @@ Rieppelstr.	1 851,15155 780,15358 794,15362 772,15460 768,15486
 Harriesstr.	1 768,15486 659,15469 525,15435
 Rapsstr.	1 755,15123 702,15274 693,15335 665,15414 659,15469
 #: by: ^^^
-Im Heidewinkel	1 1065,15229 981,15490 877,15474 772,15460
+Im Heidewinkel	1 1065,15229 1009,15400 978,15496 877,15474 772,15460
 #: note: Luftbild
 Teufelsseestr.	1 454,11159 439,11228
 #: by: Michael Häusler:
@@ -574,8 +575,6 @@ Erkelenzdamm	1s:q3 11117,10326 11094,10261
 Alt-Tempelhof	1 8776,6661 8722,6656
 #: by: Steini (immerlocker)
 Langkofelweg	1 6845,3403 6940,3498 7018,3572
-#: add_fragezeichen: Gilt die Einbahnstraßenregelung auch für Radfahrer oder nur für Autofahrer?
-Heinickeweg	1 2224,14825 2210,14696 2207,14576
 Dornbrunner Str.	1 15954,6297 16043,6414
 #: by: Cornelia (cvpapen...)
 #: confirmed_by: srt
@@ -603,8 +602,7 @@ Georgenstr. (Mitte)	1 9242,12652 9108,12635
 Georgenstr. (Mitte)	1 9117,12705 9242,12652
 #: by: Uwe Majewski
 Schulstr. (Tegel)	1 1953,20149 1794,20110
-#: add_fragezeichen: Ist der Natalissteig eine Einbahnstraße? Wenn ja, gilt die Einbahnstraßenregelung nur für Autofahrer oder auch für Radfahrer?
-Natalissteig	1 1202,14935 1223,14824 1226,14714
+Natalissteig	1 1200,14943 1223,14824 1226,14714
 Alt-Biesdorf	1 20375,11694 20435,11698 20575,11698 21108,11628
 Alt-Biesdorf	1 21108,11628 20963,11618 20633,11651 20549,11659 20375,11694
 #: by: Frank Winterlich:
@@ -623,6 +621,7 @@ Am Langen Weg:	1 -7033,14984 -7024,14880 -7015,14772 -7011,14693 -7013,14578
 #: next_check: 2012-05-15
 Hans-Sachs-Str.	1 3141,4023 3214,4066
 #: by: anonymous
+#: confirmed_by: srt
 Wehneltsteig	1 1256,14217 1305,14384
 #: by: Olaf (ziorjen), Sybille Koppermann, osm
 Bernhard-Bästlein-Str.	1 15595,14041 15593,13768
@@ -714,8 +713,8 @@ Preunelstr.	1 13012,17332 12965,17324 12930,17302 12865,17381
 #: by: ^^^
 Mollstr. (Richtungsfahrbahn)	1::igndisp 11723,13139 11843,13090 11904,13075 11958,13079 11985,13075
 Mollstr. (Richtungsfahrbahn)	1::igndisp 11985,13075 11966,13074 11905,13069 11881,13072 11839,13083 11739,13131 11723,13139
-Nonnendammallee (Richtungsfahrbahn)	1::igndisp -248,14518 -457,14536 -914,14602
-Nonnendammallee (Richtungsfahrbahn)	1::igndisp -925,14631 -248,14518
+Nonnendammallee (Richtungsfahrbahn)	1::igndisp -283,14523 -457,14536 -914,14602
+Nonnendammallee (Richtungsfahrbahn)	1::igndisp -925,14631 -283,14523
 Lötschbergstr.	1s:q3 20161,11715 20150,11512
 #: by: Ulrike Hoffmann:
 #: confirmed_by: srt
@@ -875,10 +874,13 @@ Rubensstr.	1 6429,7876 6307,7893
 Bäumerplan	1 8527,7928 8553,7795
 Bäumerplan	1 8512,7757 8467,7913
 Mierendorffstr.	1 3645,13189 3542,13063
-#: XXX Einbahnstraße auch für Radfahrer gültig?
 Hüttigpfad	1 4810,15000 4887,14931 5057,14824 5107,14781
 (Alex-Wedding-Str. - Karl-Liebknecht-Str.)	1s:q3 11027,13279 11085,13239
 Zwerghuhnweg	1s 15615,410 15565,379
+Grammestr.	1 1057,14389 1058,14459
+Halskesteig	1 1058,14459 1157,14459
+Hefnersteig	1 1364,14191 1392,14287 1420,14369
+Bödikersteig	1 1141,14237 1182,14384
 ######################################################################
 #
 # Potsdam
@@ -1126,6 +1128,8 @@ Kissingenstr.: Mittelstreifen	3nocross 11021,17889 11045,17893 11111,17905
 #: note: ^^^
 #: by: Tobias (Lung)
 Siemensdamm: Mittelstreifen	3nocross 1133,14387 1057,14389 999,14390 937,14391 889,14392
+Siemensdamm: Mittelstreifen	3nocross 1133,14387 1182,14384 1246,14384 1305,14384 1360,14375
+Siemensdamm: Mittelstreifen	3nocross 1360,14375 1420,14369 1479,14343
 Suermondtstr: Straßenbahntrasse	3nocross 16095,16331 16260,16282 16416,16236
 Suermondtstr: Straßenbahntrasse	3nocross 16416,16236 16515,16207 16660,16165
 #: by: Vicky (senchi):
@@ -1485,7 +1489,7 @@ tragen (4 x 8 Stufen)	0:30 1761,3208
 #: note: Luftbild (Stufenanzahl)
 tragen (ca. 30 Stufen)	0:30 17757,11761
 tragen (15 Stufen)	0:30 4710,23263
-tragen (Treppe)	0:30 1179,13532
+tragen (ca. 30 Stufen)	0:30 1179,13532
 tragen (7 Stufen)	0:20 9762,16119
 tragen (ca. 10 Stufen)	0:20 -6442,14286
 #: note: Luftbild (Stufenanzahl)
@@ -1621,10 +1625,10 @@ tragen, langgezogene Stufen (13 Stufen)	0:25 20704,1383
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
 #: by: Gerhard (no email) and anonymous vvv
-#: XXX: Standardwerte genommen vvv
-Drängelgitter	BNP:3::trailer=10 506,14926
-Drängelgitter	BNP:3::trailer=10 47,15571
-#: XXX ^^^
+#: corrected_by: srt (Drängelgitter -> Schranke) vvv
+Schranke	BNP:1::trailer=3 498,14934
+Schranke und Poller (lichte Breite 80 bis 100cm)	BNP:5::trailer=no 54,15578
+#: corrected_by ^^^
 #: by: ^^^
 Schranke	BNP:1::trailer=3 14180,3334
 Drängelgitter	BNP:3::trailer=10 24958,13798
@@ -1698,6 +1702,8 @@ Schranke	BNP:3::trailer=no 17826,9630
 Einfahrsperre für Autos	BNP:0::trailer=2 19003,9800
 #: XXX_prog: "künstlicher" Eintrag, um Anhänger auszusperren, siehe auch handicap_s
 sehr enge Stelle	BNP:0::trailer=no 31909,2802
+#: XXX_prog: "künstlicher" Eintrag, um Anhänger auszusperren, siehe auch handicap_s
+sehr enge Stelle	BNP:0::trailer=no 1184,13544
 enges Drängelgitter	BNP:5::trailer=no 30862,3816
 Schranke, Durchfahrtsbreite nur 80cm	BNP:3::trailer=no -1342,13134
 Schranke, Durchfahrtsbreite nur 60cm	BNP:3::trailer=no -784,16658
@@ -1910,6 +1916,10 @@ Tor	BNP:5 26888,13976
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: last_checked: 2012-04-28
+#: next_check: 2012-07-15
+Am Pankepark: Bauarbeiten, gesperrt	2:inwork 8152,14130 8246,14184
+# 
 #: last_checked: 2012-04-20
 #: next_check: 2012-06-01
 Theanolte-Bähnisch-Str.: Bauarbeiten, noch gesperrt	2:inwork 11320,13095 11235,13143
@@ -1970,7 +1980,7 @@ Tegeler Hafen: Weg gesperrt	2 1630,20731 1668,20670 1687,20645 1697,20623 1721,2
 #: next_check: 2012-06-15
 Hüttenweg: Sperrung wegen Bau an der Autobahn, wahrscheinlich bis Mitte Juni 2012	2:inwork -739,6838 -927,6888
 # 
-#: last_checked: 2012-03-16
+#: last_checked: 2012-04-28
 #: next_check: 2012-07-15
 #: note: abgeschlossener Zaun
 Helga-Hahnemann-Str.: gesperrt	2:inwork 9415,13315 9408,13282
@@ -1992,13 +2002,12 @@ Bebelplatz: Bauarbeiten an der Staatsoper	2:inwork 9743,12239 9702,12307 9734,12
 #: next_check: ^^^
 #: last_checked: ^^^
 # 
-#: last_checked: 2012-03-27
+#: last_checked: 2012-04-28
 #: next_check: 2012-05-15
 Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 
-#: XXX wird es jemals wieder öffentlich befahrbar sein?
-#: last_checked: 2011-06-12
-#: next_check: 2012-08-01
+#: last_checked: 2012-04-28
+#: next_check: 2012-07-15
 Boyenweg - Uferweg: wegen Bauarbeiten gesperrt	2:inwork 7938,14426 7886,14518 7787,14473
 # 
 #: last_checked: 2011-12-25
@@ -2023,7 +2032,7 @@ Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,127
 #XXX --- siehe http://www.flickr.com/photos/h-e-n-r-y/5260386593/ #: last_checked: 2010-11-05 --- #: next_check: 2010-12-01 --- #: note: Eröffnung des Hotels im Dezember 2010 --- #: XXX Neubewertung für handicap_s notwendig! --- Spittelmarkt: wegen Bauarbeiten gesperrt	2:inwork 10166,11592 10153,11666 10213,11728
 #XXX del --- #: by: http://www.kondorwessels.com/index.php?id=356 (Fertigstellung) --- #: last_checked: 2011-11-11 --- #: next_check: 2011-11-21 --- Elisabeth-Mara-Str.: Bauarbeiten bis zum Frühjahr 2011	2:inwork 10506,11567 10320,11627
 #XXX del --- #: last_checked: 2010-09-05 --- #: next_check: 2011-09-01 --- Rhinstr.: neues Wohngebiet, Weg gesperrt	2:inwork 18015,13846 17300,14133
-#XXX del --- Hinweis by Monika W-J, Radweg wieder existent seit Sommer 2012: --- #: by: Ulrike Orlowski --- #: by: http://asp.vmzberlin.com/VMZ_LSBB_MELDUNGEN_WEB/Meldungskarte.jsp?back=true&map=true&x=52.53578&y=13.31063&zoom=13&meldungId=IM_014510 --- #: next_check: 2011-06-30 --- Radweg parallel zur Autobahn ist wegen Bauarbeiten am BAB gesperrt	2:inwork 5062,14681 4676,14534 3707,14303 3595,14277
+#XXX del --- Hinweis by Monika W-J, Radweg wieder existent seit Sommer 2012: --- #: by: Ulrike Orlowski --- #: by: http://asp.vmzberlin.com/VMZ_LSBB_MELDUNGEN_WEB/Meldungskarte.jsp?back=true&map=true&x=52.53578&y=13.31063&zoom=13&meldungId=IM_014510 --- #: next_check: 2011-06-30 --- Radweg parallel zur Autobahn ist wegen Bauarbeiten am BAB gesperrt	2:inwork 5062,14681 4676,14534 3705,14290 3595,14277
 #XXX del --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1002/nachricht3772.html --- #: next_check: 2010-10-01 --- Brücke über A10: Sperrung vom 15.02.2010 bis 01.10.2010	2:inwork 15337,24593 15490,24848
 #XXX del --- #: last_checked: 2010-09-11 --- #: next_check: 2010-12-31 --- #: XXX der Neubau wird "N" oder "NH" sein und Radwege haben --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0907/nachricht3563.html --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1005/nachricht3870.html --- #: by: http://www.altglienicke.de/aktuell.php : Sperrung aufgehoben (20.05.11) --- Wegedornbrücke: Vollsperrung, Neubau	2:inwork 20385,593 20442,564 20510,530 20534,501
 # 
