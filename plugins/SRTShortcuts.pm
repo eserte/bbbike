@@ -578,6 +578,9 @@ EOF
 		),
 	       ],
 	      ],
+	      [Button => $do_compound->("Fragezeichen on route"),
+	       -command => sub { fragezeichen_on_route() },
+	      ],
 	      "-",
 	      [Cascade => $do_compound->("Rare or old"), -menu => $rare_or_old_menu],
 	      "-",
@@ -2557,6 +2560,53 @@ sub do_winter_optimization {
 	    }
 	    $pen;
 	};
+    }
+}
+
+sub fragezeichen_on_route {
+    eval {
+	require File::Temp;
+	require Route;
+	require Route::Heavy;
+	my($tmp1fh,$tmp1file) = File::Temp::tempfile(SUFFIX => ".bbr", UNLINK => 1) or die $!;
+	my($tmp2fh,$tmp2file) = File::Temp::tempfile(SUFFIX => ".bbd", UNLINK => 1) or die $!;
+	main::load_save_route(1, $tmp1file);
+	my $s = Route::as_strassen($tmp1file,
+				   name => 'Route',
+				   cat => 'X',
+				   fuzzy => 0,
+				  );
+	if (!$s) {
+	    die "$tmp1file lässt sich nicht konvertieren";
+	}
+	$s->write($tmp2file);
+
+	my $res = `$bbbike_rootdir/miscsrc/fragezeichen_on_route.pl $tmp2file`;
+	if (!$res) {
+	    die "Cannot get any fragezeichen on route (from $tmp2file)";
+	}
+
+	unlink $tmp1file;
+	unlink $tmp2file;
+    
+	my $token = 'fragezeichen_on_route';
+	my $t = main::redisplay_top($main::top, $token, -title => 'Fragezeichen on route');
+	if (!$t) {
+	    $t = $main::toplevel{$token};
+	    $_->destroy for ($t->children);
+	}
+	my $txt = $t->Scrolled('ROText', -font => $main::font{'fixed'}, -scrollbars => "ose")->pack(qw(-fill both -expand 1));
+	$txt->insert("end", $res);
+	$t->Button(-text => "Print",
+		   -command => sub {
+		       open my $ofh, "|-", "lpr" or die $!;
+		       print $ofh $res;
+		       close $ofh or die $!;
+		       main::status_message("Sent to printer", "infodlg");
+		   })->pack;
+    };
+    if ($@) {
+	main::status_message("An error happened: $@", "error");
     }
 }
 
