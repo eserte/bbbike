@@ -311,6 +311,7 @@ sub Route::simplify_for_gps {
 			    last if length($index) > $cmptwpt->freelength; # XXX -> move into a constant? make dependent on waypointlength-fixedlength?
 			    $cmptwpt->set_index($index);
 			    $ident = $cmptwpt->shorten;
+			    next if $ident =~ m{^\s} || $ident =~ m{\s$}; # neither Garmin nor gpsman like waypoint names with whitspace at beginning or end
 			    last TRY if (!exists $idents{$ident} && !exists $waypointscache->{$ident});
 			}
 		    }
