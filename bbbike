@@ -9604,6 +9604,7 @@ sub load_save_route {
     status_message("");
     my $path;
     my $ext = $bbbike_route_ext;
+    my $interactively_selected_filename = 0;
     if (!defined $file) {
 	my $method = $save ? "getSaveFile" : "getOpenFile";
 	$file = $top->$method
@@ -9619,6 +9620,7 @@ sub load_save_route {
 	     ));
 	return if !defined $file;
 	$oldpath = dirname $file;
+	$interactively_selected_filename = 1;
     }
     if (!-f $file && !file_name_is_absolute($file)) { # unvollständiger Dateiname
         $file = catfile($bbbike_routedir, "$file.$ext");
@@ -9644,7 +9646,7 @@ sub load_save_route {
 		die M"Leere Routendatei";
 	    }
 
-	    add_last_loaded($file, $last_loaded_obj);
+	    add_last_loaded($file, $last_loaded_obj) if $interactively_selected_filename;
 	    @coords = ();
 	    my $i;
 	    my($minx, $miny, $maxx, $maxy);
@@ -9708,7 +9710,7 @@ sub load_save_route {
 	if ($@) {
 	    status_message($@, 'err');
 	} else {
-	    add_last_loaded($file, $last_loaded_obj);
+	    add_last_loaded($file, $last_loaded_obj) if $interactively_selected_filename;
 	}
     }
 }
