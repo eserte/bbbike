@@ -846,7 +846,12 @@ sub write {
 
 sub header_as_string {
     my $self = shift;
-    my $s = "% Written by $0 [" . __PACKAGE__ . "]\n\n";
+    require POSIX;
+    # deliberately not following the exact date/time format used in gpsman:
+    # - use month number instead of abbreviated name
+    # - use timezone offset instead of name
+    my $datetime = POSIX::strftime("%Y-%m-%d %H:%M:%S %z", localtime);
+    my $s = "% Written by $0 [" . __PACKAGE__ . "] $datetime\n\n";
     # XXX:
     $s .= "!Format: " . join(" ",
 			     $self->_POSITION_FORMAT_FOR_WRITING,
