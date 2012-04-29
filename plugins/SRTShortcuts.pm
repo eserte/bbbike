@@ -2563,6 +2563,8 @@ sub do_winter_optimization {
     }
 }
 
+use vars qw($fragezeichen_on_route_nextcheck_only);
+$fragezeichen_on_route_nextcheck_only = 1;
 sub fragezeichen_on_route {
     eval {
 	require File::Temp;
@@ -2581,9 +2583,10 @@ sub fragezeichen_on_route {
 	}
 	$s->write($tmp2file);
 
-	my $res = `$bbbike_rootdir/miscsrc/fragezeichen_on_route.pl $tmp2file`;
+	my $cmdline = "$bbbike_rootdir/miscsrc/fragezeichen_on_route.pl" . ($fragezeichen_on_route_nextcheck_only ? " -nextcheck-only" : "") . " $tmp2file";
+	my $res = `$cmdline`;
 	if (!$res) {
-	    die "Cannot get any fragezeichen on route (from $tmp2file)";
+	    die "Cannot get any fragezeichen on route (using $cmdline)";
 	}
 
 	unlink $tmp1file;
@@ -2597,13 +2600,18 @@ sub fragezeichen_on_route {
 	}
 	my $txt = $t->Scrolled('ROText', -font => $main::font{'fixed'}, -scrollbars => "ose")->pack(qw(-fill both -expand 1));
 	$txt->insert("end", $res);
-	$t->Button(-text => "Print",
-		   -command => sub {
-		       open my $ofh, "|-", "lpr" or die $!;
-		       print $ofh $res;
-		       close $ofh or die $!;
-		       main::status_message("Sent to printer", "infodlg");
-		   })->pack;
+	my $bf = $t->Frame->pack(-fill => 'x');
+	$bf->Button(-text => "Print",
+		    -command => sub {
+			open my $ofh, "|-", "lpr" or die $!;
+			print $ofh $res;
+			close $ofh or die $!;
+			main::status_message("Sent to printer", "infodlg");
+		    })->pack(-side => "left");
+	$bf->Checkbutton(-text => 'nextcheck only',
+			 -variable => \$fragezeichen_on_route_nextcheck_only,
+			 -command => sub { fragezeichen_on_route() },
+			)->pack(-side => 'left');			     
     };
     if ($@) {
 	main::status_message("An error happened: $@", "error");
