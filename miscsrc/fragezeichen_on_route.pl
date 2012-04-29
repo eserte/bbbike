@@ -16,6 +16,8 @@ use strict;
 use FindBin;
 use lib "$FindBin::RealBin/..", "$FindBin::RealBin/../lib";
 
+use Getopt::Long;
+
 use Strassen::Core;
 use Strassen::Util;
 
@@ -32,11 +34,15 @@ EOF
 my $formatter = 'text80'; # XXX more formatters later, use Getopt::Long
 my $formatter_obj = FragezeichenOnRoute::Formatter->factory($formatter);
 
+my $nextcheck_only;
+GetOptions("nextcheck-only" => \$nextcheck_only)
+    or usage;
+
 my $route_file = shift
     or usage "Please supply route file as .bbd";
 my $route = Strassen->new_stream($route_file);
 
-my $fz_file = "$FindBin::RealBin/../tmp/fragezeichen-outdoor.bbd";
+my $fz_file = "$FindBin::RealBin/../tmp/" . ($nextcheck_only ? "fragezeichen-outdoor-nextcheck.bbd" : "fragezeichen-outdoor.bbd");
 my $fz = Strassen->new_stream($fz_file);
 my %fz_coord_to_rec;
 $fz->read_stream
