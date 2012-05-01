@@ -749,20 +749,24 @@ Wuhlewanderweg: guter Verbundsteinbelag	Q0 22240,6118 22172,5928 22135,5882 2208
 #: next_check: 2012-07-01
 Wuhlewanderweg: Verbundsteine, teilweise etwas uneben	Q1 22085,5873 21846,5856 21744,5804 21602,5685
 Hämmerlingstr.: Asphalt	Q0 21683,6946 21774,6880 21833,6810 21861,6719 21913,6554 21984,6317 22000,6245 22033,6144 22075,5996 22083,5899 22085,5873 22089,5776 22092,5673 22095,5585
-Dorfstr.: schlechtes Kopfsteinpflaster, teilweise gut befahrbare Banketten	Q2- 30357,3555 30319,3511 30281,3479 30201,3375 30188,3301 29902,3104 29959,3031
+Dorfstr.: schlechtes Kopfsteinpflaster, teilweise gut befahrbare Banketten	Q2- 30357,3555 30319,3511 30281,3479 30201,3375 30188,3301 29998,3170 29902,3104 29921,3079 29959,3031
+Dorfstr.: schlechtes Kopfsteinpflaster, teilweise gut befahrbare Banketten	Q2- 29921,3079 29998,3170
 Dorfstr. (Rahnsdorf): unbefestigter Weg	Q2 30319,3511 30293,3520 30267,3520 30240,3503
 Dorfstr. (Rahnsdorf): Asphalt	Q0 30240,3503 30224,3483 30201,3375
 Mühlenweg: Kopfsteinpflaster	Q2 30345,3661 30360,3605 30357,3555
-Rialtoring: Kopfsteinpflaster	Q2 31139,3497 31078,3372 31054,3282
+Rialtoring: Kopfsteinpflaster	Q2 31139,3497 31078,3372
+Rialtoring: Asphalt	Q0 31078,3372 31054,3282
 Rialtoring: Beton/Asphalt	Q0 31054,3282 31012,3124 31002,3045 30989,2949 30962,2787
-Biberpelzstr.: Kopfsteinpflaster	Q2 31514,2755 31495,2753 31463,2748
-Biberpelzstr.: Kopfsteinpflaster	Q2 31434,2729 31396,2713
+#: XXX nicht ganz sicher, Qualität nochmal prüfen! (früher Kopfsteinpflaster, Q2)
+Biberpelzstr.: Asphalt	Q0 31514,2755 31495,2753 31463,2748
+#: XXX nicht ganz sicher, Qualität nochmal prüfen! (früher Kopfsteinpflaster, Q2)
+Rialotring: Asphalt	Q0 31434,2729 31396,2713
 Biberpelzstr.: Beton	Q0 31396,2713 31236,2702 30962,2787
 Biberpelzstr.: Asphalt	Q0 31984,2386 31924,2523 31789,2636 31703,2707 31647,2729 31565,2762 31514,2755
 Biberpelzstr.: Asphalt	Q0 31463,2748 31434,2729
 #: by: Sandra Falkenhagen [AM]
 (Pelzlake): Asphalt	Q0 32155,1863 32121,1850 31944,1859 31789,1787 31185,2026 31063,2191
-Am Kleinen Müggelsee: asphaltierter Waldweg	Q0 30003,2406 29902,2379 29738,2467 29532,2556 28878,2896 28796,2918 28764,2955 28753,3066 28729,3084
+Am Kleinen Müggelsee: asphaltierter Waldweg	Q0 30003,2406 29902,2379 29738,2467 29532,2556 28872,2900 28802,2909 28764,2955 28753,3066 28729,3084
 Koppelweg (Britz): Asphalt	Q0 12543,4386 12288,4378 12231,4365 12173,4350 11937,4353 11814,4351 11744,4346 11671,4343 11576,4339 11480,4335 11376,4331 11244,4325
 Limastr.: Kopfsteinpflaster	Q2 -1102,3345 -1118,3356 -1195,3503 -1204,3662 -1230,3780 -1277,3854 -1360,4014
 Richtung Grunewaldturm: Waldweg, meist OK, einige sandige Abschnitte	Q1 -1638,9152 -1857,8964 -2368,8457 -2386,8282 -2561,8110 -2890,7994 -3212,8024 -3536,7856
@@ -778,7 +782,9 @@ Am Langen See: Waldweg, meist OK, teilweise Wurzeln und grober Kies	Q1- 23747,12
 Zur Fähre: Waldweg	Q2 28958,3273 29061,3358 29084,3331
 #: by: (URL existiert nicht mehr) http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20060629.1530.43277.html)
 #: by: (URL existiert nicht mehr) http://www.radzeit.de/gallery2/v/Radfahren+in+der+Stadt/Treptow-Koepenick/R_1_Mueggelsee_003.JPG.html
-Weg am Müggelsee: Schotter	Q1 28829,3295 28723,3283 28695,3245 28485,3206 27984,2995 27732,2671 27528,2469 27314,2282 27218,2300
+Weg am Müggelsee: Schotter	Q1 28668,3297 28680,3240 28485,3206 27984,2995 27732,2671 27528,2469 27314,2282 27218,2300
+Weg am Müggelsee: fester Waldweg	Q1 27081,2528 27135,2500 27173,2444 27267,2414 27363,2448 27471,2527 27565,2637 27743,2842 27822,2910 27937,3016 28273,3143 28496,3253 28588,3285 28668,3297 28852,3293 28852,3277
+Weg am Müggelsee: Asphalt	Q0- 27081,2528 26989,2570 26859,2596 26627,2610 26457,2660 26339,2667 26158,2647 26006,2615
 Radweg am Müggelsee: asphaltiert	Q0 27218,2300 26805,2381 26459,2440 26026,2532 25948,2474
 Rheinsteinstr.: Kopfsteinpflaster	Q2 18998,8784 19078,8817 19120,8835
 Rheinsteinstr.: asphaltiert	Q0 19120,8835 19173,8857
@@ -1515,10 +1521,10 @@ Nalepastr.: Beton, Eisenbahnschienen	Q1+ 17042,7685 17043,7617
 Nalepastr.: fester enger Sandweg	Q2 17043,7512 17043,7617
 Nalepastr.: Beton, Eisenbahnschienen	Q1+ 17043,7512 17211,7265
 Nalepastr.: sehr guter Asphalt	Q0 17211,7265 17296,7156 17352,7051 17459,6854 17514,6754 17555,6680 17614,6571
-Ernst-Grube-Str.: Asphalt	Q0 21364,5426 21363,5336
+Ernst-Grube-Str.: Asphalt	Q0 21364,5430 21363,5336
 Ernst-Grube-Str.: Asphalt mit Schäden	Q1 21363,5336 21362,5289 21345,5157 21343,5140 21324,4986
 Ernst-Grube-Str.: Kopfsteinpflaster	Q2 21324,4986 21306,4876 21300,4837 21264,4809 21332,4655
-Eiselenweg: Asphalt	Q0 21206,5420 21364,5426 21443,5406
+Eiselenweg: Asphalt	Q0 21206,5420 21364,5430 21447,5414
 Ahornallee: asphaltiert	Q0 21324,4986 21375,4974 21454,4928 21509,4900
 Ahornallee: Kopfsteinpflaster	Q2 21509,4900 21607,4850 21684,4814
 Mentzelstr.: Kopfsteinpflaster	Q2 21726,4896 21684,4814 21579,4579
@@ -1600,14 +1606,17 @@ Flemmingstr. (Köpenick): Kopfsteinpflaster	Q2 21848,4882 21726,4537
 Flemmingstr. (Köpenick): Asphalt	Q0 21848,4882 21856,4910
 Gutenbergstr.: Asphalt	Q0 21796,4517 21896,4853 21848,4882
 Färberstr.: Kopfsteinpflaster, OK	Q1 21494,4605 21607,4850
-Eiselenweg - Uferweg: etwas sandig	Q2 21443,5406 21487,5425
+Eiselenweg - Uferweg: etwas sandig	Q2 21447,5414 21487,5425
 #: XXX Umbau in Asphaltwege
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20110922.0700.359578.html
-#: next_check: 2011-10-31
-(Uferweg, Mentzelpark): hauptsächlich feiner Schotter	Q1 21487,5425 21600,5221 21684,5079 21735,5003 21769,4973 21821,4918 21834,4889
-(Mentzelpark): Asphalt	Q0 21769,4973 21778,4916 21834,4889 21848,4882
-Färberstr. - Uferweg: wassergebundener Belag	Q1 21675,4989 21665,5035 21684,5079
-Färberstr. - Uferweg: wassergebundener Belag	Q1 21675,4989 21735,5003
+#: last_checked: 2012-05-01
+#: next_check: 2012-07-15
+(Uferweg, Mentzelpark): hauptsächlich feiner Schotter	Q1 21487,5425 21600,5221 21680,5079 21696,5053
+(Uferweg, Mentzelpark): Asphalt	Q0 21696,5053 21740,5004 21761,4979
+(Uferweg, Mentzelpark): hauptsächlich feiner Schotter	Q1 21761,4979 21821,4918 21834,4889
+(Mentzelpark): Asphalt	Q0 21761,4979 21778,4916 21834,4889 21848,4882
+Färberstr. - Uferweg: wassergebundener Belag	Q1 21675,4989 21665,5035 21680,5079
+Färberstr. - Uferweg: wassergebundener Belag	Q1 21675,4989 21740,5004
 #: note: von der S-Bahn aus gesehen:
 Glanzstr.: Asphalt	Q0 16323,6998 16430,6880 16588,6724
 Heinrich-Lassen-Park: wassergebundener Belag	Q1 6664,8787 6740,8682 6815,8691 6912,8617
@@ -2421,12 +2430,13 @@ Wildensteiner Str.: schlechtes Kopfsteinpflaster	Q3 18528,8331 18416,8163
 Wildensteiner Str.: gutes Kopfsteinpflaster	Q1- 18416,8163 18365,8094 18333,8059
 Am Carlsgarten: Asphalt	Q0 18709,8423 18799,8413 18877,8368 18956,8323 19119,8209 19208,8142 19334,8046 19372,8012
 Am Carlsgarten: Beton	Q0- 19372,8012 19460,7954
+#: XXX hat sich die Qualität gebessert?
 (Am Carlsgarten - Waldowallee): Asphalt, teilweise nur mäßig	Q2 19460,7954 19504,8003 19558,8064
 Maria-Matray-Str.: Asphalt	Q0 19208,8142 19195,8125 19176,8098 19157,8070 19133,8038
 Krähenwinkel: Verbundsteinpflaster	Q1+ 19195,8125 19105,8188 19044,8103
 Weideplan: Verbundsteinpflaster	Q1+ 19176,8098 19128,8131
 Binnendüne: Verbundsteinpflaster	Q1+ 19157,8070 19110,8105
-Lisbeth-Stern-Str.: Asphalt	Q0 19258,7943 19198,7985 19133,8038 19068,8082
+Lisbeth-Stern-Str.: Asphalt	Q0 19258,7943 19229,7963 19198,7985 19133,8038 19068,8082
 Lisbeth-Stern-Str.: Verbundsteinpflaster	Q1+ 19068,8082 19044,8103
 An der Karlshorster Heide: Asphalt	Q0 19198,7985 19168,7942 19094,7833 19061,7904 19050,7931
 An der Karlshorster Heide: Kopfsteinpflaster	Q2 19050,7931 19031,7974
@@ -2897,11 +2907,7 @@ Appelbacher Weg: Asphalt	Q0 27453,1229 27450,1182 27514,1129 27718,946 27780,893
 Philipp-Jacob-Rauch-Str.: Verbundsteinpflaster	Q0- 27615,1245 27573,1279 27516,1300 27476,1287 27344,1329 27229,1359
 Johann-Jacob-Baeyer-Str.: Asphalt	Q0 27977,1187 27810,987
 Johann-Jacob-Baeyer-Str.: Asphalt	Q0 27863,943 27810,987 27568,1188
-#: by: osm
-#: confirmed_by: srt
-Plutoweg: unbefestigt	Q2 30965,3391 30811,3416 30750,3468
-Plutoweg: Asphalt	Q0 31078,3372 30965,3391
-Plutoweg: Asphalt	Q0 30366,3681 30499,3632 30608,3617 30750,3468
+Plutoweg: Asphalt	Q0 31078,3372 30965,3391 30811,3416 30750,3468 30608,3617 30499,3632 30366,3681
 Treptower Park: Asphalt	Q0 14310,9692 14316,9542 14347,9452 14398,9373 14485,9271 14580,9200
 Treptower Park: Asphalt, einige Wuzelschäden	Q1+ 14316,9542 14384,9565 14512,9528 14635,9441 14748,9420
 Treptower Park: Asphalt	Q0 14529,9141 14580,9200 14748,9420 14780,9480
@@ -3398,15 +3404,15 @@ Mariannensteig: unbefestigte Straße	Q2 31506,3061 31454,3045
 Grenzweg (Wilhelmshagen): unbefestigte Straße	Q2 30572,3048 30651,3041 30793,3029 30886,3003
 Grenzweg (Wilhelmshagen): unbefestigte Straße	Q2 30770,2764 30880,2972 30886,3003
 Grenzweg (Wilhelmshagen): Asphalt	Q0 30886,3003 30965,3391
-Schleiengang: unbefestigte Straße	Q2 30634,2980 30651,3041 30657,3077 30657,3107 30663,3128
-Schleiengang: Asphalt	Q0 30663,3128 30673,3166 30705,3278 30749,3431 30750,3468
-Schleiengang [16 15 14]: unbefestigte Straße, schlammig	Q3 30705,3278 30613,3298
+Schleiengang: unbefestigte Straße	Q2 30634,2980 30651,3041 30657,3077 30657,3107 30658,3127
+Schleiengang: Asphalt	Q0 30658,3127 30668,3166 30699,3278 30742,3435 30750,3468
+Schleiengang [16 15 14]: unbefestigte Straße, schlammig	Q3 30699,3278 30613,3298
 Schleiengang [16 15 14]: unbefestigte Straße	Q2 30613,3298 30566,3306
-Blumeslake: Asphalt	Q0 30369,3103 30532,3139 30673,3166
+Blumeslake: Asphalt	Q0 30369,3103 30532,3139 30668,3166
 Straße 545 [Nr. 2]: unbefestigte Straße	Q2 30566,3306 30505,3323
 Straße 545: unbefestigte Straße, zweispurig, schlammig	Q3 30566,3306 30532,3139
 Straße 573: unbefestigte Straße	Q2 30610,3442 30613,3298
-Straße 546: unbefestigte Straße	Q2 30366,3037 30369,3103 30361,3161 30353,3218 30310,3275
+Straße 546: unbefestigte Straße	Q2 30369,3103 30361,3161 30353,3218 30310,3275
 Straße 546 [Erschließung]: unbefestigte Straße	Q2 30361,3161 30233,3118
 Zu den Straßen 549 und 546: unbefestigte Straße	Q2 30188,3301 30204,3296 30310,3275
 (KGA Rahnsdorf Süd, Birkenweg): unbefestigte Straße	Q2 30310,3275 30345,3277 30389,3314 30393,3437 30378,3501
@@ -3753,13 +3759,13 @@ Privatstr. 659: sandige Straße	Q2- 29196,2548 28898,2775
 (R1): Asphalt	Q0 27218,2300 27214,2281 27761,2124
 Straße zum Müggelhort: Asphalt	Q0+ 28729,3084 28639,3005 28442,2926 28359,2722 28148,2544 27972,2503 27849,2400 27761,2124
 Straße zum Müggelhort: Asphalt	Q0 27761,2124 27599,1521
-(Zum Hotel Müggelsee): Beton	Q0- 26713,2064 26805,2381 26836,2480 26868,2580
+(Zum Hotel Müggelsee): Beton	Q0- 26713,2064 26805,2381 26836,2480 26859,2596
 Müggelschlößchenweg: Asphalt	Q0 25385,4414 25132,4385 24181,4270 24135,4264 23879,4233 23753,4218
 Müggelschlößchenweg: Beton	Q0 23753,4218 23655,4205 23435,4179
 Strandschloßweg: Asphalt/Beton	Q0 23368,3894 23442,3892 23749,3883 23925,3886
 Strandschloßweg: Feinschotter	Q1 23925,3886 24147,3888 24321,3886
 Strandschloßweg: Waldweg, Wurzeln	Q2 24321,3886 24869,3879
-Strandschloßweg: Waldweg, Schotter	Q1- 24869,3879 25052,3877 25262,3828
+Strandschloßweg: Waldweg, Schotter	Q1- 24869,3879 25052,3877 25193,3844 25262,3828
 Johannes-Kraatz-Str.: Asphalt	Q0 18932,5926 18870,5833 18818,5756 18771,5686
 Peter-Behrens-Str.: Asphalt	Q0 19024,5830 18925,5688 18877,5618
 Paul-Tropp-Str.: Asphalt	Q0 19097,5686 19042,5607
@@ -6891,6 +6897,12 @@ Wohlrabedamm: Asphalt	Q0 984,14086 1058,14060 1216,13978 1381,13939 1559,13938 1
 Ruhwaldweg: Kopfsteinpflaster	Q2 1175,13513 1110,13462 1018,13446
 Herbert-Lewin-Platz: Kleinsteinpflaster	Q1 5627,12105 5585,12009 5620,11997 5684,11997 5712,12033
 Herbert-Lewin-Platz: Kleinsteinpflaster	Q1 5658,12082 5645,12058 5620,11997
+(Radweg am Müggelsee - Strandschloßweg): Waldweg	Q1 25232,3757 25224,3789 25193,3844
+(Zufahrt zur Trabrennbahn): wassergebundene Decke	Q1 18709,8423 18748,8363 18751,8300 18741,8220
+(Weg an der Trabrennbahn): wassergebundene Decke	Q1 18751,8300 18799,8250 18839,8165 18915,8079 19014,7875 19099,7761
+(Unterfeld - Weg an der Trabrennbahn): wassergebundene Decke	Q1 18949,8107 18915,8079
+(Weg an der Trabrennbahn - Lisbeth-Stern-Str.): wassergebundene Decke	Q1 19099,7761 19114,7781 19229,7963
+(Franz-Stimming-Weg - Weg an der Trabrennbahn): wassergebundene Decke	Q1 19159,7746 19132,7769 19114,7781
 ######################### User Contributions #################################
 #: by: anonymous vvv
 # 
@@ -15170,7 +15182,10 @@ Lehndorffstr.: schlechtes Kopfsteinpflaster	Q3 18407,8592 18322,8470
 #: confirmed_by: srt (südlich der Ehrlichstr.)
 Lehndorffstr.: glatter/ausgebesserter Asphalt	Q0- 18322,8470 18221,8328 18215,8316 18269,8161 18333,8059 18412,7985
 #: confirmed_by: anonymous, srt
-Eginhardstr.: schlechtes Kopfsteinpflaster	Q3 18615,8269 18490,8104 18412,7985
+Eginhardstr.: schlechtes Kopfsteinpflaster	Q3 18615,8269 18490,8104
+#: corrected_by: srt (schlechtes Kopfsteinpflaster -> ...)
+#: XXX nochmal überprüfen, ob "mäßige" Qualität stimmt
+Eginhardstr.: mäßiges Kopfsteinpflaster	Q2 18490,8104 18412,7985
 #: by ^^^
 # 
 #: by: Hans-Eberhard Heß:

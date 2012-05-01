@@ -59,7 +59,7 @@ Charlottenstr.: wegen Bauarbeiten eine Einbahnstraﬂe Richtung S¸den	q4::inwork; 
 #: next_check: 2012-06-01
 Universit‰tsstr.: wegen Bauarbeiten Richtung Unter den Linden gesperrt	q4::inwork 9580,12581 9601,12380
 # 
-#: last_checked: 2012-04-25 vvv
+#: last_checked: 2012-05-01 vvv
 #: next_check: 2012-06-15 vvv
 #XXX del -- eigentlich gut zu befahren --- Revaler Str.: Bauarbeiten, Kreuzung gesperrt, Gehweg kann benutzt werden	q4::inwork 14509,11060 14442,11101
 Helmerdingstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg kann benutzt werden	q4::inwork 14465,11195 14442,11101
@@ -83,8 +83,8 @@ Rathausstr. zwischen Breitestr. und Poststr.: Fahrbahn wegen Br¸ckenbauarbeiten 
 #: next_check: 2012-05-05
 Alte Jakobstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 10436,11344 10244,11160
 # 
-#: last_checked: 2011-09-04 (by srt)
-#: next_check: 2012-05-01
+#: last_checked: 2012-05-01 (von der Bahn aus, evtl. ungenau)
+#: next_check: 2012-06-15
 #: by: http://www.svendsimdorn.de/index.php?ka=1&ska=1&idx=26540 (Fertigstellung Sp‰tsommer 2012)
 Elcknerplatz, Borgmannstr.: Bauarbeiten, Einbahnstraﬂe	q4::inwork; 22428,6063 22478,6041 22544,6037 22539,5956
 # 
@@ -143,7 +143,7 @@ Breitscheidplatz: starker Fuﬂg‰ngerverkehr, oft Veranstaltungen	q4 5656,10876 56
 Breitscheidplatz: starker Fuﬂg‰ngerverkehr, oft Veranstaltungen	q4 5782,10884 5829,10964
 Wilmersdorfer Str.: starker Fuﬂg‰ngerverkehr (Fuﬂg‰ngerzone), nachts und sonntags Radfahren erlaubt	q4 3723,11457 3749,11344 3770,11231 3795,11098 3827,10980
 (An der M¸ggelspree): Fuﬂg‰nger	q2 23441,4956 23461,5054 23620,5096 23776,5040 23852,5036 23982,5030 24233,4878 24398,4842 24834,4541 25030,4421 25131,4400 25200,4420 25315,4474 25403,4480 25429,4493 25479,4540 25565,4549
-Am M¸ggelsee: Fuﬂg‰nger	q2 25474,2848 25667,2787 25857,2654 26006,2615 26151,2624 26339,2667 26457,2660 26627,2610 26868,2580 27135,2500 27173,2444 27267,2414 27372,2434 27517,2523 27565,2569 27743,2842 27822,2910 27945,3006 28292,3150 28496,3253
+Am M¸ggelsee: Fuﬂg‰nger	q2 25474,2848 25667,2787 25857,2654 26006,2615 26158,2647 26339,2667 26457,2660 26627,2610 26859,2596 26989,2570 27081,2528 27135,2500 27173,2444 27267,2414 27363,2448 27471,2527 27565,2637 27743,2842 27822,2910 27937,3016 28273,3143 28496,3253 28588,3285 28668,3297 28852,3293 28852,3277
 Pestalozzistr.: Fuﬂg‰ngerzone	q3 3721,11230 3770,11231 3822,11231
 (Zufahrt am NKZ): Bordsteine, Fuﬂg‰nger/Lieferverkehr	q3 11291,10438 11311,10505 11343,10528
 Alexanderplatz: Fuﬂg‰ngerverkehr	q2 11139,13008 10970,12822 10923,12779
@@ -258,7 +258,7 @@ Havelstr.: Fuﬂg‰ngerzone	q4 -3150,14631 -3122,14557 -3107,14535 -3054,14498
 #: note: ^^^
 Eichgestell: bei schˆnem Wetter viele Fuﬂg‰nger	q1 19052,6823 19407,6660 19590,6590 19751,6514 19986,6404 20106,6357 20200,6321 20293,6278
 Wuhlheide: bei schˆnem Wetter viele Fuﬂg‰nger und Kinder	q2 20200,6321 20262,6493 20225,6631 20313,6841
-Wuhlheide/R1: Fuﬂg‰nger	q2 20464,6237 20327,6287 20293,6278
+Wuhlheide/R1: Fuﬂg‰nger	q2 20453,6211 20293,6278
 (am Schloﬂ Schˆnhausen): Fuﬂg‰nger	q2 10308,19297 10350,19182 10390,19069
 Blockdammweg (Br¸cke): eng, Fuﬂg‰nger, ggfs. schieben	q2 17976,8964 18087,9035
 Markgrafenstr.: Gehweg	q2 9737,11546 9732,11574 9707,11596 9701,11656
@@ -420,10 +420,10 @@ Spreeuferweg: besonders an Wochenenden tags¸ber viele Fuﬂg‰nger	q1 7904,12803 79
 Spreeuferweg: besonders an Wochenenden tags¸ber viele Fuﬂg‰nger	q1 8277,13032 8315,13005 8401,12973 8464,12919 8498,12870 8529,12757 8566,12661 8587,12642 8635,12629 8754,12622
 Spreeuferweg: besonders an Wochenenden tags¸ber viele Fuﬂg‰nger	q1 8635,12629 8709,12605 8756,12608
 Helenenhof: enge Tore, Fuﬂg‰nger	q3 14499,11259 14395,11356
-F‰rberstr. - Uferweg: sehr eng	q2 21675,4989 21665,5035 21684,5079
-Uferweg, Mentzelpark: Fuﬂg‰nger	q1 21487,5425 21600,5221 21684,5079 21735,5003 21769,4973
-Uferweg, Mentzelpark: Fuﬂg‰nger, eng	q3 21769,4973 21821,4918 21834,4889
-(Mentzelpark): Fuﬂg‰nger	q1 21769,4973 21778,4916 21834,4889 21848,4882
+F‰rberstr. - Uferweg: sehr eng	q2 21675,4989 21665,5035 21680,5079
+Uferweg, Mentzelpark: Fuﬂg‰nger	q1 21487,5425 21600,5221 21680,5079 21696,5053 21740,5004 21761,4979
+Uferweg, Mentzelpark: Fuﬂg‰nger, eng	q3 21761,4979 21821,4918 21834,4889
+(Mentzelpark): Fuﬂg‰nger	q1 21761,4979 21778,4916 21834,4889 21848,4882
 (Mentzelpark): Fuﬂg‰nger	q1 21726,4896 21741,4889 21778,4916
 #: XXX Bauarbeiten; in Zukunft wird das Radfahren offiziell erlaubt sein; evtl. auch asphaltiert?
 #: XXX offiziell sollten die Bauarbeiten schon Ende 2010 (!) beendet sein
@@ -593,6 +593,7 @@ Grazer Platz: Fuﬂg‰nger, Bordsteine	q2 6546,6720 6530,6786 6529,6798
 (Nordmannzeile - Vorarlberger Damm): Fuﬂg‰nger	q1 7220,7442 7314,7451
 Achenbachpromenade: Fuﬂg‰nger, Radfahren erlaubt	q1 8763,8780 8748,8587 8715,8459
 Wildensteiner Str.: enge Straﬂe	q1 18528,8331 18416,8163 18365,8094 18333,8059
+#: XXX noch immer eine enge Stelle?
 (Am Carlsgarten - Waldowallee): enger Abschnitt under der Bahnbr¸cke	q2 19460,7954 19504,8003 19558,8064
 Linienstr./Oranienburger Str.: Fuﬂg‰nger	q2 9225,13389 9296,13397
 Fontanestr.: zwei Schwellen, kˆnnen umfahren werden	q1+ 18240,6845 18254,6679

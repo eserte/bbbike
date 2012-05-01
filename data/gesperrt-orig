@@ -881,6 +881,7 @@ Grammestr.	1 1057,14389 1058,14459
 Halskesteig	1 1058,14459 1157,14459
 Hefnersteig	1 1364,14191 1392,14287 1420,14369
 Bödikersteig	1 1141,14237 1182,14384
+Dorfstr. (Rahnsdorf)	1 29998,3170 29921,3079 29902,3104 29998,3170
 ######################################################################
 #
 # Potsdam
@@ -1376,6 +1377,8 @@ Hasenheide: Mittelstreifen	3nocross 11500,9116 11550,9104 11629,9086
 # Stellen, an denen getragen werden muß:
 # die Zahl hinter dem ":" entspricht ungefähr den verlorenen Sekunden
 # 
+#: note: etwas weiter auseinanderliegend:
+tragen (5 Stufen)	0:10 19132,7769
 tragen (9 Stufen)	0:12 9816,10119
 #: note: drei Treppen à 3 Stufen und eine Stufe:
 tragen (13 Stufen)	0:20 13013,10047
@@ -1928,8 +1931,8 @@ Theanolte-Bähnisch-Str.: Bauarbeiten, noch gesperrt	2:inwork 11320,13095 11235,1
 #: next_check: 2012-05-15
 Scharrenstr.: wegen Bauarbeiten komplett gesperrt	2:inwork 10418,12016 10480,12077
 # 
-#: last_checked: 2012-03-23
-#: next_check: 2012-05-15
+#: last_checked: 2012-05-01
+#: next_check: 2012-07-15
 Paul-und-Paula-Ufer: wegen Bodensanierungsarbeiten komplett gesperrt	2:inwork 14884,10508 14906,10587
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120217.1445.366291.html
@@ -2042,7 +2045,7 @@ Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,127
 #: by: IM_012342 (bis 2013)
 Rathausbrücke: gesperrt (Neubau), Fertigstellung und Verkehrsfreigabe im Frühjahr 2013	2:inwork 10362,12351 10422,12395
 # 
-#: last_checked: 2012-03-23
+#: last_checked: 2012-05-01
 #: next_check: 2012-06-15
 #: XXX abhängiger Eintrag in vorfahrt-orig!
 Kynaststraße: Bauarbeiten im südlichen Abschnitt	2:inwork 14652,10201 14724,10297 14766,10372 14795,10473 14805,10518

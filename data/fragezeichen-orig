@@ -192,13 +192,19 @@ Cecilienstraße/Hannaweg: neuer Zebrastreifen wird markiert	?::projected 20909,13
 #: by: ^^^
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/45re.pdf/file?y=2011
-Günter-Riesebrodt-Weg: Qualität? Genaue Lage der Straße? Schon fertiggestellt?	?::inwork 19395,7901 19302,7971
+#: last_checked: 2012-05-01 (Lage stimmt ungefähr, Bauarbeiten)
+#: next_check: 2012-08-01
+Günter-Riesebrodt-Weg: Qualität? Genaue Lage der Straße?	?::inwork 19395,7901 19302,7971
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/10re.pdf/file?y=2012 vvv
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/16re.pdf/file?y=2012
 #: XXX fehlen in Berlin.coords.data vvv
+#: last_checked: 2012-05-01 (noch keine Straßen sichtbar) vvv
+#: next_check: 2012-10-01 vvv
 Alfred-Siggel-Weg: Qualität? Genaue Lage der Straße? Schon fertiggestellt?	?::inwork 19307,7774 19327,7731
 Fritz-Thurm-Weg: Qualität? Genaue Lage der Straße? Schon fertiggestellt?	?::inwork 19262,7697 19287,7638
+#: next_check: ^^^
+#: last_checked ^^^
 #: XXX ^^^
 #: by: ^^^
 # 
@@ -487,7 +493,8 @@ Teilestr.: Radverkehrsanlagen	? 10815,6036 11068,6006 11160,5990 11257,6015 1132
 # 
 #: last_checked: 2010-06-06
 #: next_check: 2010-09-01
-Fürstenwalder Allee: Bau von Radverkehrsanlagen	? 29714,4461 29728,4435 29813,4314 29850,4288 29901,4264 29959,4235 30037,4176 30210,4046 30351,3939 30456,3794 30518,3753 30650,3698 30993,3557 31139,3497 31366,3404 31447,3372 31632,3297 31863,3257 31978,3237 32121,3215 32829,3105 33111,3064 33547,2904
+Fürstenwalder Allee: Bau von Radverkehrsanlagen	? 29714,4461 29728,4435 29813,4314 29850,4288
+#XXX hier existieren schon Radwege --- Fürstenwalder Allee: Bau von Radverkehrsanlagen	? 29850,4288 29901,4264 29959,4235 30037,4176 30210,4046 30351,3939 30456,3794 30518,3753 30650,3698 30993,3557 31139,3497 31366,3404 31447,3372 31632,3297 31863,3257 31978,3237 32121,3215 32829,3105 33111,3064 33547,2904
 # 
 #: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20110530.1455.346033.html
 #: XXX make public?
