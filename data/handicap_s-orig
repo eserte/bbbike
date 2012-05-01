@@ -1350,7 +1350,7 @@ Erich-Kuttner-Str.: enge Straße	q1 14584,13547 14532,13563 14428,13596 14370,136
 #: by: ^^^
 #: by: Dirk (gesch) vvv
 Birkenwerderstr.: enge Straße mit parkenden Autos	q1 6470,20761 6945,20805
-# XXX deletion proposed by norbert winkelmann: Tornower Weg: enge Straße mit parkenden Autos	q1 6452,20637 6457,20717 6470,20761 6496,20869 6501,20937 6544,21083
+# XXX deletion proposed by norbert winkelmann: Tornower Weg: enge Straße mit parkenden Autos	q1 6452,20637 6457,20717 6470,20761 6496,20869 6501,20937 6514,20993 6544,21083
 Borgsdorfer Str.: enge Straße mit parkenden Autos	q1 6496,20869 6962,20895
 Germendorfer Str.: enge Straße mit parkenden Autos	q1 6376,20951 6501,20937 6977,20984 7079,21000 7151,21012
 Wentowsteig: enge Straße mit parkenden Autos	q1 6924,20695 6945,20805 6955,20859 6962,20895 6977,20984
@@ -2433,8 +2433,12 @@ Kolkrabenweg: enge Straße	q1 14655,3687 14885,3891
 Teterower Str.: enge Straße	q1 13824,5204 13717,5175 13626,5153
 Küstriner Str.: enge Straße	q1 11232,309 11343,405 11488,531
 #: by: ^^^
-#: by: Juliane (alberts...)
+#: by: Juliane (alberts...) vvv
 Seepromenade: enge Straße	q1 -4582,7213 -4559,7216 -4549,7243
+Havelbrücke: geradlinige Rampe	q2 -3372,13994 -3445,14033
+Havelbrücke: in Serpetinen verlaufende Rampe	q3 -3285,13947 -3197,13899
+#: by: ^^^
+# 
 #: by: domi-89
 Münchener Str. (Lichtenrade): enge Straße	q1 11384,-1983 11380,-2100 11388,-2202 11433,-2320 11496,-2484 11523,-2617 11545,-2724
 #: by: Carola Schipke: vvv
@@ -2647,3 +2651,5 @@ Stadtgärten: enge Straße	q1 11585,22082 11568,22056 11544,21897 11575,21888 1156
 #: by: Matthias Dörge:
 #: by: (URL existiert nicht mehr) http://www.berlin.de/ba-steglitz-zehlendorf/presse/archiv/20060505.1315.39412.html (Freigabe Radfahrer)
 Jochen-Klepper-Weg: kombinierter Rad- und Fußweg, Fußgänger haben Vorrang	q1 -3030,2266 -2784,2358 -2690,2385 -2372,2477
+#: by: Ilka Liss:
+Frommpromenade: enge Straße	q0- 5469,20462 5350,20495 5257,20551

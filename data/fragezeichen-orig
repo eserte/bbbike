@@ -588,6 +588,9 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 # Das heißt diese Strecken werden nicht bei einer erweiterten Suche aufgenommen
 # und dem CGI-Benutzer auch nicht präsentiert.
 # 
+#: XXX Hinweis von norbert winkelmann, check:
+Umfahrung der Drängelgitter	? 6526,20998 6565,21004 6560,21055
+# 
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1204/nachricht4638.html
 #: next_check: 2012-05-01
 Dresdener Str.: Einfahrt für Kfz von Süden bald nicht möglich	?::inwork 11189,10831 11162,10919
@@ -881,6 +884,9 @@ Kleistpark: im Sommer bis 21 Uhr geöffnet, im Winter bis 18 Uhr	? 7209,9507 7246
 #: section isolated entries vvv
 #: section ignorieren vvv
 # 
+#: by: Christoph Buller:
+#: XXX fehlt in Potsdam.coords.data PLZ=14476
+In der Feldmark (Potsdam-Eiche/Golm): Asphalt	? -17678,78 -17719,87 -17782,112 -17843,139 -17902,162 -17961,189 -18042,219 -18208,250 -18251,248 -18341,218 -18428,189 -18443,83
 #: by: Christopher Suckrow
 Albiger Weg: guter Asphalt	? -2837,2194 -2841,2258 -2929,2255 -2934,2186
 #: by: anonymous:
@@ -937,6 +943,7 @@ Gaismannshofer Weg: mäßiger Asphalt, Q1 (policy!), Schrittgeschwindigkeit wegen 
 #: by: Barbara (rabulski):
 Begonienstr. (Teltow): loser Sandweg, Q2	? 1703,-2480 1920,-2494
 #: by: kris (chefmail), confirmed_by: Lukas Jedeck (ohne enge Straße)
+#: XXX Ute Jäger meint: Asphalt (ohne Kategorisierung)
 Place Molière: guter Beton, Q0, enge Straße, q1	? 4334,21540 4367,21525 4392,21477 4338,21455 4307,21506
 #: by: anonymous, confirmed_by Sara Köhler (ohne enge Straße q1, go with her)
 Ederkopfweg: guter Asphalt, Q0	? -4729,14958 -4761,14961 -4807,14990 -4879,15008
@@ -1046,8 +1053,6 @@ Paula-Hirschfeld-Steig: Für Autos gesperrt?	? -2968,15333 -2878,15304 -2801,1528
 #: XXX: Panagiotis Grigoriadis meint "Q2", aber ohne weitere Erklärungen, zudem q2, enge Straße, Email-Anfrage läuft
 Golmer Str.: Qualität?	? -3720,15717 -3866,15775 -3995,15832
 Marschallstr.: Qualität?	? -3708,15831 -3542,15871
-#: XXX Existiert hier tatsächlich eine Verbindung?
-Rudow - Kleinziethen: Qualität?	? 15118,-970 15100,-1008 14652,-1410 14341,-1751 14119,-2010 13912,-2428 13857,-2452 13732,-2659 13540,-2681
 #XXX del --- # ansonsten gleiche Wegbeschaffenheit wie der kreuzende Weg: --- Am Marderberg, kreuzender Weg: genaue Wegführung?	? 14288,19459 14328,19527 14372,19666 14354,19858
 Am Fließ: Qualität des westlichen Abschnitts?	? 14263,20352 14128,20410 13991,20425 13955,20452 13938,20548 13584,20621
 Schönerlinder Str.: ist die Radwegbenutzungspflicht nördlich der Autobahnbrücke (Berliner Ring) auch aufgehoben?	? 12957,26186 13192,26628 13256,26863
@@ -2105,6 +2110,7 @@ Weislingenstr.: Qualität?	? 2944,26099 3057,26075 3152,26051 3169,26048 3217,260
 Konzer Platz: Qualität?	? 2963,25728 2897,25776
 Koppelweg (Frohnau): Qualität?	? 2928,25547 3044,25558
 Remstaler Str.: Qualität?	? 3169,26048 3186,25969 3223,25868 3216,25778 3154,25659 3141,25598 3171,25495
+#: XXX Henning Rademann meint: Asphalt (aber meinte er die Huttenstraße in Frohnau oder Moabit?)
 Huttenstr. (Frohnau): Qualität?	? 2728,26201 2729,26146 2708,26076 2671,26023 2587,25958 2496,25915
 Königsbacher Zeile: Qualität?	? 2835,26225 2837,26157 2810,26045 2782,26000 2750,25961 2667,25877 2558,25790 2519,25772
 Katzensteg: Qualität?	? 2756,25260 2744,25314 2728,25386
@@ -2122,6 +2128,7 @@ Am Lehnshof: Qualität? Ist die Straße im westlichen Abschnitt eine Einbahnstraße
 An den Fließtalhöfen: Qualität? Kann man von der Straße Am Lehnshof zur Straße Alt-Hermsdorf gelangen?	? 4444,22989 4432,23066 4474,23119
 Rundlingsteig: Qualität?	? 4403,22981 4398,23026 4332,23059 4292,23005 4291,22986
 Bornepfad: Qualität?	? 4332,23059 4312,23157
+#: XXX anonymous meint: guter Beton, q0, "viele Fußgänger" (?)
 Am Ried: Qualität?	? 4634,23244 4577,23345 4622,23372 4829,23477
 Am Ried: Qualität?	? 4622,23372 4561,23455
 Parkstr. (Hermsdorf): Qualität?	? 4029,24235 4085,24241 4141,24280 4183,24326 4234,24326 4304,24297 4304,24250 4315,24203 4425,24067
@@ -2260,11 +2267,6 @@ Patrizierweg (Potsdam): Qualität östlich der Mendelssohn-Bartholdy-Str.?	? -7855
 Gluckstr. (Potsdam): Qualität?	? -7832,-2864 -7491,-2904
 Scharfschwerdtstr. (Hohen Neuendorf): Qualität?	? 1364,27953 1426,28065 1456,28125 1453,28175 1448,28276 1432,28356 1489,28451 1536,28550 1698,28742 1838,28808
 Richard-Wagner-Str. (Groß Glienicke): Qualität im westlichen Abschnitt?	? -10234,5804 -10347,5874 -10467,5948
-#: XXX benötigt einen Eintrag in str_cont_ausnahme:
-#: XXX wahrscheinlich Kopfsteinpflaster
-Silzer Weg: Qualität?	? 5688,312 5795,371 5867,412 5925,417
-#: XXX wahrscheinlich Asphalt (by Stefanie Hultzsch)
-Silzer Weg: Qualität?	? 5929,389 6130,449
 Tuxer Steig: Qualität?	? 5878,729 5853,729 5742,671
 Hainleiteweg: Qualität?	? -4805,15596 -4772,15702
 Tangermünder Weg: Qualität?	? -4294,15525 -4137,15512
@@ -2436,7 +2438,7 @@ Vogesenstr.: Qualität?	? 13351,21237 13368,21142
 Georgenstr. (Blankenburg): Qualität?	? 14263,20352 14294,20412 14309,20486 14320,20580 14328,20644 14304,20682 14236,20773 14091,20962
 #: XXX asphaltierter Radweg auf der nördlichen/östlichen Seite, nicht ganz sicher bei der Lage
 Buckow - Lichterfelde: wo genau ist der Radweg?	? 31634,53303 32692,53191 32718,53044 32856,52150 33002,51944
-#: XXX unklarer Eintrag von bene...finti: Asphalt, enge Straße, q0, vielleicht war auch die Onkel-Bräsig-Str. gemeint
+#: XXX Eintrag von bene...finti (WALTER): Asphalt, enge Straße, q0, aber keine Angabe zur Sperrung
 #: XXX eventuell ein Eintrag in brunnels-orig notwendig
 Siebenendenweg: Qualität? Ist die gesamte Straße für Autos gesperrt?	? 404,3970 21,4434 -62,4564
 Waldrebensteig: Qualität? Ist die Straße eine Spielstraße?	? -2014,1981 -2174,1933
@@ -2497,6 +2499,7 @@ Guhlener Zeile: Qualität?	? 5888,21279 5898,21161
 Senziger Zeile: Qualität?	? 5980,21289 5993,21172
 #: XXX_osm: bei osm falsch geschrieben (ohne h):
 Mehrower Zeile: Qualität?	? 6074,21304 6081,21182
+#: XXX Brian (scuba...) meint: "kleine Nebenstraße, Vorsicht Kita mit Ein- und Aussteigenden"
 Engelroder Weg: Qualität?	? 6269,21748 6253,21778 6211,21863 6175,21913
 Ulrichsteiner Weg: Qualität?	? 6093,21648 6073,21678 6016,21739 5976,21777
 #: XXX_osm: bei osm vermutlich falsch geschrieben (ohne r):
@@ -2524,11 +2527,6 @@ Haberlandweg: Qualität?	? -6610,13840 -6604,13770 -6561,13615
 Nordenhamer Str.: Qualität?	? -4170,13809 -4182,13691
 #: XXX möglicherweise Beton, nochmal prüfen
 Borkumer Str.: Qualität des westlichen Abschnitts?	? -3965,13870 -3849,13848
-Ernemannzeile: Qualität?	? -5750,12128 -5702,12098
-#: XXX_osm: Achtung, fehlt bei osm, andere Straßen sind wahrscheinlich verschoben!
-Voigtländerzeile: Qualität?	? -5736,12054 -5782,12090
-Orelzeile: Qualität?	? -5845,12004 -5786,11965
-Bauersfeldzeile: Qualität?	? -5858,11955 -5806,11926
 Wiesengrund (Staaken): Qualität?	? -7334,13058 -7377,13051 -7439,13047 -7481,13055 -7507,13059
 #: XXX_osm: Straßenname bei osm möglicherweise falsch (Helma Ring)
 Helma-Bogen: Qualität?	? -7377,13051 -7379,13105 -7481,13111 -7481,13055
@@ -2550,6 +2548,7 @@ Hoiruper Str.: Qualität des Kopfsteinpflasters?	? -3440,3015 -3515,3110
 Im Kieferngrund: Qualität?	? 261,4420 221,4412 208,4424 148,4402 156,4375 209,4393 221,4412
 #: XXX evtl. existiert eine Verbindung zur Parforceheide
 Mutter-Mochow-Weg: Qualität? Nachts beleuchtet?	? -1959,2305 -1849,2043
+#: XXX anonymous meint: schlechtes Kopfsteinpflaster, q2 ohne weitere Angaben
 Münchowstr.: Qualität?	? -3907,2438 -4084,2356
 Paul-Krause-Str.: Qualität? Existiert eine Verbindung (Treppe, Rampe) zur Borussenstr.?	? -4084,2356 -3983,2280
 #: XXX_osm: bei osm evtl. falsch geschrieben
@@ -2622,6 +2621,7 @@ Johannes-Kupke-Str.: Qualität?	? 8764,20799 8714,20766 8695,20770 8660,20751
 #: XXX Einbahnstraße für alle, wahrscheinlich, habe keine "Radfahrer frei"-Schild gesehen
 Döbrabergweg: Qualität? Gilt die Einbahnstraße auch für Radfahrer?	? 9892,20776 9848,20926
 #XXX del --- das ist auch Dietzgenstr., uninteressant --- Blankenfelder Str. (Rosenthal): Qualität?	? 10135,21171 9991,21144
+#: XXX elisabeth schneider meint: Q2, "sehr kurzer Weg", q3, keine weiteren Angaben
 An der Vogelweide: Qualität?	? 8591,21906 8712,21856
 Aralienweg: Qualität?	? 9529,21045 9570,21029 9629,21044
 #: oldname: Straße 125
@@ -2692,15 +2692,8 @@ Am Zeppelinpark: Straße fertiggestellt? Qualität?	? -8358,13340 -8417,13785 -850
 #: XXX_osm bei osm ohne Namen
 Am alten Gaswerk: Qualität?	? -8243,14183 -8284,14334 -8287,14411
 An der Spitze: Qualität?	? -8756,13356 -8847,13363 -8846,13398 -8702,13400
-Hensoldtweg: Qualität?	? -6081,12264 -6144,12187
-Messterweg: Qualität?	? -6171,12309 -6081,12264 -5988,12221
-#: XXX fehlt bei Berlin.coords.data und LOR
-Akazienweg (Staaken): Qualität?	? -6527,11731 -6305,12048
-#: XXX fehlt bei Berlin.coords.data und LOR
-Rebenweg (Staaken): Qualität?	? -6266,12017 -6483,11710
 Pinneberger Weg: Qualität?	? -6261,14161 -6163,14161 -6065,14160 -5887,14147 -5816,14136
 Aumühler Str.: Qualität?	? -6163,14161 -6150,14021
-Baedekerweg: Qualität?	? -5352,12620 -5307,12585 -5244,12622 -5212,12591
 Helmut-Käutner-Weg: Qualität?	? -6007,13228 -6035,13333 -6062,13432
 Blankensteinweg: Qualität?	? -6125,13540 -6084,13427
 Eduard-Bernstein-Weg: Qualität?	? -6010,13586 -5976,13465
@@ -2757,6 +2750,7 @@ Lüdinghauser Weg: Qualität?	? -5442,15282 -5396,15515
 #: XXX_osm in osm falsch geschrieben?
 Mülheimer Str.: Qualität?	? -5531,15522 -5473,15742
 Oberhauser Str.: Qualität?	? -5426,15528 -5373,15714
+#: XXX anonymous meint: Beton ohne weitere Angaben
 Knüllweg: Qualität?	? -5221,15714 -5198,15799
 Kellerwaldweg: Qualität?	? -5335,15745 -5314,15830
 Hümmlingweg: Qualität?	? -5190,16203 -5217,16119
@@ -2784,7 +2778,7 @@ Brodersenstr.: Qualität?	? 6033,19611 5885,19920 5804,20047
 Olbrichweg: Qualität?	? 5787,19326 5879,19352
 Knauerstr.: Qualität?	? 5996,19471 6003,19461 6084,19297
 Kossätenstr.: Qualität?	? 5495,19571 5417,19570 5369,19560
-Frommpromenade: Qualität? Kann die Oranienburger Str. überquert werden?	? 5469,20462 5350,20495 5257,20551
+Frommpromenade: Kann die Oranienburger Str. überquert werden?	? 5469,20462 5350,20495
 Am Klauswerder: Qualität?	? 5335,20671 5236,20747 5170,20673
 Göschenstr.: Qualität?	? 5297,21243 5015,21036
 #: XXX_osm fehlt bei osm
@@ -2873,7 +2867,6 @@ Henri-Dunant-Platz: Pl	? -4972,15297
 #: XXX_osm fehlt bei osm
 Pfefferweg: Qualität?	? -5849,16199 -5767,16177
 Rockenhausener Str.: Qualität?	? -4338,15137 -4244,15127
-Am Posseberg: Qualität?	? 12632,25569 12436,25580 12396,25478 12138,24989 12261,24851
 Arkenberger Damm: Qualität?	? 12396,25478 12324,25514 11964,25488 11871,25582
 # XXX del --- nein --- Straße 174 (Rheingoldstr.): Existiert diese Straße überhaupt? Wo befindet sie sich? Qualität?	? 18934,558 18789,586
 #: XXX kommt man überhaupt auf die Insel rauf?
@@ -3339,8 +3332,6 @@ Schlehenstieg (Potsdam-Eiche): Qualität?	? -17404,176 -17374,271
 Vogelbeerenweg (Potsdam-Eiche): Qualität?	? -17462,89 -17456,185 -17462,273
 Wildkirschenweg (Potsdam-Eiche): Qualität?	? -17531,277 -17565,207 -17635,230
 #: XXX fehlt in Potsdam.coords.data PLZ=14476
-In der Feldmark (Potsdam-Eiche/Golm): Qualität?	? -17678,78 -17719,87 -17782,112 -17843,139 -17902,162 -17961,189 -18042,219 -18208,250 -18251,248 -18341,218 -18428,189 -18443,83
-#: XXX fehlt in Potsdam.coords.data PLZ=14476
 Am Zachelsberg (Potsdam-Golm): Qualität?	? -18443,83 -18624,99
 #: XXX fehlt in Potsdam.coords.data PLZ=14476
 Karl-Liebknecht-Str. (Potsdam-Golm): Qualität?	? -18725,-673 -18726,-501 -18754,-419 -18656,-9 -18624,99
@@ -3489,7 +3480,7 @@ Anlage Frohsinn: Benennung von 11 Privatwegen, wo genau, Qualität?	? 10873,22065
 # 
 #: XXX: westliches Ende sah asphaltiert aus
 (Falkenberger Chaussee - Dorfstr./Wartenberg): Qualität? Nachts beleuchtet?	? 18922,18436 18761,18480 18503,18535 18215,18629 18185,18641
-Walter-Felsenstein-Str. - Bitterfelder Str.: existiert hier eine Verbindung?	? 20459,16697 20409,16670
+#XXX del --- Walter-Felsenstein-Str. - Bitterfelder Str.: existiert hier eine Verbindung?	? 20459,16697 20409,16670
 Ducherow - Busow: Qualität?	? 33515,151584 33553,151842 33557,151971 33514,151992
 Ducherow - Busow: Qualität?	? 33639,153640 33919,153736
 Busow - Rosenhagen: Qualität?	? 33919,153736 33926,153797 34789,153819 34861,153933 35004,154696
@@ -3646,8 +3637,6 @@ Hellersdorfer Weg (Eiche): Qualität? Gibt es Radwege?	? 23159,16086 23175,16119 
 Vogelsang - Hammelspring: gibt es hier mittlerweile einen Radweg?	? 7983,69794 7906,70007 8656,71489 10148,73146 11005,74052
 #: XXX eventuell unbefestigt?
 Lanker Str.: Qualität im nördlichen Abschnitt?	? 15347,23211 15387,23310 15428,23413 15475,23532 15527,23609
-#: XXX genaue Lage erfassen, Rampen, etc.
-Havelbrücke: Qualität? Nachts beleuchtet?	? -3197,13899 -3445,14033
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/39re.pdf/file?y=2011
 #: XXX Privatstraße, fehlt in Berlin.coords.data
 #: last_checked: 2011-10-15 (noch keine Bautätigkeiten zu erkennen)
@@ -3726,7 +3715,7 @@ Vierlingpark: Qualität?	? -713,4102 -713,4102 -758,4222 -716,4355 -754,4361
 #: XXX evtl. auch als Park/Grünanlage eintragen
 Egelpfuhlwiesen: Qualität?	? -5594,12832 -5554,12929 -5493,12994 -5446,13137 -5472,13235
 #: XXX evtl. auch den Park eintragen; von gleichnamiger Straße abgrenzen
-Stabholzgarten: Existiert eine Verbindung durch die Grünanlage? Qualität? Nachts beleuchtet?	? -3445,14033 -3387,13999 -3355,14001 -3306,14035 -3288,14050 -3146,14145 -3135,14183
+Stabholzgarten: Existiert eine Verbindung durch die Grünanlage? Qualität? Nachts beleuchtet?	? -3445,14033 -3391,14018 -3355,14001 -3306,14035 -3288,14050 -3146,14145 -3135,14183
 #: XXX evtl. auch als Park/Grünanlage eintragen
 Immenweidepark: Qualität?	? -2114,17878 -2169,17882 -2241,17847 -2298,17868 -2366,17868 -2388,17893
 Andreas-Rabe-Siedlung: Qualität? Ausgeschildert?	? 6898,23233 6912,23237 6967,23278 7078,23340 7027,23459

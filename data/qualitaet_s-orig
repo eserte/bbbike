@@ -8516,7 +8516,10 @@ Florian-Geyer-Str.: schlechtes Kopfsteinpflaster	Q3+ 19924,3939 19954,3887 19992
 #: corrected_by: srt (Kopfsteinpflaster -> Asphalt, public imagery)
 Borkumstr.: Asphalt	Q0 11425,17817 11297,17795
 #: confirmed_by: srt (public imagery)
-Borkumstr.: mäßiges Kopfsteinpflaster	Q2 11297,17795 11217,17783 11136,17768 11049,17752 10956,17735 10871,17722
+#: XXX Rüdiger Ritter meint, dass dieser Abschnitt jetzt auch asphaltiert ist, check!
+Borkumstr.: mäßiges Kopfsteinpflaster	Q2 11297,17795 11217,17783
+#: confirmed_by: srt (public imagery)
+Borkumstr.: mäßiges Kopfsteinpflaster	Q2 11217,17783 11136,17768 11049,17752 10956,17735 10871,17722
 #: by: ^^^
 # 
 #: by: Claudia (99):
@@ -10094,8 +10097,8 @@ Ludwig-Renn-Str.: Asphalt	Q0 20479,16124 20504,16204 20567,16320 20750,16226 207
 (Waldweg über den Beyschlagtunnel): mäßiger fester Sandweg	Q2 344,22346 742,22666
 # 
 #: by: Mannitou: vvv
-#: add_fragezeichen: Ist die Weverstr. westlich der Straße "Am Südpark" gepflastert oder asphaltiert?
-Weverstr.: mäßiger Asphalt	Q1 -4169,12368 -4080,12370 -3987,12374
+#: corrected_by: Stefan Klinkusch (mäßiger Asphalt -> ...)
+Weverstr.: gutes Kopfsteinpflaster	Q1 -4169,12368 -4080,12370 -3987,12374
 #: XXX Ist der Asphalt hier tatsächlich nur mäßig oder normal?
 Weverstr.: mäßiger Asphalt	Q1 -3987,12374 -3941,12376 -3892,12378 -3777,12384 -3625,12388 -3441,12402 -3257,12407
 #: by: ^^^
@@ -10441,7 +10444,7 @@ Staudenweg: Beton	Q1 17493,5112 17601,5090
 #: by: ^^^
 #: by: Dirk (gesch) vvv
 Birkenwerderstr.: Asphalt/Beton	Q0 6470,20761 6945,20805
-Tornower Weg: Asphalt/Beton	Q0 6452,20637 6457,20717 6470,20761 6496,20869 6501,20937 6544,21083
+Tornower Weg: Asphalt/Beton	Q0 6452,20637 6457,20717 6470,20761 6496,20869 6501,20937 6514,20993 6540,21032
 Borgsdorfer Str.: Asphalt/Beton	Q0 6496,20869 6962,20895
 Germendorfer Str.: Asphalt/Beton	Q0 6376,20951 6501,20937 6977,20984 7079,21000 7151,21012
 Wentowsteig: Asphalt/Beton	Q0 6924,20695 6945,20805 6955,20859 6962,20895 6977,20984
@@ -12890,8 +12893,10 @@ Techowpromenade: Kopfsteinpflaster	Q1- 5219,20467 5257,20551
 Techowpromenade: Asphalt mit leichten Schäden	Q0- 5257,20551 5284,20603 5304,20630 5335,20671 5428,20749
 #: by: ^^^
 # 
-#: by: Ilka Liss:
+#: by: Ilka Liss: vvv
+Frommpromenade: gutes Kopfsteinpflaster	Q1 5469,20462 5350,20495 5257,20551
 Gedonstr.: guter Asphalt	Q0 7897,17720 7917,17588
+#: by: ^^^
 # 
 #: by: Mario Beck:
 Windhalmweg: mäßiger Beton	Q1- 4654,19644 4590,19493 4520,19347 4423,19195
@@ -14497,6 +14502,7 @@ Küselstr.: mäßiger Beton	Q1- 12299,15463 12221,15514 12158,15556 12094,15598 120
 # 
 #: by: Wolfgang Lippmann: vvv
 #: confirmed_by: anonymous ("asphaltiert, bzw. mit intakten Betonplatten belegt")
+#: XXX bei osm: surface=concrete und smoothness=intermediate
 Korkedamm: guter Asphalt	Q0 19244,2141 19296,2257 19327,2288 19375,2341 19654,2325 19962,2277
 #: confirmed_by: srt
 Korkedamm: guter Asphalt	Q0 19962,2277 20100,2247
@@ -15829,6 +15835,7 @@ Helene-Nathan-Weg: guter Asphalt	Q0 17681,-178 17726,-251
 # 
 #: by: Uwe Borgenhagen vvv
 #: note: grobes, ausgefahrenes Kopfsteinpflaster mit schlechten Gehwegen (ohne Bordsteinkante), aber kaum Fußgänger
+#: confirmed_by: Thomas Plischka
 Meißner Weg: Kopfsteinpflaster	Q2 15633,1161 15705,1019 15776,850 15854,666
 Meißner Weg: Asphalt	Q0 15434,1317 15344,1544
 (Buchbinderweg - Zittauer Str.): fester Sandweg	Q1 16485,1162 16435,1063 16419,1048 16387,976 16342,959
@@ -17063,6 +17070,7 @@ Küstriner Str.: etwas älterer Asphalt	Q1+ 11232,309 11343,405 11488,531
 Wesenberger Ring: guter Beton	Q1+ 13162,3576 13206,3674 13238,3794 13229,3836 13206,3854 13165,3850 13129,3809 13030,3664
 # 
 #: by: Juliane (alberts...) vvv
+Havelbrücke: glatter, guter Belag	Q0 -3197,13899 -3285,13947 -3372,13994 -3445,14033
 Jüdenstr. (Spandau): Kopfsteinpflaster, gut befahrbar	Q1- -3506,14306 -3481,14308 -3444,14310 -3422,14322 -3397,14370 -3350,14446
 #: note: "guter Zustand, 30er-Zone"
 Jüdenstr. (Spandau): Asphalt	Q0 -3350,14446 -3316,14504 -3249,14621
@@ -18409,6 +18417,31 @@ Vienweg: Asphalt	Q0 11977,22801 11505,23160
 # 
 #: by: Sebastian Stransky
 Menzer Weg: Asphalt	Q0 -1062,1675 -1054,1616
+# 
+#: by: Sven Baumann:
+Am Posseberg: guter Asphalt	Q0 12632,25569 12436,25580 12396,25478 12138,24989 12261,24851
+# 
+#: by: Stefanie Hultzsch vvv
+#: note: "kein Kopfsteinpflaster"
+#: XXX vielleicht ist es Verbundsteinpflaster?
+Silzer Weg: relativ glattes Pflaster	Q1 5688,312 5795,371 5867,412 5925,417
+#: note: "Teerstraße"
+Silzer Weg: Asphalt	Q0 5929,389 6130,449
+#: by: ^^^
+# 
+#: by: Stefan Klinkusch vvv
+#: note: überwiegend ein Sandweg, Löcher auch schon mit losen Steinen verfüllt, vor einigen Parzellen asphaltiert oder mit Verbundsteinen gepflastert
+Rebenweg (Staaken): Sandweg, teilweise lose	Q2- -6266,12017 -6483,11710
+#: note: überwiegend Sandweg, Löcher teilweise mit losen Steinen verfüllt, vor einigen Parzellen auch stabilerer Untergrund
+Akazienweg (Staaken): Sandweg, teilweise lose	Q2- -6527,11731 -6305,12048
+Bauersfeldzeile: Beton	Q0 -5858,11955 -5806,11926
+Orelzeile: Beton	Q0 -5845,12004 -5786,11965
+Voigtländerzeile: Beton	Q0 -5736,12054 -5782,12090
+Ernemannzeile: Beton	Q0 -5750,12128 -5702,12098
+Messterweg: Beton	Q0 -6171,12309 -6081,12264 -5988,12221
+Hensoldtweg: Beton	Q0 -6081,12264 -6144,12187
+Baedekerweg: Asphalt	Q0 -5352,12620 -5307,12585 -5244,12622 -5212,12591
+#: by: ^^^
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206
