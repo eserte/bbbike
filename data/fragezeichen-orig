@@ -176,9 +176,12 @@ Blankenberger Str.: Radstreifen	?::inwork 11148,19838 11051,19789 10948,19737 10
 # 
 #: XXX Arbeiten an Berlin.coords.data sind ggfs. notwendig
 #: XXX man kann schon passieren, unbefestigte Straßen
-#: last_checked: 2011-10-03
-#: next_check: 2012-02-15
-Buckower Weg, An den Feldern: hier entstehen neue Straßen. Genaue Lage, Qualität?	? 12374,1193 12365,1172 12295,1191 12239,1209 12243,1224 12224,1235
+#: last_checked: 2011-10-03 vvv
+#: next_check: 2012-02-15 vvv
+Buckower Weg: hier entstehen neue Straßen. Genaue Lage, Qualität?	? 12374,1193 12365,1172 12295,1191 12239,1209 12243,1224 12224,1235
+An den Feldern: hier entstehen neue Straßen. Genaue Lage, Qualität?	? 12269,1157 12305,1170
+#: next_check ^^^
+#: last_checked ^^^
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20110922.0700.359579.html
 #: next_check: 2012-05-01
@@ -365,7 +368,7 @@ Rudolf-Breitscheid-Str.: nach den Bauarbeiten wird es in Richtung Westen eine 2m
 # 
 #: last_checked: 2011-03-27
 #: next_check: 2011-05-01
-Berliner Str.: nach den Bauarbeiten fällt evtl. das Kopfsteinpflaster weg, es wird zumindest Richtung Norden ab Granitzstr. Radwege geben	?::inwork 10680,18380 10755,18231 10829,18083 10846,17992
+Berliner Str. (Pankow, Prenzlauer Berg): nach den Bauarbeiten fällt evtl. das Kopfsteinpflaster weg, es wird zumindest Richtung Norden ab Granitzstr. Radwege geben	?::inwork 10680,18380 10755,18231 10829,18083 10846,17992
 # 
 #: last_checked: 2010-10-02 vvv
 #: next_check: 2011-09-01 vvv
@@ -560,7 +563,7 @@ Segelfliegerdamm (Zernsdorf - Niederlehme): in Planung/Bau	?::inwork 29192,-1063
 #: by: berliner-stadtplan.com
 #: by: http://www.berlinonline.de/berliner-kurier/archiv/.bin/dump.fcgi/2005/1110/berlin/0033/index.html
 #: next_check: 2013-01-01
-Grenzweg: geplante Brücke über die Spree bzw. Straßenverbindung zwischen Rummelsburger Landstraße und Schnellerstr.	?::projected 17082,7189 16954,7096
+Geplante Brücke über die Spree bzw. Straßenverbindung zwischen Rummelsburger Landstraße und Schnellerstr.	?::projected 17082,7189 16954,7096
 # XXX del laut http://www.berlin.lsvd.de/cms/index.php?option=com_content&task=view&id=184&Itemid=175 nicht mehr in Planung, keine weiteren Treffer im Web! Magnus-Hirschfeld-Steg: laut Tsp geplant	? 7360,12430 7437,12368
 # XXX del Gramzow: nach Abschluss der Bauarbeiten kein Kopfsteinpflaster mehr?	? 50109,89725 49930,89857
 # XXX del next_check: 2005-11-30 Großziethen: Kopfsteinpflaster nur Richtung Süden, nach den Arbeiten kein Kopfsteinpflaster mehr?	?; 12984,1011 13124,216 13165,-34 13176,-161 13215,-570 13225,-681 13230,-712 13300,-1252
@@ -1044,7 +1047,7 @@ Lasiuszeile: Qualität?	? -3260,15550 -3293,15481
 Lutherplatz: Qualität?	? -3296,15563 -3306,15644
 Neumeisterstr.: Qualität?	? -3296,15563 -3461,15544
 Predigergarten: Qualität?	? -3235,15307 -3250,15281 -3285,15258
-Hedwigstr.: Qualität?	? -3293,15645 -3302,15787
+Hedwigstr. (Spandau): Qualität?	? -3293,15645 -3302,15787
 #: XXX Kopfsteinpflaster, gut/mäßig/schlecht? culdesac.
 Schülerbergstr.: Qualität?	? -3559,15952 -3444,15978
 #: XXX fehlt in Berlin.coords.data
@@ -2316,7 +2319,7 @@ Langerönner Mühle - Biesenthal: Qualität?	? 24208,35707 23784,36844 23713,37031 
 Lobetal - Lanke: Qualität? Wie ist die genaue Wegführung (GPS-Track?)	? 23278,36072 23060,36601 23294,38443 22801,38830 22666,38835 22557,38801 21236,39862
 Wilhelmstr. (Eberswalde): Qualität? Gibt es hier einen Radweg?	? 37128,48358 37138,48216 37151,48074
 #: XXX von Klobbicke aus: schlechtes Kopfsteinpflaster, Q3; von Tuchen aus: asphaltiert, Q0:
-Mühlenweg: Qualität?	? 36640,39793 36556,39917 36030,39721 35641,39643
+Mühlenweg (Klobbicke): Qualität?	? 36640,39793 36556,39917 36030,39721 35641,39643
 #: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20090706.1100.131656.html
 Lindauer Allee/Aroser Allee - Luisenweg: Fahrbahnbeschaffenheit der Radfahrverbindung?	? 6720,18616 6740,18644 6770,18670 6775,18726 6801,18761
 #: XXX laut osm: ja
@@ -3579,7 +3582,7 @@ Eichwalder Ausbau (Gosen): Qualität?	? 31051,-1484 30701,-1468 30421,-1710
 Am Zwiebusch (Gosen): Qualität?	? 30421,-1710 30353,-1731 29972,-2159
 Gewerbestr. (Dahlwitz-Hoppegarten): Qualität?	? 25923,11076 25964,11310 26026,11377 26128,11457 26150,11516 26222,11726
 (Weg entlang der Stadtgrenze): Qualität des südlichen Abschnitts?	? 25952,11935 25902,11846 25876,11774 25868,11706 25830,11636 25809,11613 25757,11479 25770,11431 25763,11396 25855,11296 25923,11076
-Uferweg: Qualität?	? -585,19132 -544,19129 -475,19156 -429,19230 -338,19267 -195,19415 -88,19483 48,19533 146,19640 123,19749 72,19790
+Uferweg (Tegeler See): Qualität?	? -585,19132 -544,19129 -475,19156 -429,19230 -338,19267 -195,19415 -88,19483 48,19533 146,19640 123,19749 72,19790
 #: XXX eventuell unbefestigte Straße?
 Elkartweg: Qualität des nördlichen Abschnitts?	? -2074,17921 -2196,18069
 #: XXX Eintrag von: Geske, Anselm [AM], aber zumindest östlich der Aalemannkanalbrücke nicht bestätigt
@@ -3754,3 +3757,14 @@ Zubringer zum Flughafen BER: Fahrbahnbeschaffenheit? Existieren Radwege? Genaue 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/17re.pdf/file?y=2012
 #: note: siehe auch: http://www.freilandlabor-kaniswall.de/kontakt.htm
 Am Kaniswall: Privatstraße, wo genau? Qualität?	? 32823,-202 32970,320
+#XXX del --- lohnt nicht, ist nur ein KGA-Weg, auch aus Berlin.coords.data entfernt --- Grenzweg (Rosenthal): Qualität? Nachts beleuchtet? Ist das tatsächlich der Grenzweg?	? 11680,21107 11326,21315 11005,21659 10814,21722 10287,21824 10260,21799 10132,21809
+Hedwigstr. (Hermsdorf): Qualität?	? 5013,24019 5044,24138 5085,24232
+Mühlenweg (Karow): Qualität?	? 15364,22286 15420,22365 15445,22352
+#: XXX Einmündung war asphaltiert, soweit ich mich erinnere. Existenz dieser Straße _mit Namen_ ist nicht eindeutig. Google und Pharus glauben, dass es hier etwas gibt.
+Straße 180 (Rudow): existieren hier Straßenschilder?	? 16738,175 16770,192
+#: XXX Existenz dieser Straße ist nicht eindeutig. Nur Kauperts glaubt, dass es hier etwas gibt.
+Straße 184 (Tegel): existiert hier auch eine Straße 184?	? 3563,20589 3537,20624 3470,20683 3391,20746 3312,20789
+#: XXX Existenz dieser Straße ist nicht eindeutig. Nur Kauperts glaubt, dass es hier etwas gibt. Siehe unten.
+Straße 455 (Buckow): existiert hier eine Straße mit dem Namen "Straße 455"? Qualität?	? 10853,1805 10940,1904
+#: XXX Pharus meint, dass hier so eine Straße existiert. Siehe oben.
+Straße 455 (Buckow): existiert hier eine Straße mit dem Namen "Straße 455"?	? 11031,1739 11136,1782 11205,1776
