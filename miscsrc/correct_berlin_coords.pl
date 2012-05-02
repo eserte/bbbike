@@ -23,13 +23,23 @@ use List::Util qw(min);
 
 use PLZ;
 use Strassen::Core;
+use Strassen::MultiStrassen;
 use VectorUtil qw(distance_point_line);
 
-my $s = Strassen->new("$FindBin::RealBin/../data/strassen");
+my $fz_s = Strassen->new_stream("$FindBin::RealBin/../data/fragezeichen-orig"); # -orig, because we want also "ignored" streets
+my $new_fz_s = Strassen->new;
+$fz_s->read_stream
+    (sub {
+	 my($rec) = @_;
+	 $rec->[Strassen::NAME] =~ s{:.*}{}; # strip fragezeichen strings
+	 $new_fz_s->push($rec);
+     });
+my $str_s = Strassen->new("$FindBin::RealBin/../data/strassen");
+my $s = MultiStrassen->new($str_s, $new_fz_s);
 my $sh = $s->get_hashref_name_to_pos
     (sub {
 	 my $name = shift;
-	 $name =~ s{\s\(.*\)$}{};
+	 $name =~ s{\s\(.*\)$}{}; # strip citypart
 	 $name;
      });
 my $plz = PLZ->new;
@@ -90,10 +100,15 @@ The script also spits out INFO warnings for non-street records, and
 WARN warnings for streets not in strassen (but probably should be in
 fragezeichen).
 
-=head1 TODO
+Another use case: check completeness of strassen+fragezeichen vs.
+Berlin.coords.data:
 
-* Probably fragezeichen entries should also be handled? Use
-  MultiStrassen or so.
+    ./miscsrc/correct_berlin_coords.pl |&grep '^WARN'
+
+But this is duplicating misc/check-berlin-coords-data.pl in
+bbbike-aux.
+
+=head1 TODO
 
 * Maybe U/S-Bhf should also be checked
 
