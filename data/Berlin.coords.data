@@ -56,8 +56,8 @@ Adolfstr.|Wedding|13347|7856,15688
 Adolfstr.|Zehlendorf|14165|640,1267
 Adorfer Str.|Hellersdorf|12627|24098,14347
 Advokatensteig|Bohnsdorf|12526|22250,481
-AEG-Siedlung Heimat|Lübars|13469|6242,22764
-AEG-Siedlung I, II|Lübars|13469|6098,22775
+AEG-Siedlung Heimat (Siedlung)|Lübars|13469|6242,22764
+AEG-Siedlung I, II (Siedlung)|Lübars|13469|6098,22775
 Aegirstr.|Reinickendorf|13409|8316,17222
 Afrikanische Str.|Wedding|13351|5788,16393
 Agathe-Lasch-Platz|Halensee|10709|3111,10116
@@ -1175,7 +1175,7 @@ Baumläuferweg|Gropiusstadt|12351|14908,3016
 Baummardersteig|Konradshöhe|13505|-1838,19426
 Baumschulenstr.|Baumschulenweg|12437|15737,6280
 Baumschulenstr.|Johannisthal|12437|15737,6280
-Baumwerder|Tegel|13599|-498,17491
+Baumwerder (Insel)|Tegel|13599|-498,17491
 Bausdorfstr.|Kaulsdorf|12621|23517,12129
 Bausdorfstr.|Mahlsdorf|12623|23517,12129
 Bautzener Platz|Schöneberg|10829|8132,9214
@@ -2832,7 +2832,7 @@ Enger Steig|Wilhelmstadt|13595|-4208,11713
 Englerallee|Dahlem|14195|3726,6159
 Englerallee|Steglitz|14195|3726,6159
 Englische Str.|Charlottenburg|10587|5517,12060
-Englischer Garten|Tiergarten|10557|6553,12202
+Englischer Garten (Park)|Tiergarten|10557|6553,12202
 Enkenbacher Weg|Müggelheim|12559|27195,848
 Enkircher Str.|Frohnau|13465|3684,24946
 Entenwall (Insel)|Rahnsdorf|12589|29517,3195
@@ -6751,8 +6751,8 @@ Lindholzweg|Buckow|12349|12414,1471
 Lindhorstweg|Johannisthal|12487|16797,4151
 Lindower Str.|Gesundbrunnen|13347|7949,15282
 Lindower Str.|Wedding|13347|7949,15282
-Lindwerder|Nikolassee|14193|-3669,6573
-Lindwerder|Tegel|13507|114,18751
+Lindwerder (Insel)|Nikolassee|14193|-3669,6573
+Lindwerder (Insel)|Tegel|13507|114,18751
 Lindwurmweg|Stadtrandsiedlung Malchow|13088|14830,18480
 Linienstr.|Mitte|10115|9545,13451
 Linienstr.|Mitte|10119|9545,13451
@@ -8420,7 +8420,7 @@ Pinneberger Weg|Spandau|13581|-6018,14155
 Pinneberger Weg|Staaken|13581|-6018,14155
 Pintschallee|Britz|12347|13179,5639
 Pintschstr.|Friedrichshain|10249|13336,13149
-Pionierinsel|Hakenfelde|13599|-2078,15851
+Pionierinsel (Insel)|Hakenfelde|13599|-2078,15851
 Pionierstr.|Falkenhagener Feld|13583|-4828,16026
 Pionierstr.|Falkenhagener Feld|13589|-4828,16026
 Pirmasenser Str.|Falkenhagener Feld|13583|-4444,15582
@@ -8808,7 +8808,7 @@ Reifträgerweg|Nikolassee|14129|-2638,3258
 Reiherallee|Heiligensee|13503|-895,21787
 Reiherbeize|Zehlendorf|14169|534,4388
 Reihersteg|Bohnsdorf|12526|22286,-727
-Reiherwerder|Tegel|13505|535,19644
+Reiherwerder (Insel)|Tegel|13505|535,19644
 Reiler Str.|Marzahn|12681|18957,12368
 Reimerswalder Steig|Heiligensee|13503|-1619,22974
 Reimerweg|Staaken|13593|-6511,12324
@@ -8828,7 +8828,7 @@ Reinickes Hof|Reinickendorf|13403|5359,18856
 Reinowzeile|Buckow|12353|13313,1348
 Reinstedter Weg|Marienfelde|12277|7501,-447
 Reisstr.|Siemensstadt|13629|1459,14255
-Reiswerder|Tegel|13507|60,17657
+Reiswerder (Insel)|Tegel|13507|60,17657
 Reitschule Onkel-Tom|Zehlendorf|14169|-13,5201
 Reißeckstr.|Mariendorf|12107|9643,3828
 Reißigerstr.|Kaulsdorf|12621|24486,13549
@@ -9560,9 +9560,9 @@ Schaperstr.|Wilmersdorf|10719|5330,10278
 Schappachstr.|Karolinenhof|12527|26059,-644
 Schareckstr.|Mariendorf|12107|10801,3533
 Scharfe Lanke|Wilhelmstadt|13595|-4169,10797
+Scharfenberg (Insel)|Tegel|13505|-494,18163
 Scharfenberger Str.|Konradshöhe|13505|-1139,18079
 Scharfenberger Str.|Tegel|13505|-1139,18079
-Scharfenberg|Tegel|13505|-494,18163
 Scharfensteinstr.|Blankenburg|13129|13378,21782
 Scharfestr.|Zehlendorf|14169|681,3420
 Scharmützelseeweg|Haselhorst|13599|-1528,16547
@@ -10129,11 +10129,11 @@ Sieboldstr.|Altglienicke|12524|19918,134
 Siebweg|Bohnsdorf|12526|21452,-481
 Siedelmeisterweg|Reinickendorf|13403|4806,18822
 Siedlers Eck|Schmöckwitz|12527|25204,-2506
-Siedlung 10|Baumschulenweg|12437|15039,5405
+Siedlung 10 (Siedlung)|Baumschulenweg|12437|15039,5405
 Siedlung am Walde|Wilhelmshagen|12589|31396,3471
-Siedlung Deutsche Scholle|Britz|12359|14737,4710
-Siedlung Havelblick e.V.|Gatow|14089|-4920,9327
-Siedlung Rosenhain|Britz|12359|14364,5169
+Siedlung Deutsche Scholle (Siedlung)|Britz|12359|14737,4710
+Siedlung Havelblick e.V. (Siedlung)|Gatow|14089|-4920,9327
+Siedlung Rosenhain (Siedlung)|Britz|12359|14364,5169
 Siedlungsring|Karow|13125|16520,24034
 Siedlungsstr.|Buch|13125|16801,25103
 Siedlungsweg|Staaken|13591|-7671,12221
@@ -10414,7 +10414,7 @@ Stadtheidestr.|Spandau|13585|-3523,15856
 Stadtilmer Weg|Lichterfelde|12279|6464,965
 Stadtilmer Weg|Marienfelde|12279|6464,965
 Stadtpark (Kolonie)|Wilmersdorf|10715|5859,8473
-Stadtrandsiedlung Marienfelde|Marienfelde|12277|7300,-383
+Stadtrandsiedlung Marienfelde (Siedlung)|Marienfelde|12277|7300,-383
 Stadtrandstr.|Falkenhagener Feld|13589|-6465,16266
 Staehleweg|Frohnau|13465|2107,27373
 Staffelder Weg|Tegel|13509|3481,20592
@@ -11608,7 +11608,7 @@ Utestr.|Frohnau|13465|2865,27820
 Uteweg|Baumschulenweg|12487|15837,4140
 Uthmannstr.|Neukölln|12043|13010,7832
 Utrechter Str.|Wedding|13347|7278,15973
-Valentinswerder|Tegel|13505|-1102,17447
+Valentinswerder (Insel)|Tegel|13505|-1102,17447
 Valeska-Gert-Str.|Friedrichshain|10243|12807,11287
 Valwiger Str.|Marzahn|12681|19079,12263
 Van't-Hoff-Str.|Dahlem|14195|2234,4558
@@ -12229,7 +12229,7 @@ Wildtaubenweg|Konradshöhe|13505|-1679,19076
 Wilhelm-Blos-Str.|Mahlsdorf|12623|23923,8305
 Wilhelm-Blume-Allee|Tegel|13509|2535,20593
 Wilhelm-Busch-Str.|Neukölln|12043|13291,8048
-Wilhelm-Dähne-Siedlung|Rudow|12355|17318,85
+Wilhelm-Dähne-Siedlung (Siedlung)|Rudow|12355|17318,85
 Wilhelm-Gericke-Str.|Wittenau|13437|5730,19957
 Wilhelm-Guddorf-Str.|Lichtenberg|10365|15366,11703
 Wilhelm-Hauff-Str.|Friedenau|12159|5984,6970
@@ -12361,9 +12361,9 @@ Witzlebenstr.|Charlottenburg|14057|2951,10954
 Wißlerstr.|Friedrichshagen|12587|23771,5332
 Woblitzseeweg|Haselhorst|13599|-1613,16333
 Wochenend (Kolonie)|Westend|14050|132,12964
-Wochenendsiedlung Bocksfelde-Alt|Wilhelmstadt|13595|-4162,11500
-Wochenendsiedlung Bocksfelde-Neu|Wilhelmstadt|13595|-4293,11221
-Wochenendsiedlung Gesundheitspflege|Westend|14050|1160,12981
+Wochenendsiedlung Bocksfelde-Alt (Siedlung)|Wilhelmstadt|13595|-4162,11500
+Wochenendsiedlung Bocksfelde-Neu (Siedlung)|Wilhelmstadt|13595|-4293,11221
+Wochenendsiedlung Gesundheitspflege (Siedlung)|Westend|14050|1160,12981
 Wochenendweg|Britz|12347|11408,4198
 Wodanstr.|Französisch Buchholz|13127|12209,21819
 Wodanstr.|Hessenwinkel|12589|32157,2040

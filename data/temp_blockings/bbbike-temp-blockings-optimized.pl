@@ -1405,16 +1405,6 @@ userdel	q4::inwork 11436,14741 11271,14755
          'data' => 'userdel	q4::inwork; 8527,14352 8442,14456 8346,14576
 ',
          'type' => 'handicap'
-       },
-       {
-         'until' => 1335909540,
-         'text' => 'Str. des 17.Juni zwischen Yitzhak-Rabin-Str. und Platz des 18.März sowie Ebertstr. gesperrt (Veranstaltung zum 1. Mai)',
-         'from' => 1335854115,
-         'id' => 2327,
-         'data' => 'userdel	2::temp 8610,12254 8538,12245 8214,12205 8089,12190 8055,12186
-userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165
-',
-         'type' => 'gesperrt'
        }
      
 );
