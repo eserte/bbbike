@@ -6467,7 +6467,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_003844',
        data  => <<EOF,
-userdel	2::temp 10738,12364 10684,12423 10644,12469 10601,12521 10437,12703
+userdel	2::temp 10738,12364 10673,12434 10644,12469 10601,12521 10437,12703
 EOF
      },
      { from  => 1161542089, # 2006-10-22 20:34
@@ -16646,7 +16646,7 @@ EOF
        recurring => 1,
        data  => <<EOF,
 #: XXX_prog: die "Veranstaltungen" sollten auch mit einer Kategorie bedacht werden
-	2::night 10473,15549 10607,15142
+	2::night 10456,15561 10607,15142
 EOF
      },
      { from  => undef, #

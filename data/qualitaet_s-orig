@@ -640,7 +640,8 @@ Niederkirchnerstr.: Asphalt	Q0 8720,11226 9162,11286
 Johanniterstr.: Asphalt	Q0 9837,10117 10066,10071 10251,9979
 Wilmsstr.: Kopfsteinpflaster	Q2 10251,9979 10424,9958
 Boppstr.: Kopfsteinpflaster	Q2 11560,9524 11785,9437
-Friedrich-Engels-Str.: Kopfsteinpflaster	Q2 9355,19789 9333,19853 9300,19949 9266,20048 9235,20125 9149,20336 9119,20399 9091,20425 8900,20601
+Friedrich-Engels-Str.: Kopfsteinpflaster	Q2 9355,19789 9333,19853 9300,19949 9266,20048 9235,20125 9149,20336 9119,20399 9091,20425 9068,20446 8967,20539
+Friedrich-Engels-Str.: Asphalt	Q2 8967,20539 8900,20601
 Friedrich-Engels-Str.: Kopfsteinpflaster, Radweg auf asphaltierter Nebenfahrbahn	Q0- 8900,20601 8789,20763 8764,20799 8698,20897 8610,21000 8513,21099 8400,21180 8316,21240 8277,21257
 Quickborner Str.: Kopfsteinpflaster	Q2 8170,21304 8022,21476
 #: by: Christian Lange:
@@ -1181,7 +1182,7 @@ Am Bürgerpark: Kopfsteinpflaster	Q2 9365,18062 9410,18021
 Wilhelm-Kuhr-Str.: Kopfsteinpflaster	Q2 9460,18053 9410,18021
 Wilhelm-Kuhr-Str.: Asphalt	Q0- 9460,18053 9590,18082
 (Am Bürgerpark - Wilhelm-Kuhr-Str.): Kopfsteinpflaster	Q2 9365,18062 9366,17997
-Cantianstr.: mäßiges Kopfsteinpflaster	Q2 10713,15746 10759,15622 10786,15544 10886,15251
+Cantianstr.: mäßiges Kopfsteinpflaster	Q2 10713,15746 10733,15638 10768,15534 10886,15251
 Rosenthaler Str.: teilweise mäßiger Asphalt	Q1 12168,21218 12074,21243 11982,21392 11870,21574
 Lise-Meitner-Str.: Verbundsteine	Q1 3735,13618 3717,13743
 Lise-Meitner-Str.: Beton	Q0 3721,13274 3742,13416 3741,13495 3741,13558 3735,13618
@@ -2122,9 +2123,9 @@ Kulmseestr.: Asphalt	Q0 20303,12230 20364,12216 20490,12209 20629,12177
 Rotraudstr.: Asphalt, leicht uneben	Q0- 21118,14477 21099,14300 21087,14183 21074,14058 21061,13940
 (Pfingstrosenweg - Wuhlewanderweg): glatte Pflasterung	Q0 22079,10852 22097,10812 22106,10789
 (Begasstr. - Riemenschneiderweg): teils Verbundsteinpflaster, teils Asphalt	Q1 6513,7005 6662,7018 6770,7027
-(Gaudystr. - Mauerpark): glattes Pflaster	Q0 10473,15549 10256,15482 10186,15463
+(Gaudystr. - Mauerpark): glattes Pflaster	Q0 10456,15561 10256,15482 10186,15463
 #: note: laut joern (js) "schlechtere Qualität", ist aber ganz normales Kopfsteinpflaster
-Gaudystr.: Kopfsteinpflaster	Q2 10938,15670 10759,15622 10473,15549
+Gaudystr.: Kopfsteinpflaster	Q2 10941,15697 10733,15638 10456,15561
 Zur Rinderauktionshalle: Asphalt	Q0 14207,13152 14450,13081
 Hindenburgdamm: schlechtes Kopfsteinpflaster	Q3 4517,4853 4515,4966
 (Am Stichkanal - Uferweg am Teltowkanal): Asphalt	Q0 2736,645 2787,600
@@ -6902,6 +6903,9 @@ Herbert-Lewin-Platz: Kleinsteinpflaster	Q1 5658,12082 5645,12058 5620,11997
 (Weg an der Trabrennbahn - Lisbeth-Stern-Str.): wassergebundene Decke	Q1 19099,7761 19114,7781 19229,7963
 (Franz-Stimming-Weg - Weg an der Trabrennbahn): wassergebundene Decke	Q1 19159,7746 19132,7769 19114,7781
 (Uranusstr. - Siriusstr.): Verbundsteinpflaster	Q1 18827,-537 18906,-316
+Straße 87 (Rosenthal): Platten	Q1- 9091,20425 9025,20372
+Am Igelgrund: Verbundsteinpflaster	Q1+ 9068,20446 9131,20507
+Johannes-Kupke-Str.: Verbundsteinpflaster	Q1+ 8764,20799 8714,20766 8695,20770 8660,20751
 ######################### User Contributions #################################
 #: by: anonymous vvv
 # 
@@ -11229,29 +11233,38 @@ Czarnikauer Str.: glattes Pflaster	Q1 10225,16436 10449,16415 10613,16403
 # 
 #: by: Volker Wenzel:
 Orchideenweg: mäßiger Beton	Q1 15513,3769 15732,3602 16043,3374 16221,3248 16611,2958 16541,2866
+# 
 #: by: Jens Zarbian:
 #: confirmed_by: srt (zumindest am Südende)
 Brassenpfad: guter Beton	Q0 23641,3342 23452,3613 23343,3750 23316,3778
+# 
 #: by: Holger (weltenbrand):
 Graf-Haeseler-Str.: gutes Kopfsteinpflaster	Q1 4096,17890 4139,18091 4181,18284
+# 
 #: by: Kerstin Goldbeck:
-Driesener Str.: gutes Kopfsteinpflaster	Q1 10458,16509 10449,16415 10438,16340 10421,16175 10405,16017
+Driesener Str.: gutes Kopfsteinpflaster	Q1- 10458,16509 10449,16415 10438,16340 10421,16175 10405,16017
+# 
 #: by: Simon Schrape:
 #: confirmed_by: srt
 Kleeblattstr.: gute Betonstraße	Q0 20813,536 20866,334 20894,236 20903,210
+# 
 #: by: Rüdiger (.katrin):
 #: note: Eintrag von F. Reinhardt war "mäßiges Kopfsteinpflaster", aber da hatte ich etwas anderes gesehen...
 #: corrected_by: srt (Q1 -> Q0)
 Hentigstr.: Asphalt	Q0 18548,8942 18586,9172 18621,9404
+# 
 #: by: Omi2006@... [AM]
 #: by: Annett Nisch-Kabelka [AM]
 #: note: Ist laut Annett nur in Teilen schlecht
 #: corrected_by: srt (Q3 -> Q2 -> Q1)
 Hentigstr.: Asphalt mit Löchern	Q1 18514,8773 18548,8942
+# 
 #: by: nicole (heyer):
 Jostweg: schlechtes Kopfsteinpflaster	Q3 3415,25731 3356,25725 3216,25778
+# 
 #: by: Hausberger (benno):
 Siemenswerderweg: sehr schlechtes Kopfsteinpflaster	Q3 -2850,11423 -2938,11244 -3078,11157 -2934,11078 -2894,11025 -2970,10748
+# 
 #: by: ronald (rwarsow):
 Buchsteinweg: guter Asphalt	Q0 9805,2196 9876,2007 9922,1896
 # 
@@ -11260,6 +11273,7 @@ Schwarzer Weg (Tegel): Beton, stellenweise Querrillen	Q0- 6,19817 -13,19739 -51,
 #: confirmed_by: srt
 Doßstr.: schlechtes Kopfsteinpflaster	Q3 23278,12219 23156,12327
 (Am Invalidenfriedhof - Scharnhorststr.): gut befahrbarer Schotterweg	Q1 8119,13912 8216,13987
+# 
 #: by: wosch (Asphalt mit tiefen Querrillen, parallel gut befahrbarer Schotterweg)
 #: corrected_by: Birgit Schroeer (im Juni 2008 neu asphaltiert):
 Invalidenfriedhof: asphaltiert	Q0 8119,13912 8011,14096
@@ -19234,7 +19248,7 @@ Am Omnibushof: Asphalt	Q0 -4650,12257 -4412,12179
 (Mauerweg Spandau): wassergebundene Decke	Q1 -6431,11683 -6483,11710 -6527,11731 -6580,11771 -6609,11780 -6612,11796
 (Mauerweg Spandau): Asphalt	Q0- -6612,11796 -6930,12027 -6991,12080 -7182,12137 -7261,12299 -7342,12349 -7351,12547 -7294,12560 -7317,12618 -7344,12795 -7344,12854
 #: corrected_by ^^^
-Milastr.: Asphalt mit Löchern	Q1 10917,15525 10786,15544
+Milastr.: Asphalt mit Löchern	Q1 10917,15525 10768,15534
 Zolastr.: Asphalt	Q1 10902,13604 10878,13565
 Am Zwirngraben: Gehwegplatten, Kopfsteinpflaster	Q1 10349,13043 10185,12982 10117,12966
 Heidereutergasse: Asphalt	Q0 10427,12873 10390,12842

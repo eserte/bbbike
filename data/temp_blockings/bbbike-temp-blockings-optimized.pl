@@ -649,7 +649,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
          'from' => undef,
          'id' => 1956,
          'data' => '#: XXX_prog: die "Veranstaltungen" sollten auch mit einer Kategorie bedacht werden
-	2::night 10473,15549 10607,15142
+	2::night 10456,15561 10607,15142
 ',
          'type' => 'gesperrt'
        },

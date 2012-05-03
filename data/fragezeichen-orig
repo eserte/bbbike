@@ -286,12 +286,9 @@ Holbeinstr.: Bauarbeiten, wie ist die Fahrbahnbeschaffenheit danach?	?::inwork 3
 Dürergärten, westlicher Ring: noch in Bau	?::inwork 25865,12860 25794,12720 25923,12814
 # 
 #: by: http://www.berlin.de/ba-pankow/presse/archiv/20110622.1200.348788.html
-#: next_check: 2011-07-01
+#: last_checked: 2012-05-03
+#: next_check: 2012-07-15
 Schönholzer Str.: werden hier Radstreifen markiert?	?::inwork 10089,18180 10054,18210 9909,18333
-# 
-#: by: http://www.berlin.de/ba-pankow/presse/archiv/20110608.1725.347135.html
-#: next_check: 2011-07-15
-Hauptstraße/Kastanienallee: neue Ampel in Bau	?::inwork 7992,20515
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/14re.pdf/file
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/30re.pdf/file
@@ -352,8 +349,9 @@ Am Tierpark: nach den Bauarbeiten vielleicht Radwege/-spuren?	?::inwork 18220,11
 Kohlis/Hultschiner Damm: Ampelanlage in Planung, Realisierung 2011	?::inwork 23810,7946
 # 
 #: by: http://www.berlin.de/ba-pankow/presse/archiv/20101116.0930.319072.html
-#: next_check: 2012-01-01
-Fr.-Engels-Str.: Fahrradstreifen werden angelegt, Baubeginn ist Herbst 2011	?::inwork 9355,19789 9333,19853 9300,19949 9266,20048 9235,20125 9149,20336
+#: last_checked: 2012-05-03
+#: next_check: 2012-09-01
+Fr.-Engels-Str.: Fahrradstreifen werden angelegt, Baubeginn Herbst 2011 wurde nicht eingehalten	?::projected 9355,19789 9333,19853 9300,19949 9266,20048 9235,20125 9149,20336
 # 
 #: by: http://www.berlin.de/ba-pankow/presse/archiv/20101117.1135.319249.html
 #: last_checked: 2012-04-27
@@ -2459,7 +2457,6 @@ Obere Donarstr. (Potsdam): Qualität? Existiert eine Verbindung für Radfahrer zur
 #: last_checked: 2012-03-09
 #: next_check: 2012-06-01
 Marthashof: Qualität nach den Bauarbeiten?	?::inwork 10440,14730 10550,14770
-Straße 87 (Rosenthal): Qualität?	? 9091,20425 9025,20372
 Taufsteinweg: Qualität?	? 9295,20632 9311,20489 9324,20386
 #: XXX_osm bei osm als Bruchsaler Str. bezeichnet
 Karlsruher Str. (Mahlsdorf): Qualität?	? 23582,9591 23584,9629 23585,9672 23528,9680
@@ -2620,7 +2617,6 @@ César-Franck-Str.: Qualität?	? 8351,20492 8472,20495
 Maurice-Ravel-Str.: Qualität?	? 8671,20355 8619,20436 8596,20487 8561,20569
 Sonatenweg: Qualität?	? 8596,20487 8654,20492
 Kabelitzweg: Qualität?	? 8351,20492 8035,20451
-Johannes-Kupke-Str.: Qualität?	? 8764,20799 8714,20766 8695,20770 8660,20751
 #: XXX Einbahnstraße für alle, wahrscheinlich, habe keine "Radfahrer frei"-Schild gesehen
 Döbrabergweg: Qualität? Gilt die Einbahnstraße auch für Radfahrer?	? 9892,20776 9848,20926
 #XXX del --- das ist auch Dietzgenstr., uninteressant --- Blankenfelder Str. (Rosenthal): Qualität?	? 10135,21171 9991,21144
@@ -3460,10 +3456,8 @@ Karlshöhe: Wo genau liegt die Straße? Oder ist es nur eine Kleingartenanlage? Qu
 Anlage Schildoweck: sieben neue Privatwege, wo genau, Qualität?	? 8656,24889 8592,24914 8513,24909 8404,24744 8443,24529 8656,24889
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/14re.pdf/file
-#: XXX fehlen alle in Berlin.coords.data:
-#: XXX   Am Igelgrund
-#: XXX   Am Meisenwinkel
-Private Erschließungswege an der Friedrich-Engels-Str.: zwei neue Wege, wo genau, Qualität?	? 9109,20470 9145,20431
+#: XXX fehlt in Berlin.coords.data:
+Am Meisenwinkel: Wo genau liegt die Straße? Qualität?	? 9109,20470 9145,20431
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/14re.pdf/file
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/37re.pdf/file?y=2011
@@ -3768,3 +3762,5 @@ Straße 184 (Tegel): existiert hier auch eine Straße 184?	? 3563,20589 3537,20624
 Straße 455 (Buckow): existiert hier eine Straße mit dem Namen "Straße 455"? Qualität?	? 10853,1805 10940,1904
 #: XXX Pharus meint, dass hier so eine Straße existiert. Siehe oben.
 Straße 455 (Buckow): existiert hier eine Straße mit dem Namen "Straße 455"?	? 11031,1739 11136,1782 11205,1776
+#: XXX auch die Südpanke einzeichnen, falls sie sichtbar ist
+neuer Weg an der Südpanke: wo genau wird der Weg verlaufen? Nachts beleuchtet? Qualität?	? 8423,13937 8329,14120

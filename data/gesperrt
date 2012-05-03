@@ -679,6 +679,7 @@ Halskesteig	1 1058,14459 1157,14459
 Hefnersteig	1 1364,14191 1392,14287 1420,14369
 Bödikersteig	1 1141,14237 1182,14384
 Dorfstr. (Rahnsdorf)	1 29998,3170 29921,3079 29902,3104 29998,3170
+Grunerstr. - Gustav-Böß-Str.	1 10766,12511 10954,12635
 Am Neuen Garten	1 -12166,1384 -12212,1201 -12276,831 -12302,718
 Am Neuen Garten	1 -12332,585 -12582,127
 Hochstraße	3nocross::ignrte -11399,-1339 -11461,-1424 -11540,-1543
@@ -1271,8 +1272,10 @@ Brachvogelstr. -> Zossener Str.: unbequem passierbarer Mittelstreifen	3::igndisp
 Waterloo-Ufer -> Brachvogelstr.: unbequem passierbarer Mittelstreifen	3::igndisp 9825,10206 9858,10199 9884,10192
 Waterloo-Ufer -> Zossener Str.: unbequem passierbarer Mittelstreifen	3::igndisp 9825,10206 9858,10199 9865,10227
 Straßentunnelrampe	3nocross::ignrte 10878,12560 10954,12635 11057,12715 11105,12764
+Littenstr. -> Gustav-Böß-Str.: Straßentunnelrampe	3::igndisp 11059,12450 10954,12635 10766,12511
 Littenstr. -> Grunerstr.: Straßentunnelrampe	3::igndisp 11059,12450 10954,12635 10878,12560
 Grunerstr. -> Littenstr.: Straßentunnelrampe	3::igndisp 11057,12715 10954,12635 11059,12450
+Grunerstr. -> Gustav-Böß-Str.: Straßentunnelrampe	3::igndisp 10878,12560 10954,12635 10766,12511
 Dircksenstr. -> Grunerstr.: Straßentunnelrampe	3::igndisp 11156,12581 11057,12715 10954,12635
 Dircksenstr. -> Dircksenstr.: Straßentunnelrampe	3::igndisp 11156,12581 11057,12715 11030,12741
 Grunerstr. -> Dircksenstr.: Straßentunnelrampe	3::igndisp 10954,12635 11057,12715 11030,12741
@@ -1309,7 +1312,7 @@ Tempelhofer Damm -> Viktoriastr.: unbequem passierbarer Mittelstreifen	3::igndis
 U-Bahnviadukt	3nocross::ignrte 10971,15944 10964,15896 10953,15787
 Kopenhagener Str. -> Schönhauser Allee: U-Bahnviadukt	3::igndisp 10722,15921 10964,15896 10971,15944
 Schönhauser Allee -> Kopenhagener Str.: U-Bahnviadukt	3::igndisp 10953,15787 10964,15896 10722,15921
-Schönhauser Allee: U-Bahnviadukt	3 10938,15670 10917,15525 11055,15504
+Schönhauser Allee: U-Bahnviadukt	3 10941,15697 10917,15525 11055,15504
 U-Bahnrampe	3nocross::ignrte 10986,16897 10999,16830 11018,16730 11026,16606 11027,16553 11019,16465
 Berliner Str. -> Hallandstr.: U-Bahnrampe	3::igndisp 10986,16897 10999,16830 11270,16890
 Hallandstr. -> Berliner Str.: U-Bahnrampe	3::igndisp 11270,16890 10999,16830 11018,16730

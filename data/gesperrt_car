@@ -213,10 +213,10 @@ Gustav-Freytag-Str. (Grunewald)	1 834,8273 815,8283 748,8456 765,8481
 Schumannstr.	1 8581,13013 8628,13033 8703,13045 8963,13117
 Albrechtstr. (Mitte)	1 8963,13117 9001,13039 9046,12933 9106,12795
 Charitéstr.	1 8693,12951 8628,13033
-Spandauer Str. (Mitte)	3nocross::ignrte 10738,12364 10684,12423 10644,12469 10601,12521
-Gustav-Böß-Str. -> Spandauer Str.: Spandauer Str. (Mitte)	3::igndisp 10778,12493 10684,12423 10738,12364
-Spandauer Str. -> Gustav-Böß-Str.: Spandauer Str. (Mitte)	3::igndisp 10644,12469 10684,12423 10778,12493
-Spandauer Str. -> Am Nußbaum: Spandauer Str. (Mitte)	3::igndisp 10684,12423 10644,12469 10626,12455
+Spandauer Str. (Mitte)	3nocross::ignrte 10738,12364 10673,12434 10644,12469 10601,12521
+Gustav-Böß-Str. -> Spandauer Str.: Spandauer Str. (Mitte)	3::igndisp 10766,12511 10673,12434 10738,12364
+Spandauer Str. -> Gustav-Böß-Str.: Spandauer Str. (Mitte)	3::igndisp 10644,12469 10673,12434 10766,12511
+Spandauer Str. -> Am Nußbaum: Spandauer Str. (Mitte)	3::igndisp 10673,12434 10644,12469 10626,12455
 Am Nußbaum -> Spandauer Str.: Spandauer Str. (Mitte)	3::igndisp 10626,12455 10644,12469 10601,12521
 Siegfriedstr.	1 12340,6947 12477,6975 12664,7013 12810,7047 12843,7093 12872,7134
 Onkel-Herse-Str.	1 13680,4715 13757,4729 13836,4759 13853,4759 13939,4778
@@ -265,13 +265,13 @@ Landsberger Allee -> Pöhlbergstr: Straßenbahn	3::igndisp 21584,15753 21475,15705
 Landsberger Allee -> Schönagelstr.: Straßenbahn	3::igndisp 21475,15705 21584,15753 21602,15908
 Schönagelstr. -> Landsberger Allee: Straßenbahn	3::igndisp 21602,15908 21584,15753 21694,15802
 Topsstr.	1 10607,15142 10886,15251
-Schönhauser Allee	3nocross::ignrte 10902,15422 10917,15525 10938,15670
+Schönhauser Allee	3nocross::ignrte 10902,15422 10917,15525 10941,15697
 Buchholzer Str. -> Schönhauser Allee: Schönhauser Allee	3::igndisp 11055,15504 10917,15525 10902,15422
-Buchholzer Str. -> Milastr.: Schönhauser Allee	3::igndisp 11055,15504 10917,15525 10786,15544
-Schönhauser Allee -> Buchholzer Str.: Schönhauser Allee	3::igndisp 10938,15670 10917,15525 11055,15504
-Schönhauser Allee -> Milastr.: Schönhauser Allee	3::igndisp 10902,15422 10917,15525 10786,15544
-Milastr. -> Buchholzer Str.: Schönhauser Allee	3::igndisp 10786,15544 10917,15525 11055,15504
-Milastr. -> Schönhauser Allee: Schönhauser Allee	3::igndisp 10786,15544 10917,15525 10938,15670
+Buchholzer Str. -> Milastr.: Schönhauser Allee	3::igndisp 11055,15504 10917,15525 10768,15534
+Schönhauser Allee -> Milastr.: Schönhauser Allee	3::igndisp 10902,15422 10917,15525 10768,15534
+Milastr. -> Buchholzer Str.: Schönhauser Allee	3::igndisp 10768,15534 10917,15525 11055,15504
+Milastr. -> Schönhauser Allee: Schönhauser Allee	3::igndisp 10768,15534 10917,15525 10941,15697
+Schönhauser Allee -> Buchholzer Str.: Schönhauser Allee	3::igndisp 10941,15697 10917,15525 11055,15504
 Am Kupfergraben	1 9754,12775 9810,12712 9867,12651 9919,12613
 Uthmannstr.	1 13150,7845 12914,7785
 Herrnhuter Str.	1 12898,7832 13103,7889
@@ -711,12 +711,12 @@ Abbiegen verboten	3nocross::ignrte 10313,11805 10299,11786 10240,11740
 Spittelmarkt -> Kurstr.: Abbiegen verboten	3::igndisp 10240,11740 10299,11786 10274,11805
 Kurstr. -> Spittelmarkt: Abbiegen verboten	3::igndisp 10274,11805 10299,11786 10313,11805
 Mittelstreifen	3nocross::ignrte 10738,12364 10800,12461 10878,12560 10954,12635
-Jüdenstr. -> Grunerstr.: Mittelstreifen	3::igndisp 10778,12493 10800,12461 10878,12560
-Jüdenstr. -> Jüdenstr.: Mittelstreifen	3::igndisp 10778,12493 10800,12461 10831,12371
+Jüdenstr. -> Grunerstr.: Mittelstreifen	3::igndisp 10766,12511 10800,12461 10878,12560
+Jüdenstr. -> Jüdenstr.: Mittelstreifen	3::igndisp 10766,12511 10800,12461 10831,12371
 Grunerstr. -> Jüdenstr.: Mittelstreifen	3::igndisp 10878,12560 10800,12461 10831,12371
-Jüdenstr. -> Jüdenstr.: Mittelstreifen	3::igndisp 10831,12371 10800,12461 10778,12493
+Jüdenstr. -> Jüdenstr.: Mittelstreifen	3::igndisp 10831,12371 10800,12461 10766,12511
 Jüdenstr. -> Grunerstr.: Mittelstreifen	3::igndisp 10831,12371 10800,12461 10738,12364
-Grunerstr. -> Jüdenstr.: Mittelstreifen	3::igndisp 10738,12364 10800,12461 10778,12493
+Grunerstr. -> Jüdenstr.: Mittelstreifen	3::igndisp 10738,12364 10800,12461 10766,12511
 Klosterstr. -> Grunerstr.: Mittelstreifen	3::igndisp 10952,12401 10878,12560 10800,12461
 Grunerstr. -> Klosterstr.: Mittelstreifen	3::igndisp 10954,12635 10878,12560 10952,12401
 Bayernring	1 8616,8605 8455,8567 8371,8543
