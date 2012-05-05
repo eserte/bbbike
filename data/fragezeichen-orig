@@ -125,6 +125,21 @@ Fahrradstraße in der Lauenburger Str.	?::projected 5870,4992 5905,5088 5927,5182
 #: section ignorieren vvv
 #: section Straßen in Bau und Planung vvv
 # 
+#: by: http://www.berlin.de/ba-neukoelln/presse/archiv/20120427.1445.369492.html vvv
+#: XXX Radwegesanierung in Neukölln, geplant für 2013 und später vvv
+#: next_check: 2013-01-01 vvv
+Herrfurthstr.: eventuell wird hier asphaltiert, und vielleicht wird die Einbahnstraßenregelung aufgehoben?	?::projected 11472,7899 11573,7924 11647,7940 11671,7904 11713,7899 11748,7922 11754,7964 11823,7980 11979,8014
+Innstr.: eventuell wird hier asphaltiert, vielleicht auch der Zugang zum Elsensteg erleichtert?	?::projected 13107,8343 13166,8423 13217,8493 13262,8554 13301,8606 13314,8624 13366,8694
+Buckower Damm: eventuell werden die Radwege hier asphaltiert?	?::projected; 12560,4290 12640,4001 12655,3882 12667,3762 12673,3627 12673,3619 12684,3406 12687,3319 12701,2955 12695,2789 12693,2746 12694,2570 12694,2544 12694,2514
+Marienfelder Chaussee: eventuell werden die Radwege hier asphaltiert?	?::projected; 12207,1704 11865,1564 11765,1522 11475,1404 11198,1291 11155,1273 11002,1211 10827,1140 10759,1112 10662,1072 10425,971
+#: next_check ^^^
+#: XXX ^^^
+#: XXX Radwegesanierung in Neukölln, geplant für 2012 vvv
+#: last_checked: 2012-04-14
+Karl-Marx-Str.: Radangebotsstreifen werden angelegt	?::inwork 13095,6926 13081,7014 13078,7033 13067,7113 13058,7165 13047,7234 13034,7319 13030,7346 13027,7368 13015,7440
+#: XXX ^^^
+#: by: ^^^
+# 
 #: last_checked: 2012-04-14
 #: next_check: 2012-09-01
 Mathilde-Vaerting-Weg: Qualität nach den Bauarbeiten? Wo genau befindet sich der Weg?	? 17620,-345 17634,-367
@@ -610,6 +625,7 @@ Mieltschiner Str.: Straße wird eigenzogen - bleibt dieser Abschnitt öffentlich b
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/11re.pdf/file?y=2012
 #: XXX fehlt auch bei Berlin.coords.data
 #: XXX siehe auch den anderen Abschnitt der Straße
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/18re.pdf/file?y=2012
 Stephan-Born-Str.: genaue Lage? Privatstraße?	? 23307,15956 23313,16011 23447,15979 23442,15927
 # 
 #: XXX fehlt auch bei Berlin.coords.data
@@ -3764,3 +3780,17 @@ Straße 455 (Buckow): existiert hier eine Straße mit dem Namen "Straße 455"? Qual
 Straße 455 (Buckow): existiert hier eine Straße mit dem Namen "Straße 455"?	? 11031,1739 11136,1782 11205,1776
 #: XXX auch die Südpanke einzeichnen, falls sie sichtbar ist
 neuer Weg an der Südpanke: wo genau wird der Weg verlaufen? Nachts beleuchtet? Qualität?	? 8423,13937 8329,14120
+# 
+#: by: http://www.berlin.de/ba-neukoelln/presse/archiv/20120427.1445.369492.html vvv
+#: XXX Radwegesanierung in Neukölln vvv
+Buckower Damm: existieren am Buckower Damm zwischen Gerlinger Str. und Stadtgrenze Radwege?	? 12938,1348 12941,1256 12984,1011
+Gutschmidtstraße: sind die Radwege asphaltiert oder saniert?	? 12655,3882 12711,3881 12726,3870 12796,3821 12913,3743 13030,3664 13162,3576 13396,3512 13526,3519
+#: XXX möglicherweise nur Richtung Süden
+Tischlerzeile: existieren in der Tischlerzeile zwischen Severingstr. und Johannisthaler Chaussee Radwege oder Radstreifen?	? 13455,2465 13498,2411
+Fritz-Erler-Allee: sind die Radwege asphaltiert oder saniert?	? 14392,2979 14274,3129 14205,3187 14126,3225 14023,3276 13906,3340 13775,3500
+# XXX del --- Widerspruch zum nächsten Eintrag --- Tempelhofer Weg: sind die Radwege im Tempelhofer Weg von Gradestraße bis Holzmindener Straße asphaltiert oder saniert?	?; 12507,5228 12205,5545
+#: XXX zwischen Gradestr. und Hattenheimer Str.
+Tempelhofer Weg: existieren im Tempelhofer Weg Radstreifen?	? 12507,5228 12205,5545 12107,5651 12052,5710 12017,5747 11943,5825 11590,6026
+Lahnstr: existieren in der Lahnstraße Radstreifen?	? 13095,6926 13278,6967 13500,7018 13627,7047 13891,7107
+#: XXX ^^^
+#: by: ^^^

@@ -18975,12 +18975,15 @@ EOF
 userdel	2::temp 13178,10623 13206,10651 13305,10789 13332,10832
 EOF
      },
-     { from  => 1303941600, # 2011-04-28 00:00
-       until => 1306101599, # 2011-05-22 23:59
-       text  => 'Neuköllner Maientage im Volkspark Hasenheide, Behinderungen möglich, 29.04. - 22.05.2011 ',
+     { from  => 1335477600, # PERIODISCH!
+       until => 1337551140,
+       text  => 'Neuköllner Maientage im Volkspark Hasenheide, Behinderungen möglich, 27.4.2012 bis zum 20.5.2012',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::temp 11177,8985 11255,8591 11279,8489 11282,8428 11275,8387 11266,8336
+userdel	q4::temp 11225,8350 11230,8402 11235,8454 11193,8568 11137,8738
+userdel	q4::temp 11275,8387 11230,8402
+userdel	q4::temp 11333,8582 11255,8591 11193,8568 11133,8560
 EOF
      },
      { from  => 1304805600, # 2011-05-08 00:00

@@ -1063,7 +1063,18 @@ userdel	q4::inwork 425,8766 490,8716
        undef,
        undef,
        undef,
-       undef,
+       {
+         'until' => 1337551140,
+         'text' => 'Neuköllner Maientage im Volkspark Hasenheide, Behinderungen möglich, 27.4.2012 bis zum 20.5.2012',
+         'from' => 1335477600,
+         'id' => 2207,
+         'data' => 'userdel	q4::temp 11177,8985 11255,8591 11279,8489 11282,8428 11275,8387 11266,8336
+userdel	q4::temp 11225,8350 11230,8402 11235,8454 11193,8568 11137,8738
+userdel	q4::temp 11275,8387 11230,8402
+userdel	q4::temp 11333,8582 11255,8591 11193,8568 11133,8560
+',
+         'type' => 'handicap'
+       },
        undef,
        undef,
        {
@@ -1393,16 +1404,6 @@ userdel	q4::inwork 11436,14741 11271,14755
          'from' => 1334814060,
          'id' => 2325,
          'data' => 'userdel	q4::inwork 20485,17784 20542,17911 20576,17994
-',
-         'type' => 'handicap'
-       },
-       {
-         'source_id' => 'INKO_112232',
-         'until' => 1336136400,
-         'text' => 'Chausseestr. (Mitte) in Höhe Wöhlertstr.: Baustelle, Fahrtrichtung Richtung Müllerstr. gesperrt, 23.04.2012 12:00 Uhr bis 04.05.2012 15:00 Uhr ',
-         'from' => 1335088800,
-         'id' => 2326,
-         'data' => 'userdel	q4::inwork; 8527,14352 8442,14456 8346,14576
 ',
          'type' => 'handicap'
        }
