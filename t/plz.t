@@ -86,7 +86,7 @@ if (!GetOptions("create!" => \$create,
 if ($create) {
     plan 'no_plan';
 } else {
-    plan tests => 172 + scalar(@approx_tests)*4;
+    plan tests => 174 + scalar(@approx_tests)*4;
 }
 
 # XXX auch Test mit ! -small
@@ -559,7 +559,7 @@ for my $noextern (@extern_order) {
 		or diag $dump->(\@res);
 	}
 
-    XXX: {
+	{
 	    my @res1 = $plz->look("Nibelungenstr.", Citypart=>"Wannsee");
 	    ok @res1 or diag $dump->(\@res1);
 	    my @res2 = $plz->look("Nibelungenstr.", Citypart=>"Nikolassee");
@@ -568,6 +568,16 @@ for my $noextern (@extern_order) {
 	}
 
     }
+}
+
+XXX: {
+    my @res = $plz->look_loop_best("Dudnstr", Agrep => 'default');
+    is $res[0][0][PLZ::LOOK_NAME], 'Dudenstr.', 'look_loop_best';
+}
+
+{
+    my @res = $plz->look_loop_best('dudenstr)', Agrep => 'default');
+    is $res[0][0][PLZ::LOOK_NAME], 'Dudenstr.', 'Invalid regexp does not cause failure';
 }
 
 sub testplz {

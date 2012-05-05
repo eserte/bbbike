@@ -632,7 +632,7 @@ sub look_loop_best {
     my($matchref, $agrep) = $self->look_loop($str, %args);
     if (@$matchref) {
 	my @rating;
-	my $str_rx = qr{(?i:^$str)};
+	my $str_rx = qr{(?i:^\Q$str\E)};
 	for(my $i=0; $i<=$#$matchref; $i++) {
 	    my $item = $matchref->[$i];
 	    if ($item->[LOOK_NAME] eq $str) {
