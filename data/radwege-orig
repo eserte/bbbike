@@ -2362,8 +2362,14 @@ zunächst einige Meter benutzungspflichtig, dann Gehweg für Radfahrer frei	RW1; 2
 	RW2;RW0 10710,18393 10680,18380
 	RW; 10609,18384 10567,18366
 	RW;RW 11929,23946 11514,24284 11760,24470 11768,24522 11706,24797 11077,25604
+#: XXX nicht sicher, prüfen!
+#: by: http://www.berlin.de/imperia/md/content/bapankow/tiefbauamt/pasewalkerlp6.pdf?start&ts=1195123131&file=pasewalkerlp6.pdf
+	RW; 12121,20969 12168,21218
+#: XXX nicht sicher, prüfen!
+#: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/pasewalker_strasse.html
+teilweise kombinierter Geh- und Radweg, teilweise Mischverkehrsfläche	RW; 12121,20969 12095,20832 12076,20731 12030,20490 12008,20368
 #: by: wosch (Nordrichtung)
-	RW0;RW4? 12168,21218 12121,20969 12095,20832 12076,20731 12030,20490 12008,20368
+	RW4?; 12008,20368 12030,20490 12076,20731 12095,20832 12121,20969
 asphaltierter gemeinsamer Rad- und Gehweg	RW2; 15564,7395 15609,7347 15695,7254
 asphaltierter Gehweg für Radfahrer frei	RW1; 15695,7254 15919,6992
 	RW;RW 5357,7202 5324,7205 5139,7206 5074,7207 4979,7205 4892,7203 4787,7203
@@ -3543,3 +3549,7 @@ Tempo 10	RW6;RW6 16308,1585 16464,1194 16489,1185
 	RW6;RW6 11595,15058 11582,15021
 gemeinsamer Rad- und Gehweg	RW2;RW2 1238,15705 1232,15804
 asphaltiert	RW1;RW1 984,14086 1058,14060 1216,13978 1381,13939 1559,13938 1674,13948 1697,13989 1676,14082 1709,14243
+#: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/berliner_strasse.html
+	RW; 10846,17992 10829,18083 10755,18231
+#: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/berliner_strasse.html
+	RW; 10846,17992 10859,17854

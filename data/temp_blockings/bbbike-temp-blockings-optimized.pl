@@ -997,7 +997,8 @@ userdel	3 13034,7319 13047,7234 13150,7254
          'text' => 'Berliner Str. (Pankow): Baustelle, Fahrtrichtung gesperrt (bis Ende 12/2012) stadteinwärts zwischen Breite Str. und Florastr. ',
          'from' => 1254641760,
          'id' => 2172,
-         'data' => 'userdel	q4::inwork; 10680,18380 10755,18231 10829,18083 10846,17992
+         'data' => '#: next_check: 2012-05-15
+userdel	q4::inwork; 10680,18380 10755,18231 10829,18083 10846,17992
 ',
          'type' => 'handicap'
        },
@@ -1218,10 +1219,12 @@ userdel	3 12992,7545 13015,7440 12925,7425
        {
          'source_id' => 'INKO_078941',
          'until' => 1351699200,
-         'text' => 'Blankenburger Straße: Richtung Dietzgenstraße zwischen Lindenberger Straße und Siegfriedstraße wegen Bauarbeiten gesperrt, 05.10.2011 11:00 Uhr bis 31.10.2012 17:00 Uhr',
+         'text' => 'Blankenburger Straße: Richtung Dietzgenstraße zwischen Lindenberger Straße und Siegfriedstraße wegen Bauarbeiten gesperrt; Herthaplatz ist teilweise eine Einbahnstraße; 05.10.2011 11:00 Uhr bis 31.10.2012 17:00 Uhr',
          'from' => 1317679200,
          'id' => 2290,
          'data' => 'userdel	q4::inwork; 11148,19838 11051,19789 10948,19737 10829,19676 10742,19632
+#: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/blankenburger-strasse2.html
+userdel	q4::inwork; 10614,19907 10599,19957
 ',
          'type' => 'handicap'
        },
@@ -1404,6 +1407,18 @@ userdel	q4::inwork 11436,14741 11271,14755
          'from' => 1334814060,
          'id' => 2325,
          'data' => 'userdel	q4::inwork 20485,17784 20542,17911 20576,17994
+',
+         'type' => 'handicap'
+       },
+       undef,
+       undef,
+       {
+         'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/organisationseinheiten/tief/index.html',
+         'until' => 1337464800,
+         'text' => 'Grünauer Straße: Vollsperrung zwischen Normannenstraße und Köpenicker Straße aufgrund eines defekten Regenentwässerungskanal, Bauzeit vom 07.05.12 bis 19.05.12',
+         'from' => 1336255200,
+         'id' => 2328,
+         'data' => 'userdel	q4::inwork 19771,1793 19898,1704
 ',
          'type' => 'handicap'
        }

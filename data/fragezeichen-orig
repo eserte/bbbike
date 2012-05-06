@@ -125,6 +125,14 @@ Fahrradstraße in der Lauenburger Str.	?::projected 5870,4992 5905,5088 5927,5182
 #: section ignorieren vvv
 #: section Straßen in Bau und Planung vvv
 # 
+#: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/bauenundstadtentwicklung/tiefbauamt/__bersicht_stra__enbaustellen_neubau.xls?download.html&date=20120505
+#: next_check: 2013-05-30
+Glienicker Weg: Neubau der Straße, u.a. Radwege	?::inwork 20779,3046 20832,3170 20967,3343 21055,3415 21153,3484 21198,3522 21244,3571
+# 
+#: by: http://www.berlin.de/ba-steglitz-zehlendorf/verwaltung/bauen/tiefbau/bauarbeiten.html?date=20120505
+#: next_check: 2012-12-31
+Leonorenstr.: Radwegführung wird geändert, teilweise mit Busspur zusammengelegt	?::inwork 6625,3314 6529,3480 6462,3644 6442,3685 6376,3835
+# 
 #: by: http://www.berlin.de/ba-neukoelln/presse/archiv/20120427.1445.369492.html vvv
 #: XXX Radwegesanierung in Neukölln, geplant für 2013 und später vvv
 #: next_check: 2013-01-01 vvv
@@ -185,6 +193,7 @@ Verlängerung der Kraetkestr.: teilweise schon fertig (asphaltiert), teilweise in
 # 
 #: next_check: 2011-10-31
 #: by: http://www.berlin.de/ba-pankow/presse/archiv/20110930.1255.360473.html
+#: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/blankenburger-strasse2.html
 Blankenberger Str.: Radstreifen	?::inwork 11148,19838 11051,19789 10948,19737 10829,19676 10742,19632
 # 
 #XXX del --- mitten auf dem Weg wird gerade ein Haus gebaut --- #: last_checked: 2011-10-03 --- #: next_check: 2012-02-15 --- #: XXX zurzeit Bauarbeiten. Wahrscheinlich Gehwegplatten --- U Zwickauer Damm - U Wutzkyallee: für Radfahrer befahrbarer Weg? Qualität? Nachts beleuchtet?	? 15622,2051 15622,2037 15312,2010
@@ -227,7 +236,7 @@ Fritz-Thurm-Weg: Qualität? Genaue Lage der Straße? Schon fertiggestellt?	?::inwo
 #: by: ^^^
 # 
 #: XXX diese Straßen existieren noch nicht
-#: XXX teilweise (oder alle) fehlen sie auch in Berlin.coords.data
+#: XXX teilweise fehlen sie auch in Berlin.coords.data
 #: last_checked: 2011-04-17 vvv
 #: next_check: 2012-04-01 vvv
 An den Auen: Qualität?	?::projected 21194,19054 21248,19007 21285,18950 21310,18889
@@ -364,9 +373,10 @@ Am Tierpark: nach den Bauarbeiten vielleicht Radwege/-spuren?	?::inwork 18220,11
 Kohlis/Hultschiner Damm: Ampelanlage in Planung, Realisierung 2011	?::inwork 23810,7946
 # 
 #: by: http://www.berlin.de/ba-pankow/presse/archiv/20101116.0930.319072.html
+#: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/friedrich_engels_strasse.html
 #: last_checked: 2012-05-03
-#: next_check: 2012-09-01
-Fr.-Engels-Str.: Fahrradstreifen werden angelegt, Baubeginn Herbst 2011 wurde nicht eingehalten	?::projected 9355,19789 9333,19853 9300,19949 9266,20048 9235,20125 9149,20336
+#: next_check: 2013-04-01
+Fr.-Engels-Str.: Fahrradstreifen werden angelegt, Kopfsteinpflaster verschwindet	?::projected 9355,19789 9333,19853 9300,19949 9266,20048 9235,20125 9149,20336
 # 
 #: by: http://www.berlin.de/ba-pankow/presse/archiv/20101117.1135.319249.html
 #: last_checked: 2012-04-27
@@ -379,9 +389,13 @@ Rudolf-Breitscheid-Str.: nach den Bauarbeiten wird es in Richtung Westen eine 2m
 # 
 #XXX del --- #: by: http://www.potsdam.de/cms/beitrag/10069329/966975/ --- Hegelallee (Potsdam): asphaltierter Radweg fertiggestellt?	?::inwork -13625,-902 -13468,-847 -13433,-831 -13231,-763 -13137,-728 -13067,-706
 # 
-#: last_checked: 2011-03-27
-#: next_check: 2011-05-01
-Berliner Str. (Pankow, Prenzlauer Berg): nach den Bauarbeiten fällt evtl. das Kopfsteinpflaster weg, es wird zumindest Richtung Norden ab Granitzstr. Radwege geben	?::inwork 10680,18380 10755,18231 10829,18083 10846,17992
+#: last_checked: 2011-03-27 vvv
+#: next_check: 2012-05-15 vvv
+Berliner Str. (Pankow, Prenzlauer Berg): hier entsteht ein Radstreifen	?::inwork; 10755,18231 10680,18380
+Berliner Str. (Pankow, Prenzlauer Berg): hier entsteht ein Radstreifen	?::inwork; 10680,18380 10755,18231 10829,18083 10846,17992
+Berliner Str. (Pankow, Prenzlauer Berg): hier entsteht ein Radweg	?::inwork; 10859,17854 10846,17992
+#: next_check ^^^
+#: last_checked ^^^
 # 
 #: last_checked: 2010-10-02 vvv
 #: next_check: 2011-09-01 vvv
@@ -504,7 +518,7 @@ Braunschweiger Str.: Asphaltierung	? 13047,7234 13150,7254 13322,7294 13369,7307
 # 
 #: last_checked: 2011-10-29
 #: next_check: 2012-02-01
-#: XXX wird im östlichen Abschnitt der Teilestr. je etwas passieren?
+#: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/6._stra__enbauliste_stand_2011_10_24.pdf?start&ts=1319528942&file=6._stra__enbauliste_stand_2011_10_24.pdf
 Teilestr.: Radverkehrsanlagen	? 10815,6036 11068,6006 11160,5990 11257,6015 11322,5989
 # 
 #: last_checked: 2010-06-06
@@ -604,6 +618,8 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 # Das heißt diese Strecken werden nicht bei einer erweiterten Suche aufgenommen
 # und dem CGI-Benutzer auch nicht präsentiert.
 # 
+Treitschkestr.: Situation hier nach der Eröffnung des "Boulevard Berlin"?	? 5219,6215 5125,6262 4971,6345 4854,6413
+# 
 #: XXX Hinweis von norbert winkelmann, check:
 Umfahrung der Drängelgitter	? 6526,20998 6565,21004 6560,21055
 # 
@@ -633,6 +649,7 @@ Stephan-Born-Str.: genaue Lage? Privatstraße?	? 23307,15956 23313,16011 23447,15
 Gustav-Hartmann-Platz: wo genau befindet sich der Platz?	? -4744,1466
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20120302.1240.366909.html
+#: by: http://www.berlin.de/ba-treptow-koepenick/organisationseinheiten/tief/index.html?date=20120505
 #: next_check: 2012-07-31
 Königsheideweg: Geh- und Radwegarbeiten im Königsheideweg - gibt es danach hier Radwege?	?::inwork 16784,4913 16554,5022 16362,5112 16279,5170
 #XXX del --- trotz Bauarbeiten weiterhin ausgeschildert --- Radroutenwegführung überprüfen	? 9890,12161 9875,12257 9869,12297 9852,12409
@@ -3492,6 +3509,7 @@ Am Meisenwinkel: Wo genau liegt die Straße? Qualität?	? 9109,20470 9145,20431
 Anlage Frohsinn: Benennung von 11 Privatwegen, wo genau, Qualität?	? 10873,22065 10841,21949
 # 
 #: XXX: westliches Ende sah asphaltiert aus
+#: XXX: Straßenschilder? Das könnte der "Falkenberger Fußsteig" sein, wovon es aber nur wenige Referenzen im Netz gibt, u.a. bei http://www.berlin.de/ba-lichtenberg/buergerservice/stadtplanung/index.php?strasse=falkenberger+fu%C3%9Fsteig&strasse_mit=--+Bitte+ausw%C3%A4hlen+--&plz=--+Bitte+ausw%C3%A4hlen+--#results
 (Falkenberger Chaussee - Dorfstr./Wartenberg): Qualität? Nachts beleuchtet?	? 18922,18436 18761,18480 18503,18535 18215,18629 18185,18641
 #XXX del --- Walter-Felsenstein-Str. - Bitterfelder Str.: existiert hier eine Verbindung?	? 20459,16697 20409,16670
 Ducherow - Busow: Qualität?	? 33515,151584 33553,151842 33557,151971 33514,151992
@@ -3657,7 +3675,7 @@ Lanker Str.: Qualität im nördlichen Abschnitt?	? 15347,23211 15387,23310 15428,2
 Ückeritzer Ring: Ist die Straße schon fertig gestellt? Qualität? Wo genau verläuft die Straße?	? 17264,19242 17301,19300 17403,19327 17436,19272
 #XXX del --- Groß-Ziethener Chaussee: Gehweg für Radfahrer in beide Richtungen freigegeben?	? 15854,666 15757,610 15655,556 15598,526 15425,424 15395,409 15333,378
 #: XXX laut osm Verbundsteinpflaster
-Schwarzer Weg: Qualität?	? 13215,-570 12804,-735
+Schwarzer Weg (Großziethen): Qualität?	? 13215,-570 12804,-735
 Zugang zum Tegeler Weg: Zugang möglich? Überquerung der Straße möglich?	? 2817,14003 2858,14045
 Däumlingsweg: Qualität?	? 23593,6663 23615,6884
 # XXX bei osm nicht aufzufinden, aber wahrscheinlich sowieso nur ein Weg in einer KGA: Frau-Holle-Weg|Britz|12349|11460,2191
@@ -3705,6 +3723,7 @@ Feldspatzwenweg: Qualität? Wo genau befindet sich die Straße?	? 7609,23108 7583,
 Weg im Volkspark Wittenau: Qualität? Beleuchtet?	? 5327,21136 4942,20830
 Reinickes Hof: existiert eine Verbindung zum Saalmannsteig? Qualität?	? 5281,18996
 Bleichröderpark: Qualität? Nachts beleuchtet? Ausgeschildert?	? 10582,18159 10543,18194 10508,18190 10487,18270
+#: XXX fehlt in Berlin.coords.data
 Stellerweg: existiert hier ein Weg? Ausgeschildert? Qualität für Radfahrer?	? 15367,14512 15127,14570
 #: XXX evtl. auch Park und See (Heidelake) eintragen
 Heidelakepark: existiert hier eine Verbindung? Qualität? Nachts beleuchtet?	? -7033,14984 -7084,15022 -7072,15041 -7116,15053
@@ -3794,3 +3813,5 @@ Tempelhofer Weg: existieren im Tempelhofer Weg Radstreifen?	? 12507,5228 12205,5
 Lahnstr: existieren in der Lahnstraße Radstreifen?	? 13095,6926 13278,6967 13500,7018 13627,7047 13891,7107
 #: XXX ^^^
 #: by: ^^^
+#: XXX fehlt in Berlin.coords.data
+Violastr.: existiert diese Straße? Mit Straßenschildern? Qualität?	? 16610,19836 16550,19829 16471,19825 16411,19824

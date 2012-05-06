@@ -18665,6 +18665,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_018078',
        data  => <<EOF,
+#: next_check: 2012-05-15
 userdel	q4::inwork; 10680,18380 10755,18231 10829,18083 10846,17992
 EOF
      },
@@ -19765,11 +19766,13 @@ EOF
      },
      { from  => 1317679200, # 2011-10-04 00:00
        until => 1351699200, # 2012-10-31 17:00
-       text  => 'Blankenburger Straße: Richtung Dietzgenstraße zwischen Lindenberger Straße und Siegfriedstraße wegen Bauarbeiten gesperrt, 05.10.2011 11:00 Uhr bis 31.10.2012 17:00 Uhr',
+       text  => 'Blankenburger Straße: Richtung Dietzgenstraße zwischen Lindenberger Straße und Siegfriedstraße wegen Bauarbeiten gesperrt; Herthaplatz ist teilweise eine Einbahnstraße; 05.10.2011 11:00 Uhr bis 31.10.2012 17:00 Uhr',
        type  => 'handicap',
        source_id => 'INKO_078941',
        data  => <<EOF,
 userdel	q4::inwork; 11148,19838 11051,19789 10948,19737 10829,19676 10742,19632
+#: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/blankenburger-strasse2.html
+userdel	q4::inwork; 10614,19907 10599,19957
 EOF
      },
      { from  => 1317592800, # 2011-10-03 00:00
@@ -20116,6 +20119,15 @@ EOF
        data  => <<EOF,
 userdel	2::temp 8610,12254 8538,12245 8214,12205 8089,12190 8055,12186
 userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165
+EOF
+     },
+     { from  => 1336255200, # 2012-05-06 00:00
+       until => 1337464800, # 2012-05-20 00:00
+       text  => 'Grünauer Straße: Vollsperrung zwischen Normannenstraße und Köpenicker Straße aufgrund eines defekten Regenentwässerungskanal, Bauzeit vom 07.05.12 bis 19.05.12',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-treptow-koepenick/organisationseinheiten/tief/index.html',
+       data  => <<EOF,
+userdel	q4::inwork 19771,1793 19898,1704
 EOF
      },
     );
