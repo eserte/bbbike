@@ -242,7 +242,6 @@ Mussehlstr.: Bordsteine (Bayernring und Wolffring)	q3 8836,8564 8756,8453 8711,8
 Am Rummelsburger See: Fuﬂg‰nger, kurvenreich	q1 15787,9321 15819,9430 15749,9558 15741,9590 15703,9605 15600,9695 15626,9710 15583,9779 15545,9818 15465,9860 15347,9922 15295,10022 15260,10048 15314,10121 15261,10167 15204,10201 15134,10243 15101,10263 15044,10297 14977,10348 14892,10411 14864,10451 14868,10467 14884,10508 14906,10587 14937,10598 14990,10581 15100,10637 15248,10562
 Am Rummelsburger See: teilweise enge Kurven, Fuﬂg‰nger an schˆnen Tagen	q2 15453,10415 15457,10342 15496,10277 15518,10234 15604,10204 15601,10179 15645,10147 15713,10035 15786,9957 15790,9920 15828,9875 15914,9858 15931,9846
 Am Rummelsburger See: Fuﬂg‰nger an schˆnen Tagen	q1 15931,9846 16000,9784 16046,9746 16123,9692 16120,9653 16182,9591 16268,9670 16347,9594
-Unterf¸hrung unter Adlergestell und S-Bahn ist sehr eng, nicht f¸r Anh‰nger geeignet	q3 20939,2413 20810,2398
 Vorfahrt Reichstagsgeb‰ude: Fuﬂg‰nger	q4 8400,12417 8399,12616
 Am Teltowkanal: kurverreich und recht eng	q1 3751,1402 3695,1308 3619,1207 3458,1063 3366,1007
 Kˆrnerpark: Fuﬂg‰nger, Bordsteine	q3 12703,7370 12722,7261
@@ -945,6 +944,9 @@ Gormannstr.: Bordstein	q2 10350,13376 10353,13384
 (Wohlrabedamm - Reisstr.): Bordstein	q2 1311,14191 1314,14207
 Spreeufer: unter der Rohrdammbr¸cke sehr eng	q3 1124,13536 1184,13544
 (Uranusstr. - Siriusstr.): Schulgel‰nde, teilweise ist das Radfahren explizit verboten	q4 18827,-537 18906,-316
+(Widosteig - Bohnsdorfer Weg): Pfad	q2 19934,1102 19955,1158 19940,1265
+(Parkweg im Business Park Berlin): Fuﬂg‰nger	q1 20797,-1262 20783,-1266 20396,-1370 20388,-1373 20373,-1375 20046,-1449 20032,-1451 20018,-1456 19726,-1518 19717,-1520 19706,-1520 19618,-1531
+Vergissmeinnichtweg: Bodenschwellen	q1 21582,185 21608,85
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q3 11805,19071 11895,19183 11927,19308
 Ebersstr.: Sch¸ler	q2 7245,8583 7292,8631
 Straﬂe 103 (Niederschˆnhausen): enge Straﬂe	q1 10914,20065 11051,19789
@@ -1422,7 +1424,7 @@ Pankeweg und -br¸cke: eng und kurvig	q3 13554,23123 13567,23101 13551,23072
 Klosterheider Weg: enge Straﬂe	q1 2842,23482 2742,23513 2621,23609 2490,23720 2522,23761 2582,23814 2663,23875
 Landreiterweg: enge Straﬂe	q1 14062,1846 14050,1904 13857,1975 13739,2004 13674,2011 13567,2008 13485,2007 13362,2000 13240,1993 13227,1974
 Zieselweg: enge Straﬂe	q1 2511,22590 2513,22737 2500,22867 2418,22878
-Schwalbenweg: enge Straﬂe	q1 20205,-548 20172,-533 19940,-610 19724,-703 19619,-746 19550,-775 19366,-845 19309,-885
+Schwalbenweg: enge Straﬂe	q1 20205,-548 20172,-533 19940,-610 19724,-703 19650,-732
 Wetterseestr.: enge Straﬂe	q1 11499,16883 11504,16746
 Kreuzritterstr.: enge Straﬂe	q1 2252,24700 2297,24682 2359,24677 2402,24687 2471,24709 2531,24702 2586,24678 2621,24638 2640,24608
 Askaloner Weg: enge Straﬂe	q1 2402,24687 2407,24657 2384,24603 2311,24546 2262,24505
@@ -1436,7 +1438,7 @@ Knˆterichpfad: enge Straﬂe, Gartensiedlung	q1 -7842,14683 -7808,14939 -7783,1505
 Hartmannsweilerweg: enge Straﬂe	q1; 17,3471 41,3510 16,3744
 Hartmannsweilerweg: enge Straﬂe	q1 16,3744 -1,3857 -36,3924 -219,4149
 Zietenstr. (Lankwitz): enge Straﬂe	q1 6196,2204 6108,2326 6065,2443 5971,2691
-(Hˆhensteig - Buntzelstr.): Fuﬂg‰nger	q1 21835,242 21996,268 22168,327
+(Hˆhensteig - Buntzelstr.): Fuﬂg‰nger	q1 21844,238 21963,261 21979,274 21991,273 21996,268 22166,312
 Jenny-Lind-Str.: enge Straﬂe	q1 11531,17250 11645,17271 11768,17296
 Sandhofweg: enge Straﬂe	q1 5848,272 5795,371 5757,434 5688,402
 Sandhofweg: Fuﬂg‰nger	q1 5688,402 5644,381
@@ -1716,7 +1718,8 @@ Jochen-Klepper-Weg: kombinierter Rad- und Fuﬂweg, Fuﬂg‰nger haben Vorrang	q1 -30
 Frommpromenade: enge Straﬂe	q0 5469,20462 5350,20495 5257,20551
 Dennewitzplatz: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 7906,10098 7866,9918
 Eichborndamm: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 4240,19019 4232,18981
-Richterstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 22092,999 22120,886 22075,779 22007,711
+Richterstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 22092,999 22120,886 22075,779
+Richterstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 22075,779 22007,711
 Stolzenfelsstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q2::igndisp; 19436,8183 19423,8146 19333,8165 19171,8280 18949,8437 18787,8540 18722,8582
 Dorotheenstr. (Straﬂenbahn): gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q2::igndisp; 9454,12558 9330,12529
 Revaler Str. (Straﬂenbahn): gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 13588,11490 13473,11456

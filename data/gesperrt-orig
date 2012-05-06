@@ -112,7 +112,9 @@ Buckower Chaussee	1 8742,475 8972,498 9002,471
 Archibaldweg	1 15674,10851 15861,10931
 Nöldnerplatz	1 15861,10931 16032,10842
 Adlergestell (extra Radweg)	2 21998,1239 21541,1739 21475,1804
-Richterstr.	1s:q3 22092,999 22120,886 22075,779 22007,711
+#: XXX Ist dieser Abschnitt noch immer eine Einbahnstraße?
+Richterstr.	1s:q3 22092,999 22120,886 22075,779
+Richterstr.	1s:q3 22075,779 22007,711
 Grünau/B179	1 22007,711 21861,802 21894,881 21977,988 22092,999
 Dorfplatz	1 21074,-475 20986,-529 20890,-546 20827,-537 20999,-489 21074,-475
 B96a (Kfz-Straße)	2 20272,-501 20585,-272 20781,-82 21115,271 21286,449 21613,923 21656,989 21829,1351 21862,1532 21819,1595 21541,1739
@@ -960,7 +962,8 @@ Bernau, Bahnhofstr.	1 22850,30562 22892,30426
 Elisenau - Börnicke: Privatgelände?	2 24360,26503 24427,26841
 Weg nach Altlandsberg: Privatstraße, gesperrt	2 28159,19037 28715,18500
 Bernhard-Kellermann-Str. (Werder)	1 -21112,-3787 -21179,-3628 -21266,-3604
-Vorfahrt Flughafen Schönefeld	1 18419,-1418 18480,-1577 18532,-1717 18401,-1767 18298,-1488
+Vorfahrt Flughafen Schönefeld	1 18419,-1418 18480,-1577 18532,-1717 18401,-1767 18350,-1629 18298,-1488
+Parkplatz Flughafen Schönefeld	1 18480,-1577 18350,-1629
 Mittelstr. B179	1 18368,-1337 18419,-1418
 Mittelstr. B179	1 18298,-1488 18279,-1438 18368,-1337
 Lützlow: Gehweg auf gleichem Niveau wie Fahrbahn	1s:q1 52431,94119 52422,94028 52350,93856
@@ -982,6 +985,10 @@ Lindenweg (Brüssow)	1 57244,111033 57557,110975
 Marktplatz (Brüssow)	1 57445,111340 57477,111392
 Kirchstr. (Schönefeld)	1 17647,-1890 17738,-2094
 Kirchstr. (Schönefeld)	1 17738,-2094 17586,-1937
+Schwalbenweg (Schönefeld)	1 19550,-775 19619,-746
+Schützenstr. (Schönefeld)	1 19550,-775 19588,-860
+Schützenstr. (Schönefeld)	1 19757,-790 19588,-860
+Feldstr. (Bohnsdorf): dauerhaft gesperrt	2 20829,-773 21055,-723 21209,-734
 ######################################################################
 # elsewhere not in Brandenburg
 B104: Mittelstreifen nicht überquerbar	3nocross -974,128015 -724,127995 6,127935 298,127911
@@ -1343,6 +1350,7 @@ Schildhornstreifen: Mittelstreifen vor dem Autobahnanschluss	3nocross 4292,6558 
 Adlergestell: Mittelstreifen	3nocross 19735,3643 19812,3561 19857,3514 19904,3464
 Adlergestell: Mittelstreifen	3nocross 19735,3643 19676,3705 19633,3751 19587,3801
 Silberberger -> Adlergestell: Abbiegen verboten	3 19804,3697 19735,3643 19812,3561
+Michael-Brückner-Str.: Mittelstreifen	3nocross 18457,5000 18425,5032 18080,5376
 #: by: Thomas Pörs & srt:
 Rhinstr.: Straßenbahngleise	3nocross 17488,15766 17532,15645 17569,15561 17626,15433 17829,15015
 Potsdamer Chaussee: Mittelstreifen	3nocross -1249,2590 -1085,2653 -984,2692 -870,2737
@@ -1380,6 +1388,8 @@ Hasenheide: Mittelstreifen	3nocross 11500,9116 11550,9104 11629,9086
 # Stellen, an denen getragen werden muß:
 # die Zahl hinter dem ":" entspricht ungefähr den verlorenen Sekunden
 # 
+tragen (3 x 3 Stufen) oder steile Rampen benutzen	0:15 21979,274
+tragen (9 Stufen)	0:12 21963,261
 #: note: etwas weiter auseinanderliegend:
 tragen (5 Stufen)	0:10 19132,7769
 tragen (9 Stufen)	0:12 9816,10119
@@ -1630,6 +1640,13 @@ tragen, langgezogene Stufen (13 Stufen)	0:25 20704,1383
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+Drängelgitter und Tor	BNP:7::trailer=15 20783,-1266
+Drängelgitter und Tor	BNP:7::trailer=15 20396,-1370
+Drängelgitter und Tor	BNP:7::trailer=15 20373,-1375
+Drängelgitter und Tor	BNP:7::trailer=15 20046,-1449
+Drängelgitter und Tor	BNP:7::trailer=15 20018,-1456
+Drängelgitter und Tor	BNP:7::trailer=15 19726,-1518
+Drängelgitter und Tor	BNP:7::trailer=15 19706,-1520
 #: by: Gerhard (no email) and anonymous vvv
 #: corrected_by: srt (Drängelgitter -> Schranke) vvv
 Schranke	BNP:1::trailer=3 498,14934
@@ -1922,6 +1939,10 @@ Tor	BNP:5 26888,13976
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: last_checked: 2012-05-06
+#: next_check: 2012-06-03
+B96a - Flughafen Berlin-Brandenburg: Abschnitt führt durch Sicherheitsbereich des alten Flughafens	2:inwork 18578,-1538 18680,-1506 18798,-1581 18866,-1674
+# 
 #: last_checked: 2012-04-28
 #: next_check: 2012-07-15
 Am Pankepark: Bauarbeiten, gesperrt	2:inwork 8152,14130 8246,14184
@@ -2048,8 +2069,8 @@ Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,127
 #: by: IM_012342 (bis 2013)
 Rathausbrücke: gesperrt (Neubau), Fertigstellung und Verkehrsfreigabe im Frühjahr 2013	2:inwork 10362,12351 10422,12395
 # 
-#: last_checked: 2012-05-01
-#: next_check: 2012-06-15
+#: last_checked: 2012-05-06
+#: next_check: 2012-08-15
 #: XXX abhängiger Eintrag in vorfahrt-orig!
 Kynaststraße: Bauarbeiten im südlichen Abschnitt	2:inwork 14652,10201 14724,10297 14766,10372 14795,10473 14805,10518
 # 
@@ -2057,10 +2078,7 @@ Kynaststraße: Bauarbeiten im südlichen Abschnitt	2:inwork 14652,10201 14724,1029
 #: next_check: 2012-03-01
 Brücke im Tiergarten: gesperrt	2:inwork 6406,11784 6467,11780
 # 
-#: by: tobias wirnsberger, Matthias Stief
-#: last_checked: 2011-08-24 (srt, von der Bahn aus)
-#: next_check: 2011-12-01
-Unterführung unter Adlergestell und Bahn: wegen Brückenerneuerung gesperrt	2:inwork 20810,2398 20939,2413
+#XXX del --- #: by: tobias wirnsberger, Matthias Stief --- #: last_checked: 2011-08-24 (srt, von der Bahn aus) --- #: next_check: 2011-12-01 --- Unterführung unter Adlergestell und Bahn: wegen Brückenerneuerung gesperrt	2:inwork 20810,2398 20939,2413
 #
 #: section ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #: section in Brandenburg vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
