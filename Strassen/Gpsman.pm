@@ -1,10 +1,9 @@
 # -*- perl -*-
 
 #
-# $Id: Gpsman.pm,v 1.9 2008/01/19 19:41:44 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (c) 2004 Slaven Rezic. All rights reserved.
+# Copyright (c) 2004,2012 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
 # terms of the GNU General Public License, see the file COPYING.
 #
@@ -96,7 +95,10 @@ sub _read_gpsman {
 	    }
 	    if (@coords) {
 		my $name = $args{name} || $chunk->Name;
-		if (defined $name && $name =~ /^ACTIVE LOG$/i && $args{fallbackname}) {
+		if (   defined $name
+		    && $name =~ /^ACTIVE LOG(?:\s+\d+)?$/i # see Pod for "ACTIVE LOG" handling
+		    && $args{fallbackname}
+		   ) {
 		    $name = $args{fallbackname};
 		}
 		if (!defined $name) {
@@ -136,6 +138,22 @@ sub reload {
 }
 
 1;
+
+__END__
+
+=head1 DESCRIPTION
+
+Load a L<gpsman(1)> file (containing tracks, routes, or waypoints)
+into a L<Strassen>-compatible object.
+
+The gpsman chunk name is used for the street name field of the
+generated bbd record. A special handling is used for the names "ACTIVE
+LOG" and "ACTIVE LOG <number>": the former is typically used as an
+"anonymous" name by gpsman. The latter is a private extension to be
+able to split a track into multiple tracks (e.g. to apply different
+track attributes, e.g. different srt:vehicle values). If the option
+C<< -fallbackname => ... >> is supplied to the constructur, then
+"ACTIVE LOG" and "ACTIVE LOG <number>" are replaced by this value.
 
 =head1 AUTHOR
 
