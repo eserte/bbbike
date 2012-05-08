@@ -402,7 +402,7 @@ Rückerstr.: mäßiger Asphalt	Q1 10597,13647 10535,13509
 #: by: Andreas Mühlhausen (neu gemacht):
 Knaackstr.: Asphalt	Q0 11229,14422 11316,14360 11358,14331 11418,14290 11506,14230
 Immanuelkirchstr.: Kopfsteinpflaster	Q2 11506,14230 11727,14111 11946,13993
-Bersarinplatz: Kopfsteinpflaster auf der Fahrbahn, Radwege OK	Q1- 13695,12643 13686,12611 13678,12571 13698,12544 13742,12538 13761,12578 13767,12626 13747,12642 13695,12643
+Bersarinplatz: Kopfsteinpflaster auf der Fahrbahn, Radwege OK	Q1- 13695,12643 13686,12611 13678,12571 13698,12544 13742,12538 13761,12578 13767,12626 13747,12642 13727,12642 13695,12643
 Petersburger Platz: Kopfsteinpflaster	Q2 13558,12766 13467,12978
 Pettenkoferstr Str.: Kopfsteinpflaster	Q2 15117,12106 15098,12213
 Pettenkoferstr Str.: Asphalt, einige gepflasterte Bodenschwellen	Q0- 15098,12213 15054,12323 15042,12353 15009,12441 14999,12462 14935,12596 14842,12826
@@ -2906,9 +2906,9 @@ Philipp-Jacob-Rauch-Str.: Verbundsteinpflaster	Q0- 27615,1245 27573,1279 27516,1
 Johann-Jacob-Baeyer-Str.: Asphalt	Q0 27977,1187 27810,987
 Johann-Jacob-Baeyer-Str.: Asphalt	Q0 27863,943 27810,987 27568,1188
 Plutoweg: Asphalt	Q0 31078,3372 30965,3391 30811,3416 30750,3468 30608,3617 30499,3632 30366,3681
-Treptower Park: Asphalt	Q0 14310,9692 14316,9542 14347,9452 14398,9373 14485,9271 14580,9200
+Treptower Park: Asphalt	Q0 14310,9692 14316,9542 14347,9452 14398,9373 14485,9271 14601,9201
 Treptower Park: Asphalt, einige Wuzelschäden	Q1+ 14316,9542 14384,9565 14512,9528 14635,9441 14748,9420
-Treptower Park: Asphalt	Q0 14529,9141 14580,9200 14748,9420 14780,9480
+Treptower Park: Asphalt	Q0 14529,9141 14601,9201 14748,9420 14780,9480
 Heylstr: Asphalt	Q0 6181,8181 6246,8222 6325,8259 6385,8274 6459,8281 6552,8281
 Rückertstr. (Charlottenburg): Asphalt	Q0 3571,11451 3555,11612
 Goethepark: Asphalt	Q1 3467,11373 3594,11372
@@ -6928,6 +6928,8 @@ Gehwegplatten	Q0 21844,238 21963,261 21979,274 21991,273 21996,268
 #: next_check: 2013-01-01
 Unterführung unter Adlergestell und Bahn: teilweise sehr sandig	Q3 20939,2413 20810,2398
 (Hartriegelstr. - Michael-Brückner-Str.): Verbundsteinpflaster	Q1+ 18695,5076 18622,5049 18514,5028 18425,5032
+(Bersarinplatz - Thaerstr.): unbefestigter Weg	Q1- 13747,12642 13761,12690
+(Thaerstr. - Bersarinplatz): Gehwegplatten	Q0 13761,12690 13727,12642
 ######################### User Contributions #################################
 #: by: anonymous vvv
 # 

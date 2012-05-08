@@ -80,8 +80,8 @@ Rathausstr. zwischen Breitestr. und Poststr.: Fahrbahn wegen Brückenbauarbeiten 
 #: next_check: ^^^
 #: last_checked: ^^^
 # 
-#: last_checked: 2012-04-12
-#: next_check: 2012-05-05
+#: last_checked: 2012-05-07
+#: next_check: 2012-06-15
 Alte Jakobstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10436,11344 10244,11160
 # 
 #: last_checked: 2012-05-01 (von der Bahn aus, evtl. ungenau)
@@ -1198,6 +1198,10 @@ Spreeufer: unter der Rohrdammbrücke sehr eng	q3 1124,13536 1184,13544
 (Widosteig - Bohnsdorfer Weg): Pfad	q2 19934,1102 19955,1158 19940,1265
 (Parkweg im Business Park Berlin): Fußgänger	q1 20797,-1262 20783,-1266 20396,-1370 20388,-1373 20373,-1375 20046,-1449 20032,-1451 20018,-1456 19726,-1518 19717,-1520 19706,-1520 19618,-1531
 Vergissmeinnichtweg: Bodenschwellen	q1 21582,185 21608,85
+#: XXX_prog BS zur Thaerstr.
+(Bersarinplatz - Thaerstr.): Fußgänger, Bordstein	q2 13747,12642 13761,12690
+#: XXX_prog BS zur Thaerstr.
+(Thaerstr. - Bersarinplatz): Fußgänger, Bordstein	q2 13761,12690 13727,12642
 #
 ######################### User Contributions #################################
 # 
