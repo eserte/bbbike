@@ -1400,16 +1400,7 @@ userdel	q4::inwork 11436,14741 11271,14755
          'type' => 'handicap'
        },
        undef,
-       {
-         'source_id' => 'IM_018679',
-         'until' => 1336482000,
-         'text' => 'Köthener Str. (Marzahn): Bauarbeiten Straße vollständig gesperrt zwischen Dessauer Str. und Wuhletalstr., 20.04.2012 07:41 Uhr bis 08.05.2012 15:00 Uhr ',
-         'from' => 1334814060,
-         'id' => 2325,
-         'data' => 'userdel	q4::inwork 20485,17784 20542,17911 20576,17994
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        {

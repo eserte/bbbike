@@ -20,8 +20,8 @@ Voﬂstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg	q3::inwork 8743,1
 # 
 #XXX del --- #: last_checked: 2011-07-07 --- #: next_check: 2011-09-01 --- #: XXX siehe auch qualitaet_s-orig --- Sembritzkystr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 7203,5488 7186,5453 7157,5418 7095,5317 7018,5201
 # 
-#: last_checked: 2012-04-20 vvv
-#: next_check: 2012-05-15 vvv
+#: last_checked: 2012-05-08 vvv
+#: next_check: 2012-06-01 vvv
 Axel-Springer-Str.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 10136,11529 10166,11592 10201,11631
 Axel-Springer-Str.: Bauarbeiten, Gehwege kˆnnen schon benutzt werden	q3::inwork 10201,11631 10213,11728
 #: next_check: ^^^
@@ -48,9 +48,11 @@ Alt-Stralau: Bauarbeiten an der Br¸cke, enge Durchfahrt	q3::inwork 14652,10201 1
 #: XXX nach den Bauarbeiten vielleicht besserer Asphalt? -> qualitaet_s-orig
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9890,12161 9875,12257 9869,12297
 # 
-#: last_checked: 2012-03-12
-#: next_check: 2012-04-17
-Jerusalemer Str.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 9878,11857 9892,11752
+#XXX del --- #: last_checked: 2012-03-12 --- #: next_check: 2012-04-17 --- Jerusalemer Str.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 9878,11857 9892,11752
+#
+#: last_checked: 2012-05-08
+#: next_check: 2012-06-01
+Kronenstr./Jerusalemer Str.: Bauarbeiten, Fahrbahn vor der Kreuzung gesperrt	q3::inwork 9692,11732 9892,11752
 # 
 #: last_checked: 2012-04-28
 #: next_check: 2012-06-01
