@@ -52,7 +52,7 @@ use base qw(Geography::Base);
      'Prenzlauer Berg'	 => [],
      'Reinickendorf'	 => [qw/Borsigwalde Frohnau Heiligensee Hermsdorf
 			        Konradshöhe Lübars Tegel Waidmannslust
-			        Wittenau/, 'Märkisches Viertel'], # Borsigwalde ist nur eine Ortslage in Wittenau
+			        Wittenau/, 'Märkisches Viertel'], # Borsigwalde ist seit 2012-05 ein eigener Ortsteil, vorher nur eine Ortslage in Wittenau
      'Schöneberg'	 => [qw/Friedenau Schöneberg-Nord/],
      'Spandau'		 => [qw/Gatow Kladow Siemensstadt Haselhorst Staaken
 				Wilhelmstadt Hakenfelde/,
