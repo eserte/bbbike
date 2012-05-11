@@ -20130,4 +20130,20 @@ EOF
 userdel	q4::inwork 19771,1793 19898,1704
 EOF
      },
+     { from  => 1336764755, # 2012-05-11 21:32
+       until => 1337119199, # 2012-05-15 23:59
+       text  => 'Vollsperrung der Bahnbrücke Karlshorst: 10. bis 15. Mai 2012 (Sperrung der Fahrbahn)',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 18722,8582 18709,8423
+EOF
+     },
+     { from  => 1338001200, # 2012-05-26 05:00
+       until => 1338602400, # 2012-06-02 04:00
+       text  => 'Vollsperrung der Bahnbrücke Karlshorst: 26. Mai 2012, 5 Uhr bis 2. Juni 2012, 4 Uhr (Sperrung der Fahrbahn)',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 18722,8582 18709,8423
+EOF
+     },
     );
