@@ -233,8 +233,10 @@ my @req_table =
   [qw/Sort::Naturally	0	all	0	base/,
    'Für natürliches Sortieren von bbd-Dateien'],
 
-  [qw/Geo::Coder::Google	0.06	all	0	plugin/,
-   'Geocoding über Googlemaps (API v2)'], # alternative: Geo::Coder::GoogleMaps 0.03
+  ## Not enabled anymore in non-advanced mode, superseded by
+  ## Geo::Coder::Googlev3
+  #  [qw/Geo::Coder::Google	0.06	all	0	plugin/,
+  #   'Geocoding über Googlemaps (API v2)'], # alternative: Geo::Coder::GoogleMaps 0.03
   [qw/Geo::Coder::Googlev3	0	all	0	plugin/,
    'Geocoding über Googlemaps (API v3)'],
   [qw/Geo::Coder::Bing	0.10	all	0	plugin/,

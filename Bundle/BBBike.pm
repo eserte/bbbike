@@ -181,8 +181,6 @@ Algorithm::Diff	- Unterschiede im temp_blockings-Editor anzeigen
 
 Sort::Naturally	- Für natürliches Sortieren von bbd-Dateien
 
-Geo::Coder::Google 0.06	- Geocoding über Googlemaps (API v2)
-
 Geo::Coder::Googlev3	- Geocoding über Googlemaps (API v3)
 
 Geo::Coder::Bing 0.10	- Geocoding über Bing
