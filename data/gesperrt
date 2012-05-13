@@ -1822,6 +1822,9 @@ Straßenbahnhaltestelle	3nocross::ignrte -11307,133 -11390,72 -11494,-4
 Mittelstreifen	3nocross::ignrte 11500,9116 11449,9125 11136,9183
 Hasenheide, zwischen Jahnstr. und Columbiadamm -> Hasenheide: Mittelstreifen	3::igndisp 11439,9049 11449,9125 11136,9183
 Mittelstreifen	3nocross::ignrte 11500,9116 11550,9104 11629,9086
+Straßenbahntrasse	3nocross::ignrte -13311,462 -13203,434 -13157,394
+Johannes-Lepsius-Str. -> Kiepenheuerallee: Straßenbahntrasse	3::igndisp -13244,281 -13203,434 -13311,462
+Kiepenheuerallee -> Johannes-Lepsius-Str.: Straßenbahntrasse	3::igndisp -13157,394 -13203,434 -13244,281
 tragen (3 x 3 Stufen) oder steile Rampen benutzen	0:15:-129 21979,274
 tragen (9 Stufen)	0:12:-100 21963,261
 tragen (5 Stufen)	0:10:-229 19132,7769
@@ -2219,7 +2222,6 @@ Theanolte-Bähnisch-Str.: Bauarbeiten, noch gesperrt	2:inwork 11320,13095 11235,1
 Scharrenstr.: wegen Bauarbeiten komplett gesperrt	2:inwork 10418,12016 10480,12077
 Paul-und-Paula-Ufer: wegen Bodensanierungsarbeiten komplett gesperrt	2:inwork 14884,10508 14906,10587
 Radweg Herzberge: wegen Bauarbeiten gesperrt (ab 2012-02-20)	2:inwork 17167,13655 17110,13811 17095,13972 17154,14093 17266,14144 18015,13846
-Am Alten Markt: wegen Bauarbeiten (Wiederaufbau des Schlosses) gesperrt	2:inwork -12643,-1694 -12624,-1598
 Wikingerufer: wegen Beschädigungen an der Ufermauer gesperrt	2:inwork 5354,12552 5366,12665 5362,12787 5346,12845 5298,12910
 Friedrich-Ebert-Platz: permanent gesperrt, nicht nur bei Bundestagssitzungen	2 8554,12593 8540,12420
 Spreeufer: wegen Bauarbeiten gesperrt	2:inwork 8596,12576 8495,12651 8473,12753

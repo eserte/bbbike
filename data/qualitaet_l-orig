@@ -440,7 +440,7 @@ Langhansstr.: mäßiger Asphalt	Q1+ -12325,1145 -12411,881
 Bruno-Taut-Str.: Kopfsteinpflaster	Q2 -13067,1506 -12939,1493 -12926,1494
 Angermannstr.: schlechtes Kopfsteinpflaster	Q3 -13108,1278 -13161,1265 -13189,1249
 Angermannstr.: schlechtes Kopfsteinpflaster	Q3 -13161,1265 -13207,1347 -13148,1377 -13115,1379
-(zur Russisch-Orthodoxen Kirche): Asphalt	Q0 -13058,702 -12945,634
+(zur Russisch-Orthodoxen Kirche): Asphalt	Q0 -13058,702 -12958,670 -12952,651
 #: by: Andreas Mühlhausen: vvv
 Am Reiherbusch: Kopfsteinpflaster	Q2 -13113,1356 -13057,1384 -12906,1446
 Am Hang: Kopfsteinpflaster	Q2 -13108,1278 -12977,1299 -12861,1357
@@ -479,16 +479,17 @@ Lindenstr. (Potsdam): Gehwegpflaster	Q0 -13366,-1499 -13375,-1546
 Spornstr. (Potsdam): Kopfsteinpflaster	Q2- -13350,-1403 -13220,-1416
 Birkenstr. (Potsdam): mäßiger Asphalt	Q1 -12620,18 -12723,80
 Reiterweg (Potsdam): Gehwegplatten	Q1 -12961,-136 -12846,-164
-Schlegelstr. (Potsdam): Asphalt	Q0 -13662,-324 -13645,-266 -13601,-164 -13564,-111 -13520,-28 -13436,84
+Schlegelstr. (Potsdam): Asphalt	Q0 -13662,-324 -13645,-266 -13601,-164 -13564,-111 -13520,-28 -13453,88
 Ruinenbergstr. (Potsdam): Kopfsteinpflaster	Q2 -13794,178 -13918,-164 -13881,-185
 An der Einsiedelei (Potsdam): Asphalt	Q0 -13645,-266 -13715,-214 -13807,-208 -13881,-185
 Kurt-v.-Plettenberg-Str. (Potsdam): Asphalt, an den Kreuzungen kurze Kopfsteinpflasterabschnitte	Q0- -13520,-28 -13581,-10 -13662,12 -13744,35
 (Jägerallee): Beton	Q1 -13221,-718 -13330,-725 -13371,-639
 Hessestr.: Asphalt mit Unebenheiten	Q1+ -12664,399 -12651,453 -12741,585 -12815,554
-Schmiedegasse: Asphalt	Q0 -13601,-164 -13627,-150 -13581,-10
+Schmiedegasse: Asphalt	Q0 -13601,-164 -13627,-150 -13620,-131 -13581,-10
+Schmiedegasse: Kopfsteinpflaster	Q2 -13627,-150 -13660,-163 -13764,-140 -13785,-125
 Reitbahnstr.: Asphalt	Q0 -13662,12 -13680,-77
-Sattlerstr.: Asphalt	Q0 -13744,35 -13781,-109 -13807,-208
-Johann-Goercke-Allee: Asphalt	Q0 -13601,-164 -13475,-141 -13343,-97
+Sattlerstr.: Asphalt	Q0 -13744,35 -13775,-85 -13785,-125 -13807,-208
+Johann-Goercke-Allee: Asphalt	Q0 -13601,-164 -13583,-171 -13475,-141 -13343,-97
 Moritz-von-Egidy-Str.: gutes Kopfsteinpflaster	Q1 -13450,-211 -13475,-141 -13499,-85 -13545,-114 -13564,-111
 An den Gärten: Asphalt	Q0 -13499,-85 -13432,1
 Brentanoweg: Asphalt	Q0 -13406,-396 -13452,-358 -13581,-307 -13645,-266
@@ -510,7 +511,7 @@ Schloßstr. (Potsdam): Kopfsteinpflaster	Q2 -12923,-1558 -12882,-1565 -12772,-157
 Johannes-Lepsius-Str.: Asphalt	Q0 -13240,32 -13232,98 -13226,157 -13225,179 -13209,260
 Johannes-Lepsius-Str.: Verbundsteinpflaster	Q0- -13209,260 -13244,281
 (Johannes-Lepsius-Str. - Kiepenheuerallee): Asphalt	Q0 -13244,281 -13203,434
-Eduard-Engel-Str.: gutes Kopfsteinpflaster	Q1 -13367,66 -13344,160 -13322,259
+Eduard-Engel-Str.: gutes Kopfsteinpflaster	Q1 -13367,66 -13344,160 -13338,188
 Betonplatten	Q2 -27127,5270 -26196,4769 -25787,3228
 #: note: war früher Betonplatten, Q2
 #: by: osm (guessed from "paved")
@@ -896,7 +897,7 @@ Ruhlsdorf - Güterfelde: mäßiger/schlechter Feldweg	Q2 1132,-3612 -256,-3961 -181
 #XXX existiert nicht mehr, del?	Q0 2471,-6025 2031,-5468 1592,-5527
 	Q0 1622,-5649 1533,-5628 1343,-5420 296,-5328 -1095,-4973 -1809,-4792 -2534,-4606 -3368,-4430 -3418,-4525 -3446,-4709 -3596,-4687 -3796,-4612 -3871,-4437 -4457,-4197 -4661,-4172 -4819,-4154 -5736,-3629 -6277,-3348 -6553,-3235 -6810,-3151 -7060,-3124 -7487,-3097 -7497,-3096 -7577,-3093 -7668,-3092 -7774,-3091 -7878,-3090 -8005,-3056 -8137,-2997 -8283,-2917 -8361,-2875 -8417,-2867 -8500,-2856
 	Q0 -13036,342 -13062,535 -13058,702 -13042,807 -13038,856 -13039,894 -13091,1150 -13108,1278 -13113,1356 -13115,1379 -13125,1508 -13133,1698 -13134,1758 -13141,1933 -13141,1945 -13152,2169 -13375,2950 -13387,2987 -13567,3403 -13703,3717 -13784,3900 -13783,3919 -13779,4233 -13778,4492 -13690,5212 -13578,5396 -13261,5566 -13143,5587 -12865,5567 -12645,5573 -12179,5629 -10927,6333 -10494,6586 -10206,6756 -10090,6868 -9996,7037 -9983,7100 -9964,7203 -9928,7459 -8634,9626 -8628,9803 -8677,10083 -8697,10653 -8906,11139 -9262,11890 -9524,12215
-	Q0 -13561,117 -13529,226 -13507,308 -13486,385 -13456,500 -13546,527 -13872,624 -14053,677
+	Q0 -13553,115 -13529,226 -13507,308 -13486,385 -13456,500 -13546,527 -13696,572 -13872,624 -14053,677
 Erich-Mendelsohn-Allee: Asphalt	Q0 -14235,298 -14216,372 -14198,449 -14174,486 -14114,580 -14053,677 -13995,773 -13961,836 -13903,941 -13853,1018 -13804,1088 -13772,1139 -13695,1276
 Hermann-Mattern-Promenade: Asphalt	Q0 -14216,721 -14131,858 -14094,917 -14053,985 -13985,1096 -13914,1218 -13893,1255 -13841,1341 -13795,1420
 (Hermann-Mattern-Promenade - David-Gilly-Str.): Verbundsteinpflaster	Q0- -14216,721 -14311,571
@@ -1679,7 +1680,7 @@ Hebbelstr.: mäßiges bis schlechtes Kopfsteinpflaster	Q3+ -12571,-581 -12621,-359
 Hebbelstr.: schlechtes Kopfsteinpflaster	Q3 -12621,-359 -12637,-292
 Eisenhartstr.: asphaltiert	Q0 -12821,-417 -12779,-294 -12637,-8
 Puschkinallee: glatte Pflasterung	Q1 -12812,371 -12812,271 -12862,-27
-Russische Kolonie: Asphalt	Q0 -13036,342 -13011,299 -12947,106 -12862,-27
+Russische Kolonie: Asphalt	Q0 -13036,342 -12992,244 -12947,106 -12862,-27
 Russische Kolonie: kleinteiliges Kopfsteinpflaster	Q1 -13091,-8 -13068,-115
 # XXX del conflict Russische Kolonie (Potsdam): Kopfsteinpflaster	Q2 -13068,-115 -13091,-8
 Russische Kolonie: wassergebundene Decke	Q1 -13091,-8 -12947,106 -12833,261 -12812,271
@@ -2398,6 +2399,15 @@ Diepenseer Str. (Waltersdorf): Verbundsteinpflaster	Q1 21084,-4728 20594,-4690
 Waltersdorf - Siedlung Hubertus: Asphalt	Q0 20711,-3869 20659,-3787 20630,-3690 20632,-3603 20687,-3424 20666,-3280 20564,-3076 20496,-3003 20401,-2960 20347,-2959 20238,-2931 20190,-2892 20120,-2774 20138,-2716 20208,-2688 20265,-2720 20285,-2775
 Bohnsdorfer Chaussee: Asphalt, teilweise mit Unebenheiten	Q1+ 19248,-771 19054,-903 18773,-1095
 Gartenstr.: Beton	Q0 18773,-1095 18892,-1273
+Jochen-Klepper-Str.: Asphalt	Q0 -13259,586 -13270,563 -13436,595
+(Fachhochschule Potsdam): gutes Kopfsteinpflaster	Q1 -13338,188 -13321,264 -13356,274
+(Fachhochschule Potsdam): Verbundsteinpflaster	Q1+ -13356,274 -13311,462
+Richard-Schäfer-Str.: Asphalt	Q0 -13226,157 -13167,154 -13164,175 -13225,179
+Karen-Jeppe-Str.: Verbundsteinpflaster	Q1+ -13327,116 -13232,98
+Karen-Jeppe-Str.: Asphalt	Q0 -13232,98 -13189,85
+(Schmiedegasse - Pappelallee): Verbundsteinpflaster mit großen Fugen	Q2+ -13581,-10 -13558,88
+(Schmiedegasse - Pappelallee): Gehwegplatten	Q0- -13558,88 -13553,115
+Kutscherweg: Asphalt	Q0 -13620,-131 -13700,-106 -13775,-85
 ######################### User Contributions #################################
 #: by: Aaron Schaar: vvv
 Hermannswerder: guter Asphalt	Q0 -13718,-2991 -14301,-2871 -14577,-3068 -14740,-3262

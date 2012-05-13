@@ -1194,8 +1194,8 @@ Holzmarktstr. (Potsdam)	N -12148,-934 -12100,-962 -11910,-945
 Russische Kolonie (B2) (Potsdam)	B -12840,-69 -12961,-136 -13068,-115
 Russische Kolonie (Potsdam)	NN -13068,-115 -13091,-8
 Russische Kolonie (Potsdam)	NN -13036,342 -13000,379 -12960,416 -12918,431 -12850,412 -12812,371
-Russische Kolonie (Potsdam)	N -12862,-27 -12947,106 -13011,299
-Russische Kolonie (Potsdam)	NN -13011,299 -13036,342
+Russische Kolonie (Potsdam)	N -12862,-27 -12947,106 -12992,244
+Russische Kolonie (Potsdam)	NN -12992,244 -13036,342
 Russische Kolonie (Potsdam)	NN -13091,-8 -12947,106 -12833,261 -12812,271
 Beyerstr. (Potsdam)	N -12618,296 -12812,271
 Puschkinallee (Potsdam)	N -12840,-69 -12862,-27 -12812,271 -12812,371 -12807,441 -12811,533 -12815,554 -12827,629 -12868,738 -12912,783 -13042,807
@@ -1203,15 +1203,19 @@ Voltaireweg (Potsdam)	H -14034,-571 -13900,-400 -13645,-266 -13450,-211 -13206,-
 Parkstr. (Potsdam)	N -13948,-564 -13880,-431 -13662,-324
 Reiterweg (B2) (Potsdam)	B -13111,-136 -13068,-115
 Reiterweg (Potsdam)	NN -12961,-136 -12846,-164
-Pappelallee (Potsdam)	H -13091,-8 -13240,32 -13367,66 -13436,84 -13561,117 -13794,178 -13811,182 -13945,217 -14098,260 -14235,298 -14435,357 -14547,388 -14676,418
+Pappelallee (Potsdam)	H -13091,-8 -13240,32 -13367,66 -13453,88 -13553,115 -13794,178 -13811,182 -13945,217 -14098,260 -14235,298 -14435,357 -14547,388 -14676,418
 Ruinenbergstr. (Potsdam)	N -13794,178 -13918,-164 -13881,-185
 An der Einsiedelei (Potsdam)	N -13645,-266 -13715,-214 -13807,-208 -13881,-185
 #: alias: Kurt-von-Plettenberg-Str.
 Kurt-v.-Plettenberg-Str. (Potsdam)	N -13520,-28 -13581,-10 -13662,12 -13744,35
-Schmiedegasse (Potsdam)	N -13601,-164 -13627,-150 -13581,-10
+Schmiedegasse (Potsdam)	N -13601,-164 -13627,-150 -13620,-131 -13581,-10
+Schmiedegasse (Potsdam)	N -13627,-150 -13660,-163 -13764,-140 -13785,-125
+(Schmiedegasse - Pappelallee) (Potsdam)	N -13581,-10 -13558,88
+(Schmiedegasse - Pappelallee) (Potsdam)	NN -13558,88 -13553,115
+Kutscherweg (Potsdam)	N -13620,-131 -13700,-106 -13775,-85
 Reitbahnstr. (Potsdam)	N -13662,12 -13680,-77
-Sattlerstr. (Potsdam)	N -13744,35 -13781,-109 -13807,-208
-Johann-Goercke-Allee (Potsdam)	N -13601,-164 -13475,-141 -13343,-97
+Sattlerstr. (Potsdam)	N -13744,35 -13775,-85 -13785,-125 -13807,-208
+Johann-Goercke-Allee (Potsdam)	N -13601,-164 -13583,-171 -13475,-141 -13343,-97
 Moritz-von-Egidy-Str. (Potsdam)	N -13450,-211 -13475,-141 -13499,-85 -13545,-114 -13564,-111
 An den Gärten (Potsdam)	N -13499,-85 -13432,1
 Schulplatz (Potsdam)	H -14676,418 -14859,421
@@ -1292,9 +1296,10 @@ Max-Wundel-Str. (Potsdam)	N -13740,1339 -13807,1295 -13774,1230 -13832,1195
 Heinrich-Zeininger-Str. (Potsdam)	N -13772,1139 -13832,1195 -13893,1255 -14003,1363
 Hermann-Mächtig-Str. (Potsdam)	N -14094,1440 -14014,1343 -13967,1282 -13914,1218 -13804,1088
 Melchior-Bauer-Str. (Potsdam)	N -14363,1008 -14259,937 -14197,902 -14131,858 -14065,818 -13995,773
-Georg-Hermann-Allee (Potsdam)	N -13561,117 -13529,226 -13507,308 -13486,385 -13456,500 -13436,595 -13429,1069 -13418,1668 -13337,1680 -13294,1681 -13199,1691 -13133,1698
+Georg-Hermann-Allee (Potsdam)	N -13553,115 -13529,226 -13507,308 -13486,385 -13456,500 -13436,595 -13433,693 -13432,782 -13429,1069 -13418,1668 -13337,1680 -13294,1681 -13199,1691 -13133,1698
+Jochen-Klepper-Str. (Potsdam)	N -13259,586 -13270,563 -13436,595
 Annemarie-Wolff-Platz (Potsdam)	Pl -13456,500
-Kiepenheuerallee (Potsdam)	N -13157,394 -13203,434 -13311,462 -13456,500 -13546,527 -13872,624 -14053,677
+Kiepenheuerallee (Potsdam)	N -13157,394 -13203,434 -13311,462 -13456,500 -13546,527 -13696,572 -13872,624 -14053,677
 Erwin-Barth-Str. (Potsdam)	N -14053,677 -14135,699 -14216,721 -14287,741 -14365,763 -14483,796
 Erich-Mendelsohn-Allee (Potsdam)	N -14235,298 -14216,372 -14198,449 -14174,486 -14114,580 -14053,677 -13995,773 -13961,836 -13903,941 -13853,1018 -13804,1088 -13772,1139 -13695,1276
 David-Gilly-Str. (Potsdam)	N -14311,571 -14374,458 -14435,357
@@ -1499,7 +1504,7 @@ Am Reiherbusch (Potsdam)	N -13113,1356 -13057,1384 -12906,1446
 Angermannstr. (Potsdam)	N -13108,1278 -13161,1265 -13189,1249
 Angermannstr. (Potsdam)	N -13161,1265 -13207,1347 -13148,1377 -13115,1379
 Am Hang (Potsdam)	N -13108,1278 -12977,1299 -12861,1357
-(zur Russisch-Orthodoxen Kirche) (Potsdam)	NN -13058,702 -12945,634
+(zur Russisch-Orthodoxen Kirche) (Potsdam)	NN -13058,702 -12958,670 -12952,651
 Birkenstr. (Potsdam)	N -12620,18 -12723,80
 Persiusstr. (Potsdam)	N -12520,551 -12673,613
 Glumestr. (Potsdam)	N -12514,623 -12392,612 -12332,585
@@ -1657,7 +1662,7 @@ Mauerstr. (Potsdam)	N -13433,-831 -13519,-625
 Weinbergstr. (Potsdam)	N -13815,-749 -13733,-722 -13519,-625 -13257,-512
 Mühlenbergweg (Potsdam)	NN -13733,-722 -13772,-623 -13784,-537
 Gregor-Mendel-Str. (Potsdam)	N -14034,-571 -13948,-564 -13784,-537 -13693,-528 -13596,-508 -13415,-506 -13257,-512 -13182,-515
-Schlegelstr. (Potsdam)	N -13693,-528 -13662,-324 -13645,-266 -13601,-164 -13564,-111 -13520,-28 -13436,84
+Schlegelstr. (Potsdam)	N -13693,-528 -13662,-324 -13645,-266 -13601,-164 -13564,-111 -13520,-28 -13453,88
 Tieckstr. (Potsdam)	N -13596,-508 -13581,-307
 Brentanoweg (Potsdam)	NN -13415,-506 -13406,-396
 Brentanoweg (Potsdam)	N -13406,-396 -13452,-358 -13581,-307 -13645,-266
@@ -1730,9 +1735,12 @@ Stiftstr. (Potsdam)	N -14187,-1740 -14151,-1834
 (Uferweg) (Potsdam)	NN -13427,-1883 -13459,-1831 -13497,-1723 -13543,-1602 -13572,-1547 -13516,-1517
 (Wall am Kiez - Uferweg) (Potsdam)	NN -13459,-1718 -13497,-1723
 (Am Alten Markt - Joliot-Curie-Str.) (Potsdam)	NN -12614,-1471 -12582,-1460
+Richard-Schäfer-Str. (Potsdam)	N -13226,157 -13167,154 -13164,175 -13225,179
+Karen-Jeppe-Str. (Potsdam)	N -13327,116 -13232,98 -13189,85
 Johannes-Lepsius-Str. (Potsdam)	N -13240,32 -13232,98 -13226,157 -13225,179 -13209,260
 (Johannes-Lepsius-Str. - Kiepenheuerallee) (Potsdam)	N -13209,260 -13244,281 -13203,434
-Eduard-Engel-Str. (Potsdam)	N -13367,66 -13344,160 -13322,259
+Eduard-Engel-Str. (Potsdam)	N -13367,66 -13344,160 -13338,188
+(Fachhochschule Potsdam) (Potsdam)	N -13338,188 -13321,264 -13356,274 -13311,462
 Erich-Weinert-Str. (Potsdam)	N -10249,-5048 -10134,-4981 -10055,-4922 -9998,-4865 -9862,-4705 -9609,-4468
 Am Moosfenn (Potsdam)	N -10249,-5048 -10331,-5085 -10388,-5112 -10503,-5165 -10519,-5173 -10649,-5236 -10773,-5294
 Kiefernring (Potsdam)	N -10519,-5173 -10618,-4998 -10685,-5022 -10740,-5048 -10770,-5062 -10862,-5108 -10836,-5170 -10795,-5257 -10773,-5294
