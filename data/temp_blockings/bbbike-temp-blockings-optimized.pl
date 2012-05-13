@@ -1111,7 +1111,17 @@ userdel	q4::inwork 9028,12307 9016,12416 9008,12485
 ',
          'type' => 'handicap'
        },
-       undef,
+       {
+         'source_id' => 'INKO_093371',
+         'until' => 1341068400,
+         'text' => 'Dorotheenstr. (Mitte): Baustelle, Fahrtrichtung gesperrt Richtung Friedrichstr. zwischen Wilhelmstr. und Schadowstr., 06.06.2011 07:00 Uhr bis 30.06.2012 17:00 Uhr ',
+         'from' => 1307250000,
+         'id' => 2224,
+         'data' => '#: last_checked: 2012-04-20
+userdel	q4::inwork; 8775,12457 8907,12472 9008,12485
+',
+         'type' => 'handicap'
+       },
        undef,
        undef,
        undef,
@@ -1428,6 +1438,44 @@ userdel	q4::inwork 11436,14741 11271,14755
          'from' => 1338001200,
          'id' => 2330,
          'data' => 'userdel	q4::inwork 18722,8582 18709,8423
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1341093600,
+         'text' => 'Peace Wall/Friedensmauer; auf Gehweg ausweichen (bis Juli 2012)',
+         'from' => undef,
+         'id' => 2331,
+         'data' => 'userdel	q4::temp 9521,10926 9535,10820
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1337551200,
+         'text' => 'Ersatzneubau Brücke über den Stierngraben Brücke über den Stierngraben bei Kaakstedt, Vollsperrung zw. Suckow und Gerswalde und umgekehrt 07.05.2012 bis 20.05.2012',
+         'from' => 1336943422,
+         'id' => 2332,
+         'data' => 'userdel	2::inwork 35887,85385 34920,85944
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_018769',
+         'until' => 1347289200,
+         'text' => 'Spanische Allee (Nikolassee): Bauarbeiten an den Bahnbrücken, für beide Richtungen nur ein Fahrstreifen abwechselnd frei, Regelung mit provisorischen Ampeln bis Mitte September 2012',
+         'from' => 1336420800,
+         'id' => 2333,
+         'data' => 'userdel	q4::inwork -3648,2881 -3736,2849
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'INKO_112449',
+         'until' => 1339797600,
+         'text' => 'Wünsdorfer Str. (Lichtenrade) zwischen Prinzessinnenstr. und Blohmstr zwischen 14.05.2012 und 15.06.2012 Baustelle, Vollsperrung',
+         'from' => 1336944008,
+         'id' => 2334,
+         'data' => 'userdel	q4::inwork 10096,-2137 10021,-1918
 ',
          'type' => 'handicap'
        }
