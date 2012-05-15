@@ -1031,7 +1031,7 @@ Sawallstr. (Erkner): mäßiges Kopfsteinpflaster, Q2	? 34024,1360 34181,1349
 #: by: Ramona Hesse vvv
 #: XXX anonymous meint aber: Beton, Q2
 Am Schlangenfenn (Potsdam): guter Asphalt, Q0	? -10516,-5498 -10585,-5528 -10630,-5553 -10712,-5594 -10758,-5502 -10630,-5440
-Am Schlangenfenn (Potsdam): guter Asphalt, Q0	? -10585,-5528 -10630,-5440 -10652,-5393 -10804,-5464
+Am Schlangenfenn (Potsdam): guter Asphalt, Q0	? -10585,-5528 -10630,-5440 -10652,-5393 -10836,-5477
 #: by: ^^^
 #: by: anonymous
 Am Upstall, Fahrland: Asphalt, Q0	? -16009,7063 -16011,7252 -16010,7299 -15998,7329 -15967,7362 -15929,7375 -15891,7375 -15815,7375
@@ -2989,7 +2989,8 @@ Paul-Wegener-Str.: Qualität?	? -6949,-4389 -7049,-4505
 #: XXX Verknüpfungen zu den angrenzenden Straßen?
 Priesterweg (Potsdam): Qualität? Teilweise für Autos gesperrt?	? -6767,-4463 -6940,-4609 -7038,-4699 -7172,-4776 -7199,-4797 -7873,-4811
 #: XXX laut osm cobblestone
-Alt-Drewitz (Potsdam): Qualität? Wird die Straße mit oder ohne Bindestrich geschrieben?	? -8101,-4749 -8150,-4849 -8141,-4962 -8186,-5161 -8165,-5236
+#: XXX in Potsdam.coords.data ohne Bindestrich
+Alt Drewitz (Potsdam): Qualität? Wird die Straße mit oder ohne Bindestrich geschrieben?	? -8101,-4749 -8150,-4849 -8141,-4962 -8186,-5161 -8165,-5236
 Kirchstr. (Potsdam): Qualität?	? -7534,-5904 -7473,-5743 -7561,-5659 -7796,-5447 -7910,-5356 -8057,-5350
 #: XXX str_cont_ausnahme-Eintrag:
 Am Friedhof (Potsdam): Qualität?	? -7722,-5701 -7728,-5839 -7719,-5916
@@ -3855,3 +3856,9 @@ Hartriegelstr. - Michael-Brückner-Str.: Nachts beleuchtet?	? 18695,5076 18622,50
 Lübarser Aue: Qualität? Wo wird sich die Straße befinden?	?::inwork 7185,22466 7147,22393
 Am Rodelberg: Qualität? Wo wird sich die Straße befinden?	?::inwork 7257,22381 7296,22458
 #: by: ^^^
+# 
+#: XXX alle in Potsdam-Grube vvv
+Aalsteig (Potsdam): Qualität?	? -19584,4326
+#: XXX ^^^
+Ahornstr. (Potsdam): Qualität?	? -8829,-2741 -8870,-2876
+Alter Torfweg (Potsdam): Qualität? Existieren Straßenschilder?	? -10836,-5477 -10829,-5608 -10917,-5739 -11089,-5909

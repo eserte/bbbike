@@ -391,6 +391,7 @@ for my $browser (@browsers) {
     ######################################################################
     # A street in Potsdam but not in "landstrassen"
 
+ XXX: { ; }
  XXX_PETRI_DANK: {
 
 	$get_agent->();
@@ -425,7 +426,8 @@ for my $browser (@browsers) {
 		|\Q(Lennéstr. - Ökonomieweg, Sanssouci) (Potsdam)/Lennéstr. (Potsdam)\E
 		|\Q(Lennéstr. - Ökonomieweg, Sanssouci) (Potsdam)/(Hans-Sachs-Str. - Lennéstr.) (Potsdam)/Lennéstr. (Potsdam)\E
 		|\Q(Lennéstr. - Ökonomieweg, Sanssouci)/(Hans-Sachs-Str. - Lennéstr.)/Lennéstr. (Potsdam)\E
-	       )}ix,  "Correct goal resolution (Hans-Sachs-Str. ... or Lennéstr. ... or Ökonomieweg ...)");
+		|\QRömische Bäder\E
+	       )}ix,  "Correct goal resolution (Hans-Sachs-Str. ... or Lennéstr. ... or Ökonomieweg ... or Römische Bäder)");
 	}
 	$like_long_data->(qr{(\QSchlänitzseer Weg (Potsdam-Bornim)/Feldweg (Potsdam-Schlänitzsee)\E
 			     |\QKönigsdamm (Grube)/Schlänitzseer Weg (Marquardt)\E # before adding the extra point between Schlänitzseer Weg and Feldweg
@@ -688,7 +690,6 @@ for my $browser (@browsers) {
 	}
     }
 
- XXX: { ; }
     {
 	# Ausweichroute ohne Ergebnis (weil Start und/oder Ziel im gesperrten Gebiet liegen)
 	$get_agent->();
