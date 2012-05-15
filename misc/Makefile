@@ -256,10 +256,10 @@ MKGMAP?=	java -Xmx1024m -jar /usr/local/src/mkgmap-r${MKGMAP_VER}/mkgmap.jar
 
 # on mosor: /usr/lib/jvm/java-6-sun/bin/java -jar /opt/mkgmap-r1247/mkgmap.jar
 
-bbbikemap-for-garmin:	${BBBIKETMPDIR}/bbbike_routable_gmapsupp.img
+bbbikemap-for-garmin:	${BBBIKETMPDIR}/bbbike_fat_routable_gmapsupp.img
 	@echo "Set the garmin device into USB mass storage mode."
 	@echo "Then execute:"
-	@echo "   mount /mnt/garmin && cp ${BBBIKETMPDIR}/bbbike_routable_gmapsupp.img /mnt/garmin/garmin/gmapsupp.img && umount /mnt/garmin"
+	@echo "   mount /mnt/garmin && cp ${BBBIKETMPDIR}/bbbike_fat_routable_gmapsupp.img /mnt/garmin/garmin/gmapsupp.img && umount /mnt/garmin"
 
 .PHONY: ${BBBIKETMPDIR}/bbbike_routable.osm
 ${BBBIKETMPDIR}/bbbike_routable.osm:
@@ -268,18 +268,26 @@ ${BBBIKETMPDIR}/bbbike_routable.osm:
 	cd ../data && ${MAKE} ../tmp/bbbike_routable.osm
 
 BBBIKE_ROUTABLE_GMAPSUPP_SOURCES=	${BBBIKETMPDIR}/bbbike_routable.img
+
+BBBIKE_FAT_ROUTABLE_GMAPSUPP_SOURCES=	${BBBIKETMPDIR}/bbbike_routable.img
 .if exists(${BBBIKETMPDIR}/berlin_osm_routable.img)
-BBBIKE_ROUTABLE_GMAPSUPP_SOURCES+=	${BBBIKETMPDIR}/berlin_osm_routable.img
+BBBIKE_FAT_ROUTABLE_GMAPSUPP_SOURCES+=	${BBBIKETMPDIR}/berlin_osm_routable.img
 .endif
 .if exists(${BBBIKETMPDIR}/fragezeichen-outdoor-categorized.img)
-BBBIKE_ROUTABLE_GMAPSUPP_SOURCES+=	${BBBIKETMPDIR}/fragezeichen-outdoor-categorized.img
+BBBIKE_FAT_ROUTABLE_GMAPSUPP_SOURCES+=	${BBBIKETMPDIR}/fragezeichen-outdoor-categorized.img
 .endif
 .if exists(${BBBIKETMPDIR}/fragezeichen-outdoor-nextcheck-categorized.img)
-BBBIKE_ROUTABLE_GMAPSUPP_SOURCES+=	${BBBIKETMPDIR}/fragezeichen-outdoor-nextcheck-categorized.img
+BBBIKE_FAT_ROUTABLE_GMAPSUPP_SOURCES+=	${BBBIKETMPDIR}/fragezeichen-outdoor-nextcheck-categorized.img
 .endif
 .if exists(${BBBIKETMPDIR}/trafficlightmap.img)
-BBBIKE_ROUTABLE_GMAPSUPP_SOURCES+=	${BBBIKETMPDIR}/trafficlightmap.img
+BBBIKE_FAT_ROUTABLE_GMAPSUPP_SOURCES+=	${BBBIKETMPDIR}/trafficlightmap.img
 .endif
+
+${BBBIKETMPDIR}/bbbike_fat_routable_gmapsupp.img: ${BBBIKE_FAT_ROUTABLE_GMAPSUPP_SOURCES} ${BBBIKEMKGMAPDIR}/typ/M000002a.TYP
+	cd ${BBBIKETMPDIR} && \
+	    ${MKGMAP} --family-id=42 --family-name="Slavens Map" \
+	       --gmapsupp ${BBBIKE_FAT_ROUTABLE_GMAPSUPP_SOURCES} ${BBBIKEMKGMAPDIR}/typ/M000002a.TYP
+	mv ${BBBIKETMPDIR}/gmapsupp.img ${BBBIKETMPDIR}/bbbike_fat_routable_gmapsupp.img
 
 ${BBBIKETMPDIR}/bbbike_routable_gmapsupp.img: ${BBBIKE_ROUTABLE_GMAPSUPP_SOURCES} ${BBBIKEMKGMAPDIR}/typ/M000002a.TYP
 	cd ${BBBIKETMPDIR} && \
