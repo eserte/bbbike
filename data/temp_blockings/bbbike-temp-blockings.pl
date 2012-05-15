@@ -1,7 +1,7 @@
 # -*- mode: bbbike; coding: iso-8859-1 -*-
 # temp-blocking
 # XXX undef old entries
-# iso2epoch: date -j 2011MMDDhhmm +%s
+# iso2epoch: date -j 2012MMDDhhmm +%s
 #            date +%s
 require Time::Local;
 @temp_blocking =
@@ -13942,9 +13942,9 @@ EOF
 userdel	q4::inwork 9098,42254 9043,42165 9032,42153
 EOF
      },
-     { from  => 1306533600, #1241414920, # 2009-05-04 07:28
-       until => 1306699200, #1241528400, # 2009-05-05 15:00
-       text  => 'Preußenallee (Charlottenburg) in beiden Richtungen zwischen Marathonallee und Badenallee Veranstaltung, Straße vollständig gesperrt (28. und 29. Mai 2011)',
+     { from  => 1337378400, # 1306533600, #1241414920, # 2009-05-04 07:28
+       until => 1337551200, # 1306699200, #1241528400, # 2009-05-05 15:00
+       text  => 'Preußenallee (Charlottenburg) in beiden Richtungen zwischen Marathonallee und Badenallee Veranstaltung (Frühling in der Preußenallee), Straße wahrscheinlich vollständig gesperrt (19. und 20. Mai 2012)',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 596,11951 585,11830 572,11698 563,11601
