@@ -1421,25 +1421,8 @@ userdel	q4::inwork 11436,14741 11271,14755
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/organisationseinheiten/tief/index.html',
-         'until' => 1337464800,
-         'text' => 'Grünauer Straße: Vollsperrung zwischen Normannenstraße und Köpenicker Straße aufgrund eines defekten Regenentwässerungskanal, Bauzeit vom 07.05.12 bis 19.05.12',
-         'from' => 1336255200,
-         'id' => 2328,
-         'data' => 'userdel	q4::inwork 19771,1793 19898,1704
-',
-         'type' => 'handicap'
-       },
-       {
-         'until' => 1337119199,
-         'text' => 'Vollsperrung der Bahnbrücke Karlshorst: 10. bis 15. Mai 2012 (Sperrung der Fahrbahn)',
-         'from' => 1336764755,
-         'id' => 2329,
-         'data' => 'userdel	q4::inwork 18722,8582 18709,8423
-',
-         'type' => 'handicap'
-       },
+       undef,
+       undef,
        {
          'until' => 1338602400,
          'text' => 'Vollsperrung der Bahnbrücke Karlshorst: 26. Mai 2012, 5 Uhr bis 2. Juni 2012, 4 Uhr (Sperrung der Fahrbahn)',

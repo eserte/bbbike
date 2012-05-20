@@ -6760,7 +6760,7 @@ EOF
        text  => 'B 166 Berliner Str., Lindenallee OD Schwedt Deckenerneuerung Vollsperrung 21.11.2006-28.11.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 69480,73471 69238,73315
+userdel	q4::inwork 69480,73471 69302,73357 69238,73315
 EOF
      },
      { from  => 1164612153, # 2006-11-27 08:22
@@ -12787,7 +12787,7 @@ EOF
        text  => 'L 025 Schmölln - LG - Penkun zw. Landesgrenze und Schmölln grundhafter Straßenbau Vollsperrung 29.09.2008-23.12.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 55977,100103 56268,99856 56856,99683 57516,99296
+userdel	2::inwork 55977,100103 56188,99924 56268,99856 56856,99683 57042,99574 57516,99296
 EOF
      },
      { from  => 1223416800, # 2008-10-08 00:00
