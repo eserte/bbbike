@@ -279,8 +279,11 @@ BBBIKE_FAT_ROUTABLE_GMAPSUPP_SOURCES+=	${BBBIKETMPDIR}/fragezeichen-outdoor-cate
 .if exists(${BBBIKETMPDIR}/fragezeichen-outdoor-nextcheck-categorized.img)
 BBBIKE_FAT_ROUTABLE_GMAPSUPP_SOURCES+=	${BBBIKETMPDIR}/fragezeichen-outdoor-nextcheck-categorized.img
 .endif
-.if exists(${BBBIKETMPDIR}/trafficlightmap.img)
-BBBIKE_FAT_ROUTABLE_GMAPSUPP_SOURCES+=	${BBBIKETMPDIR}/trafficlightmap.img
+.if exists(${BBBIKETMPDIR}/trafficlightmap20.img)
+BBBIKE_FAT_ROUTABLE_GMAPSUPP_SOURCES+=	${BBBIKETMPDIR}/trafficlightmap20.img
+.endif
+.if exists(${BBBIKETMPDIR}/trafficlightmap25.img)
+BBBIKE_FAT_ROUTABLE_GMAPSUPP_SOURCES+=	${BBBIKETMPDIR}/trafficlightmap25.img
 .endif
 
 ${BBBIKETMPDIR}/bbbike_fat_routable_gmapsupp.img: ${BBBIKE_FAT_ROUTABLE_GMAPSUPP_SOURCES} ${BBBIKEMKGMAPDIR}/typ/M000002a.TYP
