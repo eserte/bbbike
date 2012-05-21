@@ -6293,22 +6293,29 @@ sub load_temp_blockings {
 sub crossing_text {
     my $c = shift;
     all_crossings();
-    if (!exists $crossings->{$c}) {
-	new_kreuzungen();
-	my(@nearest) = $kr->nearest_coord($c);
-	if (!@nearest || !exists $crossings->{$nearest[0]}) {
-	    # Should not happen, but try to be smart
-	    my $crossing_text = eval {
-		my($px,$py) = convert_data_to_wgs84(split /,/, $c);
-		"N $py / O $px";
-	    };
-	    if ($@) {
-		warn $@;
-		$crossing_text = "???";
+ TRY_SCOPES: {
+	if (!exists $crossings->{$c}) {
+	    new_kreuzungen();
+	    my(@nearest) = $kr->nearest_coord($c);
+	    if (!@nearest || !exists $crossings->{$nearest[0]}) {
+		my $new_scope = increment_scope();
+		if (!$new_scope) {
+		    # Last resort, probably far away
+		    my $crossing_text = eval {
+			my($px,$py) = convert_data_to_wgs84(split /,/, $c);
+			"N $py / O $px";
+		    };
+		    if ($@) {
+			warn $@;
+			$crossing_text = "???";
+		    }
+		    return $crossing_text;
+		}
+		get_streets_rebuild_dependents();
+		goto TRY_SCOPES;
+	    } else {
+		$c = $nearest[0];
 	    }
-	    return $crossing_text;
-	} else {
-	    $c = $nearest[0];
 	}
     }
     nice_crossing_name(@{ $crossings->{$c} });

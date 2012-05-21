@@ -96,7 +96,7 @@ if (!@urls) {
 }
 
 my $ortsuche_tests = 11;
-plan tests => (248 + $ortsuche_tests) * scalar @urls;
+plan tests => (254 + $ortsuche_tests) * scalar @urls;
 
 my $default_hdrs;
 if (defined &Compress::Zlib::memGunzip && $do_accept_gzip) {
@@ -255,8 +255,23 @@ for my $cgiurl (@urls) {
 	like_html $content, qr/angekommen/, "Angekommen!";
     }
 
+ XXX: 
+    {
+	my $content = std_get "$action?startc_wgs84=13.028141,52.390967", testname => "Crossing in Potsdam, direct wgs84 coordinate";
+	like_html $content, qr{\QKastanienallee/Kantstr. (Potsdam)}, "Found crossing name";
+    }
+
+    {
+	my $content = std_get "$action?startc_wgs84=13.971133,53.924910", testname => "Crossing in wide region, direct wgs84 coordinate";
+	like_html $content, qr{\QMorgenitz - Krienke/Suckow - Morgenitz/Morgenitz - Mellenthin}, "Found crossing name";
+    }
+
+    {
+	my $content = std_get "$action?startc_wgs84=10.039791,54.623759", testname => "Crossing outside BBBike scope, direct wgs84 coordinate";
+	like_html $content, qr{N 54\.6237\d+ / O 10\.03979\d+}, "Found coordinate without crossing name";
+    }
+
  SKIP: {
-    XXX: 
 	# this is critical --- both streets in the neighborhood of Berlin
 	my $route = std_get_route "$action?startc=-12064%2C-284&zielc=-11831%2C-70&startname=Otto-Nagel-Str.+%28Potsdam%29&zielname=Helmholtzstr.+%28Potsdam%29&pref_seen=1&pref_speed=21&pref_cat=&pref_quality=&output_as=perldump", testname => "Otto-Nagel => Manger (Potsdam)";
 	skip "No hash, no further checks", 1 if !$route;
