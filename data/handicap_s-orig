@@ -70,16 +70,19 @@ Helmerdingstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg kann benutzt werden	q4::i
 #: next_check: ^^^
 #: last_checked: ^^^
 # 
-#: last_checked: 2012-04-28
-#: next_check: 2012-05-25
+#: last_checked: 2012-05-21
+#: next_check: 2012-06-25
 Rathausstr.: Baustelle vor dem Roten Rathaus, eng	q4::inwork 10601,12521 10704,12595
 # 
 #XXX del --- #: last_checked: 2011-02-27 --- #: next_check: 2011-07-15 --- Am Carlsgarten: Bauarbeiten	q4::inwork 19460,7954 19372,8012 19334,8046
 # 
-#: last_checked: 2012-03-09 vvv
-#: next_check: 2012-12-17 vvv
-Rathausstr. zwischen Breitestr. und Poststr.: Fahrbahn wegen Brückenbauarbeiten gesperrt	q4::inwork 10281,12310 10362,12351
-Rathausstr. zwischen Breitestr. und Poststr.: Fahrbahn wegen Brückenbauarbeiten gesperrt	q4::inwork 10422,12395 10476,12432
+#: last_checked: 2012-05-21 vvv
+#: next_check: 2012-07-21 vvv
+#: note: komplette Fertigstellung und Verkehrsfreigabe im Frühjahr 2013
+Rathausbrücke: provisorischer Fußgängerweg auf der Rathausbrücke, ggfs. schieben	q4::inwork 10362,12351 10422,12395
+Rathausstr. zwischen Breite Str. und Poststr.: Fahrbahn wegen Brückenbauarbeiten gesperrt	q3::inwork 10281,12310 10362,12351
+Rathausstr. zwischen Breite Str. und Poststr.: Fahrbahn wegen Brückenbauarbeiten gesperrt	q4::inwork 10422,12395 10476,12432
+# 
 #: next_check: ^^^
 #: last_checked: ^^^
 # 
@@ -2664,5 +2667,10 @@ Stadtgärten: enge Straße	q1 11585,22082 11568,22056 11544,21897 11575,21888 1156
 #: by: Matthias Dörge:
 #: by: (URL existiert nicht mehr) http://www.berlin.de/ba-steglitz-zehlendorf/presse/archiv/20060505.1315.39412.html (Freigabe Radfahrer)
 Jochen-Klepper-Weg: kombinierter Rad- und Fußweg, Fußgänger haben Vorrang	q1 -3030,2266 -2784,2358 -2690,2385 -2372,2477
+# 
 #: by: Ilka Liss:
 Frommpromenade: enge Straße	q0- 5469,20462 5350,20495 5257,20551
+# 
+#: by: Sophie Haid:
+#: corrected_by: srt/policy (q2 -> q0-)
+Brodersenstr.: enge Straße	q0- 6033,19611 5885,19920 5804,20047

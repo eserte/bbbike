@@ -126,6 +126,13 @@ Fahrradstraße in der Lauenburger Str.	?::projected 5870,4992 5905,5088 5927,5182
 #: section ignorieren vvv
 #: section Straßen in Bau und Planung vvv
 # 
+#: by: http://www.berlin.de/ba-neukoelln/presse/archiv/20120427.1445.369492.html vvv
+#: XXX Radwegesanierung in Neukölln vvv
+#: XXX zwischen Gradestr. und Hattenheimer Str.
+Tempelhofer Weg: wann werden hier Radstreifen angelegt?	? 12507,5228 12205,5545 12107,5651 12052,5710 12017,5747 11943,5825 11590,6026
+#: XXX ^^^
+#: by: ^^^
+# 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/20re.pdf/file?y=2012 ("geplanter Straßenname")
 #: XXX fehlt auch in Berlin.coords.data
 Fechinger Weg: entsteht hier irgendwo diese Straße?	?::projected 21298,11830 21363,11887
@@ -655,7 +662,8 @@ Umfahrung der Drängelgitter	? 6526,20998 6565,21004 6560,21055
 # 
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1204/nachricht4638.html
 #: last_checked: 2012-05-07
-#: next_check: 2012-06-15
+#: next_check: 2012-05-21
+#: XXX laut wosch schon jetzt der Fall
 Dresdener Str.: Einfahrt für Kfz von Süden bald nicht möglich	?::inwork 11189,10831 11162,10919
 # 
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/presse/archiv/20120329.0935.368110.html vvv
@@ -1994,7 +2002,6 @@ Hoffbauerpfad: Qualität zwischen Klistostr. und Urbanstr.? Für Autos geöffnet?	?
 Am Zingergraben: Qualität? Ist der Weg ausgeschildert?	? 9028,21441 8987,21430 8866,21520 8794,21573 8780,21646 8849,21842 8848,21920 8740,21983
 Genfer Str.: Ist die Genfer Str. eine Einbahnstraße? Wenn ja, gilt die Einbahnstraßenregelung nur für Autofahrer oder auch für Radfahrer?	? 7031,18085 6939,18160 6821,18216 6683,18243
 Genfer Str. - Deutsche Str.: Existiert eine Verbindung für Radfahrer zwischen Genfer und Deutscher Str.?	? 7075,18033 7089,17990 7148,17999
-Priesterstege: Qualität?	? 13524,21053 13562,20913
 Mellenthin - Gummlin: Qualität?	? 48871,166559 48865,165755 49125,164525 49188,164029 49207,163588
 #: XXX laut nordland-Usedom-Karte mittel-schlecht:
 Bansin-Dorf - Gothen: Qualität?	? 57343,173415 57170,172520 56710,172337 56872,172049
@@ -2068,6 +2075,7 @@ Fintelmannstr.: Qualität?	? -7505,454 -7554,431 -7630,409 -7712,407
 Leo-Baeck-Str. - Seehofstr.: Beschaffenheit des Weges? Nachts beleuchtet?	? 1478,1721 1432,1904 1432,1964 1461,2073 1452,2095 1493,2249
 Von-Canstein-Str. (Dahlwitz-Hoppegarten): Qualität?	? 26880,11479 26957,11450 27007,11422 27165,11294
 # XXX del: hier existiert keine öffentliche Straße: Straße 14 (Neukölln): Qualität? Offen? Ausgeschildert?	? 14133,6187 14116,6277
+#: XXX anonymous meint: fester Sandweg, Q2
 Golfweg: Qualität?	? -7394,918 -7985,781 -8136,700
 Malergarten: Qualität?	? -7831,-2230 -7859,-2304
 Reichsbahnstr.: Qualität?	? -4554,1391 -4579,1397 -4648,1334
@@ -2194,6 +2202,7 @@ Cecilienplatz: Qualität? Für Autos gesperrt?	? 3915,24200 4031,24218
 Ehrenpfortensteig: Qualität?	? 2384,22689 2303,22708 2203,22749
 #: XXX benötigt Eintrag in str_cont_ausnahme:
 #: XXX sah wie mäßiger Asphalt aus:
+#: XXX "Borris" meint "Beton, Q1" -> Nachfrage, ob beide Abschnitt gleich sind
 Elsestr.: Qualität?	? 4668,24442 4656,24379
 #: XXX sah gut asphaltiert aus:
 Elsestr.: Qualität?	? 4656,24379 4662,24326 4683,24275
@@ -2487,13 +2496,11 @@ Vogesenstr.: Qualität?	? 13351,21237 13368,21142
 Georgenstr. (Blankenburg): Qualität?	? 14263,20352 14294,20412 14309,20486 14320,20580 14328,20644 14304,20682 14236,20773 14091,20962
 #: XXX asphaltierter Radweg auf der nördlichen/östlichen Seite, nicht ganz sicher bei der Lage
 Buckow - Lichterfelde: wo genau ist der Radweg?	? 31634,53303 32692,53191 32718,53044 32856,52150 33002,51944
-#: XXX Eintrag von bene...finti (WALTER): Asphalt, enge Straße, q0, aber keine Angabe zur Sperrung
-#: XXX eventuell ein Eintrag in brunnels-orig notwendig
-Siebenendenweg: Qualität? Ist die gesamte Straße für Autos gesperrt?	? 404,3970 21,4434 -62,4564
 Waldrebensteig: Qualität? Ist die Straße eine Spielstraße?	? -2014,1981 -2174,1933
 Satzkorner Weg: Qualität?	? -1133,1640 -1133,1616
 Wildbergweg: Qualität?	? -846,1737 -841,1675
 Rehbrücker Weg: Qualität?	? -772,1769 -769,1677
+#: XXX anonymous meint: Q1 ohne weitere Angaben, RW1 (?)
 Gütergotzer Str.: Qualität?	? -652,1823 -624,1718 -472,1724 -418,1787
 Radtkestr.: Qualität?	? 29,1877 18,1928 -34,2147
 #: XXX_osm: bei osm falsch (mit Bindestrichen) geschrieben
@@ -2674,7 +2681,6 @@ Aralienweg: Qualität?	? 9529,21045 9570,21029 9629,21044
 #: oldname: Straße 125
 Centweg: Qualität?	? 8426,22015 8399,21986 8275,22045
 Straße 126: Qualität? Existiert eine Verbindung zum Mauerweg?	? 8426,22015 8256,22098
-Rosskastanienhof: Qualität?	? 8055,20708 8190,20658 8191,20622
 Straße 60: Qualität?	? 8400,21180 8423,21212
 Distelweg: Qualität?	? 8587,21218 8484,21282
 Straße 141 (Rosenthal): Qualität?	? 8811,21379 8851,21453
@@ -2710,7 +2716,6 @@ Leuthingerweg: Qualität?	? -5999,14829 -5991,14784 -5955,14743 -5813,14694 -5694
 Senzker Str.: Qualität?	? -5770,14837 -5813,14694
 Übergang: Qualität?	? -6276,14924 -6294,14832
 Wittfeldstr.: Qualität?	? -5991,14784 -6120,14760 -6294,14832 -6423,14885
-Meyerweg: Qualität?	? -6438,14770 -6313,14749 -6115,14646 -5990,14587
 Haarmannweg: Qualität?	? -6342,14684 -6148,14589 -6019,14534 -5990,14587
 Rowanweg: Qualität?	? -6438,14609 -6354,14598 -6261,14555 -6212,14538
 Deniszeile: Qualität?	? -6212,14538 -6148,14589 -6115,14646
@@ -2819,8 +2824,6 @@ Pfifferlingweg: Qualität? Kann die Lindauer Str. überquert werden?	? 5635,18776 
 Rundpfuhlweg: Qualität? Kann die Lindauer Str. überquert werden?	? 5713,18777 5715,18586
 Holzweidepfad: Qualität? Kann die Lindauer Str. überquert werden?	? 5791,18778 5795,18585
 Thaterstr.: Kann die Residenzstr. in Höhe Thaterstr. überquert werden?	? 7445,17968 7195,17908
-Henricistr.: Qualität?	? 5858,19437 5996,19471
-Brodersenstr.: Qualität?	? 6033,19611 5885,19920 5804,20047
 #: XXX_osm bei osm falsch geschrieben?
 Olbrichweg: Qualität?	? 5787,19326 5879,19352
 Knauerstr.: Qualität?	? 5996,19471 6003,19461 6084,19297
@@ -3572,6 +3575,7 @@ Hohenwalde: Qualität?	? 30919,74838 31267,74825 32398,74953 32778,75006 33102,75
 Potzlow: Berlin-Usedom in Potzlow, Qualität?	? 38577,90727 38664,91160 38614,91197
 Vogelsang: Qualität?	? 7569,69899 7798,69839 7983,69794 8194,69753
 Burgwall - Neuhof: Qualität?	? 2037,71025 2314,71167 2396,71244 2817,71074 3184,71083 3599,70845
+#: XXX anonymous meint: Asphalt ohne weitere Kategorisierung, q1 (enge Straße)
 Ziegeleiweg: Qualität?	? 5117,64943 5152,65382 5066,65598 4747,65917 4521,66271 4341,66572 4224,66707 4138,67194 4074,67903 3882,68297 3717,68402 3526,68316
 Kleinmutz - B109: Qualität?	? 2129,61503 2224,61408 3649,60611 3763,60337
 Kleinmutz - Bergsdorf: Qualität?	? 1593,61788 1372,61600
@@ -3844,9 +3848,6 @@ Gutschmidtstraße: sind die Radwege asphaltiert oder saniert?	? 12655,3882 12711,
 #: XXX möglicherweise nur Richtung Süden
 Tischlerzeile: existieren in der Tischlerzeile zwischen Severingstr. und Johannisthaler Chaussee Radwege oder Radstreifen?	? 13455,2465 13498,2411
 Fritz-Erler-Allee: sind die Radwege asphaltiert oder saniert?	? 14392,2979 14274,3129 14205,3187 14126,3225 14023,3276 13906,3340 13775,3500
-# XXX del --- Widerspruch zum nächsten Eintrag --- Tempelhofer Weg: sind die Radwege im Tempelhofer Weg von Gradestraße bis Holzmindener Straße asphaltiert oder saniert?	?; 12507,5228 12205,5545
-#: XXX zwischen Gradestr. und Hattenheimer Str.
-Tempelhofer Weg: existieren im Tempelhofer Weg Radstreifen?	? 12507,5228 12205,5545 12107,5651 12052,5710 12017,5747 11943,5825 11590,6026
 Lahnstr: existieren in der Lahnstraße Radstreifen?	? 13095,6926 13278,6967 13500,7018 13627,7047 13891,7107
 #: XXX ^^^
 #: by: ^^^

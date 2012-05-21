@@ -95,15 +95,7 @@ userdel	2::temp -8087,-1453 -8151,-1470 -8306,-1454
        undef,
        undef,
        undef,
-       {
-         'until' => 1337551200,
-         'text' => 'Preußenallee (Charlottenburg) in beiden Richtungen zwischen Marathonallee und Badenallee Veranstaltung (Frühling in der Preußenallee), Straße wahrscheinlich vollständig gesperrt (19. und 20. Mai 2012)',
-         'from' => 1337378400,
-         'id' => 1642,
-         'data' => 'userdel	2::inwork 596,11951 585,11830 572,11698 563,11601
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1072,18 +1064,7 @@ userdel	q4::inwork 425,8766 490,8716
        undef,
        undef,
        undef,
-       {
-         'until' => 1337551140,
-         'text' => 'Neuköllner Maientage im Volkspark Hasenheide, Behinderungen möglich, 27.4.2012 bis zum 20.5.2012',
-         'from' => 1335477600,
-         'id' => 2207,
-         'data' => 'userdel	q4::temp 11177,8985 11255,8591 11279,8489 11282,8428 11275,8387 11266,8336
-userdel	q4::temp 11225,8350 11230,8402 11235,8454 11193,8568 11137,8738
-userdel	q4::temp 11275,8387 11230,8402
-userdel	q4::temp 11333,8582 11255,8591 11193,8568 11133,8560
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        {
@@ -1441,15 +1422,7 @@ userdel	q4::inwork 11436,14741 11271,14755
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1337551200,
-         'text' => 'Ersatzneubau Brücke über den Stierngraben Brücke über den Stierngraben bei Kaakstedt, Vollsperrung zw. Suckow und Gerswalde und umgekehrt 07.05.2012 bis 20.05.2012',
-         'from' => 1336943422,
-         'id' => 2332,
-         'data' => 'userdel	2::inwork 35887,85385 34920,85944
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_018769',
          'until' => 1347289200,
