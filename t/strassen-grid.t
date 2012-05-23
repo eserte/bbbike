@@ -2,7 +2,6 @@
 # -*- perl -*-
 
 #
-# $Id: strassen-grid.t,v 1.5 2009/01/21 19:31:19 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -33,19 +32,25 @@ BEGIN {
     }
 }
 
-BEGIN { plan tests => 9 * 2 }
+plan tests => 36;
 
 my %opt;
 GetOptions(\%opt, "v!") or die "usage!";
 
 Strassen::set_verbose($opt{v});
 
+# Important: to avoid clashes with cached original data
+# This is the same prefix as in cgi/bbbike-test.cgi.config
+local $Strassen::Util::cacheprefix = $Strassen::Util::cacheprefix = "test_b_de";
+
+my $test_strassen_file = "$FindBin::RealBin/data/strassen";
+
 for my $use_cache (1, 0) {
     my $cache_text = $use_cache ? "with cache" : "no cache";
-    my $s_fast = Strassen->new("strassen");
+    my $s_fast = Strassen->new($test_strassen_file);
     $s_fast->make_grid(Exact => 0, UseCache => $use_cache);
 
-    my $s_exact = Strassen->new("strassen");
+    my $s_exact = Strassen->new($test_strassen_file);
     $s_exact->make_grid(Exact => 1, UseCache => $use_cache);
 
     my $kr = Kreuzungen->new(Strassen => $s_fast,
@@ -55,13 +60,13 @@ for my $use_cache (1, 0) {
 
     for my $p_def (
 		   ## point to check, exact result, fast result, normal result
-## Do not use this tests with the new points for the Klingenbergbrücke
-# 		   # Köpenicker Chaussee/Rummelsburg (with wrong $p_kr)
-# 		   ["16743,9200", "17072,8714", undef, "16449,9011"],
-# 		   # etwas südlich davon
-# 		   ["16912,8956", "17072,8714"],
-# 		   # etwas nördlich davon
-# 		   ["16587,9437", "16374,9760"],
+
+ 		   # Köpenicker Chaussee/Rummelsburg (with wrong $p_kr)
+ 		   ["16743,9200", "17072,8714", undef, "16449,9011"],
+ 		   # etwas südlich davon
+ 		   ["16912,8956", "17072,8714"],
+ 		   # etwas nördlich davon
+ 		   ["16587,9437", "16374,9760"],
 
 		   # Puschkinallee
 		   ["15079,9321", "14819,9462", undef, "15140,9566"],
