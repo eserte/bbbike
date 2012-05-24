@@ -25,26 +25,26 @@ sub teaser {
 			       ];
     $teasers_mandatory{"de"} = [
 				#teaser_maintenance(), # schaltet sich selbstständig ab
-				#teaser_sternfahrt_adfc(), # schaltet sich selbstständig ab
+				teaser_sternfahrt_adfc(), # schaltet sich selbstständig ab
 				teaser_kreisfahrt_adfc(), # schaltet sich selbstständig ab
 				(1 ? teaser_perltk_newrelease() : teaser_perltk()),
 				teaser_other_cities(),
 				teaser_beta(),
 				#teaser_mapserver(),
 				#teaser_fahrradstadt(),
-				_teaser_is_iphone() ? teaser_iphone() : (),
+				#_teaser_is_iphone() ? teaser_iphone() : (),
 				teaser_twitter(),
 			       ];
     $teasers_optional{"en"} = [],
     $teasers_mandatory{"en"} = [
 				#teaser_maintenance(), # schaltet sich selbstständig ab
-				#teaser_sternfahrt_adfc(), # schaltet sich selbstständig ab
+				teaser_sternfahrt_adfc(), # schaltet sich selbstständig ab
 				teaser_kreisfahrt_adfc(), # schaltet sich selbstständig ab
 				(1 ? teaser_perltk_newrelease() : teaser_perltk()),
 				teaser_other_cities(),
 				#teaser_beta(), # XXX There's no beta version in English yet!
 				#teaser_mapserver(),
-				_teaser_is_iphone() ? teaser_iphone() : (),
+				#_teaser_is_iphone() ? teaser_iphone() : (),
 				teaser_twitter(),
 			       ];
 
@@ -68,11 +68,11 @@ sub teaser_sternfahrt_adfc {
     my $year = (localtime)[5]+1900;
     my @l = localtime; $l[4]++;$l[5]+=1900;
     my $today = sprintf "%04d%02d%02d", $l[5], $l[4], $l[3];
-    my $out_of_date = $today gt "20110606";
+    my $out_of_date = $today gt "20120603";
     if (!$out_of_date) {
-	my $url = "http://www.adfc-berlin.de/aktionenprojekte/sternfahrt/sternfahrt-$year.html";
+	my $url = "http://www.adfc-berlin.de/aktionenprojekte/sternfahrt/sternfahrt-2012/1159-sternfahrt-2012.html";
 	<<EOF
-<div class="teaser" style="font-size:larger;"><a href="$url"><b>Sternfahrt ${year}</b></a> am 5. Juni $year</div>
+<div class="teaser" style="font-size:larger;"><a href="$url"><b>Sternfahrt ${year}</b></a> am 3. Juni $year</div>
 EOF
     } else {
 	();
