@@ -112,12 +112,38 @@
 		binmode $ofh, ":utf8";
 		print $ofh qq{<html><head><title>BBBike: Fragezeichen</title><meta http-equiv="content-type" content="text/html; charset=utf-8"></title><body>};
 		print $ofh "<h1>BBBike: Fragezeichen</h1>";
+
 		my $total_count = 0;
+		my $stat = eval {
+			die "Don't use median based coloring...";
+			require Statistics::Descriptive;
+			Statistics::Descriptive::Full->new;
+		};
 		for my $citypart (sort keys %citypart2polygon) {
 			my $link = $citypart2link{$citypart};
 			if ($link) {
-				print $ofh qq{<a href="$link->{href}">$link->{label}</a> ($link->{count})<br/>\n}; # XXX escaping?
 				$total_count += $link->{count};
+				if ($stat) {
+					$stat->add_data($link->{count});
+				}
+			}
+		}
+
+		my $median;
+		if ($stat) { $median = $stat->median }
+
+		for my $citypart (sort keys %citypart2polygon) {
+			my $link = $citypart2link{$citypart};
+			if ($link) {
+				my $style_attr = "";
+				if ($median) {
+					if ($link->{count} < $median) {
+						$style_attr = 'style="color:#cc7c00;"';
+					} else {
+						$style_attr = 'style="color:red;"';
+					}
+				}
+				print $ofh qq{<a $style_attr href="$link->{href}">$link->{label}</a> ($link->{count})<br/>\n}; # XXX escaping?
 			} else {
 				print $ofh qq{<span style="color:green;">$citypart</span> (0)<br/>\n}; # XXX escaping?
 			}
