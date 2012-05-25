@@ -364,6 +364,7 @@ Mimosenweg	2 17668,2187 17657,2213
 Straßenbahntrasse	3nocross::ignrte 14621,16563 14619,16672 14619,16682 14608,16772 14559,16912
 Berliner Allee -> Falkenberger Str.: Straßenbahntrasse	3::igndisp 14608,16772 14619,16682 14723,16691
 Falkenberger Str. -> Berliner Allee: Straßenbahntrasse	3::igndisp 14723,16691 14619,16682 14619,16672
+Caseler Str. -> Berliner Allee: Straßenbahntrasse	3::igndisp 14700,16790 14608,16772 14619,16682
 Berliner Allee -> Caseler Str.: Straßenbahntrasse	3::igndisp 14559,16912 14608,16772 14700,16790
 Sredzkistr. (ab Parkhaus Kulturbrauerei)	1 11101,14768 10893,14705
 Bahnübergang nur für Fußgänger/Radfahrer	3 20610,12050 20624,12133 20627,12162
@@ -864,7 +865,6 @@ Mittelstreifen	3nocross::ignrte 8438,8676 8334,8655 8371,8543
 Loewenhardtdamm -> Loewenhardtdamm: Mittelstreifen	3::igndisp 8371,8543 8334,8655 8306,8722
 Loewenhardtdamm -> Höhndorfstr.: Mittelstreifen	3::igndisp 8306,8722 8334,8655 8438,8676
 Friedbergstr.	1 3012,10812 3204,10895
-Caseler Str.	1 14732,16770 14700,16790 14608,16772
 Betonblöcke (aber für Radfahrer passierbar)	3nocross::ignrte 9777,10719 9805,10791 9829,10830 9935,11067
 Lindenstr. -> Markgrafenstr.: Betonblöcke (aber für Radfahrer passierbar)	3::igndisp 9777,10719 9805,10791 9786,10971
 Markgrafenstr. -> Lindenstr.: Betonblöcke (aber für Radfahrer passierbar)	3::igndisp 9786,10971 9805,10791 9829,10830
@@ -1343,3 +1343,5 @@ Straßenbahntrasse	3nocross::ignrte -13433,693 -13432,782 -13429,1069
 Kutscherweg: Poller	3 -13620,-131 -13700,-106 -13775,-85
 Kutscherweg: Poller	3 -13775,-85 -13700,-106 -13620,-131
 Dresdner Str.: Einfahrt vom Oranienplatz gesperrt	3 11159,10769 11189,10831 11162,10919
+Rennbahnstr. -> Bernkastler	3 14510,16916 14559,16912 14673,16895
+Rennbahnstr. -> Berliner Allee	3 14510,16916 14559,16912 14535,17003

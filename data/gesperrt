@@ -66,8 +66,8 @@ Knoten Märkische/Landsberger Allee	1 19738,15143 19605,15073 19408,15007 19350,1
 Knoten Märkische/Landsberger Allee	1 19466,14910 19408,15007
 Knoten Märkische/Landsberger Allee	1 19506,15002 19551,14961 19615,14960 19643,15025 19605,15073
 Knoten Märkische/Landsberger Allee	1 19496,15113 19582,15221 19675,15240 19707,15206 19694,15141
-Alt-Blankenburg	1 13576,20849 13562,20913 13915,20944
-Alt-Blankenburg	1 13915,20944 13576,20849
+Alt-Blankenburg	1 13576,20849 13562,20913 13909,20928
+Alt-Blankenburg	1 13909,20928 13576,20849
 Seestr.	1 5062,14681 5233,14753 5440,14840
 Seestr.	1 5440,14840 5264,14671 5071,14614
 Waidmannsluster Damm	1 2142,20849 1835,21427 1882,21468 2205,20885
@@ -681,6 +681,9 @@ Bödikersteig	1 1141,14237 1182,14384
 Dorfstr. (Rahnsdorf)	1 29998,3170 29921,3079 29902,3104 29998,3170
 Grunerstr. - Gustav-Böß-Str.	1 10766,12511 10954,12635
 Grumbkowstr.	1 11563,20048 11627,19907 11695,19760
+Hardangerstr.	1 11725,16626 11720,16752
+(Weg)	2 14429,20192 14463,20160
+Caseler Str.	1s 14732,16770 14700,16790 14608,16772
 Am Neuen Garten	1 -12166,1384 -12212,1201 -12276,831 -12302,718
 Am Neuen Garten	1 -12332,585 -12582,127
 Hochstraße	3nocross::ignrte -11399,-1339 -11461,-1424 -11540,-1543
@@ -1327,8 +1330,8 @@ Eschengraben -> Berliner Str.: U-Bahnrampe	3::igndisp 11281,16743 11018,16730 11
 Berliner Str. -> Eschengraben: U-Bahnrampe	3::igndisp 10999,16830 11018,16730 11281,16743
 Berliner Str. -> Thulestr.: U-Bahnrampe	3::igndisp 11018,16730 11026,16606 11278,16609
 Thulestr. -> Berliner Str.: U-Bahnrampe	3::igndisp 11278,16609 11026,16606 11027,16553
-Berliner Str. -> Schonensche Str.: U-Bahnrampe	3::igndisp 11026,16606 11027,16553 11287,16515
-Schonensche Str. -> Schönhauser Allee: U-Bahnrampe	3::igndisp 11287,16515 11027,16553 11019,16465
+Berliner Str. -> Schonensche Str.: U-Bahnrampe	3::igndisp 11026,16606 11027,16553 11284,16527
+Schonensche Str. -> Schönhauser Allee: U-Bahnrampe	3::igndisp 11284,16527 11027,16553 11019,16465
 Straßenbahn	3nocross::ignrte 11673,16367 11727,16358 11750,16354
 Wisbyer Str. -> Stahlheimer Str.: Straßenbahn	3::igndisp 11750,16354 11727,16358 11618,16183
 Straßenbahn	3nocross::ignrte 11750,16354 11808,16343 11829,16339 11889,16328
@@ -1341,8 +1344,8 @@ Straßenbahn	3nocross::ignrte 11542,16384 11632,16373 11673,16367
 Glaßbrennerstr. -> Wisbyer Str.: Straßenbahn	3::igndisp 11543,16207 11632,16373 11542,16384
 Wisbyer Str. -> Glaßbrennerstr.: Straßenbahn	3::igndisp 11673,16367 11632,16373 11543,16207
 Straßenbahn	3nocross::ignrte 11397,16405 11448,16398 11470,16394 11542,16384
-Baumbachstr. -> Wisbyer Str.: Straßenbahn	3::igndisp 11450,16490 11448,16398 11470,16394
-Wisbyer Str. -> Baumbachstr.: Straßenbahn	3::igndisp 11397,16405 11448,16398 11450,16490
+Baumbachstr. -> Wisbyer Str.: Straßenbahn	3::igndisp 11447,16507 11448,16398 11470,16394
+Wisbyer Str. -> Baumbachstr.: Straßenbahn	3::igndisp 11397,16405 11448,16398 11447,16507
 Wisbyer Str. -> Lewaldstr.: Straßenbahn	3::igndisp 11542,16384 11470,16394 11398,16257
 Lewaldstr. -> Wisbyer Str.: Straßenbahn	3::igndisp 11398,16257 11470,16394 11448,16398
 nicht passierbarer Mittelstreifen	3nocross::ignrte 17240,11791 17440,11774 17497,11769 17746,11748 17966,11730 18098,11720 18220,11710
@@ -1826,6 +1829,7 @@ Mittelstreifen	3nocross::ignrte 11500,9116 11550,9104 11629,9086
 Straßenbahntrasse	3nocross::ignrte -13311,462 -13203,434 -13157,394
 Johannes-Lepsius-Str. -> Kiepenheuerallee: Straßenbahntrasse	3::igndisp -13244,281 -13203,434 -13311,462
 Kiepenheuerallee -> Johannes-Lepsius-Str.: Straßenbahntrasse	3::igndisp -13157,394 -13203,434 -13244,281
+tragen (zwei Treppen, eine Treppe mit 20 Stufen)	0:60:-255 13644,21808
 tragen (3 x 3 Stufen) oder steile Rampen benutzen	0:15:-129 21979,274
 tragen (9 Stufen)	0:12:-100 21963,261
 tragen (5 Stufen)	0:10:-229 19132,7769

@@ -9739,7 +9739,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006462',
        data  => <<EOF,
-userdel	2::temp 13915,20944 13562,20913 13576,20849
+userdel	2::temp 13909,20928 13562,20913 13576,20849
 EOF
      },
      { from  => undef, # 
@@ -18210,7 +18210,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_016256',
        data  => <<EOF,
-userdel	q4::inwork; 12575,18275 12606,18215 12693,18081 12736,17998
+userdel	q4::inwork; 12575,18275 12597,18235 12693,18081 12736,17998
 EOF
      },
      { from  => 1284532129, # undef
@@ -20191,11 +20191,19 @@ EOF
      },
      { from  => 1336899120, # 2012-05-13 10:52
        until => 1338566400, # 2012-06-01 18:00
-       text  => 'Wühlischstr. (Friedrichshain): Baustelle, Fahrtrichtung Richtung Warschauer Str. zwischen Gryphiusstr. und Seumestr. gesperrt, 14.05.2012 10:52 Uhr bis 01.06.2012 18:00 Uhr ',
+       text  => 'Wühlischstr. (Friedrichshain): Baustelle, Fahrtrichtung Richtung Warschauer Str. zwischen Gryphiusstr. und Seumestr. gesperrt, als Radfahrer kann man langsam und vorsichtig passieren, 14.05.2012 10:52 Uhr bis 01.06.2012 18:00 Uhr ',
        type  => 'handicap',
        source_id => 'IM_018810',
        data  => <<EOF,
-userdel	q4::inwork; 14434,11465 14369,11489 14305,11514
+userdel	q3::inwork; 14434,11465 14369,11489 14305,11514
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Sredzkistr. zwischen Schönhauser Allee und Knaackstr: Teile der Fahrbahn gesperrt, Ausweichen auf Gehweg',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 10893,14705 11101,14768
 EOF
      },
     );

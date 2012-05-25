@@ -80,8 +80,8 @@ Knoten Märkische/Landsberger Allee	1 19738,15143 19605,15073 19408,15007 19350,1
 Knoten Märkische/Landsberger Allee	1 19466,14910 19408,15007
 Knoten Märkische/Landsberger Allee	1 19506,15002 19551,14961 19615,14960 19643,15025 19605,15073
 Knoten Märkische/Landsberger Allee	1 19496,15113 19582,15221 19675,15240 19707,15206 19694,15141
-Alt-Blankenburg	1 13576,20849 13562,20913 13915,20944
-Alt-Blankenburg	1 13915,20944 13576,20849
+Alt-Blankenburg	1 13576,20849 13562,20913 13909,20928
+Alt-Blankenburg	1 13909,20928 13576,20849
 Seestr.	1 5062,14681 5233,14753 5440,14840
 Seestr.	1 5440,14840 5264,14671 5071,14614
 Waidmannsluster Damm	1 2142,20849 1835,21427 1882,21468 2205,20885
@@ -226,7 +226,6 @@ Alfredstr.	1 16207,11937 16246,12177 16261,12224
 #XXX del: Alfredstr.	1 16261,12224 16276,12273
 Fanningerstr.	1 17139,12100 17092,12107 16994,12122 16890,12135 16794,12144
 Gierkeplatz	1 3447,12269 3456,12296 3478,12306 3510,12301 3528,12276 3521,12243 3493,12228 3463,12237 3447,12269
-#: XXX Einbahnstraßenregelung prüfen!
 Knaackstr.	1 11056,15009 11038,14972 11101,14768
 Hagenplatz	1 1149,8538 1094,8398
 Branitzer Platz	1 1346,12053 1311,12084 1311,12122 1334,12152 1374,12164 1407,12134 1414,12091 1386,12058 1346,12053
@@ -888,6 +887,10 @@ Dorfstr. (Rahnsdorf)	1 29998,3170 29921,3079 29902,3104 29998,3170
 Grunerstr. - Gustav-Böß-Str.	1 10766,12511 10954,12635
 #: by: http://www.berlin.de/imperia/md/content/bapankow/tiefbauamt/umleitung_2.ba_1_teilabschnitt.pdf?start&ts=1316168438&file=umleitung_2.ba_1_teilabschnitt.pdf
 Grumbkowstr.	1 11563,20048 11627,19907 11695,19760
+Hardangerstr.	1 11725,16626 11720,16752
+#: note: Radfahren explizit verboten
+(Weg)	2 14429,20192 14463,20160
+Caseler Str.	1s:q3 14732,16770 14700,16790 14608,16772
 ######################################################################
 #
 # Potsdam
@@ -1392,6 +1395,8 @@ Kiepenheuerallee: Straßenbahntrasse	3nocross -13311,462 -13203,434 -13157,394
 # Stellen, an denen getragen werden muß:
 # die Zahl hinter dem ":" entspricht ungefähr den verlorenen Sekunden
 # 
+#: XXX wieviele Stufen hat die zweite Treppe?
+tragen (zwei Treppen, eine Treppe mit 20 Stufen)	0:60 13644,21808
 tragen (3 x 3 Stufen) oder steile Rampen benutzen	0:15 21979,274
 tragen (9 Stufen)	0:12 21963,261
 #: note: etwas weiter auseinanderliegend:

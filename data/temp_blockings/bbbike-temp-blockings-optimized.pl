@@ -1676,10 +1676,19 @@ userdel	q4::inwork 11436,14741 11271,14755
        {
          'source_id' => 'IM_018810',
          'until' => 1338566400,
-         'text' => 'Wühlischstr. (Friedrichshain): Baustelle, Fahrtrichtung Richtung Warschauer Str. zwischen Gryphiusstr. und Seumestr. gesperrt, 14.05.2012 10:52 Uhr bis 01.06.2012 18:00 Uhr ',
+         'text' => 'Wühlischstr. (Friedrichshain): Baustelle, Fahrtrichtung Richtung Warschauer Str. zwischen Gryphiusstr. und Seumestr. gesperrt, als Radfahrer kann man langsam und vorsichtig passieren, 14.05.2012 10:52 Uhr bis 01.06.2012 18:00 Uhr ',
          'from' => 1336899120,
          'id' => 2336,
-         'data' => 'userdel	q4::inwork; 14434,11465 14369,11489 14305,11514
+         'data' => 'userdel	q3::inwork; 14434,11465 14369,11489 14305,11514
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => undef,
+         'text' => 'Sredzkistr. zwischen Schönhauser Allee und Knaackstr: Teile der Fahrbahn gesperrt, Ausweichen auf Gehweg',
+         'from' => undef,
+         'id' => 2337,
+         'data' => 'userdel	q4::inwork 10893,14705 11101,14768
 ',
          'type' => 'handicap'
        }

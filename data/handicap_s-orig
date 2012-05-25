@@ -2437,7 +2437,7 @@ Kroppenstedtweg: Fußgänger haben Vorrang	q2 1056,14906 1035,14996 996,15091 957,
 #: corrected_by: srt/policy (q2 -> q1)
 Rübezahlweg: einige Fußgänger	q1 14743,18839 14698,18967 14664,19057 14622,19123 14571,19172 14507,19214 14375,19296 14241,19379 14119,19455 14030,19510
 #: corrected_by: srt (q2 -> q1-)
-Gebrüder-Grimm-Weg: Fußgänger, querlaufende Ablaufrinnen	q1- 14277,18684 14265,18747 14269,18812 14278,18840 14292,18863 14324,18916 14358,18973 14391,19026 14414,19063 14433,19093 14457,19132 14482,19174 14507,19214 14551,19294
+Gebrüder-Grimm-Weg: Fußgänger, querlaufende Ablaufrinnen	q1- 14277,18684 14265,18747 14269,18812 14278,18840 14292,18863 14324,18916 14358,18973 14391,19026 14414,19063 14433,19093 14457,19132 14482,19174 14507,19214 14546,19286
 #: by ^^^
 #: by: T.Geske:
 Charles-H.-King-Str.: enge Straße	q1 -1248,2451 -1401,2391 -1604,2324
@@ -2590,8 +2590,14 @@ Frankentaler Ufer: Fußgänger	q1 7159,4023 7132,4028 7096,4051 6890,4124 6859,408
 Rühmkorffstr.: recht eng	q1 5697,1098 5620,1153 5573,1211
 Steinheilpfad: recht eng	q1 5585,1275 5573,1211 5455,1150
 #: by: ^^^
-#: by: christian (...chrisb...):
-Schäferstege - Parkanlage: einige Fußgänger, an der Brücke offiziell absteigen	q3 13366,20897 13332,20898 13298,20917 13244,20903
+# 
+#: by: christian (...chrisb...): vvv
+Parkanlage: einige Fußgänger	q1 13332,20898 13298,20917 13261,20919
+Parkanlage: einige Fußgänger, an der Brücke offiziell absteigen	q3 13261,20919 13075,20817
+Parkanlage: einige Fußgänger	q1 13261,20919 13289,21001 13285,21021
+Parkanlage: einige Fußgänger	q1 13298,20917 13289,21001
+#: by: ^^^
+# 
 #: by: guylian: vvv
 Hermesweg: einige Fußgänger	q1 6116,4707 6072,4606
 #: note: "Auf beiden Einfahrten stehen aber Schilder, dass Radfahren verboten ist."
