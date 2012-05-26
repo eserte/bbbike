@@ -45,9 +45,9 @@ userdel auto	3 9702,10129 9827,10051 9837,9856
 userdel auto	3 9579,10122 9599,10175 9593,10238
 EOF
      },
-     { from  => 1307743200, # Time::Local::timelocal(reverse(2010-1900,5-1,23,0,0,0)), # PERIODISCH!
-       until => 1307915940, # Time::Local::timelocal(reverse(2010-1900,5-1,23,23,59,25)), # PERIODISCH!
-       text  => 'Karneval der Kulturen, 12.6.2011',
+     { from  => Time::Local::timelocal(reverse(2012-1900,5-1,27,0,0,0)), # PERIODISCH!
+       until => Time::Local::timelocal(reverse(2012-1900,5-1,27,23,59,25)), # PERIODISCH!
+       text  => 'Karneval der Kulturen, 27.5.2012',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp 11909,9155 11824,8995 11767,9026 11629,9086 11550,9104 11500,9116 11449,9125 11136,9183 11108,9187 10713,9260 10625,9259 10564,9292 10198,9405 10032,9456 9937,9484 9927,9487 9790,9528 9676,9564 9552,9602 9451,9634 9334,9670 9242,9694 9043,9745 9002,9731 8777,9601 8648,9526 8595,9495 8358,9568 8192,9619
