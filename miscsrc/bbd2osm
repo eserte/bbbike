@@ -493,7 +493,15 @@ sub _handle_highway_like {
     }
     push @segments, [[@node_ids[$begin_split_index..$#node_ids]], [@last_tags]];
 
-    if ($optimize_for == OPTIMIZE_FOR_MAPNIK) {
+    # Usually the descriptive street names in the form "(A - B)" are
+    # only clutter for the mapnik or garmin maps. Also the "[...]"
+    # additions can be removed here.
+    #
+    # Theoretically these names could be used in garmin's address
+    # search. But it seems that the longish "(A - B)" names are
+    # winning over the shorter street names, so avoid them also here.
+    if ($optimize_for == OPTIMIZE_FOR_GARMIN ||
+	$optimize_for == OPTIMIZE_FOR_MAPNIK) {
 	undef $name if $name =~ m{^\(.*\)$};
 	if (defined $name) {
 	    $name =~ s{\s+\[.*\]$}{};
