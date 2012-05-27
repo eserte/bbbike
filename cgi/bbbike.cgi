@@ -4240,8 +4240,11 @@ sub display_route {
 			$penalty_lost += $penalty;
 		    }
 		}
-		$etappe_comment = join("; ", @comments) if @comments;
-		$etappe_comment_html = join("; ", @comments_html) if @comments_html;
+		# XXX Leere Kommentartexte explizit entfernen. Diese
+		# gibt es z.B. in comments_cyclepath. Siehe auch
+		# "comments_cyclepath handling" in TODO-bbbike.
+		$etappe_comment = join("; ", grep { $_ ne "" } @comments) if @comments;
+		$etappe_comment_html = join("; ", grep { $_ ne "" } @comments_html) if @comments_html;
 	    }
 
 	    if ($has_fragezeichen_routelist) {
