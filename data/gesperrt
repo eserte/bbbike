@@ -35,8 +35,8 @@ Halenseestr.	1 2112,10488 2076,10357 2069,10330 2094,10286 2229,10045 2268,9976 
 Halenseestr.	1 2394,9714 2360,9754 2297,9827
 Halenseestr.	1 1951,10435 1901,10566 1928,10728
 Rasthof Avus	1 1876,10397 1882,10356 1847,10323 1723,10289 1700,10339 1803,10419 1849,10418 1876,10397
-Breitenbachplatz (Westseite)	1 4292,6558 4218,6583 4111,6651 4089,6668 4021,6729 3947,6814
-Breitenbachplatz (Ostseite)	1 4000,6852 4084,6766 4125,6728 4153,6703 4250,6625 4292,6558
+Breitenbachplatz (Westseite)	1 4292,6558 4218,6583 4111,6651 4074,6681 4021,6729 3947,6814
+Breitenbachplatz (Ostseite)	1 3981,6850 4061,6753 4107,6718 4146,6693 4250,6625 4292,6558
 Inselstr. Schwanenwerder	1 -5310,4216 -5393,4211 -5453,4274 -5471,4412 -5442,4526 -5386,4539 -5341,4511 -5358,4404 -5356,4296 -5310,4216
 Bayerischer Platz	1 6063,9106 6053,9224 6084,9242 6131,9241 6161,9128 6152,9091 6118,9078 6083,9082 6063,9106
 orthodoxe Kirche	1 3952,8980 3932,8989 3835,9044
@@ -97,7 +97,7 @@ Buckower Chaussee	1 8742,475 8972,498 9002,471
 Archibaldweg	1 15674,10851 15861,10931
 Nöldnerplatz	1 15861,10931 16032,10842
 Adlergestell (extra Radweg)	2 21998,1239 21541,1739 21475,1804
-Richterstr.	1s 22092,999 22120,886 22075,779
+Richterstr.	1s 22092,999 22120,886
 Richterstr.	1s 22075,779 22007,711
 Grünau/B179	1 22007,711 21861,802 21894,881 21977,988 22092,999
 Dorfplatz	1 21074,-475 20986,-529 20890,-546 20827,-537 20999,-489 21074,-475
@@ -176,7 +176,7 @@ Schildhornstr.	1 5137,6066 5047,6116 4903,6221
 Atzpodienstr.	1 16485,12384 16445,12193 16413,11906
 Alt-Lietzow	1 4219,12324 4101,12356 4066,12368 4079,12411 4137,12411 4250,12390
 Martin-Wagner-Ring	1 12796,3821 12895,3991 12941,4015 12995,4003 13007,3949 12913,3743
-Wilskistr.	1 -402,4012 -343,4056 -303,4086 -219,4149 -151,4228 21,4434 207,4575 301,4643 418,4696 528,4747 636,4765 798,4766
+Wilskistr.	1 -402,4012 -343,4056 -303,4086 -219,4149 -158,4236 27,4447 195,4588 301,4643 418,4696 528,4747 636,4765 798,4766
 Grazer Platz	1 6442,6788 6529,6798 6679,6816 6793,6814
 Grazer Platz	1 6801,6736 6686,6735 6546,6720 6517,6717 6451,6710
 Goltzstr. (Spandau)	1 -2838,16951 -2946,16869 -3031,16807
@@ -446,9 +446,9 @@ Neuendorfer Str.	1 -3228,14794 -3251,14741
 Büdnerring	1 7997,18524 7902,18575 7892,18603 7926,18665 8037,18673 8063,18659 8066,18632 7997,18524
 Steilpfad	1 3376,21224 3280,21477
 Jebensstr.	1 5587,11397 5459,11135
-Breitenbachplatz	1 4125,6728 4089,6668 3983,6599 3925,6604 3938,6651 4021,6729 4084,6766
-Südwestkorso	1 4084,6766 4206,6820
-Südwestkorso	1 4206,6820 4125,6728
+Breitenbachplatz	1 4107,6718 4074,6681 3983,6599 3925,6604 3938,6651 4021,6729 4061,6753
+Südwestkorso	1 4061,6753 4206,6820
+Südwestkorso	1 4206,6820 4107,6718
 Kleine Markusstr. - Krautstr.	1 12021,12066 11937,12127 11967,12042 12005,12018
 Schönstedtstr.	1 12540,8458 12649,8535
 Eckertstr.	1 13608,12547 13522,12748
@@ -684,6 +684,9 @@ Grumbkowstr.	1 11563,20048 11627,19907 11695,19760
 Hardangerstr.	1 11725,16626 11720,16752
 (Weg)	2 14429,20192 14463,20160
 Caseler Str.	1s 14732,16770 14700,16790 14608,16772
+Ottmachauer Steig	1 -519,4737 -496,4718 -435,4687 -369,4631 -354,4603 -319,4550 -283,4495 -274,4474 -277,4442
+Salemer Steig	1 -581,4662 -558,4639 -531,4599 -493,4529 -472,4476 -459,4422 -441,4354
+Radtkestr.	1 18,1928 -38,2152
 Am Neuen Garten	1 -12166,1384 -12212,1201 -12276,831 -12302,718
 Am Neuen Garten	1 -12332,585 -12582,127
 Hochstraße	3nocross::ignrte -11399,-1339 -11461,-1424 -11540,-1543
@@ -1761,10 +1764,15 @@ Gilgestr. -> Potsdamer Chaussee: Mittelstreifen	3::igndisp -1100,2697 -1085,2653
 Potsdamer Chaussee -> Gilgestr.: Mittelstreifen	3::igndisp -1249,2590 -1085,2653 -1100,2697
 Potsdamer Chaussee -> Kaunstr.: Mittelstreifen	3::igndisp -1085,2653 -984,2692 -999,2726
 Kaunstr. -> Potsdamer Chaussee: Mittelstreifen	3::igndisp -999,2726 -984,2692 -870,2737
-Mittelstreifen	3nocross::ignrte -870,2737 -756,2787 -567,2869 -512,2883 -391,2914
-Niklasstr. -> Potsdamer Chaussee: Mittelstreifen	3::igndisp -791,2819 -756,2787 -567,2869
+Mittelstreifen	3nocross::ignrte -870,2737 -756,2787 -726,2799 -567,2869 -512,2883 -391,2914
+Niklasstr. -> Potsdamer Chaussee: Mittelstreifen	3::igndisp -791,2819 -756,2787 -726,2799
 Potsdamer Chaussee -> Niklasstr.: Mittelstreifen	3::igndisp -870,2737 -756,2787 -791,2819
-Hohentwielst. -> Potsdamer Chaussee: Mittelstreifen	3::igndisp -479,2715 -567,2869 -756,2787
+Potsdamer Chaussee -> Zum Oertzenweg: Mittelstreifen	3::igndisp -567,2869 -726,2799 -692,2705
+Zum Oertzenweg -> Potsdamer Chaussee: Mittelstreifen	3::igndisp -692,2705 -726,2799 -756,2787
+Hohentwielst. -> Potsdamer Chaussee: Mittelstreifen	3::igndisp -479,2715 -567,2869 -726,2799
+Mittelstreifen	3nocross::ignrte -391,2914 -267,2945 -151,2975
+Potsdamer Str. -> Werderstr.: Mittelstreifen	3::igndisp -391,2914 -267,2945 -309,3016
+Werderstr. -> Potsdamer Str.: Mittelstreifen	3::igndisp -309,3016 -267,2945 -151,2975
 Straßenbahntrasse	3nocross::ignrte 22123,5452 22087,5404 22043,5346 21954,5229
 Bhf.str. -> Am Maria-Jankowski-Park: Straßenbahntrasse	3::igndisp 22043,5346 22087,5404 22018,5452
 Am Maria-Jankowski-Park -> Bhf.str.: Straßenbahntrasse	3::igndisp 22018,5452 22087,5404 22123,5452
@@ -1829,6 +1837,8 @@ Mittelstreifen	3nocross::ignrte 11500,9116 11550,9104 11629,9086
 Straßenbahntrasse	3nocross::ignrte -13311,462 -13203,434 -13157,394
 Johannes-Lepsius-Str. -> Kiepenheuerallee: Straßenbahntrasse	3::igndisp -13244,281 -13203,434 -13311,462
 Kiepenheuerallee -> Johannes-Lepsius-Str.: Straßenbahntrasse	3::igndisp -13157,394 -13203,434 -13244,281
+tragen (15 Stufen)	0:25:-42 115,2340
+tragen (viele weite Stufen)	0:60:49 -735,4407
 tragen (zwei Treppen, eine Treppe mit 20 Stufen)	0:60:-255 13644,21808
 tragen (3 x 3 Stufen) oder steile Rampen benutzen	0:15:-129 21979,274
 tragen (9 Stufen)	0:12:-100 21963,261
@@ -2221,6 +2231,7 @@ Schranke (lichte Breite ca. 120cm)	BNP:2:-50:trailer=8 14448,4501
 Schranke (lichte Breite ca. 120cm)	BNP:2:-53:trailer=8 14709,4307
 Schranke (lichte Breite ca. 100cm)	BNP:3:-45:trailer=10 15179,3901
 Tor	BNP:5:-57 26888,13976
+Billy-Wilder-Promenade: wegen Bauarbeiten an umliegenden Wohnhäusern gesperrt	2:inwork 2528,1501 2584,1376
 Marx-Engels-Forum: wegen U-Bahn-Bauarbeiten Durchgang zur Rathausstr. nicht möglich	2:inwork 10411,12471 10422,12395
 B96a - Flughafen Berlin-Brandenburg: Abschnitt führt durch Sicherheitsbereich des alten Flughafens	2:inwork 18578,-1538 18680,-1506 18798,-1581 18866,-1674
 Am Pankepark: Bauarbeiten, gesperrt	2:inwork 8152,14130 8246,14184
@@ -2260,7 +2271,7 @@ Markobrunner Str.	1 4374,7016 4462,7137 4593,7167
 Deidesheimer Str.	1 4973,7531 4785,7518 4616,7563 4486,7597
 Landauer Str.	1 4578,7358 4786,7327
 Eschenstr. (Friedenau)	1 5069,7498 5148,7500 5188,7536
-(Zur Dillenburger Str.)	1 3837,6926 3964,6928 4000,6852
+(Zur Dillenburger Str.)	1 3837,6926 3964,6928 3981,6850
 Dillenburger Str.	1 3947,6814 3837,6926
 Drängelgitter	BNP:5:-165 3597,7192
 Am Wieselbau	1 310,5084 310,4924

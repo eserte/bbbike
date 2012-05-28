@@ -491,7 +491,7 @@ Egidysteg: eng, Fuﬂg‰nger	q3 3124,22198 3134,22153
 (Mehrower Allee, Unterf¸hrung zum S-Bahnhof): Rampe, Fuﬂg‰nger	q4 20547,17084 20533,17051 20439,17103
 Altvaterstr.: Fuﬂg‰nger, Bordsteine	q2 -3117,3107 -3170,3070 -3223,3034
 #: note: laut Luftbild
-Im Gestell: Fuﬂg‰nger	q1 371,4453 275,4378
+Im Gestell: Fuﬂg‰nger	q1 371,4453 267,4375
 Heinitzweg: Fuﬂg‰nger	q2 10329,1077 10379,1097
 Haewererweg: enge Durchfahrt, Bordstein	q1 12125,1282 12097,1243
 (Weichselstr. - Sasarsteig): Spielplatz	q3 12330,8636 12303,8605 12170,8548
@@ -1211,6 +1211,19 @@ Vergissmeinnichtweg: Bodenschwellen	q1 21582,185 21608,85
 (Bersarinplatz - Thaerstr.): Fuﬂg‰nger, Bordstein	q2 13747,12642 13761,12690
 #: XXX_prog BS zur Thaerstr.
 (Thaerstr. - Bersarinplatz): Fuﬂg‰nger, Bordstein	q2 13761,12690 13727,12642
+Ottmachauer Steig: eng, Fuﬂg‰nger, einzelne Stufen vor Hauseing‰ngen	q3 -369,4631 -337,4657 -424,4717 -435,4687
+#: XXX_prog BS am Sackgassenhammer
+Alsbacher Weg: Bordstein	q1 -824,4682 -831,4636
+#: note: offiziell nur f¸r Fuﬂg‰nger
+Rauweilersteig: Fuﬂg‰nger	q1 -580,3912 -545,3919 -429,4043
+Zinnowweg: Bordsteine	q2 -92,3724 -87,3677
+Hegauer Weg: Rampe	q4 -19,2469 -22,2484
+#: XXX_prog BS an Klistostr. (2x)
+Hoffbauerpfad: gemeinsamer Rad- und Gehweg, Bordsteine	q2 550,1358 464,1246 422,1191
+Hoffbauerpfad: gemeinsamer Rad- und Gehweg	q1 214,969 333,1104
+#: XXX_prog BS zumindest am Ramsteinweg
+(Ramsteinweg - AndrÈezeile): gemeinsamer Rad- und Gehweg, Bordsteine	q2 755,632 781,693
+(Feldspatweg - Parksiedlung Spruch): eng	q2 10907,1651 10895,1698 10904,1733 10968,1753
 #
 ######################### User Contributions #################################
 # 
@@ -1243,8 +1256,8 @@ S¸ltstr.: enge Straﬂe, beidseitiges Parken	q1 12094,15598 12171,15737 12247,1586
 #: by: frau heilmann:
 Junker-Jˆrg-Str.: eng, parkende Autos	q1 18447,8818 18471,8957 18511,9185 18545,9395
 #: by: Thomas (nawrot):
-#: XXX wo genau sind die Bodenschwellen?
-Windsteiner Weg: Bodenschwellen	q1 914,598 856,546 790,527 712,517 635,511 585,505 501,493 284,470
+#: confirmed_by: srt
+Windsteiner Weg: Bodenschwellen	q1 501,493 284,470
 #: by: Fodor (sutyi):
 Liviusstr.: eng, parkende Autos	q1 10743,4515 10499,4542 10453,4518
 #: by: anonymous vvv
@@ -1265,7 +1278,7 @@ Engadiner Weg: enge Straﬂe, evtl. Gegenverkehr	q1 3716,2063 3818,2070 3851,2148 
 #: by: Wolfram Zimmermann:
 Am Triftpark: Temposchwellen	q2 4450,20388 4407,20412 4386,20444 4407,20482 4436,20531 4498,20515
 #: by: Claus Zingel:
-Eschershauser Weg: parkende Autos, un¸bersichtlich	q1 -190,4776 -146,4814 -97,4849 -48,4888 10,4932 118,4951
+Eschershauser Weg: parkende Autos, un¸bersichtlich	q1 -190,4776 -146,4814 -97,4849 -48,4888 10,4932 110,4950
 #: by: Zappel (Mrs Marple):
 Begasstr.: eng	q1 6275,7004 6414,7009
 #: by: Martina Urban: vvv
@@ -2187,8 +2200,7 @@ Stadtilmer Weg: enge Straﬂe	q1 6515,1010 6495,915 6592,882 6779,816 6841,793
 L¸bener Weg: enge Straﬂe	q1 6403,18289 6353,18292 6314,18295 6227,18299 6131,18302 6045,18305
 Brusebergstr.: enge Straﬂe	q1 6060,18534 6045,18305 6086,18162 6115,18042 6145,18016 6307,18039 6383,18033
 #: by: ^^^
-#: by: Jonas Laehnemann:
-Hoffbauerpfad: schmaler Pfad	q2 214,969 333,1104
+#XXX del --- #: by: Jonas Laehnemann: --- Hoffbauerpfad: schmaler Pfad	q2 214,969 333,1104
 #: by: Juli (cellicatissimo...)
 Pl¸schowstr.: einige Fuﬂg‰nger	q1 242,3459 201,3764
 #: by: tyohre vvv
@@ -2418,7 +2430,7 @@ Nidwaldener Zeile: enge Straﬂe	q1 3581,2211 3581,2125 3581,2105
 #: note: nachts "q4" wegen fehlender Beleuchtung und B‰umen
 (Marthastr. - Dietzgenstr.): einige B‰ume auf dem Weg	q1 10383,19911 10167,19797
 #: by: birgit (...knabe)
-Lindenfelser Weg: Fuﬂg‰nger, Bordsteinkanten am Hirschhorner Weg	q1 -963,4869 -857,4725 -816,4668 -753,4578 -690,4519 -649,4484 -638,4413 -595,4385 -548,4326 -420,4159
+Lindenfelser Weg: Fuﬂg‰nger, Bordsteinkanten am Hirschhorner Weg	q1 -963,4869 -857,4725 -824,4682 -753,4578 -690,4519 -649,4484 -638,4413 -595,4385 -548,4326 -420,4159
 #: by: anonymous
 Pertisauer Weg: enge Straﬂe	q1 6199,1104 6176,1023 6167,933 6163,822 6186,652
 #: by: Michael Rehfeldt
@@ -2499,11 +2511,13 @@ Beerbaumstr.: enge Straﬂe	q0- 15692,24040 15730,24051 15759,24033 15843,23980 15
 #: note: Das hier ist ein Pseudo-Eintrag, um das Routing davon abzuhalten, diese Straﬂe zu w‰hlen.
 Ossietzkyplatz: Parkplatz	q4 10249,19541 10215,19532 10228,19480
 #: by: Jan Kretzschmar vvv
-#: corrected_by: srt/policy (q4 -> q2)
-Heppenheimer Weg: schmaler Weg, Fuﬂg‰nger	q2 -500,4409 -459,4422 -404,4442 -349,4466 -283,4495 -227,4538
-Viernheimer Weg: schmaler Weg, Fuﬂg‰nger	q2 -311,4637 -354,4603 -401,4572 -446,4552 -493,4529 -548,4511
-Jugenheimer Weg: schmaler Weg, Fuﬂg‰nger	q2 -517,4463 -472,4476 -424,4495 -376,4521 -319,4550 -268,4588
-Grumbacher Weg: schmaler Weg, Fuﬂg‰nger	q2 -531,4599 -591,4558
+#: corrected_by: srt/policy (q4 -> q3)
+#: note: Bordsteine an so gut wie jeder Kreuzung vvv
+Heppenheimer Weg: schmaler Weg, Fuﬂg‰nger, Bordsteine	q3 -500,4409 -459,4422 -404,4442 -349,4466 -283,4495 -227,4538
+Viernheimer Weg: schmaler Weg, Fuﬂg‰nger, Bordsteine	q3 -311,4637 -354,4603 -401,4572 -446,4552 -493,4529 -548,4511
+Jugenheimer Weg: schmaler Weg, Fuﬂg‰nger, Bordsteine	q3 -517,4463 -472,4476 -424,4495 -376,4521 -319,4550 -268,4588
+Grumbacher Weg: schmaler Weg, Fuﬂg‰nger, Bordsteine	q3 -531,4599 -591,4558
+#: note ^^^
 #: by: ^^^
 #: by: jan (...matrix): vvv
 #: XXX_prog: Gegenrichtung ist durch 1s:q2 abgedeckt, sollte besser gelˆst sein...
@@ -2517,7 +2531,7 @@ Straﬂe 245 (Weiﬂensee): enge Straﬂe	q1 13590,17368 13271,17589
 Forster Str. (Hellersdorf): enge Straﬂe	q0- 25237,14627 25365,14667 25397,14563 25418,14538
 #: by: katrin peters:
 #: corrected_by: srt/policy (q2 -> q1)
-Deisterpfad: Fuﬂg‰nger	q1 -17,5066 -18,5083 -21,5099
+Deisterpfad: Fuﬂg‰nger	q1 -17,5066 -18,5083 -21,5104
 #: by: anonymous:
 Tessiner Weg: enge Straﬂe	q1 7077,17186 7184,17208
 #: by: anonymous:
@@ -2532,10 +2546,10 @@ Rˆtheweg: Fuﬂg‰nger	q1 -1444,3655 -1488,3750 -1550,3883 -1554,3889 -1624,3956
 Slatdorpweg: eng	q2 -1637,3596 -1495,3509 -1478,3498
 #: note: und Trampelpfad, aber bereits in qualitaet_s abgehandelt
 (G‰nsebl¸mchenweg - Parkplatz): Bordstein	q3 -1618,2137 -1612,2123
-Sprungschanzenweg: relativ enge Straﬂe	q1 577,5258 158,5103
+Sprungschanzenweg: relativ enge Straﬂe	q1 577,5258 175,5126 144,5102
 #: note: "An der Wendeplatte"
-Altenauer Weg: Bordsteinkante	q2 5419,1395 5435,1390
-Ladenstr.: Einkaufsstraﬂe, viele Fuﬂg‰nger	q4 374,4779 171,4677
+Altenauer Weg: Bordsteinkante	q2 5406,1400 5435,1390
+Ladenstr.: Einkaufsstraﬂe, viele Fuﬂg‰nger, Radfahren verboten	q4 374,4779 169,4676
 #: note: "Angabe zur eingeschr‰nkten Geschwindigkeit ist meine Empfehlung, man KANN auch schneller, aber es ist dann nicht toll (parkende Autos, Seitenstraﬂen, bisschen wellig, bisschen eng). F¸r PKW ist hier Tempo 30."
 Gelfertstr.	q0- 2030,5833 1980,5663 1933,5483 1965,5337 1964,5196 1964,5070 1969,4978 1995,4947 2025,4935 2081,4940 2109,4929 2135,4903 2169,4854
 #: by: ^^^

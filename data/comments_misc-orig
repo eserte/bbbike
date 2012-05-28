@@ -811,6 +811,11 @@ Zugang zum Bad	culdesac_pseudo 7344,13435
 	culdesac 8191,20622
 #: XXX möglicherweise "pseudo", wenn ein Durchgang zur Straße 4 existiert
 	culdesac_pseudo -4175,16573
+	culdesac 186,4413
+	culdesac 118,4332
+	culdesac_pseudo -1121,1605
+	culdesac_pseudo -1054,1616
+	culdesac 11200,1677
 #: section ^^^
 ######################################################################
 # busroute
@@ -862,7 +867,7 @@ Bus 245	busroute_N 4598,12501 4658,12450 4819,12338 4981,12252
 Bus 309	busroute_N 3546,10962 3827,10980 3942,11010 3975,11087
 Bus 139	busroute_N 2340,11045 2346,11147 2272,11074 2252,11037
 Bus 100, ...	busroute_N 5356,11500 5587,11397 5666,11362 5565,11147 5542,11075 5590,11118 5698,11333 5666,11362
-Bus 282	busroute_N 4000,6852 3964,6928 3837,6926 3947,6814
+Bus 282	busroute_N 3981,6850 3964,6928 3837,6926 3947,6814
 Bus 170	busroute_N 5681,5743 5581,5741 5465,5726 5290,5704 5233,5698 5124,5750 4991,5531 4911,5428 4869,5386 4821,5345
 Bus 184	busroute_N 7946,7411 7914,7364 7894,7296 7921,7288 7950,7279 7973,7295
 Bus 184	busroute_N 8661,6169 8830,6145 8944,6127 8952,6109 8976,6094 8996,6106 9003,6121 9212,6096
@@ -935,11 +940,11 @@ Bus M37	busroute_N -5282,12730 -5307,12737 -5480,12793 -5594,12832 -5706,12869 -
 Bus 318	busroute_N -7232,445 -7365,371 -7449,348 -7474,341 -7587,312 -7639,312 -7710,313 -7732,313
 Bus 112	busroute_N -3360,2917 -3452,2868 -3509,2817 -3617,2671 -3686,2579 -3692,2549 -3709,2517 -3725,2475 -3726,2457 -3742,2287 -3689,2267 -3519,2180 -3568,2382 -3634,2488 -3692,2549
 Bus 115, Bus 118	busroute_N -1281,2074 -1377,2077 -1463,2080 -1537,2152 -1596,2307 -1604,2324 -1646,2434
-Bus 115	busroute_N 605,2490 422,2395 294,2322 174,2257 104,2220 26,2179 -34,2147 -145,2089 -228,2045 -285,2015 -343,1983 -470,1912 -535,1875 -652,1823 -729,1789 -772,1769 -846,1737 -910,1733 -951,1730 -1062,1675 -1133,1640 -1446,1487 -1544,1448
-Bus 101	busroute_N 85,1322 150,1251 155,1228 194,1055 214,969 230,899 254,792 284,470 286,452 264,227 255,152
+Bus 115	busroute_N 605,2490 421,2401 290,2328 169,2264 96,2225 23,2185 -38,2152 -145,2089 -228,2045 -285,2015 -343,1983 -468,1919 -541,1883 -649,1831 -726,1799 -775,1781 -837,1753 -908,1749 -971,1738 -1064,1696 -1134,1656 -1446,1487 -1544,1448
+Bus 101	busroute_N 85,1322 150,1251 155,1228 194,1055 214,969 230,899 247,822 254,792 284,470 286,452 264,227 255,152
 Bus 118	busroute_N 669,3119 630,2998 589,2925 751,2860
 Bus 118	busroute_N 971,3534 923,3585 891,3828 892,3907 861,3996 806,4130 754,4220 666,4339 519,4547 418,4696 374,4779 346,4833
-Bus 285	busroute_N 922,4910 928,4996 964,5141 1000,5184 1081,5260 1102,5280 1131,5304 1212,5353
+Bus 285	busroute_N 922,4910 928,4996 964,5141 1000,5184 1090,5268 1114,5290 1139,5308 1212,5353
 Bus M19, ...	busroute_N 1074,8470 1043,8550 972,8626 930,8746 912,8895 936,8933 901,8969 884,8954 870,8939 912,8895
 Bus 349	busroute_N 676,9104 693,9129 890,9399 1019,9573 1117,9706 1238,9869 1344,10012 1457,10168
 Bus 284, Bus 380	busroute_N 5317,2345 5406,2110 5376,2097 5431,1956 5452,1940 5396,1774 5338,1612 5304,1523 5275,1446 5221,1307 5201,1227 5178,1123 5162,1110 5162,1110 5162,1098 5187,1059 5204,1057 5204,1057
@@ -1108,9 +1113,7 @@ ausgeschildert nach Charlottenhof	CP2; -14500,-2012 -14536,-1943
 ausgeschildert mit Tafel "Windfeld Randowhöhe" und "Wolliner Weg"	CP2; 52527,98581 52471,98189
 ausgeschildert zum Sportplatz	CP2; 13535,10184 13371,9974
 Route nach Prenzlau ausgeschildert	CP2; 50420,96012 50188,95514
-#: by: Martin Rehfeld:
-#: note: Die Straße liegt in dem für öffentlichen Kraftverkehr gesperrten Areal "Waldsiedlung Krumme Lanke"
-Privatstraße	CS -519,4737 -552,4698 -581,4662
+#XXX del (jetzt in radwege-orig --- #: by: Martin Rehfeld: --- #: note: Die Straße liegt in dem für öffentlichen Kraftverkehr gesperrten Areal "Waldsiedlung Krumme Lanke" --- Privatstraße	CS -519,4737 -552,4698 -581,4662
 #: by: Gero:
 #: XXX_indoor: why is only the path Czeminskistr. - Kolonnenstr. marked with this, why not just a CP2; without the first point?
 als Julius-Leber-Brücke ausgeschildert	CP; 7604,8927 7563,8871 7548,8879
@@ -1147,16 +1150,18 @@ Eingang Columbiadamm/Golßener Str. kann nachts nicht als Ausgang benutzt werden	
 Weg zwischen Habermannsee und Butzensee	CS 23522,10456 23468,10423 23431,10435 23193,10426 23024,10455 22978,10451
 Mollergasse: Straße ist nicht ausgeschildert	CS 9892,12596 9894,12564
 Schmellwitzer Weg: Privatstraße	CS 20005,11383 19984,11319 19801,11360
-Altenauer Weg: Zufahrt wegen Hecke schwer erkennbar	CP2; 5435,1390 5419,1395
+Altenauer Weg: Zufahrt wegen Hecke schwer erkennbar	CP2; 5435,1390 5406,1400
 #: by: Klaus Didrich:
 (Celsiusstr. - Müllerstr.): S-Bahnunterführung mit Rampen	CS 4311,746 4225,753 4250,763
 #: by: a.fuchs:
 Grenzstr. - Tuchmacherstr.: "Eingang" zum Fußweg kann leicht verpasst werden, nur eine schmale Lücke zwischen den Grundstücken	CP2; -10412,-1218 -10423,-1248
 #: by: MichaelM vvv
 #: confirmed_by: osm vvv
-Privatstraße	CS -253,5049 -225,4949 -190,4878 -146,4814
+#: confirmed_by: srt (added "Anlieger frei")
+Privatstraße, Anlieger frei	CS -253,5049 -225,4949 -190,4878 -146,4814
 Privatstraße	CS -188,5061 -145,4916 -97,4849
-Privatstraße	CS -114,5077 -85,4949 -48,4888
+#: confirmed_by: srt (added "Anlieger frei")
+Privatstraße, Anlieger frei	CS -114,5077 -85,4949 -48,4888
 #: confirmed_by ^^^
 #: note: "hier sind Einfahrten mit abgesenkten Bordsteinen vorhanden um auf den Gehweg rauf und wieder runter zu kommen."
 Pflanzenkübel am besten auf dem linken Gehweg umfahren	CS; -1604,2324 -1401,2391 -1248,2451
@@ -1329,3 +1334,6 @@ Vergissmeinnichtweg: nur für Berechtigte	CS 21582,185 21608,85
 Kutscherweg: Privatstraße	CS -13620,-131 -13700,-106 -13775,-85
 Schmiedegasse: Privatstraße	CS -13627,-150 -13660,-163 -13764,-140 -13785,-125
 Zur Alten Flussbadeanstalt: nicht ausgeschildert	CP2; 16432,9673 16389,9633
+Ausgeschildert als "Zum Deisterpfad"	CP2; -21,5104 -18,5083
+vor der Bahnbrücke rechts abbiegen	CP; -287,2583 -197,2634 -174,2616
+hinter der Bahnbrücke links abbiegen	CP; -155,2658 -197,2634 -174,2616
