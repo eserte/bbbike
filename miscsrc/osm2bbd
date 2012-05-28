@@ -1224,6 +1224,8 @@ for my $osm_file (@osm_files) {
 			    $set_handicap->('q2', $label . ($lang eq 'en' ? ', cycling permissive' : ', Radfahren geduldet'));
 			} elsif ($bicycle_tag eq 'no') {
 			    $set_handicap->('q4', $label . ($lang eq 'en' ? ', cycling not allowed' : ', Radfahren nicht erlaubt, ggfs. schieben'));
+			} elsif ($bicycle_tag eq 'dismount') {
+			    # Already handled above
 			} else {
 			    warn "Found unhandled bicycle=$bicycle_tag together with $highway_cat...\n";
 			}
