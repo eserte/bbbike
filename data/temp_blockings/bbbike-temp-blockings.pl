@@ -18661,7 +18661,7 @@ userdel	q4::inwork 21233,6096 20722,6971
 EOF
      },
      { from  => 1254641760, # 2009-10-04 09:36
-       until => 1356969600, # 2012-12-31 17:00
+       until => 1338587292, # 1356969600, # 2012-12-31 17:00
        text  => 'Berliner Str. (Pankow): Baustelle, Fahrtrichtung gesperrt (bis Ende 12/2012) stadteinwärts zwischen Breite Str. und Florastr. ',
        type  => 'handicap',
        source_id => 'IM_018078',
@@ -18988,9 +18988,9 @@ userdel	q4::temp 11275,8387 11230,8402
 userdel	q4::temp 11333,8582 11255,8591 11193,8568 11133,8560
 EOF
      },
-     { from  => 1304805600, # 2011-05-08 00:00
-       until => 1317506400, # 2011-10-02 00:00
-       text  => 'Flieth-Stegelitz: L24: Brücke über den Stierngraben bei Kaakstedt, LSA-Regelung, ab 18.7. Vollsperrung',
+     { from  => 1338760800, # 2012-06-04 00:00
+       until => 1339106399, # 2012-06-07 23:59
+       text  => 'Flieth-Stegelitz: L24: Brücke über den Stierngraben bei Kaakstedt, geplante Vollsperrung 05.06. - 07.06.12 ',
        type  => 'gesperrt',
        source_id => 'LS/O-SG33-E/11/044',
        data  => <<EOF,
@@ -19931,13 +19931,14 @@ EOF
      },
      { from  => 1314604800, # 2011-08-29 10:00
        until => 1346425200, # 2012-08-31 17:00
-       text  => 'Kastanienallee (Prenzlauer Berg): Bauarbeiten zwischen Oderberger Str. und Schönhauser Allee, Fahrbahn gesperrt, bis 31.08.2012 ',
+       text  => 'Kastanienallee (Prenzlauer Berg): Bauarbeiten zwischen Oderberger Str. und Schönhauser Allee, Fahrbahn manchmal gesperrt, bis 31.08.2012 ',
        type  => 'handicap',
        source_id => 'IM_017746',
        data  => <<EOF,
 #: note: am 2012-03-09 geprüft, Radfahrer konnten problemlos passieren
 #: note: am 2012-04-27 geprüft, Fahrbahn ist absperrt (nur die Straßenbahn wird durchgelassen), Radfahrer können nur den Gehweg benutzen
-userdel	q4::inwork 10723,14772 10838,14962
+#: note: am 2012-05-30 geprüft, Radfahrer konnten problemlos passieren
+userdel	q3::inwork 10723,14772 10838,14962
 EOF
      },
      { from  => 1295269680, # 2011-01-17 14:08
@@ -20205,6 +20206,33 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork 10893,14705 11101,14768
+EOF
+     },
+     { from  => 1338778800,
+       until => 1338919200,
+       text  => 'Vollsperrung der Pankgrafenstraße im Bereich der Pankgrafenbrücke am 5. Juni 2012',
+       type  => 'gesperrt',
+       source_id => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1206/nachricht4684.html',
+       data  => <<EOF,
+userdel	2::inwork 13953,23497 13976,23490 14173,23426
+EOF
+     },
+     { from  => 1338204660, # 2012-05-28 13:31
+       until => 1341068400, # 2012-06-30 17:00
+       text  => 'Behrenstr. (Mitte): Baustelle, Fahrtrichtung gesperrt (bis Ende 06/12) Richtung Friedrichstr. zwischen Mauerstr. und Glinkastr. ',
+       type  => 'handicap',
+       source_id => 'IM_018829',
+       data  => <<EOF,
+userdel	q4::inwork; 9064,12156 9164,12172
+EOF
+     },
+     { from  => 1338283200, # 2012-05-29 11:20
+       until => 1343664000, # 2012-07-30 18:00
+       text  => 'Klingsorstr. (Steglitz): Fahrbahnschäden, Vollsperrung in beiden Richtungen zwischen Hindenburgdamm und Birkbuschstr., bis Ende Juli 2012 ',
+       type  => 'handicap',
+       source_id => 'IM_018838',
+       data  => <<EOF,
+userdel	q4::inwork 4932,4152 5068,4259
 EOF
      },
     );

@@ -118,6 +118,13 @@ Fahrradstraße in der Lauenburger Str.	?::projected 5870,4992 5905,5088 5927,5182
 #: section ignorieren vvv
 #: section Straßen in Bau und Planung vvv
 # 
+#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1205/nachricht4681.html vvv
+#: next_check: 2012-06-30 vvv
+Leipziger/Jerusalemer: "Schließung der Mittelüberfahrt": auch für Radfahrer relevant? Was wird aus der Ampel?	?::inwork 9898,11679 9981,11689 10213,11728
+Jerusalemer: "bauliche Anpassung"	?::inwork 9981,11689 9990,11571
+#: next_check ^^^
+#: by ^^^
+# 
 #: by: http://www.berlin.de/ba-neukoelln/presse/archiv/20120427.1445.369492.html vvv
 #: XXX Radwegesanierung in Neukölln vvv
 #: XXX zwischen Gradestr. und Hattenheimer Str.
@@ -209,6 +216,8 @@ Radweg Berlin-Leipzig, Abschnitt Yorckstr. - Monumentenstr.: wird bis Ende 2013 
 # 
 #: by: http://www.stadtumbau-berlin.de/Fotos.4730.0.html
 #: next_check: 2012-04-01
+#: XXX Name wahrscheinlich Hertha-Block-Steg
+#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4045&options=4
 Ebersstr. - Park GASAG Nordspitze: Steg/Übergang über die S-Bahn wird 2012 realisiert	?::projected 7329,8571 7304,8611
 # 
 #: XXX_osm: fehlt bei osm komplett
@@ -354,9 +363,6 @@ Schönholzer Str.: werden hier Radstreifen markiert?	?::inwork 10089,18180 10054,
 #: next_check: 2012-05-01
 An den Eldenaer Höfen: wo genau wird die Straße liegen? Qualität?	?::inwork 14431,12903 14476,12836
 # 
-#XXX del --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1104/nachricht4274.html --- #: XXX die Straße wird Radstreifen haben --- #: XXX neue Ampel an der neuen Kreuzung (wahrscheinlich anstelle der alten Fußgängerampel) --- #: last_checked: 2011-08-19 --- #: next_check: 2012-04-01 --- Axel-Springer-Str.: Verbindung zum Spittelmarkt	?::inwork 10166,11592 10213,11728
-#XXX del --- #: last_checked: 2011-10-31 --- #: next_check: 2011-11-15 --- #: XXX zur Zeit (2011-10-31) laufen noch Asphaltierungsarbeiten --- Radstreifen in der Wilhelmstr.: wird der Rest noch realisiert?	?::inwork 9234,11056 9199,11166
-#
 #: by: http://www.moabitonline.de/1637
 #: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20110224.1350.332744.html
 #: last_checked: 2011-08-13
@@ -641,7 +647,9 @@ Ottomar-Geschke-Str.: es scheint ein Zweirichtungsweg zu existieren. Prüfen!	? 2
 # 
 #: last_checked: 2012-05-28
 #: next_check: 2013-05-15
-Am Hegewinkel: neues Wohngebiet entsteht, eventuell auch neue Straßen?	?::inwork 759,5174 858,5085
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/22re.pdf/file?y=2012
+#: XXX fehlt in Berlin.coords.data
+Carpinusweg: Am Hegewinkel entsteht ein neues Wohngebiet, eventuell entsteht diese Straße hier?	?::inwork 759,5174 858,5085
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/21re.pdf/file?y=2012
 Rüdickenstr./Matenstr.: wird dieser Straßenabschnitt "eingezogen"?	? 17486,17266 17582,17335
