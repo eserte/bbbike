@@ -28,7 +28,7 @@ use lib (
 use BBBikeTest qw(gpxlint_string);
 use File::Temp qw(tempfile);
 
-plan tests => 25;
+plan tests => 28;
 
 use_ok 'GPS::GpsmanData';
 
@@ -188,6 +188,45 @@ wpt1		N52 30 00.0	E13 30 00.0	symbol=small_city	GD110:class=|C$
 wpt2		N52 36 00.0	E13 35 59.9	symbol=small_city	GD110:class=|C$
 EOF
     is $gpsman_rte, $expected;
+}
+
+{
+    my $rte_sample_file = <<'EOF';
+% Written by GPSManager 02-Jun-2012 12:25:01 (CET)
+% Edit at your own risk!
+
+!Format: DMS 2 WGS 84
+!Creation: no
+
+!R:	frzbhlzost 33		width=2	colour=#48C1BC	mapbak=
+Neue Grunstr.		N52 30 38.6	E13 24 21.3	symbol=dot	GD110:dtyp=|c"	GD110:class=|C"	GD110:colour=|c@	GD110:attrs=|C!	GD110:subclass=|c|R%!|C!|c!~p|Z|Z|c$|_%|c*!|_IWy|C)	GD110:depth=QY|c%|_i	GD110:state=|cAA	GD110:country=|cAA	GD110:ete=~|Z|Z|c!!	GD110:temp=QY|c%|_i	GD110:time=~|R$|Z	GD110:cat=|c!!
+!RS:			GD210:class=|c$!
+WP-000000297		N52 30 40.5	E13 24 21.2	symbol=dot	GD110:dtyp=|c"	GD110:class=|C"	GD110:colour=|c@	GD110:attrs=|C!	GD110:subclass=|c|R%!|C!|c"~p|Z|Z|c$|_%|c*!|_aWw|C)	GD110:depth=QY|c%|_i	GD110:state=|cAA	GD110:country=|cAA	GD110:ete=~|Z|Z|c!!	GD110:temp=QY|c%|_i	GD110:time=~|R$|Z	GD110:cat=|c!!
+!NB:	Original name: 
+Original name: WP-000000000
+
+!RS:			GD210:class=|c$!
+<- -Fischerinsel)		N52 30 42.6	E13 24 20.7	symbol=dot	GD110:dtyp=|c"	GD110:class=|C"	GD110:colour=|c@	GD110:attrs=|C!	GD110:subclass=|c|R%!|C!|c!~p|Z|Z|c$|_%|c*!|_||Wq|C)	GD110:depth=QY|c%|_i	GD110:state=|cAA	GD110:country=|cAA	GD110:ete=~|Z|Z|c!!	GD110:temp=QY|c%|_i	GD110:time=~|R$|Z	GD110:cat=|c!!
+!RS:			GD210:class=|c$!
+Fischerinsel [Woh ->		N52 30 44.2	E13 24 18.5	symbol=dot	GD110:dtyp=|c"	GD110:class=|C"	GD110:colour=|c@	GD110:attrs=|C!	GD110:subclass=|c|R%!|C!|c!~p|Z|Z|c$|_%|c*!|C2|_WT|C)	GD110:depth=QY|c%|_i	GD110:state=|cAA	GD110:country=|cAA	GD110:ete=~|Z|Z|c!!	GD110:temp=QY|c%|_i	GD110:time=~|R$|Z	GD110:cat=|c!!
+EOF
+    my($tmpfh,$tmpfile) = tempfile(SUFFIX => '.rte', UNLINK => 1)
+	or die $!;
+    print $tmpfh $rte_sample_file
+	or die $!;
+    close $tmpfh
+	or die $!;
+
+    my $gps = GPS::GpsmanData->new;
+    $gps->load($tmpfile);
+    pass 'Loaded gpsman route file';
+
+    is scalar @{ $gps->Track }, 4;
+
+    my $gps_multi = GPS::GpsmanMultiData->new;
+    $gps_multi->load($tmpfile);
+    my $gpx = $gps_multi->as_gpx(symtocmt => 1);
+    gpxlint_string($gpx);
 }
 
 

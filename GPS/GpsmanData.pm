@@ -589,9 +589,17 @@ sub parse {
 	} elsif (/^!Position:\s+(\S+)$/) {
 	    my $pos_format = $1;
 	    $self->change_position_format($pos_format);
-	} elsif (/^!NB:/) {
-	    # ignore comment
+	} elsif (/^!NB/) {
+	    # overread text remarks
+	    while($i <= $#lines) {
+		last if $lines[$i] eq '';
+		$i++;
+	    }
 	} elsif (/^!/) {
+	    if (/^!RS:/) {
+		# currently ignored
+		next;
+	    }
 	    if ($multiple && @data) {
 		# we already have data for one track/route/...
 		if ($beginref) {
