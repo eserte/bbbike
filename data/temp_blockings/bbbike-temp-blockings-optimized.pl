@@ -1427,6 +1427,19 @@ userdel	q4::inwork 11436,14741 11271,14755
          'data' => 'userdel	q4::inwork 4932,4152 5068,4259
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => 1341352799,
+         'text' => 'Fanmeile EM 2012: Sperrung der Straße des 17. Juni und umliegenden Straßen, bis 3. Juli 2012',
+         'from' => 1338750610,
+         'id' => 2341,
+         'data' => 'userdel	2::temp 8573,12325 8540,12420
+userdel	2::temp 8089,12190 8214,12205 8538,12245 8610,12254
+userdel	2::temp 8354,12416 8546,12279 8538,12245 8600,12165 8595,12066
+userdel	2::temp 7383,12095 7816,12150 8055,12186 8119,12414
+userdel	2::temp 8546,12279 8570,12302
+',
+         'type' => 'gesperrt'
        }
      
 );
