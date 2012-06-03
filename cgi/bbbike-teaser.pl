@@ -21,7 +21,7 @@ sub teaser {
 
     $teasers_optional{"de"}  = [
 				'teaser_link',
-				'teaser_collecting_tracks',
+				#'teaser_collecting_tracks',
 			       ];
     $teasers_mandatory{"de"} = [
 				#teaser_maintenance(), # schaltet sich selbstständig ab
