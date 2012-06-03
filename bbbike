@@ -9613,7 +9613,8 @@ sub load_save_route {
 	     ($save ?
 	      (-defaultextension => ".$ext") :
 	      (-filetypes => [[M"Route-Dateien", '.' . $bbbike_route_ext],
-			      [M"GPS-Tracks", ['.tracks','.trk']],
+			      [M"GPSMan-Tracks", ['.tracks','.trk']],
+			      [M"GPSMan-Routen", ['.rte']],
 			      [M"G7toWin", ['.g7t', '.G7T']],
 			      [M"MPS-Tracks", ['.mps', '.MPS']],
 			      [M"Alle Dateien",  '*']]),
