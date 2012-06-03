@@ -25,8 +25,9 @@ sub teaser {
 			       ];
     $teasers_mandatory{"de"} = [
 				#teaser_maintenance(), # schaltet sich selbstständig ab
-				teaser_sternfahrt_adfc(), # schaltet sich selbstständig ab
-				teaser_kreisfahrt_adfc(), # schaltet sich selbstständig ab
+				#teaser_sternfahrt_adfc(), # schaltet sich selbstständig ab
+				#teaser_kreisfahrt_adfc(), # schaltet sich selbstständig ab
+				teaser_android0(),
 				(1 ? teaser_perltk_newrelease() : teaser_perltk()),
 				teaser_other_cities(),
 				teaser_beta(),
@@ -38,8 +39,9 @@ sub teaser {
     $teasers_optional{"en"} = [],
     $teasers_mandatory{"en"} = [
 				#teaser_maintenance(), # schaltet sich selbstständig ab
-				teaser_sternfahrt_adfc(), # schaltet sich selbstständig ab
-				teaser_kreisfahrt_adfc(), # schaltet sich selbstständig ab
+				#teaser_sternfahrt_adfc(), # schaltet sich selbstständig ab
+				#teaser_kreisfahrt_adfc(), # schaltet sich selbstständig ab
+				teaser_android0(),
 				(1 ? teaser_perltk_newrelease() : teaser_perltk()),
 				teaser_other_cities(),
 				#teaser_beta(), # XXX There's no beta version in English yet!
@@ -270,6 +272,27 @@ EOF
     } else {
 	();
     }
+}
+
+sub teaser_android0 {
+    my $url = "https://play.google.com/store/apps/details?id=org.selfip.leinad.android.bbbike";
+    if ($lang eq 'en') {
+	<<EOF;
+<div class="teaser">
+  <a href="$url"><b>BBBike for Android phones</b></a> @{[ _teaser_beta_html() ]}
+</div>
+EOF
+    } else {
+	<<EOF;
+<div class="teaser">
+  <a href="$url"><b>BBBike auf Android</b></a> @{[ _teaser_beta_html() ]}
+</div>
+EOF
+    }
+}
+
+sub _teaser_beta_html {
+    q{<span style="font:xx-small sans-serif; border:1px solid red; padding:1px 2px 0px 2px; background-color:yellow; color:black;">BETA</span>};
 }
 
 1;
