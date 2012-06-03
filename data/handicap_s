@@ -20,7 +20,7 @@ Rathausstr. zwischen Breite Str. und Poststr.: Fahrbahn wegen Brückenbauarbeiten
 Rathausstr. zwischen Breite Str. und Poststr.: Fahrbahn wegen Brückenbauarbeiten gesperrt	q4::inwork 10422,12395 10476,12432
 Alte Jakobstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10436,11344 10244,11160
 Elcknerplatz, Borgmannstr.: Bauarbeiten, Einbahnstraße	q4::inwork; 22428,6063 22478,6041 22544,6037 22539,5956
-Kantstr.: Bauarbeiten am Zoofenster, Fahrbahn Richtung Westen gesperrt	q4::inwork; 5652,11004 5613,10963
+Kantstr.: Bauarbeiten am Zoofenster, Fahrbahn Richtung Westen gesperrt	q4::inwork; 5652,11004 5613,10963 5494,10973
 Burgstraße: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 10166,12777 10132,12941
 Anna-Louisa-Karsch-Str.: vor der Friedrichsbrücke auf den linken Gehweg fahren	q3::inwork; 10264,12826 10166,12777
 Am Zirkus: Baustelle, Einbahnstraße	q3::inwork; 9170,13031 9239,12923
@@ -957,6 +957,11 @@ Hoffbauerpfad: gemeinsamer Rad- und Gehweg, Bordsteine	q2 550,1358 464,1246 422,
 Hoffbauerpfad: gemeinsamer Rad- und Gehweg	q1 214,969 333,1104
 (Ramsteinweg - Andréezeile): gemeinsamer Rad- und Gehweg, Bordsteine	q2 755,632 781,693
 (Feldspatweg - Parksiedlung Spruch): eng	q2 10907,1651 10895,1698 10904,1733 10968,1753
+(Bleichröderpark): Fußgänger	q1 10545,18143 10487,18270
+Rampe	q2 10503,19371 10489,19406
+(Blaubeerweg - Picardieweg): eng	q2 10932,22184 10993,21948
+Schillingweg: eng, parkende Autos	q1 11259,23928 11224,23879 11190,23832 11165,23796 11128,23746 11101,23708 10855,23403 10717,23258 10700,23251 10629,23222 10396,23128 9890,22932
+(Tomatenweg - Straße 175): sehr eng	q3 12500,22895 12515,22898 12532,22902
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q3 11805,19071 11895,19183 11927,19308
 Ebersstr.: Schüler	q2 7245,8583 7292,8631
 Straße 103 (Niederschönhausen): enge Straße	q1 10914,20065 11051,19789
@@ -1386,7 +1391,7 @@ Rosenorter Steig: enge Straße	q0 -1349,23497 -1451,23525 -1535,23575 -1617,23624
 Straße 40 (Blankenburg): enge Straße	q1 14893,20583 14945,20748 15035,21026
 (Mörchinger Str. - Berliner Str.): Fußgänger	q2 1393,3183 1388,3197 1338,3300
 Biesentaler Str.: Bodenschwellen	q1 9024,16855 9245,16758
-Chamissostr. (Französisch Buchholz): enge Straße	q1 12513,21857 12433,21880 12332,21910 12216,21945 12063,21991
+Chamissostr. (Französisch Buchholz): enge Straße	q0 12513,21857 12433,21880 12332,21910 12216,21945 12063,21991
 Tassostr.: enge Straße	q1 13630,15956 13621,15990 13625,16054 13642,16118 13659,16151 13645,16192 13679,16286
 An der Wildbahn: viele parkende Autos in enger Straße	q1 -1581,22553 -1447,22522 -1333,22495 -1267,22480 -1221,22468 -996,22416 -926,22399 -725,22355 -489,22295 -313,22233
 Wolmirstedter Weg: enge Straße	q1 -4143,15639 -4216,15635 -4283,15639
@@ -1394,7 +1399,7 @@ Landschöppenpfad: Bordsteine, Fußgänger	q2 12609,1780 12574,1866
 Pfarrer-Vogelsang-Weg: Bordsteine, Fußgänger	q2 12487,1727 12452,1808
 Hans-Fallada-Str.: enge Straße	q0 21928,13717 21960,13776 21977,13942 22007,14209
 Dudweilerstr.: enge Straße	q0 21766,13995 21809,13973 21885,13954 21977,13942 22042,13942 22118,13954
-Cevennenstr.: enge Straße	q1 11175,21571 11204,21567 11217,21565 11308,21550 11408,21537 11522,21519 11696,21493 11831,21469
+Cevennenstr.: enge Straße	q0 11175,21571 11204,21567 11217,21565 11308,21550 11408,21537 11522,21519
 Reihersteg: enge Straße	q1 22471,-591 22462,-671 22458,-742 22451,-927 22442,-1093
 Grässeweg: enge Straße	q1 -5510,13326 -5295,13415 -5217,13446
 Schieritzstr.: enge Straße	q1 12463,15774 12642,15668 12821,15565 12966,15478
@@ -1647,7 +1652,7 @@ Langenbeckplatz: enge Straße	q1 25030,9626 25095,9627 25086,9733 25020,9728 2503
 (Réaumurstr. - Fürstenstr., S-Bahnunterführung): Fußgänger	q3 4279,459 4218,439 4158,461 4136,505
 Beerbaumstr.: enge Straße	q0 15692,24040 15730,24051 15759,24033 15843,23980 15906,24088
 (Beerbaumstr. - Karower Chaussee): schmal	q2 15906,24088 15940,24142
-Ossietzkyplatz: Parkplatz	q4 10249,19541 10215,19532 10228,19480
+Ossietzkyplatz: Parkplatz	q4 10257,19542 10215,19532 10228,19480
 Heppenheimer Weg: schmaler Weg, Fußgänger, Bordsteine	q3 -500,4409 -459,4422 -404,4442 -349,4466 -283,4495 -227,4538
 Viernheimer Weg: schmaler Weg, Fußgänger, Bordsteine	q3 -311,4637 -354,4603 -401,4572 -446,4552 -493,4529 -548,4511
 Jugenheimer Weg: schmaler Weg, Fußgänger, Bordsteine	q3 -517,4463 -472,4476 -424,4495 -376,4521 -319,4550 -268,4588

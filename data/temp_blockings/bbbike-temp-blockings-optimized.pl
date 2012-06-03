@@ -942,18 +942,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        undef,
-       {
-         'until' => 1356994800,
-         'text' => 'Braunschweiger Str./Karl-Marx-Str.: Abbiegen nicht möglich (bzw. nur auf dem Gehweg) bis 31.12.2012',
-         'from' => 1284745737,
-         'id' => 2134,
-         'data' => 'userdel	3 13150,7254 13047,7234 13058,7165
-userdel	3 13058,7165 13047,7234 13150,7254
-userdel	3 13150,7254 13047,7234 13034,7319
-userdel	3 13034,7319 13047,7234 13150,7254
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1358,15 +1347,7 @@ userdel	q4::inwork 11436,14741 11271,14755
        undef,
        undef,
        undef,
-       {
-         'until' => 1338602400,
-         'text' => 'Vollsperrung der Bahnbrücke Karlshorst: 26. Mai 2012, 5 Uhr bis 2. Juni 2012, 4 Uhr (Sperrung der Fahrbahn)',
-         'from' => 1338001200,
-         'id' => 2330,
-         'data' => 'userdel	q4::inwork 18722,8582 18709,8423
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1341093600,
          'text' => 'Peace Wall/Friedensmauer; auf Gehweg ausweichen (bis Juli 2012)',
