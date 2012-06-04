@@ -2976,6 +2976,7 @@ sub make_crossing_choose_html {
 	    if ($use_select) {
 		$html .= "<option value=\"$_\">";
 	    } else {
+		$html .= "<label>";
 		$html .=
 		    "<input type=radio name=" . $type . "c " .
 			"value=\"$_\"";
@@ -2985,7 +2986,7 @@ sub make_crossing_choose_html {
 		$html .= "> ";
 	    }
 	    $html .= join("/", map { Strasse::strip_bezirk($_) } @kreuzung);
-	    $html .= "<br>" unless $use_select;
+	    $html .= "</label><br>" unless $use_select;
 	    $html .= "\n";
 	}
     }
@@ -3158,7 +3159,7 @@ EOF
 #  <option value="R2">@{[ M("benutzungspflichtige Radwege vermeiden") ]}
 #  </select></td></tr>-->
     print <<EOF;
-<tr><td>@{[ M("Ampeln vermeiden") ]}:</td><td><input type=checkbox name="pref_ampel" value="yes" @{[ $default_ampel?"checked":"" ]}></td>
+<tr><td><label for="pref_ampel">@{[ M("Ampeln vermeiden") ]}:</label></td><td><input type=checkbox name="pref_ampel" id="pref_ampel" value="yes" @{[ $default_ampel?"checked":"" ]}></td>
 EOF
     if ($include_outer_region) {
 	print <<EOF;
@@ -3167,7 +3168,7 @@ EOF
     }
     if (1) {
 	print <<EOF;
-<tr><td>@{[ M("Unbeleuchtete Wege vermeiden") ]}:</td><td><input type=checkbox name="pref_unlit" value="NL" @{[ $default_unlit?"checked":"" ]}></td>
+<tr><td><label for="pref_unlit">@{[ M("Unbeleuchtete Wege vermeiden") ]}:</label></td><td><input type=checkbox name="pref_unlit" id="pref_unlit" value="NL" @{[ $default_unlit?"checked":"" ]}></td>
 EOF
 	if ($include_outer_region) {
 	    print <<EOF;
@@ -3198,7 +3199,7 @@ EOF
 	$geo && $geo->can('skip_feature') && !$geo->skip_feature('faehren')
     }) {
 	print <<EOF;
-<tr><td>@{[ M("F‰hren benutzen") ]}:</td><td><input type=checkbox name="pref_ferry" value="use" @{[ $default_ferry?"checked":"" ]}></td></tr>
+<tr><td><label for="pref_ferry">@{[ M("F‰hren benutzen") ]}:</label></td><td><input type=checkbox name="pref_ferry" id="pref_ferry" value="use" @{[ $default_ferry?"checked":"" ]}></td></tr>
 EOF
     }
     if ($use_winter_optimization) {
@@ -3222,8 +3223,8 @@ EOF
     if ($use_fragezeichen) {
 	print <<EOF;
 <tr>
- <td>@{[ M("Unbekannte Straﬂen mit einbeziehen") ]}:</td>
- <td><input type=checkbox name="pref_fragezeichen" value=yes @{[ $default_fragezeichen?"checked":"" ]}></td>
+ <td><label for="pref_fragezeichen">@{[ M("Unbekannte Straﬂen mit einbeziehen") ]}:</label></td>
+ <td><input type=checkbox name="pref_fragezeichen" id="pref_fragezeichen" value=yes @{[ $default_fragezeichen?"checked":"" ]}></td>
 EOF
 	if (!$is_m) {
 	    print <<EOF;
