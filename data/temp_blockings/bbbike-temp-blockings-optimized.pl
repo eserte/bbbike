@@ -1394,20 +1394,12 @@ userdel	q4::inwork 11436,14741 11271,14755
          'text' => 'Sredzkistr. zwischen Schönhauser Allee und Knaackstr: Teile der Fahrbahn gesperrt, Ausweichen auf Gehweg',
          'from' => undef,
          'id' => 2337,
-         'data' => 'userdel	q4::inwork 10893,14705 11101,14768
+         'data' => '#: last_checked: 2012-06-05
+userdel	q4::inwork 10893,14705 11101,14768
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1206/nachricht4684.html',
-         'until' => 1338919200,
-         'text' => 'Vollsperrung der Pankgrafenstraße im Bereich der Pankgrafenbrücke am 5. Juni 2012',
-         'from' => 1338778800,
-         'id' => 2338,
-         'data' => 'userdel	2::inwork 13953,23497 13976,23490 14173,23426
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_018829',
          'until' => 1341068400,

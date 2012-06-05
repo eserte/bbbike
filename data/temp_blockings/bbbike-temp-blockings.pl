@@ -3240,10 +3240,9 @@ EOF
        text  => 'Eldenaer Str. zwischen Thaerstr. und Proskauer Str. Baustelle, wegen Bauarbeiten gesperrt. Dauer: bis 18.11.2005',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 14355,12752 14336,12758
+userdel	q4 14355,12752
 userdel	q4 13960,12866 13979,12861 14096,12827
 userdel	q4 13960,12866 13844,12900
-userdel	q4 14096,12827 14336,12758
 EOF
      },
      { from  => 1131050267, # 2005-11-03 21:37
@@ -16041,8 +16040,8 @@ EOF
 #: XXX nach den Bauarbeiten fällt evtl. das Kopfsteinpflaster weg, es wird zumindest Richtung Norden Radwege geben
 #: last_checked: 2010-07-11
 #: next_check: 2010-10-01
-userdel	q4::inwork; 10680,18380 10739,18262 10755,18231 10815,18078 10846,17992
-userdel	q4::inwork; 10815,18078 10907,18109 10938,18147 10989,18172 11137,18358 11001,18528
+userdel	q4::inwork; 10680,18380 10739,18262 10755,18231 10819,18066 10846,17992
+userdel	q4::inwork; 10819,18066 10907,18109 10938,18147 10989,18172 11132,18346 11001,18528
 EOF
      },
      { from  => undef, #
@@ -18667,7 +18666,7 @@ EOF
        source_id => 'IM_018078',
        data  => <<EOF,
 #: next_check: 2012-05-15
-userdel	q4::inwork; 10680,18380 10739,18262 10755,18231 10815,18078 10846,17992
+userdel	q4::inwork; 10680,18380 10739,18262 10755,18231 10819,18066 10846,17992
 EOF
      },
      { from  => 1295721886, # 2011-01-22 19:44
@@ -20205,6 +20204,7 @@ EOF
        text  => 'Sredzkistr. zwischen Schönhauser Allee und Knaackstr: Teile der Fahrbahn gesperrt, Ausweichen auf Gehweg',
        type  => 'handicap',
        data  => <<EOF,
+#: last_checked: 2012-06-05
 userdel	q4::inwork 10893,14705 11101,14768
 EOF
      },

@@ -990,9 +990,9 @@ Marienfelder Chaussee -> Muschelkalkweg: Mittelstreifen	3::igndisp 11002,1211 11
 Straßenbahntrasse	3nocross::ignrte 22539,6258 22645,6431 22682,6495
 Mahlsdorfer Str. -> Hoernlestr.: Straßenbahntrasse	3::igndisp 22539,6258 22645,6431 22509,6519
 Hoernlestr. -> Mahlsdorfer Str.: Straßenbahntrasse	3::igndisp 22509,6519 22645,6431 22682,6495
-Mittelstreifen	3nocross::ignrte 11021,17889 11045,17893 11111,17905
-Kissingenstr. -> Stubnitzstr.: Mittelstreifen	3::igndisp 11021,17889 11045,17893 11102,17942
-Stubnitzstr. -> Kissingenstr.: Mittelstreifen	3::igndisp 11102,17942 11045,17893 11111,17905
+Mittelstreifen	3nocross::ignrte 11023,17878 11047,17883 11113,17895
+Kissingenstr. -> Stubnitzstr.: Mittelstreifen	3::igndisp 11023,17878 11047,17883 11102,17942
+Stubnitzstr. -> Kissingenstr.: Mittelstreifen	3::igndisp 11102,17942 11047,17883 11113,17895
 Mittelstreifen	3nocross::ignrte 1133,14387 1057,14389 999,14390 937,14391 889,14392
 Nonnendammallee -> Grammestr.: Mittelstreifen	3::igndisp 1133,14387 1057,14389 1023,14259
 Grammestr. -> Nonnendammallee: Mittelstreifen	3::igndisp 1023,14259 1057,14389 999,14390
@@ -1841,7 +1841,8 @@ Johannes-Lepsius-Str. -> Kiepenheuerallee: Straßenbahntrasse	3::igndisp -13244,2
 Kiepenheuerallee -> Johannes-Lepsius-Str.: Straßenbahntrasse	3::igndisp -13157,394 -13203,434 -13244,281
 tragen (15 Stufen)	0:25:-42 115,2340
 tragen (viele weite Stufen)	0:60:49 -735,4407
-tragen (zwei Treppen, eine Treppe mit 20 Stufen)	0:60:-255 13644,21808
+tragen (20 Stufen)	0:30:-255 13644,21808
+tragen (17 Stufen)	0:30:-247 13617,21819
 tragen (3 x 3 Stufen) oder steile Rampen benutzen	0:15:-129 21979,274
 tragen (9 Stufen)	0:12:-100 21963,261
 tragen (5 Stufen)	0:10:-229 19132,7769
@@ -2022,6 +2023,8 @@ tragen (Treppe, ca. 20 Stufen)	0:25:-108 19163,14981
 tragen (Treppe, ca. 20 Stufen)	0:25:-12 19160,14935
 tragen (Treppe)	0:30:70 89344,-5795
 tragen, langgezogene Stufen (13 Stufen)	0:25:-168 20704,1383
+tragen (31 Stufen oder Kinderwagenrampe)	0:40:-256 13168,21706
+Drängelgitter	BNP:3:-245:trailer=10 13604,21825
 Drängelgitter und Tor	BNP:7:74:trailer=15 20783,-1266
 Drängelgitter und Tor	BNP:7:74:trailer=15 20396,-1370
 Drängelgitter und Tor	BNP:7:82:trailer=15 20373,-1375

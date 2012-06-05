@@ -1146,7 +1146,7 @@ Alt-Kaulsdorf: Mittelstreifen	3nocross 23101,11261 23362,11263 23447,11264 23648
 Alt-Mahlsdorf: Mittelstreifen	3nocross 24175,11265 24019,11264 23848,11264 23648,11265
 Marienfelder Chaussee: Mittelstreifen	3nocross 11002,1211 11155,1273 11198,1291
 Mahlsdorfer Str.: Straßenbahntrasse	3nocross 22539,6258 22645,6431 22682,6495
-Kissingenstr.: Mittelstreifen	3nocross 11021,17889 11045,17893 11111,17905
+Kissingenstr.: Mittelstreifen	3nocross 11023,17878 11047,17883 11113,17895
 #: note: ^^^
 #: by: Tobias (Lung)
 Siemensdamm: Mittelstreifen	3nocross 1133,14387 1057,14389 999,14390 937,14391 889,14392
@@ -1403,8 +1403,8 @@ Kiepenheuerallee: Straßenbahntrasse	3nocross -13311,462 -13203,434 -13157,394
 # 
 tragen (15 Stufen)	0:25 115,2340
 tragen (viele weite Stufen)	0:60 -735,4407
-#: XXX wieviele Stufen hat die zweite Treppe?
-tragen (zwei Treppen, eine Treppe mit 20 Stufen)	0:60 13644,21808
+tragen (20 Stufen)	0:30 13644,21808
+tragen (17 Stufen)	0:30 13617,21819
 tragen (3 x 3 Stufen) oder steile Rampen benutzen	0:15 21979,274
 tragen (9 Stufen)	0:12 21963,261
 #: note: etwas weiter auseinanderliegend:
@@ -1651,12 +1651,14 @@ tragen (Treppe, ca. 20 Stufen)	0:25 19160,14935
 #: by: rjoop, keine Stufenangabe!
 tragen (Treppe)	0:30 89344,-5795
 tragen, langgezogene Stufen (13 Stufen)	0:25 20704,1383
+tragen (31 Stufen oder Kinderwagenrampe)	0:40 13168,21706
 #
 ###################################################################
 # Drängelgitter (BLOCKED_NARROWPASSAGE)
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+Drängelgitter	BNP:3::trailer=10 13604,21825
 Drängelgitter und Tor	BNP:7::trailer=15 20783,-1266
 Drängelgitter und Tor	BNP:7::trailer=15 20396,-1370
 Drängelgitter und Tor	BNP:7::trailer=15 20373,-1375
@@ -2037,8 +2039,8 @@ Hüttenweg: Sperrung wegen Bau an der Autobahn, wahrscheinlich bis Mitte Juni 201
 #: note: abgeschlossener Zaun
 Helga-Hahnemann-Str.: gesperrt	2:inwork 9415,13315 9408,13282
 #
-#: last_checked: 2012-03-03
-#: next_check: 2012-05-01
+#: last_checked: 2012-06-05
+#: next_check: 2012-08-01
 #: XXX mit den Bauarbeiten "An den Eldenaer Höfen" koordinieren
 Am Langen Jammer: westlicher Abschnitt wegen Bauarbeiten gesperrt	2:inwork 14405,12953 14686,12873
 #
