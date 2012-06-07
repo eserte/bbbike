@@ -138,6 +138,7 @@ $s2->read_stream(sub {
     }
 });
 
+$new_s->set_global_directives($s2->get_global_directives);
 print $new_s->as_string;
 
 # Get all neighbors of $p1 except $p2
