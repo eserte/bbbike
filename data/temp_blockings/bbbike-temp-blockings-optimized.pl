@@ -1432,6 +1432,26 @@ userdel	2::temp 7383,12095 7816,12150 8055,12186 8119,12414
 userdel	2::temp 8546,12279 8570,12302
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => undef,
+         'text' => 'Gleimstr./Stargarder Str.: Bauarbeiten in Höhe Schönhauser Allee, Einbahnstraße Richtung Westen',
+         'from' => undef,
+         'id' => 2342,
+         'data' => '#: last_checked: 2012-06-07
+#: next_check: 2012-07-10
+userdel	q3::inwork; 10713,15746 10953,15787 11086,15772
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1349877000,
+         'text' => 'Kastanienallee (Rosenthal): Bauarbeiten, zwischen Friedrich-Engels-Str. und Eschenallee in Richtung Osten gesperrt, bis Mitte Oktober 2012',
+         'from' => 1336057200,
+         'id' => 2343,
+         'data' => 'userdel	q4::inwork; 8900,20601 9025,20611 9161,20622 9174,20623 9295,20632 9460,20644
+',
+         'type' => 'handicap'
        }
      
 );

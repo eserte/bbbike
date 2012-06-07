@@ -119,9 +119,9 @@ Kienitzer Str.	1 12830,8031 12692,7996 12583,7974 12466,7946
 Alt-Mariendorf (Nord)	1 9065,3693 9106,3703 9275,3753 9410,3793 9731,3889
 Almstadtstr.	1 10790,13565 10767,13443 10757,13401 10699,13173
 Schendelgasse	1 10653,13493 10703,13467 10767,13443
-Mulackstr.	1 10304,13575 10406,13543 10535,13509 10640,13471
-Hirtenstr. - Karl-Liebknecht-Str.	3 10923,13317 11015,13264 11021,13271 11027,13279 11080,13350 11092,13366
-Karl-Liebknecht-Str. - Hirtenstr.	3 10920,13139 11015,13264 10923,13317
+Mulackstr.	1 10308,13575 10406,13543 10535,13509 10640,13471
+Hirtenstr. - Karl-Liebknecht-Str.	3 10923,13317 11005,13269 11012,13278 11018,13286 11070,13357 11081,13372
+Karl-Liebknecht-Str. - Hirtenstr.	3 10923,13156 10976,13229 11005,13269 10923,13317
 Parochialstr.	1 10952,12401 11040,12415
 Waisenstr.	1 11040,12415 11032,12439 11059,12450
 Waisenstr.	1 11040,12415 11049,12386 11094,12243
@@ -130,7 +130,7 @@ Sonnenallee - Tellstr.	3 12242,8972 12320,8927 12402,9080
 Tellstr. - Sonnenallee	3 12402,9080 12320,8927 12438,8859
 Lettestr	1 11268,15360 11368,15301 11480,15229
 Kleine Auguststr.	1 10049,13528 9996,13678
-Steinstr. (Mitte)	1 10603,13395 10390,13493 10282,13546
+Steinstr. (Mitte)	1 10603,13395 10390,13493 10311,13537 10286,13548
 Roennebergstr.	1 5533,6753 5357,6932
 Matternstr.	1 13798,13003 13579,12904
 Ebelingstr.	1 13707,13206 13610,13169 13487,13115
@@ -151,7 +151,7 @@ Kühlebornweg	1 5161,4664 5075,4600 5004,4709
 Gartenstr.	1 22467,3889 22275,4032 22261,4105 22273,4216
 Wichmannstr.	1 6462,11069 6552,11006 6681,10959 6824,10904
 Lützowufer	1 6873,11011 6732,11106 6626,11178 6582,11202
-Mulackstr.	1 10304,13575 10406,13543 10535,13509 10640,13471
+Mulackstr.	1 10308,13575 10406,13543 10535,13509 10640,13471
 Kirchhofstr.	1 13188,7590 13117,7471 13027,7368
 Siegfriedstr.	1 12664,7013 12810,7047 12843,7093 12872,7134
 Prenzlauer Allee/Sredzkistr.	3nocross::ignrte 11662,14695 11642,14625 11582,14448
@@ -166,7 +166,7 @@ Wismarplatz	1 14395,11753 14416,11815
 Wismarplatz	3 14449,11742 14416,11815 14395,11753
 Simon-Dach-Str.	1 13954,11647 13981,11746 14006,11843
 Simon-Dach-Str.	1 14045,11965 14006,11843
-Buchhorster Str.	1 7620,20635 7793,20580 7866,20556 7992,20515
+Buchhorster Str.	1 7620,20635 7736,20598 7793,20580 7866,20556 7979,20528
 Handjerystr.	1 5641,7189 5624,7113 5574,7018
 Leuthener Str.	1 7494,8364 7578,8358
 Leuthener Str.	1 7716,8356 7640,8359
@@ -228,17 +228,17 @@ Händelallee	1 6082,12273 6130,12232 6280,12222 6265,12134 5998,12105 5961,12134
 Wundstr.	1 2252,11037 2272,11074 2346,11147
 Kühler Weg	1 841,9914 743,9772 616,9602
 Wilhelmstr.: vor der britischen Botschaft dauerhaft für Kfz gesperrt	2 8861,12125 8804,12280
-U-Bahnviadukt und Straßenbahn	3nocross::ignrte 11019,16465 11004,16360 10997,16280 10990,16197 10982,16121
+U-Bahnviadukt und Straßenbahn	3nocross::ignrte 11019,16465 11004,16360 10997,16280 10989,16197 10982,16121
 Schönhauser Allee -> Kuglerstr.: U-Bahnviadukt und Straßenbahn	3::igndisp 11019,16465 11004,16360 11253,16296
 Kuglerstr. -> Schönhauser Allee: U-Bahnviadukt und Straßenbahn	3::igndisp 11253,16296 11004,16360 10997,16280
 Schönhauser Allee -> Erich-Weinert-Str.: U-Bahnviadukt und Straßenbahn	3::igndisp 11004,16360 10997,16280 11295,16199
+Schönhauser Allee -> Paul-Robeson-Str.: U-Bahnviadukt und Straßenbahn	3::igndisp 10989,16197 10997,16280 10754,16305
 Paul-Robeson-Str. -> Schönhauser Allee: U-Bahnviadukt und Straßenbahn	3::igndisp 10754,16305 10997,16280 11004,16360
 Paul-Robeson-Str. -> Erich-Weinert-Str.: U-Bahnviadukt und Straßenbahn	3::igndisp 10754,16305 10997,16280 11295,16199
-Schönhauser Allee -> Paul-Robeson-Str.: U-Bahnviadukt und Straßenbahn	3::igndisp 10990,16197 10997,16280 10754,16305
+Erich-Weinert-Str. -> Schönhauser Allee: U-Bahnviadukt und Straßenbahn	3::igndisp 11295,16199 10997,16280 10989,16197
 Erich-Weinert-Str. -> Paul-Robeson-Str.: U-Bahnviadukt und Straßenbahn	3::igndisp 11295,16199 10997,16280 10754,16305
-Erich-Weinert-Str. -> Schönhauser Allee: U-Bahnviadukt und Straßenbahn	3::igndisp 11295,16199 10997,16280 10990,16197
-Schönhauser Allee -> Rodenbergstr.: U-Bahnviadukt und Straßenbahn	3::igndisp 10997,16280 10990,16197 11253,16118
-Rodenbergstr. -> Schönhauser Allee: U-Bahnviadukt und Straßenbahn	3::igndisp 11253,16118 10990,16197 10982,16121
+Schönhauser Allee -> Rodenbergstr.: U-Bahnviadukt und Straßenbahn	3::igndisp 10997,16280 10989,16197 11253,16118
+Rodenbergstr. -> Schönhauser Allee: U-Bahnviadukt und Straßenbahn	3::igndisp 11253,16118 10989,16197 10982,16121
 Straßenbahn	3nocross::ignrte 11860,15309 11877,15366 11891,15413
 Prenzlauer Allee -> Lilli-Henoch-Str.: Straßenbahn	3::igndisp 11891,15413 11877,15366 11942,15358
 Lilli-Henoch-Str. -> Ahlbecker Str.: Straßenbahn	3::igndisp 11942,15358 11877,15366 11638,15522
@@ -705,12 +705,6 @@ Delbrückstr.	1 12743,6645 12468,6592
 Emser Str.	1 13058,7165 12872,7134
 Stuthirtenweg: Gitter	3 13449,1227 13542,1268 13629,1343
 Stuthirtenweg: Gitter	3 13629,1343 13542,1268 13449,1227
-Abbiegen verboten	3nocross::ignrte 10512,12039 10460,11979 10391,11898
-Petripl. -> Gertraudenstr.: Abbiegen verboten	3::igndisp 10418,12016 10460,11979 10512,12039
-Gertraudenstr. -> Petripl.: Abbiegen verboten	3::igndisp 10391,11898 10460,11979 10418,12016
-Abbiegen verboten	3nocross::ignrte 10313,11805 10299,11786 10240,11740
-Spittelmarkt -> Kurstr.: Abbiegen verboten	3::igndisp 10240,11740 10299,11786 10274,11805
-Kurstr. -> Spittelmarkt: Abbiegen verboten	3::igndisp 10274,11805 10299,11786 10313,11805
 Mittelstreifen	3nocross::ignrte 10738,12364 10800,12461 10878,12560 10954,12635
 Jüdenstr. -> Grunerstr.: Mittelstreifen	3::igndisp 10766,12511 10800,12461 10878,12560
 Jüdenstr. -> Jüdenstr.: Mittelstreifen	3::igndisp 10766,12511 10800,12461 10831,12371
@@ -757,9 +751,9 @@ Roonstr. -> Flotowstr.: Mittelstreifen	3::igndisp 4265,4484 4515,4581 4651,4638
 Hindenburgdamm -> Roonstr.: Mittelstreifen	3::igndisp 4521,4484 4515,4581 4265,4484
 Flotowstr. -> Roonstr.: Mittelstreifen	3::igndisp 4651,4638 4515,4581 4265,4484
 Flotowstr. -> Hindenburgdamm: Mittelstreifen	3::igndisp 4651,4638 4515,4581 4521,4484
-Straßenbahntrasse	3nocross::ignrte 10892,17491 10894,17470 10900,17397
-Masurenstr. -> Berliner Str.: Straßenbahntrasse	3::igndisp 10670,17458 10894,17470 10892,17491
-Berliner Str. -> Masurenstr.: Straßenbahntrasse	3::igndisp 10900,17397 10894,17470 10670,17458
+Straßenbahntrasse	3nocross::ignrte 10878,17490 10880,17469 10886,17396
+Berliner Str. -> Masurenstr.: Straßenbahntrasse	3::igndisp 10886,17396 10880,17469 10670,17458
+Masurenstr. -> Berliner Str.: Straßenbahntrasse	3::igndisp 10670,17458 10880,17469 10878,17490
 Mittelstreifen	3nocross::ignrte 6608,16180 6450,16325 6444,16331
 Müllerstr. -> Kongostr.: Mittelstreifen	3::igndisp 6608,16180 6450,16325 6349,16213
 Mittelstreifen	3nocross::ignrte 7948,15802 7962,15633 7966,15571
@@ -783,11 +777,6 @@ Prenzlauer Promenade -> Brauhausstr.: Straßenbahntrasse	3::igndisp 12010,16774 1
 Mittelstreifen	3nocross::ignrte 12114,12546 12134,12540 12360,12505
 Karl-Marx-Allee -> Krautstr./Blumenstr.: Mittelstreifen	3::igndisp 12360,12505 12134,12540 12125,12490
 Krautstr./Blumenstr. -> Karl-Marx-Allee: Mittelstreifen	3::igndisp 12125,12490 12134,12540 12114,12546
-Mittelstreifen	3nocross::ignrte 10240,11740 10213,11728 10128,11714 9981,11689
-Spittelmarkt -> Axel-Springer-Str.: Mittelstreifen	3::igndisp 10240,11740 10213,11728 10201,11631
-Axel-Springer-Str. -> Leipziger Str.: Mittelstreifen	3::igndisp 10201,11631 10213,11728 10128,11714
-Niederwallstr./Spittelmarkt: nur Abbiegen nach rechts erlaubt	3 10183,11770 10240,11740 10320,11627
-Niederwallstr./Spittelmarkt: nur Abbiegen nach rechts erlaubt	3 10183,11770 10240,11740 10299,11786
 Kleineweg: nur für Anlieger	2:Anlieger 9126,8025 9130,7804 9132,7661
 Kleineweg: nur für Anlieger	2:Anlieger 9115,7645 9120,7600 9145,7522 9097,7469
 Peter-Strasser-Weg: nur für Anlieger	2:Anlieger 9240,7797 9130,7804
@@ -1123,9 +1112,9 @@ Wustermarker Str.:	1 -4385,14305 -4556,14349
 Mittelstreifen	3nocross::ignrte 2346,7684 2460,7658 2576,7634
 Sulzaer Str. -> Hundekehlestr.: Mittelstreifen	3::igndisp 2499,7930 2460,7658 2576,7634
 Hundekehlestr. -> Sulzaer Str.: Mittelstreifen	3::igndisp 2346,7684 2460,7658 2499,7930
-Berliner Str.	3nocross::ignrte 10859,17854 10871,17722 10892,17491
-Borkumstr. -> Berliner Str.: Berliner Str.	3::igndisp 10956,17735 10871,17722 10892,17491
-Berliner Str. -> Borkumstr.: Berliner Str.	3::igndisp 10859,17854 10871,17722 10956,17735
+Berliner Str.	3nocross::ignrte 10849,17848 10858,17721 10878,17490
+Borkumstr. -> Berliner Str.: Berliner Str.	3::igndisp 10956,17735 10858,17721 10878,17490
+Berliner Str. -> Borkumstr.: Berliner Str.	3::igndisp 10849,17848 10858,17721 10956,17735
 Lietzenburger Str.	3nocross::ignrte 5063,10384 5207,10399 5329,10422
 Fasanenstr. -> Fasanenstr.: Lietzenburger Str.	3::igndisp 5229,10716 5207,10399 5198,10234
 Fasanenstr. -> Lietzenburger Str.: Lietzenburger Str.	3::igndisp 5229,10716 5207,10399 5329,10422
@@ -1351,3 +1340,9 @@ Stephaniweg: Poller	3 4836,1659 4855,1616 4942,1649
 Blaumeisenweg	1 5194,1690 5251,1543
 Töpferweg: Poller	3 13238,2521 13309,2410 13103,2271
 Töpferweg: Poller	3 13238,2521 13309,2410 13367,2322
+Hoppestr.	1 8617,18310 8482,18284
+Straße 134: Poller	3 9192,20719 9276,20745 9398,20784
+Straße 134: Poller	3 9398,20784 9276,20745 9192,20719
+Straßebahntrasse	3nocross::ignrte 11012,13278 11018,13286 11070,13357
+Karl-Liebknecht-Str. -> Alex-Wedding-Str.: Straßebahntrasse	3::igndisp 11070,13357 11018,13286 11085,13239
+Alex-Wedding-Str. -> Karl-Liebknecht-Str.: Straßebahntrasse	3::igndisp 11085,13239 11018,13286 11012,13278

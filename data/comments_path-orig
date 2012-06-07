@@ -51,7 +51,7 @@ Zugang durch Betonabsperrung	CP2; 21222,12501 21190,12515
 am Gartenbauamt abbiegen	CP2; 7663,11946 7570,11855
 Schillerstr. Richtung Ernst-Reuter-Platz: zunächst linken Gehweg bis zur Ampel am Ernst-Reuter-Platz benutzen	CP; 4574,11587 4900,11626 4838,11697
 Hardenbergstr. - Schillerstr.: bereits an der Knesebeckstraße auf den linken Gehweg wechseln	PI; 4919,11605 4900,11626 4574,11587
-Torstr. - Weydemeyerstr.: bereits am Mollknoten die Straßenseite wechseln	PI; 11170,13475 11108,13513 11079,13492
+Torstr. - Weydemeyerstr.: bereits am Mollknoten die Straßenseite wechseln	PI; 11155,13482 11108,13513 11079,13492
 Zossener - Brachvogelstr.: bereits an der Fußgängerampel Waterloo-Ufer Straßenseite wechseln	PI; 9865,10227 9858,10199 9884,10192
 #: XXX_prog: RL:ja, GPS:ja,nicht_LG (man bleibt rechts)
 Zossener - Brachvogelstr.: bereits an der Johanniterstr. vom Radstreifen auf den Gehweg wechseln	PI; 9837,10117 9858,10199 9884,10192
@@ -345,7 +345,7 @@ Am Wasserwerk - Landsberger Allee: zum Linksabbiegen Fußgängerampel auf der link
 Landsberger Allee - Am Wasserwerk: zum Linksabbiegen entweder schon an der Siegfriedstr. die Straßenseite wechseln oder die Fußgängerampel hinter der Einmündung benutzen	PI; 16843,14420 16630,14403 16659,14192
 Stubenrauchstr. - Wegerichstr.: Fußgängerübergang am Glockenblumenweg benutzen	CP; 16547,2680 16475,2586 16538,2543
 Mühlenstr. - Vinetastr.: Fußgängerampel auf der linken Seite zum Überqueren der Kreuzung nutzen	CP; 10862,17087 10927,17022 11267,17017
-Vinetastr. - Berliner Str.: Fußgängerampel auf der rechten Seite zum Überqueren der Kreuzung nutzen	CP; 11267,17017 10927,17022 10986,16897
+Vinetastr. - Berliner Str.: Fußgängerampel auf der rechten Seite zum Überqueren der Kreuzung nutzen	CP; 11267,17017 10927,17022 10975,16896
 Vinetastr. - Brennerstr.: Fußgängerampel auf der rechten Seite zum Überqueren der Kreuzung nutzen	CP; 11267,17017 10927,17022 10656,17018
 Vinetastr. - Mühlenstr.: die Fahrradampel links benutzen	CP; 11267,17017 10927,17022 10862,17087
 Admiralbrücke - Böckhstr.: Gehweg zur Böckhstr. benutzen	PI; 11177,9935 11163,9903 11200,9889
@@ -355,8 +355,8 @@ Annenstr. - Allee der Kosmonauten.: Zebrastreifen zum Überqueren der Straßenbahn
 Bohnsdorfer Str. (Waldweg): Die Einfahrt ist sehr zugewachsen	CP2; 22012,2150 21997,1869
 Wassersportallee - Bohnsdorfer Str.: über Zufahrt zur Tankstelle und zum Parkplatz	CP2; 22217,1108 22161,1193
 #: by: ^^^
-Berliner Str. - Masurenstr.: Entweder bereits an der Samländischen Str. die Straßenseite wechseln oder die Straßenbahntrasse in Höhe Binzstr. überqueren und zurückfahren	PI; 10900,17397 10894,17470 10670,17458
-Masurenstr. - Berliner Str.: zunächst auf dem linken Gehweg bis zur Höhe Binzstr. fahren	CP; 10670,17458 10894,17470 10892,17491
+Berliner Str. - Masurenstr.: Entweder bereits an der Samländischen Str. die Straßenseite wechseln oder die Straßenbahntrasse in Höhe Binzstr. überqueren und zurückfahren	PI; 10886,17396 10880,17469 10670,17458
+Masurenstr. - Berliner Str.: zunächst auf dem linken Gehweg bis zur Höhe Binzstr. fahren	CP; 10670,17458 10880,17469 10878,17490
 Kongostr. - Müllerstr.: zunächst auf dem linken Gehweg bis zur Türkenstr. oder bis zur Fußgängerampel fahren	CP; 6349,16213 6450,16325 6444,16331
 Müllerstr. - Kongostr.: an der Türkenstr. oder an der Fußgängerampel die Straßenseite wechseln und zurückfahren	CP; 6608,16180 6450,16325 6349,16213
 ## Rethink, retest appearance:

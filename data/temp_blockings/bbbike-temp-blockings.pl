@@ -1473,7 +1473,7 @@ EOF
        text  => 'Berliner Straße, Zwischen Kreuzung Granitzstraße und Florastr. in beiden Richtungen Brückenarbeiten, gesperrt, Dauer: 05.02.2005 01:00 Uhr bis 07.02.2005 03:00 Uhr ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 10846,17992 10859,17854
+userdel	2 10830,17985 10849,17848
 EOF
      },
      { from  => 1075827600, # 2004-02-03 18:00
@@ -2704,7 +2704,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005006',
        data  => <<EOF,
-userdel	2 10459,17754 10548,17817 10705,17931 10846,17992
+userdel	2 10459,17754 10548,17817 10705,17931 10830,17985
 EOF
      },
      { from  => 1127508095, # 2005-09-23 22:41
@@ -3044,7 +3044,7 @@ EOF
        text  => 'Prenzlauer Berg: Richtung Prenzlauer Allee gesperrt (Kopfsteinpflaster wird durch Asphalt ersetzt)',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1 11706,13635 11545,13690 11257,13647
+userdel	1 11706,13635 11545,13690 11250,13655
 EOF
      },
      { from  => undef, # 
@@ -5313,9 +5313,9 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_003157',
        data  => <<EOF,
-userdel	1::inwork 10920,13139 10781,13002
+userdel	1::inwork 10923,13156 10781,13002
 userdel	1::inwork 10781,13002 10706,13043
-userdel	3::inwork 10755,13152 10920,13139 11027,13075 11139,13008
+userdel	3::inwork 10755,13152 10923,13156 11033,13086 11139,13008
 EOF
      },
      { from  => 1154203576, # 2006-07-29 22:06
@@ -5324,7 +5324,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_003157',
        data  => <<EOF,
-userdel	1::inwork 10755,13152 10920,13139
+userdel	1::inwork 10755,13152 10923,13156
 EOF
      },
      { from  => 1152568800, # 2006-07-11 00:00
@@ -7183,7 +7183,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_004803',
        data  => <<EOF,
-userdel	1::inwork 8900,20601 9025,20611 9161,20622 9174,20623 9295,20632 9460,20644 9547,20670 9655,20703 9737,20728 9848,20764
+userdel	1::inwork 8900,20601 9025,20611 9161,20622 9174,20623 9295,20632 9460,20644 9551,20662 9622,20677 9676,20700 9737,20728 9848,20764
 EOF
      },
      { from  => 1172642400, # 2007-02-28 07:00
@@ -7568,7 +7568,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_004035',
        data  => <<EOF,
-userdel	1::inwork 10459,17754 10548,17817 10705,17931 10846,17992
+userdel	1::inwork 10459,17754 10548,17817 10705,17931 10830,17985
 EOF
      },
      { from  => undef, # 
@@ -12337,7 +12337,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_009756',
        data  => <<EOF,
-userdel	2::inwork 10846,17992 10859,17854
+userdel	2::inwork 10830,17985 10849,17848
 EOF
      },
      { from  => 1219523435, # 2008-08-23 22:30
@@ -14543,7 +14543,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_013223',
        data  => <<EOF,
-userdel	q4::inwork; 7992,20515 8344,20548 8411,20554 8481,20561 8543,20567 8561,20569 8717,20584 8900,20601
+userdel	q4::inwork; 7979,20528 8343,20556 8410,20561 8481,20566 8543,20571 8561,20572 8717,20584 8900,20601
 EOF
      },
      { from  => 1246208018, # 2009-06-28 18:53
@@ -15771,10 +15771,10 @@ EOF
        source_id => 'IM_013990',
        data  => <<EOF,
 Schönhauser Allee -> Schivelbeiner Str.:	3::inwork 10975,16010 10982,16121 10753,16144
-Schönhauser Allee -> Wichertstr.:	3::inwork 10990,16197 10982,16121 11214,16043
+Schönhauser Allee -> Wichertstr.:	3::inwork 10989,16197 10982,16121 11214,16043
 Wichertstr. -> Schönhauser Allee:	3::inwork 11214,16043 10982,16121 10975,16010
 Wichertstr. -> Schivelbeiner Str.:	3::inwork 11214,16043 10982,16121 10753,16144
-Schivelbeiner Str. -> Schönhauser Allee:	3::inwork 10753,16144 10982,16121 10990,16197
+Schivelbeiner Str. -> Schönhauser Allee:	3::inwork 10753,16144 10982,16121 10989,16197
 Schivelbeiner Str. -> Wichertstr.:	3::inwork 10753,16144 10982,16121 11214,16043
 EOF
      },
@@ -16040,7 +16040,7 @@ EOF
 #: XXX nach den Bauarbeiten fällt evtl. das Kopfsteinpflaster weg, es wird zumindest Richtung Norden Radwege geben
 #: last_checked: 2010-07-11
 #: next_check: 2010-10-01
-userdel	q4::inwork; 10680,18380 10739,18262 10755,18231 10819,18066 10846,17992
+userdel	q4::inwork; 10680,18380 10739,18262 10755,18231 10819,18066 10830,17985
 userdel	q4::inwork; 10819,18066 10907,18109 10938,18147 10989,18172 11132,18346 11001,18528
 EOF
      },
@@ -16110,7 +16110,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_014178',
        data  => <<EOF,
-userdel	q4::temp 8277,21257 8460,21602
+userdel	q4::temp 8277,21257 8389,21468 8460,21602
 EOF
      },
      { from  => 1253272543, # 2009-09-18 13:15
@@ -16591,8 +16591,8 @@ EOF
        text  => 'Sperrungen an der Kreuzung Karl-Marx-Allee/Otto-Braun-Straße einschließlich Grunerstraße bis Alexanderstraße, 16.10.2009, 19.00 Uhr bis 19.10.2009, 05.00 Uhr ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 11267,13012 11228,12951 11134,12793
-userdel	3 11139,13008 11228,12951 11295,12915
+userdel	2::inwork 11267,13012 11226,12945 11134,12793
+userdel	3 11139,13008 11226,12945 11289,12908
 EOF
      },
      { from  => 1256144400, # 2009-10-21 19:00
@@ -16600,8 +16600,8 @@ EOF
        text  => 'Sperrungen an der Kreuzung Karl-Marx-Allee/Otto-Braun-Straße einschließlich Grunerstraße bis Alexanderstraße, 23.10.2009, 19.00 Uhr bis 26.10.2009, 05.00 Uhr ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 11267,13012 11228,12951 11134,12793
-userdel	3 11139,13008 11228,12951 11295,12915
+userdel	2::inwork 11267,13012 11226,12945 11134,12793
+userdel	3 11139,13008 11226,12945 11289,12908
 EOF
      },
      { from  => 1256752800, # 2009-10-28 19:00
@@ -16609,8 +16609,8 @@ EOF
        text  => 'Sperrungen an der Kreuzung Karl-Marx-Allee/Otto-Braun-Straße einschließlich Grunerstraße bis Alexanderstraße, 30.10.2009, 19.00 Uhr bis 2.11.2009, 05.00 Uhr ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 11267,13012 11228,12951 11134,12793
-userdel	3 11139,13008 11228,12951 11295,12915
+userdel	2::inwork 11267,13012 11226,12945 11134,12793
+userdel	3 11139,13008 11226,12945 11289,12908
 EOF
      },
      { from  => 1254891600, # 2009-10-07 07:00
@@ -18666,7 +18666,7 @@ EOF
        source_id => 'IM_018078',
        data  => <<EOF,
 #: next_check: 2012-05-15
-userdel	q4::inwork; 10680,18380 10739,18262 10755,18231 10819,18066 10846,17992
+userdel	q4::inwork; 10680,18380 10739,18262 10755,18231 10819,18066 10830,17985
 EOF
      },
      { from  => 1295721886, # 2011-01-22 19:44
@@ -18693,7 +18693,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_016795',
        data  => <<EOF,
-userdel	q4::inwork; 11257,13647 11545,13690
+userdel	q4::inwork; 11250,13655 11545,13690
 EOF
      },
      { from  => 1294922580, # 2011-01-13 13:43
@@ -18839,7 +18839,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_016995',
        data  => <<EOF,
-userdel	q4::inwork 11545,13690 11257,13647
+userdel	q4::inwork 11545,13690 11250,13655
 EOF
      },
      { from  => 1301342328, # 2011-03-28 21:58
@@ -19725,7 +19725,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_017830',
        data  => <<EOF,
-userdel	q4::temp 8591,21906 8460,21602
+userdel	q4::temp 8556,21918 8568,21863 8473,21633 8460,21602
 EOF
      },
      { from  => 1316088000, # 2011-09-15 14:00
@@ -20245,6 +20245,24 @@ userdel	2::temp 8089,12190 8214,12205 8538,12245 8610,12254
 userdel	2::temp 8354,12416 8546,12279 8538,12245 8600,12165 8595,12066
 userdel	2::temp 7383,12095 7816,12150 8055,12186 8119,12414
 userdel	2::temp 8546,12279 8570,12302
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Gleimstr./Stargarder Str.: Bauarbeiten in Höhe Schönhauser Allee, Einbahnstraße Richtung Westen',
+       type  => 'handicap',
+       data  => <<EOF,
+#: last_checked: 2012-06-07
+#: next_check: 2012-07-10
+userdel	q3::inwork; 10713,15746 10953,15787 11086,15772
+EOF
+     },
+     { from  => 1336057200, # 2012-05-03 17:00
+       until => 1349877000, # 2012-10-10 15:50
+       text  => 'Kastanienallee (Rosenthal): Bauarbeiten, zwischen Friedrich-Engels-Str. und Eschenallee in Richtung Osten gesperrt, bis Mitte Oktober 2012',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork; 8900,20601 9025,20611 9161,20622 9174,20623 9295,20632 9460,20644
 EOF
      },
     );
