@@ -396,7 +396,7 @@ for my $cgiurl (@urls) {
 
     {
 	# Test possible "Aktuelle Position verwenden" flows
-	my($x,$y) = (10920,13139);
+	my($x,$y) = (10923,13156);
 
 	{
 	    my $content = std_get "$action?start=Alexanderstr.%2FKarl-Liebknecht-Str.&startort=&startcharimg.x=&startcharimg.y=&startc=$x%2C$y&scvf=Alexanderstr.%2FKarl-Liebknecht-Str.&startmapimg.x=&startmapimg.y=&via=&viaort=&viacharimg.x=&viacharimg.y=&viamapimg.x=&viamapimg.y=&ziel=&zielort=&zielcharimg.x=&zielcharimg.y=&zielmapimg.x=&zielmapimg.y=&scope=";
