@@ -17,6 +17,10 @@ use strict;
 use vars qw($VERSION);
 $VERSION = '0.02';
 
+use POSIX qw(strftime);
+
+use constant ISODATE_FMT => "%Y-%m-%dT%H:%M:%S";
+
 BEGIN {
     # I don't want to depend on a non-core accessor module:
     no strict 'refs';
@@ -57,6 +61,8 @@ sub run_stats {
     my $max_speed = undef;
     my $min_speed = undef;
     my %vehicles;
+    my $min_epoch;
+    my $max_epoch;
 
     my($bbox_minx, $bbox_miny, $bbox_maxx, $bbox_maxy);
 
@@ -82,6 +88,9 @@ sub run_stats {
 
 	my($chunk_bbox_minx, $chunk_bbox_miny, $chunk_bbox_maxx, $chunk_bbox_maxy);
 
+	my $chunk_min_epoch;
+	my $chunk_max_epoch;
+
 	my $last_wpt;
 	for my $wpt (@{ $chunk->Track }) {
 	    next if $wpt->Accuracy > $accepted_accuracy;
@@ -98,7 +107,11 @@ sub run_stats {
 
 	    if (defined $last_wpt) {
 		my $time0 = $last_wpt->Comment_to_unixtime($chunk);
+		if (!defined $chunk_min_epoch) {
+		    $chunk_min_epoch = $time0;
+		}
 		my $time1 = $wpt->Comment_to_unixtime($chunk);
+		$chunk_max_epoch = $time1;
 		my $hop_duration = $time1-$time0;
 		my $hop_dist = $chunk->wpt_dist($last_wpt, $wpt);
 		if ($hop_duration > 0) { # negative duration may happen if the GPS clock was adjusted in midst
@@ -137,6 +150,8 @@ sub run_stats {
 			     min_speed => $chunk_min_speed,
 			     vehicle   => $vehicle,
 			     bbox      => [$chunk_bbox_minx, $chunk_bbox_miny, $chunk_bbox_maxx, $chunk_bbox_maxy],
+			     (defined $chunk_min_epoch ? (min_datetime => strftime ISODATE_FMT, localtime($chunk_min_epoch)) : ()),
+			     (defined $chunk_max_epoch ? (max_datetime => strftime ISODATE_FMT, localtime($chunk_max_epoch)) : ()),
 			   };
 
 	$duration += $chunk_duration;
@@ -161,6 +176,13 @@ sub run_stats {
 	}
 	if (defined $chunk_bbox_maxy && (!defined $bbox_maxy || $bbox_maxy < $chunk_bbox_maxy)) {
 	    $bbox_maxy = $chunk_bbox_maxy;
+	}
+
+	if (defined $chunk_min_epoch && (!defined $min_epoch || $chunk_min_epoch < $min_epoch)) {
+	    $min_epoch = $chunk_min_epoch;
+	}
+	if (defined $chunk_max_epoch && (!defined $max_epoch || $chunk_max_epoch > $max_epoch)) {
+	    $max_epoch = $chunk_max_epoch;
 	}
     }
     
@@ -232,6 +254,8 @@ sub run_stats {
 		   bbox      => [$bbox_minx, $bbox_miny, $bbox_maxx, $bbox_maxy],
 		   route     => [map { $_->Longitude . ',' . $_->Latitude } @route_wpts],
 		   route_areas => [@route_areas],
+		   (defined $min_epoch ? (min_datetime => strftime ISODATE_FMT, localtime($min_epoch)) : ()),
+		   (defined $max_epoch ? (max_datetime => strftime ISODATE_FMT, localtime($max_epoch)) : ()),
 		 });
 }
 
