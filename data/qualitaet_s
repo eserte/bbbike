@@ -1243,7 +1243,7 @@ Kolmarer Str.: Kopfsteinpflaster	Q2 11299,14112 11354,14187 11418,14290
 südliches Spreeufer: kleinteiliges Kopfsteinpflaster	Q1 7670,12576 7710,12585 7745,12603
 südliches Spreeufer: glattes Pflaster	Q1 7745,12603 7782,12623 7934,12734 8006,12853 8032,12889 8056,12921 8099,12953 8169,12963 8235,12969 8310,12947 8361,12925 8427,12871 8462,12824 8473,12753 8495,12651 8596,12576
 Glasbläserallee: Verbundsteinpflaster	Q0 14747,10108 14835,10272 14888,10385
-Bootsbauerstr.: Verbundsteinpflaster	Q0 15090,10140 15079,10108
+Bootsbauerstr.: Verbundsteinpflaster	Q0 15134,10243 15090,10140 15079,10108
 Fischzug: Asphalt	Q0 14835,10272 14920,10225 14993,10188 15050,10160 15090,10140 15153,10112
 Fischzug: Kopfsteinpflaster, teilweise auch Verbundsteinpflaster	Q2 15153,10112 15219,10079
 Am Speicher: Kopfsteinpflaster	Q2 15219,10079 15261,10167
@@ -6707,6 +6707,8 @@ Ahornallee (Rosenthal): schlechtes Kopfsteinpflaster	Q3 9737,20728 9859,20542
 (Schloßpark Schönhausen): Parkweg	Q1 10600,19225 10638,19149
 Theanolte-Bähnisch-Str.: Asphalt	Q0 11320,13095 11235,13143
 (Keibelstr. - Karl-Liebknecht-Str.): Gehwegplatten	Q0 11045,13183 10976,13229
+(Weg am Stadion): Schotterstraße	Q2 20074,4379 20017,4441 19864,4607 19759,4711 19710,4760 19642,4838
+(Waldweg): Waldweg	Q2 19762,4823 19759,4711
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3777,16532 -3870,16527 -3962,16527 -4096,16525
 An den Hubertshäusern: guter Asphalt	Q0 -2049,2359 -1940,2400 -1963,2461 -2069,2429
 Straße 77 (Französisch Buchholz): mäßiger Asphalt	Q1 12836,22763 12608,22943
@@ -8463,7 +8465,7 @@ Langkofelweg: guter Belag	Q0 7018,3572 6940,3498 6845,3403
 Hartriegelstr.: Kopfsteinpflaster	Q2 18695,5076 18724,5022
 Hartriegelstr.: Beton, einige leichte Hebungen	Q0 18724,5022 18918,4971 19184,4888 19251,4879 19402,4900 19500,4919 19579,4931 19755,4962
 Allendeweg: Asphalt	Q0 23001,4382 22963,4435 22893,4532
-Kattunsteig: Waldweg	Q2 19760,4875 19762,4823 19710,4760 19715,4410 19731,4329 19771,4273 19753,4241
+Kattunsteig: Waldweg	Q2 19760,4875 19762,4823 19710,4760 19710,4682 19715,4410 19731,4329 19771,4273 19753,4241
 Bärenlauchstr.: Asphalt	Q0 19737,5176 19744,5063 19755,4962 19760,4907 19760,4875
 Rudower Str. (Niederschöneweide): Mitte der Fahrbahn Kopfsteinpflaster, Seiten mit löchrigem Beton	Q1 18695,5076 18641,5260 18659,5330
 Rudower Str. (Niederschöneweide): Asphalt	Q0 18659,5330 18680,5413 18695,5453
@@ -11412,7 +11414,6 @@ Am Festungsgraben: Kopfsteinpflaster	Q2 9842,12506 9764,12492
 Kuppenheimerstr.: Schotterweg	Q1 5823,8107 5824,8035
 (Herkulesufer - Von-der-Heydtstr.): Kleinpflaster	Q2 7140,11156 7115,11220
 (Geßlerstr. - Monumentenstr.): Verbundpflaster	Q1 7970,8886 7964,9060 8009,9063 8014,9126
-(zur Depothalle): schlechtes Kopfsteinplaster	Q3 8389,9087 8409,8904 8376,8859
 Fritz-Reuter-Str. (Schöneberg): Kopfsteinpflaster	Q2 6621,8221 6779,8279
 Gutzkowstr.: Kopfsteinpflaster	Q2 6785,8194 6636,8157
 Gustav-Freytag-Str.: Verbundsteinpflaster	Q1 6807,8309 6779,8279

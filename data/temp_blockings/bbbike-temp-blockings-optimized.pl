@@ -1044,16 +1044,7 @@ userdel	q4::inwork 425,8766 490,8716
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'LS/O-SG33-E/11/044',
-         'until' => 1339106399,
-         'text' => 'Flieth-Stegelitz: L24: Brücke über den Stierngraben bei Kaakstedt, geplante Vollsperrung 05.06. - 07.06.12 ',
-         'from' => 1338760800,
-         'id' => 2208,
-         'data' => 'userdel	2::inwork 35887,85385 34920,85944
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
