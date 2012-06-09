@@ -587,8 +587,7 @@ Grazer Platz: Fuﬂg‰nger, Bordsteine	q2 6546,6720 6530,6786 6529,6798
 (Nordmannzeile - Vorarlberger Damm): Fuﬂg‰nger	q1 7220,7442 7314,7451
 Achenbachpromenade: Fuﬂg‰nger, Radfahren erlaubt	q1 8763,8780 8748,8587 8715,8459
 Wildensteiner Str.: enge Straﬂe	q1 18528,8331 18416,8163 18365,8094 18333,8059
-#: XXX noch immer eine enge Stelle?
-(Am Carlsgarten - Waldowallee): enger Abschnitt under der Bahnbr¸cke	q2 19460,7954 19504,8003 19558,8064
+#XXX del --- #: XXX noch immer eine enge Stelle? --- (Am Carlsgarten - Waldowallee): enger Abschnitt under der Bahnbr¸cke	q2 19460,7954 19504,8003 19558,8064
 Linienstr./Oranienburger Str.: Fuﬂg‰nger	q2 9225,13389 9296,13397
 Fontanestr.: zwei Schwellen, kˆnnen umfahren werden	q1+ 18240,6845 18254,6679
 #: note: wenn keine Autos illegalerweise an diesen Stellen parken
@@ -977,7 +976,7 @@ Sch‰ﬂburger Weg: enge Straﬂe	q1+ 6963,-82 6983,-123 7040,-188 7090,-225 7127,-24
 #: note: kein explizites Radfahrverbot
 (Kamenzer Damm - Wunsiedeler Weg): Fuﬂg‰nger	q1 7776,3163 7769,3264 7789,3362 7800,3435 7788,3551 7737,3598 7694,3623 7555,3632
 Rehauer Pfad: enge Straﬂe	q1 7587,3411 7626,3554
-(zum Hafen Wannsee): Fuﬂg‰nger	q2 -4827,1433 -4791,1561 -4870,1464 -4905,1514
+#XXX del? --- (zum Hafen Wannsee): Fuﬂg‰nger	q2 -4827,1433 -4791,1561 -4870,1464 -4905,1514
 Appelbacher Weg: Rampe	q2 27780,893 27804,878
 Hallgarter Steig: eng und kurvig	q1 27890,373 27961,321 28042,304 28058,155 28086,90 28070,22 28083,-34 28065,-114 28042,-152
 Grottewitzwanderweg: eng, kurvig	q2 28042,-152 27852,-279 27825,-371 27703,-406 27624,-480 27605,-661 27573,-757 27603,-906 27562,-1043 27578,-1153 27539,-1337
@@ -1215,6 +1214,15 @@ Schillingweg: eng, parkende Autos	q1 11259,23928 11224,23879 11190,23832 11165,2
 (Tomatenweg - Straﬂe 175): sehr eng	q3 12500,22895 12515,22898 12532,22902
 (Schloﬂpark Schˆnhausen): Fuﬂg‰nger	q1 10600,19225 10638,19149
 Alex-Wedding-Str.: Fahrbahn gesperrt, Ausweichen auf Gehweg	q4 11085,13239 11045,13183
+(Braunlager Str. - Tempelhofer Weg): Fuﬂg‰nger	q2 12062,5779 12017,5747
+Am Vierling: Fuﬂg‰nger	q1 -472,4185 -444,4126
+#: note: der nˆrdliche Abschnitt hat getrennte Wege f¸r Fuﬂg‰nger und Radfahrer
+Mutter-Mochow-Weg: Fuﬂg‰nger	q1 -1849,2043 -1802,1919
+(zum Hafen Wannsee): Fuﬂg‰nger	q2 -4944,1298 -4903,1433 -4943,1439
+Ronnebypromenade: Fuﬂg‰nger	q2 -4905,1514 -4943,1439 -5002,1382 -5067,1400
+(Ronnebypromenade - Kˆnigstr.): Fuﬂg‰nger, Rampe	q3 -5067,1400 -5127,1392 -5135,1377
+(Paul-Krause-Str. - Borussenstr.): steil, eng	q3 -3983,2280 -3966,2291 -3972,2265 -3955,2283 -3938,2287
+Rehsprung: Fuﬂg‰nger	q1 -3521,1681 -3300,1663 -3236,1776 -3126,1858 -3098,1922 -3112,2106 -3156,2134 -3177,2205 -3284,2323 -3290,2420
 #
 ######################### User Contributions #################################
 # 
@@ -1360,16 +1368,19 @@ Poschingerstr.: enge Straﬂe	q1 5697,6276 5754,6238 5824,6240 5875,6262 5918,6301
 #: corrected_by: srt (q2 -> q1)
 Hˆltermannsteig: gemeinsamer Rad- und Gehweg	q1 13999,2727 13951,2801 13948,2910 13954,3035 13965,3222 14023,3276
 #XXX del --- #: by: Regine Bast: --- Eiswaldtstr.: schmale Straﬂe	q1 6722,2444 6834,2449 6965,2418 7051,2366 7172,2343 7282,2386
+# 
 #: by: Stefan Driesner: vvv
 Georg-Lehnig-Str.: enge Straﬂe	q1 14532,13563 14509,13481 14428,13507
 Erich-Kuttner-Str.: enge Straﬂe	q1 14584,13547 14532,13563 14428,13596 14370,13615 14323,13627 14217,13657 14184,13666 14117,13685 14088,13627
 #: by: ^^^
+# 
 #: by: Patryk (bigoudi): vvv
 #: corrected_by: srt (added "Bordstein")
 (Kˆnigsheideweg - Westweg): Weg durch den Park, Bordstein	q1 17115,4757 17129,4837 17173,4902
 #: confirmed_by: srt
 (Breiter Weg - S¸dostallee/Sterndamm): Fuﬂg‰nger	q1 17586,5374 17538,5315
 #: by: ^^^
+# 
 #: by: Dirk (gesch) vvv
 Birkenwerderstr.: enge Straﬂe mit parkenden Autos	q1 6470,20761 6945,20805
 # XXX deletion proposed by norbert winkelmann: Tornower Weg: enge Straﬂe mit parkenden Autos	q1 6452,20637 6457,20717 6470,20761 6496,20869 6501,20937 6514,20993 6544,21083
@@ -1377,6 +1388,7 @@ Borgsdorfer Str.: enge Straﬂe mit parkenden Autos	q1 6496,20869 6962,20895
 Germendorfer Str.: enge Straﬂe mit parkenden Autos	q1 6376,20951 6501,20937 6977,20984 7079,21000 7151,21012
 Wentowsteig: enge Straﬂe mit parkenden Autos	q1 6924,20695 6945,20805 6955,20859 6962,20895 6977,20984
 #: by: ^^^
+# 
 #: by: Peter Held:
 (Spreeuferweg): Fuﬂg‰nger	q1 4537,12531 4501,12544 4334,12551
 #: by: Johannes Nerger:
@@ -1385,23 +1397,28 @@ Wentowsteig: enge Straﬂe mit parkenden Autos	q1 6924,20695 6945,20805 6955,20859
 Nordufer: teilweise sehr schmaler Radweg	q1 7212,14738 7433,14656 7467,14632
 #: by: Jˆrn Busch:
 (Weg am Nordgraben): schmaler Weg, m‰ﬂiger Fuﬂg‰ngerverkehr	q2 3563,20589 3537,20624 3470,20683 3391,20746 3312,20789 3152,20852 3094,20905 3062,20923 3032,20930 2919,20910 2570,20837
+# 
 #: by: Hans-Reiner Padberg: vvv
 (Weg am Waldfriedhof Dahlem): Kurven	q2 1051,5525 825,5420 541,5306
 #: XXX_prog das gehˆrt eigentlich nach comments_mount...
 (Waldweg parallel zur Flanaganstr. zwischen H¸ttenweg und Im Jagen): starke Steigungen und Gef‰lle	q2 1051,5525 1697,5938
-(Altvaterstr./Breisgauer Str. - Salzachstr.): schmaler Fuﬂweg	q3 -2295,3523 -2253,3540 -2133,3591
+#: confirmed_by: srt
+(Breisgauer Str. - Parkplatz Einkaufszentrum): schmaler Fuﬂweg	q3 -2273,3460 -2211,3484 -2173,3513
 #: by: ^^^
+# 
 #: by: AndrÈ K‰ding
 Neustrelitzer Str.: kurvenreich	q1 16752,14745 16668,14765 16534,14740 16443,14825 16346,14750 16256,14828
 #: by: Sven Kr¸ger-G.:
 (Esplanade - Gr¸ntaler Str.): Zickzack-Kurs	q2 9984,16968 9880,16994 9846,16981
+# 
 #: by: anonymous, korrigiert [AM] vvv
 L¸nette: Fuﬂg‰nger	q1 -1342,15510 -1485,15463
 #: corrected_by: srt (q3 -> q1)
 Maselakeweg: Fuﬂg‰nger	q1 -2450,16981 -2410,16931 -2391,16788 -2391,16607 -2333,16590
 #: by: ^^^
+# 
 #: by: Micha Bustian
-Gritznerstr.: enge Straﬂe	q1 4291,5895 4370,6052 4414,6134 4430,6165 4472,6242 4507,6320 4555,6403 4630,6534 4679,6620 4734,6716
+Gritznerstr.: enge Straﬂe	q1 4312,5889 4370,6052 4414,6134 4430,6165 4472,6242 4507,6320 4555,6403 4630,6534 4679,6620 4734,6716
 #: by: Angela
 Im Jagen: Fuﬂg‰nger, Hundeauslaufgebiet	q1 905,6631 909,6584 1057,6461 1375,6138
 #: by: Patrik Marschalik vvv

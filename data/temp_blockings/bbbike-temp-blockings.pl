@@ -7900,7 +7900,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005266',
        data  => <<EOF,
-userdel	2::inwork 9670,5728 9457,5641 9368,5608 9147,5534
+userdel	2::inwork 9668,5733 9457,5641 9368,5608 9147,5534
 EOF
      },
      { from  => undef, # 
@@ -12730,7 +12730,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_010086',
        data  => <<EOF,
-userdel	1::inwork 9789,5767 9670,5728 9457,5641 9368,5608
+userdel	1::inwork 9796,5790 9668,5733 9457,5641 9368,5608
 EOF
      },
      { from  => 1223320675, # 2008-10-06 21:17
@@ -14852,7 +14852,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'LMS_1623809882',
        data  => <<EOF,
-userdel	2::inwork 9875,5561 9847,5630
+userdel	2::inwork 9893,5569 9863,5637
 EOF
      },
      { from  => 1247954400, # 2009-07-19 00:00
@@ -20034,7 +20034,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_018476',
        data  => <<EOF,
-userdel	q4::inwork 10029,5230 9955,5376
+userdel	q4::inwork 10029,5230 9974,5385
 EOF
      },
      { from  => 1330496400, # 2012-02-29 07:20

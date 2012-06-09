@@ -42,7 +42,7 @@ Bayerischer Platz	1 6063,9106 6053,9224 6084,9242 6131,9241 6161,9128 6152,9091 
 orthodoxe Kirche	1 3952,8980 3932,8989 3835,9044
 U-Bahn Dahlem	1 3216,6393 3123,6318 3023,6246 2950,6141 2898,5947 2823,5672 2797,5624 2746,5537 2523,5114 2469,5043 2313,4901 2190,4823 2079,4769 2027,4792
 U-Bahn Dahlem	1 2027,4792 2095,4805 2169,4854 2217,4884 2288,4932 2454,5067 2499,5144 2717,5578
-Am Groﬂen Wannsee	1 -5869,1261 -5848,1379 -5867,1449 -5901,1562 -5929,1649 -5961,1767 -6025,1991 -6021,2068 -5945,2381 -5749,2701 -5722,2714 -5663,2609 -5653,2481 -5719,2323 -5836,2119 -5883,1948 -5885,1786 -5815,1649 -5645,1504 -5588,1454 -5518,1396 -5499,1349
+Am Groﬂen Wannsee	1 -5869,1261 -5848,1379 -5867,1449 -5901,1562 -5929,1649 -5961,1767 -6025,1999 -6021,2068 -5945,2381 -5749,2701 -5722,2714 -5663,2609 -5653,2481 -5719,2323 -5836,2119 -5893,1969 -5903,1872 -5885,1791 -5815,1649 -5645,1504 -5588,1454 -5518,1396 -5499,1349
 Wilhelplatz	1 -7232,445 -7219,454 -7059,578
 Wilhelplatz	1 -7059,578 -7089,472 -7122,439 -7180,378
 Tempelhofer Weg	1 7499,7880 7268,8008 7193,7950
@@ -409,13 +409,11 @@ Oberlandgarten	1 11246,6403 11230,6413 11238,6470 11253,6473 11269,6466 11264,64
 Alt-Tempelhof	1 9512,6652 9249,6642 9154,6638 9054,6631 8949,6644 9052,6664 9247,6687 9338,6694 9512,6652
 Baumgartensteg	1 -2882,13474 -2937,13399
 Geisenheimer Str.	1 4391,7258 4462,7137 4530,7021
-Teutonenstr. (Nikolassee)	1 -3519,2180 -3610,2237 -3689,2267 -3742,2287
 Straﬂe zum FEZ	1 20716,6029 20593,6082 20428,6157 20453,6211 20623,6136 20708,6089
 Paul-Francke-Str.	1 9916,18610 9994,18595 10013,18545 10006,18502 9901,18522
 Zellerfelder Str.	1 11526,18929 11468,19106
 Storkower - Einsteinstr.	1 13110,14879 13143,14935 13185,14912 13151,14855
 Hˆnower Wiesenweg: Bahngel‰nde	2 17271,9159 17308,9090
-Hasselwerderstr	1 18268,5739 18164,5701 18023,5623
 Adlershofer Str.	1 21633,4355 21585,4459
 Adlershofer Str.	1 21633,4355 21649,4111 21655,4091 21679,4059
 Alt-Wittenau	1 4597,20778 4649,20771 4953,20624 5117,20517 4935,20574 4726,20690 4597,20778
@@ -692,6 +690,7 @@ Karlstadter Str.	1 11492,18347 11579,18184 11602,18133 11656,18013
 Gem¸ndener Str.	1 11622,18006 11586,18126 11514,18101 11495,18129 11395,18274
 (Alex-Wedding-Str. - Karl-Liebknecht-Str.)	1 11018,13286 11085,13239
 Dˆbrabergweg	1 9848,20926 9892,20776
+Reichsbahnstr.	2 -4648,1334 -4579,1397
 Am Neuen Garten	1 -12166,1384 -12212,1201 -12276,831 -12302,718
 Am Neuen Garten	1 -12332,585 -12582,127
 Hochstraﬂe	3nocross::ignrte -11399,-1339 -11461,-1424 -11540,-1543
@@ -1781,6 +1780,10 @@ Hohentwielst. -> Potsdamer Chaussee: Mittelstreifen	3::igndisp -479,2715 -567,28
 Mittelstreifen	3nocross::ignrte -391,2914 -267,2945 -151,2975
 Potsdamer Str. -> Werderstr.: Mittelstreifen	3::igndisp -391,2914 -267,2945 -309,3016
 Werderstr. -> Potsdamer Str.: Mittelstreifen	3::igndisp -309,3016 -267,2945 -151,2975
+Mittelstreifen	3nocross::ignrte -2280,2177 -2074,2258 -2023,2279
+Wiesenschlag -> Potsdamer Chaussee: Mittelstreifen	3::igndisp -2036,2150 -2074,2258 -2280,2177
+Mittelstreifen	3nocross::ignrte -2023,2279 -1959,2305 -1646,2434
+Potsdamer Chaussee -> Mutter-Mochow-Weg: Mittelstreifen	3::igndisp -1646,2434 -1959,2305 -1849,2043
 Straﬂenbahntrasse	3nocross::ignrte 22123,5452 22087,5404 22043,5346 21954,5229
 Bhf.str. -> Am Maria-Jankowski-Park: Straﬂenbahntrasse	3::igndisp 22043,5346 22087,5404 22018,5452
 Am Maria-Jankowski-Park -> Bhf.str.: Straﬂenbahntrasse	3::igndisp 22018,5452 22087,5404 22123,5452
@@ -1849,6 +1852,9 @@ abgeschlossenes Tor	3 8235,20109 8237,20098 8258,19983
 abgeschlossenes Tor	3 8258,19983 8237,20098 8235,20109
 abgeschlossenes Tor	3 8288,20128 8291,20112 8315,19993
 abgeschlossenes Tor	3 8315,19993 8291,20112 8288,20128
+tragen (5 x 10 Stufen)	0:60:10 -3646,1539
+tragen (41 Stufen)	0:45:-193 -3813,2459
+tragen (18 Stufen)	0:30:-20 -1802,1919
 tragen (15 Stufen)	0:25:-42 115,2340
 tragen (viele weite Stufen)	0:60:49 -735,4407
 tragen (20 Stufen)	0:30:-255 13644,21808
@@ -2034,6 +2040,8 @@ tragen (Treppe, ca. 20 Stufen)	0:25:-12 19160,14935
 tragen (Treppe)	0:30:70 89344,-5795
 tragen, langgezogene Stufen (13 Stufen)	0:25:-168 20704,1383
 tragen (31 Stufen oder Kinderwagenrampe)	0:40:-256 13168,21706
+Dr‰ngelgitter und Stufe	BNP:5:-26:trailer=15 -2704,2431
+Dr‰ngelgitter	BNP:3:-17:trailer=10 -2675,2336
 Dr‰ngelgitter	BNP:3:-245:trailer=10 13604,21825
 Dr‰ngelgitter und Tor	BNP:7:74:trailer=15 20783,-1266
 Dr‰ngelgitter und Tor	BNP:7:74:trailer=15 20396,-1370
@@ -2465,6 +2473,8 @@ Kˆnigsmarckstr. -> Hohenzollerndamm: Mittelstreifen schlecht zu queren	3::igndis
 Hohenzollerndamm -> Kˆnigsmarckstr.: Mittelstreifen schlecht zu queren	3::igndisp 2036,7653 2094,7719 1971,7738
 Mittelstreifen	3nocross::ignrte 1136,3878 1152,3918 1214,4075
 Biesalskistr. -> Clayallee: Mittelstreifen	3::igndisp 1130,3930 1152,3918 1214,4075
+Mittelstreifen	3nocross::ignrte 623,4902 844,4916 922,4910
+Argentinische Allee -> Zum Holzungsweg: Mittelstreifen	3::igndisp 623,4902 844,4916 755,5017
 Adele-Schreiber-Krieger-Str.	1s 8737,12757 8596,12748
 Virchowweg: schmale Toreinfahrt, Fuﬂg‰nger und Bordstein	0:10:86 8548,13577
 tragen (ca. 20 Stufen)	0:45:-98 8536,12758

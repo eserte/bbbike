@@ -1293,7 +1293,7 @@ userdel	q4::inwork; -1872,24336 -1790,24260 -1627,24105 -1367,23853 -1286,23753 
          'text' => 'Colditzstr. (Tempelhof): Baustelle, gesperrt in beiden Richtungen zwischen Ullsteinstr. und Volkmarstr., 29.02.2012 09:54 Uhr bis 15.06.2012 16:00 Uhr ',
          'from' => 1330419240,
          'id' => 2318,
-         'data' => 'userdel	q4::inwork 10029,5230 9955,5376
+         'data' => 'userdel	q4::inwork 10029,5230 9974,5385
 ',
          'type' => 'handicap'
        },

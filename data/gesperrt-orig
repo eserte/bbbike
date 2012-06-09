@@ -56,7 +56,7 @@ Bayerischer Platz	1 6063,9106 6053,9224 6084,9242 6131,9241 6161,9128 6152,9091 
 orthodoxe Kirche	1 3952,8980 3932,8989 3835,9044
 U-Bahn Dahlem	1 3216,6393 3123,6318 3023,6246 2950,6141 2898,5947 2823,5672 2797,5624 2746,5537 2523,5114 2469,5043 2313,4901 2190,4823 2079,4769 2027,4792
 U-Bahn Dahlem	1 2027,4792 2095,4805 2169,4854 2217,4884 2288,4932 2454,5067 2499,5144 2717,5578
-Am Großen Wannsee	1 -5869,1261 -5848,1379 -5867,1449 -5901,1562 -5929,1649 -5961,1767 -6025,1991 -6021,2068 -5945,2381 -5749,2701 -5722,2714 -5663,2609 -5653,2481 -5719,2323 -5836,2119 -5883,1948 -5885,1786 -5815,1649 -5645,1504 -5588,1454 -5518,1396 -5499,1349
+Am Großen Wannsee	1 -5869,1261 -5848,1379 -5867,1449 -5901,1562 -5929,1649 -5961,1767 -6025,1999 -6021,2068 -5945,2381 -5749,2701 -5722,2714 -5663,2609 -5653,2481 -5719,2323 -5836,2119 -5893,1969 -5903,1872 -5885,1791 -5815,1649 -5645,1504 -5588,1454 -5518,1396 -5499,1349
 Wilhelplatz	1 -7232,445 -7219,454 -7059,578
 Wilhelplatz	1 -7059,578 -7089,472 -7122,439 -7180,378
 Tempelhofer Weg	1 7499,7880 7268,8008 7193,7950
@@ -508,8 +508,6 @@ Alt-Tempelhof	1 9512,6652 9249,6642 9154,6638 9054,6631 8949,6644 9052,6664 9247
 Baumgartensteg	1 -2882,13474 -2937,13399
 #: by: Brüning:
 Geisenheimer Str.	1 4391,7258 4462,7137 4530,7021
-#: by: Matthias Müller:
-Teutonenstr. (Nikolassee)	1 -3519,2180 -3610,2237 -3689,2267 -3742,2287
 Straße zum FEZ	1 20716,6029 20593,6082 20428,6157 20453,6211 20623,6136 20708,6089
 #: by: Butch Coolidge:
 Paul-Francke-Str.	1 9916,18610 9994,18595 10013,18545 10006,18502 9901,18522
@@ -519,8 +517,6 @@ Zellerfelder Str.	1 11526,18929 11468,19106
 Storkower - Einsteinstr.	1 13110,14879 13143,14935 13185,14912 13151,14855
 #: by: Ilka (64)
 Hönower Wiesenweg: Bahngelände	2 17271,9159 17308,9090
-#: by: where_are_you_between:
-Hasselwerderstr	1 18268,5739 18164,5701 18023,5623
 #: by: Norbert Rupsch: vvv
 #: confirmed_by: srt
 Adlershofer Str.	1 21633,4355 21585,4459
@@ -898,6 +894,8 @@ Karlstadter Str.	1 11492,18347 11579,18184 11602,18133 11656,18013
 Gemündener Str.	1 11622,18006 11586,18126 11514,18101 11495,18129 11395,18274
 (Alex-Wedding-Str. - Karl-Liebknecht-Str.)	1 11018,13286 11085,13239
 Döbrabergweg	1 9848,20926 9892,20776
+#: note: eine Absperrkette kann hier hängen
+Reichsbahnstr.	2 -4648,1334 -4579,1397
 ######################################################################
 #
 # Potsdam
@@ -1370,6 +1368,8 @@ Rhinstr.: Straßenbahngleise	3nocross 17488,15766 17532,15645 17569,15561 17626,1
 Potsdamer Chaussee: Mittelstreifen	3nocross -1249,2590 -1085,2653 -984,2692 -870,2737
 Potsdamer Chaussee: Mittelstreifen	3nocross -870,2737 -756,2787 -726,2799 -567,2869 -512,2883 -391,2914
 Potsdamer Chaussee: Mittelstreifen	3nocross -391,2914 -267,2945 -151,2975
+Potsdamer Chaussee: Mittelstreifen	3nocross -2280,2177 -2074,2258 -2023,2279
+Potsdamer Chaussee: Mittelstreifen	3nocross -2023,2279 -1959,2305 -1646,2434
 Bahnhofstr.: Straßenbahntrasse	3nocross 22123,5452 22087,5404 22043,5346 21954,5229
 Dörpfeldstr.: Straßenbahngleise	3nocross 20834,4035 21053,4162 21146,4229
 #: note: theoretisch wäre das Linksabbiegen von der Fahrbahn aus möglich, aber der Radweg ist benutzungspflichtig
@@ -1406,6 +1406,9 @@ abgeschlossenes Tor	3 * 8291,20112 *
 # Stellen, an denen getragen werden muß:
 # die Zahl hinter dem ":" entspricht ungefähr den verlorenen Sekunden
 # 
+tragen (5 x 10 Stufen)	0:60 -3646,1539
+tragen (41 Stufen)	0:45 -3813,2459
+tragen (18 Stufen)	0:30 -1802,1919
 tragen (15 Stufen)	0:25 115,2340
 tragen (viele weite Stufen)	0:60 -735,4407
 tragen (20 Stufen)	0:30 13644,21808
@@ -1663,6 +1666,8 @@ tragen (31 Stufen oder Kinderwagenrampe)	0:40 13168,21706
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+Drängelgitter und Stufe	BNP:5::trailer=15 -2704,2431
+Drängelgitter	BNP:3::trailer=10 -2675,2336
 Drängelgitter	BNP:3::trailer=10 13604,21825
 Drängelgitter und Tor	BNP:7::trailer=15 20783,-1266
 Drängelgitter und Tor	BNP:7::trailer=15 20396,-1370
@@ -2238,6 +2243,7 @@ Clayallee: Mittlestreifen wg. Leitplanke nicht zu queren	3nocross 1955,7531 1967
 Clayallee: Mittelstreifen schlecht zu queren	3nocross 2116,7740 2094,7719 2036,7653
 #: by: MichaelM
 Clayallee: Mittelstreifen	3nocross 1136,3878 1152,3918 1214,4075
+Argentinische Allee: Mittelstreifen	3nocross 623,4902 844,4916 922,4910
 # XXX --- zurzeit (2012-03-16) wegen Bauarbeiten Einbahnstraße in andere Richtung --- Am Zirkus	1 9239,12923 9170,13031 9145,13020 9118,13070
 Adele-Schreiber-Krieger-Str.	1s 8737,12757 8596,12748
 Virchowweg: schmale Toreinfahrt, Fußgänger und Bordstein	0:10 8548,13577
