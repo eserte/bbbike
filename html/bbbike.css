@@ -208,3 +208,21 @@ a.ms:visited { color:#333333; }
   padding:3px;
   text-align:center;
 }
+
+/* Tag cloud */
+span.htmltagcloud {
+  text-align:  center; 
+  line-height: 1; 
+}
+span.htmltagcloud a { text-decoration: none; }
+span.tagcloud0 { font-size: 7px; }
+span.tagcloud1 { font-size: 8px; }
+span.tagcloud2 { font-size: 9px; }
+span.tagcloud3 { font-size: 10px; }
+span.tagcloud4 { font-size: 11px; }
+span.tagcloud5 { font-size: 12px; }
+span.tagcloud6 { font-size: 13px; }
+span.tagcloud7 { font-size: 14px; }
+span.tagcloud8 { font-size: 15px; }
+span.tagcloud9 { font-size: 16px; }
+span.tagcloud10 { font-size: 17px; }

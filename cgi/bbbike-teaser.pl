@@ -29,7 +29,8 @@ sub teaser {
 				#teaser_kreisfahrt_adfc(), # schaltet sich selbstständig ab
 				teaser_android0(),
 				(1 ? teaser_perltk_newrelease() : teaser_perltk()),
-				teaser_other_cities(),
+				#teaser_other_cities(),
+				teaser_other_cities_tagcloud(),
 				teaser_beta(),
 				#teaser_mapserver(),
 				#teaser_fahrradstadt(),
@@ -43,7 +44,8 @@ sub teaser {
 				#teaser_kreisfahrt_adfc(), # schaltet sich selbstständig ab
 				teaser_android0(),
 				(1 ? teaser_perltk_newrelease() : teaser_perltk()),
-				teaser_other_cities(),
+				#teaser_other_cities(),
+				teaser_other_cities_tagcloud(),
 				#teaser_beta(), # XXX There's no beta version in English yet!
 				#teaser_mapserver(),
 				#_teaser_is_iphone() ? teaser_iphone() : (),
@@ -219,8 +221,6 @@ EOF
 }
 
 sub teaser_other_cities {
-    my @l = localtime; $l[4]++;$l[5]+=1900;
-    my $is_new = $l[5]<2010 && $l[4]<5;
     my $url = "http://www.bbbike.org/";
     if ($lang eq 'en') {
 	<<EOF;
@@ -235,6 +235,37 @@ EOF
 </div>
 EOF
     }
+}
+
+sub teaser_other_cities_tagcloud {
+    my $url = "http://www.bbbike.org/";
+    my $lang = $lang eq 'en' ? 'en' : 'de';
+    my $teaser = "";
+    if ($lang eq 'en') {
+	$teaser .= <<EOF;
+<span class="teaser">BBBike for <a href="http://www.bbbike.org/">other</a> cities:</span>
+EOF
+    } else {
+	$teaser .= <<EOF;
+<span class="teaser">BBBike für <a href="http://www.bbbike.org/">weitere</a> Städte:</span>
+EOF
+    }
+    $teaser .= <<"EOF";
+<span class="htmltagcloud">
+<span class="tagcloud4"><a href="http://www.bbbike.org/$lang/BrandenburgHavel/">Brandenburg (Havel)</a></span>
+<span class="tagcloud5"><a href="http://www.bbbike.org/$lang/Cottbus/">Cottbus</a></span>
+<span class="tagcloud6"><a href="http://www.bbbike.org/$lang/Dresden/">Dresden</a></span>
+<span class="tagcloud5"><a href="http://www.bbbike.org/$lang/FrankfurtOder/">Frankfurt (Oder), M&auml;rkische Schweiz</a></span>
+<span class="tagcloud6"><a href="http://www.bbbike.org/$lang/Leipzig/">Leipzig</a></span>
+<span class="tagcloud4"><a href="http://www.bbbike.org/$lang/Oranienburg/">Oranienburg Uckermark</a></span>
+<span class="tagcloud5"><a href="http://www.bbbike.org/$lang/Potsdam/">Potsdam-Mittelmark, Fl&auml;ming</a></span>
+<span class="tagcloud4"><a href="http://www.bbbike.org/$lang/Usedom/">Usedom</a></span>
+<span class="tagcloud3"><a href="http://www.bbbike.org/$lang/WarenMueritz/">Waren (M&uuml;ritz)</a></span>
+<span class="tagcloud3"><a href="http://www.bbbike.org/$lang/Ruegen/">R&uuml;gen</a></span>
+<a href="http://www.bbbike.org/">...</a>
+</span>
+EOF
+    $teaser;
 }
 
 sub teaser_iphone {
