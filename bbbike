@@ -4562,15 +4562,15 @@ $sx->grid(-row => 1, -column => 0, -sticky => 'ew');
     $indicator_frame = $status_frame->Frame
 	->grid(-row => 0, -column => $gridx++, -sticky => "ew");
     if ($advanced) {
+	$edit_mode_type = $indicator_frame->Label
+	    (-text => '', -relief => 'sunken')
+		->pack(-side => "left");
 	$edit_mode_indicator = $indicator_frame->$Checkbutton
 	    (-text => 'EDIT',
 	     -variable => \$edit_mode_flag,
 	     -command => sub {
 		 set_edit_mode();
 	     })->pack(-side => "left");
-	$edit_mode_type = $indicator_frame->Label
-	    (-text => '', -relief => 'sunken')
-		->pack(-side => "left");
 	gui_set_edit_mode($edit_mode);
     }
     $balloon->configure(-statusbar => $status_label);
