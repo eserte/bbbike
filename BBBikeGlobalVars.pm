@@ -116,7 +116,7 @@ use vars qw(
      %layer_pre_leave_command %layer_post_leave_command
      $crossings $all_outline %str_attrib %p_attrib %category_attrib
      $init_choose_street %init_str_draw %str_draw %occupied_layer
-     %init_p_draw %p_draw %str_outline $auto_show_list
+     %init_p_draw %p_draw %p_sub_draw %str_outline $auto_show_list
      %str_name_draw %str_nr_draw %p_name_draw %str_far_away %p_far_away
      %p_regions %str_regions
      $init_from $init_to $coloring $route_dashed $route_arrowed $route_below

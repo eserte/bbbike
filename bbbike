@@ -464,11 +464,9 @@ if ($devel_host && !grep { "danger" eq $_ } @Strassen::Dataset::comments_types) 
     push @Strassen::Dataset::comments_types, "danger";
 }
 @comments_types = @Strassen::Dataset::comments_types;
-$str_draw{'s'} = 1;      # draw streets by default
-$p_draw{'pp'}  = 0;      # do not draw crossings by default
-$p_draw{"pp-all"} = 0;   # pp drawing only for the tag types below:
-for (qw(s l r b u w f v e z g gP gD gBO sBAB fz wr)) { $p_draw{"pp-$_"} = 1} # this list should cover most keys of %str_file (but not the dependent ones like "comm" or "qs")
-$p_draw{'lsa'} = 1;
+$init_str_draw{'s'} = 1;      # draw streets by default
+for (qw(s l r b u w f v e z g gP gD gBO sBAB fz wr)) { $p_sub_draw{"pp-$_"} = 1} # this list should cover most keys of %str_file (but not the dependent ones like "comm" or "qs")
+$init_p_draw{'lsa'} = 1;
 $p_far_away{'o'} = 0;
 $str_restrict{'s'}  = {qw(BAB 0 B 1 HH 1 H 1 NH 1 N 1 NN 1 Pl 0 Br 0)}; # Pl = places, Br = bridges
 # NOTE: This is misused for getting all valid RBahn categories:
@@ -526,7 +524,6 @@ $sperre{'einbahn-strict'} = 0;
 $sperre{'sperre'} = 1;
 $sperre{'wegfuehrung'} = 1;
 $sperre{'Q3'} = 0;
-$p_draw{'sperre'} = 0;
 $sperre_file = "gesperrt";
 # immediate_replot: 0 = none, 1 = immediate, 2 = deferred
 my($immediate_replot, $immediate_recalc) = (1, 1);
@@ -4600,16 +4597,13 @@ if ($cursor{"watch"}) {
 }
 ######################################################################
 
+# Read as early as possible; to prevent inconsinstencies especially in lazy mode
+read_ampeln() unless $lowmem;
+
 if (defined $set_mode && $set_mode eq 'edit') {
     require BBBikeAdvanced;
     set_edit_mode(1);
-#     #XXX inefficient!
-#     switch_edit_standard_mode();
-#     $lazy_plot = 1;
-}
-# special case 'pp':
-if ($init_p_draw{'pp'} && !defined $set_mode) {
-    $p_draw{'pp'} = 1;
+    $init_p_draw{pp} = 1;
 }
 # XXX hack: if any of $wasserstadt/umland/... is set, then
 # $init_str_draw{w} should also be set
@@ -4631,11 +4625,7 @@ foreach (keys %init_str_draw) {
 	if $splash_screen;
 }
 foreach (keys %init_p_draw) {
-    if ($_ eq 'pp' && defined $set_mode) {
-	# XXX already set
-    } else {
-	$p_draw{$_}   = $init_p_draw{$_};
-    }
+    $p_draw{$_} = $init_p_draw{$_};
     eval {
 	plot('p',$_)     if $p_draw{$_};     # Punkte (z.B. Ampeln) zeichnen
     };
@@ -4647,7 +4637,6 @@ foreach (keys %init_p_draw) {
 }
 # Höhen einlesen
 read_hoehe()  if $show_grade || $steigung_optimierung || $use_hoehe;
-read_ampeln() unless $lowmem;
 read_sperre_tragen() unless $lowmem;
 plot_sperre() if $p_draw{'sperre'};
 activate_temp_blockings(1) if $do_activate_temp_blockings;
@@ -6478,7 +6467,7 @@ sub generate_plot_functions {
 			last TRY;
 		    }
 		    push @coordlist, $transpose->($xx, $yy);
-		    if ($p_draw{'pp'} && ($p_draw{"pp-$abk"}||$p_draw{"pp-all"})) {
+		    if ($p_draw{'pp'} && ($p_sub_draw{"pp-$abk"}||$p_sub_draw{"pp-all"})) {
 			my($x, $y) = @coordlist[$#coordlist-1 .. $#coordlist];
 			my $pp_cross_or_kurve_tag;
 ## This is not correct and therefore not used.
@@ -11503,7 +11492,6 @@ sub plot_point {
 
     my($ampel_photo, $ampelf_photo, $andreaskr_photo, $andreaskr_grey_photo, $zugbruecke_photo);
     if ($abk eq 'lsa') {
-	undef %ampeln;
 	$ampel_photo      = get_symbol_scale('lsa-X');
 	$ampelf_photo     = get_symbol_scale('lsa-F');
 	$andreaskr_photo  = get_symbol_scale('lsa-B');

@@ -1644,7 +1644,7 @@ sub advanced_coord_menu {
 		 $p_draw{'pp'} = 0;
 	     });
 	$bpcm->checkbutton(-label => M"pp für alle zukünftigen Layer",
-			   -variable => \$p_draw{'pp-all'});
+			   -variable => \$p_sub_draw{'pp-all'});
     }
     $bpcm->cascade(-label => M('Kurvenpunkte/Kreuzungen'));
     {
@@ -3025,9 +3025,6 @@ sub switch_edit_standard_mode {
 	$do_flag{'start'} = $do_flag{'ziel'} = 1; # XXX better solution
 	local $lazy_plot = 1;
 	set_remember_plot() unless $init;
-
-	$p_draw{'pp'} = 1; # XXX This is also set in @edit_mode_cmd,
-                           # but maybe setting there is too late?
 
 	$c->center_view
 	    (transpose($coord_system_obj->standard2map($oldx, $oldy)),
