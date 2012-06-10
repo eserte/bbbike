@@ -1443,6 +1443,16 @@ userdel	q3::inwork; 10713,15746 10953,15787 11086,15772
          'data' => 'userdel	q4::inwork; 8900,20601 9025,20611 9161,20622 9174,20623 9295,20632 9460,20644
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => 'INKO_113476',
+         'until' => 1339437600,
+         'text' => 'Oberspreestr., Sperrung des Bahnübergangs, Radfahrer können über Fußgängerumleitung langsam passieren bis 11.06.2012 20:00 Uhr ',
+         'from' => 1339099200,
+         'id' => 2344,
+         'data' => 'userdel	q4::inwork 19328,5304 19405,5284 19445,5271
+',
+         'type' => 'handicap'
        }
      
 );
