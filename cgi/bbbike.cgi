@@ -104,7 +104,7 @@ use vars qw($VERSION $VERBOSE $WAP_URL
 	    $use_region_image
 	    $include_outer_region @outer_berlin_places $outer_berlin_qr
 	    $warn_message $use_utf8 $data_is_wgs84 $osm_data
-	    $bbbike_start_js_version
+	    $bbbike_start_js_version $bbbike_css_version
 	   );
 # XXX This may be removed one day
 use vars qw($use_cooked_street_data);
@@ -840,6 +840,7 @@ $nice_berlinmap = 0;
 $nice_abcmap    = 0;
 
 $bbbike_start_js_version = '1.23';
+$bbbike_css_version = '1.01';
 
 use vars qw(@b_and_p_plz_multi_files %is_usable_without_strassen %same_single_point_optimization);
 @b_and_p_plz_multi_files = 
@@ -6700,7 +6701,7 @@ sub header {
     delete @args{qw(-contents -up)};
     my $printmode = delete $args{-printmode};
     if ($bi->{'can_css'} && !exists $args{-style}) {
-	$args{-style} = {-src => "$bbbike_html/" . ($printmode ? "bbbikeprint" : "bbbike") . ".css"};
+	$args{-style} = {-src => "$bbbike_html/" . ($printmode ? "bbbikeprint" : "bbbike") . ".css?v=" . $bbbike_css_version};
 #XXX del:
 #  <<EOF;
 #  $std_css
