@@ -1499,6 +1499,10 @@ sub BBBikeHeavy::reload_all {
     if ($change{"p"}->{"hoehe"}) {
 	read_hoehe(-force => 1);
     }
+    # and for ampel layers
+    if ($change{"p"}->{"ampeln"}) {
+	read_ampeln("force");
+    }
 
     $progress->InitGroup;
     while(my($linetype, $v) = each %change) {
