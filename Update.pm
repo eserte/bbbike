@@ -225,8 +225,6 @@ sub create_modified {
     my $destdir = $args{-dest};
     my $datadir = $destdir . "/data";
     my(@files) = @{$args{-files}};
-    my(%modified) = %{$args{-modified}};
-    my(%md5) = %{$args{-md5}};
     eval {
 	open(MOD, ">$datadir/.modified~") or die $!;
 	my @errors;
@@ -236,7 +234,7 @@ sub create_modified {
 		push @errors, "$destdir/$file: $!";
 		next;
 	    }
-	    print MOD join("\t", $file, $stat[9], $md5{$file}), "\n"
+	    print MOD join("\t", $file, $stat[9], "?"), "\n"
 		or die $!;
 	}
 	if (@errors) {
@@ -326,8 +324,6 @@ sub bbbike_data_update {
 		   );
 	create_modified(-dest => $rootdir,
 			-files => \@files,
-			-modified => \%modified,
-			-md5 => \%md5,
 		       );
 	main::reload_all();
     } else {
