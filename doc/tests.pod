@@ -584,6 +584,10 @@ Unter Unix würde sofort angefangen werden zu drucken (vielleicht).
 
 =head3 Update über das Internet testen
 
+=over
+
+=item Alternative 1
+
     * Entweder eine alte Distribution in /tmp auspacken oder einen
       älteren git-Stand in /tmp auschecken
 
@@ -601,6 +605,32 @@ Unter Unix würde sofort angefangen werden zu drucken (vielleicht).
 
     * Ein diff sollte keine/kaum Unterschiede zum neuesten Stand
       anzeigen.
+
+=item Alternative 2
+
+    * Folgende Kommandos ausführen (vorherige und jetzige
+      BBBike-Version ändern falls notwendig):
+
+	make dist-to-tmp
+	cd /tmp/BBBike-3.18-DEVEL
+	mv data data-new
+	tar --strip-components=1 -xvf ~/src/bbbike-distfiles/BBBike-3.17.tar.gz BBBike-3.17/data
+
+    * BBBike starten: ./bbbike -public &
+
+    * Update-Menüpunkt testen
+
+    * Wurde alles wie erwartet geladen? Wurden alle Layer automatisch
+      aktualisiert?
+
+    * Sehen die Einträge in access.log auf dem Server wie erwartet
+      aus? Sieht der User-Agent in Ordnung aus? Gibt es einige 304er?
+
+    * BBBike neu starten und nochmal das Update testen. Geht das
+      Update nun viel schneller? Gibt es auf dem Server nur noch
+      304er?
+
+=back
 
 =head2 Unwichtige Tests
 
