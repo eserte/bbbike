@@ -19937,7 +19937,8 @@ EOF
 #: note: am 2012-03-09 geprüft, Radfahrer konnten problemlos passieren
 #: note: am 2012-04-27 geprüft, Fahrbahn ist absperrt (nur die Straßenbahn wird durchgelassen), Radfahrer können nur den Gehweg benutzen
 #: note: am 2012-05-30 geprüft, Radfahrer konnten problemlos passieren
-userdel	q3::inwork 10723,14772 10838,14962
+#: note: am 2012-06-12 geprüft, Fahrbahn ist absperrt (nur die Straßenbahn wird durchgelassen), Radfahrer können nur den Gehweg benutzen
+userdel	q4::inwork 10723,14772 10838,14962
 EOF
      },
      { from  => 1295269680, # 2011-01-17 14:08
@@ -20072,8 +20073,8 @@ EOF
        type  => 'handicap',
        source_id => 'l.epperlein',
        data  => <<EOF,
-#: last_checked: 2012-04-27
-userdel	q4::inwork 11436,14741 11271,14755
+#: last_checked: 2012-06-12 (mittlerweile nur ein kleinerer Abschnitt an der Kollwitzstr. gesperrt)
+userdel	q3::inwork 11436,14741 11271,14755
 EOF
      },
      { from  => 1335556039, # 2012-04-27 21:47
@@ -20199,8 +20200,8 @@ EOF
 userdel	q3::inwork; 14434,11465 14369,11489 14305,11514
 EOF
      },
-     { from  => undef, # 
-       until => undef, # XXX
+     { from  => 1339536578, # undef, # 
+       until => 1339536579, # undef, # XXX
        text  => 'Sredzkistr. zwischen Schönhauser Allee und Knaackstr: Teile der Fahrbahn gesperrt, Ausweichen auf Gehweg',
        type  => 'handicap',
        data  => <<EOF,
@@ -20272,6 +20273,16 @@ EOF
        source_id => 'INKO_113476',
        data  => <<EOF,
 userdel	q4::inwork 19328,5304 19405,5284 19445,5271
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Oderberger Str./Schwedter Str.: Bauarbeiten, Fahrbahn ist gesperrt. Dauer der Sperrung ist unbekannt.',
+       type  => 'handicap',
+       data  => <<EOF,
+#: last_checked: 2012-06-12
+userdel	q4::inwork 10401,14963 10379,14963 10370,14946 10380,14911
+userdel	q4::inwork 10379,14963 10366,14992
 EOF
      },
     );

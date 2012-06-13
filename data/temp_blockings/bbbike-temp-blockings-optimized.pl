@@ -1214,7 +1214,8 @@ userdel	2::inwork 19750,11730 19827,11686 19881,11591
          'data' => '#: note: am 2012-03-09 geprüft, Radfahrer konnten problemlos passieren
 #: note: am 2012-04-27 geprüft, Fahrbahn ist absperrt (nur die Straßenbahn wird durchgelassen), Radfahrer können nur den Gehweg benutzen
 #: note: am 2012-05-30 geprüft, Radfahrer konnten problemlos passieren
-userdel	q3::inwork 10723,14772 10838,14962
+#: note: am 2012-06-12 geprüft, Fahrbahn ist absperrt (nur die Straßenbahn wird durchgelassen), Radfahrer können nur den Gehweg benutzen
+userdel	q4::inwork 10723,14772 10838,14962
 ',
          'type' => 'handicap'
        },
@@ -1326,8 +1327,8 @@ Am Schloss Schönhausen	2::night 10249,19148 10350,19182
          'text' => 'Sredzkistr.: Fahrbahn zwischen Husemannstr. und Kollwitzstr. komplett gesperrt. Dauer der Sperrung ist unbekannt.',
          'from' => undef,
          'id' => 2322,
-         'data' => '#: last_checked: 2012-04-27
-userdel	q4::inwork 11436,14741 11271,14755
+         'data' => '#: last_checked: 2012-06-12 (mittlerweile nur ein kleinerer Abschnitt an der Kollwitzstr. gesperrt)
+userdel	q3::inwork 11436,14741 11271,14755
 ',
          'type' => 'handicap'
        },
@@ -1380,16 +1381,7 @@ userdel	q4::inwork 11436,14741 11271,14755
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => undef,
-         'text' => 'Sredzkistr. zwischen Schönhauser Allee und Knaackstr: Teile der Fahrbahn gesperrt, Ausweichen auf Gehweg',
-         'from' => undef,
-         'id' => 2337,
-         'data' => '#: last_checked: 2012-06-05
-userdel	q4::inwork 10893,14705 11101,14768
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'source_id' => 'IM_018829',
@@ -1444,13 +1436,15 @@ userdel	q3::inwork; 10713,15746 10953,15787 11086,15772
 ',
          'type' => 'handicap'
        },
+       undef,
        {
-         'source_id' => 'INKO_113476',
-         'until' => 1339437600,
-         'text' => 'Oberspreestr., Sperrung des Bahnübergangs, Radfahrer können über Fußgängerumleitung langsam passieren bis 11.06.2012 20:00 Uhr ',
-         'from' => 1339099200,
-         'id' => 2344,
-         'data' => 'userdel	q4::inwork 19328,5304 19405,5284 19445,5271
+         'until' => undef,
+         'text' => 'Oderberger Str./Schwedter Str.: Bauarbeiten, Fahrbahn ist gesperrt. Dauer der Sperrung ist unbekannt.',
+         'from' => undef,
+         'id' => 2345,
+         'data' => '#: last_checked: 2012-06-12
+userdel	q4::inwork 10401,14963 10379,14963 10370,14946 10380,14911
+userdel	q4::inwork 10379,14963 10366,14992
 ',
          'type' => 'handicap'
        }
