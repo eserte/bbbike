@@ -284,6 +284,9 @@ eval {
     }
 
     if ($is_multipart) {
+	$msg->attach(Type => "text/plain; charset=$charset",
+		     Data => $encoded_plain_body,
+		    );
 	if (defined $add_html_body && $add_html_body ne "") {
 	    my $add_html_body_bytes;
 	    if (eval { require Encode; 1 }) {
@@ -296,9 +299,6 @@ eval {
 			 Filename => "newstreetform.html",
 			);
 	}
-	$msg->attach(Type => "text/plain; charset=$charset",
-		     Data => $encoded_plain_body,
-		    );
 	if (defined $add_bbd && $add_bbd ne "") {
 	    my $add_bbd_bytes;
 	    if (eval { require Encode; 1 }) {
