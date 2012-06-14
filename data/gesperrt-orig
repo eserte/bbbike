@@ -202,7 +202,6 @@ Martin-Wagner-Ring	1 12796,3821 12895,3991 12941,4015 12995,4003 13007,3949 1291
 Wilskistr.	1 -402,4012 -343,4056 -303,4086 -219,4149 -158,4236 27,4447 195,4588 301,4643 418,4696 528,4747 636,4765 798,4766
 Grazer Platz	1 6442,6788 6529,6798 6679,6816 6793,6814
 Grazer Platz	1 6801,6736 6686,6735 6546,6720 6517,6717 6451,6710
-Goltzstr. (Spandau)	1 -2838,16951 -2946,16869 -3031,16807
 Putlitzstr.	1 6267,14184 6264,13995 6226,13951
 Langhansstr. (außer Tram)	1 12046,16568 12189,16578 12409,16475
 Triftstr. (Buchholz)	1 12018,23040 12178,23034
@@ -609,13 +608,15 @@ Bernkasteler Str.	1s:q3 15208,16939 15015,16908 14923,16901 14923,16914
 Wiedenbrücker Weg	1 4207,1113 4220,1175 4141,1282
 #: by: Kamai:
 Am Langen Weg:	1 -7033,14984 -7024,14880 -7015,14772 -7011,14693 -7013,14578
+# 
 #: by: Beate Wolter
 #: confirmed_by: sandor
 #: corrected_by: srt (der Sackgassenabschnitt ist natürlich keine Einbahnstraße)
-#: XXX evtl. wird die Einbahnstraßenregelung für Radfahrer aufgehoben
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/bvv-online/vo020.asp?VOLFDNR=4183&options=4
 #: next_check: 2012-05-15
+#: add_fragezeichen: Wurde die Einbahnstraßenregelung in der Hans-Sachs-Str. für Radfahrer aufgehoben?
 Hans-Sachs-Str.	1 3141,4023 3214,4066
+# 
 #: by: anonymous
 #: confirmed_by: srt
 Wehneltsteig	1 1256,14217 1305,14384
@@ -896,6 +897,8 @@ Gemündener Str.	1 11622,18006 11586,18126 11514,18101 11495,18129 11395,18274
 Döbrabergweg	1 9848,20926 9892,20776
 #: note: eine Absperrkette kann hier hängen
 Reichsbahnstr.	2 -4648,1334 -4579,1397
+#: by: Kay Leonhardt:
+Dorstener Str.	1 3590,644 3691,566
 ######################################################################
 #
 # Potsdam
@@ -1196,7 +1199,7 @@ Sterndamm: Straßenbahntrasse	3nocross 17645,5328 17601,5090 17542,4772
 Alt-Biesdorf: unbequemes Passieren des Mittelstreifens	3nocross 21960,11269 22242,11269 22326,11266
 Konrad-Wolf-Str./Große-Leege-Str.: wegen Absperrgitter nicht überquerbar	3nocross 16961,16042 16917,16001 16819,15912
 Knoten am Flughafen Tegel: Mittelstreifen nicht passierbar	3nocross 2996,15771 2960,15847 2913,15944 2819,16141
-Königsberger Str.: Mittelstreifen nicht passierbar	3nocross 4251,2637 4212,2675 4164,2717
+Königsberger Str.: Mittelstreifen nicht passierbar	3nocross 4343,2607 4284,2626 4251,2637 4212,2675 4164,2717
 Berliner Str.: Straßenbahntrasse	3nocross 10897,17274 10892,17330 10886,17396
 Berliner Str.: Straßenbahntrasse	3nocross 10886,17396 10880,17469 10878,17490
 #: note: Luftbild:

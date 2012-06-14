@@ -179,7 +179,6 @@ Martin-Wagner-Ring	1 12796,3821 12895,3991 12941,4015 12995,4003 13007,3949 1291
 Wilskistr.	1 -402,4012 -343,4056 -303,4086 -219,4149 -158,4236 27,4447 195,4588 301,4643 418,4696 528,4747 636,4765 798,4766
 Grazer Platz	1 6442,6788 6529,6798 6679,6816 6793,6814
 Grazer Platz	1 6801,6736 6686,6735 6546,6720 6517,6717 6451,6710
-Goltzstr. (Spandau)	1 -2838,16951 -2946,16869 -3031,16807
 Putlitzstr.	1 6267,14184 6264,13995 6226,13951
 Langhansstr. (außer Tram)	1 12046,16568 12189,16578 12409,16475
 Triftstr. (Buchholz)	1 12018,23040 12178,23034
@@ -691,6 +690,7 @@ Gemündener Str.	1 11622,18006 11586,18126 11514,18101 11495,18129 11395,18274
 (Alex-Wedding-Str. - Karl-Liebknecht-Str.)	1 11018,13286 11085,13239
 Döbrabergweg	1 9848,20926 9892,20776
 Reichsbahnstr.	2 -4648,1334 -4579,1397
+Dorstener Str.	1 3590,644 3691,566
 Am Neuen Garten	1 -12166,1384 -12212,1201 -12276,831 -12302,718
 Am Neuen Garten	1 -12332,585 -12582,127
 Hochstraße	3nocross::ignrte -11399,-1339 -11461,-1424 -11540,-1543
@@ -1133,7 +1133,9 @@ Knoten am Flughafen Tegel -> Knoten am Flughafen Tegel: Mittelstreifen nicht pas
 Knoten am Flughafen Tegel -> Knoten am Flughafen Tegel: Mittelstreifen nicht passierbar	3::igndisp 2949,15922 2913,15944 2880,15908
 Knoten am Flughafen Tegel -> Zum Flughafen Tegel: Mittelstreifen nicht passierbar	3::igndisp 2949,15922 2913,15944 2960,15847
 Zum Flughafen Tegel -> Knoten am Flughafen Tegel: Mittelstreifen nicht passierbar	3::igndisp 2960,15847 2913,15944 2880,15908
-Mittelstreifen nicht passierbar	3nocross::ignrte 4251,2637 4212,2675 4164,2717
+Mittelstreifen nicht passierbar	3nocross::ignrte 4343,2607 4284,2626 4251,2637 4212,2675 4164,2717
+Königsberger Str. -> Eduard-Spranger-Promenade: Mittelstreifen nicht passierbar	3::igndisp 4251,2637 4284,2626 4655,3060
+Eduard-Spranger-Promenade -> Königsberger Str.: Mittelstreifen nicht passierbar	3::igndisp 4655,3060 4284,2626 4343,2607
 Paul-Schwarz-Promenade -> Königsberger Str.: Mittelstreifen nicht passierbar	3::igndisp 4261,2703 4212,2675 4251,2637
 Paul-Schwarz-Promenade -> Teltowkanalpromenade: Mittelstreifen nicht passierbar	3::igndisp 4261,2703 4212,2675 4193,2616
 Königsberger Str. -> Teltowkanalpromenade: Mittelstreifen nicht passierbar	3::igndisp 4251,2637 4212,2675 4193,2616

@@ -7193,7 +7193,7 @@ Tollensestr.: guter Asphalt	Q0 22563,13340 22594,13408
 Freienwalder Str. (Gesundbrunnen): Kopfsteinpflaster	Q2 9331,16624 9435,16832 9503,16988
 Heidenauer Str.: guter Asphalt	Q0 24402,14683 24328,14702 24306,14692 24249,14668 24228,14644 24146,14594
 Ferdinandstr. (Lichterfelde): glattes Pflaster	Q1 5656,1882 5642,1912 5631,1937
-Ferdinandstr. (Lichterfelde): Kopfsteinpflaster	Q2 5631,1937 5592,2021
+Ferdinandstr. (Lichterfelde): Basaltpflaster	Q2 5631,1937 5592,2021
 Ferdinandstr. (Lichterfelde): guter Asphalt	Q0 5592,2021 5525,2161 5420,2379 5398,2422
 Rodenbergstr.: m‰ﬂiger Asphalt	Q2 10989,16197 11253,16118 11358,16067 11500,15988
 J‰nschwalder Str.: Asphalt	Q0 25234,14501 25318,14462 25356,14491 25418,14538
@@ -10271,7 +10271,8 @@ Veilchenstr.: Kopfsteinpflaster	Q2 3501,4435 3597,4494
 Gundelfinger Str.: Kleinpflastersteine	Q2 18735,9421 18697,9153 18653,8922 18609,8717
 Brauhausstr.: guter Asphalt	Q0 12211,16688 12017,16734
 Ilsensteinweg: Kopfsteinpflaster	Q2 -1885,3319 -1899,3298 -1825,3066 -1819,3042 -1814,3021 -1724,2743 -1626,2441
-Schillerstr. (Lichterfelde): schlechtes Kopfsteinpflaster	Q3 4429,2396 4568,2424 4721,2449 4868,2370 4963,2318 5033,2279
+Schillerstr. (Lichterfelde): Asphalt	Q0 4429,2396 4568,2424
+Schillerstr. (Lichterfelde): schlechtes Kopfsteinpflaster	Q3 4568,2424 4721,2449 4868,2370 4963,2318 5033,2279
 Lehndorffstr.: schlechtes Kopfsteinpflaster	Q3 18401,8636 18397,8611 18407,8592 18428,8588 18448,8602
 Lehndorffstr.: schlechtes Kopfsteinpflaster	Q3 18407,8592 18322,8470
 Lehndorffstr.: glatter/ausgebesserter Asphalt	Q0 18322,8470 18221,8328 18215,8316 18269,8161 18333,8059 18412,7985
@@ -10549,7 +10550,7 @@ Goyastr.: Beton	Q0 12859,16255 12900,16341
 Scharnweberstr. (Weiﬂensee): Beton	Q0 12797,16285 12841,16366
 Treutelstr.: m‰ﬂiger Asphalt	Q1 5422,19725 5345,19734 5318,19723
 Hafersteig: guter Beton	Q0 21150,13493 21113,13142 21078,12824 21064,12769 20975,12620 20862,12420 20853,12388 20839,12209
-Jenbacher Weg: Verbundsteinpflaster	Q1 6398,590 6411,533 6233,412 6180,376 5987,256 5800,138 5703,74 5671,52
+Jenbacher Weg: Verbundsteinpflaster	Q1 6398,590 6411,533 6233,412 6180,376 5987,256 5800,138 5703,74 5415,-113
 Krischanweg: m‰ﬂiger Beton	Q1 13853,4356 13964,4333 14012,4184
 Pirmasenser Str.: m‰ﬂiger Asphalt	Q1 -4442,15675 -4568,15708 -4639,15726
 Lˆssauer Str.: guter Asphalt	Q0 16816,15092 17230,15083
@@ -11376,6 +11377,9 @@ Menzer Weg: Beton	Q0 -1064,1696 -1054,1616
 Am Posseberg: guter Asphalt	Q0 12632,25569 12436,25580 12396,25478 12138,24989 12261,24851
 Silzer Weg: relativ glattes Pflaster	Q1 5688,312 5795,371 5867,412 5925,417
 Silzer Weg: Asphalt	Q0 5929,389 6130,449
+Sotzmannstr.: guter Asphalt	Q0 -4725,12883 -4679,12989 -4663,13023
+(Sotzmannstr. - Seeburger Str.): Gehwegplatten	Q0 -4663,13023 -4634,13173
+(Sotzmannstr. - P‰wesiner Weg): Kleinpflastersteine	Q1 -4679,12989 -4731,13135
 Rebenweg (Staaken): Sandweg, teilweise lose	Q2 -6266,12017 -6483,11710
 Akazienweg (Staaken): Sandweg, teilweise lose	Q2 -6527,11731 -6305,12048
 Bauersfeldzeile: Beton	Q0 -5858,11955 -5806,11926
@@ -11401,6 +11405,16 @@ Ditfurter Str.: guter Asphalt	Q0 13887,21714 13950,21935
 Schm¸ckertstr.: Asphalt	Q0 -80,1682 -117,1836
 Weg A (Blankenfelde): m‰ﬂiger fester Sandweg	Q2 10700,23251 10549,23550
 Albiger Weg: Beton	Q0 -2837,2194 -2841,2258 -2929,2255 -2934,2186
+Akazienstr. (Lichterfelde): m‰ﬂiges Kopfsteinpflaster	Q2 5103,2311 5136,2235
+Brauerplatz: guter Asphalt	Q0 4979,1964 5004,1939 4964,1890
+Dorstener Str.: guter Asphalt	Q0 3691,566 3590,644
+Draisweg: gutes Verbundsteinpflaster	Q1 5364,1049 5408,1076 5493,935
+Fahrenheitstr. - Celsiusstr.: guter Belag (teils Betonplatten, teils kleinteiliges Pflaster)	Q1 4510,669 4436,621
+Eduard-Spranger-Promenade: m‰ﬂiger Belag, viel Splitt	Q2 4284,2626 4655,3060 4862,3363 4951,3516
+Frauenstr.: Basaltpflaster	Q2 4963,2318 5056,2481
+Kirchmeisterweg: m‰ﬂiges kleinteiliges Kopfsteinpflaster, wellige Straﬂenoberfl‰che	Q2 4980,1870 4958,1844 5007,1718 5035,1723
+Schillerstr. (Lichterfelde): gutes Kopfsteinpflaster	Q1 5033,2279 5071,2169 4995,2090
+Tuxer Steig: gute Betonplatten	Q0 5878,729 5853,729 5742,671
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206
 Richard-Ermisch-Str.: Asphalt	Q0 14245,13268 14224,13206 14207,13152 14177,13065 14163,13025 14130,12926 14096,12827
 Zum Langen Jammer: Kopfsteinpflaster, Gehweg besser	Q2 14686,12873 14405,12953

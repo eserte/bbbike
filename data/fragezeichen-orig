@@ -324,19 +324,6 @@ Bidenswinkel/Silberweidenweg: wird hier noch ein Strang der Straße entstehen? Qu
 #: next_check: 2012-09-01
 Edith-Stein-Str.: Qualität nach den Bauarbeiten? Genaue Lage der Straße?	?::inwork 14084,13232 14048,13116
 # 
-#: last_checked: 2011-07-09 vvv
-#: next_check: 2012-06-01 vvv
-Ellen-Widmann-Pfad: Existiert die Straße schon? Qualität? Wo liegt die Straße genau?	? 3750,2285 3830,2285
-Ines-Bolla-Pfad: Existiert die Straße schon? Qualität? Wo liegt die Straße genau?	? 3747,2335 3854,2332
-Maggy-Breittmayer-Pfad: Existiert die Straße schon? Qualität? Wo liegt die Straße genau?	? 3747,2383 3880,2382
-#: next_check ^^^
-Waadter Zeile: nochmal prüfen, ob die Straße vielleicht doch existiert	? 3716,2063 3725,2173
-#: last_checked ^^^
-# 
-#: last_checked: 2011-07-09
-#: next_check: 2011-08-31
-Holbeinstr.: Bauarbeiten, wie ist die Fahrbahnbeschaffenheit danach?	?::inwork 3492,3371 3626,3465
-# 
 #: last_checked: 2011-06-25
 #: next_check: 2011-10-15
 Dürergärten, westlicher Ring: noch in Bau	?::inwork 25865,12860 25794,12720 25923,12814
@@ -713,7 +700,6 @@ Oppermannstr.: Steigung?	? 21617,16061 21598,16055
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/32re.pdf/file
 #: XXX der südliche Abscnitt ist für den Kfz-Verkehr gesperrt (siehe Amtsblatt)
 Wohngebiet Ortolfstr.: Qualität?	? 19210,-85 19208,-224 19214,-313 19058,-292
-Oberhofer Platz: Vorfahrtsregelung?	? 5434,2122 5406,2110 5376,2097 5431,1956 5452,1940 5474,1940 5491,1955 5489,1981 5434,2122
 Rauchstr.: hier gibt es wohl teilweise Radwege?	? -3009,17090 -2728,17038
 Edelhofdamm: auch Kopfsteinpflaster? Einbahnstraße?	? 3446,25628 3277,25575
 #: XXX_prog: Bodenschwellen vvv
@@ -2170,7 +2156,6 @@ Patrizierweg (Potsdam): Qualität östlich der Mendelssohn-Bartholdy-Str.?	? -7855
 Gluckstr. (Potsdam): Qualität?	? -7832,-2864 -7491,-2904
 Scharfschwerdtstr. (Hohen Neuendorf): Qualität?	? 1364,27953 1426,28065 1456,28125 1453,28175 1448,28276 1432,28356 1489,28451 1536,28550 1698,28742 1838,28808
 Richard-Wagner-Str. (Groß Glienicke): Qualität im westlichen Abschnitt?	? -10234,5804 -10347,5874 -10467,5948
-Tuxer Steig: Qualität?	? 5878,729 5853,729 5742,671
 Hainleiteweg: Qualität?	? -4805,15596 -4772,15702
 Tangermünder Weg: Qualität?	? -4294,15525 -4137,15512
 Am Heimhort: Qualität?	? -4317,15298 -4117,15255 -4084,15264
@@ -2402,13 +2387,6 @@ Westerwaldstr.: Qualität?	? -5039,15618 -5023,15688 -5000,15769 -5010,15787 -505
 # XXX del nur ein sehr enger Weg vorhanden --- lohnt nicht --- Waldpromenade: Qualität? Nachts beleuchtet? Für Autos offen?	? 23481,8119 23385,8217 22865,8588
 Existiert für Radfahrer eine Verbindung zwischen Straße 618 und Weg am Rudower Fließ? Qualität?	? 16297,592 16268,604
 #XXX del --- scheint nicht zu existieren? --- #: XXX_osm fehlt bei osm --- Straße 180: Qualität? Wo liegt die Straße genau?	? 16739,193 16765,165
-Akazienstr. (Lichterfelde): Qualität?	? 5103,2311 5136,2235
-Frauenstr.: Qualität?	? 4963,2318 5056,2481
-Schillerstr. (Lichterfelde): Qualität?	? 5033,2279 5071,2169 4995,2090
-Draisweg: Qualität?	? 5364,1049 5408,1076 5493,935
-Jenbacher Weg: geht der Jenbacher Weg bis zur Osdorfer Str. weiter?	? 5671,52 5415,-113
-Dorstener Str.: Qualität? Einbahnstraßenregelung?	? 3691,566 3590,644
-Kirchmeisterweg: Qualität?	? 4980,1870 4958,1844 5007,1718 5035,1723
 #XXX Das ist nur eine Aldi-Zufahrt oder so --- #: XXX_osm: bei osm ohne Straßennamen --- Waadter Zeile: Qualität? Für Autos gesperrt? Existiert eine Verbindung zur Goerzallee?	? 3726,2209 3729,2126
 #: XXX_osm: bei osm ohne Straßennamen
 #: XXX laut tvojpl. etc. gehts weiter Richtung Süden bis Ravensteiner Promenade, aber nicht erkennbar
@@ -2962,10 +2940,6 @@ Mauswieselweg: Qualität? Wo liegt die Straße genau?	?::inwork 26289,12772
 # 
 # XXX del #: XXX_osm bei osm ohne Namen --- in Realität auch nicht --- Mühlenweg (Bohnsdorf): Qualität? Ist die Straße ausgeschildert?	? 20675,-526 20668,-251
 Börnicke - Staffelde: existieren Radwege zwischen Börnicke und Staffelde?	? -21772,30661 -20747,31713 -19914,32444 -19361,33130 -19129,33814 -18939,34241 -18555,34920 -18212,35362
-#: by: http://www.cdu-fraktion-tk.de/image/inhalte/file/Amtsblatt_Nr__24_vom_18__Juni_2010.pdf (Straßenname)
-#: XXX fehlt bei Berlin.coords.data
-#: note: Name ab 2010-08-16
-Sotzmannstr.: Qualität? Ist das tatsächlich die Sotzmannstr.?	? -4629,12835 -4558,12992 -4610,13010 -4601,13112 -4634,13173
 #XXX del --- hier ist nur ein Einkaufszentrum --- #: XXX fehlt bei Berlin.coords.data: --- Märkische Zeile: gibt es tatsächlich einen Weg diesen Namens hier? Für Radfahrer relevant?	? 6855,21481 6874,21183
 Langenbeckstr.: ist die gesamte Straße asphaltiert?	? 24793,9860 25020,9728
 # 
@@ -2997,8 +2971,6 @@ An der Wasserstadt: wo genau befindet sich dieser Rad- und Fußweg?	? -2484,16835
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/04re.pdf/file
 #: XXX Privatstraße
 Via Tilia: Qualität? Wo liegt die Straße genau?	? -7384,-970 -7326,-1047
-# 
-Fahrenheitstr. - Celsiusstr.: Existiert eine Durchfahrt für Radfahrer? Qualität?	? 4510,669 4436,621
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/48re.pdf/file
 #: note: Privatstraße
@@ -3361,10 +3333,8 @@ Fichtengrund (Hönow): Qualität im nördlichen Abschnitt?	? 25790,14277 25840,1441
 Florastr.: Qualität des südlichen Abschnitts?	? 25055,12609 24975,12518 24907,12425 24862,12362 24847,12306 24873,12202
 #: XXX womöglich auch schlechtes Kopfsteinpflaster?
 Lübzer Str.: Qualität des westlichen Abschnitts?	? 24775,13218 24968,13121 25118,13041
-Heinersdorfer Str.: Ist die Heinersdorfer Str. eine Vorfahrtstraße?	? 5201,1227 5221,1307 5275,1446 5304,1523 5338,1612 5396,1774
 Gallwitzallee - Geraerstr./Trippsteinstr.: Existiert eine direkte Verbindung für Radfahrer? Qualität? Ist der Weg nachts beleuchtet?	? 6768,2143 6692,2024 6526,1688
 Verlängerung der Seydlitzstr.: Qualität? Ist der Weg nachts beleuchtet? Ausschilderung?	? 6658,2079 6692,2024
-Eduard-Spranger-Promenade: Qualität? Für Radfahrer (legal) befahrbar? Ist der Weg nachts beleuchtet? Ausschilderung?	? 4298,2651 4655,3060 4862,3363 4951,3516
 # 
 #: XXX Kasernengelände, fehlen alle bei Berlin.coords.data vvv
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/30re.pdf/file vvv
@@ -3554,3 +3524,18 @@ Ludwigsfelder Str. - Neuruppiner Str.: Qualität? Beleuchtet?	? -419,1643 -419,15
 #: XXX an der Sachtlebenstr. Gehwegplatten; Ausschilderung "Zum Ramsteinweg"
 Ramsteinweg - Sachtlebenstr.: Qualität? Beleuchtet?	? 581,670 523,684 481,731 400,765 332,819 247,822
 Blaubeerweg: Qualität des nördlichen Abschnitts: Kopfsteinpflaster oder unbefestigte Straße	? 10864,22469 10827,22647
+Oberhofer Platz: Wie ist die Vorfahrtsregelung im Oberhofer Platz?	? 5434,2122 5406,2110 5376,2097 5431,1956 5452,1940 5474,1940 5491,1955 5489,1981 5434,2122
+# 
+#: last_checked: 2011-07-09 vvv
+#: next_check: 2012-06-01 vvv
+Ellen-Widmann-Pfad: Existiert die Straße schon? Qualität? Wo liegt die Straße genau?	? 3750,2285 3830,2285
+Ines-Bolla-Pfad: Existiert die Straße schon? Qualität? Wo liegt die Straße genau?	? 3747,2335 3854,2332
+Maggy-Breittmayer-Pfad: Existiert die Straße schon? Qualität? Wo liegt die Straße genau?	? 3747,2383 3880,2382
+#: next_check ^^^
+#: XXX nochmal prüfen, ob die Straße vielleicht doch existiert?
+Waadter Zeile: Existiert die Straße schon? Qualität? Wo liegt die Straße genau?	? 3716,2063 3725,2173
+#: last_checked ^^^
+# 
+#: last_checked: 2011-07-09
+#: next_check: 2011-08-31
+Holbeinstr.: Sind die Bauarbeiten zwischen Potsdamer Str. und Drakestr. beendet? Wie ist die Fahrbahnbeschaffenheit?	?::inwork 3492,3371 3626,3465
