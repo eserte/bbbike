@@ -899,6 +899,8 @@ Döbrabergweg	1 9848,20926 9892,20776
 Reichsbahnstr.	2 -4648,1334 -4579,1397
 #: by: Kay Leonhardt:
 Dorstener Str.	1 3590,644 3691,566
+#: by: mmholz...:
+Selmaplatz	1 -391,4313 -384,4268 -396,4261 -405,4281 -407,4303 -391,4313
 ######################################################################
 #
 # Potsdam
@@ -1409,6 +1411,8 @@ abgeschlossenes Tor	3 * 8291,20112 *
 # Stellen, an denen getragen werden muß:
 # die Zahl hinter dem ":" entspricht ungefähr den verlorenen Sekunden
 # 
+#: by: mmholz...
+tragen (4 Stufen)	0:10 -440,4554
 tragen (5 x 10 Stufen)	0:60 -3646,1539
 tragen (41 Stufen)	0:45 -3813,2459
 tragen (18 Stufen)	0:30 -1802,1919
@@ -2041,9 +2045,10 @@ Tegeler Hafen: Weg gesperrt	2 1630,20731 1668,20670 1687,20645 1697,20623 1721,2
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1106/nachricht4396.html
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1110/nachricht4504.html
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1201/nachricht4557.html
+#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1206/nachricht4691.html
 #: last_checked: 2012-04-07
 #: next_check: 2012-06-15
-Hüttenweg: Sperrung wegen Bau an der Autobahn, wahrscheinlich bis Mitte Juni 2012	2:inwork -739,6838 -927,6888
+Hüttenweg: Sperrung wegen Bau an der Autobahn, wahrscheinlich bis Ende November 2012	2:inwork -739,6838 -927,6888
 # 
 #: last_checked: 2012-04-28
 #: next_check: 2012-07-15

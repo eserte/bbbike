@@ -1596,7 +1596,9 @@ M¸hlenfeldstr.: Betonstraﬂe	Q0 3707,22864 3720,22755 3739,22693 3743,22642 3753,
 (Tegeler Flieﬂ - M¸hlenfeldstr.): Waldweg, OK	Q2 3753,22534 3767,22466
 Gˆtzestr.: gutes Kopfsteinpflaster	Q1 3908,22709 3743,22642
 (Weg am Tegeler Flieﬂ): Waldweg, OK	Q2 4251,22829 4166,22725 4114,22690 4087,22714 4044,22690
-(Weg am Tegeler Flieﬂ): Waldweg, viele matschige Stellen	Q3 5645,23968 5409,23816 5297,23633 5214,23420 5242,23156 5232,23139 5205,23094 5127,23042 5054,23025 4801,22897 4718,22891 4626,22914
+(Weg am Tegeler Flieﬂ): Waldweg, viele matschige Stellen	Q3 5645,23968 5409,23816 5297,23633 5214,23420 5242,23156 5232,23139
+(Weg am Tegeler Flieﬂ): Waldweg, viele matschige Stellen	Q3 5232,23139 5205,23094 5127,23042 5054,23025 4801,22897
+(Weg am Tegeler Flieﬂ): Waldweg, viele matschige Stellen	Q3 4801,22897 4718,22891 4626,22914
 (Weg am Tegeler Flieﬂ): Waldweg, viele matschige Stellen	Q3 4619,22934 4402,22877 4306,22914 4163,22907
 (Weg am Tegeler Flieﬂ): Holzbohlenweg	Q2 5860,24067 5693,24037 5645,23968
 (Weg am Tegeler Flieﬂ): Feldweg, teilweise nur einspurig, matschige Stellen	Q3 5860,24067 5965,24047 6084,24073 6259,23947
@@ -6517,7 +6519,7 @@ Am Hirschsprung: Asphalt	Q0 2054,6840 2159,6578 2180,6428 2193,6302 2219,6231
 Ottmachauer Steig: Gehwegplatten	Q0 -369,4631 -337,4657 -424,4717 -435,4687
 Selmaplatz: Beton	Q0 -361,4334 -391,4313 -407,4303 -405,4281 -396,4261 -384,4268 -391,4313
 Heppenheimer Weg: Gehwegplatten	Q0 -500,4409 -459,4422 -404,4442 -349,4466 -283,4495 -227,4538
-Viernheimer Weg: Gehwegplatten	Q0 -311,4637 -354,4603 -401,4572 -446,4552 -493,4529 -548,4511
+Viernheimer Weg: Gehwegplatten	Q0 -311,4637 -354,4603 -401,4572 -440,4554 -446,4552 -493,4529 -548,4511
 Jugenheimer Weg: Gehwegplatten	Q0 -517,4463 -472,4476 -424,4495 -376,4521 -319,4550 -268,4588
 Grumbacher Weg: Verbundsteinpflaster	Q1 -531,4599 -591,4558
 Lindenfelser Weg - Alsbacher Weg: Gehwegplatten	Q0 -831,4636 -824,4682
@@ -11390,7 +11392,7 @@ Messterweg: Beton	Q0 -6171,12309 -6081,12264 -5988,12221
 Hensoldtweg: Beton	Q0 -6081,12264 -6144,12187
 Baedekerweg: Asphalt	Q0 -5352,12620 -5307,12585 -5244,12622 -5212,12591
 Meyerweg: Asphalt	Q0 -6438,14770 -6313,14749 -6115,14646 -5990,14587
-Siebenendenweg: fester Sandweg	Q1 404,3970 118,4332 27,4447
+Siebenendenweg: glatte wassergebundene Decke	Q1 404,3970 118,4332 27,4447
 Siebenendenweg: Asphalt	Q0 27,4447 -6,4491 -22,4512 -62,4564
 Priesterstege: Asphalt	Q0 13524,21053 13562,20913
 Rosskastanienhof: Verbundsteinpflaster	Q1 8055,20708 8190,20658 8191,20622
@@ -11415,6 +11417,11 @@ Frauenstr.: Basaltpflaster	Q2 4963,2318 5056,2481
 Kirchmeisterweg: m‰ﬂiges kleinteiliges Kopfsteinpflaster, wellige Straﬂenoberfl‰che	Q2 4980,1870 4958,1844 5007,1718 5035,1723
 Schillerstr. (Lichterfelde): gutes Kopfsteinpflaster	Q1 5033,2279 5071,2169 4995,2090
 Tuxer Steig: gute Betonplatten	Q0 5878,729 5853,729 5742,671
+(Argentinische Allee - Quermatenweg): geflickter Asphalt oder wassergebundene Decke (18km/h)	Q2 -62,4564 -232,4753 -382,4870 -469,4995
+(H¸ttenweg - Jagdschloﬂ Grunewald): breiter, fester Waldweg	Q1 869,6085 866,6328 880,6645
+Kellenzeile: Beton	Q0 5885,20478 5747,20640 5660,20727 5565,20822
+Rosenpl¸terweg: Verbundsteinpflaster	Q1 3657,26240 3439,26192 3328,26193
+Bulgenbachweg: Verbundsteinpflaster	Q1 3439,26192 3452,26160 3478,26119 3520,26081 3574,26060 3647,26060
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206
 Richard-Ermisch-Str.: Asphalt	Q0 14245,13268 14224,13206 14207,13152 14177,13065 14163,13025 14130,12926 14096,12827
 Zum Langen Jammer: Kopfsteinpflaster, Gehweg besser	Q2 14686,12873 14405,12953

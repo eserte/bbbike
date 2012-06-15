@@ -129,10 +129,10 @@ Fischerstr.: Kopfsteinpflaster	Q2 16032,10842 16080,10743 16187,10587
 Fischerstr.: Kopfsteinpflaster	Q2 15982,10765 16080,10743
 Wallensteinstr./Neuer Feldweg: mäßiges bis schlechtes Kopfsteinpflaster	Q2- 17378,9715 17360,9629 17425,9605 17456,9594 17549,9529 18037,9195 18120,9100 18136,9072
 Dönhoffstr.: Kopfsteinpflaster/Asphalt	Q1 18136,9072 18201,8984
-#: add_fragezeichen: Bis zu welcher Kreuzung ist die Halker Zeile asphaltiert?
-#: XXX Im Norden ist noch immer schlechtes KS
+#: confirmed_by: Sabine Plagens vvv
 Halker Zeile: schlechtes Kopfsteinpflaster	Q3 9940,559 10063,251 10156,13 10214,-142 10266,-284
 Halker Zeile: Asphalt	Q0 10266,-284 10374,-552 10473,-799
+#: confirmed_by ^^^
 #: by: Jürgen Schulz-Brüssel
 (Am Bahndamm): sehr guter Asphalt	Q0 18698,9996 18715,10003 18773,10028 19116,10173 19675,10410 19711,10426
 Alemannenstr.: gutes Kopfsteinpflaster	Q1 -3360,2917 -3452,2868 -3509,2817 -3617,2671 -3686,2579
@@ -1787,7 +1787,12 @@ Mühlenfeldstr.: Betonstraße	Q0 3707,22864 3720,22755 3739,22693 3743,22642 3753,
 (Tegeler Fließ - Mühlenfeldstr.): Waldweg, OK	Q2 3753,22534 3767,22466
 Götzestr.: gutes Kopfsteinpflaster	Q1 3908,22709 3743,22642
 (Weg am Tegeler Fließ): Waldweg, OK	Q2 4251,22829 4166,22725 4114,22690 4087,22714 4044,22690
-(Weg am Tegeler Fließ): Waldweg, viele matschige Stellen	Q3 5645,23968 5409,23816 5297,23633 5214,23420 5242,23156 5232,23139 5205,23094 5127,23042 5054,23025 4801,22897 4718,22891 4626,22914
+(Weg am Tegeler Fließ): Waldweg, viele matschige Stellen	Q3 5645,23968 5409,23816 5297,23633 5214,23420 5242,23156 5232,23139
+#: XXX nach den Bauarbeiten bessere Qualität?
+#: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20120612.1440.371422.html
+#: next_check: 2012-08-03
+(Weg am Tegeler Fließ): Waldweg, viele matschige Stellen	Q3 5232,23139 5205,23094 5127,23042 5054,23025 4801,22897
+(Weg am Tegeler Fließ): Waldweg, viele matschige Stellen	Q3 4801,22897 4718,22891 4626,22914
 (Weg am Tegeler Fließ): Waldweg, viele matschige Stellen	Q3 4619,22934 4402,22877 4306,22914 4163,22907
 (Weg am Tegeler Fließ): Holzbohlenweg	Q2 5860,24067 5693,24037 5645,23968
 (Weg am Tegeler Fließ): Feldweg, teilweise nur einspurig, matschige Stellen	Q3 5860,24067 5965,24047 6084,24073 6259,23947
@@ -6966,7 +6971,7 @@ Am Hirschsprung: Asphalt	Q0 2054,6840 2159,6578 2180,6428 2193,6302 2219,6231
 Ottmachauer Steig: Gehwegplatten	Q0- -369,4631 -337,4657 -424,4717 -435,4687
 Selmaplatz: Beton	Q0- -361,4334 -391,4313 -407,4303 -405,4281 -396,4261 -384,4268 -391,4313
 Heppenheimer Weg: Gehwegplatten	Q0- -500,4409 -459,4422 -404,4442 -349,4466 -283,4495 -227,4538
-Viernheimer Weg: Gehwegplatten	Q0- -311,4637 -354,4603 -401,4572 -446,4552 -493,4529 -548,4511
+Viernheimer Weg: Gehwegplatten	Q0- -311,4637 -354,4603 -401,4572 -440,4554 -446,4552 -493,4529 -548,4511
 Jugenheimer Weg: Gehwegplatten	Q0- -517,4463 -472,4476 -424,4495 -376,4521 -319,4550 -268,4588
 Grumbacher Weg: Verbundsteinpflaster	Q1 -531,4599 -591,4558
 Lindenfelser Weg - Alsbacher Weg: Gehwegplatten	Q0- -831,4636 -824,4682
@@ -19086,8 +19091,8 @@ Baedekerweg: Asphalt	Q0 -5352,12620 -5307,12585 -5244,12622 -5212,12591
 Meyerweg: Asphalt	Q0 -6438,14770 -6313,14749 -6115,14646 -5990,14587
 # 
 #: by: Susanne Kempa:
-#: XXX Wiederspruch von bene...finti (WALTER): Asphalt, enge Straße, q0, aber keine Angabe zur Sperrung
-Siebenendenweg: fester Sandweg	Q1 404,3970 118,4332 27,4447
+#: confirmed_by: mmholz (fester Sandweg -> glatte wassergebundene Decke)
+Siebenendenweg: glatte wassergebundene Decke	Q1 404,3970 118,4332 27,4447
 #: corrected_by: srt (fester Sandweg -> Asphalt)
 Siebenendenweg: Asphalt	Q0 27,4447 -6,4491 -22,4512 -62,4564
 # 
@@ -19148,6 +19153,32 @@ Frauenstr.: Basaltpflaster	Q2 4963,2318 5056,2481
 Kirchmeisterweg: mäßiges kleinteiliges Kopfsteinpflaster, wellige Straßenoberfläche	Q2 4980,1870 4958,1844 5007,1718 5035,1723
 Schillerstr. (Lichterfelde): gutes Kopfsteinpflaster	Q1 5033,2279 5071,2169 4995,2090
 Tuxer Steig: gute Betonplatten	Q0 5878,729 5853,729 5742,671
+#: by: ^^^
+# 
+#: by: mmholz... vvv
+#: note: "und insgesamt okay"
+#: note: "kurz vor Quermatenweg 3-4 Entwässerungsrinnen (langsam fahren). Immer wieder Gefälle."
+(Argentinische Allee - Quermatenweg): geflickter Asphalt oder wassergebundene Decke (18km/h)	Q2 -62,4564 -232,4753 -382,4870 -469,4995
+#: note "gut zu fahren, eben"
+(Hüttenweg - Jagdschloß Grunewald): breiter, fester Waldweg	Q1 869,6085 866,6328 880,6645
+#: by: ^^^
+# 
+#: by: sterntaler (123):
+#: confirmed_by: Ulrike G. (guter Beton)
+#: note: "einige Fußgänger, q1" ignoriert, weitere Notiz: "Kinder spielen auf der Straße"
+Kellenzeile: Beton	Q0 5885,20478 5747,20640 5660,20727 5565,20822
+# 
+#: by: Karsten Denkler vvv
+#: note: "kleine, kurze Siedlungsstraße, links/rechts Sandstreifen als Parkstreifen/Fußweg"
+Rosenplüterweg: Verbundsteinpflaster	Q1 3657,26240 3439,26192 3328,26193
+#: XXX: viele widersprüchliche Angaben:
+#: XXX: Siegfried Wernik: Verbundsteinpflaster, Q2+
+#: XXX: widersprüchliche Angabe von lesz...: gutes Kopfsteinpflaster, Q1, Sandbanketten
+#: XXX: weiterer Eintrag von anonymous: Kopfsteinpflaster ohne weitere Angabe, enge Straße, q2
+#: XXX: weiterer Eintrag von Anonymous: Verbundsteinpflaster, Q0
+#: XXX: weiterer Eintrag von Kristina (lidi.b..): Kopfsteinpflaster, Q2, enge Straße q0, "schmale Bürgersteig"
+#: note: go with: Karsten Denkler: Verbundsteinpflaster, Q1, enge Straße, q1, "kleine Siedlungsstrasse, nur eine Spur, unbefestigter Fussweg/Parkstreifen, Steigung"
+Bulgenbachweg: Verbundsteinpflaster	Q1 3439,26192 3452,26160 3478,26119 3520,26081 3574,26060 3647,26060
 #: by: ^^^
 # 
 ######################################################################
