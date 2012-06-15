@@ -14,7 +14,7 @@ CONVERT2HAFAS=		${MISCSRCDIR}/convert2hafas
 CHECK_POINTS=		${PERL} ${MISCSRCDIR}/check_points
 GREPSTRASSEN=		${MISCSRCDIR}/grepstrassen
 
-TARGETS=	ampelschaltung.txt
+TARGETS=	ampelschaltung.txt abdeckung.bbd
 
 # XXX sp of writable/writeable?
 WRITEABLE=	chmod u+w,ugo+r
@@ -31,6 +31,11 @@ ampelschaltung.txt:	ampelschaltung-orig.txt
 	grep -v '^#WPT:' ampelschaltung-orig.txt | \
 	    ${CONVERT2HAFAS} -keepcomment -ampelschaltung2 \
 	    > ampelschaltung.txt
+	-@$(READONLY) $@
+
+abdeckung.bbd: abdeckung.bbd-orig ../data/berlin_ortsteile
+	cat abdeckung.bbd-orig | ${MISCSRCDIR}/berlin_cityparts_to_bbd.pl -inbbd -cat 'F:#0000ff|stiplite.xbm' > abdeckung.bbd~
+	mv -f abdeckung.bbd~ abdeckung.bbd
 	-@$(READONLY) $@
 
 # checks
