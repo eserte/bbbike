@@ -107,55 +107,66 @@
 			}
 		}
 
-		my $index_file = "$dir/index.html";
-		open my $ofh, ">", "$index_file~" or die "While writing to $index_file~: $!";
-		binmode $ofh, ":utf8";
-		print $ofh qq{<html><head><title>BBBike: Fragezeichen</title><meta http-equiv="content-type" content="text/html; charset=utf-8"></title><body>};
-		print $ofh "<h1>BBBike: Fragezeichen</h1>";
+		for my $def (["index.html", 0],
+			     ["index-sort-by-count.html", 1],
+			    ) {
+			my($output, $do_sort_by_count) = @$def;
+			my $index_file = "$dir/$output";
+			open my $ofh, ">", "$index_file~" or die "While writing to $index_file~: $!";
+			binmode $ofh, ":utf8";
+			print $ofh qq{<html><head><title>BBBike: Fragezeichen</title><meta http-equiv="content-type" content="text/html; charset=utf-8"></title><body>};
+			print $ofh "<h1>BBBike: Fragezeichen</h1>";
 
-		my $total_count = 0;
-		my $stat = eval {
-			die "Don't use median based coloring...";
-			require Statistics::Descriptive;
-			Statistics::Descriptive::Full->new;
-		};
-		for my $citypart (sort keys %citypart2polygon) {
-			my $link = $citypart2link{$citypart};
-			if ($link) {
-				$total_count += $link->{count};
-				if ($stat) {
-					$stat->add_data($link->{count});
-				}
-			}
-		}
-
-		my $median;
-		if ($stat) { $median = $stat->median }
-
-		for my $citypart (sort keys %citypart2polygon) {
-			my $link = $citypart2link{$citypart};
-			if ($link) {
-				my $style_attr = "";
-				if ($median) {
-					if ($link->{count} < $median) {
-						$style_attr = 'style="color:#cc7c00;"';
-					} else {
-						$style_attr = 'style="color:red;"';
+			my $total_count = 0;
+			my $stat = eval {
+				die "Don't use median based coloring...";
+				require Statistics::Descriptive;
+				Statistics::Descriptive::Full->new;
+			};
+			for my $citypart (sort keys %citypart2polygon) {
+				my $link = $citypart2link{$citypart};
+				if ($link) {
+					$total_count += $link->{count};
+					if ($stat) {
+						$stat->add_data($link->{count});
 					}
 				}
-				print $ofh qq{<a $style_attr href="$link->{href}">$link->{label}</a> ($link->{count})<br/>\n}; # XXX escaping?
-			} else {
-				print $ofh qq{<span style="color:green;">$citypart</span> (0)<br/>\n}; # XXX escaping?
 			}
+
+			my $median;
+			if ($stat) { $median = $stat->median }
+
+			my @cityparts = $do_sort_by_count
+				? map { $_->[1] }
+				  sort { $a->[0] <=> $b->[0] }	
+				  map { my $link = $citypart2link{$_}; [ $link ? $link->{count} : 0, $_ ]; }
+				  keys %citypart2polygon
+				: sort keys %citypart2polygon;
+			for my $citypart (@cityparts) {
+				my $link = $citypart2link{$citypart};
+				if ($link) {
+					my $style_attr = "";
+					if ($median) {
+						if ($link->{count} < $median) {
+							$style_attr = 'style="color:#cc7c00;"';
+						} else {
+							$style_attr = 'style="color:red;"';
+						}
+					}
+					print $ofh qq{<a $style_attr href="$link->{href}">$link->{label}</a> ($link->{count})<br/>\n}; # XXX escaping?
+				} else {
+					print $ofh qq{<span style="color:green;">$citypart</span> (0)<br/>\n}; # XXX escaping?
+				}
+			}
+			print $ofh "<hr/>";
+			print $ofh "Insgesamt: $total_count Fragezeichen-Einträge";
+			print $ofh "<hr/>";
+			print $ofh qq{<a href="http://www.bbbike.de">BBBike</a>\n};
+			print $ofh qq{</body></html>};
+			close $ofh or die $!;
+			chmod 0644, "$index_file~";
+			rename "$index_file~", $index_file or die "While renaming $index_file~: $!";
 		}
-		print $ofh "<hr/>";
-		print $ofh "Insgesamt: $total_count Fragezeichen-Einträge";
-		print $ofh "<hr/>";
-		print $ofh qq{<a href="http://www.bbbike.de">BBBike</a>\n};
-		print $ofh qq{</body></html>};
-		close $ofh or die $!;
-		chmod 0644, "$index_file~";
-		rename "$index_file~", $index_file or die "While renaming $index_file~: $!";
 		"";
 	}
 
@@ -177,7 +188,7 @@ fragezeichen-list:		{ "$BBBIKE_TMP_DIR/fragezeichen_list/index.html" }
 		do_fragezeichen_list();
 	}
 
-fragezeichen-list-local:	{ "$BBBIKE_TMP_DIR/fragezeichen_list_local/index.html" }
+fragezeichen-list-local:		{ "$BBBIKE_TMP_DIR/fragezeichen_list_local/index.html" }
 
 { "$BBBIKE_TMP_DIR/fragezeichen_list_local/index.html" } :	{ @DO_FRAGEZEICHEN_LIST_DEPS }
 	{
