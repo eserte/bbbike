@@ -1356,3 +1356,18 @@ Teutonenstr. (Nikolassee)	1 -3519,2180 -3610,2237 -3689,2267 -3742,2287
 Goltzstr. (Spandau)	1 -2838,16951 -2946,16869 -3031,16807
 Lindenufer	1 -3275,14114 -3135,14183
 Mauerstr.	1 -3316,14169 -3275,14114
+Simmelstr.: keine Durchfahrt für Autos	3 7540,17675 7615,17684 7669,17691
+Simmelstr.: keine Durchfahrt für Autos	3 7669,17691 7615,17684 7540,17675
+Mittelstreifen	3nocross::ignrte 7232,18572 7119,18582 6924,18599
+Ragazer Str. -> Lindauer Allee: Mittelstreifen	3::igndisp 7035,18413 7119,18582 6924,18599
+Lindauer Allee -> Ragazer Str.: Mittelstreifen	3::igndisp 7232,18572 7119,18582 7035,18413
+An den Fließtalhöfen: Tor, freier Durchgang für Fußgänger	3 4403,22981 4444,22989 4432,23066
+An den Fließtalhöfen: Tor, freier Durchgang für Fußgänger	3 4432,23066 4444,22989 4403,22981
+Mittelstreifen	3nocross::ignrte 5447,20614 5469,20462 5481,20379
+Frommpromenade -> Oranienburger Str.: Mittelstreifen	3::igndisp 5350,20495 5469,20462 5447,20614
+Oranienburger Str. -> Frommpromenade: Mittelstreifen	3::igndisp 5481,20379 5469,20462 5350,20495
+Sittestr.: Schranke, Verbot für alle Fahrzeuge	3 5830,19206 5850,19205 5869,19212
+Sittestr.: Schranke, Verbot für alle Fahrzeuge	3 5869,19212 5850,19205 5830,19206
+Mittelstreifen	3nocross::ignrte 7335,18257 7291,18392 7269,18460
+Rorschacher Zeile -> Residenzstr.: Mittelstreifen	3::igndisp 7203,18360 7291,18392 7269,18460
+Residenzstr. -> Rorschacher Zeile: Mittelstreifen	3::igndisp 7335,18257 7291,18392 7203,18360

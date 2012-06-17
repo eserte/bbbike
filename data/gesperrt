@@ -282,7 +282,7 @@ Kattegatstr.	1 9323,17667 9475,17557
 Waldh¸terpfad	1 510,4202 371,4453 301,4643
 Amalienpark	1 10905,18671 10958,18512
 Amalienpark	1 10934,18500 10860,18650
-Im Amseltal	1 1962,25214 1982,25108
+Im Amseltal	1 1960,25229 1982,25108
 Gundelfinger Str.	1 18735,9421 18697,9153 18653,8922 18609,8717
 Dorotheenstr.	1 18653,8922 18770,8898
 Alte Sp‰thbr¸cke	2 14466,5087 14544,5123
@@ -693,6 +693,13 @@ Reichsbahnstr.	2 -4648,1334 -4579,1397
 Dorstener Str.	1 3590,644 3691,566
 Selmaplatz	1 -391,4313 -384,4268 -396,4261 -405,4281 -407,4303 -391,4313
 Plantage	1 -3229,13832 -3308,13778 -3320,13802 -3247,13864
+Cyclopstr.	1 5349,21198 5297,21243
+Dietrichinger Weg	1 5037,21659 5136,21738
+An den Flieﬂtalhˆfen	1s 4474,23119 4432,23066 4444,22989
+Edelhofdamm	1 3456,25601 3307,25554
+Edelhofdamm	1 3277,25575 3446,25628
+Olbrichweg	1 5787,19326 5879,19352
+Genfer Str.	1 6890,18190 6821,18216 6683,18243
 Am Neuen Garten	1 -12166,1384 -12212,1201 -12276,831 -12302,718
 Am Neuen Garten	1 -12332,585 -12582,127
 Hochstraﬂe	3nocross::ignrte -11399,-1339 -11461,-1424 -11540,-1543
@@ -925,9 +932,8 @@ Berliner Allee -> Caseler Str.: Straﬂenbahntrasse	3::igndisp 14559,16912 14608,1
 Straﬂenbahntrasse	3nocross::ignrte 13401,15821 13432,15843 13487,15888
 Streustr. -> Berliner Allee: Straﬂenbahntrasse	3::igndisp 13269,15927 13432,15843 13487,15888
 G¸lzower Str.: Mittelstreifen	3 22603,12359 22388,12190 22424,12183
-Mittelstreifen	3nocross::ignrte 5350,21251 5357,21199 5391,21003
-Cyclopstr. -> Oranienburger Str.: Mittelstreifen	3::igndisp 5297,21243 5357,21199 5350,21251
-Oranienburger Str. -> Cyclopstr.: Mittelstreifen	3::igndisp 5391,21003 5357,21199 5297,21243
+Mittelstreifen	3nocross::ignrte 5343,21250 5349,21198 5356,21146 5382,21001
+Cyclopstr. -> Oranienburger Str.: Mittelstreifen	3::igndisp 5297,21243 5349,21198 5343,21250
 Straﬂenbahnhaltestelle	3nocross::ignrte 9225,13389 9281,13374 9415,13315
 Linienstr. -> Oranienburger Str.: Straﬂenbahnhaltestelle	3::igndisp 9296,13397 9281,13374 9415,13315
 Oranienburger Str. -> Linienstr.: Straﬂenbahnhaltestelle	3::igndisp 9225,13389 9281,13374 9296,13397
@@ -1856,6 +1862,8 @@ abgeschlossenes Tor	3 8235,20109 8237,20098 8258,19983
 abgeschlossenes Tor	3 8258,19983 8237,20098 8235,20109
 abgeschlossenes Tor	3 8288,20128 8291,20112 8315,19993
 abgeschlossenes Tor	3 8315,19993 8291,20112 8288,20128
+tragen (4+6+7 Stufen)	0:30:48 4502,21525
+tragen (27 Stufen)	0:30:-145 3195,24825
 tragen (4 Stufen)	0:10:65 -440,4554
 tragen (5 x 10 Stufen)	0:60:10 -3646,1539
 tragen (41 Stufen)	0:45:-193 -3813,2459
@@ -2045,6 +2053,14 @@ tragen (Treppe, ca. 20 Stufen)	0:25:-12 19160,14935
 tragen (Treppe)	0:30:70 89344,-5795
 tragen, langgezogene Stufen (13 Stufen)	0:25:-168 20704,1383
 tragen (31 Stufen oder Kinderwagenrampe)	0:40:-256 13168,21706
+Schranke	BNP:3:-96:trailer=10 8262,17361
+Schranke, enge Umfahrung	BNP:5:-6:trailer=15 8352,17285
+Schranke	BNP:3:-55:trailer=10 4347,21531
+enge Stelle durch zwei Baumst‰mme	BNP:5:83:trailer=no 3803,24652
+Dr‰ngelgitter und Stufe	BNP:5:-26:trailer=15 6143,20464
+Dr‰ngelgitter und Stufe	BNP:5:-27:trailer=15 6090,20414
+Dr‰ngelgitter und Stufe	BNP:5:-27:trailer=15 6030,20385
+Dr‰ngelgitter und Stufe	BNP:5:-26:trailer=15 5904,20327
 Dr‰ngelgitter	BNP:3:2:trailer=10 -7598,12953
 Dr‰ngelgitter und Stufe	BNP:5:-26:trailer=15 -2704,2431
 Dr‰ngelgitter	BNP:3:-17:trailer=10 -2675,2336
@@ -2241,7 +2257,7 @@ Schranke	BNP:1:12:trailer=5 25558,997
 enges Dr‰ngelgitter	BNP:5:90 100,3
 Dr‰ngelgitter	BNP:4:-101 13909,18835
 Dr‰ngelgitter	BNP:3:-24 14218,18674
-Schranke	BNP:3:67 5856,19204
+Schranke	BNP:3:69 5850,19205
 Schranke, kann leicht umfahren wergen	BNP:1:-160 -13937,240
 Dr‰ngelgitter	BNP:3:-153 60332,36475
 Dr‰ngelgitter	BNP:3:-153 61521,38712

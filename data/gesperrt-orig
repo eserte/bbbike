@@ -320,7 +320,7 @@ Kattegatstr.	1 9323,17667 9475,17557
 Waldh¸terpfad	1 510,4202 371,4453 301,4643
 Amalienpark	1 10905,18671 10958,18512
 Amalienpark	1 10934,18500 10860,18650
-Im Amseltal	1 1962,25214 1982,25108
+Im Amseltal	1 1960,25229 1982,25108
 #: by: Josephine Schwuchow:
 Gundelfinger Str.	1 18735,9421 18697,9153 18653,8922 18609,8717
 Dorotheenstr.	1 18653,8922 18770,8898
@@ -903,6 +903,13 @@ Dorstener Str.	1 3590,644 3691,566
 Selmaplatz	1 -391,4313 -384,4268 -396,4261 -405,4281 -407,4303 -391,4313
 #: by: Stefan Klinkusch:
 Plantage	1 -3229,13832 -3308,13778 -3320,13802 -3247,13864
+Cyclopstr.	1 5349,21198 5297,21243
+Dietrichinger Weg	1 5037,21659 5136,21738
+An den Flieﬂtalhˆfen	1s:q4 4474,23119 4432,23066 4444,22989
+Edelhofdamm	1 3456,25601 3307,25554
+Edelhofdamm	1 3277,25575 3446,25628
+Olbrichweg	1 5787,19326 5879,19352
+Genfer Str.	1 6890,18190 6821,18216 6683,18243
 ######################################################################
 #
 # Potsdam
@@ -1083,8 +1090,8 @@ Am Poetensteig, Gramzow	1s:q1 50043,90187 50107,89717
 Atzpodienstr. (Umgehung auf Gehweg mˆglich)	1s:q3 16485,12384 16509,12518 16564,12513
 Behrenstr./Bebelplatz	1s:q3 9801,12245 9743,12239 9708,12235 9674,12231 9631,12227
 Halenseestr.	1s:q2 2297,9827 2166,10020 2121,10089 2030,10253 1988,10328 1951,10435
-Zeltinger Platz	1s:q3 2404,25187 2355,25252 2395,25273 2446,25265 2490,25211 2486,25156 2451,25123 2404,25187
-Ludolfinger Platz	1s:q3 2277,25033 2245,25016 2205,25042 2192,25083 2216,25117 2277,25094 2285,25059 2277,25033
+Zeltinger Platz	1s:q4 2404,25187 2355,25252 2395,25273 2446,25265 2490,25211 2486,25156 2451,25123 2404,25187
+Ludolfinger Platz	1s:q4 2277,25033 2245,25016 2205,25042 2192,25083 2216,25117 2277,25094 2285,25059 2277,25033
 Sewanstr. - Balatonstr.	1s:q3 17705,10232 17741,10386
 Hˆnower Str. (Karlshorst) (Ausweichen auf Sandbankette mˆglich)	1s:q2 18377,9366 18490,9387
 #
@@ -1132,7 +1139,7 @@ Berliner Allee: Straﬂenbahntrasse	3nocross 14619,16682 14608,16772 14559,16912
 Berliner Allee: Straﬂenbahntrasse	3nocross 13401,15821 13432,15843 13487,15888
 #: note: Luftbild
 G¸lzower Str.: Mittelstreifen	3 22603,12359 22388,12190 22424,12183
-Oranienburger Str. (Wittenau): Mittelstreifen	3nocross 5350,21251 5357,21199 5391,21003
+Oranienburger Str. (Wittenau): Mittelstreifen	3nocross 5343,21250 5349,21198 5356,21146 5382,21001
 Oranienburger Str.: Straﬂenbahnhaltestelle	3nocross 9225,13389 9281,13374 9415,13315
 Brauhausstr. -> Prenzlauer Promenade: Straﬂenbahntrasse	3 12211,16688 12017,16734 12046,16568
 Schnellerstr.: Mittelstreifen	3nocross 16720,6845 16677,6892 16568,7009
@@ -1413,6 +1420,8 @@ abgeschlossenes Tor	3 * 8291,20112 *
 # Stellen, an denen getragen werden muﬂ:
 # die Zahl hinter dem ":" entspricht ungef‰hr den verlorenen Sekunden
 # 
+tragen (4+6+7 Stufen)	0:30 4502,21525
+tragen (27 Stufen)	0:30 3195,24825
 #: by: mmholz...
 tragen (4 Stufen)	0:10 -440,4554
 tragen (5 x 10 Stufen)	0:60 -3646,1539
@@ -1675,6 +1684,16 @@ tragen (31 Stufen oder Kinderwagenrampe)	0:40 13168,21706
 #
 # Kinderanh‰nger wie der Chariot Captain XL sind 87cm breit
 # 
+Schranke	BNP:3::trailer=10 8262,17361
+Schranke, enge Umfahrung	BNP:5::trailer=15 8352,17285
+Schranke	BNP:3::trailer=10 4347,21531
+enge Stelle durch zwei Baumst‰mme	BNP:5::trailer=no 3803,24652
+Dr‰ngelgitter und Stufe	BNP:5::trailer=15 6143,20464
+#: note: Stufe nicht gesehen, aber wahrscheinlich vvv
+Dr‰ngelgitter und Stufe	BNP:5::trailer=15 6090,20414
+Dr‰ngelgitter und Stufe	BNP:5::trailer=15 6030,20385
+#: note ^^^
+Dr‰ngelgitter und Stufe	BNP:5::trailer=15 5904,20327
 #: by: Stefan Klinkusch (Existenz des Dr‰ngelgitters)
 Dr‰ngelgitter	BNP:3::trailer=10 -7598,12953
 Dr‰ngelgitter und Stufe	BNP:5::trailer=15 -2704,2431
@@ -1952,7 +1971,7 @@ Dr‰ngelgitter	BNP:4 13909,18835
 Dr‰ngelgitter	BNP:3 14218,18674
 #: by: ^^^
 #: by: Naira (hgoerzig):
-Schranke	BNP:3 5856,19204
+Schranke	BNP:3 5850,19205
 Schranke, kann leicht umfahren wergen	BNP:1 -13937,240
 Dr‰ngelgitter	BNP:3 60332,36475
 Dr‰ngelgitter	BNP:3 61521,38712

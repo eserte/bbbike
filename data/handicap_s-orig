@@ -467,7 +467,7 @@ Egidysteg: eng, Fuﬂg‰nger	q3 3124,22198 3134,22153
 (Egidysteg - M¸hlenfeldstr.): Fuﬂg‰nger	q1 3134,22292 3094,22233 3124,22198
 (Weg am Tegeler Flieﬂ): Fuﬂg‰nger	q1 3767,22466 3734,22402 3670,22396 3631,22417 3589,22414 3498,22333 3380,22248 3355,22230 3243,22311
 (Tegeler Flieﬂ - M¸hlenfeldstr.): Fuﬂg‰nger	q1 3753,22534 3767,22466
-(Weg am Tegeler Flieﬂ): Fuﬂg‰nger, unterhalb der S-Bahnbr¸cke eng	q2 4251,22829 4166,22725 4114,22690 4087,22714 4044,22690
+(Weg am Tegeler Flieﬂ): Fuﬂg‰nger, unterhalb der S-Bahnbr¸cke eng	q2 4251,22829 4166,22725 4114,22690 4087,22714 4036,22685
 (Weg am Tegeler Flieﬂ): Fuﬂg‰nger	q1 5645,23968 5409,23816 5297,23633 5214,23420 5242,23156 5232,23139 5205,23094 5127,23042 5054,23025 4801,22897 4718,22891 4626,22914
 (Weg am Tegeler Flieﬂ): Fuﬂg‰nger	q1 4619,22934 4402,22877 4306,22914 4163,22907
 (Weg am Tegeler Flieﬂ): Fuﬂg‰nger, eng	q2 5860,24067 5693,24037 5645,23968
@@ -1223,6 +1223,19 @@ Ronnebypromenade: Fuﬂg‰nger	q2 -4905,1514 -4943,1439 -5002,1382 -5067,1400
 (Ronnebypromenade - Kˆnigstr.): Fuﬂg‰nger, Rampe	q3 -5067,1400 -5127,1392 -5135,1377
 (Paul-Krause-Str. - Borussenstr.): steil, eng	q3 -3983,2280 -3966,2291 -3972,2265 -3955,2283 -3938,2287
 Rehsprung: Fuﬂg‰nger	q1 -3521,1681 -3300,1663 -3236,1776 -3126,1858 -3098,1922 -3112,2106 -3156,2134 -3177,2205 -3284,2323 -3290,2420
+#: note: offiziell nur ein Gehweg
+(Weg an der Kolonie am Nordgraben): eng, Fuﬂg‰nger	q4 5846,20279 5912,20308 5977,20337 6040,20364 6097,20398 6152,20452 6176,20482 6165,20517 6184,20550
+Am Lehnshof: enge Straﬂe	q1 4202,23034 4264,22992 4291,22986 4403,22981 4444,22989
+Rundlingsteig: enge Straﬂe	q1 4403,22981 4398,23026 4332,23059 4292,23005 4291,22986
+Bornepfad: enge Straﬂe	q1 4332,23059 4312,23157
+#: XXX_prog BS nur am Wendehammer
+Forlenweg: Fuﬂg‰nger, eng, Bordstein	q2 3978,23301 4021,23330
+#: note: offiziell nur ein Gehweg
+Am Leitbruch: Fuﬂg‰nger	q4 4062,22069 4130,21961
+#: note: offiziell nur ein Gehweg
+#: XXX_prog BS nach Norden
+Primusweg: Fuﬂg‰nger, Bordstein	q4 5651,19953 5666,19926 5704,19902 5715,19888
+Neptunstr.: Fuﬂg‰nger	q2 8354,17270 8352,17285 8345,17350 8324,17362 8262,17361
 #
 ######################### User Contributions #################################
 # 
@@ -1300,7 +1313,7 @@ Koloniewege: Bodenschwellen, Schranken	q1 -2445,17641 -2426,17693 -2423,17705 -2
 Koloniewege: Bodenschwellen, Schranken	q1 -2114,17878 -2154,17917 -2372,17958 -2419,17955 -2475,18028 -2516,18080 -2528,18094 -2728,18149
 #: by: ^^^
 #: by: Helmut Stockinger:
-Gralsburgsteig: enge Straﬂe	q1 2164,25190 2206,25260 2038,25531 1950,25763 1924,26013
+Gralsburgsteig: enge Straﬂe	q1 2164,25190 2206,25260 2038,25531 1950,25763 1921,26019
 #: by: Kathrin (jackelkathrin):
 Bahnhofstr. (Friedenau): enge Straﬂe	q1 6082,7066 6151,7078 6157,7117
 #: by: (x)qusor:
@@ -1341,7 +1354,7 @@ Achenbachstr.: nicht so breite Straﬂe	q1 -3360,14974 -3322,14814
 #: by: Hartmut (stahn):
 Herrnholzweg: enge Straﬂe	q1 6279,23170 6491,22915
 #: by: Sabine Hochstadt:
-Hausotterstr.: sehr schmal, auf beiden Seiten parkende Autos	q1 8592,18128 8348,18071 8139,18020 7957,17967 7772,17915 7487,17836
+Hausotterstr.: sehr schmal, auf beiden Seiten parkende Autos	q1 8592,18128 8348,18071 8139,18020 7957,17967 7772,17915 7477,17832
 #: by: Marcel (marcls): vvv
 Prettauer Pfad: enge Straﬂe	q1 3384,1297 3577,1541
 Prettauer Pfad: enge Straﬂe	q1 3358,1331 3384,1297 3437,1218
@@ -1812,7 +1825,7 @@ Seeweg (Weiﬂensee): Fuﬂg‰nger	q1 14610,16522 14581,16529 14510,16549
 (Dinnendahlstr. - Schichauweg): kaum Fuﬂg‰nger	q1 9123,-1321 8953,-1184 8882,-1142 8873,-1118
 #: by: ^^^
 #: by: Oliver Brass [AM]
-K¸hleweinstr.: Autos und Schule	q1 8088,17218 8043,17282 8014,17475 7998,17564 7973,17732 7948,17895
+K¸hleweinstr.: Schule	q1 8014,17475 7998,17564
 #: by: Achim Stenzel:
 (Weg an der Markuskirche): viele Fuﬂg‰nger, Bordsteinkanten	q3 6342,4783 6288,4704
 #: by: Torsten Franik:
@@ -1932,7 +1945,7 @@ Hallichpromenade: Fuﬂweg	q2 5388,20606 5447,20614
 #: by: paula* (gwendolen...):
 Allmendeweg: enge Straﬂe	q1 2990,22018 3063,21821 3071,21801 3155,21572
 #: by: Sven Beckers
-Senheimer Str.: enge Straﬂe	q1 2519,25353 2506,25398 2505,25538 2515,25666 2519,25772 2496,25915 2484,25984 2490,26126 2531,26251 2560,26349 2569,26408 2564,26462
+Senheimer Str.: enge Straﬂe	q1 2510,25350 2506,25398 2505,25538 2515,25666 2519,25772 2496,25915 2484,25984 2490,26126 2531,26251 2560,26349 2569,26408 2564,26462
 #: by: Jan Riemke:
 Romanshorner Weg: enge Straﬂe	q1 6709,17466 6679,17568 6631,17721 6578,17898 6550,17988 6577,17998
 #: by: Reyk Bederke:
@@ -2244,9 +2257,11 @@ Flotowstr. (Lichterfelde): enge Straﬂe	q1 4515,4581 4651,4638
 #: by: Eckart Seher ("weniger als 4m breit")
 #: corrected_by: srt/policy (q1 -> q0-)
 Pfalzgrafenweg: enge Straﬂe	q0- 25594,11939 25827,11867
+# 
 #: by: Mathias Vogt:
-#: corrected_by: srt/policy (q2 -> q1)
-Spachtelweg: enge Straﬂe	q1 5900,20487 5970,20353
+#: corrected_by: srt/policy (q2 -> q0-)
+Spachtelweg: enge Straﬂe	q0- 5900,20487 5970,20353
+# 
 #: by: Gabriele Meindl
 #: confirmed_by: anonymous
 #: note: Fuﬂg‰nger (kein Fuﬂweg)
@@ -2303,7 +2318,8 @@ Jenbacher Weg: enge Straﬂe	q1 6398,590 6411,533 6233,412 6180,376 5987,256 5800,
 #: by: Xenia (cocosnuss...):
 Rudi-Dutschke-Weg: viele Fuﬂg‰nger	q2 2627,5095 2913,5294
 #: by: olli (liet):
-Dinkelsb¸hler Steig: enge Straﬂe	q1 2616,25218 2649,25170 2694,25132 2775,25092 2823,25038
+#: corrected_by: srt (q1 -> q0-)
+Dinkelsb¸hler Steig: enge Straﬂe	q0- 2615,25225 2649,25170 2694,25132 2775,25092 2816,25037
 #: by: gregor (kijora):
 #: corrected_by: srt/policy (q2 -> q1)
 ÷tztaler Str.: enge Straﬂe	q1 10690,17420 10630,17421
@@ -2418,7 +2434,8 @@ Renatenweg: enge Straﬂe	q1 6368,2851 6376,2809 6423,2774 6463,2724
 #: corrected_by: srt/policy (q4 -> q2)
 Renatenweg: Fuﬂg‰nger	q2 6463,2724 6529,2642
 #: by: Ralph Reuscher:
-Weinbrennerweg: enge Straﬂe	q1 6003,19461 6211,19559
+#: corrected_by: srt/policy (q1 -> q0-)
+Weinbrennerweg: enge Straﬂe	q0- 6003,19461 6106,19510
 #: by: tobi (...kiermeier)
 Grammestr.: enge Straﬂe	q1 1057,14389 1023,14259
 #: by: K. Wieker: vvv
@@ -2578,7 +2595,7 @@ Nordische Str.: enge Straﬂe	q1 15126,21799 15209,21985
 #: by: Olaf (ollivero):
 #: note: "Dies ist ein breiter Gehsteig, welcher ohne Behinderung mit Fahrrad, auch mit Anh‰nger befahren werden kann."
 #: corrected_by: srt/policy (q4 -> q1)
-Gr¸nrockweg: Gehweg, Fuﬂg‰nger	q1 7377,18498 7274,18462
+Gr¸nrockweg: Gehweg, Fuﬂg‰nger	q1 7377,18498 7269,18460
 #: by: A. Kohn:
 Kollostr.: enge Straﬂe	q1 9668,4403 9677,4518 9695,4638
 #: by: Niels (nathelbiya):
@@ -2632,7 +2649,9 @@ Ruthstr.: Fuﬂweg	q2 6330,3005 6320,3022
 Brigittenstr.: Fuﬂweg	q2 6208,2954 6226,2936
 #: by: ^^^
 #: by: Rudolf Kionke:
-(Oranienburger Str. - Wilhelm-Gericke-Str.): Fuﬂweg	q1 5545,19909 5598,19912
+#: corrected_by: srt (added Bordstein)
+#: XXX_prog BS nach Osten, kann man durch einige Meter Umweg umfahren
+(Oranienburger Str. - Wilhelm-Gericke-Str.): Fuﬂweg, Bordstein	q2 5545,19909 5598,19912
 #: by: Josef Schepers
 Siepesteig: enge Straﬂe	q1 194,1055 115,1043 84,1174 91,1202
 #: by: Kurt Kratz
@@ -2665,7 +2684,8 @@ Jan-Petersen-Str.: enge Straﬂe	q0- 21086,15910 21108,15955 21196,16119 21030,162
 #: by: Marco Pahlke:
 Rampe	q2 18574,68 18568,28 18560,75
 #: by: tobias (poeste):
-Walporzheimer Str.: enge Straﬂe	q1 2909,24989 2910,24953 2938,24894 2980,24868 3030,24857 3099,24850 3186,24812 3234,24774
+#: corrected_by: srt (q1 -> q0-)
+Walporzheimer Str.: enge Straﬂe	q0- 2904,24993 2910,24953 2938,24894 2980,24868 3030,24857 3099,24850 3186,24812 3234,24774
 #: by: Patrick Schwartz:
 Augusta-Ufer: offiziell nur von S¸den nach Norden f¸r Radfahrer befahrbar	q3; -3255,14685 -3331,14628 -3440,14498 -3501,14365
 # 
@@ -2712,10 +2732,11 @@ Brodersenstr.: enge Straﬂe	q0- 6033,19611 5885,19920 5804,20047
 Eduard-Spranger-Promenade: Verbot f¸r Radfahrer	q4 4284,2626 4655,3060 4862,3363 4951,3516
 # 
 #: by: Karsten Denkler vvv
-#: corrected_by: srt/policy
-Rosenpl¸terweg: enge Straﬂe	q0- 3657,26240 3439,26192 3328,26193
+#: corrected_by: srt (q1 -> q0-)
+Rosenpl¸terweg: enge Straﬂe	q0- 3657,26240 3431,26192 3328,26193
 #: note "nur eine Spur"
-Bulgenbachweg: enge Straﬂe	q1 3439,26192 3452,26160 3478,26119 3520,26081 3574,26060 3647,26060
+#: corrected_by: srt (q1 -> q0-)
+Bulgenbachweg: enge Straﬂe	q0- 3431,26192 3452,26160 3478,26119 3520,26081 3574,26060 3647,26060
 #: by ^^^
 # 
 #: by: marco engelmann:

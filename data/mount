@@ -43,9 +43,9 @@ Steigung 7.5% ((Katzbachstr. - Denkmal im Viktoriapark))	St; 8695,9079 8827,9086
 Steigung 7.4% (Methfesselstr.)	St; 9170,9206 9150,9152
 Steigung 7.4% (Mendelssohnstr. [Wohngebiet])	St; 11598,13598 11550,13642
 Steigung 7.4% (Mendelssohnstr. [Wohngebiet])	St; 11550,13642 11545,13690
-Steigung 7.4% (Hochjagdstr.)	St; 4098,21809 4032,21892
 Steigung 7.3% (Steffenshagener Str.)	St; 22972,11066 22983,11098
 Steigung 7.1% (Jaczostr.)	St; -4751,11262 -4789,11225
+Steigung 7.1% (Hochjagdstr.)	St; 4098,21809 4034,21900
 Steigung 7.0% (Angerburger Allee)	St; -2130,11761 -2109,11598
 Steigung 6.9% (Stangeweg)	St; 21566,16121 21598,16055
 Steigung 6.9% (Grottewitzstr.)	St; 22145,208 21933,152
@@ -56,6 +56,7 @@ Steigung 6.8% (Ruhwaldweg)	St; 721,13296 667,13236
 Steigung 6.6% (Rohrsängersteig)	St; -6879,4775 -6947,4861
 Steigung 6.6% (Alt-Kladow)	St; -6947,4861 -7080,4896
 Steigung 6.4% (Nach der Höhe)	St; 4355,21967 4308,22058
+Steigung 6.4% (Hochjagdstr.)	St; 3947,22000 4034,21900
 Steigung 6.3% ((Verlängerte Waldallee))	St; -9054,5984 -9031,5984
 Steigung 6.3% ((Verlängerte Waldallee))	St; -9031,5984 -8929,5984
 Steigung 6.3% ((Verlängerte Waldallee))	St; -8929,5984 -8917,5986
@@ -67,7 +68,6 @@ Steigung 6.2% (Frohnauer Str.)	St; 2580,24028 2577,24048
 Steigung 6.2% ((Hasenheide, zwischen Jahnstr. und Columbiadamm))	St; 11550,9104 11515,9066
 Steigung 6.2% ((Hasenheide, zwischen Jahnstr. und Columbiadamm))	St; 11515,9066 11495,8985
 Steigung 6.2% ((Hasenheide, zwischen Jahnstr. und Columbiadamm))	St; 11495,8985 11484,8928
-Steigung 6.1% (Hochjagdstr.)	St; 3947,22000 4032,21892
 Steigung 6.1% ((Hasenheide, Eingang Wissmannstr.))	St; 11708,8747 11647,8723
 Steigung 6.1% ((Hasenheide, Eingang Wissmannstr.))	St; 11647,8723 11607,8751
 Steigung 6.0% (Kressenweg)	St; 23575,10972 23648,11265
@@ -90,7 +90,7 @@ Steigung 5.5% (Nikolskoer Weg)	St; -8489,2088 -8759,1793
 Steigung 5.5% (Nikolskoer Weg)	St; -8468,2152 -8489,2088
 Steigung 5.5% (Auguste-Viktoria-Str. (Hermsdorf))	St; 3953,23401 3941,23486
 Steigung 5.5% (Auguste-Viktoria-Str. (Hermsdorf))	St; 3941,23486 3947,23547
-Steigung 5.5% (Am Leitbruch: Qualität? Für Autos gesperrt?)	St; 4062,22069 4130,21961
+Steigung 5.5% (Am Leitbruch)	St; 4062,22069 4130,21961
 Steigung 5.5% (Am Birkenhügel)	St; -7505,454 -7556,559
 Steigung 5.4% (Willibald-Alexis-Str.)	St; 9526,9104 9477,9113
 Steigung 5.4% (Spreetalallee)	St; 667,13236 715,13126
@@ -225,9 +225,6 @@ Steigung 3.7% (Hasensprung (Grunewald))	St; 1456,8856 1476,8831
 Steigung 3.7% (Hasensprung (Grunewald))	St; 1407,8931 1456,8856
 Steigung 3.7% (Hasensprung (Grunewald))	St; 1386,8959 1407,8931
 Steigung 3.7% (Emser Str. (Neukölln))	St; 13058,7165 12872,7134
-Steigung 3.7% (Auguste-Viktoria-Str. (Hermsdorf))	St; 4007,23709 3979,23675
-Steigung 3.7% (Auguste-Viktoria-Str. (Hermsdorf))	St; 3979,23675 3960,23647
-Steigung 3.7% (Auguste-Viktoria-Str. (Hermsdorf))	St; 3960,23647 3947,23547
 Steigung 3.7% ((Mauerweg Spandau))	St; -7182,12137 -6991,12080
 Steigung 3.6% (Zeunepromenade)	St; 3978,5600 4077,5450
 Steigung 3.6% (Wilhelmstr. (Wilhelmstadt))	St; -5392,11421 -5455,11321
@@ -543,7 +540,7 @@ Steigung 2.3% (Hermannstr. (Neukölln))	St; 11884,8492 11882,8519
 Steigung 2.3% (Hermannstr. (Neukölln))	St; 11882,8519 11882,8527
 Steigung 2.3% (Heidebrinker Str.)	St; 9268,16228 9215,16132
 Steigung 2.3% (Heidebrinker Str.)	St; 9215,16132 9216,16022
-Steigung 2.3% (Gutachstr.: Qualität?)	St; 4648,22632 4716,22535
+Steigung 2.3% (Gutachstr.)	St; 4648,22632 4716,22535
 Steigung 2.3% (Gatower Str.)	St; -4768,9584 -4773,9689
 Steigung 2.3% (Fredericiastr.)	St; 2190,11569 2097,11556
 Steigung 2.3% (Frankfurter Allee)	St; 17240,11791 17151,11801
@@ -685,7 +682,7 @@ Steigung 2.0% (Immanuelkirchstr.)	St; 11946,13993 11727,14111
 Steigung 2.0% (Hüttenweg (Grunewald, Dahlem))	St; 605,6345 736,6217
 Steigung 2.0% (Hüttenweg (Grunewald, Dahlem))	St; 486,6404 605,6345
 Steigung 2.0% (Hüttenweg (Grunewald, Dahlem))	St; 441,6435 486,6404
-Steigung 2.0% (Hubertusstr. (Waidmannslust))	St; 4147,22309 4241,22168
+Steigung 2.0% (Hubertusstr. (Waidmannslust))	St; 4137,22301 4241,22168
 Steigung 2.0% (Glasower Str.)	St; 13141,6651 12876,6589
 Steigung 2.0% (George-C.-Marshall-Brücke)	St; 8241,11024 8205,10979
 Steigung 2.0% (Gabelsbergerstr.)	St; 14381,12205 14451,12396
@@ -717,7 +714,7 @@ Steigung 1.9% (Kladower Damm)	St; -4839,7791 -4906,7666
 Steigung 1.9% (Hubertusallee)	St; 2327,8717 2316,8857
 Steigung 1.9% (Hellebergeweg)	St; -5014,7295 -5097,7361
 Steigung 1.9% (Heilbronner Str. (Halensee))	St; 2849,10445 2718,10359
-Steigung 1.9% (Gutachstr.: Qualität?)	St; 4716,22535 4800,22418
+Steigung 1.9% (Gutachstr.)	St; 4716,22535 4800,22418
 Steigung 1.9% (Gotha-Allee)	St; 630,12567 771,12560
 Steigung 1.9% (Gormannstr.)	St; 10463,13747 10480,13871
 Steigung 1.9% (Glasower Str.)	St; 12876,6589 12759,6563
@@ -849,7 +846,6 @@ Steigung 1.6% (Schönhauser Allee)	St; 10746,13673 10779,13793
 Steigung 1.6% (Schwedter Str. (Mitte, Prenzlauer Berg))	St; 10122,15647 10101,15751
 Steigung 1.6% (Schonacher Str.)	St; 4919,22658 5006,22507
 Steigung 1.6% (Scharnweberstr. (Alt-Hohenschönhausen))	St; 15996,15620 16036,15722
-Steigung 1.6% (Saarbrücker Str.)	St; 11250,13655 11060,13865
 Steigung 1.6% (Reichsstr.)	St; 224,12623 269,12576
 Steigung 1.6% (Reichsstr.)	St; 131,12672 224,12623
 Steigung 1.6% (Pardemannstr.)	St; -7449,348 -7461,381
@@ -901,6 +897,8 @@ Steigung 1.5% (Seebadstr. (Kladow))	St; -8864,6289 -8773,6284
 Steigung 1.5% (Schöneberger Str. (Steglitz))	St; 5370,6486 5470,6423
 Steigung 1.5% (Schwedter Str. (Mitte, Prenzlauer Berg))	St; 10933,14122 10830,14183
 Steigung 1.5% (Sandheideweg)	St; -4547,11280 -4564,11180
+Steigung 1.5% (Saarbrücker Str.)	St; 11250,13655 11134,13820
+Steigung 1.5% (Saarbrücker Str.)	St; 11134,13820 11060,13865
 Steigung 1.5% (Reichsstr.)	St; -129,12947 -103,12868
 Steigung 1.5% (Pillkaller Allee)	St; 45,11482 22,11362
 Steigung 1.5% (Pillkaller Allee)	St; 22,11362 14,11215
@@ -1324,7 +1322,7 @@ Steigung 1.0% (Nikolskoer Weg)	St; -9443,1035 -9333,1124
 Steigung 1.0% (Nikolskoer Weg)	St; -9412,546 -9500,827
 Steigung 1.0% (Nikolskoer Weg)	St; -9333,1124 -9252,1244
 Steigung 1.0% (Nikolskoer Weg)	St; -9252,1244 -9085,1347
-Steigung 1.0% (Nagolder Pfad: Qualität?)	St; 4648,22632 4526,22567
+Steigung 1.0% (Nagolder Pfad)	St; 4648,22632 4526,22567
 Steigung 1.0% (Möckernstr.)	St; 8824,10366 8804,10303
 Steigung 1.0% (Maulbronner Ufer)	St; 7308,4080 7487,4104
 Steigung 1.0% (Lottumstr.)	St; 10779,13793 10703,13832
@@ -1338,7 +1336,7 @@ Steigung 1.0% (Konstanzer Str.)	St; 3954,9249 3915,9120
 Steigung 1.0% (Konstanzer Str.)	St; 3915,9120 3920,9068
 Steigung 1.0% (Keltererweg)	St; -4836,11138 -4550,11073
 Steigung 1.0% (Jahnstr. (Britz))	St; 13027,6168 12833,6127
-Steigung 1.0% (Hubertusstr. (Waidmannslust))	St; 4050,22428 4147,22309
+Steigung 1.0% (Hubertusstr. (Waidmannslust))	St; 4050,22428 4137,22301
 Steigung 1.0% (Hohenfriedbergstr.)	St; 7790,8913 7782,9115
 Steigung 1.0% (Herzbergstr.)	St; 15724,13544 15896,13547
 Steigung 1.0% (Herulerweg)	St; -4395,10876 -4496,10920

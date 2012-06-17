@@ -1039,7 +1039,7 @@ userdel	2::temp 6971,10346 6729,10212 6719,10347
          'text' => 'Weinmeisterstr. (Mitte) in Richtung Alexanderplatz gesperrt',
          'from' => undef,
          'id' => 1567,
-         'data' => '#: last_checked: 2012-04-27
+         'data' => '#: last_checked: 2012-06-17
 userdel	q4::inwork; 10350,13376 10527,13257
 ',
          'type' => 'gesperrt'
