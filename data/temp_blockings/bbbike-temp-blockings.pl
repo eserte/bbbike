@@ -20326,4 +20326,14 @@ EOF
 userdel	q4::inwork; 9343,12464 9358,12351
 EOF
      },
+     { from  => undef, #
+       until => undef, #
+       text  => 'Földerichplatz: Wochenmarkt Dienstag 8-13 Uhr und Donnerstag 14-18 Uhr',
+       type  => 'gesperrt',
+       source_id => 'http://www.berlin.de/ba-spandau/presse/archiv/20120423.1455.369136.html', # und bestätigt von Stefan Klinkusch
+       recurring => 1,
+       data  => <<EOF,
+	q4::temp:clock -3941,12545 -3941,12376
+EOF
+     },
     );

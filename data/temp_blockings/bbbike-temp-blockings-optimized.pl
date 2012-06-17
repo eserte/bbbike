@@ -2557,6 +2557,17 @@ userdel	q4::inwork 10379,14963 10366,14992
          'data' => 'userdel	q4::inwork; 9343,12464 9358,12351
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => 'http://www.berlin.de/ba-spandau/presse/archiv/20120423.1455.369136.html',
+         'recurring' => 1,
+         'data' => '	q4::temp:clock -3941,12545 -3941,12376
+',
+         'until' => undef,
+         'from' => undef,
+         'text' => 'Földerichplatz: Wochenmarkt Dienstag 8-13 Uhr und Donnerstag 14-18 Uhr',
+         'type' => 'gesperrt',
+         'id' => 2349
        }
      
 );

@@ -158,7 +158,7 @@ Rita-Maiburg-Str.: wie wird die Qualität sein?	?::projected 20342,-777 20782,-11
 #: next_check: 2013-03-01
 Ludwig-Prandtl-Str.: Qualität der Verlängerung?	?::projected 20274,-845 20342,-777
 # 
-#: next_check: 2012-06-03 vvv
+#: next_check: 2013-03-17 vvv
 #: note: Straßen zum und am BER vvv
 Ring am Flughafen BER: Genaue Wegführung? Einbahnstraßenregelungen? Werden Radfahrer die Straßen nutzen dürfen? Fahrbahnbeschaffenheit ist wahrscheinlich Asphalt.	?::inwork 18386,-4109 18386,-4109 18296,-4078 17832,-4267 18001,-4685 18517,-4502 18485,-4406 18451,-4303 18386,-4109
 Waltersdorf - BER: Genaue Wegführung? Wahrscheinlich asphaltiert	? 19676,-4036 18517,-4502
@@ -932,6 +932,7 @@ Gaismannshofer Weg: mäßiger Asphalt, Q1 (policy!), Schrittgeschwindigkeit wegen 
 Begonienstr. (Teltow): loser Sandweg, Q2	? 1703,-2480 1920,-2494
 #: by: kris (chefmail), confirmed_by: Lukas Jedeck (ohne enge Straße)
 #: XXX Ute Jäger meint: Asphalt (ohne Kategorisierung)
+#: XXX anonymous meint: Asphalt, Q0, q0, RW0
 Place Molière: guter Beton, Q0, enge Straße, q1	? 4334,21540 4367,21525 4392,21477 4338,21455 4307,21506
 #: by: anonymous, confirmed_by Sara Köhler (ohne enge Straße q1, go with her)
 Ederkopfweg: guter Asphalt, Q0	? -4729,14958 -4761,14961 -4807,14990 -4879,15008
@@ -1834,7 +1835,6 @@ Stieleichenstr. (Schönfließ): Qualität (wahrscheinlich asphaltiert oder betonier
 Schonacher Str.: Qualität der Straße zwischen Benekendorffstr. und Zehntwerderweg?	? 4919,22658 4838,22803
 Sittestr.: Qualität der Straße?	? 5810,19244 5787,19326 5751,19443 5730,19519
 Bollestr.: Qualität südlich der Gorkistr.?	? 2974,20483 2995,20386
-Wiesenweg - Heerstr.: existiert eine Verbindung für Radfahrer zwischen Wiesenweg und Heerstr.? Qualität?	? -7592,13107 -7600,12934
 #: XXX: Eintrag von anonymous "schlechtes Kopfsteinpflaster" zweifelhaft, im Luftbild sieht es asphaltiert/betoniert aus
 #: XXX: ein anderer Eintrag von anonymous meint "Asphalt, Q2", aber vielleicht meinte er auch die Roedernallee?
 #: XXX: ein weitere Eintrag von anonymous meint "Asphalt, Q1" zwischen Waldseeweg und Hermsdorfer Damm, keine Angaben für die restliche Strecke
@@ -2078,7 +2078,6 @@ Triniusstr. (Hermsdorf): Qualität?	? 3866,24451 3901,24453 4073,24393
 Zühler Weg: Qualität?	? 2528,24188 2430,24155
 Fontanestr. (Hermsdorf): Qualität?	? 4039,24296 3922,24338 3888,24338
 Scheibenbergstr. - Blenheimstr.: Durchfahrt für Radfahrer möglich? Qualität?	? 20692,15161 20687,15193
-Anglerweg: Qualität? Ist der offizielle Straßenname "Anglerweg" oder "Schmöckwitzwerder Süd"	? 30324,-3491 30147,-3816
 Böhmallee: Qualität?	? 27185,-6585 27292,-6641
 Ebelallee: Qualität?	? 27184,-6794 27294,-6794
 Moßkopfring: Qualität?	? 27292,-6641 27294,-6683 27308,-6742 27294,-6794 27285,-6861 27288,-6944 27311,-6962 27359,-6969 27458,-6806 27466,-6764
@@ -2088,7 +2087,6 @@ Forstweg: Welche Bezeichnung hat diese Straße: Wernsdorfer Str. oder Forstweg?	?
 Seddinpromenade: Qualität? Für Autos gesperrt? Ausgeschildert? Nachts beleuchtet?	? 28856,-2813 28734,-2838 28678,-2814 28596,-2844 28535,-2834 28397,-2913 28241,-3045 28936,-2830 29046,-2816 29101,-2794 29363,-2832 29375,-2846
 Seddinhütte: Qualität?	? 27891,-2988 27901,-2972
 Allée du Stade: Qualität?	? 3585,16252 3796,16177 4035,16051
-Reformationsplatz: Qualität? Fußgängerzone?	? -3107,14535 -3134,14513 -3150,14478 -3174,14438
 Petersenweg: Qualität?	? -3835,14668 -3919,14617
 Hohenzollernring - Flankenschanze: Qualität? Hat diese Verbindung einen Straßennamen?	? -3880,14770 -3735,14832
 Jenneweg: Qualität? Existiert für Radfahrer eine Verbindung zum Raminpark?	? -3900,14818 -4015,14744
@@ -2154,10 +2152,8 @@ Göritz - Tornow: Qualität?	? 43007,111999 43070,112007 43476,111826 43822,111442
 Karlshorst - Klockow: Qualität?	? 47335,110888 48560,110342 48678,110373 49007,110760 49176,110846 49375,110881
 Klockow - Carmzow: Qualität (am Carmzower Ende asphaltiert)?	? 49504,110961 49632,111046 49784,110602 49946,110487 50378,110259 50590,110075 50764,110031 50955,110066 51082,110034 51139,109983 51948,109454
 Mönchmühlenstr.: laut osm ist die Straße teilweise für den Kfz-Verkehr gesperrt, stimmt das?	? 8780,26384 8684,26216 8570,26107 8302,25963
-Plantage: Qualität? Ist die Straße eine Einbahnstraße? Wenn ja, gilt die Einbahnstraßenregelung nur für Autofahrer oder auch für Radfahrer?	? -3247,13864 -3320,13802 -3308,13778 -3229,13832
 Beerwinkel: Qualität?	? -6144,15946 -6155,15818 -6182,15569 -6208,15351 -6148,15306
 Feldgrabensteig: Qualität?	? -6592,15946 -6485,15915
-Käthe-Heinemann-Weg: Qualität?	? -7378,13167 -7376,13239
 Am Gehölz (Potsdam): Qualität?	? -7756,-2459 -8024,-2468 -8140,-2475
 Hubertusdamm (Potsdam): Qualität östlich der Mendelssohn-Bartholdy-Str.?	? -7808,-2689 -7484,-2745 -7369,-2751 -7266,-2736
 Brahmsweg (Potsdam): Qualität?	? -8136,-2699 -8132,-2754 -8138,-2804
@@ -2386,10 +2382,6 @@ Haberlandweg: Qualität?	? -6610,13840 -6604,13770 -6561,13615
 Nordenhamer Str.: Qualität?	? -4170,13809 -4182,13691
 #: XXX möglicherweise Beton, nochmal prüfen
 Borkumer Str.: Qualität des westlichen Abschnitts?	? -3965,13870 -3849,13848
-Wiesengrund (Staaken): Qualität?	? -7334,13058 -7377,13051 -7439,13047 -7481,13055 -7507,13059
-#: XXX_osm: Straßenname bei osm möglicherweise falsch (Helma Ring)
-Helma-Bogen: Qualität?	? -7377,13051 -7379,13105 -7481,13111 -7481,13055
-Am Rain: Qualität?	? -8033,13204 -7883,13166
 #: XXX street name mismatch: Westerwald vs. Westerland, ask again (was entry by: marionrohde, Asphalt Q0)
 Westerwaldstr.: Qualität?	? -5039,15618 -5023,15688 -5000,15769 -5010,15787 -5056,15800 -5066,15820 -5059,15842 -5036,15923 -5019,15970 -4951,16116
 # XXX del nur ein sehr enger Weg vorhanden --- lohnt nicht --- Waldpromenade: Qualität? Nachts beleuchtet? Für Autos offen?	? 23481,8119 23385,8217 22865,8588
@@ -2478,15 +2470,6 @@ Beim Pfarrhof: Qualität? Einbahnstraßenregelung?	? -7304,14567 -7292,14811
 Am Kleinen Platz: Qualität? Einbahnstraßenregelung?	? -7292,14811 -7248,14826
 Am Krummen Weg: Qualität? Einbahnstraßenregelung? Geht der Weg bis zur Hackbuschstr. weiter?	? -7248,14826 -7169,14849 -7095,14871 -7024,14880 -6886,14885
 Am Krug: Qualität? Für Autos gesperrt?	? -7149,14768 -7015,14772
-Querweg: Qualität?	? -8098,12340 -7967,12333 -7819,12321
-#: XXX_osm fehlt bei osm
-#: XXX str_cont_ausnahme-Eintrag fehlt
-Siedlungsweg: Qualität?	? -7806,12417 -7819,12321 -7824,12249
-Siedlungsweg: Qualität?	? -7819,12321 -7670,12310
-(Hahnebergweg - Am Fort): Qualität? Nachts beleuchtet?	? -7375,12577 -7436,12564 -7477,12530 -7502,12442 -7522,12423 -7595,12387 -7663,12383 -7806,12417 -7959,12439
-Talweg: Qualität?	? -7948,12634 -8078,12647 -8205,12644 -8324,12644 -8413,12651
-Am Wäldchen: Qualität?	? -8324,12644 -8359,12112
-Im Grund: Qualität?	? -8235,12144 -8205,12644
 #: XXX_osm bei osm ohne Namen
 Am Zeppelinpark: Straße fertiggestellt? Qualität?	? -8358,13340 -8417,13785 -8509,14109
 #: XXX_osm bei osm ohne Namen
@@ -2494,10 +2477,6 @@ Am alten Gaswerk: Qualität?	? -8243,14183 -8284,14334 -8287,14411
 An der Spitze: Qualität?	? -8756,13356 -8847,13363 -8846,13398 -8702,13400
 Pinneberger Weg: Qualität?	? -6261,14161 -6163,14161 -6065,14160 -5887,14147 -5816,14136
 Aumühler Str.: Qualität?	? -6163,14161 -6150,14021
-Helmut-Käutner-Weg: Qualität?	? -6007,13228 -6035,13333 -6062,13432
-Blankensteinweg: Qualität?	? -6125,13540 -6084,13427
-Eduard-Bernstein-Weg: Qualität?	? -6010,13586 -5976,13465
-Ernst-Bruch-Zeile: Qualität?	? -6242,13371 -6084,13427 -6062,13432 -5976,13465 -5898,13491
 Neunkircher Steig: Qualität?	? -8682,14489 -8637,14720 -8617,14848 -8584,15023 -8573,15073
 Sundhauser Gang: Qualität?	? -8584,15023 -8471,15000
 Sulzbacher Steig: Qualität?	? -8617,14848 -8443,14826
@@ -2608,13 +2587,7 @@ Primusweg: Qualität?	? 5731,19824 5651,19953
 Henrionweg: Qualität? Für Radfahrer befahrbar?	? 11095,21768 11153,21753 11145,21698
 #: XXX fehlt bei Berlin.coords.data
 Chronisteneck: gibt es diesen Platz? Ist er ausgeschildert?	? 15730,24051
-Ebersdorfer Str.: Qualität?	? -4818,13347 -4932,13318 -5033,13284 -5137,13248 -5217,13232
-Ebersdorfer Platz: Qualität?	? -5062,13347 -5161,13308
-Hettnerweg: Qualität?	? -5217,13232 -5295,13415 -5333,13515
-#: by: http://www.berlin.de/ba-spandau/presse/archiv/20120423.1455.369136.html (Wochenmarkt)
-#: XXX Wochenmarkt soll dienstags von 8 bis 13 Uhr und donnerstags von 14 bis 18 Uhr stattfinden
-Földerichplatz: Qualität? Für Radfahrer Zugang zur Adamstr. möglich? Wochenmarkt?	? -3941,12376 -3941,12545 -3942,12559
-Kerstenweg: Qualität? Für Radfahrer befahrbar? Kann die Wilhelmstr. überquert werden?	? -3705,13386 -3813,13404
+Kerstenweg: Kann die Wilhelmstr. in Höhe Kerstenweg überquert werden?	? -3705,13386 -3813,13404
 #: XXX_osm fehlt bei osm
 Am Kirchenland: Qualität? Genaue Lage der Straße?	? -6821,16028 -6752,16015
 Salchendorfer Weg: Qualität?	? -5123,15298 -4972,15297
@@ -2842,7 +2815,6 @@ Seeblick (Groß Glienicke): Qualität?	? -9671,5382 -9556,5445
 #: XXX laut osm verkehrsberuhigt
 Braumannweg (Groß Glienicke): Qualität? verkehrsberuhigt?	? -9491,5339 -9475,5500
 Landhausstr. (Groß Glienicke): Qualität?	? -9415,5322 -9398,5495
-Jägerstr. (Wilhelmstadt): Ist die Straße teilweise verkehrsberuhigt?	? -3724,12917 -3715,13003
 #: XXX anonymous meint: Kopfsteinpflaster, aber die Straße ist so lang und hat auch einen Geh/Radweg-Abschnitt
 Elbestr. (Teltow): Qualität?	? 348,-743 347,-784 288,-1040 213,-1180 145,-1262 109,-1291 4,-1363 -173,-1397 -248,-1400
 #: XXX NN, laut Clemens Bley für Radfahrer offen

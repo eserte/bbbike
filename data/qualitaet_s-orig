@@ -12960,9 +12960,11 @@ Max-Koska-Str.: Verbundsteinpflaster	Q1 11829,16339 11846,16438 11844,16483
 #: confirmed_by: srt
 Henningweg: guter Asphalt	Q0 21077,387 21026,594
 # 
-#: by: Gabi Dupont:
-#: add_fragezeichen: wie ist die Qualität zwischen Ulrikenstr. und Lutoner Str.?
-Amalienhofstr.: schlechtes Kopfsteinpflaster	Q3 -5118,13053 -5100,13081 -5073,13097 -4871,13178 -4771,13214
+#: by: Gabi Dupont: vvv
+Amalienhofstr.: schlechtes Kopfsteinpflaster	Q3 -5073,13097 -4871,13178 -4771,13214
+#: corrected_by: Stefan Klinkusch (schlechtes Kopfsteinpflaster -> ...)
+Amalienhofstr.: Asphalt	Q0 -5118,13053 -5100,13081 -5073,13097
+#: by: ^^^
 # 
 #: by: Angela Ladwig:
 #: corrected_by: srt (mäßiges -> schlechtes)
@@ -19070,6 +19072,29 @@ Silzer Weg: Asphalt	Q0 5929,389 6130,449
 #: by: ^^^
 # 
 #: by: Stefan Klinkusch vvv
+Am Wäldchen: fester Sandweg	Q2 -8324,12644 -8359,12112
+Im Grund: fester Sandweg	Q2 -8235,12144 -8205,12644
+Talweg: fester Sandweg	Q2 -7948,12634 -8078,12647 -8205,12644 -8324,12644 -8413,12651
+(Hahnebergweg - Am Fort): Schotter	Q1 -7375,12577 -7436,12564 -7477,12530 -7502,12442 -7522,12423 -7595,12387 -7663,12383 -7806,12417 -7959,12439
+Siedlungsweg: fester Sandweg	Q2 -7806,12417 -7819,12321 -7824,12249
+Siedlungsweg: fester Sandweg	Q2 -7819,12321 -7670,12310
+Querweg: fester Sandweg	Q2 -8098,12340 -7967,12333 -7819,12321
+Am Rain: gutes Verbundsteinpflaster	Q1 -8033,13204 -7883,13166
+(Wiesenweg - Heerstr.): mäßiger Asphalt	Q2 -7592,13107 -7598,12953 -7600,12934
+Helma-Bogen: Verbundsteinpflaster	Q0- -7377,13051 -7379,13105 -7481,13111 -7481,13055
+Wiesengrund (Staaken): Asphalt	Q0 -7334,13058 -7377,13051 -7439,13047 -7481,13055 -7507,13059
+Käthe-Heinemann-Weg: Verbundsteinpflaster	Q0- -7378,13167 -7376,13239
+Eduard-Bernstein-Weg: Verbundsteinpflaster	Q0- -6010,13586 -5976,13465
+Blankensteinweg: Asphalt	Q0 -6125,13540 -6084,13427
+Ernst-Bruch-Zeile: Verbundsteinpflaster	Q0- -6242,13371 -6084,13427 -6062,13432 -5976,13465 -5898,13491
+Helmut-Käutner-Weg: Verbundsteinpflaster	Q0- -6007,13228 -6035,13333 -6062,13432
+Hettnerweg: Beton	Q0 -5217,13232 -5295,13415 -5333,13515
+Ebersdorfer Str.: Beton	Q0 -4818,13347 -4932,13318 -5033,13284 -5137,13248 -5217,13232
+Ebersdorfer Platz: etwas brüchiger Asphalt	Q1 -5062,13347 -5161,13308
+Földerichplatz: löchriger Asphalt	Q2 -3941,12376 -3941,12545
+Kerstenweg: Gehwegplatten	Q0- -3705,13386 -3813,13404
+Reformationsplatz: Altstadtpflaster	Q1 -3107,14535 -3134,14513 -3150,14478 -3174,14438
+Plantage: Asphalt	Q0 -3247,13864 -3320,13802 -3308,13778 -3229,13832
 Sotzmannstr.: guter Asphalt	Q0 -4725,12883 -4679,12989 -4663,13023
 (Sotzmannstr. - Seeburger Str.): Gehwegplatten	Q0- -4663,13023 -4634,13173
 (Sotzmannstr. - Päwesiner Weg): Kleinpflastersteine	Q1 -4679,12989 -4731,13135
@@ -19181,6 +19206,8 @@ Rosenplüterweg: Verbundsteinpflaster	Q1 3657,26240 3439,26192 3328,26193
 Bulgenbachweg: Verbundsteinpflaster	Q1 3439,26192 3452,26160 3478,26119 3520,26081 3574,26060 3647,26060
 #: by: ^^^
 # 
+#: by: marco engelmann:
+Anglerweg: guter Asphalt	Q0 30343,-3454 30147,-3816
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206
@@ -20018,14 +20045,15 @@ Am Südpark: Asphalt	Q0 -3989,12223 -3987,12374
 Jägerstr. (Wilhelmstadt): Beton	Q0 -3773,12239 -3777,12384
 Jägerstr. (Wilhelmstadt): Asphalt	Q0 -3777,12384 -3764,12481 -3753,12563
 Jägerstr. (Wilhelmstadt): Verbundsteine	Q1 -3753,12563 -3729,12669
+#: confirmed_by: Stefan Klinkusch (nördlicher Abschnitt)
 Jägerstr. (Wilhelmstadt): Kopfsteinpflaster	Q2 -3729,12669 -3739,12756 -3733,12848 -3724,12917 -3715,13003
 Beyerstr.: Asphalt	Q0 -3631,12484 -3764,12481 -3893,12474
 Ulmenstr. (Wilhelmstadt): Kopfsteinpflaster	Q2 -3893,12628 -4053,12632 -4174,12683
 Sprengelstr. (Wilhelmstadt): Kopfsteinpflaster	Q2 -3887,12673 -4026,12720
 Sprengelstr. (Wilhelmstadt): Gehwegplatten	Q1 -4026,12720 -4099,12763
-Betckestr.: Kopfsteinpflaster	Q2 -3635,12572 -3430,12579 -3252,12580 -3154,12582
-Franzstr. (Wilhelmstadt): Kopfsteinpflaster	Q2 -3637,12668 -3434,12728 -3275,12769
-Wörther Str. (Wilhelmstadt): Asphalt	Q1 -3430,12579 -3434,12728 -3437,12834
+Betckestr.: Kopfsteinpflaster	Q2 -3635,12572 -3444,12580 -3252,12580 -3154,12582
+Franzstr. (Wilhelmstadt): Kopfsteinpflaster	Q2 -3637,12668 -3446,12728 -3275,12769
+Wörther Str. (Wilhelmstadt): Asphalt	Q1 -3444,12580 -3446,12728 -3448,12834 -3451,12911
 Metzer Str. (Wilhelmstadt): Kopfsteinpflaster	Q2 -3693,13012 -3715,13003 -3817,13002 -3913,13054
 Krowelstr.: Asphalt	Q0 -3301,12864 -3392,12928 -3519,12980 -3712,13214 -3726,13276
 Straßburger Str. (Spandau, Wilhelmstadt): Asphalt	Q0 -3726,13276 -3705,13386 -3685,13504 -3651,13603 -3595,13729 -3550,13811
@@ -20034,9 +20062,9 @@ Brüderstr. (Wilhelmstadt): Gehwegplatten	Q1 -3999,12912 -3967,12891
 Brüderstr. (Wilhelmstadt): Kopfsteinpflaster	Q2 -3967,12891 -3849,12845 -3733,12848
 Brüderstr. (Wilhelmstadt): Asphalt	Q0 -3733,12848 -3658,12854
 #: confirmed_by: Bianca Schumacher
-Brüderstr. (Wilhelmstadt): Kopfsteinpflaster	Q2 -3658,12854 -3392,12928
+Brüderstr. (Wilhelmstadt): Kopfsteinpflaster	Q2 -3658,12854 -3451,12911 -3392,12928
 Konkordiastr.: Kopfsteinpflaster	Q2 -4080,12370 -4084,12557 -4053,12632 -4026,12720
-Schulenburgstr.: Asphalt	Q0 -3159,12962 -3210,12913 -3301,12864 -3437,12834 -3650,12762
+Schulenburgstr.: Asphalt	Q0 -3159,12962 -3210,12913 -3301,12864 -3448,12834 -3650,12762
 Weißenburger Str.: Kopfsteinpflaster	Q2 -3650,12762 -3739,12756 -3869,12758 -3984,12812
 Weißenburger Str.: Gehwegplatten	Q1 -3984,12812 -4043,12833
 Wilhelmstr. [Parallelstraße] (Wilhelmstadt): Kopfsteinpflaster	Q2 -3976,12860 -3967,12891 -3942,12957
