@@ -271,6 +271,7 @@ Günter-Riesebrodt-Weg: Qualität? Genaue Lage der Straße?	?::inwork 19395,7901 19
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/10re.pdf/file?y=2012 vvv
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/16re.pdf/file?y=2012
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/26re.pdf/file?y=2012 (Hausnummern)
 #: XXX fehlen in Berlin.coords.data vvv
 #: last_checked: 2012-05-01 (noch keine Straßen sichtbar) vvv
 #: next_check: 2012-10-01 vvv
@@ -329,6 +330,7 @@ Mierendorffplatz: asphaltiert? Gibt es hier einen Zebrastreifen?	?::inwork 3542,
 #: next_check: 2012-04-01
 #: XXX eventuell wird die Straße auch "Silberweidenweg" heißen (fehlt in Berlin.coords.data)
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/17re.pdf/file?y=2012
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/26re.pdf/file?y=2012 (Hausnummern)
 Bidenswinkel/Silberweidenweg: wird hier noch ein Strang der Straße entstehen? Qualität?	?::inwork 16320,12853 16318,12777
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/32re.pdf/file
@@ -357,8 +359,8 @@ An den Eldenaer Höfen: wo genau wird die Straße liegen? Qualität?	?::inwork 1438
 # 
 #: by: http://www.moabitonline.de/1637
 #: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20110224.1350.332744.html
-#: last_checked: 2011-08-13
-#: next_check: 2011-11-01
+#: last_checked: 2012-07-05
+#: next_check: 2013-03-01
 Planstraße im Block 902: neue Straße wird gebaut, wo genau, wann? Wird der Straßenname "Erna-Samuel-Straße" lauten?	?::inwork 5340,14050 5522,14195 5704,14252 5954,14303 6106,14280
 # 
 #XXX --- #: XXX neue Planstraßen nördlich des Alexanderplatzes vvv --- #: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20110208.1420.330238.html --- #: by: http://www.stadtentwicklung.berlin.de/planen/staedtebau-projekte/alexanderplatz/de/planungen/bplan/bplan_b4ca/index.shtml --- #: by: http://ww.ak-berlin.de/publicity/ak/internet.nsf/0/002CE81791D5796BC125784D0033BC47/$FILE/Auslobung_Alexander%20Parkside_18%2001%202010.pdf --- #: XXX Straßen werden benannt nach: --- #: XXX - Oda Schottmüller --- #: XXX - Hilde Radusch
@@ -520,8 +522,10 @@ Radwegbau Welzower Steig: wie ist die Qualität (Fahrbahnbeschaffenheit) des Radw
 #: last_checked: 2012-05-25 vvv
 #: next_check: 2012-09-01 vvv
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120207.1005.365838.html vvv
-Radverkehrsanlagen um den Knotenpunkt Weißenseer Weg/Konrad-Wolf-Str.	? 14960,14746 15052,14585 15164,14392
-Radverkehrsanlagen um den Knotenpunkt Weißenseer Weg/Konrad-Wolf-Str.	? 14754,14406 15052,14585 15272,14691
+#: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120625.1405.371942.html (Ende der Bauarbeiten: Ende 2012) vvv
+Radverkehrsanlagen um den Knotenpunkt Weißenseer Weg/Konrad-Wolf-Str.: Radweg wird auf dem Gehweg geführt	? 14960,14746 15052,14585
+Radverkehrsanlagen um den Knotenpunkt Weißenseer Weg/Konrad-Wolf-Str.: Radspuren werden markiert (wahrscheinlich bis zur Landsberger Allee)	? 15052,14585 15164,14392
+#: by: ^^^
 #: by: ^^^
 #: next_check ^^^
 #: last_checked ^^^
@@ -601,6 +605,8 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 # Das heißt diese Strecken werden nicht bei einer erweiterten Suche aufgenommen
 # und dem CGI-Benutzer auch nicht präsentiert.
 # 
+#: XXX: alter Eintrag von Johannes (...schmeisser...), nochmal prüfen!
+Sternstr. (Drewitz): gibt es hier einen Radweg? In beide Richtungen?	? -7917,-4792 -7969,-4828 -8021,-4937 -8033,-5049 -8053,-5116 -8113,-5204 -8116,-5221 -8165,-5236
 Neubrücker Str.: Vorfahrtsregelung?	? 1364,25882 1213,25813 1135,25765 1057,25695 975,25627 885,25578 727,25504 639,25478
 Schildower Str.: wie weit gehen die Radwege Richtung Osten?	? 4303,23767 4397,24033 4425,24067 4510,24170 4614,24233 4683,24275 4705,24284 4779,24321
 Zabel-Krüger-Damm: wie weit geht der Radweg Richtung Osten?	? 4898,22459 5006,22507 5142,22581 5260,22634 5368,22669 5423,22685 5574,22747 5619,22766 5672,22788
@@ -2087,6 +2093,7 @@ Scharfschwerdtstr. (Hohen Neuendorf): Qualität?	? 1364,27953 1426,28065 1456,281
 Richard-Wagner-Str. (Groß Glienicke): Qualität im westlichen Abschnitt?	? -10234,5804 -10347,5874 -10467,5948
 Hainleiteweg: Qualität?	? -4805,15596 -4772,15702
 Tangermünder Weg: Qualität?	? -4294,15525 -4137,15512
+#: XXX anonymous meint: Asphalt, Q0, Privatstraße
 Am Heimhort: Qualität?	? -4317,15298 -4117,15255 -4084,15264
 #: XXX Eintrag von anonymous: Asphalt, Q2, Bordsteinkanten (wo?)
 Merziger Str.: Qualität?	? -4622,15186 -4497,15176
@@ -2274,7 +2281,6 @@ Rue du Dr Roux: Qualität?	? 3606,16453 3612,16526 3632,16565 3627,16645 3711,166
 Rue Dominique Larrey: Qualität?	? 3735,16651 3624,16445
 Breitachzeile: Qualität?	? 2735,20154 2803,20199
 Prendener Zeile: Qualität?	? 3155,20416 3132,20514
-Marzahnstr.: Können Radfahrer direkt zur Oeserstr. fahren?	? 2810,20455 2825,20387
 Stillachzeile: Qualität?	? 2645,20300 2567,20239
 Iznikstr.: Qualität?	? -2133,16934 -2119,17015
 Wolburgsweg: Qualität?	? -5727,15818 -5710,15950 -5663,16359
@@ -2299,8 +2305,7 @@ Existiert für Radfahrer eine Verbindung zwischen Straße 618 und Weg am Rudower F
 #XXX del --- scheint nicht zu existieren? --- #: XXX_osm fehlt bei osm --- Straße 180: Qualität? Wo liegt die Straße genau?	? 16739,193 16765,165
 #XXX Das ist nur eine Aldi-Zufahrt oder so --- #: XXX_osm: bei osm ohne Straßennamen --- Waadter Zeile: Qualität? Für Autos gesperrt? Existiert eine Verbindung zur Goerzallee?	? 3726,2209 3729,2126
 #: XXX_osm: bei osm ohne Straßennamen
-#: XXX laut tvojpl. etc. gehts weiter Richtung Süden bis Ravensteiner Promenade, aber nicht erkennbar
-Erpetaler Weg: Qualität?	? 24637,7438 24620,7290
+Erpetaler Weg: Qualität? Geht der Weg weiter Richtung Süden bis zur Ravensteiner Promenade? Ist die Straße ausgeschildert?	? 24637,7438 24618,7272
 # XXX del --- Straßenname existiert nicht; Weg ist für Radfahrer verboten --- Saturnring: Qualität? Für Radfahrer befahrbar?	? 18827,-537 18906,-316
 #XXX ex. nicht, jedenfalls nicht hier: Weg O: Qualität? Stimmt der Straßenname?	? 27621,535 27817,761
 # XXX del #: XXX_osm bei osm ohne Namen --- in der Realität auch nicht --- Rosenweg (Bohnsdorf): Qualität?	? 20362,-511 20567,-313
@@ -3280,9 +3285,11 @@ Heinrich-Grüber-Str. - Waldheimer Str.: Wie ist die Qualität des Weges? Nachts b
 #XXX del --- existiert nicht --- Putenweg - Waßmannsdorfer Chaussee: für Radfahrer befahrbar? Qualität?	? 16346,-394 16400,-409
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/56re.pdf/file?y=2011
-#: XXX laut osm cobblestone
+#: XXX laut osm cobblestone -> bestätigt, Kopfsteinpflaster
+#: XXX für Autos nicht befahrbar -> NN
+#: XXX anscheinend kein Straßenschild auf der nördlichen Seite
 #: XXX fehlt in Berlin.coords.data
-Deportationsweg: Qualität? Ausschilderung? Für Autos gesperrt? Nachts beleuchtet?	? 6920,14365 6857,14488
+Deportationsweg: Existieren Straßenschilder? Nachts beleuchtet?	? 6920,14365 6857,14488
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/56re.pdf/file?y=2011
 #: XXX Privatstraße
@@ -3407,3 +3414,16 @@ Hermsdorfer Damm: ist der Hermsdorfer Damm zwischen Solquellstr. und Schildower 
 Niederstr. (Glienicke): Qualität östlich der Ottostr.?	? 3949,24718 4052,24731 4233,24772 4276,24781 4354,24803 4389,24783
 Am Sandkrug (Glienicke): Qualität im westlichen Abschnitt? Existiert eine Verbindung zur Straße Am Rosenanger?	? 3677,24705 3683,24666 3535,24626 3314,24544
 Hafersteig - Wuhlgartenweg: Existiert hier eine für Radfahrer befahrbare Verbindung? Wie ist die Qualität?	? 20839,12209 20841,12185
+#: XXX östlicher Abschnitt: Gehwegplatten. Unsicherer Eintrag von Clemens Bley (meint er diesen Weg?): wassergebundene Decke
+Weg in der Cité Foch - Place Molière: Qualität? Gibt es tatsächlich eine Verbindung zur Place Molière (welcher Strang?)	? 4510,21506 4401,21476
+# 
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/26re.pdf/file?y=2012
+#: XXX fehlt in Berlin.coords.data (OT Karlshorst, PLZ?)
+#: XXX Privatstraße
+Sokratesweg: Qualität? Ist die Straße bereits fertiggestellt? Genaue Lage?	?::inwork 18538,9571 18520,9442
+# 
+#:
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/26re.pdf/file?y=2012
+#: XXX fehlt in Berlin.coords.data (PLZ 13187)
+#: XXX Privatstraße
+In den Floragärten: Qualität? Ist die Straße bereits fertiggestellt? Genaue Lage?	?::inwork 9903,17719 10021,17611

@@ -244,6 +244,7 @@ Ackerstr.: Kopfsteinpflaster	Q2 9750,14132 9627,14229
 Gartenstr.: Asphalt	Q0 8692,14923 8870,14637 8953,14528 9081,14363 9118,14306 9224,14169 9383,13978 9510,13823 9531,13797 9668,13629
 Gartenstr.: Asphalt	Q0 8663,14960 8685,14966 8700,14956 8701,14932 8692,14923 8671,14919 8660,14929 8656,14947 8663,14960
 Gartenstr.: Kopfsteinpflaster	Q2 8663,14960 8570,15107
+Gerichstr.: Kopfsteinpflaster	Q2 8456,15235 8570,15107
 Liesenstr.: Kopfsteinpflaster, OK	Q1 8671,14919 8562,14798
 Am Kupfergraben: teilweise schlechtes Kopfsteinpflaster, Ausweichen auf Gehweg möglich	Q3 9529,12925 9618,12907 9661,12876
 Am Kupfergraben: Asphalt	Q0 9661,12876 9754,12775 9810,12712 9867,12651
@@ -3322,8 +3323,8 @@ Elseneck: Asphalt	Q0 23397,6275 23426,6346
 Heidekrugstr.: Asphalt	Q0 23482,6649 23489,6463 23498,6342 23492,6287 23485,6237
 Elsengrund: Waldweg	Q2+ 23530,6229 23960,6153
 Elsengrund: Beton	Q1 23960,6153 24230,6135
-Waldweg (Friedrichshagen): unbefestigter Weg, Schlaglöcher	Q2 24230,6135 24306,6267 24406,6354 24539,6415
-Waldweg (Friedrichshagen): unbefestigter Weg	Q1- 24539,6415 25178,6664
+Waldweg (Friedrichshagen): unbefestigter Weg, Schlaglöcher	Q2 24230,6135 24306,6267 24406,6354 24499,6405 24540,6421
+Waldweg (Friedrichshagen): unbefestigter Weg	Q1- 24540,6421 25178,6664
 Ravensteiner Promenade: unbefestigter Weg	Q1- 25178,6664 25149,6822 25252,7079 25260,7224
 Ravensteiner Promenade: Asphalt	Q0 25260,7224 25269,7432 25275,7461
 (Dahlwitzer Landstr. - Schöneicher Landstr.): Beton	Q0- 26113,7760 28197,7511
@@ -12451,6 +12452,10 @@ Tollerstr.: schlechtes Kopfsteinpflaster	Q3 7749,19693 7769,19736 7807,19811 783
 Parksiedlung Spruch: Verbundsteinpflaster	Q0- 10578,1840 10968,1753 11031,1739 11136,1782
 # 
 #: by: Silke Dürrhauer
+#: note: "Mini-Kopfsteinpflaster", also ein wenig uneben, aber unproblematisch.
+(Marzahnstr. - Oeserstr.): Kleinsteinpflaster	Q1 2825,20387 2833,20350
+# 
+#: by: Silke Dürrhauer
 #: by: Rieß (roriess)
 Oxforder Str.: Asphalt	Q0 6547,17037 6636,17147
 # 
@@ -15725,7 +15730,7 @@ Birnbaumring: fester Sandweg	Q2 8661,24952 8751,24988 8791,25019 8825,25052 8871
 #: confirmed_by: anonymous
 St.-Galler-Str.: Asphalt	Q0 6418,18491 6584,18474 6597,18473 6704,18462
 #: by: Pimpke (Schmidt):
-Oeserstr.: guter Asphalt	Q0 2645,20300 2770,20336 2995,20386 3155,20416 3344,20453 3485,20479
+Oeserstr.: guter Asphalt	Q0 2645,20300 2833,20350 2995,20386 3155,20416 3344,20453 3485,20479
 # 
 #: by: Jörg Krieger: vvv
 #: confirmed_by: anonymous ("guter Asphalt")
@@ -17949,6 +17954,7 @@ Küstriner Str.: etwas älterer Asphalt	Q1+ 11232,309 11343,405 11488,531
 Wesenberger Ring: guter Beton	Q1+ 13162,3576 13206,3674 13238,3794 13229,3836 13206,3854 13165,3850 13129,3809 13030,3664
 # 
 #: by: Juliane (alberts...) vvv
+(Gruberzeile - Fahremundstr.): grober Asphalt	Q1- -5590,11651 -5515,11609
 Havelbrücke: glatter, guter Belag	Q0 -3197,13899 -3285,13947 -3372,13994 -3445,14033
 Jüdenstr. (Spandau): Kopfsteinpflaster, gut befahrbar	Q1- -3506,14306 -3481,14308 -3444,14310 -3422,14322 -3397,14370 -3350,14446
 #: note: "guter Zustand, 30er-Zone"
@@ -19504,6 +19510,10 @@ Bulgenbachweg: Verbundsteinpflaster	Q1 3431,26192 3452,26160 3478,26119 3520,260
 # 
 #: by: marco engelmann:
 Anglerweg: guter Asphalt	Q0 30343,-3454 30147,-3816
+# 
+#: by: Alexander Steinhoff:
+#: note "ordentlich zu fahren"
+(Erpetaler Weg - Hirschgarten): Waldweg	Q2+ 24637,7438 24618,7272 24602,7169 24595,7112 24624,7029 24569,6918 24552,6807 24499,6405
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206
@@ -20289,8 +20299,8 @@ Folkungerstr.: Beton	Q0 -5061,11305 -4904,11601 -4801,11826
 Falstaffweg: Beton	Q0 -5188,11342 -4996,11648 -4876,11867 -4836,11944
 Kattfußstr.: Asphalt	Q0 -5284,11375 -5081,11690
 Kattfußstr.: Beton	Q0 -5081,11690 -4945,11904
-Steinmeisterweg: Beton	Q0 -5509,11480 -5435,11573 -5268,11795 -5029,12107
-Fahremundstr.: Beton	Q0 -5435,11573 -5495,11618 -5332,11843 -5110,12134
+Steinmeisterweg: Beton	Q0 -5509,11480 -5450,11558 -5268,11795 -5029,12107
+Fahremundstr.: Beton	Q0 -5450,11558 -5515,11609 -5332,11843 -5110,12134
 Börnicker Str.: Beton	Q0 -4310,11882 -4303,11925 -4095,11993
 Graetschelsteig: Beton	Q0 -4412,12179 -4226,12131 -4195,12139
 (Börnicker Str. - Südpark): Parkweg	Q1 -4095,11993 -4070,12006
@@ -21080,7 +21090,7 @@ Kindelbergweg: Beton	Q0 6632,1482 6601,1471 6560,1473
 (Lilienthalpark): wassergebundene Decke	Q1 5571,614 5533,663
 (Lilienthalpark): wassergebundene Decke	Q1 5539,773 5576,800
 (Hildburghauser Str. - Lilienthalpark): wassergebundene Decke	Q1 6467,1028 6436,921 6421,892 6414,833 6367,825 6360,825 6352,825 6267,834 6259,835 6250,834 6172,822 6163,822 6155,821 6075,821 6066,821 6057,821 5975,821 5964,821 5954,819 5875,807 5867,807 5860,805 5781,800 5742,798 5682,767 5675,764 5615,735 5590,719
-(Mauerweg Lichtenrade - Marienfelde): Asphalt mit Fugen	Q1+ 10309,-3191 10057,-3175 9600,-3160 9529,-2628 9506,-2421 9471,-2138 9462,-2050 8846,-2089 8310,-2037 8376,-1523 7962,-1295 7593,-1034 7144,-565
+(Mauerweg Lichtenrade - Marienfelde): Asphalt mit Fugen	Q1+ 10309,-3191 10051,-3173 9600,-3160 9529,-2628 9506,-2421 9471,-2138 9462,-2050 8846,-2089 8310,-2037 8376,-1523 7962,-1295 7593,-1034 7144,-565
 (Mauerweg Lichtenrade - Marienfelde): Asphalt	Q0 7144,-565 7169,-520 7164,-473 7146,-466 7098,-523
 (Mauerweg Marienfelde - Lichterfelde): Asphalt mit Fugen	Q1+ 7098,-523 6965,-387 6668,-100 6498,71 6351,219 6253,361 6198,328 6013,211 5832,93 5435,-157 4842,-547 4596,-707 4406,-910
 (Mauerweg - Schütte-Lanz-Str.): fester Waldweg	Q1 5832,93 5800,138

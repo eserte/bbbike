@@ -19360,11 +19360,11 @@ EOF
 userdel	2::temp 9656,12021 9668,11928
 EOF
      },
-     { from  => 1309842000, # 2011-07-05 07:00
-       until => 1310144400, # 2011-07-08 19:00
-       text  => 'Platz der Luftbrücke (Tempelhof): Veranstaltung, Straße vollständig gesperrt (bis 08.07.2011 ca. 19:00 Uhr) in beiden Richtungen, 06.07.2011 07:00 Uhr bis 08.07.2011 19:00 Uhr ',
+     { from  => 1341291480, # 2012-07-03 06:58
+       until => 1341590400, # 2012-07-06 18:00
+       text  => 'Platz der Luftbrücke (Tempelhof): Veranstaltung, Straße vollständig gesperrt In beiden Richtungen zwischen Columbiadamm und Tempelhofer Damm, 04.07.2012 06:58 Uhr bis 06.07.2012 18:00 Uhr ',
        type  => 'handicap',
-       source_id => 'IM_017564',
+       source_id => 'IM_018982',
        data  => <<EOF,
 userdel	q4::temp 9233,8597 9321,8607 9364,8640 9395,8726
 userdel	q4::temp 9321,8607 9401,8510 9451,8548 9364,8640
@@ -20045,12 +20045,12 @@ userdel	q4::inwork; 9164,12172 9373,12197
 EOF
      },
      { from  => 1330419240, # 2012-02-28 09:54
-       until => 1339768800, # 2012-06-15 16:00
-       text  => 'Colditzstr. (Tempelhof): Baustelle, gesperrt in beiden Richtungen zwischen Ullsteinstr. und Volkmarstr., 29.02.2012 09:54 Uhr bis 15.06.2012 16:00 Uhr ',
+       until => 1341583200, # 2012-07-06 16:00
+       text  => 'Colditzstr. (Tempelhof): Baustelle, gesperrt Richtung Ullsteinstr. zwischen Volkmarstr. und Ullsteinstr., 29.02.2012 09:54 Uhr bis 06.07.2012 16:00 Uhr ',
        type  => 'handicap',
        source_id => 'IM_018476',
        data  => <<EOF,
-userdel	q4::inwork 10029,5230 9974,5385
+userdel	q4::inwork; 9974,5385 10029,5230
 EOF
      },
      { from  => 1330496400, # 2012-02-29 07:20
@@ -20198,7 +20198,7 @@ userdel	q4::inwork 10096,-2137 10021,-1918
 EOF
      },
      { from  => 1337887553, # 2012-05-24 21:25
-       until => 1341612000, # 2012-07-07 00:00
+       until => 1341516003, # 1341612000, # 2012-07-07 00:00
        text  => 'Prenzlau: K7324: Straßenbauarbeiten Prenzlau, zw. OL Wollenthin und Bündigershof Umleitung: über Prenzlau, 02.04.2012 bis 06.07.2012 ',
        type  => 'gesperrt',
        source_id => '127310045',
@@ -20234,8 +20234,8 @@ userdel	2::inwork 13953,23497 13976,23490 14173,23426
 EOF
      },
      { from  => 1338204660, # 2012-05-28 13:31
-       until => 1341068400, # 2012-06-30 17:00
-       text  => 'Behrenstr. (Mitte): Baustelle, Fahrtrichtung gesperrt (bis Ende 06/12) Richtung Friedrichstr. zwischen Mauerstr. und Glinkastr. ',
+       until => 1341673200, # 2012-07-07 17:00
+       text  => 'Behrenstr. (Mitte): Baustelle, Fahrtrichtung gesperrt Richtung Friedrichstr. zwischen Mauerstr. und Glinkastr., bis 7. Juli ',
        type  => 'handicap',
        source_id => 'IM_018829',
        data  => <<EOF,
@@ -20243,7 +20243,7 @@ userdel	q4::inwork; 9064,12156 9164,12172
 EOF
      },
      { from  => 1338283200, # 2012-05-29 11:20
-       until => 1343664000, # 2012-07-30 18:00
+       until => 1341515831, # 1343664000, # 2012-07-30 18:00
        text  => 'Klingsorstr. (Steglitz): Fahrbahnschäden, Vollsperrung in beiden Richtungen zwischen Hindenburgdamm und Birkbuschstr., bis Ende Juli 2012 ',
        type  => 'handicap',
        source_id => 'IM_018838',
@@ -20317,9 +20317,9 @@ EOF
 userdel	2::temp 11770,10774 11841,10747 11897,10887 11958,11045
 EOF
      },
-     { from  => 1339884000, # 2012-06-17 00:00
-       until => 1341093599, # 2012-06-30 23:59
-       text  => 'Friedrichstr. (Mitte) Richtung Süden zwischen Mittelstr. und Unter den Linden, Baustelle, Fahrtrichtung gesperrt, bis Ende 06/12 ',
+     { from  => 1339907400, # 2012-06-17 06:30
+       until => 1342191600, # 2012-07-13 17:00
+       text  => 'Friedrichstr. (Mitte): Baustelle, zwischen Mittelstr. und Unter den Linden Richtung Süden gesperrt (bis Mitte 07/12)',
        type  => 'handicap',
        source_id => 'INKO_113724',
        data  => <<EOF,
@@ -20334,6 +20334,60 @@ EOF
        recurring => 1,
        data  => <<EOF,
 	q4::temp:clock -3941,12545 -3941,12376
+EOF
+     },
+     { from  => 1341525600, # 2012-07-06 00:00
+       until => 1341784800, # 2012-07-09 00:00
+       text  => 'Nauen: L16: Brückenabriss und Straßenbau - Deckeneinbau zwischen Börnicke und Tietzow LSA-Regelung 07.07./ 08.07.2012 Vollsperrung ',
+       type  => 'gesperrt',
+       source_id => 'LS/W-SG33-P/12/085',
+       data  => <<EOF,
+userdel	2::inwork -21888,31852 -21772,30661
+EOF
+     },
+     { from  => 1339649580, # 2012-06-14 06:53
+       until => 1354298400, # 2012-11-30 19:00
+       text  => 'Dammweg (Plänterwald): Baustelle, Straße vollständig gesperrt In beiden Richtungen zwischen Köpenicker Landstr. und Neue Krugallee, 15.06.2012 06:53 Uhr bis 30.11.2012 19:00 Uhr ',
+       type  => 'handicap',
+       source_id => 'IM_018917',
+       data  => <<EOF,
+userdel	q4::inwork 15874,8345 15758,8243 15698,8191 15561,8072
+EOF
+     },
+     { from  => 1340082000, # 2012-06-19 07:00
+       until => 1349017200, # 2012-09-30 17:00
+       text  => 'Saalestr. (Neukölln): Straße vollständig gesperrt (bis Ende 09/12) in beiden Richtungen zwischen Karl-Marx-Str. und Wipperstr. ',
+       type  => 'handicap',
+       source_id => 'IM_018927',
+       data  => <<EOF,
+userdel	q4::inwork 13161,7173 13058,7165
+EOF
+     },
+     { from  => 1341219600, # 2012-07-02 11:00
+       until => 1354464000, # 2012-12-02 17:00
+       text  => 'Siemensstr. (Oberschöneweide): Baustelle, Fahrtrichtung gesperrt (bis Anfang 12/12) Richtung Edisonstr. zwischen Wattstr. und Edisonstr',
+       type  => 'handicap',
+       source_id => 'INKO_111688',
+       data  => <<EOF,
+userdel	q4::inwork; 17766,6616 17860,6644 17962,6674
+EOF
+     },
+     { from  => 1341515513, # 2012-07-05 21:11
+       until => 1342130400, # 2012-07-13 00:00
+       text  => 'Str. des 17. Juni (Tiergarten): Veranstaltung, Straße vollständig gesperrt, in beiden Richtungen zwischen Großer Stern und Y.-Rabin-Str., 04.07.2012 bis 12.07.2012 22:00 Uhr ',
+       type  => 'gesperrt',
+       source_id => 'IM_018979',
+       data  => <<EOF,
+userdel	2::temp 8055,12186 7816,12150 7383,12095 6828,12031
+EOF
+     },
+     { from  => 1341698400, # 2012-07-08 00:00
+       until => 1344117599, # 2012-08-04 23:59
+       text  => 'Arbeiten in der Frohnauer Straße: während der Baumaßnahme ist die Frohnauer Straße zwischen Falkentaler Steig und Alemannenstraße in Richtung Alemannstraße gesperrt (vom 9. Juli 2012 bis voraussichtlich 4. August 2012)',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20120703.1445.372223.html',
+       data  => <<EOF,
+userdel	q4::inwork; 2492,24325 2469,24391 2325,24486 2262,24505 2146,24535 2058,24576 1925,24599 1878,24619 1868,24633 1838,24675 1802,24707 1736,24722
 EOF
      },
     );
