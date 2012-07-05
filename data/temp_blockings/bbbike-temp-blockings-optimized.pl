@@ -1474,6 +1474,16 @@ userdel	q4::inwork 10379,14963 10366,14992
          'data' => 'userdel	q4::inwork; 2492,24325 2469,24391 2325,24486 2262,24505 2146,24535 2058,24576 1925,24599 1878,24619 1868,24633 1838,24675 1802,24707 1736,24722
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => 'http://www.s-bahn-berlin.de/aktuell/2012/144_s8.htm',
+         'until' => 1343685600,
+         'text' => 'Krontaler Str.: mögliche Sperrungen wegen Bauarbeiten an den Bahnbrücken',
+         'from' => undef,
+         'id' => 2356,
+         'data' => 'userdel	2::inwork 13429,22943 13521,23057
+',
+         'type' => 'gesperrt'
        }
      
 );

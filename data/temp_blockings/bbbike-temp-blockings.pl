@@ -20390,4 +20390,14 @@ EOF
 userdel	q4::inwork; 2492,24325 2469,24391 2325,24486 2262,24505 2146,24535 2058,24576 1925,24599 1878,24619 1868,24633 1838,24675 1802,24707 1736,24722
 EOF
      },
+     { from  => undef, # 
+       until => 1343685600, # 2012-07-31 00:00
+       text  => 'Krontaler Str.: mögliche Sperrungen wegen Bauarbeiten an den Bahnbrücken',
+       type  => 'gesperrt',
+       # ebenfalls: ein telefonischer Hinweis
+       source_id => 'http://www.s-bahn-berlin.de/aktuell/2012/144_s8.htm',
+       data  => <<EOF,
+userdel	2::inwork 13429,22943 13521,23057
+EOF
+     },
     );
