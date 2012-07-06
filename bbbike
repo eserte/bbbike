@@ -11801,6 +11801,8 @@ sub choose_ort {
 	}
     }
 
+    my $lb;
+
     if (!$toplevel{"chooseort-$type-$linetype"} or
 	!Tk::Exists($toplevel{"chooseort-$type-$linetype"}) or
 	$args{'-rebuild'} or
@@ -11997,7 +11999,6 @@ sub choose_ort {
 		 $markf = $t->Frame->pack(-side => "bottom");
 	    }
 
-	    my $lb;
 	    my $max_cols;
 	    if ($Listbox =~ /K.*Listbox/ && $Tk::VERSION >= 800) {
 	        my $c = $t->Canvas(-takefocus => 0)->pack;
@@ -12102,46 +12103,6 @@ sub choose_ort {
 				sort { $a->[0] cmp $b->[0] }
 				map { [ do { /^\(?(.*)/; $tf_sub->($1) }, $_] }
 				keys %orte);
-		}
-	    }
-
-	    if (defined $see) {
-		if ($splitter) {
-		TRY: {
-			for my $inx ($lb->info('children')) {
-			    if ($lb->itemCget($inx, 0, '-text') eq $see) {
-				$lb->see($inx);
-				$lb->anchorSet($inx);
-				last TRY;
-			    }
-			}
-			# XXX inconsistency: in splitter/HList mode, do only
-			#     exact match, no substring match
-			warn "Cannot find <$see> in listbox content";
-		    }
-		} else {
-		    my $found_index;
-		TRY: {
-			# first: exact match
-			for my $inx (0 .. $lb->index("end")-1) {
-			    if ($lb->get($inx) eq $see) {
-				$found_index = $inx;
-				last TRY;
-			    }
-			}
-			# then: substring match
-			for my $inx (0 .. $lb->index("end")-1) {
-			    if (index($lb->get($inx), $see) >= 0) {
-				$found_index = $inx;
-				last TRY;
-			    }
-			}
-			warn "Cannot find <$see> in listbox content";
-		    }
-		    if (defined $found_index) {
-			$lb->see($found_index);
-			$lb->selectionSet($found_index);
-		    }
 		}
 	    }
 
@@ -12307,10 +12268,53 @@ sub choose_ort {
 	    }
 	}
     } else {
-	$toplevel{"chooseort-$type-$linetype"}->deiconify;
+	my $t = $toplevel{"chooseort-$type-$linetype"};
+	$t->deiconify;
 	# win32 benötigt zusätzliches raise
-	$toplevel{"chooseort-$type-$linetype"}->raise;
+	$t->raise;
+	$lb = $t->Subwidget("Listbox");
     }
+
+    if (defined $see) {
+	if ($splitter) {
+	TRY: {
+		for my $inx ($lb->info('children')) {
+		    if ($lb->itemCget($inx, 0, '-text') eq $see) {
+			$lb->see($inx);
+			$lb->anchorSet($inx);
+			last TRY;
+		    }
+		}
+		# XXX inconsistency: in splitter/HList mode, do only
+		#     exact match, no substring match
+		warn "Cannot find <$see> in listbox content";
+	    }
+	} else {
+	    my $found_index;
+	TRY: {
+		# first: exact match
+		for my $inx (0 .. $lb->index("end")-1) {
+		    if ($lb->get($inx) eq $see) {
+			$found_index = $inx;
+			last TRY;
+		    }
+		}
+		# then: substring match
+		for my $inx (0 .. $lb->index("end")-1) {
+		    if (index($lb->get($inx), $see) >= 0) {
+			$found_index = $inx;
+			last TRY;
+		    }
+		}
+		warn "Cannot find <$see> in listbox content";
+	    }
+	    if (defined $found_index) {
+		$lb->see($found_index);
+		$lb->selectionSet($found_index);
+	    }
+	}
+    }
+
 }
 
 # Spezialisierung von choose_ort für Stadtstraßen
