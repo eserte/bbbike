@@ -1027,7 +1027,7 @@ if (!defined $top) {
     # Browse is for Tk::HistEntry::Browse
     for (qw(Browse Entry NumEntry Date*NumEntryPlain PathEntry
 	    Listbox KListbox K2Listbox
-	    TixHList HList Text ROText BrowseEntry.Entry SimpleHistEntry
+	    TixHList HList Text ROText BrowseEntry.LabEntry SimpleHistEntry
 	    ListboxSearchAnything
 	   )) {
 	if ($os eq 'win') {
@@ -1456,6 +1456,20 @@ if (!defined $ch) {
 	sub HelpButton { shift; shift->Label(-padx => 0, -pady => 0) }
 	package main;
 	$ch = bless {}, "Tk::ContextHelp";
+    };
+}
+
+# This is a hack to fix the background color of BrowseEntry's entry
+# widget. Maybe something similar should go into official BrowseEntry?
+# However, if this passes a "test phase" it should be available for
+# all.
+if ($devel_host) {
+    require Tk::BrowseEntry;
+    *Tk::MyBrowseEntry::oldPopulate = \&Tk::BrowseEntry::Populate;
+    *Tk::BrowseEntry::Populate = sub {
+	my $w = shift;
+	Tk::MyBrowseEntry::oldPopulate($w, @_);
+	$w->ConfigSpecs(-background=>['SELF']);
     };
 }
 
