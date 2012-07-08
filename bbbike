@@ -3997,7 +3997,11 @@ if (!$MM_DRAG_IS_OBSOLETE) {
 				     });
 	$opbm->separator;
     }
-    if ($advanced) {
+    if (0) {
+	# The portrait/landscape switch is never active. But keep the
+	# code nevertheless, maybe it will be useful one day if we
+	# have turnable screen support (but maybe it will be never
+	# needed)
         $opbm->radiobutton(-label => M"Landscape",
 			   -variable => \$orientation,
 			   -value => 'landscape',
