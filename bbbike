@@ -11852,6 +11852,7 @@ sub choose_ort {
 		    my $ret = $object->next;
 		    last if @{$ret->[Strassen::COORDS]} == 0;
 		    my $strname = $ret->[Strassen::NAME];
+		    $strname =~ s/\|/ /g; # Bla|Foo: Pipe-Zeichen entfernen
 		    $orte{$strname} = $i;
 		    $i++;
 		    push @orte, $strname;
