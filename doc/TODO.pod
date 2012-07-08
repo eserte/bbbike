@@ -22,92 +22,6 @@ Legend:
 
 =over
 
-=item * (M3) (improvement)
-
-Unter Unix kann ich dort noch einen File-Selector mit Default auf
-/dev anbieten, das Geräte immer dort anzufinden sind.
-
-=item * (H4) (feature)
-
-The default street might appear by default in the street chooser (only
-for streets!).
-
-=item * (H4) (feature)
-
-Better interface for the center coordinate configuration entry, e.g.
-choosing the current map center, or letting the user choose the coord
-in the map. -> use Tk::Getopt's custom E<quot>widgetE<quot>
-functionality; this would set a new map mode with a new cursor (what
-text next to the pointer?),maybe show also a help dialog with a cancel
-button. The user may click on the map, or hit escape/cancel, or close
-the getopt window, everything restoring the old map mode and in the
-first case setting the new coords.
-
-(This feature request was already in the list:)
-
-Option -centerc auch schöner zugänglich machen. Eine Möglichkeit
-wäre, im Optionseditor einen Button neben der Option anzubieten, der
-in den set-coord-mode geht, cursor aendert, das tk-getopt-fenster
-withdraw-t, und darauf wartet, dass der benutzer auf die karte klickt
-oder E<quot>cancelE<quot> drückt.
-
-=item * (H4) (feature)
-
-Better interface for the center street configuration entry, i.e. use
-some kind of street chooser functionality (maybe browseentry style? or
-as a dialog?) Also, it is not clear what has currently precedence:
-center coordinate or center street?
-
-Question: let the user only choose Berlin streets or also streets
-outer Berlin?
-
-Also here: use Tk::Getopt's custom widget functionality.
-
-=item * (H3) (feature)
-
-Create a small toolbar in the footer bar which displays the
-current optimization settings in a few letter or with images. Also, a
-shortcut to change the optimization settings should be possible there,
-at least by showing the existing preferences window.
-
-=item * (H5)
-
-Aufräumen des Options-Editors.
-
-Sobald Tk::Getopt es unterstützt, vertikalen Listenview statt Tabs
-verwenden.
-
-=item * (M5)
-
-Der Optionseditor sollte auch Layer wie qualitaet, handicap etc.
-unterstützen, eigentlich alles.
-
-Es wäre auch schön, wenn der aktuelle Layereinschaltzustand auf
-Knopfdruck als initialer Zustand übernommen werden könnte, oder der
-letzte Zustand auf Wunsch immer wiederhergestellt wird. Man könnte
-sogar beim *Start* fragen, ob der letzte Zustand wiederhergestellt
-werden soll.
-
-=item * (M3) (feature)
-
-Routenliste: gewünschte Attribute für die Kommentare sollten über den
-Options-Editor einstellbar sein bzw. beim Beenden automatisch
-gespeichert werden.
-
-=item * (M4)
-
-If FontDialog is available, then use this instead of the *font entries
-in the option editor. Make FontDialog also usable for fixed font
-selection (this needs the relatively slow -fixedfont option of
-FontDialog). Otherwise, if FontDialog is not available, the chosen
-fonts should be made immediately visible using set_fonts().
-
-=item * (M3)
-
-Aliase sollten suchbar sein: implementiert in search_anything für
-nicht-Similarity-Suchen und nicht-egrep-Suchen. Der Rest muss
-untersucht werden (brauche ich egrep überhaupt?)
-
 =item * (H5)
 
 Die Optimierungsparameter des CGIs (textuell) sollten in der
@@ -121,6 +35,10 @@ wird das noch für die SF-Version verwendet? Vielleicht sollte die
 SF-Version grundsätzlich alle Module außer Tk/* bekommen?). Manuelle
 Tests machen, ob bei beiden das gleiche herauskommt.
 
+-> Die Funktionalität ist implementiert, ohne Code zu teilen
+   (wahrscheinlich zu schwierig). Was fehlt: Tests, ob tatsächlich die
+   gleichen Routen dabei herauskommen.
+
 =item * (H4)
 
 qualitaet-Einstellungen sollten persistent aus dem Optimierungsdialog
@@ -131,18 +49,21 @@ gemacht werden können
 Konverter vom E<quot>TouratechE<quot>-Format nach bbd schreiben. Beispieldatei:
 http://www.arur.de/fileadmin/reisenotizen/reisenotizen_roland/images/berlin-ffo/bl-ffo.xml
 
+-> Ist Touratech im Zeitalter von kml und gpx noch relevant? Kurz
+   recerchieren und ggfs. dieses Item löschen.
+
 =item * (H5)
 
 Besseres Erkennen der Kreuzungssituation in der Straßenliste. Z.B. Bei
 Kreuzungen, wo beide Straßen nur einen kleinen Winkel zueinander
-haben, sollte immer (auch bei <30°) die Richtung ausgegeben werden.
-Bei Situationen wie Falkensteinstr./Oberbaumstr. sollte trotz
-Geradeausfahrt die Nebenstraße gekennzeichnet werden (z.B.
-E<quot>nicht der Hauptstraße folgenE<quot>). Bei einfachen
-Kurvensituationen ohne Kreuzung (Neudecker Weg und Rudower Str.)
-braucht keine Richtungsangabe erfolgen. Wenn an so einer Stelle eine
-Kreuzung ist, dann kann die Angabe E<quot>Hauptstraße folgenE<quot>
-zusätzlich angezeigt werden.
+haben, sollte immer (auch bei <30°) die Richtung ausgegeben werden
+(Beispiel?). Bei Situationen wie Falkensteinstr./Oberbaumstr. sollte
+trotz Geradeausfahrt die Nebenstraße gesondert gekennzeichnet werden
+(z.B. E<quot>nicht der Hauptstraße folgenE<quot>). Bei einfachen
+Kurvensituationen ohne Kreuzung (Beispiel?) braucht keine
+Richtungsangabe erfolgen. Wenn an so einer Stelle eine Kreuzung ist,
+dann kann die Angabe E<quot>Hauptstraße folgenE<quot> zusätzlich
+angezeigt werden.
 
 =item * (M4)
 
@@ -262,37 +183,15 @@ Optional eins oder beides zusammen.
 
 =item * (M1)
 
-Leichtere Unterstützung für andere Städte/Regionen:
-
- Wolfram:
- > Koennte man den nicht fuer die anderen Staedte erweitern? Erstmal
- > eine Auswahl an Staedten, die man haben will und dann ein Update/Download?
- 
- Das könnte man machen. Die Stadtauswahl müsste auch schon aus dem Netz
- geholt werden, dann datadir für den Update umbiegen und dem User
- Anweisungen geben, wir er das nächste Mal mit den neuen Daten starten
- soll, oder sogar ein Umschalten per GUI ermöglichen.
-
-=item * (M1)
-
-Wie ist der derzeitige Stand mit aktuellen Telefonbuch-CDROMs? Welches
-Programm kann diese auslesen (tbb?).
-
-=item * (M1)
-
-Telefonbuch-Datenbank (Name): Die Suche ist suboptimal. Bei der
-Suche von häufigen Nachnamen (Müller, Schulze)
-wird das Ergebnis begrenzt (200 Namen) und kann mit "Weiter"
-fortgesetzt werden.
-
-=item * (M1)
-
 Maushilfe: B4/B5 dokumentieren (nur im Canvas, nicht auf den Buttons
 notwendig), Erklärung für B2 anpassen
 
 =item * (H1)
 
-Unlimited Undo?
+Unlimited Undo? Vielleicht auch persistent machen, so dass es auch
+nach einem Programmneustart verfügbar ist? (Dann ist es vielleicht
+nicht wirklich ein Undo, sondern mehr eine Historie, ähnlich wie bei
+Gimp oder wie ein Browser-History)
 
 =item * (M1)
 
@@ -323,6 +222,12 @@ Portrait/Landscape-Umschaltung: alle Canvas-Daten aktualisieren. Route
 wird z.Zt. nicht gedreht (evtl. auf @coords verzichten und nur
 @realcoords verwenden).
 
+-> 2012-07: hmmm, wozu brauche ich Portrait/Landscape überhaupt?
+   Scheint mir in keiner Weise sinnvoll zu sein. Vielleicht nur, wenn
+   das Programm auf einem mobilen drehbaren Gerät laufen würde. Aber
+   würde nicht der X-Server das Drehen übernehmen? Ich habe gerade die
+   Menüpunkte inaktiv gemacht, aber den Code nicht entfernt...
+
 =item * (M4)
 
 Vernünftige Options-Eingabe in der GUI. Zwischen
@@ -338,10 +243,8 @@ E<quot>OkE<quot>, besseren Msgcat-Support (eigene Module dafür?)).
 choose_ort, S- und U-Bahnen: neben dem Bahnhof die zugehörige(n)
 Linien anzeigen
 
-=item * (M1) (bug)
-
-choose_ort, Orte: the E<quot>E<verbar>E<quot> is visible in the list.
-Not nice. Easy to replace with a space or so?
+Das könnte man vielleicht mit einem HList machen, siehe
+-splitter-Option.
 
 =item * (H1) (feature)
 
@@ -388,6 +291,9 @@ Meta-Choose-Dialog, der alle Choose-Dialoge vereinigt. Vielleicht
 => Existiert als experiment E<quot>Search while typeE<quot> in
 SRTShortcuts, mit normaler Listbox.
 
+Oder sollte ich lieber die andere Implementation basierend auf
+BBBikeSuggest (siehe babybike) verwenden?
+
 =item * (M3)
 
 wettermeldung2 mit fork/spawn/threads aufrufen
@@ -396,6 +302,10 @@ wettermeldung2 mit fork/spawn/threads aufrufen
 
 Neue Version von wettermeldung2 schreiben, die SYNOP-Information
 verwendet.
+
+-> Siehe lib/get_and_store_synop und lib/parse_synop: ist es das
+   schon? Wird es auch schon erfolgreich verwendet (e.g. osm-Daten,
+   vielleicht auch optional für BBBike-Daten)
 
 =item * (M4)
 
@@ -408,7 +318,8 @@ wettermeldung2 mit LWPng arbeiten. =E<gt> Vielleicht das hochgelobte
 POE verwenden.
 
 XXX Stimmt das noch immer, auch mit Http.pm? Unter Unix scheint es gut
-zu laufen.
+zu laufen. Zum Testen könnte ich einen blockierenden HTTP-Server
+simulieren und die zu fetchende URL ändern.
 
 =item * (M1) (feature)
 
@@ -432,7 +343,8 @@ Die neuen Mozillas unterstützen weniger Kommandos. Siehe
 L<http://www.mozilla.org/unix/remote.html>. print() ist nicht mehr
 dabei, und funktioniert tatsächlich auch nicht mehr mit Seamonkey.
 mail() ist relativ uninteressant, weil man anscheinend nur To: angeben
-kann, aber weder Subject noch Body.
+kann, aber weder Subject noch Body. (-> Wie sieht es bei firefox aus,
+existiert print() dort auch nicht?)
 
 Mit Xprt für X11 experimentieren (doc lesen).
 
@@ -499,6 +411,10 @@ Liniengruppe), um Umsteigen zu erkennen.
 
 =back
 
+Bike+Ride könnte auch beim CGI interessant sein, falls die Kooperation
+mit VMZ klappt. Dort könnte ich wahrscheinlich eine echte ÖPNV-Suche
+triggern.
+
 =item * (H1) (improvement)
 
 GfxConvert evtl. mit Tk::WinPhoto/Tk::Photo-Funktionen implementieren,
@@ -514,7 +430,7 @@ statt Strecken (davon kann auch die Routenbeschreibung auf dem flachen
 Land profitieren!) ... Und noch schöner: eine Kombination von U/S-Bahn
 und Straßennetz (für Fußwege bzw. Bike+Ride).
 
-=item *
+=item * (H2)
 
 Optional eine kürzere Beschreibung. Bei der Tk-Version gibt es das
 schon, aber noch nicht beim CGI. Wann wird die Ausgabe endlich
@@ -522,11 +438,14 @@ vereinheitlicht?
 
 =item *
 
-bei Windows (oder allgemein: bei ClickToFocus) ist es
-unangenehm, dass neue Fenster den Focus klauen. Allerdings ist es ohne
-Maus eher angenehm, dass neue Fenster den Focus bekommen. Wie soll man
-also verfahren? -> Ich habe Cycle-Windows mit CTRL-TAB implementiert.
-Vielleicht reicht das schon?
+bei Windows (oder allgemein: bei ClickToFocus) ist es unangenehm, dass
+neue Fenster den Focus klauen. Allerdings ist es ohne Maus eher
+angenehm, dass neue Fenster den Focus bekommen. Wie soll man also
+verfahren? -> Ich habe Cycle-Windows mit CTRL-TAB implementiert.
+Vielleicht reicht das schon? Allerdings benutze ich es nie
+(vergessen!), obwohl ich es häufig brauche.
+
+Siehe auch das Item zu focusFollowsMouse in diesem Dokument.
 
 =item *
 
@@ -539,17 +458,7 @@ SperrungenE<quot>: handicaps fehlen, Einbahnstraßen fehlen.
 =item *
 
 bugfix: optmenu in optimierungseinstellungen korrigieren (Fehler beim
-Tk Widget) -> schon korrigiert???
-
-=item *
-
-MDI-Interface entwickeln mit:
- * map-widget
- * start/zieleingabe
- * einfaches opt-einstellungs-fenster
- * routenbeschreibung
-Siehe Tk::WindowManager =E<gt> entwickle ich nicht mehr weiter,
-dafür gibt es aber ein neues Tk::MDI-Widget. Aber: MDI is evil!
+Tk Widget) -> schon korrigiert??? -> (2012-07) Häh?
 
 =back
 
@@ -613,15 +522,11 @@ Bookmarks in choose_ort und möglichkeit, per dnd neue bookmarks zu definieren, u
 =item weiter:
 
  - bei Http.pm vielleicht IO::Select::can_read/write verwenden
- - bbbike.cgi: Installation auf rapidsite testen => automatisierten Test a la wap_test schreiben, gleiche Features erkennen und verallgemeinern
  - BBBike: feinere Aufteilung der Gegenwind- etc. Strecken (fließend von rot bis grün)
- - BBBike: "Window intelligent positionieren" implementieren
-
- - BrowserInfo.pm: von Roxen's SUPPORT lernen:
- SUPPORTS: font tables cookies javascript backgrounds backgrounds autogunzip netscape_javascript tablecolor ssl frames mailto forms images pull push java imagealign gifinline pjpeginline fontcolor some_html3 jpeginline
 
  - bbbike/c: neues pmake funktioniert unter Suse nicht =>
  gmake benutzen? grrr...
+ -> hmmm. Noch relevant?
 
  - Verwendung von Tk::App::Reloader. Scheint allgemein zu funktionieren.
 
@@ -657,23 +562,25 @@ Bookmarks in choose_ort und möglichkeit, per dnd neue bookmarks zu definieren, u
   Raum 8.020
   Brückenstr. Mitte
 
+=item Farbeditor (H1)
+
+ - Farbeditor: background setzen sollte vielleicht Canvas-bg ignorieren bzw. eigener Auswahlpunkt für Canvas-bg. Vielleicht *alle* Farben änderbar machen --- aber dann muss man die Änderungen auch abspeichern können
+
 =item weiter
 
- - Farbeditor: background setzen sollte vielleicht Canvas-bg ignorieren bzw. eigener Auswahlpunkt für Canvas-bg. Vielleicht *alle* Farben änderbar machen --- aber dann muss man die Änderungen auch abspeichern können (schwer, unwichtig)
-
- - Straßennamen: zeichnen on demand? besserer Algorithmus? TIP mit -angle ausprobieren? (schwer)
+ - Straßennamen: zeichnen on demand? besserer Algorithmus? TIP mit
+   -angle ausprobieren? (schwer) -> aber mit -lazy habe ich schon "on
+   demand". Reicht das (abgesehen davon, dass -lazy noch Bugs hat)
 
  - intelligenterer Markieralgorithmus: nicht Zentrieren, sondern nur verschieben, falls: durch andere Fenster verdeckt (nur eigene Toplevels beachten) oder weniger als 10% (5%) oder .... Pixel vom Rand oder einem anderen Toplevel entfernt. In diesem Fall den Ausschnitt auch nur minimal verschieben, bis sichtbar (schwer)
 
- - Idee von effizienten Loop/Callback-Mechanismus: ein callback kann entweder alleine aufgerufen werden (mit nötiger Initialisation + Cleanup) oder in eine beliebige Loop eingebettet werden (Inline, Initialisation + Cleanup außerhalb der Loop). Beliebig viele Callbacks können kombiniert werden (Stacking). Verwendung von B::Deparse? (sehr schwer, API und Ausführung erst einmal ausdenken)
+ - Idee von effizienten Loop/Callback-Mechanismus: ein callback kann entweder alleine aufgerufen werden (mit nötiger Initialisation + Cleanup) oder in eine beliebige Loop eingebettet werden (Inline, Initialisation + Cleanup außerhalb der Loop). Beliebig viele Callbacks können kombiniert werden (Stacking). Verwendung von B::Deparse? (sehr schwer, API und Ausführung erst einmal ausdenken) -> es wäre wohl einfacher, wenn Macros in Perl möglich wären.
 
  - Bug: beim Umschalten von einem anderen Mode in den Suchmode muss zuerst einmal ein Reset ausgeführt werden, bevor Start gesetzt werden kann (mittel)
 
  - Start/Ziel löschbar machen (mittel)
 
  - Optimierung bei vias löschen/verschieben/einfügen: nur geändertes Stück berechnen (delete=strecke vor-nach; move=beide strecken vor/nach; insert: neue zwei strecken) (mittel-schwer, nur, wenn ich das via-feature häufiger nutze)
-
- - bbbike.cgi: kommentar-spalte: bei münchen schiebestrecken ausweisen, evtl. auch radwege. in berlin vielleicht alles mögliche ausgeben --- ausprobieren
 
 =item Straßennetz, Suche
 
@@ -695,6 +602,13 @@ wäre eine Idee für optimize::...: überflüssige
 enter/leave überspringen, wenn in einem Block keine padsv (my)
 oder LVINTRO (local) vorkommen sowie der Block in einem void-Kontext
 steht.)
+
+2012-07: stimmt das noch immer mit den zusätzlichen
+enter/leave-Opcodes. Vielleicht mal einen Benchmark machen und
+schauen, ob sich das tatsächlich auf die Zeit auswirkt? Die redefine
+warnings können (mittlerweile?) per "no warnings" ausgeschaltet
+werden. Evtl. auch nur, wenn man die Syntax *CONST = sub () {...}
+verwendet.
 
 =item Vernünftige Koordinaten verwenden
 
@@ -752,13 +666,6 @@ Mit dem Mapsource-Programm und/oder gpsman folgendes testen:
     und keine Zonen. Implementieren, angucken!
 
   * Was ist mit dem Koordinatensystem ETRS 89?
-
-=item *
-
-Falls ich auf WGS84 umsteige, sollte ich vielleicht auch
-Math::Trig::great_circle_distance als XS-Funktion umschreiben (obwohl,
-das sieht so einfach aus, da wird die C-Implementierung nicht viel
-schneller sein können).
 
 =item Niederschlagsprognosen:
 
@@ -1659,6 +1566,11 @@ be possible to use Control-C for copying the selection. -> Eigentlich ein Task f
 
 Should $top->focusfollowsmouse be default everywhere?
 
+-> Hmmm, benutze ich irgendwo irgendwie focus_policy=follow? Auf mosor
+   jedenfalls nicht, der Default ist click, und follow hat fast keinen
+   Effekt. Check, und vielleicht allen Code, der sich damit
+   beschäftigt, entfernen?
+
 =item * (H1)
 
 Windows: An activating click should only activate the window but not
@@ -2160,68 +2072,14 @@ erweitern, vielleicht auch zwischen den Potsdamer Ortsteilen
 unterscheiden? (Ich könnte Andreas Titz' Ansatz nehmen: Potsdam-Golm,
 Potsdam-Marquardt etc.)
 
-=item * (E3)
-
-Neue Straßen in Mitte (jetzt und zukünftig):
-
-Lehrter Bahnhof:
-Emma-Herwegh-Straße (DONE),
-Europaplatz (DONE),
--> Agnes-Zahn-Harnack-Straße 7776,13105 7935,13197,
-Ilse-Scheffer-Straße (DONE),
-Washingtonplatz (DONE),
-Ella-Trebe-Straße (DONE),
-Berta-Benz-Straße (DONE),
-Katharina-Paulus-Straße (DONE),
-Clara-Jaschke-Straße (DONE)
-
-Nordbahnhof, Stettiner CarrE<eacute>:
-Julie-Wolfthorn-Straße (DONE),
-Caroline-Michaelis-Straße (DONE),
--> Elisabeth-Schwarzhaupt-Platz 9063,14050 9148,13942
-
-Elisabeth-Lüders-Haus, Straße davor:
-Adele-Schreiber-Krieger-Straße (DONE)
-
-Moabiter Werder-Nord:
-Elisabeth-Abegg-Straße (DONE)
-
-Friedrichswerder-West:
-Caroline-von-Humboldt-Weg (DONE)
-
-Luisenstadt:
-Paula-Thiede-Ufer (DONE),
-Bona-Peiser-Straße (DONE (weg))
-
 =item * (E1)
 
 ÖPNV-News tracken:
 L<http://www.oepnv-berlin.de/news/news_aktuell.htm>. Oder:
 L<http://www.bahninfo.de>.
 
-=item * (H4)
-
-E<quot>Flughafen SchönefeldE<quot> ist im Web-Interface nicht
-erreichbar. Das Problem ist, dass der Flughafen außerhalb des Berliner
-Stadtgebietes liegt. Man könnte vielleicht einen Hack für Schönefeld
-analog zu potsdam_hack programmieren? Dann bräuchte man aber
-eigentlich ein Schönefeld.coords.data --- lieber nicht...
-
-=item * (E1)
-
-Look at it:
-
-aus zwei Artikeln in der aktuellen Bahnzeitung punkt3 habe
-ich herausgelesen, dass es ab dem 14. Juni eine neue S-Bahnlinie
-S85 gibt, die von Grünau über den Ostring nach Waidmannslust
-fahren soll. Sehe ich das richtig, dass diese Linie die erste
-Linie nach der Wiedervereinigung ist, die eine bis dahin nicht
-gefahrene Trasse nutzt? Die Artikel sind Online unter
-
-<http://www.punkt3.de/p3/Punkt3.nsf/f89cda9362f1398c80256a380044fd3c/e35bb9a0c9febd3cc1256ea0003a35c3?OpenDocument>
-<http://www.punkt3.de/p3/Punkt3.nsf/f89cda9362f1398c80256a380044fd3c/110ed361d2a59f1dc1256ea0003790b4?OpenDocument>
-
-nachzulesen.
+-> Gibt es diese Seiten noch? Und: auf welche Weise sollte das
+   überhaupt funktionieren?
 
 =item * Vosskanal => Voßkanal?
 
@@ -2908,33 +2766,15 @@ good cycle routes are not available within this application.
 Interesting: the evelation display using data from geonames. Maybe I
 should, too?
 
+-> Check if this URL still exists, and if it is usable now, and
+   whether they are using osm data or what else.
+
 =item * (M4)
 
 Nicht benötigte Einträge aus bbbike-temp-blockings.pl nach
 old-bbbike-temp-blockings.pl verschieben. old-bbbike-temp-blockings.pl
 kommt ins MANIFEST.addtocvs, aber nicht ins MANIFEST. -> evtl. reicht
 die jetzige Methode mit dem optimierten bbbike-temp-blockings?
-
-=item * (E1)
-
-weblinks E<quot>offiziellE<quot> machen.
-
-=> Ja, gibt es bereits auf der Info-Seite.
-
-=item * (E1)
-
-Look at it:
-
-Es wurde eine Unterführung gebaut, die erst die Fernbahntrasse und ein
-paar Meter weiter dann auch die neue S-Bahntrasse unterquert. Bilder
-hier: http://www.bsisb.de/default_f.htm?/anhalter/anhalter07fc.htm
-oder direkt die schrittweise Wandlung vom Kolonnenweg zur Unterführung:
-http://www.bsisb.de/anhalter/g_s_lio_tw/l25.htm
-
-=item * (H4)
-
-Wie zeige ich an, dass ein BNP unpassierbar fuer anhaenger ist?
-Fr-Jahn-Sportpark zur Topsstr ist so ein fall.
 
 =item * (H4)
 
@@ -3138,6 +2978,9 @@ Lokalisieren?
 mamboforge.net war am 2008-08-16 nicht erreichbar. Ist die Seite
 permanent down?
 
+-> I deactivated The link already in 2009. Check again if the site is
+   alive, and if not, then remove the outcommented code completely.
+
 =item * (H4) (feature)
 
 Sehenswürdigkeiten auswählbar machen. Prinzipiell geht das schon, wenn
@@ -3308,13 +3151,6 @@ Schopenhauer Str." akzeptieren. Frage: nur fuer Orte oder auch fuer
 Bezirke, also "Kreuzberg, Bahnhofstr."? Kommt auch vor, dass die Leute
 E<quot>Berlin, ...E<quot> schreiben.
 
-=item * (E2)
-
-/robots.txt einrichten, um das Indexieren von temporären Dateien bei
-bbbike und mapserver zu verhindern. -> Hmmm, es existiert schon ein
-robots.txt. Mit Dirk konferieren? Nein, ich kann selbst robots.txt
-schreiben.
-
 =item * (H1)
 
 Bei pref_fragezeichen=yes: Straßenbezeichnungen aus fragezeichen
@@ -3382,11 +3218,6 @@ Optional mehr Informationen in der Routenbeschreibung aufnehmen, z.B.
 Steigungen, Sehenswürdigkeiten in der Nähe,
 U/S-Bahnstationen ... Kommentare sind schon drinnen.
 
-=item * (E3)
-
-cgi-Version: Linux+Netscape: Probleme mit Cookies (Einstellungen)
-=E<gt> noch immer? -> ein Problem habe ich gelöst, war es das?
-
 =item * (M1)
 
 Nice: falls BBBike nur mit Start XOR Ziel angegeben wurde, wird der
@@ -3416,10 +3247,6 @@ Das geht natürlich nur, wenn Apache::Session* installiert ist.
 
 Note: Einiges ist bereits implementiert: Anzeige der vorherigen Länge,
 grafisches Diff bei der googlemaps- und BBBikeDraw::GD-Darstellung.
-
-=item * (E3)
-
-newstreetform.html: qualitaet zum Pflichtfeld machen.
 
 =back
 
@@ -3674,8 +3501,8 @@ nicht so schön zu klappen)
 
 =item * (E2)
 
-E<quot>(A -) BE<quot> zu E<quot>-> BE<quot> optimieren -> konkretes
-Beispiel finden?
+E<quot>(A -) BE<quot> zu E<quot>-> BE<quot> optimieren (bei den
+Routenlabels). Ein konkretes Beispiel finden?
 
 =item * (H2) (external bug)
 
@@ -4359,23 +4186,6 @@ Z<>=> maybe the cache build should be done in a separate process. This
 
  add another full-test rule which calls some tests with their
  -slow/-all/-full/-doit options
-
-=back
-
-=head1 BBBike on the public Server
-
-=over
-
-=item * (H1)
-
-Maybe I should create a tiny wrapper around mapserver-3.6.4, and if
-this fails (segfaults) call mapserver-3.6.6. So I will get the nicer
-images of 3.6.4, but the fallback safety of 3.6.6.
-
-=item * (E3)
-
-Regularly check the CVS version/latest release of mapserver. Maybe it
-will run my mapfile again...
 
 =back
 
