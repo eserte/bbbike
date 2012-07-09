@@ -1081,17 +1081,7 @@ userdel	q4::inwork 425,8766 490,8716
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_018982',
-         'until' => 1341590400,
-         'text' => 'Platz der Luftbrücke (Tempelhof): Veranstaltung, Straße vollständig gesperrt In beiden Richtungen zwischen Columbiadamm und Tempelhofer Damm, 04.07.2012 06:58 Uhr bis 06.07.2012 18:00 Uhr ',
-         'from' => 1341291480,
-         'id' => 2245,
-         'data' => 'userdel	q4::temp 9233,8597 9321,8607 9364,8640 9395,8726
-userdel	q4::temp 9321,8607 9401,8510 9451,8548 9364,8640
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1270,16 +1260,7 @@ userdel	q4::inwork; -1872,24336 -1790,24260 -1627,24105 -1367,23853 -1286,23753 
          'type' => 'handicap'
        },
        undef,
-       {
-         'source_id' => 'IM_018476',
-         'until' => 1341583200,
-         'text' => 'Colditzstr. (Tempelhof): Baustelle, gesperrt Richtung Ullsteinstr. zwischen Volkmarstr. und Ullsteinstr., 29.02.2012 09:54 Uhr bis 06.07.2012 16:00 Uhr ',
-         'from' => 1330419240,
-         'id' => 2318,
-         'data' => 'userdel	q4::inwork; 9974,5385 10029,5230
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => undef,
@@ -1339,16 +1320,7 @@ userdel	q3::inwork 11436,14741 11271,14755
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_018829',
-         'until' => 1341673200,
-         'text' => 'Behrenstr. (Mitte): Baustelle, Fahrtrichtung gesperrt Richtung Friedrichstr. zwischen Mauerstr. und Glinkastr., bis 7. Juli ',
-         'from' => 1338204660,
-         'id' => 2339,
-         'data' => 'userdel	q4::inwork; 9064,12156 9164,12172
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        {
@@ -1415,16 +1387,7 @@ userdel	q4::inwork 10379,14963 10366,14992
          'type' => 'gesperrt',
          'id' => 2349
        },
-       {
-         'source_id' => 'LS/W-SG33-P/12/085',
-         'until' => 1341784800,
-         'text' => 'Nauen: L16: Brückenabriss und Straßenbau - Deckeneinbau zwischen Börnicke und Tietzow LSA-Regelung 07.07./ 08.07.2012 Vollsperrung ',
-         'from' => 1341525600,
-         'id' => 2350,
-         'data' => 'userdel	2::inwork -21888,31852 -21772,30661
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_018917',
          'until' => 1354298400,
