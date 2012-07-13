@@ -68,7 +68,6 @@ TESTS_FROM_LOCAL=	cgihead.t \
 			cgi.t \
 			cgi-test.t \
 			bbbikegooglemap.t \
-			radzeit.t \
 			wapcgi.t \
 			wwwdata.t
 TESTS_SERVER_ON_REMOTE=	
@@ -144,9 +143,16 @@ TEST_JOBS=3
 .endif
 
 .if exists(/usr/lib/cgi-bin/mapserv)
+# e.g. Linux
 MAPSERVER_EXE?=	/usr/lib/cgi-bin/mapserv
+.elif exists(/usr/local/www/cgi-bin/mapserv)
+# e.g. FreeBSD
+MAPSERVER_EXE?=	/usr/local/www/cgi-bin/mapserv
 .else
 MAPSERVER_EXE?=	$(HOME)/www/cgi/mapserv.cgi
+.if !exists($(MAPSERVER_EXE))
+.warning The mapserver executable $(MAPSERVER_EXE) does not exist.
+.endif
 .endif
 
 ## Prefer cp, so I may make changes in ~/src/bbbike and still have
