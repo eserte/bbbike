@@ -157,8 +157,7 @@ slow-checks:	check-categories \
 		check-coords.data \
 		persistent-tmp
 
-persistent-tmp:	${PERSISTENTTMPDIR}/.check_fragezeichen-outdoor-nextcheck.bbd \
-		${PERSISTENTTMPDIR}/fragezeichen-outdoor-nextcheck.bbd \
+persistent-tmp:	fragezeichen-outdoor-nextcheck \
 		${PERSISTENTTMPDIR}/.check_fragezeichen-outdoor.bbd \
 		${PERSISTENTTMPDIR}/fragezeichen-outdoor.bbd \
 		${PERSISTENTTMPDIR}/.check_fragezeichen-indoor-nextcheck.bbd \
@@ -175,6 +174,10 @@ persistent-tmp:	${PERSISTENTTMPDIR}/.check_fragezeichen-outdoor-nextcheck.bbd \
 		${PERSISTENTTMPDIR}/non-faked-strassen \
 		${PERSISTENTTMPDIR}/XXX.bbd \
 		${PERSISTENTTMPDIR}/plz-b.bbd
+
+# popular target
+fragezeichen-outdoor-nextcheck:	${PERSISTENTTMPDIR}/.check_fragezeichen-outdoor-nextcheck.bbd \
+				${PERSISTENTTMPDIR}/fragezeichen-outdoor-nextcheck.bbd
 
 .for i in $(XXX_TARGETS)
 persistent-tmp:	${PERSISTENTTMPDIR}/XXX-$(i).bbd
