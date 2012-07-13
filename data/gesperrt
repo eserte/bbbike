@@ -1434,17 +1434,15 @@ Bornholmer Str. -> Sonderburger Str.: Straßenbahn auf Mittelstreifen	3::igndisp 
 Straßenbahntrasse	3nocross::ignrte 7687,16770 7763,16779 8144,16750
 Osloer Str. -> Louise-Schroeder-Pl.: Straßenbahntrasse	3::igndisp 7687,16770 7763,16779 7745,16889
 Louise-Schroeder-Pl. -> Osloer Str.: Straßenbahntrasse	3::igndisp 7745,16889 7763,16779 8144,16750
-Straßenbahntrasse	3nocross::ignrte 7403,16575 7417,16587 7456,16620 7606,16746
-Weg am Kombibad Wedding -> Seestr.: Straßenbahntrasse	3::igndisp 7298,16725 7417,16587 7456,16620
-Seestr. -> Weg am Kombibad Wedding: Straßenbahntrasse	3::igndisp 7403,16575 7417,16587 7298,16725
+Straßenbahntrasse	3nocross::ignrte 7417,16587 7456,16620 7606,16746
 Seestr. -> Iranische Str.: Straßenbahntrasse	3::igndisp 7606,16746 7456,16620 7707,16543
 Iranische Str. -> Seestr.: Straßenbahntrasse	3::igndisp 7707,16543 7456,16620 7417,16587
 Straßenbahntrasse	3nocross::ignrte 7231,16418 7051,16264 6965,16190
 Seestr. -> Malplaquetstr.: Straßenbahntrasse	3::igndisp 7231,16418 7051,16264 7162,16163
 Malplaquetstr. -> Seestr.: Straßenbahntrasse	3::igndisp 7162,16163 7051,16264 6965,16190
-Straßenbahntrasse	3nocross::ignrte 7231,16418 7295,16477 7388,16561
+Straßenbahntrasse	3nocross::ignrte 7231,16418 7295,16477 7403,16575
 Seestr. -> Syrische Str.: Straßenbahntrasse	3::igndisp 7231,16418 7295,16477 7263,16508
-Syrische Str. -> Seestr.: Straßenbahntrasse	3::igndisp 7263,16508 7295,16477 7388,16561
+Syrische Str. -> Seestr.: Straßenbahntrasse	3::igndisp 7263,16508 7295,16477 7403,16575
 Mittelstreifen	3nocross::ignrte 6528,15000 6561,15041 6630,15100
 Augustenburger Pl. -> Föhrer Str.: Mittelstreifen	3::igndisp 6537,15156 6561,15041 6630,15100
 Föhrer Str. -> Augustenburger Pl.: Mittelstreifen	3::igndisp 6528,15000 6561,15041 6537,15156
@@ -2277,6 +2275,7 @@ Schranke (lichte Breite ca. 120cm)	BNP:2:-50:trailer=8 14448,4501
 Schranke (lichte Breite ca. 120cm)	BNP:2:-53:trailer=8 14709,4307
 Schranke (lichte Breite ca. 100cm)	BNP:3:-45:trailer=10 15179,3901
 Tor	BNP:5:-57 26888,13976
+Voßstr.: gesperrte Fahrbahn (Baustelle), kein Ausweichen möglich	2:inwork 8837,11676 9000,11727
 Zur Monumentenhalle: Straße wird wahrscheinlich neu gebaut	2:inwork 8376,8859 8409,8904 8389,9087
 Billy-Wilder-Promenade: wegen Bauarbeiten an umliegenden Wohnhäusern gesperrt	2:inwork 2528,1501 2584,1376
 Marx-Engels-Forum: wegen U-Bahn-Bauarbeiten Durchgang zur Rathausstr. nicht möglich	2:inwork 10411,12471 10422,12395
@@ -2857,5 +2856,5 @@ Sonnenallee, linker Gehweg	1::igndisp 13457,8069 13474,8060
 Urbanstr.	1::igndisp 11861,9183 11888,9189
 Badstr., linker Gehweg	1::igndisp 8486,16425 8486,16412 8534,16355
 Tempelhofer Ufer, linker Gehweg	1::igndisp 8661,10377 8717,10322 8804,10303
-Leipziger Str., linker Gehweg	1::igndisp 9978,11713 9896,11703
-zur Ampel Jerusalemer Str.	1::igndisp 9981,11689 9978,11713
+Leipziger Str., linker Gehweg	1::igndisp 9985,11711 9896,11703
+zur Ampel Jerusalemer Str.	1::igndisp 9982,11681 9987,11690 9985,11711

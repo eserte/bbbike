@@ -3,6 +3,8 @@
 #: note: XXX_* categorization done 2008-01-26
 #: note: "Parkweg" sollte hier vielleicht nicht verwendet werden, sondern nur in qualitaet_s-orig? Oder wenigstens die gleichen Wege nicht in beiden Dateien so benannt werden? Oder wenigstens beim Ausgeben der Routenliste doppelte ausfiltern?
 #:
+Friedrichstr.(Mitte): Fahrbahn wegen Bauarbeiten gesperrt, Ausweichen auf Gehweg schiebend möglich	q4::inwork 9358,12351 9369,12253 9373,12197
+Charlottenstr.: Einbahnstraßenregelung	q4::inwork; 9475,12365 9487,12263 9492,12214
 Zur Revaler Str.: Bauarbeiten	q3::inwork 14677,11027 14509,11060
 Marchlewskistr.: Bauarbeiten, Ausweichen auf Gehweg	q4::inwork 13496,11384 13473,11456
 Gartenstr.: Einbahnstraße zwischen Invalidenstr. und Tieckstr. (Bauarbeiten)	q4::inwork; 9510,13823 9383,13978
@@ -16,7 +18,7 @@ Kronenstr./Jerusalemer Str.: Bauarbeiten, Fahrbahn vor der Kreuzung gesperrt	q3:
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 9475,12365 9462,12481 9454,12558
 Universitätsstr.: wegen Bauarbeiten Richtung Unter den Linden gesperrt	q4::inwork 9580,12581 9601,12380
 Helmerdingstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg kann benutzt werden	q4::inwork 14465,11195 14442,11101
-Rathausstr.: Baustelle vor dem Roten Rathaus, eng	q4::inwork 10601,12521 10704,12595
+Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521 10704,12595
 Rathausbrücke: provisorischer Fußgängerweg auf der Rathausbrücke, ggfs. schieben	q4::inwork 10362,12351 10422,12395
 Rathausstr. zwischen Breite Str. und Poststr.: Fahrbahn wegen Brückenbauarbeiten gesperrt	q3::inwork 10281,12310 10362,12351
 Rathausstr. zwischen Breite Str. und Poststr.: Fahrbahn wegen Brückenbauarbeiten gesperrt	q4::inwork 10422,12395 10476,12432
@@ -1857,5 +1859,5 @@ Sonnenallee, linker Gehweg	q4::igndisp; 13474,8060 13457,8069
 Urbanstr.	q0::igndisp; 11888,9189 11861,9183
 Badstr., linker Gehweg	q3::igndisp; 8534,16355 8486,16412 8486,16425
 Tempelhofer Ufer, linker Gehweg	q4::igndisp; 8804,10303 8717,10322 8661,10377
-Leipziger Str., linker Gehweg	q3::igndisp; 9896,11703 9978,11713
-zur Ampel Jerusalemer Str.	q3::igndisp; 9978,11713 9981,11689
+Leipziger Str., linker Gehweg	q3::igndisp; 9896,11703 9985,11711
+zur Ampel Jerusalemer Str.	q3::igndisp; 9985,11711 9987,11690 9982,11681

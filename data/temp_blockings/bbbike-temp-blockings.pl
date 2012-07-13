@@ -20035,12 +20035,15 @@ EOF
 userdel	q4::inwork; -1872,24336 -1790,24260 -1627,24105 -1367,23853 -1286,23753 -1281,23746 -1084,23564 -997,23492 -984,23480 -903,23406 -783,23190 -656,23011
 EOF
      },
-     { from  => 1329631200, # 2012-02-19 07:00
-       until => 1341068400, # 2012-06-30 17:00
-       text  => 'Behrenstr. (Mitte): Fahrbahn gesperrt (bis Ende 06/12) zwischen Glinkastr. und Friedrichstr., Richtung Friedrichstraße',
+     { from  => undef, # 1329631200, # 2012-02-19 07:00
+       until => undef, # 1341068400, # 2012-06-30 17:00
+       text  => 'Behrenstr. (Mitte): Fahrbahn Richtung Friedrichstr. zwischen Glinkastr. und Friedrichstr. gesperrt',
        type  => 'handicap',
-       source_id => 'INKO_093369',
+## früher:
+#       source_id => 'INKO_093369',
        data  => <<EOF,
+#: last_checked: 2012-07-13
+#: next_check: 2012-08-13
 userdel	q4::inwork; 9164,12172 9373,12197
 EOF
      },
@@ -20418,8 +20421,8 @@ EOF
 userdel	q4::inwork 12736,17998 12467,17814
 EOF
      },
-     { from  => 1342044000, # 2012-07-12 00:00
-       until => 1388530799, # 2013-12-31 23:59
+     { from  => 1342208382, # 1342044000, # 2012-07-12 00:00 --- moved to handicap-s
+       until => 1342208385, # 1388530799, # 2013-12-31 23:59
        text  => 'Friedrichstr.(Mitte) in beiden Richtungen zwischen Unter den Linden und Behrenstr. Baustelle, Straße vollständig gesperrt, ab 13.07.2012 07 Uhr bis Ende Dezember 2013 ',
        type  => 'handicap',
        source_id => 'INKO_091722',
@@ -20429,11 +20432,11 @@ EOF
      },
      { from  => 1342123327, # 2012-07-12 22:02
        until => 1345500000, # 2012-08-21 00:00
-       text  => 'Karlshorster Str. (Lichtenberg): Brückenarbeiten, Vollsperrung zwischen Nöldnerstr. und Türrschmidtstr., 09.07.2012 bis 20.08.2012 04:00 Uhr',
-       type  => 'gesperrt',
+       text  => 'Karlshorster Str. (Lichtenberg): Brückenarbeiten, Sperrung zwischen Nöldnerstr. und Türrschmidtstr., Fußgänger und Radfahrer können langsam passieren, 09.07.2012 bis 20.08.2012 04:00 Uhr',
+       type  => 'handicap',
        source_id => 'IM_018994',
        data  => <<EOF,
-userdel	2::inwork 15272,10790 15263,10747
+userdel	q3::inwork 15272,10790 15263,10747
 EOF
      },
     );

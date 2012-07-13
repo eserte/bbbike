@@ -8,6 +8,15 @@
 #
 #: temporary vvv
 # 
+#: last_checked: 2012-07-13
+#: next_check: 2013-12-31
+#: XXX siehe auch INKO_091722
+Friedrichstr.(Mitte): Fahrbahn wegen Bauarbeiten gesperrt, Ausweichen auf Gehweg schiebend mˆglich	q4::inwork 9358,12351 9369,12253 9373,12197
+# 
+#: last_checked: 2012-07-13
+#: next_check: 2013-12-31
+Charlottenstr.: Einbahnstraﬂenregelung	q4::inwork; 9475,12365 9487,12263 9492,12214
+# 
 #: last_checked: 2012-07-11
 #: next_check: 2012-08-01
 Zur Revaler Str.: Bauarbeiten	q3::inwork 14677,11027 14509,11060
@@ -20,9 +29,10 @@ Marchlewskistr.: Bauarbeiten, Ausweichen auf Gehweg	q4::inwork 13496,11384 13473
 #: next_check: 2012-07-20
 Gartenstr.: Einbahnstraﬂe zwischen Invalidenstr. und Tieckstr. (Bauarbeiten)	q4::inwork; 9510,13823 9383,13978
 # 
-#: last_checked: 2012-04-20
+#: last_checked: 2012-07-13
 #: next_check: 2012-12-01
 #: XXX Siehe auch Baustellenampel an der Wilhelmstr.
+#: XXX Siehe auch Totalsperrung in der Voﬂstr.
 #: XXX laut INKO_113363 bis Ende M‰rz 2013 gesperrt
 Voﬂstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg	q3::inwork 8743,11663 8837,11676
 # 
@@ -45,16 +55,16 @@ Alt-Stralau: Bauarbeiten an der Br¸cke, enge Durchfahrt	q3::inwork 14652,10201 1
 #: XXX nach den Bauarbeiten vielleicht besserer Asphalt? -> qualitaet_s-orig
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9890,12161 9875,12257 9869,12297
 # 
-#: last_checked: 2012-06-03
-#: next_check: 2012-07-01
+#: last_checked: 2012-07-13
+#: next_check: 2012-09-01
 Kronenstr./Jerusalemer Str.: Bauarbeiten, Fahrbahn vor der Kreuzung gesperrt	q3::inwork 9692,11732 9892,11752
 # 
-#: last_checked: 2012-06-07
-#: next_check: 2012-08-01
+#: last_checked: 2012-07-13
+#: next_check: 2012-09-01
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraﬂe Richtung S¸den	q4::inwork; 9475,12365 9462,12481 9454,12558
 # 
-#: last_checked: 2012-06-07
-#: next_check: 2012-08-01
+#: last_checked: 2012-07-13
+#: next_check: 2012-09-01
 Universit‰tsstr.: wegen Bauarbeiten Richtung Unter den Linden gesperrt	q4::inwork 9580,12581 9601,12380
 # 
 #: last_checked: 2012-07-11 vvv
@@ -64,9 +74,9 @@ Helmerdingstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg kann benutzt werden	q4::i
 #: next_check: ^^^
 #: last_checked: ^^^
 # 
-#: last_checked: 2012-06-05
-#: next_check: 2012-06-25
-Rathausstr.: Baustelle vor dem Roten Rathaus, eng	q4::inwork 10601,12521 10704,12595
+#: last_checked: 2012-07-13
+#: next_check: 2012-08-25
+Rathausstr.: Fuﬂg‰nger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521 10704,12595
 # 
 #XXX del --- #: last_checked: 2011-02-27 --- #: next_check: 2011-07-15 --- Am Carlsgarten: Bauarbeiten	q4::inwork 19460,7954 19372,8012 19334,8046
 # 
@@ -95,8 +105,8 @@ Elcknerplatz, Borgmannstr.: Bauarbeiten, Einbahnstraﬂe	q4::inwork; 22428,6063 22
 #: XXX wahrscheinlich bis Ende Oktober 2012
 Kantstr.: Bauarbeiten am Zoofenster, Fahrbahn Richtung Westen gesperrt	q4::inwork; 5652,11004 5613,10963 5494,10973
 # 
-#: last_checked: 2012-05-13 vvv
-#: next_check: 2012-07-01 vvv
+#: last_checked: 2012-07-13 vvv
+#: next_check: 2012-09-01 vvv
 #: note: siehe auch Eintrag zur Friedrichsbr¸cke
 Burgstraﬂe: Bauarbeiten, Einbahnstraﬂenregelung	q4::inwork; 10166,12777 10132,12941
 Anna-Louisa-Karsch-Str.: vor der Friedrichsbr¸cke auf den linken Gehweg fahren	q3::inwork; 10264,12826 10166,12777
@@ -107,8 +117,8 @@ Anna-Louisa-Karsch-Str.: vor der Friedrichsbr¸cke auf den linken Gehweg fahren	q
 #: next_check: 2012-09-01
 Am Zirkus: Baustelle, Einbahnstraﬂe	q3::inwork; 9170,13031 9239,12923
 # 
-#: last_checked: 2012-06-07
-#: next_check: 2012-07-15
+#: last_checked: 2012-07-13
+#: next_check: 2012-09-01
 Am Kupfergraben: Baustelle, Einbahnstraﬂe	q3::inwork; 9867,12651 9919,12613
 # 
 #: last_checked: 2012-04-20
@@ -580,7 +590,7 @@ Am Flutgraben: Fuﬂg‰nger	q1 13371,9974 13333,9929
 (Ernst-Heilmann-Steg): Fuﬂg‰nger, zwei Bodenschwellen	q3 13270,10030 13306,10006 13371,9974
 Buschrosenplatz: enge Straﬂe	q1 13002,5548 13054,5556 13075,5470
 #: XXX sp‰ter vielleicht wieder "Fuﬂg‰nger, q1"
-#: last_checked: 2012-05-31 (wosch)
+#: last_checked: 2012-07-13
 #: next_check: 2013-06-01
 #: XXX Bauarbeiten wahrscheinlich bis Oktober 2013
 #: by: http://www.abload.de/img/friedrichsbruecke05byk16.jpg

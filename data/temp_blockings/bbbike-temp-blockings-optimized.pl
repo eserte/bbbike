@@ -1259,7 +1259,17 @@ userdel	q4::inwork; -1872,24336 -1790,24260 -1627,24105 -1367,23853 -1286,23753 
 ',
          'type' => 'handicap'
        },
-       undef,
+       {
+         'until' => undef,
+         'text' => 'Behrenstr. (Mitte): Fahrbahn Richtung Friedrichstr. zwischen Glinkastr. und Friedrichstr. gesperrt',
+         'from' => undef,
+         'id' => 2317,
+         'data' => '#: last_checked: 2012-07-13
+#: next_check: 2012-08-13
+userdel	q4::inwork; 9164,12172 9373,12197
+',
+         'type' => 'handicap'
+       },
        undef,
        undef,
        {
@@ -1366,16 +1376,7 @@ userdel	q4::inwork 10379,14963 10366,14992
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'source_id' => 'INKO_113724',
-         'until' => 1342191600,
-         'text' => 'Friedrichstr. (Mitte): Baustelle, zwischen Mittelstr. und Unter den Linden Richtung Süden gesperrt (bis Mitte 07/12)',
-         'from' => 1339907400,
-         'id' => 2348,
-         'data' => 'userdel	q4::inwork; 9343,12464 9358,12351
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'http://www.berlin.de/ba-spandau/presse/archiv/20120423.1455.369136.html',
          'recurring' => 1,
@@ -1418,16 +1419,7 @@ userdel	q4::inwork 10379,14963 10366,14992
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_018979',
-         'until' => 1342130400,
-         'text' => 'Str. des 17. Juni (Tiergarten): Veranstaltung, Straße vollständig gesperrt, in beiden Richtungen zwischen Großer Stern und Y.-Rabin-Str., 04.07.2012 bis 12.07.2012 22:00 Uhr ',
-         'from' => 1341515513,
-         'id' => 2354,
-         'data' => 'userdel	2::temp 8055,12186 7816,12150 7383,12095 6828,12031
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20120703.1445.372223.html',
          'until' => 1344117599,
@@ -1468,25 +1460,16 @@ userdel	q4::inwork 10379,14963 10366,14992
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'INKO_091722',
-         'until' => 1388530799,
-         'text' => 'Friedrichstr.(Mitte) in beiden Richtungen zwischen Unter den Linden und Behrenstr. Baustelle, Straße vollständig gesperrt, ab 13.07.2012 07 Uhr bis Ende Dezember 2013 ',
-         'from' => 1342044000,
-         'id' => 2359,
-         'data' => 'userdel	q4::inwork 9358,12351 9369,12253
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'IM_018994',
          'until' => 1345500000,
-         'text' => 'Karlshorster Str. (Lichtenberg): Brückenarbeiten, Vollsperrung zwischen Nöldnerstr. und Türrschmidtstr., 09.07.2012 bis 20.08.2012 04:00 Uhr',
+         'text' => 'Karlshorster Str. (Lichtenberg): Brückenarbeiten, Sperrung zwischen Nöldnerstr. und Türrschmidtstr., Fußgänger und Radfahrer können langsam passieren, 09.07.2012 bis 20.08.2012 04:00 Uhr',
          'from' => 1342123327,
          'id' => 2360,
-         'data' => 'userdel	2::inwork 15272,10790 15263,10747
+         'data' => 'userdel	q3::inwork 15272,10790 15263,10747
 ',
-         'type' => 'gesperrt'
+         'type' => 'handicap'
        }
      
 );

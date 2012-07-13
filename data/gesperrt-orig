@@ -1270,9 +1270,9 @@ Klingelhˆferstr: unbequem passierbarer Mittelstreifen	3nocross 6825,11486 6851,1
 Bornholmer Str.: Straﬂenbahn auf Mittelstreifen	3nocross 10197,16528 9998,16547 9883,16557 9816,16565
 Bornholmer Str.: Straﬂenbahn auf Mittelstreifen	3nocross 9514,16603 9617,16590 9781,16569 9816,16565
 Osloer Str.: Straﬂenbahntrasse	3nocross 7687,16770 7763,16779 8144,16750
-Seestr.: Straﬂenbahntrasse	3nocross 7403,16575 7417,16587 7456,16620 7606,16746
+Seestr.: Straﬂenbahntrasse	3nocross 7417,16587 7456,16620 7606,16746
 Seestr.: Straﬂenbahntrasse	3nocross 7231,16418 7051,16264 6965,16190
-Seestr.: Straﬂenbahntrasse	3nocross 7231,16418 7295,16477 7388,16561
+Seestr.: Straﬂenbahntrasse	3nocross 7231,16418 7295,16477 7403,16575
 Fˆhrer Str.: Mittelstreifen	3nocross 6528,15000 6561,15041 6630,15100
 Frankfurter Allee: unbequem passierbarer Mittelstreifen	3nocross 14208,12235 14291,12220 14381,12205
 Frankfurter Allee: unbequem passierbarer Mittelstreifen	3nocross 14381,12205 14427,12197 14488,12188
@@ -1999,6 +1999,13 @@ Tor	BNP:5 26888,13976
 #: section tempor‰re Sperrungen (Baustellen etc.) vvvvvvvvvvvvvvvvvvvvvvvvvv
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+# 
+#: last_checked: 2012-07-13
+#: next_check: 2012-12-01
+#: XXX Siehe auch Baustellenampel an der Wilhelmstr.
+#: XXX Siehe auch handicap in der Voﬂstr.
+#: XXX laut INKO_113363 bis Ende M‰rz 2013 gesperrt
+Voﬂstr.: gesperrte Fahrbahn (Baustelle), kein Ausweichen mˆglich	2:inwork 8837,11676 9000,11727
 # 
 #: last_checked: 2012-06-08
 #: next_check: 2013-03-01
