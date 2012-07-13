@@ -1447,6 +1447,46 @@ userdel	q4::inwork 10379,14963 10366,14992
          'data' => 'userdel	2::inwork 13429,22943 13521,23057
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'LS/S-SG33-W/11/268',
+         'until' => 1342303200,
+         'text' => 'Mittenwalde: L30: Brückenneubau im Zuge der OU Königs Wusterhausen zwischen Königs Wusterhausen und Schenkendorf Vollsperrung am 14.07.12',
+         'from' => 1342130400,
+         'id' => 2357,
+         'data' => 'userdel	2::inwork 24843,-13725 25148,-13393
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'INKO_114025',
+         'until' => 1342796400,
+         'text' => 'Berliner Str. (Weißensee): Baustelle, Straße vollständig gesperrt (bis Ende 07/12) in beiden Richtungen zwischen Romain-Rolland-Str. und Am Wasserturm',
+         'from' => 1341730800,
+         'id' => 2358,
+         'data' => 'userdel	q4::inwork 12736,17998 12467,17814
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'INKO_091722',
+         'until' => 1388530799,
+         'text' => 'Friedrichstr.(Mitte) in beiden Richtungen zwischen Unter den Linden und Behrenstr. Baustelle, Straße vollständig gesperrt, ab 13.07.2012 07 Uhr bis Ende Dezember 2013 ',
+         'from' => 1342044000,
+         'id' => 2359,
+         'data' => 'userdel	q4::inwork 9358,12351 9369,12253
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_018994',
+         'until' => 1345500000,
+         'text' => 'Karlshorster Str. (Lichtenberg): Brückenarbeiten, Vollsperrung zwischen Nöldnerstr. und Türrschmidtstr., 09.07.2012 bis 20.08.2012 04:00 Uhr',
+         'from' => 1342123327,
+         'id' => 2360,
+         'data' => 'userdel	2::inwork 15272,10790 15263,10747
+',
+         'type' => 'gesperrt'
        }
      
 );

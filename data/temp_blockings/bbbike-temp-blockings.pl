@@ -20400,4 +20400,40 @@ EOF
 userdel	2::inwork 13429,22943 13521,23057
 EOF
      },
+     { from  => 1342130400, # 2012-07-13 00:00
+       until => 1342303200, # 2012-07-15 00:00
+       text  => 'Mittenwalde: L30: Brückenneubau im Zuge der OU Königs Wusterhausen zwischen Königs Wusterhausen und Schenkendorf Vollsperrung am 14.07.12',
+       type  => 'gesperrt',
+       source_id => 'LS/S-SG33-W/11/268',
+       data  => <<EOF,
+userdel	2::inwork 24843,-13725 25148,-13393
+EOF
+     },
+     { from  => 1341730800, # 2012-07-08 09:00
+       until => 1342796400, # 2012-07-20 17:00
+       text  => 'Berliner Str. (Weißensee): Baustelle, Straße vollständig gesperrt (bis Ende 07/12) in beiden Richtungen zwischen Romain-Rolland-Str. und Am Wasserturm',
+       type  => 'handicap',
+       source_id => 'INKO_114025',
+       data  => <<EOF,
+userdel	q4::inwork 12736,17998 12467,17814
+EOF
+     },
+     { from  => 1342044000, # 2012-07-12 00:00
+       until => 1388530799, # 2013-12-31 23:59
+       text  => 'Friedrichstr.(Mitte) in beiden Richtungen zwischen Unter den Linden und Behrenstr. Baustelle, Straße vollständig gesperrt, ab 13.07.2012 07 Uhr bis Ende Dezember 2013 ',
+       type  => 'handicap',
+       source_id => 'INKO_091722',
+       data  => <<EOF,
+userdel	q4::inwork 9358,12351 9369,12253
+EOF
+     },
+     { from  => 1342123327, # 2012-07-12 22:02
+       until => 1345500000, # 2012-08-21 00:00
+       text  => 'Karlshorster Str. (Lichtenberg): Brückenarbeiten, Vollsperrung zwischen Nöldnerstr. und Türrschmidtstr., 09.07.2012 bis 20.08.2012 04:00 Uhr',
+       type  => 'gesperrt',
+       source_id => 'IM_018994',
+       data  => <<EOF,
+userdel	2::inwork 15272,10790 15263,10747
+EOF
+     },
     );
