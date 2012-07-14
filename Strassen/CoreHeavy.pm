@@ -337,7 +337,7 @@ sub copy_orig {
 
 sub get_diff_orig_dir {
     # ignore $self
-    my $origdir = "$Strassen::Util::tmpdir/bbbike-orig";
+    my $origdir = "$Strassen::Util::tmpdir/bbbike-orig-$<";
     if (! -d $origdir) {
 	mkdir $origdir, 0700;
 	if (! -d $origdir) {
