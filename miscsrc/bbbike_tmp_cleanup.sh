@@ -22,10 +22,10 @@ then
 fi
 
 case "`hostname`" in
-    biokovo.herceg.de | biokovo.rezic.de |biokovo-amd64.herceg.de | biokovo-amd64.rezic.de | mosor | devpc01-debian )
+    biokovo.herceg.de | biokovo.rezic.de |biokovo-amd64.herceg.de | biokovo-amd64.rezic.de | mosor | devpc01-debian | cvrsnica )
         ;;
     *)
-        echo "Should only run on biokovo or mosor"
+        echo "Should only run on biokovo, cvrsnica, or mosor"
 	exit 1
 	;;
 esac
@@ -94,7 +94,10 @@ if [ "$deleteall" ]
 then
     ## Original files when using the bbbike editor. Not deleted by default,
     ## because it's likely that a bbbike session is still running
+    # Old location without uid
     rm -r /tmp/bbbike-orig
+    # New location with uid
+    rm -r /tmp/bbbike-orig-[0-9]*
     ## Possible precious information about failing tests
     rm /tmp/??????????.bbbike_test.html
     rm /tmp/??????????.bbbike_test
