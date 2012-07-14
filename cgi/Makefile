@@ -30,6 +30,7 @@ biokovo.conf:
 	    httpd.conf
 
 $(HTTPD_CONF): httpd.conf.tpl Makefile
+	@[ -e bbbike2.cgi ] || echo 'Please run "make symlinks" first, or create a symlink to bbbike2.cgi manually'
 	tpage --define ROOT_URL=$(ROOT_URL) \
 	      --define ROOT_DIR=$(ROOT_DIR) \
 	      --define CGI_SCRIPTS="$(CGI_SCRIPTS)" \
