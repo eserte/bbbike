@@ -248,7 +248,7 @@ my @req_table =
   [qw/Flickr::API	0	all	0	plugin/,
    'Flickr-Bilder in BBBike anzeigen'],
 
-  [qw/Image::Info	1.29	all	0	test/],
+  [qw/Image::Info	1.32	all	0	test/], # 1.32 needed, otherwise bbbikedraw.t may fail
   [qw/Test::More	0	all	0	test/],
   [qw/Test::Differences	0	all	0	test/],
   [qw/WWW::Mechanize	0	all	2	test/,
