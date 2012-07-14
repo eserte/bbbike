@@ -24,11 +24,10 @@ foreach ([text_de => 'Stille', beaufort => 0],
 	 ['km/h'  => 1852,     'sm/h'   => 1000],
 	 ['km/h'  => 36,       'm/s'    => 10],
 	) {
-    is wind_velocity([$_->[1], $_->[0]], $_->[2]), $_->[3],
-	"Check for $_->[1] $_->[0]] => $_->[2]";
+    my $testname = "Check for $_->[1] $_->[0] => $_->[2]";
+    is wind_velocity([$_->[1], $_->[0]], $_->[2]), $_->[3], $testname;
     if ($_->[0] !~ /^text/) {
-	is wind_velocity("$_->[1] $_->[0]", $_->[2]), $_->[3],
-	    "Check for $_->[1] $_->[0]] => $_->[2]";
+	is wind_velocity("$_->[1] $_->[0]", $_->[2]), $_->[3], $testname;
     }
 }
 
