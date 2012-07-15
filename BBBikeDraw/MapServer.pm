@@ -339,7 +339,13 @@ $VERSION = sprintf("%d.%02d", q$Revision: 1.45 $ =~ /(\d+)\.(\d+)/);
 	    local $/ = undef;
 	    $buf = <SHP2IMG>;
 	    close SHP2IMG
-		or die "Problems while running <@cmd>: errno=$! exit=$?";
+		or do {
+		    warn "Problems while running <@cmd>: errno=$! exit=$?";
+		    require File::Copy;
+		    my $crash_file = "/tmp/mapserver-crash-$$.map";
+		    File::Copy::cp($mapfile, $crash_file);
+		    die "Tried to copy mapfile to $crash_file";
+		};
 #	}
 
 	$buf;
