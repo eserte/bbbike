@@ -442,11 +442,8 @@ for my $cgiurl (@urls) {
 	# Klick on Start berlin map (Kreuzberg)
 	my $content = std_get "$action?start=&startcharimg.x=107&startcharimg.y=15&startmapimg.x=90&startmapimg.y=107&via=&viacharimg.x=&viacharimg.y=&viamapimg.x=&viamapimg.y=&ziel=&zielcharimg.x=&zielcharimg.y=&zielmapimg.x=&zielmapimg.y=", testname => "Click on overview map";
 	my $map_qr = qr{(http://.*/bbbike.*(?:tmp|\?tmp=)/berlin_map_04-05(?:_240|_280x240)?.png)}i;
-	skip "Cannot get tile image reference, expected something like $map_qr", 3
-	    if $content !~ $map_qr;
-
-	my $image_url = $1;
-	pass "Found map image source";
+	like_html $content, $map_qr, "Found map image source";
+	my($image_url) = $content =~ $map_qr;
 	my $resp;
 	($content, $resp) = std_get $image_url;
 	is $resp->content_type, 'image/png', "$image_url is a PNG";
