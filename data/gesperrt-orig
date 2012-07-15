@@ -2111,11 +2111,7 @@ Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 #: next_check: 2012-07-15
 Boyenweg - Uferweg: wegen Bauarbeiten gesperrt	2:inwork 7938,14426 7886,14518 7787,14473
 # 
-#: last_checked: 2011-12-25
-#: next_check: 2012-01-01
-#: XXX evenuell bleibt dieser Teil dauerhaft gesperrt, weil hier ein Einkaufszentrum entsteht?
-#: XXX auch die Ampel an der Kreuzung prüfen
-Treitschkestr.: Bauarbeiten am Kaufhaus, bis 2012	2:inwork 5219,6215 5125,6262 4971,6345
+#XXX del --- #: last_checked: 2011-12-25 --- #: next_check: 2012-01-01 --- #: XXX evenuell bleibt dieser Teil dauerhaft gesperrt, weil hier ein Einkaufszentrum entsteht? --- #: XXX auch die Ampel an der Kreuzung prüfen --- Treitschkestr.: Bauarbeiten am Kaufhaus, bis 2012	2:inwork 5219,6215 5125,6262 4971,6345
 # 
 #: last_checked: 2012-04-29
 #: next_check: 2012-07-15
@@ -2190,7 +2186,7 @@ Vogelsang	1 2106,5808 2141,5948 2195,6184 2193,6214
 Dievenowstr.	2 3165,6939 3202,7121
 Ahornstr. (Steglitz)	1 4863,6088 4888,6093 4923,6073 4926,6053
 Ahornstr. (Steglitz)	1 4926,6053 4903,6048 4872,6068 4863,6088
-Treitschkestr.	1 4854,6413 4971,6345 5125,6262 5219,6215
+Treitschkestr.	1 4854,6413 4971,6345 5125,6262
 tragen (3 x 10 Stufen)	0:40 4127,5427
 tragen (5 Stufen)	0:10 4061,5418
 Iltisstr.	1 2797,5624 2858,5535

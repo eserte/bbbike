@@ -1440,16 +1440,7 @@ userdel	q4::inwork 10379,14963 10366,14992
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'LS/S-SG33-W/11/268',
-         'until' => 1342303200,
-         'text' => 'Mittenwalde: L30: Brückenneubau im Zuge der OU Königs Wusterhausen zwischen Königs Wusterhausen und Schenkendorf Vollsperrung am 14.07.12',
-         'from' => 1342130400,
-         'id' => 2357,
-         'data' => 'userdel	2::inwork 24843,-13725 25148,-13393
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'INKO_114025',
          'until' => 1342796400,
