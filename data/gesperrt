@@ -122,7 +122,7 @@ Engeldamm	1 11473,11180 11656,11106 11800,11118 11921,11185 12026,11348
 Pannierstr.	1 12202,8895 12242,8972
 Stolzenfelsstr.	1s 19436,8183 19423,8146 19333,8165 19171,8280 18949,8437 18787,8540 18722,8582
 Bersarinplatz	1 13742,12538 13698,12544 13678,12571 13686,12611 13695,12643 13727,12642 13747,12642 13767,12626 13761,12578 13742,12538
-Petersburger Platz	1 13467,12978 13558,12766
+Petersburger Platz	1 13467,12978 13559,12779
 Dernburgstr.	1 2498,10665 2378,10677 2333,10710 2252,11037
 Schuckertdamm	1 741,14827 1022,14898 1056,14906 1112,14918 1200,14943 1343,14972 1465,14963
 Am Kleinen Wannsee	1 -5499,1349 -5485,1274 -5535,1204 -5742,1142
@@ -219,7 +219,7 @@ Tannenweg	1 -3023,17889 -3012,17940 -3028,18024
 Erlenweg	1 -3228,18103 -3327,18007
 Aspenweg	1 -3000,18192 -3020,18188 -3050,18164 -3096,18119 -3111,18105 -3168,18051 -3203,18014 -3224,17943
 Aspenweg	1 -3288,17831 -3244,17883 -3224,17943
-Pintschstr.	1 13342,13185 13438,12965
+Pintschstr.	1 13341,13191 13438,12965
 Splanemannstr.	1 18301,9946 18389,9925 18408,10041 18403,10077
 Burgherrenstr.	1 8969,8640 9076,8783
 Travestr.	1 14835,11840 14897,11801 14977,11754
@@ -447,7 +447,6 @@ Südwestkorso	1 4061,6753 4206,6820
 Südwestkorso	1 4206,6820 4107,6718
 Kleine Markusstr. - Krautstr.	1 12021,12066 11937,12127 11967,12042 12005,12018
 Schönstedtstr.	1 12540,8458 12649,8535
-Eckertstr.	1 13608,12547 13522,12748
 Erkelenzdamm	1s 11117,10326 11094,10261
 Alt-Tempelhof	1 8776,6661 8722,6656
 Langkofelweg	1 6845,3403 6940,3498 7018,3572
@@ -1081,16 +1080,16 @@ Prenzlauer Promenade -> Caligaripl.: Straßenbahntrasse	3::igndisp 12077,16380 12
 Straßenbahntrasse	3nocross::ignrte 12054,16517 12077,16380 12097,16263
 Herthastr. -> Prenzlauer Promenade: Straßenbahntrasse	3::igndisp 11908,16410 12077,16380 12054,16517
 Prenzlauer Promenade -> Herthastr.: Straßenbahntrasse	3::igndisp 12097,16263 12077,16380 11908,16410
-Straßenbahntrasse	3nocross::ignrte 13626,12797 13579,12904 13537,13003
+Straßenbahntrasse	3nocross::ignrte 13622,12806 13579,12904 13537,13003
 Petersburger Str. -> Matternstr.: Straßenbahntrasse	3::igndisp 13537,13003 13579,12904 13798,13003
-Matternstr. -> Petersburger Str.: Straßenbahntrasse	3::igndisp 13798,13003 13579,12904 13626,12797
-Straßenbahntrasse	3nocross::ignrte 13537,13003 13487,13115 13437,13228
+Matternstr. -> Petersburger Str.: Straßenbahntrasse	3::igndisp 13798,13003 13579,12904 13622,12806
+Straßenbahntrasse	3nocross::ignrte 13537,13003 13487,13115 13434,13234
+Petersburger Str. -> Ebelingstr.: Straßenbahntrasse	3::igndisp 13434,13234 13487,13115 13610,13169
 Ebelingstr. -> Petersburger Str.: Straßenbahntrasse	3::igndisp 13610,13169 13487,13115 13537,13003
-Petersburger Str. -> Ebelingstr.: Straßenbahntrasse	3::igndisp 13437,13228 13487,13115 13610,13169
-Straßenbahntrasse	3nocross::ignrte 13330,13468 13381,13354 13393,13326 13437,13228
+Straßenbahntrasse	3nocross::ignrte 13330,13468 13381,13354 13393,13326 13434,13234
 An der Brauerei -> Petersburger Str.: Straßenbahntrasse	3::igndisp 13283,13311 13381,13354 13330,13468
 Petersburger Str. -> An der Brauerei: Straßenbahntrasse	3::igndisp 13393,13326 13381,13354 13283,13311
-Heidenfeldstr. -> Petersburger Str.: Straßenbahntrasse	3::igndisp 13433,13346 13393,13326 13437,13228
+Heidenfeldstr. -> Petersburger Str.: Straßenbahntrasse	3::igndisp 13433,13346 13393,13326 13434,13234
 Petersburger Str. -> Heidenfeldstr.: Straßenbahntrasse	3::igndisp 13381,13354 13393,13326 13433,13346
 Bahntrasse	3nocross::ignrte 16635,2796 16677,2856 16779,2993
 Stubenrauchstr. -> Krokusstr.: Bahntrasse	3::igndisp 16779,2993 16677,2856 16739,2736
@@ -2422,7 +2421,7 @@ Danziger Str. -> Heinz-Bartsch-Str.: Straßenbahnschienen	3::igndisp 12975,13990 
 Straßenbahnschienen	3nocross::ignrte 13100,13803 13166,13707 13225,13620
 Danziger Str. -> Rudi-Arndt-Str.: Straßenbahnschienen	3::igndisp 13100,13803 13166,13707 13359,13832
 Rudi-Arndt-Str. -> Danziger Str.: Straßenbahnschienen	3::igndisp 13359,13832 13166,13707 13225,13620
-Pintschstr.	1 13342,13185 13438,12965
+Pintschstr.	1 13341,13191 13438,12965
 Landsberger Allee	3nocross::ignrte 12386,13085 12585,13118 12685,13135
 Ernst-Zinna-Weg -> Landsberger Allee: Landsberger Allee	3::igndisp 12564,13216 12585,13118 12685,13135
 Landsberger Allee -> Ernst-Zinna-Weg: Landsberger Allee	3::igndisp 12386,13085 12585,13118 12564,13216
