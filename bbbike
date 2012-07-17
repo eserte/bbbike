@@ -4786,6 +4786,14 @@ if ($init_with_edittools) {
 }
 
 $booting = 0;
+
+# Call this after creating the main window, otherwise
+# bbbike -xrm '*Desk:...'
+# does not work.
+$top->afterIdle(sub {
+		    $top->command([$^X, $0]);
+		});
+
 MainLoop unless $ENV{BBBIKE_TEST_PERFORMANCE};
 
 ##### Subs ### RELOADER_START ############################################
@@ -7603,7 +7611,6 @@ sub set_bindings {
     }
 
     $top->protocol('WM_DELETE_WINDOW', \&exit_app_noninteractive);
-    $top->command([$^X, $0]);
     my($old_width, $old_height);
     my $in_configure_event;
     $top->bind('<Configure>' => sub {
