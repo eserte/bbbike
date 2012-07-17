@@ -1,4 +1,5 @@
 [% EDITWARNMAP %]
+[% PROCESS "brb.map-inc" -%]
 [%
    UNLESS MAPNAME.defined;	MAPNAME = "brb-ipaq";			END;
 
@@ -43,10 +44,19 @@ IMAGETYPE [% IMAGE_TYPE %]
 OUTPUTFORMAT
   NAME png
   MIMETYPE image/png
+[% IF MAPSERVER_DRIVER == "AGG" -%]
+  DRIVER AGG/PNG
+[% ELSE -%]
   DRIVER GD/PNG
+[% END -%]
   EXTENSION png
+[% IF TRANSPARENT.defined && TRANSPARENT -%]
+  IMAGEMODE RGBA
+  TRANSPARENT TRUE
+[% ELSE -%]
   IMAGEMODE RGB
   TRANSPARENT FALSE
+[% END -%]
 END
 IMAGETYPE png
 
