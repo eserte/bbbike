@@ -108,15 +108,11 @@ sub add_button {
 	   -font => $main::font{'bold'},
 	   -menuitems =>
 	   [
-	    [Button => "Show recent VMZ diff (new version)",
-	     -command => sub { show_new_vmz_diff() },
-	    ],
-	    "-",
-	    [Button => 'VMZ/LBVS lister',
+	    [Button => 'VMZ/LBVS lister (old files)',
 	     -command => sub { show_vmz_lbvs_files() },
 	    ],
 	    "-",
-	    [Button => "Show recent VMZ diff",
+	    [Button => "Show recent VMZ diff (old version)",
 	     -command => sub { show_vmz_diff() },
 	    ],
 	    (map { [Button => "VMZ version $_", -command => [sub { show_vmz_diff($_[0]) }, $_] ] } (0 .. 5)),
@@ -468,6 +464,9 @@ EOF
 	      ],
 	      [Button => $do_compound->('VMZ'),
 	       -command => sub { newvmz_process() },
+	      ],
+	      [Button => "Show recent VMZ diff",
+	       -command => sub { show_new_vmz_diff() },
 	      ],
 	      [Cascade => $do_compound->("VMZ-Detailnetz"), -menuitems =>
 	       [
