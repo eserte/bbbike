@@ -1196,6 +1196,7 @@ userdel	2::inwork 19750,11730 19827,11686 19881,11591
 #: note: am 2012-04-27 geprüft, Fahrbahn ist absperrt (nur die Straßenbahn wird durchgelassen), Radfahrer können nur den Gehweg benutzen
 #: note: am 2012-05-30 geprüft, Radfahrer konnten problemlos passieren
 #: note: am 2012-06-12 geprüft, Fahrbahn ist absperrt (nur die Straßenbahn wird durchgelassen), Radfahrer können nur den Gehweg benutzen
+#: note: am 2012-07-16 geprüft, Radfahrer konnten problemlos passieren
 userdel	q4::inwork 10723,14772 10838,14962
 ',
          'type' => 'handicap'
@@ -1232,7 +1233,7 @@ userdel	2::inwork 19968,16 19940,52
          'text' => 'Hessische Str. (Mitte): Baustelle, Fahrtrichtung gesperrt (Umleitungsstrecke für die Arbeiten auf der Invalidenstr.) Richtung Oranienburger Tor, 15.02.2012 09:42 Uhr bis 31.05.2013 10:42 Uhr',
          'from' => 1329208920,
          'id' => 2313,
-         'data' => 'userdel	q4::inwork; 8690,13723 8793,13591
+         'data' => 'userdel	q4::inwork; 8690,13723 8775,13606
 ',
          'type' => 'handicap'
        },
@@ -1295,13 +1296,12 @@ Am Schloss Schönhausen	2::night 10249,19148 10350,19182
          'type' => 'gesperrt'
        },
        {
-         'source_id' => 'l.epperlein',
          'until' => undef,
-         'text' => 'Sredzkistr.: Fahrbahn zwischen Husemannstr. und Kollwitzstr. komplett gesperrt. Dauer der Sperrung ist unbekannt.',
+         'text' => 'Sredzkistr.: Fahrbahn zwischen Rykestr. und Kollwitzstr. komplett gesperrt. Dauer der Sperrung ist unbekannt.',
          'from' => undef,
          'id' => 2322,
-         'data' => '#: last_checked: 2012-06-12 (mittlerweile nur ein kleinerer Abschnitt an der Kollwitzstr. gesperrt)
-userdel	q3::inwork 11436,14741 11271,14755
+         'data' => '#: last_checked: 2012-07-16
+userdel	q3::inwork 11436,14741 11526,14693
 ',
          'type' => 'handicap'
        },
@@ -1328,7 +1328,16 @@ userdel	q3::inwork 11436,14741 11271,14755
        undef,
        undef,
        undef,
-       undef,
+       {
+         'until' => undef,
+         'text' => 'Sredzkistr. zwischen Schönhauser Allee und Knaackstr: Teile der Fahrbahn gesperrt, Ausweichen auf Gehweg',
+         'from' => undef,
+         'id' => 2337,
+         'data' => '#: last_checked: 2012-07-16
+userdel	q4::inwork 10893,14705 11101,14768
+',
+         'type' => 'handicap'
+       },
        undef,
        undef,
        undef,
@@ -1359,7 +1368,7 @@ userdel	q3::inwork; 10713,15746 10953,15787 11086,15772
          'text' => 'Oderberger Str./Schwedter Str.: Bauarbeiten, Fahrbahn ist gesperrt. Dauer der Sperrung ist unbekannt.',
          'from' => undef,
          'id' => 2345,
-         'data' => '#: last_checked: 2012-06-12
+         'data' => '#: last_checked: 2012-07-16
 userdel	q4::inwork 10401,14963 10379,14963 10370,14946 10380,14911
 userdel	q4::inwork 10379,14963 10366,14992
 ',
@@ -1459,6 +1468,16 @@ userdel	q4::inwork 10379,14963 10366,14992
          'from' => 1342123327,
          'id' => 2360,
          'data' => 'userdel	q3::inwork 15272,10790 15263,10747
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => undef,
+         'text' => 'Christburger Str.: Fahrbahn an der Prenzlauer Allee gesperrt, Ausweichen auf Gehweg',
+         'from' => undef,
+         'id' => 2361,
+         'data' => '#: last_checked: 2012-07-16
+userdel	q3::inwork 11920,14468 11642,14625
 ',
          'type' => 'handicap'
        }

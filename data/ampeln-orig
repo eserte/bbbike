@@ -1071,7 +1071,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 12898,7832
 	X 11154,14985
 	X 12040,14688
-	X 12630,14306
+	X 12621,14313
 	X 13437,13228
 	X 13537,13003
 	X 12901,14093
@@ -2647,7 +2647,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: XXX Baustellenampel; wie wird die Situation nach den Bauarbeiten aussehen?
 #: last_checked: 2011-08-14
 #: next_check: 2013-01-01
-	X 23950,5342
+	X::inwork 23950,5342
 	F 11033,13086
 	F 16370,24600
 	F 16037,25915
@@ -2665,7 +2665,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: XXX Siehe auch Baustelle in der Voßstr.
 #: last_checked: 2012-07-13
 #: next_check: 2012-12-01
-	X 9000,11727
+	X::inwork 9000,11727
 	X 25451,14018
 #: by: ossi vvv
 	X 19732,3340
@@ -2698,6 +2698,17 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F 8631,18441
 	X 10127,19992
 	F 5628,14063
+#: XXX möglicherweise temporäre Ampel (wegen der Umleitung Under den Linden)
+#: last_checked: 2012-07-16
+#: next_check: 2013-12-31
+	X::inwork 9123,12500
+#: XXX möglicherweise temporäre Ampeln (wegen der Umleitung an der Invalidenstraße)
+#: last_checked: 2012-07-16 vvv
+#: next_check: 2013-05-31 vvv
+	X::inwork 8735,14093
+	X::inwork 8879,13913
+#: next_check ^^^
+#: last_checked ^^^
 ################################################################################
 #: note: Potsdam vvv
 #: by: http://www.potsdam.de/cms/beitrag/10067917/966975/

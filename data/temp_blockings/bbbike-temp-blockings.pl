@@ -3834,7 +3834,7 @@ EOF
        data  => <<EOF,
 userdel	q4 12423,14066 12486,14143
 userdel	q4 12423,14066 12361,13985
-userdel	q4 12556,14230 12630,14306
+userdel	q4 12556,14230 12621,14313
 userdel	q4 12556,14230 12486,14143
 EOF
      },
@@ -19940,7 +19940,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_018151',
        data  => <<EOF,
-userdel	q4::inwork 8635,13580 8626,13641 8619,13689
+userdel	q4::inwork 8634,13588 8626,13641 8619,13689
 EOF
      },
      { from  => 1314604800, # 2011-08-29 10:00
@@ -19953,6 +19953,7 @@ EOF
 #: note: am 2012-04-27 geprüft, Fahrbahn ist absperrt (nur die Straßenbahn wird durchgelassen), Radfahrer können nur den Gehweg benutzen
 #: note: am 2012-05-30 geprüft, Radfahrer konnten problemlos passieren
 #: note: am 2012-06-12 geprüft, Fahrbahn ist absperrt (nur die Straßenbahn wird durchgelassen), Radfahrer können nur den Gehweg benutzen
+#: note: am 2012-07-16 geprüft, Radfahrer konnten problemlos passieren
 userdel	q4::inwork 10723,14772 10838,14962
 EOF
      },
@@ -20002,7 +20003,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_018437',
        data  => <<EOF,
-userdel	q4::inwork; 8690,13723 8793,13591
+userdel	q4::inwork; 8690,13723 8775,13606
 EOF
      },
      { from  => 1330026300, # 2012-02-23 20:45
@@ -20087,12 +20088,11 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Sredzkistr.: Fahrbahn zwischen Husemannstr. und Kollwitzstr. komplett gesperrt. Dauer der Sperrung ist unbekannt.',
+       text  => 'Sredzkistr.: Fahrbahn zwischen Rykestr. und Kollwitzstr. komplett gesperrt. Dauer der Sperrung ist unbekannt.',
        type  => 'handicap',
-       source_id => 'l.epperlein',
        data  => <<EOF,
-#: last_checked: 2012-06-12 (mittlerweile nur ein kleinerer Abschnitt an der Kollwitzstr. gesperrt)
-userdel	q3::inwork 11436,14741 11271,14755
+#: last_checked: 2012-07-16
+userdel	q3::inwork 11436,14741 11526,14693
 EOF
      },
      { from  => 1335556039, # 2012-04-27 21:47
@@ -20218,12 +20218,12 @@ EOF
 userdel	q3::inwork; 14434,11465 14369,11489 14305,11514
 EOF
      },
-     { from  => 1339536578, # undef, # 
-       until => 1339536579, # undef, # XXX
+     { from  => undef, # 
+       until => undef, # XXX
        text  => 'Sredzkistr. zwischen Schönhauser Allee und Knaackstr: Teile der Fahrbahn gesperrt, Ausweichen auf Gehweg',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2012-06-05
+#: last_checked: 2012-07-16
 userdel	q4::inwork 10893,14705 11101,14768
 EOF
      },
@@ -20298,7 +20298,7 @@ EOF
        text  => 'Oderberger Str./Schwedter Str.: Bauarbeiten, Fahrbahn ist gesperrt. Dauer der Sperrung ist unbekannt.',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2012-06-12
+#: last_checked: 2012-07-16
 userdel	q4::inwork 10401,14963 10379,14963 10370,14946 10380,14911
 userdel	q4::inwork 10379,14963 10366,14992
 EOF
@@ -20437,6 +20437,15 @@ EOF
        source_id => 'IM_018994',
        data  => <<EOF,
 userdel	q3::inwork 15272,10790 15263,10747
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Christburger Str.: Fahrbahn an der Prenzlauer Allee gesperrt, Ausweichen auf Gehweg',
+       type  => 'handicap',
+       data  => <<EOF,
+#: last_checked: 2012-07-16
+userdel	q3::inwork 11920,14468 11642,14625
 EOF
      },
     );

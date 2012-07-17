@@ -3,6 +3,7 @@
 #: note: XXX_* categorization done 2008-01-26
 #: note: "Parkweg" sollte hier vielleicht nicht verwendet werden, sondern nur in qualitaet_s-orig? Oder wenigstens die gleichen Wege nicht in beiden Dateien so benannt werden? Oder wenigstens beim Ausgeben der Routenliste doppelte ausfiltern?
 #:
+Mainzer Str.: Baustelle, Einbahnstraßenregelung	q3::inwork; 14357,12011 14427,12197
 Friedrichstr.(Mitte): Fahrbahn wegen Bauarbeiten gesperrt, Ausweichen auf Gehweg schiebend möglich	q4::inwork 9358,12351 9369,12253 9373,12197
 Charlottenstr.: Einbahnstraßenregelung	q4::inwork; 9475,12365 9487,12263 9492,12214
 Zur Revaler Str.: Bauarbeiten	q3::inwork 14677,11027 14509,11060
@@ -29,7 +30,6 @@ Burgstraße: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 10166,12777 10132,12
 Anna-Louisa-Karsch-Str.: vor der Friedrichsbrücke auf den linken Gehweg fahren	q3::inwork; 10264,12826 10166,12777
 Am Zirkus: Baustelle, Einbahnstraße	q3::inwork; 9170,13031 9239,12923
 Am Kupfergraben: Baustelle, Einbahnstraße	q3::inwork; 9867,12651 9919,12613
-Bunsenstr.: Baustelle, Fahrbahn gesperrt	q4::inwork 8907,12472 8892,12576
 Wuhlewanderweg: steiler Anstieg, Fußgänger	q4; 21998,12204 21970,12153
 Wuhlewanderweg: steiles Gefälle, Fußgänger	q4; 21970,12153 21998,12204
 (An der Wuhle, östliches Ufer): Fußgänger	q1 21323,8481 21333,8355 21371,8289 21594,8107 21627,8024 21629,7921
@@ -468,7 +468,7 @@ Baruther Str.: gemeinsamer Rad- und Gehweg	q1 9588,9827 9723,9842
 (Schmidstr. - Heinrich-Heine-Str.): Bordsteine, Fußgänger	q3 11236,11508 11170,11558
 (Entlang des Stadtbahnviadukts): Bordsteine, Fußgänger	q2 11966,11832 12132,11788
 (Maybachufer - Weigandufer): Radfahren nicht erlaubt, ggfs. schieben	q3 12851,9309 12907,9073
-(Parkplatz Charité): Fußgänger, parkende Autos	q1 8828,13434 8808,13380 8778,13368 8665,13353
+(Parkplatz Charité): Fußgänger, parkende Autos	q1 8828,13434 8800,13389 8764,13372 8665,13353
 (Lasdehner Str. - Gubener Str.): Fußgänger, Bordsteine	q3 13375,12062 13339,12029
 Perleberger - Kieler: unterhalb der Brücke sehr eng	q3 7661,14398 7636,14414 7612,14449 7561,14458
 Ida-Wolff-Platz: Fußgänger	q2 9210,10614 9192,10528
@@ -1278,7 +1278,7 @@ Willenberger Pfad: Fußgänger, schmal	q2 576,10729 673,10724
 (Zum Hubertussee): Fußgänger, schmal	q3 1807,8893 1809,8916
 (Parkweg Reichsstr.): Fußgänger	q2 -264,13009 -208,12938 -142,12850 -67,12779 23,12739
 (Machandelweg - Reichsstr.): Fußgänger	q2 -185,12822 -166,12849 -142,12850 -103,12868
-(zur Karl-Marx-Allee): Bordstein, Fußgänger	q2 11362,12964 11289,12908
+(zur Karl-Marx-Allee): Bordsteine, Fußgänger	q2 11362,12964 11289,12908
 Börnicker Str. - Südpark): Fußgänger	q2 -4095,11993 -4070,12006
 Graetschelsteig - Südpark): Fußgänger	q2 -4195,12139 -4117,12199
 Südpark): Fußgänger	q2 -4004,11814 -3890,11775 -3712,11714

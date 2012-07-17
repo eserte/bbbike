@@ -61,7 +61,7 @@ als Ganghoferstr. ausgeschildert	CP2; 12960,8246 12918,8232
 #: XXX_prog: sollte besser als eine Art gerichteter BNP dargestellt werden
 Sredzkistr. - Christburger Str.: Drängelgitter auf dem Mittelstreifen	CP 11526,14693 11642,14625 11920,14468
 #: XXX_prog: sollte besser als eine Art gerichteter BNP dargestellt werden
-Christburger Str. - Pasteurstr.: Drängelgitter auf dem Mittelstreifen	CP 11920,14468 12177,14335 12307,14246
+Christburger Str. - Pasteurstr.: Drängelgitter auf dem Mittelstreifen	CP 11920,14468 12177,14335 12335,14246
 Sellin - Benz: schwierig zu findender Waldweg	CS 53932,172900 53868,172725 53906,172550 53574,172367 53383,171931 53203,171896 52806,171507
 #: add_fragezeichen: Ist das Tor permanent geöffnet?
 #: XXX_prog: früher war CP mit einer Koordinate möglich, aber das wird von der Software (make_net_cat) nicht unterstützt
@@ -901,7 +901,7 @@ Bus 265	busroute_N 11242,11720 11155,11750 11022,11782 10955,11849 10904,11902 1
 Bus 265	busroute_N 11022,11782 11048,11745 11155,11750
 Bus 120	busroute_N 8450,13599 8314,13826 8216,13987 8184,14052 8152,14130 8077,14227 8054,14257 7938,14426 8246,14675
 Bus 245, Bus 247	busroute_N 9085,13919 9015,14014 9061,14050 9167,14127 9192,14145 9224,14169
-Bus 240	busroute_N 8635,13580 8675,13580 8793,13591
+Bus 240	busroute_N 8634,13588 8673,13597 8775,13606
 Bus 100	busroute_N 10755,13152 10706,13043 10781,13002
 Bus 247	busroute_N 10170,14905 10111,15018 10071,15096 10018,15211 9996,15400 9917,15613 9734,15579 9726,15575 9578,15500 9443,15430
 Bus 247	busroute_N 9642,15038 9437,14926 9275,14846 9112,14771 9048,14681 8953,14758 8870,14637

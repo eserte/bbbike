@@ -294,13 +294,13 @@ Martin-Luther-Str. -> Winterfeldtstr.: Martin-Luther-Str.	3::igndisp 6514,10088 
 Martin-Luther-Str. -> Winterfeldtstr.: Martin-Luther-Str.	3::igndisp 6512,9866 6514,9947 6270,9910
 Winterfeldtstr. -> Winterfeldtstr.: Martin-Luther-Str.	3::igndisp 6270,9910 6514,9947 6633,9980
 Winterfeldtstr. -> Martin-Luther-Str.: Martin-Luther-Str.	3::igndisp 6270,9910 6514,9947 6514,10088
-Straﬂenbahntrasse	3nocross::ignrte 12630,14306 12729,14227 12901,14093
-Danziger Str. -> Hans-Otto-Str.: Straﬂenbahntrasse	3::igndisp 12630,14306 12729,14227 12782,14300
+Straﬂenbahntrasse	3nocross::ignrte 12621,14313 12729,14227 12901,14093
 Danziger Str. -> Hans-Otto-Str.: Straﬂenbahntrasse	3::igndisp 12901,14093 12729,14227 12608,14070
-Hans-Otto-Str. -> Danziger Str.: Straﬂenbahntrasse	3::igndisp 12608,14070 12729,14227 12630,14306
 Hans-Otto-Str. -> Hans-Otto-Str.: Straﬂenbahntrasse	3::igndisp 12608,14070 12729,14227 12782,14300
+Hans-Otto-Str. -> Danziger Str.: Straﬂenbahntrasse	3::igndisp 12608,14070 12729,14227 12621,14313
 Hans-Otto-Str. -> Danziger Str.: Straﬂenbahntrasse	3::igndisp 12782,14300 12729,14227 12901,14093
 Hans-Otto-Str. -> Hans-Otto-Str.: Straﬂenbahntrasse	3::igndisp 12782,14300 12729,14227 12608,14070
+Danziger Str. -> Hans-Otto-Str.: Straﬂenbahntrasse	3::igndisp 12621,14313 12729,14227 12782,14300
 Straﬂenbahntrasse	3nocross::ignrte 11662,14695 11642,14625 11582,14448
 Christburger Str. -> Sredzkistr.: Straﬂenbahntrasse	3::igndisp 11920,14468 11642,14625 11526,14693
 Christburger Str. -> Prenzlauer Allee: Straﬂenbahntrasse	3::igndisp 11920,14468 11642,14625 11582,14448
@@ -1123,12 +1123,12 @@ Fasanenstr. -> Lietzenburger Str.: Lietzenburger Str.	3::igndisp 5229,10716 5207
 Lietzenburger Str. -> Fasanenstr.: Lietzenburger Str.	3::igndisp 5329,10422 5207,10399 5198,10234
 Lietzenburger Str. -> Fasanenstr.: Lietzenburger Str.	3::igndisp 5063,10384 5207,10399 5229,10716
 Straﬂenbahntrasse	3nocross::ignrte 12228,14404 12177,14335 12077,14186
-Christburger Str. -> Pasteurstr.: Straﬂenbahntrasse	3::igndisp 11920,14468 12177,14335 12307,14246
+Christburger Str. -> Pasteurstr.: Straﬂenbahntrasse	3::igndisp 11920,14468 12177,14335 12335,14246
 Christburger Str. -> Greifswalder Str.: Straﬂenbahntrasse	3::igndisp 11920,14468 12177,14335 12228,14404
 Greifswalder Str. -> Christburger Str.: Straﬂenbahntrasse	3::igndisp 12077,14186 12177,14335 11920,14468
-Pasteurstr. -> Christburger Str.: Straﬂenbahntrasse	3::igndisp 12307,14246 12177,14335 11920,14468
-Pasteurstr. -> Greifswalder Str.: Straﬂenbahntrasse	3::igndisp 12307,14246 12177,14335 12077,14186
-Greifswalder Str. -> Pasteurstr.: Straﬂenbahntrasse	3::igndisp 12228,14404 12177,14335 12307,14246
+Pasteurstr. -> Christburger Str.: Straﬂenbahntrasse	3::igndisp 12335,14246 12177,14335 11920,14468
+Pasteurstr. -> Greifswalder Str.: Straﬂenbahntrasse	3::igndisp 12335,14246 12177,14335 12077,14186
+Greifswalder Str. -> Pasteurstr.: Straﬂenbahntrasse	3::igndisp 12228,14404 12177,14335 12335,14246
 Sybelstr.	1 3978,10582 3883,10577
 Giesebrechtstr.	1 3912,10699 3997,10607 4017,10585 4030,10575 4153,10453 4157,10418
 Clausewitzstr.	1 3971,10381 4007,10559
@@ -1309,7 +1309,7 @@ Markelstr.	1 5269,6305 5020,6434
 Geschwister-Scholl-Str. (Potsdam)	1 -14909,-1818 -14733,-1812
 Feuerbachstr. (Potsdam)	1 -14140,-1390 -13879,-1445
 Jadeweg	1 -3850,13756 -3878,13636 -4011,13656
-Fischerinsel	1 10429,11807 10474,11843 10604,11941
+Fischerinsel	1 10376,11879 10435,11813 10474,11843 10604,11941
 Landhausweg: Schranke	3 16308,1585 16464,1194 16489,1185
 Landhausweg: Schranke	3 16489,1185 16464,1194 16308,1585
 Danziger/Knaack/Lychener	3nocross::ignrte 11154,14985 11056,15009 10881,15047

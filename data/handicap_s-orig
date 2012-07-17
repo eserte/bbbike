@@ -8,9 +8,13 @@
 #
 #: temporary vvv
 # 
+#: last_checked: 2012-07-16
+Mainzer Str.: Baustelle, Einbahnstraﬂenregelung	q3::inwork; 14357,12011 14427,12197
+# 
 #: last_checked: 2012-07-13
 #: next_check: 2013-12-31
 #: XXX siehe auch INKO_091722
+#: XXX siehe auch tempor‰re Ampel an der Neust‰dtischen Kirchstr.
 Friedrichstr.(Mitte): Fahrbahn wegen Bauarbeiten gesperrt, Ausweichen auf Gehweg schiebend mˆglich	q4::inwork 9358,12351 9369,12253 9373,12197
 # 
 #: last_checked: 2012-07-13
@@ -36,9 +40,10 @@ Gartenstr.: Einbahnstraﬂe zwischen Invalidenstr. und Tieckstr. (Bauarbeiten)	q4:
 #: XXX laut INKO_113363 bis Ende M‰rz 2013 gesperrt
 Voﬂstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg	q3::inwork 8743,11663 8837,11676
 # 
-#: last_checked: 2012-04-28 vvv
+#: last_checked: 2012-07-16 vvv
 #: next_check: 2013-05-31 vvv
 #: by: wosch & IM_017330
+#: XXX siehe auch tempor‰re Ampel an der Chausseestr.
 Invalidenstr. (Mitte): Baustelle, Richtung Alt-Moabit zwischen Gartenstr. und Hessische Str. gesperrt	q4::inwork; 9383,13978 9274,13963 9203,13953 9151,13941 9085,13919 8935,13844 8690,13723
 Scharnhorststr.: Einbahnstraﬂenregelung, auf Gehweg ausweichen	q3::inwork; 8450,13599 8314,13826
 Schwarzer Weg: Einbahnstraﬂenregelung, auf Gehweg ausweichen	q3::inwork; 8429,13903 8574,13666
@@ -121,8 +126,7 @@ Am Zirkus: Baustelle, Einbahnstraﬂe	q3::inwork; 9170,13031 9239,12923
 #: next_check: 2012-09-01
 Am Kupfergraben: Baustelle, Einbahnstraﬂe	q3::inwork; 9867,12651 9919,12613
 # 
-#: last_checked: 2012-04-20
-Bunsenstr.: Baustelle, Fahrbahn gesperrt	q4::inwork 8907,12472 8892,12576
+#XXX del --- #: last_checked: 2012-04-20 --- Bunsenstr.: Baustelle, Fahrbahn gesperrt	q4::inwork 8907,12472 8892,12576
 #: temporary ^^^
 ######################################################################
 #: XXX es ist zu erwarten, dass hier der Wuhlewanderweg verbessert wird: vvv
@@ -622,8 +626,7 @@ Baruther Str.: gemeinsamer Rad- und Gehweg	q1 9588,9827 9723,9842
 #: XXX_prog BS am westlichen Ende, ˆstliches ist leicht abgesenkt
 (Entlang des Stadtbahnviadukts): Bordsteine, Fuﬂg‰nger	q2 11966,11832 12132,11788
 (Maybachufer - Weigandufer): Radfahren nicht erlaubt, ggfs. schieben	q3 12851,9309 12907,9073
-#: XXX explizit f¸r Radfahrer verboten, nochmal pr¸fen
-(Parkplatz CharitÈ): Fuﬂg‰nger, parkende Autos	q1 8828,13434 8808,13380 8778,13368 8665,13353
+(Parkplatz CharitÈ): Fuﬂg‰nger, parkende Autos	q1 8828,13434 8800,13389 8764,13372 8665,13353
 (Lasdehner Str. - Gubener Str.): Fuﬂg‰nger, Bordsteine	q3 13375,12062 13339,12029
 #XXX del --- paralleler Radweg existiert --- Straﬂenbahntrasse zum Alex: Bodenschwellen und Schienen	q1- 11139,13008 11191,13080
 Perleberger - Kieler: unterhalb der Br¸cke sehr eng	q3 7661,14398 7636,14414 7612,14449 7561,14458
@@ -1694,7 +1697,8 @@ Willenberger Pfad: Fuﬂg‰nger, schmal	q2 576,10729 673,10724
 (Zum Hubertussee): Fuﬂg‰nger, schmal	q3 1807,8893 1809,8916
 (Parkweg Reichsstr.): Fuﬂg‰nger	q2 -264,13009 -208,12938 -142,12850 -67,12779 23,12739
 (Machandelweg - Reichsstr.): Fuﬂg‰nger	q2 -185,12822 -166,12849 -142,12850 -103,12868
-(zur Karl-Marx-Allee): Bordstein, Fuﬂg‰nger	q2 11362,12964 11289,12908
+#: XXX_prog BS (auf beiden Seiten) (ansonsten w‰re es q1)
+(zur Karl-Marx-Allee): Bordsteine, Fuﬂg‰nger	q2 11362,12964 11289,12908
 Bˆrnicker Str. - S¸dpark): Fuﬂg‰nger	q2 -4095,11993 -4070,12006
 Graetschelsteig - S¸dpark): Fuﬂg‰nger	q2 -4195,12139 -4117,12199
 S¸dpark): Fuﬂg‰nger	q2 -4004,11814 -3890,11775 -3712,11714

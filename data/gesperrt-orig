@@ -1365,7 +1365,7 @@ Höhndorfstr. - Loewenhardtdamm: Mittelstreifen	3 8438,8676 8334,8655 8371,8543
 Mehringdamm/Wilhelmshöhe: Mittelstreifen	3nocross 9224,9053 9225,9111 9248,9350
 Unter den Eichen: Mittelstreifen, Tunnelrampe	3nocross 3344,4488 3235,4421 3048,4305
 Kottbusser Damm: Mittelstreifen	3nocross 11785,9437 11757,9509 11745,9541
-Gertraudenstr.: Mittelstreifen	3nocross 10350,11846 10391,11898 10460,11979
+Gertraudenstr.: Mittelstreifen	3nocross 10350,11846 10376,11879 10391,11898 10460,11979
 Heylstr.: breiter Mittelstreifen, enge Querungsmöglichkeit nur für Fußgänger, Bordsteine	3nocross 6181,8181 6246,8222 6325,8259
 Große-Leege-Str.: Mittelstreifen mit Bordsteinen und parkenden Autos	3nocross 15899,14598 15972,14681 16035,14748
 Köpenicker Landstraße: Mittelstreifen mit Bordsteienen	3nocross 16353,7226 16195,7398 15920,7697
@@ -1684,6 +1684,8 @@ tragen (31 Stufen oder Kinderwagenrampe)	0:40 13168,21706
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+#: note: explizite "Radfahren verboten"-Schilder
+Schranke	BNP:3::trailer=10 8828,13434
 Schranke	BNP:3::trailer=10 8262,17361
 Schranke, enge Umfahrung	BNP:5::trailer=15 8352,17285
 Schranke	BNP:3::trailer=10 4347,21531
@@ -2047,13 +2049,10 @@ Wikingerufer: wegen Beschädigungen an der Ufermauer gesperrt	2:inwork 5354,12552
 #: XXX wo gibt es Informationen hierzu?
 #: by: Kai Wagner (permanente Sperrung)
 #: confirmed_by: srt
-#: last_checked: 2011-11-13
+#: last_checked: 2012-07-16
 Friedrich-Ebert-Platz: permanent gesperrt, nicht nur bei Bundestagssitzungen	2 8554,12593 8540,12420
 # 
-#: last_checked: 2012-03-23
-#: next_check: 2012-04-25
-Spreeufer: wegen Bauarbeiten gesperrt	2:inwork 8596,12576 8495,12651 8473,12753
-# 
+#XXX del --- #: last_checked: 2012-03-23 --- #: next_check: 2012-04-25 --- Spreeufer: wegen Bauarbeiten gesperrt	2:inwork 8596,12576 8495,12651 8473,12753
 #XXX del --- #: last_checked: 2011-12-17 --- #: next_check: 2012-01-15 --- (Leuthener Platz - Wilhelm-Kabus-Str.): Bauzäune	2:inwork 7716,8356 7837,8354 7893,8327
 #XXX del --- #: last_checked: 2011-09-27 --- #: next_check: 2011-10-15 --- (General-Pape-Str. - Gontermannstr.): Bauzäune	2:inwork 8106,8290 8202,8293 8265,8305 8276,8295
 # 
@@ -2113,8 +2112,8 @@ Boyenweg - Uferweg: wegen Bauarbeiten gesperrt	2:inwork 7938,14426 7886,14518 77
 # 
 #XXX del --- #: last_checked: 2011-12-25 --- #: next_check: 2012-01-01 --- #: XXX evenuell bleibt dieser Teil dauerhaft gesperrt, weil hier ein Einkaufszentrum entsteht? --- #: XXX auch die Ampel an der Kreuzung prüfen --- Treitschkestr.: Bauarbeiten am Kaufhaus, bis 2012	2:inwork 5219,6215 5125,6262 4971,6345
 # 
-#: last_checked: 2012-04-29
-#: next_check: 2012-07-15
+#: last_checked: 2012-07-16
+#: next_check: 2013-01-15
 Caroline-Michaelis-Str.: Bauarbeiten	2:inwork 9151,13941 9125,13973
 # 
 #XXX del --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1010/nachricht4106.html --- #: next_check: 2011-09-01 --- Ella-Trebe-Str.: Einbahnstraße wegen Bauarbeiten	1s:q3:inwork 7937,13109 7941,13014 7948,12918
@@ -2122,8 +2121,8 @@ Caroline-Michaelis-Str.: Bauarbeiten	2:inwork 9151,13941 9125,13973
 #XXX del --- #: last_checked: 2011-05-20 --- #: next_check: 2011-08-01 --- Alex-Wedding-Str.: Bauarbeiten, komplett gesperrt	2:inwork 11085,13239 11045,13183
 #XXX del (für Radfahrer ist das Abbiegen möglich) --- #: next_check: 2012-06-01 vvv --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1010/nachricht4088.html --- Mauerstr.: Einbiegen in die Behrenstr. nicht möglich	3:inwork 9076,12054 9064,12156 9054,12154 --- Mauerstr.: Einbiegen in die Behrenstr. nicht möglich	3:inwork 9076,12054 9064,12156 9164,12172 --- Behrenstr.: Einbiegen in die Mauerstr. nicht möglich	3:inwork 9054,12154 9064,12156 9076,12054 --- Behrenstr.: Einbiegen in die Mauerstr. nicht möglich	3:inwork 9164,12172 9064,12156 9076,12054 --- #: next_check: ^^^
 # 
-#: last_checked: 2012-05-13
-#: next_check: 2012-08-01
+#: last_checked: 2012-07-16
+#: next_check: 2012-12-01
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12748
 # 
 #XXX --- siehe http://www.flickr.com/photos/h-e-n-r-y/5260386593/ #: last_checked: 2010-11-05 --- #: next_check: 2010-12-01 --- #: note: Eröffnung des Hotels im Dezember 2010 --- #: XXX Neubewertung für handicap_s notwendig! --- Spittelmarkt: wegen Bauarbeiten gesperrt	2:inwork 10166,11592 10153,11666 10213,11728
@@ -2218,7 +2217,7 @@ Grunewaldstr.: queren schlecht möglich	3nocross 6709,9234 6863,9254 6923,9266
 Rumeyplan	1 8690,7717 8799,7741 8899,7788 8940,7835
 Rumeyplan	1 8967,7821 8909,7769 8815,7722 8694,7691
 Greifswalder Str.	3nocross 12422,14692 12473,14763 12520,14833
-Danziger Str.	3nocross 12630,14306 12425,14459 12317,14535
+Danziger Str.	3nocross 12621,14313 12425,14459 12317,14535
 #: note: Luftbild:
 Greifswalder Str.: Straßenbahntrasse	3nocross 13098,15592 13229,15692 13316,15758
 Dietrich-Bonhoeffer-Str.	1 12556,14230 12266,14460
