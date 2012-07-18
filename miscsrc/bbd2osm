@@ -128,9 +128,12 @@ my($nodefh, $nodefile) = tempfile(UNLINK => 1, SUFFIX => "_node.xml");
 binmode $nodefh, ':utf8';
 my($wayfh, $wayfile) = tempfile(UNLINK => 1, SUFFIX => "_way.xml");
 binmode $wayfh, ':utf8';
+my($relationfh, $relationfile) = tempfile(UNLINK => 1, SUFFIX => "_relation.xml");
+binmode $relationfh, ':utf8';
 
 my $next_node_id = 1;
 my $next_way_id = 1;
+my $next_relation_id = 1;
 my %node_id;
 
 my %oneway;
@@ -251,6 +254,8 @@ if ($single_file) {
     if (-r "$datadir/comments_cyclepath-orig") {
 	do_file("$datadir/comments_cyclepath-orig", \&handle_cycleway_like);
     }
+
+    do_file("$datadir/berlin_ortsteile", \&handle_citypart_like);
 }
 
 sub do_file {
@@ -1120,9 +1125,46 @@ sub handle_trafficlightmap_like {
     $next_way_id++;
 }
 
+sub handle_citypart_like {
+    my($r, $dir) = @_;
+
+    my @node_ids = get_node_ids($r, undef, is_area => 1);
+    push @node_ids, $node_ids[0] unless $node_ids[0] == $node_ids[$#node_ids];
+
+    my $name = $r->[Strassen::NAME];
+    _xmlify($name);
+
+    print $wayfh qq{<way id="$next_way_id" visible="true">\n};
+    for my $node_id (@node_ids) {
+	print $wayfh qq{  <nd ref="$node_id"/>\n};
+    }
+    print $wayfh qq{  <tag k="admin_level" v="4" />\n};
+    print $wayfh qq{  <tag k="boundary" v="administrative" />\n};
+    print $wayfh qq{</way>\n};
+
+    my @way_ids = $next_way_id;
+    $next_way_id++;
+
+    print $relationfh qq{<relation id="$next_relation_id">\n};
+    for my $way_id (@way_ids) {
+	print $relationfh qq{  <member type="way" ref="$way_id" role="outer" />\n};
+    }
+    print $relationfh qq{  <tag k="admin_level" v="10" />\n};
+    print $relationfh qq{  <tag k="boundary" v="administrative" />\n};
+    print $relationfh qq{  <tag k="name" v="$name" />\n};
+    print $relationfh qq{  <tag k="name:prefix" v="Ortsteil" />\n};
+    print $relationfh qq{  <tag k="place" v="suburb" />\n};
+    print $relationfh qq{  <tag k="type" v="multipolygon" />\n};
+    print $relationfh qq{</relation>\n};
+
+    $next_relation_id++;
+}
+
 seek $nodefh, 0, SEEK_SET
     or die $!;
 seek $wayfh, 0, SEEK_SET
+    or die $!;
+seek $relationfh, 0, SEEK_SET
     or die $!;
 
 binmode STDOUT, ':utf8';
@@ -1132,6 +1174,9 @@ while(<$nodefh>) {
     print $_;
 }
 while(<$wayfh>) {
+    print $_;
+}
+while(<$relationfh>) {
     print $_;
 }
 print qq{</osm>\n};
