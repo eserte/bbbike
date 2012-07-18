@@ -465,7 +465,7 @@ EOF
 	      [Button => $do_compound->('VMZ'),
 	       -command => sub { newvmz_process() },
 	      ],
-	      [Button => "Show recent VMZ diff",
+	      [Button => $do_compound->("Show recent VMZ diff"),
 	       -command => sub { show_new_vmz_diff() },
 	      ],
 	      [Cascade => $do_compound->("VMZ-Detailnetz"), -menuitems =>
