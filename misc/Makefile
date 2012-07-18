@@ -252,7 +252,10 @@ berlin-test-osm2bbd-postprocess2:
 # Building for garmin with custom .typ file
 
 #MKGMAP_VER?=	1624
-MKGMAP_VER?=	2009
+## Used between 2011-07 (approx.) and 2012-07
+#MKGMAP_VER?=	2009
+## Used since 2012-07
+MKGMAP_VER?=	2310
 .if exists(/opt/mkgmap-r$(MKGMAP_VER)/mkgmap.jar)
 MKGMAP?=	java -Xmx1024m -jar /opt/mkgmap-r${MKGMAP_VER}/mkgmap.jar
 .else
@@ -294,12 +297,14 @@ BBBIKE_FAT_ROUTABLE_GMAPSUPP_SOURCES+=	${BBBIKETMPDIR}/trafficlightmap25.img
 ${BBBIKETMPDIR}/bbbike_fat_routable_gmapsupp.img: ${BBBIKE_FAT_ROUTABLE_GMAPSUPP_SOURCES} ${BBBIKEMKGMAPDIR}/typ/M000002a.TYP
 	cd ${BBBIKETMPDIR} && \
 	    ${MKGMAP} --family-id=42 --family-name="Slavens Map" \
+	       --index \
 	       --gmapsupp ${BBBIKE_FAT_ROUTABLE_GMAPSUPP_SOURCES} ${BBBIKEMKGMAPDIR}/typ/M000002a.TYP
 	mv ${BBBIKETMPDIR}/gmapsupp.img ${BBBIKETMPDIR}/bbbike_fat_routable_gmapsupp.img
 
 ${BBBIKETMPDIR}/bbbike_routable_gmapsupp.img: ${BBBIKE_ROUTABLE_GMAPSUPP_SOURCES} ${BBBIKEMKGMAPDIR}/typ/M000002a.TYP
 	cd ${BBBIKETMPDIR} && \
 	    ${MKGMAP} --family-id=42 --family-name="Slavens Map" \
+	       --index \
 	       --gmapsupp ${BBBIKE_ROUTABLE_GMAPSUPP_SOURCES} ${BBBIKEMKGMAPDIR}/typ/M000002a.TYP
 	mv ${BBBIKETMPDIR}/gmapsupp.img ${BBBIKETMPDIR}/bbbike_routable_gmapsupp.img
 
@@ -309,6 +314,7 @@ ${BBBIKETMPDIR}/bbbike_routable.img: ${BBBIKETMPDIR}/bbbike_routable.osm ${BBBIK
 	    ${MKGMAP} --description="BBBike Routable" --mapname=12117006 \
 		--country-name=Germany --country-abbr=DE \
 	        --latin1 --net --route --draw-priority=15 --style-file=${BBBIKEMKGMAPDIR}/srt-style \
+	        --index \
 	        ${BBBIKETMPDIR}/bbbike_routable.osm  && \
 	    mv -f 12117006.img bbbike_routable.img 
 
