@@ -787,9 +787,10 @@ Richtung Grunewaldturm: Waldweg, meist OK, einige sandige Abschnitte	Q1 -1638,91
 Uferweg am Schlachtensee: Waldweg OK, manchmal etwas sandig	Q1 -3348,3055 -3384,3212 -3353,3298 -3324,3382 -3087,3646 -2937,3740 -2813,3775 -2494,3758 -2347,3884 -2080,4228 -1935,4303 -1831,4300 -1663,4218 -1503,4133 -1391,4135 -1353,4205 -1278,4239
 südlicher Uferweg am Schlachtensee: Waldweg OK	Q1 -3384,3212 -3341,3122 -3273,3096 -3200,3145 -3190,3167 -3136,3294 -3081,3377 -2947,3486 -2802,3570 -2761,3576 -2729,3593 -2599,3637 -2521,3637 -2396,3666 -2174,3718 -2014,3826 -1980,3872 -1974,3933 -1996,4063 -1944,4140 -1706,3971 -1624,3956 -1558,3965 -1468,3995 -1380,4108 -1391,4135
 Weg am Teufelssee: Waldweg	Q1 -886,9447 -942,9251 -1047,9123
-Schwarzer Weg (Oberschöneweide): unbefestigter Weg, holprig	Q2 17299,8140 17297,7752
+Schwarzer Weg (Oberschöneweide): unbefestigter Weg, holprig	Q2 17299,8140 17299,8108 17297,7752
 Schwarzer Weg (Oberschöneweide): asphaltiert, mit leichten Schäden	Q0- 17297,7752 17301,7645 17295,7336
 Schwarzer Weg (Oberschöneweide): unbefestiger Weg, teilweise recht schmal	Q2 17295,7336 17296,7156
+(Wilhelmstrand, Weg 1): unbefestigter Weg	Q2 17059,8097 17299,8108
 Möllhausenufer: Kopfsteinpflaster	Q2 23295,1145 23408,1170 23520,1194 23608,1210
 Möllhausenufer: asphaltiert	Q0 23608,1210 23747,1243
 Am Langen See: Waldweg, meist OK, teilweise Wurzeln und grober Kies	Q1- 23747,1243 23869,1282 23889,1338 24068,1279 24307,1135 24400,1005 24653,928 24829,827 24949,806 25333,834 25543,879 25744,839 25853,778 25922,645 25969,593 26041,443 26016,259 26089,176 26124,111 26246,73 26274,-33 26407,-160 26479,-119 26576,-278 26628,-313 26687,-316 26700,-344 26751,-460 26921,-611 26944,-724 27103,-773 27136,-804 27169,-884 27205,-1012 27225,-1115 27329,-1241 27365,-1357 27357,-1545
@@ -1603,11 +1604,11 @@ Roedernstr.: kleinteiliges, unebenes Kopfsteinpflaster	Q2+ 18010,7133 18041,6924
 Roedernstr.: Asphalt	Q0 18069,6753 18077,6690 18080,6670
 Scharnweberstr.: kleinteiliges, unebenes Kopfsteinpflaster	Q2 19344,6119 19495,6029
 Scharnweberstr.: Asphalt	Q0 19495,6029 19650,5920
-Alt-Köpenick: Kopfsteinpflaster, zwischen den Schienen Asphalt	Q0 22196,4847 22175,4730 22138,4661 22111,4562
+Alt-Köpenick: Kopfsteinpflaster, zwischen den Schienen Asphalt	Q0 22196,4847 22175,4730 22138,4661 22133,4644 22111,4562
 Alt-Köpenick: Kopfsteinpflaster	Q2 22111,4562 22093,4499
 Katzengraben, Schüßlerplatz: Kopfsteinpflaster	Q2 22439,4838 22451,4749 22465,4690 22395,4678
 Katzengraben: Kopfsteinpflaster	Q2 22475,4658 22469,4677 22465,4690
-Spindlergasse: Kopfsteinpflaster	Q2 22469,4677 22515,4694
+Spindlergasse: Kopfsteinpflaster	Q2 22469,4677 22497,4686 22522,4695
 Futranplatz: Kopfsteinpflaster	Q2 22451,4749 22388,4737
 Steinstr.: Kopfsteinpflaster	Q2 -7909,-2375 -7996,-2293
 (zum Anhalter Steg): Kleinsteinpflaster	Q2+ 8677,10224 8662,10227 8711,10322
@@ -1626,8 +1627,8 @@ Färberstr.: Kopfsteinpflaster, OK	Q1 21494,4605 21607,4850
 Eiselenweg - Uferweg: etwas sandig	Q2 21447,5414 21487,5425
 #: XXX Umbau in Asphaltwege
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20110922.0700.359578.html
-#: last_checked: 2012-05-22
-#: next_check: 2012-07-15
+#: last_checked: 2012-07-19
+#: next_check: 2012-09-15
 (Uferweg, Mentzelpark): hauptsächlich feiner Schotter	Q1 21487,5425 21600,5221 21680,5079 21696,5053
 (Uferweg, Mentzelpark): Asphalt	Q0 21696,5053 21740,5004 21761,4979
 (Uferweg, Mentzelpark): hauptsächlich feiner Schotter	Q1 21761,4979 21821,4918 21834,4889
@@ -2072,8 +2073,8 @@ Wasserweg: Asphalt	Q0 16201,8860 16358,8841 16395,8816
 Umfahrung Spreepark: fester Sandweg	Q2 16023,8860 16084,8833 16161,8852
 Kiehnwerderallee: asphaltiert	Q0 16395,8816 16436,8687 16534,8182 16602,7810 16620,7574 16633,7434
 (Fähre - Kiehnwerderallee): asphaltiert	Q0 16649,7570 16620,7574
-#: by: (URL existiert nicht mehr) http://www.radzeit.de/gallery2/v/Radfahren+in+der+Stadt/Treptow-Koepenick/Luisenhain_001.JPG.html
-Luisenhain: glattes Pflaster	Q0 22196,4847 22147,4831 22043,4562 22057,4531 22071,4501
+Luisenhain: glattes Pflaster	Q0 22196,4847 22153,4840 22074,4664 22057,4618 22043,4562 22057,4531 22071,4501
+(Rathaus Köpenick - Luisenhain): glattes Pflaster	Q0 22133,4644 22074,4664
 #: by: (URL existiert nicht mehr) http://www.berlin.de/ba-spandau/presse/archiv/20070111.1600.71028.html
 #: note: im ersten Quartal 2007 wird die Straße mit einer bituminösen Befestigung versehen
 #: note: vorher: unbefestigte Fahrbahn, Q2
@@ -2280,7 +2281,6 @@ Homeyerstr.: Asphalt mit Schäden	Q1- 9475,18862 9532,18819 9613,18758 9801,18686
 (Bremer Weg): Asphalt	Q0 6828,12031 6857,11992 7460,12054 7827,12105 8018,12131 8048,12135 8107,12145 8215,12156 8466,12197 8522,12239 8538,12245
 (Bremer Weg - Fasanerieallee): Parkweg, mittelfeiner Schotter	Q1 6342,11878 6379,11843 6406,11784 6467,11780 6540,11754
 nördliches Spreeufer: teils Kleinkopfsteinpflaster, teils Gehwegplatten	Q1+ 6608,12858 6551,12901 6535,12934 6271,12985 6218,12975 6180,12972
-#: confirmed_by: anonymous
 Kirchstr. (Köpenick): Asphalt, gepflasterter Parkstreifen	Q0 22312,4593 22284,4653 22243,4710 22234,4789 22196,4847
 #: by: (URL existiert nicht mehr) http://www.berlin.de/ba-lichtenberg/presse/archiv/20071119.1550.89206.html
 Schwarzer Weg: Asphaltdecke	Q0 15730,11279 15708,11193 15752,11115 15805,10949 15756,10966
@@ -7402,6 +7402,12 @@ Habersaathstr. [36A-E und 38E-40]: schadhafter Asphalt	Q1- 8570,13991 8633,13928
 Bötzowstr.: Asphalt	Q0 12486,14143 12556,14230
 Bötzowstr.: Beton	Q0 12556,14230 12621,14313
 Werner-Kube-Str.: Kopfsteinpflaster	Q2- 12883,14344 12947,14428 13013,14523
+(Uferweg): Gehwegplatten	Q0- 22433,4887 22326,4940 22310,4935
+(Uferweg): wassergebundene Decke	Q1 22310,4935 22241,4911
+#: note: teilweise recht breite Fugen
+(Uferweg): Gehwegplatten	Q1+ 22241,4911 22204,4910 22180,4938 22146,4934 22131,4914 22153,4861 22153,4840
+(Freiheit/Lindenstr. - Uferweg): Gehwegplatten	Q1+ 22196,4847 22204,4910
+(An der Wuhlheide - Uferweg): Verbundsteinpflaster	Q1 21002,5755 21047,5658 21059,5596 21002,5594
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -7722,6 +7728,7 @@ Hellersdorfer Promenade: Verbundsteinpflaster	Q1+ 24131,15109 24112,15236 24094,
 Neudammer Str.: Asphalt	Q0 24385,9948 24672,9889
 Pistoriusplatz: guter Asphalt	Q0 13404,16212 13421,16225 13485,16362
 Pistoriusplatz: guter Asphalt	Q0 13479,16182 13544,16339
+#: confirmed_by: srt
 Tabbertstr.: Asphalt	Q0 17352,7051 17258,6992 17359,6799 17418,6702 17530,6496
 Auersbergstr.: Asphalt	Q0 20745,14840 20743,15039 20809,15046 20811,15175
 Lüdeckestr.: guter Asphalt	Q0 7667,2501 7681,2536 7692,2634 7668,2656 7597,2647
@@ -15532,7 +15539,7 @@ Saalmannsteig: guter Beton	Q0 5410,19050 5284,19043 5181,19037
 # 
 #: by: Stefan Dietrich:
 #: corrected_by: srt ("schlechtes" entfernt, Q3 -> Q2)
-Jägerstr. (Köpenick): Kopfsteinpflaster	Q2 22390,4702 22355,4660 22312,4593
+Jägerstr. (Köpenick): Kopfsteinpflaster	Q2 22395,4678 22365,4676 22355,4660 22312,4593
 # 
 #: by: Roger Menge:
 #: note: In der Kolonie Wege mit größtenteils Verbundsteinpflaster, einige Strecken als fester Sandweg, Übergänge in den Rehbergepark, grün, keine Beleuchtung
@@ -17840,6 +17847,7 @@ Im Rosengrund: schlechtes Kopfsteinpflaster	Q3+ 11576,4339 11601,4242 11619,4146
 Ernst-Arndt-Weg: Verbundsteinpflaster	Q1 11767,1007 11935,1019
 # 
 #: by: Angela Melle
+#: confirmed_by: srt
 Kunheimstr.: Asphalt	Q0 17514,6754 17418,6702
 # 
 #: by: markus (sammer...)
@@ -21058,6 +21066,7 @@ Friedrich-List-Ufer: sehr guter Asphalt	Q0 8110,13042 8106,13130 8102,13304 8098
 #: by: ^^^
 # 
 #: by: anonymous [AM]
+#: confirmed_by: srt
 Reinbeckstr.: Kopfsteinpflaster	Q2 18343,6318 18310,6223
 # 
 #: by: Daniel Weber [AM] vvv

@@ -1467,7 +1467,7 @@ userdel	q4::inwork 10379,14963 10366,14992
          'text' => 'Karlshorster Str. (Lichtenberg): Brückenarbeiten, Sperrung zwischen Nöldnerstr. und Türrschmidtstr., Fußgänger und Radfahrer können langsam passieren, 09.07.2012 bis 20.08.2012 04:00 Uhr',
          'from' => 1342123327,
          'id' => 2360,
-         'data' => 'userdel	q3::inwork 15272,10790 15263,10747
+         'data' => 'userdel	q4::inwork 15272,10790 15279,10862
 ',
          'type' => 'handicap'
        },
