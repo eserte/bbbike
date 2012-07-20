@@ -20448,4 +20448,14 @@ EOF
 userdel	q3::inwork 11920,14468 11642,14625
 EOF
      },
+     { from  => 1342994400, # 2012-07-23 00:00
+       until => 1348610399, # 2012-09-25 23:59
+       text  => 'Straßenbauarbeiten John-Foster-Dulles-Allee zwischen Spreeweg und Zeltenplatz, 23.7. - 25.9.2012',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20120719.1310.372734.html',
+       data  => <<EOF,
+#: XXX Situation vor Ort anschauen, evtl. kann der handicap-Wert niedriger gemacht werden
+userdel	q4::inwork 7627,12380 7514,12387 7437,12368 7215,12295 7039,12314
+EOF
+     },
     );

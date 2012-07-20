@@ -762,7 +762,7 @@ Wuhlewanderweg: guter Asphalt	Q0 22030,6600 22097,6414 22146,6338 22214,6271 222
 Wuhlewanderweg: guter Verbundsteinbelag	Q0 22240,6118 22172,5928 22135,5882 22085,5873
 #: XXX eventuell passiert hier noch was bzgl. Neupflasterung?
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4258&options=4 (Neupflasterung)
-#: next_check: 2012-07-01
+#: next_check: 2012-09-01
 Wuhlewanderweg: Verbundsteine, teilweise etwas uneben	Q1 22085,5873 21846,5856 21744,5804 21602,5685
 Hämmerlingstr.: Asphalt	Q0 21683,6946 21774,6880 21833,6810 21861,6719 21913,6554 21984,6317 22000,6245 22033,6144 22075,5996 22083,5899 22085,5873 22089,5776 22092,5673 22095,5585
 Dorfstr.: schlechtes Kopfsteinpflaster, teilweise gut befahrbare Banketten	Q2- 30357,3555 30319,3511 30281,3479 30201,3375 30188,3301 29998,3170 29902,3104 29921,3079 29959,3031
@@ -1494,8 +1494,8 @@ Wilhelm-Busch-Str.: asphaltiert	Q0 13376,7970 13312,8026 13205,8126
 Wörnitzweg: asphaltiert	Q0 13251,7972 13312,8026
 Neue Weberstr: gepflastert, wellig	Q2+ 12364,12589 12329,12594 12317,12584 12242,12594 12148,12609 12146,12628 12064,12673
 Fürstenwalder Str.: Kopfsteinpflaster, OK	Q1 12242,12594 12243,12604
-Löwestr.: mäßiges Kopfsteinpflaster	Q2 13201,12776 13279,12639
-Löwestr.: teilweise schlechtes Kopfsteinpflaster	Q3 13279,12639 13357,12473
+Löwestr.: mäßiges Kopfsteinpflaster	Q2 13201,12776 13273,12649
+Löwestr.: teilweise schlechtes Kopfsteinpflaster	Q3 13273,12649 13357,12473
 Jacobystr.: Beton	Q1 11594,12662 11260,12809 11207,12706
 Parochialstr.: Kopfsteinpflaster	Q2 10952,12401 11040,12415
 Parochialstr.: Asphalt mit Schadstellen	Q1 10831,12371 10952,12401
@@ -2245,7 +2245,7 @@ Mauerweg Lichterfelde: Asphalt mit Fugen	Q1 4038,-362 4406,-910
 Alexanderufer: Asphalt	Q0 8321,13033 8315,13181 8314,13323
 Alexanderufer: Asphalt	Q0 8314,13323 8356,13404 8365,13431 8354,13523 8337,13541
 Koppenstr.: Asphalt	Q0 12525,12151 12575,12223
-Koppenstr.: Asphalt mit einigen Schäden	Q1+ 12575,12223 12606,12471
+Koppenstr.: Asphalt mit einigen Schäden	Q1+ 12575,12223 12606,12471 12635,12629
 #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/de/bild_tvo_april_2007_2.shtml
 (Weg unterhalb der Spindlersfelder Str.): Verbundsteinpflaster	Q0- 21089,4731 21146,4229 21170,4111 21260,3848 21324,3691
 #: by: http://www.reinickendorf.de/index_7745_de.html
@@ -2571,7 +2571,7 @@ Norwegerstr. - Behmstr.: Verbundsteinpflaster	Q0- 10022,16237 10026,16165 10055,
 Burchardstr.: Beton	Q0 8200,6668 8553,6665 8722,6656
 Podewilsstr.: Asphalt	Q0- 8707,6537 8551,6552
 Zastrowstr.: Beton	Q0 9979,6349 9860,6348
-Weidenweg: Asphalt	Q0 12891,12549 13025,12523 13357,12473 13465,12502 13547,12529 13601,12550 13678,12571
+Weidenweg: Asphalt	Q0 12891,12549 13025,12523 13357,12473 13463,12507 13548,12535 13598,12554 13678,12571
 Nernstweg: Verbundsteinpflaster	Q1 14652,7507 14658,7513 14782,7638 14798,7747 14796,7801 14766,7903 14777,7921
 Bergaustr.: Beton	Q0- 15348,7882 15464,7757 15576,7636 15696,7507
 Platanenweg: Asphalt	Q0 15968,7739 15840,7876 15717,8011 15787,8073
@@ -7408,6 +7408,9 @@ Werner-Kube-Str.: Kopfsteinpflaster	Q2- 12883,14344 12947,14428 13013,14523
 (Uferweg): Gehwegplatten	Q1+ 22241,4911 22204,4910 22180,4938 22146,4934 22131,4914 22153,4861 22153,4840
 (Freiheit/Lindenstr. - Uferweg): Gehwegplatten	Q1+ 22196,4847 22204,4910
 (An der Wuhlheide - Uferweg): Verbundsteinpflaster	Q1 21002,5755 21047,5658 21059,5596 21002,5594
+Rathausstr.: Verbundsteinpflaster	Q0- 10601,12521 10704,12595
+Weg zur Mühsamstr.: Beton/Verbundsteinpflaster	Q1+ 13067,12583 13091,12563
+Weg zur Mühsamstr.: Gehwegplatten	Q0- 13091,12563 13232,12628 13273,12649
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -19762,8 +19765,8 @@ Agnes-Wabnitz-Str.: Kopfsteinpflaster	Q2 13934,13403 13819,13356
 Agnes-Wabnitz-Str.: Kopfsteinpflaster	Q2 13915,13443 13805,13394
 #: confirmed_by: srt
 Wilhelm-Stolze-Str.: Kopfsteinpflaster	Q2 13267,13167 13371,12937
-Fritz-Schiff-Weg: Kleinpflaster	Q1 13472,12337 13484,12436 13465,12502
-Ludwig-Pick-Str.: Asphalt	Q0 13547,12529 13552,12435
+Fritz-Schiff-Weg: Kleinpflaster	Q1 13472,12337 13484,12436 13463,12507
+Ludwig-Pick-Str.: Asphalt	Q0 13548,12535 13552,12435
 Ludwig-Pick-Str.: Gehwegplatten	Q0 13552,12435 13543,12326
 Alte Allee: Asphalt	Q0 890,9399 794,9472 759,9497 703,9538 678,9558 616,9602
 Kühler Weg: Asphalt	Q0 616,9602 743,9772 841,9914

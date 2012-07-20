@@ -19,9 +19,9 @@ Kronenstr./Jerusalemer Str.: Bauarbeiten, Fahrbahn vor der Kreuzung gesperrt	q3:
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 9475,12365 9462,12481 9454,12558
 Universitätsstr.: wegen Bauarbeiten Richtung Unter den Linden gesperrt	q4::inwork 9580,12581 9601,12380
 Helmerdingstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg kann benutzt werden	q4::inwork 14465,11195 14442,11101
-Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521 10704,12595
+Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q2::inwork 10601,12521 10704,12595
 Rathausbrücke: provisorischer Fußgängerweg auf der Rathausbrücke, ggfs. schieben	q4::inwork 10362,12351 10422,12395
-Rathausstr. zwischen Breite Str. und Poststr.: Fahrbahn wegen Brückenbauarbeiten gesperrt	q3::inwork 10281,12310 10362,12351
+Rathausstr. zwischen Breite Str. und Poststr.: Fahrbahn wegen Brückenbauarbeiten gesperrt	q2::inwork 10281,12310 10362,12351
 Rathausstr. zwischen Breite Str. und Poststr.: Fahrbahn wegen Brückenbauarbeiten gesperrt	q4::inwork 10422,12395 10476,12432
 Alte Jakobstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10489,11405 10436,11344 10244,11160
 Elcknerplatz, Borgmannstr.: Bauarbeiten, Einbahnstraße	q4::inwork; 22428,6063 22478,6041 22544,6037 22539,5956
@@ -59,6 +59,7 @@ Am Müggelsee: Fußgänger	q2 25474,2848 25667,2787 25857,2654 26006,2615 26158,264
 Pestalozzistr.: Fußgängerzone	q3 3721,11230 3770,11231 3822,11231
 (Zufahrt am NKZ): Bordsteine, Fußgänger/Lieferverkehr	q3 11291,10438 11311,10505 11343,10528
 Alexanderplatz: Fußgängerverkehr	q2 11139,13008 10970,12822 10923,12779
+Rathausstr.: Fußgänger	q1 10923,12779 10704,12595
 Dircksenstr.: langsame Straßenbahnen, Fußgänger	q2 10970,12822 10849,12944
 Dircksenstr.: Fußgänger	q2 10970,12822 11007,12773 11030,12741 11087,12780 11105,12764
 Gontardstr.: langsame Straßenbahnen, Fußgänger	q2 10740,12960 10793,12906 10923,12779
@@ -274,7 +275,7 @@ Elbingeroder Weg: hohe Bordsteine	q3 13178,9062 13146,9085
 (An der Apostelkirche - Kurfürstenstr.): Fußgänger, Bordsteine	q3 7312,10505 7315,10537
 Marie-Elisabeth-Lüders-Steg: eng, Fußgänger	q2 8415,12749 8551,12746
 Kleine Andreasstr.: Gehweg, Bordsteine	q3 12211,12128 12279,12113
-Fritz-Schiff-Weg: Fußgänger	q1 13465,12502 13484,12436 13472,12337
+Fritz-Schiff-Weg: Fußgänger	q1 13463,12507 13484,12436 13472,12337
 (Molkenmarkt - Parochialstr.): Bordsteine	q2 10738,12364 10831,12371
 (Crellestr. - Julius-Leber-Brücke): Fußgänger	q2 7535,9087 7555,8978 7509,8929 7497,8916
 (Fischerinsel, Spreekanalufer): Fußgänger	q1 10364,11896 10329,11842 10373,11781 10517,11795 10672,11870 10776,11942 10824,11992
@@ -985,6 +986,7 @@ Forlenweg: Fußgänger, eng, Bordstein	q2 3978,23301 4021,23330
 Am Leitbruch: Fußgänger	q4 4062,22069 4130,21961
 Primusweg: Fußgänger, Bordstein	q4 5651,19953 5666,19926 5704,19902 5715,19888
 Neptunstr.: Fußgänger	q2 8354,17270 8352,17285 8345,17350 8324,17362 8262,17361
+Mühsamstr.: Bordstein	q2 13232,12628 13273,12649
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q3 11805,19071 11895,19183 11927,19308
 Ebersstr.: Schüler	q2 7245,8583 7292,8631
 Straße 103 (Niederschönhausen): enge Straße	q1 10914,20065 11051,19789
@@ -1815,6 +1817,7 @@ Dorfstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 18144,18
 (Alex-Wedding-Str. - Karl-Liebknecht-Str.): gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 11018,13286 11085,13239
 Caseler Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 14732,16770 14700,16790 14608,16772
 An den Fließtalhöfen: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 4474,23119 4432,23066 4444,22989
+Eckertstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 13598,12554 13585,12584
 Josef-Nawrocki-Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 25802,4823 25802,4681 25724,4706 25691,4716 25554,4758 25552,4829
 Askanischer Platz: gegen die Einbahnstraßenrichtung, ggfs. schieben	q2::igndisp; 8882,10905 8938,10872 8983,10846 9022,10857
 Helbigstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 20109,4087 20339,3779 20362,3750

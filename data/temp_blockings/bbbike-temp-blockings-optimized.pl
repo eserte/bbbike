@@ -1450,16 +1450,7 @@ userdel	q4::inwork 10379,14963 10366,14992
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'source_id' => 'INKO_114025',
-         'until' => 1342796400,
-         'text' => 'Berliner Str. (Weißensee): Baustelle, Straße vollständig gesperrt (bis Ende 07/12) in beiden Richtungen zwischen Romain-Rolland-Str. und Am Wasserturm',
-         'from' => 1341730800,
-         'id' => 2358,
-         'data' => 'userdel	q4::inwork 12736,17998 12467,17814
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'source_id' => 'IM_018994',
@@ -1478,6 +1469,17 @@ userdel	q4::inwork 10379,14963 10366,14992
          'id' => 2361,
          'data' => '#: last_checked: 2012-07-16
 userdel	q3::inwork 11920,14468 11642,14625
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20120719.1310.372734.html',
+         'until' => 1348610399,
+         'text' => 'Straßenbauarbeiten John-Foster-Dulles-Allee zwischen Spreeweg und Zeltenplatz, 23.7. - 25.9.2012',
+         'from' => 1342994400,
+         'id' => 2362,
+         'data' => '#: XXX Situation vor Ort anschauen, evtl. kann der handicap-Wert niedriger gemacht werden
+userdel	q4::inwork 7627,12380 7514,12387 7437,12368 7215,12295 7039,12314
 ',
          'type' => 'handicap'
        }

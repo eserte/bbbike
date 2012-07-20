@@ -44,6 +44,7 @@ Voßstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg	q3::inwork 8743,1
 #: next_check: 2013-05-31 vvv
 #: by: wosch & IM_017330
 #: XXX siehe auch temporäre Ampel an der Chausseestr.
+#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1207/nachricht4724.html
 Invalidenstr. (Mitte): Baustelle, Richtung Alt-Moabit zwischen Gartenstr. und Hessische Str. gesperrt	q4::inwork; 9383,13978 9274,13963 9203,13953 9151,13941 9085,13919 8935,13844 8690,13723
 Scharnhorststr.: Einbahnstraßenregelung, auf Gehweg ausweichen	q3::inwork; 8450,13599 8314,13826
 Schwarzer Weg: Einbahnstraßenregelung, auf Gehweg ausweichen	q3::inwork; 8429,13903 8574,13666
@@ -79,17 +80,19 @@ Helmerdingstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg kann benutzt werden	q4::i
 #: next_check: ^^^
 #: last_checked: ^^^
 # 
-#: last_checked: 2012-07-13
+#: last_checked: 2012-07-20
 #: next_check: 2012-08-25
-Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521 10704,12595
+#: XXX danach q1 und mit Eintrag unten verknüpfen, falls hier keine Fahrbahn mehr sein wird
+Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q2::inwork 10601,12521 10704,12595
 # 
 #XXX del --- #: last_checked: 2011-02-27 --- #: next_check: 2011-07-15 --- Am Carlsgarten: Bauarbeiten	q4::inwork 19460,7954 19372,8012 19334,8046
 # 
-#: last_checked: 2012-05-21 vvv
-#: next_check: 2012-07-21 vvv
+#: last_checked: 2012-07-20 vvv
+#: next_check: 2012-08-30 vvv
+#: XXX siehe auch Eintrag in fragezeichen-orig (Ampel in Bau)
 #: note: komplette Fertigstellung und Verkehrsfreigabe im Frühjahr 2013
 Rathausbrücke: provisorischer Fußgängerweg auf der Rathausbrücke, ggfs. schieben	q4::inwork 10362,12351 10422,12395
-Rathausstr. zwischen Breite Str. und Poststr.: Fahrbahn wegen Brückenbauarbeiten gesperrt	q3::inwork 10281,12310 10362,12351
+Rathausstr. zwischen Breite Str. und Poststr.: Fahrbahn wegen Brückenbauarbeiten gesperrt	q2::inwork 10281,12310 10362,12351
 Rathausstr. zwischen Breite Str. und Poststr.: Fahrbahn wegen Brückenbauarbeiten gesperrt	q4::inwork 10422,12395 10476,12432
 # 
 #: next_check: ^^^
@@ -163,6 +166,7 @@ Am Müggelsee: Fußgänger	q2 25474,2848 25667,2787 25857,2654 26006,2615 26158,264
 Pestalozzistr.: Fußgängerzone	q3 3721,11230 3770,11231 3822,11231
 (Zufahrt am NKZ): Bordsteine, Fußgänger/Lieferverkehr	q3 11291,10438 11311,10505 11343,10528
 Alexanderplatz: Fußgängerverkehr	q2 11139,13008 10970,12822 10923,12779
+Rathausstr.: Fußgänger	q1 10923,12779 10704,12595
 Dircksenstr.: langsame Straßenbahnen, Fußgänger	q2 10970,12822 10849,12944
 Dircksenstr.: Fußgänger	q2 10970,12822 11007,12773 11030,12741 11087,12780 11105,12764
 Gontardstr.: langsame Straßenbahnen, Fußgänger	q2 10740,12960 10793,12906 10923,12779
@@ -404,7 +408,7 @@ Elbingeroder Weg: hohe Bordsteine	q3 13178,9062 13146,9085
 (An der Apostelkirche - Kurfürstenstr.): Fußgänger, Bordsteine	q3 7312,10505 7315,10537
 Marie-Elisabeth-Lüders-Steg: eng, Fußgänger	q2 8415,12749 8551,12746
 Kleine Andreasstr.: Gehweg, Bordsteine	q3 12211,12128 12279,12113
-Fritz-Schiff-Weg: Fußgänger	q1 13465,12502 13484,12436 13472,12337
+Fritz-Schiff-Weg: Fußgänger	q1 13463,12507 13484,12436 13472,12337
 (Molkenmarkt - Parochialstr.): Bordsteine	q2 10738,12364 10831,12371
 (Crellestr. - Julius-Leber-Brücke): Fußgänger	q2 7535,9087 7555,8978 7509,8929 7497,8916
 (Fischerinsel, Spreekanalufer): Fußgänger	q1 10364,11896 10329,11842 10373,11781 10517,11795 10672,11870 10776,11942 10824,11992
@@ -1259,6 +1263,9 @@ Am Leitbruch: Fußgänger	q4 4062,22069 4130,21961
 #: XXX_prog BS nach Norden
 Primusweg: Fußgänger, Bordstein	q4 5651,19953 5666,19926 5704,19902 5715,19888
 Neptunstr.: Fußgänger	q2 8354,17270 8352,17285 8345,17350 8324,17362 8262,17361
+#: XXX_prog BS nach Osten hin
+#: note: Parklücke ist durch Parkverbotsschilder gesichert
+Mühsamstr.: Bordstein	q2 13232,12628 13273,12649
 #
 ######################### User Contributions #################################
 # 
