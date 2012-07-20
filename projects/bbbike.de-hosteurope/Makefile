@@ -398,6 +398,7 @@ prepare-bbbike-dist-prog-bbbike:	\
 
 prepare-bbbike-dist-prog-bbbike-copy:
 	cd ${BBBIKE_ROOT_DIR} && ${MAKE} distcheck
+	cd ${BBBIKE_ROOT_DIR} && ${MAKE} permission
 	(umask 022; cd ${BBBIKE_ROOT_DIR} && perl "-MExtUtils::Manifest=manicopy,maniread" -e "manicopy(maniread(),'${CURDIR}/BBBike', '${MKDIST_STYLE}');")
 
 prepare-bbbike-dist-prog-bbbike-cgi:
