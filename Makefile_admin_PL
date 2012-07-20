@@ -865,12 +865,19 @@ mangle:
 
 # Fix the permissions. Needed mainly for correct cgi/mod_perl
 # operation.
-permission:
+permission:	permission-cgi permission-mapserver permission-data permission-other
+
+permission-other:
 	perl -MExtUtils::Manifest=maniread -le 'print join "\n", sort keys %{ maniread("MANIFEST") }' | xargs chmod ugo+r
-	chmod ugo+rx bbbike cgi/*.cgi
-	chmod ugo+r cgi/*.config
-	chmod ugo+rx data/temp_blockings
-	chmod ugo+r  data/temp_blockings/*
+
+permission-data:
+	cd data && ${MAKE} fix-permissions
+
+permission-cgi:
+	cd cgi && ${MAKE} permissions
+
+permission-mapserver:
+	if [ -d mapserver/brb/Makefile ] ; then cd mapserver/brb && ${MAKE} permissions; fi
 
 # Copy the current BBBike source first to CVS, and then to a USB
 # stick. The USB stick will be automatically mounted on FreeBSD, if
