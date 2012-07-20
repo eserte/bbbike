@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2009,2010 Slaven Rezic. All rights reserved.
+# Copyright (C) 2009,2010,2012 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -51,6 +51,7 @@ my $detect_pause;
 my @filter_stat;
 my $v;
 my $tsv;
+my $coordsys;
 GetOptions("stage=s" => \$start_stage,
 	   "state=s" => \$state_file,
 
@@ -65,6 +66,8 @@ GetOptions("stage=s" => \$start_stage,
 	   "detectpause=i" => \$detect_pause,
 
 	   'filterstat=s@' => \@filter_stat,
+
+	   'coordsys=s' => \$coordsys,
 
 	   "tsv" => \$tsv,
 	   "v+" => \$v,
@@ -605,6 +608,14 @@ sub parse_intersection_lines {
 	}
 	@$to_ref   = @{$fences[-1]};
     }
+
+    if ($coordsys) {
+	require Karte;
+	Karte::preload(':all');
+	for (@$from_ref, @$vias_ref, @$to_ref) {
+	    $_ = Karte::map2map_s($Karte::map{$coordsys}, $Karte::map{'polar'}, $_);
+	}
+    }
 }
 
 sub next_stage {
@@ -695,7 +706,8 @@ __END__
 
  Create a streets-polar.bbd with all tracks in WGS84 coordinate system (see tracks-polar rule in misc/gps_data).
 
- Set bbbike's output coordinate system to "polar" (WGS-84)
+ Set bbbike's output coordinate system to "polar" (WGS-84).
+ Alternatively use the "standard" coodinate system; in this case the command invocations below need also the C<-coordsys standard> option.
 
  Activate to edit/select mode ("Koordinaten in Zwischenablage")
 
