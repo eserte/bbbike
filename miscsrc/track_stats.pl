@@ -703,15 +703,15 @@ __END__
 
  Run the programm:
 
-   ./track_stats.pl <coord1> <coord2> : <coord3> <coord4> -state cache/somefile -state output
+   ./track_stats.pl <coord1> <coord2> : <coord3> <coord4> -state cache/somefile -stage output
 
  Force recalculation (or just delete the cached state file):
 
-   ./track_stats.pl <coord1> <coord2> : <coord3> <coord4> -state cache/somefile -state begin
+   ./track_stats.pl <coord1> <coord2> : <coord3> <coord4> -state cache/somefile -stage begin
 
  Add some filters on the statistics:
 
-   ./track_stats.pl <coord1> <coord2> : <coord3> <coord4> -state cache/somefile -state statistics -filterstat 'file=~/2010/'
+   ./track_stats.pl <coord1> <coord2> : <coord3> <coord4> -state cache/somefile -stage statistics -filterstat 'file=~/2010/'
 
 =head1 TODO
 
