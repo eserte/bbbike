@@ -362,7 +362,7 @@ EOF
 userdel	2 7043,15793 7129,15717 7198,15656
 userdel	2 7043,15793 6936,15888 6914,15908
 userdel	2 7198,15656 7277,15586
-userdel	2 6790,16018 6914,15908
+userdel	2 6781,16026 6914,15908
 EOF
      },
      { from  => 1083491594, # 2004-05-02 11:53
@@ -403,7 +403,7 @@ EOF
 userdel	2 7043,15793 7129,15717 7198,15656
 userdel	2 7043,15793 6936,15888 6914,15908
 userdel	2 7198,15656 7277,15586
-userdel	2 6790,16018 6914,15908
+userdel	2 6781,16026 6914,15908
 EOF
      },
      { from  => 1147522145, # 2006-05-13 14:09
@@ -552,7 +552,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 6019,16712 5937,16784 5900,16817 5777,16924
-userdel	2 6019,16712 6103,16635
+userdel	2 6019,16712 6038,16694 6103,16635
 userdel	2 6103,16635 6208,16546 6311,16457
 EOF
      },
@@ -1041,7 +1041,7 @@ EOF
        data  => <<EOF,
 userdel	q4 -1872,24336 -1790,24260 -1627,24105 -1367,23853 -1286,23753 -1281,23746
 userdel	q4 -1872,24336 -1896,24275 -1940,24176
-userdel	q4 -1872,24336 -1912,24442
+userdel	q4 -1872,24336 -1953,24435
 EOF
      },
      { from  => undef, # 
@@ -4762,7 +4762,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_002867',
        data  => <<EOF,
-userdel	2 6790,16018 6914,15908 6936,15888 7043,15793 7129,15717 7198,15656 7277,15586
+userdel	2 6781,16026 6914,15908 6936,15888 7043,15793 7129,15717 7198,15656 7277,15586
 EOF
      },
      { from  => 1150581600, # 2006-06-18 00:00
@@ -8357,7 +8357,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005637',
        data  => <<EOF,
-userdel	2::inwork 8132,23478 7185,23749
+userdel	2::inwork 8141,23477 7185,23749
 EOF
      },
      { from  => 1180821600, # 2007-06-03 00:00
@@ -8440,7 +8440,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005655',
        data  => <<EOF,
-userdel	2::temp 6311,16457 6208,16546 6103,16635 6019,16712 5937,16784 5900,16817 5777,16924
+userdel	2::temp 6311,16457 6208,16546 6103,16635 6038,16694 6019,16712 5937,16784 5900,16817 5777,16924
 EOF
      },
      { from  => 1180783165, # 2007-06-02 13:19
@@ -8466,7 +8466,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005680',
        data  => <<EOF,
-userdel	1::inwork 2029,20331 2131,20406 2241,20487
+userdel	1::inwork 2020,20327 2131,20406 2241,20487
 EOF
      },
      { from  => 1181165074, # undef
@@ -10514,7 +10514,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_007189',
        data  => <<EOF,
-userdel	2::inwork 8909,23506 8803,23478 8626,23432 8584,23421 8132,23478
+userdel	2::inwork 8909,23506 8803,23478 8626,23432 8584,23421 8141,23477
 EOF
      },
      { from  => 1195308071, # 2007-11-17 15:01
@@ -12182,7 +12182,7 @@ EOF
        text  => 'Müllerstr. (Wedding) in beiden Richtungen zwischen Leopoldplatz und Seestr. Veranstaltung, Straße vollständig gesperrt (5. bis 7. August 2011)',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::temp 6790,16018 6914,15908 6936,15888 7043,15793 7129,15717 7198,15656 7277,15586
+userdel	2::temp 6781,16026 6914,15908 6936,15888 7043,15793 7129,15717 7198,15656 7277,15586
 EOF
      },
      { from  => 1217625939, # 2008-08-01 23:25
@@ -13673,7 +13673,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_012136',
        data  => <<EOF,
-userdel	q4::inwork; 2241,20487 2131,20406 2029,20331
+userdel	q4::inwork; 2241,20487 2131,20406 2020,20327
 EOF
      },
      { from  => 1239660000, # 2009-04-14 00:00
@@ -16644,12 +16644,12 @@ EOF
      },
      { from  => undef, #
        until => undef, #
-       text  => 'Friedrich-Ludwig-Jahn-Sportpark: während Veranstaltungen und nachts von ca. 22 bis 7 Uhr gesperrt, mit Anhänger wegen des engen Südeinganges ggfs. nicht befahrbar',
+       text  => 'Weg vor der Max-Schmelling-Halle: während Veranstaltungen und nachts von 22 bis 6 Uhr gesperrt',
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
 #: XXX_prog: die "Veranstaltungen" sollten auch mit einer Kategorie bedacht werden
-	2::night 10456,15561 10607,15142
+	2::night 10456,15561 10512,15406
 EOF
      },
      { from  => undef, #
@@ -17371,7 +17371,7 @@ EOF
        text  => 'Müllerstr. (Wedding): Veranstaltung, gesperrt (20. bis 22. Mai 2011) in beiden Richtungen zwischen Nazarethkirchstr. und Seestr. ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::temp 6790,16018 6914,15908 6936,15888 7043,15793 7129,15717 7198,15656
+userdel	2::temp 6781,16026 6914,15908 6936,15888 7043,15793 7129,15717 7198,15656
 EOF
      },
      { from  => undef, # 
@@ -20129,7 +20129,7 @@ EOF
        type  => 'handicap',
        source_id => 'INKO_112232',
        data  => <<EOF,
-userdel	q4::inwork; 8527,14352 8442,14456 8346,14576
+userdel	q4::inwork; 8527,14352 8442,14456 8388,14523 8346,14576
 EOF
      },
      { from  => 1335854115, # 
@@ -20271,9 +20271,9 @@ EOF
        text  => 'Gleimstr./Stargarder Str.: Bauarbeiten in Höhe Schönhauser Allee, Einbahnstraße Richtung Westen',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2012-06-07
-#: next_check: 2012-07-10
-userdel	q3::inwork; 10713,15746 10953,15787 11086,15772
+#: last_checked: 2012-07-22 (an der Ystadter Str.)
+#: next_check: 2012-08-10
+userdel	q3::inwork; 10423,15698 10427,15699 10564,15721 10713,15746 10953,15787 11086,15772
 EOF
      },
      { from  => 1336057200, # 2012-05-03 17:00

@@ -21,11 +21,11 @@ Friedrichstr.(Mitte): Fahrbahn wegen Bauarbeiten gesperrt, Ausweichen auf Gehweg
 #: next_check: 2013-12-31
 Charlottenstr.: Einbahnstraßenregelung	q4::inwork; 9475,12365 9487,12263 9492,12214
 # 
-#: last_checked: 2012-07-11
-#: next_check: 2012-08-01
+#: last_checked: 2012-07-21
+#: next_check: 2012-08-11
 Zur Revaler Str.: Bauarbeiten	q3::inwork 14677,11027 14509,11060
 # 
-#: last_checked: 2012-07-11
+#: last_checked: 2012-07-21
 #: next_check: 2012-08-11
 Marchlewskistr.: Bauarbeiten, Ausweichen auf Gehweg	q4::inwork 13496,11384 13473,11456
 # 
@@ -43,7 +43,7 @@ Voßstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg	q3::inwork 8743,1
 #: last_checked: 2012-07-16 vvv
 #: next_check: 2013-05-31 vvv
 #: by: wosch & IM_017330
-#: XXX siehe auch temporäre Ampel an der Chausseestr.
+#: XXX siehe auch temporäre Ampel an der Chausseestr. sowie an der Luisenstr.
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1207/nachricht4724.html
 Invalidenstr. (Mitte): Baustelle, Richtung Alt-Moabit zwischen Gartenstr. und Hessische Str. gesperrt	q4::inwork; 9383,13978 9274,13963 9203,13953 9151,13941 9085,13919 8935,13844 8690,13723
 Scharnhorststr.: Einbahnstraßenregelung, auf Gehweg ausweichen	q3::inwork; 8450,13599 8314,13826
@@ -51,8 +51,8 @@ Schwarzer Weg: Einbahnstraßenregelung, auf Gehweg ausweichen	q3::inwork; 8429,13
 #: next_check ^^^
 #: last_checked: ^^^
 # 
-#: last_checked: 2012-05-06
-#: next_check: 2012-08-15
+#: last_checked: 2012-07-21
+#: next_check: 2012-10-15
 #: XXX abhängig von den Arbeiten in der Kynaststr.
 Alt-Stralau: Bauarbeiten an der Brücke, enge Durchfahrt	q3::inwork 14652,10201 14558,10264
 # 
@@ -85,8 +85,6 @@ Helmerdingstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg kann benutzt werden	q4::i
 #: XXX danach q1 und mit Eintrag unten verknüpfen, falls hier keine Fahrbahn mehr sein wird
 Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q2::inwork 10601,12521 10704,12595
 # 
-#XXX del --- #: last_checked: 2011-02-27 --- #: next_check: 2011-07-15 --- Am Carlsgarten: Bauarbeiten	q4::inwork 19460,7954 19372,8012 19334,8046
-# 
 #: last_checked: 2012-07-20 vvv
 #: next_check: 2012-08-30 vvv
 #: XXX siehe auch Eintrag in fragezeichen-orig (Ampel in Bau)
@@ -94,7 +92,6 @@ Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q2::inwork 10601,12521
 Rathausbrücke: provisorischer Fußgängerweg auf der Rathausbrücke, ggfs. schieben	q4::inwork 10362,12351 10422,12395
 Rathausstr. zwischen Breite Str. und Poststr.: Fahrbahn wegen Brückenbauarbeiten gesperrt	q2::inwork 10281,12310 10362,12351
 Rathausstr. zwischen Breite Str. und Poststr.: Fahrbahn wegen Brückenbauarbeiten gesperrt	q4::inwork 10422,12395 10476,12432
-# 
 #: next_check: ^^^
 #: last_checked: ^^^
 # 
@@ -129,7 +126,6 @@ Am Zirkus: Baustelle, Einbahnstraße	q3::inwork; 9170,13031 9239,12923
 #: next_check: 2012-09-01
 Am Kupfergraben: Baustelle, Einbahnstraße	q3::inwork; 9867,12651 9919,12613
 # 
-#XXX del --- #: last_checked: 2012-04-20 --- Bunsenstr.: Baustelle, Fahrbahn gesperrt	q4::inwork 8907,12472 8892,12576
 #: temporary ^^^
 ######################################################################
 #: XXX es ist zu erwarten, dass hier der Wuhlewanderweg verbessert wird: vvv
@@ -155,9 +151,9 @@ Hallesches Tor: reger Fußgängerverkehr	q3; 9599,10175 9593,10238
 Hallesches Tor: reger Fußgängerverkehr	q3 9593,10238 9592,10263
 Mehringplatz: Fußgänger und Radfahrer teilen sich den Weg	q1 9592,10263 9547,10278 9517,10332 9527,10389 9587,10421 9646,10404 9675,10351 9668,10306 9646,10279 9606,10263 9592,10263
 Friedrichstr. (am Mehringplatz): Fußgänger und Radfahrer teilen sich den Weg	q1 9587,10421 9566,10566
-Gorkistr.: reger Fußgängerverkehr (Fußgängerzone)	q3 2049,20292 2116,20314 2295,20358
+Gorkistr.: reger Fußgängerverkehr (Fußgängerzone)	q3 2044,20289 2116,20314 2295,20358
 #: by: Thomas Heuving:
-Alt-Tegel: reger Fußgängerverkehr (Fußgängerzone)	q4 1907,20265 2029,20331
+Alt-Tegel: reger Fußgängerverkehr (Fußgängerzone)	q4 1907,20265 2020,20327
 Breitscheidplatz: starker Fußgängerverkehr, oft Veranstaltungen	q4 5656,10876 5652,11004
 Breitscheidplatz: starker Fußgängerverkehr, oft Veranstaltungen	q4 5782,10884 5829,10964
 Wilmersdorfer Str.: starker Fußgängerverkehr (Fußgängerzone), nachts und sonntags Radfahren erlaubt	q4 3723,11457 3749,11344 3770,11231 3795,11098 3827,10980
@@ -491,7 +487,7 @@ Pankeweg: Fußgänger	q1 8759,16684 8776,16718 8836,16867 8904,17059 9027,17290 91
 Pankeweg: Fußgänger	q1 8836,16867 8822,16873 8804,16881
 Pankeweg: Fußgänger	q1 8721,16689 8804,16881 8866,17075
 Uferweg am Tegeler Hafen: Fußgänger	q1 1259,20303 1349,20345 1534,20421 1572,20412 1617,20393 1655,20388 1756,20405 1858,20431 1861,20467 1826,20492 1761,20539
-(Berliner Str. - Tegeler Hafen): Fußgänger	q1 1876,20684 1741,20571
+(Berliner Str. - Tegeler Hafen): Fußgänger	q1 1872,20683 1741,20571
 (Tegeler Hafen - An der Mühle): Fußgänger, teilweise eng	q2 1756,20405 1736,20441 1742,20464 1762,20505 1761,20539 1741,20571 1721,20603 1697,20623 1687,20645 1668,20670 1630,20731
 (Brücke über den Tegeler Fließ): eng, Fußgänger	q3 2361,21512 2336,21546
 Egidysteg: eng, Fußgänger	q3 3124,22198 3134,22153
@@ -502,7 +498,7 @@ Egidysteg: eng, Fußgänger	q3 3124,22198 3134,22153
 (Weg am Tegeler Fließ): Fußgänger	q1 5645,23968 5409,23816 5297,23633 5214,23420 5242,23156 5232,23139 5205,23094 5127,23042 5054,23025 4801,22897 4718,22891 4626,22914
 (Weg am Tegeler Fließ): Fußgänger	q1 4619,22934 4402,22877 4306,22914 4163,22907
 (Weg am Tegeler Fließ): Fußgänger, eng	q2 5860,24067 5693,24037 5645,23968
-(Schildower Weg): Fußgänger	q1 7874,24035 7675,23968 7615,23884 7185,23749
+(Schildower Weg): Fußgänger	q1 7877,24037 7675,23968 7615,23884 7185,23749
 (Mehrower Allee, Unterführung zum S-Bahnhof): Rampe, Fußgänger	q4 20547,17084 20533,17051 20439,17103
 Altvaterstr.: Fußgänger, Bordsteine	q2 -3117,3107 -3170,3070 -3223,3034
 #: note: laut Luftbild
@@ -1266,6 +1262,7 @@ Neptunstr.: Fußgänger	q2 8354,17270 8352,17285 8345,17350 8324,17362 8262,17361
 #: XXX_prog BS nach Osten hin
 #: note: Parklücke ist durch Parkverbotsschilder gesichert
 Mühsamstr.: Bordstein	q2 13232,12628 13273,12649
+(Neufährer Steig - Hennigsdorfer Str.): eng	q2 -2151,23379 -2180,23384 -2248,23409
 #
 ######################### User Contributions #################################
 # 
@@ -1824,7 +1821,7 @@ Altenburger Str.: Fußgänger, Bordsteine	q2 6651,1063 6631,968
 (Lilienthalpark): Fußgänger	q2 5571,614 5533,663
 (Lilienthalpark): Fußgänger	q2 5539,773 5576,800
 (Hildburghauser Str. - Lilienthalpark): Fußgänger	q2 6467,1028 6436,921 6421,892 6414,833 6367,825 6360,825 6352,825 6267,834 6259,835 6250,834 6172,822 6163,822 6155,821 6075,821 6066,821 6057,821 5975,821 5964,821 5954,819 5875,807 5867,807 5860,805 5781,800 5742,798 5682,767 5675,764 5615,735 5590,719
-(Mauerweg Lichtenrade - Lichterfelde): Fußgänger	q1 10309,-3191 10051,-3173 9600,-3160 9529,-2628 9506,-2421 9471,-2138 9462,-2050 8846,-2089 8310,-2037 8376,-1523 7962,-1295 7593,-1034 7144,-565 7169,-520 7164,-473 7146,-466 7098,-523 6965,-387 6668,-100 6498,71 6351,219 6253,361 6198,328 6013,211 5832,93 5435,-157 4842,-547 4596,-707 4406,-910
+(Mauerweg Lichtenrade - Lichterfelde): Fußgänger	q1 10309,-3191 10051,-3173 9600,-3160 9529,-2628 9506,-2421 9471,-2138 9462,-2050 9081,-2073 8846,-2089 8310,-2037 8376,-1523 7962,-1295 7593,-1034 7144,-565 7169,-520 7164,-473 7146,-466 7098,-523 6965,-387 6668,-100 6498,71 6351,219 6253,361 6198,328 6013,211 5832,93 5435,-157 4842,-547 4596,-707 4406,-910
 #: by: ^^^
 #: by: Josch [AM]
 Falkenhausenweg: spielende Kinder	q1 7610,1695 7692,1743 7754,1806 7810,1904 7864,2018 7975,2275 8071,2248
@@ -2775,7 +2772,18 @@ Bulgenbachweg: enge Straße	q0- 3431,26192 3452,26160 3478,26119 3520,26081 3574,
 Schmöckwitzwerder Süd: enge Straße	q1 30343,-3454 30147,-3816
 # 
 #: by: Stefan Klinkusch: vvv
+(Bergstr. - Brunsbütteler Damm): einige Fußgänger	q1 -7237,13461 -7209,13529 -7234,13551 -7304,13651 -7322,13784
+(Am Bullengraben - Lutoner Str.): eng, einige Fußgänger	q2 -5785,13606 -5790,13458
+(Am Bullengraben - Lutoner Str.): einige Fußgänger	q1 -5790,13458 -5789,13398 -5788,13291 -5790,13097
 Reformationsplatz: Fußgängerzone	q4 -3107,14535 -3134,14513 -3150,14478 -3174,14438
 #: XXX_prog: BS
 Földerichplatz: mehrere Betonpoller, Bordstein	q4 -3941,12545 -3942,12559
 #: by: ^^^
+# 
+#: by: Sven Leipold
+#: corrected_by: srt/policy (q3 -> q1)
+Narzissenpfad: enge Straße	q1 -7387,14951 -7523,14969
+# 
+#: by: Franka (...griem...)
+#: corrected_by: srt/policy (q2 -> q1) (auf der anderen Seite ebenfalls q1)
+(Pankeweg zwischen Pankstr. und Wiesenstr.): einige Fußgänger	q1 8140,15859 8122,15700 8156,15614

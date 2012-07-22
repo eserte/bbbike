@@ -1316,7 +1316,7 @@ Mühlendamm: unbequemes Passieren des Mittelstreifens	3nocross 10675,12280 10659,
 Mühlendamm: unbequemes Passieren des Mittelstreifens	3nocross 10675,12280 10700,12315 10723,12346 10738,12364
 Kurfürstendamm: unbequemes Passieren des Mittelstreifens (Bordsteine)	3nocross 5229,10716 5351,10760 5484,10810
 Möllendorffstr.: Mittelstreifen mit Straßenbahn	3nocross 15420,12178 15443,12222 15480,12306 15508,12367
-Müllerstr.: Zaun auf dem Mittelstreifen	3nocross 6790,16018 6914,15908 6936,15888 7043,15793
+Müllerstr.: Zaun auf dem Mittelstreifen	3nocross 6781,16026 6914,15908 6936,15888 7043,15793
 Indira-Gandhi-Str.: Straßenbahntrasse	3nocross 14597,15970 14609,15921 14650,15750
 Indira-Gandhi-Str.: Straßenbahntrasse	3nocross 14550,16161 14522,16260 14499,16341
 Lichtenberger Brücke: unbequemes Passieren des Mittelstreifens (Bordsteine, starker Verkehr)	3nocross 16737,11866 16851,11852 16962,11833 17037,11820 17151,11801
@@ -1414,6 +1414,8 @@ Berliner Str.: Straßenbahnhaltestelle	3nocross -11307,133 -11390,72 -11494,-4
 Hasenheide: Mittelstreifen	3nocross 11500,9116 11449,9125 11136,9183
 Hasenheide: Mittelstreifen	3nocross 11500,9116 11550,9104 11629,9086
 Kiepenheuerallee: Straßenbahntrasse	3nocross -13311,462 -13203,434 -13157,394
+#: by: Stefan Klinkusch:
+Wilhelmstr.: Mittelstreifen	3nocross -3824,13350 -3813,13404 -3803,13464
 abgeschlossenes Tor	3 * 8237,20098 *
 abgeschlossenes Tor	3 * 8291,20112 *
 #
@@ -1422,6 +1424,11 @@ abgeschlossenes Tor	3 * 8291,20112 *
 # Stellen, an denen getragen werden muß:
 # die Zahl hinter dem ":" entspricht ungefähr den verlorenen Sekunden
 # 
+#: by: Stefan Klinkusch:
+tragen (ca. 20 Stufen, kann auf Rampen umfahren werden)	0:30 -5561,12909
+#: by: Stefan Klinkusch:
+#: note: "nur ohne Anhänger befahrbar"
+tragen (wenige Stufen)	0:5 -5446,13137
 tragen (4+6+7 Stufen)	0:30 4502,21525
 tragen (27 Stufen)	0:30 3195,24825
 #: by: mmholz...
@@ -1687,6 +1694,11 @@ tragen (31 Stufen oder Kinderwagenrampe)	0:40 13168,21706
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+enger Eingang zum Friedrich-Ludwig-Jahn-Sportpark	BNP:30::trailer=no 10583,15208
+#: by: Stefan Klinkusch: vvv
+Schranke	BNP:3::trailer=10 -3441,13270
+Drängelgitter	BNP:3::trailer=10 -4760,13980
+#: by: ^^^
 #: note: explizite "Radfahren verboten"-Schilder
 Schranke	BNP:3::trailer=10 8828,13434
 Schranke	BNP:3::trailer=10 8262,17361
@@ -2111,7 +2123,7 @@ Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 
 #: last_checked: 2012-04-28
 #: next_check: 2012-07-15
-Boyenweg - Uferweg: wegen Bauarbeiten gesperrt	2:inwork 7938,14426 7886,14518 7787,14473
+Boyenweg - Uferweg: wegen Bauarbeiten gesperrt	2:inwork 7886,14518 7787,14473
 # 
 #XXX del --- #: last_checked: 2011-12-25 --- #: next_check: 2012-01-01 --- #: XXX evenuell bleibt dieser Teil dauerhaft gesperrt, weil hier ein Einkaufszentrum entsteht? --- #: XXX auch die Ampel an der Kreuzung prüfen --- Treitschkestr.: Bauarbeiten am Kaufhaus, bis 2012	2:inwork 5219,6215 5125,6262 4971,6345
 # 
@@ -2135,9 +2147,9 @@ Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,127
 #XXX del --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1002/nachricht3772.html --- #: next_check: 2010-10-01 --- Brücke über A10: Sperrung vom 15.02.2010 bis 01.10.2010	2:inwork 15337,24593 15490,24848
 #XXX del --- #: last_checked: 2010-09-11 --- #: next_check: 2010-12-31 --- #: XXX der Neubau wird "N" oder "NH" sein und Radwege haben --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0907/nachricht3563.html --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1005/nachricht3870.html --- #: by: http://www.altglienicke.de/aktuell.php : Sperrung aufgehoben (20.05.11) --- Wegedornbrücke: Vollsperrung, Neubau	2:inwork 20385,593 20442,564 20510,530 20534,501
 # 
-#: last_checked: 2012-05-06
-#: next_check: 2012-08-15
-#: XXX abhängiger Eintrag in vorfahrt-orig!
+#: last_checked: 2012-07-21
+#: next_check: 2012-10-15
+#: XXX abhängiger Eintrag in vorfahrt-orig sowie in ampeln-orig (auskommentierte Ampel)
 Kynaststraße: Bauarbeiten im südlichen Abschnitt	2:inwork 14652,10201 14724,10297 14766,10372 14795,10473 14805,10518
 # 
 #: last_checked: 2011-04-30

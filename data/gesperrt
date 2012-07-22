@@ -1601,11 +1601,11 @@ Mittelstreifen mit Straßenbahn	3nocross::ignrte 15420,12178 15443,12222 15480,12
 Deutschmeisterstr. -> Möllendorffstr.: Mittelstreifen mit Straßenbahn	3::igndisp 15350,12270 15443,12222 15480,12306
 Möllendorffstr. -> Vorfahrt am Rathaus Lichtenberg: Mittelstreifen mit Straßenbahn	3::igndisp 15508,12367 15480,12306 15531,12300
 Vorfahrt am Rathaus Lichtenberg -> Möllendorffstr.: Mittelstreifen mit Straßenbahn	3::igndisp 15531,12300 15480,12306 15443,12222
-Zaun auf dem Mittelstreifen	3nocross::ignrte 6790,16018 6914,15908 6936,15888 7043,15793
+Zaun auf dem Mittelstreifen	3nocross::ignrte 6781,16026 6914,15908 6936,15888 7043,15793
 Müllerstr. -> Brüsseler Str.: Zaun auf dem Mittelstreifen	3::igndisp 6936,15888 6914,15908 6802,15790
-Brüsseler Str. -> Müllerstr.: Zaun auf dem Mittelstreifen	3::igndisp 6802,15790 6914,15908 6790,16018
+Müllerstr. -> Amsterdamer Str.: Zaun auf dem Mittelstreifen	3::igndisp 6781,16026 6914,15908 7077,16078
+Brüsseler Str. -> Müllerstr.: Zaun auf dem Mittelstreifen	3::igndisp 6802,15790 6914,15908 6781,16026
 Brüsseler Str. -> Amsterdamer Str.: Zaun auf dem Mittelstreifen	3::igndisp 6802,15790 6914,15908 7077,16078
-Müllerstr. -> Amsterdamer Str.: Zaun auf dem Mittelstreifen	3::igndisp 6790,16018 6914,15908 7077,16078
 Amsterdamer Str. -> Müllerstr.: Zaun auf dem Mittelstreifen	3::igndisp 7077,16078 6914,15908 6936,15888
 Amsterdamer Str. -> Brüsseler Str.: Zaun auf dem Mittelstreifen	3::igndisp 7077,16078 6914,15908 6802,15790
 Straßenbahntrasse	3nocross::ignrte 14597,15970 14609,15921 14650,15750
@@ -1858,10 +1858,15 @@ Mittelstreifen	3nocross::ignrte 11500,9116 11550,9104 11629,9086
 Straßenbahntrasse	3nocross::ignrte -13311,462 -13203,434 -13157,394
 Johannes-Lepsius-Str. -> Kiepenheuerallee: Straßenbahntrasse	3::igndisp -13244,281 -13203,434 -13311,462
 Kiepenheuerallee -> Johannes-Lepsius-Str.: Straßenbahntrasse	3::igndisp -13157,394 -13203,434 -13244,281
+Mittelstreifen	3nocross::ignrte -3824,13350 -3813,13404 -3803,13464
+Kerstenweg -> Wilhelmstr.: Mittelstreifen	3::igndisp -3705,13386 -3813,13404 -3824,13350
+Wilhelmstr. -> Kerstenweg: Mittelstreifen	3::igndisp -3803,13464 -3813,13404 -3705,13386
 abgeschlossenes Tor	3 8235,20109 8237,20098 8258,19983
 abgeschlossenes Tor	3 8258,19983 8237,20098 8235,20109
 abgeschlossenes Tor	3 8288,20128 8291,20112 8315,19993
 abgeschlossenes Tor	3 8315,19993 8291,20112 8288,20128
+tragen (ca. 20 Stufen, kann auf Rampen umfahren werden)	0:30:-156 -5561,12909
+tragen (wenige Stufen)	0:5:-161 -5446,13137
 tragen (4+6+7 Stufen)	0:30:48 4502,21525
 tragen (27 Stufen)	0:30:-145 3195,24825
 tragen (4 Stufen)	0:10:65 -440,4554
@@ -2053,6 +2058,9 @@ tragen (Treppe, ca. 20 Stufen)	0:25:-12 19160,14935
 tragen (Treppe)	0:30:70 89344,-5795
 tragen, langgezogene Stufen (13 Stufen)	0:25:-168 20704,1383
 tragen (31 Stufen oder Kinderwagenrampe)	0:40:-256 13168,21706
+enger Eingang zum Friedrich-Ludwig-Jahn-Sportpark	BNP:30:-19:trailer=no 10583,15208
+Schranke	BNP:3:-27:trailer=10 -3441,13270
+Drängelgitter	BNP:3:4:trailer=10 -4760,13980
 Schranke	BNP:3:51:trailer=10 8828,13434
 Schranke	BNP:3:-96:trailer=10 8262,17361
 Schranke, enge Umfahrung	BNP:5:-6:trailer=15 8352,17285
@@ -2299,7 +2307,7 @@ Bebelplatz: Bauarbeiten, vollständig gesperrt	2:inwork 9795,12293 9869,12297
 Hinter der Katholischen Kirche: Bauarbeiten, vollständig gesperrt	2:inwork 9808,12182 9801,12245 9795,12293 9780,12401
 Bebelplatz: Bauarbeiten an der Staatsoper	2:inwork 9743,12239 9702,12307 9734,12395
 Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
-Boyenweg - Uferweg: wegen Bauarbeiten gesperrt	2:inwork 7938,14426 7886,14518 7787,14473
+Boyenweg - Uferweg: wegen Bauarbeiten gesperrt	2:inwork 7886,14518 7787,14473
 Caroline-Michaelis-Str.: Bauarbeiten	2:inwork 9151,13941 9125,13973
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12748
 Kynaststraße: Bauarbeiten im südlichen Abschnitt	2:inwork 14652,10201 14724,10297 14766,10372 14795,10473 14805,10518

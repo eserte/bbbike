@@ -535,13 +535,13 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 5114,17500
 	X 5486,17169
 	X 6311,16457
-	X 6253,15550
+	X 6245,15558
 	X 7597,14417
 	X 7378,14559
 	X 7180,14419
 	X 7277,15586
 	X 6630,15100
-	X 6790,16018
+	X 6781,16026
 	X 7687,16770
 	X 7363,13023
 	X 7195,13046
@@ -970,7 +970,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	F -997,23492
 	X -656,23011
 	X 1470,21205
-	X 2029,20331
+	X 2020,20327
 	X 127,17176
 	X -344,15200
 	X -283,14523
@@ -1404,9 +1404,9 @@ nur Richtung O	X 8142,7221
 	F 7403,16575
 	X 7231,16418
 	X 6965,16190
-	X 6668,15914
-	X 6564,15821
-	X 6431,15700
+	X 6661,15921
+	X 6555,15827
+	X 6422,15708
 	X 7436,15746
 	X 7622,15946
 	X 8211,17585
@@ -1690,7 +1690,11 @@ nur Richtung O	X 8142,7221
 	X 4572,7936
 	X 15080,11905
 	X 6454,8653
-	X 14652,10201
+#XXX Kynaststr./Alt-Stralau - evtl. wird es nach den Bauarbeiten hier wieder eine Ampel geben	X 14652,10201
+#: XXX Baustellenampel, wahrscheinlich wegen der Sperrung Karlshorster Str.
+#: last_checked: 2012-07-21
+#: next_check: 2012-08-21
+	X::inwork 14832,10512
 	F 13030,7346
 #XXX del:	X 12510,6508
 #XXX del:	X 12553,6423
@@ -2053,7 +2057,6 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8626,23432
 #: note: laut Luftbild:
 	F 14252,1945
 	F 1901,13061
-#: note: laut Luftbild:
 	F 9474,16297
 	F 12990,11006
 #: note: laut Luftbild:
@@ -2707,6 +2710,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: next_check: 2013-05-31 vvv
 	X::inwork 8735,14093
 	X::inwork 8879,13913
+	X::inwork 8634,13588
 #: next_check ^^^
 #: last_checked ^^^
 ################################################################################

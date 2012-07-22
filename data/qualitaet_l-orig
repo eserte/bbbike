@@ -962,7 +962,7 @@ schlechte Straße oder Kopfsteinpflaster	Q2 26850,42000 27062,43000 27862,43625 2
 	Q0 31533,48030 31937,48579
 	Q0 31937,48579 31516,48617
 	Q0 31937,48579 31482,49046 31482,49109 31495,49233 31575,49512 31585,49980 31983,50417 32359,50671 32932,51298 33073,51353
-schlechte Straße oder Kopfsteinpflaster	Q2 3754,24946 4244,25914 4276,25978
+schlechte Straße oder Kopfsteinpflaster	Q2 3754,24946 3955,25343 4244,25914 4276,25978
 	Q0 5612,27750 5665,27401 5515,27039 4904,26836 4424,26240 4366,26160 4276,25978
 	Q0 5612,27750 5384,28338
 schlechte Straße oder Kopfsteinpflaster	Q2 5384,28338 5320,28548 5367,28845 5471,29678 5407,29954 5535,30422
@@ -1230,7 +1230,7 @@ Fahrbahn asphaltiert, Radwege auf Gehweg	Q1 26639,-17861 26439,-17829
 	Q0 -6943,25831 -7187,25859 -7225,25509 -7260,25515
 	Q0 -3203,25328 -3331,25078 -3446,25075 -3815,25252 -4219,25460 -4265,25459 -4375,25618 -4642,25672
 	Q0 -2446,25386 -2118,26060 -1941,26218 -926,27132 -562,27474 -250,27739 -25,27812 184,27837 281,27968 375,28109 524,28171 938,28349 978,28400 1007,28446 1009,28662 1020,28712 1078,28830 1124,28923 1234,29120 1304,29256 1366,29416 1492,29386 1596,29362
-	Q0 -3018,25556 -2800,25478 -2446,25386 -2139,25038 -1950,24762 -1918,24514
+	Q0 -3018,25556 -2800,25478 -2446,25386 -2139,25038 -1996,24889 -1950,24762 -1944,24634 -1982,24514
 #	Q0 938,28349 1195,28435 1539,28328 2003,28396
 #	Q0 2853,28918 3450,28728 4171,28472 4578,28328 4807,28338
 	Q0 4167,29307 4267,29149 4412,28911 4807,28338 5486,27745 5612,27750 5939,27781 6880,27351
@@ -2437,6 +2437,8 @@ Dreescher Weg (Bietikow): Asphalt	Q0 45108,96666 45334,96904 45317,96946
 Niederstr.: Kopfsteinpflaster	Q2 3809,24702 3949,24718
 Am Sandkrug: Asphalt	Q0 3801,24736 3677,24705
 Koebisstr.: Koebisstr	Q2 3791,24783 4037,24824
+Lindenstr.: Asphalt	Q0 3606,25288 3955,25343
+Gartenweg: unbefestigte Straße	Q2 1961,28239 1876,28265 1859,28228
 ######################### User Contributions #################################
 #: by: Aaron Schaar: vvv
 Hermannswerder: guter Asphalt	Q0 -13718,-2991 -14301,-2871 -14577,-3068 -14740,-3262
@@ -2517,11 +2519,13 @@ Alte Schildower Str.: Asphalt	Q0 4958,24418 5019,24484 5168,24614
 #: corrected_by: srt (Kopfsteinpflaster -> Verbundsteinpflaster)
 Alte Schildower Str.: Verbundsteinpflaster	Q1+ 5168,24614 5212,24652
 Alte Schildower Str.: schlechtes Kopfsteinpflaster, Radfahrer dürfen den Gehweg benutzen	Q1- 5212,24652 5265,24642 5443,24589 5608,24610
-Alte Schildower Str./Hermsdorfer Str.: Asphalt	Q0 5608,24610 5848,24609 6029,24562 6151,24606 6259,24597
+Alte Schildower Str./Hermsdorfer Str.: Asphalt	Q0 5608,24610 5848,24609 6029,24562 6151,24606 6172,24604 6259,24597
 Wiesenstr./Mauerweg: Asphalt	Q1 6261,24462 6542,24466 6814,24593 7173,24514 7568,24527 7653,24412
 Kurze Str.: Asphalt	Q0 6259,24597 6261,24462
+#: confirmed_by: srt
 (Mauerweg): Asphalt	Q0 2651,28147 3095,28125 3322,28132
-Florastr. (Hohen Neuendorf): Asphalt	Q0 1937,28118 1971,28236 2012,28378
+#: confirmed_by: srt
+Florastr. (Hohen Neuendorf): Asphalt	Q0 1929,28119 1938,28171 1961,28239 2012,28378
 #: by: ^^^
 #: by: Jörg Arnold: vvv
 Finkenschlag (Ladeburg): gut geeignet	Q0 22106,32178 22527,32200
@@ -3789,7 +3793,8 @@ Artilleriepark: guter Asphalt	Q0 -12956,13814 -12960,13760 -12988,13755 -13017,1
 Edison-Allee: guter Asphalt	Q0 -11276,-1844 -11205,-1745 -11166,-1764 -11164,-1842 -11163,-1925
 # 
 #: by: Editha Künzel:
-Karlstr. (Glienicke): feste Sandstraße	Q2 5168,24614 5119,24856
+#: corrected_by: srt (feste Sandstraße -> Asphalt)
+Karlstr. (Glienicke): Asphalt	Q0 5168,24614 5119,24856
 # 
 #: by: torsten.scholz:
 #: confirmed_by: srt (westlicher Abschnitt)
@@ -4001,3 +4006,6 @@ Seeweg: Verbundsteinpflaster	Q1 19352,-961 19404,-1076
 Franz-Mehring-Str.: mäßiger Asphalt	Q1- -9313,-2429 -9218,-2129 -9164,-1947
 #: by: Stefan Schmitz
 (Marienfelder Str./Hubertusstr. - Mauerradweg): Trampelpfad	Q2 10040,-3202 10051,-3173
+#: by: Marcus (mahabbel...):
+#: note: "Wohnstraße, für Auto 30 km/h"
+Marie-Juchacz-Str. (Potsdam): Asphalt	Q0 -7369,-5648 -7398,-5650 -7472,-5652 -7537,-5620 -7592,-5565 -7655,-5517 -7713,-5470 -7767,-5415

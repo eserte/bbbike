@@ -645,11 +645,11 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        {
          'until' => undef,
          'recurring' => 1,
-         'text' => 'Friedrich-Ludwig-Jahn-Sportpark: während Veranstaltungen und nachts von ca. 22 bis 7 Uhr gesperrt, mit Anhänger wegen des engen Südeinganges ggfs. nicht befahrbar',
+         'text' => 'Weg vor der Max-Schmelling-Halle: während Veranstaltungen und nachts von 22 bis 6 Uhr gesperrt',
          'from' => undef,
          'id' => 1956,
          'data' => '#: XXX_prog: die "Veranstaltungen" sollten auch mit einer Kategorie bedacht werden
-	2::night 10456,15561 10607,15142
+	2::night 10456,15561 10512,15406
 ',
          'type' => 'gesperrt'
        },
@@ -1347,9 +1347,9 @@ userdel	q4::inwork 10893,14705 11101,14768
          'text' => 'Gleimstr./Stargarder Str.: Bauarbeiten in Höhe Schönhauser Allee, Einbahnstraße Richtung Westen',
          'from' => undef,
          'id' => 2342,
-         'data' => '#: last_checked: 2012-06-07
-#: next_check: 2012-07-10
-userdel	q3::inwork; 10713,15746 10953,15787 11086,15772
+         'data' => '#: last_checked: 2012-07-22 (an der Ystadter Str.)
+#: next_check: 2012-08-10
+userdel	q3::inwork; 10423,15698 10427,15699 10564,15721 10713,15746 10953,15787 11086,15772
 ',
          'type' => 'handicap'
        },
