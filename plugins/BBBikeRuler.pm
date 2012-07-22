@@ -288,17 +288,27 @@ sub motion {
 		$gpsman_track_tag =~ /dist=([\d\.]+).*?time=([\d:]+).*abstime=([\d:]+)/;
 		my($dist1,$time1,$abstime1) = ($1, $2, $3);
 		$time1 = _min2sec($time1);
-		if ($time2 != $time1 && $abstime2 != $abstime1) {
+		if ($time2 ne $time1 && $abstime2 ne $abstime1) {
 		    $abstime1 = _hms2sec($abstime1);
 		    if ($abstime2 < $abstime1) { $abstime2 += 86400 }
+		    my $time_delta = $time2-$time1;
+		    my $abstime_delta = $abstime2-$abstime1;
+		    my $dist_delta = $dist2-$dist1;
 		    # XXX Msg.pm
-		    $message  = "Zeit: " . _fmt_time($time2-$time1) . "; ";
-		    $message .= sprintf "Dist: %.3fkm; ", $dist2-$dist1;
-		    $message .= sprintf "Speed: %.1fkm/h; ", ((($dist2-$dist1)*1000/($time2-$time1))*3.6);
-		    $message .= "Abszeit: " . _fmt_time($abstime2-$abstime1) . "; ";
-		    $message .= sprintf "Absspeed: %.1fkm/h; ", ((($dist2-$dist1)*1000/($abstime2-$abstime1))*3.6);
+		    $message  = "Zeit: " . _fmt_time($time_delta) . "; ";
+		    $message .= sprintf "Dist: %.3fkm; ", $dist_delta;
+		    $message .= sprintf "Speed: %.1fkm/h; ", (($dist_delta*1000/$time_delta)*3.6);
+		    $message .= "Abszeit: " . _fmt_time($abstime_delta) . "; ";
+		    $message .= sprintf "Absspeed: %.1fkm/h; ", (($dist_delta*1000/$abstime_delta)*3.6);
+		    my $act_speed = main::get_active_speed();
+		    if ($act_speed) {
+			my $estimated_time_for_act_speed = ($dist_delta*1000)/($act_speed/3.6);
+			if ($time_delta > $estimated_time_for_act_speed) {
+			    $message .= sprintf "verlorene Zeit: %ds; ", $time_delta - $estimated_time_for_act_speed;
+			}
+		    }
 		    $message .= sprintf "Luft-Dist: %.3fkm; ", $dist/1000;
-		    $message .= sprintf "Luft-Speed: %.1fkm/h", (($dist/($time2-$time1))*3.6);
+		    $message .= sprintf "Luft-Speed: %.1fkm/h", (($dist/$time_delta)*3.6);
 		    $old_message = $message;
 		} else {
 		    $message = "(" . $old_message . ")";
