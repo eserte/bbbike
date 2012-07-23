@@ -2701,11 +2701,16 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F 8631,18441
 	X 10127,19992
 	F 5628,14063
-#: XXX möglicherweise temporäre Ampel (wegen der Umleitung Under den Linden)
-#: last_checked: 2012-07-16
-#: next_check: 2013-12-31
+#: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Under den Linden) vvv
+#: last_checked: 2012-07-16 vvv
+#: next_check: 2013-12-31 vvv
 	X::inwork 9123,12500
-#: XXX möglicherweise temporäre Ampeln (wegen der Umleitung an der Invalidenstraße)
+	X::inwork 9280,12883
+#: next_check ^^^
+#: last_checked ^^^
+#: XXX ^^^
+# 
+#: XXX möglicherweise temporäre Ampeln (wegen der Umleitung an der Invalidenstraße) vvv
 #: last_checked: 2012-07-16 vvv
 #: next_check: 2013-05-31 vvv
 	X::inwork 8735,14093
@@ -2713,6 +2718,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X::inwork 8634,13588
 #: next_check ^^^
 #: last_checked ^^^
+#: XXX ^^^
 ################################################################################
 #: note: Potsdam vvv
 #: by: http://www.potsdam.de/cms/beitrag/10067917/966975/

@@ -1227,16 +1227,7 @@ userdel	2::inwork 19968,16 19940,52
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_018437',
-         'until' => 1369989720,
-         'text' => 'Hessische Str. (Mitte): Baustelle, Fahrtrichtung gesperrt (Umleitungsstrecke für die Arbeiten auf der Invalidenstr.) Richtung Oranienburger Tor, 15.02.2012 09:42 Uhr bis 31.05.2013 10:42 Uhr',
-         'from' => 1329208920,
-         'id' => 2313,
-         'data' => 'userdel	q4::inwork; 8690,13723 8775,13606
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'source_id' => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20120223.1505.366579.html',
@@ -1475,11 +1466,30 @@ userdel	q3::inwork 11920,14468 11642,14625
        {
          'source_id' => 'http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20120719.1310.372734.html',
          'until' => 1348610399,
-         'text' => 'Straßenbauarbeiten John-Foster-Dulles-Allee zwischen Spreeweg und Zeltenplatz, 23.7. - 25.9.2012',
+         'text' => 'Straßenbauarbeiten John-Foster-Dulles-Allee zwischen Spreeweg und Zeltenplatz, 23.7. - 25.9.2012, Fahrbahn ist gesperrt, der nördliche Gehweg kann benutzt werden',
          'from' => 1342994400,
          'id' => 2362,
-         'data' => '#: XXX Situation vor Ort anschauen, evtl. kann der handicap-Wert niedriger gemacht werden
-userdel	q4::inwork 7627,12380 7514,12387 7437,12368 7215,12295 7039,12314
+         'data' => 'userdel	q2::inwork 7437,12368 7215,12295 7039,12314
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_019006',
+         'until' => 1343746800,
+         'text' => 'Berliner Str. (Pankow): Baustelle, Fahrtrichtung gesperrt (bis Ende 07/2012) stadtauswärts zwischen Mühlenstr. und Elsa-Brandström-Str.',
+         'from' => 1342945020,
+         'id' => 2363,
+         'data' => 'userdel	q4::inwork; 10927,17022 10908,17142
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'INKO_113869',
+         'until' => 1354291200,
+         'text' => 'Pichelswerderstr. (Spandau): Baustelle, Fahrtrichtung gesperrt (bis Ende 11/2012) Richtung Freiheit zwischen Ruhlebener Str. und Gewerbehof',
+         'from' => 1342940400,
+         'id' => 2364,
+         'data' => 'userdel	q4::inwork; -2706,13291 -2699,13359 -2669,13488
 ',
          'type' => 'handicap'
        }

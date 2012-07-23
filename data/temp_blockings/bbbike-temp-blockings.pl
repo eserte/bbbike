@@ -4732,9 +4732,9 @@ EOF
        data  => <<EOF,
 userdel	2::temp 8021,11636 8016,11770 8172,11679
 userdel	2::temp 7816,12150 7875,12363
-userdel	2::temp 7504,11512 7382,11588 7163,11738 7287,11763 7535,11677 7591,11639 7669,11586 7696,11621 7735,11656 7796,11681 7901,11684 8016,11770
+userdel	2::temp 7504,11512 7382,11588 7163,11738 7287,11763 7535,11677 7591,11639 7621,11620 7669,11586 7696,11621 7735,11656 7796,11681 7901,11684 8016,11770
 userdel	2::temp 7669,11586 7711,11558
-userdel	2::temp 8022,12016 8016,11770 7801,11875 7663,11946 7570,11855 7223,11897 7182,11870 7173,11864 7073,11798 7163,11738 6980,11583 6809,11570
+userdel	2::temp 8022,12016 8016,11770 7801,11875 7717,11918 7663,11946 7570,11855 7223,11897 7182,11870 7173,11864 7073,11798 7163,11738 6980,11583 6809,11570
 userdel	2::temp 7039,12314 7383,12095
 userdel	2::temp 7073,11798 6778,11742
 userdel	2::temp 8354,12416 8546,12279
@@ -11763,7 +11763,7 @@ EOF
 userdel	2::temp 8055,12186 8089,12190 8214,12205 8215,12156 8222,11881
 userdel	2::temp 8214,12205 8538,12245 8522,12187
 userdel	2::temp 7383,12095 7816,12150 8055,12186 8048,12135 8034,12093
-userdel	2::temp 8538,12245 8522,12239 8466,12197 8215,12156 8107,12145 8048,12135 8018,12131 7827,12105 7460,12054
+userdel	2::temp 8538,12245 8522,12239 8466,12197 8215,12156 8107,12145 8048,12135 8018,12131 7827,12105 7777,12098 7460,12054
 userdel	2::temp 8089,12041 8107,12145
 userdel	2::temp 8595,12066 8600,12165 8538,12245 8546,12279 8570,12302 8573,12325 8540,12420
 userdel auto	3 8546,12279 8538,12245 8600,12165
@@ -17918,11 +17918,11 @@ userdel auto	3 7827,12105 7816,12150 7875,12363
 userdel auto	3 7875,12363 7816,12150 7827,12105
 userdel auto	3 7039,12314 7383,12095 7460,12054
 userdel	2::temp 7382,11588 7163,11738 7287,11763 7535,11677
-userdel	2::temp 8021,11636 8016,11770 7801,11875 7663,11946
+userdel	2::temp 8021,11636 8016,11770 7801,11875 7717,11918 7663,11946
 userdel	2::temp 7796,11681 7816,11571
 userdel	2::temp 8022,12016 8016,11770 7901,11684
 userdel	2::temp 7816,12150 7875,12363
-userdel	2::temp 7711,11558 7669,11586 7591,11639
+userdel	2::temp 7711,11558 7669,11586 7621,11620 7591,11639
 userdel	2::temp 8055,12186 8048,12135 8034,12093
 userdel	2::temp 7822,11952 7832,12036
 userdel	2::temp 8172,11679 8016,11770 8156,11863 8223,11796
@@ -17931,7 +17931,7 @@ userdel	2::temp 7039,12314 7383,12095
 userdel	2::temp 7795,11823 7777,11787
 userdel	2::temp 6778,11742 7073,11798 6809,11979
 userdel	2::temp 8091,11992 8089,12041
-userdel	2::temp 8018,12131 7827,12105 7460,12054 7663,11946 7570,11855 7223,11897 7182,11870 7173,11864 7073,11798 7163,11738 6980,11583
+userdel	2::temp 8018,12131 7827,12105 7777,12098 7460,12054 7663,11946 7570,11855 7223,11897 7182,11870 7173,11864 7073,11798 7163,11738 6980,11583
 userdel	2::temp 7460,12054 6857,11992
 EOF
      },
@@ -19997,8 +19997,8 @@ EOF
 userdel	2::inwork 34913,13893 35382,13974
 EOF
      },
-     { from  => 1329208920, # 2012-02-14 09:42
-       until => 1369989720, # 2013-05-31 10:42
+     { from  => 1343067459, # 1329208920, # 2012-02-14 09:42 -> handicap_s-orig
+       until => 1343067463, # 1369989720, # 2013-05-31 10:42
        text  => 'Hessische Str. (Mitte): Baustelle, Fahrtrichtung gesperrt (Umleitungsstrecke für die Arbeiten auf der Invalidenstr.) Richtung Oranienburger Tor, 15.02.2012 09:42 Uhr bis 31.05.2013 10:42 Uhr',
        type  => 'handicap',
        source_id => 'IM_018437',
@@ -20450,12 +20450,29 @@ EOF
      },
      { from  => 1342994400, # 2012-07-23 00:00
        until => 1348610399, # 2012-09-25 23:59
-       text  => 'Straßenbauarbeiten John-Foster-Dulles-Allee zwischen Spreeweg und Zeltenplatz, 23.7. - 25.9.2012',
+       text  => 'Straßenbauarbeiten John-Foster-Dulles-Allee zwischen Spreeweg und Zeltenplatz, 23.7. - 25.9.2012, Fahrbahn ist gesperrt, der nördliche Gehweg kann benutzt werden',
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20120719.1310.372734.html',
        data  => <<EOF,
-#: XXX Situation vor Ort anschauen, evtl. kann der handicap-Wert niedriger gemacht werden
-userdel	q4::inwork 7627,12380 7514,12387 7437,12368 7215,12295 7039,12314
+userdel	q2::inwork 7437,12368 7215,12295 7039,12314
+EOF
+     },
+     { from  => 1342945020, # 2012-07-22 10:17
+       until => 1343746800, # 2012-07-31 17:00
+       text  => 'Berliner Str. (Pankow): Baustelle, Fahrtrichtung gesperrt (bis Ende 07/2012) stadtauswärts zwischen Mühlenstr. und Elsa-Brandström-Str.',
+       type  => 'handicap',
+       source_id => 'IM_019006',
+       data  => <<EOF,
+userdel	q4::inwork; 10927,17022 10908,17142
+EOF
+     },
+     { from  => 1342940400, # 2012-07-22 09:00
+       until => 1354291200, # 2012-11-30 17:00
+       text  => 'Pichelswerderstr. (Spandau): Baustelle, Fahrtrichtung gesperrt (bis Ende 11/2012) Richtung Freiheit zwischen Ruhlebener Str. und Gewerbehof',
+       type  => 'handicap',
+       source_id => 'INKO_113869',
+       data  => <<EOF,
+userdel	q4::inwork; -2706,13291 -2699,13359 -2669,13488
 EOF
      },
     );
