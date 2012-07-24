@@ -1866,6 +1866,7 @@ abgeschlossenes Tor	3 8235,20109 8237,20098 8258,19983
 abgeschlossenes Tor	3 8258,19983 8237,20098 8235,20109
 abgeschlossenes Tor	3 8288,20128 8291,20112 8315,19993
 abgeschlossenes Tor	3 8315,19993 8291,20112 8288,20128
+tragen (3 Stufen, kann auf einer inoffiziellen Rampe umfahren werden)	0:10:-176 8029,10106
 tragen (ca. 20 Stufen, kann auf Rampen umfahren werden)	0:30:-156 -5561,12909
 tragen (wenige Stufen)	0:5:-161 -5446,13137
 tragen (4+6+7 Stufen)	0:30:48 4502,21525
@@ -2059,6 +2060,7 @@ tragen (Treppe, ca. 20 Stufen)	0:25:-12 19160,14935
 tragen (Treppe)	0:30:70 89344,-5795
 tragen, langgezogene Stufen (13 Stufen)	0:25:-168 20704,1383
 tragen (31 Stufen oder Kinderwagenrampe)	0:40:-256 13168,21706
+Drängelgitter	BNP:3:-79:trailer=10 7928,10094
 enger Eingang zum Friedrich-Ludwig-Jahn-Sportpark	BNP:30:-19:trailer=no 10583,15208
 Schranke	BNP:3:-27:trailer=10 -3441,13270
 Drängelgitter	BNP:3:4:trailer=10 -4760,13980
@@ -2095,6 +2097,8 @@ Schranke (lichte Breite ca. 90cm)	BNP:4:-82:trailer=15 11091,1529
 Tor	BNP:10:-12:trailer=15 1707,1256
 Schranke	BNP:1:-142:trailer=3 21514,11796
 Drängelgitter	BNP:3:-181:trailer=10 8357,9598
+Drängelgitter	BNP:3:-185:trailer=10 8353,9642
+Drängelgitter	BNP:3:-183:trailer=10 8350,9685
 Schranke	BNP:1:-38:trailer=3 17028,23968
 Schranke (lichte Breite ca. 85cm, weitere Umfahrung möglich)	BNP:2:-54:trailer=10 16339,22199
 Drängelgitter (lichte Breite ca. 100cm)	BNP:3:-107:trailer=10 21578,10413

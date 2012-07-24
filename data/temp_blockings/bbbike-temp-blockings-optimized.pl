@@ -1492,6 +1492,17 @@ userdel	q3::inwork 11920,14468 11642,14625
          'data' => 'userdel	q4::inwork; -2706,13291 -2699,13359 -2669,13488
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => undef,
+         'text' => 'Park am Gleisdreieck, Wege im Westpark: wegen Bauarbeiten können die Wege unpassierbar sein',
+         'from' => undef,
+         'id' => 2365,
+         'data' => 'userdel	2::inwork 8309,10368 8278,10384 8296,10438
+userdel	2::inwork 8278,10384 8263,10349 8258,10338
+userdel	2::inwork 8263,10349 8315,10347 8333,10167 8360,10133
+',
+         'type' => 'gesperrt'
        }
      
 );
