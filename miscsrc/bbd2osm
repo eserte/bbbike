@@ -24,6 +24,7 @@ use Getopt::Long;
 use Geography::Berlin_DE ();
 use Karte::Polar;
 use Karte::Standard;
+use PLZ;
 use Strassen::Core;
 use Strassen::Strasse;
 use VectorUtil qw(get_polygon_center);
@@ -179,6 +180,10 @@ my %bbbikequality_to_smoothness = (0 => 'excellent',    # Q0
 				  );
 
 my $geo = Geography::Berlin_DE->new; # currently hardcoded for Berlin
+
+my $plz = PLZ->new;
+$plz->load;
+my $street_to_citypart = $plz->make_any_hash(PLZ::FILE_NAME, PLZ::FILE_CITYPART);
 
 my($min_lat, $max_lat, $min_lon, $max_lon);
 
@@ -428,6 +433,14 @@ sub _handle_highway_like {
     }
 
     my($name, @cityparts) = Strasse::split_street_citypart($r->[Strassen::NAME]);
+    if (!@cityparts && defined $city && $city eq 'Berlin') {
+	# Find citypart from PLZ.pm
+	my $res = $street_to_citypart->{$name};
+	if ($res) {
+	    push @cityparts, keys %$res;
+	}
+    }
+
     my($ref_type, $ref_nr, $ref);
     if (defined $name) {
 	($ref_type, $ref_nr) = Strasse::parse_street_type_nr($name);
