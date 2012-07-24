@@ -12,6 +12,14 @@ summary: SRT
 #
 version=1.0
 
+## XXX base-styles don't work. I get a stack overflow exception, probably
+## while reading these styles, which are living in the mkgmap.jar but 
+## probably not searched there... XXX check for bugreports?
+#base-style=contours_ft
+##base-style=location
+#base-style=landuse
+#base-style=waters
+
 # A longer description of the style.
 description {
 The SRT style, derived from the default style.
