@@ -677,8 +677,7 @@ gemeinsamer Rad- und Gehweg	RW2; 22428,6063 22475,6151
 	RW1;RW2 19958,5950 20057,5923
 	RW1;RW1 20057,5923 20173,5892 20352,5877 20428,5841 20536,5789 20755,5750
 	RW1;RW2 20755,5750 20880,5736
-#: XXX Wurde die Benutzungspflicht aufgehoben?
-#: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/verwaltungbzbm/mdv_vii_10_reduziert.pdf?start&ts=1342111378&file=mdv_vii_10_reduziert.pdf (Aufhebung? Seite 41-42)
+#XXX del --- #: XXX Wurde die Benutzungspflicht aufgehoben? -> nein! --- #: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/verwaltungbzbm/mdv_vii_10_reduziert.pdf?start&ts=1342111378&file=mdv_vii_10_reduziert.pdf (Aufhebung? Seite 41-42)
 	RW2;RW2 20880,5736 21002,5755
 	RW2;RW2 14193,9746 14310,9692 14780,9480 14819,9462 14883,9431 15383,9191 15561,8903 15591,8848
 	RW1;RW1 13919,7707 14015,7631 14095,7568 14174,7505 14519,7301
@@ -2570,7 +2569,7 @@ asphaltierter Bordsteinradweg	RW2;RW2 18882,3750 18854,3781 18235,4449 18050,464
 	RW6;RW6 11081,804 10903,799 10718,760
 	RW6;RW6 10726,739 10539,662
 	RW1; 21053,4162 21146,4229 21174,4250 21184,4293 21206,4387 21289,4563
-	RW2; 21289,4563 21332,4655
+	RW2;RW1 21289,4563 21332,4655
 #XXX del --- (by Thomas Plischka) ---	RW;RW 9177,-569 8814,-543 8828,-273
 	RW6;RW6 6130,23062 6258,22899
 	RW6;RW6 5069,9735 5066,9645 5065,9418 5053,8979

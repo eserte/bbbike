@@ -20350,11 +20350,11 @@ EOF
      },
      { from  => 1339649580, # 2012-06-14 06:53
        until => 1354298400, # 2012-11-30 19:00
-       text  => 'Dammweg (Plänterwald): Baustelle, Straße vollständig gesperrt In beiden Richtungen zwischen Köpenicker Landstr. und Neue Krugallee, 15.06.2012 06:53 Uhr bis 30.11.2012 19:00 Uhr ',
+       text  => 'Dammweg (Plänterwald): Baustelle, Straße vollständig gesperrt In beiden Richtungen zwischen Köpenicker Landstr. und Orionstr., 15.06.2012 06:53 Uhr bis 30.11.2012 19:00 Uhr ',
        type  => 'handicap',
        source_id => 'IM_018917',
        data  => <<EOF,
-userdel	q4::inwork 15874,8345 15758,8243 15698,8191 15561,8072
+userdel	q4::inwork 15758,8243 15698,8191 15561,8072
 EOF
      },
      { from  => 1340082000, # 2012-06-19 07:00

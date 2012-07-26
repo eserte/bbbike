@@ -1392,10 +1392,10 @@ userdel	q4::inwork 10379,14963 10366,14992
        {
          'source_id' => 'IM_018917',
          'until' => 1354298400,
-         'text' => 'Dammweg (Plänterwald): Baustelle, Straße vollständig gesperrt In beiden Richtungen zwischen Köpenicker Landstr. und Neue Krugallee, 15.06.2012 06:53 Uhr bis 30.11.2012 19:00 Uhr ',
+         'text' => 'Dammweg (Plänterwald): Baustelle, Straße vollständig gesperrt In beiden Richtungen zwischen Köpenicker Landstr. und Orionstr., 15.06.2012 06:53 Uhr bis 30.11.2012 19:00 Uhr ',
          'from' => 1339649580,
          'id' => 2351,
-         'data' => 'userdel	q4::inwork 15874,8345 15758,8243 15698,8191 15561,8072
+         'data' => 'userdel	q4::inwork 15758,8243 15698,8191 15561,8072
 ',
          'type' => 'handicap'
        },
