@@ -291,3 +291,17 @@ FIXME=* {name '${FIXME}'} [0x2c resolution 17]
 ##XXX hmmm, does not work, why?
 #bbbike:trafficlightmap=green [0x40 resolution 17]
 #bbbike:tlm=green [0x40 resolution 17]
+
+######################################################################
+# from waters/lines
+
+natural=coastline [0x15 resolution 12]
+
+# SRT: using 0x1a instead of the default 0x1b (which seems to be wrong according to the typ file editor)
+route=ferry {add mkgmap:ferry=1} [0x1a road_class=3 road_speed=0 resolution 19]
+
+waterway=canal [0x1f resolution 21]
+waterway=drain [0x1f resolution 22]
+waterway=river [0x1f resolution 18]
+waterway=rapids|waterway=waterfall [0x1f resolution 22]
+waterway=stream [0x18 resolution 22]

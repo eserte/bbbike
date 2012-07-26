@@ -15,6 +15,9 @@ version=1.0
 ## XXX base-styles don't work. I get a stack overflow exception, probably
 ## while reading these styles, which are living in the mkgmap.jar but 
 ## probably not searched there... XXX check for bugreports?
+##
+## The current hack is to include landuse and waters definitions inline.
+##
 #base-style=contours_ft
 ##base-style=location
 #base-style=landuse
