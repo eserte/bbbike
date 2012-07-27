@@ -1503,6 +1503,16 @@ userdel	2::inwork 8278,10384 8263,10349 8258,10338
 userdel	2::inwork 8263,10349 8315,10347 8333,10167 8360,10133
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'INKO_113563',
+         'until' => 1343617200,
+         'text' => 'Buckower Chaussee (Marienfelde): Baustelle, Vollsperrung Höhe S-Bahnhof Buckower Chaussee, möglicherweise für Radfahrer langsam passierbar (bis Montag, 05:00)',
+         'from' => 1343332800,
+         'id' => 2366,
+         'data' => 'userdel	q4::inwork 9178,556 9158,551 9069,506
+',
+         'type' => 'handicap'
        }
      
 );
