@@ -1428,7 +1428,7 @@ Palmkernzeile: Verbundsteinpflaster	Q0 15100,9831 15142,9931 15219,10079
 Friedrich-Junge-Str.: Asphalt	Q0 15020,9875 15071,9967 15153,10112 15181,10154
 Friedrich-Junge-Str.: Verbundsteinpflaster	Q0 15181,10154 15204,10201
 Schinkestr.: Kopfsteinpflaster	Q2 11623,9841 11734,9856 11880,9874
-(Weg zwischen S-Hohenschönhausen und S-Wartenberg): asphaltierer Radweg	Q0 17557,17999 16990,18694
+(Weg zwischen S-Hohenschönhausen und S-Wartenberg): asphaltierer Radweg	Q0 17557,17999 17267,18343 17159,18375 17111,18479 17040,18571 17002,18578 16936,18658
 Tuchollaplatz: Kopfsteinpflaster	Q2 15649,10922 15560,10946
 Lichtenrader Str.: Kopfsteinpflaster	Q2 11523,8178 11532,8104 11573,7924 11609,7764 11628,7674 11654,7559 11671,7464
 Kienitzer Str.: unebenes Kopfsteinpflaster	Q2 11498,7750 11609,7764 11738,7790 11859,7815 12025,7852 12090,7865
@@ -7435,6 +7435,10 @@ Jülicher Str.: Kopfsteinpflaster	Q2 9514,16603 9498,16480 9487,16395 9475,16307 
 (Treptower Park): Asphalt	Q0 15159,8934 15223,8893 15235,8841 15335,8714 15378,8668
 (Treptower Park): Asphalt	Q0 15335,8714 15036,8728 14949,8773 14906,8822 14854,8964
 (Treptower Park): Asphalt	Q0 15181,8967 15245,8916
+#: laut osm "gravel", östliches Ende bestätigt
+(Florentinestr., Verlängerung): wassergebundene Decke	Q1- 16633,20174 16728,20189 17055,20300
+#: laut osm "asphalt", westliches Ende bestätig
+(Weg): Asphalt	Q0 17064,20455 17130,20436 17641,20141 17844,20055 18178,19972
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -15929,9 +15933,10 @@ Stechapfelweg: Asphalt	Q0- 20689,1613 20732,1702 20766,1752 20790,1797
 Wuhletalstr. - Eichenallee: gewalzter Sandweg	Q1 20728,17670 20801,17821 20804,17848
 #: corrected_by: srt
 Hagenower Ring - Am Luchgraben: Beton	Q0 17009,19104 17020,19268
-#: corrected_by: srt (gewalzter Sandweg -> (nichts --- der Sand ist dermaßen gebunden, dass es wie Asphalt aussieht))
-Hagenower Ring - Am Luchgraben	Q0 17020,19268 17015,19287 17015,19587 17055,20300 17060,20381 17079,20716
-Hagenower Ring - Am Luchgraben: gewalzter Sandweg	Q1 17079,20716 17100,20848 17274,20851
+#: corrected_by: srt (gewalzter Sandweg -> ... --- der Sand ist dermaßen gebunden, dass es wie Asphalt aussieht)
+Hagenower Ring - Am Luchgraben: Asphalt mit festem Splitbelag	Q0 17020,19268 17015,19287 17015,19587 17055,20300 17060,20381 17064,20455 17079,20716
+#: corrected_by: srt (früher andere Wegführung mit "gewalzter Sandweg")
+Hagenower Ring - Am Luchgraben: Asphalt	Q0 17079,20716 17281,20834
 #: by: ^^^
 # 
 #: by: katrin Keppler:
