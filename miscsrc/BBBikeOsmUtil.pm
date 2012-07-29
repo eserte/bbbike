@@ -446,6 +446,10 @@ sub plot_osm_files {
 	    if (exists $tag{render} && $tag{render} eq 'no') {
 		next;
 	    }
+	    if (exists $tag{ref} && $tag{ref} =~ m{^AeroWest Luftbild Berlin}) {
+		# large areas without real information
+		next;
+	    }
 
 	    my %item_args;
 	    my %line_item_args;
