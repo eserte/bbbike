@@ -40,21 +40,29 @@ EOF
 # 0.38 has no progress on the Syntax::Highlight::Universal issue.
 
 my $bbbike_html_rule;
-my $pod2html = is_in_path("mpod2html");
+my $pod2html;
+if (-e "$Config{sitebin}/mpod2html") {
+    $pod2html = "$Config{sitebin}/mpod2html";
+} else {
+    $pod2html = is_in_path("mpod2html");
+}
 ## perldoc.com seems to be dead.
 #my $htmlroot = "--htmlroot http://www.perldoc.com/cpan";
 ## This unfortunately has only the core documentation
 #my $htmlroot = "--htmlroot http://perldoc.perl.org/";
 my $htmlroot = "--htmlroot http://search.cpan.org/perldoc?";
 
-if ($pod2html) {
-    my $patched_marek_pod_html = "/usr/local/src/CPAN/new.build/MarekPodHtml-0.49";
-    if (-d $patched_marek_pod_html) {
-	$pod2html = "$^X -I$patched_marek_pod_html $patched_marek_pod_html/blib/script/mpod2html";
-    } else {
-	warn "With the patched Marek::Pod::HTML one would get links to search.cpan.org/perldoc";
-    }
-}
+## Best to use the distropref MarekPodHtml.yml from
+## git@github.com:eserte/srezic-cpan-distroprefs.git
+## to get the additional functionality...
+#if ($pod2html) {
+#    my $patched_marek_pod_html = "/usr/local/src/CPAN/new.build/MarekPodHtml-0.49";
+#    if (-d $patched_marek_pod_html) {
+#	$pod2html = "$^X -I$patched_marek_pod_html $patched_marek_pod_html/blib/script/mpod2html";
+#    } else {
+#	warn "With the patched Marek::Pod::HTML one would get links to search.cpan.org/perldoc";
+#    }
+#}
 
 use constant POD_POD   => 0;
 use constant POD_HTML  => 1;
