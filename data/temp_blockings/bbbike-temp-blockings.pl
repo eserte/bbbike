@@ -5891,7 +5891,7 @@ EOF
        text  => 'B 002 Eberswalde-Angermünde zw. Abzw. Britz und BÜ Chorin Deckenerneuerung Vollsperrung 04.10.2006-08.12.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 38845,51258 39131,51605 39815,52159 40945,53204 41075,53327 41587,53787 41654,53939 41706,54055 41777,54435 41847,54619 42231,54671 42595,54932 42742,54938 42749,55043 42452,55538 42451,55679 42981,57104 43462,57600 43581,57725
+userdel	2::inwork 38845,51258 39131,51605 39815,52159 40945,53204 41075,53327 41587,53787 41654,53939 41706,54055 41777,54435 41847,54619 42231,54671 42595,54932 42742,54938 42749,55043 42452,55538 42451,55679 42840,56726 42981,57104 43462,57600 43581,57725
 EOF
      },
      { from  => 1136674800, # 2006-01-08 00:00
@@ -19949,6 +19949,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_017746',
        data  => <<EOF,
+#: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/kastanienallee_pb.html
 #: note: am 2012-03-09 geprüft, Radfahrer konnten problemlos passieren
 #: note: am 2012-04-27 geprüft, Fahrbahn ist absperrt (nur die Straßenbahn wird durchgelassen), Radfahrer können nur den Gehweg benutzen
 #: note: am 2012-05-30 geprüft, Radfahrer konnten problemlos passieren
@@ -20298,6 +20299,7 @@ EOF
        text  => 'Oderberger Str./Schwedter Str.: Bauarbeiten, Fahrbahn ist gesperrt. Dauer der Sperrung ist unbekannt.',
        type  => 'handicap',
        data  => <<EOF,
+#: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/oderberger_strasse.html (allerdings sind die Bauzeiten schon jetzt weit überschritten)
 #: last_checked: 2012-07-16
 userdel	q4::inwork 10401,14963 10379,14963 10370,14946 10380,14911
 userdel	q4::inwork 10379,14963 10366,14992
@@ -20458,8 +20460,8 @@ userdel	q2::inwork 7437,12368 7215,12295 7039,12314
 EOF
      },
      { from  => 1342945020, # 2012-07-22 10:17
-       until => 1343746800, # 2012-07-31 17:00
-       text  => 'Berliner Str. (Pankow): Baustelle, Fahrtrichtung gesperrt (bis Ende 07/2012) stadtauswärts zwischen Mühlenstr. und Elsa-Brandström-Str.',
+       until => 1347289200, # 2012-09-10 17:00
+       text  => 'Berliner Str. (Pankow): Baustelle, Fahrtrichtung gesperrt (bis Mitte 09/12) stadtauswärts zwischen Mühlenstr. und Elsa-Brandström-Str.',
        type  => 'handicap',
        source_id => 'IM_019006',
        data  => <<EOF,

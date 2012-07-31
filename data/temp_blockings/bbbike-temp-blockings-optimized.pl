@@ -923,16 +923,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'http://www.potsdam.de/cms/beitrag/10067788/966975/',
-         'until' => 1343685600,
-         'text' => 'Für die Arbeiten an der Brücke des Friedens in Neu Fahrland wird der Lerchensteig auf der gesamten Baulänge zwischen Nedlitzer Straße und Am Golfplatz voll gesperrt . Der Zeitraum für diese Arbeiten ist vom 09.08.2010 bis ca. 30.07.2012 geplant ',
-         'from' => 1281218400,
-         'id' => 2124,
-         'data' => 'userdel	q4::inwork -13387,2987 -13581,3075 -13840,2956 -14382,3066
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1003,16 +994,7 @@ userdel	q4::inwork 425,8766 490,8716
        },
        undef,
        undef,
-       {
-         'source_id' => 'LS/O-SG33-F/11/022',
-         'until' => 1343685600,
-         'text' => 'Gusow-Platkow: B167: Grundhafter Ausbau einschließlich RW - Kanal Erneuerung Durchlass und Brücke Ortslage Gusow halbseitige Sperrungen durch Suchschachtungen geplante Vollsperrung ab 21.03.11, 21.02.2011 bis 30.07.2012 ',
-         'from' => 1300575600,
-         'id' => 2185,
-         'data' => 'userdel	2::inwork 74810,19707 74512,19946
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1192,7 +1174,8 @@ userdel	2::inwork 19750,11730 19827,11686 19881,11591
          'text' => 'Kastanienallee (Prenzlauer Berg): Bauarbeiten zwischen Oderberger Str. und Schönhauser Allee, Fahrbahn manchmal gesperrt, bis 31.08.2012 ',
          'from' => 1314604800,
          'id' => 2308,
-         'data' => '#: note: am 2012-03-09 geprüft, Radfahrer konnten problemlos passieren
+         'data' => '#: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/kastanienallee_pb.html
+#: note: am 2012-03-09 geprüft, Radfahrer konnten problemlos passieren
 #: note: am 2012-04-27 geprüft, Fahrbahn ist absperrt (nur die Straßenbahn wird durchgelassen), Radfahrer können nur den Gehweg benutzen
 #: note: am 2012-05-30 geprüft, Radfahrer konnten problemlos passieren
 #: note: am 2012-06-12 geprüft, Fahrbahn ist absperrt (nur die Straßenbahn wird durchgelassen), Radfahrer können nur den Gehweg benutzen
@@ -1359,7 +1342,8 @@ userdel	q3::inwork; 10423,15698 10427,15699 10564,15721 10713,15746 10953,15787 
          'text' => 'Oderberger Str./Schwedter Str.: Bauarbeiten, Fahrbahn ist gesperrt. Dauer der Sperrung ist unbekannt.',
          'from' => undef,
          'id' => 2345,
-         'data' => '#: last_checked: 2012-07-16
+         'data' => '#: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/oderberger_strasse.html (allerdings sind die Bauzeiten schon jetzt weit überschritten)
+#: last_checked: 2012-07-16
 userdel	q4::inwork 10401,14963 10379,14963 10370,14946 10380,14911
 userdel	q4::inwork 10379,14963 10366,14992
 ',
@@ -1430,16 +1414,7 @@ userdel	q4::inwork 10379,14963 10366,14992
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'http://www.s-bahn-berlin.de/aktuell/2012/144_s8.htm',
-         'until' => 1343685600,
-         'text' => 'Krontaler Str.: mögliche Sperrungen wegen Bauarbeiten an den Bahnbrücken',
-         'from' => undef,
-         'id' => 2356,
-         'data' => 'userdel	2::inwork 13429,22943 13521,23057
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1475,8 +1450,8 @@ userdel	q3::inwork 11920,14468 11642,14625
        },
        {
          'source_id' => 'IM_019006',
-         'until' => 1343746800,
-         'text' => 'Berliner Str. (Pankow): Baustelle, Fahrtrichtung gesperrt (bis Ende 07/2012) stadtauswärts zwischen Mühlenstr. und Elsa-Brandström-Str.',
+         'until' => 1347289200,
+         'text' => 'Berliner Str. (Pankow): Baustelle, Fahrtrichtung gesperrt (bis Mitte 09/12) stadtauswärts zwischen Mühlenstr. und Elsa-Brandström-Str.',
          'from' => 1342945020,
          'id' => 2363,
          'data' => 'userdel	q4::inwork; 10927,17022 10908,17142
@@ -1503,16 +1478,6 @@ userdel	2::inwork 8278,10384 8263,10349 8258,10338
 userdel	2::inwork 8263,10349 8315,10347 8333,10167 8360,10133
 ',
          'type' => 'gesperrt'
-       },
-       {
-         'source_id' => 'INKO_113563',
-         'until' => 1343617200,
-         'text' => 'Buckower Chaussee (Marienfelde): Baustelle, Vollsperrung Höhe S-Bahnhof Buckower Chaussee, möglicherweise für Radfahrer langsam passierbar (bis Montag, 05:00)',
-         'from' => 1343332800,
-         'id' => 2366,
-         'data' => 'userdel	q4::inwork 9178,556 9158,551 9069,506
-',
-         'type' => 'handicap'
        }
      
 );

@@ -92,6 +92,10 @@ Fahrradstraße in der Lauenburger Str.	?::projected 5870,4992 5905,5088 5927,5182
 #: section ignorieren vvv
 #: section Straßen in Bau und Planung vvv
 # 
+#: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/stra__enbauliste_stand_2012_06_21.pdf?start&ts=1340354416&file=stra__enbauliste_stand_2012_06_21.pdf
+#: next_check: 2012-09-05
+Ordensmeisterstr.: werden die Radspuren noch weiter geführt?	? 10339,5948 10254,5921 10027,5868 9796,5790
+# 
 #: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20120727.1045.372992.html
 #: next_check: 2012-11-01 (wird noch dieses Jahr realisiert)
 Kolonie Frühauf: Sanierung der Radfahrverbindung. Welchen Belag wird der Weg danach haben?	?::inwork 3645,19921 4076,20268 4088,20301
@@ -1367,6 +1371,7 @@ Melzow - Gramzow, Autobahnbrücke: wegen Bauarbeiten gesperrt, Qualität könnte mä
 Melzow - Meichow: Qualität (zumindest am westlichen Ende asphaltiert)?	? 43567,87443 44323,87544 45024,87474 45751,87363 46178,87310 46360,87391 46483,87364 47128,87233 47671,87099 48195,87137 48310,87199
 #: note: zumindest am östlichen und westlichen Ende Feldweg
 Wolletz - Kerkow (südliche Strecke): Qualität?	? 44673,70082 45614,70316 45652,70216 46917,69881 47172,70534
+#: XXX laut osm unterschiedliche Qualität: sand, cobblestone, unpaved
 Britz - Chorin: Qualität?	? 37225,54056 38412,55353 38528,55402 38516,55481 38774,55675 38987,55637 39726,55645 40450,55770
 Liepe - Chorin: Qualität?	? 46938,50961 46757,50998 46391,51303
 #: XXX laut osm track, teilweise gravel, teilweise cobblestone, teilweise nicht klassifiziert
@@ -1703,6 +1708,7 @@ Althüttendorf - Joachimsthal: Qualität?	? 36730,62544 36450,62349 36188,62343 36
 Nördlich des Grimnitzsees: Qualität?	? 33689,65780 34018,65700 34347,65737 35176,65603 35786,65517 36377,65481 36681,65304 36864,64841 37193,64609 37266,64603 37608,64317 38095,64055 38327,63933
 Neugrimnitz - Ziethen: Qualität?	? 38272,63836 38577,63641 38759,63647 39131,63537 39637,63244 39741,63220 39832,63263
 Neugrimnitz - B198: Qualität?	? 39637,63244 39576,63074 39521,62861 39503,62647 39375,62148 39180,61605 39156,61459 39003,61246
+#: XXX: Laut osm unterschiedliche Qualität: unpaved, cobblestone, paved
 B2 - Chorin: Qualität?	? 41847,54619 41806,54725 41636,54890 41538,55140 41301,55146 41093,55310 41173,55516
 Selchow - Kiekebusch: Qualität zwischen Kreuzung Diepensee-Rotberg und Kreuzung Dahlewitz/Zeuthen (wahrscheinlich Plattenweg)	? 18764,-5531 19915,-6315
 Prieroser Str.: Qualität?	? 28540,-19744 28842,-19704 29515,-19702
