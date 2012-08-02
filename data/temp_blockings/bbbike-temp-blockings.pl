@@ -7409,7 +7409,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_004990',
        data  => <<EOF,
-userdel	2::inwork 22428,6063 22475,6151
+userdel	2::inwork 22428,6063 22467,6135
 EOF
      },
      { from  => 1174518000, # 2007-03-22 00:00
@@ -7484,7 +7484,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_004990',
        data  => <<EOF,
-userdel	2::inwork 22428,6063 22475,6151
+userdel	2::inwork 22428,6063 22467,6135
 EOF
      },
      { from  => 1176328800, # 2007-04-12 00:00
@@ -15356,6 +15356,7 @@ EOF
        data  => <<EOF,
 #: note: Sperrung bestätigt von Stefan (s.sms): vvv
 #: note: genauere Uhrzeit von Dieter Heimann
+#: confirmed_by: um 20:30 Uhr steht man vor einem geschlossenen Tor, zumindest an der Nordostseite (2012-08)
 Am Wuhleufer, Innovationspark Köpenick: Privatstraße, nachts ab 20 Uhr und am Wochenende gesperrt	2::night:weekend 21683,6946 21498,7153 21475,7500 21497,7597 21546,7635
 Straße am Wald, Innovationspark Köpenick: Privatstraße, nachts ab 20 Uhr und am Wochenende gesperrt	2::night:weekend 21475,7500 21341,7487 21025,7349
 #: note: ^^^
@@ -19332,12 +19333,12 @@ EOF
        text  => 'Bombenfund am Bahnhof Köpenick',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 22364,6158 22475,6151 22539,6258
-userdel	2::inwork 22358,5918 22428,6063 22475,6151 22603,6141
+userdel	2::inwork 22364,6158 22467,6135 22539,6258
+userdel	2::inwork 22358,5918 22428,6063 22467,6135 22603,6141
 userdel	2::inwork 22478,6041 22544,6037
 userdel	2::inwork 22324,6397 22364,6158 22283,6174
 userdel	2::inwork 22513,5747 22531,5871 22358,5918 22294,5777
-userdel	2::inwork 22777,6157 22603,6141
+userdel	2::inwork 22777,6151 22603,6141
 userdel	2::inwork 22608,5732 22631,5866 22531,5871 22539,5956 22730,5944
 userdel	2::inwork 22639,6062 22544,6037 22539,5956
 EOF

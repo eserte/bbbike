@@ -177,9 +177,9 @@ Kiefholzstr.: Kopfsteinpflaster	Q2 13601,9572 13455,9711 13251,9829
 Hirschberger Str.: Kopfsteinpflaster	Q2+ 14988,11130 15012,11148 15099,11113
 Krummhübler Str.: Kopfsteinpflaster	Q2 15060,11006 15099,11113
 Marzahner Chaussee: Kopfsteinpflaster	Q2- 18559,12105 18422,11837 18380,11747
-Stellingdamm: schlechtes Kopfsteinpflaster auf der Fahrbahn	Q3; 22957,6174 22777,6157 22603,6141 22475,6151
-Stellingdamm: schlechtes Kopfsteinpflaster auf der Fahrbahn, aber Radweg existiert	Q1; 22475,6151 22603,6141 22777,6157 22957,6174
-Stellingdamm: Asphalt	Q0 22957,6174 23011,6181 23131,6237 23222,6276
+Stellingdamm: schlechtes Kopfsteinpflaster auf der Fahrbahn	Q3; 22857,6155 22777,6151 22603,6141 22467,6135
+Stellingdamm: schlechtes Kopfsteinpflaster auf der Fahrbahn, aber Radweg existiert	Q1; 22467,6135 22603,6141 22777,6151 22857,6155
+Stellingdamm: Asphalt	Q0 22857,6155 23011,6181 23131,6237 23222,6276
 Planufer: Kopfsteinpflaster, OK	Q1- 11543,10015 11507,10004 11485,10029
 Planufer: Kopfsteinpflaster, OK	Q1- 11177,9935 10929,9897 10914,9887
 Admiralstr.: Kopfsteinpflaster	Q2+ 11177,9935 11199,9993 11244,10111
@@ -531,7 +531,8 @@ Berliner Str.: außen Kopfsteinpflaster, Straßenbahntrasse asphaltiert	Q1- 12736,
 #: corrected_by: Hartmut Schröder (Q2 -> Q3)
 #: confirmed_by: srt
 Handjerystr.: schlechtes Kopfsteinpflaster	Q3 20967,3343 20906,3433 20833,3519 20683,3693 20546,3865
-(An der Müggelspree): fester Waldweg	Q1 23441,4956 23461,5054 23620,5096 23776,5040 23852,5036 23982,5030 24233,4878 24398,4842 24834,4541 25030,4421 25131,4400 25200,4420 25315,4474 25403,4480 25429,4493 25479,4540 25565,4549
+(An der Müggelspree - Salvador-Allende-Str.): Asphalt	Q0 23444,4942 23461,4948 23461,5013 23461,5054
+(An der Müggelspree): fester Waldweg	Q1 23461,5054 23620,5096 23776,5040 23852,5036 23962,5031 23982,5030 24233,4878 24398,4842 24834,4541 25030,4421 25131,4400 25200,4420 25315,4474 25403,4480 25429,4493 25479,4540 25565,4549
 (Zum Spreetunnel): fester Waldweg, Stufen!	Q2+ 25385,4414 25403,4415 25477,4419 25565,4549
 Görlitzer Park: teils fester sandiger Weg	Q1- 12671,10042 12686,10045 12690,10062
 Görlitzer Park: teils fester sandiger Weg	Q1- 12761,10195 12769,10211 12774,10222
@@ -2175,8 +2176,8 @@ Stavangerstr.: Beton	Q0 10620,16497 10632,16644
 Malmöer Str.: Asphalt	Q0 10197,16528 10225,16436
 (Lauterberger Str. - Andreasberger Str.): Kleinsteinpflaster	Q1 12053,6042 12154,6063
 #: corrected_by: srt (Asphalt Q0 -> Beton Q1)
-Massower Str.: Beton	Q1 17734,11408 17847,11412 18005,11451 18178,11504
-Massower Str.: Beton	Q1 17847,11412 17864,11371 17964,11375 17967,11342 18016,11343
+Massower Str.: Beton	Q1 17734,11408 17861,11421 18005,11451 18178,11504
+Massower Str.: Beton	Q1 17861,11421 17864,11371 17964,11375 17967,11342 18016,11343
 Kurze Str. (Friedrichsfelde): Beton	Q1 18027,11244 18016,11343 18005,11451
 Ribbecker Str.: Beton	Q0- 17612,11541 17609,11467
 Ribbecker Str.: Asphalt	Q0 17609,11467 17588,11234
@@ -2465,7 +2466,7 @@ An der Karlshorster Heide: Kopfsteinpflaster	Q2 19050,7931 19031,7974
 An der Karlshorster Heide: Asphalt	Q0 19031,7974 19020,8007 19036,8041 19068,8082
 Unterfeld: Verbundsteinpflaster	Q1+ 19036,8041 18949,8107
 Fritz-Kortner-Str.: Asphalt	Q0 19258,7943 19303,8005 19334,8046
-Birkenrevier: Verbundsteinpflaster, etwas wellig	Q1 19303,8005 19176,8098
+Am Birkenrevier: Verbundsteinpflaster	Q1+ 19303,8005 19176,8098
 Rohrlake: Verbundsteinpflaster	Q1+ 19168,7942 19109,7983 19061,7904
 Oskarstr.: Asphalt mit Schäden	Q0- 17775,7874 17762,7931 17803,8079
 Gleyeweg: Asphalt	Q0 17762,7931 17683,7958 17651,7973 17613,7989 17529,8073 17532,8125 17565,8197 17597,8258
@@ -3460,7 +3461,7 @@ Brückenstr. (Rahnsdorf): schlechtes Kopfsteinpflaster, teilweise Banketten vorha
 Schwarzmeerstr. [Wohngebiet]: asphaltiert	Q0 17708,10768 17751,10904
 Schwarzmeerstr. [Wohngebiet]: Beton	Q1 17751,10904 17838,10878 17855,10873
 Am Lindenplatz: Verbundsteinpflaster	Q1 17838,10878 17856,10961
-Bahrendorfer Str.: Beton	Q0- 21707,7661 21736,7489 21771,7466 21865,7403 21956,7428
+Bahrendorfer Str.: Beton	Q0- 21696,7674 21736,7489 21771,7466 21865,7403 21956,7428
 Außenweg: unbefestigte Straße, etwas holprig, Schotter	Q2+ -7783,8524 -7457,8282 -7431,8255
 Außenweg: Asphalt	Q0 -7431,8255 -7425,8153 -7460,7826 -7418,7842
 Hafeldweg: Asphalt	Q0- -7330,7878 -7357,8112 -7359,8293
@@ -3955,7 +3956,7 @@ Weitzgründer Str.: Asphalt	Q0 23643,9330 23596,9220 23541,9091 23469,8929
 Herderstr. (Mahlsdorf): Asphalt	Q0 23633,8872 23569,8775 23482,8636
 Bergedorfer Str.: Asphalt	Q0 23627,8543 23511,8617 23482,8636 23392,8694 23291,8758 23182,8828 23082,8892 22988,8952 22886,9017 22699,9137 22596,9202 22449,9296 22295,9395 22200,9430 22103,9465
 Bergedorfer Str.: Asphalt	Q0 21806,9550 21695,9577 21635,9592
-Kleinschewskystr.: Asphalt	Q0 22960,7215 22717,7276
+Kleinschewskystr.: Asphalt	Q0 22960,7215 22717,7276 22528,7314 22303,7361 22172,7384 21956,7428
 Keplerstr. (Oberschöneweide): Asphalt	Q0 19161,6291 19259,6133 19283,6123
 Kottmeierstr.: Asphalt	Q0 18623,6523 18801,6471 19118,6248
 #: by: http://www.flickr.com/photos/aotw/4883886090/sizes/l/in/pool-39413187@N00/
@@ -6922,7 +6923,7 @@ Ruhwaldweg: Kopfsteinpflaster	Q2 1175,13513 1110,13462 1018,13446
 Herbert-Lewin-Platz: Kleinsteinpflaster	Q1 5627,12105 5585,12009 5620,11997 5684,11997 5712,12033
 Herbert-Lewin-Platz: Kleinsteinpflaster	Q1 5658,12082 5645,12058 5620,11997
 (Radweg am Müggelsee - Strandschloßweg): Waldweg	Q1 25232,3757 25224,3789 25193,3844
-(Zufahrt zur Trabrennbahn): wassergebundene Decke	Q1 18709,8423 18748,8363 18751,8300 18741,8220
+(Zufahrt zur Trabrennbahn): wassergebundene Decke, teilweise holprig	Q1- 18709,8423 18748,8363 18751,8300 18741,8220 18666,8085
 (Weg an der Trabrennbahn): wassergebundene Decke	Q1 18751,8300 18799,8250 18839,8165 18915,8079 19014,7875 19099,7761
 (Unterfeld - Weg an der Trabrennbahn): wassergebundene Decke	Q1 18949,8107 18915,8079
 (Weg an der Trabrennbahn - Lisbeth-Stern-Str.): wassergebundene Decke	Q1 19099,7761 19114,7781 19229,7963
@@ -7442,6 +7443,10 @@ Jülicher Str.: Kopfsteinpflaster	Q2 9514,16603 9498,16480 9487,16395 9475,16307 
 (Florentinestr., Verlängerung): wassergebundene Decke	Q1- 16633,20174 16728,20189 17055,20300
 #: laut osm "asphalt", westliches Ende bestätig
 (Weg): Asphalt	Q0 17064,20455 17130,20436 17641,20141 17844,20055 18178,19972
+(Azaleenstr. - Uferweg): unbefestigte Straße	Q2+ 23874,4929 23901,4982 23962,5031
+(Azaleenstr. - Uferweg): unbefestigte Straße	Q2+ 23850,4933 23852,5036
+Däumlingsweg: Kopfsteinpflaster	Q2- 23593,6663 23598,6718
+Däumlingsweg: unbefestigter Weg	Q2 23598,6718 23615,6884
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -10088,7 +10093,8 @@ Thurgauer Str.: kleinteiliges Kopfsteinpflaster	Q1 7227,18010 7147,18149 7108,18
 #: by: Claudia Skowronnek: vvv
 #: corrected_by: srt (laut Claudia "vermutlich Beton", but Asphalt)
 Römerweg: Asphalt	Q0 18800,9743 18687,9736 18685,9719 18452,9755 18421,9764
-Aristotelessteig: guter Beton	Q0 18715,9589 18660,9599 18435,9639 18452,9755
+#: corrected_by: srt (guter Beton -> ...)
+Aristotelessteig: Asphalt, etwas wellig	Q1+ 18715,9589 18660,9599 18435,9639 18452,9755
 #: corrected_by: srt (früher war hier "sandig", laut Claudia wurde 2005-06 gebaut)
 Cäsarstr.: Asphalt	Q0 18685,9719 18660,9599 18621,9404
 #: corrected_by: srt (Q3 -> Q2, added "fester")
@@ -10836,8 +10842,8 @@ Lassaner Str.: Betonplatten, gut verfugt	Q1 22808,10591 22876,10760 22947,10998
 Einbecker Str.: sehr guter Asphalt	Q0 17161,11681 17208,11658 17275,11626 17341,11595 17609,11467 17734,11408
 # 
 #: by: Kathrin (kwinter):
-#: note: Daniel hat nicht differenziert, Kathrin schon:
-Einbecker Str.: geflickter Asphalt	Q1 16958,11778 16977,11769 17161,11681
+#: corrected_by: srt (geflickter Asphalt, Q1 -> ...)
+Einbecker Str.: Asphalt (Fahrbahn und Radweg)	Q0 16958,11778 16977,11769 17020,11748 17161,11681
 # 
 #: by: Anja:
 Cyanenstr.: schlechter Asphalt	Q2 14159,14495 14124,14227
@@ -11287,7 +11293,7 @@ Holzmannstr.: Asphalt	Q0 11502,6194 11522,6160
 #: by: ^^^
 # 
 #: by: Bernd (webworld):
-#: confirmed_by: srt (südlicher Abschnitt)
+#: confirmed_by: srt
 Filehner Str.: Asphalt	Q0 22395,6821 22428,6874 22448,6957 22474,7065 22501,7192 22528,7314 22554,7437
 # 
 #: by: Olaf (hoehne):
@@ -11782,6 +11788,7 @@ Minheimer Str.: Kleinpflastersteine	Q2 2123,25606 2047,25811
 #: by: ^^^
 # 
 #: by: Peter Koethe:
+#: confirmed_by: srt (zumindest an der Kleinschewskystr.)
 Glasberger Str.: guter Asphalt	Q0 22132,7148 22172,7384 22190,7475 22244,7609 22279,7672
 # 
 #: by: sven (wesuma):
@@ -19282,9 +19289,13 @@ Fichtengrund: Kopfsteinpflaster	Q2 24922,-3063 24918,-3050 24882,-2945 24872,-28
 Ernst-Ludwig-Heim-Str.: guter Asphalt	Q0 16682,24758 16613,24643 16487,24721
 # 
 #: by: Joachim Wolf vvv
-Azaleenstr.: Schotter, mäßig ausgefahren, Belag mäßig bis gut	Q2+ 23869,4733 23874,4924 23858,4927 23796,4929
+#: corrected_by: srt (Schotter -> ...)
+Azaleenstr.: Beton	Q1+ 23869,4733 23872,4866
+Azaleenstr.: Schotter, mäßig ausgefahren, Belag mäßig bis gut	Q2+ 23872,4866 23874,4929 23850,4933 23797,4933
 #: corrected_by: srt (guter Beton -> Versatz)
-Birkenstr. (Köpenick): Beton, einige Platten versetzt	Q1 24166,4568 24068,4602 23980,4633 23934,4661 23947,4673 23869,4733
+Birkenstr. (Köpenick): Beton, einige Platten versetzt	Q1 24166,4568 24068,4602 23980,4633 23934,4661 23947,4673
+#: corrected_by: srt (guter Beton -> Kopfsteinpflaster)
+Birkenstr. (Köpenick): Kopfsteinpflaster	Q2 23947,4673 23869,4733
 #: by: ^^^
 # 
 #: by: ruth heinrich:
@@ -19811,7 +19822,7 @@ Adolfstr.: Kopfsteinpflaster	Q2 5003,5183 5145,5095 5216,5047
 Kurze Str. (Steglitz): Kopfsteinpflaster	Q2 5145,5095 5102,5031 5050,4959 4985,4884
 Elcknerplatz: Asphalt	Q0 22428,6063 22478,6041
 Elcknerplatz: Kopfsteinpflaster	Q2 22478,6041 22544,6037 22639,6062
-Hirtestr.: Kopfsteinpflaster	Q2 22777,6157 22763,6398 22753,6437
+Hirtestr.: Kopfsteinpflaster	Q2 22777,6151 22763,6398 22753,6437
 Hirtestr.: Asphalt	Q0 22727,6487 22682,6495
 Parrisiusstr.: Kopfsteinpflaster	Q2 22358,5918 22531,5871
 Parrisiusstr.: schlechtes Kopfsteinpflaster	Q3 22531,5871 22631,5866 22766,5840 22819,5812 22882,5834

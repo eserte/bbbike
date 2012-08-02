@@ -55,28 +55,19 @@ Joachim-Friedrich-Str.	?::projected 3067,9592 3069,9622 3083,9796 3092,9886 3108
 #: next_check: 2013-01-01
 Germanenstr. (oder nur das kleine Stück bis Waldsteg?)	?::projected 8406,19081 8359,19162 8304,19475 8268,19558 8234,19634 8233,19695 8231,19806 8242,19869 8234,19936
 #: by: ^^^
-#
-#XXX del --- done --- #: by: Tagesspiegel vom 2009-04-12, soll 2009 realisiert werden --- #: corrected_by: MoPo 2009-08-01, soll 2010 realisiert werden --- # auch im Tsp vom 2010-03-26 erwähnt --- #: next_check: 2012-05-31 --- #: last_checked: 2011-06-12 --- #: XXX Markierungsarbeiten bis 2012-05-31 zwischen Afrikanische Str. und Seestr. --- Müllerstr.	?::projected 6781,16026 6712,16087 6659,16133 6608,16180 6450,16325 6444,16331 6433,16342 6311,16457 6208,16546 6103,16635 6038,16694 6019,16712 5937,16784 5900,16817 5777,16924 5589,17081 5486,17169
-#
+# 
 #: by: Tagesspiegel vom 2009-04-12, soll 2009 realisiert werden
 #: corrected_by: MoPo 2009-08-01, soll 2010 realisiert werden
-#: last_checked: 2012-07-26
+#: last_checked: 2012-08-01
 #: next_check: 2012-10-01
 Annenstr./Heinrich-Heine-Platz	?::projected 11349,11227 11249,11268 11091,11379 11052,11414 11039,11425 10915,11535 10819,11664
-#
-# XXX del --- : by: Tagesspiegel vom 2009-04-12, soll 2009 realisiert werden --- #: by: MoPo 2009-08-01, soll 2009 realisiert werden --- #: last_checked: 2009-11-16 --- Kniprodestr.	?::projected 13838,15113 13749,15013 13654,14905 13649,14899 13438,14675
-#
+# 
 #: by: Tagesspiegel vom 2009-04-12, soll 2009 realisiert werden
 #: corrected_by: MoPo 2009-08-01, soll 2010 realisiert werden
 #: last_checked: 2010-03-18
 #: by: http://www.berlin.de/ba-spandau/presse/archiv/20100803.1545.305011.html
 #: next_check: 2010-12-01
 Streitstr. (werden die vorhandenen Bordsteinradwege ersetzt)?	?::projected -3040,16246 -3050,16429 -3046,16548 -3043,16601 -3031,16807 -3023,16925 -3018,16974 -3017,16984 -3009,17090
-#
-#XXX del --- #: by: http://www.berlin.de/ba-pankow/presse/archiv/20081128.1050.115446.html --- #: last_checked: 2010-09-08 (Ricardo März) --- #: next_check: 2010-12-01 --- Blankenburger Str. erhält beiderseitig Radfahrstreifen zwischen Dietzgen- und Siegfriedstr.	?::inwork 10257,19542 10377,19565 10439,19576 10742,19632
-#XXX del --- #: by: http://www.berlin.de/ba-pankow/presse/archiv/20090921.0650.139568.html --- #: next_check: 2011-10-01 --- #: last_checked: 2011-03-13 --- #XXX del --- Wollankstr.: Angebotsstreifen werden bis Herbst 2011 eingerichtet	?::projected 9549,17625 9590,17662 9624,17693 9663,17734 9727,17804 --- Wollankstr.: Angebotsstreifen werden bis Herbst 2011 eingerichtet	?::projected 9727,17804 9791,17877 9832,17925 9870,17971 9978,18104 10027,18165 10089,18180
-#XXX del --- #: by: Tagesspiegel vom 2010-03-31 --- #: last_checked: 2011-08-19 --- #: next_check: 2011-11-25 --- Rüdersdorfer Str. bekommt Radspuren	?::projected 13066,11854 12891,12008
-# XXX --- #: by: Tagesspiegel vom 2010-03-26 --- #: last_checked: 2012-01-13 --- #: next_check: 2012-02-03 --- #: XXX Markierungsarbeiten sind weitgehend fertig, sogar Radwegeschilder existieren --- die Autos parken trotzdem drauf! --- mittlerweile (2011-03-07) fast alles freigeräumt, aber noch immer einige parkende Autos --- Lindenstr.: Markierungsarbeiten für Radspuren haben begonnen	?::inwork 9805,10791 9829,10830 9935,11067 9973,11150 10020,11262
 # 
 #: last_checked: 2012-06-09 (an der Bergstr.)
 #: next_check: 2013-01-01
@@ -364,9 +355,8 @@ Planstraße im Block 902: neue Straße wird gebaut, wo genau, wann? Wird der Straß
 # 
 #XXX del --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/05re.pdf/file --- #: last_checked: 2011-02-27 --- #: next_check: 2011-05-14 --- Franz-Mett-Str.: Einfahrt wird Richtung Süden verlegt, prüfen!	?::inwork 18417,10738 18395,10732 18368,10763
 # 
-#: last_checked: 2012-01-07
-#: next_check: 2012-02-15
-#: XXX In der Nähe: Auch Sperrung der Alfred-Kowalke-Str., aber Anliegerverkehr ist hier möglich (bis Ende September 2011)
+#: last_checked: 2012-08-01
+#: next_check: 2012-10-15
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110627.1115.349371.html
 #: XXX zurzeit (2012-01) ist die Farbahn in beiden Richtungen für Radfahrer *verboten*
 Am Tierpark: nach den Bauarbeiten vielleicht Radwege/-spuren?	?::inwork 18220,11710 18228,11656 18268,11391 18286,11275 18343,11041 18417,10738 18446,10620
@@ -659,11 +649,11 @@ Vulkanstr./Landsberger Allee - Große Leegestr.: hier existiert wohl eine Radwegf
 Alt-Lankwitz: parallele Fahrbahn, Qualität, genaue Lage?	? 7412,3484 7419,3500 7249,3598 7057,3713
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120207.1005.365838.html vvv
-#: last_checked: 2012-07-26
-#: next_check: 2012-09-15
+#: last_checked: 2012-08-01
+#: next_check: 2012-11-01
 Hirschberger/Schreiberhauer: wird es hier einen Zebrastreifen geben?	? 15188,11090 15212,11053
-#: last_checked: 2012-03-03
-#: next_check: 2012-05-01
+#: last_checked: 2012-08-01
+#: next_check: 2012-11-01
 Weitlingstr.: für 2012 geplanter Zebrastreifen? Wo genau?	?::projected 16705,11526 16734,11416
 Degnerstr.: für 2012 geplanter Zebrastreifen? Wo genau?	?::projected 16537,15884 16535,15764
 Dorfstr.: für 2012 geplanter Zebrastreifen? Wo genau?	?::projected 19285,18489 19429,18368
@@ -3233,7 +3223,6 @@ Lanker Str.: Qualität im nördlichen Abschnitt?	? 15347,23211 15387,23310 15428,2
 #: XXX laut osm Verbundsteinpflaster
 Schwarzer Weg (Großziethen): Qualität?	? 13215,-570 12804,-735
 Zugang zum Tegeler Weg: Zugang möglich? Überquerung der Straße möglich?	? 2817,14003 2858,14045
-Däumlingsweg: Qualität?	? 23593,6663 23615,6884
 # XXX bei osm nicht aufzufinden, aber wahrscheinlich sowieso nur ein Weg in einer KGA: Frau-Holle-Weg|Britz|12349|11460,2191
 #: XXX: früher teilweise mäßiger, teilweise schlechter Belag (Q3)
 nach Garzin und Garzau: Qualität?	? 53884,16566 53683,16474 53019,16358 52848,16456 52574,16529 51697,16718 51715,16919 49700,16565
@@ -3396,6 +3385,8 @@ Weg in der Cité Foch - Place Molière: Qualität? Gibt es tatsächlich eine Verbind
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/26re.pdf/file?y=2012
 #: XXX fehlt in Berlin.coords.data (OT Karlshorst, PLZ?)
 #: XXX Privatstraße
+#: last_checked: 2012-08-01
+#: next_check: 2012-12-15
 Sokratesweg: Qualität? Ist die Straße bereits fertiggestellt? Genaue Lage?	?::inwork 18538,9571 18520,9442
 # 
 #:
