@@ -18984,12 +18984,12 @@ EOF
 userdel	1::temp 1574,11379 1625,11380 1834,11408 1960,11426 2109,11441
 EOF
      },
-     { from  => 1312581600, # 1186214400, # 2007-08-04 10:00 zweiter Termin im Sommer # PERIODISCH!
-       until => 1312754400, # 1186344000, # 2007-08-05 22:00
-       text  => 'Open Air Gallery am 7. August 2011 auf der Oberbaumbrücke ',
+     { from  => 1344031200, # 2012-08-04 00:00 zweiter Termin im Sommer # PERIODISCH!
+       until => 1344211200, # 2012-08-06 02:00
+       text  => 'Open Air Gallery am 5. August 2012 auf der Oberbaumbrücke ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::temp 13178,10623 13206,10651 13305,10789 13332,10832
+userdel	q4::temp 13178,10623 13206,10651 13305,10789 13332,10832
 EOF
      },
      { from  => 1335477600, # PERIODISCH!
@@ -19520,11 +19520,11 @@ EOF
 userdel	2::inwork 3079,19045 2993,18962
 EOF
      },
-     { from  => 1312430400, # 2011-08-04 06:00
-       until => 1312776000, # 2011-08-08 06:00
-       text  => 'Lebuser Str., Koppenstr. und Str. der Pariser Kommune (Friedrichshain): Veranstaltung, Straßen nördlich der Karl-Marx-Str. vollständig gesperrt, 05.08.2011 06:00 Uhr bis 08.08.2011 06:00 Uhr ',
+     { from  => 1343894400, # 2012-08-02 10:00
+       until => 1344211200, # 2012-08-06 02:00
+       text  => 'Lebuser Str., Koppenstr. und Str. der Pariser Kommune (Friedrichshain): Veranstaltung, Straßen nördlich der Karl-Marx-Str. vollständig gesperrt (bis 06.08.12, 02:00)',
        type  => 'gesperrt',
-       source_id => 'IM_017646',
+       source_id => 'IM_019026',
        data  => <<EOF,
 userdel	2::temp 12360,12505 12364,12589
 userdel	2::temp 12891,12549 12869,12425

@@ -1025,6 +1025,15 @@ userdel	q4::inwork 425,8766 490,8716
        undef,
        undef,
        undef,
+       {
+         'until' => 1344211200,
+         'text' => 'Open Air Gallery am 5. August 2012 auf der Oberbaumbrücke ',
+         'from' => 1344031200,
+         'id' => 2206,
+         'data' => 'userdel	q4::temp 13178,10623 13206,10651 13305,10789 13332,10832
+',
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
@@ -1080,8 +1089,18 @@ userdel	q4::inwork 425,8766 490,8716
        undef,
        undef,
        undef,
-       undef,
-       undef,
+       {
+         'source_id' => 'IM_019026',
+         'until' => 1344211200,
+         'text' => 'Lebuser Str., Koppenstr. und Str. der Pariser Kommune (Friedrichshain): Veranstaltung, Straßen nördlich der Karl-Marx-Str. vollständig gesperrt (bis 06.08.12, 02:00)',
+         'from' => 1343894400,
+         'id' => 2262,
+         'data' => 'userdel	2::temp 12360,12505 12364,12589
+userdel	2::temp 12891,12549 12869,12425
+userdel	2::temp 12635,12629 12606,12471
+',
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
