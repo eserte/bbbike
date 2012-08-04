@@ -83,6 +83,9 @@ Kreisverkehr	Roundabout -11793,104246
 Kreisverkehr	Roundabout -10090,6868
 Kreisverkehr	Roundabout 25069,35558
 Kreisverkehr	Roundabout 26302,-11712
+#: by: Stefan Klinkusch
+#: note: "kleiner Kreisverkehr mit flacher Mittelinsel"
+Kreisverkehr	Roundabout -8815,13214
 #: by: Marita:
 (Waldweg über den Beyschlagtunnel): bei Regen Rutschgefahr	CS 344,22346 742,22666
 Privatstraße der DB	CS 5710,7820 6275,7847
@@ -876,6 +879,27 @@ Zugang zum Bad	culdesac_pseudo 7344,13435
 	culdesac 21002,5594
 	culdesac_pseudo 19177,5560
 	culdesac 18310,6223
+	culdesac -8622,13218
+	culdesac -8641,13158
+	culdesac -8830,13169
+	culdesac -8969,13324
+	culdesac -8986,13265
+	culdesac_pseudo -3974,14495
+	culdesac_pseudo -3887,14405
+	culdesac -5512,14844
+	culdesac -5338,14798
+	culdesac -5694,14656
+	culdesac -6634,14690
+	culdesac -6621,14798
+	culdesac -7097,15074
+	culdesac_pseudo -7109,15286
+	culdesac_pseudo -7133,15287
+	culdesac_pseudo -6831,15260
+	culdesac_pseudo -6573,15254
+	culdesac -7511,15160
+	culdesac -7613,15192
+	culdesac -8471,15000
+	culdesac_pseudo -8287,14411
 #: section ^^^
 ######################################################################
 # busroute
@@ -988,8 +1012,8 @@ Bus 337	busroute_N -3481,14523 -3598,14587 -3637,14628 -3721,14495 -3835,14668 -
 Bus M37	busroute_N -7003,16188 -6990,16321 -6982,16403 -6980,16452 -7037,16469 -7068,16471
 Bus M37	busroute_N -6719,16111 -6766,15741 -6755,15682 -6733,15661 -6700,15653 -6627,15642 -6340,15597 -6265,15583 -6182,15569 -6098,15559 -5967,15752 -5911,15877
 Bus 131	busroute_N -6098,15559 -6119,15386 -6148,15306 -6175,15261 -6214,15211 -6256,15169 -6309,15125 -6361,15054 -6398,14969
-Bus 237	busroute_N -7365,15306 -7371,15201 -7373,15154 -7387,14951 -7390,14881 -7413,14561
-Bus 237	busroute_N -6861,15129 -6881,14975 -6886,14885 -6890,14840 -6898,14715 -6913,14576 -7013,14578 -7114,14579
+Bus 237	busroute_N -7365,15306 -7371,15201 -7373,15154 -7387,14951 -7390,14881 -7391,14857 -7413,14561
+Bus 237	busroute_N -6861,15129 -6878,15024 -6883,14981 -6891,14891 -6896,14845 -6907,14721 -6913,14576 -7013,14578 -7114,14579
 Bus M32	busroute_N -7121,14711 -7115,14663 -7114,14579
 Bus M32, Bus 237	busroute_N -7114,14579 -7185,14574 -7225,14572 -7304,14567 -7413,14561
 Bus M32	busroute_N -7413,14561 -7420,14520 -7445,14392 -7457,14317 -7456,14073 -7457,13957 -7464,13904 -7484,13770
@@ -1432,3 +1456,8 @@ Place Molière: Schulgelände	CS 4366,21482 4330,21464 4307,21506
 Am Bauhaus-Baumarkt abbiegen	CP2; -5173,13951 -5187,13707
 (Azaleenstr. - Uferweg): Privatstraße	CS 23874,4929 23901,4982 23962,5031
 Zufahrt zur Trabrennbahn Karlshorst: Durchfahrt durch ehemalige Kassenhäuschen	CP2; 18709,8423 18748,8363
+#: by: Stefan Klinkusch: vvv
+Mühlendorfstr.: private Wohnstraße	CS -7637,13822 -7630,13889 -7595,13963
+Mühlenbachring: private Wohnstraße	CS -7534,13936 -7556,13894 -7564,13817 -7637,13822 -7674,13827 -7665,13945 -7647,13985
+#: by: ^^^
+ausgeschildert LEG Brandenburg	CP2; -8634,9626 -8595,9582

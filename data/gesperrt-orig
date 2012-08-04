@@ -361,6 +361,7 @@ Bleicheroder Str.	1 11268,18851 11439,18890 11526,18929 11622,18964 11727,19001 
 Renée-Sintenis-Platz	1 5642,7255 5664,7244 5675,7224 5661,7202 5641,7189 5621,7204 5614,7223 5624,7244 5642,7255
 Spreepark	2 16023,8860 16161,8852
 #: by: Felix Schröder
+#: confirmed_by: srt
 Staakener Str.	1 -4112,14242 -4390,14257
 Langensteiner Weg	1 7282,4716 7335,4879 7437,4855
 #: by: Susanne Kuby:
@@ -607,7 +608,8 @@ Privatstr. 14	1s:q3 13159,17196 13103,17280
 Bernkasteler Str.	1s:q3 15208,16939 15015,16908 14923,16901 14923,16914
 Wiedenbrücker Weg	1 4207,1113 4220,1175 4141,1282
 #: by: Kamai:
-Am Langen Weg:	1 -7033,14984 -7024,14880 -7015,14772 -7011,14693 -7013,14578
+#: confirmed_by: srt
+Am Langen Weg:	1 -7033,14984 -7026,14890 -7015,14772 -7011,14693 -7013,14578
 # 
 #: by: Beate Wolter
 #: confirmed_by: sandor
@@ -913,6 +915,9 @@ Genfer Str.	1 6890,18190 6821,18216 6683,18243
 #: note: enge Hausdurchfahrt
 Eckertstr.	1s:q3 13598,12554 13585,12584
 Am Kupfergraben	1s:q2 9867,12651 9810,12712 9754,12775
+Leistikowstr.	1 1188,11861 1133,11664
+Am Krummen Weg	1 -7169,14849 -7026,14890
+Am Krummen Weg	1 -7169,14849 -7248,14826
 ######################################################################
 #
 # Potsdam
@@ -973,6 +978,7 @@ Hechtsprung (Groß Glienicke)	1 -9703,6278 -9860,6288 -9962,6295 -10045,6292
 (Potsdamer Chaussee - Dorfstr.)	1 -9547,6865 -9565,6954 -9616,6980
 #: by: a.fuchs:
 Tuchmacherstr.	1 -10463,-1343 -10610,-1596 -10636,-1667
+Ribbeckweg	1 -9720,6589 -9928,6599 -9932,6558
 ###################################################################### 
 # elsewhere in Brandenburg
 #: note: möglicherweise nur im Frühling/Sommer?
@@ -998,7 +1004,7 @@ Lützlow: Gehweg auf gleichem Niveau wie Fahrbahn	1s:q1 52431,94119 52422,94028 5
 Lindenstr. (Frankfurt/Oder)	1 88960,-6639 88836,-6002
 Carthausplatz (Frankfurt/Oder)	1 88945,-6733 88890,-6691 88960,-6639
 Gubener Str. (Frankfurt/Oder)	1 88945,-6733 88890,-6691 88881,-6462 88775,-6151 88759,-5911
-B5 (paralleler Radweg existiert)	2 -9005,13354 -9583,13368 -10122,13391 -11253,13707
+B5 (paralleler Radweg existiert)	2 -9005,13354 -9443,13363 -10122,13391 -11253,13707
 Niemegk	1 -37263,-37723 -37263,-37584 -37216,-37587 -37188,-37728 -37263,-37723
 Bahnhofstr. (Fürstenberg)	1 -8839,86313 -8711,86273
 Fürstenberg	1 -8777,85887 -8680,85652
@@ -1417,8 +1423,10 @@ Berliner Str.: Straßenbahnhaltestelle	3nocross -11307,133 -11390,72 -11494,-4
 Hasenheide: Mittelstreifen	3nocross 11500,9116 11449,9125 11136,9183
 Hasenheide: Mittelstreifen	3nocross 11500,9116 11550,9104 11629,9086
 Kiepenheuerallee: Straßenbahntrasse	3nocross -13311,462 -13203,434 -13157,394
-#: by: Stefan Klinkusch:
+#: by: Stefan Klinkusch: vvv
 Wilhelmstr.: Mittelstreifen	3nocross -3824,13350 -3813,13404 -3803,13464
+Heerstr.: Mittelstreifen	3nocross -4882,12061 -4637,11982 -4500,11937
+#: by: ^^^
 abgeschlossenes Tor	3 * 8237,20098 *
 abgeschlossenes Tor	3 * 8291,20112 *
 #
@@ -1698,9 +1706,17 @@ tragen (31 Stufen oder Kinderwagenrampe)	0:40 13168,21706
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+Schranke, lichte Breite 120cm	BNP:1::trailer=3 -7685,15092
+Poller, lichte Breite 100cm	BNP:1::trailer=5 -7109,15286
+Schranke	BNP:1::trailer=5 -3300,14039
+weites Drängelgitter	BNP:1::trailer=5 -3437,14029
 Drängelgitter	BNP:3::trailer=10 7928,10094
 enger Eingang zum Friedrich-Ludwig-Jahn-Sportpark	BNP:30::trailer=no 10583,15208
 #: by: Stefan Klinkusch: vvv
+Metallstange	BNP:3::trailer=10 -5070,11199
+Metallstange	BNP:3::trailer=10 -5082,11155
+#: XXX was genau von beiden?
+Drängelgitter/Schranke	BNP:3::trailer=10 -8113,13467
 Schranke	BNP:3::trailer=10 -3441,13270
 Drängelgitter	BNP:3::trailer=10 -4760,13980
 #: by: ^^^

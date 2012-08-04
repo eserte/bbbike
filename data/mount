@@ -2,8 +2,6 @@ Steigung 40.2% ((Zum Hubertussee))	St; 1809,8916 1807,8893
 Steigung 34.4% ((Zum Hubertussee))	St; 1834,8893 1807,8893
 Steigung 13.1% (Zum Heckeshorn)	St; -6021,2068 -6025,1999
 Steigung 12.3% ((Am Stadion Wilmersdorf))	St; 3295,8519 3357,8506
-Steigung 12.1% (Stritteweg)	St; -5236,11204 -5256,11142
-Steigung 12.1% (Stritteweg)	St; -5229,11230 -5236,11204
 Steigung 11.3% (Zeunepromenade)	St; 4340,5317 4259,5390
 Steigung 10.4% (Blakenheideweg)	St; -4852,11030 -4768,11016
 Steigung 9.8% (Teufelsseechaussee [Auffahrt zum ehem. Horchposten])	St; -910,9717 -923,9757
@@ -375,6 +373,7 @@ Steigung 2.8% (Kladower Damm)	St; -5046,7442 -5097,7361
 Steigung 2.8% (Kirchhofstr. (Neukölln))	St; 12909,7181 12872,7134
 Steigung 2.8% (Katzbachstr.)	St; 8598,9264 8598,9074
 Steigung 2.8% (Grohsteig)	St; 21416,16027 21426,15979
+Steigung 2.8% (Gatower Str.)	St; -4853,11044 -4852,11030
 Steigung 2.8% (Gartenstr. (Mitte, Gesundbrunnen))	St; 8663,14960 8570,15107
 Steigung 2.8% (Crellestr.)	St; 7770,9336 7655,9188
 Steigung 2.8% (Bautzener Platz)	St; 8183,9260 8102,9262
@@ -460,8 +459,7 @@ Steigung 2.5% (Heesestr. (Steglitz))	St; 5287,5622 5284,5546
 Steigung 2.5% (Havelchaussee)	St; -3423,9642 -3361,9535
 Steigung 2.5% (Havelchaussee)	St; -3361,9535 -3304,9470
 Steigung 2.5% (Gottfried-Keller-Str.)	St; 1792,11889 1697,11911
-Steigung 2.5% (Gatower Str.)	St; -4853,11044 -4852,11030
-Steigung 2.5% (Gatower Str.)	St; -4836,11138 -4853,11044
+Steigung 2.5% (Gatower Str.)	St; -4843,11123 -4853,11077
 Steigung 2.5% (Flughafenstr.)	St; 12195,8436 12068,8409
 Steigung 2.5% (Erdener Str.)	St; 1757,9282 1704,9293
 Steigung 2.5% (Egidystr.)	St; 3356,21534 3430,21327
@@ -503,6 +501,8 @@ Steigung 2.4% (Isarstr.)	St; 12368,8356 12384,8284
 Steigung 2.4% (Heerstr. (Westend, Wilhelmstadt, Staaken))	St; -731,11073 -776,11067
 Steigung 2.4% (Heerstr. (Westend, Wilhelmstadt, Staaken))	St; -587,11090 -731,11073
 Steigung 2.4% (Grunewaldstr. (Steglitz))	St; 4671,5697 4520,5793
+Steigung 2.4% (Gatower Str.)	St; -4853,11077 -4853,11044
+Steigung 2.4% (Gatower Str.)	St; -4836,11138 -4843,11123
 Steigung 2.4% (Falkstr.)	St; 12220,7822 12179,7979
 Steigung 2.4% (Erdener Str.)	St; 1704,9293 1586,9316
 Steigung 2.4% (Epiphanienweg)	St; 2246,11844 2235,11829
@@ -568,7 +568,8 @@ Steigung 2.2% (Sensburger Allee)	St; -177,11541 -303,11526
 Steigung 2.2% (Schönhauser Allee)	St; 10779,13793 10832,13877
 Steigung 2.2% (Schwedter Str. (Mitte, Prenzlauer Berg))	St; 10101,15751 10080,15858
 Steigung 2.2% (Reichsstr.)	St; 23,12739 131,12672
-Steigung 2.2% (Platanenallee)	St; 1188,11861 1286,11834
+Steigung 2.2% (Platanenallee)	St; 1264,11840 1286,11834
+Steigung 2.2% (Platanenallee)	St; 1188,11861 1264,11840
 Steigung 2.2% (Oraniendamm)	St; 4616,22478 4718,22384
 Steigung 2.2% (Methfesselstr.)	St; 8982,8781 9063,8935
 Steigung 2.2% (Marchstr.)	St; 4981,12252 5000,12288
@@ -891,6 +892,7 @@ Steigung 1.5% (Wissmannstr. (Grunewald))	St; 1483,9132 1434,9154
 Steigung 1.5% (Ulricistr.)	St; -7612,542 -7714,529
 Steigung 1.5% (Ulricistr.)	St; -7556,559 -7612,542
 Steigung 1.5% (Trabener Str.)	St; 1141,9078 1312,9220
+Steigung 1.5% (Stritteweg)	St; -5236,11204 -5256,11142
 Steigung 1.5% (Spreetalallee)	St; 729,12972 657,12697
 Steigung 1.5% (Spreetalallee)	St; 715,13126 729,12972
 Steigung 1.5% (Spanheimstr.)	St; 9336,16302 9458,16180
@@ -953,6 +955,8 @@ Steigung 1.5% (Albrechtstr. (Steglitz))	St; 4991,5531 4861,5581
 Steigung 1.5% ((Parkweg Reichsstr.))	St; -67,12779 23,12739
 Steigung 1.5% ((Parkweg Reichsstr.))	St; -142,12850 -67,12779
 Steigung 1.5% ((Machandelweg - Reichsstr.))	St; -103,12868 -142,12850
+Steigung 1.5% ((Kolonie Sonnental, südlicher Weg))	St; -5082,11155 -5236,11204
+Steigung 1.5% ((Kolonie Sonnental, südlicher Weg))	St; -4853,11077 -5082,11155
 Steigung 1.5% ((Katzbachstr. - Denkmal im Viktoriapark))	St; 8901,9104 8943,9098
 Steigung 1.5% ((Katzbachstr. - Denkmal im Viktoriapark))	St; 8883,9089 8901,9104
 Steigung 1.5% ((Hasenheide, östlicher Rundweg))	St; 11177,8985 11406,8941
@@ -1295,7 +1299,6 @@ Steigung 1.0% (Wissmannstr. (Grunewald))	St; 1421,9173 1434,9154
 Steigung 1.0% (Wilhelm-Hauff-Str.)	St; 5957,6970 6082,6965
 Steigung 1.0% (Wiesenstr. (Gesundbrunnen))	St; 8742,15298 8683,15354
 Steigung 1.0% (Wiesenstr. (Gesundbrunnen))	St; 8683,15354 8607,15426
-Steigung 1.0% (Weinmeisterhornweg)	St; -5284,11375 -5202,11347
 Steigung 1.0% (Wattstr. (Gesundbrunnen))	St; 9437,14926 9361,15066
 Steigung 1.0% (Walterstr.)	St; 13014,6833 12983,6904
 Steigung 1.0% (Thomasstr.)	St; 12367,7429 12180,7387

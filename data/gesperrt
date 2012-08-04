@@ -471,7 +471,7 @@ Alt-Biesdorf	1 21108,11628 20963,11618 20633,11651 20549,11659 20375,11694
 Privatstr. 14	1s 13159,17196 13103,17280
 Bernkasteler Str.	1s 15208,16939 15015,16908 14923,16901 14923,16914
 Wiedenbrücker Weg	1 4207,1113 4220,1175 4141,1282
-Am Langen Weg:	1 -7033,14984 -7024,14880 -7015,14772 -7011,14693 -7013,14578
+Am Langen Weg:	1 -7033,14984 -7026,14890 -7015,14772 -7011,14693 -7013,14578
 Hans-Sachs-Str.	1 3141,4023 3214,4066
 Wehneltsteig	1 1256,14217 1305,14384
 Bernhard-Bästlein-Str.	1 15595,14041 15593,13768
@@ -700,6 +700,9 @@ Olbrichweg	1 5787,19326 5879,19352
 Genfer Str.	1 6890,18190 6821,18216 6683,18243
 Eckertstr.	1s 13598,12554 13585,12584
 Am Kupfergraben	1s 9867,12651 9810,12712 9754,12775
+Leistikowstr.	1 1188,11861 1133,11664
+Am Krummen Weg	1 -7169,14849 -7026,14890
+Am Krummen Weg	1 -7169,14849 -7248,14826
 Am Neuen Garten	1 -12166,1384 -12212,1201 -12276,831 -12302,718
 Am Neuen Garten	1 -12332,585 -12582,127
 Hochstraße	3nocross::ignrte -11399,-1339 -11461,-1424 -11540,-1543
@@ -761,6 +764,7 @@ Nietnerstr.	2 -13855,1673 -13843,1668
 Hechtsprung (Groß Glienicke)	1 -9703,6278 -9860,6288 -9962,6295 -10045,6292
 (Potsdamer Chaussee - Dorfstr.)	1 -9547,6865 -9565,6954 -9616,6980
 Tuchmacherstr.	1 -10463,-1343 -10610,-1596 -10636,-1667
+Ribbeckweg	1 -9720,6589 -9928,6599 -9932,6558
 Freilichtbühne Schwedt	2 69562,73280 69634,73330
 Bahnhofstr.	1s 26103,-11861 26300,-11864
 Bernau - Tempelfelde	1 23179,31047 23103,30923
@@ -778,7 +782,7 @@ Lützlow: Gehweg auf gleichem Niveau wie Fahrbahn	1s 52431,94119 52422,94028 5235
 Lindenstr. (Frankfurt/Oder)	1 88960,-6639 88836,-6002
 Carthausplatz (Frankfurt/Oder)	1 88945,-6733 88890,-6691 88960,-6639
 Gubener Str. (Frankfurt/Oder)	1 88945,-6733 88890,-6691 88881,-6462 88775,-6151 88759,-5911
-B5 (paralleler Radweg existiert)	2 -9005,13354 -9583,13368 -10122,13391 -11253,13707
+B5 (paralleler Radweg existiert)	2 -9005,13354 -9443,13363 -10122,13391 -11253,13707
 Niemegk	1 -37263,-37723 -37263,-37584 -37216,-37587 -37188,-37728 -37263,-37723
 Bahnhofstr. (Fürstenberg)	1 -8839,86313 -8711,86273
 Fürstenberg	1 -8777,85887 -8680,85652
@@ -1863,6 +1867,9 @@ Kiepenheuerallee -> Johannes-Lepsius-Str.: Straßenbahntrasse	3::igndisp -13157,3
 Mittelstreifen	3nocross::ignrte -3824,13350 -3813,13404 -3803,13464
 Kerstenweg -> Wilhelmstr.: Mittelstreifen	3::igndisp -3705,13386 -3813,13404 -3824,13350
 Wilhelmstr. -> Kerstenweg: Mittelstreifen	3::igndisp -3803,13464 -3813,13404 -3705,13386
+Mittelstreifen	3nocross::ignrte -4882,12061 -4637,11982 -4500,11937
+Heerstr. -> Winzerstr.: Mittelstreifen	3::igndisp -4500,11937 -4637,11982 -4687,11885
+Winzerstr. -> Heerstr.: Mittelstreifen	3::igndisp -4687,11885 -4637,11982 -4882,12061
 abgeschlossenes Tor	3 8235,20109 8237,20098 8258,19983
 abgeschlossenes Tor	3 8258,19983 8237,20098 8235,20109
 abgeschlossenes Tor	3 8288,20128 8291,20112 8315,19993
@@ -2061,8 +2068,15 @@ tragen (Treppe, ca. 20 Stufen)	0:25:-12 19160,14935
 tragen (Treppe)	0:30:70 89344,-5795
 tragen, langgezogene Stufen (13 Stufen)	0:25:-168 20704,1383
 tragen (31 Stufen oder Kinderwagenrampe)	0:40:-256 13168,21706
+Schranke, lichte Breite 120cm	BNP:1:-71:trailer=3 -7685,15092
+Poller, lichte Breite 100cm	BNP:1:-255:trailer=5 -7109,15286
+Schranke	BNP:1:-123:trailer=5 -3300,14039
+weites Drängelgitter	BNP:1:-237:trailer=5 -3437,14029
 Drängelgitter	BNP:3:-79:trailer=10 7928,10094
 enger Eingang zum Friedrich-Ludwig-Jahn-Sportpark	BNP:30:-19:trailer=no 10583,15208
+Metallstange	BNP:3:-72:trailer=10 -5070,11199
+Metallstange	BNP:3:-72:trailer=10 -5082,11155
+Drängelgitter/Schranke	BNP:3:-194:trailer=10 -8113,13467
 Schranke	BNP:3:-27:trailer=10 -3441,13270
 Drängelgitter	BNP:3:4:trailer=10 -4760,13980
 Schranke	BNP:3:51:trailer=10 8828,13434

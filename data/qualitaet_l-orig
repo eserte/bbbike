@@ -96,7 +96,7 @@ Kˆthen - M‰rkisch Buchholz: schlechte sandige Straﬂe	Q3 38648,-36241 38331,-3647
 Blankenfelde - Rangsdorf: m‰ﬂiger bis guter Waldweg	Q2 11704,-9417 11748,-9995 11982,-10594 11813,-11045 11818,-11135 11822,-11197 11774,-11431 11560,-11648 11399,-11890 11227,-11976 11217,-12098 11276,-12239 11457,-12382
 Damm ¸ber den Templiner See: m‰ﬂiger Waldweg	Q2 -14795,-5169 -15540,-4550 -15537,-4535 -15652,-4441 -15664,-4450 -15853,-4327
 Kemnitz - Wittbrietzen: schlechte sandige Straﬂe	Q3 -17219,-29863 -17538,-29394 -17731,-28626 -17790,-28117
-Ortsdurchfahrt Krampnitz: sandige Straﬂe, holprig	Q3+ -12891,5317 -12953,5373 -13224,5485 -13261,5566
+Ortsdurchfahrt Krampnitz: sandige Straﬂe, holprig	Q3+ -12891,5317 -12953,5373 -13224,5485 -13250,5545 -13261,5566
 Ortsdurchfahrt Sacrow: m‰ﬂiger Asphalt	Q1 -10722,2111 -10363,2151 -10123,2226 -10105,2458
 Spitzm¸hle - Buchholz: schlechter sandiger Weg	Q3 38663,19949 38108,20189 37725,20454 37088,20332 36479,20207
 Bahnhof M¸ncheberg - Dahmsdorf: Kopfsteinpflaster	Q2 57528,13942 57794,14044 57918,14089
@@ -423,7 +423,8 @@ Am Pfingstberg (Potsdam): Kopfsteinpflaster, OK	Q1- -13091,1150 -12825,1284
 Am Waldessaum: Parkweg	Q1 -12825,1284 -12709,1106
 Vogelweide: Kopfsteinpflaster	Q2- -12825,1284 -12861,1357 -12906,1446
 Vogelweide: Schotter	Q2 -12906,1446 -12926,1494 -12928,1646 -12928,1686
-Vogelweide: sandiger Weg	Q2 -12928,1686 -12934,1813 -12934,1933
+Vogelweide: sandiger Weg	Q2 -12928,1686 -12934,1813
+Vogelweide: sandiger Pfad	Q2 -12934,1813 -12934,1933
 #XXX del: Vogelweide: sandiger Weg	Q2 -12934,1813 -12845,1861 -12766,1932 -12779,1963 -12713,2000
 (Fritz-von-der-Lancken-Str. - Bertiniweg): Asphalt	Q0 -12779,1963 -12722,1997 -12666,2013 -12568,1970 -12542,1959
 Eichbergstr.: Asphalt	Q0 -12779,1963 -12700,1851
@@ -899,7 +900,7 @@ Kopfsteinpflaster	Q2 -19190,7296 -19187,6709 -19514,6643
 Ruhlsdorf - G¸terfelde: m‰ﬂiger/schlechter Feldweg	Q2 1132,-3612 -256,-3961 -1812,-4210 -2493,-4385 -2534,-4606
 #XXX existiert nicht mehr, del?	Q0 2471,-6025 2031,-5468 1592,-5527
 	Q0 1622,-5649 1533,-5628 1343,-5420 296,-5328 -1095,-4973 -1809,-4792 -2534,-4606 -3368,-4430 -3418,-4525 -3446,-4709 -3596,-4687 -3796,-4612 -3871,-4437 -4457,-4197 -4661,-4172 -4819,-4154 -5736,-3629 -6277,-3348 -6553,-3235 -6810,-3151 -7060,-3124 -7487,-3097 -7497,-3096 -7577,-3093 -7668,-3092 -7774,-3091 -7878,-3090 -8005,-3056 -8137,-2997 -8283,-2917 -8361,-2875 -8417,-2867 -8500,-2856
-	Q0 -13036,342 -13062,535 -13058,702 -13042,807 -13038,856 -13039,894 -13091,1150 -13108,1278 -13113,1356 -13115,1379 -13125,1508 -13133,1698 -13134,1758 -13141,1933 -13141,1945 -13152,2169 -13375,2950 -13387,2987 -13567,3403 -13703,3717 -13784,3900 -13783,3919 -13779,4233 -13778,4492 -13690,5212 -13578,5396 -13261,5566 -13143,5587 -12865,5567 -12645,5573 -12179,5629 -10927,6333 -10494,6586 -10206,6756 -10090,6868 -9996,7037 -9983,7100 -9964,7203 -9928,7459 -8634,9626 -8628,9803 -8677,10083 -8697,10653 -8906,11139 -9262,11890 -9524,12215
+	Q0 -13036,342 -13062,535 -13058,702 -13042,807 -13038,856 -13039,894 -13091,1150 -13108,1278 -13113,1356 -13115,1379 -13125,1508 -13133,1698 -13134,1758 -13141,1933 -13141,1945 -13152,2169 -13375,2950 -13387,2987 -13567,3403 -13703,3717 -13784,3900 -13783,3919 -13781,4027 -13779,4233 -13778,4260 -13778,4492 -13690,5212 -13578,5396 -13261,5566 -13143,5587 -12865,5567 -12645,5573 -12179,5629 -10927,6333 -10494,6586 -10206,6756 -10090,6868 -9996,7037 -9983,7100 -9964,7203 -9935,7406 -9928,7459 -8634,9626 -8628,9803 -8677,10083 -8687,10570 -8809,10915 -8906,11139 -9034,11411 -9262,11890 -9524,12215
 	Q0 -13553,115 -13529,226 -13507,308 -13486,385 -13456,500 -13546,527 -13696,572 -13872,624 -14053,677
 Erich-Mendelsohn-Allee: Asphalt	Q0 -14235,298 -14216,372 -14198,449 -14174,486 -14114,580 -14053,677 -13995,773 -13961,836 -13903,941 -13853,1018 -13804,1088 -13772,1139 -13695,1276
 Hermann-Mattern-Promenade: Asphalt	Q0 -14216,721 -14131,858 -14094,917 -14053,985 -13985,1096 -13914,1218 -13893,1255 -13841,1341 -13795,1420
@@ -1174,7 +1175,7 @@ Cremzow: sehr guter Asphalt	Q0 51178,106442 51391,106540
 Cremzow - Klockow: Feldweg in der Qualit‰t eines Trampelpfads	Q3 51030,106885 50419,108545
 Rollberg: Feldweg, teilweise etwas sandig	Q2 53527,102597 53396,102754
 Neuer Garten: Parkweg	Q1 -11615,853 -11715,959 -11818,993 -11871,1087 -12081,1168 -12094,1273 -12139,1325
-Neuer Garten: Parkweg, viel Schotter	Q1- -11510,810 -11562,918 -11575,1031 -11537,1206 -11544,1262 -11580,1281 -11871,1185 -11990,1214 -12124,1359 -12141,1357
+Neuer Garten: glatter Parkweg	Q1+ -11510,810 -11562,918 -11575,1031 -11537,1206 -11544,1262 -11580,1281 -11871,1185 -11990,1214 -12124,1359 -12141,1357
 Seestr.: Kopfsteinpflaster	Q2 -11903,-71 -11866,103 -11796,240 -11707,315
 Seestr.: schlechtes Kopfsteinpflaster, bessere Banketten	Q3;Q2 -11707,315 -11609,400 -11584,452 -11581,559
 Seestr.: Kopfsteinpflaster	Q2 -11581,559 -11650,590
@@ -2028,7 +2029,7 @@ Richard-Wagner-Str. (Groﬂ Glienicke): Asphalt	Q0 -9730,5802 -9847,5798 -9945,579
 #: XXX_indoor: bei osm "surface=paved"
 Richard-Wagner-Str. (Groﬂ Glienicke): Kopfsteinpflaster	Q2 -10036,5795 -10140,5794 -10195,5794 -10234,5804 -10347,5874 -10467,5948
 Dorfstr. (Groﬂ Glienicke): Asphalt	Q0 -9476,7033 -9531,6901 -9547,6865 -9567,6773 -9593,6646 -9642,6538
-Bergstr. (Groﬂ Glienicke): Verbundsteinpflaster	Q0- -9722,6549 -9642,6538
+Bergstr. (Groﬂ Glienicke): Verbundsteinpflaster	Q1 -9722,6549 -9642,6538
 Hechtsprung (Groﬂ Glienicke): Schotter	Q2 -10154,6284 -10045,6292
 Hechtsprung (Groﬂ Glienicke): Asphalt	Q0 -10045,6292 -9962,6295 -9860,6288 -9703,6278
 Ernst-Th‰lmann-Str. (Groﬂ Glienicke): Plattenweg	Q2 -10148,6021 -10040,6021
@@ -2212,7 +2213,8 @@ Brandenburgische Str.: Verbundsteinpflasterradwege, betonierte Fahrbahn	Q1+ 3055
 Brandenburgische Str.: Verbundsteinpflasterradwege, gepflasterte Fahrbahn	Q1+ 30602,6366 30648,5979
 Hamburger Str.: Asphalt	Q0 30871,6356 31007,6343 31080,6454 31416,6774
 (Schˆneiche - Woltersdorf): Waldweg	Q2+ 31007,6343 31016,6269 31030,6168 31027,6076
-Birkenweg (Groﬂ Glienicke): Asphalt	Q0 -10055,6715 -10091,6716 -10127,6716 -10177,6711
+#: note: Poller am S¸dende
+Birkenweg (Groﬂ Glienicke): Asphalt	Q0 -10055,6715 -10091,6716 -10133,6717 -10177,6711 -10178,6691 -10183,6650
 #: note: beleuchtet
 Am Park: Asphalt	Q0 -9413,7175 -9276,7226 -9118,7286
 Reiherweg (Potsdam): Asphalt	Q0 -14435,357 -14592,323 -14663,310
@@ -2468,6 +2470,28 @@ Kummerow - Kunow: Asphalt	Q0 66731,82468 66863,82455 66943,82495
 Zum Beyerswald (Schwedt): Asphalt	Q0 69000,75533 68816,75600 68062,75989 67820,76242
 Vierradener Chaussee - Oder-Center: Verbundsteinpflaster	Q1 68658,74376 68629,74385 68588,74440 68480,74496
 Choriner Bahnhofstr.: Asphalt	Q0 41337,55907 41198,55961 41180,55981
+(Stadtgrenze Berlin - Landstraﬂe Seeburg/Falkensee): Asphalt	Q0 -8971,13610 -8996,13584 -9214,13522 -9577,13577
+Dˆberitzer Weg: unbefestigte Straﬂe	Q2 -9524,12215 -9692,12123
+Dorfstr.: Asphalt	Q0 -8906,11139 -8607,11262
+Gatower Weg (Seeburg): Asphalt	Q0 -8607,11262 -8596,11184 -8451,11071 -8327,10979 -8274,10938
+Freiheitsstr. (Groﬂ Glienicke): Asphalt	Q0 -9869,7199 -9964,7203
+Ulrich-Steinhauer-Str.: Asphalt	Q0 -9983,7100 -9880,7094
+Rotdornweg (Groﬂ Glienicke): Asphalt	Q0 -10091,6716 -10095,6664
+Ebereschenweg (Groﬂ Glienicke): Asphalt	Q0 -10133,6717 -10138,6646
+Hainbuchenweg (Groﬂ Glienicke): Asphalt	Q0 -10178,6691 -10227,6693
+Hainbuchenweg (Groﬂ Glienicke): Verbundsteinpflaster	Q1 -10227,6693 -10227,6658
+Bergstr. (Groﬂ Glienicke): Asphalt	Q0 -10272,6569 -10052,6563
+Bergstr. (Groﬂ Glienicke): Verbundsteinpflaster	Q1 -10052,6563 -9932,6558 -9843,6554 -9722,6549
+Ribbeckweg: Verbundsteinpflaster	Q1 -9932,6558 -9928,6599 -9720,6589
+Triftweg (Groﬂ Glienicke): Asphalt	Q0 -9640,6971 -9690,6782 -9717,6669 -9719,6639 -9720,6589 -9722,6549
+An der Kirche: Pflaster	Q1 -10057,6804 -10030,6802
+An der Kirche: Asphalt	Q0 -10030,6802 -9835,6791 -9746,6789 -9690,6782
+An der Kirche: Asphalt	Q0 -10053,6676 -9717,6669
+Hermann-Krone-Weg: Verbundsteinpflaster	Q1 -9746,6850 -9746,6789
+Theodor-Fontane-Str.: Asphalt	Q0 -9854,6890 -9835,6841 -9835,6791
+#: by: osm
+#: confirmed_by: srt (im Norden)
+Am Schlahn (Groﬂ Glienicke): Kopfsteinpflaster	Q2 -10494,6586 -10446,6449 -10444,6363 -10489,6050 -10467,5948 -10487,5846 -10521,5770
 ######################### User Contributions #################################
 #: by: Aaron Schaar: vvv
 Hermannswerder: guter Asphalt	Q0 -13718,-2991 -14301,-2871 -14577,-3068 -14740,-3262
@@ -3049,6 +3073,7 @@ Pestalozzistr.: Asphalt	Q0 -9653,-2100 -9698,-2328 -9723,-2451
 Am Park: Asphalt	Q0 -9118,7286 -8968,7328
 #: note: laut "Berliner Umland" witterungsabh‰ngige Strecke
 Mauerweg am Groﬂ-Glienicker See: Asphalt, einige Fugen	Q0- -9118,7286 -9168,7172 -9154,7073 -9175,7037 -9424,6874 -9455,6843 -9490,6650 -9616,6309 -9668,6171 -9622,5804 -9640,5723 -9727,5573 -9763,5555
+#: confirmed_by: srt (nˆrdliches Ende)
 Seeburger Chaussee: Asphalt	Q0 -8634,9626 -8595,9582 -8564,9423 -8634,8630 -8719,8161 -8878,8089 -9077,7923 -9150,7720
 Seeburger Chaussee: m‰ﬂiger Asphalt	Q1 -9150,7720 -9097,7649 -9088,7599
 Edisonstr.: Sand	Q3 -10696,15970 -10722,16134
@@ -3884,7 +3909,7 @@ An der Wetzlarer Bahn (Potsdam): unbefestigter Weg, bei Regen groﬂe Pf¸tzen	Q2 -
 # 
 #: by: Peter Piecha:
 #: note: Privatstraﬂe
-Ahornweg (Groﬂ Glienicke): Verbundsteinpflaster	Q0- -10052,6640 -10138,6646 -10183,6650 -10236,6648 -10315,6646
+Ahornweg (Groﬂ Glienicke): Verbundsteinpflaster	Q0- -10052,6640 -10138,6646 -10183,6650 -10315,6646
 # 
 #: by: anonymous
 Bussardheck (Glienicke/Nordbahn): Asphalt	Q0 5820,24725 5981,24725 6119,24714 6146,24691 6151,24606
@@ -3975,7 +4000,7 @@ K¸chenmeisterallee: guter Asphalt	Q0 29014,-11709 29000,-11743 28853,-11845 2871
 # 
 #: by: Christian Linke:
 #: note: "q3" eingetragen, vielleicht auf den Asphalt bezogen?
-Am Stinthorn (Neu Fahrland): m‰ﬂiger Asphalt	Q2 -13779,4233 -13735,4229 -13619,4179 -13556,4150 -13495,4123 -13372,4069 -13341,4057
+Am Stinthorn (Neu Fahrland): m‰ﬂiger Asphalt	Q2 -13779,4233 -13763,4232 -13735,4229 -13619,4179 -13556,4150 -13495,4123 -13372,4069 -13341,4057
 # 
 #: by: anonymous: vvv
 #: note: "Gehweg gepflastert in schlechtem Zustand, allerdings besser als Fahrbahn"
@@ -4020,6 +4045,7 @@ Gr¸nauer Str.: Fahrbahn schlechtes Kopfsteinpflaster, schmale Verbundsteinpflast
 Friedhofsgasse (Potsdam): Beton	Q0 -11781,-2235 -11799,-2283 -11995,-2500
 # 
 #: by: Stefan Klinkusch vvv
+Dallgow Ausbau: Beton, rissig, mit einigen Bodenwellen	Q1- -9467,12248 -9210,13338
 #: note: best‰tigt den Tagesspiegel vom 2007-05-12
 Mauerweg Groﬂ Glienicke - Sacrower Landstr.: asphaltiert	Q0 -9415,5322 -9390,5298 -9367,5246 -9395,5025 -9560,4615
 #: XXX wo genau ist der Waldweg, wo asphaltiert?

@@ -274,7 +274,7 @@ Mönchstr.: Fußgängerzone	q4 -3110,14408 -3174,14438 -3228,14468
 Marktstr. (Spandau): Fußgängerzone	q4 -3293,14304 -3231,14383
 Carl-Schurz-Str.: Fußgängerzone	q4 -3552,14082 -3457,14189 -3409,14241 -3338,14333 -3275,14407 -3228,14468 -3205,14512 -3185,14556 -3150,14631
 #: note: (by Sara Köhler) Fußgängerzone ist für Radfahrer nicht freigegeben, Lieferverkehr ist von 19-11 Uhr frei
-Am Wall: Fußgängerzone	q4 -3403,14145 -3457,14189
+Am Wall: Fußgängerzone	q4 -3404,14147 -3457,14189
 Charlottenstr.: Fußgängerzone	q4 -3227,14260 -3293,14304 -3338,14333 -3397,14370
 Moritzstr.: Fußgängerzone	q4 -3275,14407 -3350,14446
 #XXX del: not here!!! --- Moritzstr.: Fußgängerzone	q4 -3393,14470 -3410,14479 -3440,14498 -3481,14523
@@ -518,7 +518,8 @@ Im Gestell: Fußgänger	q1 371,4453 267,4375
 Heinitzweg: Fußgänger	q2 10329,1077 10379,1097
 Haewererweg: enge Durchfahrt, Bordstein	q1 12125,1282 12097,1243
 (Weichselstr. - Sasarsteig): Spielplatz	q3 12330,8636 12303,8605 12170,8548
-Kaiser-Wilhelm-Platz: Fußgänger	q4 7201,8870 7320,8939
+#: note: mittlerweile werden Radfahrer offiziell über den Platz geführt
+Kaiser-Wilhelm-Platz: einige Fußgänger	q2 7201,8870 7320,8939
 Kernhofer Str.: Fußgänger, Supermarkt	q2 15369,10921 15353,10870
 Ceciliengärten: schmale Rampe oder Treppe	q3 6356,7479 6289,7472
 #: XXX_prog: für Anhänger q2
@@ -532,7 +533,7 @@ Edenkobener Steg: Fußgänger	q1 6627,4187 6645,4254
 Teltowkanalpromenade: enge und kurvige Unterführung	q2 4261,2703 4258,2693 4247,2652 4202,2622 4193,2616
 Heinrich-Laehr-Park: Fußgänger	q1 1525,581 1372,1208 1328,1387 1249,1672
 #: note: Luftbild
-(Unterführung): Rampen	q2 -8334,14461 -8238,14436 -8256,14418 -8227,14408 -8287,14411
+(Unterführung): Rampen	q2 -8334,14461 -8251,14440 -8256,14418 -8227,14408 -8287,14411
 #: XXX_prog eigentlich nach comments_mount:
 Viktoriapark: starke Steigung, Fußgänger	q4; 8598,9074 8695,9079 8827,9086 8883,9089
 Viktoriapark: starkes Gefälle, Fußgänger	q2; 8883,9089 8827,9086 8695,9079 8598,9074
@@ -1277,6 +1278,22 @@ Mühsamstr.: Bordstein	q2 13232,12628 13273,12649
 (Neufährer Steig - Hennigsdorfer Str.): eng	q2 -2151,23379 -2180,23384 -2248,23409
 (neben dem U-Bahn-Viadukt): Fußgänger	q1 7906,10098 7928,10094 8027,10076
 (Dennewitzstr., hinterer Weg): Fußgänger	q1 8027,10076 8029,10106 8074,10292 8061,10310
+#: XXX_prog BS zum Stresowplatz
+Havelbrücke: Rampe, Fußgänger	q3 -3204,13913 -3159,13886 -3285,13947
+Havelbrücke: Fußgänger	q2 -3371,13987 -3437,14029 -3445,14033
+(Stabholzgarten - Uferweg): Fußgänger	q1- -3445,14033 -3345,13994
+(Weg am Mühlengraben): Fußgänger	q1- -3306,14035 -3370,14115
+(Weg an der Havel): Fußgänger	q1- -3391,13926 -3345,13994 -3306,14035 -3300,14039
+#: note: kein eigentliches Verbot, nur ein Radfahrpfeil
+(Weg an der Havel): Fußgänger; Radfahrer sollten den Weg am Mühlengraben nehmen	q3 -3300,14039 -3146,14145 -3135,14183
+#: XXX_prog BS zum Glacisweg
+(Glacisweg - Ramin-Park): eng, Fußgänger	q2 -3887,14405 -3855,14399 -3844,14430
+Reckeweg: eng	q3 -7109,15286 -7133,15287
+Am Krummen Weg: offiziell nur für Fußgänger	q2 -6891,14891 -7026,14890
+Am Krug: offiziell nur für Fußgänger	q2 -7149,14768 -7015,14772
+(Am Langen Weg - Ungewitterweg): eng	q3 -7033,14984 -7075,15021 -7088,15046 -7116,15053
+(Am Zeppelinpark - Sommerbad West-Staaken): einige Fußgänger	q1 -8426,13818 -8232,13846
+(entlang der Autobahn): einige Fußgänger	q1 6489,7908 6437,7968
 #
 ######################### User Contributions #################################
 # 
@@ -2115,7 +2132,8 @@ Feldspatweg: enge Straße	q0- 11407,1592 11369,1585 11180,1623 11025,1657 10981,1
 #: by: anonymous
 Peenestr.: enge Straße	q1 19328,1149 19434,1265 19575,1239 19737,1204
 #: by: Heidi (...mary):
-Borkzeile: enge Straße	q1 -4220,14311 -4207,14473 -4203,14515 -4185,14572 -4154,14677
+#: corrected_by: srt/policy (q1 -> q0-)
+Borkzeile: enge Straße	q0- -4220,14311 -4207,14473 -4203,14515 -4185,14572 -4154,14677
 #: by: Katharina Achazi:
 #: corrected_by: srt/policy (q3 -> q1)
 Kreutzerweg: enge Straße	q1 4629,3916 4836,4041 4848,4069 4834,4102
@@ -2178,10 +2196,7 @@ Küselstr.: enge Straße	q1 12299,15463 12221,15514 12158,15556 12094,15598 12058,
 Lutherstr. (Spandau): enge Straße	q1 -3248,15543 -3234,15567 -3179,15574 -3134,15578 -3006,15534 -2908,15498
 #: by: Torsten (scholz):
 Zillertalstr.: enge Straße	q1 10813,17193 10498,17192 10228,17191 10198,17196
-#: by: Frank Soukup: vvv
-Am Heideberg: enge Straße	q1 -7114,14579 -7115,14663 -7121,14711
-Am Heideberg: enge Straße	q1 -7149,14768 -7156,14813 -7169,14849 -7209,14937 -7234,15003 -7292,15114 -7326,15145 -7373,15154
-#: by: ^^^
+#XXX del --- #: by: Frank Soukup: vvv --- Am Heideberg: enge Straße	q1 -7114,14579 -7115,14663 -7121,14711 --- Am Heideberg: enge Straße	q1 -7149,14768 -7156,14813 -7169,14849 -7209,14937 -7234,15003 -7292,15114 -7326,15145 -7373,15154 ---#: by: ^^^
 #: by: Maria (ferrusac):
 Reinhardtstr. (Tempelhof): enge Straße	q1 9154,6638 9131,6553 9134,6467 9143,6415
 #: by: Thomas Behle:
@@ -2285,7 +2300,7 @@ Taxusweg: enge Straße	q1 25649,13728 25671,13840 25681,13943 25681,14049
 #: by: Sara Köhler: vvv
 Brauereihof: recht verwinkelt	q1 -2783,15538 -2809,15459 -2858,15475 -2886,15393 -2856,15383 -2801,15365 -2775,15446 -2809,15459
 Freudenberger Weg: als Gehweg ausgeschildert, Borsteinkanten	q1 -4967,15414 -4787,15367
-(Wunderwaldstr. - Dyrotzer Str.): schmale	q2 -5442,14738 -5481,14622
+(Wunderwaldstr. - Dyrotzer Str.): schmal	q2 -5442,14738 -5481,14622
 Frieda-Arnheim-Promenade: einige Fußgänger, Bordstein zur Triftstraße	q1 -2830,15208 -2801,15280 -2779,15358 -2801,15365
 #: by: ^^^
 #: by: verena kauffmann:
@@ -2535,8 +2550,6 @@ Küstriner Str.: enge Straße	q1 11232,309 11343,405 11488,531
 #: by: ^^^
 #: by: Juliane (alberts...) vvv
 Seepromenade: enge Straße	q1 -4582,7213 -4559,7216 -4549,7243
-Havelbrücke: geradlinige Rampe	q2 -3372,13994 -3445,14033
-Havelbrücke: in Serpetinen verlaufende Rampe	q3 -3285,13947 -3197,13899
 #: by: ^^^
 # 
 #: by: domi-89
@@ -2786,6 +2799,10 @@ Bulgenbachweg: enge Straße	q0- 3431,26192 3452,26160 3478,26119 3520,26081 3574,
 Schmöckwitzwerder Süd: enge Straße	q1 30343,-3454 30147,-3816
 # 
 #: by: Stefan Klinkusch: vvv
+(Winzerstr. - Heerstr.): einige Fußgänger	q1 -4687,11885 -4637,11982
+(Schulstr. - Am alten Gaswerk): einige Fußgänger	q1 -8109,13451 -8113,13467 -8196,13727 -8232,13846 -8251,13904 -8201,13924
+#XXX del --- (Schulstr. - Am alten Gaswerk): einige Fußgänger	q1 -8201,13924 -8227,14007 -8223,14062
+(Schulstr. - Am alten Gaswerk): einige Fußgänger	q1 -8223,14062 -8243,14183
 (Bergstr. - Brunsbütteler Damm): einige Fußgänger	q1 -7237,13461 -7209,13529 -7234,13551 -7304,13651 -7322,13784
 (Am Bullengraben - Lutoner Str.): eng, einige Fußgänger	q2 -5785,13606 -5790,13458
 (Am Bullengraben - Lutoner Str.): einige Fußgänger	q1 -5790,13458 -5789,13398 -5788,13291 -5790,13097
@@ -2795,8 +2812,8 @@ Földerichplatz: mehrere Betonpoller, Bordstein	q4 -3941,12545 -3942,12559
 #: by: ^^^
 # 
 #: by: Sven Leipold
-#: corrected_by: srt/policy (q3 -> q1)
-Narzissenpfad: enge Straße	q1 -7387,14951 -7523,14969
+#: corrected_by: srt (q3 -> q0-)
+Narzissenpfad: enge Straße	q0- -7387,14951 -7523,14969
 # 
 #: by: Franka (...griem...)
 #: corrected_by: srt/policy (q2 -> q1) (auf der anderen Seite ebenfalls q1)

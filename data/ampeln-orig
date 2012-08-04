@@ -1530,7 +1530,7 @@ nur Richtung O	X 8142,7221
 	X -4412,12179
 	X -4351,12460
 	F 404,12414
-	X 1286,11834
+	F 1264,11840
 	F 1775,11135
 	X 3358,12258
 	X 10453,-2133
@@ -2104,7 +2104,7 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8626,23432
 	B0 -5551,16323
 	B0 -5609,15780
 	B0 -5680,15112
-	B0 -5770,14837
+	B0 -5718,14828
 #: section: ^^^
 	X 9183,15909
 #: XXX_prog: Ampel nur in Richtung Norden
@@ -2720,6 +2720,12 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: last_checked ^^^
 #: XXX ^^^
 	F 17122,18765
+#: by: Stefan Klinkusch:
+	F -7762,14067
+	F -4924,14535
+#: XXX Baustellenampel
+#: last_checked: 2012-08-04
+	X -6861,15129
 ################################################################################
 #: note: Potsdam vvv
 #: by: http://www.potsdam.de/cms/beitrag/10067917/966975/
@@ -2841,6 +2847,10 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: note: ^^^
 ################################################################################
 #: note: Ampeln elsewhere vvv
+	F -13778,4260
+	X -8906,11139
+	X -9578,13509
+	X -9585,13233
 	B 41198,55961
 	X 18671,22604
 	X 19658,24589

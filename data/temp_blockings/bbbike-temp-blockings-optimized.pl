@@ -1369,16 +1369,7 @@ userdel	q4::inwork 10379,14963 10366,14992
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20120612.1440.371422.html',
-         'until' => 1344031200,
-         'text' => 'Sanierung Wanderweg am Hermsdorfer See, Sperrung im Zeitraum vom 15.06.2012 bis voraussichtlich 03.08.2012 ',
-         'from' => 1339624800,
-         'id' => 2346,
-         'data' => 'userdel	2::inwork 4801,22897 5054,23025 5127,23042 5205,23094 5232,23139
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        {
