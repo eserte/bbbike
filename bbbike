@@ -7142,24 +7142,36 @@ EOF
 	        } elsif ($abk =~ /^[ubr]$/) {
 		    $c->createImage($x, $y, -tags => ["$abk-fg", "$xx,$yy", $pointname, "$abk-" . $category . "-fg"]);
 	        } elsif ($abk eq 'lsa') {
+		    my($rawcategory, @attribs) = split /::/, $category;
+		    my @tags = ("$abk-fg", "$xx,$yy", $pointname,
+			        "$abk-" . $rawcategory . "-fg",
+			        $abk."-".$i);
 		    # keine Verwendung von _coord_as_string
 		    $c->createImage
 		      ($x, $y,
-		       -image => ($category eq 'B'
+		       -image => ($rawcategory eq 'B'
 			          ? $andreaskr_photo
-				  : $category eq 'B0'
+				  : $rawcategory eq 'B0'
 				    ? $andreaskr_grey_photo
-			            : $category eq 'Zbr'
+			            : $rawcategory eq 'Zbr'
 				      ? $zugbruecke_photo
-				      : $category eq 'F'
+				      : $rawcategory eq 'F'
 				        ? $ampelf_photo
 			                : $ampel_photo
 			         ),
-		       -tags => ["$abk-fg", "$xx,$yy", $pointname,
-			         "$abk-" . $category . "-fg",
-			         $abk."-".$i],
+		       -tags => \@tags,
 		      );
-		    $ampeln{"$xx,$yy"} = $category;
+		    if (@attribs) {
+			for my $attrib (@attribs) {
+			    if ($attrib eq 'inwork' && $inwork_photo) {
+				$c->createImage($x, $y,
+					        -anchor => 'nw',
+					        -image => $inwork_photo,
+					        -tags => \@tags);
+			    }
+			}
+		    }
+		    $ampeln{"$xx,$yy"} = $rawcategory;
 	        } elsif ($abk eq 'pl') {
 		    $c->createLine($x, $y, $x, $y,
 			           -tags => ["$abk-fg", "$xx,$yy", $pointname],
