@@ -137,6 +137,8 @@ png-to-gif:	\
 		grenzuebergang_32.gif \
 		hatched_ring.gif \
 		hospital.gif \
+		inwork_12.gif \
+		inwork_18.gif \
 		kino_klein.gif \
 		kirsche.gif \
 		kopfstein_klein.gif \
@@ -214,6 +216,8 @@ png-to-xpm:	\
 		flag_ziel_centered.xpm \
 		gefaelle.xpm \
 		hatched_ring.xpm \
+		inwork_12.xpm \
+		inwork_18.xpm \
 		kirsche.xpm \
 		kreisverkehr.xpm \
 		kreuzung.xpm \
