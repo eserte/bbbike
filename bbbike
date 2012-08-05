@@ -5659,7 +5659,8 @@ sub load_photos {
     $kino_klein_photo    = load_photo($top, 'kino_klein');
     $steigung_photo      = load_photo($top, 'steigung');
     $gefaelle_photo      = load_photo($top, 'gefaelle');
-    $inwork_photo        = load_photo($top, 'inwork');
+    $inwork_photo        = load_photo($top, 'inwork_18');
+    $inwork_klein_photo  = load_photo($top, 'inwork_12');
     $achtung_photo       = load_photo($top, 'achtung');
     $cal_photo           = load_photo($top, 'cal');
     $clock_photo	 = load_photo($top, 'clock');
@@ -6650,7 +6651,8 @@ sub generate_plot_functions {
 		};
 
 		my $draw_street_photo = sub {
-			my($street_photo, $anchor, $delta) = @_;
+			my($street_photo, $anchor, $delta, %opts) = @_;
+			    my $addtag = delete $opts{-addtag};
 			    my($mx,$my) = get_polyline_center(@coordlist);
 
 			    if ($delta) {
@@ -6668,7 +6670,9 @@ sub generate_plot_functions {
 					    -image => $street_photo,
 					    # $abk-img or $abk-fg ?
 					    -tags => [$abk,$strname,"$abk-img",
-						      "$abk-" . $i]);
+						      "$abk-" . $i,
+						      ($addtag ? $addtag : ()),
+						     ]);
 			    if ($street_photo eq $steigung_photo) {
 				if ($strname =~ /([\d\.]+)\s*%/) {
 				    outline_text
@@ -6678,7 +6682,9 @@ sub generate_plot_functions {
 					 -text => "$1%",
 					 -font => $font{'small'},
 					 -tags => [$abk,$strname,"$abk-fg",
-						   "$abk-" . $i],
+						   "$abk-" . $i,
+						   ($addtag ? $addtag : ()),
+						  ],
 					 -outlinewidth => 2,
 					);
 				}
@@ -7036,6 +7042,7 @@ sub generate_plot_functions {
 			my $street_photo;
 			my $street_anchor = "nw";
 			my $street_delta;
+			my $street_addtag;
 			if ($abk eq 'e') {
 			    my $p = get_symbol_scale($abk);
 			    $street_photo = $p if $p;
@@ -7049,8 +7056,9 @@ sub generate_plot_functions {
 			} elsif (@addinfo_hin # ignore @addinfo_rueck for now
 				) {
 			    for my $addinfo_hin (@addinfo_hin) {
-			        if ($addinfo_hin eq 'inwork' && $inwork_photo) {
-				    $street_photo = $inwork_photo;
+			        if ($addinfo_hin eq 'inwork') {
+				    $street_photo = get_symbol_scale('attrib-inwork');
+				    $street_addtag = "attrib-inwork";
 				} elsif ($addinfo_hin eq 'danger' && $achtung_photo) {
 				    $street_photo = $achtung_photo;
 				    $street_anchor = "c";
@@ -7058,7 +7066,7 @@ sub generate_plot_functions {
 			    }
 			}
 			if ($street_photo) {
-			    $draw_street_photo->($street_photo, $street_anchor, $street_delta);
+			    $draw_street_photo->($street_photo, $street_anchor, $street_delta, -addtag => $street_addtag);
 			}
 		    }
 		}
@@ -7163,11 +7171,14 @@ EOF
 		      );
 		    if (@attribs) {
 			for my $attrib (@attribs) {
-			    if ($attrib eq 'inwork' && $inwork_photo) {
-				$c->createImage($x, $y,
-					        -anchor => 'nw',
-					        -image => $inwork_photo,
-					        -tags => \@tags);
+			    if ($attrib eq 'inwork') {
+				my $use_inwork_photo = get_symbol_scale('attrib-inwork');
+				if ($use_inwork_photo) {
+				    $c->createImage($x, $y,
+					    	-anchor => 'nw',
+					    	-image => $use_inwork_photo,
+					    	-tags => [@tags,'attrib-inwork']);
+				}
 			    }
 			}
 		    }
@@ -10543,6 +10554,8 @@ sub plot_sperre {
 	}
 	my $conv = $gesperrt->get_conversion(%conv_args);
 
+	my $use_inwork_photo = get_symbol_scale('attrib-inwork');
+
 	$gesperrt->init;
 	my $real_pos = -1;
 	while (1) {
@@ -10710,7 +10723,7 @@ sub plot_sperre {
 		    my @anchors = qw(nw sw ne se);
 
 		    # Add an additional icon
-		    for my $check (['inwork', $inwork_photo],
+		    for my $check (['inwork', $use_inwork_photo],
 				   ['night',  $night_photo],
 				   ['clock',  $clock_photo],
 				   ['temp',   $cal_photo], # should be last
@@ -10720,7 +10733,7 @@ sub plot_sperre {
 			    $c->createImage($xm,$ym,
 					    -anchor => shift(@anchors),
 					    -image => $photo,
-					    -tags => $tags);
+					    -tags => [@$tags,"attrib-$addinfo"]);
 			    last;
 			}
 		    }
@@ -16009,10 +16022,13 @@ sub scale_width {
     }
 
     foreach (qw(lsa-X lsa-B lsa-B0 lsa-F lsa-Zbr rest kn vf-Vf vf-Kz u b), ($XXX_use_old_R_symbol ? () : ('r'))) {
-	$c->itemconfigure($_ . '-fg', -image => get_symbol_scale($_, $scale));
+	$c->itemconfigure($_ . '-fg && !attrib-inwork', -image => get_symbol_scale($_, $scale));
     }
     foreach (qw(u-U0 b-S0 r-R0 r-RP)) { # overwrite the previous settings of u,b,r
 	$c->itemconfigure($_ . '-fg', -image => get_symbol_scale($_, $scale));
+    }
+    foreach (qw(attrib-inwork)) {
+	$c->itemconfigure('attrib-inwork', -image => get_symbol_scale($_, $scale));
     }
     foreach (qw(e comm-tram nl)) {
 	$c->itemconfigure($_ . '-img', -image => get_symbol_scale($_, $scale));
@@ -16431,6 +16447,14 @@ sub get_symbol_scale {
 	} elsif ($myscale >= 2*$mod) {
 	    my $filename = 'night_klein';
 	    $photo = load_photo($top, $filename, -persistent => 1);
+	}
+	return $photo;
+    } elsif ($tag eq 'attrib-inwork') {
+	my $photo;
+	if ($myscale > 4*$mod) {
+	    $photo = $inwork_photo;
+	} elsif ($myscale >= 2*$mod) {
+	    $photo = $inwork_klein_photo;
 	}
 	return $photo;
     }
