@@ -1835,6 +1835,7 @@ sub gps_data_viewer {
 	    $f->PathEntry
 		(-textvariable => \$gps_data_viewer_file,
 		 -width => BBBikeUtil::max(length($gps_data_viewer_file), 40),
+		 -height => 20,
 		)->pack(-fill => "x", -expand => 1, -side => "left");
 	$pe->focus;
 	my $showb = 
