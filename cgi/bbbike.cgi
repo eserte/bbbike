@@ -105,6 +105,7 @@ use vars qw($VERSION $VERBOSE $WAP_URL
 	    $include_outer_region @outer_berlin_places $outer_berlin_qr
 	    $warn_message $use_utf8 $data_is_wgs84 $osm_data
 	    $bbbike_start_js_version $bbbike_css_version
+	    $use_file_cache $file_cache
 	   );
 # XXX This may be removed one day
 use vars qw($use_cooked_street_data);
@@ -177,6 +178,14 @@ with the C<localroutefile> parameter.
 =cut
 
 undef $local_route_dir;
+
+=item $use_file_cache
+
+Cache some requests.
+
+=cut
+
+$use_file_cache = 0;
 
 =back
 
@@ -1126,6 +1135,24 @@ if (defined $q->param("ossp") && $q->param("ossp") !~ m{^\s*$}) {
 	$q->param('via', $args[1]);
 	$q->param('ziel', $args[2]);
 	# more params will be ignored
+    }
+}
+
+# Try cache?
+if ($use_file_cache) {
+    my $output_as = $q->param('output_as');
+    if ($output_as && $output_as =~ m{^(kml-track)$}) {
+	require BBBikeCGICache;
+	$file_cache = BBBikeCGICache->new($Strassen::datadirs[0], $Strassen::Util::cacheprefix);
+	if ($file_cache->exists_content($q)) {
+	    my($content, $meta) = $file_cache->get_content($q);
+	    if ($content && $meta) {
+warn "DEBUG: Cache hit for " . $q->query_string;
+		http_header(@{ $meta->{headers} || [] });
+		print $content;
+		my_exit(0);
+	    }
+	}
     }
 }
 
@@ -3848,14 +3875,19 @@ sub display_route {
     if (defined $output_as && $output_as eq 'kml-track') {
 	require Strassen::KML;
 	my $filename = filename_from_route($startname, $zielname, "track") . ".kml";
-	http_header
+	my @headers =
 	    (-type => "application/vnd.google-earth.kml+xml",
 	     -Content_Disposition => "attachment; filename=$filename",
 	    );
+	http_header(@headers);
 	my $s = $route_to_strassen_object->();
 	my $s_kml = Strassen::KML->new($s);
 	$s_kml->{"GlobalDirectives"}->{"map"}[0] = "polar" if $data_is_wgs84;
-	print $s_kml->bbd2kml(startgoalicons => 1);
+	my $kml_output = $s_kml->bbd2kml(startgoalicons => 1);
+	print $kml_output;
+	if ($file_cache) {
+	    $file_cache->put_content($q, $kml_output, {headers => \@headers});
+	}
 	return;
     }
 
