@@ -20270,12 +20270,12 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Gleimstr./Stargarder Str.: Bauarbeiten in Höhe Schönhauser Allee, Einbahnstraße Richtung Westen',
+       text  => 'Gleimstr.: Bauarbeiten zwischen Ystadter Str. und Schönhauser Allee, Einbahnstraße Richtung Westen',
        type  => 'handicap',
        data  => <<EOF,
 #: last_checked: 2012-07-22 (an der Ystadter Str.)
 #: next_check: 2012-08-10
-userdel	q3::inwork; 10423,15698 10427,15699 10564,15721 10713,15746 10953,15787 11086,15772
+userdel	q3::inwork; 10423,15698 10427,15699 10564,15721 10713,15746 10953,15787
 EOF
      },
      { from  => 1336057200, # 2012-05-03 17:00
@@ -20495,6 +20495,24 @@ EOF
        source_id => 'INKO_113563',
        data  => <<EOF,
 userdel	q4::inwork 9178,556 9158,551 9069,506
+EOF
+     },
+     { from  => 1344282201, # 2012-08-06 21:43
+       until => 1346364000, # 2012-08-31 00:00
+       text  => 'Chemnitzer Str. (Kaulsdorf): Baustelle, Straße vollständig gesperrt in beiden Richtungen zwischen Alt-Kaulsdorf und Am Niederfeld, 16.07.2012 bis 30.08.2012 ',
+       type  => 'handicap',
+       source_id => 'INKO_113817',
+       data  => <<EOF,
+userdel	q4::inwork 22484,11270 22436,11054
+EOF
+     },
+     { from  => 1344142800, # 2012-08-05 07:00
+       until => 1355580000, # 2012-12-15 15:00
+       text  => 'Stargarder Str. (Prenzlauer Berg): Baustelle, Fahrtrichtung gesperrt Richtung Prenzlauer Allee zwischen Schönhauser Allee und Greifenhagener Str., bis Mitte Dezember 2012',
+       type  => 'handicap',
+       source_id => 'IM_019043',
+       data  => <<EOF,
+userdel	q4::inwork; 10953,15787 11086,15772
 EOF
      },
     );

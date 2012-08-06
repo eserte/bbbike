@@ -1025,15 +1025,6 @@ userdel	q4::inwork 425,8766 490,8716
        undef,
        undef,
        undef,
-       {
-         'until' => 1344211200,
-         'text' => 'Open Air Gallery am 5. August 2012 auf der Oberbaumbrücke ',
-         'from' => 1344031200,
-         'id' => 2206,
-         'data' => 'userdel	q4::temp 13178,10623 13206,10651 13305,10789 13332,10832
-',
-         'type' => 'gesperrt'
-       },
        undef,
        undef,
        undef,
@@ -1089,18 +1080,8 @@ userdel	q4::inwork 425,8766 490,8716
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_019026',
-         'until' => 1344211200,
-         'text' => 'Lebuser Str., Koppenstr. und Str. der Pariser Kommune (Friedrichshain): Veranstaltung, Straßen nördlich der Karl-Marx-Str. vollständig gesperrt (bis 06.08.12, 02:00)',
-         'from' => 1343894400,
-         'id' => 2262,
-         'data' => 'userdel	2::temp 12360,12505 12364,12589
-userdel	2::temp 12891,12549 12869,12425
-userdel	2::temp 12635,12629 12606,12471
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        undef,
        undef,
        undef,
@@ -1338,12 +1319,12 @@ userdel	q4::inwork 10893,14705 11101,14768
        undef,
        {
          'until' => undef,
-         'text' => 'Gleimstr./Stargarder Str.: Bauarbeiten in Höhe Schönhauser Allee, Einbahnstraße Richtung Westen',
+         'text' => 'Gleimstr.: Bauarbeiten zwischen Ystadter Str. und Schönhauser Allee, Einbahnstraße Richtung Westen',
          'from' => undef,
          'id' => 2342,
          'data' => '#: last_checked: 2012-07-22 (an der Ystadter Str.)
 #: next_check: 2012-08-10
-userdel	q3::inwork; 10423,15698 10427,15699 10564,15721 10713,15746 10953,15787 11086,15772
+userdel	q3::inwork; 10423,15698 10427,15699 10564,15721 10713,15746 10953,15787
 ',
          'type' => 'handicap'
        },
@@ -1480,6 +1461,27 @@ userdel	2::inwork 8278,10384 8263,10349 8258,10338
 userdel	2::inwork 8263,10349 8315,10347 8333,10167 8360,10133
 ',
          'type' => 'gesperrt'
+       },
+       undef,
+       {
+         'source_id' => 'INKO_113817',
+         'until' => 1346364000,
+         'text' => 'Chemnitzer Str. (Kaulsdorf): Baustelle, Straße vollständig gesperrt in beiden Richtungen zwischen Alt-Kaulsdorf und Am Niederfeld, 16.07.2012 bis 30.08.2012 ',
+         'from' => 1344282201,
+         'id' => 2367,
+         'data' => 'userdel	q4::inwork 22484,11270 22436,11054
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_019043',
+         'until' => 1355580000,
+         'text' => 'Stargarder Str. (Prenzlauer Berg): Baustelle, Fahrtrichtung gesperrt Richtung Prenzlauer Allee zwischen Schönhauser Allee und Greifenhagener Str., bis Mitte Dezember 2012',
+         'from' => 1344142800,
+         'id' => 2368,
+         'data' => 'userdel	q4::inwork; 10953,15787 11086,15772
+',
+         'type' => 'handicap'
        }
      
 );
