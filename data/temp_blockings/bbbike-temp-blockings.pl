@@ -20362,7 +20362,7 @@ EOF
      },
      { from  => 1340082000, # 2012-06-19 07:00
        until => 1349017200, # 2012-09-30 17:00
-       text  => 'Saalestr. (Neukölln): Straße vollständig gesperrt (bis Ende 09/12) in beiden Richtungen zwischen Karl-Marx-Str. und Wipperstr. ',
+       text  => 'Saalestr. (Neukölln): Fahrbahn gesperrt (bis Ende 09/12) in beiden Richtungen zwischen Karl-Marx-Str. und Wipperstr. ',
        type  => 'handicap',
        source_id => 'IM_018927',
        data  => <<EOF,

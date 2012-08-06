@@ -1397,7 +1397,7 @@ userdel	q4::inwork 10379,14963 10366,14992
        {
          'source_id' => 'IM_018927',
          'until' => 1349017200,
-         'text' => 'Saalestr. (Neukölln): Straße vollständig gesperrt (bis Ende 09/12) in beiden Richtungen zwischen Karl-Marx-Str. und Wipperstr. ',
+         'text' => 'Saalestr. (Neukölln): Fahrbahn gesperrt (bis Ende 09/12) in beiden Richtungen zwischen Karl-Marx-Str. und Wipperstr. ',
          'from' => 1340082000,
          'id' => 2352,
          'data' => 'userdel	q4::inwork 13161,7173 13058,7165
@@ -1415,16 +1415,7 @@ userdel	q4::inwork 10379,14963 10366,14992
          'type' => 'handicap'
        },
        undef,
-       {
-         'source_id' => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20120703.1445.372223.html',
-         'until' => 1344117599,
-         'text' => 'Arbeiten in der Frohnauer Straße: während der Baumaßnahme ist die Frohnauer Straße zwischen Falkentaler Steig und Alemannenstraße in Richtung Alemannstraße gesperrt (vom 9. Juli 2012 bis voraussichtlich 4. August 2012)',
-         'from' => 1341698400,
-         'id' => 2355,
-         'data' => 'userdel	q4::inwork; 2492,24325 2469,24391 2325,24486 2262,24505 2146,24535 2058,24576 1925,24599 1878,24619 1868,24633 1838,24675 1802,24707 1736,24722
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
