@@ -85,10 +85,10 @@ sub put_content {
     my $rootdir = $self->rootdir;
     my $content_file = $rootdir . "/" . $digest . ".content";
     my $meta_file = $rootdir . "/" . $digest . ".meta";
-    if (open my $ofh, ">", $content_file) {
+    if (open my $ofh, ">", "$content_file.$$") {
 	print $ofh $content;
 	if (!close $ofh) {
-	    warn "Error while closing $content_file: $!";
+	    warn "Error while closing $content_file.$$: $!";
 	    return;
 	}
     } else {
@@ -96,11 +96,21 @@ sub put_content {
 	return;
     }
     require Storable;
-    eval { Storable::nstore($meta, $meta_file) };
+    eval { Storable::nstore($meta, "$meta_file.$$") };
     if ($@) {
-	warn "Error while writing $meta_file: $!";
+	warn "Error while writing $meta_file.$$: $!";
 	return;
     }
+
+    if (!rename "$content_file.$$", $content_file) {
+	warn "Error while renaming $content_file.$$ to $content_file: $!";
+	return;
+    }
+    if (!rename "$meta_file.$$", $meta_file) {
+	warn "Error while renaming $meta_file.$$ to $meta_file: $!";
+	return;
+    }
+
     1;
 }
 
