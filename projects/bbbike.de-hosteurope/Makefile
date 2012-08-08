@@ -84,6 +84,7 @@ DEPLOY_TARGETS=			prepare-bbbike-data \
 				init-environment \
 				test \
 				create-all-maps \
+				clean-expired-cache \
 				post-deploy-info
 
 # only bbbike data, no program, no mapserver
@@ -764,6 +765,9 @@ create-all-maps:
 
 init-environment:
 	lwp-request -m GET 'http://${BBBIKE_HOSTEUROPE_HOST}/cgi-bin/bbbike.cgi?init_environment=1'
+
+clean-expired-cache:
+	lwp-request -m GET 'http://${BBBIKE_HOSTEUROPE_HOST}/cgi-bin/bbbike.cgi?clean_expired_cache=1'
 
 init-local-environment:
 	lwp-request -m GET '${LOCAL_CGI_URL}/bbbike.cgi?init_environment=1'

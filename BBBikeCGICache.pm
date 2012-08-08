@@ -136,12 +136,22 @@ sub clean_expired_cache {
     my $uprootdir = File::Basename::dirname($rootdir);
     opendir my $DIR, $uprootdir
 	or die "Can't open $uprootdir: $!";
+    my $count_success = 0;
+    my $count_error = 0;
     while(defined(my $file = readdir $DIR)) {
 	next if $file eq '.' || $file eq '..';
 	next if $file eq $rootbase; # keep the current one
-	File::Path::rmtree("$uprootdir/$file")
-		or warn "Cannot rmtree $uprootdir/$file: $!";
+	if (!File::Path::rmtree("$uprootdir/$file")) {
+	    $count_error++;
+	    warn "Cannot rmtree $uprootdir/$file: $!";
+	} else {
+	    $count_success++;
+	}
     }
+    return {
+	    count_success => $count_success,
+	    count_errors  => $count_error,
+	   };
 }
 
 sub rootdir { shift->{rootdir} }

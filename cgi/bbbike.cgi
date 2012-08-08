@@ -1229,6 +1229,15 @@ if (defined $q->param('begin')) {
 	}
     }
     my_exit(0);
+} elsif (defined $q->param('clean_expired_cache')) {
+    require BBBikeCGICache;
+    my $file_cache = BBBikeCGICache->new($Strassen::datadirs[0], $Strassen::Util::cacheprefix);
+    http_header(-type => 'text/plain',
+		@no_cache,
+	       );
+    my $res = $file_cache->clean_expired_cache;
+    print "DONE. $res->{count_success} directory/ies deleted, $res->{count_errors} error/s\n";
+    my_exit(0);
 } elsif (defined $q->param('drawmap')) {
     my($x,$y) = split /,/, $q->param('drawmap');
     my %res = create_map('-x' => $x, '-y' => $y, -strlabel => 1, -force => 0);
