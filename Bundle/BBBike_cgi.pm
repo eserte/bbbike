@@ -37,6 +37,8 @@ MIME::Lite	- Versenden von Benutzer-Kommentaren im Webinterface
 
 String::Approx 2.7	- oder man verwendet agrep (mindestens Version 3.0)
 
+Digest::MD5	- für den File-Cache im CGI-Programm
+
 GD 1.18	- zum On-the-fly-Erzeugen von Grafiken beim CGI-Programm
 
 PDF::Create 0.06	- Erzeugung der Route als PDF-Dokument

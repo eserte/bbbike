@@ -123,6 +123,8 @@ my @req_table =
    'optional für den temp_blockings-Editor und ungenaue Suche in der Perl/Tk-Applikation'],
   [qw/Storable		0	all	0|4	base/, # already part of perl 5.8 and newer
    'für das Caching beim CGI-Programm'],
+  [qw/Digest::MD5	0	all	2	cgi/,
+   'für den File-Cache im CGI-Programm'],
   [qw/MLDBM		0	all	0|4	base/],
   [qw/GD		1.18	all	2	base/,
    'zum On-the-fly-Erzeugen von Grafiken beim CGI-Programm'],

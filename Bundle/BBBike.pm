@@ -81,6 +81,8 @@ String::Similarity	- optional für den temp_blockings-Editor und ungenaue Suche i
 
 Storable	- für das Caching beim CGI-Programm
 
+Digest::MD5	- für den File-Cache im CGI-Programm
+
 MLDBM
 
 GD 1.18	- zum On-the-fly-Erzeugen von Grafiken beim CGI-Programm
@@ -191,7 +193,7 @@ Geo::Coder::OSM	- Geocoding mit OpenStreetMap-Daten
 
 Flickr::API	- Flickr-Bilder in BBBike anzeigen
 
-Image::Info 1.29
+Image::Info 1.32
 
 Test::More
 
