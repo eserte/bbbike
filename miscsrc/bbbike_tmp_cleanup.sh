@@ -22,7 +22,7 @@ then
 fi
 
 case "`hostname`" in
-    biokovo.herceg.de | biokovo.rezic.de |biokovo-amd64.herceg.de | biokovo-amd64.rezic.de | mosor | devpc01-debian | cvrsnica )
+    biokovo.herceg.de | biokovo.rezic.de |biokovo-amd64.herceg.de | biokovo-amd64.rezic.de | mosor | devpc01-debian | cvrsnica.herceg.de | cvrsnica.rezic.de )
         ;;
     *)
         echo "Should only run on biokovo, cvrsnica, or mosor"
@@ -89,6 +89,8 @@ rm /tmp/2???????.trk-gpspoints.bbd
 rm /tmp/??????????_panoramio.jpg
 ## Flickr leftovers
 rm /tmp/??????????_flickr.jpg
+## File Cache for CGI
+rm -rf /tmp/bbbike-cgicache-[0-9]*
 
 if [ "$deleteall" ]
 then
