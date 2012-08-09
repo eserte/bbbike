@@ -94,6 +94,13 @@ RADZEIT_APACHE_DIR_LOCAL=	$(BBBIKE_PROJECTS_DIR)/bbbike.de-hosteurope
 RADZEIT_APACHE_DIR=	$(RADZEIT_APACHE_DIR_LOCAL)
 BBBIKE_MAPSERVER_URL=	http://$(RADZEIT_HOST)/cgi-bin/mapserv
 
+.elif ${TARGET} == "bbbike-pps"
+
+RADZEIT_HOST=		bbbike-pps
+RADZEIT_APACHE_DIR_LOCAL=	$(BBBIKE_PROJECTS_DIR)/bbbike.de-hosteurope
+BBBIKE_MAPSERVER_URL=	http://$(RADZEIT_HOST)/cgi-bin/mapserv
+BBBIKE_RADZEIT_APACHE_DIR=${BBBIKE_HOSTEUROPE_APACHE_DIR}
+
 .elif ${TARGET} == "hosteurope"
 
 # compatibility with usage of old ...RADZEIT... vars
@@ -171,7 +178,7 @@ FONTS_LIST=		fonts-debian.list
 FONTS_LIST=		fonts-biokovo.list
 .endif
 
-.elif ${TARGET} == "hosteurope" || ${TARGET} == "bbbike.hosteurope.herceg.de"
+.elif ${TARGET} == "hosteurope" || ${TARGET} == "bbbike.hosteurope.herceg.de" || ${TARGET} == "bbbike-pps"
 
 HOST=			$(RADZEIT_HOST)
 HTDOCS=			public
@@ -181,7 +188,7 @@ MAPSERVER_URL=		http://$(HOST)$(MAPSERVER_RELURL)
 #MAPSERVER_PROG_RELURL=	/cgi-bin/mapserv
 #MAPSERVER_PROG_URL=	http://$(HOST)$(MAPSERVER_PROG_RELURL)
 BBBIKECGI_CONFIG=	$(RADZEIT_APACHE_DIR)/cgi-bin/bbbike.cgi.config
-.if ${TARGET} == "hosteurope"
+.if ${TARGET} == "hosteurope" || ${TARGET} == "bbbike-pps"
 BBBIKECGI_CONFIG_LOCAL=	$(ABS_LOCAL_BBBIKE_DIR)/cgi/bbbike-hosteurope.cgi.config
 .else
 BBBIKECGI_CONFIG_LOCAL=	$(RADZEIT_APACHE_DIR_LOCAL)/cgi-bin/bbbike.cgi.config
@@ -196,13 +203,13 @@ BBBIKE_IMAGES_RELURL=	/BBBike/images
 BBBIKE_URL=		http://$(HOST)$(BBBIKE_CGI_RELURL)/bbbike.cgi
 IMAGE_SUFFIX=		png
 
-.if ${TARGET} == "hosteurope"
+.if ${TARGET} == "hosteurope" || ${TARGET} == "bbbike-pps"
 WWW_USER=		www-data
 .elif ${TARGET} == "bbbike.hosteurope.herceg.de"
 WWW_USER=		eserte
 .endif
 
-.if ${TARGET} == "hosteurope"
+.if ${TARGET} == "hosteurope" || ${TARGET} == "bbbike-pps"
 FONTS_LIST=		fonts-debian.list
 .elif ${TARGET} == "bbbike.hosteurope.herceg.de" && exists(/etc/debian_version)
 FONTS_LIST=		fonts-debian.list
@@ -363,6 +370,7 @@ html:	${HTMLFILES}
 
 misc:	tmp-directory permissions crontab check-crontab httpd.conf
 
+.if ${TARGET} != "bbbike-pps"
 Makefile.${TARGET}.inc:	${ABS_LOCAL_BBBIKE_DIR}/Makefile \
 			${ABS_LOCAL_BBBIKE_DIR}/BBBikeVar.pm \
 			${ABS_LOCAL_BBBIKE_DIR}/BBBikeMapserver.pm \
@@ -385,6 +393,7 @@ Makefile.${TARGET}.inc:	${ABS_LOCAL_BBBIKE_DIR}/Makefile \
 .endfor
 	echo -n "ALL_LAYERS=	" >> $@
 	perl -I${ABS_LOCAL_BBBIKE_DIR} -MBBBikeMapserver -e 'print join(" ", BBBikeMapserver::all_layers()), "\n"' >> $@
+.endif
 
 .SUFFIXES:	.html-tpl .html .map-tpl .map .js-tpl .js .conf-tpl
 
