@@ -1433,8 +1433,8 @@ userdel	q3::inwork 11920,14468 11642,14625
        },
        {
          'source_id' => 'IM_019006',
-         'until' => 1347289200,
-         'text' => 'Berliner Str. (Pankow): Baustelle, Fahrtrichtung gesperrt (bis Mitte 09/12) stadtauswärts zwischen Mühlenstr. und Elsa-Brandström-Str.',
+         'until' => 1349103600,
+         'text' => 'Berliner Str. (Pankow): Baustelle, Fahrtrichtung gesperrt (bis Anfang 10/12) stadtauswärts zwischen Mühlenstr. und Elsa-Brändström-Str. ',
          'from' => 1342945020,
          'id' => 2363,
          'data' => 'userdel	q4::inwork; 10927,17022 10908,17142
@@ -1490,6 +1490,26 @@ userdel	2::inwork 8263,10349 8315,10347 8333,10167 8360,10133
          'id' => 2369,
          'data' => '#: next_check: 2012-09-10
 userdel	q4::inwork; 11389,10463 11393,10390
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1208/nachricht4740.html',
+         'until' => 1344826800,
+         'text' => 'Sperrung der Bösebrücke ("Bornholmer Brücke") in Fahrtrichtung Ost von Freitag, den 10.08.2012, 20:00 Uhr bis Montag, den 13.08.2012, 5:00 Uhr, Ausweichen auf gegenüberliegenden Gehweg möglich',
+         'from' => 1344535200,
+         'id' => 2370,
+         'data' => 'userdel	q4::inwork; 9781,16569 9816,16565 9883,16557 9998,16547
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1208/nachricht4740.html',
+         'until' => 1345431600,
+         'text' => 'Sperrung der Bösebrücke ("Bornholmer Brücke") in Fahrtrichtung West von Freitag, den 17.08.2012, 20:00 Uhr bis Montag, den 20.08.2012, 5:00 Uhr, Ausweichen auf gegenüberliegenden Gehweg möglich',
+         'from' => 1345140000,
+         'id' => 2371,
+         'data' => 'userdel	q4::inwork; 9998,16547 9883,16557 9816,16565 9781,16569
 ',
          'type' => 'handicap'
        }
