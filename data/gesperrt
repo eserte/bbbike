@@ -250,6 +250,7 @@ Otto-von-Simson-Str.	1 2560,5044 2627,5095 2835,5410
 In den neuen Gärten	1 7111,3432 7318,3306 7359,3349 7409,3331 7472,3308
 Braillestr.	1 4430,5324 4477,5250 4512,5199
 Mudrackzeile	1 6985,17812 7020,17690
+Mariabrunner Weg	1 6841,17781 6909,17796 6985,17812
 Gustav-Müller-Str.	1 7643,8634 7642,8815
 Gustav-Müller-Platz	1 7644,8560 7614,8599 7643,8634 7682,8598 7644,8560
 Niederlagstr.	2:inwork 9943,12364 9934,12418
@@ -864,6 +865,28 @@ Zeltinger Platz	1s 2404,25187 2355,25252 2395,25273 2446,25265 2490,25211 2486,2
 Ludolfinger Platz	1s 2277,25033 2245,25016 2205,25042 2192,25083 2216,25117 2277,25094 2285,25059 2277,25033
 Sewanstr. - Balatonstr.	1s 17705,10232 17741,10386
 Hönower Str. (Karlshorst) (Ausweichen auf Sandbankette möglich)	1s 18377,9366 18490,9387
+Mittelstreifen	3nocross::ignrte 6422,15708 6555,15827 6661,15921
+Antwerpener Str. -> Seestr.: Mittelstreifen	3::igndisp 6690,15671 6555,15827 6422,15708
+Antwerpener Str. -> Togostr.: Mittelstreifen	3::igndisp 6690,15671 6555,15827 6530,15849
+Seestr. -> Togostr.: Mittelstreifen	3::igndisp 6422,15708 6555,15827 6530,15849
+Togostr. -> Antwerpener Str.: Mittelstreifen	3::igndisp 6530,15849 6555,15827 6690,15671
+Togostr. -> Seestr.: Mittelstreifen	3::igndisp 6530,15849 6555,15827 6661,15921
+Seestr. -> Antwerpener Str.: Mittelstreifen	3::igndisp 6661,15921 6555,15827 6690,15671
+Abbiegen nicht möglich	3nocross::ignrte 7602,17399 7684,17435 7902,17166
+Residenzstr. -> Fahlandgasse: Abbiegen nicht möglich	3::igndisp 7602,17399 7684,17435 7681,17475
+Fahlandgasse -> Letteallee: Abbiegen nicht möglich	3::igndisp 7681,17475 7684,17435 7707,17445
+Fahlandgasse -> Residenzstr.: Abbiegen nicht möglich	3::igndisp 7681,17475 7684,17435 7902,17166
+Mittelstreifen	3nocross::ignrte 7579,17532 7572,17558 7540,17675
+Am Schäfersee -> Residenzstr.: Mittelstreifen	3::igndisp 7477,17544 7572,17558 7540,17675
+Mittelstreifen	3nocross::ignrte 5550,18775 5635,18776 5713,18777
+Pfifferlingweg -> Lindauer Allee: Mittelstreifen	3::igndisp 5635,18736 5635,18776 5550,18775
+Lindauer Allee -> Pfifferlingweg: Mittelstreifen	3::igndisp 5713,18777 5635,18776 5635,18736
+Mittelstreifen	3nocross::ignrte 5713,18777 5791,18778 5869,18779
+Holzweidepfad -> Lindauer Allee: Mittelstreifen	3::igndisp 5792,18727 5791,18778 5713,18777
+Lindauer Allee -> Holzweidepfad: Mittelstreifen	3::igndisp 5869,18779 5791,18778 5792,18727
+Mittelstreifen	3nocross::ignrte 5906,16403 5700,16584 5596,16662
+Querweg durch die Dauerkolonie Togo -> Togostr.: Mittelstreifen	3::igndisp 5900,16817 5700,16584 5906,16403
+Togostr. -> Querweg durch die Dauerkolonie Togo: Mittelstreifen	3::igndisp 5596,16662 5700,16584 5900,16817
 Mittelstreifen	3nocross::ignrte 21251,18508 21163,18347 21009,18055
 Märkische Allee -> Flämingstr.: Mittelstreifen	3::igndisp 21251,18508 21163,18347 21220,18323
 Flämingstr. -> Märkische Allee: Mittelstreifen	3::igndisp 21220,18323 21163,18347 21009,18055
@@ -2068,6 +2091,8 @@ tragen (Treppe, ca. 20 Stufen)	0:25:-12 19160,14935
 tragen (Treppe)	0:30:70 89344,-5795
 tragen, langgezogene Stufen (13 Stufen)	0:25:-168 20704,1383
 tragen (31 Stufen oder Kinderwagenrampe)	0:40:-256 13168,21706
+Tor	BNP:1:-110:trailer=3 10483,14720
+Tor	BNP:1:72:trailer=3 10476,14741
 Schranke, lichte Breite 120cm	BNP:1:-71:trailer=3 -7685,15092
 Poller, lichte Breite 100cm	BNP:1:-255:trailer=5 -7109,15286
 Schranke	BNP:1:-123:trailer=5 -3300,14039
@@ -2326,7 +2351,6 @@ Bebelplatz: Bauarbeiten, vollständig gesperrt	2:inwork 9795,12293 9869,12297
 Hinter der Katholischen Kirche: Bauarbeiten, vollständig gesperrt	2:inwork 9808,12182 9801,12245 9795,12293 9780,12401
 Bebelplatz: Bauarbeiten an der Staatsoper	2:inwork 9743,12239 9702,12307 9734,12395
 Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
-Boyenweg - Uferweg: wegen Bauarbeiten gesperrt	2:inwork 7886,14518 7787,14473
 Caroline-Michaelis-Str.: Bauarbeiten	2:inwork 9151,13941 9125,13973
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12748
 Kynaststraße: Bauarbeiten im südlichen Abschnitt	2:inwork 14652,10201 14724,10297 14766,10372 14795,10473 14805,10518
@@ -2710,9 +2734,9 @@ Straßenbahn	3nocross::ignrte 16837,17440 16947,17506 17159,17631
 Falkenberger Chaussee -> Rüdickenstr.: Straßenbahn	3::igndisp 17159,17631 16947,17506 16992,17472
 Rüdickenstr. -> Falkenberger Chaussee: Straßenbahn	3::igndisp 16992,17472 16947,17506 16837,17440
 Rudolf-Reusch-Str. [Wohngebiet]	1 15732,12562 15657,12562 15657,12648 15732,12650
-Letteallee	1 8226,17479 8110,17470 8014,17475 7845,17460 7684,17435
+Letteallee	1 8226,17479 8110,17470 8014,17468 7845,17455 7707,17445 7684,17435
 Mickestr.	1 8185,17352 8134,17398 8110,17470
-Kühleweinstr.	1 8014,17475 8043,17282 8088,17218
+Kühleweinstr.	1 8014,17468 8043,17282 8088,17218
 Seekorso	1 -8828,6418 -8776,6425 -8682,6435 -8578,6462 -8470,6515 -8376,6579
 Seekorso	1s -8376,6579 -8354,6590
 Seekorso	1 -8354,6590 -8301,6635 -8249,6680 -8199,6720 -8144,6762 -8087,6806 -8032,6852 -7975,6900 -7921,6946 -7871,6990

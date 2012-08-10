@@ -58,7 +58,7 @@ Germanenstr. (oder nur das kleine Stück bis Waldsteg?)	?::projected 8406,19081 8
 # 
 #: by: Tagesspiegel vom 2009-04-12, soll 2009 realisiert werden
 #: corrected_by: MoPo 2009-08-01, soll 2010 realisiert werden
-#: last_checked: 2012-08-01
+#: last_checked: 2012-08-10
 #: next_check: 2012-10-01
 Annenstr./Heinrich-Heine-Platz	?::projected 11349,11227 11249,11268 11091,11379 11052,11414 11039,11425 10915,11535 10819,11664
 # 
@@ -96,14 +96,10 @@ Kolonie Frühauf: Sanierung der Radfahrverbindung. Welchen Belag wird der Weg dan
 #: XXX siehe auch Einträge in handicap_s-orig
 Breite Str./Rathausstr.: Ampel in Bau	?::inwork 10281,12310
 # 
-#: last_checked: 2012-06-12
-#: next_check: 2012-08-01
-Marthashof: Qualität nach den Bauarbeiten?	?::inwork 10440,14730 10550,14770
-# 
 #: XXX auch die Südpanke einzeichnen, falls sie sichtbar ist
 #: XXX wahrscheinlich sehr guter Beton, wahrscheinlich unbeleuchtet
-#: last_checked: 2012-07-16
-#: next_check: 2012-08-05
+#: last_checked: 2012-08-10
+#: next_check: 2012-09-01
 neuer Weg an der Südpanke: wo genau wird der Weg verlaufen? Nachts beleuchtet? Qualität?	?::inwork 8481,13936 8329,14120
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/31re.pdf/file
@@ -585,6 +581,7 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 # Das heißt diese Strecken werden nicht bei einer erweiterten Suche aufgenommen
 # und dem CGI-Benutzer auch nicht präsentiert.
 # 
+Am Schäfersee: liegt hier auch Verbundsteinpflaster?	? 7440,17474 7356,17449 7270,17467 7222,17471
 B2: gibt es hier Radwege?	? -9972,6846 -9854,6890 -9640,6971
 wo fängt die Radspur in der Müllerstr./Chausseestr. an	? 8246,14675 8153,14769 8138,14786 8057,14876
 #
@@ -690,9 +687,7 @@ Baltenring: Vorfahrt?	? 23550,13128 23465,13090
 #: XXX_prog: 3nocross for trailer
 Mariendorfer Damm: überqueren mit Anhänger hier wegen Pömpel vielleicht nicht möglich, nochmal prüfen	? 10329,1231
 # 
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/37re.pdf/file?y=2011
-#: XXX Was bedeutet das?
-Tegeler Str.: Straße wird eingezogen?	? 7085,15226 7020,15314
+#XXX del --- hier passiert bestimmt nichts --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/37re.pdf/file?y=2011 --- #: XXX Was bedeutet das? --- Tegeler Str.: Straße wird eingezogen?	? 7085,15226 7020,15314
 # 
 #: by: http://www.berlin.de/ba-spandau/presse/archiv/20110815.1525.354916.html (Komplettierung des Ufergrünzugws)
 Uferweg am Salzhof: Hier muss noch der genaue Wegverlauf ermittelt werden; ist die gesamte Strecke asphaltiert?	? -1942,16105 -1979,15994 -1923,15684
@@ -717,9 +712,9 @@ Bodenschwelle, Umfahrung kann zugeparkt sein	? 23349,2240
 # 
 Billerbecker Weg: Asphalt oder Beton?	? 2117,18632 2196,18642 2323,18653 2413,18655
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/20re.pdf/file
-#: last_checked: 2012-06-08
-#: next_check: 2012-08-01
-Bootsbauerstr.: private Wegverbindung, Qualität, Lage?	? 15079,10108 15033,10013
+#: last_checked: 2012-08-10
+#: next_check: 2012-09-01
+Bootsbauerstr.: wird es eine Verbindung zur Bahrfeldtstr. geben?	? 15033,10013 15024,9994
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/19re.pdf/file
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/52re.pdf/file?y=2011
@@ -2176,8 +2171,7 @@ Basdorf: Qualität des Radwegs entlang der Bahnstrecke?	? 12034,35012 12083,35157
 #: XXX: florian (...wessels) meint: "gut"
 #: XXX anonymous meint schlechtes Kopfsteinpflaster, Schrittgeschwindigkeit ("schlechtes" ist wahrscheinlich falsch)
 Rütlistr.: Qualität? Kann man als Radfahrer weiter zur Baseler Str. fahren?	? 7107,17342 7068,17485
-#: XXX laut osm: bicycle=yes
-Schäfersee - Baseler Str.: Qualität? Für Radfahrer offiziell befahrbar? Nachts beleuchtet?	? 7189,17666 7181,17678 6900,17608
+Rütlistr. - Baseler Str.: Gibt es hier eine Verbindung? Qualität? Nachts beleuchtet?	? 7068,17485 7046,17550 6900,17608
 #: by: http://www.reinickendorf.de/index_8368_de.html
 #: XXX Ausbau zum verkehrsberuhigten Bereich, außerdem Ersetzen des Pflasters durch eine Betonpflasterfahrbahn (Verbundsteinpflaster?), bis Frühjahr 2009
 Wittenauer Str.: Qualität der Wittenauer Str. (Verbundsteinpflaster oder etwas anderes)? Sind (Teile der) Wittenauer Str. verkehrsberuhigt (Spielstraße oder Tempo-30-Zone)?	? 6666,22988 6651,23020 6644,23036 6634,23076 6712,23252 6727,23287
@@ -2360,11 +2354,6 @@ Knüllweg: Qualität?	? -5221,15714 -5198,15799
 Kellerwaldweg: Qualität?	? -5335,15745 -5314,15830
 Hümmlingweg: Qualität?	? -5190,16203 -5217,16119
 Osningweg: Qualität?	? -5077,16162 -5102,16086
-An der Koppel: Qualität?	? 5541,18451 5744,18449
-#: XXX anonymous meint: "enge Straße, q0", aber keine weiteren Angaben
-Pfifferlingweg: Qualität? Kann die Lindauer Str. überquert werden?	? 5635,18776 5634,18587 5636,18518
-Rundpfuhlweg: Qualität? Kann die Lindauer Str. überquert werden?	? 5713,18777 5715,18586
-Holzweidepfad: Qualität? Kann die Lindauer Str. überquert werden?	? 5791,18778 5795,18585
 Kossätenstr.: Qualität?	? 5495,19571 5417,19570 5369,19560
 Am Klauswerder: Qualität?	? 5335,20671 5236,20747 5170,20673
 Windmühlenweg: Qualität?	? 7004,22881 6950,23023

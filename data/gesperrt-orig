@@ -280,6 +280,7 @@ Otto-von-Simson-Str.	1 2560,5044 2627,5095 2835,5410
 In den neuen Gärten	1 7111,3432 7318,3306 7359,3349 7409,3331 7472,3308
 Braillestr.	1 4430,5324 4477,5250 4512,5199
 Mudrackzeile	1 6985,17812 7020,17690
+Mariabrunner Weg	1 6841,17781 6909,17796 6985,17812
 Gustav-Müller-Str.	1 7643,8634 7642,8815
 Gustav-Müller-Platz	1 7644,8560 7614,8599 7643,8634 7682,8598 7644,8560
 #XXX del --- #: XXX Wird die Einbahnstraßenregelung hier aufgehoben? --- #: last_checked: 2012-03-06 --- #: next_check: 2012-04-20 --- Niederlagstr.	1:q3 9972,12184 9961,12273
@@ -368,6 +369,7 @@ Langensteiner Weg	1 7282,4716 7335,4879 7437,4855
 #: confirmed_by: srt
 Lowise-Reuter-Ring	1 13680,4715 13589,4681 13560,4681 13511,4695 13482,4718 13468,4766 13476,4812 13503,4846 13540,4861 13574,4862 13639,4850 13675,4855
 #: by: Gisela Mauer:
+#: confirmed_by: srt
 Pfahlerstr.	1 5301,18447 5423,18438 5541,18435
 #: by: Juliane Bölker:
 Harnackstr.	1 15848,11528 15881,11621 15871,11690 15911,11790 15984,11827 16099,11786 16134,11774
@@ -397,8 +399,8 @@ Boschpoler Platz	1 20540,13773 20665,13759
 Kienbergstr.	1 21287,14963 21225,14907 21217,14721 21122,14713
 Engelmannweg	1 4531,18217 4492,18013 4462,17892 4429,17763
 #: by: Steffen Berthold
+#: confirmed_by: srt
 Waldowstr.	1 5536,18234 5537,18309 5541,18435 5541,18451 5543,18555 5545,18590 5547,18665 5550,18775
-#: add_fragezeichen: Gilt die Einbahnstraßenregelung zwischen Ollenhauerstr. und Waldowstr. auch für Radfahrer oder nur für Autofahrer?
 Kienhorststr.	1 5543,18555 5324,18560
 Halbauer Weg	1 7720,3148 7719,3219 7734,3290 7753,3371
 #: by: Guido (guidoh):
@@ -1111,6 +1113,13 @@ Hönower Str. (Karlshorst) (Ausweichen auf Sandbankette möglich)	1s:q2 18377,9366
 # gesperrte Wegführung (nicht möglich zu umgehen --- wenn es eine
 # Umgehung gibt, sollte sie in comments_path-orig als PI; kommentiert sein)
 # 
+Seestr.: Mittelstreifen	3nocross 6422,15708 6555,15827 6661,15921
+#: note: auf dem Radweg gibt es noch zusätzlich Absperrgitter
+Residenzstr.: Abbiegen nicht möglich	3nocross 7602,17399 7684,17435 7902,17166
+Residenzstr.: Mittelstreifen	3nocross 7579,17532 7572,17558 7540,17675
+Lindauer Allee: Mittelstreifen	3nocross 5550,18775 5635,18776 5713,18777
+Lindauer Allee: Mittelstreifen	3nocross 5713,18777 5791,18778 5869,18779
+Togostr.: Mittelstreifen	3nocross 5906,16403 5700,16584 5596,16662
 Märkische Allee: Mittelstreifen	3nocross 21251,18508 21163,18347 21009,18055
 Alt-Biesdorf: Mittelstreifen	3nocross 21108,11628 21251,11560 21311,11528
 Kurt-Schumacher-Damm: Mittelstreifen	3nocross 4704,17101 4931,17174 4997,17241
@@ -1122,6 +1131,7 @@ Munsterdamm: Mittelstreifen	3nocross 6771,5273 6767,5233 6747,5010
 Puschkinallee: Hecken	3nocross 13789,9949 13711,10022 13579,10146
 Urbanstr.: unbequem passierbarer Mittelstreifen (hohe Kanten)	3nocross 11274,9492 11383,9446 11509,9392
 #: by: Rainer (ghostviewer...)
+#: confirmed_by: srt
 Aroser Allee: Mittelstreifen	3nocross 6689,17911 6711,17839 6739,17749
 #: by: ruth mantei:
 Buschkrugallee: Mittelstreifen mit hoher Kante	3nocross 13809,5257 13824,5204 13892,4955
@@ -1706,6 +1716,8 @@ tragen (31 Stufen oder Kinderwagenrampe)	0:40 13168,21706
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+Tor	BNP:1::trailer=3 10483,14720
+Tor	BNP:1::trailer=3 10476,14741
 Schranke, lichte Breite 120cm	BNP:1::trailer=3 -7685,15092
 Poller, lichte Breite 100cm	BNP:1::trailer=5 -7109,15286
 Schranke	BNP:1::trailer=5 -3300,14039
@@ -2063,8 +2075,8 @@ Marx-Engels-Forum: wegen U-Bahn-Bauarbeiten Durchgang zur Rathausstr. nicht mögl
 #: next_check: 2013-03-17
 B96a - Flughafen Berlin-Brandenburg: Abschnitt führt durch Sicherheitsbereich des alten Flughafens	2:inwork 18578,-1538 18680,-1506 18798,-1581 18866,-1674
 # 
-#: last_checked: 2012-04-28
-#: next_check: 2012-07-15
+#: last_checked: 2012-08-10
+#: next_check: 2012-10-15
 Am Pankepark: Bauarbeiten, gesperrt	2:inwork 8152,14130 8246,14184
 # 
 #: last_checked: 2012-07-11
@@ -2135,10 +2147,6 @@ Bebelplatz: Bauarbeiten an der Staatsoper	2:inwork 9743,12239 9702,12307 9734,12
 #: next_check: 2012-10-15
 Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 
-#: last_checked: 2012-04-28
-#: next_check: 2012-07-15
-Boyenweg - Uferweg: wegen Bauarbeiten gesperrt	2:inwork 7886,14518 7787,14473
-# 
 #XXX del --- #: last_checked: 2011-12-25 --- #: next_check: 2012-01-01 --- #: XXX evenuell bleibt dieser Teil dauerhaft gesperrt, weil hier ein Einkaufszentrum entsteht? --- #: XXX auch die Ampel an der Kreuzung prüfen --- Treitschkestr.: Bauarbeiten am Kaufhaus, bis 2012	2:inwork 5219,6215 5125,6262 4971,6345
 # 
 #: last_checked: 2012-07-16
@@ -2161,7 +2169,7 @@ Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,127
 #XXX del --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1002/nachricht3772.html --- #: next_check: 2010-10-01 --- Brücke über A10: Sperrung vom 15.02.2010 bis 01.10.2010	2:inwork 15337,24593 15490,24848
 #XXX del --- #: last_checked: 2010-09-11 --- #: next_check: 2010-12-31 --- #: XXX der Neubau wird "N" oder "NH" sein und Radwege haben --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0907/nachricht3563.html --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1005/nachricht3870.html --- #: by: http://www.altglienicke.de/aktuell.php : Sperrung aufgehoben (20.05.11) --- Wegedornbrücke: Vollsperrung, Neubau	2:inwork 20385,593 20442,564 20510,530 20534,501
 # 
-#: last_checked: 2012-07-21
+#: last_checked: 2012-08-10
 #: next_check: 2012-10-15
 #: XXX abhängiger Eintrag in vorfahrt-orig sowie in ampeln-orig (auskommentierte Ampel)
 Kynaststraße: Bauarbeiten im südlichen Abschnitt	2:inwork 14652,10201 14724,10297 14766,10372 14795,10473 14805,10518
@@ -2458,9 +2466,11 @@ Drängelgitter	BNP:5 5860,805
 Drängelgitter	BNP:5 5682,767
 Straßenbahn	3nocross 16837,17440 16947,17506 17159,17631
 Rudolf-Reusch-Str. [Wohngebiet]	1 15732,12562 15657,12562 15657,12648 15732,12650
-Letteallee	1 8226,17479 8110,17470 8014,17475 7845,17460 7684,17435
+#: confirmed_by: srt
+Letteallee	1 8226,17479 8110,17470 8014,17468 7845,17455 7707,17445 7684,17435
+#: confirmed_by: srt
 Mickestr.	1 8185,17352 8134,17398 8110,17470
-Kühleweinstr.	1 8014,17475 8043,17282 8088,17218
+Kühleweinstr.	1 8014,17468 8043,17282 8088,17218
 Seekorso	1 -8828,6418 -8776,6425 -8682,6435 -8578,6462 -8470,6515 -8376,6579
 Seekorso	1s:q4 -8376,6579 -8354,6590
 Seekorso	1 -8354,6590 -8301,6635 -8249,6680 -8199,6720 -8144,6762 -8087,6806 -8032,6852 -7975,6900 -7921,6946 -7871,6990

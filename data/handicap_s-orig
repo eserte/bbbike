@@ -44,7 +44,7 @@ Hessische Str.: Sackgasse zur Invalidenstr.	q3::inwork 8775,13606 8690,13723
 #: next_check ^^^
 #: last_checked: ^^^
 # 
-#: last_checked: 2012-07-21
+#: last_checked: 2012-08-10
 #: next_check: 2012-10-15
 #: XXX abh‰ngig von den Arbeiten in der Kynaststr.
 Alt-Stralau: Bauarbeiten an der Br¸cke, enge Durchfahrt	q3::inwork 14652,10201 14558,10264
@@ -1291,6 +1291,8 @@ Am Krug: offiziell nur f¸r Fuﬂg‰nger	q2 -7149,14768 -7015,14772
 (Am Zeppelinpark - Sommerbad West-Staaken): einige Fuﬂg‰nger	q1 -8426,13818 -8232,13846
 (entlang der Autobahn): einige Fuﬂg‰nger	q1 6489,7908 6437,7968
 Zur Revaler Str.: einige Fuﬂg‰nger	q1 14677,11027 14509,11060
+Holzweidepfad: eng, Fuﬂg‰nger	q3 5791,18778 5792,18727
+Marthashof: Fuﬂg‰nger, spielende Kinder	q3 10448,14707 10483,14720 10561,14746 10556,14766 10476,14741 10440,14730
 #
 ######################### User Contributions #################################
 # 
@@ -1506,7 +1508,8 @@ M¸hlenbecker Weg: Fuﬂg‰nger	q1 20150,15678 20334,16043
 #: by: Michael C.:
 Herschelstr.: enge Wohnstraﬂe	q1 3222,13252 3262,13406 3276,13481 3292,13622
 #: by: Skander Morgenthaler:
-Togostr.: Radweg zwischen Fuﬂweg und Spielplatz	q1 6260,16081 6244,16096 6104,16223
+#: corrected_by: srt (Radweg zwischen Fuﬂweg und Spielplatz -> ...)
+Togostr.: teilweise recht enger Radweg	q1 6244,16096 6104,16223
 #: by: vanfisch@...:
 Konradinstr.: eng	q1 8575,5202 8557,5226 8674,5357 8865,5468 8870,5557
 #: by: Stefan Wietstock:
@@ -1881,7 +1884,7 @@ Seeweg (Weiﬂensee): Fuﬂg‰nger	q1 14610,16522 14581,16529 14510,16549
 (Dinnendahlstr. - Schichauweg): kaum Fuﬂg‰nger	q1 9123,-1321 8953,-1184 8882,-1142 8873,-1118
 #: by: ^^^
 #: by: Oliver Brass [AM]
-K¸hleweinstr.: Schule	q1 8014,17475 7998,17564
+K¸hleweinstr.: Schule	q1 8014,17468 7998,17564
 #: by: Achim Stenzel:
 (Weg an der Markuskirche): viele Fuﬂg‰nger, Bordsteinkanten	q3 6342,4783 6288,4704
 #: by: Torsten Franik:
@@ -2400,8 +2403,8 @@ Lummenweg: eng durch parkende Autos	q1 21879,2592 21919,2510 21936,2388
 Hermannstr. (Zehlendorf): enge Straﬂe	q1 -1093,4529 -1025,4422 -947,4303 -851,4148 -843,4116
 #: by: Christian Schmidt-G¸tter:
 #: note: parkende Autos auf beiden Seiten einer normal breiten Nebenstraﬂe, zus‰tzlich Parksuchverkehr
-#: corrected_by: srt/policy (q2 -> q1):
-Groﬂkopfstr.: enge Straﬂe (parkende Autos)	q1 5167,17725 5363,17667
+#: corrected_by: srt/policy (q2 -> q0-):
+Groﬂkopfstr.: enge Straﬂe (parkende Autos)	q0- 5167,17725 5363,17667
 #: by: Lelek Torsten:
 #: corrected_by: srt/policy (q3 -> q1):
 Privatstr. 7: enge Straﬂe	q1 16978,16915 17051,16923 17129,16914 17199,16907 17264,16892
@@ -2605,6 +2608,7 @@ Straﬂe 206: enge Straﬂe	q1; 13406,17382 13321,17318 13247,17262
 Straﬂe 245 (Weiﬂensee): enge Straﬂe	q1 13590,17368 13271,17589
 #: by: ^^^
 #: by: Joachim Faust:
+#: XXX_prog: BS (an der S¸dwestseite, noch nicht in die Kategorie eingeflossen)
 (Querweg durch die Dauerkolonie Togo): einige Fuﬂg‰nger	q1 5900,16817 5700,16584
 #: by: Thomas Dˆring:
 #: corrected_by: srt/policy (q1 -> q0-)
@@ -2662,7 +2666,8 @@ Reclamweg: Bordsteinkanten	q2 -5196,12452 -5126,12425
 #: by: ^^^
 #: by: Rainer (ghostviewer): vvv
 #: note: "Eilige Anwohner mit Auto quetschen sich gern mal zum ‹berholen vorbei"
-Baseler Str. (Reinickendorf): enge Straﬂe	q1 6792,17951 6815,17871 6841,17781 6886,17649 6900,17608 6908,17583 6995,17322
+#: corrected_by: srt/policy (q1 -> q0-)
+Baseler Str. (Reinickendorf): enge Straﬂe	q0- 6792,17951 6815,17871 6841,17781 6886,17649 6900,17608 6908,17583 6995,17322
 Bieler Str.: enge Straﬂe	q1 6815,17871 6711,17839
 #: by: ^^^
 #: by: Frank (...engel)

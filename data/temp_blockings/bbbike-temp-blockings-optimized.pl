@@ -1482,6 +1482,16 @@ userdel	2::inwork 8263,10349 8315,10347 8333,10167 8360,10133
          'data' => 'userdel	q4::inwork; 10953,15787 11086,15772
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => undef,
+         'text' => 'Adalbertstr.: Fahrbahn in Richtung Kottbusser Tor gesperrt',
+         'from' => undef,
+         'id' => 2369,
+         'data' => '#: next_check: 2012-09-10
+userdel	q4::inwork; 11389,10463 11393,10390
+',
+         'type' => 'handicap'
        }
      
 );

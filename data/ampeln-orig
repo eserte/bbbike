@@ -1029,7 +1029,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 12360,12505
 	X 8443,10777
 	X 7453,17899
-	X 7587,17532
+	X 7579,17532
 	X 11271,22328
 	X 8467,16718
 	X 8486,16425
@@ -1405,6 +1405,7 @@ nur Richtung O	X 8142,7221
 	X 7231,16418
 	X 6965,16190
 	X 6661,15921
+#: XXX_prog: doppelte Bettelampel im Zuge der Antwerpener Str./Togostr.
 	X 6555,15827
 	X 6422,15708
 	X 7436,15746
@@ -2706,6 +2707,8 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: next_check: 2013-12-31 vvv
 	X::inwork 9123,12500
 	X::inwork 9280,12883
+	X::inwork 9343,12464
+	X::inwork 9475,12365
 #: next_check ^^^
 #: last_checked ^^^
 #: XXX ^^^
@@ -2716,6 +2719,8 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X::inwork 8735,14093
 	X::inwork 8879,13913
 	X::inwork 8634,13588
+	X::inwork 8429,13903
+	X::inwork 8314,13826
 #: next_check ^^^
 #: last_checked ^^^
 #: XXX ^^^
@@ -2727,6 +2732,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: last_checked: 2012-08-04
 	X::inwork -6861,15129
 	F 20614,18481
+	X 5628,17631
 ################################################################################
 #: note: Potsdam vvv
 #: by: http://www.potsdam.de/cms/beitrag/10067917/966975/
