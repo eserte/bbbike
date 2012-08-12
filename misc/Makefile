@@ -316,6 +316,7 @@ ${BBBIKETMPDIR}/bbbike_routable.img: ${BBBIKETMPDIR}/bbbike_routable.osm ${BBBIK
 	        --latin1 --net --route --draw-priority=15 --style-file=${BBBIKEMKGMAPDIR}/srt-style \
 	        --index \
 	        ${BBBIKETMPDIR}/bbbike_routable.osm  && \
+	    [ -s 12117006.img ] && \
 	    mv -f 12117006.img bbbike_routable.img 
 
 ######################################################################
