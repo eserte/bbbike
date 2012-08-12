@@ -2843,8 +2843,13 @@ sub get_kreuzung {
 	next if !@coords and !$c; # kann bei nicht definiertem Via vorkommen
 	my $printtype = ucfirst($type);
 
-	print "<tr $bgcolor_s><td>"
-	    if ($bi->{'can_table'});
+	if ($bi->{'can_table'}) {
+	    print "<tr $bgcolor_s><td";
+	    if (!$use_select) {
+		print qq{ valign="top"}
+	    }
+	    print ">";
+	}
 	print "<b>" . ucfirst(M($printtype)) . "</b>: "; # Force uppercase here
 	print "</td><td>"
 	    if ($bi->{'can_table'});
