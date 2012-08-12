@@ -704,6 +704,7 @@ Am Kupfergraben	1s 9867,12651 9810,12712 9754,12775
 Leistikowstr.	1 1188,11861 1133,11664
 Am Krummen Weg	1 -7169,14849 -7026,14890
 Am Krummen Weg	1 -7169,14849 -7248,14826
+Henricistr.	1 5993,19477 5858,19437
 Am Neuen Garten	1 -12166,1384 -12212,1201 -12276,831 -12302,718
 Am Neuen Garten	1 -12332,585 -12582,127
 Hochstraße	3nocross::ignrte -11399,-1339 -11461,-1424 -11540,-1543
@@ -952,9 +953,11 @@ umbequemes Überqueren wegen Bordsteinen	3nocross::ignrte 11329,12497 11340,12443
 Schillingstr. -> Alexanderstr.: umbequemes Überqueren wegen Bordsteinen	3::igndisp 11462,12384 11340,12443 11355,12306
 Mittelstreifen	3nocross::ignrte 8777,9601 8648,9526 8595,9495
 Yorckstr. -> Hagelberger Str.: Mittelstreifen	3::igndisp 8777,9601 8648,9526 8773,9524
-Mittelstreifen	3nocross::ignrte 7492,18699 7520,18701 7609,18707 7690,18716
-Klemkestr. -> Armbrustweg: Mittelstreifen	3::igndisp 7690,18716 7609,18707 7626,18606
-Armbrustweg -> Klemkestr.: Mittelstreifen	3::igndisp 7626,18606 7609,18707 7520,18701
+Mittelstreifen	3nocross::ignrte 7434,18695 7492,18699 7520,18701
+Klemkestr. -> Am Stand: Mittelstreifen	3::igndisp 7434,18695 7492,18699 7484,18778
+Mittelstreifen	3nocross::ignrte 7520,18701 7599,18705 7690,18716
+Klemkestr. -> Armbrustweg: Mittelstreifen	3::igndisp 7690,18716 7599,18705 7620,18615
+Armbrustweg -> Klemkestr.: Mittelstreifen	3::igndisp 7620,18615 7599,18705 7520,18701
 Straßenbahntrasse	3nocross::ignrte 14619,16682 14608,16772 14559,16912
 Caseler Str. -> Berliner Allee: Straßenbahntrasse	3::igndisp 14700,16790 14608,16772 14619,16682
 Berliner Allee -> Caseler Str.: Straßenbahntrasse	3::igndisp 14559,16912 14608,16772 14700,16790
@@ -2229,7 +2232,6 @@ Drängelgitter am Bahnübergang	BNP:3:-21 11612,5253
 Schranke	BNP:0:-81 9265,6361
 Schranke, kann von Fahrrädern umfahren werden	BNP:3:-259 668,25047
 Schranke, kann von Radfahrern umfahren werden	BNP:3:-146 9178,21072
-Drängelgitter	BNP:3:-48 5939,22330
 Schranke	BNP:3:-248 8566,22434
 Drängelgitter	BNP:3:-108 6908,5053
 Schranke	BNP:5:-81 11162,6379
@@ -2265,8 +2267,8 @@ Schranke	BNP:3:-130 6869,15441
 Drängelgitter	BNP:5:3 24759,11666
 Drängelgitter	BNP:5:-17 24815,11329
 Drängelgitter	BNP:5:-136 7935,4466
-Drängelgitter	BNP:5:-138 6560,21055
-Drängelgitter	BNP:5:-183 6613,21116
+Drängelgitter	BNP:5:-151 6526,21015
+Drängelgitter	BNP:5:-139 6548,21041
 Drängelgitter/Schranke	BNP:5:-180 10012,5210
 Schranke	BNP:5:-102 12571,7899
 Drängelgitter	BNP:5:34:trailer=10 14453,9929

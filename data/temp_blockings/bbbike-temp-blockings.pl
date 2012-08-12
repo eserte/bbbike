@@ -1337,7 +1337,7 @@ EOF
        text  => 'Emmentaler Str. (Reinickendorf) Richtung Westen zwischen Residenzstr. und Gamsbartweg Baustelle, Straße Richtung Westen gesperrt, Einbahnstraßenregelung Richtung Osten (bis 17.12.2004)',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	q4; 7693,18481 7599,18421 7510,18364 7335,18257
+userdel	q4; 7676,18492 7594,18427 7510,18364 7335,18257
 EOF
      },
      { from  => 1101934006, # 2004-12-01 21:46
@@ -13315,13 +13315,12 @@ EOF
 userdel	1::inwork 56358,-6276 56333,-6677 56312,-6895 56416,-7090
 EOF
      },
-     { from  => undef, # 1234122499, # 2009-02-08 20:48
-       until => undef, # 1281802300, # 2009-02-28 23:59 1235861999 undef
+     { from  => 1344780493, # undef, # 1234122499, # 2009-02-08 20:48
+       until => 1344780497, # undef, # 1281802300, # 2009-02-28 23:59 1235861999 undef
        text  => 'Weinmeisterstr. (Mitte) in Richtung Alexanderplatz gesperrt',
        type  => 'gesperrt',
        source_id => 'IM_011184',
        data  => <<EOF,
-#: last_checked: 2012-06-17
 userdel	q4::inwork; 10350,13376 10527,13257
 EOF
      },
@@ -17275,7 +17274,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_015285',
        data  => <<EOF,
-userdel	q4::inwork; 7855,18697 7758,18535 7693,18481
+userdel	q4::inwork; 7855,18697 7758,18535 7676,18492
 EOF
      },
      { from  => 1269727200, # 2010-03-27 23:00
@@ -18500,7 +18499,7 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20101105.1400.317649.html',
        data  => <<EOF,
-userdel	q4::inwork; 7855,18697 7785,18730 7690,18716 7609,18707 7520,18701 7492,18699 7434,18695 7320,18688 7217,18681
+userdel	q4::inwork; 7855,18697 7785,18730 7690,18716 7599,18705 7520,18701 7492,18699 7434,18695 7320,18688 7217,18681
 EOF
      },
      { from  => 1289156455, # 2010-11-07 20:00
@@ -20312,7 +20311,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20120612.1440.371422.html',
        data  => <<EOF,
-userdel	2::inwork 4801,22897 5054,23025 5127,23042 5205,23094 5232,23139
+userdel	2::inwork 4824,22907 5054,23025 5127,23042 5205,23094 5232,23139
 EOF
      },
      { from  => 1339797175, # 2012-06-15 23:52

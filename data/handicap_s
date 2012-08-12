@@ -360,13 +360,13 @@ Uferweg am Tegeler Hafen: Fuﬂg‰nger	q1 1259,20303 1349,20345 1534,20421 1572,204
 (Berliner Str. - Tegeler Hafen): Fuﬂg‰nger	q1 1872,20683 1741,20571
 (Tegeler Hafen - An der M¸hle): Fuﬂg‰nger, teilweise eng	q2 1756,20405 1736,20441 1742,20464 1762,20505 1761,20539 1741,20571 1721,20603 1697,20623 1687,20645 1668,20670 1630,20731
 (Br¸cke ¸ber den Tegeler Flieﬂ): eng, Fuﬂg‰nger	q3 2361,21512 2336,21546
-Egidysteg: eng, Fuﬂg‰nger	q3 3124,22198 3134,22153
-(Egidysteg - M¸hlenfeldstr.): Fuﬂg‰nger	q1 3134,22292 3094,22233 3124,22198
-(Weg am Tegeler Flieﬂ): Fuﬂg‰nger	q1 3767,22466 3734,22402 3670,22396 3631,22417 3589,22414 3498,22333 3380,22248 3355,22230 3243,22311
+Egidysteg: eng, Fuﬂg‰nger	q3 3099,22211 3134,22153
+(Egidysteg - M¸hlenfeldstr.): Fuﬂg‰nger	q1 3134,22292 3094,22233 3099,22211
+(Weg am Tegeler Flieﬂ): Fuﬂg‰nger	q1 3767,22466 3734,22402 3670,22396 3631,22417 3589,22414 3498,22333 3390,22264 3355,22230 3271,22321
 (Tegeler Flieﬂ - M¸hlenfeldstr.): Fuﬂg‰nger	q1 3753,22534 3767,22466
 (Weg am Tegeler Flieﬂ): Fuﬂg‰nger, unterhalb der S-Bahnbr¸cke eng	q2 4251,22829 4166,22725 4114,22690 4087,22714 4036,22685
-(Weg am Tegeler Flieﬂ): Fuﬂg‰nger	q1 5645,23968 5409,23816 5297,23633 5214,23420 5242,23156 5232,23139 5205,23094 5127,23042 5054,23025 4801,22897 4718,22891 4626,22914
-(Weg am Tegeler Flieﬂ): Fuﬂg‰nger	q1 4619,22934 4402,22877 4306,22914 4163,22907
+(Weg am Tegeler Flieﬂ): Fuﬂg‰nger	q1 5645,23968 5409,23816 5297,23633 5214,23420 5242,23156 5232,23139 5205,23094 5127,23042 5054,23025 4824,22907 4731,22904 4693,22897 4626,22914
+(Weg am Tegeler Flieﬂ): Fuﬂg‰nger	q1 4608,22931 4402,22877 4306,22914 4163,22907
 (Weg am Tegeler Flieﬂ): Fuﬂg‰nger, eng	q2 5860,24067 5693,24037 5645,23968
 (Schildower Weg): Fuﬂg‰nger	q1 7877,24037 7675,23968 7615,23884 7185,23749
 (Mehrower Allee, Unterf¸hrung zum S-Bahnhof): Rampe, Fuﬂg‰nger	q4 20547,17084 20533,17051 20439,17103
@@ -936,7 +936,7 @@ Zur Kreutzigerstr.: enger Hausdurchgang	q3 14291,12220 14285,12190
 (Zobtener Str. - Fischerstr.): Fuﬂg‰nger, Rampe, Bordstein	q2 16353,10207 16404,10286
 (Fischerstr. - L¸ckstr.): Fuﬂg‰nger, teilweise recht eng	q2 16404,10286 16488,10381 16516,10448 16501,10460 16572,10613 16587,10613
 (Skandinavische Str. - Lichtenberger Br¸cke/MonimbÛplatz)	q2 17023,11908 17026,11888
-M‰rkischer Platz: Fuﬂg‰nger, Bordstein	q2 11111,12027 11077,12062
+M‰rkischer Platz: Fuﬂg‰nger	q2 11034,12038 11077,12062 11111,12027
 (Fischerinsel - Gr¸nstraﬂenbr¸cke): Fuﬂg‰nger, niedriger Bordstein	q2 10474,11843 10517,11795
 (Rampe Wriezener Park): Fuﬂg‰nger, Bordstein	q3 13427,11431 13421,11423
 (Rampe Wriezener Park): Fuﬂg‰nger, enge Rampe, kein Gel‰nder	q3 13421,11423 13459,11388
@@ -1015,6 +1015,13 @@ Am Krug: offiziell nur f¸r Fuﬂg‰nger	q2 -7149,14768 -7015,14772
 Zur Revaler Str.: einige Fuﬂg‰nger	q1 14677,11027 14509,11060
 Holzweidepfad: eng, Fuﬂg‰nger	q3 5791,18778 5792,18727
 Marthashof: Fuﬂg‰nger, spielende Kinder	q3 10448,14707 10483,14720 10561,14746 10556,14766 10476,14741 10440,14730
+(R¸tlistr. - Baseler Str.): einige Fuﬂg‰nger	q1 7062,17500 7042,17562 6897,17616
+Weinbrennerweg: einige Fuﬂg‰nger	q1 6200,19554 6106,19510
+(Flieﬂtalstr. - Weg am Tegeler Flieﬂ): Bordstein	q2 3381,22273 3390,22264
+(Lotosweg - Alt-Hermsdorf): Gehweg, eng	q2 4613,23060 4564,23048
+(Wolfacher Pfad - Weg am Tegeler Flieﬂ): eng	q2 4681,22861 4693,22897
+(Alt-Hermsdorf - Zehntwerderweg): Fuﬂg‰nger, eng	q2 4564,23048 4608,22931
+An der Nordbahn: eng	q2 6447,20305 6349,20396
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q3 11805,19071 11895,19183 11927,19308
 Ebersstr.: Sch¸ler	q2 7245,8583 7292,8631
 Straﬂe 103 (Niederschˆnhausen): enge Straﬂe	q1 10914,20065 11051,19789
@@ -1073,7 +1080,7 @@ Spandauer Str.: enge Straﬂe	q1 -6442,14186 -6261,14213
 (Parkplatz Kaufland - Am Steinberg): Fuﬂg‰nger	q1 12981,17557 12998,17480
 Achenbachstr.: nicht so breite Straﬂe	q1 -3360,14974 -3322,14814
 Herrnholzweg: enge Straﬂe	q1 6279,23170 6491,22915
-Hausotterstr.: sehr schmal, auf beiden Seiten parkende Autos	q1 8592,18128 8348,18071 8139,18020 7957,17967 7772,17915 7477,17832
+Hausotterstr.: sehr schmal, auf beiden Seiten parkende Autos	q1 8592,18128 8348,18071 8135,18028 7957,17967 7772,17915 7477,17832
 Prettauer Pfad: enge Straﬂe	q1 3384,1297 3577,1541
 Prettauer Pfad: enge Straﬂe	q1 3358,1331 3384,1297 3437,1218
 Hempst¸cken: kurvenreich	q2 -7506,126 -7542,201 -7632,204
@@ -1089,9 +1096,9 @@ Georg-Lehnig-Str.: enge Straﬂe	q1 14532,13563 14509,13481 14428,13507
 Erich-Kuttner-Str.: enge Straﬂe	q1 14584,13547 14532,13563 14428,13596 14370,13615 14323,13627 14217,13657 14184,13666 14117,13685 14088,13627
 (Kˆnigsheideweg - Westweg): Weg durch den Park, Bordstein	q1 17115,4757 17129,4837 17173,4902
 (Breiter Weg - S¸dostallee/Sterndamm): Fuﬂg‰nger	q1 17586,5374 17538,5315
-Birkenwerderstr.: enge Straﬂe mit parkenden Autos	q1 6470,20761 6945,20805
-Borgsdorfer Str.: enge Straﬂe mit parkenden Autos	q1 6496,20869 6962,20895
-Germendorfer Str.: enge Straﬂe mit parkenden Autos	q1 6376,20951 6501,20937 6977,20984 7079,21000 7151,21012
+Birkenwerderstr.: enge Straﬂe mit parkenden Autos	q0 6450,20753 6945,20805
+Borgsdorfer Str.: enge Straﬂe mit parkenden Autos	q0 6473,20858 6962,20895
+Germendorfer Str.: enge Straﬂe mit parkenden Autos	q0 6376,20951 6494,20944 6977,20984 7079,21000 7151,21012
 Wentowsteig: enge Straﬂe mit parkenden Autos	q1 6924,20695 6945,20805 6955,20859 6962,20895 6977,20984
 (Spreeuferweg): Fuﬂg‰nger	q1 4537,12531 4501,12544 4334,12551
 (Schˆnholzer Heide, parallel zur Friesenstr.): Fuﬂg‰nger	q1 8765,19288 8784,19253 8954,19151 9446,18855 9475,18862
@@ -1489,9 +1496,9 @@ Popperstr.: enge Straﬂe	q1 8828,2841 8895,3094 8969,3074
 Rˆdelstr.: enge Straﬂe	q1 18007,8377 17813,8508
 Kuhligkshofstr.: eng und kurvig	q1 4911,5428 4869,5386 4821,5345
 Pankeweg und -br¸cke: eng und kurvig	q3 13554,23123 13567,23101 13551,23072
-Klosterheider Weg: enge Straﬂe	q1 2842,23482 2742,23513 2621,23609 2490,23720 2522,23761 2582,23814 2663,23875
+Klosterheider Weg: enge Straﬂe	q1 2842,23482 2742,23513 2621,23609 2490,23720 2522,23761 2582,23814 2638,23856 2663,23875
 Landreiterweg: enge Straﬂe	q1 14062,1846 14050,1904 13857,1975 13739,2004 13674,2011 13567,2008 13485,2007 13362,2000 13240,1993 13227,1974
-Zieselweg: enge Straﬂe	q1 2511,22590 2513,22737 2500,22867 2418,22878
+Zieselweg: enge Straﬂe	q1 2514,22595 2513,22737 2500,22867 2418,22878
 Schwalbenweg: enge Straﬂe	q1 20205,-548 20172,-533 19940,-610 19724,-703 19650,-732
 Wetterseestr.: enge Straﬂe	q1 11499,16883 11504,16746
 Kreuzritterstr.: enge Straﬂe	q1 2252,24700 2297,24682 2359,24677 2402,24687 2471,24709 2531,24702 2586,24678 2621,24638 2640,24608
@@ -1610,7 +1617,7 @@ Irmgardstr.: enge Straﬂe	q1 974,4669 960,4660 881,4429 863,4363 865,4288 908,417
 Erna-Sack-Str.: enge Straﬂe	q1 -7486,13321 -7496,13214
 (Buchbinderweg - Zittauer Str.): einige Fuﬂg‰nger	q1 16485,1162 16435,1063 16419,1048 16387,976 16342,959
 (Hibiskusweg - Romain-Rolland-Str.): gemeinsamer Rad/Fuﬂweg	q1 13245,17805 13229,17784 13245,17737
-Treutelstr.: enge Straﬂe	q1 5422,19725 5345,19734 5318,19723
+Treutelstr.: enge Straﬂe	q1 5422,19725 5345,19734 5309,19716
 Jenbacher Weg: enge Straﬂe	q1 6398,590 6411,533 6233,412 6180,376 5987,256 5800,138 5703,74 5415,-113
 (Charlottenstr. - Allee der Kosmonauten/Fuﬂg‰ngerampel): Gehweg, f¸r Radfahrer freigegeben	q3 20505,14350 20474,14442
 (Charlottenstr. - Annenstr.): als Gehweg ausgeschildert, f¸r Radfahrer nicht freigegeben	q3 20647,14341 20631,14221
@@ -1735,7 +1742,7 @@ Kollostr.: enge Straﬂe	q1 9668,4403 9677,4518 9695,4638
 Prisdorfer Str.: enge Straﬂe	q1 -5887,13894 -5906,14102 -5887,14147 -5882,14210 -5879,14242
 Janischweg: enge Straﬂe	q1 537,14919 481,15088 473,15169 453,15173 431,15230 429,15284
 Reclamweg: Bordsteinkanten	q2 -5196,12452 -5126,12425
-Baseler Str. (Reinickendorf): enge Straﬂe	q0 6792,17951 6815,17871 6841,17781 6886,17649 6900,17608 6908,17583 6995,17322
+Baseler Str. (Reinickendorf): enge Straﬂe	q0 6792,17951 6815,17871 6841,17781 6886,17649 6897,17616 6904,17596 6995,17322
 Bieler Str.: enge Straﬂe	q1 6815,17871 6711,17839
 Straﬂe 129: enge Straﬂe	q1 7784,21186 7929,21103
 Hottengrundweg: enge Straﬂe	q1 -8637,4741 -8086,4504

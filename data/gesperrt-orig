@@ -442,6 +442,7 @@ Tassostr.	1 13679,16286 13645,16192 13659,16151 13642,16118 13625,16054 13621,15
 #: by: rr riva w.m.s:
 Heimat	1 1032,1325 994,1485 968,1479 941,1603
 #: by: MIchael Wedel:
+#: confirmed_by: srt
 Techowpromenade	1 5219,20467 5185,20358 5173,20275 5170,20182
 (Kastanienallee - Schönhauser Allee)	1 10884,14952 10838,14962
 Lossebergplatz	1 16070,23566 16094,23554 16095,23539 16079,23535 16064,23547 16070,23566
@@ -920,6 +921,7 @@ Am Kupfergraben	1s:q2 9867,12651 9810,12712 9754,12775
 Leistikowstr.	1 1188,11861 1133,11664
 Am Krummen Weg	1 -7169,14849 -7026,14890
 Am Krummen Weg	1 -7169,14849 -7248,14826
+Henricistr.	1 5993,19477 5858,19437
 ######################################################################
 #
 # Potsdam
@@ -1153,7 +1155,8 @@ Altstädter Ring: Mittelstreifen mit Zaun	3nocross -3501,14365 -3506,14306 -3517,
 Kaiser-Wilhelm-Str.: Mittelstreifen	3nocross 6996,3761 6957,3699 6782,3491
 Alexanderstr.: umbequemes Überqueren wegen Bordsteinen	3nocross 11329,12497 11340,12443 11355,12306
 Yorckstr.: Mittelstreifen	3nocross 8777,9601 8648,9526 8595,9495
-Klemkestr.: Mittelstreifen	3nocross 7492,18699 7520,18701 7609,18707 7690,18716
+Klemkestr.: Mittelstreifen	3nocross 7434,18695 7492,18699 7520,18701
+Klemkestr.: Mittelstreifen	3nocross 7520,18701 7599,18705 7690,18716
 Berliner Allee: Straßenbahntrasse	3nocross 14619,16682 14608,16772 14559,16912
 #: by: jan (...matrix):
 #: confirmed_by: srt
@@ -1554,6 +1557,7 @@ tragen (flache Treppe, wenige Stufen)	0:10 6530,6786
 tragen (ca. 10 Stufen)	0:20 26407,161781
 #: by: Wolfhard Schleese:
 #: by: http://farm8.staticflickr.com/7096/7159727043_61b258fa72_c.jpg
+#: confirmed_by: srt
 tragen (15 Stufen oder steile Kinderwagenrampe)	0:30 2956,24373
 #: by: Moritz (acros):
 #: XXX_prog: should be Treppe with more than one point: 2827,23059 2854,23062 2886,23045
@@ -1895,7 +1899,7 @@ Schranke	BNP:0 9265,6361
 #: by: Wolfhard Schleese: vvv
 Schranke, kann von Fahrrädern umfahren werden	BNP:3 668,25047
 Schranke, kann von Radfahrern umfahren werden	BNP:3 9178,21072
-Drängelgitter	BNP:3 5939,22330
+#XXX del --- Drängelgitter	BNP:3
 Schranke	BNP:3 8566,22434
 #: by: ^^^
 #: by: rupnor@...
@@ -1953,8 +1957,8 @@ Drängelgitter	BNP:5 24815,11329
 #: by: ^^^
 #: by: Christian (chrispan):
 Drängelgitter	BNP:5 7935,4466
-Drängelgitter	BNP:5 6560,21055
-Drängelgitter	BNP:5 6613,21116
+Drängelgitter	BNP:5 6526,21015
+Drängelgitter	BNP:5 6548,21041
 Drängelgitter/Schranke	BNP:5 10012,5210
 Schranke	BNP:5 12571,7899
 #: note: Abstand zwischen den versetzten Gittern ca. 135cm
