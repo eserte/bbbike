@@ -41,15 +41,15 @@ if ($task eq 'pl_to_yml') {
 	or usage("out file is missing");
     @ARGV and usage("extra args");
 
-    require YAML;
+    require YAML::Syck;
 
     no warnings 'once';
-    local $YAML::UseBlock = 1;
+    #local $YAML::UseBlock = 1;
     use vars qw(@temp_blocking);
     local @temp_blocking;
     do $in_file;
     die "Can't find \@temp_blocking array in $in_file" if not @temp_blocking;
-    YAML::DumpFile($out_file, \@temp_blocking);
+    YAML::Syck::DumpFile($out_file, \@temp_blocking);
 
 } elsif ($task eq 'cmp_pl_and_yml') {
     my $file_pl = shift
@@ -61,13 +61,13 @@ if ($task eq 'pl_to_yml') {
     require Data::Compare;
     require Data::Dumper;
     require File::Temp;
-    require YAML;
+    require YAML::Syck;
 
     use vars qw(@temp_blocking);
     local @temp_blocking;
     do $file_pl;
     die "Can't find \@temp_blocking array in $file_pl" if not @temp_blocking;
-    my $y = YAML::LoadFile($file_yml);
+    my $y = YAML::Syck::LoadFile($file_yml);
 
     no warnings 'once';
     local $Data::Dumper::Sortkeys = 1;
@@ -112,9 +112,9 @@ sub yml_to_bbd {
     my $filter_recurring    = $args{'filter'} && $args{'filter'} eq 'recurring';
     my $filter_nonrecurring = $args{'filter'} && $args{'filter'} eq 'nonrecurring';
 
-    require YAML;
+    require YAML::Syck;
 
-    my $x = YAML::LoadFile($infile);
+    my $x = YAML::Syck::LoadFile($infile);
     for (@$x) {
 	my $d = $_->{data};
 	next if not $d;
