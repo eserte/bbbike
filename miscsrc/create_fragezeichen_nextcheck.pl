@@ -169,6 +169,7 @@ sub handle_file {
 	     }
 
 	     # XXX better!!!
+	     $add_name =~ s{[\t\r\n]}{ }g if defined $add_name;
 	     print $r->[Strassen::NAME] . (defined $add_name ? (length $r->[Strassen::NAME] ? ' ' : '') . $add_name : '') . "\t$cat " . join(" ", @{ $r->[Strassen::COORDS] }) . "\n";
 	 });
 
