@@ -16712,6 +16712,8 @@ sub show_overview {
 	# Try to set the overview to the right bottom corner of the main
 	# window:
 	my($w,$h) = (int($top->width/3), int($top->height/3));
+	# restrict aspect to 4:3 --- a 16:9 overview window does not look good
+	$w = min($w, int($h*4/3));
 	my($x,$y) = ($sy->rootx - $w - 4*2, $sx->rooty - $h - 20 - 4);
 	geometry($overview_top,$x,$y,$w,$h);
     }
