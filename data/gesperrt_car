@@ -1391,3 +1391,10 @@ Mittelstreifen	3nocross::ignrte 5635,18776 5713,18777 5791,18778
 Lindauer Allee -> Rundpfuhlweg: Mittelstreifen	3::igndisp 5791,18778 5713,18777 5713,18739
 Rundpfuhlweg -> Lindauer Allee: Mittelstreifen	3::igndisp 5713,18739 5713,18777 5635,18776
 Eisbärenweg: Schranken an beiden Einfahrten	2 6950,17669 6909,17796
+Mittelstreifen	3nocross::ignrte 4345,11710 4507,11728 4737,11768
+Am Schillertheater -> Bismarckstr.: Mittelstreifen	3::igndisp 4574,11587 4507,11728 4345,11710
+Am Schillertheater -> Marie-Elisabeth-Lüders-Str.: Mittelstreifen	3::igndisp 4574,11587 4507,11728 4476,11811
+Bismarckstr. -> Am Schillertheater: Mittelstreifen	3::igndisp 4737,11768 4507,11728 4574,11587
+Bismarckstr. -> Marie-Elisabeth-Lüders-Str.: Mittelstreifen	3::igndisp 4345,11710 4507,11728 4476,11811
+Marie-Elisabeth-Lüders-Str. -> Am Schillertheater: Mittelstreifen	3::igndisp 4476,11811 4507,11728 4574,11587
+Marie-Elisabeth-Lüders-Str. -> Bismarckstr.: Mittelstreifen	3::igndisp 4476,11811 4507,11728 4737,11768

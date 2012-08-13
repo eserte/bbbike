@@ -1425,16 +1425,7 @@ userdel	q4::inwork; 11389,10463 11393,10390
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1208/nachricht4740.html',
-         'until' => 1344826800,
-         'text' => 'Sperrung der Bösebrücke ("Bornholmer Brücke") in Fahrtrichtung Ost von Freitag, den 10.08.2012, 20:00 Uhr bis Montag, den 13.08.2012, 5:00 Uhr, Ausweichen auf gegenüberliegenden Gehweg möglich',
-         'from' => 1344535200,
-         'id' => 2370,
-         'data' => 'userdel	q4::inwork; 9781,16569 9816,16565 9883,16557 9998,16547
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1208/nachricht4740.html',
          'until' => 1345431600,
