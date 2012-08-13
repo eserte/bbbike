@@ -1128,16 +1128,22 @@ sub BBBikeHeavy::pdf_export {
     # XXX A better solution would be some kind of "can_handle_imagetype"
     # method in BBBikeDraw.pm. This would return false and a list of
     # all missing modules, or "true" if everything's ok
-    if (!eval { require PDF::Create; 1 }) {
-	status_message("PDF::Create is not available", "warn");
-	# XXX This is not exactly true --- the necessary PDF::Create
-	# version is only available at sourceforge
-	perlmod_install_advice("PDF::Create");
+    #
+    # XXX Should the usage of PDFCairo vs. PDF::Create be configurable?
+    my $module;
+    if (eval { require Cairo; 1 }) {
+	$module = 'PDFCairo';
+    } elsif (eval { require PDF::Create; 1 }) {
+	$module = 'PDF';
+    } else {
+	status_message("PDF::Create and/or Cairo is not available", "warn");
+	perlmod_install_advice("PDF::Create", "Cairo");
 	return 1;
     }
 
     $args{-ext} = ".pdf";
     $args{-imagetype} = "pdf";
+    $args{-module} = $module;
     BBBikeHeavy::any_bbbikedraw_export(%args);
 }
 
