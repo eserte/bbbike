@@ -269,7 +269,11 @@ sub route_to_name_1 {
 	my $entf = $self->{Net}{$xy1}{$xy2};
 
 	# May happen if two same points follow subsequently in the route.
-	next if !defined $entf || $entf == 0;
+	next if defined $entf && $entf == 0;
+	# May happen for inserted or moved points which are not anymore in the net.
+	if (!defined $entf) {
+	    $entf = strecke([split /,/, $xy1], [split /,/, $xy2]);
+	}
 	my $str;
 	if (!defined $str_i) {
 	    ($str_i, $rueckwaerts) = $self->nearest_street($xy1, $xy2);
@@ -412,7 +416,11 @@ sub route_to_name_2 {
 	}
 
 	# May happen if two same points follow subsequently in the route.
-	next if !defined $entf || $entf == 0;
+	next if defined $entf && $entf == 0;
+	# May happen for inserted or moved points which are not anymore in the net.
+	if (!defined $entf) {
+	    $entf = strecke([split /,/, $xy1], [split /,/, $xy2]);
+	}
 	my $str;
 	if (!defined $str_i) {
 	    ($str_i, $rueckwaerts) = $self->nearest_street($xy1, $xy2);
@@ -492,7 +500,7 @@ sub route_to_name_2 {
 
     @strname;
 }
-# line 395 Generated_src.pm
+# line 399 Generated_src.pm
 sub reachable_1 {
     my($self, $coord) = @_;
     if (!exists $self->{Net}{$coord}) {
@@ -503,7 +511,7 @@ sub reachable_1 {
 	1;
     }
 }
-# line 395 Generated_src.pm
+# line 399 Generated_src.pm
 sub reachable_2 {
     my($self, $coord) = @_;
     if (!defined $self->{Net}[$self->{Coord2Index}{$coord}]) {
