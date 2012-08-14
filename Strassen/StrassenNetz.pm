@@ -1454,7 +1454,7 @@ sub nearest_street {
     for(my $i = 0; $i <= $#str; $i++) {
 	my($xn,$yn) = split(/,/, $str[$i]);
 	my($w) = schnittwinkel($x2,$y2, $x1,$y1, $xn,$yn);
-	$w = 0 if $w =~ /nan/i; # ???
+	$w = 0 if !defined $w || $w =~ /nan/i; # ???
 	push @winkel, [$w, $i];
     }
 
