@@ -345,6 +345,8 @@ sub intersect_line_rectangle {
 	    return ($rectx2, $iy);
 	}
     }
+
+    return ();
 }
 
 sub point_in_grid {
