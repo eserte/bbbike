@@ -678,26 +678,29 @@ $self->{UseFlags} = 0; # XXX don't use this because of missing transparency info
 	    my $name = Strassen::strip_bezirk($e->[0]);
 	    my $f_i  = $e->[4][0];
 	    my($x,$y) = &$transpose(split ',', $self->{Coords}[$f_i]);
-	    my $patched_name = patch_string($name);
-	    my $s_width = $im->my_string_width($sansserif, $patched_name) * $size;
-	    if ($sm) {
-		my($x1,$y1,$x2,$y2) = ($x-$pad, $y-$pad, $x+$s_width+$pad, $y+$size);
-		my $r1 = $sm->nearest([$x1,$y1,$x2,$y2]);
-		if (!defined $r1) {
-		    warn "No space left for [$x1,$y1,$x2,$y2]";
-		} else {
-		    $sm->add($r1);
-		    $x = $r1->[0]+$pad;
-		    $y = $r1->[1]+$pad;
+	    if ($x >= $self->{PageBBox}[0] && $x <= $self->{PageBBox}[2] &&
+		$y >= $self->{PageBBox}[1] && $y <= $self->{PageBBox}[3]) {
+		my $patched_name = patch_string($name);
+		my $s_width = $im->my_string_width($sansserif, $patched_name) * $size;
+		if ($sm) {
+		    my($x1,$y1,$x2,$y2) = ($x-$pad, $y-$pad, $x+$s_width+$pad, $y+$size);
+		    my $r1 = $sm->nearest([$x1,$y1,$x2,$y2]);
+		    if (!defined $r1) {
+			warn "No space left for [$x1,$y1,$x2,$y2]";
+		    } else {
+			$sm->add($r1);
+			$x = $r1->[0]+$pad;
+			$y = $r1->[1]+$pad;
+		    }
 		}
+		$im->set_fill_color(@$white);
+		$im->rectangle($x-$pad, $y-$pad, $s_width+$pad*2, $size+$pad);
+		$im->fill;
+		$im->rectangle($x-$pad, $y-$pad, $s_width+$pad*2, $size+$pad);
+		$im->stroke;
+		$im->set_fill_color(@$black);
+		$im->string($sansserif, $size, $x, $y, $patched_name);
 	    }
-	    $im->set_fill_color(@$white);
-	    $im->rectangle($x-$pad, $y-$pad, $s_width+$pad*2, $size+$pad);
-	    $im->fill;
-	    $im->rectangle($x-$pad, $y-$pad, $s_width+$pad*2, $size+$pad);
-	    $im->stroke;
-	    $im->set_fill_color(@$black);
-	    $im->string($sansserif, $size, $x, $y, $patched_name);
 	}
     }
 

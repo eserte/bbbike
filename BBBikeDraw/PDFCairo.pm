@@ -635,26 +635,29 @@ sub draw_route {
 	    my $name = Strassen::strip_bezirk($e->[0]);
 	    my $f_i  = $e->[4][0];
 	    my($x,$y) = &$transpose(split ',', $self->{Coords}[$f_i]);
-	    my($s_width, $s_height) = get_text_dimensions($im, $size, $name);
-	    $y-=($s_height+$pad);
-	    if ($sm) {
-		my($x1,$y1,$x2,$y2) = ($x-$pad, $y-$pad, $x+$s_width+$pad, $y+$s_height+$pad);
-		my $r1 = $sm->nearest([$x1,$y1,$x2,$y2]);
-		if (!defined $r1) {
-		    warn "No space left for [$x1,$y1,$x2,$y2]";
-		} else {
-		    $sm->add($r1);
-		    $x = $r1->[0]+$pad;
-		    $y = $r1->[1]+$pad;
+	    if ($x >= $self->{PageBBox}[0] && $x <= $self->{PageBBox}[2] &&
+		$y >= $self->{PageBBox}[1] && $y <= $self->{PageBBox}[3]) {
+		my($s_width, $s_height) = get_text_dimensions($im, $size, $name);
+		$y-=($s_height+$pad);
+		if ($sm) {
+		    my($x1,$y1,$x2,$y2) = ($x-$pad, $y-$pad, $x+$s_width+$pad, $y+$s_height+$pad);
+		    my $r1 = $sm->nearest([$x1,$y1,$x2,$y2]);
+		    if (!defined $r1) {
+			warn "No space left for [$x1,$y1,$x2,$y2]";
+		    } else {
+			$sm->add($r1);
+			$x = $r1->[0]+$pad;
+			$y = $r1->[1]+$pad;
+		    }
 		}
+		$im->set_source_rgb(@$white);
+		$im->rectangle($x-$pad, $y-$pad, $s_width+$pad*2, $s_height+$pad);
+		$im->fill;
+		$im->set_source_rgb(@$black);
+		$im->rectangle($x-$pad, $y-$pad, $s_width+$pad*2, $s_height+$pad);
+		$im->stroke;
+		draw_text($im, $size, $x, $y, $name);
 	    }
-	    $im->set_source_rgb(@$white);
-	    $im->rectangle($x-$pad, $y-$pad, $s_width+$pad*2, $s_height+$pad);
-	    $im->fill;
-	    $im->set_source_rgb(@$black);
-	    $im->rectangle($x-$pad, $y-$pad, $s_width+$pad*2, $s_height+$pad);
-	    $im->stroke;
-	    draw_text($im, $size, $x, $y, $name);
 	}
     }
 
