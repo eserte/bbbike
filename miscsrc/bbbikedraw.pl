@@ -129,6 +129,9 @@ if (@outlinecat) {
     push @extra_args, OutlineCat => \@outlinecat;
 }
 if (defined $scope) {
+    if ($scope !~ m{^(city|region|wideregion)$}) {
+	die "Invalid scope '$scope' (valid is: city, region, or wideregion)";
+    }
     push @extra_args, Scope => $scope;
 } elsif ($fill_image) {
     # scope=city, but fill image
@@ -258,15 +261,16 @@ if (defined $dimfile) {
     my $s;
     sub get_strassen {
 	return $s if $s;
-	$s = Strassen->new(
-			   (defined $scope && $scope eq 'region'
-			    ? 'landstrassen'
-			    : (defined $scope && $scope eq 'wideregion'
-			       ? 'landstrassen2'
-			       : 'strassen'
-			      )
-			   )
-			  );
+	my @s = ('strassen');
+	if (defined $scope) {
+	    if ($scope eq 'region' || $scope eq 'wideregion') {
+		push @s, 'landstrassen';
+		if ($scope eq 'wideregion') {
+		    push @s, 'landstrassen2';
+		}
+	    }
+	}		
+	$s = @s == 1 ? Strassen->new($s[0]) : MultiStrassen->new(@s);
     }
 }
 
