@@ -37,6 +37,7 @@ use strict;
 #use AutoLoader 'AUTOLOAD';
 use BBBikeUtil qw(schnittwinkel m2km min max);
 use BBBikeCalc;
+use Strassen::Util;
 BEGIN {@StrassenNetz::EXPORT_OK = qw($VERBOSE $data_format
 				     $FMT_HASH $FMT_ARRAY $FMT_CDB $FMT_MMAP)}
 use vars @StrassenNetz::EXPORT_OK;
@@ -1453,13 +1454,14 @@ sub nearest_street {
 
     for(my $i = 0; $i <= $#str; $i++) {
 	my($xn,$yn) = split(/,/, $str[$i]);
-	my($w) = schnittwinkel($x2,$y2, $x1,$y1, $xn,$yn);
+	my(undef,$w) = Strassen::Util::abbiegen([$x1,$y1], [$x2,$y2], [$xn,$yn]);
 	$w = 0 if !defined $w || $w =~ /nan/i; # ???
 	push @winkel, [$w, $i];
     }
 
     @winkel = sort { $a->[0] <=> $b->[0] } @winkel;
-    ($self->net2name($c1, $str[$winkel[0]->[1]]), $rueckwaerts);
+    my($pos,$rueckwaerts2) = $self->net2name($c1, $str[$winkel[0]->[1]]);
+    ($pos, $rueckwaerts ^ $rueckwaerts2);
 }
 
 use enum qw(:ROUTE_ NAME DIST ANGLE DIR	ARRAYINX EXTRA);
