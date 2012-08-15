@@ -308,6 +308,12 @@ sub intersect_line_rectangle {
     if ($y1 > $y2) {
 	($x1, $x2, $y1, $y2) = ($x2, $x1, $y2, $y1);
     }
+    if ($rectx1 > $rectx2) {
+	($rectx1, $rectx2) = ($rectx2, $rectx1);
+    }
+    if ($recty1 > $recty2) {
+	($recty1, $recty2) = ($recty2, $recty1);
+    }
 
     # obere Kante
     if ($y2 > $recty1 && $y1 < $recty1) {
