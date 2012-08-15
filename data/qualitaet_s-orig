@@ -3287,7 +3287,7 @@ Woblitzseeweg: Verbundsteinpflaster	Q1+ -1643,16323 -1588,16308
 Plauer-See-Str.: Asphalt	Q0 -1715,16371 -1634,16353
 Dabelowseestr.: Asphalt	Q0 -1715,16371 -1737,16283
 Hohenzollernring: Asphalt	Q0 -3050,16429 -2972,16420 -2955,16418
-Franz-Meyer-Str.: Verbundsteinpflaster	Q0- -2334,16624 -2183,16563
+Franz-Meyer-Str.: Verbundsteinpflaster	Q0- -2334,16624 -2189,16570
 David-Francke-Str.: Verbundsteinpflaster	Q0- -2325,16687 -2154,16660
 Maselake-Klappbr¸cke: Holzbohlen	Q1+ -2445,16610 -2504,16558
 Weg im Maselakepark: wassergebundene Decke	Q1 -2445,16610 -2418,16609
@@ -5573,7 +5573,7 @@ Hilchenbacher Weg: Gehwegplatten	Q1 2426,18544 2444,18487
 Erndtebr¸cker Weg: Beton	Q0 2419,18572 2501,18594 2498,18657
 Dessinstr.: Kopfsteinpflaster	Q2 2947,18570 2997,18632
 (entlang der Autobahn): Verbundsteinpflaster	Q1 3267,18767 3106,18868 2993,18962
-Otisstr.: Beton	Q0 3526,18653 3562,18712 3700,18965
+Otisstr.: Beton	Q0 3213,18115 3526,18653 3562,18712 3700,18965
 Qu‰kerstr.: Beton	Q0 3733,18376 3738,18573 3731,18601 3713,18621 3562,18712
 Foxweg: Beton	Q0 3731,18601 3758,18613 3848,18611
 Straﬂe 443: Beton	Q0 4879,17246 4779,17252
@@ -11626,7 +11626,7 @@ Goldenes Horn: guter Asphalt	Q0 10561,3748 10563,3767 10586,4039 10601,4185 1061
 Aubertstr.: guter Asphalt	Q0 11025,22504 11188,22742 11240,22803 11273,22838
 # 
 #: by: ladzik:
-An der Havelspitze: Verbundsteinpflaster	Q1 -2335,16535 -2342,16369 -2287,16362 -2262,16443 -2183,16563 -2131,16633 -2152,16737 -2122,16835 -2050,16934 -2044,17003
+An der Havelspitze: Verbundsteinpflaster	Q1 -2335,16535 -2342,16369 -2287,16362 -2262,16443 -2180,16566 -2137,16658 -2152,16737 -2122,16835 -2050,16934 -2044,17003
 # 
 #: by: Martina freier:
 Waldmannstr.: m‰ﬂiges Kopfsteinpflaster	Q2 6139,3473 5886,3347 5735,3272
@@ -19730,6 +19730,19 @@ Silzer Weg: Asphalt	Q0 5929,389 6130,449
 #: by: ^^^
 # 
 #: by: Stefan Klinkusch vvv
+Papenberger Weg: guter Asphalt	Q1 -2937,19008 -2894,19019 -2789,19013
+#: XXX Q1 oder doch Q0? vvv
+Iznikstr.: guter Asphalt	Q1 -2133,16934 -2119,17015
+Hans-Poelzig-Str.: guter Asphalt	Q1 -2296,16866 -2157,16838
+#: XXX ^^^
+Chamissostr. (Hakenfelde): guter Asphalt	Q1 -2579,16899 -2838,16951 -3017,16984
+Telegrafenweg: Asphalt	Q0 -1336,14786 -1369,14802 -1411,14875 -1465,14914 -1543,14938 -1610,14925 -2034,15029
+Schwerter Weg: m‰ﬂiger Beton	Q2 -692,15487 -676,15370
+Kanalstr. (Haselhorst): guter Beton	Q1 -735,15280 -593,15300
+Simonring: guter Beton	Q1 -945,14999 -896,14888 -836,14765
+Berthold-Schwarz-Str.: guter Asphalt	Q1 -834,15053 -784,14940 -756,14884
+Stˆckelstr.: guter Asphalt	Q1 -896,14888 -784,14940 -663,14996
+Straﬂe Z: Asphalt	Q0 -638,16459 -671,16488 -708,16516
 Straﬂe 269: fester Sandweg, stark witterungsabh‰ngig	Q2 -5382,8880 -5657,8897 -6406,8933 -7252,8982
 Straﬂe 269: m‰ﬂiges Kopfsteinpflaster	Q2 -7252,8982 -7417,8988
 (Maximilian-Kolbe-Str. - Straﬂe 269): witterungsabh‰ngiger fester Sandweg	Q2 -6370,9802 -6417,9703 -6445,9266 -6406,8933

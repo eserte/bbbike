@@ -425,7 +425,7 @@ Herbert-Bayer-Str.	1 12911,17021 12846,16971 12898,16898 12923,16873
 Rudolf-Baschant-Str.	1 12898,16898 12837,16853
 Wilhelm-Wagenfeld-Str.	1 12877,17039 12853,17024 12810,16994 12797,16983 12789,16977
 Johannes-Itten-Str.	1 12797,16983 12850,16911 12813,16884
-#: add_fragezeichen: Gilt die Einbahnstraßenregelung auch für Radfahrer oder nur für Autofahrer?
+#: by: Stefan Klinkusch
 Riensbergstr.	1 -740,15306 -764,15480
 Saganer Str.: Bahngelände	2 16654,9748 16710,9702 16747,9695 17020,9463 17231,9186 17271,9159
 Triniusstr.	1 18339,6660 18273,6606
@@ -507,7 +507,7 @@ Zufahrt zu Germaniagarten/Oberlandgarten	1 11240,6350 11205,6358 11200,6372 1121
 Germaniagarten	1 11224,6244 11206,6252 11220,6323 11237,6326 11252,6319 11243,6246 11224,6244
 Oberlandgarten	1 11246,6403 11230,6413 11238,6470 11253,6473 11269,6466 11264,6409 11246,6403
 Alt-Tempelhof	1 9512,6652 9249,6642 9154,6638 9054,6631 8949,6644 9052,6664 9247,6687 9338,6694 9512,6652
-#: add_fragezeichen: Gilt die Einbahnstraßenregelung auch für Radfahrer oder nur für Autofahrer?
+#: by: Stefan Klinkusch:
 Baumgartensteg	1 -2882,13474 -2937,13399
 #: by: Brüning:
 Geisenheimer Str.	1 4391,7258 4462,7137 4530,7021
@@ -2055,6 +2055,10 @@ Tor	BNP:5 26888,13976
 #: section temporäre Sperrungen (Baustellen etc.) vvvvvvvvvvvvvvvvvvvvvvvvvv
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+# 
+#: XXX möglicherweise wird es den Weg in Zukunft gar nicht mehr geben
+#: by: Xenia B.
+Rudi-Dutschke-Weg	2:inwork 2627,5095 2913,5294
 # 
 #: last_checked: 2012-07-13
 #: next_check: 2012-12-01
