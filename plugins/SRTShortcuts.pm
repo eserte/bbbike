@@ -580,6 +580,9 @@ EOF
 	      [Button => $do_compound->("Fragezeichen on route"),
 	       -command => sub { fragezeichen_on_route() },
 	      ],
+	      [Button => $do_compound->("Multi-page PDF"),
+	       -command => sub { multi_page_pdf() },
+	      ],
 	      "-",
 	      [Cascade => $do_compound->("Rare or old"), -menu => $rare_or_old_menu],
 	      "-",
@@ -2622,6 +2625,27 @@ sub fragezeichen_on_route {
 	$bf->Checkbutton(-text => 'printer needs utf-8',
 			 -variable => \$printer_needs_utf8,
 			)->pack(-side => 'left');
+    };
+    if ($@) {
+	main::status_message("An error happened: $@", "error");
+    }
+}
+
+sub multi_page_pdf {
+    eval {
+	require File::Temp;
+	my($tmp1fh,$tmp1file) = File::Temp::tempfile(SUFFIX => ".bbr", UNLINK => 1) or die $!;
+	main::load_save_route(1, $tmp1file);
+	my @cmd = ("$bbbike_rootdir/miscsrc/split-route-bboxes.pl", $tmp1file, "-view");
+	# XXX hack for XML::LibXML & GD problem under freebsd 9.0
+	if ($^O eq 'freebsd') {
+	    unshift @cmd, "perl5.8.9";
+	}
+	if (fork == 0) {
+	    exec @cmd;
+	    warn "Something failed while running @cmd: $!";
+	    CORE::exit(1);
+	}
     };
     if ($@) {
 	main::status_message("An error happened: $@", "error");
