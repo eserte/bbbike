@@ -30,6 +30,7 @@ use VectorUtil;
 my $make_cmdline;
 my $do_exec;
 my $do_view;
+my $as_bbd;
 my %scale_density = (hi => 10_000, # meters per width
 		     lo => 20_000,
 		    );
@@ -37,10 +38,11 @@ GetOptions(
 	   "make-cmdline" => \$make_cmdline,
 	   "exec" => \$do_exec,
 	   "view" => \$do_view,
+	   "as-bbd" => \$as_bbd,
 	   "hi-scale=f" => sub { $scale_density{hi} = $_[1] },
 	   "lo-scale=f" => sub { $scale_density{lo} = $_[1] },
 	  )
-    or die "usage: $0 [-make-cmdline] [-hi-scale ...] [-lo-scale ...] routefile";
+    or die "usage: $0 [-make-cmdline | -view | -exec | -as-bbd] [-hi-scale ...] [-lo-scale ...] routefile";
 
 if ($do_view) {
     $do_exec = 1;
@@ -85,6 +87,9 @@ while(1) {
 	    $page_i++;
 	}
 	push @cmds, "$^X $bbbike_root/miscsrc/bbbikedraw.pl -drawtypes all -routefile $file -module PDFCairo -o $out_filename -bbox $start_x,$start_y,$next_x,$next_y -scope wideregion";
+    } elsif ($as_bbd) {
+	print "Page $page_i\tX $start_x,$start_y $start_x,$next_y $next_x,$next_y $next_x,$start_y $start_x,$start_y\n";
+	$page_i++;
     } else {
 	print "($start_x,$start_y,$next_x,$next_y)\n";
     }
@@ -233,5 +238,8 @@ Then:
 
 Change the scaling limits.
 
+* -as-bbd
+
+Output page bboxes as bbd data to stdout.
 
 =cut
