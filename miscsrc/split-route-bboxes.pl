@@ -223,7 +223,7 @@ Just create the final PDF as F</tmp/out.pdf>.
 
 Show what needs to be executed. Use like this:
 
-    perl5.8.9 ~/src/bbbike-aux/misc/split-route-bboxes.pl ~/.bbbike/route/berlin-niederfinow-schwedt-szczecin.bbr -make-cmdline|sh -x -
+    ./miscsrc/split-route-bboxes.pl ~/.bbbike/route/berlin-niederfinow-schwedt-szczecin.bbr -make-cmdline | sh -x -
 
 Then:
 
