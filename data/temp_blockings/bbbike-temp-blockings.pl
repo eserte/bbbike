@@ -13987,7 +13987,7 @@ EOF
 #: check_frequency: 7d vvv
 #: last_checked: 2009-05-09 vvv
 userdel	q4::inwork 14639,11512 14575,11407
-userdel	q4::inwork; 14759,11339 14674,11370 14575,11407
+userdel	q4::inwork; 14759,11339 14737,11347 14674,11370 14575,11407
 #: last_checked: ^^^
 #: check_frequency ^^^
 EOF
@@ -20539,6 +20539,16 @@ EOF
        source_id => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1208/nachricht4740.html',
        data  => <<EOF,
 userdel	q4::inwork; 9998,16547 9883,16557 9816,16565 9781,16569
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Weserstr. - Boxhagener Str.: Tor in einer Hausdurchfahrt, womöglich nachts versperrt',
+       type  => 'gesperrt',
+       recurring => 1,
+       data  => <<EOF,
+#: XXX überprüfen, ob das überhaupt stimmt
+userdel	2::night 14838,11410 14776,11400
 EOF
      },
     );

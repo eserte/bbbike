@@ -3,7 +3,7 @@
 #: note: XXX_* categorization done 2008-01-26
 #: note: "Parkweg" sollte hier vielleicht nicht verwendet werden, sondern nur in qualitaet_s-orig? Oder wenigstens die gleichen Wege nicht in beiden Dateien so benannt werden? Oder wenigstens beim Ausgeben der Routenliste doppelte ausfiltern?
 #:
-Modersohnstr.: Bauarbeiten, Einbahnstraﬂenregelung	q4::inwork; 14181,11434 14134,11272
+Modersohnstr.: Bauarbeiten, Einbahnstraﬂenregelung	q3::inwork; 14181,11434 14134,11272
 Mainzer Str.: Baustelle, Einbahnstraﬂenregelung	q3::inwork; 14357,12011 14427,12197
 Friedrichstr.(Mitte): Fahrbahn wegen Bauarbeiten gesperrt, Ausweichen auf Gehweg schiebend mˆglich	q4::inwork 9358,12351 9369,12253 9373,12197
 Charlottenstr.: Einbahnstraﬂenregelung	q4::inwork; 9475,12365 9487,12263 9492,12214
@@ -1023,6 +1023,9 @@ Weinbrennerweg: einige Fuﬂg‰nger	q1 6200,19554 6106,19510
 (Wolfacher Pfad - Weg am Tegeler Flieﬂ): eng	q2 4681,22861 4693,22897
 (Alt-Hermsdorf - Zehntwerderweg): Fuﬂg‰nger, eng	q2 4564,23048 4608,22931
 An der Nordbahn: eng	q2 6447,20305 6349,20396
+(John-Sieg-Str. - Wilhelm-Guddorf-Str.): einige Fuﬂg‰nger, Bordstein	q3 15411,11823 15373,11783
+(Weserstr. - Boxhagener Str.): einige Fuﬂg‰nger, Parkplatzverkehr	q2 14949,11474 14838,11410 14776,11400 14752,11369
+Caroline-Herschel-Platz: Fuﬂg‰nger	q2 14752,11369 14737,11347
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q3 11805,19071 11895,19183 11927,19308
 Ebersstr.: Sch¸ler	q2 7245,8583 7292,8631
 Straﬂe 103 (Niederschˆnhausen): enge Straﬂe	q1 10914,20065 11051,19789

@@ -202,7 +202,7 @@ Delbrückstr.: teilweise schlechtes Kopfsteinpflaster	Q3 16864,10932 16964,10902 
 Sophienstr.: Asphalt	Q0 16918,11176 16869,11190
 Sophienstr.: Kopfsteinpflaster	Q2 16869,11190 16777,11216 16653,11251 16568,11272 16468,11297 16345,11328
 Müggelstr.: Asphalt	Q0 14764,11591 14837,11706
-Weserstr. (Friedrichshain): Kopfsteinpflaster	Q2 15016,11431 14849,11539
+Weserstr. (Friedrichshain): Kopfsteinpflaster	Q2 15016,11431 14949,11474 14849,11539
 Weserstr. (Friedrichshain): Asphalt	Q0 14849,11539 14764,11591 14710,11626
 Weserstr. (Friedrichshain): Kopfsteinpflaster	Q2 14710,11626 14645,11670 14622,11685 14550,11732 14471,11782 14416,11815
 Finowstr.: Kopfsteinpflaster	Q2 14622,11685 14708,11820 14783,11949 14836,12045 14854,12137
@@ -379,7 +379,7 @@ Knaackstr.: Asphalt	Q0 11229,14422 11316,14360 11331,14350 11358,14331 11380,143
 Immanuelkirchstr.: Kopfsteinpflaster	Q2 11506,14230 11727,14111 11946,13993
 Bersarinplatz: Kopfsteinpflaster auf der Fahrbahn, Radwege OK	Q1 13695,12643 13686,12611 13678,12571 13698,12544 13742,12538 13761,12578 13767,12626 13747,12642 13727,12642 13695,12643
 Petersburger Platz: Kopfsteinpflaster	Q2 13559,12779 13467,12978
-Pettenkoferstr Str.: Kopfsteinpflaster	Q2 15117,12106 15098,12213
+Pettenkoferstr Str.: Asphalt	Q0 15117,12106 15098,12213
 Pettenkoferstr Str.: Asphalt, einige gepflasterte Bodenschwellen	Q0 15098,12213 15054,12323 15042,12353 15009,12441 14999,12462 14935,12596 14842,12826
 Marktstr., Fahrbahn Richtung Osten: Kopfsteinpflaster	Q2; 15279,10862 15144,10905
 Gryphiusstr.: Kopfsteinpflaster	Q2 14367,11276 14395,11356 14434,11465 14496,11620 14513,11657 14550,11732
@@ -7125,6 +7125,9 @@ Königshorster Str.: Beton	Q0 6563,21425 6594,21134
 Wilhelmsruher Damm - Tornower Weg: Verbundsteinpflaster/Gehwegplatten	Q0 6596,21062 6560,21055 6548,21041 6526,21015 6519,21002
 (Tornower Weg - Wilhelmsruher Damm): Verbundsteinpflaster/Gehwegplatten	Q0 6519,21002 6565,21004 6560,21055
 Lampesteig: Asphalt	Q0 7534,18588 7520,18701
+(John-Sieg-Str. - Wilhelm-Guddorf-Str.): wassergebundene Decke	Q1 15411,11823 15373,11783
+(Weserstr. - Boxhagener Str.): Verbundsteinpflaster/Beton	Q1 14949,11474 14838,11410 14776,11400 14752,11369
+Caroline-Herschel-Platz: gepflastert	Q1 14752,11369 14737,11347
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3777,16532 -3870,16527 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): mäßiger Asphalt	Q1 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): unbefestigte Straße	Q2 12608,22943 12589,22948 12526,22972

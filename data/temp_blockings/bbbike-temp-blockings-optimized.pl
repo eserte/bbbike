@@ -1435,6 +1435,17 @@ userdel	q4::inwork; 11389,10463 11393,10390
          'data' => 'userdel	q4::inwork; 9998,16547 9883,16557 9816,16565 9781,16569
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => undef,
+         'recurring' => 1,
+         'text' => 'Weserstr. - Boxhagener Str.: Tor in einer Hausdurchfahrt, womöglich nachts versperrt',
+         'from' => undef,
+         'id' => 2372,
+         'data' => '#: XXX überprüfen, ob das überhaupt stimmt
+userdel	2::night 14838,11410 14776,11400
+',
+         'type' => 'gesperrt'
        }
      
 );
