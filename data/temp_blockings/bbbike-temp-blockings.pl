@@ -1489,7 +1489,7 @@ EOF
        text  => 'K 6148; (Brand-Halbe); Bahnübergang in OL Teurow Arbeiten an Signaltechnik Vollsperrung 08.02.2005-17.02.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 32937,-34794 32870,-34756 32781,-34707
+userdel	2 32937,-34794 32829,-34732 32781,-34707
 EOF
      },
      { from  => 1108854000, # 2005-02-20 00:00
@@ -5601,7 +5601,7 @@ EOF
        text  => 'Hegemeisterweg ist vom 7. August 2006 bis zum 30. November 2006 nicht benutzbar. ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 17775,7874 17987,7973 18287,7815 18325,7778 18382,7724
+userdel	2::inwork 17771,7880 17987,7973 18287,7815 18325,7778 18382,7724
 EOF
      },
      { from  => 1156975200, # 2006-08-31 00:00
@@ -12798,7 +12798,7 @@ EOF
        text  => 'L 074 OL Halbe Bahnübergang Gleisbauarbeiten Vollsperrung 09.10.2008-15.10.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 31593,-32938 31675,-32839 31700,-32810
+userdel	2::inwork 31593,-32938 31657,-32860 31700,-32810
 EOF
      },
      { from  => 1222552800, # 2008-09-28 00:00

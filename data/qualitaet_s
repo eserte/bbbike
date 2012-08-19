@@ -795,8 +795,8 @@ Zur Revierförsterei: Verbundsteinpflaster	Q1 28538,452 28660,542
 An der Krampe: Waldweg, OK	Q1 28521,246 28450,242 28391,305 28303,309 28310,269 28265,157 28265,68 28213,-45 28206,-258 28143,-335 28107,-336 28008,-390 27978,-473 27847,-665
 An der Krampe: schlechter Waldweg, Wurzeln	Q3 27847,-665 27803,-742 27759,-995 27727,-1078 27767,-1217 27758,-1358 27765,-1654 27695,-2161 27718,-2301 27932,-2444 27985,-2389 28144,-2262 28116,-2127 28163,-2013
 Am Seddinsee: sich selbst überlassener Waldweg	Q3 28163,-2013 28338,-2265 28443,-2317 28527,-2347 28568,-2346 28742,-2264 28892,-1955 28862,-1816
-Am Seddinsee: teils schlechter Waldweg	Q3 28862,-1816 28887,-1795 28935,-1819 28957,-1810 28958,-1779 28999,-1784 29149,-1742 29162,-1704 29229,-1676 29204,-1545 29334,-1343 29475,-1275 29602,-1051 30028,-891 30125,-734 30218,-529 30410,-431 30570,-351 30778,-326
-Zum Seddinsee: teils schlechter Waldweg	Q3 30839,106 30859,-6 30778,-326
+Am Seddinsee: teils schlechter Waldweg	Q3 28862,-1816 28887,-1795 28935,-1819 28957,-1810 28958,-1779 28999,-1784 29149,-1742 29162,-1704 29229,-1676 29204,-1545 29334,-1343 29475,-1275 29602,-1051 30028,-891 30125,-734 30218,-529 30421,-424 30570,-351 30778,-326
+Zum Seddinsee: teils schlechter Waldweg	Q3 30869,-5 30857,-60 30803,-147 30778,-326
 Melchiorstr.: mäßiger Asphalt	Q1 11921,11185 11726,11265
 Melchiorstr.: mäßiger Asphalt	Q1; 11726,11265 11542,11342
 Hansa-Ufer: Kopfsteinpflaster	Q2 5869,12591 5797,12494 5740,12419
@@ -810,8 +810,11 @@ Müggelbergplatz: Kopfsteinpflaster	Q2 23293,1697 23278,1668 23303,1650 23321,167
 Müggelbergallee: Kopfsteinpflaster	Q2 23321,1678 23409,1699 23669,1759
 (Müggelbergallee - Straße zum Müggelturm): Waldweg, meist OK	Q1 23669,1759 24265,1891 24889,1743
 (Müggelbergallee - Müggelheimer Damm): Waldweg, meist OK	Q1 24265,1891 24528,1949 24630,2034
-Str. 790/791: holpriger Fahrweg	Q2 30546,-3072 30588,-3000 30599,-2827 30640,-2803 30703,-2841 30727,-2911 30710,-3037 30588,-3000
-Wernsdorfer Str.: teilweise Kopfsteinpflaster	Q2 30533,-3124 30537,-3140 30439,-3371 30390,-3443
+Str. 790/791: holpriger Fahrweg	Q2 30546,-3072 30588,-3000
+Str. 790/791: Asphalt	Q0 30588,-3000 30599,-2827 30640,-2803
+Str. 790/791: holpriger Fahrweg	Q2 30640,-2803 30703,-2841 30727,-2911 30710,-3037 30588,-3000
+Wernsdorfer Str.: Asphalt	Q0 30540,-3125 30473,-3290
+Wernsdorfer Str.: Kopfsteinpflaster	Q2 30473,-3290 30439,-3371 30390,-3443
 Wassersportallee: schlechtes Kopfsteinpflaster	Q3 22655,1450 22756,1524
 Kleine Lindenstr.: Asphalt	Q0 21528,-1134 21459,-1086 21387,-1033 21306,-975 20814,-935
 (Kleine Lindenstr. - Parchwitzer Str.): Kopfsteinpflaster, OK	Q1 21306,-975 21393,-871
@@ -867,7 +870,7 @@ Hegemeisterweg: Kopfsteinpflaster	Q2 17202,8391 17520,8219
 Hegemeisterweg: Asphalt	Q0 17520,8219 17565,8197 17627,8167 17691,8135 17747,8107 17803,8079
 Hegemeisterweg: Asphalt	Q0 17803,8079 17987,7973 18287,7815 18325,7778 18382,7724
 Hegemeisterweg: Asphalt	Q0 18325,7778 18413,7774
-(Am Walde - Hegemeisterweg): gute wassergebundene Decke	Q1 17775,7874 17987,7973
+(Am Walde - Hegemeisterweg): gute wassergebundene Decke	Q1 17771,7880 17987,7973
 Am Fichtenberg: Kopfsteinpflaster, OK	Q1 4343,5112 4285,5180 4217,5217 4134,5284
 Tietzenweg: mäßiges Kopfsteinpflaster	Q2 3643,4232 3768,4045 3870,3914 4004,3729 4135,3564 4275,3428 4342,3366 4467,3332
 Viktoriastr.: schlechtes Kopfsteinpflaster	Q3 3768,4045 3936,4014
@@ -885,7 +888,7 @@ Maxstr.: Asphalt	Q0 7673,15897 7622,15946
 Maxstr.: mäßiges Kopfsteinpflaster	Q2 7622,15946 7543,16016 7491,16072
 Genter Str.: Asphalt	Q0 7270,15307 7138,15437 7012,15571
 Genter Str.: mäßiges Kopfsteinpflaster	Q2 7012,15571 6919,15666 6802,15790 6661,15921
-Am Walde: Asphalt	Q0 17775,7874 17678,7850 17590,7828 17527,7812
+Am Walde: Asphalt	Q0 17771,7880 17678,7850 17590,7828 17527,7812
 Prager Platz: gutes Kopfsteinpflaster	Q1 5661,9630 5657,9600 5630,9592 5602,9606 5595,9626
 Normannenstr.: Kopfsteinpflaster	Q2 16159,12301 16227,12280 16276,12273
 Rüdigerstr. (Lichtenberg): Kopfsteinpflaster	Q2 17466,12241 17314,12265 17214,12281 17163,12291 17115,12296 17056,12304 17020,12309 16918,12325 16820,12339
@@ -2180,7 +2183,7 @@ Unterfeld: Verbundsteinpflaster	Q1 19036,8041 18949,8107
 Fritz-Kortner-Str.: Asphalt	Q0 19258,7943 19303,8005 19334,8046
 Am Birkenrevier: Verbundsteinpflaster	Q1 19303,8005 19176,8098
 Rohrlake: Verbundsteinpflaster	Q1 19168,7942 19109,7983 19061,7904
-Oskarstr.: Asphalt mit Schäden	Q0 17775,7874 17762,7931 17803,8079
+Oskarstr.: Asphalt mit Schäden	Q0 17771,7880 17762,7931 17803,8079
 Gleyeweg: Asphalt	Q0 17762,7931 17683,7958 17651,7973 17613,7989 17529,8073 17532,8125 17565,8197 17597,8258
 Fuchsbau (Karlshorst): Asphalt	Q0 17651,7973 17590,7828
 Blaurackenweg: Asphalt	Q0 17613,7989 17647,8071 17532,8125
@@ -5494,11 +5497,17 @@ Alt-Schmöckwitz: Asphalt/Beton zwischen den Schienen, sonst Kopfsteinpflaster	Q1
 Alt-Schmöckwitz: Kopfsteinpflaster	Q2 27388,-3199 27413,-3196 27427,-3171 27428,-3137 27396,-3101
 Alt-Schmöckwitz: Asphalt	Q0 27428,-3137 27513,-3118
 Alt-Schmöckwitz: Kleinsteinpflaster	Q2 27513,-3118 27543,-3097 27554,-3071
-Seddinpromenade: Waldweg	Q1 27891,-2988 27837,-2991 27804,-3064 27749,-3120 27728,-3146 27721,-3164
+Seddinpromenade: Waldweg	Q2 27891,-2988 27837,-2991 27804,-3064 27749,-3120 27728,-3146 27721,-3164
 (Wernsdorfer Str. - Seddinpromenade): Waldweg	Q2 27761,-3165 27749,-3120
-Seddinpromenade: Asphalt	Q0 27891,-2988 28013,-3048 28000,-3147
-Seddinpromenade: unbefestigte Straße	Q2 28013,-3048 28053,-3065 28241,-3045
-Schwarzer Weg (Schmöckwitz): unbefestigte Straße, holprig	Q2 28000,-3147 27892,-3167
+Seddinpromenade: Asphalt	Q1 27891,-2988 28013,-3048 28000,-3147
+Seddinpromenade: unbefestigte Straße	Q2 28013,-3048 28097,-3067 28241,-3045
+Seddinpromenade: Waldweg	Q2 28241,-3045 28397,-2913 28535,-2834 28596,-2844 28678,-2814 28734,-2838 28877,-2815
+Seddinpromenade: unbefestigte Straße	Q2 28877,-2815 28936,-2830 29037,-2817
+(Schwarzer Weg - Seddinpromenade): Schotterstraße	Q2 29079,-2874 29037,-2817
+Schwarzer Weg (Schmöckwitz): Schotterstraße, holprig	Q2 27892,-3167 28000,-3147 28212,-3120 28549,-3084 28803,-2932 29079,-2874
+(Schwarzer Weg - am Oder-Spree-Kanal): Waldweg, Schotter	Q2 29559,-2866 29390,-2851 29079,-2874
+am Oder-Spree-Kanal: Waldweg, viele Wurzeln	Q3 29037,-2817 29101,-2794 29457,-2835 29559,-2866
+am Oder-Spree-Kanal: Waldweg	Q2 29559,-2866 30540,-3125
 (Uferweg an der HTW): Asphalt	Q0 19177,5560 19020,5532 18846,5548 18744,5612 18650,5707
 (Uferweg - Ernst-Ziesel-Str.): Verbundsteinpflaster	Q1 18744,5612 18787,5676
 Plönzeile: Asphalt	Q0 18574,6401 18676,6333 18767,6268 18859,6198 18970,6110
@@ -7128,6 +7137,20 @@ Lampesteig: Asphalt	Q0 7534,18588 7520,18701
 (John-Sieg-Str. - Wilhelm-Guddorf-Str.): wassergebundene Decke	Q1 15411,11823 15373,11783
 (Weserstr. - Boxhagener Str.): Verbundsteinpflaster/Beton	Q1 14949,11474 14838,11410 14776,11400 14752,11369
 Caroline-Herschel-Platz: gepflastert	Q1 14752,11369 14737,11347
+(Adlergestell - Bohnsdorfer Str.): Beton	Q0 21856,1573 22091,1317
+Böhmallee: Asphalt	Q0 27185,-6585 27292,-6641
+Moßkopfring: Asphalt	Q0 27292,-6641 27294,-6683 27308,-6742 27294,-6794 27285,-6861 27288,-6944 27311,-6962 27359,-6969 27458,-6806 27466,-6764
+Ebelallee: unbefestigte Straße	Q2 27184,-6794 27294,-6794
+Zeuthener Weg: Asphalt	Q0 27466,-6764 27308,-6742
+(Schmöckwitzer Damm - Uferweg am Großen Zug): Waldweg	Q2 27233,-5979 27793,-5714 27944,-5752
+(Uferweg): Waldweg	Q2 27938,-5802 27944,-5752 27999,-5665 28057,-5633 28116,-5532 28226,-5451 28303,-5330 28332,-5153 28492,-4966 28546,-4962 28540,-4811 28584,-4514 28684,-4319 28799,-4231 28902,-4016 29221,-3849 29418,-3704 29597,-3674 29783,-3739 30015,-3906 30133,-3840
+Zu den Gosener Bergen: Asphalt	Q0 30722,-2337 30640,-2803
+(Gosener Landstr. - Parkplatz): Asphalt	Q1 30621,235 30808,52 30869,-5 30942,-62
+(Gosener Damm - Seddinsee): Asphalt mit einigen Wurzelschäden	Q1 28809,462 29120,271
+(Gosener Damm - Seddinsee): Waldweg, teilweise mit Gras überwachsen, Wurzeln	Q3 29120,271 29481,44 29979,-120 30421,-424
+(Waldweg zum Campingplatz): Asphalt	Q1 29120,271 29208,71
+(Straße zur Krampenburg - Uferweg am Langen See): guter Waldweg, feiner Schotter	Q1 27202,173 26676,-36
+(Straße zur Krampenburg - Uferweg am Langen See): Waldweg, zweispurig	Q2 26676,-36 26479,-119
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3777,16532 -3870,16527 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): mäßiger Asphalt	Q1 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): unbefestigte Straße	Q2 12608,22943 12589,22948 12526,22972
@@ -11898,7 +11921,7 @@ Tuxer Steig: gute Betonplatten	Q0 5878,729 5853,729 5742,671
 Kellenzeile: Beton	Q0 5885,20478 5747,20640 5660,20727 5565,20822
 Rosenplüterweg: Verbundsteinpflaster	Q1 3657,26240 3431,26192 3328,26193
 Bulgenbachweg: Verbundsteinpflaster	Q1 3431,26192 3452,26160 3478,26119 3520,26081 3574,26060 3647,26060
-Anglerweg: guter Asphalt	Q0 30343,-3454 30147,-3816
+Anglerweg: guter Asphalt	Q0 30343,-3454 30133,-3840
 (Erpetaler Weg - Hirschgarten): Waldweg	Q2 24637,7438 24618,7272 24602,7169 24595,7112 24624,7029 24569,6918 24552,6807 24499,6405
 Feigensteig: Sandweg, nach Regen große Pfützen und tiefe Mulden	Q2 -7550,14579 -7549,14645 -7526,14870
 An der Spitze: schlechtes Kopfsteinpflaster	Q3 -8756,13356 -8847,13363 -8846,13398 -8702,13400

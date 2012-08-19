@@ -330,7 +330,11 @@ Müggelheimer Str.	3nocross::ignrte 22674,4309 22556,4386 22451,4441 22419,4457 2
 Karlstr. -> Müggelheimer Str.: Müggelheimer Str.	3::igndisp 22458,4134 22556,4386 22451,4441
 Spitzerstr. -> Müggelheimer Str.: Müggelheimer Str.	3::igndisp 22425,4370 22451,4441 22419,4457
 Müggelheimer Str. -> Spitzerstr.: Müggelheimer Str.	3::igndisp 22556,4386 22451,4441 22425,4370
+Amtsstr. -> Müggelheimer Str.: Müggelheimer Str.	3::igndisp 22495,4523 22419,4457 22451,4441
+Amtsstr. -> Gartenstr.: Müggelheimer Str.	3::igndisp 22495,4523 22419,4457 22382,4361
 Müggelheimer Str. -> Gartenstr.: Müggelheimer Str.	3::igndisp 22451,4441 22419,4457 22382,4361
+Müggelheimer Str. -> Amtsstr.: Müggelheimer Str.	3::igndisp 22383,4470 22419,4457 22495,4523
+Gartenstr. -> Amtsstr.: Müggelheimer Str.	3::igndisp 22382,4361 22419,4457 22495,4523
 Gartenstr. -> Müggelheimer Str.: Müggelheimer Str.	3::igndisp 22382,4361 22419,4457 22383,4470
 Gropiusstr.	1 8543,16364 8534,16355 8389,16214
 Osloer Str.	3nocross::ignrte 8503,16716 8721,16689 8759,16684 8939,16668
