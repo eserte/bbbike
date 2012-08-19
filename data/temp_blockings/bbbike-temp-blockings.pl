@@ -728,7 +728,7 @@ userdel	q4 33240,-85187 33354,-85304
 userdel	q4 33240,-85187 33060,-85292
 userdel	q4 33481,-85428 33354,-85304
 userdel	q4 33481,-85428 33488,-85803
-userdel	q4 33101,-85749 33060,-85292
+userdel	q4 33103,-85728 33060,-85292
 EOF
      },
      { from  => 1096840800, # 2004-10-04 00:00
@@ -5229,7 +5229,7 @@ EOF
        text  => 'L 601 Berliner Str. OL Finsterwalde Sängerfest Vollsperrung 25.08.2006-28.08.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::temp 33060,-85292 33101,-85749
+userdel	2::temp 33060,-85292 33103,-85728
 EOF
      },
      { from  => 1153805975, # 2006-07-25 07:39
@@ -7282,7 +7282,7 @@ EOF
        text  => 'L 742 Klein Köris-Teupitz Bahnübergang in der OD Groß Köris Gleisumbauarbeiten Vollsperrung 09.03.2007-12.03.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 28494,-27010 28010,-27154 27824,-27205
+userdel	2::inwork 28494,-27010 27995,-27157 27824,-27205
 EOF
      },
      { from  => 1173913200, # 2007-03-15 00:00
@@ -10161,7 +10161,7 @@ EOF
        text  => 'B 096 Brücke zw. Großräschen und Freienhufen Brückenabbruch Vollsperrung 13.10.2007-14.10.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 50965,-90836 51084,-90818 52531,-90608 52580,-90602
+userdel	2::inwork 50891,-90838 51083,-90805 51535,-90752 52531,-90608 52580,-90602
 EOF
      },
      { from  => 1192312800, # 2007-10-14 00:00
@@ -11051,7 +11051,7 @@ EOF
        text  => 'L 055 Calau - Lübbenau Bahnübergang in der OD Bischdorf Instandsetzung BÜ Vollsperrung 11.04.2008-14.04.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 49836,-67419 50143,-67035 50318,-65825
+userdel	2::inwork 49836,-67419 50153,-67024 50318,-65825
 EOF
      },
      { from  => 1206313200, # 2008-03-24 00:00
@@ -11223,7 +11223,7 @@ EOF
        text  => 'L 601 Berliner Str. OL Finsterwalde, zw. Leipziger Str. und Friedensstr. Trödelmarkt Vollsperrung 06.04.2008-06.04.2008 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::temp 33060,-85292 33101,-85749
+userdel	q4::temp 33060,-85292 33103,-85728
 EOF
      },
      { from  => 1207432800, # 2008-04-06 00:00
@@ -11399,7 +11399,7 @@ EOF
        text  => 'L 055 Calau - Boblitz Bahnübergang in der OD Bischdorf Instandsetzungsarbeiten Vollsperrung 23.05.2008-25.05.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 49836,-67419 50143,-67035 50318,-65825
+userdel	2::inwork 49836,-67419 50153,-67024 50318,-65825
 EOF
      },
      { from  => 1209754023, # 2008-05-02 20:47
@@ -12281,7 +12281,7 @@ EOF
        text  => 'L 601 Berliner Str. OL Finsterwalde, zw. B 96 Bahnhofstr. und Str. der Jugend Sängerfest Vollsperrung 28.08.2008-01.09.2008 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::temp 33060,-85292 33101,-85749
+userdel	q4::temp 33060,-85292 33103,-85728
 EOF
      },
      { from  => 1218739674, # 2008-08-14 20:47
@@ -13031,7 +13031,7 @@ EOF
        text  => 'L 053 Seestr., Calauer Str. OD Großräschen, zw. Chransdorfer Str. und Berliner Str. Kanal- und Straßenbau Vollsperrung 04.11.2008-21.11.2008 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 54017,-89128 53787,-90242
+userdel	q4::inwork 54017,-89128 53789,-90228
 EOF
      },
      { from  => 1146348000, # 2006-04-30 00:00
@@ -13113,7 +13113,7 @@ EOF
        text  => 'L 053 Calauer Str. OD Großräschen, von IFA-Park bis Felix-Spiro-Str. Deckeneinbau Vollsperrung 21.11.2008-24.11.2008 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 53787,-90242 54017,-89128
+userdel	q4::inwork 53789,-90228 54017,-89128
 EOF
      },
      { from  => 1229122800, # 2008-12-13 00:00
