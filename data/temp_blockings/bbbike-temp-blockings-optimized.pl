@@ -1334,10 +1334,10 @@ userdel	q4::inwork 10379,14963 10366,14992
        undef,
        undef,
        {
-         'source_id' => 'IM_018994',
-         'until' => 1345500000,
-         'text' => 'Karlshorster Str. (Lichtenberg): Brückenarbeiten, Sperrung zwischen Nöldnerstr. und Türrschmidtstr., Fußgänger und Radfahrer können langsam passieren, 09.07.2012 bis 20.08.2012 04:00 Uhr',
-         'from' => 1342123327,
+         'source_id' => 'IM_019067',
+         'until' => 1348538400,
+         'text' => 'Karlshorster Str. (Lichtenberg): Brückenarbeiten, Sperrung zwischen Nöldnerstr. und Türrschmidtstr., Fußgänger und Radfahrer können langsam passieren, 09.07.2012 bis 25.09.2012 04:00 Uhr',
+         'from' => 1341727200,
          'id' => 2360,
          'data' => 'userdel	q4::inwork 15272,10790 15279,10862
 ',
@@ -1426,16 +1426,7 @@ userdel	q4::inwork; 11389,10463 11393,10390
          'type' => 'handicap'
        },
        undef,
-       {
-         'source_id' => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1208/nachricht4740.html',
-         'until' => 1345431600,
-         'text' => 'Sperrung der Bösebrücke ("Bornholmer Brücke") in Fahrtrichtung West von Freitag, den 17.08.2012, 20:00 Uhr bis Montag, den 20.08.2012, 5:00 Uhr, Ausweichen auf gegenüberliegenden Gehweg möglich',
-         'from' => 1345140000,
-         'id' => 2371,
-         'data' => 'userdel	q4::inwork; 9998,16547 9883,16557 9816,16565 9781,16569
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => undef,
          'recurring' => 1,
@@ -1446,6 +1437,26 @@ userdel	q4::inwork; 11389,10463 11393,10390
 userdel	2::night 14838,11410 14776,11400
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_019090',
+         'until' => 1346425200,
+         'text' => 'Köthener Brücke (Tiergarten): Baustelle, Straße vollständig gesperrt in beiden Richtungen, 17.08.2012 14:12 Uhr bis 31.08.2012 17:00 Uhr ',
+         'from' => 1345119120,
+         'id' => 2373,
+         'data' => 'userdel	q4::inwork 8443,10777 8430,10710
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_019071',
+         'until' => 1351695600,
+         'text' => 'Uhlandstr. (Charlottenburg): Baustelle, Straße vollständig gesperrt In beiden Richtungen zwischen Steinplatz und Kantstr., 01.08.2012 05:44 Uhr bis 31.10.2012 16:00 Uhr ',
+         'from' => 1343706240,
+         'id' => 2374,
+         'data' => 'userdel	q4::inwork 5102,11006 5122,11300
+',
+         'type' => 'handicap'
        }
      
 );

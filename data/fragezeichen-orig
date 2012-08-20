@@ -83,6 +83,12 @@ Fahrradstraße in der Lauenburger Str.	?::projected 5870,4992 5905,5088 5927,5182
 #: section ignorieren vvv
 #: section Straßen in Bau und Planung vvv
 # 
+#: by: http://www.aktion-kms.de/projekte/#Platz-der-Stadt-Hof
+#: by: http://www.aktion-kms.de/files/p23.v_l01_120809.pdf
+#: by: http://www.aktion-kms.de/files/pl_d_std_hof_flyer_5.pdf
+#: XXX während der Bauarbeiten bereits gesperrt? Prüfen! Wahrscheinlich -> q4
+Ganghofer Str.: wird zur Fußgängerzone am Platz der Stadt Hof	?::inwork 12753,8187 12792,8190
+# 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/34re.pdf/file?y=2012
 An der Filmfabrik; Am Werksgarten; Am Filmlager: neue Straßen, wann fertig? Genaue Lage? Qualität?	?::inwork 22885,5274 23007,5181 23128,5256 23277,5187
 # 
@@ -1926,7 +1932,6 @@ Lessingstr. (Glienicke): Qualität?	? 4668,24442 4733,24854
 Scheibenbergstr. - Blenheimstr.: Durchfahrt für Radfahrer möglich? Qualität?	? 20692,15161 20687,15193
 #XXX del --- hier existiert nichts --- Seddinhütte: Qualität?	? 27891,-2988 27901,-2972
 Allée du Stade: Qualität?	? 3585,16252 3796,16177 4035,16051
-Petersenweg: Qualität?	? -3835,14668 -3919,14617
 Hohenzollernring - Flankenschanze: Qualität? Hat diese Verbindung einen Straßennamen?	? -3880,14770 -3735,14832
 Jenneweg: Qualität? Existiert für Radfahrer eine Verbindung zum Raminpark?	? -3900,14818 -4015,14744
 Roonstr. (Spandau): Qualität?	? -3665,14966 -3582,14886 -3499,14806
@@ -2175,9 +2180,9 @@ Stillachzeile: Qualität?	? 2645,20300 2567,20239
 Wolburgsweg: Qualität?	? -5727,15818 -5710,15950 -5663,16359
 #: by: http://www.flickr.com/photos/30482855@N04/5174220754/in/pool-39413187@N00/ (keine Durchfahrt für Autos, Pfosten/Sperre am südl. Ende)
 Netphener Weg: Qualität? Nachts beleuchtet? Für Autos gesperrt?	? -5146,15059 -5159,14957 -5199,14835
-Filmwerkeweg: Qualität?	? -7050,13807 -7046,13918
-Wandsbeker Weg: Qualität?	? -6641,14044 -6542,14057
 Köhlbrandweg: Qualität?	? -6517,13977 -6542,14057
+#: XXX dieser Abschnitt ist NN
+Köhlbrandweg: Qualität?	? -6542,14057 -6555,14161
 Blankeneser Weg: Qualität?	? -6261,14213 -6261,14161 -6261,14123 -6245,14037
 Flottbeker Weg: Qualität?	? -6438,14094 -6261,14123
 Neue Str. (Staaken): Qualität?	? -6413,14010 -6245,14037
@@ -2222,8 +2227,8 @@ Neulandweg: Qualität?	? 3211,21678 3292,21708
 Stubbichtweg: Qualität?	? 3042,21141 3053,21091
 Ackerplanweg: Qualität?	? 3117,21154 3128,21109
 Freilandweg: Qualität?	? 3071,21801 3156,21832
+#: XXX anonymous meint: Q1, Beton
 Feldmarkweg: Qualität?	? 3304,21205 3314,21165 3458,21206 3450,21244
-Lichtweg: Qualität?	? 1300,18292 1337,18427
 #XXX del --- existiert nicht? --- Straße B: Genaue Lage der Straße? Qualität?	? 1233,15889 1207,15868
 #: XXX_osm fehlt bei osm
 Virgiliusstr.: Qualität?	? 2696,21648 2678,21669
@@ -2297,7 +2302,6 @@ Windmühlenweg: Qualität?	? 7004,22881 6950,23023
 Getreideweg: Qualität?	? 6948,22862 6891,22997
 Kornweg: Qualität?	? 6892,22843 6837,22974
 Mühlsteinweg: Qualität?	? 6836,22824 6780,22947
-Mehlweg: Qualität?	? 6779,22804 6723,22924
 Auf dem Mühlenberg: Qualität?	? 6723,22924 6780,22947 6837,22974 6891,22997 6950,23023
 #: XXX str_cont_ausnahme-Eintrag
 #: XXX_osm fehlt bei osm
@@ -3119,7 +3123,6 @@ Forstmeisterweg: Qualität? Nachts beleuchtet? Ausgeschildert?	? 32121,3215 32167
 #XXX del --- #: XXX fehlt in Berlin.coords.data --- Winterweg: Qualität? Ausgeschildert?	? 28809,462 29120,271 29481,44 29979,-120 30421,-424
 Hospitalgrabenpark: Qualität?	? 7115,3003 7127,3077 7184,3142 7263,3117 7314,3199
 Lankegrabenpark: Qualität?	? 7364,3193 7409,3331 7458,3451
-Magistratsweg - Maulbeerallee: Qualität? Nachts beleuchtet?	? -6051,12673 -5613,12750 -5594,12832
 #: XXX evtl. auch als Park/Grünanlage eintragen
 Immenweidepark: Qualität?	? -2114,17878 -2169,17882 -2241,17847 -2298,17868 -2366,17868 -2388,17893
 Andreas-Rabe-Siedlung: Qualität? Ausgeschildert?	? 6898,23233 6912,23237 6967,23278 7078,23340 7027,23459
@@ -3250,3 +3253,7 @@ Emmentaler Str.: Ist die Straße eine Vorfahrtstraße?	? 7510,18364 7594,18427
 Adlergestell - Bohnsdorfer Str.: Qualität des südöstlichen Abschnitts? Ist der Weg hier auch unbeleuchtet?	? 22091,1317 22161,1193
 #: XXX laut osm "paved", im nördlichen Teil asphaltiert
 Waldweg zum Campingplatz: Qualität der Straße?	? 29208,71 29512,-619 29297,-717 28915,-1147 28565,-1339 28248,-1473 28162,-1294 28033,-1259 27845,-1324 27758,-1358
+#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1208/nachricht4747.html
+#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/includes/docs/doc495_120814moabiterwerderfussradweg_luftbild_ausschnittfoto.senstdtumswup.jpg
+#: XXX asphaltiert, beleuchtet, einige Fußgänger
+Weg am Moabiter Werder: genaue Lage des Weges? Kann die Straße Alt-Moabit überquert werden?	? 7644,12758 7795,12939

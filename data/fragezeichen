@@ -727,7 +727,6 @@ Schellbronner Weg: Qualität?	? 5860,22676 5920,22603
 Lessingstr. (Glienicke): Qualität?	? 4668,24442 4733,24854
 Scheibenbergstr. - Blenheimstr.: Durchfahrt für Radfahrer möglich? Qualität?	? 20692,15161 20687,15193
 Allée du Stade: Qualität?	? 3585,16252 3796,16177 4035,16051
-Petersenweg: Qualität?	? -3835,14668 -3919,14617
 Hohenzollernring - Flankenschanze: Qualität? Hat diese Verbindung einen Straßennamen?	? -3880,14770 -3735,14832
 Jenneweg: Qualität? Existiert für Radfahrer eine Verbindung zum Raminpark?	? -3900,14818 -4015,14744
 Roonstr. (Spandau): Qualität?	? -3665,14966 -3582,14886 -3499,14806
@@ -918,9 +917,8 @@ Prendener Zeile: Qualität?	? 3155,20416 3132,20514
 Stillachzeile: Qualität?	? 2645,20300 2567,20239
 Wolburgsweg: Qualität?	? -5727,15818 -5710,15950 -5663,16359
 Netphener Weg: Qualität? Nachts beleuchtet? Für Autos gesperrt?	? -5146,15059 -5159,14957 -5199,14835
-Filmwerkeweg: Qualität?	? -7050,13807 -7046,13918
-Wandsbeker Weg: Qualität?	? -6641,14044 -6542,14057
 Köhlbrandweg: Qualität?	? -6517,13977 -6542,14057
+Köhlbrandweg: Qualität?	? -6542,14057 -6555,14161
 Blankeneser Weg: Qualität?	? -6261,14213 -6261,14161 -6261,14123 -6245,14037
 Flottbeker Weg: Qualität?	? -6438,14094 -6261,14123
 Neue Str. (Staaken): Qualität?	? -6413,14010 -6245,14037
@@ -948,7 +946,6 @@ Stubbichtweg: Qualität?	? 3042,21141 3053,21091
 Ackerplanweg: Qualität?	? 3117,21154 3128,21109
 Freilandweg: Qualität?	? 3071,21801 3156,21832
 Feldmarkweg: Qualität?	? 3304,21205 3314,21165 3458,21206 3450,21244
-Lichtweg: Qualität?	? 1300,18292 1337,18427
 Virgiliusstr.: Qualität?	? 2696,21648 2678,21669
 Wickeder Str.: Qualität?	? 2556,18855 2599,18842 2707,18849
 Ahlbeerensteig: Qualität?	? -7559,14379 -7553,14518 -7550,14579
@@ -1011,7 +1008,6 @@ Windmühlenweg: Qualität?	? 7004,22881 6950,23023
 Getreideweg: Qualität?	? 6948,22862 6891,22997
 Kornweg: Qualität?	? 6892,22843 6837,22974
 Mühlsteinweg: Qualität?	? 6836,22824 6780,22947
-Mehlweg: Qualität?	? 6779,22804 6723,22924
 Auf dem Mühlenberg: Qualität?	? 6723,22924 6780,22947 6837,22974 6891,22997 6950,23023
 Am Fölzberg: Qualität?	? 6714,23010 6830,23080 6865,23103
 Am Fölzberg: Qualität?	? 6830,23080 6779,23139
@@ -1478,7 +1474,6 @@ Dr.-Jacoby-Weg: Qualität? Befindet sich der Weg hier?	? 25598,6158 25413,6240
 Forstmeisterweg: Qualität? Nachts beleuchtet? Ausgeschildert?	? 32121,3215 32167,3317 32222,3680
 Hospitalgrabenpark: Qualität?	? 7115,3003 7127,3077 7184,3142 7263,3117 7314,3199
 Lankegrabenpark: Qualität?	? 7364,3193 7409,3331 7458,3451
-Magistratsweg - Maulbeerallee: Qualität? Nachts beleuchtet?	? -6051,12673 -5613,12750 -5594,12832
 Immenweidepark: Qualität?	? -2114,17878 -2169,17882 -2241,17847 -2298,17868 -2366,17868 -2388,17893
 Andreas-Rabe-Siedlung: Qualität? Ausgeschildert?	? 6898,23233 6912,23237 6967,23278 7078,23340 7027,23459
 Ruhlebener Str. - Uferweg: existiert ein Zugang? Wieviele Treppenstufen?	? -3621,13884 -3493,13782
@@ -1536,6 +1531,7 @@ Dannenwalder Str.: Ist die Straße eine Vorfahrtstraße?	? 7255,20793 7280,20895
 Emmentaler Str.: Ist die Straße eine Vorfahrtstraße?	? 7510,18364 7594,18427
 Adlergestell - Bohnsdorfer Str.: Qualität des südöstlichen Abschnitts? Ist der Weg hier auch unbeleuchtet?	? 22091,1317 22161,1193
 Waldweg zum Campingplatz: Qualität der Straße?	? 29208,71 29512,-619 29297,-717 28915,-1147 28565,-1339 28248,-1473 28162,-1294 28033,-1259 27845,-1324 27758,-1358
+Weg am Moabiter Werder: genaue Lage des Weges? Kann die Straße Alt-Moabit überquert werden?	? 7644,12758 7795,12939
 # added from ampeln-orig
 geschlossen bei Bedarf (?) (Zbr)	? 27657,-11741
 S-Bahn alle 20 Minuten, Regionalbahn halbstündlich (?) (B)	? 40248,14503
@@ -1550,13 +1546,10 @@ Straße 269 (Ist die Straße beleuchtet?)	? -5382,8880 -5657,8897 -6406,8933 -7252
 Steilpfad (In welche Richtung verläuft die Steigung? Gibt es hier eine Einbahnstraße? Wenn ja, auch für Radfahrer, oder nur für Autos?)	? 3280,21477 3376,21224
 Verlängerte Schulzendorfer Str. (Existieren Straßenschilder für die "Verlängerte Schulzendorfer Str."?)	? 2155,22453 2060,22419 2011,22408 1874,22412 1827,22404 1659,22383 1583,22376 1524,22368 1468,22359 1411,22365 1266,22401 1094,22504 742,22666 695,22694 676,22667 598,22633 525,22614 439,22620 266,22584 240,22554
 (südlicher Weg im Ramin-Park) (Nachts beleuchtet?)	? -3985,14582 -3950,14519 -3920,14468 -3844,14430 -3777,14405
-(Borkzeile - Petersenweg) (Nachts beleuchtet?)	? -4185,14572 -4081,14550 -3985,14582 -3941,14603 -3919,14617
 Stadtheidestr. (Ist die Stadtheidestr. eine Einbahnstraße? Wenn ja, in welche Richtung ist sie offen und gilt die Einbahnstraßenregelung auch für Radfahrer oder nur für Autofahrer?)	? -3573,16006 -3684,15982
 (Forst Düppel) (Ist dieser Weg als "Sieben-Raben-Weg" ausgeschildert?)	? -6009,559 -6306,251 -6353,189 -6542,105 -6956,-30 -7067,-36
 Müggellandstr. (heißt dieser Abschnitt "Norheimer Straße"?)	? 28488,1307 28301,1467
 Straße Z (ist die Straße Z ebenfalls asphaltiert?)	? -638,16459 -671,16488 -708,16516
-(Seeburger Weg - Lutoner Str.) (nachts beleuchtet?)	? -5234,12812 -5273,12802 -5388,12841 -5554,12929 -5707,13014 -5753,13107
-(Egelpfuhlwiesen) (nachts beleuchtet?)	? -5594,12832 -5561,12909 -5554,12929 -5493,12994 -5446,13137 -5472,13235
 (Ulrikenstr. - Brunsbütteler Damm) (nachts beleuchtet?)	? -5278,13606 -5280,13659 -5277,13707 -5187,13707 -5173,13951
 (Schönwalder Allee - Eiskeller) (Heißt diese Straße "Eiskellerweg"?)	? -6791,20816 -7102,20371 -7586,20088 -7582,19875 -7971,19684 -8016,19641 -8018,19562 -7964,19490
 Sportforumstr. (Qualität der Sportforumstr. (asphaltiert?))	? -193,12051 -212,12095 -247,12117 -369,12175

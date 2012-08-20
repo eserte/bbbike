@@ -9052,7 +9052,7 @@ Belfaster Str.: guter Asphalt	Q0 5589,17081 5662,17158 5847,17365 5866,17419 589
 Camphausenstr.: sehr guter Asphalt	Q0 169,2264 244,2165 271,2129 334,2017 345,1977 379,1846
 Gimpelsteig: guter Asphalt	Q0 243,1820 266,1815 379,1846 484,1879 530,1893 565,1903 609,1915 662,1930
 Spandauer Str.: Kopfsteinpflaster	Q2 -6442,14186 -6261,14213
-Spandauer Str.: Asphalt	Q0 -6483,14175 -6659,14142
+Spandauer Str.: Asphalt	Q0 -6483,14175 -6555,14161 -6659,14142
 Spandauer Str.: glattes Pflaster	Q0 -6659,14142 -6906,14092
 Spandauer Str.: Asphalt	Q0 -6906,14092 -6945,14085 -7280,14029 -7457,13957
 Swakopmunder Str.: guter Asphalt	Q1 5479,17108 5444,17093 5423,17076 5376,17017 5315,16936 5236,16831 5223,16783 5228,16738
@@ -11804,6 +11804,10 @@ Menzer Weg: Beton	Q0 -1064,1696 -1054,1616
 Am Posseberg: guter Asphalt	Q0 12632,25569 12436,25580 12396,25478 12138,24989 12261,24851
 Silzer Weg: relativ glattes Pflaster	Q1 5688,312 5795,371 5867,412 5925,417
 Silzer Weg: Asphalt	Q0 5929,389 6130,449
+Wandsbeker Weg: Beton	Q0 -6641,14044 -6542,14057
+Filmwerkeweg: Beton	Q0 -7050,13807 -7046,13918
+(Magistratsweg - Maulbeerallee): Verbundsteinpflaster	Q0 -6051,12673 -5613,12750 -5594,12832
+Petersenweg: guter Beton	Q1 -3835,14668 -3919,14617
 Papenberger Weg: guter Asphalt	Q1 -2937,19008 -2894,19019 -2789,19013
 Iznikstr.: guter Asphalt	Q1 -2133,16934 -2119,17015
 Hans-Poelzig-Str.: guter Asphalt	Q1 -2296,16866 -2157,16838
@@ -11929,6 +11933,8 @@ Narzissenpfad: Asphalt	Q0 -7387,14951 -7523,14969
 Engelroder Weg: gut asphaltiert	Q0 6269,21748 6253,21778 6211,21863 6175,21913
 Markendorfer Str.: Beton	Q0 6380,20983 5840,20953
 (Pankeweg zwischen Pankstr. und Wiesenstr.): wassergebundene Decke	Q1 8140,15859 8122,15700 8156,15614
+Mehlweg: gutes Verbundsteinpflaster	Q1 6779,22804 6723,22924
+Lichtweg: Asphalt	Q0 1300,18292 1337,18427
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206
 Richard-Ermisch-Str.: Asphalt	Q0 14245,13268 14224,13206 14207,13152 14177,13065 14163,13025 14130,12926 14096,12827
 Zum Langen Jammer: Kopfsteinpflaster, Gehweg besser	Q2 14686,12873 14405,12953
@@ -12344,7 +12350,7 @@ Ingeborg-Drewitz-Allee: Asphalt	Q0 7343,12758 7367,12729 7418,12725 7538,12729
 Ingeborg-Drewitz-Allee: Asphalt	Q0 7365,12775 7388,12746 7539,12754
 Ingeborg-Drewitz-Allee: Asphalt	Q0 7538,12729 7539,12754
 (Ingeborg-Drewitz-Allee): Gehwegplatten	Q0 7538,12729 7781,12732
-(Ingeborg-Drewitz-Allee): Gehwegplatten	Q0 7539,12754 7849,12767
+(Ingeborg-Drewitz-Allee): Gehwegplatten	Q0 7539,12754 7644,12758 7849,12767
 (Ingeborg-Drewitz-Allee): Gehwegplatten	Q0 7322,12735 7341,12709
 Spenerstr.: Kopfsteinpflaster	Q2 6877,12607 6907,12777 6966,13075
 (Joachim-Karnatz-Allee - Ingeborg-Drewitz-Allee): Gehwegplatten	Q0 7415,12590 7418,12725

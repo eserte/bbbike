@@ -3408,12 +3408,14 @@ Schönblicker Str.: Asphalt	Q0 31695,3690 31661,3665 31670,3604 31724,3592 31756,
 Nickelswalder Str.: Asphalt	Q0 31632,3297 31674,3409 31715,3508 31729,3551 31724,3592
 #: XXX nach den Bauarbeiten Q0?
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20120808.1215.373440.html
-#: next_check: 2012-08-25
+#: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20120815.1200.373711.html
+#: next_check: 2012-08-31
 Kirchstr. (Wilhelmshagen): Asphalt	Q1+ 31756,3620 31876,3568 31983,3518
 Rhedaer Weg: Asphalt	Q0 31715,3508 31870,3484
 #: XXX nach den Bauarbeiten Q0?
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20120808.1215.373440.html
-#: next_check: 2012-08-25
+#: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20120815.1200.373711.html
+#: next_check: 2012-08-31
 Weichselmünder Weg: Asphalt	Q0- 31528,3456 31674,3409 31865,3375
 Lagunenweg: Asphalt	Q0 31632,3297 31609,3232 31591,3139 31582,3060 31566,2798 31565,2762
 Müggelspreeweg: Verbundsteinpflaster	Q1 31772,2830 31664,3024 31645,3108 31591,3139
@@ -6217,6 +6219,9 @@ Störitzseestr.: Beton	Q0 26213,5403 26358,5403
 Am Damm: schlechtes Kopfsteinpflaster	Q3 25967,6125 25992,6060 26179,6041 26282,6033 26351,6028
 Am Damm: Kleinsteinpflaster	Q1 25992,6060 25965,6017
 Müllroser Str.: schlechtes Kopfsteinpflaster	Q3 26179,6041 26177,6081 26139,6188
+#: XXX nach den Bauarbeiten bessere Qualität?
+#: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20120820.1235.373920.html
+#: next_check: 2012-09-28
 Brösener Str.: Asphalt mit Schäden	Q1 26282,6033 26284,6130 26247,6228
 Stillerzeile: Asphalt	Q0 23882,5514 24003,5501 24126,5521 24125,5547 24236,5594 24320,5621 24362,5635 24387,5672 24443,5765 24629,5831 24798,5891 24987,5896 25012,5754
 Löbauer Weg: Asphalt	Q0- 24871,5699 24798,5891
@@ -11812,7 +11817,7 @@ Gimpelsteig: guter Asphalt	Q0 243,1820 266,1815 379,1846 484,1879 530,1893 565,1
 # 
 #: by: Detlef Hüttemann: vvv
 Spandauer Str.: Kopfsteinpflaster	Q2 -6442,14186 -6261,14213
-Spandauer Str.: Asphalt	Q0 -6483,14175 -6659,14142
+Spandauer Str.: Asphalt	Q0 -6483,14175 -6555,14161 -6659,14142
 Spandauer Str.: glattes Pflaster	Q0 -6659,14142 -6906,14092
 Spandauer Str.: Asphalt	Q0 -6906,14092 -6945,14085 -7280,14029 -7457,13957
 #: by: ^^^
@@ -19759,6 +19764,10 @@ Silzer Weg: Asphalt	Q0 5929,389 6130,449
 #: by: ^^^
 # 
 #: by: Stefan Klinkusch vvv
+Wandsbeker Weg: Beton	Q0 -6641,14044 -6542,14057
+Filmwerkeweg: Beton	Q0 -7050,13807 -7046,13918
+(Magistratsweg - Maulbeerallee): Verbundsteinpflaster	Q0- -6051,12673 -5613,12750 -5594,12832
+Petersenweg: guter Beton	Q1 -3835,14668 -3919,14617
 Papenberger Weg: guter Asphalt	Q1 -2937,19008 -2894,19019 -2789,19013
 #: XXX Q1 oder doch Q0? vvv
 Iznikstr.: guter Asphalt	Q1 -2133,16934 -2119,17015
@@ -19978,6 +19987,12 @@ Markendorfer Str.: Beton	Q0 6380,20983 5840,20953
 #: by: Franka (...griem...)
 #: XXX "Bin mir beim Belag nicht sicher, auf jeden Fall kein Beton/Asphalt/Pflaster."
 (Pankeweg zwischen Pankstr. und Wiesenstr.): wassergebundene Decke	Q1 8140,15859 8122,15700 8156,15614
+# 
+#: by: Raphael Werner
+Mehlweg: gutes Verbundsteinpflaster	Q1 6779,22804 6723,22924
+# 
+#: by: anna (miri...)
+Lichtweg: Asphalt	Q0 1300,18292 1337,18427
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206
@@ -20458,7 +20473,7 @@ Ingeborg-Drewitz-Allee: Asphalt	Q0 7343,12758 7367,12729 7418,12725 7538,12729
 Ingeborg-Drewitz-Allee: Asphalt	Q0 7365,12775 7388,12746 7539,12754
 Ingeborg-Drewitz-Allee: Asphalt	Q0 7538,12729 7539,12754
 (Ingeborg-Drewitz-Allee): Gehwegplatten	Q0 7538,12729 7781,12732
-(Ingeborg-Drewitz-Allee): Gehwegplatten	Q0 7539,12754 7849,12767
+(Ingeborg-Drewitz-Allee): Gehwegplatten	Q0 7539,12754 7644,12758 7849,12767
 (Ingeborg-Drewitz-Allee): Gehwegplatten	Q0 7322,12735 7341,12709
 Spenerstr.: Kopfsteinpflaster	Q2 6877,12607 6907,12777 6966,13075
 (Joachim-Karnatz-Allee - Ingeborg-Drewitz-Allee): Gehwegplatten	Q0 7415,12590 7418,12725

@@ -20432,11 +20432,11 @@ EOF
 userdel	q4::inwork 9358,12351 9369,12253
 EOF
      },
-     { from  => 1342123327, # 2012-07-12 22:02
-       until => 1345500000, # 2012-08-21 00:00
-       text  => 'Karlshorster Str. (Lichtenberg): Brückenarbeiten, Sperrung zwischen Nöldnerstr. und Türrschmidtstr., Fußgänger und Radfahrer können langsam passieren, 09.07.2012 bis 20.08.2012 04:00 Uhr',
+     { from  => 1341727200, # 2012-07-08 08:00
+       until => 1348538400, # 2012-09-25 04:00
+       text  => 'Karlshorster Str. (Lichtenberg): Brückenarbeiten, Sperrung zwischen Nöldnerstr. und Türrschmidtstr., Fußgänger und Radfahrer können langsam passieren, 09.07.2012 bis 25.09.2012 04:00 Uhr',
        type  => 'handicap',
-       source_id => 'IM_018994',
+       source_id => 'IM_019067',
        data  => <<EOF,
 userdel	q4::inwork 15272,10790 15279,10862
 EOF
@@ -20549,6 +20549,24 @@ EOF
        data  => <<EOF,
 #: XXX überprüfen, ob das überhaupt stimmt
 userdel	2::night 14838,11410 14776,11400
+EOF
+     },
+     { from  => 1345119120, # 2012-08-16 14:12
+       until => 1346425200, # 2012-08-31 17:00
+       text  => 'Köthener Brücke (Tiergarten): Baustelle, Straße vollständig gesperrt in beiden Richtungen, 17.08.2012 14:12 Uhr bis 31.08.2012 17:00 Uhr ',
+       type  => 'handicap',
+       source_id => 'IM_019090',
+       data  => <<EOF,
+userdel	q4::inwork 8443,10777 8430,10710
+EOF
+     },
+     { from  => 1343706240, # 2012-07-31 05:44
+       until => 1351695600, # 2012-10-31 16:00
+       text  => 'Uhlandstr. (Charlottenburg): Baustelle, Straße vollständig gesperrt In beiden Richtungen zwischen Steinplatz und Kantstr., 01.08.2012 05:44 Uhr bis 31.10.2012 16:00 Uhr ',
+       type  => 'handicap',
+       source_id => 'IM_019071',
+       data  => <<EOF,
+userdel	q4::inwork 5102,11006 5122,11300
 EOF
      },
     );
