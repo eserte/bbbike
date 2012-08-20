@@ -767,11 +767,20 @@ post-deploy-info:
 	@echo "**********************************************************************"
 	@echo "Consider to do the following things now:"
 	@echo "* Update the fragezeichen_list pages:"
-	@echo "    cd $(HOME)/src/bbbike/misc && slaymake rsync-fragezeichen-list"
+	@echo "    (cd $(HOME)/src/bbbike/misc && slaymake rsync-fragezeichen-list)"
 	@echo "* Update git repo of webserver:"
 	@echo "    $(HOME)/src/bbbike-aux/misc/bbbike-checkin-hosteurope.pl -after-sync"
-	@echo "* Send all messages in GNUS' drafts folder"
 	@echo "* Push BBBike git repo to github"
+	@echo "    git push"
+	@echo "* Send all messages in GNUS' drafts folder"
+	@echo ""
+
+post-automatic-deploy-info:
+	@echo "**********************************************************************"
+	@echo "Consider to do the following things now:"
+	@echo "* Push BBBike git repo to github"
+	@echo "    git push"
+	@echo "* Send all messages in GNUS' drafts folder"
 	@echo ""
 
 automatic-deployment:
@@ -786,6 +795,7 @@ automatic-deployment:
 	-( tkmessage -center "BBBike deployment finished, possibly interactive stuff follows..." &)
 	-@${XTERM_CONF_TITLE} "BBBike post-deployment git update"
 	$(HOME)/src/bbbike-aux/misc/bbbike-checkin-hosteurope.pl -after-sync
+	-@${MAKE} post-automatic-deploy-info
 	-@${XTERM_CONF_TITLE} "BBBike deployment finished"
 
 automatic-deployment-temp-blockings:
