@@ -9,7 +9,7 @@
 #
 
 use strict;
-our $VERSION = 1.31;
+our $VERSION = 1.32;
 
 use Cwd qw(realpath);
 use File::Spec;
@@ -30,6 +30,7 @@ use Karte::Polar;
 use BBBikeUtil qw(s2hm is_in_path);
 
 sub parse_clock_adjust_file ($);
+sub _isodate_to_epoch ($);
 
 my $gps_data_dir = "$FindBin::RealBin/../misc/gps_data";
 my $no_gps_data_dir;
@@ -110,6 +111,7 @@ if (!-d $thumbnail_dir) {
 }
 
 my @cam_delta_mapping;
+my @ignore_mapping;
 if ($clock_adjust_file) {
     undef $clock_gps;
     undef $clock_camera;
@@ -277,6 +279,7 @@ sub get_image_location {
     }
 
     my $epoch = timelocal($S,$M,$H,$d,$m-1,$y-1900);
+    return if check_ignore($epoch);
     my $this_cam_delta = get_matching_cam_delta($epoch) || $cam_delta;
     $epoch -= $this_cam_delta;
     my @l = localtime $epoch;
@@ -696,6 +699,18 @@ sub get_matching_cam_delta {
     undef;
 }
 
+sub check_ignore {
+    my($epoch) = @_;
+    for my $def (@ignore_mapping) {
+	my($from_epoch, $to_epoch, $reason) = @$def;
+	if ($from_epoch <= $epoch && $epoch <= $to_epoch) {
+	    warn "Ignore $epoch because of '$reason' ($from_epoch..$to_epoch)\n" if $debug;
+	    return 1;
+	}
+    }
+    0;
+}
+
 # Side effects:
 # - populate @cam_delta_mapping (adding to existing entries)
 sub parse_clock_adjust_file ($) {
@@ -706,7 +721,7 @@ sub parse_clock_adjust_file ($) {
 	chomp;
 	next if m{^\s*\#};
 	next if m{^\s*$};
-	my(@fields) = split /\s+/;
+	my(@fields) = split /\s+/, $_, 4;
 	if (@fields != 3 && @fields != 4) {
 	    die <<EOF;
 Cannot parse line '$_' in $clock_adjust_file, must be either
@@ -716,28 +731,46 @@ Cannot parse line '$_' in $clock_adjust_file, must be either
 or
 
     isodatetimefrom isodatetimeto gpstime cameratime
+
+or
+
+    isodatetimefrom isodatetimeto Ignore: reason...
+
 EOF
 	}
-	my($from, $to, $gps, $camera);
-	if (@fields == 3) {
-	    $from = $fields[0] . 'T00:00:00';
-	    $to   = $fields[0] . 'T23:59:59';
-	    ($gps, $camera) = @fields[1,2];
+
+	# Is it the extended format ("Ignore:" ...)?
+	if (@fields == 4 && $fields[2] =~ m{^(.*):$}) {
+	    if ($1 ne 'Ignore') {
+		die <<EOF;
+Cannot parse line '$_' in $clock_adjust_file,
+unhandled keyword '$1:', only 'Ignore:' is allowed.
+EOF
+	    }
+	    # Ignore:
+	    my($from, $to, undef, $reason) = @fields;
+	    push @ignore_mapping, [_isodate_to_epoch($from), _isodate_to_epoch($to), $reason];
 	} else {
-	    ($from, $to, $gps, $camera) = @fields;
+	    my($from, $to, $gps, $camera);
+	    if (@fields == 3) {
+		$from = $fields[0] . 'T00:00:00';
+		$to   = $fields[0] . 'T23:59:59';
+		($gps, $camera) = @fields[1,2];
+	    } else {
+		($from, $to, $gps, $camera) = @fields;
+	    }
+	    my $from_epoch = _isodate_to_epoch $from;
+	    my $to_epoch   = _isodate_to_epoch $to;
+	    push @cam_delta_mapping, [$from_epoch, $to_epoch, get_cam_delta($gps, $camera)];
 	}
-	my $from_epoch = do {
-	    my($Y,$M,$D,$h,$m,$s) = $from =~ $lax_iso_date_qr
-		or die "Cannot parse date '$from' as ISO date";
-	    timelocal($s,$m,$h,$D,$M-1,$Y-1900);
-	};
-	my $to_epoch = do {
-	    my($Y,$M,$D,$h,$m,$s) = $to   =~ $lax_iso_date_qr
-		or die "Cannot parse date '$to' as ISO date";
-	    timelocal($s,$m,$h,$D,$M-1,$Y-1900);
-	};
-	push @cam_delta_mapping, [$from_epoch, $to_epoch, get_cam_delta($gps, $camera)];
     }
+}
+
+sub _isodate_to_epoch ($) {
+    my $isodate = shift;
+    my($Y,$M,$D,$h,$m,$s) = $isodate =~ $lax_iso_date_qr
+	or die "Cannot parse date '$isodate' as ISO date";
+    timelocal($s,$m,$h,$D,$M-1,$Y-1900);
 }
 
 __END__
