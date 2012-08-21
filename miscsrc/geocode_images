@@ -29,6 +29,8 @@ use Karte::Standard;
 use Karte::Polar;
 use BBBikeUtil qw(s2hm is_in_path);
 
+sub parse_clock_adjust_file ($);
+
 my $gps_data_dir = "$FindBin::RealBin/../misc/gps_data";
 my $no_gps_data_dir;
 my $thumbnail_dir = "/tmp/thumbnails";
@@ -111,44 +113,7 @@ my @cam_delta_mapping;
 if ($clock_adjust_file) {
     undef $clock_gps;
     undef $clock_camera;
-    open my $fh, $clock_adjust_file
-	or die "Can't open file $clock_adjust_file: $!";
-    while(<$fh>) {
-	chomp;
-	next if m{^\s*\#};
-	next if m{^\s*$};
-	my(@fields) = split /\s+/;
-	if (@fields != 3 && @fields != 4) {
-	    die <<EOF;
-Cannot parse line '$_' in $clock_adjust_file, must be either
-
-    isodate gpstime cameratime
-
-or
-
-    isodatetimefrom isodatetimeto gpstime cameratime
-EOF
-	}
-	my($from, $to, $gps, $camera);
-	if (@fields == 3) {
-	    $from = $fields[0] . 'T00:00:00';
-	    $to   = $fields[0] . 'T23:59:59';
-	    ($gps, $camera) = @fields[1,2];
-	} else {
-	    ($from, $to, $gps, $camera) = @fields;
-	}
-	my $from_epoch = do {
-	    my($Y,$M,$D,$h,$m,$s) = $from =~ $lax_iso_date_qr
-		or die "Cannot parse date '$from' as ISO date";
-	    timelocal($s,$m,$h,$D,$M-1,$Y-1900);
-	};
-	my $to_epoch = do {
-	    my($Y,$M,$D,$h,$m,$s) = $to   =~ $lax_iso_date_qr
-		or die "Cannot parse date '$to' as ISO date";
-	    timelocal($s,$m,$h,$D,$M-1,$Y-1900);
-	};
-	push @cam_delta_mapping, [$from_epoch, $to_epoch, get_cam_delta($gps, $camera)];
-    }
+    parse_clock_adjust_file $clock_adjust_file;
 }
 
 my $cam_delta = 0;
@@ -731,6 +696,50 @@ sub get_matching_cam_delta {
     undef;
 }
 
+# Side effects:
+# - populate @cam_delta_mapping (adding to existing entries)
+sub parse_clock_adjust_file ($) {
+    my $clock_adjust_file = shift;
+    open my $fh, $clock_adjust_file
+	or die "Can't open file $clock_adjust_file: $!";
+    while(<$fh>) {
+	chomp;
+	next if m{^\s*\#};
+	next if m{^\s*$};
+	my(@fields) = split /\s+/;
+	if (@fields != 3 && @fields != 4) {
+	    die <<EOF;
+Cannot parse line '$_' in $clock_adjust_file, must be either
+
+    isodate gpstime cameratime
+
+or
+
+    isodatetimefrom isodatetimeto gpstime cameratime
+EOF
+	}
+	my($from, $to, $gps, $camera);
+	if (@fields == 3) {
+	    $from = $fields[0] . 'T00:00:00';
+	    $to   = $fields[0] . 'T23:59:59';
+	    ($gps, $camera) = @fields[1,2];
+	} else {
+	    ($from, $to, $gps, $camera) = @fields;
+	}
+	my $from_epoch = do {
+	    my($Y,$M,$D,$h,$m,$s) = $from =~ $lax_iso_date_qr
+		or die "Cannot parse date '$from' as ISO date";
+	    timelocal($s,$m,$h,$D,$M-1,$Y-1900);
+	};
+	my $to_epoch = do {
+	    my($Y,$M,$D,$h,$m,$s) = $to   =~ $lax_iso_date_qr
+		or die "Cannot parse date '$to' as ISO date";
+	    timelocal($s,$m,$h,$D,$M-1,$Y-1900);
+	};
+	push @cam_delta_mapping, [$from_epoch, $to_epoch, get_cam_delta($gps, $camera)];
+    }
+}
+
 __END__
 
 =head1 NAME
@@ -784,9 +793,13 @@ adjustment.
 =head1 EXAMPLES
 
 Assuming photos are located in files and subdirectories of the
-directory ~/images and the generated bbd should go to /tmp:
+directory ~/images, the gps tracks are in the default location
+(subdirectory misc/gps_data relative to the bbbike source directory),
+and the generated bbd should go to /tmp:
 
     ~/src/bbbike/miscsrc/geocode_images -o /tmp/geocoded_images.bbd ~/images
+
+The directory of gps tracks may be changed with the C<-gpsdatadir> option.
 
 Or using a "find" before:
 
