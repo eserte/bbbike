@@ -184,13 +184,14 @@ fragezeichen-outdoor-nextcheck:	${PERSISTENTTMPDIR}/.check_fragezeichen-outdoor-
 persistent-tmp:	${PERSISTENTTMPDIR}/XXX-$(i).bbd
 .endfor
 
-plz-test:
-	cd $(BBBIKEDIR) && prove t/plz.t
-
 # more checks, but even slower (about four minutes)
 really-slow-checks:	check-crossings-important \
 			check-nearest \
-			check-urls
+			check-urls \
+			plz-test
+
+plz-test:
+	cd $(BBBIKEDIR) && prove t/plz.t
 
 # this adds also "check-crossings-less-important", but the results of
 # these checks there were never looked at, so really not important...
