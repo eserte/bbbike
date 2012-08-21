@@ -808,8 +808,8 @@ where the -clockgps value is what is visible on the photo and the
 -clockcamera value is what is visible in the EXIF data of the photo.
 
 It is also possible to maintain a database of such clock adjustments
-in a file. This is just a text file with whitespace-separated fields,
-either:
+in a file (which is specified with the C<-clockadjustfile> option).
+This is just a text file with whitespace-separated fields, either:
 
    ISO_date_time_from	ISO_date_time_to	gps_time	camera_time
 
@@ -822,6 +822,19 @@ ISO date is YYYYMMDD, with possible separators).
 
 The first field or first two fields denote the validity time of the
 adjustment.
+
+There's currently no time zone support. Currently it is assumed that
+the times of the photo files have the local time zone. This may change
+in the future.
+
+=head2 Ignoring photo files
+
+The C<-clockadjustfile> file can also be used to ignore photo files
+completely. Just put lines in the form
+
+   ISO_date_time_from	ISO_date_time_to	Ignore:	some text explaining the reason
+
+with the string "Ignore:" in the third field.
 
 =head1 EXAMPLES
 
