@@ -155,8 +155,7 @@ slow-checks:	check-categories \
 		inaccessible_strassen inaccessible_landstrassen \
 		check-line-lengths check-dates \
 		check-coords.data \
-		persistent-tmp \
-		plz-test
+		persistent-tmp
 
 persistent-tmp:	fragezeichen-outdoor-nextcheck \
 		${PERSISTENTTMPDIR}/.check_fragezeichen-outdoor.bbd \
