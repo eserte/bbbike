@@ -1038,7 +1038,7 @@ sub handle_cycleway_like {
 	    $extra_tags .= qq{  <tag k="bbbike:usage" v="unknown" />\n};
 	} elsif ($cat eq 'RW5') {
 	    $extra_tags .= qq{  <tag k="psv" v="yes" />\n};
-	    if ($r->[Strassen::NAME()] =~ m{(Busspur ist immer gültig|Busspur gilt immer)}) {
+	    if ($r->[Strassen::NAME()] =~ m{Busspur (?:.*)?ist immer gültig}) {
 		$extra_tags .= qq{  <tag k="bbbike:times" v="always" />\n};
 	    }
 	} elsif ($cat eq 'RW5?') {
