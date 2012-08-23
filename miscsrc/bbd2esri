@@ -288,6 +288,7 @@ sub create_shape_file {
 	no warnings;
 	for my $i (0 .. $fields-1) {
 	    $max_length[$i] = max map { length($_->[$i]) } @dbf;
+	    $max_length[$i] = 0 if !defined $max_length[$i]; # since perl 5.12.0 length(undef) -> undef
 	}
     }
 
