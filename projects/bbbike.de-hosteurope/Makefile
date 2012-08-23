@@ -19,6 +19,7 @@
 #  test-local:	Run all tests locally.
 #  deploy:	Do everything from preparing to rsync'ing and testing.
 #  deploy-local:	Prepare a local distribution for testing. Do not rsync.
+#  deploy-pps:		Do a deployment to a pps system (bbbike-pps).
 #  test-makefile:	Same as deploy-local, but each make command has to
 #			be confirmed.
 #
@@ -795,8 +796,8 @@ post-automatic-deploy-info:
 automatic-deployment:
 	-@${XTERM_CONF_TITLE} "BBBike pre-deployment git update"
 	$(HOME)/src/bbbike-aux/misc/bbbike-checkin-hosteurope.pl -update
-	-@${XTERM_CONF_TITLE} "BBBike local deployment"
-	nice ${MAKE} deploy-local NO_PARALLEL=1
+	-@${XTERM_CONF_TITLE} "BBBike pps deployment"
+	nice ${MAKE} deploy-pps NO_PARALLEL=1
 	-@${XTERM_CONF_TITLE} "BBBike deployment"
 	${MAKE} deploy
 	-@${XTERM_CONF_TITLE} "BBBike post deployment stuff"
