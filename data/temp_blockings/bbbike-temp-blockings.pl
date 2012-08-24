@@ -20044,8 +20044,8 @@ EOF
 ## früher:
 #       source_id => 'INKO_093369',
        data  => <<EOF,
-#: last_checked: 2012-07-13
-#: next_check: 2012-08-13
+#: last_checked: 2012-08-23
+#: next_check: 2012-09-23
 userdel	q4::inwork; 9164,12172 9373,12197
 EOF
      },

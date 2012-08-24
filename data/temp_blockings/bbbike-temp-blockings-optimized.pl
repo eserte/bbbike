@@ -1172,8 +1172,8 @@ userdel	q4::inwork; -1872,24336 -1790,24260 -1627,24105 -1367,23853 -1286,23753 
          'text' => 'Behrenstr. (Mitte): Fahrbahn Richtung Friedrichstr. zwischen Glinkastr. und Friedrichstr. gesperrt',
          'from' => undef,
          'id' => 2317,
-         'data' => '#: last_checked: 2012-07-13
-#: next_check: 2012-08-13
+         'data' => '#: last_checked: 2012-08-23
+#: next_check: 2012-09-23
 userdel	q4::inwork; 9164,12172 9373,12197
 ',
          'type' => 'handicap'

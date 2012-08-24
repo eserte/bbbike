@@ -52,10 +52,12 @@ Hessische Str.: Sackgasse zur Invalidenstr.	q3::inwork 8775,13606 8690,13723
 #: XXX abhängig von den Arbeiten in der Kynaststr.
 Alt-Stralau: Bauarbeiten an der Brücke, enge Durchfahrt	q3::inwork 14652,10201 14558,10264
 # 
-#: last_checked: 2012-06-07
-#: next_check: 2012-09-01
+#: last_checked: 2012-08-23
+#: next_check: 2012-11-01
 #: XXX nach den Bauarbeiten vielleicht besserer Asphalt? -> qualitaet_s-orig
-Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9890,12161 9875,12257 9869,12297
+#: XXX siehe auch Eintrag in handicap_s-orig
+#: XXX siehe auch Einträge in fragezeichen-orig (Falkoniergasse etc.)
+Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9875,12257 9869,12297
 # 
 #: last_checked: 2012-07-13
 #: next_check: 2012-09-01
@@ -95,8 +97,8 @@ Rathausstr. zwischen Breite Str. und Poststr.: Fahrbahn wegen Brückenbauarbeiten
 #: next_check: ^^^
 #: last_checked: ^^^
 # 
-#: last_checked: 2012-07-12
-#: next_check: 2012-08-10
+#: last_checked: 2012-08-10
+#: next_check: 2012-09-01
 Alte Jakobstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10489,11405 10436,11344 10244,11160
 # 
 #: last_checked: 2012-08-01
