@@ -115,7 +115,7 @@ Kantstr.: Bauarbeiten am Zoofenster, Fahrbahn Richtung Westen gesperrt	q4::inwor
 #: next_check: 2012-09-01 vvv
 #: note: siehe auch Eintrag zur Friedrichsbrücke
 Burgstraße: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 10166,12777 10132,12941
-Anna-Louisa-Karsch-Str.: vor der Friedrichsbrücke auf den linken Gehweg fahren	q3::inwork; 10264,12826 10166,12777
+Anna-Louisa-Karsch-Str.: vor der Friedrichsbrücke auf den rechten Gehweg fahren	q4::inwork; 10264,12826 10166,12777
 #: next_check ^^^
 #: last_checked ^^^
 # 
@@ -314,7 +314,7 @@ Ernststr.: Fußgänger	q2 2497,19503 2700,19527
 (S-Bahnunterführung Wartenberg): Fußgänger	q1 17077,18744 17114,18775
 (Weg zwischen S-Hohenschönhausen und S-Wartenberg): eng und teilweise kurvenreich	q1 17557,17999 17267,18343 17159,18375 17111,18479 17040,18571 17002,18578 16936,18658
 Bernburger Treppe: Rampe	q3 8536,11063 8454,11086
-Virchowstr. (Volkspark Friedrichshain): Fußgänger	q1 12876,13440 12771,13603 12707,13706
+Virchowstr. (Volkspark Friedrichshain): Fußgänger	q1 12876,13440 12826,13526 12802,13584 12766,13621 12743,13634 12709,13691 12707,13706
 (Buckower Ring - Cecilienstr.): Fußgänger, eng	q1 21874,13543 21928,13717
 (Hohenzollerndamm - Friedrichsruher Str.): enger Gehweg	q2 3388,8958 3333,9026
 Gillweg: enger Gehweg	q2 2585,9653 2484,9671 2394,9714
@@ -615,7 +615,7 @@ Buschrosenplatz: enge Straße	q1 13002,5548 13054,5556 13075,5470
 #: next_check: 2013-06-01
 #: XXX Bauarbeiten wahrscheinlich bis Oktober 2013
 #: by: http://www.abload.de/img/friedrichsbruecke05byk16.jpg
-Friedrichsbrücke: Engstellen wegen Bauarbeiten	q3 10086,12725 10166,12777
+Friedrichsbrücke: Engstellen wegen Bauarbeiten, Umweg über Burgstr.	q4 10086,12725 10166,12777
 (Hornbach-Parkplatz): Parkplatzbetrieb	q1 11871,5195 11867,5226 11705,5221 11654,5245 11598,5316 11579,5311
 Nollendorfplatz: Gehweg oder Parkplatz Richtung Motzstr. benutzen	q3; 7033,10328 6971,10346
 (Blücherplatz - Waterloo-Ufer): Fußgänger, Bordsteine	q2 9631,10142 9687,10180
@@ -1247,7 +1247,7 @@ Hoffbauerpfad: gemeinsamer Rad- und Gehweg	q1 214,969 333,1104
 (Bleichröderpark): Fußgänger	q1 10545,18143 10487,18270
 Rampe	q2 10503,19371 10489,19406
 (Blaubeerweg - Picardieweg): eng	q2 10932,22184 10993,21948
-Schillingweg: eng, parkende Autos	q1 11259,23928 11224,23879 11190,23832 11165,23796 11128,23746 11101,23708 10855,23403 10717,23258 10700,23251 10629,23222 10396,23128 9890,22932
+Schillingweg: eng, parkende Autos	q1 11259,23928 11224,23879 11190,23832 11165,23796 11134,23753 11105,23704 11051,23620 10855,23403 10717,23258 10700,23251 10629,23222 10396,23128
 (Tomatenweg - Straße 175): sehr eng	q3 12500,22895 12515,22898 12532,22902
 (Schloßpark Schönhausen): Fußgänger	q1 10600,19225 10638,19149
 Alex-Wedding-Str.: Fahrbahn gesperrt, Ausweichen auf Gehweg	q4 11085,13239 11045,13183
@@ -1315,6 +1315,7 @@ Caroline-Herschel-Platz: Fußgänger	q2 14752,11369 14737,11347
 am Oder-Spree-Kanal: teilweise enger Pfad	q3 29037,-2817 29101,-2794 29457,-2835 29559,-2866
 Strandbad	q3 30015,-3906 29783,-3739 29597,-3674
 (Magistratsweg - Maulbeerallee): Fußgänger (Schule)	q1 -6051,12673 -5613,12750 -5594,12832
+Henrionweg: eng	q3 11154,21760 11145,21698
 #
 ######################### User Contributions #################################
 # 
@@ -1343,7 +1344,7 @@ Aßmannstr.: Bodenschwellen	q1 25039,5295 25039,5304 25048,5727
 #: by: Katja (...lindner):
 Beckmannstr.: eng	q1 11670,-1973 11681,-1951 11666,-1825 11657,-1721
 #: by: Roland (cybertour):
-Sültstr.: enge Straße, beidseitiges Parken	q1 12094,15598 12171,15737 12247,15868 12295,15953 12352,16048
+Sültstr.: enge Straße, beidseitiges Parken	q1 12094,15598 12171,15737 12247,15868 12295,15953 12347,16039
 #: by: frau heilmann:
 Junker-Jörg-Str.: eng, parkende Autos	q1 18447,8818 18471,8957 18511,9185 18545,9395
 #: by: Thomas (nawrot):
@@ -1660,13 +1661,13 @@ Rezonvillestr.: Fußgänger	q2 5589,4617 5607,4610
 Am Stadtpark (Steglitz): Fußgänger	q2 5656,4543 5751,4497 5817,4473
 (Stadtpark Steglitz): Fußgänger	q2 5826,4819 5765,4693 5697,4545 5656,4543
 Vereinsweg (Steglitz): Fußgänger, Privatstraße, Radfahren nicht erlaubt	q4 5347,4841 5436,4983
-(Volkspark Friedrichshain): Fußgänger	q2 13100,13803 12987,13727 12965,13709 12829,13621 12771,13603
+(Volkspark Friedrichshain): Fußgänger	q2 13100,13803 12987,13727 12965,13709 12829,13621 12766,13621
 (Volkspark Friedrichshain): Skater, Fußgänger	q2 12829,13621 12887,13537 12925,13523 12991,13539 13025,13585 13023,13627 12965,13709 12915,13785 12877,13795 12825,13783 12793,13749 12783,13699 12829,13621
 (Volkspark Friedrichshain): Fußgänger	q2 12915,13785 12937,13803 12887,13877 12879,13889
 (Volkspark Friedrichshain): Fußgänger	q2 12937,13803 12987,13727
 (Volkspark Friedrichshain): Fußgänger	q2 12825,13783 12813,13799 12805,13809
-(Volkspark Friedrichshain): Fußgänger	q2 12403,13755 12436,13719 12482,13705 12594,13747 12654,13819
-(Volkspark Friedrichshain): Fußgänger	q2 12771,13603 12737,13593 12656,13576 12582,13519 12483,13418
+(Volkspark Friedrichshain): Fußgänger	q2 12403,13755 12436,13719 12482,13705 12594,13747 12640,13814
+(Volkspark Friedrichshain): Fußgänger	q2 12766,13621 12723,13598 12656,13576 12582,13519 12483,13418
 (Volkspark Friedrichshain): Fußgänger	q2 12483,13418 12605,13356
 (Volkspark Friedrichshain): Fußgänger	q2 12438,13387 12344,13320 12248,13254 12231,13233
 (Volkspark Friedrichshain): Fußgänger	q2 12382,13262 12344,13320 12281,13325 12166,13349 12148,13348
@@ -1955,7 +1956,7 @@ Rue Marin la Meslée: enge Straße	q1 3213,17858 3123,17923
 #: by: ^^^
 #: by: Enke (berndenke):
 #: note: Wohngebietsstraße, wird von Kfz nur zum Ein- und Ausladen befahren
-Max-Koska-Str.: Fußgänger	q2 11829,16339 11846,16438 11844,16483
+Max-Koska-Str.: Fußgänger	q2 11829,16339 11846,16438 11842,16493
 #: by: Axel Stojenthin:
 Schulzendorfer Str.: Gehweg	q2 -2176,22789 -2263,22748 -2348,22704 -2377,22689 -2504,22626
 #: by: Holger Schulze:
@@ -2276,8 +2277,8 @@ Tankredstr.: enge Straße	q1 8264,5383 8328,5417 8365,5418 8394,5412 8484,5347
 Battenheimer Weg: enge Straße	q1 11762,1040 11681,1031 11393,1243
 #: by: MaPo: vvv
 Fürst-Bismarck-Str.: enge Straße	q1 4032,22374 3917,22534
-#: corrected_by: srt/policy (q2 -> q1)
-Birnbaumring: enge Straße	q1 8661,24952 8751,24988 8791,25019 8825,25052 8871,25109 8922,25212 8856,25267 8776,25332 8735,25366 8673,25418 8584,25371 8529,25361
+#: corrected_by: srt (q2 -> q0-)
+Birnbaumring: enge Straße	q0- 8661,24952 8751,24988 8785,25014 8825,25052 8871,25109 8922,25212 8856,25267 8776,25332 8735,25366 8673,25418 8584,25371 8529,25361
 #: by: ^^^
 #: by: Florian (olf-kcots):
 Stavenhagener Str.: enge Straße	q1 13634,5126 13534,5111 13444,5097 13359,5086
@@ -2797,8 +2798,8 @@ Minorkaweg: enge Straße	q0- 15831,484 15925,541 16008,628
 Am Finkenherd: enge Straße	q0- -7004,15434 -6977,15706 -6932,16048
 # 
 #: by: Ingo Kahl:
-#: corrected_by: srt/policy (q4 -> q1)
-Stadtgärten: enge Straße	q1 11585,22082 11568,22056 11544,21897 11575,21888 11566,21829 11534,21831 11518,21727 11589,21713
+#: corrected_by: srt (enge Straße, q4 -> )
+Stadtgärten: kurvige Straße	q2 11544,21897 11575,21888 11566,21829 11534,21831
 # 
 #: by: Matthias Dörge:
 #: by: (URL existiert nicht mehr) http://www.berlin.de/ba-steglitz-zehlendorf/presse/archiv/20060505.1315.39412.html (Freigabe Radfahrer)

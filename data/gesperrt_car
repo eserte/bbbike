@@ -243,11 +243,11 @@ Schönhauser Allee -> Rodenbergstr.: U-Bahnviadukt und Straßenbahn	3::igndisp 109
 Rodenbergstr. -> Schönhauser Allee: U-Bahnviadukt und Straßenbahn	3::igndisp 11253,16118 10989,16197 10982,16121
 Straßenbahn	3nocross::ignrte 11860,15309 11877,15366 11891,15413
 Prenzlauer Allee -> Lilli-Henoch-Str.: Straßenbahn	3::igndisp 11891,15413 11877,15366 11942,15358
-Lilli-Henoch-Str. -> Ahlbecker Str.: Straßenbahn	3::igndisp 11942,15358 11877,15366 11638,15522
+Lilli-Henoch-Str. -> Ahlbecker Str.: Straßenbahn	3::igndisp 11942,15358 11877,15366 11632,15530
 Lilli-Henoch-Str. -> Prenzlauer Allee: Straßenbahn	3::igndisp 11942,15358 11877,15366 11860,15309
-Ahlbecker Str. -> Prenzlauer Allee: Straßenbahn	3::igndisp 11638,15522 11877,15366 11891,15413
-Ahlbecker Str. -> Lilli-Henoch-Str.: Straßenbahn	3::igndisp 11638,15522 11877,15366 11942,15358
-Prenzlauer Allee -> Ahlbecker Str.: Straßenbahn	3::igndisp 11860,15309 11877,15366 11638,15522
+Ahlbecker Str. -> Prenzlauer Allee: Straßenbahn	3::igndisp 11632,15530 11877,15366 11891,15413
+Ahlbecker Str. -> Lilli-Henoch-Str.: Straßenbahn	3::igndisp 11632,15530 11877,15366 11942,15358
+Prenzlauer Allee -> Ahlbecker Str.: Straßenbahn	3::igndisp 11860,15309 11877,15366 11632,15530
 Straßenbahn	3nocross::ignrte 12473,14763 12422,14692 12403,14663 12371,14615
 Greifswalder Str. -> John-Schehr-Str.: Straßenbahn	3::igndisp 12473,14763 12422,14692 12573,14581
 John-Schehr-Str. -> Greifswalder Str.: Straßenbahn	3::igndisp 12573,14581 12422,14692 12403,14663
@@ -455,7 +455,7 @@ Straßenbahntrasse	3nocross::ignrte 20352,5877 20428,5841 20536,5789
 Nixenstr. -> An der Wuhlheide: Straßenbahntrasse	3::igndisp 20371,5753 20428,5841 20352,5877
 An der Wuhlheide -> Nixenstr.: Straßenbahntrasse	3::igndisp 20536,5789 20428,5841 20371,5753
 Gürtelstr. - Lehderstr.: nur rechts abbiegen erlaubt	3 13409,15687 13316,15758 13214,15830
-Gürtelstr. - Greifswalder Str.: nur rechts abbiegen erlaubt	3 13409,15687 13316,15758 13229,15692 13098,15592
+Gürtelstr. - Greifswalder Str.: nur rechts abbiegen erlaubt	3 13409,15687 13316,15758 13229,15692 13072,15590
 Jochen-Nüßler-Str.	1 13571,4493 13589,4681
 Parchimer Allee	3nocross::ignrte 13659,4489 13571,4493 13485,4496 13394,4500
 Jochen-Nüßler-Str. -> Parchimer Allee: Parchimer Allee	3::igndisp 13589,4681 13571,4493 13659,4489
@@ -695,18 +695,18 @@ Hafenplatz	3 8483,10900 8628,10818 8700,10766
 Hafenplatz	3 8700,10766 8628,10818 8483,10900
 Askanischer Platz	1 8865,10974 8859,10939 8882,10905
 Straßenbahntrasse	3nocross::ignrte 11271,22328 11383,22369 11484,22406 11583,22442
-Schweizer Tal -> Schweizer Tal: Straßenbahntrasse	3::igndisp 11504,22277 11383,22369 11176,22526
-Schweizer Tal -> Rosenthaler Weg: Straßenbahntrasse	3::igndisp 11504,22277 11383,22369 11271,22328
-Rosenthaler Weg -> Schweizer Tal: Straßenbahntrasse	3::igndisp 11484,22406 11383,22369 11504,22277
-Schweizer Tal -> Schweizer Tal: Straßenbahntrasse	3::igndisp 11176,22526 11383,22369 11504,22277
+Rosenthaler Weg -> Schweizer Tal: Straßenbahntrasse	3::igndisp 11484,22406 11383,22369 11559,22235
+Schweizer Tal -> Schweizer Tal: Straßenbahntrasse	3::igndisp 11559,22235 11383,22369 11176,22526
+Schweizer Tal -> Rosenthaler Weg: Straßenbahntrasse	3::igndisp 11559,22235 11383,22369 11271,22328
 Schweizer Tal -> Rosenthaler Weg: Straßenbahntrasse	3::igndisp 11176,22526 11383,22369 11484,22406
+Schweizer Tal -> Schweizer Tal: Straßenbahntrasse	3::igndisp 11176,22526 11383,22369 11559,22235
 Rosenthaler Weg -> Schweizer Tal: Straßenbahntrasse	3::igndisp 11271,22328 11383,22369 11176,22526
-Tiriotstr. -> Tiriotstr.: Straßenbahntrasse	3::igndisp 11765,22198 11484,22406 11235,22590
-Tiriotstr. -> Rosenthaler Weg: Straßenbahntrasse	3::igndisp 11765,22198 11484,22406 11383,22369
-Rosenthaler Weg -> Tiriotstr.: Straßenbahntrasse	3::igndisp 11583,22442 11484,22406 11765,22198
-Tiriotstr. -> Tiriotstr.: Straßenbahntrasse	3::igndisp 11235,22590 11484,22406 11765,22198
+Rosenthaler Weg -> Tiriotstr.: Straßenbahntrasse	3::igndisp 11583,22442 11484,22406 11618,22307
 Tiriotstr. -> Rosenthaler Weg: Straßenbahntrasse	3::igndisp 11235,22590 11484,22406 11583,22442
+Tiriotstr. -> Tiriotstr.: Straßenbahntrasse	3::igndisp 11235,22590 11484,22406 11618,22307
 Rosenthaler Weg -> Tiriotstr.: Straßenbahntrasse	3::igndisp 11383,22369 11484,22406 11235,22590
+Tiriotstr. -> Tiriotstr.: Straßenbahntrasse	3::igndisp 11618,22307 11484,22406 11235,22590
+Tiriotstr. -> Rosenthaler Weg: Straßenbahntrasse	3::igndisp 11618,22307 11484,22406 11383,22369
 Delbrückstr.	1 12743,6645 12468,6592
 Emser Str.	1 13058,7165 12872,7134
 Stuthirtenweg: Gitter	3 13449,1227 13542,1268 13629,1343
@@ -777,8 +777,8 @@ Grunewaldstr. -> Stübbenstr.: Mittelstreifen	3::igndisp 5902,9083 5975,9094 5965
 Stavenhagener Str.	1 13534,5111 13634,5126
 Küsterstr.	1 -624,15494 -593,15300 -569,15167
 Berliner Allee -> Rossinistr.	3 13432,15843 13401,15821 13456,15760
-Straßenbahntrasse	3nocross::ignrte 12010,16774 12017,16734 12046,16568
-Brauhausstr. -> Prenzlauer Promenade: Straßenbahntrasse	3::igndisp 12211,16688 12017,16734 12046,16568
+Straßenbahntrasse	3nocross::ignrte 12010,16774 12017,16734 12045,16574
+Brauhausstr. -> Prenzlauer Promenade: Straßenbahntrasse	3::igndisp 12211,16688 12017,16734 12045,16574
 Prenzlauer Promenade -> Brauhausstr.: Straßenbahntrasse	3::igndisp 12010,16774 12017,16734 12211,16688
 Mittelstreifen	3nocross::ignrte 12114,12546 12134,12540 12360,12505
 Karl-Marx-Allee -> Krautstr./Blumenstr.: Mittelstreifen	3::igndisp 12360,12505 12134,12540 12125,12490
@@ -1219,9 +1219,9 @@ Ontarioseestr.: Sackgasse für Autos	3 18408,10041 18339,10048 18296,10027
 Ontarioseestr.: Sackgasse für Autos	3 18408,10041 18339,10048 18403,10077
 Ontarioseestr.: Sackgasse für Autos	3 18296,10027 18339,10048 18408,10041
 Ontarioseestr.: Sackgasse für Autos	3 18403,10077 18339,10048 18408,10041
-Schranke	3 11870,21574 11982,21392 11948,21366
+Schranke	3 11889,21543 11982,21392 11948,21366
 Schranke	3 12074,21243 11982,21392 11948,21366
-Schranke	3 11948,21366 11982,21392 11870,21574
+Schranke	3 11948,21366 11982,21392 11889,21543
 Schranke	3 11948,21366 11982,21392 12074,21243
 Pestalozzistr.	1 24769,11819 24908,11785
 Baumstamm	3 24978,2634 24981,2580 25496,2429
@@ -1404,3 +1404,8 @@ Bismarckstr. -> Am Schillertheater: Mittelstreifen	3::igndisp 4737,11768 4507,11
 Bismarckstr. -> Marie-Elisabeth-Lüders-Str.: Mittelstreifen	3::igndisp 4345,11710 4507,11728 4476,11811
 Marie-Elisabeth-Lüders-Str. -> Am Schillertheater: Mittelstreifen	3::igndisp 4476,11811 4507,11728 4574,11587
 Marie-Elisabeth-Lüders-Str. -> Bismarckstr.: Mittelstreifen	3::igndisp 4476,11811 4507,11728 4737,11768
+Stadtgärten - Saupéweg: Poller	3 11518,21727 11551,21720 11589,21713
+Stadtgärten - Saupéweg: Poller	3 11589,21713 11551,21720 11518,21727
+Mittelstreifen	3nocross::ignrte 11870,17522 11893,17397 11920,17245
+Prenzlauer Promenade -> Treskowstr.: Mittelstreifen	3::igndisp 11870,17522 11893,17397 12336,17207
+Treskowstr. -> Prenzlauer Promenade: Mittelstreifen	3::igndisp 12336,17207 11893,17397 11920,17245

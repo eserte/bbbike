@@ -148,7 +148,7 @@ Greinerstr.	1 8340,3242 8327,2975
 Dederingstr.	1 8457,2965 8476,3367
 Weserstr. (Friedrichshain)	1 14416,11815 14471,11782
 Quickborner Str.	1 8016,21499 8170,21304
-Berliner Str. (Blankenfelde)	1 9490,23531 9425,23693
+Berliner Str. (Blankenfelde)	1 9490,23531 9437,23680 9415,23699
 Revaler Str. (Straﬂenbahn)	1s 13588,11490 13473,11456
 Molkenmarkt - zur Stralauer Str.	1 10804,12291 10772,12288 10736,12285 10675,12280
 Herrfurthplatz	1 11647,7940 11653,7982 11689,8006 11731,7998 11754,7964 11748,7922 11713,7899 11671,7904 11647,7940
@@ -180,7 +180,7 @@ Wilskistr.	1 -402,4012 -343,4056 -303,4086 -219,4149 -158,4236 27,4447 195,4588 
 Grazer Platz	1 6442,6788 6529,6798 6679,6816 6793,6814
 Grazer Platz	1 6801,6736 6686,6735 6546,6720 6517,6717 6451,6710
 Putlitzstr.	1 6267,14184 6264,13995 6226,13951
-Langhansstr. (auﬂer Tram)	1 12046,16568 12189,16578 12409,16475
+Langhansstr. (auﬂer Tram)	1 12045,16574 12189,16578 12409,16475
 Triftstr. (Buchholz)	1 12018,23040 12178,23034
 Joachimstr.	1 10142,13556 10085,13684
 Wilhelmsaue	1 4778,8784 4918,8785 5165,8784
@@ -321,7 +321,7 @@ Knoten am Flughafen Tegel	1 2996,15930 2960,15847
 Knoten am Flughafen Tegel	1 2913,15944 2949,15922 2977,15923 2996,15930
 Knoten am Flughafen Tegel	1 2960,15847 2880,15884 2828,15903
 Knoten am Flughafen Tegel	1 2828,15903 2880,15908 2913,15944
-Eschengraben	1 11755,17216 11783,17036 11831,16802 11776,16753
+Eschengraben	1 11755,17216 11778,17066 11783,17036 11831,16802 11776,16753
 Czarnikauer Str.	1 10613,16403 10449,16415 10225,16436
 Talstr.	1 11776,16753 11825,16666
 Scharfestr.	1 758,3417 935,3430
@@ -499,7 +499,7 @@ Mˆllendorffstr.	1 15546,12690 15516,12838 15515,13134
 Joachimsthaler Str. (Hohenschˆnhausen)	1 17117,14885 17129,14804 17063,14797 16943,14785
 Otto-Brahm-Str.	1 14440,15682 14400,15787 14365,15778 14282,15746 14317,15642
 Prenzlauer Allee [Wohngebiet]	1 12154,15902 12030,15968
-(Prenzlauer Allee - Ostseestr.)	1 12237,16119 12198,15999 12154,15902
+(Prenzlauer Allee - Ostseestr.)	1 12232,16110 12198,15999 12154,15902
 Blumenstr.	1 12125,12490 12306,12459 12305,12440
 Blumenstr.	1 12305,12440 12118,12462
 Friedensplatz	1 8971,6154 8994,6144 9003,6121 8996,6106 8976,6094 8952,6109 8944,6127 8955,6147 8971,6154
@@ -785,7 +785,7 @@ L¸tzlow: Gehweg auf gleichem Niveau wie Fahrbahn	1s 52431,94119 52422,94028 5235
 Lindenstr. (Frankfurt/Oder)	1 88960,-6639 88836,-6002
 Carthausplatz (Frankfurt/Oder)	1 88945,-6733 88890,-6691 88960,-6639
 Gubener Str. (Frankfurt/Oder)	1 88945,-6733 88890,-6691 88881,-6462 88775,-6151 88759,-5911
-B5 (paralleler Radweg existiert)	2 -9005,13354 -9443,13363 -10122,13391 -11253,13707
+B5 (paralleler Radweg existiert)	2 -9005,13354 -9549,13365 -9617,13368 -10122,13391 -11253,13707
 Niemegk	1 -37263,-37723 -37263,-37584 -37216,-37587 -37188,-37728 -37263,-37723
 Bahnhofstr. (F¸rstenberg)	1 -8839,86313 -8711,86273
 F¸rstenberg	1 -8777,85887 -8680,85652
@@ -970,7 +970,7 @@ Cyclopstr. -> Oranienburger Str.: Mittelstreifen	3::igndisp 5297,21243 5349,2119
 Straﬂenbahnhaltestelle	3nocross::ignrte 9225,13389 9281,13374 9415,13315
 Linienstr. -> Oranienburger Str.: Straﬂenbahnhaltestelle	3::igndisp 9296,13397 9281,13374 9415,13315
 Oranienburger Str. -> Linienstr.: Straﬂenbahnhaltestelle	3::igndisp 9225,13389 9281,13374 9296,13397
-Brauhausstr. -> Prenzlauer Promenade: Straﬂenbahntrasse	3 12211,16688 12017,16734 12046,16568
+Brauhausstr. -> Prenzlauer Promenade: Straﬂenbahntrasse	3 12211,16688 12017,16734 12045,16574
 Mittelstreifen	3nocross::ignrte 16720,6845 16677,6892 16568,7009
 G¸ldenhofer Ufer -> Kˆpenicker Landstr.: Mittelstreifen	3::igndisp 16630,6800 16677,6892 16568,7009
 Kˆpenicker Landstr. -> G¸ldenhofer Ufer: Mittelstreifen	3::igndisp 16720,6845 16677,6892 16630,6800
@@ -1107,12 +1107,12 @@ Schˆnholzer Str. -> Wollankstr.: Straﬂenbahn auf der Fahrbahn	3::igndisp 10089,1
 Straﬂenbahntrasse	3nocross::ignrte 22674,4309 22812,4236 22965,4124
 Pohlestr. -> M¸ggelheimer Str.: Straﬂenbahntrasse	3::igndisp 22831,4070 22812,4236 22674,4309
 M¸ggelheimer Str. -> Pohlestr.: Straﬂenbahntrasse	3::igndisp 22965,4124 22812,4236 22831,4070
-Straﬂenbahntrasse	3nocross::ignrte 12091,16209 12097,16263 12077,16380
+Straﬂenbahntrasse	3nocross::ignrte 12090,16199 12097,16263 12077,16380
 Caligaripl. -> Gustav-Adolf-Str.: Straﬂenbahntrasse	3::igndisp 12121,16317 12097,16263 12182,16322
 Prenzlauer Promenade -> Gustav-Adolf-Str.: Straﬂenbahntrasse	3::igndisp 12077,16380 12097,16263 12182,16322
 Prenzlauer Promenade -> Caligaripl.: Straﬂenbahntrasse	3::igndisp 12077,16380 12097,16263 12121,16317
-Straﬂenbahntrasse	3nocross::ignrte 12054,16517 12077,16380 12097,16263
-Herthastr. -> Prenzlauer Promenade: Straﬂenbahntrasse	3::igndisp 11908,16410 12077,16380 12054,16517
+Straﬂenbahntrasse	3nocross::ignrte 12051,16535 12077,16380 12097,16263
+Herthastr. -> Prenzlauer Promenade: Straﬂenbahntrasse	3::igndisp 11908,16410 12077,16380 12051,16535
 Prenzlauer Promenade -> Herthastr.: Straﬂenbahntrasse	3::igndisp 12097,16263 12077,16380 11908,16410
 Straﬂenbahntrasse	3nocross::ignrte 13622,12806 13579,12904 13537,13003
 Petersburger Str. -> Matternstr.: Straﬂenbahntrasse	3::igndisp 13537,13003 13579,12904 13798,13003
@@ -1389,8 +1389,8 @@ Straﬂenbahn	3nocross::ignrte 11750,16354 11808,16343 11829,16339 11889,16328
 Wisbyer Str. -> Varnhagenstr.: Straﬂenbahn	3::igndisp 11829,16339 11808,16343 11680,16151
 Wisbyer Str. -> Max-Koska-Str.: Straﬂenbahn	3::igndisp 11808,16343 11829,16339 11846,16438
 Max-Koska-Str. -> Wisbyer Str.: Straﬂenbahn	3::igndisp 11846,16438 11829,16339 11889,16328
-Straﬂenbahn	3nocross::ignrte 11889,16328 11936,16302 12026,16247 12091,16209
-Dunckerstr. -> Wisbyer Str.: Straﬂenbahn	3::igndisp 11939,16084 12026,16247 11936,16302
+Straﬂenbahn	3nocross::ignrte 11889,16328 11936,16302 12023,16242 12090,16199
+Dunckerstr. -> Wisbyer Str.: Straﬂenbahn	3::igndisp 11939,16084 12023,16242 11936,16302
 Straﬂenbahn	3nocross::ignrte 11542,16384 11632,16373 11673,16367
 Glaﬂbrennerstr. -> Wisbyer Str.: Straﬂenbahn	3::igndisp 11543,16207 11632,16373 11542,16384
 Wisbyer Str. -> Glaﬂbrennerstr.: Straﬂenbahn	3::igndisp 11673,16367 11632,16373 11543,16207
@@ -1525,12 +1525,12 @@ Prenzlauer Allee -> Kuglerstr.: Mittelstreifen mit Straﬂenbahn	3::igndisp 11997,
 Kuglerstr. -> Prenzlauer Allee [Wohngebiet]: Mittelstreifen mit Straﬂenbahn	3::igndisp 11961,16002 12030,15968 12154,15902
 Kuglerstr. -> Prenzlauer Allee: Mittelstreifen mit Straﬂenbahn	3::igndisp 11961,16002 12030,15968 12071,16130
 Straﬂenbahntrasse	3nocross::ignrte 11941,15586 11967,15700 11997,15834
-Prenzlauer Allee -> Zelterstr.: Straﬂenbahntrasse	3::igndisp 11941,15586 11967,15700 11849,15760
-Zelterstr. -> Prenzlauer Allee: Straﬂenbahntrasse	3::igndisp 11849,15760 11967,15700 11997,15834
-Zelterstr. -> K¸selstr.: Straﬂenbahntrasse	3::igndisp 11849,15760 11967,15700 12058,15621
+Prenzlauer Allee -> Zelterstr.: Straﬂenbahntrasse	3::igndisp 11941,15586 11967,15700 11852,15765
 Prenzlauer Allee -> K¸selstr.: Straﬂenbahntrasse	3::igndisp 11997,15834 11967,15700 12058,15621
 K¸selstr. -> Prenzlauer Allee: Straﬂenbahntrasse	3::igndisp 12058,15621 11967,15700 11941,15586
-K¸selstr. -> Zelterstr.: Straﬂenbahntrasse	3::igndisp 12058,15621 11967,15700 11849,15760
+K¸selstr. -> Zelterstr.: Straﬂenbahntrasse	3::igndisp 12058,15621 11967,15700 11852,15765
+Zelterstr. -> Prenzlauer Allee: Straﬂenbahntrasse	3::igndisp 11852,15765 11967,15700 11997,15834
+Zelterstr. -> K¸selstr.: Straﬂenbahntrasse	3::igndisp 11852,15765 11967,15700 12058,15621
 Mittelstreifen mit Straﬂenbahn	3nocross::ignrte 11712,14868 11610,14886 11545,14897
 Rykestr. -> Danziger Str.: Mittelstreifen mit Straﬂenbahn	3::igndisp 11526,14693 11610,14886 11545,14897
 Danziger Str. -> Rykestr.: Mittelstreifen mit Straﬂenbahn	3::igndisp 11712,14868 11610,14886 11526,14693
@@ -1779,8 +1779,8 @@ Max-Born-Str. -> Zum Trudelturm: Straﬂenbahntrasse	3::igndisp 18951,3069 19021,2
 Mittelstreifen	3nocross::ignrte 6765,5863 6895,5873 7078,5887
 Riemenschneiderweg -> Prellerweg: Mittelstreifen	3::igndisp 6878,5946 6895,5873 7078,5887
 Prellerweg -> Riemenschneiderweg: Mittelstreifen	3::igndisp 6765,5863 6895,5873 6878,5946
-Mittelstreifen	3nocross::ignrte 12091,16209 12237,16119 12352,16048
-Prenzlauer Allee -> Ostseestr.: Mittelstreifen	3::igndisp 12198,15999 12237,16119 12091,16209
+Mittelstreifen	3nocross::ignrte 12090,16199 12232,16110 12347,16039
+Prenzlauer Allee -> Ostseestr.: Mittelstreifen	3::igndisp 12198,15999 12232,16110 12090,16199
 Mittelstreifen vor dem Autobahnanschluss	3nocross::ignrte 4292,6558 4338,6528 4423,6477
 Bjˆrnsonstr. -> Schildhornstr.: Mittelstreifen vor dem Autobahnanschluss	3::igndisp 4290,6445 4338,6528 4292,6558
 Schildhornstr. -> Bjˆrnsonstr.: Mittelstreifen vor dem Autobahnanschluss	3::igndisp 4423,6477 4338,6528 4290,6445
@@ -2095,6 +2095,11 @@ tragen (Treppe, ca. 20 Stufen)	0:25:-12 19160,14935
 tragen (Treppe)	0:30:70 89344,-5795
 tragen, langgezogene Stufen (13 Stufen)	0:25:-168 20704,1383
 tragen (31 Stufen oder Kinderwagenrampe)	0:40:-256 13168,21706
+Schranke	BNP:3:-195:trailer=10 8470,23986
+Schranke	BNP:5:72:trailer=15 8351,24346
+Schranke	BNP:3:-71:trailer=10 8872,24343
+Schranke	BNP:3:-126:trailer=10 8952,24192
+Tor, 110cm breit	BNP:3:61:trailer=10 10066,26324
 Tor	BNP:1:-110:trailer=3 10483,14720
 Tor	BNP:1:72:trailer=3 10476,14741
 Schranke, lichte Breite 120cm	BNP:1:-71:trailer=3 -7685,15092
@@ -2259,7 +2264,7 @@ Dr‰ngelgitter	BNP:5:28 15516,6357
 Dr‰ngelgitter	BNP:5:29 15496,6314
 Dr‰ngelgitter	BNP:5:22 15403,6145
 Dr‰ngelgitter	BNP:5:12 15393,6112
-Enges Dr‰ngelgitter	BNP:5:59 7887,24043
+Enges Dr‰ngelgitter	BNP:5:52:trailer=15 7887,24043
 Enges Dr‰ngelgitter	BNP:5:-37 2375,21494
 Dr‰ngelgitter	BNP:5:-153 8776,16718
 Schranke	BNP:5:-147 -8211,5490
@@ -2443,9 +2448,9 @@ Greifswalder Str. -> Olga-Benario-Prestes-Str.: Greifswalder Str.	3::igndisp 125
 Danziger Str.	3nocross::ignrte 12621,14313 12425,14459 12317,14535
 Danziger Str. -> Eugen-Schˆnhaar-Str.: Danziger Str.	3::igndisp 12317,14535 12425,14459 12496,14515
 Eugen-Schˆnhaar-Str. -> Danziger Str.: Danziger Str.	3::igndisp 12496,14515 12425,14459 12621,14313
-Straﬂenbahntrasse	3nocross::ignrte 13098,15592 13229,15692 13316,15758
+Straﬂenbahntrasse	3nocross::ignrte 13072,15590 13229,15692 13316,15758
 Cohnstr. -> Greifswalder Str.: Straﬂenbahntrasse	3::igndisp 13197,15734 13229,15692 13316,15758
-Greifswalder Str. -> Cohnstr.: Straﬂenbahntrasse	3::igndisp 13098,15592 13229,15692 13197,15734
+Greifswalder Str. -> Cohnstr.: Straﬂenbahntrasse	3::igndisp 13072,15590 13229,15692 13197,15734
 Dietrich-Bonhoeffer-Str.	1 12556,14230 12266,14460
 tragen (3 einzelne Stufen)	0:15:-234 13079,14320
 Achtung, schlecht sichtbare Kette!	BNP:5:-121 13485,14054
@@ -2715,6 +2720,8 @@ Dettelbacher Weg	1 11698,18446 11750,18273
 Dettelbacher Weg	1 11820,18043 11750,18273
 Neuenhagener Str. (Mahlsdorf)	1s 24362,11954 24317,11754
 nicht passierbarer Mittelstreifen	3nocross::ignrte 11950,18529 11984,18771 12003,18896
+Mittelstreifen, Bordsteine	3nocross::ignrte 11854,17656 11870,17522 11893,17397
+Mittelstreifen	3nocross::ignrte 11854,17656 11843,17737 11879,18057
 Hindenburgdamm	1 4454,3260 4467,3332 4523,3482 4546,3527 4585,3575
 Hindenburgdamm	1 4585,3575 4580,3514 4564,3457 4514,3329 4454,3260
 tragen (insgesamt 16 Stufen, auf vier Gruppen verteilt)	0:40:-256 14581,16529

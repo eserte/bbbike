@@ -12,7 +12,6 @@ bereits an der Kreuzung Sachsendamm/Dominicusstr./Ebersstr. die Straßenseite wec
 am Domäne-Markt Richtung Hochbahnhof Hallesches Tor abbiegen	CP; 9536,10064 9579,10122 9599,10175
 auf linken Gehweg fahren, Straßenseite an der Fußgängerampel Yorckstr./Katzbachstr. wechseln	CP; 8773,9524 8648,9526 8595,9495
 von der Brandenburgischen in die Paderborner: bereits an der Ampel Zähringerstr. auf den linken Gehweg wechseln	PI; 3930,9919 3906,10035 3720,9996
-zur Prenzlauer Promenade: bei der Ampel an der Autobahnausfahrt die Straßenseite wechseln	CP2; 11907,19749 11933,19590
 zur Pasewalker Straße: bei der Ampel an der Rothenbachstr. die Straßenseite wechseln	CP2; 11950,18529 11934,18576
 abbiegender Waldweg zur Köpenicker Str. ist nicht ausgeschildert	CP; 21576,6644 21409,6731 20869,7116 20887,7267
 Zugang durch Betonabsperrung	CP2; 21222,12501 21190,12515
@@ -32,7 +31,7 @@ Fußgängerampel auf der rechten Seite benutzen	CP; 9810,14066 9918,13733 10177,13
 Kopernikusstr./Warschauer Str.: Fußgängerampel auf der linken Seite zum Überqueren der Warschauer Str. benutzen	CP; 13467,11778 13651,11731 13895,11663
 Kopernikusstr./Warschauer Str.: Fußgängerampel auf der linken Seite benutzen	CP; 13467,11778 13651,11731 13696,11920
 Rennbahnstr./Bernkasteler Str.: Fußgängerampel auf der linken Seite zum Überqueren der Berliner Allee benutzen	CP; 14510,16916 14559,16912 14673,16895
-Wisbyer Str. Richtung Dunckerstr.: bereits an der Prenzlauer Allee den linken Gehweg benutzen	PI; 12091,16209 12026,16247 11939,16084
+Wisbyer Str. Richtung Dunckerstr.: bereits an der Prenzlauer Allee den linken Gehweg benutzen	PI; 12090,16199 12023,16242 11939,16084
 Stahlheimer Richtung Wisbyer Str.: Fußgängerampel auf der linken Seite zum Überqueren der Wisbyer Str. benutzen	CP; 11618,16183 11727,16358 11673,16367
 Varnhagenstr Richtung Wisbyer Str.: linken Gehweg bis zur Fußgängerampel benutzen	CP; 11680,16151 11808,16343 11750,16354
 Fußgängerampel links zum Überqueren der Lietzenburger Str. benutzen	CP; 6033,10403 6020,10351 5997,10286
@@ -156,8 +155,8 @@ Ladenbergstr. - Altensteinstr.: an der Kreuzung Habelschwerdter Allee Fußgängera
 Ladenbergstr. - Habelschwerdter Allee: an der Kreuzung Fußgängerampel auf der linken Seite benutzen	CP; 2858,4372 2997,4378 2857,4578
 zum Mehringplatz: hinter dem BVG-Wartehäuschen in den Gehweg einbiegen	CP2; 9873,10285 9668,10306
 Hildegard-Jadamowitz-Str. - Karl-Marx-Allee: hinter der Alten Feuerwache rechts abbiegen	CP; 13019,12316 12985,12303 12950,12340
-Kanzowstr. - Prenzlauer Allee: Fußgängerampel zur rechten Hand benutzen oder zur Wichert/Grellstr. vorfahren	CP; 11698,15627 11913,15490 11941,15586
-Prenzlauer Allee - Kanzowstr.: Fußgängerampel beim Linksabbiegen benutzen	PI; 11905,15462 11913,15490 11698,15627
+Kanzowstr. - Prenzlauer Allee: Fußgängerampel zur rechten Hand benutzen oder zur Wichert/Grellstr. vorfahren	CP; 11689,15639 11913,15490 11941,15586
+Prenzlauer Allee - Kanzowstr.: Fußgängerampel beim Linksabbiegen benutzen	PI; 11905,15462 11913,15490 11689,15639
 Frankfurter Allee - Liebigstr.: frühzeitig auf den Gehweg wechseln (wegen Grünfläche)	PI; 14208,12235 13885,12279 13927,12370
 Falkenberger Chaussee: Zufahrt zur Wartenberger Str.	CS; 17400,17790 17440,17746 17531,17802 17650,17875
 Langhansstr. - Allee der Kosmonauten: Zufahrt zum Parkweg schwierig einzusehen, einfach geradeaus fahren	CP2; 19818,14064 19823,14045
@@ -214,6 +213,8 @@ Gürtelstr. - Lehderstr.: Fußgängerampel zum Überqueren der Berliner Allee/Greifs
 Gürtelstr. - Greifswalder Str.: Fußgängerampel zum Linksabbiegen in die Greifswalder Str. benutzen	CP; 13409,15687 13316,15758 13229,15692
 Berliner Allee - Tassostr.: Fußgängerübergang an der Mahlerstr. benutzen	CS; 13623,15954 13630,15956 13621,15990
 Prenzlauer Promenade - Laudaer Str.: bereits an der Binzstr. die Straßenseite wechseln	PI; 11854,17656 11843,17737 11785,17729
+Arnold-Zweig-Str. - Prenzlauer Promenade: den linken Gehweg bis zur Binzstr. benutzen	CP; 11729,17499 11870,17522 11854,17656
+Prenzlauer Promenade - Arnold-Zweig-Str.: bereits an der Treskowstr. auf den linken Gehweg wechseln	PI; 11893,17397 11870,17522 11729,17499
 Laudaer Str. - Prenzlauer Promenade: zunächst auf dem linken Geh/Radweg fahren, an der Kissingenstr. die Straßenseite wechseln	CP; 11785,17729 11843,17737 11879,18057
 Seidelstr. - Klixstr.: bereits an der Autobahnbrücke die Straßenseite wechseln	PI; 3570,17938 3706,17931 3833,17929 3871,18144
 Klixstr. - Scharnweberstr.: zunächst den linken Gehweg bis zur Antonienstr. benutzen	CP; 3871,18144 3833,17929 3930,17920
@@ -300,8 +301,8 @@ Bürgerheimstr. - Frankfurter Allee: auf dem linken Gehweg bis zur Atzpodienstr. 
 Gradestr. - Moosrosenstr.: entweder schon an der Holzmindener Str. die Straßenseite wechseln oder am Busbahnhof umdrehen	PI; 12773,5248 12727,5244 12726,5147
 Moosrosenstr. - Gradestr.: auf dem linken Gehweg bis Höhe Busbahnhof fahren und dort die Straßenseite wechseln	CP; 12726,5147 12727,5244 12582,5232
 Rudower Chaussee - Karl-Otto-Reinsch-Str.: bereits an der Ampel Am Studio die Straßenseite wechseln	PI; 19581,3184 19603,3207 19524,3286
-Gustav-Adolf-Str. - Prenzlauer Promenade: auf dem linken Gehweg bis zur Ampel fahren	CP; 12182,16322 12097,16263 12091,16209
-Caligariplatz - Prenzlauer Promenade: auf dem linken Gehweg bis zur Ampel fahren	CP; 12121,16317 12097,16263 12091,16209
+Gustav-Adolf-Str. - Prenzlauer Promenade: auf dem linken Gehweg bis zur Ampel fahren	CP; 12182,16322 12097,16263 12090,16199
+Caligariplatz - Prenzlauer Promenade: auf dem linken Gehweg bis zur Ampel fahren	CP; 12121,16317 12097,16263 12090,16199
 Am Alten Markt: Richtung TFH/Friedrich-Ebert-Str. abbiegen	CP; -12624,-1598 -12619,-1549 -12780,-1545
 Richtung Bergmannstr.	CP2; 10564,9292 10547,9233
 Ausgeschildert als: Zur Straße 545	CP2; 30357,3555 30378,3501
@@ -354,8 +355,8 @@ Hermann-Stöhr-Platz: diagonal über die Grünfläche	CS 12453,11790 12409,11902
 (Lückstr. - Fischerstr.): Einfahrt in Parkplatz	CP2; 16601,10650 16587,10613
 Oranienplatz: diagonal über den Platz	CP2; 11275,10723 11253,10778
 (Wohngebiet): Einfahrt gegenüber der Dresdener Str.	CP2; 11052,11414 11131,11579
-Picardieweg - Blaubeerweg: wegen der Straßenbahngleise ein Stück nach links fahren und den Rosenthaler Weg überqueren	CP; 10993,21948 10932,22184 10864,22469
-Blaubeerweg - Picardieweg: wegen der Straßenbahngleise ein Stück nach rechts fahren und den Rosenthaler Weg überqueren	CP; 10993,21948 10932,22184 10864,22469
+Picardieweg - Blaubeerweg: wegen der Straßenbahngleise ein Stück nach links fahren und den Rosenthaler Weg überqueren	CP; 10993,21948 10932,22184 10910,22245 10882,22377
+Blaubeerweg - Picardieweg: wegen der Straßenbahngleise ein Stück nach rechts fahren und den Rosenthaler Weg überqueren	CP; 10993,21948 10932,22184 10910,22245 10882,22377
 Holzungsweg - Argentinische Allee: linken Gehweg bis zur Straße "Am Waldfriedhof" benutzen	CP; 755,5017 844,4916 922,4910
 Mutter-Mochow-Weg - Potsdamer Chaussee: linken Gehweg bis zur Kurstr. benutzen	CP; -1849,2043 -1959,2305 -2023,2279
 Potsdamer Chaussee - Wiesenschlag: bereits an der Kurstr. auf den linken Gehweg wechseln	PI; -2023,2279 -2074,2258 -2036,2150

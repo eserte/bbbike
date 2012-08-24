@@ -1207,7 +1207,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10350,19182
          'text' => 'Sredzkistr.: Fahrbahn zwischen Rykestr. und Kollwitzstr. komplett gesperrt. Dauer der Sperrung ist unbekannt.',
          'from' => undef,
          'id' => 2322,
-         'data' => '#: last_checked: 2012-07-16
+         'data' => '#: last_checked: 2012-08-24
 userdel	q3::inwork 11436,14741 11526,14693
 ',
          'type' => 'handicap'
@@ -1455,6 +1455,16 @@ userdel	2::night 14838,11410 14776,11400
          'from' => 1343706240,
          'id' => 2374,
          'data' => 'userdel	q4::inwork 5102,11006 5122,11300
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => undef,
+         'text' => 'Senefelderst.: Fahrbahn vor der Raumerstr. gesperrt, Ausweichen auf Gehweg erforderlich',
+         'from' => undef,
+         'id' => 2375,
+         'data' => '#: last_checked: 2012-08-24
+userdel	q4::inwork 11615,15114 11595,15058
 ',
          'type' => 'handicap'
        }

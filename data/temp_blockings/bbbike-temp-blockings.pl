@@ -4271,7 +4271,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_002644',
        data  => <<EOF,
-userdel	q4; 12097,16263 12091,16209
+userdel	q4; 12097,16263 12090,16199
 EOF
      },
      { from  => 1145562106, # 2006-04-20 21:41
@@ -6584,7 +6584,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_003972',
        data  => <<EOF,
-userdel	q4::inwork 11603,15455 11638,15522
+userdel	q4::inwork 11595,15460 11632,15530
 EOF
      },
      { from  => 1162508400, # 2006-11-03 00:00
@@ -7027,7 +7027,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_003972',
        data  => <<EOF,
-userdel	2::inwork 11603,15455 11638,15522
+userdel	2::inwork 11595,15460 11632,15530
 EOF
      },
      { from  => 1169839019, # 2007-01-26 20:16
@@ -7086,7 +7086,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_003972',
        data  => <<EOF,
-userdel	2::inwork 11603,15455 11638,15522
+userdel	2::inwork 11595,15460 11632,15530
 EOF
      },
      { from  => 1181426400, # 2007-06-10 00:00
@@ -7851,7 +7851,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005213',
        data  => <<EOF,
-userdel	2::inwork 12731,15824 12642,15668 12559,15524
+userdel	2::inwork 12721,15807 12642,15668 12559,15524
 EOF
      },
      { from  => 1177103024, # 2007-04-20 23:03
@@ -8542,7 +8542,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005738',
        data  => <<EOF,
-userdel	2::inwork 12731,15824 12642,15668 12559,15524 12472,15356 12428,15275
+userdel	2::inwork 12721,15807 12642,15668 12559,15524 12472,15356 12428,15275
 EOF
      },
      { from  => 1311285600, # 1244066400, # 2009-06-04 00:00 PERIODISCH!
@@ -8776,7 +8776,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005809',
        data  => <<EOF,
-userdel	2::inwork 9812,23983 9774,23936 9625,23781 9425,23693 9228,23643
+userdel	2::inwork 9794,23980 9774,23936 9625,23781 9415,23699 9228,23643
 EOF
      },
      { from  => undef, # 
@@ -10514,7 +10514,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_007189',
        data  => <<EOF,
-userdel	2::inwork 8909,23506 8803,23478 8626,23432 8584,23421 8141,23477
+userdel	2::inwork 8909,23506 8803,23478 8632,23442 8619,23438 8562,23421 8141,23477
 EOF
      },
      { from  => 1195308071, # 2007-11-17 15:01
@@ -12107,7 +12107,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_009449',
        data  => <<EOF,
-userdel	1::inwork 13098,15592 12966,15478 12870,15342
+userdel	1::inwork 13072,15590 12966,15478 12870,15342
 EOF
      },
      { from  => 1216591200, # 2008-07-21 00:00
@@ -12385,7 +12385,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_009715',
        data  => <<EOF,
-userdel	1::inwork 11455,15916 11581,15831 11744,15720 11941,15586
+userdel	1::inwork 11455,15916 11581,15831 11736,15727 11941,15586
 EOF
      },
      { from  => 1219879654, # 2008-08-28 01:27
@@ -14344,7 +14344,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_012890',
        data  => <<EOF,
-userdel	q4::inwork 8626,23432 8803,23478 8909,23506
+userdel	q4::inwork 8632,23442 8803,23478 8909,23506
 EOF
      },
      { from  => 1244065335, # 2009-06-03 23:42
@@ -14752,7 +14752,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_012890',
        data  => <<EOF,
-userdel	2::inwork 8803,23478 8626,23432 8584,23421
+userdel	2::inwork 8803,23478 8632,23442 8619,23438 8562,23421
 EOF
      },
      { from  => 1247169516, # 2009-07-09 21:58
@@ -16158,7 +16158,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_014217',
        data  => <<EOF,
-userdel	q4::inwork 8909,23506 8803,23478 8626,23432
+userdel	q4::inwork 8909,23506 8803,23478 8632,23442
 EOF
      },
      { from  => 1253730749, # 2009-09-23 20:32
@@ -18845,7 +18845,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_017000',
        data  => <<EOF,
-userdel	q4::inwork 11603,15455 11688,15398
+userdel	q4::inwork 11595,15460 11688,15398
 EOF
      },
      { from  => 1299413700, # 2011-03-06 13:15
@@ -19159,7 +19159,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_017000',
        data  => <<EOF,
-userdel	q4::inwork; 11603,15455 11502,15527
+userdel	q4::inwork; 11595,15460 11502,15527
 EOF
      },
      { from  => 1307250000, # 2011-06-05 07:00
@@ -20092,7 +20092,7 @@ EOF
        text  => 'Sredzkistr.: Fahrbahn zwischen Rykestr. und Kollwitzstr. komplett gesperrt. Dauer der Sperrung ist unbekannt.',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2012-07-16
+#: last_checked: 2012-08-24
 userdel	q3::inwork 11436,14741 11526,14693
 EOF
      },
@@ -20567,6 +20567,15 @@ EOF
        source_id => 'IM_019071',
        data  => <<EOF,
 userdel	q4::inwork 5102,11006 5122,11300
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Senefelderst.: Fahrbahn vor der Raumerstr. gesperrt, Ausweichen auf Gehweg erforderlich',
+       type  => 'handicap',
+       data  => <<EOF,
+#: last_checked: 2012-08-24
+userdel	q4::inwork 11615,15114 11595,15058
 EOF
      },
     );

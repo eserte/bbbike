@@ -277,7 +277,7 @@ Ella-Trebe-Str.: nur für Taxis	2 7937,13126 7938,13150 7938,13302
 An der Wuhlheide: Straßenbahntrasse	3nocross 20352,5877 20428,5841 20536,5789
 #: by: Torsten Franik: vvv
 Gürtelstr. - Lehderstr.: nur rechts abbiegen erlaubt	3 13409,15687 13316,15758 13214,15830
-Gürtelstr. - Greifswalder Str.: nur rechts abbiegen erlaubt	3 13409,15687 13316,15758 13229,15692 13098,15592
+Gürtelstr. - Greifswalder Str.: nur rechts abbiegen erlaubt	3 13409,15687 13316,15758 13229,15692 13072,15590
 #: by: ^^^
 #: by: Timo Feyerabend: vvv
 #: confirmed_by: srt
@@ -445,7 +445,7 @@ Küsterstr.	1 -624,15494 -593,15300 -569,15167
 #: note: Luftbild:
 Berliner Allee -> Rossinistr.	3 13432,15843 13401,15821 13456,15760
 #: note: Luftbild:
-Prenzlauer Promenade: Straßenbahntrasse	3nocross 12010,16774 12017,16734 12046,16568
+Prenzlauer Promenade: Straßenbahntrasse	3nocross 12010,16774 12017,16734 12045,16574
 Karl-Marx-Allee: Mittelstreifen	3nocross 12114,12546 12134,12540 12360,12505
 #XXX del --- Leipziger Str.: Mittelstreifen	3nocross 10240,11740 10213,11728 10128,11714 9987,11690 9981,11689
 #XXX del --- Niederwallstr./Spittelmarkt: nur Abbiegen nach rechts erlaubt	3 10183,11770 10205,11758 10240,11740 10320,11627
@@ -827,3 +827,6 @@ Lindauer Allee: Mittelstreifen	3nocross 5635,18776 5713,18777 5791,18778
 #: note: genug lichte Breite für Radfahrer
 Eisbärenweg: Schranken an beiden Einfahrten	2 6950,17669 6909,17796
 Bismarckstr.: Mittelstreifen	3nocross 4345,11710 4507,11728 4737,11768
+Stadtgärten - Saupéweg: Poller	3 * 11551,21720 *
+#: note: Radfahrer können explizit den Mittelstreifen überqueren
+Prenzlauer Promenade: Mittelstreifen	3nocross 11870,17522 11893,17397 11920,17245
