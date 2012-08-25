@@ -1008,7 +1008,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 14499,16341
 	X 14621,16563
 	X 14650,15750
-	X 15052,14585
+	X 15058,14575
 	X 11785,9437
 	X 2585,5696
 	X 2659,6499
@@ -1696,8 +1696,8 @@ nur Richtung O	X 8142,7221
 	X 6454,8653
 #XXX Kynaststr./Alt-Stralau - evtl. wird es nach den Bauarbeiten hier wieder eine Ampel geben	X 14652,10201
 #: XXX Baustellenampel, wahrscheinlich wegen der Sperrung Karlshorster Str.
-#: last_checked: 2012-07-21
-#: next_check: 2012-08-21
+#: last_checked: 2012-08-21
+#: next_check: 2012-09-25
 	X::inwork 14832,10512
 	F 13030,7346
 #XXX del:	X 12510,6508
@@ -2172,8 +2172,8 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8632,23442
 	X 12187,22486
 	F 8110,13042
 	B 45152,-53482
-#: XXX mittlerweile zwei Fußgängerampeln vor und hinter der alten Position; nochmal prüfen
-	F 17703,17990
+	F 17744,18016
+	F 17675,17971
 #: note: Luftbild
 	F 17973,17772
 #: note: Luftbild
@@ -2738,6 +2738,11 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F 20614,18481
 	X 5628,17631
 	F 7676,18492
+#: by: wosch
+	X 10281,12310
+#: note: Straßenbahn kreuzt
+	X 15922,14344
+# 
 ################################################################################
 #: note: Potsdam vvv
 #: by: http://www.potsdam.de/cms/beitrag/10067917/966975/

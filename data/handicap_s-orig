@@ -11,7 +11,7 @@
 #: next_check: 2012-10-17
 Modersohnstr.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 14181,11434 14134,11272
 # 
-#: last_checked: 2012-07-16
+#: last_checked: 2012-08-25
 Mainzer Str.: Baustelle, Einbahnstraßenregelung	q3::inwork; 14357,12011 14427,12197
 # 
 #: last_checked: 2012-07-13
@@ -71,7 +71,7 @@ Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 
 #: next_check: 2012-09-01
 Universitätsstr.: wegen Bauarbeiten Richtung Unter den Linden gesperrt	q4::inwork 9580,12581 9601,12380
 # 
-#: last_checked: 2012-07-29 vvv
+#: last_checked: 2012-08-25 vvv
 #: next_check: 2012-09-11 vvv
 Helmerdingstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg kann benutzt werden	q4::inwork 14465,11195 14442,11101
 #XXX del -- eigentlich gut zu befahren --- Revaler Str.: Bauarbeiten, Kreuzung gesperrt, Gehweg kann benutzt werden	q4::inwork 14509,11060 14442,11101
@@ -87,8 +87,8 @@ Marchlewskistr.: Bauarbeiten, Ausweichen auf Gehweg	q4::inwork 13496,11384 13473
 #: XXX danach q1 und mit Eintrag unten verknüpfen, falls hier in Zukunft keine Fahrbahn mehr sein wird
 Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q2::inwork 10601,12521 10704,12595
 # 
-#: last_checked: 2012-07-20 vvv
-#: next_check: 2012-08-30 vvv
+#: last_checked: 2012-08-25 vvv
+#: next_check: 2012-09-10 vvv
 #: XXX siehe auch Eintrag in fragezeichen-orig (Ampel in Bau)
 #: note: komplette Fertigstellung und Verkehrsfreigabe im Frühjahr 2013
 Rathausbrücke: provisorischer Fußgängerweg auf der Rathausbrücke, ggfs. schieben	q4::inwork 10362,12351 10422,12395
@@ -411,7 +411,7 @@ Schönleinstr.: Bodenschwellen	q1 11560,9524 11541,9576 11594,9604
 Hoffmannstr.: Bodenschwellen	q1 14289,9870 14076,10011
 Lausitzer Platz: zahlreiche Bodenschwellen	q2 12197,10494 12172,10585
 Lausitzer Platz: zahlreiche Bodenschwellen	q2 12328,10442 12274,10612
-(Grünanlage Egon-Erwin-Kisch-Str. - Falkenberger Chaussee): Fußgänger	q2 17678,18171 17703,17990
+(Grünanlage Egon-Erwin-Kisch-Str. - Falkenberger Chaussee): Fußgänger	q2 17678,18171 17744,18016
 Erich-Steinfurth-Str.: Fußgänger	q2 12645,11673 12596,11696
 Elbingeroder Weg: hohe Bordsteine	q3 13178,9062 13146,9085
 (An der Apostelkirche - Kurfürstenstr.): Fußgänger, Bordsteine	q3 7312,10505 7315,10537
@@ -1152,7 +1152,10 @@ Anna-Nemitz-Weg: Fußgänger	q1 13943,2284 13905,2381 13885,2377 13872,2497 13891,
 #: XXX_prog BS; evtl. kann man vorher schon auf den Gehweg rauffahren
 (Fritz-Lesch-Str. - Orankestr.): Bordstein	q3 15313,15848 15313,15858
 (Park am Fennpfuhl): Fußgänger	q1 15235,13573 15247,13662
-(Park am Fennpfuhl): Fußgänger	q1 15091,13613 15141,13647 15180,13665 15247,13662 15266,13667 15323,13777 15305,13829 15254,13899 15219,13888 15179,13872 15153,13931 15076,14009 15050,14054
+(Park am Fennpfuhl): Fußgänger	q1 15091,13613 15141,13647 15180,13665 15247,13662 15266,13667 15323,13777 15305,13829 15254,13899 15219,13888 15179,13872 15153,13931 15123,13965 15076,14009 15050,14054
+(Park am Fennpfuhl): Fußgänger	q1 15204,14087 15189,14027 15123,13965
+(Park am Fußgänger): Fußgänger, einige einzelne Stufen, per Rampe umfahrbar	q2 15256,14237 15204,14087
+(Park am Fennpfuhl - Karl-Lade-Str./Rudolf-Seiffert-Str.): Fußgänger	q1 15179,13872 15192,13834 15181,13791 15144,13772 15094,13750 15058,13729 15035,13701 15002,13637
 (Darßer Str. - Malchower See): Fußgänger	q1 15506,17973 15825,18385 15949,18555
 Am Malchower See: Fußgänger	q1 15614,18649 15774,18656 15873,18561 15949,18555 16161,18687
 (Wartenberger Str. - Margaretenhöhe): Gehweg, für Radfahrer freigegeben	q0- 16216,19183 16314,19210 16349,19442 16343,19470 16309,19542 16359,19590 16384,19678
@@ -1316,6 +1319,9 @@ am Oder-Spree-Kanal: teilweise enger Pfad	q3 29037,-2817 29101,-2794 29457,-2835
 Strandbad	q3 30015,-3906 29783,-3739 29597,-3674
 (Magistratsweg - Maulbeerallee): Fußgänger (Schule)	q1 -6051,12673 -5613,12750 -5594,12832
 Henrionweg: eng	q3 11154,21760 11145,21698
+(Weg zum Hohenschönhauser Tor): Fußgänger	q1 15367,14512 15221,14550
+(Hohenschönhauser Tor): Fußgänger (Einkaufszentrum)	q4 15221,14550 15058,14575
+(Anlieferung Hohenschönhauser Tor): Lieferverkehr, Fußgänger	q1 15110,14486 15221,14550 15174,14638
 #
 ######################### User Contributions #################################
 # 

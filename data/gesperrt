@@ -1590,13 +1590,6 @@ Alt-Biesdorf -> Märkische Allee: Mittelstreifen	3::igndisp 19979,11774 19918,118
 Märkische Allee -> Alt-Friedrichsfelde: Mittelstreifen	3::igndisp 19896,11688 19918,11891 19890,11830
 Haydnstr. -> Märkische Allee: Mittelstreifen	3::igndisp 20006,12128 19947,12140 19939,12068
 Märkische Allee -> Haydnstr.: Mittelstreifen	3::igndisp 20002,12492 19947,12140 20006,12128
-Linksabbiegen wegen Straßenbahn nicht möglich	3nocross::ignrte 17400,17790 17703,17990 17843,18078
-Falkenberger Chaussee -> Pablo-Picasso-Str.: Linksabbiegen wegen Straßenbahn nicht möglich	3::igndisp 17843,18078 17703,17990 17906,17746
-Pablo-Picasso-Str. -> Grünanlage Egon-Erwin-Kisch-Str.: Linksabbiegen wegen Straßenbahn nicht möglich	3::igndisp 17906,17746 17703,17990 17678,18171
-Pablo-Picasso-Str. -> Falkenberger Chaussee: Linksabbiegen wegen Straßenbahn nicht möglich	3::igndisp 17906,17746 17703,17990 17400,17790
-Grünanlage Egon-Erwin-Kisch-Str. -> Falkenberger Chaussee: Linksabbiegen wegen Straßenbahn nicht möglich	3::igndisp 17678,18171 17703,17990 17843,18078
-Grünanlage Egon-Erwin-Kisch-Str. -> Pablo-Picasso-Str.: Linksabbiegen wegen Straßenbahn nicht möglich	3::igndisp 17678,18171 17703,17990 17906,17746
-Falkenberger Chaussee -> Grünanlage Egon-Erwin-Kisch-Str.: Linksabbiegen wegen Straßenbahn nicht möglich	3::igndisp 17400,17790 17703,17990 17678,18171
 unbequemes Abbiegen	3nocross::ignrte 13332,10832 13389,10808 13496,10763 13596,10722
 Warschauer Pl. -> Stralauer Allee: unbequemes Abbiegen	3::igndisp 13471,10983 13389,10808 13496,10763
 Stralauer Allee -> Naglerstr.: unbequemes Abbiegen	3::igndisp 13389,10808 13496,10763 13575,10963
@@ -1647,6 +1640,9 @@ Indira-Gandhi-Str. -> Orankeweg: Straßenbahntrasse	3::igndisp 14597,15970 14609,
 Straßenbahntrasse	3nocross::ignrte 14550,16161 14522,16260 14499,16341
 Gartenstr. -> Indira-Gandhi-Str.: Straßenbahntrasse	3::igndisp 14628,16249 14522,16260 14550,16161
 Indira-Gandhi-Str. -> Gartenstr.: Straßenbahntrasse	3::igndisp 14499,16341 14522,16260 14628,16249
+Straßenbahntrasse	3nocross::ignrte 15058,14575 15110,14486 15164,14392
+Weißenseer Weg -> Anlieferung Hohenschönhauser Tor: Straßenbahntrasse	3::igndisp 15058,14575 15110,14486 15221,14550
+Anlieferung Hohenschönhauser Tor -> Weißenseer Weg: Straßenbahntrasse	3::igndisp 15221,14550 15110,14486 15164,14392
 unbequemes Passieren des Mittelstreifens (Bordsteine, starker Verkehr)	3nocross::ignrte 16737,11866 16851,11852 16962,11833 17037,11820 17151,11801
 Frankfurter Allee -> Gudrunstr.: unbequemes Passieren des Mittelstreifens (Bordsteine, starker Verkehr)	3::igndisp 16737,11866 16851,11852 16884,11889
 Gudrunstr. -> Frankfurter Allee: unbequemes Passieren des Mittelstreifens (Bordsteine, starker Verkehr)	3::igndisp 16884,11889 16851,11852 16962,11833
@@ -2095,6 +2091,8 @@ tragen (Treppe, ca. 20 Stufen)	0:25:-12 19160,14935
 tragen (Treppe)	0:30:70 89344,-5795
 tragen, langgezogene Stufen (13 Stufen)	0:25:-168 20704,1383
 tragen (31 Stufen oder Kinderwagenrampe)	0:40:-256 13168,21706
+Schranke	BNP:3:-192:trailer=10 17201,13510
+Schranke	BNP:3:-185:trailer=10 17200,13530
 Schranke	BNP:3:-195:trailer=10 8470,23986
 Schranke	BNP:5:72:trailer=15 8351,24346
 Schranke	BNP:3:-71:trailer=10 8872,24343
@@ -2342,7 +2340,7 @@ Schranke (lichte Breite ca. 100cm)	BNP:3:-45:trailer=10 15179,3901
 Tor	BNP:5:-57 26888,13976
 Drängelgitter	BNP:3:64:trailer=10 49739,-90894
 Oberwallstr.: Bauarbeiten, komplett gesperrt	2:inwork 9890,12161 9875,12257
-Parkplatz des ehem. Möbelhauses ist eingezäunt	2:inwork 16965,14235 17010,14269 17060,14255 17221,14268
+Parkplatz des ehem. Möbelhauses ist eingezäunt	2:inwork 17010,14269 17060,14255 17221,14268
 Rudi-Dutschke-Weg	2:inwork 2627,5095 2913,5294
 Voßstr.: gesperrte Fahrbahn (Baustelle), kein Ausweichen möglich	2:inwork 8837,11676 9000,11727
 Zur Monumentenhalle: Straße wird wahrscheinlich neu gebaut	2:inwork 8376,8859 8409,8904 8389,9087

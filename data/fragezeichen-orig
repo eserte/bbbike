@@ -100,11 +100,6 @@ Ordensmeisterstr.: werden die Radspuren noch weiter geführt?	? 10339,5948 10254,
 #: next_check: 2012-11-01 (wird noch dieses Jahr realisiert)
 Kolonie Frühauf: Sanierung der Radfahrverbindung. Welchen Belag wird der Weg danach haben?	?::inwork 3645,19921 4076,20268 4088,20301
 # 
-#: last_checked: 2012-07-20
-#: next_check: 2012-08-30
-#: XXX siehe auch Einträge in handicap_s-orig
-Breite Str./Rathausstr.: Ampel in Bau	?::inwork 10281,12310
-# 
 #: XXX auch die Südpanke einzeichnen, falls sie sichtbar ist
 #: XXX wahrscheinlich sehr guter Beton, wahrscheinlich unbeleuchtet
 #: last_checked: 2012-08-10
@@ -274,8 +269,8 @@ Fritz-Thurm-Weg: Qualität? Genaue Lage der Straße? Schon fertiggestellt?	?::inwo
 # 
 #: XXX diese Straßen existieren noch nicht
 #: XXX teilweise fehlen sie auch in Berlin.coords.data
-#: last_checked: 2011-04-17 vvv
-#: next_check: 2012-04-01 vvv
+#: last_checked: 2012-08-25 vvv
+#: next_check: 2013-10-01 vvv
 An den Auen: Qualität?	?::projected 21194,19054 21248,19007 21285,18950 21310,18889
 Markus-Herz-Weg: Qualität?	?::projected 20701,18634 20906,18719 21123,18813
 David-Friedländer-Weg: Qualität?	?::projected 20727,18726 20901,18793 21038,18851 21024,18915 20995,18988
@@ -316,12 +311,12 @@ Am Römersgrün: Straße und Wohnanlage in Bau. Genaue Lage? Qualität?	?::inwork 11
 #: next_check: 2011-11-30
 Mierendorffplatz: asphaltiert? Gibt es hier einen Zebrastreifen?	?::inwork 3542,13063 3559,13177
 # 
-#: last_checked: 2011-10-22
-#: next_check: 2012-04-01
-#: XXX eventuell wird die Straße auch "Silberweidenweg" heißen (fehlt in Berlin.coords.data)
+#: last_checked: 2012-08-25 (keine Straßenschilder)
+#: next_check: 2012-11-01
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/17re.pdf/file?y=2012
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/26re.pdf/file?y=2012 (Hausnummern)
-Bidenswinkel/Silberweidenweg: wird hier noch ein Strang der Straße entstehen? Qualität?	?::inwork 16320,12853 16318,12777
+#: XXX Verbundsteinpflaster, Sackgasse, fehlt in Berlin.coords.data
+Silberweidenweg: wird das hier der Silberweidenweg?	?::inwork 16374,12841 16377,12791
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/32re.pdf/file
 #: XXX Privatstraße, fehlt in Berlin.coords.data
@@ -501,19 +496,19 @@ Braunschweiger Str.: Asphaltierung	? 13047,7234 13150,7254 13322,7294 13369,7307
 Fürstenwalder Allee: Bau von Radverkehrsanlagen	? 29714,4461 29728,4435 29813,4314 29850,4288
 #XXX hier existieren schon Radwege --- Fürstenwalder Allee: Bau von Radverkehrsanlagen	? 29850,4288 29901,4264 29959,4235 30037,4176 30210,4046 30351,3939 30456,3794 30518,3753 30650,3698 30993,3557 31139,3497 31366,3404 31447,3372 31632,3297 31863,3257 31978,3237 32121,3215 32829,3105 33111,3064 33547,2904
 # 
-#: last_checked: 2012-07-29 vvv
+#: last_checked: 2012-08-25 vvv
 #: next_check: 2012-10-01 vvv
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120207.1005.365838.html vvv
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120625.1405.371942.html (Ende der Bauarbeiten: Ende 2012) vvv
-Radverkehrsanlagen um den Knotenpunkt Weißenseer Weg/Konrad-Wolf-Str.: Radweg wird auf dem Gehweg geführt	?::inwork 14960,14746 15052,14585
-Radverkehrsanlagen um den Knotenpunkt Weißenseer Weg/Konrad-Wolf-Str.: Radspuren werden markiert (wahrscheinlich bis zur Landsberger Allee)	?::inwork 15052,14585 15164,14392
+Radverkehrsanlagen um den Knotenpunkt Weißenseer Weg/Konrad-Wolf-Str.: Radweg wird auf dem Gehweg geführt	?::inwork 14960,14746 15058,14575
+Radverkehrsanlagen um den Knotenpunkt Weißenseer Weg/Konrad-Wolf-Str.: Radspuren werden markiert (wahrscheinlich bis zur Landsberger Allee)	?::inwork 15058,14575 15110,14486 15164,14392
 #: by: ^^^
 #: by: ^^^
 #: next_check ^^^
 #: last_checked ^^^
 # 
-#: last_checked: 2011-10-15 (am westlichen Ende)
-#: next_check: 2012-03-01
+#: last_checked: 2012-08-25 (Höhe Degnerstr.)
+#: next_check: 2013-03-01
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120207.1005.365838.html
 Suermondtstr.: Schaffung von Radverkehrsanlagen	? 16964,16042 16961,16042 16660,16165 16515,16207 16416,16236 16260,16282 16095,16331 15919,16383
 # 
@@ -605,8 +600,7 @@ Ottomar-Geschke-Str.: es scheint ein Zweirichtungsweg zu existieren. Prüfen!	? 2
 #: XXX fehlt in Berlin.coords.data
 Carpinusweg: Am Hegewinkel entsteht ein neues Wohngebiet, eventuell entsteht diese Straße hier?	?::inwork 759,5174 858,5085
 # 
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/21re.pdf/file?y=2012
-Rüdickenstr./Matenstr.: wird dieser Straßenabschnitt "eingezogen"?	? 17486,17266 17582,17335
+#XXX --- nein, hier passiert bestimmt nichts --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/21re.pdf/file?y=2012--- Rüdickenstr./Matenstr.: wird dieser Straßenabschnitt "eingezogen"?	? 17486,17266 17582,17335
 # 
 Treitschkestr.: Situation hier nach der Eröffnung des "Boulevard Berlin"?	? 5125,6262 4971,6345 4854,6413
 # 
@@ -632,7 +626,6 @@ Stephan-Born-Str.: genaue Lage? Privatstraße?	? 23307,15956 23313,16011 23447,15
 #: next_check: 2012-07-13
 Königsheideweg: Geh- und Radwegarbeiten im Königsheideweg - gibt es danach hier Radwege?	?::inwork 16784,4913 16554,5022 16362,5112 16279,5170
 #XXX del --- trotz Bauarbeiten weiterhin ausgeschildert --- Radroutenwegführung überprüfen	? 9890,12161 9875,12257 9869,12297 9852,12409
-Vulkanstr./Landsberger Allee - Große Leegestr.: hier existiert wohl eine Radwegführung mit Ampel, genauer anschauen!	? 15838,14319 15837,14324 15923,14334 15922,14344 15920,14357
 Alt-Lankwitz: parallele Fahrbahn, Qualität, genaue Lage?	? 7412,3484 7419,3500 7249,3598 7057,3713
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120207.1005.365838.html vvv
@@ -642,7 +635,11 @@ Hirschberger/Schreiberhauer: wird es hier einen Zebrastreifen geben?	? 15188,110
 #: last_checked: 2012-08-01
 #: next_check: 2012-11-01
 Weitlingstr.: für 2012 geplanter Zebrastreifen? Wo genau?	?::projected 16705,11526 16734,11416
+#: last_checked: 2012-08-25
+#: next_check: 2012-12-31
 Degnerstr.: für 2012 geplanter Zebrastreifen? Wo genau?	?::projected 16537,15884 16535,15764
+#: last_checked: 2012-08-25
+#: next_check: 2012-12-31
 Dorfstr.: für 2012 geplanter Zebrastreifen? Wo genau?	?::projected 19285,18489 19429,18368
 #: by: ^^^
 # 
@@ -2871,9 +2868,7 @@ Anlage Frohsinn: Benennung von 11 Privatwegen, wo genau, Qualität?	? 10873,22065
 Neue Privatstraßen in der Kolonie Einigkeit	? 9897,21861 9456,21937 8931,22056 8591,22224 8504,22281 8452,22105 8755,21962 8712,21858 8642,21886 8602,21804 8704,21750 8608,21507 8722,21437 8786,21397 8892,21324 9413,21659
 #: section ^^^
 # 
-#: XXX: westliches Ende sah asphaltiert aus
-#: XXX: Straßenschilder? Das könnte der "Falkenberger Fußsteig" sein, wovon es aber nur wenige Referenzen im Netz gibt, u.a. bei http://www.berlin.de/ba-lichtenberg/buergerservice/stadtplanung/index.php?strasse=falkenberger+fu%C3%9Fsteig&strasse_mit=--+Bitte+ausw%C3%A4hlen+--&plz=--+Bitte+ausw%C3%A4hlen+--#results
-(Falkenberger Chaussee - Dorfstr./Wartenberg): Qualität? Nachts beleuchtet?	? 18922,18436 18761,18480 18503,18535 18215,18629 18185,18641
+#XXX del --- #: XXX: westliches Ende sah asphaltiert aus --- #: XXX: Straßenschilder? Das könnte der "Falkenberger Fußsteig" sein, wovon es aber nur wenige Referenzen im Netz gibt, u.a. bei http://www.berlin.de/ba-lichtenberg/buergerservice/stadtplanung/index.php?strasse=falkenberger+fu%C3%9Fsteig&strasse_mit=--+Bitte+ausw%C3%A4hlen+--&plz=--+Bitte+ausw%C3%A4hlen+--#results --- (Falkenberger Chaussee - Dorfstr./Wartenberg): Qualität? Nachts beleuchtet?	? 18922,18436 18761,18480 18503,18535 18215,18629 18185,18641
 #XXX del --- Walter-Felsenstein-Str. - Bitterfelder Str.: existiert hier eine Verbindung?	? 20459,16697 20409,16670
 Ducherow - Busow: Qualität?	? 33515,151584 33553,151842 33557,151971 33514,151992
 Ducherow - Busow: Qualität?	? 33639,153640 33919,153736
@@ -3067,7 +3062,7 @@ Weg im Volkspark Wittenau: wie geht es weiter?	? 5356,21146 4942,20830
 Reinickes Hof: existiert eine Verbindung zum Saalmannsteig? Qualität?	? 5281,18996
 #: XXX fehlt in Berlin.coords.data
 #: XXX zumindest auf der Seite des Hohenschönhauser Tors habe ich keine Schilder gesehen
-Stellerweg: existiert hier ein Weg? Ausgeschildert? Qualität für Radfahrer?	? 15367,14512 15127,14570
+Stellerweg: existiert hier ein Weg? Ausgeschildert? Qualität für Radfahrer?	? 15367,14512 15221,14550
 #: XXX fehlt in Berlin.coords.data
 Hermann-Schmidt-Weg: Qualität?	? -5059,15842 -5238,15891 -5317,15888 -5407,15914
 #: XXX fehlt in Berlin.coords.data
