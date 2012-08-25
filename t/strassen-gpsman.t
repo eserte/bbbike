@@ -37,9 +37,9 @@ BEGIN {
 
 sub load_from_string_and_check ($$);
 
-my $tests_with_data = 4; # in my private directory
+my $tests_with_data = 5; # in my private directory
 my $test_do_all = 1;
-my $tests = $tests_with_data + $test_do_all + 36;
+my $tests = $tests_with_data + $test_do_all + 35;
 plan tests => $tests + $have_nowarnings;
 
 my $gpsman_dir = "$FindBin::RealBin/../misc/gps_data";
