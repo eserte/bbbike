@@ -25,7 +25,7 @@ use strict;
 use vars qw(%lazy_str_drawn %lazy_str %lazy_str_args
 	    %lazy_p_drawn %lazy_p %lazy_p_args %lazy_p_subs
 	    %lazy_known_grids $lazy_master);
-use vars qw($xadd_anchor $yadd_anchor @extra_tags $ignore);
+use vars qw($xadd_anchor $yadd_anchor @extra_tags);
 use BBBikeGlobalVars;
 use vars qw($XXX_use_old_R_symbol);
 
@@ -460,11 +460,11 @@ sub BBBikeLazy::plotstr_on_demand {
 	    }) {
 		$do_street_name_experiment = 1;
 	    }
+	    my($restrict, undef, $ignore, undef) = _set_restrict($abk);
 	    my $default_width = $lazy_str_args{$abk}->{Width} || get_line_width($abk) || 4;
 	    my %category_width = main::_set_category_width($abk);
 
 	    my $i;
-	    my $restrict = undef; #XXX
 	    my $coordsys = $coord_system_obj->coordsys;
 	    my $use_stippleline = decide_stippleline($abk);
 	    my $label_spaceadd = undef; # XXX? note that "" is special

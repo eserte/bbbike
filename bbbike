@@ -10165,47 +10165,7 @@ sub plotstr {
 	}
     }
 
-    my($restrict, @restrict, $ignore, @ignore);
-    if (exists $str_restrict{$abk} ||
-	exists $str_ignore{$abk}) {
-	my $all_set = 1;
-	my($k,$v);
-	if (exists $str_restrict{$abk}) {
-	    while(($k,$v) = each %{$str_restrict{$abk}}) {
-		if (!$v) {
-		    $all_set = 0;
-		} else {
-		    push @restrict, $k;
-		}
-	    }
-	}
-	if (exists $str_ignore{$abk}) {
-	    while(($k,$v) = each %{$str_ignore{$abk}}) {
-		if ($v) {
-		    $all_set = 0;
-		    push @ignore, $k;
-		}
-	    }
-	}
-	if (exists $str_restrict{$abk}) {
-	    if ($all_set || !@restrict) {
-		undef $restrict;
-	    } else {
-		$restrict = '^(' . join('|', map { quotemeta $_ } @restrict) . ")\$";
-	    }
-	}
-	if (exists $str_ignore{$abk}) {
-	    $ignore = '^(' . join('|', map { quotemeta $_ } @ignore) . ")\$";
-	}
-	if ($] >= 5.005) {
-	    eval q{
-	    $restrict = qr/$restrict/
-		if defined $restrict;
-	    $ignore = qr/$ignore/
-		if defined $ignore;
-            }; die $@ if $@;
-	}
-    }
+    my($restrict, $restrict_list, $ignore, $ignore_list) = _set_restrict($abk);
 
     my %category_color = %category_color;
     if ($abk =~ /^g(|[PD])$/ && !$std) {
@@ -10276,14 +10236,14 @@ sub plotstr {
 		my(@args) = ($c, $abk,
 			     (@files > 1 ? \@files : @files),
 			     $progress);
-		if (@restrict) {
-		    push @args, \@restrict;
+		if (@$restrict_list) {
+		    push @args, $restrict_list;
 		} else {
 		    push @args, undef;
 		}
 		push @args, \%category_width;
-		if (@ignore) {
-		    push @args, \@restrict;
+		if (@$ignore_list) {
+		    push @args, $ignore_list;
 		} else {
 		    push @args, undef;
 		}
@@ -10384,6 +10344,52 @@ if ($str->pos != scalar @{$str->{Data}}) { status_message("warning: " . $str->po
     warn "eval called before line " . __LINE__ . ": $@" if ($@);
     $progress->Finish;
     DecBusy($top);
+}
+
+sub _set_restrict {
+    my($abk) = @_;
+    my($restrict, @restrict, $ignore, @ignore);
+    if (exists $str_restrict{$abk} ||
+	exists $str_ignore{$abk}) {
+	my $all_set = 1;
+	my($k,$v);
+	if (exists $str_restrict{$abk}) {
+	    while(($k,$v) = each %{$str_restrict{$abk}}) {
+		if (!$v) {
+		    $all_set = 0;
+		} else {
+		    push @restrict, $k;
+		}
+	    }
+	}
+	if (exists $str_ignore{$abk}) {
+	    while(($k,$v) = each %{$str_ignore{$abk}}) {
+		if ($v) {
+		    $all_set = 0;
+		    push @ignore, $k;
+		}
+	    }
+	}
+	if (exists $str_restrict{$abk}) {
+	    if ($all_set || !@restrict) {
+		undef $restrict;
+	    } else {
+		$restrict = '^(' . join('|', map { quotemeta $_ } @restrict) . ")\$";
+	    }
+	}
+	if (exists $str_ignore{$abk}) {
+	    $ignore = '^(' . join('|', map { quotemeta $_ } @ignore) . ")\$";
+	}
+	if ($] >= 5.005) {
+	    eval q{
+	    $restrict = qr/$restrict/
+		if defined $restrict;
+	    $ignore = qr/$ignore/
+		if defined $ignore;
+            }; die $@ if $@;
+	}
+    }
+    ($restrict, \@restrict, $ignore, \@ignore);
 }
 
 #XXX %category_width wird nicht skaliert...
