@@ -20,6 +20,10 @@ BEGIN {
 	print "1..0 # skip no Test::More module\n";
 	exit;
     }
+    if ($ENV{BBBIKE_TEST_NO_NETWORK}) {
+        print "1..0 # skip due no network\n";
+        exit;
+    }
 }
 
 use LWP::UserAgent;

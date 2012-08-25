@@ -21,6 +21,11 @@ BEGIN {
 	print "1..0 # skip no Test::More, Compress::Zlib and/or LWP::UserAgent modules\n";
 	exit;
     }
+
+    if ($ENV{BBBIKE_TEST_SLOW_NETWORK}) {
+	print "1..0 # skip due slow network\n";
+	exit;
+    }
 }
 
 use Data::Dumper;

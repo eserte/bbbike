@@ -18,6 +18,10 @@ BEGIN {
 	print "1..0 # skip no WWW::Mechanize (1.54), WWW::Mechanize::FormFiller and/or Test::More modules\n";
 	exit;
     }
+    if ($ENV{BBBIKE_TEST_NO_NETWORK}) {
+        print "1..0 # skip due no network\n";
+        exit;
+    }
 }
 
 if (hostname !~ m{^(biokovo|biokovo-amd64|vran)\.herceg\.de}) {
