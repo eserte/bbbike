@@ -1,3 +1,6 @@
+# BBBIKE_TEST_SLOW_NETWORK=1
+# BBBIKE_TEST_NO_CGI_TESTS=1
+
 PERL?=		perl
 # TEST_FILES must be a single argument
 TEST_FILES=	*.t

@@ -43,7 +43,7 @@ my @listing;
 {
     my($dir) = tempdir("bbbike.org_download_XXXXXXXX", CLEANUP => 1, TMPDIR => 1)
 	or die "Cannot create temporary directory: $!";
-    my $city = $listing[rand(@listing)];
+    my $city = 'Cusco'; #$listing[rand(@listing)];
     system($^X, $download_script, "-city", $city, "-o", $dir, "-agentsuffix", " (testing)");
     is $?, 0, "Downloading city '$city'";
     ok -d "$dir/$city", "Directory $dir/$city exists";
