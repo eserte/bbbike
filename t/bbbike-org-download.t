@@ -41,9 +41,11 @@ my @listing;
 }
 
 {
+    my $random = $ENV{BBBIKE_TEST_SLOW_NETWORK} ? 0 : 1;
+
     my($dir) = tempdir("bbbike.org_download_XXXXXXXX", CLEANUP => 1, TMPDIR => 1)
 	or die "Cannot create temporary directory: $!";
-    my $city = 'Cusco'; #$listing[rand(@listing)];
+    my $city = $random ? $listing[rand(@listing)] : 'Cusco';
     system($^X, $download_script, "-city", $city, "-o", $dir, "-agentsuffix", " (testing)");
     is $?, 0, "Downloading city '$city'";
     ok -d "$dir/$city", "Directory $dir/$city exists";
