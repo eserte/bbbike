@@ -13,8 +13,9 @@
 #
 
 use strict;
+use FindBin;
 my $bbbike_root;
-BEGIN { $bbbike_root = "/home/e/eserte/src/bbbike" }
+BEGIN { $bbbike_root = "$FindBin::RealBin/.." }
 use lib (
 	 $bbbike_root,
 	 "$bbbike_root/lib",
