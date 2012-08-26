@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2006,2007,2009,2011 Slaven Rezic. All rights reserved.
+# Copyright (C) 2006,2007,2009,2011,2012 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -41,8 +41,8 @@ for my $pairdef ("test-from-local",
     open my $STARTFH, $pair[0] or die "Can't open $pair[0]: $!";
     open my $STOPFH,  $pair[1] or die "Can't open $pair[1]: $!";
 
-    chomp(my @start = <$STARTFH>);
-    chomp(my @stop  = <$STOPFH>);
+    chomp(my @start = grep { !/^#/ } <$STARTFH>);
+    chomp(my @stop  = grep { !/^#/ } <$STOPFH>);
 
     close $STARTFH;
     close $STOPFH;
