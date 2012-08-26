@@ -1928,6 +1928,8 @@ sub add_net {
     my($self, $pos, @points) = @_;
     return unless defined $pos;
     die 'Es müssen genau 3 Punkte in @points sein!' if @points != 3;
+    my $Net = $self->{Net};
+    my $Net2Name = $self->{Net2Name};
     # additional check: for (@points) { die "add_net: all points should be array refs" if !UNIVERSAL::isa($_,"ARRAY") }
     my($startx, $starty) = @{$points[0]};
     require Route;
@@ -1938,8 +1940,7 @@ sub add_net {
 	$ex_point[$_] = Route::_coord_as_string($points[$_]);
     }
     my $rueckwaerts = 0;
-    if ($self->{Net2Name} &&
-	exists $self->{Net2Name}{$ex_point[2]}{$ex_point[1]}) {
+    if ($Net2Name && exists $Net2Name->{$ex_point[2]}{$ex_point[1]}) {
         $rueckwaerts = 1;
     }
 
@@ -1947,26 +1948,21 @@ sub add_net {
     for($i=1; $i<=2; $i++) {
         my $s = $ex_point[$i];
 	my $entf = $entf[$i] = Strassen::Util::strecke($points[0], $points[$i]);
-	if (!exists $self->{Net}{$starts}{$s}) {
-	    $self->store_to_hash($self->{Net}, $starts, $s, $entf);
-	    #$self->{Net}{$starts}{$s} = $entf;
+	if (!exists $Net->{$starts}{$s}) {
+	    $self->store_to_hash($Net, $starts, $s, $entf);
 	    push @{$self->{AdditionalNet}}, [$starts, $s];
 	}
-	if (!exists $self->{Net}{$s}{$starts}) {
-	    $self->store_to_hash($self->{Net}, $s, $starts, $entf);
-	    #$self->{Net}{$s}{$starts} = $entf;
+	if (!exists $Net->{$s}{$starts}) {
+	    $self->store_to_hash($Net, $s, $starts, $entf);
 	    push @{$self->{AdditionalNet}}, [$s, $starts];
 	}
 	# XXX $pos ist hier immer definiert...
-	if ($self->{Net2Name} &&
-	    !exists $self->{Net2Name}{$starts}{$s} &&
+	if ($Net2Name && !exists $Net2Name->{$starts}{$s} &&
 	    defined $pos) {
   	    if (($i == 1 && $rueckwaerts) || $i == 2) {
-		$self->store_to_hash($self->{Net2Name}, $starts, $s, $pos);
-	        #$self->{Net2Name}{$starts}{$s} = $pos;
+		$self->store_to_hash($Net2Name, $starts, $s, $pos);
 	    } else {
-		$self->store_to_hash($self->{Net2Name}, $s, $starts, $pos);
-	        #$self->{Net2Name}{$s}{$starts} = $pos;
+		$self->store_to_hash($Net2Name, $s, $starts, $pos);
             }
 	}
     }
