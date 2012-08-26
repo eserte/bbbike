@@ -145,7 +145,7 @@ sub convert {
 		$richtung = M('umdrehen');
 	    } else {
 		$richtung =
-		    ($winkel <= 45 ? 'halb' : '') .
+		    ($winkel <= 45 ? M('halb') : '') .
 			($richtung eq 'l' ? M('links') : M('rechts')) . ' ' .
 			    "($winkel°) ";
 		if (($lang||'') eq 'en') {
