@@ -179,7 +179,8 @@ sub abbiegen {
 
     # XXX $a_len or $b_len == 0 is meaningless --- what should be done here
     my $acos_arg = $a_len == 0 || $b_len == 0 ? 0 : ($a1*$b1+$a2*$b2)/($a_len*$b_len);
-    # protect from floating point inaccuracies
+    # Protect from floating point inaccuracies.
+    # See also Math::Trig::acos_real (which is available since Math::Trig 1.12, bundled with perl 5.10.1 and newer)
     if    ($acos_arg >  1) { $acos_arg = 1 }
     elsif ($acos_arg < -1) { $acos_arg = -1 }
     my $angle = rad2deg(&$acos($acos_arg));
