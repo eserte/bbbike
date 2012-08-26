@@ -110,4 +110,37 @@ no warnings 'qw'; # because of (x,y)
     }
 }
 
+{
+    my @coords = map {[split /,/]} qw(8291,8773 8425,8775 8472,8776 8594,8777 8689,8779 8763,8780 8982,8781 9063,8935);
+    add_missing_points(\@coords);
+    my $out = Route::Descr::convert(%stdargs, -route => Route->new_from_realcoords([@coords]));
+    is_deeply $out, {
+		     "Title" => "Route von Dudenstr. bis Methfesselstr.",
+		     "Start" => "Dudenstr.",
+		     "Goal" => "Methfesselstr.",
+		     "Lines" => [
+				 [undef, undef, "Dudenstr.", undef],
+				 ["nach 0.69 km", "links (60\260) in die", "Methfesselstr.", "0.7 km"]
+				],
+		     "Footer" => ["nach 0.17 km", "", "angekommen!", "0.9 km"],
+		    }, 'Test with additional added points';
+    del_add_points();
+}
+
+# Question: should this be done automatically, somewhere?
+sub add_missing_points {
+    my($coords_ref) = @_;
+    my @coords = map { $_->[0].",".$_->[1] } @$coords_ref;
+    for my $coord_i (1 .. $#coords-1) {
+	if (!exists $net->{Net}->{$coords[$coord_i]}) {
+	    my($pos) = $net->net2name(@coords[$coord_i-1, $coord_i+1]);
+	    $net->add_net($pos, @{$coords_ref}[$coord_i, $coord_i-1, $coord_i+1]);
+	}
+    }
+}
+
+sub del_add_points {
+    $net->reset;
+}
+
 __END__
