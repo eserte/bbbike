@@ -1921,8 +1921,19 @@ sub del_net {
     }
 }
 
-# Der erste Punkt in @points ist der einzufügende, die beiden anderen
-# existieren bereits. Rückwärts-Eigenschaft wird beachtet.
+# add_net: inject additional points into the net, typically a point
+# between two points in a street segment.
+#
+# Parameters are:
+# - $pos:         position (index) of the the street segment
+# - $points[0]:   the inserted point as [$x,$y]
+# - $points[1,2]: the neighbors of the inserted point, also as [$x,$y]
+#
+# Internally the data structures AdditionalNet, AdditionalDelNet and
+# AdditionalDelNet2Name exist which have all operations done here
+# recorded, and which are used in reset() to undo the additional points.
+#
+# Limited support for WideNet exists.
 ### AutoLoad Sub
 sub add_net {
     my($self, $pos, @points) = @_;
@@ -1967,7 +1978,21 @@ sub add_net {
 	}
     }
 
+    if (exists $Net->{$ex_point[1]}{$ex_point[2]}) {
+	push @{$self->{AdditionalDelNet}}, [$ex_point[1], $ex_point[2], delete $Net->{$ex_point[1]}{$ex_point[2]}];
+	if ($Net2Name && exists $Net2Name->{$ex_point[1]}{$ex_point[2]}) {
+	    push @{$self->{AdditionalDelNet2Name}}, [$ex_point[1], $ex_point[2], delete $Net2Name->{$ex_point[1]}{$ex_point[2]}];
+	}
+    }
+    if (exists $Net->{$ex_point[2]}{$ex_point[1]}) {
+	push @{$self->{AdditionalDelNet}}, [$ex_point[2], $ex_point[1], delete $Net->{$ex_point[2]}{$ex_point[1]}];
+	if ($Net2Name && exists $Net2Name->{$ex_point[2]}{$ex_point[1]}) {
+	    push @{$self->{AdditionalDelNet2Name}}, [$ex_point[2], $ex_point[1], delete $Net2Name->{$ex_point[2]}{$ex_point[1]}];
+	}
+    }
+
     if ($self->{WideNet}) {
+	# XXX AdditionalDelNet and AdditionalDelNet2Name support is missing
 	my $wide_neighbors = $self->{WideNet}{WideNeighbors};
 	my $intermediates_hash = $self->{WideNet}{Intermediates};
 
@@ -2031,6 +2056,7 @@ warn "#XXXny";
     }
 }
 
+# del_add_net() undos all operations done in preceding add_net() calls.
 ### AutoLoad Sub
 sub del_add_net {
     my $self = shift;
@@ -2042,6 +2068,18 @@ sub del_add_net {
 	}
     }
     @{$self->{AdditionalNet}} = ();
+
+    foreach my $def (reverse @{$self->{AdditionalDelNet} || []}) {
+	my($p1,$p2,$val) = @$def;
+	$self->{Net}{$p1}{$p2} = $val;
+    }
+    @{$self->{AdditionalDelNet}} = ();
+
+    foreach my $def (reverse @{$self->{AdditionalDelNet2Name} || []}) {
+	my($p1,$p2,$val) = @$def;
+	$self->{Net2Name}{$p1}{$p2} = $val;
+    }
+    @{$self->{AdditionalDelNet2Name}} = ();
 }
 
 *reachable = \&reachable_1;
