@@ -7,30 +7,39 @@
 
 use strict;
 use FindBin;
-use lib $FindBin::RealBin;
+use lib (
+	 $FindBin::RealBin,
+	 "$FindBin::RealBin/..",
+	);
 use CGI '-oldstyle_urls';
 use Encode qw(encode_utf8);
 no utf8;
 
 BEGIN {
-    if (!eval q{
-	use Email::MIME;
-	# NOTE: The usage of decode_entities below is not that correct,
-	# but sufficient for the test cases here.
-	use HTML::Entities qw(decode_entities);
-	use HTTP::Message;
-	use HTTP::Request;
-	use HTTP::Request::Common 'POST';
-	use IPC::Run 'run';
-	use Test::More;
-	defined &done_testing;
-    }) {
-	print "1..0 # skip no Email::MIME, HTML::Entities, HTTP::Message, IPC:Run and/or (modern) Test::More modules\n";
+    my @errors;
+    for my $check (
+		   q{use Email::MIME; 1},
+		   # NOTE: The usage of decode_entities below is not that correct,
+		   # but sufficient for the test cases here.
+		   q{use HTML::Entities qw(decode_entities); 1},
+		   q{use HTTP::Message; 1},
+		   q{use HTTP::Request; 1},
+		   q{use HTTP::Request::Common 'POST'; 1},
+		   q{use IPC::Run 'run'; 1},
+		   q{use Test::More; 1},
+		   q{defined &done_testing},
+		  ) {
+	if (!eval $check) {
+	    push @errors, $check;
+	}
+    }
+    if (@errors) {
+	print "1..0 # skip the following prereq(s) were not met: " . join(", ", map { "q<$_>" } @errors) . "\n";
 	exit;
     }
 }
 
-use BBBikeTest qw(check_cgi_testing);
+use BBBikeTest qw(check_cgi_testing like_long_data);
 
 check_cgi_testing;
 
@@ -153,11 +162,11 @@ for my $method (qw(GET POST)) {
 	like decode_entities($res{http}->decoded_content), qr{Danke, die Angaben.*gesendet}, "HTTP: Thankyou ($method)";
 	like $res{http}->header('set-cookie'), qr{mapserver_comment}, 'Seen Set-Cookie header';
 	my @parts = $res{mail}->parts;
-	is scalar(@parts), 2, "Two parts found in mail (html and text)";
-	my $plain = $parts[1]->body_str;
-	like $plain, qr{var1.*var1_val}, 'Found single param in plain part';
-	like $plain, qr{multivar_val2}, 'Found 2nd multi param in plain part';
-	like $plain, qr{email.*somebody.*example\.org}, 'Found email in plain part';
+	is scalar(@parts), 2, "Two parts found in mail (text and html)";
+	my $plain = $parts[0]->body_str; # assume text part is the first one (index=0)
+	like_long_data $plain, qr{var1.*var1_val}, 'Found single param in plain part', '.txt';
+	like_long_data $plain, qr{multivar_val2}, 'Found 2nd multi param in plain part', '.txt';
+	like_long_data $plain, qr{email.*somebody.*example\.org}, 'Found email in plain part', '.txt';
     }
 }
 
