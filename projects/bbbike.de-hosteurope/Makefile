@@ -262,10 +262,18 @@ check-rsync-ok:
 .endif
 
 do-rsync:
+.ifdef TARGET
+.if ${TARGET} == ${TARGET_LIVE}
 	-@mkdir -p .last
 	-@date >> .last/start-do-rsync
+.endif
+.endif
 	${RSYNC} ${RSYNC_ARGS} ${RSYNC_SRCDEST}
+.ifdef TARGET
+.if ${TARGET} == ${TARGET_LIVE}
 	-@date >> .last/do-rsync
+.endif
+.endif
 
 rsync-bbbike:
 	@echo NYI
@@ -295,11 +303,19 @@ RSYNC_BBBIKE_DATA_RULES=check-rsync-data-ok \
 rsync-bbbike-data:	$(RSYNC_BBBIKE_DATA_RULES)
 
 do-rsync-bbbike-data:
+.ifdef TARGET
+.if ${TARGET} == ${TARGET_LIVE}
 	-@mkdir -p .last
 	-@date >> .last/start-do-rsync-bbbike-data
+.endif
+.endif
 	${RSYNC} ${RSYNC_ARGS} \
 	    BBBike/data/ ${RSYNC_DEST}/BBBike/data/
+.ifdef TARGET
+.if ${TARGET} == ${TARGET_LIVE}
 	-@date >> .last/do-rsync-bbbike-data
+.endif
+.endif
 
 post-rsync-bbbike:
 # bbbike-snapshot expects this file, but nothing of BBBike/tmp is
@@ -308,17 +324,33 @@ post-rsync-bbbike:
 	   "touch ${BBBIKE_HOSTEUROPE_APACHE_DIR}/BBBike/tmp/.keep_me"
 
 post-rsync-bbbike-data:
+.ifdef TARGET
+.if ${TARGET} == ${TARGET_LIVE}
 	-@date >> .last/start-post-rsync-bbbike-data
+.endif
+.endif
 	-${SSH_PROG_AND_ARGS} -l ${BBBIKE_HOSTEUROPE_USER} ${BBBIKE_HOSTEUROPE_SSH_HOST} \
 	   "rm -f ${BBBIKE_HOSTEUROPE_APACHE_DIR}/BBBike/tmp/winter_optimization*"
+.ifdef TARGET
+.if ${TARGET} == ${TARGET_LIVE}
 	-@date >> .last/post-rsync-bbbike-data
+.endif
+.endif
 
 rsync-temp-blockings:
+.ifdef TARGET
+.if ${TARGET} == ${TARGET_LIVE}
 	-@mkdir -p .last
 	-@date >> .last/start-post-rsync-bbbike-data
+.endif
+.endif
 	${RSYNC} ${RSYNC_ARGS} \
 	    BBBike/data/temp_blockings/ ${RSYNC_DEST}/BBBike/data/temp_blockings/
+.ifdef TARGET
+.if ${TARGET} == ${TARGET_LIVE}
 	-@date >> .last/rsync-temp-blockings
+.endif
+.endif
 
 show-rsync-message:
 	-[ ! -e ${CURDIR}/.rsync_message ] && true || cat ${CURDIR}/.rsync_message
@@ -639,8 +671,12 @@ prepare-additional-dist-images:
 test:	test-on-remote test-from-local
 
 test-on-remote:
+.ifdef TARGET
+.if ${TARGET} == ${TARGET_LIVE}
 	-@mkdir -p .last
 	-@date >> .last/start-test-on-remote
+.endif
+.endif
 	${SSH_PROG_AND_ARGS} -l ${BBBIKE_HOSTEUROPE_USER} ${BBBIKE_HOSTEUROPE_SSH_HOST} '\
 	cd ${BBBIKE_HOSTEUROPE_APACHE_DIR}/BBBike/t && \
 	BBBIKE_TEST_CGIDIR=http://${BBBIKE_HOSTEUROPE_HOST}/cgi-bin \
@@ -650,14 +686,22 @@ test-on-remote:
 	    perl -MTest::Harness -e "runtests(@ARGV)" \
 		${TESTS_ON_REMOTE} ${TESTS_SERVER_ON_REMOTE} \
 	'
+.ifdef TARGET
+.if ${TARGET} == ${TARGET_LIVE}
 	-@date >> .last/test-on-remote
+.endif
+.endif
 
 test-on-remote-full:
 	$(MAKE) test-on-remote TESTS_ON_REMOTE="$(TESTS)"
 
 test-from-local:
+.ifdef TARGET
+.if ${TARGET} == ${TARGET_LIVE}
 	-@mkdir -p .last
 	-@date >> .last/start-test-from-local
+.endif
+.endif
 	cd ${.CURDIR}/BBBike/t && \
 	BBBIKE_TEST_CGIDIR=http://${BBBIKE_HOSTEUROPE_HOST}/cgi-bin \
 	BBBIKE_TEST_CGIURL=http://${BBBIKE_HOSTEUROPE_HOST}/cgi-bin/${BBBIKECGI} \
@@ -665,7 +709,11 @@ test-from-local:
 	BBBIKE_TEST_HTMLDIR=http://${BBBIKE_HOSTEUROPE_HOST}/BBBike \
 	    perl -MTest::Harness -e "runtests(@ARGV)" \
 		${TESTS_FROM_LOCAL}
+.ifdef TARGET
+.if ${TARGET} == ${TARGET_LIVE}
 	-@date >> .last/test-from-local
+.endif
+.endif
 
 test-on-remote-and-send-mail:
 	${SSH_PROG_AND_ARGS} -l ${BBBIKE_HOSTEUROPE_USER} ${BBBIKE_HOSTEUROPE_SSH_HOST} '\
@@ -801,7 +849,7 @@ automatic-deployment:
 	-@${XTERM_CONF_TITLE} "BBBike deployment"
 	${MAKE} deploy
 	-@${XTERM_CONF_TITLE} "BBBike post deployment stuff"
-	cd ${BBBIKE_ROOT_DIR}/misc && slaymake rsync-fragezeichen-list
+	cd ${BBBIKE_ROOT_DIR}/misc && slaymake rsync-fragezeichen-list BBBIKE_HOSTEUROPE_HOST=${BBBIKE_HOSTEUROPE_HOST} BBBIKE_HOSTEUROPE_USER=${BBBIKE_HOSTEUROPE_USER}
 	-( tkmessage -center "BBBike deployment finished, possibly interactive stuff follows..." &)
 	-@${XTERM_CONF_TITLE} "BBBike post-deployment git update"
 	$(HOME)/src/bbbike-aux/misc/bbbike-checkin-hosteurope.pl -after-sync
