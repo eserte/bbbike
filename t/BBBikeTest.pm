@@ -621,6 +621,9 @@ sub is_float ($$;$) {
     }
 }
 
+# Actually it's not only about the test cgi here, but about using the
+# fixed test data in t/data. Call this function whenever you make use
+# of this data set.
 sub using_bbbike_test_cgi () {
     my $make = $^O =~ m{bsd}i ? "make" : is_in_path("freebsd-make") ? "freebsd-make" : "pmake";
     # -f BSDmakefile needed for old pmake (which may be found in Debian)
