@@ -1,15 +1,14 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeDraw.pm,v 3.63 2009/01/11 23:35:10 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998-2008 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998-2008,2012 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: eserte@cs.tu-berlin.de
-# WWW:  http://user.cs.tu-berlin.de/~eserte/
+# Mail: eserte@users.sourceforge.net
+# WWW:  http://bbbike.sourceforge.net
 #
 
 package BBBikeDraw;
@@ -21,9 +20,9 @@ use Carp qw(confess);
 
 use vars qw($images_dir $VERSION $bahn_bau_rx);
 
-$VERSION = sprintf("%d.%02d", q$Revision: 3.63 $ =~ /(\d+)\.(\d+)/);
+$VERSION = 3.64;
 
-$bahn_bau_rx = qr{^[SRU](0|Bau|G|P)$}; # auch ignorieren: Güterbahnen, Parkbahnen
+$bahn_bau_rx = qr{^[SRU](?:0|Bau|G|P)(?:::|$)}; # auch ignorieren: Güterbahnen, Parkbahnen
 
 sub new {
     my($pkg, %args) = @_;
