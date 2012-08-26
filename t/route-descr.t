@@ -127,6 +127,37 @@ no warnings 'qw'; # because of (x,y)
     del_add_points();
 }
 
+{
+    my @coords = map {[split /,/]} qw(13711,10022 13789,9949 13829,9905 13884,9882 13995,9834);
+    {
+	my $out = Route::Descr::convert(%stdargs, -route => Route->new_from_realcoords([@coords]));
+	is_deeply $out, {
+			 "Title" => "Route von Puschkinallee bis Puschkinallee",
+			 "Start" => "Puschkinallee",
+			 "Goal" => "Puschkinallee",
+			 "Lines" => [
+				     [undef, undef, "Puschkinallee", undef],
+				     ["nach 0.17 km", "halblinks (20\260) weiter auf der", "Puschkinallee", "0.2 km"]
+				    ],
+			 "Footer" => ["nach 0.18 km", "", "angekommen!", "0.3 km"],
+			}, 'Test with "half-left" (German)';
+    }
+    {
+	my $out = Route::Descr::convert(%stdargs, -lang => 'en', -route => Route->new_from_realcoords([@coords]));
+	is_deeply $out, {
+			 "Title" => "Route from Puschkinallee to Puschkinallee",
+			 "Start" => "Puschkinallee",
+			 "Goal" => "Puschkinallee",
+			 "Lines" => [
+				     [undef, undef, "Puschkinallee", undef],
+				     ["after 0.17 km", "half left (20\260) ->", "Puschkinallee", "0.2 km"]
+				    ],
+			 "Footer" => ["after 0.18 km", "", "arrived!", "0.3 km"],
+			}, 'Test with "half-left" (English)';
+    }
+}
+
+
 # Question: should this be done automatically, somewhere?
 sub add_missing_points {
     my($coords_ref) = @_;
