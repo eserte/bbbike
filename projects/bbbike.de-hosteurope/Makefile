@@ -805,7 +805,7 @@ automatic-deployment:
 	-( tkmessage -center "BBBike deployment finished, possibly interactive stuff follows..." &)
 	-@${XTERM_CONF_TITLE} "BBBike post-deployment git update"
 	$(HOME)/src/bbbike-aux/misc/bbbike-checkin-hosteurope.pl -after-sync
-	-@${MAKE} post-automatic-deploy-info
+	-@${MAKE} post-automatic-deploy-info TARGET=${TARGET}
 	-@${XTERM_CONF_TITLE} "BBBike deployment finished"
 
 automatic-deployment-temp-blockings:
