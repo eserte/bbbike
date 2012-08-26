@@ -508,6 +508,31 @@ __END__
 
 =pod
 
+Benchmark results (2012-08-26, Debian/squeeze, system perl 5.10.1,
+virtual machine, host is VirtualBox under FreeBSD 9.0, i5-2500T):
+
+ Algorithm=C-A*-2, UseXS=1, UseNetServer=0, UseCache=1 (CDB_File): 6.64
+ Algorithm=C-A*, UseXS=1, UseNetServer=0, UseCache=1 (CDB_File): 7.31
+ Algorithm=A*, UseXS=1, UseNetServer=0, UseCache=1 (Storable): 11.69
+ Algorithm=A*, UseXS=0, UseNetServer=0, UseCache=1 (Storable): 12.93
+ Algorithm=A*, UseXS=1, UseNetServer=0, UseCache=1 (CDB_File): 23.18
+
+Benchmark results (2012-08-26, FreeBSD 9.0, system perl 5.12.4, Intel
+i5-2500T CPU @ 2.30GHz) (two runs, did not check with
+$StrassenNetz::use_heap=1):
+
+ Algorithm=C-A*-2, UseXS=1, UseNetServer=0, UseCache=1 (CDB_File): 7.28125
+ Algorithm=C-A*, UseXS=1, UseNetServer=0, UseCache=1 (CDB_File): 8.09375
+ Algorithm=A*, UseXS=1, UseNetServer=0, UseCache=1 (Storable): 12.7265625
+ Algorithm=A*, UseXS=0, UseNetServer=0, UseCache=1 (Storable): 12.734375
+ Algorithm=A*, UseXS=1, UseNetServer=0, UseCache=1 (CDB_File): 25.09375
+
+ Algorithm=C-A*-2, UseXS=1, UseNetServer=0, UseCache=1 (CDB_File): 7.640625
+ Algorithm=C-A*, UseXS=1, UseNetServer=0, UseCache=1 (CDB_File): 10.2578125
+ Algorithm=A*, UseXS=1, UseNetServer=0, UseCache=1 (Storable): 13.2578125
+ Algorithm=A*, UseXS=0, UseNetServer=0, UseCache=1 (Storable): 13.734375
+ Algorithm=A*, UseXS=1, UseNetServer=0, UseCache=1 (CDB_File): 26.578125
+
 Benchmark results (2011-09-20, FreeBSD 8.0, perl 5.8.9, AMD Athlon64 3500+):
 
  Algorithm=C-A*-2, UseXS=1, UseNetServer=0, UseCache=1 (CDB_File): 7.140625
@@ -523,6 +548,14 @@ With $StrassenNetz::use_heap=1:
  Algorithm=A*, UseXS=1, UseNetServer=0, UseCache=1 (Storable): 12.234375
  Algorithm=A*, UseXS=0, UseNetServer=0, UseCache=1 (Storable): 12.5546875
  Algorithm=A*, UseXS=1, UseNetServer=0, UseCache=1 (CDB_File): 23.78125
+
+On the same machine, but almost a year later (2012-08-26), with larger data set:
+
+ Algorithm=C-A*-2, UseXS=1, UseNetServer=0, UseCache=1 (CDB_File): 7.6015625
+ Algorithm=C-A*, UseXS=1, UseNetServer=0, UseCache=1 (CDB_File): 11.515625
+ Algorithm=A*, UseXS=1, UseNetServer=0, UseCache=1 (Storable): 14.5390625
+ Algorithm=A*, UseXS=0, UseNetServer=0, UseCache=1 (Storable): 15.015625
+ Algorithm=A*, UseXS=1, UseNetServer=0, UseCache=1 (CDB_File): 28.9296875
 
 Benchmark results (2011-09-20, Debian/squeeze, perl 5.10.1, virtual
 instance):
