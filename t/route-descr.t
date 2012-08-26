@@ -18,7 +18,7 @@ use Route::Descr;
 use Strassen::Core;
 use Strassen::StrassenNetz;
 
-use BBBikeTest qw(using_bbbike_test_cgi);
+use BBBikeTest qw(using_bbbike_test_data);
 
 BEGIN {
     if (!eval q{
@@ -32,7 +32,7 @@ BEGIN {
 
 plan 'no_plan';
 
-using_bbbike_test_cgi;
+using_bbbike_test_data;
 local $Strassen::Util::cacheprefix = $Strassen::Util::cacheprefix = "test_b_de";
 
 my $net = StrassenNetz->new(Strassen->new("$FindBin::RealBin/data/strassen"));
