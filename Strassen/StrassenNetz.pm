@@ -2045,7 +2045,6 @@ sub del_add_net {
 	    delete $self->{Net2Name}{$b->[0]}{$b->[1]};
 	}
     }
-    @{$self->{Additional}} = ();
     @{$self->{AdditionalNet}} = ();
 }
 
