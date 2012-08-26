@@ -45,7 +45,7 @@ no warnings 'qw'; # because of (x,y)
     my @coords = map {[split /,/]} qw(8291,8773 8425,8775 8472,8776 8594,8777 8763,8780 8982,8781 9063,8935 9111,9036 9115,9046 9150,9152 9170,9206 9211,9354 9248,9350 9280,9476 9334,9670 9387,9804 9334,9670 9280,9476 9248,9350 9225,9111 9224,9053 9225,9038 9227,8890 9229,8785);
     {
 	my $out = Route::Descr::convert(%stdargs, -route => Route->new_from_realcoords([@coords]));
-	is_deeply($out, {
+	is_deeply $out, {
 			 "Title" => "Route von Dudenstr. bis Mehringdamm",
 			 "Start" => "Dudenstr.",
 			 "Goal" => "Mehringdamm",
@@ -58,12 +58,11 @@ no warnings 'qw'; # because of (x,y)
 				    ],
 			 "Footer" => ["nach 1.04 km", "", "angekommen!", "2.9 km"],
 			},
-		  'Route::Descr output, German, simple route',
-		 );
+		  'Route::Descr output, German, simple route';
     }
     {
 	my $out = Route::Descr::convert(%stdargs, -lang => 'en', -route => Route->new_from_realcoords([@coords]));
-	is_deeply($out, {
+	is_deeply $out, {
 			 "Title" => "Route from Dudenstr. to Mehringdamm",
 			 "Start" => "Dudenstr.",
 			 "Goal" => "Mehringdamm",
@@ -76,8 +75,38 @@ no warnings 'qw'; # because of (x,y)
 				    ],
 			 "Footer" => ["after 1.04 km", "", "arrived!", "2.9 km"],
 			},
-		  'Route::Descr output, English, simple route',
-		 );
+		  'Route::Descr output, English, simple route';
+    }
+}
+
+{
+    my @coords = map {[split /,/]} qw(7866,9918 7906,10098 7813,10112 7702,10146 7698,10147 7579,10183);
+    {
+	my $out = Route::Descr::convert(%stdargs, -route => Route->new_from_realcoords([@coords]));
+	is_deeply $out, {
+			 "Title" => "Route von B\374lowstr. (Sch\366neberg) bis B\374lowstr. (Sch\366neberg)",
+			 "Start" => "B\374lowstr. (Sch\366neberg)",
+			 "Goal" => "B\374lowstr. (Sch\366neberg)",
+			 "Lines" => [
+				     [undef, undef, "B\374lowstr.", undef],
+				     ["nach 0.18 km", "links (90\260) weiter auf der", "B\374lowstr.", "0.2 km"]
+				    ],
+			 "Footer" => ["nach 0.34 km", "", "angekommen!", "0.5 km"],
+			}, "Test 'weiter auf...'";
+    }
+
+    {
+	my $out = Route::Descr::convert(%stdargs, -lang => 'en', -route => Route->new_from_realcoords([@coords]));
+	is_deeply $out, {
+			 "Title" => "Route from B\374lowstr. (Sch\366neberg) to B\374lowstr. (Sch\366neberg)",
+			 "Start" => "B\374lowstr. (Sch\366neberg)",
+			 "Goal" => "B\374lowstr. (Sch\366neberg)",
+			 "Lines" => [
+				     [undef, undef, "B\374lowstr.", undef],
+				     ["after 0.18 km", "left (90\260) ->", "B\374lowstr.", "0.2 km"]
+				    ],
+			 "Footer" => ["after 0.34 km", "", "arrived!", "0.5 km"],
+			}, "Test 'weiter auf...' on English (which is just an arrow)";
     }
 }
 
