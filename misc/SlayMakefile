@@ -2,6 +2,7 @@
 {
 	use strict;
 	use vars qw($ABS_LOCAL_BBBIKE_DIR $BBBIKE_DATA_DIR $BBBIKE_MISCSRC_DIR $BBBIKE_TMP_DIR);
+	use vars qw($BBBIKE_HOSTEUROPE_HOST $BBBIKE_HOSTEUROPE_USER);
 	use Cwd qw(realpath);
 	use File::Compare qw(compare);
 	use File::Temp qw(tempdir);
@@ -197,7 +198,9 @@ fragezeichen-list-local:		{ "$BBBIKE_TMP_DIR/fragezeichen_list_local/index.html"
 
 rsync-fragezeichen-list:	fragezeichen-list
 	{
-		my @cmd = (qw(rsync -avz), "$BBBIKE_TMP_DIR/fragezeichen_list/", 'root@bbbike.de:/root/work/bbbike-webserver/BBBike/tmp/fragezeichen_list/');
+		my $host = $BBBIKE_HOSTEUROPE_HOST || 'bbbike.de';
+		my $user = $BBBIKE_HOSTEUROPE_USER || 'root';
+		my @cmd = (qw(rsync -avz), "$BBBIKE_TMP_DIR/fragezeichen_list/", $user.'@'.$host.':/root/work/bbbike-webserver/BBBike/tmp/fragezeichen_list/');
 		system @cmd;
 		die "@cmd failed: $?" if $? != 0;
 	}
