@@ -210,7 +210,7 @@ use vars qw($export_txt_mode $export_txt_min_angle $gps_waypoints
 	    $gps_waypointlength $gps_waypointsymbol $gps_waypointcharset
 	    $gps_needuniqueroutenumber
 	   );
-use vars qw($www_is_slow $do_www $really_no_www $no_map
+use vars qw($do_www $really_no_www $no_map
 	    %save_route $multistrassen
 	    @coords @names @rbahn_coords
 	    $abbiege_optimierung $abbiege_penalty

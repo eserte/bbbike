@@ -5306,8 +5306,6 @@ sub handle_options {
 	    label => M"Cache für WWW-Karten verwenden", var => \$use_wwwcache],
 	  ) : ()
 	 ),
-	 ['wwwslow','!',1,
-	  label => M"WWW ist langsam", var => \$www_is_slow],
 	 ['proxy','=s', undef,
 	  label => M"HTTP-Proxy (Format: http://host:port/)", var => \$proxy],
 	 ['cachedir','=s',undef,
