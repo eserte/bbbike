@@ -92,7 +92,7 @@ sub convert {
 	die "Invalid argument to outout method";
     }
     $VERBOSE = $verbose if defined $verbose;
-    &init_msg($lang) if $lang;
+    init_msg($lang);
 
     my(@strnames) = $net->route_to_name($r->path);
     if (!defined $startname) {
