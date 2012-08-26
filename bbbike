@@ -18155,6 +18155,7 @@ sub show_route_strname {
     my $endb = $bf->Button(Name => 'end',
 			   -command => $withdraw_sub,
 			  );
+    $t->bind('<Escape>' => sub { $endb->invoke });
     push @bfb, $endb;
     push @bfb, $bf->Button
       (-text => M"Sichern (Text)",
