@@ -44,9 +44,8 @@ my @test_defs = (
 		 [qw/r 0 12792,8190 12918,8232 12960,8246/],
 		 # umkehren
 		 [qw/u 180 1131,12193 631,13750 1131,12193/],
-		 ## XXX TODO: what should be the correct result here?
-		 ## XXX 90° does not feel right...
-		 [qw/r 90 0,0 0,0 100,0/],
+		 # cannot be computed
+		 [undef, undef, qw/0,0 0,0 100,0/],
 		);
 
 plan tests => @test_defs * 4;

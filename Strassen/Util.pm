@@ -161,12 +161,11 @@ sub abbiegen {
     my($p0,$p1,$p2) = @_;
     my($x0,$y0, $x1,$y1, $x2,$y2) = (@$p0, @$p1, @$p2);
 
-    if ("@$p0" eq "@$p2") {
-	return ("u", 180);
-    }
+    return ("u", 180) if "@$p0" eq "@$p2";
 
-    # XXX kann beim acos anscheinend auftreten
-    local $SIG{FPE} = sub { warn "Caught SIGFPE!" };
+    my $a_len = strecke($p0, $p1);
+    my $b_len = strecke($p1, $p2);
+    return (undef, undef) if $a_len == 0 || $b_len == 0;
 
     my $a1 = $x1-$x0;
     my $a2 = $y1-$y0;
@@ -174,17 +173,12 @@ sub abbiegen {
     my $b2 = $y2-$y1;
     my $dir = ($a1*$b2-$a2*$b1 > 0 ? 'l' : 'r');
 
-    my $a_len = strecke($p0, $p1);
-    my $b_len = strecke($p1, $p2);
-
-    # XXX $a_len or $b_len == 0 is meaningless --- what should be done here
-    my $acos_arg = $a_len == 0 || $b_len == 0 ? 0 : ($a1*$b1+$a2*$b2)/($a_len*$b_len);
+    my $acos_arg = ($a1*$b1+$a2*$b2)/($a_len*$b_len);
     # Protect from floating point inaccuracies.
     # See also Math::Trig::acos_real (which is available since Math::Trig 1.12, bundled with perl 5.10.1 and newer)
     if    ($acos_arg >  1) { $acos_arg = 1 }
     elsif ($acos_arg < -1) { $acos_arg = -1 }
     my $angle = rad2deg(&$acos($acos_arg));
-    $angle = -$angle if $angle < 0; # if using old Math::Trig::acos
 
     ($dir, $angle);
 }
