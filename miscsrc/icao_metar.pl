@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# Copyright (C) 2009 Slaven Rezic. All rights reserved.
+# Copyright (C) 2009,2012 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -174,11 +174,13 @@ sub format_wettermeldung {
 	$wind_avg = sprintf "%.1f", mph_to_ms($m->WIND_MPH);
     }
 
+    my $pressure = $m->slp || $m->{ALT_HP} || ''; # XXX If missing: can slp (sea level pressure) be calculated from pressure?
+    
     join('|',
 	 $l[3].".".$l[4].".".$l[5],
 	 $l[2].".".$l[1],
 	 $m->TEMP_C+0,
-	 $m->ALT_HP+0,
+	 $pressure,
 	 $m->WIND_DIR_ABB,
 	 $wind_max,
 	 "", # XXX humidity is missing, calculate from dew point?
