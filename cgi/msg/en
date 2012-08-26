@@ -65,6 +65,7 @@ return
      "links" => "left",
      "rechts" => "right",
      "nach" => "after", # not towards!
+     'umdrehen' => 'turn around',
      "Teilstrecke" => "partial section",
      "angekommen" => "arrived",
      "Keine Route gefunden" => "No route found",
