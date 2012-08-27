@@ -1433,34 +1433,35 @@ sub new_search {
 sub nearest_street {
     my($self, $c1, $c2) = @_;
     my $rueckwaerts = 0;
-    my(@str);
-    return undef if !exists $self->{Net}{$c1};
-    @str = keys %{ $self->{Net}{$c1} };
-    if (!@str) {
+    my @neighbors = keys %{ $self->{Net}{$c1} };
+    if (!@neighbors) {
 	($c1, $c2) = ($c2, $c1);
 	$rueckwaerts = 1;
-	@str = keys %{ $self->{Net}{$c1} };
-	if (!@str) {
+	@neighbors = keys %{ $self->{Net}{$c1} };
+	if (!@neighbors) {
 	    warn "Kann weder $c1 noch $c2 in Net2Name finden"
-	      if $VERBOSE;
-	    return undef;
+		if $VERBOSE;
+	    return (undef, undef);
 	}
     }
 
-    my($x1,$y1) = split(/,/, $c1);
-    my($x2,$y2) = split(/,/, $c2);
+    my($x1,$y1) = split /,/, $c1;
+    my($x2,$y2) = split /,/, $c2;
 
-    my @winkel;
-
-    for(my $i = 0; $i <= $#str; $i++) {
-	my($xn,$yn) = split(/,/, $str[$i]);
+    my $best_winkel;
+    my $best_neighbor_i;
+    for my $neighbor_i (0 .. $#neighbors) {
+	my($xn,$yn) = split /,/, $neighbors[$neighbor_i];
 	my(undef,$w) = Strassen::Util::abbiegen([$x1,$y1], [$x2,$y2], [$xn,$yn]);
-	$w = 0 if !defined $w || $w =~ /nan/i; # ???
-	push @winkel, [$w, $i];
+	$w = 0 if !defined $w;
+	if (!defined $best_winkel || $best_winkel > $w) {
+	    $best_winkel = $w;
+	    $best_neighbor_i = $neighbor_i;
+	    last if $w == 0; # no improvements possible, shortcut
+	}
     }
 
-    @winkel = sort { $a->[0] <=> $b->[0] } @winkel;
-    my($pos,$rueckwaerts2) = $self->net2name($c1, $str[$winkel[0]->[1]]);
+    my($pos,$rueckwaerts2) = $self->net2name($c1, $neighbors[$best_neighbor_i]);
     ($pos, $rueckwaerts ^ $rueckwaerts2);
 }
 
