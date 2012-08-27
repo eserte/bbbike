@@ -1036,17 +1036,7 @@ userdel	q4::inwork 425,8766 490,8716
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_019098',
-         'until' => 1346025600,
-         'text' => 'Berliner Allee (Weißensee): Veranstaltung, Fahrtrichtung gesperrt stadteinwärts zwischen Pistoriusstr. und Langhansstr., 24.08.2012 10:00 Uhr bis 27.08.2012 02:00 Uhr ',
-         'from' => 1345708800,
-         'id' => 2275,
-         'data' => 'userdel	q4::temp; 14014,16106 13826,16026 13737,15994 13630,15956
-userdel	q4::temp; 13623,15954 13512,15909
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
