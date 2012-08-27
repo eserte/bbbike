@@ -314,6 +314,12 @@ sub route_to_name_1 {
 	my($winkel, $richtung);
 	if ($i+1 < $#{$route_ref}) {
 	    ($richtung, $winkel) = Strassen::Util::abbiegen(@{$route_ref}[$i .. $i+2]);
+	    # This usually happens if either first and second or second and third
+	    # points are the same. Make sure that no warnings happen. But it would
+	    # be better if the caller made sure that this never happens...
+	    if (!defined $winkel) {
+		($richtung, $winkel) = ('', 0);
+	    }
 	}
 	my $extra;
 	if (@strname &&
@@ -353,6 +359,7 @@ sub route_to_name_1 {
 		next if $neighbour eq $xy1 || $neighbour eq $xy3;
 		my($this_richtung, $this_winkel) = Strassen::Util::abbiegen(@{$route_ref}[$i .. $i+1],
 									    [split/,/,$neighbour]);
+		next if !defined $this_winkel;
 		next if ($this_richtung ne $richtung && $this_winkel >= 30);
 		next if $winkel < $this_winkel;
 		$extra->{ImportantAngle} = '!';
@@ -461,6 +468,12 @@ sub route_to_name_2 {
 	my($winkel, $richtung);
 	if ($i+1 < $#{$route_ref}) {
 	    ($richtung, $winkel) = Strassen::Util::abbiegen(@{$route_ref}[$i .. $i+2]);
+	    # This usually happens if either first and second or second and third
+	    # points are the same. Make sure that no warnings happen. But it would
+	    # be better if the caller made sure that this never happens...
+	    if (!defined $winkel) {
+		($richtung, $winkel) = ('', 0);
+	    }
 	}
 	my $extra;
 	if (@strname &&
@@ -500,7 +513,7 @@ sub route_to_name_2 {
 
     @strname;
 }
-# line 399 Generated_src.pm
+# line 406 Generated_src.pm
 sub reachable_1 {
     my($self, $coord) = @_;
     if (!exists $self->{Net}{$coord}) {
@@ -511,7 +524,7 @@ sub reachable_1 {
 	1;
     }
 }
-# line 399 Generated_src.pm
+# line 406 Generated_src.pm
 sub reachable_2 {
     my($self, $coord) = @_;
     if (!defined $self->{Net}[$self->{Coord2Index}{$coord}]) {
