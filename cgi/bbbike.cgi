@@ -1147,7 +1147,7 @@ if ($use_file_cache) {
 	if ($file_cache->exists_content($q)) {
 	    my($content, $meta) = $file_cache->get_content($q);
 	    if ($content && $meta) {
-warn "DEBUG: Cache hit for " . $q->query_string;
+		warn "DEBUG: Cache hit for " . $q->query_string if $debug;
 		http_header(@{ $meta->{headers} || [] });
 		print $content;
 		my_exit(0);
