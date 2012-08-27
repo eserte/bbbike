@@ -403,7 +403,14 @@ sub load {
 				       $coords_ref
 				       $search_route_points_ref
 				      ));
-		$compartment->rdo($file);
+		# XXX Ugly hack following: somehow Devel::Cover and
+		# Safe don't play well together. So I simply turn off
+		# Safe.pm if Devel::Cover usage is detected...
+		if ($Devel::Cover::VERSION) {
+		    do $file;
+		} else {
+		    $compartment->rdo($file);
+		}
 
 		die "Die Datei <$file> enthält keine Route."
 		    if (!defined $realcoords_ref);
