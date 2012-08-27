@@ -17,7 +17,7 @@ if (!-d $bbbike_aux_t) {
 
 my @tests = glob("$bbbike_aux_t/*.t");
 if (!@tests) {
-    plan skip_all => "No tets found in $bbbike_aux_t";
+    plan skip_all => "No tests found in $bbbike_aux_t";
     exit 0;
 }
 
