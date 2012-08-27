@@ -37,7 +37,17 @@ BEGIN {
     }
 }
 
-plan tests => 74;
+my $have_nowarnings;
+BEGIN {
+    $have_nowarnings = 1;
+    eval 'use Test::NoWarnings';
+    if ($@) {
+	$have_nowarnings = 0;
+	#warn $@;
+    }
+}
+
+plan tests => 74 + $have_nowarnings;
 
 print "# Tests may fail if data changes\n";
 
