@@ -32,6 +32,13 @@ use lib ("$FindBin::RealBin/..", "$FindBin::RealBin");
 use BBBikeTest qw(get_std_opts $do_display do_display check_cgi_testing);
 use BBBikeUtil qw(is_in_path);
 
+sub skip_mapserver_tests () {
+    my $skip_until = "20120901";
+    my $skip_host = 'cvrsnica.herceg.de';
+    do { require Sys::Hostname; Sys::Hostname::hostname() eq $skip_host } &&
+	do { require POSIX; POSIX::strftime("%FT%T", localtime) lt $skip_until };
+}
+
 check_cgi_testing;
 
 # XXX Missing:
@@ -111,13 +118,18 @@ for my $wapurl (@wap_url) {
 	like($resp->header('Content_Type'), qr|^text/vnd.wap.wml|, $url);
 	validate_wml($resp->content, $url);
 
-	$url = "$wapurl?startname=Dudenstr.&startbezirk=Kreuzberg&zielname=Sonntagstr.&zielbezirk=Friedrichshain&output_as=image";
-	$resp = $ua->get($url, @hdr);
-	ok $resp->is_success, $url
-	    or diag $resp->as_string;
-	like($resp->header('Content_Type'), qr|^image/|, $url);
-	is(length $resp->content > 0, 1, "Check for content in $url");
-	check_image($resp, $url);
+    SKIP: {
+	    skip "Skipping Mapserver-related tests", 4
+		if skip_mapserver_tests;
+
+	    $url = "$wapurl?startname=Dudenstr.&startbezirk=Kreuzberg&zielname=Sonntagstr.&zielbezirk=Friedrichshain&output_as=image";
+	    $resp = $ua->get($url, @hdr);
+	    ok $resp->is_success, $url
+		or diag $resp->as_string;
+	    like($resp->header('Content_Type'), qr|^image/|, $url);
+	    is(length $resp->content > 0, 1, "Check for content in $url");
+	    check_image($resp, $url);
+	}
 
 	$resp = $ua->get($surr_url, @hdr);
 	like($resp->header('Content_Type'), qr|^text/vnd.wap.wml|, $surr_url);
@@ -127,12 +139,17 @@ for my $wapurl (@wap_url) {
 	isnt($surr_image_url, "");
 	$surr_image_url = $absolute->($surr_image_url);
 
-	$resp = $ua->get($surr_image_url, @hdr);
-	ok $resp->is_success, $surr_image_url
-	    or diag $resp->as_string;
-	like($resp->header('Content_Type'), qr|^image/|, $surr_image_url);
-	is(length $resp->content > 0, 1, "Check for content in $surr_image_url");
-	check_image($resp, $surr_image_url);
+    SKIP: {
+	    skip "Skipping Mapserver-related tests", 4
+		if skip_mapserver_tests;
+
+	    $resp = $ua->get($surr_image_url, @hdr);
+	    ok $resp->is_success, $surr_image_url
+		or diag $resp->as_string;
+	    like($resp->header('Content_Type'), qr|^image/|, $surr_image_url);
+	    is(length $resp->content > 0, 1, "Check for content in $surr_image_url");
+	    check_image($resp, $surr_image_url);
+	}
 
 	$url = $wapurl . "?startname=dudenstr&startbezirk=&zielname=kleistpark&zielbezirk=;form=advanced";
 	$resp = $ua->get($url, @hdr);
@@ -168,6 +185,7 @@ sub validate_wml {
 
 sub check_image {
     my($resp, $url) = @_;
+
     if ($resp->header('Content_Type') eq 'image/vnd.wap.wbmp') {
 	check_wbmp($resp->content, $url);
 	do_display(\($resp->content), "wbmp") if $do_display;
