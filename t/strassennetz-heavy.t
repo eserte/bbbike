@@ -27,13 +27,14 @@ use Strassen::Core;
 use Strassen::StrassenNetz;
 my $make_net = eval 'use BBBikeXS; 1' ? 'make_net_XS' : 'make_net';
 
+use BBBikeTest qw(using_bbbike_test_data);
+
 plan 'no_plan';
 
-# Important: to avoid clashes with cached original data
-$Strassen::Util::cacheprefix = "test_b_de";
+using_bbbike_test_data;
 
 # Net with test data
-my $s_net = StrassenNetz->new(Strassen->new("$FindBin::RealBin/data/strassen"));
+my $s_net = StrassenNetz->new(Strassen->new("strassen"));
 $s_net->$make_net;
 
 {

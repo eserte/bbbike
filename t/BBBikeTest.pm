@@ -621,16 +621,28 @@ sub is_float ($$;$) {
     }
 }
 
-# Call this function whenever you make use of the data set in t/data.
-sub using_bbbike_test_data () {
+sub _update_bbbike_test_data () {
     my $make = $^O =~ m{bsd}i ? "make" : is_in_path("freebsd-make") ? "freebsd-make" : "pmake";
     # -f BSDmakefile needed for old pmake (which may be found in Debian)
-    system("cd $testdir/data && $make -f BSDmakefile");
+    system("cd $testdir/data-test && $make -f BSDmakefile");
     Test::More::diag("Error running make, expect test failures...") if $? != 0;
 }
 
+# Call this function whenever you make use of the data set in t/data.
+sub using_bbbike_test_data () {
+    _update_bbbike_test_data;
+    # Note: no local here!
+    $Strassen::Util::cacheprefix = "test_b_de";
+    @Strassen::datadirs = ("$testdir/data-test");
+    if (0) { # cease -w
+	$Strassen::Util::cacheprefix = $Strassen::Util::cacheprefix;
+	@Strassen::datadirs = @Strassen::datadirs;
+    }
+}
+
+# Call this function whenever you make use of the bbbike-test.cgi script.
 sub using_bbbike_test_cgi () {
-    using_bbbike_test_data;
+    _update_bbbike_test_data;
 }
 
 sub check_cgi_testing () {

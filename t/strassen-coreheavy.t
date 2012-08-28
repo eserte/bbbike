@@ -31,6 +31,8 @@ BEGIN {
     }
 }
 
+use BBBikeTest qw(using_bbbike_test_data);
+
 my $v;
 GetOptions("v" => \$v)
     or die "usage: $0 [-v]";
@@ -47,9 +49,11 @@ die if !$tempdatadir;
 {
     # Important: to avoid clashes with cached original data
     # This is the same prefix as in cgi/bbbike-test.cgi.config
-    local $Strassen::Util::cacheprefix = $Strassen::Util::cacheprefix = "test_b_de";
+    local $Strassen::Util::cacheprefix;
+    local @Strassen::datadirs;
+    using_bbbike_test_data;
 
-    my $s = Strassen->new("$FindBin::RealBin/data/strassen");
+    my $s = Strassen->new("strassen");
 
     {
 	my @res = $s->choose_street('Dudenstr.');

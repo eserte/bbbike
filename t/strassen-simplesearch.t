@@ -8,8 +8,10 @@
 use strict;
 no warnings 'qw';
 use FindBin;
-use lib ("$FindBin::RealBin/..",
+use lib (
+	 "$FindBin::RealBin/..",
 	 "$FindBin::RealBin/../lib",
+	 $FindBin::RealBin,
 	);
 
 BEGIN {
@@ -27,9 +29,9 @@ use Getopt::Long;
 use Strassen::Core;
 use Strassen::StrassenNetz;
 
-# Important: to avoid clashes with cached original data
-# This is the same prefix as in cgi/bbbike-test.cgi.config
-$Strassen::Util::cacheprefix = "test_b_de";
+use BBBikeTest qw(using_bbbike_test_data);
+
+using_bbbike_test_data;
 
 plan tests => 18;
 
@@ -39,7 +41,7 @@ GetOptions("bbd" => \$do_bbd)
 
 use_ok 'Strassen::SimpleSearch', 'simple_search';
 
-my $s = Strassen->new("$FindBin::RealBin/data/strassen");
+my $s = Strassen->new("strassen");
 my $net = StrassenNetz->new($s);
 $net->make_net;
 

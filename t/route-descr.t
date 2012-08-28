@@ -33,9 +33,8 @@ BEGIN {
 plan 'no_plan';
 
 using_bbbike_test_data;
-local $Strassen::Util::cacheprefix = $Strassen::Util::cacheprefix = "test_b_de";
 
-my $net = StrassenNetz->new(Strassen->new("$FindBin::RealBin/data/strassen"));
+my $net = StrassenNetz->new(Strassen->new("strassen"));
 $net->make_net;
 my %stdargs = (-net => $net);
 

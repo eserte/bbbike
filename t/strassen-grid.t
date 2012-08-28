@@ -17,7 +17,9 @@ use strict;
 use FindBin;
 use lib ("$FindBin::RealBin/..",
 	 "$FindBin::RealBin/../lib",
-	 "$FindBin::RealBin/../data");
+	 "$FindBin::RealBin/../data",
+	 $FindBin::RealBin,
+	);
 use Strassen::Core;
 use Strassen::Kreuzungen;
 use Getopt::Long;
@@ -32,6 +34,8 @@ BEGIN {
     }
 }
 
+use BBBikeTest qw(using_bbbike_test_data);
+
 plan tests => 36;
 
 my %opt;
@@ -39,11 +43,9 @@ GetOptions(\%opt, "v!") or die "usage!";
 
 Strassen::set_verbose($opt{v});
 
-# Important: to avoid clashes with cached original data
-# This is the same prefix as in cgi/bbbike-test.cgi.config
-local $Strassen::Util::cacheprefix = $Strassen::Util::cacheprefix = "test_b_de";
+using_bbbike_test_data;
 
-my $test_strassen_file = "$FindBin::RealBin/data/strassen";
+my $test_strassen_file = "strassen";
 
 for my $use_cache (1, 0) {
     my $cache_text = $use_cache ? "with cache" : "no cache";
