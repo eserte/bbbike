@@ -320,7 +320,9 @@ sub _any_image {
     $draw->draw_route;
     if (defined $convert_to) {
 	$draw->{ImageType} = $convert_to;
-	print $cgi->header(-type => $draw->mimetype);
+	print $cgi->header(-type => $draw->mimetype,
+			   -charset => '', # CGI 3.52..3.55 writes charset for non text/* stuff, see https://rt.cpan.org/Public/Bug/Display.html?id=67100
+			  );
 
 	my $temp = "/tmp/wapbbbike." . time . ".$$";
 	open(FH, ">$temp") or die "Can't write to $temp: $!";
@@ -355,7 +357,9 @@ sub _any_image {
 	}
 	unlink $temp;
     } else {
-	print $cgi->header(-type => $draw->mimetype);
+	print $cgi->header(-type => $draw->mimetype,
+			   -charset => '', # CGI 3.52..3.55 writes charset for non text/* stuff, see https://rt.cpan.org/Public/Bug/Display.html?id=67100
+			  );
 	$draw->flush;
     }
 
