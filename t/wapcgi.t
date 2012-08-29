@@ -32,12 +32,8 @@ use lib ("$FindBin::RealBin/..", "$FindBin::RealBin");
 use BBBikeTest qw(get_std_opts $do_display do_display check_cgi_testing);
 use BBBikeUtil qw(is_in_path);
 
-sub skip_mapserver_tests () {
-    my $skip_until = "20120901";
-    my $skip_host = 'cvrsnica.herceg.de';
-    do { require Sys::Hostname; Sys::Hostname::hostname() eq $skip_host } &&
-	do { require POSIX; POSIX::strftime("%FT%T", localtime) lt $skip_until };
-}
+# Currently there's no reason to skip mapserver tests
+sub skip_mapserver_tests () { return 0 }
 
 check_cgi_testing;
 
