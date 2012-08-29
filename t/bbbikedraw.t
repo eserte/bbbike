@@ -48,22 +48,13 @@ BEGIN {
 		  BBBikeGoogleMaps
 		 );
 
-    if ($^O ne 'linux' || `lsb_release --id --short 2>/dev/null` !~ m{debian}i) {
+    if (is_in_path("shp2img") && `shp2img -v` =~ m{\bOUTPUT=PDF\b}) {
 	push @modules, 'MapServer/pdf';
     } else {
-	diag('Skipping MapServer/pdf tests, no support on Debian');
-	# because pdflib is considered non-free in Debian
-    }
-
-    # XXX Temporarily disable mapserver tests on cvrsnica
-    {
-	my $skip_until = "20120901";
-	my $skip_host = 'cvrsnica.herceg.de';
-	if (do { require Sys::Hostname; Sys::Hostname::hostname() eq $skip_host } &&
-	    do { require POSIX; POSIX::strftime("%FT%T", localtime) lt $skip_until }) {
-	    diag("Skipping Mapserver-related tests on $skip_host until $skip_until");
-	    @modules = grep { !/^MapServer/ } @modules;
-	}
+	diag('Skipping MapServer/pdf tests, Mapserver was built without pdflib');
+	# pdflib is considered non-free in Debian; and I deliberately
+	# compiled Mapserver without pdflib on cvrsnica because of
+	# spurious crashes
     }
 }
 
