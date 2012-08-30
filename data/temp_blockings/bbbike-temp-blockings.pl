@@ -20044,7 +20044,7 @@ EOF
 ## früher:
 #       source_id => 'INKO_093369',
        data  => <<EOF,
-#: last_checked: 2012-08-23
+#: last_checked: 2012-08-30
 #: next_check: 2012-09-23
 userdel	q4::inwork; 9164,12172 9373,12197
 EOF
@@ -20576,6 +20576,16 @@ EOF
        data  => <<EOF,
 #: last_checked: 2012-08-24
 userdel	q4::inwork 11615,15114 11595,15058
+EOF
+     },
+     { from  => 1346282867, # 2012-08-30 01:27
+       until => 1347227999, # 2012-09-09 23:59
+       text  => 'Gauklerfest, Straßen am Schinkelplatz gesperrt, vom 30. August bis 09. September 2012',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::temp 9994,12368 10008,12274 10010,12259 10035,12209
+userdel	2::temp 10008,12274 10058,12290 9996,12401
+userdel	2::temp 10091,12232 10058,12290
 EOF
      },
     );

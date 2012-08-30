@@ -1412,3 +1412,6 @@ Treskowstr. -> Prenzlauer Promenade: Mittelstreifen	3::igndisp 12336,17207 11893
 Voigtstr. - Pettenkoferstr.	1 14862,12777 14834,12767
 Gryphius/Boxhagener Str.	3 14550,11732 14513,11657 14496,11620
 Gryphius/Boxhagener Str.	3 14550,11732 14513,11657 14561,11600
+Straßenbahntrasse	3nocross::ignrte 10387,12760 10360,12793 10309,12854
+St.-Wolfgang-Str. -> Spandauer Str.: Straßenbahntrasse	3::igndisp 10285,12744 10360,12793 10309,12854
+Spandauer Str. -> St.-Wolfgang-Str.: Straßenbahntrasse	3::igndisp 10387,12760 10360,12793 10285,12744

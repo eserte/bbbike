@@ -1893,6 +1893,9 @@ Wilhelmstr. -> Kerstenweg: Mittelstreifen	3::igndisp -3803,13464 -3813,13404 -37
 Mittelstreifen	3nocross::ignrte -4882,12061 -4637,11982 -4500,11937
 Heerstr. -> Winzerstr.: Mittelstreifen	3::igndisp -4500,11937 -4637,11982 -4687,11885
 Winzerstr. -> Heerstr.: Mittelstreifen	3::igndisp -4687,11885 -4637,11982 -4882,12061
+Straßenbahntrasse	3nocross::ignrte 10437,12703 10387,12760 10360,12793
+Spreegasse -> Spandauer Str.: Straßenbahntrasse	3::igndisp 10309,12700 10387,12760 10360,12793
+Spandauer Str. -> Spreegasse: Straßenbahntrasse	3::igndisp 10437,12703 10387,12760 10309,12700
 abgeschlossenes Tor	3 8235,20109 8237,20098 8258,19983
 abgeschlossenes Tor	3 8258,19983 8237,20098 8235,20109
 abgeschlossenes Tor	3 8288,20128 8291,20112 8315,19993

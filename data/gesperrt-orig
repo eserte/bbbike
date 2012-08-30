@@ -286,7 +286,7 @@ Gustav-Müller-Str.	1 7643,8634 7642,8815
 Gustav-Müller-Platz	1 7644,8560 7614,8599 7643,8634 7682,8598 7644,8560
 #XXX del --- #: XXX Wird die Einbahnstraßenregelung hier aufgehoben? --- #: last_checked: 2012-03-06 --- #: next_check: 2012-04-20 --- Niederlagstr.	1:q3 9972,12184 9961,12273
 #Niederlagstr.	1 9943,12364 9934,12418
-#: last_checked: 2012-08-25
+#: last_checked: 2012-08-30
 #: next_check: 2013-01-01
 #: XXX danach evtl. wieder Einbahnstraße wiederherstellen, siehe oben
 Niederlagstr.	2:inwork 9943,12364 9934,12418
@@ -1445,6 +1445,7 @@ Kiepenheuerallee: Straßenbahntrasse	3nocross -13311,462 -13203,434 -13157,394
 Wilhelmstr.: Mittelstreifen	3nocross -3824,13350 -3813,13404 -3803,13464
 Heerstr.: Mittelstreifen	3nocross -4882,12061 -4637,11982 -4500,11937
 #: by: ^^^
+Spandauer Str.: Straßenbahntrasse	3nocross 10437,12703 10387,12760 10360,12793
 abgeschlossenes Tor	3 * 8237,20098 *
 abgeschlossenes Tor	3 * 8291,20112 *
 #
@@ -2072,7 +2073,7 @@ Drängelgitter	BNP:3::trailer=10 49739,-90894
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
-#: last_checked: 2012-08-23
+#: last_checked: 2012-08-30
 #: next_check: 2012-11-01
 #: XXX nach den Bauarbeiten vielleicht besserer Asphalt? -> qualitaet_s-orig
 #: XXX siehe auch Eintrag in handicap_s-orig
@@ -2116,7 +2117,7 @@ B96a - Flughafen Berlin-Brandenburg: Abschnitt führt durch Sicherheitsbereich de
 #: next_check: 2012-10-15
 Am Pankepark: Bauarbeiten, gesperrt	2:inwork 8152,14130 8246,14184
 # 
-#: last_checked: 2012-08-25
+#: last_checked: 2012-08-30
 #: next_check: 2012-10-15
 Scharrenstr.: wegen Bauarbeiten komplett gesperrt	2:inwork 10418,12016 10480,12077
 # 
@@ -2159,8 +2160,8 @@ Tegeler Hafen: Weg gesperrt	2 1630,20731 1668,20670 1687,20645 1697,20623 1721,2
 # 
 # XXX del --- laut http://www.stadtentwicklung.berlin.de/bauen/strassenbau/a115_avus/de/bau.shtml?y=20120731 seit April schon offen! --- #: by: somebody via phone call ---#: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/a115_avus/de/bau.shtml --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1106/nachricht4396.html---#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1110/nachricht4504.html---#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1201/nachricht4557.html---#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1206/nachricht4691.html---#: by: INKO_109786---#: last_checked: 2012-07-05---#: next_check: 2012-11-15---Hüttenweg: Sperrung wegen Bau an der Autobahn, wahrscheinlich bis Ende November 2012	2:inwork -739,6838 -927,6888
 # 
-#: last_checked: 2012-04-28
-#: next_check: 2012-07-15
+#: last_checked: 2012-08-30
+#: next_check: 2013-01-15
 #: note: abgeschlossener Zaun
 Helga-Hahnemann-Str.: gesperrt	2:inwork 9415,13315 9408,13282
 #
@@ -2181,7 +2182,7 @@ Bebelplatz: Bauarbeiten an der Staatsoper	2:inwork 9743,12239 9702,12307 9734,12
 #: next_check: ^^^
 #: last_checked: ^^^
 # 
-#: last_checked: 2012-08-25
+#: last_checked: 2012-08-30
 #: next_check: 2013-01-15
 Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 

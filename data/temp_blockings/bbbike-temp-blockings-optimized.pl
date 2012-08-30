@@ -1163,7 +1163,7 @@ userdel	q4::inwork; -1872,24336 -1790,24260 -1627,24105 -1367,23853 -1286,23753 
          'text' => 'Behrenstr. (Mitte): Fahrbahn Richtung Friedrichstr. zwischen Glinkastr. und Friedrichstr. gesperrt',
          'from' => undef,
          'id' => 2317,
-         'data' => '#: last_checked: 2012-08-23
+         'data' => '#: last_checked: 2012-08-30
 #: next_check: 2012-09-23
 userdel	q4::inwork; 9164,12172 9373,12197
 ',
@@ -1458,6 +1458,17 @@ userdel	2::night 14838,11410 14776,11400
 userdel	q4::inwork 11615,15114 11595,15058
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => 1347227999,
+         'text' => 'Gauklerfest, Straßen am Schinkelplatz gesperrt, vom 30. August bis 09. September 2012',
+         'from' => 1346282867,
+         'id' => 2376,
+         'data' => 'userdel	2::temp 9994,12368 10008,12274 10010,12259 10035,12209
+userdel	2::temp 10008,12274 10058,12290 9996,12401
+userdel	2::temp 10091,12232 10058,12290
+',
+         'type' => 'gesperrt'
        }
      
 );
