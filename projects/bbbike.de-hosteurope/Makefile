@@ -515,7 +515,7 @@ prepare-bbbike-dist-prog-bbbike-t:
 	    cp -pf ${BBBIKE_ROOT_DIR}/t/$f ${CURDIR}/BBBike/t/$f; \
 	fi
 .endfor
-	rsync -av --cvs-exclude ${BBBIKE_ROOT_DIR}/t/data/ ${CURDIR}/BBBike/t/data/
+	rsync -av --cvs-exclude ${BBBIKE_ROOT_DIR}/t/data-test/ ${CURDIR}/BBBike/t/data-test/
 .for f in ${TESTS_SERVER_ON_REMOTE}
 	if [ ! -e ${CURDIR}/BBBike/t/$f -o ${CURDIR}/t/$f -nt ${CURDIR}/BBBike/t/$f ] ; then \
 	    cp -pf ${CURDIR}/t/$f ${CURDIR}/BBBike/t/$f; \
