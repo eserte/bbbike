@@ -18287,9 +18287,9 @@ EOF
 userdel	q4::temp 10240,18193 10320,18197 10469,18262 10487,18270 10660,18345 10680,18380 10609,18384 10567,18366 10502,18338 10463,18321 10449,18315 10281,18241
 EOF
      },
-     { from  => 1315432800, # 1284001200, # 2010-09-09 05:00 # PERIODISCH!
-       until => 1315778400, # 1284332400, # 2010-09-13 01:00
-       text  => 'Turmstraße (Moabit): Veranstaltung, Straße vollständig gesperrt (9. bis 11. September 2011) in beiden Richtungen zwischen Stromstr. und Waldstr.',
+    { from  => 1346295600, # 2012-08-30 05:00 # PERIODISCH!
+       until => 1346626800, # 2012-09-03 01:00
+       text  => 'Turmstraße (Moabit): Veranstaltung, Straße vollständig gesperrt (31.08.2012 bis 02.09.2012) in beiden Richtungen zwischen Stromstr. und Waldstr.',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp 5368,13406 5560,13382 5705,13359 5857,13342 5956,13330 6011,13330 6112,13327 6228,13324
@@ -19944,8 +19944,8 @@ userdel	q4::inwork 8634,13588 8626,13641 8619,13689
 EOF
      },
      { from  => 1314604800, # 2011-08-29 10:00
-       until => 1346425200, # 2012-08-31 17:00
-       text  => 'Kastanienallee (Prenzlauer Berg): Bauarbeiten zwischen Oderberger Str. und Schönhauser Allee, Fahrbahn manchmal gesperrt, bis 31.08.2012 ',
+       until => 1347721200, # 2012-09-15 17:00
+       text  => 'Kastanienallee (Prenzlauer Berg): Bauarbeiten zwischen Oderberger Str. und Schönhauser Allee, Fahrbahn manchmal gesperrt, bis 15.09.2012 ',
        type  => 'handicap',
        source_id => 'IM_017746',
        data  => <<EOF,
