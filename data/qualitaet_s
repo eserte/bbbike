@@ -540,7 +540,7 @@ Schloﬂstr.: asphaltiert	Q0 3117,11852 3103,11968
 Zillestr.: Kopfsteinpflaster	Q2 3268,11834 3117,11852
 Am Graben: Kopfsteinpflaster	Q2 -4755,7736 -4839,7791
 Imchenallee: holpriger Weg	Q1 -6879,4775 -6990,4531 -7025,4410 -7102,4246 -7195,4194 -7263,4214 -7561,4191 -7650,4222 -7714,4279
-Tegeler Weg: Kopfsteinpflaster	Q2 7467,14632 7263,14873
+Tegeler Weg: Kopfsteinpflaster	Q2 7464,14636 7263,14873
 Tegeler Weg: Asphalt	Q0 7263,14873 7199,14978 7187,15000 7131,15109 7085,15226 7020,15314
 Lynarstr.: Kopfsteinpflaster	Q2 7152,14779 7263,14873 7436,14964 7629,15078 7754,15160
 Kiautschoustr.: Kopfsteinpflaster	Q2 7199,14978 7007,14911 6853,14854 6837,14848
@@ -634,7 +634,8 @@ Neuwedeller Str.: Kopfsteinpflaster	Q2 12327,7847 12335,7770
 Morusstr.: Kopfsteinpflaster	Q2 12478,7878 12520,7694
 Leinestr.: Kopfsteinpflaster	Q2 12122,7553 11923,7516 11797,7492 11671,7464 11553,7437
 Auguststr.: Kopfsteinpflaster	Q2 10307,13600 10263,13594 10142,13556 10049,13528 10026,13521
-Kleine Rosenthaler Str.: m‰ﬂiger, teilweise auch schlechter Asphalt	Q2 10310,13692 10307,13600 10308,13575 10311,13537
+Kleine Rosenthaler Str.: Asphalt	Q0 10310,13692 10307,13600
+Kleine Rosenthaler Str.: Asphalt	Q0 10307,13600 10308,13575 10311,13537
 Magazinstr.: Kopfsteinpflaster, OK	Q1 11558,12588 11329,12497
 Saarbr¸cker Str.: Asphalt, etwas br¸chig	Q0 10895,13961 10924,13940 10969,13914 11060,13865 11134,13820 11250,13655
 Heinrich-Roller-Str.: Kopfsteinpflaster	Q2 11435,14023 11616,13911
@@ -854,6 +855,7 @@ B‰kestr.: m‰ﬂiger Asphalt	Q1 -7088,-1074 -7051,-1221
 Dircksenstr: Kopfsteinpflaster	Q2 10706,13043 10595,13100
 Dircksenstr: Asphalt	Q0 10595,13100 10445,13091 10349,13043
 Hildegard-Jadamowitz-Str.: Kopfsteinpflaster	Q1 13198,12311 13520,12264
+Hildegard-Jadamowitz-Str.: Asphalt	Q0 13520,12264 13555,12259 13599,12253
 Hildegard-Jadamowitz-Str.: Kopfsteinpflaster	Q2 13599,12253 13659,12193
 Am Karlsbad: gutes Kopfsteinpflaster	Q1 7968,11048 8011,11014 8027,11000
 Stallschreiberstr.: Beton/Asphalt	Q0 10678,11172 10620,11244
@@ -1476,7 +1478,7 @@ Am Berlin-Spandauer Schiffahrtskanal: Kopfsteinpflaster	Q2 8337,13541 8248,13659
 Am Berlin-Spandauer Schiffahrtskanal: glatter Belag	Q0 8248,13659 8101,13901 8119,13912
 Uferweg: Verbundsteinpflaster	Q1 8011,14096 7994,14102 7967,14161 7967,14200
 Uferweg: Asphalt f¸r Radfahrer, Kopfsteinpflaster f¸r Fuﬂg‰nger	Q0 7967,14200 7807,14441
-(Uferweg am Nordhafen): Asphalt	Q0 7753,14528 7695,14545 7498,14658
+(Uferweg am Nordhafen): Asphalt	Q0 7753,14528 7695,14545 7496,14660
 Gabrielenstr.: m‰ﬂiger Asphalt	Q1 1715,20766 1687,20782 1630,20731 1518,20615
 Gabrielenstr.: guter Asphalt	Q0 1518,20615 1407,20563
 Gabrielenstr.: m‰ﬂiger Asphalt	Q1 1407,20563 1127,20434 1106,20424 989,20366
@@ -2337,7 +2339,7 @@ Brebacher Weg: Asphalt	Q0 21573,12140 21562,12088 21550,12038 21550,11939
 P¸ttlinger Str.: Asphalt	Q0 21283,12066 21281,12042 21275,11942
 P¸ttlinger Str.: Beton	Q1 21275,11942 21273,11882
 Frankenholzer Weg: Beton	Q0 21152,11945 21275,11942
-Frankenholzer Weg: Asphalt	Q1 21275,11942 21550,11939
+Frankenholzer Weg: Asphalt	Q1 21275,11942 21373,11941 21550,11939
 Park Biesdorf: Parkweg	Q1 21150,11925 21132,11943 21100,11960
 Park Biesdorf: asphaltiert	Q0 21100,11960 20862,12027 20810,12031
 Albert-Brodersen-Allee: asphaltiert	Q0 20862,12027 20836,11768
@@ -7226,18 +7228,27 @@ Lehrter Str. [6-8]: Kopfsteinpflaster	Q2 7630,13584 7735,13626
 (Lehrter Str. - Fritz-Schloﬂ-Park): Asphalt	Q0 7630,13584 7451,13504
 (Lehrter Str. - Fritz-Schloﬂ-Park): Verbundsteinpflaster	Q1 7451,13504 7306,13418
 Fritz-Schloﬂ-Park: Asphalt	Q0 7306,13418 7241,13361 7193,13354 7136,13387 7109,13418
-Fritz-Schloﬂ-Park: Asphalt	Q0 7155,13481 7138,13441 7109,13418 7069,13381
-Fritz-Schloﬂ-Park: Parkweg	Q1 7109,13418 7031,13566
+Fritz-Schloﬂ-Park: Asphalt	Q0 7178,13708 7191,13679 7165,13659 7144,13609 7132,13503 7122,13452 7109,13418 7069,13381
+Fritz-Schloﬂ-Park: wassergebundene Decke	Q1 7178,13708 7097,13834
+Fritz-Schloﬂ-Park: Asphalt	Q0 7097,13834 7035,13808 7022,13776 7029,13742 7071,13690 7056,13584
+Fritz-Schloﬂ-Park: wassergebundene Decke	Q1 7056,13584 7132,13503 7195,13430
+Fritz-Schloﬂ-Park: wassergebundene Decke	Q1 7195,13430 7255,13444 7266,13500 7144,13609
+Fritz-Schloﬂ-Park: Parkweg	Q1 7109,13418 7021,13560
+Fritz-Schloﬂ-Park: Asphalt mit Wurzelsch‰den	Q1 6988,13539 7021,13560 7056,13584 6997,13694 6993,13763 6966,13822 6919,13853 6890,13900
 (Turmstr. - Fritz-Schloﬂ-Park): Asphalt	Q0 7069,13381 7136,13387
 (Weg durch den Geschichtspark): Kopfsteinpflaster	Q2 7840,13296 7822,13323
 (Weg durch den Geschichtspark): Beton	Q0 7822,13323 7811,13344
 (Weg durch den Geschichtspark): Asphalt	Q0 7811,13344 7784,13392
 (Weg durch den Geschichtspark): wassergebundene Decke	Q1 7784,13392 7767,13431
 (Weg durch den Geschichtspark): Asphalt	Q0 7767,13431 7732,13484 7651,13447
-(Ingeborg-Drewitz-Allee - Alt-Moabit): Kopfsteinpflaster, schmaler Streifen mit Gehwegplatten	Q1 7592,12730 7620,12757 7628,12767 7776,12943
-(Weg am Moabiter Werder): Asphalt	Q0 7628,12767 7652,12771 7707,12813 7787,12918 7813,12961 7799,13019
+(Ingeborg-Drewitz-Allee - Alt-Moabit): Kopfsteinpflaster, schmaler Streifen mit Gehwegplatten	Q1 7592,12730 7620,12757 7776,12943
+(Weg am Moabiter Werder): Asphalt	Q0 7649,12758 7707,12813 7787,12918 7813,12961 7799,13019
 (Elisabeth-Abegg-Str. - Weg am Moabiter Werder): Parkweg	Q1 7837,12860 7838,12870 7827,12880 7812,12884 7809,12901 7801,12910
 (Elisabeth-Abegg-Str. - Weg am Moabiter Werder): Metallrampe	Q3 7801,12910 7788,12907 7787,12918
+Emma-Herwegh-Str.: Verbundsteinpflaster	Q0 7791,13166 7595,12980
+Fritz-Schloﬂ-Park: wassergebundene Decke	Q1 7263,13331 7241,13361
+Feldzeugmeisterstr.: Asphalt	Q0 6917,13917 6818,14102
+Deportationsweg: Kopfsteinpflaster	Q2 6920,14365 6857,14488
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3777,16532 -3870,16527 -3962,16527 -4096,16525
 Straﬂe 77 (Franzˆsisch Buchholz): m‰ﬂiger Asphalt	Q1 12836,22763 12608,22943
 Straﬂe 77 (Franzˆsisch Buchholz): unbefestigte Straﬂe	Q2 12608,22943 12589,22948 12526,22972
@@ -8791,7 +8802,7 @@ R‰uschstr.: Asphalt	Q0 3089,19869 3252,19658 3455,19389
 Maximilianstr. (Rummelsburg): m‰ﬂiges Kopfsteinpflaster	Q2 16334,10958 16381,11080 16424,11188 16468,11297
 Unterbaumstr.: Kopfsteinpflaster	Q2 8486,12918 8502,12935 8525,12958 8556,12989
 Unterbaumstr.: Asphalt	Q0 8556,12989 8581,13013
-Nordufer: Verbundsteinpflaster	Q1 7212,14738 7433,14656 7467,14632
+Nordufer: Verbundsteinpflaster	Q1 7212,14738 7433,14656 7464,14636
 Mˆnkeberger Str.: asphaltiert	Q0 9475,16307 9582,16296 9725,16281
 Ellerbeker Str.: Kopfsteinpflaster	Q2 9725,16281 9727,16188
 (Schwartzkopffstr. - Gartenstr.): Beton	Q0 8825,14401 8913,14485
@@ -12096,7 +12107,7 @@ Weydemeyerstr.: m‰ﬂiger Beton, Fugen	Q2 11725,12809 11805,12760 11933,12701 1196
 (Berolinastr.): Verbundsteine	Q1 11885,12905 11952,12871
 (Berlolinastr.): Gehwegplatten	Q0 11885,12905 11906,12947 11921,12990 11983,12949
 (Berolinastr.): Gehwegplatten	Q0 11921,12990 11865,13027 11815,13045 11719,13088
-(Berolinastr. - Mollstr.): Gehwegplatten	Q0 11865,13027 11874,13048 11881,13072
+(Berolinastr. - Mollstr.): Gehwegplatten	Q0 11865,13027 11874,13048 11905,13069
 (Berolinastr. - Mollstr.): Beton/Verbundsteine	Q1 11608,12985 11681,13161
 (Lichtenberger Str.): Verbundsteine	Q1 12054,12903 12039,12675
 Barnimstr.: Beton	Q0 11561,13451 11608,13417 11655,13370 11793,13247
@@ -12446,7 +12457,7 @@ Ingeborg-Drewitz-Allee: Asphalt	Q0 7343,12758 7367,12729 7418,12725 7538,12729
 Ingeborg-Drewitz-Allee: Asphalt	Q0 7365,12775 7388,12746 7539,12754
 Ingeborg-Drewitz-Allee: Asphalt	Q0 7538,12729 7539,12754
 (Ingeborg-Drewitz-Allee): Gehwegplatten	Q0 7538,12729 7592,12730 7781,12732
-(Ingeborg-Drewitz-Allee): Gehwegplatten	Q0 7539,12754 7620,12757 7849,12767
+(Ingeborg-Drewitz-Allee): Gehwegplatten	Q0 7539,12754 7620,12757 7649,12758 7849,12767
 (Ingeborg-Drewitz-Allee): Gehwegplatten	Q0 7322,12735 7341,12709
 Spenerstr.: Kopfsteinpflaster	Q2 6877,12607 6907,12777 6966,13075
 (Joachim-Karnatz-Allee - Ingeborg-Drewitz-Allee): Gehwegplatten	Q0 7415,12590 7418,12725

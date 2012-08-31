@@ -24,8 +24,8 @@ Friedrichstr.(Mitte): Fahrbahn wegen Bauarbeiten gesperrt, Ausweichen auf Gehweg
 #: next_check: 2013-12-31
 Charlottenstr.: Einbahnstraﬂenregelung	q4::inwork; 9475,12365 9487,12263 9492,12214
 # 
-#: last_checked: 2012-07-05
-#: next_check: 2012-07-20
+#: last_checked: 2012-08-31
+#: next_check: 2012-10-20
 Gartenstr.: Einbahnstraﬂe zwischen Invalidenstr. und Tieckstr. (Bauarbeiten)	q4::inwork; 9510,13823 9383,13978
 # 
 #: last_checked: 2012-07-13
@@ -464,7 +464,7 @@ Uferweg, Mentzelpark: Fuﬂg‰nger, eng	q3 21761,4979 21821,4918 21834,4889
 #: next_check: 2012-03-15
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20120515.0900.370132.html (teilweise fertig)
 Heinrich-Lassen-Park: Fuﬂg‰nger	q2 6664,8787 6740,8682 6815,8691 6912,8617
-(Uferweg am Nordhafen): Fuﬂg‰nger	q1 7753,14528 7695,14545 7498,14658
+(Uferweg am Nordhafen): Fuﬂg‰nger	q1 7753,14528 7695,14545 7496,14660
 An der Malche: teilweise eng und kurvig	q1 1106,20424 1032,20580 895,20523 834,20610 625,20738
 Am Friedhof: recht enger Radweg	q1 6380,17836 6376,17687 6347,17381
 Gerlachsheimer Weg: Fuﬂg‰nger	q2 13151,7914 13251,7972
@@ -1498,7 +1498,7 @@ Wentowsteig: enge Straﬂe mit parkenden Autos	q1 6924,20695 6945,20805 6955,20859
 #: by: Johannes Nerger:
 (Schˆnholzer Heide, parallel zur Friesenstr.): Fuﬂg‰nger	q1 8765,19288 8784,19253 8954,19151 9446,18855 9475,18862
 #: by: Felix Beutler:
-Nordufer: teilweise sehr schmaler Radweg	q1 7212,14738 7433,14656 7467,14632
+Nordufer: teilweise sehr schmaler Radweg	q1 7212,14738 7433,14656 7464,14636
 #: by: Jˆrn Busch:
 (Weg am Nordgraben): schmaler Weg, m‰ﬂiger Fuﬂg‰ngerverkehr	q2 3563,20589 3537,20624 3470,20683 3391,20746 3312,20789 3152,20852 3094,20905 3062,20923 3032,20930 2919,20910 2570,20837
 # 
@@ -1622,11 +1622,12 @@ Bissingzeile: Einspurig, eng bei Gegenverkehr	q1 7959,10910 8113,10786
 (Karl-Marx-Allee - Berolinastr.): Fuﬂg‰nger	q1 11419,12944 11362,12964
 (Karl-Marx-Allee - Berolinastr.): Fuﬂg‰nger	q1 11600,12857 11589,12768
 (Berolinastr.): Fuﬂg‰nger	q1 11844,12926 11885,12905 11952,12871
+#: XXX_prog BS (am ˆstlichen Ende)
 (Berlolinastr.): Fuﬂg‰nger	q1 11885,12905 11906,12947 11921,12990 11983,12949
 (Berolinastr.): Fuﬂg‰nger	q1 11921,12990 11865,13027
 (Berolinastr.): Fuﬂg‰nger	q1 11815,13045 11719,13088
 (Berolinastr.): Weg am Spielplatz vorbei	q2 11865,13027 11815,13045
-(Berolinastr. - Mollstr.): Fuﬂg‰nger	q1 11865,13027 11874,13048 11881,13072
+(Berolinastr. - Mollstr.): Fuﬂg‰nger	q1 11865,13027 11874,13048 11905,13069
 (Berolinastr. - Mollstr.): Fuﬂg‰nger	q1 11608,12985 11681,13161
 (Lichtenberger Str.): Fuﬂg‰nger	q1 12054,12903 12039,12675
 (Verbindungsweg): Fuﬂg‰nger	q1 11646,13465 11703,13422

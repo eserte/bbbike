@@ -1101,22 +1101,7 @@ userdel	2::inwork 19750,11730 19827,11686 19881,11591
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_017746',
-         'until' => 1346425200,
-         'text' => 'Kastanienallee (Prenzlauer Berg): Bauarbeiten zwischen Oderberger Str. und Schönhauser Allee, Fahrbahn manchmal gesperrt, bis 31.08.2012 ',
-         'from' => 1314604800,
-         'id' => 2308,
-         'data' => '#: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/kastanienallee_pb.html
-#: note: am 2012-03-09 geprüft, Radfahrer konnten problemlos passieren
-#: note: am 2012-04-27 geprüft, Fahrbahn ist absperrt (nur die Straßenbahn wird durchgelassen), Radfahrer können nur den Gehweg benutzen
-#: note: am 2012-05-30 geprüft, Radfahrer konnten problemlos passieren
-#: note: am 2012-06-12 geprüft, Fahrbahn ist absperrt (nur die Straßenbahn wird durchgelassen), Radfahrer können nur den Gehweg benutzen
-#: note: am 2012-07-16 geprüft, Radfahrer konnten problemlos passieren
-userdel	q4::inwork 10723,14772 10838,14962
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        {
@@ -1386,16 +1371,7 @@ userdel	2::inwork 8263,10349 8315,10347 8333,10167 8360,10133
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'source_id' => 'INKO_113817',
-         'until' => 1346364000,
-         'text' => 'Chemnitzer Str. (Kaulsdorf): Baustelle, Straße vollständig gesperrt in beiden Richtungen zwischen Alt-Kaulsdorf und Am Niederfeld, 16.07.2012 bis 30.08.2012 ',
-         'from' => 1344282201,
-         'id' => 2367,
-         'data' => 'userdel	q4::inwork 22484,11270 22436,11054
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'IM_019043',
          'until' => 1355580000,
@@ -1429,16 +1405,7 @@ userdel	2::night 14838,11410 14776,11400
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_019090',
-         'until' => 1346425200,
-         'text' => 'Köthener Brücke (Tiergarten): Baustelle, Straße vollständig gesperrt in beiden Richtungen, 17.08.2012 14:12 Uhr bis 31.08.2012 17:00 Uhr ',
-         'from' => 1345119120,
-         'id' => 2373,
-         'data' => 'userdel	q4::inwork 8443,10777 8430,10710
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'IM_019071',
          'until' => 1351695600,
