@@ -756,10 +756,11 @@ sub _get_map_conv {
 
 sub _best_merkaartor_work_dir {
     for my $merkaartor_work_dir
-	("/usr/local/src/work/merkaartor",
+	(
+	 "/usr/local/src/work/merkaartor",
+	 bsd_glob("/usr/ports/astro/merkaartor/work/merkaartor-*"), # for FreeBSD port
 	 "$ENV{HOME}/work/merkaartor", # use 'git clone git://gitorious.org/merkaartor/main.git merkaartor' in ~/work
 	 "$ENV{HOME}/work2/merkaartor",
-	 "/usr/ports/astro/merkaartor/work/merkaartor-0.13.2", # for FreeBSD port
 	) {
 	if (-r "$merkaartor_work_dir/Icons/AllIcons.qrc" &&
 	    bsd_glob("$merkaartor_work_dir/Styles/*.mas")
