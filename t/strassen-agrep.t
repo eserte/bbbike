@@ -101,7 +101,10 @@ for my $search_def (@search_types) {
 	{
 	    local $TODO = "Not implemented yet: substituting straße with str";
 	    # see _strip_strasse and _expand_strasse in PLZ.pm
-	    $check->("Dudenstraße", ["Dudenstr."]);
+	    {
+		local $TODO = undef if $encoding eq 'latin1' && $search_def eq 'agrep'; # this is working just accidentally, so turn TODO off
+		$check->("Dudenstraße", ["Dudenstr."]);
+	    }
 	    $check->("Dudenstrasse", ["Dudenstr."]);
 	}
     SKIP: {
