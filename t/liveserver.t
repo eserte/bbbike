@@ -36,8 +36,6 @@ use Strassen::Core;
 
 my $bbbike_url               = "http://bbbike.de";
 my $bbbike_data_url          = "http://bbbike.de/BBBike/data";
-my $bbbike_data_fallback_url = "http://bbbike.radzeit.de/BBBike/data";
-#my $bbbike_data_local_url    = "http://radzeit/BBBike/data";
 my $bbbike_data_local_url    = "http://bbbike.hosteurope/BBBike/data";
 
 my @urls;
@@ -45,8 +43,6 @@ if ($ENV{BBBIKE_TEST_HTMLDIR}) {
     push @urls, "$ENV{BBBIKE_TEST_HTMLDIR}/data";
 } else {
     push @urls, $bbbike_data_url;
-## XXX permanently broken:
-#    push @urls, $bbbike_data_fallback_url;
     push @urls, $bbbike_data_local_url;
 }
 
