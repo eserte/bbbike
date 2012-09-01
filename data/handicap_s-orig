@@ -35,7 +35,7 @@ Gartenstr.: Einbahnstraﬂe zwischen Invalidenstr. und Tieckstr. (Bauarbeiten)	q4:
 #: XXX laut INKO_113363 bis Ende M‰rz 2013 gesperrt
 Voﬂstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg	q3::inwork 8743,11663 8837,11676
 # 
-#: last_checked: 2012-07-16 vvv
+#: last_checked: 2012-09-01 vvv
 #: next_check: 2013-05-31 vvv
 #: by: wosch & IM_017330 & IM_019009 & INKO_113944
 #: XXX siehe auch tempor‰re Ampel an der Chausseestr. sowie an der Luisenstr.
@@ -507,10 +507,10 @@ Egidysteg: eng, Fuﬂg‰nger	q3 3099,22211 3134,22153
 (Egidysteg - M¸hlenfeldstr.): Fuﬂg‰nger	q1 3134,22292 3094,22233 3099,22211
 (Weg am Tegeler Flieﬂ): Fuﬂg‰nger	q1 3767,22466 3734,22402 3670,22396 3631,22417 3589,22414 3498,22333 3390,22264 3355,22230 3271,22321
 (Tegeler Flieﬂ - M¸hlenfeldstr.): Fuﬂg‰nger	q1 3753,22534 3767,22466
-(Weg am Tegeler Flieﬂ): Fuﬂg‰nger, unterhalb der S-Bahnbr¸cke eng	q2 4251,22829 4166,22725 4114,22690 4087,22714 4036,22685
-(Weg am Tegeler Flieﬂ): Fuﬂg‰nger	q1 5645,23968 5409,23816 5297,23633 5214,23420 5242,23156 5232,23139 5205,23094 5127,23042 5054,23025 4824,22907 4731,22904 4693,22897 4626,22914
+(Weg am Tegeler Flieﬂ): Fuﬂg‰nger, unterhalb der S-Bahnbr¸cke eng	q2 4251,22829 4166,22725 4114,22690 4087,22714 4022,22691
+(Weg am Tegeler Flieﬂ): Fuﬂg‰nger	q1 5596,23970 5409,23816 5297,23633 5214,23420 5242,23156 5232,23139 5205,23094 5127,23042 5054,23025 4824,22907 4731,22904 4693,22897 4626,22914
 (Weg am Tegeler Flieﬂ): Fuﬂg‰nger	q1 4608,22931 4402,22877 4306,22914 4163,22907
-(Weg am Tegeler Flieﬂ): Fuﬂg‰nger, eng	q2 5860,24067 5693,24037 5645,23968
+(Weg am Tegeler Flieﬂ): Fuﬂg‰nger, eng	q2 5860,24067 5693,24037 5596,23970
 (Schildower Weg): Fuﬂg‰nger	q1 7877,24037 7675,23968 7615,23884 7185,23749
 (Mehrower Allee, Unterf¸hrung zum S-Bahnhof): Rampe, Fuﬂg‰nger	q4 20547,17084 20533,17051 20439,17103
 Altvaterstr.: Fuﬂg‰nger, Bordsteine	q2 -3117,3107 -3170,3070 -3223,3034
@@ -569,7 +569,6 @@ Dathepromenade: Fuﬂg‰nger	q1 18394,10348 18320,10318 18302,10289 18314,10260 181
 Rheingoldpark: Fuﬂg‰nger haben Vorrang	q1 19078,8817 19145,8659
 Schloﬂinsel Kˆpenick: Fuﬂg‰nger	q4 22093,4499 22076,4422
 Braunschweiger Ufer: Fuﬂg‰nger	q1 12718,5845 13077,5893 13483,5973
-Kurt-Schumacher-Damm (Nord): eigentlich Einbahnstraﬂe, Gehweg benutzen	q4; 3643,16437 3676,16497
 Begasstr. - Riemenschneiderweg: teilweise mit Fuﬂg‰ngern zu rechnen	q1 6513,7005 6662,7018
 Begasstr. - Riemenschneiderweg: teilweise mit Fuﬂg‰ngern zu rechnen, kurze Rampe	q1 6662,7018 6770,7027
 Viktoriapark: Fuﬂg‰nger, kurze Rampe, Pf‰hle	q1 5013,6003 4981,5939 4957,5894
@@ -720,7 +719,7 @@ Oleanderstr.: Fuﬂg‰nger, Bordsteine	q2 14271,14024 14298,14015
 Pankgrafenstr. (Pankow): Fuﬂg‰nger, ggfs. schieben	q2 10470,18402 10502,18338
 #: by: Susanne Grittner (sort-of) vvv
 Kurt-Schumacher-Damm: Radweg in Gegenrichtung	q3; 3585,16252 3358,15794 3299,15668 3282,15632 3290,15604 3328,15595 3335,15617 3316,15641 3301,15631 3280,15543 3242,15523 3221,15498 3162,15314 3045,15044 2960,14746
-Kurt-Schumacher-Damm: Radweg in Gegenrichtung	q3; 2904,14748 2934,14852 3000,15048 3106,15384 3095,15495 3160,15519 3165,15590 3257,15666 3314,15782 3564,16294
+Kurt-Schumacher-Damm: Radweg in Gegenrichtung	q3; 2904,14748 2934,14852 3000,15048 3106,15384 3095,15495 3160,15519 3165,15590 3257,15666 3314,15782 3398,16000 3564,16294
 #: by: ^^^
 H¸lsenplatz: Fuﬂg‰nger, Bordsteine	q3 18512,10744 18545,10752 18542,10762 18538,10774 18506,10769
 H¸lsenplatz: Fuﬂg‰nger, Bordsteine	q3 18542,10762 18570,10768
@@ -1323,7 +1322,13 @@ Henrionweg: eng	q3 11154,21760 11145,21698
 (Hohenschˆnhauser Tor): Fuﬂg‰nger (Einkaufszentrum)	q4 15221,14550 15058,14575
 (Anlieferung Hohenschˆnhauser Tor): Lieferverkehr, Fuﬂg‰nger	q1 15110,14486 15221,14550 15174,14638
 (Weg durch den Geschichtspark): Fuﬂg‰nger	q1 7840,13296 7822,13323 7811,13344 7784,13392 7767,13431 7732,13484 7651,13447
-(Elisabeth-Abegg-Str. - Weg am Moabiter Werder): Fuﬂg‰nger, kurvig	q4 7837,12860 7838,12870 7827,12880 7812,12884 7809,12901 7801,12910 7788,12907 7787,12918
+(Elisabeth-Abegg-Str. - Weg am Moabiter Werder): Fuﬂg‰nger, eng, kurvig	q4 7837,12860 7838,12870 7827,12880 7812,12884 7809,12901 7801,12910 7788,12907 7787,12918
+(Wickeder Str. - Seidelstr./Holzhauser Str.): eng, Fuﬂg‰nger	q3 2713,18851 2720,18836 2768,18825 2794,18836 2821,18831
+Alt-Tegel: Fuﬂg‰nger	q3 1529,20131 1462,20133 1397,20125
+Alt-Tegel: Fuﬂg‰nger	q3 1462,20133 1457,20159
+(Uferweg am Tegeler Hafen - Am Tegeler Hafen): 3x kurze und steile Rampe	q4 1858,20431 1871,20399
+(Am Rosensteg - An der Heide): eng	q3 3065,20646 3101,20649 3109,20650
+(Rosentreterpromenade - Ziekowstr.): schmal	q2+ 4156,21175 4060,21147 3649,21102 3456,21071 2911,20953 2571,20886
 #
 ######################### User Contributions #################################
 # 
@@ -1489,18 +1494,19 @@ Birkenwerderstr.: enge Straﬂe mit parkenden Autos	q0- 6450,20753 6945,20805
 #: corrected_by: srt/policy (q1 -> )
 Borgsdorfer Str.: enge Straﬂe mit parkenden Autos	q0- 6473,20858 6962,20895
 #: corrected_by: srt/policy (q1 -> )
-Germendorfer Str.: enge Straﬂe mit parkenden Autos	q0- 6376,20951 6494,20944 6977,20984 7079,21000 7151,21012
+Germendorfer Str.: enge Straﬂe mit parkenden Autos	q0- 6368,20956 6494,20944 6977,20984 7079,21000 7151,21012
 Wentowsteig: enge Straﬂe mit parkenden Autos	q1 6924,20695 6945,20805 6955,20859 6962,20895 6977,20984
 #: by: ^^^
 # 
 #: by: Peter Held:
 (Spreeuferweg): Fuﬂg‰nger	q1 4537,12531 4501,12544 4334,12551
 #: by: Johannes Nerger:
-(Schˆnholzer Heide, parallel zur Friesenstr.): Fuﬂg‰nger	q1 8765,19288 8784,19253 8954,19151 9446,18855 9475,18862
+(Schˆnholzer Heide, parallel zur Friesenstr.): Fuﬂg‰nger	q1 8765,19288 8784,19253 8947,19166 9446,18855 9475,18862
 #: by: Felix Beutler:
 Nordufer: teilweise sehr schmaler Radweg	q1 7212,14738 7433,14656 7464,14636
 #: by: Jˆrn Busch:
-(Weg am Nordgraben): schmaler Weg, m‰ﬂiger Fuﬂg‰ngerverkehr	q2 3563,20589 3537,20624 3470,20683 3391,20746 3312,20789 3152,20852 3094,20905 3062,20923 3032,20930 2919,20910 2570,20837
+#: corrected_by: srt (q2 -> q1)
+(Weg am Nordgraben): schmaler Weg, m‰ﬂiger Fuﬂg‰ngerverkehr	q1 3563,20589 3537,20624 3470,20683 3391,20746 3312,20789 3144,20865 3094,20905 3062,20923 3032,20930 2919,20910 2570,20837
 # 
 #: by: Hans-Reiner Padberg: vvv
 (Weg am Waldfriedhof Dahlem): Kurven	q2 1051,5525 825,5420 541,5306
@@ -2037,7 +2043,8 @@ Hauptweg (Biesdorf): enger Weg	q2 20834,8694 20799,8965 20802,9297
 #: by: ^^^
 Hallichpromenade: Fuﬂweg	q2 5388,20606 5447,20614
 #: by: paula* (gwendolen...):
-Allmendeweg: enge Straﬂe	q1 2990,22018 3063,21821 3071,21801 3155,21572
+#: corrected_by: srt (nur die Hausdurchfahrt ist eng)
+Allmendeweg: enge Hausdurchfahrt	q1+ 3071,21801 3155,21572
 #: by: Sven Beckers
 Senheimer Str.: enge Straﬂe	q1 2510,25350 2506,25398 2505,25538 2515,25666 2519,25772 2496,25915 2484,25984 2490,26126 2531,26251 2560,26349 2569,26408 2564,26462
 #: by: Jan Riemke:
@@ -2047,7 +2054,7 @@ Wegerichstr.: enge Straﬂe	q1 16678,2330 16666,2437 16663,2450 16538,2543
 #: by: steffen (stache-bln):
 (Hanns-Eisler-Str. - Thomas-Mann-Str.): breit, wenig Fuﬂg‰nger	q0 13550,14973 13324,15109 13328,15127 13132,15239
 #: by: Beate Voigt: vvv
-Siegfried-Baruch-Weg: einige Fuﬂg‰nger, recht eng	q2 7857,19693 7974,19739 8030,19762
+Siegfried-Baruch-Weg: einige Fuﬂg‰nger, recht eng	q2 7857,19693 7871,19698 7974,19739 8030,19762
 #: by: ^^^
 #: by: Sara Kˆhler: vvv
 Fehrbelliner Str. (Spandau): Gehweg mit Bordsteinen am Anfang und am Ende	q2 -3778,15520 -3761,15604 -3727,15695
@@ -2117,7 +2124,7 @@ Herbert-Baum-Str.: enge Straﬂe	q0- 13826,16026 13869,15912 13904,15818 13943,157
 # 
 #: by: Bernd Mahrin:
 #: corrected_by: srt/policy (q1 -> q0-)
-Sendener Weg: enge Straﬂe	q0- 964,18321 1040,18283 1178,18223 1221,18327 1281,18487 1346,18662
+Sendener Weg: enge Straﬂe	q0- 964,18321 1040,18283 1178,18223 1221,18332 1281,18487 1346,18662
 # 
 #: by: henning (hirschgarten):
 #: corrected_by: srt/policy (q2 -> q1)
@@ -2285,7 +2292,7 @@ Tankredstr.: enge Straﬂe	q1 8264,5383 8328,5417 8365,5418 8394,5412 8484,5347
 #: by: Thomas Penski:
 Battenheimer Weg: enge Straﬂe	q1 11762,1040 11681,1031 11393,1243
 #: by: MaPo: vvv
-F¸rst-Bismarck-Str.: enge Straﬂe	q1 4032,22374 3917,22534
+#XXX del --- #: corrected_by: srt (q1 -> q0-) --- F¸rst-Bismarck-Str.: enge Straﬂe	q0- 4032,22374 3923,22535
 #: corrected_by: srt (q2 -> q0-)
 Birnbaumring: enge Straﬂe	q0- 8661,24952 8751,24988 8785,25014 8825,25052 8871,25109 8922,25212 8856,25267 8776,25332 8735,25366 8673,25418 8584,25371 8529,25361
 #: by: ^^^

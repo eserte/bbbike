@@ -9021,7 +9021,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006015',
        data  => <<EOF,
-userdel	2::temp 6442,22240 6492,22113 6485,21955 6373,21810 6320,21777 6269,21748 6093,21648 5934,21513
+userdel	2::temp 6442,22240 6492,22113 6485,21955 6373,21810 6320,21777 6269,21748 6093,21648 5923,21522
 EOF
      },
      { from  => 1184018400, # 2007-07-10 00:00
@@ -16551,7 +16551,7 @@ EOF
        source_id => 'Message-ID: <001e01ca4b11$15559d20$4000d760$@grittner@adfc-berlin.de>', # außerdem: http://www.berlin.de/ba-reinickendorf/presse/archiv/20091006.1420.141477.html
        data  => <<EOF,
 #: last_checked: 2009-10-10 by Susanne Grittner
-userdel	2::inwork 3314,15782 3564,16294
+userdel	2::inwork 3314,15782 3398,16000 3564,16294
 EOF
      },
      { from  => 1270235189, # 2010-04-02 21:06
@@ -18445,7 +18445,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20101025.1235.315920.html',
        data  => <<EOF,
-userdel	2::inwork 5535,24016 5645,23968
+userdel	2::inwork 5534,24005 5596,23970
 EOF
      },
      { from  => 1288479600, # 2010-10-31 01:00
@@ -19629,7 +19629,7 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20110825.1435.356236.html',
        data  => <<EOF,
-userdel	q4::inwork 6286,20585 6330,20742 6347,20819 6366,20902 6376,20951 6380,20983 6382,21109
+userdel	q4::inwork 6279,20587 6317,20751 6337,20826 6356,20910 6368,20956 6374,20987 6371,21110
 EOF
      },
      { from  => 1314482400, # 2011-08-28 00:00
@@ -20446,8 +20446,8 @@ EOF
        text  => 'Christburger Str.: Fahrbahn an der Prenzlauer Allee gesperrt, Ausweichen auf Gehweg',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2012-07-16
-userdel	q3::inwork 11920,14468 11642,14625
+#: last_checked: 2012-09-01
+userdel	q3::inwork 11912,14486 11642,14625
 EOF
      },
      { from  => 1342994400, # 2012-07-23 00:00
@@ -20586,6 +20586,17 @@ EOF
 userdel	2::temp 9994,12368 10008,12274 10010,12259 10035,12209
 userdel	2::temp 10008,12274 10058,12290 9996,12401
 userdel	2::temp 10091,12232 10058,12290
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Hussitenstr.: Fahrbahn zwischen Stralsunder Str. und Usedomer Str. gesperrt, Ausweichen auf Gehweg',
+       type  => 'handicap',
+       source_id => 'wosch',
+       data  => <<EOF,
+#: last_checked: 2012-09-01 (wosch)
+#: next_check: 2012-12-01
+userdel	q4::inwork 9112,14771 9250,14658
 EOF
      },
     );

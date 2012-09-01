@@ -59,9 +59,10 @@ Richtung Teufelssee/Saubucht	CP2; -3475,6780 -3418,6747
 ausgeschildert Richtung Breitenbachplatz	CP2; 3346,7369 3397,7333
 als Ganghoferstr. ausgeschildert	CP2; 12960,8246 12918,8232
 #: XXX_prog: sollte besser als eine Art gerichteter BNP dargestellt werden
-Sredzkistr. - Christburger Str.: Drängelgitter auf dem Mittelstreifen	CP 11526,14693 11642,14625 11920,14468
+Sredzkistr. - Christburger Str.: Drängelgitter auf dem Mittelstreifen	CP 11526,14693 11642,14625 11912,14486
 #: XXX_prog: sollte besser als eine Art gerichteter BNP dargestellt werden
-Christburger Str. - Pasteurstr.: Drängelgitter auf dem Mittelstreifen	CP 11920,14468 12177,14335 12335,14246
+Pasteurstr. - Christburger Str.: Drängelgitter auf dem Mittelstreifen	CP; 12335,14246 12188,14350 12177,14335
+Christburger Str. - Pasteurstr.: Drängelgitter auf dem Mittelstreifen	CP; 11912,14486 12177,14335 12188,14350
 Sellin - Benz: schwierig zu findender Waldweg	CS 53932,172900 53868,172725 53906,172550 53574,172367 53383,171931 53203,171896 52806,171507
 #: add_fragezeichen: Ist das Tor permanent geöffnet?
 #: XXX_prog: früher war CP mit einer Koordinate möglich, aber das wird von der Software (make_net_cat) nicht unterstützt
@@ -71,7 +72,7 @@ Keine Straße ausgeschildert, am Bahndamm halten	CS; 12645,11673 12596,11696
 #XXX del now in temp_blockings: Am Schloß Bellevue: kann bei Staatsbesuchen gesperrt sein	CS 6694,12627 7039,12314
 Paralleler Uferweg an der Spree nur über zwei Treppen erreichbar	CS 10300,12587 10355,12551 10411,12471 10422,12395
 # XXX gibt es noch Veranstaltungen hier? #vor der Columbiahalle: häufig Glasscherben auf dem Radweg	CS 9571,8706 9801,8683
-unter der S-Bahnbrücke: Glassplitter	CS 6184,20550 6286,20585
+unter der S-Bahnbrücke: Glassplitter	CS 6184,20550 6279,20587
 Hegelstr.: Ausweichmöglichkeit auf Nebenstraße mit Kopfsteinpflaster oder grünen Mittelstreifen mit Parkweg	CS -13625,-902 -13468,-847 -13433,-831 -13231,-763 -13137,-728 -13067,-706 -12878,-665
 Kreisverkehr	Roundabout 60197,12001
 Kreisverkehr	Roundabout 61156,11478
@@ -935,6 +936,37 @@ Zugang zum Bad	culdesac_pseudo 7306,13418
 	culdesac 7735,13626
 	culdesac_pseudo 7837,12860
 	culdesac_pseudo 7784,12778
+	culdesac 3609,16759
+	culdesac_pseudo 1663,18166
+	culdesac 1337,18427
+	culdesac_pseudo 1278,18307
+	culdesac_pseudo 2713,18851
+#: note: von beiden Seiten
+	culdesac_pseudo 1896,19801
+	culdesac 1425,20301
+	culdesac_pseudo 2469,20812
+	culdesac_pseudo 2507,20860
+	culdesac 2803,20199
+	culdesac 3485,20479
+	culdesac 3077,20864
+	culdesac 2976,20871
+	culdesac_pseudo 3065,20646
+	culdesac_pseudo 3023,20886
+	culdesac 2763,21000
+	culdesac 2969,21073
+	culdesac 3040,21091
+	culdesac 3128,21109
+	culdesac 3222,21134
+	culdesac 3089,21238
+	culdesac 3681,21999
+	culdesac_pseudo 3923,22535
+	culdesac 5615,23625
+	culdesac 5811,23855
+	culdesac 5839,24014
+#: note: explizit ausgeschildert "Radfahrer frei"
+	culdesac_pseudo 5920,22603
+	culdesac 6175,22803
+	culdesac 6115,22877
 #: section ^^^
 ######################################################################
 # busroute
@@ -1035,7 +1067,7 @@ Bus 122	busroute_N 6380,17836 6383,18033 6403,18289 6418,18491 6432,18682
 Bus 122	busroute_N 5233,18069 5536,18234 5870,18387 6060,18534 6217,18619 6296,18638 6306,18673 6314,18705
 Bus 125	busroute_N 4326,17801 4377,18037 4421,18243 4291,18264 4181,18284 4102,18298 4009,18322 3909,18342 3733,18376 3738,18573 3731,18601 3713,18621 3562,18712 3700,18965
 Bus 322	busroute_N 4240,19019 4195,19043 4137,19007 3909,19002 3810,19133 3546,19477
-Bus 125	busroute_N 3546,19477 3343,19727 3252,19658 3167,19597 3021,19780 2854,19992 2837,20015 2814,20046 2735,20154 2684,20223 2645,20300 2615,20421
+Bus 125	busroute_N 3546,19477 3343,19727 3252,19658 3167,19597 3021,19780 2854,19992 2837,20015 2814,20035 2803,20045 2726,20146 2684,20223 2645,20300 2615,20421
 Bus 133	busroute_N 2295,20358 2362,20218 2402,20126 2336,20117 2169,20095
 Bus 133	busroute_N 2109,20188 2323,20214 2362,20218
 Bus 139	busroute_N 931,14268 968,14263 1023,14259 1085,14250 1133,14387
@@ -1145,7 +1177,7 @@ Bus 256	busroute_N 18009,18946 18061,19097 18066,19143 18074,19227 18109,19352 1
 Bus 195	busroute_N 24968,15307 24794,15270 24651,15239 24451,15181 24281,15138 24226,15121 24232,15060 24215,15057 24139,15046 24063,15035 23960,15021
 Bus X69	busroute_N 28225,1009 28348,1147 28488,1307 28545,1373 28591,1421 28632,1469 28817,1679 28904,1781 28978,1864 29077,1973 29115,2015 29414,2373
 Bus 122, Bus 155	busroute_N 7672,19869 7556,19882 7333,19911 7209,19928 7205,20047 7201,20161 7231,20266 7321,20426 7577,20450 7711,20463 7809,20420 7900,20378
-Bus 221	busroute_N 5819,21057 5840,20953 5929,20882 6027,20807 6117,20738 6286,20585 6375,20579 6408,20603 6439,20632 6445,20636 6924,20695 7080,20713 7171,20729 7255,20793 7280,20895 7251,21202
+Bus 221	busroute_N 5819,21057 5840,20953 5929,20882 6027,20807 6117,20738 6279,20587 6375,20579 6408,20603 6439,20632 6445,20636 6924,20695 7080,20713 7171,20729 7255,20793 7280,20895 7251,21202
 Bus M21, Bus X21	busroute_N 7251,21202 7238,21431 7271,21499 7394,21593 7526,21697 7742,21867
 Bus M21	busroute_N 7742,21867 7781,21812 7959,21573 7959,21573 7991,21531 8016,21499 7852,21262
 Bus X21	busroute_N 7742,21867 7594,22068 7445,22295
@@ -1500,6 +1532,10 @@ nach rechts abbiegen, um Drängelgitter am Spielplatz zu umfahren	CP; 6503,20978 
 nach links abbiegen, um Drängelgitter am Spielplatz zu umfahren	CP; 6596,21062 6560,21055 6565,21004
 (Weserstr. - Boxhagener Str.): Gewerbegelände, Lidl-Parkplatz	CS 14949,11474 14838,11410 14776,11400 14752,11369
 #: by: anna (miri...)
-Lichtweg: Privatstraße	CS 1300,18292 1337,18427
+#: confirmed_by: srt
+Lichtweg: Privatstraße	CS 1301,18297 1337,18427
 Am Wäldchen (Blankenfelde): Privatstraße	CS 8826,24501 8905,24573 8972,24641 9032,24700
 Laufstrecke im Fritz-Schloß-Park	CS 7132,13503 7195,13430 7255,13444 7266,13500 7144,13609 7165,13659 7191,13679 7178,13708 7097,13834 7035,13808 7022,13776 7029,13742 7071,13690 7056,13584 7132,13503
+Straße 185 (Lübars): Privatstraße	CS 6037,22830 6083,22772
+Straße 186 (Lübars): Privatstraße	CS 6083,22772 6153,22828
+Straße 187 (Lübars): Privatstraße	CS 6175,22803 6153,22828 6115,22877

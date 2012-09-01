@@ -84,14 +84,13 @@ Alt-Blankenburg	1 13576,20849 13562,20913 13909,20928
 Alt-Blankenburg	1 13909,20928 13576,20849
 Seestr.	1 5062,14681 5233,14753 5440,14840
 Seestr.	1 5440,14840 5264,14671 5071,14614
-Waidmannsluster Damm	1 2142,20849 1835,21427 1882,21468 2205,20885
+Waidmannsluster Damm	1 2144,20870 1835,21427 1882,21468 2195,20898
 Flughafen Tegel	1 2819,16141 2757,16194 2713,16286 2756,16344 2832,16343 2863,16280 2819,16141
 Jakob-Kaiser-Platz	1 2795,14161 2811,14196 2831,14219 2857,14222 2896,14187 2892,14149 2860,14118 2825,14128 2795,14161
 Kurt-Schumacher-Damm (Süd)	1 2831,14219 2803,14288 2793,14374 2904,14748
 Kurt-Schumacher-Damm (Süd)	1 2960,14746 2847,14356 2857,14222
-Kurt-Schumacher-Damm (Nord)	1 3564,16294 3643,16437
-Kurt-Schumacher-Damm (Nord)	1 3676,16497 3753,16638 3853,16825 3948,16849
-Kurt-Schumacher-Damm (Nord)	1 3948,16849 3788,16621 3711,16481 3585,16252
+Kurt-Schumacher-Damm (Nord)	1 3564,16294 3643,16437 3676,16497 3753,16638 3853,16825 3940,16861
+Kurt-Schumacher-Damm (Nord)	1 3940,16861 3788,16621 3711,16481 3585,16252
 Ferdinand-Friedensburg-Platz	1 -914,14602 -1357,14533 -1392,14527 -1508,14508 -1369,14644 -1119,14659 -925,14631
 Falkenseer Platz	1 -3352,14676 -3368,14723 -3355,14764 -3295,14777 -3251,14741 -3247,14713 -3255,14685 -3301,14669 -3352,14676
 Fasanenstr.	1 5207,10399 5229,10716 5242,10918 5247,10992 5268,11274
@@ -330,7 +329,7 @@ Alte Späthbrücke	2 14466,5087 14544,5123
 # XXX del : XXX_indoor: evtl. nach temp-blockings verschieben Rutherfordstr.: nicht permanent geöffnet	2 19071,2746 19136,2673 19207,2592
 Katzengraben	1 22451,4749 22465,4690
 Schwiegersteig	1 1134,14721 1130,14823 1112,14918
-Moränenweg	1 3208,21425 3304,21205
+Moränenweg	1 3208,21425 3295,21202
 #: by: Marcel Länger:
 Graacher Str.	1 14672,17085 14533,17084
 #: by: Katja [AM]
@@ -419,6 +418,7 @@ Karl-Egon-Str.	1 18372,8869 18406,9052 18430,9199 18457,9343
 Marschnerstr.	1 4629,3916 4634,4053
 Wollankstr.	1 10027,18165 10054,18210
 #: by: andk
+#: confirmed_by: srt
 Kreuzstr.	1 9832,17925 9902,18180 9909,18333
 #: note: war mal "1s", aber ich wurde dafür zu oft getadelt...
 Vorbergstr.	1 7022,9211 7137,9216 7315,9156
@@ -452,10 +452,12 @@ Lossebergplatz	1 16070,23566 16094,23554 16095,23539 16079,23535 16064,23547 160
 Spindlersfelder Str.	2 21324,3691 21215,3919 21143,4150 21130,4239 21080,4702 21075,4769 21065,4957
 Rathausstr.:	1 15651,12214 15628,12246 15576,12315 15537,12367
 Alt-Marzahn	1 21112,15396 21042,15428 20967,15458 20796,15559 20903,15545 20988,15505 21051,15464 21112,15396
+#: confirmed_by: srt vvv
 Bonifaziusstr.	1 2635,21559 2699,21401 2714,21369 2728,21336 2760,21269 2840,21141
-Bonifaziusstr.	1 2819,21128 2737,21256 2690,21363 2621,21538
+Bonifaziusstr.	1 2819,21128 2737,21256 2691,21360 2621,21538
 Sandgrasweg	1 2851,21089 2819,21128
 Sandgrasweg	1 2840,21141 2866,21103
+#: confirmed_by ^^^
 Max-Eyth-Str.	1 2506,6606 2566,6531 2611,6495
 (IKEA-Zufahrt)	1 8204,6958 8229,7154
 #: by: anonymous:
@@ -565,7 +567,7 @@ Neuendorfer Str.	1 -3295,14777 -3228,14794
 Neuendorfer Str.	1 -3228,14794 -3251,14741
 #: by: verena kauffmann:
 Büdnerring	1 7997,18524 7902,18575 7892,18603 7926,18665 8037,18673 8063,18659 8066,18632 7997,18524
-Steilpfad	1 3376,21224 3280,21477
+Steilpfad	1s:q3 3375,21230 3280,21477
 Jebensstr.	1 5587,11397 5459,11135
 Breitenbachplatz	1 4107,6718 4074,6681 3983,6599 3925,6604 3938,6651 4021,6729 4061,6753
 Südwestkorso	1 4061,6753 4206,6820
@@ -926,6 +928,9 @@ Am Krummen Weg	1 -7169,14849 -7026,14890
 Am Krummen Weg	1 -7169,14849 -7248,14826
 Henricistr.	1 5993,19477 5858,19437
 Breslauer Platz	1s:q3 5810,7337 5902,7334
+Desideriusweg	1 2830,21378 2728,21336
+Am Ansitz	1 3913,21977 3855,22055
+Am Vierrutenberg etc.	1 5712,23785 5676,23971 5780,23997 5792,23943 5787,23840 5712,23785
 ######################################################################
 #
 # Potsdam
@@ -1237,7 +1242,7 @@ Sterndamm: Straßenbahntrasse	3nocross 17601,5090 17542,4772 17520,4649
 Sterndamm: Straßenbahntrasse	3nocross 17645,5328 17601,5090 17542,4772
 Alt-Biesdorf: unbequemes Passieren des Mittelstreifens	3nocross 21960,11269 22242,11269 22326,11266
 Konrad-Wolf-Str./Große-Leege-Str.: wegen Absperrgitter nicht überquerbar	3nocross 16961,16042 16917,16001 16819,15912
-Knoten am Flughafen Tegel: Mittelstreifen nicht passierbar	3nocross 2996,15771 2960,15847 2913,15944 2819,16141
+Knoten am Flughafen Tegel: Mittelstreifen nicht passierbar	3nocross 2975,15813 2960,15847 2913,15944 2819,16141
 Königsberger Str.: Mittelstreifen nicht passierbar	3nocross 4343,2607 4284,2626 4251,2637 4212,2675 4164,2717
 Berliner Str.: Straßenbahntrasse	3nocross 10897,17274 10892,17330 10886,17396
 Berliner Str.: Straßenbahntrasse	3nocross 10886,17396 10880,17469 10878,17490
@@ -1307,7 +1312,7 @@ Frankfurter Allee: unbequem passierbarer Mittelstreifen	3nocross 14381,12205 144
 Frankfurter Allee: unbequem passierbarer Mittelstreifen	3nocross 13785,12292 13885,12279 14208,12235
 Leipziger Str.: unbequem passierbarer Mittelstreifen	3nocross 9701,11656 9898,11679 9981,11689
 #Landsberger Allee: Mittelstreifen	3nocross 13089,13323 13161,13360 13241,13405 13330,13468
-Greifswalder Str.: Mittelstreifen mit Straßenbahn	3nocross 12177,14335 12228,14404 12266,14460 12317,14535
+Greifswalder Str.: Mittelstreifen mit Straßenbahn	3nocross 12177,14335 12188,14350 12228,14404 12266,14460 12317,14535
 Greifswalder Str.: Mittelstreifen mit Straßenbahn	3nocross 12422,14692 12473,14763 12520,14833 12584,14928
 Greifswalder Str.: Mittelstreifen mit Straßenbahn	3nocross 12709,15112 12737,15154 12870,15342
 #: note: Fußgängerfurt existiert zwischen Chodowieckistr. und Jablonskistr.:
@@ -1319,7 +1324,7 @@ Prenzlauer Allee: Mittelstreifen mit Straßenbahn, hier aber Fußgängerfurt vorhan
 Prenzlauer Allee: Mittelstreifen mit Straßenbahn	3nocross 12071,16130 12030,15968 11997,15834
 Prenzlauer Allee: Straßenbahntrasse	3nocross 11941,15586 11967,15700 11997,15834
 Danziger Str.: Mittelstreifen mit Straßenbahn	3nocross 11712,14868 11610,14886 11545,14897
-Danziger Str.: Mittelstreifen mit Straßenbahn	3nocross 12317,14535 12128,14640 12040,14688
+Danziger Str.: Mittelstreifen mit Straßenbahn	3nocross 12317,14535 12128,14640 12025,14695
 Torstr.: Mittelstreifen mit Straßenbahn	3nocross 10746,13673 10640,13700 10569,13719 10463,13747
 Yorckstr.: Linksabbiegen verboten (und unbequem)	3nocross 8192,9619 8097,9650 7938,9694
 An den Treptowers: unbequemes Überqueren, stark befahrene Straße	3nocross 14501,10169 14405,10027 14289,9870
@@ -1450,6 +1455,7 @@ Invalidenstr.: Mittelstreifen	3nocross 7814,13284 7840,13296 7880,13315
 Alt-Moabit: Mittelstreifen, hohe Bordsteine und parkende Autos	3nocross 7821,12934 7776,12943 7595,12980
 abgeschlossenes Tor	3 * 8237,20098 *
 abgeschlossenes Tor	3 * 8291,20112 *
+verschloßenes Tor	3 * 3796,16202 *
 #
 ####################################################################
 #
@@ -1728,6 +1734,10 @@ tragen (31 Stufen oder Kinderwagenrampe)	0:40 13168,21706
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+Drängelgitter	BNP:3::trailer=10 5394,23172
+Drängelgitter	BNP:3::trailer=10 3816,22602
+Drängelgitter	BNP:3::trailer=10 3869,22581
+enges Drängelgitter (60cm)	BNP:5::trailer=no 3101,20649
 Schranke	BNP:3::trailer=10 17201,13510
 Schranke	BNP:3::trailer=10 17200,13530
 Schranke	BNP:3::trailer=10 8470,23986
@@ -2157,10 +2167,12 @@ Sonnenkieker: Bauarbeiten	2:inwork 22610,13808 22669,13842 22692,13836
 # 
 #XXX del --- #: last_checked: 2011-06-26 --- #: XXX hier muss noch der genaue Wegverlauf ermittelt werden --- Uferweg am Salzhof: ein Teilabschnitt ist noch nicht freigegeben	2:inwork -1942,16105 -1979,15994 -1923,15684
 # 
-#: last_checked: 2011-06-26 vvv
-#: next_check: 2011-12-31 vvv
+#: last_checked: 2012-09-01 vvv
+#: next_check: 2013-12-31 vvv
 Tegeler Hafen: Weg über Insel gesperrt	2 1756,20405 1736,20441 1742,20464 1762,20505 1761,20539
 Tegeler Hafen: Weg gesperrt	2 1630,20731 1668,20670 1687,20645 1697,20623 1721,20603
+#: XXX jetzt werden Häuser hier gebaut; wird später das Durchfahren möglich sein?
+Uferweg am Tegeler Hafen: Weg wegen Bauarbeiten gesperrt	2:inwork 1861,20467 1826,20492 1761,20539 1741,20571
 #: next_check: ^^^
 #: last_checked ^^^
 # 

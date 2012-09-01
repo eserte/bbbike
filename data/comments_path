@@ -90,10 +90,10 @@ Straﬂburger Str. - Torstr.: Fuﬂg‰ngerfurt (Dr‰ngelgitter) ca. 50m westlich der K
 Torstr. - Straﬂburger Str.: Fuﬂg‰ngerfurt (Dr‰ngelgitter) ca. 50m westlich der Kreuzung benutzen	CP; 10746,13673 10902,13604 11060,13865
 K‰the-Niederkirchner-Str - Greifswalder Str.: Fuﬂg‰ngerfurt (Dr‰ngelgitter) ca. 50m nord-ˆstlich der Kreuzung benutzen	CP; 12148,13961 11991,14060 11946,13993
 Greifswalder Str. - K‰the-Niederkirchner-Str: Fuﬂg‰ngerfurt (Dr‰ngelgitter) ca. 50m nord-ˆstlich der Kreuzung benutzen oder schon an der Marienburger die Straﬂenseite wechseln	PI; 12077,14186 11991,14060 12148,13961
-Heinrich-Roller-Str. - Greifswalder Str.: Fuﬂg‰ngerfurt (Dr‰ngelgitter) benutzen	CP; 11616,13911 11820,13804 11946,13993
-Greifswalder Str. - Heinrich-Roller-Str.: Fuﬂg‰ngerfurt (Dr‰ngelgitter) benutzen	CP; 11706,13635 11820,13804 11616,13911
-Immanuelkirchstr. - Greifswalder Str.: Fuﬂg‰ngerfurt (Dr‰ngelgitter) benutzen	CP; 11727,14111 11946,13993 11991,14060
-Greifswalder Str. - Immanuelkirchstr.: Fuﬂg‰ngerfurt (Dr‰ngelgitter) benutzen	CP; 11820,13804 11946,13993 11727,14111
+Heinrich-Roller-Str. - Greifswalder Str.: Fuﬂg‰ngerfurt (Dr‰ngelgitter) benutzen	CP; 11602,13920 11820,13804 11946,13993
+Greifswalder Str. - Heinrich-Roller-Str.: Fuﬂg‰ngerfurt (Dr‰ngelgitter) benutzen	CP; 11706,13635 11820,13804 11602,13920
+Immanuelkirchstr. - Greifswalder Str.: Fuﬂg‰ngerfurt (Dr‰ngelgitter) benutzen	CP; 11713,14118 11946,13993 11991,14060
+Greifswalder Str. - Immanuelkirchstr.: Fuﬂg‰ngerfurt (Dr‰ngelgitter) benutzen	CP; 11820,13804 11946,13993 11713,14118
 Kietz - Kietzer Str.: zum ‹berqueren der Straﬂe Fuﬂg‰ngerampel links benutzen	CP; 22364,4429 22383,4470 22372,4496 22358,4521
 Kietz - M¸ggelheimer Str.: zum ‹berqueren der Straﬂe Fuﬂg‰ngerampel links benutzen	CP; 22364,4429 22383,4470 22341,4483
 als "Neue Dorfstr." ausgeschildert	CS; 52490,75434 52181,75778
@@ -150,7 +150,7 @@ Dr‰ngelgitter auf der rechten Seite unter der Hochbahn	CP; 11295,16199 10997,162
 (Scottweg - Tharauer Allee): Weg beginnt links neben dem Garagenparkplatz	CP2; -1403,11279 -1505,11307
 Alexandrinenstr.: Gehweg benutzen, nicht die Straﬂe zu den Parkpl‰tzen	CP2; 10678,11172 10818,11269
 Spreehagen - Langendamm: der Weg startet etwas versteckt direkt hinter dem Ortsausgang Spreenhagen an einer groﬂen Bushaltestelle auf der linken Seite.	CP; 43593,-6607 43695,-6701 43738,-6684
-Ella-Kay-Str. - Danziger Str.: zun‰chst den linken Gehweg bis zur Ampel an der Winsstr. benutzen	CP; 12089,14891 11990,14714 12040,14688
+Ella-Kay-Str. - Danziger Str.: zun‰chst den linken Gehweg bis zur Ampel an der Winsstr. benutzen	CP; 12089,14891 11990,14714 12025,14695
 Ladenbergstr. - Altensteinstr.: an der Kreuzung Habelschwerdter Allee Fuﬂg‰ngerampel auf der linken Seite benutzen	CP; 2858,4372 2997,4378 3033,4503
 Ladenbergstr. - Habelschwerdter Allee: an der Kreuzung Fuﬂg‰ngerampel auf der linken Seite benutzen	CP; 2858,4372 2997,4378 2857,4578
 zum Mehringplatz: hinter dem BVG-Warteh‰uschen in den Gehweg einbiegen	CP2; 9873,10285 9668,10306
@@ -305,7 +305,7 @@ Gustav-Adolf-Str. - Prenzlauer Promenade: auf dem linken Gehweg bis zur Ampel fa
 Caligariplatz - Prenzlauer Promenade: auf dem linken Gehweg bis zur Ampel fahren	CP; 12121,16317 12097,16263 12090,16199
 Am Alten Markt: Richtung TFH/Friedrich-Ebert-Str. abbiegen	CP; -12624,-1598 -12619,-1549 -12780,-1545
 Richtung Bergmannstr.	CP2; 10564,9292 10547,9233
-Ausgeschildert als: Zur Straﬂe 545	CP2; 30357,3555 30378,3501
+Ausgeschildert als "Zur Straﬂe 545"	CP2; 30357,3555 30378,3501
 Virchowstr. - Landsberger Allee: auf dem linken Geh-/Radweg bis zur Ampel fahren	CP; 12916,13368 12979,13280 13078,13330
 (Gruberzeile - Weinmeisterhornweg): an Wohnh‰usern vorbei, dann nach rechts abbiegen neben der Grundschule	CS; -5735,11793 -5584,11706 -5590,11651 -5623,11552
 (Weinmeisterhornweg - Gruberzeile): neben der Grundschule, dann links abbiegen an Wohnh‰usern vorbei	CS; -5623,11552 -5590,11651 -5584,11706 -5735,11793
@@ -367,3 +367,5 @@ Winzerstr. - Heerstr.: auf den rechten Weg einbiegen	CP2; -4687,11885 -4637,1198
 Residenzstr. - Am Sch‰fersee: bereits an der Ampel Pankower Allee auf den linken Gehweg wechseln	PI; 7579,17532 7572,17558 7477,17544
 Residenzstr. - Lettestr.: bereits an der Ampel Markstr./Residenzstr. auf den linken Gehweg wechseln	PI; 7602,17399 7684,17435 7707,17445
 Am Stand - Klemkestr.: den linken Gehweg bis zur Kreuzung Lampesteig benutzen	CP; 7484,18778 7492,18699 7520,18701
+Ausgeschildert als "Zur Wickeder Str."	CP2; 2821,18831 2794,18836
+Ausgeschildert als "Zur Wilhelm-Blume-Allee"	CP2; 2570,20837 2469,20812

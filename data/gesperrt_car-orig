@@ -90,12 +90,12 @@ L¸tzowplatz	1 7002,11034 6873,11011
 Romain-Rolland-Str. - Berliner Str.	3 12856,17825 12825,17870 12736,17998 12467,17814
 Mahlower Str.	1 11773,8231 11920,8252
 Essener Str.	1 5889,13032 5993,13064 6114,13095 6183,13083
-Belforter Str. - Heinrich-Roller-Str.	3 11299,14112 11435,14023 11616,13911
-Heinrich-Roller-Str. - Belforter Str.	3 11616,13911 11435,14023 11299,14112
+Belforter Str. - Heinrich-Roller-Str.	3 11299,14112 11435,14023 11602,13920
+Heinrich-Roller-Str. - Belforter Str.	3 11602,13920 11435,14023 11299,14112
 Belforter Str. - Prenzlauer Allee	3 11299,14112 11435,14023 11468,14121 11476,14142 11506,14230
 Prenzlauer Allee - Belforter Str.	3 11389,13887 11435,14023 11299,14112
-Prenzlauer Allee - Heinrich-Roller-Str.	3 11506,14230 11476,14142 11468,14121 11435,14023 11616,13911
-Heinrich-Roller-Str. - Prenzlauer Allee	3 11616,13911 11435,14023 11389,13887
+Prenzlauer Allee - Heinrich-Roller-Str.	3 11506,14230 11476,14142 11468,14121 11435,14023 11602,13920
+Heinrich-Roller-Str. - Prenzlauer Allee	3 11602,13920 11435,14023 11389,13887
 Allerstr.	1 11879,7720 12055,7751
 Hiddenseer Str.	1 11657,15271 11828,15210
 Koserstr.	1 2950,6141 3112,6090 3118,6140 3209,6206 3309,6270
@@ -368,6 +368,7 @@ Berliner Allee: Straﬂenbahn	3nocross 13512,15909 13623,15954 13630,15956 13737,1
 Berliner Allee: Straﬂenbahn	3nocross 13401,15821 13432,15843 13487,15888 13512,15909
 #: note: ^^^
 #: by: Nicolas Schier:
+#: confirmed_by: srt
 Talsandweg: Einbahnstraﬂe	1 3206,21179 3138,21372
 #: note: Luftbild: vvv
 Buckower Chaussee: Mittelstreifen	3nocross 10047,813 10187,872 10269,906
@@ -649,7 +650,7 @@ Wustermarker Str.:	1 -4385,14305 -4556,14349
 Hundekehlestr.: Mittelstreifen	3nocross 2346,7684 2460,7658 2576,7634
 Berliner Str.	3nocross 10849,17848 10858,17721 10878,17490
 Lietzenburger Str.	3nocross 5063,10384 5207,10399 5329,10422
-Greifswalder Str.: Straﬂenbahntrasse	3nocross 12228,14404 12177,14335 12077,14186
+Greifswalder Str.: Straﬂenbahntrasse	3nocross 12228,14404 12188,14350 12177,14335 12077,14186
 Sybelstr.	1 3978,10582 3883,10577
 Giesebrechtstr.	1 3912,10699 3997,10607 4017,10585 4030,10575 4153,10453 4157,10418
 Clausewitzstr.	1 3971,10381 4007,10559
