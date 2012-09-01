@@ -44,6 +44,7 @@ use BBBikeUtil qw(is_in_path);
 	      validate_bbbikecgires_xml_string
 	      eq_or_diff is_long_data like_long_data unlike_long_data
 	      like_html unlike_html is_float using_bbbike_test_cgi using_bbbike_test_data check_cgi_testing
+	      get_pmake
 	    ),
 	   @opt_vars);
 
@@ -621,8 +622,12 @@ sub is_float ($$;$) {
     }
 }
 
+sub get_pmake () {
+    $^O =~ m{bsd}i ? "make" : is_in_path("freebsd-make") ? "freebsd-make" : "pmake";
+}
+
 sub _update_bbbike_test_data () {
-    my $make = $^O =~ m{bsd}i ? "make" : is_in_path("freebsd-make") ? "freebsd-make" : "pmake";
+    my $make = get_pmake;
     # -f BSDmakefile needed for old pmake (which may be found in Debian)
     my $cmd = "cd $testdir/data-test && $make -f BSDmakefile";
     system $cmd;

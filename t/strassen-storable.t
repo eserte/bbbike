@@ -10,11 +10,11 @@ use strict;
 use FindBin;
 use lib ("$FindBin::RealBin/..",
 	 "$FindBin::RealBin/../lib",
-	 "$FindBin::RealBin/../data");
+	 "$FindBin::RealBin/../data",
+	 $FindBin::RealBin);
 use Strassen;
 use Benchmark;
 use Getopt::Long;
-use BBBikeUtil qw(is_in_path);
 
 BEGIN {
     if (!eval q{
@@ -28,6 +28,8 @@ BEGIN {
 	exit;
     }
 }
+
+use BBBikeTest qw(get_pmake);
 
 ## results with 5.8.0:
 # normal: 0.078125
@@ -45,9 +47,8 @@ if (!GetOptions("fast" => \$fast,
 
 use vars qw($token %times $ext);
 
-my $make = $^O =~ m{bsd}i ? "make" : is_in_path("freebsd-make") ? "freebsd-make" : "pmake";
-
 unless ($fast) {
+    my $make = get_pmake;
     diag "Regenerating storable files in data, please be patient...\n";
     system("cd $FindBin::RealBin/../data && $make storable >/dev/null 2>&1");
 }
