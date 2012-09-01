@@ -36,14 +36,15 @@ use Strassen::Core;
 
 my $bbbike_url               = "http://bbbike.de";
 my $bbbike_data_url          = "http://bbbike.de/BBBike/data";
-my $bbbike_data_local_url    = "http://bbbike.hosteurope/BBBike/data";
+my $bbbike_pps_url           = "http://bbbike-pps";
+my $bbbike_data_pps_url      = "http://bbbike-pps/BBBike/data";
 
 my @urls;
 if ($ENV{BBBIKE_TEST_HTMLDIR}) {
     push @urls, "$ENV{BBBIKE_TEST_HTMLDIR}/data";
 } else {
     push @urls, $bbbike_data_url;
-    push @urls, $bbbike_data_local_url;
+    push @urls, $bbbike_data_pps_url;
 }
 
 my $tests_per_url = 17;
@@ -63,10 +64,9 @@ $uagzip->default_headers->push_header('Accept-Encoding' => 'gzip');
 $Http::user_agent .= " (BBBike-Test/1.0)";
 
 for my $url (@urls) {
-    local $TODO;
  SKIP: {
-	skip("local URL works only on herceg.local", $tests_per_url)
-	    if $url eq $bbbike_data_local_url && hostname !~ m{\.herceg\.(de|local)};
+	skip("pps system not reachable", $tests_per_url)
+	    if $url eq $bbbike_data_pps_url && !$ua->head($bbbike_pps_url)->is_success;
 
 	{
 	    my $resp = $ua->get("$url/temp_blockings/bbbike-temp-blockings-optimized.pl");
