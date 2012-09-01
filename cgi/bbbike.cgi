@@ -1859,23 +1859,25 @@ EOF
 	# Eine Addition aller aktuellen Straﬂen, die bei luise-berlin
 	# aufgef¸hrt sind, ergibt als Summe 10129
 	# Da aber auch einige "unoffizielle" Wege in der DB sind, d¸rften es an die 11000 werden
-	my($bln_str, $all_bln_str, $pdm_str) = (10500, 11000, 420);
+	# ---> es sind aber mehr als 11000. Am besten, ich lasse $all_bln_str weg...
+	my($bln_str, $pdm_str) = (11200, 450);
 	# XXX Use format number to get a comma in between.
 	if ($lang eq 'en') {
 	    print <<EOF;
 This is a route planner for cyclists in Berlin.
-Of the $all_bln_str streets in Berlin more than $bln_str are available for searching, also
-$pdm_str streets in Potsdam. If a street is not available, then the
-nearest crossing will be used automatically. <b>Please do not enter street numbers or postal codes.</b>
+More than $bln_str streets in Berlin are available for searching, also
+$pdm_str streets in Potsdam.
+<b>Please do not enter street numbers or postal codes.</b>
 EOF
 	} else {
 	    print <<EOF;
 Dieses Programm sucht (Fahrrad-)Routen in Berlin.
-Es sind ca. $bln_str von $all_bln_str Berliner Stra&szlig;en
-sowie ca. $pdm_str Potsdamer Stra&szlig;en erfasst. Bei nicht erfassten Straﬂen wird automatisch die
-n‰chste bekannte verwendet. <b>Straﬂen bitte ohne Hausnummern oder Postleitzahlen eingeben.</b><br><br>
+Es sind ca. $bln_str Berliner Stra&szlig;en
+sowie ca. $pdm_str Potsdamer Stra&szlig;en erfasst.
+<b>Straﬂen bitte ohne Hausnummern oder Postleitzahlen eingeben.</b>
 EOF
 	}
+	print "<br><br>";
 	print <<EOF if ($bi->{'can_table'});
 </td>
 <td rowspan="3" valign="top" @{[ $start_bgcolor ? "bgcolor=$start_bgcolor" : "" ]}>@{[ defined &teaser && !$bi->{'css_buggy'} ? teaser() : "" ]}</td>
