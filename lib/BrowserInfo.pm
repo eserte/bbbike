@@ -74,7 +74,9 @@ sub set_info {
     ($self->{'user_agent_name'}, $self->{'user_agent_version'}) =
 	_get_browser_version($user_agent);
 
-    if ($user_agent =~ /\((.*)\)/) {
+    if ($user_agent =~ m{\b(iPad|iPod|iPhone)\b.*like Mac OS X}) {
+	$self->{'user_agent_os'} = 'iOS';
+    } elsif ($user_agent =~ /\((.*)\)/) {
 	my(@infos) = split(/;\s*/, $1);
 	my $ignore_next = 0;
 	my $i; # be compatible with 5.003
