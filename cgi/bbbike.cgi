@@ -5019,7 +5019,7 @@ EOF
 		print "</td>";
 		$maybe_do_table_br->();
 	    }
-	    if ($can_palmdoc && !$is_m) {
+	    if ($can_palmdoc && !$is_m && $bi->{'user_agent_os'} !~ m{^(iOS)$}) {
 		print "<td>";
 		my $qq2 = new CGI $q->query_string;
 		$qq2->param('output_as', "palmdoc");
