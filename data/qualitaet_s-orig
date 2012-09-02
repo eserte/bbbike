@@ -2025,7 +2025,7 @@ Krumme Gärten: Asphalt	Q0 -4011,13407 -3994,13301 -4017,13167
 (Falkenseer Chaussee - Spektelake): Asphalt	Q0 -7208,15924 -7222,15833 -7173,15693 -7159,15543
 (An der Spektelake): Asphalt	Q0 -7159,15543 -7119,15501 -7035,15432 -6922,15394 -6802,15376
 #: confirmed_by: srt (nur am westlichen Ende)
-(Spektewiesen): Asphalt	Q0 -5680,15112 -5769,14992 -5969,15040 -6004,15063 -6118,15135 -6181,15161 -6197,15188 -6252,15228 -6498,15301 -6576,15294 -6755,15302 -6819,15292
+(Spektewiesen): Asphalt	Q0 -5680,15112 -5697,15098 -5778,15008 -5969,15040 -6004,15063 -6118,15135 -6181,15161 -6197,15188 -6252,15228 -6498,15301 -6576,15294 -6755,15302 -6819,15292
 #: confirmed_by: srt
 #: note: Brücke über den Spektegraben mit Holzbohlen
 (Spektewiesen): Asphalt	Q0 -6819,15292 -6802,15376
@@ -13029,7 +13029,7 @@ Hoppendorfer Str.: guter Beton	Q0 21810,7749 21914,7862 21994,7949
 Helbigstr.: schlechtes Kopfsteinpflaster	Q3 20362,3750 20339,3779 20109,4087
 # 
 #: by: Marco Lukowicz:
-(Am Spektesee, nördlicher Weg): sehr guter Schotterweg	Q1+ -5680,15112 -5709,15109 -5749,15149 -5697,15246 -5728,15307 -5895,15313 -6148,15306
+(Am Spektesee, nördlicher Weg): sehr guter Schotterweg	Q1+ -5680,15112 -5695,15111 -5749,15149 -5697,15246 -5728,15307 -5895,15313 -6148,15306
 # 
 #: by: Thomas Iwanowski:
 Ulrich-von-Hassell-Weg: guter Asphalt	Q0 14902,2149 14789,2149 14681,2231
@@ -16972,6 +16972,10 @@ Viereckweg: schlechtes Kopfsteinpflaster	Q3 16471,26234 16547,26309 16683,26448 
 Wolfsberger Str.: guter Asphalt	Q0 24370,9542 24426,9609 24470,9628 24544,9660 24559,9682 24609,9771 24672,9889 24688,9918 24718,9966 24755,10028 24788,10090 24792,10162 24797,10309 24796,10451 24804,10477
 # 
 #: by: Sara Köhler: vvv
+#: confirmed_by: Stefan Klinkusch
+Eiserfelder Ring: guter Beton	Q0- -4720,15087 -4856,15089 -4881,15111 -4883,15175 -4862,15193 -4713,15191
+#: confirmed_by: anonymous, Stefan Klinkusch
+Ederkopfweg: guter Asphalt	Q0- -4729,14958 -4761,14961 -4807,14990 -4879,15008
 An der Kappe: guter Asphalt	Q0 -4203,14515 -4341,14580
 An der Kappe: mäßiges Kopfsteinpflaster	Q2 -4341,14580 -4412,14610 -4512,14626 -4670,14637 -4780,14669 -4977,14761
 #: corrected_by: srt (by: http://www.flickr.com/photos/30482855@N04/5174220754/in/pool-39413187@N00/)
@@ -20109,6 +20113,24 @@ Silzer Weg: Asphalt	Q0 5929,389 6130,449
 #: by: ^^^
 # 
 #: by: Stefan Klinkusch vvv
+Wittgensteiner Weg: Beton	Q0 -4737,14862 -4729,14958 -4720,15087 -4713,15191 -4707,15255 -4693,15278
+Hainleiteweg: guter Beton	Q0- -4805,15596 -4772,15702
+Hümmlingweg: guter Beton	Q0- -5190,16203 -5217,16119
+Osningweg: guter Beton	Q0- -5077,16162 -5102,16086
+Kellerwaldweg: guter Beton	Q0- -5335,15745 -5314,15830
+#: note: anonymous meint: Beton ohne weitere Angaben
+Knüllweg: guter Beton	Q0- -5221,15714 -5198,15799
+Westerwaldstr.: Asphalt	Q0 -5039,15618 -5023,15688 -5000,15769 -5010,15787 -5056,15800 -5066,15820 -5059,15842 -5036,15923 -5019,15970 -4951,16116
+Netphener Weg: gutes Verbundsteinpflaster	Q1 -5146,15059 -5167,14957 -5199,14835
+Salchendorfer Weg: guter Beton	Q0- -5123,15298 -4972,15297
+Mülheimer Str.: guter Beton	Q0- -5531,15522 -5473,15742
+Oberhauser Str.: guter Beton	Q0- -5426,15528 -5373,15714
+Lüdinghauser Weg: guter Beton	Q0- -5442,15282 -5396,15515
+Unnaer Str.: guter Beton	Q0- -5608,15105 -5600,15214 -5590,15313 -5575,15512
+#: note: anonymous meint: Q2 ohne weitere Angaben, q1, enge Straße, und: "sehr zugeparkt"
+#: note: ein weiterer anonymous meint: Q0 Asphalt, q0 ohne weitere Angaben
+Iserlohner Str.: guter Beton	Q0- -5575,15512 -5531,15522 -5481,15526 -5426,15528 -5396,15515 -5319,15477 -5208,15460
+Portaer Str.: mäßiges Verbundsteinpflaster	Q2+ -5590,15313 -5527,15285 -5442,15282 -5355,15277
 Wandsbeker Weg: Beton	Q0 -6641,14044 -6542,14057
 Filmwerkeweg: Beton	Q0 -7050,13807 -7046,13918
 (Magistratsweg - Maulbeerallee): Verbundsteinpflaster	Q0- -6051,12673 -5613,12750 -5594,12832
@@ -20343,6 +20365,11 @@ Lichtweg: Asphalt	Q0 1301,18297 1337,18427
 #: by: kai (without email)
 #: confirmed_by: srt
 Martha-Fontane-Str.: gutes Verbundsteinpflaster	Q1+ 11788,23229 11754,23195 11600,23317
+# 
+#: by: Eddie Haas:
+#: note: Manuela Walda meinte: "guter Asphalt", q1 ohne weitere Angaben
+#: confirmed_by: Stefan Klinkusch
+Gütersloher Weg: guter Beton	Q0- -5527,15285 -5481,15526
 # 
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)

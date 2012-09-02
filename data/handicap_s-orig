@@ -63,12 +63,12 @@ Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9875,12257 9869,12297
 #: next_check: 2012-09-01
 Kronenstr./Jerusalemer Str.: Bauarbeiten, Fahrbahn vor der Kreuzung gesperrt	q3::inwork 9692,11732 9892,11752
 # 
-#: last_checked: 2012-07-13
-#: next_check: 2012-09-01
+#: last_checked: 2012-09-02
+#: next_check: 2012-11-01
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 9475,12365 9462,12481 9454,12558
 # 
-#: last_checked: 2012-07-13
-#: next_check: 2012-09-01
+#: last_checked: 2012-09-02
+#: next_check: 2012-11-01
 Universitätsstr.: wegen Bauarbeiten Richtung Unter den Linden gesperrt	q4::inwork 9580,12581 9601,12380
 # 
 #: last_checked: 2012-08-25 vvv
@@ -123,8 +123,8 @@ Anna-Louisa-Karsch-Str.: vor der Friedrichsbrücke auf den linken Gehweg fahren	q
 #: next_check: 2012-10-15
 Am Zirkus: Baustelle, Einbahnstraße	q3::inwork; 9170,13031 9239,12923
 # 
-#: last_checked: 2012-07-13
-#: next_check: 2012-09-01
+#: last_checked: 2012-09-02
+#: next_check: 2012-10-15
 Am Kupfergraben: Baustelle, Einbahnstraße	q3::inwork; 9867,12651 9919,12613
 # 
 #: temporary ^^^
@@ -2844,6 +2844,8 @@ Bulgenbachweg: enge Straße	q0- 3431,26192 3452,26160 3478,26119 3520,26081 3574,
 Schmöckwitzwerder Süd: enge Straße	q1 30343,-3454 30133,-3840
 # 
 #: by: Stefan Klinkusch: vvv
+#: confirmed_by: anonymous
+Ederkopfweg: enge Straße	q0- -4729,14958 -4761,14961 -4807,14990 -4879,15008
 Iznikstr.: enge Straße	q0- -2133,16934 -2119,17015
 #: XXX_prog: BS
 David-Francke-Str.: Bordsteinkante	q3 -2154,16660 -2137,16658

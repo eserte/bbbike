@@ -1003,6 +1003,8 @@ Fuststr. -> Edisonstr.: Straßenbahn	3::igndisp 17823,7203 17934,7029 18010,7133
 Mittelstreifen	3nocross::ignrte -5039,15618 -5154,15651 -5373,15714 -5473,15742
 Falkenseer Chaussee -> Remscheider Str.: Mittelstreifen	3::igndisp -5039,15618 -5154,15651 -5192,15517
 Remscheider Str. -> Falkenseer Chaussee: Mittelstreifen	3::igndisp -5192,15517 -5154,15651 -5373,15714
+Oberhauser Str. -> Falkenseer Chaussee: Mittelstreifen	3::igndisp -5426,15528 -5373,15714 -5473,15742
+Falkenseer Chaussee -> Oberhauser Str.: Mittelstreifen	3::igndisp -5154,15651 -5373,15714 -5426,15528
 Straßenbahntrasse	3nocross::ignrte 20269,14256 20241,14016 20210,13776
 Cecilienstr. -> Allee der Kosmonauten: Straßenbahntrasse	3::igndisp 20281,14012 20241,14016 20210,13776
 Allee der Kosmonauten -> Cecilienstr.: Straßenbahntrasse	3::igndisp 20269,14256 20241,14016 20281,14012
