@@ -4827,7 +4827,7 @@ EOF
 		print "<a class=ms href='#' onclick='return ms($etappe->{Coord})'>"
 		    if $can_jslink;
 		print $strname;
-		if ($important_angle_crossing_name) {
+		if ($important_angle_crossing_name && $important_angle_crossing_name ne $strname) {
 		    print " (" . M("Ecke") . " " . $important_angle_crossing_name . ")";
 		}
 		print "</a>"
