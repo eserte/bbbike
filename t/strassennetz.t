@@ -47,7 +47,7 @@ BEGIN {
     }
 }
 
-plan tests => 74 + $have_nowarnings;
+plan tests => 77 + $have_nowarnings;
 
 print "# Tests may fail if data changes\n";
 
@@ -58,6 +58,10 @@ if (!GetOptions(get_std_opts(qw(xxx)))) {
 my $s		  = Strassen::Lazy->new("strassen");
 my $s_net	  = StrassenNetz->new($s);
 $s_net->make_net(UseCache => 1);
+$s_net->make_sperre(
+		    'gesperrt',
+		    Type => [qw(einbahn sperre wegfuehrung)],
+		   );
 
 my $qs              = Strassen::Lazy->new("qualitaet_s");
 my $comments_path   = Strassen::Lazy->new("comments_path");
@@ -315,6 +319,32 @@ EOF
 	my(@route) = $s_net->route_to_name($path);
 	is($route[0][StrassenNetz::ROUTE_EXTRA]{ImportantAngle}, undef, "Important angle not set here (Martin-Luther-Str.)")
 	    or diag(Dumper(\@route));
+    }
+}
+
+{
+    # Bug reported (sort-of) by Felix Weiland
+    # a '3nocross' was acting badly on a route on Pankeweg via Badstr.
+    # -> it was not used at all!
+    my $start = '8759,16684'; # Pankeweg, north of Badstr.
+    my $goal  = '8389,16214'; # Pankeweg, south of Badstr.
+    for my $c ($start, $goal) { # points may move ... fix it!
+	$c = $s_net->fix_coords($c);
+    }
+
+    {
+	my($path) = $s_net->search($start, $goal);
+	my(@route) = $s_net->route_to_name($path);
+	my @street_names = map { $_->[StrassenNetz::ROUTE_NAME] } @route;
+	like "@street_names", qr{Travemünder Str.*Zugang zum Pankeweg.*Badstr.*Gropiusstr.};
+	unlike "@street_names", qr{Badstr.*linker Gehweg};
+    }
+
+    {
+	my($path) = $s_net->search($goal, $start);
+	my(@route) = $s_net->route_to_name($path);
+	my @street_names = map { $_->[StrassenNetz::ROUTE_NAME] } @route;
+	like "@street_names", qr{Gropiusstr.*Badstr.*linker Gehweg.*Zugang zum Pankeweg.*Travemünder Str};
     }
 }
 
