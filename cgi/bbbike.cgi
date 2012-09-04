@@ -6139,7 +6139,7 @@ sub get_streets {
 	}
     }
 
-    $crossings = {};
+    undef $crossings;
 
     $g_str;
 }
@@ -6183,7 +6183,7 @@ sub get_orte {
 }
 
 sub all_crossings {
-    if (scalar keys %$crossings == 0) {
+    if (!$crossings) {
 	my $str = get_streets();
 	$crossings = $str->all_crossings(RetType => 'hash',
 					 UseCache => 1);
