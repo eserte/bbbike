@@ -72,7 +72,7 @@ plan tests => 1 + $core_tests;
 
 sub get_agent {
     my $agent = WWW::Mechanize->new;
-    $agent->agent("BBBikeTest/1.0");
+    $agent->agent("BBBike-Test/1.0");
     $agent->env_proxy;
     $agent;
 }

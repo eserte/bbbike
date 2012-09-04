@@ -131,7 +131,7 @@ if (!@browsers) {
 	   "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; [eburo v1.3]; Wanadoo 7.0 ; NaviWoo1.1)"
 	  );
 }
-@browsers = map { "$_ BBBikeTest/1.0" } @browsers;
+@browsers = map { "$_ BBBike-Test/1.0" } @browsers;
 
 my $outer_berlin_tests = 30;
 my $tests = 133 + $outer_berlin_tests;
