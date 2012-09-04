@@ -14,13 +14,18 @@ Modersohnstr.: Bauarbeiten, Einbahnstraﬂenregelung	q3::inwork; 14181,11434 14134
 #: last_checked: 2012-08-25
 Mainzer Str.: Baustelle, Einbahnstraﬂenregelung	q3::inwork; 14357,12011 14427,12197
 # 
+#: last_checked: 2012-09-03
+#: next_check: 2012-10-22
+#: XXX siehe auch: NEW	Friedrichstr. (Mitte): Baustelle, Straﬂe vollst‰ndig gesperrt, eine Umleitung ist eingerichtet in beiden Richtungen zwischen Mittelstr. und Unter den Linden, 29.08.2012 07:00 Uhr bis 23.10.2012 16:00 Uhr	INKO_115395
+Friedrichstr.: Fahrbahn zwischen Unter den Linden und Mittelstraﬂe gesperrt, Ausweichen auf Gehweg mˆglich	q4::inwork 9343,12464 9358,12351
+# 
 #: last_checked: 2012-07-13
 #: next_check: 2013-12-31
 #: XXX siehe auch INKO_091722
 #: XXX siehe auch tempor‰re Ampel an der Neust‰dtischen Kirchstr.
 Friedrichstr.(Mitte): Fahrbahn wegen Bauarbeiten gesperrt, Ausweichen auf Gehweg schiebend mˆglich	q4::inwork 9358,12351 9369,12253 9373,12197
 # 
-#: last_checked: 2012-07-13
+#: last_checked: 2012-09-03
 #: next_check: 2013-12-31
 Charlottenstr.: Einbahnstraﬂenregelung	q4::inwork; 9475,12365 9487,12263 9492,12214
 # 
@@ -59,11 +64,9 @@ Alt-Stralau: Bauarbeiten an der Br¸cke, enge Durchfahrt	q3::inwork 14652,10201 1
 #: XXX siehe auch Eintr‰ge in fragezeichen-orig (Falkoniergasse etc.)
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9875,12257 9869,12297
 # 
-#: last_checked: 2012-07-13
-#: next_check: 2012-09-01
-Kronenstr./Jerusalemer Str.: Bauarbeiten, Fahrbahn vor der Kreuzung gesperrt	q3::inwork 9692,11732 9892,11752
+#XXX del --- #: last_checked: 2012-07-13 --- #: next_check: 2012-09-01 --- Kronenstr./Jerusalemer Str.: Bauarbeiten, Fahrbahn vor der Kreuzung gesperrt	q3::inwork 9692,11732 9892,11752
 # 
-#: last_checked: 2012-09-02
+#: last_checked: 2012-09-03
 #: next_check: 2012-11-01
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraﬂe Richtung S¸den	q4::inwork; 9475,12365 9462,12481 9454,12558
 # 
@@ -78,11 +81,11 @@ Helmerdingstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg kann benutzt werden	q4::i
 #: next_check: ^^^
 #: last_checked: ^^^
 # 
-#: last_checked: 2012-08-01
-#: next_check: 2012-08-25
+#: last_checked: 2012-09-03
+#: next_check: 2012-10-01
 Marchlewskistr.: Bauarbeiten, Ausweichen auf Gehweg	q4::inwork 13496,11384 13473,11456
 # 
-#: last_checked: 2012-08-30
+#: last_checked: 2012-09-03
 #: next_check: 2012-10-15
 #: XXX danach q1 und mit Eintrag unten verkn¸pfen, falls hier in Zukunft keine Fahrbahn mehr sein wird
 Rathausstr.: Fuﬂg‰nger, enge Stelle vor dem Roten Rathaus	q2::inwork 10601,12521 10704,12595
@@ -440,7 +443,7 @@ Gr¸nstr.: Fuﬂg‰ngerzone, Radfahren erlaubt	q2 22111,4562 22162,4546 22214,4548 2
 Schloﬂplatz Kˆpenick: Fuﬂg‰nger, Straﬂenbahn, Lieferverkehr	q2 22111,4562 22093,4499
 (Karlsgartenstr. - Hasenheide): Parkweg, Fuﬂg‰nger	q1 11627,8485 11560,8488 11508,8491 11333,8582 11255,8591
 #: note: Radfahren erlaubt
-(Am Rixdorfer Teich): Parkweg, Fuﬂg‰nger	q1 11255,8591 11193,8568 11133,8560 11020,8596 10957,8573 10929,8503 10911,8457
+(Am Rixdorfer Teich): Parkweg, Fuﬂg‰nger	q1 11255,8591 11193,8568 11133,8560 11020,8596 10957,8573 10929,8503 10913,8463 10911,8457
 Torstr. - Weydingerstr.: Bordsteine	q2 11079,13492 11108,13513
 #: note: mˆglicherweise ist im Herbst/Winter weniger los, dann vielleicht q2?
 Gustav-Heinemann-Br¸cke: Fuﬂg‰nger, enge Br¸cke	q3 8116,12938 8110,13042
@@ -1690,7 +1693,7 @@ Vereinsweg (Steglitz): Fuﬂg‰nger, Privatstraﬂe, Radfahren nicht erlaubt	q4 5347,
 (Zufahrt Landsberger Allee): Fuﬂg‰nger	q2 13433,13346 13397,13426 13574,13505
 (Verl‰ngerte Wallenbergstr.): Fuﬂg‰nger, schmal	q3 4139,8485 4029,8482
 (Zufahrt zur Kolonie Hohenzollerndamm): Fuﬂg‰nger, Poller	q2 3775,8771 3868,8759
-Apeldorner Weg: Fuﬂg‰nger	q1 3848,8689 3868,8759 3932,8989
+Apeldorner Weg: Fuﬂg‰nger	q1 3848,8689 3868,8759 3952,8980
 M¸nstersche Str.: Fuﬂg‰nger	q2 3763,9642 3699,9613
 (Hoffmannstr. - Puschkinallee): Fuﬂg‰nger	q1 14076,10011 13995,9834
 (Hoffmannstr. - Uferweg an den Treptowers): Fuﬂg‰nger	q1 14076,10011 14118,10178

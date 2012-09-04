@@ -20078,8 +20078,8 @@ Am Schloss Schönhausen	2::night 10249,19148 10350,19182
 #: by: ^^^
 EOF
      },
-     { from  => undef, #
-       until => undef, #
+     { from  => 1346696132, # XXX was: undef, # --- ich habe hier noch nie eine Sperrung erlebt, auch Sa abends nicht
+       until => 1346696136, # XXX was: undef, #
        text  => 'Am Wriezener Bahnhof - Helsingforser Str./Wriezener Park: bei Veranstaltungen im Berghain u.U. nicht passierbar',
        type  => 'gesperrt',
        recurring => 1,

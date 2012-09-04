@@ -5,6 +5,7 @@
 #:
 Modersohnstr.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 14181,11434 14134,11272
 Mainzer Str.: Baustelle, Einbahnstraßenregelung	q3::inwork; 14357,12011 14427,12197
+Friedrichstr.: Fahrbahn zwischen Unter den Linden und Mittelstraße gesperrt, Ausweichen auf Gehweg möglich	q4::inwork 9343,12464 9358,12351
 Friedrichstr.(Mitte): Fahrbahn wegen Bauarbeiten gesperrt, Ausweichen auf Gehweg schiebend möglich	q4::inwork 9358,12351 9369,12253 9373,12197
 Charlottenstr.: Einbahnstraßenregelung	q4::inwork; 9475,12365 9487,12263 9492,12214
 Gartenstr.: Einbahnstraße zwischen Invalidenstr. und Tieckstr. (Bauarbeiten)	q4::inwork; 9510,13823 9383,13978
@@ -15,7 +16,6 @@ Schwarzer Weg: Einbahnstraßenregelung, auf Gehweg ausweichen	q3::inwork; 8429,13
 Hessische Str.: Sackgasse zur Invalidenstr.	q3::inwork 8775,13606 8690,13723
 Alt-Stralau: Bauarbeiten an der Brücke, enge Durchfahrt	q3::inwork 14652,10201 14558,10264
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9875,12257 9869,12297
-Kronenstr./Jerusalemer Str.: Bauarbeiten, Fahrbahn vor der Kreuzung gesperrt	q3::inwork 9692,11732 9892,11752
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 9475,12365 9462,12481 9454,12558
 Universitätsstr.: wegen Bauarbeiten Richtung Unter den Linden gesperrt	q4::inwork 9580,12581 9601,12380
 Helmerdingstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg kann benutzt werden	q4::inwork 14465,11195 14442,11101
@@ -307,7 +307,7 @@ Heidenfeldstr.: Gehweg	q1 13433,13346 13393,13326
 Grünstr.: Fußgängerzone, Radfahren erlaubt	q2 22111,4562 22162,4546 22214,4548 22312,4593
 Schloßplatz Köpenick: Fußgänger, Straßenbahn, Lieferverkehr	q2 22111,4562 22093,4499
 (Karlsgartenstr. - Hasenheide): Parkweg, Fußgänger	q1 11627,8485 11560,8488 11508,8491 11333,8582 11255,8591
-(Am Rixdorfer Teich): Parkweg, Fußgänger	q1 11255,8591 11193,8568 11133,8560 11020,8596 10957,8573 10929,8503 10911,8457
+(Am Rixdorfer Teich): Parkweg, Fußgänger	q1 11255,8591 11193,8568 11133,8560 11020,8596 10957,8573 10929,8503 10913,8463 10911,8457
 Torstr. - Weydingerstr.: Bordsteine	q2 11079,13492 11108,13513
 Gustav-Heinemann-Brücke: Fußgänger, enge Brücke	q3 8116,12938 8110,13042
 Beruner Str.: Rampen, Fußgänger, U-Bahn-Ausgang	q3 20143,10731 20215,10554
@@ -1253,7 +1253,7 @@ Vereinsweg (Steglitz): Fußgänger, Privatstraße, Radfahren nicht erlaubt	q4 5347,
 (Zufahrt Landsberger Allee): Fußgänger	q2 13433,13346 13397,13426 13574,13505
 (Verlängerte Wallenbergstr.): Fußgänger, schmal	q3 4139,8485 4029,8482
 (Zufahrt zur Kolonie Hohenzollerndamm): Fußgänger, Poller	q2 3775,8771 3868,8759
-Apeldorner Weg: Fußgänger	q1 3848,8689 3868,8759 3932,8989
+Apeldorner Weg: Fußgänger	q1 3848,8689 3868,8759 3952,8980
 Münstersche Str.: Fußgänger	q2 3763,9642 3699,9613
 (Hoffmannstr. - Puschkinallee): Fußgänger	q1 14076,10011 13995,9834
 (Hoffmannstr. - Uferweg an den Treptowers): Fußgänger	q1 14076,10011 14118,10178
@@ -1934,3 +1934,8 @@ Badstr., linker Gehweg	q3::igndisp; 8534,16355 8486,16412 8486,16425
 Tempelhofer Ufer, linker Gehweg	q4::igndisp; 8804,10303 8717,10322 8661,10377
 Leipziger Str., linker Gehweg	q3::igndisp; 9896,11703 9985,11711
 zur Ampel Jerusalemer Str.	q3::igndisp; 9985,11711 9987,11690 9982,11681
+Columbiadamm, linker Gehweg	q3::igndisp; 10796,8498 10799,8504 10913,8463
+#: note: Münchener Str./Hohenstaufenstr.: von Norden nach Süden vvv
+Hohenstaufenstr., linker Gehweg bis zur Fußgängerampel	q3::igndisp; 6209,9774 6241,9772
+zur Münchener Str. auf dem linken Gehweg	q3::igndisp; 6241,9772 6209,9771
+#: note: ^^^
