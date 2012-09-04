@@ -1001,36 +1001,3 @@ EOF
 1;
 
 __END__
-
-Installation notes for www.radzeit.de: see ~/www/www.radzeit.de/Makefile
-
-OLD NOTES:
-
-Installation notes for www.radzeit.de
-
-- There are two bbbike installations: /usr/local/apache/radzeit/BBBike{,2}.
-  The cgi programs are in /usr/local/apache/radzeit/cgi-bin.
-  The plan is to make the config files relocatable and switch easily between
-  BBBike and BBBike2 --- or to make either BBBike or BBBike2 the default
-  installation by adding "ScriptAlias /cgi-bin/bbbike.cgi ..." and some
-  hand-editing of the config files etc.
-
-- Steps for an data/prog update on www.radzeit.de
-
-  # This may take a long time
-  cd data_berlin_and_potsdam && make
-  # This one takes not so long
-  cd data_corrected && make mapfiles
-  cd .. && make rsync-radzeit-test-prog-quick
-
-- Steps for an data update only
-  # This may take a long time
-  cd data_berlin_and_potsdam && make
-  # This one takes not so long
-  cd data_corrected && make mapfiles
-  cd .. && make rsync-radzeit-test-data
-  cd mapserver/brb && make dist-radzeit rsync-radzeit
-
-Installation notes for user.cs.tu-berlin.de
-
-- install redirect script unless gd runs again
