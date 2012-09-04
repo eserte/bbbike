@@ -1412,8 +1412,8 @@ GESPERRT_CATRX='^(0:\d+(:-?\d+)?|1|1s(:q\d)?|2|3|3nocross|BNP:\d+(:-?\d+(:traile
 .for i in $(COMMENTS_PARTIAL)
 .check_comments1:	.check_${i}_1
 
-.check_${i}_1:	$i .strassen.tmp landstrassen landstrassen2 faehren fragezeichen
-	$(CHECK_POINTS) $i .strassen.tmp landstrassen landstrassen2 faehren fragezeichen
+.check_${i}_1:	$i strassen landstrassen landstrassen2 faehren fragezeichen
+	$(CHECK_POINTS) $i strassen landstrassen landstrassen2 faehren fragezeichen
 	@touch $@
 
 .endfor
