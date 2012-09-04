@@ -53,7 +53,6 @@ if (defined $ENV{BBBIKE_TEST_CGIURL}) {
 
 my $cpt = Safe->new;
 
-my $fast = 0;
 my $ortsuche = 0; # XXX funktioniert nicht mehr
 my $do_display = 0;
 my $do_xxx;
@@ -68,7 +67,6 @@ $ua->env_proxy;
 if (!GetOptions("cgiurl=s" => sub {
 		    @urls = $_[1];
 		},
-		"fast!" => \$fast,
 		"ortsuche!" => \$ortsuche,
 		"display!" => \$do_display,
 		"xxx" => \$do_xxx,
