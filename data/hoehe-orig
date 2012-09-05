@@ -1190,7 +1190,9 @@
 43.6	X -6006,1234
 41.8	X -5499,1349
 40.8	X -6021,2068
-49.9	X -6025,1999
+#XXX del --- wrong! --- hier ist nicht so eine Steigung! --- 49.9	X -6025,1999
+#: note: interpoliert mit Barometer
+38	X -6025,1999
 37.3	X -5722,2714
 35.2	X -5719,2323
 31.4	X -5893,1969
@@ -1484,6 +1486,8 @@
 # ca.:
 45.8	X 16227,12280
 47.4	X 16445,12193
+#: XXX extrapoliert vom benachbarten Punkt
+47.4	X 16556,12180
 40.9	X 20114,11719
 42.9	X 20575,11698
 38.3	X 20525,11488
@@ -1577,6 +1581,8 @@
 45.2	X 13283,12895
 51.9	X 13330,13468
 51.5	X 15256,14237
+# interpolated with Barometer
+54.2	X 15164,14392
 56.7	X 15058,14575
 48.9	X 15502,13539
 # sehr ca.:
@@ -1748,6 +1754,8 @@
 45	X 17210,11950
 # Barometer zum benachbarten Punkt
 37.5	X 16413,11906
+# Barometer zum benachbarten Punkt
+38.5	X 16512,11894
 # Barometer zum benachbarten Punkt
 50	X 16485,12384
 # Barometer zum benachbarten Punkt
@@ -2132,6 +2140,8 @@
 33.0	X -5268,11795
 48.3	X -5256,11142
 37.1	X -5229,11230
+#: note: Interpolation mit Barometer
+39.0	X -5236,11204
 41.6	X -5501,11251
 38.6	X -5455,11321
 33.6	X -3892,12560
@@ -2201,6 +2211,7 @@
 37.5	X 3050,22554
 37.6	X 3198,22720
 37.1	X 3214,22578
+#: XXX Stimmt dieser Höhenpunkt?
 35.0	X 3094,22233
 33.0	X 3099,22211
 37.9	X 3531,22440
@@ -2235,7 +2246,7 @@
 36.5	X 3985,22236
 37.2	X 4032,22374
 42.5	X 4007,23709
-49.2	X 3947,23547
+#XXX del --- wrong! Hier ist keine so signifikante Steigung --- 49.2	X 3947,23547
 41.1	X 3953,23401
 41.7	X 3698,23657
 41.7	X 4201,23397
