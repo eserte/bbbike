@@ -81,11 +81,11 @@ Helmerdingstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg kann benutzt werden	q4::i
 #: next_check: ^^^
 #: last_checked: ^^^
 # 
-#: last_checked: 2012-09-03
+#: last_checked: 2012-09-04
 #: next_check: 2012-10-01
 Marchlewskistr.: Bauarbeiten, Ausweichen auf Gehweg	q4::inwork 13496,11384 13473,11456
 # 
-#: last_checked: 2012-09-03
+#: last_checked: 2012-09-04
 #: next_check: 2012-10-15
 #: XXX danach q1 und mit Eintrag unten verknüpfen, falls hier in Zukunft keine Fahrbahn mehr sein wird
 Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q2::inwork 10601,12521 10704,12595
@@ -94,9 +94,7 @@ Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q2::inwork 10601,12521
 #: next_check: 2012-09-10 vvv
 #: XXX siehe auch Eintrag in fragezeichen-orig (Ampel in Bau)
 #: note: komplette Fertigstellung und Verkehrsfreigabe im Frühjahr 2013
-Rathausbrücke: provisorischer Fußgängerweg auf der Rathausbrücke, ggfs. schieben	q4::inwork 10362,12351 10422,12395
-Rathausstr. zwischen Breite Str. und Poststr.: Fahrbahn wegen Brückenbauarbeiten gesperrt	q2::inwork 10281,12310 10362,12351
-Rathausstr. zwischen Breite Str. und Poststr.: Fahrbahn wegen Brückenbauarbeiten gesperrt	q4::inwork 10422,12395 10476,12432
+Rathausstr. und Rathausbrücke: Behinderungen wegen Bauarbeiten möglich	q2::inwork 10281,12310 10362,12351 10422,12395 10476,12432
 #: next_check: ^^^
 #: last_checked: ^^^
 # 
@@ -1332,6 +1330,7 @@ Alt-Tegel: Fußgänger	q3 1462,20133 1457,20159
 (Uferweg am Tegeler Hafen - Am Tegeler Hafen): 3x kurze und steile Rampe	q4 1858,20431 1871,20399
 (Am Rosensteg - An der Heide): eng	q3 3065,20646 3101,20649 3109,20650
 (Rosentreterpromenade - Ziekowstr.): schmal	q2+ 4156,21175 4060,21147 3649,21102 3456,21071 2911,20953 2571,20886
+(Oskar-Ziethen-Krankenhaus): Krankenhausgelände, Fußgänger	q2 16541,12064 16556,12180
 #
 ######################### User Contributions #################################
 # 
