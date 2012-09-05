@@ -7216,8 +7216,7 @@ sub draw_route_from_fh {
 	$res = Route::load($file, { }, -fuzzy => 1);
     };
     my $err = $@;
-    ## XXX unlink later...
-    #unlink $file;
+    unlink $file;
 
     if ($res->{RealCoords}) {
 	$q->param('draw', 'all');
