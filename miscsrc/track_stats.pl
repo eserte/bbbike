@@ -706,8 +706,7 @@ __END__
 
  Create a streets-polar.bbd with all tracks in WGS84 coordinate system (see tracks-polar rule in misc/gps_data).
 
- Set bbbike's output coordinate system to "polar" (WGS-84).
- Alternatively use the "standard" coodinate system; in this case the command invocations below need also the C<-coordsys standard> option.
+ Use the standard bbbike's output coordinate system. If you use "polar" (WGS-84), then you have to omit the C<-coordsys standard> option from the following command invocations.
 
  Activate to edit/select mode ("Koordinaten in Zwischenablage")
 
@@ -715,15 +714,15 @@ __END__
 
  Run the programm:
 
-   ./track_stats.pl <coord1> <coord2> : <coord3> <coord4> -state cache/somefile -stage output
+   ./track_stats.pl <coord1> <coord2> : <coord3> <coord4> -coordsys standard -state /tmp/cache_track_stats -stage output
 
  Force recalculation (or just delete the cached state file):
 
-   ./track_stats.pl <coord1> <coord2> : <coord3> <coord4> -state cache/somefile -stage begin
+   ./track_stats.pl <coord1> <coord2> : <coord3> <coord4> -coordsys standard -state /tmp/cache_track_stats -stage begin
 
  Add some filters on the statistics:
 
-   ./track_stats.pl <coord1> <coord2> : <coord3> <coord4> -state cache/somefile -stage statistics -filterstat 'file=~/2010/'
+   ./track_stats.pl <coord1> <coord2> : <coord3> <coord4> -coordsys standard -state /tmp/cache_track_stats -stage statistics -filterstat 'file=~/2010/'
 
 =head1 TODO
 
