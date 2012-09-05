@@ -214,10 +214,12 @@ sub stage_trackdata {
 	my($to1,  $to2)   = @{ $todef->[1] };
 	my($from_fence1,$from_fence2) = @{ $fromdef->[2] };
 	my($to_fence1,  $to_fence2)   = @{ $todef->[2] };
-	my $gps = eval { GPS::GpsmanData::Any->load("$gpsman_dir/$file") };
+	my $abs_path = "$gpsman_dir/$file";
+	my $gps = eval { GPS::GpsmanData::Any->load($abs_path) };
 	if ($@) {
 	    my $save_err = $@; # first error is best
-	    $gps = eval { GPS::GpsmanData::Any->load("$gpsman_dir/generated/$file") };
+	    $abs_path = "$gpsman_dir/generated/$file";
+	    $gps = eval { GPS::GpsmanData::Any->load($abs_path) };
 	    if (!$gps) {
 		warn "$save_err, skipping...\n";
 		next;
@@ -344,6 +346,7 @@ sub stage_trackdata {
 			$result->{length} = $length;
 			$result->{velocity} = $result->{length} / $result->{difftime};
 			$result->{file} = $file;
+			$result->{abs_path} = $abs_path;
 			$result->{device} = guess_device($result);
 			$seen_device{$result->{device}} = 1;
 			$result->{diffalt} = !$altimeter_is_broken ? $chunk->Points->[$wpt_i]->Altitude - $result->{from2}->Altitude : undef;
@@ -529,27 +532,48 @@ sub save_state {
     sub format_device   { $_[0] }
 }
 
+# XXX This is completely tailored for srt, not reusable for others
+# (except the srt:device part)
 sub guess_device {
     my $result = shift;
     my($year, $month, $day) = $result->{file} =~ m{^(2\d{3})(\d{2})(\d{2})};
     if (defined $year) {
+	# First the exact check
+	my $srt_device = _parse_srt_device_quickly($result->{abs_path});
+	return $srt_device if defined $srt_device;
+	# XXX Then some heuristics, only for srt!
 	if ($year <= 2005 ||
 	    ($year == 2006 && $month <= 2) # XXX approx.!
 	   ) {
-	    return "etrex venture";
+	    return "Garmin etrex VENTURE";
 	} elsif (($year <= 2007) ||
 	    ($year == 2007 && ($month <= 11 ||
 			       $day < 24))
 	   ) {
-	    return "etrex vista";
+	    return "Garmin etrex VISTA";
 	} else {
-	    return "etrex vista hcx";
+	    return "Garmin etrex VISTA HCX";
 	}
     } elsif ($result->{file} =~ m{^W\d{13,14}}) { # for some reason, the time string may have only 5 chars
-	return "n95";
+	return "Nokia N95";
     } else {
 	return undef;
     }
+}
+
+sub _parse_srt_device_quickly {
+    my $file = shift;
+    if (open my $fh, $file) {
+	while(<$fh>) {
+	    if (m{\tsrt:device=([^\t]+)}) {
+		return $1;
+	    }
+	    last if $. > 20; # typically the srt:device identifier is in the 5th or 7th line
+	}
+    } else {
+	warn "Cannot open $file: $!";
+    }
+    undef;
 }
 
 sub guess_date {
