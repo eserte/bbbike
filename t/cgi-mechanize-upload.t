@@ -40,9 +40,9 @@ check_cgi_testing;
 my @gps_types = ("trk", "ovl", "bbr",
 		 "bbr-generated", "ovl-generated", "trk-generated",
 		);
-my $png_tests = 2;
+my $png_tests = 4;
 my $pdf_tests = 2;
-my $mapserver_tests = 5;
+my $mapserver_tests = 7;
 my $gpsman_tests = $png_tests + $pdf_tests + $mapserver_tests;
 my $only;
 
@@ -177,6 +177,7 @@ EOF
 		my $content = $agent->content;
 		cmp_ok($content, "ne", "", "Non-empty content")
 		    or diag "Error for uploaded file $filename";
+		image_ok \$content, "png from $testname";
 		if ($do_display) {
 		    do_display(\$content, "png");
 		}
@@ -234,6 +235,7 @@ EOF
 		like($agent->ct, qr{^image/}, "It's an image (png or gif) (from $testname)");
 		my $image_content = $agent->content;
 		cmp_ok($image_content, "ne", "", "Non-empty content");
+		image_ok \$content, "png or gif from $testname";
 		if ($do_display) {
 		    # Hopefully a png viewer can display gifs as well...
 		    do_display(\$image_content, "png");
