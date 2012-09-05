@@ -44,7 +44,7 @@ use BBBikeUtil qw(is_in_path);
 	      validate_bbbikecgires_xml_string
 	      eq_or_diff is_long_data like_long_data unlike_long_data
 	      like_html unlike_html is_float using_bbbike_test_cgi using_bbbike_test_data check_cgi_testing
-	      get_pmake
+	      get_pmake image_ok
 	    ),
 	   @opt_vars);
 
@@ -655,6 +655,29 @@ sub check_cgi_testing () {
     if ($ENV{BBBIKE_TEST_NO_CGI_TESTS}) {
 	print "1..0 # skip Requested to not test cgi functionality.\n";
 	exit 0;
+    }
+}
+
+# Two tests. Call with either an image filename or a stringref
+# containing image content.
+sub image_ok ($;$) {
+    my($in, $testlabel) = @_;
+    if ($testlabel) {
+	$testlabel = " ($testlabel)";
+    } else {
+	$testlabel = "";
+    }
+    local $Test::Builder::Level = $Test::Builder::Level+1;
+ SKIP: {
+	Test::More::skip("IPC::Run needed for better image testing", 2)
+		if !eval { require IPC::Run; 1 };
+	Test::More::skip("anytopnm needed for better image testing", 2)
+		if !is_in_path('anytopnm');
+
+	my $full_testlabel = "anytopnm runs fine with image " . (ref $in ? "content" : "file '$in'") . "$testlabel";
+	my $out;
+	Test::More::ok(IPC::Run::run(['anytopnm'], '<', $in, '>', \$out), $full_testlabel);
+	Test::More::like(substr($out,0,2), qr{^P\d+}, "Output looks like a netpbm file$testlabel");
     }
 }
 
