@@ -738,15 +738,15 @@ __END__
 
  Run the programm:
 
-   ./track_stats.pl <coord1> <coord2> : <coord3> <coord4> -coordsys standard -state /tmp/cache_track_stats -stage output
+   ./track_stats.pl -coordsys standard -state /tmp/cache_track_stats -stage output -- <coord1> <coord2> : <coord3> <coord4>
 
  Force recalculation (or just delete the cached state file):
 
-   ./track_stats.pl <coord1> <coord2> : <coord3> <coord4> -coordsys standard -state /tmp/cache_track_stats -stage begin
+   ./track_stats.pl -coordsys standard -state /tmp/cache_track_stats -stage begin -- <coord1> <coord2> : <coord3> <coord4>
 
  Add some filters on the statistics:
 
-   ./track_stats.pl <coord1> <coord2> : <coord3> <coord4> -coordsys standard -state /tmp/cache_track_stats -stage statistics -filterstat 'file=~/2010/'
+   ./track_stats.pl -coordsys standard -state /tmp/cache_track_stats -stage statistics -filterstat 'file=~/2010/' -- <coord1> <coord2> : <coord3> <coord4>
 
 =head1 TODO
 
