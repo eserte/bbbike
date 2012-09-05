@@ -193,7 +193,6 @@ for my $f (@files) {
 		     | Strassen/MapInfo.pm
 		     | lib/GD/Convert.pm
 		     | lib/Tk/StippleLine.pm
-		     | GPS/Unknown1.pm
 		     | FURadar.pm
 		     | MasterPunkte.pm
 		     | Wizards.pm

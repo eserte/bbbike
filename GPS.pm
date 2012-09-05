@@ -18,7 +18,7 @@ package GPS;
 use strict;
 use vars qw(@gps);
 
-@gps = qw(GpsmanData Unknown1 MyNMEA G7toWin_2 G7toWin_ASCII Ovl WaypointPlus MPS Gardown GPX Gpsbabel);
+@gps = qw(GpsmanData MyNMEA G7toWin_2 G7toWin_ASCII Ovl WaypointPlus MPS Gardown GPX Gpsbabel);
 
 sub new { bless {}, shift }
 

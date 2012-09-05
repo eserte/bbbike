@@ -45,7 +45,6 @@ GetOptions("v!" => \$v,
 my @gps_formats       = (
 			 ["$miscdir/mps_examples/BERNAU~1.MPS", "MPS"],
 			 ["$miscdir/gps_examples/G7toWin_ASCII.txt", "G7toWin_ASCII"],
-			 ["$miscdir/gps_examples/20000510.tracks", "Unknown1"],
 			 
 			 ["$miscdir/ovl_resources/ulamm/berlin-dresden1.ovl", "Ovl", "ASCII"],
 			 ["$miscdir/ovl_resources/d2_obdg.ovl", "Ovl", "Binary 2.0"],
