@@ -177,6 +177,12 @@ EOF
 		my $content = $agent->content;
 		cmp_ok($content, "ne", "", "Non-empty content")
 		    or diag "Error for uploaded file $filename";
+
+		local $TODO;
+		if ($^O eq 'freebsd' && $gps_type =~ m{^bbr} && do { require POSIX; POSIX::strftime("%FT%T", localtime) lt "2012-09-12T10:00:00" }) {
+		    $TODO = "Known to fail on freebsd, see http://www.freebsd.org/cgi/query-pr.cgi?pr=171353";
+		}
+
 		image_ok \$content, "png from $testname";
 		if ($do_display) {
 		    do_display(\$content, "png");
