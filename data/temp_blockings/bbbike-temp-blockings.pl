@@ -1062,10 +1062,11 @@ userdel	q4 21646,30961 21001,30933 20794,30899
 userdel	q4 21646,30961 21955,30976
 EOF
      },
-     { from  => 1097208000, # 2004-10-08 06:00
-       until => 1097442000, # 2004-10-10 23:00
-       text  => 'Hauptstraße, zwischen Kreuzung Dominicusstr. und Kreuzung Kaiser-Wilhelm-Platz Kürbisfest, Straße gesperrt, Dauer: 09.10.2004 06:00 Uhr bis 10.10.2004 23:00 Uhr ',
+     { from  => 1346968800, # 2012-09-07 00:00
+       until => 1347228000, # 2012-09-10 00:00
+       text  => 'Hauptstraße, zwischen Kreuzung Dominicusstr. und Kreuzung Kaiser-Wilhelm-Platz Veranstalung, Straße gesperrt (bis 09.09.12 nachts)',
        type  => 'handicap',
+       source_id => 'IM_019153',
        data  => <<EOF,
 userdel	q4; 6687,8385 6765,8480 6912,8617 6990,8685 7009,8705 7105,8788 7201,8870 7275,8960
 EOF
@@ -18269,11 +18270,11 @@ EOF
 userdel	2::temp 5370,6486 5424,6584 5533,6753 5644,6936 5817,7223
 EOF
      },
-     { from  => 1284091200, # 2010-09-10 06:00 # PERIODISCH!
-       until => 1284337800, # 2010-09-13 02:30
-       text  => 'Bahnhofstraße (Lichtenrade): Veranstaltung, Straße vollständig gesperrt (bis ca. 13.09.10, 2 Uhr) in beiden Richtungen zwischen Goltzstr. und Steinstr. ',
+     { from  => 1346968800, # 2012-09-07 00:00 # PERIODISCH!
+       until => 1347228000, # 2012-09-10 00:00
+       text  => 'Bahnhofstraße (Lichtenrade): Veranstaltung, Straße vollständig gesperrt zwischen Goltzstr. und Steinstr. (bis 09.09.12 nachts)',
        type  => 'handicap',
-       source_id => 'IM_016305',
+       source_id => 'IM_019152',
        data  => <<EOF,
 userdel	q4::temp 10310,-2136 10453,-2133 10509,-2131 10631,-2130 10747,-2129 10983,-2116
 EOF
@@ -20519,7 +20520,8 @@ EOF
        text  => 'Adalbertstr.: Fahrbahn in Richtung Kottbusser Tor gesperrt',
        type  => 'handicap',
        data  => <<EOF,
-#: next_check: 2012-09-10
+#: last_checked: 2012-09-07
+#: next_check: 2012-09-20
 userdel	q4::inwork; 11389,10463 11393,10390
 EOF
      },
@@ -20597,6 +20599,24 @@ EOF
 #: last_checked: 2012-09-01 (wosch)
 #: next_check: 2012-12-01
 userdel	q4::inwork 9112,14771 9250,14658
+EOF
+     },
+     { from  => 1346825940, # 2012-09-05 08:19
+       until => 1347444000, # 2012-09-12 12:00
+       text  => 'Klingsorstr. (Steglitz): Baustelle, Richtung Hindenburgdamm zwischen Birkbuschstr. und Amfortasweg gesperrt, bis Mitte September 2012 ',
+       type  => 'handicap',
+       source_id => 'IM_019149',
+       data  => <<EOF,
+userdel	q4::inwork; 5271,4547 5214,4445
+EOF
+     },
+     { from  => 1346558400, # 2012-09-02 06:00
+       until => 1347890400, # 2012-09-17 16:00
+       text  => 'Rosenthaler Str. (Mitte): zwischen Neue Schönhauser Str. und Hackescher Markt Baustelle, Fahrbahn gesperrt (bis Mitte 09/12)',
+       type  => 'handicap',
+       source_id => 'INKO_113178_COPY_5',
+       data  => <<EOF,
+userdel	q4::inwork 10310,13227 10264,13097
 EOF
      },
     );
