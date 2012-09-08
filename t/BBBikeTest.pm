@@ -668,16 +668,52 @@ sub image_ok ($;$) {
 	$testlabel = "";
     }
     local $Test::Builder::Level = $Test::Builder::Level+1;
- SKIP: {
-	Test::More::skip("IPC::Run needed for better image testing", 2)
-		if !eval { require IPC::Run; 1 };
-	Test::More::skip("anytopnm needed for better image testing", 2)
-		if !is_in_path('anytopnm');
 
-	my $full_testlabel = "anytopnm runs fine with image " . (ref $in ? "content" : "file '$in'") . "$testlabel";
-	my $out;
-	Test::More::ok(IPC::Run::run(['anytopnm'], '<', $in, '>', \$out), $full_testlabel);
-	Test::More::like(substr($out,0,2), qr{^P\d+}, "Output looks like a netpbm file$testlabel");
+    if (0) { # anytopnm does not return with non-zero on problems
+    SKIP: {
+	    Test::More::skip("IPC::Run needed for better image testing", 2)
+		    if !eval { require IPC::Run; 1 };
+	    Test::More::skip("anytopnm needed for better image testing", 2)
+		    if !is_in_path('anytopnm');
+	    
+	    my $out;
+	    my $full_testlabel = "anytopnm runs fine with image " . (ref $in ? "content" : "file '$in'") . "$testlabel";
+	    Test::More::ok(IPC::Run::run(['anytopnm'], '<', $in, '>', \$out), $full_testlabel);
+	    Test::More::like(substr($out,0,2), qr{^P\d+}, "Output looks like a netpbm file$testlabel");
+	}
+    } else {
+    SKIP: {
+	    Test::More::skip("IPC::Run needed for better image testing", 2)
+		    if !eval { require IPC::Run; 1 };
+	    Test::More::skip("Image::Info needed for better image testing", 2)
+		    if !eval { require Image::Info; 1 };
+	    my $ret = Image::Info::image_type($in);
+	    if ($ret->{error} && !ref $in && $in =~ m{\.wbmp$}) { # wbmp cannot be detected by Image::Info
+		$ret = {file_type => "WBMP" };
+	    }
+	    if ($ret->{error}) {
+		Test::More::fail($ret->{error} . $testlabel) for (1..2);
+	    } else {
+		my $converter = { GIF  => "giftopnm",
+				  PNG  => "pngtopnm",
+				  JPEG => "jpegtopnm",
+				  ICO  => "winicontoppm",
+				  XPM  => "xpmtoppm",
+				  XBM  => "xbmtopbm",
+				  WBMP => "wbmptopbm",
+				}->{$ret->{file_type}};
+		if (!$converter) {
+		    Test::More::diag("No converter for '$ret->{file_type}' found, fallback to 'anytopnm'");
+		    $converter = 'anytopnm';
+		}
+		Test::More::skip("Converter '$converter' not available", 2)
+			if !is_in_path($converter);
+		my $out;
+		my $full_testlabel = "$converter runs fine with image " . (ref $in ? "content" : "file '$in'") . "$testlabel";
+		Test::More::ok(IPC::Run::run([$converter], '<', $in, '2>', '/dev/null', '>', \$out), $full_testlabel);
+		Test::More::like(substr($out,0,2), qr{^P\d+}, "Output looks like a netpbm file$testlabel");
+	    }
+	}
     }
 }
 
