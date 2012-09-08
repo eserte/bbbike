@@ -36,12 +36,13 @@ use BBBikeTest qw(get_std_opts like_html unlike_html $cgidir
 		);
 
 sub bbbike_cgi_search ($$);
+sub bbbike_en_cgi_search ($$);
 sub bbbike_cgi_geocode ($$);
 
 check_cgi_testing;
 
 #plan 'no_plan';
-plan tests => 75;
+plan tests => 80;
 
 if (!GetOptions(get_std_opts("cgidir"),
 	       )) {
@@ -339,8 +340,38 @@ SKIP: {
 	    or diag(Data::Dumper->new([$res],[qw()])->Indent(1)->Useqq(1)->Dump);
 }
 
+{
+    my %route_endpoints = (startc => '6209,9772',
+			   zielc  => '6209,9773',
+			  );
+    {
+	my $resp = bbbike_cgi_search +{ %route_endpoints }, 'Hohenstaufenstr., turn around, German';
+	my $content = $resp->decoded_content;
+	like_html($content, qr{nach 0.03 km.*umdrehen.*Hohenstaufenstr..*0.0 km}, 'Found "umdrehen"');
+    }
+
+    {
+	my $resp = bbbike_en_cgi_search +{ %route_endpoints }, 'Hohenstaufenstr., turn around, English';
+	my $content = $resp->decoded_content;
+	like_html($content, qr{after 0.03 km.*turn around.*Hohenstaufenstr..*0.0 km}, 'Found "turn around" (English)');
+	like_html($content, qr{after 0.03 km.*arrived!.*Hohenstaufenstr.}, 'Found "arrived" (English)');
+    }
+}
+
 sub bbbike_cgi_search ($$) {
-    my($params, $testname) = @_;
+    _bbbike_cgi_search({lang=>undef},@_);
+}
+
+sub bbbike_en_cgi_search ($$) {
+    _bbbike_cgi_search({lang=>'en'},@_);
+}
+
+sub _bbbike_cgi_search {
+    my($cgiopts, $params, $testname) = @_;
+    my $testcgi = $testcgi;
+    if ($cgiopts->{lang}) {
+	$testcgi =~ s{\.cgi}{\.$cgiopts->{lang}\.cgi};
+    }
     $params->{pref_seen} = 1;
     $params->{pref_speed} = 20 if !exists $params->{pref_speed};
     my $url = $testcgi . '?' . CGI->new($params)->query_string;

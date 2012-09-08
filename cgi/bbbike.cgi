@@ -4132,20 +4132,25 @@ sub display_route {
 		    $richtung = $richtung_html = "";
 		    $raw_direction = "";
 		} else {
-		    $raw_direction =
-			($winkel <= 45 ? 'h' : '') .
-			    ($richtung eq 'l' ? 'l' : 'r');
-		    $richtung =
-			($winkel <= 45 ? M('halb') : '') .
-			    ($richtung eq 'l' ? M('links') : M('rechts')) .
-				" ($winkel°) ";
-		    if ($lang eq 'en') {
-			$richtung .= "-&gt;";
+		    if ($winkel >= 160 && $winkel <= 200) { # +/- 20° from 180°
+			$richtung = $richtung_html = M('umdrehen');
+			$raw_direction = 'u';
 		    } else {
-			if ($same_streetname_important_angle) {
-			    $richtung .= "weiter " . Strasse::de_artikel_dativ($strname);
+			$raw_direction =
+			    ($winkel <= 45 ? 'h' : '') .
+				($richtung eq 'l' ? 'l' : 'r');
+			$richtung =
+			    ($winkel <= 45 ? M('halb') : '') .
+				($richtung eq 'l' ? M('links') : M('rechts')) .
+				    " ($winkel°) ";
+			if ($lang eq 'en') {
+			    $richtung .= "-&gt;";
 			} else {
-			    $richtung .= Strasse::de_artikel($strname);
+			    if ($same_streetname_important_angle) {
+				$richtung .= "weiter " . Strasse::de_artikel_dativ($strname);
+			    } else {
+				$richtung .= Strasse::de_artikel($strname);
+			    }
 			}
 		    }
 		    if ($is_m && !$bi->{cannot_unicode_arrows}) {
@@ -4153,6 +4158,7 @@ sub display_route {
 					  'hl' => '&#x21d6;',
 					  'hr' => '&#x21d7;',
 					  'r'  => '&#x21d2;',
+					  'u'  => '&#x21b6;',
 					 }->{$raw_direction};
 		    } else {
 			$richtung_html = $richtung;
