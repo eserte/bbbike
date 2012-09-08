@@ -659,7 +659,8 @@ sub check_cgi_testing () {
 }
 
 # Two tests. Call with either an image filename or a stringref
-# containing image content.
+# containing image content. Returns false if any of the tests failed,
+# otherwise true.
 sub image_ok ($;$) {
     my($in, $testlabel) = @_;
     if ($testlabel) {
@@ -668,6 +669,8 @@ sub image_ok ($;$) {
 	$testlabel = "";
     }
     local $Test::Builder::Level = $Test::Builder::Level+1;
+
+    my $fails = 0;
 
     if (0) { # anytopnm does not return with non-zero on problems
     SKIP: {
@@ -678,8 +681,10 @@ sub image_ok ($;$) {
 	    
 	    my $out;
 	    my $full_testlabel = "anytopnm runs fine with image " . (ref $in ? "content" : "file '$in'") . "$testlabel";
-	    Test::More::ok(IPC::Run::run(['anytopnm'], '<', $in, '>', \$out), $full_testlabel);
-	    Test::More::like(substr($out,0,2), qr{^P\d+}, "Output looks like a netpbm file$testlabel");
+	    Test::More::ok(IPC::Run::run(['anytopnm'], '<', $in, '>', \$out), $full_testlabel)
+		    or $fails++;
+	    Test::More::like(substr($out,0,2), qr{^P\d+}, "Output looks like a netpbm file$testlabel")
+		    or $fails++;
 	}
     } else {
     SKIP: {
@@ -693,6 +698,7 @@ sub image_ok ($;$) {
 	    }
 	    if ($ret->{error}) {
 		Test::More::fail($ret->{error} . $testlabel) for (1..2);
+		$fails = 2;
 	    } else {
 		my $converter = { GIF  => "giftopnm",
 				  PNG  => "pngtopnm",
@@ -710,11 +716,15 @@ sub image_ok ($;$) {
 			if !is_in_path($converter);
 		my $out;
 		my $full_testlabel = "$converter runs fine with image " . (ref $in ? "content" : "file '$in'") . "$testlabel";
-		Test::More::ok(IPC::Run::run([$converter], '<', $in, '2>', '/dev/null', '>', \$out), $full_testlabel);
-		Test::More::like(substr($out,0,2), qr{^P\d+}, "Output looks like a netpbm file$testlabel");
+		Test::More::ok(IPC::Run::run([$converter], '<', $in, '2>', '/dev/null', '>', \$out), $full_testlabel)
+		    or $fails++;
+		Test::More::like(substr($out,0,2), qr{^P\d+}, "Output looks like a netpbm file$testlabel")
+		    or $fails++;
 	    }
 	}
     }
+
+    $fails ? 0 : 1;
 }
 
 1;
