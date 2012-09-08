@@ -90,10 +90,6 @@ Uferstr.: geplante Straße in Niederschöneweide	?::projected 17639,6227 17843,608
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20120302.1240.366909.html
 #: by: http://www.berlin.de/ba-treptow-koepenick/organisationseinheiten/tief/index.html?date=20120505
 #: next_check: 2012-07-13
-Königsheideweg: Geh- und Radwegarbeiten im Königsheideweg - gibt es danach hier Radwege?	?::inwork 17639,6227 17843,6083 17900,6072
-#: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20120302.1240.366909.html
-#: by: http://www.berlin.de/ba-treptow-koepenick/organisationseinheiten/tief/index.html?date=20120505
-#: next_check: 2012-07-13
 Königsheideweg: Geh- und Radwegarbeiten im Königsheideweg - gibt es danach hier Radwege?	?::inwork 16784,4913 16554,5022 16362,5112 16279,5170
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/11re.pdf/file?y=2012
@@ -378,10 +374,11 @@ Planstraße im Block 902: neue Straße wird gebaut, wo genau, wann? Wird der Straß
 # 
 #XXX --- #: XXX neue Planstraßen nördlich des Alexanderplatzes vvv --- #: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20110208.1420.330238.html --- #: by: http://www.stadtentwicklung.berlin.de/planen/staedtebau-projekte/alexanderplatz/de/planungen/bplan/bplan_b4ca/index.shtml --- #: by: http://ww.ak-berlin.de/publicity/ak/internet.nsf/0/002CE81791D5796BC125784D0033BC47/$FILE/Auslobung_Alexander%20Parkside_18%2001%202010.pdf --- #: XXX Straßen werden benannt nach: --- #: XXX - Oda Schottmüller --- #: XXX - Hilde Radusch
 # 
-#: last_checked: 2012-08-01
+#: last_checked: 2012-09-08
 #: next_check: 2012-10-15
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110627.1115.349371.html
-#: XXX zurzeit (2012-01) ist die Farbahn in beiden Richtungen für Radfahrer *verboten*
+#: XXX zurzeit (2012-09) ist die Fahrbahn in nördlicher Richtung für Radfahrer *verboten*
+#: XXX siehe auch "noch provisorisch, aber wird wahrscheinlich dauerhaft sein" in ampeln-orig
 Am Tierpark: nach den Bauarbeiten vielleicht Radwege/-spuren?	?::inwork 18220,11710 18228,11656 18268,11391 18286,11275 18343,11041 18417,10738 18446,10620
 # 
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20101221.1110.323849.html
@@ -589,6 +586,10 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 # Das heißt diese Strecken werden nicht bei einer erweiterten Suche aufgenommen
 # und dem CGI-Benutzer auch nicht präsentiert.
 # 
+(Buschallee KGA): komplett asphaltiert? Beleuchtet? Schranken? Ausschilderung?	? 22458,9532 22525,9665 22730,9938
+(KGA-Weg): komplett asphaltiert? Beleuchtet? Schranken? Ausschilderung?	? 22730,9938 22818,10080 22731,10142
+(Blumenweg): Qualität? Beleuchtet? Schranken? Ausschilderung?	? 22274,9622 22604,9988
+(Vogelhorstweg): Qualität? Beleuchtet? Schranken? Ausschilderung?	? 22604,9988 22731,10142 22978,10451
 B2: gibt es hier Radwege?	? -9972,6846 -9854,6890 -9640,6971
 #
 #: XXX: alter Eintrag von Johannes (...schmeisser...), nochmal prüfen!
@@ -611,8 +612,7 @@ Eugen-Kleine-Brücke: Gehwegbenutzungspflicht für Radverkehr abschaffen Drucksach
 #: XXX ^^^
 #: by: ^^^
 # 
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/11re.pdf/file?y=2012
-Mieltschiner Str.: Straße wird eigenzogen - bleibt dieser Abschnitt öffentlich befahrbar?	? 22604,9988 22730,9938 22862,9886
+#XXX del --- hier ändert sich bestimmt nichts --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/11re.pdf/file?y=2012 --- Mieltschiner Str.: Straße wird eigenzogen - bleibt dieser Abschnitt öffentlich befahrbar?	? 22604,9988 22730,9938 22862,9886
 # 
 Alt-Lankwitz: parallele Fahrbahn, Qualität, genaue Lage?	? 7412,3484 7419,3500 7249,3598 7057,3713
 # 
@@ -643,10 +643,8 @@ Radschutzstreifen, genaue Situation?	? -9620,-4939 -9642,-4916 -9862,-4705 -9872
 #: XXX siehe osm:
 Potsdam, Lutherplatz: ist dieser Abschnitt als Lutherplatz ausgeschildert?	? -10673,-2128 -10772,-2153
 # 
-#: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20111230.1240.364422.html vvv
-Apollofalterallee: Zebrastreifen, wo genau?	? 21370,11141 21486,11167
+#: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20111230.1240.364422.html
 Neue Grottkauer Str.: Zebrastreifen, wo genau?	? 23189,13920 23368,13936
-#: by: ^^^
 # 
 #: by: http://farm7.staticflickr.com/6051/6359918217_d76e41d8e1_b.jpg
 Hans-Werner-Klünner-Weg: befindet er sich hier? Qualität? Beleuchtet?	? -2916,12195 -2971,12062 -3112,12020
@@ -654,8 +652,6 @@ Hans-Werner-Klünner-Weg: befindet er sich hier? Qualität? Beleuchtet?	? -2916,12
 #: XXX kann man es schon in flaechen-orig einzeichnen?
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/50re.pdf/file?y=2011
 Stuttgarter Platz: Widmung als Grünanlage	? 3571,10913 3546,10962 3827,10980 3828,10967 3571,10913
-# 
-Elsterwerdaer Platz: Qualität, Wegverbindung?	? 20840,11291 21094,11313
 # 
 #: last_checked: 2011-10-22
 #: next_check: 2012-09-01
@@ -2890,9 +2886,7 @@ Heinrich-Grüber-Str. - Waldheimer Str.: Wie ist die Qualität des Weges? Nachts b
 Feldspatzwenweg: Qualität? Wo genau befindet sich die Straße?	? 7609,23108 7583,23177 7804,23253 7831,23192
 #XXX --- vorerst nicht aufnehmen --- #: XXX unbeleuchtet, geschützte Grünanlage, Weg teilt sich, 3 Stufen auf beiden Seiten --- Weg im Volkspark Wittenau: wie geht es weiter?	? 5356,21146 4942,20830
 Reinickes Hof: existiert eine Verbindung zum Saalmannsteig? Qualität?	? 5281,18996
-#: XXX fehlt in Berlin.coords.data
-#: XXX zumindest auf der Seite des Hohenschönhauser Tors habe ich keine Schilder gesehen
-Stellerweg: existiert hier ein Weg? Ausgeschildert? Qualität für Radfahrer?	? 15367,14512 15221,14550
+#XXX del --- #: XXX fehlt in Berlin.coords.data --- #: XXX zumindest auf der Seite des Hohenschönhauser Tors habe ich keine Schilder gesehen --- Stellerweg: existiert hier ein Weg? Ausgeschildert? Qualität für Radfahrer?	? 15367,14512 15221,14550
 #: XXX fehlt in Berlin.coords.data
 Hermann-Schmidt-Weg: Qualität?	? -5059,15842 -5238,15891 -5317,15888 -5407,15914
 #: XXX fehlt in Berlin.coords.data

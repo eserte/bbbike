@@ -94,7 +94,7 @@ Kreisverkehr	Roundabout 19907,12501
 Röntgentaler Weg: durch den Schloßpark	CS 16166,25767 16222,25829 16532,26174
 (Autobahnzubringer): Fahrbahn ist Kraftfahrzeugstraße	CS 18036,2531 18247,2490 18496,2471
 (In den Gärten - Hochspannungsweg): Privatweg	CS 11724,1629 11704,1692 11718,1771 11652,1959
-Privatweg, Durchfahrt eigentlich verboten, aber möglich	CS 19726,11743 19750,11730 19827,11686 19881,11591
+Privatweg, Durchfahrt eigentlich verboten, aber möglich	CS 19750,11730 19827,11686 19879,11595 19881,11591
 Dreipfuhlpark: Freigegeben für Radfahrer	CS 1536,3780 1523,3904 1520,4006 1524,4054 1548,4168 1608,4313 1670,4477 1692,4575 1682,4607 1689,4630 1698,4653
 Seefelder Str.: Schranken, für Radler gut passierbar	CS 17341,16136 17344,16081
 (Malteserstr. - Hanielweg): Geschützte Grünanlage, Radfahren verboten	CS 7451,1818 7534,1818 7562,1796
@@ -404,10 +404,13 @@ Mühlenbachring: private Wohnstraße	CS -7534,13936 -7556,13894 -7564,13817 -7637,
 ausgeschildert LEG Brandenburg	CP2; -8634,9626 -8595,9582
 nach rechts abbiegen, um Drängelgitter am Spielplatz zu umfahren	CP; 6503,20978 6519,21002 6565,21004
 nach links abbiegen, um Drängelgitter am Spielplatz zu umfahren	CP; 6596,21062 6560,21055 6565,21004
-(Weserstr. - Boxhagener Str.): Gewerbegelände, Lidl-Parkplatz	CS 14949,11474 14838,11410 14776,11400 14752,11369
+(Weserstr. - Boxhagener Str.): Gewerbegelände	CS 14949,11474 14838,11410
+(Weserstr. - Boxhagener Str.): Schreibfeder-Passage	CS 14776,11400 14838,11410
+(Weserstr. - Boxhagener Str.): Lidl-Parkplatz	CS 14776,11400 14752,11369
 Lichtweg: Privatstraße	CS 1301,18297 1337,18427
 Am Wäldchen (Blankenfelde): Privatstraße	CS 8826,24501 8905,24573 8972,24641 9032,24700
 Laufstrecke im Fritz-Schloß-Park	CS 7132,13503 7195,13430 7255,13444 7266,13500 7144,13609 7165,13659 7191,13679 7178,13708 7097,13834 7035,13808 7022,13776 7029,13742 7071,13690 7056,13584 7132,13503
 Straße 185 (Lübars): Privatstraße	CS 6037,22830 6083,22772
 Straße 186 (Lübars): Privatstraße	CS 6083,22772 6153,22828
 Straße 187 (Lübars): Privatstraße	CS 6175,22803 6153,22828 6115,22877
+Am Alten Lokschuppen: nicht ausgeschildert	CS 15730,11279 15708,11193 15752,11115 15805,10949

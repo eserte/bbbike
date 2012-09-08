@@ -2588,17 +2588,7 @@ userdel	q4::inwork; 10614,19907 10599,19957
        undef,
        undef,
        undef,
-       {
-         'until' => undef,
-         'text' => 'Alt-Friedrichsfelde - Weißenhöher Straße: Bauarbeiten, Durchfahrt könnte gesperrt sein',
-         'from' => undef,
-         'id' => 2299,
-         'data' => '#: last_checked: 2011-10-22
-#: XXX Zaun auf der westlichen Seite, kann aber umfahren werden; Matsch...
-userdel	2::inwork 19750,11730 19827,11686 19881,11591
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
