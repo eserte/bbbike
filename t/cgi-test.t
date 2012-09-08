@@ -42,7 +42,7 @@ sub bbbike_cgi_geocode ($$);
 check_cgi_testing;
 
 #plan 'no_plan';
-plan tests => 80;
+plan tests => 81;
 
 if (!GetOptions(get_std_opts("cgidir"),
 	       )) {
@@ -348,6 +348,7 @@ SKIP: {
 	my $resp = bbbike_cgi_search +{ %route_endpoints }, 'Hohenstaufenstr., turn around, German';
 	my $content = $resp->decoded_content;
 	like_html($content, qr{nach 0.03 km.*umdrehen.*Hohenstaufenstr..*0.0 km}, 'Found "umdrehen"');
+	unlike_html($content, qr{Hohenstaufenstr.*Ecke.*Hohenstaufenstr.}, 'No "Ecke" with same street');
     }
 
     {
