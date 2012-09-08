@@ -1,5 +1,5 @@
 #!/usr/bin/perl -w
-# -*- perl -*-
+# -*- mode:perl;coding:iso-8859-1; -*-
 
 #
 # Author: Slaven Rezic
@@ -7,7 +7,7 @@
 
 use strict;
 use FindBin;
-use lib ("$FindBin::RealBin/../lib", $FindBin::RealBin);
+use lib ("$FindBin::RealBin/..", "$FindBin::RealBin/../lib", $FindBin::RealBin);
 
 BEGIN {
     if (!eval q{
@@ -24,7 +24,7 @@ use Getopt::Long;
 use BBBikeTest qw(is_float);
 use Strassen::Util qw();
 
-plan tests => 14;
+plan tests => 18;
 
 my $do_bench;
 GetOptions("bench!" => \$do_bench)
@@ -34,6 +34,7 @@ GetOptions("bench!" => \$do_bench)
 use_ok('VectorUtil', 'intersect_rectangles', 'normalize_rectangle',
        'enclosed_rectangle', 'bbox_of_polygon', 'combine_bboxes',
        'distance_point_line', 'project_point_on_line',
+       'offset_line',
       );
 
 {
@@ -122,5 +123,51 @@ use_ok('VectorUtil', 'intersect_rectangles', 'normalize_rectangle',
 	# distance_point_line              125604/s                              44%                  --
     }
 }
-    
+
+{
+    my @coordlist                = (0,0, 100,0, 200,0);
+    my @expected_coordlist_hin   = (0,3, 100,3, 200,3);
+    my @expected_coordlist_rueck = (0,-3, 100,-3, 200,-3);
+    test_offset_line(\@coordlist, 3, \@expected_coordlist_hin, \@expected_coordlist_rueck, 'offset_line, with 0° polyline');
+}
+
+{
+    my @coordlist                = (0,0, 100,0, 200,100);
+    my @expected_coordlist_hin   = (0,3, 100,3, 200,103);
+    my @expected_coordlist_rueck = (0,-3, 100,-3, 200,-3);
+    local $TODO = "Expected coords are not correct";
+    test_offset_line(\@coordlist, 3, \@expected_coordlist_hin, \@expected_coordlist_rueck, 'offset_line, with 45° polyline');
+}
+
+{
+    my @coordlist                = (0,0, 100,0, 100,100);
+    my @expected_coordlist_hin   = (0,3, 97,3, 97,100);
+    my @expected_coordlist_rueck = (0,-3, 103,-3, 103,100);
+    test_offset_line(\@coordlist, 3, \@expected_coordlist_hin, \@expected_coordlist_rueck, 'offset_line, with 90° polyline');
+}
+
+{
+    my @coordlist                = (0,0, 100,0, 0,0);
+    my @expected_coordlist_hin   = (0,3, 97,3, 0,3);
+    my @expected_coordlist_rueck = (0,-3, 103,-3, 0,-3);
+    local $TODO = "Needs work!";
+    test_offset_line(\@coordlist, 3, \@expected_coordlist_hin, \@expected_coordlist_rueck, 'offset_line, with 180° polyline');
+}
+
+# One test.
+sub test_offset_line {
+    my($coordlist, $delta, $expected_coordlist_hin, $expected_coordlist_rueck, $testname) = @_;
+    my($cl_hin, $cl_rueck) = offset_line($coordlist, $delta, 1, 1);
+    my @errors;
+    for my $i (0 .. $#$cl_hin) {
+	if (abs($cl_hin->[$i] - $expected_coordlist_hin->[$i]) > 0.01) {
+	    push @errors, "hin, index=$i: got=$cl_hin->[$i], expected=$expected_coordlist_hin->[$i]\n";
+	}
+	if (abs($cl_rueck->[$i] - $expected_coordlist_rueck->[$i]) > 0.01) {
+	    push @errors, "rueck, index=$i: got=$cl_rueck->[$i], expected=$expected_coordlist_rueck->[$i]\n";
+	}
+    }
+    is "@errors", "", $testname;
+}
+
 __END__
