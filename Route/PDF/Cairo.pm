@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2011 Slaven Rezic. All rights reserved.
+# Copyright (C) 2011,2012 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,12 +15,19 @@ package Route::PDF::Cairo;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '0.01';
+$VERSION = '0.02';
 
 use Cairo;
+use List::Util qw(sum); 
 
 use constant DIN_A4_WIDTH => 595;
 use constant DIN_A4_HEIGHT => 842;
+
+use constant STREET_TEXT_COLUMN => 2;
+use constant MINIMUM_STREET_TEXT_COLUMN_WIDTH => 100;
+
+# Only needed for testing without Pango:
+use vars qw($DONT_USE_PANGO);
 
 sub new {
     my($class, %args) = @_;
@@ -62,7 +69,7 @@ sub output {
 #    $pdf->new_outline('Title' => &Route::Descr::M('Routenliste'),
 #		      'Destination' => $page);
 
-    my $has_pango = eval { require Pango; 1 };
+    my $has_pango = !$DONT_USE_PANGO && eval { require Pango; 1 };
     if (!$has_pango) {
 	# Otherwise we have to deal with non-latin Unicode characters
 	require BBBikeUnicodeUtil;
@@ -204,7 +211,7 @@ sub output {
 	for my $col_i (0 .. $#$line) {
 	    my $cell = $line->[$col_i];
 	    $cell = "" if !defined $cell;
-	    my $font = ($col_i == 2 ? $bold_font_description : $font_description);
+	    my $font = ($col_i == STREET_TEXT_COLUMN ? $bold_font_description : $font_description);
 	    my($this_width, undef) = $string_width->($cell, $font, $font_size);
 	    if (defined $this_width && (!defined $max_width[$col_i] || $max_width[$col_i] < $this_width)) {
 		$max_width[$col_i] = $this_width;
@@ -212,8 +219,24 @@ sub output {
 	}
     }
 
-    my $start_x = ($has_pango ? 30 : 5);
+    my $start_x = 5;
     my $x_spacing = 10;
+
+    my $sum_width = sum(@max_width) # all column widths
+	+ $start_x*2                # both margins
+	+ $x_spacing*(@max_width-1) # spacing between columns
+    ;
+    if ($sum_width > DIN_A4_WIDTH) {
+	# reduce the street text column
+	$max_width[STREET_TEXT_COLUMN] = DIN_A4_WIDTH - ($sum_width - $max_width[STREET_TEXT_COLUMN]);
+
+	if ($max_width[STREET_TEXT_COLUMN] < MINIMUM_STREET_TEXT_COLUMN_WIDTH) {
+	    # Hopefully this should never happen; the other columns
+	    # should never get that broad...
+	    warn "Route::PDF::Cairo: minimum column width for street name exceeded (sum_width=$sum_width), trying to save things...";
+	    $max_width[STREET_TEXT_COLUMN] = MINIMUM_STREET_TEXT_COLUMN_WIDTH;
+	}
+    }
 
     for my $line (@lines) {
 	my $x = $start_x;
@@ -221,7 +244,7 @@ sub output {
 	my $max_y = 0;
 	for my $col_i (0 .. $#$line) {
 	    my $cell = $line->[$col_i];
-	    my $font = ($col_i == 2 ? $bold_font_description : $font_description);
+	    my $font = ($col_i == STREET_TEXT_COLUMN ? $bold_font_description : $font_description);
 #	    my $width = $page->my_string_width($font, $col)*$font_size;
 #	    if ($x + $width > $page_width-30) {
 #		#XXX TODO warn "wrap!";
