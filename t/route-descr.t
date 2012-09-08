@@ -156,6 +156,23 @@ no warnings 'qw'; # because of (x,y)
     }
 }
 
+{
+    my @coords = map {[split /,/]} qw(6209,9772 6241,9772 6209,9773);
+    {
+	my $out = Route::Descr::convert(%stdargs, -route => Route->new_from_realcoords([@coords]));
+	is_deeply $out, {
+			 "Title" => "Route von Hohenstaufenstr. bis Hohenstaufenstr.",
+			 "Start" => "Hohenstaufenstr.",
+			 "Goal" => "Hohenstaufenstr.",
+			 "Lines" => [
+				     [undef, undef, "Hohenstaufenstr.", undef],
+				     ["nach 0.03 km", "umdrehen", "Hohenstaufenstr.", "0.0 km"]
+				    ],
+			 "Footer" => ["nach 0.03 km", "", "angekommen!", "0.1 km"],
+			}, 'Another test with "umdrehen" (German)';
+    }
+}
+
 
 # Question: should this be done automatically, somewhere?
 sub add_missing_points {
