@@ -688,6 +688,24 @@ bislang gefundene Route eingezeichnet. B<KNOWN ISSUE>: unter Umständen
 wird der Progressbar nicht zurückgesetzt, außerdem können
 Fehlermeldungen erscheinen.
 
+=head2 Manuelle CGI-Tests
+
+=head3 Layout der PDF-Routenliste prüfen
+
+In der Kommandozeile eingeben:
+
+    lwp-request 'http://bbbike.rezic.localdomain/cgi-bin/bbbike.cgi?center=&interactive=Karte+zeigen&imagetype=pdf-auto&coordssession=b9000000_13327e756f87c9a5&startname=Neumannstr.&zielname=K%F6nigin-Luise-Str.&windrichtung=W&windstaerke=3&draw=str&draw=sbahn&draw=ubahn&draw=wasser&draw=flaechen&draw=ampel&draw=strname&draw=title&draw=all&scope=' >| /tmp/bla.pdf && xpdf /tmp/bla.pdf
+
+und auf die zweite Seite gehen. Alle vier Spalten sollten vollständig
+sichtbar sein. Unter Umständen ist eine zweizeilige Zelle zu sehen:
+"(Pankeweg, teilweise als Walter-Nicklitz-Promenade gekennzeichnet)"
+
+(Das ist nur der Fall, falls Route::PDFCairo konfiguriert ist und
+Pango installiert ist. Wenn Route::PDF mit PDF::Create verwendet wird,
+dann ist wahrscheinlich die letzte Spalte abgeschnitten, und bei der
+Verwendung von Route::PDFCairo ohne Pango fließt die
+Straßennamenspalte in die nächste Spalte über.)
+
 =head1 AUTOR
 
 Slaven Rezic <srezic@cpan.org>
