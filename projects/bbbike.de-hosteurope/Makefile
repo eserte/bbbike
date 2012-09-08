@@ -41,7 +41,6 @@ DATA_DIR=		data
 TEMP_BLOCKINGS_DIR=	data/temp_blockings
 BBBIKE_HOSTEUROPE_SSH_HOST?=	${BBBIKE_HOSTEUROPE_HOST}
 STERNFAHRT_YEAR?=	2007
-KREISFAHRT_YEAR?=	2011
 TARGET_LIVE=		hosteurope
 
 EXTRA_MISCSRC_FILES=	bbd2esri \
@@ -661,7 +660,7 @@ prepare-sternfahrt${STERNFAHRT_YEAR}-dist-data:
 
 # Call once kreisfahrt files have changed:
 prepare-kreisfahrt-dist:
-	rsync --cvs-exclude -a ${BBBIKE_ROOT_DIR}/misc/kreisfahrt_${KREISFAHRT_YEAR}/ ${CURDIR}/BBBike/misc/kreisfahrt_${KREISFAHRT_YEAR}/
+	rsync --cvs-exclude -a ${BBBIKE_ROOT_DIR}/misc/kreisfahrt_anyyear/ ${CURDIR}/BBBike/misc/kreisfahrt_anyyear/
 
 prepare-additional-dist-images:
 	cp -pf ${BBBIKE_ROOT_DIR}/images/logo-fahrradstadt_75.png \

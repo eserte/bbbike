@@ -26,7 +26,7 @@ sub teaser {
     $teasers_mandatory{"de"} = [
 				#teaser_maintenance(), # schaltet sich selbstständig ab
 				#teaser_sternfahrt_adfc(), # schaltet sich selbstständig ab
-				#teaser_kreisfahrt_adfc(), # schaltet sich selbstständig ab
+				teaser_kreisfahrt_adfc(), # schaltet sich selbstständig ab
 				teaser_android0(),
 				(1 ? teaser_perltk_newrelease() : teaser_perltk()),
 				#teaser_other_cities(),
@@ -41,7 +41,7 @@ sub teaser {
     $teasers_mandatory{"en"} = [
 				#teaser_maintenance(), # schaltet sich selbstständig ab
 				#teaser_sternfahrt_adfc(), # schaltet sich selbstständig ab
-				#teaser_kreisfahrt_adfc(), # schaltet sich selbstständig ab
+				teaser_kreisfahrt_adfc(), # schaltet sich selbstständig ab
 				teaser_android0(),
 				(1 ? teaser_perltk_newrelease() : teaser_perltk()),
 				#teaser_other_cities(),
@@ -87,12 +87,12 @@ sub teaser_kreisfahrt_adfc {
     my $year = (localtime)[5]+1900;
     my @l = localtime; $l[4]++;$l[5]+=1900;
     my $today = sprintf "%04d%02d%02d", $l[5], $l[4], $l[3];
-    my $out_of_date = $today gt "20110918";
+    my $out_of_date = $today lt "20120910" || $today gt "20120922";
     if (!$out_of_date) {
-	my $adfc_url    = "http://www.adfc-berlin.de/aktionenprojekte/kreisfahrt/1069.html";
-	my $kreisfahrt_img = "/BBBike/misc/kreisfahrt_2011/Kreisfahrt-2011-title.png";
+	my $adfc_url    = "http://www.adfc-berlin.de/aktionenprojekte/kreisfahrt/kreisfahrt-2012.html";
+	my $kreisfahrt_img = "/BBBike/misc/kreisfahrt_anyyear/kreisfahrt_anyyear.png";
 	<<EOF
-<div class="teaser"><a style="text-decoration:none;" href="$adfc_url"><img src="$kreisfahrt_img" alt="ADFC-Kreisfahrt ${year}" border="0" /></a> am 17. September $year</div>
+<div class="teaser"><a style="text-decoration:none;" href="$adfc_url"><img src="$kreisfahrt_img" alt="ADFC-Kreisfahrt ${year}" border="0"" /></a> am 22. September $year</div>
 EOF
     } else {
 	();
