@@ -116,7 +116,8 @@ sub output {
 		$layout->set_width($page_width * Pango->scale);
 	    } elsif ($maxwidth) {
 		$layout->set_width($maxwidth * Pango->scale);
-		$layout->set_ellipsize('end');
+		$layout->set_wrap('word-char');
+		#$layout->set_ellipsize('end');
 	    }
 	    $layout->set_alignment($alignment);
 	    if ($doit) {
