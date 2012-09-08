@@ -241,7 +241,7 @@ EOF
 		like($agent->ct, qr{^image/}, "It's an image (png or gif) (from $testname)");
 		my $image_content = $agent->content;
 		cmp_ok($image_content, "ne", "", "Non-empty content");
-		image_ok \$content, "png or gif from $testname";
+		image_ok \$image_content, "png or gif from $testname";
 		if ($do_display) {
 		    # Hopefully a png viewer can display gifs as well...
 		    do_display(\$image_content, "png");
