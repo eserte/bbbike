@@ -17945,11 +17945,7 @@ sub show_route_strname {
 	my $ges_entf = 0;
 	my($next_entf, $ges_entf_s, $next_winkel, $next_richtung, $next_extra)
 	  = ("", "", undef, "");
-	my($aggr_begin_dist, $aggr_streets) = (0, "");
-	my $aggr_dir = undef;
 	my $last_str;
-	my ($out_dist, $out_total_dist, $out_dir, $out_str);
-	my $out_dist_add;
 	my %seen_comments;
 	for(my $i = 0; $i <= $#search_route; $i++) {
 	    my($str, $index_arr);
@@ -18031,18 +18027,10 @@ sub show_route_strname {
 		}
 	    }
 
-	    ($out_dist, $out_dir, $out_str)
-		= ($entf_s, $richtung, $str);
-	    if (defined $out_dist_add) {
-		$out_dist += $out_dist_add;
-		undef $out_dist_add;
-	    }
-	    $out_total_dist = $ges_entf_s;
-
-	    $route_strname_lbox->add($i, -text => $out_dist);
-	    $route_strname_lbox->itemCreate($i, 1, -text => $out_total_dist);
-	    $route_strname_lbox->itemCreate($i, 2, -text => $out_dir);
-	    $route_strname_lbox->itemCreate($i, 3, -text => $out_str);
+	    $route_strname_lbox->add($i, -text => $entf_s);
+	    $route_strname_lbox->itemCreate($i, 1, -text => $ges_entf_s);
+	    $route_strname_lbox->itemCreate($i, 2, -text => $richtung);
+	    $route_strname_lbox->itemCreate($i, 3, -text => $str);
 
 	    my $etappe_comment = "";
 	    if ($do_route_strnames_comments && $comments_net &&
@@ -18080,8 +18068,8 @@ sub show_route_strname {
 		$etappe_comment = join("; ", @comments) if @comments;
 	    }
 	    $route_strname_lbox->itemCreate($i, 4, -text => $etappe_comment);
-	    push @route_info, [($out_dist||""), ($out_total_dist||""),
-			       $out_dir || "", $out_str || ""];
+	    push @route_info, [($entf_s||""), ($ges_entf_s||""),
+			       ($richtung||""), ($str || "")];
 	}
 	$ges_entf_s = "(" . m2km($ges_entf+$next_entf) . ")";
 	my $i = $#search_route + 1;
