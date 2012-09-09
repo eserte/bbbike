@@ -1,5 +1,5 @@
 #!/usr/bin/perl -w
-# -*- perl -*-
+# -*- mode: perl; coding: iso-8859-1; -*-
 
 #
 # Author: Slaven Rezic
@@ -49,7 +49,7 @@ no warnings 'qw'; # because of (x,y)
 			 "Start" => "Dudenstr.",
 			 "Goal" => "Mehringdamm",
 			 "Lines" => [
-				     [undef, undef, "Dudenstr.", undef],
+				     [undef, "nach Osten", "Dudenstr.", undef],
 				     ["nach 0.69 km", "links (60\260) in die", "Methfesselstr.", "0.7 km"],
 				     ["nach 0.62 km", "rechts (80\260) in die", "Kreuzbergstr.", "1.3 km"],
 				     ["nach 0.04 km", "links (80\260) in den", "Mehringdamm", "1.3 km"],
@@ -66,7 +66,7 @@ no warnings 'qw'; # because of (x,y)
 			 "Start" => "Dudenstr.",
 			 "Goal" => "Mehringdamm",
 			 "Lines" => [
-				     [undef, undef, "Dudenstr.", undef],
+				     [undef, "towards east", "Dudenstr.", undef],
 				     ["after 0.69 km", "left (60\260) ->", "Methfesselstr.", "0.7 km"],
 				     ["after 0.62 km", "right (80\260) ->", "Kreuzbergstr.", "1.3 km"],
 				     ["after 0.04 km", "left (80\260) ->", "Mehringdamm", "1.3 km"],
@@ -87,7 +87,7 @@ no warnings 'qw'; # because of (x,y)
 			 "Start" => "B\374lowstr. (Sch\366neberg)",
 			 "Goal" => "B\374lowstr. (Sch\366neberg)",
 			 "Lines" => [
-				     [undef, undef, "B\374lowstr.", undef],
+				     [undef, 'nach Norden', "B\374lowstr.", undef],
 				     ["nach 0.18 km", "links (90\260) weiter auf der", "B\374lowstr.", "0.2 km"]
 				    ],
 			 "Footer" => ["nach 0.34 km", "", "angekommen!", "0.5 km"],
@@ -101,7 +101,7 @@ no warnings 'qw'; # because of (x,y)
 			 "Start" => "B\374lowstr. (Sch\366neberg)",
 			 "Goal" => "B\374lowstr. (Sch\366neberg)",
 			 "Lines" => [
-				     [undef, undef, "B\374lowstr.", undef],
+				     [undef, 'towards north', "B\374lowstr.", undef],
 				     ["after 0.18 km", "left (90\260) ->", "B\374lowstr.", "0.2 km"]
 				    ],
 			 "Footer" => ["after 0.34 km", "", "arrived!", "0.5 km"],
@@ -118,7 +118,7 @@ no warnings 'qw'; # because of (x,y)
 		     "Start" => "Dudenstr.",
 		     "Goal" => "Methfesselstr.",
 		     "Lines" => [
-				 [undef, undef, "Dudenstr.", undef],
+				 [undef, 'nach Osten', "Dudenstr.", undef],
 				 ["nach 0.69 km", "links (60\260) in die", "Methfesselstr.", "0.7 km"]
 				],
 		     "Footer" => ["nach 0.17 km", "", "angekommen!", "0.9 km"],
@@ -135,7 +135,7 @@ no warnings 'qw'; # because of (x,y)
 			 "Start" => "Puschkinallee",
 			 "Goal" => "Puschkinallee",
 			 "Lines" => [
-				     [undef, undef, "Puschkinallee", undef],
+				     [undef, 'nach Südosten', "Puschkinallee", undef],
 				     ["nach 0.17 km", "halblinks (20\260) weiter auf der", "Puschkinallee", "0.2 km"]
 				    ],
 			 "Footer" => ["nach 0.18 km", "", "angekommen!", "0.3 km"],
@@ -148,7 +148,7 @@ no warnings 'qw'; # because of (x,y)
 			 "Start" => "Puschkinallee",
 			 "Goal" => "Puschkinallee",
 			 "Lines" => [
-				     [undef, undef, "Puschkinallee", undef],
+				     [undef, 'towards southeast', "Puschkinallee", undef],
 				     ["after 0.17 km", "half left (20\260) ->", "Puschkinallee", "0.2 km"]
 				    ],
 			 "Footer" => ["after 0.18 km", "", "arrived!", "0.3 km"],
@@ -165,7 +165,7 @@ no warnings 'qw'; # because of (x,y)
 			 "Start" => "Hohenstaufenstr.",
 			 "Goal" => "Hohenstaufenstr.",
 			 "Lines" => [
-				     [undef, undef, "Hohenstaufenstr.", undef],
+				     [undef, 'nach Osten', "Hohenstaufenstr.", undef],
 				     ["nach 0.03 km", "umdrehen", "Hohenstaufenstr.", "0.0 km"]
 				    ],
 			 "Footer" => ["nach 0.03 km", "", "angekommen!", "0.1 km"],

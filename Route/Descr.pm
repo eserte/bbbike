@@ -19,6 +19,8 @@ $VERSION = '1.05';
 
 use Cwd qw(abs_path);
 use File::Basename qw(dirname);
+
+use BBBikeCalc;
 use Strassen::Strasse;
 
 my $VERBOSE = 1;
@@ -166,13 +168,14 @@ sub convert {
 	    $entf = sprintf "%s %.2f km", M("nach"), $entf/1000;
 
 	} elsif ($#{ $r->path } > 1) {
-	    #XXX aktivieren, wenn BBBikeCalc ein "richtiges" Modul ist
-#  	    # XXX main:: ist haesslich
-#  	    $richtung = "nach " .
-#  		uc(#main::opposite_direction #XXX why???
-#  		   (main::line_to_canvas_direction
-#  		    (@{ $r->path->[0] },
-#  		     @{ $r->path->[1] })));
+	    my($x1,$y1) = @{ $r->path->[0] };
+	    my($x2,$y2) = @{ $r->path->[1] };
+	    my $raw_direction = uc(BBBikeCalc::line_to_canvas_direction($x1,$y1,$x2,$y2));
+	    {
+		my $lang = !defined $lang || $lang eq '' ? "de" : $lang;
+		$richtung = ($lang eq 'en' ? "towards" : "nach") . " " .
+		    BBBikeCalc::localize_direction($raw_direction, $lang);
+	    }
 	}
 
 	if ($comments_net) {
