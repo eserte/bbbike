@@ -41,12 +41,25 @@ plan tests => (2+$pdfinfo_tests)*2;
 my $lang;
 my $Route_PDF_class = 'Route::PDF';
 my $debug;
+my($start_coord, $via_coord, $goal_coord);
 if (!GetOptions("lang=s" => \$lang,
 		"class=s" => \$Route_PDF_class,
 		"debug" => \$debug,
+		"start=s" => \$start_coord,
+		"via=s" => \$via_coord,
+		"goal=s" => \$goal_coord,
 		get_std_opts(qw(display pdfprog)),
 	       )) {
-    die "usage: $0 [-lang lang] [-debug] [-pdfprog pdfviewer] [-display] [-class Route::PDF::...]";
+    die "usage: $0 [-lang lang] [-debug] [-pdfprog pdfviewer] [-display] [-class Route::PDF::...] [-start ... -goal ... [-via ...]]";
+}
+
+if ($start_coord || $via_coord || $goal_coord) {
+    if (!$start_coord) {
+	die "-start is mandatory if any of -via and -goal is used.\n";
+    }
+    if (!$goal_coord) {
+	die "-goal is mandatory if any of -start and -via is used.\n";
+    }
 }
 
 if (!eval 'use ' . $Route_PDF_class . '; 1') {
@@ -66,20 +79,22 @@ my $net = StrassenNetz->new($s);
 $net->make_net;
 
 my $via_name;
-my($start_coord, $via_coord, $goal_coord);
-for my $coordref (\$start_coord, \$via_coord, \$goal_coord) {
-    while(1) {
-	my $r = $s->get(rand($#{$s->{Data}}));
-	$$coordref = $r->[Strassen::COORDS][0];
-	if ($coordref == \$via_coord) {
-	    $via_name = $r->[Strassen::NAME];
+if (!$start_coord) {
+    for my $coordref (\$start_coord, \$via_coord, \$goal_coord) {
+	while(1) {
+	    my $r = $s->get(rand($#{$s->{Data}}));
+	    $$coordref = $r->[Strassen::COORDS][0];
+	    if ($coordref == \$via_coord) {
+		$via_name = $r->[Strassen::NAME];
+	    }
+	    last if (!exists $inacc_hash->{$$coordref});
 	}
-	last if (!exists $inacc_hash->{$$coordref});
     }
 }
 
 my($route) = $net->search($start_coord, $goal_coord,
-			  Via => [$via_coord], AsObj => 1);
+			  ($via_coord ? (Via => [$via_coord]) : ()),
+			  AsObj => 1);
 
 my $comments_net;
 {
@@ -99,7 +114,7 @@ my $comments_net;
 
 my $rp = $Route_PDF_class->new(@arg);
 $rp->output(($lang ? (-lang => $lang) : ()),
-	    -vianame => $via_name,
+	    ($via_name ? (-vianame => $via_name) : ()),
 	    -commentsnet => $comments_net,
 	    -net => $net,
 	    -route => $route,
