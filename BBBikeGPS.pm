@@ -218,7 +218,7 @@ sub BBBikeGPS::draw_gpsman_data {
     $cfc_top->transient($top) if $main::transient;
     $main::toplevel{'BBBikeGPS.pm'} = $cfc_top;
 
-    use vars qw($draw_gpsman_data_s $draw_gpsman_data_p
+    use vars qw($draw_gpsman_data_auto $draw_gpsman_data_s $draw_gpsman_data_p
 		$show_track_graph
 		$show_track_graph_speed
 		$show_track_graph_alt
@@ -227,8 +227,9 @@ sub BBBikeGPS::draw_gpsman_data {
 		$show_statistics
 		$do_center_begin
 		$draw_point_names);
-    $draw_gpsman_data_s = 1 if !defined $draw_gpsman_data_s;
-    $draw_gpsman_data_p = 1 if !defined $draw_gpsman_data_p;
+    $draw_gpsman_data_auto = 1 if !defined $draw_gpsman_data_auto;
+    $draw_gpsman_data_s = 0 if !defined $draw_gpsman_data_s;
+    $draw_gpsman_data_p = 0 if !defined $draw_gpsman_data_p;
     $show_track_graph = 0   if !defined $show_track_graph;
     $show_track_graph_speed = 1 if !defined $show_track_graph_speed;
     $show_track_graph_alt = 0 if !defined $show_track_graph_alt;
@@ -240,6 +241,23 @@ sub BBBikeGPS::draw_gpsman_data {
 
     my $file = $gpsman_last_dir || Cwd::cwd();
     my $weiter = 0;
+
+    my $draw_gpsman_data_auto_handler = sub {
+	if ($draw_gpsman_data_auto && defined $file) {
+	    if ($file =~ m{\.(trk|gpx)$}) {
+		$draw_gpsman_data_s = 1;
+		$draw_gpsman_data_p = 0;
+	    } elsif ($file =~ m{\.wpt$}) {
+		$draw_gpsman_data_s = 0;
+		$draw_gpsman_data_p = 1;
+	    } else {
+		# don't know, select both
+		$draw_gpsman_data_s = 1;
+		$draw_gpsman_data_p = 1;
+	    }
+	}
+    };
+
     $cfc_top->Label(-text => M("Gpsman-Datei").":")->pack(-anchor => "w");
     my $f = $cfc_top->Frame->pack(-fill => "x", -expand => 1);
     my $pe = $f->PathEntry
@@ -387,10 +405,29 @@ EOF
 	       })->pack(-side => "left");
 
     my $f2 = $cfc_top->Frame->pack(-fill => "x", -expand => 1);
-    $f2->Checkbutton(-text => M"Strecken zeichnen",
-		     -variable => \$draw_gpsman_data_s)->pack(-anchor => "w");
-    $f2->Checkbutton(-text => M"Punkte zeichnen",
-		     -variable => \$draw_gpsman_data_p)->pack(-anchor => "w");
+
+    {
+	my($draw_gpsman_data_s_check, $draw_gpsman_data_p_check);
+	my $fix_draw_gpsman_data_check_visibility = sub {
+	    if ($draw_gpsman_data_auto) {
+		$_->configure(-state => 'disabled')
+		    for ($draw_gpsman_data_s_check, $draw_gpsman_data_p_check);
+	    } else {
+		$_->configure(-state => 'normal')
+		    for ($draw_gpsman_data_s_check, $draw_gpsman_data_p_check);
+	    }
+	};
+	$f2->Checkbutton(-text => M"Auto",
+			 -variable => \$draw_gpsman_data_auto,
+			 -command => $fix_draw_gpsman_data_check_visibility,
+			)->pack(-anchor => "w");
+	$draw_gpsman_data_s_check = $f2->Checkbutton(-text => M"Strecken zeichnen",
+						     -variable => \$draw_gpsman_data_s)->pack(-anchor => "w");
+	$draw_gpsman_data_p_check = $f2->Checkbutton(-text => M"Punkte zeichnen",
+						     -variable => \$draw_gpsman_data_p)->pack(-anchor => "w");
+	$fix_draw_gpsman_data_check_visibility->();
+    }
+
     {
 	my $f3 = $f2->Frame->pack(-fill => "x", -anchor => "w");
 	$f3->gridColumnconfigure($_, -weight => 1) for (0 .. 1);
@@ -493,6 +530,8 @@ EOF
     }
     $cfc_top->destroy;
     $top->update;
+
+    $draw_gpsman_data_auto_handler->();
 
     my %draw_args =
 	(-gap => $max_gap,
