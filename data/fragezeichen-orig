@@ -24,12 +24,12 @@ Grunewaldstr. (Steglitz)	?::projected 4861,5581 4671,5697 4520,5793
 #: next_check: 2011-12-15
 Stülerstr.	?::projected 6825,11486 6716,11439 6692,11365 6679,11319 6630,11247 6606,11222
 # 
-#: last_checked: 2012-09-01
+#: last_checked: 2012-09-10
 #: next_check: 2012-11-15
-Danziger Str.	?::projected 11712,14868 11879,14771 11990,14714 12025,14695 12128,14640 12317,14535 12425,14459 12621,14313 12729,14227 12901,14093 12975,13990 13037,13897 13100,13803 13166,13707 13225,13620 13228,13615 13330,13468
+Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12128,14640 12317,14535 12425,14459 12621,14313 12729,14227 12901,14093 12975,13990 13037,13897 13100,13803 13166,13707 13225,13620 13228,13615 13330,13468
 # 
-#: last_checked: 2012-09-01 (nördlicher Abschnitt)
-#: next_check: 2012-09-25
+#: last_checked: 2012-09-10 (nördlicher Abschnitt)
+#: next_check: 2012-09-30
 Kniprodestr./Am Friedrichshain	?::inwork 12901,14093 12784,13961 12695,13864 12640,13814 12571,13798 12403,13755 12204,13719 12161,13711 12038,13685 11868,13646 11785,13625 11762,13619 11706,13635
 # 
 #: by: http://www.berlin.de/ba-spandau/presse/archiv/20100803.1545.305011.html
@@ -46,8 +46,9 @@ Neuendorfer Str.: Radspuren werden ab 9. August 2010 markiert	?::inwork -2869,15
 #: next_check: 2011-12-15
 Joachim-Friedrich-Str.	?::projected 3067,9592 3069,9622 3083,9796 3092,9886 3108,10069 3111,10116 3132,10499
 # 
-#: last_checked: 2012-06-07
-#: next_check: 2013-01-01
+#: last_checked: 2012-09-10
+#: next_check: 2012-10-15
+#: XXX erste Anfänge existieren südlich der Friesenstr. (seen: 2012-09-10)
 Germanenstr. (oder nur das kleine Stück bis Waldsteg?)	?::projected 8406,19081 8359,19162 8307,19458 8304,19475 8268,19558 8234,19634 8233,19695 8231,19806 8242,19869 8234,19936
 #: by: ^^^
 # 
@@ -586,6 +587,7 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 # Das heißt diese Strecken werden nicht bei einer erweiterten Suche aufgenommen
 # und dem CGI-Benutzer auch nicht präsentiert.
 # 
+Feldlerchenweg: Steigungen genau erfassen!	? 6908,23244 7109,22919
 (Buschallee KGA): komplett asphaltiert? Beleuchtet? Schranken? Ausschilderung?	? 22458,9532 22525,9665 22730,9938
 (KGA-Weg): komplett asphaltiert? Beleuchtet? Schranken? Ausschilderung?	? 22730,9938 22818,10080 22731,10142
 (Blumenweg): Qualität? Beleuchtet? Schranken? Ausschilderung?	? 22274,9622 22604,9988
@@ -1838,11 +1840,7 @@ Ettenheimer Pfad: Qualität?	? 4898,22459 4938,22405 5075,22153
 Höllentalweg: Qualität?	? 5108,22156 5168,22197 5209,22229
 Straße 167 (Waidmannslust): Qualität?	? 4999,22199 4971,22138
 Waldshuter Zeile: Qualität?	? 5484,22564 5595,22626
-Am Jartz: Qualität?	? 6657,23334 6516,23190
-Klötzesteig: Qualität? Ist der nördliche Abschnitt für Autos gesperrt?	? 6644,23036 6621,23061 6516,23190 6429,23291
-Am Wiesenende: Qualität?	? 6420,22845 6491,22915 6621,23061 6634,23076
-Höpfertsteig: Qualität?	? 6839,23300 6931,23352
-Creienfelder Weg: Qualität?	? 6817,23167 6712,23252
+Höpfertsteig: Qualität?	? 6830,23293 6931,23352
 Lessingstr. (Glienicke): Qualität?	? 4668,24442 4733,24854
 Scheibenbergstr. - Blenheimstr.: Durchfahrt für Radfahrer möglich? Qualität?	? 20692,15161 20687,15193
 #XXX del --- hier existiert nichts --- Seddinhütte: Qualität?	? 27891,-2988 27901,-2972
@@ -2017,9 +2015,6 @@ Qualität?	? 14709,35225 14839,34940 14961,34974 16934,35474 17208,35436 17492,35
 B109: Hat die B109 in Basdorf einen Radweg? Ist der Radweg asphaltiert? Wie breit ist er?	? 12466,30452 12635,32221 12224,34508 12160,34668 12034,35012
 #: XXX laut osm: unpaved
 Basdorf: Qualität des Radwegs entlang der Bahnstrecke?	? 12034,35012 12083,35157 12681,35785 12761,35942
-#: by: http://www.reinickendorf.de/index_8368_de.html
-#: XXX Ausbau zum verkehrsberuhigten Bereich, außerdem Ersetzen des Pflasters durch eine Betonpflasterfahrbahn (Verbundsteinpflaster?), bis Frühjahr 2009
-Wittenauer Str.: Qualität der Wittenauer Str. (Verbundsteinpflaster oder etwas anderes)? Sind (Teile der) Wittenauer Str. verkehrsberuhigt (Spielstraße oder Tempo-30-Zone)?	? 6666,22988 6651,23020 6644,23036 6634,23076 6712,23252 6727,23287
 #: XXX asphaltierter Radweg auf der nördlichen/östlichen Seite, nicht ganz sicher bei der Lage
 Buckow - Lichterfelde: wo genau ist der Radweg?	? 31634,53303 32692,53191 32718,53044 32856,52150 33002,51944
 # XXX del --- existiert zwar, ein Gehweg, lohnt aber nicht aufgenommen zu werden --- Verbindung zwischen Straße 45 und Straße 46: Qualität? Für Autos gesperrt?	? 12671,17528 12587,17603
@@ -2132,17 +2127,10 @@ Schlehenweg: Qualität?	? -3127,17918 -3147,17831 -3204,17749
 Amorbacher Weg: Qualität?	? -3043,16601 -3151,16657
 Sandwiesenweg: Qualität?	? -5905,17165 -5898,17318
 Am Klauswerder: Qualität?	? 5335,20671 5236,20747 5170,20673
-Windmühlenweg: Qualität?	? 7004,22881 6950,23023
-Getreideweg: Qualität?	? 6948,22862 6891,22997
-Kornweg: Qualität?	? 6892,22843 6837,22974
-Mühlsteinweg: Qualität?	? 6836,22824 6780,22947
-Auf dem Mühlenberg: Qualität?	? 6723,22924 6780,22947 6837,22974 6891,22997 6950,23023
 #: XXX str_cont_ausnahme-Eintrag
 #: XXX_osm fehlt bei osm
 Am Fölzberg: Qualität?	? 6714,23010 6830,23080 6865,23103
 Am Fölzberg: Qualität?	? 6830,23080 6779,23139
-#: XXX_osm bei osm ohne Namen
-Feldlerchenweg: Qualität?	? 7109,22919 6912,23237
 #: XXX_osm bei osm falsch geschrieben?
 Grebenhainer Weg: Qualität?	? 5628,21279 5465,21402
 Puchertweg: Qualität?	? 4613,19279 4520,19347
@@ -2298,15 +2286,6 @@ Elsa-Rendschmidt-Weg: Wieviele Stufen hat die Treppe zur Sarkauer Allee?	? -1574
 Führen hier die Routen 3 und 6 entlang?	? 905,24113 931,23965 902,23844
 #: XXX fehlt in Berlin.coords.data
 Straupitzer Steig: Qualität?	? 6768,21515 6777,21335
-# 
-#: XXX mittlerweile in AEG-Siedlung Heimat umbenannt? vvv
-#: XXX fehlt in Berlin.coords.data vvv
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/45re.pdf/file?y=2011 vvv
-Straße 189 (Lübars): Qualität?	? 6353,22515 6301,22581
-Straße 188 (Lübars): Qualität?	? 6353,22622 6301,22581 6254,22546
-#: by: ^^^
-#: XXX ^^^
-#: XXX ^^^
 # 
 #: XXX laut osm surface=paved, kein allgemeiner motorisierter Verkehr
 Glasow - Rotberg: Qualität?	? 13781,-6410 13788,-6462 13727,-6505 14232,-6903 14289,-7003 14644,-7186 16251,-6520
@@ -2483,8 +2462,6 @@ Via Tilia: Qualität? Wo liegt die Straße genau?	? -7384,-970 -7326,-1047
 #: next_check: 2012-03-15
 #: XXX noch in Bau
 Amelieweg: Qualität nach den Bauarbeiten?	?::inwork 22861,12390 22805,12456 22759,12420 22814,12353
-#: XXX evtl. als "Herrnholzpark" bezeichnen, evtl. Park auch aufnehmen
-(Weg am Packereigraben): Qualität? Nachts beleuchtet?	? 6254,22633 6221,22580 6081,22598 5886,22492 5825,22456
 (Weg am Packereigraben): Qualität? Nachts beleuchtet?	? 5821,22435 5783,22418 5668,22283 5619,22168 5490,22095 5373,22089 5177,22142 5108,22156 5033,22122 4917,22119 4884,22097
 #: by: http://www.potsdam.de/cms/beitrag/10071706/966975/
 Templiner Str.: gibt es in der Templiner Straße mittlerweile Radstreifen?	? -13062,-2901 -13155,-2913 -13381,-2943 -13481,-2956 -13718,-2991
@@ -2877,13 +2854,7 @@ Am Luchgraben - B2: Qualität?	? 17060,20381 17009,20447 16787,20515 16748,20586 
 B2 - Lindenberger Weg: Qualität?	? 16643,21035 16576,21165
 Heinrich-Grüber-Str. - Waldheimer Str.: Wie ist die Qualität des Weges? Nachts beleuchtet?	? 24495,13780 24524,13763 24599,13817 24771,13949
 #XXX del --- existiert nicht --- Putenweg - Waßmannsdorfer Chaussee: für Radfahrer befahrbar? Qualität?	? 16346,-394 16400,-409
-# 
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/56re.pdf/file?y=2011
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/28re.pdf/file?y=2012
-#: XXX Privatstraße
-#: XXX fehlt in Berlin.coords.data
-#: XXX genaue Lage?
-Feldspatzwenweg: Qualität? Wo genau befindet sich die Straße?	? 7609,23108 7583,23177 7804,23253 7831,23192
+#XXX del --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/56re.pdf/file?y=2011 --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/28re.pdf/file?y=2012 --- #: XXX Privatstraße --- #: XXX fehlt in Berlin.coords.data --- #: XXX genaue Lage? --- Feldspatzwenweg: Qualität? Wo genau befindet sich die Straße?	? 7609,23108 7583,23177 7825,23265 7852,23200
 #XXX --- vorerst nicht aufnehmen --- #: XXX unbeleuchtet, geschützte Grünanlage, Weg teilt sich, 3 Stufen auf beiden Seiten --- Weg im Volkspark Wittenau: wie geht es weiter?	? 5356,21146 4942,20830
 Reinickes Hof: existiert eine Verbindung zum Saalmannsteig? Qualität?	? 5281,18996
 #XXX del --- #: XXX fehlt in Berlin.coords.data --- #: XXX zumindest auf der Seite des Hohenschönhauser Tors habe ich keine Schilder gesehen --- Stellerweg: existiert hier ein Weg? Ausgeschildert? Qualität für Radfahrer?	? 15367,14512 15221,14550
@@ -2901,7 +2872,6 @@ Hospitalgrabenpark: Qualität?	? 7115,3003 7127,3077 7184,3142 7263,3117 7314,319
 Lankegrabenpark: Qualität?	? 7364,3193 7409,3331 7458,3451
 #: XXX evtl. auch als Park/Grünanlage eintragen
 Immenweidepark: Qualität?	? -2114,17878 -2169,17882 -2241,17847 -2298,17868 -2366,17868 -2388,17893
-Andreas-Rabe-Siedlung: Qualität? Ausgeschildert?	? 6898,23233 6912,23237 6967,23278 7078,23340 7027,23459
 Ruhlebener Str. - Uferweg: existiert ein Zugang? Wieviele Treppenstufen?	? -3621,13884 -3493,13782
 #: XXX neue Straßen in Potsdam: Qualität? Genauer Verlauf? vvv
 #: by: http://www.potsdam.de/cms/dokumente/10084122_1189396/4d29ee09/Amtsblatt_9_2011.pdf vvv
@@ -2954,10 +2924,16 @@ Fritz-Erler-Allee: sind die Radwege asphaltiert oder saniert?	? 14392,2979 14274
 #: XXX fehlt in Berlin.coords.data
 Violastr.: existiert diese Straße? Mit Straßenschildern? Qualität?	? 16610,19836 16550,19829 16471,19825 16411,19824
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/19re.pdf/file?y=2012 vvv
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/28re.pdf/file?y=2012
-#: XXX neue private Straßen entstehen, fehlen in Berlin.coords.data
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/28re.pdf/file?y=2012 vvv
+#: XXX neue private Straßen entstehen, fehlen in Berlin.coords.data vvv
+#: last_checked: 2012-09-10 vvv
+#: next_check: 2013-09-10 vvv
 Lübarser Aue: Qualität? Wo wird sich die Straße befinden?	?::inwork 7185,22466 7147,22393
 Am Rodelberg: Qualität? Wo wird sich die Straße befinden?	?::inwork 7257,22381 7296,22458
+#: next_check ^^^
+#: last_checked ^^^
+#: XXX: ^^^
+#: by: ^^^
 #: by: ^^^
 # 
 #: XXX alle in Potsdam-Grube vvv
@@ -3032,3 +3008,7 @@ Deilingeweg: ist der Deilingeweg ausgeschildert?	? 6259,23379 6229,23415
 #: XXX str_cont_ausnahme!
 #: XXX beim anderen Abschnitt des Tongrubenwegs in strassen-orig eintragen!
 Tongrubenweg: Qualität im östlichen Teilabschnitt?	? 28694,2529 28749,2595 28809,2660
+#: XXX am nordöstlichen Ende noch asphaltiert
+Freizeitpark Lübars, nördlicher Weg: Qualität? Nachts beleuchtet?	? 7780,23050 7771,23020 7734,22987 7642,22985 7553,22952
+Freizeitpark Lübars, westlicher Weg: Qualität? Nachts beleuchtet?	? 7493,23064 7518,22994 7553,22952 7581,22888 7561,22750 7604,22685 7610,22597 7648,22489
+Reinickendorfer Radroute 1: genauer Verlauf im Märkischen Viertel? Qualität? Nachts beleuchtet?	? 7516,22178 7439,22138 7375,22146 7279,21850 6960,21802 6742,21733

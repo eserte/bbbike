@@ -134,7 +134,7 @@ Schulze-Delitzsch-Platz	1 11155,11750 11048,11745 11022,11782
 Schulze-Delitzsch-Platz	1 11022,11782 11155,11750
 Weydemeyerstr.	1 11905,13069 11910,13055 12062,12986 12054,12903
 Gipsstr.	1 10350,13376 10199,13446 10026,13521
-Dorotheenstr.	1 9867,12651 9744,12601 9682,12590 9580,12581 9454,12558
+Dorotheenstr.	1 9870,12657 9744,12601 9682,12590 9580,12581 9454,12558
 Dorotheenstr. (Straßenbahn)	1s 9454,12558 9330,12529
 Georgenstr.	1 9434,12669 9568,12688 9659,12704 9754,12775
 Paul-Junius-Str	1 15084,13276 15082,13369 15231,13375
@@ -707,7 +707,7 @@ Edelhofdamm	1 3277,25575 3446,25628
 Olbrichweg	1 5787,19326 5879,19352
 Genfer Str.	1 6890,18190 6821,18216 6683,18243
 Eckertstr.	1s 13598,12554 13585,12584
-Am Kupfergraben	1s 9867,12651 9810,12712 9754,12775
+Am Kupfergraben	1s 9870,12657 9810,12712 9754,12775
 Leistikowstr.	1 1188,11861 1133,11664
 Am Krummen Weg	1 -7169,14849 -7026,14890
 Am Krummen Weg	1 -7169,14849 -7248,14826
@@ -716,6 +716,7 @@ Breslauer Platz	1s 5810,7337 5902,7334
 Desideriusweg	1 2830,21378 2728,21336
 Am Ansitz	1 3913,21977 3855,22055
 Am Vierrutenberg etc.	1 5712,23785 5676,23971 5780,23997 5792,23943 5787,23840 5712,23785
+(Parkplatz Residenzstr. - Kopenhagener Str.)	1::igndisp 7204,18634 7233,18562
 Am Neuen Garten	1 -12166,1384 -12212,1201 -12276,831 -12302,718
 Am Neuen Garten	1 -12332,585 -12582,127
 Hochstraße	3nocross::ignrte -11399,-1339 -11461,-1424 -11540,-1543
@@ -877,6 +878,8 @@ Zeltinger Platz	1s 2404,25187 2355,25252 2395,25273 2446,25265 2490,25211 2486,2
 Ludolfinger Platz	1s 2277,25033 2245,25016 2205,25042 2192,25083 2216,25117 2277,25094 2285,25059 2277,25033
 Sewanstr. - Balatonstr.	1s 17705,10232 17741,10386
 Hönower Str. (Karlshorst) (Ausweichen auf Sandbankette möglich)	1s 18377,9366 18490,9387
+Gitter auf dem Mittelstreifen	3nocross::ignrte 8057,14876 8091,14895 8219,14897
+Reinickendorfer Str. -> Schulzendorfer Str.: Gitter auf dem Mittelstreifen	3::igndisp 8037,14958 8091,14895 8219,14897
 Mittelstreifen	3nocross::ignrte 6422,15708 6555,15827 6661,15921
 Antwerpener Str. -> Seestr.: Mittelstreifen	3::igndisp 6690,15671 6555,15827 6422,15708
 Antwerpener Str. -> Togostr.: Mittelstreifen	3::igndisp 6690,15671 6555,15827 6530,15849
@@ -885,7 +888,7 @@ Togostr. -> Antwerpener Str.: Mittelstreifen	3::igndisp 6530,15849 6555,15827 66
 Togostr. -> Seestr.: Mittelstreifen	3::igndisp 6530,15849 6555,15827 6661,15921
 Seestr. -> Antwerpener Str.: Mittelstreifen	3::igndisp 6661,15921 6555,15827 6690,15671
 Abbiegen nicht möglich	3nocross::ignrte 7602,17399 7684,17435 7902,17166
-Residenzstr. -> Fahlandgasse: Abbiegen nicht möglich	3::igndisp 7602,17399 7684,17435 7681,17475
+Holländerstr. -> Fahlandgasse: Abbiegen nicht möglich	3::igndisp 7602,17399 7684,17435 7681,17475
 Fahlandgasse -> Letteallee: Abbiegen nicht möglich	3::igndisp 7681,17475 7684,17435 7707,17445
 Fahlandgasse -> Residenzstr.: Abbiegen nicht möglich	3::igndisp 7681,17475 7684,17435 7902,17166
 Mittelstreifen	3nocross::ignrte 7579,17532 7572,17558 7540,17675
@@ -1524,9 +1527,9 @@ Prenzlauer Allee -> Hiddenseer Str.: Mittelstreifen mit Straßenbahn, aber Furt i
 Mittelstreifen mit Straßenbahn, aber Ampel in der Nähe	3nocross::ignrte 11776,15060 11801,15132 11828,15210
 Stubbenkammerstr. -> Prenzlauer Allee: Mittelstreifen mit Straßenbahn, aber Ampel in der Nähe	3::igndisp 11636,15191 11801,15132 11828,15210
 Prenzlauer Allee -> Stubbenkammerstr.: Mittelstreifen mit Straßenbahn, aber Ampel in der Nähe	3::igndisp 11776,15060 11801,15132 11636,15191
-Mittelstreifen mit Straßenbahn, hier aber Fußgängerfurt vorhanden	3nocross::ignrte 11712,14868 11681,14759 11662,14695
+Mittelstreifen mit Straßenbahn, hier aber Fußgängerfurt vorhanden	3nocross::ignrte 11709,14856 11681,14759 11662,14695
+Prenzlauer Allee -> Chodowieckistr.: Mittelstreifen mit Straßenbahn, hier aber Fußgängerfurt vorhanden	3::igndisp 11709,14856 11681,14759 11977,14607
 Chodowieckistr. -> Prenzlauer Allee: Mittelstreifen mit Straßenbahn, hier aber Fußgängerfurt vorhanden	3::igndisp 11977,14607 11681,14759 11662,14695
-Prenzlauer Allee -> Chodowieckistr.: Mittelstreifen mit Straßenbahn, hier aber Fußgängerfurt vorhanden	3::igndisp 11712,14868 11681,14759 11977,14607
 Mittelstreifen mit Straßenbahn	3nocross::ignrte 12071,16130 12030,15968 11997,15834
 Prenzlauer Allee -> Kuglerstr.: Mittelstreifen mit Straßenbahn	3::igndisp 11997,15834 12030,15968 11961,16002
 Kuglerstr. -> Prenzlauer Allee [Wohngebiet]: Mittelstreifen mit Straßenbahn	3::igndisp 11961,16002 12030,15968 12154,15902
@@ -1538,9 +1541,9 @@ Küselstr. -> Prenzlauer Allee: Straßenbahntrasse	3::igndisp 12058,15621 11967,15
 Küselstr. -> Zelterstr.: Straßenbahntrasse	3::igndisp 12058,15621 11967,15700 11852,15765
 Zelterstr. -> Prenzlauer Allee: Straßenbahntrasse	3::igndisp 11852,15765 11967,15700 11997,15834
 Zelterstr. -> Küselstr.: Straßenbahntrasse	3::igndisp 11852,15765 11967,15700 12058,15621
-Mittelstreifen mit Straßenbahn	3nocross::ignrte 11712,14868 11610,14886 11545,14897
-Rykestr. -> Danziger Str.: Mittelstreifen mit Straßenbahn	3::igndisp 11526,14693 11610,14886 11545,14897
-Danziger Str. -> Rykestr.: Mittelstreifen mit Straßenbahn	3::igndisp 11712,14868 11610,14886 11526,14693
+Mittelstreifen mit Straßenbahn	3nocross::ignrte 11709,14856 11609,14881 11545,14897
+Danziger Str. -> Rykestr.: Mittelstreifen mit Straßenbahn	3::igndisp 11709,14856 11609,14881 11526,14693
+Rykestr. -> Danziger Str.: Mittelstreifen mit Straßenbahn	3::igndisp 11526,14693 11609,14881 11545,14897
 Mittelstreifen mit Straßenbahn	3nocross::ignrte 12317,14535 12128,14640 12025,14695
 Lilli-Henoch-Str. -> Danziger Str.: Mittelstreifen mit Straßenbahn	3::igndisp 12189,14767 12128,14640 12317,14535
 Danziger Str. -> Lilli-Henoch-Str.: Mittelstreifen mit Straßenbahn	3::igndisp 12025,14695 12128,14640 12189,14767
@@ -2113,6 +2116,8 @@ tragen (Treppe, ca. 20 Stufen)	0:25:-12 19160,14935
 tragen (Treppe)	0:30:70 89344,-5795
 tragen, langgezogene Stufen (13 Stufen)	0:25:-168 20704,1383
 tragen (31 Stufen oder Kinderwagenrampe)	0:40:-256 13168,21706
+Drängelgitter	BNP:3:-221:trailer=10 6509,23198
+enges Drängelgitter, kann umfahren werden	BNP:3:-214:trailer=10 6278,22615
 Schranke	BNP:3:-61:trailer=10 19750,11730
 Schranke	BNP:3:-29:trailer=10 19879,11595
 Drängelgitter	BNP:3:-220:trailer=10 5394,23172

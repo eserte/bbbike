@@ -154,7 +154,7 @@ Schulze-Delitzsch-Platz	1 11022,11782 11155,11750
 # hier stand mal ein Polizeiauto, als ich reinfahren wollte...:
 Weydemeyerstr.	1 11905,13069 11910,13055 12062,12986 12054,12903
 Gipsstr.	1 10350,13376 10199,13446 10026,13521
-Dorotheenstr.	1 9867,12651 9744,12601 9682,12590 9580,12581 9454,12558
+Dorotheenstr.	1 9870,12657 9744,12601 9682,12590 9580,12581 9454,12558
 Dorotheenstr. (Straﬂenbahn)	1s:q2 9454,12558 9330,12529
 Georgenstr.	1 9434,12669 9568,12688 9659,12704 9754,12775
 Paul-Junius-Str	1 15084,13276 15082,13369 15231,13375
@@ -940,7 +940,7 @@ Olbrichweg	1 5787,19326 5879,19352
 Genfer Str.	1 6890,18190 6821,18216 6683,18243
 #: note: enge Hausdurchfahrt
 Eckertstr.	1s:q3 13598,12554 13585,12584
-Am Kupfergraben	1s:q2 9867,12651 9810,12712 9754,12775
+Am Kupfergraben	1s:q2 9870,12657 9810,12712 9754,12775
 Leistikowstr.	1 1188,11861 1133,11664
 Am Krummen Weg	1 -7169,14849 -7026,14890
 Am Krummen Weg	1 -7169,14849 -7248,14826
@@ -949,6 +949,8 @@ Breslauer Platz	1s:q3 5810,7337 5902,7334
 Desideriusweg	1 2830,21378 2728,21336
 Am Ansitz	1 3913,21977 3855,22055
 Am Vierrutenberg etc.	1 5712,23785 5676,23971 5780,23997 5792,23943 5787,23840 5712,23785
+#: XXX_prog: eigentlich keine Einbahnstraﬂe, allerdings d¸rfte aus der Gegenrichtung das ‹berqueren der Straﬂe zu umst‰ndlich sein...
+(Parkplatz Residenzstr. - Kopenhagener Str.)	1::igndisp 7204,18634 7233,18562
 ######################################################################
 #
 # Potsdam
@@ -1142,6 +1144,7 @@ Hˆnower Str. (Karlshorst) (Ausweichen auf Sandbankette mˆglich)	1s:q2 18377,9366
 # gesperrte Wegf¸hrung (nicht mˆglich zu umgehen --- wenn es eine
 # Umgehung gibt, sollte sie in comments_path-orig als PI; kommentiert sein)
 # 
+Schulzendorfer Str.: Gitter auf dem Mittelstreifen	3nocross 8057,14876 8091,14895 8219,14897
 Seestr.: Mittelstreifen	3nocross 6422,15708 6555,15827 6661,15921
 #: note: auf dem Radweg gibt es noch zus‰tzlich Absperrgitter
 Residenzstr.: Abbiegen nicht mˆglich	3nocross 7602,17399 7684,17435 7902,17166
@@ -1336,11 +1339,11 @@ Greifswalder Str.: Mittelstreifen mit Straﬂenbahn	3nocross 12709,15112 12737,151
 Prenzlauer Allee: Mittelstreifen mit Straﬂenbahn	3nocross 11642,14625 11662,14695 11681,14759
 Prenzlauer Allee: Mittelstreifen mit Straﬂenbahn, aber Furt in der N‰he	3nocross 11801,15132 11828,15210 11852,15281
 Prenzlauer Allee: Mittelstreifen mit Straﬂenbahn, aber Ampel in der N‰he	3nocross 11776,15060 11801,15132 11828,15210
-Prenzlauer Allee: Mittelstreifen mit Straﬂenbahn, hier aber Fuﬂg‰ngerfurt vorhanden	3nocross 11712,14868 11681,14759 11662,14695
+Prenzlauer Allee: Mittelstreifen mit Straﬂenbahn, hier aber Fuﬂg‰ngerfurt vorhanden	3nocross 11709,14856 11681,14759 11662,14695
 #: XXX_prog: eine ‹berquerungsmˆglichkeit existiert 60m weiter s¸dlich
 Prenzlauer Allee: Mittelstreifen mit Straﬂenbahn	3nocross 12071,16130 12030,15968 11997,15834
 Prenzlauer Allee: Straﬂenbahntrasse	3nocross 11941,15586 11967,15700 11997,15834
-Danziger Str.: Mittelstreifen mit Straﬂenbahn	3nocross 11712,14868 11610,14886 11545,14897
+Danziger Str.: Mittelstreifen mit Straﬂenbahn	3nocross 11709,14856 11609,14881 11545,14897
 Danziger Str.: Mittelstreifen mit Straﬂenbahn	3nocross 12317,14535 12128,14640 12025,14695
 Torstr.: Mittelstreifen mit Straﬂenbahn	3nocross 10746,13673 10640,13700 10569,13719 10463,13747
 Yorckstr.: Linksabbiegen verboten (und unbequem)	3nocross 8192,9619 8097,9650 7938,9694
@@ -1753,6 +1756,8 @@ tragen (31 Stufen oder Kinderwagenrampe)	0:40 13168,21706
 #
 # Kinderanh‰nger wie der Chariot Captain XL sind 87cm breit
 # 
+Dr‰ngelgitter	BNP:3::trailer=10 6509,23198
+enges Dr‰ngelgitter, kann umfahren werden	BNP:3::trailer=10 6278,22615
 Schranke	BNP:3::trailer=10 19750,11730
 Schranke	BNP:3::trailer=10 19879,11595
 Dr‰ngelgitter	BNP:3::trailer=10 5394,23172

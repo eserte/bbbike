@@ -41,7 +41,7 @@ Gartenstr.: Einbahnstraﬂe zwischen Invalidenstr. und Tieckstr. (Bauarbeiten)	q4:
 #: XXX laut INKO_113363 bis Ende M‰rz 2013 gesperrt
 Voﬂstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg	q3::inwork 8743,11663 8837,11676
 # 
-#: last_checked: 2012-09-01 vvv
+#: last_checked: 2012-09-10 vvv
 #: next_check: 2013-05-31 vvv
 #: by: wosch & IM_017330 & IM_019009 & INKO_113944
 #: XXX siehe auch tempor‰re Ampel an der Chausseestr. sowie an der Luisenstr.
@@ -128,9 +128,9 @@ Anna-Louisa-Karsch-Str.: vor der Friedrichsbr¸cke auf den linken Gehweg fahren	q
 #: next_check: 2012-10-15
 Am Zirkus: Baustelle, Einbahnstraﬂe	q3::inwork; 9170,13031 9239,12923
 # 
-#: last_checked: 2012-09-02
+#: last_checked: 2012-09-10
 #: next_check: 2012-10-15
-Am Kupfergraben: Baustelle, Einbahnstraﬂe	q3::inwork; 9867,12651 9919,12613
+Am Kupfergraben: Baustelle, Einbahnstraﬂe	q3::inwork; 9870,12657 9900,12643 9919,12613
 # 
 #: temporary ^^^
 ######################################################################
@@ -343,7 +343,7 @@ Ludwigkirchplatz: Gehweg	q2 4905,10069 4863,10077
 (Rad- und Wanderweg an Spree und Landwehrkanal): Fuﬂg‰nger, teilweise eng	q2 3396,12741 3476,12735 3582,12704 3763,12624 3888,12618 4131,12641 4340,12578 4529,12570 4642,12491 4829,12357 5045,12243 5147,12164 5261,12004 5361,11910
 #: note: Radfahren erlaubt, Fuﬂg‰nger haben Vorrang
 Spreeufer: Fuﬂg‰nger, besonders an schˆnen Tagen	q2 10166,12777 10105,12855 9977,12912 9944,12921 9930,12947 9900,12942 9714,12995
-Spreeufer: Fuﬂg‰nger	q2 9707,12974 9557,12992 9533,12994 9508,12991 9271,12952
+Spreeufer: Fuﬂg‰nger	q2 9707,12974 9557,12992 9533,12994 9508,12991 9272,12952
 Henriette-Herz-Platz: Straﬂenbahn	q2 10132,12941 10255,12959 10312,12982 10371,13006
 Monbijoupark - Henriette-Herz-Platz: Fuﬂg‰nger	q1 9977,12912 10132,12941
 Monbijoubr¸cke: Fuﬂg‰nger	q1 9707,12974 9680,12916 9661,12876
@@ -1339,6 +1339,8 @@ Alt-Tegel: Fuﬂg‰nger	q3 1462,20133 1457,20159
 (U-Bahnunterf¸hrung Elsterwerdaer Platz): Fuﬂg‰nger	q3 21137,11294 21086,11321
 #: XXX_prog: BS (an der westlichen Seite)
 Frankfurter Allee/Harnackstr.: hoher abgeschr‰gter Bordstein	q2 15941,11855 15989,11834
+#: XXX_prog: BS
+Alter Bernauer Heerweg: eng, Bordstein zur Wittenauer Str.	q3 6641,22756 6770,22801
 #
 ######################### User Contributions #################################
 # 
@@ -1511,7 +1513,7 @@ Wentowsteig: enge Straﬂe mit parkenden Autos	q1 6924,20695 6945,20805 6955,20859
 #: by: Peter Held:
 (Spreeuferweg): Fuﬂg‰nger	q1 4537,12531 4501,12544 4334,12551
 #: by: Johannes Nerger:
-(Schˆnholzer Heide, parallel zur Friesenstr.): Fuﬂg‰nger	q1 8765,19288 8784,19253 8947,19166 9446,18855 9475,18862
+(Schˆnholzer Heide, parallel zur Friesenstr.): Fuﬂg‰nger	q1 8765,19288 8791,19249 8947,19166 9446,18855 9475,18862
 #: by: Felix Beutler:
 Nordufer: teilweise sehr schmaler Radweg	q1 7212,14738 7433,14656 7464,14636
 #: by: Jˆrn Busch:
