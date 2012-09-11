@@ -20,6 +20,7 @@ use vars qw($VERBOSE);
 #use AutoLoader 'AUTOLOAD';
 
 use BBBikeUtil qw();
+use Strassen::Util;
 
 # Argumente: entweder "Hash" oder "Strassen"
 # "Hash" ist der Rückgabewert von Strassen::all_crossings (bei
