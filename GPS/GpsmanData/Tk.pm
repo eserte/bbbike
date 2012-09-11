@@ -473,6 +473,8 @@ sub _track_attributes_editor {
 	     $t->Entry(-textvariable => \$track_attrs_ref->{'srt:comment'}));
     Tk::grid($t->Label(-text => "Event"),
 	     $t->Entry(-textvariable => \$track_attrs_ref->{'srt:event'}));
+    Tk::grid($t->Label(-text => "Tag(s)"),
+	     $t->Entry(-textvariable => \$track_attrs_ref->{'srt:tag'}));
     Tk::grid($t->Label(-text => "Frequency"),
 	     $t->Entry(-textvariable => \$track_attrs_ref->{'srt:frequency'}));
     if ($self->cget(-gpsdevices)) {
@@ -792,7 +794,7 @@ extension attribute C<srt:vehicle> is used.
 =item *
 
 Subtracks (track chunks) may be created, with values for the extension
-attributes C<srt:vehicle>, C<srt:brand>, C<srt:comment>,
+attributes C<srt:vehicle>, C<srt:brand>, C<srt:comment>, C<srt:tag>
 C<srt:frequency>, and C<srt:device>.
 
 =item *
