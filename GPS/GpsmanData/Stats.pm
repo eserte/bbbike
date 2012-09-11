@@ -25,6 +25,7 @@ BEGIN {
     # I don't want to depend on a non-core accessor module:
     no strict 'refs';
     for (qw(GpsmanData Accuracy Stats Areas
+	    Places PlacesKreuzungen PlacesHash
 	  )) {
 	my $acc = $_;
 	*{$acc} = sub {
@@ -46,6 +47,9 @@ sub new {
     $self->Accuracy($accuracy);
     if (exists $args{areas}) {
 	$self->Areas(delete $args{areas});
+    }
+    if (exists $args{places}) {
+	$self->Places(delete $args{places});
     }
     die 'Unhandled arguments: ' . join(' ', %args) if %args;
     $self;
@@ -230,7 +234,10 @@ sub run_stats {
 			}
 		    }
 		}
-		push @route_areas, undef; # unknown area
+
+		my $place = $self->_find_nearest_place($x,$y);
+
+		push @route_areas, $place; # place or undef for unknown area
 	    }
 	}
     }
@@ -323,6 +330,34 @@ sub _process_areas {
     ($area_bbox, $name_to_poly);
 }
 
+sub _find_nearest_place {
+    my($self,$px,$py) = @_;
+    if (!$self->PlacesKreuzungen) {
+	if ($self->Places) {
+	    require Strassen::Kreuzungen;
+	    my $s_hash = $self->Places->get_hashref;
+	    $self->PlacesHash($s_hash);
+	    my $kr = Kreuzungen->new_from_strassen(Strassen => $self->Places);
+	    $self->PlacesKreuzungen($kr);
+	}
+    }
+    if ($self->PlacesKreuzungen) {
+	# XXX Should rather stay in WGS84 coordinates :-(
+	require Karte::Polar;
+	require Karte::Standard;
+	$Karte::Polar::obj = $Karte::Polar::obj if 0; # cease -w
+	my($sx,$sy) = $Karte::Polar::obj->map2standard($px,$py);
+	my($best) = $self->PlacesKreuzungen->nearest_loop($sx,$sy,IncludeDistance=>1,BestOnly=>1,UseCache=>1);
+	if ($best && $best->[1] < 10_000) {
+	    return $self->PlacesHash->{$best->[0]};
+	} else {
+	    return undef;
+	}
+    } else {
+	return undef;
+    }
+}
+
 1;
 
 __END__
@@ -337,6 +372,14 @@ Dump statistics for a track with Berlin and Potsdam area detection
 (using the "areas" parameter):
 
     perl -Ilib -MStrassen::MultiStrassen -MGPS::GpsmanData::Any -MGPS::GpsmanData::Stats -MYAML -e '$areas = MultiStrassen->new("data/berlin_ortsteile", "data/potsdam"); $g = GPS::GpsmanData::Any->load(shift); $s = GPS::GpsmanData::Stats->new($g, areas => $areas); $s->run_stats; print Dump $s->human_readable' misc/gps_data/20100821.trk
+
+Dump statistics for a track with nearest orte detection
+(using the "areas" parameter):
+
+    perl -Ilib -MStrassen::MultiStrassen -MGPS::GpsmanData::Any -MGPS::GpsmanData::Stats -MYAML -e '$areas = MultiStrassen->new("data/orte", "data/orte2"); $g = GPS::GpsmanData::Any->load(shift); $s = GPS::GpsmanData::Stats->new($g, places => $places); $s->run_stats; print Dump $s->human_readable' misc/gps_data/20100821.trk
+
+It is possible to combine the C<areas> and C<places> options; the
+C<areas> detection has precedence over C<places>.
 
 Dump statistics for all tracks in F<misc/gps_data>:
 
