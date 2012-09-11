@@ -61,6 +61,7 @@ sub run_stats {
     my $max_speed = undef;
     my $min_speed = undef;
     my %vehicles;
+    my %tags;
     my $min_epoch;
     my $max_epoch;
 
@@ -85,6 +86,7 @@ sub run_stats {
 	my $track_attrs = $chunk->TrackAttrs || {};
 	my $vehicle = $track_attrs->{'srt:vehicle'} || $last_vehicle;
 	$last_vehicle = $vehicle;
+	my $tag = $track_attrs->{'srt:tag'};
 
 	my($chunk_bbox_minx, $chunk_bbox_miny, $chunk_bbox_maxx, $chunk_bbox_maxy);
 
@@ -149,6 +151,7 @@ sub run_stats {
 			     max_speed => $chunk_max_speed,
 			     min_speed => $chunk_min_speed,
 			     vehicle   => $vehicle,
+			     (defined $tag ? (tags => [split /\s+/, $tag]) : ()),
 			     bbox      => [$chunk_bbox_minx, $chunk_bbox_miny, $chunk_bbox_maxx, $chunk_bbox_maxy],
 			     (defined $chunk_min_epoch ? (min_datetime => strftime ISODATE_FMT, localtime($chunk_min_epoch)) : ()),
 			     (defined $chunk_max_epoch ? (max_datetime => strftime ISODATE_FMT, localtime($chunk_max_epoch)) : ()),
@@ -164,6 +167,12 @@ sub run_stats {
 	}
 
 	$vehicles{$vehicle}++ if defined $vehicle;
+
+	if (defined $tag) {
+	    for my $single_tag (split /\s+/, $tag) {
+		$tags{$single_tag}++
+	    }
+	}
 
 	if (defined $chunk_bbox_minx && (!defined $bbox_minx || $bbox_minx > $chunk_bbox_minx)) {
 	    $bbox_minx = $chunk_bbox_minx;
@@ -251,6 +260,7 @@ sub run_stats {
 		   min_speed => $min_speed,
 		   avg_speed => ($duration ? $dist/$duration : undef),
 		   vehicles  => [keys %vehicles],
+		   tags      => [keys %tags],
 		   bbox      => [$bbox_minx, $bbox_miny, $bbox_maxx, $bbox_maxy],
 		   route     => [map { $_->Longitude . ',' . $_->Latitude } @route_wpts],
 		   route_areas => [@route_areas],
