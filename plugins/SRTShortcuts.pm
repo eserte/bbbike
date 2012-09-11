@@ -1828,6 +1828,9 @@ sub gps_data_viewer {
 	    $show_file->();
 	    $unplot_file->();
 	    BBBikeEdit::edit_gps_track($gps_data_viewer_file);
+	    if (defined $BBBikeEdit::recent_gps_street_layer) {
+		mark_layer($BBBikeEdit::recent_gps_street_layer);
+	    }
 	}
     };
     
