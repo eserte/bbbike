@@ -688,6 +688,7 @@ Bodenschwelle, Umfahrung kann zugeparkt sein	? 23349,2240
 #: next_check: 2012-09-01
 Bootsbauerstr.: wird es eine Verbindung zur Bahrfeldtstr. geben?	? 15033,10013 15024,9994
 # 
+#: XXX Kolonie heißt "Anlage Blankenburg" vvv
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/19re.pdf/file
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/52re.pdf/file?y=2011
 #: XXX Beschilderung erfolgt erst 2012
@@ -695,32 +696,44 @@ Bootsbauerstr.: wird es eine Verbindung zur Bahrfeldtstr. geben?	? 15033,10013 1
 #: XXX alle Straßen fehlen in Berlin.coords.data
 #: XXX PLZ=13029,13127,13089
 #: XXX Ortsteile=Blankenburg, Französisch Buchholz
-#: XXX Kolonie heißt "Anlage Blankenburg"
-#: XXX 1. Wüstensperlingweg
-#: XXX 2. Buschsperlingweg
-#: XXX 3. Steinsperlingweg
-#: XXX 9. Schneeammerweg
-#: XXX 10. Singammerweg
-#: XXX 14. Wiesenammerweg
-#: XXX 18. Reisfinkweg
-#: XXX 19. Tigerfinkweg
-#: XXX 21. Rostsperlingweg
-#: XXX 22. Maronensperlingweg
-#: XXX 23. Schneefinkweg
-#: XXX 29. Kapsperlingweg
-#: XXX 30. Andenzeisigweg
-#: XXX 31. Bartzeisigweg
-#: XXX 32. Fichtenzeisigweg
-#: XXX 33. Gelbbauchzeisigweg
-#: XXX 34. Goldzeisigweg
-#: XXX 35. Kapuzenzeisigweg
-#: XXX 36. Korsikazeisigweg
-#: XXX 37. Magellanzeisigweg
-#: XXX 38. Maskenzeisigweg
-#: XXX 39. Mexikozeisigweg
-#: XXX 40. Olivzeisigweg
-Benennung von 42 Straßen	? 12860,20545 13503,20651 13149,19877 13007,19627 12565,19770 12325,19687 12859,20543
+Buschsperlingweg: Qualität?	? 12599,20738 12368,20372
+Steinsperlingweg: Qualität?	? 12382,20255 12258,20177 12219,20024
+Maronensperlingweg: Qualität?	? 13031,21002 12966,21005 12927,20998 12720,20682 12685,20633 12654,20590 12618,20532 12583,20476 12465,20278 12429,20231 12408,20192 12356,20103 12313,20039 12275,19979 12195,19855 12107,19713
+Kapsperlingweg: Qualität?	? 12331,19944 12254,19818 12180,19700
+Andenzeisigweg: Qualität?	? 12794,20569 12685,20633
+Bartzeisigweg: Qualität?	? 12768,20525 12654,20590
+Fichtenzeisigweg: Qualität?	? 12728,20458 12618,20532
+Gelbbauchzeisigweg: Qualität?	? 12694,20401 12583,20476
+Goldzeisigweg: Qualität?	? 12650,20327 12465,20278
+#: XXX Fortsetzung
+Grünkardinalweg: Qualität?	? 12547,20154 12429,20231 12382,20255
+Kapuzenzeisigweg: Qualität?	? 12408,20192 12447,20052 12458,20012
+Korsikazeisigweg: Qualität?	? 12447,20052 12356,20103
+Magellanzeisigweg: Qualität?	? 12430,19967 12313,20039
+Maskenzeisigweg: Qualität?	? 12391,19905 12331,19944 12275,19979
+Mexikozeisigweg: Qualität?	? 12315,19784 12254,19818 12195,19855
+Olivzeisigweg: Qualität?	? 12239,19664 12180,19700 12107,19713
 Wiesenammerweg: Brücke über den Graben? Qualität?	? 13109,20225 13271,20131 13366,20074
+#: XXX str_cont_ausnahme
+Schneeammerweg: Qualität?	? 13087,20455 13207,20380 13334,20308
+Schneeammerweg: Brücke über den Graben? Qualität?	? 13329,20299 13416,20242
+#: XXX str_cont_ausnahme
+Singammerweg: Qualität?	? 13043,20414 13175,20329 13301,20254
+Singammerweg: Brücke über den Graben? Qualität?	? 13293,20241 13350,20205
+#: XXX Fortsetzung; str_cont_ausnahme
+Schwirrammerweg: Brücke über den Graben? Qualität?	? 13205,20091 13316,20018
+#: XXX Fortsetzung; evtl. str_cont_ausnahme
+Purpurkardinalweg: Qualität?	? 13124,20053 13081,20005 13008,19919 12976,19858 12941,19789 12913,19728 12878,19667
+#: XXX str_cont_ausnahme
+Reisfinkweg: Qualität?	? 13081,20005 12917,20102
+Reisfinkweg: Qualität?	? 12923,20113 12778,20184 12672,20239
+Tigerfinkweg: Qualität?	? 12633,20186 12747,20130 12895,20060 12974,20009 12959,19979 12922,19994 12904,19971
+Schneefinkweg: Qualität?	? 12812,20239 12778,20184 12747,20130 12716,20066 12687,19996 12647,19930 12622,19874 12565,19770
+Wüstensperlingweg: Qualität?	? 12835,20670 12941,20855 13031,21002
+#: XXX ^^^
+#: XXX Eintrag in Berlin.coords.data?
+An der Industriebahn: Qualität?	? 12382,20255 12368,20372 12310,20523 12274,20570
+(Maronensperlingweg - Burgwallstr.): existiert eine Verbindung? Qualität?	? 12966,21005 12993,21112
 # 
 #: by: osm
 Heißt dieser Abschnitt "Chaussee nach Bornim"?	? -19100,407 -18964,793 -18688,1177

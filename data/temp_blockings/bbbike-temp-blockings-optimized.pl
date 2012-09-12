@@ -1427,16 +1427,7 @@ userdel	q4::inwork 9112,14771 9250,14658
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_019149',
-         'until' => 1347444000,
-         'text' => 'Klingsorstr. (Steglitz): Baustelle, Richtung Hindenburgdamm zwischen Birkbuschstr. und Amfortasweg gesperrt, bis Mitte September 2012 ',
-         'from' => 1346825940,
-         'id' => 2378,
-         'data' => 'userdel	q4::inwork; 5271,4547 5214,4445
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'INKO_113178_COPY_5',
          'until' => 1347890400,
