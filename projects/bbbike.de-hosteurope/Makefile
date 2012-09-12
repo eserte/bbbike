@@ -461,6 +461,8 @@ prepare-bbbike-dist-prog-bbbike-cgi:
 	cd ${CURDIR}/cgi-bin && ln -s bbbike.cgi bbbike2.en.cgi
 	rm -f ${CURDIR}/cgi-bin/bbbikeleaflet.en.cgi
 	cd ${CURDIR}/cgi-bin && ln -s bbbikeleaflet.cgi bbbikeleaflet.en.cgi
+	rm -f ${CURDIR}/cgi-bin/bbbike-test.en.cgi
+	cd ${CURDIR}/cgi-bin && ln -s bbbike.cgi bbbike-test.en.cgi
 # Fix permissions
 # Make sure that /usr/lib/cgi-bin/* isn't touched, otherwise make will fail
 	(cd ${CURDIR}/cgi-bin && chmod ugo+r `find . -maxdepth 1 | xargs -L1 readlink | grep -v /usr/lib/cgi-bin`)
