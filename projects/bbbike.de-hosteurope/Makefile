@@ -663,6 +663,7 @@ prepare-sternfahrt${STERNFAHRT_YEAR}-dist-data:
 # Call once kreisfahrt files have changed:
 prepare-kreisfahrt-dist:
 	rsync --cvs-exclude -a ${BBBIKE_ROOT_DIR}/misc/kreisfahrt_anyyear/ ${CURDIR}/BBBike/misc/kreisfahrt_anyyear/
+	chmod ugo+r,ugo-x ${CURDIR}/BBBike/misc/kreisfahrt_anyyear/*.png
 
 prepare-additional-dist-images:
 	cp -pf ${BBBIKE_ROOT_DIR}/images/logo-fahrradstadt_75.png \
