@@ -805,7 +805,7 @@ Simmelstr.: keine Durchfahrt für Autos	3 * 7615,17684 *
 Lindauer Allee: Mittelstreifen	3nocross 7198,18575 7119,18582 6924,18599
 #: note: an der anderen Seite (Alt-Hermsdorf) ist auch ein Tor, welches aber nicht geschlossen war
 An den Fließtalhöfen: Tor, freier Durchgang für Fußgänger	3 * 4444,22989 *
-Oranienburger Str.: Mittelstreifen	3nocross 5447,20614 5469,20462 5481,20379
+Oranienburger Str.: Mittelstreifen	3nocross 5441,20613 5463,20461 5475,20381
 Sittestr.: Schranke, Verbot für alle Fahrzeuge	3 * 5850,19205 *
 Residenzstr.: Mittelstreifen	3nocross 7335,18257 7291,18392 7269,18460
 # by: Juliane (alberts...)
@@ -836,7 +836,9 @@ Gryphius/Boxhagener Str.	3 14550,11732 14513,11657 14496,11620
 Gryphius/Boxhagener Str.	3 14550,11732 14513,11657 14561,11600
 Spandauer Str.: Straßenbahntrasse	3nocross 10387,12760 10360,12793 10309,12854
 Oskar-Ziethen-Krankenhaus: Schranke und Tor	3 * 16541,12064 *
-#: note: kein Problem für Radfahrer
+#: note: kein Problem für Radfahrer vvv
 Grünspechtweg: Schranke	3 * 7059,23127 *
+Feldlerchenweg: Schranke	3 * 7000,23095 *
+#: note ^^^
 Auswärtiges Amt	3 9961,12094 10003,12113 9972,12184
 Im Vogtland	1 6657,23334 6684,23308 6727,23287

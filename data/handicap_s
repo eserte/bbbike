@@ -369,7 +369,7 @@ Egidysteg: eng, Fuﬂg‰nger	q3 3099,22211 3134,22153
 (Weg am Tegeler Flieﬂ): Fuﬂg‰nger	q1 5596,23970 5409,23816 5297,23633 5214,23420 5242,23156 5232,23139 5205,23094 5127,23042 5054,23025 4824,22907 4731,22904 4693,22897 4626,22914
 (Weg am Tegeler Flieﬂ): Fuﬂg‰nger	q1 4608,22931 4402,22877 4306,22914 4163,22907
 (Weg am Tegeler Flieﬂ): Fuﬂg‰nger, eng	q2 5860,24067 5693,24037 5596,23970
-(Schildower Weg): Fuﬂg‰nger	q1 7877,24037 7675,23968 7615,23884 7185,23749
+(Schildower Weg): Fuﬂg‰nger	q1 7877,24037 7675,23968 7615,23884 7571,23885 7339,23782 7312,23775 7185,23749
 (Mehrower Allee, Unterf¸hrung zum S-Bahnhof): Rampe, Fuﬂg‰nger	q4 20547,17084 20533,17051 20439,17103
 Altvaterstr.: Fuﬂg‰nger, Bordsteine	q2 -3117,3107 -3170,3070 -3223,3034
 Im Gestell: Fuﬂg‰nger	q1 371,4453 267,4375
@@ -1047,6 +1047,9 @@ Alt-Tegel: Fuﬂg‰nger	q3 1462,20133 1457,20159
 (U-Bahnunterf¸hrung Elsterwerdaer Platz): Fuﬂg‰nger	q3 21137,11294 21086,11321
 Frankfurter Allee/Harnackstr.: hoher abgeschr‰gter Bordstein	q2 15941,11855 15989,11834
 Alter Bernauer Heerweg: eng, Bordstein zur Wittenauer Str.	q3 6641,22756 6770,22801
+Kolonie Dreieck - Klemkepark: Hunde, Stufe zur Klemkestr.	q3 8260,18765 8188,18819
+(Saalmannsteig - Reinickes Hof): einige Fuﬂg‰nger, niedriger Bordstein am Wendehammer	q1 5284,19043 5281,18996
+Ulrichsteiner Weg: Bordstein	q2 6093,21648 6066,21691
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q3 11805,19071 11895,19183 11927,19308
 Ebersstr.: Sch¸ler	q2 7245,8583 7292,8631
 Straﬂe 103 (Niederschˆnhausen): enge Straﬂe	q1 10914,20065 11051,19789
@@ -1105,7 +1108,6 @@ Spandauer Str.: enge Straﬂe	q1 -6442,14186 -6261,14213
 (Parkplatz Kaufland - Am Steinberg): Fuﬂg‰nger	q1 12981,17557 12998,17480
 Achenbachstr.: nicht so breite Straﬂe	q1 -3360,14974 -3322,14814
 Herrnholzweg: enge Straﬂe	q1 6279,23170 6491,22915
-Hausotterstr.: sehr schmal, auf beiden Seiten parkende Autos	q1 8592,18128 8348,18071 8135,18028 7957,17967 7772,17915 7477,17832
 Prettauer Pfad: enge Straﬂe	q1 3384,1297 3577,1541
 Prettauer Pfad: enge Straﬂe	q1 3358,1331 3384,1297 3437,1218
 Hempst¸cken: kurvenreich	q2 -7506,126 -7542,201 -7632,204
@@ -1491,7 +1493,7 @@ Schieritzstr.: enge Straﬂe	q1 12463,15774 12642,15668 12821,15565 12966,15478
 Siedlungsring (Karow): schlecht ¸beraschaubar	q1 16139,24162 16245,24159 16357,24093 16473,24045 16900,23884 16887,23860 16717,23845 16664,23845 16600,23881 16542,23954 16512,23979 16462,24012
 W¸rzburger Str.: enge Straﬂe	q0 11681,-1951 11886,-1930 11919,-1927 12082,-1908 12167,-1898 12216,-1891
 Hauptweg (Biesdorf): enger Weg	q2 20834,8694 20799,8965 20802,9297
-Hallichpromenade: Fuﬂweg	q2 5388,20606 5447,20614
+Hallichpromenade: Fuﬂweg	q2 5388,20606 5441,20613
 Allmendeweg: enge Hausdurchfahrt	q1 3071,21801 3155,21572
 Senheimer Str.: enge Straﬂe	q1 2510,25350 2506,25398 2505,25538 2515,25666 2519,25772 2496,25915 2484,25984 2490,26126 2531,26251 2560,26349 2569,26408 2564,26462
 Romanshorner Weg: enge Straﬂe	q1 6709,17466 6679,17568 6631,17721 6578,17898 6550,17988 6577,17998
@@ -1583,7 +1585,7 @@ Bat-Yam-Platz: Fuﬂg‰nger	q1 14515,2212 14545,2206 14633,2145
 Saalmannsteig: Fuﬂg‰nger	q2 5410,19050 5284,19043 5181,19037
 J‰gerstr. (Kˆpenick): enge Straﬂe	q1 22395,4678 22365,4676 22355,4660 22312,4593
 (Swakopmunder Str. - Charles-Corcelle-Ring): Fuﬂg‰nger	q2 5223,16783 5141,16799 5091,16810 5035,16819 5000,16826
-Kolonie Dreieck - Klemkepark: Hunde	q1 8260,18765 8188,18819 8101,18846 7988,18861 7850,18881 7794,18881 7793,18894 7710,18902 7621,18894 7574,18874
+Kolonie Dreieck - Klemkepark: Hunde	q1 8188,18819 8101,18846 7988,18861 7846,18884 7802,18883 7781,18897 7710,18902 7609,18891 7574,18874
 Klemkepark - Kopenhagener Str./Freiheitsweg: Hunde	q1 7574,18874 7576,18837 7480,18828 7394,18820 7332,18818 7313,18781 7248,18793
 Bosporusstr.: enge Straﬂe	q1 10363,4183 10455,4189 10505,4194 10601,4185 10724,4168
 Werfelstr.: enge Straﬂe	q1 10126,-834 9907,-812
@@ -1595,7 +1597,7 @@ Franckepark: einige Fuﬂg‰nger	q1 9381,6277 9426,6239 9463,6232 9683,6199
 Straﬂe 78: enge Straﬂe	q2 7715,19408 7797,19580
 Tankredstr.: enge Straﬂe	q1 8264,5383 8328,5417 8365,5418 8394,5412 8484,5347
 Battenheimer Weg: enge Straﬂe	q1 11762,1040 11681,1031 11393,1243
-Birnbaumring: enge Straﬂe	q0 8661,24952 8751,24988 8785,25014 8825,25052 8871,25109 8922,25212 8856,25267 8776,25332 8735,25366 8673,25418 8584,25371 8529,25361
+Birnbaumring: enge Straﬂe	q0 8661,24952 8751,24988 8785,25014 8825,25052 8871,25109 8922,25212 8856,25267 8776,25332 8735,25366 8673,25418 8584,25371 8501,25358
 Stavenhagener Str.: enge Straﬂe	q1 13634,5126 13534,5111 13444,5097 13359,5086
 Glambecker Weg: enge Straﬂe	q1 2577,24048 2482,23985 2430,24155 2385,24298 2362,24370
 Thaliaweg: enge Straﬂe	q1 6638,3138 6482,3004
@@ -1619,7 +1621,7 @@ Brauereihof: recht verwinkelt	q1 -2783,15538 -2809,15459 -2858,15475 -2886,15393
 Freudenberger Weg: als Gehweg ausgeschildert, Borsteinkanten	q1 -4967,15414 -4787,15367
 (Wunderwaldstr. - Dyrotzer Str.): schmal	q2 -5442,14738 -5481,14622
 Frieda-Arnheim-Promenade: einige Fuﬂg‰nger, Bordstein zur Triftstraﬂe	q1 -2830,15208 -2801,15280 -2779,15358 -2801,15365
-B¸dnerring: enge Straﬂe	q1 7861,18333 7997,18524 8066,18632 8063,18659 8037,18673 7926,18665 7892,18603 7902,18575 7997,18524
+B¸dnerring: enge Straﬂe	q1 7997,18524 8066,18632 8063,18659 8037,18673 7926,18665 7892,18603 7902,18575 7997,18524
 Schneegansweg: enge Straﬂe	q1 -786,22110 -762,22216 -725,22355
 Flotowstr. (Lichterfelde): enge Straﬂe	q1 4515,4581 4651,4638
 Pfalzgrafenweg: enge Straﬂe	q0 25594,11939 25827,11867
@@ -1730,7 +1732,7 @@ Ruben-Wolf-Str.: einige Fuﬂg‰nger	q1 19906,217 19865,263 19785,361
 Semmelweg: einige Fuﬂg‰nger	q1 1229,18750 1101,18611 915,18352 766,18083 492,17831 396,17648 255,17528
 Langenbeckplatz: enge Straﬂe	q1 25030,9626 25095,9627 25086,9733 25020,9728 25030,9626
 (RÈaumurstr. - F¸rstenstr., S-Bahnunterf¸hrung): Fuﬂg‰nger	q3 4279,459 4218,439 4158,461 4136,505
-Beerbaumstr.: enge Straﬂe	q0 15692,24040 15730,24051 15759,24033 15843,23980 15906,24088
+Beerbaumstr.: enge Straﬂe	q0 15689,24045 15723,24060 15755,24039 15843,23980 15906,24088
 (Beerbaumstr. - Karower Chaussee): schmal	q2 15906,24088 15940,24142
 Ossietzkyplatz: Parkplatz	q4 10257,19542 10215,19532 10228,19480
 Heppenheimer Weg: schmaler Weg, Fuﬂg‰nger, Bordsteine	q3 -500,4409 -459,4422 -404,4442 -349,4466 -283,4495 -227,4538
@@ -1812,7 +1814,7 @@ Minorkaweg: enge Straﬂe	q0 15831,484 15925,541 16008,628
 Am Finkenherd: enge Straﬂe	q0 -7004,15434 -6977,15706 -6932,16048
 Stadtg‰rten: kurvige Straﬂe	q2 11544,21897 11575,21888 11566,21829 11534,21831
 Jochen-Klepper-Weg: kombinierter Rad- und Fuﬂweg, Fuﬂg‰nger haben Vorrang	q1 -3030,2266 -2784,2358 -2690,2385 -2372,2477
-Frommpromenade: enge Straﬂe	q0 5469,20462 5350,20495 5257,20551
+Frommpromenade: enge Straﬂe	q0 5463,20461 5350,20495 5257,20551
 Brodersenstr.: enge Straﬂe	q0 6033,19611 5885,19920 5804,20047
 Eduard-Spranger-Promenade: Verbot f¸r Radfahrer	q4 4284,2626 4655,3060 4862,3363 4951,3516
 Rosenpl¸terweg: enge Straﬂe	q0 3657,26240 3431,26192 3328,26193

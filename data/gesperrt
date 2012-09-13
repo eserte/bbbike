@@ -203,7 +203,7 @@ Sybel-/Waitzstr.	1 3883,10577 3800,10580 3744,10668 3734,10756
 Aﬂmannstr.	1 25012,5729 25048,5727 25039,5304 25039,5295
 Schˆnblicker Str.	1 31670,3604 31661,3665 31695,3690 31745,3679 31756,3620 31724,3592 31670,3604
 Knorrpromenade	1 14424,11639 14369,11489
-Herbststr.	1 8465,18365 8627,18402
+Herbststr.	1 7997,18524 8096,18456 8222,18375 8286,18331 8465,18365 8627,18402
 Ruhwaldweg: Schranke gesperrt	2 773,13375 758,13334
 Alt-Reinickendorf	1 7003,18715 6869,18721 6775,18726 6734,18728 6572,18793 6716,18788 6801,18761 6879,18737 7003,18715
 Lauterstr.	1 5817,7223 5810,7337
@@ -717,6 +717,7 @@ Desideriusweg	1 2830,21378 2728,21336
 Am Ansitz	1 3913,21977 3855,22055
 Am Vierrutenberg etc.	1 5712,23785 5676,23971 5780,23997 5792,23943 5787,23840 5712,23785
 (Parkplatz Residenzstr. - Kopenhagener Str.)	1::igndisp 7204,18634 7233,18562
+Schmiedebankplatz	1 16165,23168 16114,23202 16122,23219 16141,23243 16243,23174 16229,23150 16218,23134 16165,23168
 Am Neuen Garten	1 -12166,1384 -12212,1201 -12276,831 -12302,718
 Am Neuen Garten	1 -12332,585 -12582,127
 Hochstraﬂe	3nocross::ignrte -11399,-1339 -11461,-1424 -11540,-1543
@@ -970,7 +971,11 @@ Yorckstr. -> Hagelberger Str.: Mittelstreifen	3::igndisp 8777,9601 8648,9526 877
 Mittelstreifen	3nocross::ignrte 7434,18695 7492,18699 7520,18701
 Klemkestr. -> Am Stand: Mittelstreifen	3::igndisp 7434,18695 7492,18699 7484,18778
 Mittelstreifen	3nocross::ignrte 7520,18701 7599,18705 7690,18716
+Klemkepark -> Klemkestr.: Mittelstreifen	3::igndisp 7588,18761 7599,18705 7690,18716
+Klemkepark -> Armbrustweg: Mittelstreifen	3::igndisp 7588,18761 7599,18705 7620,18615
 Klemkestr. -> Armbrustweg: Mittelstreifen	3::igndisp 7690,18716 7599,18705 7620,18615
+Klemkestr. -> Klemkepark: Mittelstreifen	3::igndisp 7520,18701 7599,18705 7588,18761
+Armbrustweg -> Klemkepark: Mittelstreifen	3::igndisp 7620,18615 7599,18705 7588,18761
 Armbrustweg -> Klemkestr.: Mittelstreifen	3::igndisp 7620,18615 7599,18705 7520,18701
 Straﬂenbahntrasse	3nocross::ignrte 14619,16682 14608,16772 14559,16912
 Caseler Str. -> Berliner Allee: Straﬂenbahntrasse	3::igndisp 14700,16790 14608,16772 14619,16682
@@ -1650,9 +1655,6 @@ Indira-Gandhi-Str. -> Orankeweg: Straﬂenbahntrasse	3::igndisp 14597,15970 14609,
 Straﬂenbahntrasse	3nocross::ignrte 14550,16161 14522,16260 14499,16341
 Gartenstr. -> Indira-Gandhi-Str.: Straﬂenbahntrasse	3::igndisp 14628,16249 14522,16260 14550,16161
 Indira-Gandhi-Str. -> Gartenstr.: Straﬂenbahntrasse	3::igndisp 14499,16341 14522,16260 14628,16249
-Straﬂenbahntrasse	3nocross::ignrte 15058,14575 15110,14486 15164,14392
-Weiﬂenseer Weg -> Anlieferung Hohenschˆnhauser Tor: Straﬂenbahntrasse	3::igndisp 15058,14575 15110,14486 15221,14550
-Anlieferung Hohenschˆnhauser Tor -> Weiﬂenseer Weg: Straﬂenbahntrasse	3::igndisp 15221,14550 15110,14486 15164,14392
 unbequemes Passieren des Mittelstreifens (Bordsteine, starker Verkehr)	3nocross::ignrte 16737,11866 16851,11852 16962,11833 17037,11820 17151,11801
 Frankfurter Allee -> Gudrunstr.: unbequemes Passieren des Mittelstreifens (Bordsteine, starker Verkehr)	3::igndisp 16737,11866 16851,11852 16884,11889
 Gudrunstr. -> Frankfurter Allee: unbequemes Passieren des Mittelstreifens (Bordsteine, starker Verkehr)	3::igndisp 16884,11889 16851,11852 16962,11833
@@ -1920,8 +1922,10 @@ abgeschlossenes Tor	3 8235,20109 8237,20098 8258,19983
 abgeschlossenes Tor	3 8258,19983 8237,20098 8235,20109
 abgeschlossenes Tor	3 8288,20128 8291,20112 8315,19993
 abgeschlossenes Tor	3 8315,19993 8291,20112 8288,20128
-verschloﬂenes Tor	3 3781,16175 3796,16202 3836,16273
-verschloﬂenes Tor	3 3836,16273 3796,16202 3781,16175
+abgeschlossenes Tor	3 3781,16175 3796,16202 3836,16273
+abgeschlossenes Tor	3 3836,16273 3796,16202 3781,16175
+abgeschlossenes Tor	3 4898,22459 5083,22149 5086,22145
+abgeschlossenes Tor	3 5086,22145 5083,22149 4898,22459
 tragen (3 Stufen, kann auf einer inoffiziellen Rampe umfahren werden)	0:10:-176 8029,10106
 tragen (ca. 20 Stufen, kann auf Rampen umfahren werden)	0:30:-156 -5561,12909
 tragen (wenige Stufen)	0:5:-161 -5446,13137
@@ -2116,6 +2120,7 @@ tragen (Treppe, ca. 20 Stufen)	0:25:-12 19160,14935
 tragen (Treppe)	0:30:70 89344,-5795
 tragen, langgezogene Stufen (13 Stufen)	0:25:-168 20704,1383
 tragen (31 Stufen oder Kinderwagenrampe)	0:40:-256 13168,21706
+Dr‰ngelgitter	BNP:3:-24:trailer=10 6928,23021
 Dr‰ngelgitter	BNP:3:-221:trailer=10 6509,23198
 enges Dr‰ngelgitter, kann umfahren werden	BNP:3:-214:trailer=10 6278,22615
 Schranke	BNP:3:-61:trailer=10 19750,11730

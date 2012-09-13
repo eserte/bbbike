@@ -970,6 +970,30 @@ Zugang zum Bad	culdesac_pseudo 7306,13418
 	culdesac_pseudo 20968,11203
 	culdesac 6254,22546
 	culdesac 6353,22622
+	culdesac_pseudo 7913,18156
+	culdesac 7551,18515
+	culdesac_pseudo 5281,18996
+	culdesac_pseudo 5181,19037
+	culdesac 4647,18980
+	culdesac_pseudo 4474,18983
+	culdesac_pseudo 4352,18969
+	culdesac_pseudo 3999,20367
+	culdesac 3861,20575
+	culdesac 4367,20617
+	culdesac 4249,20312
+	culdesac_pseudo 4597,20508
+	culdesac_pseudo 5108,22156
+	culdesac_pseudo 4971,22138
+	culdesac 5192,22478
+	culdesac 5331,22525
+	culdesac 5595,22626
+	culdesac 6013,22497
+	culdesac_pseudo 6907,23067
+	culdesac 6714,23010
+	culdesac 6931,23352
+	culdesac 8511,25177
+	culdesac 11878,25627
+	culdesac 15347,22275
 #: section ^^^
 ######################################################################
 # busroute
@@ -1183,7 +1207,7 @@ Bus 122, Bus 155	busroute_N 7672,19869 7556,19882 7333,19911 7209,19928 7205,200
 Bus 221	busroute_N 5819,21057 5840,20953 5929,20882 6027,20807 6117,20738 6279,20587 6375,20579 6408,20603 6439,20632 6445,20636 6924,20695 7080,20713 7171,20729 7255,20793 7280,20895 7251,21202
 Bus M21, Bus X21	busroute_N 7251,21202 7238,21431 7271,21499 7394,21593 7526,21697 7742,21867
 Bus M21	busroute_N 7742,21867 7781,21812 7959,21573 7959,21573 7991,21531 8016,21499 7852,21262
-Bus X21	busroute_N 7742,21867 7594,22068 7516,22178 7445,22295
+Bus X21	busroute_N 7742,21867 7594,22068 7516,22178 7439,22306
 Bus 122	busroute_N 6962,21174 6917,21506 6928,21576 7244,21811 7353,21888 7375,21980 7264,22125 6650,22052 6630,21956 6473,21969
 Bus 122, ...	busroute_N 5006,22507 5056,22389 5098,22326 5140,22342 5237,22345 5376,22350 5429,22359 5485,22396 5517,22432 5517,22487 5484,22564 5423,22685
 Bus 322	busroute_N 4810,21730 4655,21939 4613,21997 4581,22106 4456,22278
@@ -1547,3 +1571,14 @@ Straße 186 (Lübars): Privatstraße	CS 6083,22772 6153,22828
 Straße 187 (Lübars): Privatstraße	CS 6175,22803 6153,22828 6115,22877
 Am Alten Lokschuppen: nicht ausgeschildert	CS 15730,11279 15708,11193 15752,11115 15805,10949
 Creienfelder Weg: Privatstraße	CS 6817,23167 6712,23252
+Rosenthaler Str.: Richtung Kleine Rosenthaler Str.	CP2; 10313,13493 10311,13537
+(Schlitzer Str. - Welzower Steig): ausgeschildert als "Welzower Steig"	CP2; 6162,21938 6257,22005
+(Finsterwalder Str. - Quickborner Str.): am Bruckstückengraben	CS 6434,22244 6651,22324 6755,22331 7439,22306
+Nicht ausgeschildert	CP2; 8501,25358 8584,25371
+Nicht ausgeschildert	CP2; 8776,25332 8722,25296
+Waldweg (Blankenfelde): Privatstraße	CS  9757,26351 9812,26385
+Wiesenweg (Blankenfelde): Privatstraße	CS 9776,26298 9848,26349
+Bergweg: Privatstraße	CS 9796,26244 9898,26310
+Höhenweg: Privatstraße	CS 9940,26273 9812,26186
+Ausgeschildert als Schönerlinder Str.	CP2; 11929,23946 11514,24284
+Mühlenweg (Karow): Privatstraße	CS 15347,22275 15411,22369 15445,22352

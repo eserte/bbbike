@@ -906,7 +906,7 @@ EOF
        text  => 'B 96a; (Bahnhofstr., Hauptstr.); OD Schildow Kanal- und Straßenbau Vollsperrung 20.09.2004-01.01.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 8493,25378 8370,25539
+userdel	q4 8488,25390 8370,25539
 userdel	q4 8370,25539 8182,25608
 EOF
      },
@@ -9022,7 +9022,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006015',
        data  => <<EOF,
-userdel	2::temp 6442,22240 6484,22098 6473,21969 6373,21810 6320,21777 6269,21748 6093,21648 5923,21522
+userdel	2::temp 6434,22244 6484,22098 6473,21969 6373,21810 6320,21777 6269,21748 6093,21648 5923,21522
 EOF
      },
      { from  => 1184018400, # 2007-07-10 00:00
@@ -19602,7 +19602,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_017672',
        data  => <<EOF,
-userdel	2::temp 4273,20021 4319,20182
+userdel	2::temp 4262,20025 4319,20182
 EOF
      },
      { from  => undef, #
@@ -19806,7 +19806,7 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20111006.1020.360727.html',
        data  => <<EOF,
-userdel	q4::inwork 4613,19279 4690,19446
+userdel	q4::inwork 4608,19287 4690,19446
 EOF
      },
      { from  => 1318229040, # 2011-10-10 08:44
@@ -19983,8 +19983,9 @@ EOF
        data  => <<EOF,
 #: by: http://www.altglienicke24.de/meldungen.html
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1201/nachricht4563.html
+#: by: http://pf-tk.de/ai1ec_event/podiumsdiskussion-wie-weiter-im-kolner-viertel/?instance_id=
 #: XXX wann wird die Brücke wieder eröffnet?
-#: next_check: 2012-03-01
+#: next_check: 2013-03-01
 userdel	2::inwork 19968,16 19940,52
 EOF
      },

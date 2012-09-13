@@ -1366,9 +1366,9 @@ Ragazer Str. -> Lindauer Allee: Mittelstreifen	3::igndisp 7035,18413 7119,18582 
 Lindauer Allee -> Ragazer Str.: Mittelstreifen	3::igndisp 7198,18575 7119,18582 7035,18413
 An den Fließtalhöfen: Tor, freier Durchgang für Fußgänger	3 4403,22981 4444,22989 4432,23066
 An den Fließtalhöfen: Tor, freier Durchgang für Fußgänger	3 4432,23066 4444,22989 4403,22981
-Mittelstreifen	3nocross::ignrte 5447,20614 5469,20462 5481,20379
-Frommpromenade -> Oranienburger Str.: Mittelstreifen	3::igndisp 5350,20495 5469,20462 5447,20614
-Oranienburger Str. -> Frommpromenade: Mittelstreifen	3::igndisp 5481,20379 5469,20462 5350,20495
+Mittelstreifen	3nocross::ignrte 5441,20613 5463,20461 5475,20381
+Frommpromenade -> Oranienburger Str.: Mittelstreifen	3::igndisp 5350,20495 5463,20461 5441,20613
+Oranienburger Str. -> Frommpromenade: Mittelstreifen	3::igndisp 5475,20381 5463,20461 5350,20495
 Sittestr.: Schranke, Verbot für alle Fahrzeuge	3 5830,19206 5850,19205 5869,19212
 Sittestr.: Schranke, Verbot für alle Fahrzeuge	3 5869,19212 5850,19205 5830,19206
 Mittelstreifen	3nocross::ignrte 7335,18257 7291,18392 7269,18460
@@ -1417,5 +1417,7 @@ Oskar-Ziethen-Krankenhaus: Schranke und Tor	3 16512,11894 16541,12064 16556,1218
 Oskar-Ziethen-Krankenhaus: Schranke und Tor	3 16556,12180 16541,12064 16512,11894
 Grünspechtweg: Schranke	3 6988,23244 7059,23127 7171,22942
 Grünspechtweg: Schranke	3 7171,22942 7059,23127 6988,23244
+Feldlerchenweg: Schranke	3 6956,23166 7000,23095 7109,22919
+Feldlerchenweg: Schranke	3 7109,22919 7000,23095 6956,23166
 Auswärtiges Amt	3 9961,12094 10003,12113 9972,12184
 Im Vogtland	1 6657,23334 6684,23308 6727,23287

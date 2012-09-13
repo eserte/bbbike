@@ -93,7 +93,6 @@ Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q2::inwork 10601,12521
 # 
 #: last_checked: 2012-08-30 vvv
 #: next_check: 2012-09-10 vvv
-#: XXX siehe auch Eintrag in fragezeichen-orig (Ampel in Bau)
 #: note: komplette Fertigstellung und Verkehrsfreigabe im Frühjahr 2013
 Rathausstr. und Rathausbrücke: Behinderungen wegen Bauarbeiten möglich	q2::inwork 10281,12310 10362,12351 10422,12395 10476,12432
 #: next_check: ^^^
@@ -517,7 +516,7 @@ Egidysteg: eng, Fußgänger	q3 3099,22211 3134,22153
 (Weg am Tegeler Fließ): Fußgänger	q1 5596,23970 5409,23816 5297,23633 5214,23420 5242,23156 5232,23139 5205,23094 5127,23042 5054,23025 4824,22907 4731,22904 4693,22897 4626,22914
 (Weg am Tegeler Fließ): Fußgänger	q1 4608,22931 4402,22877 4306,22914 4163,22907
 (Weg am Tegeler Fließ): Fußgänger, eng	q2 5860,24067 5693,24037 5596,23970
-(Schildower Weg): Fußgänger	q1 7877,24037 7675,23968 7615,23884 7185,23749
+(Schildower Weg): Fußgänger	q1 7877,24037 7675,23968 7615,23884 7571,23885 7339,23782 7312,23775 7185,23749
 (Mehrower Allee, Unterführung zum S-Bahnhof): Rampe, Fußgänger	q4 20547,17084 20533,17051 20439,17103
 Altvaterstr.: Fußgänger, Bordsteine	q2 -3117,3107 -3170,3070 -3223,3034
 #: note: laut Luftbild
@@ -1341,6 +1340,12 @@ Alt-Tegel: Fußgänger	q3 1462,20133 1457,20159
 Frankfurter Allee/Harnackstr.: hoher abgeschrägter Bordstein	q2 15941,11855 15989,11834
 #: XXX_prog: BS
 Alter Bernauer Heerweg: eng, Bordstein zur Wittenauer Str.	q3 6641,22756 6770,22801
+#: XXX_prog: BS
+Kolonie Dreieck - Klemkepark: Hunde, Stufe zur Klemkestr.	q3 8260,18765 8188,18819
+#: XXX_prog: BS (low) (südliche Seite)
+(Saalmannsteig - Reinickes Hof): einige Fußgänger, niedriger Bordstein am Wendehammer	q1- 5284,19043 5281,18996
+#: XXX_prog: BS (zumindest an der Nordseite)
+Ulrichsteiner Weg: Bordstein	q2 6093,21648 6066,21691
 #
 ######################### User Contributions #################################
 # 
@@ -1458,8 +1463,7 @@ Spandauer Str.: enge Straße	q1 -6442,14186 -6261,14213
 Achenbachstr.: nicht so breite Straße	q1 -3360,14974 -3322,14814
 #: by: Hartmut (stahn):
 Herrnholzweg: enge Straße	q1 6279,23170 6491,22915
-#: by: Sabine Hochstadt:
-Hausotterstr.: sehr schmal, auf beiden Seiten parkende Autos	q1 8592,18128 8348,18071 8135,18028 7957,17967 7772,17915 7477,17832
+#XXX --- del --- nicht schmaler als vergleichbare Straßen --- #: by: Sabine Hochstadt: --- Hausotterstr.: sehr schmal, auf beiden Seiten parkende Autos	q1 8592,18128 8348,18071 8135,18028 7957,17967 7860,17940 7772,17915 7477,17832
 #: by: Marcel (marcls): vvv
 Prettauer Pfad: enge Straße	q1 3384,1297 3577,1541
 Prettauer Pfad: enge Straße	q1 3358,1331 3384,1297 3437,1218
@@ -2053,7 +2057,7 @@ Würzburger Str.: enge Straße	q0- 11681,-1951 11886,-1930 11919,-1927 12082,-1908
 # corrected_by: srt (removed): --- Hauptweg (Biesdorf): enger Weg	q2 20821,8438 20834,8694
 Hauptweg (Biesdorf): enger Weg	q2 20834,8694 20799,8965 20802,9297
 #: by: ^^^
-Hallichpromenade: Fußweg	q2 5388,20606 5447,20614
+Hallichpromenade: Fußweg	q2 5388,20606 5441,20613
 #: by: paula* (gwendolen...):
 #: corrected_by: srt (nur die Hausdurchfahrt ist eng)
 Allmendeweg: enge Hausdurchfahrt	q1+ 3071,21801 3155,21572
@@ -2270,6 +2274,8 @@ Diethelmweg: enge Straße	q1 21649,13995 21677,14241 21696,14430
 #: corrected_by: srt (nothing -> q1)
 Bat-Yam-Platz: Fußgänger	q1 14515,2212 14545,2206 14633,2145
 #: by: Marcus Kuhn:
+#: confirmed_by: srt
+#: note: Fußgängerverkehr zum S-Bahnhof
 Saalmannsteig: Fußgänger	q2 5410,19050 5284,19043 5181,19037
 #: by: Stefan Dietrich:
 #: corrected_by: srt/policy (q3 -> q1)
@@ -2278,7 +2284,7 @@ Jägerstr. (Köpenick): enge Straße	q1 22395,4678 22365,4676 22355,4660 22312,4593
 (Swakopmunder Str. - Charles-Corcelle-Ring): Fußgänger	q2 5223,16783 5141,16799 5091,16810 5035,16819 5000,16826
 #: by: catrin (ruehl) vvv
 #: corrected_by: srt/policy (q2 -> q1)
-Kolonie Dreieck - Klemkepark: Hunde	q1 8260,18765 8188,18819 8101,18846 7988,18861 7850,18881 7794,18881 7793,18894 7710,18902 7621,18894 7574,18874
+Kolonie Dreieck - Klemkepark: Hunde	q1 8188,18819 8101,18846 7988,18861 7846,18884 7802,18883 7781,18897 7710,18902 7609,18891 7574,18874
 Klemkepark - Kopenhagener Str./Freiheitsweg: Hunde	q1 7574,18874 7576,18837 7480,18828 7394,18820 7332,18818 7313,18781 7248,18793
 #: by: ^^^
 #: by: Detlef Liebe: vvv
@@ -2306,7 +2312,7 @@ Battenheimer Weg: enge Straße	q1 11762,1040 11681,1031 11393,1243
 #: by: MaPo: vvv
 #XXX del --- #: corrected_by: srt (q1 -> q0-) --- Fürst-Bismarck-Str.: enge Straße	q0- 4032,22374 3923,22535
 #: corrected_by: srt (q2 -> q0-)
-Birnbaumring: enge Straße	q0- 8661,24952 8751,24988 8785,25014 8825,25052 8871,25109 8922,25212 8856,25267 8776,25332 8735,25366 8673,25418 8584,25371 8529,25361
+Birnbaumring: enge Straße	q0- 8661,24952 8751,24988 8785,25014 8825,25052 8871,25109 8922,25212 8856,25267 8776,25332 8735,25366 8673,25418 8584,25371 8501,25358
 #: by: ^^^
 #: by: Florian (olf-kcots):
 Stavenhagener Str.: enge Straße	q1 13634,5126 13534,5111 13444,5097 13359,5086
@@ -2357,8 +2363,10 @@ Freudenberger Weg: als Gehweg ausgeschildert, Borsteinkanten	q1 -4967,15414 -478
 (Wunderwaldstr. - Dyrotzer Str.): schmal	q2 -5442,14738 -5481,14622
 Frieda-Arnheim-Promenade: einige Fußgänger, Bordstein zur Triftstraße	q1 -2830,15208 -2801,15280 -2779,15358 -2801,15365
 #: by: ^^^
-#: by: verena kauffmann:
-Büdnerring: enge Straße	q1 7861,18333 7997,18524 8066,18632 8063,18659 8037,18673 7926,18665 7892,18603 7902,18575 7997,18524
+#: by: verena kauffmann: vvv
+#XXX del --- hier nicht eng --- Büdnerring: enge Straße	q1 7861,18333 7997,18524
+Büdnerring: enge Straße	q1 7997,18524 8066,18632 8063,18659 8037,18673 7926,18665 7892,18603 7902,18575 7997,18524
+#: by: ^^^
 #: by: Röthig
 #: corrected_by: srt/policy (q2 -> q1)
 Schneegansweg: enge Straße	q1 -786,22110 -762,22216 -725,22355
@@ -2641,7 +2649,7 @@ Langenbeckplatz: enge Straße	q1 25030,9626 25095,9627 25086,9733 25020,9728 2503
 (Réaumurstr. - Fürstenstr., S-Bahnunterführung): Fußgänger	q3 4279,459 4218,439 4158,461 4136,505
 #: by: Bertil Schwotzer vvv
 #: corrected_by: srt/policy (q2 -> q0-)
-Beerbaumstr.: enge Straße	q0- 15692,24040 15730,24051 15759,24033 15843,23980 15906,24088
+Beerbaumstr.: enge Straße	q0- 15689,24045 15723,24060 15755,24039 15843,23980 15906,24088
 (Beerbaumstr. - Karower Chaussee): schmal	q2 15906,24088 15940,24142
 #: by: ^^^
 #: by: Sabine Bernsmann-...:
@@ -2834,7 +2842,7 @@ Stadtgärten: kurvige Straße	q2 11544,21897 11575,21888 11566,21829 11534,21831
 Jochen-Klepper-Weg: kombinierter Rad- und Fußweg, Fußgänger haben Vorrang	q1 -3030,2266 -2784,2358 -2690,2385 -2372,2477
 # 
 #: by: Ilka Liss:
-Frommpromenade: enge Straße	q0- 5469,20462 5350,20495 5257,20551
+Frommpromenade: enge Straße	q0- 5463,20461 5350,20495 5257,20551
 # 
 #: by: Sophie Haid:
 #: corrected_by: srt/policy (q2 -> q0-)

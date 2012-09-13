@@ -233,7 +233,7 @@ Sybel-/Waitzstr.	1 3883,10577 3800,10580 3744,10668 3734,10756
 Aßmannstr.	1 25012,5729 25048,5727 25039,5304 25039,5295
 Schönblicker Str.	1 31670,3604 31661,3665 31695,3690 31745,3679 31756,3620 31724,3592 31670,3604
 Knorrpromenade	1 14424,11639 14369,11489
-Herbststr.	1 8465,18365 8627,18402
+Herbststr.	1 7997,18524 8096,18456 8222,18375 8286,18331 8465,18365 8627,18402
 Ruhwaldweg: Schranke gesperrt	2 773,13375 758,13334
 Alt-Reinickendorf	1 7003,18715 6869,18721 6775,18726 6734,18728 6572,18793 6716,18788 6801,18761 6879,18737 7003,18715
 Lauterstr.	1 5817,7223 5810,7337
@@ -951,6 +951,8 @@ Am Ansitz	1 3913,21977 3855,22055
 Am Vierrutenberg etc.	1 5712,23785 5676,23971 5780,23997 5792,23943 5787,23840 5712,23785
 #: XXX_prog: eigentlich keine Einbahnstraße, allerdings dürfte aus der Gegenrichtung das Überqueren der Straße zu umständlich sein...
 (Parkplatz Residenzstr. - Kopenhagener Str.)	1::igndisp 7204,18634 7233,18562
+#: note: eigentlich keine Einbahnstraße, aber in der Praxis wird man immer gegen der Uhrzeigersinn fahren
+Schmiedebankplatz	1 16165,23168 16114,23202 16122,23219 16141,23243 16243,23174 16229,23150 16218,23134 16165,23168
 ######################################################################
 #
 # Potsdam
@@ -1370,7 +1372,7 @@ Möllendorffstr.: Mittelstreifen mit Straßenbahn	3nocross 15420,12178 15443,12222
 Müllerstr.: Zaun auf dem Mittelstreifen	3nocross 6781,16026 6914,15908 6936,15888 7043,15793
 Indira-Gandhi-Str.: Straßenbahntrasse	3nocross 14597,15970 14609,15921 14650,15750
 Indira-Gandhi-Str.: Straßenbahntrasse	3nocross 14550,16161 14522,16260 14499,16341
-Weißenseer Weg: Straßenbahntrasse	3nocross 15058,14575 15110,14486 15164,14392
+#XXX del --- das Überqueren ist möglich! --- Weißenseer Weg: Straßenbahntrasse	3nocross 15058,14575 15110,14486 15164,14392
 Lichtenberger Brücke: unbequemes Passieren des Mittelstreifens (Bordsteine, starker Verkehr)	3nocross 16737,11866 16851,11852 16962,11833 17037,11820 17151,11801
 #: by: Kerstin Pantos:
 Kolonnenstr.: Mittelinsel mit Geländer	3nocross 7709,8777 7642,8815 7563,8871
@@ -1477,7 +1479,8 @@ Köpenicker Str.: Mittelstreifen	3nocross 21137,11294 21134,11331 21124,11462
 Märkische Allee/Alt-Friedrichsfelde	3 20018,11698 20026,11663 20064,11687
 abgeschlossenes Tor	3 * 8237,20098 *
 abgeschlossenes Tor	3 * 8291,20112 *
-verschloßenes Tor	3 * 3796,16202 *
+abgeschlossenes Tor	3 * 3796,16202 *
+abgeschlossenes Tor	3 * 5083,22149 *
 #
 ####################################################################
 #
@@ -1756,6 +1759,7 @@ tragen (31 Stufen oder Kinderwagenrampe)	0:40 13168,21706
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+Drängelgitter	BNP:3::trailer=10 6928,23021
 Drängelgitter	BNP:3::trailer=10 6509,23198
 enges Drängelgitter, kann umfahren werden	BNP:3::trailer=10 6278,22615
 Schranke	BNP:3::trailer=10 19750,11730

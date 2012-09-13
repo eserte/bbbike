@@ -1117,8 +1117,9 @@ userdel	q4::inwork 10723,14772 10838,14962
          'id' => 2311,
          'data' => '#: by: http://www.altglienicke24.de/meldungen.html
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1201/nachricht4563.html
+#: by: http://pf-tk.de/ai1ec_event/podiumsdiskussion-wie-weiter-im-kolner-viertel/?instance_id=
 #: XXX wann wird die Brücke wieder eröffnet?
-#: next_check: 2012-03-01
+#: next_check: 2013-03-01
 userdel	2::inwork 19968,16 19940,52
 ',
          'type' => 'gesperrt'

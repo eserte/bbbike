@@ -1113,7 +1113,7 @@ Etwa 40 Meter nˆrdlich in der Straﬂe der Pariser Kommune eine weitere Fuﬂg‰ngera
 	X 6661,13130
 	X 12045,16574
 	X 12986,23392
-	B 12957,26186
+	B 12944,26163
 	X 11556,10869
 	X 10397,10852
 	X 6665,2836
@@ -1348,7 +1348,7 @@ nur Richtung O	X 8142,7221
 # XXXdel? nicht mehr da???	X 2854,19992
 	X 4597,20778
 	X 4319,20182
-	X 4273,20021
+	X 4262,20025
 	X 3820,19688
 	X 3546,19477
 	X 3165,19136
@@ -1360,10 +1360,10 @@ nur Richtung O	X 8142,7221
 	X 4497,19539
 	X 4935,20574
 	X 4953,20624
-	X 4780,20115
+	X 4780,20116
 	X 5201,20103
 	X 5517,20120
-	X 5481,20379
+	X 5475,20381
 	F 5341,21266
 	X 5819,21057
 	X 5923,21522
@@ -2561,6 +2561,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	B -48114,-2344
 	B 9342,-90771
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1008/nachricht3979.html
+#: confirmed_by: srt
 	X 13256,26863
 #: by: http://www.berlin.de/ba-spandau/presse/archiv/20100805.1445.305319.html
 	X -7365,15306
@@ -2634,8 +2635,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	B -5882,14210
 	X 14028,5325
 	X 15670,12022
-#: note: Luftbild
-	F 4861,20241
+	F 4864,20247
 	F 16602,25646
 #: XXX_prog: Strecke ist auﬂer Betrieb! B0 oder was?
 	B0 26090,86927
@@ -2748,6 +2748,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F::inwork 9063,12051
 	F 2814,20035
 	F 3216,21431
+	F 9540,15238
 # 
 ################################################################################
 #: note: Potsdam vvv
@@ -2871,6 +2872,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: note: ^^^
 ################################################################################
 #: note: Ampeln elsewhere vvv
+	X 8182,25608
 	X 33103,-85728
 	X 33060,-85292
 	F -13778,4260
