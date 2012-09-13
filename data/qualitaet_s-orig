@@ -10048,8 +10048,8 @@ Moltkestr.: mäßiges Kopfsteinpflaster	Q2 4596,3738 4476,3820
 #: confirmed_by: srt (made it a Q2+)
 Moltkestr.: mäßiges Kopfsteinpflaster	Q2+ 4476,3820 4307,3959
 Moltkestr.: mäßiges Kopfsteinpflaster	Q2 4307,3959 4234,4020
-#: add_fragezeichen: Ist das Kopfsteinpflaster zwischen Roonstr. und Augustastr. eher schlecht oder eher mäßig?
-Moltkestr.: eher schlechtes Kopfsteinpflaster	Q3 4234,4020 4092,4217 4012,4325
+#: corrected_by: Kay Leonhardt (eher schlechtes Kopfsteinpflaster, Q3 -> ...) ("kleinere Katzenköpfe")
+Moltkestr.: mäßiges Kopfsteinpflaster	Q2 4234,4020 4092,4217 4012,4325
 #: corrected_by: srt (Q3 -> Q2)
 Moltkestr.: Kopfsteinpflaster	Q2 4012,4325 3926,4438
 #: corrected_by: srt (Q1 -> Q2)
@@ -10403,8 +10403,8 @@ Taunusstr. (Friedenau): Asphalt	Q0 4785,7438 4909,7436 5070,7436 5239,7437 5272,
 # 
 #: by: Dierk Jerzynski: vvv
 Kastanienstr.: schlechtes grobes Kopfsteinpflaster	Q3 5167,2160 5220,2030
-#: add_fragezeichen: Ist die Brauerstr. im nordöstlichen Abschnitt gepflastert oder asphaltiert?
-Brauerstr.: schlechtes Kopfsteinpflaster	Q3 5317,2345 5167,2160 4979,1964 4945,1915
+#: corrected_by: Kay Leonhardt (schlechtes Kopfsteinpflaster -> ...)
+Brauerstr.: mäßiges Kopfsteinpflaster	Q2 5317,2345 5167,2160 4979,1964 4945,1915
 #: corrected_by: srt (schlechtes Kopfsteinpflaster -> ...)
 Brauerstr.: Asphalt	Q0 4945,1915 4779,1699 4717,1618
 Jägerstr.: schlechtes Kopfsteinpflaster	Q3 5004,1939 5143,1998 5220,2030 5277,2054 5376,2097
@@ -10734,8 +10734,7 @@ Am Espenpfuhl: Kopfsteinpflaster	Q2 17734,675 17920,391 18085,137
 # 
 #: by: Nicolas Jost: vvv
 Boothstr.: Asphalt	Q0 4969,3222 5121,3133 5252,3059 5493,2931
-#: add_fragezeichen: Ist die Marienstraße zwischen Marienplatz und Königsberger Str. asphaltiert oder gepflastert? Falls gepflastert, ist das Kopfsteinpflaster schlecht, mäßig oder gut?
-#: XXX laut ADFC-Karte aber gut befahrbar?
+#: confirmed_by: Kay Leonhardt ("große Katzenköpfe")
 Marienstr.: schlechtes Kopfsteinpflaster	Q3 4962,2532 5058,2702 5115,2803
 Marienstr.: schlechtes Kopfsteinpflaster	Q3 5193,2953 5252,3059
 Marienplatz: schlechtes Kopfsteinpflaster	Q3 5115,2803 5209,2837 5193,2953 5084,2918 5115,2803
@@ -13999,8 +13998,8 @@ Parallelstr. (Lichterfelde, Lankwitz): Beton	Q0 5198,1853 5335,1913 5431,1956 54
 Parallelstr. (Lichterfelde, Lankwitz): mäßiges Kopfsteinpflaster	Q2 5489,1981 5592,2021 5720,2081 5807,2117 5825,2125 5849,2139
 #: corrected_by: srt (guter Asphalt -> schlechtes Kopfsteinpflaster)
 Am Pfuhl: schlechtes Kopfsteinpflaster	Q3 5304,1523 5251,1543 5178,1499
-#: add_fragezeichen: Ist die Straße im westlichen Abschnitt gepflastert oder asphaltiert?
-Am Pfuhl: guter Asphalt	Q0 5178,1499 5120,1460 5074,1445 5006,1445 4940,1432
+#: corrected_by: Kay Leonhardt (guter Asphalt -> schlechtes Kopfsteinpflaster) ("große Katzenköpfe")
+Am Pfuhl: schlechtes Kopfsteinpflaster	Q3 5178,1499 5120,1460 5074,1445 5006,1445 4940,1432
 #: note: ebenso: Burkhard Heine:
 Salzunger Pfad: guter Asphalt	Q0 5006,1445 4993,1520 4981,1567 4968,1563 4942,1649
 Hasselfelder Weg: guter Asphalt	Q0 5045,1675 4942,1649 4855,1616 4800,1582
@@ -18240,8 +18239,8 @@ Spreestr. (Friedrichshagen): schlechtes Kopfsteinpflaster	Q3 25010,4807 25007,47
 Luisenstr. (Lichterfelde, Lankwitz): gutes Kopfsteinpflaster	Q1- 5865,1975 5807,2117
 #: corrected_by: srt ("schlechtes" gestrichen)
 Luisenstr. (Lichterfelde, Lankwitz): Kopfsteinpflaster	Q2 5825,2125 5761,2262
-#: add_fragezeichen: Ist das Kopfsteinpflaster zwischen Jägerstr. und Lankwitzer Str. schlecht oder mäßig oder gut?
-Luisenstr. (Lichterfelde, Lankwitz): schlechtes Kopfsteinpflaster	Q3 5788,2274 5666,2548
+#: corrected_by: srt ("schlechtes" -> "gutes")
+Luisenstr. (Lichterfelde, Lankwitz): guter Kopfsteinpflaster	Q1- 5788,2274 5666,2548
 #: by: ^^^
 # 
 #: by: Jutta Marquark:
@@ -21518,6 +21517,7 @@ Holbeinstr. (Lichterfelde): Beton	Q0 4004,3729 4134,3825 4307,3959
 Holbeinstr. (Lichterfelde): Kopfsteinpflaster	Q2- 4307,3959 4385,4032
 #: corrected_by: Hanswalter Schramm (correcting the above mentioned two)
 #: confirmed_by: srt (public imagery)
+#: confirmed_by: Kay Leonhardt
 Holbeinstr. (Lichterfelde): schlechtes Kopfsteinpflaster	Q3 3348,3278 3492,3371 3626,3465
 #: by: Michael [AM]
 #: corrected_by: srt (Asphalt -> Beton)
@@ -22397,9 +22397,11 @@ Siegfriedstr. (Niederschönhausen): Asphalt, Schlaglöcher	Q2 10742,19632 10806,19
 # 
 #: by: Isabel [AM] vvv
 #: corrected_by: srt (Q3 -> Q2)
-Lipaer Str.: Kopfsteinpflaster	Q2 4184,4651 4214,4595 4265,4484
-#: add_fragezeichen: Ist das Kopfsteinpflaster zwischen Roonstr. und Augustastr. eher mäßig oder eher schlecht?
-Lipaer Str.: Kopfsteinpflaster (auf Fußweg ausweichen)	Q3 4265,4484 4317,4378 4346,4317 4385,4032
+Lipaer Str.: mäßiges Kopfsteinpflaster	Q2 4184,4651 4214,4595 4265,4484
+#: corrected_by: Kay Leonhardt (Q3 -> Q2)
+Lipaer Str.: mäßiges Kopfsteinpflaster	Q2 4265,4484 4317,4378 4346,4317
+#: confirmed_by: Kay Leonhardt ("für Radler nicht akzeptabel")
+Lipaer Str.: schlechtes Kopfsteinpflaster (auf Fußweg ausweichen)	Q3 4346,4317 4385,4032
 Roonstr. (Lichterfelde): schlechtes Kopfsteinpflaster	Q3 4012,4325 4265,4484 4515,4581
 #: by: ^^^
 # 

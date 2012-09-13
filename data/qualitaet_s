@@ -8568,7 +8568,7 @@ Paulsenstr.: Asphalt	Q0 4423,6477 4500,6612 4528,6711
 Moltkestr.: m‰ﬂiges Kopfsteinpflaster	Q2 4596,3738 4476,3820
 Moltkestr.: m‰ﬂiges Kopfsteinpflaster	Q2 4476,3820 4307,3959
 Moltkestr.: m‰ﬂiges Kopfsteinpflaster	Q2 4307,3959 4234,4020
-Moltkestr.: eher schlechtes Kopfsteinpflaster	Q3 4234,4020 4092,4217 4012,4325
+Moltkestr.: m‰ﬂiges Kopfsteinpflaster	Q2 4234,4020 4092,4217 4012,4325
 Moltkestr.: Kopfsteinpflaster	Q2 4012,4325 3926,4438
 Zionskirchstr.: Kopfsteinpflaster	Q2 10101,14455 10277,14350
 (Mauerweg Forst Spandau): Asphalt	Q0 -7263,16939 -7175,16968 -7151,17330 -6977,17655 -6977,17720 -6931,17864 -6837,18089 -6791,18328 -6780,18825 -6959,19306 -7016,19375 -8022,19052
@@ -8722,7 +8722,7 @@ Kaiserstuhlstr.: schlechtes Kopfsteinpflaster	Q3 -2381,3297 -2279,3089 -2221,288
 Hohentwielsteig: guter Asphalt	Q0 -567,2869 -479,2715 -287,2583 -166,2283
 Taunusstr. (Friedenau): Asphalt	Q0 4785,7438 4909,7436 5070,7436 5239,7437 5272,7458
 Kastanienstr.: schlechtes grobes Kopfsteinpflaster	Q3 5167,2160 5220,2030
-Brauerstr.: schlechtes Kopfsteinpflaster	Q3 5317,2345 5167,2160 4979,1964 4945,1915
+Brauerstr.: m‰ﬂiges Kopfsteinpflaster	Q2 5317,2345 5167,2160 4979,1964 4945,1915
 Brauerstr.: Asphalt	Q0 4945,1915 4779,1699 4717,1618
 J‰gerstr.: schlechtes Kopfsteinpflaster	Q3 5004,1939 5143,1998 5220,2030 5277,2054 5376,2097
 J‰gerstr.: schlechtes Kopfsteinpflaster	Q3 5434,2122 5525,2161 5660,2219 5761,2262 5788,2274 5836,2294
@@ -9998,7 +9998,7 @@ Parallelstr. (Lichterfelde, Lankwitz): m‰ﬂiges Kopfsteinpflaster	Q2 5028,1783 50
 Parallelstr. (Lichterfelde, Lankwitz): Beton	Q0 5198,1853 5335,1913 5431,1956 5489,1981
 Parallelstr. (Lichterfelde, Lankwitz): m‰ﬂiges Kopfsteinpflaster	Q2 5489,1981 5592,2021 5720,2081 5807,2117 5825,2125 5849,2139
 Am Pfuhl: schlechtes Kopfsteinpflaster	Q3 5304,1523 5251,1543 5178,1499
-Am Pfuhl: guter Asphalt	Q0 5178,1499 5120,1460 5074,1445 5006,1445 4940,1432
+Am Pfuhl: schlechtes Kopfsteinpflaster	Q3 5178,1499 5120,1460 5074,1445 5006,1445 4940,1432
 Salzunger Pfad: guter Asphalt	Q0 5006,1445 4993,1520 4981,1567 4968,1563 4942,1649
 Hasselfelder Weg: guter Asphalt	Q0 5045,1675 4942,1649 4855,1616 4800,1582
 Glindowseestr.: Asphalt	Q0 -1710,16735 -1553,16695 -1443,16676
@@ -11481,7 +11481,7 @@ Nentwigstr.: m‰ﬂiges Kopfsteinpflaster	Q2 24108,12631 24077,12544 23994,12334
 Spreestr. (Friedrichshagen): schlechtes Kopfsteinpflaster	Q3 25010,4807 25007,4758 24991,4701
 Luisenstr. (Lichterfelde, Lankwitz): gutes Kopfsteinpflaster	Q1 5865,1975 5807,2117
 Luisenstr. (Lichterfelde, Lankwitz): Kopfsteinpflaster	Q2 5825,2125 5761,2262
-Luisenstr. (Lichterfelde, Lankwitz): schlechtes Kopfsteinpflaster	Q3 5788,2274 5666,2548
+Luisenstr. (Lichterfelde, Lankwitz): guter Kopfsteinpflaster	Q1 5788,2274 5666,2548
 Chrysanthemenstr.: Asphalt	Q0 14137,13987 14241,13941
 Weiﬂkugelweg: Verbundsteinpflaster	Q1 10542,3055 10533,3001
 Weiﬂkugelweg: asphaltiert	Q0 10542,3055 10560,3182
@@ -13615,8 +13615,9 @@ Heidel‰uferweg: Asphalt	Q0 13010,2085 13043,1984 13070,1642 13073,1559 13089,135
 Drˆpkeweg: Asphalt	Q0 13070,1642 13181,1645 13288,1647 13397,1657 13507,1659 13531,1588 13657,1587
 Siegfriedstr. (Niederschˆnhausen): Asphalt	Q0 10614,19907 10742,19632
 Siegfriedstr. (Niederschˆnhausen): Asphalt, Schlaglˆcher	Q2 10742,19632 10806,19490 10857,19379
-Lipaer Str.: Kopfsteinpflaster	Q2 4184,4651 4214,4595 4265,4484
-Lipaer Str.: Kopfsteinpflaster (auf Fuﬂweg ausweichen)	Q3 4265,4484 4317,4378 4346,4317 4385,4032
+Lipaer Str.: m‰ﬂiges Kopfsteinpflaster	Q2 4184,4651 4214,4595 4265,4484
+Lipaer Str.: m‰ﬂiges Kopfsteinpflaster	Q2 4265,4484 4317,4378 4346,4317
+Lipaer Str.: schlechtes Kopfsteinpflaster (auf Fuﬂweg ausweichen)	Q3 4346,4317 4385,4032
 Roonstr. (Lichterfelde): schlechtes Kopfsteinpflaster	Q3 4012,4325 4265,4484 4515,4581
 Petershagener Weg: Beton/Asphalt	Q0 30665,4312 30729,4510 30810,4765
 Fahlandgasse: Asphalt	Q0 7684,17435 7681,17475
