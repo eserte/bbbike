@@ -1057,7 +1057,16 @@ userdel	3 12992,7545 13015,7440 12925,7425
          'type' => 'gesperrt'
        },
        undef,
-       undef,
+       {
+         'source_id' => 'IM_019184',
+         'until' => 1347832740,
+         'text' => 'Hauptstr. (Rosenthal): Veranstaltung, Straße vollständig gesperrt zwischen Schönhauser Str. und An der Vogelweide, 14.09.2012 06:00 Uhr bis 16.09.2012 23:59 Uhr',
+         'from' => 1347508800,
+         'id' => 2285,
+         'data' => 'userdel	q4::temp 8556,21918 8568,21863 8473,21633 8460,21602
+',
+         'type' => 'handicap'
+       },
        undef,
        undef,
        undef,
@@ -1438,6 +1447,36 @@ userdel	q4::inwork 9112,14771 9250,14658
          'data' => 'userdel	q4::inwork 10310,13227 10264,13097
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => 'http://www.berlin.de/ba-lichtenberg/presse/archiv/20120914.1355.375249.html',
+         'until' => 1350165599,
+         'text' => 'Straßenbau in der Alfred-Kowalke-Straße östlich der Straße Am Tierpark, Straße ist gesperrt, 17. September 2012 bis 13. Oktober 2012 ',
+         'from' => 1347746400,
+         'id' => 2380,
+         'data' => 'userdel	2::inwork 18286,11275 18409,11348 18477,11388 18618,11452
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_019185',
+         'until' => 1347825600,
+         'text' => 'Bergstr. (Steglitz): Veranstaltung, Straße zwischen Körnerst. und Heesestr. gesperrt, 14.09.2012 06:00 Uhr bis 16.09.2012 22:00 Uhr ',
+         'from' => 1347508800,
+         'id' => 2381,
+         'data' => 'userdel	q4::temp 5465,5726 5290,5704
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_019192',
+         'until' => 1347832740,
+         'text' => 'Spanische Allee (Zehlendorf): Baustelle, Straße unter den Bahnbrücken vollständig gesperrt (bis 16.09.12 nachts)',
+         'from' => 1347429180,
+         'id' => 2382,
+         'data' => 'userdel	2::inwork -3736,2849 -3648,2881
+',
+         'type' => 'gesperrt'
        }
      
 );

@@ -19735,11 +19735,11 @@ EOF
 userdel	2::inwork 872,24330 905,24113 831,24054 764,24065 609,24215 237,24374 195,24389 132,24390 78,24364 -406,23934
 EOF
      },
-     { from  => 1316062800, # 2011-09-15 07:00
-       until => 1316383140, # 2011-09-18 23:59
-       text  => 'Hauptstr. (Rosenthal): Veranstaltung, Straße vollständig gesperrt zwischen Schönhauser Str. und An der Vogelweide, 16.09.2011 07:00 Uhr bis 18.09.2011 23:59 Uhr ',
+     { from  => 1347508800, # 2012-09-13 06:00 PERIODISCH? ca. 2. Wochenende im September
+       until => 1347832740, # 2012-09-16 23:59
+       text  => 'Hauptstr. (Rosenthal): Veranstaltung, Straße vollständig gesperrt zwischen Schönhauser Str. und An der Vogelweide, 14.09.2012 06:00 Uhr bis 16.09.2012 23:59 Uhr',
        type  => 'handicap',
-       source_id => 'IM_017830',
+       source_id => 'IM_019184',
        data  => <<EOF,
 userdel	q4::temp 8556,21918 8568,21863 8473,21633 8460,21602
 EOF
@@ -20616,6 +20616,33 @@ EOF
        source_id => 'INKO_113178_COPY_5',
        data  => <<EOF,
 userdel	q4::inwork 10310,13227 10264,13097
+EOF
+     },
+     { from  => 1347746400, # 2012-09-16 00:00
+       until => 1350165599, # 2012-10-13 23:59
+       text  => 'Straßenbau in der Alfred-Kowalke-Straße östlich der Straße Am Tierpark, Straße ist gesperrt, 17. September 2012 bis 13. Oktober 2012 ',
+       type  => 'gesperrt',
+       source_id => 'http://www.berlin.de/ba-lichtenberg/presse/archiv/20120914.1355.375249.html',
+       data  => <<EOF,
+userdel	2::inwork 18286,11275 18409,11348 18477,11388 18618,11452
+EOF
+     },
+     { from  => 1347508800, # 2012-09-13 06:00
+       until => 1347825600, # 2012-09-16 22:00
+       text  => 'Bergstr. (Steglitz): Veranstaltung, Straße zwischen Körnerst. und Heesestr. gesperrt, 14.09.2012 06:00 Uhr bis 16.09.2012 22:00 Uhr ',
+       type  => 'handicap',
+       source_id => 'IM_019185',
+       data  => <<EOF,
+userdel	q4::temp 5465,5726 5290,5704
+EOF
+     },
+     { from  => 1347429180, # 2012-09-12 07:53
+       until => 1347832740, # 2012-09-16 23:59
+       text  => 'Spanische Allee (Zehlendorf): Baustelle, Straße unter den Bahnbrücken vollständig gesperrt (bis 16.09.12 nachts)',
+       type  => 'gesperrt',
+       source_id => 'IM_019192',
+       data  => <<EOF,
+userdel	2::inwork -3736,2849 -3648,2881
 EOF
      },
     );

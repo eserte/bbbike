@@ -134,6 +134,7 @@ Stephan-Born-Str.: genaue Lage? Privatstraße?	?::projected 23307,15956 23313,160
 #: last_checked: 2012-05-28
 #: next_check: 2013-05-15
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/22re.pdf/file?y=2012
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/39re.pdf/file?y=2012 (Grundstücksnummerierungen)
 #: XXX fehlt in Berlin.coords.data
 Carpinusweg: Am Hegewinkel entsteht ein neues Wohngebiet, eventuell entsteht diese Straße hier?	?::inwork 759,5174 858,5085
 # 
@@ -408,7 +409,7 @@ Planstraße im Block 902: neue Straße wird gebaut, wo genau, wann? Wird der Straß
 #XXX --- #: XXX neue Planstraßen nördlich des Alexanderplatzes vvv --- #: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20110208.1420.330238.html --- #: by: http://www.stadtentwicklung.berlin.de/planen/staedtebau-projekte/alexanderplatz/de/planungen/bplan/bplan_b4ca/index.shtml --- #: by: http://ww.ak-berlin.de/publicity/ak/internet.nsf/0/002CE81791D5796BC125784D0033BC47/$FILE/Auslobung_Alexander%20Parkside_18%2001%202010.pdf --- #: XXX Straßen werden benannt nach: --- #: XXX - Oda Schottmüller --- #: XXX - Hilde Radusch
 # 
 #: last_checked: 2012-09-08
-#: next_check: 2012-10-15
+#: next_check: 2012-10-12
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110627.1115.349371.html
 #: XXX zurzeit (2012-09) ist die Fahrbahn in nördlicher Richtung für Radfahrer *verboten*
 #: XXX siehe auch "noch provisorisch, aber wird wahrscheinlich dauerhaft sein" in ampeln-orig
@@ -616,6 +617,9 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 # Das heißt diese Strecken werden nicht bei einer erweiterten Suche aufgenommen
 # und dem CGI-Benutzer auch nicht präsentiert.
 # 
+#: by: http://www.berlin.de/ba-steglitz-zehlendorf/bvv-online/vo020.asp?VOLFDNR=4353&options=4
+#: XXX evtl. werden, wenn der Antrag angenommen wird, fehlende Abschnitte ergänzt
+Birkbuschstr.: existieren hier teilweise Radspuren?	? 5671,3987 5624,4112 5588,4210 5557,4294 5483,4359 5416,4411 5329,4485 5271,4547 5161,4664 5137,4691 5076,4762 5070,4770 5048,4798 4985,4884 4951,4920 4879,5017
 RR5 im Kienhorstpark: wie ist die genaue Wegführung?	? 6502,18905 6572,18793
 (Buschallee KGA): komplett asphaltiert? Beleuchtet? Schranken? Ausschilderung?	? 22458,9532 22525,9665 22730,9938
 (KGA-Weg): komplett asphaltiert? Beleuchtet? Schranken? Ausschilderung?	? 22730,9938 22818,10080 22731,10142
@@ -2933,8 +2937,6 @@ Aalsteig (Potsdam): Qualität?	? -19584,4326
 #: XXX ^^^
 Ahornstr. (Potsdam): Qualität?	? -8829,-2741 -8870,-2876
 Alter Torfweg (Potsdam): Qualität? Existieren Straßenschilder?	? -10836,-5477 -10829,-5608 -10917,-5739 -11089,-5909
-#: XXX zumindest an der Ludwigsfelder Str. asphaltiert und beleuchtet
-Ludwigsfelder Str. - Neuruppiner Str.: Qualität? Beleuchtet?	? -419,1643 -419,1525
 #: XXX an der Sachtlebenstr. Gehwegplatten; Ausschilderung "Zum Ramsteinweg"
 Ramsteinweg - Sachtlebenstr.: Qualität? Beleuchtet?	? 581,670 523,684 481,731 400,765 332,819 247,822
 # 

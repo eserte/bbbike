@@ -763,9 +763,7 @@ Wuhlewanderweg: Parkweg	Q1 21599,7904 21587,7865 21542,7752 21538,7684
 Wuhlewanderweg: guter Asphalt	Q0 21629,7921 21616,7863 21570,7751 21604,7715 21620,7647 21613,7521 21590,7414 21574,7244 21590,7211 21888,6944 21976,6848 22056,6613
 Wuhlewanderweg: guter Asphalt	Q0 22030,6600 22097,6414 22146,6338 22214,6271 22236,6233 22238,6195
 Wuhlewanderweg: guter Verbundsteinbelag	Q0 22240,6118 22172,5928 22135,5882 22085,5873
-#: XXX eventuell passiert hier noch was bzgl. Neupflasterung?
-#: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4258&options=4 (Neupflasterung)
-#: next_check: 2012-09-01
+#XXX del --- nein, hier passiert vorerst nichts, siehe 2. URL --- #: XXX eventuell passiert hier noch was bzgl. Neupflasterung? --- #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4258&options=4 (Neupflasterung) --- #: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/verwaltungbzbm/mdv_vii_12.pdf?start&ts=1347456072&file=mdv_vii_12.pdf --- #: next_check: 2012-09-01
 Wuhlewanderweg: Verbundsteine, teilweise etwas uneben	Q1 22085,5873 21846,5856 21744,5804 21602,5685
 Hämmerlingstr.: Asphalt	Q0 21683,6946 21774,6880 21833,6810 21861,6719 21913,6554 21984,6317 22000,6245 22033,6144 22075,5996 22083,5899 22085,5873 22089,5776 22092,5673 22095,5585
 Dorfstr.: schlechtes Kopfsteinpflaster, teilweise gut befahrbare Banketten	Q2- 30357,3555 30319,3511 30281,3479 30201,3375 30188,3301 29998,3170 29902,3104 29921,3079 29959,3031
@@ -1380,6 +1378,9 @@ Hebbelstr.: gutes Gehwegpflaster	Q1 3117,11852 3251,12025 3258,12035 3295,12068
 Am Comeniusplatz: Kopfsteinpflaster	Q2 13275,11830 13406,11896
 Josef-Orlopp-Str.: Asphalt	Q0 15912,13153 16426,13145 16863,13138
 Landsberger Allee: Radwege nur mit mäßiger Qualität (Bordsteinkanten!)	Q1 16843,14420 17254,14451 17533,14484 17848,14523 18057,14549 18183,14573 18365,14607 18433,14620 18556,14687 18794,14819
+#: XXX werden die Radwege demnächst instandgesetzt?
+#: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20120913.1335.375172.html
+#: next_check: 2012-10-17
 Landsberger Allee: Radwege nur mit mäßiger Qualität (Bordsteinkanten!)	Q1 20260,15434 20525,15571 20641,15622 20796,15667 21009,15658 21068,15646 21119,15635 21235,15641 21398,15671 21475,15705 21584,15753 21694,15802
 #: by: http://www.bsisb.de/friedhofsb/b_s_ws_drl/c10.jpg
 Kurfürstenweg: fester Waldweg	Q1 -5960,-604 -5863,-426 -5762,-145 -5752,-44 -5658,135 -5567,231 -5539,308 -5376,450 -5295,545 -5155,758 -4974,900
@@ -7060,7 +7061,9 @@ Satzkorner Weg: Beton	Q0 -1134,1656 -1133,1616 -1121,1605
 Wildbergweg: Beton	Q0 -837,1753 -841,1675
 Rehbrücker Weg: Beton	Q0 -775,1781 -769,1677
 Gütergotzer Str.: Beton	Q0 -649,1831 -624,1718 -472,1724 -418,1787
-(Ludwigsfelder Str. - Neuruppiner Str.): Asphalt	Q0 -356,1740 -419,1643
+#: by: mmholz:
+#: note: Beleuchtung vorhanden (by mmholz)
+(Ludwigsfelder Str. - Neuruppiner Str.): Asphalt, leicht schadhaft (Wurzelaufwölbungen, Kanaldeckel stehen hervor)	Q1+ -356,1740 -419,1643 -419,1525
 Buschgrabenweg: Beton	Q0 -84,1470 120,1543 145,1537
 Hoffbauerpfad: Gehwegplatten	Q0- 550,1358 464,1246 422,1191
 Hoffbauerpfad: Gehwegplatten	Q0- 214,969 333,1104
