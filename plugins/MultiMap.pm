@@ -605,21 +605,28 @@ sub _copy_link {
 }
 
 ######################################################################
-# Map Compare (Geofabrik)
+# Map Compare (Geofabrik resp. bbbike.org)
 
 sub showmap_url_mapcompare {
     my(%args) = @_;
+
+    my $use_bbbike_org = 1;
 
     my $px = $args{px};
     my $py = $args{py};
 
     my $scale = 17 - log(($args{mapscale_scale})/3000)/log(2);
-    my $map0 = 'googlehybrid';
+    my $map0 = $use_bbbike_org ? 'google-hybrid' : 'googlehybrid';
     #my $map1 = 'tah';
     my $map1 = 'mapnik';
     #my $map1 = 'cyclemap';
-    sprintf 'http://tools.geofabrik.de/mc/?mt0=%s&mt1=%s&lat=%s&lon=%s&zoom=%d',
+    my $common_qs = sprintf 'mt0=%s&mt1=%s&lat=%s&lon=%s&zoom=%d',
 	$map0, $map1, $py, $px, $scale;
+    if ($use_bbbike_org) {
+	'http://tile.bbbike.org/mc/?num=2&' . $common_qs;
+    } else {
+	'http://tools.geofabrik.de/mc/?' . $common_qs;
+    }
 }
 
 sub showmap_mapcompare { start_browser(showmap_url_mapcompare(@_)) }
