@@ -322,7 +322,13 @@ sub handle_blocked_node_like {
 
 sub handle_blocked_way_like {
     my($r, $dir) = @_;
-    my($cat) = $r->[Strassen::CAT] =~ m{^([^:]+)};
+    my($cat, $cat_attribs) = $r->[Strassen::CAT] =~ m{^([^:]+)(?:::(.*))?};
+
+    # Don't render if the output is map-only
+    if ($optimize_for == OPTIMIZE_FOR_MAPNIK && ($cat_attribs||'') =~ /\bigndisp\b/) {
+	return;
+    }
+
     my @node_ids = map {
 	my($px,$py) = $Karte::Polar::obj->trim_accuracy($Karte::Polar::obj->standard2map(split /,/, $_));
 	my $node_id = maybe_add_node($px,$py);
