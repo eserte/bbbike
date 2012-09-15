@@ -329,7 +329,6 @@ sub init_nextcheck {
     $special_data{$type}{today} = POSIX::strftime("%Y-%m-%d", localtime);
     $type_s{$type} = Strassen->new;
     $special_end{$type} = sub { end_nextcheck(@_) };
-    require Date::Calc;
     require Storable;
     require StrassenNextCheck;
 }
@@ -354,6 +353,39 @@ sub end_nextcheck {
     require File::Basename;
     $type_s{nextcheck}->write("/tmp/nextcheck.bbd");
 }
+
+######################################################################
+# Filter everything out what is not yet expired by
+# next_check/last_checked. This is used for the standard
+# fragezeichen-orig -> fragezeichen conversion
+
+sub init_filternextcheck {
+    my $type = shift;
+
+    # Pseudo-inheritance/reusage
+    init_nextcheck('nextcheck');
+
+    no strict 'refs';
+    $special{$type} = \&{"special_" . $type};
+    delete $special{'nextcheck'};
+    $special_end{$type} = sub { end_nextcheck(@_) };
+}
+
+sub special_filternextcheck {
+    my($r, $dir) = @_;
+    StrassenNextCheck::process_nextcheck_record($s, $r, $dir, check_frequency_days => $special_data{nextcheck}{check_frequency_days}, passthru_without_nextcheck => 1);
+    if ($dir->{_nextcheck_date} && $dir->{_nextcheck_date}[0]) {
+	if ($dir->{_nextcheck_date}[0] gt $special_data{nextcheck}{today}) {
+	    return 0;
+	}
+    }
+    for (keys %$dir) {
+	delete $dir->{$_} if $_ =~ m{^_nextcheck_};
+    }
+    return 1;
+}
+
+sub end_filternextcheck { }
 
 ######################################################################
 
