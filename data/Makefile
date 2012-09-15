@@ -1,6 +1,4 @@
 #
-# $Id: Makefile,v 2.213 2009/02/18 22:53:47 eserte Exp $
-#
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
 #
@@ -131,7 +129,6 @@ all:	targets data-images check .modified .rsync_include make_misc
 .BEGIN:
 	@$(PERL) -e 'for (@ARGV) { do { unlink($$_) and warn "Removed $$_\n" } if (-M $$_ >= 1) }' \
 		.check_bbbike-temp-blockings-optimized \
-		.check_dates \
 		${PERSISTENTTMPDIR}/.check_fragezeichen-nextcheck.bbd \
 		${PERSISTENTTMPDIR}/.check_fragezeichen-outdoor.bbd \
 		${PERSISTENTTMPDIR}/.check_fragezeichen-indoor-nextcheck.bbd \
@@ -153,7 +150,7 @@ slow-checks:	check-categories \
 		check-names \
 		.check_targets \
 		inaccessible_strassen inaccessible_landstrassen \
-		check-line-lengths check-dates \
+		check-line-lengths \
 		check-coords.data \
 		persistent-tmp
 
@@ -164,6 +161,7 @@ persistent-tmp:	fragezeichen-outdoor-nextcheck \
 		${PERSISTENTTMPDIR}/fragezeichen-indoor-nextcheck.bbd \
 		${PERSISTENTTMPDIR}/.check_fragezeichen-nextcheck.bbd \
 		${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd \
+		${PERSISTENTTMPDIR}/fragezeichen-nextcheck.org \
 		${PERSISTENTTMPDIR}/strassen_in_planung.bbd \
 		${PERSISTENTTMPDIR}/projektierte_radstreifen.bbd \
 		${PERSISTENTTMPDIR}/all-upload-fragezeichen.wpt \
@@ -921,6 +919,10 @@ ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd ${PERSISTENTTMPDIR}/.check_fragez
 	mv -f ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd~ ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd
 	touch ${PERSISTENTTMPDIR}/.check_fragezeichen-nextcheck.bbd
 
+${PERSISTENTTMPDIR}/fragezeichen-nextcheck.org:	*-orig ${PERSISTENTTMPDIR}/bbbike-temp-blockings-optimized.bbd
+	${MISCSRCDIR}/fragezeichen2org.pl *-orig ${PERSISTENTTMPDIR}/bbbike-temp-blockings-optimized.bbd > $@~
+	mv $@~ $@
+
 ${PERSISTENTTMPDIR}/projektierte_radstreifen.bbd:	fragezeichen-orig
 	cat fragezeichen-orig | ${GREPSTRASSEN} -sectionrx "projektierte Radstreifen" | ${CONVERT2HAFAS} -basefile fragezeichen-orig > $@
 
@@ -1560,15 +1562,6 @@ count-streets:
 	@echo -n "Landstraßen:   "; grep -v "^#" landstrassen landstrassen2 | ${CUT} -f1 | sort -u | wc -l
 	@echo -n "  Potsdam:     "; fgrep "(Potsdam)" landstrassen | grep -v "^(" | ${CUT} -f1 -d"(" | sort -u | wc -l
 	@echo -n "  Oranienburg: "; grep -v "^#" landstrassen | fgrep "(Oranienburg" | ${CUT} -f1 -d"(" | sort -u | wc -l
-
-check-dates:	.check_dates
-
-.check_dates:	*-orig ${MISCSRCDIR}/check_dates
-	@(echo "Expired today (`date`)": ;\
-	 ${PERL_UTF8} ${MISCSRCDIR}/check_dates *-orig ;\
-	 echo "Expired in the next two weeks:" ;\
-	 ${PERL_UTF8} ${MISCSRCDIR}/check_dates -reldays 14 *-orig ) 2>&1 | tee $@~
-	mv $@~ $@
 
 check-crossings:	check-crossings-important \
 			check-crossings-less-important
