@@ -21219,10 +21219,23 @@ sub accept_drop {
 # Return the start and goal streets of the current route
 ### AutoLoad Sub
 sub get_route_description {
+    my(%args) = @_;
+    my $with_via = exists $args{-withvia} ? delete $args{-withvia} : 1;
+    if (%args) {
+	warn "WARNING: get_route_description called with extra arguments: " . join(" ", %args);
+    }
+
     my $text = "";
     my @search_route = @{ get_act_search_route() };
     if (@search_route) {
-	$text = $search_route[0][StrassenNetz::ROUTE_NAME] . " - " . $search_route[-1][StrassenNetz::ROUTE_NAME];
+	$text = $search_route[0][StrassenNetz::ROUTE_NAME];
+	if ($with_via && @search_route_points > 2) { # do we have a via?
+	    # XXX This is a simple solution. A better one use the
+	    # farthest point instead the point in the middle of the
+	    # list.
+	    $text .= " - " . $search_route[@search_route/2][StrassenNetz::ROUTE_NAME];
+	}
+	$text .= " - " . $search_route[-1][StrassenNetz::ROUTE_NAME];
     }
     $text;
 }
