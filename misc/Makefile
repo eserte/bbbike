@@ -41,8 +41,11 @@ abdeckung.bbd: abdeckung.bbd-orig ../data/berlin_ortsteile
 # checks
 check:	.check_ampelschaltung2
 
-validate:
+validate:	${BBBIKETMPDIR}/.validate_garmin_devcap
+
+${BBBIKETMPDIR}/.validate_garmin_devcap: garmin_devcap.kwalify garmin_devcap.yaml
 	pkwalify -f garmin_devcap.kwalify garmin_devcap.yaml
+	touch ${BBBIKETMPDIR}/.validate_garmin_devcap
 
 .check_ampelschaltung2:	ampelschaltung-orig.txt ${DATADIR}/ampeln-orig
 	$(CHECK_POINTS) -ampelschaltung2 -warn \
