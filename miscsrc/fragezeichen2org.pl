@@ -112,6 +112,13 @@ for my $record (@records) {
     print $record->[1];
 }
 
+print <<'EOF';
+** settings
+# Local variables:
+# compile-command: "(cd ../data && make ../tmp/fragezeichen-nextcheck.org)"
+# End:
+EOF
+
 __END__
 
 =head1 NAME
