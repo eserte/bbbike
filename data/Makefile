@@ -801,6 +801,7 @@ fragezeichen-cooked:	fragezeichen strassen landstrassen landstrassen2
 	-@$(WRITEABLE) $@
 	cat fragezeichen-orig |\
 	        ${GREPSTRASSEN} -v -sectionrx "ignorieren" |\
+	        ${GREPSTRASSEN} -special filternextcheck |\
 	    ${CONVERT_ORIG} > $@~
 	@echo "# added from ampeln-orig" >> $@~
 	grep '?' ${DATADIR}/ampeln-orig | \
