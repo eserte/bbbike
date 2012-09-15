@@ -1260,7 +1260,7 @@ sub capabilities {
 	defined $ENV{PILOTPORT}) {
 	$can_palm = 1;
     }
-    if (is_in_path("ical")) {
+    if (is_in_path("ical") && -r "$ENV{HOME}/.calendar" && 0 == system("grep", "-q", 'IncludeCalendar \[.*\.calendar\.ical\.bbbikealarm\]', "$ENV{HOME}/.calendar")) {
 	$can_ical = 1;
     }
     if ($main::devel_host) {
