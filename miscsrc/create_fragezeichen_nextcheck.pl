@@ -16,12 +16,12 @@ use strict;
 use FindBin;
 use lib ("$FindBin::RealBin/..",
 	 "$FindBin::RealBin/../lib",
+	 $FindBin::RealBin,
 	);
 
-use Date::Calc qw(Add_Delta_Days);
 use POSIX qw(strftime);
 
-use Strassen::Core;
+use StrassenNextCheck;
 
 my $fragezeichen_mode = 0;
 my $door_mode = 'out';
@@ -57,66 +57,20 @@ for my $arg (@ARGV) {
 sub handle_file {
     my($file) = @_;
     if ($verbose) { print STDERR "$file... " }
-    my $s = Strassen->new_stream($file);
+    my $s = StrassenNextCheck->new_stream($file);
 
-    my $check_frequency_days = 30;
-    my $glob_dir = $s->get_global_directives;
-    if ($glob_dir && $glob_dir->{check_frequency}) {
-	($check_frequency_days) = $glob_dir->{check_frequency}[0] =~ m{(\d+)};
-    }
-
-    $s->read_stream
+    $s->read_stream_nextcheck_records
 	(sub {
 	     my($r, $dir) = @_;
 
 	     my $check_now; # undef: not given, 0: given and not now, 1: given and now
-
 	     my $add_name;
 
-	     if (exists $dir->{next_check}) {
-		 my($y,$m,$d) = $dir->{next_check}[0] =~ m{(\d{4})-(\d{2})-(\d{2})};
-		 if (!$y) {
-		     ($y,$m) = $dir->{next_check}[0] =~ m{(\d{4})-(\d{2})};
-		     $d=1;
-		 }
-		 if (!$y) {
-		     warn "*** WARN: Malformed next_check directive '$dir->{next_check}[0]' in '$file', ignoring...\n";
-		 } else {
-		     my $date = sprintf "%04d-%02d-%02d", $y,$m,$d;
-		     if ($date lt $today) {
-			 $add_name = "(next check: $date)";
-			 $check_now = 1;
-		     } else {
-			 $check_now = 0;
+	     if ($dir->{_nextcheck_date}) {
+		 if ($dir->{_nextcheck_date} lt $today) {
+		     if ($dir->{_nextcheck_label}) {
+			 $add_name = "($dir->{_nextcheck_label})";
 		     }
-		 }
-	     } elsif (exists $dir->{last_checked}) {
-		 my($y,$m,$d) = $dir->{last_checked}[0] =~ m{(\d{4})-(\d{2})-(\d{2})};
-		 if (!$y) {
-		     ($y,$m) = $dir->{last_checked}[0] =~ m{(\d{4})-(\d{2})};
-		     $d=1;
-		 }
-		 if (!$y) {
-		     warn "*** WARN: Malformed last_checked directive '$dir->{next_check}[0]' in '$file', ignoring...\n";
-		 } else {
-		     my $check_frequency_days = $check_frequency_days;
-		     if (exists $dir->{check_frequency}) {
-			 ($check_frequency_days) = $dir->{check_frequency}[0] =~ m{(\d+)}; # XXX duplicated, see above
-		     }
-		     my $last_checked_date = sprintf "%04d-%02d-%02d", $y,$m,$d;
-		     ($y,$m,$d) = Add_Delta_Days($y,$m,$d, $check_frequency_days);
-		     my $date = sprintf "%04d-%02d-%02d", $y,$m,$d;
-		     if ($date lt $today) {
-			 $add_name = "(last checked: $last_checked_date)";
-			 $check_now = 1;
-		     } else {
-			 $check_now = 0;
-		     }
-		 }
-	     } elsif ($r->[Strassen::NAME] =~ m{(\d{4})-(\d{2})-(\d{2})}) {
-		 my($y,$m,$d) = ($1,$2,$3);
-		 my $date = sprintf "%04d-%02d-%02d", $y,$m,$d;
-		 if ($date lt $today) {
 		     $check_now = 1;
 		 } else {
 		     $check_now = 0;
@@ -171,7 +125,7 @@ sub handle_file {
 	     # XXX better!!!
 	     $add_name =~ s{[\t\r\n]}{ }g if defined $add_name;
 	     print $r->[Strassen::NAME] . (defined $add_name ? (length $r->[Strassen::NAME] ? ' ' : '') . $add_name : '') . "\t$cat " . join(" ", @{ $r->[Strassen::COORDS] }) . "\n";
-	 });
+	 }, passthru_without_nextcheck => 1);
 
     if ($verbose) { print STDERR "done\n" }
 }
