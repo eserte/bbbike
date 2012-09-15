@@ -71,10 +71,10 @@ for my $file (@files) {
     $s->read_stream_nextcheck_records
 	(sub {
 	     my($r, $dir) = @_;
-	     if (my($y,$m,$d) = $dir->{_nextcheck_date} =~ m{^(\d{4})-(\d{2})-(\d{2})$}) {
+	     if ($dir->{_nextcheck_date} && $dir->{_nextcheck_date}[0] && (my($y,$m,$d) = $dir->{_nextcheck_date}[0] =~ m{^(\d{4})-(\d{2})-(\d{2})$})) {
 		 my $epoch = eval { timelocal 0,0,0,$d,$m-1,$y };
 		 if ($@) {
-		     warn "ERROR: Invalid day '$dir->{_nextcheck_date}' ($@) in file '$file', line '" . $r->[Strassen::NAME] . "', skipping...\n";
+		     warn "ERROR: Invalid day '$dir->{_nextcheck_date}[0]' ($@) in file '$file', line '" . $r->[Strassen::NAME] . "', skipping...\n";
 		 } else {
 		     my $wd = [qw(Su Mo Tu We Th Fr Sa)]->[(localtime($epoch))[6]];
 		     my $date = "$y-$m-$d";
@@ -91,7 +91,7 @@ EOF
 		     push @records, [$date, $body];
 		 }
 	     } else {
-		 warn "ERROR: Cannot parse date '$dir->{_nextcheck_date}' (file $file), skipping...\n";
+		 warn "ERROR: Cannot parse date '$dir->{_nextcheck_date}[0]' (file $file), skipping...\n";
 	     }
 	 });
 }

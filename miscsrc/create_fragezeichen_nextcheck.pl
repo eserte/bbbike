@@ -66,10 +66,10 @@ sub handle_file {
 	     my $check_now; # undef: not given, 0: given and not now, 1: given and now
 	     my $add_name;
 
-	     if ($dir->{_nextcheck_date}) {
-		 if ($dir->{_nextcheck_date} lt $today) {
-		     if ($dir->{_nextcheck_label}) {
-			 $add_name = "($dir->{_nextcheck_label})";
+	     if ($dir->{_nextcheck_date} && $dir->{_nextcheck_date}[0]) {
+		 if ($dir->{_nextcheck_date}[0] lt $today) {
+		     if ($dir->{_nextcheck_label} && $dir->{_nextcheck_label}[0]) {
+			 $add_name = "($dir->{_nextcheck_label}[0])";
 		     }
 		     $check_now = 1;
 		 } else {

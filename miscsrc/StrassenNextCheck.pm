@@ -40,7 +40,7 @@ sub read_stream_nextcheck_records {
 
 	     $self->process_nextcheck_record($r, $dir, check_frequency_days => $check_frequency_days);
 
-	     if ($passthru_without_nextcheck || $dir->{_nextcheck_date}) {
+	     if ($passthru_without_nextcheck || ($dir->{_nextcheck_date} && $dir->{_nextcheck_date}[0])) {
 		 return $cb->($r, $dir);
 	     }
 	 }, %args
@@ -88,10 +88,10 @@ sub process_nextcheck_record {
 
     if ($y) {
 	if (defined $label) {
-	    $dir->{_nextcheck_label} = $label;
+	    $dir->{_nextcheck_label}[0] = $label;
 	}
 	my $date = sprintf "%04d-%02d-%02d", $y,$m,$d;
-	$dir->{_nextcheck_date} = $date;
+	$dir->{_nextcheck_date}[0] = $date;
     }
 }
 
