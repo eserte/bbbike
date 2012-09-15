@@ -27,7 +27,11 @@ use Strassen::Util qw();
 plan tests => 18;
 
 my $do_bench;
-GetOptions("bench!" => \$do_bench)
+my $do_xxx;
+GetOptions(
+	   "bench!" => \$do_bench,
+	   "xxx" => \$do_xxx,
+	  )
     or die "usage: $0 [-bench]";
 
 # note: additional tests in ext/VectorUtil-Inline/t
@@ -36,6 +40,8 @@ use_ok('VectorUtil', 'intersect_rectangles', 'normalize_rectangle',
        'distance_point_line', 'project_point_on_line',
        'offset_line',
       );
+
+goto XXX if $do_xxx;
 
 {
     my @r = (0,0,1,1);
@@ -146,25 +152,26 @@ use_ok('VectorUtil', 'intersect_rectangles', 'normalize_rectangle',
     test_offset_line(\@coordlist, 3, \@expected_coordlist_hin, \@expected_coordlist_rueck, 'offset_line, with 90° polyline');
 }
 
-{
+XXX: {
     my @coordlist                = (0,0, 100,0, 0,0);
     my @expected_coordlist_hin   = (0,3, 97,3, 0,3);
-    my @expected_coordlist_rueck = (0,-3, 103,-3, 0,-3);
     local $TODO = "Needs work!";
-    test_offset_line(\@coordlist, 3, \@expected_coordlist_hin, \@expected_coordlist_rueck, 'offset_line, with 180° polyline');
+    test_offset_line(\@coordlist, 3, \@expected_coordlist_hin, undef, 'offset_line, with 180° polyline');
 }
 
 # One test.
 sub test_offset_line {
     my($coordlist, $delta, $expected_coordlist_hin, $expected_coordlist_rueck, $testname) = @_;
-    my($cl_hin, $cl_rueck) = offset_line($coordlist, $delta, 1, 1);
+    my($cl_hin, $cl_rueck) = offset_line($coordlist, $delta, 1, defined $expected_coordlist_rueck);
     my @errors;
     for my $i (0 .. $#$cl_hin) {
 	if (abs($cl_hin->[$i] - $expected_coordlist_hin->[$i]) > 0.01) {
 	    push @errors, "hin, index=$i: got=$cl_hin->[$i], expected=$expected_coordlist_hin->[$i]\n";
 	}
-	if (abs($cl_rueck->[$i] - $expected_coordlist_rueck->[$i]) > 0.01) {
-	    push @errors, "rueck, index=$i: got=$cl_rueck->[$i], expected=$expected_coordlist_rueck->[$i]\n";
+	if (defined $expected_coordlist_rueck) {
+	    if (abs($cl_rueck->[$i] - $expected_coordlist_rueck->[$i]) > 0.01) {
+		push @errors, "rueck, index=$i: got=$cl_rueck->[$i], expected=$expected_coordlist_rueck->[$i]\n";
+	    }
 	}
     }
     is "@errors", "", $testname;
