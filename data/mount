@@ -344,7 +344,6 @@ Steigung 3.0% (Kranzallee)	St; -679,10934 -753,10918
 Steigung 3.0% (Kranzallee)	St; -617,10990 -679,10934
 Steigung 3.0% (Hermsdorfer Damm)	St; 2533,22253 2587,22332
 Steigung 3.0% (Fontanestr. (Grunewald))	St; 972,8626 930,8746
-Steigung 3.0% (Bänschstr.)	St; 14319,12629 14188,12664
 Steigung 3.0% (Buntzelstr.)	St; 22166,312 22145,208
 Steigung 3.0% (Blissestr.)	St; 4784,8508 4788,8347
 Steigung 2.9% (Willibald-Alexis-Str.)	St; 9596,9092 9669,9080
@@ -548,6 +547,7 @@ Steigung 2.3% (Skandinavische Str.)	St; 17082,11909 17166,11944
 Steigung 2.3% (Skandinavische Str.)	St; 17013,11849 17082,11909
 Steigung 2.3% (Skandinavische Str.)	St; 16958,11778 17013,11849
 Steigung 2.3% (Silbersteinstr.)	St; 12816,6870 12702,6846
+Steigung 2.3% (Siegfriedstr. (Lichtenberg))	St; 16764,11919 16794,12144
 Steigung 2.3% (Saldernstr.)	St; 2405,11587 2391,11478
 Steigung 2.3% (Prenzlauer Allee)	St; 11155,13482 11250,13655
 Steigung 2.3% (Plonzstr.)	St; 16227,12280 16252,12411
@@ -685,6 +685,8 @@ Steigung 2.1% ((Methfesselstr. - Kreuzbergstr., Viktoriapark))	St; 9020,9150 908
 Steigung 2.1% ((Methfesselstr. - Kreuzbergstr., Viktoriapark))	St; 9007,9264 8982,9198
 Steigung 2.1% ((Methfesselstr. - Kreuzbergstr., Viktoriapark))	St; 8990,9166 9020,9150
 Steigung 2.1% ((Methfesselstr. - Kreuzbergstr., Viktoriapark))	St; 8982,9198 8990,9166
+Steigung 2.1% ((Gudrunstr. - Lichtenberger Brücke))	St; 16884,11889 16851,11852
+Steigung 2.1% ((Gudrunstr. - Lichtenberger Brücke))	St; 16870,11920 16884,11889
 Steigung 2.0% (Wissmannstr. (Neukölln))	St; 11768,8739 11769,8515
 Steigung 2.0% (Verl. Pücklerstr. (Existieren Straßenschilder für die "Verlängerte Pücklerstr."?))	St; 546,6583 369,6594
 Steigung 2.0% (Verl. Pücklerstr. (Existieren Straßenschilder für die "Verlängerte Pücklerstr."?))	St; 369,6594 306,6582
@@ -825,8 +827,6 @@ Steigung 1.8% (Am Postfenn)	St; -1537,10627 -1490,10734
 Steigung 1.8% (Alter Bernauer Heerweg)	St; 7109,22919 7171,22942
 Steigung 1.8% (Ahornallee (Westend))	St; 1806,12289 1795,12247
 Steigung 1.8% ((Methfesselstr. - Denkmal im Viktoriapark))	St; 8962,9048 8943,9098
-Steigung 1.8% ((Gudrunstr. - Lichtenberger Brücke))	St; 16884,11889 16851,11852
-Steigung 1.8% ((Gudrunstr. - Lichtenberger Brücke))	St; 16870,11920 16884,11889
 Steigung 1.7% (Wrangelstr. (Steglitz))	St; 4640,5411 4527,5475
 Steigung 1.7% (Weinmeisterhornweg)	St; -4251,11112 -4306,11126
 Steigung 1.7% (Trakehner Allee)	St; -496,11714 -722,11598
@@ -870,6 +870,9 @@ Steigung 1.7% (Alemannenstr. (Nikolassee))	St; -3360,2917 -3452,2868
 Steigung 1.7% (Ackerstr. (Mitte, Gesundbrunnen))	St; 9048,14681 8953,14758
 Steigung 1.7% ((zur Depothalle))	St; 8376,8859 8409,8904
 Steigung 1.7% ((zur Andreas-Rabe-Siedlung))	St; 6908,23244 6967,23278
+Steigung 1.7% ((Frankfurter Allee, Nebenfahrbahn))	St; 16702,11920 16764,11919
+Steigung 1.7% ((Frankfurter Allee, Nebenfahrbahn))	St; 16535,11920 16702,11920
+Steigung 1.7% ((Frankfurter Allee, Nebenfahrbahn))	St; 16512,11894 16535,11920
 Steigung 1.6% (Werbellinstr. (Neukölln))	St; 12308,8088 12162,8055
 Steigung 1.6% (Thomasstr.)	St; 12561,7472 12367,7429
 Steigung 1.6% (Thaerstr.)	St; 13761,12690 13844,12900
@@ -881,6 +884,7 @@ Steigung 1.6% (Schonacher Str.)	St; 4919,22658 5006,22507
 Steigung 1.6% (Scharnweberstr. (Alt-Hohenschönhausen))	St; 15996,15620 16036,15722
 Steigung 1.6% (Reichsstr.)	St; 224,12623 269,12576
 Steigung 1.6% (Reichsstr.)	St; 131,12672 224,12623
+Steigung 1.6% (Proskauer Str.)	St; 14319,12629 14325,12648
 Steigung 1.6% (Pardemannstr.)	St; -7449,348 -7461,381
 Steigung 1.6% (Olympischer Platz)	St; -272,12039 -514,11991
 Steigung 1.6% (Mühlenfeldstr.)	St; 2757,22310 2587,22332
@@ -1008,7 +1012,6 @@ Steigung 1.4% (Schönagelstr.)	St; 21617,16061 21602,15908
 Steigung 1.4% (Schönagelstr.)	St; 21602,15908 21220,15741
 Steigung 1.4% (Schäferstr. (Wannsee))	St; -7474,341 -7587,312
 Steigung 1.4% (Schäferstr. (Wannsee))	St; -7449,348 -7474,341
-Steigung 1.4% (Rigaer Str.)	St; 14266,12446 14133,12482
 Steigung 1.4% (Reuterstr. (Neukölln))	St; 12156,8760 12170,8548
 Steigung 1.4% (Potsdamer Chaussee (Zehlendorf, Nikolassee))	St; -2074,2258 -2280,2177
 Steigung 1.4% (Paulsborner Str.)	St; 3431,9763 3349,9702

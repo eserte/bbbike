@@ -206,7 +206,7 @@ Rita-Maiburg-Str.: wie wird die Qualität sein?	?::projected 20342,-777 20782,-11
 #: next_check: 2013-03-01
 Ludwig-Prandtl-Str.: Qualität der Verlängerung?	?::projected 20274,-845 20342,-777
 # 
-#: next_check: 2013-03-17 vvv
+#: next_check: 2013-07-01 vvv
 #: note: Straßen zum und am BER vvv
 Ring am Flughafen BER: Genaue Wegführung? Einbahnstraßenregelungen? Werden Radfahrer die Straßen nutzen dürfen? Fahrbahnbeschaffenheit ist wahrscheinlich Asphalt.	?::inwork 18386,-4109 18386,-4109 18296,-4078 17832,-4267 18001,-4685 18517,-4502 18485,-4406 18451,-4303 18386,-4109
 Waltersdorf - BER: Genaue Wegführung? Wahrscheinlich asphaltiert	? 19676,-4036 18517,-4502
@@ -215,7 +215,7 @@ BER - Zubringer B96a: Genaue Wegführung? Einbahnstraßenregelungen? Fahrbahnbesch
 #: next_check: ^^^
 # 
 #: last_checked: 2012-05-06 vvv
-#: next_check: 2012-07-01 vvv
+#: next_check: 2013-07-01 vvv
 Flughafen Berlin-Brandenburg - Business Park Berlin: wird asphaltiert sein, wie und wann geht es weiter Richtung Norden/Osten?	?::inwork 19131,-2145 19198,-2118 19327,-2122 19468,-1996 19780,-1880
 Ampel in Vorbereitung	?::inwork 19131,-2145
 #: next_check ^^^
@@ -460,7 +460,7 @@ An der Barthschen Promenade: vielleicht wird die Straße in Zukunft sich hier bef
 Am Sudhaus: wo genau wird die Straße verlaufen? Qualität?	? 12148,8174 12271,8197
 # 
 #: last_checked: 2012-09-13
-#: next_check: 2013-09-31 (public)
+#: next_check: 2013-09-30 (public)
 (Pankeweg) geplante Lückenschliessung an Ernst-Busch-Str. und Walter-Friedrich-Str.	?::projected 15820,25003 16042,25318
 # 
 #XXX del --- mehr Radweg kann wegen Platzmangels wahrscheinlich nicht mehr entstehen... --- #: by: http://www.berlin.de/ba-pankow/presse/archiv/20100430.1155.294011.html --- #: next_check: 2011-10-01 --- #: last_checked: 2011-08-28 --- Blankenburger Chaussee: Radwege werden angelegt	?::inwork 15154,22370 15271,22527 15357,22641 15428,22736
@@ -594,9 +594,11 @@ Geplante Brücke über die Spree bzw. Straßenverbindung zwischen Rummelsburger Lan
 # 
 #: by: http://www.nationaler-radverkehrsplan.de/neuigkeiten/news.php?id=1370
 #: note: Havelradweg
+#: next_check: 2007-12-31
 Werder - Phöben: Radweg in Planung, Realisierung bis 2007-12-31	? -22206,-1693 -22672,-1511 -23124,-1235 -23199,-903 -23175,-350 -23411,15 -23896,653 -24509,1607 -24680,1670 -24894,1733
 # 
 #: by: http://www.nationaler-radverkehrsplan.de/neuigkeiten/news.php?id=1957
+#: next_check: 2008-08-01
 Radweg von Penkow nach Malchow: beidseitig, asphaltiert, 2,25m breit, 2008-08-01 fertiggestellt	? -54521,116188 -55301,116578 -57151,117294 -57614,117523 -57683,117755 -58208,117685
 # 
 #: last_checked: 2011-06-26
@@ -689,7 +691,7 @@ Stuttgarter Platz: Widmung als Grünanlage	? 3571,10913 3546,10962 3827,10980 382
 # 
 #: last_checked: 2011-10-22
 #: next_check: 2012-09-01
-entlang der U-Bahn nach Hönow: zur Zeit nur ein Pfad. Wird vielleicht ein ausgebautet Weg irgendwann entstehen?	? 25334,15051 25499,15010 25742,14907 25866,14898 25932,14955 25991,14926
+entlang der U-Bahn nach Hönow: zur Zeit nur ein Pfad. Wird vielleicht ein ausgebauter Weg irgendwann entstehen?	? 25334,15051 25499,15010 25742,14907 25866,14898 25932,14955 25991,14926
 # 
 Nossener Str.: Vorfahrt?	? 24321,14410 24272,14278 24221,14142 24187,14052
 Baltenring: Vorfahrt?	? 23550,13128 23465,13090
@@ -1704,6 +1706,7 @@ Löpten - Halbe (West): Qualität?	? 30295,-28418 29920,-28522 29923,-28702 30082,
 Hamburger Str.: Qualität (laut ADFC-Karte mäßig geeignet)?	? -8010,16486 -8080,16150 -8197,15622
 Barkhausenstr.: Qualität?	? -10530,16281 -10744,16241
 Barkhausenstr.: Qualität?	? -10853,16230 -10970,16232 -11136,16247 -11296,16308 -11549,16413 -11783,16506
+#: next_check: 2009-06-01
 K 6315; (B188-Nennhausen); zw. Nennhausen u. Kotzen: Qualität (bis Ende 2005 bei der LBVS als "schlechte Straße" gekennzeichnet; evtl. ab Juni 2009 gut befahrbar)	? -50149,24689 -50048,24475 -49883,24097 -50010,23562 -50201,23411 -50255,22794 -50938,21256
 Bergholz - Grimme: Qualität?	? 60460,115792 59564,114268 58985,114226
 Grimme - Brüssow: Qualität?	? 58985,114226 58692,114171 58644,113939 58570,113866 58577,113531 58619,113397 58625,113293 58595,113171 58522,113056 58497,112964 58461,112854 58272,112531 58199,112288 57900,111758 57821,111672
@@ -1826,7 +1829,9 @@ Dieselstr. (Potsdam): Qualität des östlichen Teilabschnitts? Kann man als Radfah
 Weg zwischen Goerdelersteg und Beusselstr.: existiert auch ein Weg zwischen Westhafenkanal und Autobahn? Wenn ja, wie ist die Qualität?	? 3619,14183 5086,14536
 Uckermärkischer Radrundweg zwischen Parlow und Friedrichswalde: Qualität? Wegführung?	? 32943,67802 31564,68076 31431,69142 31050,69201 30805,69380 30652,69299 30194,69260 29990,69159
 Karlsberg - Lätzlow: existiert eine Verbindung? Qualität?	? 58814,91687 58801,91710 58782,91712 58717,91843 58572,92110 58472,92325 58458,92403 58372,92542 58288,92536 58080,92626 57691,92618 57555,92694 57449,92832 57428,92954 57332,93130 57245,93216 56841,93207 56264,93180 56036,93217 55651,93267 54983,93657 54828,93661 54701,93788 54535,93879 54129,94020 53783,94031 52726,94026 52611,94062 52500,93800 52350,93856
+#: next_check: 2008-11-08
 Kerkow - Görlsdorf: nach den Bauarbeiten (2008-11-08) besserer Asphalt?	? 45864,72724 46253,72339 46555,72293 46770,72248 47266,71628 48092,70962 48147,70935 48237,70892 48672,70933
+#: last_checked: 2008-10-25
 Am Mönchberg: gesperrt (gesehen am 2008-10-25), scheint ein unbefestigter Weg zu sein	? 1887,31658 1837,31725
 Gartenallee: Qualität (wahrscheinlich Kopfsteinpflaster)?	? 1887,31658 2027,31518
 Erich-Mühsam-Str.: Qualität?	? 1762,31318 1787,31375 1851,31451 1878,31471 1916,31483 2027,31518 2082,31535

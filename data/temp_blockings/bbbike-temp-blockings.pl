@@ -20572,7 +20572,7 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Senefelderst.: Fahrbahn vor der Raumerstr. gesperrt, Ausweichen auf Gehweg erforderlich',
+       text  => 'Senefelderstr.: Fahrbahn vor der Raumerstr. gesperrt, Ausweichen auf Gehweg erforderlich',
        type  => 'handicap',
        data  => <<EOF,
 #: last_checked: 2012-08-24

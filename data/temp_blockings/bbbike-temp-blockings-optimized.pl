@@ -1416,7 +1416,7 @@ userdel	2::night 14838,11410 14776,11400
        },
        {
          'until' => undef,
-         'text' => 'Senefelderst.: Fahrbahn vor der Raumerstr. gesperrt, Ausweichen auf Gehweg erforderlich',
+         'text' => 'Senefelderstr.: Fahrbahn vor der Raumerstr. gesperrt, Ausweichen auf Gehweg erforderlich',
          'from' => undef,
          'id' => 2375,
          'data' => '#: last_checked: 2012-08-24
