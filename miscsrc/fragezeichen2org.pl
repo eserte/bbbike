@@ -22,10 +22,43 @@ use lib (
 	);
 
 use Cwd qw(realpath);
+use Getopt::Long;
 use POSIX qw(strftime);
 use Time::Local qw(timelocal);
 
+use BBBikeUtil qw(int_round);
+use Strassen::Util ();
 use StrassenNextCheck;
+
+my $with_dist = 1;
+my $centerc;
+GetOptions(
+	   "with-dist!" => \$with_dist,
+	   "centerc=s" => \$centerc,
+	  )
+    or die "usage: $0 [--nowith-dist] [--centerc X,Y] bbdfile ...";
+
+if ($with_dist && !$centerc) {
+    my $config_file = "$ENV{HOME}/.bbbike/config";
+    if (!-e $config_file) {
+	warn "WARNING: disabling --with-dist option, $config_file does not exist.\n";
+	$with_dist = 0;
+    } else {
+	require Safe;
+	my $config = Safe->new->rdo($config_file);
+	if (!$config) {
+	    warn "WARNING: disabling --with-dist option, cannot load $config_file.\n";
+	    $with_dist = 0;
+	} else {
+	    if (!$config->{centerc}) {
+		warn "WARNING: disabling --with-dist option, no centerc option in $config_file set.\n";
+		$with_dist = 0;
+	    } else {
+		$centerc = $config->{centerc};
+	    }
+	}
+    }
+}
 
 my @files = @ARGV
     or die "Please specify bbd file(s)";
@@ -46,8 +79,12 @@ for my $file (@files) {
 		     my $wd = [qw(Su Mo Tu We Th Fr Sa)]->[(localtime($epoch))[6]];
 		     my $date = "$y-$m-$d";
 		     my $subject = $r->[Strassen::NAME] || "(" . $file . "::$.)";
+		     my $dist;
+		     if ($centerc) {
+			 $dist = int_round(Strassen::Util::strecke_s($r->[Strassen::COORDS][0], $centerc)/1000);
+		     }
 		     my $body = <<EOF;
-** TODO $subject <$date $wd>
+** TODO $subject <$date $wd> :${dist}km:
    : $r->[Strassen::NAME]\t$r->[Strassen::CAT] @{$r->[Strassen::COORDS]}
    [[${abs_file}::$.]]
 EOF
