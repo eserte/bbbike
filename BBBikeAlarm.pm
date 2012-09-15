@@ -1,10 +1,9 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAlarm.pm,v 1.43 2009/02/14 11:34:40 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2000, 2006, 2008, 2009 Slaven Rezic. All rights reserved.
+# Copyright (C) 2000, 2006, 2008, 2009, 2012 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -16,7 +15,7 @@ package BBBikeAlarm;
 
 use FindBin;
 use vars qw($VERSION
-	    $can_leave $can_at $can_tk $can_palm $can_s25_ipaq $can_ical
+	    $can_leave $can_at $can_tk $can_palm $can_ical
 	    $can_bluetooth
 	    $alarms_file
 	    @baddr
@@ -200,7 +199,7 @@ sub enter_alarm {
 
 	capabilities();
 
-	my($use_tk, $use_leave, $use_palm, $use_s25_ipaq, $use_at, $use_ical,
+	my($use_tk, $use_leave, $use_palm, $use_at, $use_ical,
 	   $use_bluetooth);
 	if ($can_tk) {
 	    $use_tk = 1;
@@ -210,8 +209,6 @@ sub enter_alarm {
 	    $use_at = 1;
 	} elsif ($can_palm) {
 	    $use_palm = 1;
-	} elsif ($can_s25_ipaq) {
-	    $use_s25_ipaq = 1;
 	} elsif ($can_ical) {
 	    $use_ical = 1;
 	} elsif ($can_bluetooth) {
@@ -256,16 +253,6 @@ sub enter_alarm {
 							   -sticky => "w");
 	} else {
 	    $use_palm = 0;
-	}
-
-	if ($can_s25_ipaq) {
-	    $t->Checkbutton(-text => "S25 via iPAQ",
-			    -variable => \$use_s25_ipaq)->grid(-row => $row++,
-							       -column => 0,
-							       -columnspan => 2,
-							       -sticky => "w");
-	} else {
-	    $use_s25_ipaq = 0;
 	}
 
 	if ($can_bluetooth) {
@@ -325,8 +312,6 @@ sub enter_alarm {
 		       palm_leave($ankunft_epoch, $pre_alarm_seconds,
 				  -text => $text)
 			   if $use_palm;
-		       s25_ipaq_leave($abfahrt_epoch, $ankunft_epoch, $pre_alarm_seconds)
-			   if $use_s25_ipaq;
 		       bluetooth_leave($top, $abfahrt_epoch, $ankunft_epoch, $vorbereitung_s)
 			   if $use_bluetooth;
 		       add_ical_entry($abfahrt_epoch, $text, -prealarm => $vorbereitung_s)
@@ -526,35 +511,6 @@ sub palm_leave {
 	warn "Sorry, no patched install-datebook on your system...";
     }
     unlink $leave_file;
-}
-
-sub s25_ipaq_leave {
-    # A lot of prerequisites are needed:
-    # - a working ppp connection to the ipaq
-    # - ipaq named "ipaq" in /etc/hosts
-    # - ssh connection to the ipaq possible
-    # - scmxx installed on the ipaq
-    return unless $main::devel_host;
-    my($abfahrt_epoch, $ankunft_epoch, $pre_alarm_seconds, %args) = @_;
-
-    my $vcal_entry = create_vcalendar_entry($abfahrt_epoch, $ankunft_epoch, $pre_alarm_seconds);
-
-    # create ical file on the ipaq
-    my $ical_file = "/tmp/s25_cal.ical";
-    open(CAT, '| ssh -l root ipaq "cat > ' . $ical_file . '"');
-    print CAT $vcal_entry;
-    close CAT;
-
-    # now send the ical file to the s25
-    my $enable_irda = 'ifconfig irda0 up ; echo 1 > /proc/sys/net/irda/discovery';
-    my $disable_irda = 'ifconfig irda0 down ; echo 0 > /proc/sys/net/irda/discovery';
-    my $ssh_cmd = $enable_irda.'; scmxx -f ' . $ical_file . ' -s -C; '.$disable_irda;
-    warn "Send cmd $ssh_cmd to ipaq...\n";
-    if (fork == 0) { # fork because this can block...
-	system('ssh -n -l root ipaq "'.$ssh_cmd.'"');
-	warn "OK, sent!\n";
-	CORE::exit();
-    }
 }
 
 sub bluetooth_leave {
@@ -1303,9 +1259,6 @@ sub capabilities {
     if (is_in_path("install-datebook") &&
 	defined $ENV{PILOTPORT}) {
 	$can_palm = 1;
-    }
-    if ($main::devel_host) {
-	$can_s25_ipaq = 1;
     }
     if (is_in_path("ical")) {
 	$can_ical = 1;
