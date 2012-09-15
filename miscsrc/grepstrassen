@@ -358,6 +358,9 @@ sub end_nextcheck {
 # Filter everything out what is not yet expired by
 # next_check/last_checked. This is used for the standard
 # fragezeichen-orig -> fragezeichen conversion
+#
+# Bug: this filter does not honor -v. This may change, so probably best
+# to not use this currently with -v.
 
 sub init_filternextcheck {
     my $type = shift;
@@ -388,6 +391,8 @@ sub special_filternextcheck {
 sub end_filternextcheck { }
 
 ######################################################################
+# Bug: this filter does not honor -v. This may change, so probably best
+# to not use this currently with -v.
 
 sub init_nonextcheck {
     my $type = shift;
