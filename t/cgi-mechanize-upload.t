@@ -182,9 +182,10 @@ EOF
 		    or do {
 			if ($^O eq 'freebsd') {
 			    diag <<EOF;
-Test is known to fail on freebsd 9.0 if perl is compiled without -pthread
-(which is the default). See http://www.freebsd.org/cgi/query-pr.cgi?pr=171353
-Consider to upgrade the port.
+Test is known to fail on freebsd 9.0 if XML::LibXML is compiled
+without -pthread. See http://www.freebsd.org/cgi/query-pr.cgi?pr=171353
+Consider to recompile libxml2 (with the proposed patch) and then recompile
+p5-XML-LibXML.
 EOF
 			}
 		    };
