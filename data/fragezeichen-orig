@@ -15,7 +15,7 @@
 #: by: MoPo 2009-08-01, soll 2009 realisiert werden vvv
 #: last_checked: 2012-08-05
 #: next_check: 2013-01-01
-#: XXX wird hier jemals eine Radspur entstehen? Insbesondere an der Zufahrt zum Parkhaus des "Schlosses" scheint kein Platz dafür zu existieren...
+#: XXX wird hier jemals eine Radspur entstehen? Insbesondere an der Zufahrt zum Parkhaus des "Schlosses" scheint kein Platz dafür zu existieren... (keep always "private")
 Grunewaldstr. (Steglitz)	?::projected 4861,5581 4671,5697 4520,5793
 #: by: ^^^
 # 
@@ -32,20 +32,6 @@ Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12128
 #: next_check: 2012-09-30
 Kniprodestr./Am Friedrichshain	?::inwork 12901,14093 12784,13961 12695,13864 12640,13814 12571,13798 12403,13755 12204,13719 12161,13711 12038,13685 11868,13646 11785,13625 11762,13619 11706,13635
 # 
-#: by: http://www.berlin.de/ba-spandau/presse/archiv/20100803.1545.305011.html
-#: last_checked: 2010-03-18
-#: next_check: 2010-12-01
-Neuendorfer Str.	?::projected -2883,15571 -2856,15687 -2869,15782
-# 
-#: by: http://www.berlin.de/ba-spandau/presse/archiv/20100803.1545.305011.html
-#: last_checked: 2010-06-26
-#: next_check: 2010-08-24 (public)
-Neuendorfer Str.: Radspuren werden ab 9. August 2010 markiert	?::inwork -2869,15782 -2886,15867 -2915,15994 -3040,16246
-# 
-#: last_checked: 2011-09-14
-#: next_check: 2011-12-15
-Joachim-Friedrich-Str.	?::projected 3067,9592 3069,9622 3083,9796 3092,9886 3108,10069 3111,10116 3132,10499
-# 
 #: last_checked: 2012-09-10
 #: next_check: 2012-10-15
 #: XXX erste Anfänge existieren südlich der Friesenstr. (seen: 2012-09-10)
@@ -57,17 +43,6 @@ Germanenstr. (oder nur das kleine Stück bis Waldsteg?)	?::projected 8406,19081 8
 #: last_checked: 2012-08-10
 #: next_check: 2012-10-01
 Annenstr./Heinrich-Heine-Platz	?::projected 11349,11227 11249,11268 11091,11379 11052,11414 11039,11425 10915,11535 10819,11664
-# 
-#: by: Tagesspiegel vom 2009-04-12, soll 2009 realisiert werden
-#: corrected_by: MoPo 2009-08-01, soll 2010 realisiert werden
-#: last_checked: 2010-03-18
-#: by: http://www.berlin.de/ba-spandau/presse/archiv/20100803.1545.305011.html
-#: next_check: 2010-12-01
-Streitstr. (werden die vorhandenen Bordsteinradwege ersetzt)?	?::projected -3040,16246 -3050,16429 -3046,16548 -3043,16601 -3031,16807 -3023,16925 -3018,16974 -3017,16984 -3009,17090
-# 
-#: last_checked: 2012-06-09 (an der Bergstr.)
-#: next_check: 2013-01-01
-Fahrradstraße in der Lauenburger Str.	?::projected 5870,4992 5905,5088 5927,5182 5962,5296 5993,5422 6007,5785 6007,5882 6001,5974 6008,6067 6019,6087 6014,6160 5984,6233 5918,6301 5860,6367 5803,6403
 # 
 #: section ^^^
 #: section ^^^
@@ -459,10 +434,6 @@ An der Barthschen Promenade: vielleicht wird die Straße in Zukunft sich hier bef
 #: XXX Bauarbeiten in Gange
 Am Sudhaus: wo genau wird die Straße verlaufen? Qualität?	? 12148,8174 12271,8197
 # 
-#: last_checked: 2012-09-13
-#: next_check: 2013-09-30 (public)
-(Pankeweg) geplante Lückenschliessung an Ernst-Busch-Str. und Walter-Friedrich-Str.	?::projected 15820,25003 16042,25318
-# 
 #XXX del --- mehr Radweg kann wegen Platzmangels wahrscheinlich nicht mehr entstehen... --- #: by: http://www.berlin.de/ba-pankow/presse/archiv/20100430.1155.294011.html --- #: next_check: 2011-10-01 --- #: last_checked: 2011-08-28 --- Blankenburger Chaussee: Radwege werden angelegt	?::inwork 15154,22370 15271,22527 15357,22641 15428,22736
 # 
 #: last_checked: 2010-03-18 vvv
@@ -618,6 +589,11 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 # die Datenbank aufgenommen werden sollen und somit nicht öffentlich sind.
 # Das heißt diese Strecken werden nicht bei einer erweiterten Suche aufgenommen
 # und dem CGI-Benutzer auch nicht präsentiert.
+#
+# Kandidaten hierfür sind:
+# - Fragen nach Zebrastreifen
+# - Fragen nach genauen Routenverläufen
+# - XXX_prog- und XXX_indoor-Einträge
 # 
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/bvv-online/vo020.asp?VOLFDNR=4353&options=4
 #: XXX evtl. werden, wenn der Antrag angenommen wird, fehlende Abschnitte ergänzt
@@ -2988,3 +2964,28 @@ Reinickendorfer Radroute 1: genauer Verlauf im Märkischen Viertel? Qualität? Nac
 Sommerstr.: ist die Sommerstr. eine Vorfahrtstraße?	? 8425,18542 8447,18446 8465,18365 8482,18284
 Klemkepark - Büchsenweg: Qualität? Nachts beleuchtet? Wird hier die Reinickendorfer Route 5 entlanggeführt?	? 7588,18761 7693,18781
 (Am Grüngürtel - Weg zwischen Triftstr. und Eichborndamm): Qualität? Nachts beleuchtet?	? 4597,20508 4626,20577
+# 
+#: last_checked: 2012-09-13
+#: next_check: 2013-09-30
+Pankeweg: Ist die geplante Lückenschliessung zwischen Ernst-Busch-Str. und Walter-Friedrich-Str. erfolgt? Wenn ja, wie ist die Qualität und ist der Weg beleuchtet?	?::projected 15820,25003 16042,25318
+# 
+#: by: http://www.berlin.de/ba-spandau/presse/archiv/20100803.1545.305011.html
+#: last_checked: 2010-03-18 (Teile auch 2010-06-26)
+#: next_check: 2010-12-01
+Neuendorfer Str.: existieren Radspuren in der Neuendorfer Str., und wenn ja, von wo bis wo?	?::inwork -2883,15571 -2856,15687 -2869,15782 -2886,15867 -2915,15994 -3040,16246
+# 
+#: by: MoPo 2009-08-01, soll 2010 realisiert werden
+#: last_checked: 2011-09-14
+#: next_check: 2011-12-15
+Joachim-Friedrich-Str.: existieren Radspuren in der Joachim-Friedrich-Str.?	?::projected 3067,9592 3069,9622 3083,9796 3092,9886 3108,10069 3111,10116 3132,10499
+# 
+#: by: Tagesspiegel vom 2009-04-12, soll 2009 realisiert werden
+#: corrected_by: MoPo 2009-08-01, soll 2010 realisiert werden
+#: last_checked: 2010-03-18
+#: by: http://www.berlin.de/ba-spandau/presse/archiv/20100803.1545.305011.html
+#: next_check: 2010-12-01
+Streitstr.: wurden die vorhandenen Bordsteinradwege durch Radspuren ersetzt, und wenn ja, von wo bis wo?	?::projected -3040,16246 -3050,16429 -3046,16548 -3043,16601 -3031,16807 -3023,16925 -3018,16974 -3017,16984 -3009,17090
+# 
+#: last_checked: 2012-06-09 (an der Bergstr.)
+#: next_check: 2013-01-01
+Lauenburger Str.: wurde die gesamte Lauenburger Str. (oder Teile davon) als Fahrradstraße ausgewiesen?	?::projected 5870,4992 5905,5088 5927,5182 5962,5296 5993,5422 6007,5785 6007,5882 6001,5974 6008,6067 6019,6087 6014,6160 5984,6233 5918,6301 5860,6367 5803,6403
