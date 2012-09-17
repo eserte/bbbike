@@ -616,6 +616,9 @@ sub showmap_url_mapcompare {
     my $py = $args{py};
 
     my $scale = 17 - log(($args{mapscale_scale})/3000)/log(2);
+    if ($use_bbbike_org) {
+	$scale = 18 if $scale > 18;
+    }
     my $map0 = $use_bbbike_org ? 'google-hybrid' : 'googlehybrid';
     #my $map1 = 'tah';
     my $map1 = 'mapnik';
