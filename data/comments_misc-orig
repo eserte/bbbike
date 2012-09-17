@@ -310,7 +310,7 @@ Weiterfahrt durch die Kleingartenanlage möglich, allerdings nur tagsüber während
 	culdesac 20738,11915
 	culdesac 20779,11801
 	culdesac 20836,11768
-	culdesac 20839,12209
+	culdesac_pseudo 20835,12200
 	culdesac 20930,13273
 	culdesac 20847,13280
 	culdesac 21362,14028
@@ -634,8 +634,8 @@ Zugang zum Bad	culdesac_pseudo 7306,13418
 	culdesac 26217,12885
 	culdesac 26259,12949
 	culdesac 26290,13006
-	culdesac_pseudo 25730,13130
-	culdesac_pseudo 25817,13235
+	culdesac 25730,13130
+	culdesac_pseudo 25814,13240
 	culdesac 24640,13149
 	culdesac 22462,11679
 	culdesac 21283,12066
@@ -994,6 +994,9 @@ Zugang zum Bad	culdesac_pseudo 7306,13418
 	culdesac 8511,25177
 	culdesac 11878,25627
 	culdesac 15347,22275
+	culdesac_pseudo 25789,13263
+	culdesac_pseudo 25766,13289
+	culdesac_pseudo 24861,12226
 #: section ^^^
 ######################################################################
 # busroute
@@ -1582,3 +1585,6 @@ Bergweg: Privatstraße	CS 9796,26244 9898,26310
 Höhenweg: Privatstraße	CS 9940,26273 9812,26186
 Ausgeschildert als Schönerlinder Str.	CP2; 11929,23946 11514,24284
 Mühlenweg (Karow): Privatstraße	CS 15347,22275 15411,22369 15445,22352
+vorbei am Spree-Center	CS 22801,13096 22842,13089 22883,13013
+(Verlängerung der Kraetkestr.): Privatstraße	CS 23937,12746 24026,12729
+Amelieweg: Privatstraße	CS 22861,12390 22805,12456 22759,12420 22814,12353

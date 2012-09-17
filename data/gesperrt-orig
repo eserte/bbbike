@@ -740,6 +740,11 @@ Hohenstaufenstr. (Richtungsfahrbahn)	1::igndisp 6108,9772 6209,9773 6241,9772
 Hohenstaufenstr. (Richtungsfahrbahn)	1::igndisp 6241,9772 6209,9772 6108,9772
 Hohenstaufenstr. (Mittelstreifen mit Gitter)	3nocross::ignrte 6108,9772 6209,9773 6241,9772
 #: note ^^^
+#: note: Mittelstreifen vvv
+Prellerweg (Richtungsfahrbahn)	1::igndisp 6765,5863 6895,5873 7078,5887
+Prellerweg (Richtungsfahrbahn)	1::igndisp 7078,5887 6895,5870 6765,5863
+Prellerweg (Mittelstreifen)	3nocross::ignrte 6765,5863 6895,5873 7078,5887
+#: note ^^^
 # 
 Nonnendammallee (Richtungsfahrbahn)	1::igndisp -283,14523 -457,14536 -914,14602
 Nonnendammallee (Richtungsfahrbahn)	1::igndisp -925,14631 -283,14523
@@ -1195,7 +1200,7 @@ Berliner Allee: Straßenbahntrasse	3nocross 14619,16682 14608,16772 14559,16912
 #: confirmed_by: srt
 Berliner Allee: Straßenbahntrasse	3nocross 13401,15821 13432,15843 13487,15888
 #: note: Luftbild
-Gülzower Str.: Mittelstreifen	3 22603,12359 22388,12190 22424,12183
+Gülzower Str.: Mittelstreifen	3 22603,12359 22388,12190 22400,12171
 Oranienburger Str. (Wittenau): Mittelstreifen	3nocross 5343,21250 5349,21198 5356,21146 5382,21001
 Oranienburger Str.: Straßenbahnhaltestelle	3nocross 9225,13389 9281,13374 9415,13315
 Brauhausstr. -> Prenzlauer Promenade: Straßenbahntrasse	3 12211,16688 12017,16734 12045,16574
@@ -1374,7 +1379,7 @@ Müllerstr.: Zaun auf dem Mittelstreifen	3nocross 6781,16026 6914,15908 6936,1588
 Indira-Gandhi-Str.: Straßenbahntrasse	3nocross 14597,15970 14609,15921 14650,15750
 Indira-Gandhi-Str.: Straßenbahntrasse	3nocross 14550,16161 14522,16260 14499,16341
 #XXX del --- das Überqueren ist möglich! --- Weißenseer Weg: Straßenbahntrasse	3nocross 15058,14575 15110,14486 15164,14392
-Lichtenberger Brücke: unbequemes Passieren des Mittelstreifens (Bordsteine, starker Verkehr)	3nocross 16737,11866 16851,11852 16962,11833 17037,11820 17151,11801
+Lichtenberger Brücke: unbequemes Passieren des Mittelstreifens (Bordsteine, starker Verkehr)	3nocross 16737,11866 16851,11852 16962,11833 17037,11820 17121,11806 17151,11801
 #: by: Kerstin Pantos:
 Kolonnenstr.: Mittelinsel mit Geländer	3nocross 7709,8777 7642,8815 7563,8871
 Mollstr.: Straßenbahntrasse	3nocross 11446,13294 11524,13247 11557,13228 11681,13161
@@ -1427,7 +1432,6 @@ Heylstr.: breiter Mittelstreifen, enge Querungsmöglichkeit nur für Fußgänger, Bo
 Große-Leege-Str.: Mittelstreifen mit Bordsteinen und parkenden Autos	3nocross 15899,14598 15972,14681 16035,14748
 Köpenicker Landstraße: Mittelstreifen mit Bordsteienen	3nocross 16353,7226 16195,7398 15920,7697
 Max-Born-Str.: Straßenbahntrasse	3nocross 19053,2890 19021,2946 18951,3069
-Prellerweg: Mittelstreifen	3nocross 6765,5863 6895,5873 7078,5887
 Ostseestr.: Mittelstreifen	3nocross 12090,16199 12232,16110 12347,16039
 Schildhornstreifen: Mittelstreifen vor dem Autobahnanschluss	3nocross 4292,6558 4338,6528 4423,6477
 Adlergestell: Mittelstreifen	3nocross 19735,3643 19812,3561 19857,3514 19904,3464
