@@ -744,7 +744,7 @@ EOF
        text  => 'Die Naumannstraße ist zwischen Torgauer Straße und Tempelhofer Weg von 27.08.04, 07.00 Uhr bis 28.08.04, 20.00 Uhr gesperrt. Grund Bauarbeiten.',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 7725,8033 7713,8001 7717,7879 7717,7759
+userdel	2 7733,8023 7713,8001 7717,7879 7717,7830 7696,7771
 EOF
      },
      { from  => 1093730400, # 2004-08-29 00:00
@@ -1085,7 +1085,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_002432',
        data  => <<EOF,
-userdel	q4 7717,7759 7717,7879 7713,8001 7725,8033
+userdel	q4 7696,7771 7717,7830 7717,7879 7713,8001 7733,8023
 EOF
      },
      { from  => 1097964000, # 2004-10-17 00:00
@@ -16372,7 +16372,7 @@ EOF
        type  => 'handicap',
        source_id => 'LMS_157063303',
        data  => <<EOF,
-userdel	q4::inwork 7709,8777 7713,8600 7716,8370 7716,8356 7715,8308 7710,8051 7725,8033 7713,8001 7717,7879 7717,7759
+userdel	q4::inwork 7709,8777 7713,8600 7716,8370 7716,8356 7715,8308 7710,8051 7733,8023 7713,8001 7717,7879 7717,7830 7696,7771
 EOF
      },
      { from  => 1255816800, # 2009-10-18 00:00
@@ -16623,7 +16623,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_014786',
        data  => <<EOF,
-userdel	q4::inwork; 7716,8356 7715,8308 7710,8051 7725,8033 7713,8001 7717,7879
+userdel	q4::inwork; 7716,8356 7715,8308 7710,8051 7733,8023 7713,8001 7717,7879
 EOF
      },
      { from  => 1259938062, # 
@@ -18259,7 +18259,7 @@ EOF
        text  => 'Die Wilhelm-Kabus-Str. ist noch nicht komplett fertig gestellt. Unter Umständen ist die Durchfahrt nicht möglich!',
        type  => 'handicap',
        data  => <<EOF,
-	2::inwork 7725,8033 7793,8043 7834,8085 7859,8252 7893,8327 7942,8380 8078,8772
+	2::inwork 7733,8023 7793,8043 7834,8085 7859,8252 7893,8327 7942,8380 8078,8772
 EOF
      },
      { from  => 1309471200, # 1284091200, # 2010-09-10 06:00 # zweiter Termin im Jahr! # PERIODISCH!
@@ -18645,7 +18645,7 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20101126.1415.320541.html',
        data  => <<EOF,
-userdel	q4::inwork; 7491,7675 7316,7814
+userdel	q4::inwork; 7480,7683 7316,7814
 EOF
      },
      { from  => 1292184575, # 2010-12-12 21:09

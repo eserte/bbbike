@@ -66,7 +66,7 @@ Jüterboger Str.: mäßiges Kopfsteinpflaster	Q2 10266,8946 9958,8966 9799,8962
 Methfesselstr.: sehr gutes Kopfsteinpflaster, 40 km/h	Q0 9211,9354 9170,9206 9150,9152 9125,9078 9115,9046
 Methfesselstr.: mäßiges Kopfsteinpflaster	Q2 9115,9046 9111,9036 9063,8935 8982,8781
 Wilhelmshöhe: Verbundsteinpflaster	Q1 9225,9111 9186,9107 9155,9029 9149,8961
-Priesterweg: mäßiges bis schlechtes Kopfsteinpflaster	Q2- 7231,7349 7230,7264 7222,6458 7217,6065 7216,5888
+Priesterweg: mäßiges bis schlechtes Kopfsteinpflaster	Q2- 7227,7352 7230,7264 7222,6458 7217,6065 7216,5888
 Priesterweg: Asphalt	Q0 7216,5888 7175,5843
 Hans-Baluschek-Park, Zugang: Verbundsteinpflaster	Q0- 7370,6451 7222,6458
 Großgörschenstr.: mäßiges Kopfsteinpflaster	Q2 8186,9380 8086,9418 8035,9437 7960,9466
@@ -1083,7 +1083,7 @@ Lübarser Weg: Asphalt	Q0 8427,24391 8473,24515 8534,24625 8565,24679 8604,24747 
 #: note: laut ADFC-Karte "mäßig geeignet"
 Dolomitenstr.: Kopfsteinpflaster	Q2 10572,17573 10466,17464 10298,17299
 (Orankestr. - Orankesee): Parkweg	Q1 15598,15793 15604,15824 15581,15846
-Peter-Vischer-Str.: Asphalt	Q0 6185,6469 6324,6480 6473,6493 6538,6499 6706,6513 6820,6522
+Peter-Vischer-Str.: Asphalt	Q0 6185,6469 6324,6480 6473,6493 6538,6499 6694,6512 6820,6522
 Riemenschneiderweg: mäßiger Asphalt	Q1 6820,6522 6801,6736 6793,6814 6770,7027 6762,7109
 Wuhlewanderweg (Ahrensfelder Berg): glatter Parkweg	Q1+ 22631,16215 22657,16287 22662,16306 22690,16383 22699,16501 22735,16630 22722,16906
 Wuhlewanderweg (Ahrensfelder Berg): glatter Parkweg	Q1+ 22722,16906 22611,17126 22432,17245 22349,17302
@@ -2175,7 +2175,7 @@ Philosophenweg: Verbundsteinpflaster	Q1+ 16073,12883 16074,12778
 Kulmseestr.: Asphalt	Q0 20303,12230 20364,12216 20490,12209 20629,12177
 Rotraudstr.: Asphalt, leicht uneben	Q0- 21118,14477 21099,14300 21087,14183 21074,14058 21061,13940
 (Pfingstrosenweg - Wuhlewanderweg): glatte Pflasterung	Q0 22079,10852 22097,10812 22106,10789
-(Begasstr. - Riemenschneiderweg): teils Verbundsteinpflaster, teils Asphalt	Q1 6513,7005 6662,7018 6770,7027
+(Begasstr. - Riemenschneiderweg): teils Verbundsteinpflaster, teils Asphalt	Q1 6513,7005 6650,7017 6770,7027
 (Gaudystr. - Mauerpark): glattes Pflaster	Q0 10456,15561 10256,15482 10186,15463
 #: note: laut joern (js) "schlechtere Qualität", ist aber ganz normales Kopfsteinpflaster
 Gaudystr.: Kopfsteinpflaster	Q2 10941,15697 10733,15638 10456,15561
@@ -2461,10 +2461,10 @@ Wendlandzeile: mäßiger Beton	Q1 6500,7172 6517,7260 6608,7306
 (Nordmannzeile - Kleingartenkolonie): Verbundsteinpflaster	Q1 6807,7262 6809,7272 6841,7283
 (Nordmannzeile - Priesterweg): unebener Asphalt	Q1 6841,7283 6846,7306 7062,7376 7108,7416 7220,7442
 #: note: extrapoliert:
-(Nordmannzeile - Vorarlberger Damm): unebener Asphalt	Q1 7220,7442 7314,7451
+(Nordmannzeile - Vorarlberger Damm): unebener Asphalt	Q1 7220,7442 7307,7457
 (Wintgensstr. - General-Pape-Str.): Kopfsteinpflaster und Asphalt	Q1- 8140,7906 8207,7909
 Wüsthoffstr.: etwas Kopfsteinpflaster, Verbundsteinpflaster, Bodenschwellen	Q1 8265,8092 8461,8097
-Achenbachpromenade: wassergebundene Decke und Verbundsteinpflaster	Q1 8763,8780 8748,8587 8715,8459
+Achenbachpromenade: wassergebundene Decke und Verbundsteinpflaster	Q1 8763,8780 8748,8587 8722,8527 8715,8459
 (Salzmannstr. - Betriebsbhf. Rummelsburg): mäßiger Beton	Q1 16847,10092 16839,10064 16828,10027 16841,9995
 (Salzmannstr. - Betriebsbhf. Rummelsburg): Asphalt	Q0 16841,9995 16900,9861
 (Am Kraatzgraben): unebener Asphalt	Q1- 16839,10064 16666,10219 16544,10337 16488,10381
@@ -3166,8 +3166,8 @@ Dünther Str.: Asphalt	Q0 5268,5920 5234,6086
 Menckenstr.: Asphalt	Q0 5567,5864 5570,5913 5593,5965 5664,6082 5754,6238
 Kniephofstr.: Asphalt	Q0 5460,5966 5593,5965 5699,5949 5847,5961 6001,5974
 Friedrichsruher Platz: Gehwegplatten	Q1 5942,5775 5935,5874
-Overbeckstr.: Asphalt	Q0 6861,6082 6746,6073
-Brüggemannstr.: Asphalt	Q0 6840,6308 6725,6295
+Overbeckstr.: Asphalt	Q0 6861,6082 6736,6071
+Brüggemannstr.: Asphalt	Q0 6840,6308 6714,6293
 Riemenschneiderweg: Kopfsteinpflaster	Q2 6861,6082 6878,5946
 Riemenschneiderweg: wassergebundene Decke	Q1 6878,5946 6895,5873
 Harkortstr.: Kopfsteinpflaster	Q1 7621,5494 7669,5536
@@ -7965,6 +7965,7 @@ an der S-Bahn: Beton	Q0 24933,12215 24851,12204 24554,12100
 #: note: der westliche Abschnitt war noch nicht fertig gebaut (2012-09-16)
 Amelieweg: Verbundsteinpflaster	Q1+ 22861,12390 22805,12456 22759,12420 22814,12353
 Gülzower Str. [Nebenstraße]: Asphalt	Q0 22400,12171 22344,12130
+IKEA-Parkplatz: Verbundsteinpflaster	Q1+ 7991,6938 8071,7006 8077,7040
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -15984,7 +15985,7 @@ Bernulfstr.: Kopfsteinpflaster	Q3 19876,984 19988,928
 #: by: ^^^
 # 
 #: by: Daniela (aleinad...):
-Straße 17: mäßiger Sandweg	Q2 7305,7221 7311,7425
+Straße 17: mäßiger Sandweg	Q2 7305,7221 7307,7425
 # 
 #: by: Dominik (30bln): vvv
 #: corrected_by: srt (Kopfsteinpflaster, Q2- -> Asphalt/Beton)

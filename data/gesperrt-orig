@@ -200,8 +200,8 @@ Atzpodienstr.	1 16485,12384 16445,12193 16413,11906
 Alt-Lietzow	1 4219,12324 4101,12356 4066,12368 4079,12411 4137,12411 4250,12390
 Martin-Wagner-Ring	1 12796,3821 12895,3991 12941,4015 12995,4003 13007,3949 12913,3743
 Wilskistr.	1 -402,4012 -343,4056 -303,4086 -219,4149 -158,4236 27,4447 195,4588 301,4643 418,4696 528,4747 636,4765 798,4766
-Grazer Platz	1 6442,6788 6529,6798 6679,6816 6793,6814
-Grazer Platz	1 6801,6736 6686,6735 6546,6720 6517,6717 6451,6710
+Grazer Platz	1 6442,6788 6529,6798 6668,6815 6793,6814
+Grazer Platz	1 6801,6736 6676,6734 6546,6720 6517,6717 6451,6710
 Putlitzstr.	1 6267,14184 6264,13995 6226,13951
 Langhansstr. (auﬂer Tram)	1 12045,16574 12189,16578 12409,16475
 Triftstr. (Buchholz)	1 12018,23040 12178,23034
@@ -459,7 +459,7 @@ Sandgrasweg	1 2851,21089 2819,21128
 Sandgrasweg	1 2840,21141 2866,21103
 #: confirmed_by ^^^
 Max-Eyth-Str.	1 2506,6606 2566,6531 2611,6495
-(IKEA-Zufahrt)	1 8204,6958 8229,7154
+(IKEA-Zufahrt)	1 8204,6958 8213,7028 8229,7154
 #: by: anonymous:
 Neumarkplan	1 12483,3929 12569,3764 12572,3731 12560,3697 12530,3669 12485,3658 12445,3674 12420,3707 12415,3743 12421,3767 12483,3929
 #: confirmed_by: srt
@@ -741,9 +741,9 @@ Hohenstaufenstr. (Richtungsfahrbahn)	1::igndisp 6241,9772 6209,9772 6108,9772
 Hohenstaufenstr. (Mittelstreifen mit Gitter)	3nocross::ignrte 6108,9772 6209,9773 6241,9772
 #: note ^^^
 #: note: Mittelstreifen vvv
-Prellerweg (Richtungsfahrbahn)	1::igndisp 6765,5863 6895,5873 7078,5887
-Prellerweg (Richtungsfahrbahn)	1::igndisp 7078,5887 6895,5870 6765,5863
-Prellerweg (Mittelstreifen)	3nocross::ignrte 6765,5863 6895,5873 7078,5887
+Prellerweg (Richtungsfahrbahn)	1::igndisp 6757,5858 6895,5873 7078,5887
+Prellerweg (Richtungsfahrbahn)	1::igndisp 7078,5887 6895,5870 6757,5858
+Prellerweg (Mittelstreifen)	3nocross::ignrte 6757,5858 6895,5873 7078,5887
 #: note ^^^
 # 
 Nonnendammallee (Richtungsfahrbahn)	1::igndisp -283,14523 -457,14536 -914,14602
@@ -959,6 +959,7 @@ Am Vierrutenberg etc.	1 5712,23785 5676,23971 5780,23997 5792,23943 5787,23840 5
 (Parkplatz Residenzstr. - Kopenhagener Str.)	1::igndisp 7204,18634 7233,18562
 #: note: eigentlich keine Einbahnstraﬂe, aber in der Praxis wird man immer gegen der Uhrzeigersinn fahren
 Schmiedebankplatz	1 16165,23168 16114,23202 16122,23219 16141,23243 16243,23174 16229,23150 16218,23134 16165,23168
+IKEA-Parkplatz	1 7834,7131 7924,7185 8020,7185
 ######################################################################
 #
 # Potsdam

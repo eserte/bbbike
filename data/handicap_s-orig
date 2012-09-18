@@ -8,9 +8,12 @@
 #
 #: temporary vvv
 # 
-#: last_checked: 2012-09-15
-#: next_check: 2012-10-17
+#: last_checked: 2012-09-15 vvv
+#: next_check: 2012-10-17 vvv
 Modersohnstr.: Bauarbeiten, Einbahnstraﬂenregelung	q3::inwork; 14181,11434 14134,11272
+Dirschauer Str.: Einbahnstraﬂenregelung wegen Umleitungsstrecke	q4::inwork; 13970,11366 14031,11569
+#: next_check ^^^
+#: last_checked ^^^
 # 
 #: last_checked: 2012-08-25
 Mainzer Str.: Baustelle, Einbahnstraﬂenregelung	q3::inwork; 14357,12011 14427,12197
@@ -82,7 +85,7 @@ Helmerdingstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg kann benutzt werden	q3::i
 #: next_check: ^^^
 #: last_checked: ^^^
 # 
-#: last_checked: 2012-09-14
+#: last_checked: 2012-09-18
 #: next_check: 2012-10-15
 Marchlewskistr.: Bauarbeiten, Ausweichen auf Gehweg	q4::inwork 13496,11384 13473,11456
 # 
@@ -98,8 +101,8 @@ Rathausstr. und Rathausbr¸cke: Behinderungen wegen Bauarbeiten mˆglich	q2::inwor
 #: next_check: ^^^
 #: last_checked: ^^^
 # 
-#: last_checked: 2012-09-07 vvv
-#: next_check: 2012-09-20 vvv
+#: last_checked: 2012-09-18 vvv
+#: next_check: 2012-10-20 vvv
 Alte Jakobstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 10489,11405 10436,11344
 Alte Jakobstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 10436,11344 10244,11160
 #: next_check: ^^^
@@ -578,8 +581,8 @@ Dathepromenade: Fuﬂg‰nger	q1 18394,10348 18320,10318 18302,10289 18314,10260 181
 Rheingoldpark: Fuﬂg‰nger haben Vorrang	q1 19078,8817 19145,8659
 Schloﬂinsel Kˆpenick: Fuﬂg‰nger	q4 22093,4499 22076,4422
 Braunschweiger Ufer: Fuﬂg‰nger	q1 12718,5845 13077,5893 13483,5973
-Begasstr. - Riemenschneiderweg: teilweise mit Fuﬂg‰ngern zu rechnen	q1 6513,7005 6662,7018
-Begasstr. - Riemenschneiderweg: teilweise mit Fuﬂg‰ngern zu rechnen, kurze Rampe	q1 6662,7018 6770,7027
+Begasstr. - Riemenschneiderweg: teilweise mit Fuﬂg‰ngern zu rechnen	q1 6513,7005 6650,7017
+Begasstr. - Riemenschneiderweg: teilweise mit Fuﬂg‰ngern zu rechnen, kurze Rampe	q1 6650,7017 6770,7027
 Viktoriapark: Fuﬂg‰nger, kurze Rampe, Pf‰hle	q1 5013,6003 4981,5939 4957,5894
 #: note: bei Veranstaltungen (Max-Schmelling-Halle) mˆglicherweise gesperrt oder grˆﬂere Behinderungen:
 (Gaudystr. - Mauerpark): Fuﬂg‰nger, bei Veranstaltungen in der Max-Schmelling-Halle grˆﬂere Behinderungen mˆglich	q3 10456,15561 10256,15482 10186,15463
@@ -633,8 +636,8 @@ Mergenthalerring: Asphaltschwellen, kˆnnen umfahren werden	q1 14395,8071 14563,8
 Grazer Platz: Fuﬂg‰nger, Bordsteine	q2 6546,6720 6530,6786 6529,6798
 (Vorarlberger Damm - Kleingartenkolonie): Fuﬂg‰nger	q1 6817,7101 6852,7246 6841,7283
 (Nordmannzeile - Kleingartenkolonie): Fuﬂg‰nger	q1 6807,7262 6809,7272 6841,7283
-(Nordmannzeile - Vorarlberger Damm): Fuﬂg‰nger	q1 7220,7442 7314,7451
-Achenbachpromenade: Fuﬂg‰nger, Radfahren erlaubt	q1 8763,8780 8748,8587 8715,8459
+(Nordmannzeile - Vorarlberger Damm): Fuﬂg‰nger	q1 7220,7442 7307,7457
+Achenbachpromenade: Fuﬂg‰nger, Radfahren erlaubt	q1 8763,8780 8748,8587 8722,8527 8715,8459
 Wildensteiner Str.: enge Straﬂe	q1 18528,8331 18416,8163 18365,8094 18333,8059
 #XXX del --- #: XXX noch immer eine enge Stelle? --- (Am Carlsgarten - Waldowallee): enger Abschnitt under der Bahnbr¸cke	q2 19460,7954 19504,8003 19558,8064
 Linienstr./Oranienburger Str.: Fuﬂg‰nger	q2 9225,13389 9296,13397

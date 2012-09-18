@@ -4,6 +4,7 @@
 #: note: "Parkweg" sollte hier vielleicht nicht verwendet werden, sondern nur in qualitaet_s-orig? Oder wenigstens die gleichen Wege nicht in beiden Dateien so benannt werden? Oder wenigstens beim Ausgeben der Routenliste doppelte ausfiltern?
 #:
 Modersohnstr.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 14181,11434 14134,11272
+Dirschauer Str.: Einbahnstraßenregelung wegen Umleitungsstrecke	q4::inwork; 13970,11366 14031,11569
 Mainzer Str.: Baustelle, Einbahnstraßenregelung	q3::inwork; 14357,12011 14427,12197
 Friedrichstr.: Fahrbahn zwischen Unter den Linden und Mittelstraße gesperrt, Ausweichen auf Gehweg möglich	q4::inwork 9343,12464 9358,12351
 Friedrichstr.(Mitte): Fahrbahn wegen Bauarbeiten gesperrt, Ausweichen auf Gehweg schiebend möglich	q4::inwork 9358,12351 9369,12253 9373,12197
@@ -421,8 +422,8 @@ Dathepromenade: Fußgänger	q1 18394,10348 18320,10318 18302,10289 18314,10260 181
 Rheingoldpark: Fußgänger haben Vorrang	q1 19078,8817 19145,8659
 Schloßinsel Köpenick: Fußgänger	q4 22093,4499 22076,4422
 Braunschweiger Ufer: Fußgänger	q1 12718,5845 13077,5893 13483,5973
-Begasstr. - Riemenschneiderweg: teilweise mit Fußgängern zu rechnen	q1 6513,7005 6662,7018
-Begasstr. - Riemenschneiderweg: teilweise mit Fußgängern zu rechnen, kurze Rampe	q1 6662,7018 6770,7027
+Begasstr. - Riemenschneiderweg: teilweise mit Fußgängern zu rechnen	q1 6513,7005 6650,7017
+Begasstr. - Riemenschneiderweg: teilweise mit Fußgängern zu rechnen, kurze Rampe	q1 6650,7017 6770,7027
 Viktoriapark: Fußgänger, kurze Rampe, Pfähle	q1 5013,6003 4981,5939 4957,5894
 (Gaudystr. - Mauerpark): Fußgänger, bei Veranstaltungen in der Max-Schmelling-Halle größere Behinderungen möglich	q3 10456,15561 10256,15482 10186,15463
 (Kurt-Schumacher-Damm - Wasserturm Jungfernheide): Fußgänger	q1 2934,14852 2900,14891 2685,15167 2707,15205 2695,15258 2632,15295
@@ -467,8 +468,8 @@ Mergenthalerring: Asphaltschwellen, können umfahren werden	q1 14395,8071 14563,8
 Grazer Platz: Fußgänger, Bordsteine	q2 6546,6720 6530,6786 6529,6798
 (Vorarlberger Damm - Kleingartenkolonie): Fußgänger	q1 6817,7101 6852,7246 6841,7283
 (Nordmannzeile - Kleingartenkolonie): Fußgänger	q1 6807,7262 6809,7272 6841,7283
-(Nordmannzeile - Vorarlberger Damm): Fußgänger	q1 7220,7442 7314,7451
-Achenbachpromenade: Fußgänger, Radfahren erlaubt	q1 8763,8780 8748,8587 8715,8459
+(Nordmannzeile - Vorarlberger Damm): Fußgänger	q1 7220,7442 7307,7457
+Achenbachpromenade: Fußgänger, Radfahren erlaubt	q1 8763,8780 8748,8587 8722,8527 8715,8459
 Wildensteiner Str.: enge Straße	q1 18528,8331 18416,8163 18365,8094 18333,8059
 Linienstr./Oranienburger Str.: Fußgänger	q2 9225,13389 9296,13397
 Fontanestr.: zwei Schwellen, können umfahren werden	q1 18240,6845 18254,6679

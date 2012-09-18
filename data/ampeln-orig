@@ -314,7 +314,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 11019,16465
 	X 10927,17022
 	X 10774,17277
-	X 7491,7675
+	X 7480,7683
 	X 7499,7880
 	X 7497,8168
 	X 7193,7950
@@ -322,7 +322,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 6468,8109
 	X 6409,8026
 	X 6307,7893
-	X 6652,7138
+	X 6641,7142
 	X 6389,7196
 	X 8319,7084
 	X 8625,8174
@@ -551,7 +551,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 6230,13596
 	X 6493,13822
 	X 6730,14021
-	X 6765,5863
+	X 6757,5858
 	X 7690,4552
 	X 7601,4485
 	X 6625,3314
@@ -826,7 +826,6 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 3930,17920
 	X 2821,18831
 	X 1858,20740
-#: note: Luftbild:
 	X 9215,3599
 	X 9146,3101
 	X 9695,1563
@@ -1092,7 +1091,6 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 11368,13170
 	X 8093,16438
 	X 5376,18773
-#: note: laut Luftbild:
 	F 14203,2859
 	X 13057,14267
 	X 13292,13931
@@ -1202,8 +1200,8 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 6215,16340
 	X 7534,10850
 	X 7415,10883
-	X 6679,6816
-	X 6686,6735
+	X 6668,6815
+	X 6676,6734
 	X 6360,4504
 	X 6120,4214
 	X 4700,2662
@@ -1596,7 +1594,6 @@ nur Richtung O	X 8142,7221
 	X -3861,2837
 	F -6950,752
 	X 30410,5450
-#: note: Luftbild (für F)
 	F 25018,5756
 	X 22513,5747
 	X 22294,5777
@@ -1646,9 +1643,7 @@ nur Richtung O	X 8142,7221
 	X 5783,9060
 	X 5189,9397
 	X 4957,9437
-#: note: laut Luftbild:
 	F 5799,6841
-#: note: laut Luftbild:
 	X -772,13199
 	X 3961,7288
 	X 3083,7587
@@ -1919,7 +1914,6 @@ S-Bahn ca. alle 10 Minuten	B 10865,-4464
 	B -6182,71661
 	B -6100,73876
 	F 6459,8272
-#: note: Luftbild
 	F 1028,11309
 	X 13151,13367
 #: section Ampeln in Brandenburg vvv
@@ -1974,9 +1968,8 @@ Industriebahn	B0 -2410,13746
 	F 11905,15462
 	X 7880,13315
 	X 8017,13629
-#: note: Luftbild
 	B 15580,-26698
-	X 7717,7759
+	X 7696,7771
 	F 12204,13719
 	X 19783,12955
 	F 18191,18557
@@ -2011,7 +2004,6 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8632,23442
 	F 5045,7635
 #: note: laut Luftbild:
 	X 3805,2196
-#: note: laut Luftbild:
 	F 14745,2710
 #: note: laut Luftbild:
 	X -6031,12605
@@ -2027,7 +2019,7 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8632,23442
 	X 22724,6608
 	X 20277,2463
 	X 20201,2392
-	F 6721,6343
+	F 6710,6342
 	B 25109,12196
 	B 25269,-4041
 	B 24872,-3095
@@ -2048,28 +2040,23 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8632,23442
 	B0 15350,1636
 	B0 14621,1798
 	B0 13559,2205
-#: note: laut Luftbild: vvv
 	B0 14224,1925
 	B0 14512,1818
+#: note: laut Luftbild:
 #: XXX_prog: Gilt nur in Südwestrichtung!
 	B0 15799,1690
-#: note: ^^^
 	B0 12231,4365
 	B0 12363,4175
 	B0 12673,3627
 	B0 13189,2736
 	B0 13302,2554
 	B0 13418,2357
-#: note: laut Luftbild:
 	F 14252,1945
 	F 1901,13061
 	F 9474,16297
 	F 12990,11006
-#: note: laut Luftbild:
 	X 21624,11379
-#: note: laut Luftbild:
 	X 21398,11482
-#: note: laut Luftbild:
 	X 21860,11278
 	X 17829,15015
 	X 12736,11186
@@ -2082,9 +2069,8 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8632,23442
 	X 22785,6984
 #: by: http://www.berlin.de/ba-pankow/presse/archiv/20050128.0855.23450.html und Luftbild:
 	X 8634,18787
-#: note: laut Luftbild
 	X 8668,18744
-#: by: Detlef Neubauer [AM], Luftbild
+#: by: Detlef Neubauer [AM]
 	F 16857,12600
 	X 11722,10533
 	X 5219,6215
@@ -2101,7 +2087,6 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8632,23442
 	X 17017,16716
 	X 11329,12497
 	X 18929,2454
-#: note: Luftbild
 	F 20322,3725
 #: note: wahrscheinlich eine Anforderungsampel
 	F 9771,12400
@@ -2118,30 +2103,23 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8632,23442
 	X 12645,11673
 	F 6058,10988
 	F 6413,7017
-#: note: Luftbild
 #: by: thekla1707...
+#: confirmed_by: srt
 	F 6321,5818
 	F 14819,9462
 #: by: Jonas Laehnemann:
 #: note: Luftbild
 	F 760,975
 	F 16459,1680
-#: note: Luftbild
 	F 16815,1278
-#: note: Luftbild
 	X 17725,11228
-#: note: Luftbild
 	F -7504,4847
-#: note: Luftbild
 #: by: Achim Stenzel:
 	F 6362,4894
-#: note: Luftbild
 	F 17425,18997
-#: note: Luftbild
 	B -12751,-8997
 	X 13867,9864
 	X 13884,9882
-#: note: Luftbild
 	B 27705,-26035
 	B 27995,-27157
 #: note: Luftbild
@@ -2287,7 +2265,6 @@ nur Museumsbetrieb der Heidekrautbahn	B0 11616,30519
 #: note: war früher (ca. 2006?) ein Zebrastreifen
 	F 18729,8650
 	X 18709,8423
-#: note: Luftbild
 	F 4920,9029
 	B 51081,-73709
 	B 52982,-21800
@@ -2296,7 +2273,6 @@ nur Museumsbetrieb der Heidekrautbahn	B0 11616,30519
 	B 18101,-35914
 #: note: Luftbild
 	B 22928,-46895
-#: note: Luftbild
 	X 21647,15496
 #: note: Luftbild
 	B -19043,-11944
@@ -2312,12 +2288,9 @@ nur Museumsbetrieb der Heidekrautbahn	B0 11616,30519
 #: note: Luftbild
 	B 40249,186550
 	F 10777,10930
-#: note: Luftbild
 	X 2663,1199
-#: note: Luftbild
 	F 1946,604
 	F 1722,271
-#: note: Luftbild
 	F 9391,3651
 #: note: Luftbild
 	F 16589,14400
@@ -2332,8 +2305,8 @@ nur Museumsbetrieb der Heidekrautbahn	B0 11616,30519
 	F 10943,6498
 	X 4991,5531
 	B 24165,-103467
-#: note: Luftbild vvv
 	X 21251,12767
+#: note: Luftbild vvv
 	B -21066,67757
 	B -19695,59899
 	B -19996,46176
@@ -2374,36 +2347,28 @@ Parkhausausfahrt auf der westlichen Seite	X 11252,12644
 	F 8953,10366
 #: note: Luftbild:
 	B 11077,-5335
-#: note: Luftbild:
 	F 5574,5819
-#: note: Luftbild:
 	F 2745,12467
-#: note: Luftbild:
 	X 20210,13776
 	F 20474,14442
 	F 838,14530
 	F 11367,1710
-#: note: Luftbild:
 	F 11166,3732
 	F 13323,6322
-#: note: Luftbild:
 	F 15219,16759
 	F 11775,9234
 	F 9242,7218
-#: note: Luftbild:
 	F 6745,4999
 	B0 14641,1771
 	F 18177,-449
 	X 17855,1629
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20080404.1415.97645.html
 	X 21789,5427
-#: note: Luftbild:
 	X 21088,9175
 	F 4650,18817
 	X 16004,10204
 #: note: seit 2008-05-27 eingeschaltet:
 	X 13919,10583
-#XXX del: #: temporary:Modersohnstr. (zurzeit durch eine Ampel ersetzt, wahrscheinlich bis 2010-05-31, Neubau der Kynastbrücke)	F
 	X 21115,271
 	X 17477,6031
 #: note: Luftbild:
@@ -2416,15 +2381,12 @@ Parkhausausfahrt auf der westlichen Seite	X 11252,12644
 	X 14421,5465
 	B 47463,70752
 	X 3983,2454
-#: note: Luftbild:
 	F 6433,16342
 #: note: Luftbild:
 	X 11871,5195
 #: note: Luftbild:
 	X 12060,5204
-#: note: Luftbild:
 	F 2580,24028
-#: note: Luftbild:
 	X 13401,15821
 	B 60676,170842
 	B 44287,133631
@@ -2460,7 +2422,6 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X 4074,6681
 	X 4107,6718
 	F 11148,19838
-#: note: Luftbild:
 	F 14633,2145
 	X 9267,15790
 	X 8079,16953
@@ -2545,7 +2506,6 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F -6911,13817
 #: note: Luftbild
 	F -4793,9970
-#: note: Luftbild
 	F 20788,4008
 	F 14842,8809
 	F -3011,1761
@@ -2600,7 +2560,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: note: Luftbild
 	X 3408,13210
 #: by: andk
-	X 7725,8033
+	X 7733,8023
 	X 17533,14484
 	X 18166,14277
 	F 11070,13357
@@ -2749,6 +2709,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F 2814,20035
 	F 3216,21431
 	F 9540,15238
+	X 7987,6775
 # 
 ################################################################################
 #: note: Potsdam vvv
