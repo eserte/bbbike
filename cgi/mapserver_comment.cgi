@@ -222,6 +222,9 @@ eval {
 	$plain_body .= "Remote: " . $link1 . "\n";
 	$plain_body .= "Lokal:  " . $link2 . "\n";
 	$plain_body .= "\n" . Data::Dumper->new([\%ENV],['ENV'])->Indent(1)->Useqq(1)->Dump;
+
+	my $is_spam = length param('url');
+	$subject = "SPAM: $subject" if $is_spam;
     } else {
 	my $comment_param = param("comment");
 	$comment_param = '' if !defined $comment_param;
@@ -244,6 +247,9 @@ eval {
 		$plain_body .= Data::Dumper->new([param($key)],[$key])->Indent(1)->Useqq(1)->Dump;
 	    }
 	}
+
+	my $is_spam = length param('url');
+	$subject = "SPAM: $subject" if $is_spam;
     }
 
     my $mailout = param('mailout');
