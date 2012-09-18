@@ -20,6 +20,9 @@
    E-Mail (optional, für evtl. Rückfragen benötigt):<br>
    <input name="email"><br>
    <input type="submit" value="Absenden">
+
+  <!-- zdjela meda -->
+  <div style="visibility:hidden;">If you're a bot, then type something in here: <input name="url" size="1"></div>
   </form>
 
 [%#
