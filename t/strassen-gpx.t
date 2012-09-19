@@ -31,6 +31,13 @@ use BBBikeTest qw(gpxlint_string);
 
 use Route;
 
+# XXX Temporary until segfaults with XML::Twig/XML::LibXML are resolved...
+if (do { require POSIX; POSIX::strftime("%F", localtime) } lt "2012-09-30") {
+    delete $ENV{BBBIKE_LONG_TESTS};
+} else {
+    warn "Please remove/resolve this TODO...";
+}
+
 sub keep_file ($$);
 sub load_from_file_and_check ($$);
 
