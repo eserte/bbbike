@@ -690,7 +690,7 @@ Magazinstr.: Kopfsteinpflaster, OK	Q1 11558,12588 11329,12497
 #: corrected_by: aschoenebeck ("etwas brüchig, wenige bodenwellen", Q0 -> Q1, aber ich habe Q0- daraus gemacht)
 #: confirmed_by: srt
 Saarbrücker Str.: Asphalt, etwas brüchig	Q0- 10895,13961 10924,13940 10969,13914 11060,13865 11134,13820 11250,13655
-Heinrich-Roller-Str.: Kopfsteinpflaster	Q2 11435,14023 11602,13920
+Heinrich-Roller-Str.: Kopfsteinpflaster	Q2 11435,14023 11607,13928
 Corinthstr.: Kopfsteinpflaster	Q2 14608,10409 14447,10491
 (zum Mergenthalerring): holpriger Sandweg	Q2 14698,8371 14679,8349 14563,8243
 (zum Mergenthalerring): etwas sandig	Q2 14458,8456 14560,8528
@@ -1824,6 +1824,9 @@ Mühlenfeldstr.: Kopfsteinpflaster	Q2 3046,22292 2757,22310 2587,22332
 (Tegeler Fließ - Mühlenfeldstr.): Waldweg, OK	Q2 3753,22534 3767,22466
 Götzestr.: gutes Kopfsteinpflaster	Q1 3908,22709 3743,22642
 (Weg am Tegeler Fließ): Waldweg, OK	Q2 4251,22829 4166,22725 4114,22690 4087,22714 4022,22691
+#: XXX Sanierung des Fließtalwanderweges
+#: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20120917.1110.375306.html
+#: next_check: 2013-09-01
 (Weg am Tegeler Fließ): Waldweg, viele matschige Stellen	Q3 5596,23970 5409,23816 5297,23633 5214,23420 5242,23156 5232,23139
 (Weg am Tegeler Fließ): gut gewalzter Waldweg	Q0- 5232,23139 5205,23094 5127,23042 5054,23025 4824,22907 4731,22904
 (Weg am Tegeler Fließ): Waldweg	Q2+ 4731,22904 4693,22897 4626,22914
@@ -2324,7 +2327,7 @@ Feldtmannstr.: asphaltiert	Q0 15239,17599 14754,17673
 #: note: using average velocity in GPS track 20020811
 (Kronprinzessinenweg/Havelchaussee - Schlachtensse): Waldweg, ca. 50m lange sandige Stelle, Wurzeln	Q3 -3296,3686 -3199,3592 -3398,3321 -3353,3298
 Am Schweizer Garten: Asphalt	Q0 11868,13646 12001,13863
-(Volkspark Friedrichshain): Parkweg	Q1 12161,13711 12141,13609 12115,13540
+(Volkspark Friedrichshain): Parkweg	Q1 12161,13711 12141,13609 12122,13535
 Kadiner Str.: Asphalt	Q0 13520,11963 13599,12253
 Südtorweg: wassergebundene Decke	Q1 -503,11782 -750,11740
 #: note: Luftbild
@@ -7966,6 +7969,7 @@ an der S-Bahn: Beton	Q0 24933,12215 24851,12204 24554,12100
 Amelieweg: Verbundsteinpflaster	Q1+ 22861,12390 22805,12456 22759,12420 22814,12353
 Gülzower Str. [Nebenstraße]: Asphalt	Q0 22400,12171 22344,12130
 IKEA-Parkplatz: Verbundsteinpflaster	Q1+ 7991,6938 8071,7006 8077,7040
+(zur Neuen Mälzerei): Asphalt	Q0 12520,12938 12575,13001
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -20652,7 +20656,8 @@ Höchste Str.: Asphalt	Q0 11778,13498 11909,13387 12017,13299 12066,13237
 (Parkplatz): Beton	Q0 12066,13237 12046,13150 12011,13136 11920,13181
 Georgenkirchstr.: Asphalt	Q0 11842,13576 11778,13498 11703,13422 11655,13370 11589,13305
 (Mollstr. - Barnimstr.): Verbundsteine	Q0 11723,13139 11758,13210
-(Volkspark Friedrichshain, parallel zur Friedenstr.): Gehwegplatten und Kopfsteinpflaster	Q0 12386,13085 12387,13107 12344,13157 12248,13254 12194,13307 12148,13348 12088,13403 12005,13481 11943,13545 11857,13596 11823,13610 11785,13625
+#: corrected_by: srt ("kurze Kopfsteinpflasterabschnitte")
+(Volkspark Friedrichshain, parallel zur Friedenstr.): Gehwegplatten und kurze Kopfsteinpflasterabschnitte	Q0- 12386,13085 12387,13107 12344,13157 12244,13240 12185,13298 12141,13341 12060,13422 12005,13481 11957,13528 11857,13596 11823,13610 11785,13625
 Hinter der Katholischen Kirche: Kopfsteinpflaster	Q1 9801,12245 9795,12293 9780,12401
 Behrenstr.: Asphalt	Q0 9492,12214 9631,12227 9674,12231 9708,12235 9743,12239 9801,12245
 Markgrafenstr. (Kreuzberg, Mitte): Asphalt	Q0 9631,12227 9643,12127
@@ -20752,8 +20757,8 @@ Weinbergstr.: Asphalt	Q0 22829,5920 22766,5840
 (Volkspark Friedrichshain): Kopfsteinpflaster	Q2 12483,13418 12605,13356
 Ernst-Zinna-Weg: Kopfsteinpflaster	Q2 12605,13356 12622,13328 12614,13300 12572,13248 12564,13216 12585,13118
 #: corrected_by: srt (was Kopfsteinpflaster, Q2) vvv
-(Volkspark Friedrichshain): kleinteiliges Kopfsteinpflaster	Q1- 12325,13148 12344,13157 12372,13198 12382,13262 12344,13320 12281,13325 12166,13349 12148,13348
-(Volkspark Friedrichshain): kleinteiliges Kopfsteinpflaster	Q1- 12438,13387 12344,13320 12248,13254 12231,13233
+(Volkspark Friedrichshain): kleinteiliges Kopfsteinpflaster	Q1- 12325,13148 12344,13157 12372,13198 12382,13262 12344,13320 12281,13325 12166,13349 12141,13341
+(Volkspark Friedrichshain): kleinteiliges Kopfsteinpflaster	Q1- 12438,13387 12344,13320 12244,13240 12236,13229
 #: corrected_by: ^^^
 #: confirmed_by: srt
 (Volkspark Friedrichshain): Asphalt	Q0 12336,13646 12141,13609 12023,13598

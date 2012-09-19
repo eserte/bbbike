@@ -1091,7 +1091,19 @@ userdel	q4::inwork; 10614,19907 10599,19957
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'IM_017746',
+         'until' => undef,
+         'text' => 'Kastanienallee (Prenzlauer Berg): Bauarbeiten zwischen Oderberger Str. und Schwedter Str., Fahrbahn gesperrt',
+         'from' => 1348076973,
+         'id' => 2308,
+         'data' => '#: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/kastanienallee_pb.html
+#: note: nur die halbe Strecke ist gesperrt, deshalb q3
+#: note: am 2012-09-19 geprüft, Schranke, nur Straßenbahnen werden durchgelassen
+userdel	q3::inwork 10534,14460 10723,14772
+',
+         'type' => 'handicap'
+       },
        undef,
        undef,
        {
@@ -1189,8 +1201,9 @@ userdel	q3::inwork 11436,14741 11526,14693
          'text' => 'Sredzkistr. zwischen Schönhauser Allee und Knaackstr: Teile der Fahrbahn gesperrt, Ausweichen auf Gehweg',
          'from' => undef,
          'id' => 2337,
-         'data' => '#: last_checked: 2012-07-16
-userdel	q4::inwork 10893,14705 11101,14768
+         'data' => '#: last_checked: 2012-09-19
+#: note: etwa 50 Meter an der Schönhauser Alee gesperrt
+userdel	q3::inwork 10893,14705 11101,14768
 ',
          'type' => 'handicap'
        },
@@ -1360,8 +1373,8 @@ userdel	2::inwork 8263,10349 8315,10347 8333,10167 8360,10133
          'text' => 'Adalbertstr.: Fahrbahn in Richtung Kottbusser Tor gesperrt',
          'from' => undef,
          'id' => 2369,
-         'data' => '#: last_checked: 2012-09-07
-#: next_check: 2012-09-20
+         'data' => '#: last_checked: 2012-09-19
+#: next_check: 2012-10-20
 userdel	q4::inwork; 11389,10463 11393,10390
 ',
          'type' => 'handicap'
@@ -1424,6 +1437,28 @@ userdel	q4::inwork 9112,14771 9250,14658
          'data' => 'userdel	2::inwork 18286,11275 18409,11348 18477,11388 18618,11452
 ',
          'type' => 'gesperrt'
+       },
+       undef,
+       undef,
+       {
+         'until' => undef,
+         'text' => 'Oderberger Str.: Fahrbahn zwischen Kastanienallee und Choriner Str. wegen Bauarbeiten gesperrt',
+         'from' => undef,
+         'id' => 2383,
+         'data' => '#: last_checked: 2012-09-19
+userdel	q4::inwork 10870,14689 10723,14772
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => undef,
+         'text' => 'Choriner Str.: Einbahnstraße in Höhe Oderberger Str., Richtung Schönhauser Allee gesperrt',
+         'from' => undef,
+         'id' => 2384,
+         'data' => '#: last_checked: 2012-09-19
+userdel	q4::inwork; 10870,14689 10893,14705
+',
+         'type' => 'handicap'
        }
      
 );

@@ -397,9 +397,9 @@ Kohlis/Hultschiner Damm: Ampelanlage in Planung, Realisierung 2011	?::inwork 238
 Fr.-Engels-Str.: Fahrradstreifen werden angelegt, Kopfsteinpflaster verschwindet	?::projected 9355,19789 9333,19853 9300,19949 9266,20048 9235,20125 9149,20336
 # 
 #: by: http://www.berlin.de/ba-pankow/presse/archiv/20101117.1135.319249.html
-#: last_checked: 2012-04-27
-#: next_check: 2012-09-01
-Kastanienallee: Fahrradstreifen werden angelegt (bis 2012-09-01)	?::inwork 10534,14460 10723,14772 10838,14962 10881,15047
+#: last_checked: 2012-09-19 (im eigentlich fertigen nördlichen Streifen ist bis auf die Führung an der Straßenbahnhaltestelle nichts passiert)
+#: next_check: 2012-10-15
+Kastanienallee: Fahrradstreifen werden angelegt	?::inwork 10534,14460 10723,14772 10838,14962 10881,15047
 # 
 #: by: http://www.potsdam.de/cms/beitrag/10070965/966975/
 #: last_checked: 2011-11-27
@@ -590,6 +590,24 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+Rykestr./Knaackstr.: genaue Ausschilderung prüfen	? 11380,14316 11374,14363 11331,14350
+# 
+#: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/bauenundstadtentwicklung/stadtplanungsamt/ag1/anlage_1e_ma__nahmenkatalog.pdf?start&ts=1312523702&file=anlage_1e_ma__nahmenkatalog.pdf vvv
+#: XXX Befahrbarkeit soll laut Maßnahmenkatalog verbessert werden
+Forstweg in der Köllnischen Heide: Qualität?	? 20490,4895 19802,4248
+Parchwitzer Str.: wurden die Kopfsteinpflasterabschnitte verbessert?	?::projected 22047,-1042 21945,-1031 21828,-1015 21734,-1002 21654,-992 21615,-989 21479,-925 21393,-871
+Josef-Nawrocki-Str.: Einbahnstraße soll freigegeben werden	?::projected 25552,4829 25554,4758 25691,4716 25724,4706 25802,4681
+#: next_check: 2014-01-01
+Brücke soll gebaut werden	?::projected 23469,5340 23492,5334
+Querungsmöglichkeit der Bahntrassen soll ermöglicht werden	?::projected 23504,-938 23919,-780
+Verbesserung der Befahrbarkeit	?::projected 22655,1450 22756,1524
+Fahrradstraße soll eingerichtet werden	?::projected 23252,792 23501,797 23681,800 23955,728 24019,711 24211,585 24571,514 24660,440
+Fahrradstraße soll eingerichtet werden	?::projected 25646,-209 25760,-427 25958,-731
+Forstweg zur Bammelecke: existiert schon etwas? Qualität?	? 24425,-580 25497,418
+Verbesserung der Befahrbarkeit	?::projected 25958,-731 26004,-705 26045,-718 26073,-745 26129,-807 26190,-853 26230,-858 26346,-863 26389,-932 26445,-1037
+Asphaltstreifen soll eingerichtet werden	?::projected 26662,-1916 26728,-2030 26846,-2176 27021,-2336 27161,-2474 27093,-2560
+#: by ^^^
+# 
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/bvv-online/vo020.asp?VOLFDNR=4353&options=4
 #: XXX evtl. werden, wenn der Antrag angenommen wird, fehlende Abschnitte ergänzt
 Birkbuschstr.: existieren hier teilweise Radspuren?	? 5671,3987 5624,4112 5588,4210 5557,4294 5483,4359 5416,4411 5329,4485 5271,4547 5161,4664 5137,4691 5076,4762 5070,4770 5048,4798 4985,4884 4951,4920 4879,5017
@@ -687,8 +705,8 @@ Bodenschwelle, Umfahrung kann zugeparkt sein	? 23349,2240
 #: XXX_prog ^^^
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/20re.pdf/file
-#: last_checked: 2012-08-10
-#: next_check: 2012-09-01
+#: last_checked: 2012-09-19
+#: next_check: 2012-10-19 (evtl. auch amay fragen)
 Bootsbauerstr.: wird es eine Verbindung zur Bahrfeldtstr. geben?	? 15033,10013 15024,9994
 # 
 #: XXX Kolonie heißt "Anlage Blankenburg" vvv
@@ -807,8 +825,7 @@ Ortsumfahrung Seelow (B1): möglicherweise eine Kraftfahrzeugstraße?	? 74874,1507
 Ortsumfahrung Seelow (B167): möglicherweise eine Kraftfahrzeugstraße?	? 74874,15075 75139,14860 75139,14860 75310,14387 75361,13914 75522,13528 75762,13209 78240,11748
 Ortsumfahrung Jüterbog (B101, teilweise auch B102): möglicherweise eine Kraftfahrzeugstraße?	? -9332,-44530 -9321,-44621 -9226,-44859 -8970,-45175 -8786,-45479 -8734,-45651 -8707,-45860 -8592,-46235 -8481,-46772 -8306,-47209 -8299,-47368 -8342,-47533 -8408,-47665 -8497,-47768 -8632,-47880 -8716,-47998 -8768,-48129 -8777,-48229 -8768,-48324
 # 
-#: XXX_prog: Verlustzeiten für Wegführungen implementieren (ähnlich wie 3)
-Pappelstr. -> Kastanienallee: hier verliert man durchaus 2 1/2 Minuten bei der Überquerung der Schönhauser!	? 11119,15385 10881,15047 10838,14962
+#XXX del --- mittlerweile gibt es eine offizielle Radwegführung in beide Richtungen; wahrscheinlich sind die Verlustzeiten nicht mehr so hoch --- #: XXX_prog: Verlustzeiten für Wegführungen implementieren (ähnlich wie 3) --- Pappelstr. -> Kastanienallee: hier verliert man durchaus 2 1/2 Minuten bei der Überquerung der Schönhauser!	? 11119,15385 10881,15047 10838,14962
 # 
 Stintgraben und See	? 1584,39467 1930,39739 1864,40227 2186,40991 2056,41586 1860,42350
 Raddusch: entfällt der Regionalbahnhof?	? 54769,-64897
