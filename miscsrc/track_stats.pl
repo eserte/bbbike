@@ -52,6 +52,7 @@ my @filter_stat;
 my $v;
 my $tsv;
 my $coordsys;
+my $reverse;
 GetOptions("stage=s" => \$start_stage,
 	   "state=s" => \$state_file,
 
@@ -69,6 +70,7 @@ GetOptions("stage=s" => \$start_stage,
 
 	   'coordsys=s' => \$coordsys,
 
+	   "reverse!" => \$reverse,
 	   "tsv" => \$tsv,
 	   "v+" => \$v,
 	  ) or die "usage?";
@@ -631,6 +633,12 @@ sub parse_intersection_lines {
 	    @$vias_ref = @fences[1..$#fences-1];
 	}
 	@$to_ref   = @{$fences[-1]};
+
+	if ($reverse) {
+	    my @temp = @$from_ref;
+	    @$from_ref = @$to_ref;
+	    @$to_ref = @temp;
+	}
     }
 
     if ($coordsys) {
