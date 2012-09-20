@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: HTML.pm,v 1.7 2003/10/22 21:36:11 eserte Exp $
+# $Id: HTML.pm,v 1.7 2003/10/22 21:36:11 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999 Slaven Rezic. All rights reserved.

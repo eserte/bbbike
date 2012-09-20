@@ -1,10 +1,9 @@
 # -*- perl -*-
 
 #
-# $Id: Getopt.pm,v 1.65 2008/09/23 19:50:43 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1997,1998,1999,2000,2003,2007,2008 Slaven Rezic. All rights reserved.
+# Copyright (C) 1997,1998,1999,2000,2003,2007,2008,2012 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -27,7 +26,7 @@ use constant OPTEXTRA => 3;
 use Carp qw();
 
 $VERSION = '0.50';
-$VERSION = eval $VERSION;
+$VERSION =~ s{_}{};
 
 $DEBUG = 0;
 $x11_pass_through = 0;
