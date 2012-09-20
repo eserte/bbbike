@@ -3340,10 +3340,7 @@ unless ($skip_features{"sehenswuerdigkeiten"}) {
 	     },
 	    );
 	if ($advanced) {
-	    $am->command
-		(-label => M"Sperrungen zeichnen für Datum",
-		 -command => \&active_temp_blockings_for_date_dialog,
-		);
+	    $am->separator;
 	    $am->command
 		(-label => M"Aktuelle und zukünftige Sperrungen zeichnen",
 		 -command => sub {
@@ -3352,18 +3349,23 @@ unless ($skip_features{"sehenswuerdigkeiten"}) {
 		 },
 		);
 	    $am->command
-		(-label => M"Frühere und zukünftige Sperrungen zeichnen",
-		 -command => sub {
-		     $show_active_temp_blockings = 1;
-		     activate_temp_blockings($show_active_temp_blockings, -from => 0);
-		 },
-		);
-	    $am->command
 		(-label => M"Speichern für temp_blockings",
 		 -command => sub {
 		     require BBBikeEdit;
 		     BBBikeEdit::temp_blockings_editor();
 		 }
+		);
+	    $am->separator;
+	    $am->command
+		(-label => M"Sperrungen zeichnen für Datum",
+		 -command => \&active_temp_blockings_for_date_dialog,
+		);
+	    $am->command
+		(-label => M"Frühere und zukünftige Sperrungen zeichnen",
+		 -command => sub {
+		     $show_active_temp_blockings = 1;
+		     activate_temp_blockings($show_active_temp_blockings, -from => 0);
+		 },
 		);
 	}
     }
