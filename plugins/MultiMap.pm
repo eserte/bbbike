@@ -825,19 +825,10 @@ sub showmap_url_yahoo_de {
 
     my $px = $args{px};
     my $py = $args{py};
-    my $scale = $args{mapscale_scale};
-    my @allowed_scales = (undef, 4500, 15000, 50000, 125000);
- TRY: {
-	for my $i (1 .. $#allowed_scales) {
-	    if ($scale < ($allowed_scales[$i]+$allowed_scales[$i+1])/2) {
-		$scale = $i;
-		last TRY;
-	    }
-	}
-	$scale = $#allowed_scales;
-    }
+    my $scale = 17 - log(($args{mapscale_scale})/3000)/log(2);
+    $scale = 20 if $scale > 20;
 
-    sprintf "http://de.routenplaner.yahoo.com/maps_result?ds=n&name=Hallo&desc=&lat=%s&lon=%s&zoomin=yes&mag=%d",
+    sprintf "http://de.maps.yahoo.com/#q1=++&lat=%s&lon=%s&zoom=%d&mvt=m&trf=0",
 	$py, $px, $scale;
 }
 
