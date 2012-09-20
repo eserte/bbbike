@@ -103,15 +103,6 @@ sub register {
 	  callback_3_std => sub { showmap_url_bikemapnet(@_) },
 	  ($images{BikeMapNet} ? (icon => $images{BikeMapNet}) : ()),
 	};
-    if ($is_berlin) {
-	# Down: 2010-09-30
-	$main::info_plugins{__PACKAGE__ . "_BerlinerStadtplan24"} =
-	    { name => "www.berliner-stadtplan24.com",
-	      callback => sub { showmap_berliner_stadtplan24(@_) },
-	      callback_3_std => sub { showmap_url_berliner_stadtplan24(@_) },
-	      ($images{BerlinerStadtplan24} ? (icon => $images{BerlinerStadtplan24}) : ()),
-	    };
-    }
     $main::info_plugins{__PACKAGE__ . "_Geocaching"} =
 	{ name => "geocaching.com",
 	  callback => sub { showmap_geocaching(@_) },
@@ -306,21 +297,6 @@ yy6kzDWz2Da02Dm02Uev0kiw0kC02EC12D632je630O22T653EW52z694EG830W73Uy83Uq9
 AAAAEAAKAAAHjoBzc29lVGOCTyVDgoyCWCsXSYJsVhtmjY05N3JzcVEcQZhrV0dNGVlcPR87
 HUZOanNhMSw0GhAWHkJpQA8jKBFdGDBuYikMLWhzTCE8FG0uFQFaYAsmKiSCJzZnB1BeAAhI
 altzIi+CMiBzSmRLBjoJRFU1A+RzXwUzVUUKOHA/DgRIkNJoygQCDXzACQQAOw==
-EOF
-    }
-
-    if (!defined $images{BerlinerStadtplan24}) {
-	$images{BerlinerStadtplan24} = $main::top->Photo
-	    (-format => 'gif',
-	     -data => <<EOF);
-R0lGODlhEAAQAPUAAFxYWFxcWFxYXFxcXGBcWGBcXGBgYGRkZGhkaHBscHR0dHx4eHx8eIB8
-eIB8gIiEhIiIiIyMjJCMjJCQkJiUmJycnKCcnKiopKyorKyssLy8vMDAwMTExMjIyMzIzMzM
-zNDQ0NTU1NjU0NjY2Nzc3ODg4OTk5Ojo6PDw8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAAIf4V
-Q3JlYXRlZCB3aXRoIFRoZSBHSU1QACwAAAAAEAAQAAAGgECUcEgsGo9IVGnJ5EwaE5KQCToM
-BNdBNmICeToWLRZLKBQGDop2EGCLAoQ4AWDIXAaFeGAPjwMCChsfeGtaZnltCRooGAwLCmZi
-AwSJiw54AmZYVwRaiigQApkFmVmUA4onIRUQCghXh6eBSiMgHRKwmZ0DDxtTTMDBJUnExUJB
-ADs=
 EOF
     }
 
@@ -734,46 +710,6 @@ sub showmap_url_bikemapnet {
 sub showmap_bikemapnet {
     my(%args) = @_;
     my $url = showmap_url_bikemapnet(%args);
-    start_browser($url);
-}
-
-######################################################################
-# Berliner-Stadtplan24.com, does not work in seamonkey, but works in
-# firefox
-
-sub showmap_url_berliner_stadtplan24 {
-    my(%args) = @_;
-
-    #my $y_wgs = sprintf "%.2f", (Karte::Polar::ddd2dmm($py))[1];
-    #my $x_wgs = sprintf "%.2f", (Karte::Polar::ddd2dmm($px))[1];
-    (my $y_wgs = $args{py}) =~ s{\.}{,};
-    (my $x_wgs = $args{px}) =~ s{\.}{,};
-    my $zoom = "100";
-    my $mapscale_scale = $args{mapscale_scale};
-    if ($mapscale_scale) {
-	if ($mapscale_scale < 13000) {
-	    $zoom = 100;
-	} elsif ($mapscale_scale < 18000) {
-	    $zoom = 75;
-	} elsif ($mapscale_scale < 26000) {
-	    $zoom = 50;
-	} else {
-	    $zoom = 27;
-	}
-    }
-    ## Does not work anymore?
-    #my $url = "http://www.berliner-stadtplan.com/?y_wgs=${y_wgs}%27&x_wgs=${x_wgs}%27&zoom=$zoom&size=500x400&sub.x=15&sub.y=7";
-    ## But this works. Be nice and tell the Pharus guys where this request came from:
-    #my $url = "http://www.berliner-stadtplan24.com/topic/bln/str/x_wgs/${x_wgs}/y_wgs/${y_wgs}/from/bbbike.html";
-    ## Since 2007-08-01 everything changed. Now it is:
-    ## http://www.berliner-stadtplan24.com/berlin/gps_x/13,4439/gps_y/52,514.html
-    my $url = "http://www.berliner-stadtplan24.com/berlin/gps_x/${x_wgs}/gps_y/${y_wgs}.html";
-    $url;
-}
-
-sub showmap_berliner_stadtplan24 {
-    my(%args) = @_;
-    my $url = showmap_url_berliner_stadtplan24(%args);
     start_browser($url);
 }
 
