@@ -16,6 +16,7 @@ use strict;
 use FindBin;
 
 use File::Temp qw(tempfile);
+use IPC::Run qw(run);
 use Storable qw(lock_retrieve lock_nstore);
 use Tie::IxHash ();
 
@@ -30,13 +31,15 @@ my @args_1 = ('-stage', 'begin', '-state' => $state1_file, @ARGV);
 my @args_2 = ('-stage', 'begin', '-state' => $state2_file, '-reverse', @ARGV);
 my @args_res = ('-stage', 'statistics', '-state' => $state_res_file, @ARGV);
 
+my($stdout, $stderr);
+
 warn "forth...\n";
-system $track_stats_script, @args_1;
-die "Command <@args_1> failed" if $? != 0;
+run [$track_stats_script, @args_1], ">", \$stdout, "2>", \$stderr
+    or die "Command <$track_stats_script @args_1> failed ($stderr)";
 
 warn "back...\n";
-system $track_stats_script, @args_2;
-die "Command <@args_2> failed" if $? != 0;
+run [$track_stats_script, @args_2], ">", \$stdout, "2>", \$stderr
+    or die "Command <$track_stats_script @args_2> failed ($stderr)";
 
 warn "merge...\n";
 my $state1 = lock_retrieve $state1_file;
@@ -64,8 +67,8 @@ for my $result (@{ $state2->{results} }) {
 
 warn "statistics and output...\n";
 lock_nstore $state1, $state_res_file;
-system $track_stats_script, @args_res;
-die "Command <@args_res> failed" if $? != 0;
+run [$track_stats_script, @args_res],
+    or die "Command <$track_stats_script @args_res> failed";
 
 { # XXX duplicated from track_stats.pl!
     no warnings 'uninitialized';
