@@ -38,6 +38,7 @@ my @stages = qw(filtertracks trackdata statistics output);
 my %stages = map {($_,1)} @stages;
 
 my @cols_sorted = qw(file fromtime vehicles device diffalt mount velocity length difftime);
+my %is_alpha_col = map{($_=>1)} qw(file vehicles device);
 
 #my $tracks_file = "$FindBin::RealBin/../tmp/streets-accurate-categorized-split.bbd";
 my $tracks_file = "$FindBin::RealBin/../tmp/streets-polar.bbd";
@@ -476,7 +477,11 @@ sub stage_output {
     }
 
     die "Invalid -sortby" if !exists $results[0]->{$sortby};
-    @results = sort { $a->{$sortby} <=> $b->{$sortby} } @results;
+    if ($is_alpha_col{$sortby}) {
+	@results = sort { $a->{$sortby} cmp $b->{$sortby} } @results;
+    } else {
+	@results = sort { $a->{$sortby} <=> $b->{$sortby} } @results;
+    }
 
     if ($tsv) {
 	for (@results) {
