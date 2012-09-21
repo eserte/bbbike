@@ -409,7 +409,7 @@ Rückerstr.: mäßiger Asphalt	Q1 10597,13647 10535,13509
 Knaackstr.: Asphalt	Q0 11229,14422 11316,14360 11331,14350 11358,14331 11380,14316 11418,14290 11506,14230
 Immanuelkirchstr.: Kopfsteinpflaster	Q2 11506,14230 11713,14118 11946,13993
 Bersarinplatz: Kopfsteinpflaster auf der Fahrbahn, Radwege OK	Q1- 13695,12643 13686,12611 13678,12571 13698,12544 13742,12538 13761,12578 13767,12626 13747,12642 13727,12642 13695,12643
-Petersburger Platz: Kopfsteinpflaster	Q2 13559,12779 13467,12978
+Petersburger Platz: Kopfsteinpflaster	Q2 13559,12779 13470,12990
 Pettenkoferstr Str.: Asphalt	Q0 15117,12106 15098,12213
 Pettenkoferstr Str.: Asphalt, einige gepflasterte Bodenschwellen	Q0- 15098,12213 15054,12323 15042,12353 15009,12441 14999,12462 14935,12596 14862,12777 14842,12826
 #XXX del --- 2012-09-16 neu asphaltiert --- Marktstr., Fahrbahn Richtung Osten: Kopfsteinpflaster	Q2-; 15279,10862 15144,10905
@@ -651,7 +651,7 @@ Rigaer Str.: Asphalt mit einigen Aufpflasterungen	Q0 14266,12446 14451,12396 145
 Rigaer Str.: Asphalt	Q0 15098,12213 15175,12180
 Thaerstr.: Kopfsteinpflaster	Q2 13761,12690 13844,12900
 Diesterwegstr.: Kopfsteinpflaster	Q2 12078,15160 11968,14950 11864,14781
-Straßmannstr.: Kopfsteinpflaster	Q2 13537,13003 13756,13103
+Straßmannstr.: Kopfsteinpflaster	Q2 13530,13014 13747,13110 13835,13149
 Niederkirchnerstr.: Asphalt	Q0 8720,11226 9162,11286
 Johanniterstr.: Asphalt	Q0 9837,10117 10066,10071 10251,9979
 Wilmsstr.: Kopfsteinpflaster	Q2 10251,9979 10424,9958
@@ -802,10 +802,15 @@ Weg am Müggelsee: Schotter	Q1 28668,3297 28680,3240 28485,3206 27984,2995 27732,
 Weg am Müggelsee: fester Waldweg	Q1 27081,2528 27135,2500 27173,2444 27267,2414 27363,2448 27471,2527 27565,2637 27743,2842 27822,2910 27937,3016 28273,3143 28496,3253 28588,3285 28668,3297 28852,3293 28852,3277
 Weg am Müggelsee: Asphalt	Q0- 27081,2528 26989,2570 26859,2596 26627,2610 26457,2660 26339,2667 26158,2647 26006,2615
 Radweg am Müggelsee: asphaltiert	Q0 27218,2300 26805,2381 26459,2440 26026,2532 25948,2474
+#: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120921.1525.375622.html vvv
+#: XXX Sanierung der Rheinsteinstr., danach asphaltiert vvv
+#: next_check: 2012-12-14 vvv
 Rheinsteinstr.: Kopfsteinpflaster	Q2 18998,8784 19078,8817 19120,8835
 Rheinsteinstr.: asphaltiert	Q0 19120,8835 19173,8857
-Rheinsteinstr.: Kopfsteinpflaster	Q2 19173,8857 19316,8933 19510,9035
-Zwieseler Str.: Kopfsteinpflaster	Q2 19510,9035 19629,9094
+Rheinsteinstr.: Kopfsteinpflaster	Q2 19173,8857 19316,8933 19510,9035 19629,9094
+#: next_check ^^^
+#: XXX ^^^
+#: by ^^^
 Köpenicker Allee: wechselnd: holpriger Fahrweg, mäßiger Asphalt	Q2 19898,8410 19990,8253 20096,8077 20226,7846 20280,7749
 Köpenicker Allee: Beton	Q0- 19510,9035 19587,8973 19694,8784 19898,8410
 Köpenicker Allee: mäßiger Asphalt	Q1 18939,9417 19020,9364
@@ -1676,7 +1681,7 @@ Kolonie: Gehwegplatten	Q1 10198,16929 10209,16674
 Erich-Weinert-Str.: Kopfsteinpflaster	Q2 10997,16280 11295,16199 11404,16140 11550,16068
 Fritz-Riedel-Str.: Asphalt	Q0 13385,13992 13449,13892 13521,13781 13635,13605
 Hausburgstr.: Asphalt	Q0 13635,13605 13706,13460 13742,13376
-Hausburgstr.: Kopfsteinpflaster	Q2 13742,13376 13841,13135 13895,13017
+Hausburgstr.: Kopfsteinpflaster	Q2 13742,13376 13835,13149 13895,13017
 Konitzer Str.: Kopfsteinpflaster	Q2 14099,11505 14087,11467
 Auguste-Hauschner-Str.: asphaltiert	Q0 8438,11753 8473,11634 8505,11544
 Cora-Berliner-Str.: asphaltiert	Q0 8737,12098 8783,11959
@@ -6861,7 +6866,7 @@ Neue Jakobstr. [Wohngebiet]: Beton, Kopfsteinpflasterabschnitt	Q1 11131,11579 11
 Neue Jakobstr. [Wohngebiet]: Beton	Q1 11017,11658 10963,11695
 (Wohngebiet): Beton	Q0- 11052,11414 11131,11579 11166,11664
 (Wohngebiet): Beton und Verbundsteinpflaster	Q1+ 11166,11664 11080,11712 11017,11658
-Fischerinsel [Wohngebiet]: Beton	Q0- 10604,11941 10474,11843 10435,11813 10376,11879
+Fischerinsel [Wohngebiet]: Beton mit einigen Schäden	Q1+ 10604,11941 10474,11843 10435,11813 10376,11879
 (Fischerinsel - Grünstraßenbrücke): Gehwegplatten	Q0 10474,11843 10517,11795
 Neue Blumenstr.: Beton mit einigen Schden	Q1+ 11607,12412 11709,12601
 Neue Blumenstr.: Asphalt	Q0 11709,12601 12006,12464
@@ -7969,7 +7974,9 @@ an der S-Bahn: Beton	Q0 24933,12215 24851,12204 24554,12100
 Amelieweg: Verbundsteinpflaster	Q1+ 22861,12390 22805,12456 22759,12420 22814,12353
 Gülzower Str. [Nebenstraße]: Asphalt	Q0 22400,12171 22344,12130
 IKEA-Parkplatz: Verbundsteinpflaster	Q1+ 7991,6938 8071,7006 8077,7040
-(zur Neuen Mälzerei): Asphalt	Q0 12520,12938 12575,13001
+(zur Neuen Mälzerei): Asphalt	Q0 12520,12938 12590,13018
+(Weg im Blankensteinpark): Kopfsteinpflaster	Q2 14376,12849 14289,12876
+(Weg im Blankensteinpark): Asphalt	Q0 14289,12876 14130,12926
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -9165,7 +9172,7 @@ Carnotstr.: Asphalt	Q0 4806,12902 4678,12938
 # 
 #: by: Menti:
 #: confirmed_by: srt
-Pintschstr.: Kopfsteinpflaster	Q2 13438,12965 13339,13196
+Pintschstr.: Kopfsteinpflaster	Q2 13435,12973 13339,13196
 # 
 #: by: Ramiro Gomez: vvv
 Guineastr.: Kopfsteinpflaster	Q2 6422,15708 6282,15830
@@ -20617,7 +20624,7 @@ Herkulesufer: Kleinpflaster	Q2 7575,11076 7251,11181 7218,11181 7140,11156 7142,
 #: corrected_by: srt (Q0 -> Q1)
 Berolinastr.: Beton	Q1 11557,13228 11476,13052 11440,12976 11419,12944 11540,12883 11584,12863
 #: corrected_by: srt (Beton, Q2 -> )
-Berolinastr.: Asphalt	Q0 11660,12963 11673,12955 11771,12909
+Berolinastr.: Asphalt	Q0 11476,13052 11590,12995 11608,12985 11660,12963 11673,12955 11771,12909
 #: corrected_by: srt (Q2 -> Q2+)
 Berolinastr.: Beton	Q2+ 11771,12909 11826,12883 11844,12926
 Berolinastr.: Beton	Q0 11540,12883 11590,12995
@@ -20771,7 +20778,7 @@ Kurt-Exner-Str.: Kopfsteinpflaster	Q2 13976,13309 13862,13262
 Agnes-Wabnitz-Str.: Kopfsteinpflaster	Q2 13934,13403 13819,13356
 Agnes-Wabnitz-Str.: Kopfsteinpflaster	Q2 13915,13443 13805,13394
 #: confirmed_by: srt
-Wilhelm-Stolze-Str.: Kopfsteinpflaster	Q2 13267,13167 13371,12937
+Wilhelm-Stolze-Str.: Kopfsteinpflaster	Q2 13267,13167 13368,12943
 Fritz-Schiff-Weg: Kleinpflaster	Q1 13472,12337 13484,12436 13463,12507
 Ludwig-Pick-Str.: Asphalt	Q0 13548,12535 13552,12435
 Ludwig-Pick-Str.: Gehwegplatten	Q0 13552,12435 13543,12326

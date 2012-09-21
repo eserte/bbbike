@@ -19943,10 +19943,10 @@ userdel	q4::inwork 8634,13588 8626,13641 8619,13689
 EOF
      },
      { from  => 1348076973, # 1314604800, # 2011-08-29 10:00
-       until => undef, # 1347721200, # 2012-09-15 17:00
-       text  => 'Kastanienallee (Prenzlauer Berg): Bauarbeiten zwischen Oderberger Str. und Schwedter Str., Fahrbahn gesperrt',
+       until => 1380636000, # 2013-10-01 16:00, # 1347721200, # 2012-09-15 17:00
+       text  => 'Kastanienallee (Prenzlauer Berg): Bauarbeiten zwischen Oderberger Str. und Schwedter Str., Fahrbahn gesperrt, bis Herbst 2013',
        type  => 'handicap',
-       source_id => 'IM_017746',
+       source_id => 'IM_019212',
        data  => <<EOF,
 #: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/kastanienallee_pb.html
 #: note: nur die halbe Strecke ist gesperrt, deshalb q3
@@ -20659,6 +20659,15 @@ EOF
        data  => <<EOF,
 #: last_checked: 2012-09-19
 userdel	q4::inwork; 10870,14689 10893,14705
+EOF
+     },
+     { from  => 1348437600, # 2012-09-24 00:00
+       until => 1355525999, # 2012-12-14 23:59
+       text  => 'Sanierung der Rheinsteinstraße zwischen Zwieseler Str. und Königswinterstraße, Teile der Fahrbahn sind gesperrt, vom 24. September bis zum 14. Dezember 2012 ',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-lichtenberg/presse/archiv/20120921.1525.375622.html',
+       data  => <<EOF,
+userdel	q4::inwork 18998,8784 19078,8817 19120,8835 19173,8857 19316,8933 19510,9035 19629,9094 19634,9192
 EOF
      },
     );

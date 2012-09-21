@@ -54,6 +54,11 @@ Annenstr./Heinrich-Heine-Platz	?::projected 11349,11227 11249,11268 11091,11379 
 #: section ignorieren vvv
 #: section Straßen in Bau und Planung vvv
 # 
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/40re.pdf/file?y=2012
+#: XXX Privatstraße
+#: next_check: 2013-01-01
+Jean-Monnet-Str.: wo wird die Straße entstehen?	?::inwork 7721,13881 7857,13817
+# 
 #: last_checked: 2012-09-05 (Kay Leonhardt) vvv
 #: next_check: 2013-04-01 vvv
 #: by: http://farm9.staticflickr.com/8020/7599711312_1407440291_c.jpg (noch in Bau)
@@ -123,7 +128,9 @@ Humboldtinsel: Qualität? Straße bereits fertig gestellt?	? 1612,20431 1708,20459
 #: by: http://www.aktion-kms.de/projekte/#Platz-der-Stadt-Hof
 #: by: http://www.aktion-kms.de/files/p23.v_l01_120809.pdf
 #: by: http://www.aktion-kms.de/files/pl_d_std_hof_flyer_5.pdf
-#: XXX während der Bauarbeiten bereits gesperrt? Prüfen! Wahrscheinlich -> q4
+#: XXX die Straße wird irgendwann für den Autoverkehr gesperrt werden
+#: last_checked: 2012-09-21
+#: next_check: 2012-11-15
 Ganghofer Str.: wird zur Fußgängerzone am Platz der Stadt Hof	?::inwork 12753,8187 12792,8190
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/34re.pdf/file?y=2012
@@ -421,7 +428,9 @@ Kletterrosenweg	?::projected 21382,149 21354,289
 	?::projected 21894,561 21776,418
 #: next_check: ^^^
 # 
-#: next_check: 2012-05-01
+#: last_checked: 2012-09-21
+#: next_check: 2013-02-01
+#: XXX noch Bauarbeiten in Gange; Zufahrt zur Alten Brauerei befindet sich nun hier; die Situation nach den Bauarbeiten evaluieren...
 An der Barthschen Promenade: vielleicht wird die Straße in Zukunft sich hier befinden	?::projected 8954,8914 8814,8917
 # 
 #: last_checked: 2012-06-08
@@ -2985,4 +2994,5 @@ Streitstr.: wurden die vorhandenen Bordsteinradwege durch Radspuren ersetzt, und
 #: last_checked: 2012-06-09 (an der Bergstr.)
 #: next_check: 2013-01-01
 Lauenburger Str.: wurde die gesamte Lauenburger Str. (oder Teile davon) als Fahrradstraße ausgewiesen?	?::projected 5870,4992 5905,5088 5927,5182 5962,5296 5993,5422 6007,5785 6007,5882 6001,5974 6008,6067 6019,6087 6014,6160 5984,6233 5918,6301 5860,6367 5803,6403
-Weg im Blankensteinpark: Qualität? Nachts beleuchtet?	? 14376,12849 14289,12876 14130,12926
+Gertraudenstr.: existiert eine Busspur in der Gertraudenstr.? Wenn ja: wann ist die Busspur gültig?	?; 10512,12039 10460,11979 10391,11898 10376,11879 10350,11846 10313,11805 10299,11786
+Ackerpark: Qualität der Verbindung? Nachts beleuchtet?	? 9754,13836 9859,13875
