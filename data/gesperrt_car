@@ -94,8 +94,8 @@ Universitätsstr. -> Unter den Linden: UdL/Universitätsstr.	3::igndisp 9580,12581
 Unter den Linden -> Bebelpl., diagonal über den Platz: UdL/Universitätsstr.	3::igndisp 9695,12390 9656,12386 9702,12307
 Bebelpl., diagonal über den Platz -> Unter den Linden: UdL/Universitätsstr.	3::igndisp 9702,12307 9656,12386 9601,12380
 Kolonnenstr. -> Hohenfriedbergstr.	3 7709,8777 7795,8765 7791,8882
-Horn - Yorck	3nocross::ignrte 8777,9601 9002,9731 9043,9745
-Hornstr. -> Yorckstr.: Horn - Yorck	3::igndisp 8980,9751 9002,9731 9043,9745
+Horn - Yorck	3nocross::ignrte 8777,9601 9002,9731 9044,9753
+Hornstr. -> Yorckstr.: Horn - Yorck	3::igndisp 8980,9751 9002,9731 9044,9753
 Yorckstr. -> Hornstr.: Horn - Yorck	3::igndisp 8777,9601 9002,9731 8980,9751
 Mehringdamm - Baruther	3nocross::ignrte 9444,9919 9387,9804 9334,9670
 Baruther Str. -> Mehringdamm: Mehringdamm - Baruther	3::igndisp 9588,9827 9387,9804 9334,9670
@@ -150,7 +150,7 @@ Stellmacherweg	1 13129,2999 13453,2930
 Hittorfstr	1 2442,4806 2469,4882 2516,4936 2587,4965
 Lefèvrestr.	1 5360,6642 5215,6643
 Kühlebornweg	1 5161,4664 5075,4600 5004,4709
-Gartenstr.	1 22467,3889 22275,4032 22261,4105 22273,4216
+Gartenstr.	1 22467,3889 22281,4033 22263,4120 22279,4220
 Wichmannstr.	1 6462,11069 6552,11006 6681,10959 6824,10904
 Lützowufer	1 6873,11011 6732,11106 6626,11178 6582,11202
 Mulackstr.	1 10308,13575 10406,13543 10535,13509 10640,13471
@@ -573,9 +573,9 @@ Stettiner Str. -> Osloer Str.: Straßenbahntrasse	3::igndisp 9107,16389 9331,1662
 Osloer Str. -> Freienwalder Str.: Straßenbahntrasse	3::igndisp 9210,16638 9331,16624 9435,16832
 Wriezener Str. -> Osloer Str.: Straßenbahntrasse	3::igndisp 9245,16758 9210,16638 9331,16624
 Osloer Str. -> Wriezener Str.: Straßenbahntrasse	3::igndisp 8939,16668 9210,16638 9245,16758
-Straßenbahntrasse	3nocross::ignrte 8260,16740 8196,16746 8144,16750 7763,16779
+Straßenbahntrasse	3nocross::ignrte 8249,16741 8196,16746 8144,16750 7763,16779
 Heinz-Galinski-Str. -> Osloer Str.: Straßenbahntrasse	3::igndisp 8092,16485 8196,16746 8144,16750
-Osloer Str. -> Heinz-Galinski-Str.: Straßenbahntrasse	3::igndisp 8260,16740 8196,16746 8092,16485
+Osloer Str. -> Heinz-Galinski-Str.: Straßenbahntrasse	3::igndisp 8249,16741 8196,16746 8092,16485
 Straßenbahntrasse	3nocross::ignrte 7606,16746 7456,16620 7417,16587 7403,16575 7295,16477 7231,16418
 Seestr. -> Iranische Str.: Straßenbahntrasse	3::igndisp 7606,16746 7456,16620 7707,16543
 Iranische Str. -> Seestr.: Straßenbahntrasse	3::igndisp 7707,16543 7456,16620 7417,16587
@@ -783,9 +783,9 @@ Prenzlauer Promenade -> Brauhausstr.: Straßenbahntrasse	3::igndisp 12010,16774 1
 Mittelstreifen	3nocross::ignrte 12114,12546 12134,12540 12360,12505
 Karl-Marx-Allee -> Krautstr./Blumenstr.: Mittelstreifen	3::igndisp 12360,12505 12134,12540 12125,12490
 Krautstr./Blumenstr. -> Karl-Marx-Allee: Mittelstreifen	3::igndisp 12125,12490 12134,12540 12114,12546
-Kleineweg: nur für Anlieger	2:Anlieger 9126,8025 9130,7804 9132,7661
+Kleineweg: nur für Anlieger	2:Anlieger 9130,8025 9130,7810 9132,7661
 Kleineweg: nur für Anlieger	2:Anlieger 9115,7645 9120,7600 9145,7522 9097,7469
-Peter-Strasser-Weg: nur für Anlieger	2:Anlieger 9240,7797 9130,7804
+Peter-Strasser-Weg: nur für Anlieger	2:Anlieger 9240,7811 9130,7810
 Friedrich-Wilhelm-Str.: In die andere Richtung nur für Anlieger	1 8385,5907 8266,5911
 Parkstr.: Durchfahrt gesperrt	3 9143,6415 9184,6413 9250,6414
 Parkstr.: Durchfahrt gesperrt	3 9250,6414 9184,6413 9143,6415
@@ -806,7 +806,7 @@ Schönhauser Allee: Abbiegen verboten	3 10703,13832 10779,13793 10832,13877
 Straßenbahntrasse	3nocross::ignrte 21796,4517 21775,4470 21773,4440
 Rudower Str. -> Köllnischer Pl.: Straßenbahntrasse	3::igndisp 21585,4459 21775,4470 21796,4517
 Grünauer Str. -> Rudower Str.: Straßenbahntrasse	3::igndisp 21773,4440 21775,4470 21585,4459
-Kietz	1 22273,4216 22292,4279 22312,4329 22334,4383 22339,4396 22364,4429 22383,4470
+Kietz	1 22279,4220 22292,4279 22312,4329 22334,4383 22339,4396 22364,4429 22383,4470
 Mittelstreifen	3nocross::ignrte 5705,13359 5857,13342 5956,13330
 Bremer Str. -> Turmstr.: Mittelstreifen	3::igndisp 5868,13441 5857,13342 5956,13330
 Turmstr. -> Bremer Str.: Mittelstreifen	3::igndisp 5705,13359 5857,13342 5868,13441
@@ -1085,7 +1085,7 @@ Genossenschaftsstr.	1 20304,3714 20285,3739 20290,3756 20145,3954 20067,4054
 Gemeinschaftsstr.	1 20067,4054 20109,4087
 Malchiner Str.	1 13866,4481 13869,4626 13836,4759
 Dömitzer Str.	1 13771,4485 13775,4631 13757,4729
-Kirchstr.: nur Linienverkehr erlaubt	2 22312,4593 22284,4653
+Kirchstr.: nur Linienverkehr erlaubt	2 22314,4604 22284,4653
 Behrenstr./Bebelplatz	1 9801,12245 9743,12239 9708,12235 9674,12231 9631,12227
 Theodorstr.: Poller	3 24916,10539 24921,10705 24928,10737
 Theodorstr.: Poller	3 24928,10737 24921,10705 24916,10539

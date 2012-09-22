@@ -54,7 +54,7 @@ Sa, 24.10.1998
 8595,9495     Katzbachstr./Yorckstr.             S->N   60  18:27:00  18:27:10
 8595,9495     Yorckstr./Katzbachstr.             NO->NW 60  18:32:20  18:29:55
 8777,9601     Yorckstr./Möckernstr.              SW->NO 60  18:31:20  18:30:50
-9043,9745     Yorckstr./Großbeerenstr.           W->O   60  18:30:40  18:31:10
+9044,9753     Yorckstr./Großbeerenstr.           W->O   60  18:30:40  18:31:10
 9334,9670     Yorckstr./Mehringdamm              W->O   60  18:34:25  18:34:45
 9790,9528     Gneisenaustr./Zossener Str.        W->O   60  18:35:57  18:36:23
 9552,9602     Gneisenaustr./Nostitzstr.          W->O   60  18:36:40  18:37:05
@@ -90,7 +90,7 @@ Sa, 24.10.1998
 8969,9320     Kreuzbergstr./Großbeerenstr.       O->W   70  19:34:08  19:33:34
 8598,9264     Kreuzbergstr./Katzbachstr.         O->W   70  19:34:07  19:34:27
 9000,9509     Großbeerenstr./Hagelberger Str.    S->N   50  19:36:50  19:37:07
-9043,9745     Großbeerenstr./Yorckstr.           S->N   60  19:38:18  19:38:28
+9044,9753     Großbeerenstr./Yorckstr.           S->N   60  19:38:18  19:38:28
 
 # Punkt	      Kreuzung                           Dir    Zyk grün      rot
 # ----------------------------------------------------------------------------
@@ -99,7 +99,7 @@ Mo, 26.10.1998
 7795,8765     Kolonnenstr./Hohenfriedbergstr.    O->W       12:27:00
 7709,8777     Kolonnenstr./Naumannstr.           O->W                 12:27:48
 7563,8871     Kolonnenstr./Czeminskistr.         O->W       12:28:10
-7325,8936     Kolonnenstr./Crellestr.            O->W       12:29:30  12:28:55
+7315,8941     Kolonnenstr./Crellestr.            O->W       12:29:30  12:28:55
 7275,8960     Kolonnenstr./Hauptstr.             O->W       12:29:33
 7110,9024     Belziger Str./Akazienstr.          O->W       12:32:22
 6860,8878     Belziger Str./Eisenacher Str.      O->W   40  12:32:24  12:32:34
@@ -458,7 +458,7 @@ Di, 10.11.1998
 8192,9619     Yorckstr./Bautzener Str.           W->O       18:26:57
 8595,9495     Yorckstr/Katzbachstr.              NW->NO     18:28:32
 8777,9601     Yorckstr/Möckernstr.               SW->NO               18:29:17
-9043,9745     Yorckstr/Großbeerenstr.            W->O       18:30:07  18:29:35
+9044,9753     Yorckstr/Großbeerenstr.            W->O       18:30:07  18:29:35
 9334,9670     Yorckstr/Mehringdamm               W->O       18:31:24  18:30:47
 9552,9602     Gneisenaustr/Nostitzstr            W->O       18:31:20
 9248,9350     Mehringdamm/Kreuzbergstr (Rad)     N->S                 18:32:09
@@ -580,8 +580,8 @@ So, 14.03.1999
 8594,8777     Dudenstr./Katzbachstr./Boelckestr  S->N       14:37:08
 8389,9087     Kreuzbergstr./Monumentenstr.       O->W       14:38:20
 # Ampel existiert nicht mehr: 7782,9115     Monumentenstr./Hohenfriedbergstr.  O->W       14:39:20  14:38:55
-7655,9188     Langenscheidtstr./Crellestr.       SO->NW     14:40:00  14:39:35
-7655,9188     Langenscheidtstr./Crellestr.       SW->NO     14:41:05  14:40:33
+7647,9196     Langenscheidtstr./Crellestr.       SO->NW     14:40:00  14:39:35
+7647,9196     Langenscheidtstr./Crellestr.       SW->NO     14:41:05  14:40:33
 7479,9357     Langenscheidtstr./Hauptstr. (Schö  SO->NW     14:41:23
 7275,8960     Kolonnenstr./Hauptstr. (Schöneber  NO->SW     14:42:20
 6687,8385     Hauptstr. (Schöneberg)/Dominicuss  NO->SW     14:43:33
@@ -737,7 +737,7 @@ Fr, 09.04.1999
 10738,12364   Mühlendamm/Stralauer Str./Gruners  NW->SO 70  23:31:32  23:31:42
 11351,12221   Brückenstr./Holzmarktstr./Alexand  W->O       23:34:26
 11768,12006   Michaelkirchstr./Lichtenberger St  W->O   60? 23:35:30  23:35:46
-12184,11652   Holzmarktstr./Stralauer Platz/And  W->O   60? 23:36:56  23:36:23
+12180,11657   Holzmarktstr./Stralauer Platz/And  W->O   60? 23:36:56  23:36:23
 12497,11459   Straße der Pariser Kommune/Strala  W->O   60?           23:37:48
 13332,10832   Oberbaumbrücke/Stralauer Allee/Wa  W->O   60  23:40:23  23:39:40
 
@@ -897,7 +897,7 @@ So, 25.04.1999
 11463,10642   Oranienstr./Adalbertstr.           S->N       09:25:00
 11556,10869   Waldemarstr./Adalbertstr.          S->N   50  09:25:21  09:25:41
 12026,11348   Köpenicker Str./Engeldamm/An der   SW->NO     09:28:37
-12184,11652   Holzmarktstr./Stralauer Platz/And  SW->NO 70  09:29:24  09:29:39
+12180,11657   Holzmarktstr./Stralauer Platz/And  SW->NO 70  09:29:24  09:29:39
 12822,12067   Rüdersdorfer Str./Straße der Pari  S->N   60  09:37:17  09:36:33
 14211,11552   Wühlischstr./Modersohnstr./Gärtne  W->O   60  09:41:55  09:42:08
 14575,11407   Wühlischstr./Holteistr.            W->O   60  09:42:52  09:43:14
@@ -1692,15 +1692,15 @@ Fr, 19.02.2010
 # ----------------------------------------------------------------------------
 Fr, 19.02.2010
 #WPT: 131	19-FEB-10 13:13:23	52.4809166666667	13.3776388888889	buoy_white_green
-8625,8174     Loewenhardtdamm/Boelckestr.        N->S       13:13:23
+8632,8174     Loewenhardtdamm/Boelckestr.        N->S       13:13:23
 #WPT: 132	19-FEB-10 13:13:39	52.4807777777778	13.3773611111111	buoy_white_red
-8625,8174     Loewenhardtdamm/Boelckestr.        N->S                 13:13:39
+8632,8174     Loewenhardtdamm/Boelckestr.        N->S                 13:13:39
 #WPT: 133	19-FEB-10 13:14:13	52.4803055555556	13.3771111111111	buoy_white_green
-8625,8174     Loewenhardtdamm/Boelckestr.        N->S       13:14:13
+8632,8174     Loewenhardtdamm/Boelckestr.        N->S       13:14:13
 #WPT: 134	19-FEB-10 13:14:28	52.4801388888889	13.3769444444444	buoy_white_red
-8625,8174     Loewenhardtdamm/Boelckestr.        N->S                 13:14:28
+8632,8174     Loewenhardtdamm/Boelckestr.        N->S                 13:14:28
 #WPT: 135	19-FEB-10 13:15:03	52.4798333333333	13.3768888888889	buoy_white_green
-8625,8174     Loewenhardtdamm/Boelckestr.        N->S       13:15:03
+8632,8174     Loewenhardtdamm/Boelckestr.        N->S       13:15:03
 #WPT: 136	19-FEB-10 13:15:44	52.4791944444444	13.3766388888889	buoy_white_red
 8642,7876     Werner-Voß-Damm/Boelckestr.        N->S                 13:15:44
 #WPT: 137	19-FEB-10 13:16:20	52.4786944444444	13.3765833333333	buoy_white_green
@@ -1723,15 +1723,15 @@ Fr, 19.02.2010
 #WPT: 143	19-FEB-10 14:11:06	52.4765555555556	13.3765833333333	buoy_white_red
 8642,7876     Werner-Voß-Damm/Boelckestr.        SW->NO               14:11:06
 #WPT: 144	19-FEB-10 14:11:58	52.4773611111111	13.3766111111111	buoy_white_red
-8625,8174     Loewenhardtdamm/Boelckestr.        S->N                 14:11:58
+8632,8174     Loewenhardtdamm/Boelckestr.        S->N                 14:11:58
 #WPT: 145	19-FEB-10 14:12:33	52.4778611111111	13.3766388888889	buoy_white_green
-8625,8174     Loewenhardtdamm/Boelckestr.        S->N       14:12:33
+8632,8174     Loewenhardtdamm/Boelckestr.        S->N       14:12:33
 #WPT: 146	19-FEB-10 14:12:49	52.4781111111111	13.3765555555556	buoy_white_red
-8625,8174     Loewenhardtdamm/Boelckestr.        S->N                 14:12:49
+8632,8174     Loewenhardtdamm/Boelckestr.        S->N                 14:12:49
 #WPT: 147	19-FEB-10 14:13:23	52.4786388888889	13.3765555555556	buoy_white_green
-8625,8174     Loewenhardtdamm/Boelckestr.        S->N       14:13:23
+8632,8174     Loewenhardtdamm/Boelckestr.        S->N       14:13:23
 #WPT: 148	19-FEB-10 14:13:38	52.4788888888889	13.3765277777778	buoy_white_red
-8625,8174     Loewenhardtdamm/Boelckestr.        S->N                 14:13:38
+8632,8174     Loewenhardtdamm/Boelckestr.        S->N                 14:13:38
 #WPT: 149	19-FEB-10 14:16:12	52.4811111111111	13.3776111111111	buoy_white_green
 8616,8605     Boelckestr./Bayernring             S->N       14:16:12
 #WPT: 150	19-FEB-10 14:16:44	52.4815277777778	13.3776944444444	buoy_white_red
@@ -1986,15 +1986,15 @@ Mi, 24.02.2010
 #WPT: 255	24-FEB-10 12:55:58	52.4914166666667	13.3827222222222	buoy_white_green
 9000,9509     Großbeerenstr./Hagelberger Str.    S->N       12:55:58
 #WPT: 256	24-FEB-10 12:56:16	52.4916666666667	13.3829444444444	buoy_white_green
-9043,9745     Yorckstr./Großbeerenstr.           S->N       12:56:16
+9044,9753     Yorckstr./Großbeerenstr.           S->N       12:56:16
 #WPT: 257	24-FEB-10 12:56:25	52.4918333333333	13.3830277777778	buoy_white_red
-9043,9745     Yorckstr./Großbeerenstr.           S->N                 12:56:25
+9044,9753     Yorckstr./Großbeerenstr.           S->N                 12:56:25
 #WPT: 258	24-FEB-10 12:57:15	52.4925	13.383	buoy_white_green
-9043,9745     Yorckstr./Großbeerenstr.           S->N       12:57:15
+9044,9753     Yorckstr./Großbeerenstr.           S->N       12:57:15
 #WPT: 259	24-FEB-10 12:57:24	52.4926666666667	13.3830277777778	buoy_white_red
-9043,9745     Yorckstr./Großbeerenstr.           S->N                 12:57:24
+9044,9753     Yorckstr./Großbeerenstr.           S->N                 12:57:24
 #WPT: 260	24-FEB-10 12:58:16	52.4933888888889	13.3833888888889	buoy_white_green
-9043,9745     Yorckstr./Großbeerenstr.           S->N       12:58:16
+9044,9753     Yorckstr./Großbeerenstr.           S->N       12:58:16
 #WPT: 261	24-FEB-10 12:59:38	52.49375	13.3843055555556	buoy_white_red
 9334,9670     Mehringdamm/Yorckstr./Gneisenaust  W->O                 12:59:38
 #WPT: 262	24-FEB-10 13:00:21	52.4936666666667	13.385	buoy_white_green
@@ -2158,9 +2158,9 @@ Fr, 26.02.2010
 #WPT: 329	26-FEB-10 13:26:45	52.4833611111111	13.3779444444444	buoy_white_green
 8616,8605     Boelckestr./Bayernring             O->W       13:26:45
 #WPT: 330	26-FEB-10 13:27:49	52.4802777777778	13.3771388888889	buoy_white_red
-8625,8174     Loewenhardtdamm/Boelckestr.        N->S                 13:27:49
+8632,8174     Loewenhardtdamm/Boelckestr.        N->S                 13:27:49
 #WPT: 331	26-FEB-10 13:28:24	52.4798055555556	13.3768611111111	buoy_white_green
-8625,8174     Loewenhardtdamm/Boelckestr.        N->S       13:28:24
+8632,8174     Loewenhardtdamm/Boelckestr.        N->S       13:28:24
 #WPT: 332	26-FEB-10 13:28:50	52.4781944444444	13.3766666666667	buoy_white_green
 8642,7876     Werner-Voß-Damm/Boelckestr.        N->S       13:28:50
 #WPT: 333	26-FEB-10 13:29:04	52.4772777777778	13.37675	buoy_white_red
@@ -2328,7 +2328,7 @@ Do, 29.03.2012
 #WPT: 084	29-MAR-12 12:55:08	52.5134166666667	13.4238055555556	buoy_white_green
 11768,12006   An der Michaelbrücke/Lichtenberge  W->O       12:55:08
 #WPT: 085	29-MAR-12 12:56:18	52.5109166666667	13.4283611111111	buoy_white_green
-12184,11652   Holzmarktstr./Stralauer Platz/And  NW->SO     12:56:18
+12180,11657   Holzmarktstr./Stralauer Platz/And  NW->SO     12:56:18
 #WPT: 086	29-MAR-12 12:56:51	52.5099722222222	13.4306111111111	buoy_white_green
 12497,11459   (Straße der Pariser Kommune - Spr  NW->SO     12:56:51
 #WPT: 087	29-MAR-12 12:57:24	52.509	13.43325	buoy_white_red
@@ -2458,7 +2458,7 @@ Fr, 13.04.2012
 #WPT: 142	13-APR-12 8:58:19	52.5149444444444	13.4338611111111	buoy_white_red
 12295,12197   Andreasstr./Singerstr.             O->W                 08:58:19
 #WPT: 143	13-APR-12 17:27:23	52.5062777777778	13.4017777777778	buoy_white_green
-10244,11160   Oranienstr./Alte Jakobstr.         NO->SW     17:27:23
+10256,11160   Oranienstr./Alte Jakobstr.         NO->SW     17:27:23
 #WPT: 144	13-APR-12 17:30:13	52.4990555555556	13.3956111111111	buoy_white_green
 9873,10285    Zossener Str./(Zossener Brücke -   N->S       17:30:13
 #WPT: 145	13-APR-12 17:34:28	52.4931944444444	13.3877777777778	buoy_white_green
@@ -2474,7 +2474,7 @@ Fr, 13.04.2012
 #WPT: 150	13-APR-12 17:40:25	52.4834166666667	13.3771944444444	buoy_white_green
 8616,8605     Boelckestr./Bayernring             O->W       17:40:25
 #WPT: 151	13-APR-12 17:41:20	52.4805277777778	13.3773055555556	buoy_white_green
-8625,8174     Loewenhardtdamm/Boelckestr.        N->S       17:41:20
+8632,8174     Loewenhardtdamm/Boelckestr.        N->S       17:41:20
 #WPT: 152	13-APR-12 17:42:01	52.4782222222222	13.3766666666667	buoy_white_red
 8642,7876     Werner-Voß-Damm/Boelckestr.        N->S                 17:42:01
 #WPT: 153	13-APR-12 19:05:59	52.5000833333333	13.4378333333333	buoy_white_green
@@ -2564,9 +2564,9 @@ Mo, 16.04.2012
 #WPT: 276	16-APR-12 19:01:56	52.5134722222222	13.4237777777778	buoy_white_green
 11768,12006   An der Michaelbrücke/Lichtenberge  NO->SW     19:01:56
 #WPT: 277	16-APR-12 19:02:43	52.5118611111111	13.4265277777778	buoy_white_red
-12184,11652   Holzmarktstr./Stralauer Platz/And  NW->SO               19:02:43
+12180,11657   Holzmarktstr./Stralauer Platz/And  NW->SO               19:02:43
 #WPT: 278	16-APR-12 19:03:28	52.5103055555556	13.4297222222222	buoy_white_green
-12184,11652   Holzmarktstr./Stralauer Platz/And  NW->SO     19:03:28
+12180,11657   Holzmarktstr./Stralauer Platz/And  NW->SO     19:03:28
 #WPT: 279	16-APR-12 19:03:49	52.5096944444444	13.4313888888889	buoy_white_red
 12497,11459   (Straße der Pariser Kommune - Spr  NW->SO               19:03:49
 #WPT: 280	16-APR-12 19:04:38	52.5085555555556	13.4342777777778	buoy_white_green
@@ -2642,9 +2642,9 @@ Mi, 18.04.2012
 #WPT: 310	18-APR-12 19:45:40	52.5146388888889	13.4203611111111	buoy_white_green
 11768,12006   An der Michaelbrücke/Lichtenberge  NW->SO     19:45:40
 #WPT: 311	18-APR-12 19:47:40	52.5108611111111	13.4287777777778	buoy_white_green
-12184,11652   Holzmarktstr./Stralauer Platz/And  NW->SO     19:47:40
+12180,11657   Holzmarktstr./Stralauer Platz/And  NW->SO     19:47:40
 #WPT: 312Mitte	18-APR-12 19:48:55	52.5103888888889	13.4303611111111	buoy_white_green
-12184,11652   Holzmarktstr./Stralauer Platz/And  NW->SO     19:48:55
+12180,11657   Holzmarktstr./Stralauer Platz/And  NW->SO     19:48:55
 #WPT: 312	18-APR-12 19:50:43	52.5100555555556	13.436	buoy_white_green
 12645,11673   Straße der Pariser Kommune/Erich-  S->N       19:50:43
 #WPT: 313	18-APR-12 19:51:28	52.5121944444444	13.4385	buoy_white_green
@@ -2714,7 +2714,7 @@ Fr, 20.04.2012
 #WPT: 339	20-APR-12 7:59:00	52.5084166666667	13.4351388888889	buoy_white_green
 12497,11459   (Straße der Pariser Kommune - Spr  SO->NW     07:59:00
 #WPT: 340	20-APR-12 7:59:39	52.5096388888889	13.4325277777778	buoy_white_green
-12184,11652   Holzmarktstr./Stralauer Platz/And  SO->NW     07:59:39
+12180,11657   Holzmarktstr./Stralauer Platz/And  SO->NW     07:59:39
 #WPT: 341	20-APR-12 8:01:38	52.5133611111111	13.4245833333333	buoy_white_green
 11768,12006   An der Michaelbrücke/Lichtenberge  SO->NW     08:01:38
 #WPT: 342	20-APR-12 8:02:17	52.5143888888889	13.4219166666667	buoy_white_green

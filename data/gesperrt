@@ -161,7 +161,7 @@ Baerwaldstr.	1 10500,10081 10513,10038 10480,9949 10408,9800 10361,9755
 Dittersbacher Weg	1 7865,3344 7852,3183
 Anzengruberstr.	1 12865,8346 12689,8289
 Nalepastr. am Rundfunkgeb‰ude	2 17076,8443 17059,8097
-Kirchstr.	1 22196,4847 22234,4789 22243,4710 22284,4653 22312,4593
+Kirchstr.	1 22196,4847 22240,4768 22246,4711 22284,4653 22314,4604
 Kietzer Str.	1s 22372,4496 22383,4470
 Ontarioseestr.	1 18552,10135 18577,10023 18408,10041 18339,10048
 Degnerstr. (auﬂer Tram)	1 16448,15593 16475,15659
@@ -207,7 +207,7 @@ Herbststr.	1 7997,18524 8096,18456 8222,18375 8286,18331 8465,18365 8627,18402
 Ruhwaldweg: Schranke gesperrt	2 773,13375 758,13334
 Alt-Reinickendorf	1 7003,18715 6869,18721 6775,18726 6734,18728 6572,18793 6716,18788 6801,18761 6879,18737 7003,18715
 Lauterstr.	1 5817,7223 5810,7337
-Friedrich-Wilhelm-Platz	1 5318,7424 5310,7325 5324,7205
+Friedrich-Wilhelm-Platz	1 5318,7424 5310,7325 5314,7217
 Stolbergstr.	1 8850,6421 8834,6639
 Richnowstr.	1 8946,6501 8850,6421
 Menzelstr.	1 6185,6469 6155,6722
@@ -355,7 +355,7 @@ Triniusstr.	1 18339,6660 18273,6606
 Franz-Stenzer-Str.	1 19876,15644 19974,15594 20044,15585 20111,15609 20181,15658 20399,15744 20508,15792
 Planetenstr.	1 15175,7221 15056,7198 14951,7163
 Wustermarker Str.	1 -5097,14599 -5111,14486 -5004,14454 -4981,14442 -4750,14393
-Gartenstr. (Kˆpenick)	1 22419,4457 22382,4361 22362,4331 22302,4255 22273,4216
+Gartenstr. (Kˆpenick)	1 22419,4457 22382,4361 22362,4331 22302,4255 22279,4220
 Spitzerstr.	1 22319,4197 22358,4282 22425,4370 22451,4441
 Zitadellenweg/BMW-Betriebswerk	2 -1993,14594 -1768,14605 -1616,14527
 Tassostr.	1 13679,16286 13645,16192 13659,16151 13642,16118 13625,16054 13621,15990 13630,15956
@@ -435,7 +435,7 @@ Gleyeweg	1 17565,8197 17532,8125 17529,8073 17613,7989 17651,7973 17683,7958 177
 Murtzaner Ring	1 19818,14064 19770,14060 19731,14061 19692,14082 19634,14171 19599,14273 19595,14348 19593,14405 19593,14472
 Murtzaner Ring	1 19818,14064 19921,14064 19951,14083 20051,14191 20061,14220 20056,14373 20059,14441
 Rosenstr.	1 22284,4653 22212,4655 22138,4661
-Laurenzstr.	1 22243,4710 22175,4730
+Laurenzstr.	1 22246,4711 22175,4730
 Werrastr.: Firmengel‰nde	2 13802,8195 13697,8279
 Neuendorfer Str.	1 -3295,14777 -3228,14794
 Neuendorfer Str.	1 -3228,14794 -3251,14741
@@ -1129,9 +1129,9 @@ Allee der Kosmonauten -> Alt-Marzahn: Straﬂenbahntrasse	3::igndisp 21163,15289 2
 Alt-Marzahn -> Allee der Kosmonauten: Straﬂenbahntrasse	3::igndisp 21139,15376 21187,15350 21232,15465
 Straﬂenbahn auf der Fahrbahn	3nocross::ignrte 10089,18180 10054,18210 9909,18333
 Schˆnholzer Str. -> Wollankstr.: Straﬂenbahn auf der Fahrbahn	3::igndisp 10089,18180 10054,18210 10027,18165
-Straﬂenbahntrasse	3nocross::ignrte 22674,4309 22812,4236 22965,4124
-Pohlestr. -> M¸ggelheimer Str.: Straﬂenbahntrasse	3::igndisp 22831,4070 22812,4236 22674,4309
-M¸ggelheimer Str. -> Pohlestr.: Straﬂenbahntrasse	3::igndisp 22965,4124 22812,4236 22831,4070
+Straﬂenbahntrasse	3nocross::ignrte 22674,4309 22812,4227 22965,4124
+Pohlestr. -> M¸ggelheimer Str.: Straﬂenbahntrasse	3::igndisp 22831,4070 22812,4227 22674,4309
+M¸ggelheimer Str. -> Pohlestr.: Straﬂenbahntrasse	3::igndisp 22965,4124 22812,4227 22831,4070
 Straﬂenbahntrasse	3nocross::ignrte 12090,16199 12097,16263 12077,16380
 Caligaripl. -> Gustav-Adolf-Str.: Straﬂenbahntrasse	3::igndisp 12121,16317 12097,16263 12182,16322
 Prenzlauer Promenade -> Gustav-Adolf-Str.: Straﬂenbahntrasse	3::igndisp 12077,16380 12097,16263 12182,16322
@@ -1723,8 +1723,8 @@ Oberlinstr. -> Wolfensteindamm: Linksabbiegen in den Wolfensteindamm gef‰hrlich/
 Wolfensteindamm -> Oberlinstr.: Linksabbiegen in den Wolfensteindamm gef‰hrlich/unbequem	3::igndisp 4789,5079 4692,4997 4732,4939
 Gehweg Gelieustr. -> Wolfensteindamm: Linksabbiegen in den Wolfensteindamm gef‰hrlich/unbequem	3::igndisp 4725,4876 4675,4983 4517,4853
 Wolfensteindamm -> Gehweg Gelieustr.: Linksabbiegen in den Wolfensteindamm gef‰hrlich/unbequem	3::igndisp 4692,4997 4675,4983 4725,4876
-Mittelstreifen	3nocross::ignrte 6687,8385 6765,8480 6912,8617 6990,8685
-Parkweg Heinrich-Lassen-Park -> Hauptstr.: Mittelstreifen	3::igndisp 6815,8691 6912,8617 6990,8685
+Mittelstreifen	3nocross::ignrte 6687,8385 6765,8480 6912,8617 6989,8687
+Parkweg Heinrich-Lassen-Park -> Hauptstr.: Mittelstreifen	3::igndisp 6815,8691 6912,8617 6989,8687
 Hauptstr. -> Parkweg Heinrich-Lassen-Park: Mittelstreifen	3::igndisp 6765,8480 6912,8617 6815,8691
 Straﬂenbahntrasse	3nocross::ignrte 18631,10167 18585,10278 18554,10354 18446,10620
 Otto-Schmirgal-Str. -> Am Tierpark: Straﬂenbahntrasse	3::igndisp 18512,10337 18554,10354 18446,10620
@@ -2298,7 +2298,7 @@ Dr‰ngelgitter	BNP:5:-60 14060,14986
 Dr‰ngelgitter	BNP:5:-210 20586,10935
 Dr‰ngelgitter, relativ breite Durchfahrt	BNP:3:66 12363,2367
 Dr‰ngelgitter	BNP:5:28 15516,6357
-Dr‰ngelgitter	BNP:5:29 15496,6314
+Dr‰ngelgitter	BNP:5:17 15496,6314
 Dr‰ngelgitter	BNP:5:22 15403,6145
 Dr‰ngelgitter	BNP:5:12 15393,6112
 Enges Dr‰ngelgitter	BNP:5:52:trailer=15 7887,24043
@@ -2711,7 +2711,7 @@ tragen (10 x 3 Stufen)	0:60:17 2170,8841
 tragen (2 x 7 Stufen)	0:30:-178 2316,8469
 Mittelstr.	1 9462,12481 9343,12464
 Bauhofstr.	1 9810,12712 9671,12644
-Hollmannstr.	2 9991,10637 9777,10719
+Hollmannstr.	2 9991,10637 9869,10672 9777,10719
 Nordsternstr.	1s 6268,8884 6292,8899
 tragen	0:60:-139 -9371,-618
 tragen (ca. 60 Stufen)	0:80:-213 -8120,-1500

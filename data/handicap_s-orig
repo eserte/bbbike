@@ -103,8 +103,8 @@ Rathausstr. und Rathausbrücke: Behinderungen wegen Bauarbeiten möglich	q1::inwor
 # 
 #: last_checked: 2012-09-21 vvv
 #: next_check: 2012-10-20 vvv
-Alte Jakobstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 10489,11405 10436,11344
-Alte Jakobstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10436,11344 10244,11160
+Alte Jakobstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 10489,11405 10437,11352
+Alte Jakobstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10437,11352 10256,11160
 Neue Grünstr.: Einbahnstraßenregelung wegen Bauarbeiten in der Alten Jakobstr.	q3::inwork; 10389,11390 10446,11470
 #: next_check: ^^^
 #: last_checked: ^^^
@@ -178,8 +178,8 @@ Alexanderplatz: Fußgängerverkehr	q2 11139,13008 10970,12822 10923,12779
 Rathausstr.: Fußgänger	q1 10923,12779 10704,12595
 Dircksenstr.: langsame Straßenbahnen, Fußgänger	q2 10970,12822 10849,12944
 Dircksenstr.: Fußgänger	q2 10970,12822 11007,12773 11030,12741 11087,12780 11105,12764
-Gontardstr.: langsame Straßenbahnen, Fußgänger	q2 10740,12960 10793,12906 10923,12779
-Uferweg im Treptower Park: Fußgänger, besonders an schönen Tagen	q2 15793,8984 15638,9020 15527,9096 15513,9144 15432,9322 15321,9448 15140,9566 14910,9643 14697,9726 14671,9759 14500,9856 14483,9843 14448,9922
+Gontardstr.: langsame Straßenbahnen, Fußgänger	q2 10737,12963 10793,12906 10923,12779
+Uferweg im Treptower Park: Fußgänger, besonders an schönen Tagen	q2 15793,8984 15638,9020 15527,9096 15513,9144 15432,9322 15321,9448 15174,9554 15052,9584 14910,9643 14697,9726 14674,9764 14500,9856 14483,9843 14448,9922
 (S-Bahnhof - Treptower Hafen): Fußgänger, besonders an schönen Tagen	q2 14361,9772 14436,9784 14483,9843
 Treptower Park, am Rosengarten: Fußgänger	q2 14819,9462 14910,9643
 Treptower Park: Fußgänger	q1 14697,9726 14645,9710 14575,9648 14496,9705 14361,9772
@@ -392,7 +392,7 @@ Zauritzweg: Fußgänger	q1 4199,11819 4195,11690
 Hebbelstr.: Fußgänger	q2 3117,11852 3251,12025 3258,12035 3295,12068
 Spreewaldplatz: Fußgänger	q1 12341,10218 12292,10374
 Mussehlstr.: Bordsteine (Bayernring und Wolffring)	q3 8836,8564 8756,8453 8711,8371
-(Fritz-Bräuning-Promenade): Bordsteine, Fußgänger	q3 8731,8020 8620,8018
+(Fritz-Bräuning-Promenade): Bordsteine, Fußgänger	q3 8731,8020 8623,8018
 (Teltowkanal, Nordufer): Fußgänger (eigentlich für Radfahrer verboten)	q2 8750,5173 9118,5328 9145,5323 9182,5332
 (Kynaststr. - Uferwanderweg): Fußgänger	q1 14843,10621 14906,10587
 (Kynaststr. - Paul-und-Paula-Ufer): Fußgänger	q1 14821,10478 14868,10467
@@ -431,7 +431,7 @@ Marie-Elisabeth-Lüders-Steg: eng, Fußgänger	q2 8415,12749 8551,12746
 Kleine Andreasstr.: Gehweg, Bordsteine	q3 12211,12128 12279,12113
 Fritz-Schiff-Weg: Fußgänger	q1 13463,12507 13484,12436 13472,12337
 (Molkenmarkt - Parochialstr.): Bordsteine	q2 10738,12364 10831,12371
-(Crellestr. - Julius-Leber-Brücke): Fußgänger	q2 7535,9087 7555,8978 7509,8929 7497,8916
+(Crellestr. - Julius-Leber-Brücke): Fußgänger	q2 7524,9093 7555,8978 7509,8929 7497,8916
 (Fischerinsel, Spreekanalufer): Fußgänger	q1 10364,11896 10329,11842 10373,11781 10517,11795 10672,11870 10776,11942 10824,11992
 (Baikalstr. - Rummelsburger Str.): Fußgänger	q1 17281,10598 17249,10666
 (Baikalstr. - Rummelsburger Str.): Fußgänger	q1 17249,10702 17247,10755 17261,10827 17258,10870
@@ -449,7 +449,7 @@ Spreeuferweg - Elisabeth-Abegg-Str.: Rampe	q3 7923,12872 7885,12821
 (südliche Fahrbahn des Sachsendamms - Naturpark Schöneberg): Rampe	q2 7696,7562 7744,7538 7710,7547 7750,7528
 Heidenfeldstr.: Gehweg	q1 13433,13346 13393,13326
 (Gudrunstr. - Lichtenberger Brücke): Gehweg, Bordsteine	q2 16870,11920 16884,11889 16851,11852
-Grünstr.: Fußgängerzone, Radfahren erlaubt	q2 22111,4562 22162,4546 22214,4548 22312,4593
+Grünstr.: Fußgängerzone, Radfahren erlaubt	q2 22111,4562 22162,4546 22214,4548 22324,4586
 Schloßplatz Köpenick: Fußgänger, Straßenbahn, Lieferverkehr	q2 22111,4562 22093,4499
 (Karlsgartenstr. - Hasenheide): Parkweg, Fußgänger	q1 11627,8485 11560,8488 11508,8491 11333,8582 11255,8591
 #: note: Radfahren erlaubt
@@ -533,11 +533,11 @@ Heinitzweg: Fußgänger	q2 10329,1077 10379,1097
 Haewererweg: enge Durchfahrt, Bordstein	q1 12125,1282 12097,1243
 (Weichselstr. - Sasarsteig): Spielplatz	q3 12330,8636 12303,8605 12170,8548
 #: note: mittlerweile werden Radfahrer offiziell über den Platz geführt
-Kaiser-Wilhelm-Platz: einige Fußgänger	q2 7201,8870 7320,8939
+Kaiser-Wilhelm-Platz: einige Fußgänger	q2 7201,8870 7307,8945
 Kernhofer Str.: Fußgänger, Supermarkt	q2 15369,10921 15353,10870
 Ceciliengärten: schmale Rampe oder Treppe	q3 6356,7479 6289,7472
 #: XXX_prog: für Anhänger q2
-Sebastianstr.: Absperrung für Autos, mit Anhänger unbequem passierbar	q1 10918,11084 10939,11045
+Sebastianstr.: Absperrung für Autos, mit Anhänger unbequem passierbar	q1 10911,11080 10934,11038
 (Weg am Humboldthain): Radfahren erlaubt, Fußgänger haben Vorrang	q1 9255,15816 9092,15789 8934,15740
 Tasdorfer Str. - Wilhelm-Guddorf-Str.: Fußgänger	q1 15393,11590 15423,11667
 (Grünes Band): Radfahren erlaubt, Fußgänger haben Vorrang	q1 15349,11911 15301,11876 15327,11724 15328,11636 15377,11555 15412,11510 15414,11487 15445,11455 15515,11416
@@ -710,7 +710,7 @@ Radenzer Str.: zwei Bodenschwellen	q1 16220,6277 16304,6358
 Dornbrunner Str.: zwei Bodenschwellen	q1 16144,6542 16043,6414
 #: XXX_prog: für Anhänger relevant (q1 oder so)
 Meierottostr.: zwei Moabiter Kissen	q0 5463,9961 5246,10168
-(Neue Grünstr. - Alte Jakobstr.): Radfahren verboten	q4 10624,11548 10534,11609
+(Neue Grünstr. - Alte Jakobstr.): Radfahren verboten	q4 10624,11548 10526,11612
 Cuvrystr.: Bodenschwellen	q1 13053,10088 13132,10239
 Elsensteg: Fußgänger	q3 13366,8694 13376,8705 13394,8730 13402,8741
 Elsenstr. - Bahndamm: enger Weg	q2 13923,9405 13953,9372
@@ -759,7 +759,7 @@ Karl-Vesper-Str.: enge Straße	q1 14184,13666 14205,13755 14263,13739
 Mahlerstr.: Fußgängerzone, Radfahrer frei	q2 13739,15643 13714,15709
 Fußgängerbrücke Storkower Str.: Fußgänger	q2 14481,13143 14524,13271 14530,13269
 Lemgoer Str.: Fußgänger, Bordsteine	q2 14341,17030 14331,17016 14328,17011
-(Uferweg am Kanal): gemeinsamer Rad- und Gehweg	q1 16425,6445 16275,6275 16263,6248 16098,6134 16065,6126 16044,6120
+(Uferweg am Kanal): gemeinsamer Rad- und Gehweg	q1 16425,6445 16275,6275 16263,6248 16098,6134 16065,6126 16049,6121
 Am Haselbusch: Radfahren verboten, ggfs. schieben	q1 17411,4979 17356,5011
 (Allmersweg - Groß-Berliner Damm): Fußgänger, Bordsteine	q3 17789,5189 17735,5170
 #: XXX_prog: für Anhänger q3
@@ -883,7 +883,7 @@ Wirsitzer Weg: Bodenschwelle	q0 22448,6957 22641,6918
 # konflikt mit anderen Mittelheide-Eintrag! --- : XXX_prog: für Anhänger relevant (q1 oder so) --- Mittelheide: zwei Bodenschwellen	q0 23135,6500 23220,6520 23299,6541
 (Valeska-Gert-Str. - Am Postbahnhof): Fußgänger	q1 12807,11287 12713,11372
 #: XXX_prog: 2x Bordsteine
-Fritzi-Massary-Str: Bordsteine	q3 15428,6355 15447,6380
+Fritzi-Massary-Str: Bordsteine	q3 15428,6355 15452,6384
 (Rotkehlchenweg - Kormoranweg): eng, Fußgänger	q2 14090,3776 14185,3734
 Dürtenstr.: Fußgänger	q2 13785,4839 13825,4850 13874,4867 13914,4877
 Angelikaweg: Fußgänger	q1 15459,2921 15537,3026
@@ -1007,11 +1007,11 @@ Straße 46 (Heinersdorf): enger Weg	q2 12587,17603 12505,17469 12500,17460
 #: XXX_prog: Bordsteine (2x), wobei mit etwas Glück abgeflachte Bordsteine frei sind...
 Dresdener Str.: Fußgänger, Bordsteine	q3 11034,11249 11000,11327
 #: XXX_prog: Bordstein, relativ hoch
-Eingang Leinestr.: Bordstein	q3 11547,7432 11553,7437
+Eingang Leinestr.: Bordstein	q3 11547,7432 11558,7438
 #: XXX_prog: Bordstein, relativ niedrig
-Eingang Okerstr.: Bordstein	q2- 11528,7528 11536,7533
+Eingang Okerstr.: Bordstein	q2- 11528,7528 11540,7534
 #: XXX_prog: Bordstein
-Eingang Allerstr.: Bordstein	q3 11507,7647 11515,7654
+Eingang Allerstr.: Bordstein	q3 11507,7647 11516,7654
 Tullaweg - An der Heilandsweide: Fußgänger	q1 8464,990 8492,1050
 (Kirchstr. - An der Dorfkirche): getrennter Geh- und Radweg	q1 8263,1061 8259,1028 8202,1024 8160,932 8173,839
 #: note: nicht klar, ob das Durchfahren verboten ist, auf der östlichen Seite kein Verbotsschild gesehen
@@ -1143,7 +1143,7 @@ Werner-Sylten-Weg: Fußgänger	q1 1016,737 1022,738 1129,763 1267,789
 #: XXX_prog BS an der Rüdesheimer (ansonsten trotzdem q2)
 Lorcher Str.: eng, Fußgänger	q2 4273,7002 4206,7040 4184,7053 4160,7043
 Lorcher Str.: Fußgänger	q1 4160,7043 4059,7038
-Crellestr.: Fußgänger, Straßencafés	q2 7491,9061 7535,9087 7583,9115
+Crellestr.: Fußgänger, Straßencafés	q2 7484,9066 7524,9093 7570,9124
 (S-Bhf. Südkreuz - IKEA): Fußgänger	q1 7921,7288 7920,7224 7924,7185
 #: XXX_prog BS am Watzmannweg und 2x an der Furkastr., am Glärnischweg nicht geprüft (ansonsten trotzdem q2)
 Königstuhlweg: Gehweg, für Radfahrer nicht freigegeben, Bordsteine	q2- 10087,2365 10214,2348 10334,2321
@@ -1530,7 +1530,7 @@ Wentowsteig: enge Straße mit parkenden Autos	q1 6924,20695 6945,20805 6955,20859
 #: by: Johannes Nerger:
 (Schönholzer Heide, parallel zur Friesenstr.): Fußgänger	q1 8765,19288 8791,19249 8947,19166 9446,18855 9475,18862
 #: by: Felix Beutler:
-Nordufer: teilweise sehr schmaler Radweg	q1 7212,14738 7433,14656 7464,14636
+Nordufer: teilweise sehr schmaler Radweg	q1 7212,14738 7427,14648 7464,14636
 #: by: Jörn Busch:
 #: corrected_by: srt (q2 -> q1)
 (Weg am Nordgraben): schmaler Weg, mäßiger Fußgängerverkehr	q1 3563,20589 3537,20624 3470,20683 3391,20746 3312,20789 3144,20865 3094,20905 3062,20923 3032,20930 2919,20910 2570,20837
@@ -2290,7 +2290,7 @@ Bat-Yam-Platz: Fußgänger	q1 14515,2212 14545,2206 14633,2145
 Saalmannsteig: Fußgänger	q2 5410,19050 5284,19043 5181,19037
 #: by: Stefan Dietrich:
 #: corrected_by: srt/policy (q3 -> q1)
-Jägerstr. (Köpenick): enge Straße	q1 22395,4678 22365,4676 22355,4660 22312,4593
+Jägerstr. (Köpenick): enge Straße	q1 22395,4678 22365,4676 22355,4660 22314,4604
 #: by: Roger Menge:
 (Swakopmunder Str. - Charles-Corcelle-Ring): Fußgänger	q2 5223,16783 5141,16799 5091,16810 5035,16819 5000,16826
 #: by: catrin (ruehl) vvv

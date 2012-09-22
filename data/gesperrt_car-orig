@@ -82,7 +82,7 @@ Hoffmannstr./Elsenstr.	3 14076,10011 14289,9870 14405,10027
 Behren/Ebert	3 8861,12125 8743,12099 8737,12098 8595,12066 8581,11896 8571,11846
 UdL/Universitätsstr.	3nocross 9475,12365 9601,12380 9656,12386 9695,12390
 Kolonnenstr. -> Hohenfriedbergstr.	3 7709,8777 7795,8765 7791,8882
-Horn - Yorck	3nocross 8777,9601 9002,9731 9043,9745
+Horn - Yorck	3nocross 8777,9601 9002,9731 9044,9753
 Mehringdamm - Baruther	3nocross 9444,9919 9387,9804 9334,9670
 Fidicin - Mehringdamm	3 9295,9047 9224,9053 9225,9038 9227,8890
 Hobrechtstr.	1 12011,9100 11998,8872
@@ -135,7 +135,7 @@ Lefèvrestr.	1 5360,6642 5215,6643
 #: by: ^^^
 #: by: N. H. Sassi (Einbahnstraße nicht für Radfahrer)
 Kühlebornweg	1 5161,4664 5075,4600 5004,4709
-Gartenstr.	1 22467,3889 22275,4032 22261,4105 22273,4216
+Gartenstr.	1 22467,3889 22281,4033 22263,4120 22279,4220
 Wichmannstr.	1 6462,11069 6552,11006 6681,10959 6824,10904
 Lützowufer	1 6873,11011 6732,11106 6626,11178 6582,11202
 Mulackstr.	1 10308,13575 10406,13543 10535,13509 10640,13471
@@ -339,7 +339,7 @@ Potsdamer Str.: Mittelstreifen	3nocross 8226,11458 8301,11469 8358,11477 8374,11
 Jägerallee/Hegelallee: Durchfahrt verboten	3 -13221,-718 -13231,-763 -13236,-797
 Jägerallee/Hegelallee: Durchfahrt verboten	3 -13236,-797 -13231,-763 -13221,-718
 Osloer Str.: Straßenbahntrasse	3nocross 9455,16609 9331,16624 9210,16638 8939,16668
-Osloer Str.: Straßenbahntrasse	3nocross 8260,16740 8196,16746 8144,16750 7763,16779
+Osloer Str.: Straßenbahntrasse	3nocross 8249,16741 8196,16746 8144,16750 7763,16779
 Seestr.: Straßenbahntrasse	3nocross 7606,16746 7456,16620 7417,16587 7403,16575 7295,16477 7231,16418
 Bismarckstr.: Mittelstreifen	3nocross 3690,11629 3844,11649 3898,11655
 Lenbachstr.: Einbahnstraße (genau genommen nur das östlichste Stück)	1 5888,6520 6070,6570
@@ -453,9 +453,9 @@ Karl-Marx-Allee: Mittelstreifen	3nocross 12114,12546 12134,12540 12360,12505
 #XXX del --- Niederwallstr./Spittelmarkt: nur Abbiegen nach rechts erlaubt	3 10183,11770 10205,11758 10240,11740 10299,11786
 #XXX del --- Gertraudenstr.: Abbiegen verboten	3nocross 10512,12039 10460,11979 10391,11898
 #XXX del --- Gertraudenstr.: Abbiegen verboten	3nocross 10313,11805 10299,11786 10240,11740
-Kleineweg: nur für Anlieger	2:Anlieger 9126,8025 9130,7804 9132,7661
+Kleineweg: nur für Anlieger	2:Anlieger 9130,8025 9130,7810 9132,7661
 Kleineweg: nur für Anlieger	2:Anlieger 9115,7645 9120,7600 9145,7522 9097,7469
-Peter-Strasser-Weg: nur für Anlieger	2:Anlieger 9240,7797 9130,7804
+Peter-Strasser-Weg: nur für Anlieger	2:Anlieger 9240,7811 9130,7810
 Friedrich-Wilhelm-Str.: In die andere Richtung nur für Anlieger	1 8385,5907 8266,5911
 Parkstr.: Durchfahrt gesperrt	3 * 9184,6413 *
 Hermannstr./Rollbergstr.	3nocross 11933,8198 11963,8074 11979,8014
@@ -463,7 +463,7 @@ Mittelstreifen	3nocross 7579,10183 7539,9970 7526,9791
 Schönhauser Allee: Mittelstreifen	3nocross 10779,13793 10832,13877 10895,13961
 Schönhauser Allee: Abbiegen verboten	3 10703,13832 10779,13793 10832,13877
 Straßenbahntrasse	3nocross 21796,4517 21775,4470 21773,4440
-Kietz	1 22273,4216 22292,4279 22312,4329 22334,4383 22339,4396 22364,4429 22383,4470
+Kietz	1 22279,4220 22292,4279 22312,4329 22334,4383 22339,4396 22364,4429 22383,4470
 Mittelstreifen	3nocross 5705,13359 5857,13342 5956,13330
 Mittelstreifen	3nocross 6228,13324 6112,13327 6011,13330
 #: note: Luftbild:
@@ -624,7 +624,7 @@ Gemeinschaftsstr.	1 20067,4054 20109,4087
 #: confirmed_by: srt
 Malchiner Str.	1 13866,4481 13869,4626 13836,4759
 Dömitzer Str.	1 13771,4485 13775,4631 13757,4729
-Kirchstr.: nur Linienverkehr erlaubt	2 22312,4593 22284,4653
+Kirchstr.: nur Linienverkehr erlaubt	2 22314,4604 22284,4653
 Behrenstr./Bebelplatz	1 9801,12245 9743,12239 9708,12235 9674,12231 9631,12227
 Theodorstr.: Poller	3 * 24921,10705 *
 Anzengruberstr.	1 13042,8395 12865,8346
