@@ -403,19 +403,8 @@ sub stage_trackdata {
 # Calculate statistics on data, total and per-device
 sub stage_statistics {
     my @results = @{ $state->{results} };
-    for my $filter_stat_rule (@filter_stat) {
-	if (my($key, $op, $val) = $filter_stat_rule =~ m{^(.*?)(==|!=|=~|!~|<|<=|>|>=)(.*)$}) {
-	    my $code = '$_->{' . $key . '} ' . $op . ' ' . $val;
-	    warn "code: $code\n" if $v;
-	    @results = grep {
-		my $rv = eval $code;
-		die $@ if $@;
-		$rv;
-	    } @results;
-	} else {
-	    die "Cannot parse filterstat rule '$filter_stat_rule'";
-	}	
-    }
+    _filter_results(\@results, \@filter_stat);
+
     my %seen_device = %{ $state->{seen_device} };
 
     #my @cols = grep { /^!/ } keys %{ $results[0] };
@@ -467,6 +456,8 @@ sub stage_statistics {
 sub stage_output {
     my @cols = @{ $state->{cols} };
     my @results = @{ $state->{results} };
+    _filter_results(\@results, \@filter_stat);
+
     my %seen_device = %{ $state->{seen_device} };
     my %stats = %{ $state->{stats} };
     my %count_per_device = %{ $state->{count_per_device} };
@@ -735,6 +726,23 @@ sub _fraction {
 	return ($middle->Longitude-$first->Longitude)/$delta;
     }
     return ($middle->Latitude-$first->Latitude)/$delta;
+}
+
+sub _filter_results {
+    my($results, $filters) = @_;
+    for my $filter_stat_rule (@$filters) {
+	if (my($key, $op, $val) = $filter_stat_rule =~ m{^(.*?)(==|!=|=~|!~|~~|<|<=|>|>=)(.*)$}) {
+	    my $code = '$_->{' . $key . '} ' . $op . ' ' . $val;
+	    warn "code: $code\n" if $v;
+	    @$results = grep {
+		my $rv = eval $code;
+		die $@ if $@;
+		$rv;
+	    } @$results;
+	} else {
+	    die "Cannot parse filterstat rule '$filter_stat_rule'";
+	}	
+    }
 }
 
 __END__
