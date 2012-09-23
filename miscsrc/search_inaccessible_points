@@ -141,7 +141,7 @@ sub new_search {
     my $net = StrassenNetz->new($s);
     $net->make_net(UseCache => $usecache);
     $net->make_sperre($blocked, %blocked_type);
-    flood_search($net);
+    flood_search($net, $refpoint);
 }
 
 # XXX Here no handling of carry_points
