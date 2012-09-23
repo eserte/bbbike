@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2005,2006,2007,2008,2009,2010,2011 Slaven Rezic. All rights reserved.
+# Copyright (C) 2005,2006,2007,2008,2009,2010,2011,2012 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -138,7 +138,7 @@ sub run {
     $self->{maptype} = ($maptype =~ /hybrid/i ? 'G_HYBRID_MAP' :
 			$maptype =~ /normal/i ? 'G_NORMAL_MAP' :
 			$maptype =~ /osm-mapnik/i ? 'mapnik_map' :
-			$maptype =~ /osm-tah/i    ? 'tah_map' :
+			#$maptype =~ /osm-tah/i    ? 'tah_map' :
 			$maptype =~ /osm-cycle/i  ? 'cycle_map' :
 			$maptype =~ /bbbikeorg/i  ? 'bbbikeorg_map' :
 			'G_SATELLITE_MAP');
@@ -643,8 +643,8 @@ EOF
 	    mapType = "hybrid";
 	} else if (map.getCurrentMapType() == mapnik_map) {
 	    mapType = "osm-mapnik";
-	} else if (map.getCurrentMapType() == tah_map) {
-	    mapType = "osm-tah";
+	// } else if (map.getCurrentMapType() == tah_map) {
+	//     mapType = "osm-tah";
 	} else if (map.getCurrentMapType() == cycle_map) {
 	    mapType = "osm-cycle";
 	} else if (map.getCurrentMapType() == bbbikeorg_map) {
@@ -928,15 +928,15 @@ EOF
         { urlArg: 'mapnik', linkColor: '#000000' });
     map.addMapType(mapnik_map);
 
-    var tilelayers_tah = new Array();
-    tilelayers_tah[0] = new GTileLayer(copyrightCollection, 0, 17);
-    tilelayers_tah[0].getTileUrl = GetTileUrl_TaH;
-    tilelayers_tah[0].isPng = function () { return true; };
-    tilelayers_tah[0].getOpacity = function () { return 1.0; };
-    var tah_map = new GMapType(tilelayers_tah,
-        new GMercatorProjection(19), "T\@H",
-        { urlArg: 'tah', linkColor: '#000000' });
-    map.addMapType(tah_map);
+    // var tilelayers_tah = new Array();
+    // tilelayers_tah[0] = new GTileLayer(copyrightCollection, 0, 17);
+    // tilelayers_tah[0].getTileUrl = GetTileUrl_TaH;
+    // tilelayers_tah[0].isPng = function () { return true; };
+    // tilelayers_tah[0].getOpacity = function () { return 1.0; };
+    // var tah_map = new GMapType(tilelayers_tah,
+    //     new GMercatorProjection(19), "T\@H",
+    //     { urlArg: 'tah', linkColor: '#000000' });
+    // map.addMapType(tah_map);
 
     var tilelayers_cycle = new Array();
     tilelayers_cycle[0] = new GTileLayer(copyrightCollection, 0, 16);
@@ -975,10 +975,10 @@ EOF
 	return "http://" + server + ".tile.openstreetmap.org/" + z + "/" + a.x + "/" + a.y + ".png";
     }
 
-    function GetTileUrl_TaH(a, z) {
-        return "http://tah.openstreetmap.org/Tiles/tile/" +
-                    z + "/" + a.x + "/" + a.y + ".png";
-    }
+    // function GetTileUrl_TaH(a, z) {
+    //     return "http://tah.openstreetmap.org/Tiles/tile/" +
+    //                 z + "/" + a.x + "/" + a.y + ".png";
+    // }
 
     function GetTileUrl_cycle(a, z) {
 	// select a random server
