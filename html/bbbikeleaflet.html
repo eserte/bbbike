@@ -66,35 +66,29 @@
   }  	    
 
   // icons and markers
-  var startIconOptions = {
+  var startIcon = L.icon({
     iconUrl: bbbikeImagesRoot + "/flag2_bl_centered.png",
     shadowUrl: bbbikeImagesRoot + "/flag_shadow.png",
     iconSize: new L.Point(32,32),
     shadowSize: new L.Point(45,24),
     iconAnchor: new L.Point(16,16)
-  };
-  var startIconClass = L.Icon.extend(L.VERSION >= 0.4 ? {options:startIconOptions} : startIconOptions);
-  var startIcon = new startIconClass();
+  });
 
-  var goalIconOptions = {
+  var goalIcon = L.icon({
     iconUrl: bbbikeImagesRoot + "/flag_ziel_centered.png",
     shadowUrl: bbbikeImagesRoot + "/flag_shadow.png",
     iconSize: new L.Point(32,32),
     shadowSize: new L.Point(45,24),
     iconAnchor: new L.Point(16,16)
-  };
-  var goalIconClass = L.Icon.extend(L.VERSION >= 0.4 ? {options:goalIconOptions} : goalIconOptions);
-  var goalIcon = new goalIconClass();
+  });
 
-  var loadingIconOptions = {
+  var loadingIcon = L.icon({
     iconUrl: bbbikeImagesRoot + "/loading.gif",
     shadowUrl: bbbikeImagesRoot + "/px_1t.gif",
     iconSize: new L.Point(16,16),
     shadowSize: new L.Point(1,1),
     iconAnchor: new L.Point(0,0)
-  };
-  var loadingIconClass = L.Icon.extend(L.VERSION >= 0.4 ? {options:loadingIconOptions} : loadingIconOptions);
-  var loadingIcon = new loadingIconClass();
+  });
 
   var startMarker, goalMarker, loadingMarker;
 
@@ -237,7 +231,7 @@
 
   function showRoute(geojson) {
     routeLayer.clearLayers();
-    routeLayer.addGeoJSON(geojson);
+    routeLayer.addData(geojson);
     var coordinatesLength = geojson.geometry.coordinates.length;
     if (coordinatesLength) {
       setStartMarker(L.GeoJSON.coordsToLatLng(geojson.geometry.coordinates[0]));
