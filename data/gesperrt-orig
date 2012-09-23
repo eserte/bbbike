@@ -284,11 +284,11 @@ Mariabrunner Weg	1 6841,17781 6909,17796 6985,17812
 Gustav-Müller-Str.	1 7643,8634 7642,8815
 Gustav-Müller-Platz	1 7644,8560 7614,8599 7643,8634 7682,8598 7644,8560
 #XXX del --- #: XXX Wird die Einbahnstraßenregelung hier aufgehoben? --- #: last_checked: 2012-03-06 --- #: next_check: 2012-04-20 --- Niederlagstr.	1:q3 9972,12184 9961,12273
-#Niederlagstr.	1 9943,12364 9934,12418
+#Niederlagstr.	1 9943,12364 9934,12420
 #: last_checked: 2012-08-30
 #: next_check: 2013-01-01
 #: XXX danach evtl. wieder Einbahnstraße wiederherstellen, siehe oben
-Niederlagstr.	2:inwork 9943,12364 9934,12418
+Niederlagstr.	2:inwork 9943,12364 9934,12420
 Kolk/Behnitz/Möllentordamm	1 -3042,14682 -3028,14640 -2951,14617 -2944,14652 -2942,14666 -3027,14689 -3042,14682
 Hertelstr.	1 4893,6900 4787,6899
 Karl-Marx-Platz	1 12980,7597 13100,7626
@@ -1454,7 +1454,7 @@ Ernst-Ruska-Ufer: Lärmschutzwand	3nocross 18496,2471 18656,2465 18929,2454
 Indira-Gandhi-Str.: Straßenbahntrasse	3nocross 14843,15007 14828,15050 14650,15750
 Hansastr.: Straßenbahntrasse	3nocross 16460,17214 16578,17285 16837,17440
 Groß-Berliner Damm: Mittelstreifen	3nocross 18928,3701 18882,3750 18854,3781 18235,4449
-Stromstr.: Mittelstreifen	3nocross 6228,13324 6235,13517 6230,13596
+Stromstr.: Mittelstreifen	3nocross 6228,13324 6229,13517 6230,13596
 Warschauer Brücke: unbequem zu überqueren, zusätzlich Geländer am Gehweg	3nocross 13476,11174 13493,11217 13541,11355
 Waltersdorfer Chaussee: Mittelstreifen	3nocross 18009,-193 17946,-100 17879,-3
 Neuköllner Str.: Mittelstreifen	3nocross 16698,1392 16643,1460 16459,1680 16450,1691
@@ -2249,7 +2249,7 @@ Caroline-Michaelis-Str.: Bauarbeiten	2:inwork 9151,13941 9125,13973
 #XXX del --- #: last_checked: 2011-05-20 --- #: next_check: 2011-08-01 --- Alex-Wedding-Str.: Bauarbeiten, komplett gesperrt	2:inwork 11085,13239 11045,13183
 #XXX del (für Radfahrer ist das Abbiegen möglich) --- #: next_check: 2012-06-01 vvv --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1010/nachricht4088.html --- Mauerstr.: Einbiegen in die Behrenstr. nicht möglich	3:inwork 9076,12054 9064,12156 9054,12154 --- Mauerstr.: Einbiegen in die Behrenstr. nicht möglich	3:inwork 9076,12054 9064,12156 9164,12172 --- Behrenstr.: Einbiegen in die Mauerstr. nicht möglich	3:inwork 9054,12154 9064,12156 9076,12054 --- Behrenstr.: Einbiegen in die Mauerstr. nicht möglich	3:inwork 9164,12172 9064,12156 9076,12054 --- #: next_check: ^^^
 # 
-#: last_checked: 2012-09-15
+#: last_checked: 2012-09-23
 #: next_check: 2012-12-01
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12748
 # 
@@ -2483,7 +2483,7 @@ tragen (10 x 3 Stufen)	0:60 2170,8841
 tragen (2 x 7 Stufen)	0:30 2316,8469
 Mittelstr.	1 9462,12481 9343,12464
 Bauhofstr.	1 9810,12712 9671,12644
-Hollmannstr.	2 9991,10637 9869,10672 9777,10719
+Hollmannstr.	2 9995,10637 9869,10672 9777,10719
 Nordsternstr.	1s 6268,8884 6292,8899
 tragen	0:60 -9371,-618
 #: corrected_by: srt/new_policy (0:120 -> 0:80)

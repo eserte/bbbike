@@ -298,7 +298,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
          'from' => undef,
          'id' => 1816,
          'data' => '#: note: http://www.berlin.de/ba-friedrichshain-kreuzberg/wirtschaftsfoerderung/wirtschaftsstandort/maerkte.html
-	q4::temp:clock 9566,10566 9587,10421
+	q4::temp:clock 9570,10566 9587,10421
 ',
          'type' => 'gesperrt'
        },

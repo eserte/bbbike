@@ -104,7 +104,7 @@ for my $kr ($kr1, $kr2) {
 
     # Wilhelmstr. -> Wilhelmstr.
     {
-	my %situation = situation_at_point_inorder($kr, qw(9404,10250 9388,10393 9378,10539));
+	my %situation = situation_at_point_inorder($kr, qw(9404,10250 9388,10393 9384,10536));
 	is($situation{action}, '', q{It's "straight"} . " (with @{[ ref $kr ]})");
 	if ($kr == $kr2) {
 	    is($situation{traffic_rule}, 'traffic_light', "Here's a traffic light");

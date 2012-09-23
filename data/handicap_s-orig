@@ -18,20 +18,21 @@ Dirschauer Str.: Einbahnstraﬂenregelung wegen Umleitungsstrecke	q4::inwork; 1397
 #: last_checked: 2012-09-20
 Mainzer Str.: Baustelle, Einbahnstraﬂenregelung	q3::inwork; 14311,11884 14357,12011 14427,12197
 # 
-#: last_checked: 2012-09-03
+#: last_checked: 2012-09-22
 #: next_check: 2012-10-22
 #: XXX siehe auch: NEW	Friedrichstr. (Mitte): Baustelle, Straﬂe vollst‰ndig gesperrt, eine Umleitung ist eingerichtet in beiden Richtungen zwischen Mittelstr. und Unter den Linden, 29.08.2012 07:00 Uhr bis 23.10.2012 16:00 Uhr	INKO_115395
 Friedrichstr.: Fahrbahn zwischen Unter den Linden und Mittelstraﬂe gesperrt, Ausweichen auf Gehweg mˆglich	q4::inwork 9343,12464 9358,12351
 # 
-#: last_checked: 2012-07-13
+#: last_checked: 2012-09-22
 #: next_check: 2013-12-31
 #: XXX siehe auch INKO_091722
 #: XXX siehe auch tempor‰re Ampel an der Neust‰dtischen Kirchstr.
+#: XXX siehe auch Busspur UdL
 Friedrichstr.(Mitte): Fahrbahn wegen Bauarbeiten gesperrt, Ausweichen auf Gehweg schiebend mˆglich	q4::inwork 9358,12351 9369,12253 9373,12197
 # 
-#: last_checked: 2012-09-03
+#: last_checked: 2012-09-22
 #: next_check: 2013-12-31
-Charlottenstr.: Einbahnstraﬂenregelung	q4::inwork; 9475,12365 9487,12263 9492,12214
+Charlottenstr.: Einbahnstraﬂenregelung	q4::inwork; 9475,12365 9489,12263 9496,12215
 # 
 #: last_checked: 2012-08-31
 #: next_check: 2012-10-20
@@ -70,13 +71,13 @@ Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9875,12257 9869,12297
 # 
 #XXX del --- #: last_checked: 2012-07-13 --- #: next_check: 2012-09-01 --- Kronenstr./Jerusalemer Str.: Bauarbeiten, Fahrbahn vor der Kreuzung gesperrt	q3::inwork 9692,11732 9892,11752
 # 
-#: last_checked: 2012-09-03
+#: last_checked: 2012-09-22
 #: next_check: 2012-11-01
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraﬂe Richtung S¸den	q4::inwork; 9475,12365 9462,12481 9454,12558
 # 
-#: last_checked: 2012-09-02
+#: last_checked: 2012-09-22
 #: next_check: 2012-11-01
-Universit‰tsstr.: wegen Bauarbeiten Richtung Unter den Linden gesperrt	q4::inwork 9580,12581 9601,12380
+Universit‰tsstr.: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 9580,12581 9601,12380
 # 
 #: last_checked: 2012-09-15 vvv
 #: next_check: 2012-09-30 vvv
@@ -113,11 +114,12 @@ Neue Gr¸nstr.: Einbahnstraﬂenregelung wegen Bauarbeiten in der Alten Jakobstr.	q
 #: next_check: 2012-09-01
 Elcknerplatz, Borgmannstr.: Bauarbeiten, Einbahnstraﬂe	q4::inwork; 22428,6063 22478,6041 22544,6037 22539,5956
 # 
-#: last_checked: 2012-06-03
+#: last_checked: 2012-09-22
 #: next_check: 2012-10-15
 #: by: IM_008926
 #: XXX wahrscheinlich bis Ende Oktober 2012
-Kantstr.: Bauarbeiten am Zoofenster, Fahrbahn Richtung Westen gesperrt	q4::inwork; 5652,11004 5613,10963 5494,10973
+#: XXX wahrscheinlich wird es teilweise oder sogar komplett Radspuren geben
+Kantstr.: Bauarbeiten am Zoofenster, Fahrbahn Richtung Westen gesperrt	q2::inwork; 5652,11004 5613,10963 5494,10973
 # 
 #: last_checked: 2012-08-30 vvv
 #: next_check: 2012-10-01 vvv
@@ -163,7 +165,7 @@ Bl¸cherplatz: Fuﬂg‰ngerverkehr	q3 9599,10175 9631,10142
 Hallesches Tor: reger Fuﬂg‰ngerverkehr	q3; 9599,10175 9593,10238
 Hallesches Tor: reger Fuﬂg‰ngerverkehr	q3 9593,10238 9592,10263
 Mehringplatz: Fuﬂg‰nger und Radfahrer teilen sich den Weg	q1 9592,10263 9547,10278 9517,10332 9527,10389 9587,10421 9646,10404 9675,10351 9668,10306 9646,10279 9606,10263 9592,10263
-Friedrichstr. (am Mehringplatz): Fuﬂg‰nger und Radfahrer teilen sich den Weg	q1 9587,10421 9566,10566
+Friedrichstr. (am Mehringplatz): Fuﬂg‰nger und Radfahrer teilen sich den Weg	q1 9587,10421 9570,10566
 Gorkistr.: reger Fuﬂg‰ngerverkehr (Fuﬂg‰ngerzone)	q3 2044,20289 2116,20314 2295,20358
 #: by: Thomas Heuving:
 Alt-Tegel: reger Fuﬂg‰ngerverkehr (Fuﬂg‰ngerzone)	q4 1907,20265 2020,20327
@@ -301,8 +303,8 @@ Wuhlheide/R1: Fuﬂg‰nger	q2 20453,6211 20293,6278
 (am Schloﬂ Schˆnhausen): Fuﬂg‰nger	q2 10308,19297 10350,19182 10390,19069
 Blockdammweg (Br¸cke): eng, Fuﬂg‰nger, ggfs. schieben	q2 17976,8964 18087,9035
 Markgrafenstr.: Gehweg	q2 9737,11546 9732,11574 9707,11596 9701,11656
-Gendarmenmarkt: Fuﬂg‰ngerzone, ggfs. schieben	q3 9526,11911 9668,11928
-Gendarmenmarkt: Fuﬂg‰ngerzone, ggfs. schieben	q3 9516,12010 9656,12021
+Gendarmenmarkt: Fuﬂg‰ngerzone, ggfs. schieben	q3 9536,11912 9668,11928
+Gendarmenmarkt: Fuﬂg‰ngerzone, ggfs. schieben	q3 9524,12010 9656,12021
 Am Volkspark: Parkweg	q1 5745,8194 5934,8220
 Karl-Marx-Allee - Marchlewskistr.: Gehweg	q2 12869,12425 12950,12340 12985,12303
 #: XXX_prog: zus‰tzlich noch Bordsteine an der ˆstlichen Seite (BS)
@@ -366,7 +368,7 @@ Radweg eng und bewachsen	q1 5071,14614 5264,14671 5440,14840
 Tunnel S-Bhf. Grunewald: Fuﬂg‰nger	q2 693,9129 731,9103 884,8954
 enge Kurven	q2 33533,2761 33293,2768
 Kieler Str.: Bordsteine, Fuﬂg‰nger	q3 4998,5817 5052,5788
-Fontanepromenade: enger Gehweg	q2 10775,9686 10760,9646
+Fontanepromenade: enger Gehweg	q2 10781,9697 10760,9646
 S¸dstern: Fuﬂg‰nger	q3 10747,9326 10710,9309 10647,9337
 Gˆrlitzer Ufer: Bordsteine	q3 13275,10055 13283,10069
 Ruhlsdorfer Str.: Bordsteine	q3 9350,10176 9368,10211
@@ -385,7 +387,7 @@ Am Zeughaus: Fuﬂg‰nger	q2 9919,12613 9950,12522 9984,12426
 Steinmetzstr.: Fuﬂg‰ngerzone, Radfahren erlaubt	q1 7625,9771 7648,9944 7698,10147
 #: note: nicht "ggfs.", also kein Kandidat f¸r die Datei gesperrt-orig als 1s:q3
 L¸tzowplatz: Einbahnstraﬂe, Ausweichen auf Gehweg	q3; 7002,11034 6873,11011
-Zauritzweg: Fuﬂg‰nger	q1 4199,11819 4195,11690
+Zauritzweg: Fuﬂg‰nger	q1 4199,11819 4195,11692
 #: XXX_prog: Radfahren nicht erlaubt, rjoop mˆchte hier nicht geroutet werden, wenn "strikt befolgen" eingeschaltet ist
 #: note: auf der westlichen Seite steht ein ¸berklebtes Gr¸nanlagen-Schild mit "Radfahren verboten", auf der ˆstlichen Seite nicht
 (Bl¸cherplatz - Zossener Str.): Fuﬂg‰nger, Bordsteine	q2 9702,10129 9827,10051
@@ -689,7 +691,7 @@ Dora-Benjamin-Park: Bordstein bei der Einfahrt	q1 14747,10108 14702,10020
 Kleine Hege: sehr eng	q3- 22334,4383 22382,4361
 Schmaler Weg: eng, Fuﬂg‰ngerweg nicht f¸r Radfahrer freigegeben, ggfs. schieben	q3 25571,5829 25442,5813 25294,5761
 (Bˆlschestr. - Scharnweberstr.): eng, Fuﬂg‰ngerweg nicht f¸r Radfahrer freigegeben, ggfs. schieben	q3 25524,5011 25729,5002
-Rosmarinstr.: Fuﬂg‰ngerzone, ggfs. schieben	q3 9369,12253 9487,12263
+Rosmarinstr.: Fuﬂg‰ngerzone, ggfs. schieben	q3 9369,12253 9489,12263
 Uferweg: Fuﬂg‰nger	q1 3444,12804 3510,12809
 Uferweg: Fuﬂg‰nger, enge Kurven	q2 3510,12809 3547,12864 3572,12866 3559,12793
 Uferweg: Fuﬂg‰nger	q1 3559,12793 3641,12753 3747,12679
@@ -901,7 +903,7 @@ Borgmannstr.: Bodenschwelle	q0 22531,5871 22513,5747
 (Katzengrabensteg - Bellevuepark): Fuﬂg‰nger	q1 22581,4932 22632,4958 22726,5332
 Katzengrabensteg: Fuﬂg‰nger	q1 22581,4932 22484,4868 22433,4887 22439,4838
 Samoastr.: Fuﬂg‰nger	q1 6886,15156 6846,15202
-Nazarethkirchstr.: einige Bodenschwellen	q0 7543,16016 7441,15909 7354,15817 7198,15656
+Nazarethkirchstr.: einige Bodenschwellen	q0- 7543,16016 7441,15909 7354,15817 7198,15656
 (Landsberger Allee - Treffurter Str.): Fuﬂg‰nger	q2 18057,14549 18119,14599
 (Storkower Str. - Schneeglˆckchenstr.): Fuﬂg‰nger, Bordsteine	q2 13964,13830 14037,13842
 (Antonplatz - Bizetstr.): Fuﬂg‰nger	q1 13487,15888 13525,15784
@@ -1652,7 +1654,7 @@ Bissingzeile: Einspurig, eng bei Gegenverkehr	q1 7959,10910 8113,10786
 (Weydemeyerstr.): Fuﬂg‰nger	q1 11890,12750 11818,12785 11805,12760
 (Weydemeyerstr.): einige Fuﬂg‰nger	q0- 11933,12701 11971,12785 11921,12810
 (Karl-Marx-Allee): Fuﬂg‰nger, Bordsteine	q1 11584,12863 11600,12857 11622,12850 11725,12809
-(Karl-Marx-Allee - Berolinastr.): Fuﬂg‰nger	q1 11419,12944 11362,12964
+(Karl-Marx-Allee - Berolinastr.): Fuﬂg‰nger	q1 11419,12944 11367,12940
 (Karl-Marx-Allee - Berolinastr.): Fuﬂg‰nger	q1 11600,12857 11589,12768
 (Berolinastr.): Fuﬂg‰nger	q1 11844,12926 11885,12905 11952,12871
 #: XXX_prog BS (am ˆstlichen Ende)
@@ -1804,7 +1806,7 @@ Willenberger Pfad: Fuﬂg‰nger, schmal	q2 576,10729 673,10724
 (Parkweg Reichsstr.): Fuﬂg‰nger	q2 -264,13009 -208,12938 -142,12850 -67,12779 23,12739
 (Machandelweg - Reichsstr.): Fuﬂg‰nger	q2 -185,12822 -166,12849 -142,12850 -103,12868
 #: XXX_prog BS (auf beiden Seiten) (ansonsten w‰re es q1)
-(zur Karl-Marx-Allee): Bordsteine, Fuﬂg‰nger	q2 11362,12964 11289,12908
+(zur Karl-Marx-Allee): Bordsteine, Fuﬂg‰nger	q2 11367,12940 11289,12908
 Bˆrnicker Str. - S¸dpark): Fuﬂg‰nger	q2 -4095,11993 -4070,12006
 Graetschelsteig - S¸dpark): Fuﬂg‰nger	q2 -4195,12139 -4117,12199
 S¸dpark): Fuﬂg‰nger	q2 -4004,11814 -3890,11775 -3712,11714

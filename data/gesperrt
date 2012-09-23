@@ -252,7 +252,7 @@ Mudrackzeile	1 6985,17812 7020,17690
 Mariabrunner Weg	1 6841,17781 6909,17796 6985,17812
 Gustav-Müller-Str.	1 7643,8634 7642,8815
 Gustav-Müller-Platz	1 7644,8560 7614,8599 7643,8634 7682,8598 7644,8560
-Niederlagstr.	2:inwork 9943,12364 9934,12418
+Niederlagstr.	2:inwork 9943,12364 9934,12420
 Kolk/Behnitz/Möllentordamm	1 -3042,14682 -3028,14640 -2951,14617 -2944,14652 -2942,14666 -3027,14689 -3042,14682
 Hertelstr.	1 4893,6900 4787,6899
 Karl-Marx-Platz	1 12980,7597 13100,7626
@@ -1701,7 +1701,7 @@ Mittelstreifen	3nocross::ignrte 11368,13170 11320,13095 11267,13012 11226,12945
 Otto-Braun-Str. -> Theanolte-Bähnisch-Str.: Mittelstreifen	3::igndisp 11267,13012 11320,13095 11235,13143
 Theanolte-Bähnisch-Str. -> Otto-Braun-Str.: Mittelstreifen	3::igndisp 11235,13143 11320,13095 11368,13170
 Mittelstreifen	3nocross::ignrte 11226,12945 11289,12908 11589,12768 11635,12745
-Berolinastr. -> Karl-Marx-Allee: Mittelstreifen	3::igndisp 11362,12964 11289,12908 11589,12768
+Berolinastr. -> Karl-Marx-Allee: Mittelstreifen	3::igndisp 11367,12940 11289,12908 11589,12768
 Berolinastr. -> Karl-Marx-Allee: Mittelstreifen	3::igndisp 11600,12857 11589,12768 11635,12745
 Karl-Marx-Allee -> Berolinastr.: Mittelstreifen	3::igndisp 11289,12908 11589,12768 11600,12857
 unbequem zu überqueren (Bordsteine)	3nocross::ignrte 10796,8498 10911,8457 11225,8350 11266,8336
@@ -1853,8 +1853,8 @@ Hansastr. -> Neuzeller Weg: Straßenbahntrasse	3::igndisp 16837,17440 16578,17285
 Mittelstreifen	3nocross::ignrte 18928,3701 18882,3750 18854,3781 18235,4449
 Landschaftspark Johannisthal -> Groß-Berliner Damm: Mittelstreifen	3::igndisp 18592,3743 18882,3750 18854,3781
 Landschaftspark Johannisthal -> Groß-Berliner Damm: Mittelstreifen	3::igndisp 18833,3781 18854,3781 18235,4449
-Mittelstreifen	3nocross::ignrte 6228,13324 6235,13517 6230,13596
-Stromstr. -> Bugenhagenstr.: Mittelstreifen	3::igndisp 6228,13324 6235,13517 6104,13522
+Mittelstreifen	3nocross::ignrte 6228,13324 6229,13517 6230,13596
+Stromstr. -> Bugenhagenstr.: Mittelstreifen	3::igndisp 6228,13324 6229,13517 6104,13522
 unbequem zu überqueren, zusätzlich Geländer am Gehweg	3nocross::ignrte 13476,11174 13493,11217 13541,11355
 Warschauer Str. -> Tamara-Danz-Str.: unbequem zu überqueren, zusätzlich Geländer am Gehweg	3::igndisp 13541,11355 13493,11217 13513,11206
 Tamara-Danz-Str. -> Warschauer Str.: unbequem zu überqueren, zusätzlich Geländer am Gehweg	3::igndisp 13513,11206 13493,11217 13476,11174
@@ -2711,7 +2711,7 @@ tragen (10 x 3 Stufen)	0:60:17 2170,8841
 tragen (2 x 7 Stufen)	0:30:-178 2316,8469
 Mittelstr.	1 9462,12481 9343,12464
 Bauhofstr.	1 9810,12712 9671,12644
-Hollmannstr.	2 9991,10637 9869,10672 9777,10719
+Hollmannstr.	2 9995,10637 9869,10672 9777,10719
 Nordsternstr.	1s 6268,8884 6292,8899
 tragen	0:60:-139 -9371,-618
 tragen (ca. 60 Stufen)	0:80:-213 -8120,-1500

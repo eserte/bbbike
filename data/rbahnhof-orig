@@ -51,13 +51,14 @@ Seegefeld	RC -9349,15982
 Birkenwerder (b Bln)	RC 2136,31373
 Zeesen	R 26672,-15428
 Bestensee	R 26727,-17991
-Teupitz-Groß Köris	R 27930,-26976
+#: oldname (?): Teupitz-Groß Köris
+Groß Köris	R 27930,-26976
 Halbe	R 31458,-32560
 Oderin	R 33361,-36445
 Brand (Niederlausitz)	R 33067,-41376
 Schönwalde (Spreewald)	R 36938,-45645
 Lubolz	R 40155,-48954
-Lübben	R 43878,-51288
+Lübben (Spreewald)	R 43878,-51288
 Lübbenau (Spreewald)	R 49801,-59844
 Raddusch	R 54769,-64897
 Vetschau	R 58172,-67764
@@ -97,6 +98,7 @@ Templin-Ahrensdorf	R0 20433,78961
 Paulinenaue	R -36876,29064
 Friesack (Mark)	R -45827,38663
 Neustadt (Dosse)	R -54951,48347
+Breddin	R -70647,52012
 Glöwen	R -80274,53857
 Bad Wilsnack	R -89553,59810
 Wittenberge	R -102378,64686
@@ -320,8 +322,9 @@ Döberitz	R -58572,11613
 Pritzerbe	R -53832,9331
 Fohrde	R -52166,4834
 Brandenburg Altstadt	R -48681,-566
-Staaken	RB -7506,14349
+Berlin-Staaken	RB -7506,14349
 Dallgow-Döberitz	RC -13131,14910
+Elstal	RC -17122,15250
 Wustermark	RC -21187,15667
 Buschow (Rathenow)	R -42628,19726
 Nennhausen	R -50618,20357
@@ -438,7 +441,7 @@ Kiekebusch (bei Cottbus)	R 78125,-75187
 #: alias: Lehrter Bahnhof
 #: alias: Berlin Hauptbahnhof
 Berlin Hauptbahnhof (Lehrter Bahnhof)	RA 8007,13225
-Potsdamer Platz	RA 8522,11503
+Berlin Potsdamer Platz	RA 8522,11503
 Berlin Südkreuz (Papestr.)	RA 7869,7674
 Berlin-Gesundbrunnen	RA 9299,15930
 #: section Parkeisenbahn Wuhlheide vvv
