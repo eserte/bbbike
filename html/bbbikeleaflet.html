@@ -12,6 +12,10 @@
   html, body, #map {
     height: 100%;
   }
+
+  .loccontrol { font-family: sans-serif; font-size: small; padding:2px; }
+  .loccontrol_inactive { background-color:#ffffff; color:#000000; }
+  .loccontrol_active   { background-color:#000000; color:#ffffff; }
  </style>
 
  <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
@@ -98,6 +102,8 @@
   var startLatLng;
   var map;
 
+  var defaultLatLng = [52.516224, 13.377463]; // Brandenburger Tor, good for Berlin
+
   var base_map_url_mapping = { 'stable':'http://{s}.tile.bbbike.org/osm/mapnik-german' // will be mapnik-german-srt some day
                               ,'devel1':'http://z.tile.bbbike.org/osm/mapnik-german'
                               ,'devel2':'http://z.tile.bbbike.org/osm/mapnik-german-srt'
@@ -150,6 +156,63 @@
     map.addLayer(routeLayer);
     layersControl.addOverlay(routeLayer, "Route");
 
+    var trackingRunning;
+    var LocControl = L.Control.extend({
+      options: {
+        position: 'bottomleft'
+      },
+
+      onAdd: function (map) {
+        var container = L.DomUtil.create('div', 'loccontrol');
+	container.innerHTML = "LOC";
+	L.DomUtil.addClass(container, "loccontrol_inactive");
+	trackingRunning = false;
+	container.onclick = function() {
+	  if (trackingRunning) {
+	    map.stopLocate();
+	    L.DomUtil.removeClass(container, "loccontrol_active");
+	    L.DomUtil.addClass(container, "loccontrol_inactive");
+	    trackingRunning = false;
+	  } else {
+	    map.locate({watch:true, setView:false});
+	    L.DomUtil.removeClass(container, "loccontrol_inactive");
+	    L.DomUtil.addClass(container, "loccontrol_active");
+	    trackingRunning = true;
+	  }
+	};
+        return container;
+      }
+    });
+    map.addControl(new LocControl());
+
+    var locationCircle = L.circle(defaultLatLng, 10); // XXX better or no defaults?
+    var locationPoint = L.circle(defaultLatLng, 2); // XXX better or no defaults
+    locationCircle.setStyle({stroke:true,color:'#03f',weight:4,opacity:0.5,
+                             fill:true,fillColor:'#36f',fillOpacity:0.2,
+			     clickable:false});
+    locationPoint.setStyle({stroke:true,color:'#03f',weight:2,opacity:0.5,
+                            fill:true,fillColor:'#03f',fillOpacity:0.5,
+			    clickable:false});
+    function locationFoundOrNot(type, e) {
+      if (type == "locationfound") {
+        locationCircle.setLatLng(e.latlng);
+	locationCircle.setRadius(e.accuracy);
+	if (!map.hasLayer(locationCircle)) {
+	  locationCircle.addTo(map);
+	}
+	locationPoint.setLatLng(e.latlng);
+	if (!map.hasLayer(locationPoint)) {
+	  locationPoint.addTo(map);
+	}
+	map.panTo(e.latlng);
+      } else {
+        map.removeLayer(locationCircle);
+	map.removeLayer(locationPoint);
+      }
+    }
+    map.on('locationfound', function(e) { locationFoundOrNot('locationfound', e); });
+    map.on('locationerror', function(e) { locationFoundOrNot('locationerror', e); });
+
     map.on(//'click', //XXX has bugs, may fire on simple zooming
            'dblclick', function(e) {
       if (searchState == "start") {
@@ -188,7 +251,7 @@
           map.setView(center, zoom);
           setStartMarker(center);
         } else {
-          map.setView(new L.LatLng(52.516224, 13.377463), zoom); // Brandenburger Tor
+          map.setView(defaultLatLng, zoom); // Brandenburger Tor
         }
       }
     }
