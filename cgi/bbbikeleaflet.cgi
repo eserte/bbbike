@@ -43,7 +43,9 @@ while(<$fh>) {
 	} else {
 	    $bbbike_htmlurl = "/BBBike/html";
 	}
-	$line =~ s{(src=")}{$1$bbbike_htmlurl/};
+	if ($line !~ s{(src=")}{$1$bbbike_htmlurl/}) {
+	    $line =~ s{(href=")}{$1$bbbike_htmlurl/};
+	}
 	print $line, "\n";
 	next;
     }
