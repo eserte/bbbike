@@ -35,7 +35,7 @@ ok -x $search_inaccessible_points, "$search_inaccessible_points is executable";
 {
     my $test_datadir = "$FindBin::RealBin/data-test";
     my $inaccessible;
-    ok run([$search_inaccessible_points, '-q', '-street', "$test_datadir/strassen", '-blocked', "$test_datadir/gesperrt"], ">", \$inaccessible), 'Run search_inaccessible_points with test data';
+    ok run([$search_inaccessible_points, '-street', "$test_datadir/strassen", '-blocked', "$test_datadir/gesperrt"], ">", \$inaccessible), 'Run search_inaccessible_points with test data';
     my $s = Strassen->new_from_data_string($inaccessible);
     isa_ok $s, 'Strassen';
 }
@@ -73,7 +73,7 @@ EOF
     }
 
     my $inaccessible;
-    ok run([$search_inaccessible_points, '-q', '-refpoint', '0,0', '-street', $strassen_file, '-blocked', $gesperrt_file], ">", \$inaccessible), 'Run search_inaccessible_points with controlled test data';
+    ok run([$search_inaccessible_points, '-refpoint', '0,0', '-street', $strassen_file, '-blocked', $gesperrt_file], ">", \$inaccessible), 'Run search_inaccessible_points with controlled test data';
     my $s = Strassen->new_from_data_string($inaccessible);
     isa_ok $s, 'Strassen';
     is $s->get_global_directive('encoding'), 'utf-8', 'preserved encoding';

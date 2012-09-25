@@ -252,7 +252,7 @@ ${PERSISTENTTMPDIR}/non-faked-strassen: .strassen.tmp ${PERSISTENTTMPDIR}/non-fa
 
 inaccessible_strassen: strassen gesperrt
 	-@$(WRITEABLE) $@
-	${SEARCH_INACCESSIBLE} -q -street strassen -blocked gesperrt \
+	${SEARCH_INACCESSIBLE} -street strassen -blocked gesperrt \
 	    -blockedtype einbahn -blockedtype sperre \
 	    > new.$@~
 	@if [ -e $@ ] ; then \
@@ -264,7 +264,7 @@ inaccessible_strassen: strassen gesperrt
 
 inaccessible_landstrassen: strassen landstrassen landstrassen2 gesperrt
 	-@$(WRITEABLE) $@
-	${SEARCH_INACCESSIBLE} -q -street strassen -street landstrassen \
+	${SEARCH_INACCESSIBLE} -street strassen -street landstrassen \
 	    -street landstrassen2 -street faehren -blocked gesperrt \
 	    -blockedtype einbahn -blockedtype sperre \
 	    > new.$@~
