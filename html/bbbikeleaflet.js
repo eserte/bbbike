@@ -124,6 +124,9 @@ function doLeaflet() {
     map.addLayer(routeLayer);
     layersControl.addOverlay(routeLayer, "Route");
 
+    var trackPolyline;
+    var trackSegs = [[]];
+    var lastLatLon = null;
     var trackingRunning;
     var LocControl = L.Control.extend({
 	options: {
@@ -173,9 +176,26 @@ function doLeaflet() {
 		locationPoint.addTo(map);
 	    }
 	    map.panTo(e.latlng);
+	    var newLatLng = new L.LatLng(e.latlng);
+	    if (lastLatLon == null || !lastLatLon.equals(newLatLng)) {
+		trackSegs[trackSegs.length].push(newLatLng);
+		lastLatLon = newLatLng;
+		if (map.hasLayer(trackPolyline)) {
+		    map.removeLayer(trackPolyline);
+		}
+		trackPolyline = new L.MultiPolyline(trackSegs, {color:'#f00', weight:2});
+	    }
 	} else {
-	    map.removeLayer(locationCircle);
-	    map.removeLayer(locationPoint);
+	    if (map.hasLayer(locationCircle)) {
+		map.removeLayer(locationCircle);
+	    }
+	    if (map.hasLayer(locationPoint)) {
+		map.removeLayer(locationPoint);
+	    }
+	    if (lastLatLon != null) {
+		trackSegs.push([]);
+		lastLatLon = null;
+	    }
 	}
     }
     map.on('locationfound', function(e) { locationFoundOrNot('locationfound', e); });
