@@ -176,20 +176,19 @@ function doLeaflet() {
 		locationPoint.addTo(map);
 	    }
 	    map.panTo(e.latlng);
-	    var newLatLng = new L.LatLng(e.latlng);
-	    if (lastLatLon == null || !lastLatLon.equals(newLatLng)) {
-		trackSegs[trackSegs.length].push(newLatLng);
-		lastLatLon = newLatLng;
-		if (map.hasLayer(trackPolyline)) {
+	    if (!lastLatLon || !lastLatLon.equals(e.latlng)) {
+		trackSegs[trackSegs.length-1].push(e.latlng);
+		lastLatLon = e.latlng;
+		if (trackPolyline && map.hasLayer(trackPolyline)) {
 		    map.removeLayer(trackPolyline);
 		}
-		trackPolyline = new L.MultiPolyline(trackSegs, {color:'#f00', weight:2});
+		trackPolyline = L.multiPolyline(trackSegs, {color:'#f00', weight:2, opacity:0.7}).addTo(map);
 	    }
 	} else {
-	    if (map.hasLayer(locationCircle)) {
+	    if (locationCircle && map.hasLayer(locationCircle)) {
 		map.removeLayer(locationCircle);
 	    }
-	    if (map.hasLayer(locationPoint)) {
+	    if (locationPoint && map.hasLayer(locationPoint)) {
 		map.removeLayer(locationPoint);
 	    }
 	    if (lastLatLon != null) {
