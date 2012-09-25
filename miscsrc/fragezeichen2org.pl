@@ -84,7 +84,7 @@ for my $file (@files) {
 			 $dist = int_round(Strassen::Util::strecke_s($r->[Strassen::COORDS][0], $centerc)/1000);
 		     }
 		     my $body = <<EOF;
-** TODO $subject <$date $wd> :${dist}km:
+** TODO <$date $wd> $subject :${dist}km:
    : $r->[Strassen::NAME]\t$r->[Strassen::CAT] @{$r->[Strassen::COORDS]}
    [[${abs_file}::$.]]
 EOF
