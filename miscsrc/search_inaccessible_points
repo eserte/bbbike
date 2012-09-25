@@ -35,6 +35,7 @@ my $shorter;
 my $encoding;
 my $map;
 my $stats;
+my $max_loops = 10;
 
 my @s_files;
 my @blocked_files;
@@ -53,6 +54,7 @@ if (!GetOptions("street=s@"  => sub { push @s_files, split /,/, $_[1] },
 		"shorter" => \$shorter,
 		"encoding=s" => \$encoding,
 		"stats!" => \$stats,
+		"maxloops=i" => \$max_loops,
 	       )) {
     die <<EOF;
 usage: $0 [-street file] [-blocked file]
@@ -164,7 +166,8 @@ sub new_search {
     } else {
 	$s->init_for_iterator('refpoint');
 	my %global_seen;
-	while() {
+	my $flood_search_calls = 0;
+    ITERATE_OVER_STREETS: while() {
 	    my $r = $s->next_for_iterator('refpoint');
 	    my @c = @{ $r->[Strassen::COORDS] };
 	    last if !@c;
@@ -180,6 +183,10 @@ sub new_search {
 		    if ($debug) {
 			warn "... found " . scalar(keys %$island) . " points in island\n";
 			warn "global_seen has now " . scalar(keys %global_seen) . " entries\n";
+		    }
+		    $flood_search_calls++;
+		    if ($flood_search_calls > $max_loops) {
+			last ITERATE_OVER_STREETS;
 		    }
 		}
 	    }
