@@ -126,6 +126,7 @@ function doLeaflet() {
 
     var trackPolyline;
     var trackSegs = [[]];
+    var undoTrackSegs;
     var lastLatLon = null;
     var trackingRunning;
     var LocControl = L.Control.extend({
@@ -155,6 +156,29 @@ function doLeaflet() {
 	}
     });
     map.addControl(new LocControl());
+
+    var ClrControl = L.Control.extend({
+	options: {
+	    position: 'bottomleft'
+	},
+
+	onAdd: function (map) {
+	    var container = L.DomUtil.create('div', 'clrcontrol');
+	    container.innerHTML = "CLR";
+	    container.onclick = function() {
+		if (confirm("Clear track?")) {
+		    trackSegs = [[]];
+		    if (trackPolyline && map.hasLayer(trackPolyline)) {
+			map.removeLayer(trackPolyline);
+		    }
+		    trackPolyline = L.multiPolyline(trackSegs, {color:'#f00', weight:2, opacity:0.7}).addTo(map);
+		    lastLatLon = null;
+		}
+	    };
+	    return container;
+	}
+    });
+    map.addControl(new ClrControl());
 
     var locationCircle = L.circle(defaultLatLng, 10); // XXX better or no defaults?
     var locationPoint = L.circle(defaultLatLng, 2); // XXX better or no defaults
