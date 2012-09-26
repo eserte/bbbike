@@ -1044,18 +1044,7 @@ userdel	q4::inwork 425,8766 490,8716
        undef,
        undef,
        undef,
-       {
-         'until' => 1356994800,
-         'text' => 'Jonasstr./Karl-Marx-Str.: Abbiegen nicht möglich (bzw. nur auf dem Gehweg)',
-         'from' => undef,
-         'id' => 2283,
-         'data' => 'userdel	3 12925,7425 13015,7440 13027,7368
-userdel	3 13027,7368 13015,7440 12925,7425
-userdel	3 12925,7425 13015,7440 12992,7545
-userdel	3 12992,7545 13015,7440 12925,7425
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1151,8 +1140,8 @@ userdel	q4::inwork; -1872,24336 -1790,24260 -1627,24105 -1367,23853 -1286,23753 
          'text' => 'Behrenstr. (Mitte): Fahrbahn Richtung Friedrichstr. zwischen Glinkastr. und Friedrichstr. gesperrt',
          'from' => undef,
          'id' => 2317,
-         'data' => '#: last_checked: 2012-08-30
-#: next_check: 2012-09-23
+         'data' => '#: last_checked: 2012-09-26
+#: next_check: 2012-10-23
 userdel	q4::inwork; 9164,12172 9373,12197
 ',
          'type' => 'handicap'
@@ -1295,16 +1284,7 @@ userdel	q4::inwork 10379,14963 10366,14992
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_019067',
-         'until' => 1348538400,
-         'text' => 'Karlshorster Str. (Lichtenberg): Brückenarbeiten, Sperrung zwischen Nöldnerstr. und Türrschmidtstr., Fußgänger und Radfahrer können langsam passieren, 09.07.2012 bis 25.09.2012 04:00 Uhr',
-         'from' => 1341727200,
-         'id' => 2360,
-         'data' => 'userdel	q4::inwork 15272,10790 15279,10862
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => undef,
          'text' => 'Christburger Str.: Fahrbahn an der Prenzlauer Allee gesperrt, Ausweichen auf Gehweg',
@@ -1315,16 +1295,7 @@ userdel	q3::inwork 11912,14486 11642,14625
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20120719.1310.372734.html',
-         'until' => 1348610399,
-         'text' => 'Straßenbauarbeiten John-Foster-Dulles-Allee zwischen Spreeweg und Zeltenplatz, 23.7. - 25.9.2012, Fahrbahn ist gesperrt, der nördliche Gehweg kann benutzt werden',
-         'from' => 1342994400,
-         'id' => 2362,
-         'data' => 'userdel	q2::inwork 7437,12368 7215,12295 7039,12314
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'IM_019006',
          'until' => 1349103600,

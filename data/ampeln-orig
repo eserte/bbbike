@@ -1693,10 +1693,7 @@ nur Richtung O	X 8142,7221
 	X 15080,11905
 	X 6454,8653
 #XXX Kynaststr./Alt-Stralau - evtl. wird es nach den Bauarbeiten hier wieder eine Ampel geben	X 14652,10201
-#: XXX Baustellenampel, wahrscheinlich wegen der Sperrung Karlshorster Str.
-#: last_checked: 2012-09-19
-#: next_check: 2012-09-25
-	X::inwork 14832,10512
+#XXX del --- #: XXX Baustellenampel, wahrscheinlich wegen der Sperrung Karlshorster Str. --- #: last_checked: 2012-09-19 --- #: next_check: 2012-09-25 ---	X::inwork 14832,10512
 	F 13030,7346
 #XXX del:	X 12510,6508
 #XXX del:	X 12553,6423
@@ -2542,9 +2539,8 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: by: andk
 	X 8078,8772
 	F 9781,16569
-#: note: provisorische Ampel
 #: note: Ausfahrt Neuköllner Tor
-	X::inwork 13078,7033
+	X 13076,7044
 #: XXX_prog: Ampel gilt nur in Richtung Nordwest, in der anderen Richtung nur für Linksabbieger
 	X 20451,2869
 #: note: provisorische Ampel

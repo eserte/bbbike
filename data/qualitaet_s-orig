@@ -154,7 +154,7 @@ Suadicanistr.: Asphalt	Q0 7859,7486 7858,7506
 Suadicanistr.: glatt gepflastert	Q0 7858,7506 7854,7572
 Lilienthalstr.: Asphalt	Q0 10675,8940 10640,8832 10627,8706 10615,8558
 Weichselstr.: mäßiges Kopfsteinpflaster, 15-17 km/h	Q2- 12330,8636 12394,8729 12434,8776 12483,8834 12590,8977 12681,9083 12761,9190 12851,9309 12844,9351
-Treptower Str.: Asphalt	Q0 13857,8601 14015,8798 14145,8971
+Treptower Str.: Asphalt	Q0 13860,8599 14015,8798 14151,8967
 Pfarrstr.: mäßiges Kopfsteinpflaster	Q2 15279,10862 15359,11115 15458,11306
 Pfarrstr.: sehr guter Asphalt	Q0 15458,11306 15477,11338
 Schulze-Boysen-Str: Asphalt	Q0 15738,11851 15655,11697 15634,11656 15572,11533 15515,11416 15498,11380
@@ -343,14 +343,15 @@ Wuhlheide: Waldweg	Q2 21365,5832 21958,6248 22000,6245
 (Hegemeisterweg - Modellpark Wuhlheide): Asphalt	Q0 18413,7774 19069,6928
 #: note: nördlichen Abschnitt noch nicht abgefahren:
 (Wasserwerk Wuhlheide - An der Wuhlheide): Kopfsteinpflaster	Q2 19338,7148 19223,7189 19084,7009 19069,6928 19052,6823 18948,6578
-Mittelweg: Kopfsteinpflaster	Q2 12923,7611 12771,7679 12698,7677 12647,7672 12520,7694
+Mittelweg: Kopfsteinpflaster	Q2 12916,7605 12771,7679 12698,7677 12647,7672 12520,7694
 Mittelweg: Kopfsteinpflaster	Q3 12176,7811 12224,7799 12335,7770
-Karl-Marx-Platz/Richardplatz: Kopfsteinpflaster	Q2 12980,7597 13100,7626 13177,7644 13297,7654
-Karl-Marx-Platz/Richardplatz: Kopfsteinpflaster, OK	Q1- 13297,7654 13423,7707
-Karl-Marx-Platz: Kopfsteinpflaster	Q2 12991,7549 13100,7626
+Karl-Marx-Platz: Kopfsteinpflaster	Q2- 12980,7597 13100,7626 13177,7644
+Richardplatz: Kopfsteinpflaster	Q2 13177,7644 13297,7654
+Richardplatz: Kopfsteinpflaster, OK	Q1- 13297,7654 13416,7712
+Karl-Marx-Platz: Kopfsteinpflaster	Q2- 12991,7549 13100,7626
 Richardplatz: Kopfsteinpflaster	Q2 13188,7590 13303,7622
 Richardplatz: Kopfsteinpflaster, OK	Q1 13303,7622 13400,7642
-Richardplatz: Kopfsteinpflaster	Q2 13400,7642 13426,7674 13423,7707
+Richardplatz: Kopfsteinpflaster	Q2 13400,7642 13426,7674 13416,7712
 Richardstr.: Kopfsteinpflaster, OK	Q1 12792,8190 12870,8087 13085,7904 13103,7889 13150,7845 13226,7775 13245,7742 13297,7654
 Richardstr.: Kopfsteinpflaster	Q2 13297,7654 13303,7622
 Richardstr.: Kopfsteinpflaster, OK	Q1 13303,7622 13339,7452 13345,7424 13369,7307
@@ -2404,7 +2405,7 @@ Seidelbastweg: Asphalt	Q0 16779,2993 16689,3056 16550,3155 16504,3184 16281,3339
 Seidelbastweg: Beton	Q0 16281,3339 15947,3572 15793,3679 15574,3856
 Schwertlilienweg: Asphalt	Q0 15574,3856 15603,3905 15647,3977 15695,4051
 (Heideläuferweg - Stuthirtenweg): unbefestigt	Q2- 13109,1071 13109,1061
-(Niederwallstr. - Kurstr.): Asphalt	Q0 10183,11770 10230,11839
+(Niederwallstr. - Kurstr.): Asphalt	Q0 10189,11773 10230,11839
 Am Plänterwald: etwas besseres Kopfsteinpflaster	Q2+ 15714,8633 15543,8525 15499,8496 15443,8458 15303,8343
 Güldenhofer Ufer: Kopfsteinpflaster	Q2 16677,6892 16630,6800
 #: note: von der S-Bahn aus gesehen:
@@ -7977,6 +7978,9 @@ IKEA-Parkplatz: Verbundsteinpflaster	Q1+ 7991,6938 8071,7006 8077,7040
 (zur Neuen Mälzerei): Asphalt	Q0 12520,12938 12590,13018
 (Weg im Blankensteinpark): Kopfsteinpflaster	Q2 14376,12849 14289,12876
 (Weg im Blankensteinpark): Asphalt	Q0 14289,12876 14130,12926
+Götzstr. - Albrechtstr.: Verbundsteinpflaster	Q1 9389,6348 9381,6277
+(zum Parkplatz Rathaus Tempelhof): Verbundsteinpflaster	Q1 9346,6352 9389,6348
+(Berlinische Galerie): Asphalt	Q0 10056,10831 9966,10874
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -9816,7 +9820,7 @@ Bruno-Bauer-Str.: Kopfsteinpflaster	Q2 12816,6870 12833,6796 12843,6750 12860,66
 Juliusstr.: Kopfsteinpflaster	Q2- 13195,6560 13127,6545 12902,6495 12781,6470
 #: corrected_by: srt (Kopfsteinpflaster -> Asphalt)
 Juliusstr.: Asphalt	Q0 12781,6470 12553,6423
-Walterstr.: Kopfsteinpflaster	Q2 13126,6687 13099,6712 13014,6833 12983,6904 12934,6967
+Walterstr.: Kopfsteinpflaster	Q2 13126,6687 13099,6712 13014,6833 12973,6902 12934,6967
 Kranoldplatz: Kopfsteinpflaster	Q2 12833,6796 12715,6775
 Kranoldplatz: Kopfsteinpflaster	Q2 12726,6727 12843,6750
 #: by: ^^^
@@ -21405,8 +21409,8 @@ Am Nußbaum: Verbundsteine	Q1 10644,12469 10626,12455 10611,12444 10597,12405 106
 Jägerstr. (Mitte): Asphalt	Q0 9656,12021 9913,12068 9961,12094 10003,12113
 Kleine Kurstr.: Asphalt	Q0 10241,11830 10281,11876
 Kreuzstr.: Asphalt	Q0 10231,11940 10209,11918
-Kleine Jägerstr.: Asphalt	Q0 9995,11910 10050,11942 10064,11953
-Alte Leipziger Str.: Asphalt	Q0 10076,11840 10118,11907
+Kleine Jägerstr.: Asphalt	Q0 9991,11903 10050,11942 10064,11953
+Alte Leipziger Str.: Asphalt	Q0 10079,11845 10118,11907
 Kleine Gertraudenstr.: Gehwegplatten	Q1 10332,11929 10364,11896 10391,11898
 #: corrected_by: srt (Beton, Q1 -> Asphalt, Q0)
 Am Wriezener Bahnhof: Asphalt	Q0 12758,11915 12794,11893 12944,11760 12993,11717

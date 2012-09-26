@@ -5120,7 +5120,7 @@ EOF
        text  => 'Neubau der Treptower Straße in Neukölln, Sperrung zwischen Kiefholzstraße und Heidelberger Straße (Anliegerverkehr ist frei) (bis Ende 2006) ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 13857,8601 14015,8798 14145,8971
+userdel	q4::inwork 13860,8599 14015,8798 14151,8967
 EOF
      },
      { from  => 1153955394, # 2006-07-27 01:09
@@ -6915,7 +6915,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_004418',
        data  => <<EOF,
-userdel	2::inwork 14145,8971 14015,8798 13857,8601
+userdel	2::inwork 14151,8967 14015,8798 13860,8599
 EOF
      },
      { from  => 1171050907, # 2007-02-09 20:55
@@ -8945,7 +8945,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_004418',
        data  => <<EOF,
-userdel	2::inwork 13857,8601 14015,8798 14145,8971
+userdel	2::inwork 13860,8599 14015,8798 14151,8967
 EOF
      },
      { from  => 1183412580, # 2007-07-02 23:43
@@ -10371,7 +10371,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006966',
        data  => <<EOF,
-userdel	2::inwork 12983,6904 13095,6926
+userdel	2::inwork 12973,6902 13095,6926
 EOF
      },
      { from  => 1194044400, # 2007-11-03 00:00
@@ -17002,16 +17002,16 @@ EOF
        text  => 'Richardplatz (Neukölln) und die Durchfahrt aller angrenzenden Straßen Rixdorfer Weihnachtsmarkt, Straße vollständig gesperrt (02.12.2011 bis 04.12.2011)',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 13423,7707 13426,7674
-userdel	2 13423,7707 13297,7654
+userdel	2 13416,7712 13426,7674
+userdel	2 13416,7712 13297,7654
 userdel	2 13426,7674 13400,7642 13303,7622
 userdel	2 12980,7597 13100,7626 13177,7644
 userdel	2 13188,7590 13177,7644
 userdel	2 13188,7590 13303,7622
 userdel	2 13297,7654 13303,7622
 userdel	2 13297,7654 13177,7644
-userdel auto	3 13446,7879 13423,7707 13426,7674 13560,7646
-userdel auto	3 13560,7646 13426,7674 13423,7707 13446,7879
+userdel auto	3 13444,7879 13416,7712 13426,7674 13560,7646
+userdel auto	3 13560,7646 13426,7674 13416,7712 13444,7879
 EOF
      },
      { from  => 1212876000, # 2008-06-08 00:00
@@ -17821,7 +17821,7 @@ userdel auto	3 7816,12150 8055,12186 8048,12135
 userdel auto	3 8861,12125 8901,12008 8972,11810
 userdel auto	3 8048,12135 8055,12186 7816,12150
 userdel auto	3 9201,11968 9183,12076 9385,12098
-userdel auto	3 9865,10227 9873,10285 9856,10358
+userdel auto	3 9865,10227 9873,10285 9858,10350
 userdel auto	3 9865,10227 9873,10285 9668,10306
 userdel auto	3 9409,10226 9404,10250 9239,10313
 userdel auto	3 8766,12541 8775,12457 8804,12280
@@ -17845,8 +17845,8 @@ userdel auto	3 9131,10716 9323,10791 9539,10820
 userdel auto	3 9385,12098 9183,12076 9201,11968
 userdel auto	3 8554,12593 8540,12420 8573,12325
 userdel auto	3 9108,12635 9123,12500 9330,12529
-userdel auto	3 9856,10358 9873,10285 9668,10306
-userdel auto	3 9856,10358 9873,10285 9865,10227
+userdel auto	3 9858,10350 9873,10285 9668,10306
+userdel auto	3 9858,10350 9873,10285 9865,10227
 userdel auto	3 8070,12409 8119,12414 8123,12615
 userdel auto	3 9343,12464 9130,12433 9016,12416
 userdel auto	3 8479,11493 8542,11502 8596,11508
@@ -17860,7 +17860,7 @@ userdel auto	3 8123,12615 8119,12414 8070,12409
 userdel auto	3 9592,10263 9593,10238 9599,10175
 userdel auto	3 9064,12156 9076,12054 9108,11961
 userdel auto	3 9064,12156 9164,12172 9373,12197
-userdel auto	3 9668,10306 9873,10285 9856,10358
+userdel auto	3 9668,10306 9873,10285 9858,10350
 userdel auto	3 9668,10306 9873,10285 9865,10227
 userdel auto	3 9527,10389 9388,10393 9250,10563
 userdel auto	3 10083,10192 10122,10294 10178,10411
@@ -19715,15 +19715,15 @@ EOF
 userdel	q4::inwork; 13236,6489 13455,6559 13520,6583
 EOF
      },
-     { from  => undef, # 
-       until => 1356994800, # 2013-01-01 00:00
+     { from  => 1348699380, # undef, # 
+       until => 1348699383, # 1356994800, # 2013-01-01 00:00
        text  => 'Jonasstr./Karl-Marx-Str.: Abbiegen nicht möglich (bzw. nur auf dem Gehweg)',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	3 12925,7425 13015,7440 13027,7368
 userdel	3 13027,7368 13015,7440 12925,7425
-userdel	3 12925,7425 13015,7440 12992,7545
-userdel	3 12992,7545 13015,7440 12925,7425
+userdel	3 12925,7425 13015,7440 13008,7470 12992,7545
+userdel	3 12992,7545 13008,7470 13015,7440 12925,7425
 EOF
      },
      { from  => 1318507200, # 2011-10-13 14:00
@@ -20041,8 +20041,8 @@ EOF
 ## früher:
 #       source_id => 'INKO_093369',
        data  => <<EOF,
-#: last_checked: 2012-08-30
-#: next_check: 2012-09-23
+#: last_checked: 2012-09-26
+#: next_check: 2012-10-23
 userdel	q4::inwork; 9164,12172 9373,12197
 EOF
      },
