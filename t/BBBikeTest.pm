@@ -476,6 +476,10 @@ sub kmllint_string {
 		}
 	    }
 
+	    if (!$schema_file) {
+		Test::More::skip("skipping schema tests", 1);
+	    }
+
 	    require File::Temp;
 	    my($tmpfh,$tmpfile) = File::Temp::tempfile(SUFFIX => ".xml", UNLINK => 1)
 		or die $!;
