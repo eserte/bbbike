@@ -1,21 +1,38 @@
 Running the BBBike CGI on a webserver
--------------------------------------
+=====================================
 
 Following instructions apply for Apache2, and may also work for
 Apache1.3.
 
 Installing dependencies
------------------------
+=======================
 
-If you're on a Debian or Debian-similar system, then you can install
-all optionally needed packages for CGI operations with:
+Debian
+------
+
+If you're on a Debian (preferable Debian/squeeze) or Debian-similar
+system (e.g. Ubuntu), then you can install all optionally needed
+packages for CGI operations with:
 
     (assuming you are currently in the cgi subdirectory of the bbbike
     directory)
+    (as unprivileged user)
         cd ..
         perl Makefile.PL
     (do not be alarmed by the many warnings)
+
+    (then as root or using sudo)
+        apt-get update
         make install-debian-packages-for-cgi
+
+Install a suitable webserver. Currently recommended is apache2, but
+other cgi-capable webservers may also work.
+
+    (as root)
+    apt-get install apache2
+
+Other Linux/Unix systems
+------------------------
 
 On other systems, you have to install at least:
 - apache2
@@ -27,7 +44,7 @@ install perl module dependencies:
     cpan Bundle::BBBike_cgi
 
 Creating Apache configuration
------------------------------
+=============================
 
     cd cgi
     make httpd.conf
@@ -37,4 +54,4 @@ file into the main httpd.conf.
 
 Restart the Apache and point your browser to
 
-    http://localhost/bbbike/cgi/bbbike.cgi
+    http://localhost/bbbike

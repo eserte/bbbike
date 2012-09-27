@@ -41,20 +41,29 @@ $(HTTPD_CONF): httpd.conf.tpl Makefile
 	chmod 644 $(HTTPD_CONF)~
 	mv $(HTTPD_CONF)~ $(HTTPD_CONF)
 	@echo
+	@echo "**********************************************************************"
+	@echo "* CONFIGURATION INSTRUCTIONS"
+	@echo "*"
 	@if [ -d /usr/local/etc/apache22/Includes ] ; \
 	then \
 	    echo Please create a symlink; \
+	    echo; \
 	    echo "    ln -s `$(REALPATH_CMD) $(HTTPD_CONF)` /usr/local/etc/apache22/Includes/bbbike.conf"; \
-	    echo and restart the Apache; \
+	    echo; \
+	    echo "and restart the Apache."; \
 	elif [ -d /etc/apache2/sites-enabled ] ; \
 	then \
 	    echo Please create a symlink; \
+	    echo; \
 	    echo "    ln -s `$(REALPATH_CMD) $(HTTPD_CONF)` /etc/apache2/sites-enabled/bbbike.conf"; \
-	    echo and restart the Apache; \
+	    echo; \
+	    echo "and restart the Apache."; \
 	else \
 	    echo Please add; \
+	    echo; \
 	    echo "    Include `$(REALPATH_CMD) $(HTTPD_CONF)`"; \
-	    echo to your Apache\'s httpd.conf and restart the Apache; \
+	    echo; \
+	    echo "to your Apache\'s httpd.conf and restart the Apache."; \
 	fi
 	@echo
 
