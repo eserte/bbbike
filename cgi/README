@@ -4,6 +4,17 @@ Running the BBBike CGI on a webserver
 Following instructions apply for Apache2, and may also work for
 Apache1.3.
 
+
+Getting the software
+====================
+
+The latest version can be fetched from github. Navigate to the
+directory where bbbike should be permanently installed (e.g. ~/work)
+and do
+
+    git clone git://github.com/eserte/bbbike.git
+
+
 Installing dependencies
 =======================
 
@@ -14,22 +25,21 @@ If you're on a Debian (preferable Debian/squeeze) or Debian-similar
 system (e.g. Ubuntu), then you can install all optionally needed
 packages for CGI operations with:
 
-    (assuming you are currently in the cgi subdirectory of the bbbike
-    directory)
-    (as unprivileged user)
-        cd ..
-        perl Makefile.PL
-    (do not be alarmed by the many warnings)
+    # Change to the root of the bbbike directory, e.g.
+    cd ~/work/bbbike
+    # Run the next as unprivileged user:
+    perl Makefile.PL
+    # Do not be alarmed by the many warnings.
 
-    (then as root or using sudo)
-        apt-get update
-        make install-debian-packages-for-cgi
+    # Then as root or using sudo:
+    apt-get update
+    make install-debian-packages-for-cgi
 
-Install a suitable webserver. Currently recommended is apache2, but
-other cgi-capable webservers may also work.
+Install a suitable webserver. Currently recommended is apache2 with
+modperl, but other cgi-capable webservers may also work.
 
-    (as root)
-    apt-get install apache2
+    # As root or using sudo:
+    apt-get install apache2 libapache2-mod-perl2
 
 Other Linux/Unix systems
 ------------------------
@@ -43,15 +53,61 @@ Maybe other packages are needed. Alternatively CPAN.pm may be used to
 install perl module dependencies:
     cpan Bundle::BBBike_cgi
 
+
+bbbike.cgi configuration
+========================
+
+The configuration file lives in cgi/bbbike.cgi.config. On Debian
+systems it's easiest to just symlink the predefined debian-specific
+file:
+
+    (cd cgi && ln -snf bbbike-debian-no-mapserver.cgi.config bbbike.cgi.config)
+
+
 Creating Apache configuration
 =============================
 
-    cd cgi
-    make httpd.conf
+    # As unprivileged user
+    (cd cgi && make symlinks fix-permissions httpd.conf)
 
-Then follow the instructions to include the generated configuration
-file into the main httpd.conf.
+Then follow the printed instructions to include the generated
+configuration file into the main httpd.conf.
 
 Restart the Apache and point your browser to
 
     http://localhost/bbbike
+
+
+Advanced installation
+=====================
+
+Some parts of the bbbike system are optional. Doing the next steps may
+improve the performance of the system (e.g. by compiling C/XS
+components or adding session data storage) or add further feature.
+
+    # Compiling C/XS components
+    # As unprivilged user
+    make ext
+
+Some optional dependencies are not available in the normal Debian
+repositories, but are available in the non-free section of the
+official debian repository and in a private bbbike.de repository.
+
+To enable these repositories:
+- add "non-free" to every debian repository in /etc/apt/sources.list
+  (i.e. change a line
+    deb http://ftp.de.debian.org/debian/ squeeze main
+   to
+    deb http://ftp.de.debian.org/debian/ squeeze main non-free
+  )
+- add the following line to /etc/apt/sources.list:
+    deb http://mydebs.bbbike.de squeeze main
+
+Then execute as root:
+
+    apt-get update && apt-get install libapache-session-counted-perl libcdb-file-perl libobject-iterate-perl libimage-exiftool-perl libgeo-metar-perl libimager-perl libsvg-perl libgd-svg-perl libgeo-spacemanager-perl libgeo-distance-xs-perl
+
+BBBike has a large test suite. To run the cgi-related tests, call as
+unprivileged user:
+
+    (cd t && make test-cgi-lite)
