@@ -120,13 +120,17 @@ my $goal_name = 'Goal';
 my $use_xs;
 
 my @only_modules;
+my %skip_modules;
 
 if ($ENV{BBBIKE_TEST_DRAW_ONLY_MODULES}) {
     @only_modules = split /,/, $ENV{BBBIKE_TEST_DRAW_ONLY_MODULES};
 }
+if ($ENV{BBBIKE_TEST_DRAW_SKIP_MODULES}) {
+    %skip_modules = map{($_,1)} split /,/, $ENV{BBBIKE_TEST_DRAW_SKIP_MODULES};
+}
 
 sub usage {
-    die "usage $0: [-display|-displayall] [-save] [-v|-verbose] [-debug] [-fullmap] [-only module]
+    die "usage $0: [-display|-displayall] [-save] [-v|-verbose] [-debug] [-fullmap] [-only module] [-skip module]
 		   [-drawtypes type,type,...] [-bbox x0,y0,x1,y1] [-geometry wxh] [-noroute]
 		   [-flushtofilename] [-[no]outline] [-[no]compress] [-start name] [-goal name] ...
 
@@ -142,6 +146,10 @@ sub usage {
 -geometry wxh:    Default is $geometry.
 -only module:     Test only the given module (may be set multiple times).
                   Can also be set with the environment variable BBBIKE_TEST_DRAW_ONLY_MODULES
+                  as a comma-separated string
+-skip module:     Skip given modules from the standard set (may be set multiple times).
+                  Can also be set with the environment variable BBBIKE_TEST_DRAW_SKIP_MODULES
+                  as a comma-separated string
 -start name
 -goal name:       Set name for start and goal
 ";
@@ -192,7 +200,10 @@ if (!GetOptions(get_std_opts("display"),
 		"route=s" => \$route_type,
 		"geometry=s" => \$geometry,
 		'only=s@' => sub {
-		    push @only_modules, $_[1]; # Tests will fail with -only.
+		    push @only_modules, $_[1];
+		},
+		'skip=s@' => sub {
+		    $skip_modules{$_[1]} = 1;
 		},
 		'drawtypes=s' => sub {
 		    @drawtypes = split /,/, $_[1];
@@ -219,7 +230,12 @@ if ($route_type !~ m{^(none|single|multi)$}) {
 
 my($width, $height) = split /x/, $geometry;
 
-@modules = @only_modules if @only_modules;
+if (@only_modules) {
+    @modules = @only_modules;
+}
+if (%skip_modules) {
+    @modules = grep { !$skip_modules{$_} } @modules;
+}
 
 if ($do_display_all) {
     $do_display = 1;
