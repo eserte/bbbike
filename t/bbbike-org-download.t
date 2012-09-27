@@ -5,6 +5,19 @@
 # Author: Slaven Rezic
 #
 
+# NOTE: this test is controlled by three environment variables:
+#
+# - BBBIKE_TEST_NO_NETWORK: if set to a perl-true value,
+#   then this test is completely skipped
+#
+# - BBBIKE_LONG_TESTS: if set to a perl-true value,
+#   then a random city will be chosen for download (which may
+#   result in loading big data files)
+#
+# - BBBIKE_TEST_SLOW_NETWORK: if set to a perl-true value,
+#   then always a quite small city will be downloaded,
+#   regardless of the BBBIKE_LONG_TESTS setting
+
 use strict;
 use FindBin;
 use lib (
@@ -45,7 +58,7 @@ my @listing;
 }
 
 {
-    my $random = $ENV{BBBIKE_TEST_SLOW_NETWORK} ? 0 : 1;
+    my $random = $ENV{BBBIKE_TEST_SLOW_NETWORK} ? 0 : $ENV{BBBIKE_LONG_TESTS} ? 1 : 0;
 
     my($dir) = tempdir("bbbike.org_download_XXXXXXXX", CLEANUP => 1, TMPDIR => 1)
 	or die "Cannot create temporary directory: $!";
