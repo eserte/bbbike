@@ -18,6 +18,10 @@ test-no-cgi:
 	LANG=C BBBIKE_TEST_NO_CGI_TESTS=1 $(PERL) -w -I.. -I../lib -MTest::Harness -e \
 	    'runtests(@ARGV)' $(TEST_FILES)
 
+test-cgi-lite:
+	LANG=C BBBIKE_TEST_SKIP_MAPSERVER=1 BBBIKE_TEST_SKIP_PALMDOC=1 $(PERL) -w -I.. -I../lib -MTest::Harness -e \
+	    'runtests(@ARGV)' $(TEST_FILES)
+
 prove-no-cgi:
 	(cd .. && LANG=C BBBIKE_TEST_NO_CGI_TESTS=1 $(PERL) -S prove -w -I -Ilib t/$(TEST_FILES))
 
