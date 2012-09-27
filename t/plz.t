@@ -62,7 +62,7 @@ my @approx_tests = (
 		    # Ku'damm => Kurfürstendamm, fails, maybe an extra rule?
 		   );
 		    
-my $tmpdir = "$FindBin::RealBin/tmp/plz";
+my $expected_dir = "$FindBin::RealBin/plz-expected";
 my $create;
 my $test_file = 0;
 my $INTERACTIVE;
@@ -115,9 +115,9 @@ if (defined $in_str) {
        ['mollstrasse',0],
       );
     if ($create) {
-	print "# Test files are written to $tmpdir.\n";
+	print "# Test files are written to $expected_dir.\n";
     } else {
-	print "# Test files read from $tmpdir.\n";
+	print "# Test files read from $expected_dir.\n";
 	print "# If there are errors due to data changes then re-run this script with -create\n";
     }
 }
@@ -647,18 +647,18 @@ sub do_file {
     my $file = ++$test_file;
 
     if ($create) {
-	if (!-d $tmpdir) {
+	if (!-d $expected_dir) {
 	    require File::Path;
-	    File::Path::mkpath([$tmpdir]);
+	    File::Path::mkpath([$expected_dir]);
 	}
-	my $outfile = "$tmpdir/$file";
+	my $outfile = "$expected_dir/$file";
 	open(T, "> $outfile") or die "Can't create $outfile: $!";
 	print T $res;
 	close T;
 	chmod 0644, $outfile;
 	1;
     } else {
-	my $infile = "$tmpdir/$file";
+	my $infile = "$expected_dir/$file";
 	if (open(T, $infile)) {
 	    my $buf = join '', <T>;
 	    close T;
@@ -666,7 +666,7 @@ sub do_file {
 	    my $label = "Compare results with file $file";
 	    eq_or_diff($res, $buf, $label);
 	} else {
-	    warn "Can't open $infile: $!. Please use the -create option first and check the results in $tmpdir!\n";
+	    warn "Can't open $infile: $!. Please use the -create option first and check the results in $expected_dir!\n";
 	    ok(0);
 	}
     }
