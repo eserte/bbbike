@@ -20,6 +20,7 @@ use lib (
 use BBBikeVar;
 use BBBikeTest qw(check_cgi_testing);
 use File::Basename;
+use Sys::Hostname qw(hostname);
 
 BEGIN {
     if (!eval q{
@@ -37,6 +38,11 @@ BEGIN {
 }
 
 check_cgi_testing;
+
+if (hostname !~ m{\.(rezic|herceg)\.de$}) {
+    plan skip_all => "Live server tests only activated on author systems";
+    exit 0;
+}
 
 use constant MSDOS_MIME_TYPE => qr{^application/(octet-stream|x-msdos-program|x-msdownload)$};
 
