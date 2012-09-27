@@ -128,6 +128,13 @@ if ($ENV{BBBIKE_TEST_DRAW_ONLY_MODULES}) {
 if ($ENV{BBBIKE_TEST_DRAW_SKIP_MODULES}) {
     %skip_modules = map{($_,1)} split /,/, $ENV{BBBIKE_TEST_DRAW_SKIP_MODULES};
 }
+if ($ENV{BBBIKE_TEST_SKIP_MAPSERVER}) {
+    for my $module (@modules) {
+	if ($module =~ m{^MapServer}) {
+	    $skip_modules{$module} = 1;
+	}
+    }
+}
 
 sub usage {
     die "usage $0: [-display|-displayall] [-save] [-v|-verbose] [-debug] [-fullmap] [-only module] [-skip module]

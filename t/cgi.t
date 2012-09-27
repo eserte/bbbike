@@ -60,6 +60,10 @@ my $do_accept_gzip = 1;
 my $v = 0;
 my %skip;
 
+if ($ENV{BBBIKE_TEST_SKIP_MAPSERVER}) {
+    $skip{mapserver} = 1;
+}
+
 my $ua = new LWP::UserAgent;
 $ua->agent("BBBike-Test/1.0");
 $ua->env_proxy;
