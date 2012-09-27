@@ -110,4 +110,4 @@ Then execute as root:
 BBBike has a large test suite. To run the cgi-related tests, call as
 unprivileged user:
 
-    (cd t && make test-cgi-lite)
+    (cd t && make prove-cgi-lite)
