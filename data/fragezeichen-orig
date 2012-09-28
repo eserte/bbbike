@@ -768,7 +768,7 @@ Purpurkardinalweg: Qualität?	? 13124,20053 13081,20005 13008,19919 12976,19858 1
 Reisfinkweg: Qualität?	? 13081,20005 12917,20102
 Reisfinkweg: Qualität?	? 12923,20113 12778,20184 12672,20239
 Tigerfinkweg: Qualität?	? 12633,20186 12747,20130 12895,20060 12974,20009 12959,19979 12922,19994 12904,19971
-Schneefinkweg: Qualität?	? 12812,20239 12778,20184 12747,20130 12716,20066 12687,19996 12647,19930 12622,19874 12565,19770
+Schneefinkweg: Qualität?	? 12812,20239 12778,20184 12747,20130 12716,20066 12687,19996 12647,19930 12622,19874 12568,19768
 Wüstensperlingweg: Qualität?	? 12835,20670 12941,20855 13031,21002
 #: XXX ^^^
 #: XXX Eintrag in Berlin.coords.data?
@@ -1813,8 +1813,6 @@ Gerlachstr.: Qualität? Existieren hier (abschnittsweise?) Radwege?	? -8068,-4552
 Loddin: Qualität (wahrscheinlich Verbundsteinpflaster oder Kopfsteinpflaster)	? 47917,180585 47868,180623
 #: XXX: beide Enden sehen gut aus:
 Strecke zwischen Usedom und Abzweig Welzin: Qualität?	? 44868,163300 43477,164369 43370,164591
-#: XXX dieser Weg hat bei osm und tvojpl einen Namen
-Am Zingergraben: Qualität? Ist der Weg ausgeschildert?	? 9028,21441 8987,21430 8866,21520 8794,21573 8780,21646 8849,21842 8848,21920 8740,21983
 Mellenthin - Gummlin: Qualität?	? 48871,166559 48865,165755 49125,164525 49188,164029 49207,163588
 #: XXX laut nordland-Usedom-Karte mittel-schlecht:
 Bansin-Dorf - Gothen: Qualität?	? 57343,173415 57170,172520 56710,172337 56872,172049
@@ -2637,64 +2635,74 @@ Karlshöhe: Wo genau liegt die Straße? Oder ist es nur eine Kleingartenanlage? Qu
 #XXX del --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/14re.pdf/file --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/40re.pdf/file?y=2011 --- Anlage Schildoweck: sieben neue Privatwege, wo genau, Qualität?	? 8656,24889 8592,24914 8513,24909 8404,24744 8443,24529 8656,24889
 #XXX del --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/14re.pdf/file --- #: XXX fehlt in Berlin.coords.data: --- Am Meisenwinkel: Wo genau liegt die Straße? Qualität?	? 9108,20410 9141,20443
 # 
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/14re.pdf/file
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/37re.pdf/file?y=2011
-#: XXX fehlen alle in Berlin.coords.data, PLZ=13156:
-#: XXX   Alsaceweg
-#: XXX   Normandieweg
-#: XXX   Savoyenweg
-#: XXX   Bretagneweg
-#: XXX   Lorraineweg
-#: XXX   Cantalweg
-#: XXX   Champagneweg
-#: XXX   Gascogneweg
-#: XXX   Argonnenweg
-#: XXX   Provenceweg
-#: XXX   Picardieweg -> DONE
-Anlage Frohsinn: Benennung von 11 Privatwegen, wo genau, Qualität?	? 10873,22065 10841,21949
-#
-#: section ignorieren vvv
-#: XXX ignore because of check_nearest errors
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/19re.pdf/file?y=2012
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/14re.pdf/file vvv
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/37re.pdf/file?y=2011 vvv
+#: XXX fehlen alle in Berlin.coords.data, PLZ=13156: vvv
+#: XXX Anlage Frohsinn: Benennung von 11 Privatwegen, Qualität? vvv
+Alsaceweg	? 10312,21969 10336,21901
+Normandieweg	? 10377,21991 10414,21876
+Savoyenweg	? 10436,22011 10488,21860
+Bretagneweg	? 10492,22031 10565,21840
+Lorraineweg	? 10553,22052 10633,21827
+Cantalweg	? 10612,22073 10709,21804
+#: XXX_osm bei osm falsch (Campagneweg) geschrieben
+Champagneweg	? 10672,22094 10789,21786
+Gascogneweg	? 10708,22106 10831,21774
+Argonnenweg	? 10768,22127 10902,21753
+Provenceweg	? 10826,22147 10981,21731
+# XXX   Picardieweg -> DONE
+#: XXX ^^^
+#: XXX ^^^
+#: by ^^^
+#: by ^^^
+# 
+Am Nordgraben: hat dieser Weg einen Namen? Qualität? Nachts beleuchtet?	? 10097,21809 10260,21795 10304,21815 10925,21689 11039,21632 11253,21364 11373,21271 11703,21097
+Brücke	? 11039,21632 11073,21680
+# 
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/19re.pdf/file?y=2012 vvv
 #: XXX fehlen alle in Berlin.coords.data, PLZ=13158 und PLZ=13159
-#: XXX (Schreibweise nochmal prüfen!)
-#: XXX   Kräuterweg
-#: XXX   Kräuterplatz
-#: XXX   Wildkräuterweg
-#: XXX   Gebirgskräuterweg
-#: XXX   Feldkräuterweg
-#: XXX   Wasserkräuterweg
-#: XXX   Wiesenkräuterweg
-#: XXX   Heilkräuterweg
-#: XXX   Anisweg
-#: XXX   Basilikumweg
-#: XXX   Chiliweg
-#: XXX   Dillweg
-#: XXX   Dinkelweg
-#: XXX   Eisenkrautweg
-#: XXX   Estragonweg
-#: XXX   Frauenmantelweg
-#: XXX   Gierschweg
-#: XXX   Goldrutenweg
-#: XXX   Hamamelisweg
-#: XXX   Huflattichweg
-#: XXX   Ingwerweg
-#: XXX   Johanniskrautweg
-#: XXX   Kümmelweg
-#: XXX   Kampferweg
-#: XXX   Lorbeerweg
-#: XXX   Majoranweg
-#: XXX   Nachtkerzenweg
-#: XXX   Oreganoweg
-#: XXX   Pfefferminzweg
-#: XXX   Queckenweg
-#: XXX   Rotkleeweg
-#: XXX   Schnittlauchweg
-#: XXX   Thymianweg
-#: XXX   Brunnenkresseweg
-#: XXX   Currykrautweg
-Neue Privatstraßen in der Kolonie Einigkeit	? 9897,21861 9456,21937 8931,22056 8591,22224 8504,22281 8452,22105 8755,21962 8712,21858 8642,21886 8602,21804 8704,21750 8608,21507 8722,21437 8786,21397 8892,21324 9413,21659
-#: section ^^^
+#: XXX Neue Privatstraßen in der Kolonie Einigkeit
+#: XXX_osm bei osm noch nicht unbenannt! vvv
+Anisweg	? 9788,21780 9866,21586
+Basilikumweg	? 9726,21760 9803,21567
+Brunnenkresseweg	? 9725,21891 9609,21843 9549,21818 9493,21796 9433,21771
+Chiliweg	? 9664,21739 9694,21668 9738,21541
+Currykrautweg	? 9636,21779 9609,21843 9579,21904
+Dillweg	? 9585,21712 9617,21638 9659,21523
+Dinkelweg	? 9571,21753 9549,21818 9505,21911
+Eisenkrautweg	? 9527,21682 9555,21617 9600,21503
+Estragonweg	? 9515,21730 9493,21796 9439,21923
+Feldkräuterweg	? 9031,21380 9121,21346 9205,21318 9279,21292 9238,21426 9309,21535 9428,21574 9499,21596 9555,21617 9617,21638 9694,21668
+Frauenmantelweg	? 9541,21482 9499,21596 9476,21656 9458,21705 9433,21771 9378,21895
+Gebirgskräuterweg	? 8912,21308 9031,21380 9099,21423 9161,21463 9476,21656 9527,21682 9585,21712 9664,21739 9726,21760 9788,21780 9907,21819 9897,21861
+Gierschweg	? 9161,21463 9205,21318
+Goldrutenweg	? 9393,21674 9316,21870 9277,21965
+Hamamelisweg	? 9099,21423 9121,21346
+# XXX   Heilkräuterweg -> siehe strassen-orig
+Huflattichweg	? 9326,21655 9256,21845 9199,21986
+Ingwerweg	? 9282,21589 9260,21636 9192,21816 9161,21908 9125,22005
+Johanniskrautweg	? 9203,21619 9137,21793
+Kampferweg	? 9005,21981 9049,21867 9085,21777 9114,21683 9094,21674 9016,21644
+Hier auch Kampferweg?	? 9122,21595 9094,21674
+# XXX   Kräuterplatz -> siehe strassen-orig
+# XXX   Kräuterweg -> siehe strassen-orig
+Kümmelweg: ist er tatäschlich hier?	? 9146,21602 9171,21549 9180,21523
+Lorbeerweg	? 8902,21946 8946,21828 8986,21736 9016,21644 9043,21572 9085,21467
+Majoranweg	? 8924,21715 8983,21554 9028,21441
+Nachtkerzenweg	? 8842,21680 8901,21530
+Oreganoweg	? 8449,22139 8572,22094
+Pfefferminzweg	? 8476,22209 8592,22153 8795,22056
+Queckenweg	? 8740,21983 8762,22041 8795,22056 8902,22005 9005,21981
+Rotkleeweg	? 8807,21944 8821,21973 8902,22005
+Schnittlauchweg	? 8848,21920 8902,21946 9005,21981 9125,22005
+Thymianweg	? 8830,21788 8946,21828 9049,21867 9161,21908
+#: XXX früher evtl. "Am Zingergraben"
+Wasserkräuterweg	? 9028,21441 8987,21430 8866,21520 8794,21573 8780,21646 8786,21664 8830,21788 8849,21842 8848,21920 8807,21944 8740,21983 8659,22031 8557,22063 8435,22102
+Wiesenkräuterweg	? 9428,21574 9467,21460 9541,21482 9600,21503 9659,21523 9738,21541 9803,21567 9866,21586 10111,21667
+Wildkräuterweg	? 8786,21664 8842,21680 8924,21715 8986,21736 9085,21777 9137,21793 9192,21816 9256,21845 9316,21870 9378,21895 9439,21923
+XXX Name?	? 8557,22063 8572,22094 8592,22153
+#: XXX_osm ^^^
+#: by ^^^
 # 
 #XXX del --- #: XXX: westliches Ende sah asphaltiert aus --- #: XXX: Straßenschilder? Das könnte der "Falkenberger Fußsteig" sein, wovon es aber nur wenige Referenzen im Netz gibt, u.a. bei http://www.berlin.de/ba-lichtenberg/buergerservice/stadtplanung/index.php?strasse=falkenberger+fu%C3%9Fsteig&strasse_mit=--+Bitte+ausw%C3%A4hlen+--&plz=--+Bitte+ausw%C3%A4hlen+--#results --- (Falkenberger Chaussee - Dorfstr./Wartenberg): Qualität? Nachts beleuchtet?	? 18922,18436 18761,18480 18503,18535 18215,18629 18185,18641
 #XXX del --- Walter-Felsenstein-Str. - Bitterfelder Str.: existiert hier eine Verbindung?	? 20459,16697 20409,16670
