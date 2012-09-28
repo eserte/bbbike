@@ -17367,10 +17367,11 @@ EOF
 userdel	2::inwork 39239,101950 39066,102017
 EOF
      },
-     { from  => 1305756000, # 1270235753, # 2010-04-02 21:15 # erster Termin im Jahr
-       until => 1306101600, # 1270504799, # 2010-04-05 23:59
-       text  => 'Müllerstr. (Wedding): Veranstaltung, gesperrt (20. bis 22. Mai 2011) in beiden Richtungen zwischen Nazarethkirchstr. und Seestr. ',
+     { from  => 1348714800, # 2012-09-27 05:00 PERIODISCH, zwei Termine im Jahr
+       until => 1349046000, # 2012-10-01 01:00
+       text  => 'Müllerstr. (Wedding): Veranstaltung, Straße zwischen Seestr. und Luxemburger Str. gesperrt, 28.09.2012 05:00 Uhr bis 01.10.2012 01:00 Uhr ',
        type  => 'gesperrt',
+       source_id => 'IM_019233',
        data  => <<EOF,
 userdel	2::temp 6781,16026 6914,15908 6936,15888 7043,15793 7129,15717 7198,15656
 EOF
@@ -20668,6 +20669,36 @@ EOF
        source_id => 'http://www.berlin.de/ba-lichtenberg/presse/archiv/20120921.1525.375622.html',
        data  => <<EOF,
 userdel	q4::inwork 18998,8784 19078,8817 19120,8835 19173,8857 19316,8933 19510,9035 19629,9094 19634,9192
+EOF
+     },
+     { from  => 1348376400, # 2012-09-23 07:00
+       until => 1349964000, # 2012-10-11 16:00
+       text  => 'Eisenacher Str. (Tempelhof): Baustelle, Richtung Richtung Rixdorfer Str. zwischen Mariendorfer Damm und Kosleckstr. gesperrt, 24.09.2012 07:00 Uhr bis 11.10.2012 16:00 Uhr ',
+       type  => 'handicap',
+       source_id => 'INKO_115461',
+       data  => <<EOF,
+userdel	q4::inwork; 9277,4664 9405,4667 9494,4658 9695,4638 10010,4606
+EOF
+     },
+     { from  => 1348632000, # 2012-09-26 06:00
+       until => 1349092800, # 2012-10-01 14:00
+       text  => 'Scheidemannstr. / John-Foster-Dulles-Allee: Straße wegen Marathon-Vorbereitungen zwischen Heinrich-von-Gagern-Str. und Große Querallee gesperrt, 27.09.2012 06:00 Uhr bis 01.10.2012 14:00 Uhr ',
+       type  => 'gesperrt',
+       source_id => 'IM_019236',
+       data  => <<EOF,
+userdel	2::temp 7875,12363 8017,12359 8070,12409 8119,12414
+EOF
+     },
+     { from  => 1348718400, # 2012-09-27 06:00
+       until => 1349647140, # 2012-10-07 23:59
+       text  => 'Sperrungen wegen Marathon und Tag der deutschen Einheit: Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor, Ebertstr. zwischen Behrenstr. und Scheidemannstr., Yitzak-Rabin-Str., 28.09.2012 06:00 Uhr bis 07.10.2012 23:59 Uhr',
+       type  => 'gesperrt',
+       source_id => 'IM_019235',
+       data  => <<EOF,
+userdel	2::temp 8573,12325 8540,12420
+userdel	2::temp 8610,12254 8538,12245 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 6828,12031
+userdel	2::temp 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
+userdel	2::temp 8119,12414 8055,12186
 EOF
      },
     );
