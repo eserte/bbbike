@@ -187,36 +187,62 @@ sub create_modified_devel {
 
     require Digest::MD5;
 
-    open(MOD, ">$datadir/.modified~") or die "Can't write to .modified~: $!";
-    if ($rsync_include) {
-	open(RSYNC, ">$datadir/.rsync_include") or die "Can't write to .rsync_include: $!";
+    my %old_files;
+    if (open my $fh, "$datadir/.modified") {
+	while(<$fh>) {
+	    chomp;
+	    my($file, $timestamp, $md5) = split /\t/;
+	    $old_files{$file} = {timestamp => $timestamp, md5 => $md5};
+	}
+    } else {
+	warn "WARN: Cannot load $datadir/.modified: $!";
     }
-    open(MANI, "$rootdir/MANIFEST") or die "Can't open MANIFEST: $!";
-    while(<MANI>) {
+
+    open my $ofh, ">", "$datadir/.modified~"
+	or die "Can't write to .modified~: $!";
+
+    my $rsyncfh;
+    if ($rsync_include) {
+	open $rsyncfh, ">", "$datadir/.rsync_include"
+	    or die "Can't write to .rsync_include: $!";
+    }
+
+    open my $manifh, "$rootdir/MANIFEST"
+	or die "Can't open MANIFEST: $!";
+    while(<$manifh>) {
 	if (m|^data/(.*)|) {
 	    my $file = $1;
 	    next if $file =~ m|^\.|;
 
-	    my $ctx = Digest::MD5->new;
-	    open(MD5, "$datadir/$file")
-		or die "Can't open $datadir/$file: $!";
-	    $ctx->addfile(\*MD5);
-	    close MD5;
+	    my $md5 = do {
+		my $ctx = Digest::MD5->new;
+		open my $fh, "$datadir/$file"
+		    or die "Can't open $datadir/$file: $!";
+		$ctx->addfile($fh);
+		$ctx->hexdigest;
+	    };
 
-	    my(@stat) = stat("$datadir/$file");
-	    print MOD join("\t", "data/$file", $stat[9], $ctx->hexdigest), "\n";
-	    if ($rsync_include) {
-		print RSYNC "$file\n";
+	    my $relfilename = "data/$file";
+	    my $use_mtime;
+	    if ($old_files{$relfilename} && $md5 eq $old_files{$relfilename}->{md5}) {
+		$use_mtime = $old_files{$relfilename}->{timestamp}; # don't change timestamp if possible
+	    } else {
+		my @stat = stat "$datadir/$file";
+		$use_mtime = $stat[9];
+	    }
+	    print $ofh join("\t", $relfilename, $use_mtime, $md5), "\n";
+	    if ($rsyncfh) {
+		print $rsyncfh "$file\n";
 	    }
 	}
     }
-    close MANI
+    close $ofh
 	or die "While writing to .modified~: $!";
-    close MOD;
     rename "$datadir/.modified~", "$datadir/.modified"
 	or die "Can't rename $datadir/.modified~ to $datadir/.modified: $!";
-    if ($rsync_include) {
-	close RSYNC;
+    if ($rsyncfh) {
+	close $rsyncfh
+	    or die "While writing to .rsync_include: $!";
     }
 }
 
