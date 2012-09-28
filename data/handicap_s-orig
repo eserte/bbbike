@@ -90,17 +90,12 @@ Helmerdingstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg kann benutzt werden	q3::i
 #: next_check: 2012-10-15
 Marchlewskistr.: Bauarbeiten, Ausweichen auf Gehweg	q4::inwork 13496,11384 13473,11456
 # 
-#: last_checked: 2012-09-04
+#: last_checked: 2012-09-28
 #: next_check: 2012-10-15
 #: XXX danach q1 und mit Eintrag unten verknüpfen, falls hier in Zukunft keine Fahrbahn mehr sein wird
 Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q2::inwork 10601,12521 10704,12595
 # 
-#: last_checked: 2012-09-19 vvv
-#: next_check: 2012-10-19 vvv
-#: note: komplette Fertigstellung und Verkehrsfreigabe im Frühjahr 2013
-Rathausstr. und Rathausbrücke: Behinderungen wegen Bauarbeiten möglich	q1::inwork 10281,12310 10362,12351 10422,12395
-#: next_check: ^^^
-#: last_checked: ^^^
+#XXX del --- #: last_checked: 2012-09-19 vvv--- #: next_check: 2012-10-19 vvv --- #: note: komplette Fertigstellung und Verkehrsfreigabe im Frühjahr 2013 --- Rathausstr. und Rathausbrücke: Behinderungen wegen Bauarbeiten möglich	q1::inwork 10281,12310 10362,12351 10422,12395 --- #: next_check: ^^^ --- #: last_checked: ^^^
 # 
 #: last_checked: 2012-09-26 vvv
 #: next_check: 2012-10-20 vvv
