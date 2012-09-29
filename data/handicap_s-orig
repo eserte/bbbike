@@ -1258,7 +1258,7 @@ Hoffbauerpfad: gemeinsamer Rad- und Gehweg	q1 214,969 333,1104
 (Feldspatweg - Parksiedlung Spruch): eng	q2 10907,1651 10895,1698 10904,1733 10968,1753
 (Bleichrˆderpark): Fuﬂg‰nger	q1 10545,18143 10487,18270
 Rampe	q2 10503,19371 10489,19406
-(Blaubeerweg - Picardieweg): eng	q2 10932,22184 10993,21948
+(Blaubeerweg - Picardieweg): eng	q2 10933,22179 10993,21948
 Schillingweg: eng, parkende Autos	q1 11259,23928 11224,23879 11190,23832 11165,23796 11134,23753 11105,23704 11051,23620 10855,23403 10717,23258 10700,23251 10629,23222 10396,23128
 (Tomatenweg - Straﬂe 175): sehr eng	q3 12500,22895 12515,22898 12532,22902
 (Schloﬂpark Schˆnhausen): Fuﬂg‰nger	q1 10600,19225 10638,19149
@@ -1354,6 +1354,17 @@ Ulrichsteiner Weg: Bordstein	q2 6093,21648 6066,21691
 (Hafersteig - Wuhlgartenweg): eng	q1 20835,12200 20824,12177 20823,12139
 (Teterower Ring - Hellersdorfer Str.): Fuﬂg‰nger	q2 22801,13096 22842,13089 22883,13013
 (Marderweg - Kieler Str. [Wohngebiet]): schmal	q2 25789,13263 25766,13289
+Straupitzer Steig: Fuﬂg‰ngerzone	q4 6765,21364 6766,21341
+(Straupitzer Steig - Wilhelmsruher Damm): Fuﬂg‰ngerzone	q4 6766,21341 6778,21154
+(Senftenberger Ring - Mittelfeldbecken): eng, kurvenreich	q2 6722,21722 6738,21752 6781,21761 6794,21779 6827,21782 6843,21772 6911,21774
+(am Fasaneriegraben): einige Fuﬂg‰nger	q1 6907,21751 6911,21774 6938,21825
+(Rundweg um das Mittelfeldbecken): einige Fuﬂg‰nger	q1 6938,21825 6954,21809 7007,21821 7144,21838 7141,21865 7077,21860 7050,21904 6999,21908 6947,21895 6923,21858 6938,21825
+(am Fasaneriegraben): einige Fuﬂg‰nger	q1 7144,21838 7272,21855 7287,21845
+(am Fasaneriegraben): teilweise eng	q2- 7331,22037 7375,22146 7439,22138 7516,22178
+Schneefinkweg: enger Pfad	q3 12812,20239 12808,20233 12782,20191 12778,20184 12750,20128 12719,20065
+Schneefinkweg: enger Pfad	q3 12675,19974 12651,19928 12622,19874
+#: XXX_prog: BS (s¸dliche Seite)
+Tigerfinkweg: Bordstein	q3 12963,19971 12952,19947
 #
 ######################### User Contributions #################################
 # 
@@ -1513,13 +1524,14 @@ Erich-Kuttner-Str.: enge Straﬂe	q1 14584,13547 14532,13563 14428,13596 14370,136
 # 
 #: by: Dirk (gesch) vvv
 #: corrected_by: srt/policy (q1 -> )
-Birkenwerderstr.: enge Straﬂe mit parkenden Autos	q0- 6450,20753 6945,20805
+Birkenwerderstr.: enge Straﬂe mit parkenden Autos	q0- 6450,20753 6930,20808
 # XXX deletion proposed by norbert winkelmann: Tornower Weg: enge Straﬂe mit parkenden Autos	q1 6452,20637 6457,20717 6450,20753 6473,20858 6494,20944 6514,20993 6544,21083
 #: corrected_by: srt/policy (q1 -> )
-Borgsdorfer Str.: enge Straﬂe mit parkenden Autos	q0- 6473,20858 6962,20895
+Borgsdorfer Str.: enge Straﬂe mit parkenden Autos	q0- 6473,20858 6951,20898
 #: corrected_by: srt/policy (q1 -> )
-Germendorfer Str.: enge Straﬂe mit parkenden Autos	q0- 6368,20956 6494,20944 6977,20984 7079,21000 7151,21012
-Wentowsteig: enge Straﬂe mit parkenden Autos	q1 6924,20695 6945,20805 6955,20859 6962,20895 6977,20984
+Germendorfer Str.: enge Straﬂe mit parkenden Autos	q0- 6368,20956 6494,20944 6972,20993 7079,21008 7150,21018
+#: corrected_by: srt/policy (q1 -> )
+Wentowsteig: enge Straﬂe mit parkenden Autos	q0- 6904,20692 6930,20808 6943,20862 6951,20898 6972,20993
 #: by: ^^^
 # 
 #: by: Peter Held:
@@ -1707,7 +1719,7 @@ Vereinsweg (Steglitz): Fuﬂg‰nger, Privatstraﬂe, Radfahren nicht erlaubt	q4 5347,
 (Volkspark Friedrichshain): Fuﬂg‰nger	q2 12825,13783 12813,13799 12805,13809
 (Volkspark Friedrichshain): Fuﬂg‰nger	q2 12403,13755 12436,13719 12482,13705 12594,13747 12640,13814
 (Volkspark Friedrichshain): Fuﬂg‰nger	q2 12766,13621 12723,13598 12656,13576 12582,13519 12483,13418
-(Volkspark Friedrichshain): Fuﬂg‰nger	q2 12483,13418 12605,13356
+(Volkspark Friedrichshain): Fuﬂg‰nger	q2 12483,13418 12586,13368
 (Volkspark Friedrichshain): Fuﬂg‰nger	q2 12438,13387 12344,13320 12244,13240 12236,13229
 (Volkspark Friedrichshain): Fuﬂg‰nger	q2 12382,13262 12344,13320 12281,13325 12166,13349 12141,13341
 (Volkspark Friedrichshain): Fuﬂg‰nger	q2 12141,13609 12023,13598 12038,13685

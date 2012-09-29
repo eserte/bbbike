@@ -24,13 +24,16 @@ Grunewaldstr. (Steglitz)	?::projected 4861,5581 4671,5697 4520,5793
 #: next_check: 2013-04-15
 Stülerstr.	?::projected 6825,11486 6716,11439 6692,11365 6679,11319 6630,11247 6606,11222
 # 
-#: last_checked: 2012-09-22
-#: next_check: 2012-11-15
+#: last_checked: 2012-09-29
+#: next_check: 2012-11-30
 Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12128,14640 12317,14535 12425,14459 12621,14313 12729,14227 12901,14093 12975,13990 13037,13897 13100,13803 13166,13707 13225,13620 13228,13615 13330,13468
 # 
-#: last_checked: 2012-09-10 (nördlicher Abschnitt)
-#: next_check: 2012-09-30
-Kniprodestr./Am Friedrichshain	?::inwork 12901,14093 12784,13961 12695,13864 12640,13814 12571,13798 12403,13755 12204,13719 12161,13711 12038,13685 11868,13646 11785,13625 11762,13619 11706,13635
+#: last_checked: 2012-09-29 vvv
+#: next_check: 2012-11-30 vvv
+Kniprodestr./Am Friedrichshain: wird die andere Richtung auch Radspuren bekommen?	?; 12403,13755 12571,13798 12640,13814 12695,13864 12784,13961 12901,14093
+Am Friedrichshain: wird es im südlichen Abschnitt auch Radspuren geben?	? 12403,13755 12204,13719 12161,13711 12038,13685 11868,13646 11785,13625 11762,13619 11706,13635
+#: next_check ^^^
+#: last_checked ^^^
 # 
 #: last_checked: 2012-09-10
 #: next_check: 2012-10-15
@@ -598,6 +601,91 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/19re.pdf/file?y=2012 vvv
+#: XXX fehlen alle in Berlin.coords.data, PLZ=13158 und PLZ=13159
+#: XXX Neue Privatstraßen in der Kolonie Einigkeit
+#: XXX Straßen werde ich erst nach der Umbenennung aufnehmen!
+#: last_checked: 2012-09-29 vvv
+#: next_check: 2013-08-01 vvv
+#: XXX neuer Name: Anisweg?
+Primelweg: unbefestigte Straße, Q2-	? 9788,21780 9866,21586
+#: XXX neuer Name: Basilikumweg
+Rosenweg: unbefestigte Straße, Q2-	? 9726,21760 9803,21567
+#: XXX neuer Name: Brunnenkresseweg?
+Brunnenweg: unbefestigte Straße, Q2-	? 9725,21891 9609,21843 9549,21818 9493,21796 9433,21771
+#: XXX neuer Name: Chiliweg?
+Grabenweg: unbefestigte Straße, Q2-	? 9664,21739 9694,21668 9738,21541
+#: XXX neuer Name: Currykrautweg?
+Georginenweg: unbefestigte Straße, Q2-	? 9636,21779 9609,21843 9579,21904
+#: XXX neuer Name: Dillweg?
+Levkojenweg: unbefestigte Straße, Q2-	? 9585,21712 9617,21638 9659,21523
+#: XXX neuer Name: Dinkelweg?
+Petunienweg: unbefestigte Straße, Q2-	? 9571,21753 9549,21818 9505,21911
+#: XXX neuer Name: Eisenkrautweg?
+Resedaweg: unbefestigte Straße, Q3+	? 9527,21682 9555,21617 9600,21503
+#: XXX neuer Name: Estragonweg?
+Nelkenweg: unbefestigte Straße, Q2-	? 9515,21730 9493,21796 9439,21923
+#: XXX neuer Name: Feldkräuterweg?
+Mittelweg: unbefestigte Straße, Q2-	? 9428,21574 9499,21596 9555,21617 9617,21638 9694,21668
+#: XXX neuer Name: Frauenmantelweg? vvv
+Blumenweg: unbefestigte Straße, Q2-	? 9541,21482 9499,21596 9476,21656
+(Brücke): Asphalt, Q1+	? 9476,21656 9458,21705
+Kornblumenweg: unbefestigte Straße, Q2-	? 9458,21705 9433,21771 9373,21906
+#: XXX ^^^
+#: XXX neuer Name: Gierschweg?
+Mohnweg: unbefestigte Straße, Q2-	? 9158,21467 9205,21318
+#: XXX neuer Name: Goldrutenweg?
+Alsternweg: unbefestigte Straße, Q2-	? 9393,21674 9312,21880 9276,21958
+#: XXX neuer Name: Hamamelisweg?
+Lindenweg: unbefestigte Straße, Q2-	? 9097,21427 9121,21346
+# XXX   Heilkräuterweg -> siehe strassen-orig
+#: XXX neuer Name: Huflattichweg?
+Veilchenweg: unbefestigte Straße, Q3+	? 9326,21655 9252,21855 9201,21974
+#: XXX neuer Name: Ingwerweg?
+Seeweg: unbefestigte Straße, Q2-	? 9282,21589 9260,21636 9187,21828 9156,21916 9127,21990
+#: XXX neuer Name: Johanniskrautweg?
+Goldlackweg: unbefestigte Straße, Q3	? 9203,21621 9132,21805
+#: XXX neuer Name: Kampferweg?
+Dahlienweg: unbefestigte Straße, Q2-	? 8995,21990 9045,21873 9082,21786 9113,21687 9092,21677 9120,21599
+#: XXX neuer Name?
+Gladiolenweg: Gras, Q3	? 9092,21677 9014,21650
+# XXX   Kräuterplatz -> siehe strassen-orig
+# XXX   Kräuterweg -> siehe strassen-orig
+#: XXX neuer Name: vielleicht Kümmelweg?
+Lilienweg: unbefestigte Straße, Q2-	? 9145,21606 9169,21548 9180,21523
+#: XXX neuer Name: Lorbeerweg? vvv
+#: XXX auf einem Schilder steht fälschlicherweise "Tulpen Weg"
+Tulpenweg: unbefestigte Straße, Q2-	? 8901,21951 8943,21833
+Tulpenweg: unbefestigte Straße, Q3	? 8943,21833 8982,21748
+Tulpenweg: unbefestigte Straße, Q2-	? 8982,21748 9014,21650 9042,21578 9066,21516 9085,21467
+#: XXX ^^^
+#: XXX neuer Name: Majoranweg?
+Fliederweg: unbefestigte Straße, Q2-	? 8921,21724 8980,21559 9028,21441 8987,21430
+#: XXX neuer Name: Nachtkerzenweg?
+Margueritenweg	? 8839,21693 8900,21536
+#: XXX neuer Name: Oreganoweg?
+Weidenweg: unbefestigte Straße, Q2-	? 8439,22143 8572,22094
+#: XXX neuer Name: Pfefferminzweg? vvv
+An der Industriebahn: unbefestigte Straße, Q2-	? 8464,22215 8594,22158 8755,22081
+An der Industriebahn: Gras, Q3, NN, Betonbrücke	? 8755,22081 8795,22056
+An der Industriebahn: unbefestigte Straße, Q2-	? 8795,22056 8903,22012 8995,21990
+#: XXX ^^^
+#: XXX neuer Name: Queckenweg?
+Am Graben: unbefestigte Straße, Q2-	? 8736,21985 8753,22037 8795,22056
+#: XXX neuer Name: Rotkleeweg?
+Rosenthaler Weg: unbefestigte Straße, Q2-	? 8800,21947 8830,21984 8903,22012
+#: XXX neuer Name: Schnittlauchweg?
+Langer Weg: unbefestigte Straße, Q2-	? 8848,21920 8901,21951 8995,21990 9092,22002
+#: XXX neuer Name: Thymianweg?
+Grüner Weg: unbefestigte Straße, Q2-	? 8830,21788 8943,21833 9045,21873 9156,21916
+#: XXX neuer Name?
+Grenzweg: unbefestigte Straße, Q2-	? 8557,22063 8572,22094 8594,22158
+#: XXX neuer Name?
+Kurzer Weg: Qualität?	? 9169,21548 9066,21516
+#: next_check ^^^
+#: last_checked ^^^
+#: by ^^^
+# 
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20120928.1200.375958.html
 #: next_check: 2012-10-12
 Neidenburger Allee: Fahrbahnsanierung Neidenburger Allee von Willenberger Pfad bis Waldschulallee, danach bessere Qualität?	?::inwork 576,10729 574,10577
@@ -630,7 +718,6 @@ Asphaltstreifen soll eingerichtet werden	?::projected 26662,-1916 26728,-2030 26
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/bvv-online/vo020.asp?VOLFDNR=4353&options=4
 #: XXX evtl. werden, wenn der Antrag angenommen wird, fehlende Abschnitte ergänzt
 Birkbuschstr.: existieren hier teilweise Radspuren?	? 5671,3987 5624,4112 5588,4210 5557,4294 5483,4359 5416,4411 5329,4485 5271,4547 5161,4664 5137,4691 5076,4762 5070,4770 5048,4798 4985,4884 4951,4920 4879,5017
-RR5 im Kienhorstpark: wie ist die genaue Wegführung?	? 6502,18905 6572,18793
 (Buschallee KGA): komplett asphaltiert? Beleuchtet? Schranken? Ausschilderung?	? 22458,9532 22525,9665 22730,9938
 (KGA-Weg): komplett asphaltiert? Beleuchtet? Schranken? Ausschilderung?	? 22730,9938 22818,10080 22731,10142
 (Blumenweg): Qualität? Beleuchtet? Schranken? Ausschilderung?	? 22274,9622 22604,9988
@@ -727,53 +814,6 @@ Bodenschwelle, Umfahrung kann zugeparkt sein	? 23349,2240
 #: last_checked: 2012-09-19
 #: next_check: 2012-10-19 (evtl. auch amay fragen)
 Bootsbauerstr.: wird es eine Verbindung zur Bahrfeldtstr. geben?	? 15033,10013 15024,9994
-# 
-#: XXX Kolonie heißt "Anlage Blankenburg" vvv
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/19re.pdf/file
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/52re.pdf/file?y=2011
-#: XXX Beschilderung erfolgt erst 2012
-#: next_check: 2012-04-01
-#: XXX alle Straßen fehlen in Berlin.coords.data
-#: XXX PLZ=13029,13127,13089
-#: XXX Ortsteile=Blankenburg, Französisch Buchholz
-Buschsperlingweg: Qualität?	? 12599,20738 12368,20372
-Steinsperlingweg: Qualität?	? 12382,20255 12258,20177 12219,20024
-Maronensperlingweg: Qualität?	? 13031,21002 12966,21005 12927,20998 12720,20682 12685,20633 12654,20590 12618,20532 12583,20476 12465,20278 12429,20231 12408,20192 12356,20103 12313,20039 12275,19979 12195,19855 12107,19713
-Kapsperlingweg: Qualität?	? 12331,19944 12254,19818 12180,19700
-Andenzeisigweg: Qualität?	? 12794,20569 12685,20633
-Bartzeisigweg: Qualität?	? 12768,20525 12654,20590
-Fichtenzeisigweg: Qualität?	? 12728,20458 12618,20532
-Gelbbauchzeisigweg: Qualität?	? 12694,20401 12583,20476
-Goldzeisigweg: Qualität?	? 12650,20327 12465,20278
-#: XXX Fortsetzung
-Grünkardinalweg: Qualität?	? 12547,20154 12429,20231 12382,20255
-Kapuzenzeisigweg: Qualität?	? 12408,20192 12447,20052 12458,20012
-Korsikazeisigweg: Qualität?	? 12447,20052 12356,20103
-Magellanzeisigweg: Qualität?	? 12430,19967 12313,20039
-Maskenzeisigweg: Qualität?	? 12391,19905 12331,19944 12275,19979
-Mexikozeisigweg: Qualität?	? 12315,19784 12254,19818 12195,19855
-Olivzeisigweg: Qualität?	? 12239,19664 12180,19700 12107,19713
-Wiesenammerweg: Brücke über den Graben? Qualität?	? 13109,20225 13271,20131 13366,20074
-#: XXX str_cont_ausnahme
-Schneeammerweg: Qualität?	? 13087,20455 13207,20380 13334,20308
-Schneeammerweg: Brücke über den Graben? Qualität?	? 13329,20299 13416,20242
-#: XXX str_cont_ausnahme
-Singammerweg: Qualität?	? 13043,20414 13175,20329 13301,20254
-Singammerweg: Brücke über den Graben? Qualität?	? 13293,20241 13350,20205
-#: XXX Fortsetzung; str_cont_ausnahme
-Schwirrammerweg: Brücke über den Graben? Qualität?	? 13205,20091 13316,20018
-#: XXX Fortsetzung; evtl. str_cont_ausnahme
-Purpurkardinalweg: Qualität?	? 13124,20053 13081,20005 13008,19919 12976,19858 12941,19789 12913,19728 12878,19667
-#: XXX str_cont_ausnahme
-Reisfinkweg: Qualität?	? 13081,20005 12917,20102
-Reisfinkweg: Qualität?	? 12923,20113 12778,20184 12672,20239
-Tigerfinkweg: Qualität?	? 12633,20186 12747,20130 12895,20060 12974,20009 12959,19979 12922,19994 12904,19971
-Schneefinkweg: Qualität?	? 12812,20239 12778,20184 12747,20130 12716,20066 12687,19996 12647,19930 12622,19874 12568,19768
-Wüstensperlingweg: Qualität?	? 12835,20670 12941,20855 13031,21002
-#: XXX ^^^
-#: XXX Eintrag in Berlin.coords.data?
-An der Industriebahn: Qualität?	? 12382,20255 12368,20372 12310,20523 12274,20570
-(Maronensperlingweg - Burgwallstr.): existiert eine Verbindung? Qualität?	? 12966,21005 12993,21112
 # 
 #: by: osm
 Heißt dieser Abschnitt "Chaussee nach Bornim"?	? -19100,407 -18964,793 -18688,1177
@@ -963,7 +1003,6 @@ Biegen - Müllrose: existiert hier ein Radweg (wahrscheinlich ab 2006-10-31)	? 79
 Werderscher Damm: existiert hier ein Radweg in Höhe Kaserne (wahrscheinlich ab 2006-11-30)?	? -18542,-2568 -18733,-2697 -19640,-3173
 B5: existiert ein Radweg in Höhe Wusterhausen (wahrscheinlich ab 2006-09-29)?	? -54140,51565 -54518,51910 -54926,52781
 B246: existiert ein Radweg bei Nächst Neuendorf (wahrscheinlich ab 2006-11-15)?	? 11412,-19943 11136,-20007
-Clémentweg: Qualität (laut ADFC-Karte gut geeignet)?	? 11723,22749 11285,23079
 Ludwig-Renn-Str.: Einbahnstraße auch für Radfahrer?	? 20861,16819 21017,16737
 Stolper Weg: Qualität? Bis wo (vom Europarc aus) ist Autoverkehr vorhanden? Radwege? Genaue Straßennamen?	? -4709,-728 -5233,-902 -5380,-990 -5799,-1108 -5901,-1257 -6051,-1169 -6411,-868
 (Albrechts Teerofen - Stopler Weg): Qualität?	? -5364,-1204 -5380,-990
@@ -1445,8 +1484,6 @@ Töplitz - Göttin: Qualität? Ausschilderung?	? -23694,2739 -23826,2871 -23975,292
 Göttin - Neu-Töplitz: Qualität? Ausschilderung?	? -24098,4329 -23819,4206 -23597,4083 -23423,3918 -23353,3762 -23229,3692
 Göttin - Neu-Töplitz (längere Alternativstrecke): Qualität? Ausschilderung?	? -24098,4329 -23927,4682 -23439,4685 -22782,4597 -22836,4190 -22906,4136 -22909,4076
 Beelitz - Schlunkendorf - Kähnsdorf: Qualität? Nur für Radfahrer offen (von Schlunkendorf bis Kähnsdorf)?	? -15840,-19875 -15820,-18897 -15477,-18643 -15211,-18664 -15160,-18324 -15198,-18059 -14322,-17043 -14233,-16484 -14270,-15906
-Revierförsterei Blankenfelde - Blankenfelder Chaussee: Qualität (laut ADFC-Karte gut geeignet)?	? 9747,22694 9469,22606
-Revierförsterei Blankenfelde - Mönchmühler Str.: Qualität (laut ADFC-Karte mäßig geeignet)? Existiert überhaupt eine Verbindung zur Mönchmühler Str.?	? 9469,22606 8801,22341 8566,22434 8554,22440
 #: XXX cat=H
 Lug - Altdöbern: Qualität?	? 48113,-85526 48562,-85550 49162,-85300 50237,-84450 50962,-84350 52312,-83050 52625,-83050 53571,-83335
 #: XXX: laut Aktiv Regional gut geeignet
@@ -2003,7 +2040,6 @@ Zützen - ehem. B2: Qualität?	? 66091,69964 65762,70023 65345,70168 65207,70639
 Oder-Neiße-Radweg - Stützkow: Qualität?	? 61783,66148 61731,66250 61584,66212
 Stützkow - Alt-Gatow: Qualität?	? 61584,66212 61540,66359 61445,66368 61289,66610 60834,66986 60458,66859 60100,66606 60068,66610
 Rahnsdorfer Str. (???): Qualität? In welchem Ortsteil befindet sich dieser Abschnitt?	? 25781,9966 26321,9868
-Krangener Weg: Qualität?	? 7079,21000 7093,20874
 #: XXX laut osm Spielstraße:
 An der Fährwiese (Potsdam): Qualität?	? -14119,-2778 -14179,-2678 -14234,-2587 -14169,-2548 -14110,-2642 -14179,-2678
 Tornowstr. (Potsdam): Qualität?	? -13981,-2723 -13980,-2690 -13900,-2623 -13865,-2565 -13807,-2446 -13770,-2286 -13751,-2139
@@ -2084,9 +2120,6 @@ Nuthestr.: existieren durchgängig Radwege zwischen Berliner Str. und Alt Nowawes
 # XXX del --- unbedeutend --- : XXX Eintrag fehlt in Berlin.coords.data --- Wasserweg (Baumschulenweg): Kolonieweg, Qualität?	? 15370,4690 15212,4611
 # XXX del --- siehe Kommentar bei Straße 4 --- Platz A (Heinersdorf)	? 12956,19218 12945,19239 12799,19242
 # XXX del --- ja --- Wermuthweg: Kann die Johannisthaler Chausse in Höhe Wermuthweg überquert werden?	? 13835,2354 13709,2551
-#: XXX fehlt bei Berlin.coords.data, PLZ=13439:
-#: XXX zumindest das südliche Ende ist mit Gehwegplatten versehen, offizieller gemeinsamer Rad- und Gehweg
-Gandenitzer Weg: Qualität? Nachts beleuchtet?	? 7469,21223 7448,21504 7549,21524 7545,21667 7526,21697
 Wolburgsweg: Qualität?	? -5727,15818 -5710,15950 -5663,16359
 Köhlbrandweg: Qualität?	? -6517,13977 -6542,14057
 #: XXX dieser Abschnitt ist NN
@@ -2303,8 +2336,6 @@ Am Spandauer Wasserturm: Qualität?	? -4835,14223 -4893,14287
 Elsa-Rendschmidt-Weg: Wieviele Stufen hat die Treppe zur Sarkauer Allee?	? -1574,11484 -1593,11501
 (Waldweg): Qualität? Führt hier die Route 6 entlang?	? 1859,21541 1610,21721 1556,22050 1588,22209 1524,22368 1415,22552 1476,22938 1559,23039 1534,23277 1382,23505 902,23844
 Führen hier die Routen 3 und 6 entlang?	? 905,24113 931,23965 902,23844
-#: XXX fehlt in Berlin.coords.data
-Straupitzer Steig: Qualität?	? 6768,21515 6777,21335
 # 
 #: XXX laut osm surface=paved, kein allgemeiner motorisierter Verkehr
 Glasow - Rotberg: Qualität?	? 13781,-6410 13788,-6462 13727,-6505 14232,-6903 14289,-7003 14644,-7186 16251,-6520
@@ -2627,83 +2658,8 @@ An den Kopfweiden (Potsdam): Qualität?	? -10859,-3249 -11015,-3091
 Hannes-Meyer-Str. (Potsdam): Qualität?	? -14114,580 -13958,534
 #: XXX fehlt in Potsdam.coords.data
 Elisenweg (Potsdam): Qualität?	? -17194,-4659 -17217,-4610 -17235,-4609 -17599,-4389 -17810,-4254 -17847,-4179
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/10re.pdf/file
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/20re.pdf/file
-#: XXX fehlt in Berlin.coords.data
-Karlshöhe: Wo genau liegt die Straße? Oder ist es nur eine Kleingartenanlage? Qualität?	? 11972,23260 11281,23876
-# 
 #XXX del --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/14re.pdf/file --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/40re.pdf/file?y=2011 --- Anlage Schildoweck: sieben neue Privatwege, wo genau, Qualität?	? 8656,24889 8592,24914 8513,24909 8404,24744 8443,24529 8656,24889
 #XXX del --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/14re.pdf/file --- #: XXX fehlt in Berlin.coords.data: --- Am Meisenwinkel: Wo genau liegt die Straße? Qualität?	? 9108,20410 9141,20443
-# 
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/14re.pdf/file vvv
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/37re.pdf/file?y=2011 vvv
-#: XXX fehlen alle in Berlin.coords.data, PLZ=13156: vvv
-#: XXX Anlage Frohsinn: Benennung von 11 Privatwegen, Qualität? vvv
-Alsaceweg	? 10312,21969 10336,21901
-Normandieweg	? 10377,21991 10414,21876
-Savoyenweg	? 10436,22011 10488,21860
-Bretagneweg	? 10492,22031 10565,21840
-Lorraineweg	? 10553,22052 10633,21827
-Cantalweg	? 10612,22073 10709,21804
-#: XXX_osm bei osm falsch (Campagneweg) geschrieben
-Champagneweg	? 10672,22094 10789,21786
-Gascogneweg	? 10708,22106 10831,21774
-Argonnenweg	? 10768,22127 10902,21753
-Provenceweg	? 10826,22147 10981,21731
-# XXX   Picardieweg -> DONE
-#: XXX ^^^
-#: XXX ^^^
-#: by ^^^
-#: by ^^^
-# 
-Am Nordgraben: hat dieser Weg einen Namen? Qualität? Nachts beleuchtet?	? 10097,21809 10260,21795 10304,21815 10925,21689 11039,21632 11253,21364 11373,21271 11703,21097
-Brücke	? 11039,21632 11073,21680
-# 
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/19re.pdf/file?y=2012 vvv
-#: XXX fehlen alle in Berlin.coords.data, PLZ=13158 und PLZ=13159
-#: XXX Neue Privatstraßen in der Kolonie Einigkeit
-#: XXX_osm bei osm noch nicht unbenannt! vvv
-Anisweg	? 9788,21780 9866,21586
-Basilikumweg	? 9726,21760 9803,21567
-Brunnenkresseweg	? 9725,21891 9609,21843 9549,21818 9493,21796 9433,21771
-Chiliweg	? 9664,21739 9694,21668 9738,21541
-Currykrautweg	? 9636,21779 9609,21843 9579,21904
-Dillweg	? 9585,21712 9617,21638 9659,21523
-Dinkelweg	? 9571,21753 9549,21818 9505,21911
-Eisenkrautweg	? 9527,21682 9555,21617 9600,21503
-Estragonweg	? 9515,21730 9493,21796 9439,21923
-Feldkräuterweg	? 9031,21380 9121,21346 9205,21318 9279,21292 9238,21426 9309,21535 9428,21574 9499,21596 9555,21617 9617,21638 9694,21668
-Frauenmantelweg	? 9541,21482 9499,21596 9476,21656 9458,21705 9433,21771 9378,21895
-Gebirgskräuterweg	? 8912,21308 9031,21380 9099,21423 9161,21463 9476,21656 9527,21682 9585,21712 9664,21739 9726,21760 9788,21780 9907,21819 9897,21861
-Gierschweg	? 9161,21463 9205,21318
-Goldrutenweg	? 9393,21674 9316,21870 9277,21965
-Hamamelisweg	? 9099,21423 9121,21346
-# XXX   Heilkräuterweg -> siehe strassen-orig
-Huflattichweg	? 9326,21655 9256,21845 9199,21986
-Ingwerweg	? 9282,21589 9260,21636 9192,21816 9161,21908 9125,22005
-Johanniskrautweg	? 9203,21619 9137,21793
-Kampferweg	? 9005,21981 9049,21867 9085,21777 9114,21683 9094,21674 9016,21644
-Hier auch Kampferweg?	? 9122,21595 9094,21674
-# XXX   Kräuterplatz -> siehe strassen-orig
-# XXX   Kräuterweg -> siehe strassen-orig
-Kümmelweg: ist er tatäschlich hier?	? 9146,21602 9171,21549 9180,21523
-Lorbeerweg	? 8902,21946 8946,21828 8986,21736 9016,21644 9043,21572 9085,21467
-Majoranweg	? 8924,21715 8983,21554 9028,21441
-Nachtkerzenweg	? 8842,21680 8901,21530
-Oreganoweg	? 8449,22139 8572,22094
-Pfefferminzweg	? 8476,22209 8592,22153 8795,22056
-Queckenweg	? 8740,21983 8762,22041 8795,22056 8902,22005 9005,21981
-Rotkleeweg	? 8807,21944 8821,21973 8902,22005
-Schnittlauchweg	? 8848,21920 8902,21946 9005,21981 9125,22005
-Thymianweg	? 8830,21788 8946,21828 9049,21867 9161,21908
-#: XXX früher evtl. "Am Zingergraben"
-Wasserkräuterweg	? 9028,21441 8987,21430 8866,21520 8794,21573 8780,21646 8786,21664 8830,21788 8849,21842 8848,21920 8807,21944 8740,21983 8659,22031 8557,22063 8435,22102
-Wiesenkräuterweg	? 9428,21574 9467,21460 9541,21482 9600,21503 9659,21523 9738,21541 9803,21567 9866,21586 10111,21667
-Wildkräuterweg	? 8786,21664 8842,21680 8924,21715 8986,21736 9085,21777 9137,21793 9192,21816 9256,21845 9316,21870 9378,21895 9439,21923
-XXX Name?	? 8557,22063 8572,22094 8592,22153
-#: XXX_osm ^^^
-#: by ^^^
-# 
 #XXX del --- #: XXX: westliches Ende sah asphaltiert aus --- #: XXX: Straßenschilder? Das könnte der "Falkenberger Fußsteig" sein, wovon es aber nur wenige Referenzen im Netz gibt, u.a. bei http://www.berlin.de/ba-lichtenberg/buergerservice/stadtplanung/index.php?strasse=falkenberger+fu%C3%9Fsteig&strasse_mit=--+Bitte+ausw%C3%A4hlen+--&plz=--+Bitte+ausw%C3%A4hlen+--#results --- (Falkenberger Chaussee - Dorfstr./Wartenberg): Qualität? Nachts beleuchtet?	? 18922,18436 18761,18480 18503,18535 18215,18629 18185,18641
 #XXX del --- Walter-Felsenstein-Str. - Bitterfelder Str.: existiert hier eine Verbindung?	? 20459,16697 20409,16670
 Ducherow - Busow: Qualität?	? 33515,151584 33553,151842 33557,151971 33514,151992
@@ -2956,7 +2912,9 @@ Weg in der Cité Foch - Place Molière: Qualität? Gibt es tatsächlich eine Verbind
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/26re.pdf/file?y=2012
 #: XXX fehlt in Berlin.coords.data (PLZ 13187)
 #: XXX Privatstraße
-In den Floragärten: Qualität? Ist die Straße bereits fertiggestellt? Genaue Lage?	?::inwork 9849,17653 10048,17643
+#: last_checked: 2012-09-29
+#: next_check: 2013-01-01
+In den Floragärten: Qualität nach den Bauarbeiten?	?::inwork 9828,17659 10014,17646
 Egestorffstr. - Mauerweg: Qualität? Nachts beleuchtet?	? 9093,-1670 9083,-1991 9081,-2073
 Mauerweg - Birkholz/Diedersdorf: Qualität?	? 8412,-1979 8310,-2037 8100,-2471 8071,-3225
 Innerer Mauerweg: Qualität? Nachts beleuchtet?	? 9083,-1991 8412,-1979 8492,-1376
@@ -2974,8 +2932,6 @@ entlang der Bahnstrecke: Qualität? Nachts beleuchtet?	? -5716,14941 -5702,15039 
 Wolfshorst - Spektewiesen: Qualität der Verbindung?	? -6573,15254 -6576,15294
 #: XXX wahrscheinlich zweiteres
 Theodor-Fontane-Str.: Sackgasse oder Einbahnstraßenregelung?	? -9835,6841 -9854,6890
-Dannenwalder Str.: Ist die Straße eine Vorfahrtstraße?	? 6924,20695 7080,20713
-Dannenwalder Str.: Ist die Straße eine Vorfahrtstraße?	? 7255,20793 7280,20895
 Adlergestell - Bohnsdorfer Str.: Qualität des südöstlichen Abschnitts? Ist der Weg hier auch unbeleuchtet?	? 22091,1317 22161,1193
 #: XXX laut osm "paved", im nördlichen Teil asphaltiert
 Waldweg zum Campingplatz: Qualität der Straße?	? 29208,71 29512,-619 29297,-717 28915,-1147 28565,-1339 28248,-1473 28162,-1294 28033,-1259 27845,-1324 27758,-1358
@@ -2983,9 +2939,7 @@ Deilingeweg: ist der Deilingeweg ausgeschildert?	? 6259,23379 6229,23415
 #: XXX str_cont_ausnahme!
 #: XXX beim anderen Abschnitt des Tongrubenwegs in strassen-orig eintragen!
 Tongrubenweg: Qualität im östlichen Teilabschnitt?	? 28694,2529 28749,2595 28809,2660
-Reinickendorfer Radroute 1: genauer Verlauf im Märkischen Viertel? Qualität? Nachts beleuchtet?	? 7516,22178 7439,22138 7375,22146 7279,21850 6960,21802 6742,21733 6630,21956 6257,22005
-Sommerstr.: ist die Sommerstr. eine Vorfahrtstraße?	? 8425,18542 8447,18446 8465,18365 8482,18284
-Klemkepark - Büchsenweg: Qualität? Nachts beleuchtet? Wird hier die Reinickendorfer Route 5 entlanggeführt?	? 7588,18761 7693,18781
+#XXX del --- Reinickendorfer Radroute 1: genauer Verlauf im Märkischen Viertel? Qualität? Nachts beleuchtet?	? 7516,22178 7439,22138 7375,22146 7331,22037 7287,21845 6960,21802 6742,21733 6618,21972 6257,22005
 (Am Grüngürtel - Weg zwischen Triftstr. und Eichborndamm): Qualität? Nachts beleuchtet?	? 4597,20508 4626,20577
 # 
 #: last_checked: 2012-09-13

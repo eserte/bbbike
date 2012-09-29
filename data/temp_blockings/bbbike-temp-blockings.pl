@@ -5454,7 +5454,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_003250',
        data  => <<EOF,
-userdel	1::inwork 12067,23241 12129,23117 12178,23034
+userdel	1::inwork 12067,23241 12129,23117 12185,23021
 EOF
      },
      { from  => 1155592800, # 2006-08-15 00:00
@@ -7046,7 +7046,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_004638',
        data  => <<EOF,
-userdel	1::inwork 12178,23034 12213,22884 12187,22486
+userdel	1::inwork 12185,23021 12214,22918 12187,22486
 EOF
      },
      { from  => 1170802800, # 2007-02-07 00:00
@@ -9004,7 +9004,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.berlin.de/ba-pankow/presse/archiv/20070703.1505.81257.html',
        data  => <<EOF,
-userdel	1::inwork 12667,16699 12602,16727 12472,16783 12257,16876 12241,16900
+userdel	1::inwork 12667,16699 12602,16727 12472,16783 12257,16876 12230,16915
 EOF
      },
      { from  => 1183704492, # 2007-07-06 08:48
@@ -9022,7 +9022,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006015',
        data  => <<EOF,
-userdel	2::temp 6434,22244 6484,22098 6473,21969 6373,21810 6320,21777 6269,21748 6093,21648 5923,21522
+userdel	2::temp 6434,22244 6484,22098 6480,22053 6473,21969 6436,21897 6373,21810 6320,21777 6269,21748 6093,21648 5923,21522
 EOF
      },
      { from  => 1184018400, # 2007-07-10 00:00
@@ -14555,7 +14555,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_013086',
        data  => <<EOF,
-userdel	q4::inwork 12562,18483 12570,18351 12575,18275
+userdel	q4::inwork 12553,18501 12560,18374 12575,18275
 EOF
      },
      { from  => 1246398622, # 2009-06-30 23:50
@@ -18501,7 +18501,7 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20101105.1400.317649.html',
        data  => <<EOF,
-userdel	q4::inwork; 7855,18697 7785,18730 7690,18716 7599,18705 7520,18701 7492,18699 7434,18695 7217,18681
+userdel	q4::inwork; 7855,18697 7785,18730 7676,18713 7599,18705 7520,18701 7492,18699 7434,18695 7217,18681
 EOF
      },
      { from  => 1289156455, # 2010-11-07 20:00
@@ -20266,13 +20266,11 @@ userdel	2::temp 7383,12095 7816,12150 8055,12186 8119,12414
 userdel	2::temp 8546,12279 8570,12302
 EOF
      },
-     { from  => undef, # 
-       until => undef, # XXX
+     { from  => 1348929655, # undef, # 
+       until => 1348929658, # undef, # XXX
        text  => 'Gleimstr.: Bauarbeiten zwischen Ystadter Str. und Schönhauser Allee, Einbahnstraße Richtung Westen',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2012-07-22 (an der Ystadter Str.)
-#: next_check: 2012-08-10
 userdel	q3::inwork; 10423,15698 10427,15699 10564,15721 10713,15746 10953,15787
 EOF
      },
@@ -20574,7 +20572,7 @@ EOF
        text  => 'Senefelderstr.: Fahrbahn vor der Raumerstr. gesperrt, Ausweichen auf Gehweg erforderlich',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2012-08-24
+#: last_checked: 2012-09-29
 userdel	q4::inwork 11615,15114 11595,15058
 EOF
      },

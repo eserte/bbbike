@@ -813,8 +813,8 @@ Turmstr. -> Bremer Str.: Mittelstreifen	3::igndisp 5705,13359 5857,13342 5868,13
 Mittelstreifen	3nocross::ignrte 6228,13324 6112,13327 6011,13330
 Wilhelmshavener Str. -> Turmstr.: Mittelstreifen	3::igndisp 6104,13522 6112,13327 6228,13324
 Turmstr. -> Wilhelmshavener Str.: Mittelstreifen	3::igndisp 6011,13330 6112,13327 6104,13522
-Straßenbahntrasse	3nocross::ignrte 10932,22184 10997,22203 11077,22236
-Guyotstr. -> Rosenthaler Weg: Straßenbahntrasse	3::igndisp 11056,21978 10997,22203 10932,22184
+Straßenbahntrasse	3nocross::ignrte 10933,22179 10997,22203 11077,22236
+Guyotstr. -> Rosenthaler Weg: Straßenbahntrasse	3::igndisp 11056,21978 10997,22203 10933,22179
 Rosenthaler Weg -> Guyotstr.: Straßenbahntrasse	3::igndisp 11077,22236 10997,22203 11056,21978
 Elisabethstr.	1 -3387,15410 -3451,15372 -3492,15331
 Eisenacher Str.	1 22886,15095 23116,15111
@@ -1405,8 +1405,8 @@ Marie-Elisabeth-Lüders-Str. -> Bismarckstr.: Mittelstreifen	3::igndisp 4476,1181
 Stadtgärten - Saupéweg: Poller	3 11518,21727 11551,21720 11589,21713
 Stadtgärten - Saupéweg: Poller	3 11589,21713 11551,21720 11518,21727
 Mittelstreifen	3nocross::ignrte 11870,17522 11893,17397 11920,17245
-Prenzlauer Promenade -> Treskowstr.: Mittelstreifen	3::igndisp 11870,17522 11893,17397 12336,17207
-Treskowstr. -> Prenzlauer Promenade: Mittelstreifen	3::igndisp 12336,17207 11893,17397 11920,17245
+Treskowstr. -> Prenzlauer Promenade: Mittelstreifen	3::igndisp 12327,17211 11893,17397 11920,17245
+Prenzlauer Promenade -> Treskowstr.: Mittelstreifen	3::igndisp 11870,17522 11893,17397 12327,17211
 Voigtstr. - Pettenkoferstr.	1 14862,12777 14834,12767
 Gryphius/Boxhagener Str.	3 14550,11732 14513,11657 14496,11620
 Gryphius/Boxhagener Str.	3 14550,11732 14513,11657 14561,11600
@@ -1433,3 +1433,8 @@ Togostr. -> Antwerpener Str.: Mittelstreifen	3::igndisp 6530,15849 6555,15827 66
 Togostr. -> Seestr.: Mittelstreifen	3::igndisp 6530,15849 6555,15827 6661,15921
 Seestr. -> Antwerpener Str.: Mittelstreifen	3::igndisp 6661,15921 6555,15827 6690,15671
 Gipsstr.	1 10350,13376 10199,13446 10026,13521
+Mühlenstr.: Fahrbahn ist nur für die Straßenbahn offen	1 12040,22519 11940,22587
+Burgwallstr.:	3 12993,21112 12952,21012 12927,20998
+Burgwallstr.:	3 12993,21112 12952,21012 12975,21006
+Wüstensperlingweg: Poller	3 12941,20855 12835,20670 12814,20648
+Wüstensperlingweg: Poller	3 12814,20648 12835,20670 12941,20855

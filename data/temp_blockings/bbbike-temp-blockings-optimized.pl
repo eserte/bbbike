@@ -1209,17 +1209,7 @@ userdel	q3::inwork 10893,14705 11101,14768
        undef,
        undef,
        undef,
-       {
-         'until' => undef,
-         'text' => 'Gleimstr.: Bauarbeiten zwischen Ystadter Str. und Schönhauser Allee, Einbahnstraße Richtung Westen',
-         'from' => undef,
-         'id' => 2342,
-         'data' => '#: last_checked: 2012-07-22 (an der Ystadter Str.)
-#: next_check: 2012-08-10
-userdel	q3::inwork; 10423,15698 10427,15699 10564,15721 10713,15746 10953,15787
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1349877000,
          'text' => 'Kastanienallee (Rosenthal): Bauarbeiten, zwischen Friedrich-Engels-Str. und Eschenallee in Richtung Osten gesperrt, bis Mitte Oktober 2012',
@@ -1388,7 +1378,7 @@ userdel	2::night 14838,11410 14776,11400
          'text' => 'Senefelderstr.: Fahrbahn vor der Raumerstr. gesperrt, Ausweichen auf Gehweg erforderlich',
          'from' => undef,
          'id' => 2375,
-         'data' => '#: last_checked: 2012-08-24
+         'data' => '#: last_checked: 2012-09-29
 userdel	q4::inwork 11615,15114 11595,15058
 ',
          'type' => 'handicap'
