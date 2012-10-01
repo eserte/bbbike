@@ -502,8 +502,11 @@ Mittelstreifen	3nocross::ignrte 21358,13909 21398,13906 21576,13898
 Fridolinweg -> Cecilienstr.: Mittelstreifen	3::igndisp 21412,14023 21398,13906 21576,13898
 Cecilienstr. -> Fridolinweg: Mittelstreifen	3::igndisp 21358,13909 21398,13906 21412,14023
 Mittelstreifen	3nocross::ignrte -1675,16813 -1710,16735 -1746,16667
-Daumstr. -> Glindowseestr.: Mittelstreifen	3::igndisp -1675,16813 -1710,16735 -1553,16695
-Glindowseestr. -> Daumstr.: Mittelstreifen	3::igndisp -1553,16695 -1710,16735 -1746,16667
+Daumstr. -> Glindowseestr.: Mittelstreifen	3::igndisp -1675,16813 -1710,16735 -1555,16696
+Glindowseestr. -> Daumstr.: Mittelstreifen	3::igndisp -1555,16696 -1710,16735 -1746,16667
+Mittelstreifen	3nocross::ignrte -1765,16603 -1746,16667 -1710,16735
+Daumstr. -> Schwielowseestr.: Mittelstreifen	3::igndisp -1765,16603 -1746,16667 -1856,16694
+Schwielowseestr. -> Daumstr.: Mittelstreifen	3::igndisp -1856,16694 -1746,16667 -1710,16735
 Karlstr.	1 22556,4386 22458,4134
 Mittelstreifen	3nocross::ignrte 21400,18817 21335,18679 21251,18508
 Klandorfer Str. -> Märkische Allee: Mittelstreifen	3::igndisp 21377,18663 21335,18679 21251,18508
@@ -775,7 +778,6 @@ Stübbenstr. -> Grunewaldstr.: Mittelstreifen	3::igndisp 5965,9131 5975,9094 6063
 Grunewaldstr. -> Bozener Str.: Mittelstreifen	3::igndisp 6063,9106 5975,9094 5971,8926
 Grunewaldstr. -> Stübbenstr.: Mittelstreifen	3::igndisp 5902,9083 5975,9094 5965,9131
 Stavenhagener Str.	1 13534,5111 13634,5126
-Küsterstr.	1 -624,15494 -593,15300 -569,15167
 Berliner Allee -> Rossinistr.	3 13432,15843 13401,15821 13456,15760
 Straßenbahntrasse	3nocross::ignrte 12010,16774 12017,16734 12045,16574
 Brauhausstr. -> Prenzlauer Promenade: Straßenbahntrasse	3::igndisp 12211,16688 12017,16734 12045,16574
@@ -909,7 +911,7 @@ Viktoria-Luise-Platz: Poller	3 6270,9910 6275,9962 6224,9980
 Viktoria-Luise-Platz: Poller	3 6224,9980 6275,9962 6270,9910
 Else-Lasker-Schüler-Str.: Poller	3 7033,10396 7245,10499 7291,10506
 Else-Lasker-Schüler-Str.: Poller	3 7291,10506 7245,10499 7033,10396
-(Westhafenstr. - Beusselstr.): Durchfahrt verboten, Anlieger frei	2:Anlieger 6083,14564 6025,14539 6015,14516 5997,14444 5920,14422 5217,14255
+(Westhafenstr. - Beusselstr.): Durchfahrt verboten, Anlieger frei	2:Anlieger 6083,14564 6025,14539 6015,14516 5997,14444 5920,14422 5205,14253
 Steinbachstr.	1 19759,4160 19703,3979 19673,3888 19587,3801
 Mittelstreifen	3nocross::ignrte 5083,7682 5066,7668 5045,7635
 Görresstr. -> Südwestkorso: Mittelstreifen	3::igndisp 5188,7536 5066,7668 5045,7635
@@ -1356,7 +1358,7 @@ Hasselwerderstr	1 18268,5739 18164,5701 18023,5623
 Haagstr.	1 -2920,2472 -2882,2373 -3030,2349
 Borussenstr.: außer Linienverkehr; für den Radverkehr gibt es einen linksseitigen Radweg	1 -3736,2849 -3758,2678
 Teutonenstr. (Nikolassee)	1 -3519,2180 -3610,2237 -3689,2267 -3742,2287
-Goltzstr. (Spandau)	1 -2838,16951 -2946,16869 -3031,16807
+Goltzstr. (Spandau)	1 -2946,16869 -3031,16807
 Lindenufer	1 -3275,14114 -3135,14183
 Mauerstr.	1 -3316,14169 -3275,14114
 Simmelstr.: keine Durchfahrt für Autos	3 7540,17675 7615,17684 7669,17691
@@ -1438,3 +1440,8 @@ Burgwallstr.:	3 12993,21112 12952,21012 12927,20998
 Burgwallstr.:	3 12993,21112 12952,21012 12975,21006
 Wüstensperlingweg: Poller	3 12941,20855 12835,20670 12814,20648
 Wüstensperlingweg: Poller	3 12814,20648 12835,20670 12941,20855
+Lichtwarkweg: Poller	3 -2863,17968 -2881,17857 -2835,17843
+Lichtwarkweg: Poller	3 -2863,17968 -2881,17857 -2897,17861
+Saatwinkler Damm	3 -624,15494 -302,15546 -286,15354
+Saatwinkler Damm	3 -624,15494 -302,15546 -302,15602
+Saatwinkler Damm	3 -624,15494 -302,15546 51,15599

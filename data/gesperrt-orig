@@ -82,8 +82,8 @@ Knoten Märkische/Landsberger Allee	1 19506,15002 19551,14961 19615,14960 19643,1
 Knoten Märkische/Landsberger Allee	1 19496,15113 19582,15221 19675,15240 19707,15206 19694,15141
 Alt-Blankenburg	1 13576,20849 13562,20913 13909,20928
 Alt-Blankenburg	1 13909,20928 13576,20849
-Seestr.	1 5062,14681 5233,14753 5440,14840
-Seestr.	1 5440,14840 5264,14671 5071,14614
+Seestr.	1 5049,14675 5233,14753 5440,14840
+Seestr.	1 5440,14840 5264,14671 5057,14607
 Waidmannsluster Damm	1 2144,20870 1835,21427 1882,21468 2195,20898
 Flughafen Tegel	1 2819,16141 2757,16194 2713,16286 2756,16344 2832,16343 2863,16280 2819,16141
 Jakob-Kaiser-Platz	1 2795,14161 2811,14196 2831,14219 2857,14222 2896,14187 2892,14149 2860,14118 2825,14128 2795,14161
@@ -243,9 +243,10 @@ Menzelstr.	1 6185,6469 6155,6722
 Cranachstr.	1 6303,6736 6324,6480 6338,6312
 Boddinstr.	1 12582,8408 12368,8356 12216,8323 12168,8313 12104,8299 11920,8252
 Schlangenbader Str.	1 3968,7906 3964,7742
-Tannenweg	1 -3023,17889 -3012,17940 -3028,18024
-Erlenweg	1 -3228,18103 -3327,18007
-Aspenweg	1 -3000,18192 -3020,18188 -3050,18164 -3096,18119 -3111,18105 -3168,18051 -3203,18014 -3224,17943
+Tannenweg	1s:q3 -3023,17889 -3012,17940 -3028,18027
+Tannenweg	1s:q3 -3038,18063 -3028,18027
+Erlenweg	1 -3226,18109 -3327,18007
+Aspenweg	1 -3000,18196 -3020,18194 -3050,18173 -3096,18119 -3111,18105 -3168,18051 -3203,18014 -3224,17943
 Aspenweg	1 -3288,17831 -3244,17883 -3224,17943
 Pintschstr.	1 13339,13196 13435,12973
 #XXX del! --- Wolliner Str.	1 10405,14425 10320,14608
@@ -428,7 +429,7 @@ Rudolf-Baschant-Str.	1 12898,16898 12837,16853
 Wilhelm-Wagenfeld-Str.	1 12877,17039 12853,17024 12810,16994 12797,16983 12789,16977
 Johannes-Itten-Str.	1 12797,16983 12850,16911 12813,16884
 #: by: Stefan Klinkusch
-Riensbergstr.	1 -740,15306 -764,15480
+Riensbergstr.	1 -740,15316 -763,15487
 Saganer Str.: Bahngelände	2 16654,9748 16710,9702 16747,9695 17020,9463 17231,9186 17271,9159
 Triniusstr.	1 18339,6660 18273,6606
 Franz-Stenzer-Str.	1 19876,15644 19974,15594 20044,15585 20111,15609 20181,15658 20399,15744 20508,15792
@@ -671,7 +672,7 @@ Blumenstr.	1 12125,12490 12306,12459 12305,12440
 Blumenstr.	1 12305,12440 12118,12462
 Friedensplatz	1 8971,6154 8994,6144 9003,6121 8996,6106 8976,6094 8952,6109 8944,6127 8955,6147 8971,6154
 #: by: anonymous and public imagery
-Westhafenstr.: Tor kann geschlossen sein; Unbefugten ist das Betreten nicht gestattet	2 6083,14564 6025,14539 6015,14516 5997,14444 5920,14422 5217,14255
+Westhafenstr.: Tor kann geschlossen sein; Unbefugten ist das Betreten nicht gestattet	2 6083,14564 6025,14539 6015,14516 5997,14444 5920,14422 5205,14253
 Frank-Schweitzer-Str.	1 19350,14997 19175,14926 19113,14901 19117,14875 19255,14911
 (Schulze-Boysen-Str. - Wilhelm-Guddorf-Str.)	1 15413,11690 15482,11729 15634,11656
 Hufelandweg	1s:q3 8630,13172 8618,13306 8582,13355
@@ -764,7 +765,8 @@ Hartmannsweilerweg	1s:q4 16,3744 41,3510 17,3471
 #: by: ^^^
 Alsenzer Weg	1s:q3 27751,819 27804,878 27863,943 27968,1060
 #: by: Ulf Rathje:
-Fichtenweg	1 -2963,17872 -2949,17946 -2967,18033 -3000,18192
+#: corrected_by: srt (1 -> 1s)
+Fichtenweg	1s:q3 -2961,17875 -2949,17946 -2968,18038 -3000,18196
 #: by: anonymous
 #: confirmed_by: srt
 Johann-Landefeldt-Str.	1 -8598,7018 -8532,7041 -8466,7064 -8404,7087 -8341,7108 -8275,7131 -8207,7156
@@ -907,7 +909,7 @@ Rubensstr.	1 6429,7876 6307,7893
 Bäumerplan	1 8527,7928 8553,7795
 Bäumerplan	1 8512,7757 8467,7913
 Mierendorffstr.	1 3645,13189 3542,13063
-Hüttigpfad	1 4810,15000 4887,14931 5057,14824 5107,14781
+Hüttigpfad	1 4810,15000 4887,14931 5057,14824 5095,14792
 (Alex-Wedding-Str. - Karl-Liebknecht-Str.)	1s:q3 11018,13286 11085,13239
 Zwerghuhnweg	1s 15615,410 15565,379
 Grammestr.	1 1057,14389 1058,14459
@@ -960,6 +962,15 @@ Am Vierrutenberg etc.	1 5712,23785 5676,23971 5780,23997 5792,23943 5787,23840 5
 #: note: eigentlich keine Einbahnstraße, aber in der Praxis wird man immer gegen der Uhrzeigersinn fahren
 Schmiedebankplatz	1 16165,23168 16114,23202 16122,23219 16141,23243 16243,23174 16229,23150 16218,23134 16165,23168
 IKEA-Parkplatz	1 7834,7131 7924,7185 8020,7185
+Lichtwarkweg	1s:q3 -2900,18214 -2880,18060
+Birkenweg	1 -3069,17950 -3112,18000
+Akazienweg	1s:q3 -3112,18000 -3136,17976 -3155,17925
+Buchenweg	1s:q3 -2968,18038 -3028,18027 -3083,18010
+Eschenweg	1s:q3 -3306,17989 -3285,17968 -3224,17943
+Lindenweg	1s:q3 -3111,18105 -3076,18053 -3038,18063
+#: by: Martina (mascha...):
+#: corrected_by: srt (auch für Radfahrer gültig)
+Küsterstr.	1 -624,15494 -593,15300 -569,15167
 ######################################################################
 #
 # Potsdam
@@ -1235,6 +1246,7 @@ Suermondtstr: Straßenbahntrasse	3nocross 16416,16236 16515,16207 16660,16165
 Berliner Allee: Straßenbahntrasse	3nocross 14499,16341 14556,16391 14610,16522
 #: by: Jörg Böhmer
 Streitstr.: Mittelstreifen mit Schienstrang (nicht mehr in Betrieb) und Zaun	3nocross -3043,16601 -3046,16548 -3050,16429
+Streitstr.: Mittelstreifen	3nocross -3031,16807 -3023,16925 -3018,16974
 #: note: Luftbild
 Marienfelder Chaussee: Mittelstreifen	3nocross 10759,1112 10827,1140 11002,1211
 Oranienburger Str.: Mittelstreifen	3nocross 5517,20120 5545,19909 5533,19811
@@ -1460,6 +1472,7 @@ Neuköllner Str.: Mittelstreifen	3nocross 15980,2318 15804,2512 15736,2593
 Schorlemerallee: Mittelstreifen	3nocross 3306,6453 3347,6460 3459,6484
 Berliner Str.: Straßenbahntrasse	3nocross 12396,17514 12436,17682 12467,17814
 Daumstr.: Mittelstreifen	3nocross -1821,16327 -1816,16111 -1815,15976
+Daumstr.: Mittelstreifen	3nocross -1783,16533 -1765,16603 -1746,16667
 Zossener Str.: Straßenbahntrasse	3nocross 22811,15753 22883,15740 23080,15700
 Landsberger Chaussee: Straßenbahntrasse	3nocross 22771,16194 22974,16139 23159,16086
 Salvador-Allende-Str.: Mittelstreifen	3nocross 23404,5325 23403,5385 23402,5483
@@ -1764,6 +1777,11 @@ tragen (31 Stufen oder Kinderwagenrampe)	0:40 13168,21706
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+Schranke	BNP:3::trailer=10 -2162,17924
+Schranke	BNP:3::trailer=10 -2278,17805
+Schranke	BNP:3::trailer=10 -2137,17898
+Schranke	BNP:3::trailer=10 -2737,18087
+Schranke (lichte Breite 95cm)	BNP:3::trailer=10 -1343,16732
 Drängelgitter (lichte Breite 80cm)	BNP:5::trailer=no 12808,20233
 hohes Drängelgitter	BNP:3::trailer=10 12782,20191
 Drängelgitter	BNP:3::trailer=10 6928,23021
@@ -1911,6 +1929,7 @@ sehr enger Weg	BNP:0::trailer=no 12515,22898
 am Oder-Spree-Kanal: teilweise enger Pfad	BNP:0::trailer=no 29457,-2835
 enges Drängelgitter	BNP:5::trailer=no 30862,3816
 Schranke, Durchfahrtsbreite nur 80cm	BNP:3::trailer=no -1342,13134
+#: note: am 2012-09-30 habe ich 90cm gemessen... neue Schranke?
 Schranke, Durchfahrtsbreite nur 60cm	BNP:3::trailer=no -784,16658
 #: note: lichte Breite etwa 120cm, aber ungünstig versetzt
 Drängelgitter	BNP:3::trailer=10 -992,16688
@@ -2122,7 +2141,7 @@ Drängelgitter	BNP:3::trailer=10 49739,-90894
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
-#: last_checked: 2012-08-31
+#: last_checked: 2012-09-30
 #: next_check: 2013-02-01
 Alt-Moabit - Invalidenstr.: wegen Bauarbeiten für die Straßenbahnanbindung gesperrt	2:inwork 7443,13008 7416,13058
 # 
@@ -2256,7 +2275,7 @@ Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,127
 #XXX --- siehe http://www.flickr.com/photos/h-e-n-r-y/5260386593/ #: last_checked: 2010-11-05 --- #: next_check: 2010-12-01 --- #: note: Eröffnung des Hotels im Dezember 2010 --- #: XXX Neubewertung für handicap_s notwendig! --- Spittelmarkt: wegen Bauarbeiten gesperrt	2:inwork 10166,11592 10153,11666 10213,11728
 #XXX del --- #: by: http://www.kondorwessels.com/index.php?id=356 (Fertigstellung) --- #: last_checked: 2011-11-11 --- #: next_check: 2011-11-21 --- Elisabeth-Mara-Str.: Bauarbeiten bis zum Frühjahr 2011	2:inwork 10506,11567 10320,11627
 #XXX del --- #: last_checked: 2010-09-05 --- #: next_check: 2011-09-01 --- Rhinstr.: neues Wohngebiet, Weg gesperrt	2:inwork 18015,13846 17300,14133
-#XXX del --- Hinweis by Monika W-J, Radweg wieder existent seit Sommer 2012: --- #: by: Ulrike Orlowski --- #: by: http://asp.vmzberlin.com/VMZ_LSBB_MELDUNGEN_WEB/Meldungskarte.jsp?back=true&map=true&x=52.53578&y=13.31063&zoom=13&meldungId=IM_014510 --- #: next_check: 2011-06-30 --- Radweg parallel zur Autobahn ist wegen Bauarbeiten am BAB gesperrt	2:inwork 5062,14681 4676,14534 3705,14290 3595,14277
+#XXX del --- Hinweis by Monika W-J, Radweg wieder existent seit Sommer 2012: --- #: by: Ulrike Orlowski --- #: by: http://asp.vmzberlin.com/VMZ_LSBB_MELDUNGEN_WEB/Meldungskarte.jsp?back=true&map=true&x=52.53578&y=13.31063&zoom=13&meldungId=IM_014510 --- #: next_check: 2011-06-30 --- Radweg parallel zur Autobahn ist wegen Bauarbeiten am BAB gesperrt	2:inwork 5049,14675 4676,14534 3705,14290 3595,14277
 #XXX del --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1002/nachricht3772.html --- #: next_check: 2010-10-01 --- Brücke über A10: Sperrung vom 15.02.2010 bis 01.10.2010	2:inwork 15337,24593 15490,24848
 #XXX del --- #: last_checked: 2010-09-11 --- #: next_check: 2010-12-31 --- #: XXX der Neubau wird "N" oder "NH" sein und Radwege haben --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0907/nachricht3563.html --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1005/nachricht3870.html --- #: by: http://www.altglienicke.de/aktuell.php : Sperrung aufgehoben (20.05.11) --- Wegedornbrücke: Vollsperrung, Neubau	2:inwork 20385,593 20442,564 20510,530 20534,501
 # 
@@ -2525,7 +2544,8 @@ tragen (5 Stufen)	0:20 6501,1207
 Müncheberger Weg: Privatgelände	2 29978,8975 29868,9084
 #: by: Karin Tödtloff [AM]
 Drängelgitter	BNP:10 9171,5263
-Niederneuendorfer Allee (Wendeschleife)	1 -2906,17661 -2896,17853
+#: confirmed_by: srt
+Niederneuendorfer Allee (Wendeschleife)	1 -2906,17661 -2897,17861
 Zeiler Weg	1 11495,18129 11579,18184
 Zeiler Weg	1s 11835,18301 11914,18303
 Dettelbacher Weg	1 11698,18446 11750,18273

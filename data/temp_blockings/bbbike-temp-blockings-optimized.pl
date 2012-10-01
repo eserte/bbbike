@@ -404,8 +404,9 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
          'text' => 'Park am Nordbahnhof: im Sommerhalbjahr zwischen 6.30 und 22.00 Uhr geöffnet, im Winterhalbjahr zwischen 7.30 und 19.00 Uhr',
          'from' => undef,
          'id' => 1826,
-         'data' => '	2::night 8825,14401 8913,14485 8839,14635 8848,14638 8938,14521 8953,14528
-	2::night 8913,14485 9176,14181 9147,14151 9224,14169
+         'data' => '	2::night 8825,14401 8868,14442 8913,14485 8839,14635 8848,14638 8938,14521 8953,14528
+	2::night 8913,14485 9169,14189 9176,14181 9147,14151 9224,14169
+	2::night 9169,14189 9144,14169 8868,14442
 ',
          'type' => 'gesperrt'
        },
@@ -704,16 +705,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_019233',
-         'until' => 1349046000,
-         'text' => 'Müllerstr. (Wedding): Veranstaltung, Straße zwischen Seestr. und Luxemburger Str. gesperrt, 28.09.2012 05:00 Uhr bis 01.10.2012 01:00 Uhr ',
-         'from' => 1348714800,
-         'id' => 2039,
-         'data' => 'userdel	2::temp 6781,16026 6914,15908 6936,15888 7043,15793 7129,15717 7198,15656
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => undef,
          'text' => 'Anwohner haben den Uferweg am Groß Glienicker See versperrt',
@@ -753,7 +745,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        {
          'until' => undef,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im September bis 20.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Oktober bis 19.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'from' => undef,
          'id' => 2068,
          'data' => '(Eingang Columbiadamm - Rundkurs auf dem Flughafen Tempelhof)	2::night 10691,8532 10644,8363 10598,8270 10575,8218
@@ -1257,16 +1249,7 @@ userdel	q4::inwork 10379,14963 10366,14992
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_018927',
-         'until' => 1349017200,
-         'text' => 'Saalestr. (Neukölln): Fahrbahn gesperrt (bis Ende 09/12) in beiden Richtungen zwischen Karl-Marx-Str. und Wipperstr. ',
-         'from' => 1340082000,
-         'id' => 2352,
-         'data' => 'userdel	q4::inwork 13161,7173 13058,7165
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'INKO_111688',
          'until' => 1354464000,

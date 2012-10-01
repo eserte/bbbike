@@ -60,13 +60,13 @@ Potsdamer Str. - Am Karlsbad: bereits am Schöneberger Ufer auf linken Gehweg wec
 Am Karlsbad - Potsdamer Str.: entweder Fußgängerampel am Schöneberger Ufer oder an der Lützowstr. benutzen	CP; 8011,11014 7968,11048 7912,10945
 #XXX del --- hierfür gibt's keinen Grund --- man kann auch an der Straßenbahntrasse entlang fahren --- Otto-Braun-Str. - Wadzeckstr.: bereits am Alexanderplatz die Straßenseite wechseln	PI; 11228,12951 11267,13012 11314,13087 11368,13170 11326,13196
 #: XXX_prog: RL:ja, GPS:nein (in der Realität kann man nicht anders fahren, aber vielleicht einen kleinen Hint wert)
-Fußgängerampel auf der linken Seite benutzen	CP; 9929,13660 9918,13733 9792,13681
+Fußgängerampel auf der linken Seite benutzen	CP; 9929,13660 9918,13733 9799,13686
 #: XXX_prog: RL:ja, GPS:nein (in der Realität kann man nicht anders fahren, aber vielleicht einen kleinen Hint wert)
-Fußgängerampel auf der linken Seite zum Überqueren der Torstr. benutzen	CP; 9929,13660 9918,13733 9810,14066
+Fußgängerampel auf der linken Seite zum Überqueren der Torstr. benutzen	CP; 9929,13660 9918,13733 9873,13872 9810,14066
 #: XXX_prog: RL:ja, GPS:nein (in der Realität kann man nicht anders fahren, aber vielleicht einen kleinen Hint wert)
-Fußgängerampel auf der rechten Seite zum Überqueren der Torstr. benutzen	CP; 9810,14066 9918,13733 9929,13660
+Fußgängerampel auf der rechten Seite zum Überqueren der Torstr. benutzen	CP; 9810,14066 9873,13872 9918,13733 9929,13660
 #: XXX_prog: RL:ja, GPS:nein (in der Realität kann man nicht anders fahren, aber vielleicht einen kleinen Hint wert)
-Fußgängerampel auf der rechten Seite benutzen	CP; 9810,14066 9918,13733 10177,13766
+Fußgängerampel auf der rechten Seite benutzen	CP; 9810,14066 9873,13872 9918,13733 10177,13766
 #: XXX_prog: RL:ja, GPS:nein (in der Realität kann man nicht anders fahren, aber vielleicht einen kleinen Hint wert)
 Kopernikusstr./Warschauer Str.: Fußgängerampel auf der linken Seite zum Überqueren der Warschauer Str. benutzen	CP; 13467,11778 13651,11731 13895,11663
 #: XXX_prog: RL:ja, GPS:nein (in der Realität kann man nicht anders fahren, aber vielleicht einen kleinen Hint wert)
@@ -323,8 +323,8 @@ B1 - Ilsensteinweg: bereits an der Ampel Spanische Allee die Gehwegseite wechsel
 Ilsensteinweg - B1: ggfs. die Ampel an der Spanischen Allee zur rechten Hand zum Überqueren der Straße benutzen	CP; -1724,2743 -1626,2441 -1340,2554
 Theodorstr. - Alt-Mahlsdorf: ggfs. die nächste Ampel benutzen	CP; 24907,11186 24893,11252 24824,11256
 Alt-Mahlsdorf - Theodorstr.: frühzeitig auf den linken Gehweg wechseln	PI; 25144,11215 24893,11252 24907,11186
-Daumstr. - Glindowseestr.: bereits an der Kreuzung Daumstr./An den Rohrbruchwiesen die Straßenseite wechseln	PI; -1675,16813 -1710,16735 -1553,16695
-Glindowseestr. - Daumstr.: zunächst auf der linken Gehwegseite fahren und dann die Straßenseite wechseln	CP; -1553,16695 -1710,16735 -1746,16667
+Daumstr. - Glindowseestr.: bereits an der Kreuzung Daumstr./An den Rohrbruchwiesen die Straßenseite wechseln	PI; -1675,16813 -1710,16735 -1555,16696
+Glindowseestr. - Daumstr.: zunächst auf der linken Gehwegseite fahren und dann die Straßenseite wechseln	CP; -1555,16696 -1710,16735 -1746,16667
 #: by: Andreas Titz vvv
 # Liebigstr.
 Am Ende der Straße RECHTS neben dem Tor weiterfahren	CP; -1100,39025 -965,39065 -909,39073
@@ -498,3 +498,5 @@ Ausgeschildert als "Zur Wilhelm-Blume-Allee"	CP2; 2570,20837 2469,20812
 Straße an der Fußgängerampel vor der Moschee überqueren	CP; 10691,8532 10796,8498 10799,8504
 Schulzendorfer Str. - Reinickendorfer Str.: bereits an der Ampel Müllerstr./Schulzendorfer Str. auf den linken Gehweg wechseln	PI; 8057,14876 8091,14895 8037,14958
 Karl-Marx-Allee - Berolinastr.: bereits an der Kreuzung Alexanderstr./Otto-Braun-Str. auf den linken Gehweg wechseln	PI; 11226,12945 11289,12908 11367,12940
+Reußstr. - Streitstr.: auf den linken Gehweg bis zur Fußgängerampel fahren	CP; -3129,16931 -3023,16925 -3018,16974
+Streitstr. - Reußstr: bereits an der Ampel Goltzstr. auf den linken Gehweg wechseln	PI; -3031,16807 -3023,16925 -3129,16931

@@ -156,6 +156,7 @@ Leuthener Str.	1 7494,8364 7578,8358
 #: note: das hier habe ich gesehen:
 Leuthener Str.	1 7716,8356 7640,8359
 #: by: Andreas (ansh...) (nicht für Radfahrer):
+#: confirmed_by: srt
 Lüdenscheider Weg	1 -1389,15285 -1037,15482
 Büsingstr.	1 5215,6643 5210,6522
 Schrammstr.	1 4960,8440 4958,8344
@@ -310,8 +311,9 @@ Alt Mahlsdorf: Mittelstreifen	3nocross 24824,11256 24893,11252 25144,11215
 Clayallee: Mittelstreifen	3nocross 1214,4075 1232,4129 1279,4265
 #: note: Luftbild
 Cecilienstr.: Mittelstreifen	3nocross 21358,13909 21398,13906 21576,13898
-#: note: Luftbild
+#: note: eine Querungsmöglichkeit existiert einige Meter weiter nördlich
 Daumstr.: Mittelstreifen	3nocross -1675,16813 -1710,16735 -1746,16667
+Daumstr.: Mittelstreifen	3nocross -1765,16603 -1746,16667 -1710,16735
 Karlstr.	1 22556,4386 22458,4134
 Märkische Allee: Mittelstreifen	3nocross 21400,18817 21335,18679 21251,18508
 #: note: Luftbild
@@ -441,8 +443,6 @@ Nollendorfplatz	1 7033,10328 6971,10346
 Grunewaldstr.: Mittelstreifen	3nocross 5902,9083 5975,9094 6063,9106
 #: by: Florian (olf-kcots):
 Stavenhagener Str.	1 13534,5111 13634,5126
-#: by: Martina (mascha...):
-Küsterstr.	1 -624,15494 -593,15300 -569,15167
 #: note: Luftbild:
 Berliner Allee -> Rossinistr.	3 13432,15843 13401,15821 13456,15760
 #: note: Luftbild:
@@ -531,7 +531,7 @@ Viktoria-Luise-Platz: Poller	3 6224,9980 6275,9962 6270,9910
 Else-Lasker-Schüler-Str.: Poller	3 * 7245,10499 *
 #: by: Thomas (neverbox):
 #: note: Schild existiert nur auf der westlichen Seite
-(Westhafenstr. - Beusselstr.): Durchfahrt verboten, Anlieger frei	2:Anlieger 6083,14564 6025,14539 6015,14516 5997,14444 5920,14422 5217,14255
+(Westhafenstr. - Beusselstr.): Durchfahrt verboten, Anlieger frei	2:Anlieger 6083,14564 6025,14539 6015,14516 5997,14444 5920,14422 5205,14253
 #: by: anonymous
 #: confirmed_by: vito
 Steinbachstr.	1 19759,4160 19703,3979 19673,3888 19587,3801
@@ -795,7 +795,8 @@ Haagstr.	1 -2920,2472 -2882,2373 -3030,2349
 Borussenstr.: außer Linienverkehr; für den Radverkehr gibt es einen linksseitigen Radweg	1 -3736,2849 -3758,2678
 Teutonenstr. (Nikolassee)	1 -3519,2180 -3610,2237 -3689,2267 -3742,2287
 #: by: Dennis Anton ("für Radfahrer freigegeben")
-Goltzstr. (Spandau)	1 -2838,16951 -2946,16869 -3031,16807
+#: confirmed_by: srt
+Goltzstr. (Spandau)	1 -2946,16869 -3031,16807
 #: by: Stefan Klinkusch ("für Radfahrer freigegeben") vvv
 Lindenufer	1 -3275,14114 -3135,14183
 #: by: (URL existiert nicht mehr) http://www.berlin.de/ba-spandau/presse/archiv/20051205.1215.33112.html
@@ -850,3 +851,5 @@ Mühlenstr.: Fahrbahn ist nur für die Straßenbahn offen	1 12040,22519 11940,22587
 Burgwallstr.:	3 12993,21112 12952,21012 *
 Wüstensperlingweg: Poller	3 12941,20855 12835,20670 12814,20648
 Wüstensperlingweg: Poller	3 12814,20648 12835,20670 12941,20855
+Lichtwarkweg: Poller	3 -2863,17968 -2881,17857 *
+Saatwinkler Damm	3 -624,15494 -302,15546 *

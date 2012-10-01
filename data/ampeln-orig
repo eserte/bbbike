@@ -295,7 +295,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	F 10737,12963
 	F 10781,13002
 	F 9054,12154
-	X 9605,13248
+	X 9611,13245
 	X 10264,13097
 	X 10350,13376
 	X 10177,13766
@@ -881,7 +881,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	B 9158,551
 	X 5328,13019
 	X 5185,13078
-	X 5256,13420
+	X 5248,13434
 	X 5368,13406
 	X 5907,16000
 	X 3644,10759
@@ -979,7 +979,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 1479,14343
 	X 1360,14375
 	X 2087,14078
-	X 2902,14006
+	X 2881,14061
 	X 3038,13612
 	X 3123,13274
 	X 3711,13202
@@ -1003,8 +1003,8 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 5956,13330
 	X -1369,14644
 	X -1357,14533
-	X 5062,14681
-	X 5071,14614
+	X 5049,14675
+	X 5057,14607
 	X 5700,15043
 	X 13072,15590
 	X 13316,15758
@@ -1135,7 +1135,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 12630,8722
 	X 5231,13843
 	X 5224,14031
-	X 5217,14255
+	X 5205,14253
 	X 5753,15096
 	X 5581,16708
 	X 3888,1221
@@ -1177,7 +1177,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 3676,16497
 	X 2960,14746
 	X 2904,14748
-	X 3407,13599
+	X 3395,13605
 	X 3741,13558
 	X 4271,13735
 	X 6817,13862
@@ -1482,7 +1482,7 @@ nur Richtung O	X 8142,7221
 	X 1133,14387
 	X 4547,13232
 	X 5705,13359
-	X 5560,13382
+	F 5569,13381
 	X 6299,14660
 	X 7138,15437
 	X 7020,15314
@@ -2709,7 +2709,13 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F 9540,15238
 	X 7987,6775
 	F 7155,21744
-# 
+	F 9822,14067
+#: XXX_prog Ampel existiert nur in Richtung Norden
+	X 5086,14504
+#: note: Ampel ist wahrscheinlich nur werktags eingeschaltet
+	X 1932,14146
+	F -2866,17760
+	X -2728,17038
 ################################################################################
 #: note: Potsdam vvv
 #: by: http://www.potsdam.de/cms/beitrag/10067917/966975/
