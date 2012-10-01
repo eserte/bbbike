@@ -23,6 +23,7 @@ use lib (
 
 use Cwd qw(realpath);
 use Getopt::Long;
+use List::Util qw(min);
 use POSIX qw(strftime);
 use Time::Local qw(timelocal);
 
@@ -81,7 +82,7 @@ for my $file (@files) {
 		     my $subject = $r->[Strassen::NAME] || "(" . $file . "::$.)";
 		     my $dist;
 		     if ($centerc) {
-			 $dist = int_round(Strassen::Util::strecke_s($r->[Strassen::COORDS][0], $centerc)/1000);
+			 $dist = min map { int_round(Strassen::Util::strecke_s($_, $centerc)/1000) } @{ $r->[Strassen::COORDS] };
 		     }
 		     my $body = <<EOF;
 ** TODO <$date $wd> $subject :${dist}km:
