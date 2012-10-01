@@ -20223,7 +20223,7 @@ EOF
        text  => 'Sredzkistr. zwischen Schönhauser Allee und Knaackstr: Teile der Fahrbahn gesperrt, Ausweichen auf Gehweg',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2012-09-19
+#: last_checked: 2012-09-30 (wosch)
 #: note: etwa 50 Meter an der Schönhauser Alee gesperrt
 userdel	q3::inwork 10893,14705 11101,14768
 EOF
@@ -20593,7 +20593,7 @@ EOF
        type  => 'handicap',
        source_id => 'wosch',
        data  => <<EOF,
-#: last_checked: 2012-09-01 (wosch)
+#: last_checked: 2012-09-30 (wosch)
 #: next_check: 2012-12-01
 userdel	q4::inwork 9112,14771 9250,14658
 EOF
@@ -20648,7 +20648,7 @@ EOF
        text  => 'Oderberger Str.: Fahrbahn zwischen Kastanienallee und Choriner Str. wegen Bauarbeiten gesperrt',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2012-09-19
+#: last_checked: 2012-09-30 (wosch)
 userdel	q4::inwork 10870,14689 10723,14772
 EOF
      },

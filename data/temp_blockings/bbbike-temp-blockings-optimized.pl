@@ -1191,7 +1191,7 @@ userdel	q3::inwork 11436,14741 11526,14693
          'text' => 'Sredzkistr. zwischen Schönhauser Allee und Knaackstr: Teile der Fahrbahn gesperrt, Ausweichen auf Gehweg',
          'from' => undef,
          'id' => 2337,
-         'data' => '#: last_checked: 2012-09-19
+         'data' => '#: last_checked: 2012-09-30 (wosch)
 #: note: etwa 50 Meter an der Schönhauser Alee gesperrt
 userdel	q3::inwork 10893,14705 11101,14768
 ',
@@ -1278,16 +1278,7 @@ userdel	q3::inwork 11912,14486 11642,14625
          'type' => 'handicap'
        },
        undef,
-       {
-         'source_id' => 'IM_019006',
-         'until' => 1349103600,
-         'text' => 'Berliner Str. (Pankow): Baustelle, Fahrtrichtung gesperrt (bis Anfang 10/12) stadtauswärts zwischen Mühlenstr. und Elsa-Brändström-Str. ',
-         'from' => 1342945020,
-         'id' => 2363,
-         'data' => 'userdel	q4::inwork; 10927,17022 10908,17142
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'INKO_113869',
          'until' => 1354291200,
@@ -1373,7 +1364,7 @@ userdel	q4::inwork 11615,15114 11595,15058
          'text' => 'Hussitenstr.: Fahrbahn zwischen Stralsunder Str. und Usedomer Str. gesperrt, Ausweichen auf Gehweg',
          'from' => undef,
          'id' => 2377,
-         'data' => '#: last_checked: 2012-09-01 (wosch)
+         'data' => '#: last_checked: 2012-09-30 (wosch)
 #: next_check: 2012-12-01
 userdel	q4::inwork 9112,14771 9250,14658
 ',
@@ -1398,7 +1389,7 @@ userdel	q4::inwork 9112,14771 9250,14658
          'text' => 'Oderberger Str.: Fahrbahn zwischen Kastanienallee und Choriner Str. wegen Bauarbeiten gesperrt',
          'from' => undef,
          'id' => 2383,
-         'data' => '#: last_checked: 2012-09-19
+         'data' => '#: last_checked: 2012-09-30 (wosch)
 userdel	q4::inwork 10870,14689 10723,14772
 ',
          'type' => 'handicap'
@@ -1433,16 +1424,7 @@ userdel	q4::inwork; 10870,14689 10893,14705
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_019236',
-         'until' => 1349092800,
-         'text' => 'Scheidemannstr. / John-Foster-Dulles-Allee: Straße wegen Marathon-Vorbereitungen zwischen Heinrich-von-Gagern-Str. und Große Querallee gesperrt, 27.09.2012 06:00 Uhr bis 01.10.2012 14:00 Uhr ',
-         'from' => 1348632000,
-         'id' => 2387,
-         'data' => 'userdel	2::temp 7875,12363 8017,12359 8070,12409 8119,12414
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_019235',
          'until' => 1349647140,
