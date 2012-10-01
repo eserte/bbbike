@@ -224,7 +224,7 @@ _f_raw_${f}:=${f:S/-cooked$//}
 $f:	${_f_raw_${f}} inaccessible_landstrassen
 	-@${WRITEABLE} $@
 	$(PERL) -I${BBBIKEDIR} -I${BBBIKEDIR}/lib -MStrassen -e \
-	    '$$s = Strassen->new($$ARGV[0]); $$ina = Strassen->new($$ARGV[1]); $$s->new_with_removed_points($$ina)->write("-")' \
+	    '$$s = Strassen->new($$ARGV[0], UseLocalDirectives => 1); $$ina = Strassen->new($$ARGV[1]); $$s->new_with_removed_points($$ina)->write("-")' \
 	    ${_f_raw_${f}} inaccessible_landstrassen \
 	    > $@~
 	mv $@~ $@
