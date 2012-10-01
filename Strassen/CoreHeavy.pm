@@ -88,6 +88,8 @@ sub new_with_removed_points {
 	pop @newcoords if @{$newcoords[-1]} == 0;
 	for my $new_c (@newcoords) {
 	    $new_s->push([$r->[NAME], $new_c, $r->[CAT]]);
+	    my $dir = $self->get_directives;
+	    $new_s->set_directives_for_current($dir) if $dir;
 	}
     }
     #$new_s->{Id} = $self->id . "_removed_" . $to_remove->id;
