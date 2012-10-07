@@ -1776,7 +1776,7 @@ S-Bahn und Regionalbahn	B 21562,12088
 	X 8571,11846
 S-Bahn alle 20 Minuten, Regionalbahn halbstündlich (?)	B 40248,14503
 Bahn kommt ca. halbstündlich	B 43081,77252
-Bahn kommt ca. halbstündlich	B 41385,91309
+Bahn kommt ca. halbstündlich	B 41395,91313
 Bahn kommt ca. halbstündlich oder öfter	B 27139,37340
 Bahn kommt ca. halbstündlich, mit Aufforderungsknopf zum Öffnen der Schranke	B 42086,79436
 Bahn kommt ca. halbstündlich, mit Aufforderungsknopf zum Öffnen der Schranke	B 41323,96820
@@ -2266,7 +2266,7 @@ nur Museumsbetrieb der Heidekrautbahn	B0 11616,30519
 	X 18709,8423
 	F 4920,9029
 	B 51081,-73709
-	B 52982,-21800
+	B 52964,-21786
 #: note: Luftbild
 	B -13357,37176
 	B 18101,-35914
@@ -2838,6 +2838,13 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: note: ^^^
 ################################################################################
 #: note: Ampeln elsewhere vvv
+	X 39873,102249
+	X 39715,101866
+	X 39682,101543
+	X 39962,101085
+#: note: Ampel kann beim Rechtsabbiegen aus Richtung Schmölln umfahren werden
+	X 41193,100575
+	F 53182,-17704
 	X 8182,25608
 	X 33103,-85728
 	X 33060,-85292
@@ -2869,7 +2876,7 @@ unbeschrankter Bahnübergang	B0 56520,16826
 	B 58025,14188
 	F 13642,-997
 	F 13885,-775
-	B 55825,-11622
+	B 55814,-11586
 	B -17963,-7670
 	F 18911,27124
 	X 19377,27432

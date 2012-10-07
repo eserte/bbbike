@@ -9466,7 +9466,7 @@ EOF
        text  => 'B 246 Bahnübergang Wendisch Rietz Siedlung, OT Neue Mühle Gleiserneuerung Vollsperrung 13.08.2007-28.08.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 53048,-21761 52992,-21793 52982,-21800 52932,-21834
+userdel	2::inwork 52964,-21786 52927,-21822
 EOF
      },
      { from  => 1187301600, # 2007-08-17 00:00
@@ -12323,7 +12323,7 @@ EOF
        text  => 'L 035 B246 Glienicke - Bad Saarow zw. Diensdorf und Pieskow Straßenbauarbeiten Vollsperrung 21.08.2008-30.11.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 56323,-16537 56600,-15729 56415,-14916
+userdel	2::inwork 56312,-16543 56600,-15729 56485,-15230 56404,-14881
 EOF
      },
      { from  => 1219523350, # 2008-08-23 22:29
@@ -13090,7 +13090,7 @@ EOF
        text  => 'K 7318 Blankenburg - Potzlow Bahnübergang in der OD Seehausen Gleisbauarbeiten Vollsperrung 05.12.2008-10.12.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 41424,91331 41385,91309 41358,91294
+userdel	2::inwork 41424,91331 41395,91313 41358,91294
 EOF
      },
      { from  => 1231455600, # 2009-01-09 00:00
@@ -13098,7 +13098,7 @@ EOF
        text  => 'K 7318 Blankenburg - Potzlow Bahnübergang in der OD Seehausen Gleisbauarbeiten Vollsperrung 10.01.2009-11.01.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 41424,91331 41385,91309 41358,91294
+userdel	2::inwork 41424,91331 41395,91313 41358,91294
 EOF
      },
      { from  => 1227394800, # 2008-11-23 00:00
@@ -13106,7 +13106,7 @@ EOF
        text  => 'K 7318 Blankenburg - Potzlow Bahnübergang in der OD Seehausen Gleisbauarbeiten Vollsperrung 24.11.2008-28.11.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 41424,91331 41385,91309 41358,91294
+userdel	2::inwork 41424,91331 41395,91313 41358,91294
 EOF
      },
      { from  => 1227135600, # 2008-11-20 00:00
@@ -15125,7 +15125,7 @@ EOF
        text  => 'B 246 zw. Glienicke und Wendisch Rietz Deckenerneuerung Vollsperrung 10.08.2009-28.08.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 53048,-21761 53596,-21448 54370,-20977 55783,-21082 57404,-20885
+userdel	2::inwork 53843,-21346 54296,-20909 56184,-21060 57404,-20885
 EOF
      },
      { from  => 1249768800, # 2009-08-09 00:00
@@ -20667,7 +20667,7 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-lichtenberg/presse/archiv/20120921.1525.375622.html',
        data  => <<EOF,
-userdel	q4::inwork 18998,8784 19078,8817 19120,8835 19173,8857 19316,8933 19510,9035 19629,9094 19634,9192
+userdel	q4::inwork 18998,8784 19078,8817 19120,8835 19173,8857 19316,8933 19510,9035 19629,9094
 EOF
      },
      { from  => 1348376400, # 2012-09-23 07:00

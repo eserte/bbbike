@@ -297,7 +297,7 @@ Olympischer Platz	1 -157,11943 -505,11882 -514,11991 -272,12039 -193,12051 -110,
 #XXX del --- keine Einbahnstraßenregelung hier mitbekommen --- Aristotelessteig	1 18452,9755 18435,9639 18660,9599
 Berlinickestr.	1 5088,5495 5016,5401
 #: by: Lea:
-Florapromenade	1 10211,17432 10321,17453 10311,17764
+Florapromenade	1 10207,17448 10284,17458 10320,17487 10311,17764
 Takustr.	1 3321,5212 3209,5214 3079,5411 2953,5606 2909,5674
 Schönerlinder Str.	1 21799,4319 21633,4355
 Mentzelstr.	1 21579,4579 21546,4457
@@ -1078,6 +1078,8 @@ Schützenstr. (Schönefeld)	1 19757,-790 19588,-860
 Feldstr. (Bohnsdorf): dauerhaft gesperrt	2 20829,-773 21055,-723 21209,-734
 Zufahrt Bahnhof	1 68021,74671 68052,74741 68140,74703 68110,74631
 Brüderstr.	1 68884,73376 68810,73316
+#: note eigentlich verlaufen hier ausgeschilderte Radrouten?!
+Dorfstr. (Pieskow)	1s:q3 56031,-14776 55983,-14721
 ######################################################################
 # elsewhere not in Brandenburg
 B104: Mittelstreifen nicht überquerbar	3nocross -974,128015 -724,127995 6,127935 298,127911
@@ -2268,7 +2270,7 @@ Caroline-Michaelis-Str.: Bauarbeiten	2:inwork 9151,13941 9125,13973
 #XXX del --- #: last_checked: 2011-05-20 --- #: next_check: 2011-08-01 --- Alex-Wedding-Str.: Bauarbeiten, komplett gesperrt	2:inwork 11085,13239 11045,13183
 #XXX del (für Radfahrer ist das Abbiegen möglich) --- #: next_check: 2012-06-01 vvv --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1010/nachricht4088.html --- Mauerstr.: Einbiegen in die Behrenstr. nicht möglich	3:inwork 9076,12054 9064,12156 9054,12154 --- Mauerstr.: Einbiegen in die Behrenstr. nicht möglich	3:inwork 9076,12054 9064,12156 9164,12172 --- Behrenstr.: Einbiegen in die Mauerstr. nicht möglich	3:inwork 9054,12154 9064,12156 9076,12054 --- Behrenstr.: Einbiegen in die Mauerstr. nicht möglich	3:inwork 9164,12172 9064,12156 9076,12054 --- #: next_check: ^^^
 # 
-#: last_checked: 2012-09-23
+#: last_checked: 2012-10-07
 #: next_check: 2012-12-01
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12748
 # 
