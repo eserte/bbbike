@@ -57,6 +57,13 @@ Annenstr./Heinrich-Heine-Platz	?::projected 11349,11227 11249,11268 11091,11379 
 #: section ignorieren vvv
 #: section Straﬂen in Bau und Planung vvv
 # 
+#: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/verwaltung/org/vermessung/b-plaene/b-plaene/B-V-3.jpg vvv
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/42re.pdf/file?y=2012 vvv
+Planstraﬂe D	?::projected 12796,11163 12848,11246
+Planstraﬂe C	?::projected 12925,11206 12870,11113
+#: by: ^^^
+#: by: ^^^
+# 
 #: last_checked: 2012-09-30
 #: next_check: 2013-12-01
 #: XXX nicht nicht fertiggestellt
@@ -609,11 +616,12 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 # - XXX_prog- und XXX_indoor-Eintr‰ge
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/19re.pdf/file?y=2012 vvv
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/42re.pdf/file?y=2012 vvv
 #: XXX fehlen alle in Berlin.coords.data, PLZ=13158 und PLZ=13159
 #: XXX Neue Privatstraﬂen in der Kolonie Einigkeit
 #: XXX Straﬂen werde ich erst nach der Umbenennung aufnehmen!
 #: last_checked: 2012-09-29 vvv
-#: next_check: 2013-08-01 vvv
+#: next_check: 2012-11-01 vvv
 #: XXX neuer Name: Anisweg?
 Primelweg: unbefestigte Straﬂe, Q2-	? 9788,21780 9866,21586
 #: XXX neuer Name: Basilikumweg
@@ -691,6 +699,7 @@ Grenzweg: unbefestigte Straﬂe, Q2-	? 8557,22063 8572,22094 8594,22158
 Kurzer Weg: Qualit‰t?	? 9169,21548 9066,21516
 #: next_check ^^^
 #: last_checked ^^^
+#: by ^^^
 #: by ^^^
 # 
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20120928.1200.375958.html

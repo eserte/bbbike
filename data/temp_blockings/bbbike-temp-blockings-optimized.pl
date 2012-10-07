@@ -1182,7 +1182,16 @@ userdel	q3::inwork 11436,14741 11526,14693
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'IM_018769',
+         'until' => 1350684000,
+         'text' => 'Spanische Allee (Nikolassee): Bauarbeiten an den Bahnbrücken, für beide Richtungen nur ein Fahrstreifen abwechselnd frei, Regelung mit provisorischen Ampeln bis Mitte Oktober 2012',
+         'from' => 1349635594,
+         'id' => 2333,
+         'data' => 'userdel	q4::inwork -3648,2881 -3736,2849
+',
+         'type' => 'handicap'
+       },
        undef,
        undef,
        undef,
@@ -1249,7 +1258,16 @@ userdel	q4::inwork 10379,14963 10366,14992
 ',
          'type' => 'handicap'
        },
-       undef,
+       {
+         'source_id' => 'IM_018927',
+         'until' => 1351699200,
+         'text' => 'Saalestr. (Neukölln): Fahrbahn in beiden Richtungen zwischen Karl-Marx-Str. und Wipperstr. bis Ende Oktober 2012 gesperrt',
+         'from' => 1340082000,
+         'id' => 2352,
+         'data' => 'userdel	q4::inwork 13161,7173 13058,7165
+',
+         'type' => 'handicap'
+       },
        {
          'source_id' => 'INKO_111688',
          'until' => 1354464000,
@@ -1278,7 +1296,16 @@ userdel	q3::inwork 11912,14486 11642,14625
          'type' => 'handicap'
        },
        undef,
-       undef,
+       {
+         'source_id' => 'IM_019006',
+         'until' => 1351612800,
+         'text' => 'Berliner Str. (Pankow): Baustelle, stadtauswärts zwischen Mühlenstr. und Elsa-Brändström-Str. bis Ende 10/2012 gesperrt',
+         'from' => 1342945020,
+         'id' => 2363,
+         'data' => 'userdel	q4::inwork; 10927,17022 10908,17142
+',
+         'type' => 'handicap'
+       },
        {
          'source_id' => 'INKO_113869',
          'until' => 1354291200,
@@ -1336,7 +1363,16 @@ userdel	2::night 14838,11410 14776,11400
 ',
          'type' => 'gesperrt'
        },
-       undef,
+       {
+         'source_id' => 'IM_019090',
+         'until' => 1351699200,
+         'text' => 'Köthener Brücke (Tiergarten): Baustelle, Straße gesperrt bis Ende Oktober 2012',
+         'from' => 1345119120,
+         'id' => 2373,
+         'data' => 'userdel	q4::inwork 8443,10777 8430,10710
+',
+         'type' => 'handicap'
+       },
        {
          'source_id' => 'IM_019071',
          'until' => 1351695600,
@@ -1437,6 +1473,26 @@ userdel	2::temp 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
 userdel	2::temp 8119,12414 8055,12186
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'INKO_115090',
+         'until' => 1350136800,
+         'text' => 'Roelckestr. (Weißensee): Baustelle, Straße zwischen Rennbahnstr. und Amalienstr. bis Mitte Oktober 2012 gesperrt ',
+         'from' => 1348981200,
+         'id' => 2389,
+         'data' => 'userdel	q4::inwork 13589,16965 13767,17136 13818,17201 13839,17227 13912,17320
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'INKO_113279',
+         'until' => 1351260000,
+         'text' => 'Schulenburgstr. (Spandau): Baustelle, Richtung Ruhlebener Str. ab Tiefwerderweg gesperrt, bis Ende Oktober 2012 ',
+         'from' => 1348981200,
+         'id' => 2390,
+         'data' => 'userdel	q4::inwork; -2960,13203 -2728,13269 -2706,13291
+',
+         'type' => 'handicap'
        }
      
 );
