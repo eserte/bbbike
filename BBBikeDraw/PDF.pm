@@ -197,14 +197,21 @@ sub draw_map {
 		while(1) {
 		    my $s = $strecke->next;
 		    last if !@{$s->[1]};
-		    my $cat = $s->[2];
-		    $cat =~ s{::.*}{};
+		    my($cat, $cat_attribs) = $s->[2] =~ m{^([^:]+)(?:::(.*))?};
 		    my $is_area = 0;
 		    if ($cat =~ /^F:([^|]+)/) {
 			$cat = $1;
 			$is_area = 1;
 		    }
 		    next if $restrict && !$restrict->{$cat};
+
+		    if ($cat_attribs && $cat_attribs eq 'Tu' && $cat =~ m{^W}) {
+			# PDF::Create cannot create dashed lines,
+			# it seems (at least easily). So it's
+			# better to show nothing here then a solid
+			# line.
+			next;
+		    }
 
 		    my($ss, $bbox) = transpose_all($s->[1], $transpose);
 		    next if (!bbox_in_region($bbox, $self->{PageBBox}));
@@ -259,14 +266,23 @@ sub draw_map {
 		    }
 		    $im->fill;
 		} else {
-		    $cat =~ s{::.*}{};
-		    next if $restrict && !$restrict->{$cat};
-		    $im->set_line_width(($width{$cat} || 1) * 1);
-		    $im->set_stroke_color(@{ $color{$cat} || [0,0,0] });
-		    for my $xy (@{$ss}[1 .. $#$ss]) {
-			$im->lineto(@$xy);
+		    my $cat_attribs;
+		    if (($cat, $cat_attribs) = $cat =~ m{^([^:]+)(?:::(.*))?}) {
+			next if $restrict && !$restrict->{$cat};
+			if ($cat_attribs && $cat_attribs eq 'Tu' && $cat =~ m{^W}) {
+			    # PDF::Create cannot create dashed lines,
+			    # it seems (at least easily). So it's
+			    # better to show nothing here then a solid
+			    # line.
+			    next;
+			}
+			$im->set_line_width(($width{$cat} || 1) * 1);
+			$im->set_stroke_color(@{ $color{$cat} || [0,0,0] });
+			for my $xy (@{$ss}[1 .. $#$ss]) {
+			    $im->lineto(@$xy);
+			}
+			$im->stroke;
 		    }
-		    $im->stroke;
 		}
 	    }
 	    if ($strecke_name eq 'flaechen') {

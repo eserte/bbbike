@@ -34,6 +34,9 @@ $VERSION = 0.01;
 use constant DIN_A4_WIDTH => 595;
 use constant DIN_A4_HEIGHT => 842;
 
+# XXX Maybe move definitions? to BBBikeDraw.pm
+my %line_dash = (Tu => [4,5]);
+
 sub init {
     my $self = shift;
 
@@ -186,8 +189,7 @@ sub draw_map {
 		while(1) {
 		    my $s = $strecke->next;
 		    last if !@{$s->[1]};
-		    my $cat = $s->[2];
-		    $cat =~ s{::.*}{};
+		    my($cat, $cat_attribs) = $s->[2] =~ m{^([^:]+)(?:::(.*))?};
 		    my $is_area = 0;
 		    if ($cat =~ /^F:([^|]+)/) {
 			$cat = $1;
@@ -198,6 +200,11 @@ sub draw_map {
 		    my($ss, $bbox) = transpose_all($s->[1], $transpose);
 		    next if (!bbox_in_region($bbox, $self->{PageBBox}));
 
+		    my $dash_set;
+		    if ($cat_attribs && $line_dash{$cat_attribs}) {
+			$im->set_dash(@{ $line_dash{$cat_attribs} });
+			$dash_set = 1;
+		    }
 		    if ($is_area) {
 			$im->set_line_width(2);
 		    } else {
@@ -214,6 +221,7 @@ sub draw_map {
 			$im->line_to(@{ $ss->[0] });
 		    }
 		    $im->stroke;
+		    $im->set_dash(0) if $dash_set;
 		}
 	    }
 	} else {
@@ -246,14 +254,22 @@ sub draw_map {
 		    }
 		    $im->fill;
 		} else {
-		    $cat =~ s{::.*}{};
-		    next if $restrict && !$restrict->{$cat};
-		    $im->set_line_width(($width{$cat} || 1) * 1);
-		    $im->set_source_rgb(@{ $color{$cat} || [0,0,0] });
-		    for my $xy (@{$ss}[1 .. $#$ss]) {
-			$im->line_to(@$xy);
+		    my $cat_attribs;
+		    if (($cat, $cat_attribs) = $cat =~ m{^([^:]+)(?:::(.*))?}) {
+			next if $restrict && !$restrict->{$cat};
+			my $dash_set;
+			if ($cat_attribs && $line_dash{$cat_attribs}) {
+			    $im->set_dash(@{ $line_dash{$cat_attribs} });
+			    $dash_set = 1;
+			}
+			$im->set_line_width(($width{$cat} || 1) * 1);
+			$im->set_source_rgb(@{ $color{$cat} || [0,0,0] });
+			for my $xy (@{$ss}[1 .. $#$ss]) {
+			    $im->line_to(@$xy);
+			}
+			$im->stroke;
+			$im->set_dash(0) if $dash_set;
 		    }
-		    $im->stroke;
 		}
 	    }
 	    if ($strecke_name eq 'flaechen') {

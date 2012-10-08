@@ -1094,7 +1094,15 @@ attribute is already handled in a couple of data files
 =item Tu
 
 The map item is in a tunnel. This is already handled in F<sbahn>,
-F<rbahn> and F<strassen_bab>.
+F<rbahn>, F<ubahn>, F<strassen_bab>, and F<wasser*>.
+
+Note that not every BBBike renderer may render a tunnel specially. The
+Perl/Tk application has complete render support for all tunnel
+categories (see also the below ones). The PDFCairo renderer has simple
+support for tunnels (drawn as dashed lines). The PDF and GD renderers
+draw tunnels like normal lines, except for tunneled waterways, which
+are currently completely ignored. All other renderers (e.g. Mapserver)
+draw all tunnels like normal lines.
 
 =item Tu_
 

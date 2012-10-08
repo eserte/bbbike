@@ -332,8 +332,7 @@ sub draw_map {
 	while(1) {
 	    my $s = $strecke->next;
 	    last if !@{$s->[1]};
-	    my $cat = $s->[2];
-	    $cat =~ s{::.*}{};
+	    my($cat, $cat_attribs) = $s->[2] =~ m{^([^:]+)(?:::(.*))?};
 # XXX what about outlined areas?
 #  	    if ($cat =~ /^F:(.*)/) {
 #  		if ($1 eq 'I') {
@@ -349,6 +348,13 @@ sub draw_map {
 #	    } elsif ($cat !~ /^[SRU]0$/) { # Ausnahmen: in Bau
 	    next if $restrict && !exists $restrict->{$cat};
 	    next if (!$outline_brush{$cat} && !defined $outline_thickness{$cat});
+	    if ($cat_attribs && $cat_attribs eq 'Tu' && $cat =~ m{^W}) {
+		# BBBikeDraw::GD cannot create dashed lines,
+		# it seems (at least easily). So it's
+		# better to show nothing here then a solid
+		# line.
+		next;
+	    }
 	    my $color;
 	    if (defined $outline_thickness{$cat}) {
 		$im->setThickness($outline_thickness{$cat});
@@ -397,41 +403,52 @@ sub draw_map {
 		}
 		$im->filledPolygon($poly, $c);
 	    } elsif ($cat !~ $BBBikeDraw::bahn_bau_rx) { # Ausnahmen: in Bau, stillgelegt, Güterstrecken ...
-		$cat =~ s{::.*}{};
-		next if $restrict && !exists $restrict->{$cat};
-		my $color;
-		if (defined $thickness{$cat}) {
-		    $im->setThickness($thickness{$cat});
-		    $color = $color{$cat};
-		} elsif ($brush{$cat}) {
-		    $im->setBrush($brush{$cat});
-		    $color = $self->{GD}->gdBrushed();
-		} else {
-		    if ($self->{GD_use_thickness}) {
-			$im->setThickness(1);
+		my $cat_attribs;
+		if (($cat, $cat_attribs) = $cat =~ m{^([^:]+)(?:::(.*))?}) {
+		    next if $restrict && !exists $restrict->{$cat};
+
+		    if ($cat_attribs && $cat_attribs eq 'Tu' && $cat =~ m{^W}) {
+			# BBBikeDraw::GD cannot create dashed lines,
+			# it seems (at least easily). So it's
+			# better to show nothing here then a solid
+			# line.
+			next;
 		    }
-		    $color = defined $color{$cat} ? $color{$cat} : $white;
-		}
-		if ($self->{GD_use_aa} && $color ne $self->{GD}->gdBrushed()) {
-		    $im->setAntiAliased($color);
-		    $color = $self->{GD}->gdAntiAliased();
-		}
-		if (0) { # XXX no visible change using unclosedPolygon (with gd 2.0.33)
-		    # But it seems to be 20% slower than ->line, measured with bbbikedraw.t -slow
-		    my $poly = $self->{GD_Polygon}->new;
-		    for my $coord (@{ $s->[Strassen::COORDS] }) {
-			$poly->addPt($transpose->(split /,/, $coord));
+
+		    my $color;
+		    if (defined $thickness{$cat}) {
+			$im->setThickness($thickness{$cat});
+			$color = $color{$cat};
+		    } elsif ($brush{$cat}) {
+			$im->setBrush($brush{$cat});
+			$color = $self->{GD}->gdBrushed();
+		    } else {
+			if ($self->{GD_use_thickness}) {
+			    $im->setThickness(1);
+			}
+			$color = defined $color{$cat} ? $color{$cat} : $white;
 		    }
-		    $im->unclosedPolygon($poly, $color);
-		} else {
-		    my @txy = map { $transpose->(split/,/, $_) } @{ $s->[Strassen::COORDS] };
-		    next if @txy < 4; # ignore points
-		    if (0) { # no visible results without using a truecolor image, but see above...
+		    if ($self->{GD_use_aa} && $color ne $self->{GD}->gdBrushed()) {
 			$im->setAntiAliased($color);
 			$color = $self->{GD}->gdAntiAliased();
 		    }
-		    for my $i (0 .. $#txy/2-1) {
-			$im->line(@txy[$i*2 .. $i*2+3], $color);
+		    if (0) { # XXX no visible change using unclosedPolygon (with gd 2.0.33)
+			# But it seems to be 20% slower than ->line, measured with bbbikedraw.t -slow
+			my $poly = $self->{GD_Polygon}->new;
+			for my $coord (@{ $s->[Strassen::COORDS] }) {
+			    $poly->addPt($transpose->(split /,/, $coord));
+			}
+			$im->unclosedPolygon($poly, $color);
+		    } else {
+			my @txy = map { $transpose->(split/,/, $_) } @{ $s->[Strassen::COORDS] };
+			next if @txy < 4; # ignore points
+			if (0) { # no visible results without using a truecolor image, but see above...
+			    $im->setAntiAliased($color);
+			    $color = $self->{GD}->gdAntiAliased();
+			}
+			for my $i (0 .. $#txy/2-1) {
+			    $im->line(@txy[$i*2 .. $i*2+3], $color);
+			}
 		    }
 		}
 	    }
