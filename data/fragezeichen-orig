@@ -162,9 +162,9 @@ Kolonie Frühauf: Sanierung der Radfahrverbindung. Welchen Belag wird der Weg dan
 # 
 #: XXX auch die Südpanke einzeichnen, falls sie sichtbar ist
 #: XXX wahrscheinlich sehr guter Beton, wahrscheinlich unbeleuchtet
-#: last_checked: 2012-08-31
-#: next_check: 2012-10-01
-neuer Weg an der Südpanke: wo genau wird der Weg verlaufen? Nachts beleuchtet? Qualität?	?::inwork 8481,13936 8329,14120
+#: last_checked: 2012-10-08
+#: next_check: 2012-12-01
+neuer Weg an der Südpanke: wo genau wird der Weg verlaufen? Nachts beleuchtet? Qualität?	?::inwork 8478,13941 8329,14120
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/31re.pdf/file
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/45re.pdf/file?y=2011
@@ -1468,8 +1468,8 @@ Heinrich-Zille-Weg: Qualität?	? 815,12653 1070,13309
 (Spandauer Damm - Fürstenbrunnerweg): Qualität?	? 1459,12475 1601,12908 1551,13377
 Brückenstr.: Qualität? Führt hier der Pankeweg entlang?	? 17385,26962 17417,26948
 #XXX del: Pankeweg entlang der S-Bahn: Qualität?	? 17417,26948 17687,27129 17784,27209 18225,27638 18410,27890
-Triftstr. (Pankeweg): Qualität?	? 18014,27029 18505,27407 18595,27547
-Pankeweg: Qualität?	? 18595,27547 18749,27528 18784,27571 18899,27976 18919,28028 18759,28153
+#XXX del --- Triftstr. (Pankeweg): Qualität?	? 18014,27029 18211,27181 18316,27261 18398,27324 18505,27407 18595,27547
+#XXX del --- Pankeweg: Qualität?	? 18595,27547 18658,27539 18749,27528 18784,27571 18844,27758 18888,27976 18899,27976 18919,28028 18759,28153
 #: note laut http://www.radzeit.de/gallery2/v/Radtouren/Berlin-Usedom/dscf0042.jpg.html sieht das wie ein Schotterweg aus
 Schmarsow - Rollwitz: Feldwege, genaue Wegführung? ist Berlin-Usedom hier schon ausgeschildert?	? 44142,117823 44284,118067 43949,118402 44173,119093 44630,119143 45392,120382 46387,119529 47187,119302
 Schmarsow - B109: Qualität (wahrscheinlich Asphalt)?	? 44142,117823 45383,117391
@@ -2856,9 +2856,7 @@ Tongrubenweg: Qualität im östlichen Teilabschnitt?	? 28694,2529 28749,2595 28809
 #XXX del --- Reinickendorfer Radroute 1: genauer Verlauf im Märkischen Viertel? Qualität? Nachts beleuchtet?	? 7516,22178 7439,22138 7375,22146 7331,22037 7287,21845 6960,21802 6742,21733 6618,21972 6257,22005
 (Am Grüngürtel - Weg zwischen Triftstr. und Eichborndamm): Qualität? Nachts beleuchtet?	? 4597,20508 4626,20577
 # 
-#: last_checked: 2012-09-13
-#: next_check: 2013-09-30
-Pankeweg: Ist die geplante Lückenschliessung zwischen Ernst-Busch-Str. und Walter-Friedrich-Str. erfolgt? Wenn ja, wie ist die Qualität und ist der Weg beleuchtet?	?::projected 15820,25003 16042,25318
+#XXX del --- möglicherweise passiert hier nie etwas, Berlin-Usedom wird anders geroutet, und auch die Pankeweg-Ausschilderung ist nicht ganz eindeutig hier --- #: last_checked: 2012-10-08 --- #: next_check: 2013-09-30 --- Pankeweg: Wann erfolgt die geplante Lückenschliessung zwischen Ernst-Busch-Str. und Walter-Friedrich-Str.? Wie wird die Qualität sein und wird der Weg beleuchtet sein?	?::projected 15820,25003 16033,25319
 # 
 #: by: http://www.berlin.de/ba-spandau/presse/archiv/20100803.1545.305011.html
 #: last_checked: 2010-03-18 (Teile auch 2010-06-26)

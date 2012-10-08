@@ -372,8 +372,8 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
          'id' => 1823,
          'data' => '#: by: Marek Bänsch:
 #: confirmed_by: srt
-	2::night 8337,13541 8248,13659 8101,13901 8119,13912 8011,14096
-	2::night 8119,13912 8216,13987
+	2::night 8337,13541 8248,13659 8101,13901 8119,13912 8096,13951 8011,14096
+	2::night 8096,13951 8200,14016
 ',
          'type' => 'gesperrt'
        },
@@ -495,7 +495,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
          'from' => undef,
          'id' => 1887,
          'data' => '	q4::temp:clock 9754,12775 9661,12876 9618,12907 9529,12925
-	q4::temp:clock 9919,12613 9950,12522 9984,12426
+	q4::temp:clock 9919,12613 9956,12523 9984,12426
 ',
          'type' => 'gesperrt'
        },
@@ -1461,19 +1461,7 @@ userdel	q4::inwork; 10870,14689 10893,14705
          'type' => 'handicap'
        },
        undef,
-       {
-         'source_id' => 'IM_019235',
-         'until' => 1349647140,
-         'text' => 'Sperrungen wegen Marathon und Tag der deutschen Einheit: Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor, Ebertstr. zwischen Behrenstr. und Scheidemannstr., Yitzak-Rabin-Str., 28.09.2012 06:00 Uhr bis 07.10.2012 23:59 Uhr',
-         'from' => 1348718400,
-         'id' => 2388,
-         'data' => 'userdel	2::temp 8573,12325 8540,12420
-userdel	2::temp 8610,12254 8538,12245 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 6828,12031
-userdel	2::temp 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
-userdel	2::temp 8119,12414 8055,12186
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'INKO_115090',
          'until' => 1350136800,

@@ -6442,7 +6442,7 @@ EOF
        source_id => 'IM_003850',
        data  => <<EOF,
 userdel	q4::temp 8481,16136 8582,16052 8437,15894 8271,15734
-userdel	q4::temp 8437,15894 8338,15987 8278,16043 8236,16071
+userdel	q4::temp 8437,15894 8338,15987 8270,16047 8236,16071
 EOF
      },
      { from  => 1161326842, # 2006-10-20 08:47
@@ -12377,7 +12377,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_009745',
        data  => <<EOF,
-userdel	2::temp 8574,13666 8429,13903
+userdel	2::temp 8574,13666 8426,13909
 EOF
      },
      { from  => 1219879557, # 2008-08-28 01:25
@@ -15512,8 +15512,8 @@ EOF
        data  => <<EOF,
 #: by: Marek Bänsch:
 #: confirmed_by: srt
-	2::night 8337,13541 8248,13659 8101,13901 8119,13912 8011,14096
-	2::night 8119,13912 8216,13987
+	2::night 8337,13541 8248,13659 8101,13901 8119,13912 8096,13951 8011,14096
+	2::night 8096,13951 8200,14016
 EOF
      },
      { from  => undef, #
@@ -16065,7 +16065,7 @@ EOF
        recurring => 1,
        data  => <<EOF,
 	q4::temp:clock 9754,12775 9661,12876 9618,12907 9529,12925
-	q4::temp:clock 9919,12613 9950,12522 9984,12426
+	q4::temp:clock 9919,12613 9956,12523 9984,12426
 EOF
      },
      { from  => 1253224800, # 2009-09-18 00:00
@@ -18396,7 +18396,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1010/nachricht4072.html',
        data  => <<EOF,
-	2:inwork 15337,24593 15490,24848
+	2:inwork 15347,24614 15490,24848
 EOF
      },
      { from  => 1286661600, # 2010-10-10 00:00
@@ -19585,7 +19585,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_017698',
        data  => <<EOF,
-userdel	2::temp 8429,13903 8574,13666
+userdel	2::temp 8426,13909 8574,13666
 EOF
      },
      { from  => 1313553600, # 2011-08-17 06:00
