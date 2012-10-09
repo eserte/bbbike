@@ -20072,8 +20072,8 @@ EOF
        recurring => 1,
        data => <<EOF,
 #: by: cornelia (bayer...): vvv
-Am Schloss Schönhausen	2::night 10308,19297 10350,19182 10390,19069
-Am Schloss Schönhausen	2::night 10249,19148 10350,19182
+Am Schloss Schönhausen	2::night 10308,19297 10344,19181 10382,19066
+Am Schloss Schönhausen	2::night 10249,19148 10344,19181
 #: by: ^^^
 EOF
      },

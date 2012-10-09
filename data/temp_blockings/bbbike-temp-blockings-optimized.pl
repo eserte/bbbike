@@ -1156,8 +1156,8 @@ userdel	q4::inwork; 9164,12172 9373,12197
          'from' => undef,
          'id' => 2320,
          'data' => '#: by: cornelia (bayer...): vvv
-Am Schloss Schönhausen	2::night 10308,19297 10350,19182 10390,19069
-Am Schloss Schönhausen	2::night 10249,19148 10350,19182
+Am Schloss Schönhausen	2::night 10308,19297 10344,19181 10382,19066
+Am Schloss Schönhausen	2::night 10249,19148 10344,19181
 #: by: ^^^
 '
        },
