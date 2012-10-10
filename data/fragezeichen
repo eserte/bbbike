@@ -1065,6 +1065,8 @@ Max-Sabersky-Allee (Teltow): Qualität aller Abschnitte? Ist die Straße teilweise
 Striewitzweg (Teltow): Qualität in den verschiedenen Abschnitten der Straße? Ist der Abschnitt nördlich der Potsdamer Str. für Autos gesperrt? Ist ein Abschnitt südlich der Potsdamer Str. eine Einbahnstraße?	? 281,-1433 313,-1363 385,-1205 403,-1166 457,-1051 528,-917 598,-757 586,-627 577,-543 550,-396 525,-347
 Bau einer Radfahrer- und Fußgängerbrücke in Friedrichsthal	?::inwork 1860,42884 1907,42835
 Altdöbern - Calau: Qualität?	? 55259,-83091 55388,-83077 55768,-82862 54521,-79452 54572,-78865 54600,-77483 53827,-76082
+Spitzmausweg: Qualität? Wo wird die Straße genau liegen?	?::projected 26138,12534 26231,12627 26285,12675
+Verdistr.: Qualität der Verlängerung Richtung Osten? Existiert bereits eine direkte Verbindung zur Kaulbachstr.?	? 25980,12398 26174,12433 26201,12499
 Börnicke - Staffelde: existieren Radwege zwischen Börnicke und Staffelde?	? -21772,30661 -20747,31713 -19914,32444 -19361,33130 -19129,33814 -18939,34241 -18555,34920 -18212,35362
 Langenbeckstr.: ist die gesamte Straße asphaltiert?	? 24793,9860 25020,9728
 B96a - Schützenstr.: Wo genau liegt die Verbindungsstraße? Qualität?	? 19858,-843 19869,-816
@@ -1225,7 +1227,7 @@ Vogelsang - Hammelspring: gibt es hier mittlerweile einen Radweg?	? 7983,69794 7
 Schwarzer Weg (Großziethen): Qualität?	? 13215,-570 12804,-735
 nach Garzin und Garzau: Qualität?	? 53884,16566 53683,16474 53019,16358 52848,16456 52574,16529 51697,16718 51715,16919 49700,16565
 Dahmsdorf - Münchehofe: alternative Strecke durch den Wald, Qualität?	? 59488,16074 59402,16156 59309,16178 59220,16332 59263,16443 59460,16443 59560,16579 59624,16883
-Grafenauer Weg: evtl. existiert jetzt eine Verbindung zum Bodenmaiser Weg	? 19495,9278 19495,9243
+Grafenauer Weg: existiert mittlerweile eine Verbindung zum Bodenmaiser Weg?	? 19495,9278 19488,9218
 Zingster Str. - Wartenberger Weg: Qualität? Nachts beleuchtet?	? 16358,18687 16325,18796
 Hechtgraben - ...: wie geht es hier weiter? Nachts beleuchtet?	? 16325,18796 16426,18812
 Am Luchgraben - B2: Qualität?	? 17060,20381 17009,20447 16787,20515 16748,20586 16768,20728 16752,20898 16643,21035
@@ -1249,7 +1251,6 @@ Haeberlinweg (Potsdam): (Planstraße "Süd")	? -15381,160 -15264,85
 Preußenpark: Qualität des Weges? Nachts beleuchtet?	? 4353,9430 4281,9393
 Am Kaniswall: Privatstraße, wo genau? Qualität?	? 32823,-202 32970,320
 Straße 180 (Rudow): existieren hier Straßenschilder?	? 16738,175 16770,192
-Straße 455 (Buckow): existiert hier eine Straße mit dem Namen "Straße 455"? Qualität?	? 10853,1805 10940,1904
 Buckower Damm: existieren am Buckower Damm zwischen Gerlinger Str. und Stadtgrenze Radwege?	? 12938,1348 12941,1256 12984,1011
 Gutschmidtstraße: sind die Radwege asphaltiert oder saniert?	? 12655,3882 12711,3881 12726,3870 12796,3821 12913,3743 13030,3664 13162,3576 13396,3512 13526,3519
 Fritz-Erler-Allee: sind die Radwege asphaltiert oder saniert?	? 14392,2979 14274,3129 14205,3187 14126,3225 14023,3276 13906,3340 13775,3500
@@ -1281,6 +1282,15 @@ Neuendorfer Str.: existieren Radspuren in der Neuendorfer Str., und wenn ja, von
 Joachim-Friedrich-Str.: existieren Radspuren in der Joachim-Friedrich-Str.?	?::projected 3067,9592 3069,9622 3083,9796 3092,9886 3108,10069 3111,10116 3132,10499
 Breubergweg: existiert eine für Radfahrer befahrbare Verbindung zwischen Breubergweg und Michelstadter Weg? Qualität?	? -3206,17263 -3122,17259
 Windthorststr.: Qualität der Verlängerung? Ausschilderung?	? 22552,11029 22554,11049 22490,11133 22469,11138
+Buckower Weg: Ist die Straße schon fertiggestellt? Qualität der Fahrbahn? Ist die Straße verkehrsberuhigt?	? 12374,1193 12365,1172 12295,1191 12239,1209 12243,1224 12224,1235
+An den Feldern: Ist die Straße schon fertiggestellt? Qualität der Fahrbahn? Ist die Straße verkehrsberuhigt?	? 12212,1108 12233,1154 12283,1148 12295,1191
+Mathilde-Vaerting-Weg: Qualität nach den Bauarbeiten? Ist die Straße verkehrsberuhigt?	? 17610,-330 17651,-393
+Am Römersgrün: Straße und Wohnanlage in Bau. Genaue Lage? Qualität?	?::inwork 11708,3914 11723,3846
+Waadter Zeile (Zufahrt am Supermarkt): existieren an dieser Straße Straßenschilder? Qualität?	? 3746,2108 3723,2118 3726,2209
+Königsheideweg: Gibt es hier Radwege oder Radspuren? Einseitig oder auf beiden Seiten? Zwischen welchen Kreuzungen?	?::inwork 16784,4913 16554,5022 16362,5112 16279,5170
+Kohlisstr./Hultschiner Damm: gibt es hier mittlerweile eine Ampelanlage?	?::inwork 23810,7946
+Boitzenburg - Hardenbeck: wurde der straßenbegleitende Radweg bereits realisiert?	?::inwork 22233,95712 21980,95754 21160,95892 20914,96092 20696,96135 20064,95650 19336,95235 19032,95142
+ehem. Bahndamm zwischen L15 undf K7332 bei Hardenbeck: wurde hier ein Radweg realisiert? Ist der Radweg durchgängig asphaltiert? Wo genau befindet sich der Radweg (GPS-Track)?	?::inwork 16377,90072 15782,90862 15738,90942 15410,92053 15661,93732 15688,93829 15748,93928 15841,94009 16435,94298 17677,94900 17796,95008 17912,95192 18001,95435 18507,96268 18676,96867 18954,97944 19022,98128 19442,99078 19582,99411
 # added from ampeln-orig
 geschlossen bei Bedarf (?) (Zbr)	? 27657,-11741
 S-Bahn alle 20 Minuten, Regionalbahn halbstündlich (?) (B)	? 40248,14503

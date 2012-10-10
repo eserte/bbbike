@@ -3586,7 +3586,7 @@ Römerweg: Asphalt	Q1 19599,9747 19663,9757
 Zwieseler Str.: sehr guter Asphalt	Q0+ 19669,9876 19663,9757 19651,9489 19634,9192 19629,9094
 Zwieseler Str.: Beton	Q0 19669,9876 19683,10031 19688,10094 19695,10196 19711,10426
 (Verlängerung der Zwieseler Str.): Asphalt mit Schäden	Q1 19629,9094 19631,9072 19700,9040
-Bodenmaiser Weg: Asphalt	Q1+ 19407,9232 19634,9192
+Bodenmaiser Weg: Asphalt	Q1+ 19407,9232 19488,9218 19634,9192
 Robert-Siewert-Str.: Asphalt mit Schäden	Q1 19669,9876 19842,9895
 Beerfelder Str.: unbefestigte, holprige Straße	Q2 19842,9895 19819,10090 19810,10155
 Pirolstr. (Karlshorst): Beton	Q0 19688,10094 19789,10091
@@ -4161,7 +4161,7 @@ Usedomstr.: Asphalt	Q0 19497,1035 19575,1239 19610,1349
 Usedomstr.: schlechtes Kopfsteinpflaster	Q3+ 19610,1349 19638,1436
 Warnowstr.: Asphalt	Q0 19780,1311 19610,1349 19412,1387
 Lianenweg: Asphalt	Q0 19703,1566 19955,1509
-Besenbinderstr.: Beton	Q0- 19812,1923 20064,1777
+Besenbinderstr.: Beton	Q0- 19803,1911 20064,1777
 Wilhelm-Ostwald-Str.: Asphalt	Q0 19933,2474 20116,2639
 Willi-Schwabe-Str.: Asphalt	Q0 19778,3064 19713,3124
 Franz-Ehrlich-Str.: Asphalt	Q0 19732,3340 19767,3307 19890,3186
@@ -4303,7 +4303,7 @@ Akazienhof: mäßiger Asphalt	Q2 21798,839 21748,746
 (Am Gartenstadtweg - S-Bhf. Altglienicke/Paradiesstr.): sehr guter Asphalt	Q0+ 21527,547 21373,490 21275,389 21262,375
 (Verlängerung Johannes-Tobei-Str.): Asphalt	Q0 21250,118 21135,83 20984,-81
 Sternblütenweg: Asphalt	Q0 21591,488 21617,387
-Am Gartenstadtweg: Beton	Q1 21527,547 21592,547 21658,575 21679,596 21684,642 21613,667 21592,547
+Am Gartenstadtweg: Beton	Q1 21527,547 21592,547 21657,580 21679,596 21684,642 21613,667 21592,547
 (Lindenblütenstr. - Mohnblütenweg): wassergebundene Decke	Q1 21703,388 21707,365 21671,328
 (Lindenblütenstr. - Mohnblütenweg): Asphalt	Q0 21671,328 21684,328 21688,312
 #: last_checked: 2010-10-02
@@ -5349,7 +5349,7 @@ Weg S: unbefestigte Straße	Q2- 28677,524 28772,632
 Zur Großen Krampe: Asphalt	Q0 28813,598 28772,632 28757,645 28733,665 28707,687 28617,765
 Alt-Müggelheim: Kopfsteinpflaster, OK	Q1- 28225,1009 28188,962
 Appelbacher Weg: Rasengittersteine	Q2 27780,893 27804,878
-Hallgarter Steig: Asphalt	Q0 27890,373 27961,321 28042,304 28058,155 28086,90 28070,22 28083,-34 28065,-114 28042,-152
+Hallgarter Steig: Asphalt	Q0 27890,373 27961,321 28042,304 28046,268 28058,155 28068,148 28071,112 28086,101 28070,22 28083,-34 28065,-114 28042,-152
 Rinntaler Steig: gepflastert	Q1 27918,12 27930,12
 Rinntaler Steig: Asphalt	Q0 27930,12 27993,10 28015,24 28036,62
 Rinntaler Steig: Asphalt	Q0 28015,24 28038,7 28083,-34
@@ -6805,7 +6805,7 @@ Straße 182 (Rudow): Asphalt	Q0 17088,-135 17122,-270 17133,-404 17147,-573
 Käte-Frankenthal-Weg: Verbundsteinpflaster	Q1+ 17551,-373 17491,-412 17429,-453 17234,-574
 Elisabeth-Selbert-Str.: Asphalt	Q0 17491,-412 17418,-305 17306,-136
 Helene-Weber-Str.: Asphalt	Q0 17551,-373 17476,-266 17368,-95
-Hiltrud-Dudek-Weg: Verbundsteinpflaster	Q1 17985,-208 17942,-296 17880,-352 17811,-380 17738,-397 17588,-392 17565,-383
+Hiltrud-Dudek-Weg: Verbundsteinpflaster	Q1 17985,-208 17942,-296 17880,-352 17811,-380 17738,-397 17651,-393 17588,-392 17565,-383
 Marianne-Hapig-Weg: Gehwegplatten	Q0- 17623,-221 17563,-364
 Lieselotte-Berger-Str.: Asphalt	Q0 17860,-15 17777,-68 17719,-107 17599,-187 17537,-226 17476,-266 17418,-305 17359,-345
 Helene-Wessel-Str.: Asphalt	Q0 17537,-226 17488,-145
@@ -8263,7 +8263,7 @@ Fahrenheitstr.: Beton	Q0 4768,840 4510,669
 Wermuthweg: Asphalt	Q0 13661,2207 13672,2221 13816,2258 13827,2280 13838,2310 13835,2354 13709,2551
 Haeselerstr. (Lichtenrade): guter Asphalt	Q0 10404,-2398 10513,-2397 10563,-2432
 Pappritzstr.: guter Asphalt	Q0 7562,1796 7675,1885 7736,1969 7741,2096
-Lindenblütenstr.: guter Asphalt	Q0 21703,388 21671,509 21658,575
+Lindenblütenstr.: guter Asphalt	Q0 21703,388 21671,509 21657,580
 #: note: laut ADFC-Karte/neu gut geeignet
 Crivitzer Str.: guter Asphalt	Q0 17807,18267 17670,18435 17580,18548
 Johann-Landefeldt-Str.: Asphalt	Q0 -8619,7012 -8598,7018 -8532,7041 -8466,7064 -8404,7087 -8341,7108 -8275,7131 -8207,7156 -8138,7182 -8074,7204 -8011,7229 -7948,7252 -8032,7437 -8055,7489
@@ -8289,7 +8289,7 @@ Schwanenfeldstr.: guter Asphalt	Q0 4546,14803 4473,14646
 Straße 30 (Französisch Buchholz): schlechtes Kopfsteinpflaster	Q3 11696,21493 11764,21593
 Korbmacherweg: guter Asphalt	Q0 16352,1226 16375,1313
 #: corrected_by: srt (Asphalt -> ...)
-Trollblumenweg: guter Beton	Q0 16041,3718 15860,3838 15647,3977
+Trollblumenweg: guter Beton	Q0 16041,3718 16028,3726 15860,3838 15647,3977
 Müllerstr. (Spandau): Asphalt	Q0 -3216,15155 -3138,15259
 Grünefelder Str.: guter Asphalt	Q0 -4879,16718 -4875,16928 -4871,17197
 Grabenstr. (Bohnsdorf): mäßiger Asphalt	Q1- 22315,490 22288,413 22319,295 22387,223 22530,190 22683,201
@@ -17824,7 +17824,7 @@ Am Hellespont: guter Beton	Q0 10879,4358 10869,4233
 # 
 #: by: Jacqueline Franz:
 #: confirmed_by: srt (westlicher Abschnitt)
-Jeanette-Wolff-Str.: asphaltiert	Q0 17551,-373 17563,-364 17669,-290 17726,-251 17789,-211 17848,-173 17928,-120
+Jeanette-Wolff-Str.: asphaltiert	Q0 17551,-373 17563,-364 17610,-330 17669,-290 17726,-251 17789,-211 17848,-173 17928,-120
 # 
 #: by: Claudia Schulz-Rosenbach:
 Helene-Nathan-Weg: guter Asphalt	Q0 17681,-178 17726,-251
@@ -19379,7 +19379,7 @@ Schwarzdornweg: Asphalt	Q0 2831,2390 3006,2384
 # 
 #: by: Erhard (...feller):
 #: confirmed_by: srt (östlicher Abschnitt)
-Minzeweg: guter Asphalt	Q0 16556,3258 16420,3353 16365,3396 16325,3401 16315,3430 16225,3512 16003,3652 15838,3754 15603,3905
+Minzeweg: guter Asphalt	Q0 16556,3258 16420,3353 16365,3396 16325,3401 16315,3430 16254,3489 16205,3529 16152,3562 16097,3595 16003,3652 15838,3754 15603,3905
 # 
 #: by: Stefan Bandelin: vvv
 Heinrichstr. (Lichterfelde): guter Beton	Q0- 4433,1800 4542,1729 4605,1633
