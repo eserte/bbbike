@@ -110,6 +110,7 @@ sub parse {
     while ($payload =~ m{(.*?)(?:<br><b>|\s+</font>\s+</body>)}gs) {
 	my $chunk = '<html><body><b>'.$1.'</body></html>';
 	$chunk =~ s{&}{&amp;}g;
+	$chunk =~ s{<>}{&lt;&gt;}g;
 	my $doc = $p->parse_html_string($chunk);
 	my $root = $doc->documentElement;
 	my $place = $root->findvalue('/html/body/b'); $place =~ s{:\s+}{};
