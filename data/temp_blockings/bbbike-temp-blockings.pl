@@ -50,7 +50,7 @@ EOF
        text  => 'Karneval der Kulturen, 27.5.2012',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::temp 11909,9155 11824,8995 11767,9026 11629,9086 11550,9104 11500,9116 11449,9125 11136,9183 11108,9187 10713,9260 10625,9259 10564,9292 10198,9405 10032,9456 9937,9484 9927,9487 9790,9528 9676,9564 9552,9602 9451,9634 9334,9670 9243,9696 9044,9753 9002,9731 8777,9601 8648,9526 8595,9495 8358,9568 8192,9619
+userdel	2::temp 11909,9155 11831,8989 11767,9026 11629,9086 11550,9104 11500,9116 11449,9125 11136,9183 11108,9187 10713,9260 10625,9259 10564,9292 10198,9405 10032,9456 9937,9484 9927,9487 9790,9528 9676,9564 9552,9602 9451,9634 9334,9670 9243,9696 9044,9753 9002,9731 8777,9601 8648,9526 8595,9495 8358,9568 8192,9619
 userdel	2::temp 10713,9260 10670,9286 10639,9304 10564,9292
 userdel	3 8773,9524 8777,9601 8779,9812
 userdel	3 8779,9812 8777,9601 8773,9524
@@ -76,8 +76,8 @@ userdel	3 10705,9234 10713,9260 10747,9326
 userdel	3 10747,9326 10713,9260 10705,9234
 userdel	3 11141,9107 11136,9183 11208,9345 11274,9492
 userdel	3 11274,9492 11208,9345 11136,9183 11141,9107
-userdel	3 11998,8872 11880,8955 11824,8995 11882,8527
-userdel	3 11882,8527 11824,8995 11880,8955 11998,8872
+userdel	3 11998,8872 11880,8955 11831,8989 11845,8824 11879,8672 11882,8527
+userdel	3 11882,8527 11879,8672 11845,8824 11831,8989 11880,8955 11998,8872
 EOF
      },
      { from  => Time::Local::timelocal(reverse(2003-1900,6-1,19,6,0,0)),
@@ -20512,13 +20512,15 @@ EOF
 userdel	q4::inwork; 10953,15787 11086,15772
 EOF
      },
-     { from  => undef, # 
-       until => undef, # XXX
+     { from  => 1342594800, # 2012-07-18 09:00
+       until => 1350054000, # 2012-10-12 17:00
        text  => 'Adalbertstr.: Fahrbahn in Richtung Kottbusser Tor gesperrt',
        type  => 'handicap',
+       source_id => 'INKO_114376',
        data  => <<EOF,
-#: last_checked: 2012-09-19
-#: next_check: 2012-10-20
+#: last_checked: 2012-10-11
+#: next_check: 2012-10-12
+#: XXX see also Adalbertstr. (Kreuzberg): Leitungsarbeiten, Fahrtrichtung gesperrt (bis Mitte 10/12) Richtung Kottbusser Tor zwischen Oranienstr. und Kottbusser Tor, 19.07.2012 09:00 Uhr bis 12.10.2012 17:00 Uhr¦INKO_114376¦http://asp.vmzberlin.com/VMZ_LSBB_MELDUNGEN_WEB/Meldungskarte.jsp?back=true&map=true&x=52.50035&y=13.41862&zoom=13&meldungId=INKO_114376
 userdel	q4::inwork; 11389,10463 11393,10390
 EOF
      },
@@ -20701,7 +20703,7 @@ userdel	2::temp 8119,12414 8055,12186
 EOF
      },
      { from  => 1348981200, # 2012-09-30 07:00
-       until => 1350136800, # 2012-10-13 16:00
+       until => 1350482400, # 2012-10-17 16:00
        text  => 'Roelckestr. (Weißensee): Baustelle, Straße zwischen Rennbahnstr. und Amalienstr. bis Mitte Oktober 2012 gesperrt ',
        type  => 'handicap',
        source_id => 'INKO_115090',
@@ -20716,6 +20718,15 @@ EOF
        source_id => 'INKO_113279',
        data  => <<EOF,
 userdel	q4::inwork; -2960,13203 -2728,13269 -2706,13291
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Friedrich-Engels-Str. (Rosenthal) Richtung Märkisches Viertel zwischen Platananenstr. und Nordendstr. Baustelle, Fahrtrichtung gesperrt',
+       type  => 'handicap',
+       source_id => 'IM_019272',
+       data  => <<EOF,
+userdel	q4::inwork; 9355,19789 9333,19853 9300,19949 9266,20048 9235,20125 9149,20336
 EOF
      },
     );

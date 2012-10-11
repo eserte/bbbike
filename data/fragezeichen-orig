@@ -172,7 +172,7 @@ Verlängerung der Jochen-Klepper-Str. (Potsdam) in Bau	?::inwork -13436,595 -1366
 #: next_check ^^^
 #: last_checked ^^^
 # 
-#: next_check: 2013-07-01 vvv
+#: next_check: 2013-10-27 vvv
 #: note: Straßen zum und am BER vvv
 Ring am Flughafen BER: Genaue Wegführung? Einbahnstraßenregelungen? Werden Radfahrer die Straßen nutzen dürfen? Fahrbahnbeschaffenheit ist wahrscheinlich Asphalt.	?::inwork 18386,-4109 18386,-4109 18296,-4078 17832,-4267 18001,-4685 18517,-4502 18485,-4406 18451,-4303 18386,-4109
 Waltersdorf - BER: Genaue Wegführung? Wahrscheinlich asphaltiert	? 19676,-4036 18517,-4502
@@ -191,6 +191,7 @@ Leonorenstr.: Radwegführung wird geändert, teilweise mit Busspur zusammengelegt	
 #: by: http://www.berlin.de/ba-neukoelln/presse/archiv/20120427.1445.369492.html vvv
 #: XXX Radwegesanierung in Neukölln, geplant für 2013 und später vvv
 #: next_check: 2013-01-01 vvv
+#: last_checked: 2012-10-11
 Herrfurthstr.: eventuell wird hier asphaltiert, und vielleicht wird die Einbahnstraßenregelung aufgehoben?	?::projected 11472,7899 11573,7924 11647,7940 11671,7904 11713,7899 11748,7922 11754,7964 11823,7980 11979,8014
 Innstr.: eventuell wird hier asphaltiert, vielleicht auch der Zugang zum Elsensteg erleichtert?	?::projected 13107,8343 13166,8423 13217,8493 13262,8554 13301,8606 13314,8624 13366,8694
 Buckower Damm: eventuell werden die Radwege hier asphaltiert?	?::projected; 12560,4290 12640,4001 12655,3882 12667,3762 12673,3627 12673,3619 12684,3406 12687,3319 12701,2955 12695,2789 12693,2746 12694,2570 12694,2544 12694,2514
@@ -347,10 +348,10 @@ Kletterrosenweg	?::projected 21382,149 21354,289
 #: XXX noch Bauarbeiten in Gange; Zufahrt zur Alten Brauerei befindet sich nun hier; die Situation nach den Bauarbeiten evaluieren...
 An der Barthschen Promenade: vielleicht wird die Straße in Zukunft sich hier befinden	?::projected 8954,8914 8814,8917
 # 
-#: last_checked: 2012-06-08
-#: next_check: 2012-10-15
+#: last_checked: 2012-10-11
+#: next_check: 2012-11-11
 #: XXX Bauarbeiten in Gange
-Am Sudhaus: wo genau wird die Straße verlaufen? Qualität?	? 12148,8174 12271,8197
+Am Sudhaus: wie wird die Qualität der Straße sein?	?::inwork 12134,8172 12282,8204
 # 
 #XXX del --- mehr Radweg kann wegen Platzmangels wahrscheinlich nicht mehr entstehen... --- #: by: http://www.berlin.de/ba-pankow/presse/archiv/20100430.1155.294011.html --- #: next_check: 2011-10-01 --- #: last_checked: 2011-08-28 --- Blankenburger Chaussee: Radwege werden angelegt	?::inwork 15154,22370 15271,22527 15357,22641 15428,22736
 # 
@@ -2383,12 +2384,6 @@ Am Seegraben/Alexander-Meißner-Str.: Ampel in Vorbereitung	?::inwork 19894,-835
 #XXX del --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/44re.pdf/file --- An der Wasserstadt: wo genau befindet sich dieser Rad- und Fußweg?	? -2484,16835 -2476,16742
 #XXX del #: XXX fehlt in Berlin.coords.data --- existiert nicht? --- Pechnelkenpfad: Qualität? Wo liegt die Straße genau?	? 16078,3503 16125,3545
 # 
-#: XXX fehlt in Berlin.coords.data
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/38re.pdf/file
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/04re.pdf/file
-#: XXX Privatstraße
-Via Tilia: Qualität? Wo liegt die Straße genau?	? -7384,-970 -7326,-1047
-# 
 #: by: http://www.potsdam.de/cms/beitrag/10071706/966975/
 Templiner Str.: gibt es in der Templiner Straße mittlerweile Radstreifen?	? -13062,-2901 -13155,-2913 -13381,-2943 -13481,-2956 -13718,-2991
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/01re.pdf/file
@@ -2736,14 +2731,6 @@ Niederstr. (Glienicke): Qualität östlich der Ottostr.?	? 3949,24718 4052,24731 4
 Am Sandkrug (Glienicke): Qualität im westlichen Abschnitt? Existiert eine Verbindung zur Straße Am Rosenanger?	? 3677,24705 3683,24666 3535,24626 3314,24544
 #: XXX östlicher Abschnitt: Gehwegplatten. Unsicherer Eintrag von Clemens Bley (meint er diesen Weg?): wassergebundene Decke
 Weg in der Cité Foch - Place Molière: Qualität? Gibt es tatsächlich eine Verbindung zur Place Molière (welcher Strang?)	? 4510,21506 4401,21476
-# 
-#:
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/26re.pdf/file?y=2012
-#: XXX fehlt in Berlin.coords.data (PLZ 13187)
-#: XXX Privatstraße
-#: last_checked: 2012-09-29
-#: next_check: 2013-01-01
-In den Floragärten: Qualität nach den Bauarbeiten?	?::inwork 9828,17659 10014,17646
 Egestorffstr. - Mauerweg: Qualität? Nachts beleuchtet?	? 9093,-1670 9083,-1991 9081,-2073
 Mauerweg - Birkholz/Diedersdorf: Qualität?	? 8412,-1979 8310,-2037 8100,-2471 8071,-3225
 Innerer Mauerweg: Qualität? Nachts beleuchtet?	? 9083,-1991 8412,-1979 8492,-1376
@@ -2937,3 +2924,16 @@ Boitzenburg - Hardenbeck: wurde der straßenbegleitende Radweg bereits realisiert
 #: by: Uckermark-Kurier
 #: XXX 2.7km Radweg auf  (Radweg "Spur der Steine", Templin - Fürstenwerder), Baubeginn Anfang 2009, Asphalt ca. 3m breit
 ehem. Bahndamm zwischen L15 undf K7332 bei Hardenbeck: wurde hier ein Radweg realisiert? Ist der Radweg durchgängig asphaltiert? Wo genau befindet sich der Radweg (GPS-Track)?	?::inwork 16377,90072 15782,90862 15738,90942 15410,92053 15661,93732 15688,93829 15748,93928 15841,94009 16435,94298 17677,94900 17796,95008 17912,95192 18001,95435 18507,96268 18676,96867 18954,97944 19022,98128 19442,99078 19582,99411
+# 
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/26re.pdf/file?y=2012
+#: XXX fehlt in Berlin.coords.data (PLZ 13187)
+#: XXX Privatstraße
+#: last_checked: 2012-09-29
+#: next_check: 2013-01-01
+In den Floragärten: Ist die Straße bereits fertiggestellt? Qualität? Ist die Straße verkehrsberuhigt?	?::inwork 9828,17659 10014,17646
+# 
+#: XXX fehlt in Berlin.coords.data
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/38re.pdf/file
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/04re.pdf/file
+#: XXX Privatstraße
+Via Tilia: Qualität? Wo liegt die Straße genau (GPS-Track?)?	? -7518,-1175 -7548,-1097 -7487,-1056 -7271,-1102

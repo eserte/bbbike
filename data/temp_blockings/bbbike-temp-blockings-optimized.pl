@@ -1211,15 +1211,7 @@ userdel	q3::inwork 10893,14705 11101,14768
        undef,
        undef,
        undef,
-       {
-         'until' => 1349877000,
-         'text' => 'Kastanienallee (Rosenthal): Bauarbeiten, zwischen Friedrich-Engels-Str. und Eschenallee in Richtung Osten gesperrt, bis Mitte Oktober 2012',
-         'from' => 1336057200,
-         'id' => 2343,
-         'data' => 'userdel	q4::inwork; 8900,20601 9025,20611 9161,20622 9174,20623 9295,20632 9460,20644
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => undef,
@@ -1340,12 +1332,14 @@ userdel	2::inwork 8263,10349 8315,10347 8333,10167 8360,10133
          'type' => 'handicap'
        },
        {
-         'until' => undef,
+         'source_id' => 'INKO_114376',
+         'until' => 1350054000,
          'text' => 'Adalbertstr.: Fahrbahn in Richtung Kottbusser Tor gesperrt',
-         'from' => undef,
+         'from' => 1342594800,
          'id' => 2369,
-         'data' => '#: last_checked: 2012-09-19
-#: next_check: 2012-10-20
+         'data' => '#: last_checked: 2012-10-11
+#: next_check: 2012-10-12
+#: XXX see also Adalbertstr. (Kreuzberg): Leitungsarbeiten, Fahrtrichtung gesperrt (bis Mitte 10/12) Richtung Kottbusser Tor zwischen Oranienstr. und Kottbusser Tor, 19.07.2012 09:00 Uhr bis 12.10.2012 17:00 Uhr¦INKO_114376¦http://asp.vmzberlin.com/VMZ_LSBB_MELDUNGEN_WEB/Meldungskarte.jsp?back=true&map=true&x=52.50035&y=13.41862&zoom=13&meldungId=INKO_114376
 userdel	q4::inwork; 11389,10463 11393,10390
 ',
          'type' => 'handicap'
@@ -1450,21 +1444,12 @@ userdel	q4::inwork; 10870,14689 10893,14705
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'INKO_115461',
-         'until' => 1349964000,
-         'text' => 'Eisenacher Str. (Tempelhof): Baustelle, Richtung Richtung Rixdorfer Str. zwischen Mariendorfer Damm und Kosleckstr. gesperrt, 24.09.2012 07:00 Uhr bis 11.10.2012 16:00 Uhr ',
-         'from' => 1348376400,
-         'id' => 2386,
-         'data' => 'userdel	q4::inwork; 9277,4664 9405,4667 9494,4658 9695,4638 10010,4606
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        {
          'source_id' => 'INKO_115090',
-         'until' => 1350136800,
+         'until' => 1350482400,
          'text' => 'Roelckestr. (Weißensee): Baustelle, Straße zwischen Rennbahnstr. und Amalienstr. bis Mitte Oktober 2012 gesperrt ',
          'from' => 1348981200,
          'id' => 2389,
@@ -1479,6 +1464,16 @@ userdel	q4::inwork; 10870,14689 10893,14705
          'from' => 1348981200,
          'id' => 2390,
          'data' => 'userdel	q4::inwork; -2960,13203 -2728,13269 -2706,13291
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_019272',
+         'until' => undef,
+         'text' => 'Friedrich-Engels-Str. (Rosenthal) Richtung Märkisches Viertel zwischen Platananenstr. und Nordendstr. Baustelle, Fahrtrichtung gesperrt',
+         'from' => undef,
+         'id' => 2391,
+         'data' => 'userdel	q4::inwork; 9355,19789 9333,19853 9300,19949 9266,20048 9235,20125 9149,20336
 ',
          'type' => 'handicap'
        }
