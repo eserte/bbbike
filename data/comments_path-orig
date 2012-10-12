@@ -50,7 +50,7 @@ Zugang durch Betonabsperrung	CP2; 21222,12501 21190,12515
 am Gartenbauamt abbiegen	CP2; 7663,11946 7570,11855
 Schillerstr. Richtung Ernst-Reuter-Platz: zun‰chst linken Gehweg bis zur Ampel am Ernst-Reuter-Platz benutzen	CP; 4574,11587 4900,11626 4838,11697
 Hardenbergstr. - Schillerstr.: bereits an der Knesebeckstraﬂe auf den linken Gehweg wechseln	PI; 4919,11605 4900,11626 4574,11587
-Torstr. - Weydemeyerstr.: bereits am Mollknoten die Straﬂenseite wechseln	PI; 11155,13482 11108,13513 11079,13492
+Torstr. - Weydemeyerstr.: bereits am Mollknoten die Straﬂenseite wechseln	PI; 11160,13492 11111,13518 11079,13492
 Zossener - Brachvogelstr.: bereits an der Fuﬂg‰ngerampel Waterloo-Ufer Straﬂenseite wechseln	PI; 9865,10227 9858,10199 9884,10192
 #: XXX_prog: RL:ja, GPS:ja,nicht_LG (man bleibt rechts)
 Zossener - Brachvogelstr.: bereits an der Johanniterstr. vom Radstreifen auf den Gehweg wechseln	PI; 9837,10117 9858,10199 9884,10192
@@ -166,10 +166,8 @@ Falkenwalde - Eickstedt: nicht den Eickst‰dter Weg nehmen, sondern erst den n‰ch
 Spreeufer: durch das Tor der Kleingartenkolonie	CP2; -307,13279 -278,13322
 #: XXX_prog: RL:ja, GPS:nein
 LefËvrestr. - Bundesallee: Fuﬂg‰ngerfurt benutzen	CP; 5215,6643 5360,6642 5358,6725
-#: XXX_indoor: sollte in eine 3nocross+routing_helper-Kombination umgeschrieben werden, auﬂerdem auch die Verbindung Zolastr. - Straﬂburger sollte beachtet werden
-Straﬂburger Str. - Torstr.: Fuﬂg‰ngerfurt (Dr‰ngelgitter) ca. 50m westlich der Kreuzung benutzen	CP; 11060,13865 10902,13604 11108,13513
-#: XXX_indoor: sollte in eine 3nocross+routing_helper-Kombination umgeschrieben werden
-Torstr. - Straﬂburger Str.: Fuﬂg‰ngerfurt (Dr‰ngelgitter) ca. 50m westlich der Kreuzung benutzen	CP; 10746,13673 10902,13604 11060,13865
+#XXX del --- Versatz ist (mittlerweile?) weniger als 20m --- #: XXX_indoor: sollte in eine 3nocross+routing_helper-Kombination umgeschrieben werden, auﬂerdem auch die Verbindung Zolastr. - Straﬂburger sollte beachtet werden --- Straﬂburger Str. - Torstr.: Fuﬂg‰ngerfurt (Dr‰ngelgitter) ca. 50m westlich der Kreuzung benutzen	CP; 11052,13870 10898,13632 11111,13518
+#XXX del --- Versatz ist (mittlerweile?) weniger als 20m --- #: XXX_indoor: sollte in eine 3nocross+routing_helper-Kombination umgeschrieben werden --- Torstr. - Straﬂburger Str.: Fuﬂg‰ngerfurt (Dr‰ngelgitter) ca. 50m westlich der Kreuzung benutzen	CP; 10746,13673 10898,13632 11052,13870
 #### ^^^ REVIEW RL:ja/nein, GPS:ja/nein SOWIE CP;+Crossing name UNTIL HERE ^^^ ##############################
 K‰the-Niederkirchner-Str - Greifswalder Str.: Fuﬂg‰ngerfurt (Dr‰ngelgitter) ca. 50m nord-ˆstlich der Kreuzung benutzen	CP; 12148,13961 11991,14060 11946,13993
 Greifswalder Str. - K‰the-Niederkirchner-Str: Fuﬂg‰ngerfurt (Dr‰ngelgitter) ca. 50m nord-ˆstlich der Kreuzung benutzen oder schon an der Marienburger die Straﬂenseite wechseln	PI; 12077,14186 11991,14060 12148,13961

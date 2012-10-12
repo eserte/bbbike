@@ -157,11 +157,11 @@ Mulackstr.	1 10308,13575 10406,13543 10535,13509 10640,13471
 Kirchhofstr.	1 13188,7590 13117,7471 13027,7368
 Siegfriedstr.	1 12664,7013 12810,7047 12843,7093 12872,7134
 Prenzlauer Allee/Sredzkistr.	3nocross::ignrte 11662,14695 11642,14625 11582,14448
+Sredzkistr. -> Prenzlauer Allee: Prenzlauer Allee/Sredzkistr.	3::igndisp 11535,14688 11642,14625 11662,14695
+Sredzkistr. -> Christburger Str.: Prenzlauer Allee/Sredzkistr.	3::igndisp 11535,14688 11642,14625 11912,14486
 Prenzlauer Allee -> Christburger Str.: Prenzlauer Allee/Sredzkistr.	3::igndisp 11662,14695 11642,14625 11912,14486
-Sredzkistr. -> Prenzlauer Allee: Prenzlauer Allee/Sredzkistr.	3::igndisp 11526,14693 11642,14625 11662,14695
-Sredzkistr. -> Christburger Str.: Prenzlauer Allee/Sredzkistr.	3::igndisp 11526,14693 11642,14625 11912,14486
-Prenzlauer Allee -> Sredzkistr.: Prenzlauer Allee/Sredzkistr.	3::igndisp 11582,14448 11642,14625 11526,14693
-Christburger Str. -> Sredzkistr.: Prenzlauer Allee/Sredzkistr.	3::igndisp 11912,14486 11642,14625 11526,14693
+Prenzlauer Allee -> Sredzkistr.: Prenzlauer Allee/Sredzkistr.	3::igndisp 11582,14448 11642,14625 11535,14688
+Christburger Str. -> Sredzkistr.: Prenzlauer Allee/Sredzkistr.	3::igndisp 11912,14486 11642,14625 11535,14688
 Christburger Str. -> Prenzlauer Allee: Prenzlauer Allee/Sredzkistr.	3::igndisp 11912,14486 11642,14625 11582,14448
 Gärtnerstr.	1 14211,11552 14247,11681 14272,11775
 Wismarplatz	1 14395,11753 14416,11815
@@ -302,11 +302,11 @@ Hans-Otto-Str. -> Danziger Str.: Straßenbahntrasse	3::igndisp 12782,14300 12729,
 Hans-Otto-Str. -> Hans-Otto-Str.: Straßenbahntrasse	3::igndisp 12782,14300 12729,14227 12608,14070
 Danziger Str. -> Hans-Otto-Str.: Straßenbahntrasse	3::igndisp 12621,14313 12729,14227 12782,14300
 Straßenbahntrasse	3nocross::ignrte 11662,14695 11642,14625 11582,14448
+Sredzkistr. -> Prenzlauer Allee: Straßenbahntrasse	3::igndisp 11535,14688 11642,14625 11662,14695
+Sredzkistr. -> Christburger Str.: Straßenbahntrasse	3::igndisp 11535,14688 11642,14625 11912,14486
 Prenzlauer Allee -> Christburger Str.: Straßenbahntrasse	3::igndisp 11662,14695 11642,14625 11912,14486
-Sredzkistr. -> Prenzlauer Allee: Straßenbahntrasse	3::igndisp 11526,14693 11642,14625 11662,14695
-Sredzkistr. -> Christburger Str.: Straßenbahntrasse	3::igndisp 11526,14693 11642,14625 11912,14486
-Prenzlauer Allee -> Sredzkistr.: Straßenbahntrasse	3::igndisp 11582,14448 11642,14625 11526,14693
-Christburger Str. -> Sredzkistr.: Straßenbahntrasse	3::igndisp 11912,14486 11642,14625 11526,14693
+Prenzlauer Allee -> Sredzkistr.: Straßenbahntrasse	3::igndisp 11582,14448 11642,14625 11535,14688
+Christburger Str. -> Sredzkistr.: Straßenbahntrasse	3::igndisp 11912,14486 11642,14625 11535,14688
 Christburger Str. -> Prenzlauer Allee: Straßenbahntrasse	3::igndisp 11912,14486 11642,14625 11582,14448
 Dankwartstr.	1 17197,12488 17163,12291
 Ortliebstr.	1 17087,12501 17197,12488
@@ -858,6 +858,15 @@ Gormannstr. -> Torstr.: Straßenbahntrasse	3::igndisp 10480,13871 10463,13747 105
 Gormannstr. -> Gormannstr.: Straßenbahntrasse	3::igndisp 10445,13675 10463,13747 10480,13871
 Gormannstr. -> Torstr.: Straßenbahntrasse	3::igndisp 10445,13675 10463,13747 10287,13783
 Torstr. -> Gormannstr.: Straßenbahntrasse	3::igndisp 10287,13783 10463,13747 10480,13871
+Straßenbahntrasse	3nocross::ignrte 10746,13673 10898,13632 11111,13518 11160,13492
+Torstr. -> Zolastr.: Straßenbahntrasse	3::igndisp 11111,13518 10898,13632 10872,13570
+Zolastr. -> Straßburger Str.: Straßenbahntrasse	3::igndisp 10872,13570 10898,13632 11052,13870
+Zolastr. -> Torstr.: Straßenbahntrasse	3::igndisp 10872,13570 10898,13632 10746,13673
+Straßburger Str. -> Torstr.: Straßenbahntrasse	3::igndisp 11052,13870 10898,13632 11111,13518
+Straßburger Str. -> Zolastr.: Straßenbahntrasse	3::igndisp 11052,13870 10898,13632 10872,13570
+Torstr. -> Straßburger Str.: Straßenbahntrasse	3::igndisp 10746,13673 10898,13632 11052,13870
+Weydingerstr. -> Torstr.: Straßenbahntrasse	3::igndisp 11079,13492 11111,13518 10898,13632
+Torstr. -> Weydingerstr.: Straßenbahntrasse	3::igndisp 11160,13492 11111,13518 11079,13492
 Erlanger Str.: Barriere	3 12170,8548 12293,8494 12349,8464
 Erlanger Str.: Barriere	3 12349,8464 12293,8494 12170,8548
 Mittelstreifen	3nocross::ignrte 8438,8676 8334,8655 8371,8543

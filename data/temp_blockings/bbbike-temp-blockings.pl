@@ -5316,8 +5316,8 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_003157',
        data  => <<EOF,
-userdel	1::inwork 10923,13156 10781,13002
-userdel	1::inwork 10781,13002 10706,13043
+userdel	1::inwork 10923,13156 10776,13005
+userdel	1::inwork 10776,13005 10706,13043
 userdel	3::inwork 10755,13152 10923,13156 11033,13086 11139,13008
 EOF
      },
@@ -6470,7 +6470,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_003844',
        data  => <<EOF,
-userdel	2::temp 10738,12364 10673,12434 10644,12469 10601,12521 10437,12703
+userdel	2::temp 10738,12364 10673,12434 10644,12469 10601,12521 10431,12709
 EOF
      },
      { from  => 1161542089, # 2006-10-22 20:34
@@ -10672,7 +10672,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_007387',
        data  => <<EOF,
-userdel	1::inwork 10902,13604 10746,13673
+userdel	1::inwork 10898,13632 10746,13673
 EOF
      },
      { from  => 1197500400, # 2007-12-13 00:00
@@ -20086,13 +20086,12 @@ EOF
 	2::night 13002,11705 13042,11749
 EOF
      },
-     { from  => undef, # 
-       until => undef, # XXX
+     { from  => 1350075439, # undef, # 
+       until => 1350075443, # undef, # XXX
        text  => 'Sredzkistr.: Fahrbahn zwischen Rykestr. und Kollwitzstr. komplett gesperrt. Dauer der Sperrung ist unbekannt.',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2012-08-24
-userdel	q3::inwork 11436,14741 11526,14693
+userdel	q3::inwork 11436,14741 11535,14688
 EOF
      },
      { from  => 1335556039, # 2012-04-27 21:47
@@ -20444,7 +20443,7 @@ EOF
        text  => 'Christburger Str.: Fahrbahn an der Prenzlauer Allee gesperrt, Ausweichen auf Gehweg',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2012-09-01
+#: last_checked: 2012-10-12
 userdel	q3::inwork 11912,14486 11642,14625
 EOF
      },
@@ -20727,6 +20726,15 @@ EOF
        source_id => 'IM_019272',
        data  => <<EOF,
 userdel	q4::inwork; 9355,19789 9333,19853 9300,19949 9266,20048 9235,20125 9149,20336
+EOF
+     },
+     { from  => 1350252000, # 2012-10-15 00:00
+       until => 1351551600, # 2012-10-30 00:00
+       text  => 'Dörpfeldstraße: wegen Gleisbauarbeiten zwischen Anna-Seghers-Straße und Thomas-Müntzer-Straße als Einbahnstraße in Richtung Osten geführt (15.10.2012 bis 29.10.2012)',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20121012.1220.376513.html',
+       data  => <<EOF,
+userdel	q4::inwork; 20012,3532 20082,3578 20136,3609 20149,3617
 EOF
      },
     );

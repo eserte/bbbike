@@ -347,7 +347,7 @@ Suarezstr.: Kopfsteinpflaster	Q2 2766,10750 2845,10840 2921,10928 2987,11055 300
 Rönnestr.: Kopfsteinpflaster	Q2 2739,10645 3041,10732 3299,10816 3291,10853
 (Stuttgarter Platz/zur Leonhardtstr.): Kopfsteinpflaster	Q2 3291,10853 3344,10878
 Josef-Nawrocki-Str.: Asphalt	Q0 25552,4829 25554,4758 25691,4716 25724,4706 25802,4681
-Bötzowstr.: Kopfsteinpflaster	Q2 12161,13711 12280,13880 12361,13985 12423,14066 12486,14143
+Bötzowstr.: Kopfsteinpflaster	Q2 12161,13711 12189,13750 12280,13880 12361,13985 12423,14066 12486,14143
 Kohlhasenbrücker Str.: Kopfsteinpflaster	Q2 -7232,445 -7180,378 -7163,356 -7123,310
 Libauer Str.: Kopfsteinpflaster	Q2 13895,11663 13711,11458
 Niederbarnimstr.: Kopfsteinpflaster	Q2 14208,12235 14045,11965
@@ -373,7 +373,7 @@ Goethestr.: teilweise Kopfsteinpflaster, teilweise Verbundsteine	Q2 4312,11354 4
 Knesebeckstr.: Kopfsteinpflaster	Q2 4868,10934 4862,10881 4847,10677 4847,10589 4828,10356
 Mommsenstr.: Kopfsteinpflaster	Q2 4685,10689 4847,10677
 Linienstr.: Asphalt	Q0 10718,13625 10597,13647 10445,13675 10310,13692 10220,13691 10085,13684 9996,13678 9945,13669 9929,13660 9903,13646 9752,13575 9607,13507 9296,13397 9281,13374
-Linienstr.: mäßiger Asphalt	Q1 10777,13614 10878,13565 11059,13480 11104,13456
+Linienstr.: mäßiger Asphalt	Q1 10777,13614 10872,13570 11059,13480 11104,13456
 Mulackstr.: mäßiger Asphalt	Q1 10640,13471 10535,13509 10406,13543 10308,13575
 Rückerstr.: mäßiger Asphalt	Q1 10597,13647 10535,13509
 Knaackstr.: Asphalt	Q0 11229,14422 11316,14360 11331,14350 11358,14331 11380,14316 11418,14290 11506,14230
@@ -637,7 +637,7 @@ Leinestr.: Kopfsteinpflaster	Q2 12122,7553 11923,7516 11797,7492 11671,7464 1155
 Auguststr.: Kopfsteinpflaster	Q2 10307,13600 10263,13594 10142,13556 10049,13528 10026,13521
 (Kleine) Rosenthaler Str.: Asphalt	Q0 10310,13692 10307,13600 10308,13575 10311,13537
 Magazinstr.: Kopfsteinpflaster, OK	Q1 11558,12588 11329,12497
-Saarbrücker Str.: Asphalt, etwas brüchig	Q0 10895,13961 10924,13940 10969,13914 11060,13865 11134,13820 11250,13655
+Saarbrücker Str.: Asphalt, etwas brüchig	Q0 10895,13961 10924,13940 10969,13914 11052,13870 11134,13820 11250,13655
 Heinrich-Roller-Str.: Kopfsteinpflaster	Q2 11435,14023 11607,13928
 Corinthstr.: Kopfsteinpflaster	Q2 14608,10409 14447,10491
 (zum Mergenthalerring): holpriger Sandweg	Q2 14698,8371 14679,8349 14563,8243
@@ -656,7 +656,7 @@ Hanstedter Weg: Asphalt	Q0 6747,5010 6783,5011
 Hanstedter Weg: Kopfsteinpflaster	Q2 6783,5011 6908,5053 6923,5057
 Alboinstr.: Kopfsteinpflaster (auf Fahrbahn)	Q2 8182,6064 8191,6339 8194,6384 8199,6583 8200,6668
 Alboinstr.: Asphalt	Q0 8200,6668 8196,6775 8204,6958 8319,7084
-Sredzkistr.: Kopfsteinpflaster	Q2 11436,14741 11526,14693 11642,14625
+Sredzkistr.: Kopfsteinpflaster	Q2 11436,14741 11535,14688 11642,14625
 Hochspannungsweg: Asphalt	Q0 12694,2514 12606,2477
 Hochspannungsweg: fester feiner Kies bzw. Verbundsteine	Q1 12606,2477 12390,2379 12363,2367 11747,2091
 Hochspannungsweg: Asphalt	Q0 11747,2091 11626,2037 11373,1925 11343,1937
@@ -1520,7 +1520,7 @@ Busseallee: Kopfsteinpflaster	Q2 161,3062 71,3179
 Busseallee: Asphalt	Q0 71,3179 -5,3286 -156,3522 -219,3619
 Hallesches Tor: Beton	Q0 9593,10238 9599,10175
 Bebelplatz: Kopfsteinpflaster, OK	Q1 9795,12293 9869,12297
-Metzer Str.: Kopfsteinpflaster	Q2 10933,14122 11016,14081 11160,14002 11389,13887
+Metzer Str.: Kopfsteinpflaster	Q2 10933,14122 11016,14081 11156,14012 11389,13887
 Kollwitzplatz: Kopfsteinpflaster	Q2 11285,14515 11317,14564
 Ekhofplatz: Kopfsteinpflaster	Q2 23343,1454 23382,1429 23360,1390 23325,1418 23343,1454
 Ekhofstr.: Asphalt	Q0; 23158,1379 23243,1398
@@ -2041,7 +2041,8 @@ Margarete-Steffin-Str.: Asphalt	Q0 8315,13181 8406,13127 8525,12958 8559,12912 8
 Feldtmannstr.: asphaltiert	Q0 15239,17599 14754,17673
 (Kronprinzessinenweg/Havelchaussee - Schlachtensse): Waldweg, ca. 50m lange sandige Stelle, Wurzeln	Q3 -3296,3686 -3199,3592 -3398,3321 -3353,3298
 Am Schweizer Garten: Asphalt	Q0 11868,13646 12001,13863
-(Volkspark Friedrichshain): Parkweg	Q1 12161,13711 12141,13609 12122,13535
+(Volkspark Friedrichshain): Parkweg	Q1 12161,13711 12141,13609
+(Volkspark Friedrichshain): Parkweg	Q1 12141,13609 12129,13531 12111,13480 12060,13422
 Kadiner Str.: Asphalt	Q0 13520,11963 13599,12253
 Südtorweg: wassergebundene Decke	Q1 -503,11782 -750,11740
 Südtorweg: asphaltiert	Q0 -750,11740 -794,11732 -940,11708
@@ -8196,7 +8197,7 @@ Niedstr.: Asphalt	Q0 5364,7330 5641,7332 5810,7337 5902,7334
 Königswinterstr.: mäßiger Asphalt	Q1 19148,8406 19075,8590 18998,8784 18959,8870 18968,8959 18978,9014 18983,9044
 Schliemannstr.: Kopfsteinpflaster	Q2 11154,14985 11334,15248
 Schliemannstr.: grobes Kopfsteinpflaster	Q2 11368,15301 11502,15527
-Rykestr.: Kopfsteinpflaster	Q2 11331,14350 11374,14363 11446,14508 11526,14693 11609,14881
+Rykestr.: Kopfsteinpflaster	Q2 11331,14350 11374,14363 11446,14508 11535,14688 11609,14881
 Fritz-Kirsch-Zeile: schlechtes Kopfsteinpflaster	Q3 17644,7219 17684,7233 17845,6986
 Dillgesstr.: Asphalt	Q0 6218,3302 6308,3204 6407,3101 6451,3034 6482,3004 6511,2959 6593,2831
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
@@ -8346,7 +8347,7 @@ Kleeackerweg: Asphalt	Q0 25408,13023 25279,13095 25309,13170 25352,13308 25373,1
 Paul-Heyse-Str.: Kopfsteinpflaster	Q2 13100,13803 13217,13884 13292,13931
 Paul-Heyse-Str.: Asphalt	Q0 13292,13931 13385,13992 13485,14054
 Paul-Heyse-Str.: Wassergebundene Decke	Q1 13485,14054 13585,14117
-Belforter Str.: mäßiges Kopfsteinpflaster	Q2 11435,14023 11299,14112 11262,14136 11188,14184 11109,14235
+Belforter Str.: mäßiges Kopfsteinpflaster	Q2 11435,14023 11299,14112 11270,14131 11236,14153 11188,14184 11109,14235
 Spielhagenstr. Kopfsteinpflaster	Q2 3419,11756 3540,11771
 Wunnibaldstr.: Asphalt	Q0 19377,496 19495,774
 Tannenweg: Asphalt	Q0 -3023,17889 -3012,17940 -3028,18027 -3038,18063 -3041,18090
@@ -8775,7 +8776,7 @@ Weißwasserweg: Kopfsteinpflaster	Q2 2476,2987 2594,3009 2661,3021
 Mendelssohnstr.: Asphalt	Q0 11539,13425 11490,13463 11451,13495 11392,13528 11346,13441 11306,13386
 Mendelssohnstr.: Beton	Q0 11490,13463 11433,13389 11346,13441
 Mendelssohnstr.: Beton	Q0 11451,13495 11474,13524 11512,13493 11598,13598 11550,13642 11545,13690
-Keibelstr.: Asphalt	Q0 11275,13407 11201,13289 11108,13142
+Keibelstr.: Asphalt	Q0 11276,13408 11201,13289 11108,13142
 Hittorfstr.: Asphalt	Q1 2212,4600 2290,4709
 Hittorfstr: Kopfsteinpflaster	Q2 2290,4709 2381,4737 2442,4806 2469,4882 2516,4936 2587,4965
 Lefèvrestr.: Asphalt	Q0 4987,6902 4993,6812 5014,6752 5040,6706 5137,6651 5215,6643 5360,6642
@@ -8874,7 +8875,8 @@ Kiesstr.: Asphalt	Q0 6160,1896 6009,1796 5934,1811 5805,1841
 Kiesstr.: Asphalt	Q0 5805,1841 5752,1856 5701,1870 5685,1894
 Kiesstr.: schlechtes Kopfsteinpflaster	Q3 5642,1912 5612,1904 5491,1955
 Diedenhofer Str.: Kopfsteinpflaster	Q2 11188,14184 11316,14360
-Straßburger Str.: Kopfsteinpflaster	Q2 10902,13604 11060,13865 11160,14002 11262,14136
+Straßburger Str.: Kopfsteinpflaster	Q2 10898,13632 11052,13870 11156,14012 11239,14123 11270,14131
+Straßburger Str.: Kopfsteinpflaster	Q2 11239,14123 11236,14153
 Potsdamer Str. (Lichterfelde): schlechtes Kopfsteinpflaster, schmale asphaltierte Streifen	Q3 3193,3793 3375,3544 3492,3371 3599,3242 3646,3154 3646,3034 3644,2937 3641,2827
 Dessauerstr.: mäßiges Kopfsteinpflaster	Q2 6711,2496 6651,2479 6459,2364
 Dessauerstr.: Asphalt	Q0 6459,2364 6331,2281 6225,2209 6196,2204
@@ -12694,8 +12696,8 @@ Weinbergstr.: Asphalt	Q0 22829,5920 22766,5840
 (Volkspark Friedrichshain): Asphalt	Q0 12766,13621 12723,13598 12656,13576 12582,13519 12483,13418
 (Volkspark Friedrichshain): Asphalt	Q0 12483,13418 12586,13368
 Ernst-Zinna-Weg: Kopfsteinpflaster	Q2 12586,13368 12604,13338 12597,13323 12556,13265 12564,13216 12585,13118
-(Volkspark Friedrichshain): kleinteiliges Kopfsteinpflaster	Q1 12325,13148 12344,13157 12372,13198 12382,13262 12344,13320 12281,13325 12166,13349 12141,13341
-(Volkspark Friedrichshain): kleinteiliges Kopfsteinpflaster	Q1 12438,13387 12344,13320 12244,13240 12236,13229
+(Volkspark Friedrichshain): kleinteiliges Kopfsteinpflaster	Q1 12325,13148 12344,13157 12372,13198 12369,13252 12341,13309 12307,13329 12206,13326 12166,13349 12141,13341
+(Volkspark Friedrichshain): kleinteiliges Kopfsteinpflaster	Q1 12438,13387 12341,13309 12244,13240 12236,13229
 (Volkspark Friedrichshain): Asphalt	Q0 12336,13646 12141,13609 12023,13598
 (Volkspark Friedrichshain): Kopfsteinpflaster	Q2 12023,13598 12038,13685
 (Zufahrt Landsberger Allee): Gehwegplatten, Beton	Q0 13433,13346 13397,13426 13574,13505
@@ -13251,10 +13253,10 @@ Am Omnibushof: Asphalt	Q0 -4650,12257 -4412,12179
 (Mauerweg Spandau): wassergebundene Decke	Q1 -6431,11683 -6483,11710 -6527,11731 -6580,11771 -6609,11780 -6612,11796
 (Mauerweg Spandau): Asphalt	Q0 -6612,11796 -6930,12027 -6991,12080 -7182,12137 -7261,12299 -7342,12349 -7351,12547 -7294,12560 -7317,12618 -7344,12795 -7344,12854
 Milastr.: Asphalt mit Löchern	Q1 10917,15525 10768,15534
-Zolastr.: Asphalt	Q1 10902,13604 10878,13565
+Zolastr.: Asphalt mit Schäden	Q1 10898,13632 10872,13570
 Am Zwirngraben: Gehwegplatten, Kopfsteinpflaster	Q1 10349,13043 10185,12982 10117,12966
 Heidereutergasse: Asphalt	Q0 10427,12873 10390,12842
-(Rosenstr. - Karl-Liebknecht-Str.): Kopfsteinpflaster	Q2 10476,12829 10528,12785
+(Rosenstr. - Karl-Liebknecht-Str.): Kopfsteinpflaster	Q2 10476,12829 10525,12789
 Bauhofstr.: Asphalt mit Löchern	Q1 9810,12712 9671,12644
 Panoramastr.: Asphalt	Q0 10793,12906 10734,12850
 Spandauer Str. [Gehweg]: Gehwegplatten	Q0 10584,12507 10626,12455 10665,12413 10723,12346

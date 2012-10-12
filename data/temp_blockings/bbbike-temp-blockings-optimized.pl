@@ -1162,16 +1162,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10344,19181
 '
        },
        undef,
-       {
-         'until' => undef,
-         'text' => 'Sredzkistr.: Fahrbahn zwischen Rykestr. und Kollwitzstr. komplett gesperrt. Dauer der Sperrung ist unbekannt.',
-         'from' => undef,
-         'id' => 2322,
-         'data' => '#: last_checked: 2012-08-24
-userdel	q3::inwork 11436,14741 11526,14693
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1282,7 +1273,7 @@ userdel	q4::inwork 10379,14963 10366,14992
          'text' => 'Christburger Str.: Fahrbahn an der Prenzlauer Allee gesperrt, Ausweichen auf Gehweg',
          'from' => undef,
          'id' => 2361,
-         'data' => '#: last_checked: 2012-09-01
+         'data' => '#: last_checked: 2012-10-12
 userdel	q3::inwork 11912,14486 11642,14625
 ',
          'type' => 'handicap'
@@ -1331,19 +1322,7 @@ userdel	2::inwork 8263,10349 8315,10347 8333,10167 8360,10133
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'INKO_114376',
-         'until' => 1350054000,
-         'text' => 'Adalbertstr.: Fahrbahn in Richtung Kottbusser Tor gesperrt',
-         'from' => 1342594800,
-         'id' => 2369,
-         'data' => '#: last_checked: 2012-10-11
-#: next_check: 2012-10-12
-#: XXX see also Adalbertstr. (Kreuzberg): Leitungsarbeiten, Fahrtrichtung gesperrt (bis Mitte 10/12) Richtung Kottbusser Tor zwischen Oranienstr. und Kottbusser Tor, 19.07.2012 09:00 Uhr bis 12.10.2012 17:00 Uhr¦INKO_114376¦http://asp.vmzberlin.com/VMZ_LSBB_MELDUNGEN_WEB/Meldungskarte.jsp?back=true&map=true&x=52.50035&y=13.41862&zoom=13&meldungId=INKO_114376
-userdel	q4::inwork; 11389,10463 11393,10390
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        {
@@ -1474,6 +1453,16 @@ userdel	q4::inwork; 10870,14689 10893,14705
          'from' => undef,
          'id' => 2391,
          'data' => 'userdel	q4::inwork; 9355,19789 9333,19853 9300,19949 9266,20048 9235,20125 9149,20336
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20121012.1220.376513.html',
+         'until' => 1351551600,
+         'text' => 'Dörpfeldstraße: wegen Gleisbauarbeiten zwischen Anna-Seghers-Straße und Thomas-Müntzer-Straße als Einbahnstraße in Richtung Osten geführt (15.10.2012 bis 29.10.2012)',
+         'from' => 1350252000,
+         'id' => 2392,
+         'data' => 'userdel	q4::inwork; 20012,3532 20082,3578 20136,3609 20149,3617
 ',
          'type' => 'handicap'
        }

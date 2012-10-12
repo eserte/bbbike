@@ -730,6 +730,8 @@ Buchenweg	1s -2968,18038 -3028,18027 -3083,18010
 Eschenweg	1s -3306,17989 -3285,17968 -3224,17943
 Lindenweg	1s -3111,18105 -3076,18053 -3038,18063
 Küsterstr.	1 -624,15494 -593,15300 -569,15167
+Straßburger Str.	1 11270,14131 11239,14123 11236,14153
+Rykestr./Knaackstr.	1 11331,14350 11374,14363 11380,14316
 Am Neuen Garten	1 -12166,1384 -12212,1201 -12276,831 -12302,718
 Am Neuen Garten	1 -12332,585 -12582,127
 Hochstraße	3nocross::ignrte -11399,-1339 -11461,-1424 -11540,-1543
@@ -1276,9 +1278,11 @@ Bornholmer Str. -> Bergener Str.: Straßenbahntrasse	3::igndisp 10282,16522 10370
 Bergener Str. -> Bornholmer Str.: Straßenbahntrasse	3::igndisp 10382,16661 10370,16516 10458,16509
 Andersenstr. -> Bornholmer Str.: Straßenbahntrasse	3::igndisp 10295,16667 10282,16522 10370,16516
 Bornholmer Str. -> Andersenstr.: Straßenbahntrasse	3::igndisp 10197,16528 10282,16522 10295,16667
-Straßenbahntrasse	3nocross::ignrte 10437,12703 10528,12785 10699,12929
-Rosenstr. -> Karl-Liebknecht-Str.: Straßenbahntrasse	3::igndisp 10476,12829 10528,12785 10699,12929
-Karl-Liebknecht-Str. -> Rosenstr.: Straßenbahntrasse	3::igndisp 10437,12703 10528,12785 10476,12829
+Straßenbahntrasse	3nocross::ignrte 10431,12709 10525,12789 10695,12933 10733,12967
+Rosenstr. -> Karl-Liebknecht-Str.: Straßenbahntrasse	3::igndisp 10476,12829 10525,12789 10695,12933
+Karl-Liebknecht-Str. -> Rosenstr.: Straßenbahntrasse	3::igndisp 10431,12709 10525,12789 10476,12829
+Rosa-Luxemburg-Str. -> Karl-Liebknecht-Str.: Straßenbahntrasse	3::igndisp 10685,12966 10695,12933 10733,12967
+Karl-Liebknecht-Str. -> Rosa-Luxemburg-Str.: Straßenbahntrasse	3::igndisp 10525,12789 10695,12933 10685,12966
 Mittelstreifen	3nocross::ignrte 6502,9782 6512,9866 6514,9947
 Luitpoldstr. -> Martin-Luther-Str.: Mittelstreifen	3::igndisp 6463,9862 6512,9866 6514,9947
 Luitpoldstr. -> Martin-Luther-Str.: Mittelstreifen	3::igndisp 6611,9879 6512,9866 6502,9782
@@ -1554,8 +1558,8 @@ Küselstr. -> Zelterstr.: Straßenbahntrasse	3::igndisp 12058,15621 11967,15700 11
 Zelterstr. -> Prenzlauer Allee: Straßenbahntrasse	3::igndisp 11852,15765 11967,15700 11997,15834
 Zelterstr. -> Küselstr.: Straßenbahntrasse	3::igndisp 11852,15765 11967,15700 12058,15621
 Mittelstreifen mit Straßenbahn	3nocross::ignrte 11709,14856 11609,14881 11545,14897
-Danziger Str. -> Rykestr.: Mittelstreifen mit Straßenbahn	3::igndisp 11709,14856 11609,14881 11526,14693
-Rykestr. -> Danziger Str.: Mittelstreifen mit Straßenbahn	3::igndisp 11526,14693 11609,14881 11545,14897
+Rykestr. -> Danziger Str.: Mittelstreifen mit Straßenbahn	3::igndisp 11535,14688 11609,14881 11545,14897
+Danziger Str. -> Rykestr.: Mittelstreifen mit Straßenbahn	3::igndisp 11709,14856 11609,14881 11535,14688
 Mittelstreifen mit Straßenbahn	3nocross::ignrte 12317,14535 12128,14640 12025,14695
 Lilli-Henoch-Str. -> Danziger Str.: Mittelstreifen mit Straßenbahn	3::igndisp 12189,14767 12128,14640 12317,14535
 Danziger Str. -> Lilli-Henoch-Str.: Mittelstreifen mit Straßenbahn	3::igndisp 12025,14695 12128,14640 12189,14767
@@ -1682,11 +1686,11 @@ Heerstr. -> Südpark: schlecht passierbar	3::igndisp -4063,11805 -4009,11789 -400
 nicht passierbarer Mittelstreifens	3nocross::ignrte 2560,5044 2587,4965 2615,4885
 Thielallee -> Hittorfstr.: nicht passierbarer Mittelstreifens	3::igndisp 2615,4885 2587,4965 2516,4936
 Hittorfstr. -> Thielallee: nicht passierbarer Mittelstreifens	3::igndisp 2516,4936 2587,4965 2560,5044
-Straßenbahntrasse	3nocross::ignrte 11446,13294 11406,13321 11306,13386 11275,13407
+Straßenbahntrasse	3nocross::ignrte 11446,13294 11406,13321 11306,13386 11276,13408
 Wadzeckstr. -> Mollstr.: Straßenbahntrasse	3::igndisp 11379,13279 11406,13321 11306,13386
 Mollstr. -> Wadzeckstr.: Straßenbahntrasse	3::igndisp 11446,13294 11406,13321 11379,13279
 Mendelssohnstr. -> Mollstr.: Straßenbahntrasse	3::igndisp 11346,13441 11306,13386 11406,13321
-Mollstr. -> Mendelssohnstr.: Straßenbahntrasse	3::igndisp 11275,13407 11306,13386 11346,13441
+Mollstr. -> Mendelssohnstr.: Straßenbahntrasse	3::igndisp 11276,13408 11306,13386 11346,13441
 Straßenbahntrasse	3nocross::ignrte 11706,13635 11640,13551 11561,13451 11539,13425 11486,13350 11446,13294
 Mendelssohnstr. [Wohngebiet] -> Otto-Braun-Str.: Straßenbahntrasse	3::igndisp 11598,13598 11640,13551 11706,13635
 Otto-Braun-Str. -> Mendelssohnstr. [Wohngebiet]: Straßenbahntrasse	3::igndisp 11561,13451 11640,13551 11598,13598
@@ -1739,7 +1743,7 @@ Am Postbahnhof -> Mühlenstr.: Mittelstreifen ohne Überquerungshilfe	3::igndisp 1
 Mittelstreifen ohne Überquerungshilfe	3nocross::ignrte 12990,11006 13080,10956 13144,10921
 Hedwig-Wachenheim-Str. -> Mühlenstr.: Mittelstreifen ohne Überquerungshilfe	3::igndisp 13150,11101 13080,10956 13144,10921
 Mühlenstr. -> Hedwig-Wachenheim-Str.: Mittelstreifen ohne Überquerungshilfe	3::igndisp 12990,11006 13080,10956 13150,11101
-Mittelstreifen	3nocross::ignrte 12908,11058 12852,11100 12797,11141 12736,11186
+Mittelstreifen	3nocross::ignrte 12908,11058 12848,11093 12793,11132 12736,11186
 Straßenbahntrasse	3nocross::ignrte 21158,15885 21220,15741 21235,15641
 Raoul-Wallenberg-Str. -> Schönagelstr.: Straßenbahntrasse	3::igndisp 21158,15885 21220,15741 21602,15908
 Schönagelstr. -> Raoul-Wallenberg-Str.: Straßenbahntrasse	3::igndisp 21602,15908 21220,15741 21235,15641
@@ -1912,9 +1916,9 @@ Wilhelmstr. -> Kerstenweg: Mittelstreifen	3::igndisp -3803,13464 -3813,13404 -37
 Mittelstreifen	3nocross::ignrte -4882,12061 -4637,11982 -4500,11937
 Heerstr. -> Winzerstr.: Mittelstreifen	3::igndisp -4500,11937 -4637,11982 -4687,11885
 Winzerstr. -> Heerstr.: Mittelstreifen	3::igndisp -4687,11885 -4637,11982 -4882,12061
-Straßenbahntrasse	3nocross::ignrte 10437,12703 10387,12760 10360,12793
+Straßenbahntrasse	3nocross::ignrte 10431,12709 10387,12760 10360,12793
 Spreegasse -> Spandauer Str.: Straßenbahntrasse	3::igndisp 10309,12700 10387,12760 10360,12793
-Spandauer Str. -> Spreegasse: Straßenbahntrasse	3::igndisp 10437,12703 10387,12760 10309,12700
+Spandauer Str. -> Spreegasse: Straßenbahntrasse	3::igndisp 10431,12709 10387,12760 10309,12700
 Mittelstreifen	3nocross::ignrte 7814,13284 7840,13296 7880,13315
 Invalidenstr. -> Weg durch den Geschichtspark: Mittelstreifen	3::igndisp 7814,13284 7840,13296 7822,13323
 Weg durch den Geschichtspark -> Invalidenstr.: Mittelstreifen	3::igndisp 7822,13323 7840,13296 7880,13315

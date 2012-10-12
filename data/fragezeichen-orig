@@ -32,10 +32,10 @@ St¸lerstr.	?::projected 6825,11486 6716,11439 6692,11365 6679,11319 6630,11247 6
 #: next_check: 2012-11-30
 Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12128,14640 12317,14535 12425,14459 12621,14313 12729,14227 12901,14093 12975,13990 13037,13897 13100,13803 13166,13707 13225,13620 13228,13615 13330,13468
 # 
-#: last_checked: 2012-09-29 vvv
-#: next_check: 2012-11-30 vvv
+#: last_checked: 2012-10-12 vvv
+#: next_check: 2012-10-20 vvv
 Kniprodestr./Am Friedrichshain: wird die andere Richtung auch Radspuren bekommen?	?; 12403,13755 12571,13798 12640,13814 12695,13864 12784,13961 12901,14093
-Am Friedrichshain: wird es im s¸dlichen Abschnitt auch Radspuren geben?	? 12403,13755 12204,13719 12161,13711 12038,13685 11868,13646 11785,13625 11762,13619 11706,13635
+Am Friedrichshain: Radspuren werden (zumindest teilweise) markiert	?::inwork 12403,13755 12204,13719 12161,13711 12038,13685 11868,13646 11785,13625 11762,13619 11706,13635
 #: next_check ^^^
 #: last_checked ^^^
 # 
@@ -92,11 +92,11 @@ Markstr.: Radspuren werden markiert	?::inwork 7672,16878 7647,17037 7644,17054 7
 #
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/verwaltung/org/vermessung/b-plaene/b-plaene/B-V-3.jpg vvv
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/42re.pdf/file?y=2012 vvv
-#: last_checked: 2012-10-10 vvv
+#: last_checked: 2012-10-12 vvv
 #: next_check: 2012-10-25
-Planstraﬂe D: Straﬂe ist asphaltiert, weiﬂe Straﬂenschilder existieren	?::inwork 12797,11141 12866,11256
+Planstraﬂe D: Straﬂe ist asphaltiert, weiﬂe Straﬂenschilder existieren	?::inwork 12793,11132 12866,11256
 #: next_check: 2013-01-01
-Planstraﬂe C: Einfahrten existieren noch, aber statt einer Straﬂe ist hier nur ein Parkplatz	?::projected 12926,11224 12852,11100
+Planstraﬂe C: Einfahrten existieren noch, aber statt einer Straﬂe ist hier nur ein Parkplatz	?::projected 12926,11224 12848,11093
 #: last_checked ^^^
 #: by: ^^^
 #: by: ^^^
@@ -107,6 +107,7 @@ Planstraﬂe C: Einfahrten existieren noch, aber statt einer Straﬂe ist hier nur e
 Weg im Stadtgarten Moabit: Qualit‰t? Nachts beleuchtet?	?::inwork 5708,14077 5667,14212
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/40re.pdf/file?y=2012
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/43re.pdf/file?y=2012
 #: XXX Privatstraﬂe
 #: next_check: 2013-01-01
 Jean-Monnet-Str.: wo wird die Straﬂe entstehen?	?::inwork 7721,13881 7857,13817
@@ -240,14 +241,20 @@ G¸nter-Riesebrodt-Weg: Qualit‰t? Genaue Lage der Straﬂe?	?::inwork 19395,7901 19
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/10re.pdf/file?y=2012 vvv
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/16re.pdf/file?y=2012
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/26re.pdf/file?y=2012 (Hausnummern)
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/43re.pdf/file?y=2012
 #: XXX fehlen in Berlin.coords.data vvv
 #: last_checked: 2012-05-01 (noch keine Straﬂen sichtbar) vvv
 #: next_check: 2012-10-01 vvv
-Alfred-Siggel-Weg: Qualit‰t? Genaue Lage der Straﬂe? Schon fertiggestellt?	?::inwork 19307,7774 19327,7731
-Fritz-Thurm-Weg: Qualit‰t? Genaue Lage der Straﬂe? Schon fertiggestellt?	?::inwork 19262,7697 19287,7638
+Alfred-Siggel-Weg: Qualit‰t? Genaue Lage der Straﬂe? Schon fertiggestellt?	?::inwork 19425,7880 19516,7825
+Fritz-Thurm-Weg: Qualit‰t? Genaue Lage der Straﬂe? Schon fertiggestellt?	?::inwork 19440,7694 19369,7738 19277,7543
 #: next_check: ^^^
 #: last_checked ^^^
 #: XXX ^^^
+#: by: ^^^
+# 
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/43re.pdf/file?y=2012 vvv
+Verl‰ngerung der Georg-Stern-Str.: genaue Lage?	?::inwork 19353,7819 19466,7739 19497,7718
+Verl‰ngerung der Frieda-Rosenthal-Str.: genaue Lage?	?::inwork 19262,7567 19277,7543 19307,7495 19440,7694 19466,7739
 #: by: ^^^
 # 
 #: XXX diese Straﬂen existieren noch nicht
@@ -518,10 +525,20 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 # - Fragen nach genauen Routenverl‰ufen
 # - XXX_prog- und XXX_indoor-Eintr‰ge
 # 
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/43re.pdf/file?y=2012
+#: XXX fehlt bei Berlin.coords.data
+F¸nf Morgen: wo wird sich die Straﬂe befinden? Qualit‰t?	? 1455,5143 1410,4926
+# 
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/43re.pdf/file?y=2012
+#: XXX evtl. bei Aurelis Real Estate oder im Bezirksamt (Fehrbelliner Pl, Zimmer 3060, di/fr 9-12) nachfragen
+#: XXX fehlt bei Berlin.coords.data
+Rosensteinweg: wo befindet sich die Straﬂe?	? -319,10743 -110,10658
+# 
 #: XXX_indoor: Steigungsprobleme vvv
 Gr¸nheider Weg: keine nennenswerte Steigung, zus‰tzliche Hˆhenpunkte ausrechnen	? 30910,3824 30867,3806 30692,3733 30665,3720 30650,3698
 Weg H: Steigung m¸sste in die andere Richtung verlaufen!	? 27961,699 28083,592
 #: XXX_indoor ^^^
+Diedenhofer Str.: in der Mitte m¸sste noch ein Hˆhenpunkt erfasst werden	? 11316,14360 11188,14184
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/19re.pdf/file?y=2012 vvv
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/42re.pdf/file?y=2012 vvv
@@ -621,7 +638,6 @@ Anna-Seghers-Str.: wird es nach den Bauarbeiten eine bessere Straﬂenqualit‰t geb
 Poelchaustr. - Landsberger Allee: Qualit‰t der Verbindung? Nachts beleuchtet?	? 19525,14490 19527,14655 19580,14864 19864,15169 20260,15434
 Springpfuhlpark: Qualit‰t der Gehwegverbindung? Nachts beleuchtet?	? 19600,13531 19542,14454
 Gˆtzstr. - Albrechtstr.: liegt hier auch Verbundsteinpflaster?	? 9381,6277 9367,6160 9349,6075
-Rykestr./Knaackstr.: genaue Ausschilderung pr¸fen	? 11380,14316 11374,14363 11331,14350
 # 
 #: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/bauenundstadtentwicklung/stadtplanungsamt/ag1/anlage_1e_ma__nahmenkatalog.pdf?start&ts=1312523702&file=anlage_1e_ma__nahmenkatalog.pdf vvv
 #: XXX Befahrbarkeit soll laut Maﬂnahmenkatalog verbessert werden
