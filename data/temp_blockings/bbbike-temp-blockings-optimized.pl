@@ -1419,7 +1419,7 @@ userdel	q4::inwork; 10870,14689 10893,14705
          'text' => 'Sanierung der Rheinsteinstraße zwischen Zwieseler Str. und Königswinterstraße, Teile der Fahrbahn sind gesperrt, vom 24. September bis zum 14. Dezember 2012 ',
          'from' => 1348437600,
          'id' => 2385,
-         'data' => 'userdel	q4::inwork 18998,8784 19078,8817 19120,8835 19173,8857 19316,8933 19510,9035 19629,9094
+         'data' => 'userdel	q4::inwork 18998,8784 19078,8817 19120,8835 19169,8856 19316,8933 19510,9035 19629,9094
 ',
          'type' => 'handicap'
        },

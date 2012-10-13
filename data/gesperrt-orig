@@ -137,8 +137,8 @@ Bethaniendamm	1 12055,11331 12012,11235 11950,11157 11845,11095 11816,11084 1164
 Engeldamm	1 11473,11180 11656,11106 11800,11118 11921,11185 12026,11348
 Pannierstr.	1 12202,8895 12242,8972
 #: note: linker Gehweg für Radfahrer in Gegenrichtung offen, zumindest existiert mindestens ein entsprechendes Schild; allerdings ist der Gehweg eng und hat überwiegend nur mäßige Qualität
-Stolzenfelsstr.	1s:q2 19436,8183 19423,8146 19333,8165 19171,8280 18949,8437 18787,8540 18722,8582
-#XXX del --- Dönhoffstr.	1 18726,8633 18609,8717 18514,8773 18447,8818 18372,8869 18296,8920 18201,8984 18136,9072
+Stolzenfelsstr.	1s:q2 19447,8175 19400,8147 19333,8165 19171,8280 18949,8437 18787,8540 18731,8577
+#XXX del --- Dönhoffstr.	1 18726,8633 18609,8717 18514,8773 18451,8823 18375,8874 18296,8920 18221,8978 18161,9029 18136,9072
 Bersarinplatz	1 13742,12538 13698,12544 13678,12571 13686,12611 13695,12643 13727,12642 13747,12642 13767,12626 13761,12578 13742,12538
 Petersburger Platz	1 13470,12990 13559,12779
 Dernburgstr.	1 2498,10665 2378,10677 2333,10710 2252,11037
@@ -185,7 +185,8 @@ Anzengruberstr.	1 12865,8346 12689,8289
 Nalepastr. am Rundfunkgebäude	2 17076,8443 17059,8097
 Kirchstr.	1 22196,4847 22240,4768 22246,4711 22284,4653 22314,4604
 Kietzer Str.	1s:q3 22372,4496 22383,4470
-Ontarioseestr.	1 18552,10135 18577,10023 18408,10041 18339,10048
+#XXX del --- hier keine Einbahnstraße, nur eine Sackgasse --- Ontarioseestr.	1 18552,10135 18577,10023
+Ontarioseestr.	1 18577,10023 18408,10041 18339,10048
 Degnerstr. (außer Tram)	1 16448,15593 16475,15659
 Henriette-Herz-Platz	1 10371,13006 10312,12982 10255,12959
 Savignyplatz	1 4921,11017 4920,10933 4868,10934 4817,10943 4827,11025 4835,11092 4880,11088 4926,11081 4921,11017
@@ -252,7 +253,7 @@ Pintschstr.	1 13339,13196 13435,12973
 #XXX del! --- Wolliner Str.	1 10405,14425 10320,14608
 Splanemannstr.	1 18301,9946 18389,9925 18408,10041 18403,10077
 Burgherrenstr.	1 8969,8640 9076,8783
-Travestr.	1 14835,11840 14897,11801 14977,11754
+Travestr.	1 14835,11840 14897,11801 14981,11751
 Müggelstr.	1 14897,11801 14965,11921
 Schmollerplatz/str.	1 13244,9410 13184,9340 13209,9325
 Isarstr.	1s:q4 12349,8464 12368,8356
@@ -334,7 +335,7 @@ Moränenweg	1 3208,21425 3295,21202
 Graacher Str.	1 14672,17085 14533,17084
 #: by: Katja [AM]
 Wehlener Str.	1 14673,17003 14535,17003
-Riastr.	1 18247,9158 18201,8984
+Riastr.	1 18247,9158 18221,8978
 #: by: Corinna Orth:
 Karl-Bonhoeffer-Nervenklinik: für Unbefugte nicht befahrbar, Strafvollzug	2 4997,19849 5021,19840 5077,19654 5111,19656 5183,19454 5239,19274 5429,19165
 Schöneberger Südgelände: Radfahren verboten, Eintritt 1 Euro	2 7605,7109 7621,7105 7655,7096 7666,7093
@@ -391,7 +392,7 @@ Talstr.	1 11776,16753 11825,16666
 #: note: Camillo Krawczyk meint: auch für Radfahrer
 #: confirmed_by: MichaelM (Regelung für alle gleich)
 Scharfestr.	1 758,3417 935,3430
-Junker-Jörg-Str.	1 18545,9395 18511,9185 18471,8957 18447,8818
+Junker-Jörg-Str.	1 18545,9395 18511,9185 18471,8957 18451,8823
 Walter-Felsenstein-Str.	1 20459,16697 20617,16614 20767,16903
 (Raoul-Wallenberg-Str. - Walter-Felsenstein-Str.)	1 20394,16162 20487,16392
 #: by: Monika Weber-Jeremias (auch für Radfahrer)
@@ -412,7 +413,7 @@ Amfortasweg	1 5214,4445 5173,4471 5144,4498 5067,4434 5150,4345
 Hüsung	1 13324,4784 13400,4788 13468,4766
 Hüsung	1s 13468,4766 13397,4762 13324,4784
 #: by: Christoph Winkelmann:
-Karl-Egon-Str.	1 18372,8869 18406,9052 18430,9199 18457,9343
+Karl-Egon-Str.	1 18375,8874 18406,9052 18430,9199 18457,9343
 (Landsberger Allee - Georg-Knorr-Str.)	1 19169,15015 19314,15059 19364,15045
 #: by: Bosshold, Martin:
 Marschnerstr.	1 4629,3916 4634,4053
@@ -572,7 +573,7 @@ Steilpfad	1s:q3 3375,21230 3280,21477
 Jebensstr.	1 5587,11397 5459,11135
 Breitenbachplatz	1 4107,6718 4074,6681 3983,6599 3925,6604 3938,6651 4021,6729 4061,6753
 Südwestkorso	1 4061,6753 4206,6820
-Südwestkorso	1 4206,6820 4107,6718
+Südwestkorso	1 4206,6820 4125,6763 4107,6718
 Kleine Markusstr. - Krautstr.	1 12021,12066 11937,12127 11967,12042 12005,12018
 Schönstedtstr.	1 12540,8458 12649,8535
 #XXX del --- Eckertstr.	1 13608,12547 13522,12748
@@ -973,6 +974,12 @@ Lindenweg	1s:q3 -3111,18105 -3076,18053 -3038,18063
 Küsterstr.	1 -624,15494 -593,15300 -569,15167
 Straßburger Str.	1 11270,14131 11239,14123 11236,14153
 Rykestr./Knaackstr.	1 11331,14350 11374,14363 11380,14316
+Waldowallee	1 18875,9570 18899,9513
+Waldowallee	1 18899,9513 18875,9517
+Alfred-Kowalke-Str.	1 18027,11244 18059,11256 18179,11278 18229,11256
+Alfred-Kowalke-Str.	1 18229,11256 18202,11253 18061,11240 18027,11244
+Wittenbergplatz	1 6171,10657 6228,10646 6292,10627 6353,10583
+Wittenbergplatz	1 6353,10583 6268,10588 6216,10614 6171,10657
 ######################################################################
 #
 # Potsdam
@@ -1236,7 +1243,7 @@ Alt-Kaulsdorf: Mittelstreifen	3nocross 22484,11270 22756,11268 22937,11265
 Alt-Kaulsdorf: Mittelstreifen	3nocross 23101,11261 23362,11263 23447,11264 23648,11265
 Alt-Mahlsdorf: Mittelstreifen	3nocross 24175,11265 24019,11264 23848,11264 23648,11265
 Marienfelder Chaussee: Mittelstreifen	3nocross 11002,1211 11155,1273 11198,1291
-Mahlsdorfer Str.: Straßenbahntrasse	3nocross 22539,6258 22645,6431 22682,6495
+Mahlsdorfer Str.: Straßenbahntrasse	3nocross 22539,6258 22645,6431 22675,6498
 Kissingenstr.: Mittelstreifen	3nocross 11023,17878 11047,17883 11113,17895
 #: note: ^^^
 #: by: Tobias (Lung)
@@ -1320,6 +1327,7 @@ Lützowplatz: unbequem passierbarer Mittelstreifen	3nocross 6880,11110 6882,11061
 Brandenburgische Str.: Tunneleinfahrt Adenauerplatz	3nocross 3852,10236 3874,10153 3906,10035 3930,9919
 Treskowallee: Straßenbahntrasse	3nocross 18809,9133 18790,9018 18770,8898
 Treskowallee: Straßenbahntrasse	3nocross 18010,7133 18086,7243 18382,7724
+Treskowallee: Straßenbahntrasse	3nocross 18413,7774 18570,8025 18657,8163
 Bundesallee: unbequem passierbarer Mittelstreifen	3nocross 5463,9961 5464,9914 5467,9866
 Marzahner Kreuz: Linksabbiegen nicht möglich	3nocross 19694,15141 19738,15143 19852,15201
 Marzahner Kreuz: Linksabbiegen nicht möglich	3nocross 19681,15405 19582,15221 19506,15002 19466,14910 19422,14793
@@ -1389,7 +1397,7 @@ Sonnenallee: unbequemes Passieren des Mittelstreifens (parkende Autos)	3nocross 
 Sonnenallee: Mittelstreifen	3nocross 13277,8211 13459,8072 13474,8060
 Mühlendamm: unbequemes Passieren des Mittelstreifens	3nocross 10675,12280 10659,12259 10625,12206 10574,12131
 Mühlendamm: unbequemes Passieren des Mittelstreifens	3nocross 10675,12280 10700,12315 10723,12346 10738,12364
-Kurfürstendamm: unbequemes Passieren des Mittelstreifens (Bordsteine)	3nocross 5229,10716 5351,10760 5484,10810
+Kurfürstendamm: unbequemes Passieren des Mittelstreifens (Bordsteine)	3nocross 5229,10716 5351,10760 5475,10808
 Möllendorffstr.: Mittelstreifen mit Straßenbahn	3nocross 15420,12178 15443,12222 15480,12306 15508,12367
 Müllerstr.: Zaun auf dem Mittelstreifen	3nocross 6781,16026 6914,15908 6936,15888 7043,15793
 Indira-Gandhi-Str.: Straßenbahntrasse	3nocross 14597,15970 14609,15921 14650,15750
@@ -2147,6 +2155,10 @@ Drängelgitter	BNP:3::trailer=10 49739,-90894
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: last_checked: 2012-10-13
+#: next_check: 2013-02-01
+Carlsgarten - Wuhlheide: wegen Bauarbeiten Durchfahrtsmöglichkeit zweifelhaft; evtl. wird danach die Wegsituation komplett anders aussehen	2:inwork 19456,7956 19549,7826
+# 
 #: last_checked: 2012-09-30
 #: next_check: 2013-02-01
 Alt-Moabit - Invalidenstr.: wegen Bauarbeiten für die Straßenbahnanbindung gesperrt	2:inwork 7443,13008 7416,13058
@@ -2322,7 +2334,7 @@ Drängelgitter	BNP:5 4386,6288
 Drängelgitter	BNP:5 4351,6307
 Heimstättenweg (kein öffentlicher Verkehr)	2 4355,6207 4323,6131 4268,6154
 Markobrunner Str.	1 4374,7016 4462,7137 4593,7167
-Deidesheimer Str.	1 4973,7531 4785,7518 4616,7563 4486,7597
+Deidesheimer Str.	1 4978,7530 4785,7518 4616,7563 4486,7597
 Landauer Str.	1 4578,7358 4786,7327
 Eschenstr. (Friedenau)	1 5069,7498 5148,7500 5188,7536
 (Zur Dillenburger Str.)	1 3837,6926 3964,6928 3981,6850
@@ -2531,11 +2543,12 @@ Walter-Friedrich-Str.	1 16428,25107 16333,25147 16292,25164 16261,25178 16172,25
 Groscurthstr.	1 16369,25230 16458,25193 16428,25107
 #: by: Martha Wimmer [AM]
 Sonnenallee	3nocross 14617,7243 14693,7168 14752,7108 14803,7056
-Treskowallee: Straßenbahntrasse	3nocross 18631,10167 18690,10016 18698,9996 18737,9901
-#XXX del --- Treskowallee: Straßenbahntrasse	3nocross 18800,9743 18763,9837 18737,9901
+Treskowallee: Straßenbahntrasse	3nocross 18631,10167 18694,10018 18703,9997 18742,9903
+#XXX del --- Treskowallee: Straßenbahntrasse	3nocross 18807,9746 18763,9837 18742,9903
 #: by: Christian Schweda [AM]
-Treskowallee: Straßenbahn	3nocross 18872,9568 18857,9606 18816,9705
-Treskowallee: Straßenbahn	3nocross 18800,9743 18816,9705 18857,9606
+#: confirmed_by: srt (und verlängert)
+Treskowallee: Straßenbahn	3nocross 18875,9517 18875,9570 18865,9608 18823,9708
+Treskowallee: Straßenbahn	3nocross 18807,9746 18823,9708 18865,9608
 #: by: Kay-Uwe Ludwig [AM] vvv
 Niehofer Str.	1 16942,16174 16815,16214 16692,16253
 Drängelgitter	BNP:10 17371,16194

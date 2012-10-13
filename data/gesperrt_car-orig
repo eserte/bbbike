@@ -17,7 +17,7 @@ Warschauer - Kopernikus	3 13696,11920 13651,11731 13895,11663
 Warschauer - Kopernikus	3 13597,11526 13651,11731 13467,11778
 Warschauer/Boxhagener	3nocross 13785,12292 13745,12118 13696,11920
 Oberbaum - Falckenstein/Gröben	3nocross 13082,10634 13178,10623 13206,10651 13305,10789
-Falckensteinstr. zur Oberbaumbrücke	3 13140,10546 13178,10623 13206,10651
+Falckensteinstr. zur Oberbaumbrücke	3 13136,10535 13178,10623 13206,10651
 Neue Bahnhof - NW	3 14879,11182 14918,11249 14799,11330
 Neue Bahnhof - N	3 14879,11182 14918,11249 15016,11431
 Neue Bahnhof - NE	3 14879,11182 14918,11249 14988,11130
@@ -99,7 +99,7 @@ Heinrich-Roller-Str. - Prenzlauer Allee	3 11607,13928 11435,14023 11389,13887
 Allerstr.	1 11879,7720 12055,7751
 Hiddenseer Str.	1 11657,15271 11828,15210
 Koserstr.	1 2950,6141 3112,6090 3118,6140 3209,6206 3309,6270
-Offenbacher Str.	1 4506,7734 4559,7672 4785,7609 5039,7627
+Offenbacher Str.	1 4506,7734 4559,7672 4785,7609 5045,7623
 Wassergasse	1 11034,11895 11022,11782
 Kienitzer Str.	1 12830,8031 12692,7996 12583,7974 12466,7946
 Alt-Mariendorf (Nord)	1 9065,3693 9106,3703 9275,3753 9410,3793 9731,3889
@@ -243,7 +243,7 @@ Zossener Str.: Straßenbahntrasse	3nocross 23080,15700 23218,15671 23411,15632 23
 #: note: nur temporär gültig
 Kleinmachnower Weg: Sa und So ist die Schranke an der Kreuzung Sachlebenstraße zu, für Kfz-Verkehr demnach gesperrt	2 269,-41 665,85 941,125 1345,184
 #: by: Omi2006@... [AM]
-Hentigstr.	1 18514,8773 18548,8942 18586,9172 18621,9404
+Hentigstr.	1 18518,8778 18548,8942 18586,9172 18621,9404
 #: by: Hubertus Fürther [AM]
 Grottewitzstr.	1 21933,152 22145,208
 Schlichtallee	3nocross 15639,10469 15758,10578 15982,10765
@@ -272,7 +272,7 @@ Saarstr.: Durchfahrt für Autofahrer per Poller gesperrt	3nocross 5966,6747 5896,
 #: by: rjoop:
 Putlitzstr.	1 6210,13939 6205,14216
 Bornitzstr.	1 15643,12875 15563,12860
-Treskowallee: Straßenbahntrasse	3nocross 18890,9529 18834,9256 18809,9133
+Treskowallee: Straßenbahntrasse	3nocross 18875,9570 18875,9517 18834,9256 18809,9133
 Washingtonplatz: nur für Taxis	2 8106,13130 7937,13126
 Ella-Trebe-Str.: nur für Taxis	2 7937,13126 7938,13150 7938,13302
 An der Wuhlheide: Straßenbahntrasse	3nocross 20352,5877 20428,5841 20536,5789
@@ -425,7 +425,7 @@ B110 nach Swinoujscie: kein Grenzübergang für Autos	2 62279,166179 62213,166173
 #: note: Luftbild
 Neuköllner Str.: Mittelstreifen	3nocross 16643,1460 16698,1392 16815,1278
 Storkower Str.: Mittelstreifen	3nocross 13151,14855 13110,14879 12812,15053
-Hönower Wiesenweg: nur für Anlieger und Radfahrer offen	2:Anlieger 17375,8847 17416,8767 17483,8644 17554,8458 17624,8353 17708,8316 17751,8284
+Hönower Wiesenweg: nur für Anlieger und Radfahrer offen	2:Anlieger 17380,8858 17416,8767 17483,8644 17554,8458 17620,8366 17704,8327 17753,8290
 #: note: Luftbild
 Mariendorfer Damm: Mittelstreifen	3nocross 9248,4904 9239,4980 9207,5185
 #: note: Luftbild
@@ -474,7 +474,7 @@ Eisenacher Str.	1 22886,15095 23116,15111
 #: note: Luftbild:
 Streitstr./Chamissostr.: Mittelstreifen	3nocross -3009,17090 -3017,16984 -3018,16974
 #: by: (URL existiert nicht mehr) http://www.berlin.de/ba-lichtenberg/presse/archiv/20081119.1415.114691.html
-Treskowallee/Rheinsteinstr.: Straßenbahntrasse	3nocross 18770,8898 18734,8682 18729,8650
+Treskowallee/Rheinsteinstr.: Straßenbahntrasse	3nocross 18770,8898 18734,8682 18733,8650
 #: by: anonymous
 #: confirmed_by: srt
 Lötzener Allee	1 574,10577 452,10669 474,10869 495,11090
@@ -536,7 +536,7 @@ Else-Lasker-Schüler-Str.: Poller	3 * 7245,10499 *
 #: by: anonymous
 #: confirmed_by: vito
 Steinbachstr.	1 19759,4160 19703,3979 19673,3888 19587,3801
-Südwestkorso: Mittelstreifen	3nocross 5083,7682 5066,7668 5045,7635
+Südwestkorso: Mittelstreifen	3nocross 5091,7676 5067,7652 5051,7631
 Dominicusstr.: Überqueren verboten	3nocross 6687,8385 6807,8309 6935,8208
 Schranke	3 9061,14050 8825,14401 8776,14364
 Schranke	3 8776,14364 8825,14401 9061,14050
@@ -573,7 +573,7 @@ Indira-Gandhi-Str.: Straßenbahntrasse	3nocross 14609,15921 14597,15970 14595,159
 #: confirmed_by: srt
 Lenther Steig	1 1022,14898 1037,14814 1042,14721
 Hauptstr./Wielandstr.: Mittelstreifen	3nocross 6150,7673 6083,7582 5955,7406
-Fehmarner Str.	1 6710,14776 6528,15000
+Fehmarner Str.	1 6709,14782 6528,15000
 Kaiserdamm: Mittelstreifen	3nocross 1960,11426 1834,11408 1625,11380
 #: by: Roland Mohrbacher vvv
 Paplitzer Str.	1 11027,-2448 11080,-2035
@@ -609,7 +609,7 @@ Neue Filandastr./Filandatr.	3nocross 5687,5486 5671,5389 5659,5313
 Müllerstr.: Mittelstreifen	3nocross 6019,16712 5937,16784 5900,16817 5777,16924
 Zobtener Str.: Durchfahrt gesperrt (Poller)	3 16734,9990 16539,10097 16353,10207 16148,10329
 Zobtener Str.: Durchfahrt gesperrt (Poller)	3 16148,10329 16353,10207 16539,10097 16734,9990
-Waldowallee - Am Carlsgarten: Durchfahrt gesperrt (Betonblöcke)	3 * 19504,8003 *
+Waldowallee - Am Carlsgarten: Durchfahrt gesperrt (Betonblöcke)	3 * 19509,7999 *
 #: by: MichaelM vvv
 Klapppfosten	3 -1612,2123 -1590,1985 -1592,1852
 Klapppfosten	3 -1592,1852 -1590,1985 -1612,2123
@@ -662,7 +662,7 @@ Ferdinand-Schultze-Str - Landsberger Allee	3 17794,14640 17848,14523 18057,14549
 Michelangelostr./Kniprodestr.	3 13875,15142 13830,15138 13838,15113
 Kurmärkische Str.	3 7413,10244 7429,10366 7337,10396
 Kurmärkische Str.	3 7337,10396 7429,10366 7444,10479
-Hentigstr.	1 18514,8773 18548,8942
+Hentigstr.	1 18518,8778 18548,8942
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110309.1150.334660.html (südlicher Abschnitt confirmed)
 Hentigstr.	1 18548,8942 18586,9172 18621,9404
 Oberwallstr.	1 9852,12409 9869,12297 9875,12257 9890,12161
@@ -778,7 +778,7 @@ Kapellensteig	1 936,14518 938,14457 937,14391
 Wattstr.	1 998,14516 998,14435 999,14390
 Handjerystr./Schmiljanstr.	3 5494,6960 5574,7018 5624,7113
 Handjerystr./Schmiljanstr.	3 5494,6960 5574,7018 5569,7022
-(Am Carlsgarten - Waldowallee)	2 19460,7954 19504,8003 19558,8064
+(Am Carlsgarten - Waldowallee)	2 19456,7956 19478,7967 19509,7999 19558,8064
 Straßenbahntrasse	3nocross -13456,500 -13436,595 -13433,693
 Straßenbahntrasse	3nocross -13433,693 -13432,782 -13429,1069
 Kutscherweg: Poller	3 * -13700,-106 *

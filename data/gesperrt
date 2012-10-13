@@ -119,7 +119,7 @@ Amtsgerichtsplatz	1 2987,11055 3049,11015 3033,10980 2981,10892 2921,10928 2987,
 Bethaniendamm	1 12055,11331 12012,11235 11950,11157 11845,11095 11816,11084 11640,11067 11458,11136
 Engeldamm	1 11473,11180 11656,11106 11800,11118 11921,11185 12026,11348
 Pannierstr.	1 12202,8895 12242,8972
-Stolzenfelsstr.	1s 19436,8183 19423,8146 19333,8165 19171,8280 18949,8437 18787,8540 18722,8582
+Stolzenfelsstr.	1s 19447,8175 19400,8147 19333,8165 19171,8280 18949,8437 18787,8540 18731,8577
 Bersarinplatz	1 13742,12538 13698,12544 13678,12571 13686,12611 13695,12643 13727,12642 13747,12642 13767,12626 13761,12578 13742,12538
 Petersburger Platz	1 13470,12990 13559,12779
 Dernburgstr.	1 2498,10665 2378,10677 2333,10710 2252,11037
@@ -162,7 +162,7 @@ Anzengruberstr.	1 12865,8346 12689,8289
 Nalepastr. am Rundfunkgebäude	2 17076,8443 17059,8097
 Kirchstr.	1 22196,4847 22240,4768 22246,4711 22284,4653 22314,4604
 Kietzer Str.	1s 22372,4496 22383,4470
-Ontarioseestr.	1 18552,10135 18577,10023 18408,10041 18339,10048
+Ontarioseestr.	1 18577,10023 18408,10041 18339,10048
 Degnerstr. (außer Tram)	1 16448,15593 16475,15659
 Henriette-Herz-Platz	1 10371,13006 10312,12982 10255,12959
 Savignyplatz	1 4921,11017 4920,10933 4868,10934 4817,10943 4827,11025 4835,11092 4880,11088 4926,11081 4921,11017
@@ -221,7 +221,7 @@ Aspenweg	1 -3288,17831 -3244,17883 -3224,17943
 Pintschstr.	1 13339,13196 13435,12973
 Splanemannstr.	1 18301,9946 18389,9925 18408,10041 18403,10077
 Burgherrenstr.	1 8969,8640 9076,8783
-Travestr.	1 14835,11840 14897,11801 14977,11754
+Travestr.	1 14835,11840 14897,11801 14981,11751
 Müggelstr.	1 14897,11801 14965,11921
 Schmollerplatz/str.	1 13244,9410 13184,9340 13209,9325
 Isarstr.	1s 12349,8464 12368,8356
@@ -290,7 +290,7 @@ Schwiegersteig	1 1134,14721 1130,14823 1112,14918
 Moränenweg	1 3208,21425 3295,21202
 Graacher Str.	1 14672,17085 14533,17084
 Wehlener Str.	1 14673,17003 14535,17003
-Riastr.	1 18247,9158 18201,8984
+Riastr.	1 18247,9158 18221,8978
 Karl-Bonhoeffer-Nervenklinik: für Unbefugte nicht befahrbar, Strafvollzug	2 4997,19849 5021,19840 5077,19654 5111,19656 5183,19454 5239,19274 5429,19165
 Schöneberger Südgelände: Radfahren verboten, Eintritt 1 Euro	2 7605,7109 7621,7105 7655,7096 7666,7093
 Schöneberger Südgelände: Radfahren verboten, Eintritt 1 Euro	2 7666,7093 7344,6104 7296,5872
@@ -324,7 +324,7 @@ Eschengraben	1 11755,17216 11778,17066 11783,17036 11831,16802 11776,16753
 Czarnikauer Str.	1 10613,16403 10449,16415 10225,16436
 Talstr.	1 11776,16753 11825,16666
 Scharfestr.	1 758,3417 935,3430
-Junker-Jörg-Str.	1 18545,9395 18511,9185 18471,8957 18447,8818
+Junker-Jörg-Str.	1 18545,9395 18511,9185 18471,8957 18451,8823
 Walter-Felsenstein-Str.	1 20459,16697 20617,16614 20767,16903
 (Raoul-Wallenberg-Str. - Walter-Felsenstein-Str.)	1 20394,16162 20487,16392
 Jugendweg	1 1184,14515 1059,14515 1037,14515 998,14516 936,14518 842,14518
@@ -337,7 +337,7 @@ Halbauer Weg	1 7720,3148 7719,3219 7734,3290 7753,3371
 Amfortasweg	1 5214,4445 5173,4471 5144,4498 5067,4434 5150,4345
 Hüsung	1 13324,4784 13400,4788 13468,4766
 Hüsung	1s 13468,4766 13397,4762 13324,4784
-Karl-Egon-Str.	1 18372,8869 18406,9052 18430,9199 18457,9343
+Karl-Egon-Str.	1 18375,8874 18406,9052 18430,9199 18457,9343
 (Landsberger Allee - Georg-Knorr-Str.)	1 19169,15015 19314,15059 19364,15045
 Marschnerstr.	1 4629,3916 4634,4053
 Wollankstr.	1 10027,18165 10054,18210
@@ -444,7 +444,7 @@ Steilpfad	1s 3375,21230 3280,21477
 Jebensstr.	1 5587,11397 5459,11135
 Breitenbachplatz	1 4107,6718 4074,6681 3983,6599 3925,6604 3938,6651 4021,6729 4061,6753
 Südwestkorso	1 4061,6753 4206,6820
-Südwestkorso	1 4206,6820 4107,6718
+Südwestkorso	1 4206,6820 4125,6763 4107,6718
 Kleine Markusstr. - Krautstr.	1 12021,12066 11937,12127 11967,12042 12005,12018
 Schönstedtstr.	1 12540,8458 12649,8535
 Erkelenzdamm	1s 11117,10326 11094,10261
@@ -732,6 +732,12 @@ Lindenweg	1s -3111,18105 -3076,18053 -3038,18063
 Küsterstr.	1 -624,15494 -593,15300 -569,15167
 Straßburger Str.	1 11270,14131 11239,14123 11236,14153
 Rykestr./Knaackstr.	1 11331,14350 11374,14363 11380,14316
+Waldowallee	1 18875,9570 18899,9513
+Waldowallee	1 18899,9513 18875,9517
+Alfred-Kowalke-Str.	1 18027,11244 18059,11256 18179,11278 18229,11256
+Alfred-Kowalke-Str.	1 18229,11256 18202,11253 18061,11240 18027,11244
+Wittenbergplatz	1 6171,10657 6228,10646 6292,10627 6353,10583
+Wittenbergplatz	1 6353,10583 6268,10588 6216,10614 6171,10657
 Am Neuen Garten	1 -12166,1384 -12212,1201 -12276,831 -12302,718
 Am Neuen Garten	1 -12332,585 -12582,127
 Hochstraße	3nocross::ignrte -11399,-1339 -11461,-1424 -11540,-1543
@@ -1057,9 +1063,9 @@ Frettchenweg -> Alt-Mahlsdorf: Mittelstreifen	3::igndisp 23853,11284 23848,11264
 Mittelstreifen	3nocross::ignrte 11002,1211 11155,1273 11198,1291
 Muschelkalkweg -> Marienfelder Chaussee: Mittelstreifen	3::igndisp 11120,1384 11155,1273 11198,1291
 Marienfelder Chaussee -> Muschelkalkweg: Mittelstreifen	3::igndisp 11002,1211 11155,1273 11120,1384
-Straßenbahntrasse	3nocross::ignrte 22539,6258 22645,6431 22682,6495
+Straßenbahntrasse	3nocross::ignrte 22539,6258 22645,6431 22675,6498
 Mahlsdorfer Str. -> Hoernlestr.: Straßenbahntrasse	3::igndisp 22539,6258 22645,6431 22509,6519
-Hoernlestr. -> Mahlsdorfer Str.: Straßenbahntrasse	3::igndisp 22509,6519 22645,6431 22682,6495
+Hoernlestr. -> Mahlsdorfer Str.: Straßenbahntrasse	3::igndisp 22509,6519 22645,6431 22675,6498
 Mittelstreifen	3nocross::ignrte 11023,17878 11047,17883 11113,17895
 Kissingenstr. -> Stubnitzstr.: Mittelstreifen	3::igndisp 11023,17878 11047,17883 11102,17942
 Stubnitzstr. -> Kissingenstr.: Mittelstreifen	3::igndisp 11102,17942 11047,17883 11113,17895
@@ -1339,6 +1345,7 @@ Treskowallee -> Bopparder Str.: Straßenbahntrasse	3::igndisp 18809,9133 18790,90
 Straßenbahntrasse	3nocross::ignrte 18010,7133 18086,7243 18382,7724
 Eichgestell -> Treskowallee: Straßenbahntrasse	3::igndisp 18186,7200 18086,7243 18010,7133
 Treskowallee -> Eichgestell: Straßenbahntrasse	3::igndisp 18382,7724 18086,7243 18186,7200
+Straßenbahntrasse	3nocross::ignrte 18413,7774 18570,8025 18657,8163
 unbequem passierbarer Mittelstreifen	3nocross::ignrte 5463,9961 5464,9914 5467,9866
 Regensburger Str. -> Pariser Str.: unbequem passierbarer Mittelstreifen	3::igndisp 5541,9923 5464,9914 5416,9928
 Pariser Str. -> Regensburger Str.: unbequem passierbarer Mittelstreifen	3::igndisp 5416,9928 5464,9914 5541,9923
@@ -1646,9 +1653,9 @@ Eiergasse -> Mühlendamm: unbequemes Passieren des Mittelstreifens	3::igndisp 106
 Mühlendamm -> Eiergasse: unbequemes Passieren des Mittelstreifens	3::igndisp 10675,12280 10700,12315 10671,12356
 Spandauer Str. [Gehweg] -> Mühlendamm: unbequemes Passieren des Mittelstreifens	3::igndisp 10665,12413 10723,12346 10738,12364
 Mühlendamm -> Spandauer Str. [Gehweg]: unbequemes Passieren des Mittelstreifens	3::igndisp 10700,12315 10723,12346 10665,12413
-unbequemes Passieren des Mittelstreifens (Bordsteine)	3nocross::ignrte 5229,10716 5351,10760 5484,10810
-Kurfürstendamm -> Meinekestr.: unbequemes Passieren des Mittelstreifens (Bordsteine)	3::igndisp 5484,10810 5351,10760 5329,10422
+unbequemes Passieren des Mittelstreifens (Bordsteine)	3nocross::ignrte 5229,10716 5351,10760 5475,10808
 Meinekestr. -> Kurfürstendamm: unbequemes Passieren des Mittelstreifens (Bordsteine)	3::igndisp 5329,10422 5351,10760 5229,10716
+Kurfürstendamm -> Meinekestr.: unbequemes Passieren des Mittelstreifens (Bordsteine)	3::igndisp 5475,10808 5351,10760 5329,10422
 Mittelstreifen mit Straßenbahn	3nocross::ignrte 15420,12178 15443,12222 15480,12306 15508,12367
 Deutschmeisterstr. -> Möllendorffstr.: Mittelstreifen mit Straßenbahn	3::igndisp 15350,12270 15443,12222 15480,12306
 Möllendorffstr. -> Vorfahrt am Rathaus Lichtenberg: Mittelstreifen mit Straßenbahn	3::igndisp 15508,12367 15480,12306 15531,12300
@@ -2168,7 +2175,7 @@ Metallstange	BNP:3:-72:trailer=10 -5082,11155
 Drängelgitter/Schranke	BNP:3:-194:trailer=10 -8113,13467
 Schranke	BNP:3:-27:trailer=10 -3441,13270
 Drängelgitter	BNP:3:4:trailer=10 -4760,13980
-Schranke	BNP:3:51:trailer=10 8828,13434
+Schranke	BNP:3:45:trailer=10 8828,13434
 Schranke	BNP:3:-96:trailer=10 8262,17361
 Schranke, enge Umfahrung	BNP:5:-6:trailer=15 8352,17285
 Schranke	BNP:3:-55:trailer=10 4347,21531
@@ -2286,7 +2293,7 @@ Schwingtor	BNP:5:-85:trailer=10 7366,8390
 Schwingtor	BNP:5:-49:trailer=10 7400,8273
 Schwingtor	BNP:5:-54:trailer=10 7289,8259
 Schranke, sehr enge Durchfahrt, nicht anhängertauglich	BNP:5:-135:trailer=no 14658,7513
-Schranke	BNP:3:51 8828,13434
+Schranke	BNP:3:45 8828,13434
 Drängelgitter an der Straßenbahntrasse	BNP:6:-154 14998,13623
 Drängelgitter	BNP:3:-74 25909,11844
 Schranke	BNP:3:-90 -3646,15717
@@ -2337,7 +2344,7 @@ Drängelgitter	BNP:5:34:trailer=10 14453,9929
 Drängelgitter mit asphaltierer Vorbeifahrmöglichkeit	BNP:2:39:trailer=4 14558,10082
 Drängelgitter mit asphaltierer Vorbeifahrmöglichkeit	BNP:2:41:trailer=4 14597,10129
 Drängelgitter	BNP:3:-153:trailer=no 12904,10141
-Drängelgitter	BNP:1:-154:trailer=3 12833,9998
+Drängelgitter	BNP:1:-149:trailer=3 12833,9998
 Schranke (Privatstr.)	BNP:5:-180 25039,5304
 Schranke	BNP:2:85:trailer=4 9907,11752
 Schranke	BNP:5:43:trailer=10 10112,11796
@@ -2396,6 +2403,7 @@ Schranke (lichte Breite ca. 120cm)	BNP:2:-53:trailer=8 14709,4307
 Schranke (lichte Breite ca. 100cm)	BNP:3:-45:trailer=10 15179,3901
 Tor	BNP:5:-57 26888,13976
 Drängelgitter	BNP:3:64:trailer=10 49739,-90894
+Carlsgarten - Wuhlheide: wegen Bauarbeiten Durchfahrtsmöglichkeit zweifelhaft; evtl. wird danach die Wegsituation komplett anders aussehen	2:inwork 19456,7956 19549,7826
 Alt-Moabit - Invalidenstr.: wegen Bauarbeiten für die Straßenbahnanbindung gesperrt	2:inwork 7443,13008 7416,13058
 Oberwallstr.: Bauarbeiten, komplett gesperrt	2:inwork 9890,12161 9875,12257
 Parkplatz des ehem. Möbelhauses ist eingezäunt	2:inwork 17010,14269 17060,14255 17221,14268
@@ -2434,7 +2442,7 @@ Drängelgitter	BNP:5:-241 4386,6288
 Drängelgitter	BNP:5:-56 4351,6307
 Heimstättenweg (kein öffentlicher Verkehr)	2 4355,6207 4323,6131 4268,6154
 Markobrunner Str.	1 4374,7016 4462,7137 4593,7167
-Deidesheimer Str.	1 4973,7531 4785,7518 4616,7563 4486,7597
+Deidesheimer Str.	1 4978,7530 4785,7518 4616,7563 4486,7597
 Landauer Str.	1 4578,7358 4786,7327
 Eschenstr. (Friedenau)	1 5069,7498 5148,7500 5188,7536
 (Zur Dillenburger Str.)	1 3837,6926 3964,6928 3981,6850
@@ -2748,19 +2756,23 @@ Groscurthstr.	1 16369,25230 16458,25193 16428,25107
 Sonnenallee	3nocross::ignrte 14617,7243 14693,7168 14752,7108 14803,7056
 Krebsgang -> Sonnenallee: Sonnenallee	3::igndisp 14792,7192 14693,7168 14752,7108
 Sonnenallee -> Krebsgang: Sonnenallee	3::igndisp 14617,7243 14693,7168 14792,7192
-Straßenbahntrasse	3nocross::ignrte 18631,10167 18690,10016 18698,9996 18737,9901
-Treskowallee -> Ontarioseestr.: Straßenbahntrasse	3::igndisp 18698,9996 18690,10016 18577,10023
-Ontarioseestr. -> Am Tierpark: Straßenbahntrasse	3::igndisp 18577,10023 18690,10016 18631,10167
-Richard-Kolkwitz-Weg -> Weg entlang der Bahnstrecke: Straßenbahntrasse	3::igndisp 18715,10003 18698,9996 18445,9887
-Treskowallee -> Weg entlang der Bahnstrecke: Straßenbahntrasse	3::igndisp 18737,9901 18698,9996 18445,9887
-Treskowallee -> Richard-Kolkwitz-Weg: Straßenbahntrasse	3::igndisp 18690,10016 18698,9996 18715,10003
-Weg entlang der Bahnstrecke -> Richard-Kolkwitz-Weg: Straßenbahntrasse	3::igndisp 18445,9887 18698,9996 18715,10003
-Weg entlang der Bahnstrecke -> Treskowallee: Straßenbahntrasse	3::igndisp 18445,9887 18698,9996 18690,10016
-Straßenbahn	3nocross::ignrte 18872,9568 18857,9606 18816,9705
-Treskowallee -> Rheinpfalzallee: Straßenbahn	3::igndisp 18816,9705 18857,9606 18931,9629
-Rheinpfalzallee -> Treskowallee: Straßenbahn	3::igndisp 18931,9629 18857,9606 18872,9568
-Straßenbahn	3nocross::ignrte 18800,9743 18816,9705 18857,9606
-Römerweg -> Treskowallee: Straßenbahn	3::igndisp 18994,9707 18816,9705 18857,9606
+Straßenbahntrasse	3nocross::ignrte 18631,10167 18694,10018 18703,9997 18742,9903
+Treskowallee -> Ontarioseestr.: Straßenbahntrasse	3::igndisp 18703,9997 18694,10018 18577,10023
+Ontarioseestr. -> Am Tierpark: Straßenbahntrasse	3::igndisp 18577,10023 18694,10018 18631,10167
+Richard-Kolkwitz-Weg -> Weg entlang der Bahnstrecke: Straßenbahntrasse	3::igndisp 18715,10003 18703,9997 18445,9887
+Treskowallee -> Weg entlang der Bahnstrecke: Straßenbahntrasse	3::igndisp 18742,9903 18703,9997 18445,9887
+Weg entlang der Bahnstrecke -> Richard-Kolkwitz-Weg: Straßenbahntrasse	3::igndisp 18445,9887 18703,9997 18715,10003
+Weg entlang der Bahnstrecke -> Treskowallee: Straßenbahntrasse	3::igndisp 18445,9887 18703,9997 18694,10018
+Treskowallee -> Richard-Kolkwitz-Weg: Straßenbahntrasse	3::igndisp 18694,10018 18703,9997 18715,10003
+Straßenbahn	3nocross::ignrte 18875,9517 18875,9570 18865,9608 18823,9708
+Waldowallee -> Treskowallee: Straßenbahn	3::igndisp 18899,9513 18875,9570 18875,9517
+Waldowallee -> Hönower Str.: Straßenbahn	3::igndisp 18899,9513 18875,9570 18765,9426
+Treskowallee -> Hönower Str.: Straßenbahn	3::igndisp 18875,9517 18875,9570 18765,9426
+Hönower Str. -> Treskowallee: Straßenbahn	3::igndisp 18765,9426 18875,9570 18865,9608
+Treskowallee -> Rheinpfalzallee: Straßenbahn	3::igndisp 18823,9708 18865,9608 18931,9629
+Rheinpfalzallee -> Treskowallee: Straßenbahn	3::igndisp 18931,9629 18865,9608 18875,9570
+Straßenbahn	3nocross::ignrte 18807,9746 18823,9708 18865,9608
+Römerweg -> Treskowallee: Straßenbahn	3::igndisp 18994,9707 18823,9708 18865,9608
 Niehofer Str.	1 16942,16174 16815,16214 16692,16253
 Drängelgitter	BNP:10:-99 17371,16194
 Orlamünder Weg	1 7035,1814 7119,1829 7174,1718 7195,1703 7214,1710 7242,1754 7258,1757 7277,1747 7332,1718
@@ -2971,7 +2983,7 @@ An den Kanalwiesen (Wendisch Rietz)	1 51857,-20420 51900,-20326 51916,-20240
 Kreuzung Sewanstr./Am Tierpark	1::igndisp 18647,10172 18631,10167
 Am Tierpark, linker Gehweg	1::igndisp 18715,10003 18647,10172
 Treskowallee, linker Gehweg	1::igndisp 18748,9922 18715,10003
-Kreuzung Gregoroviusweg/Treskowallee	1::igndisp 18737,9901 18748,9922
+Kreuzung Gregoroviusweg/Treskowallee	1::igndisp 18742,9903 18748,9922
 Alt-Friedrichsfelde, linker Gehweg	1::igndisp 18228,11656 18520,11685 18624,11712 18778,11742 19005,11767 19750,11730
 Alt-Friedrichsfelde, linker Gehweg	1::igndisp 18624,11712 18626,11742
 Landsberger Allee, linker Gehweg	1::igndisp 15430,14272 15256,14237
