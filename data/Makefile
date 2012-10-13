@@ -866,6 +866,7 @@ ${PERSISTENTTMPDIR}/fragezeichen-outdoor.bbd ${PERSISTENTTMPDIR}/.check_fragezei
 	echo -n > ${PERSISTENTTMPDIR}/fragezeichen-${doormode}-nextcheck.bbd~
 	echo "#: line_dash: 8, 5" >> ${PERSISTENTTMPDIR}/fragezeichen-outdoor.bbd~
 	echo "#: line_width: 5" >> ${PERSISTENTTMPDIR}/fragezeichen-outdoor.bbd~
+	echo "#: category_color.?: #cf5050" >> ${PERSISTENTTMPDIR}/fragezeichen-outdoor.bbd~
 	echo "#:" >> ${PERSISTENTTMPDIR}/fragezeichen-outdoor.bbd~
 	${MISCSRCDIR}/create_fragezeichen_nextcheck.pl \
 	    --today=2999-12-31 \
