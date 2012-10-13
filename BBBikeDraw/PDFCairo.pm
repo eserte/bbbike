@@ -201,9 +201,14 @@ sub draw_map {
 		    next if (!bbox_in_region($bbox, $self->{PageBBox}));
 
 		    my $dash_set;
-		    if ($cat_attribs && $line_dash{$cat_attribs}) {
-			$im->set_dash(@{ $line_dash{$cat_attribs} });
-			$dash_set = 1;
+		    if ($cat_attribs) {
+			if ($cat_attribs =~ $BBBikeDraw::tunnel_qr && $line_dash{'Tu'}) {
+			    $im->set_dash(@{ $line_dash{Tu} });
+			    $dash_set = 1;
+			} elsif ($line_dash{$cat_attribs}) {
+			    $im->set_dash(@{ $line_dash{$cat_attribs} });
+			    $dash_set = 1;
+			}
 		    }
 		    if ($is_area) {
 			$im->set_line_width(2);

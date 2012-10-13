@@ -348,7 +348,7 @@ sub draw_map {
 #	    } elsif ($cat !~ /^[SRU]0$/) { # Ausnahmen: in Bau
 	    next if $restrict && !exists $restrict->{$cat};
 	    next if (!$outline_brush{$cat} && !defined $outline_thickness{$cat});
-	    if ($cat_attribs && $cat_attribs eq 'Tu' && $cat =~ m{^W}) {
+	    if ($cat_attribs && $cat_attribs =~ $BBBikeDraw::tunnel_qr && $cat =~ m{^W}) {
 		# BBBikeDraw::GD cannot create dashed lines,
 		# it seems (at least easily). So it's
 		# better to show nothing here then a solid
@@ -407,7 +407,7 @@ sub draw_map {
 		if (($cat, $cat_attribs) = $cat =~ m{^([^:]+)(?:::(.*))?}) {
 		    next if $restrict && !exists $restrict->{$cat};
 
-		    if ($cat_attribs && $cat_attribs eq 'Tu' && $cat =~ m{^W}) {
+		    if ($cat_attribs && $cat_attribs =~ $BBBikeDraw::tunnel_qr && $cat =~ m{^W}) {
 			# BBBikeDraw::GD cannot create dashed lines,
 			# it seems (at least easily). So it's
 			# better to show nothing here then a solid

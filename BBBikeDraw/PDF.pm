@@ -205,7 +205,7 @@ sub draw_map {
 		    }
 		    next if $restrict && !$restrict->{$cat};
 
-		    if ($cat_attribs && $cat_attribs eq 'Tu' && $cat =~ m{^W}) {
+		    if ($cat_attribs && $cat_attribs =~ $BBBikeDraw::tunnel_qr && $cat =~ m{^W}) {
 			# PDF::Create cannot create dashed lines,
 			# it seems (at least easily). So it's
 			# better to show nothing here then a solid
@@ -269,7 +269,7 @@ sub draw_map {
 		    my $cat_attribs;
 		    if (($cat, $cat_attribs) = $cat =~ m{^([^:]+)(?:::(.*))?}) {
 			next if $restrict && !$restrict->{$cat};
-			if ($cat_attribs && $cat_attribs eq 'Tu' && $cat =~ m{^W}) {
+			if ($cat_attribs && $cat_attribs =~ $BBBikeDraw::tunnel_qr && $cat =~ m{^W}) {
 			    # PDF::Create cannot create dashed lines,
 			    # it seems (at least easily). So it's
 			    # better to show nothing here then a solid

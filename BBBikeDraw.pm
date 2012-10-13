@@ -18,11 +18,14 @@ use Strassen;
 # sparen:
 use Carp qw(confess);
 
-use vars qw($images_dir $VERSION $bahn_bau_rx);
+use vars qw($images_dir $VERSION $bahn_bau_rx $tunnel_qr);
 
 $VERSION = 3.64;
 
 $bahn_bau_rx = qr{^[SRU](?:0|Bau|G|P)(?:::|$)}; # auch ignorieren: Güterbahnen, Parkbahnen
+
+# XXX duplicated from bbbike
+$tunnel_qr = qr{^_?Tu_?$};
 
 sub new {
     my($pkg, %args) = @_;
