@@ -515,6 +515,11 @@ An (official) URL referring to more information.
 Some postprocessing code may add the following line with the
 descriptive text I<string> to the F<fragezeichen> file.
 
+=item C<complete: yesI<|>no>
+
+May be used to mark a feature as complete or incomplete (e.g. cycle
+routes).
+
 =back
 
 =head3 Obsolete and to-be-decided directives
