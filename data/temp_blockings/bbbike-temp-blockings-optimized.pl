@@ -1304,9 +1304,11 @@ userdel	q3::inwork 11912,14486 11642,14625
          'text' => 'Park am Gleisdreieck, Wege im Westpark: wegen Bauarbeiten können die Wege unpassierbar sein',
          'from' => undef,
          'id' => 2365,
-         'data' => 'userdel	2::inwork 8309,10368 8278,10384 8296,10438
+         'data' => '#: last_checked: 2012-07-24 vvv
+userdel	2::inwork 8309,10368 8278,10384 8296,10438
 userdel	2::inwork 8278,10384 8263,10349 8258,10338
 userdel	2::inwork 8263,10349 8315,10347 8333,10167 8360,10133
+#: last_checked ^^^
 ',
          'type' => 'gesperrt'
        },
@@ -1381,16 +1383,7 @@ userdel	q4::inwork 9112,14771 9250,14658
        },
        undef,
        undef,
-       {
-         'source_id' => 'http://www.berlin.de/ba-lichtenberg/presse/archiv/20120914.1355.375249.html',
-         'until' => 1350165599,
-         'text' => 'Straßenbau in der Alfred-Kowalke-Straße östlich der Straße Am Tierpark, Straße ist gesperrt, 17. September 2012 bis 13. Oktober 2012 ',
-         'from' => 1347746400,
-         'id' => 2380,
-         'data' => 'userdel	2::inwork 18286,11275 18409,11348 18477,11388 18618,11452
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        {

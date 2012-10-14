@@ -2047,7 +2047,7 @@ EOF
        text  => 'K 7330; (L 23 nördl. Templin-Gandenitz); OD Gandenitz Kanal- und Straßenbau Vollsperrung 30.05.2005-15.09.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 11401,84932 11423,85183
+userdel	q4 11445,85021 11487,85151
 EOF
      },
      { from  => 1118091230, # 2005-06-06 22:53
@@ -20479,9 +20479,11 @@ EOF
        text  => 'Park am Gleisdreieck, Wege im Westpark: wegen Bauarbeiten können die Wege unpassierbar sein',
        type  => 'gesperrt',
        data  => <<EOF,
+#: last_checked: 2012-07-24 vvv
 userdel	2::inwork 8309,10368 8278,10384 8296,10438
 userdel	2::inwork 8278,10384 8263,10349 8258,10338
 userdel	2::inwork 8263,10349 8315,10347 8333,10167 8360,10133
+#: last_checked ^^^
 EOF
      },
      { from  => 1343332800, # 2012-07-26 22:00

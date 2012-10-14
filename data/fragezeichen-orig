@@ -89,6 +89,21 @@ Markstr.: Radspuren werden markiert	?::inwork 7672,16878 7647,17037 7644,17054 7
 #   (-> private, es sei denn, es wird um einen GPS-Track gebeten, dann public)
 # - handelt es sich bei der Frage um Zebrastreifen und andere
 #   für Radfahrer eher uninteressante Dinge (-> private)
+# 
+#: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120207.1005.365838.html vvv
+#: last_checked: 2012-10-13
+#: next_check: 2012-11-01
+Hirschberger/Schreiberhauer: Zebrastreifen in Bau	?::inwork 15201,11069
+#: last_checked: 2012-10-13
+#: next_check: 2012-12-01
+Weitlingstr.: für 2012 geplanter Zebrastreifen? Wo genau?	?::projected 16705,11526 16734,11416
+#: last_checked: 2012-08-25
+#: next_check: 2012-12-31
+Degnerstr.: für 2012 geplanter Zebrastreifen? Wo genau?	?::projected 16537,15884 16535,15764
+#: last_checked: 2012-08-25
+#: next_check: 2012-12-31
+Dorfstr.: für 2012 geplanter Zebrastreifen? Wo genau?	?::projected 19285,18489 19429,18368
+#: by: ^^^
 #
 #: last_checked: 2012-10-13
 #: next_check: 2012-10-17
@@ -147,8 +162,12 @@ Humboldtinsel: Qualität? Straße bereits fertig gestellt?	?::projected 1612,20431
 #: next_check: 2012-11-15
 Ganghofer Str.: wird zur Fußgängerzone am Platz der Stadt Hof	?::inwork 12753,8187 12792,8190
 # 
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/34re.pdf/file?y=2012
-An der Filmfabrik; Am Werksgarten; Am Filmlager: neue Straßen, wann fertig? Genaue Lage? Qualität?	?::inwork 22885,5274 23007,5181 23128,5256 23277,5187
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/34re.pdf/file?y=2012 vvv
+#: XXX fehlen alle in Berlin.coords.data
+Am Werksgarten: Qualität? Genaue Lage der Straße (GPS-Track?)	? 22754,4919 22872,5018
+An der Filmfabrik: Qualität? Genaue Lage der Straße (GPS-Track?)	? 22872,5018 22851,5321
+Am Filmlager: Qualität? Genaue Lage der Straße (GPS-Track?)	? 22802,5325 22808,5199
+#: by: ^^^
 # 
 #: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/stra__enbauliste_stand_2012_06_21.pdf?start&ts=1340354416&file=stra__enbauliste_stand_2012_06_21.pdf
 #: last_checked: 2012-09-26
@@ -214,6 +233,13 @@ Karl-Marx-Str.: Radangebotsstreifen werden angelegt	?::inwork 13076,7044 13067,7
 #: last_checked: 2012-08-05
 #: next_check: 2013-11-30
 Radweg Berlin-Leipzig, Abschnitt Yorckstr. - Monumentenstr.: wird bis Ende 2013 realisiert	?::projected 8333,9583 8338,9443 8388,9242 8337,9065
+# 
+#: by: http://www.stadtentwicklung.berlin.de/staedtebau/foerderprogramme/stadtumbau/Schoeneberger-Schleife-Noerdl-Teilstueck-a.5712.0.html
+#: next_check: 2015-01-01
+Radweg Berlin-Leipzig, Abschnitt Monumentenstr. - Alfred-Lion-Steg: Realisierung bis 2015	?::projected 8235,9107 8200,8920 7991,8297
+# 
+#: by: http://www.stadtentwicklung.berlin.de/staedtebau/foerderprogramme/stadtumbau/Schoeneberger-Schleife-Suedl-Teilstueck-an.4681.0.html
+Radweg Berlin-Leipzig, Abschnitt Alfred-Lion-Steg - Südkreuz: Realisierung bis 2012	?::inwork 7991,8297 7856,7914
 # 
 #: by: http://www.stadtumbau-berlin.de/Fotos.4730.0.html
 #: last_checked: 2012-08-17
@@ -488,9 +514,6 @@ Segelfliegerdamm (Zernsdorf - Niederlehme): in Planung/Bau	?::inwork 29192,-1063
 #: next_check: 2016-06-01
 Geplante Brücke über die Spree bzw. Straßenverbindung zwischen Rummelsburger Landstraße und Schnellerstr.	?::projected 17082,7189 16954,7096
 # 
-######################################################################
-## SYSTEMATISCHE ÜBERPRÜFUNG BIS HIER (2012-10-10)
-######################################################################
 #XXX --- laut http://www.berlin.lsvd.de/cms/index.php?option=com_content&task=view&id=184&Itemid=175 (URL existiert nicht mehr) sowie laut http://de.wikipedia.org/wiki/Kanzleramtssteg nicht mehr in Planung --- Magnus-Hirschfeld-Steg: laut Tsp geplant	? 7360,12430 7437,12368
 # 
 #: by: http://www.nationaler-radverkehrsplan.de/neuigkeiten/news.php?id=1370
@@ -531,7 +554,7 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 Fünf Morgen: wo wird sich die Straße befinden? Qualität?	? 1455,5143 1410,4926
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/43re.pdf/file?y=2012
-#: XXX evtl. bei Aurelis Real Estate oder im Bezirksamt (Fehrbelliner Pl, Zimmer 3060, di/fr 9-12) nachfragen
+#: XXX Gemarkung Grunewald-Forst, Flur 1, Flurstück 332; evtl. bei Aurelis Real Estate oder im Bezirksamt (Fehrbelliner Pl, Zimmer 3060, di/fr 9-12) nachfragen
 #: XXX fehlt bei Berlin.coords.data
 Rosensteinweg: wo befindet sich die Straße?	? -319,10743 -110,10658
 # 
@@ -628,16 +651,12 @@ Kurzer Weg: Qualität?	? 9169,21548 9066,21516
 #: by ^^^
 #: by ^^^
 # 
-#: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20120928.1200.375958.html
-#: next_check: 2012-10-12
-Neidenburger Allee: Fahrbahnsanierung Neidenburger Allee von Willenberger Pfad bis Waldschulallee, danach bessere Qualität?	?::inwork 576,10729 574,10577
-# 
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20120927.1435.375916.html
 #: next_check: 2012-11-30
 Anna-Seghers-Str.: wird es nach den Bauarbeiten eine bessere Straßenqualität geben?	?::inwork 20066,3466 20012,3532 19966,3596 19933,3641
 # 
-Poelchaustr. - Landsberger Allee: Qualität der Verbindung? Nachts beleuchtet?	? 19525,14490 19527,14655 19580,14864 19864,15169 20260,15434
-Springpfuhlpark: Qualität der Gehwegverbindung? Nachts beleuchtet?	? 19600,13531 19542,14454
+Poelchaustr. - Landsberger Allee: Qualität der Verbindung? Nachts beleuchtet? Genaue Lage des Weges (GPS-Track?)?	? 19524,14474 19527,14655 19580,14864 19864,15169 20260,15434
+Springpfuhlpark: Qualität der Gehwegverbindung? Nachts beleuchtet? Genaue Lage des Weges (GPS-Track?)?	? 19628,13517 19524,14474
 Götzstr. - Albrechtstr.: liegt hier auch Verbundsteinpflaster?	? 9381,6277 9367,6160 9349,6075
 # 
 #: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/bauenundstadtentwicklung/stadtplanungsamt/ag1/anlage_1e_ma__nahmenkatalog.pdf?start&ts=1312523702&file=anlage_1e_ma__nahmenkatalog.pdf vvv
@@ -667,7 +686,6 @@ B2: gibt es hier Radwege?	? -9972,6846 -9854,6890 -9640,6971
 #
 #: XXX: alter Eintrag von Johannes (...schmeisser...), nochmal prüfen!
 Sternstr. (Drewitz): gibt es hier einen Radweg? In beide Richtungen?	? -7917,-4792 -7969,-4828 -8021,-4937 -8033,-5049 -8053,-5116 -8113,-5204 -8116,-5221 -8165,-5236
-Neubrücker Str.: Vorfahrtsregelung?	? 1364,25882 1213,25813 1135,25765 1057,25695 975,25627 885,25578 727,25504 639,25478
 # 
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/presse/archiv/20120604.0610.370890.html
 Lanke-Aue: wo genau befindet sich der Park?	? 7435,3488 7490,3471 7506,3543 7449,3549
@@ -688,21 +706,6 @@ Eugen-Kleine-Brücke: Gehwegbenutzungspflicht für Radverkehr abschaffen Drucksach
 # 
 Alt-Lankwitz: parallele Fahrbahn, Qualität, genaue Lage?	? 7412,3484 7419,3500 7249,3598 7057,3713
 # 
-#: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120207.1005.365838.html vvv
-#: last_checked: 2012-10-13
-#: next_check: 2012-11-01
-Hirschberger/Schreiberhauer: Zebrastreifen in Bau	?::inwork 15201,11069
-#: last_checked: 2012-10-13
-#: next_check: 2012-12-01
-Weitlingstr.: für 2012 geplanter Zebrastreifen? Wo genau?	?::projected 16705,11526 16734,11416
-#: last_checked: 2012-08-25
-#: next_check: 2012-12-31
-Degnerstr.: für 2012 geplanter Zebrastreifen? Wo genau?	?::projected 16537,15884 16535,15764
-#: last_checked: 2012-08-25
-#: next_check: 2012-12-31
-Dorfstr.: für 2012 geplanter Zebrastreifen? Wo genau?	?::projected 19285,18489 19429,18368
-#: by: ^^^
-# 
 Am Findling (Potsdam): existiert eine Ausschilderung?	? -9723,-2451
 # 
 #: by: http://www.potsdam.de/cms/ziel/996205/DE/ vvv
@@ -719,7 +722,7 @@ Potsdam, Lutherplatz: ist dieser Abschnitt als Lutherplatz ausgeschildert?	? -10
 Neue Grottkauer Str.: Zebrastreifen, wo genau?	? 23189,13920 23368,13936
 # 
 #: by: http://farm7.staticflickr.com/6051/6359918217_d76e41d8e1_b.jpg
-Hans-Werner-Klünner-Weg: befindet er sich hier? Qualität? Beleuchtet?	? -2916,12195 -2971,12062 -3112,12020
+Hans-Werner-Klünner-Weg: Wo befindet sich der Weg? Qualität? Beleuchtet?	? -2916,12195 -2971,12062 -3112,12020
 # 
 #: XXX kann man es schon in flaechen-orig einzeichnen?
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/50re.pdf/file?y=2011
@@ -786,7 +789,7 @@ Hauptstr.: beginnt bereits hier, aber nur in Richtung Norden	? 5855,7272 5902,73
 #: XXX_prog: ^^^
 # 
 #: XXX_prog: allerdings wäre es interessant, wenn das auch beim Routing berücksichtigt werden könnte (vgl. Mail von Germar)
-Schorlemerallee: Kandidat für "relativ wenig Kfz-Verkehr?"	? 3836,6550 3664,6523 3459,6484 3347,6460 3306,6453 3216,6393
+Schorlemerallee: Kandidat für "relativ wenig Kfz-Verkehr?"	? 3836,6550 3664,6523 3643,6519 3459,6484 3347,6460 3306,6453 3216,6393
 # 
 #: XXX_prog: allerdings vielleicht nur zeitlich relevant (Berufsverkehr)? Benötigt eh' eine Art von cat=3 mit Zeitverlust
 Zeitverlust beim Überqueren der Charlottenstraße	? -3091,14220 -3135,14183 -3275,14114
@@ -809,10 +812,6 @@ Burgwallgraben: neuer Weg wg. Renaturisierung durch DB - fertig Sommer 2006. Qua
 #: XXX laut Detlef Hoge:
 auf der östlichen Seite der B101n: wo genau ist der Radweg hier?	? 6173,-2344 5957,-2575 5627,-2671
 # 
-#: by: Message-ID: <Xns96A387773A8B04usenet@krickstadt.de>:
-#: by: (URL existiert nicht mehr) http://archiv.tagesspiegel.de/archiv/30.07.2005/1962466.asp
-Spree: ist dieser Spreearm wiederhergestellt worden?	? 43394,-2017 43296,-2181 43357,-2501 43220,-2544 43129,-2437 43162,-2242 43053,-2114
-# 
 Ortsumfahrung Seelow (B1): möglicherweise eine Kraftfahrzeugstraße?	? 79547,16079 79117,16131 78709,16342 78294,16686 77831,16850 77477,16855 76714,16676 76378,16579
 Ortsumfahrung Seelow (B1/B167): möglicherweise eine Kraftfahrzeugstraße?	? 76378,16579 75959,16446 75486,16163 75096,15691 74874,15075
 Ortsumfahrung Seelow (B1): möglicherweise eine Kraftfahrzeugstraße?	? 74874,15075 74705,14029 74434,13638
@@ -821,10 +820,17 @@ Ortsumfahrung Jüterbog (B101, teilweise auch B102): möglicherweise eine Kraftfah
 # 
 #XXX del --- mittlerweile gibt es eine offizielle Radwegführung in beide Richtungen; wahrscheinlich sind die Verlustzeiten nicht mehr so hoch --- #: XXX_prog: Verlustzeiten für Wegführungen implementieren (ähnlich wie 3) --- Pappelstr. -> Kastanienallee: hier verliert man durchaus 2 1/2 Minuten bei der Überquerung der Schönhauser!	? 11119,15385 10881,15047 10838,14962
 # 
-Stintgraben und See	? 1584,39467 1930,39739 1864,40227 2186,40991 2056,41586 1860,42350
-Raddusch: entfällt der Regionalbahnhof?	? 54769,-64897
-Route Lychen - Feldberg: wie sieht der Routenverlauf aus? Qualität?	? 627,89430 551,89619
+#XXX del --- noch immer da (Stand 2012-10) --- Raddusch: entfällt der Regionalbahnhof?	? 54769,-64897
+Route Lychen - Feldberg: wie sieht der Routenverlauf aus? Qualität?	? 627,89430 592,89504 471,89613 447,89806 369,89873 260,89873 157,89927 -71,90567 61,90923 -71,91020 49,91473 151,91581 326,91618 701,92107 767,92276 1027,92475 1274,92952 1443,93024 1957,93459 2107,94153 2240,94449 2277,94805 2192,95107 1920,95542 2035,96158 1950,96309 2029,96683 1866,97064 1751,97100 1727,97190 1763,97601 1848,97698 2603,97770 3351,98108 3466,98229 4109,98233 4601,98344
+#: XXX hier laut osm smoothness=horrible
+Route Lychen - Feldberg: wie sieht der Routenverlauf aus? Qualität?	? 4601,98344 4806,98537 5772,98971 7402,100076
+#: XXX hier laut osm cobblestone
+Route Lychen - Feldberg: wie sieht der Routenverlauf aus? Qualität?	? 7402,100076 7511,100125 9087,101978 9238,102123
+Route Lychen - Feldberg: wie sieht der Routenverlauf aus? Qualität?	? 9238,102123 9552,102383 10222,102630 10496,102869
 Route Lychen - Templin: wie sieht der Routenverlauf aus? Qualität?	? 2480,89399 2468,89293
+Route Lychen - Templin: wie sieht der Routenverlauf aus? Qualität?	? 3125,88753 3167,88771 3614,88158 3855,88004 3976,87729 4456,87107 5066,86624 5090,86419 5265,86347 5362,86099 5316,85945 6071,85495 6319,85251 8353,84535 8746,84188
+Route Lychen - Templin: wie sieht der Routenverlauf aus? Qualität?	? 8746,84188 9057,84387 9552,84861 9796,84919 9902,85079 10400,85239 10871,85426 11049,85281 11360,85254
+Route Lychen - Templin: wie sieht der Routenverlauf aus? Qualität?	? 11457,84997 10910,82175 10950,82078 11321,82045 11565,81930 11976,81523 12233,80877 12435,80783 13005,80698 14950,79874 15176,79845
 #: XXX_prog: Drängelgitter auch auf dem Mittelstreifen Sonnenallee. Kann zurzeit nicht dargestellt werden.
 Drängelgitter	? 15496,6314 15505,6342 15516,6357
 #: XXX_indoor:
@@ -948,8 +954,8 @@ Brunow - Gamengrund: Qualität?	? 41618,36515 43362,37337 43825,37262 43922,36623
 Martin-Luther-Str. (Falkensee) - Radelandstr.: durchgängige Verbindung vorhanden? Qualität?	? -6977,17720 -7060,17637 -7306,17291 -7424,17303
 Sacrower See - Försterei Zedlitz: Qualität (wahrscheinlich Waldweg, Q2)?	? -10783,3792 -10912,3738 -10955,3723
 #: XXX Straße weiter Richtung Dauer einzeichnen:
-Schenkenberg - Dauer: Qualität (zumindest in Schenkenberg noch asphaltiert)?	? 45454,107247 44745,108948
-Dauer - Tornow: Qualität?	? 44745,108948 45265,108797 46428,109624 46174,110110 45766,110618 46075,110850 46272,110976 46317,111103 46685,111038 47335,110888
+Schenkenberg - Dauer: Qualität (zumindest in Schenkenberg noch asphaltiert)?	? 45454,107247 44462,109018
+Dauer - Tornow: Qualität?	? 44462,109018 45265,108797 46394,109694 46174,110110 45766,110618 46075,110850 46272,110976 46317,111103 46685,111038 47335,110888
 Ortsteil Eichwerder? (laut S-Bahn-Wanderheft)	? 20625,28887
 Sputendorfer Str.: laut http://home.arcor.de/hoge-online/std_tlw/std_tlw00.htm sieht die Straße gut aus, wie sieht es weiter südlich Richtung Sputendorf aus?	? -2049,-2165 -1853,-2412 -1834,-3968 -1812,-4210
 #: XXX anonymous meint Q2, aber ohne weitere Angaben:
@@ -1878,7 +1884,11 @@ Dorfstr. (Klinkow): Qualität?	? 36011,103371 35961,103504 36006,103805 36033,104
 Klinkow - Basedow: Qualität?	? 36033,104038 35808,104081 35665,104032 35462,104005 35178,103918 34939,103999
 Dedelow - Güstow: Qualität?	? 35287,106742 35065,106490 34972,106254 34973,105848 34915,105543 34847,105408 34939,105006 34951,104763 34937,104498 34961,104211 34939,103999 34855,103775 34840,103497 34858,103390 34931,103237 34937,103166 34812,102800 34589,102405
 Weggun - Fürstenwerder: Qualität?	? 20367,102950 20442,103004 20532,103136 20657,103561 20691,103867 20859,104481 20841,104752 20924,105178 21119,105714 21196,105784 21388,105770 21347,106003 21428,106074 21476,106231 21420,106523 21476,106672 21396,107232 21390,107384 21323,107646 21347,107936 21303,108077 21084,108410 21022,108776 20643,109317 20508,109625
-Krewitz (Rastplatz Roter Ochse) - Weggun: Qualität? Auch Radweg "Spur der Steine"?	? 19582,99411 20189,100790 20567,101541 20489,102777
+#: XXX laut osm Asphalt
+Krewitz (Rastplatz Roter Ochse) - Weggun: Qualität? Auch Radweg "Spur der Steine"?	? 19582,99411 20189,100790 20567,101541
+Krewitz (Rastplatz Roter Ochse) - Weggun: Qualität? Auch Radweg "Spur der Steine"?	? 20567,101541 20489,102777
+#: XXX laut osm Asphalt
+Krewitz - Arendsee: Qualität?	? 20567,101541 21165,102752
 Trebenow - Lübbenow: Qualität?	? 38662,115923 38335,115828 37244,116710 36832,116945 36080,117198 35827,117183 35430,116922 35529,116685
 Lübbenow - Lindhorst: Qualität?	? 35529,116685 35418,116637 35297,116589 34070,115933 33803,115806 33638,115809 33524,115844 33023,115838 32928,115844 32535,115755
 Güterberg - Lübbenow: Qualität?	? 32455,118645 32550,118657 32639,118768 33058,118784 33569,118321 33993,117747 35202,117024 35303,116964 35430,116922
@@ -2935,9 +2945,12 @@ Kohlisstr./Hultschiner Damm: gibt es hier mittlerweile eine Ampelanlage?	?::inwo
 #: XXX Realisierung bis Ende 2009
 Boitzenburg - Hardenbeck: wurde der straßenbegleitende Radweg bereits realisiert?	?::inwork 22233,95712 21980,95754 21160,95892 20914,96092 20696,96135 20064,95650 19336,95235 19032,95142
 # 
-#: by: Uckermark-Kurier
+#: by: Uckermark-Kurier vvv
 #: XXX 2.7km Radweg auf  (Radweg "Spur der Steine", Templin - Fürstenwerder), Baubeginn Anfang 2009, Asphalt ca. 3m breit
-ehem. Bahndamm zwischen L15 undf K7332 bei Hardenbeck: wurde hier ein Radweg realisiert? Ist der Radweg durchgängig asphaltiert? Wo genau befindet sich der Radweg (GPS-Track)?	?::inwork 16377,90072 15782,90862 15738,90942 15410,92053 15661,93732 15688,93829 15748,93928 15841,94009 16435,94298 17677,94900 17796,95008 17912,95192 18001,95435 18507,96268 18676,96867 18954,97944 19022,98128 19442,99078 19582,99411
+#: XXX laut osm Asphalt
+ehem. Bahndamm zwischen L15 undf K7332 bei Hardenbeck: wurde hier ein Radweg realisiert? Ist der Radweg durchgängig asphaltiert? Wo genau befindet sich der Radweg (GPS-Track)?	?::inwork 16377,90072 15782,90862 15738,90942 15410,92053 15661,93732 15688,93829 15748,93928 15841,94009 16435,94298 17677,94900 17796,95008 17912,95192
+ehem. Bahndamm zwischen L15 undf K7332 bei Hardenbeck: wurde hier ein Radweg realisiert? Ist der Radweg durchgängig asphaltiert? Wo genau befindet sich der Radweg (GPS-Track)?	?::inwork 17912,95192 18001,95435 18507,96268 18676,96867 18954,97944 19022,98128 19442,99078 19582,99411
+#: by ^^^
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/26re.pdf/file?y=2012
 #: XXX fehlt in Berlin.coords.data (PLZ 13187)
@@ -2951,3 +2964,12 @@ In den Floragärten: Ist die Straße bereits fertiggestellt? Qualität? Ist die Str
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/04re.pdf/file
 #: XXX Privatstraße
 Via Tilia: Qualität? Wo liegt die Straße genau (GPS-Track?)?	? -7518,-1175 -7548,-1097 -7487,-1056 -7271,-1102
+# 
+#: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20120928.1200.375958.html
+#: next_check: 2012-10-12
+#: XXX Fahrbahnsanierung Neidenburger Allee von Willenberger Pfad bis Waldschulallee, danach bessere Qualität?
+Neidenburger Allee: Ist die Qualität der Fahrbahn zwischen Willenberger Pfad bis Waldschulallee nach den Bauarbeiten besser geworden?	? 576,10729 574,10577
+# 
+Neubrücker Str.: Ist die Neubrücker Str. eine Vorfahrtsstraße?	? 1364,25882 1213,25813 1135,25765 1057,25695 975,25627 885,25578 727,25504 639,25478
+# 
+Ahlimbsmühle - Templin: Qualität?	? 24006,74469 23185,74265 22563,74247 21760,74489 21331,74676 20498,75268 19701,76270 19750,76354 19659,77157 19454,77284 19061,78220 18681,78317 18337,78286 18125,78413 17757,78643 17177,79071 16882,79108 16707,79192 16377,78982

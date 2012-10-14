@@ -63,18 +63,18 @@ Lennéstr: Radweg Richtung Ebertstr. auf der linken Seite im Tiergarten	CS; 8172,
 Jüdenstr.: unbequemes Passieren der Grunerstr.	CP; 10766,12511 10800,12461 10831,12371
 Jüdenstr.: unbequemes Passieren der Grunerstr.	CP; 10831,12371 10800,12461 10766,12511
 dem Schotterweg folgen	CP; 24210,37562 24193,37725 24208,37830
-Hauptstr.: an der Gustav-Holzmann-Str. die Gehwegseite wechseln	PI; 16302,9865 16262,9925 16049,9749
+Hauptstr.: bereits an der Gustav-Holzmann-Str. die Gehwegseite wechseln	PI; 16302,9865 16262,9925 16049,9749
 Hauptstr.: wegen Straßenbahntrasse zunächst auf der linken Gehwegseite weiterfahren und an der nächsten Ampel die Gehwegseite wechseln	CP; 16049,9749 16262,9925 16191,10035
 Rollbergstr. - Karl-Marx-Str.: zunächst auf dem linken Gehweg bleiben, an der Ampel Anzengruberstr. die Straßenseite wechseln	CP; 12528,8205 12714,8249 12689,8289
 zunächst auf dem linken Gehweg des Weißenseer Wegs bleiben, nächste Möglichkeit (Bernhard-Bästlein-Str. oder Landsberger Allee) zur Querung benutzen	CP; 15363,13531 15428,13770 15348,13996
 zur Müggelstr. Hausdurchfahrt benutzen	CS; 14856,11740 14837,11706
 zur Müggelstr. Hausdurchfahrt benutzen	CS; 14994,12121 14994,12064
 Zugang zum Bahndamm über die Terasse der Mambo-Bar	CS; 13923,9405 13953,9372
-Große Querallee: nicht ausgeschildert, vor dem "Tipi" nach links abbiegen	PI; 8123,12615 7945,12592 7875,12363
+Große Querallee: nicht ausgeschildert, vor dem "Tipi" nach links abbiegen	CP; 8123,12615 7945,12592 7875,12363
 Stralauer Allee - Warschauer Platz: bereits an der Kreuzung Am Oberbaum/Stralauer Allee auf den linken Gehweg wechseln	PI; 13332,10832 13389,10808 13471,10983
 Bereits an der Ampel Steinmetzstr. die Straßenseite wechseln	PI; 7702,10146 7813,10112 7850,10351
 Regensburger Str. - Bundesallee: zunächst auf der linken Gehwegseite bis zur Kreuzung Nachodstr. fahren und dort die Straßenseite wechseln	CP; 5541,9923 5464,9914 5467,9866
-Bundesallee - Pariser Str.: an der Kreuzung Bundesallee/Nachodstr. auf die linken Gehwegseite der Bundesallee wechseln	PI; 5467,9866 5464,9914 5416,9928
+Bundesallee - Pariser Str.: bereits an der Kreuzung Bundesallee/Nachodstr. auf die linken Gehwegseite der Bundesallee wechseln	PI; 5467,9866 5464,9914 5416,9928
 Mehringbrücke - Ruhlsdorfer Str.: den linken Gehweg benutzen	CP2; 9416,10196 9368,10211
 Buchholzer Str. - Schönhauser Allee: zunächst auf der linken Geh/Radwegseite der Schönhauser Allee fahren, an der Kreuzung Gneiststr. die Straßenseite wechseln	CP; 11055,15504 10917,15525 10902,15422
 An der Stadtteilbibliothek einbiegen	CP2; 9460,6519 9453,6415
@@ -93,8 +93,6 @@ Kietz - Kietzer Str.: zum Überqueren der Straße Fußgängerampel links benutzen	CP
 Kietz - Müggelheimer Str.: zum Überqueren der Straße Fußgängerampel links benutzen	CP; 22364,4429 22383,4470 22341,4483
 als "Neue Dorfstr." ausgeschildert	CS; 52490,75434 52181,75778
 als "Wiesenweg" ausgeschildert	CS; 52215,83681 52346,83150
-Lichtenrader Damm - Griembergweg: Überquerungsmöglichkeit nördlich der Kreuzung	PI; 10737,132 10753,83 10913,96
-Griembergweg - Lichtenrader Damm: Überquerungsmöglichkeit nördlich der Kreuzung	CP; 10913,96 10753,83 10782,-24
 Richtung Bellevuestr. und Kemperplatz	CS; 8548,11552 8505,11544 8462,11538
 Richtung Linkstr.	CS; 8573,11404 8554,11386 8474,11350
 Einfahrt gegenüber Waldcafe	CP2; 30041,5329 27096,5828
@@ -151,7 +149,7 @@ Ladenbergstr. - Habelschwerdter Allee: an der Kreuzung Fußgängerampel auf der li
 zum Mehringplatz: hinter dem BVG-Wartehäuschen in den Gehweg einbiegen	CP2; 9873,10285 9668,10306
 Hildegard-Jadamowitz-Str. - Karl-Marx-Allee: hinter der Alten Feuerwache rechts abbiegen	CP; 13019,12316 12985,12303 12950,12340
 Kanzowstr. - Prenzlauer Allee: Fußgängerampel zur rechten Hand benutzen oder zur Wichert/Grellstr. vorfahren	CP; 11689,15639 11913,15490 11941,15586
-Prenzlauer Allee - Kanzowstr.: Fußgängerampel beim Linksabbiegen benutzen	PI; 11905,15462 11913,15490 11689,15639
+Prenzlauer Allee - Kanzowstr.: bereits an der Fußgängerampel kurz vor der Kreuzung auf die linke Seite wechseln	PI; 11905,15462 11913,15490 11689,15639
 Frankfurter Allee - Liebigstr.: frühzeitig auf den Gehweg wechseln (wegen Grünfläche)	PI; 14208,12235 13885,12279 13927,12370
 Falkenberger Chaussee: Zufahrt zur Wartenberger Str.	CS; 17400,17790 17440,17746 17531,17802 17650,17875
 Langhansstr. - Allee der Kosmonauten: Zufahrt zum Parkweg schwierig einzusehen, einfach geradeaus fahren	CP2; 19818,14064 19823,14045
@@ -237,7 +235,6 @@ Mühlenstr. - Vinetastr.: Fußgängerampel auf der linken Seite zum Überqueren der 
 Vinetastr. - Berliner Str.: Fußgängerampel auf der rechten Seite zum Überqueren der Kreuzung nutzen	CP; 11267,17017 10927,17022 10975,16896
 Vinetastr. - Brennerstr.: Fußgängerampel auf der rechten Seite zum Überqueren der Kreuzung nutzen	CP; 11267,17017 10927,17022 10656,17018
 Vinetastr. - Mühlenstr.: die Fahrradampel links benutzen	CP; 11267,17017 10927,17022 10862,17087
-Admiralbrücke - Böckhstr.: Gehweg zur Böckhstr. benutzen	PI; 11177,9935 11163,9903 11200,9889
 Allee der Kosmonauten - Annenstr.: Zebrastreifen zum Überqueren der Straßenbahntrasse benutzen	CP; 20281,14361 20269,14256 20376,14244
 Annenstr. - Allee der Kosmonauten.: Zebrastreifen zum Überqueren der Straßenbahntrasse benutzen	CP; 20376,14244 20269,14256 20241,14016
 Bohnsdorfer Str. (Waldweg): Die Einfahrt ist sehr zugewachsen	CP2; 22012,2150 21997,1869
@@ -246,7 +243,7 @@ Berliner Str. - Masurenstr.: Entweder bereits an der Samländischen Str. die Stra
 Masurenstr. - Berliner Str.: zunächst auf dem linken Gehweg bis zur Höhe Binzstr. fahren	CP; 10670,17458 10880,17469 10878,17490
 Kongostr. - Müllerstr.: zunächst auf dem linken Gehweg bis zur Türkenstr. oder bis zur Fußgängerampel fahren	CP; 6349,16213 6450,16325 6444,16331
 Müllerstr. - Kongostr.: an der Türkenstr. oder an der Fußgängerampel die Straßenseite wechseln und zurückfahren	CP; 6608,16180 6450,16325 6349,16213
-Eichborndamm - Weg parallel zur S-Bahn: an der Ampel Miraustr. auf den linken Gehweg des Eichborndamms wechseln	PI; 4240,19019 4232,18981 4285,18983 4353,18986
+Eichborndamm - Weg parallel zur S-Bahn: bereits an der Ampel Miraustr. auf den linken Gehweg des Eichborndamms wechseln	PI; 4240,19019 4232,18981 4285,18983 4353,18986
 Prenzlauer Promenade - Brauhausstr.: bereits an der Ampel Thulestr./Am Steinberg auf den linken Gehweg wechseln	PI; 12010,16774 12017,16734 12211,16688
 Karl-Marx-Allee - Krautstr.: bereits an der Ampel Andreasstr. auf den linken Gehweg wechseln oder am Strausberger Platz die Karl-Marx-Allee überqueren und einige Meter zurückfahren	PI; 12360,12505 12134,12540 12125,12490
 Krautstr. - Karl-Marx-Allee: auf dem linken Gehweg bis zur Ampel am Strausberger Platz fahren und ggfs. die Straßenseite wechseln	CP; 12125,12490 12134,12540 12114,12546
@@ -260,7 +257,7 @@ Hans-Thoma-Str. - Am Treptower Park: bis zur Moosdorfstr. auf dem linken Gehweg 
 Linienstr.: Radwegführung zur Linienstr. folgen	CP2; 9225,13389 9296,13397
 Unter der Kranbahn - Platz am Kaisersteg: am Platz sofort links halten, um die Stufen am Ende des Platzes zu umfahren	CP; 18423,6285 18381,6134 18428,6123
 Rudower Str. - Grünauer Str.: linken Gehweg bis zur Ampel benutzen	CP; 21585,4459 21775,4470 21796,4517
-Rudower Chaussee - Walther-Nernst-Str.: an der Ampel Groß-Berliner Damm die Straßenseite wechseln	PI; 19501,3101 19475,3074 19498,3054
+Rudower Chaussee - Walther-Nernst-Str.: bereits an der Ampel Groß-Berliner Damm die Straßenseite wechseln	PI; 19501,3101 19475,3074 19498,3054
 Rügenwalder Weg - Gülzower Str.: auf dem linken Bürgersteig bis zur Parchimer Str. oder zum Zebrastreifen vor dem U/S-Bhf. Wuhletal vorfahren	CP; 22400,12171 22388,12190 22304,12157
 Allee der Kosmonauten - Heliosstr.: Straßenbahntrasse kurz hinter der Vierlandenstr. überqueren	CP; 20868,14698 20822,14594 20975,14601
 Heliosstr. - Allee der Kosmonauten: Überquerungsmöglichkeit der Straßenbahntrasse links	CP; 20975,14601 20822,14594 20756,14486
@@ -278,7 +275,7 @@ Kaiser-Wilhelm-Str. - Langkofelweg: bereits an der Ampel Edenkobener Weg die Str
 Altentreptower Str. - Wuhlgartenweg: zum Linksabbiegen frühzeitig auf die Fahrbahn oder den linken Gehweg wechseln	PI; 21573,12140 21307,12132 21282,12115
 Heerstr. - Preußenallee: bereits an der Kreuzung Teufelsseestr./Heerstr. die Straßenseite wechseln	PI; 456,11233 585,11256 551,11462
 Preußenallee - Heerstr.: auf der linken Gehwegseite bis zur Ampel Länderallee vorfahren und dann die Straßenseite wechseln	CP; 551,11462 585,11256 704,11273
-Schorlemerallee - Gregor-Mendel-Str.: etwa 20 Meter vor der Kreuzung die Straßenseite wechseln	PI; 3459,6484 3664,6523 3650,6665
+Schorlemerallee - Gregor-Mendel-Str.: etwa 20 Meter vor der Kreuzung die Straßenseite wechseln	PI; 3643,6519 3664,6523 3650,6665
 Gregor-Mendel-Str. - Schorlemerallee: Überquerungsmöglichkeit ca. 20 Meter zur rechten Seite	CP; 3650,6665 3664,6523 3836,6550
 Rahel-Hirsch-Str. - Ella-Trebe-Str.: bereits an der Ampel Alt-Moabit/Moltkebrücke auf den linken Gehweg wechseln	PI; 7936,12906 7948,12918 7941,13014
 Babelsberger Str. - Uferweg: bereits an der Ampel den Radweg auf der linken Straßenseite benutzen	PI; -12493,-1896 -12420,-1853 -12335,-1725
@@ -290,7 +287,7 @@ Lindenstr. - Breitestr.: auf dem linken Geh/Radweg bis zur Dortustr. fahren und 
 Breitestr. - Lindenstr.: bereits an der Kreuzung "Wall am Kiez" auf die linke Straßenseite wechseln	PI; -13516,-1517 -13375,-1546 -13366,-1499
 Frankfurter Allee - Buchberger Str.: bereits an der Ampel Atzpodienstr. auf die linke Straßenseite wechseln	PI; 16413,11906 16368,11912 16225,11523
 Buchberger Str. - Frankfurter Allee: zum Überqueren der Frankfurter Allee entweder Ampel an der Atzpodienstr. (rechts) oder Alfredstr. (links) benutzen	CP; 16225,11523 16368,11912 16317,11920
-Holzmarktstr. - Schillingstr.: auf den linken Gehweg wechseln	PI; 11351,12221 11388,12202 11452,12318
+Holzmarktstr. - Schillingstr.: bereits an der Kreuzung Stralauer Allee/Alexanderstr. auf die linke Straßenseite wechseln	PI; 11351,12221 11388,12202 11452,12318
 Frankfurter Allee - Bürgerheimstr.: bereits an der Ampel Alfredstr. auf die linke Straßenseite wechseln	PI; 16207,11937 16317,11920 16326,11966
 Bürgerheimstr. - Frankfurter Allee: auf dem linken Gehweg bis zur Atzpodienstr. fahren und dort die Straßenseite wechseln	CP; 16326,11966 16317,11920 16368,11912
 Gradestr. - Moosrosenstr.: entweder schon an der Holzmindener Str. die Straßenseite wechseln oder am Busbahnhof umdrehen	PI; 12773,5248 12727,5244 12726,5147
@@ -319,14 +316,14 @@ Am Sandberg: Straße nicht ausgeschildert	CP2; 20144,8355 20149,8318
 Am Wriezener Karree: nicht ausgeschildert	CP2; 12959,11631 12726,11851
 Bahnhofstr. - Park: bereits an der Ampel Friedrichshagener Str. auf die linke Straßenseite wechseln	PI; 22123,5452 22087,5404 22043,5346 22046,5305
 Clayallee - Biesalskistr.: bereits an der Ampel Schützallee auf die linke Straßenseite wechseln	PI; 1136,3878 1152,3918 1130,3930
-Schönefelder Chaussee - Venusstr.: Linksabbiegen in die Venusstr. nur von der Fahrbahn oder vom linken Gehweg aus möglich	PI; 18892,330 18860,248 19138,141
+Schönefelder Chaussee - Venusstr.: Linksabbiegen in die Venusstr. nur von der Fahrbahn oder vom linken Gehweg aus möglich, aber nicht vom Radweg aus	PI; 18892,330 18860,248 19138,141
 Str. 106 - Indira-Gandhi-Str.: Abbigemöglichkeit zur rechten Hand an der Einmündung Fritz-Lesch-Str.	CP; 14666,14845 14828,15050 14650,15750
 Weißenseer Weg - Str. 106: bereits an der Fritz-Lesch-Str. die Straßenseite wechseln	PI; 14843,15007 14828,15050 14666,14845
 Groß-Berliner Damm - Landschaftspark Johannisthal: bereits an der Herrmann-Dorner-Allee die Straßenseite wechseln	PI; 18928,3701 18882,3750 18592,3743
 Groß-Berliner Damm - Landschaftspark Johannisthal: bereits an der Herrmann-Dorner-Allee die Straßenseite wechseln	PI; 18928,3701 18882,3750 18854,3781 18833,3781
 Wilhelm-Gericke-Str. - Oranienburger Str.: zunächst linken Gehweg bis zur Ampel an der Jansenstr. benutzen	CP; 5598,19912 5545,19909 5533,19811
 Bugenhagenstr. - Stromstr.: zunächst linken Gehweg bis zur Ampel an der Perleberger Str. benutzen	CP; 6104,13522 6229,13517 6230,13596
-Munsterdamm - Kottesteig: 40m vor der Kreuzung die Straßenseite wechseln	PI; 6771,5273 6767,5233 6806,5230
+Munsterdamm - Kottesteig: bereits 40m vor der Kreuzung die Straßenseite wechseln	PI; 6771,5273 6767,5233 6806,5230
 Schorlemerallee - Albrecht-Thaer-Weg: bereits an der Kreuzung Schweinfurthstr. die Straßenseite wechseln	PI; 3306,6453 3347,6460 3449,6863
 Alemannenallee - Badenallee: Fußgängerampel rechts zum Überqueren der Heerstr. benutzen	CP; 1065,11216 943,11302 743,11462
 Badenallee - Alemannenallee: Fußgängerampel links zum Überqueren der Heerstr. benutzen	CP; 743,11462 943,11302 1065,11216

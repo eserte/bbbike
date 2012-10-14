@@ -167,7 +167,7 @@ Stellingdamm: schlechtes Kopfsteinpflaster auf der Fahrbahn	Q3; 22857,6155 22777
 Stellingdamm: schlechtes Kopfsteinpflaster auf der Fahrbahn, aber Radweg existiert	Q1; 22467,6135 22603,6141 22777,6151 22857,6155
 Stellingdamm: Asphalt	Q0 22857,6155 23011,6181 23131,6237 23222,6276
 Planufer: Kopfsteinpflaster, OK	Q1 11543,10015 11507,10004 11485,10029
-Planufer: Kopfsteinpflaster, OK	Q1 11177,9935 10929,9897 10914,9887
+Planufer: Kopfsteinpflaster, OK	Q1 11177,9935 11160,9932 10929,9897 10914,9887
 Admiralstr.: Kopfsteinpflaster	Q2 11177,9935 11199,9993 11244,10111
 Admiralstr.: Verbundsteinpflaster	Q1 11244,10111 11274,10184
 Fränkelufer: Kopfsteinpflaster	Q2 11464,10102 11310,10021 11199,9993 10979,10017 10967,10092
@@ -193,7 +193,7 @@ Grenzstr.: Kopfsteinpflaster, teilweise OK, über der S-Bahn-Brücke asphaltiert	Q
 Grenzstr.: Kopfsteinpflaster	Q2 8570,15107 8412,14923
 Scheringstr.: Kopfsteinpflaster	Q2 8900,15146 8700,14956
 Charlottenstr.: mäßiges Kopfsteinpflaster	Q2 9653,10950 9615,11225
-Böckhstr.: teilweise Kopfsteinpflaster, teilweise Asphalt	Q1 11200,9889 11411,9810 11640,9710
+Böckhstr.: teilweise Kopfsteinpflaster, teilweise Asphalt	Q1 11175,9882 11197,9894 11411,9810 11640,9710
 Böckhstr.: Kopfsteinpflaster	Q2 11640,9710 11673,9720
 Kohlfurter Str.: Kopfsteinpflaster, OK	Q1 11512,10105 11464,10102 11274,10184 11094,10261
 Archibaldweg: Kopfsteinpflaster	Q2 16160,11154 16028,11049
@@ -1584,7 +1584,7 @@ Bismarcksfelder Str.: fester Sandweg, holprig	Q2 21419,7806 21561,7867 21599,790
 (Bellevuepark): Kleinsteinpflaster	Q1 22798,5731 22796,5640 22796,5631 22794,5583
 (Bellevuepark): mäßiger Asphalt	Q1 22794,5583 22733,5569 22701,5428 22628,5340
 (Bellevuepark): mäßiger Asphalt, viele Schäden	Q1 22794,5583 22855,5554 22835,5452 22851,5321
-Am Krusenick: guter Asphalt	Q0 22726,5332 22754,4893 22673,4812
+Am Krusenick: guter Asphalt	Q0 22726,5332 22754,4919 22705,4874
 Lindenstr.: äußere Fahrstreifen mit Kopfsteinpflaster	Q2 22154,4923 22196,4847
 Lienhardweg: asphaltiert	Q0 22958,2005 23099,2031 23209,2050 23325,2070 23433,2085 23535,2111
 Bendigstr.: Kopfsteinpflaster	Q2 23433,2085 23448,2013 23497,1812
@@ -6635,7 +6635,7 @@ Töpferweg: Asphalt	Q0 13309,2410 13238,2521
 Selgenauer Weg: Asphalt	Q0 17526,1540 17605,1429 17846,1075
 Wegedornbrücke: Asphalt	Q0 20385,593 20442,564 20510,530 20534,501
 Zur Holzoper: Verbundsteinpflaster	Q1 19963,4198 20005,4235 20020,4218 20094,4271 20050,4320 19980,4269 20005,4235
-Uferweg am Urbanhafen: wassergebundene Decke, teilweise wellig	Q1 11177,9935 11052,9935 10914,9925 10602,10006 10522,10056
+Uferweg am Urbanhafen: wassergebundene Decke, teilweise wellig	Q1 11160,9932 11142,9939 10914,9925 10602,10006 10522,10056
 (Bleichröderpark): Kleinsteinpflaster	Q1 10545,18143 10487,18270
 (Pankeweg - Blankenburger Str.): Asphalt	Q0 10600,19225 10589,19275 10575,19327 10569,19395
 Fagottstr.: Schotterstraße	Q2 11654,20627 11573,20715 11502,20781
@@ -7694,6 +7694,8 @@ Hunckemüllerweg: Beton	Q0 -556,15128 -504,15092
 (Uferweg an der Schleuse - Tegeler Weg): unbefestigter Weg	Q2 2817,14003 2881,14061
 Bahnunterführung: unbefestigte Straße	Q2 18278,9818 18266,9853
 Am Tierpark [Nebenfahrbahn]: Asphalt	Q1 18202,11253 18202,11234 18245,11233 18301,11033 18368,10763
+(Planufer - Böckhstr.): Kleinsteinpflaster	Q1 11160,9932 11170,9919 11197,9894
+Grimmstr. (Kreuzberg): Verbundsteinpflaster	Q0 11164,9885 11164,9904 11170,9919 11177,9935
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3777,16532 -3870,16527 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): mäßiger Asphalt	Q1 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): unbefestigte Straße	Q2 12608,22943 12589,22948 12526,22972

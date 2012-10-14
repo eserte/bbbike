@@ -127,7 +127,6 @@ Karl-Liebknecht-Str. - Hirtenstr.	3 10923,13156 10976,13229 11005,13269 10923,13
 Parochialstr.	1 10952,12401 11040,12415
 Waisenstr.	1 11040,12415 11032,12439 11059,12450
 Waisenstr.	1 11040,12415 11049,12386 11094,12243
-Grimmstr.	1 11163,9903 11200,9889
 Sonnenallee - Tellstr.	3 12242,8972 12320,8927 12402,9080
 Tellstr. - Sonnenallee	3 12402,9080 12320,8927 12438,8859
 Lettestr	1 11268,15360 11368,15301 11480,15229
@@ -651,6 +650,9 @@ Kraatzweg -> Lichtenrader Damm: Mittelstreifen	3::igndisp 10866,364 10676,299 10
 Lichtenrader Damm -> Kraatzweg: Mittelstreifen	3::igndisp 10638,403 10676,299 10866,364
 Lichtenrader Damm -> Schwebelstr.: Mittelstreifen	3::igndisp 10676,299 10713,197 10903,263
 Schwebelstr. -> Lichtenrader Damm: Mittelstreifen	3::igndisp 10903,263 10713,197 10737,132
+Mittelstreifen	3nocross::ignrte 10737,132 10753,83 10782,-24
+Griembergweg -> Lichtenrader Damm: Mittelstreifen	3::igndisp 10913,96 10753,83 10782,-24
+Lichtenrader Damm -> Griembergweg: Mittelstreifen	3::igndisp 10737,132 10753,83 10913,96
 Mittelstreifen	3nocross::ignrte 10737,132 10753,83 10782,-24
 Griembergweg -> Lichtenrader Damm: Mittelstreifen	3::igndisp 10913,96 10753,83 10782,-24
 Lichtenrader Damm -> Griembergweg: Mittelstreifen	3::igndisp 10737,132 10753,83 10913,96
