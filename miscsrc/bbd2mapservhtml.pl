@@ -2,10 +2,9 @@
 # -*- perl -*-
 
 #
-# $Id: bbd2mapservhtml.pl,v 1.30 2008/08/16 16:34:38 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003,2004,2005 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003,2004,2005,2012 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -18,6 +17,7 @@
 
 use strict;
 use FindBin;
+use utf8;
 use lib ("$FindBin::RealBin/..",
 	 "$FindBin::RealBin/../lib",
 	 "$FindBin::RealBin/../data",
@@ -45,6 +45,7 @@ my $do_linklist;
 my $do_headlines;
 my $only_one_direction;
 my $do_alternatives_handling;
+my $do_completeness;
 my $preferalias;
 my $imagetype = "mapserver";
 my $title = "Mapserver/BBBike";
@@ -88,6 +89,7 @@ if (!GetOptions("bbbikeurl=s" => \$bbbike_url,
 		'title=s' => \$title,
 		'onlyonedirection!' => \$only_one_direction,
 		'althandling!' => \$do_alternatives_handling,
+		'completeness!' => \$do_completeness,
 		'customlink=s@' => \@custom_link_defs,
 		'routelistbutton!' => \$do_routelist_button,
 		'linktarget=s' => \$link_target,
@@ -173,6 +175,7 @@ if ($do_linklist) {
     my $last_route_id;
     my $last_section;
     my $current_display_name;
+    my $current_display_addition;
     my @current_lines;
     my $current_link;
     my $current_section;
@@ -200,6 +203,7 @@ if ($do_linklist) {
 	push @html, generate_single_html(coords => \@coords,
 					 (defined $center ? (center => find_nearest_to_center(\@current_lines, $center)) : ()),
 					 label => $current_display_name,
+					 label_addition => $current_display_addition,
 					 link => $current_link,
 					 @common_html_args,
 					);
@@ -218,6 +222,7 @@ if ($do_linklist) {
 
 	@current_lines = ();
 	undef $current_display_name;
+	undef $current_display_addition;
 	undef $current_link;
 	undef $current_section;
 	undef $current_ignore_routelist;
@@ -265,6 +270,17 @@ if ($do_linklist) {
 		$current_display_name = $s->get_directive->{alias}->[0] || $r->[Strassen::NAME];
 	    } else {
 		$current_display_name = $r->[Strassen::NAME] || $s->get_directive->{alias}->[0];
+	    }
+
+	    if ($do_completeness) {
+		my $complete = $s->get_directive->{complete}->[0];
+		if ($complete) {
+		    if ($complete eq 'no') {
+			$current_display_addition = " (unvollständig)";
+		    } elsif ($complete ne 'yes') {
+			warn "WARN: unexpected value for 'complete' directive '$complete', seen for '$current_display_name'...\n";
+		    }
+		}
 	    }
 	}
 
@@ -359,6 +375,7 @@ sub generate_single_html {
     my @coords = @{ delete $args{coords} };
     my $center = delete $args{center};
     my $label = delete $args{label};
+    my $label_addition = delete $args{label_addition};
     my $label_html = delete $args{label_html};
     my $maplabel = delete $args{maplabel};
     my $routelistlabel = delete $args{routelistlabel};
@@ -400,6 +417,9 @@ EOF
 EOF
 	$html .= "\n" . ($link ? CGI::a({href => $link, class => "moreinfo"}, $label) : ($label_html || CGI::escapeHTML($label)));
     } 
+    if (defined $label_addition) {
+	$html .= CGI::escapeHTML($label_addition);
+    }
     $html .= ' <input';
     if ($is_single) {
 	$html .= ' id="submitbutton"';
@@ -452,6 +472,8 @@ EOF
 
 __END__
 
+=encoding utf-8
+
 =head1 NAME
 
 bbd2mapservhtml.pl - create a mapserver route from a bbd or bbr file
@@ -465,7 +487,7 @@ bbd2mapservhtml.pl - create a mapserver route from a bbd or bbr file
 		    [-center x,y] [-centernearest]
 		    [-partialhtml] [-linklist] [-linktarget ...] [-preferalias]
 		    [-title title] [-imagetype ...]
-		    [-onlyonedirection] [-althandling]
+		    [-onlyonedirection] [-althandling] [-completeness]
 		    [-customlink "url label" ...] [-noroutelistbutton]
 		    [file]
 
@@ -567,6 +589,11 @@ and C<< ;radroute >>).
 Handling of alternative routes. This option in hand-optimized for
 F<comments_route> and may be changed in future or even vanish
 completely.
+
+=item -completeness
+
+Mark incomplete features marked with a C<<complete:no>> directive. XXX
+Currently hardcoded to a German label "unvollständig".
 
 =item -customlink "url label"
 
