@@ -727,7 +727,7 @@ Jüdenstr. -> Grunerstr.: Mittelstreifen	3::igndisp 10831,12371 10800,12461 10738
 Grunerstr. -> Jüdenstr.: Mittelstreifen	3::igndisp 10738,12364 10800,12461 10766,12511
 Klosterstr. -> Grunerstr.: Mittelstreifen	3::igndisp 10952,12401 10878,12560 10800,12461
 Grunerstr. -> Klosterstr.: Mittelstreifen	3::igndisp 10954,12635 10878,12560 10952,12401
-Bayernring	1 8616,8605 8455,8567 8371,8543
+Bayernring	1 8616,8605 8455,8567 8380,8545
 Georg-Hermann-Allee (Potsdam): (teilweise) Einbahnstraße	1 -13429,1069 -13418,1668
 Mittelstreifen	3nocross::ignrte -3002,13442 -2977,13424 -2967,13417 -2937,13399 -2706,13291
 Tiefwerderweg -> Ruhlebener Str.: Mittelstreifen	3::igndisp -2960,13203 -2967,13417 -2977,13424
@@ -789,7 +789,7 @@ Prenzlauer Promenade -> Brauhausstr.: Straßenbahntrasse	3::igndisp 12010,16774 1
 Mittelstreifen	3nocross::ignrte 12114,12546 12134,12540 12360,12505
 Karl-Marx-Allee -> Krautstr./Blumenstr.: Mittelstreifen	3::igndisp 12360,12505 12134,12540 12125,12490
 Krautstr./Blumenstr. -> Karl-Marx-Allee: Mittelstreifen	3::igndisp 12125,12490 12134,12540 12114,12546
-Kleineweg: nur für Anlieger	2:Anlieger 9130,8025 9130,7810 9132,7661
+Kleineweg: nur für Anlieger	2:Anlieger 9130,8029 9130,7810 9132,7661
 Kleineweg: nur für Anlieger	2:Anlieger 9115,7645 9120,7600 9145,7522 9097,7469
 Peter-Strasser-Weg: nur für Anlieger	2:Anlieger 9240,7811 9130,7810
 Friedrich-Wilhelm-Str.: In die andere Richtung nur für Anlieger	1 8385,5907 8266,5911
@@ -873,8 +873,8 @@ Weydingerstr. -> Torstr.: Straßenbahntrasse	3::igndisp 11079,13492 11111,13518 1
 Torstr. -> Weydingerstr.: Straßenbahntrasse	3::igndisp 11160,13492 11111,13518 11079,13492
 Erlanger Str.: Barriere	3 12170,8548 12293,8494 12349,8464
 Erlanger Str.: Barriere	3 12349,8464 12293,8494 12170,8548
-Mittelstreifen	3nocross::ignrte 8438,8676 8334,8655 8371,8543
-Loewenhardtdamm -> Loewenhardtdamm: Mittelstreifen	3::igndisp 8371,8543 8334,8655 8306,8722
+Mittelstreifen	3nocross::ignrte 8438,8676 8334,8655 8380,8545
+Loewenhardtdamm -> Loewenhardtdamm: Mittelstreifen	3::igndisp 8380,8545 8334,8655 8306,8722
 Loewenhardtdamm -> Höhndorfstr.: Mittelstreifen	3::igndisp 8306,8722 8334,8655 8438,8676
 Friedbergstr.	1 3012,10812 3204,10895
 Betonblöcke (aber für Radfahrer passierbar)	3nocross::ignrte 9777,10719 9805,10791 9829,10830 9935,11067
@@ -1464,3 +1464,4 @@ Seestr. (Bad Saarow): Poller	3 54732,-11898 54776,-11895 54817,-11895
 Seestr. (Bad Saarow): Poller	3 54817,-11895 54776,-11895 54732,-11898
 Seestr. (Bad Saarow): Poller	3 54643,-11904 54681,-11900 54732,-11898
 Seestr. (Bad Saarow): Poller	3 54732,-11898 54681,-11900 54643,-11904
+Halenseestr.	1 1928,10728 2028,10612 2112,10488 2076,10357 2069,10330 2094,10286 2229,10045

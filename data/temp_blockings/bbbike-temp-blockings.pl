@@ -6487,7 +6487,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_003899',
        data  => <<EOF,
-userdel	1::inwork 8306,8722 8334,8655 8371,8543
+userdel	1::inwork 8306,8722 8334,8655 8380,8545
 EOF
      },
      { from  => 1162681200, # 2006-11-05 00:00
@@ -7316,7 +7316,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_004915',
        data  => <<EOF,
-userdel	2::inwork 8306,8722 8237,8685 8221,8631 8106,8290 8093,8251 7955,7840
+userdel	2::inwork 8306,8722 8237,8685 8215,8631 8101,8292 8088,8254 7955,7840
 EOF
      },
      { from  => 1173913200, # 2007-03-15 00:00
@@ -18911,7 +18911,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_016132',
        data  => <<EOF,
-userdel	q4::inwork; 7949,7607 7943,7708 7951,7801 7955,7840 8093,8251 8106,8290 8221,8631 8237,8685 8306,8722
+userdel	q4::inwork; 7949,7607 7943,7708 7951,7801 7955,7840 8088,8254 8101,8292 8215,8631 8237,8685 8306,8722
 EOF
      },
      { from  => 1302411000, # 2011-04-10 06:50
@@ -20479,8 +20479,10 @@ EOF
        text  => 'Park am Gleisdreieck, Wege im Westpark: wegen Bauarbeiten können die Wege unpassierbar sein',
        type  => 'gesperrt',
        data  => <<EOF,
-#: last_checked: 2012-07-24 vvv
-userdel	2::inwork 8309,10368 8278,10384 8296,10438
+#: last_checked: 2012-10-16 vvv
+userdel	2::inwork 8309,10368 8278,10384 8296,10438 8328,10585 8332,10637 8341,10721
+userdel	2::inwork 8328,10585 8270,10613
+userdel	2::inwork 8318,10738 8270,10613 8264,10460
 userdel	2::inwork 8278,10384 8263,10349 8258,10338
 userdel	2::inwork 8263,10349 8315,10347 8333,10167 8360,10133
 #: last_checked ^^^

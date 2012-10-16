@@ -416,7 +416,7 @@ Delbrückstr.	1 12743,6645 12468,6592
 Emser Str.	1 13058,7165 12872,7134
 Stuthirtenweg: Gitter	3 * 13542,1268 *
 Grunerstr.: Mittelstreifen	3nocross 10738,12364 10800,12461 10878,12560 10954,12635
-Bayernring	1 8616,8605 8455,8567 8371,8543
+Bayernring	1 8616,8605 8455,8567 8380,8545
 Georg-Hermann-Allee (Potsdam): (teilweise) Einbahnstraße	1 -13429,1069 -13418,1668
 Ruhlebener Str.: Mittelstreifen	3nocross -3002,13442 -2977,13424 -2967,13417 -2937,13399 -2706,13291
 An der Wuhlheide: Brückenauffahrt	3nocross 18492,6893 18404,6946 18225,7004 18010,7133
@@ -454,7 +454,7 @@ Karl-Marx-Allee: Mittelstreifen	3nocross 12114,12546 12134,12540 12360,12505
 #XXX del --- Niederwallstr./Spittelmarkt: nur Abbiegen nach rechts erlaubt	3 10189,11773 10205,11758 10240,11740 10299,11786
 #XXX del --- Gertraudenstr.: Abbiegen verboten	3nocross 10512,12039 10460,11979 10391,11898
 #XXX del --- Gertraudenstr.: Abbiegen verboten	3nocross 10313,11805 10299,11786 10240,11740
-Kleineweg: nur für Anlieger	2:Anlieger 9130,8025 9130,7810 9132,7661
+Kleineweg: nur für Anlieger	2:Anlieger 9130,8029 9130,7810 9132,7661
 Kleineweg: nur für Anlieger	2:Anlieger 9115,7645 9120,7600 9145,7522 9097,7469
 Peter-Strasser-Weg: nur für Anlieger	2:Anlieger 9240,7811 9130,7810
 Friedrich-Wilhelm-Str.: In die andere Richtung nur für Anlieger	1 8385,5907 8266,5911
@@ -494,7 +494,7 @@ Kleine Hamburger - Gartenstr.	3 9752,13575 9668,13629 9531,13797
 Torstr.: Straßenbahntrasse	3nocross 10287,13783 10463,13747 10569,13719
 Torstr.: Straßenbahntrasse	3nocross 10746,13673 10898,13632 11111,13518 11160,13492
 Erlanger Str.: Barriere	3 * 12293,8494 *
-Höhndorfstr. - Loewenhardtdamm: Mittelstreifen	3nocross 8438,8676 8334,8655 8371,8543
+Höhndorfstr. - Loewenhardtdamm: Mittelstreifen	3nocross 8438,8676 8334,8655 8380,8545
 #: by: Julia Weber
 Friedbergstr.	1 3012,10812 3204,10895
 Lindenstr.: Betonblöcke (aber für Radfahrer passierbar)	3nocross 9777,10719 9805,10791 9829,10830 9935,11067
@@ -859,3 +859,4 @@ Saatwinkler Damm	3 -624,15494 -302,15546 *
 Seestr. (Bad Saarow): Poller	3 * 55469,-11859 *
 Seestr. (Bad Saarow): Poller	3 * 54776,-11895 *
 Seestr. (Bad Saarow): Poller	3 * 54681,-11900 *
+Halenseestr.	1 1928,10728 2028,10612 2112,10488 2076,10357 2069,10330 2094,10286 2229,10045

@@ -32,8 +32,7 @@ B96a: Asphalt	Q0 9228,23643 9146,23843 8984,24078 8944,24186 8885,24344 8826,245
 Hobrechtsfelder Chaussee (bis Kurve): OK	Q0 15589,27116 15230,26560 14859,26029 14472,25449 14314,25193 14219,25013
 Hobrechtsfelder Chaussee (ab Kurve)	Q0 15589,27116 15711,27928 15777,28037
 Wisbyer Str.: Asphalt	Q0 11019,16465 11289,16423 11397,16405 11448,16398 11470,16394 11542,16384 11632,16373 11673,16367 11727,16358 11750,16354 11808,16343 11829,16339 11889,16328 11936,16302 12023,16242 12090,16199
-Weserstr.: Kopfsteinpflaster, schmale Verbundsteinpflaster-Radwege	Q1 11888,9189 12005,9211 12074,9217 12148,9209
-Weserstr.: asphaltiert, schmale Verbundsteinpflaster-Radwege	Q0 12148,9209 12180,9193 12322,9124
+Weserstr.: asphaltiert, schmale Verbundsteinpflaster-Radwege	Q0 11888,9189 12005,9211 12074,9217 12148,9209 12180,9193 12322,9124
 Weserstr.: Kopfsteinpflaster, schmale Verbundsteinpflaster-Radwege	Q1 12322,9124 12402,9080 12480,9037 12531,9009 12590,8977 12740,8862 12881,8750 13029,8632 13124,8562 13217,8493 13384,8354 13566,8212 13724,8090
 Jessnerstr.: Asphalt mit Aufpflasterungen	Q0 15080,11905 14981,11751 14946,11697 14849,11539
 Stuttgarter Str.: mäßiger Asphalt	Q1 13663,8011 13510,8138 13331,8283
@@ -57,7 +56,8 @@ Jüterboger Str.: mäßiges Kopfsteinpflaster	Q2 10266,8946 9958,8966 9799,8962
 Methfesselstr.: sehr gutes Kopfsteinpflaster, 40 km/h	Q0 9211,9354 9170,9206 9150,9152 9125,9078 9115,9046
 Methfesselstr.: mäßiges Kopfsteinpflaster	Q2 9115,9046 9111,9036 9063,8935 8982,8781
 Wilhelmshöhe: Verbundsteinpflaster	Q1 9225,9111 9186,9107 9155,9029 9149,8961
-Priesterweg: mäßiges bis schlechtes Kopfsteinpflaster	Q2 7227,7352 7230,7264 7222,6458 7217,6065 7216,5888
+Priesterweg: mäßiges bis schlechtes Kopfsteinpflaster	Q2 7227,7352 7230,7264 7222,6458 7217,6065
+Priesterweg: mäßiges bis schlechtes Kopfsteinpflaster	Q2 7217,6065 7216,5888
 Priesterweg: Asphalt	Q0 7216,5888 7175,5843
 Hans-Baluschek-Park, Zugang: Verbundsteinpflaster	Q0 7370,6451 7222,6458
 Großgörschenstr.: mäßiges Kopfsteinpflaster	Q2 8186,9380 8086,9418 8035,9437 7960,9466
@@ -2571,7 +2571,7 @@ Freiastr.: Kopfsteinpflaster	Q2 16826,12408 16694,12422
 (Siegfriedstr. - Herzbergstr.): Asphalt	Q0 16865,13000 17048,13000 17113,13025 17170,13070 17227,13075 17257,13117 17219,13430 17201,13510 17201,13519
 (Siegfriedstr. - Herzbergstr.): Asphalt	Q0 17219,13430 17300,13459
 Herzbergstr.: betoniert/Verbundsteinpflaster	Q0 17232,13518 17300,13459 17330,13437 17479,13434 17688,13430
-Rumeyplan: Asphalt mit Schäden	Q1 8694,7691 8815,7722 8909,7769 8967,7821
+Rumeyplan: Asphalt mit Schäden	Q1 8690,7704 8812,7730 8907,7773 8959,7824
 Bülowstr. (Zehlendorf): mäßiges Kopfsteinpflaster, viele Wellen und Reparaturstellen	Q2 -662,2998 -872,3133 -1052,3276 -1054,3328
 Mäckeritzstr.: asphaltiert	Q0 1361,14431 1320,14440 1262,14510 1244,14558 1235,14609
 (Neue Grünstr. - Alte Jakobstr.): Kleinpflaster	Q1 10624,11548 10526,11612
@@ -5978,7 +5978,8 @@ Bebelplatz: gepflastert	Q1 9743,12239 9702,12307 9656,12386
 Bebelplatz: gepflastert	Q1 9674,12231 9702,12307 9734,12395
 (Yorckstr. - Park am Gleisdreieck): Beton	Q0 8358,9568 8357,9598 8353,9642 8350,9685 8349,9697
 (Park am Gleisdreieck, Querweg): Beton	Q0 8335,9702 8349,9697 8446,9670 8497,9654 8540,9644
-(Park am Gleisdreieck, Berlin-Leipzig): Asphalt	Q0 8296,10438 8278,10384 8309,10368 8315,10347 8333,10167 8360,10133 8338,9971 8335,9702 8333,9583
+(Park am Gleisdreieck, Berlin-Leipzig): Asphalt	Q0 8341,10721 8332,10637 8328,10585 8296,10438 8278,10384 8309,10368 8315,10347 8333,10167 8360,10133 8338,9971 8335,9702 8333,9583
+(Park am Gleisdreieck, westlicher Weg): Asphalt	Q0 8318,10738 8270,10613 8264,10460
 (Park am Gleisdreieck, Generalszug): Beton	Q0 8338,9971 8521,9911 8571,9896 8652,9870 8733,9841
 (Park am Gleisdreieck, östlicher Weg): Kopfsteinpflaster	Q2 8775,10289 8780,10248 8726,10056
 (Park am Gleisdreieck, östlicher Weg): Asphalt	Q0 8726,10056 8652,9870
@@ -5990,6 +5991,7 @@ Bebelplatz: gepflastert	Q1 9674,12231 9702,12307 9734,12395
 (Rampe Hornstr. - Generalszug): Asphalt	Q0 8733,9841 8722,9743
 (Park am Gleisdreieck): Asphalt	Q0 8278,10384 8263,10349 8258,10338
 (Park am Gleisdreieck, Weg über dem Tunnelmund): Asphalt	Q0 8263,10349 8315,10347
+(Park am Gleisdreieck, Eingang Lützowstr.): Beton	Q0 8328,10585 8270,10613
 (Grenzallee - Britzer Hafensteg): überwiegend Asphalt, einige Verbundsteinpflasterabschnitte	Q0 13881,6634 13831,6588 13857,6523 13864,6415 13984,6270 13997,6216
 Britzer Hafensteg: Holzbohlen	Q1 13997,6216 13951,6190
 Sieversufer: Asphalt	Q0 13951,6190 13883,6163
@@ -6114,7 +6116,7 @@ Lützelsteiner Weg: Asphalt	Q0 1500,4356 1511,4422 1569,4600 1603,4637 1667,4664 
 Lorcher Str.: unebener Asphalt	Q1 4273,7002 4206,7040
 Lorcher Str.: unbefestigter Weg	Q1 4206,7040 4184,7053 4160,7043
 Lorcher Str.: Asphalt	Q0 4160,7043 4059,7038
-(General-Pape-Str. - Gontermannstr.): Asphalt	Q0 8106,8290 8202,8293 8265,8305 8276,8295
+(General-Pape-Str. - Gontermannstr.): Asphalt	Q0 8101,8292 8202,8293 8265,8305 8276,8295
 (Leuthener Platz - Wilhelm-Kabus-Str.): Asphalt	Q0 7716,8356 7807,8354 7893,8327
 (Altonaer Str. - Händelallee): Gehwegplatten und wassergebundene Decke	Q1 6348,12272 6280,12222
 Joseph-Haydn-Str.: Kopfsteinpflaster	Q2 5825,12023 5790,12026
@@ -6368,9 +6370,9 @@ Exiner Str.: Asphalt	Q0; 17134,908 17274,705
 Eichenauer Weg: Kopfsteinpflaster	Q2 16813,865 16889,853 17021,867
 Eichenauer Weg: Kopfsteinpflaster	Q2 17021,867 17134,908 17236,985
 Sebnitzer Weg: Kopfsteinpflaster	Q2 16282,1052 16227,997
-(Kanzlerweg - Schreiberring): unbefestigter Weg	Q1 8839,8132 8839,8168 8861,8242
-(Rumeyplan, Grünanlage): unbefestigter Weg	Q1 8909,7769 8899,7788
-(Rumeyplan - Kanzlerweg): unbefestigter Weg	Q1 8899,7788 8839,7904
+(Kanzlerweg - Schreiberring): unbefestigter Weg	Q1 8830,8148 8839,8168 8861,8242
+(Rumeyplan, Grünanlage): unbefestigter Weg	Q1 8907,7773 8895,7797
+(Rumeyplan - Kanzlerweg): unbefestigter Weg	Q1 8895,7797 8839,7904
 Mussehlstr.: Gehwegplatten	Q0 8842,8561 8756,8453
 Mussehlstr.: Verbundsteinpflaster	Q1 8756,8453 8711,8371
 Varian-Fry-Str.: Kleinsteinpflaster	Q1 8374,11479 8389,11378
@@ -7036,8 +7038,8 @@ Jülicher Str.: Kopfsteinpflaster	Q2 9514,16603 9498,16480 9487,16395 9475,16307 
 (Mauerweg Frohnau-Heiligensee): Asphalt	Q0 -802,24541 -972,24498 -1655,24428 -1940,24464 -1953,24435
 (neben dem U-Bahn-Viadukt): wassergebundene Decke	Q1 7906,10098 7928,10094 8027,10076
 (Dennewitzstr., hinterer Weg): Kleinsteinpflaster	Q1 8027,10076 8029,10106 8074,10292 8061,10310
-(Park am Gleisdreieck, Eingang Schöneberger Str.): Rasengittersteine	Q2 8296,10438 8328,10451
-(Park am Gleisdreieck, Eingang Schöneberger Str.): Verbundsteinpflaster	Q1 8328,10451 8393,10505
+(Park am Gleisdreieck, Eingang Schöneberger Str.): Rasengittersteine	Q2 8296,10438 8322,10451
+(Park am Gleisdreieck, Eingang Schöneberger Str.): Verbundsteinpflaster	Q1 8322,10451 8338,10484 8393,10505
 (Treptower Park): Asphalt	Q0 15187,9038 15181,8967 15159,8934
 (Treptower Park): wassergebundene Decke	Q1 15187,9038 15154,9106 15025,9171 14950,9307
 (Treptower Park): Asphalt	Q0 14950,9307 14898,9364 14883,9431
@@ -7696,6 +7698,8 @@ Bahnunterführung: unbefestigte Straße	Q2 18278,9818 18266,9853
 Am Tierpark [Nebenfahrbahn]: Asphalt	Q1 18202,11253 18202,11234 18245,11233 18301,11033 18368,10763
 (Planufer - Böckhstr.): Kleinsteinpflaster	Q1 11160,9932 11170,9919 11197,9894
 Grimmstr. (Kreuzberg): Verbundsteinpflaster	Q0 11164,9885 11164,9904 11170,9919 11177,9935
+Peter-Strasser-Weg: Asphalt mit leichten Schäden	Q0 9240,7811 9130,7810
+(Straße unter dem U-Bahnhof Gleisdreieck): Kopfsteinpflaster	Q2 8333,10167 8393,10505
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3777,16532 -3870,16527 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): mäßiger Asphalt	Q1 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): unbefestigte Straße	Q2 12608,22943 12589,22948 12526,22972
@@ -10855,7 +10859,8 @@ Singener Weg: guter Asphalt	Q0 -505,2456 -425,2154 -326,2177
 Hegauer Weg: guter Asphalt	Q0 -326,2177 -166,2283 -84,2376 -35,2434 -19,2469
 Schlehdornsteig: Wechsel zwischen Kopfsteinpflaster und Verbundsteinpflaster	Q1 -2046,2070 -2208,2010
 Mittelstr. (Zehlendorf): schlechtes Kopfsteinpflaster	Q3 104,2802 50,3031
-Trautenauer Str.: schlechtes Kopfsteinpflaster	Q3 17753,8290 17774,8342 17794,8429 17813,8508 17851,8662 17879,8773 17915,8900
+Trautenauer Str.: schlechtes Kopfsteinpflaster	Q3 17753,8290 17774,8342 17794,8429 17813,8508 17851,8662 17879,8773
+Trautenauer Str.: schlechtes Kopfsteinpflaster	Q3 17879,8773 17915,8900
 Am Forstacker: Asphalt	Q0 -3676,17131 -3671,17202 -3648,17250 -3612,17280 -3532,17333 -3491,17381 -3418,17525
 Talsandweg: guter Asphalt	Q0 3138,21372 3206,21179 3222,21134
 Tourcoingstr.: guter Asphalt	Q0 3781,16175 3796,16202 3836,16273 3895,16381
@@ -12637,12 +12642,12 @@ Gutzkowstr.: Kopfsteinpflaster	Q2 6785,8194 6636,8157
 Gustav-Freytag-Str.: Verbundsteinpflaster	Q1 6807,8309 6779,8279
 Gustav-Freytag-Str.: Kopfsteinpflaster	Q2 6779,8279 6785,8194 6792,8122
 (Loewenhardtdamm - Höhndorfstr.): Verbundsteine, Beton	Q0 8334,8655 8438,8676
-(Weg d. Kol. Papestr.): Verbundsteine und Schotter	Q1 8221,8631 8259,8628 8265,8305
+(Weg d. Kol. Papestr.): Verbundsteine und Schotter	Q1 8215,8631 8259,8628 8265,8305
 Udetzeile: Asphalt mit Fugen	Q1 8327,8302 8315,8189
 (zum Bayernring): Asphalt	Q0 8455,8567 8531,8404
 Bäumerplan: Asphalt	Q0 8561,8252 8536,8192 8519,8088
 Adolf-Scheidt-Platz: Asphalt	Q1 8731,8050 8765,8050 8783,8020 8769,7994 8731,7990
-Kanzlerweg: Asphalt	Q0 8839,8132 8839,8021 8839,7904
+Kanzlerweg: Asphalt	Q0 8830,8148 8834,8023 8839,7904
 Wiesenerstr.: mäßiger Asphalt	Q1 8900,7643 8923,7673 8948,7689 8952,7719 8926,7705 8923,7673
 Siegertweg: mäßiger Asphalt	Q1 8971,7359 8982,7438 9042,7462 9067,7490
 Hessenring: Beton	Q0 8465,7699 8549,7622 8625,7594

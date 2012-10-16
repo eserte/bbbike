@@ -8,12 +8,12 @@
 #
 #: temporary vvv
 # 
-#: last_checked: 2012-10-12
+#: last_checked: 2012-10-16
 #: next_check: 2013-05-17
 #: XXX vmz-Eintrag: Am Oberbaum (Friedrichshain-Kreuzberg): Baustelle, Fahrtrichtung gesperrt (bis 05/2013) Richtung Kreuzberg zwischen M¸hlenstr. und Oberbaumbr¸cke, 08.08.2012 10:00 Uhr bis 17.05.2013 17:00 Uhr¶INKO_113418¶http://asp.vmzberlin.com/VMZ_LSBB_MELDUNGEN_WEB/Meldungskarte.jsp?back=true&map=true&x=52.50189&y=13.4457&zoom=13&meldungId=INKO_113418
 Oberbaumbr¸cke: Umfahrung wegen Baustelle, etwas Zeitverlust	q3::inwork; 13332,10832 13305,10789
 # 
-#: last_checked: 2012-10-12 vvv
+#: last_checked: 2012-10-16 vvv
 #: next_check: 2012-10-17 vvv
 Modersohnstr.: Bauarbeiten, Einbahnstraﬂenregelung	q3::inwork; 14181,11434 14134,11272
 Dirschauer Str.: Einbahnstraﬂenregelung wegen Umleitungsstrecke	q4::inwork; 13970,11366 14031,11569
@@ -88,8 +88,8 @@ Universit‰tsstr.: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 9580,12581 9601
 #XXX del --- eigentlich gut zu befahren --- Revaler Str.: Bauarbeiten, Kreuzung gesperrt, Gehweg kann benutzt werden	q4::inwork 14509,11060 14442,11101
 #XXX del --- #: next_check: ^^^ --- #: last_checked: ^^^
 # 
-#: last_checked: 2012-10-11
-#: next_check: 2012-10-15
+#: last_checked: 2012-10-16
+#: next_check: 2012-10-20
 Marchlewskistr., Helsingforser Str.: Bauarbeiten, u.U. Ausweichen auf Gehweg	q4::inwork; 13473,11456 13496,11384 13541,11355
 # 
 #: last_checked: 2012-10-12
@@ -99,8 +99,8 @@ Rathausstr.: Fuﬂg‰nger, enge Stelle vor dem Roten Rathaus	q2::inwork 10601,12521
 # 
 #XXX del --- #: last_checked: 2012-09-19 vvv--- #: next_check: 2012-10-19 vvv --- #: note: komplette Fertigstellung und Verkehrsfreigabe im Fr¸hjahr 2013 --- Rathausstr. und Rathausbr¸cke: Behinderungen wegen Bauarbeiten mˆglich	q1::inwork 10281,12310 10362,12351 10422,12395 --- #: next_check: ^^^ --- #: last_checked: ^^^
 # 
-#: last_checked: 2012-09-26 vvv
-#: next_check: 2012-10-20 vvv
+#: last_checked: 2012-10-16 vvv
+#: next_check: 2012-10-30 vvv
 Alte Jakobstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 10489,11405 10437,11352
 Alte Jakobstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 10437,11352 10256,11160
 Neue Gr¸nstr.: Einbahnstraﬂenregelung wegen Bauarbeiten in der Alten Jakobstr.	q3::inwork; 10389,11390 10446,11470
@@ -614,7 +614,7 @@ Germaniagarten: Fuﬂg‰nger, Bordsteine	q2 11209,6166 11224,6244
 (Bambachstr. - Mariendorfer Weg): Fuﬂg‰nger, enge Kurven	q2 12052,6660 12038,6633 12052,6605 12094,6585 12125,6510
 Mauerweg: Fuﬂg‰nger	q1 12984,1011 12557,799 12246,706 11922,586 11794,550 11698,390 11686,169 11746,-62 11819,-286 12078,-1170 12283,-1881 12344,-2173 12314,-2270 12268,-2294
 Mauerweg: Fuﬂg‰nger	q1 4406,-910 4038,-362 4046,-299 4034,-255 3982,-181 3941,-127 3908,-117 3842,-6 3788,26 3767,66 3689,182 3607,283 3417,524
-Bayernring: enge Straﬂe	q1 8371,8543 8455,8567 8616,8605
+Bayernring: enge Straﬂe	q1 8380,8545 8455,8567 8616,8605
 Bulgarische Str.: kein Radweg, Gehweg benutzen	q2; 15591,8848 15378,8668 15166,8489
 Hedwigskirchgasse: Fuﬂg‰nger	q1 9743,12239 9747,12205
 #: XXX_prog: Bordstein nur am S¸dende
@@ -1185,7 +1185,7 @@ Karsenzeile: Fuﬂg‰nger	q1 14245,2704 14408,2708 14458,2709 14582,2595 14597,2607
 Karsenzeile: Fuﬂg‰nger, Bordsteinkante	q2 14682,2532 14597,2607
 Marianne-Hapig-Weg: Fuﬂg‰nger, Spielplatz	q2- 17623,-221 17563,-364
 (Kanzlerweg - Schreiberring): eng	q2 8839,8168 8861,8242
-(Rumeyplan - Kanzlerweg): eng	q2 8899,7788 8839,7904
+(Rumeyplan - Kanzlerweg): eng	q2 8895,7797 8839,7904
 Elisabeth-Schwarzhaupt-Platz: einige Fuﬂg‰nger	q1 9274,13963 9167,14127
 (Bornsdorfer Str. - Werbellinstr.): einige Fuﬂg‰nger	q1 12668,8077 12650,8164
 #: XXX_prog BS (2x)
@@ -1708,7 +1708,7 @@ Voxstr.: Fuﬂg‰nger	q3 8309,11390 8375,11368
 Alice-Salomon-Park: getrennte Wege f¸r Radfahrer und Fuﬂg‰nger, Bordsteine	q2 6851,9365 6771,9458 6728,9457
 (Geﬂlerstr. - Monumentenstr.): Fuﬂg‰nger, Kinder	q2 7970,8886 7964,9060 8009,9063 8014,9126
 (Loewenhardtdamm - Hˆhndorfstr.): Fuﬂg‰nger, Bordsteine, Schranken	q2 8334,8655 8438,8676
-(Weg d. Kol. Papestr.): Fuﬂg‰nger	q1 8221,8631 8259,8628 8265,8305
+(Weg d. Kol. Papestr.): Fuﬂg‰nger	q1 8215,8631 8259,8628 8265,8305
 (zum Bayernring): Fuﬂg‰nger	q1 8455,8567 8531,8404
 Bautzener Platz: Fuﬂg‰nger, Bordsteine	q2 8182,9240 8100,9240
 Bautzener Platz: Fufg‰nger, Bordsteine	q2 8102,9262 8183,9260

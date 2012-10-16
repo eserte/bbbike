@@ -26,10 +26,12 @@ Grunewaldstr. (Steglitz)	?::projected 4861,5581 4671,5697 4520,5793
 #: by: MoPo 2009-08-01, soll 2010 realisiert werden vvv
 #: last_checked: 2012-09-22
 #: next_check: 2013-04-15
+#: XXX Baumaßnahme 1.48 (Realisierung nach 2011)
 Stülerstr.	?::projected 6825,11486 6716,11439 6692,11365 6679,11319 6630,11247 6606,11222
 # 
 #: last_checked: 2012-09-29
 #: next_check: 2012-11-30
+#: XXX Baumaßnahme 3.32 (Realisierung nach 2011)
 Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12128,14640 12317,14535 12425,14459 12621,14313 12729,14227 12901,14093 12975,13990 13037,13897 13100,13803 13166,13707 13225,13620 13228,13615 13330,13468
 # 
 #: last_checked: 2012-10-12 vvv
@@ -42,19 +44,140 @@ Am Friedrichshain: Radspuren werden (zumindest teilweise) markiert	?::inwork 124
 #: last_checked: 2012-09-10
 #: next_check: 2012-10-15
 #: XXX erste Anfänge existieren südlich der Friesenstr. (seen: 2012-09-10)
+#: XXX Baumaßnahme 3.33 (Realisierung in 2011)
 Germanenstr. (oder nur das kleine Stück bis Waldsteg?)	?::projected 8406,19081 8359,19162 8307,19458 8304,19475 8268,19558 8234,19634 8233,19695 8231,19806 8242,19869 8234,19936
 #: by: ^^^
 # 
 #: by: Tagesspiegel vom 2009-04-12, soll 2009 realisiert werden
 #: corrected_by: MoPo 2009-08-01, soll 2010 realisiert werden
-#: last_checked: 2012-10-09
+#: last_checked: 2012-10-16
 #: next_check: 2012-12-01
+#: XXX im Baumaßnahmenkatalog ist nur der östliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaßnahmen 1.46 (Realisierung in 2011)
 Annenstr./Heinrich-Heine-Platz	?::projected 11349,11227 11249,11268 11091,11379 11052,11414 11039,11425 10915,11535 10815,11662
 # 
 #: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20121009.0950.376338.html
 #: next_check: 2012-11-09
 #: XXX nach Ablauf des Datums vielleicht einfügen, aber mit XXX versehen
 Markstr.: Radspuren werden markiert	?::inwork 7672,16878 7647,17037 7644,17054 7621,17246 7602,17399
+# 
+#: XXX Baumaßnahme 4.15 (Realisierung nach 2011)
+Sömmeringstr.: werden hier Radspuren markiert?	?::projected 3735,12705 3716,12925 3714,12949 3711,13098 3711,13202
+#: XXX Baumaßnahme 4.12 (Realisierung nach 2011)
+Lise-Meitner-Str.: werden hier Radspuren markiert?	?::projected 3711,13202 3721,13274 3742,13416 3741,13495 3741,13558 3735,13618 3717,13743 3702,13865
+#: XXX Baumaßnahme 5.11 (Realisierung nach 2011)
+Schulenburgstr./Weißenburger Str.: werden hier Radspuren markiert?	?::projected -2706,13291 -2728,13269 -2960,13203 -3159,12962 -3210,12913 -3301,12864 -3448,12834 -3650,12762
+#: XXX Baumaßnahme 4.18 (Realisierung nach 2011)
+Hubertusallee/Teplitzer Str.: werden hier Radspuren markiert?	?::projected 2327,8717 2299,8675 2279,8638 2201,8519 2132,8422 2129,8333 2106,8075 2087,7811 2116,7740
+#: XXX Baumaßnahmen GR6.20, GR6.19 (Realisierung nach 2011)
+Kronprinzessinnenweg: werden hier Radspuren markiert?	?::projected -4001,2858 -4188,2674 -4280,2539 -4290,2304 -4181,2062 -4164,1993 -4180,1941 -4256,1831 -4368,1731 -4492,1624 -4587,1542 -4644,1514 -4744,1466 -4827,1433 -4944,1298
+#: XXX Baumaßnahme GL6.22 (Realisierung nach 2011)
+Waltershauser Str.: Qualität jetzt, später?	? 6526,1688 6679,1734 6848,1809
+#: XXX Baumaßnahme 7.4 (Realisierung nach 2011)
+Großziethener - Barnetstr.: werden hier die bestehenden Radwege verbessert oder durch Radspuren ersetzt?	?::projected 12078,-1170 12023,-1174 11953,-1181 11858,-1189 11761,-1199 11717,-1204 11666,-1209 11578,-1220 11240,-1262 11149,-1274 11003,-1303 10844,-1335 10720,-1340 10583,-1311 10492,-1266 10379,-1194 10228,-1099 10143,-1026 10082,-986 9884,-860 9815,-805 9773,-786 9693,-815
+#: XXX Baumaßnahme 7.12 (Realisierung nach 2011)
+Stein/Nuthestr.: wird hier vielleicht eine Ampel hingestellt?	?::projected 10243,-1876 10293,-1904 10297,-1955
+# 
+#: XXX Baumaßnahme 2.29 (Realisierung nach 2011)
+#: last_checked: 2012-07-25
+#: next_check: 2013-03-01
+Hasenheide: werden hier vielleicht Radspuren Richtung Osten markiert oder Radwege erstellt? Was ist mit der existierenden Gegenrichtung?	?::projected 11831,8989 11767,9026 11629,9086 11550,9104 11500,9116 11449,9125 11136,9183 11108,9187 10713,9260
+# 
+#: XXX Baumaßnahme 2.28 (Realisierung nach 2011)
+Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwege erstellt? Was ist mit der existierenden Gegenrichtung?	?::projected 8804,10303 8802,10290 8783,10166 8780,9968 8779,9851 8779,9829 8779,9812 8777,9601
+# 
+#: XXX Baumaßnahme 2.8, 2.16 (Realisierung 2011 und nach 2011)
+#: last_checked: 2012-09-22
+#: next_check: 2013-06-01
+Skalitzer/Gitschiner Str.: werden hier Radspuren markiert?	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280
+# 
+#: XXX Baumaßnahme 2.23 (Realisierung nach 2011)
+#: last_checked: 2012-10-16
+#: next_check: 2013-06-01
+Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected 12497,11459 12551,11515 12645,11673 12681,11741 12726,11851 12758,11915 12822,12067 12833,12154 12850,12286 12869,12425 12891,12549
+# 
+#: XXX Baumaßnahme 1.39 (Realisierung in 2011)
+#: last_checked: 2012-10-15
+#: next_check: 2013-06-01
+Brückenstr.: werden hier Radspuren markiert?	?::projected 11325,12021 11283,11876 11242,11720 11155,11750
+#
+#: XXX Baumaßnahme 1.17 (Realisierung in 2011)
+#: last_checked: 2012-10-15
+#: next_check: 2013-06-01
+Markgrafenstr.: wird hier eine Radwegführung erstellt?	?::projected 9711,11543 9737,11546 9732,11574 9707,11596 9701,11656
+#
+#: XXX Baumaßnahme 3.18 (Realisierung in 2011)
+Otto-Braun-Str.: werden hier Radspuren markiert?	?::projected 11446,13294 11486,13350 11539,13425 11561,13451 11640,13551 11706,13635
+# 
+#: XXX Baumaßnahme 1.47 (Realisierung nach 2011)
+#: last_checked: 2012-09-22
+#: next_check: 2013-06-01
+Müllerstr.: werden hier Radspuren markiert?	?::projected 6781,16026 6914,15908 6936,15888 7043,15793 7129,15717 7198,15656 7277,15586 7396,15479 7474,15408 7611,15286 7754,15160
+# 
+#: XXX Baumaßnahme 1.23 (Realisierung nach 2011)
+Kongostr./Türkenstr.: wird hier asphaltiert werden?	?::projected 6244,16096 6258,16111 6349,16213 6450,16325 6444,16331 6629,16538
+# 
+#: XXX Baumaßnahme 1.45 (Realisierung nach 2011)
+#: last_checked: 2012-09-10
+#: next_check: 2013-03-01
+Reinickendorfer Str.: werden hier Radspuren markiert?	?::projected 7672,16878 7687,16770 7728,16538 7754,16364 7808,16215 7824,16170 7885,16005 7948,15802 7962,15633 7966,15571
+# 
+#: XXX Baumaßnahme 3.39 (Realisierung nach 2011)
+#: last_checked: 2012-06-03
+#: next_check: 2013-06-01
+Granitzstr.: werden hier Radspuren markiert?	?::projected 11253,18168 11320,18218 11395,18274 11492,18347 11581,18398 11606,18416 11698,18446 11796,18482 11950,18529
+# 
+#: XXX Baumaßnahme 12.15 (Realisierung nach 2011)
+#: last_checked: 2012-09-29
+#: next_check: 2013-06-01
+Quickborner Str.: werden hier Radspuren markiert?	?::projected 7991,21531 7966,21563 7959,21573 7781,21812 7742,21867 7594,22068 7516,22178 7439,22306 7416,22349
+# 
+#: XXX Baumaßnahme B3.4 (Realisierung nach 2011)
+#: last_checked: 2012-09-13
+#: next_check: 2013-06-01
+Schönerlinder Str.: entstehen hier bessere Radwege oder Radspuren?	?::projected 11929,23946 11981,24260 12177,24684 12261,24851 12405,25137 12632,25569 12698,25695 12944,26163 13192,26628 13256,26863 13348,27204
+#
+#: XXX Baumaßnahme 3.35 (Realisierung in 2011)
+Pasedagplatz: wird hier eine Ampel entstehen?	?::projected 14165,17224 14144,17165
+#: XXX Baumaßnahme 10.11 (Realisierung nach 2011)
+Wuhletalstr.: werden hier die Radspuren fortgeführt?	?::projected 20895,17594 20769,17650 20728,17670 20485,17784
+#: XXX Baumaßnahme 10.20 (Realisierung nach 2011)
+Marzahner Promenade: wird hier eine Anbindung für Radfahrer entstehen?	?::projected 20667,15721 20641,15622
+#: XXX Baumaßnahme 10.19 (Realisierung nach 2011)
+Hänflingsteig: wird dieser Abschnitt asphaltiert?	?::projected 20093,14591 20147,14570
+# 
+#: XXX Baumaßnahme 11.34 (Realisierung nach 2011)
+#: last_checked: 2012-09-13 (nördliches Ende)
+#: next_check: 2013-06-01
+Oderbruchstr./Hohenschönhausener Str.: werden hier Radspuren markiert?	?::projected 15058,14575 14754,14406 14721,14379 14667,14336 14650,14322 14358,14155 14298,14015 14261,13932 14218,13834
+# 
+#: XXX Baumaßnahme 3.15 (Realisierung nach 2011)
+#: last_checked: 2012-06-05
+#: next_check: 2013-03-01
+Michelangelostr.: werden hier Radspuren markiert?	?::projected 13768,15195 13696,15237 13560,15318 13186,15518 13072,15590
+# 
+#: XXX Baumaßnahme 11.12 (Realisierung nach 2011)
+#: last_checked: 2012-08-25 (nördliches Ende)
+#: next_check: 2014-04-01
+Ruschestr.: werden hier Radspuren markiert?	?::projected 15950,12886 15953,12753 15952,12679 15947,12626 15926,12478 15904,12340
+# 
+#: XXX Baumaßnahme 11.45 (Realisierung nach 2011)
+Weg in KGA: was passiert hier?	?::projected 18278,9818 18242,9676
+#: XXX Baumaßnahme 8.20 (Realisierung nach 2011)
+Karl-Marx-Str.: werden hier Radspuren markiert?	?::projected 13095,6926 13122,6717 13126,6687 13141,6651 13195,6560 13236,6489
+#: XXX Baumaßnahme 9.16 (Realisierung nach 2011)
+Kiefholzstr.: werden hier Radspuren markiert?	?::projected 15229,7785 15557,7404 15564,7395 15609,7347 15695,7254 15919,6992 15971,6936 16049,6852 16143,6750 16273,6609 16280,6601 16333,6544 16425,6445
+#: XXX Baumaßnahme 9.11 (Realisierung in 2011)
+Kiefholzstr.: werden hier Radspuren markiert?	?::projected 16425,6445 16485,6377 16861,5935
+# 
+#: XXX Baumaßnahme 9.19 (Realisierung nach 2011)
+#: last_checked: 2012-08-01
+#: next_check: 2013-04-01
+Oberspreestr.: hier entstehen wahrscheinlich Radverkehrsanlagen (Radwege/spuren)	?::projected 20949,4775 20765,4839 20689,4862 19965,5101 19737,5176 19715,5185 19534,5242
+# 
+#: XXX Baumaßnahme 8.14 (Realisierung nach 2011)
+Blaschkoallee: werden hier Radwege/spuren in Richtung Osten entstehen?	?::projected 13809,5257 13600,5240 13594,5240 13323,5222 13247,5210 13112,5253 13047,5275
+#: XXX Baumaßnahme 9.10 (Realisierung nach 2011), 9.2 (Realisierung bis 2010)
+Müggelseedamm: entstehen hier Radwege/spuren, insbesondere Richtung Westen?	?::projected 25010,4807 24936,4838 24798,4895 24681,4943 24074,5279 23950,5342
 # 
 #: section ^^^
 #: section ^^^
@@ -90,6 +213,7 @@ Markstr.: Radspuren werden markiert	?::inwork 7672,16878 7647,17037 7644,17054 7
 # - handelt es sich bei der Frage um Zebrastreifen und andere
 #   für Radfahrer eher uninteressante Dinge (-> private)
 # 
+#: XXX Baumaßnahme 1.16 (Realisierung nach 2011)
 Ghanastr. - Kurt-Schumacher-Damm: im Zuge der RR4 könnte es hier eine neue Verbindung geben	?::projected 5255,17007 4988,17172
 Wackerweg - Otisstr.: im Zuge der RR4 könnte es hier eine neue Verbindung geben	?::projected 3803,18855 3680,18913
 Verbindung im Zuge der RR9: Qualität?	? 26199,5643 26270,5829 26302,5932
@@ -243,6 +367,7 @@ Radweg Berlin-Leipzig, Abschnitt Yorckstr. - Monumentenstr.: wird bis Ende 2013 
 Radweg Berlin-Leipzig, Abschnitt Monumentenstr. - Alfred-Lion-Steg: Realisierung bis 2015	?::projected 8235,9107 8200,8920 7991,8297
 # 
 #: by: http://www.stadtentwicklung.berlin.de/staedtebau/foerderprogramme/stadtumbau/Schoeneberger-Schleife-Suedl-Teilstueck-an.4681.0.html
+#: XXX hier könnte tatsächlich schon was existieren
 Radweg Berlin-Leipzig, Abschnitt Alfred-Lion-Steg - Südkreuz: Realisierung bis 2012	?::inwork 7991,8297 7856,7914
 # 
 #: by: http://www.stadtumbau-berlin.de/Fotos.4730.0.html
@@ -465,6 +590,7 @@ Fasanenstr.: Öffnung der Einbahnstraße für Radfahrer	?::projected 5268,11274 524
 # 
 #: last_checked: 2012-06-09
 #: next_check: 2012-10-15
+#: XXX Baumaßnahmen 8.12 (Realisierung in 2011)
 Braunschweiger Str.: Asphaltierung	?::projected 13047,7234 13150,7254 13322,7294 13369,7307 13487,7337
 # 
 #: last_checked: 2010-06-06
@@ -485,25 +611,29 @@ Radverkehrsanlagen um den Knotenpunkt Weißenseer Weg/Konrad-Wolf-Str.: Radspuren
 #: last_checked: 2012-08-25 (Höhe Degnerstr.)
 #: next_check: 2013-03-01
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120207.1005.365838.html
-Suermondtstr.: Schaffung von Radverkehrsanlagen	?::projected 16964,16042 16961,16042 16660,16165 16515,16207 16416,16236 16260,16282 16095,16331 15919,16383
+#: XXX Baumaßnahme 11.46 (Realisierung in 2011)
+Suermondtstr./Buschallee: Schaffung von Radverkehrsanlagen	?::projected 16964,16042 16961,16042 16660,16165 16515,16207 16416,16236 16260,16282 16095,16331 15919,16383 15871,16399 15845,16405 15432,16500
 # 
 #: last_checked: 2012-09-13
 #: next_check: 2013-03-01
+#: XXX Wird hier jemals etwas entstehen? Es ist nichts im Baumaßnahmenkatalog verzeichnet!
 Hansastr.: Schaffung von Radverkehrsanlagen	?::projected 14650,15750 14823,15776 14934,15860 15124,16104 15187,16185 15432,16500
 # 
 #: last_checked: 2011-04-09
 #: next_check: 2011-06-15
+#: XXX wahrscheinlich nur im nördlichen Teil bis Kaiserstr.
+#: XXX Baumaßnahme 7.13 (Realisierung in 2011)
 Ringstr.: Radverkehrsanlagen	?::projected 9021,3878 8766,4038 8605,4138 8399,4244 8159,4354 8098,4376 7990,4420 7921,4451 7690,4552
 #: by: ^^^
 # 
-#: last_checked: 2012-09-18
-#: next_check: 2012-10-07
+#: last_checked: 2012-10-16
+#: next_check: 2012-11-07
 #: by: http://www.stadtumbau-berlin.de/O-W-Gruenzug-Fussgaenger-und-Radfahrersteg.4699.0.html
 #: by: http://www.stadtumbau-berlin.de/fileadmin/images/Dokumentation/Projektdokumentation/Tempelhof-Schoeneberg/FG_Suedkreuz/Naumannstrasse/Karten/Lageplan_Naumann_Leuthener-Platz.pdf (begleitende Verkehrsberuhigung in der Naumannstraße)
 #: by: http://www.stadtumbau-berlin.de/O-W-Gruenzug-Fussgaenger-und-Radfahrersteg.4699.0.html?y=2012 (Name der Brücke, Fertigstellung Juli 2012)
 #: XXX Brückennamen evtl. in Berlin.coords.data erwähnen
 #: XXX Informationen bekommt man eventuell auf: http://roteinsel.blogspot.de/
-Alfred-Lion-Steg: Fertigstellung?	?::inwork 7893,8327 8094,8290 8093,8251
+Alfred-Lion-Steg: Fertigstellung?	?::inwork 7893,8327 8090,8291 8088,8254
 # 
 #: by: (URL existiert nicht mehr) http://www.berlin.de/ba-steglitz-zehlendorf/presse/archiv/20060109.1050.33932.html
 #: last_checked: 2012-05-28
@@ -681,6 +811,7 @@ Asphaltstreifen soll eingerichtet werden	?::projected 26662,-1916 26728,-2030 26
 # 
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/bvv-online/vo020.asp?VOLFDNR=4353&options=4
 #: XXX evtl. werden, wenn der Antrag angenommen wird, fehlende Abschnitte ergänzt
+#: XXX südlicher Abschnitt ab Paul-Schwarz-Promenade gehört zur Baumaßnahme 6.14 (Realisierung in 2011)
 Birkbuschstr.: existieren hier teilweise Radspuren?	? 5671,3987 5624,4112 5588,4210 5557,4294 5483,4359 5416,4411 5329,4485 5271,4547 5161,4664 5137,4691 5076,4762 5070,4770 5048,4798 4985,4884 4951,4920 4879,5017
 (Buschallee KGA): komplett asphaltiert? Beleuchtet? Schranken? Ausschilderung?	? 22458,9532 22525,9665 22730,9938
 (KGA-Weg): komplett asphaltiert? Beleuchtet? Schranken? Ausschilderung?	? 22730,9938 22818,10080 22731,10142
@@ -2611,6 +2742,7 @@ Uferweg (Tegeler See): Qualität?	? -585,19132 -544,19129 -475,19156 -429,19230 -
 #XXX del --- #: XXX Eintrag von: Geske, Anselm [AM], aber zumindest östlich der Aalemannkanalbrücke nicht bestätigt --- Aalemannufer: gibt es Radstreifen am Aalemannufer?	? -1989,18378 -2053,18375 -2096,18376 -2535,18391 -2605,18393 -2678,18396 -2759,18400
 Ginsterweg (Hönow): Qualität im nördlichen Abschnitt?	? 26149,14332 26128,14458 26093,14649 26118,14697 26141,14744
 Fichtengrund (Hönow): Qualität im nördlichen Abschnitt?	? 25790,14277 25840,14419 25902,14532 26000,14699
+#: XXX Baumaßnahmen GL6.19 bis .21 (Realisierung bis 2011)
 Gallwitzallee - Geraerstr./Trippsteinstr.: Existiert eine direkte Verbindung für Radfahrer? Qualität? Ist der Weg nachts beleuchtet?	? 6768,2143 6692,2024 6526,1688
 Verlängerung der Seydlitzstr.: Qualität? Ist der Weg nachts beleuchtet? Ausschilderung?	? 6658,2079 6692,2024
 # 
@@ -2735,7 +2867,8 @@ Straße 180 (Rudow): existieren hier Straßenschilder?	? 16738,175 16770,192
 # 
 #: by: http://www.berlin.de/ba-neukoelln/presse/archiv/20120427.1445.369492.html vvv
 #: XXX Radwegesanierung in Neukölln vvv
-Buckower Damm: existieren am Buckower Damm zwischen Gerlinger Str. und Stadtgrenze Radwege?	? 12938,1348 12941,1256 12984,1011
+#: XXX Baumaßnahme 8.18 (Realisierung bis 2010)
+Buckower Damm: existieren am Buckower Damm zwischen Gerlinger Str. und Stadtgrenze Radwege oder Radspuren?	? 12938,1348 12941,1256 12984,1011
 Gutschmidtstraße: sind die Radwege asphaltiert oder saniert?	? 12655,3882 12711,3881 12726,3870 12796,3821 12913,3743 13030,3664 13162,3576 13396,3512 13526,3519
 Fritz-Erler-Allee: sind die Radwege asphaltiert oder saniert?	? 14392,2979 14274,3129 14205,3187 14126,3225 14023,3276 13906,3340 13775,3500
 #: XXX ^^^
@@ -2789,6 +2922,7 @@ Tongrubenweg: Qualität im östlichen Teilabschnitt?	? 28694,2529 28749,2595 28809
 #XXX del --- möglicherweise passiert hier nie etwas, Berlin-Usedom wird anders geroutet, und auch die Pankeweg-Ausschilderung ist nicht ganz eindeutig hier --- #: last_checked: 2012-10-08 --- #: next_check: 2013-09-30 --- Pankeweg: Wann erfolgt die geplante Lückenschliessung zwischen Ernst-Busch-Str. und Walter-Friedrich-Str.? Wie wird die Qualität sein und wird der Weg beleuchtet sein?	?::projected 15820,25003 16033,25319
 # 
 #: by: http://www.berlin.de/ba-spandau/presse/archiv/20100803.1545.305011.html
+#: XXX Baumaßnahme 5.8, Realisierung nach 2011
 #: last_checked: 2010-03-18 (Teile auch 2010-06-26)
 #: next_check: 2010-12-01
 Neuendorfer Str.: existieren Radspuren in der Neuendorfer Str., und wenn ja, von wo bis wo?	?::inwork -2883,15571 -2856,15687 -2869,15782 -2886,15867 -2915,15994 -3040,16246
@@ -2796,6 +2930,7 @@ Neuendorfer Str.: existieren Radspuren in der Neuendorfer Str., und wenn ja, von
 #: by: MoPo 2009-08-01, soll 2010 realisiert werden
 #: last_checked: 2011-09-14
 #: next_check: 2011-12-15
+#: XXX Baumaßnahme 4.22, Realisierung in 2011
 Joachim-Friedrich-Str.: existieren Radspuren in der Joachim-Friedrich-Str.?	?::projected 3067,9592 3069,9622 3083,9796 3092,9886 3108,10069 3111,10116 3132,10499
 # 
 #: last_checked: 2012-06-09 (an der Bergstr.)

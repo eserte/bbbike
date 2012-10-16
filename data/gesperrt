@@ -31,7 +31,7 @@ Erkelenzdamm etc.	1 11094,10261 11038,10247 10967,10092
 Überführung Daimlerstr.	1 8639,2212 8588,2176 8559,2203 8552,2243 8606,2376
 Ernst-Reuter-Platz	1 4763,11834 4854,11843 4905,11785 4885,11735 4838,11697 4781,11708 4737,11768 4763,11834
 Theodor-Heuss-Platz	1 1381,11335 1403,11428 1574,11379 1532,11280 1450,11309 1381,11335
-Halenseestr.	1 2112,10488 2076,10357 2069,10330 2094,10286 2229,10045 2268,9976 2300,9883 2369,9779 2415,9765
+Halenseestr.	1 2229,10045 2268,9976 2300,9883 2369,9779 2415,9765
 Halenseestr.	1 2394,9714 2360,9754 2297,9827
 Halenseestr.	1 1951,10435 1901,10566 1928,10728
 Rasthof Avus	1 1876,10397 1882,10356 1847,10323 1723,10289 1700,10339 1803,10419 1849,10418 1876,10397
@@ -901,6 +901,7 @@ Zeltinger Platz	1s 2404,25187 2355,25252 2395,25273 2446,25265 2490,25211 2486,2
 Ludolfinger Platz	1s 2277,25033 2245,25016 2205,25042 2192,25083 2216,25117 2277,25094 2285,25059 2277,25033
 Sewanstr. - Balatonstr.	1s 17705,10232 17741,10386
 Hönower Str. (Karlshorst) (Ausweichen auf Sandbankette möglich)	1s 18377,9366 18490,9387
+Bundesring	1 8942,7865 8921,8028 8924,8154 8941,8186 8952,8030 8942,7865
 Gitter auf dem Mittelstreifen	3nocross::ignrte 8057,14876 8091,14895 8219,14897
 Reinickendorfer Str. -> Schulzendorfer Str.: Gitter auf dem Mittelstreifen	3::igndisp 8037,14958 8091,14895 8219,14897
 Abbiegen nicht möglich	3nocross::ignrte 7602,17399 7684,17435 7902,17166
@@ -1777,7 +1778,7 @@ Holzmarktstr. -> Mehlbeerenweg: Mittelstreifen	3::igndisp 11768,12006 11919,1185
 Mittelstreifen	3nocross::ignrte 9334,9670 9387,9804 9444,9919
 Baruther Str. -> Mehringdamm: Mittelstreifen	3::igndisp 9588,9827 9387,9804 9334,9670
 Mehringdamm -> Baruther Str.: Mittelstreifen	3::igndisp 9444,9919 9387,9804 9588,9827
-Höhndorfstr. - Loewenhardtdamm: Mittelstreifen	3 8438,8676 8334,8655 8371,8543
+Höhndorfstr. - Loewenhardtdamm: Mittelstreifen	3 8438,8676 8334,8655 8380,8545
 Mittelstreifen	3nocross::ignrte 9224,9053 9225,9111 9248,9350
 Wilhelmshöhe -> Mehringdamm: Mittelstreifen	3::igndisp 9186,9107 9225,9111 9248,9350
 Mittelstreifen, Tunnelrampe	3nocross::ignrte 3344,4488 3235,4421 3048,4305
@@ -2344,7 +2345,7 @@ Schranke	BNP:5:-102 12571,7899
 Drängelgitter	BNP:5:34:trailer=10 14453,9929
 Drängelgitter mit asphaltierer Vorbeifahrmöglichkeit	BNP:2:39:trailer=4 14558,10082
 Drängelgitter mit asphaltierer Vorbeifahrmöglichkeit	BNP:2:41:trailer=4 14597,10129
-Drängelgitter	BNP:3:-153:trailer=no 12904,10141
+Drängelgitter	BNP:3:-153:trailer=15 12904,10141
 Drängelgitter	BNP:1:-149:trailer=3 12833,9998
 Schranke (Privatstr.)	BNP:5:-180 25039,5304
 Schranke	BNP:2:85:trailer=4 9907,11752
@@ -2404,6 +2405,7 @@ Schranke (lichte Breite ca. 120cm)	BNP:2:-53:trailer=8 14709,4307
 Schranke (lichte Breite ca. 100cm)	BNP:3:-45:trailer=10 15179,3901
 Tor	BNP:5:-57 26888,13976
 Drängelgitter	BNP:3:64:trailer=10 49739,-90894
+Gleisdreieckpark: noch in Bau	2:inwork 8270,10613 8199,10634
 Carlsgarten - Wuhlheide: wegen Bauarbeiten Durchfahrtsmöglichkeit zweifelhaft; evtl. wird danach die Wegsituation komplett anders aussehen	2:inwork 19456,7956 19549,7826
 Alt-Moabit - Invalidenstr.: wegen Bauarbeiten für die Straßenbahnanbindung gesperrt	2:inwork 7443,13008 7416,13058
 Oberwallstr.: Bauarbeiten, komplett gesperrt	2:inwork 9890,12161 9875,12257
@@ -2505,8 +2507,8 @@ schwierig zu überqueren - besser Ampel benutzen	3nocross::ignrte 7912,10945 7968
 queren schlecht möglich	3nocross::ignrte 6709,9234 6863,9254 6923,9266
 Grunewaldstr. -> Klixstr.: queren schlecht möglich	3::igndisp 6923,9266 6863,9254 6885,9132
 Klixstr. -> Grunewaldstr.: queren schlecht möglich	3::igndisp 6885,9132 6863,9254 6709,9234
-Rumeyplan	1 8690,7717 8799,7741 8899,7788 8940,7835
-Rumeyplan	1 8967,7821 8909,7769 8815,7722 8694,7691
+Rumeyplan	1 8686,7726 8796,7751 8895,7797 8940,7835
+Rumeyplan	1 8959,7824 8907,7773 8812,7730 8690,7704
 Greifswalder Str.	3nocross::ignrte 12422,14692 12473,14763 12520,14833
 Olga-Benario-Prestes-Str. -> Greifswalder Str.: Greifswalder Str.	3::igndisp 12653,14653 12473,14763 12422,14692
 Greifswalder Str. -> Olga-Benario-Prestes-Str.: Greifswalder Str.	3::igndisp 12520,14833 12473,14763 12653,14653
