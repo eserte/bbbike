@@ -1307,6 +1307,7 @@ userdel	q3::inwork 11912,14486 11642,14625
          'data' => '#: last_checked: 2012-10-16 vvv
 userdel	2::inwork 8309,10368 8278,10384 8296,10438 8328,10585 8332,10637 8341,10721
 userdel	2::inwork 8328,10585 8270,10613
+userdel	2::inwork 8318,10738 8270,10613 8264,10460
 userdel	2::inwork 8278,10384 8263,10349 8258,10338
 userdel	2::inwork 8263,10349 8315,10347 8333,10167 8360,10133
 #: last_checked ^^^
@@ -1349,16 +1350,7 @@ userdel	2::night 14838,11410 14776,11400
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_019071',
-         'until' => 1351695600,
-         'text' => 'Uhlandstr. (Charlottenburg): Baustelle, Straße vollständig gesperrt In beiden Richtungen zwischen Steinplatz und Kantstr., 01.08.2012 05:44 Uhr bis 31.10.2012 16:00 Uhr ',
-         'from' => 1343706240,
-         'id' => 2374,
-         'data' => 'userdel	q4::inwork 5102,11006 5122,11300
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => undef,
          'text' => 'Senefelderstr.: Fahrbahn vor der Raumerstr. gesperrt, Ausweichen auf Gehweg erforderlich',
@@ -1420,16 +1412,7 @@ userdel	q4::inwork; 10870,14689 10893,14705
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'INKO_115090',
-         'until' => 1350482400,
-         'text' => 'Roelckestr. (Weißensee): Baustelle, Straße zwischen Rennbahnstr. und Amalienstr. bis Mitte Oktober 2012 gesperrt ',
-         'from' => 1348981200,
-         'id' => 2389,
-         'data' => 'userdel	q4::inwork 13589,16965 13767,17136 13818,17201 13839,17227 13912,17320
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'INKO_113279',
          'until' => 1351260000,
@@ -1440,16 +1423,7 @@ userdel	q4::inwork; 10870,14689 10893,14705
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_019272',
-         'until' => undef,
-         'text' => 'Friedrich-Engels-Str. (Rosenthal) Richtung Märkisches Viertel zwischen Platananenstr. und Nordendstr. Baustelle, Fahrtrichtung gesperrt',
-         'from' => undef,
-         'id' => 2391,
-         'data' => 'userdel	q4::inwork; 9355,19789 9333,19853 9300,19949 9266,20048 9235,20125 9149,20336
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20121012.1220.376513.html',
          'until' => 1351551600,
@@ -1457,6 +1431,26 @@ userdel	q4::inwork; 10870,14689 10893,14705
          'from' => 1350252000,
          'id' => 2392,
          'data' => 'userdel	q4::inwork; 20012,3532 20082,3578 20136,3609 20149,3617
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'INKO_115461',
+         'until' => 1352905200,
+         'text' => 'Eisenacher Str. zwischen Kosleckweg und Äneasstr Richtung Rixdorfer Str. Baustelle, Fahrbahn gesperrt, bis Mitte November 2012',
+         'from' => 1348376400,
+         'id' => 2393,
+         'data' => 'userdel	q4::inwork; 10010,4606 10183,4583 10270,4571
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'INKO_114523',
+         'until' => 1353682800,
+         'text' => 'Kurfürstenstr. zwischen Genthiner Str. und Einemstr. Richtung Westen Baustelle, Fahrbahn gesperrt, bis 23. November 2012 ',
+         'from' => 1350363600,
+         'id' => 2394,
+         'data' => 'userdel	q4::inwork; 7315,10537 7117,10611 7115,10612 6972,10665
 ',
          'type' => 'handicap'
        }

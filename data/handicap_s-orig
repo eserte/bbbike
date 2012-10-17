@@ -8,21 +8,34 @@
 #
 #: temporary vvv
 # 
-#: last_checked: 2012-10-16
+### Friedrichshain ###
+#
+#: last_checked: 2012-10-17
 #: next_check: 2013-05-17
 #: XXX vmz-Eintrag: Am Oberbaum (Friedrichshain-Kreuzberg): Baustelle, Fahrtrichtung gesperrt (bis 05/2013) Richtung Kreuzberg zwischen Mühlenstr. und Oberbaumbrücke, 08.08.2012 10:00 Uhr bis 17.05.2013 17:00 Uhr¦INKO_113418¦http://asp.vmzberlin.com/VMZ_LSBB_MELDUNGEN_WEB/Meldungskarte.jsp?back=true&map=true&x=52.50189&y=13.4457&zoom=13&meldungId=INKO_113418
 Oberbaumbrücke: Umfahrung wegen Baustelle, etwas Zeitverlust	q3::inwork; 13332,10832 13305,10789
 # 
-#: last_checked: 2012-10-16 vvv
+#: last_checked: 2012-10-17 vvv
 #: next_check: 2012-10-17 vvv
 Modersohnstr.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 14181,11434 14134,11272
 Dirschauer Str.: Einbahnstraßenregelung wegen Umleitungsstrecke	q4::inwork; 13970,11366 14031,11569
 #: next_check ^^^
 #: last_checked ^^^
 # 
+#: last_checked: 2012-10-17
+#: next_check: 2012-10-20
+Marchlewskistr., Helsingforser Str.: Bauarbeiten, u.U. Ausweichen auf Gehweg	q4::inwork; 13473,11456 13496,11384 13541,11355
+# 
 #: last_checked: 2012-09-20
 Mainzer Str.: Baustelle, Einbahnstraßenregelung	q3::inwork; 14311,11884 14357,12011 14427,12197
 # 
+#: last_checked: 2012-09-26
+#: next_check: 2012-10-15
+#: XXX abhängig von den Arbeiten in der Kynaststr.
+Alt-Stralau: Bauarbeiten an der Brücke, enge Durchfahrt	q3::inwork 14652,10201 14558,10264
+# 
+### Mitte ###
+#
 #: last_checked: 2012-10-07
 #: next_check: 2012-10-22
 #: XXX siehe auch: NEW	Friedrichstr. (Mitte): Baustelle, Straße vollständig gesperrt, eine Umleitung ist eingerichtet in beiden Richtungen zwischen Mittelstr. und Unter den Linden, 29.08.2012 07:00 Uhr bis 23.10.2012 16:00 Uhr	INKO_115395
@@ -38,6 +51,14 @@ Friedrichstr.(Mitte): Fahrbahn wegen Bauarbeiten gesperrt, Ausweichen auf Gehweg
 #: last_checked: 2012-09-22
 #: next_check: 2013-12-31
 Charlottenstr.: Einbahnstraßenregelung	q4::inwork; 9475,12365 9489,12263 9496,12215
+# 
+#: last_checked: 2012-10-07
+#: next_check: 2012-11-01
+Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 9475,12365 9462,12481 9454,12558
+# 
+#: last_checked: 2012-10-07
+#: next_check: 2012-11-01
+Universitätsstr.: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 9580,12581 9601,12380
 # 
 #: last_checked: 2012-09-30
 #: next_check: 2012-10-30
@@ -62,11 +83,6 @@ Hessische Str.: Sackgasse zur Invalidenstr.	q3::inwork 8775,13606 8690,13723
 #: next_check ^^^
 #: last_checked: ^^^
 # 
-#: last_checked: 2012-09-26
-#: next_check: 2012-10-15
-#: XXX abhängig von den Arbeiten in der Kynaststr.
-Alt-Stralau: Bauarbeiten an der Brücke, enge Durchfahrt	q3::inwork 14652,10201 14558,10264
-# 
 #: last_checked: 2012-08-23
 #: next_check: 2012-11-01
 #: XXX nach den Bauarbeiten vielleicht besserer Asphalt? -> qualitaet_s-orig
@@ -75,22 +91,9 @@ Alt-Stralau: Bauarbeiten an der Brücke, enge Durchfahrt	q3::inwork 14652,10201 1
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9875,12257 9869,12297
 # 
 #XXX del --- #: last_checked: 2012-07-13 --- #: next_check: 2012-09-01 --- Kronenstr./Jerusalemer Str.: Bauarbeiten, Fahrbahn vor der Kreuzung gesperrt	q3::inwork 9692,11732 9892,11752
-# 
-#: last_checked: 2012-10-07
-#: next_check: 2012-11-01
-Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 9475,12365 9462,12481 9454,12558
-# 
-#: last_checked: 2012-10-07
-#: next_check: 2012-11-01
-Universitätsstr.: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 9580,12581 9601,12380
-# 
 #XXX del --- kaum noch Behinderungen --- #: last_checked: 2012-09-15 vvv --- #: next_check: 2012-09-30 vvv --- Helmerdingstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg kann benutzt werden	q3::inwork 14465,11195 14442,11101
 #XXX del --- eigentlich gut zu befahren --- Revaler Str.: Bauarbeiten, Kreuzung gesperrt, Gehweg kann benutzt werden	q4::inwork 14509,11060 14442,11101
 #XXX del --- #: next_check: ^^^ --- #: last_checked: ^^^
-# 
-#: last_checked: 2012-10-16
-#: next_check: 2012-10-20
-Marchlewskistr., Helsingforser Str.: Bauarbeiten, u.U. Ausweichen auf Gehweg	q4::inwork; 13473,11456 13496,11384 13541,11355
 # 
 #: last_checked: 2012-10-12
 #: next_check: 2012-12-15
@@ -107,17 +110,6 @@ Neue Grünstr.: Einbahnstraßenregelung wegen Bauarbeiten in der Alten Jakobstr.	q
 #: next_check: ^^^
 #: last_checked: ^^^
 # 
-#: last_checked: 2012-10-05
-#: next_check: 2012-11-01
-Elcknerplatz, Borgmannstr.: Bauarbeiten, Einbahnstraße	q4::inwork; 22478,6041 22544,6037 22539,5956
-# 
-#: last_checked: 2012-09-22
-#: next_check: 2012-10-15
-#: by: IM_008926
-#: XXX wahrscheinlich bis Ende Oktober 2012
-#: XXX wahrscheinlich wird es teilweise oder sogar komplett Radspuren geben
-Kantstr.: Bauarbeiten am Zoofenster, Fahrbahn Richtung Westen gesperrt	q2::inwork; 5652,11004 5613,10963 5488,10978
-# 
 #: last_checked: 2012-10-07 vvv
 #: next_check: 2012-11-01 vvv
 #: note: siehe auch Eintrag zur Friedrichsbrücke
@@ -133,6 +125,21 @@ Am Zirkus: Baustelle, Einbahnstraße	q3::inwork; 9170,13031 9239,12923
 #: last_checked: 2012-09-26
 #: next_check: 2012-10-26
 Am Kupfergraben: Baustelle, Einbahnstraße	q3::inwork; 9870,12657 9900,12643 9919,12613
+# 
+### Köpenick ###
+# 
+#: last_checked: 2012-10-05
+#: next_check: 2012-11-01
+Elcknerplatz, Borgmannstr.: Bauarbeiten, Einbahnstraße	q4::inwork; 22478,6041 22544,6037 22539,5956
+# 
+### Charlottenburg ###
+# 
+#: last_checked: 2012-09-22
+#: next_check: 2012-10-15
+#: by: IM_008926
+#: XXX wahrscheinlich bis Ende Oktober 2012
+#: XXX wahrscheinlich wird es teilweise oder sogar komplett Radspuren geben
+Kantstr.: Bauarbeiten am Zoofenster, Fahrbahn Richtung Westen gesperrt	q2::inwork; 5652,11004 5613,10963 5488,10978
 # 
 #: temporary ^^^
 ######################################################################

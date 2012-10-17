@@ -20565,7 +20565,7 @@ userdel	q4::inwork 8443,10777 8430,10710
 EOF
      },
      { from  => 1343706240, # 2012-07-31 05:44
-       until => 1351695600, # 2012-10-31 16:00
+       until => 1350503220, # 1351695600, # 2012-10-31 16:00
        text  => 'Uhlandstr. (Charlottenburg): Baustelle, Straße vollständig gesperrt In beiden Richtungen zwischen Steinplatz und Kantstr., 01.08.2012 05:44 Uhr bis 31.10.2012 16:00 Uhr ',
        type  => 'handicap',
        source_id => 'IM_019071',
@@ -20723,12 +20723,13 @@ EOF
 userdel	q4::inwork; -2960,13203 -2728,13269 -2706,13291
 EOF
      },
-     { from  => undef, # 
-       until => undef, # XXX
+     { from  => 1350502082, # undef, # 
+       until => 1350502086, # undef, # XXX
        text  => 'Friedrich-Engels-Str. (Rosenthal) Richtung Märkisches Viertel zwischen Platananenstr. und Nordendstr. Baustelle, Fahrtrichtung gesperrt',
        type  => 'handicap',
        source_id => 'IM_019272',
        data  => <<EOF,
+#: by: http://www.berlin.de/ba-pankow/presse/archiv/20121015.1240.376583.html (Verzögerung bei den Bauarbeiten)
 userdel	q4::inwork; 9355,19789 9333,19853 9300,19949 9266,20048 9235,20125 9149,20336
 EOF
      },
@@ -20739,6 +20740,24 @@ EOF
        source_id => 'http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20121012.1220.376513.html',
        data  => <<EOF,
 userdel	q4::inwork; 20012,3532 20082,3578 20136,3609 20149,3617
+EOF
+     },
+     { from  => 1348376400, # 2012-09-23 07:00
+       until => 1352905200, # 2012-11-14 16:00
+       text  => 'Eisenacher Str. zwischen Kosleckweg und Äneasstr Richtung Rixdorfer Str. Baustelle, Fahrbahn gesperrt, bis Mitte November 2012',
+       type  => 'handicap',
+       source_id => 'INKO_115461',
+       data  => <<EOF,
+userdel	q4::inwork; 10010,4606 10183,4583 10270,4571
+EOF
+     },
+     { from  => 1350363600, # 2012-10-16 07:00
+       until => 1353682800, # 2012-11-23 16:00
+       text  => 'Kurfürstenstr. zwischen Genthiner Str. und Einemstr. Richtung Westen Baustelle, Fahrbahn gesperrt, bis 23. November 2012 ',
+       type  => 'handicap',
+       source_id => 'INKO_114523',
+       data  => <<EOF,
+userdel	q4::inwork; 7315,10537 7117,10611 7115,10612 6972,10665
 EOF
      },
     );
