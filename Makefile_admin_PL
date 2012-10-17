@@ -936,6 +936,9 @@ clean-cache:
 	-rm -f tmp/m_de_*
 	-rm -f tmp/*.cache
 
+distcheck-fatal:
+	perl -MExtUtils::Manifest=fullcheck -e '($$missing,$$extra) = fullcheck; if (@$$missing) { die "Missing files found!\n" } if (@$$extra) { die "Extra files found\n" }'
+
 ######################################################################
 # Towards git
 bbbike-rcs-to-cvs-repo:
