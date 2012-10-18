@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2009 Slaven Rezic. All rights reserved.
+# Copyright (C) 2009,2012 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -19,6 +19,7 @@ use lib ("$FindBin::RealBin/..",
 	 $FindBin::RealBin,
 	);
 
+use Getopt::Long;
 use POSIX qw(strftime);
 
 use StrassenNextCheck;
@@ -28,30 +29,30 @@ my $door_mode = 'out';
 my $today = strftime "%Y-%m-%d", localtime;
 my $verbose;
 
-for my $arg (@ARGV) {
-    if ($arg =~ m{^--?(.*)$}) {
-	$arg = $1;
-	if ($arg eq 'fragezeichen-mode') {
-	    $fragezeichen_mode = 1;
-	} elsif ($arg eq 'no-fragezeichen-mode') {
-	    $fragezeichen_mode = 0;
-	} elsif ($arg eq 'indoor-mode') {
-	    $door_mode = 'in';
-	} elsif ($arg eq 'outdoor-mode') {
-	    $door_mode = 'out';
-	} elsif ($arg =~ m{^today=(.*)$}) {
-	    $today = $1;
-	    if ($today !~ m{^\d{4}-\d{2}-\d{2}$}) {
-		die "Unexpected argument for --today '$today', expected YYYY-MM-DD";
-	    }
-	} elsif ($arg eq 'verbose') {
-	    $verbose = 1;
-	} else {
-	    die "Unknown argument -$arg";
-	}
-    } else {
-	handle_file($arg);
-    }
+my @actions;
+
+GetOptions(
+	   "today=s" => \$today,
+	   "verbose" => \$verbose,
+	   "fragezeichen-mode"    => sub { push @actions, sub { $fragezeichen_mode = 1 } },
+	   "no-fragezeichen-mode" => sub { push @actions, sub { $fragezeichen_mode = 0 } },
+	   "indoor-mode"          => sub { push @actions, sub { $door_mode = 'in' } },
+	   "outdoor-mode"         => sub { push @actions, sub { $door_mode = 'out' } },
+	   "<>"                   => sub { my $f = $_[0]; push @actions, sub { handle_file($f) } },
+	  )
+    or die "usage: $0 [--today YYYY-MM-DD] [--verbose] [--fragezeichen-mode|--no-fragezeichen-mode|--indoor-mode|--outdoor-mode] ...";
+
+if ($today !~ m{^\d{4}-\d{2}-\d{2}$}) {
+    die "Unexpected argument for --today '$today', expected YYYY-MM-DD";
+}
+
+if (!@actions) {
+    warn "No actions, nothing to do...\n";
+    exit;
+}
+
+for my $action (@actions) {
+    $action->();
 }
 
 sub handle_file {
