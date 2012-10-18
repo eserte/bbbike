@@ -861,19 +861,14 @@ ${PERSISTENTTMPDIR}/fragezeichen-outdoor.bbd ${PERSISTENTTMPDIR}/.check_fragezei
 		Makefile \
 		${SOURCE_TARGETS:S|$|-orig|} \
 		${PERSISTENTTMPDIR}/bbbike-temp-blockings-optimized.bbd
-	echo -n > ${PERSISTENTTMPDIR}/fragezeichen-${doormode}-nextcheck.bbd~
-	echo "#: line_dash: 8, 5" >> ${PERSISTENTTMPDIR}/fragezeichen-outdoor.bbd~
-	echo "#: line_width: 5" >> ${PERSISTENTTMPDIR}/fragezeichen-outdoor.bbd~
-	echo "#: category_color.?: #cf5050" >> ${PERSISTENTTMPDIR}/fragezeichen-outdoor.bbd~
-	echo "#:" >> ${PERSISTENTTMPDIR}/fragezeichen-outdoor.bbd~
-	${MISCSRCDIR}/create_fragezeichen_nextcheck.pl \
-	    --today=2999-12-31 \
+	${MISCSRCDIR}/create_fragezeichen_nextcheck.pl --preamble \
+	    --coloring '#6c0000 +1m #ec8888 +6m #f2a0a0 +1y #fcc8c8 +5y #fdd8d8'\
 	    --outdoor-mode \
 	    --fragezeichen-mode fragezeichen-orig \
 	    --no-fragezeichen-mode \
 	    ${SOURCE_TARGETS:S|fragezeichen||:S|$|-orig|} \
 	    ${PERSISTENTTMPDIR}/bbbike-temp-blockings-optimized.bbd \
-		>> ${PERSISTENTTMPDIR}/fragezeichen-outdoor.bbd~
+		> ${PERSISTENTTMPDIR}/fragezeichen-outdoor.bbd~
 	mv -f ${PERSISTENTTMPDIR}/fragezeichen-outdoor.bbd~ ${PERSISTENTTMPDIR}/fragezeichen-outdoor.bbd
 	touch ${PERSISTENTTMPDIR}/.check_fragezeichen-outdoor.bbd
 
