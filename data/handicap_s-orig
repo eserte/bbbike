@@ -15,8 +15,8 @@
 #: XXX vmz-Eintrag: Am Oberbaum (Friedrichshain-Kreuzberg): Baustelle, Fahrtrichtung gesperrt (bis 05/2013) Richtung Kreuzberg zwischen M¸hlenstr. und Oberbaumbr¸cke, 08.08.2012 10:00 Uhr bis 17.05.2013 17:00 Uhr¶INKO_113418¶http://asp.vmzberlin.com/VMZ_LSBB_MELDUNGEN_WEB/Meldungskarte.jsp?back=true&map=true&x=52.50189&y=13.4457&zoom=13&meldungId=INKO_113418
 Oberbaumbr¸cke: Umfahrung wegen Baustelle, etwas Zeitverlust	q3::inwork; 13332,10832 13305,10789
 # 
-#: last_checked: 2012-10-17 vvv
-#: next_check: 2012-10-17 vvv
+#: last_checked: 2012-10-18 vvv
+#: next_check: 2012-10-25 vvv
 Modersohnstr.: Bauarbeiten, Einbahnstraﬂenregelung	q3::inwork; 14181,11434 14134,11272
 Dirschauer Str.: Einbahnstraﬂenregelung wegen Umleitungsstrecke	q4::inwork; 13970,11366 14031,11569
 #: next_check ^^^
@@ -1398,6 +1398,8 @@ Gr¸tzmacherpark: Fuﬂg‰nger	q1 -1532,15225 -1389,15285
 (Pankeweg): Fuﬂg‰nger, eng	q3 9034,17357 9036,17387 9076,17532 9120,17553
 Ansbacher Str./Wittenbergplatz: Fuﬂg‰nger	q2 6192,10542 6216,10614 6228,10646 6250,10701
 (Planufer - Bˆckhstr.): einige Fuﬂg‰nger	q1 11160,9932 11170,9919 11197,9894
+#: XXX_prog BS hohe Bordsteinkante an der Otto-Braun-Str. (oder leeren Gehweg benutzen)
+Mendelssohnstr.: Fuﬂg‰nger, Bordstein	q3 11598,13598 11652,13564
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch
@@ -1750,7 +1752,9 @@ Vereinsweg (Steglitz): Fuﬂg‰nger, Privatstraﬂe, Radfahren nicht erlaubt	q4 5347,
 (Volkspark Friedrichshain): Fuﬂg‰nger	q2 12403,13755 12436,13719 12482,13705 12594,13747 12640,13814
 (Volkspark Friedrichshain): Fuﬂg‰nger	q2 12766,13621 12723,13598 12656,13576 12582,13519 12483,13418
 (Volkspark Friedrichshain): Fuﬂg‰nger	q2 12483,13418 12586,13368
-(Volkspark Friedrichshain): Fuﬂg‰nger	q2 12438,13387 12341,13309 12244,13240 12236,13229
+(Volkspark Friedrichshain): Fuﬂg‰nger	q2 12438,13387 12341,13309 12244,13240
+#: corrected_by: srt (-> Rampe)
+(Volkspark Friedrichshain): kurze Rampe an der Friedenstr.	q3 12244,13240 12236,13229
 (Volkspark Friedrichshain): Fuﬂg‰nger	q2 12369,13252 12341,13309 12307,13329 12206,13326 12166,13349 12141,13341
 (Volkspark Friedrichshain): Fuﬂg‰nger	q2 12141,13609 12023,13598 12038,13685
 (Zufahrt Landsberger Allee): Fuﬂg‰nger	q2 13433,13346 13397,13426 13574,13505

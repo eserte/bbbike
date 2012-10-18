@@ -12192,7 +12192,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_009533',
        data  => <<EOF,
-userdel	2::temp 12360,12505 12364,12589
+userdel	2::temp 12360,12505 12362,12540 12364,12589
 userdel	2::temp 12891,12549 12869,12425
 EOF
      },
@@ -15308,7 +15308,7 @@ EOF
        source_id => 'LMS_2386386548',
        data  => <<EOF,
 userdel	q4::temp 12635,12629 12606,12471
-userdel	q4::temp 12360,12505 12364,12589
+userdel	q4::temp 12360,12505 12362,12540 12364,12589
 userdel	q4::temp 12891,12549 12869,12425
 EOF
      },
@@ -19528,7 +19528,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_019026',
        data  => <<EOF,
-userdel	2::temp 12360,12505 12364,12589
+userdel	2::temp 12360,12505 12362,12540 12364,12589
 userdel	2::temp 12891,12549 12869,12425
 userdel	2::temp 12635,12629 12606,12471
 EOF
@@ -19953,6 +19953,7 @@ EOF
 #: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/kastanienallee_pb.html
 #: note: nur die halbe Strecke ist gesperrt, deshalb q3
 #: note: am 2012-09-19 geprüft, Schranke, nur Straßenbahnen werden durchgelassen
+#: note: am 2012-10-18 geprüft, Schranke, nur Straßenbahnen werden durchgelassen
 userdel	q3::inwork 10530,14452 10723,14772
 EOF
      },
@@ -20297,9 +20298,11 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/oderberger_strasse.html (allerdings sind die Bauzeiten schon jetzt weit überschritten)
-#: last_checked: 2012-07-16
-userdel	q4::inwork 10401,14963 10379,14963 10370,14946 10380,14911
-userdel	q4::inwork 10379,14963 10366,14992
+#: last_checked: 2012-10-18 (aber Asphaltierung in Gange)
+#: next_check: 2012-10-20
+userdel	q4::inwork 10401,14963 10379,14963
+#XXX del --- hier nicht mehr --- userdel	q4::inwork 10379,14963 10370,14946 10380,14911
+#XXX del --- hier nicht mehr --- userdel	q4::inwork 10379,14963 10366,14992
 EOF
      },
      { from  => 1339624800, # 2012-06-14 00:00
@@ -20653,7 +20656,7 @@ EOF
        text  => 'Oderberger Str.: Fahrbahn zwischen Kastanienallee und Choriner Str. wegen Bauarbeiten gesperrt',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2012-09-30 (wosch)
+#: last_checked: 2012-10-18
 userdel	q4::inwork 10870,14689 10723,14772
 EOF
      },
@@ -20662,7 +20665,7 @@ EOF
        text  => 'Choriner Str.: Einbahnstraße in Höhe Oderberger Str., Richtung Schönhauser Allee gesperrt',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2012-09-19
+#: last_checked: 2012-10-18
 userdel	q4::inwork; 10870,14689 10893,14705
 EOF
      },

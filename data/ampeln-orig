@@ -997,6 +997,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 7936,12906
 	X 7111,12743
 #: XXX_indoor eigentlich eine Fußgängerampel, ca. 25 Meter östlich
+#: XXX_prog aber beim Linksabbiegen aus der Frankfurter würde man sie trotzdem benutzen, sollte ins Routing einfließen!
 	X 16413,11906
 	X 6757,13112
 	X 5975,13256
@@ -1030,6 +1031,8 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 6388,7999
 	X 9000,9509
 	X 12360,12505
+#: XXX_prog evtl. mit der Ampel an der Karl-Marx-Allee zusammen geschaltet, aber nur, wenn man geradeaus fährt, nicht wenn man aus der Karl-Marx abbiegt
+	F 12362,12540
 	X 8443,10777
 	X 7453,17899
 	X 7579,17532
@@ -1496,7 +1499,8 @@ nur Richtung O	X 8142,7221
 	X 11545,14897
 	X 11776,15060
 	X 11119,15385
-	X 11506,14230
+#: note: Autos können nicht aus der Knaack in die Immanuelkirchstr., demnach eine Fußgängerampel
+	F 11506,14230
 	X 11821,14317
 	X 12786,13185
 	X 13026,14234
@@ -2718,6 +2722,8 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F -2866,17760
 	X -2728,17038
 	F 8769,10818
+#: XXX_prog Ampel würde man auch beim Linksabbiegen aus der Greifswalder benutzen
+	F 11952,14002
 ################################################################################
 #: note: Potsdam vvv
 #: by: http://www.potsdam.de/cms/beitrag/10067917/966975/

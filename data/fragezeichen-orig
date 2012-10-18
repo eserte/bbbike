@@ -35,9 +35,9 @@ Stülerstr.	?::projected 6825,11486 6716,11439 6692,11365 6679,11319 6630,11247 6
 Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12128,14640 12317,14535 12425,14459 12621,14313 12729,14227 12901,14093 12975,13990 13037,13897 13100,13803 13166,13707 13225,13620 13228,13615 13330,13468
 # 
 #: last_checked: 2012-10-12 vvv
-#: next_check: 2012-10-20 vvv
-Kniprodestr./Am Friedrichshain: wird die andere Richtung auch Radspuren bekommen?	?; 12403,13755 12571,13798 12640,13814 12695,13864 12784,13961 12901,14093
-Am Friedrichshain: Radspuren werden (zumindest teilweise) markiert	?::inwork 12403,13755 12204,13719 12161,13711 12038,13685 11868,13646 11785,13625 11762,13619 11706,13635
+#: next_check: 2012-10-17 vvv
+Kniprodestr./Am Friedrichshain: wird die andere Richtung auch Radspuren bekommen?	?; 12640,13814 12695,13864 12784,13961 12901,14093
+Am Friedrichshain: Radspuren werden (zumindest teilweise) markiert	?::inwork 12038,13685 11868,13646 11785,13625 11762,13619 11706,13635
 #: next_check ^^^
 #: last_checked ^^^
 # 
@@ -50,7 +50,7 @@ Germanenstr. (oder nur das kleine Stück bis Waldsteg?)	?::projected 8406,19081 8
 # 
 #: by: Tagesspiegel vom 2009-04-12, soll 2009 realisiert werden
 #: corrected_by: MoPo 2009-08-01, soll 2010 realisiert werden
-#: last_checked: 2012-10-17
+#: last_checked: 2012-10-18
 #: next_check: 2012-12-01
 #: XXX im Baumaßnahmenkatalog ist nur der östliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaßnahmen 1.46 (Realisierung in 2011)
 Annenstr./Heinrich-Heine-Platz	?::projected 11349,11227 11249,11268 11091,11379 11052,11414 11039,11425 10915,11535 10815,11662
@@ -99,14 +99,16 @@ Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?
 #: last_checked: 2012-10-15
 #: next_check: 2013-06-01
 Brückenstr.: werden hier Radspuren markiert?	?::projected 11325,12021 11283,11876 11242,11720 11155,11750
-#
+# 
 #: XXX Baumaßnahme 1.17 (Realisierung in 2011)
 #: last_checked: 2012-10-15
 #: next_check: 2013-06-01
 Markgrafenstr.: wird hier eine Radwegführung erstellt?	?::projected 9711,11543 9737,11546 9732,11574 9707,11596 9701,11656
-#
+# 
 #: XXX Baumaßnahme 3.18 (Realisierung in 2011)
-Otto-Braun-Str.: werden hier Radspuren markiert?	?::projected 11446,13294 11486,13350 11539,13425 11561,13451 11640,13551 11706,13635
+#: last_checked: 2012-10-18 (weiterhin nur Busspuren)
+#: next_check: 2013-06-01
+Otto-Braun-Str.: werden hier Radspuren markiert?	?::projected 11446,13294 11486,13350 11539,13425 11561,13451 11652,13564 11706,13635
 # 
 #: XXX Baumaßnahme 1.47 (Realisierung nach 2011)
 #: last_checked: 2012-09-22
@@ -482,8 +484,8 @@ Am Tierpark: nach den Bauarbeiten vielleicht Radwege/-spuren?	?::inwork 18220,11
 Fr.-Engels-Str.: Fahrradstreifen werden angelegt, Kopfsteinpflaster verschwindet	?::projected 9355,19789 9333,19853 9300,19949 9266,20048 9235,20125 9149,20336
 # 
 #: by: http://www.berlin.de/ba-pankow/presse/archiv/20101117.1135.319249.html
-#: last_checked: 2012-09-19 (im eigentlich fertigen nördlichen Streifen ist bis auf die Führung an der Straßenbahnhaltestelle nichts passiert)
-#: next_check: 2012-10-15
+#: last_checked: 2012-10-18 (im eigentlich fertigen nördlichen Streifen ist bis auf die Führung an der Straßenbahnhaltestelle nichts passiert)
+#: next_check: 2012-12-15
 Kastanienallee: Fahrradstreifen werden angelegt	?::inwork 10530,14452 10723,14772 10838,14962 10881,15047
 # 
 #: by: http://www.potsdam.de/cms/beitrag/10070965/966975/
@@ -696,7 +698,6 @@ Rosensteinweg: wo befindet sich die Straße?	? -319,10743 -110,10658
 Grünheider Weg: keine nennenswerte Steigung, zusätzliche Höhenpunkte ausrechnen	? 30910,3824 30867,3806 30692,3733 30665,3720 30650,3698
 Weg H: Steigung müsste in die andere Richtung verlaufen!	? 27961,699 28083,592
 #: XXX_indoor ^^^
-Diedenhofer Str.: in der Mitte müsste noch ein Höhenpunkt erfasst werden	? 11316,14360 11188,14184
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/19re.pdf/file?y=2012 vvv
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/42re.pdf/file?y=2012 vvv

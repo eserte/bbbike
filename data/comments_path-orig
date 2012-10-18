@@ -169,13 +169,15 @@ LefËvrestr. - Bundesallee: Fuﬂg‰ngerfurt benutzen	CP; 5215,6643 5360,6642 5358,6
 #XXX del --- Versatz ist (mittlerweile?) weniger als 20m --- #: XXX_indoor: sollte in eine 3nocross+routing_helper-Kombination umgeschrieben werden, auﬂerdem auch die Verbindung Zolastr. - Straﬂburger sollte beachtet werden --- Straﬂburger Str. - Torstr.: Fuﬂg‰ngerfurt (Dr‰ngelgitter) ca. 50m westlich der Kreuzung benutzen	CP; 11052,13870 10898,13632 11111,13518
 #XXX del --- Versatz ist (mittlerweile?) weniger als 20m --- #: XXX_indoor: sollte in eine 3nocross+routing_helper-Kombination umgeschrieben werden --- Torstr. - Straﬂburger Str.: Fuﬂg‰ngerfurt (Dr‰ngelgitter) ca. 50m westlich der Kreuzung benutzen	CP; 10746,13673 10898,13632 11052,13870
 #### ^^^ REVIEW RL:ja/nein, GPS:ja/nein SOWIE CP;+Crossing name UNTIL HERE ^^^ ##############################
-K‰the-Niederkirchner-Str - Greifswalder Str.: Fuﬂg‰ngerfurt (Dr‰ngelgitter) ca. 50m nord-ˆstlich der Kreuzung benutzen	CP; 12148,13961 11991,14060 11946,13993
-Greifswalder Str. - K‰the-Niederkirchner-Str: Fuﬂg‰ngerfurt (Dr‰ngelgitter) ca. 50m nord-ˆstlich der Kreuzung benutzen oder schon an der Marienburger die Straﬂenseite wechseln	PI; 12077,14186 11991,14060 12148,13961
+K‰the-Niederkirchner-Str - Greifswalder Str.: Fuﬂg‰ngerfurt (Dr‰ngelgitter) ca. 50m nord-ˆstlich der Kreuzung benutzen	CP; 12148,13961 11991,14060 11952,14002 11946,13993
+Greifswalder Str. - K‰the-Niederkirchner-Str: Fuﬂg‰ngerfurt (Dr‰ngelgitter) ca. 50m nord-ˆstlich der Kreuzung benutzen oder schon an der Marienburger die Straﬂenseite wechseln	PI; 12017,14098 11991,14060 12148,13961
 Heinrich-Roller-Str. - Greifswalder Str.: Fuﬂg‰ngerfurt (Dr‰ngelgitter) benutzen	CP; 11607,13928 11820,13804 11946,13993
 Greifswalder Str. - Heinrich-Roller-Str.: Fuﬂg‰ngerfurt (Dr‰ngelgitter) benutzen	CP; 11706,13635 11820,13804 11607,13928
 #: by: ^^^
-Immanuelkirchstr. - Greifswalder Str.: Fuﬂg‰ngerfurt (Dr‰ngelgitter) benutzen	CP; 11713,14118 11946,13993 11991,14060
+#: XXX stimmt der Kommentar (Dr‰ngelgitter) seit der Fuﬂg‰ngerampel noch immer? vvv
+Immanuelkirchstr. - Greifswalder Str.: Fuﬂg‰ngerfurt (Dr‰ngelgitter) benutzen	CP; 11713,14118 11946,13993 11952,14002 11991,14060
 Greifswalder Str. - Immanuelkirchstr.: Fuﬂg‰ngerfurt (Dr‰ngelgitter) benutzen	CP; 11820,13804 11946,13993 11713,14118
+#: XXX ^^^
 Kietz - Kietzer Str.: zum ‹berqueren der Straﬂe Fuﬂg‰ngerampel links benutzen	CP; 22364,4429 22383,4470 22372,4496 22358,4521
 Kietz - M¸ggelheimer Str.: zum ‹berqueren der Straﬂe Fuﬂg‰ngerampel links benutzen	CP; 22364,4429 22383,4470 22341,4483
 #XXX del --- Kietz - Amtsstr.: zum ‹berqueren der Straﬂe Fuﬂg‰ngerampel links benutzen	CP; 22364,4429 22419,4457 22495,4523

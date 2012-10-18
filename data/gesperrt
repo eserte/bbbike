@@ -116,7 +116,7 @@ Gartenufer (in der Dunkelheit gesperrt)	2 6239,11399 5780,11622
 Steinplatz	1 5166,11343 5122,11300 5088,11322 5053,11343 5091,11406
 Am Treptower Park (Umfahrung auf Gehweg ist möglich)	1 14089,9610 13867,9864 13829,9905
 Amtsgerichtsplatz	1 2987,11055 3049,11015 3033,10980 2981,10892 2921,10928 2987,11055
-Bethaniendamm	1 12055,11331 12012,11235 11950,11157 11845,11095 11816,11084 11640,11067 11458,11136
+Bethaniendamm	1 12055,11331 12012,11235 11950,11157 11845,11095 11750,11065 11640,11067 11458,11136
 Engeldamm	1 11473,11180 11656,11106 11800,11118 11921,11185 12026,11348
 Pannierstr.	1 12202,8895 12242,8972
 Stolzenfelsstr.	1s 19447,8175 19400,8147 19333,8165 19171,8280 18949,8437 18787,8540 18731,8577
@@ -1700,11 +1700,11 @@ Wadzeckstr. -> Mollstr.: Straßenbahntrasse	3::igndisp 11379,13279 11406,13321 11
 Mollstr. -> Wadzeckstr.: Straßenbahntrasse	3::igndisp 11446,13294 11406,13321 11379,13279
 Mendelssohnstr. -> Mollstr.: Straßenbahntrasse	3::igndisp 11346,13441 11306,13386 11406,13321
 Mollstr. -> Mendelssohnstr.: Straßenbahntrasse	3::igndisp 11276,13408 11306,13386 11346,13441
-Straßenbahntrasse	3nocross::ignrte 11706,13635 11640,13551 11561,13451 11539,13425 11486,13350 11446,13294
-Mendelssohnstr. [Wohngebiet] -> Otto-Braun-Str.: Straßenbahntrasse	3::igndisp 11598,13598 11640,13551 11706,13635
-Otto-Braun-Str. -> Mendelssohnstr. [Wohngebiet]: Straßenbahntrasse	3::igndisp 11561,13451 11640,13551 11598,13598
+Straßenbahntrasse	3nocross::ignrte 11706,13635 11652,13564 11561,13451 11539,13425 11486,13350 11446,13294
+Mendelssohnstr. [Wohngebiet] -> Otto-Braun-Str.: Straßenbahntrasse	3::igndisp 11598,13598 11652,13564 11706,13635
+Otto-Braun-Str. -> Mendelssohnstr. [Wohngebiet]: Straßenbahntrasse	3::igndisp 11561,13451 11652,13564 11598,13598
+Otto-Braun-Str. -> Barnimstr.: Straßenbahntrasse	3::igndisp 11652,13564 11561,13451 11608,13417
 Barnimstr. -> Otto-Braun-Str.: Straßenbahntrasse	3::igndisp 11608,13417 11561,13451 11539,13425
-Otto-Braun-Str. -> Barnimstr.: Straßenbahntrasse	3::igndisp 11640,13551 11561,13451 11608,13417
 Mendelssohnstr. -> Otto-Braun-Str.: Straßenbahntrasse	3::igndisp 11490,13463 11539,13425 11561,13451
 Otto-Braun-Str. -> Mendelssohnstr.: Straßenbahntrasse	3::igndisp 11486,13350 11539,13425 11490,13463
 Otto-Braun-Str. -> Mendelssohnstr. [Wohngebiet]: Straßenbahntrasse	3::igndisp 11446,13294 11486,13350 11433,13389

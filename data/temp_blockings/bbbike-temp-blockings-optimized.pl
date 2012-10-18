@@ -1210,9 +1210,11 @@ userdel	q3::inwork 10893,14705 11101,14768
          'from' => undef,
          'id' => 2345,
          'data' => '#: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/oderberger_strasse.html (allerdings sind die Bauzeiten schon jetzt weit überschritten)
-#: last_checked: 2012-07-16
-userdel	q4::inwork 10401,14963 10379,14963 10370,14946 10380,14911
-userdel	q4::inwork 10379,14963 10366,14992
+#: last_checked: 2012-10-18 (aber Asphaltierung in Gange)
+#: next_check: 2012-10-20
+userdel	q4::inwork 10401,14963 10379,14963
+#XXX del --- hier nicht mehr --- userdel	q4::inwork 10379,14963 10370,14946 10380,14911
+#XXX del --- hier nicht mehr --- userdel	q4::inwork 10379,14963 10366,14992
 ',
          'type' => 'handicap'
        },
@@ -1384,7 +1386,7 @@ userdel	q4::inwork 9112,14771 9250,14658
          'text' => 'Oderberger Str.: Fahrbahn zwischen Kastanienallee und Choriner Str. wegen Bauarbeiten gesperrt',
          'from' => undef,
          'id' => 2383,
-         'data' => '#: last_checked: 2012-09-30 (wosch)
+         'data' => '#: last_checked: 2012-10-18
 userdel	q4::inwork 10870,14689 10723,14772
 ',
          'type' => 'handicap'
@@ -1394,7 +1396,7 @@ userdel	q4::inwork 10870,14689 10723,14772
          'text' => 'Choriner Str.: Einbahnstraße in Höhe Oderberger Str., Richtung Schönhauser Allee gesperrt',
          'from' => undef,
          'id' => 2384,
-         'data' => '#: last_checked: 2012-09-19
+         'data' => '#: last_checked: 2012-10-18
 userdel	q4::inwork; 10870,14689 10893,14705
 ',
          'type' => 'handicap'
