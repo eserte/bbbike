@@ -155,8 +155,7 @@ slow-checks:	check-categories \
 		persistent-tmp
 
 persistent-tmp:	fragezeichen-outdoor-nextcheck \
-		${PERSISTENTTMPDIR}/.check_fragezeichen-outdoor.bbd \
-		${PERSISTENTTMPDIR}/fragezeichen-outdoor.bbd \
+		fragezeichen-outdoor \
 		${PERSISTENTTMPDIR}/.check_fragezeichen-indoor-nextcheck.bbd \
 		${PERSISTENTTMPDIR}/fragezeichen-indoor-nextcheck.bbd \
 		${PERSISTENTTMPDIR}/.check_fragezeichen-nextcheck.bbd \
@@ -173,9 +172,12 @@ persistent-tmp:	fragezeichen-outdoor-nextcheck \
 		${PERSISTENTTMPDIR}/XXX.bbd \
 		${PERSISTENTTMPDIR}/plz-b.bbd
 
-# popular target
+# popular targets
 fragezeichen-outdoor-nextcheck:	${PERSISTENTTMPDIR}/.check_fragezeichen-outdoor-nextcheck.bbd \
 				${PERSISTENTTMPDIR}/fragezeichen-outdoor-nextcheck.bbd
+
+fragezeichen-outdoor:		${PERSISTENTTMPDIR}/.check_fragezeichen-outdoor.bbd \
+				${PERSISTENTTMPDIR}/fragezeichen-outdoor.bbd
 
 .for i in $(XXX_TARGETS)
 persistent-tmp:	${PERSISTENTTMPDIR}/XXX-$(i).bbd
@@ -1138,14 +1140,14 @@ CRON_WRAPPER=
 # Specify ADDITIONAL_CHECK_FOREVER_TARGETS make variable on command
 # line for more things to do...
 check-forever:
-	-nice ${FOREVER_TWO_ERRORS} ${CRON_WRAPPER} ${MAKE} check all ${PERSISTENTTMPDIR}/fragezeichen-outdoor-nextcheck.bbd ${ADDITIONAL_CHECK_FOREVER_TARGETS}
+	-nice ${FOREVER_TWO_ERRORS} ${CRON_WRAPPER} ${MAKE} check all fragezeichen-outdoor-nextcheck fragezeichen-outdoor ${ADDITIONAL_CHECK_FOREVER_TARGETS}
 	@-alarm -nicedown
 	@-xterm-conf -deiconify -raise
 	xmessage "check-forever failed"
 
 # Like check-forever, but build first, then check (all calls the check target)
 all-forever:
-	-nice ${FOREVER_TWO_ERRORS} ${CRON_WRAPPER} ${MAKE} ${PERSISTENTTMPDIR}/fragezeichen-outdoor-nextcheck.bbd all
+	-nice ${FOREVER_TWO_ERRORS} ${CRON_WRAPPER} ${MAKE} fragezeichen-outdoor-nextcheck fragezeichen-outdoor all
 	@-alarm -nicedown
 	@-xterm-conf -deiconify -raise
 	xmessage "all-forever failed"
