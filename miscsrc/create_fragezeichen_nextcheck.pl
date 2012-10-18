@@ -27,6 +27,7 @@ use StrassenNextCheck;
 my $fragezeichen_mode = 0;
 my $door_mode = 'out';
 my $today = strftime "%Y-%m-%d", localtime;
+my $do_preamble;
 my $verbose;
 
 my @actions;
@@ -34,6 +35,7 @@ my @actions;
 GetOptions(
 	   "today=s" => \$today,
 	   "verbose" => \$verbose,
+	   "preamble" => \$do_preamble,
 	   "fragezeichen-mode"    => sub { push @actions, sub { $fragezeichen_mode = 1 } },
 	   "no-fragezeichen-mode" => sub { push @actions, sub { $fragezeichen_mode = 0 } },
 	   "indoor-mode"          => sub { push @actions, sub { $door_mode = 'in' } },
@@ -49,6 +51,14 @@ if ($today !~ m{^\d{4}-\d{2}-\d{2}$}) {
 if (!@actions) {
     warn "No actions, nothing to do...\n";
     exit;
+}
+
+if ($do_preamble) {
+    print <<'EOF';
+#: line_dash: 8, 5
+#: line_width: 5
+#:
+EOF
 }
 
 for my $action (@actions) {

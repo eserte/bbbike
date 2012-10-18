@@ -846,16 +846,12 @@ ${PERSISTENTTMPDIR}/fragezeichen-${doormode}-nextcheck.bbd ${PERSISTENTTMPDIR}/.
 		Makefile \
 		${SOURCE_TARGETS:S|$|-orig|} \
 		${PERSISTENTTMPDIR}/bbbike-temp-blockings-optimized.bbd
-	echo -n > ${PERSISTENTTMPDIR}/fragezeichen-${doormode}-nextcheck.bbd~
-	echo "#: line_dash: 8, 5" >> ${PERSISTENTTMPDIR}/fragezeichen-${doormode}-nextcheck.bbd~
-	echo "#: line_width: 5" >> ${PERSISTENTTMPDIR}/fragezeichen-${doormode}-nextcheck.bbd~
-	echo "#:" >> ${PERSISTENTTMPDIR}/fragezeichen-${doormode}-nextcheck.bbd~
-	${MISCSRCDIR}/create_fragezeichen_nextcheck.pl --${doormode}-mode \
+	${MISCSRCDIR}/create_fragezeichen_nextcheck.pl --preamble --${doormode}-mode \
 	    --fragezeichen-mode fragezeichen-orig \
 	    --no-fragezeichen-mode \
 	    ${SOURCE_TARGETS:S|fragezeichen||:S|$|-orig|} \
 	    ${PERSISTENTTMPDIR}/bbbike-temp-blockings-optimized.bbd \
-		>> ${PERSISTENTTMPDIR}/fragezeichen-${doormode}-nextcheck.bbd~
+		> ${PERSISTENTTMPDIR}/fragezeichen-${doormode}-nextcheck.bbd~
 	mv -f ${PERSISTENTTMPDIR}/fragezeichen-${doormode}-nextcheck.bbd~ ${PERSISTENTTMPDIR}/fragezeichen-${doormode}-nextcheck.bbd
 	touch ${PERSISTENTTMPDIR}/.check_fragezeichen-${doormode}-nextcheck.bbd
 .endfor
