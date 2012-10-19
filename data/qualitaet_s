@@ -231,9 +231,9 @@ Gartenstr.: Asphalt	Q0 8692,14923 8870,14637 8953,14528 9081,14363 9118,14306 92
 Gartenstr.: Asphalt	Q0 8663,14960 8685,14966 8700,14956 8701,14932 8692,14923 8671,14919 8660,14929 8656,14947 8663,14960
 Gartenstr.: Kopfsteinpflaster	Q2 8663,14960 8570,15107
 Gerichstr.: Kopfsteinpflaster	Q2 8456,15235 8570,15107
-Am Kupfergraben: teilweise schlechtes Kopfsteinpflaster, Ausweichen auf Gehweg möglich	Q3 9529,12925 9618,12907 9661,12876
+Am Kupfergraben: teilweise schlechtes Kopfsteinpflaster, Ausweichen auf Gehweg möglich	Q3 9533,12925 9618,12907 9661,12876
 Am Kupfergraben: Asphalt	Q0 9661,12876 9754,12775 9810,12712 9870,12657
-Geschwister-Scholl-Str.: Kopfsteinpflaster	Q2 9529,12925 9550,12760
+Geschwister-Scholl-Str.: Kopfsteinpflaster	Q2 9533,12925 9550,12760
 Marchlewskistr.: Kopfsteinpflaster	Q2 13217,11936 13275,11830
 Pillauer Str.: Kopfsteinpflaster	Q2 13366,11651 13270,11581
 Wriezener Karree: Asphalt	Q0 12726,11851 12959,11631
@@ -467,7 +467,7 @@ Berliner Allee: Kopfsteinpflaster	Q2 14828,17856 14766,17702 14754,17673 14673,1
 Berliner Allee: Asphalt	Q0 14673,17454 14584,17224 14552,17137 14533,17084 14535,17003 14559,16912
 Lessingstr.: Kopfsteinpflaster	Q2 10425,67 10300,42 10156,13 10066,-3 9966,-22 9861,-44 9812,-41 9730,-33
 Lessingstr.: Asphalt	Q0 10425,67 10512,83 10614,105 10737,132
-Monbijoustr.: Asphalt	Q0 9771,13182 9734,13057 9714,12995 9707,12974
+Monbijoustr.: Asphalt	Q0 9771,13182 9736,13061 9714,12995 9707,12974
 Nördliche Monbijoubrücke: Kleinsteinpflaster	Q1 9707,12974 9680,12916
 Südliche Monbijoubrücke: Kopfsteinpflaster	Q2 9680,12916 9661,12876
 Lüneburger Str.: Kopfsteinpflaster	Q2 7595,12980 7365,12775 7343,12758 7322,12735 7175,12630
@@ -629,7 +629,7 @@ Hampsteadstr.: Kopfsteinpflaster	Q2 793,2632 940,2722 1036,2781 1144,2847
 Hampsteadstr.: guter Asphalt	Q0 1144,2847 1255,2923 1290,2931 1437,2925 1532,2921 1634,2914 1718,2908 1831,2905 1888,2925
 Reichstagufer: Kopfsteinpflaster	Q2 9098,12687 8892,12576 8766,12541 8665,12548
 Reichstagufer: Asphalt	Q0 9098,12687 9117,12705 9209,12795 9280,12883
-Am Weidendamm: Asphalt	Q0 9280,12883 9323,12895 9383,12915 9529,12925
+Am Weidendamm: Asphalt	Q0 9280,12883 9323,12895 9383,12915 9533,12925
 Kopfstr.: Kopfsteinpflaster	Q2 12478,7878 12571,7899
 Kopfstr. - Lessinghöhe: Asphalt	Q2 12571,7899 12602,7907
 Neuwedeller Str.: Kopfsteinpflaster	Q2 12327,7847 12335,7770
@@ -1048,7 +1048,7 @@ Witzlebenplatz: Asphalt	Q0 2850,11386 2924,11309
 Friedbergstr.: Kopfsteinpflaster, OK	Q1 2766,10750 2812,10753 3012,10812 3204,10895
 Am Berlin Museum: Asphalt mit einigen Katzenkopfreihen	Q2 10032,10752 9829,10830
 (Rad- und Wanderweg an Spree und Landwehrkanal): teilweise Parkweg, teilweise gutes Kopfsteinpflaster	Q1 3358,12718 3396,12741 3476,12735 3582,12704 3763,12624 3888,12618 4131,12641 4340,12578 4529,12570 4642,12491 4829,12357 5045,12243 5147,12164 5261,12004 5361,11910
-Monbijoupark - Henriette-Herz-Platz: holpriger Parkweg	Q2 9977,12912 10132,12941
+Monbijoupark - Henriette-Herz-Platz: Asphalt	Q0 9977,12912 10132,12941
 Spreeufer: asphaltiert	Q0 10166,12777 10105,12855 9977,12912 9944,12921 9930,12947 9900,12942 9714,12995
 Spreeufer: wassergebundene Decke	Q1 9707,12974 9557,12992
 (Park am Fennpfuhl): Parkweg	Q1 15235,13573 15247,13662
@@ -7701,6 +7701,7 @@ Grimmstr. (Kreuzberg): Verbundsteinpflaster	Q0 11164,9885 11164,9904 11170,9919 
 Peter-Strasser-Weg: Asphalt mit leichten Schäden	Q0 9240,7811 9130,7810
 (Straße unter dem U-Bahnhof Gleisdreieck): Kopfsteinpflaster	Q2 8333,10167 8393,10505
 Mendelssohnstr.: Verbundsteinpflaster	Q1 11598,13598 11652,13564
+(Wiese vor dem Reichstag): unebene Gehwegplatten	Q2 8354,12416 8348,12617
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3777,16532 -3870,16527 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): mäßiger Asphalt	Q1 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): unbefestigte Straße	Q2 12608,22943 12589,22948 12526,22972
@@ -12854,9 +12855,9 @@ Eichendorffstr.: Kopfsteinpflaster	Q2 9275,13720 9231,13843 9203,13953
 Novalisstr.: Kopfsteinpflaster	Q2 9340,13510 9275,13720
 Philippstr.: Asphalt	Q0 8892,13498 8828,13434
 Schlegelstr.: Asphalt	Q0 9316,13870 9231,13843 9042,13707
-Claire-Waldoff-Str.: Asphalt	Q0 9242,13229 9114,13217
-Am Zirkus: Asphalt	Q1 9118,13070 9145,13020
-Am Zirkus: Asphalt	Q1 9106,13008 9145,13020 9170,13031 9239,12923
+Claire-Waldoff-Str.: Asphalt	Q0 9242,13235 9132,13187
+Am Zirkus: Asphalt	Q1 9118,13070 9134,13038
+Am Zirkus: Asphalt	Q1 9099,13030 9134,13038 9167,13046 9239,12923
 (Parkweg Spreebogenpark): Asphalt	Q0 8017,12826 8036,12855 8046,12870 8072,12902 8116,12938 8168,12945 8235,12945 8302,12933 8341,12911 8417,12846
 (Parkweg Spreebogenpark): wassergebundene Decke	Q1 8301,12758 8302,12933
 (südliches Spreeufer - Gustav-Heinemann-Brücke): wassergebundene Decke	Q1 8032,12889 8053,12871 8116,12938

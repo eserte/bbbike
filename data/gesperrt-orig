@@ -1795,6 +1795,7 @@ tragen (31 Stufen oder Kinderwagenrampe)	0:40 13168,21706
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+Schranke	BNP:3::trailer=10 8622,13042
 Drängelgitter	BNP:3::trailer=10 18788,27989
 Schranke	BNP:3::trailer=10 -2162,17924
 Schranke	BNP:3::trailer=10 -2278,17805
@@ -2161,6 +2162,10 @@ Drängelgitter	BNP:3::trailer=10 49739,-90894
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: last_checked: 2012-10-19
+#: next_check: 2013-01-01
+Margarete-Steffin-Str.: wegen Bauarbeiten gesperrt	2:inwork 8315,13181 8406,13127 8525,12958
+# 
 #: last_checked: 2012-10-16
 #: next_check: 2013-02-01
 Gleisdreieckpark: noch in Bau	2:inwork 8270,10613 8199,10634
@@ -2173,7 +2178,7 @@ Carlsgarten - Wuhlheide: wegen Bauarbeiten Durchfahrtsmöglichkeit zweifelhaft; e
 #: next_check: 2013-02-01
 Alt-Moabit - Invalidenstr.: wegen Bauarbeiten für die Straßenbahnanbindung gesperrt	2:inwork 7443,13008 7416,13058
 # 
-#: last_checked: 2012-08-30
+#: last_checked: 2012-10-19
 #: next_check: 2012-11-01
 #: XXX nach den Bauarbeiten vielleicht besserer Asphalt? -> qualitaet_s-orig
 #: XXX siehe auch Eintrag in handicap_s-orig
@@ -2235,8 +2240,14 @@ Wikingerufer: wegen Beschädigungen an der Ufermauer gesperrt	2:inwork 5354,12552
 #: XXX wo gibt es Informationen hierzu?
 #: by: Kai Wagner (permanente Sperrung)
 #: confirmed_by: srt
-#: last_checked: 2012-08-31
+#: last_checked: 2012-10-19
+#: next_check: 2013-02-01
 Friedrich-Ebert-Platz: permanent gesperrt, nicht nur bei Bundestagssitzungen	2 8554,12593 8540,12420
+# 
+#: last_checked: 2012-10-19
+#: next_check: 2013-02-01
+#: XXX evtl. permanent
+Vorfahrt Reichstagsgebäude: Absperrgitter, keine Durchfahrt mehr möglich	2 8400,12417 8399,12616
 # 
 #XXX del --- #: last_checked: 2012-03-23 --- #: next_check: 2012-04-25 --- Spreeufer: wegen Bauarbeiten gesperrt	2:inwork 8596,12576 8495,12651 8473,12753
 #XXX del --- #: last_checked: 2011-12-17 --- #: next_check: 2012-01-15 --- (Leuthener Platz - Wilhelm-Kabus-Str.): Bauzäune	2:inwork 7716,8356 7807,8354 7893,8327
@@ -2272,7 +2283,7 @@ Am Langen Jammer: westlicher Abschnitt wegen Bauarbeiten gesperrt	2:inwork 14405
 #XXX del --- #: last_checked: 2011-04-30 --- Tiergartenufer: Bauarbeiten, gesperrt	2:inwork 5711,11841 5543,11837 5478,11860
 #XXX del --- #: last_checked: 2011-04-08 --- Bebelplatz: Bauarbeiten, gesperrt	2:inwork 9679,12388 9702,12307 9708,12235
 #
-#: last_checked: 2012-09-03 vvv
+#: last_checked: 2012-10-19 vvv
 #: next_check: 2012-12-01 vvv
 Behrenstr.: Bauarbeiten, vollständig gesperrt	2:inwork 9743,12239 9801,12245
 Bebelplatz: Bauarbeiten, vollständig gesperrt	2:inwork 9795,12293 9869,12297
@@ -2296,9 +2307,9 @@ Caroline-Michaelis-Str.: Bauarbeiten	2:inwork 9151,13941 9125,13973
 #XXX del --- #: last_checked: 2011-05-20 --- #: next_check: 2011-08-01 --- Alex-Wedding-Str.: Bauarbeiten, komplett gesperrt	2:inwork 11085,13239 11045,13183
 #XXX del (für Radfahrer ist das Abbiegen möglich) --- #: next_check: 2012-06-01 vvv --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1010/nachricht4088.html --- Mauerstr.: Einbiegen in die Behrenstr. nicht möglich	3:inwork 9076,12054 9064,12156 9054,12154 --- Mauerstr.: Einbiegen in die Behrenstr. nicht möglich	3:inwork 9076,12054 9064,12156 9164,12172 --- Behrenstr.: Einbiegen in die Mauerstr. nicht möglich	3:inwork 9054,12154 9064,12156 9076,12054 --- Behrenstr.: Einbiegen in die Mauerstr. nicht möglich	3:inwork 9164,12172 9064,12156 9076,12054 --- #: next_check: ^^^
 # 
-#: last_checked: 2012-10-07
+#: last_checked: 2012-10-19
 #: next_check: 2012-12-01
-Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12748
+Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760
 # 
 #XXX --- siehe http://www.flickr.com/photos/h-e-n-r-y/5260386593/ #: last_checked: 2010-11-05 --- #: next_check: 2010-12-01 --- #: note: Eröffnung des Hotels im Dezember 2010 --- #: XXX Neubewertung für handicap_s notwendig! --- Spittelmarkt: wegen Bauarbeiten gesperrt	2:inwork 10166,11592 10153,11666 10213,11728
 #XXX del --- #: by: http://www.kondorwessels.com/index.php?id=356 (Fertigstellung) --- #: last_checked: 2011-11-11 --- #: next_check: 2011-11-21 --- Elisabeth-Mara-Str.: Bauarbeiten bis zum Frühjahr 2011	2:inwork 10506,11567 10320,11627
@@ -2458,7 +2469,7 @@ Clayallee: Mittelstreifen schlecht zu queren	3nocross 2116,7740 2094,7719 2036,7
 Clayallee: Mittelstreifen	3nocross 1136,3878 1152,3918 1214,4075
 Argentinische Allee: Mittelstreifen	3nocross 623,4902 844,4916 922,4910
 # XXX --- zurzeit (2012-03-16) wegen Bauarbeiten Einbahnstraße in andere Richtung --- Am Zirkus	1 9239,12923 9170,13031 9145,13020 9118,13070
-Adele-Schreiber-Krieger-Str.	1s 8737,12757 8596,12748
+Adele-Schreiber-Krieger-Str.	1s 8737,12757 8596,12760
 Virchowweg: schmale Toreinfahrt, Fußgänger und Bordstein	0:10 8548,13577
 tragen (ca. 20 Stufen)	0:45 8536,12758
 #: note: abgeschätzt, wie das nördliche Gegenstück

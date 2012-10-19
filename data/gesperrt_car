@@ -8,13 +8,13 @@ Reichstagufer	1 9098,12687 8892,12576 8766,12541
 Bunsenstr.	1 8892,12576 8907,12472
 Heimstr.	1 9973,9232 9962,9151 9959,9050 9958,8966
 Südstern	1 10705,9234 10547,9233
-Warschauer/Gubener	3nocross::ignrte 13651,11731 13597,11526 13588,11490
-Gubener Str. -> Warschauer Str.: Warschauer/Gubener	3::igndisp 13467,11778 13597,11526 13651,11731
-Warschauer Str. -> Gubener Str.: Warschauer/Gubener	3::igndisp 13588,11490 13597,11526 13467,11778
+Warschauer/Gubener	3nocross::ignrte 13651,11731 13603,11538 13588,11490
+Gubener Str. -> Warschauer Str.: Warschauer/Gubener	3::igndisp 13568,11560 13603,11538 13651,11731
+Warschauer Str. -> Gubener Str.: Warschauer/Gubener	3::igndisp 13588,11490 13603,11538 13568,11560
 Kopernikus (über die Warschauer)	3 13467,11778 13651,11731 13895,11663
 Kopernikus - Warschauer	3 13467,11778 13651,11731 13696,11920
 Warschauer - Kopernikus	3 13696,11920 13651,11731 13895,11663
-Warschauer - Kopernikus	3 13597,11526 13651,11731 13467,11778
+Warschauer - Kopernikus	3 13603,11538 13651,11731 13467,11778
 Warschauer/Boxhagener	3nocross::ignrte 13785,12292 13745,12118 13696,11920
 Boxhagener Str. -> Warschauer Str.: Warschauer/Boxhagener	3::igndisp 14045,11965 13745,12118 13696,11920
 Warschauer Str. -> Boxhagener Str.: Warschauer/Boxhagener	3::igndisp 13785,12292 13745,12118 14045,11965
@@ -211,8 +211,8 @@ Eichkatzweg	1 925,9644 794,9472
 Zikadenweg	1 703,9538 835,9707 937,9841 1046,9989 1047,10002 1159,10149
 Oberhaardter Weg	1 765,8481 911,8374
 Gustav-Freytag-Str. (Grunewald)	1 834,8273 815,8283 748,8456 765,8481
-Schumannstr.	1 8581,13013 8628,13033 8703,13045 8963,13117
-Albrechtstr. (Mitte)	1 8963,13117 9001,13039 9046,12933 9106,12795
+Schumannstr.	1 8581,13013 8628,13033 8701,13058 8964,13124
+Albrechtstr. (Mitte)	1 8964,13124 9001,13039 9046,12933 9106,12795
 Charitéstr.	1 8693,12951 8628,13033
 Spandauer Str. (Mitte)	3nocross::ignrte 10738,12364 10673,12434 10644,12469 10601,12521
 Gustav-Böß-Str. -> Spandauer Str.: Spandauer Str. (Mitte)	3::igndisp 10766,12511 10673,12434 10738,12364
@@ -428,10 +428,10 @@ Frankfurter Allee -> Weichselstr.: Finowstr.+Weichselstr./Frankfurter Allee	3::i
 Frankfurter Allee -> Waldeyerstr.: Finowstr.+Weichselstr./Frankfurter Allee	3::igndisp 14854,12137 14919,12130 14997,12243
 Weichselstr. -> Waldeyerstr.: Finowstr.+Weichselstr./Frankfurter Allee	3::igndisp 14887,11929 14919,12130 14997,12243
 Weichselstr. -> Frankfurter Allee: Finowstr.+Weichselstr./Frankfurter Allee	3::igndisp 14887,11929 14919,12130 14854,12137
-Friedrichstr. (Straßenbahn)	3nocross::ignrte 9225,13389 9242,13229 9250,13163 9255,13109
-Friedrichstr. -> Claire-Waldoff-Str.: Friedrichstr. (Straßenbahn)	3::igndisp 9250,13163 9242,13229 9114,13217
-Claire-Waldoff-Str. -> Friedrichstr.: Friedrichstr. (Straßenbahn)	3::igndisp 9114,13217 9242,13229 9225,13389
-Friedrichstr. -> Johannisstr.: Friedrichstr. (Straßenbahn)	3::igndisp 9242,13229 9250,13163 9385,13174
+Friedrichstr. (Straßenbahn)	3nocross::ignrte 9225,13389 9242,13235 9250,13163 9255,13109
+Claire-Waldoff-Str. -> Friedrichstr.: Friedrichstr. (Straßenbahn)	3::igndisp 9132,13187 9242,13235 9225,13389
+Friedrichstr. -> Claire-Waldoff-Str.: Friedrichstr. (Straßenbahn)	3::igndisp 9250,13163 9242,13235 9132,13187
+Friedrichstr. -> Johannisstr.: Friedrichstr. (Straßenbahn)	3::igndisp 9242,13235 9250,13163 9385,13174
 Johannisstr. -> Friedrichstr.: Friedrichstr. (Straßenbahn)	3::igndisp 9385,13174 9250,13163 9255,13109
 Oranienburger Str. (Straßenbahnhaltestelle)	3nocross::ignrte 9225,13389 9281,13374 9415,13315
 Linienstr. -> Oranienburger Str.: Oranienburger Str. (Straßenbahnhaltestelle)	3::igndisp 9296,13397 9281,13374 9415,13315

@@ -494,7 +494,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
          'text' => 'Am Kupfergraben und am Zeughaus: Berliner Kunst- und Nostalgiemarkt, Samstag und Sonntag ca. 11-17 Uhr, nur Schieben möglich',
          'from' => undef,
          'id' => 1887,
-         'data' => '	q4::temp:clock 9754,12775 9661,12876 9618,12907 9529,12925
+         'data' => '	q4::temp:clock 9754,12775 9661,12876 9618,12907 9533,12925
 	q4::temp:clock 9919,12613 9956,12523 9984,12426
 ',
          'type' => 'gesperrt'
@@ -1090,6 +1090,7 @@ userdel	q4::inwork; 10614,19907 10599,19957
          'data' => '#: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/kastanienallee_pb.html
 #: note: nur die halbe Strecke ist gesperrt, deshalb q3
 #: note: am 2012-09-19 geprüft, Schranke, nur Straßenbahnen werden durchgelassen
+#: note: am 2012-10-18 geprüft, Schranke, nur Straßenbahnen werden durchgelassen
 userdel	q3::inwork 10530,14452 10723,14772
 ',
          'type' => 'handicap'
