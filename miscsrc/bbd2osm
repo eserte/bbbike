@@ -956,19 +956,22 @@ sub handle_city_limit_like {
 }
 
 sub handle_berlin_citypart_like {
-    my($r) = @_;
-    my($sxy) = join ",", get_polygon_center(map { split/,/ } @{ $r->[Strassen::COORDS] });
-    get_node_id($sxy, { place => 'suburb',
-			name  => $r->[Strassen::NAME],
-			'is_in:county' => 'Berlin',
-			'addr:country' => 'DE',
-		      });
-    # And add Berlin:
-    if ($r->[Strassen::NAME] eq 'Mitte') {
-	get_node_id($sxy, { place => 'county', # XXX lying
-			    name  => 'Berlin',
+    if ($optimize_for == OPTIMIZE_FOR_GARMIN) {
+	# XXX not sure if this is even necessary for the Garmin...
+	my($r) = @_;
+	my($sxy) = join ",", get_polygon_center(map { split/,/ } @{ $r->[Strassen::COORDS] });
+	get_node_id($sxy, { place => 'suburb',
+			    name  => $r->[Strassen::NAME],
+			    'is_in:county' => 'Berlin',
 			    'addr:country' => 'DE',
 			  });
+	# And add Berlin:
+	if ($r->[Strassen::NAME] eq 'Mitte') {
+	    get_node_id($sxy, { place => 'county', # XXX lying
+				name  => 'Berlin',
+				'addr:country' => 'DE',
+			      });
+	}
     }
 }
 
