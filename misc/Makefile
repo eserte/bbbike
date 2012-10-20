@@ -350,7 +350,7 @@ do-garmindata-dist:	${BBBIKETMPDIR}/bbbike_routable_gmapsupp.img
 
 garmindata-sf-release:	do-garmindata-dist
 	@echo "Go to https://sourceforge.net/downloads/bbbike/bbbikedata-b_de/"
-	@echo "Create a YYYYMMDD directory and upload /tmp/bbbike-b_de-garmin-$(TODAY_DATE).zip"
+	@echo "Create a folder $(TODAY_DATE) , change to this folder and upload /tmp/bbbike-b_de-garmin-$(TODAY_DATE).zip"
 #	@echo "Really upload bbbike-b_de-garmin-$(TODAY_DATE).zip to SourceForge?"
 #	@cd /tmp && ls -l bbbike-b_de-garmin-$(TODAY_DATE).zip
 #	@echo "Press CTRL-C to abort. Return to continue release."
