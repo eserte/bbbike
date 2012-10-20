@@ -148,7 +148,7 @@ Marzahner Promenade: wird hier eine Anbindung für Radfahrer entstehen?	?::projec
 Hänflingsteig: wird dieser Abschnitt asphaltiert?	?::projected 20093,14591 20147,14570
 # 
 #: XXX Baumaßnahme 11.34 (Realisierung nach 2011)
-#: last_checked: 2012-09-13 (nördliches Ende)
+#: last_checked: 2012-10-20 (nordöstliches Ende)
 #: next_check: 2013-06-01
 Oderbruchstr./Hohenschönhausener Str.: werden hier Radspuren markiert?	?::projected 15058,14575 14754,14406 14721,14379 14667,14336 14650,14322 14358,14155 14298,14015 14261,13932 14218,13834
 # 
@@ -158,8 +158,8 @@ Oderbruchstr./Hohenschönhausener Str.: werden hier Radspuren markiert?	?::projec
 Michelangelostr.: werden hier Radspuren markiert?	?::projected 13768,15195 13696,15237 13560,15318 13186,15518 13072,15590
 # 
 #: XXX Baumaßnahme 11.12 (Realisierung nach 2011)
-#: last_checked: 2012-08-25 (nördliches Ende)
-#: next_check: 2014-04-01
+#: last_checked: 2012-10-20
+#: next_check: 2013-06-01
 Ruschestr.: werden hier Radspuren markiert?	?::projected 15950,12886 15953,12753 15952,12679 15947,12626 15926,12478 15904,12340
 # 
 #: XXX Baumaßnahme 11.45 (Realisierung nach 2011)
@@ -222,14 +222,11 @@ Verbindung im Zuge der RR9: Qualität?	? 26199,5643 26270,5829 26302,5932
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120207.1005.365838.html vvv
 #: last_checked: 2012-10-13
-#: next_check: 2012-11-01
-Hirschberger/Schreiberhauer: Zebrastreifen in Bau	?::inwork 15201,11069
-#: last_checked: 2012-10-13
 #: next_check: 2012-12-01
 Weitlingstr.: für 2012 geplanter Zebrastreifen? Wo genau?	?::projected 16705,11526 16734,11416
-#: last_checked: 2012-08-25
+#: last_checked: 2012-10-20 (aber nur im südlichen Bereich)
 #: next_check: 2012-12-31
-Degnerstr.: für 2012 geplanter Zebrastreifen? Wo genau?	?::projected 16537,15884 16535,15764
+Degnerstr.: für 2012 geplanter Zebrastreifen? Wo genau?	?::projected 16535,15766 16561,15956 16693,16202 16770,16465 16936,16606
 #: last_checked: 2012-08-25
 #: next_check: 2012-12-31
 Dorfstr.: für 2012 geplanter Zebrastreifen? Wo genau?	?::projected 19285,18489 19429,18368
@@ -471,11 +468,11 @@ Planstraße im Block 902: neue Straße wird gebaut, wo genau, wann? Wird der Straß
 # 
 #XXX del --- #: XXX neue Planstraßen nördlich des Alexanderplatzes vvv --- #: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20110208.1420.330238.html --- #: by: http://www.stadtentwicklung.berlin.de/planen/staedtebau-projekte/alexanderplatz/de/planungen/bplan/bplan_b4ca/index.shtml --- #: by: http://ww.ak-berlin.de/publicity/ak/internet.nsf/0/002CE81791D5796BC125784D0033BC47/$FILE/Auslobung_Alexander%20Parkside_18%2001%202010.pdf --- #: XXX Straßen werden benannt nach: --- #: XXX - Oda Schottmüller --- #: XXX - Hilde Radusch
 # 
-#: last_checked: 2012-10-13
+#: last_checked: 2012-10-20
 #: next_check: 2012-12-31
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110627.1115.349371.html
 #: XXX zurzeit (2012-10) ist die Fahrbahn in nördlicher Richtung für Radfahrer *verboten*
-Am Tierpark: nach den Bauarbeiten vielleicht Radwege/-spuren?	?::inwork 18220,11710 18228,11656 18268,11391 18286,11275 18343,11041 18417,10738 18446,10620
+Am Tierpark: nach den Bauarbeiten vielleicht Radwege/-spuren?	?::inwork 18220,11710 18228,11656 18268,11391 18286,11275 18327,11105 18343,11041 18417,10738 18446,10620
 # 
 #: by: http://www.berlin.de/ba-pankow/presse/archiv/20101116.0930.319072.html
 #: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/friedrich_engels_strasse.html
@@ -599,8 +596,8 @@ Braunschweiger Str.: Asphaltierung	?::projected 13047,7234 13150,7254 13322,7294
 #: next_check: 2010-09-01
 Fürstenwalder Allee: Bau von Radverkehrsanlagen	?::projected 29714,4461 29728,4435 29813,4314 29850,4288
 # 
-#: last_checked: 2012-09-13 vvv
-#: next_check: 2012-10-01 vvv
+#: last_checked: 2012-10-20 vvv
+#: next_check: 2012-12-15 vvv
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120207.1005.365838.html vvv
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120625.1405.371942.html (Ende der Bauarbeiten: Ende 2012) vvv
 Radverkehrsanlagen um den Knotenpunkt Weißenseer Weg/Konrad-Wolf-Str.: Radweg wird auf dem Gehweg geführt	?::inwork 14960,14746 15058,14575

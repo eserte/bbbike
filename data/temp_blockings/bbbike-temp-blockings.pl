@@ -6552,7 +6552,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_003935',
        data  => <<EOF,
-userdel	q4::inwork; 14902,10859 14923,10954 14950,11049 14988,11130
+userdel	q4::inwork; 14902,10859 14928,10970 14950,11049 14988,11130
 EOF
      },
      { from  => 1155592800, # 2006-08-15 00:00
@@ -8552,7 +8552,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20110714.0755.351214.html',
        data  => <<EOF,
-userdel	2::temp 14464,9927 14500,9856 14674,9764 14697,9726 14910,9643
+userdel	2::temp 14464,9927 14465,9900 14500,9856 14674,9764 14697,9726 14910,9643
 userdel	2::temp 14500,9856 14483,9843
 EOF
      },
@@ -9213,7 +9213,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006151',
        data  => <<EOF,
-userdel	1::inwork 14988,11130 14994,11120 15060,11006 15085,10956 15113,10916 15144,10905
+userdel	1::inwork 14988,11130 15060,11006 15085,10956 15113,10916 15144,10905
 EOF
      },
      { from  => 1185055200, # 2007-07-22 00:00
@@ -11559,7 +11559,7 @@ EOF
        text  => 'Kynaststraße wird ab 2.6.2008 gesperrt. Unter Umständen wird dann die Untere Kynaststraße befahrbar sein.',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 14988,11130 14950,11049 14923,10954 14902,10859 14880,10808 14828,10628 14805,10518
+userdel	2::inwork 14988,11130 14950,11049 14928,10970 14902,10859 14880,10808 14828,10628 14805,10518
 EOF
      },
      { from  => 1211493600, # 2008-05-23 00:00
@@ -17658,14 +17658,15 @@ EOF
 (Eingang Columbiadamm/Golßener Str. - Rundkurs auf dem Flughafen Tempelhof)	2::night 10384,8628 10360,8521 10298,8245
 (Rundkurs auf dem Flughafen Tempelhof)	2::night 11460,7802 11470,7744 11543,7369 11593,7314 11598,7264 11407,7198 11310,7071 11128,6967 10944,6790 10746,6693 10558,6661 10282,6692 10023,6806 9792,6964 9681,7075 9509,7195 9545,7426 9525,7558
 (Rundkurs auf dem Flughafen Tempelhof)	2::night 9525,7558 9522,7624 9562,7796 9619,7930 9709,8127 9784,8209 9884,8265 10042,8270 10298,8245 10575,8218
-(Rundkurs auf dem Flughafen Tempelhof)	2::night 10575,8218 10729,8152 10909,8003 11090,7916 11264,7882 11355,7871 11381,7775 11460,7447 11518,7314
+(Rundkurs auf dem Flughafen Tempelhof)	2::night 10575,8218 10729,8152 10909,8003 11090,7916 11264,7882 11355,7871 11388,7777 11460,7447 11518,7314
 (Rundkurs auf dem Flughafen Tempelhof - Eingang Tempelhofer Damm)	2::night 9525,7558 9431,7425 9386,7326 9300,7312 9302,7294 9242,7286
 (Weg parallel zum Tempelhofer Damm)	2::night  9300,7312 9281,7651 9281,7795
 (Eingang Peter-Strasser-Weg)	2::night 9281,7795 9240,7811
 (Nördliche Landebahn - Eingang Peter-Strasser-Weg)	2::night 9362,7616 9281,7651
 (Rundkurs auf dem Flughafen Tempelhof - Eingang Peter-Strasser-Weg)	2::night 9562,7796 9372,7798 9281,7795
-(Südliche Landebahn)	2::night 9461,7190 9509,7195 9677,7206 11359,7307 11518,7314 11593,7314
-(Nördliche Landebahn)	2::night 9362,7616 9522,7624 9653,7635 11279,7768 11381,7775 11430,7781 11460,7802
+(Südliche Landebahn)	2::night 9461,7190 9509,7195 9677,7206 11332,7305 11518,7314 11593,7314
+(Südliche Landebahn - Rundkurs)	2::night 11332,7305 11438,7371 11460,7447
+(Nördliche Landebahn)	2::night 9362,7616 9522,7624 9653,7635 11279,7768 11388,7777 11430,7781 11460,7802
 (Nördliche Landebahn - Eingang Oderstr./Herrfurthstr.)	2::night 11460,7802 11439,7894
 (Eingang Oderstr./Herrfurthstr. - Flughafen Tempelhof)	2::night 11472,7899 11458,7897 11439,7894
 (Strecke an der nordöstlichen Begrenzung - Rundkurs)	2::night 11005,8064 10909,8003
@@ -19040,7 +19041,7 @@ EOF
        data  => <<EOF,
 #: by: http://www.tempelhoferfreiheit.de/ueber-die-tempelhofer-freiheit/aktuelles/die-challenge-bibendum-startet/
 #: by: http://www.tempelhoferfreiheit.de/fileadmin/user_upload/Ueber_die_Tempelhofer_Freiheit/Aktuelles/Plan_ChallengeBibendum2011-THF.jpg
-userdel	2::temp 11355,7871 11381,7775 11279,7768 9653,7635 9522,7624 9562,7796 9619,7930 9709,8127 9784,8209 9884,8265 10042,8270 10298,8245 10360,8521 10644,8363 10803,8251 11005,8064 10909,8003
+userdel	2::temp 11355,7871 11388,7777 11279,7768 9653,7635 9522,7624 9562,7796 9619,7930 9709,8127 9784,8209 9884,8265 10042,8270 10298,8245 10360,8521 10644,8363 10803,8251 11005,8064 10909,8003
 userdel	2::temp 9362,7616 9522,7624 9525,7558
 userdel	2::temp 10360,8521 10384,8628
 userdel	2::temp 10575,8218 10729,8152 10598,8270 10575,8218 10298,8245

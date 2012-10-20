@@ -1465,3 +1465,13 @@ Seestr. (Bad Saarow): Poller	3 54817,-11895 54776,-11895 54732,-11898
 Seestr. (Bad Saarow): Poller	3 54643,-11904 54681,-11900 54732,-11898
 Seestr. (Bad Saarow): Poller	3 54732,-11898 54681,-11900 54643,-11904
 Halenseestr.	1 1928,10728 2028,10612 2112,10488 2076,10357 2069,10330 2094,10286 2229,10045
+Küstriner Str.: Barrieren	3 16123,15025 16211,15105 16152,15164
+Küstriner Str.: Barrieren	3 16123,15025 16211,15105 16295,15024
+Küstriner Str.: Barrieren	3 16123,15025 16211,15105 16319,15229
+Frankfurter Allee	3nocross::ignrte 17151,11801 17240,11791 17440,11774
+Alt-Friedrichsfelde -> Rosenfelder Str.: Frankfurter Allee	3::igndisp 17440,11774 17240,11791 17161,11681
+Rosenfelder Str. -> Alt-Friedrichsfelde: Frankfurter Allee	3::igndisp 17306,11866 17240,11791 17440,11774
+Rosenfelder Str. -> Rosenfelder Str.: Frankfurter Allee	3::igndisp 17306,11866 17240,11791 17161,11681
+Rosenfelder Str. -> Rosenfelder Str.: Frankfurter Allee	3::igndisp 17161,11681 17240,11791 17306,11866
+Rosenfelder Str. -> Frankfurter Allee: Frankfurter Allee	3::igndisp 17161,11681 17240,11791 17151,11801
+Frankfurter Allee -> Rosenfelder Str.: Frankfurter Allee	3::igndisp 17151,11801 17240,11791 17306,11866

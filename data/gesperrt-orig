@@ -222,8 +222,8 @@ Gervinusstr.	1 3587,10768 3631,10784
 Darßer Str.	1 15000,18056 15031,18106 15181,18137
 #XXX del: Schottstr.	1 16276,12273 16389,12394
 #XXX del: Rüdigerstr.	1 16389,12394 16485,12384
-Alfredstr.	1 16207,11937 16246,12177 16261,12224
-#XXX del: Alfredstr.	1 16261,12224 16276,12273
+Alfredstr.	1 16207,11937 16246,12177 16255,12224
+#XXX del: Alfredstr.	1 16255,12224 16276,12273
 Fanningerstr.	1s:q4 16890,12135 16794,12144
 Gierkeplatz	1 3447,12269 3456,12296 3478,12306 3510,12301 3528,12276 3521,12243 3493,12228 3463,12237 3447,12269
 Knaackstr.	1 11056,15009 11038,14972 11101,14768
@@ -1408,7 +1408,7 @@ Müllerstr.: Zaun auf dem Mittelstreifen	3nocross 6781,16026 6914,15908 6936,1588
 Indira-Gandhi-Str.: Straßenbahntrasse	3nocross 14597,15970 14609,15921 14650,15750
 Indira-Gandhi-Str.: Straßenbahntrasse	3nocross 14550,16161 14522,16260 14499,16341
 #XXX del --- das Überqueren ist möglich! --- Weißenseer Weg: Straßenbahntrasse	3nocross 15058,14575 15110,14486 15164,14392
-Lichtenberger Brücke: unbequemes Passieren des Mittelstreifens (Bordsteine, starker Verkehr)	3nocross 16737,11866 16851,11852 16962,11833 17037,11820 17121,11806 17151,11801
+Lichtenberger Brücke: unbequemes Passieren des Mittelstreifens (Bordsteine, starker Verkehr)	3nocross 16737,11866 16803,11859 16962,11833 17037,11820 17121,11806 17151,11801
 #: by: Kerstin Pantos:
 Kolonnenstr.: Mittelinsel mit Geländer	3nocross 7709,8777 7642,8815 7563,8871
 Mollstr.: Straßenbahntrasse	3nocross 11446,13294 11524,13247 11557,13228 11681,13161
@@ -1437,6 +1437,7 @@ Linksabbiegen in den Wolfensteindamm gefährlich/unbequem	3nocross 4789,5079 4692
 Hauptstr.: Mittelstreifen	3nocross 6687,8385 6765,8480 6912,8617 6989,8687
 #: by: Jirka Klaue:
 Am Tierpark: Straßenbahntrasse	3nocross 18631,10167 18585,10278 18554,10354 18446,10620
+Am Tierpark: Straßenbahntrasse	3nocross 18286,11275 18268,11391 18228,11656
 Mühlenstr.: Mittelstreifen ohne Überquerungshilfe	3nocross 12497,11459 12539,11416 12576,11375 12641,11288
 Mühlenstr.: Mittelstreifen ohne Überquerungshilfe	3nocross 12990,11006 13080,10956 13144,10921
 Mühlenstr.: Mittelstreifen	3nocross 12908,11058 12848,11093 12793,11132 12736,11186
@@ -1795,6 +1796,7 @@ tragen (31 Stufen oder Kinderwagenrampe)	0:40 13168,21706
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+Schwingtor	BNP:5::trailer=10 17490,13133
 Schranke	BNP:3::trailer=10 8622,13042
 Drängelgitter	BNP:3::trailer=10 18788,27989
 Schranke	BNP:3::trailer=10 -2162,17924
@@ -2186,9 +2188,9 @@ Oberwallstr.: Bauarbeiten, komplett gesperrt	2:inwork 9890,12161 9875,12257
 # 
 #: by: Kai Wagner
 #: confirmed_by: srt
-#: last_checked: 2012-08-25
+#: last_checked: 2012-10-20
 #: next_check: 2013-05-01
-Parkplatz des ehem. Möbelhauses ist eingezäunt	2:inwork 17010,14269 17060,14255 17221,14268
+Parkplatz des ehem. Möbelhauses ist eingezäunt	2:inwork 17010,14269 17060,14255 17221,14268 17274,14280
 #
 #: XXX möglicherweise wird es den Weg in Zukunft gar nicht mehr geben
 #: by: Xenia B.
@@ -2226,9 +2228,9 @@ Am Pankepark: Bauarbeiten, gesperrt	2:inwork 8152,14130 8246,14184
 #XXX del --- #: last_checked: 2012-05-01 --- #: next_check: 2012-07-15 --- Paul-und-Paula-Ufer: wegen Bodensanierungsarbeiten komplett gesperrt	2:inwork 14884,10508 14906,10587
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120217.1445.366291.html
-#: last_checked: 2012-08-25
+#: last_checked: 2012-10-20
 #: next_check: 2012-11-20
-Radweg Herzberge: wegen Bauarbeiten gesperrt (ab 2012-02-20)	2:inwork 17167,13655 17110,13811 17095,13972 17154,14093 17266,14144 18015,13846
+Radweg Herzberge: wegen Bauarbeiten gesperrt (ab 2012-02-20)	2:inwork 17167,13655 17110,13811 17095,13972 17154,14093 17266,14144
 # 
 #XXX del --- now in handicap_l-orig --- #: last_checked: 2011-11-27 --- #: next_check: 2012-03-01 --- Am Alten Markt: wegen Bauarbeiten (Wiederaufbau des Schlosses) gesperrt	2:inwork -12643,-1694 -12624,-1598
 # 
@@ -2318,8 +2320,8 @@ Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,127
 #XXX del --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1002/nachricht3772.html --- #: next_check: 2010-10-01 --- Brücke über A10: Sperrung vom 15.02.2010 bis 01.10.2010	2:inwork 15337,24593 15490,24848
 #XXX del --- #: last_checked: 2010-09-11 --- #: next_check: 2010-12-31 --- #: XXX der Neubau wird "N" oder "NH" sein und Radwege haben --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0907/nachricht3563.html --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1005/nachricht3870.html --- #: by: http://www.altglienicke.de/aktuell.php : Sperrung aufgehoben (20.05.11) --- Wegedornbrücke: Vollsperrung, Neubau	2:inwork 20385,593 20442,564 20510,530 20534,501
 # 
-#: last_checked: 2012-09-26
-#: next_check: 2012-10-19
+#: last_checked: 2012-10-20
+#: next_check: 2013-02-01
 #: XXX abhängiger Eintrag in vorfahrt-orig sowie in ampeln-orig (auskommentierte Ampel)
 Kynaststraße: Bauarbeiten im südlichen Abschnitt	2:inwork 14652,10201 14724,10297 14766,10372 14795,10473 14805,10518
 # 
@@ -2601,7 +2603,7 @@ Blumenweg	1 -9445,-2389 -9343,-2087
 Golliner Str.	1 22217,17989 22276,18107 22191,18150
 Schorfheidestr.	1s 21900,18215 21869,18227
 Jagowstr. (Hermsdorf)	1 3046,22292 3043,22407 3050,22554 3056,22693
-Hagenstr. (Lichtenberg)	1 16957,12599 16918,12325
+Hagenstr. (Lichtenberg)	1 16957,12599 16933,12432 16918,12325
 Gehrenseestr.	1 18477,16748 18324,16625
 tragen	0:60 18448,16759
 Drängelgitter	BNP:5 6367,825
