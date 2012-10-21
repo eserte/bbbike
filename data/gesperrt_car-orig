@@ -26,7 +26,7 @@ Boxhagener - Neue Bahnhof	3 14799,11330 14918,11249 15016,11431
 Goeben - Kulmer	3 7725,9748 7829,9723 7848,9814 7866,9902
 Kulmer Str./Goeben	3 7771,9479 7829,9723 7848,9814 7866,9902
 Hermannstr. - Flughafen	3 11884,8492 11898,8362 12083,8411
-Karlshorster - Nöldner	3nocross 15279,10862 15272,10790 15263,10747
+Karlshorster - Nöldner	3nocross 15279,10862 15272,10790 15261,10738
 Weydemeyerstr. - Mollstr.	3 11910,13055 11905,13069 11839,13083
 Neue Schönhauser	1 10527,13257 10423,13215 10310,13227
 Hagelberger Str.	3 8777,9601 8773,9524 8648,9526
@@ -76,7 +76,7 @@ Rudolf-Breitscheid-Str.	1 -10446,-1947 -10360,-1934 -10235,-1916 -9986,-1882 -97
 Bendastr.	1 12689,6905 12702,6846
 Bendastr.	1 12793,6407 12781,6470 12759,6563 12743,6645 12726,6727 12722,6748 12715,6775 12702,6846
 #XXXdel --- Puschkin/Bulgarische	1 13829,9905 13884,9882 13995,9834 14193,9746
-Puschkin/Bulgarische	1 14193,9746 14310,9692 14780,9480 14819,9462 14883,9431 15383,9191 15561,8903 15591,8848 15378,8668 15166,8489
+Puschkin/Bulgarische	1 14193,9746 14310,9692 14780,9480 14819,9462 14883,9431 15383,9191 15442,9095 15452,9079 15561,8903 15591,8848 15378,8668 15166,8489
 Karl-Marx-Str./Schönstedt	3nocross 12500,8504 12540,8458 12562,8432 12582,8408
 Hoffmannstr./Elsenstr.	3 14076,10011 14289,9870 14405,10027
 Behren/Ebert	3 8861,12125 8743,12099 8737,12098 8595,12066 8581,11896 8571,11846
@@ -242,7 +242,7 @@ Zossener Str.: Straßenbahntrasse	3nocross 23080,15700 23218,15671 23411,15632 23
 #: note: nur temporär gültig
 Kleinmachnower Weg: Sa und So ist die Schranke an der Kreuzung Sachlebenstraße zu, für Kfz-Verkehr demnach gesperrt	2 269,-41 665,85 941,125 1345,184
 #: by: Omi2006@... [AM]
-Hentigstr.	1 18518,8778 18548,8942 18586,9172 18621,9404
+Hentigstr.	1 18518,8778 18548,8942 18586,9172 18626,9406
 #: by: Hubertus Fürther [AM]
 Grottewitzstr.	1 21933,152 22145,208
 Schlichtallee	3nocross 15639,10469 15758,10578 15982,10765
@@ -271,7 +271,7 @@ Saarstr.: Durchfahrt für Autofahrer per Poller gesperrt	3nocross 5966,6747 5896,
 #: by: rjoop:
 Putlitzstr.	1 6210,13939 6205,14216
 Bornitzstr.	1 15643,12875 15563,12860
-Treskowallee: Straßenbahntrasse	3nocross 18875,9570 18875,9517 18834,9256 18809,9133
+Treskowallee: Straßenbahntrasse	3nocross 18875,9570 18867,9464 18834,9256 18809,9133
 Washingtonplatz: nur für Taxis	2 8106,13130 7937,13126
 Ella-Trebe-Str.: nur für Taxis	2 7937,13126 7938,13150 7938,13302
 An der Wuhlheide: Straßenbahntrasse	3nocross 20352,5877 20428,5841 20536,5789
@@ -475,7 +475,7 @@ Eisenacher Str.	1 22886,15095 23116,15111
 #: note: Luftbild:
 Streitstr./Chamissostr.: Mittelstreifen	3nocross -3009,17090 -3017,16984 -3018,16974
 #: by: (URL existiert nicht mehr) http://www.berlin.de/ba-lichtenberg/presse/archiv/20081119.1415.114691.html
-Treskowallee/Rheinsteinstr.: Straßenbahntrasse	3nocross 18770,8898 18734,8682 18733,8650
+Treskowallee/Rheinsteinstr.: Straßenbahntrasse	3nocross 18770,8898 18737,8686 18733,8650
 #: by: anonymous
 #: confirmed_by: srt
 Lötzener Allee	1 574,10577 452,10669 474,10869 495,11090
@@ -665,7 +665,7 @@ Kurmärkische Str.	3 7413,10244 7429,10366 7337,10396
 Kurmärkische Str.	3 7337,10396 7429,10366 7444,10479
 Hentigstr.	1 18518,8778 18548,8942
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110309.1150.334660.html (südlicher Abschnitt confirmed)
-Hentigstr.	1 18548,8942 18586,9172 18621,9404
+Hentigstr.	1 18548,8942 18586,9172 18626,9406
 Oberwallstr.	1 9852,12409 9869,12297 9875,12257 9890,12161
 Prenzlauer Promenade	3nocross 11854,17656 11843,17737 11879,18057
 #: note: keine legale Überquerungsmöglichkeit für Radfahrer, aber dennoch möglich
@@ -862,3 +862,4 @@ Seestr. (Bad Saarow): Poller	3 * 54681,-11900 *
 Halenseestr.	1 1928,10728 2028,10612 2112,10488 2076,10357 2069,10330 2094,10286 2229,10045
 Küstriner Str.: Barrieren	3 16123,15025 16211,15105 *
 Frankfurter Allee	3nocross 17151,11801 17240,11791 17440,11774
+Ehrensfelsstr.: Durchfahrt verboten	3 * 18778,8663 *

@@ -32,8 +32,8 @@ Boxhagener - Neue Bahnhof	3 14799,11330 14918,11249 15016,11431
 Goeben - Kulmer	3 7725,9748 7829,9723 7848,9814 7866,9902
 Kulmer Str./Goeben	3 7771,9479 7829,9723 7848,9814 7866,9902
 Hermannstr. - Flughafen	3 11884,8492 11898,8362 12083,8411
-Karlshorster - Nöldner	3nocross::ignrte 15279,10862 15272,10790 15263,10747
-Nöldnerstr. -> Karlshorster Str.: Karlshorster - Nöldner	3::igndisp 15388,10758 15272,10790 15263,10747
+Karlshorster - Nöldner	3nocross::ignrte 15279,10862 15272,10790 15261,10738
+Nöldnerstr. -> Karlshorster Str.: Karlshorster - Nöldner	3::igndisp 15388,10758 15272,10790 15261,10738
 Karlshorster Str. -> Nöldnerstr.: Karlshorster - Nöldner	3::igndisp 15279,10862 15272,10790 15388,10758
 Weydemeyerstr. - Mollstr.	3 11910,13055 11905,13069 11839,13083
 Neue Schönhauser	1 10527,13257 10423,13215 10310,13227
@@ -82,7 +82,7 @@ Mangerstr. (Potsdam)	1 -12064,-284 -12108,-291 -12265,-418
 Rudolf-Breitscheid-Str.	1 -10446,-1947 -10360,-1934 -10235,-1916 -9986,-1882 -9735,-1845
 Bendastr.	1 12689,6905 12702,6846
 Bendastr.	1 12793,6407 12781,6470 12759,6563 12743,6645 12726,6727 12722,6748 12715,6775 12702,6846
-Puschkin/Bulgarische	1 14193,9746 14310,9692 14780,9480 14819,9462 14883,9431 15383,9191 15561,8903 15591,8848 15378,8668 15166,8489
+Puschkin/Bulgarische	1 14193,9746 14310,9692 14780,9480 14819,9462 14883,9431 15383,9191 15442,9095 15452,9079 15561,8903 15591,8848 15378,8668 15166,8489
 Karl-Marx-Str./Schönstedt	3nocross::ignrte 12500,8504 12540,8458 12562,8432 12582,8408
 Karl-Marx-Str. -> Schönstedtstr.: Karl-Marx-Str./Schönstedt	3::igndisp 12500,8504 12540,8458 12649,8535
 Schönstedtstr. -> Karl-Marx-Str.: Karl-Marx-Str./Schönstedt	3::igndisp 12649,8535 12540,8458 12562,8432
@@ -382,7 +382,7 @@ Zossener Str. -> Mittenwalder Str.: Straßenbahntrasse	3::igndisp 23218,15671 234
 Teupitzer Str. -> Zossener Str.: Straßenbahntrasse	3::igndisp 23573,15627 23568,15603 23617,15594
 Zossener Str. -> Teupitzer Str.: Straßenbahntrasse	3::igndisp 23411,15632 23568,15603 23573,15627
 Kleinmachnower Weg: Sa und So ist die Schranke an der Kreuzung Sachlebenstraße zu, für Kfz-Verkehr demnach gesperrt	2 269,-41 665,85 941,125 1345,184
-Hentigstr.	1 18518,8778 18548,8942 18586,9172 18621,9404
+Hentigstr.	1 18518,8778 18548,8942 18586,9172 18626,9406
 Grottewitzstr.	1 21933,152 22145,208
 Schlichtallee	3nocross::ignrte 15639,10469 15758,10578 15982,10765
 Zobtener Str. -> Schlichtallee: Schlichtallee	3::igndisp 16148,10329 15758,10578 15639,10469
@@ -445,11 +445,11 @@ Fregestr. -> Fregestr.: Durchfahrt für Autofahrer per Poller gesperrt	3::igndisp
 Saarstr. -> Fregestr.: Durchfahrt für Autofahrer per Poller gesperrt	3::igndisp 5811,6833 5896,6785 5957,6889
 Putlitzstr.	1 6210,13939 6205,14216
 Bornitzstr.	1 15643,12875 15563,12860
-Straßenbahntrasse	3nocross::ignrte 18875,9570 18875,9517 18834,9256 18809,9133
-Waldowallee -> Treskowallee: Straßenbahntrasse	3::igndisp 18899,9513 18875,9517 18834,9256
-Treskowallee -> Waldowallee: Straßenbahntrasse	3::igndisp 18875,9570 18875,9517 18899,9513
+Straßenbahntrasse	3nocross::ignrte 18875,9570 18867,9464 18834,9256 18809,9133
+Waldowallee -> Treskowallee: Straßenbahntrasse	3::igndisp 18916,9468 18867,9464 18834,9256
+Treskowallee -> Waldowallee: Straßenbahntrasse	3::igndisp 18875,9570 18867,9464 18916,9468
 Rolandseck -> Treskowallee: Straßenbahntrasse	3::igndisp 18903,9244 18834,9256 18809,9133
-Treskowallee -> Rolandseck: Straßenbahntrasse	3::igndisp 18875,9517 18834,9256 18903,9244
+Treskowallee -> Rolandseck: Straßenbahntrasse	3::igndisp 18867,9464 18834,9256 18903,9244
 Washingtonplatz: nur für Taxis	2 8106,13130 7937,13126
 Ella-Trebe-Str.: nur für Taxis	2 7937,13126 7938,13150 7938,13302
 Straßenbahntrasse	3nocross::ignrte 20352,5877 20428,5841 20536,5789
@@ -827,12 +827,12 @@ Eisenacher Str.	1 22886,15095 23116,15111
 Mittelstreifen	3nocross::ignrte -3009,17090 -3017,16984 -3018,16974
 Streitstr. -> Chamissostr.: Mittelstreifen	3::igndisp -3009,17090 -3017,16984 -2838,16951
 Chamissostr. -> Streitstr.: Mittelstreifen	3::igndisp -2838,16951 -3017,16984 -3018,16974
-Straßenbahntrasse	3nocross::ignrte 18770,8898 18734,8682 18733,8650
-Treskowallee -> Rheinsteinstr.: Straßenbahntrasse	3::igndisp 18770,8898 18734,8682 18868,8731
-Treskowallee -> Ehrenfelsstr.: Straßenbahntrasse	3::igndisp 18770,8898 18734,8682 18843,8612
-Rheinsteinstr. -> Treskowallee: Straßenbahntrasse	3::igndisp 18868,8731 18734,8682 18733,8650
-Rheinsteinstr. -> Ehrenfelsstr.: Straßenbahntrasse	3::igndisp 18868,8731 18734,8682 18843,8612
-Ehrenfelsstr. -> Treskowallee: Straßenbahntrasse	3::igndisp 18843,8612 18734,8682 18733,8650
+Straßenbahntrasse	3nocross::ignrte 18770,8898 18737,8686 18733,8650
+Treskowallee -> Rheinsteinstr.: Straßenbahntrasse	3::igndisp 18770,8898 18737,8686 18868,8731
+Treskowallee -> Ehrenfelsstr.: Straßenbahntrasse	3::igndisp 18770,8898 18737,8686 18778,8663
+Rheinsteinstr. -> Treskowallee: Straßenbahntrasse	3::igndisp 18868,8731 18737,8686 18733,8650
+Rheinsteinstr. -> Ehrenfelsstr.: Straßenbahntrasse	3::igndisp 18868,8731 18737,8686 18778,8663
+Ehrenfelsstr. -> Treskowallee: Straßenbahntrasse	3::igndisp 18778,8663 18737,8686 18733,8650
 Lötzener Allee	1 574,10577 452,10669 474,10869 495,11090
 keine Abbiegemöglichkeit	3nocross::ignrte 20064,3278 20010,3340 19904,3464
 Weerthstr. -> Adlergestell: keine Abbiegemöglichkeit	3::igndisp 20038,3357 20010,3340 20064,3278
@@ -1157,7 +1157,7 @@ Michelangelostr./Kniprodestr.	3 13875,15142 13830,15138 13838,15113
 Kurmärkische Str.	3 7413,10244 7429,10366 7337,10396
 Kurmärkische Str.	3 7337,10396 7429,10366 7444,10479
 Hentigstr.	1 18518,8778 18548,8942
-Hentigstr.	1 18548,8942 18586,9172 18621,9404
+Hentigstr.	1 18548,8942 18586,9172 18626,9406
 Oberwallstr.	1 9852,12409 9869,12297 9875,12257 9890,12161
 Prenzlauer Promenade	3nocross::ignrte 11854,17656 11843,17737 11879,18057
 Prenzlauer Promenade -> Laudaer Str.: Prenzlauer Promenade	3::igndisp 11854,17656 11843,17737 11785,17729
@@ -1475,3 +1475,5 @@ Rosenfelder Str. -> Rosenfelder Str.: Frankfurter Allee	3::igndisp 17306,11866 1
 Rosenfelder Str. -> Rosenfelder Str.: Frankfurter Allee	3::igndisp 17161,11681 17240,11791 17306,11866
 Rosenfelder Str. -> Frankfurter Allee: Frankfurter Allee	3::igndisp 17161,11681 17240,11791 17151,11801
 Frankfurter Allee -> Rosenfelder Str.: Frankfurter Allee	3::igndisp 17151,11801 17240,11791 17306,11866
+Ehrensfelsstr.: Durchfahrt verboten	3 18737,8686 18778,8663 18846,8616
+Ehrensfelsstr.: Durchfahrt verboten	3 18846,8616 18778,8663 18737,8686

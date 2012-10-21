@@ -163,13 +163,18 @@ Michelangelostr.: werden hier Radspuren markiert?	?::projected 13768,15195 13696
 Ruschestr.: werden hier Radspuren markiert?	?::projected 15950,12886 15953,12753 15952,12679 15947,12626 15926,12478 15904,12340
 # 
 #: XXX Baumaßnahme 11.45 (Realisierung nach 2011)
-Weg in KGA: was passiert hier?	?::projected 18278,9818 18242,9676
+#: last_checked: 2012-10-21
+#: next_check: 2013-06-01
+Weg 1 im KGA Hochspannung: wird hier eine Lösung für die Treppe gefunden? Und die Qualität des Wegs verbessert?	?::projected 18224,9795 18184,9626 18179,9611
+# 
 #: XXX Baumaßnahme 8.20 (Realisierung nach 2011)
 Karl-Marx-Str.: werden hier Radspuren markiert?	?::projected 13095,6926 13122,6717 13126,6687 13141,6651 13195,6560 13236,6489
+# 
 #: XXX Baumaßnahme 9.16 (Realisierung nach 2011)
-Kiefholzstr.: werden hier Radspuren markiert?	?::projected 15229,7785 15557,7404 15564,7395 15609,7347 15695,7254 15919,6992 15971,6936 16049,6852 16143,6750 16273,6609 16280,6601 16333,6544 16425,6445
-#: XXX Baumaßnahme 9.11 (Realisierung in 2011)
-Kiefholzstr.: werden hier Radspuren markiert?	?::projected 16425,6445 16485,6377 16861,5935
+#: last_checked: 2011-10-21
+#: next_check: 2013-03-01
+Kiefholzstr.: werden hier Radspuren markiert?	?::projected 15221,7778 15557,7404 15564,7395 15609,7347 15695,7254 15921,6994 15971,6936 16049,6852 16143,6750 16273,6609 16280,6601 16333,6544 16425,6445
+#XXX del --- realisiert! --- #: XXX Baumaßnahme 9.11 (Realisierung in 2011) --- Kiefholzstr.: werden hier Radspuren markiert?	?::projected 16425,6445 16485,6377 16861,5935
 # 
 #: XXX Baumaßnahme 9.19 (Realisierung nach 2011)
 #: last_checked: 2012-08-01
@@ -232,9 +237,9 @@ Degnerstr.: für 2012 geplanter Zebrastreifen? Wo genau?	?::projected 16535,15766
 Dorfstr.: für 2012 geplanter Zebrastreifen? Wo genau?	?::projected 19285,18489 19429,18368
 #: by: ^^^
 #
-#: last_checked: 2012-10-13
-#: next_check: 2012-10-17
-Treskowallee/Waldowallee: Situation nach den Bauarbeiten, wird man hier überuqeren können, wird es Radwege geben?	?::inwork 18823,9708 18865,9608 18875,9570 18875,9517 18834,9256
+#: last_checked: 2012-10-21
+#: next_check: 2012-11-10
+Treskowallee/Waldowallee: Situation nach den Bauarbeiten, wird man hier überqueren können (evtl. mit Ampel?), wird es Radwege geben?	?::inwork 18823,9708 18865,9608 18875,9570 18867,9464 18834,9256
 # 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/verwaltung/org/vermessung/b-plaene/b-plaene/B-V-3.jpg vvv
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/42re.pdf/file?y=2012 vvv
@@ -682,6 +687,8 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+#: XXX ein Teil ist N, ein Teil wohl NN (der südliche)
+Oststr. - Südostallee: Qualität? Beleuchtung?	? 17455,5355 17416,5388 17479,5463
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/43re.pdf/file?y=2012
 #: XXX fehlt bei Berlin.coords.data
 Fünf Morgen: wo wird sich die Straße befinden? Qualität?	? 1455,5143 1410,4926
@@ -3023,11 +3030,7 @@ Am Rodelberg: Ist die Straße bereits fertiggestellt? Qualität? Wo befindet sich 
 #: by: ^^^
 #: by: ^^^
 # 
-#: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20120302.1240.366909.html
-#: by: http://www.berlin.de/ba-treptow-koepenick/organisationseinheiten/tief/index.html?date=20120505
-#: next_check: 2012-07-13
-#: XXX es gab hier Geh- und Radwegarbeiten
-Königsheideweg: Gibt es hier Radwege oder Radspuren? Einseitig oder auf beiden Seiten? Zwischen welchen Kreuzungen?	?::inwork 16784,4913 16554,5022 16362,5112 16279,5170
+#XXX del --- es gibt nur einen Gehweg, ohne Radweg --- #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20120302.1240.366909.html --- #: by: http://www.berlin.de/ba-treptow-koepenick/organisationseinheiten/tief/index.html?date=20120505 --- #: next_check: 2012-07-13 --- #: XXX es gab hier Geh- und Radwegarbeiten --- Königsheideweg: Gibt es hier Radwege oder Radspuren? Einseitig oder auf beiden Seiten? Zwischen welchen Kreuzungen?	?::inwork 16784,4913 16554,5022 16362,5112 16279,5170
 # 
 #: last_checked: 2012-05-28
 #: next_check: 2013-05-15

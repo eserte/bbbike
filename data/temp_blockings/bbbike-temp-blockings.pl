@@ -10129,7 +10129,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006820',
        data  => <<EOF,
-userdel	1::inwork 16861,5935 16993,5841 17337,5574 17366,5551 17586,5374
+userdel	1::inwork 16861,5935 16993,5841 17337,5574 17366,5551 17479,5463 17599,5371
 EOF
      },
      { from  => 1191708000, # 2007-10-07 00:00
@@ -10955,7 +10955,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_007944',
        data  => <<EOF,
-userdel	1::inwork 15279,10862 15272,10790 15263,10747
+userdel	1::inwork 15279,10862 15272,10790 15261,10738
 EOF
      },
      { from  => 1204412400, # 2008-03-02 00:00
@@ -14564,7 +14564,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: last_checked: 2009-06-27
-userdel	q4::inwork; 15698,8191 15561,8072
+userdel	q4::inwork; 15692,8198 15557,8077
 EOF
      },
      { from  => 1245535200, # 2009-06-21 00:00
@@ -19300,7 +19300,7 @@ EOF
        type  => 'handicap',
        source_id => 'INKO_108107',
        data  => <<EOF,
-userdel	q4::inwork 15557,7404 15229,7785
+userdel	q4::inwork 15557,7404 15221,7778
 EOF
      },
      { from  => 1309644000, # 2011-07-03 00:00
@@ -19336,10 +19336,10 @@ EOF
        text  => 'Bombenfund am Bahnhof Köpenick',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 22364,6158 22467,6135 22539,6258
+userdel	2::inwork 22365,6149 22467,6135 22539,6258
 userdel	2::inwork 22358,5918 22428,6063 22467,6135 22603,6141
 userdel	2::inwork 22478,6041 22544,6037
-userdel	2::inwork 22324,6397 22364,6158 22283,6174
+userdel	2::inwork 22324,6397 22365,6149 22283,6174
 userdel	2::inwork 22513,5747 22531,5871 22358,5918 22294,5777
 userdel	2::inwork 22777,6151 22603,6141
 userdel	2::inwork 22608,5732 22631,5866 22531,5871 22539,5956 22730,5944
@@ -20352,12 +20352,12 @@ userdel	2::inwork -21888,31852 -21772,30661
 EOF
      },
      { from  => 1339649580, # 2012-06-14 06:53
-       until => 1354298400, # 2012-11-30 19:00
+       until => 1350829854, # 1354298400, # 2012-11-30 19:00 --- Baustelle existiert zwar zwischen Neue Krugallee und Orionstr., aber Radfahrer kommen ganz gut vorbei
        text  => 'Dammweg (Plänterwald): Baustelle, Straße vollständig gesperrt In beiden Richtungen zwischen Köpenicker Landstr. und Orionstr., 15.06.2012 06:53 Uhr bis 30.11.2012 19:00 Uhr ',
        type  => 'handicap',
        source_id => 'IM_018917',
        data  => <<EOF,
-userdel	q4::inwork 15758,8243 15698,8191 15561,8072
+userdel	q4::inwork 15751,8250 15692,8198 15557,8077
 EOF
      },
      { from  => 1340082000, # 2012-06-19 07:00

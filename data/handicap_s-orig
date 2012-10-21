@@ -9,21 +9,21 @@
 #: temporary vvv
 # 
 ### Friedrichshain ###
-#
-#: last_checked: 2012-10-17
+# 
+#: last_checked: 2012-10-19
 #: next_check: 2013-05-17
 #: XXX vmz-Eintrag: Am Oberbaum (Friedrichshain-Kreuzberg): Baustelle, Fahrtrichtung gesperrt (bis 05/2013) Richtung Kreuzberg zwischen Mühlenstr. und Oberbaumbrücke, 08.08.2012 10:00 Uhr bis 17.05.2013 17:00 Uhr¦INKO_113418¦http://asp.vmzberlin.com/VMZ_LSBB_MELDUNGEN_WEB/Meldungskarte.jsp?back=true&map=true&x=52.50189&y=13.4457&zoom=13&meldungId=INKO_113418
 Oberbaumbrücke: Umfahrung wegen Baustelle, etwas Zeitverlust	q3::inwork; 13332,10832 13305,10789
 # 
-#: last_checked: 2012-10-19 vvv
+#: last_checked: 2012-10-21 vvv
 #: next_check: 2012-10-25 vvv
 Modersohnstr.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 14181,11434 14134,11272
 Dirschauer Str.: Einbahnstraßenregelung wegen Umleitungsstrecke	q4::inwork; 13970,11366 14031,11569
 #: next_check ^^^
 #: last_checked ^^^
 # 
-#: last_checked: 2012-10-17
-#: next_check: 2012-10-20
+#: last_checked: 2012-10-19
+#: next_check: 2012-10-25
 Marchlewskistr., Helsingforser Str.: Bauarbeiten, u.U. Ausweichen auf Gehweg	q4::inwork; 13473,11456 13496,11384 13541,11355
 # 
 #: last_checked: 2012-09-20
@@ -86,7 +86,7 @@ Hessische Str.: Sackgasse zur Invalidenstr.	q3::inwork 8775,13606 8690,13723
 #: last_checked: 2012-08-23
 #: next_check: 2012-11-01
 #: XXX nach den Bauarbeiten vielleicht besserer Asphalt? -> qualitaet_s-orig
-#: XXX siehe auch Eintrag in handicap_s-orig
+#: XXX siehe auch Eintrag in gesperrt-orig
 #: XXX siehe auch Einträge in fragezeichen-orig (Falkoniergasse etc.)
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9875,12257 9869,12297
 # 
@@ -128,7 +128,7 @@ Am Kupfergraben: Baustelle, Einbahnstraße	q3::inwork; 9870,12657 9900,12643 9919
 # 
 ### Köpenick ###
 # 
-#: last_checked: 2012-10-05
+#: last_checked: 2012-10-21
 #: next_check: 2012-11-01
 Elcknerplatz, Borgmannstr.: Bauarbeiten, Einbahnstraße	q4::inwork; 22478,6041 22544,6037 22539,5956
 # 
@@ -612,7 +612,7 @@ Unterführung unter der Stromstr.: Fußgänger, eng	q2 6218,12975 6180,12972
 nördliches Spreeufer: drei niedrige Stufen, Fußgänger	q2 6180,12972 6102,12960 6064,12950
 #: by: Mirko Grammel (Bordsteine):
 Wustermarker Str.: Fußgänger, Bordsteine	q2 -4750,14393 -4678,14382
-Firlstr.: zwei Bodenschwellen	q1 18574,6401 18623,6523
+Firlstr.: zwei Bodenschwellen	q1 18574,6401 18645,6511
 (Florastr. - Schloßstr.): Fußgänger	q2 5234,6086 5165,6119
 Pankeweg: enger Pfad	q2 13365,22743 13321,22586 13295,22545 13290,22377 13354,22327
 (Bremer Weg): Fußgänger	q1 5900,11913 5923,11873 6296,11890 6342,11878 6409,11925 6573,11943 6642,12010
@@ -805,7 +805,7 @@ Cheruskerpark: Fußgänger	q1 7437,8712 7403,8693 7369,8583 7352,8391 7352,8390 72
 (Hoeppnerstr. - Hessenring): eng, Fußgänger	q3 8376,7440 8446,7524 8549,7622
 (Kolonie Zähringer Korso): eng	q3 8553,7795 8554,7746 8573,7710 8549,7622
 (Schulze-Boysen-Str. - Wilhelm-Guddorf-Str.): enge Straße	q1 15634,11656 15482,11729 15413,11690
-(Unterführung S-Bhf. Rummelsburg): Fußgänger	q4 15383,10656 15419,10706 15433,10765
+(Unterführung S-Bhf. Rummelsburg): Fußgänger	q4 15379,10651 15419,10706 15433,10765
 (Unterführung Bhf. Karlshorst): Fußgänger	q3 18877,8368 18910,8390 18949,8437
 Vereinsweg (Charlottenburg): Radfahren verboten	q4 2828,11731 2855,11752 2907,11755 2934,11747
 Neue Brücke: Fußgänger	q1 -3139,14710 -3143,14676 -3150,14631
@@ -1553,9 +1553,10 @@ Erich-Kuttner-Str.: enge Straße	q1 14584,13547 14532,13563 14428,13596 14370,136
 # 
 #: by: Patryk (bigoudi): vvv
 #: corrected_by: srt (added "Bordstein")
-(Königsheideweg - Westweg): Weg durch den Park, Bordstein	q1 17115,4757 17129,4837 17173,4902
+#: XXX_prog: BS an der südlichen Seite, allerdings existiert am Zebrastreifen eine Fahrbahnabsenkung
+(Königsheideweg - Weststr.): Weg durch den Park, Bordstein	q1 17115,4757 17129,4837 17173,4902
 #: confirmed_by: srt
-(Breiter Weg - Südostallee/Sterndamm): Fußgänger	q1 17586,5374 17538,5315
+(Breiter Weg - Südostallee/Sterndamm): Fußgänger	q1 17599,5371 17538,5301
 #: by: ^^^
 # 
 #: by: Dirk (gesch) vvv

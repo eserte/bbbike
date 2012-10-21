@@ -176,8 +176,8 @@ Mo, 26.10.1998
 # Punkt	      Kreuzung                           Dir    Zyk grün      rot
 # ----------------------------------------------------------------------------
 Di, 27.10.1998
-15263,10747   Hauptstr/Karlshorster Str          N->O       08:45:50  08:46:20
-15263,10747   Hauptstr/Karlshorster Str (Rad)    O->W       08:46:28
+15261,10738   Hauptstr/Karlshorster Str          N->O       08:45:50  08:46:20
+15261,10738   Hauptstr/Karlshorster Str (Rad)    O->W       08:46:28
 14641,10552   Markgrafendamm/Persiusstr.         N->S       08:48:42
 14558,10264   Treptowers/Stralauer A (Auto)      N->S       08:49:58
 14193,9746    Elsenstr./Puschkinallee (Auto)     N->S   90  08:51:02  08:51:31
@@ -278,8 +278,8 @@ Do, 29.10.1998
 # Punkt	      Kreuzung                           Dir    Zyk grün      rot
 # ----------------------------------------------------------------------------
 Fr, 30.10.1998
-15263,10747   Hauptstr./Karlshorster Str.        N->S       08:44:09  08:44:38
-15263,10747   Hauptstr./Karlshorster Str. (Rad)  O->W       08:44:46
+15261,10738   Hauptstr./Karlshorster Str.        N->S       08:44:09  08:44:38
+15261,10738   Hauptstr./Karlshorster Str. (Rad)  O->W       08:44:46
 14641,10552   Markgrafendamm/Persiusstr.         N->S       08:47:13
 14558,10264   Stralauer Str./Markgrafendamm      N->S       08:48:29
 14193,9746    Elsenstr./Puschkinallee            N->S   90  08:49:33  08:50:03
@@ -667,12 +667,12 @@ Mi, 07.04.1999
 14558,10264   Stralauer Allee/An den Tre (Auto)  SW->NO 60  23:10:30  23:10:53
 14558,10264   Stralauer Allee/An den Trep (Rad)  SW->NO 60  23:10:27  23:10:43?
 14641,10552   Markgrafendamm/Persiusstr.         S->N       23:11:45  23:12:15
-15263,10747   Hauptstr. (Lichtenberg)/Karlshors  W->O       23:14:44  23:14:14
+15261,10738   Hauptstr. (Lichtenberg)/Karlshors  W->O       23:14:44  23:14:14
 
 # Punkt	      Kreuzung                           Dir    Zyk grün      rot
 # ----------------------------------------------------------------------------
 Do, 08.04.1999
-15263,10747   Hauptstr. (Lichtenberg)/Karlshors  N->S       09:04:40
+15261,10738   Hauptstr. (Lichtenberg)/Karlshors  N->S       09:04:40
 14641,10552   Markgrafendamm/Persiusstr.         N->S       09:07:51  09:07:11
 14558,10264   Stralauer Allee/An den Treptowers  N->S       09:08:42
 14193,9746    Elsenstr./Puschkinallee            NO->SW 70? 09:10:48  09:09:52
@@ -781,7 +781,7 @@ Sa, 10.04.1999
 # Punkt	      Kreuzung                           Dir    Zyk grün      rot
 # ----------------------------------------------------------------------------
 So, 11.04.1999
-15263,10747   Hauptstr./Karlshorster Str.        W->O   70? 14:50:58? 14:50:18
+15261,10738   Hauptstr./Karlshorster Str.        W->O   70? 14:50:58? 14:50:18
 14641,10552   Markgrafendamm/Persiusstr.         N->S       14:52:31
 14193,9746    Elsenstr./An den Treptowers/Pusch  NO->SW 90? 14:56:22  14:55:22
 14089,9610    Elsenstr./Am Treptower Park        NO->SW     14:56:12  14:55:30
@@ -871,7 +871,7 @@ Do, 22.04.1999
 14310,9692    Puschkinallee/Parkweg                     AUS
 14558,10264   Stralauer Allee/An den Treptowers  SW->N  60  00:02:33  00:02:58
 14641,10552   Markgrafendamm/Persiusstr.         S->N   60?
-15263,10747   Hauptstr./Karlshorster Str.        W->O   60  00:06:47  00:06:17
+15261,10738   Hauptstr./Karlshorster Str.        W->O   60  00:06:47  00:06:17
 
 # Punkt	      Kreuzung                           Dir    Zyk grün      rot
 # ----------------------------------------------------------------------------
@@ -1632,9 +1632,9 @@ Fr, 19.02.2010
 # Punkt       Kreuzung                           Dir    Zyk grün      rot
 # ----------------------------------------------------------------------------
 Sa, 20.02.2010
-15263,10747   Hauptstr./Karlshorster Str.        W->O       12:34:11
-15263,10747   Hauptstr./Karlshorster Str.        W->O                 12:34:31
-15263,10747   Hauptstr./Karlshorster Str.        W->O       12:35:22
+15261,10738   Hauptstr./Karlshorster Str.        W->O       12:34:11
+15261,10738   Hauptstr./Karlshorster Str.        W->O                 12:34:31
+15261,10738   Hauptstr./Karlshorster Str.        W->O       12:35:22
 # XXX falsch? 15144,10905   Marktstr./Schreiberhauer Str.      W->O       12:37:52
 15144,10905   Marktstr./Schreiberhauer Str.      W->O       12:38:20
 15144,10905   Marktstr./Schreiberhauer Str.      W->O                 12:38:37

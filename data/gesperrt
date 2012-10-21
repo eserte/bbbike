@@ -431,7 +431,8 @@ Strausberger Platz	1 11976,12595 12005,12619 12050,12616 12099,12580 12114,12546
 Magirusstr.	1 8199,6583 7985,6598
 Egelingzeile	1 7976,6403 8194,6384
 Cecilieng‰rten	1 6256,7428 6241,7428 6238,7645 6257,7646 6272,7645 6289,7472 6291,7429 6256,7428
-Ingelheimer Str.	1 18884,8586 18951,8574 19030,8559
+Ingelheimer Str.	1 18891,8586 18951,8574 19030,8559
+Andernacher Str.	1 19030,8559 19000,8509
 Gleyeweg	1 17565,8197 17532,8125 17529,8073 17613,7989 17651,7973 17683,7958 17762,7931
 Murtzaner Ring	1 19818,14064 19770,14060 19731,14061 19692,14082 19634,14171 19599,14273 19595,14348 19593,14405 19593,14472
 Murtzaner Ring	1 19818,14064 19921,14064 19951,14083 20051,14191 20061,14220 20056,14373 20059,14441
@@ -733,8 +734,7 @@ Lindenweg	1s -3111,18105 -3076,18053 -3038,18063
 K¸sterstr.	1 -624,15494 -593,15300 -569,15167
 Straﬂburger Str.	1 11270,14131 11239,14123 11236,14153
 Rykestr./Knaackstr.	1 11331,14350 11374,14363 11380,14316
-Waldowallee	1 18875,9570 18899,9513
-Waldowallee	1 18899,9513 18875,9517
+Waldowallee	1 18916,9468 18867,9464
 Alfred-Kowalke-Str.	1 18027,11244 18059,11256 18179,11278 18229,11256
 Alfred-Kowalke-Str.	1 18229,11256 18202,11253 18061,11240 18027,11244
 Wittenbergplatz	1 6171,10657 6228,10646 6292,10627 6353,10583
@@ -959,9 +959,9 @@ D¸rtenstr. -> Buschkrugallee: Mittelstreifen mit hoher Kante	3::igndisp 13874,48
 Buschkrugallee -> D¸rtenstr.: Mittelstreifen mit hoher Kante	3::igndisp 13939,4778 13914,4877 13874,4867
 Straﬂenbahntrasse	3nocross::ignrte 12878,13229 12979,13280 13078,13330
 Landsberger Allee -> Virchowstr.: Straﬂenbahntrasse	3::igndisp 12878,13229 12979,13280 12916,13368
-Straﬂenbahntrasse	3nocross::ignrte 15639,10469 15408,10638 15383,10656
-Hauptstr. (Rummelsburg) [Wohngebiet] -> Hauptstr.: Straﬂenbahntrasse	3::igndisp 15358,10562 15408,10638 15383,10656
-Hauptstr. -> Hauptstr. (Rummelsburg) [Wohngebiet]: Straﬂenbahntrasse	3::igndisp 15639,10469 15408,10638 15358,10562
+Straﬂenbahntrasse	3nocross::ignrte 15639,10469 15404,10633 15379,10651
+Hauptstr. (Rummelsburg) [Wohngebiet] -> Hauptstr.: Straﬂenbahntrasse	3::igndisp 15358,10562 15404,10633 15379,10651
+Hauptstr. -> Hauptstr. (Rummelsburg) [Wohngebiet]: Straﬂenbahntrasse	3::igndisp 15639,10469 15404,10633 15358,10562
 Straﬂenbahntrasse	3nocross::ignrte 16004,10204 16114,10123 16138,10105
 Hauptstr. -> Friedrich-Jacobs-Promenade: Straﬂenbahntrasse	3::igndisp 16138,10105 16114,10123 16063,10050
 Friedrich-Jacobs-Promenade -> Hauptstr.: Straﬂenbahntrasse	3::igndisp 16063,10050 16114,10123 16004,10204
@@ -1948,6 +1948,7 @@ abgeschlossenes Tor	3 3781,16175 3796,16202 3836,16273
 abgeschlossenes Tor	3 3836,16273 3796,16202 3781,16175
 abgeschlossenes Tor	3 4898,22459 5083,22149 5086,22145
 abgeschlossenes Tor	3 5086,22145 5083,22149 4898,22459
+tragen (8 Stufen)	0:12:13 18184,9626
 tragen (3 Stufen, kann auf einer inoffiziellen Rampe umfahren werden)	0:10:-176 8029,10106
 tragen (ca. 20 Stufen, kann auf Rampen umfahren werden)	0:30:-156 -5561,12909
 tragen (wenige Stufen)	0:5:-161 -5446,13137
@@ -2773,11 +2774,7 @@ Treskowallee -> Weg entlang der Bahnstrecke: Straﬂenbahntrasse	3::igndisp 18742,
 Weg entlang der Bahnstrecke -> Richard-Kolkwitz-Weg: Straﬂenbahntrasse	3::igndisp 18445,9887 18703,9997 18715,10003
 Weg entlang der Bahnstrecke -> Treskowallee: Straﬂenbahntrasse	3::igndisp 18445,9887 18703,9997 18694,10018
 Treskowallee -> Richard-Kolkwitz-Weg: Straﬂenbahntrasse	3::igndisp 18694,10018 18703,9997 18715,10003
-Straﬂenbahn	3nocross::ignrte 18875,9517 18875,9570 18865,9608 18823,9708
-Waldowallee -> Treskowallee: Straﬂenbahn	3::igndisp 18899,9513 18875,9570 18875,9517
-Waldowallee -> Hˆnower Str.: Straﬂenbahn	3::igndisp 18899,9513 18875,9570 18765,9426
-Treskowallee -> Hˆnower Str.: Straﬂenbahn	3::igndisp 18875,9517 18875,9570 18765,9426
-Hˆnower Str. -> Treskowallee: Straﬂenbahn	3::igndisp 18765,9426 18875,9570 18865,9608
+Straﬂenbahn	3nocross::ignrte 18875,9570 18865,9608 18823,9708
 Treskowallee -> Rheinpfalzallee: Straﬂenbahn	3::igndisp 18823,9708 18865,9608 18931,9629
 Rheinpfalzallee -> Treskowallee: Straﬂenbahn	3::igndisp 18931,9629 18865,9608 18875,9570
 Straﬂenbahn	3nocross::ignrte 18807,9746 18823,9708 18865,9608

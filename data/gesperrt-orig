@@ -561,7 +561,8 @@ Strausberger Platz	1 11976,12595 12005,12619 12050,12616 12099,12580 12114,12546
 Magirusstr.	1 8199,6583 7985,6598
 Egelingzeile	1 7976,6403 8194,6384
 Cecilieng‰rten	1 6256,7428 6241,7428 6238,7645 6257,7646 6272,7645 6289,7472 6291,7429 6256,7428
-Ingelheimer Str.	1 18884,8586 18951,8574 19030,8559
+Ingelheimer Str.	1 18891,8586 18951,8574 19030,8559
+Andernacher Str.	1 19030,8559 19000,8509
 Gleyeweg	1 17565,8197 17532,8125 17529,8073 17613,7989 17651,7973 17683,7958 17762,7931
 Murtzaner Ring	1 19818,14064 19770,14060 19731,14061 19692,14082 19634,14171 19599,14273 19595,14348 19593,14405 19593,14472
 Murtzaner Ring	1 19818,14064 19921,14064 19951,14083 20051,14191 20061,14220 20056,14373 20059,14441
@@ -978,8 +979,8 @@ Lindenweg	1s:q3 -3111,18105 -3076,18053 -3038,18063
 K¸sterstr.	1 -624,15494 -593,15300 -569,15167
 Straﬂburger Str.	1 11270,14131 11239,14123 11236,14153
 Rykestr./Knaackstr.	1 11331,14350 11374,14363 11380,14316
-Waldowallee	1 18875,9570 18899,9513
-Waldowallee	1 18899,9513 18875,9517
+#XXX --- hmmm kann doch keine Einbahnstraﬂenregelung hier erkennen --- Waldowallee	1 18875,9570 18916,9468
+Waldowallee	1 18916,9468 18867,9464
 Alfred-Kowalke-Str.	1 18027,11244 18059,11256 18179,11278 18229,11256
 Alfred-Kowalke-Str.	1 18229,11256 18202,11253 18061,11240 18027,11244
 Wittenbergplatz	1 6171,10657 6228,10646 6292,10627 6353,10583
@@ -1205,7 +1206,7 @@ Buschkrugallee: Mittelstreifen mit hoher Kante	3nocross 13809,5257 13824,5204 13
 Buschkrugallee: Mittelstreifen mit hoher Kante	3nocross 14119,4153 14048,4363 14023,4475
 Buschkrugallee: Mittelstreifen mit hoher Kante	3nocross 13939,4778 13914,4877 13892,4955
 Landsberger Allee: Straﬂenbahntrasse	3nocross 12878,13229 12979,13280 13078,13330
-Hauptstr.: Straﬂenbahntrasse	3nocross 15639,10469 15408,10638 15383,10656
+Hauptstr.: Straﬂenbahntrasse	3nocross 15639,10469 15404,10633 15379,10651
 Hauptstr.: Straﬂenbahntrasse	3nocross 16004,10204 16114,10123 16138,10105
 #: by: Heike Steinhardt ("eher nicht empfehlenswert")
 #: confirmed_by: srt
@@ -1524,6 +1525,7 @@ abgeschlossenes Tor	3 * 5083,22149 *
 # Stellen, an denen getragen werden muﬂ:
 # die Zahl hinter dem ":" entspricht ungef‰hr den verlorenen Sekunden
 # 
+tragen (8 Stufen)	0:12 18184,9626
 tragen (3 Stufen, kann auf einer inoffiziellen Rampe umfahren werden)	0:10 8029,10106
 #: by: Stefan Klinkusch:
 tragen (ca. 20 Stufen, kann auf Rampen umfahren werden)	0:30 -5561,12909
@@ -2569,8 +2571,8 @@ Sonnenallee	3nocross 14617,7243 14693,7168 14752,7108 14803,7056
 Treskowallee: Straﬂenbahntrasse	3nocross 18631,10167 18694,10018 18703,9997 18742,9903
 #XXX del --- Treskowallee: Straﬂenbahntrasse	3nocross 18807,9746 18763,9837 18742,9903
 #: by: Christian Schweda [AM]
-#: confirmed_by: srt (und verl‰ngert)
-Treskowallee: Straﬂenbahn	3nocross 18875,9517 18875,9570 18865,9608 18823,9708
+#: confirmed_by: srt
+Treskowallee: Straﬂenbahn	3nocross 18875,9570 18865,9608 18823,9708
 Treskowallee: Straﬂenbahn	3nocross 18807,9746 18823,9708 18865,9608
 #: by: Kay-Uwe Ludwig [AM] vvv
 Niehofer Str.	1 16942,16174 16815,16214 16692,16253
