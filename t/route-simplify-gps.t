@@ -6,6 +6,7 @@
 #
 
 use strict;
+use utf8;
 no warnings 'qw';
 use FindBin;
 use lib (
@@ -45,10 +46,61 @@ $comments_net->make_net_cat(-net2name => 1,
 
 {
     my @path = map { [ split /,/ ] } qw(15420,12178 15361,12071 15294,11964 15317,11953);
-    my $simplified_route = Route::simplify_for_gps(Route->new_from_realcoords(\@path), -streetobj => $s, -netobj => $s_net);
-    ok $simplified_route or do {
-	require Data::Dumper; diag(Data::Dumper->new([$simplified_route],[qw()])->Indent(1)->Useqq(1)->Dump); # XXX
-    };
+    my $route = Route->new_from_realcoords(\@path);
+
+    my @std_args = ($route, -streetobj => $s, -netobj => $s_net);
+
+    {
+	my $simplified_route = Route::simplify_for_gps(@std_args);
+	like $simplified_route->{routename}, qr{^Route\d{8}$}, 'Route name with date';
+	is $simplified_route->{routenumber}, 1;
+	is_deeply $simplified_route->{idents}, {
+						0 => 1,
+						1 => 1,
+						"GURTEL+WIL" => 1,
+						"MOLLENDORF" => 1,
+					       }, 'Seen idents';
+	is $simplified_route->{wpt}->[0]->{origlon}, $path[0][0];
+	is $simplified_route->{wpt}->[0]->{origlat}, $path[0][1];
+
+	is $simplified_route->{wpt}->[-1]->{origlon}, $path[-1][0];
+	is $simplified_route->{wpt}->[-1]->{origlat}, $path[-1][1];
+
+	like $simplified_route->{wpt}->[0]->{lat}, qr{^52\.5}, 'looks like a latitude';
+	like $simplified_route->{wpt}->[0]->{lon}, qr{^13\.4}, 'looks like a longitude';
+
+	is_deeply [ map { $_->{ident} } @{ $simplified_route->{wpt} } ], [0, 'MOLLENDORF', 'GURTEL+WIL', 1], 'Idents in path';
+    }
+
+    {
+	my $simplified_route = Route::simplify_for_gps(@std_args, -routename => "My Route", -routenumber => 2);
+	is $simplified_route->{routename}, 'My Route';
+	is $simplified_route->{routenumber}, 2;
+    }
+
+    {
+	my $simplified_route = Route::simplify_for_gps(@std_args, -wptsuffix => 'sfx');
+	is_deeply [ map { $_->{ident} } @{ $simplified_route->{wpt} } ], ['SFX', 'MOLLENDSFX', 'GURTEL+SFX', '0SFX'], 'Idents in path with suffix';
+    }
+
+    {
+	my $simplified_route = Route::simplify_for_gps(@std_args, -waypointlength => 14);
+	is_deeply [ map { $_->{ident} } @{ $simplified_route->{wpt} } ], [0, 'MOLLENDORFF+FR', 'GURTEL+WILHELM', 1], 'Longer waypoint length';
+    }
+
+    {
+	my $simplified_route = Route::simplify_for_gps(@std_args, -waypointlength => 14, -waypointcharset => 'latin1');
+	is_deeply [ map { $_->{ident} } @{ $simplified_route->{wpt} } ], ['.', 'Möllendorff+Fr', 'Gürtel+Wilhelm', '..'], 'Waypoint charset is latin1';
+    }
+
+    {
+	my $waypointscache = { '0' => 1 };
+	my $simplified_route = Route::simplify_for_gps(@std_args, -waypointscache => $waypointscache);
+	is_deeply [ map { $_->{ident} } @{ $simplified_route->{wpt} } ], [1, 'MOLLENDORF', 'GURTEL+WIL', 2], 'pre-populated waypoints cache';
+    }
 }
+
+# Missing tests
+# - "routetoname" mode (and providing -routenamelength and calculating route name from start/goal)
 
 __END__
