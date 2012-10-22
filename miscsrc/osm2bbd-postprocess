@@ -201,7 +201,7 @@ sub target_inaccessible_streets {
     my(undef, $tmp) = tempfile(UNLINK => 1, SUFFIX => "-inaccessible.bbd") or die $!;
     my $cmd = <<EOF;
 set -e
-$miscsrcdir/search_inaccessible_points -encoding utf-8 -q -cache -shorter -street $datadir/strassen -street $datadir/faehren -blocked $datadir/gesperrt -blockedtype einbahn -blockedtype sperre > $tmp
+$miscsrcdir/search_inaccessible_points -stats -cache -shorter -street $datadir/strassen -street $datadir/faehren -blocked $datadir/gesperrt -blockedtype einbahn -blockedtype sperre > $tmp
 mv -f $tmp inaccessible_strassen
 chmod ugo-wx,ugo+r inaccessible_strassen
 EOF
