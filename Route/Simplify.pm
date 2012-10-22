@@ -1,10 +1,9 @@
 # -*- perl -*-
 
 #
-# $Id: Simplify.pm,v 1.7 2009/02/12 00:50:17 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2008,2009 Slaven Rezic. All rights reserved.
+# Copyright (C) 2008,2009,2012 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -16,7 +15,7 @@ package Route::Simplify;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.7 $ =~ /(\d+)\.(\d+)/);
+$VERSION = 1.08;
 
 use GPS::Util qw(eliminate_umlauts);
 
@@ -117,6 +116,7 @@ sub Route::simplify_for_gps {
     # so.
     my $leftrightpair = $args{-leftrightpair} || ["(- ", " -)"];
     my $uniquewpts = exists $args{-uniquewpts} ? $args{-uniquewpts} : 1;
+    my $debug = $args{-debug};
 
     my %crossings;
     if ($str) {
@@ -326,7 +326,7 @@ sub Route::simplify_for_gps {
 			     $local_ident_counter < ord("A")) {
 			$local_ident_counter = ord("A");
 		    }
-		    $cmptwpt->set_index($local_ident_counter);
+		    $cmptwpt->set_index(chr($local_ident_counter));
 		    $ident = $cmptwpt->shorten;
 		    last TRY if (!exists $idents{$ident} && !exists $waypointscache->{$ident});
 		}
@@ -336,7 +336,7 @@ sub Route::simplify_for_gps {
 	    }
 	}
 
-	print STDERR "|$ident|\n"; #XXX if debug?
+	print STDERR "|$ident|\n" if $debug;
 	$idents{$ident}++;
 
 	my $wpt = {lat => $lat, lon => $lon,
