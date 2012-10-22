@@ -47,8 +47,10 @@ $comments_net->make_net_cat(-net2name => 1,
 {
     my @path = map { [ split /,/ ] } qw(15420,12178 15361,12071 15294,11964 15317,11953);
     my $route = Route->new_from_realcoords(\@path);
+    my $routetoname = [ $s_net->route_to_name($route->path) ];
 
     my @std_args = ($route, -streetobj => $s, -netobj => $s_net);
+    my @std_routetoname_args = (@std_args, -routetoname => $routetoname);
 
     {
 	my $simplified_route = Route::simplify_for_gps(@std_args);
@@ -69,6 +71,9 @@ $comments_net->make_net_cat(-net2name => 1,
 	like $simplified_route->{wpt}->[0]->{lat}, qr{^52\.5}, 'looks like a latitude';
 	like $simplified_route->{wpt}->[0]->{lon}, qr{^13\.4}, 'looks like a longitude';
 
+	# Note that "MOLLENDORF" is suboptimal here... the full
+	# waypoint name is 'MOLLENDORFFSTR+FRANKFURTER ALLEE+GURTELSTR',
+	# but in this mode there's no good ordering of the street names
 	is_deeply [ map { $_->{ident} } @{ $simplified_route->{wpt} } ], [0, 'MOLLENDORF', 'GURTEL+WIL', 1], 'Idents in path';
     }
 
@@ -97,6 +102,24 @@ $comments_net->make_net_cat(-net2name => 1,
 	my $waypointscache = { '0' => 1 };
 	my $simplified_route = Route::simplify_for_gps(@std_args, -waypointscache => $waypointscache);
 	is_deeply [ map { $_->{ident} } @{ $simplified_route->{wpt} } ], [1, 'MOLLENDORF', 'GURTEL+WIL', 2], 'pre-populated waypoints cache';
+    }
+
+    ######################################################################
+    # routetoname tests
+    {
+	my $simplified_route = Route::simplify_for_gps(@std_routetoname_args);
+	is $simplified_route->{routename}, 'Mollen-Wilhel', 'Route name built from start and goal';
+	is_deeply [ map { $_->{ident} } @{ $simplified_route->{wpt} } ], ['MOLLENDORF', 'GURTEL+FRA', 'WILHELM-GU', 0], 'Idents in path (with routetoname)';
+    }
+
+    {
+	my $simplified_route = Route::simplify_for_gps(@std_routetoname_args, -waypointlength => 14, -waypointcharset => 'latin1');
+	is_deeply [ map { $_->{ident} } @{ $simplified_route->{wpt} } ], ['Möllendorffstr', 'Gürtel+Frankfu', '(- Wilhelm-Gud', '.'], 'Waypoint charset is latin1 (with routetoname)';
+    }
+
+    {
+	my $simplified_route = Route::simplify_for_gps(@std_routetoname_args, -waypointlength => 14, -waypointcharset => 'latin1', -leftrightpair => ['<-', '->']);
+	is_deeply [ map { $_->{ident} } @{ $simplified_route->{wpt} } ], ['Möllendorffstr', 'Gürtel+Frankfu', '<-Wilhelm-Gudd', '.'], 'Changed left/right arrows';
     }
 }
 
