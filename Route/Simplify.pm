@@ -151,8 +151,8 @@ sub Route::simplify_for_gps {
     }
 
     my $prev_used_street_name;
-    my $n = 0;
-    foreach my $xy (@path) {
+    foreach my $n (0 .. $#path) {
+	my $xy = $path[$n];
 	my $xy_string = join ",", @$xy;
 	my($lon, $lat) = $convmeth->(@$xy); # XXX del: $obj->standard2map(@$xy);
 
@@ -345,8 +345,6 @@ sub Route::simplify_for_gps {
 		   importance => $importance,
 		  };
 	push @{ $simplified_route->{wpt} }, $wpt;
-    } continue {
-	$n++;
     }
     
     if (!$routename) {
