@@ -33,11 +33,6 @@ use GPS::Util qw(eliminate_umlauts);
 	for (@name_members) { $self->{$_} = '' }
 	$self;
     }
-    sub copy {
-	my $self = shift;
-	my $copy = bless { %$self }, ref $self;
-	$copy;
-    }
     for my $member (@members) {
 	no strict 'refs';
 	*{"set_".$member} = sub { my($self,$val)=@_; $self->{$member} = $val };
