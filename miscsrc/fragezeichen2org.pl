@@ -80,12 +80,13 @@ for my $file (@files) {
 		     my $wd = [qw(Su Mo Tu We Th Fr Sa)]->[(localtime($epoch))[6]];
 		     my $date = "$y-$m-$d";
 		     my $subject = $r->[Strassen::NAME] || "(" . $file . "::$.)";
-		     my $dist;
+		     my $dist_tag = '';
 		     if ($centerc) {
-			 $dist = min map { int_round(Strassen::Util::strecke_s($_, $centerc)/1000) } @{ $r->[Strassen::COORDS] };
+			 my $dist = min map { int_round(Strassen::Util::strecke_s($_, $centerc)/1000) } @{ $r->[Strassen::COORDS] };
+			 $dist_tag = ":${dist}km:";
 		     }
 		     my $body = <<EOF;
-** TODO <$date $wd> $subject :${dist}km:
+** TODO <$date $wd> $subject $dist_tag
    : $r->[Strassen::NAME]\t$r->[Strassen::CAT] @{$r->[Strassen::COORDS]}
    [[${abs_file}::$.]]
 EOF
