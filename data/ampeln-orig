@@ -157,7 +157,7 @@
 #: XXX_prog keine Ampel in N-S-Richtung. Beim (Fußgänger-)Abbiegen von N->E gibt es eine Ampel nur an einer Fahrbahn.
 	X 13745,12118
 	X 13785,12292
-	F 13472,12337
+	F 13448,12340
 Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängerampel	X 12869,12425
 	X 12497,11459
 	X 15361,12071
@@ -1919,7 +1919,7 @@ S-Bahn ca. alle 10 Minuten	B 10865,-4464
 	B -6100,73876
 	F 6459,8272
 	F 1028,11309
-	X 13151,13367
+	F 13164,13374
 #: section Ampeln in Brandenburg vvv
 # nur besondere Ampeln werden hier aufgeführt
 	X 6399,-1793
@@ -2708,7 +2708,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X 10281,12310
 #: note: Straßenbahn kreuzt
 	X 15922,14344
-#: last_checked: 2012-09-22
+#: last_checked: 2012-10-23
 	F::inwork 9063,12051
 	F 2814,20035
 	F 3216,21431

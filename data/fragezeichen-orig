@@ -29,17 +29,12 @@ Grunewaldstr. (Steglitz)	?::projected 4861,5581 4671,5697 4520,5793
 #: XXX Baumaßnahme 1.48 (Realisierung nach 2011)
 Stülerstr.	?::projected 6825,11486 6716,11439 6692,11365 6679,11319 6630,11247 6606,11222
 # 
-#: last_checked: 2012-09-29
+#: last_checked: 2012-10-24
 #: next_check: 2012-11-30
 #: XXX Baumaßnahme 3.32 (Realisierung nach 2011)
 Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12128,14640 12317,14535 12425,14459 12621,14313 12729,14227 12901,14093 12975,13990 13037,13897 13100,13803 13166,13707 13225,13620 13228,13615 13330,13468
 # 
-#: last_checked: 2012-10-12 vvv
-#: next_check: 2012-10-17 vvv
-Kniprodestr./Am Friedrichshain: wird die andere Richtung auch Radspuren bekommen?	?; 12640,13814 12695,13864 12784,13961 12901,14093
-Am Friedrichshain: Radspuren werden (zumindest teilweise) markiert	?::inwork 12038,13685 11868,13646 11785,13625 11762,13619 11706,13635
-#: next_check ^^^
-#: last_checked ^^^
+#XXX del wahrscheinlich nicht, Busspur existiert --- #: last_checked: 2012-10-12 vvv --- #: next_check: 2012-10-17 vvv --- Kniprodestr./Am Friedrichshain: wird die andere Richtung auch Radspuren bekommen?	?; 12640,13814 12695,13864 12784,13961 12856,14042 12901,14093 --- #: next_check ^^^ --- #: last_checked ^^^
 # 
 #: last_checked: 2012-09-10
 #: next_check: 2012-10-15
@@ -50,7 +45,7 @@ Germanenstr. (oder nur das kleine Stück bis Waldsteg?)	?::projected 8406,19081 8
 # 
 #: by: Tagesspiegel vom 2009-04-12, soll 2009 realisiert werden
 #: corrected_by: MoPo 2009-08-01, soll 2010 realisiert werden
-#: last_checked: 2012-10-18
+#: last_checked: 2012-10-24
 #: next_check: 2012-12-01
 #: XXX im Baumaßnahmenkatalog ist nur der östliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaßnahmen 1.46 (Realisierung in 2011)
 Annenstr./Heinrich-Heine-Platz	?::projected 11349,11227 11249,11268 11091,11379 11052,11414 11039,11425 10915,11535 10815,11662
@@ -106,7 +101,7 @@ Brückenstr.: werden hier Radspuren markiert?	?::projected 11325,12021 11283,1187
 Markgrafenstr.: wird hier eine Radwegführung erstellt?	?::projected 9711,11543 9737,11546 9732,11574 9707,11596 9701,11656
 # 
 #: XXX Baumaßnahme 3.18 (Realisierung in 2011)
-#: last_checked: 2012-10-18 (weiterhin nur Busspuren)
+#: last_checked: 2012-10-24 (weiterhin nur Busspuren)
 #: next_check: 2013-06-01
 Otto-Braun-Str.: werden hier Radspuren markiert?	?::projected 11446,13294 11486,13350 11539,13425 11561,13451 11652,13564 11706,13635
 # 
@@ -220,6 +215,20 @@ Müggelseedamm: entstehen hier Radwege/spuren, insbesondere Richtung Westen?	?::p
 # - handelt es sich bei der Frage um Zebrastreifen und andere
 #   für Radfahrer eher uninteressante Dinge (-> private)
 # 
+#: by: http://www.berlin.de/imperia/md/content/balichtenberghohenschoenhausen/bebauen/beteiligen/xxii6dreinplan.pdf?start&ts=1350454320&file=xxii6dreinplan.pdf
+#: by: http://www.berlin.de/imperia/md/content/balichtenberghohenschoenhausen/bebauen/beteiligen/xxii6dbegruendung.pdf?start&ts=1350454241&file=xxii6dbegruendung.pdf
+#: next_check: 2013-12-31
+#: XXX evtl. ist hiermit die Position des Zebrastreifens in der Degnerstr. festgelegt?
+#: XXX vielleicht wird es auch eine Verbindung bis auf der ehem. Bahnlinie zur Hansastr. geben?
+Rad- und Gehwegverbindung Suermondtstr. - Degnerstr.	?::projected 16457,16204 16448,16102 16485,15979 16543,15892
+ 
+#: last_checked: 2012-10-23
+Hannah-Arendt-Str.: werden die Radspuren vielleicht noch verlängert?	? 8632,11912 8783,11959
+# 
+#: last_checked: 2012-10-23
+#: next_check: 2012-10-28
+Hannah-Arendt-Str./Ebertstr.: Ampel in Bau	?::inwork 8577,11896
+# 
 #: XXX Baumaßnahme 1.16 (Realisierung nach 2011)
 Ghanastr. - Kurt-Schumacher-Damm: im Zuge der RR4 könnte es hier eine neue Verbindung geben	?::projected 5255,17007 4988,17172
 Wackerweg - Otisstr.: im Zuge der RR4 könnte es hier eine neue Verbindung geben	?::projected 3803,18855 3680,18913
@@ -243,8 +252,8 @@ Treskowallee/Waldowallee: Situation nach den Bauarbeiten, wird man hier überquer
 # 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/verwaltung/org/vermessung/b-plaene/b-plaene/B-V-3.jpg vvv
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/42re.pdf/file?y=2012 vvv
-#: last_checked: 2012-10-12 vvv
-#: next_check: 2012-10-25
+#: last_checked: 2012-10-24 vvv
+#: next_check: 2012-10-31
 Planstraße D: Straße ist asphaltiert, weiße Straßenschilder existieren	?::inwork 12793,11132 12866,11256
 #: next_check: 2013-01-01
 Planstraße C: Einfahrten existieren noch, aber statt einer Straße ist hier nur ein Parkplatz	?::projected 12926,11224 12848,11093
@@ -616,6 +625,7 @@ Radverkehrsanlagen um den Knotenpunkt Weißenseer Weg/Konrad-Wolf-Str.: Radspuren
 #: next_check: 2013-03-01
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120207.1005.365838.html
 #: XXX Baumaßnahme 11.46 (Realisierung in 2011)
+#: XXX in http://www.berlin.de/imperia/md/content/balichtenberghohenschoenhausen/bebauen/beteiligen/xxii6dbegruendung.pdf?start&ts=1350454241&file=xxii6dbegruendung.pdf ist der Radstreifen erwähnt
 Suermondtstr./Buschallee: Schaffung von Radverkehrsanlagen	?::projected 16964,16042 16961,16042 16660,16165 16515,16207 16416,16236 16260,16282 16095,16331 15919,16383 15871,16399 15845,16405 15432,16500
 # 
 #: last_checked: 2012-09-13
@@ -686,6 +696,10 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 # - Fragen nach Zebrastreifen
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
+# 
+Am Faulen See: Qualität und Lage der Verbindung? Nachts beleuchtet?	? 16416,16236 16340,16338 16349,16394
+Fauler See - Tamseler Str.: Qualität und Lage der Verbindung? Nachts beleuchtet?	? 16477,16612 16488,16654 16555,16658
+Fauler See - Hansastr.: Qualität und Lage der Verbindung? Nachts beleuchtet?	? 15965,16482 15743,16689 15662,16656
 # 
 #: XXX ein Teil ist N, ein Teil wohl NN (der südliche)
 Oststr. - Südostallee: Qualität? Beleuchtung?	? 17455,5355 17416,5388 17479,5463

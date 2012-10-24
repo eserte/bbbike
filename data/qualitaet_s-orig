@@ -274,7 +274,7 @@ Straße 59: Asphalt	Q0 12459,21010 12524,20863
 #: confirmed_by: srt
 Charlottenburger Str.: mäßiger Asphalt	Q1+ 13712,16089 13642,16118 13479,16182 13440,16197 13429,16202 13404,16212 13286,16267 13033,16387 12919,16438 12798,16493 12642,16555 12564,16591 12353,16687 12226,16757
 #: by: ^^^
-Engeldamm: Asphalt	Q0 12026,11348 11921,11185 11800,11118 11656,11106 11473,11180
+Engeldamm: Asphalt	Q0 12026,11348 11985,11261 11921,11185 11800,11118 11656,11106 11473,11180
 Ritterstr.: Kopfsteinpflaster	Q2 10585,10766 10511,10800 10397,10852 10103,10989
 Adalbertstr.: Kopfsteinpflaster, Asphaltstreifen neben den parkenden Autos	Q1; 11656,11106 11726,11265 11807,11479
 Adalbertstr.: Kopfsteinpflaster	Q2; 11807,11479 11726,11265 11656,11106
@@ -1541,6 +1541,7 @@ Löwestr.: mäßiges Kopfsteinpflaster	Q2 13202,12790 13273,12649
 Löwestr.: teilweise schlechtes Kopfsteinpflaster	Q3 13273,12649 13357,12473
 Jacobystr.: Beton	Q1 11594,12662 11260,12809 11207,12706
 Parochialstr.: Kopfsteinpflaster	Q2 10952,12401 11040,12415
+#: XXX nochmal prüfen --- der Asphalt sah mir zuletzt ganz OK aus
 Parochialstr.: Asphalt mit Schadstellen	Q1 10831,12371 10952,12401
 Waisenstr.: schlechtes Kopfsteinpflaster	Q3 11059,12450 11032,12439 11040,12415 11049,12386 11094,12243
 Propststr.: Kopfsteinpflaster	Q2 10492,12289 10553,12333 10611,12378 10639,12394
@@ -1705,7 +1706,7 @@ Hausburgstr.: Kopfsteinpflaster	Q2 13742,13376 13835,13149 13895,13017
 Konitzer Str.: Kopfsteinpflaster	Q2 14099,11505 14087,11467
 Auguste-Hauschner-Str.: asphaltiert	Q0 8438,11753 8473,11634 8505,11544
 Cora-Berliner-Str.: asphaltiert	Q0 8737,12098 8783,11959
-Gertrud-Kolmar-Str.: asphaltiert	Q0 8837,11676 8825,11773 8810,11824 8783,11959
+Gertrud-Kolmar-Str.: asphaltiert	Q0 8837,11676 8825,11773 8813,11825 8783,11959
 Am Johannistisch: Verbundsteinpflaster	Q1 10029,9989 10111,9942
 (Markgrafendamm - Modersohnstr.; über das DB-Gelände): Beton	Q0 14672,10760 14564,10792 14558,10819
 (Markgrafendamm - Modersohnstr.; über das DB-Gelände): mäßiges bis schlechtes Kopfsteinpflaster	Q3+ 14558,10819 14141,10931 14107,10911 14043,10928
@@ -20176,6 +20177,10 @@ Borkener Weg: Beton	Q0 1375,18209 1390,18256 1448,18436 1507,18629
 #: by: ^^^
 # 
 #: by: Christian Coers: vvv
+#: XXX Straße wird neu gebaut, danach vielleicht bessere Qualität?
+#: XXX "Die Baumaßnahme wird voraussichtlich Ende 2013 beendet sein."
+#: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20121024.1305.377018.html
+#: next_check: 2013-10-31
 Straße 494: fester Sandweg	Q2 7923,23225 8119,22798
 #: confirmed_by: srt
 (Straße 494 - Freizeitpark Lübars): Trampelpfad	Q3 8119,22798 8131,22769 8081,22698 8060,22699
@@ -21143,7 +21148,7 @@ Agnes-Wabnitz-Str.: Kopfsteinpflaster	Q2 13934,13403 13819,13356
 Agnes-Wabnitz-Str.: Kopfsteinpflaster	Q2 13915,13443 13805,13394
 #: confirmed_by: srt
 Wilhelm-Stolze-Str.: Kopfsteinpflaster	Q2 13267,13167 13368,12943
-Fritz-Schiff-Weg: Kleinpflaster	Q1 13472,12337 13484,12436 13463,12507
+Fritz-Schiff-Weg: Kleinpflaster	Q1 13448,12340 13484,12436 13463,12507
 Ludwig-Pick-Str.: Asphalt	Q0 13548,12535 13552,12435
 Ludwig-Pick-Str.: Gehwegplatten	Q0 13552,12435 13543,12326
 Alte Allee: Asphalt	Q0 890,9399 794,9472 759,9497 703,9538 678,9558 616,9602

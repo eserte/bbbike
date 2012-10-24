@@ -134,7 +134,7 @@ Steinplatz	1 5166,11343 5122,11300 5088,11322 5053,11343 5091,11406
 Am Treptower Park (Umfahrung auf Gehweg ist möglich)	1 14089,9610 13867,9864 13829,9905
 Amtsgerichtsplatz	1 2987,11055 3049,11015 3033,10980 2981,10892 2921,10928 2987,11055
 Bethaniendamm	1 12055,11331 12012,11235 11950,11157 11845,11095 11750,11065 11640,11067 11458,11136
-Engeldamm	1 11473,11180 11656,11106 11800,11118 11921,11185 12026,11348
+Engeldamm	1 11473,11180 11656,11106 11800,11118 11921,11185 11985,11261 12026,11348
 Pannierstr.	1 12202,8895 12242,8972
 #: note: linker Gehweg für Radfahrer in Gegenrichtung offen, zumindest existiert mindestens ein entsprechendes Schild; allerdings ist der Gehweg eng und hat überwiegend nur mäßige Qualität
 Stolzenfelsstr.	1s:q2 19447,8175 19400,8147 19333,8165 19171,8280 18949,8437 18787,8540 18731,8577
@@ -2083,8 +2083,7 @@ Drängelgitter	BNP:3::trailer=15 12904,10141
 Drängelgitter	BNP:1::trailer=3 12833,9998
 Schranke (Privatstr.)	BNP:5 25039,5304
 Schranke	BNP:2::trailer=4 9907,11752
-#: note: möglicherweise wird die Vorbeifahrt ohne Schranke in Zukunft permanent möglich sein
-Schranke	BNP:5::trailer=10 10112,11796
+Schranke	BNP:3::trailer=10 10112,11796
 #: note: Vorbeifahrt auf dem Gehweg, Pfosten können möglicherweise Anhänger behindern 
 Schranke	BNP:3::trailer=6 9698,10348
 Drängelgitter	BNP:3::trailer=6 12682,7514
@@ -2182,7 +2181,7 @@ Carlsgarten - Wuhlheide: wegen Bauarbeiten Durchfahrtsmöglichkeit zweifelhaft; e
 #: next_check: 2013-02-01
 Alt-Moabit - Invalidenstr.: wegen Bauarbeiten für die Straßenbahnanbindung gesperrt	2:inwork 7443,13008 7416,13058
 # 
-#: last_checked: 2012-10-19
+#: last_checked: 2012-10-23
 #: next_check: 2012-11-01
 #: XXX nach den Bauarbeiten vielleicht besserer Asphalt? -> qualitaet_s-orig
 #: XXX siehe auch Eintrag in handicap_s-orig
@@ -2199,7 +2198,7 @@ Parkplatz des ehem. Möbelhauses ist eingezäunt	2:inwork 17010,14269 17060,14255 
 #: next_check: 2013-06-01
 Rudi-Dutschke-Weg	2:inwork 2627,5095 2913,5294
 # 
-#: last_checked: 2012-07-13
+#: last_checked: 2012-10-23
 #: next_check: 2012-12-01
 #: XXX Siehe auch Baustellenampel an der Wilhelmstr.
 #: XXX Siehe auch handicap in der Voßstr.
@@ -2214,7 +2213,7 @@ Zur Monumentenhalle: Straße wird wahrscheinlich neu gebaut	2:inwork 8376,8859 84
 #: next_check: 2013-01-01
 Billy-Wilder-Promenade: wegen Bauarbeiten an umliegenden Wohnhäusern gesperrt	2:inwork 2528,1501 2584,1376
 # 
-#: last_checked: 2012-10-10
+#: last_checked: 2012-10-23
 #: next_check: 2012-12-01
 Marx-Engels-Forum: wegen U-Bahn-Bauarbeiten Durchgang zur Rathausstr. nicht möglich	2:inwork 10411,12471 10422,12395
 # 
@@ -2296,7 +2295,7 @@ Bebelplatz: Bauarbeiten an der Staatsoper	2:inwork 9743,12239 9702,12307 9734,12
 #: next_check: ^^^
 #: last_checked: ^^^
 # 
-#: last_checked: 2012-08-30
+#: last_checked: 2012-10-23
 #: next_check: 2013-01-15
 Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 

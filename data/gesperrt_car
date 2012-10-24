@@ -87,7 +87,7 @@ Karl-Marx-Str./Schönstedt	3nocross::ignrte 12500,8504 12540,8458 12562,8432 1258
 Karl-Marx-Str. -> Schönstedtstr.: Karl-Marx-Str./Schönstedt	3::igndisp 12500,8504 12540,8458 12649,8535
 Schönstedtstr. -> Karl-Marx-Str.: Karl-Marx-Str./Schönstedt	3::igndisp 12649,8535 12540,8458 12562,8432
 Hoffmannstr./Elsenstr.	3 14076,10011 14289,9870 14405,10027
-Behren/Ebert	3 8861,12125 8743,12099 8737,12098 8595,12066 8581,11896 8571,11846
+Behren/Ebert	3 8861,12125 8743,12099 8737,12098 8595,12066 8577,11896 8571,11846
 UdL/Universitätsstr.	3nocross::ignrte 9475,12365 9601,12380 9656,12386 9695,12390
 Unter den Linden -> Universitätsstr.: UdL/Universitätsstr.	3::igndisp 9475,12365 9601,12380 9580,12581
 Universitätsstr. -> Unter den Linden: UdL/Universitätsstr.	3::igndisp 9580,12581 9601,12380 9656,12386
@@ -1338,6 +1338,9 @@ Danziger Str. -> Knaackstr.: Danziger/Knaack/Lychener	3::igndisp 11154,14985 110
 Danziger Str. -> Lychener Str.: Danziger/Knaack/Lychener	3::igndisp 10881,15047 11056,15009 11236,15312
 Lychener Str. -> Knaackstr.: Danziger/Knaack/Lychener	3::igndisp 11236,15312 11056,15009 11038,14972
 Lychener Str. -> Danziger Str.: Danziger/Knaack/Lychener	3::igndisp 11236,15312 11056,15009 11154,14985
+Straßenbahntrasse	3nocross::ignrte 13225,13620 13228,13615 13330,13468
+Danziger Str. -> Cotheniusstr.: Straßenbahntrasse	3::igndisp 13225,13620 13228,13615 13430,13733
+Cotheniusstr. -> Danziger Str.: Straßenbahntrasse	3::igndisp 13430,13733 13228,13615 13330,13468
 Thaters Privatweg	1 4148,15205 4103,15137 3892,14944 3893,14911 3899,14868 3956,14750
 Heinickeweg	1 2224,14825 2210,14696 2207,14576
 Jungfernsteig	1 938,14457 862,14463
