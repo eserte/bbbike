@@ -11585,26 +11585,8 @@ sub plot_point {
 	return bbbikelazy_add_data("p", $abk, $filename, {exists $args{NameDraw} ? (NameDraw => $args{NameDraw}) : ()});
     }
 
-    # XXX $ignore code fehlt noch...
-    my $restrict;
-    if (exists $str_restrict{$abk}) {
-	my $all_set = 1;
-	my($k,$v);
-	my @restrict;
-	while(($k,$v) = each %{$str_restrict{$abk}}) {
-	    if (!$v) {
-		$all_set = 0;
-	    } else {
-		$k =~ s/([?*])/\\$1/g; # quote special, XXX mehr davon bei Bedarf
-		push @restrict, $k;
-	    }
-	}
-	if ($all_set || !@restrict) {
-	    undef $restrict;
-	} else {
-	    $restrict = '^(' . join('|', @restrict) . ")\$";
-	}
-    }
+    # XXX die anderen Rückgabewerte (..._list, $ignore) werden noch ignoriert
+    my($restrict) = _set_restrict($abk);
 
     my $default_width;
     if (defined $args{Width}) { $default_width = $args{Width} }

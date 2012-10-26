@@ -530,7 +530,7 @@ sub BBBikeLazy::plotstr_on_demand {
 # 	    }
 
  	    my $i;
- 	    my $restrict = undef; #XXX
+	    my($restrict) = _set_restrict($abk); # andere Rückgabewerte ($ignore...) werden noch ignoriert
  	    my $coordsys = $coord_system_obj->coordsys;
 	    my $name_draw = $lazy_p_args{$abk}->{NameDraw} || $p_name_draw{$abk};
 	    # XXX Duplikate in plot_point: vvv
