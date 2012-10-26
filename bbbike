@@ -11498,10 +11498,13 @@ sub config_symbol {
 	$c->itemconfigure($tag_fg, -image => get_symbol_scale($abk));
 	if ($abk eq 'u') {
 	    $c->itemconfigure('u-U0-fg', -image => get_symbol_scale('u-U0'));
+	    $c->itemconfigure('u-UBau-fg', -image => get_symbol_scale('u-UBau'));
 	} elsif ($abk eq 'b') {
 	    $c->itemconfigure('b-S0-fg', -image => get_symbol_scale('b-S0'));
+	    $c->itemconfigure('b-SBau-fg', -image => get_symbol_scale('b-SBau'));
 	} elsif ($abk eq 'r') {
 	    $c->itemconfigure('r-R0-fg', -image => get_symbol_scale('r-R0'));
+	    $c->itemconfigure('r-RBau-fg', -image => get_symbol_scale('r-RBau'));
 	    $c->itemconfigure('r-RP-fg', -image => get_symbol_scale('r-RP'));
 	}
 	$c->itemconfigure($tag_label, -font => "$sans_serif_font_family -12");
@@ -16030,7 +16033,7 @@ sub scale_width {
     foreach (qw(lsa-X lsa-B lsa-B0 lsa-F lsa-Zbr rest kn vf-Vf vf-Kz u b), ($XXX_use_old_R_symbol ? () : ('r'))) {
 	$c->itemconfigure($_ . '-fg && !attrib-inwork', -image => get_symbol_scale($_, $scale));
     }
-    foreach (qw(u-U0 b-S0 r-R0 r-RP)) { # overwrite the previous settings of u,b,r
+    foreach (qw(u-U0 u-UBau b-S0 b-SBau r-R0 r-RBau r-RP)) { # overwrite the previous settings of u,b,r
 	$c->itemconfigure($_ . '-fg', -image => get_symbol_scale($_, $scale));
     }
     foreach (qw(attrib-inwork)) {
@@ -16395,7 +16398,7 @@ sub get_symbol_scale {
 	    $photo = load_photo($top, $filename, -persistent => 1);
 	}
 	return $photo;
-    } elsif ($tag eq 'u' || $tag eq 'b' || $tag eq 'u-U0' || $tag eq 'b-S0') {
+    } elsif ($tag eq 'u' || $tag eq 'b' || $tag eq 'u-U0' || $tag eq 'b-S0' || $tag eq 'u-UBau' || $tag eq 'b-SBau') {
 	my $photo;
 	my $base = $tag =~ m{^b} ? "sbahn" : "ubahn";
 	my $filename;
@@ -16407,7 +16410,7 @@ sub get_symbol_scale {
 	    $filename = $base . "_mini";
 	}
 	if ($filename) {
-	    if ($tag =~ m{^[ub]-[US]0$}) {
+	    if ($tag =~ m{^[ub]-[US](0|Bau)$}) {
 		$photo = load_photo($top, $filename, -persistent => 1, -palette => 256, -gamma => 3);
 	    } else {
 		$photo = load_photo($top, $filename, -persistent => 1);
