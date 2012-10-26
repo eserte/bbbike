@@ -877,14 +877,20 @@ sub handle_railway_stations_like {
     my $is_ubahn = $cat =~ m{^U};
     my $is_sbahn = $cat =~ m{^S};
     my $is_abandoned = $cat =~ m{0$};
+    my $is_construction = $cat =~ m{Bau$};
     my $is_optimize_for_mapnik_bbbike_style = $optimize_for_mapnik_style == OPTIMIZE_FOR_MAPNIK_STYLE_BBBIKE;
     my $name = (
 		$is_optimize_for_mapnik_bbbike_style
 		? ''
 		: ($is_ubahn ? 'U ' : $is_sbahn ? 'S ' : '')
 	       ) . $r->[Strassen::NAME];
-    my $attribs = { railway => 'station', # no distinction between halt and station
+    ##XXX $is_construction handling for mapnik_bbbike_style is missing
+    my $attribs = { railway => ($is_construction
+				? 'construction'
+				: 'station' # no distinction between halt and station
+			       ),
 		    ($is_abandoned ? ("abandoned" => "yes") : ()),
+		    ($is_construction ? ("construction" => "station") : ()), # more construction-related attribs set later
 		    name => $name,
 		  };
     if      ($is_ubahn) {
@@ -911,6 +917,10 @@ sub handle_railway_stations_like {
     } else {
 	warn "Unhandled railway station-like category $cat\n";
 	return;
+    }
+
+    if ($is_construction && $attribs->{station}) {
+	$attribs->{'construction:station'} = delete $attribs->{station};
     }
 
     get_node_ids($r, $attribs);

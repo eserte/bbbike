@@ -263,14 +263,20 @@ place=town [0x0800 resolution 18]
 place=village [0x0900 resolution 22]
 place=island [0x650c resolution 20]
 
-# SRT: addition
+# SRT: additions (construction and abandoned stuff) vvv
 railway=halt & abandoned=yes [0x7104 resolution 23]
+railway=halt & construction=yes [0x7104 resolution 23]
+railway=construction & construction=halt [0x7104 resolution 23]
+railway=station & abandoned=yes [0x7104 resolution 22]
+railway=station & construction=yes [0x7104 resolution 22]
+railway=construction & construction=station & construction:station=subway [0x7106 resolution 23]
+railway=construction & construction=station & construction:station=light_rail [0x7107 resolution 23]
+railway=construction & construction=station [0x7104 resolution 22]
+# ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 # SRT 0x2f08 -> 0x7103
 railway=halt [0x7103 resolution 23]
 # SRT: addition
 railway=station & bbbike:station_type=RP [0x7105 resolution 22]
-# SRT: addition
-railway=station & abandoned=yes [0x7104 resolution 22]
 # SRT additions (U/S-Bahn)
 railway=station & station=subway [0x7101 resolution 23]
 railway=station & station=light_rail [0x7102 resolution 23]
