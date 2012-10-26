@@ -20774,4 +20774,14 @@ EOF
 userdel	q4::inwork 15537,12367 15576,12315 15628,12246 15651,12214
 EOF
      },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Jüdenstr.: das Überqueren der Grunerstr. ist insbesondere außerhalb der Parkbewirtschaftungszeiten (abends, am Wochenende) sehr unbequem',
+       type  => 'gesperrt',
+       recurring => 1,
+       data  => <<EOF,
+#: by: http://www.berlin.de/ba-mitte/buergerdienste/parkraumbewirtschaftung.html (Zone 3)
+userdel	2::temp::igndisp 10805,12468 10803,12470
+EOF
+     },
     );

@@ -732,6 +732,12 @@ Mollstr. (Richtungsfahrbahn)	1::igndisp 11723,13139 11843,13090 11904,13075 1195
 Mollstr. (Richtungsfahrbahn)	1::igndisp 11985,13075 11966,13074 11905,13069 11839,13083 11739,13131 11723,13139
 Mollstr. (Straßenbahntrasse)	3nocross::ignrte 11985,13075 11966,13074 11905,13069 11839,13083 11739,13131 11723,13139
 #: note ^^^
+#: note: Mittelstreifen mit teilweise dichter Beparkung, sehr breite Straße, Straßentunnel vvv
+Grunerstr. (Richtungsfahrbahn)	1::igndisp 11105,12764 11057,12715 10954,12635 10878,12560 10805,12468 10738,12364
+Grunerstr. (Richtungsfahrbahn)	1::igndisp 10738,12364 10803,12470 10876,12563 10953,12638 11055,12717 11105,12764
+Grunerstr. (Mittelstreifen)	3nocross::ignrte 11105,12764 11055,12717 10953,12638 10876,12563 10803,12470 10738,12364
+Dircksenstr. (Mittelstreifen/Straßentunnel)	2::igndisp 11057,12715 11055,12717
+#: note ^^^
 #: note: Gitter auf Mittelstreifen vvv
 Badstr. (Richtungsfahrbahn)	1::igndisp 8659,16327 8543,16364 8516,16393 8486,16425
 Badstr. (Richtungsfahrbahn)	1::igndisp 8486,16425 8518,16394 8544,16365 8659,16327
@@ -923,7 +929,7 @@ Halskesteig	1 1058,14459 1157,14459
 Hefnersteig	1 1364,14191 1392,14287 1420,14369
 Bödikersteig	1 1141,14237 1182,14384
 Dorfstr. (Rahnsdorf)	1 29998,3170 29921,3079 29902,3104 29998,3170
-Grunerstr. - Gustav-Böß-Str.	1 10772,12515 10954,12635
+Grunerstr. - Gustav-Böß-Str.	1 10772,12515 10953,12638
 #: by: http://www.berlin.de/imperia/md/content/bapankow/tiefbauamt/umleitung_2.ba_1_teilabschnitt.pdf?start&ts=1316168438&file=umleitung_2.ba_1_teilabschnitt.pdf
 Grumbkowstr.	1 11563,20048 11627,19907 11695,19760
 Hardangerstr.	1 11725,16626 11720,16752
@@ -1338,7 +1344,6 @@ Bundesallee: unbequem passierbarer Mittelstreifen	3nocross 5463,9961 5464,9914 5
 Marzahner Kreuz: Linksabbiegen nicht möglich	3nocross 19694,15141 19738,15143 19852,15201
 Marzahner Kreuz: Linksabbiegen nicht möglich	3nocross 19681,15405 19582,15221 19506,15002 19466,14910 19422,14793
 Zossener Str.: unbequem passierbarer Mittelstreifen	3nocross 9865,10227 9858,10199 9837,10117
-Grunerstr.: Straßentunnelrampe	3nocross 10878,12560 10954,12635 11057,12715 11105,12764
 Bundesallee: Straßentunnelrampe	3nocross 5505,8832 5510,8709 5513,8588
 Unter den Eichen: Straßentunnelrampe	3nocross 2817,4158 2944,4241 3048,4305
 Bundesallee: Absperrung auf dem Mittelstreifen	3nocross 5510,8709 5513,8588 5481,8506 5444,8406 5421,8337

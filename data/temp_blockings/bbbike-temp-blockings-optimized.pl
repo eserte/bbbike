@@ -1441,6 +1441,17 @@ userdel	q4::inwork; 10870,14689 10893,14705
          'data' => 'userdel	q4::inwork 15537,12367 15576,12315 15628,12246 15651,12214
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => undef,
+         'recurring' => 1,
+         'text' => 'Jüdenstr.: das Überqueren der Grunerstr. ist insbesondere außerhalb der Parkbewirtschaftungszeiten (abends, am Wochenende) sehr unbequem',
+         'from' => undef,
+         'id' => 2396,
+         'data' => '#: by: http://www.berlin.de/ba-mitte/buergerdienste/parkraumbewirtschaftung.html (Zone 3)
+userdel	2::temp::igndisp 10805,12468 10803,12470
+',
+         'type' => 'gesperrt'
        }
      
 );
