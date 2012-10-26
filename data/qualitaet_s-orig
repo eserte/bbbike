@@ -395,7 +395,8 @@ Bötzowstr.: Kopfsteinpflaster	Q2 12161,13711 12189,13750 12280,13880 12361,13985
 Kohlhasenbrücker Str.: Kopfsteinpflaster	Q2 -7232,445 -7180,378 -7163,356 -7123,310
 Libauer Str.: Kopfsteinpflaster	Q2 13895,11663 13711,11458
 Niederbarnimstr.: Kopfsteinpflaster	Q2 14208,12235 14045,11965
-Simon-Dach-Str.: Kopfsteinpflaster	Q2 14045,11965 14006,11843 13981,11746 13954,11647 13888,11405
+Simon-Dach-Str.: Kopfsteinpflaster	Q2- 14045,11965 14006,11843
+Simon-Dach-Str.: Kopfsteinpflaster	Q2 14006,11843 13981,11746 13954,11647 13888,11405
 Krossener Str.: Kopfsteinpflaster	Q2 14561,11600 14496,11620 14424,11639 14358,11656 14247,11681 14102,11715 13981,11746
 Gabriel-Max-Str.: mäßiges bis schlechtes Kopfsteinpflaster	Q2- 14161,11930 14127,11811
 Gabriel-Max-Str.: mäßiges bis schlechtes Kopfsteinpflaster	Q2- 14102,11715 14065,11605 14049,11553
@@ -1540,9 +1541,8 @@ Fürstenwalder Str.: Kopfsteinpflaster, OK	Q1 12242,12594 12243,12604
 Löwestr.: mäßiges Kopfsteinpflaster	Q2 13202,12790 13273,12649
 Löwestr.: teilweise schlechtes Kopfsteinpflaster	Q3 13273,12649 13357,12473
 Jacobystr.: Beton	Q1 11594,12662 11260,12809 11207,12706
-Parochialstr.: Kopfsteinpflaster	Q2 10952,12401 11040,12415
-#: XXX nochmal prüfen --- der Asphalt sah mir zuletzt ganz OK aus
-Parochialstr.: Asphalt mit Schadstellen	Q1 10831,12371 10952,12401
+Parochialstr.: Asphalt	Q0 10952,12401 11040,12415
+Parochialstr.: Asphalt mit einer leichten Schadstelle	Q0- 10831,12371 10952,12401
 Waisenstr.: schlechtes Kopfsteinpflaster	Q3 11059,12450 11032,12439 11040,12415 11049,12386 11094,12243
 Propststr.: Kopfsteinpflaster	Q2 10492,12289 10553,12333 10611,12378 10639,12394
 (Crellestr. - Julius-Leber-Brücke): Verbundsteinpflaster	Q1 7524,9093 7555,8978 7509,8929 7497,8916
@@ -8047,7 +8047,7 @@ Gülzower Str. [Nebenstraße]: Asphalt	Q0 22400,12171 22344,12130
 IKEA-Parkplatz: Verbundsteinpflaster	Q1+ 7991,6938 8071,7006 8077,7040
 (zur Neuen Mälzerei): Asphalt	Q0 12520,12938 12590,13018
 (Weg im Blankensteinpark): Kopfsteinpflaster	Q2 14376,12849 14289,12876
-(Weg im Blankensteinpark): Asphalt	Q0 14289,12876 14130,12926
+(Weg im Blankensteinpark): Asphalt	Q0 14289,12876 14146,12921 14130,12926
 Götzstr. - Albrechtstr.: Verbundsteinpflaster	Q1 9389,6348 9381,6277
 (zum Parkplatz Rathaus Tempelhof): Verbundsteinpflaster	Q1 9346,6352 9389,6348
 (Berlinische Galerie): Asphalt	Q0 10056,10831 9966,10874
@@ -9637,7 +9637,7 @@ Margaretenstr.: schlechtes Kopfsteinpflaster	Q3 3142,4173 3501,4435
 #: confirmed_by: srt
 Eitelsdorfer Str.: Asphalt	Q0 22869,7095 22810,7120 22690,7146 22501,7192 22272,7242
 #: corrected_by: srt (schlechtes Kopfsteinpflaster -> )
-Käthe-Niederkirchner-Str.: mäßiges Kopfsteinpflaster	Q2 12403,13755 12398,13792 12280,13880 12148,13961 11991,14060
+Käthe-Niederkirchner-Str.: mäßiges Kopfsteinpflaster	Q2 12402,13762 12398,13792 12280,13880 12148,13961 11991,14060
 Haubachstr.: Asphalt	Q0 3295,12068 3384,12060 3507,12076 3643,12092 3782,12104
 #: by: ^^^
 # 
@@ -21128,7 +21128,7 @@ Weinbergstr.: Asphalt	Q0 22829,5920 22766,5840
 (Volkspark Friedrichshain): Asphalt	Q0 12915,13785 12937,13803 12887,13877 12879,13889
 (Volkspark Friedrichshain): Asphalt	Q0 12937,13803 12987,13727
 (Volkspark Friedrichshain): Asphalt	Q0 12825,13783 12813,13799 12805,13809
-(Volkspark Friedrichshain): Asphalt	Q0 12403,13755 12436,13719 12482,13705 12594,13747 12640,13814
+(Volkspark Friedrichshain): Asphalt	Q0 12402,13762 12436,13719 12482,13705 12594,13747 12640,13814
 (Volkspark Friedrichshain): Asphalt	Q0 12766,13621 12723,13598 12656,13576 12582,13519 12483,13418
 (Volkspark Friedrichshain): Asphalt	Q0 12483,13418 12586,13368
 Ernst-Zinna-Weg: Kopfsteinpflaster	Q2 12586,13368 12604,13338 12597,13323 12556,13265 12564,13216 12585,13118
@@ -21137,10 +21137,11 @@ Ernst-Zinna-Weg: Kopfsteinpflaster	Q2 12586,13368 12604,13338 12597,13323 12556,
 (Volkspark Friedrichshain): kleinteiliges Kopfsteinpflaster	Q1- 12438,13387 12341,13309 12244,13240 12236,13229
 #: corrected_by: ^^^
 #: confirmed_by: srt
-(Volkspark Friedrichshain): Asphalt	Q0 12336,13646 12141,13609 12023,13598
+(Volkspark Friedrichshain): Asphalt	Q0 12344,13627 12204,13609 12141,13609 12023,13598
 (Volkspark Friedrichshain): Kopfsteinpflaster	Q2 12023,13598 12038,13685
 (Zufahrt Landsberger Allee): Gehwegplatten, Beton	Q0 13433,13346 13397,13426 13574,13505
-Weisbachstr.: Asphalt	Q1 13557,13290 13610,13169
+#: corrected_by: srt (Q1 -> Q1+)
+Weisbachstr.: Asphalt	Q1+ 13557,13290 13610,13169
 Otto-Ostrowski-Str.: Kopfsteinpflaster	Q2 13702,13634 13769,13487
 Otto-Ostrowski-Str.: Kopfsteinpflaster	Q2 13769,13487 13805,13394 13819,13356 13862,13262 13930,13100
 Kurt-Exner-Str.: Kopfsteinpflaster	Q2 13976,13309 13862,13262

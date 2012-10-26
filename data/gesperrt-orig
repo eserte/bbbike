@@ -923,7 +923,7 @@ Halskesteig	1 1058,14459 1157,14459
 Hefnersteig	1 1364,14191 1392,14287 1420,14369
 Bödikersteig	1 1141,14237 1182,14384
 Dorfstr. (Rahnsdorf)	1 29998,3170 29921,3079 29902,3104 29998,3170
-Grunerstr. - Gustav-Böß-Str.	1 10766,12511 10954,12635
+Grunerstr. - Gustav-Böß-Str.	1 10772,12515 10954,12635
 #: by: http://www.berlin.de/imperia/md/content/bapankow/tiefbauamt/umleitung_2.ba_1_teilabschnitt.pdf?start&ts=1316168438&file=umleitung_2.ba_1_teilabschnitt.pdf
 Grumbkowstr.	1 11563,20048 11627,19907 11695,19760
 Hardangerstr.	1 11725,16626 11720,16752
@@ -1798,6 +1798,8 @@ tragen (31 Stufen oder Kinderwagenrampe)	0:40 13168,21706
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+#: note: öfters mal offen?
+Schwingtor	BNP:3::trailer=10 14146,12921
 Schwingtor	BNP:5::trailer=10 17490,13133
 Schranke	BNP:3::trailer=10 8622,13042
 Drängelgitter	BNP:3::trailer=10 18788,27989
@@ -2165,6 +2167,11 @@ Drängelgitter	BNP:3::trailer=10 49739,-90894
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20121026.1415.377154.html
+#: next_check: 2013-03-31
+#: XXX nach den Bauarbeiten bessere Qualität? Zurzeit nur Q1-, siehe qualitaet_s-orig
+(Bellevuepark): Asphaltbauarbeiten	2:inwork 22794,5583 22855,5554 22835,5452 22851,5321
+# 
 #: last_checked: 2012-10-19
 #: next_check: 2013-01-01
 Margarete-Steffin-Str.: wegen Bauarbeiten gesperrt	2:inwork 8315,13181 8406,13127 8525,12958
@@ -2181,7 +2188,7 @@ Carlsgarten - Wuhlheide: wegen Bauarbeiten Durchfahrtsmöglichkeit zweifelhaft; e
 #: next_check: 2013-02-01
 Alt-Moabit - Invalidenstr.: wegen Bauarbeiten für die Straßenbahnanbindung gesperrt	2:inwork 7443,13008 7416,13058
 # 
-#: last_checked: 2012-10-23
+#: last_checked: 2012-10-25
 #: next_check: 2012-11-01
 #: XXX nach den Bauarbeiten vielleicht besserer Asphalt? -> qualitaet_s-orig
 #: XXX siehe auch Eintrag in handicap_s-orig
@@ -2213,7 +2220,7 @@ Zur Monumentenhalle: Straße wird wahrscheinlich neu gebaut	2:inwork 8376,8859 84
 #: next_check: 2013-01-01
 Billy-Wilder-Promenade: wegen Bauarbeiten an umliegenden Wohnhäusern gesperrt	2:inwork 2528,1501 2584,1376
 # 
-#: last_checked: 2012-10-23
+#: last_checked: 2012-10-25
 #: next_check: 2012-12-01
 Marx-Engels-Forum: wegen U-Bahn-Bauarbeiten Durchgang zur Rathausstr. nicht möglich	2:inwork 10411,12471 10422,12395
 # 
@@ -2295,7 +2302,7 @@ Bebelplatz: Bauarbeiten an der Staatsoper	2:inwork 9743,12239 9702,12307 9734,12
 #: next_check: ^^^
 #: last_checked: ^^^
 # 
-#: last_checked: 2012-10-23
+#: last_checked: 2012-10-25
 #: next_check: 2013-01-15
 Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 

@@ -215,8 +215,8 @@ Schumannstr.	1 8581,13013 8628,13033 8701,13058 8964,13124
 Albrechtstr. (Mitte)	1 8964,13124 9001,13039 9046,12933 9106,12795
 Charitéstr.	1 8693,12951 8628,13033
 Spandauer Str. (Mitte)	3nocross::ignrte 10738,12364 10673,12434 10644,12469 10601,12521
-Gustav-Böß-Str. -> Spandauer Str.: Spandauer Str. (Mitte)	3::igndisp 10766,12511 10673,12434 10738,12364
-Spandauer Str. -> Gustav-Böß-Str.: Spandauer Str. (Mitte)	3::igndisp 10644,12469 10673,12434 10766,12511
+Gustav-Böß-Str. -> Spandauer Str.: Spandauer Str. (Mitte)	3::igndisp 10772,12515 10673,12434 10738,12364
+Spandauer Str. -> Gustav-Böß-Str.: Spandauer Str. (Mitte)	3::igndisp 10644,12469 10673,12434 10772,12515
 Spandauer Str. -> Am Nußbaum: Spandauer Str. (Mitte)	3::igndisp 10673,12434 10644,12469 10626,12455
 Am Nußbaum -> Spandauer Str.: Spandauer Str. (Mitte)	3::igndisp 10626,12455 10644,12469 10601,12521
 Siegfriedstr.	1 12340,6947 12477,6975 12664,7013 12810,7047 12843,7093 12872,7134
@@ -718,14 +718,14 @@ Delbrückstr.	1 12743,6645 12468,6592
 Emser Str.	1 13058,7165 12872,7134
 Stuthirtenweg: Gitter	3 13449,1227 13542,1268 13629,1343
 Stuthirtenweg: Gitter	3 13629,1343 13542,1268 13449,1227
-Mittelstreifen	3nocross::ignrte 10738,12364 10800,12461 10878,12560 10954,12635
-Jüdenstr. -> Grunerstr.: Mittelstreifen	3::igndisp 10766,12511 10800,12461 10878,12560
-Jüdenstr. -> Jüdenstr.: Mittelstreifen	3::igndisp 10766,12511 10800,12461 10831,12371
-Grunerstr. -> Jüdenstr.: Mittelstreifen	3::igndisp 10878,12560 10800,12461 10831,12371
-Jüdenstr. -> Jüdenstr.: Mittelstreifen	3::igndisp 10831,12371 10800,12461 10766,12511
-Jüdenstr. -> Grunerstr.: Mittelstreifen	3::igndisp 10831,12371 10800,12461 10738,12364
-Grunerstr. -> Jüdenstr.: Mittelstreifen	3::igndisp 10738,12364 10800,12461 10766,12511
-Klosterstr. -> Grunerstr.: Mittelstreifen	3::igndisp 10952,12401 10878,12560 10800,12461
+Mittelstreifen	3nocross::ignrte 10738,12364 10805,12468 10878,12560 10954,12635
+Jüdenstr. -> Grunerstr.: Mittelstreifen	3::igndisp 10772,12515 10805,12468 10878,12560
+Jüdenstr. -> Jüdenstr.: Mittelstreifen	3::igndisp 10772,12515 10805,12468 10831,12371
+Grunerstr. -> Jüdenstr.: Mittelstreifen	3::igndisp 10878,12560 10805,12468 10831,12371
+Jüdenstr. -> Jüdenstr.: Mittelstreifen	3::igndisp 10831,12371 10805,12468 10772,12515
+Jüdenstr. -> Grunerstr.: Mittelstreifen	3::igndisp 10831,12371 10805,12468 10738,12364
+Grunerstr. -> Jüdenstr.: Mittelstreifen	3::igndisp 10738,12364 10805,12468 10772,12515
+Klosterstr. -> Grunerstr.: Mittelstreifen	3::igndisp 10952,12401 10878,12560 10805,12468
 Grunerstr. -> Klosterstr.: Mittelstreifen	3::igndisp 10954,12635 10878,12560 10952,12401
 Bayernring	1 8616,8605 8455,8567 8380,8545
 Georg-Hermann-Allee (Potsdam): (teilweise) Einbahnstraße	1 -13429,1069 -13418,1668

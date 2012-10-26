@@ -127,8 +127,8 @@ Frankfurter Allee - Kreutzigerstr.: Einfahrt in Hausdurchgang	CP2; 14291,12220 1
 #: XXX_prog: eigentlich nicht notwendig, da als RW8/RW9 bereits gekennzeichnet. Allerdings wird das im CGI noch gar nicht visualisiert. Vielleicht in der der stilisierten Straﬂenf¸hrung auf der *rechten* (falschen) Seite unterbringen?
 LennÈstr: Radweg Richtung Ebertstr. auf der linken Seite im Tiergarten	CS; 8172,11679 8203,11686 8225,11692 8335,11718 8438,11753 8489,11782 8571,11846
 #: XXX_indoor: hmm, folgende zwei Datens‰tze sind mit keinen Konsequenzen verbunden. nach permanent temp_blockings verschieben? oder Penalty einplanen? Auf jeden Fall nicht bei GPS-Tracks gesondert ausgeben.
-J¸denstr.: unbequemes Passieren der Grunerstr.	CP; 10766,12511 10800,12461 10831,12371
-J¸denstr.: unbequemes Passieren der Grunerstr.	CP; 10831,12371 10800,12461 10766,12511
+J¸denstr.: unbequemes Passieren der Grunerstr., ggfs. Ampel an der Spandauer Str. nehmen	CP; 10772,12515 10805,12468 10831,12371
+J¸denstr.: unbequemes Passieren der Grunerstr., ggfs. Ampel an der Spandauer Str. nehmen	CP; 10831,12371 10805,12468 10772,12515
 #: XXX_prog: RL:ja, GPS:jein (wegen spitzem Winkel) (evtl. ein Kandidat f¸r comments_misc)
 #: note: und nicht der Asphaltstraﬂe
 dem Schotterweg folgen	CP; 24210,37562 24193,37725 24208,37830
@@ -174,10 +174,7 @@ Greifswalder Str. - K‰the-Niederkirchner-Str: Fuﬂg‰ngerfurt (Dr‰ngelgitter) ca. 
 Heinrich-Roller-Str. - Greifswalder Str.: Fuﬂg‰ngerfurt (Dr‰ngelgitter) benutzen	CP; 11607,13928 11820,13804 11946,13993
 Greifswalder Str. - Heinrich-Roller-Str.: Fuﬂg‰ngerfurt (Dr‰ngelgitter) benutzen	CP; 11706,13635 11820,13804 11607,13928
 #: by: ^^^
-#: XXX stimmt der Kommentar (Dr‰ngelgitter) seit der Fuﬂg‰ngerampel noch immer? vvv
-Immanuelkirchstr. - Greifswalder Str.: Fuﬂg‰ngerfurt (Dr‰ngelgitter) benutzen	CP; 11713,14118 11946,13993 11952,14002 11991,14060
-Greifswalder Str. - Immanuelkirchstr.: Fuﬂg‰ngerfurt (Dr‰ngelgitter) benutzen	CP; 11820,13804 11946,13993 11713,14118
-#: XXX ^^^
+#XXX del --- kein Dr‰ngelgitter mehr, sondern nur eine Fuﬂg‰ngerampel --- #: XXX stimmt der Kommentar (Dr‰ngelgitter) seit der Fuﬂg‰ngerampel noch immer? vvv --- Immanuelkirchstr. - Greifswalder Str.: Fuﬂg‰ngerfurt (Dr‰ngelgitter) benutzen	CP; 11713,14118 11946,13993 11952,14002 11991,14060 --- Greifswalder Str. - Immanuelkirchstr.: Fuﬂg‰ngerfurt (Dr‰ngelgitter) benutzen	CP; 11820,13804 11946,13993 11713,14118 --- #: XXX ^^^
 Kietz - Kietzer Str.: zum ‹berqueren der Straﬂe Fuﬂg‰ngerampel links benutzen	CP; 22364,4429 22383,4470 22372,4496 22358,4521
 Kietz - M¸ggelheimer Str.: zum ‹berqueren der Straﬂe Fuﬂg‰ngerampel links benutzen	CP; 22364,4429 22383,4470 22341,4483
 #XXX del --- Kietz - Amtsstr.: zum ‹berqueren der Straﬂe Fuﬂg‰ngerampel links benutzen	CP; 22364,4429 22419,4457 22495,4523
@@ -191,7 +188,7 @@ Zur Hackerstr.: Hausdurchgang benutzen	CP2; 4971,6345 4999,6397
 L¸tzowplatz - Wichmannstr.: Fuﬂg‰ngerampel links benutzen	CP; 6918,10854 6824,10904 6681,10959
 L¸tzowplatz - Schillstr.: Fuﬂg‰ngerampel links benutzen	CP; 6918,10854 6824,10904 6740,10755
 Ausschilderung: Alter Markt	CP2; -11884,-936 -11910,-945
-(Am Stadion Wilmersdorf): Der Ausschilderung 'Sommerbad' folgen (durchs Tor)	CP2;  3295,8519 3357,8506
+(Am Stadion Wilmersdorf): Der Ausschilderung 'Sommerbad' folgen (durchs Tor)	CP2; 3295,8519 3357,8506
 (Weg in d. Kolonie Norderney): durchs Tor	CP2; 3596,6828 3607,6952
 Theaterufer: zwischen Wasserbecken und Debis-Geb‰ude	CP2; 8289,11205 8261,11015
 Theaterufer: zwischen Straﬂentunnel und Debis-Geb‰ude	CP2; 8261,11015 8289,11205

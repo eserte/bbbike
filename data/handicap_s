@@ -7,7 +7,7 @@ Oberbaumbr¸cke: Umfahrung wegen Baustelle, etwas Zeitverlust	q3::inwork; 13332,1
 Modersohnstr.: Bauarbeiten, Einbahnstraﬂenregelung	q3::inwork; 14181,11434 14134,11272
 Dirschauer Str.: Einbahnstraﬂenregelung wegen Umleitungsstrecke	q4::inwork; 13970,11366 14031,11569
 Marchlewskistr., Helsingforser Str.: Bauarbeiten, u.U. Ausweichen auf Gehweg	q4::inwork; 13473,11456 13496,11384 13541,11355
-Mainzer Str.: Baustelle, Einbahnstraﬂenregelung	q3::inwork; 14311,11884 14357,12011 14427,12197
+Mainzer Str., G‰rtnerstr.: Baustelle, Einbahnstraﬂenregelung	q3::inwork; 14272,11775 14311,11884 14357,12011
 Alt-Stralau: Bauarbeiten an der Br¸cke, enge Durchfahrt	q3::inwork 14652,10201 14558,10264
 Friedrichstr.: Fahrbahn zwischen Unter den Linden und Mittelstraﬂe gesperrt, Ausweichen auf Gehweg mˆglich	q4::inwork 9343,12464 9358,12351
 Friedrichstr.(Mitte): Fahrbahn wegen Bauarbeiten gesperrt, Ausweichen auf Gehweg schiebend mˆglich	q4::inwork 9358,12351 9369,12253 9373,12197
@@ -59,7 +59,7 @@ Wilmersdorfer Str.: starker Fuﬂg‰ngerverkehr (Fuﬂg‰ngerzone), nachts und sonntag
 Am M¸ggelsee: Fuﬂg‰nger	q2 25474,2848 25667,2787 25857,2654 26006,2615 26158,2647 26339,2667 26457,2660 26627,2610 26859,2596 26989,2570 27081,2528 27135,2500 27173,2444 27267,2414 27363,2448 27471,2527 27565,2637 27743,2842 27822,2910 27937,3016 28273,3143 28496,3253 28588,3285 28668,3297 28852,3293 28852,3277
 Pestalozzistr.: Fuﬂg‰ngerzone	q3 3721,11230 3770,11231 3822,11231
 (Zufahrt am NKZ): Bordsteine, Fuﬂg‰nger/Lieferverkehr	q3 11291,10438 11311,10505 11343,10528
-Alexanderplatz: Fuﬂg‰ngerverkehr	q2 11139,13008 10970,12822 10923,12779
+Alexanderplatz: Fuﬂg‰ngerverkehr	q2 11139,13008 11064,12910 10970,12822 10923,12779
 Rathausstr.: Fuﬂg‰nger	q1 10923,12779 10704,12595
 Dircksenstr.: langsame Straﬂenbahnen, Fuﬂg‰nger	q2 10970,12822 10849,12944
 Dircksenstr.: Fuﬂg‰nger	q2 10970,12822 11007,12773 11030,12741 11087,12780 11105,12764
@@ -134,8 +134,8 @@ Bahnhofsgeb‰ude	q4 7854,7572 7934,7621
 Fuﬂg‰nger	q3 7934,7621 7919,7679
 Treppe oder Rampe	q4 7934,7621 7949,7607
 Marx-Engels-Forum: Fuﬂg‰nger, eigentlich Schiebestrecke	q2 10300,12587 10355,12551 10411,12471 10422,12395
-Volkspark Friedrichshain: Fuﬂg‰nger	q1 12325,13148 12344,13157 12372,13198 12369,13252 12474,13311 12438,13387 12483,13418 12446,13570 12336,13646 12403,13755
-Volkspark Friedrichshain: Fuﬂg‰nger	q1 12336,13646 12141,13609 12129,13531 12005,13481 11982,13471
+Volkspark Friedrichshain: Fuﬂg‰nger	q1 12325,13148 12344,13157 12372,13198 12369,13252 12474,13311 12438,13387 12483,13418 12450,13542 12344,13627 12372,13755
+Volkspark Friedrichshain: Fuﬂg‰nger	q1 12344,13627 12204,13609 12141,13609 12129,13531 12005,13481 11982,13471
 Volkspark Friedrichshain: Fuﬂg‰nger	q1 12141,13609 12161,13711
 Volkspark Friedrichshain: Fuﬂg‰nger	q1 12129,13531 12111,13480 12060,13422
 Volkspark Friedrichshain: Fuﬂg‰nger	q1 11857,13596 11842,13576
@@ -1284,7 +1284,7 @@ Vereinsweg (Steglitz): Fuﬂg‰nger, Privatstraﬂe, Radfahren nicht erlaubt	q4 5347,
 (Volkspark Friedrichshain): Fuﬂg‰nger	q2 12915,13785 12937,13803 12887,13877 12879,13889
 (Volkspark Friedrichshain): Fuﬂg‰nger	q2 12937,13803 12987,13727
 (Volkspark Friedrichshain): Fuﬂg‰nger	q2 12825,13783 12813,13799 12805,13809
-(Volkspark Friedrichshain): Fuﬂg‰nger	q2 12403,13755 12436,13719 12482,13705 12594,13747 12640,13814
+(Volkspark Friedrichshain): Fuﬂg‰nger	q2 12402,13762 12436,13719 12482,13705 12594,13747 12640,13814
 (Volkspark Friedrichshain): Fuﬂg‰nger	q2 12766,13621 12723,13598 12656,13576 12582,13519 12483,13418
 (Volkspark Friedrichshain): Fuﬂg‰nger	q2 12483,13418 12586,13368
 (Volkspark Friedrichshain): Fuﬂg‰nger	q2 12438,13387 12341,13309 12244,13240

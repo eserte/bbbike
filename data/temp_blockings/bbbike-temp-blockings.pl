@@ -20045,9 +20045,10 @@ EOF
 ## früher:
 #       source_id => 'INKO_093369',
        data  => <<EOF,
-#: last_checked: 2012-09-26
-#: next_check: 2012-10-23
-userdel	q4::inwork; 9164,12172 9373,12197
+#: last_checked: 2012-10-25
+#: next_check: 2013-02-23
+#: XXX ab Glinkastr. nur ungefähr die halbe Strecke bis zur Friedrichstr. gesperrt, deshalb q3
+userdel	q3::inwork; 9164,12172 9373,12197
 EOF
      },
      { from  => 1330419240, # 2012-02-28 09:54
@@ -20762,6 +20763,15 @@ EOF
        source_id => 'INKO_114523',
        data  => <<EOF,
 userdel	q4::inwork; 7315,10537 7117,10611 7115,10612 6972,10665
+EOF
+     },
+     { from  => 1351465200, # 2012-10-29 00:00
+       until => 1354316399, # 2012-11-30 23:59
+       text  => 'Fahrbahnsanierung der Rathausstraße vom 29. Oktober bis Ende November 2012, Fahrbahn ist gesperrt',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-lichtenberg/presse/archiv/20121025.1210.377071.html',
+       data  => <<EOF,
+userdel	q4::inwork 15537,12367 15576,12315 15628,12246 15651,12214
 EOF
      },
     );

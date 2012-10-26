@@ -1143,9 +1143,10 @@ userdel	q4::inwork; -1872,24336 -1790,24260 -1627,24105 -1367,23853 -1286,23753 
          'text' => 'Behrenstr. (Mitte): Fahrbahn Richtung Friedrichstr. zwischen Glinkastr. und Friedrichstr. gesperrt',
          'from' => undef,
          'id' => 2317,
-         'data' => '#: last_checked: 2012-09-26
-#: next_check: 2012-10-23
-userdel	q4::inwork; 9164,12172 9373,12197
+         'data' => '#: last_checked: 2012-10-25
+#: next_check: 2013-02-23
+#: XXX ab Glinkastr. nur ungefähr die halbe Strecke bis zur Friedrichstr. gesperrt, deshalb q3
+userdel	q3::inwork; 9164,12172 9373,12197
 ',
          'type' => 'handicap'
        },
@@ -1399,16 +1400,7 @@ userdel	q4::inwork; 10870,14689 10893,14705
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'INKO_113279',
-         'until' => 1351260000,
-         'text' => 'Schulenburgstr. (Spandau): Baustelle, Richtung Ruhlebener Str. ab Tiefwerderweg gesperrt, bis Ende Oktober 2012 ',
-         'from' => 1348981200,
-         'id' => 2390,
-         'data' => 'userdel	q4::inwork; -2960,13203 -2728,13269 -2706,13291
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20121012.1220.376513.html',
@@ -1437,6 +1429,16 @@ userdel	q4::inwork; 10870,14689 10893,14705
          'from' => 1350363600,
          'id' => 2394,
          'data' => 'userdel	q4::inwork; 7315,10537 7117,10611 7115,10612 6972,10665
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'http://www.berlin.de/ba-lichtenberg/presse/archiv/20121025.1210.377071.html',
+         'until' => 1354316399,
+         'text' => 'Fahrbahnsanierung der Rathausstraße vom 29. Oktober bis Ende November 2012, Fahrbahn ist gesperrt',
+         'from' => 1351465200,
+         'id' => 2395,
+         'data' => 'userdel	q4::inwork 15537,12367 15576,12315 15628,12246 15651,12214
 ',
          'type' => 'handicap'
        }
