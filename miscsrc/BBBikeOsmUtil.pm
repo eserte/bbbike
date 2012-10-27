@@ -58,8 +58,9 @@ use constant YSTEP => 0.05;
 use constant MARGIN_X => 0.06; # MARGIN... needs to be larger than ...STEP
 use constant MARGIN_Y => 0.06;
 
-# taken from osm2bbd
-use constant CONSTRUCTION_RX => qr{^(?:construction|planned|proposed)$};
+use constant ABANDONED_RX    => qr{^(?:abandoned|disused)$}; # the past ...
+use constant CONSTRUCTION_RX => qr{^(?:construction)$};      # ... the near future ...
+use constant PLANNED_RX      => qr{^(?:planned|proposed)$};  # ... and the far future (or never) ...
 
 sub register {
     _create_images();
@@ -454,7 +455,8 @@ sub plot_osm_files {
 	    my %item_args;
 	    my %line_item_args;
 	    # following some stuff which is not that interesting for BBBike editing
-	    if ((exists $tag{'railway'} && $tag{'railway'} =~ m{^(?:abandoned|disused)$}) ||
+	    if ((exists $tag{'railway'} && ($tag{'railway'} =~ ABANDONED_RX || $tag{'railway'} =~ PLANNED_RX)) ||
+		(exists $tag{'highway'} && ($tag{'highway'} =~ ABANDONED_RX || $tag{'highway'} =~ PLANNED_RX)) ||
 		(exists $tag{'man_made'} && $tag{'man_made'} eq 'pipeline') ||
 		exists $tag{'barrier'} ||
 		exists $tag{'mj10777:admin_levels'}
@@ -477,7 +479,8 @@ sub plot_osm_files {
 	    } elsif (exists $tag{'highway'} && $tag{'highway'} eq 'steps') {
 		$item_args{'-dash'} = [1,2],
 		$item_args{'-width'} = 5;
-	    } elsif (exists $tag{'highway'} && $tag{'highway'} =~ CONSTRUCTION_RX) {
+	    } elsif ((exists $tag{'highway'} && $tag{'highway'} =~ CONSTRUCTION_RX) ||
+		     (exists $tag{'railway'} && $tag{'railway'} =~ CONSTRUCTION_RX)) {
 		$item_args{'-dash'} = '.'; 
 	    } elsif (exists $tag{'boundary'}) {
 		$item_args{'-dash'} = '.-'; # looks like a boundary, n'est-ce pas?
