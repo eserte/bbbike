@@ -246,7 +246,7 @@ for my $noextern (@extern_order) {
 	is($friedenau_schoeneberg->[PLZ::LOOK_ZIP], "10827, 12159", "Check PLZ");
 
 	@res = grep { defined $_->[PLZ::LOOK_COORD] } $plz->look("Am Nordgraben", MultiCitypart => 1, MultiZIP => 1);
-	is(scalar @res, 4, "Hits for Am Nordgraben. with MultiCitypart")
+	is(scalar @res, 5, "Hits for Am Nordgraben. with MultiCitypart")
 	    or diag $dump->(\@res);
 	@res = map { $plz->combined_elem_to_string_form($_) } $plz->combine(@res);
 	is(scalar @res, 2, "Combine hits")

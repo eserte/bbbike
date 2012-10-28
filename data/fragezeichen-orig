@@ -217,6 +217,10 @@ M¸ggelseedamm: entstehen hier Radwege/spuren, insbesondere Richtung Westen?	?::p
 # - handelt es sich bei der Frage um Zebrastreifen und andere
 #   f¸r Radfahrer eher uninteressante Dinge (-> private)
 # 
+#: XXX laut osm under construction
+Am Dominikusteich: Qualit‰t? Straﬂe bereits fertiggestellt?	?::inwork 2651,23926 2760,23964 2787,23971
+Am Dominikusteich: Qualit‰t? Straﬂe bereits fertiggestellt?	?::inwork 2760,23964 2784,23929
+# 
 #: by: http://www.berlin.de/imperia/md/content/balichtenberghohenschoenhausen/bebauen/beteiligen/xxii6dreinplan.pdf?start&ts=1350454320&file=xxii6dreinplan.pdf
 #: by: http://www.berlin.de/imperia/md/content/balichtenberghohenschoenhausen/bebauen/beteiligen/xxii6dbegruendung.pdf?start&ts=1350454241&file=xxii6dbegruendung.pdf
 #: next_check: 2013-12-31
@@ -460,7 +464,7 @@ Mierendorffplatz: asphaltiert? Gibt es hier einen Zebrastreifen?	?::inwork 3542,
 Silberweidenweg: wird das hier der Silberweidenweg?	?::inwork 16374,12841 16377,12791
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/32re.pdf/file
-#: XXX Privatstraﬂe, fehlt in Berlin.coords.data
+#: XXX Privatstraﬂe
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/50re.pdf/file?y=2011 (neue Hausnummern)
 #: last_checked: 2012-09-20
 #: next_check: 2013-06-01
@@ -470,7 +474,6 @@ Edith-Stein-Str.: Qualit‰t nach den Bauarbeiten? Genaue Lage der Straﬂe?	?::inwo
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/14re.pdf/file
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/30re.pdf/file
-#: XXX fehlt in Berlin.coords.data
 #: XXX siehe auch Eintrag f¸r "Am Langen Jammer" in gesperrt-orig
 #: last_checked: 2012-10-26 vvv
 #: next_check: 2012-11-20 vvv
@@ -701,6 +704,13 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 # - Fragen nach Zebrastreifen
 # - Fragen nach genauen Routenverl‰ufen
 # - XXX_prog- und XXX_indoor-Eintr‰ge
+# 
+Wiesengrund Straﬂe 1: existiert hier vielleicht eine Straﬂe mit diesem Namen? Qualit‰t?	? 19754,8513 19740,8481 19721,8452 19686,8428
+Wiesengrund Straﬂe 1: oder ist sie hier?	? 19953,8258 19943,8279
+# 
+#: XXX fehlt auch in Berlin.coords.data: Fuﬂweg 475|Rahnsdorf|12589
+#: XXX_osm fehlt auch bei osm
+Fuﬂweg 475: existiert hier tats‰chlich ein befahrbarer Weg? Ausgeschildert? Qualit‰t? Beleuchtet?	? 30794,4154 30757,3974
 # 
 #: XXX laut Wikipedia befindet sich die Museumsstr. hier, aber es gibt keine Straﬂenschilder... trotzdem sollte ich das ˆffentliche Straﬂenland hier aufnehmen
 Museumsstr.: Straﬂenverlauf aufnehmen, aber ohne Straﬂennamen	? 10044,12708 10020,12760
@@ -2583,13 +2593,14 @@ Am Seegraben/Alexander-Meiﬂner-Str.: Ampel in Vorbereitung	?::inwork 19894,-835
 # 
 #: by: http://www.potsdam.de/cms/beitrag/10071706/966975/
 Templiner Str.: gibt es in der Templiner Straﬂe mittlerweile Radstreifen?	? -13062,-2901 -13155,-2913 -13381,-2943 -13481,-2956 -13718,-2991
+# 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/01re.pdf/file
-#: XXX fehlt in Berlin.coords.data
 #: last_checked: 2011-04-30
 #: next_check: 2011-09-01
 #: XXX wahrscheinlich Verbundsteinpflaster; H‰user sind am Entstehen, Straﬂen noch nicht ganz fertig
 #: by: http://www.berlin.de/ba-spandau/presse/archiv/20110831.0850.356859.html
 Manuelaweg: wo genau befindet sich diese Straﬂe? Qualit‰t?	? -6463,5679 -6598,5542
+# 
 #: XXX fehlt in Berlin.coords.data
 Forum (Adlershof): Wo genau liegt die Straﬂe? Ist sie ausgeschildert? Qualit‰t?	? 19242,3052 19328,3072
 Hohen Neuendorfer Weg (Birkenwerder): Qualit‰t?	? 645,30634 618,30687 575,30816 564,30845 550,30867 516,30899 342,31100
@@ -2781,21 +2792,22 @@ Fichtengrund (Hˆnow): Qualit‰t im nˆrdlichen Abschnitt?	? 25790,14277 25840,1441
 Gallwitzallee - Geraerstr./Trippsteinstr.: Existiert eine direkte Verbindung f¸r Radfahrer? Qualit‰t? Ist der Weg nachts beleuchtet?	? 6768,2143 6692,2024 6526,1688
 Verl‰ngerung der Seydlitzstr.: Qualit‰t? Ist der Weg nachts beleuchtet? Ausschilderung?	? 6658,2079 6692,2024
 # 
-#: XXX Kasernengel‰nde, fehlen alle bei Berlin.coords.data vvv
+#: XXX Kasernengel‰nde vvv
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/30re.pdf/file vvv
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/44re.pdf/file?y=2011 vvv
-#: XXX wird bis zum 2011-11-01 in Christoph-Kolumbus-Str. umbenannt
-K‰the-Paulus-Str.: Qualit‰t? Offen?	? -5758,6469 -5843,6524 -5952,6601 -6457,6973
-#: XXX wird bis zum 2011-11-01 in Ferdinand-Magellan-Str. umbenannt
-Waldstr. (Kladow): Qualit‰t? Offen?	? -5843,6524 -5773,6619
-#: XXX wird bis zum 2011-11-01 in James-Cook-Str. umbenannt
-Graf-Zeppelin-Str.: Qualit‰t? Offen?	? -5952,6601 -5994,6543 -6090,6600
-#: XXX wird bis zum 2011-11-01 in Marco-Polo-Str. umbenannt
-Otto-Lilienthal-Straﬂe: Qualit‰t? Offen?	? -5843,6524 -6191,6070
+#: XXX oldname: bis 2011-11-01: K‰the-Paulus-Str.
+Christoph-Kolumbus-Str.: Qualit‰t? Offen?	? -5758,6469 -5843,6524 -5952,6601 -6457,6973
+#: XXX oldname: bis 2011-11-01: Waldstr. (Kladow)
+Ferdinand-Magellan-Str.: Qualit‰t? Offen?	? -5843,6524 -5773,6619
+#: XXX oldname: bis 2011-11-01: Graf-Zeppelin-Str.
+James-Cook-Str.: Qualit‰t? Offen?	? -5952,6601 -5994,6543 -6090,6600
+#: XXX oldname: bis 2011-11-01: Otto-Lilienthal-Straﬂe
+Marco-Polo-Str.: Qualit‰t? Offen?	? -5843,6524 -6191,6070
 weitere Straﬂen auf dem Kasernengel‰nde: Verlauf? Straﬂennamen?	? -6160,6695 -6294,6479 -6175,6386 -6096,6485 -5994,6421 -6079,6306 -6052,6283
 #: by: ^^^
 #: by: ^^^
 #: XXX ^^^
+# 
 Karl-Marx-Str. (Schulzendorf): Qualit‰t des westlichen Abschnitts?	? 24343,-3387 24190,-3443 24080,-3471 23969,-3523 23617,-3682 23368,-3794
 Fontaneallee (Eichwalde): Qualit‰t des s¸dlichen Abschnitts (auch schlechtes Kopfsteinpflaster?)?	? 24632,-3458 24684,-3553 24737,-3654 24792,-3757 24842,-3849 24941,-4025 25026,-4186
 Gerhart-Hauptmann-Allee (Eichwalde): Qualit‰t des s¸dlichen Abschnitts (auch schlechtes Kopfsteinpflaster?)?	? 24803,-3385 24842,-3485 24886,-3587 24930,-3695 24974,-3793 25056,-3989 25121,-4102 25197,-4236
@@ -2896,7 +2908,7 @@ Am Kaniswall: Privatstraﬂe, wo genau? Qualit‰t?	? 32823,-202 32970,320
 #: XXX evtl. auch interessant: Weiterfahrt in die KGA mit Anbindung an die Waﬂmannsdorfer Chaussee
 Straﬂe 180 (Rudow): existieren hier Straﬂenschilder?	? 16738,175 16770,192
 # 
-#XXX del --- nichts zu erkennen --- #: XXX Existenz dieser Straﬂe ist nicht eindeutig. Nur Kauperts glaubt, dass es hier etwas gibt. --- auch Berlin.coords.data-Eintrag entfernt: Straﬂe 184|Tegel|13509| ---Straﬂe 184 (Tegel): existiert hier auch eine Straﬂe 184?	? 3563,20589 3537,20624 3470,20683 3391,20746 3312,20789
+#XXX del --- nichts zu erkennen --- #: XXX Existenz dieser Straﬂe ist nicht eindeutig. Nur Kauperts glaubt, dass es hier etwas gibt, LOR listet diese Straﬂe auch. --- auch Berlin.coords.data-Eintrag entfernt: Straﬂe 184|Tegel|13509| ---Straﬂe 184 (Tegel): existiert hier auch eine Straﬂe 184?	? 3563,20589 3537,20624 3470,20683 3391,20746 3312,20789
 # 
 #XXX del --- nope, hier nicht --- #: XXX Pharus meint, dass hier so eine Straﬂe existiert. Heute Zur Straﬂe Parksiedlung Spruch --- Straﬂe 455 (Buckow): existiert hier eine Straﬂe mit dem Namen "Straﬂe 455"?	? 11031,1739 11136,1782 11205,1776
 # 
@@ -3008,20 +3020,20 @@ Mathilde-Vaerting-Weg: Qualit‰t nach den Bauarbeiten? Ist die Straﬂe verkehrsber
 #: next_check: 2013-03-15 vvv
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/43re.pdf/file
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/41re.pdf/file
-#: XXX alles Privatstraﬂen
-#: XXX fehlen in Berlin.coords.data
-#: XXX str_cont_ausnahme-Eintrag wird notwendig sein
-Trollblumenweg: wird verl‰ngert, Qualit‰t der Verl‰ngerung?	?::inwork 16028,3726 16051,3759 16104,3717
+#: XXX alles Privatstraﬂen vvv
 Geiﬂbartweg: Qualit‰t?	?::inwork 16097,3595 16167,3702
 Sternliebweg: Qualit‰t? Wo liegt die Straﬂe genau?	?::inwork 16152,3562 16219,3665
 Silberdistelweg: Qualit‰t? Wo liegt die Straﬂe genau?	?::inwork 16205,3529 16263,3627
 Zwergasternweg: Qualit‰t?	?::inwork 16254,3489 16321,3583
+#: XXX ^^^
+#: XXX_indoor str_cont_ausnahme-Eintrag wird notwendig sein
+#: XXX hier auch Privatstraﬂe?
+Trollblumenweg: wird verl‰ngert, Qualit‰t der Verl‰ngerung?	?::inwork 16028,3726 16051,3759 16104,3717
 #: next_check ^^^
 #: last_checked ^^^
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/30re.pdf/file
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/48re.pdf/file?y=2011
-#: XXX fehlt bei Berlin.coords.data
 #: last_checked: 2011-09-10
 #: next_check: 2012-03-01
 Am Rˆmersgr¸n: Straﬂe und Wohnanlage in Bau. Genaue Lage? Qualit‰t?	?::inwork 11708,3914 11723,3846
@@ -3076,7 +3088,6 @@ Kolonie Fr¸hauf: Sanierung der Radfahrverbindung. Welchen Belag wird der Weg dan
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/31re.pdf/file
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/45re.pdf/file?y=2011
-#: XXX fehlt in Berlin.coords.data (PLZ=13156)
 #: last_checked: 2012-06-03
 #: next_check: 2013-06-01
 Am Orangeriepark: Ist die Straﬂe bereits fertiggestellt? Qualit‰t? Wo befindet sich die Straﬂe (mˆglichst mit GPS-Track)?	?::inwork 10293,19390 10419,19423
@@ -3129,7 +3140,6 @@ ehem. Bahndamm zwischen L15 undf K7332 bei Hardenbeck: wurde hier ein Radweg rea
 #: next_check: 2013-01-01
 In den Florag‰rten: Ist die Straﬂe bereits fertiggestellt? Qualit‰t? Ist die Straﬂe verkehrsberuhigt?	?::inwork 9828,17659 10014,17646
 # 
-#: XXX fehlt in Berlin.coords.data
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/38re.pdf/file
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/04re.pdf/file
 #: XXX Privatstraﬂe
