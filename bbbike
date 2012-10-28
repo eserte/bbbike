@@ -14591,6 +14591,9 @@ sub show_info {
 		$linkcount++;
 	    }
 	    $info_text->insert("end", "BBBike:\t$sx,$sy\n");
+	    if (defined $px && defined $py) {
+		$info_text->insert("end", "Wikipedia-Markup:\tNS=$py|EW=$px");
+	    }
 	    $info_text->insert("end", "\n");
 	}
 
