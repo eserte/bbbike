@@ -31,7 +31,7 @@ Steigung	St; 2212,9755 2268,9670
 Steigung	St; -3475,6780 -3418,6747 -3305,6797
 Steigung	St; -3129,5798 -3226,5870
 Steigung	St; -3129,5798 -2834,5578
-#XXX del --- Steigung	St; 14919,12130 14997,12243
+# REMOVED --- Steigung	St; 14919,12130 14997,12243
 Steigung	St; 36850,7443 37078,7418 37315,7487 37459,7468
 Steigung	St; 35134,4500 35218,4409
 Steigung	St; 35134,4500 35175,4637 35125,4840
@@ -120,8 +120,8 @@ Steigung, ca. 5%	St; 57516,99296 57873,99037 58098,98720 58162,98647
 Steigung, ca. 4%	St; 57042,99574 56856,99683 56268,99856 56188,99924 55977,100103
 Steigung, ca. 5%	St; 53619,100127 54533,100204 54941,100167
 Steigung, ca. 3%	St; 53619,100127 52844,100362
-#XXX del --- Höhenpunkte existieren --- Steigung, ca. 3%	St; 52704,101925 53220,102343
-#XXX del --- Höhenpunkte existieren --- Steigung	St; 53527,102597 53742,102795
+# REMOVED (Höhenpunkte existieren) --- Steigung, ca. 3%	St; 52704,101925 53220,102343
+# REMOVED (Höhenpunkte existieren) --- Steigung	St; 53527,102597 53742,102795
 Steigung, steil	St; 38674,160390 38711,160435 38744,160508 38747,160594
 Steigung	St; 38325,160573 38537,160709
 Hügelige Strecke	CS 57000,175587 56968,175656 56773,175904 56278,176090 56048,176043 55903,176145 55759,176100 55724,176149 55620,176402 55452,176481 55531,176625 55335,176921 55234,177013
@@ -149,16 +149,16 @@ Hügelige Strecke	CS 31339,4726 31364,4711 31424,4658
 #: XXX ^^^
 #: by: ^^^
 kurze starke Steigung	St; 31311,4742 31339,4726
-#XXX del --- Steigung	St; 30950,3985 30854,3947
+# REMOVED --- Steigung	St; 30950,3985 30854,3947
 #: XXX_indoor: Höhenpunkte existieren, aber evtl. kann die Steigungsstrecke noch enger gefasst werden (ab Kageler Weg)
 #: XXX evtl. für bessere Daten nochmal mit Barometer abfahren
 Steigung	St; 31440,4353 31591,4361
 Steigung	St; 30821,3951 30826,3991
-#XXX del --- Steigung	St; 30821,3951 30814,3875
+# REMOVED --- Steigung	St; 30821,3951 30814,3875
 #: XXX_indoor: Höhenpunkt am Fuß per Barometerdaten ausrechnen
 Steigung	St; 30862,3816 30849,3843 30823,3866
 Steigung	St; 31424,4658 31469,4678 31542,4680
-#XXX del --- #: by: Katia Kobelt: --- #: note: "nicht unerheblich" --- Steigung und Gefälle	CS 16227,12280 16252,12411 16284,12616
+# REMOVED --- #: by: Katia Kobelt: --- #: note: "nicht unerheblich" --- Steigung und Gefälle	CS 16227,12280 16252,12411 16284,12616
 #: by: Stefanie (stefhart):
 #: note: "keine fürchterliche"
 mäßige Steigung	St; 20465,15125 20565,15271
@@ -203,7 +203,7 @@ Steigung, über 10%	St; 87660,2255 87610,2261 87536,2336 87418,2351
 Steigung, beim Gefälle "Radfahrer absteigen"	St; 87824,3281 87790,3237 87771,3250 87461,3262
 Steigung	St; 27280,1119 27170,1149
 Steigung	St; 25029,10462 25022,10715
-#XXX del --- Steigung	St; 19771,1793 19728,1660 19679,1571
+# REMOVED --- Steigung	St; 19771,1793 19728,1660 19679,1571
 #: by birgitr..... vvv
 Steigung	St; 3485,25112 3480,25187 3434,25295
 Steigung	St; 3225,25374 3266,25374 3387,25331 3434,25295

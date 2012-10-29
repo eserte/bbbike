@@ -97,7 +97,7 @@ Fasanenstr.	1 5207,10399 5229,10716 5242,10918 5247,10992 5268,11274
 Alt-M¸ggelheim	1 28317,891 28188,962 28094,1090 28225,1009 28317,891
 Prenzlauer Promenade	2 12008,19613 12040,19725 11907,19749
 Prenzlauer Promenade	2 12164,19581 12008,19613 11953,19363 12003,18896 11984,18771 11950,18529
-#XXX del (hier gibt's wohl einen Radweg...) Prenzlauer Promenade	2 11927,19308 12020,19333
+# REMOVED (hier darf man fahren...) --- Prenzlauer Promenade	2 11927,19308 12020,19333
 Breite Str. (Pankow)	1 10240,18193 10281,18241 10449,18315 10463,18321 10502,18338 10567,18366 10609,18384
 Breite Str. (Pankow)	1 10680,18380 10660,18345 10487,18270 10469,18262 10320,18197 10240,18193
 Heinrich-Mann-Platz.	1 9565,18555 9524,18531 9480,18539 9454,18570 9457,18612 9495,18639 9542,18634 9567,18599 9565,18555
@@ -138,7 +138,7 @@ Engeldamm	1 11473,11180 11656,11106 11800,11118 11921,11185 11985,11261 12026,11
 Pannierstr.	1 12202,8895 12242,8972
 #: note: linker Gehweg f¸r Radfahrer in Gegenrichtung offen, zumindest existiert mindestens ein entsprechendes Schild; allerdings ist der Gehweg eng und hat ¸berwiegend nur m‰ﬂige Qualit‰t
 Stolzenfelsstr.	1s:q2 19447,8175 19400,8147 19333,8165 19171,8280 18949,8437 18787,8540 18731,8577
-#XXX del --- Dˆnhoffstr.	1 18726,8633 18609,8717 18514,8773 18451,8823 18375,8874 18296,8920 18221,8978 18161,9029 18136,9072
+# REMOVED (nicht mehr Einbahnstraﬂe) --- Dˆnhoffstr.	1 18726,8633 18609,8717 18514,8773 18451,8823 18375,8874 18296,8920 18221,8978 18161,9029 18136,9072
 Bersarinplatz	1 13742,12538 13698,12544 13678,12571 13686,12611 13695,12643 13727,12642 13747,12642 13767,12626 13761,12578 13742,12538
 Petersburger Platz	1 13470,12990 13559,12779
 Dernburgstr.	1 2498,10665 2378,10677 2333,10710 2252,11037
@@ -187,7 +187,7 @@ Anzengruberstr.	1 12865,8346 12689,8289
 Nalepastr. am Rundfunkgeb‰ude	2 17076,8443 17059,8097
 Kirchstr.	1 22196,4847 22240,4768 22246,4711 22284,4653 22314,4604
 Kietzer Str.	1s:q3 22372,4496 22383,4470
-#XXX del --- hier keine Einbahnstraﬂe, nur eine Sackgasse --- Ontarioseestr.	1 18552,10135 18577,10023
+# REMOVED (hier keine Einbahnstraﬂe, nur eine Sackgasse) --- Ontarioseestr.	1 18552,10135 18577,10023
 Ontarioseestr.	1 18577,10023 18408,10041 18339,10048
 Degnerstr. (auﬂer Tram)	1 16448,15593 16475,15659
 Henriette-Herz-Platz	1 10371,13006 10312,12982 10255,12959
@@ -215,15 +215,15 @@ Schweidnitzer Str	1 3202,9583 3223,9837
 Mansfelder Str.	1 4102,9164 4158,9109 4228,9093 4325,9082
 Johann-Georg-Str.	1 3108,10069 3170,10041 3347,9793
 Damaschkestr.	1 3132,10499 3013,10553
-# XXX del: Herbartstr.	1 2346,11147 2340,11045
+# REMOVED --- Herbartstr.	1 2346,11147 2340,11045
 Lietzenseeufer	1 2871,11211 2806,11241 2748,11206 2621,11190 2621,11065
 Gervinusstr.	1 3587,10768 3631,10784
-# XXX del : XXX_indoor: nach temp-blockings verschieben; Blockierung nur f¸r Anh‰nger (trailer=no)#: note w‰hrend Veranstaltungen und nachts von ca. 22 bis 7 Uhr gesperrt, mit Anh‰nger wegen des engen S¸deinganges nicht befahrbar:(Friedrich-Ludwig-Jahn-Sportpark)	2 10473,15549 10607,15142
+# REMOVED (nach temp-blockings verschoben, trailer werden gesondert behandelt) --- XXX_indoor: nach temp-blockings verschieben; Blockierung nur f¸r Anh‰nger (trailer=no)#: note w‰hrend Veranstaltungen und nachts von ca. 22 bis 7 Uhr gesperrt, mit Anh‰nger wegen des engen S¸deinganges nicht befahrbar:(Friedrich-Ludwig-Jahn-Sportpark)	2 10473,15549 10607,15142
 Darﬂer Str.	1 15000,18056 15031,18106 15181,18137
-#XXX del: Schottstr.	1 16276,12273 16389,12394
-#XXX del: R¸digerstr.	1 16389,12394 16485,12384
+# REMOVED (stimmt nicht) --- Schottstr.	1 16276,12273 16389,12394
+# REMOVED (stimmt nicht) --- R¸digerstr.	1 16389,12394 16485,12384
 Alfredstr.	1 16207,11937 16246,12177 16255,12224
-#XXX del: Alfredstr.	1 16255,12224 16276,12273
+# REMOVED (stimmt nicht) --- Alfredstr.	1 16255,12224 16276,12273
 Fanningerstr.	1s:q4 16890,12135 16794,12144
 Gierkeplatz	1 3447,12269 3456,12296 3478,12306 3510,12301 3528,12276 3521,12243 3493,12228 3463,12237 3447,12269
 Knaackstr.	1 11056,15009 11038,14972 11101,14768
@@ -252,7 +252,7 @@ Erlenweg	1 -3226,18109 -3327,18007
 Aspenweg	1 -3000,18196 -3020,18194 -3050,18173 -3096,18119 -3111,18105 -3168,18051 -3203,18014 -3224,17943
 Aspenweg	1 -3288,17831 -3244,17883 -3224,17943
 Pintschstr.	1 13339,13196 13435,12973
-#XXX del! --- Wolliner Str.	1 10405,14425 10320,14608
+# REMOVED (stimmt nicht (mehr?)) --- Wolliner Str.	1 10405,14425 10320,14608
 Splanemannstr.	1 18301,9946 18389,9925 18408,10041 18403,10077
 Burgherrenstr.	1 8969,8640 9076,8783
 Travestr.	1 14835,11840 14897,11801 14981,11751
@@ -286,8 +286,8 @@ Mudrackzeile	1 6985,17812 7020,17690
 Mariabrunner Weg	1 6841,17781 6909,17796 6985,17812
 Gustav-M¸ller-Str.	1 7643,8634 7642,8815
 Gustav-M¸ller-Platz	1 7644,8560 7614,8599 7643,8634 7682,8598 7644,8560
-#XXX del --- #: XXX Wird die Einbahnstraﬂenregelung hier aufgehoben? --- #: last_checked: 2012-03-06 --- #: next_check: 2012-04-20 --- Niederlagstr.	1:q3 9972,12184 9961,12273
-#Niederlagstr.	1 9943,12364 9934,12420
+# REMOVED (Einbahnstraﬂenregelung ist hier zweifelhaft) --- #: XXX Wird die Einbahnstraﬂenregelung hier aufgehoben? --- #: last_checked: 2012-03-06 --- #: next_check: 2012-04-20 --- Niederlagstr.	1:q3 9972,12184 9961,12273
+# TEMPORARY REMOVED (Baustelle!) --- Niederlagstr.	1 9943,12364 9934,12420
 #: last_checked: 2012-08-30
 #: next_check: 2013-01-01
 #: XXX danach evtl. wieder Einbahnstraﬂe wiederherstellen, siehe oben
@@ -297,7 +297,7 @@ Hertelstr.	1 4893,6900 4787,6899
 Karl-Marx-Platz	1 12980,7597 13100,7626
 Karl-Marx-Platz	1 13100,7626 12991,7549
 Olympischer Platz	1 -157,11943 -505,11882 -514,11991 -272,12039 -193,12051 -110,12019
-#XXX del --- keine Einbahnstraﬂenregelung hier mitbekommen --- Aristotelessteig	1 18452,9755 18435,9639 18660,9599
+# REMOVED (hier ist nichts) --- Aristotelessteig	1 18452,9755 18435,9639 18660,9599
 Berlinickestr.	1 5088,5495 5016,5401
 #: by: Lea:
 Florapromenade	1 10207,17448 10284,17458 10320,17487 10311,17764
@@ -314,12 +314,12 @@ Buggenhagenstr.	1 14425,13780 14370,13615
 Schollenhof	1 3238,21448 3155,21572 3236,21601 3280,21477
 Siegfried-Aufh‰user-Platz	1 13952,7497 13941,7522 13953,7548 13980,7548
 Saltykowstr.	1 12726,7887 12865,7923
-# XXX del: XXX_indoor: evtl. nach temp-blockings verschieben (Drorystr. - Braunschweiger Str., Spielplatz): nachts werden die Tore geschlossen	2 13520,7485 13601,7366
+# REMOVED (nach temp-blockings verschoben) --- (Drorystr. - Braunschweiger Str., Spielplatz): nachts werden die Tore geschlossen	2 13520,7485 13601,7366
 Barbarastr.	1 6451,3034 6371,2955 6320,2909 6357,2863 6368,2851
 Leipziger Platz	1 8596,11508 8599,11474 8639,11441 8713,11448 8743,11489 8740,11524 8736,11557 8698,11589 8623,11580 8592,11541 8596,11508
 Crusemarkstr.	1 10825,18634 10712,18975
 Kavalierstr.	1 10625,18831 10721,18575
-# XXX del : XXX_indoor: evtl. nach temp-blockings verschieben Luitpoldstr., Verl‰ngerung ¸ber Schulhof, nicht immer geˆffnet!	2 6611,9879 6670,9887
+# REMOVED (nach temp-blockings verschoben) --- Luitpoldstr., Verl‰ngerung ¸ber Schulhof, nicht immer geˆffnet!	2 6611,9879 6670,9887
 Kattegatstr.	1 9323,17667 9475,17557
 Waldh¸terpfad	1 510,4202 371,4453 301,4643
 Amalienpark	1 10905,18671 10958,18512
@@ -329,7 +329,7 @@ Im Amseltal	1 1960,25229 1982,25108
 Gundelfinger Str.	1 18735,9421 18697,9153 18653,8922 18609,8717
 Dorotheenstr.	1 18653,8922 18770,8898
 Alte Sp‰thbr¸cke	2 14466,5087 14544,5123
-# XXX del : XXX_indoor: evtl. nach temp-blockings verschieben Rutherfordstr.: nicht permanent geˆffnet	2 19071,2746 19136,2673 19207,2592
+# REMOVED (nach temp-blockings verschoben) --- Rutherfordstr.: nicht permanent geˆffnet	2 19071,2746 19136,2673 19207,2592
 Katzengraben	1 22451,4749 22465,4690
 Schwiegersteig	1 1134,14721 1130,14823 1112,14918
 Mor‰nenweg	1 3208,21425 3295,21202
@@ -410,7 +410,7 @@ Kienhorststr.	1 5543,18555 5324,18560
 Halbauer Weg	1 7720,3148 7719,3219 7734,3290 7753,3371
 #: by: Guido (guidoh):
 Amfortasweg	1 5214,4445 5173,4471 5144,4498 5067,4434 5150,4345
-# XXX del #: by: J¸rgen Jacobi:Onkel-Br‰sig-Str.	1 13324,4784 13305,4504
+# REMOVED (offen f¸r Radfahrer) --- #: by: J¸rgen Jacobi:Onkel-Br‰sig-Str.	1 13324,4784 13305,4504
 #: confirmed_by: srt
 H¸sung	1 13324,4784 13400,4788 13468,4766
 H¸sung	1s 13468,4766 13397,4762 13324,4784
@@ -436,7 +436,7 @@ Riensbergstr.	1 -740,15316 -763,15487
 Saganer Str.: Bahngel‰nde	2 16654,9748 16710,9702 16747,9695 17020,9463 17231,9186 17271,9159
 Triniusstr.	1 18339,6660 18273,6606
 Franz-Stenzer-Str.	1 19876,15644 19974,15594 20044,15585 20111,15609 20181,15658 20399,15744 20508,15792
-#XXX del --- hier nicht --- Franz-Stenzer-Str.	1 20508,15792 20586,15947 20610,15993 20636,16046
+# REMOVED (hier nicht) --- Franz-Stenzer-Str.	1 20508,15792 20586,15947 20610,15993 20636,16046
 #: XXX_indoor bei osm fehlt oneway
 Planetenstr.	1 15175,7221 15056,7198 14951,7163
 Wustermarker Str.	1 -5097,14599 -5111,14486 -5004,14454 -4981,14442 -4750,14393
@@ -568,7 +568,7 @@ Murtzaner Ring	1 19818,14064 19770,14060 19731,14061 19692,14082 19634,14171 195
 Murtzaner Ring	1 19818,14064 19921,14064 19951,14083 20051,14191 20061,14220 20056,14373 20059,14441
 Rosenstr.	1 22284,4653 22212,4655 22138,4661
 Laurenzstr.	1 22246,4711 22175,4730
-#XXX del --- Gotenburger Str.	1 9000,16803 8844,16863
+# REMOVED --- Gotenburger Str.	1 9000,16803 8844,16863
 Werrastr.: Firmengel‰nde	2 13802,8195 13697,8279
 Neuendorfer Str.	1 -3295,14777 -3228,14794
 Neuendorfer Str.	1 -3228,14794 -3251,14741
@@ -581,7 +581,7 @@ S¸dwestkorso	1 4061,6753 4206,6820
 S¸dwestkorso	1 4206,6820 4125,6763 4107,6718
 Kleine Markusstr. - Krautstr.	1 12021,12066 11937,12127 11967,12042 12005,12018
 Schˆnstedtstr.	1 12540,8458 12649,8535
-#XXX del --- Eckertstr.	1 13608,12547 13522,12748
+# REMOVED (verk¸rzt) --- Eckertstr.	1 13608,12547 13522,12748
 Erkelenzdamm	1s:q3 11117,10326 11094,10261
 Alt-Tempelhof	1 8776,6661 8722,6656
 #: by: Steini (immerlocker)
@@ -1059,10 +1059,10 @@ Freilichtb¸hne Schwedt	2 69562,73280 69634,73330
 Bahnhofstr.	1s 26103,-11861 26300,-11864
 #: note: Radweg in einer Richtung
 Bernau - Tempelfelde	1 23179,31047 23103,30923
-#XXX del: #: by: grote energus: vvv
-#XXX del: Straﬂe gesperrt - Baustelle Groﬂflughafen Schˆnefeld, Durchfahrt nicht mˆglich	2 18301,-6019 18367,-5665 18411,-5428
-#XXX del: Straﬂe gesperrt - Baustelle Groﬂflughafen Schˆnefeld, Durchfahrt nicht mˆglich	2 15493,-4693 15539,-4658 15685,-4645 15964,-4817 16261,-4683 17742,-5179 18411,-5428 18764,-5531
-#XXX del: #: by: ^^^
+# REMOVED (permanent entfernt) --- #: by: grote energus: vvv
+# REMOVED (permanent entfernt) --- Straﬂe gesperrt - Baustelle Groﬂflughafen Schˆnefeld, Durchfahrt nicht mˆglich	2 18301,-6019 18367,-5665 18411,-5428
+# REMOVED (permanent entfernt) --- Straﬂe gesperrt - Baustelle Groﬂflughafen Schˆnefeld, Durchfahrt nicht mˆglich	2 15493,-4693 15539,-4658 15685,-4645 15964,-4817 16261,-4683 17742,-5179 18411,-5428 18764,-5531
+# REMOVED (permanent entfernt) --- #: by: ^^^
 Dallgower Str.	1 -10799,15946 -10853,16230
 Altlandsberger Chaussee	1 40487,16703 40712,16743
 Bernau, Bahnhofstr.	1 22850,30562 22892,30426
@@ -1400,7 +1400,7 @@ Stromstr.: unpassierbarer Mittelstreifen	3nocross 6183,13083 6165,12985 6157,129
 M‰rkische Allee: Linksabbiegen verboten	3nocross 20109,16305 20219,16523 20339,16752
 M‰rkische Allee: Linksabbiegen verboten	3nocross 20512,17101 20691,17463 20717,17516 20843,17745 20889,17838 20912,17872 21009,18055
 M‰rkische Allee: Mittelstreifen	3nocross 19896,11688 19918,11891 19939,12068 19947,12140 20002,12492
-#XXX del --- Falkenberger Chaussee: Linksabbiegen wegen Straﬂenbahn nicht mˆglich	3nocross 17400,17790 17482,17844 17601,17922 17675,17971 17744,18016 17843,18078
+# REMOVED (neue Ampeln) --- Falkenberger Chaussee: Linksabbiegen wegen Straﬂenbahn nicht mˆglich	3nocross 17400,17790 17482,17844 17601,17922 17675,17971 17744,18016 17843,18078
 Stralauer Allee: unbequemes Abbiegen	3nocross 13332,10832 13389,10808 13496,10763 13596,10722
 Stralauer Allee: unbequemes Abbiegen	3nocross 13596,10722 13678,10685 13779,10642
 Stralauer Allee: unbequem passierbare Straﬂe	3nocross 14222,10430 14405,10340 14558,10264
@@ -1413,7 +1413,7 @@ Mˆllendorffstr.: Mittelstreifen mit Straﬂenbahn	3nocross 15420,12178 15443,12222
 M¸llerstr.: Zaun auf dem Mittelstreifen	3nocross 6781,16026 6914,15908 6936,15888 7043,15793
 Indira-Gandhi-Str.: Straﬂenbahntrasse	3nocross 14597,15970 14609,15921 14650,15750
 Indira-Gandhi-Str.: Straﬂenbahntrasse	3nocross 14550,16161 14522,16260 14499,16341
-#XXX del --- das ‹berqueren ist mˆglich! --- Weiﬂenseer Weg: Straﬂenbahntrasse	3nocross 15058,14575 15110,14486 15164,14392
+# REMOVED (das ‹berqueren ist mˆglich!) --- Weiﬂenseer Weg: Straﬂenbahntrasse	3nocross 15058,14575 15110,14486 15164,14392
 Lichtenberger Br¸cke: unbequemes Passieren des Mittelstreifens (Bordsteine, starker Verkehr)	3nocross 16737,11866 16803,11859 16962,11833 17037,11820 17121,11806 17151,11801
 #: by: Kerstin Pantos:
 Kolonnenstr.: Mittelinsel mit Gel‰nder	3nocross 7709,8777 7642,8815 7563,8871
@@ -1447,9 +1447,9 @@ Am Tierpark: Straﬂenbahntrasse	3nocross 18286,11275 18268,11391 18228,11656
 M¸hlenstr.: Mittelstreifen ohne ‹berquerungshilfe	3nocross 12497,11459 12539,11416 12576,11375 12641,11288
 M¸hlenstr.: Mittelstreifen ohne ‹berquerungshilfe	3nocross 12990,11006 13080,10956 13144,10921
 M¸hlenstr.: Mittelstreifen	3nocross 12908,11058 12848,11093 12793,11132 12736,11186
-#XXX del --- Klingelhˆferstr.: Mittelstreifen	3 6692,11365 6851,11346 6880,11110
-#XXX del --- Klingelhˆferstr.: Mittelstreifen	3 7103,11247 6851,11346 6880,11110
-#XXX del --- Klingelhˆferstr.: Mittelstreifen	3 6880,11110 6851,11346 6692,11365
+# REMOVED (jetzt mit 3nocross) --- Klingelhˆferstr.: Mittelstreifen	3 6692,11365 6851,11346 6880,11110
+# REMOVED (jetzt mit 3nocross) --- Klingelhˆferstr.: Mittelstreifen	3 7103,11247 6851,11346 6880,11110
+# REMOVED (jetzt mit 3nocross) --- Klingelhˆferstr.: Mittelstreifen	3 6880,11110 6851,11346 6692,11365
 Raoul-Wallenberg-Str.: Straﬂenbahntrasse	3nocross 21158,15885 21220,15741 21235,15641
 Adlergestell: Straﬂenbahntrasse	3nocross 26871,-2500 26698,-2322 26286,-1901
 Blumberger Damm: Mittelstreifen	3nocross 21599,15213 21626,15357 21647,15496
@@ -1625,7 +1625,7 @@ tragen (43 Stufen)	0:35 16998,11861
 #: XXX_prog: should be Treppe with more than one point
 tragen (8 Stufen)	0:14 10286,11869
 tragen (14 Stufen)	0:25 -6972,1029
-#XXX del Rampe existiert mittlerweile: tragen (Treppe)	0:30 22057,4531
+# REMOVED (Rampe existiert mittlerweile) --- tragen (Treppe)	0:30 22057,4531
 tragen (ca. 40 Stufen)	0:30 -2396,3652
 tragen (36 Stufen)	0:30 -3189,3147
 tragen (6 Stufen)	0:15 -3176,3081
@@ -1706,7 +1706,7 @@ tragen (Br¸cke Tegeler Hafen)	0:60 1227,20281
 tragen (Br¸cke Tegeler Hafen)	0:60 1166,20330
 #: next_check ^^^
 #: XXX ^^^
-# osm_XXX hier ist keine Treppe --- XXX del --- tragen? (Fuﬂg‰ngerbr¸cke)	0:120 19762,-160
+# REMOVED (hier ist keine Treppe) --- tragen? (Fuﬂg‰ngerbr¸cke)	0:120 19762,-160
 tragen (Stufen), mit MTB befahrbar	0:30 5725,11644
 tragen (23 Stufen)	0:25 13138,9897
 unter der S-Bahn-Br¸cke tragen (6 Stufen)	0:10 3726,18982
@@ -2105,7 +2105,7 @@ Dr‰ngelgitter	BNP:3::trailer=6 9884,10192
 #: note: Vorbeifahrt auf dem Gehweg, hohe Bordsteine
 Barriere	BNP:5::trailer=10 12316,9477
 Barriere, kann auf dem Gehweg umfahren werden	BNP:3::trailer=6 12186,9205
-#XXX del --- immer offen? --- Schranke (Griesinger-Krankenhaus)	BNP:5 21581,12182
+# REMOVED --- immer offen? --- Schranke (Griesinger-Krankenhaus)	BNP:5 21581,12182
 Schranke	BNP:5 9393,21674
 Dr‰ngelgitter	BNP:5 3831,8674
 Schranke (Krankenhaus Herzberge)	BNP:1 17247,13519
@@ -2117,8 +2117,8 @@ Schranke, schwer passierbar	BNP:10 7625,9376
 Schranke	BNP:5 7612,9446
 Barriere	BNP:0::trailer=30 3268,11834
 Dr‰ngelgitter	BNP:5 -5890,25875
-#XXX --- del? --- keine Behinderungen --- #: note: Anh‰nger sollten vielleicht den Gehweg benutzen --- Schranke, eine Seite eventuell offen	BNP:3::trailer=10 12490,9056
-#XXX --- del? --- eine H‰lfte der Schranke nicht mehr vorhanden --- #: note: Anh‰nger sollten vielleicht den Gehweg benutzen --- Schranke, eine Seite eventuell offen	BNP:3::trailer=10 12565,9200
+# REMOVED (keine Behinderungen) --- #: note: Anh‰nger sollten vielleicht den Gehweg benutzen --- Schranke, eine Seite eventuell offen	BNP:3::trailer=10 12490,9056
+# REMOVED (eine H‰lfte der Schranke nicht mehr vorhanden) --- #: note: Anh‰nger sollten vielleicht den Gehweg benutzen --- Schranke, eine Seite eventuell offen	BNP:3::trailer=10 12565,9200
 Schranke, meistens offen	BNP:3::trailer=6 7875,16509
 Schranke, meistens offen	BNP:3::trailer=6 7707,16543
 Barriere	BNP:10 12178,7985
@@ -2237,15 +2237,15 @@ B96a - Flughafen Berlin-Brandenburg: Abschnitt f¸hrt durch Sicherheitsbereich de
 #: next_check: 2012-10-15
 Am Pankepark: Bauarbeiten, gesperrt	2:inwork 8152,14130 8246,14184
 # 
-#XXX del --- #: last_checked: 2012-08-30 --- #: next_check: 2012-10-15 --- Scharrenstr.: wegen Bauarbeiten komplett gesperrt	2:inwork 10418,12016 10480,12077
-#XXX del --- #: last_checked: 2012-05-01 --- #: next_check: 2012-07-15 --- Paul-und-Paula-Ufer: wegen Bodensanierungsarbeiten komplett gesperrt	2:inwork 14884,10508 14906,10587
+# REMOVED (Baustelle aufgehoben) --- #: last_checked: 2012-08-30 --- #: next_check: 2012-10-15 --- Scharrenstr.: wegen Bauarbeiten komplett gesperrt	2:inwork 10418,12016 10480,12077
+# REMOVED (Baustelle aufgehoben) --- #: last_checked: 2012-05-01 --- #: next_check: 2012-07-15 --- Paul-und-Paula-Ufer: wegen Bodensanierungsarbeiten komplett gesperrt	2:inwork 14884,10508 14906,10587
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120217.1445.366291.html
 #: last_checked: 2012-10-20
 #: next_check: 2012-11-20
 Radweg Herzberge: wegen Bauarbeiten gesperrt (ab 2012-02-20)	2:inwork 17167,13655 17110,13811 17095,13972 17154,14093 17266,14144
 # 
-#XXX del --- now in handicap_l-orig --- #: last_checked: 2011-11-27 --- #: next_check: 2012-03-01 --- Am Alten Markt: wegen Bauarbeiten (Wiederaufbau des Schlosses) gesperrt	2:inwork -12643,-1694 -12624,-1598
+# REMOVED (now in handicap_l-orig) --- #: last_checked: 2011-11-27 --- #: next_check: 2012-03-01 --- Am Alten Markt: wegen Bauarbeiten (Wiederaufbau des Schlosses) gesperrt	2:inwork -12643,-1694 -12624,-1598
 # 
 #: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20111122.1040.362894.html
 #: XXX Sanierungstermin steht noch nicht fest
@@ -2264,15 +2264,15 @@ Friedrich-Ebert-Platz: permanent gesperrt, nicht nur bei Bundestagssitzungen	2 8
 #: XXX evtl. permanent
 Vorfahrt Reichstagsgeb‰ude: Absperrgitter, keine Durchfahrt mehr mˆglich	2 8400,12417 8399,12616
 # 
-#XXX del --- #: last_checked: 2012-03-23 --- #: next_check: 2012-04-25 --- Spreeufer: wegen Bauarbeiten gesperrt	2:inwork 8596,12576 8495,12651 8473,12753
-#XXX del --- #: last_checked: 2011-12-17 --- #: next_check: 2012-01-15 --- (Leuthener Platz - Wilhelm-Kabus-Str.): Bauz‰une	2:inwork 7716,8356 7807,8354 7893,8327
-#XXX del --- #: last_checked: 2011-09-27 --- #: next_check: 2011-10-15 --- (General-Pape-Str. - Gontermannstr.): Bauz‰une	2:inwork 8106,8290 8202,8293 8265,8305 8276,8295
+# REMOVED --- #: last_checked: 2012-03-23 --- #: next_check: 2012-04-25 --- Spreeufer: wegen Bauarbeiten gesperrt	2:inwork 8596,12576 8495,12651 8473,12753
+# REMOVED (fertig!) --- #: last_checked: 2011-12-17 --- #: next_check: 2012-01-15 --- (Leuthener Platz - Wilhelm-Kabus-Str.): Bauz‰une	2:inwork 7716,8356 7807,8354 7893,8327
+# REMOVED (fertig!) --- #: last_checked: 2011-09-27 --- #: next_check: 2011-10-15 --- (General-Pape-Str. - Gontermannstr.): Bauz‰une	2:inwork 8106,8290 8202,8293 8265,8305 8276,8295
 # 
 #: last_checked: 2011-08-02
 #: next_check: 2012-01-01
 Sonnenkieker: Bauarbeiten	2:inwork 22610,13808 22669,13842 22692,13836
 # 
-#XXX del --- #: last_checked: 2011-06-26 --- #: XXX hier muss noch der genaue Wegverlauf ermittelt werden --- Uferweg am Salzhof: ein Teilabschnitt ist noch nicht freigegeben	2:inwork -1942,16105 -1979,15994 -1923,15684
+# REMOVED (fertig, erfasst) --- #: last_checked: 2011-06-26 --- #: XXX hier muss noch der genaue Wegverlauf ermittelt werden --- Uferweg am Salzhof: ein Teilabschnitt ist noch nicht freigegeben	2:inwork -1942,16105 -1979,15994 -1923,15684
 # 
 #: last_checked: 2012-09-01 vvv
 #: next_check: 2013-12-31 vvv
@@ -2283,7 +2283,7 @@ Uferweg am Tegeler Hafen: Weg wegen Bauarbeiten gesperrt	2:inwork 1861,20467 182
 #: next_check: ^^^
 #: last_checked ^^^
 # 
-# XXX del --- laut http://www.stadtentwicklung.berlin.de/bauen/strassenbau/a115_avus/de/bau.shtml?y=20120731 seit April schon offen! --- #: by: somebody via phone call ---#: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/a115_avus/de/bau.shtml --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1106/nachricht4396.html---#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1110/nachricht4504.html---#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1201/nachricht4557.html---#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1206/nachricht4691.html---#: by: INKO_109786---#: last_checked: 2012-07-05---#: next_check: 2012-11-15---H¸ttenweg: Sperrung wegen Bau an der Autobahn, wahrscheinlich bis Ende November 2012	2:inwork -739,6838 -927,6888
+# REMOVED --- laut http://www.stadtentwicklung.berlin.de/bauen/strassenbau/a115_avus/de/bau.shtml?y=20120731 seit April schon offen! --- #: by: somebody via phone call ---#: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/a115_avus/de/bau.shtml --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1106/nachricht4396.html---#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1110/nachricht4504.html---#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1201/nachricht4557.html---#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1206/nachricht4691.html---#: by: INKO_109786---#: last_checked: 2012-07-05---#: next_check: 2012-11-15---H¸ttenweg: Sperrung wegen Bau an der Autobahn, wahrscheinlich bis Ende November 2012	2:inwork -739,6838 -927,6888
 # 
 #: last_checked: 2012-08-30
 #: next_check: 2013-01-15
@@ -2295,8 +2295,8 @@ Helga-Hahnemann-Str.: gesperrt	2:inwork 9415,13315 9408,13282
 #: XXX mit den Bauarbeiten "An den Eldenaer Hˆfen" koordinieren
 Am Langen Jammer: westlicher Abschnitt wegen Bauarbeiten gesperrt	2:inwork 14405,12953 14686,12873
 #
-#XXX del --- #: last_checked: 2011-04-30 --- Tiergartenufer: Bauarbeiten, gesperrt	2:inwork 5711,11841 5543,11837 5478,11860
-#XXX del --- #: last_checked: 2011-04-08 --- Bebelplatz: Bauarbeiten, gesperrt	2:inwork 9679,12388 9702,12307 9708,12235
+# REMOVED --- #: last_checked: 2011-04-30 --- Tiergartenufer: Bauarbeiten, gesperrt	2:inwork 5711,11841 5543,11837 5478,11860
+# REMOVED --- #: last_checked: 2011-04-08 --- Bebelplatz: Bauarbeiten, gesperrt	2:inwork 9679,12388 9702,12307 9708,12235
 #
 #: last_checked: 2012-10-19 vvv
 #: next_check: 2012-12-01 vvv
@@ -2311,27 +2311,27 @@ Bebelplatz: Bauarbeiten an der Staatsoper	2:inwork 9743,12239 9702,12307 9734,12
 #: next_check: 2013-01-15
 Schloﬂplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 
-#XXX del --- #: last_checked: 2011-12-25 --- #: next_check: 2012-01-01 --- #: XXX evenuell bleibt dieser Teil dauerhaft gesperrt, weil hier ein Einkaufszentrum entsteht? --- #: XXX auch die Ampel an der Kreuzung pr¸fen --- Treitschkestr.: Bauarbeiten am Kaufhaus, bis 2012	2:inwork 5219,6215 5125,6262 4971,6345
+# REMOVED (Boulevard Berlin!) --- #: last_checked: 2011-12-25 --- #: next_check: 2012-01-01 --- #: XXX evenuell bleibt dieser Teil dauerhaft gesperrt, weil hier ein Einkaufszentrum entsteht? --- #: XXX auch die Ampel an der Kreuzung pr¸fen --- Treitschkestr.: Bauarbeiten am Kaufhaus, bis 2012	2:inwork 5219,6215 5125,6262 4971,6345
 # 
 #: last_checked: 2012-08-31
 #: next_check: 2013-01-15
 Caroline-Michaelis-Str.: Bauarbeiten	2:inwork 9151,13941 9125,13973
 # 
-#XXX del --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1010/nachricht4106.html --- #: next_check: 2011-09-01 --- Ella-Trebe-Str.: Einbahnstraﬂe wegen Bauarbeiten	1s:q3:inwork 7937,13109 7941,13014 7948,12918
-#XXX del --- #: last_checked: 2011-03-04 --- #: next_check: 2011-05-15 --- Br¸derstr.: Bauarbeiten, gesperrt	2:inwork 10385,11985 10284,12113
-#XXX del --- #: last_checked: 2011-05-20 --- #: next_check: 2011-08-01 --- Alex-Wedding-Str.: Bauarbeiten, komplett gesperrt	2:inwork 11085,13239 11045,13183
-#XXX del (f¸r Radfahrer ist das Abbiegen mˆglich) --- #: next_check: 2012-06-01 vvv --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1010/nachricht4088.html --- Mauerstr.: Einbiegen in die Behrenstr. nicht mˆglich	3:inwork 9076,12054 9064,12156 9054,12154 --- Mauerstr.: Einbiegen in die Behrenstr. nicht mˆglich	3:inwork 9076,12054 9064,12156 9164,12172 --- Behrenstr.: Einbiegen in die Mauerstr. nicht mˆglich	3:inwork 9054,12154 9064,12156 9076,12054 --- Behrenstr.: Einbiegen in die Mauerstr. nicht mˆglich	3:inwork 9164,12172 9064,12156 9076,12054 --- #: next_check: ^^^
+# REMOVED --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1010/nachricht4106.html --- #: next_check: 2011-09-01 --- Ella-Trebe-Str.: Einbahnstraﬂe wegen Bauarbeiten	1s:q3:inwork 7937,13109 7941,13014 7948,12918
+# REMOVED --- #: last_checked: 2011-03-04 --- #: next_check: 2011-05-15 --- Br¸derstr.: Bauarbeiten, gesperrt	2:inwork 10385,11985 10284,12113
+# REMOVED --- #: last_checked: 2011-05-20 --- #: next_check: 2011-08-01 --- Alex-Wedding-Str.: Bauarbeiten, komplett gesperrt	2:inwork 11085,13239 11045,13183
+# REMOVED (f¸r Radfahrer ist das Abbiegen mˆglich) --- #: next_check: 2012-06-01 vvv --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1010/nachricht4088.html --- Mauerstr.: Einbiegen in die Behrenstr. nicht mˆglich	3:inwork 9076,12054 9064,12156 9054,12154 --- Mauerstr.: Einbiegen in die Behrenstr. nicht mˆglich	3:inwork 9076,12054 9064,12156 9164,12172 --- Behrenstr.: Einbiegen in die Mauerstr. nicht mˆglich	3:inwork 9054,12154 9064,12156 9076,12054 --- Behrenstr.: Einbiegen in die Mauerstr. nicht mˆglich	3:inwork 9164,12172 9064,12156 9076,12054 --- #: next_check: ^^^
 # 
 #: last_checked: 2012-10-19
 #: next_check: 2012-12-01
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760
 # 
-#XXX --- siehe http://www.flickr.com/photos/h-e-n-r-y/5260386593/ #: last_checked: 2010-11-05 --- #: next_check: 2010-12-01 --- #: note: Erˆffnung des Hotels im Dezember 2010 --- #: XXX Neubewertung f¸r handicap_s notwendig! --- Spittelmarkt: wegen Bauarbeiten gesperrt	2:inwork 10166,11592 10153,11666 10213,11728
-#XXX del --- #: by: http://www.kondorwessels.com/index.php?id=356 (Fertigstellung) --- #: last_checked: 2011-11-11 --- #: next_check: 2011-11-21 --- Elisabeth-Mara-Str.: Bauarbeiten bis zum Fr¸hjahr 2011	2:inwork 10506,11567 10320,11627
-#XXX del --- #: last_checked: 2010-09-05 --- #: next_check: 2011-09-01 --- Rhinstr.: neues Wohngebiet, Weg gesperrt	2:inwork 18015,13846 17300,14133
-#XXX del --- Hinweis by Monika W-J, Radweg wieder existent seit Sommer 2012: --- #: by: Ulrike Orlowski --- #: by: http://asp.vmzberlin.com/VMZ_LSBB_MELDUNGEN_WEB/Meldungskarte.jsp?back=true&map=true&x=52.53578&y=13.31063&zoom=13&meldungId=IM_014510 --- #: next_check: 2011-06-30 --- Radweg parallel zur Autobahn ist wegen Bauarbeiten am BAB gesperrt	2:inwork 5049,14675 4676,14534 3705,14290 3595,14277
-#XXX del --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1002/nachricht3772.html --- #: next_check: 2010-10-01 --- Br¸cke ¸ber A10: Sperrung vom 15.02.2010 bis 01.10.2010	2:inwork 15337,24593 15490,24848
-#XXX del --- #: last_checked: 2010-09-11 --- #: next_check: 2010-12-31 --- #: XXX der Neubau wird "N" oder "NH" sein und Radwege haben --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0907/nachricht3563.html --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1005/nachricht3870.html --- #: by: http://www.altglienicke.de/aktuell.php : Sperrung aufgehoben (20.05.11) --- Wegedornbr¸cke: Vollsperrung, Neubau	2:inwork 20385,593 20442,564 20510,530 20534,501
+# REMOVED --- siehe http://www.flickr.com/photos/h-e-n-r-y/5260386593/ #: last_checked: 2010-11-05 --- #: next_check: 2010-12-01 --- #: note: Erˆffnung des Hotels im Dezember 2010 --- #: XXX Neubewertung f¸r handicap_s notwendig! --- Spittelmarkt: wegen Bauarbeiten gesperrt	2:inwork 10166,11592 10153,11666 10213,11728
+# REMOVED --- #: by: http://www.kondorwessels.com/index.php?id=356 (Fertigstellung) --- #: last_checked: 2011-11-11 --- #: next_check: 2011-11-21 --- Elisabeth-Mara-Str.: Bauarbeiten bis zum Fr¸hjahr 2011	2:inwork 10506,11567 10320,11627
+# REMOVED --- #: last_checked: 2010-09-05 --- #: next_check: 2011-09-01 --- Rhinstr.: neues Wohngebiet, Weg gesperrt	2:inwork 18015,13846 17300,14133
+# REMOVED --- Hinweis by Monika W-J, Radweg wieder existent seit Sommer 2012: --- #: by: Ulrike Orlowski --- #: by: http://asp.vmzberlin.com/VMZ_LSBB_MELDUNGEN_WEB/Meldungskarte.jsp?back=true&map=true&x=52.53578&y=13.31063&zoom=13&meldungId=IM_014510 --- #: next_check: 2011-06-30 --- Radweg parallel zur Autobahn ist wegen Bauarbeiten am BAB gesperrt	2:inwork 5049,14675 4676,14534 3705,14290 3595,14277
+# REMOVED --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1002/nachricht3772.html --- #: next_check: 2010-10-01 --- Br¸cke ¸ber A10: Sperrung vom 15.02.2010 bis 01.10.2010	2:inwork 15337,24593 15490,24848
+# REMOVED --- #: last_checked: 2010-09-11 --- #: next_check: 2010-12-31 --- #: XXX der Neubau wird "N" oder "NH" sein und Radwege haben --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0907/nachricht3563.html --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1005/nachricht3870.html --- #: by: http://www.altglienicke.de/aktuell.php : Sperrung aufgehoben (20.05.11) --- Wegedornbr¸cke: Vollsperrung, Neubau	2:inwork 20385,593 20442,564 20510,530 20534,501
 # 
 #: last_checked: 2012-10-20
 #: next_check: 2013-02-01
@@ -2346,13 +2346,13 @@ Br¸cke im Tiergarten: gesperrt	2:inwork 6406,11784 6467,11780
 #: next_check: 2012-09-10
 Queralleebr¸cke: wegen Bauarbeiten gesperrt, voraussichtlich bis September 2012	2:inwork 7621,11620 7649,11717
 # 
-#XXX del --- #: by: tobias wirnsberger, Matthias Stief --- #: last_checked: 2011-08-24 (srt, von der Bahn aus) --- #: next_check: 2011-12-01 --- Unterf¸hrung unter Adlergestell und Bahn: wegen Br¸ckenerneuerung gesperrt	2:inwork 20810,2398 20939,2413
+#REMOVED --- #: by: tobias wirnsberger, Matthias Stief --- #: last_checked: 2011-08-24 (srt, von der Bahn aus) --- #: next_check: 2011-12-01 --- Unterf¸hrung unter Adlergestell und Bahn: wegen Br¸ckenerneuerung gesperrt	2:inwork 20810,2398 20939,2413
 #
 #: section ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #: section in Brandenburg vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
-# XXX del #: last_checked: 2009-08-29 R¸ckbau der Fr.-Ebert-Str. zwischen Breite Str. und Platz der Einheit, Bauarbeiten bis Ende 2009. Umfahrung ¸ber Alten Markt notwendig.	1:inwork -12659,-1700 -12758,-1654 -12755,-1585 -12780,-1545
-# XXX del #: last_checked: 2009-08-29 R¸ckbau der Fr.-Ebert-Str., kein Zugang zur Schwertfegerstr.	2:inwork -12870,-1493 -12793,-1498
-#XXX del --- #: last_checked: 2010-05-09 --- Bertiniweg: gesperrt, wird evtl. sp‰ter neu geˆffnet	2:inwork -12689,1693 -12663,1703 -12640,1761 -12524,1891 -12516,1906 -12539,1917 -12568,1970
+# REMOVED --- #: last_checked: 2009-08-29 R¸ckbau der Fr.-Ebert-Str. zwischen Breite Str. und Platz der Einheit, Bauarbeiten bis Ende 2009. Umfahrung ¸ber Alten Markt notwendig.	1:inwork -12659,-1700 -12758,-1654 -12755,-1585 -12780,-1545
+# REMOVED --- #: last_checked: 2009-08-29 R¸ckbau der Fr.-Ebert-Str., kein Zugang zur Schwertfegerstr.	2:inwork -12870,-1493 -12793,-1498
+# REMOVED --- #: last_checked: 2010-05-09 --- Bertiniweg: gesperrt, wird evtl. sp‰ter neu geˆffnet	2:inwork -12689,1693 -12663,1703 -12640,1761 -12524,1891 -12516,1906 -12539,1917 -12568,1970
 #: section ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #: temporary ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #: section ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -2418,7 +2418,7 @@ Matth‰ikirchplatz	1 7954,11399 7965,11380 7934,11275
 Herkulesufer: wg. Stufen schieben, ggf. auf Wiesenstreifen ausweichen	0:30 6920,11064
 Potsdamer Str.: schwierig zu ¸berqueren - besser Ampel benutzen	3nocross 7912,10945 7968,11048 7980,11070
 Grunewaldstr.: queren schlecht mˆglich	3nocross 6709,9234 6863,9254 6923,9266
-#XXX del: keine Einbahnstraﬂenregelung: Adolf-Scheidt-Platz	1 8731,8050 8765,8050 8783,8020 8769,7994 8731,7990
+# REMOVED (keine Einbahnstraﬂenregelung, aber gegen die Richtung fahren ist mit handicap versehen) --- Adolf-Scheidt-Platz	1 8731,8050 8765,8050 8783,8020 8769,7994 8731,7990
 Rumeyplan	1 8686,7726 8796,7751 8895,7797 8940,7835
 Rumeyplan	1 8959,7824 8907,7773 8812,7730 8690,7704
 Greifswalder Str.	3nocross 12422,14692 12473,14763 12520,14833
@@ -2443,7 +2443,7 @@ tragen (Treppe)	0:20 5371,4609
 (Stadtpark Steglitz)	BNP:15 5765,4693
 tragen (16 Stufen)	0:45 5469,4543
 tragen (6 Stufen)	0:20 12387,13107
-#XXX del --- Schranke	BNP:10 12586,13368
+# REMOVED --- Schranke	BNP:10 12586,13368
 tragen (ca. 5 x 9 Stufen)	0:120 13853,13712
 Danziger Str.: Straﬂenbahnschienen	3nocross 12901,14093 12975,13990 13037,13897 13100,13803
 Danziger Str.: Straﬂenbahnschienen	3nocross 13100,13803 13166,13707 13225,13620
@@ -2552,7 +2552,7 @@ Dr‰ngelgitter	BNP:10 1330,9038
 Tor	BNP:15 1834,8893
 #: corrected_by: srt/new_policy (0:180 -> 0:60; even at 5 km/h lost time would be about 80s)
 tragen (10 x 3 Stufen)	0:60 2170,8841
-#XXX del: tragen	0:40 2316,8593
+# REMOVED --- tragen	0:40 2316,8593
 tragen (2 x 7 Stufen)	0:30 2316,8469
 Mittelstr.	1 9462,12481 9343,12464
 Bauhofstr.	1 9815,12705 9673,12661
@@ -2580,7 +2580,7 @@ Groscurthstr.	1 16369,25230 16458,25193 16428,25107
 #: by: Martha Wimmer [AM]
 Sonnenallee	3nocross 14617,7243 14693,7168 14752,7108 14803,7056
 Treskowallee: Straﬂenbahntrasse	3nocross 18631,10167 18694,10018 18703,9997 18742,9903
-#XXX del --- Treskowallee: Straﬂenbahntrasse	3nocross 18807,9746 18763,9837 18742,9903
+# REMOVED --- Treskowallee: Straﬂenbahntrasse	3nocross 18807,9746 18763,9837 18742,9903
 #: by: Christian Schweda [AM]
 #: confirmed_by: srt
 Treskowallee: Straﬂenbahn	3nocross 18875,9570 18865,9608 18823,9708

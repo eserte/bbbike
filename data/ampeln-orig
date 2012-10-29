@@ -1349,7 +1349,7 @@ nur Richtung O	X 8142,7221
 	X 2573,21008
 	X 1955,20435
 	X 3563,20589
-# XXXdel? nicht mehr da???	X 2854,19992
+# REMOVED (Ampel ist jetzt etwas weiter nördlich) ---	X 2854,19992
 	X 4597,20778
 	X 4319,20182
 	X 4262,20025
@@ -1517,7 +1517,7 @@ nur Richtung O	X 8142,7221
 	X 15838,14319
 	X 16310,14378
 	X 15580,14880
-#XXX del:	X 16331,15486
+# REMOVED (Fußgängerampel ist jetzt etwas weiter südwestlich) ---	X 16331,15486
 	X 17254,14451
 	X 17488,15766
 	X 17848,14523
@@ -1556,7 +1556,7 @@ nur Richtung O	X 8142,7221
 	X 11149,-1274
 	X 11054,-740
 	X 1345,184
-#XXX del	X 31447,3372
+# REMOVED (hier existiert nichts, Stand 2010) ---	X 31447,3372
 	F 21496,3849
 	F 20136,3609
 	X 19251,1240
@@ -1697,11 +1697,11 @@ nur Richtung O	X 8142,7221
 	X 4572,7936
 	X 15080,11905
 	X 6454,8653
-#XXX Kynaststr./Alt-Stralau - evtl. wird es nach den Bauarbeiten hier wieder eine Ampel geben	X 14652,10201
-#XXX del --- #: XXX Baustellenampel, wahrscheinlich wegen der Sperrung Karlshorster Str. --- #: last_checked: 2012-09-19 --- #: next_check: 2012-09-25 ---	X::inwork 14832,10512
+# TEMPORARILY REMOVED --- Kynaststr./Alt-Stralau - evtl. wird es nach den Bauarbeiten hier wieder eine Ampel geben	X 14652,10201
+# REMOVED (temporäre Baustellenampel, wahrscheinlich wegen der Sperrung Karlshorster Str.) --- #: last_checked: 2012-09-19 --- #: next_check: 2012-09-25 ---	X::inwork 14832,10512
 	F 13030,7346
-#XXX del:	X 12510,6508
-#XXX del:	X 12553,6423
+# REMOVED (keine Ampel (mehr?), evtl. wegen BAB) ---	X 12510,6508
+# REMOVED (keine Ampel (mehr?), evtl. wegen BAB) ---	X 12553,6423
 	X 13261,6456
 	X 13294,6386
 	X 8715,12956
@@ -1751,7 +1751,7 @@ S-Bahn und Regionalbahn	B 21562,12088
 #: by: Olaf Schulz vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 	F 11310,14953
 #: by ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-#XXX del --- existiert nicht mehr --- #: by: Joern (js): ---	F 11593,15051
+# REMOVED (existiert nicht mehr, hier ist jetzt eine Spielstraße) --- #: by: Joern (js): ---	F 11593,15051
 	X 5421,8337
 #: XXX_prog: lange Wartezeiten für Radfahrer (zwei Umläufe)
 	X 8241,11024
@@ -1968,7 +1968,7 @@ Industriebahn	B0 -2410,13746
 	F 12532,11008
 	X 4828,10356
 	F 11285,14515
-# XXX del --- Baustellenampel, existiert nicht mehr (2009-07)	X 10635,13207
+# REMOVED (Baustellenampel, existiert nicht mehr, 2009-07) ---	X 10635,13207
 	F 11905,15462
 	X 7880,13315
 	X 8017,13629
@@ -2564,6 +2564,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: note: Luftbild
 	X 3408,13210
 #: by: andk
+#: confirmed_by: srt
 	X 7733,8023
 	X 17533,14484
 	X 18166,14277
@@ -2573,10 +2574,9 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F 6347,17381
 	F 11913,19144
 	F 12122,22185
-# XXX --- del (laut http://www.berlin.de/ba-pankow/presse/archiv/20110608.1725.347135.html) --- #: note: provisorische Ampel --- X 9848,20764
+# REMOVED (entfernt, laut http://www.berlin.de/ba-pankow/presse/archiv/20110608.1725.347135.html) --- #: note: provisorische Ampel --- X 9848,20764
 	F 7535,21229
 	F 6829,21160
-#: note: public imagery
 	X 21165,18715
 	X 7830,4667
 	F 2629,7771
@@ -2939,7 +2939,7 @@ Bernauer Str. / Koblenzer Str. / Mathias-Thesen-Str.	F -25,39151
 Bernauer Str. / Lehnitzstr. / Sachsenhausener Str.	X -1253,38715
 Bernauer Str. / Mittelstr. / Liebigstr.	F -1010,38798
 Bernauer Str. / Stralsunder Str.	X -853,38856
-#XXX del beim Umbau Schloßplatz entfernt	Breite Str. / Kanalstr. / Blutgasse	F -1571,38406
+# REMOVED (beim Umbau Schloßplatz entfernt) ---	Breite Str. / Kanalstr. / Blutgasse	F -1571,38406
 Germendorfer Allee / Eichendorffstr.	F -2715,38240
 Havelstr. / Nicolaikirche	F -1720,38268
 Saarlandstr. / Nauener Str.	F -576,36956
