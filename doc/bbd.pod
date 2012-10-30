@@ -1173,6 +1173,15 @@ a "clock" sign.
 
 =back
 
+=head1 CONVENTIONS
+
+Lines which are to be removed, but still should be kept as a kind of
+"historical documentation", may be turned into a comment with
+"REMOVED" as the first word. Multiple lines may be joined into one
+line, separated by a "---". For example:
+
+    # REMOVED --- #: confirmed_by: me --- old entry X 1234,5678 9876,5432
+
 =head1 EXAMPLES
 
     #: map: polar
