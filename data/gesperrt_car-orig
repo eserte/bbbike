@@ -75,7 +75,7 @@ Rudolf-Breitscheid-Str.	1 -10446,-1947 -10360,-1934 -10235,-1916 -9986,-1882 -97
 # ^^^
 Bendastr.	1 12689,6905 12702,6846
 Bendastr.	1 12793,6407 12781,6470 12759,6563 12743,6645 12726,6727 12722,6748 12715,6775 12702,6846
-#XXXdel --- Puschkin/Bulgarische	1 13829,9905 13884,9882 13995,9834 14193,9746
+# REMOVED (ist hier keine Einbahnstraße) --- Puschkin/Bulgarische	1 13829,9905 13884,9882 13995,9834 14193,9746
 Puschkin/Bulgarische	1 14193,9746 14310,9692 14780,9480 14819,9462 14883,9431 15383,9191 15442,9095 15452,9079 15561,8903 15591,8848 15378,8668 15166,8489
 Karl-Marx-Str./Schönstedt	3nocross 12500,8504 12540,8458 12562,8432 12582,8408
 Hoffmannstr./Elsenstr.	3 14076,10011 14289,9870 14405,10027
@@ -208,7 +208,7 @@ Forddamm	1 9131,3571 9106,3703
 Hermannstr., am U/S-Bahnhof	3nocross 12317,7007 12340,6947 12348,6923 12362,6881
 Almstadtstr.	1 10790,13565 10767,13443 10757,13401 10699,13173
 Lohmeyerstr.	1 3348,12314 3409,12451
-#XXX del? Yitzhak-Rabin-Str.	1 8055,12186 8119,12414
+# REMOVED (keine Einbahnstraße (mehr)) --- Yitzhak-Rabin-Str.	1 8055,12186 8119,12414
 Martin-Luther-Str.	3nocross 6514,10088 6514,9947 6512,9866
 Hans-Otto-Str: Straßenbahntrasse	3nocross 12621,14313 12729,14227 12901,14093
 Sredzkistr./Prenzlauer Allee: Straßenbahntrasse	3nocross 11662,14695 11642,14625 11582,14448
@@ -298,7 +298,7 @@ Onkel-Bräsig-Str.	1 13323,5222 13359,5086 13324,4784 13305,4504
 #: confirmed_by: srt
 Krokusstr.	1 16738,2717 16739,2736 16677,2856
 Gregor-Mendel-Str. (Potsdam)	1 -13596,-508 -13415,-506 -13257,-512 -13182,-515
-#XXX delReinhardtstr. - Luisenstr.	3 8693,12951 8715,12956 8726,12861
+# REMOVED --- Reinhardtstr. - Luisenstr.	3 8693,12951 8715,12956 8726,12861
 Donaustr.	1 12150,8891 12202,8895
 Altstadt Köpenick: nur für Busse frei	2 22388,4737 22390,4702
 #: note: Luftbild
@@ -449,11 +449,11 @@ Berliner Allee -> Rossinistr.	3 13432,15843 13401,15821 13456,15760
 #: note: Luftbild:
 Prenzlauer Promenade: Straßenbahntrasse	3nocross 12010,16774 12017,16734 12045,16574
 Karl-Marx-Allee: Mittelstreifen	3nocross 12114,12546 12134,12540 12360,12505
-#XXX del --- Leipziger Str.: Mittelstreifen	3nocross 10240,11740 10213,11728 10128,11714 9987,11690 9981,11689
-#XXX del --- Niederwallstr./Spittelmarkt: nur Abbiegen nach rechts erlaubt	3 10189,11773 10205,11758 10240,11740 10320,11627
-#XXX del --- Niederwallstr./Spittelmarkt: nur Abbiegen nach rechts erlaubt	3 10189,11773 10205,11758 10240,11740 10299,11786
-#XXX del --- Gertraudenstr.: Abbiegen verboten	3nocross 10512,12039 10460,11979 10391,11898
-#XXX del --- Gertraudenstr.: Abbiegen verboten	3nocross 10313,11805 10299,11786 10240,11740
+# REMOVED (Reorganisation des Spittelmarktes) --- Leipziger Str.: Mittelstreifen	3nocross 10240,11740 10213,11728 10128,11714 9987,11690 9981,11689
+# REMOVED (Reorganisation des Spittelmarktes) --- Niederwallstr./Spittelmarkt: nur Abbiegen nach rechts erlaubt	3 10189,11773 10205,11758 10240,11740 10320,11627
+# REMOVED (Reorganisation des Spittelmarktes) --- Niederwallstr./Spittelmarkt: nur Abbiegen nach rechts erlaubt	3 10189,11773 10205,11758 10240,11740 10299,11786
+# REMOVED (Reorganisation des Spittelmarktes) --- Gertraudenstr.: Abbiegen verboten	3nocross 10512,12039 10460,11979 10391,11898
+# REMOVED (Reorganisation des Spittelmarktes) --- Gertraudenstr.: Abbiegen verboten	3nocross 10313,11805 10299,11786 10240,11740
 Kleineweg: nur für Anlieger	2:Anlieger 9130,8029 9130,7810 9132,7661
 Kleineweg: nur für Anlieger	2:Anlieger 9115,7645 9120,7600 9145,7522 9097,7469
 Peter-Strasser-Weg: nur für Anlieger	2:Anlieger 9240,7811 9130,7810
@@ -546,7 +546,7 @@ Seddiner -> Hohenschönhausener Weg: Poller	3 * 18408,12105 18422,11837
 Hohenschönhausener Weg -> Seddiner: Poller	3 18422,11837 18408,12105 *
 #: by: Malte Wollitz:
 Gluckweg	1 6039,3275 5853,3050
-#XXX del --- wahrscheinlich nicht mehr --- Am Tierpark - Criegernweg	3 18408,10774 18417,10738 18509,10757
+# REMOVED (Ampel existiert) --- Am Tierpark - Criegernweg	3 18408,10774 18417,10738 18509,10757
 Rosenfelder Ring	3 * 18093,12093 *
 Sophienstr.	1 9986,13412 10317,13248
 Gradestr./Moosrosenstr.	3nocross 12773,5248 12727,5244 12582,5232

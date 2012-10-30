@@ -3629,7 +3629,7 @@ Grünrockweg	NN 7377,18498 7269,18460
 Rorschacher Zeile	N 7291,18392 7203,18360 7198,18307
 Hoppestr.	H 8617,18310 8482,18284
 Hoppestr.	N 8482,18284 8307,18242 8192,18217
-#XXX del --- es existiert keine Verbindung (mehr) --- (zur Hoppestr.)	NN 8192,18217 8116,18115
+# REMOVED (es existiert keine Verbindung (mehr)) --- (zur Hoppestr.)	NN 8192,18217 8116,18115
 Büdnerring	N 7861,18333 7997,18524 8066,18632 8063,18659 8037,18673 7926,18665 7892,18603 7902,18575 7997,18524
 Herbststr.	H 8627,18402 8465,18365
 Herbststr.	N 8465,18365 8286,18331 8222,18375 8096,18456 7997,18524
@@ -4430,7 +4430,7 @@ Janischweg	N 537,14919 481,15088 473,15169 453,15173 431,15230 429,15284
 Köttgenstr.	N 473,15169 556,15175 613,15195
 Buolstr.	N 559,15342 429,15284 283,15237
 Straße am Schaltwerk	N 717,14894 537,14919 510,14923 443,14900 385,14936 182,14964
-#XXX del --- existiert nicht mehr --- #: XXX existiert hier weiterhin eine Durchfahrtmöglichkeit? Qualität? Nachts beleuchtet? --- (Straße am Schaltwerk - Paulsternstr.)	NN 182,14964 -321,14933
+# REMOVED (existiert nicht mehr) --- #: XXX existiert hier weiterhin eine Durchfahrtmöglichkeit? Qualität? Nachts beleuchtet? --- (Straße am Schaltwerk - Paulsternstr.)	NN 182,14964 -321,14933
 #: note: keine Straßenschilder (by Gerhard, no email):
 (Am Bahndamm)	NN 510,14923 498,14934 168,15220 54,15578 51,15599
 Paulsternstr.	H -344,15200 -355,15112 -321,14933 -284,14738 -283,14523
@@ -5197,8 +5197,8 @@ Arendsweg	N 17221,15181 17230,15083 17240,14978 17236,14882 17239,14719 17242,14
 (Zufahrt IKEA Lichtenberg)	N 18166,14277 18055,14276 17976,14251 17808,14231 17668,14208 17335,14167 17289,14195 17274,14280
 (Siegfriedstr. - Autowaschcenter)	N 16864,14226 16965,14235 17088,14190
 (Zufahrt ehem. Einkaufszentrum)	N 16965,14235 17010,14269 17060,14255 17221,14268 17274,14280
-#XXX del --- (Rhinstr. - Arendsweg/Landsberger Allee)	NN 18015,13846 17266,14144
-#XXX del --- Zufahrt nur theoretisch möglich, mit tragen und viel Gestrüpp --- (Rhinstr. - Arendsweg/Landsberger Allee)	NN 17266,14144 17319,14159 17230,14206 17221,14268
+# REMOVED --- (Rhinstr. - Arendsweg/Landsberger Allee)	NN 18015,13846 17266,14144
+# REMOVED (Zufahrt nur theoretisch möglich, mit tragen und viel Gestrüpp) --- (Rhinstr. - Arendsweg/Landsberger Allee)	NN 17266,14144 17319,14159 17230,14206 17221,14268
 #: note: wird wahrscheinlich für den Autoverkehr geöffnet, wenn das Bauprojekt Weiße Taube fertiggestellt ist
 Heldburger Str.	NN 17247,14581 17389,14599 17514,14613 17629,14627
 Sollstedter Str.	N 17242,14664 17377,14678 17507,14693 17600,14713
@@ -6350,7 +6350,7 @@ Weislingenstr.	N 2944,26099 3045,26078 3152,26051 3169,26048 3217,26049 3271,260
 Remstaler Str.	N 3169,26048 3186,25969 3221,25876 3216,25778 3154,25659 3141,25626 3141,25575 3171,25495
 Bundschuhweg	N 3221,25876 3348,25902 3422,25935 3477,25969
 Jostweg (Frohnau)	N 3415,25731 3356,25725 3216,25778
-#XXX del: Bieselheider Weg	N 3615,25890 3477,25969 3362,26046 3390,26225 3448,26315 3540,26465
+# REMOVED (genauere Koordinaten) --- Bieselheider Weg	N 3615,25890 3477,25969 3362,26046 3390,26225 3448,26315 3540,26465
 Edelhofdamm	H 2490,25211 2615,25225 2683,25238 2756,25260 2909,25322 3101,25402 3185,25437
 Edelhofdamm	H 3171,25495 3307,25554 3456,25601
 Edelhofdamm	H 2683,25238 2713,25300 2744,25314 2882,25375 3076,25456 3171,25495
@@ -6395,7 +6395,7 @@ Iznikstr.	N -2140,16909 -2119,17015
 An der Havelspitze	NN -2335,16535 -2342,16369 -2287,16362 -2262,16443 -2180,16566 -2137,16658 -2152,16737 -2122,16835 -2050,16934 -2044,17003
 Sigmund-Bergmann-Str.	N -2371,16776 -2312,16770 -2173,16741 -2157,16838 -2140,16909
 (Sigmund-Bergmann-Str. - Uferweg)	NN -2173,16741 -2152,16737
-#XXX del --- ex. nicht? --- Maselakeweg	NN -2450,16981 -2410,16931 -2371,16776 -2391,16607
+# REMOVED (ex. nicht?) --- Maselakeweg	NN -2450,16981 -2410,16931 -2371,16776 -2391,16607
 (Maselake-Klappbrücke)	NN -2445,16610 -2504,16558
 (Uferweg am Nordhafen)	NN -2477,16351 -2510,16357 -2632,16347 -2779,16330 -2972,16399 -2972,16420
 (Weg im Maselakepark)	NN -2504,16558 -2510,16357
@@ -7789,7 +7789,7 @@ Wuhletalstr.	H 20769,17650 20891,17572 21066,17503
 Wuhletalstr.	H 21913,17376 21796,17413 21719,17427 21539,17442 21284,17454 21066,17503 20895,17594 20769,17650
 Wuhletalstr.	NH 20769,17650 20728,17670 20485,17784
 Wuhletalstr. - zur Märkischen Allee	H 20691,17463 20727,17558 20769,17650 20855,17807 20912,17872
-#Wuhletalstr. [Mittelstreifen]	NN 20891,17572 20895,17594
+# REMOVED --- Wuhletalstr. [Mittelstreifen]	NN 20891,17572 20895,17594
 #: note: zumindest an der Wuhletalstr. ist der Weg sogar ausgeschildert
 (An der Kohlbeke)	NN 20728,17670 20657,17543
 Schwarzburger Str.	N 21719,17427 21709,17382 21677,17195 21665,17133 21488,17160
@@ -8259,7 +8259,7 @@ Nippeser Str. [12 u. 14]	NN 19894,-247 19827,-251 19775,-252
 Kirschweg	N 19385,-444 19451,-452 19607,-474 19674,-484 19704,-490
 #: XXX_osm: falscher Name ("Weidenweg"):
 Kirschweg	N 19704,-490 19761,-438 19775,-437
-#XXX del --- nicht zu erkennen (2012-05-06) --- #: XXX: wird als Fuß/Radweg gewidmet laut http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/51re.pdf/file
+# REMOVED (nicht zu erkennen, Stand 2012-05-06) --- #: XXX: wird als Fuß/Radweg gewidmet laut http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/51re.pdf/file
 #: note: keine Ausschilderung
 (Glindower Weg - Kirschweg)	N 19400,-471 19448,-473 19451,-452
 Glindower Weg	N 19422,-655 19411,-553 19400,-471
@@ -8914,7 +8914,7 @@ Zum Flughafen Tegel	H 3033,15694 2975,15813 2960,15847 2913,15944 2819,16141 286
 (Knoten am Flughafen Tegel)	N 2960,15847 2996,15930 2998,15973 2982,15992 2953,15999 2848,15979 2818,15966 2810,15931 2828,15903 2880,15884 2960,15847
 (Knoten am Flughafen Tegel)	N 2996,15930 2977,15923 2949,15922 2913,15944
 (Knoten am Flughafen Tegel)	N 2913,15944 2880,15908 2828,15903
-#XXX del ex nicht? (Am Hohenzollernkanal - Flughafen Tegel)	NN 3005,15780 2937,15812 2714,15828 2701,15853
+# REMOVED (ex nicht?) --- (Am Hohenzollernkanal - Flughafen Tegel)	NN 3005,15780 2937,15812 2714,15828 2701,15853
 Reichweindamm	N 3103,14187 3126,14216 3169,14256 3184,14265 3242,14278 3303,14304 3435,14297 3478,14352 3473,14385 3460,14432 3450,14507 3442,14562 3429,14631 3413,14721 3395,14856
 Goerdelerdamm	NN 5049,14675 4676,14534 3705,14290 3595,14267 3229,14224 3103,14187
 Goerdelerdamm	NH 3103,14187 3030,14224 2960,14218 2896,14187
@@ -8953,7 +8953,7 @@ Anton-von-Werner-Str.	N 22030,10467 22125,10451 22257,10428
 Niemetzstr.	N 13546,7600 13591,7575 13702,7418 13761,7328 13797,7267 13891,7107
 Albertstr.	N 6989,8687 7086,8579 7166,8487
 Yitzhak-Rabin-Str.	H 8119,12414 8055,12186
-#(Ehemalige Entlastungsstr., Rückbau und Renaturierung erfolgt ab ca. 2006-07-01)	NN 8055,12186 8056,12061 8129,11735 8172,11679
+# REMOVED --- (Ehemalige Entlastungsstr., Rückbau und Renaturierung erfolgt ab ca. 2006-07-01)	NN 8055,12186 8056,12061 8129,11735 8172,11679
 Ben-Gurion-Str.	HH 8172,11679 8226,11458
 #: note: nicht ausgeschildert
 Moltkebrücke	H 7936,12906 8017,12826
@@ -9054,7 +9054,7 @@ Haveleck (Wannsee)	NN -5722,2714 -5653,2807 -5712,2946 -5745,2990 -5820,3035 -59
 (Moorlake - Pfaueninsel)	NN -9606,1389 -9647,1462 -9673,1519 -9663,1622 -9632,1672 -9584,1703 -9511,1739 -9444,1820 -9393,1831 -9108,1798 -9016,1782 -8934,1801 -8861,1855 -8747,2023 -8636,2102 -8591,2144 -8540,2209
 Alt-Kladow	N -7170,4962 -7080,4896 -6947,4861 -6811,4893
 Rohrsängersteig	NN -6947,4861 -6879,4775 -6866,4765
-#XXX del? --- (zum Hafen Wannsee)	NN -4827,1433 -4791,1561 -4870,1464 -4905,1514
+# REMOVED (Neuordnung der Koordinaten) --- (zum Hafen Wannsee)	NN -4827,1433 -4791,1561 -4870,1464 -4905,1514
 (zum Hafen Wannsee)	NN -4944,1298 -4903,1433 -4943,1439
 Ronnebypromenade	NN -4905,1514 -4943,1439 -5002,1382 -5067,1400
 (Ronnebypromenade - Königstr.)	NN -5067,1400 -5127,1392 -5135,1377
@@ -9469,7 +9469,7 @@ Ohserring	N 23676,12820 23678,12878 23724,12917 23785,12908 23812,12863 23806,12
 Finkelsteinstr.	N 23583,12992 23678,12878
 Ridbacher Str.	N 24530,12296 24434,12402 24354,12510 24316,12566 24230,12733 24187,12836 24142,12943 24131,12969 24117,13043 24118,13148 24115,13320 24117,13423 24117,13464 24119,13556 24119,13658 24125,13781 24130,13842
 (Ridbacher Str. - Kastanienallee)	NN 24130,13842 24081,13951
-#XXX del --- #: note: lit --- das ist nur ein Pfad... --- (Ridbacher Str. - Nossener Str.)	NN 24130,13842 24130,13842 24187,14052
+# REMOVED --- #: note: lit --- das ist nur ein Pfad... --- (Ridbacher Str. - Nossener Str.)	NN 24130,13842 24130,13842 24187,14052
 (Ridbacher Str. - Nossener Str.)	NN 24130,13842 24165,13931 24219,14021 24217,14041
 Güstrower Str.	N 23921,13465 24078,13431 24117,13423 24345,13366
 Kainzstr.	N 24236,13295 24203,13133
@@ -9615,7 +9615,7 @@ Am Oder-Spree-Kanal	N 30588,-3000 30546,-3072
 Zu den Gosener Bergen	N 30722,-2337 30640,-2803
 Schmöckwitzwerdersteg	NN 30546,-3072 30534,-3105
 (Wiesenweg)	N -1409,16106 -1334,16260 -1321,16543 -1333,16577 -1351,16587
-#XXX del existiert nicht --- (Wiesenweg)	N -1351,16587 -1370,16648 -1343,16732
+# REMOVED (existiert nicht) --- (Wiesenweg)	N -1351,16587 -1370,16648 -1343,16732
 (Rohrbruchwiesen)	NN -1321,16543 -1159,16563 -1073,16610
 Saatwinkler Steg	NN -1073,16610 -995,16701 -992,16688 -993,16682
 Halligweg	N -779,16591 -910,16608 -913,16641 -993,16682 -1437,17052 -1458,17089
@@ -9823,8 +9823,8 @@ Lieselstr.	N 18857,988 18931,1192
 Nibelungenweg	N 18892,330 18785,370 18712,397
 Guntherstr. (Altglienicke)	N 18694,136 18785,370 18850,550
 Lutz-Schmidt-Str.	N 18799,91 18694,136 18644,157
-# XXX del ex. nicht? --- (Rudower Höhe)	NN 18487,1174 18677,1249
-# XXX del uninteressant? --- (An der Rudower Höhe)	NN 18677,1249 18659,1194 18610,1077 18552,897 18566,866
+# REMOVED (ex. nicht?) --- (Rudower Höhe)	NN 18487,1174 18677,1249
+# REMOVED (uninteressant?) --- (An der Rudower Höhe)	NN 18677,1249 18659,1194 18610,1077 18552,897 18566,866
 Kaiserin-Augusta-Str.	N 9363,5903 9291,5908 9192,5921 8990,5950 8815,5974 8641,5998 8524,6015 8385,6034 8291,6048 8205,6061 8182,6064
 Theodorstr. (Tempelhof)	N 9321,6079 9291,5908
 Wenckebachstr.	N 9368,5608 9365,5662 9378,5773 9390,5870
@@ -13428,7 +13428,7 @@ Fontanestr. (Lichtenrade)	N 9699,-600 9779,-605
 Fontanestr. (Lichtenrade)	NN 9779,-605 9822,-608
 Fontanestr. (Lichtenrade)	N 10075,-624 10182,-601 10280,-578 10374,-552 10450,-528 10508,-519
 Massower Str.	N 17734,11408 17861,11429 18005,11451 18178,11504
-#XXX del --- #: XXX wird dieser Straßenabschnitt aufgehoben? --- nö, bestimmt nicht --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/21re.pdf/file?y=2012
+# REMOVED (nö, bestimmt nicht) --- #: XXX wird dieser Straßenabschnitt aufgehoben? --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/21re.pdf/file?y=2012
 Massower Str.	N 17861,11429 17864,11371 17964,11375 17967,11342 18016,11343
 Kurze Str. (Friedrichsfelde)	N 18027,11244 18016,11343 18005,11451
 Bredowstr.	N 6011,13330 6008,13529 6005,13734 6021,14017
@@ -14731,7 +14731,7 @@ Solinger Str.	N 5734,12673 5673,12581 5616,12500
 #: XXX genauer Verlauf des Weges? Bordsteine? Qualität?
 Eyke-von-Repkow-Platz	NN 5556,12536 5538,12510
 Eyke-von-Repkow-Platz	N 5538,12510 5497,12448
-#XXX del --- Eyke-von-Repkow-Platz	NN 5585,12518 5524,12430
+# REMOVED --- Eyke-von-Repkow-Platz	NN 5585,12518 5524,12430
 Wiebestr.	NN 4495,13107 4527,13232
 Wiebestr.	N 4547,13232 4556,13293 4605,13525 4649,13652 4587,13837
 Klarenbachstr.	N 4556,13293 4363,13336
@@ -15676,10 +15676,10 @@ Theobaldstr.	N 18384,16550 18300,16488 18228,16438
 Oswaldstr.	N 18300,16488 18326,16452 18412,16334
 Roderichplatz	N 18326,16452 18252,16403
 Markfriedstr.	N 18252,16403 18228,16336
-# XXX: kein Wohngebiet, sondern Betriebsgelände?
-#Wartenberger Str. [Wohngebiet]	N 17465,16340 17590,16386 17820,16476 17801,16523 17790,16545
-#Wartenberger Str. [Wohngebiet]	N 17801,16523 17626,16455 17590,16386
-#(Wartenberg Str. - Anna-Ebermann-Str.)	NN 17790,16545 17825,16554
+# REMOVED --- XXX: kein Wohngebiet, sondern Betriebsgelände?
+# REMOVED --- Wartenberger Str. [Wohngebiet]	N 17465,16340 17590,16386 17820,16476 17801,16523 17790,16545
+# REMOVED --- Wartenberger Str. [Wohngebiet]	N 17801,16523 17626,16455 17590,16386
+# REMOVED --- (Wartenberg Str. - Anna-Ebermann-Str.)	NN 17790,16545 17825,16554
 Sonneberger Weg	N 5478,1409 5462,1450 5494,1546 5543,1706 5570,1712 5592,1720 5656,1882
 Jagowstr. (Hermsdorf)	N 3077,22234 3046,22292 3043,22407 3050,22554 3056,22693
 Boumannstr.	N 2739,22531 2876,22542 3050,22554 3214,22578 3508,22650 3739,22693

@@ -1266,16 +1266,7 @@ userdel	q3::inwork 11912,14486 11642,14625
          'type' => 'handicap'
        },
        undef,
-       {
-         'source_id' => 'IM_019006',
-         'until' => 1351612800,
-         'text' => 'Berliner Str. (Pankow): Baustelle, stadtauswärts zwischen Mühlenstr. und Elsa-Brändström-Str. bis Ende 10/2012 gesperrt',
-         'from' => 1342945020,
-         'id' => 2363,
-         'data' => 'userdel	q4::inwork; 10927,17022 10908,17142
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'INKO_113869',
          'until' => 1354291200,
@@ -1413,16 +1404,7 @@ userdel	q4::inwork; 10870,14689 10893,14705
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20121012.1220.376513.html',
-         'until' => 1351551600,
-         'text' => 'Dörpfeldstraße: wegen Gleisbauarbeiten zwischen Anna-Seghers-Straße und Thomas-Müntzer-Straße als Einbahnstraße in Richtung Osten geführt (15.10.2012 bis 29.10.2012)',
-         'from' => 1350252000,
-         'id' => 2392,
-         'data' => 'userdel	q4::inwork; 20012,3532 20082,3578 20136,3609 20149,3617
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'INKO_115461',
          'until' => 1352905200,

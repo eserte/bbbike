@@ -97,7 +97,7 @@ Bundesministerium Bauen und Verkehr	F:SW 8479,13850 8516,13871 8484,13927 8448,1
 Neue Synagoge	SW|IMG:synagogue 9736,13221
 Synagoge Fraenkelufer	SW|IMG:synagogue 11301,10037
 Flughafen Tempelhof	F:SW 9468,8550 9385,8625 9401,8692 9531,8675 9523,8618 9504,8571 9582,8496 9723,8546 9884,8562 10027,8548 10020,8526 9875,8542 9733,8519 9590,8459 9481,8378 9391,8255 9333,8130 9303,8019 9274,8021 9301,8115 9352,8244 9437,8377 9377,8445 9331,8429 9262,8420 9261,8560 9327,8574 9403,8492
-# XXX del: Touristeninformation Berlin im Flughafen Tempelhof: Eingang Haupthalle	SW|IMG:touristinfo 9459,8503
+# REMOVED (kein Flughafen mehr) --- Touristeninformation Berlin im Flughafen Tempelhof: Eingang Haupthalle	SW|IMG:touristinfo 9459,8503
 Columbiahaus	F:SW 9247,8857 9247,8812 9312,8802 9377,8757 9562,8733 9574,8863 9552,8865 9546,8757 9464,8765 9466,8859 9440,8861 9440,8774 9385,8776 9318,8824 9271,8828 9269,8869
 Columbiahaus	F:SW 9249,8871 9568,8877 9572,8855 9249,8851
 #: XXX_prog: Reihenfolge Flughafen -> Touristeninformation beibehalten, da sonst das Icon der Information überdeckt wird.
@@ -107,7 +107,7 @@ Touristeninformation Berlin im Flughafen Schönefeld: Terminal B, EG, Mitte	SW|IM
 Flughafen Tegel	F:SW|IMG:airport 2752,16408 2770,16371 2721,16343 2695,16308 2694,16274 2704,16244 2671,16278 2552,16258 2478,16353 2513,16459 2632,16482 2710,16395
 Touristeninformation Berlin im Flughafen Tegel: Gate 3	SW|IMG:touristinfo 2675,16393
 Luftbrückendenkmal	IMG:sehenswuerdigkeit_img/luftbrueckendenkmal|ANCHOR:s 9317,8702
-#XXX del steht hier nicht mehr: Rosinenbomber	SW 10645,8496
+# REMOVED (steht hier nicht mehr) --- Rosinenbomber	SW 10645,8496
 Schinkeldenkmal	IMG:sehenswuerdigkeit_img/viktoriaparkdenkmal|ANCHOR:s 8911,9073
 Rathaus Schöneberg	F:SW 6419,8753 6419,8666 6359,8667 6359,8753
 Amerika-Haus	SW 5436,11107
@@ -117,7 +117,7 @@ Kaiser-Wilhelm-Gedächtniskirche	IMG:sehenswuerdigkeit_img/gedaechtniskirche|ANCH
 #: XXX_prog: Reihenfolge Europa-Center -> Touristeninformation beibehalten, da sonst das Icon der Information überdeckt wird.
 #: alias: i-Punkt
 Europa-Center	F:Shop 5868,10875 5992,10809 6020,10864 6021,10930 5984,10937 5941,10921 5882,10925
-# XXX del: warum ist das hier im KaDeWe???? Touristeninformation Berlin im Europa-Center	SW|IMG:touristinfo 6137,10595
+# REMOVED (warum ist das hier im KaDeWe????) --- Touristeninformation Berlin im Europa-Center	SW|IMG:touristinfo 6137,10595
 Aquarium	F:SW 6177,11089 6187,11062 6105,11026 6085,11053 6148,11074
 Elefantentor (Zoologischer Garten)	SW 6046,11028
 Theater des Westens	F:SW|IMG:theater 5304,11072 5298,11008 5341,11000 5344,11072
@@ -187,7 +187,7 @@ St.-Hedwig-Krankenhaus	SW|IMG:hospital 9922,13369
 Krankenhaus Neukölln	F:SW|IMG:hospital 14225,3747 14277,3721 14178,3457 14121,3481
 #: alias: Krankenhaus Am Urban
 Klinikum Am Urban	F:SW|IMG:hospital 10759,9885 10793,9874 10792,9864 10816,9855 10820,9861 10855,9850 10837,9808 10845,9801 10838,9782 10788,9801 10792,9811 10763,9819 10727,9781 10726,9781 10706,9788 10710,9830 10687,9835 10676,9807 10645,9819 10664,9869 10642,9876 10659,9915 10722,9893 10725,9897
-#XXX del --- Klinikum Am Urban	F:SW|IMG:hospital 11069,9741 10932,9798 10914,9759 10877,9774 10843,9686 11014,9622
+# REMOVED (jetzt Wohnbebauung) --- Klinikum Am Urban	F:SW|IMG:hospital 11069,9741 10932,9798 10914,9759 10877,9774 10843,9686 11014,9622
 Universitätsklinikum Rudolf Virchow	F:SW|IMG:hospital 6092,15135 6106,15072 6392,15108 6385,15172
 Universitätsklinikum Rudolf Virchow	F:SW|IMG:hospital 6132,15008 6138,14949 6407,14985 6401,15039
 Klinikum Benjamin Franklin	F:SW|IMG:hospital 4845,3923 4903,3831 5066,3921 5094,3966 5046,4044

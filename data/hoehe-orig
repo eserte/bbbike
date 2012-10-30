@@ -28,7 +28,7 @@
 35.0	? 22162,1067
 # barometer + above neighbor
 51	X 21996,268
-#XXX del --- # barometer + above neighbor --- 53	X 21799,234
+# REMOVED --- # barometer + above neighbor --- 53	X 21799,234
 44.5	X 18127,-367
 36.3	? 25008,2889
 # die Rund-um-Berlin-Karte gibt hier 35.3 an:
@@ -493,7 +493,7 @@
 40.7	X 14775,-5925
 41.3	X 14878,-3602
 43.8	? 21696,-2925
-#XXX del wegen BBI: 41.1	X 15987,-6248
+# REMOVED del wegen BBI: 41.1	X 15987,-6248
 45.8	X 17015,-7556
 37.5	X 20843,-12781
 57.4	X 24278,-9878
@@ -608,7 +608,7 @@
 80.6	X -13950,75662
 #: note: relativ zum Punkt 11545,13690 per Barometer ermittelt
 38	X 11598,13598
-#XXX del --- # per Barometer ausgerechnet --- 42	X 20709,1413
+# REMOVED --- # per Barometer ausgerechnet --- 42	X 20709,1413
 # Barometer/hm96
 38.5	X 18361,1926
 # Barometer/hm96
@@ -1143,7 +1143,7 @@
 43.6	X -6006,1234
 41.8	X -5499,1349
 40.8	X -6021,2068
-#XXX del --- wrong! --- hier ist nicht so eine Steigung! --- 49.9	X -6025,1999
+# REMOVED (wrong! --- hier ist nicht so eine Steigung!) --- 49.9	X -6025,1999
 #: note: interpoliert mit Barometer
 38	X -6025,1999
 37.3	X -5722,2714
@@ -1596,7 +1596,7 @@
 45.6	X 7563,8871
 34.3	X 10066,10071
 35.9	X 13206,10651
-#XXX del --- 36.0	X 13332,10832
+# REMOVED --- 36.0	X 13332,10832
 #: note: per Barometer, Referenz ist 13541,11355 vvv
 42.4	X 13493,11217
 #: note ^^^
@@ -1796,7 +1796,7 @@
 43.8	X -5564,11209
 33.3	X -4063,11805
 42.9	X -2850,11423
-# XXX del 35.0	X -2850,11423
+# REMOVED --- 35.0	X -2850,11423
 33.6	X -4312,11720
 40.2	X 9250,14658
 37.0	X 9197,14562
@@ -2076,7 +2076,7 @@
 36.5	X 3985,22236
 37.2	X 4032,22374
 42.5	X 4007,23709
-#XXX del --- wrong! Hier ist keine so signifikante Steigung --- 49.2	X 3947,23547
+# REMOVED (wrong! Hier ist keine so signifikante Steigung) --- 49.2	X 3947,23547
 41.1	X 3953,23401
 41.7	X 3698,23657
 41.7	X 4201,23397

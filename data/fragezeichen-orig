@@ -664,7 +664,7 @@ Segelfliegerdamm (Zernsdorf - Niederlehme): in Planung/Bau	?::inwork 29192,-1063
 #: next_check: 2016-06-01
 Geplante Brücke über die Spree bzw. Straßenverbindung zwischen Rummelsburger Landstraße und Schnellerstr.	?::projected 17082,7189 16954,7096
 # 
-#XXX --- laut http://www.berlin.lsvd.de/cms/index.php?option=com_content&task=view&id=184&Itemid=175 (URL existiert nicht mehr) sowie laut http://de.wikipedia.org/wiki/Kanzleramtssteg nicht mehr in Planung --- Magnus-Hirschfeld-Steg: laut Tsp geplant	? 7360,12430 7437,12368
+# REMOVED (laut http://www.berlin.lsvd.de/cms/index.php?option=com_content&task=view&id=184&Itemid=175 (URL existiert nicht mehr) sowie laut http://de.wikipedia.org/wiki/Kanzleramtssteg nicht mehr in Planung) --- Magnus-Hirschfeld-Steg: laut Tsp geplant	? 7360,12430 7437,12368
 # 
 #: by: http://www.nationaler-radverkehrsplan.de/neuigkeiten/news.php?id=1370
 #: note: Havelradweg
@@ -781,7 +781,7 @@ Mohnweg: unbefestigte Straße, Q2-	? 9158,21467 9205,21318
 Alsternweg: unbefestigte Straße, Q2-	? 9393,21674 9312,21880 9276,21958
 #: XXX neuer Name: Hamamelisweg?
 Lindenweg: unbefestigte Straße, Q2-	? 9097,21427 9121,21346
-# XXX   Heilkräuterweg -> siehe strassen-orig
+# REMOVED ---   Heilkräuterweg -> siehe strassen-orig
 #: XXX neuer Name: Huflattichweg?
 Veilchenweg: unbefestigte Straße, Q3+	? 9326,21655 9252,21855 9201,21974
 #: XXX neuer Name: Ingwerweg?
@@ -792,8 +792,8 @@ Goldlackweg: unbefestigte Straße, Q3	? 9203,21621 9132,21805
 Dahlienweg: unbefestigte Straße, Q2-	? 8995,21990 9045,21873 9082,21786 9113,21687 9092,21677 9120,21599
 #: XXX neuer Name?
 Gladiolenweg: Gras, Q3	? 9092,21677 9014,21650
-# XXX   Kräuterplatz -> siehe strassen-orig
-# XXX   Kräuterweg -> siehe strassen-orig
+# REMOVED ---   Kräuterplatz -> siehe strassen-orig
+# REMOVED ---   Kräuterweg -> siehe strassen-orig
 #: XXX neuer Name: vielleicht Kümmelweg?
 Lilienweg: unbefestigte Straße, Q2-	? 9145,21606 9169,21548 9180,21523
 #: XXX neuer Name: Lorbeerweg? vvv
@@ -1372,9 +1372,9 @@ Zichow-Lindenwegsiedlung: Qualität?	? 54500,87934 52642,87955
 # REMOVED (Furt existiert) --- Wriezener/Osloer Str.: ist das Abbiegen wegen der Straßenbahn möglich?	? 9210,16638
 Eisenbahnbrücke über der Elbe: laut <cp6net$f0g$1@zeppelin.rz.uni-potsdam.de> ist die Eisenbahnbrücke für Fußgänger begehbar, laut <cn2fr0taoncnlu6s84inbhgpo8lq0u0bh2@4ax.com> sogar offizieller Bestandteil des Elbe-Radwegs	? -92087,-49506 -91387,-49350
 Weg entlang der Elbe: Qualität?	? -91387,-49350 -91150,-49775 -90062,-50750 -89709,-51230
-#XXX Koordinaten stimmen nicht mehr! Darßer Str.: beidseitiger Radweg ja, eintragen!	? B24943,-13819 B23513,-13631
-#XXX Koordinaten stimmen nicht mehr! Granitzstr.: wenigstens teilweise Radweg Richtung Osten? (Richtung Westen definitiv kein Radweg)	? B14908,-13452 B15798,-14098
-# XXX: B96 ab Ende Schnellstraße bis mindestens Fürstenberg als "stark befahren" markieren!
+# REMOVED --- XXX Koordinaten stimmen nicht mehr! Darßer Str.: beidseitiger Radweg ja, eintragen!	? B24943,-13819 B23513,-13631
+# REMOVED --- XXX Koordinaten stimmen nicht mehr! Granitzstr.: wenigstens teilweise Radweg Richtung Osten? (Richtung Westen definitiv kein Radweg)	? B14908,-13452 B15798,-14098
+# REMOVED (wozu gehört das überhaupt?) --- XXX: B96 ab Ende Schnellstraße bis mindestens Fürstenberg als "stark befahren" markieren!
 Fresdorf - Kähnsdorf: Qualität?	? -11553,-15502 -12187,-15175 -12289,-15205 -12402,-15326 -12765,-15415 -12909,-15368 -13133,-15396 -13607,-15551
 Kähnsdorf - Seddin: Qualität?	? -13607,-15551 -13887,-15575 -13996,-15825 -14270,-15906 -15863,-15363 -16345,-15170
 Rheinsberg - Großzerlang: Qualität?	? -25439,77907 -25050,79662 -24100,80450 -23725,81512 -23550,82037 -23462,82925 -23612,83475 -23525,84137 -23152,84531 -22637,85912 -22325,86300
@@ -1425,7 +1425,7 @@ Rauschendorf - Neulögow: Qualität?	? -10466,69247 -10399,69296 -10393,69338 -103
 Neulögow - Seilershof: Qualität?	? -8775,72512 -8174,72513 -8034,72635 -7937,72970 -7851,73171 -7839,73769 -7486,74341 -7455,74445
 #: XXX laut anonymen Eintrag Radweg; keine Verbindung zum restlichen Netz:
 Hermsdorfer Str. (Hohen Neuendorf): Qualität?	? 621,29356 625,29868
-#XXX hier scheint keine direkte Verbindung zu sein: (Dorfstr. (Tiefwerder) - Heerstr.): Qualität?	? -2916,12195 -2953,12015 -2918,11678 -2835,11467
+# REMOVED (hier scheint keine direkte Verbindung zu sein) --- (Dorfstr. (Tiefwerder) - Heerstr.): Qualität?	? -2916,12195 -2953,12015 -2918,11678 -2835,11467
 Liebenwalde - Zehdenick [Berlin - Kopenhagen]: Qualität? Nur für Radfahrer?	? 8574,51776 8510,52025 8083,52074 8001,52273 8081,53068 7981,54068 7918,54093 7925,54743 8083,55925 7827,56669 7962,57318 7937,57706 7581,58350 7568,58668 7681,59556 7587,60006 7481,60368 7475,60393 7075,60862 6362,61350 5993,61743 5437,63156 5318,63337 5112,63250 4948,63424
 Zehdenick - Burgwall/Marienthal [Berlin - Kopenhagen]: Qualität?	? 3685,65851 3212,66343 3350,67075 3187,67481 2656,68100 2831,68281 2925,69200 2850,69212 2850,69618 2737,69975 2731,70156 2406,70381 2387,70443 2412,70506 2350,70775 2200,70818 2037,71025 1918,71193 1912,71400 1712,71537 650,71562
 Zabelsdorf - Dannenwalde [Berlin - Kopenhagen]: Qualität? Nur für Radfahrer?	? -1143,71100 -1987,71562 -2768,71868 -4125,72768 -5425,73225 -6006,73781
@@ -1454,7 +1454,7 @@ Alt Schadow - Leibsch [Spreeradweg/Gurkenradweg]: Qualität?	? 48393,-31006 48140
 Köthener See: Qualität?	? 40118,-36709 40012,-36612 39500,-36487 39312,-36212 38975,-36275 38775,-36150
 Groß Wasserburg - Krausnick [Hofjagdradweg]: Qualität?	? 41687,-38100 41462,-38325 41475,-38750 41700,-39425 41012,-40575 41000,-40763
 Köthen - Krausnick [Gurkenradweg]: Qualität?	? 39087,-36914 38750,-37212 38087,-37775 37875,-38037 39187,-38325 39625,-38175 40125,-38275 40337,-38625 40150,-39037 40500,-40325 40677,-40682 40813,-40775 40863,-40904
-#An den Rohrbruchwiesen: Qualität? Teilstrecke nur für Radfahrer geöffnet?	? -1675,16813 -1467,16753 -1434,16609 -1351,16587 -1321,16564
+# REMOVED --- An den Rohrbruchwiesen: Qualität? Teilstrecke nur für Radfahrer geöffnet?	? -1675,16813 -1467,16753 -1434,16609 -1351,16587 -1321,16564
 Fabrikstr. (Hennigsdorf): Qualität? Hauptstraße oder Nebenstraße?	? -3018,25556 -3020,25628 -3099,25732 -3057,26034 -3209,26317
 Maurerstr. (Hennigsdorf): Qualität? Hauptstraße oder Nebenstraße?	? -3209,26317 -3297,26805 -3334,27381 -3473,27393
 #: note: Löwenberger-Land-Radweg: vvv
@@ -1762,8 +1762,8 @@ Schönfließ - B167: Qualität?	? 83274,3292 83648,4018 83483,4450 83527,4852
 Neuhardenberg - Letschin: Qualität?	? 68139,21885 68350,22134 68604,23658 69163,23988 69518,24343 69645,25105
 Bestensee - Hintersiedlung: Qualität?	? 26376,-18707 26637,-18860 26644,-18866 26967,-19187 26954,-19301 26929,-19477 26864,-19685 26703,-19943 26037,-20825
 Wilhelm-Staab-Str./Yorckstr.: Überqueren des Kanals möglich?	? -13001,-1329
-# XXX: unklare Angaben von Nils Fiedler, leider keine Rückfrage möglich: Q1 (Asphalt); q2 (Fußgängerzone); RW1 (Radweg); Gefälle "5°"? #Mühlenfeldstr.: Steigung, wenn ja, wo genau?	? 3707,22864 3739,22693 3743,22642 3753,22534 3728,22507 3601,22484 3531,22440 3353,22348 3271,22321 3243,22311 3134,22292 3046,22292 2757,22310 2587,22332
-#Dorfstr. (Malchow): seit November 2005 Bauarbeiten für neuen Radweg, bereits fertig?	? 15606,19839 15656,19946 15686,20100 15778,20350 15900,20531 16025,20631
+# REMOVED --- XXX: unklare Angaben von Nils Fiedler, leider keine Rückfrage möglich: Q1 (Asphalt); q2 (Fußgängerzone); RW1 (Radweg); Gefälle "5°"? #Mühlenfeldstr.: Steigung, wenn ja, wo genau?	? 3707,22864 3739,22693 3743,22642 3753,22534 3728,22507 3601,22484 3531,22440 3353,22348 3271,22321 3243,22311 3134,22292 3046,22292 2757,22310 2587,22332
+# REMOVED --- Dorfstr. (Malchow): seit November 2005 Bauarbeiten für neuen Radweg, bereits fertig?	? 15606,19839 15656,19946 15686,20100 15778,20350 15900,20531 16025,20631
 # REMOVED (Strecke bereits abgefahren) --- by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0506/nachricht1941.html --- "Wuhle-Hönow-Weg" --- Rad- und Fußwegverbindung zwischen Wuhle und Hönow durch Hellersdorf: genauer Verlauf? Qualität? bereits komplett fertiggestellt?	? 22579,15416 22743,15414 23067,15429 23245,15442 23270,15423 23368,15469 23484,15485 23629,15498 23633,15464 23643,15389 23895,15450 23914,15453 23941,15458 24038,15475 24076,15481 24169,15497 24303,15766 25003,15617 25984,15415 25936,15335 25990,15301 25985,15080 26014,15039
 #: XXX an der westlichen Seite asphaltiert, keine Radwege
 Niederlehme Anschlussstelle - Niederlehme: Qualität (wahrscheinlich Asphalt)? Radweg?	? 28499,-10164 28272,-10277 28168,-10289 27934,-10286 27906,-10191 27827,-10082 27535,-10033
@@ -1879,7 +1879,7 @@ Battinsthal - Penkun: Qualität? zumindest am nördlichen Ende asphaltiert	? 65975
 Welsow - Kerkow: Qualität (höchstwahrscheinlich asphaltiert)?	? 49734,74527 49777,74463 49811,74177 49969,74149 50100,74058 50121,73960 50176,73842 50213,73705 50191,73574 50131,73439 50027,73351 49966,73257 49945,73025 50000,72647 49975,72419 49011,71344
 #: XXX zumindest am südlichen Ende stimmt Asphalt
 Tantow - Rossow - Stettin: Qualität (laut osm Asphalt)?	? 74028,98863 74201,99192 74939,100000 75140,100530 75143,100700 75207,100834 75210,101020 75326,101099 75359,101157 75359,101224
-# XXX hier gibt es nix : by: http://www.berlinonline.de/berliner-zeitung/archiv/.bin/dump.fcgi/2007/0512/lokales/0052/index.html Zufahrtstraße zur Brücke am Nottekanal: Wo genau verläuft die Zufahrtstraße? Qualität? Radwege? Laut Berliner Zeitung ist die Brücke mittlerweile fertig	? 26418,-10758 27031,-10349 27012,-10751 27081,-10851 26895,-11124
+# REMOVED (hier gibt es nix) --- by: http://www.berlinonline.de/berliner-zeitung/archiv/.bin/dump.fcgi/2007/0512/lokales/0052/index.html Zufahrtstraße zur Brücke am Nottekanal: Wo genau verläuft die Zufahrtstraße? Qualität? Radwege? Laut Berliner Zeitung ist die Brücke mittlerweile fertig	? 26418,-10758 27031,-10349 27012,-10751 27081,-10851 26895,-11124
 Hafenstr. (KW): Qualität?	? 26895,-11124 26815,-11398 26767,-11721 26713,-11908
 Kunersdorf - Bliesdorf: Qualität? Radweg oder Fahrbahn?	? 61173,31087 61255,31127 61194,31842 61294,32550 61241,32838
 Am Luftschiffhafen - R1/Uferweg: existiert eine Verbindung für Radfahrer? Qualität?	? -15729,-3566 -15556,-3770
@@ -1935,7 +1935,7 @@ Flottsteller Str. (Michendorf): Qualität (wahrscheinlich asphaltiert)?	? -15891,
 Stieleichenstr. (Schönfließ): Qualität (wahrscheinlich asphaltiert oder betoniert)?	? 4424,26240 4387,26270 4340,26311 4302,26352 4287,26368 4262,26415 4239,26458 4213,26461 4182,26463 4136,26489 4105,26533 4095,26547
 Rohrwebereck: Sind da noch Stichstraßen oder sind das nur Garagenzufahrten?	? -1259,41680 -1243,41659 -1240,41628 -1209,41590 -1212,41562
 Fontanestr. (Lichtenrade): Qualität des Rad/Gehweg-Abschnitts?	? 9779,-605 9822,-608
-#XXX --- keine öffentliche Straße, geschlossenes Tor, keine Straßenschilder, asphaltiert --- Sternfelder Str.: Qualität?	? 386,14162 367,13991 371,13863 182,13878 169,13851
+# REMOVED (keine öffentliche Straße, geschlossenes Tor, keine Straßenschilder, asphaltiert) --- Sternfelder Str.: Qualität?	? 386,14162 367,13991 371,13863 182,13878 169,13851
 #: by: http://www.potsdam.de/cms/dokumente/10084122_1189396/4d29ee09/Amtsblatt_9_2011.pdf
 Tannenweg (Potsdam): Qualität?	? -9434,164 -9440,193 -9405,204 -9453,425 -9494,441 -9539,434
 (Wannseestr. - Tannenstr.): genaue Straßenbezeichnungen? Qualität?	? -9568,56 -9381,89 -9389,170
@@ -2235,7 +2235,7 @@ Existiert für Radfahrer eine Verbindung zwischen Straße 618 und Weg am Rudower F
 #: XXX_osm: bei osm ohne Straßennamen
 Erpetaler Weg: Qualität? Geht der Weg weiter Richtung Süden bis zur Ravensteiner Promenade? Ist die Straße ausgeschildert?	? 24637,7438 24618,7272
 # REMOVED (Straßenname existiert nicht; Weg ist für Radfahrer verboten) --- Saturnring: Qualität? Für Radfahrer befahrbar?	? 18827,-537 18906,-316
-# XXX beim ersten Mal habe ich geglaubt, dass hier dieser Weg nicht existiert, aber vielleicht fehlt nur das Straßenschild auf dieser Seite...
+#: XXX beim ersten Mal habe ich geglaubt, dass hier dieser Weg nicht existiert, aber vielleicht fehlt nur das Straßenschild auf dieser Seite...
 Weg O: Qualität? Stimmt der Straßenname?	? 27621,535 27817,761
 # REMOVED (in der Realität kein Straßenname) --- #: XXX_osm bei osm ohne Namen --- Rosenweg (Bohnsdorf): Qualität?	? 20362,-511 20567,-313
 # REMOVED (existiert wohl nicht?) --- Straße B: Genaue Lage der Straße? Qualität?	? 1233,15889 1207,15868
