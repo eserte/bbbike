@@ -4,7 +4,7 @@
 # $Id: BBBikeOsmUtil.pm,v 1.15 2009/01/27 19:11:28 eserte Exp eserte $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2008 Slaven Rezic. All rights reserved.
+# Copyright (C) 2008,2012 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -16,7 +16,7 @@ package BBBikeOsmUtil;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.15 $ =~ /(\d+)\.(\d+)/);
+$VERSION = 1.16;
 
 use vars qw(%osm_layer %images @cover_grids %seen_grids $last_osm_file $defer_restacking
 	  );
@@ -47,9 +47,9 @@ my $ltlnqr = qr{([-+]?\d+(?:\.\d+)?)};
 my $osm_download_file_qr       = qr{/download_$ltlnqr,$ltlnqr,$ltlnqr,$ltlnqr\.osm(?:\.gz|\.bz2)?$};
 
 use vars qw($OSM_API_URL $OSM_FALLBACK_API_URL);
-#$OSM_API_URL = "http://www.openstreetmap.org/api/0.5";
 $OSM_API_URL = "http://www.openstreetmap.org/api/0.6";
-$OSM_FALLBACK_API_URL = "http://www.informationfreeway.org/api/0.6";
+## XXX The informationfreeway URL redirects to xapi.openstreetmap.org, which does not exist anymore
+#$OSM_FALLBACK_API_URL = "http://www.informationfreeway.org/api/0.6";
 
 use vars qw($MERKAARTOR_MAS_BASE $MERKAARTOR_MAS $ALLICONS_QRC $USE_MERKAARTOR_ICONS %ICON_NAME_TO_PHOTO);
 
@@ -123,6 +123,7 @@ sub mirror_and_plot_osm_files {
 		my $success = 0;
 		my $err;
 		for my $rooturl ($OSM_API_URL, $OSM_FALLBACK_API_URL) {
+		    next if !$rooturl;
 		    my $url = "$rooturl/map?bbox=$this_x0,$this_y0,$this_x1,$this_y1";
 		    main::status_message("Mirror $url ...", "info"); $main::top->update;
 		    main::IncBusy($main::top);
@@ -214,6 +215,7 @@ sub get_download_url {
 }
 
 sub get_fallback_download_url {
+    return if !$OSM_FALLBACK_API_URL;
     my($x0,$y0,$x1,$y1) = @_;
     my $url = "$OSM_FALLBACK_API_URL/map?bbox=$x0,$y0,$x1,$y1";
     $url;
@@ -237,7 +239,7 @@ sub download_and_plot_visible_area {
     eval {
 	my $resp = $ua->get($url, ':content_file' => $tmpfile);
 	if (!$resp->is_success) {
-	    if ($withfallback) {
+	    if ($withfallback && $url2) {
 		my $resp2 = $ua->get($url2, ':content_file' => $tmpfile);
 		if (!$resp->is_success) {
 		    die "Could not download $url: " . $resp->status_line . " and $url2: " . $resp2->status_line . "\n";
