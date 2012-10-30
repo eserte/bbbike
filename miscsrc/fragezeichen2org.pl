@@ -107,7 +107,7 @@ my $today = strftime "%Y-%m-%d", localtime;
 
 my $today_printed = 0;
 for my $record (@records) {
-    if (!$today_printed && $record->[0] lt $today) {
+    if (!$today_printed && $record->[0] le $today) {
 	print "** ---------- TODAY ----------\n";
 	$today_printed = 1;
     }
