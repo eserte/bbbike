@@ -29,8 +29,8 @@ Grunewaldstr. (Steglitz)	?::projected 4861,5581 4671,5697 4520,5793
 #: XXX Baumaßnahme 1.48 (Realisierung nach 2011)
 Stülerstr.	?::projected 6825,11486 6716,11439 6692,11365 6679,11319 6630,11247 6606,11222
 # 
-#: last_checked: 2012-10-24
-#: next_check: 2012-11-30
+#: last_checked: 2012-11-01
+#: next_check: 2012-12-31
 #: XXX Baumaßnahme 3.32 (Realisierung nach 2011)
 Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12128,14640 12317,14535 12425,14459 12621,14313 12729,14227 12901,14093 12975,13990 13037,13897 13100,13803 13166,13707 13225,13620 13228,13615 13330,13468
 # 
@@ -699,6 +699,20 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+#: XXX laut osm gesperrt, aber vielleicht nur für Autos?
+zwischen Sportforum und Friedhof: kommt man hier als Radfahrer durch? Ausschilderung? Qualität? Nachts beleuchtet?	? 15829,15042 15169,15466
+Geißenweide - Blenheimstr.: gibt es für Radfahrer eine Verbindung? Qualität? Nachts beleuchtet?	? 21122,14713 21201,14994 21312,15268
+westlicher Wuhlewanderweg: Qualität? Nachts beleuchtet? Ausschilderung?	? 22124,13606 22362,13865 22415,14151 22679,14450 22552,14777 22460,14820 22382,14908 22343,15115
+Weg durch die KGA An der Südostallee: kann man hier durchfahren? Schranken?	? 17094,6170 17083,6099 17736,5441
+Upstallweg - Richterstr.: existiert für Radfahrer eine Verbindung? Qualität?	? 9264,3874 9214,3922
+Bruno-Taut-Str. - Am Gartenstadtweg: existiert für Radfahrer eine Verbindung? Ausschilderung? Qualität? Nachts beleuchtet?	? 21783,668 21679,596
+Mauerweg - Schirpitzer Weg: existiert für Radfahrer eine Verbindung? Ausschilderung? Qualität? Nachts beleuchtet?	? 18608,232 18232,745
+S-Bhf. Hermsdorf, Unterführung am Fellbacher Platz: existiert für Radfahrer eine Verbindung? Qualität?	? 3750,23363 3593,23297
+Niederneuendorfer Allee - Pappelweg: Qualität des Waldweges?	? -2827,18639 -3058,18358
+Armenische Str. - Aroser Allee: existiert für Radfahrer eine Verbindung? Ausschilderung? Qualität? Nachts beleuchtet?	? 7147,16791 6994,16983 6952,17082
+Sendener Str. - Bernauer Str.: Qualität des Waldweges?	? 964,18321 915,18352 625,18518 560,18494
+Göhrener Str.: ist hier irgendwo verkehrsberuhigt?	? 11511,15054 11476,15030
+# 
 #: next_check: 2012-11-01
 #: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20121029.1330.377234.html
 #: XXX Bauarbeiten gehen bis Dezember 2012
@@ -713,6 +727,7 @@ Wiesengrund Straße 1: oder ist sie hier?	? 19953,8258 19943,8279
 Fußweg 475: existiert hier tatsächlich ein befahrbarer Weg? Ausgeschildert? Qualität? Beleuchtet?	? 30794,4154 30757,3974
 # 
 #: XXX laut Wikipedia befindet sich die Museumsstr. hier, aber es gibt keine Straßenschilder... trotzdem sollte ich das öffentliche Straßenland hier aufnehmen
+#: XXX mildes Kopfsteinpflaster (Q2+), wahrscheinlich Fußgängerverkehr zu Museumsöffnungszeiten, Sackgasse, keine Straßenschilder
 Museumsstr.: Straßenverlauf aufnehmen, aber ohne Straßennamen	? 10044,12708 10020,12760
 # 
 #: XXX falls ja -> Berlin.coords.data, plaetze-orig
@@ -3149,3 +3164,5 @@ Neidenburger Allee: Ist die Qualität der Fahrbahn zwischen Willenberger Pfad bis
 Neubrücker Str.: Ist die Neubrücker Str. eine Vorfahrtsstraße?	? 1364,25882 1213,25813 1135,25765 1057,25695 975,25627 885,25578 727,25504 639,25478
 # 
 Ahlimbsmühle - Templin: Qualität?	? 24006,74469 23185,74265 22563,74247 21760,74489 21331,74676 20498,75268 19701,76270 19750,76354 19659,77157 19454,77284 19061,78220 18681,78317 18337,78286 18125,78413 17757,78643 17177,79071 16882,79108 16707,79192 16377,78982
+#: XXX laut osm asphaltiert und cycleway
+Mehrow - Blumberg: Qualität? Für Autos gesperrt?	? 24782,18704 24453,19691 24649,20953 24948,21780

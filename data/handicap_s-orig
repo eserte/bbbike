@@ -10,12 +10,12 @@
 # 
 ### Friedrichshain ###
 # 
-#: last_checked: 2012-10-29
+#: last_checked: 2012-11-01
 #: next_check: 2013-05-17
 #: XXX vmz-Eintrag: Am Oberbaum (Friedrichshain-Kreuzberg): Baustelle, Fahrtrichtung gesperrt (bis 05/2013) Richtung Kreuzberg zwischen Mühlenstr. und Oberbaumbrücke, 08.08.2012 10:00 Uhr bis 17.05.2013 17:00 Uhr¦INKO_113418¦http://asp.vmzberlin.com/VMZ_LSBB_MELDUNGEN_WEB/Meldungskarte.jsp?back=true&map=true&x=52.50189&y=13.4457&zoom=13&meldungId=INKO_113418
 Oberbaumbrücke: Umfahrung wegen Baustelle, etwas Zeitverlust	q3::inwork; 13332,10832 13305,10789
 # 
-#: last_checked: 2012-10-29 vvv
+#: last_checked: 2012-11-01 vvv
 #: next_check: 2012-11-05 vvv
 Modersohnstr.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 14181,11434 14134,11272
 Dirschauer Str.: Einbahnstraßenregelung wegen Umleitungsstrecke	q4::inwork; 13970,11366 14031,11569
@@ -107,15 +107,15 @@ Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q2::inwork 10601,12521
 #: next_check: 2012-11-30
 Alte Jakobstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10437,11352 10256,11160
 # 
-#: last_checked: 2012-10-16 vvv
-#: next_check: 2012-10-30 vvv
+#: last_checked: 2012-10-31 vvv
+#: next_check: 2012-11-30 vvv
 Alte Jakobstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10489,11405 10437,11352
 Neue Grünstr.: Einbahnstraßenregelung wegen Bauarbeiten in der Alten Jakobstr.	q3::inwork; 10389,11390 10446,11470
 #: next_check: ^^^
 #: last_checked: ^^^
 # 
-#: last_checked: 2012-10-07 vvv
-#: next_check: 2012-11-01 vvv
+#: last_checked: 2012-10-31 vvv
+#: next_check: 2012-12-01 vvv
 #: note: siehe auch Eintrag zur Friedrichsbrücke
 Burgstraße: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 10166,12777 10132,12941
 Anna-Louisa-Karsch-Str.: vor der Friedrichsbrücke auf den linken Gehweg fahren	q3::inwork; 10264,12826 10166,12777
@@ -126,8 +126,8 @@ Anna-Louisa-Karsch-Str.: vor der Friedrichsbrücke auf den linken Gehweg fahren	q
 #: next_check: 2012-12-15
 Am Zirkus: Baustelle, Einbahnstraße	q3::inwork; 9167,13046 9239,12923
 # 
-#: last_checked: 2012-09-26
-#: next_check: 2012-10-26
+#: last_checked: 2012-10-31
+#: next_check: 2012-11-26
 Am Kupfergraben: Baustelle, Einbahnstraße	q3::inwork; 9870,12657 9900,12643 9919,12613
 # 
 ### Köpenick ###
@@ -639,7 +639,7 @@ Am Flutgraben: Fußgänger	q1 13371,9974 13333,9929
 (Ernst-Heilmann-Steg): Fußgänger, zwei Bodenschwellen	q3 13270,10030 13306,10006 13371,9974
 Buschrosenplatz: enge Straße	q1 13002,5548 13054,5556 13075,5470
 #: XXX später vielleicht wieder "Fußgänger, q1"
-#: last_checked: 2012-09-15
+#: last_checked: 2012-10-31
 #: next_check: 2013-06-01
 #: XXX Bauarbeiten wahrscheinlich bis Oktober 2013
 #: by: http://www.abload.de/img/friedrichsbruecke05byk16.jpg
@@ -1411,6 +1411,7 @@ Mendelssohnstr.: Fußgänger, Bordstein	q3 11598,13598 11652,13564
 Rosenfelder Ring: Einbahnstraße, Ausweichen auf Gehweg	q3; 18140,11932 18139,11833
 #: note: gegen 19:15 abends ist hier reger Fußgängerverkehr (Sportler!)
 (Weg über das Sportgelände): zu manchen Zeiten reger Fußgängerverkehr	q1 13252,14179 13385,13992
+Schliemannstr. [über Helmholtzplatz]: Fußgänger	q2 11368,15301 11334,15248
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch

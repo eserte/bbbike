@@ -19947,7 +19947,7 @@ EOF
      },
      { from  => 1348076973, # 1314604800, # 2011-08-29 10:00
        until => 1380636000, # 2013-10-01 16:00, # 1347721200, # 2012-09-15 17:00
-       text  => 'Kastanienallee (Prenzlauer Berg): Bauarbeiten zwischen Oderberger Str. und Schwedter Str., Fahrbahn gesperrt, bis Herbst 2013',
+       text  => 'Kastanienallee (Prenzlauer Berg): Bauarbeiten zwischen Oderberger Str. und Schwedter Str., Fahrbahn ist manchmal gesperrt, bis Herbst 2013',
        type  => 'handicap',
        source_id => 'IM_019212',
        data  => <<EOF,
@@ -19955,6 +19955,7 @@ EOF
 #: note: nur die halbe Strecke ist gesperrt, deshalb q3
 #: note: am 2012-09-19 geprüft, Schranke, nur Straßenbahnen werden durchgelassen
 #: note: am 2012-10-18 geprüft, Schranke, nur Straßenbahnen werden durchgelassen
+#: note: am 2012-10-31 am südlichen Ende vorbeigefahren, möglicherweise war heute die Schranke nicht aktiv
 userdel	q3::inwork 10530,14452 10723,14772
 EOF
      },
@@ -20294,8 +20295,8 @@ EOF
 userdel	q4::inwork 19328,5304 19405,5284 19445,5271
 EOF
      },
-     { from  => undef, # 
-       until => undef, # XXX
+     { from  => 1351726607, # undef
+       until => 1351726612, # undef, # XXX
        text  => 'Oderberger Str./Schwedter Str.: Bauarbeiten, Fahrbahn ist gesperrt. Dauer der Sperrung ist unbekannt.',
        type  => 'handicap',
        data  => <<EOF,
@@ -20448,7 +20449,7 @@ EOF
        text  => 'Christburger Str.: Fahrbahn an der Prenzlauer Allee gesperrt, Ausweichen auf Gehweg',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2012-10-12
+#: last_checked: 2012-10-31
 userdel	q3::inwork 11912,14486 11642,14625
 EOF
      },
@@ -20582,7 +20583,7 @@ EOF
        text  => 'Senefelderstr.: Fahrbahn vor der Raumerstr. gesperrt, Ausweichen auf Gehweg erforderlich',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2012-09-29
+#: last_checked: 2012-10-31
 userdel	q4::inwork 11615,15114 11595,15058
 EOF
      },

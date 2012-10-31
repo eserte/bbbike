@@ -745,7 +745,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        {
          'until' => undef,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Oktober bis 19.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im November von 7.00 bis 18.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'from' => undef,
          'id' => 2068,
          'data' => '(Eingang Columbiadamm - Rundkurs auf dem Flughafen Tempelhof)	2::night 10691,8532 10644,8363 10598,8270 10575,8218
@@ -1053,18 +1053,7 @@ userdel	q4::inwork 425,8766 490,8716
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'INKO_078941',
-         'until' => 1351699200,
-         'text' => 'Blankenburger Straße: Richtung Dietzgenstraße zwischen Lindenberger Straße und Siegfriedstraße wegen Bauarbeiten gesperrt; Herthaplatz ist teilweise eine Einbahnstraße; 05.10.2011 11:00 Uhr bis 31.10.2012 17:00 Uhr',
-         'from' => 1317679200,
-         'id' => 2290,
-         'data' => 'userdel	q4::inwork; 11148,19838 11051,19789 10948,19737 10829,19676 10742,19632
-#: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/blankenburger-strasse2.html
-userdel	q4::inwork; 10614,19907 10599,19957
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1085,13 +1074,14 @@ userdel	q4::inwork; 10614,19907 10599,19957
        {
          'source_id' => 'IM_019212',
          'until' => 1380636000,
-         'text' => 'Kastanienallee (Prenzlauer Berg): Bauarbeiten zwischen Oderberger Str. und Schwedter Str., Fahrbahn gesperrt, bis Herbst 2013',
+         'text' => 'Kastanienallee (Prenzlauer Berg): Bauarbeiten zwischen Oderberger Str. und Schwedter Str., Fahrbahn ist manchmal gesperrt, bis Herbst 2013',
          'from' => 1348076973,
          'id' => 2308,
          'data' => '#: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/kastanienallee_pb.html
 #: note: nur die halbe Strecke ist gesperrt, deshalb q3
 #: note: am 2012-09-19 geprüft, Schranke, nur Straßenbahnen werden durchgelassen
 #: note: am 2012-10-18 geprüft, Schranke, nur Straßenbahnen werden durchgelassen
+#: note: am 2012-10-31 am südlichen Ende vorbeigefahren, möglicherweise war heute die Schranke nicht aktiv
 userdel	q3::inwork 10530,14452 10723,14772
 ',
          'type' => 'handicap'
@@ -1198,20 +1188,7 @@ userdel	q3::inwork 10893,14705 11101,14768
        undef,
        undef,
        undef,
-       {
-         'until' => undef,
-         'text' => 'Oderberger Str./Schwedter Str.: Bauarbeiten, Fahrbahn ist gesperrt. Dauer der Sperrung ist unbekannt.',
-         'from' => undef,
-         'id' => 2345,
-         'data' => '#: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/oderberger_strasse.html (allerdings sind die Bauzeiten schon jetzt weit überschritten)
-#: last_checked: 2012-10-18 (aber Asphaltierung in Gange)
-#: next_check: 2012-10-20
-userdel	q4::inwork 10401,14963 10379,14963
-#XXX del --- hier nicht mehr --- userdel	q4::inwork 10379,14963 10370,14946 10380,14911
-#XXX del --- hier nicht mehr --- userdel	q4::inwork 10379,14963 10366,14992
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1228,16 +1205,7 @@ userdel	q4::inwork 10401,14963 10379,14963
        },
        undef,
        undef,
-       {
-         'source_id' => 'IM_018927',
-         'until' => 1351699200,
-         'text' => 'Saalestr. (Neukölln): Fahrbahn in beiden Richtungen zwischen Karl-Marx-Str. und Wipperstr. bis Ende Oktober 2012 gesperrt',
-         'from' => 1340082000,
-         'id' => 2352,
-         'data' => 'userdel	q4::inwork 13161,7173 13058,7165
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'INKO_111688',
          'until' => 1354464000,
@@ -1260,7 +1228,7 @@ userdel	q4::inwork 10401,14963 10379,14963
          'text' => 'Christburger Str.: Fahrbahn an der Prenzlauer Allee gesperrt, Ausweichen auf Gehweg',
          'from' => undef,
          'id' => 2361,
-         'data' => '#: last_checked: 2012-10-12
+         'data' => '#: last_checked: 2012-10-31
 userdel	q3::inwork 11912,14486 11642,14625
 ',
          'type' => 'handicap'
@@ -1304,18 +1272,7 @@ userdel	2::inwork 8263,10349 8315,10347 8333,10167 8360,10133
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'INKO_114376',
-         'until' => 1351724340,
-         'text' => 'Adalbertstr.: Fahrbahn in Richtung Kottbusser Tor gesperrt',
-         'from' => 1342594800,
-         'id' => 2369,
-         'data' => '#: last_checked: 2012-10-29
-#: XXX see also Adalbertstr. (Kreuzberg): Leitungsarbeiten, Fahrtrichtung gesperrt (bis Mitte 10/12) Richtung Kottbusser Tor zwischen Oranienstr. und Kottbusser Tor, 19.07.2012 09:00 Uhr bis 12.10.2012 17:00 Uhr¦INKO_114376¦http://asp.vmzberlin.com/VMZ_LSBB_MELDUNGEN_WEB/Meldungskarte.jsp?back=true&map=true&x=52.50035&y=13.41862&zoom=13&meldungId=INKO_114376
-userdel	q4::inwork; 11389,10463 11393,10390
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        {
@@ -1329,23 +1286,14 @@ userdel	2::night 14838,11410 14776,11400
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_019090',
-         'until' => 1351699200,
-         'text' => 'Köthener Brücke (Tiergarten): Baustelle, Straße gesperrt bis Ende Oktober 2012',
-         'from' => 1345119120,
-         'id' => 2373,
-         'data' => 'userdel	q4::inwork 8443,10777 8430,10710
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => undef,
          'text' => 'Senefelderstr.: Fahrbahn vor der Raumerstr. gesperrt, Ausweichen auf Gehweg erforderlich',
          'from' => undef,
          'id' => 2375,
-         'data' => '#: last_checked: 2012-09-29
+         'data' => '#: last_checked: 2012-10-31
 userdel	q4::inwork 11615,15114 11595,15058
 ',
          'type' => 'handicap'
