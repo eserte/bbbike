@@ -1053,7 +1053,18 @@ userdel	q4::inwork 425,8766 490,8716
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'INKO_078941_COPY_1',
+         'until' => 1352476800,
+         'text' => 'Blankenburger Straße: Richtung Dietzgenstraße zwischen Lindenberger Straße und Siegfriedstraße wegen Bauarbeiten gesperrt; Herthaplatz ist teilweise eine Einbahnstraße; 05.10.2011 11:00 Uhr bis 09.11.2012 17:00 Uhr',
+         'from' => 1317679200,
+         'id' => 2290,
+         'data' => 'userdel	q4::inwork; 11148,19838 11051,19789 10948,19737 10829,19676 10742,19632
+#: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/blankenburger-strasse2.html
+userdel	q4::inwork; 10614,19907 10599,19957
+',
+         'type' => 'handicap'
+       },
        undef,
        undef,
        undef,
@@ -1234,7 +1245,16 @@ userdel	q3::inwork 11912,14486 11642,14625
          'type' => 'handicap'
        },
        undef,
-       undef,
+       {
+         'source_id' => 'IM_019006',
+         'until' => 1352217600,
+         'text' => 'Berliner Str. (Pankow): Baustelle, stadtauswärts zwischen Mühlenstr. und Elsa-Brändström-Str. bis Anfang November 2012 gesperrt',
+         'from' => 1342945020,
+         'id' => 2363,
+         'data' => 'userdel	q4::inwork; 10927,17022 10908,17142
+',
+         'type' => 'handicap'
+       },
        {
          'source_id' => 'INKO_113869',
          'until' => 1354291200,
@@ -1286,7 +1306,16 @@ userdel	2::night 14838,11410 14776,11400
 ',
          'type' => 'gesperrt'
        },
-       undef,
+       {
+         'source_id' => 'IM_019090',
+         'until' => 1355587200,
+         'text' => 'Köthener Brücke (Tiergarten): Baustelle, Straße gesperrt bis Mitte Dezember 2012',
+         'from' => 1345119120,
+         'id' => 2373,
+         'data' => 'userdel	q4::inwork 8443,10777 8430,10710
+',
+         'type' => 'handicap'
+       },
        undef,
        {
          'until' => undef,
@@ -1393,6 +1422,16 @@ userdel	q4::inwork; 10870,14689 10893,14705
 userdel	2::temp::igndisp 10805,12468 10803,12470
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20121030.1450.377336.html',
+         'until' => 1355785199,
+         'text' => 'Fahrbahnflächeninstandsetzung in der Winterstraße, voraussichtlich vom 1. November 2012 bis zum 17. Dezember 2012 wird die Fahrbahn wegen Bauarbeiten voll gesperrt ',
+         'from' => 1351638000,
+         'id' => 2397,
+         'data' => 'userdel	q4::inwork 8296,18154 8116,18115
+',
+         'type' => 'handicap'
        }
      
 );
