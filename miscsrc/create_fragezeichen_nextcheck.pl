@@ -114,7 +114,7 @@ sub handle_file {
 	     my $cat;
 
 	     if ($dir->{_nextcheck_date} && $dir->{_nextcheck_date}[0]) {
-		 if ($dir->{_nextcheck_date}[0] lt $today) {
+		 if ($dir->{_nextcheck_date}[0] le $today) {
 		     if ($dir->{_nextcheck_label} && $dir->{_nextcheck_label}[0]) {
 			 $add_name = "($dir->{_nextcheck_label}[0])";
 		     }
@@ -124,7 +124,7 @@ sub handle_file {
 			 if (@time_limits) {
 			     for my $time_limit (@time_limits) {
 				 my($date, $_cat) = @$time_limit;
-				 if ($dir->{_nextcheck_date}[0] lt $date) {
+				 if ($dir->{_nextcheck_date}[0] le $date) {
 				     $cat = $_cat;
 				     if ($r->[Strassen::CAT] =~ m{:(inwork|projected)}) {
 					 $cat .= "::$1";
