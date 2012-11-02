@@ -20435,13 +20435,13 @@ EOF
 userdel	q4::inwork 9358,12351 9369,12253
 EOF
      },
-     { from  => 1341727200, # 2012-07-08 08:00
-       until => 1348538400, # 2012-09-25 04:00
-       text  => 'Karlshorster Str. (Lichtenberg): Brückenarbeiten, Sperrung zwischen Nöldnerstr. und Türrschmidtstr., Fußgänger und Radfahrer können langsam passieren, 09.07.2012 bis 25.09.2012 04:00 Uhr',
+     { from  => 1351810800, # 2012-11-02 00:00
+       until => 1352084400, # 2012-11-05 04:00
+       text  => 'Karlshorster Str. (Lichtenberg): Brückenarbeiten, Sperrung der Fahrbahn, Fußgänger und Radfahrer können wahrscheinlich langsam passieren, 03.11.2012 bis 05.11.2012 04:00 Uhr',
        type  => 'handicap',
-       source_id => 'IM_019067',
+       source_id => 'INKO_115760',
        data  => <<EOF,
-userdel	q4::inwork 15272,10790 15279,10862
+userdel	q4::inwork 15261,10738 15272,10790 15279,10862
 EOF
      },
      { from  => undef, # 
@@ -20551,12 +20551,12 @@ userdel	q4::inwork; 9998,16547 9883,16557 9816,16565 9781,16569
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
-       text  => 'Weserstr. - Boxhagener Str.: Tor in einer Hausdurchfahrt, womöglich nachts versperrt',
+       until => undef, #
+       text  => 'Weserstr. - Boxhagener Str.: Tor in einer Hausdurchfahrt, nachts gesperrt',
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
-#: XXX überprüfen, ob das überhaupt stimmt
+#: note: geprüft am 2012-11-02 (gegen 22:30)
 userdel	2::night 14838,11410 14776,11400
 EOF
      },
@@ -20791,6 +20791,17 @@ EOF
        source_id => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20121030.1450.377336.html',
        data  => <<EOF,
 userdel	q4::inwork 8296,18154 8116,18115
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Richardstr.: Baustelle zwischen Böhmische Str. und Richardplatz, Fahrtrichtung gesperrt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: last_checked: 2012-11-02
+#: next_check: 2012-11-19
+#: XXX möglicherweise wird die Straße danach asphaltiert sein
+userdel	q4::inwork; 13339,7452 13303,7622
 EOF
      },
     );

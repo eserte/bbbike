@@ -45,8 +45,8 @@ Germanenstr. (oder nur das kleine St¸ck bis Waldsteg?)	?::projected 8406,19081 8
 # 
 #: by: Tagesspiegel vom 2009-04-12, soll 2009 realisiert werden
 #: corrected_by: MoPo 2009-08-01, soll 2010 realisiert werden
-#: last_checked: 2012-10-24
-#: next_check: 2012-12-01
+#: last_checked: 2012-11-02
+#: next_check: 2013-02-01
 #: XXX im Baumaﬂnahmenkatalog ist nur der ˆstliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaﬂnahmen 1.46 (Realisierung in 2011)
 Annenstr./Heinrich-Heine-Platz	?::projected 11349,11227 11249,11268 11091,11379 11052,11414 11039,11425 10915,11535 10815,11662
 # 
@@ -165,6 +165,8 @@ Ruschestr.: werden hier Radspuren markiert?	?::projected 15950,12886 15953,12753
 Weg 1 im KGA Hochspannung: wird hier eine Lˆsung f¸r die Treppe gefunden? Und die Qualit‰t des Wegs verbessert?	?::projected 18224,9795 18184,9626 18179,9611
 # 
 #: XXX Baumaﬂnahme 8.20 (Realisierung nach 2011)
+#: last_checked: 2012-11-02
+#: next_check: 2013-03-15
 Karl-Marx-Str.: werden hier Radspuren markiert?	?::projected 13095,6926 13122,6717 13126,6687 13141,6651 13195,6560 13236,6489
 # 
 #: XXX Baumaﬂnahme 9.16 (Realisierung nach 2011)
@@ -368,10 +370,6 @@ Buckower Damm: eventuell werden die Radwege hier asphaltiert?	?::projected; 1256
 Marienfelder Chaussee: eventuell werden die Radwege hier asphaltiert?	?::projected; 12207,1704 11865,1564 11765,1522 11475,1404 11198,1291 11155,1273 11002,1211 10827,1140 10759,1112 10662,1072 10425,971
 #: next_check ^^^
 #: XXX ^^^
-#: XXX Radwegesanierung in Neukˆlln, geplant f¸r 2012 vvv
-#: last_checked: 2012-09-26
-Karl-Marx-Str.: Radangebotsstreifen werden angelegt	?::inwork 13076,7044 13067,7113 13058,7165 13047,7234
-#: XXX ^^^
 #: by: ^^^
 # 
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20120201.1215.365686.html
@@ -386,6 +384,7 @@ Radweg Berlin-Leipzig, Abschnitt Monumentenstr. - Alfred-Lion-Steg: Realisierung
 # 
 #: by: http://www.stadtentwicklung.berlin.de/staedtebau/foerderprogramme/stadtumbau/Schoeneberger-Schleife-Suedl-Teilstueck-an.4681.0.html
 #: XXX hier kˆnnte tats‰chlich schon was existieren
+#: next_check: 2012-11-08
 Radweg Berlin-Leipzig, Abschnitt Alfred-Lion-Steg - S¸dkreuz: Realisierung bis 2012	?::inwork 7991,8297 7856,7914
 # 
 #: by: http://www.stadtumbau-berlin.de/Fotos.4730.0.html
@@ -562,8 +561,8 @@ Mangerstr. (Potsdam): Bauarbeiten bis November 2011, danach vielleicht etwas bes
 #: by: http://www.potsdam.de/cms/beitrag/10056300/757395/
 Mauerweg (Potsdam-Sacrow): evtl. existiert hier bereits ein geschotterter Radweg parallel zur Straﬂe	? -8799,3778 -9064,3667 -9156,3451 -9399,3297 -9530,3165 -9999,2615 -10105,2458
 #
-#: last_checked: 2012-10-19 vvv
-#: next_check: 2013-03-01 vvv
+#: last_checked: 2012-11-02 vvv
+#: next_check: 2013-06-01 vvv
 #: XXX siehe auch gesperrt-orig-Eintrag zur Oberwallstr.
 #: XXX Eintrag in Berlin.coords.data fehlt: PLZ=10117
 Prinzengasse: Genaue Lage? Qualit‰t?	?::inwork 9973,12292 9997,12295
@@ -603,8 +602,8 @@ Alt-Biesdorf/Alt-Kaulsdorf (s¸dliche Seite): Bau von asphaltierten Radwegen	?::i
 #: XXX siehe auch comments_route-orig, TR1
 Fasanenstr.: ÷ffnung der Einbahnstraﬂe f¸r Radfahrer	?::projected 5268,11274 5247,10992 5242,10918 5229,10716 5207,10399
 # 
-#: last_checked: 2012-06-09
-#: next_check: 2012-10-15
+#: last_checked: 2012-11-02
+#: next_check: 2013-03-15
 #: XXX Baumaﬂnahmen 8.12 (Realisierung in 2011)
 Braunschweiger Str.: Asphaltierung	?::projected 13047,7234 13150,7254 13322,7294 13369,7307 13487,7337
 # 
@@ -727,10 +726,6 @@ Wiesengrund Straﬂe 1: oder ist sie hier?	? 19953,8258 19943,8279
 #: XXX fehlt auch in Berlin.coords.data: Fuﬂweg 475|Rahnsdorf|12589
 #: XXX_osm fehlt auch bei osm
 Fuﬂweg 475: existiert hier tats‰chlich ein befahrbarer Weg? Ausgeschildert? Qualit‰t? Beleuchtet?	? 30794,4154 30757,3974
-# 
-#: XXX laut Wikipedia befindet sich die Museumsstr. hier, aber es gibt keine Straﬂenschilder... trotzdem sollte ich das ˆffentliche Straﬂenland hier aufnehmen
-#: XXX mildes Kopfsteinpflaster (Q2+), wahrscheinlich Fuﬂg‰ngerverkehr zu Museumsˆffnungszeiten, Sackgasse, keine Straﬂenschilder
-Museumsstr.: Straﬂenverlauf aufnehmen, aber ohne Straﬂennamen	? 10044,12708 10020,12760
 # 
 #: XXX falls ja -> Berlin.coords.data, plaetze-orig
 Wilhelmplatz: existieren Straﬂenschilder?	? 9000,11727 9075,11756
@@ -948,8 +943,8 @@ Bodenschwelle, Umfahrung kann zugeparkt sein	? 23349,2240
 #: XXX_prog ^^^
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/20re.pdf/file
-#: last_checked: 2012-09-19
-#: next_check: 2012-10-19 (evtl. auch amay fragen)
+#: last_checked: 2012-11-02
+#: next_check: 2012-12-19 (evtl. auch amay fragen)
 Bootsbauerstr.: wird es eine Verbindung zur Bahrfeldtstr. geben?	? 15033,10013 15024,9994
 # 
 #: by: osm

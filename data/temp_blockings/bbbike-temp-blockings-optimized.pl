@@ -1233,7 +1233,16 @@ userdel	q3::inwork 10893,14705 11101,14768
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'INKO_115760',
+         'until' => 1352084400,
+         'text' => 'Karlshorster Str. (Lichtenberg): Brückenarbeiten, Sperrung der Fahrbahn, Fußgänger und Radfahrer können wahrscheinlich langsam passieren, 03.11.2012 bis 05.11.2012 04:00 Uhr',
+         'from' => 1351810800,
+         'id' => 2360,
+         'data' => 'userdel	q4::inwork 15261,10738 15272,10790 15279,10862
+',
+         'type' => 'handicap'
+       },
        {
          'until' => undef,
          'text' => 'Christburger Str.: Fahrbahn an der Prenzlauer Allee gesperrt, Ausweichen auf Gehweg',
@@ -1298,10 +1307,10 @@ userdel	2::inwork 8263,10349 8315,10347 8333,10167 8360,10133
        {
          'until' => undef,
          'recurring' => 1,
-         'text' => 'Weserstr. - Boxhagener Str.: Tor in einer Hausdurchfahrt, womöglich nachts versperrt',
+         'text' => 'Weserstr. - Boxhagener Str.: Tor in einer Hausdurchfahrt, nachts gesperrt',
          'from' => undef,
          'id' => 2372,
-         'data' => '#: XXX überprüfen, ob das überhaupt stimmt
+         'data' => '#: note: geprüft am 2012-11-02 (gegen 22:30)
 userdel	2::night 14838,11410 14776,11400
 ',
          'type' => 'gesperrt'
@@ -1430,6 +1439,18 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
          'from' => 1351638000,
          'id' => 2397,
          'data' => 'userdel	q4::inwork 8296,18154 8116,18115
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => undef,
+         'text' => 'Richardstr.: Baustelle zwischen Böhmische Str. und Richardplatz, Fahrtrichtung gesperrt',
+         'from' => undef,
+         'id' => 2398,
+         'data' => '#: last_checked: 2012-11-02
+#: next_check: 2012-11-19
+#: XXX möglicherweise wird die Straße danach asphaltiert sein
+userdel	q4::inwork; 13339,7452 13303,7622
 ',
          'type' => 'handicap'
        }

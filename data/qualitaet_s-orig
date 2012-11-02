@@ -761,7 +761,8 @@ Bendastr.: asphaltiert	Q0 12702,6846 12715,6775 12722,6748 12726,6727 12743,6645
 Bendastr.: asphaltiert	Q0 12743,6645 12759,6563 12781,6470 12793,6407 12804,6377
 Ilsestr.: Asphalt	Q0 12664,7013 12645,7087 12632,7137 12613,7236 12601,7284 12585,7357 12561,7472
 Ilsenhof: kleinteiliges Kopfsteinpflaster	Q1 12601,7284 12465,7250
-Jonasstr.: Kopfsteinpflaster	Q2 12221,7271 12396,7312 12585,7357 12703,7370
+Jonasstr.: Kopfsteinpflaster	Q2 12221,7271 12396,7312 12585,7357
+Jonasstr.: Asphalt	Q0 12585,7357 12703,7370
 Jonasstr.: Kopfsteinpflaster	Q2 12925,7425 13015,7440
 Mittelbuschweg: Kopfsteinpflaster	Q2 13500,7018 13484,7140 13575,7200 13693,7228
 Mittelbuschweg: Beton	Q0 13797,7267 13693,7228
@@ -1287,6 +1288,7 @@ Teltowkanal: Parkweg, OK	Q1 4247,2652 4202,2622 4193,2616 4053,2300 3971,2106 36
 #: note: 2007 Bauarbeiten bis zur Krahmerstr.
 #: confirmed_by: srt
 Paul-Schwarz-Promenade: sehr eben, Rollsplit als Belag	Q0- 4591,3089 4261,2703 4258,2693 4247,2652
+#: note: nach Regenfällen etwas matschig, einige Pfützen
 (Weg am Friedhof): Parkweg	Q1 11608,7267 11687,7284 12180,7387
 Spreetalallee: uneben, leichter Schotter	Q2 657,12697 729,12972 715,13126
 Spreetalallee: abschüssig, schlechtes Kopfsteinpflaster	Q3 715,13126 667,13236
@@ -8260,6 +8262,8 @@ Fennstr.: Asphalt	Q0; 18268,5739 18245,5551
 Ehrenfelsstr.: Verbundsteinpflaster	Q0- 18846,8616 18778,8663
 (Weg 1 im KGA Hochspannung): unbefestigter Weg	Q2 18224,9795 18184,9626 18179,9611
 Schliemannstr. [über Helmholtzplatz]: Gehwegplatten	Q0- 11368,15301 11334,15248
+(Museumsinsel): mildes Kopfsteinpflaster	Q2+ 10017,12675 9972,12732 9987,12744 9952,12791
+(Bahrfeldtstr. - Fischzug): Verbundsteinpflaster	Q1 14921,10047 14969,10138 14993,10188
 ######################### User Contributions #################################
 #: by: anonymous vvv
 # 
@@ -21187,8 +21191,10 @@ Otto-Dix-Str.: Asphalt und Kopfsteinpflasterabschnitte	Q1+ 7187,13126 7370,13204
 Lesser-Ury-Weg: Asphalt und Kopfsteinpflasterabschnitte	Q1+ 7567,13143 7496,13272 7419,13416
 Claire-Waldoff-Promenade: Asphalt und Kopfsteinpflasterabschnitte	Q1+ 7440,13073 7370,13204 7295,13346
 Bahrfeldtstr.: Kopfsteinpflaster	Q2 14844,10088 14921,10047 14956,10028 14974,10018 15071,9967 15142,9931
+#: confirmed_by: srt vvv
 Fanny-Zobel-Str.: Asphalt	Q0 13928,10053 13971,10182 14053,10157 14012,10029
 Fanny-Zobel-Str.: Asphalt	Q0 13971,10182 13891,10208
+#: confirmed_by ^^^
 (Hoffmannstr. - Puschkinallee): Verbundsteine	Q1 14076,10011 13995,9834
 (Hoffmannstr. - Uferweg an den Treptowers): Verbundsteine	Q1 14076,10011 14118,10178
 Dossestr. (Friedrichshain): Kopfsteinpflaster	Q2 15043,11637 15140,11811 15202,11789

@@ -930,10 +930,12 @@ Hoeppnerstr.	N 9242,7286 9107,7297 9051,7340 8971,7359 8879,7378 8806,7382 8715,
 Gontermannstr.	N 8263,7611 8260,7803 8260,7911 8265,8092 8259,8265 8276,8295 8327,8302 8394,8313 8482,8364
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/44re.pdf/file?y=2012 vvv
 #: XXX existieren schon Straßenschilder auf beiden Seiten, oder wenn nicht, werden spätestens bei der Eröffnung des Steges welche aufgestellt? vvv
+#: next_check: 2012-11-08 vvv
 #: note: Arbeitstitel "Ost-West-Grünzug" vvv
 Hertha-Block-Promenade	NN 8101,8292 8202,8293 8265,8305 8276,8295
 Hertha-Block-Promenade	NN 7716,8356 7807,8354 7893,8327
 #: note ^^^
+#: next_check ^^^
 #: XXX ^^^
 #: by: ^^^
 Badener Ring	N 8482,8364 8531,8404 8570,8427 8660,8454 8715,8459 8756,8453 8851,8424
@@ -1166,7 +1168,9 @@ Am Kupfergraben	N 9533,12925 9618,12907 9661,12876 9754,12775 9815,12705 9870,12
 Am Weidendamm	N 9280,12883 9323,12895 9383,12915 9533,12925
 Hinter dem Gießhaus	N 9852,12409 9842,12506 9837,12552 9892,12596 9919,12613
 Hinter dem Zeughaus	NN 9842,12506 9956,12523
-Bodestr.	N 9919,12613 9948,12631 10054,12699 10086,12725
+Bodestr.	N 9919,12613 9948,12631 10017,12675 10054,12699 10086,12725
+#: note: laut Wikipedia befindet sich die "Museumsstr." hier, aber es gibt keine Straßenschilder...
+(Museumsinsel)	NN 10017,12675 9972,12732 9987,12744 9952,12791
 Friedrichsbrücke	NN 10086,12725 10166,12777
 Monbijouplatz	H 9932,13109 10097,12997
 Kleine Präsidentenstr.	H 10097,12997 10117,12966 10132,12941
@@ -14541,6 +14545,7 @@ Claire-Waldoff-Promenade	N 7440,13073 7370,13204 7295,13346
 #: note: teilweise als "Döberitzer Verbindung" bekannt, aber vor Ort existieren keine Straßenschilder
 (Lehrter Str. - Fritz-Schloß-Park)	NN 7630,13584 7451,13504 7306,13418
 Bahrfeldtstr.	N 14844,10088 14921,10047 14956,10028 14974,10018 15071,9967 15142,9931
+(Bahrfeldtstr. - Fischzug)	N 14921,10047 14969,10138 14993,10188
 Jollenseglerstr.	N 14921,10047 14879,9961
 Fanny-Zobel-Str.	N 13928,10053 13971,10182 14053,10157 14012,10029
 (Fanny-Zobel-Str., zur Eichenstr.)	N 13971,10182 13891,10208
