@@ -67,7 +67,7 @@ if ($ENV{BBBIKE_TEST_SKIP_PALMDOC}) {
     $skip{palmdoc} = 1;
 }
 
-my $ua = new LWP::UserAgent;
+my $ua = LWP::UserAgent->new(keep_alive => 1);
 $ua->agent("BBBike-Test/1.0");
 $ua->env_proxy;
 

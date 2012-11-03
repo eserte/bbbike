@@ -25,11 +25,12 @@ BEGIN {
 BEGIN {
     if (!eval q{
 	use Test::More;
+	use LWP::ConnCache;
 	use LWP::UserAgent;
 	use Image::Info;
 	1;
     }) {
-	print "1..0 # skip no Test::More, Image::Info and/or LWP::UserAgent module\n";
+	print "1..0 # skip no Test::More, Image::Info LWP::ConnCache and/or LWP::UserAgent module\n";
 	exit;
     }
 }
@@ -60,12 +61,14 @@ GetOptions("htmldir=s" => \$htmldir,
 	   }),
     or die "usage: $0 [-htmldir ... | -live]";
 
-my $ua = LWP::UserAgent->new;
+my $conn_cache = LWP::ConnCache->new(total_capacity => 10);
+
+my $ua = LWP::UserAgent->new(conn_cache => $conn_cache);
 $ua->parse_head(0); # too avoid confusion with Content-Type in http header and meta tags
 $ua->agent('BBBike-Test/1.0');
 $ua->env_proxy;
 
-my $ua316 = LWP::UserAgent->new;
+my $ua316 = LWP::UserAgent->new(conn_cache => $conn_cache);
 $ua316->parse_head(0);
 $ua316->agent('bbbike/3.16 (Http/4.01) BBBike-Test/1.0');
 $ua316->env_proxy;

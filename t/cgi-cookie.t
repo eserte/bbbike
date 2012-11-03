@@ -40,7 +40,7 @@ plan tests => 10;
 my $cookie_jar_file = File::Temp::tempnam(File::Spec->tmpdir, "bbbike_cookies_");
 END { unlink $cookie_jar_file if defined $cookie_jar_file }
 
-my $ua = LWP::UserAgent->new;
+my $ua = LWP::UserAgent->new(keep_alive => 1);
 $ua->env_proxy;
 set_user_agent($ua);
 my $cookie_jar = HTTP::Cookies->new(file => $cookie_jar_file,

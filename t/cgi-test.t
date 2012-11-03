@@ -52,7 +52,7 @@ if (!GetOptions(get_std_opts("cgidir"),
 using_bbbike_test_cgi;
 
 my $testcgi = "$cgidir/bbbike-test.cgi";
-my $ua = LWP::UserAgent->new;
+my $ua = LWP::UserAgent->new(keep_alive => 1);
 $ua->agent("BBBike-Test/1.0");
 $ua->env_proxy;
 

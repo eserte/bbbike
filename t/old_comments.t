@@ -168,7 +168,7 @@ if ($firstindex) {
 
 plan tests => scalar(@urls) * scalar(@tests) * 2;
 
-my $ua = new LWP::UserAgent;
+my $ua = LWP::UserAgent->new(keep_alive => 1);
 $ua->agent("BBBike-Test/1.0");
 
 for my $cgiurl (@urls) {

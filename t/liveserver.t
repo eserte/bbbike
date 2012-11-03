@@ -14,11 +14,12 @@ use lib ("$FindBin::RealBin/..",
 BEGIN {
     if (!eval q{
 	use Test::More;
+	use LWP::ConnCache;
 	use LWP::UserAgent;
 	use Compress::Zlib;
 	1;
     }) {
-	print "1..0 # skip no Test::More, Compress::Zlib and/or LWP::UserAgent modules\n";
+	print "1..0 # skip no Test::More, Compress::Zlib, LWP::ConnCache and/or LWP::UserAgent modules\n";
 	exit;
     }
 
@@ -52,11 +53,13 @@ plan tests => $tests_per_url * scalar(@urls) + 2;
 
 my $ua_string = 'BBBike-Test/1.0';
 
-my $ua = LWP::UserAgent->new;
+my $conn_cache = LWP::ConnCache->new(total_capacity => 10);
+
+my $ua = LWP::UserAgent->new(conn_cache => $conn_cache);
 $ua->agent($ua_string);
 $ua->env_proxy;
 
-my $uagzip = LWP::UserAgent->new;
+my $uagzip = LWP::UserAgent->new(conn_cache => $conn_cache);
 $uagzip->agent($ua_string);
 $uagzip->env_proxy;
 $uagzip->default_headers->push_header('Accept-Encoding' => 'gzip');

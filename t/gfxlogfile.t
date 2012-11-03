@@ -45,7 +45,7 @@ GetOptions("doit!" => \$doit,
 SKIP: {
 skip("Call this test script with -doit", 1) unless $doit;
 
-my $ua = LWP::UserAgent->new;
+my $ua = LWP::UserAgent->new(keep_alive => 1);
 $ua->agent("BBBike-Test/1.0 (gfxlogfile.t)");
 $ua->env_proxy;
 

@@ -108,7 +108,7 @@ for my $var (@var) {
 
 plan tests => 1 + 3 * (scalar(map { @$_ } values %url) + @compat_urls);
 
-my $ua = LWP::UserAgent->new;
+my $ua = LWP::UserAgent->new(keep_alive => 10);
 $ua->agent('BBBike-Test/1.0');
 $ua->env_proxy;
 

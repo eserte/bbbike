@@ -35,7 +35,7 @@ if (!$doit) {
 
 plan 'no_plan';
 
-my $ua = LWP::UserAgent->new;
+my $ua = LWP::UserAgent->new(keep_alive => 1);
 $ua->agent("BBBike-Test/1.0");
 push @{ $ua->requests_redirectable }, 'POST'; # violating RFC 2616
 

@@ -87,6 +87,10 @@ if (defined $mapserver_prog_url) {
 my $extra_tests = 7;
 plan tests => scalar(@prog) + scalar(@static) + $extra_tests;
 
+my $ua = LWP::UserAgent->new(keep_alive => 1);
+$ua->agent('BBBike-Test/1.0');
+$ua->env_proxy;
+
 delete $ENV{PERL5LIB}; # override Test::Harness setting
 for my $prog (@prog) {
     my $qs = "";
@@ -106,7 +110,7 @@ for my $static (@static) {
 
 # Check for Bot traps
 {
-    my $java_ua = LWP::UserAgent->new;
+    my $java_ua = LWP::UserAgent->new(keep_alive => 1);
     $java_ua->agent('Java/1.6.0_06 BBBike-Test/1.0');
     $java_ua->env_proxy;
     $java_ua->requests_redirectable([]);
@@ -127,9 +131,6 @@ sub check_url {
 	$prog = basename $url;
     }
     (my $safefile = $prog) =~ s/[^A-Za-z0-9._-]/_/g;
-    my $ua = LWP::UserAgent->new;
-    $ua->agent('BBBike-Test/1.0');
-    $ua->env_proxy;
     my $resp = $ua->head($url);
     ok($resp->is_success, $url) or diag $resp->content;
 
