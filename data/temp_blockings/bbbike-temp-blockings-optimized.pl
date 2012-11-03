@@ -1414,8 +1414,8 @@ userdel	q4::inwork; 10870,14689 10893,14705
        {
          'source_id' => 'http://www.berlin.de/ba-lichtenberg/presse/archiv/20121025.1210.377071.html',
          'until' => 1354316399,
-         'text' => 'Fahrbahnsanierung der Rathausstraße vom 29. Oktober bis Ende November 2012, Fahrbahn ist gesperrt',
-         'from' => 1351465200,
+         'text' => 'Fahrbahnsanierung der Rathausstraße vom 5. November 2012 bis Ende November 2012, Fahrbahn ist gesperrt',
+         'from' => 1352070000,
          'id' => 2395,
          'data' => 'userdel	q4::inwork 15537,12367 15576,12315 15628,12246 15651,12214
 ',

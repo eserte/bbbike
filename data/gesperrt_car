@@ -948,13 +948,13 @@ Dominicusstr. -> Feurigstr.: Überqueren verboten	3::igndisp 6687,8385 6807,8309 
 Schranke	3 9061,14050 8825,14401 8776,14364
 Schranke	3 8776,14364 8825,14401 9061,14050
 Plonzstr.	1 16227,12280 16252,12411
-Seddiner -> Hohenschönhausener Weg: Poller	3 18215,12132 18408,12105 18422,11837
-Seddiner -> Hohenschönhausener Weg: Poller	3 18559,12105 18408,12105 18422,11837
-Hohenschönhausener Weg -> Seddiner: Poller	3 18422,11837 18408,12105 18215,12132
-Hohenschönhausener Weg -> Seddiner: Poller	3 18422,11837 18408,12105 18559,12105
+Seddiner -> Hohenschönhausener Weg: Poller	3 18215,12123 18408,12105 18420,11864
+Seddiner -> Hohenschönhausener Weg: Poller	3 18559,12105 18408,12105 18420,11864
+Hohenschönhausener Weg -> Seddiner: Poller	3 18420,11864 18408,12105 18215,12123
+Hohenschönhausener Weg -> Seddiner: Poller	3 18420,11864 18408,12105 18559,12105
 Gluckweg	1 6039,3275 5853,3050
-Rosenfelder Ring	3 17977,12080 18093,12093 18165,12091
-Rosenfelder Ring	3 18165,12091 18093,12093 17977,12080
+Rosenfelder Ring	3 17978,12084 18093,12093 18165,12091
+Rosenfelder Ring	3 18165,12091 18093,12093 17978,12084
 Sophienstr.	1 9986,13412 10317,13248
 Gradestr./Moosrosenstr.	3nocross::ignrte 12773,5248 12727,5244 12582,5232
 Gradestr. -> Moosrosenstr.: Gradestr./Moosrosenstr.	3::igndisp 12773,5248 12727,5244 12726,5147
@@ -1138,11 +1138,11 @@ Hundekehlestr. -> Sulzaer Str.: Mittelstreifen	3::igndisp 2346,7684 2460,7658 24
 Berliner Str.	3nocross::ignrte 10849,17848 10858,17721 10878,17490
 Borkumstr. -> Berliner Str.: Berliner Str.	3::igndisp 10956,17735 10858,17721 10878,17490
 Berliner Str. -> Borkumstr.: Berliner Str.	3::igndisp 10849,17848 10858,17721 10956,17735
-Lietzenburger Str.	3nocross::ignrte 5063,10384 5207,10399 5329,10422
+Lietzenburger Str.	3nocross::ignrte 5047,10381 5207,10399 5329,10422
 Fasanenstr. -> Fasanenstr.: Lietzenburger Str.	3::igndisp 5229,10716 5207,10399 5198,10234
 Fasanenstr. -> Lietzenburger Str.: Lietzenburger Str.	3::igndisp 5229,10716 5207,10399 5329,10422
+Lietzenburger Str. -> Fasanenstr.: Lietzenburger Str.	3::igndisp 5047,10381 5207,10399 5229,10716
 Lietzenburger Str. -> Fasanenstr.: Lietzenburger Str.	3::igndisp 5329,10422 5207,10399 5198,10234
-Lietzenburger Str. -> Fasanenstr.: Lietzenburger Str.	3::igndisp 5063,10384 5207,10399 5229,10716
 Straßenbahntrasse	3nocross::ignrte 12228,14404 12188,14350 12177,14335 12077,14186
 Pasteurstr. -> Greifswalder Str.: Straßenbahntrasse	3::igndisp 12335,14246 12188,14350 12177,14335
 Greifswalder Str. -> Pasteurstr.: Straßenbahntrasse	3::igndisp 12228,14404 12188,14350 12335,14246

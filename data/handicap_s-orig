@@ -54,12 +54,10 @@ Friedrichstr.(Mitte): Fahrbahn wegen Bauarbeiten gesperrt, Ausweichen auf Gehweg
 #: next_check: 2013-12-31
 Charlottenstr.: Einbahnstraﬂenregelung	q4::inwork; 9475,12365 9489,12263 9496,12215
 # 
-#: last_checked: 2012-10-19
-#: next_check: 2012-11-01
+#: last_checked: 2012-11-03
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraﬂe Richtung S¸den	q4::inwork; 9475,12365 9462,12481 9454,12558
 # 
-#: last_checked: 2012-10-07
-#: next_check: 2012-11-01
+#: last_checked: 2012-11-03
 Universit‰tsstr.: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 9580,12581 9601,12380
 # 
 #: last_checked: 2012-10-12 (wosch)
@@ -139,12 +137,7 @@ Elcknerplatz, Borgmannstr.: Bauarbeiten, Einbahnstraﬂe	q4::inwork; 22478,6041 22
 # 
 ### Charlottenburg ###
 # 
-#: last_checked: 2012-09-22
-#: next_check: 2012-10-15
-#: by: IM_008926
-#: XXX wahrscheinlich bis Ende Oktober 2012
-#: XXX wahrscheinlich wird es teilweise oder sogar komplett Radspuren geben
-Kantstr.: Bauarbeiten am Zoofenster, Fahrbahn Richtung Westen gesperrt	q2::inwork; 5652,11004 5613,10963 5488,10978
+# REMOVED (scheint in beide Richtungen befahrbar zu sein) --- #: last_checked: 2012-09-22 --- #: next_check: 2012-10-15 --- #: by: IM_008926 --- #: XXX wahrscheinlich bis Ende Oktober 2012 --- #: XXX wahrscheinlich wird es teilweise oder sogar komplett Radspuren geben --- Kantstr.: Bauarbeiten am Zoofenster, Fahrbahn Richtung Westen gesperrt	q2::inwork; 5652,11004 5613,10963 5488,10978
 # 
 #: temporary ^^^
 ######################################################################
@@ -355,7 +348,7 @@ Rolandufer: Gehweg, viele Fuﬂg‰nger	q3 10837,12158 10660,12176 10591,12203 10583
 Spreeufer: Gehweg, viele Fuﬂg‰nger, im Sommer Straﬂencafe	q4 10583,12206 10492,12289 10424,12364 10422,12395
 Herthastr.: Gehweg, Bordsteine	q4 1935,9239 1932,9263
 Fuggerstr.: Gehweg	q2 6128,10319 6020,10351
-Pfalzburger Str.: Gehweg	q2 4905,10069 4909,10119
+Pfalzburger Str.: Gehweg	q2 4905,10069 4910,10135
 Ludwigkirchplatz: Gehweg	q2 4905,10069 4863,10077
 (Tilla-Durieux-Park): Fuﬂg‰nger	q2 8467,11125 8410,11143
 (Rad- und Wanderweg an Spree und Landwehrkanal): Fuﬂg‰nger, teilweise eng	q2 3358,12718 3396,12741

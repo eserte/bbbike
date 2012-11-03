@@ -1261,7 +1261,7 @@ Rummelsburger Str. -> Mentelinstr.: wegen Überführung nicht überquerbar	3::igndi
 Mittelstreifen nicht passierbar	3nocross::ignrte 4469,8037 4659,7982 4793,7992
 Detmolder Str. -> Aachener Str.: Mittelstreifen nicht passierbar	3::igndisp 4572,7936 4659,7982 4609,8013
 Aachener Str. -> Detmolder Str.: Mittelstreifen nicht passierbar	3::igndisp 4609,8013 4659,7982 4793,7992
-Straßenbahntrasse	3nocross::ignrte 18215,12132 18216,12239 18216,12262 18220,12450
+Straßenbahntrasse	3nocross::ignrte 18215,12123 18216,12239 18216,12262 18220,12450
 Rhinstr. -> Kolonie Friedrichsfelde Nord: Straßenbahntrasse	3::igndisp 18216,12239 18216,12262 18180,12262
 Kolonie Friedrichsfelde Nord -> Rhinstr.: Straßenbahntrasse	3::igndisp 18180,12262 18216,12262 18220,12450
 Straßenbahntrasse	3nocross::ignrte 18181,14110 18184,14078 18187,14039 18206,13817
@@ -1430,11 +1430,11 @@ Löwenberger Str. -> Alt-Friedrichsfelde: nicht passierbarer Mittelstreifen	3::ig
 Alt-Friedrichsfelde -> Löwenberger Str.: nicht passierbarer Mittelstreifen	3::igndisp 17240,11791 17440,11774 17477,11893
 Paul-Gesche-Str. -> Alt-Friedrichsfelde: nicht passierbarer Mittelstreifen	3::igndisp 17495,11724 17497,11769 17440,11774
 Alt-Friedrichsfelde -> Paul-Gesche-Str.: nicht passierbarer Mittelstreifen	3::igndisp 17746,11748 17497,11769 17495,11724
-Fußgängerbrücke -> Robert-Uhrig-Str.: nicht passierbarer Mittelstreifen	3::igndisp 17757,11761 17746,11748 17744,11703
-Fußgängerbrücke -> Alt-Friedrichsfelde: nicht passierbarer Mittelstreifen	3::igndisp 17757,11761 17746,11748 17966,11730
-Robert-Uhrig-Str. -> Fußgängerbrücke: nicht passierbarer Mittelstreifen	3::igndisp 17744,11703 17746,11748 17757,11761
 Robert-Uhrig-Str. -> Alt-Friedrichsfelde: nicht passierbarer Mittelstreifen	3::igndisp 17744,11703 17746,11748 17497,11769
-Alt-Friedrichsfelde -> Fußgängerbrücke: nicht passierbarer Mittelstreifen	3::igndisp 17497,11769 17746,11748 17757,11761
+Robert-Uhrig-Str. -> Fußgängerbrücke: nicht passierbarer Mittelstreifen	3::igndisp 17744,11703 17746,11748 17746,11767
+Alt-Friedrichsfelde -> Fußgängerbrücke: nicht passierbarer Mittelstreifen	3::igndisp 17497,11769 17746,11748 17746,11767
+Fußgängerbrücke -> Robert-Uhrig-Str.: nicht passierbarer Mittelstreifen	3::igndisp 17746,11767 17746,11748 17744,11703
+Fußgängerbrücke -> Alt-Friedrichsfelde: nicht passierbarer Mittelstreifen	3::igndisp 17746,11767 17746,11748 17966,11730
 Alt-Friedrichsfelde -> Robert-Uhrig-Str.: nicht passierbarer Mittelstreifen	3::igndisp 17966,11730 17746,11748 17744,11703
 nicht passierbarer Mittelstreifen	3nocross::ignrte 18626,11742 18853,11780 19004,11780 19389,11761 19661,11746 19726,11743 19907,11734 19985,11727 20114,11719 20161,11715 20375,11694
 Gensinger Str. -> Alt-Friedrichsfelde: nicht passierbarer Mittelstreifen	3::igndisp 19064,11805 18853,11780 19004,11780
@@ -2040,7 +2040,7 @@ tragen (ca. 20 Stufen)	0:30:-221 730,13286
 tragen (Treppe)	0:30:-105 3281,15792
 tragen (ca. 35 Stufen)	0:30:-235 3361,15784
 tragen (4 x 8 Stufen)	0:30:56 1761,3208
-tragen (ca. 30 Stufen)	0:30:53 17757,11761
+tragen (36 Stufen)	0:35:78 17759,11768
 tragen (15 Stufen)	0:30:-198 4710,23263
 tragen (ca. 30 Stufen)	0:30:-65 1179,13532
 tragen (7 Stufen)	0:20:-7 9762,16119
@@ -2053,7 +2053,7 @@ tragen (Treppe)	0:30:-117 4808,3404
 tragen (zwei Treppen, je ca. 10 Stufen)	0:30:-246 8822,16873
 tragen (Treppe)	0:30:11 14390,5443
 tragen (Treppe)	0:30:-171 14325,5409
-tragen (ca. 35 Stufen)	0:30:-108 18180,12262
+tragen (28 Stufen)	0:30:-108 18180,12262
 tragen (S-Bhf. Marzahn)	0:30:-195 19571,15417
 tragen (S-Bhf. Marzahn)	0:30:-155 19638,15431
 tragen (13 Stufen)	0:30:-180 7923,12876

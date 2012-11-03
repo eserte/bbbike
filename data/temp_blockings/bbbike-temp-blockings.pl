@@ -1948,7 +1948,7 @@ EOF
        text  => 'Rosenfelder Straße Richtung Frankfurter Allee zwischen Skandinavische Straße und Frankfurter Allee Baustelle, Straße gesperrt, Dauer: 09.05.2005, 09.00 Uhr bis 09.06.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4; 17363,11972 17306,11866 17240,11791
+userdel	q4; 17338,11969 17358,11943 17306,11866 17240,11791
 EOF
      },
      { from  => 1116280800, # 2005-05-17 00:00
@@ -20765,9 +20765,9 @@ EOF
 userdel	q4::inwork; 7315,10537 7117,10611 7115,10612 6972,10665
 EOF
      },
-     { from  => 1351465200, # 2012-10-29 00:00
+     { from  => 1352070000, # 2012-11-05 00:00
        until => 1354316399, # 2012-11-30 23:59
-       text  => 'Fahrbahnsanierung der Rathausstraße vom 29. Oktober bis Ende November 2012, Fahrbahn ist gesperrt',
+       text  => 'Fahrbahnsanierung der Rathausstraße vom 5. November 2012 bis Ende November 2012, Fahrbahn ist gesperrt',
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-lichtenberg/presse/archiv/20121025.1210.377071.html',
        data  => <<EOF,

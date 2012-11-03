@@ -155,9 +155,9 @@ Oderbruchstr./Hohenschönhausener Str.: werden hier Radspuren markiert?	?::projec
 Michelangelostr.: werden hier Radspuren markiert?	?::projected 13768,15195 13696,15237 13560,15318 13186,15518 13072,15590
 # 
 #: XXX Baumaßnahme 11.12 (Realisierung nach 2011)
-#: last_checked: 2012-10-20
+#: last_checked: 2012-11-03
 #: next_check: 2013-06-01
-Ruschestr.: werden hier Radspuren markiert?	?::projected 15950,12886 15953,12753 15952,12679 15947,12626 15926,12478 15904,12340
+Ruschestr.: werden hier Radspuren markiert?	?::projected 15950,12886 15953,12753 15952,12679 15947,12626 15928,12483 15904,12340
 # 
 #: XXX Baumaßnahme 11.45 (Realisierung nach 2011)
 #: last_checked: 2012-10-21
@@ -242,7 +242,7 @@ Wackerweg - Otisstr.: im Zuge der RR4 könnte es hier eine neue Verbindung geben	
 Verbindung im Zuge der RR9: Qualität?	? 26199,5643 26270,5829 26302,5932
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120207.1005.365838.html vvv
-#: last_checked: 2012-10-13
+#: last_checked: 2012-11-03
 #: next_check: 2012-12-01
 Weitlingstr.: für 2012 geplanter Zebrastreifen? Wo genau?	?::projected 16705,11526 16734,11416
 #: last_checked: 2012-10-20 (aber nur im südlichen Bereich)
@@ -454,12 +454,11 @@ Weidenanger: Qualität?	?::projected 21194,19054 21175,19076 21157,19087 21140,19
 #: next_check: 2011-11-30
 Mierendorffplatz: asphaltiert? Gibt es hier einen Zebrastreifen?	?::inwork 3542,13063 3559,13177
 # 
-#: last_checked: 2012-08-25 (keine Straßenschilder)
-#: next_check: 2012-11-01
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/17re.pdf/file?y=2012
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/26re.pdf/file?y=2012 (Hausnummern)
-#: XXX Verbundsteinpflaster, Sackgasse, fehlt in Berlin.coords.data
-Silberweidenweg: wird das hier der Silberweidenweg?	?::inwork 16374,12841 16377,12791
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/46re.pdf/file?y=2012
+#: XXX fehlt in Berlin.coords.data
+#: last_checked: 2012-11-03 (Bauarbeiten, noch keine Straßenführung zu erkennen)
+#: next_check: 2013-02-01
+Heidenelkenweg: Qualität? Genaue Lage?	?::inwork 16112,12639 16107,12701 16077,12696 16074,12639
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/32re.pdf/file
 #: XXX Privatstraße
@@ -486,7 +485,7 @@ Planstraße im Block 902: neue Straße wird gebaut, wo genau, wann? Wird der Straß
 # 
 # REMOVED (keine Anzeichen für weitere Straßen hier) --- #: XXX neue Planstraßen nördlich des Alexanderplatzes vvv --- #: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20110208.1420.330238.html --- #: by: http://www.stadtentwicklung.berlin.de/planen/staedtebau-projekte/alexanderplatz/de/planungen/bplan/bplan_b4ca/index.shtml --- #: by: http://ww.ak-berlin.de/publicity/ak/internet.nsf/0/002CE81791D5796BC125784D0033BC47/$FILE/Auslobung_Alexander%20Parkside_18%2001%202010.pdf --- #: XXX Straßen werden benannt nach: --- #: XXX - Oda Schottmüller --- #: XXX - Hilde Radusch
 # 
-#: last_checked: 2012-10-20
+#: last_checked: 2012-11-03
 #: next_check: 2012-12-31
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110627.1115.349371.html
 #: XXX zurzeit (2012-10) ist die Fahrbahn in nördlicher Richtung für Radfahrer *verboten*
@@ -597,7 +596,7 @@ Alt-Biesdorf/Alt-Kaulsdorf (südliche Seite): Bau von asphaltierten Radwegen	?::i
 #: by ^^^
 # 
 #: by: MoPo 2009-08-01, soll 2010 realisiert werden vvv
-#: last_checked: 2012-09-22
+#: last_checked: 2012-11-03
 #: next_check: 2013-04-15
 #: XXX siehe auch comments_route-orig, TR1
 Fasanenstr.: Öffnung der Einbahnstraße für Radfahrer	?::projected 5268,11274 5247,10992 5242,10918 5229,10716 5207,10399
@@ -699,6 +698,7 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+Kantstr.: gibt es Radspuren am Zoofenster?	? 5652,11004 5613,10963 5488,10978
 #: XXX laut osm gesperrt, aber vielleicht nur für Autos?
 zwischen Sportforum und Friedhof: kommt man hier als Radfahrer durch? Ausschilderung? Qualität? Nachts beleuchtet?	? 15829,15042 15169,15466
 Geißenweide - Blenheimstr.: gibt es für Radfahrer eine Verbindung? Qualität? Nachts beleuchtet?	? 21122,14713 21201,14994 21312,15268
