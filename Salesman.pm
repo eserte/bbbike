@@ -104,7 +104,10 @@ sub _calculate_distances {
 	$progress->Update(0.5*($i/scalar @points)) if $progress;
 	if ($tk) {
 	    $tk->update; # see below
-	    if ($main::escape) { die "User break" }
+	    if ($main::escape) {
+		$progress->Finish;
+		die "User break";
+	    }
 	}
 	for(my $j = 0; $j <= $#points; $j++) {
 	    next if $i == $j;
@@ -198,6 +201,7 @@ sub best_path_algorithm_permute {
 	    if ($tk) {
 		$tk->update;
 		if ($main::escape) {
+		    $progress->Finish;
 		    CORE::die("User break, using best path at moment");
 		}
 	    }
@@ -271,6 +275,7 @@ sub best_path_list_permutor {
 	    if ($tk) {
 		$tk->update;
 		if ($main::escape) {
+		    $progress->Finish;
 		    warn "User break, using best path at moment";
 		    last PERMUTE;
 		}
