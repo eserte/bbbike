@@ -20437,11 +20437,11 @@ EOF
      },
      { from  => 1351810800, # 2012-11-02 00:00
        until => 1352084400, # 2012-11-05 04:00
-       text  => 'Karlshorster Str. (Lichtenberg): Brückenarbeiten, Sperrung der Fahrbahn, Fußgänger und Radfahrer können wahrscheinlich langsam passieren, 03.11.2012 bis 05.11.2012 04:00 Uhr',
+       text  => 'Karlshorster Str. (Lichtenberg): Brückenarbeiten, Sperrung der kompletten Straße, Fußgänger und Radfahrer können nicht passieren, 03.11.2012 bis 05.11.2012 04:00 Uhr',
        type  => 'handicap',
        source_id => 'INKO_115760',
        data  => <<EOF,
-userdel	q4::inwork 15261,10738 15272,10790 15279,10862
+userdel	2::inwork 15261,10738 15272,10790 15279,10862
 EOF
      },
      { from  => undef, # 

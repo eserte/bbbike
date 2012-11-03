@@ -1236,10 +1236,10 @@ userdel	q3::inwork 10893,14705 11101,14768
        {
          'source_id' => 'INKO_115760',
          'until' => 1352084400,
-         'text' => 'Karlshorster Str. (Lichtenberg): Brückenarbeiten, Sperrung der Fahrbahn, Fußgänger und Radfahrer können wahrscheinlich langsam passieren, 03.11.2012 bis 05.11.2012 04:00 Uhr',
+         'text' => 'Karlshorster Str. (Lichtenberg): Brückenarbeiten, Sperrung der kompletten Straße, Fußgänger und Radfahrer können nicht passieren, 03.11.2012 bis 05.11.2012 04:00 Uhr',
          'from' => 1351810800,
          'id' => 2360,
-         'data' => 'userdel	q4::inwork 15261,10738 15272,10790 15279,10862
+         'data' => 'userdel	2::inwork 15261,10738 15272,10790 15279,10862
 ',
          'type' => 'handicap'
        },
