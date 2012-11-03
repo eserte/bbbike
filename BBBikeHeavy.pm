@@ -1519,6 +1519,7 @@ sub BBBikeHeavy::reload_all {
 	    plot($linetype,$type, FastUpdate => 1);
 	}
     }
+    refresh_temp_blockings();
     $progress->FinishGroup;
 
     # Need to delete comments_net?

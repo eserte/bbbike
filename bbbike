@@ -3333,10 +3333,7 @@ unless ($skip_features{"sehenswuerdigkeiten"}) {
 	$am->command
 	    (-label => M"Auffrischen der aktuellen Sperrungen",
 	     -command => sub {
-		 if (!$show_active_temp_blockings) {
-		     $show_active_temp_blockings = 1;
-		 }
-		 activate_temp_blockings($show_active_temp_blockings);
+		 gui_activate_temp_blockings();
 	     },
 	    );
 	if ($advanced) {
@@ -7693,10 +7690,11 @@ sub set_bindings {
 		   require BBBikeAdvanced;
 		   start_ptksh();
 	       });
-    $top->bind("<Control-R>" => sub {
-		   require BBBikeAdvanced;
-		   reload_new_modules();
-	       });
+    ## XXX Duplicate binding!
+    #$top->bind("<Control-R>" => sub {
+    #		   require BBBikeAdvanced;
+    #		   reload_new_modules();
+    #	       });
     bind_nomod($top, "<S>" => sub {
 		   set_map_mode(MM_SEARCH);
 	       });
@@ -10992,6 +10990,19 @@ sub activate_temp_blockings {
 	status_message($@, "warn"); # do not die, may be called before mainloop
     } else {
 	$show_active_temp_blockings = 1;
+    }
+}
+
+sub gui_activate_temp_blockings {
+    if (!$show_active_temp_blockings) {
+	$show_active_temp_blockings = 1;
+    }
+    activate_temp_blockings($show_active_temp_blockings);
+}
+
+sub refresh_temp_blockings {
+    if ($show_active_temp_blockings) {
+	activate_temp_blockings($show_active_temp_blockings);
     }
 }
 
