@@ -292,7 +292,7 @@ Uferstr.: geplante Straﬂe in Niederschˆneweide	?::projected 17639,6227 17843,608
 #: by: ^^^
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/11re.pdf/file?y=2012
-#: XXX fehlt auch bei Berlin.coords.data
+#: XXX fehlt auch bei Berlin.coords.data, PLZ=12629
 #: XXX siehe auch den anderen Abschnitt der Straﬂe
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/18re.pdf/file?y=2012
 Stephan-Born-Str.: genaue Lage? Privatstraﬂe?	?::projected 23307,15956 23313,16011 23447,15979 23442,15927
@@ -314,7 +314,7 @@ Humboldtinsel: Qualit‰t? Straﬂe bereits fertig gestellt?	?::projected 1612,20431
 Ganghofer Str.: wird zur Fuﬂg‰ngerzone am Platz der Stadt Hof	?::inwork 12753,8187 12792,8190
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/34re.pdf/file?y=2012 vvv
-#: XXX fehlen alle in Berlin.coords.data
+#: XXX fehlen alle in Berlin.coords.data, PLZ=12555
 Am Werksgarten: Qualit‰t? Genaue Lage der Straﬂe (GPS-Track?)	? 22754,4919 22872,5018
 An der Filmfabrik: Qualit‰t? Genaue Lage der Straﬂe (GPS-Track?)	? 22872,5018 22851,5321
 Am Filmlager: Qualit‰t? Genaue Lage der Straﬂe (GPS-Track?)	? 22802,5325 22808,5199
@@ -421,7 +421,7 @@ G¸nter-Riesebrodt-Weg: Qualit‰t nach den Bauarbeiten?	?::inwork 19406,7886 19282
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/16re.pdf/file?y=2012
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/26re.pdf/file?y=2012 (Hausnummern)
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/43re.pdf/file?y=2012
-#: XXX fehlen in Berlin.coords.data vvv
+#: XXX fehlen in Berlin.coords.data, PLZ=10318 vvv
 Alfred-Siggel-Weg: Qualit‰t nach den Bauarbeiten? Genaue Lage der Straﬂe?	?::inwork 19406,7886 19531,7794
 Fritz-Thurm-Weg: Qualit‰t nach den Bauarbeiten? Genaue Lage der Straﬂe?	?::inwork 19440,7694 19369,7738 19277,7543
 #: XXX ^^^
@@ -2554,7 +2554,7 @@ Striewitzweg (Teltow): Qualit‰t in den verschiedenen Abschnitten der Straﬂe? Ist
 Bau einer Radfahrer- und Fuﬂg‰ngerbr¸cke in Friedrichsthal	?::inwork 1860,42884 1907,42835
 Altdˆbern - Calau: Qualit‰t?	? 55259,-83091 55388,-83077 55768,-82862 54521,-79452 54572,-78865 54600,-77483 53827,-76082
 # 
-#: XXX fehlen alle in Berlin.coords.data vvv
+#: XXX fehlen alle in Berlin.coords.data, PLZ=12623 vvv
 #: last_checked: 2012-09-16 vvv
 #: next_check: 2014-03-01 vvv
 #: by: http://www.cdu-fraktion-tk.de/image/inhalte/file/Amtsblatt_Nr__21_vom_28__Mai_2010.pdf
@@ -2672,26 +2672,32 @@ Ritterspornweg (Potsdam-Bornim): Qualit‰t?	? -15978,1589 -16027,1618 -16072,1643
 Am Phloxgarten (Potsdam-Bornim): Qualit‰t?	? -15980,1690 -16027,1618
 Gillis-Grafstrˆm-Str. (Potsdam-Bornim): Qualit‰t?	? -16000,1727 -16036,1707 -16072,1643 -16097,1596
 # 
-#: XXX fehlt in Potsdam.coords.data vvv
 #: note: Privatstraﬂe vvv
 #: last_checked: 2012-05-12 (Bauarbeiten im Gange)
 #: next_check: 2012-08-01
 #: by: http://www.potsdam.de/cms/dokumente/10073161_1189396/13ef9d53/AblPdm1_11.pdf vvv
+#: XXX fehlt in Potsdam.coords.data, PLZ=14469
 Bienenwinkel (Potsdam): Qualit‰t? Genauer Verlauf der Straﬂe?	? -13345,1962 -13316,2003 -13279,1958
-#: last_checked: 2012-05-12 (Bauarbeiten erkennen, aber ist das ¸berhaupt die richtige Straﬂe?)
+#: last_checked: 2012-05-12 (erkennbare Bauarbeiten, aber ist das ¸berhaupt die richtige Straﬂe?)
 #: next_check: 2012-08-01
+#: XXX fehlt in Potsdam.coords.data, PLZ=14469
 Zum Exerzierhaus (Potsdam): Qualit‰t? Genauer Verlauf der Straﬂe?	? -13108,2010 -12981,2014
 #: by: ^^^
 #: note: ^^^
+# 
 Horst-Bienek-Str. (Potsdam): Qualit‰t? Genauer Verlauf der Straﬂe? Genauer Straﬂenname?	? -13696,572 -13668,669 -13642,750 -13615,844
 # 
 #: by: http://www.potsdam.de/cms/dokumente/10072610_974248/9aba6281/abl16_10.pdf
 #: by: http://www.potsdam.de/cms/dokumente/10081131_1189396/883b581e/abl05_11.pdf
+#: XXX fehlen alle in Potsdam.coords.data vvv
+#: XXX PLZ=14476
 Zum M¸hlenteich (Potsdam-Golm): Qualit‰t? Genauer Verlauf der Straﬂe?	? -18962,128 -19159,178
+#: XXX PLZ? vvv
 Schwalbenhof (Potsdam-Golm): Qualit‰t?	? -19279,-106 -19186,-132
 Koss‰tenweg (Potsdam-Golm): Qualit‰t?	? -19247,-20 -18785,-77
 Thomas-M¸ntzer-Str. (Potsdam-Golm): Qualit‰t?	? -18889,-591 -18882,-573 -18833,-562 -18822,-430 -18785,-247 -18785,-77
 Falknerstr. (Potsdam-Golm): Qualit‰t?	? -18889,-591 -18889,-641 -18939,-739
+#: XXX ^^^
 #: XXX ^^^
 # 
 #: XXX laut osm "paved"
@@ -2704,7 +2710,7 @@ Paarener M¸hlenweg (Potsdam-Uetz-Paaren): Qualit‰t?	? -21412,8481 -21200,8474 -2
 Kirschweg (Potsdam-Uetz-Paaren): Qualit‰t?	? -20914,8535 -20996,8861
 Laubenweg (Potsdam-Grube): Qualit‰t?	? -19987,2459 -19891,2447
 Schwarzer Weg (Potsdam-Grube): Qualit‰t?	? -19422,2220 -19433,2155 -19691,2134 -19924,2119 -20031,2094
-Schmidts Hof (Potsdam-Grube): Qualit‰t?	? -19691,2134 -19689,2191 -19927,2193 -19927,2216 -20049,2236
+Schmidtshof (Potsdam-Grube): Qualit‰t? Genauer Straﬂenname ("Schmidts Hof" oder "Schmidtshof")	? -19691,2134 -19689,2191 -19927,2193 -19927,2216 -20049,2236
 #: XXX_osm: osm meint "Am Alten Bahnwerk"
 #: by: http://www.potsdam.de/cms/dokumente/10060113_761024/4f1a62f4/abl20_09.pdf
 Altes Bahnwerk (Potsdam): Qualit‰t? Spielstraﬂe?	? -11942,-2201 -11934,-2077
@@ -2753,7 +2759,7 @@ Zum Teufelssee - Am Moosfenn (Potsdam): Qualit‰t der Gehwegverbindung?	? -10397,
 Am Pappeltor (Potsdam, Geltow): Qualit‰t?	? -18894,-5272 -18885,-5173 -18908,-4810 -18928,-4677 -18928,-4595 -18910,-4561 -18771,-4330 -18604,-3755
 An den Kopfweiden (Potsdam): Qualit‰t?	? -10859,-3249 -11015,-3091
 Hannes-Meyer-Str. (Potsdam): Qualit‰t?	? -14114,580 -13958,534
-#: XXX fehlt in Potsdam.coords.data
+#: XXX fehlt in Potsdam.coords.data, PLZ=14471, oldname: Im Wildpark (bis ca. 2009)
 Elisenweg (Potsdam): Qualit‰t?	? -17194,-4659 -17217,-4610 -17235,-4609 -17599,-4389 -17810,-4254 -17847,-4179
 # REMOVED (Anlage wurde genaue abgefahren) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/14re.pdf/file --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/40re.pdf/file?y=2011 --- Anlage Schildoweck: sieben neue Privatwege, wo genau, Qualit‰t?	? 8656,24889 8592,24914 8513,24909 8404,24744 8443,24529 8656,24889
 # REMOVED (Straﬂe wurde eingetragen) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/14re.pdf/file --- #: XXX fehlt in Berlin.coords.data: --- Am Meisenwinkel: Wo genau liegt die Straﬂe? Qualit‰t?	? 9108,20410 9141,20443
@@ -2834,12 +2840,14 @@ Kantstr. (Waldesruh): Qualit‰t des nˆrdlichen Abschnitts?	? 25119,8379 25295,862
 Kantstr. (Waldesruh): Straﬂenname im Berliner Abschnitt? Ortsschild?	? 24893,7964 24871,7931
 Hellersdorfer Weg (Eiche): Qualit‰t? Gibt es Radwege?	? 23159,16086 23175,16119 23263,16354 23295,16481 23059,16732 23015,16751
 Vogelsang - Hammelspring: gibt es hier mittlerweile einen Radweg?	? 7983,69794 7906,70007 8656,71489 10148,73146 11005,74052
+# 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/39re.pdf/file?y=2011
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/34re.pdf/file?y=2012
-#: XXX Privatstraﬂe, fehlt in Berlin.coords.data
+#: XXX Privatstraﬂe, fehlt in Berlin.coords.data, PLZ=13059
 #: last_checked: 2011-10-15 (noch keine Baut‰tigkeiten zu erkennen)
 #: next_check: 2012-04-01
 ‹ckeritzer Ring: Ist die Straﬂe schon fertig gestellt? Qualit‰t? Wo genau verl‰uft die Straﬂe?	? 17264,19242 17301,19300 17403,19327 17436,19272
+# 
 Groﬂ-Ziethener Chaussee: Gehweg f¸r Radfahrer zwischen Meiﬂner Weg und Ascherslebener Weg in beide Richtungen freigegeben?	? 15854,666 15757,610
 #: XXX laut osm Verbundsteinpflaster
 Schwarzer Weg (Groﬂziethen): Qualit‰t?	? 13215,-570 12804,-735
@@ -2909,6 +2917,7 @@ Haeberlinweg (Potsdam): (Planstraﬂe "S¸d")	? -15381,160 -15264,85
 Preuﬂenpark: Qualit‰t des Weges? Nachts beleuchtet?	? 4353,9430 4281,9393
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/17re.pdf/file?y=2012
 #: note: siehe auch: http://www.freilandlabor-kaniswall.de/kontakt.htm
+#: XXX fehlt in Berlin.coords.data, PLZ=12559
 Am Kaniswall: Privatstraﬂe, wo genau? Qualit‰t?	? 32823,-202 32970,320
 # REMOVED (lohnt nicht, ist nur ein KGA-Weg, auch aus Berlin.coords.data entfernt; sp‰ter: doch aufgenommen, aber ohne Namen) --- Grenzweg (Rosenthal): Qualit‰t? Nachts beleuchtet? Ist das tats‰chlich der Grenzweg?	? 11680,21107 11326,21315 11005,21659 10814,21722 10287,21824 10260,21799 10132,21809
 # 
@@ -3007,7 +3016,7 @@ An den Feldern: Ist die Straﬂe schon fertiggestellt? Qualit‰t der Fahrbahn? Ist 
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/32re.pdf/file vvv
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/04re.pdf/file?y=2012 vvv
-#: XXX Privatstraﬂen, fehlt in Berlin.coords.data vvv
+#: XXX Privatstraﬂen, fehlen in Berlin.coords.data, PLZ=12355 vvv
 #: last_checked: 2012-04-14 (noch in Bau) vvv
 #: next_check: 2012-12-15 vvv
 Seeadlerweg: Qualit‰t? Wo genau befindet sich die Straﬂe (mˆglichst mit GPS-Track)?	? 16487,-163 16513,-211 16568,-313 16589,-353
@@ -3061,7 +3070,7 @@ Waadter Zeile (Zufahrt am Supermarkt): existieren an dieser Straﬂe Straﬂenschild
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/26re.pdf/file?y=2012
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/34re.pdf/file?y=2012
-#: XXX fehlt in Berlin.coords.data (OT Karlshorst, PLZ?)
+#: XXX fehlt in Berlin.coords.data (OT Karlshorst, PLZ=10318)
 #: XXX Privatstraﬂe
 #: last_checked: 2012-10-13
 #: next_check: 2012-12-15
@@ -3163,3 +3172,5 @@ Neubr¸cker Str.: Ist die Neubr¸cker Str. eine Vorfahrtsstraﬂe?	? 1364,25882 1213
 Ahlimbsm¸hle - Templin: Qualit‰t?	? 24006,74469 23185,74265 22563,74247 21760,74489 21331,74676 20498,75268 19701,76270 19750,76354 19659,77157 19454,77284 19061,78220 18681,78317 18337,78286 18125,78413 17757,78643 17177,79071 16882,79108 16707,79192 16377,78982
 #: XXX laut osm asphaltiert und cycleway
 Mehrow - Blumberg: Qualit‰t? F¸r Autos gesperrt?	? 24782,18704 24453,19691 24649,20953 24948,21780
+#: XXX fehlt in Potsdam.coords.data, PLZ=14476
+Heinz-Sielmann-Ring (Potsdam-Groﬂ-Glienicke): Qualit‰t?	? -8632,8641 -8192,8567
