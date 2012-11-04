@@ -91,9 +91,10 @@ Hessische Str.: Sackgasse zur Invalidenstr.	q3::inwork 8775,13606 8690,13723
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9875,12257 9869,12297
 # 
 # REMOVED --- #: last_checked: 2012-07-13 --- #: next_check: 2012-09-01 --- Kronenstr./Jerusalemer Str.: Bauarbeiten, Fahrbahn vor der Kreuzung gesperrt	q3::inwork 9692,11732 9892,11752
-# REMOVED (kaum noch Behinderungen) --- #: last_checked: 2012-09-15 vvv --- #: next_check: 2012-09-30 vvv --- Helmerdingstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg kann benutzt werden	q3::inwork 14465,11195 14442,11101
 # REMOVED (eigentlich gut zu befahren) --- Revaler Str.: Bauarbeiten, Kreuzung gesperrt, Gehweg kann benutzt werden	q4::inwork 14513,11075 14442,11101
-# REMOVED --- #: next_check: ^^^ --- #: last_checked: ^^^
+# 
+#: last_checked: 2012-11-04
+Helmerdingstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 14465,11195 14442,11101
 # 
 #: last_checked: 2012-10-26
 #: next_check: 2012-12-15
@@ -763,11 +764,12 @@ Verdener Gasse: enge Straﬂe	q1 15878,14761 15946,14702
 Verdener Gasse: Bordsteine	q3 15946,14702 15972,14681
 #: note: auﬂerdem zu kurz f¸r eine hˆhere Geschwindigkeit
 (Waisenstr. - Littenstr.): Fuﬂg‰nger	q3 11049,12386 11084,12395
-Karl-Vesper-Str.: enge Straﬂe	q1 14184,13666 14205,13755 14263,13739
+Karl-Vesper-Str.: enge Straﬂe	q1 14184,13670 14205,13755 14263,13739
 #: XXX_prog: BS (wo genau?)
 (Karl-Vesper-Str. - Landsberger Allee): Fuﬂg‰nger, Bordsteine	q2 14205,13755 14218,13834
 Mahlerstr.: Fuﬂg‰ngerzone, Radfahrer frei	q2 13739,15643 13714,15709
 Fuﬂg‰ngerbr¸cke Storkower Str.: Fuﬂg‰nger	q2 14481,13143 14524,13271 14530,13269
+#: XXX_prog: BS an der Rennbahnstr.
 Lemgoer Str.: Fuﬂg‰nger, Bordsteine	q2 14341,17030 14331,17016 14328,17011
 (Uferweg am Kanal): gemeinsamer Rad- und Gehweg	q1 16425,6445 16275,6275 16263,6248 16098,6134 16065,6126 16049,6121
 Am Haselbusch: Radfahren verboten, ggfs. schieben	q1 17411,4979 17356,5011
@@ -1212,7 +1214,7 @@ Idealpassage: Fuﬂg‰nger, eng, Schrittgeschwindigkeit	q3 12434,8776 12578,8654
 #: XXX_prog BS an der Normannenstr.
 (Normannenstr. - Jobcenter Lichtenberg): Bordstein, Fuﬂg‰nger	q2 16056,12317 16068,12376
 (Normannenstr. - Jobcenter Lichtenberg): Fuﬂg‰nger	q1 16068,12376 16079,12432 16089,12522
-(Parkweg): Fuﬂg‰nger, Radfahren offiziell nicht erlaubt	q2 14695,12899 14414,12979
+(Parkweg): Fuﬂg‰nger, Radfahren offiziell nicht erlaubt	q2 14690,12900 14414,12979
 Zur Kreutzigerstr.: enger Hausdurchgang	q3 14291,12220 14285,12190
 #: XXX_prog BS Bordstein an der Fischerstr.
 (Zobtener Str. - Fischerstr.): Fuﬂg‰nger, Rampe, Bordstein	q2 16353,10207 16404,10286
@@ -1407,6 +1409,7 @@ Rosenfelder Ring: Einbahnstraﬂe, Ausweichen auf Gehweg	q3; 18140,11932 18139,118
 (Weg ¸ber das Sportgel‰nde): zu manchen Zeiten reger Fuﬂg‰ngerverkehr	q1 13252,14179 13385,13992
 Schliemannstr. [¸ber Helmholtzplatz]: Fuﬂg‰nger	q2 11368,15301 11334,15248
 (Museumsinsel): Fuﬂg‰nger, besonders zu Museumsˆffnungszeiten	q2 10017,12675 9972,12732 9987,12744 9952,12791
+Pasedagplatz: Straﬂenbahn	q2 14170,17249 14150,17255 14099,17195
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch
@@ -1485,7 +1488,7 @@ Gralsburgsteig: enge Straﬂe	q1 2164,25190 2206,25260 2038,25531 1950,25763 1921,
 #: by: Kathrin (jackelkathrin):
 Bahnhofstr. (Friedenau): enge Straﬂe	q1 6082,7066 6151,7078 6157,7117
 #: by: (x)qusor:
-(Michelangelostr. - Straﬂe 106): Kleingartenanlage	q2 13838,15113 14060,14986 14314,14841 14599,14679
+(Michelangelostr. - Straﬂe 106): Kleingartenanlage	q2 13823,15111 14060,14986 14314,14841 14599,14679
 #: by: Andrea (techlin):
 #: corrected_by: srt/policy (q1 -> q0-)
 Hugo-Heimann-Str.: enge, leicht kurvige Straﬂe	q0- 14120,1991 14165,2106 14229,2177 14444,2090 14587,2032
@@ -1505,7 +1508,7 @@ Lothar-Bucher-Str.: enge Straﬂe	q1 5598,6136 5664,6082 5748,6051 5845,6049 6008,
 #: by: Thomas Heuving
 (Uferweg): kurvenreich, ausreichende Breite	q1 -431,17169 -389,17168 -305,17249 -304,17280 -252,17325 -155,17409 61,17495 117,17549 144,17638 209,17735 225,17815 234,17930 320,18117 372,18411 413,18500 465,18533 534,18553 616,18640 710,18727 714,18758 897,18943 1002,19014 1122,19036 1165,19009 1200,18969 1404,18974 1426,18973 1447,18933
 #: by: anonymous:
-Gustav-Zahnke-Str.: enge Straﬂe	q1 14428,13596 14408,13513 14331,13537
+Gustav-Zahnke-Str.: enge Straﬂe	q1 14430,13603 14408,13513 14331,13537
 #: by: Stefan Schirra:
 Propst-S¸ﬂmilch-Weg: Fuﬂg‰ngerzone	q2 856,3188 709,3229 649,3221
 #: by: Gerlind Rudolph:
@@ -1550,8 +1553,8 @@ Hˆltermannsteig: gemeinsamer Rad- und Gehweg	q1 13999,2727 13951,2801 13948,2910
 # REMOVED --- #: by: Regine Bast: --- Eiswaldtstr.: schmale Straﬂe	q1 6722,2444 6834,2449 6965,2418 7051,2366 7172,2343 7282,2386
 # 
 #: by: Stefan Driesner: vvv
-Georg-Lehnig-Str.: enge Straﬂe	q1 14532,13563 14509,13481 14428,13507
-Erich-Kuttner-Str.: enge Straﬂe	q1 14584,13547 14532,13563 14428,13596 14370,13615 14323,13627 14217,13657 14184,13666 14117,13685 14088,13627
+Georg-Lehnig-Str.: enge Straﬂe	q1 14535,13575 14509,13481 14428,13507
+Erich-Kuttner-Str.: enge Straﬂe	q1 14590,13560 14535,13575 14430,13603 14371,13619 14324,13632 14218,13661 14184,13670 14117,13685 14088,13627
 #: by: ^^^
 # 
 #: by: Patryk (bigoudi): vvv
@@ -2088,6 +2091,7 @@ Biesentaler Str.: Bodenschwellen	q1 9024,16855 9245,16758
 #: corrected_by: srt (q1 -> q0-)
 Chamissostr. (Franzˆsisch Buchholz): enge Straﬂe	q0- 12513,21857 12433,21880 12332,21910 12216,21945 12063,21991
 #: by: misersky:
+#: confirmed_by: srt (insbesondere, weil es recht kurvig ist)
 Tassostr.: enge Straﬂe	q1 13630,15956 13621,15990 13625,16054 13642,16118 13659,16151 13645,16192 13679,16286
 #: by: Nicole Weber:
 An der Wildbahn: viele parkende Autos in enger Straﬂe	q1 -1581,22553 -1447,22522 -1333,22495 -1267,22480 -1221,22468 -996,22416 -926,22399 -725,22355 -489,22295 -313,22233
@@ -2283,7 +2287,7 @@ Im Eichengrund: Fuﬂg‰nger, Bordstein	q2 919,15365 1009,15400
 #: by: ^^^
 # 
 #: by: anonymous
-Hedwigstr. (Alt-Hohenschˆnhausen): enge Straﬂe	q1 16616,16046 16505,16096 16515,16207
+Hedwigstr. (Alt-Hohenschˆnhausen): enge Straﬂe	q1 16616,16046 16505,16096 16522,16206
 # REMOVED --- #: by: anonymous --- Hopfenweg: enge Straﬂe	q1 15745,2294 15745,2320 15593,2495 15588,2520 15590,2724
 #: by: Kai (regionalorenz): vvv
 #: corrected_by: srt/policy (q2 -> q1)
@@ -2543,13 +2547,13 @@ Unionstr.: breiter Fuﬂweg, einige Fuﬂg‰nger	q2 5708,14077 5782,14067
 Rhenser Weg: Fuﬂweg	q1 19083,9062 19133,9087
 #: by: Heike Steinhardt:
 #: corrected_by: srt/policy (q2 -> q1)
-Altenescher Weg: enge Straﬂe	q1 14051,14822 13856,14944 13749,15013
+Altenescher Weg: enge Straﬂe	q1 14051,14822 13856,14944 13744,15018
 #: by: Alexandra (kaffeeschluerfer):
 #: corrected_by: srt/policy (q4 -> q1)
 (Rudower Str. - Girlitzweg): gemeinsamer Fuﬂ- und Radweg	q1 15176,3136 15273,3269
 #: by: Sybille Koppermann
 #: note: Olaf (zioerjen) meint nur q2, ohne weitere Angaben
-Bernhard-B‰stlein-Str.: enge Straﬂe	q1 15348,13996 15487,14047 15595,14041 15593,13768 15661,13764 15653,13542
+Bernhard-B‰stlein-Str.: enge Straﬂe	q1 15354,13998 15487,14047 15595,14041 15593,13768 15661,13764 15653,13542
 #: by: anonymous vvv
 Kulmseestr.: einige Fuﬂg‰nger	q1 20001,12368 20062,12353 20156,12311
 Kulmseestr.: einige Fuﬂg‰nger	q1 20252,12262 20303,12230

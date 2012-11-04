@@ -660,7 +660,7 @@ Clausewitzstr.	1 3971,10381 4007,10559
 #: by: andk
 Bayerische Str.	1 4296,10004 4349,10247
 Ferdinand-Schultze-Str - Landsberger Allee	3 17794,14640 17848,14523 18057,14549
-Michelangelostr./Kniprodestr.	3 13875,15142 13830,15138 13838,15113
+Michelangelostr./Kniprodestr.	3 13875,15142 13816,15137 13823,15111
 Kurmärkische Str.	3 7413,10244 7429,10366 7337,10396
 Kurmärkische Str.	3 7337,10396 7429,10366 7444,10479
 Hentigstr.	1 18518,8778 18548,8942
@@ -865,3 +865,8 @@ Halenseestr.	1 1928,10728 2028,10612 2112,10488 2076,10357 2069,10330 2094,10286
 Küstriner Str.: Barrieren	3 16123,15025 16211,15105 *
 Frankfurter Allee	3nocross 17151,11801 17240,11791 17440,11774
 Ehrensfelsstr.: Durchfahrt verboten	3 * 18778,8663 *
+Buggenhagenstr.	1 14425,13780 14371,13619
+Tassostr.	1 13679,16286 13645,16192 13659,16151 13642,16118 13625,16054 13621,15990 13630,15956
+Pasedagplatz: nur für Straßenbahnen	2 14170,17249 14150,17255 14099,17195
+#: note: für Fußgänger existiert eine Überquerungsmöglichkeit einige Meter weiter östlich
+Suermondtstr: Straßenbahntrasse	3nocross 16416,16236 16522,16206 16660,16165

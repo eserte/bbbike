@@ -310,7 +310,6 @@ Reiherbeize	1 444,4498 593,4262
 Mendelssohnstr.	1 11598,13598 11550,13642 11545,13690
 Am Bäkequell	1 4593,5235 4656,5101
 Sella-Hasse-Str.	1 20948,16612 20791,16679 20861,16819
-Buggenhagenstr.	1 14425,13780 14370,13615
 Schollenhof	1 3238,21448 3155,21572 3236,21601 3280,21477
 Siegfried-Aufhäuser-Platz	1 13952,7497 13941,7522 13953,7548 13980,7548
 Saltykowstr.	1 12726,7887 12865,7923
@@ -443,10 +442,6 @@ Wustermarker Str.	1 -5097,14599 -5111,14486 -5004,14454 -4981,14442 -4750,14393
 Gartenstr. (Köpenick)	1 22419,4457 22382,4361 22362,4331 22302,4255 22279,4220
 Spitzerstr.	1 22319,4197 22358,4282 22425,4370 22451,4441
 Zitadellenweg/BMW-Betriebswerk	2 -1993,14594 -1768,14605 -1616,14527
-#: by: misersky:
-#: XXX wird die Einbahnstraße für Radfahrer wegen der Radroute geöffnet?
-#: XXX Baumaßnahme 3.34 (Realisierung bis 2010)
-Tassostr.	1 13679,16286 13645,16192 13659,16151 13642,16118 13625,16054 13621,15990 13630,15956
 #: by: rr riva w.m.s:
 Heimat	1 1032,1325 994,1485 968,1479 941,1603
 #: by: MIchael Wedel:
@@ -668,7 +663,7 @@ Enckevortweg	1 18530,10887 18570,10768 18587,10716 18596,10675
 Schulze-Boysen-Str./Frankfurter Allee	1 15597,11957 15592,11881 15738,11851
 Rübezahlstr.	1 15136,7106 15222,7162
 Wegastr	1 15222,7162 15175,7221
-Möllendorffstr.	1 15515,13134 15566,12953 15563,12860 15546,12690
+Möllendorffstr.	1 15515,13134 15531,13022 15561,12950 15563,12860 15546,12690
 Möllendorffstr.	1 15546,12690 15516,12838 15515,13134
 Joachimsthaler Str. (Hohenschönhausen)	1 17117,14885 17129,14804 17063,14797 16943,14785
 Otto-Brahm-Str.	1 14440,15682 14400,15787 14365,15778 14282,15746 14317,15642
@@ -991,6 +986,9 @@ Alfred-Kowalke-Str.	1 18027,11244 18059,11256 18179,11278 18229,11256
 Alfred-Kowalke-Str.	1 18229,11256 18202,11253 18061,11240 18027,11244
 Wittenbergplatz	1 6171,10657 6228,10646 6292,10627 6353,10583
 Wittenbergplatz	1 6353,10583 6268,10588 6216,10614 6171,10657
+Amalienstr.	1s:q3 13789,16775 13722,16843 13653,16907 13589,16965
+Pasedagplatz	1 14099,17195 14150,17255 14170,17249
+Pasedagplatz	1s:q3 14174,17226 14144,17165
 ######################################################################
 #
 # Potsdam
@@ -1216,7 +1214,7 @@ Hauptstr.: Straßenbahntrasse	3nocross 15639,10469 15404,10633 15379,10651
 Hauptstr.: Straßenbahntrasse	3nocross 16004,10204 16114,10123 16138,10105
 #: by: Heike Steinhardt ("eher nicht empfehlenswert")
 #: confirmed_by: srt
-Kniprodestr.: Grünstreifen	3nocross 13654,14905 13749,15013 13838,15113
+Kniprodestr.: Grünstreifen	3nocross 13644,14915 13744,15018 13823,15111
 An der Wuhlheide: Mittelstreifen	3nocross 19578,6165 19405,6276 19276,6359
 Heerstr.: nicht überquerbar	3nocross 456,11233 585,11256 704,11273
 #: by: Sabine (schaeffler)
@@ -1263,7 +1261,6 @@ Siemensdamm: Mittelstreifen	3nocross 1133,14387 1057,14389 999,14390 937,14391 8
 Siemensdamm: Mittelstreifen	3nocross 1133,14387 1182,14384 1246,14384 1305,14384 1360,14375
 Siemensdamm: Mittelstreifen	3nocross 1360,14375 1420,14369 1479,14343
 Suermondtstr: Straßenbahntrasse	3nocross 16095,16331 16260,16282 16416,16236
-Suermondtstr: Straßenbahntrasse	3nocross 16416,16236 16515,16207 16660,16165
 #: by: Vicky (senchi):
 #: confirmed_by: srt
 Berliner Allee: Straßenbahntrasse	3nocross 14499,16341 14556,16391 14610,16522
@@ -1520,16 +1517,21 @@ Invalidenstr.: Mittelstreifen	3nocross 7814,13284 7840,13296 7880,13315
 Alt-Moabit: Mittelstreifen, hohe Bordsteine und parkende Autos	3nocross 7821,12934 7776,12943 7595,12980
 Köpenicker Str.: Mittelstreifen	3nocross 21137,11294 21134,11331 21124,11462
 Märkische Allee/Alt-Friedrichsfelde	3 20018,11698 20026,11663 20064,11687
+Hansastr.: Mittelstreifen	3nocross 15662,16656 15735,16698 15776,16721
 abgeschlossenes Tor	3 * 8237,20098 *
 abgeschlossenes Tor	3 * 8291,20112 *
 abgeschlossenes Tor	3 * 3796,16202 *
 abgeschlossenes Tor	3 * 5083,22149 *
+#: note: theoretisch kommt man als Radfahrer weiter südwestlich zur Konrad-Wolf-Str., allerdings ist dort auch ein Tor, welches vielleicht nachts abgeschlossen ist
+abgeschlossenes Tor	3 * 15835,15092 *
 #
 ####################################################################
 #
 # Stellen, an denen getragen werden muß:
 # die Zahl hinter dem ":" entspricht ungefähr den verlorenen Sekunden
 # 
+tragen (7 weite Stufen)	0:30 15759,16671
+tragen (6 Stufen)	0:12 15915,16526
 tragen (8 Stufen)	0:12 18184,9626
 tragen (3 Stufen, kann auf einer inoffiziellen Rampe umfahren werden)	0:10 8029,10106
 #: by: Stefan Klinkusch:
@@ -2290,10 +2292,10 @@ Uferweg am Tegeler Hafen: Weg wegen Bauarbeiten gesperrt	2:inwork 1861,20467 182
 #: note: abgeschlossener Zaun
 Helga-Hahnemann-Str.: gesperrt	2:inwork 9415,13315 9408,13282
 #
-#: last_checked: 2012-08-16
+#: last_checked: 2012-11-04
 #: next_check: 2012-12-01
 #: XXX mit den Bauarbeiten "An den Eldenaer Höfen" koordinieren
-Am Langen Jammer: westlicher Abschnitt wegen Bauarbeiten gesperrt	2:inwork 14405,12953 14686,12873
+Am Langen Jammer: westlicher Abschnitt wegen Bauarbeiten gesperrt	2:inwork 14405,12953 14682,12874
 #
 # REMOVED --- #: last_checked: 2011-04-30 --- Tiergartenufer: Bauarbeiten, gesperrt	2:inwork 5711,11841 5543,11837 5478,11860
 # REMOVED --- #: last_checked: 2011-04-08 --- Bebelplatz: Bauarbeiten, gesperrt	2:inwork 9679,12388 9702,12307 9708,12235

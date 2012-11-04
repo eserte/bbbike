@@ -136,7 +136,10 @@ Quickborner Str.: werden hier Radspuren markiert?	?::projected 7991,21531 7966,2
 Schönerlinder Str.: entstehen hier bessere Radwege oder Radspuren?	?::projected 11929,23946 11981,24260 12177,24684 12261,24851 12405,25137 12632,25569 12698,25695 12944,26163 13192,26628 13256,26863 13348,27204
 #
 #: XXX Baumaßnahme 3.35 (Realisierung in 2011)
-Pasedagplatz: wird hier eine Ampel entstehen?	?::projected 14165,17224 14144,17165
+#: last_checked: 2012-11-04
+#: next_check: 2013-03-15
+Pasedagplatz: wird hier eine Ampel entstehen? Oder die Einbahnstraßenregelung für Radfahrer aufgehoben?	?::projected 14174,17226 14144,17165
+# 
 #: XXX Baumaßnahme 10.11 (Realisierung nach 2011)
 Wuhletalstr.: werden hier die Radspuren fortgeführt?	?::projected 20895,17594 20769,17650 20728,17670 20485,17784
 #: XXX Baumaßnahme 10.20 (Realisierung nach 2011)
@@ -145,14 +148,14 @@ Marzahner Promenade: wird hier eine Anbindung für Radfahrer entstehen?	?::projec
 Hänflingsteig: wird dieser Abschnitt asphaltiert?	?::projected 20093,14591 20147,14570
 # 
 #: XXX Baumaßnahme 11.34 (Realisierung nach 2011)
-#: last_checked: 2012-10-20 (nordöstliches Ende)
+#: last_checked: 2012-11-04
 #: next_check: 2013-06-01
 Oderbruchstr./Hohenschönhausener Str.: werden hier Radspuren markiert?	?::projected 15058,14575 14754,14406 14721,14379 14667,14336 14650,14322 14358,14155 14298,14015 14261,13932 14218,13834
 # 
 #: XXX Baumaßnahme 3.15 (Realisierung nach 2011)
-#: last_checked: 2012-06-05
+#: last_checked: 2012-11-04
 #: next_check: 2013-03-01
-Michelangelostr.: werden hier Radspuren markiert?	?::projected 13768,15195 13696,15237 13560,15318 13186,15518 13072,15590
+Michelangelostr.: werden hier Radspuren markiert?	?::projected 13760,15187 13692,15231 13560,15318 13186,15518 13072,15590
 # 
 #: XXX Baumaßnahme 11.12 (Realisierung nach 2011)
 #: last_checked: 2012-11-03
@@ -307,7 +310,7 @@ Humboldtinsel: Qualität? Straße bereits fertig gestellt?	?::projected 1612,20431
 #: by: http://www.aktion-kms.de/files/pl_d_std_hof_flyer_5.pdf
 #: XXX die Straße wird irgendwann für den Autoverkehr gesperrt werden
 #: last_checked: 2012-09-21
-#: next_check: 2012-11-15
+#: next_check: 2012-11-11
 Ganghofer Str.: wird zur Fußgängerzone am Platz der Stadt Hof	?::inwork 12753,8187 12792,8190
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/34re.pdf/file?y=2012 vvv
@@ -471,7 +474,7 @@ Edith-Stein-Str.: Qualität nach den Bauarbeiten? Genaue Lage der Straße?	?::inwo
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/30re.pdf/file
 #: XXX siehe auch Eintrag für "Am Langen Jammer" in gesperrt-orig
 #: last_checked: 2012-10-26 vvv
-#: next_check: 2012-11-20 vvv
+#: next_check: 2012-12-01 vvv
 An den Eldenaer Höfen: wo genau wird die Straße liegen? Qualität?	?::inwork 14376,12849 14449,12833 14594,12800
 An den Eldenaer Höfen: wo genau wird die Straße liegen? Qualität?	?::inwork 14449,12833 14471,12918
 #: next_check ^^^
@@ -610,8 +613,8 @@ Braunschweiger Str.: Asphaltierung	?::projected 13047,7234 13150,7254 13322,7294
 #: next_check: 2010-09-01
 Fürstenwalder Allee: Bau von Radverkehrsanlagen	?::projected 29714,4461 29728,4435 29813,4314 29850,4288
 # 
-#: last_checked: 2012-10-20 vvv
-#: next_check: 2012-12-15 vvv
+#: last_checked: 2012-11-04 vvv
+#: next_check: 2012-12-31 vvv
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120207.1005.365838.html vvv
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120625.1405.371942.html (Ende der Bauarbeiten: Ende 2012) vvv
 Radverkehrsanlagen um den Knotenpunkt Weißenseer Weg/Konrad-Wolf-Str.: Radweg wird auf dem Gehweg geführt	?::inwork 14960,14746 15058,14575
@@ -621,15 +624,15 @@ Radverkehrsanlagen um den Knotenpunkt Weißenseer Weg/Konrad-Wolf-Str.: Radspuren
 #: next_check ^^^
 #: last_checked ^^^
 # 
-#: last_checked: 2012-08-25 (Höhe Degnerstr.)
-#: next_check: 2013-03-01
+#: last_checked: 2012-11-04
+#: next_check: 2013-06-01
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120207.1005.365838.html
 #: XXX Baumaßnahme 11.46 (Realisierung in 2011)
 #: XXX in http://www.berlin.de/imperia/md/content/balichtenberghohenschoenhausen/bebauen/beteiligen/xxii6dbegruendung.pdf?start&ts=1350454241&file=xxii6dbegruendung.pdf ist der Radstreifen erwähnt
-Suermondtstr./Buschallee: Schaffung von Radverkehrsanlagen	?::projected 16964,16042 16961,16042 16660,16165 16515,16207 16416,16236 16260,16282 16095,16331 15919,16383 15871,16399 15845,16405 15432,16500
+Suermondtstr./Buschallee: Schaffung von Radverkehrsanlagen	?::projected 16964,16042 16961,16042 16660,16165 16522,16206 16416,16236 16260,16282 16095,16331 15919,16383 15871,16399 15845,16405 15432,16500
 # 
-#: last_checked: 2012-09-13
-#: next_check: 2013-03-01
+#: last_checked: 2012-11-04
+#: next_check: 2013-06-01
 #: XXX Wird hier jemals etwas entstehen? Es ist nichts im Baumaßnahmenkatalog verzeichnet!
 Hansastr.: Schaffung von Radverkehrsanlagen	?::projected 14650,15750 14823,15776 14934,15860 15124,16104 15187,16185 15432,16500
 # 
@@ -699,8 +702,6 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 # - XXX_prog- und XXX_indoor-Einträge
 # 
 Kantstr.: gibt es Radspuren am Zoofenster?	? 5652,11004 5613,10963 5488,10978
-#: XXX laut osm gesperrt, aber vielleicht nur für Autos?
-zwischen Sportforum und Friedhof: kommt man hier als Radfahrer durch? Ausschilderung? Qualität? Nachts beleuchtet?	? 15829,15042 15169,15466
 Geißenweide - Blenheimstr.: gibt es für Radfahrer eine Verbindung? Qualität? Nachts beleuchtet?	? 21122,14713 21201,14994 21312,15268
 westlicher Wuhlewanderweg: Qualität? Nachts beleuchtet? Ausschilderung?	? 22124,13606 22362,13865 22415,14151 22679,14450 22552,14777 22460,14820 22382,14908 22343,15115
 Weg durch die KGA An der Südostallee: kann man hier durchfahren? Schranken?	? 17094,6170 17083,6099 17736,5441
@@ -735,9 +736,8 @@ Am Festplatz: existieren hier Straßenschilder? Eine erkennbare Straße oder Platz
 # 
 #: XXX wahrscheinlich Kopfsteinpflaster, jedenfalls am südlichen Ende, siehe http://www.flickr.com/photos/panwitz/8123017898/in/pool-gwb
 Lindenstr. (Schmöckwitz): dieser Teil gehört wohl auch noch zu Berlin... Qualität?	? 26931,-2871 26925,-3612 26860,-3805
-Am Faulen See: Qualität und Lage der Verbindung? Nachts beleuchtet?	? 16416,16236 16340,16338 16349,16394
-Fauler See - Tamseler Str.: Qualität und Lage der Verbindung? Nachts beleuchtet?	? 16477,16612 16488,16654 16555,16658
-Fauler See - Hansastr.: Qualität und Lage der Verbindung? Nachts beleuchtet?	? 15965,16482 15743,16689 15662,16656
+# 
+# REMOVED (ein ähnlicher Weg am Stadion Buschallee ist nun eingezeichnet --- vielleicht wird hier mal ein paralleler Weg existieren?) --- Fauler See - Hansastr.: Qualität und Lage der Verbindung? Nachts beleuchtet?	? 15965,16482 15743,16689 15662,16656
 # 
 #: XXX ein Teil ist N, ein Teil wohl NN (der südliche)
 Oststr. - Südostallee: Qualität? Beleuchtung?	? 17455,5355 17416,5388 17479,5463

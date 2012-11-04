@@ -270,7 +270,6 @@ Reiherbeize	1 444,4498 593,4262
 Mendelssohnstr.	1 11598,13598 11550,13642 11545,13690
 Am Bäkequell	1 4593,5235 4656,5101
 Sella-Hasse-Str.	1 20948,16612 20791,16679 20861,16819
-Buggenhagenstr.	1 14425,13780 14370,13615
 Schollenhof	1 3238,21448 3155,21572 3236,21601 3280,21477
 Siegfried-Aufhäuser-Platz	1 13952,7497 13941,7522 13953,7548 13980,7548
 Saltykowstr.	1 12726,7887 12865,7923
@@ -359,7 +358,6 @@ Wustermarker Str.	1 -5097,14599 -5111,14486 -5004,14454 -4981,14442 -4750,14393
 Gartenstr. (Köpenick)	1 22419,4457 22382,4361 22362,4331 22302,4255 22279,4220
 Spitzerstr.	1 22319,4197 22358,4282 22425,4370 22451,4441
 Zitadellenweg/BMW-Betriebswerk	2 -1993,14594 -1768,14605 -1616,14527
-Tassostr.	1 13679,16286 13645,16192 13659,16151 13642,16118 13625,16054 13621,15990 13630,15956
 Heimat	1 1032,1325 994,1485 968,1479 941,1603
 Techowpromenade	1 5219,20467 5185,20358 5173,20275 5170,20182
 (Kastanienallee - Schönhauser Allee)	1 10884,14952 10838,14962
@@ -496,7 +494,7 @@ Enckevortweg	1 18530,10887 18570,10768 18587,10716 18596,10675
 Schulze-Boysen-Str./Frankfurter Allee	1 15597,11957 15592,11881 15738,11851
 Rübezahlstr.	1 15136,7106 15222,7162
 Wegastr	1 15222,7162 15175,7221
-Möllendorffstr.	1 15515,13134 15566,12953 15563,12860 15546,12690
+Möllendorffstr.	1 15515,13134 15531,13022 15561,12950 15563,12860 15546,12690
 Möllendorffstr.	1 15546,12690 15516,12838 15515,13134
 Joachimsthaler Str. (Hohenschönhausen)	1 17117,14885 17129,14804 17063,14797 16943,14785
 Otto-Brahm-Str.	1 14440,15682 14400,15787 14365,15778 14282,15746 14317,15642
@@ -743,6 +741,9 @@ Alfred-Kowalke-Str.	1 18027,11244 18059,11256 18179,11278 18229,11256
 Alfred-Kowalke-Str.	1 18229,11256 18202,11253 18061,11240 18027,11244
 Wittenbergplatz	1 6171,10657 6228,10646 6292,10627 6353,10583
 Wittenbergplatz	1 6353,10583 6268,10588 6216,10614 6171,10657
+Amalienstr.	1s 13789,16775 13722,16843 13653,16907 13589,16965
+Pasedagplatz	1 14099,17195 14150,17255 14170,17249
+Pasedagplatz	1s 14174,17226 14144,17165
 Am Neuen Garten	1 -12166,1384 -12212,1201 -12276,831 -12302,718
 Am Neuen Garten	1 -12332,585 -12582,127
 Hochstraße	3nocross::ignrte -11399,-1339 -11461,-1424 -11540,-1543
@@ -969,9 +970,9 @@ Hauptstr. -> Hauptstr. (Rummelsburg) [Wohngebiet]: Straßenbahntrasse	3::igndisp 
 Straßenbahntrasse	3nocross::ignrte 16004,10204 16114,10123 16138,10105
 Hauptstr. -> Friedrich-Jacobs-Promenade: Straßenbahntrasse	3::igndisp 16138,10105 16114,10123 16063,10050
 Friedrich-Jacobs-Promenade -> Hauptstr.: Straßenbahntrasse	3::igndisp 16063,10050 16114,10123 16004,10204
-Grünstreifen	3nocross::ignrte 13654,14905 13749,15013 13838,15113
-Kniprodestr. -> Altenescher Weg: Grünstreifen	3::igndisp 13838,15113 13749,15013 13856,14944
-Altenescher Weg -> Kniprodestr.: Grünstreifen	3::igndisp 13856,14944 13749,15013 13654,14905
+Grünstreifen	3nocross::ignrte 13644,14915 13744,15018 13823,15111
+Kniprodestr. -> Altenescher Weg: Grünstreifen	3::igndisp 13823,15111 13744,15018 13856,14944
+Altenescher Weg -> Kniprodestr.: Grünstreifen	3::igndisp 13856,14944 13744,15018 13644,14915
 Mittelstreifen	3nocross::ignrte 19578,6165 19405,6276 19276,6359
 Treskowstr. -> An der Wuhlheide: Mittelstreifen	3::igndisp 19333,6165 19405,6276 19276,6359
 An der Wuhlheide -> Treskowstr.: Mittelstreifen	3::igndisp 19578,6165 19405,6276 19333,6165
@@ -1098,13 +1099,6 @@ Siemensdamm -> Hefnerst.: Mittelstreifen	3::igndisp 1479,14343 1420,14369 1392,1
 Straßenbahntrasse	3nocross::ignrte 16095,16331 16260,16282 16416,16236
 Klarastr. -> Suermondtstr.: Straßenbahntrasse	3::igndisp 16234,16203 16260,16282 16095,16331
 Suermondtstr. -> Klarastr.: Straßenbahntrasse	3::igndisp 16416,16236 16260,16282 16234,16203
-Straßenbahntrasse	3nocross::ignrte 16416,16236 16515,16207 16660,16165
-Suermondtstr. -> Hedwigstr.: Straßenbahntrasse	3::igndisp 16660,16165 16515,16207 16505,16096
-Am Faulen See -> Suermondtstr.: Straßenbahntrasse	3::igndisp 16546,16308 16515,16207 16660,16165
-Am Faulen See -> Hedwigstr.: Straßenbahntrasse	3::igndisp 16546,16308 16515,16207 16505,16096
-Hedwigstr. -> Am Faulen See: Straßenbahntrasse	3::igndisp 16505,16096 16515,16207 16546,16308
-Hedwigstr. -> Suermondtstr.: Straßenbahntrasse	3::igndisp 16505,16096 16515,16207 16416,16236
-Suermondtstr. -> Am Faulen See: Straßenbahntrasse	3::igndisp 16416,16236 16515,16207 16546,16308
 Straßenbahntrasse	3nocross::ignrte 14499,16341 14556,16391 14610,16522
 Wegenerstr. -> Berliner Allee: Straßenbahntrasse	3::igndisp 14692,16328 14556,16391 14499,16341
 Berliner Allee -> Wegenerstr.: Straßenbahntrasse	3::igndisp 14610,16522 14556,16391 14692,16328
@@ -1933,6 +1927,9 @@ Mittelstreifen	3nocross::ignrte 21137,11294 21134,11331 21124,11462
 Elsterwerdaer Pl. -> Köpenicker Str.: Mittelstreifen	3::igndisp 21110,11326 21134,11331 21124,11462
 Köpenicker Str. -> Elsterwerdaer Pl.: Mittelstreifen	3::igndisp 21137,11294 21134,11331 21110,11326
 Märkische Allee/Alt-Friedrichsfelde	3 20018,11698 20026,11663 20064,11687
+Mittelstreifen	3nocross::ignrte 15662,16656 15735,16698 15776,16721
+Hansastr. -> Stadion Buschallee: Mittelstreifen	3::igndisp 15776,16721 15735,16698 15759,16671
+Stadion Buschallee -> Hansastr.: Mittelstreifen	3::igndisp 15759,16671 15735,16698 15662,16656
 abgeschlossenes Tor	3 8235,20109 8237,20098 8258,19983
 abgeschlossenes Tor	3 8258,19983 8237,20098 8235,20109
 abgeschlossenes Tor	3 8288,20128 8291,20112 8315,19993
@@ -1941,6 +1938,10 @@ abgeschlossenes Tor	3 3781,16175 3796,16202 3836,16273
 abgeschlossenes Tor	3 3836,16273 3796,16202 3781,16175
 abgeschlossenes Tor	3 4898,22459 5083,22149 5086,22145
 abgeschlossenes Tor	3 5086,22145 5083,22149 4898,22459
+abgeschlossenes Tor	3 15313,15393 15835,15092 15867,15073
+abgeschlossenes Tor	3 15867,15073 15835,15092 15313,15393
+tragen (7 weite Stufen)	0:30:-41 15759,16671
+tragen (6 Stufen)	0:12:-38 15915,16526
 tragen (8 Stufen)	0:12:13 18184,9626
 tragen (3 Stufen, kann auf einer inoffiziellen Rampe umfahren werden)	0:10:-176 8029,10106
 tragen (ca. 20 Stufen, kann auf Rampen umfahren werden)	0:30:-156 -5561,12909
@@ -2321,7 +2322,7 @@ Drängelgitter	BNP:5:-53 22280,11284
 Drängelgitter	BNP:5:66 -7228,15504
 Drängelgitter	BNP:5:-249 -7182,15524
 Drängelgitter und Schranke	BNP:5:-154:trailer=15 14285,12190
-Drängelgitter	BNP:5:-60 14060,14986
+Drängelgitter	BNP:5:-62 14060,14986
 Drängelgitter	BNP:5:-210 20586,10935
 Drängelgitter, relativ breite Durchfahrt	BNP:3:66 12363,2367
 Drängelgitter	BNP:5:28 15516,6357
@@ -2428,7 +2429,7 @@ Tegeler Hafen: Weg über Insel gesperrt	2 1756,20405 1736,20441 1742,20464 1762,2
 Tegeler Hafen: Weg gesperrt	2 1630,20731 1668,20670 1687,20645 1697,20623 1721,20603
 Uferweg am Tegeler Hafen: Weg wegen Bauarbeiten gesperrt	2:inwork 1861,20467 1826,20492 1761,20539 1741,20571
 Helga-Hahnemann-Str.: gesperrt	2:inwork 9415,13315 9408,13282
-Am Langen Jammer: westlicher Abschnitt wegen Bauarbeiten gesperrt	2:inwork 14405,12953 14686,12873
+Am Langen Jammer: westlicher Abschnitt wegen Bauarbeiten gesperrt	2:inwork 14405,12953 14682,12874
 Behrenstr.: Bauarbeiten, vollständig gesperrt	2:inwork 9743,12239 9801,12245
 Bebelplatz: Bauarbeiten, vollständig gesperrt	2:inwork 9795,12293 9869,12297
 Hinter der Katholischen Kirche: Bauarbeiten, vollständig gesperrt	2:inwork 9808,12182 9801,12245 9795,12293 9780,12401

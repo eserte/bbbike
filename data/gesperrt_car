@@ -523,7 +523,6 @@ Prinzenallee -> Biesentaler Str.: Mittelstreifen	3::igndisp 9028,16864 9024,1685
 Straßenbahntrasse	3nocross::ignrte 13512,15909 13623,15954 13630,15956 13737,15994
 Mahlerstr. -> Berliner Allee: Straßenbahntrasse	3::igndisp 13667,15836 13623,15954 13512,15909
 Berliner Allee -> Mahlerstr.: Straßenbahntrasse	3::igndisp 13630,15956 13623,15954 13667,15836
-Tassostr. -> Berliner Allee: Straßenbahntrasse	3::igndisp 13621,15990 13630,15956 13737,15994
 Berliner Allee -> Tassostr.: Straßenbahntrasse	3::igndisp 13623,15954 13630,15956 13621,15990
 Straßenbahntrasse	3nocross::ignrte 17919,6978 17919,6968 17962,6674
 Edisonstr. -> Zeppelinstr.: Straßenbahntrasse	3::igndisp 17919,6978 17919,6968 18041,6924
@@ -621,7 +620,6 @@ Berliner Allee -> Lindenallee: Straßenbahn	3::igndisp 14371,16252 14248,16202 14
 Straßenbahn	3nocross::ignrte 13512,15909 13623,15954 13630,15956 13737,15994
 Mahlerstr. -> Berliner Allee: Straßenbahn	3::igndisp 13667,15836 13623,15954 13512,15909
 Berliner Allee -> Mahlerstr.: Straßenbahn	3::igndisp 13630,15956 13623,15954 13667,15836
-Tassostr. -> Berliner Allee: Straßenbahn	3::igndisp 13621,15990 13630,15956 13737,15994
 Berliner Allee -> Tassostr.: Straßenbahn	3::igndisp 13623,15954 13630,15956 13621,15990
 Straßenbahn	3nocross::ignrte 13401,15821 13432,15843 13487,15888 13512,15909
 Streustr. -> Berliner Allee: Straßenbahn	3::igndisp 13269,15927 13432,15843 13487,15888
@@ -1153,7 +1151,7 @@ Giesebrechtstr.	1 3912,10699 3997,10607 4017,10585 4030,10575 4153,10453 4157,10
 Clausewitzstr.	1 3971,10381 4007,10559
 Bayerische Str.	1 4296,10004 4349,10247
 Ferdinand-Schultze-Str - Landsberger Allee	3 17794,14640 17848,14523 18057,14549
-Michelangelostr./Kniprodestr.	3 13875,15142 13830,15138 13838,15113
+Michelangelostr./Kniprodestr.	3 13875,15142 13816,15137 13823,15111
 Kurmärkische Str.	3 7413,10244 7429,10366 7337,10396
 Kurmärkische Str.	3 7337,10396 7429,10366 7444,10479
 Hentigstr.	1 18518,8778 18548,8942
@@ -1480,3 +1478,13 @@ Rosenfelder Str. -> Frankfurter Allee: Frankfurter Allee	3::igndisp 17161,11681 
 Frankfurter Allee -> Rosenfelder Str.: Frankfurter Allee	3::igndisp 17151,11801 17240,11791 17306,11866
 Ehrensfelsstr.: Durchfahrt verboten	3 18737,8686 18778,8663 18846,8616
 Ehrensfelsstr.: Durchfahrt verboten	3 18846,8616 18778,8663 18737,8686
+Buggenhagenstr.	1 14425,13780 14371,13619
+Tassostr.	1 13679,16286 13645,16192 13659,16151 13642,16118 13625,16054 13621,15990 13630,15956
+Pasedagplatz: nur für Straßenbahnen	2 14170,17249 14150,17255 14099,17195
+Straßenbahntrasse	3nocross::ignrte 16416,16236 16522,16206 16660,16165
+Am Faulen See -> Suermondtstr.: Straßenbahntrasse	3::igndisp 16551,16307 16522,16206 16660,16165
+Am Faulen See -> Hedwigstr.: Straßenbahntrasse	3::igndisp 16551,16307 16522,16206 16505,16096
+Suermondtstr. -> Hedwigstr.: Straßenbahntrasse	3::igndisp 16660,16165 16522,16206 16505,16096
+Hedwigstr. -> Am Faulen See: Straßenbahntrasse	3::igndisp 16505,16096 16522,16206 16551,16307
+Hedwigstr. -> Suermondtstr.: Straßenbahntrasse	3::igndisp 16505,16096 16522,16206 16416,16236
+Suermondtstr. -> Am Faulen See: Straßenbahntrasse	3::igndisp 16416,16236 16522,16206 16551,16307
