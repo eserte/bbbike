@@ -299,14 +299,16 @@ BBBIKE_FAT_ROUTABLE_GMAPSUPP_SOURCES+=	${BBBIKETMPDIR}/trafficlightmap25.img
 
 ${BBBIKETMPDIR}/bbbike_fat_routable_gmapsupp.img: ${BBBIKE_FAT_ROUTABLE_GMAPSUPP_SOURCES} ${BBBIKEMKGMAPDIR}/typ/M000002a.TYP
 	cd ${BBBIKETMPDIR} && \
-	    ${MKGMAP} --family-id=42 --family-name="Slavens Map" \
+	    ${MKGMAP} --family-id=42 --family-name="BBBike Berlin Fat" \
+	       --description="BBBike Berlin Fat" \
 	       --index \
 	       --gmapsupp ${BBBIKE_FAT_ROUTABLE_GMAPSUPP_SOURCES} ${BBBIKEMKGMAPDIR}/typ/M000002a.TYP
 	mv ${BBBIKETMPDIR}/gmapsupp.img ${BBBIKETMPDIR}/bbbike_fat_routable_gmapsupp.img
 
 ${BBBIKETMPDIR}/bbbike_routable_gmapsupp.img: ${BBBIKE_ROUTABLE_GMAPSUPP_SOURCES} ${BBBIKEMKGMAPDIR}/typ/M000002a.TYP
 	cd ${BBBIKETMPDIR} && \
-	    ${MKGMAP} --family-id=42 --family-name="Slavens Map" \
+	    ${MKGMAP} --family-id=42 --family-name="BBBike Berlin" \
+	       --description="BBBike Berlin" \
 	       --index \
 	       --gmapsupp ${BBBIKE_ROUTABLE_GMAPSUPP_SOURCES} ${BBBIKEMKGMAPDIR}/typ/M000002a.TYP
 	mv ${BBBIKETMPDIR}/gmapsupp.img ${BBBIKETMPDIR}/bbbike_routable_gmapsupp.img
