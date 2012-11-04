@@ -103,7 +103,16 @@ sub send_url {
 	# this is success, at least for Merkaartor
     } elsif (!$resp->is_success) {
 	warn $resp->as_string;
-	main::status_message("Fehler: " . $resp->status_line . ". Vielleicht läuft Merkaartor nicht? Bitte starten!", "error");
+	main::status_message(<<EOF, "error");
+Fehler: @{[ $resp->status_line ]}.
+
+Falls Merkaartor verwendet werden soll:
+Vielleicht läuft Merkaartor nicht? Bitte starten!
+
+Falls JOSM verwendet werden soll:
+Vielleicht läuft JOSM nicht? Bitte starten!
+Vielleicht ist die Fernsteuerung in JOSM nicht aktiviert? Bitte über die Einstellung aktivieren.
+EOF
 	return;
     }
 }
