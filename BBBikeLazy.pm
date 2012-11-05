@@ -539,8 +539,8 @@ sub BBBikeLazy::plotstr_on_demand {
 				   ? [qw(u-label b-label r-label)]
 				   : $name_draw_tag);
 	    # XXX ^^^
-	    my %no_overlap_label;
-	    my $no_overlap_label;
+	    # XXX Duplikat in plot_point
+	    my $no_overlap_label = $lazy_p_args{$abk}->{NoOverlapLabel} || $no_overlap_label{$abk};
 
 	    # XXX Duplikate in plot_point:
 	    my $rbahn_length = ($abk eq 'r' && $XXX_use_old_R_symbol
