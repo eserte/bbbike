@@ -262,7 +262,7 @@ use vars qw(%category_rot_font);
 use vars qw($frame $ctrl_frame);
 use vars qw($hs_label $str_label);
 use vars qw($misc_frame $misc_frame2 $DockFrame $Checkbutton $Radiobutton);
-use vars qw(%flag_photo @flag_offset);
+use vars qw(%flag_photo);
 use vars qw($berlin_overview_photo); # wird bei Bedarf nachgeladen
 ##### Statuszeile/Progress Bar #####
 use vars qw($status_label $status_button $status_button_column

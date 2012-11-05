@@ -5635,10 +5635,9 @@ sub standard_selection_handle {
 
 sub load_photos {
     # Note that some rarely used photos are loaded on-demand.
-    $flag_photo{'start'} = load_photo($top, 'flag2_bl');
-    $flag_photo{'via'}   = load_photo($top, 'flag_via');
-    $flag_photo{'ziel'}  = load_photo($top, 'flag_ziel');
-    @flag_offset         = (4, 15);
+    $flag_photo{'start'} = load_photo($top, 'flag2_bl_centered');
+    $flag_photo{'via'}   = load_photo($top, 'flag_via_centered');
+    $flag_photo{'ziel'}  = load_photo($top, 'flag_ziel_centered');
     $ampel_photo         = load_photo($top, 'ampel');
     $ampel_klein2_photo  = load_photo($top, 'ampel_klein2');
     $ampelf_photo        = load_photo($top, 'ampelf');
@@ -15324,8 +15323,8 @@ sub set_flag {
 	    return;
 	}
 	# XXX $nr may or may not be meaningful here
-	$c->createImage($x - $flag_offset[0], $y - $flag_offset[1],
-			-anchor => "nw",
+	$c->createImage($x, $y,
+			-anchor => 'c',
 			-image => $flag_photo{$type},
 			-tags => ['route', "route-$nr", $type . 'flag']);
     }

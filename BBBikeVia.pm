@@ -126,8 +126,8 @@ sub BBBikeVia::show_via_flags {
 	    $p1->[SRP_TYPE] eq POINT_SEARCH()
 	   ) {
 	    my($x,$y) = transpose(split(/,/, $p1->[SRP_COORD]));
-	    $c->createImage($x - $flag_offset[0], $y - $flag_offset[1],
-			    -anchor => "nw",
+	    $c->createImage($x, $y,
+			    -anchor => 'c',
 			    -image => $flag_photo{"via"},
 			    -tags => ['route', "", "viaflag", "via-$i"],
 			   );
