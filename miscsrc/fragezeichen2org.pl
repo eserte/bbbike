@@ -33,11 +33,13 @@ use StrassenNextCheck;
 
 my $with_dist = 1;
 my $centerc;
+my $center2c;
 GetOptions(
 	   "with-dist!" => \$with_dist,
 	   "centerc=s" => \$centerc,
+	   "center2c=s" => \$center2c,
 	  )
-    or die "usage: $0 [--nowith-dist] [--centerc X,Y] bbdfile ...";
+    or die "usage: $0 [--nowith-dist] [--centerc X,Y [--center2c X,Y]] bbdfile ...";
 
 if ($with_dist && !$centerc) {
     my $config_file = "$ENV{HOME}/.bbbike/config";
@@ -56,6 +58,9 @@ if ($with_dist && !$centerc) {
 		$with_dist = 0;
 	    } else {
 		$centerc = $config->{centerc};
+		if ($config->{center2c}) {
+		    $center2c = $config->{center2c};
+		}
 	    }
 	}
     }
@@ -84,6 +89,11 @@ for my $file (@files) {
 		     if ($centerc) {
 			 my $dist = min map { int_round(Strassen::Util::strecke_s($_, $centerc)/1000) } @{ $r->[Strassen::COORDS] };
 			 $dist_tag = ":${dist}km:";
+			 if ($center2c) {
+			     my $dist2 = min map { int_round(Strassen::Util::strecke_s($_, $center2c)/1000) } @{ $r->[Strassen::COORDS] }; # XXX hmmm, using min() for both center*c is not correct, but well...
+			     $dist2 += $dist;
+			     $dist_tag .= "${dist2}km:";
+			 }
 		     }
 		     my $body = <<EOF;
 ** TODO <$date $wd> $subject $dist_tag
@@ -130,5 +140,41 @@ fragezeichen2org - create org-mode file from date-based fragezeichen records
 =head1 SYNOPSIS
 
     ./miscsrc/fragezeichen2org.pl data/*-orig tmp/bbbike-temp-blockings-optimized.bbd > tmp/fragezeichen-nextcheck.org
+
+=head1 DESCRIPTION
+
+=head2 OPTIONS
+
+=over
+
+=item C<--with-dist> (set by default)
+
+Add distance tags to every fragezeichen record. Distance is the
+as-the-bird-flies distance from the "centerc" point (see below) to the
+fragezeichen record.
+
+=item C<--nowith-dist>
+
+Disable the generation of distance tags.
+
+=item C<--centerc I<x,y>>
+
+The home coordinate (in BBBike coord system, not WGS84) for the
+L</--with-dist> calculation. If not given, then the value is taken
+from F<~/.bbbike/config> (which is usually written by the Perl/Tk
+app). If the value is not defined there, either, then the distance
+tags are disabled.
+
+=item C<--center2c I<x,y>>
+
+A 2nd home coordinate for the distance tag generation. This is used
+for a 2nd tag, which is the as-the-bird-flies distance from the 1st
+coordinate to the fragezeichen record to the 2nd coordinate.
+
+Note that the <center2c> config option needs to be set manually in
+F<~/.bbbike/config>; it's not possible to do this with the option
+editor of the Perl/Tk app.
+
+=back
 
 =cut
