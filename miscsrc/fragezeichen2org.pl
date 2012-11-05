@@ -31,6 +31,8 @@ use BBBikeUtil qw(int_round);
 use Strassen::Util ();
 use StrassenNextCheck;
 
+use constant ORG_MODE_HEADLINE_LENGTH => 77; # used for tag alignment
+
 my $with_dist = 1;
 my $centerc;
 my $center2c;
@@ -87,16 +89,25 @@ for my $file (@files) {
 		     my $subject = $r->[Strassen::NAME] || "(" . $file . "::$.)";
 		     my $dist_tag = '';
 		     if ($centerc) {
-			 my $dist = min map { int_round(Strassen::Util::strecke_s($_, $centerc)/1000) } @{ $r->[Strassen::COORDS] };
-			 $dist_tag = ":${dist}km:";
+			 my $dist_m = min map { Strassen::Util::strecke_s($_, $centerc) } @{ $r->[Strassen::COORDS] };
+			 $dist_tag = ":" . int_round($dist_m/1000) . "km:";
 			 if ($center2c) {
-			     my $dist2 = min map { int_round(Strassen::Util::strecke_s($_, $center2c)/1000) } @{ $r->[Strassen::COORDS] }; # XXX hmmm, using min() for both center*c is not correct, but well...
-			     $dist2 += $dist;
-			     $dist_tag .= "${dist2}km:";
+			     my $dist2_m = min map {Strassen::Util::strecke_s($_, $center2c) } @{ $r->[Strassen::COORDS] }; # XXX hmmm, using min() for both center*c is not correct, but well...
+			     $dist2_m += $dist_m;
+			     $dist_tag .= int_round($dist2_m/1000) . "km:";
 			 }
 		     }
+		     my $headline = "** TODO <$date $wd> $subject";
+		     if ($dist_tag) {
+			 if (length($headline) + 1 + length($dist_tag) < ORG_MODE_HEADLINE_LENGTH) {
+			     $headline .= " " x (ORG_MODE_HEADLINE_LENGTH-length($headline)-length($dist_tag));
+			 } else {
+			     $headline .= " ";
+			 }
+			 $headline .= $dist_tag;
+		     }
 		     my $body = <<EOF;
-** TODO <$date $wd> $subject $dist_tag
+$headline
    : $r->[Strassen::NAME]\t$r->[Strassen::CAT] @{$r->[Strassen::COORDS]}
    [[${abs_file}::$.]]
 EOF
