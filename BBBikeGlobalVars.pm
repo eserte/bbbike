@@ -199,7 +199,7 @@ use vars qw($hs_check $plzmcmd $ampelstatus_label_text
 	    $balloon $c_balloon $leave_after $ch
 	    $map_bg $map_color $steady_mark $lowmem $slowcpu
 	    $use_contexthelp $use_logo $use_dialog
-	    $center_on_str $center_on_coord
+	    $center_on_str $center_on_coord $center_on_coord2
 	    $center_loaded_route $zoom_loaded_route
 	    $zoom_new_route $zoom_new_route_chooseort
 	    $set_mode $init_with_edittools $texteditor

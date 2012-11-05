@@ -5089,6 +5089,9 @@ sub handle_options {
 	      $f2;
 	  },
 	  var => \$center_on_coord],
+	 ['center2c','=s',undef, # XXX currently not really used, but some day may be used together with center_view2
+	  nogui => 1,
+	  var => \$center_on_coord2],
 	 ['choosestreet','!',1,
 	  label => M"Beim Starten Straßenauswahl zeigen",
 	  var => \$init_choose_street],
