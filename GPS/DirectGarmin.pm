@@ -91,13 +91,19 @@ sub transfer {
 		my $abk_p = main::next_free_layer();
 		$main::p_file{$abk_p} = $maxdist_ret{'points_bbd'};
 		$main::p_draw{$abk_p} = 1;
+		$main::p_name_draw{$abk_p} = 1;
+		$main::no_overlap_label{$abk_p} = 1;
+		$main::do_outline_text{$abk_p} = 1;
 		main::plot('p',$abk_p);
 
-		# XXX the delay is hackish
-		$main::c->after(1000, sub {
-				    $main::c->raise($abk);
-				    $main::c->raise($abk_p."-fg");
-				});
+		#XXX set_in_stack does not seem to really work
+		main::set_in_stack($abk, 'above', '*route*');
+		main::set_in_stack($abk_p.'-fg', 'above', $abk);
+		## XXX the delay is hackish
+		#$main::c->after(1000, sub {
+		#		    $main::c->raise($abk);
+		#		    $main::c->raise($abk_p."-fg");
+		#		});
 	    }
 	} else {
 	    print STDERR $mess;
