@@ -221,9 +221,12 @@ M¸ggelseedamm: entstehen hier Radwege/spuren, insbesondere Richtung Westen?	?::p
 # - handelt es sich bei der Frage um Zebrastreifen und andere
 #   f¸r Radfahrer eher uninteressante Dinge (-> private)
 # 
-#: XXX laut osm under construction
+#: XXX laut osm under construction vvv
+#: XXX fehlt in Berlin.coords.data, PLZ=13467 vvv
 Am Dominikusteich: Qualit‰t? Straﬂe bereits fertiggestellt?	?::inwork 2651,23926 2760,23964 2787,23971
 Am Dominikusteich: Qualit‰t? Straﬂe bereits fertiggestellt?	?::inwork 2760,23964 2784,23929
+#: XXX ^^^
+#: XXX ^^^
 # 
 #: by: http://www.berlin.de/imperia/md/content/balichtenberghohenschoenhausen/bebauen/beteiligen/xxii6dreinplan.pdf?start&ts=1350454320&file=xxii6dreinplan.pdf
 #: by: http://www.berlin.de/imperia/md/content/balichtenberghohenschoenhausen/bebauen/beteiligen/xxii6dbegruendung.pdf?start&ts=1350454241&file=xxii6dbegruendung.pdf
@@ -232,12 +235,9 @@ Am Dominikusteich: Qualit‰t? Straﬂe bereits fertiggestellt?	?::inwork 2760,23964
 #: XXX vielleicht wird es auch eine Verbindung bis auf der ehem. Bahnlinie zur Hansastr. geben?
 Rad- und Gehwegverbindung Suermondtstr. - Degnerstr.	?::projected 16457,16204 16448,16102 16485,15979 16543,15892
  
-#: last_checked: 2012-10-23
+#: last_checked: 2012-11-05
+#: next_check: 2013-03-01 (unwahrscheinlich, dass fr¸her was passiert)
 Hannah-Arendt-Str.: werden die Radspuren vielleicht noch verl‰ngert?	? 8632,11912 8783,11959
-# 
-#: last_checked: 2012-10-23
-#: next_check: 2012-10-28
-Hannah-Arendt-Str./Ebertstr.: Ampel in Bau	?::inwork 8577,11896
 # 
 #: XXX Baumaﬂnahme 1.16 (Realisierung nach 2011)
 Ghanastr. - Kurt-Schumacher-Damm: im Zuge der RR4 kˆnnte es hier eine neue Verbindung geben	?::projected 5255,17007 4988,17172
@@ -262,8 +262,8 @@ Treskowallee/Waldowallee: Situation nach den Bauarbeiten, wird man hier ¸berquer
 # 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/verwaltung/org/vermessung/b-plaene/b-plaene/B-V-3.jpg vvv
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/42re.pdf/file?y=2012 vvv
-#: last_checked: 2012-11-01 vvv
-#: next_check: 2012-11-08
+#: last_checked: 2012-11-05 vvv
+#: next_check: 2012-11-12
 Planstraﬂe D: Straﬂe ist asphaltiert, weiﬂe Straﬂenschilder existieren	?::inwork 12793,11132 12866,11256
 #: next_check: 2013-01-01
 Planstraﬂe C: Einfahrten existieren noch, aber statt einer Straﬂe ist hier nur ein Parkplatz	?::projected 12926,11224 12848,11093
@@ -300,7 +300,7 @@ Stephan-Born-Str.: genaue Lage? Privatstraﬂe?	?::projected 23307,15956 23313,160
 #: by: http://www.cdu-fraktion-tk.de/image/inhalte/file/Amtsblatt_51%5B1%5D.pdf
 #: XXX liegt die Straﬂe tats‰chlich hier?
 #: XXX die Reinickendorfer Pressemeldungsschreiber sind fleiﬂig, hˆchstwahrscheinlich wird es dort erscheinen, falls hier was passiert
-#: XXX fehlt in Berlin.coords.data
+#: XXX fehlt in Berlin.coords.data, PLZ=13507
 #: last_checked: 2012-09-01 (keine Anzeichen f¸r Bauarbeiten)
 #: next_check: 2013-12-31
 Humboldtinsel: Qualit‰t? Straﬂe bereits fertig gestellt?	?::projected 1612,20431 1708,20459
@@ -563,7 +563,7 @@ Mangerstr. (Potsdam): Bauarbeiten bis November 2011, danach vielleicht etwas bes
 #: by: http://www.potsdam.de/cms/beitrag/10056300/757395/
 Mauerweg (Potsdam-Sacrow): evtl. existiert hier bereits ein geschotterter Radweg parallel zur Straﬂe	? -8799,3778 -9064,3667 -9156,3451 -9399,3297 -9530,3165 -9999,2615 -10105,2458
 #
-#: last_checked: 2012-11-02 vvv
+#: last_checked: 2012-11-05 vvv
 #: next_check: 2013-06-01 vvv
 #: XXX siehe auch gesperrt-orig-Eintrag zur Oberwallstr.
 #: XXX Eintrag in Berlin.coords.data fehlt: PLZ=10117
@@ -701,6 +701,8 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 # - Fragen nach genauen Routenverl‰ufen
 # - XXX_prog- und XXX_indoor-Eintr‰ge
 # 
+#: XXX VMZ-Eintrag: Malchower Weg (Hohenschˆnhausen): Baustelle, Fahrtrichtung gesperrt, eine Umleitung ist eingerichtet (bis 05/13) Richtung Rhinstr. zwischen Hansastr. und Wartenberger Str., 05.11.2012 09:00 Uhr bis 31.05.2013 16:00 Uhr	INKO_111447
+Malchower Str.: wo sind hier die Bauarbeiten? Behinderungen f¸r Radfahrer?	?::inwork 17425,16165 17383,16197 17271,16280 17220,16320 17170,16365 17102,16464 17059,16560 17017,16716 17004,16778 16992,16840 16981,16900 16978,16915 16966,16978 16951,17055 16934,17132 16918,17204 16914,17224 16902,17278 16887,17349 16837,17440
 Kantstr.: gibt es Radspuren am Zoofenster?	? 5652,11004 5613,10963 5488,10978
 Geiﬂenweide - Blenheimstr.: gibt es f¸r Radfahrer eine Verbindung? Qualit‰t? Nachts beleuchtet?	? 21122,14713 21201,14994 21312,15268
 westlicher Wuhlewanderweg: Qualit‰t? Nachts beleuchtet? Ausschilderung?	? 22124,13606 22362,13865 22415,14151 22679,14450 22552,14777 22460,14820 22382,14908 22343,15115
@@ -714,8 +716,8 @@ Armenische Str. - Aroser Allee: existiert f¸r Radfahrer eine Verbindung? Ausschi
 Sendener Str. - Bernauer Str.: Qualit‰t des Waldweges?	? 964,18321 915,18352 625,18518 560,18494
 Gˆhrener Str.: ist hier irgendwo verkehrsberuhigt?	? 11511,15054 11476,15030
 # 
-#: last_checked: 2012-11-01
-#: next_check: 2012-11-05
+#: last_checked: 2012-11-05
+#: next_check: 2012-11-06
 #: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20121029.1330.377234.html
 #: XXX Bauarbeiten gehen bis Dezember 2012
 Bauarbeiten in der Kˆpenicker Str.: wie wird die Einbahnstraﬂenrichtung verlaufen? Behinderungen f¸r Radfahrer?	? 11242,11720 11155,11750 11022,11782 11048,11745 11155,11750
@@ -727,9 +729,6 @@ Wiesengrund Straﬂe 1: oder ist sie hier?	? 19953,8258 19943,8279
 #: XXX fehlt auch in Berlin.coords.data: Fuﬂweg 475|Rahnsdorf|12589
 #: XXX_osm fehlt auch bei osm
 Fuﬂweg 475: existiert hier tats‰chlich ein befahrbarer Weg? Ausgeschildert? Qualit‰t? Beleuchtet?	? 30794,4154 30757,3974
-# 
-#: XXX falls ja -> Berlin.coords.data, plaetze-orig
-Wilhelmplatz: existieren Straﬂenschilder?	? 9000,11727 9075,11756
 # 
 #: XXX fehlt in Berlin.coords.data
 Am Festplatz: existieren hier Straﬂenschilder? Eine erkennbare Straﬂe oder Platz?	? 3524,16111 3581,16221
@@ -2703,7 +2702,7 @@ Falknerstr. (Potsdam-Golm): Qualit‰t?	? -18889,-591 -18889,-641 -18939,-739
 #: XXX laut osm "paved"
 #: XXX fehlt in Potsdam.coords.data
 Paarener Dorfstraﬂe (Potsdam-Uetz-Paaren): Qualit‰t?	? -21443,8306 -21412,8481 -21390,8578 -21226,8822 -20996,8861 -20405,9004
-#: XXX fehlt in Potsdam.coords.data
+#: XXX fehlt in Potsdam.coords.data, PLZ=14476, Ortsteil=Paaren
 #: by: http://www.potsdam.de/cms/dokumente/10069999_974248/967a6114/Amtsblatt12-2010.pdf (Lage der Straﬂe)
 Paarener M¸hlenweg (Potsdam-Uetz-Paaren): Qualit‰t?	? -21412,8481 -21200,8474 -20914,8535 -20337,8664 -20176,8678 -20040,8625 -19994,8571 -19854,8696 -19818,8664 -19686,8675 -19635,8657 -19549,8761 -19202,8786 -19186,8685
 #: XXX fehlt in Potsdam.coords.data

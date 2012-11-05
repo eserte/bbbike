@@ -1555,7 +1555,8 @@ Löwestr.: teilweise schlechtes Kopfsteinpflaster	Q3 13273,12649 13357,12473
 Jacobystr.: Beton	Q1 11594,12662 11260,12809 11207,12706
 Parochialstr.: Asphalt	Q0 10952,12401 11040,12415
 Parochialstr.: Asphalt mit einer leichten Schadstelle	Q0- 10831,12371 10952,12401
-Waisenstr.: schlechtes Kopfsteinpflaster	Q3 11059,12450 11032,12439 11040,12415 11049,12386 11094,12243
+Waisenstr.: schlechtes Kopfsteinpflaster	Q3 11017,12487 11032,12439 11040,12415 11049,12386 11094,12243
+(Waisenstr. - Littenstr.): schlechtes Kopfsteinpflaster	Q3 11032,12439 11059,12450
 Propststr.: Kopfsteinpflaster	Q2 10492,12289 10553,12333 10611,12378 10639,12394
 (Crellestr. - Julius-Leber-Brücke): Verbundsteinpflaster	Q1 7524,9093 7555,8978 7509,8929 7497,8916
 Naumannstr.: Asphalt	Q0 7707,8915 7709,8777
@@ -12792,6 +12793,9 @@ Waldpark Steinberg: Verbundsteinpflaster	Q1+ 3979,21211 3946,21246
 Waldpark Steinberg: gut befahrbar, eigene Radspur, fester Sand	Q1- 3946,21246 3839,21357 3784,21362 3670,21496 3605,21589 3545,21677
 #: corrected_by: srt (Kopfsteinpflaster -> Asphalt unterschiedlicher Qualität)
 #: note: mittlerweile (2012-08) gibt es im nördlichen Teil einen neuen Asphaltstreifen, der gut befahrbar ist
+#: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20121105.1600.377570.html (Bauarbeiten)
+#: XXX nach den Bauarbeiten bessere Qualität? (public)
+#: next_check: 2012-12-10
 Rosentreterpromenade: Asphalt mit Schäden	Q1-; 4423,20848 4245,21105 4226,21133
 Rosentreterpromenade: Asphalt	Q0; 4226,21133 4245,21105 4423,20848
 Rosentreterpromenade: Kopfsteinpflaster	Q2 4226,21133 4208,21159

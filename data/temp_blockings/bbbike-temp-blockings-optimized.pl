@@ -1144,8 +1144,8 @@ userdel	q4::inwork; -1872,24336 -1790,24260 -1627,24105 -1367,23853 -1286,23753 
          'text' => 'Behrenstr. (Mitte): Fahrbahn Richtung Friedrichstr. zwischen Glinkastr. und Friedrichstr. gesperrt',
          'from' => undef,
          'id' => 2317,
-         'data' => '#: last_checked: 2012-10-25
-#: next_check: 2013-02-23
+         'data' => '#: last_checked: 2012-11-05
+#: next_check: 2013-03-01
 #: XXX ab Glinkastr. nur ungefähr die halbe Strecke bis zur Friedrichstr. gesperrt, deshalb q3
 userdel	q3::inwork; 9164,12172 9373,12197
 ',
@@ -1233,16 +1233,7 @@ userdel	q3::inwork 10893,14705 11101,14768
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'INKO_115760',
-         'until' => 1352084400,
-         'text' => 'Karlshorster Str. (Lichtenberg): Brückenarbeiten, Sperrung der kompletten Straße, Fußgänger und Radfahrer können nicht passieren, 03.11.2012 bis 05.11.2012 04:00 Uhr',
-         'from' => 1351810800,
-         'id' => 2360,
-         'data' => 'userdel	2::inwork 15261,10738 15272,10790 15279,10862
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => undef,
          'text' => 'Christburger Str.: Fahrbahn an der Prenzlauer Allee gesperrt, Ausweichen auf Gehweg',

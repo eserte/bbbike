@@ -20046,8 +20046,8 @@ EOF
 ## früher:
 #       source_id => 'INKO_093369',
        data  => <<EOF,
-#: last_checked: 2012-10-25
-#: next_check: 2013-02-23
+#: last_checked: 2012-11-05
+#: next_check: 2013-03-01
 #: XXX ab Glinkastr. nur ungefähr die halbe Strecke bis zur Friedrichstr. gesperrt, deshalb q3
 userdel	q3::inwork; 9164,12172 9373,12197
 EOF

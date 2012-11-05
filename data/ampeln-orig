@@ -1699,10 +1699,7 @@ nur Richtung O	X 8142,7221
 	X 15080,11905
 	X 6454,8653
 # TEMPORARILY REMOVED --- Kynaststr./Alt-Stralau - evtl. wird es nach den Bauarbeiten hier wieder eine Ampel geben	X 14652,10201
-#: note: temporäre Baustellenampel, ist immer bei einer Sperrung der Karlshorster Str. eingeschaltet
-#: last_checked: 2012-11-02
-#: next_check: 2012-11-05
-	X::inwork 14832,10512
+# REMOVED --- #: note: temporäre Baustellenampel, ist immer bei einer Sperrung der Karlshorster Str. eingeschaltet --- #: last_checked: 2012-11-02 --- #: next_check: 2012-11-05 --- X::inwork 14832,10512
 	F 13030,7346
 # REMOVED (keine Ampel (mehr?), evtl. wegen BAB) ---	X 12510,6508
 # REMOVED (keine Ampel (mehr?), evtl. wegen BAB) ---	X 12553,6423
@@ -2733,6 +2730,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: XXX_prog die beiden Überquerungen sind unabhängig voneinander geschaltet, typischerweise verlängert das die Wartezeiten
 #: note: Anforderungsampel
 	F 11952,14002
+	X 8577,11896
 ################################################################################
 #: note: Potsdam vvv
 #: by: http://www.potsdam.de/cms/beitrag/10067917/966975/

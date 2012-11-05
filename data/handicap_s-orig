@@ -10,12 +10,12 @@
 # 
 ### Friedrichshain ###
 # 
-#: last_checked: 2012-11-01
+#: last_checked: 2012-11-05
 #: next_check: 2013-05-17
 #: note: vmz-Eintrag: Am Oberbaum (Friedrichshain-Kreuzberg): Baustelle, Fahrtrichtung gesperrt (bis 05/2013) Richtung Kreuzberg zwischen Mühlenstr. und Oberbaumbrücke, 08.08.2012 10:00 Uhr bis 17.05.2013 17:00 Uhr¦INKO_113418¦http://asp.vmzberlin.com/VMZ_LSBB_MELDUNGEN_WEB/Meldungskarte.jsp?back=true&map=true&x=52.50189&y=13.4457&zoom=13&meldungId=INKO_113418
 Oberbaumbrücke: Umfahrung wegen Baustelle, etwas Zeitverlust	q3::inwork; 13332,10832 13305,10789
 # 
-#: last_checked: 2012-11-02 vvv
+#: last_checked: 2012-11-05 vvv
 #: next_check: 2012-12-21 vvv
 #: note: vmz-Eintrag: Modersohnstr. (Friedrichshain): Baustelle, Fahrtrichtung gesperrt (bis Ende 12/12) Richtung Stralauer Allee zwischen Simplonstr. und Revaler Str., 02.11.2012 11:13 Uhr bis 21.12.2012 15:00 Uhr	IM_019325
 Modersohnstr.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 14181,11434 14134,11272
@@ -23,8 +23,8 @@ Dirschauer Str.: Einbahnstraßenregelung wegen Umleitungsstrecke	q4::inwork; 1397
 #: next_check ^^^
 #: last_checked ^^^
 # 
-#: last_checked: 2012-11-02
-#: next_check: 2012-11-05
+#: last_checked: 2012-11-05
+#: next_check: 2012-11-10
 Marchlewskistr., Helsingforser Str.: Bauarbeiten, u.U. Ausweichen auf Gehweg	q4::inwork; 13473,11456 13496,11384 13541,11355
 # 
 #: last_checked: 2012-10-25
@@ -43,14 +43,14 @@ Alt-Stralau: Bauarbeiten an der Brücke, enge Durchfahrt	q3::inwork 14652,10201 1
 #: XXX siehe auch: NEW	Friedrichstr. (Mitte): Baustelle, Straße vollständig gesperrt, eine Umleitung ist eingerichtet (bis Anfang 11/12) in beiden Richtungen zwischen Mittelstr. und Unter den Linden, 29.08.2012 07:00 Uhr bis 10.11.2012 16:00 Uhr	INKO_115395
 Friedrichstr.: Fahrbahn zwischen Unter den Linden und Mittelstraße gesperrt, Ausweichen auf Gehweg möglich	q4::inwork 9343,12464 9358,12351
 # 
-#: last_checked: 2012-10-25
+#: last_checked: 2012-11-05
 #: next_check: 2013-12-31
 #: XXX siehe auch INKO_091722
 #: XXX siehe auch temporäre Ampel an der Neustädtischen Kirchstr.
 #: XXX siehe auch Busspur UdL
 Friedrichstr.(Mitte): Fahrbahn wegen Bauarbeiten gesperrt, Ausweichen auf Gehweg schiebend möglich	q4::inwork 9358,12351 9369,12253 9373,12197
 # 
-#: last_checked: 2012-09-22
+#: last_checked: 2012-11-05
 #: next_check: 2013-12-31
 Charlottenstr.: Einbahnstraßenregelung	q4::inwork; 9475,12365 9489,12263 9496,12215
 # 
@@ -83,8 +83,8 @@ Hessische Str.: Sackgasse zur Invalidenstr.	q3::inwork 8775,13606 8690,13723
 #: next_check ^^^
 #: last_checked: ^^^
 # 
-#: last_checked: 2012-08-23
-#: next_check: 2012-11-01
+#: last_checked: 2012-11-05
+#: next_check: 2013-03-01
 #: XXX nach den Bauarbeiten vielleicht besserer Asphalt? -> qualitaet_s-orig
 #: XXX siehe auch Eintrag in gesperrt-orig
 #: XXX siehe auch Einträge in fragezeichen-orig (Falkoniergasse etc.)
@@ -96,18 +96,18 @@ Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9875,12257 9869,12297
 #: last_checked: 2012-11-04
 Helmerdingstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 14465,11195 14442,11101
 # 
-#: last_checked: 2012-10-26
+#: last_checked: 2012-11-05
 #: next_check: 2012-12-15
 #: XXX danach q1 und mit Eintrag unten verknüpfen, falls hier in Zukunft keine Fahrbahn mehr sein wird
 Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q2::inwork 10601,12521 10704,12595
 # 
 # REMOVED --- #: last_checked: 2012-09-19 vvv--- #: next_check: 2012-10-19 vvv --- #: note: komplette Fertigstellung und Verkehrsfreigabe im Frühjahr 2013 --- Rathausstr. und Rathausbrücke: Behinderungen wegen Bauarbeiten möglich	q1::inwork 10281,12310 10362,12351 10422,12395 --- #: next_check: ^^^ --- #: last_checked: ^^^
 # 
-#: last_checked: 2012-10-29
+#: last_checked: 2012-11-05
 #: next_check: 2012-11-30
 Alte Jakobstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10437,11352 10256,11160
 # 
-#: last_checked: 2012-11-02 vvv
+#: last_checked: 2012-11-05 vvv
 #: next_check: 2012-11-30 vvv
 Alte Jakobstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10489,11405 10437,11352
 Neue Grünstr.: Einbahnstraßenregelung wegen Bauarbeiten in der Alten Jakobstr.	q3::inwork; 10389,11390 10446,11470
@@ -223,7 +223,7 @@ Tiergarten: Parkweg	q1 7529,12361 7544,12346 7564,12337 7587,12340 7603,12353
 Tiergarten: Parkweg, Bordstein	q3 7603,12353 7627,12380
 (Bremer Weg - Fasanerieallee): Parkweg	q1 6342,11878 6379,11843 6406,11784 6467,11780 6540,11754
 Parkweg: enge Brücke, Fußweg	q2 14310,9692 14361,9772 14404,9847 14448,9922 14453,9929 14558,10082 14597,10129 14626,10162 14652,10201
-Spittelmarkt: Gehweg	q1 10369,11728 10274,11737 10240,11740
+# REMOVED (nun ein offizieller markierter Radweg) --- Spittelmarkt: Gehweg	q1 10369,11728 10274,11737 10240,11740
 Hasenheide: Fußgänger	q1 11266,8336 11275,8387 11282,8428 11279,8489 11255,8591 11177,8985 11141,9107 11136,9183
 Hasenheide: Fußgänger	q1 11141,9107 11115,9100 11098,9046 11100,8974 11137,8738 11193,8568 11235,8454 11230,8402 11225,8350
 Hasenheide: Fußgänger	q1 11177,8985 11137,8979 11100,8974

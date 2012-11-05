@@ -1172,7 +1172,7 @@ Stephanstr.	1s 6523,4491 6360,4504
 Am Poetensteig, Gramzow	1s:q1 50043,90187 50107,89717
 #: by: Juliane Bölker:
 Atzpodienstr. (Umgehung auf Gehweg möglich)	1s:q3 16485,12384 16509,12518 16564,12513
-Behrenstr./Bebelplatz	1s:q3 9801,12245 9743,12239 9708,12235 9674,12231 9631,12227
+# REMOVED (wegen der Bauarbeiten an der Staatsoper ist die Einbahnstraßenregelung aufgehoben) --- Behrenstr./Bebelplatz	1s:q3 9801,12245 9743,12239 9708,12235 9674,12231 9631,12227
 Halenseestr.	1s:q2 2297,9827 2166,10020 2121,10089 2030,10253 1988,10328 1951,10435
 Zeltinger Platz	1s:q4 2404,25187 2355,25252 2395,25273 2446,25265 2490,25211 2486,25156 2451,25123 2404,25187
 Ludolfinger Platz	1s:q4 2277,25033 2245,25016 2205,25042 2192,25083 2216,25117 2277,25094 2285,25059 2277,25033
@@ -2195,7 +2195,7 @@ Carlsgarten - Wuhlheide: wegen Bauarbeiten Durchfahrtsmöglichkeit zweifelhaft; e
 #: next_check: 2013-02-01
 Alt-Moabit - Invalidenstr.: wegen Bauarbeiten für die Straßenbahnanbindung gesperrt	2:inwork 7443,13008 7416,13058
 # 
-#: last_checked: 2012-11-02
+#: last_checked: 2012-11-05
 #: next_check: 2013-03-01
 #: XXX nach den Bauarbeiten vielleicht besserer Asphalt? -> qualitaet_s-orig
 #: XXX siehe auch Eintrag in handicap_s-orig
@@ -2212,8 +2212,8 @@ Parkplatz des ehem. Möbelhauses ist eingezäunt	2:inwork 17010,14269 17060,14255 
 #: next_check: 2013-06-01
 Rudi-Dutschke-Weg	2:inwork 2627,5095 2913,5294
 # 
-#: last_checked: 2012-10-23
-#: next_check: 2012-12-01
+#: last_checked: 2012-11-05
+#: next_check: 2013-03-15
 #: XXX Siehe auch Baustellenampel an der Wilhelmstr.
 #: XXX Siehe auch handicap in der Voßstr.
 #: XXX laut INKO_113363 bis Ende März 2013 gesperrt
@@ -2227,8 +2227,8 @@ Zur Monumentenhalle: Straße wird wahrscheinlich neu gebaut	2:inwork 8376,8859 84
 #: next_check: 2013-01-01
 Billy-Wilder-Promenade: wegen Bauarbeiten an umliegenden Wohnhäusern gesperrt	2:inwork 2528,1501 2584,1376
 # 
-#: last_checked: 2012-10-25
-#: next_check: 2012-12-01
+#: last_checked: 2012-11-05
+#: next_check: 2013-03-01
 Marx-Engels-Forum: wegen U-Bahn-Bauarbeiten Durchgang zur Rathausstr. nicht möglich	2:inwork 10411,12471 10422,12395
 # 
 #: last_checked: 2012-05-06
@@ -2300,8 +2300,9 @@ Am Langen Jammer: westlicher Abschnitt wegen Bauarbeiten gesperrt	2:inwork 14405
 # REMOVED --- #: last_checked: 2011-04-30 --- Tiergartenufer: Bauarbeiten, gesperrt	2:inwork 5711,11841 5543,11837 5478,11860
 # REMOVED --- #: last_checked: 2011-04-08 --- Bebelplatz: Bauarbeiten, gesperrt	2:inwork 9679,12388 9702,12307 9708,12235
 #
-#: last_checked: 2012-10-19 vvv
-#: next_check: 2012-12-01 vvv
+#: last_checked: 2012-11-05 vvv
+#: next_check: 2013-03-01 vvv
+#: XXX siehe auch aufgehobene Einbahnstraßenregelung oben (Behrenstr./Bebelplatz)
 Behrenstr.: Bauarbeiten, vollständig gesperrt	2:inwork 9743,12239 9801,12245
 Bebelplatz: Bauarbeiten, vollständig gesperrt	2:inwork 9795,12293 9869,12297
 Hinter der Katholischen Kirche: Bauarbeiten, vollständig gesperrt	2:inwork 9808,12182 9801,12245 9795,12293 9780,12401
@@ -2309,8 +2310,8 @@ Bebelplatz: Bauarbeiten an der Staatsoper	2:inwork 9743,12239 9702,12307 9734,12
 #: next_check: ^^^
 #: last_checked: ^^^
 # 
-#: last_checked: 2012-10-25
-#: next_check: 2013-01-15
+#: last_checked: 2012-11-05
+#: next_check: 2013-03-01
 Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 
 # REMOVED (Boulevard Berlin!) --- #: last_checked: 2011-12-25 --- #: next_check: 2012-01-01 --- #: XXX evenuell bleibt dieser Teil dauerhaft gesperrt, weil hier ein Einkaufszentrum entsteht? --- #: XXX auch die Ampel an der Kreuzung prüfen --- Treitschkestr.: Bauarbeiten am Kaufhaus, bis 2012	2:inwork 5219,6215 5125,6262 4971,6345
