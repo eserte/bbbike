@@ -14915,6 +14915,10 @@ sub reset_free_layer {
     delete $layer_line_shorten_end{$abk};
     delete $layer_name{$abk};
     delete $layer_icon{$abk};
+    delete $p_name_draw{$abk};
+    delete $str_name_draw{$abk};
+    delete $no_overlap_label{$abk};
+    delete $do_outline_text{$abk};
     remove_from_stack($abk);
 }
 
