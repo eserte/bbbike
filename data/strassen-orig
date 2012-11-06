@@ -18,12 +18,19 @@ Kreuzbergstr.	NH 8389,9087 8475,9240 8500,9245 8598,9264
 Kreuzbergstr.	H 8598,9264 8769,9290 8969,9320 9154,9345 9211,9354 9248,9350
 Kleine Parkstr.	N 9154,9345 9124,9262
 Wilhelmshöhe	N 9225,9111 9186,9107 9155,9029 9149,8961
-Yorckstr.	HH 9334,9670 9243,9696 9044,9753 9002,9731 8777,9601 8648,9526 8595,9495 8358,9568 8192,9619 8097,9650 7938,9694
+#: by: http://de.wikipedia.org/wiki/Yorckbr%C3%BCcken (Straßenbreite)
+#: street_width: 60m
+Yorckstr.	HH 9334,9670 9243,9696 9044,9753 9002,9731 8777,9601 8648,9526 8595,9495
+#: by: http://de.wikipedia.org/wiki/Yorckbr%C3%BCcken (Straßenbreite)
+#: street_width: 26.5m
+Yorckstr.	HH 8595,9495 8358,9568 8192,9619 8097,9650 7938,9694
 Monumentenstr.	NH 8598,9074 8480,9080 8389,9087
 #: note: als "Monumentenbrücke" ausgeschildert
 Monumentenstr.	NH 8389,9087 8180,9099
 Monumentenstr.	NH 8180,9099 8081,9120 8053,9123 8014,9126 7782,9115 7735,9121
 (zur Depothalle)	NN 8389,9087 8409,8904 8376,8859
+#: by: http://de.wikipedia.org/wiki/Yorckbr%C3%BCcken (Straßenbreite)
+#: street_width: 60m
 Gneisenaustr.	HH 9334,9670 9451,9634 9552,9602 9676,9564 9790,9528 9927,9487 9937,9484 10032,9456 10198,9405 10564,9292
 Mittenwalder Str. (Kreuzberg)	N 10006,9942 9982,9847 9957,9692 9927,9487 9892,9286
 (Marheinekeplatz/Brunnen)	NN 9892,9286 9880,9233
@@ -638,7 +645,8 @@ Bülowstr. (Schöneberg)	HH 7131,10331 7033,10396
 Naumannstr.	N 7707,8915 7709,8777 7713,8600 7716,8370 7716,8356 7715,8308 7710,8051
 #: XXX wird demnächst (1. November 2012) zu "Wilhelm-Kabus-Str." umbenannt (old_name-Eintrag!)
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/26re.pdf/file?y=2012
-#: next_check: 2012-11-01
+#: last_checked: 2012-11-06 (by andk)
+#: next_check: 2012-11-08
 #: XXX der Eintrag in str_cont_ausnahme kann dann entfernt werden
 Naumannstr.	H 7733,8023 7713,8001 7717,7879 7717,7830 7696,7771
 Hildegard-Knef-Platz	N 7696,7771 7774,7724
@@ -1034,6 +1042,12 @@ Mariane-von-Rantzau-Str.	N 12736,11186 12766,11223 12807,11287 12862,11377
 Helen-Ernst-Str.	N 12862,11377 13056,11329 13240,11279 13537,11186 13540,11148
 Valeska-Gert-Str.	N 12807,11287 12866,11256 12926,11224 12984,11194
 (Valeska-Gert-Str. - Am Postbahnhof)	NN 12807,11287 12713,11372
+#: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/verwaltung/org/vermessung/b-plaene/b-plaene/B-V-3.jpg
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/42re.pdf/file?y=2012
+#: last_checked: 2012-11-06
+#: next_check: 2012-11-12
+#: XXX welchen Straßennamen bekommt die Straße?
+(Planstraße D)	N 12793,11132 12866,11256
 Am Postbahnhof	N 12641,11288 12664,11310 12713,11372 12638,11433 12576,11375
 Am Postbahnhof	N 12638,11433 12594,11467 12539,11416
 Wanda-Kallenbach-Str.	N 13214,11064 13150,11101

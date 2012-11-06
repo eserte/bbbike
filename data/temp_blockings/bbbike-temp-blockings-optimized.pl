@@ -1245,16 +1245,7 @@ userdel	q3::inwork 11912,14486 11642,14625
          'type' => 'handicap'
        },
        undef,
-       {
-         'source_id' => 'IM_019006',
-         'until' => 1352217600,
-         'text' => 'Berliner Str. (Pankow): Baustelle, stadtauswärts zwischen Mühlenstr. und Elsa-Brändström-Str. bis Anfang November 2012 gesperrt',
-         'from' => 1342945020,
-         'id' => 2363,
-         'data' => 'userdel	q4::inwork; 10927,17022 10908,17142
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'INKO_113869',
          'until' => 1354291200,
