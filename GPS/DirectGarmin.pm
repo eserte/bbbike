@@ -96,14 +96,10 @@ sub transfer {
 		$main::do_outline_text{$abk_p} = 1;
 		main::plot('p',$abk_p);
 
-		#XXX set_in_stack does not seem to really work
-		main::set_in_stack($abk, 'above', '*route*');
-		main::set_in_stack($abk_p.'-fg', 'above', $abk);
-		## XXX the delay is hackish
-		#$main::c->after(1000, sub {
-		#		    $main::c->raise($abk);
-		#		    $main::c->raise($abk_p."-fg");
-		#		});
+		main::set_in_stack($abk, 'above', 'route');
+		main::set_in_stack($abk_p, 'above', $abk);
+		main::set_in_stack($abk_p.'-label', 'above', $abk); # XXX not done automatically
+		main::restack_delayed();
 	    }
 	} else {
 	    print STDERR $mess;
