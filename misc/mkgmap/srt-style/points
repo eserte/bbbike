@@ -276,7 +276,7 @@ railway=construction & construction=station [0x7104 resolution 22]
 # SRT 0x2f08 -> 0x7103
 railway=halt [0x7103 resolution 23]
 # SRT: addition
-railway=station & bbbike:station_type=RP [0x7105 resolution 22]
+railway=station & bbbike:station_type=RP [0x7105 resolution 23]
 # SRT additions (U/S-Bahn)
 railway=station & station=subway [0x7101 resolution 23]
 railway=station & station=light_rail [0x7102 resolution 23]
@@ -356,13 +356,13 @@ barrier=block | barrier=stile | barrier=kissing_gate
     {add access = no; add foot = yes} [0x660f resolution 24]
 
 # SRT additions
-highway=traffic_signals [0x7001 resolution 20]
-highway=crossing & crossing=traffic_signals [0x7002 resolution 20]
-railway=level_crossing & abandoned=yes [0x7007 resolution 20]
-railway=level_crossing [0x7003 resolution 20]
-highway=crossing & crossing=uncontrolled & crossing_ref=zebra [0x7004 resolution 20]
-traffic_sign=city_limit [0x7201 resolution 20]
-traffic_sign=locality_name [0x7203 resolution 20]
+highway=traffic_signals [0x7001 resolution 22]
+highway=crossing & crossing=traffic_signals [0x7002 resolution 22]
+railway=level_crossing & abandoned=yes [0x7007 resolution 22]
+railway=level_crossing [0x7003 resolution 22]
+highway=crossing & crossing=uncontrolled & crossing_ref=zebra [0x7004 resolution 22]
+traffic_sign=city_limit [0x7201 resolution 22]
+traffic_sign=locality_name [0x7203 resolution 22]
 barrier=cycle_barrier [0x7005 resolution 24]
 # XXX unless I have a different symbol reuse the BNP symbol
 barrier=gate [0x7005 resolution 24]
