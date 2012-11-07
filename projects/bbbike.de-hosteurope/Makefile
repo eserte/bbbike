@@ -841,6 +841,9 @@ post-automatic-deploy-info:
 	@echo "* Push BBBike git repo to github"
 	@echo "    git push"
 	@echo "* Send all messages in GNUS' drafts folder"
+	@echo "* Set tags:"
+	@echo '    git tag -a -m "automatic deployment" deployment/bbbikede/'`date +%Y%m%d`
+	@echo "    git tag -f deployment/bbbikede/current"
 	@echo ""
 
 automatic-deployment:
