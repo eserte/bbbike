@@ -1,20 +1,20 @@
-; THIS FILE WAS CREATED BY DECOMPILER v1.158 AT http://ati.land.cz/gps/typdecomp AND IT MAY NOT
+; THIS FILE WAS CREATED BY DECOMPILER v1.162 AT http://ati.land.cz/gps/typdecomp AND IT MAY NOT
 ; EXACTLY CORRESPOND TO ORIGINAL .TYP FILE.
 ; SOME ELEMENTS MAY BE MISSING FROM THIS FILE, AND OTHERS MAY BE INCOMPLETE!
 ; 
 ; IF YOU USE THIS FILE AS SOURCE FOR cGPSmapper, IT WILL ALMOST CERTAINLY NOT PRODUCE WHAT YOU WANT.
 ; 
 ; IF YOU WANT JUST TO CHANGE SOMETHING, USE TYP EDITOR AT http://ati.land.cz/gps/typedit
-; Original TYP was created 1.8.2010 at 11:50:08, probably with Garmin MPC
+; Original TYP was created 26.10.2012 at 21:27:10, probably with Garmin MPC
 ; Text codepage=1252
 ; Version=1
 
 ; Header length: 0x005b bytes, header format: OLD
 ; Header dump:
-;  draworder:                                        info@0x003c16-0x003d28 (elem_size=5, #elements=55)
+;  draworder:                                        info@0x007000-0x007112 (elem_size=5, #elements=55)
 ;    polygon: data@0x00005b-0x000dde (len=0x000d84), info@0x000ddf-0x000e52 (elem_size=4, #elements=29)
-;      point: data@0x0016ed-0x003b99 (len=0x0024ad), info@0x003b9a-0x003c15 (elem_size=4, #elements=31)
-;       line: data@0x000e53-0x001650 (len=0x0007fe), info@0x001651-0x0016ec (elem_size=4, #elements=39)
+;      point: data@0x001867-0x006f2b (len=0x0056c5), info@0x006f2c-0x006fff (elem_size=4, #elements=53)
+;       line: data@0x000e53-0x0017b6 (len=0x000964), info@0x0017b7-0x001866 (elem_size=4, #elements=44)
 ;   NT1point: data@0x000000-0x000000 (len=0x000000), info@0x000000-0x000000 (elem_size=0, #elements=0)
 
 [_id]
@@ -1241,6 +1241,23 @@ String1=0x02,Track
 
 [_line]
 ; Originally @(0x000e53+0x0000f9)=0x000f4c
+Type=0x00f
+UseOrientation=Y
+XPM="32 3 4 2",
+"XX  c #000000",
+"==  c #ffffff",
+"**  c #ffff80",
+"##  c #000000",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"================================================================",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+};
+String1=0x00,cyclepath
+String2=0x02,Radweg (nicht straßenbegleitend)
+[end]
+
+[_line]
+; Originally @(0x000e53+0x000141)=0x000f94
 Type=0x010
 UseOrientation=Y
 XPM="32 3 2 2",
@@ -1259,7 +1276,25 @@ String2=0x02,In Bau
 [end]
 
 [_line]
-; Originally @(0x000e53+0x000131)=0x000f84
+; Originally @(0x000e53+0x000179)=0x000fcc
+Type=0x013
+UseOrientation=Y
+XPM="32 6 2 2",
+"XX  c #000000",
+"==  c #ffffff",
+"==XX==XX==XX==XX==XX==XX==XX==XX==XX==XX==XX==XX==XX==XX==XX==XX",
+"==XX==XX==XX==XX==XX==XX==XX==XX==XX==XX==XX==XX==XX==XX==XX==XX",
+"==XX==XX==XX==XX==XX==XX==XX==XX==XX==XX==XX==XX==XX==XX==XX==XX",
+"==XX==XX==XX==XX==XX==XX==XX==XX==XX==XX==XX==XX==XX==XX==XX==XX",
+"==XX==XX==XX==XX==XX==XX==XX==XX==XX==XX==XX==XX==XX==XX==XX==XX",
+"==XX==XX==XX==XX==XX==XX==XX==XX==XX==XX==XX==XX==XX==XX==XX==XX"
+};
+String1=0x02,steiler Weg oder Treppe
+String2=0x00,steep track or steps
+[end]
+
+[_line]
+; Originally @(0x000e53+0x0001c9)=0x00101c
 Type=0x014
 UseOrientation=N
 XPM="32 4 2 2",
@@ -1274,7 +1309,7 @@ String1=0x02,Bahngleise
 [end]
 
 [_line]
-; Originally @(0x000e53+0x000156)=0x000fa9
+; Originally @(0x000e53+0x0001ee)=0x001041
 Type=0x016
 UseOrientation=N
 XPM="32 3 4 2",
@@ -1283,15 +1318,15 @@ XPM="32 3 4 2",
 "**  c #ffff80",
 "##  c #000000",
 "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-"================================================================",
+"========XXXX========XXXXXX========XXXX========XXXX========XXXXXX",
 "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 };
-String1=0x02,Radweg (nicht straßenbegleitend)
-String2=0x00,cyclepath
+String1=0x02,Fußweg
+String2=0x00,path
 [end]
 
 [_line]
-; Originally @(0x000e53+0x00019e)=0x000ff1
+; Originally @(0x000e53+0x000217)=0x00106a
 Type=0x018
 UseOrientation=N
 XPM="0 0 1 2",
@@ -1302,7 +1337,7 @@ String2=0x00,thin stream
 [end]
 
 [_line]
-; Originally @(0x000e53+0x0001b8)=0x00100b
+; Originally @(0x000e53+0x000231)=0x001084
 Type=0x01a
 UseOrientation=N
 XPM="32 5 2 2",
@@ -1318,7 +1353,7 @@ String1=0x02,Route-Ferry
 [end]
 
 [_line]
-; Originally @(0x000e53+0x0001e2)=0x001035
+; Originally @(0x000e53+0x00025b)=0x0010ae
 Type=0x01c
 UseOrientation=N
 XPM="32 1 2 2",
@@ -1330,7 +1365,7 @@ String1=0x02,Grenze
 [end]
 
 [_line]
-; Originally @(0x000e53+0x0001f4)=0x001047
+; Originally @(0x000e53+0x00026d)=0x0010c0
 Type=0x01d
 UseOrientation=N
 XPM="32 1 2 2",
@@ -1342,7 +1377,7 @@ String1=0x02,Landesgrenze
 [end]
 
 [_line]
-; Originally @(0x000e53+0x00020c)=0x00105f
+; Originally @(0x000e53+0x000285)=0x0010d8
 Type=0x01e
 UseOrientation=N
 XPM="32 2 2 2",
@@ -1355,7 +1390,7 @@ String1=0x02,Staatsgrenze
 [end]
 
 [_line]
-; Originally @(0x000e53+0x000228)=0x00107b
+; Originally @(0x000e53+0x0002a1)=0x0010f4
 Type=0x01f
 UseOrientation=N
 XPM="0 0 1 2",
@@ -1365,7 +1400,7 @@ String1=0x02,Fluß
 [end]
 
 [_line]
-; Originally @(0x000e53+0x000235)=0x001088
+; Originally @(0x000e53+0x0002ae)=0x001101
 Type=0x021
 UseOrientation=N
 XPM="0 0 2 2",
@@ -1377,7 +1412,7 @@ String1=0x02,Höhenline
 [end]
 
 [_line]
-; Originally @(0x000e53+0x00024b)=0x00109e
+; Originally @(0x000e53+0x0002c4)=0x001117
 Type=0x027
 UseOrientation=N
 XPM="0 0 2 2",
@@ -1389,7 +1424,7 @@ String1=0x02,Aeroway-Runway
 [end]
 
 [_line]
-; Originally @(0x000e53+0x000266)=0x0010b9
+; Originally @(0x000e53+0x0002df)=0x001132
 Type=0x029
 UseOrientation=N
 XPM="32 5 2 2",
@@ -1406,7 +1441,7 @@ String2=0x00,power line
 [end]
 
 [_line]
-; Originally @(0x000e53+0x00029d)=0x0010f0
+; Originally @(0x000e53+0x000316)=0x001169
 Type=0x02c
 UseOrientation=Y
 XPM="32 8 2 2",
@@ -1430,7 +1465,7 @@ String2=0x00,FIXME
 [end]
 
 [_line]
-; Originally @(0x000e53+0x0002d2)=0x001125
+; Originally @(0x000e53+0x00034b)=0x00119e
 Type=0x02d
 UseOrientation=Y
 XPM="32 4 2 2",
@@ -1445,7 +1480,7 @@ String1=0x02,S-Bahn
 [end]
 
 [_line]
-; Originally @(0x000e53+0x0002f3)=0x001146
+; Originally @(0x000e53+0x00036c)=0x0011bf
 Type=0x02e
 UseOrientation=Y
 XPM="32 2 2 2",
@@ -1458,7 +1493,7 @@ String1=0x02,U-Bahn
 [end]
 
 [_line]
-; Originally @(0x000e53+0x000309)=0x00115c
+; Originally @(0x000e53+0x000382)=0x0011d5
 Type=0x02f
 UseOrientation=Y
 XPM="32 8 2 2",
@@ -1478,7 +1513,7 @@ String2=0x02,Radweg, benutzungspflichtig
 [end]
 
 [_line]
-; Originally @(0x000e53+0x000363)=0x0011b6
+; Originally @(0x000e53+0x0003dc)=0x00122f
 Type=0x030
 UseOrientation=Y
 XPM="32 8 2 2",
@@ -1498,7 +1533,7 @@ String2=0x02,Radweg
 [end]
 
 [_line]
-; Originally @(0x000e53+0x00039d)=0x0011f0
+; Originally @(0x000e53+0x000416)=0x001269
 Type=0x031
 UseOrientation=Y
 XPM="32 9 2 2",
@@ -1519,7 +1554,7 @@ String2=0x02,Radweg, unbekannt
 [end]
 
 [_line]
-; Originally @(0x000e53+0x0003ef)=0x001242
+; Originally @(0x000e53+0x000468)=0x0012bb
 Type=0x032
 UseOrientation=Y
 XPM="32 8 2 2",
@@ -1539,7 +1574,7 @@ String2=0x02,Busspur für Radfahrer
 [end]
 
 [_line]
-; Originally @(0x000e53+0x000443)=0x001296
+; Originally @(0x000e53+0x0004bc)=0x00130f
 Type=0x033
 UseOrientation=Y
 XPM="32 9 2 2",
@@ -1560,7 +1595,7 @@ String2=0x02,Busspur, Zeiten unbekannt
 [end]
 
 [_line]
-; Originally @(0x000e53+0x0004a1)=0x0012f4
+; Originally @(0x000e53+0x00051a)=0x00136d
 Type=0x034
 UseOrientation=Y
 XPM="32 8 2 2",
@@ -1580,7 +1615,7 @@ String2=0x02,Radspur, benutzungspflichtig
 [end]
 
 [_line]
-; Originally @(0x000e53+0x0004fc)=0x00134f
+; Originally @(0x000e53+0x000575)=0x0013c8
 Type=0x035
 UseOrientation=Y
 XPM="32 8 2 2",
@@ -1600,7 +1635,7 @@ String2=0x02,Radspur, Suggestivstreifen
 [end]
 
 [_line]
-; Originally @(0x000e53+0x000554)=0x0013a7
+; Originally @(0x000e53+0x0005cd)=0x001420
 Type=0x036
 UseOrientation=Y
 XPM="32 9 2 2",
@@ -1621,7 +1656,7 @@ String2=0x02,Radspur, unbekannt
 [end]
 
 [_line]
-; Originally @(0x000e53+0x0005a7)=0x0013fa
+; Originally @(0x000e53+0x000620)=0x001473
 Type=0x037
 UseOrientation=Y
 XPM="32 6 2 2",
@@ -1639,7 +1674,7 @@ String2=0x02,schlechte Qualität
 [end]
 
 [_line]
-; Originally @(0x000e53+0x0005e6)=0x001439
+; Originally @(0x000e53+0x00065f)=0x0014b2
 Type=0x038
 UseOrientation=Y
 XPM="32 6 2 2",
@@ -1657,7 +1692,7 @@ String2=0x02,mäßige Qualität
 [end]
 
 [_line]
-; Originally @(0x000e53+0x000628)=0x00147b
+; Originally @(0x000e53+0x0006a1)=0x0014f4
 Type=0x039
 UseOrientation=Y
 XPM="32 6 2 2",
@@ -1675,7 +1710,7 @@ String2=0x14,gute Qualität
 [end]
 
 [_line]
-; Originally @(0x000e53+0x000663)=0x0014b6
+; Originally @(0x000e53+0x0006dc)=0x00152f
 Type=0x03a
 UseOrientation=Y
 XPM="32 8 2 2",
@@ -1695,7 +1730,7 @@ String2=0x02,Busspur für Radfahrer, zeitlich begrenzt
 [end]
 
 [_line]
-; Originally @(0x000e53+0x0006cc)=0x00151f
+; Originally @(0x000e53+0x000745)=0x001598
 Type=0x03b
 UseOrientation=Y
 XPM="32 13 2 2",
@@ -1720,7 +1755,7 @@ String2=0x02,Zweiwegeradweg (benutzungspflichtig oder nicht)
 [end]
 
 [_line]
-; Originally @(0x000e53+0x00074b)=0x00159e
+; Originally @(0x000e53+0x0007c4)=0x001617
 Type=0x03c
 UseOrientation=Y
 XPM="32 8 2 2",
@@ -1740,7 +1775,7 @@ String2=0x02,Einbahnstraße
 [end]
 
 [_line]
-; Originally @(0x000e53+0x000788)=0x0015db
+; Originally @(0x000e53+0x000801)=0x001654
 Type=0x03d
 UseOrientation=Y
 XPM="32 7 2 2",
@@ -1759,7 +1794,55 @@ String2=0x02,gesperrt für Radfahrer
 [end]
 
 [_line]
-; Originally @(0x000e53+0x0007d8)=0x00162b
+; Originally @(0x000e53+0x000851)=0x0016a4
+Type=0x03e
+UseOrientation=Y
+XPM="32 1 2 2",
+"XX  c #aaaaaa",
+"==  c none",
+"==XXXXXX==XXXXXX==XXXXXX==XXXXXX==XXXXXX==XXXXXX==XXXXXX==XXXXXX"
+};
+String1=0x00,abandoned railway or under construction
+String2=0x02,stillgelegte Bahnstrecke oder in Bau
+[end]
+
+[_line]
+; Originally @(0x000e53+0x0008aa)=0x0016fd
+Type=0x03f
+UseOrientation=Y
+XPM="32 3 2 2",
+"XX  c #626262",
+"==  c #ffffff",
+"================================================================",
+"======XXXXXXXXXX======XXXXXXXXXX======XXXXXXXXXX======XXXXXXXXXX",
+"================================================================"
+};
+String1=0x00,narrow gauge
+String2=0x02,Schmalspur- oder Parkeisenbahn
+[end]
+
+[_line]
+; Originally @(0x000e53+0x0008ed)=0x001740
+Type=0x040
+UseOrientation=Y
+XPM="32 8 2 2",
+"XX  c #00ff00",
+"==  c none",
+"================================================================",
+"================================================================",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+};
+String1=0x00,green trafficlight time
+String2=0x02,grüne Ampelphase
+[end]
+
+[_line]
+; Originally @(0x000e53+0x00093e)=0x001791
 Type=0x10e
 SubType=0x02
 UseOrientation=N
@@ -1778,7 +1861,7 @@ String3=0x00,STAUMAUER
 ; start of point collection
 ; --------------------------------------------------------------------------
 [_point]
-; Originally @(0x0016ed+0x000000)=0x0016ed
+; Originally @(0x001867+0x000000)=0x001867
 Type=0x016
 XPM="14 14 5 2",
 "XX  c #000000",
@@ -1810,7 +1893,7 @@ String2=0x02,Leuchtturm
 [end]
 
 [_point]
-; Originally @(0x0016ed+0x000093)=0x001780
+; Originally @(0x001867+0x000093)=0x0018fa
 Type=0x027
 XPM="12 12 41 2",
 "XX  c #003399",
@@ -1872,7 +1955,7 @@ String2=0x02,Ausfahrt
 [end]
 
 [_point]
-; Originally @(0x0016ed+0x0001c9)=0x0018b6
+; Originally @(0x001867+0x0001c9)=0x001a30
 Type=0x02a
 XPM="16 16 25 2",
 "XX  c #f0f8fc",
@@ -1922,7 +2005,7 @@ String2=0x02,Restaurant
 [end]
 
 [_point]
-; Originally @(0x0016ed+0x00032f)=0x001a1c
+; Originally @(0x001867+0x00032f)=0x001b96
 Type=0x02a
 SubType=0x07
 XPM="11 14 30 2",
@@ -1975,7 +2058,7 @@ String1=0x02,Fast-Food
 [end]
 
 [_point]
-; Originally @(0x0016ed+0x000431)=0x001b1e
+; Originally @(0x001867+0x000431)=0x001c98
 Type=0x02a
 SubType=0x0e
 XPM="15 15 2 2",
@@ -2002,7 +2085,7 @@ String2=0x02,Cafe
 [end]
 
 [_point]
-; Originally @(0x0016ed+0x000486)=0x001b73
+; Originally @(0x001867+0x000486)=0x001ced
 Type=0x02b
 SubType=0x01
 XPM="16 16 19 2",
@@ -2047,7 +2130,7 @@ String2=0x02,Hotel
 [end]
 
 [_point]
-; Originally @(0x0016ed+0x0005d0)=0x001cbd
+; Originally @(0x001867+0x0005d0)=0x001e37
 Type=0x02c
 SubType=0x06
 XPM="15 12 37 2",
@@ -2106,7 +2189,7 @@ String2=0x02,Spielplatz
 [end]
 
 [_point]
-; Originally @(0x0016ed+0x000724)=0x001e11
+; Originally @(0x001867+0x000724)=0x001f8b
 Type=0x02c
 SubType=0x07
 XPM="16 15 22 2",
@@ -2153,7 +2236,7 @@ String2=0x02,Zoo
 [end]
 
 [_point]
-; Originally @(0x0016ed+0x000863)=0x001f50
+; Originally @(0x001867+0x000863)=0x0020ca
 Type=0x02e
 SubType=0x08
 XPM="8 13 4 2",
@@ -2184,7 +2267,7 @@ String2=0x02,Baumarkt
 [end]
 
 [_point]
-; Originally @(0x0016ed+0x0008c4)=0x001fb1
+; Originally @(0x001867+0x0008c4)=0x00212b
 Type=0x02e
 SubType=0x09
 XPM="14 14 4 2",
@@ -2216,7 +2299,7 @@ String2=0x02,Möbel
 [end]
 
 [_point]
-; Originally @(0x0016ed+0x00094d)=0x00203a
+; Originally @(0x001867+0x00094d)=0x0021b4
 Type=0x02f
 SubType=0x08
 XPM="11 11 3 2",
@@ -2239,7 +2322,7 @@ String1=0x02,Haltestelle
 [end]
 
 [_point]
-; Originally @(0x0016ed+0x000987)=0x002074
+; Originally @(0x001867+0x000987)=0x0021ee
 Type=0x02f
 SubType=0x15
 XPM="12 12 69 2",
@@ -2329,7 +2412,7 @@ String1=0x02,Entsorgung
 [end]
 
 [_point]
-; Originally @(0x0016ed+0x000b1b)=0x002208
+; Originally @(0x001867+0x000b1b)=0x002382
 Type=0x02f
 SubType=0x1b
 XPM="16 16 90 2",
@@ -2445,7 +2528,7 @@ String2=0x02,Fahrradparkplatz
 [end]
 
 [_point]
-; Originally @(0x0016ed+0x000d7f)=0x00246c
+; Originally @(0x001867+0x000d7f)=0x0025e6
 Type=0x030
 SubType=0x08
 XPM="16 10 16 2",
@@ -2485,7 +2568,99 @@ String2=0x02,Feuerwache
 [end]
 
 [_point]
-; Originally @(0x0016ed+0x000e77)=0x002564
+; Originally @(0x001867+0x000e77)=0x0026de
+Type=0x04a
+XPM="16 16 68 2",
+"XX  c #000000",
+"==  c #00bf00",
+"**  c #008000",
+"##  c #004000",
+"%%  c #00ff00",
+"11  c #0bfa0e",
+"22  c #74e189",
+"33  c #c7d2e8",
+"44  c #c7d2e7",
+"55  c #c5d0e6",
+"66  c #b8ccdd",
+"77  c #13e228",
+"88  c #6bd688",
+"99  c #b5c2d6",
+"00  c #939eb3",
+"AA  c #8f9aaf",
+"BB  c #becadf",
+"CC  c #9fcbc5",
+"DD  c #2cf236",
+"EE  c #939eb4",
+"FF  c #232f44",
+"GG  c #18243a",
+"HH  c #172339",
+"II  c #abb7cc",
+"JJ  c #63e974",
+"KK  c #b9c5da",
+"LL  c #8f9ab0",
+"MM  c #2c384d",
+"NN  c #556176",
+"OO  c #030f25",
+"PP  c #8d99ae",
+"QQ  c #c0cbe0",
+"RR  c #8894a9",
+"SS  c #0f1b30",
+"TT  c #677287",
+"UU  c #b8c3d8",
+"VV  c #2a354b",
+"WW  c #a1adc2",
+"YY  c #6c778d",
+"ZZ  c #616d82",
+"aa  c #081329",
+"bb  c #3d495e",
+"cc  c #606c81",
+"dd  c #273348",
+"ee  c #051127",
+"ff  c #424e63",
+"gg  c #727e93",
+"hh  c #4fd45f",
+"ii  c #a7b3c8",
+"jj  c #111d32",
+"kk  c #142036",
+"ll  c #0b162c",
+"mm  c #354156",
+"nn  c #40c550",
+"oo  c #7b879c",
+"pp  c #576278",
+"qq  c #b5c0d5",
+"rr  c #101b31",
+"ss  c #4d596e",
+"tt  c #becfe1",
+"uu  c #a6b2c7",
+"vv  c #6a758b",
+"ww  c #12e327",
+"xx  c #9fcac6",
+"yy  c #c1d0e4",
+"zz  c #53c67c",
+"!!  c #28f033",
+"@@  c #5ae56d",
+"XX==************************==XX",
+"==##%%%%%%%%%%%%%%%%%%%%%%%%##==",
+"**%%112233334455333355336677%%**",
+"**%%88559900AA00AAAAAAAABBCCDD**",
+"**%%3333EEFFGGGGHHHHHHHHII33JJ**",
+"**%%3355KKLLGGMMNNOOMMPPQQ33JJ**",
+"**%%553344RRSSTTUUFFVVWW5533JJ**",
+"**%%99YYZZMMaabbccddeeffZZgghh**",
+"**%%iiMMjjOOaaGGGGkklleeHHmmnn**",
+"**%%3355ZZjjoo3355BBppeePP33JJ**",
+"**%%55qqmmVV99333333RRrrss55JJ**",
+"**%%ttuuNNvv4433335599TTNN99JJ**",
+"**%%wwxx5533333344333355yyzz%%**",
+"**%%%%!!JJJJJJJJJJJJJJJJ@@%%%%**",
+"==##%%%%%%%%%%%%%%%%%%%%%%%%##==",
+"XX==************************==XX"
+};
+String1=0x00,picnic site
+[end]
+
+[_point]
+; Originally @(0x001867+0x001078)=0x0028df
 Type=0x04c
 XPM="15 15 3 2",
 "XX  c #000000",
@@ -2511,7 +2686,7 @@ String1=0x02,Information
 [end]
 
 [_point]
-; Originally @(0x0016ed+0x000ed1)=0x0025be
+; Originally @(0x001867+0x0010d2)=0x002939
 Type=0x061
 XPM="14 14 3 2",
 "XX  c #000000",
@@ -2541,7 +2716,7 @@ String2=0x00,shelter
 [end]
 
 [_point]
-; Originally @(0x0016ed+0x000f31)=0x00261e
+; Originally @(0x001867+0x001132)=0x002999
 Type=0x065
 XPM="13 14 3 2",
 "XX  c #000000",
@@ -2571,7 +2746,7 @@ String2=0x00,fountain
 [end]
 
 [_point]
-; Originally @(0x0016ed+0x000f8e)=0x00267b
+; Originally @(0x001867+0x00118f)=0x0029f6
 Type=0x065
 SubType=0x11
 XPM="7 16 3 2",
@@ -2604,7 +2779,7 @@ String2=0x02,Quelle
 [end]
 
 [_point]
-; Originally @(0x0016ed+0x000fd0)=0x0026bd
+; Originally @(0x001867+0x0011d1)=0x002a38
 Type=0x066
 SubType=0x05
 XPM="9 4 3 2",
@@ -2621,7 +2796,7 @@ String2=0x02,Bank
 [end]
 
 [_point]
-; Originally @(0x0016ed+0x000ffa)=0x0026e7
+; Originally @(0x001867+0x0011fb)=0x002a62
 Type=0x070
 SubType=0x01
 XPM="6 16 37 2",
@@ -2684,7 +2859,7 @@ String2=0x02,Ampel
 [end]
 
 [_point]
-; Originally @(0x0016ed+0x0010f9)=0x0027e6
+; Originally @(0x001867+0x0012fa)=0x002b61
 Type=0x070
 SubType=0x02
 DayXPM="12 32 28 2",
@@ -2844,7 +3019,7 @@ String2=0x02,Fußgängerampel
 [end]
 
 [_point]
-; Originally @(0x0016ed+0x001558)=0x002c45
+; Originally @(0x001867+0x001759)=0x002fc0
 Type=0x070
 SubType=0x03
 XPM="12 16 4 2",
@@ -2874,7 +3049,7 @@ String2=0x02,Bahnübergang
 [end]
 
 [_point]
-; Originally @(0x0016ed+0x0015ec)=0x002cd9
+; Originally @(0x001867+0x0017ed)=0x003054
 Type=0x070
 SubType=0x04
 XPM="16 16 123 2",
@@ -3023,7 +3198,7 @@ String2=0x02,Zebrastreifen
 [end]
 
 [_point]
-; Originally @(0x0016ed+0x0018ba)=0x002fa7
+; Originally @(0x001867+0x001abb)=0x003322
 Type=0x070
 SubType=0x05
 XPM="10 5 4 2",
@@ -3042,7 +3217,7 @@ String2=0x02,Drängelgitter
 [end]
 
 [_point]
-; Originally @(0x0016ed+0x001905)=0x002ff2
+; Originally @(0x001867+0x001b06)=0x00336d
 Type=0x070
 SubType=0x06
 XPM="8 7 2 2",
@@ -3061,27 +3236,85 @@ String2=0x02,Treppe
 [end]
 
 [_point]
-; Originally @(0x0016ed+0x00192f)=0x00301c
+; Originally @(0x001867+0x001b30)=0x003397
+Type=0x070
+SubType=0x07
+XPM="8 10 4 2",
+"XX  c #000000",
+"==  c #000000",
+"**  c #868686",
+"##  c #ffffff",
+"XX==XXXXXXXX==XX",
+"==**==XXXX==**==",
+"==****====****==",
+"XX==########==XX",
+"XXXX==####==XXXX",
+"XXXX==####==XXXX",
+"XX==########==XX",
+"==****====****==",
+"==**==XXXX==**==",
+"XX==XXXXXXXX==XX"
+};
+String1=0x00,infrequent railway crossing
+String2=0x02,selten genutzter Bahnübergang
+[end]
+
+[_point]
+; Originally @(0x001867+0x001ba8)=0x00340f
 Type=0x071
 SubType=0x01
-XPM="15 15 2 2",
+XPM="15 15 36 2",
 "XX  c #000080",
-"==  c #ffffff",
-"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-"XXXXXX====XXXXXXXXXX====XXXXXX",
-"XXXXXX====XXXXXXXXXX====XXXXXX",
-"XXXXXX====XXXXXXXXXX====XXXXXX",
-"XXXXXX====XXXXXXXXXX====XXXXXX",
-"XXXXXX====XXXXXXXXXX====XXXXXX",
-"XXXXXX====XXXXXXXXXX====XXXXXX",
-"XXXXXX====XXXXXXXXXX====XXXXXX",
-"XXXXXX====XXXXXXXXXX====XXXXXX",
-"XXXXXX====XXXXXXXXXX====XXXXXX",
-"XXXXXXXX====XXXXXX====XXXXXXXX",
-"XXXXXXXXXX==========XXXXXXXXXX",
-"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+"==  c #060683",
+"**  c #0c0c86",
+"##  c #00007f",
+"%%  c #6767b3",
+"11  c #c3c3e1",
+"22  c #5656ab",
+"33  c #c2c2e1",
+"44  c #6e6eb7",
+"55  c #8989c4",
+"66  c #ffffff",
+"77  c #7272b8",
+"88  c #7272b9",
+"99  c #9292c9",
+"00  c #7373b9",
+"AA  c #8787c3",
+"BB  c #7a7abc",
+"CC  c #7c7cbd",
+"DD  c #9090c7",
+"EE  c #6b6bb5",
+"FF  c #b4b4da",
+"GG  c #101087",
+"HH  c #2b2b95",
+"II  c #e1e1f0",
+"JJ  c #fafafc",
+"KK  c #b7b7db",
+"LL  c #e4e4f2",
+"MM  c #303098",
+"NN  c #ececf5",
+"OO  c #9e9ecf",
+"PP  c #cfcfe7",
+"QQ  c #dbdbed",
+"RR  c #4141a0",
+"SS  c #070783",
+"TT  c #15158b",
+"UU  c #1f1f90",
+"XXXX==****==##XX##==****==##XX",
+"XX##%%111122##XX##22331144##XX",
+"XX##55666677######88666699##XX",
+"XX##55666677##XX##77666699##XX",
+"####55666677######77666699##XX",
+"XX##55666677##XX##00666699##XX",
+"XX##55666677######77666699##XX",
+"XX##55666677######77666699##XX",
+"XX##55666677######88666699##XX",
+"XX##AA6666BB######CC6666DD##XX",
+"####EE6666FFGG##GGFF666600##XX",
+"####HHII66JJKK55KKJJ66LLMM##XX",
+"XXXXXX%%NN6666666666NNEE####XX",
+"XXXXXXXXMMOOPPQQPPOORR####XXXX",
+"XXXXXXXXSSSSTTUUTT==####XXXXXX"
 };
 String1=0x00,subway station
 String2=0x02,U-Bahnstation
@@ -3089,35 +3322,129 @@ String3=0x13,podzemna stanica
 [end]
 
 [_point]
-; Originally @(0x0016ed+0x0019a9)=0x003096
+; Originally @(0x001867+0x001d3e)=0x0035a5
 Type=0x071
 SubType=0x02
-XPM="15 15 3 2",
+XPM="15 15 97 2",
 "XX  c #000000",
-"==  c #008000",
-"**  c #ffffff",
-"XXXXXXXX==============XXXXXXXX",
-"XXXX======================XXXX",
-"XX========**********========XX",
-"XX======****========**======XX",
-"======****============**======",
-"======******==================",
-"======************============",
-"========**************========",
-"============************======",
-"==================******======",
-"======**============****======",
-"XX======**========****======XX",
-"XX========**********========XX",
-"XXXX======================XXXX",
-"XXXXXXXX==============XXXXXXXX"
+"==  c #006633",
+"**  c #007135",
+"##  c #006f35",
+"%%  c #006f35",
+"11  c #006f35",
+"22  c #006f34",
+"33  c #00802b",
+"44  c #007035",
+"55  c #007036",
+"66  c #006f35",
+"77  c #07733b",
+"88  c #006f35",
+"99  c #006e35",
+"00  c #006f35",
+"AA  c #2a8756",
+"BB  c #aacfbc",
+"CC  c #eef5f2",
+"DD  c #ffffff",
+"EE  c #f2f8f5",
+"FF  c #b1d3c1",
+"GG  c #44956b",
+"HH  c #007036",
+"II  c #007034",
+"JJ  c #2e8959",
+"KK  c #f3f8f5",
+"LL  c #f6faf8",
+"MM  c #62a683",
+"NN  c #3d9165",
+"OO  c #64a784",
+"PP  c #bfdbcc",
+"QQ  c #6dad8b",
+"RR  c #006f35",
+"SS  c #a1cab5",
+"TT  c #c5ded1",
+"UU  c #58a17b",
+"VV  c #7db698",
+"WW  c #006f35",
+"YY  c #006040",
+"ZZ  c #006e35",
+"aa  c #bcd9ca",
+"bb  c #fefefe",
+"cc  c #8fc0a6",
+"dd  c #2d8859",
+"ee  c #017036",
+"ff  c #06723a",
+"gg  c #006e34",
+"hh  c #006e34",
+"ii  c #7eb699",
+"jj  c #e7f1ec",
+"kk  c #9dc8b1",
+"ll  c #3a9063",
+"mm  c #006f35",
+"nn  c #006f35",
+"oo  c #a2cab5",
+"pp  c #77b293",
+"qq  c #006f35",
+"rr  c #006e35",
+"ss  c #2b8757",
+"tt  c #82b89c",
+"uu  c #cee3d8",
+"vv  c #fbfdfc",
+"ww  c #107842",
+"xx  c #006e34",
+"yy  c #007036",
+"zz  c #3e9266",
+"!!  c #248352",
+"@@  c #cce2d7",
+"$$  c #21824f",
+"^^  c #008040",
+"&&  c #006f35",
+"((  c #a5ccb8",
+"))  c #98c5ad",
+"--  c #09743c",
+"++  c #deece5",
+"//  c #006f35",
+"<<  c #006f36",
+">>  c #006f35",
+",,  c #74b191",
+"::  c #ecf4f0",
+"X=  c #96c4ac",
+"X*  c #fafcfb",
+"X#  c #007135",
+"X%  c #006e36",
+"X1  c #368d60",
+"X2  c #9ec8b2",
+"X3  c #e2efe8",
+"X4  c #b3d4c3",
+"X5  c #348c5e",
+"X6  c #006f35",
+"X7  c #006e35",
+"X8  c #006e37",
+"X9  c #006f35",
+"X0  c #006f35",
+"XA  c #007035",
+"XB  c #006f35",
+"XC  c #007033",
+"XXXXXXXX==**##%%112233XXXXXXXX",
+"XXXXXX445566667766668899XXXXXX",
+"XXXX1100AABBCCDDEEFFGG66HHXXXX",
+"XXII66JJKKLLMMNNOOPPDDQQ66RRXX",
+"338866SSDDTT66666666UUVV66WWYY",
+"ZZ6666aaDDbbccddee6666ff6666gg",
+"hh6666iiDDDDDDDDjjkkll666666mm",
+"nn6666ffoobbDDDDDDDDDDpp6666qq",
+"rr66666666ssttuuDDDDDDvvww66xx",
+"yy6666zz66666666!!@@DDDD$$66ZZ",
+"^^&&66(())--666666VVDD++66//33",
+"XX<<>>,,bb::X=QQccLLX*zz00X#XX",
+"XXXXX%>>X1X2X3bbKKX4X5X6X7XXXX",
+"XXXXXXX8X96666666666X0**XXXXXX",
+"XXXXXXXXXXXAXB##XBXCXXXXXXXXXX"
 };
 String1=0x00,light rail station
 String2=0x02,S-Bahnstation
 [end]
 
 [_point]
-; Originally @(0x0016ed+0x001a19)=0x003106
+; Originally @(0x001867+0x001f9c)=0x003803
 Type=0x071
 SubType=0x03
 DayXPM="25 20 125 2",
@@ -3408,7 +3735,410 @@ String2=0x00,railway station
 [end]
 
 [_point]
-; Originally @(0x0016ed+0x002168)=0x003855
+; Originally @(0x001867+0x0026eb)=0x003f52
+Type=0x071
+SubType=0x04
+XPM="25 20 121 2",
+"XX  c #000000",
+"==  c #646464",
+"**  c #646464",
+"##  c #646464",
+"%%  c #646464",
+"11  c #646464",
+"22  c #646464",
+"33  c #646464",
+"44  c #646464",
+"55  c #646464",
+"66  c #646464",
+"77  c #646464",
+"88  c #646464",
+"99  c #646464",
+"00  c #646464",
+"AA  c #646464",
+"BB  c #646464",
+"CC  c #646464",
+"DD  c #646464",
+"EE  c #646464",
+"FF  c #707070",
+"GG  c #8b8b8b",
+"HH  c #7e7e7e",
+"II  c #646464",
+"JJ  c #646464",
+"KK  c #646464",
+"LL  c #d2d2d2",
+"MM  c #ffffff",
+"NN  c #f9f9f9",
+"OO  c #797979",
+"PP  c #646464",
+"QQ  c #646464",
+"RR  c #646464",
+"SS  c #878787",
+"TT  c #b8b8b8",
+"UU  c #646464",
+"VV  c #646464",
+"WW  c #bfbfbf",
+"YY  c #e8e8e8",
+"ZZ  c #646464",
+"aa  c #646464",
+"bb  c #8a8a8a",
+"cc  c #adadad",
+"dd  c #9d9d9d",
+"ee  c #646464",
+"ff  c #646464",
+"gg  c #8c8c8c",
+"hh  c #8f8f8f",
+"ii  c #646464",
+"jj  c #646464",
+"kk  c #646464",
+"ll  c #fbfbfb",
+"mm  c #888888",
+"nn  c #646464",
+"oo  c #646464",
+"pp  c #646464",
+"qq  c #868686",
+"rr  c #a3a3a3",
+"ss  c #878787",
+"tt  c #646464",
+"uu  c #646464",
+"vv  c #646464",
+"ww  c #737373",
+"xx  c #afafaf",
+"yy  c #6d6d6d",
+"zz  c #a0a0a0",
+"!!  c #818181",
+"@@  c #d4d4d4",
+"$$  c #c0c0c0",
+"^^  c #656565",
+"&&  c #646464",
+"((  c #646464",
+"))  c #8e8e8e",
+"--  c #d0d0d0",
+"++  c #f5f5f5",
+"//  c #656565",
+"<<  c #c3c3c3",
+">>  c #9f9f9f",
+",,  c #d9d9d9",
+"::  c #aeaeae",
+"X=  c #c4c4c4",
+"X*  c #6d6d6d",
+"X#  c #666666",
+"X%  c #646464",
+"X1  c #646464",
+"X2  c #7f7f7f",
+"X3  c #777777",
+"X4  c #a9a9a9",
+"X5  c #cfcfcf",
+"X6  c #b2b2b2",
+"X7  c #f6f6f6",
+"X8  c #a8a8a8",
+"X9  c #cacaca",
+"X0  c #838383",
+"XA  c #868686",
+"XB  c #b5b5b5",
+"XC  c #cdcdcd",
+"XD  c #a4a4a4",
+"XE  c #646464",
+"XF  c #828282",
+"XG  c #646464",
+"XH  c #646464",
+"XI  c #646464",
+"XJ  c #646464",
+"XK  c #646464",
+"XL  c #646464",
+"XM  c #646464",
+"XN  c #646464",
+"XO  c #646464",
+"XP  c #646464",
+"XQ  c #646464",
+"XR  c #646464",
+"XS  c #646464",
+"XT  c #646464",
+"XU  c #646464",
+"XV  c #646464",
+"XW  c #646464",
+"XY  c #646464",
+"XZ  c #646464",
+"Xa  c #646464",
+"Xb  c #646464",
+"XXXXXX==**##%%**11223344XXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXX55667788==XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXX99000000AABBCC00DD99XXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXEEFFGGGGGGGGGGGGGGHHIIJJXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXKKLLMMMMMMMMMMMMMMNNOOPPQQXXXXXXXXXXXXXXXXXXXXXX",
+"RRSSMMMMMMMMMMMMMMMMMMTTIIUUXXXXXXXXXXXXXXXXXXXXXX",
+"VVWWMMMMMMMMMMMMMMMMMMYYIIIIZZXXXXXXXXXXXXXXXXXXXX",
+"aabbccccccccccccccccccddIIII##eeXXXXXXXXXXXXXXXXXX",
+"ffIIIIIIIIIIIIIIIIIIIIIIIIgghhiijjXXXXXXXXXXXXXXXX",
+"kkIIIIIIIIIIIIIIIIIIIIIIIIggllmmnnooXXXXXXXXXXXXXX",
+"ppIIIIIIIIIIIIIIIIIIIIIIIIqqMMrrssttuuXXXXXXXXXXXX",
+"vvwwxxyyIIIIIIIIIIbbzzIIII!!MMrr@@$$^^&&((XXXXXXXX",
+"22ddMM))IIIIIIIIII--++//IIyy<<>>@@,,::X=X*X#X%ooXX",
+"X1//X2IIIIIIIIIIIIyyX3IIIIIIIIIIX4X5X6X7X8X9X4X0XA",
+"vvIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII//X2XBzzXC@@XDX6",
+"XEIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII//X3X3XF",
+"((XGIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIXH",
+"XXXIXJDDXKXLXLXLXLXMDDDDDDDDDDDDDDDDDDDDDDDDDDDDXM",
+"XNXOIIIIXPXNXNXNXNXQIIIIIIIIIIIIIIIIXRXSXTXUXVBBXW",
+"IIIIIIIIIIIIIIIIIIIIIIIIIIXYXUXZXaXb55XXXXXXXXXXXX"
+};
+String1=0x00,abandoned railway station
+String2=0x02,stillgelegter Bahnhof
+[end]
+
+[_point]
+; Originally @(0x001867+0x002abf)=0x004326
+Type=0x071
+SubType=0x05
+XPM="13 10 57 2",
+"XX  c #000000",
+"==  c #000000",
+"**  c #000000",
+"##  c #000000",
+"%%  c #1d1d1d",
+"11  c #2a2a2a",
+"22  c #282828",
+"33  c #181818",
+"44  c #000000",
+"55  c #0f0f0f",
+"66  c #dcdcdc",
+"77  c #ffffff",
+"88  c #d3d3d3",
+"99  c #010101",
+"00  c #000000",
+"AA  c #434343",
+"BB  c #c0c0c0",
+"CC  c #1d1d1d",
+"DD  c #000000",
+"EE  c #000000",
+"FF  c #000000",
+"GG  c #848484",
+"HH  c #000000",
+"II  c #000000",
+"JJ  c #161616",
+"KK  c #d4d4d4",
+"LL  c #505050",
+"MM  c #191919",
+"NN  c #000000",
+"OO  c #000000",
+"PP  c #0a0a0a",
+"QQ  c #4f4f4f",
+"RR  c #0a0a0a",
+"SS  c #444444",
+"TT  c #707070",
+"UU  c #808080",
+"VV  c #6a6a6a",
+"WW  c #434343",
+"YY  c #2a2a2a",
+"ZZ  c #000000",
+"aa  c #111111",
+"bb  c #3b3b3b",
+"cc  c #585858",
+"dd  c #515151",
+"ee  c #000000",
+"ff  c #000000",
+"gg  c #000000",
+"hh  c #000000",
+"ii  c #000000",
+"jj  c #000000",
+"kk  c #000000",
+"ll  c #000000",
+"mm  c #000000",
+"nn  c #000000",
+"oo  c #000000",
+"pp  c #000000",
+"qq  c #000000",
+"XX==**####**XXXXXXXXXXXXXX",
+"==%%1122223344XXXXXXXXXXXX",
+"5566777777889900XXXXXXXXXX",
+"AABBBBBBBBBBCCDDXXXXXXXXXX",
+"EEFFFFFFFFFFFFGGHHXXXXXXXX",
+"IIJJFFFFFFJJFFKKLLMMNNOOXX",
+"PPQQFFFFRRQQFFSSTTUUVVWWYY",
+"ZZFFFFFFFFFFFFFFFFaabbccdd",
+"eeffgghhii##############ff",
+"jjFFkkjjllFFFFmmnnooHHppqq"
+};
+String1=0x00,park railway station
+String2=0x02,Parkeisenbahnhof
+[end]
+
+[_point]
+; Originally @(0x001867+0x002c37)=0x00449e
+Type=0x071
+SubType=0x06
+XPM="15 15 35 2",
+"XX  c #404040",
+"==  c #444444",
+"**  c #494949",
+"##  c #3f3f3f",
+"%%  c #8d8d8d",
+"11  c #d2d2d2",
+"22  c #808080",
+"33  c #d1d1d1",
+"44  c #929292",
+"55  c #a6a6a6",
+"66  c #ffffff",
+"77  c #959595",
+"88  c #adadad",
+"99  c #969696",
+"00  c #a5a5a5",
+"AA  c #9b9b9b",
+"BB  c #9c9c9c",
+"CC  c #ababab",
+"DD  c #909090",
+"EE  c #c7c7c7",
+"FF  c #4b4b4b",
+"GG  c #606060",
+"HH  c #e8e8e8",
+"II  c #fbfbfb",
+"JJ  c #c9c9c9",
+"KK  c #ebebeb",
+"LL  c #646464",
+"MM  c #f0f0f0",
+"NN  c #b6b6b6",
+"OO  c #dbdbdb",
+"PP  c #e4e4e4",
+"QQ  c #707070",
+"RR  c #454545",
+"SS  c #505050",
+"TT  c #575757",
+"XXXX==****==##XX##==****==##XX",
+"XX##%%111122##XX##22331144##XX",
+"XX##55666677######77666688##XX",
+"XX##55666677##XX##77666688##XX",
+"####55666677######77666688##XX",
+"XX##55666677##XX##99666688##XX",
+"XX##55666677######77666688##XX",
+"XX##55666677######77666688##XX",
+"XX##55666677######77666688##XX",
+"XX##006666AA######BB6666CC##XX",
+"####DD6666EEFF##FFEE666699##XX",
+"####GGHH66IIJJ55JJII66KKLL##XX",
+"XXXXXX%%MM6666666666MMDD####XX",
+"XXXXXXXXLLNNOOPPOONNQQ####XXXX",
+"XXXXXXXXRRRRSSTTSS==####XXXXXX"
+};
+String1=0x02,U-Bahnhof in Bau oder aufgegeben
+[end]
+
+[_point]
+; Originally @(0x001867+0x002dbb)=0x004622
+Type=0x071
+SubType=0x07
+XPM="15 15 92 2",
+"XX  c #000000",
+"==  c #4d4d4d",
+"**  c #555555",
+"##  c #535353",
+"%%  c #535353",
+"11  c #535353",
+"22  c #535353",
+"33  c #5f5f5f",
+"44  c #545454",
+"55  c #545454",
+"66  c #535353",
+"77  c #585858",
+"88  c #535353",
+"99  c #525252",
+"00  c #535353",
+"AA  c #707070",
+"BB  c #c6c6c6",
+"CC  c #f3f3f3",
+"DD  c #ffffff",
+"EE  c #f7f7f7",
+"FF  c #cacaca",
+"GG  c #818181",
+"HH  c #545454",
+"II  c #545454",
+"JJ  c #727272",
+"KK  c #f9f9f9",
+"LL  c #959595",
+"MM  c #7c7c7c",
+"NN  c #969696",
+"OO  c #d4d4d4",
+"PP  c #9d9d9d",
+"QQ  c #535353",
+"RR  c #c0c0c0",
+"SS  c #d8d8d8",
+"TT  c #8f8f8f",
+"UU  c #a8a8a8",
+"VV  c #535353",
+"WW  c #494949",
+"YY  c #525252",
+"ZZ  c #d2d2d2",
+"aa  c #fefefe",
+"bb  c #b4b4b4",
+"cc  c #717171",
+"dd  c #545454",
+"ee  c #575757",
+"ff  c #525252",
+"gg  c #525252",
+"hh  c #efefef",
+"ii  c #bdbdbd",
+"jj  c #7a7a7a",
+"kk  c #535353",
+"ll  c #535353",
+"mm  c #a3a3a3",
+"nn  c #535353",
+"oo  c #525252",
+"pp  c #aaaaaa",
+"qq  c #dedede",
+"rr  c #fdfdfd",
+"ss  c #5e5e5e",
+"tt  c #525252",
+"uu  c #545454",
+"vv  c #7d7d7d",
+"ww  c #6b6b6b",
+"xx  c #dddddd",
+"yy  c #6a6a6a",
+"zz  c #606060",
+"!!  c #535353",
+"@@  c #c2c2c2",
+"$$  c #bababa",
+"^^  c #595959",
+"&&  c #e9e9e9",
+"((  c #535353",
+"))  c #535353",
+"--  c #535353",
+"++  c #a2a2a2",
+"//  c #f2f2f2",
+"<<  c #b8b8b8",
+">>  c #fcfcfc",
+",,  c #555555",
+"::  c #535353",
+"X=  c #777777",
+"X*  c #ececec",
+"X#  c #cccccc",
+"X%  c #767676",
+"X1  c #535353",
+"X2  c #525252",
+"X3  c #535353",
+"X4  c #535353",
+"X5  c #535353",
+"X6  c #545454",
+"X7  c #535353",
+"X8  c #545454",
+"XXXXXXXX==**##%%112233XXXXXXXX",
+"XXXXXX445566667766668899XXXXXX",
+"XXXX1100AABBCCDDEEFFGG66HHXXXX",
+"XXII66JJEEKKLLMMNNOODDPP66QQXX",
+"338866RRDDSS66666666TTUU66VVWW",
+"YY6666ZZDDaabbccdd6666ee6666ff",
+"gg6666UUDDDDDDDDhhiijj666666kk",
+"ll6666eeRRaaDDDDDDDDDDmm6666nn",
+"oo66666666AAppqqDDDDDDrrss66tt",
+"uu6666vv66666666wwxxDDDDyy66YY",
+"zz!!66@@$$^^666666UUDD&&66((33",
+"XX))--++aa//<<PPbbKK>>vv00,,XX",
+"XXXX::--X=iiX*aaEEX#X%X1X2XXXX",
+"XXXXXXX3X46666666666X5**XXXXXX",
+"XXXXXXXXXXX6X7##X7X8XXXXXXXXXX"
+};
+String1=0x02,S-Bahnhof in Bau oder aufgegeben
+[end]
+
+[_point]
+; Originally @(0x001867+0x003006)=0x00486d
 Type=0x071
 SubType=0x10
 XPM="11 11 17 2",
@@ -3449,7 +4179,7 @@ String1=0x00,info
 [end]
 
 [_point]
-; Originally @(0x0016ed+0x00222a)=0x003917
+; Originally @(0x001867+0x0030c8)=0x00492f
 Type=0x072
 SubType=0x01
 XPM="15 10 25 2",
@@ -3494,7 +4224,7 @@ String2=0x02,Ortsschild
 [end]
 
 [_point]
-; Originally @(0x0016ed+0x002336)=0x003a23
+; Originally @(0x001867+0x0031d4)=0x004a3b
 Type=0x072
 SubType=0x02
 XPM="16 16 25 2",
@@ -3542,6 +4272,1837 @@ XPM="16 16 25 2",
 };
 String1=0x00,wind generator
 String2=0x02,Windrad
+[end]
+
+[_point]
+; Originally @(0x001867+0x00334b)=0x004bb2
+Type=0x072
+SubType=0x03
+XPM="15 5 18 2",
+"XX  c #4ea33a",
+"==  c #289e35",
+"**  c #2a9e35",
+"##  c #299e35",
+"%%  c #279d35",
+"11  c #4aa238",
+"22  c #2b9d33",
+"33  c #009933",
+"44  c #279d31",
+"55  c #2b9e33",
+"66  c #269c31",
+"77  c #47a138",
+"88  c #1e9b32",
+"99  c #209b32",
+"00  c #1f9b32",
+"AA  c #1f9b31",
+"BB  c #1d9b31",
+"CC  c #419f37",
+"XX==******################%%11",
+"223333333333333333333333333344",
+"553333333333333333333333333366",
+"553333333333333333333333333366",
+"778899000000AAAAAAAAAAAAAABBCC"
+};
+String1=0x02,Ortshinweistafel
+[end]
+
+[_point]
+; Originally @(0x001867+0x0033ed)=0x004c54
+Type=0x072
+SubType=0x04
+XPM="10 10 4 2",
+"XX  c #000000",
+"==  c #6a6a6a",
+"**  c #000000",
+"##  c #ffffff",
+"XXXX======**========",
+"XX==****************",
+"==**##############**",
+"**################**",
+"==**##############**",
+"XX==****************",
+"XXXX======**========",
+"XXXXXXXX==**==XXXXXX",
+"XXXXXXXX==**==XXXXXX",
+"XXXXXXXX==**==XXXXXX"
+};
+String1=0x00,sign
+String2=0x02,Wegweiser
+[end]
+
+[_point]
+; Originally @(0x001867+0x003444)=0x004cab
+Type=0x072
+SubType=0x05
+XPM="13 13 2 2",
+"XX  c #000000",
+"==  c #ff0000",
+"XXXXXXXX==XX====XXXXXXXXXX",
+"XXXXXX====XX====XX====XXXX",
+"XX====XX========XX====XXXX",
+"XX======XX==========XX==XX",
+"XXXXXX============XX======",
+"============XX========XXXX",
+"==========XXXXXX==========",
+"XXXX========XX============",
+"====================XXXXXX",
+"XX==XX====XX============XX",
+"XXXX====XX========XX====XX",
+"XXXX====XX====XX====XXXXXX",
+"XXXXXXXXXX====XX==XXXXXXXX"
+};
+String1=0x00,viewpoint
+String2=0x02,Aussichtspunkt
+[end]
+
+[_point]
+; Originally @(0x001867+0x0034a0)=0x004d07
+Type=0x073
+SubType=0x01
+XPM="16 16 117 2",
+"XX  c #ffffff",
+"==  c #ebebeb",
+"**  c #525252",
+"##  c #0a0a0a",
+"%%  c #111111",
+"11  c #6c6c6c",
+"22  c #f8f8f8",
+"33  c #515151",
+"44  c #000000",
+"55  c #6b6b6b",
+"66  c #4e4e4e",
+"77  c #797979",
+"88  c #fefefe",
+"99  c #090909",
+"00  c #484848",
+"AA  c #efefef",
+"BB  c #303030",
+"CC  c #fdfafa",
+"DD  c #cfcfcf",
+"EE  c #e2e2e2",
+"FF  c #c2c2c2",
+"GG  c #414040",
+"HH  c #f7e0e0",
+"II  c #fcfefe",
+"JJ  c #cccccc",
+"KK  c #0e0e0e",
+"LL  c #080808",
+"MM  c #c1bebe",
+"NN  c #fffbfb",
+"OO  c #db5656",
+"PP  c #edcdcd",
+"QQ  c #040404",
+"RR  c #c1b7b7",
+"SS  c #fae4e4",
+"TT  c #d42424",
+"UU  c #d96060",
+"VV  c #f8f6f6",
+"WW  c #feffff",
+"YY  c #695f5f",
+"ZZ  c #7d7171",
+"aa  c #fceeee",
+"bb  c #f5f7f7",
+"cc  c #e78e8e",
+"dd  c #cf1212",
+"ee  c #e7b0b0",
+"ff  c #f4e9e9",
+"gg  c #3c3333",
+"hh  c #5d5d5d",
+"ii  c #fffefe",
+"jj  c #f1f2f2",
+"kk  c #b4b5b5",
+"ll  c #e2d4d4",
+"mm  c #dd4141",
+"nn  c #d43f3f",
+"oo  c #fdffff",
+"pp  c #e18f8f",
+"qq  c #262424",
+"rr  c #f2f2f2",
+"ss  c #cbcbcb",
+"tt  c #aeb1b1",
+"uu  c #af7272",
+"vv  c #ca0c0c",
+"ww  c #efd5d5",
+"xx  c #d12525",
+"yy  c #e06060",
+"zz  c #efeaea",
+"!!  c #b7b7b7",
+"@@  c #9f9f9f",
+"$$  c #8a8a8a",
+"^^  c #373737",
+"&&  c #141010",
+"((  c #9d1d1d",
+"))  c #d42828",
+"--  c #faf9f9",
+"++  c #db6b6b",
+"//  c #d21e1e",
+"<<  c #f7d1d1",
+">>  c #b3b3b3",
+",,  c #3f1a1a",
+"::  c #c40f0f",
+"X=  c #dc6c6c",
+"X*  c #e9bbbb",
+"X#  c #cf1616",
+"X%  c #e68585",
+"X1  c #d4d6d6",
+"X2  c #686969",
+"X3  c #111212",
+"X4  c #040505",
+"X5  c #7e1d1d",
+"X6  c #d11717",
+"X7  c #e9baba",
+"X8  c #f4ebeb",
+"X9  c #d64b4b",
+"X0  c #d02525",
+"XA  c #a38181",
+"XB  c #433434",
+"XC  c #201010",
+"XD  c #211212",
+"XE  c #231313",
+"XF  c #201212",
+"XG  c #462424",
+"XH  c #c01515",
+"XI  c #d74c4c",
+"XJ  c #e09292",
+"XK  c #ce0808",
+"XL  c #cc0d0d",
+"XM  c #bf1515",
+"XN  c #bc1212",
+"XO  c #be1414",
+"XP  c #be1515",
+"XQ  c #ca0b0b",
+"XR  c #e3aaaa",
+"XS  c #da6e6e",
+"XT  c #da6d6d",
+"XU  c #db6c6c",
+"XV  c #db6d6d",
+"XW  c #e3a9a9",
+"XXXX==**##%%1122XXXXXXXXXXXXXXXX",
+"XXXX334455664477XXXXXXXXXXXXXXXX",
+"XX889900XXAA44BBXXCCXXXXXXXXXXXX",
+"XX88DDEEXXFF44GGXXHHIIXXXXXXXXXX",
+"XXXXXXXXJJKKLLMMNNOOPPXXXXXXXXXX",
+"XXXXXXXXBBQQRRXXSSTTUUVVXXXXXXXX",
+"XXXXXXWWYYZZaaXXbbccddeeWWXXXXXX",
+"XXXXXXffgghhiijjkkllmmnnffXXXXXX",
+"XXXXoopp44qqXXrrssttuuvvppooXXXX",
+"XXXXwwxxyyzz!!@@$$^^&&(())wwXXXX",
+"XX--++//<<oo>>00994444,,::X=--XX",
+"XXX*X#X%X1X2X344444444X4X5X6X7XX",
+"X8X9X0XAXBXCXDXEXEXEXEXFXGXHXIX8",
+"XJXKXLXMXNXOXOXOXOXOXOXOXPXQXKXJ",
+"XRXSXTXUXVXVXVXVXVXVXVXVXUXTXSXW",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+};
+String1=0x02,Fragezeichen: Steigungen
+[end]
+
+[_point]
+; Originally @(0x001867+0x00375a)=0x004fc1
+Type=0x073
+SubType=0x02
+XPM="16 16 119 2",
+"XX  c #ffffff",
+"==  c #ebebeb",
+"**  c #525252",
+"##  c #0a0a0a",
+"%%  c #111111",
+"11  c #6c6c6c",
+"22  c #f8f8f8",
+"33  c #515151",
+"44  c #000000",
+"55  c #6b6b6b",
+"66  c #4e4e4e",
+"77  c #797979",
+"88  c #fdfefe",
+"99  c #fefefe",
+"00  c #090909",
+"AA  c #484848",
+"BB  c #efefef",
+"CC  c #303030",
+"DD  c #fcf6f6",
+"EE  c #cfcfcf",
+"FF  c #e2e2e2",
+"GG  c #c1c1c1",
+"HH  c #414040",
+"II  c #f6d8d8",
+"JJ  c #f9f7f7",
+"KK  c #cccccc",
+"LL  c #0e0e0e",
+"MM  c #080808",
+"NN  c #c1bebe",
+"OO  c #fffbfb",
+"PP  c #da4c4c",
+"QQ  c #e7b4b4",
+"RR  c #040303",
+"SS  c #c1b7b7",
+"TT  c #fceded",
+"UU  c #d63232",
+"VV  c #d54545",
+"WW  c #f5ebeb",
+"YY  c #feffff",
+"ZZ  c #695d5d",
+"aa  c #7d7171",
+"bb  c #fcefef",
+"cc  c #eda3a3",
+"dd  c #cf0e0e",
+"ee  c #e29696",
+"ff  c #fdffff",
+"gg  c #f2e3e3",
+"hh  c #3c3232",
+"ii  c #5d5d5d",
+"jj  c #fdf4f4",
+"kk  c #dc4e4e",
+"ll  c #d12c2c",
+"mm  c #f0dada",
+"nn  c #fcfdfd",
+"oo  c #df8585",
+"pp  c #262525",
+"qq  c #f3c1c1",
+"rr  c #d01515",
+"ss  c #dc7676",
+"tt  c #fafbfb",
+"uu  c #edcfcf",
+"vv  c #d02020",
+"ww  c #df5f5f",
+"xx  c #fef9f9",
+"yy  c #fffdfd",
+"zz  c #e36f6f",
+"!!  c #cf1919",
+"@@  c #eac4c4",
+"$$  c #da6565",
+"^^  c #d21c1c",
+"&&  c #f6cfcf",
+"((  c #bec0c0",
+"))  c #8c8c8c",
+"--  c #eaeaea",
+"++  c #e0e0e0",
+"//  c #7a7a7a",
+"<<  c #b5b7b7",
+">>  c #f8dada",
+",,  c #d42525",
+"::  c #d75656",
+"X=  c #f7f3f3",
+"X*  c #e8b6b6",
+"X#  c #cf1313",
+"X%  c #e98484",
+"X1  c #b8b8b8",
+"X2  c #1b1b1b",
+"X3  c #3d3d3d",
+"X4  c #353535",
+"X5  c #171717",
+"X6  c #acadad",
+"X7  c #ec9393",
+"X8  c #ce1010",
+"X9  c #e5a9a9",
+"X0  c #f3e9e9",
+"XA  c #d64848",
+"XB  c #d63030",
+"XC  c #fce5e5",
+"XD  c #c9c9c9",
+"XE  c #878585",
+"XF  c #8a8888",
+"XG  c #c1c0c0",
+"XH  c #fdecec",
+"XI  c #d93c3c",
+"XJ  c #d43b3b",
+"XK  c #f1e1e1",
+"XL  c #de8989",
+"XM  c #cd0707",
+"XN  c #d32323",
+"XO  c #dd5353",
+"XP  c #df5454",
+"XQ  c #e15656",
+"XR  c #dd5454",
+"XS  c #d42828",
+"XT  c #cd0404",
+"XU  c #dc7979",
+"XV  c #d86c6c",
+"XW  c #d53333",
+"XY  c #d43030",
+"XZ  c #d96262",
+"XXXX==**##%%1122XXXXXXXXXXXXXXXX",
+"XXXX334455664477XX88XXXXXXXXXXXX",
+"XX9900AAXXBB44CCXXDDXXXXXXXXXXXX",
+"XX99EEFFXXGG44HHXXIIJJXXXXXXXXXX",
+"XXXXXXXXKKLLMMNNOOPPQQXXXXXXXXXX",
+"XXXXXXXXCCRRSSXXTTUUVVWWXXXXXXXX",
+"XXXXXXYYZZaabbXXXXccddeeffXXXXXX",
+"XXXXXXgghhiiXXXXXXjjkkllmmXXXXXX",
+"XXXXnnoo44ppXXXXXXXXqqrrssttXXXX",
+"XXXXuuvvwwxxXXXXXXXXyyzz!!@@XXXX",
+"XXJJ$$^^&&(())--++//<<>>,,::X=XX",
+"YYX*X#X%X1X244X3X444X5X6X7X8X9YY",
+"X0XAXBXCXDXEXFXEXEXFXEXGXHXIXJXK",
+"XLXMXNXOXPXQXQXQXQXQXQXPXRXSXTXU",
+"XVXWXWXYXYXYXYXYXYXYXYXYXYXWXWXZ",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+};
+String1=0x02,Fragezeichen: Qualität
+[end]
+
+[_point]
+; Originally @(0x001867+0x003a19)=0x005280
+Type=0x073
+SubType=0x03
+XPM="16 16 127 2",
+"XX  c #ffffff",
+"==  c #ebebeb",
+"**  c #525252",
+"##  c #0a0a0a",
+"%%  c #111111",
+"11  c #6c6c6c",
+"22  c #f8f8f8",
+"33  c #515151",
+"44  c #000000",
+"55  c #6b6b6b",
+"66  c #4e4e4e",
+"77  c #797979",
+"88  c #fdfefe",
+"99  c #fefefe",
+"00  c #090909",
+"AA  c #484848",
+"BB  c #efefef",
+"CC  c #303030",
+"DD  c #fcf6f6",
+"EE  c #cfcfcf",
+"FF  c #e2e2e2",
+"GG  c #c1c1c1",
+"HH  c #414040",
+"II  c #f6d8d8",
+"JJ  c #f9f7f7",
+"KK  c #cccccc",
+"LL  c #0e0e0e",
+"MM  c #080808",
+"NN  c #c1bebe",
+"OO  c #fffcfc",
+"PP  c #da4c4c",
+"QQ  c #e7b4b4",
+"RR  c #040303",
+"SS  c #c1b7b7",
+"TT  c #f2dddd",
+"UU  c #d63232",
+"VV  c #d54545",
+"WW  c #f5ebeb",
+"YY  c #feffff",
+"ZZ  c #695d5d",
+"aa  c #7d7171",
+"bb  c #fbecec",
+"cc  c #e4a5a5",
+"dd  c #c74242",
+"ee  c #e08c8c",
+"ff  c #cf1010",
+"gg  c #e29696",
+"hh  c #fdffff",
+"ii  c #f2e3e3",
+"jj  c #3c3232",
+"kk  c #5d5d5d",
+"ll  c #fffefe",
+"mm  c #ebc0c1",
+"nn  c #c64648",
+"oo  c #f1dede",
+"pp  c #dd4f4f",
+"qq  c #d12c2c",
+"rr  c #f0dada",
+"ss  c #fcfdfd",
+"tt  c #df8585",
+"uu  c #262525",
+"vv  c #fbf7ee",
+"ww  c #dfc384",
+"xx  c #fafcf8",
+"yy  c #f3c2c2",
+"zz  c #d01515",
+"!!  c #dc7676",
+"@@  c #fafbfb",
+"$$  c #edcfcf",
+"^^  c #d02020",
+"&&  c #df5f5f",
+"((  c #fffafa",
+"))  c #f6f4ed",
+"--  c #eec755",
+"++  c #f0c64c",
+"//  c #f3efe4",
+"<<  c #e36f6f",
+">>  c #cf1919",
+",,  c #eac4c4",
+"::  c #da6565",
+"X=  c #d21c1c",
+"X*  c #f6cfcf",
+"X#  c #fdfdfd",
+"X%  c #b8c69d",
+"X1  c #b2c295",
+"X2  c #fbfbfa",
+"X3  c #f8dada",
+"X4  c #d42525",
+"X5  c #d75656",
+"X6  c #f7f3f3",
+"X7  c #e8b6b6",
+"X8  c #cf1313",
+"X9  c #e68181",
+"X0  c #eaf1ed",
+"XA  c #2ea055",
+"XB  c #229c4c",
+"XC  c #e1ece5",
+"XD  c #e99191",
+"XE  c #ce1010",
+"XF  c #e5a9a9",
+"XG  c #f3e9e9",
+"XH  c #d64848",
+"XI  c #d63030",
+"XJ  c #fae3e3",
+"XK  c #f7f7f6",
+"XL  c #81bd93",
+"XM  c #77b98c",
+"XN  c #f2f5f2",
+"XO  c #fbebeb",
+"XP  c #d93c3c",
+"XQ  c #d43b3b",
+"XR  c #f1e1e1",
+"XS  c #de8989",
+"XT  c #cd0707",
+"XU  c #d32323",
+"XV  c #dd5353",
+"XW  c #dd5152",
+"XY  c #dc5152",
+"XZ  c #de5353",
+"Xa  c #dd5454",
+"Xb  c #d42828",
+"Xc  c #cd0404",
+"Xd  c #dc7979",
+"Xe  c #d86c6c",
+"Xf  c #d53333",
+"Xg  c #d43030",
+"Xh  c #d96262",
+"XXXX==**##%%1122XXXXXXXXXXXXXXXX",
+"XXXX334455664477XX88XXXXXXXXXXXX",
+"XX9900AAXXBB44CCXXDDXXXXXXXXXXXX",
+"XX99EEFFXXGG44HHXXIIJJXXXXXXXXXX",
+"XXXXXXXXKKLLMMNNOOPPQQXXXXXXXXXX",
+"XXXXXXXXCCRRSSXXTTUUVVWWXXXXXXXX",
+"XXXXXXYYZZaabbccddeeffgghhXXXXXX",
+"XXXXXXiijjkkllmmnnooppqqrrXXXXXX",
+"XXXXsstt44uuXXvvwwxxyyzz!!@@XXXX",
+"XXXX$$^^&&(())--++//ll<<>>,,XXXX",
+"XXJJ::X=X*XXX#X%X1X2XXX3X4X5X6XX",
+"YYX7X8X9XXXXX0XAXBXCXXXXXDXEXFYY",
+"XGXHXIXJXXllXKXLXMXNllXXXOXPXQXR",
+"XSXTXUXVXVXVXVXWXYXZXVXVXaXbXcXd",
+"XeXfXfXgXgXgXgXgXgXgXgXgXgXfXfXh",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+};
+String1=0x02,Fragezeichen: Ampel
+[end]
+
+[_point]
+; Originally @(0x001867+0x003cf1)=0x005558
+Type=0x073
+SubType=0x04
+XPM="16 16 95 2",
+"XX  c #ffffff",
+"==  c #ebebeb",
+"**  c #525252",
+"##  c #0a0a0a",
+"%%  c #111111",
+"11  c #6c6c6c",
+"22  c #f8f8f8",
+"33  c #515151",
+"44  c #000000",
+"55  c #6b6b6b",
+"66  c #4e4e4e",
+"77  c #797979",
+"88  c #fefefe",
+"99  c #090909",
+"00  c #484848",
+"AA  c #efefef",
+"BB  c #303030",
+"CC  c #cfcfcf",
+"DD  c #e2e2e2",
+"EE  c #c3c3c3",
+"FF  c #414141",
+"GG  c #cccccc",
+"HH  c #0e0e0e",
+"II  c #080808",
+"JJ  c #c1c1c1",
+"KK  c #7e96c5",
+"LL  c #3c62ae",
+"MM  c #3d63ae",
+"NN  c #2a2b2e",
+"OO  c #030404",
+"PP  c #b8babf",
+"QQ  c #fcfdfe",
+"RR  c #6b88c1",
+"SS  c #3d62ae",
+"TT  c #466ab2",
+"UU  c #6684bf",
+"VV  c #4166b0",
+"WW  c #3e64af",
+"YY  c #7d95c5",
+"ZZ  c #4d6fb4",
+"aa  c #1746a3",
+"bb  c #1c4aa5",
+"cc  c #1c4aa6",
+"dd  c #444c5d",
+"ee  c #72757a",
+"ff  c #dce3f1",
+"gg  c #8ea5d3",
+"hh  c #1b49a5",
+"ii  c #2f59ad",
+"jj  c #bfcce6",
+"kk  c #88a0d0",
+"ll  c #1f4ba6",
+"mm  c #002d97",
+"nn  c #4467b0",
+"oo  c #7c95c5",
+"pp  c #9fa8ba",
+"qq  c #b4bac6",
+"rr  c #adb3bf",
+"ss  c #3a3a3b",
+"tt  c #5d5d5d",
+"uu  c #fdfdfe",
+"vv  c #e3e6ea",
+"ww  c #bac0cc",
+"xx  c #a9afbc",
+"yy  c #a9afba",
+"zz  c #ecedf0",
+"!!  c #d9e1f0",
+"@@  c #6483c2",
+"$$  c #7d95c6",
+"^^  c #a1a9ba",
+"&&  c #aab0ba",
+"((  c #9ca1ac",
+"))  c #252525",
+"--  c #f1f2f4",
+"++  c #adb3be",
+"//  c #9da2ae",
+"<<  c #a0a5b0",
+">>  c #e2e3e6",
+",,  c #6886c3",
+"::  c #4e70b5",
+"X=  c #1a48a4",
+"X*  c #1e4ca6",
+"X#  c #1e4ba6",
+"X%  c #1d4aa6",
+"X1  c #315bae",
+"X2  c #c1cee7",
+"X3  c #8da4d2",
+"X4  c #214ea7",
+"X5  c #002e97",
+"X6  c #7a93c4",
+"X7  c #375eac",
+"X8  c #385fac",
+"X9  c #6482be",
+"X0  c #3960ad",
+"XA  c #7992c4",
+"XXXX==**##%%1122XXXXXXXXXXXXXXXX",
+"XXXX334455664477XXXXXXXXXXXXXXXX",
+"XX889900XXAA44BBXXXXXXXXXXXXXXXX",
+"XX88CCDDXXEE44FFXXXXXXXXXXXXXXXX",
+"XXXXXXXXGGHHIIJJXXXXXXXXXXXXXXXX",
+"KKLLMMMMNNOOPPQQRRSSTTUUVVMMWWYY",
+"ZZaabbccddeeffggcchhiijjkkllmmnn",
+"ooppqqrrssttuuvvwwxxyyzzXX!!@@ZZ",
+"$$^^&&((44))XX--++//<<>>XXff,,ZZ",
+"::X=X*X#X#X*X*X*X#X%X1X2X3X4X5nn",
+"X6X7X8X8X8X8X8X8X8X7VVX9MMX7X0XA",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+};
+String1=0x02,Fragezeichen: Einbahnstraße
+[end]
+
+[_point]
+; Originally @(0x001867+0x003f61)=0x0057c8
+Type=0x073
+SubType=0x05
+XPM="16 16 173 2",
+"XX  c #ffffff",
+"==  c #ebebeb",
+"**  c #525252",
+"##  c #0a0a0a",
+"%%  c #111111",
+"11  c #6c6c6c",
+"22  c #f8f8f8",
+"33  c #e7ebf4",
+"44  c #a5b4d3",
+"55  c #d5dbe7",
+"66  c #fafaf9",
+"77  c #515151",
+"88  c #000000",
+"99  c #69696a",
+"00  c #4e4e4e",
+"AA  c #797979",
+"BB  c #8aa2d1",
+"CC  c #2852a7",
+"DD  c #7992c4",
+"EE  c #dde2eb",
+"FF  c #fffffe",
+"GG  c #fefefd",
+"HH  c #080808",
+"II  c #3b3d42",
+"JJ  c #f8f9fc",
+"KK  c #b0bcd6",
+"LL  c #303030",
+"MM  c #cfd9ec",
+"NN  c #003198",
+"OO  c #013299",
+"PP  c #3e64af",
+"QQ  c #cbd3e3",
+"RR  c #d8dee8",
+"SS  c #4c6598",
+"TT  c #1a4091",
+"UU  c #3059ac",
+"VV  c #5e729b",
+"WW  c #404041",
+"YY  c #becbe5",
+"ZZ  c #003299",
+"aa  c #003098",
+"bb  c #3f64af",
+"cc  c #dee2eb",
+"dd  c #f9f9f9",
+"ee  c #728cc1",
+"ff  c #003199",
+"gg  c #2c4c8c",
+"hh  c #0d0d0e",
+"ii  c #bbbdbf",
+"jj  c #7793c9",
+"kk  c #6b88c4",
+"ll  c #1443a1",
+"mm  c #7b93c5",
+"nn  c #d0d7e5",
+"oo  c #234ea5",
+"pp  c #002f97",
+"qq  c #292a2d",
+"rr  c #040404",
+"ss  c #bbbdc0",
+"tt  c #fdfeff",
+"uu  c #8da4d2",
+"vv  c #9bafd7",
+"ww  c #8fa5d2",
+"xx  c #04349a",
+"yy  c #2a53a8",
+"zz  c #d6dce7",
+"!!  c #9baccf",
+"@@  c #07379b",
+"$$  c #05369b",
+"^^  c #2450a8",
+"&&  c #535863",
+"((  c #7b7c7e",
+"))  c #e2e8f4",
+"--  c #8ba2d1",
+"++  c #1c49a4",
+"//  c #839cce",
+"<<  c #99aed7",
+">>  c #4369b4",
+",,  c #2c56ab",
+"::  c #06379b",
+"X=  c #0a3a9d",
+"X*  c #7a91c2",
+"X#  c #08399c",
+"X%  c #6483c1",
+"X1  c #728ec7",
+"X2  c #3a3b3d",
+"X3  c #5d5d5d",
+"X4  c #fbfcfe",
+"X5  c #aebedf",
+"X6  c #1a46a3",
+"X7  c #879fcf",
+"X8  c #a0b3d9",
+"X9  c #6987c3",
+"X0  c #6886c3",
+"XA  c #0a3b9d",
+"XB  c #859bc6",
+"XC  c #768fc0",
+"XD  c #3a61b1",
+"XE  c #6382c1",
+"XF  c #1e4aa5",
+"XG  c #222325",
+"XH  c #ebeff7",
+"XI  c #6b89c4",
+"XJ  c #a6b8dc",
+"XK  c #5678bc",
+"XL  c #7994ca",
+"XM  c #1140a0",
+"XN  c #6181c0",
+"XO  c #3d64b2",
+"XP  c #8298c5",
+"XQ  c #95a8cc",
+"XR  c #5375ba",
+"XS  c #476ab5",
+"XT  c #1441a0",
+"XU  c #2953a9",
+"XV  c #264fa7",
+"XW  c #6785c2",
+"XY  c #325aad",
+"XZ  c #94aad5",
+"Xa  c #b4c3e1",
+"Xb  c #224da6",
+"Xc  c #466ab5",
+"Xd  c #5577bb",
+"Xe  c #a0b0d1",
+"Xf  c #cdd4e3",
+"Xg  c #466ab3",
+"Xh  c #1e4ba5",
+"Xi  c #1241a0",
+"Xj  c #6a88c4",
+"Xk  c #4167b3",
+"Xl  c #02349a",
+"Xm  c #4469b4",
+"Xn  c #7692c9",
+"Xo  c #204da6",
+"Xp  c #2551a8",
+"Xq  c #7893c9",
+"Xr  c #4a6db5",
+"Xs  c #d4dae6",
+"Xt  c #6f8ac0",
+"Xu  c #345dae",
+"Xv  c #7390c7",
+"Xw  c #4c6fb7",
+"Xx  c #04369b",
+"Xy  c #03359a",
+"Xz  c #466bb5",
+"X!  c #7490c8",
+"X@  c #708dc6",
+"X$  c #315aad",
+"X^  c #7891c3",
+"X&  c #d8dde8",
+"X(  c #345baa",
+"X)  c #013399",
+"X-  c #05379b",
+"X+  c #003399",
+"X/  c #3b61ad",
+"X<  c #dde1ea",
+"X>  c #c4cde0",
+"X,  c #355dab",
+"X:  c #3b62ae",
+"=X  c #cad2e2",
+"=*  c #d8dee9",
+"=#  c #718bc1",
+"=%  c #07399c",
+"=1  c #01349a",
+"=2  c #2550a6",
+"=3  c #7690c3",
+"=4  c #dce1ea",
+"=5  c #d1d8e5",
+"=6  c #9cadcf",
+"=7  c #7d95c4",
+"=8  c #7e95c4",
+"=9  c #9fafd0",
+"=0  c #d3d9e6",
+"XXXX==**##%%112233445566XXXXXXXX",
+"XXXX7788990088AAXXBBCCDDEEFFXXXX",
+"XXGGHHIIJJKK88LLXXMMNNOOPPQQFFXX",
+"XXRRSSTTUUVV88WWXXYYNNZZaabbccXX",
+"ddeeffZZgghhHHiiJJjjkkllNNZZmm66",
+"nnooNNppqqrrssttuuvvwwxxaaaayyzz",
+"!!@@$$^^&&(())--++//<<>>,,::X=44",
+"X*X#X%X1X2X3X4X5X6X7X8vvX9X0XAXB",
+"XCXDXEXF88XGXXXHXIXJXKXLXMXNXOXP",
+"XQXRXSXTXUXVXWXYXZXa//X7XbXcXdXe",
+"XfXgjjXhXiXjXkppXlXmXnXoXpXqXrXs",
+"ddXtXuXvXnXwXxZZZZXyXzX!X@X$X^66",
+"XXX&X(X)X-NNZZX+X+ZZNNXyffX/X<XX",
+"XXFFX>X,NNNNZZX+X+ZZNNZZX:=XFFXX",
+"XXXXFF=*=#oo=%=1=1X#=2=3=4FFXXXX",
+"XXXXXXXXdd=5=6=7=8=9=0ddXXXXXXXX"
+};
+String1=0x02,Fragezeichen: Radweg
+[end]
+
+[_point]
+; Originally @(0x001867+0x0042db)=0x005b42
+Type=0x073
+SubType=0x06
+XPM="16 16 105 2",
+"XX  c #ffffff",
+"==  c #ebebeb",
+"**  c #525252",
+"##  c #0a0a0a",
+"%%  c #111111",
+"11  c #6c6c6c",
+"22  c #f8f8f8",
+"33  c #f9e7e7",
+"44  c #e2a5a5",
+"55  c #edd5d5",
+"66  c #f9fafa",
+"77  c #515151",
+"88  c #000000",
+"99  c #6a6969",
+"00  c #4e4e4e",
+"AA  c #797979",
+"BB  c #e88a8a",
+"CC  c #d22828",
+"DD  c #dd7979",
+"EE  c #efdddd",
+"FF  c #feffff",
+"GG  c #fdfefe",
+"HH  c #090808",
+"II  c #453b3b",
+"JJ  c #fef8f8",
+"KK  c #e3b0b0",
+"LL  c #303030",
+"MM  c #f6cfcf",
+"NN  c #cc0000",
+"OO  c #cc0101",
+"PP  c #d53e3e",
+"QQ  c #eacbcb",
+"RR  c #edd8d8",
+"SS  c #b24c4c",
+"TT  c #ba1a1a",
+"UU  c #d63030",
+"VV  c #ae5959",
+"WW  c #414040",
+"YY  c #f2bebe",
+"ZZ  c #d53f3f",
+"aa  c #efdede",
+"bb  c #f9f9f9",
+"cc  c #db7272",
+"dd  c #ac2828",
+"ee  c #0e0d0d",
+"ff  c #080808",
+"gg  c #c0bbbb",
+"hh  c #fef7f7",
+"ii  c #d93e3e",
+"jj  c #dd7b7b",
+"kk  c #ebd0d0",
+"ll  c #d02323",
+"mm  c #cb0000",
+"nn  c #2f2727",
+"oo  c #040303",
+"pp  c #c0b5b5",
+"qq  c #fffbfb",
+"rr  c #d83c3c",
+"ss  c #d22a2a",
+"tt  c #edd6d6",
+"uu  c #e09d9d",
+"vv  c #d73636",
+"ww  c #d94040",
+"xx  c #674a4a",
+"yy  c #7e7474",
+"zz  c #f9e1e1",
+"!!  c #ec9f9f",
+"@@  c #d73939",
+"$$  c #e3a7a7",
+"^^  c #dc8383",
+"&&  c #f1b4b4",
+"((  c #3f3e3e",
+"))  c #5d5d5d",
+"--  c #fffcfc",
+"++  c #f1b6b6",
+"//  c #de8e8e",
+"<<  c #dc8282",
+">>  c #272626",
+",,  c #fffefe",
+"::  c #e09c9c",
+"X=  c #d73535",
+"X*  c #e2a6a6",
+"X#  c #ebcfcf",
+"X%  c #d02222",
+"X1  c #d12929",
+"X2  c #db7070",
+"X3  c #eed8d8",
+"X4  c #d33636",
+"X5  c #d43d3d",
+"X6  c #e9c4c4",
+"X7  c #d43c3c",
+"X8  c #eacaca",
+"X9  c #db7171",
+"X0  c #d12323",
+"XA  c #cd0707",
+"XB  c #cd0101",
+"XC  c #ce0808",
+"XD  c #d12525",
+"XE  c #dc7676",
+"XF  c #efdcdc",
+"XG  c #ecd1d1",
+"XH  c #db7d7d",
+"XI  c #db7e7e",
+"XJ  c #e19f9f",
+"XK  c #ecd3d3",
+"XXXX==**##%%112233445566XXXXXXXX",
+"XXXX7788990088AAXXBBCCDDEEFFXXXX",
+"XXGGHHIIJJKK88LLXXMMNNOOPPQQFFXX",
+"XXRRSSTTUUVV88WWXXYYNNNNNNZZaaXX",
+"bbccNNNNddeeffgghhiiNNNNNNNNjj66",
+"kkllmmNNnnooppqqrrNNNNNNNNmmsstt",
+"uuvvwwwwxxyyzz!!wwwwwwwwwwww@@$$",
+"^^&&qqhh(())XX--hhhhhhhhhhqq++//",
+"<<&&qqhh88>>XX,,hhhhhhhhhhqq++//",
+"::X=wwwwwwwwwwwwwwwwwwwwwwww@@X*",
+"X#X%mmNNNNNNNNNNNNNNNNNNNNmmX1tt",
+"bbX2NNNNNNNNNNNNNNNNNNNNNNNNDD66",
+"XXX3X4NNNNNNNNNNNNNNNNNNNNX5EEXX",
+"XXFFX6X4NNNNNNNNNNNNNNOOX7X8FFXX",
+"XXXXFFX3X9X0XAXBXBXCXDXEXFFFXXXX",
+"XXXXXXXXbbXG::XHXIXJXKbbXXXXXXXX"
+};
+String1=0x02,Fragezeichen: gesperrt
+[end]
+
+[_point]
+; Originally @(0x001867+0x004569)=0x005dd0
+Type=0x073
+SubType=0x07
+XPM="16 16 66 2",
+"XX  c #ffffff",
+"==  c #ebebeb",
+"**  c #525252",
+"##  c #0a0a0a",
+"%%  c #111111",
+"11  c #6c6c6c",
+"22  c #f8f8f8",
+"33  c #515151",
+"44  c #000000",
+"55  c #6b6b6b",
+"66  c #4e4e4e",
+"77  c #797979",
+"88  c #fefefe",
+"99  c #090909",
+"00  c #484848",
+"AA  c #efefef",
+"BB  c #303030",
+"CC  c #cfcfcf",
+"DD  c #e2e2e2",
+"EE  c #c3c3c3",
+"FF  c #414141",
+"GG  c #cccccc",
+"HH  c #0e0e0e",
+"II  c #080808",
+"JJ  c #c1c1c1",
+"KK  c #313131",
+"LL  c #040404",
+"MM  c #aaaaaa",
+"NN  c #9e9e9e",
+"OO  c #a1a1a1",
+"PP  c #9c9c9c",
+"QQ  c #aeaeae",
+"RR  c #f4f4f4",
+"SS  c #6e6e6e",
+"TT  c #808080",
+"UU  c #fdfdfd",
+"VV  c #dfdfdf",
+"WW  c #9a9a9a",
+"YY  c #a0a0a0",
+"ZZ  c #999999",
+"aa  c #d0d0d0",
+"bb  c #3f3f3f",
+"cc  c #5d5d5d",
+"dd  c #fcfcfc",
+"ee  c #dadada",
+"ff  c #989898",
+"gg  c #a4a4a4",
+"hh  c #f9f9f9",
+"ii  c #242424",
+"jj  c #f0f0f0",
+"kk  c #a2a2a2",
+"ll  c #a6a6a6",
+"mm  c #eeeeee",
+"nn  c #f7f7f7",
+"oo  c #d1d1d1",
+"pp  c #9f9f9f",
+"qq  c #9d9d9d",
+"rr  c #dcdcdc",
+"ss  c #f6f6f6",
+"tt  c #b1b1b1",
+"uu  c #b8b8b8",
+"vv  c #f1f1f1",
+"ww  c #dbdbdb",
+"xx  c #a3a3a3",
+"yy  c #b2b2b2",
+"zz  c #f2f2f2",
+"XXXX==**##%%1122XXXXXXXXXXXXXXXX",
+"XXXX334455664477XXXXXXXXXXXXXXXX",
+"XX889900XXAA44BBXXXXXXXXXXXXXXXX",
+"XX88CCDDXXEE44FFXXXXXXXXXXXXXXXX",
+"XXXXXXXXGGHHIIJJXXXXXXXXXXXXXXXX",
+"XXXXXXXXKKLLEEXXDDMMNNOOPPQQRRXX",
+"XXXXXXXXSSTTUUVVNNWWYYWWZZaaXXXX",
+"XXXXXXXXbbccddeeZZYYPPffgg==XXXX",
+"XXXXXXhh44iiXXjjNNkkZZffllmmXXXX",
+"XX88nnooppffZZZZMMNNZZZZqqrr88XX",
+"UUssaaqqffZZZZPPttWWZZZZffuuRR88",
+"vvwwxxqqqqqqqqxxyyPPqqPPPPYYwwzz",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+};
+String1=0x02,Fragezeichen: Mittelstreifen
+[end]
+
+[_point]
+; Originally @(0x001867+0x004774)=0x005fdb
+Type=0x073
+SubType=0x08
+XPM="16 16 60 2",
+"XX  c #ffffff",
+"==  c #ebebeb",
+"**  c #525252",
+"##  c #0a0a0a",
+"%%  c #111111",
+"11  c #6c6c6c",
+"22  c #f8f8f8",
+"33  c #f0f0f0",
+"44  c #f1f1f1",
+"55  c #515151",
+"66  c #000000",
+"77  c #6b6b6b",
+"88  c #4e4e4e",
+"99  c #797979",
+"00  c #dedede",
+"AA  c #f2f2f2",
+"BB  c #fefefe",
+"CC  c #090909",
+"DD  c #484848",
+"EE  c #303030",
+"FF  c #f9f9f9",
+"GG  c #b8b8b8",
+"HH  c #cfcfcf",
+"II  c #d8d8d8",
+"JJ  c #c6c6c6",
+"KK  c #b6b6b6",
+"LL  c #414141",
+"MM  c #e0e0e0",
+"NN  c #0e0e0e",
+"OO  c #080808",
+"PP  c #c1c0bd",
+"QQ  c #fffefa",
+"RR  c #efe9d6",
+"SS  c #313131",
+"TT  c #040404",
+"UU  c #c2c0b9",
+"VV  c #fffffc",
+"WW  c #ffd861",
+"YY  c #ebc34c",
+"ZZ  c #eae2c9",
+"aa  c #b9b9b9",
+"bb  c #6a6864",
+"cc  c #7f7c75",
+"dd  c #fff7df",
+"ee  c #ffe699",
+"ff  c #ffcc33",
+"gg  c #ffcc30",
+"hh  c #b1b1b1",
+"ii  c #eae3ce",
+"jj  c #3d3b34",
+"kk  c #5d5d5d",
+"ll  c #fffef8",
+"mm  c #ffedb5",
+"nn  c #eac24b",
+"oo  c #b2b2b2",
+"pp  c #dfdfdf",
+"qq  c #272522",
+"rr  c #fff8e0",
+"ss  c #f3f3f3",
+"tt  c #bababa",
+"XXXX==**##%%11223344XXXXXXXXXXXX",
+"XXXX556677886699XX00AAXXXXXXXXXX",
+"XXBBCCDDXX0066EEXXFFGGAAXXXXXXXX",
+"XXBBHHIIJJKK66LLXXXXMMGGAAXXXXXX",
+"XXXXAAGGGGNNOOPPQQRRXXMMGGAAXXXX",
+"XXAAGGMMSSTTUUVVWWYYZZXXMMGGAAXX",
+"33aaMMXXbbccddeeffggYYZZXXMMaa44",
+"hhMMXXiijjkkllmmffffggnniiXXMMhh",
+"ooppXXii66qqXXrrffffggnniiXXppoo",
+"44aappXXZZYYggffffggYYZZXXppaa44",
+"XXAAaappXXZZYYggggYYZZXXppaassXX",
+"XXXXAAaappXXZZnnnnZZXXppaassXXXX",
+"XXXXXXAAaappXXiiiiXXppaassXXXXXX",
+"XXXXXXXXAAaappXXXXppaaAAXXXXXXXX",
+"XXXXXXXXXXssttppMMttssXXXXXXXXXX",
+"XXXXXXXXXXXX44oooo44XXXXXXXXXXXX"
+};
+String1=0x02,Fragezeichen: Vorfahrt
+[end]
+
+[_point]
+; Originally @(0x001867+0x004964)=0x0061cb
+Type=0x073
+SubType=0x09
+XPM="16 16 151 2",
+"XX  c #ffffff",
+"==  c #ebebeb",
+"**  c #525252",
+"##  c #0a0a0a",
+"%%  c #111111",
+"11  c #6c6c6c",
+"22  c #f8f8f8",
+"33  c #515151",
+"44  c #000000",
+"55  c #6b6b6b",
+"66  c #4e4e4e",
+"77  c #797979",
+"88  c #fefefe",
+"99  c #090909",
+"00  c #484848",
+"AA  c #efefef",
+"BB  c #303030",
+"CC  c #889ecb",
+"DD  c #5072b6",
+"EE  c #5c729f",
+"FF  c #5974a9",
+"GG  c #718dc4",
+"HH  c #7a89a5",
+"II  c #404141",
+"JJ  c #d3dbed",
+"KK  c #4f71b6",
+"LL  c #5879ba",
+"MM  c #5274b7",
+"NN  c #4d70b5",
+"OO  c #899fcb",
+"PP  c #496bb3",
+"QQ  c #002f98",
+"RR  c #003098",
+"SS  c #002f97",
+"TT  c #28488a",
+"UU  c #0d0d0e",
+"VV  c #080808",
+"WW  c #bcbdbf",
+"YY  c #f8fafd",
+"ZZ  c #3e63b1",
+"aa  c #003198",
+"bb  c #214da6",
+"cc  c #5678bc",
+"dd  c #3d64b2",
+"ee  c #1140a0",
+"ff  c #496cb3",
+"gg  c #1846a3",
+"hh  c #3d63b1",
+"ii  c #27292d",
+"jj  c #030404",
+"kk  c #bebfc1",
+"ll  c #fefeff",
+"mm  c #95aad5",
+"nn  c #07389c",
+"oo  c #0d3d9e",
+"pp  c #6e8bc5",
+"qq  c #5c7cbe",
+"rr  c #6382c1",
+"ss  c #6080c0",
+"tt  c #5173b7",
+"uu  c #002e97",
+"vv  c #4166b3",
+"ww  c #839cce",
+"xx  c #3e485b",
+"yy  c #75777b",
+"zz  c #edf1f8",
+"!!  c #bfcce6",
+"@@  c #7b96cb",
+"$$  c #0b3c9e",
+"^^  c #05379b",
+"&&  c #486cb6",
+"((  c #6281c0",
+"))  c #3960b0",
+"--  c #486cb3",
+"++  c #476bb3",
+"//  c #0a3a9d",
+"<<  c #a4b6db",
+">>  c #6d8ac5",
+",,  c #2f3238",
+"::  c #5d5d5d",
+"X=  c #f6f8fc",
+"X*  c #a3b4da",
+"X#  c #103f9f",
+"X%  c #1e4ba5",
+"X1  c #365dae",
+"X2  c #355dae",
+"X3  c #597abd",
+"X4  c #4f72b9",
+"X5  c #2f58ac",
+"X6  c #466ab2",
+"X7  c #5073b9",
+"X8  c #e5ebf5",
+"X9  c #b9c7e3",
+"X0  c #212224",
+"XA  c #d8e0f0",
+"XB  c #013399",
+"XC  c #1241a0",
+"XD  c #5275ba",
+"XE  c #6584c2",
+"XF  c #2b55ab",
+"XG  c #496db4",
+"XH  c #325bae",
+"XI  c #a4b7db",
+"XJ  c #869ecf",
+"XK  c #1342a1",
+"XL  c #003299",
+"XM  c #003399",
+"XN  c #3f64b2",
+"XO  c #466bb5",
+"XP  c #365eaf",
+"XQ  c #486db6",
+"XR  c #0a3b9d",
+"XS  c #04369b",
+"XT  c #4a6db4",
+"XU  c #1744a2",
+"XV  c #b4c3e1",
+"XW  c #728dc6",
+"XY  c #7591c8",
+"XZ  c #a5b7db",
+"Xa  c #1f4ba5",
+"Xb  c #355eaf",
+"Xc  c #6987c3",
+"Xd  c #7b95ca",
+"Xe  c #02349a",
+"Xf  c #093a9d",
+"Xg  c #07399c",
+"Xh  c #5a7bbd",
+"Xi  c #a7b8dc",
+"Xj  c #2f59ac",
+"Xk  c #204da6",
+"Xl  c #5577bb",
+"Xm  c #1847a3",
+"Xn  c #4e6fb5",
+"Xo  c #3a61b0",
+"Xp  c #2c55aa",
+"Xq  c #5173b9",
+"Xr  c #1441a1",
+"Xs  c #5b7bbe",
+"Xt  c #023399",
+"Xu  c #244da6",
+"Xv  c #315bad",
+"Xw  c #0c3c9e",
+"Xx  c #0e3d9f",
+"Xy  c #4a6cb3",
+"Xz  c #8aa0cb",
+"X!  c #5878b9",
+"X@  c #5375b8",
+"X$  c #5f7ebc",
+"X^  c #5576b8",
+"X&  c #4f72b6",
+"X(  c #4e70b6",
+"XXXX==**##%%1122XXXXXXXXXXXXXXXX",
+"XXXX334455664477XXXXXXXXXXXXXXXX",
+"XX889900XXAA44BBXXXXXXXXXXXXXXXX",
+"CCDDEEFFGGHH44IIXXJJDDKKLLMMNNOO",
+"PPQQRRSSTTUUVVWWYYZZaabbccddeePP",
+"ffRRgghhiijjkkllmmnnooppqqrrsstt",
+"ffuuvvwwxxyyzz!!@@$$^^&&(((())--",
+"++//<<>>,,::X=X*X#X%X1X2X3X4X5--",
+"X6X7X8X944X0XXXAXBXCXDhhppXEXF--",
+"XGXHXIXJXKXLXMRRXNXOXPXQXRXSXMXT",
+"X6XUXVXWSSXMXL^^XYXZXaXbX7XKRRXT",
+"--XcXdXERRXeXfXgXhXiXjRRXkXlXm--",
+"XnXoXpXqSSXrXsXtXuXvXwaaQQXwXxXy",
+"XzNNMMX!DDX@X$ttX^X@KKDDDDX&X(Xz",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+};
+String1=0x02,Fragezeichen: verkehrsberuhigt
+[end]
+
+[_point]
+; Originally @(0x001867+0x004c9b)=0x006502
+Type=0x073
+SubType=0x0a
+XPM="16 16 142 2",
+"XX  c #b9c3d7",
+"==  c #728bbe",
+"**  c #7187b3",
+"##  c #4d4e50",
+"%%  c #0a0a0a",
+"11  c #111111",
+"22  c #6c6c6c",
+"33  c #f8f8f8",
+"44  c #e3e8f2",
+"55  c #738cbf",
+"66  c #6f89bd",
+"77  c #6e89bd",
+"88  c #718bbe",
+"99  c #b8c2d6",
+"00  c #758ebf",
+"AA  c #01349a",
+"BB  c #373c47",
+"CC  c #000000",
+"DD  c #676869",
+"EE  c #4e4e4e",
+"FF  c #797979",
+"GG  c #ffffff",
+"HH  c #869ecf",
+"II  c #003399",
+"JJ  c #00349a",
+"KK  c #748dbf",
+"LL  c #728cbf",
+"MM  c #013499",
+"NN  c #080808",
+"OO  c #373b41",
+"PP  c #f7f9fc",
+"QQ  c #b0bdd6",
+"RR  c #303030",
+"SS  c #cfd9ec",
+"TT  c #00339a",
+"UU  c #27488c",
+"VV  c #1a4292",
+"WW  c #3059ac",
+"YY  c #596e99",
+"ZZ  c #414141",
+"aa  c #c4cfe7",
+"bb  c #003299",
+"cc  c #28498b",
+"dd  c #0d0d0d",
+"ee  c #bebebe",
+"ff  c #fdfdfd",
+"gg  c #96abd7",
+"hh  c #003198",
+"ii  c #27292d",
+"jj  c #030304",
+"kk  c #c1c1c2",
+"ll  c #fefefe",
+"mm  c #a6a5a5",
+"nn  c #d2dae9",
+"oo  c #2651a9",
+"pp  c #3f485b",
+"qq  c #797a7d",
+"rr  c #fafafa",
+"ss  c #979797",
+"tt  c #191919",
+"uu  c #8e8e8d",
+"vv  c #8aa0ce",
+"ww  c #02349a",
+"xx  c #003098",
+"yy  c #33353a",
+"zz  c #5d5d5d",
+"!!  c #fbfbfb",
+"@@  c #bbbbbb",
+"$$  c #3c3c3c",
+"^^  c #7f7e7e",
+"&&  c #dadfe7",
+"((  c #3d63b2",
+"))  c #08389c",
+"--  c #262626",
+"++  c #ebebeb",
+"//  c #535353",
+"<<  c #d7d7d7",
+">>  c #fffffe",
+",,  c #acbdde",
+"::  c #0a3a9d",
+"X=  c #5274ba",
+"X*  c #f5f8fc",
+"X#  c #d6d6d6",
+"X%  c #6f6f6f",
+"X1  c #b4b4b4",
+"X2  c #f7f9fd",
+"X3  c #5778bc",
+"X4  c #1543a2",
+"X5  c #b4c0d8",
+"X6  c #c5c4c3",
+"X7  c #dfdfdf",
+"X8  c #777777",
+"X9  c #8e8e8e",
+"X0  c #b2b2b2",
+"XA  c #6d6d6d",
+"XB  c #dddddd",
+"XC  c #c3c3c1",
+"XD  c #b9c5db",
+"XE  c #1745a3",
+"XF  c #003199",
+"XG  c #718dc7",
+"XH  c #878788",
+"XI  c #515150",
+"XJ  c #898988",
+"XK  c #6e6e6e",
+"XL  c #616161",
+"XM  c #696969",
+"XN  c #7f7f7f",
+"XO  c #515151",
+"XP  c #8c8c8c",
+"XQ  c #7692c9",
+"XR  c #708abe",
+"XS  c #2652aa",
+"XT  c #bac2d1",
+"XU  c #424141",
+"XV  c #9a9a9b",
+"XW  c #565657",
+"XY  c #959595",
+"XZ  c #6a6a6a",
+"Xa  c #69696a",
+"Xb  c #545455",
+"Xc  c #9b9b9c",
+"Xd  c #bec5d3",
+"Xe  c #2955ab",
+"Xf  c #204da7",
+"Xg  c #4f70b3",
+"Xh  c #3a5b9e",
+"Xi  c #4a6bae",
+"Xj  c #4364a6",
+"Xk  c #4a6bad",
+"Xl  c #3b5c9e",
+"Xm  c #38599c",
+"Xn  c #4f70b2",
+"Xo  c #224ea8",
+"Xp  c #768fc0",
+"Xq  c #01339a",
+"Xr  c #00329a",
+"Xs  c #003099",
+"Xt  c #748ebf",
+"Xu  c #bac4d7",
+"Xv  c #728cbe",
+"Xw  c #758ec0",
+"XX==**##%%1122334455666666778899",
+"00AABBCCDDEECCFFGGHHIIIIIIIIJJKK",
+"LLMMNNOOPPQQCCRRGGSSIIIIIIIITT88",
+"55MMUUVVWWYYCCZZGGaabbIIIIIITT88",
+"55TTIIIIccddNNeeffgghhIIIIIITT88",
+"55TTIIIIiijjkkllmmnnoohhIIIITT88",
+"55TTIIIIppqqrrssttuuvvwwbbIITT88",
+"55TTIIxxyyzz!!@@$$^^&&((xxIITT88",
+"55TTbb))CC--GG++//<<>>,,::bbTT88",
+"55TTxxX=X*GGX#X%FFX1GGX2X3xxTT88",
+"55bbX4X5X6X7X8X9X0XAXBXCXDXEbb88",
+"55XFXGXHXIXJXKXLXMXNXJXOXPXQXF88",
+"XRXSXTXUXVXWXYXZXaX9XbXcXUXdXe66",
+"88XfXgXhXgXhXiXjXjXkXlXgXmXnXo66",
+"XpXqxxXrXsXrXFXFXFXFXrXsXrxxXqXt",
+"Xu00==XvXvLL5555555555555555XwXX"
+};
+String1=0x02,Fragezeichen: Zebrastreifen
+[end]
+
+[_point]
+; Originally @(0x001867+0x004faf)=0x006816
+Type=0x073
+SubType=0x0b
+XPM="16 16 53 2",
+"XX  c #ffffff",
+"==  c #ebebeb",
+"**  c #525252",
+"##  c #0a0a0a",
+"%%  c #111111",
+"11  c #6c6c6c",
+"22  c #f8f8f8",
+"33  c #515151",
+"44  c #000000",
+"55  c #6b6b6b",
+"66  c #4e4e4e",
+"77  c #797979",
+"88  c #fefefe",
+"99  c #090909",
+"00  c #484848",
+"AA  c #efefef",
+"BB  c #303030",
+"CC  c #cfcfcf",
+"DD  c #e2e2e2",
+"EE  c #c3c3c3",
+"FF  c #414141",
+"GG  c #f1e8e8",
+"HH  c #f7eeee",
+"II  c #f7eded",
+"JJ  c #c7c1c1",
+"KK  c #0e0e0e",
+"LL  c #080808",
+"MM  c #c1c1c1",
+"NN  c #f9f2f2",
+"OO  c #d63e3e",
+"PP  c #d93f3f",
+"QQ  c #2f2a2a",
+"RR  c #040303",
+"SS  c #c1b8b8",
+"TT  c #fffcfc",
+"UU  c #e26c6c",
+"VV  c #d73e3e",
+"WW  c #c90101",
+"YY  c #cc0000",
+"ZZ  c #643e3e",
+"aa  c #7d7070",
+"bb  c #f7d7d7",
+"cc  c #e57f7f",
+"dd  c #cb0000",
+"ee  c #ca0101",
+"ff  c #3c2f2f",
+"gg  c #5d5d5d",
+"hh  c #fef6f6",
+"ii  c #eda2a2",
+"jj  c #252121",
+"kk  c #f8d8d8",
+"ll  c #d93e3e",
+"mm  c #d73d3d",
+"XXXX==**##%%1122XXXXXXXXXXXXXXXX",
+"XXXX334455664477XXXXXXXXXXXXXXXX",
+"XX889900XXAA44BBXXXXXXXXXXXXXXXX",
+"XX88CCDDXXEE44FFXXXXXXXXXXXXXXXX",
+"GGHHIIIIJJKKLLMMXXNNIIIIIIIIHHGG",
+"OOPPPPPPQQRRSSTTUUPPPPPPPPPPPPVV",
+"WWYYYYYYZZaabbccYYYYYYYYYYYYYYdd",
+"eeYYYYYYffgghhiiYYYYYYYYYYYYYYYY",
+"eeYYYYYY44jjXXkkYYYYYYYYYYYYYYYY",
+"WWYYYYYYYYYYYYYYYYYYYYYYYYYYYYdd",
+"OOllllllllllllllllllllllllllllmm",
+"GGIIIIIIIIIIIIIIIIIIIIIIIIIIIIGG",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+};
+String1=0x02,Fragezeichen: unbeleuchtet
+[end]
+
+[_point]
+; Originally @(0x001867+0x00518b)=0x0069f2
+Type=0x073
+SubType=0x0c
+XPM="16 16 91 2",
+"XX  c #ffffff",
+"==  c #ebebeb",
+"**  c #525252",
+"##  c #0a0a0a",
+"%%  c #111111",
+"11  c #6c6c6c",
+"22  c #f8f8f8",
+"33  c #515151",
+"44  c #000000",
+"55  c #6b6b6b",
+"66  c #4e4e4e",
+"77  c #797979",
+"88  c #fefefe",
+"99  c #090909",
+"00  c #484848",
+"AA  c #efefef",
+"BB  c #303030",
+"CC  c #cfcfcf",
+"DD  c #e2e2e2",
+"EE  c #c3c3c3",
+"FF  c #414141",
+"GG  c #cccccc",
+"HH  c #0e0e0e",
+"II  c #080808",
+"JJ  c #c1c1c1",
+"KK  c #313131",
+"LL  c #040404",
+"MM  c #f7e6b4",
+"NN  c #fae7ad",
+"OO  c #f9e6ad",
+"PP  c #6d695f",
+"QQ  c #807e7b",
+"RR  c #fefbf2",
+"SS  c #fcf2d6",
+"TT  c #f9e6ac",
+"UU  c #f8e5ac",
+"VV  c #f9e5ac",
+"WW  c #f9e7af",
+"YY  c #faf2da",
+"ZZ  c #f9c938",
+"aa  c #e2b52f",
+"bb  c #ddb12f",
+"cc  c #f4c433",
+"dd  c #3d3b32",
+"ee  c #5d5d5d",
+"ff  c #fffdf8",
+"gg  c #fceab5",
+"hh  c #eabc31",
+"ii  c #f5c533",
+"jj  c #f9c834",
+"kk  c #f5c433",
+"ll  c #e8ba31",
+"mm  c #f9ce4b",
+"nn  c #f8df93",
+"oo  c #fbc933",
+"pp  c #b38f23",
+"qq  c #ae8b22",
+"rr  c #252421",
+"ss  c #f2edde",
+"tt  c #9b7c1e",
+"uu  c #a58420",
+"vv  c #9f7f1f",
+"ww  c #b28e23",
+"xx  c #a0801f",
+"yy  c #e1b42a",
+"zz  c #ffcc30",
+"!!  c #f5cf5d",
+"@@  c #f9c937",
+"$$  c #e1b42e",
+"^^  c #d8ad2d",
+"&&  c #d9ae2d",
+"((  c #deb22e",
+"))  c #ddb12e",
+"--  c #d4aa2c",
+"++  c #e0b42e",
+"//  c #d6ab2c",
+"<<  c #d1a82b",
+">>  c #cea52b",
+",,  c #d8ae2d",
+"::  c #dfb32e",
+"X=  c #efc446",
+"X*  c #f9de8e",
+"X#  c #f7e5af",
+"X%  c #fae6a9",
+"X1  c #fae5a9",
+"X2  c #fae6a8",
+"X3  c #fbe6a8",
+"X4  c #fae5a8",
+"X5  c #fae6ab",
+"X6  c #fbf1d6",
+"X7  c #fefefd",
+"XXXX==**##%%1122XXXXXXXXXXXXXXXX",
+"XXXX334455664477XXXXXXXXXXXXXXXX",
+"XX889900XXAA44BBXXXXXXXXXXXXXXXX",
+"XX88CCDDXXEE44FFXXXXXXXXXXXXXXXX",
+"XXXXXXXXGGHHIIJJXXXXXXXXXXXXXXXX",
+"XXXXXXXXKKLLEEXXXXXXXXXXXXXXXXXX",
+"MMNNNNOOPPQQRRSSTTTTUUVVWWYY88XX",
+"ZZaabbccddeeffgghhiijjkkllmmnnYY",
+"ooppqqqq44rrXXssttuuvvwwxxyyzz!!",
+"@@$$^^&&(())--++//<<>>,,::X=X*YY",
+"X#X%X%X%X%X%X%X1X2X2X3X4X5X6X7XX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+};
+String1=0x02,Fragezeichen: Straßenname
+[end]
+
+[_point]
+; Originally @(0x001867+0x0053eb)=0x006c52
+Type=0x073
+SubType=0x0d
+XPM="16 16 126 2",
+"XX  c #c5c5c5",
+"==  c #848383",
+"**  c #818080",
+"##  c #4f4f4f",
+"%%  c #0a0a0a",
+"11  c #111111",
+"22  c #6c6c6c",
+"33  c #f8f8f8",
+"44  c #e7e7e7",
+"55  c #848484",
+"66  c #8e8d8d",
+"77  c #9a9a9a",
+"88  c #939393",
+"99  c #828181",
+"00  c #818181",
+"AA  c #464646",
+"BB  c #000000",
+"CC  c #6b6b6b",
+"DD  c #4e4e4e",
+"EE  c #797979",
+"FF  c #ffffff",
+"GG  c #c9c9c9",
+"HH  c #bfbebe",
+"II  c #f1f0f0",
+"JJ  c #d6d5d5",
+"KK  c #919191",
+"LL  c #838383",
+"MM  c #828282",
+"NN  c #929292",
+"OO  c #080808",
+"PP  c #e4e4e4",
+"QQ  c #303030",
+"RR  c #ededed",
+"SS  c #d1d1d1",
+"TT  c #a2a2a2",
+"UU  c #949494",
+"VV  c #8d8d8d",
+"WW  c #8c8b8b",
+"YY  c #e1e0e0",
+"ZZ  c #aeaeae",
+"aa  c #414141",
+"bb  c #eeeeee",
+"cc  c #fdfdfd",
+"dd  c #fbfafa",
+"ee  c #e9e8e8",
+"ff  c #9b9b9b",
+"gg  c #404040",
+"hh  c #2e2e2e",
+"ii  c #676767",
+"jj  c #0d0d0d",
+"kk  c #bdbdbd",
+"ll  c #fbfbfb",
+"mm  c #898989",
+"nn  c #555555",
+"oo  c #9c9b9b",
+"pp  c #fffefe",
+"qq  c #999999",
+"rr  c #aaa9a9",
+"ss  c #b4b4b4",
+"tt  c #040404",
+"uu  c #c0c0c0",
+"vv  c #d2d2d2",
+"ww  c #c4c3c3",
+"xx  c #575757",
+"yy  c #d8d7d7",
+"zz  c #d3d2d2",
+"!!  c #808080",
+"@@  c #8c8c8c",
+"$$  c #9e9e9e",
+"^^  c #6e6e6e",
+"&&  c #7d7d7d",
+"((  c #efefef",
+"))  c #cccccc",
+"--  c #989898",
+"++  c #979797",
+"//  c #c6c6c6",
+"<<  c #646464",
+">>  c #bcbcbc",
+",,  c #9f9f9f",
+"::  c #8e8e8e",
+"X=  c #9d9d9d",
+"X*  c #e6e5e5",
+"X#  c #3f3f3f",
+"X%  c #5d5d5d",
+"X1  c #fcfcfc",
+"X2  c #dadada",
+"X3  c #a0a0a0",
+"X4  c #252525",
+"X5  c #f0f0f0",
+"X6  c #9c9c9c",
+"X7  c #cdcdcd",
+"X8  c #f5f4f4",
+"X9  c #e5e4e4",
+"X0  c #c6c5c5",
+"XA  c #c7c6c6",
+"XB  c #c5c4c4",
+"XC  c #575656",
+"XD  c #d7d6d6",
+"XE  c #c1c1c1",
+"XF  c #676666",
+"XG  c #646363",
+"XH  c #9d9c9c",
+"XI  c #fefefe",
+"XJ  c #d4d4d4",
+"XK  c #e8e8e8",
+"XL  c #e7e6e6",
+"XM  c #585858",
+"XN  c #a7a6a6",
+"XO  c #bdbcbc",
+"XP  c #bbbbbb",
+"XQ  c #bbbaba",
+"XR  c #c8c7c7",
+"XS  c #e4e3e3",
+"XT  c #e5e5e5",
+"XU  c #d5d4d4",
+"XV  c #a4a4a4",
+"XW  c #c4c4c4",
+"XY  c #616161",
+"XZ  c #c7c7c7",
+"Xa  c #9f9e9e",
+"Xb  c #b3b3b3",
+"Xc  c #5c5b5b",
+"Xd  c #b6b6b6",
+"Xe  c #8a8a8a",
+"Xf  c #747474",
+"Xg  c #8b8b8b",
+"XX==**##%%11223344556677889955XX",
+"5500AABBCCDDBBEEFFGGHHIIJJKK00LL",
+"MMNNOOAAFFPPBBQQFFRRSSFF44TTNNMM",
+"UUSSVVWWYYZZBBaaFFbbJJccddeeJJ88",
+"ffSSgghhiijjOOkkllmmnnooppFFbbqq",
+"VVHHrrssQQttuuFFvvXXwwxxyyzzHH66",
+"!!@@$$44^^&&(())--++//<<>>,,@@**",
+"00::X=X*X#X%X1X2qq--//<<>>X3::00",
+"00::X=X*BBX4FFX5qq--//<<>>X3::00",
+"!!@@X6X*FFX7++----++//<<>>,,@@**",
+"VVHHSSX8FFX9XXX0X0XAXBXCXDzzHHVV",
+"qqbbFFFFXEXFXG<<<<<<xxXHXIFFbbqq",
+"88XJXKXLXMXNXOXPXPXQXRXSX9XTXU88",
+"MMKKXVXWXYXZ,,,,,,,,XaX=X=X=KKMM",
+"LL00UUXbXcXdVV::::::::::::::00LL",
+"XB==MMXeXfXg0000000000000000LLXW"
+};
+String1=0x02,Fragezeichen: genaue Lage
 [end]
 
 
