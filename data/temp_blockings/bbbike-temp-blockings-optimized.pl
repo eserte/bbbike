@@ -1053,18 +1053,7 @@ userdel	q4::inwork 425,8766 490,8716
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'INKO_078941_COPY_1',
-         'until' => 1352476800,
-         'text' => 'Blankenburger Straße: Richtung Dietzgenstraße zwischen Lindenberger Straße und Siegfriedstraße wegen Bauarbeiten gesperrt; Herthaplatz ist teilweise eine Einbahnstraße; 05.10.2011 11:00 Uhr bis 09.11.2012 17:00 Uhr',
-         'from' => 1317679200,
-         'id' => 2290,
-         'data' => 'userdel	q4::inwork; 11148,19838 11051,19789 10948,19737 10829,19676 10742,19632
-#: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/blankenburger-strasse2.html
-userdel	q4::inwork; 10614,19907 10599,19957
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1245,7 +1234,16 @@ userdel	q3::inwork 11912,14486 11642,14625
          'type' => 'handicap'
        },
        undef,
-       undef,
+       {
+         'source_id' => 'IM_019006',
+         'until' => 1353254400,
+         'text' => 'Berliner Str. (Pankow): Baustelle, stadtauswärts zwischen Mühlenstr. und Elsa-Brändström-Str. bis Mitte November 2012 gesperrt',
+         'from' => 1342945020,
+         'id' => 2363,
+         'data' => 'userdel	q4::inwork; 10927,17022 10908,17142
+',
+         'type' => 'handicap'
+       },
        {
          'source_id' => 'INKO_113869',
          'until' => 1354291200,

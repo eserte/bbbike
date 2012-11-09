@@ -623,6 +623,7 @@ Suadicanistr.	N 7859,7486 7858,7506
 Suadicanistr.	NN 7858,7506 7854,7572
 Ballonfahrerweg	NH 7946,7411 7979,7525 7949,7607
 (Bahnhof Südkreuz)	NN 7949,7607 7934,7621 7854,7572
+(Bahnhof Südkreuz)	NN 7774,7724 7837,7899
 #: note: offizielles Zeichen: Verboten für Fahrzeuge aller Art, Pkw frei (!)
 (Zufahrt zum Bahnhof Südkreuz)	N 7951,7801 7932,7795 7919,7679
 Erika-Gräfin-von-Brockdorff-Platz	NN 7934,7621 7919,7679
@@ -877,7 +878,7 @@ Jenaer Str. (Wilmersdorf)	NN 5792,9439 5788,9484
 Nassauische Str.	N 5195,8880 5189,8983 5189,9397
 Nassauische Str.	N 5201,9424 5182,9464 5174,9708
 Nassauische Str.	NN 5174,9708 5155,9786
-Fritz-Elsas-Str.	N 6575,8469 6534,8467 6461,8463 6377,8457 6263,8456 6163,8398 6060,8334 5925,8219
+Fritz-Elsas-Str.	N 6575,8469 6534,8467 6461,8463 6377,8460 6263,8456 6163,8398 6060,8334 5925,8219
 Innsbrucker Str.	N 6118,9078 6169,8896 6195,8793 6219,8694 6244,8597
 Innsbrucker Str.	NN 6244,8597 6263,8456
 Innsbrucker Str.	N 6263,8456 6325,8259 6350,8177 6386,8085
@@ -936,23 +937,19 @@ Hoeppnerstr.	N 9242,7286 9107,7297 9051,7340 8971,7359 8879,7378 8806,7382 8715,
 (Hoeppnerstr. - Hessenring)	NN 8376,7440 8446,7524 8549,7622
 (Kolonie Zähringer Korso)	NN 8553,7795 8554,7746 8573,7710 8549,7622
 Gontermannstr.	N 8263,7611 8260,7803 8260,7911 8265,8092 8259,8265 8276,8295 8327,8302 8394,8313 8482,8364
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/44re.pdf/file?y=2012 vvv
-#: XXX existieren schon Straßenschilder auf beiden Seiten, oder wenn nicht, werden spätestens bei der Eröffnung des Steges welche aufgestellt? vvv
-#: next_check: 2012-11-08 vvv
 #: note: Arbeitstitel "Ost-West-Grünzug" vvv
 Hertha-Block-Promenade	NN 8101,8292 8202,8293 8265,8305 8276,8295
 Hertha-Block-Promenade	NN 7716,8356 7807,8354 7893,8327
 #: note ^^^
-#: next_check ^^^
-#: XXX ^^^
-#: by: ^^^
-# 
-#: by: http://www.stadtumbau-berlin.de/O-W-Gruenzug-Fussgaenger-und-Radfahrersteg.4699.0.html
-#: by: http://www.stadtumbau-berlin.de/fileadmin/images/Dokumentation/Projektdokumentation/Tempelhof-Schoeneberg/FG_Suedkreuz/Naumannstrasse/Karten/Lageplan_Naumann_Leuthener-Platz.pdf (begleitende Verkehrsberuhigung in der Naumannstraße)
-#: by: http://www.stadtumbau-berlin.de/O-W-Gruenzug-Fussgaenger-und-Radfahrersteg.4699.0.html?y=2012 (Name der Brücke, Fertigstellung Juli 2012)
-#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20121031.1505.377400.html (Eröffnung)
-#: XXX beleuchtet?
-Alfred-Lion-Steg	NN 7893,8327 8090,8291 8088,8254
+#: note: mit LED-Beleuchtung
+Alfred-Lion-Steg	NN 7893,8327 7932,8325 7992,8312 8086,8289 8078,8256 8088,8254
+(Wilhelm-Kabus-Str. - Bhf. Südkreuz)	N 7713,8001 7837,7899
+(Radweg an der Bahnstrecke - Alfred-Lion-Steg)	NN 7992,8300 7932,8325
+#: by: http://www.stadtentwicklung.berlin.de/staedtebau/foerderprogramme/stadtumbau/Schoeneberger-Schleife-Suedl-Teilstueck-an.4681.0.html
+#: XXX hier wird irgendwann mal der Radweg Berlin-Leipzig entlang geführt
+#: last_checked: 2012-11-09
+#: next_check: 2013-11-08
+(Radweg an der Bahnstrecke)	NN 7998,8317 7992,8300 7837,7899
 Badener Ring	N 8482,8364 8531,8404 8570,8427 8660,8454 8715,8459 8756,8453 8851,8424
 Thuyring	N 8879,7378 8894,7481 8947,7601 8994,7639 9040,7648 9115,7645 9132,7661 9242,7658
 Kleineweg	N 9097,7469 9145,7522 9120,7600 9115,7645
@@ -4135,7 +4132,7 @@ Lorenzstr.	H 5805,1841 5781,1936 5720,2081 5660,2219 5542,2491
 Parallelstr. (Lichterfelde, Lankwitz)	N 5028,1783 5087,1807 5198,1853 5335,1913 5431,1956 5489,1981 5592,2021 5720,2081 5807,2117 5825,2125 5849,2139
 Frobenstr. (Lankwitz)	N 5849,2139 5934,2198 6108,2326 6349,2510 6529,2642 6618,2703 6677,2718
 Rudolstädter Str.	H 4280,8188 4220,8260 4139,8356 4029,8482 3964,8559 3928,8598 3848,8689 3775,8771 3701,8849 3667,8893 3521,9059
-Blissestr.	H 4789,7859 4793,7992 4788,8318 4788,8347 4784,8508 4783,8557 4772,8599 4777,8731 4778,8784 4777,8870
+Blissestr.	H 4789,7859 4793,7992 4788,8318 4788,8354 4784,8508 4783,8557 4772,8599 4777,8731 4778,8784 4777,8870
 Barstr.	N 4325,8229 4316,8245 4315,8478 4320,8596 4327,8887 4325,8998 4325,9082 4325,9159 4339,9224 4377,9258
 Sven-Hedin-Str.	N -1028,3447 -800,3383 -745,3401 -645,3434 -548,3467 -478,3509 -364,3584 -266,3648 -141,3715 -92,3724 16,3744 201,3764 271,3772 394,3694 458,3697
 Jaehnstr.	N -478,3509 -575,3684
@@ -10777,7 +10774,7 @@ Zur Innung	N 14086,13090 14132,13234
 Zur Rinderauktionshalle	N 14207,13152 14450,13081
 Zum Langen Jammer	N 14682,12874 14405,12953
 (Parkweg)	NN 14690,12900 14414,12979
-Hildegardstr.	N 5421,8337 5177,8341 5064,8340 4958,8344 4874,8347 4788,8347
+Hildegardstr.	N 5421,8337 5372,8357 5177,8356 5064,8355 4958,8355 4874,8354 4788,8354
 Steifensandstr.	N 2924,11309 3054,11240
 Pestalozzistr. (Charlottenburg)	N 3054,11240 3252,11237 3368,11237 3479,11238 3721,11230
 Pestalozzistr. (Charlottenburg)	NN 3721,11230 3770,11231 3822,11231
@@ -12474,9 +12471,9 @@ Badener Str.	N 24051,9156 23798,9263 23643,9330 23550,9369 23470,9403 23166,9549
 Bruchsaler Str. (Mahlsdorf)	N 24205,9520 23932,9564 23584,9629
 Freiburger Str.	N 23550,9369 23583,9448 23673,9414 23838,9351 23918,9312 24085,9237
 Eichenhofweg	N 24056,9798 24299,9746
-Livländische Str.	N 5170,8449 5177,8341 5177,8139
+Livländische Str.	N 5170,8449 5177,8356 5177,8139
 (Livländische Str. - Schoelerpark)	NN 5170,8449 5212,8602
-Weimarische Str.	N 5064,8340 5066,8140 5066,7998 5068,7965
+Weimarische Str.	N 5064,8355 5066,8140 5066,7998 5068,7965
 Rudolf-Schwarz-Str.	NN 13097,14307 13079,14320
 Rudolf-Schwarz-Str.	N 13079,14320 13009,14371 12947,14428 12811,14526
 Kablower Weg	N 22315,490 22504,425 22683,201 22815,37 22976,-176 23206,206
@@ -12622,7 +12619,7 @@ Schlochauer Str.	N 19789,11151 19795,11256 19799,11333 19801,11360 19805,11441 1
 Kaiserswerther Str.	N 2762,4713 2673,4651 2545,4565 2461,4556
 Schwendenerstr.	N 3426,5292 3321,5212 3166,5119 3072,5062 2996,5005 2905,4907 2841,4793 2762,4713
 Arnold-Zweig-Str.	N 11870,17522 11729,17499 11604,17478 11492,17460 11243,17421 11100,17396
-Koblenzer Str.	N 4874,8347 4874,8140 4873,7994 4873,7967
+Koblenzer Str.	N 4874,8354 4874,8140 4873,7994 4873,7967
 Borkumstr.	N 11425,17817 11297,17795 11260,17789 11217,17783 11136,17768 11049,17752 10956,17735 10858,17721
 Borkumstr.	N 11260,17789 11275,17690
 Sellinstr.	N 11195,17911 11217,17783
@@ -14253,7 +14250,7 @@ Gasteiner Str.	N 4920,9000 4715,8977
 Gerdauer Str.	N 5343,8858 5346,8720
 Schoelerpark	NN 5228,8729 5228,8703 5241,8692 5240,8637 5219,8635 5185,8647 5188,8694 5204,8702 5206,8731
 Schoelerpark	NN 5219,8635 5212,8602
-Schrammstr.	N 4960,8440 4958,8344
+Schrammstr.	N 4960,8440 4958,8355
 Mainzer Str. (Wilmersdorf)	N 4874,8140 5066,8140 5177,8139 5359,8140
 Tübinger Str.	N 5359,8140 5420,8160 5507,8253
 Kelheimer Str.	N 5881,10163 5894,10287
@@ -14358,7 +14355,7 @@ Gothaer Str. (Schöneberg)	N 6568,9211 6591,9080 6612,8966 6627,8867 6644,8780
 Meininger Str.	N 6449,8845 6627,8867
 Voßbergstr.	N 6350,8177 6460,8186
 Heylstr.	N 6552,8281 6459,8281 6385,8274 6325,8259 6246,8222 6181,8181
-Hewaldstr.	N 6377,8457 6385,8274
+Hewaldstr.	N 6377,8460 6385,8274
 Nymphenburger Str.	N 6163,8398 6246,8222
 Mettestr.	N 5910,8170 6009,8101
 Kuppenheimer Str.	NN 5820,8117 5824,8035

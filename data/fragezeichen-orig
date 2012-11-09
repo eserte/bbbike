@@ -87,10 +87,14 @@ Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwe
 #: next_check: 2013-06-01
 Skalitzer/Gitschiner Str.: werden hier Radspuren markiert?	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280
 # 
-#: XXX Baumaßnahme 2.23 (Realisierung nach 2011)
-#: last_checked: 2012-10-16
-#: next_check: 2013-06-01
-Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected 12497,11459 12551,11515 12645,11673 12681,11741 12726,11851 12758,11915 12822,12067 12833,12154 12850,12286 12869,12425 12891,12549
+#: XXX Baumaßnahme 2.23 (Realisierung nach 2011) vvv
+#: last_checked: 2012-10-16 vvv
+#: next_check: 2013-06-01 vvv
+Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected; 12758,11915 12726,11851 12681,11741 12645,11673 12551,11515 12497,11459
+Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected 12833,12154 12850,12286 12869,12425 12891,12549
+#: next_check ^^^
+#: last_checked ^^^
+#: XXX ^^^
 # 
 #: XXX Baumaßnahme 1.39 (Realisierung in 2011)
 #: last_checked: 2012-10-15
@@ -221,6 +225,7 @@ Müggelseedamm: entstehen hier Radwege/spuren, insbesondere Richtung Westen?	?::p
 # - handelt es sich bei der Frage um Zebrastreifen und andere
 #   für Radfahrer eher uninteressante Dinge (-> private)
 # 
+ehem. Urbankrankenhaus: Wege?	?::inwork 11051,9721 10900,9774 10882,9734 11030,9675
 #: XXX laut osm under construction vvv
 #: XXX fehlt in Berlin.coords.data, PLZ=13467 vvv
 Am Dominikusteich: Qualität? Straße bereits fertiggestellt?	?::inwork 2651,23926 2760,23964 2787,23971
@@ -381,12 +386,7 @@ Radweg Berlin-Leipzig, Abschnitt Yorckstr. - Monumentenstr.: wird bis Ende 2013 
 # 
 #: by: http://www.stadtentwicklung.berlin.de/staedtebau/foerderprogramme/stadtumbau/Schoeneberger-Schleife-Noerdl-Teilstueck-a.5712.0.html
 #: next_check: 2015-01-01
-Radweg Berlin-Leipzig, Abschnitt Monumentenstr. - Alfred-Lion-Steg: Realisierung bis 2015	?::projected 8235,9107 8200,8920 7991,8297
-# 
-#: by: http://www.stadtentwicklung.berlin.de/staedtebau/foerderprogramme/stadtumbau/Schoeneberger-Schleife-Suedl-Teilstueck-an.4681.0.html
-#: XXX hier könnte tatsächlich schon was existieren
-#: next_check: 2012-11-08
-Radweg Berlin-Leipzig, Abschnitt Alfred-Lion-Steg - Südkreuz: Realisierung bis 2012	?::inwork 7991,8297 7856,7914
+Radweg Berlin-Leipzig, Abschnitt Monumentenstr. - Alfred-Lion-Steg: Realisierung bis 2015	?::projected 8235,9107 8200,8920 7998,8317
 # 
 #: by: http://www.stadtumbau-berlin.de/Fotos.4730.0.html
 #: last_checked: 2012-08-17
@@ -691,6 +691,8 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/47re.pdf/file?y=2012
+Weg im Harry-Bresslau-Park: wo genau liegt der Weg? Qualität? Nachts beleuchtet?	? 4961,6327 4903,6221
 #: XXX VMZ-Eintrag: Malchower Weg (Hohenschönhausen): Baustelle, Fahrtrichtung gesperrt, eine Umleitung ist eingerichtet (bis 05/13) Richtung Rhinstr. zwischen Hansastr. und Wartenberger Str., 05.11.2012 09:00 Uhr bis 31.05.2013 16:00 Uhr	INKO_111447
 Malchower Str.: wo sind hier die Bauarbeiten? Behinderungen für Radfahrer?	?::inwork 17425,16165 17383,16197 17271,16280 17220,16320 17170,16365 17102,16464 17059,16560 17017,16716 17004,16778 16992,16840 16981,16900 16978,16915 16966,16978 16951,17055 16934,17132 16918,17204 16914,17224 16902,17278 16887,17349 16837,17440
 Kantstr.: gibt es Radspuren am Zoofenster?	? 5652,11004 5613,10963 5488,10978
@@ -706,8 +708,8 @@ Armenische Str. - Aroser Allee: existiert für Radfahrer eine Verbindung? Ausschi
 Sendener Str. - Bernauer Str.: Qualität des Waldweges?	? 964,18321 915,18352 625,18518 560,18494
 Göhrener Str.: ist hier irgendwo verkehrsberuhigt?	? 11511,15054 11476,15030
 # 
-#: last_checked: 2012-11-06
-#: next_check: 2012-11-12
+#: last_checked: 2012-11-09
+#: next_check: 2012-11-10
 #: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20121029.1330.377234.html
 #: XXX Bauarbeiten gehen bis Dezember 2012
 Bauarbeiten in der Köpenicker Str.: wie wird die Einbahnstraßenrichtung verlaufen? Behinderungen für Radfahrer?	? 11242,11720 11155,11750 11022,11782 11048,11745 11155,11750
@@ -3121,7 +3123,7 @@ Glienicker Weg: wird es nach dem Neubau der Straße Radwege geben?	?::inwork 2077
 #: by: http://www.berlin.de/ba-pankow/presse/archiv/20110930.1255.360473.html
 #: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/blankenburger-strasse2.html
 #: next_check: 2012-11-09
-Blankenburger Str.: Gibt es nach den Bauarbeiten Radstreifen in beiden Richtungen?	?::inwork 11148,19838 11051,19789 10948,19737 10829,19676 10742,19632
+Blankenburger Str.: Gibt es nach den Bauarbeiten Radstreifen in beiden Richtungen?	? 11148,19838 11051,19789 10948,19737 10829,19676 10742,19632
 # 
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20101221.1110.323849.html
 #: XXX Ampelanlage in Planung, Realisierung 2011
