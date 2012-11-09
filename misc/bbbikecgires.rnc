@@ -48,6 +48,8 @@ successful-route-search-result =
          "N" | "NE" | "E" | "SE" | "S" | "SW" | "W" | "NW" |
          ## left/half left/right/half right
          "l" | "hl" | "r" | "hr" |
+         ## tUrn (umdrehen/umkehren)
+         "u" |
          ## straight ahead
          ""
       }?,

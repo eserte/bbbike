@@ -44,6 +44,7 @@ mapping:
               - hl # half left
               - r  # right
               - hr # half right
+              - u  # tUrn (umdrehen/umkehren)
 
           DistString:
             # Length of this leg as human readable text, may contain a unit.
