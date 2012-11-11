@@ -163,7 +163,7 @@ Anzengruberstr.	1 12865,8346 12689,8289
 Nalepastr. am Rundfunkgebäude	2 17076,8443 17059,8097
 Kirchstr.	1 22196,4847 22240,4768 22246,4711 22284,4653 22314,4604
 Kietzer Str.	1s 22372,4496 22383,4470
-Ontarioseestr.	1 18577,10023 18408,10041 18339,10048
+Ontarioseestr.	1 18577,10023 18408,10041
 Degnerstr. (außer Tram)	1 16448,15593 16475,15659
 Henriette-Herz-Platz	1 10371,13006 10312,12982 10255,12959
 Savignyplatz	1 4921,11017 4920,10933 4868,10934 4817,10943 4827,11025 4835,11092 4880,11088 4926,11081 4921,11017
@@ -220,7 +220,8 @@ Erlenweg	1 -3226,18109 -3327,18007
 Aspenweg	1 -3000,18196 -3020,18194 -3050,18173 -3096,18119 -3111,18105 -3168,18051 -3203,18014 -3224,17943
 Aspenweg	1 -3288,17831 -3244,17883 -3224,17943
 Pintschstr.	1 13339,13196 13435,12973
-Splanemannstr.	1 18301,9946 18389,9925 18408,10041 18403,10077
+Splanemannstr.	1 18301,9946 18389,9925 18408,10041
+Ontarioseestr.	1 18408,10041 18403,10077
 Burgherrenstr.	1 8969,8640 9076,8783
 Travestr.	1 14835,11840 14897,11801 14981,11751
 Müggelstr.	1 14897,11801 14965,11921
@@ -680,8 +681,8 @@ Mark-Twain-Str.	1 24321,14410 24349,14500
 A.T.U-Einfahrt: Tor, außerhalb der Öffnungszeiten (Mo-Fr bis 20 Uhr, Sa bis 16 Uhr) gesperrt	2 8546,9468 8561,9482
 (Erfurter Str. - Wexstr.)	1 6260,8011 6261,8058
 Rubensstr.	1 6429,7876 6307,7893
-Bäumerplan	1 8527,7928 8553,7795
-Bäumerplan	1 8512,7757 8467,7913
+Bäumerplan	1 8527,7939 8553,7795
+Bäumerplan	1 8512,7757 8466,7918
 Mierendorffstr.	1 3645,13189 3542,13063
 Hüttigpfad	1 4810,15000 4887,14931 5057,14824 5095,14792
 (Alex-Wedding-Str. - Karl-Liebknecht-Str.)	1s 11018,13286 11085,13239
@@ -1345,6 +1346,9 @@ Straßenbahntrasse	3nocross::ignrte 18010,7133 18086,7243 18382,7724
 Eichgestell -> Treskowallee: Straßenbahntrasse	3::igndisp 18186,7200 18086,7243 18010,7133
 Treskowallee -> Eichgestell: Straßenbahntrasse	3::igndisp 18382,7724 18086,7243 18186,7200
 Straßenbahntrasse	3nocross::ignrte 18413,7774 18570,8025 18657,8163
+Straßenbahntrasse	3nocross::ignrte 18867,9464 18834,9256 18809,9133
+Rolandseck -> Treskowallee: Straßenbahntrasse	3::igndisp 18903,9244 18834,9256 18809,9133
+Treskowallee -> Rolandseck: Straßenbahntrasse	3::igndisp 18867,9464 18834,9256 18903,9244
 unbequem passierbarer Mittelstreifen	3nocross::ignrte 5463,9961 5464,9914 5467,9866
 Regensburger Str. -> Pariser Str.: unbequem passierbarer Mittelstreifen	3::igndisp 5541,9923 5464,9914 5416,9928
 Pariser Str. -> Regensburger Str.: unbequem passierbarer Mittelstreifen	3::igndisp 5416,9928 5464,9914 5541,9923

@@ -71,7 +71,7 @@ Sa, 24.10.1998
 10198,9405    Baerwaldstr./Gneisenaustr.         N->S   60  19:00:01  19:00:16
 10564,9292    Gneisenaustr./Bergmannstr.         W->O   60  19:02:54  19:02:22
 10713,9260    Gneisenaustr./Lilienthalstr.       W->O   60  19:03:56  19:03:26
-10213,8665    Columbiadamm/Golßener Str.         W->O   70  19:09:22  19:08:58
+10209,8661    Columbiadamm/Golßener Str.         W->O   70  19:09:22  19:08:58
 9801,8683     Columbiadamm/Friesenstr.           O->W   70  19:09:50  19:10:25
 9395,8726     Columbiadamm/Pl. der Luftbr.       O->W   70  19:13:04  19:13:35
 9229,8785     Columbiadamm/Mehringdamm           O->W   70  19:14:11  19:14:33
@@ -190,7 +190,7 @@ Di, 27.10.1998
 12195,8436    Flughafenstr./Reuterstr.           O->W       09:02:53
 11898,8362    Flughafenstr./Hermannstr.          O->W   60  09:03:35  09:03:45
 11632,8302    Columbiadamm/Fontanestr.           O->W       09:05:44
-10213,8665    Columbiadamm/Golßener Str.         O->W       09:09:50  09:09:15
+10209,8661    Columbiadamm/Golßener Str.         O->W       09:09:50  09:09:15
 9801,8683     Columbiadamm/Friesenstr.           O->W       09:11:27  09:10:53
 9395,8726     Columbiadamm/Platz der Luftbr      O->W   70  09:12:22  09:12:52
 9229,8785     Columbiadamm/Mehringdamm           O->W   80  09:13:20  09:13:44
@@ -289,7 +289,7 @@ Fr, 30.10.1998
 12195,8436    Flughafenstr./Reuterstr.           O->W   60  09:06:54  09:06:21
 11898,8362    Flughafenstr./Hermannstr.          O->W   60  09:06:36  09:06:46
 11632,8302    Flughafenstr./Fontanestr.          O->W       09:10:44  09:10:13
-10213,8665    Columbiadamm/Golßener Str.         O->W   65  09:14:42  09:14:11
+10209,8661    Columbiadamm/Golßener Str.         O->W   65  09:14:42  09:14:11
 9801,8683     Columbiadamm/Friesenstr.           O->W   70  09:16:19  09:15:47
 9395,8726     Columbiadamm/Platz der Luftbrücke  O->W   70  09:18:23  09:18:53
 9229,8785     Dudenstr./Mehringdamm              O->W   80  09:20:00  09:20:23
@@ -471,8 +471,8 @@ Mi, 11.11.1998
 9229,8785     Mehringdamm/Dudenstr               N->S       11:57:02
 9229,8785     Mehringdamm/Dudenstr               O->W       11:57:42
 9801,8683     Columbiadamm/Friesenstr            O->W       11:59:12
-10213,8665    Columbiadamm/Golßener Str          O->W       11:59:51
-10213,8665    Columbiadamm/Golßener Str (Rad)    S->N       12:00:43
+10209,8661    Columbiadamm/Golßener Str          O->W       11:59:51
+10209,8661    Columbiadamm/Golßener Str (Rad)    S->N       12:00:43
 10713,9260    Lilienthalstr/Südstern (Rad)       S->N       12:03:37
 10713,9260    Lilienthalstr/Südstern (Auto)      S->N       12:03:39  12:02:46
 11023,9597    Urbanstr/Grimmstr (Rad)            S->N       12:05:48
@@ -504,7 +504,7 @@ Do, 12.11.1998
 # ----------------------------------------------------------------------------
 Fr, 13.11.1998
 9229,8785     Dudenstr/Tempelhofer Damm          W->O       19:17:01  19:16:01
-10213,8665    Columbiadamm/Golßener Str          W->O       19:17:52
+10209,8661    Columbiadamm/Golßener Str          W->O       19:17:52
 11898,8362    Flughafenstr/Hermannstr (Auto)     W->O       19:20:35
 11898,8362    Flughafenstr/Hermannstr (Rad)      W->O       19:20:34  19:20:45
 11979,8014    Hermannstr/Werbellinstr            N->S       19:21:27
@@ -658,7 +658,7 @@ Mi, 07.04.1999
 Mi, 07.04.1999
 9229,8785     Dudenstr./Mehringdamm/Platz der L  W->O       22:44:57
 9229,8785     Dudenstr./Mehringdamm/Platz der L  O->W                 22:45:19
-10213,8665    Columbiadamm/Golßener Str.         W->O       22:48:26  22:48:06
+10209,8661    Columbiadamm/Golßener Str.         W->O       22:48:26  22:48:06
 11632,8302    Columbiadamm/Fontanestr.           W->O   40  22:53:02  22:53:19
 12195,8436    Flughafenstr./Reuterstr. (Neuköll  W->O   40  22:55:00  22:55:20
 14089,9610    Elsenstr./Am Treptower Park        SW->NO 60  23:07:19  23:07:30
@@ -712,7 +712,7 @@ Fr, 09.04.1999
 Fr, 09.04.1999
 11023,9597    Körtestr./Urbanstr. (Kreuzberg)    N->S   70  18:07:38  18:07:55
 10713,9260    Lilienthalstr./Südstern/Körtestr.  N->S       18:09:56
-10213,8665    Columbiadamm/Golßener Str.         N->S       18:12:45  18:12:56
+10209,8661    Columbiadamm/Golßener Str.         N->S       18:12:45  18:12:56
 9801,8683     Columbiadamm/Friesenstr. (Kreuzbe  O->W   70  18:13:33  18:14:10
 9395,8726     Platz der Luftbrücke/Columbiadamm  O->W       18:15:31  18:16:01
 9229,8785     Dudenstr./Mehringdamm/Platz der L  O->W   80  18:17:36  18:16:36
@@ -759,7 +759,7 @@ Sa, 10.04.1999
 12195,8436    Flughafenstr./Reuterstr.           O->W   70? 09:24:13  09:23:40
 11898,8362    Hermannstr./Flughafenstr.          O->W   60  09:24:55
 11632,8302    Columbiadamm/Flughafenstr.         O->W   60  09:28:03  09:27:31
-10213,8665    Columbiadamm/Golßener Str.         O->W   70  09:31:31  09:32:06
+10209,8661    Columbiadamm/Golßener Str.         O->W   70  09:31:31  09:32:06
 9801,8683     Columbiadamm/Friesenstr.           O->W   70  09:33:08  09:32:34
 9395,8726     Platz der Luftbrücke/Columbiadamm  O->W   70  09:35:12  09:34:34
 9229,8785     Dudenstr./Mehringdamm/Platz der L  O->W   80  09:36:39  09:37:02
@@ -794,7 +794,7 @@ So, 11.04.1999
 12195,8436    Flughafenstr./Reuterstr.           O->W   60  15:07:13  15:07:40
 11898,8362    Hermannstr./Flughafenstr.          O->W   60  15:08:55  15:09:04
 11632,8302    Columbiadamm/Flughafenstr.         O->W   60  15:10:31  15:11:04
-10213,8665    Columbiadamm/Golßener Str.         O->W   70  15:14:11  15:14:45
+10209,8661    Columbiadamm/Golßener Str.         O->W   70  15:14:11  15:14:45
 9801,8683     Columbiadamm/Friesenstr.           O->W   70  15:15:48  15:16:24
 9395,8726     Platz der Luftbrücke/Columbiadamm  O->W   70  15:17:52  15:18:23
 9229,8785     Dudenstr./Mehringdamm/Platz der L  O->W   70  15:18:59  15:19:21
@@ -859,7 +859,7 @@ Do, 22.04.1999
 9229,8785     Dudenstr./Mehringdamm/Platz der L  W->O   70  23:41:40  23:42:02
 9395,8726     Platz der Luftbrücke/Columbiadamm  W->O       23:43:25  23:42:57
 9801,8683     Columbiadamm/Friesenstr.           W->O                 23:44:20
-10213,8665    Columbiadamm/Golßener Str.                AUS
+10209,8661    Columbiadamm/Golßener Str.                AUS
 11898,8362    Hermannstr./Flughafenstr.          W->O   50  23:49:43  23:50:02
 12195,8436    Flughafenstr./Reuterstr.           W->O   40  23:51:03  23:51:21
 12771,8439    Erkstr./Donaustr.                  W->O   50  23:53:15  23:53:22
@@ -1037,7 +1037,7 @@ Mi, 28.04.1999
 # ca. 09:05
 11898,8362    Flughafenstr./Hermannstr.          O->W   60
 # ca. 09:10
-10213,8665    Columbiadamm/Golßener Str.         O->W   70
+10209,8661    Columbiadamm/Golßener Str.         O->W   70
 # ca. 09:15
 9395,8726     Columbiadamm/Platz der Luftbr      O->W   70?
 
@@ -1133,7 +1133,7 @@ Fr, 30.04.1999
 9229,8785     Dudenstr./Mehringdamm/Platz der L  W->O       17:10:54  17:09:54
 9395,8726     Platz der Luftbrücke/Columbiadamm  W->O       17:11:17
 9801,8683     Columbiadamm/Friesenstr.           W->O                 17:12:26
-10213,8665    Columbiadamm/Golßener Str.         W->O                 17:13:06
+10209,8661    Columbiadamm/Golßener Str.         W->O                 17:13:06
 11632,8302    Columbiadamm/Flughafenstr.         W->O       17:17:15  17:16:38
 11898,8362    Hermannstr./Flughafenstr.          W->O       17:18:37  17:17:51
 12195,8436    Flughafenstr./Reuterstr.           W->O       17:19:00
@@ -1149,7 +1149,7 @@ Fr, 30.04.1999
 11931,8206    Hermannstr./Boddinstr.             S->N       17:41:01  17:40:37
 11898,8362    Hermannstr./Flughafenstr.          S->N   80? 17:41:09  17:42:01
 11632,8302    Columbiadamm/Flughafenstr.         O->W       17:43:55  17:43:18
-10213,8665    Columbiadamm/Golßener Str.         O->W   70  17:47:20  17:47:54
+10209,8661    Columbiadamm/Golßener Str.         O->W   70  17:47:20  17:47:54
 9801,8683     Columbiadamm/Friesenstr.           O->W   70  17:48:58  17:48:25
 9395,8726     Platz der Luftbrücke/Columbiadamm  O->W   70  17:50:56  17:50:19
 9229,8785     Dudenstr./Mehringdamm/Platz der L  O->W   80  17:52:14  17:52:34

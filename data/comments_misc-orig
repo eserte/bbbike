@@ -89,6 +89,7 @@ Kreisverkehr	Roundabout 26302,-11712
 Kreisverkehr	Roundabout -8815,13214
 Kreisverkehr	Roundabout 56197,-14830
 Kreisverkehr	Roundabout 55743,-11726
+Kreisverkehr	Roundabout 18903,9244
 #: by: Marita:
 (Waldweg über den Beyschlagtunnel): bei Regen Rutschgefahr	CS 344,22346 742,22666
 Privatstraße der DB	CS 5710,7820 6275,7847
@@ -236,12 +237,11 @@ Kreisverkehr	Roundabout 13300,-1252
 # Sackgasse ist oder nur ein Datenfehler.
 #
 #: section: ignorieren vvv
+	culdesac 19748,8517
+	culdesac_pseudo 19577,8438
+	culdesac_pseudo 19526,8458
 	culdesac 19700,9040
 	culdesac 19416,8668
-	culdesac 19449,8455
-	culdesac 19686,8428
-	culdesac 19721,8452
-	culdesac 19740,8481
 	culdesac 20293,8440
 	culdesac 20258,8413
 	culdesac 20319,8350
@@ -1028,6 +1028,7 @@ Zugang zum Bad	culdesac_pseudo 7306,13418
 	culdesac 16377,12791
 	culdesac 16313,12762
 	culdesac 17513,12465
+	culdesac 19943,8279
 #: section ^^^
 ######################################################################
 # busroute

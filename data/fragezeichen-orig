@@ -36,11 +36,16 @@ Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12128
 # 
 # REMOVED --- wahrscheinlich passiert hier nichts weiter, Busspur existiert --- #: last_checked: 2012-10-12 vvv --- #: next_check: 2012-10-17 vvv --- Kniprodestr./Am Friedrichshain: wird die andere Richtung auch Radspuren bekommen?	?; 12640,13814 12695,13864 12784,13961 12856,14042 12901,14093 --- #: next_check ^^^ --- #: last_checked ^^^
 # 
-#: last_checked: 2012-09-10
-#: next_check: 2012-10-15
-#: XXX erste Anfänge existieren südlich der Friesenstr. (seen: 2012-09-10)
-#: XXX Baumaßnahme 3.33 (Realisierung in 2011)
-Germanenstr. (oder nur das kleine Stück bis Waldsteg?)	?::projected 8406,19081 8359,19162 8307,19458 8304,19475 8268,19558 8234,19634 8233,19695 8231,19806 8242,19869 8234,19936
+#: last_checked: 2012-11-11 vvv
+#: next_check: 2013-02-15 vvv
+#: XXX Baumaßnahme 3.33 (Realisierung in 2011) vvv
+#: XXX werden hier auch Radspuren entstehen? vvv
+Germanenstr.	?::projected; 8304,19475 8307,19458 8359,19162 8406,19081
+Germanenstr.	?::projected 8304,19475 8268,19558 8234,19634 8233,19695 8231,19806 8242,19869 8234,19936
+#: XXX ^^^
+#: XXX ^^^
+#: next_check ^^^
+#: last_checked ^^^
 #: by: ^^^
 # 
 #: by: Tagesspiegel vom 2009-04-12, soll 2009 realisiert werden
@@ -83,13 +88,13 @@ Hasenheide: werden hier vielleicht Radspuren Richtung Osten markiert oder Radweg
 Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwege erstellt? Was ist mit der existierenden Gegenrichtung?	?::projected 8804,10303 8802,10290 8783,10166 8780,9968 8779,9851 8779,9829 8779,9812 8777,9601
 # 
 #: XXX Baumaßnahme 2.8, 2.16 (Realisierung 2011 und nach 2011)
-#: last_checked: 2012-10-26
+#: last_checked: 2012-11-10
 #: next_check: 2013-06-01
 Skalitzer/Gitschiner Str.: werden hier Radspuren markiert?	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280
 # 
 #: XXX Baumaßnahme 2.23 (Realisierung nach 2011) vvv
-#: last_checked: 2012-10-16 vvv
-#: next_check: 2013-06-01 vvv
+#: last_checked: 2012-11-11 vvv
+#: next_check: 2012-11-18 vvv
 Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected; 12758,11915 12726,11851 12681,11741 12645,11673 12551,11515 12497,11459
 Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected 12833,12154 12850,12286 12869,12425 12891,12549
 #: next_check ^^^
@@ -261,8 +266,8 @@ Degnerstr.: für 2012 geplanter Zebrastreifen? Wo genau?	?::projected 16535,15766
 Dorfstr.: für 2012 geplanter Zebrastreifen? Wo genau?	?::projected 19285,18489 19429,18368
 #: by: ^^^
 #
-#: last_checked: 2012-10-21
-#: next_check: 2012-11-10
+#: last_checked: 2012-11-11
+#: next_check: 2012-11-24
 Treskowallee/Waldowallee: Situation nach den Bauarbeiten, wird man hier überqueren können (evtl. mit Ampel?), wird es Radwege geben?	?::inwork 18823,9708 18865,9608 18875,9570 18867,9464 18834,9256
 # 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/verwaltung/org/vermessung/b-plaene/b-plaene/B-V-3.jpg vvv
@@ -714,9 +719,7 @@ Göhrener Str.: ist hier irgendwo verkehrsberuhigt?	? 11511,15054 11476,15030
 #: XXX Bauarbeiten gehen bis Dezember 2012
 Bauarbeiten in der Köpenicker Str.: wie wird die Einbahnstraßenrichtung verlaufen? Behinderungen für Radfahrer?	? 11242,11720 11155,11750 11022,11782 11048,11745 11155,11750
 # 
-Wiesengrund Straße 1: existiert hier vielleicht eine Straße mit diesem Namen? Qualität?	? 19754,8513 19740,8481 19721,8452 19686,8428
-Wiesengrund Straße 1: oder ist sie hier?	? 19953,8258 19943,8279
-# REMOVED (allerdings erneut in fragezeichen-orig aufgenommen) --- existiert nicht --- Wiesengrund Straße 1|Karlshorst|10318|19960,8254 --- Wiesengrund Straße 1 (Karlshorst): Existiert diese Straße überhaupt?	? 19960,8254 19940,8292
+# REMOVED --- existiert nicht, aber siehe zwei unbenannte Straßen in dieser KGA --- Wiesengrund Straße 1|Karlshorst|10318|19960,8254 --- Wiesengrund Straße 1 (Karlshorst): Existiert diese Straße überhaupt?	? 19960,8254 19940,8292
 # 
 #: XXX fehlt auch in Berlin.coords.data: Fußweg 475|Rahnsdorf|12589
 #: XXX_osm fehlt auch bei osm
